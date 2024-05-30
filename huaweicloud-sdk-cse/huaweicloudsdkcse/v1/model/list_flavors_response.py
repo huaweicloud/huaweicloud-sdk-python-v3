@@ -32,9 +32,9 @@ class ListFlavorsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: 微服务引擎专享版规格总个数
+        :param total: 微服务引擎规格总个数
         :type total: int
-        :param data: 微服务引擎专享版规格详情
+        :param data: 微服务引擎规格详情
         :type data: list[:class:`huaweicloudsdkcse.v1.FlavorBrief`]
         """
         
@@ -53,7 +53,7 @@ class ListFlavorsResponse(SdkResponse):
     def total(self):
         """Gets the total of this ListFlavorsResponse.
 
-        微服务引擎专享版规格总个数
+        微服务引擎规格总个数
 
         :return: The total of this ListFlavorsResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListFlavorsResponse(SdkResponse):
     def total(self, total):
         """Sets the total of this ListFlavorsResponse.
 
-        微服务引擎专享版规格总个数
+        微服务引擎规格总个数
 
         :param total: The total of this ListFlavorsResponse.
         :type total: int
@@ -75,7 +75,7 @@ class ListFlavorsResponse(SdkResponse):
     def data(self):
         """Gets the data of this ListFlavorsResponse.
 
-        微服务引擎专享版规格详情
+        微服务引擎规格详情
 
         :return: The data of this ListFlavorsResponse.
         :rtype: list[:class:`huaweicloudsdkcse.v1.FlavorBrief`]
@@ -86,7 +86,7 @@ class ListFlavorsResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this ListFlavorsResponse.
 
-        微服务引擎专享版规格详情
+        微服务引擎规格详情
 
         :param data: The data of this ListFlavorsResponse.
         :type data: list[:class:`huaweicloudsdkcse.v1.FlavorBrief`]

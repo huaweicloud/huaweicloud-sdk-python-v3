@@ -19,6 +19,7 @@ class ImportModelsRequest:
     openapi_types = {
         'workspace': 'str',
         'x_project_id': 'str',
+        'x_language': 'str',
         'action_id': 'str',
         'model_id': 'str',
         'directory_id': 'str',
@@ -29,6 +30,7 @@ class ImportModelsRequest:
     attribute_map = {
         'workspace': 'workspace',
         'x_project_id': 'X-Project-Id',
+        'x_language': 'X-Language',
         'action_id': 'action-id',
         'model_id': 'model_id',
         'directory_id': 'directory_id',
@@ -36,7 +38,7 @@ class ImportModelsRequest:
         'body': 'body'
     }
 
-    def __init__(self, workspace=None, x_project_id=None, action_id=None, model_id=None, directory_id=None, skip_exist=None, body=None):
+    def __init__(self, workspace=None, x_project_id=None, x_language=None, action_id=None, model_id=None, directory_id=None, skip_exist=None, body=None):
         """ImportModelsRequest
 
         The model defined in huaweicloud sdk
@@ -45,11 +47,13 @@ class ImportModelsRequest:
         :type workspace: str
         :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
         :type x_project_id: str
-        :param action_id: 需要执行的动作，根据导入的对象不同而选择不同的导入动作。import_relation(导入关系模型：逻辑实体/物理表)、import_dimension( 导入维度表、事实表)、import_codetable(导入码表)、import_datastandard(导入数据标准)、import_bizmetric(导入业务指标)、import_bizcatalog(导入流程架构)、import_atomic(导入原子指标)、import_derivative(导入衍生指标)、import_compound(导入复合指标)、import_aggregation(导入汇总表)。
+        :param x_language: 默认值：en-us 可选，导入导出接口必填，可选值有：zh-cn、en-us，分别表示中文、英文。
+        :type x_language: str
+        :param action_id: 需要执行的动作，根据导入的对象不同而选择不同的导入动作。 枚举值：   - import_relation: 导入关系模型：逻辑实体/物理表   - import_dimension: 导入维度表、事实表   - import_codetable: 导入码表   - import_datastandard: 导入数据标准   - import_bizmetric: 导入业务指标   - import_bizcatalog: 导入流程架构   - import_atomic: 导入原子指标   - import_derivative: 导入衍生指标   - import_compound: 导入复合指标   - import_aggregation: 导入汇总表 
         :type action_id: str
         :param model_id: 关系建模的模型ID，在导入模型（import_relation）时必填。
         :type model_id: str
-        :param directory_id: 导入的目录id，在导入码表（import_datastandard）和数据标准（import_datastandard）时生效，选填。
+        :param directory_id: 导入的目录id，在导入码表（import_codetable）和数据标准（import_datastandard）时生效，选填。
         :type directory_id: str
         :param skip_exist: 是否需要覆盖更新已有的实体。
         :type skip_exist: bool
@@ -61,6 +65,7 @@ class ImportModelsRequest:
 
         self._workspace = None
         self._x_project_id = None
+        self._x_language = None
         self._action_id = None
         self._model_id = None
         self._directory_id = None
@@ -71,6 +76,8 @@ class ImportModelsRequest:
         self.workspace = workspace
         if x_project_id is not None:
             self.x_project_id = x_project_id
+        if x_language is not None:
+            self.x_language = x_language
         self.action_id = action_id
         if model_id is not None:
             self.model_id = model_id
@@ -126,10 +133,32 @@ class ImportModelsRequest:
         self._x_project_id = x_project_id
 
     @property
+    def x_language(self):
+        """Gets the x_language of this ImportModelsRequest.
+
+        默认值：en-us 可选，导入导出接口必填，可选值有：zh-cn、en-us，分别表示中文、英文。
+
+        :return: The x_language of this ImportModelsRequest.
+        :rtype: str
+        """
+        return self._x_language
+
+    @x_language.setter
+    def x_language(self, x_language):
+        """Sets the x_language of this ImportModelsRequest.
+
+        默认值：en-us 可选，导入导出接口必填，可选值有：zh-cn、en-us，分别表示中文、英文。
+
+        :param x_language: The x_language of this ImportModelsRequest.
+        :type x_language: str
+        """
+        self._x_language = x_language
+
+    @property
     def action_id(self):
         """Gets the action_id of this ImportModelsRequest.
 
-        需要执行的动作，根据导入的对象不同而选择不同的导入动作。import_relation(导入关系模型：逻辑实体/物理表)、import_dimension( 导入维度表、事实表)、import_codetable(导入码表)、import_datastandard(导入数据标准)、import_bizmetric(导入业务指标)、import_bizcatalog(导入流程架构)、import_atomic(导入原子指标)、import_derivative(导入衍生指标)、import_compound(导入复合指标)、import_aggregation(导入汇总表)。
+        需要执行的动作，根据导入的对象不同而选择不同的导入动作。 枚举值：   - import_relation: 导入关系模型：逻辑实体/物理表   - import_dimension: 导入维度表、事实表   - import_codetable: 导入码表   - import_datastandard: 导入数据标准   - import_bizmetric: 导入业务指标   - import_bizcatalog: 导入流程架构   - import_atomic: 导入原子指标   - import_derivative: 导入衍生指标   - import_compound: 导入复合指标   - import_aggregation: 导入汇总表 
 
         :return: The action_id of this ImportModelsRequest.
         :rtype: str
@@ -140,7 +169,7 @@ class ImportModelsRequest:
     def action_id(self, action_id):
         """Sets the action_id of this ImportModelsRequest.
 
-        需要执行的动作，根据导入的对象不同而选择不同的导入动作。import_relation(导入关系模型：逻辑实体/物理表)、import_dimension( 导入维度表、事实表)、import_codetable(导入码表)、import_datastandard(导入数据标准)、import_bizmetric(导入业务指标)、import_bizcatalog(导入流程架构)、import_atomic(导入原子指标)、import_derivative(导入衍生指标)、import_compound(导入复合指标)、import_aggregation(导入汇总表)。
+        需要执行的动作，根据导入的对象不同而选择不同的导入动作。 枚举值：   - import_relation: 导入关系模型：逻辑实体/物理表   - import_dimension: 导入维度表、事实表   - import_codetable: 导入码表   - import_datastandard: 导入数据标准   - import_bizmetric: 导入业务指标   - import_bizcatalog: 导入流程架构   - import_atomic: 导入原子指标   - import_derivative: 导入衍生指标   - import_compound: 导入复合指标   - import_aggregation: 导入汇总表 
 
         :param action_id: The action_id of this ImportModelsRequest.
         :type action_id: str
@@ -173,7 +202,7 @@ class ImportModelsRequest:
     def directory_id(self):
         """Gets the directory_id of this ImportModelsRequest.
 
-        导入的目录id，在导入码表（import_datastandard）和数据标准（import_datastandard）时生效，选填。
+        导入的目录id，在导入码表（import_codetable）和数据标准（import_datastandard）时生效，选填。
 
         :return: The directory_id of this ImportModelsRequest.
         :rtype: str
@@ -184,7 +213,7 @@ class ImportModelsRequest:
     def directory_id(self, directory_id):
         """Sets the directory_id of this ImportModelsRequest.
 
-        导入的目录id，在导入码表（import_datastandard）和数据标准（import_datastandard）时生效，选填。
+        导入的目录id，在导入码表（import_codetable）和数据标准（import_datastandard）时生效，选填。
 
         :param directory_id: The directory_id of this ImportModelsRequest.
         :type directory_id: str

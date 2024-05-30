@@ -20,17 +20,21 @@ class Components:
         'id': 'str',
         'role': 'str',
         'status': 'str',
-        'distributed_id': 'str'
+        'distributed_id': 'str',
+        'type': 'str',
+        'detail': 'str'
     }
 
     attribute_map = {
         'id': 'id',
         'role': 'role',
         'status': 'status',
-        'distributed_id': 'distributed_id'
+        'distributed_id': 'distributed_id',
+        'type': 'type',
+        'detail': 'detail'
     }
 
-    def __init__(self, id=None, role=None, status=None, distributed_id=None):
+    def __init__(self, id=None, role=None, status=None, distributed_id=None, type=None, detail=None):
         """Components
 
         The model defined in huaweicloud sdk
@@ -43,6 +47,10 @@ class Components:
         :type status: str
         :param distributed_id: 分组id，只有dn组件有分组id，用于区分是否是同一个分片下的组件。其他组件为空字符串。
         :type distributed_id: str
+        :param type: 节点类型，包括：DN, CN, GTM, CM, ETCD。
+        :type type: str
+        :param detail: 详情。
+        :type detail: str
         """
         
         
@@ -51,6 +59,8 @@ class Components:
         self._role = None
         self._status = None
         self._distributed_id = None
+        self._type = None
+        self._detail = None
         self.discriminator = None
 
         if id is not None:
@@ -61,6 +71,10 @@ class Components:
             self.status = status
         if distributed_id is not None:
             self.distributed_id = distributed_id
+        if type is not None:
+            self.type = type
+        if detail is not None:
+            self.detail = detail
 
     @property
     def id(self):
@@ -149,6 +163,50 @@ class Components:
         :type distributed_id: str
         """
         self._distributed_id = distributed_id
+
+    @property
+    def type(self):
+        """Gets the type of this Components.
+
+        节点类型，包括：DN, CN, GTM, CM, ETCD。
+
+        :return: The type of this Components.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this Components.
+
+        节点类型，包括：DN, CN, GTM, CM, ETCD。
+
+        :param type: The type of this Components.
+        :type type: str
+        """
+        self._type = type
+
+    @property
+    def detail(self):
+        """Gets the detail of this Components.
+
+        详情。
+
+        :return: The detail of this Components.
+        :rtype: str
+        """
+        return self._detail
+
+    @detail.setter
+    def detail(self, detail):
+        """Sets the detail of this Components.
+
+        详情。
+
+        :param detail: The detail of this Components.
+        :type detail: str
+        """
+        self._detail = detail
 
     def to_dict(self):
         """Returns the model properties as a dict"""

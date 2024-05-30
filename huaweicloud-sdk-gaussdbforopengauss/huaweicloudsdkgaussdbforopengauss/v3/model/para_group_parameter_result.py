@@ -51,7 +51,7 @@ class ParaGroupParameterResult:
         :type readonly: bool
         :param value_range: 参数取值范围。
         :type value_range: str
-        :param data_type: 参数类型，取值为“string”、“integer”、“boolean”、“list”或“float”之一。
+        :param data_type: 参数类型，取值为“string”、“integer”、“boolean”、“list”、\&quot;all\&quot;或“float”之一。
         :type data_type: str
         :param description: 参数描述。
         :type description: str
@@ -190,7 +190,7 @@ class ParaGroupParameterResult:
     def data_type(self):
         """Gets the data_type of this ParaGroupParameterResult.
 
-        参数类型，取值为“string”、“integer”、“boolean”、“list”或“float”之一。
+        参数类型，取值为“string”、“integer”、“boolean”、“list”、\"all\"或“float”之一。
 
         :return: The data_type of this ParaGroupParameterResult.
         :rtype: str
@@ -201,7 +201,7 @@ class ParaGroupParameterResult:
     def data_type(self, data_type):
         """Sets the data_type of this ParaGroupParameterResult.
 
-        参数类型，取值为“string”、“integer”、“boolean”、“list”或“float”之一。
+        参数类型，取值为“string”、“integer”、“boolean”、“list”、\"all\"或“float”之一。
 
         :param data_type: The data_type of this ParaGroupParameterResult.
         :type data_type: str

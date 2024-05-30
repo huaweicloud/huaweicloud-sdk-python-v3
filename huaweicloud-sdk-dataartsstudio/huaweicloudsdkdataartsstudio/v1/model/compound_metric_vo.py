@@ -17,20 +17,24 @@ class CompoundMetricVO:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'int',
+        'id': 'str',
         'name_en': 'str',
         'name_ch': 'str',
         'description': 'str',
         'dimension_group': 'str',
         'group_name': 'str',
         'group_code': 'str',
-        'metric_ids': 'list[int]',
+        'compound_type': 'str',
+        'comparison_type': 'str',
+        'metric_ids': 'list[str]',
         'metric_names': 'list[str]',
-        'cal_fn_ids': 'list[int]',
+        'compound_metric_ids': 'list[str]',
+        'compound_metric_names': 'list[str]',
+        'cal_fn_ids': 'list[str]',
         'cal_exp': 'str',
-        'l1_id': 'int',
+        'l1_id': 'str',
         'l2_id': 'str',
-        'l3_id': 'int',
+        'l3_id': 'str',
         'data_type': 'str',
         'create_by': 'str',
         'update_by': 'str',
@@ -43,7 +47,7 @@ class CompoundMetricVO:
         'l1': 'str',
         'l2': 'str',
         'l3': 'str',
-        'summary_table_id': 'int'
+        'summary_table_id': 'str'
     }
 
     attribute_map = {
@@ -54,8 +58,12 @@ class CompoundMetricVO:
         'dimension_group': 'dimension_group',
         'group_name': 'group_name',
         'group_code': 'group_code',
+        'compound_type': 'compound_type',
+        'comparison_type': 'comparison_type',
         'metric_ids': 'metric_ids',
         'metric_names': 'metric_names',
+        'compound_metric_ids': 'compound_metric_ids',
+        'compound_metric_names': 'compound_metric_names',
         'cal_fn_ids': 'cal_fn_ids',
         'cal_exp': 'cal_exp',
         'l1_id': 'l1_id',
@@ -76,13 +84,13 @@ class CompoundMetricVO:
         'summary_table_id': 'summary_table_id'
     }
 
-    def __init__(self, id=None, name_en=None, name_ch=None, description=None, dimension_group=None, group_name=None, group_code=None, metric_ids=None, metric_names=None, cal_fn_ids=None, cal_exp=None, l1_id=None, l2_id=None, l3_id=None, data_type=None, create_by=None, update_by=None, status=None, create_time=None, update_time=None, approval_info=None, new_biz=None, monitor=None, l1=None, l2=None, l3=None, summary_table_id=None):
+    def __init__(self, id=None, name_en=None, name_ch=None, description=None, dimension_group=None, group_name=None, group_code=None, compound_type=None, comparison_type=None, metric_ids=None, metric_names=None, compound_metric_ids=None, compound_metric_names=None, cal_fn_ids=None, cal_exp=None, l1_id=None, l2_id=None, l3_id=None, data_type=None, create_by=None, update_by=None, status=None, create_time=None, update_time=None, approval_info=None, new_biz=None, monitor=None, l1=None, l2=None, l3=None, summary_table_id=None):
         """CompoundMetricVO
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码。
-        :type id: int
+        :param id: 编码，填写String类型替代Long类型。
+        :type id: str
         :param name_en: 字段名。
         :type name_en: str
         :param name_ch: 业务属性。
@@ -91,24 +99,32 @@ class CompoundMetricVO:
         :type description: str
         :param dimension_group: 颗粒度ID。
         :type dimension_group: str
-        :param group_name: 颗粒度名称。
+        :param group_name: 颗粒度名称，只读。
         :type group_name: str
-        :param group_code: 颗粒度编码。
+        :param group_code: 颗粒度编码，只读。
         :type group_code: str
-        :param metric_ids: 指标信息。
-        :type metric_ids: list[int]
+        :param compound_type: 复合指标类型。 枚举值：   - EXPRESSION: 表达式   - PERIODICITY_VALUED_COMPARISON: 环比   - INTERVAL_VALUED_COMPARISON: 同比 
+        :type compound_type: str
+        :param comparison_type: 比较类型。 枚举值：   - YEAR_TO_YEAR: 年同比   - MONTH_TO_MONTH: 月同比   - WEEK_TO_WEEK: 周同比 
+        :type comparison_type: str
+        :param metric_ids: 指标信息，填写String类型替代Long类型。
+        :type metric_ids: list[str]
         :param metric_names: 指标名称信息。
         :type metric_names: list[str]
-        :param cal_fn_ids: 引用函数ID。
-        :type cal_fn_ids: list[int]
+        :param compound_metric_ids: 复合指标信息，填写String类型替代Long类型。
+        :type compound_metric_ids: list[str]
+        :param compound_metric_names: 复合指标名称信息
+        :type compound_metric_names: list[str]
+        :param cal_fn_ids: 引用函数ID，填写String类型替代Long类型。
+        :type cal_fn_ids: list[str]
         :param cal_exp: 计算表达式，形如${index_id} + ${compound#index_id}，其中index_id代表引用的衍生指标ID，compound#index_id代表引用的复合指标ID。
         :type cal_exp: str
-        :param l1_id: 主题域分组ID。
-        :type l1_id: int
+        :param l1_id: 主题域分组ID，只读，填写String类型替代Long类型。
+        :type l1_id: str
         :param l2_id: 主题域ID，只读，创建和更新时无需填写。
         :type l2_id: str
-        :param l3_id: 业务对象ID。
-        :type l3_id: int
+        :param l3_id: 业务对象ID，填写String类型替代Long类型。
+        :type l3_id: str
         :param data_type: 字段类型。
         :type data_type: str
         :param create_by: 创建人。
@@ -117,9 +133,9 @@ class CompoundMetricVO:
         :type update_by: str
         :param status: 
         :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
-        :param create_time: 创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        :param create_time: 创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
-        :param update_time: 更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        :param update_time: 更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type update_time: datetime
         :param approval_info: 
         :type approval_info: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalVO`
@@ -133,8 +149,8 @@ class CompoundMetricVO:
         :type l2: str
         :param l3: 业务对象中文名，只读，创建和更新时无需填写。
         :type l3: str
-        :param summary_table_id: 汇总表ID。
-        :type summary_table_id: int
+        :param summary_table_id: 汇总表ID，只读，填写String类型替代Long类型。
+        :type summary_table_id: str
         """
         
         
@@ -146,8 +162,12 @@ class CompoundMetricVO:
         self._dimension_group = None
         self._group_name = None
         self._group_code = None
+        self._compound_type = None
+        self._comparison_type = None
         self._metric_ids = None
         self._metric_names = None
+        self._compound_metric_ids = None
+        self._compound_metric_names = None
         self._cal_fn_ids = None
         self._cal_exp = None
         self._l1_id = None
@@ -179,9 +199,17 @@ class CompoundMetricVO:
             self.group_name = group_name
         if group_code is not None:
             self.group_code = group_code
+        if compound_type is not None:
+            self.compound_type = compound_type
+        if comparison_type is not None:
+            self.comparison_type = comparison_type
         self.metric_ids = metric_ids
         if metric_names is not None:
             self.metric_names = metric_names
+        if compound_metric_ids is not None:
+            self.compound_metric_ids = compound_metric_ids
+        if compound_metric_names is not None:
+            self.compound_metric_names = compound_metric_names
         if cal_fn_ids is not None:
             self.cal_fn_ids = cal_fn_ids
         self.cal_exp = cal_exp
@@ -222,10 +250,10 @@ class CompoundMetricVO:
     def id(self):
         """Gets the id of this CompoundMetricVO.
 
-        编码。
+        编码，填写String类型替代Long类型。
 
         :return: The id of this CompoundMetricVO.
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -233,10 +261,10 @@ class CompoundMetricVO:
     def id(self, id):
         """Sets the id of this CompoundMetricVO.
 
-        编码。
+        编码，填写String类型替代Long类型。
 
         :param id: The id of this CompoundMetricVO.
-        :type id: int
+        :type id: str
         """
         self._id = id
 
@@ -332,7 +360,7 @@ class CompoundMetricVO:
     def group_name(self):
         """Gets the group_name of this CompoundMetricVO.
 
-        颗粒度名称。
+        颗粒度名称，只读。
 
         :return: The group_name of this CompoundMetricVO.
         :rtype: str
@@ -343,7 +371,7 @@ class CompoundMetricVO:
     def group_name(self, group_name):
         """Sets the group_name of this CompoundMetricVO.
 
-        颗粒度名称。
+        颗粒度名称，只读。
 
         :param group_name: The group_name of this CompoundMetricVO.
         :type group_name: str
@@ -354,7 +382,7 @@ class CompoundMetricVO:
     def group_code(self):
         """Gets the group_code of this CompoundMetricVO.
 
-        颗粒度编码。
+        颗粒度编码，只读。
 
         :return: The group_code of this CompoundMetricVO.
         :rtype: str
@@ -365,7 +393,7 @@ class CompoundMetricVO:
     def group_code(self, group_code):
         """Sets the group_code of this CompoundMetricVO.
 
-        颗粒度编码。
+        颗粒度编码，只读。
 
         :param group_code: The group_code of this CompoundMetricVO.
         :type group_code: str
@@ -373,13 +401,57 @@ class CompoundMetricVO:
         self._group_code = group_code
 
     @property
+    def compound_type(self):
+        """Gets the compound_type of this CompoundMetricVO.
+
+        复合指标类型。 枚举值：   - EXPRESSION: 表达式   - PERIODICITY_VALUED_COMPARISON: 环比   - INTERVAL_VALUED_COMPARISON: 同比 
+
+        :return: The compound_type of this CompoundMetricVO.
+        :rtype: str
+        """
+        return self._compound_type
+
+    @compound_type.setter
+    def compound_type(self, compound_type):
+        """Sets the compound_type of this CompoundMetricVO.
+
+        复合指标类型。 枚举值：   - EXPRESSION: 表达式   - PERIODICITY_VALUED_COMPARISON: 环比   - INTERVAL_VALUED_COMPARISON: 同比 
+
+        :param compound_type: The compound_type of this CompoundMetricVO.
+        :type compound_type: str
+        """
+        self._compound_type = compound_type
+
+    @property
+    def comparison_type(self):
+        """Gets the comparison_type of this CompoundMetricVO.
+
+        比较类型。 枚举值：   - YEAR_TO_YEAR: 年同比   - MONTH_TO_MONTH: 月同比   - WEEK_TO_WEEK: 周同比 
+
+        :return: The comparison_type of this CompoundMetricVO.
+        :rtype: str
+        """
+        return self._comparison_type
+
+    @comparison_type.setter
+    def comparison_type(self, comparison_type):
+        """Sets the comparison_type of this CompoundMetricVO.
+
+        比较类型。 枚举值：   - YEAR_TO_YEAR: 年同比   - MONTH_TO_MONTH: 月同比   - WEEK_TO_WEEK: 周同比 
+
+        :param comparison_type: The comparison_type of this CompoundMetricVO.
+        :type comparison_type: str
+        """
+        self._comparison_type = comparison_type
+
+    @property
     def metric_ids(self):
         """Gets the metric_ids of this CompoundMetricVO.
 
-        指标信息。
+        指标信息，填写String类型替代Long类型。
 
         :return: The metric_ids of this CompoundMetricVO.
-        :rtype: list[int]
+        :rtype: list[str]
         """
         return self._metric_ids
 
@@ -387,10 +459,10 @@ class CompoundMetricVO:
     def metric_ids(self, metric_ids):
         """Sets the metric_ids of this CompoundMetricVO.
 
-        指标信息。
+        指标信息，填写String类型替代Long类型。
 
         :param metric_ids: The metric_ids of this CompoundMetricVO.
-        :type metric_ids: list[int]
+        :type metric_ids: list[str]
         """
         self._metric_ids = metric_ids
 
@@ -417,13 +489,57 @@ class CompoundMetricVO:
         self._metric_names = metric_names
 
     @property
+    def compound_metric_ids(self):
+        """Gets the compound_metric_ids of this CompoundMetricVO.
+
+        复合指标信息，填写String类型替代Long类型。
+
+        :return: The compound_metric_ids of this CompoundMetricVO.
+        :rtype: list[str]
+        """
+        return self._compound_metric_ids
+
+    @compound_metric_ids.setter
+    def compound_metric_ids(self, compound_metric_ids):
+        """Sets the compound_metric_ids of this CompoundMetricVO.
+
+        复合指标信息，填写String类型替代Long类型。
+
+        :param compound_metric_ids: The compound_metric_ids of this CompoundMetricVO.
+        :type compound_metric_ids: list[str]
+        """
+        self._compound_metric_ids = compound_metric_ids
+
+    @property
+    def compound_metric_names(self):
+        """Gets the compound_metric_names of this CompoundMetricVO.
+
+        复合指标名称信息
+
+        :return: The compound_metric_names of this CompoundMetricVO.
+        :rtype: list[str]
+        """
+        return self._compound_metric_names
+
+    @compound_metric_names.setter
+    def compound_metric_names(self, compound_metric_names):
+        """Sets the compound_metric_names of this CompoundMetricVO.
+
+        复合指标名称信息
+
+        :param compound_metric_names: The compound_metric_names of this CompoundMetricVO.
+        :type compound_metric_names: list[str]
+        """
+        self._compound_metric_names = compound_metric_names
+
+    @property
     def cal_fn_ids(self):
         """Gets the cal_fn_ids of this CompoundMetricVO.
 
-        引用函数ID。
+        引用函数ID，填写String类型替代Long类型。
 
         :return: The cal_fn_ids of this CompoundMetricVO.
-        :rtype: list[int]
+        :rtype: list[str]
         """
         return self._cal_fn_ids
 
@@ -431,10 +547,10 @@ class CompoundMetricVO:
     def cal_fn_ids(self, cal_fn_ids):
         """Sets the cal_fn_ids of this CompoundMetricVO.
 
-        引用函数ID。
+        引用函数ID，填写String类型替代Long类型。
 
         :param cal_fn_ids: The cal_fn_ids of this CompoundMetricVO.
-        :type cal_fn_ids: list[int]
+        :type cal_fn_ids: list[str]
         """
         self._cal_fn_ids = cal_fn_ids
 
@@ -464,10 +580,10 @@ class CompoundMetricVO:
     def l1_id(self):
         """Gets the l1_id of this CompoundMetricVO.
 
-        主题域分组ID。
+        主题域分组ID，只读，填写String类型替代Long类型。
 
         :return: The l1_id of this CompoundMetricVO.
-        :rtype: int
+        :rtype: str
         """
         return self._l1_id
 
@@ -475,10 +591,10 @@ class CompoundMetricVO:
     def l1_id(self, l1_id):
         """Sets the l1_id of this CompoundMetricVO.
 
-        主题域分组ID。
+        主题域分组ID，只读，填写String类型替代Long类型。
 
         :param l1_id: The l1_id of this CompoundMetricVO.
-        :type l1_id: int
+        :type l1_id: str
         """
         self._l1_id = l1_id
 
@@ -508,10 +624,10 @@ class CompoundMetricVO:
     def l3_id(self):
         """Gets the l3_id of this CompoundMetricVO.
 
-        业务对象ID。
+        业务对象ID，填写String类型替代Long类型。
 
         :return: The l3_id of this CompoundMetricVO.
-        :rtype: int
+        :rtype: str
         """
         return self._l3_id
 
@@ -519,10 +635,10 @@ class CompoundMetricVO:
     def l3_id(self, l3_id):
         """Sets the l3_id of this CompoundMetricVO.
 
-        业务对象ID。
+        业务对象ID，填写String类型替代Long类型。
 
         :param l3_id: The l3_id of this CompoundMetricVO.
-        :type l3_id: int
+        :type l3_id: str
         """
         self._l3_id = l3_id
 
@@ -614,7 +730,7 @@ class CompoundMetricVO:
     def create_time(self):
         """Gets the create_time of this CompoundMetricVO.
 
-        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The create_time of this CompoundMetricVO.
         :rtype: datetime
@@ -625,7 +741,7 @@ class CompoundMetricVO:
     def create_time(self, create_time):
         """Sets the create_time of this CompoundMetricVO.
 
-        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param create_time: The create_time of this CompoundMetricVO.
         :type create_time: datetime
@@ -636,7 +752,7 @@ class CompoundMetricVO:
     def update_time(self):
         """Gets the update_time of this CompoundMetricVO.
 
-        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The update_time of this CompoundMetricVO.
         :rtype: datetime
@@ -647,7 +763,7 @@ class CompoundMetricVO:
     def update_time(self, update_time):
         """Sets the update_time of this CompoundMetricVO.
 
-        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param update_time: The update_time of this CompoundMetricVO.
         :type update_time: datetime
@@ -778,10 +894,10 @@ class CompoundMetricVO:
     def summary_table_id(self):
         """Gets the summary_table_id of this CompoundMetricVO.
 
-        汇总表ID。
+        汇总表ID，只读，填写String类型替代Long类型。
 
         :return: The summary_table_id of this CompoundMetricVO.
-        :rtype: int
+        :rtype: str
         """
         return self._summary_table_id
 
@@ -789,10 +905,10 @@ class CompoundMetricVO:
     def summary_table_id(self, summary_table_id):
         """Sets the summary_table_id of this CompoundMetricVO.
 
-        汇总表ID。
+        汇总表ID，只读，填写String类型替代Long类型。
 
         :param summary_table_id: The summary_table_id of this CompoundMetricVO.
-        :type summary_table_id: int
+        :type summary_table_id: str
         """
         self._summary_table_id = summary_table_id
 

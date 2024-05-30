@@ -22,7 +22,8 @@ class ApprovalBatchParam:
         'approver_user_name': 'str',
         'email': 'str',
         'fast_approval': 'bool',
-        'schedule_time': 'str'
+        'schedule_time': 'str',
+        'env_type': 'EnvTypeEnum'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class ApprovalBatchParam:
         'approver_user_name': 'approver_user_name',
         'email': 'email',
         'fast_approval': 'fast_approval',
-        'schedule_time': 'schedule_time'
+        'schedule_time': 'schedule_time',
+        'env_type': 'env_type'
     }
 
-    def __init__(self, biz_infos=None, approver_user_id=None, approver_user_name=None, email=None, fast_approval=None, schedule_time=None):
+    def __init__(self, biz_infos=None, approver_user_id=None, approver_user_name=None, email=None, fast_approval=None, schedule_time=None, env_type=None):
         """ApprovalBatchParam
 
         The model defined in huaweicloud sdk
@@ -45,12 +47,14 @@ class ApprovalBatchParam:
         :type approver_user_id: str
         :param approver_user_name: 审批人姓名。
         :type approver_user_name: str
-        :param email: 审批人邮箱。
+        :param email: 审批人邮箱，仅在创建审批人时填写。
         :type email: str
         :param fast_approval: 快速审批，非正式场景，用于快速上手体验，仅在当前用户有审批权限时提供。
         :type fast_approval: bool
-        :param schedule_time: 作业调度时间。
+        :param schedule_time: 作业调度时间。格式参照：30_18，表示18点30分。
         :type schedule_time: str
+        :param env_type: 
+        :type env_type: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
         """
         
         
@@ -61,6 +65,7 @@ class ApprovalBatchParam:
         self._email = None
         self._fast_approval = None
         self._schedule_time = None
+        self._env_type = None
         self.discriminator = None
 
         self.biz_infos = biz_infos
@@ -72,6 +77,8 @@ class ApprovalBatchParam:
             self.fast_approval = fast_approval
         if schedule_time is not None:
             self.schedule_time = schedule_time
+        if env_type is not None:
+            self.env_type = env_type
 
     @property
     def biz_infos(self):
@@ -143,7 +150,7 @@ class ApprovalBatchParam:
     def email(self):
         """Gets the email of this ApprovalBatchParam.
 
-        审批人邮箱。
+        审批人邮箱，仅在创建审批人时填写。
 
         :return: The email of this ApprovalBatchParam.
         :rtype: str
@@ -154,7 +161,7 @@ class ApprovalBatchParam:
     def email(self, email):
         """Sets the email of this ApprovalBatchParam.
 
-        审批人邮箱。
+        审批人邮箱，仅在创建审批人时填写。
 
         :param email: The email of this ApprovalBatchParam.
         :type email: str
@@ -187,7 +194,7 @@ class ApprovalBatchParam:
     def schedule_time(self):
         """Gets the schedule_time of this ApprovalBatchParam.
 
-        作业调度时间。
+        作业调度时间。格式参照：30_18，表示18点30分。
 
         :return: The schedule_time of this ApprovalBatchParam.
         :rtype: str
@@ -198,12 +205,30 @@ class ApprovalBatchParam:
     def schedule_time(self, schedule_time):
         """Sets the schedule_time of this ApprovalBatchParam.
 
-        作业调度时间。
+        作业调度时间。格式参照：30_18，表示18点30分。
 
         :param schedule_time: The schedule_time of this ApprovalBatchParam.
         :type schedule_time: str
         """
         self._schedule_time = schedule_time
+
+    @property
+    def env_type(self):
+        """Gets the env_type of this ApprovalBatchParam.
+
+        :return: The env_type of this ApprovalBatchParam.
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
+        """
+        return self._env_type
+
+    @env_type.setter
+    def env_type(self, env_type):
+        """Sets the env_type of this ApprovalBatchParam.
+
+        :param env_type: The env_type of this ApprovalBatchParam.
+        :type env_type: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
+        """
+        self._env_type = env_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

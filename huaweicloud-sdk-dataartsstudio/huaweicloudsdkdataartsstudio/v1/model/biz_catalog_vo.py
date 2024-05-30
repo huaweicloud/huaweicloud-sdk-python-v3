@@ -21,10 +21,10 @@ class BizCatalogVO:
         'description': 'str',
         'guid': 'str',
         'owner': 'str',
-        'parent_id': 'int',
-        'prev_id': 'int',
-        'next_id': 'int',
-        'id': 'int',
+        'parent_id': 'str',
+        'prev_id': 'str',
+        'next_id': 'str',
+        'id': 'str',
         'qualified_id': 'str',
         'create_by': 'str',
         'update_by': 'str',
@@ -67,29 +67,29 @@ class BizCatalogVO:
         :type guid: str
         :param owner: 责任人。
         :type owner: str
-        :param parent_id: 父目录ID，没有则为根目录。
-        :type parent_id: int
-        :param prev_id: 上个节点ID，没有则为首节点。
-        :type prev_id: int
-        :param next_id: 下个节点ID，没有则为尾节点。
-        :type next_id: int
-        :param id: 创建时传空，更新时必填。
-        :type id: int
+        :param parent_id: 父目录ID，没有则为根目录。填写String类型替代Long类型。
+        :type parent_id: str
+        :param prev_id: 上个节点ID，没有则为首节点。填写String类型替代Long类型。
+        :type prev_id: str
+        :param next_id: 下个节点ID，没有则为尾节点。填写String类型替代Long类型。
+        :type next_id: str
+        :param id: 创建时传空，更新时必填。填写String类型替代Long类型。
+        :type id: str
         :param qualified_id: 认证ID，自动生成。
         :type qualified_id: str
         :param create_by: 创建人。
         :type create_by: str
         :param update_by: 更新人。
         :type update_by: str
-        :param create_time: 创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        :param create_time: 创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
-        :param update_time: 更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        :param update_time: 更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type update_time: datetime
         :param bizmetric_num: 拥有业务指标数量，前端不传。
         :type bizmetric_num: int
         :param children_num: 拥有子流程的数量，不包括子流程的子流程。
         :type children_num: int
-        :param children: 下层子目录。
+        :param children: 下层子目录，只读。
         :type children: list[:class:`huaweicloudsdkdataartsstudio.v1.BizCatalogVO`]
         """
         
@@ -235,10 +235,10 @@ class BizCatalogVO:
     def parent_id(self):
         """Gets the parent_id of this BizCatalogVO.
 
-        父目录ID，没有则为根目录。
+        父目录ID，没有则为根目录。填写String类型替代Long类型。
 
         :return: The parent_id of this BizCatalogVO.
-        :rtype: int
+        :rtype: str
         """
         return self._parent_id
 
@@ -246,10 +246,10 @@ class BizCatalogVO:
     def parent_id(self, parent_id):
         """Sets the parent_id of this BizCatalogVO.
 
-        父目录ID，没有则为根目录。
+        父目录ID，没有则为根目录。填写String类型替代Long类型。
 
         :param parent_id: The parent_id of this BizCatalogVO.
-        :type parent_id: int
+        :type parent_id: str
         """
         self._parent_id = parent_id
 
@@ -257,10 +257,10 @@ class BizCatalogVO:
     def prev_id(self):
         """Gets the prev_id of this BizCatalogVO.
 
-        上个节点ID，没有则为首节点。
+        上个节点ID，没有则为首节点。填写String类型替代Long类型。
 
         :return: The prev_id of this BizCatalogVO.
-        :rtype: int
+        :rtype: str
         """
         return self._prev_id
 
@@ -268,10 +268,10 @@ class BizCatalogVO:
     def prev_id(self, prev_id):
         """Sets the prev_id of this BizCatalogVO.
 
-        上个节点ID，没有则为首节点。
+        上个节点ID，没有则为首节点。填写String类型替代Long类型。
 
         :param prev_id: The prev_id of this BizCatalogVO.
-        :type prev_id: int
+        :type prev_id: str
         """
         self._prev_id = prev_id
 
@@ -279,10 +279,10 @@ class BizCatalogVO:
     def next_id(self):
         """Gets the next_id of this BizCatalogVO.
 
-        下个节点ID，没有则为尾节点。
+        下个节点ID，没有则为尾节点。填写String类型替代Long类型。
 
         :return: The next_id of this BizCatalogVO.
-        :rtype: int
+        :rtype: str
         """
         return self._next_id
 
@@ -290,10 +290,10 @@ class BizCatalogVO:
     def next_id(self, next_id):
         """Sets the next_id of this BizCatalogVO.
 
-        下个节点ID，没有则为尾节点。
+        下个节点ID，没有则为尾节点。填写String类型替代Long类型。
 
         :param next_id: The next_id of this BizCatalogVO.
-        :type next_id: int
+        :type next_id: str
         """
         self._next_id = next_id
 
@@ -301,10 +301,10 @@ class BizCatalogVO:
     def id(self):
         """Gets the id of this BizCatalogVO.
 
-        创建时传空，更新时必填。
+        创建时传空，更新时必填。填写String类型替代Long类型。
 
         :return: The id of this BizCatalogVO.
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -312,10 +312,10 @@ class BizCatalogVO:
     def id(self, id):
         """Sets the id of this BizCatalogVO.
 
-        创建时传空，更新时必填。
+        创建时传空，更新时必填。填写String类型替代Long类型。
 
         :param id: The id of this BizCatalogVO.
-        :type id: int
+        :type id: str
         """
         self._id = id
 
@@ -389,7 +389,7 @@ class BizCatalogVO:
     def create_time(self):
         """Gets the create_time of this BizCatalogVO.
 
-        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The create_time of this BizCatalogVO.
         :rtype: datetime
@@ -400,7 +400,7 @@ class BizCatalogVO:
     def create_time(self, create_time):
         """Sets the create_time of this BizCatalogVO.
 
-        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param create_time: The create_time of this BizCatalogVO.
         :type create_time: datetime
@@ -411,7 +411,7 @@ class BizCatalogVO:
     def update_time(self):
         """Gets the update_time of this BizCatalogVO.
 
-        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The update_time of this BizCatalogVO.
         :rtype: datetime
@@ -422,7 +422,7 @@ class BizCatalogVO:
     def update_time(self, update_time):
         """Sets the update_time of this BizCatalogVO.
 
-        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param update_time: The update_time of this BizCatalogVO.
         :type update_time: datetime
@@ -477,7 +477,7 @@ class BizCatalogVO:
     def children(self):
         """Gets the children of this BizCatalogVO.
 
-        下层子目录。
+        下层子目录，只读。
 
         :return: The children of this BizCatalogVO.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.BizCatalogVO`]
@@ -488,7 +488,7 @@ class BizCatalogVO:
     def children(self, children):
         """Sets the children of this BizCatalogVO.
 
-        下层子目录。
+        下层子目录，只读。
 
         :param children: The children of this BizCatalogVO.
         :type children: list[:class:`huaweicloudsdkdataartsstudio.v1.BizCatalogVO`]

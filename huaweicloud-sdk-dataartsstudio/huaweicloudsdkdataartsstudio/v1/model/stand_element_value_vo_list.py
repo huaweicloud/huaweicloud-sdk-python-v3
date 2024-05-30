@@ -18,10 +18,10 @@ class StandElementValueVOList:
 
     openapi_types = {
         'values': 'list[StandElementValueVO]',
-        'id': 'int',
-        'directory_id': 'int',
+        'id': 'str',
+        'directory_id': 'str',
         'directory_path': 'str',
-        'row_id': 'int',
+        'row_id': 'str',
         'status': 'BizStatusEnum',
         'approval_info': 'ApprovalVO',
         'new_biz': 'BizVersionManageVO',
@@ -55,14 +55,14 @@ class StandElementValueVOList:
 
         :param values: 属性信息。
         :type values: list[:class:`huaweicloudsdkdataartsstudio.v1.StandElementValueVO`]
-        :param id: ID
-        :type id: int
-        :param directory_id: 标准所属目录。
-        :type directory_id: int
+        :param id: 数据标准的ID，填写String类型替代Long类型。
+        :type id: str
+        :param directory_id: 标准所属目录，填写String类型替代Long类型。
+        :type directory_id: str
         :param directory_path: 目录树。
         :type directory_path: str
-        :param row_id: 标准行的ID。
-        :type row_id: int
+        :param row_id: 标准行的ID，填写String类型替代Long类型。
+        :type row_id: str
         :param status: 
         :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
         :param approval_info: 
@@ -75,9 +75,9 @@ class StandElementValueVOList:
         :type create_by: str
         :param update_by: 更新人。
         :type update_by: str
-        :param create_time: 创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        :param create_time: 创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
-        :param update_time: 更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        :param update_time: 更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type update_time: datetime
         """
         
@@ -149,10 +149,10 @@ class StandElementValueVOList:
     def id(self):
         """Gets the id of this StandElementValueVOList.
 
-        ID
+        数据标准的ID，填写String类型替代Long类型。
 
         :return: The id of this StandElementValueVOList.
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -160,10 +160,10 @@ class StandElementValueVOList:
     def id(self, id):
         """Sets the id of this StandElementValueVOList.
 
-        ID
+        数据标准的ID，填写String类型替代Long类型。
 
         :param id: The id of this StandElementValueVOList.
-        :type id: int
+        :type id: str
         """
         self._id = id
 
@@ -171,10 +171,10 @@ class StandElementValueVOList:
     def directory_id(self):
         """Gets the directory_id of this StandElementValueVOList.
 
-        标准所属目录。
+        标准所属目录，填写String类型替代Long类型。
 
         :return: The directory_id of this StandElementValueVOList.
-        :rtype: int
+        :rtype: str
         """
         return self._directory_id
 
@@ -182,10 +182,10 @@ class StandElementValueVOList:
     def directory_id(self, directory_id):
         """Sets the directory_id of this StandElementValueVOList.
 
-        标准所属目录。
+        标准所属目录，填写String类型替代Long类型。
 
         :param directory_id: The directory_id of this StandElementValueVOList.
-        :type directory_id: int
+        :type directory_id: str
         """
         self._directory_id = directory_id
 
@@ -215,10 +215,10 @@ class StandElementValueVOList:
     def row_id(self):
         """Gets the row_id of this StandElementValueVOList.
 
-        标准行的ID。
+        标准行的ID，填写String类型替代Long类型。
 
         :return: The row_id of this StandElementValueVOList.
-        :rtype: int
+        :rtype: str
         """
         return self._row_id
 
@@ -226,10 +226,10 @@ class StandElementValueVOList:
     def row_id(self, row_id):
         """Sets the row_id of this StandElementValueVOList.
 
-        标准行的ID。
+        标准行的ID，填写String类型替代Long类型。
 
         :param row_id: The row_id of this StandElementValueVOList.
-        :type row_id: int
+        :type row_id: str
         """
         self._row_id = row_id
 
@@ -357,7 +357,7 @@ class StandElementValueVOList:
     def create_time(self):
         """Gets the create_time of this StandElementValueVOList.
 
-        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The create_time of this StandElementValueVOList.
         :rtype: datetime
@@ -368,7 +368,7 @@ class StandElementValueVOList:
     def create_time(self, create_time):
         """Sets the create_time of this StandElementValueVOList.
 
-        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param create_time: The create_time of this StandElementValueVOList.
         :type create_time: datetime
@@ -379,7 +379,7 @@ class StandElementValueVOList:
     def update_time(self):
         """Gets the update_time of this StandElementValueVOList.
 
-        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The update_time of this StandElementValueVOList.
         :rtype: datetime
@@ -390,7 +390,7 @@ class StandElementValueVOList:
     def update_time(self, update_time):
         """Sets the update_time of this StandElementValueVOList.
 
-        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param update_time: The update_time of this StandElementValueVOList.
         :type update_time: datetime

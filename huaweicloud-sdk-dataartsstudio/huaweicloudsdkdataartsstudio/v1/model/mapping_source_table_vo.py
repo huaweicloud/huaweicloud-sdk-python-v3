@@ -17,8 +17,8 @@ class MappingSourceTableVO:
     sensitive_list = []
 
     openapi_types = {
-        'table1_id': 'int',
-        'table2_id': 'int',
+        'table1_id': 'str',
+        'table2_id': 'str',
         'table1_name': 'str',
         'table2_name': 'str',
         'join_type': 'str',
@@ -39,15 +39,15 @@ class MappingSourceTableVO:
 
         The model defined in huaweicloud sdk
 
-        :param table1_id: 表1ID。
-        :type table1_id: int
-        :param table2_id: 表2ID。
-        :type table2_id: int
+        :param table1_id: 表1ID，填写String类型替代Long类型。
+        :type table1_id: str
+        :param table2_id: 表2ID，填写String类型替代Long类型。
+        :type table2_id: str
         :param table1_name: 表1名称。
         :type table1_name: str
         :param table2_name: 表2名称。
         :type table2_name: str
-        :param join_type: 关联类型。LEFT(左外连接)、RIGHT(右外连接)、INNER(内连接)、FULL(全连接)。
+        :param join_type: 关联类型。 枚举值：   - LEFT: 左外连接   - RIGHT: 右外连接   - INNER: 内连接   - FULL: 全连接 
         :type join_type: str
         :param join_fields: on条件。
         :type join_fields: list[:class:`huaweicloudsdkdataartsstudio.v1.MappingJoinFieldVO`]
@@ -76,10 +76,10 @@ class MappingSourceTableVO:
     def table1_id(self):
         """Gets the table1_id of this MappingSourceTableVO.
 
-        表1ID。
+        表1ID，填写String类型替代Long类型。
 
         :return: The table1_id of this MappingSourceTableVO.
-        :rtype: int
+        :rtype: str
         """
         return self._table1_id
 
@@ -87,10 +87,10 @@ class MappingSourceTableVO:
     def table1_id(self, table1_id):
         """Sets the table1_id of this MappingSourceTableVO.
 
-        表1ID。
+        表1ID，填写String类型替代Long类型。
 
         :param table1_id: The table1_id of this MappingSourceTableVO.
-        :type table1_id: int
+        :type table1_id: str
         """
         self._table1_id = table1_id
 
@@ -98,10 +98,10 @@ class MappingSourceTableVO:
     def table2_id(self):
         """Gets the table2_id of this MappingSourceTableVO.
 
-        表2ID。
+        表2ID，填写String类型替代Long类型。
 
         :return: The table2_id of this MappingSourceTableVO.
-        :rtype: int
+        :rtype: str
         """
         return self._table2_id
 
@@ -109,10 +109,10 @@ class MappingSourceTableVO:
     def table2_id(self, table2_id):
         """Sets the table2_id of this MappingSourceTableVO.
 
-        表2ID。
+        表2ID，填写String类型替代Long类型。
 
         :param table2_id: The table2_id of this MappingSourceTableVO.
-        :type table2_id: int
+        :type table2_id: str
         """
         self._table2_id = table2_id
 
@@ -164,7 +164,7 @@ class MappingSourceTableVO:
     def join_type(self):
         """Gets the join_type of this MappingSourceTableVO.
 
-        关联类型。LEFT(左外连接)、RIGHT(右外连接)、INNER(内连接)、FULL(全连接)。
+        关联类型。 枚举值：   - LEFT: 左外连接   - RIGHT: 右外连接   - INNER: 内连接   - FULL: 全连接 
 
         :return: The join_type of this MappingSourceTableVO.
         :rtype: str
@@ -175,7 +175,7 @@ class MappingSourceTableVO:
     def join_type(self, join_type):
         """Sets the join_type of this MappingSourceTableVO.
 
-        关联类型。LEFT(左外连接)、RIGHT(右外连接)、INNER(内连接)、FULL(全连接)。
+        关联类型。 枚举值：   - LEFT: 左外连接   - RIGHT: 右外连接   - INNER: 内连接   - FULL: 全连接 
 
         :param join_type: The join_type of this MappingSourceTableVO.
         :type join_type: str

@@ -19,8 +19,8 @@ class DerivativeIndexDimensionVO:
     openapi_types = {
         'group_id': 'str',
         'role': 'str',
-        'dimension_id': 'int',
-        'hierarchies_id': 'int',
+        'dimension_id': 'str',
+        'hierarchies_id': 'str',
         'ordinal': 'int',
         'group_name': 'str',
         'group_code': 'str',
@@ -29,11 +29,11 @@ class DerivativeIndexDimensionVO:
         'l1': 'str',
         'l2': 'str',
         'l3': 'str',
-        'l1_id': 'int',
+        'l1_id': 'str',
         'l2_id': 'str',
-        'l3_id': 'int',
+        'l3_id': 'str',
         'dw_type': 'str',
-        'id': 'int'
+        'id': 'str'
     }
 
     attribute_map = {
@@ -65,11 +65,11 @@ class DerivativeIndexDimensionVO:
         :type group_id: str
         :param role: 维度角色。
         :type role: str
-        :param dimension_id: 维度ID。
-        :type dimension_id: int
-        :param hierarchies_id: 维度层级ID。
-        :type hierarchies_id: int
-        :param ordinal: 序号。
+        :param dimension_id: 维度ID，填写String类型替代Long类型。
+        :type dimension_id: str
+        :param hierarchies_id: 维度层级ID，填写String类型替代Long类型。
+        :type hierarchies_id: str
+        :param ordinal: 序号，只读。
         :type ordinal: int
         :param group_name: 维度分组名称。
         :type group_name: str
@@ -77,7 +77,7 @@ class DerivativeIndexDimensionVO:
         :type group_code: str
         :param biz_type: 
         :type biz_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
-        :param hierarchies: 层级属性。
+        :param hierarchies: 层级属性，只读。
         :type hierarchies: list[:class:`huaweicloudsdkdataartsstudio.v1.DimensionHierarchiesVO`]
         :param l1: 主题域分组中文名，只读，创建和更新时无需填写。
         :type l1: str
@@ -85,16 +85,16 @@ class DerivativeIndexDimensionVO:
         :type l2: str
         :param l3: 业务对象中文名，只读，创建和更新时无需填写。
         :type l3: str
-        :param l1_id: 主题域分组ID。
-        :type l1_id: int
+        :param l1_id: 主题域分组ID，只读，填写String类型替代Long类型。
+        :type l1_id: str
         :param l2_id: 主题域ID，只读，创建和更新时无需填写。
         :type l2_id: str
-        :param l3_id: 业务对象ID。
-        :type l3_id: int
+        :param l3_id: 业务对象ID，只读，填写String类型替代Long类型。
+        :type l3_id: str
         :param dw_type: 数据连接类型。
         :type dw_type: str
-        :param id: id
-        :type id: int
+        :param id: 层级的ID，只读，填写String类型替代Long类型。
+        :type id: str
         """
         
         
@@ -199,10 +199,10 @@ class DerivativeIndexDimensionVO:
     def dimension_id(self):
         """Gets the dimension_id of this DerivativeIndexDimensionVO.
 
-        维度ID。
+        维度ID，填写String类型替代Long类型。
 
         :return: The dimension_id of this DerivativeIndexDimensionVO.
-        :rtype: int
+        :rtype: str
         """
         return self._dimension_id
 
@@ -210,10 +210,10 @@ class DerivativeIndexDimensionVO:
     def dimension_id(self, dimension_id):
         """Sets the dimension_id of this DerivativeIndexDimensionVO.
 
-        维度ID。
+        维度ID，填写String类型替代Long类型。
 
         :param dimension_id: The dimension_id of this DerivativeIndexDimensionVO.
-        :type dimension_id: int
+        :type dimension_id: str
         """
         self._dimension_id = dimension_id
 
@@ -221,10 +221,10 @@ class DerivativeIndexDimensionVO:
     def hierarchies_id(self):
         """Gets the hierarchies_id of this DerivativeIndexDimensionVO.
 
-        维度层级ID。
+        维度层级ID，填写String类型替代Long类型。
 
         :return: The hierarchies_id of this DerivativeIndexDimensionVO.
-        :rtype: int
+        :rtype: str
         """
         return self._hierarchies_id
 
@@ -232,10 +232,10 @@ class DerivativeIndexDimensionVO:
     def hierarchies_id(self, hierarchies_id):
         """Sets the hierarchies_id of this DerivativeIndexDimensionVO.
 
-        维度层级ID。
+        维度层级ID，填写String类型替代Long类型。
 
         :param hierarchies_id: The hierarchies_id of this DerivativeIndexDimensionVO.
-        :type hierarchies_id: int
+        :type hierarchies_id: str
         """
         self._hierarchies_id = hierarchies_id
 
@@ -243,7 +243,7 @@ class DerivativeIndexDimensionVO:
     def ordinal(self):
         """Gets the ordinal of this DerivativeIndexDimensionVO.
 
-        序号。
+        序号，只读。
 
         :return: The ordinal of this DerivativeIndexDimensionVO.
         :rtype: int
@@ -254,7 +254,7 @@ class DerivativeIndexDimensionVO:
     def ordinal(self, ordinal):
         """Sets the ordinal of this DerivativeIndexDimensionVO.
 
-        序号。
+        序号，只读。
 
         :param ordinal: The ordinal of this DerivativeIndexDimensionVO.
         :type ordinal: int
@@ -327,7 +327,7 @@ class DerivativeIndexDimensionVO:
     def hierarchies(self):
         """Gets the hierarchies of this DerivativeIndexDimensionVO.
 
-        层级属性。
+        层级属性，只读。
 
         :return: The hierarchies of this DerivativeIndexDimensionVO.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.DimensionHierarchiesVO`]
@@ -338,7 +338,7 @@ class DerivativeIndexDimensionVO:
     def hierarchies(self, hierarchies):
         """Sets the hierarchies of this DerivativeIndexDimensionVO.
 
-        层级属性。
+        层级属性，只读。
 
         :param hierarchies: The hierarchies of this DerivativeIndexDimensionVO.
         :type hierarchies: list[:class:`huaweicloudsdkdataartsstudio.v1.DimensionHierarchiesVO`]
@@ -415,10 +415,10 @@ class DerivativeIndexDimensionVO:
     def l1_id(self):
         """Gets the l1_id of this DerivativeIndexDimensionVO.
 
-        主题域分组ID。
+        主题域分组ID，只读，填写String类型替代Long类型。
 
         :return: The l1_id of this DerivativeIndexDimensionVO.
-        :rtype: int
+        :rtype: str
         """
         return self._l1_id
 
@@ -426,10 +426,10 @@ class DerivativeIndexDimensionVO:
     def l1_id(self, l1_id):
         """Sets the l1_id of this DerivativeIndexDimensionVO.
 
-        主题域分组ID。
+        主题域分组ID，只读，填写String类型替代Long类型。
 
         :param l1_id: The l1_id of this DerivativeIndexDimensionVO.
-        :type l1_id: int
+        :type l1_id: str
         """
         self._l1_id = l1_id
 
@@ -459,10 +459,10 @@ class DerivativeIndexDimensionVO:
     def l3_id(self):
         """Gets the l3_id of this DerivativeIndexDimensionVO.
 
-        业务对象ID。
+        业务对象ID，只读，填写String类型替代Long类型。
 
         :return: The l3_id of this DerivativeIndexDimensionVO.
-        :rtype: int
+        :rtype: str
         """
         return self._l3_id
 
@@ -470,10 +470,10 @@ class DerivativeIndexDimensionVO:
     def l3_id(self, l3_id):
         """Sets the l3_id of this DerivativeIndexDimensionVO.
 
-        业务对象ID。
+        业务对象ID，只读，填写String类型替代Long类型。
 
         :param l3_id: The l3_id of this DerivativeIndexDimensionVO.
-        :type l3_id: int
+        :type l3_id: str
         """
         self._l3_id = l3_id
 
@@ -503,10 +503,10 @@ class DerivativeIndexDimensionVO:
     def id(self):
         """Gets the id of this DerivativeIndexDimensionVO.
 
-        id
+        层级的ID，只读，填写String类型替代Long类型。
 
         :return: The id of this DerivativeIndexDimensionVO.
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -514,10 +514,10 @@ class DerivativeIndexDimensionVO:
     def id(self, id):
         """Sets the id of this DerivativeIndexDimensionVO.
 
-        id
+        层级的ID，只读，填写String类型替代Long类型。
 
         :param id: The id of this DerivativeIndexDimensionVO.
-        :type id: int
+        :type id: str
         """
         self._id = id
 

@@ -19,7 +19,7 @@ class CountTableModelsRequest:
     openapi_types = {
         'workspace': 'str',
         'x_project_id': 'str',
-        'model_id': 'int'
+        'model_id': 'str'
     }
 
     attribute_map = {
@@ -37,8 +37,8 @@ class CountTableModelsRequest:
         :type workspace: str
         :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
         :type x_project_id: str
-        :param model_id: 依据关系建模的模型ID查询统计信息。
-        :type model_id: int
+        :param model_id: 依据关系建模的模型ID查询统计信息，填写String类型替代Long类型。
+        :type model_id: str
         """
         
         
@@ -102,10 +102,10 @@ class CountTableModelsRequest:
     def model_id(self):
         """Gets the model_id of this CountTableModelsRequest.
 
-        依据关系建模的模型ID查询统计信息。
+        依据关系建模的模型ID查询统计信息，填写String类型替代Long类型。
 
         :return: The model_id of this CountTableModelsRequest.
-        :rtype: int
+        :rtype: str
         """
         return self._model_id
 
@@ -113,10 +113,10 @@ class CountTableModelsRequest:
     def model_id(self, model_id):
         """Sets the model_id of this CountTableModelsRequest.
 
-        依据关系建模的模型ID查询统计信息。
+        依据关系建模的模型ID查询统计信息，填写String类型替代Long类型。
 
         :param model_id: The model_id of this CountTableModelsRequest.
-        :type model_id: int
+        :type model_id: str
         """
         self._model_id = model_id
 

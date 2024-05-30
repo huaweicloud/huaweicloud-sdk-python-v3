@@ -41,11 +41,11 @@ class ListDirectoriesRequest:
         :type workspace: str
         :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
         :type x_project_id: str
-        :param limit: 查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+        :param limit: 每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
         :type limit: int
         :param offset: 查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
         :type offset: int
-        :param type: 获取该目录下的数据，如果有子目录，获取所有子目录的数据。CODE(码表目录)、STANDARD_ELEMENT(数据标准目录)。
+        :param type: 获取该目录下的数据，如果有子目录，获取所有子目录的数据。 枚举值：   - CODE: 码表目录   - STANDARD_ELEMENT: 数据标准目录 
         :type type: str
         """
         
@@ -115,7 +115,7 @@ class ListDirectoriesRequest:
     def limit(self):
         """Gets the limit of this ListDirectoriesRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+        每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :return: The limit of this ListDirectoriesRequest.
         :rtype: int
@@ -126,7 +126,7 @@ class ListDirectoriesRequest:
     def limit(self, limit):
         """Sets the limit of this ListDirectoriesRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+        每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :param limit: The limit of this ListDirectoriesRequest.
         :type limit: int
@@ -159,7 +159,7 @@ class ListDirectoriesRequest:
     def type(self):
         """Gets the type of this ListDirectoriesRequest.
 
-        获取该目录下的数据，如果有子目录，获取所有子目录的数据。CODE(码表目录)、STANDARD_ELEMENT(数据标准目录)。
+        获取该目录下的数据，如果有子目录，获取所有子目录的数据。 枚举值：   - CODE: 码表目录   - STANDARD_ELEMENT: 数据标准目录 
 
         :return: The type of this ListDirectoriesRequest.
         :rtype: str
@@ -170,7 +170,7 @@ class ListDirectoriesRequest:
     def type(self, type):
         """Sets the type of this ListDirectoriesRequest.
 
-        获取该目录下的数据，如果有子目录，获取所有子目录的数据。CODE(码表目录)、STANDARD_ELEMENT(数据标准目录)。
+        获取该目录下的数据，如果有子目录，获取所有子目录的数据。 枚举值：   - CODE: 码表目录   - STANDARD_ELEMENT: 数据标准目录 
 
         :param type: The type of this ListDirectoriesRequest.
         :type type: str

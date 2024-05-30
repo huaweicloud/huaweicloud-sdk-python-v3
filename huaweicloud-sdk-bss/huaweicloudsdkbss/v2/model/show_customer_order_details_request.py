@@ -41,9 +41,9 @@ class ShowCustomerOrderDetailsRequest:
         :type x_language: str
         :param order_id: 订单ID。
         :type order_id: str
-        :param limit: 每页大小。默认值为10。
+        :param limit: 每页大小。默认值为10。此参数不携带或携带值为空或携带值为null，取默认值10。
         :type limit: int
-        :param offset: 偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
+        :param offset: 偏移量，从0开始。默认值为0。此参数不携带或携带值为空或携带值为null，取默认值0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
         :type offset: int
         :param indirect_partner_id: 云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。华为云总经销商（一级经销商）查询云经销商的客户订单详情时，需要携带该参数；除此之外，此参数不做处理。否则只能查询自己客户的订单详情。
         :type indirect_partner_id: str
@@ -116,7 +116,7 @@ class ShowCustomerOrderDetailsRequest:
     def limit(self):
         """Gets the limit of this ShowCustomerOrderDetailsRequest.
 
-        每页大小。默认值为10。
+        每页大小。默认值为10。此参数不携带或携带值为空或携带值为null，取默认值10。
 
         :return: The limit of this ShowCustomerOrderDetailsRequest.
         :rtype: int
@@ -127,7 +127,7 @@ class ShowCustomerOrderDetailsRequest:
     def limit(self, limit):
         """Sets the limit of this ShowCustomerOrderDetailsRequest.
 
-        每页大小。默认值为10。
+        每页大小。默认值为10。此参数不携带或携带值为空或携带值为null，取默认值10。
 
         :param limit: The limit of this ShowCustomerOrderDetailsRequest.
         :type limit: int
@@ -138,7 +138,7 @@ class ShowCustomerOrderDetailsRequest:
     def offset(self):
         """Gets the offset of this ShowCustomerOrderDetailsRequest.
 
-        偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
+        偏移量，从0开始。默认值为0。此参数不携带或携带值为空或携带值为null，取默认值0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :return: The offset of this ShowCustomerOrderDetailsRequest.
         :rtype: int
@@ -149,7 +149,7 @@ class ShowCustomerOrderDetailsRequest:
     def offset(self, offset):
         """Sets the offset of this ShowCustomerOrderDetailsRequest.
 
-        偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
+        偏移量，从0开始。默认值为0。此参数不携带或携带值为空或携带值为null，取默认值0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :param offset: The offset of this ShowCustomerOrderDetailsRequest.
         :type offset: int

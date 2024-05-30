@@ -74,29 +74,29 @@ class ShowEngineResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: 微服务引擎专享版ID
+        :param id: 微服务引擎ID
         :type id: str
-        :param name: 微服务引擎专享版名称
+        :param name: 微服务引擎名称
         :type name: str
-        :param description: 微服务引擎专享版描述
+        :param description: 微服务引擎描述
         :type description: str
-        :param auth_type: 微服务引擎专享版认证类型
+        :param auth_type: 微服务引擎认证类型
         :type auth_type: str
-        :param flavor: 微服务引擎专享版规格
+        :param flavor: 微服务引擎规格
         :type flavor: str
-        :param payment: 微服务引擎专享版计费方式
+        :param payment: 微服务引擎计费方式
         :type payment: str
-        :param version: 微服务引擎专享版当前版本
+        :param version: 微服务引擎当前版本
         :type version: str
-        :param latest_version: 微服务引擎专享版最新版本
+        :param latest_version: 微服务引擎最新版本
         :type latest_version: str
-        :param status: 微服务引擎专享版状态
+        :param status: 微服务引擎状态
         :type status: str
         :param be_default: engine 是否是默认引擎
         :type be_default: bool
-        :param create_user: 微服务引擎专享版创建者
+        :param create_user: 微服务引擎创建者
         :type create_user: str
-        :param create_time: 微服务引擎专享版创建时间
+        :param create_time: 微服务引擎创建时间
         :type create_time: int
         :param cce_spec: 
         :type cce_spec: :class:`huaweicloudsdkcse.v1.Spec`
@@ -104,19 +104,19 @@ class ShowEngineResponse(SdkResponse):
         :type external_entrypoint: :class:`huaweicloudsdkcse.v1.EngineExternalEntrypoint`
         :param reference: 
         :type reference: :class:`huaweicloudsdkcse.v1.EngineReference`
-        :param latest_job_id: 微服务引擎专享版最近的任务ID
+        :param latest_job_id: 微服务引擎最近的任务ID
         :type latest_job_id: int
-        :param enterprise_project_id: 微服务引擎专享版所属企业项目ID
+        :param enterprise_project_id: 微服务引擎所属企业项目ID
         :type enterprise_project_id: str
-        :param enterprise_project_name: 微服务引擎专享版所属企业项目名称
+        :param enterprise_project_name: 微服务引擎所属企业项目名称
         :type enterprise_project_name: str
-        :param engine_additional_actions: 微服务引擎专享版允许的附加操作
+        :param engine_additional_actions: 微服务引擎允许的附加操作
         :type engine_additional_actions: list[str]
-        :param spec_type: 微服务引擎专享版应用部署类型
+        :param spec_type: 微服务引擎应用部署类型
         :type spec_type: str
-        :param type: 微服务引擎类型，CSE表示专享版，CSE_Share表示专业版
+        :param type: 微服务引擎类型，CSE表示专享版，NACOS表示注册配置中心，MICROGATEWAY表示网关
         :type type: str
-        :param project_id: 微服务引擎专享版所属项目ID
+        :param project_id: 微服务引擎所属项目ID
         :type project_id: str
         :param vm_ids: 当前引擎在资源租户侧使用的虚拟机 id 列表
         :type vm_ids: list[str]
@@ -200,7 +200,7 @@ class ShowEngineResponse(SdkResponse):
     def id(self):
         """Gets the id of this ShowEngineResponse.
 
-        微服务引擎专享版ID
+        微服务引擎ID
 
         :return: The id of this ShowEngineResponse.
         :rtype: str
@@ -211,7 +211,7 @@ class ShowEngineResponse(SdkResponse):
     def id(self, id):
         """Sets the id of this ShowEngineResponse.
 
-        微服务引擎专享版ID
+        微服务引擎ID
 
         :param id: The id of this ShowEngineResponse.
         :type id: str
@@ -222,7 +222,7 @@ class ShowEngineResponse(SdkResponse):
     def name(self):
         """Gets the name of this ShowEngineResponse.
 
-        微服务引擎专享版名称
+        微服务引擎名称
 
         :return: The name of this ShowEngineResponse.
         :rtype: str
@@ -233,7 +233,7 @@ class ShowEngineResponse(SdkResponse):
     def name(self, name):
         """Sets the name of this ShowEngineResponse.
 
-        微服务引擎专享版名称
+        微服务引擎名称
 
         :param name: The name of this ShowEngineResponse.
         :type name: str
@@ -244,7 +244,7 @@ class ShowEngineResponse(SdkResponse):
     def description(self):
         """Gets the description of this ShowEngineResponse.
 
-        微服务引擎专享版描述
+        微服务引擎描述
 
         :return: The description of this ShowEngineResponse.
         :rtype: str
@@ -255,7 +255,7 @@ class ShowEngineResponse(SdkResponse):
     def description(self, description):
         """Sets the description of this ShowEngineResponse.
 
-        微服务引擎专享版描述
+        微服务引擎描述
 
         :param description: The description of this ShowEngineResponse.
         :type description: str
@@ -266,7 +266,7 @@ class ShowEngineResponse(SdkResponse):
     def auth_type(self):
         """Gets the auth_type of this ShowEngineResponse.
 
-        微服务引擎专享版认证类型
+        微服务引擎认证类型
 
         :return: The auth_type of this ShowEngineResponse.
         :rtype: str
@@ -277,7 +277,7 @@ class ShowEngineResponse(SdkResponse):
     def auth_type(self, auth_type):
         """Sets the auth_type of this ShowEngineResponse.
 
-        微服务引擎专享版认证类型
+        微服务引擎认证类型
 
         :param auth_type: The auth_type of this ShowEngineResponse.
         :type auth_type: str
@@ -288,7 +288,7 @@ class ShowEngineResponse(SdkResponse):
     def flavor(self):
         """Gets the flavor of this ShowEngineResponse.
 
-        微服务引擎专享版规格
+        微服务引擎规格
 
         :return: The flavor of this ShowEngineResponse.
         :rtype: str
@@ -299,7 +299,7 @@ class ShowEngineResponse(SdkResponse):
     def flavor(self, flavor):
         """Sets the flavor of this ShowEngineResponse.
 
-        微服务引擎专享版规格
+        微服务引擎规格
 
         :param flavor: The flavor of this ShowEngineResponse.
         :type flavor: str
@@ -310,7 +310,7 @@ class ShowEngineResponse(SdkResponse):
     def payment(self):
         """Gets the payment of this ShowEngineResponse.
 
-        微服务引擎专享版计费方式
+        微服务引擎计费方式
 
         :return: The payment of this ShowEngineResponse.
         :rtype: str
@@ -321,7 +321,7 @@ class ShowEngineResponse(SdkResponse):
     def payment(self, payment):
         """Sets the payment of this ShowEngineResponse.
 
-        微服务引擎专享版计费方式
+        微服务引擎计费方式
 
         :param payment: The payment of this ShowEngineResponse.
         :type payment: str
@@ -332,7 +332,7 @@ class ShowEngineResponse(SdkResponse):
     def version(self):
         """Gets the version of this ShowEngineResponse.
 
-        微服务引擎专享版当前版本
+        微服务引擎当前版本
 
         :return: The version of this ShowEngineResponse.
         :rtype: str
@@ -343,7 +343,7 @@ class ShowEngineResponse(SdkResponse):
     def version(self, version):
         """Sets the version of this ShowEngineResponse.
 
-        微服务引擎专享版当前版本
+        微服务引擎当前版本
 
         :param version: The version of this ShowEngineResponse.
         :type version: str
@@ -354,7 +354,7 @@ class ShowEngineResponse(SdkResponse):
     def latest_version(self):
         """Gets the latest_version of this ShowEngineResponse.
 
-        微服务引擎专享版最新版本
+        微服务引擎最新版本
 
         :return: The latest_version of this ShowEngineResponse.
         :rtype: str
@@ -365,7 +365,7 @@ class ShowEngineResponse(SdkResponse):
     def latest_version(self, latest_version):
         """Sets the latest_version of this ShowEngineResponse.
 
-        微服务引擎专享版最新版本
+        微服务引擎最新版本
 
         :param latest_version: The latest_version of this ShowEngineResponse.
         :type latest_version: str
@@ -376,7 +376,7 @@ class ShowEngineResponse(SdkResponse):
     def status(self):
         """Gets the status of this ShowEngineResponse.
 
-        微服务引擎专享版状态
+        微服务引擎状态
 
         :return: The status of this ShowEngineResponse.
         :rtype: str
@@ -387,7 +387,7 @@ class ShowEngineResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this ShowEngineResponse.
 
-        微服务引擎专享版状态
+        微服务引擎状态
 
         :param status: The status of this ShowEngineResponse.
         :type status: str
@@ -420,7 +420,7 @@ class ShowEngineResponse(SdkResponse):
     def create_user(self):
         """Gets the create_user of this ShowEngineResponse.
 
-        微服务引擎专享版创建者
+        微服务引擎创建者
 
         :return: The create_user of this ShowEngineResponse.
         :rtype: str
@@ -431,7 +431,7 @@ class ShowEngineResponse(SdkResponse):
     def create_user(self, create_user):
         """Sets the create_user of this ShowEngineResponse.
 
-        微服务引擎专享版创建者
+        微服务引擎创建者
 
         :param create_user: The create_user of this ShowEngineResponse.
         :type create_user: str
@@ -442,7 +442,7 @@ class ShowEngineResponse(SdkResponse):
     def create_time(self):
         """Gets the create_time of this ShowEngineResponse.
 
-        微服务引擎专享版创建时间
+        微服务引擎创建时间
 
         :return: The create_time of this ShowEngineResponse.
         :rtype: int
@@ -453,7 +453,7 @@ class ShowEngineResponse(SdkResponse):
     def create_time(self, create_time):
         """Sets the create_time of this ShowEngineResponse.
 
-        微服务引擎专享版创建时间
+        微服务引擎创建时间
 
         :param create_time: The create_time of this ShowEngineResponse.
         :type create_time: int
@@ -518,7 +518,7 @@ class ShowEngineResponse(SdkResponse):
     def latest_job_id(self):
         """Gets the latest_job_id of this ShowEngineResponse.
 
-        微服务引擎专享版最近的任务ID
+        微服务引擎最近的任务ID
 
         :return: The latest_job_id of this ShowEngineResponse.
         :rtype: int
@@ -529,7 +529,7 @@ class ShowEngineResponse(SdkResponse):
     def latest_job_id(self, latest_job_id):
         """Sets the latest_job_id of this ShowEngineResponse.
 
-        微服务引擎专享版最近的任务ID
+        微服务引擎最近的任务ID
 
         :param latest_job_id: The latest_job_id of this ShowEngineResponse.
         :type latest_job_id: int
@@ -540,7 +540,7 @@ class ShowEngineResponse(SdkResponse):
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ShowEngineResponse.
 
-        微服务引擎专享版所属企业项目ID
+        微服务引擎所属企业项目ID
 
         :return: The enterprise_project_id of this ShowEngineResponse.
         :rtype: str
@@ -551,7 +551,7 @@ class ShowEngineResponse(SdkResponse):
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ShowEngineResponse.
 
-        微服务引擎专享版所属企业项目ID
+        微服务引擎所属企业项目ID
 
         :param enterprise_project_id: The enterprise_project_id of this ShowEngineResponse.
         :type enterprise_project_id: str
@@ -562,7 +562,7 @@ class ShowEngineResponse(SdkResponse):
     def enterprise_project_name(self):
         """Gets the enterprise_project_name of this ShowEngineResponse.
 
-        微服务引擎专享版所属企业项目名称
+        微服务引擎所属企业项目名称
 
         :return: The enterprise_project_name of this ShowEngineResponse.
         :rtype: str
@@ -573,7 +573,7 @@ class ShowEngineResponse(SdkResponse):
     def enterprise_project_name(self, enterprise_project_name):
         """Sets the enterprise_project_name of this ShowEngineResponse.
 
-        微服务引擎专享版所属企业项目名称
+        微服务引擎所属企业项目名称
 
         :param enterprise_project_name: The enterprise_project_name of this ShowEngineResponse.
         :type enterprise_project_name: str
@@ -584,7 +584,7 @@ class ShowEngineResponse(SdkResponse):
     def engine_additional_actions(self):
         """Gets the engine_additional_actions of this ShowEngineResponse.
 
-        微服务引擎专享版允许的附加操作
+        微服务引擎允许的附加操作
 
         :return: The engine_additional_actions of this ShowEngineResponse.
         :rtype: list[str]
@@ -595,7 +595,7 @@ class ShowEngineResponse(SdkResponse):
     def engine_additional_actions(self, engine_additional_actions):
         """Sets the engine_additional_actions of this ShowEngineResponse.
 
-        微服务引擎专享版允许的附加操作
+        微服务引擎允许的附加操作
 
         :param engine_additional_actions: The engine_additional_actions of this ShowEngineResponse.
         :type engine_additional_actions: list[str]
@@ -606,7 +606,7 @@ class ShowEngineResponse(SdkResponse):
     def spec_type(self):
         """Gets the spec_type of this ShowEngineResponse.
 
-        微服务引擎专享版应用部署类型
+        微服务引擎应用部署类型
 
         :return: The spec_type of this ShowEngineResponse.
         :rtype: str
@@ -617,7 +617,7 @@ class ShowEngineResponse(SdkResponse):
     def spec_type(self, spec_type):
         """Sets the spec_type of this ShowEngineResponse.
 
-        微服务引擎专享版应用部署类型
+        微服务引擎应用部署类型
 
         :param spec_type: The spec_type of this ShowEngineResponse.
         :type spec_type: str
@@ -628,7 +628,7 @@ class ShowEngineResponse(SdkResponse):
     def type(self):
         """Gets the type of this ShowEngineResponse.
 
-        微服务引擎类型，CSE表示专享版，CSE_Share表示专业版
+        微服务引擎类型，CSE表示专享版，NACOS表示注册配置中心，MICROGATEWAY表示网关
 
         :return: The type of this ShowEngineResponse.
         :rtype: str
@@ -639,7 +639,7 @@ class ShowEngineResponse(SdkResponse):
     def type(self, type):
         """Sets the type of this ShowEngineResponse.
 
-        微服务引擎类型，CSE表示专享版，CSE_Share表示专业版
+        微服务引擎类型，CSE表示专享版，NACOS表示注册配置中心，MICROGATEWAY表示网关
 
         :param type: The type of this ShowEngineResponse.
         :type type: str
@@ -650,7 +650,7 @@ class ShowEngineResponse(SdkResponse):
     def project_id(self):
         """Gets the project_id of this ShowEngineResponse.
 
-        微服务引擎专享版所属项目ID
+        微服务引擎所属项目ID
 
         :return: The project_id of this ShowEngineResponse.
         :rtype: str
@@ -661,7 +661,7 @@ class ShowEngineResponse(SdkResponse):
     def project_id(self, project_id):
         """Sets the project_id of this ShowEngineResponse.
 
-        微服务引擎专享版所属项目ID
+        微服务引擎所属项目ID
 
         :param project_id: The project_id of this ShowEngineResponse.
         :type project_id: str

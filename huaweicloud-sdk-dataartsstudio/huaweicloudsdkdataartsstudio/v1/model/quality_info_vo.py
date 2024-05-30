@@ -17,11 +17,11 @@ class QualityInfoVO:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'int',
-        'table_id': 'int',
-        'attr_id': 'int',
+        'id': 'str',
+        'table_id': 'str',
+        'attr_id': 'str',
         'biz_type': 'BizTypeEnum',
-        'data_quality_id': 'int',
+        'data_quality_id': 'str',
         'show_control': 'int',
         'data_quality_name': 'str',
         'alert_conf': 'str',
@@ -59,16 +59,16 @@ class QualityInfoVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码ID。
-        :type id: int
-        :param table_id: 表ID。
-        :type table_id: int
-        :param attr_id: 属性ID。
-        :type attr_id: int
+        :param id: 编码ID，填写String类型替代Long类型。
+        :type id: str
+        :param table_id: 表ID，只读，填写String类型替代Long类型。
+        :type table_id: str
+        :param attr_id: 属性ID，只读，填写String类型替代Long类型。
+        :type attr_id: str
         :param biz_type: 
         :type biz_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
-        :param data_quality_id: 质量ID。
-        :type data_quality_id: int
+        :param data_quality_id: 质量ID，填写String类型替代Long类型。
+        :type data_quality_id: str
         :param show_control: 是否要显示正则表达式。
         :type show_control: int
         :param data_quality_name: 质量名称。
@@ -79,17 +79,17 @@ class QualityInfoVO:
         :type expression: str
         :param extend_info: 扩展信息。
         :type extend_info: str
-        :param from_standard: 是否来源于数据标准质量配置。
+        :param from_standard: 是否来源于数据标准质量配置，只读。
         :type from_standard: bool
         :param result_description: 结果说明。
         :type result_description: str
-        :param create_by: 创建人。
+        :param create_by: 创建人，只读。
         :type create_by: str
-        :param update_by: 更新人。
+        :param update_by: 更新人，只读。
         :type update_by: str
-        :param create_time: 创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        :param create_time: 创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
-        :param update_time: 更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        :param update_time: 更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type update_time: datetime
         """
         
@@ -149,10 +149,10 @@ class QualityInfoVO:
     def id(self):
         """Gets the id of this QualityInfoVO.
 
-        编码ID。
+        编码ID，填写String类型替代Long类型。
 
         :return: The id of this QualityInfoVO.
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -160,10 +160,10 @@ class QualityInfoVO:
     def id(self, id):
         """Sets the id of this QualityInfoVO.
 
-        编码ID。
+        编码ID，填写String类型替代Long类型。
 
         :param id: The id of this QualityInfoVO.
-        :type id: int
+        :type id: str
         """
         self._id = id
 
@@ -171,10 +171,10 @@ class QualityInfoVO:
     def table_id(self):
         """Gets the table_id of this QualityInfoVO.
 
-        表ID。
+        表ID，只读，填写String类型替代Long类型。
 
         :return: The table_id of this QualityInfoVO.
-        :rtype: int
+        :rtype: str
         """
         return self._table_id
 
@@ -182,10 +182,10 @@ class QualityInfoVO:
     def table_id(self, table_id):
         """Sets the table_id of this QualityInfoVO.
 
-        表ID。
+        表ID，只读，填写String类型替代Long类型。
 
         :param table_id: The table_id of this QualityInfoVO.
-        :type table_id: int
+        :type table_id: str
         """
         self._table_id = table_id
 
@@ -193,10 +193,10 @@ class QualityInfoVO:
     def attr_id(self):
         """Gets the attr_id of this QualityInfoVO.
 
-        属性ID。
+        属性ID，只读，填写String类型替代Long类型。
 
         :return: The attr_id of this QualityInfoVO.
-        :rtype: int
+        :rtype: str
         """
         return self._attr_id
 
@@ -204,10 +204,10 @@ class QualityInfoVO:
     def attr_id(self, attr_id):
         """Sets the attr_id of this QualityInfoVO.
 
-        属性ID。
+        属性ID，只读，填写String类型替代Long类型。
 
         :param attr_id: The attr_id of this QualityInfoVO.
-        :type attr_id: int
+        :type attr_id: str
         """
         self._attr_id = attr_id
 
@@ -233,10 +233,10 @@ class QualityInfoVO:
     def data_quality_id(self):
         """Gets the data_quality_id of this QualityInfoVO.
 
-        质量ID。
+        质量ID，填写String类型替代Long类型。
 
         :return: The data_quality_id of this QualityInfoVO.
-        :rtype: int
+        :rtype: str
         """
         return self._data_quality_id
 
@@ -244,10 +244,10 @@ class QualityInfoVO:
     def data_quality_id(self, data_quality_id):
         """Sets the data_quality_id of this QualityInfoVO.
 
-        质量ID。
+        质量ID，填写String类型替代Long类型。
 
         :param data_quality_id: The data_quality_id of this QualityInfoVO.
-        :type data_quality_id: int
+        :type data_quality_id: str
         """
         self._data_quality_id = data_quality_id
 
@@ -365,7 +365,7 @@ class QualityInfoVO:
     def from_standard(self):
         """Gets the from_standard of this QualityInfoVO.
 
-        是否来源于数据标准质量配置。
+        是否来源于数据标准质量配置，只读。
 
         :return: The from_standard of this QualityInfoVO.
         :rtype: bool
@@ -376,7 +376,7 @@ class QualityInfoVO:
     def from_standard(self, from_standard):
         """Sets the from_standard of this QualityInfoVO.
 
-        是否来源于数据标准质量配置。
+        是否来源于数据标准质量配置，只读。
 
         :param from_standard: The from_standard of this QualityInfoVO.
         :type from_standard: bool
@@ -409,7 +409,7 @@ class QualityInfoVO:
     def create_by(self):
         """Gets the create_by of this QualityInfoVO.
 
-        创建人。
+        创建人，只读。
 
         :return: The create_by of this QualityInfoVO.
         :rtype: str
@@ -420,7 +420,7 @@ class QualityInfoVO:
     def create_by(self, create_by):
         """Sets the create_by of this QualityInfoVO.
 
-        创建人。
+        创建人，只读。
 
         :param create_by: The create_by of this QualityInfoVO.
         :type create_by: str
@@ -431,7 +431,7 @@ class QualityInfoVO:
     def update_by(self):
         """Gets the update_by of this QualityInfoVO.
 
-        更新人。
+        更新人，只读。
 
         :return: The update_by of this QualityInfoVO.
         :rtype: str
@@ -442,7 +442,7 @@ class QualityInfoVO:
     def update_by(self, update_by):
         """Sets the update_by of this QualityInfoVO.
 
-        更新人。
+        更新人，只读。
 
         :param update_by: The update_by of this QualityInfoVO.
         :type update_by: str
@@ -453,7 +453,7 @@ class QualityInfoVO:
     def create_time(self):
         """Gets the create_time of this QualityInfoVO.
 
-        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The create_time of this QualityInfoVO.
         :rtype: datetime
@@ -464,7 +464,7 @@ class QualityInfoVO:
     def create_time(self, create_time):
         """Sets the create_time of this QualityInfoVO.
 
-        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param create_time: The create_time of this QualityInfoVO.
         :type create_time: datetime
@@ -475,7 +475,7 @@ class QualityInfoVO:
     def update_time(self):
         """Gets the update_time of this QualityInfoVO.
 
-        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The update_time of this QualityInfoVO.
         :rtype: datetime
@@ -486,7 +486,7 @@ class QualityInfoVO:
     def update_time(self, update_time):
         """Sets the update_time of this QualityInfoVO.
 
-        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param update_time: The update_time of this QualityInfoVO.
         :type update_time: datetime

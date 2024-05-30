@@ -37,7 +37,7 @@ class DeleteStandardTemplateRequest:
         :type workspace: str
         :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
         :type x_project_id: str
-        :param ids: 实体ID。
+        :param ids: 待删除的数据标准的ID集合。
         :type ids: str
         """
         
@@ -101,7 +101,7 @@ class DeleteStandardTemplateRequest:
     def ids(self):
         """Gets the ids of this DeleteStandardTemplateRequest.
 
-        实体ID。
+        待删除的数据标准的ID集合。
 
         :return: The ids of this DeleteStandardTemplateRequest.
         :rtype: str
@@ -112,7 +112,7 @@ class DeleteStandardTemplateRequest:
     def ids(self, ids):
         """Sets the ids of this DeleteStandardTemplateRequest.
 
-        实体ID。
+        待删除的数据标准的ID集合。
 
         :param ids: The ids of this DeleteStandardTemplateRequest.
         :type ids: str

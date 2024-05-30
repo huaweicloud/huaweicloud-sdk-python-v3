@@ -18,7 +18,7 @@ class UpdateDirectoryResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'object'
+        'data': 'CreateDirectoryResultData'
     }
 
     attribute_map = {
@@ -30,8 +30,8 @@ class UpdateDirectoryResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: 返回的数据信息。
-        :type data: object
+        :param data: 
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.CreateDirectoryResultData`
         """
         
         super(UpdateDirectoryResponse, self).__init__()
@@ -46,10 +46,8 @@ class UpdateDirectoryResponse(SdkResponse):
     def data(self):
         """Gets the data of this UpdateDirectoryResponse.
 
-        返回的数据信息。
-
         :return: The data of this UpdateDirectoryResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateDirectoryResultData`
         """
         return self._data
 
@@ -57,10 +55,8 @@ class UpdateDirectoryResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this UpdateDirectoryResponse.
 
-        返回的数据信息。
-
         :param data: The data of this UpdateDirectoryResponse.
-        :type data: object
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.CreateDirectoryResultData`
         """
         self._data = data
 

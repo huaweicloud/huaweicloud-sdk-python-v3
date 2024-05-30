@@ -43,7 +43,7 @@ class TagVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码。
+        :param id: 编码，填写String类型替代Long类型。
         :type id: str
         :param name: 标签名。
         :type name: str
@@ -53,9 +53,9 @@ class TagVO:
         :type create_by: str
         :param update_by: 更新人。
         :type update_by: str
-        :param create_time: 创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        :param create_time: 创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
-        :param update_time: 更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        :param update_time: 更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type update_time: datetime
         :param new_biz: 
         :type new_biz: :class:`huaweicloudsdkdataartsstudio.v1.BizVersionManageVO`
@@ -93,7 +93,7 @@ class TagVO:
     def id(self):
         """Gets the id of this TagVO.
 
-        编码。
+        编码，填写String类型替代Long类型。
 
         :return: The id of this TagVO.
         :rtype: str
@@ -104,7 +104,7 @@ class TagVO:
     def id(self, id):
         """Sets the id of this TagVO.
 
-        编码。
+        编码，填写String类型替代Long类型。
 
         :param id: The id of this TagVO.
         :type id: str
@@ -203,7 +203,7 @@ class TagVO:
     def create_time(self):
         """Gets the create_time of this TagVO.
 
-        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The create_time of this TagVO.
         :rtype: datetime
@@ -214,7 +214,7 @@ class TagVO:
     def create_time(self, create_time):
         """Sets the create_time of this TagVO.
 
-        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param create_time: The create_time of this TagVO.
         :type create_time: datetime
@@ -225,7 +225,7 @@ class TagVO:
     def update_time(self):
         """Gets the update_time of this TagVO.
 
-        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The update_time of this TagVO.
         :rtype: datetime
@@ -236,7 +236,7 @@ class TagVO:
     def update_time(self, update_time):
         """Sets the update_time of this TagVO.
 
-        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param update_time: The update_time of this TagVO.
         :type update_time: datetime

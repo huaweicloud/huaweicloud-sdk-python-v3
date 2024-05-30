@@ -41,9 +41,9 @@ class ListApproversRequest:
         :type workspace: str
         :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
         :type x_project_id: str
-        :param approver_name: 审核人名字
+        :param approver_name: 审核人姓名。
         :type approver_name: str
-        :param limit: 查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+        :param limit: 每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
         :type limit: int
         :param offset: 查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
         :type offset: int
@@ -116,7 +116,7 @@ class ListApproversRequest:
     def approver_name(self):
         """Gets the approver_name of this ListApproversRequest.
 
-        审核人名字
+        审核人姓名。
 
         :return: The approver_name of this ListApproversRequest.
         :rtype: str
@@ -127,7 +127,7 @@ class ListApproversRequest:
     def approver_name(self, approver_name):
         """Sets the approver_name of this ListApproversRequest.
 
-        审核人名字
+        审核人姓名。
 
         :param approver_name: The approver_name of this ListApproversRequest.
         :type approver_name: str
@@ -138,7 +138,7 @@ class ListApproversRequest:
     def limit(self):
         """Gets the limit of this ListApproversRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+        每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :return: The limit of this ListApproversRequest.
         :rtype: int
@@ -149,7 +149,7 @@ class ListApproversRequest:
     def limit(self, limit):
         """Sets the limit of this ListApproversRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+        每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :param limit: The limit of this ListApproversRequest.
         :type limit: int

@@ -23,11 +23,11 @@ class ListDimensionsRequest:
         'create_by': 'str',
         'approver': 'str',
         'status': 'str',
-        'l2_id': 'int',
-        'derivative_ids': 'list[int]',
+        'l2_id': 'str',
+        'derivative_ids': 'list[str]',
         'begin_time': 'str',
         'end_time': 'str',
-        'fact_logic_id': 'int',
+        'fact_logic_id': 'str',
         'dimension_type': 'str',
         'limit': 'int',
         'offset': 'int',
@@ -67,21 +67,21 @@ class ListDimensionsRequest:
         :type create_by: str
         :param approver: 按审核人查询。
         :type approver: str
-        :param status: 业务状态。DRAFT(草稿)、PUBLISH_DEVELOPING(发布待审批)、PUBLISHED(已发布)、OFFLINE_DEVELOPING(下线待审批)、OFFLINE(已下线)、REJECT(已驳回)。
+        :param status: 业务状态。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审批   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审批   - OFFLINE: 已下线   - REJECT: 已驳回 
         :type status: str
-        :param l2_id: 主题域l2的ID。
-        :type l2_id: int
-        :param derivative_ids: 依据复合指标ID列表查维度。
-        :type derivative_ids: list[int]
+        :param l2_id: 主题域l2的ID，填写String类型替代Long类型。
+        :type l2_id: str
+        :param derivative_ids: 依据复合指标ID列表查维度，填写String类型替代Long类型。
+        :type derivative_ids: list[str]
         :param begin_time: 时间过滤左边界，与end_time一起使用，只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type begin_time: str
         :param end_time: 时间过滤右边界，与begin_time一起使用只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type end_time: str
-        :param fact_logic_id: 事实表ID。
-        :type fact_logic_id: int
-        :param dimension_type: 维度类型。COMMON(普通维度)、LOOKUP(码表维度)、HIERARCHIES(层级维度)。
+        :param fact_logic_id: 事实表ID，填写String类型替代Long类型。
+        :type fact_logic_id: str
+        :param dimension_type: 维度类型。 枚举值： - COMMON: 普通维度 - LOOKUP: 码表维度 - HIERARCHIES: 层级维度 
         :type dimension_type: str
-        :param limit: 查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+        :param limit: 每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
         :type limit: int
         :param offset: 查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
         :type offset: int
@@ -252,7 +252,7 @@ class ListDimensionsRequest:
     def status(self):
         """Gets the status of this ListDimensionsRequest.
 
-        业务状态。DRAFT(草稿)、PUBLISH_DEVELOPING(发布待审批)、PUBLISHED(已发布)、OFFLINE_DEVELOPING(下线待审批)、OFFLINE(已下线)、REJECT(已驳回)。
+        业务状态。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审批   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审批   - OFFLINE: 已下线   - REJECT: 已驳回 
 
         :return: The status of this ListDimensionsRequest.
         :rtype: str
@@ -263,7 +263,7 @@ class ListDimensionsRequest:
     def status(self, status):
         """Sets the status of this ListDimensionsRequest.
 
-        业务状态。DRAFT(草稿)、PUBLISH_DEVELOPING(发布待审批)、PUBLISHED(已发布)、OFFLINE_DEVELOPING(下线待审批)、OFFLINE(已下线)、REJECT(已驳回)。
+        业务状态。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审批   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审批   - OFFLINE: 已下线   - REJECT: 已驳回 
 
         :param status: The status of this ListDimensionsRequest.
         :type status: str
@@ -274,10 +274,10 @@ class ListDimensionsRequest:
     def l2_id(self):
         """Gets the l2_id of this ListDimensionsRequest.
 
-        主题域l2的ID。
+        主题域l2的ID，填写String类型替代Long类型。
 
         :return: The l2_id of this ListDimensionsRequest.
-        :rtype: int
+        :rtype: str
         """
         return self._l2_id
 
@@ -285,10 +285,10 @@ class ListDimensionsRequest:
     def l2_id(self, l2_id):
         """Sets the l2_id of this ListDimensionsRequest.
 
-        主题域l2的ID。
+        主题域l2的ID，填写String类型替代Long类型。
 
         :param l2_id: The l2_id of this ListDimensionsRequest.
-        :type l2_id: int
+        :type l2_id: str
         """
         self._l2_id = l2_id
 
@@ -296,10 +296,10 @@ class ListDimensionsRequest:
     def derivative_ids(self):
         """Gets the derivative_ids of this ListDimensionsRequest.
 
-        依据复合指标ID列表查维度。
+        依据复合指标ID列表查维度，填写String类型替代Long类型。
 
         :return: The derivative_ids of this ListDimensionsRequest.
-        :rtype: list[int]
+        :rtype: list[str]
         """
         return self._derivative_ids
 
@@ -307,10 +307,10 @@ class ListDimensionsRequest:
     def derivative_ids(self, derivative_ids):
         """Sets the derivative_ids of this ListDimensionsRequest.
 
-        依据复合指标ID列表查维度。
+        依据复合指标ID列表查维度，填写String类型替代Long类型。
 
         :param derivative_ids: The derivative_ids of this ListDimensionsRequest.
-        :type derivative_ids: list[int]
+        :type derivative_ids: list[str]
         """
         self._derivative_ids = derivative_ids
 
@@ -362,10 +362,10 @@ class ListDimensionsRequest:
     def fact_logic_id(self):
         """Gets the fact_logic_id of this ListDimensionsRequest.
 
-        事实表ID。
+        事实表ID，填写String类型替代Long类型。
 
         :return: The fact_logic_id of this ListDimensionsRequest.
-        :rtype: int
+        :rtype: str
         """
         return self._fact_logic_id
 
@@ -373,10 +373,10 @@ class ListDimensionsRequest:
     def fact_logic_id(self, fact_logic_id):
         """Sets the fact_logic_id of this ListDimensionsRequest.
 
-        事实表ID。
+        事实表ID，填写String类型替代Long类型。
 
         :param fact_logic_id: The fact_logic_id of this ListDimensionsRequest.
-        :type fact_logic_id: int
+        :type fact_logic_id: str
         """
         self._fact_logic_id = fact_logic_id
 
@@ -384,7 +384,7 @@ class ListDimensionsRequest:
     def dimension_type(self):
         """Gets the dimension_type of this ListDimensionsRequest.
 
-        维度类型。COMMON(普通维度)、LOOKUP(码表维度)、HIERARCHIES(层级维度)。
+        维度类型。 枚举值： - COMMON: 普通维度 - LOOKUP: 码表维度 - HIERARCHIES: 层级维度 
 
         :return: The dimension_type of this ListDimensionsRequest.
         :rtype: str
@@ -395,7 +395,7 @@ class ListDimensionsRequest:
     def dimension_type(self, dimension_type):
         """Sets the dimension_type of this ListDimensionsRequest.
 
-        维度类型。COMMON(普通维度)、LOOKUP(码表维度)、HIERARCHIES(层级维度)。
+        维度类型。 枚举值： - COMMON: 普通维度 - LOOKUP: 码表维度 - HIERARCHIES: 层级维度 
 
         :param dimension_type: The dimension_type of this ListDimensionsRequest.
         :type dimension_type: str
@@ -406,7 +406,7 @@ class ListDimensionsRequest:
     def limit(self):
         """Gets the limit of this ListDimensionsRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+        每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :return: The limit of this ListDimensionsRequest.
         :rtype: int
@@ -417,7 +417,7 @@ class ListDimensionsRequest:
     def limit(self, limit):
         """Sets the limit of this ListDimensionsRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+        每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :param limit: The limit of this ListDimensionsRequest.
         :type limit: int

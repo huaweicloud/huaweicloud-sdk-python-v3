@@ -1,3 +1,1418 @@
+# 3.1.98 2024-05-30
+
+### HuaweiCloud SDK BSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListPayPerUseCustomerResources**
+    - 请求参数变更
+      - `+ service_type_code`
+  - **ListCustomerselfResourceRecords**
+    - 请求参数变更
+      - `+ statistic_type`
+  - **ListRenewRateOnPeriod**
+    - 请求参数变更
+      - `+ include_relative_resources`
+  - **ListCustomerselfResourceRecordDetails**
+    - 请求参数变更
+      - `+ X-Language`
+  - **ListFreeResourceInfos**
+    - 请求参数变更
+      - `+ service_type_code_list`
+  - **ListCustomerOrders**
+    - 请求参数变更
+      - `+ method`
+
+### HuaweiCloud SDK BSSINTL
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListPayPerUseCustomerResources**
+    - 请求参数变更
+      - `+ service_type_code`
+  - **ListCustomerselfResourceRecords**
+    - 请求参数变更
+      - `+ statistic_type`
+  - **ListRenewRateOnPeriod**
+    - 请求参数变更
+      - `+ include_relative_resources`
+  - **ListCustomerselfResourceRecordDetails**
+    - 请求参数变更
+      - `+ X-Language`
+  - **ListFreeResourceInfos**
+    - 请求参数变更
+      - `+ service_type_code_list`
+  - **ListCustomerOrders**
+    - 请求参数变更
+      - `+ method`
+
+### HuaweiCloud SDK CDN
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowHistoryTaskDetails**
+    - 响应参数变更
+      - `+ urls.fail_classify`
+      - `+ urls.fail_desc`
+  - **ListDomains**
+    - 响应参数变更
+      - `+ domains.sources.obs_bucket_type`
+  - **CreateDomain**
+    - 请求参数变更
+      - `+ domain.sources.obs_bucket_type`
+      - `* domain.sources: list<Sources> -> list<SourcesRequestBody>`
+    - 响应参数变更
+      - `+ domain.sources.obs_bucket_type`
+  - **DeleteDomain**
+    - 响应参数变更
+      - `+ domain.sources.obs_bucket_type`
+  - **EnableDomain**
+    - 响应参数变更
+      - `+ domain.sources.obs_bucket_type`
+  - **DisableDomain**
+    - 响应参数变更
+      - `+ domain.sources.obs_bucket_type`
+  - **ShowDomainFullConfig**
+    - 响应参数变更
+      - `+ configs.access_area_filter`
+      - `* configs.sources: list<SourcesConfig> -> list<SourcesConfigResponseBody>`
+  - **UpdateDomainFullConfig**
+    - 请求参数变更
+      - `+ configs.access_area_filter`
+
+### HuaweiCloud SDK CPH
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListImages`
+    - `DeleteImage`
+    - `ListImageMembers`
+    - `AddImageMember`
+    - `DeleteImageMember`
+    - `BatchShowPhoneConnectInfos`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListCloudPhoneImages**
+    - 请求参数变更
+      - `+ image_type`
+
+### HuaweiCloud SDK CSE
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateEngine**
+    - 请求参数变更
+      - `+ enginestateInfo`
+      - `+ periodType`
+      - `+ flavorType`
+      - `+ enterpriseProject`
+      - `+ vpcCidr`
+      - `+ resourceParams`
+      - `+ productId`
+      - `+ capacityProductId`
+      - `+ isFree`
+      - `+ subnetName`
+      - `+ tags`
+      - `+ maintenanceConfig`
+      - `+ elbid`
+      - `+ flavor: enum value [cse.nacos2.c1.large.10,cse.nacos2.c1.xlarge.20,cse.nacos2.c1.xlarge.50,cse.nacos2.c1.xlarge.60,cse.nacos2.c1.2xlarge.100,cse.microgateway.pro.small.1,cse.microgateway.pro.medium.1,cse.microgateway.pro.large.1]`
+      - `+ specType: enum value [Nacos2,MicroGateway]`
+      - `- specType: enum value [CSE]`
+  - **ListEngines**
+    - 请求参数变更
+      - `+ type`
+    - 响应参数变更
+      - `+ data.flavor: enum value [cse.nacos2.c1.large.10,cse.nacos2.c1.xlarge.20,cse.nacos2.c1.xlarge.50,cse.nacos2.c1.xlarge.60,cse.nacos2.c1.2xlarge.100,cse.microgateway.pro.small.1,cse.microgateway.pro.medium.1,cse.microgateway.pro.large.1]`
+  - **ShowEngine**
+    - 响应参数变更
+      - `+ specType: enum value [CSE2,Nacos2,MicroGateway]`
+      - `- specType: enum value [CCE,CSE,SpringCloud]`
+      - `+ type: enum value [NACOS,MICROGATEWAY]`
+      - `- type: enum value [CSE_Share]`
+      - `+ cceSpec.specType: enum value [CSE2,Nacos2,MicroGateway]`
+      - `- cceSpec.specType: enum value [CCE,CSE,SpringCloud]`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _新增特性_
+  - 支持接口`ListDataServiceInstancesOverview`、`ListDataServiceInstancesDetail`、`ShowDataServiceInstance`、`ListDataServiceMarketApis`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ResetLinkAttributeAndStandard**
+    - 请求参数变更
+      - `* ids: list<integer> -> list<string>`
+      - `* stand_row_id: int64 -> string`
+      - `* table_id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **ListCatalogTree**
+    - 响应参数变更
+      - `+ data`
+      - `- owner`
+      - `- create_time`
+      - `- bizmetric_num`
+      - `- description`
+      - `- children_num`
+      - `- prev_id`
+      - `- create_by`
+      - `- update_time`
+      - `- children`
+      - `- parent_id`
+      - `- name`
+      - `- guid`
+      - `- qualified_id`
+      - `- id`
+      - `- update_by`
+      - `- next_id`
+  - **SearchCatalogs**
+    - 响应参数变更
+      - `+ data.value`
+  - **ChangeCatalog**
+    - 请求参数变更
+      - `- owner`
+      - `- create_time`
+      - `- bizmetric_num`
+      - `- description`
+      - `- children_num`
+      - `- prev_id`
+      - `- create_by`
+      - `- update_time`
+      - `- children`
+      - `- parent_id`
+      - `- name`
+      - `- guid`
+      - `- qualified_id`
+      - `- id`
+      - `- update_by`
+      - `- next_id`
+      - `* parent_id: int64 -> string`
+      - `* prev_id: int64 -> string`
+      - `* next_id: int64 -> string`
+      - `* id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **CreateCatalog**
+    - 请求参数变更
+      - `- owner`
+      - `- create_time`
+      - `- bizmetric_num`
+      - `- description`
+      - `- children_num`
+      - `- prev_id`
+      - `- create_by`
+      - `- update_time`
+      - `- children`
+      - `- parent_id`
+      - `- name`
+      - `- guid`
+      - `- qualified_id`
+      - `- id`
+      - `- update_by`
+      - `- next_id`
+      - `* parent_id: int64 -> string`
+      - `* prev_id: int64 -> string`
+      - `* next_id: int64 -> string`
+      - `* id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **DeleteCatalog**
+    - 响应参数变更
+      - `+ data.value`
+  - **ShowBizCatalogDetail**
+    - 请求参数变更
+      - `* id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **ShowStandardTemplate**
+    - 响应参数变更
+      - `+ data.value`
+  - **UpdateStandardTemplate**
+    - 请求参数变更
+      - `+ fd_name_en`
+      - `+ descriptionEn`
+      - `+ label`
+      - `+ disabled`
+      - `+ optional_values`
+      - `+ field_type`
+      - `* id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **CreateStandardTemplate**
+    - 请求参数变更
+      - `+ fd_name_en`
+      - `+ descriptionEn`
+      - `+ label`
+      - `+ disabled`
+      - `+ optional_values`
+      - `+ field_type`
+      - `* id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **DeleteStandardTemplate**
+    - 响应参数变更
+      - `+ data.value`
+  - **SearchApprovals**
+    - 请求参数变更
+      - `* biz_id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **RollbackApproval**
+    - 响应参数变更
+      - `+ data.value`
+  - **ConfirmApprovals**
+    - 请求参数变更
+      - `* ids: list<integer> -> list<string>`
+    - 响应参数变更
+      - `+ data.value`
+  - **ListApprovers**
+    - 响应参数变更
+      - `+ data.value`
+  - **CreateApprover**
+    - 请求参数变更
+      - `+ app_name`
+    - 响应参数变更
+      - `+ data.value`
+  - **DeleteApprover**
+    - 响应参数变更
+      - `+ data.value`
+  - **ListAllTables**
+    - 请求参数变更
+      - `* biz_catalog_id_list: list<integer> -> list<string>`
+    - 响应参数变更
+      - `+ data.value`
+  - **CountOverviews**
+    - 响应参数变更
+      - `+ data.value`
+  - **CountTableModels**
+    - 请求参数变更
+      - `* model_id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **CountAllModels**
+    - 响应参数变更
+      - `+ data.value`
+  - **CountStandards**
+    - 请求参数变更
+      - `* id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **ListDirectories**
+    - 响应参数变更
+      - `+ data.value`
+  - **UpdateDirectory**
+    - 请求参数变更
+      - `+ ref_id`
+      - `* id: int64 -> string`
+      - `* parent_id: int64 -> string`
+      - `* prev_id: int64 -> string`
+      - `* root_id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **CreateDirectory**
+    - 请求参数变更
+      - `+ ref_id`
+      - `* id: int64 -> string`
+      - `* parent_id: int64 -> string`
+      - `* prev_id: int64 -> string`
+      - `* root_id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **DeleteDirectory**
+    - 请求参数变更
+      - `* ids: list<integer> -> list<string>`
+    - 响应参数变更
+      - `+ data.value`
+  - **ShowBizMetricById**
+    - 请求参数变更
+      - `* id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **ListBizMetricDimensions**
+    - 响应参数变更
+      - `+ data.value`
+  - **ListMetricRelations**
+    - 请求参数变更
+      - `* id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **ListDimensions**
+    - 请求参数变更
+      - `* l2_id: int64 -> string`
+      - `* derivative_ids: list<integer> -> list<string>`
+      - `* fact_logic_id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **ShowDimensionById**
+    - 请求参数变更
+      - `* id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **ListDimensionGroups**
+    - 请求参数变更
+      - `* table_id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **CheckDimensionStatus**
+    - 响应参数变更
+      - `+ data.value`
+  - **ListDimensionLogicTables**
+    - 请求参数变更
+      - `* l2_id: int64 -> string`
+      - `* dimension_id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **ShowDimensionLogicTableById**
+    - 请求参数变更
+      - `* id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **ListFactLogicTables**
+    - 请求参数变更
+      - `* l3_id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **ShowFactLogicTableById**
+    - 请求参数变更
+      - `* id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **CheckFactLogicTableStatus**
+    - 响应参数变更
+      - `+ data.value`
+  - **ListCondition**
+    - 响应参数变更
+      - `+ data.value`
+  - **ShowConditionById**
+    - 请求参数变更
+      - `* id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **ListRelations**
+    - 响应参数变更
+      - `+ data.value`
+  - **ShowRelationById**
+    - 请求参数变更
+      - `* id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **ListTableModelRelations**
+    - 请求参数变更
+      - `* model_id: int64 -> string`
+      - `* table_ids: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **ShowTableModelById**
+    - 请求参数变更
+      - `* id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **ShowWorkspaceDetailById**
+    - 请求参数变更
+      - `* model_id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **ImportCatalogs**
+    - 响应参数变更
+      - `+ data.uuid`
+  - **ImportModels**
+    - 请求参数变更
+      - `+ X-Language`
+    - 响应参数变更
+      - `+ data.uuid`
+  - **ImportResult**
+    - 响应参数变更
+      - `+ data.status`
+      - `+ data.group`
+      - `+ data.rate`
+      - `* data: object -> object<DsProcessImportResultVO>`
+  - **SearchDwByType**
+    - 响应参数变更
+      - `+ data.value`
+  - **SearchFieldsForRelation**
+    - 请求参数变更
+      - `+ limit`
+      - `+ offset`
+      - `* model_id: int64 -> string`
+  - **ExportDesignModels**
+    - 请求参数变更
+      - `* ids: list<integer> -> list<string>`
+      - `* directory_id: int64 -> string`
+      - `* biz_catalog_id: int64 -> string`
+      - `* biz_catalog_id_list: list<integer> -> list<string>`
+      - `* model_id: int64 -> string`
+  - **ExportDesignModelTableDdl**
+    - 请求参数变更
+      - `* model_id: int64 -> string`
+  - **AddDesignEntityTags**
+    - 请求参数变更
+      - `* entity_id: int64 -> string`
+      - `* attr_id: int64 -> string`
+  - **RemoveDesignEntityTags**
+    - 请求参数变更
+      - `* entity_id: int64 -> string`
+      - `* attr_id: int64 -> string`
+  - **DeleteDesignLatestApproval**
+    - 请求参数变更
+      - `* biz_id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **InitializeStandardTemplate**
+    - 响应参数变更
+      - `+ data.value`
+  - **ListSubjectLevels**
+    - 响应参数变更
+      - `+ data`
+      - `- levels`
+  - **ChangeSubjects**
+    - 请求参数变更
+      - `- levels`
+      - `* levels.id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **ListWorkspaces**
+    - 响应参数变更
+      - `+ data.value`
+  - **DeleteWorkspaces**
+    - 请求参数变更
+      - `* ids: list<integer> -> list<string>`
+    - 响应参数变更
+      - `+ data.value`
+  - **UpdateWorkspace**
+    - 请求参数变更
+      - `+ table_model_prefix`
+      - `* id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **CreateWorkspace**
+    - 请求参数变更
+      - `+ table_model_prefix`
+      - `* id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **SearchCustomizedFields**
+    - 响应参数变更
+      - `+ data.value`
+  - **ModifyCustomizedFields**
+    - 请求参数变更
+      - `* fields.id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **SearchSubjectNew**
+    - 请求参数变更
+      - `* parent_id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **DeleteSubjectNew**
+    - 响应参数变更
+      - `+ data.value`
+  - **UpdateSubjectNew**
+    - 请求参数变更
+      - `* id: int64 -> string`
+      - `* parent_id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **CreateSubjectNew**
+    - 请求参数变更
+      - `* id: int64 -> string`
+      - `* parent_id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **ExportDesignResult**
+    - 响应参数变更
+      - `* data.group.id: int64 -> string`
+      - `* data.group.group_id: int64 -> string`
+      - `* data.group.biz_id: int64 -> string`
+  - **ShowStandardById**
+    - 请求参数变更
+      - `* id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **UpdateStandard**
+    - 请求参数变更
+      - `* id: int64 -> string`
+      - `* directory_id: int64 -> string`
+      - `* row_id: int64 -> string`
+      - `* values.fd_id: int64 -> string`
+      - `* values.directory_id: int64 -> string`
+      - `* values.row_id: int64 -> string`
+      - `* values.id: int64 -> string`
+      - `* new_biz.id: int64 -> string`
+      - `* new_biz.biz_id: int64 -> string`
+      - `* approval_info.id: int64 -> string`
+      - `* approval_info.biz_id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **SearchCodeTables**
+    - 请求参数变更
+      - `* directory_id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **DeleteCodeTable**
+    - 响应参数变更
+      - `+ data.value`
+  - **CreateCodeTable**
+    - 请求参数变更
+      - `* id: int64 -> string`
+      - `* directory_id: int64 -> string`
+      - `* new_biz.id: int64 -> string`
+      - `* new_biz.biz_id: int64 -> string`
+      - `* approval_info.id: int64 -> string`
+      - `* approval_info.biz_id: int64 -> string`
+      - `* code_table_fields.id: int64 -> string`
+      - `* code_table_fields.code_table_id: int64 -> string`
+      - `* code_table_fields.code_table_field_values.id: int64 -> string`
+      - `* code_table_fields.code_table_field_values.fd_id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **ShowCodeTableById**
+    - 请求参数变更
+      - `* id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **UpdateCodeTable**
+    - 请求参数变更
+      - `* id: int64 -> string`
+      - `* directory_id: int64 -> string`
+      - `* new_biz.id: int64 -> string`
+      - `* new_biz.biz_id: int64 -> string`
+      - `* approval_info.id: int64 -> string`
+      - `* approval_info.biz_id: int64 -> string`
+      - `* code_table_fields.id: int64 -> string`
+      - `* code_table_fields.code_table_id: int64 -> string`
+      - `* code_table_fields.code_table_field_values.id: int64 -> string`
+      - `* code_table_fields.code_table_field_values.fd_id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **SearchCodeTableValues**
+    - 请求参数变更
+      - `* id: int64 -> string`
+  - **UpdateCodeTableValues**
+    - 请求参数变更
+      - `* id: int64 -> string`
+      - `* to_add.id: int64 -> string`
+      - `* to_add.code_table_id: int64 -> string`
+      - `* to_add.code_table_field_values.id: int64 -> string`
+      - `* to_add.code_table_field_values.fd_id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **BatchPublish**
+    - 请求参数变更
+      - `+ env_type`
+      - `+ biz_infos.env_type`
+      - `* biz_infos.biz_id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **BatchOffline**
+    - 请求参数变更
+      - `+ env_type`
+      - `+ biz_infos.env_type`
+      - `* biz_infos.biz_id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **ListBizMetrics**
+    - 响应参数变更
+      - `+ data.value`
+  - **DeleteBizMetric**
+    - 响应参数变更
+      - `+ data.value`
+  - **UpdateBizMetric**
+    - 请求参数变更
+      - `+ self_defined_fields`
+      - `* id: int64 -> string`
+      - `* biz_catalog_id: int64 -> string`
+      - `* technical_metric: int64 -> string`
+      - `* new_biz.id: int64 -> string`
+      - `* new_biz.biz_id: int64 -> string`
+      - `* approval_info.id: int64 -> string`
+      - `* approval_info.biz_id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **CreateBizMetric**
+    - 请求参数变更
+      - `+ self_defined_fields`
+      - `* id: int64 -> string`
+      - `* biz_catalog_id: int64 -> string`
+      - `* technical_metric: int64 -> string`
+      - `* new_biz.id: int64 -> string`
+      - `* new_biz.biz_id: int64 -> string`
+      - `* approval_info.id: int64 -> string`
+      - `* approval_info.biz_id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **SearchVersions**
+    - 请求参数变更
+      - `* biz_id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value.records.dev_physical_table`
+      - `* data.value.records.id: int64 -> string`
+      - `* data.value.records.biz_id: int64 -> string`
+  - **SearchDesignLatestApprovalDiff**
+    - 请求参数变更
+      - `* biz_id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value.dev_physical_table`
+      - `* data.value.id: int64 -> string`
+      - `* data.value.biz_id: int64 -> string`
+  - **DeleteStandard**
+    - 响应参数变更
+      - `+ data.value`
+  - **CreateStandard**
+    - 请求参数变更
+      - `* id: int64 -> string`
+      - `* directory_id: int64 -> string`
+      - `* row_id: int64 -> string`
+      - `* values.fd_id: int64 -> string`
+      - `* values.directory_id: int64 -> string`
+      - `* values.row_id: int64 -> string`
+      - `* values.id: int64 -> string`
+      - `* new_biz.id: int64 -> string`
+      - `* new_biz.biz_id: int64 -> string`
+      - `* approval_info.id: int64 -> string`
+      - `* approval_info.biz_id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **ListAllStandards**
+    - 响应参数变更
+      - `* data.value.records.id: int64 -> string`
+      - `* data.value.records.directory_id: int64 -> string`
+      - `* data.value.records.row_id: int64 -> string`
+      - `* data.value.records.values.fd_id: int64 -> string`
+      - `* data.value.records.values.directory_id: int64 -> string`
+      - `* data.value.records.values.row_id: int64 -> string`
+      - `* data.value.records.values.id: int64 -> string`
+      - `* data.value.records.new_biz.id: int64 -> string`
+      - `* data.value.records.new_biz.biz_id: int64 -> string`
+      - `* data.value.records.approval_info.id: int64 -> string`
+      - `* data.value.records.approval_info.biz_id: int64 -> string`
+  - **SearchSubject**
+    - 请求参数变更
+      - `* parent_id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **DeleteSubject**
+    - 响应参数变更
+      - `+ data.value`
+  - **UpdateSubject**
+    - 响应参数变更
+      - `+ data.value`
+  - **CreateSubject**
+    - 响应参数变更
+      - `+ data.value`
+  - **DeleteDesignAtomicIndex**
+    - 响应参数变更
+      - `+ data.value`
+  - **SearchAtomicIndexes**
+    - 请求参数变更
+      - `* l3_id: int64 -> string`
+      - `* table_id: int64 -> string`
+    - 响应参数变更
+      - `* data.value.records.id: int64 -> string`
+      - `* data.value.records.cal_fn_ids: list<integer> -> list<string>`
+      - `* data.value.records.l1_id: int64 -> string`
+      - `* data.value.records.l3_id: int64 -> string`
+      - `* data.value.records.table_id: int64 -> string`
+      - `* data.value.records.field_ids: list<integer> -> list<string>`
+      - `* data.value.records.new_biz.id: int64 -> string`
+      - `* data.value.records.new_biz.biz_id: int64 -> string`
+      - `* data.value.records.approval_info.id: int64 -> string`
+      - `* data.value.records.approval_info.biz_id: int64 -> string`
+  - **UpdateDesignAtomicIndex**
+    - 请求参数变更
+      - `* id: int64 -> string`
+      - `* cal_fn_ids: list<integer> -> list<string>`
+      - `* l1_id: int64 -> string`
+      - `* l3_id: int64 -> string`
+      - `* table_id: int64 -> string`
+      - `* field_ids: list<integer> -> list<string>`
+      - `* new_biz.id: int64 -> string`
+      - `* new_biz.biz_id: int64 -> string`
+      - `* approval_info.id: int64 -> string`
+      - `* approval_info.biz_id: int64 -> string`
+    - 响应参数变更
+      - `* data.value.id: int64 -> string`
+      - `* data.value.cal_fn_ids: list<integer> -> list<string>`
+      - `* data.value.l1_id: int64 -> string`
+      - `* data.value.l3_id: int64 -> string`
+      - `* data.value.table_id: int64 -> string`
+      - `* data.value.field_ids: list<integer> -> list<string>`
+      - `* data.value.new_biz.id: int64 -> string`
+      - `* data.value.new_biz.biz_id: int64 -> string`
+      - `* data.value.approval_info.id: int64 -> string`
+      - `* data.value.approval_info.biz_id: int64 -> string`
+  - **CreateDesignAtomicIndex**
+    - 请求参数变更
+      - `* id: int64 -> string`
+      - `* cal_fn_ids: list<integer> -> list<string>`
+      - `* l1_id: int64 -> string`
+      - `* l3_id: int64 -> string`
+      - `* table_id: int64 -> string`
+      - `* field_ids: list<integer> -> list<string>`
+      - `* new_biz.id: int64 -> string`
+      - `* new_biz.biz_id: int64 -> string`
+      - `* approval_info.id: int64 -> string`
+      - `* approval_info.biz_id: int64 -> string`
+    - 响应参数变更
+      - `* data.value.id: int64 -> string`
+      - `* data.value.cal_fn_ids: list<integer> -> list<string>`
+      - `* data.value.l1_id: int64 -> string`
+      - `* data.value.l3_id: int64 -> string`
+      - `* data.value.table_id: int64 -> string`
+      - `* data.value.field_ids: list<integer> -> list<string>`
+      - `* data.value.new_biz.id: int64 -> string`
+      - `* data.value.new_biz.biz_id: int64 -> string`
+      - `* data.value.approval_info.id: int64 -> string`
+      - `* data.value.approval_info.biz_id: int64 -> string`
+  - **ShowAtomicIndexById**
+    - 请求参数变更
+      - `* id: int64 -> string`
+    - 响应参数变更
+      - `* data.value.id: int64 -> string`
+      - `* data.value.cal_fn_ids: list<integer> -> list<string>`
+      - `* data.value.l1_id: int64 -> string`
+      - `* data.value.l3_id: int64 -> string`
+      - `* data.value.table_id: int64 -> string`
+      - `* data.value.field_ids: list<integer> -> list<string>`
+      - `* data.value.new_biz.id: int64 -> string`
+      - `* data.value.new_biz.biz_id: int64 -> string`
+      - `* data.value.approval_info.id: int64 -> string`
+      - `* data.value.approval_info.biz_id: int64 -> string`
+  - **ListCompoundMetrics**
+    - 请求参数变更
+      - `* atomic_index_id: int64 -> string`
+      - `* l3_id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value.records.compound_type`
+      - `+ data.value.records.comparison_type`
+      - `+ data.value.records.compound_metric_ids`
+      - `+ data.value.records.compound_metric_names`
+      - `* data.value.records.id: int64 -> string`
+      - `* data.value.records.metric_ids: list<integer> -> list<string>`
+      - `* data.value.records.cal_fn_ids: list<integer> -> list<string>`
+      - `* data.value.records.l1_id: int64 -> string`
+      - `* data.value.records.l3_id: int64 -> string`
+      - `* data.value.records.summary_table_id: int64 -> string`
+      - `* data.value.records.new_biz.id: int64 -> string`
+      - `* data.value.records.new_biz.biz_id: int64 -> string`
+      - `+ data.value.records.monitor.other_compound_metric_ids`
+      - `+ data.value.records.monitor.other_compound_metric_names`
+      - `* data.value.records.monitor.id: int64 -> string`
+      - `* data.value.records.monitor.other_metric_ids: list<integer> -> list<string>`
+      - `* data.value.records.monitor.metric_id: int64 -> string`
+      - `* data.value.records.approval_info.id: int64 -> string`
+      - `* data.value.records.approval_info.biz_id: int64 -> string`
+  - **ShowCompoundMetricById**
+    - 请求参数变更
+      - `* id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value.compound_type`
+      - `+ data.value.comparison_type`
+      - `+ data.value.compound_metric_ids`
+      - `+ data.value.compound_metric_names`
+      - `* data.value.id: int64 -> string`
+      - `* data.value.metric_ids: list<integer> -> list<string>`
+      - `* data.value.cal_fn_ids: list<integer> -> list<string>`
+      - `* data.value.l1_id: int64 -> string`
+      - `* data.value.l3_id: int64 -> string`
+      - `* data.value.summary_table_id: int64 -> string`
+      - `* data.value.new_biz.id: int64 -> string`
+      - `* data.value.new_biz.biz_id: int64 -> string`
+      - `+ data.value.monitor.other_compound_metric_ids`
+      - `+ data.value.monitor.other_compound_metric_names`
+      - `* data.value.monitor.id: int64 -> string`
+      - `* data.value.monitor.other_metric_ids: list<integer> -> list<string>`
+      - `* data.value.monitor.metric_id: int64 -> string`
+      - `* data.value.approval_info.id: int64 -> string`
+      - `* data.value.approval_info.biz_id: int64 -> string`
+  - **DeleteDesignAggregationLogicTable**
+    - 响应参数变更
+      - `+ data.value`
+  - **UpdateDesignAggregationLogicTable**
+    - 请求参数变更
+      - `+ secret_type`
+      - `+ apply_bg`
+      - `+ env_type`
+      - `* id: int64 -> string`
+      - `* l1_id: int64 -> string`
+      - `* l3_id: int64 -> string`
+      - `* quality_id: int64 -> string`
+      - `* new_biz.id: int64 -> string`
+      - `* new_biz.biz_id: int64 -> string`
+      - `* approval_info.id: int64 -> string`
+      - `* approval_info.biz_id: int64 -> string`
+      - `* time_period.id: int64 -> string`
+      - `* time_period.aggregation_logic_table_id: int64 -> string`
+      - `* time_period.stand_row_id: int64 -> string`
+  - **ListAggregationLogicTables**
+    - 请求参数变更
+      - `* l3_id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value.records.secret_type`
+      - `+ data.value.records.apply_bg`
+      - `+ data.value.records.dev_version`
+      - `+ data.value.records.prod_version`
+      - `+ data.value.records.dev_version_name`
+      - `+ data.value.records.prod_version_name`
+      - `+ data.value.records.env_type`
+      - `* data.value.records.id: int64 -> string`
+      - `* data.value.records.l1_id: int64 -> string`
+      - `* data.value.records.l3_id: int64 -> string`
+      - `* data.value.records.quality_id: int64 -> string`
+      - `* data.value.records.new_biz.id: int64 -> string`
+      - `* data.value.records.new_biz.biz_id: int64 -> string`
+      - `* data.value.records.approval_info.id: int64 -> string`
+      - `* data.value.records.approval_info.biz_id: int64 -> string`
+      - `+ data.value.records.time_period.secrecy_levels`
+      - `+ data.value.records.time_period.ref_name_ch`
+      - `+ data.value.records.time_period.ref_name_en`
+      - `* data.value.records.time_period.id: int64 -> string`
+      - `* data.value.records.time_period.aggregation_logic_table_id: int64 -> string`
+      - `* data.value.records.time_period.stand_row_id: int64 -> string`
+      - `* data.value.records.time_period.quality_infos.id: int64 -> string`
+      - `* data.value.records.time_period.quality_infos.table_id: int64 -> string`
+      - `* data.value.records.time_period.quality_infos.attr_id: int64 -> string`
+      - `* data.value.records.time_period.quality_infos.data_quality_id: int64 -> string`
+  - **CreateDesignAggregationLogicTable**
+    - 请求参数变更
+      - `+ secret_type`
+      - `+ apply_bg`
+      - `+ env_type`
+      - `* id: int64 -> string`
+      - `* l1_id: int64 -> string`
+      - `* l3_id: int64 -> string`
+      - `* quality_id: int64 -> string`
+      - `* new_biz.id: int64 -> string`
+      - `* new_biz.biz_id: int64 -> string`
+      - `* approval_info.id: int64 -> string`
+      - `* approval_info.biz_id: int64 -> string`
+      - `* time_period.id: int64 -> string`
+      - `* time_period.aggregation_logic_table_id: int64 -> string`
+      - `* time_period.stand_row_id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value.secret_type`
+      - `+ data.value.apply_bg`
+      - `+ data.value.dev_version`
+      - `+ data.value.prod_version`
+      - `+ data.value.dev_version_name`
+      - `+ data.value.prod_version_name`
+      - `+ data.value.env_type`
+      - `* data.value.id: int64 -> string`
+      - `* data.value.l1_id: int64 -> string`
+      - `* data.value.l3_id: int64 -> string`
+      - `* data.value.quality_id: int64 -> string`
+      - `* data.value.new_biz.id: int64 -> string`
+      - `* data.value.new_biz.biz_id: int64 -> string`
+      - `* data.value.approval_info.id: int64 -> string`
+      - `* data.value.approval_info.biz_id: int64 -> string`
+      - `+ data.value.time_period.secrecy_levels`
+      - `+ data.value.time_period.ref_name_ch`
+      - `+ data.value.time_period.ref_name_en`
+      - `* data.value.time_period.id: int64 -> string`
+      - `* data.value.time_period.aggregation_logic_table_id: int64 -> string`
+      - `* data.value.time_period.stand_row_id: int64 -> string`
+      - `* data.value.time_period.quality_infos.id: int64 -> string`
+      - `* data.value.time_period.quality_infos.table_id: int64 -> string`
+      - `* data.value.time_period.quality_infos.attr_id: int64 -> string`
+      - `* data.value.time_period.quality_infos.data_quality_id: int64 -> string`
+  - **ShowAggregationLogicTableById**
+    - 请求参数变更
+      - `* id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value.secret_type`
+      - `+ data.value.apply_bg`
+      - `+ data.value.dev_version`
+      - `+ data.value.prod_version`
+      - `+ data.value.dev_version_name`
+      - `+ data.value.prod_version_name`
+      - `+ data.value.env_type`
+      - `* data.value.id: int64 -> string`
+      - `* data.value.l1_id: int64 -> string`
+      - `* data.value.l3_id: int64 -> string`
+      - `* data.value.quality_id: int64 -> string`
+      - `* data.value.new_biz.id: int64 -> string`
+      - `* data.value.new_biz.biz_id: int64 -> string`
+      - `* data.value.approval_info.id: int64 -> string`
+      - `* data.value.approval_info.biz_id: int64 -> string`
+      - `+ data.value.time_period.secrecy_levels`
+      - `+ data.value.time_period.ref_name_ch`
+      - `+ data.value.time_period.ref_name_en`
+      - `* data.value.time_period.id: int64 -> string`
+      - `* data.value.time_period.aggregation_logic_table_id: int64 -> string`
+      - `* data.value.time_period.stand_row_id: int64 -> string`
+      - `* data.value.time_period.quality_infos.id: int64 -> string`
+      - `* data.value.time_period.quality_infos.table_id: int64 -> string`
+      - `* data.value.time_period.quality_infos.attr_id: int64 -> string`
+      - `* data.value.time_period.quality_infos.data_quality_id: int64 -> string`
+  - **ListTableModels**
+    - 响应参数变更
+      - `+ data.value`
+  - **DeleteTableModel**
+    - 响应参数变更
+      - `+ data.value`
+  - **UpdateTableModel**
+    - 请求参数变更
+      - `+ dev_physical_table`
+      - `+ env_type`
+      - `+ has_related_physical_table`
+      - `+ has_related_logic_table`
+      - `* id: int64 -> string`
+      - `* model_id: int64 -> string`
+      - `* parent_table_id: int64 -> string`
+      - `* logic_tb_id: int64 -> string`
+      - `* biz_catalog_id: int64 -> string`
+      - `* l1_id: int64 -> string`
+      - `* l3_id: int64 -> string`
+      - `* quality_id: int64 -> string`
+      - `* new_biz.id: int64 -> string`
+      - `* new_biz.biz_id: int64 -> string`
+      - `+ model.table_model_prefix`
+      - `* model.id: int64 -> string`
+      - `* approval_info.id: int64 -> string`
+      - `* approval_info.biz_id: int64 -> string`
+      - `+ attributes.code`
+      - `+ attributes.related_logic_attr_id`
+      - `* attributes.id: int64 -> string`
+      - `* attributes.table_model_id: int64 -> string`
+      - `* attributes.stand_row_id: int64 -> string`
+      - `* relations.id: int64 -> string`
+      - `* relations.source_table_id: int64 -> string`
+      - `* relations.target_table_id: int64 -> string`
+      - `* mappings.id: int64 -> string`
+      - `* mappings.target_table_id: int64 -> string`
+      - `* mappings.src_model_id: int64 -> string`
+      - `* mappings.details.id: int64 -> string`
+      - `* mappings.details.target_attr_id: int64 -> string`
+      - `* mappings.source_fields.target_field_id: int64 -> string`
+      - `* mappings.source_tables.table1_id: int64 -> string`
+      - `* mappings.source_tables.table2_id: int64 -> string`
+      - `* mappings.source_tables.join_fields.field1_id: int64 -> string`
+      - `* mappings.source_tables.join_fields.field2_id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **CreateTableModel**
+    - 请求参数变更
+      - `+ related_logic_table_id`
+      - `+ dev_physical_table`
+      - `+ env_type`
+      - `+ code`
+      - `* id: int64 -> string`
+      - `* model_id: int64 -> string`
+      - `* parent_table_id: int64 -> string`
+      - `* logic_tb_id: int64 -> string`
+      - `* biz_catalog_id: int64 -> string`
+      - `* l1_id: int64 -> string`
+      - `* l3_id: int64 -> string`
+      - `* quality_id: int64 -> string`
+      - `* new_biz.id: int64 -> string`
+      - `* new_biz.biz_id: int64 -> string`
+      - `+ model.table_model_prefix`
+      - `* model.id: int64 -> string`
+      - `* approval_info.id: int64 -> string`
+      - `* approval_info.biz_id: int64 -> string`
+      - `+ attributes.code`
+      - `+ attributes.related_logic_attr_id`
+      - `* attributes.id: int64 -> string`
+      - `* attributes.table_model_id: int64 -> string`
+      - `* attributes.stand_row_id: int64 -> string`
+      - `* relations.id: int64 -> string`
+      - `* relations.source_table_id: int64 -> string`
+      - `* relations.target_table_id: int64 -> string`
+      - `* mappings.id: int64 -> string`
+      - `* mappings.target_table_id: int64 -> string`
+      - `* mappings.src_model_id: int64 -> string`
+      - `* mappings.details.id: int64 -> string`
+      - `* mappings.details.target_attr_id: int64 -> string`
+      - `* mappings.source_fields.target_field_id: int64 -> string`
+      - `* mappings.source_tables.table1_id: int64 -> string`
+      - `* mappings.source_tables.table2_id: int64 -> string`
+      - `* mappings.source_tables.join_fields.field1_id: int64 -> string`
+      - `* mappings.source_tables.join_fields.field2_id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value`
+  - **RemoveDesignQualityInfos**
+    - 请求参数变更
+      - `* table_id: int64 -> string`
+  - **UpdateDesignTableQuality**
+    - 请求参数变更
+      - `* table_id: int64 -> string`
+    - 响应参数变更
+      - `+ data.value.related_logic_table_id`
+      - `+ data.value.related_logic_table_name`
+      - `+ data.value.related_logic_table_model_id`
+      - `+ data.value.related_logic_table_model_name`
+      - `+ data.value.dev_physical_table`
+      - `+ data.value.dev_version`
+      - `+ data.value.prod_version`
+      - `+ data.value.dev_version_name`
+      - `+ data.value.prod_version_name`
+      - `+ data.value.env_type`
+      - `+ data.value.code`
+      - `+ data.value.has_related_physical_table`
+      - `+ data.value.has_related_logic_table`
+      - `* data.value.id: int64 -> string`
+      - `* data.value.model_id: int64 -> string`
+      - `* data.value.parent_table_id: int64 -> string`
+      - `* data.value.logic_tb_id: int64 -> string`
+      - `* data.value.biz_catalog_id: int64 -> string`
+      - `* data.value.l1_id: int64 -> string`
+      - `* data.value.l3_id: int64 -> string`
+      - `* data.value.quality_id: int64 -> string`
+      - `* data.value.new_biz.id: int64 -> string`
+      - `* data.value.new_biz.biz_id: int64 -> string`
+      - `+ data.value.model.table_model_prefix`
+      - `* data.value.model.id: int64 -> string`
+      - `* data.value.tags.id: int64 -> string`
+      - `* data.value.tags.tag_id: int64 -> string`
+      - `* data.value.tags.biz_id: int64 -> string`
+      - `* data.value.approval_info.id: int64 -> string`
+      - `* data.value.approval_info.biz_id: int64 -> string`
+      - `+ data.value.attributes.secrecy_levels`
+      - `+ data.value.attributes.code`
+      - `+ data.value.attributes.related_logic_attr_id`
+      - `+ data.value.attributes.related_logic_attr_name`
+      - `+ data.value.attributes.related_logic_attr_name_en`
+      - `* data.value.attributes.id: int64 -> string`
+      - `* data.value.attributes.table_model_id: int64 -> string`
+      - `* data.value.attributes.stand_row_id: int64 -> string`
+      - `* data.value.attributes.tags.id: int64 -> string`
+      - `* data.value.attributes.quality_infos.id: int64 -> string`
+      - `* data.value.attributes.quality_infos.table_id: int64 -> string`
+      - `* data.value.attributes.quality_infos.attr_id: int64 -> string`
+      - `* data.value.attributes.quality_infos.data_quality_id: int64 -> string`
+      - `* data.value.relations.id: int64 -> string`
+      - `* data.value.relations.source_table_id: int64 -> string`
+      - `* data.value.relations.target_table_id: int64 -> string`
+      - `* data.value.relations.mappings.id: int64 -> string`
+      - `* data.value.relations.mappings.relation_id: int64 -> string`
+      - `* data.value.relations.mappings.source_field_id: int64 -> string`
+      - `* data.value.relations.mappings.target_field_id: int64 -> string`
+      - `* data.value.mappings.id: int64 -> string`
+      - `* data.value.mappings.target_table_id: int64 -> string`
+      - `* data.value.mappings.src_model_id: int64 -> string`
+      - `* data.value.mappings.details.id: int64 -> string`
+      - `* data.value.mappings.details.target_attr_id: int64 -> string`
+      - `* data.value.mappings.details.src_table_model_ids: list<integer> -> list<string>`
+      - `* data.value.mappings.details.src_table_id_list: list<integer> -> list<string>`
+      - `* data.value.mappings.details.src_attr_id_list: list<integer> -> list<string>`
+      - `* data.value.mappings.source_fields.target_field_id: int64 -> string`
+      - `* data.value.mappings.source_tables.table1_id: int64 -> string`
+      - `* data.value.mappings.source_tables.table2_id: int64 -> string`
+      - `* data.value.mappings.source_tables.join_fields.field1_id: int64 -> string`
+      - `* data.value.mappings.source_tables.join_fields.field2_id: int64 -> string`
+  - **ListDerivativeIndexes**
+    - 请求参数变更
+      - `* dimension_id: int64 -> string`
+      - `* atomic_index_id: int64 -> string`
+      - `* l3_id: int64 -> string`
+    - 响应参数变更
+      - `* data.value.records.id: int64 -> string`
+      - `* data.value.records.l1_id: int64 -> string`
+      - `* data.value.records.l3_id: int64 -> string`
+      - `* data.value.records.atomic_index_id: int64 -> string`
+      - `* data.value.records.time_condition_id: int64 -> string`
+      - `* data.value.records.time_field_id: int64 -> string`
+      - `* data.value.records.summary_table_id: int64 -> string`
+      - `* data.value.records.common_conditions.cal_fn_ids: list<integer> -> list<string>`
+      - `* data.value.records.common_conditions.id: int64 -> string`
+      - `+ data.value.records.monitor.other_compound_metric_ids`
+      - `+ data.value.records.monitor.other_compound_metric_names`
+      - `* data.value.records.monitor.id: int64 -> string`
+      - `* data.value.records.monitor.other_metric_ids: list<integer> -> list<string>`
+      - `* data.value.records.monitor.metric_id: int64 -> string`
+      - `* data.value.records.new_biz.id: int64 -> string`
+      - `* data.value.records.new_biz.biz_id: int64 -> string`
+      - `* data.value.records.atomic_index.id: int64 -> string`
+      - `* data.value.records.atomic_index.cal_fn_ids: list<integer> -> list<string>`
+      - `* data.value.records.atomic_index.l1_id: int64 -> string`
+      - `* data.value.records.atomic_index.l3_id: int64 -> string`
+      - `* data.value.records.atomic_index.table_id: int64 -> string`
+      - `* data.value.records.atomic_index.field_ids: list<integer> -> list<string>`
+      - `* data.value.records.approval_info.id: int64 -> string`
+      - `* data.value.records.approval_info.biz_id: int64 -> string`
+      - `* data.value.records.dimension_groups.dimension_id: int64 -> string`
+      - `* data.value.records.dimension_groups.hierarchies_id: int64 -> string`
+      - `* data.value.records.dimension_groups.l1_id: int64 -> string`
+      - `* data.value.records.dimension_groups.l3_id: int64 -> string`
+      - `* data.value.records.dimension_groups.id: int64 -> string`
+      - `* data.value.records.dimension_groups.hierarchies.id: int64 -> string`
+      - `* data.value.records.dimension_groups.hierarchies.attrs.id: int64 -> string`
+      - `* data.value.records.dimension_groups.hierarchies.attrs.hierarchies_id: int64 -> string`
+      - `* data.value.records.dimension_groups.hierarchies.attrs.attr_id: int64 -> string`
+      - `* data.value.records.dimension_groups.hierarchies.attrs.detail_attr_ids: list<integer> -> list<string>`
+      - `+ data.value.records.dimension_groups.hierarchies.attrs.attr.secrecy_levels`
+      - `* data.value.records.dimension_groups.hierarchies.attrs.attr.id: int64 -> string`
+      - `* data.value.records.dimension_groups.hierarchies.attrs.attr.dimension_id: int64 -> string`
+      - `* data.value.records.dimension_groups.hierarchies.attrs.attr.code_table_field_id: int64 -> string`
+      - `* data.value.records.dimension_groups.hierarchies.attrs.attr.stand_row_id: int64 -> string`
+      - `* data.value.records.dimension_groups.hierarchies.attrs.attr.quality_infos.id: int64 -> string`
+      - `* data.value.records.dimension_groups.hierarchies.attrs.attr.quality_infos.table_id: int64 -> string`
+      - `* data.value.records.dimension_groups.hierarchies.attrs.attr.quality_infos.attr_id: int64 -> string`
+      - `* data.value.records.dimension_groups.hierarchies.attrs.attr.quality_infos.data_quality_id: int64 -> string`
+  - **ShowDerivativeIndexById**
+    - 请求参数变更
+      - `* id: int64 -> string`
+    - 响应参数变更
+      - `* data.value.id: int64 -> string`
+      - `* data.value.l1_id: int64 -> string`
+      - `* data.value.l3_id: int64 -> string`
+      - `* data.value.atomic_index_id: int64 -> string`
+      - `* data.value.time_condition_id: int64 -> string`
+      - `* data.value.time_field_id: int64 -> string`
+      - `* data.value.summary_table_id: int64 -> string`
+      - `* data.value.common_conditions.cal_fn_ids: list<integer> -> list<string>`
+      - `* data.value.common_conditions.id: int64 -> string`
+      - `+ data.value.monitor.other_compound_metric_ids`
+      - `+ data.value.monitor.other_compound_metric_names`
+      - `* data.value.monitor.id: int64 -> string`
+      - `* data.value.monitor.other_metric_ids: list<integer> -> list<string>`
+      - `* data.value.monitor.metric_id: int64 -> string`
+      - `* data.value.new_biz.id: int64 -> string`
+      - `* data.value.new_biz.biz_id: int64 -> string`
+      - `* data.value.atomic_index.id: int64 -> string`
+      - `* data.value.atomic_index.cal_fn_ids: list<integer> -> list<string>`
+      - `* data.value.atomic_index.l1_id: int64 -> string`
+      - `* data.value.atomic_index.l3_id: int64 -> string`
+      - `* data.value.atomic_index.table_id: int64 -> string`
+      - `* data.value.atomic_index.field_ids: list<integer> -> list<string>`
+      - `* data.value.approval_info.id: int64 -> string`
+      - `* data.value.approval_info.biz_id: int64 -> string`
+      - `* data.value.dimension_groups.dimension_id: int64 -> string`
+      - `* data.value.dimension_groups.hierarchies_id: int64 -> string`
+      - `* data.value.dimension_groups.l1_id: int64 -> string`
+      - `* data.value.dimension_groups.l3_id: int64 -> string`
+      - `* data.value.dimension_groups.id: int64 -> string`
+      - `* data.value.dimension_groups.hierarchies.id: int64 -> string`
+      - `* data.value.dimension_groups.hierarchies.attrs.id: int64 -> string`
+      - `* data.value.dimension_groups.hierarchies.attrs.hierarchies_id: int64 -> string`
+      - `* data.value.dimension_groups.hierarchies.attrs.attr_id: int64 -> string`
+      - `* data.value.dimension_groups.hierarchies.attrs.detail_attr_ids: list<integer> -> list<string>`
+      - `+ data.value.dimension_groups.hierarchies.attrs.attr.secrecy_levels`
+      - `* data.value.dimension_groups.hierarchies.attrs.attr.id: int64 -> string`
+      - `* data.value.dimension_groups.hierarchies.attrs.attr.dimension_id: int64 -> string`
+      - `* data.value.dimension_groups.hierarchies.attrs.attr.code_table_field_id: int64 -> string`
+      - `* data.value.dimension_groups.hierarchies.attrs.attr.stand_row_id: int64 -> string`
+      - `* data.value.dimension_groups.hierarchies.attrs.attr.quality_infos.id: int64 -> string`
+      - `* data.value.dimension_groups.hierarchies.attrs.attr.quality_infos.table_id: int64 -> string`
+      - `* data.value.dimension_groups.hierarchies.attrs.attr.quality_infos.attr_id: int64 -> string`
+      - `* data.value.dimension_groups.hierarchies.attrs.attr.quality_infos.data_quality_id: int64 -> string`
+
+### HuaweiCloud SDK ECS
+
+- _新增特性_
+  - 支持接口`ChangeServerNetworkInterface`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK GaussDB
+
+- _新增特性_
+  - 支持接口`UpgradeProxyVersion`、`UpdateProxyName`、`ShowProxyIpgroup`、`ShowProxyVersion`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **SearchAutoEnlargePolicy**
+    - 响应参数变更
+      - `+ step_percent`
+      - `+ step_size`
+  - **UpdateInstanceConfiguration**
+    - 响应参数变更
+      - `+ job_id`
+  - **CreateConfigurationTemplate**
+    - 请求参数变更
+      - `+ datastore.instance_mode: enum value [ha:readonly]`
+  - **ListDatabases**
+    - 响应参数变更
+      - `+ databases.datctype`
+      - `+ databases.compatibility_type`
+  - **ListTasks**
+    - 响应参数变更
+      - `+ tasks.created_at`
+      - `+ tasks.ended_at`
+  - **ListComponentInfos**
+    - 响应参数变更
+      - `+ nodes.components.type`
+      - `+ nodes.components.detail`
+  - **ShowUpgradeCandidateVersions**
+    - 响应参数变更
+      - `+ upgrade_type_list.is_parallel_upgrade`
+
+### HuaweiCloud SDK IoTDA
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListBridges`
+    - `AddBridge`
+    - `DeleteBridge`
+    - `ResetBridgeSecret`
+    - `ListDeviceGroupsByDevice`
+    - `UpdateCertificate`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK RGC
+
+- _新增特性_
+  - 支持接口`ListControlsForOrganizationalUnit`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`ListControlsForOrganizationUnit`
+
+### HuaweiCloud SDK SMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateDiskInfo**
+    - 请求参数变更
+      - `+ disks.physical_volumes.inode_nums`
+      - `+ volumegroups.logical_volumes.inode_nums`
+  - **ShowServer**
+    - 响应参数变更
+      - `+ disks.physical_volumes.inode_nums`
+      - `+ volume_groups.logical_volumes.inode_nums`
+  - **CreateTask**
+    - 请求参数变更
+      - `+ target_server.volume_groups.logical_volumes.inode_nums`
+  - **ShowTask**
+    - 响应参数变更
+      - `+ target_server.volume_groups.logical_volumes.inode_nums`
+  - **UpdateTask**
+    - 请求参数变更
+      - `+ source_server.io_read_wait`
+      - `+ source_server.disks.physical_volumes.inode_nums`
+      - `+ source_server.volume_groups.logical_volumes.inode_nums`
+  - **RegisterServer**
+    - 请求参数变更
+      - `+ io_read_wait`
+      - `+ disks.physical_volumes.inode_nums`
+      - `+ volume_groups.logical_volumes.inode_nums`
+  - **ListServers**
+    - 响应参数变更
+      - `+ source_servers.init_target_server.volume_groups.logical_volumes.inode_nums`
+
+### HuaweiCloud SDK VPC
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListClouddcnSubnets`
+    - `CreateClouddcnSubnet`
+    - `ShowClouddcnSubnet`
+    - `UpdateClouddcnSubnet`
+    - `DeleteClouddcnSubnet`
+    - `ShowClouddcnSubnetsTags`
+    - `AddClouddcnSubnetsTags`
+    - `ListClouddcnSubnetsFilterTags`
+    - `DeleteClouddcnSubnetsTag`
+    - `ListClouddcnSubnetsCountFilterTags`
+    - `ListClouddcnSubnetsTags`
+    - `BatchDeleteClouddcnSubnetsTags`
+    - `BatchCreateClouddcnSubnetsTags`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListSecurityGroups**
+    - 响应参数变更
+      - `+ security_groups.tags`
+  - **CreateSecurityGroup**
+    - 请求参数变更
+      - `+ security_group.tags`
+    - 响应参数变更
+      - `+ security_group.tags`
+  - **ShowSecurityGroup**
+    - 响应参数变更
+      - `+ security_group.tags`
+  - **UpdateSecurityGroup**
+    - 响应参数变更
+      - `+ security_group.tags`
+  - **CreateFirewall**
+    - 请求参数变更
+      - `+ firewall.tags`
+
+### HuaweiCloud SDK WAF
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowCcRule**
+    - 响应参数变更
+      - `- conditions.category: enum value [response_code]`
+  - **UpdateCcRule**
+    - 请求参数变更
+      - `- conditions.category: enum value [response_code]`
+    - 响应参数变更
+      - `- conditions.category: enum value [response_code]`
+  - **DeleteCcRule**
+    - 响应参数变更
+      - `- conditions.category: enum value [response_code]`
+  - **ShowPolicy**
+    - 响应参数变更
+      - `+ action.followed_action_id`
+  - **UpdatePolicyProtectHost**
+    - 响应参数变更
+      - `+ action.followed_action_id`
+  - **DeletePolicy**
+    - 响应参数变更
+      - `+ action.followed_action_id`
+  - **UpdatePolicy**
+    - 请求参数变更
+      - `+ action.followed_action_id`
+    - 响应参数变更
+      - `+ action.followed_action_id`
+  - **ShowCompositeHost**
+    - 响应参数变更
+      - `+ server`
+  - **CreateCcRule**
+    - 请求参数变更
+      - `- conditions.category: enum value [response_code]`
+    - 响应参数变更
+      - `- conditions.category: enum value [response_code]`
+  - **ListCcRules**
+    - 响应参数变更
+      - `- items.conditions.category: enum value [response_code]`
+  - **CreatePolicy**
+    - 请求参数变更
+      - `+ log_action_replaced`
+    - 响应参数变更
+      - `+ action.followed_action_id`
+  - **ListPolicy**
+    - 响应参数变更
+      - `+ items.action.followed_action_id`
+  - **ListCompositeHosts**
+    - 响应参数变更
+      - `+ server`
+      - `+ items.server`
+
 # 3.1.97 2024-05-23
 
 ### HuaweiCloud SDK APM

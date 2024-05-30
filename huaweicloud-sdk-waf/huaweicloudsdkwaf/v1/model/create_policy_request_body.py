@@ -17,28 +17,35 @@ class CreatePolicyRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'name': 'str'
+        'name': 'str',
+        'log_action_replaced': 'bool'
     }
 
     attribute_map = {
-        'name': 'name'
+        'name': 'name',
+        'log_action_replaced': 'log_action_replaced'
     }
 
-    def __init__(self, name=None):
+    def __init__(self, name=None, log_action_replaced=None):
         """CreatePolicyRequestBody
 
         The model defined in huaweicloud sdk
 
         :param name: 策略名称（策略名称只能由数字、字母和下划线组成，长度不能超过64为字符）
         :type name: str
+        :param log_action_replaced: cc规则和精准防护规则“防护动作”选择“仅记录”时，Web基础防护是否命中策略规则并阻断，默认为true
+        :type log_action_replaced: bool
         """
         
         
 
         self._name = None
+        self._log_action_replaced = None
         self.discriminator = None
 
         self.name = name
+        if log_action_replaced is not None:
+            self.log_action_replaced = log_action_replaced
 
     @property
     def name(self):
@@ -61,6 +68,28 @@ class CreatePolicyRequestBody:
         :type name: str
         """
         self._name = name
+
+    @property
+    def log_action_replaced(self):
+        """Gets the log_action_replaced of this CreatePolicyRequestBody.
+
+        cc规则和精准防护规则“防护动作”选择“仅记录”时，Web基础防护是否命中策略规则并阻断，默认为true
+
+        :return: The log_action_replaced of this CreatePolicyRequestBody.
+        :rtype: bool
+        """
+        return self._log_action_replaced
+
+    @log_action_replaced.setter
+    def log_action_replaced(self, log_action_replaced):
+        """Sets the log_action_replaced of this CreatePolicyRequestBody.
+
+        cc规则和精准防护规则“防护动作”选择“仅记录”时，Web基础防护是否命中策略规则并阻断，默认为true
+
+        :param log_action_replaced: The log_action_replaced of this CreatePolicyRequestBody.
+        :type log_action_replaced: bool
+        """
+        self._log_action_replaced = log_action_replaced
 
     def to_dict(self):
         """Returns the model properties as a dict"""

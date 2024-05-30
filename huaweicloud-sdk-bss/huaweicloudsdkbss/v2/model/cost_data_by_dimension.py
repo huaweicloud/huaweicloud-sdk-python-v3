@@ -35,9 +35,9 @@ class CostDataByDimension:
 
         The model defined in huaweicloud sdk
 
-        :param dimensions: 维度列表。
+        :param dimensions: 维度列表，具体请参见表 DimensionGroup。
         :type dimensions: list[:class:`huaweicloudsdkbss.v2.DimensionGroup`]
-        :param costs: 成本值。
+        :param costs: 成本值，具体请参见表 Cost。
         :type costs: list[:class:`huaweicloudsdkbss.v2.Cost`]
         :param amount_by_costs: 此维度值对应整个时间跨度的成本汇总金额。
         :type amount_by_costs: str
@@ -66,7 +66,7 @@ class CostDataByDimension:
     def dimensions(self):
         """Gets the dimensions of this CostDataByDimension.
 
-        维度列表。
+        维度列表，具体请参见表 DimensionGroup。
 
         :return: The dimensions of this CostDataByDimension.
         :rtype: list[:class:`huaweicloudsdkbss.v2.DimensionGroup`]
@@ -77,7 +77,7 @@ class CostDataByDimension:
     def dimensions(self, dimensions):
         """Sets the dimensions of this CostDataByDimension.
 
-        维度列表。
+        维度列表，具体请参见表 DimensionGroup。
 
         :param dimensions: The dimensions of this CostDataByDimension.
         :type dimensions: list[:class:`huaweicloudsdkbss.v2.DimensionGroup`]
@@ -88,7 +88,7 @@ class CostDataByDimension:
     def costs(self):
         """Gets the costs of this CostDataByDimension.
 
-        成本值。
+        成本值，具体请参见表 Cost。
 
         :return: The costs of this CostDataByDimension.
         :rtype: list[:class:`huaweicloudsdkbss.v2.Cost`]
@@ -99,7 +99,7 @@ class CostDataByDimension:
     def costs(self, costs):
         """Sets the costs of this CostDataByDimension.
 
-        成本值。
+        成本值，具体请参见表 Cost。
 
         :param costs: The costs of this CostDataByDimension.
         :type costs: list[:class:`huaweicloudsdkbss.v2.Cost`]

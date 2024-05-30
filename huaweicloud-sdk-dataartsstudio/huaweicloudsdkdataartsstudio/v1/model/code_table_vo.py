@@ -17,11 +17,11 @@ class CodeTableVO:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'int',
+        'id': 'str',
         'name_en': 'str',
         'name_ch': 'str',
         'tb_version': 'int',
-        'directory_id': 'int',
+        'directory_id': 'str',
         'directory_path': 'str',
         'description': 'str',
         'create_by': 'str',
@@ -55,16 +55,16 @@ class CodeTableVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 码表ID。
-        :type id: int
+        :param id: 码表ID，填写String类型替代Long类型。
+        :type id: str
         :param name_en: 表名称，英文名。
         :type name_en: str
         :param name_ch: 表名称，中文名。
         :type name_ch: str
         :param tb_version: 表版本。
         :type tb_version: int
-        :param directory_id: 目录ID。
-        :type directory_id: int
+        :param directory_id: 目录ID，填写String类型替代Long类型。
+        :type directory_id: str
         :param directory_path: 目录树。
         :type directory_path: str
         :param description: 描述。
@@ -73,9 +73,9 @@ class CodeTableVO:
         :type create_by: str
         :param status: 
         :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
-        :param create_time: 创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        :param create_time: 创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
-        :param update_time: 更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        :param update_time: 更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type update_time: datetime
         :param approval_info: 
         :type approval_info: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalVO`
@@ -132,10 +132,10 @@ class CodeTableVO:
     def id(self):
         """Gets the id of this CodeTableVO.
 
-        码表ID。
+        码表ID，填写String类型替代Long类型。
 
         :return: The id of this CodeTableVO.
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -143,10 +143,10 @@ class CodeTableVO:
     def id(self, id):
         """Sets the id of this CodeTableVO.
 
-        码表ID。
+        码表ID，填写String类型替代Long类型。
 
         :param id: The id of this CodeTableVO.
-        :type id: int
+        :type id: str
         """
         self._id = id
 
@@ -220,10 +220,10 @@ class CodeTableVO:
     def directory_id(self):
         """Gets the directory_id of this CodeTableVO.
 
-        目录ID。
+        目录ID，填写String类型替代Long类型。
 
         :return: The directory_id of this CodeTableVO.
-        :rtype: int
+        :rtype: str
         """
         return self._directory_id
 
@@ -231,10 +231,10 @@ class CodeTableVO:
     def directory_id(self, directory_id):
         """Sets the directory_id of this CodeTableVO.
 
-        目录ID。
+        目录ID，填写String类型替代Long类型。
 
         :param directory_id: The directory_id of this CodeTableVO.
-        :type directory_id: int
+        :type directory_id: str
         """
         self._directory_id = directory_id
 
@@ -326,7 +326,7 @@ class CodeTableVO:
     def create_time(self):
         """Gets the create_time of this CodeTableVO.
 
-        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The create_time of this CodeTableVO.
         :rtype: datetime
@@ -337,7 +337,7 @@ class CodeTableVO:
     def create_time(self, create_time):
         """Sets the create_time of this CodeTableVO.
 
-        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param create_time: The create_time of this CodeTableVO.
         :type create_time: datetime
@@ -348,7 +348,7 @@ class CodeTableVO:
     def update_time(self):
         """Gets the update_time of this CodeTableVO.
 
-        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The update_time of this CodeTableVO.
         :rtype: datetime
@@ -359,7 +359,7 @@ class CodeTableVO:
     def update_time(self, update_time):
         """Sets the update_time of this CodeTableVO.
 
-        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param update_time: The update_time of this CodeTableVO.
         :type update_time: datetime

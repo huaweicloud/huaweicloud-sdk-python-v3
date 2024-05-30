@@ -71,7 +71,7 @@ class CustomerOrderV3:
         :type source_type: int
         :param status: 订单状态。 1：待审核2：待退款3：处理中4：已取消5：已完成6：待付款9：待确认10：待发货11：待收货12：待上门取货13：换新中
         :type status: int
-        :param order_type: 订单类型。 1：开通2：续订3：变更4：退订11：按需转包年/包月13：试用14：转商用15：费用调整
+        :param order_type: 订单类型。 1：开通2：续订3：变更4：退订10：包年/包月转按需11：按需转包年/包月13：试用14：转商用15：费用调整
         :type order_type: int
         :param amount_after_discount: 订单优惠后金额（实付价格，不含券不含卡）。
         :type amount_after_discount: float
@@ -282,7 +282,7 @@ class CustomerOrderV3:
     def order_type(self):
         """Gets the order_type of this CustomerOrderV3.
 
-        订单类型。 1：开通2：续订3：变更4：退订11：按需转包年/包月13：试用14：转商用15：费用调整
+        订单类型。 1：开通2：续订3：变更4：退订10：包年/包月转按需11：按需转包年/包月13：试用14：转商用15：费用调整
 
         :return: The order_type of this CustomerOrderV3.
         :rtype: int
@@ -293,7 +293,7 @@ class CustomerOrderV3:
     def order_type(self, order_type):
         """Sets the order_type of this CustomerOrderV3.
 
-        订单类型。 1：开通2：续订3：变更4：退订11：按需转包年/包月13：试用14：转商用15：费用调整
+        订单类型。 1：开通2：续订3：变更4：退订10：包年/包月转按需11：按需转包年/包月13：试用14：转商用15：费用调整
 
         :param order_type: The order_type of this CustomerOrderV3.
         :type order_type: int

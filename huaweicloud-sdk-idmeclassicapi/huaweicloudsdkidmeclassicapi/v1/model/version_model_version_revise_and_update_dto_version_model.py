@@ -51,7 +51,7 @@ class VersionModelVersionReviseAndUpdateDTOVersionModel:
         :type master_id: str
         :param modifier: 更新者。
         :type modifier: str
-        :param work_copy_type: 关系的复制类型。 - BOTH：复制当前M-V模型作为源端与目标端的关系。 - CUSTOM：自定义复制当前M-V模型的关系。 - NONE：不复制当前M-V模型的关系。 - SOURCE：仅复制当前M-V模型作为源端的关系。 - TARGET：仅复制当前M-V模型作为目标端的关系。
+        :param work_copy_type: 关系的复制类型。 - BOTH：若存在关系实例引用此数据实例作为源端实例或目标端实例，修订且更新后的数据实例将继承这些关系实例。 - SOURCE：若存在关系实例引用此数据实例作为源端实例，修订且更新后的数据实例将继承这些关系实例。 - TARGET：若存在关系实例引用此数据实例作为目标端实例，修订且更新后的数据实例将继承这些关系实例。 - NONE：修订且更新后的数据实例将不继承任何关系实例。 - CUSTOM：若指定的关系实体集合对应的关系实例引用此数据实例作为源端实例或目标端实例，修订且更新后的数据实例将继承这些关系实例。
         :type work_copy_type: str
         :param working_copy: 是否已检出。 - true：已检出。 - false：未检出。
         :type working_copy: bool
@@ -191,7 +191,7 @@ class VersionModelVersionReviseAndUpdateDTOVersionModel:
     def work_copy_type(self):
         """Gets the work_copy_type of this VersionModelVersionReviseAndUpdateDTOVersionModel.
 
-        关系的复制类型。 - BOTH：复制当前M-V模型作为源端与目标端的关系。 - CUSTOM：自定义复制当前M-V模型的关系。 - NONE：不复制当前M-V模型的关系。 - SOURCE：仅复制当前M-V模型作为源端的关系。 - TARGET：仅复制当前M-V模型作为目标端的关系。
+        关系的复制类型。 - BOTH：若存在关系实例引用此数据实例作为源端实例或目标端实例，修订且更新后的数据实例将继承这些关系实例。 - SOURCE：若存在关系实例引用此数据实例作为源端实例，修订且更新后的数据实例将继承这些关系实例。 - TARGET：若存在关系实例引用此数据实例作为目标端实例，修订且更新后的数据实例将继承这些关系实例。 - NONE：修订且更新后的数据实例将不继承任何关系实例。 - CUSTOM：若指定的关系实体集合对应的关系实例引用此数据实例作为源端实例或目标端实例，修订且更新后的数据实例将继承这些关系实例。
 
         :return: The work_copy_type of this VersionModelVersionReviseAndUpdateDTOVersionModel.
         :rtype: str
@@ -202,7 +202,7 @@ class VersionModelVersionReviseAndUpdateDTOVersionModel:
     def work_copy_type(self, work_copy_type):
         """Sets the work_copy_type of this VersionModelVersionReviseAndUpdateDTOVersionModel.
 
-        关系的复制类型。 - BOTH：复制当前M-V模型作为源端与目标端的关系。 - CUSTOM：自定义复制当前M-V模型的关系。 - NONE：不复制当前M-V模型的关系。 - SOURCE：仅复制当前M-V模型作为源端的关系。 - TARGET：仅复制当前M-V模型作为目标端的关系。
+        关系的复制类型。 - BOTH：若存在关系实例引用此数据实例作为源端实例或目标端实例，修订且更新后的数据实例将继承这些关系实例。 - SOURCE：若存在关系实例引用此数据实例作为源端实例，修订且更新后的数据实例将继承这些关系实例。 - TARGET：若存在关系实例引用此数据实例作为目标端实例，修订且更新后的数据实例将继承这些关系实例。 - NONE：修订且更新后的数据实例将不继承任何关系实例。 - CUSTOM：若指定的关系实体集合对应的关系实例引用此数据实例作为源端实例或目标端实例，修订且更新后的数据实例将继承这些关系实例。
 
         :param work_copy_type: The work_copy_type of this VersionModelVersionReviseAndUpdateDTOVersionModel.
         :type work_copy_type: str

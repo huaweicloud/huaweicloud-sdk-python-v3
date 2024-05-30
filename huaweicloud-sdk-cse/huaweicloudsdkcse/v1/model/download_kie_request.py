@@ -39,7 +39,7 @@ class DownloadKieRequest:
 
         :param x_enterprise_project_id: 如果不带则默认企业项目为\&quot;default\&quot;，ID为\&quot;0\&quot;
         :type x_enterprise_project_id: str
-        :param x_engine_id: 微服务引擎专享版ID。
+        :param x_engine_id: 微服务引擎ID。
         :type x_engine_id: str
         :param label: 按label过滤项导出，格式为：{标签key}:{标签value}
         :type label: str
@@ -94,7 +94,7 @@ class DownloadKieRequest:
     def x_engine_id(self):
         """Gets the x_engine_id of this DownloadKieRequest.
 
-        微服务引擎专享版ID。
+        微服务引擎ID。
 
         :return: The x_engine_id of this DownloadKieRequest.
         :rtype: str
@@ -105,7 +105,7 @@ class DownloadKieRequest:
     def x_engine_id(self, x_engine_id):
         """Sets the x_engine_id of this DownloadKieRequest.
 
-        微服务引擎专享版ID。
+        微服务引擎ID。
 
         :param x_engine_id: The x_engine_id of this DownloadKieRequest.
         :type x_engine_id: str

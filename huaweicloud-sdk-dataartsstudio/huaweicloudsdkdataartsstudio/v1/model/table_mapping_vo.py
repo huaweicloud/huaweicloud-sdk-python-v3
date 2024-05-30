@@ -17,11 +17,11 @@ class TableMappingVO:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'int',
+        'id': 'str',
         'name': 'str',
         'description': 'str',
-        'target_table_id': 'int',
-        'src_model_id': 'int',
+        'target_table_id': 'str',
+        'src_model_id': 'str',
         'src_model_name': 'str',
         'view_text': 'str',
         'target_table_name': 'str',
@@ -57,16 +57,16 @@ class TableMappingVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码。
-        :type id: int
+        :param id: 编码，填写String类型替代Long类型。
+        :type id: str
         :param name: 名称。
         :type name: str
         :param description: 描述。
         :type description: str
-        :param target_table_id: 目的表ID。
-        :type target_table_id: int
-        :param src_model_id: 来源表在关系建模中的模型ID。
-        :type src_model_id: int
+        :param target_table_id: 目的表ID，填写String类型替代Long类型。
+        :type target_table_id: str
+        :param src_model_id: 来源表在关系建模中的模型ID，填写String类型替代Long类型。
+        :type src_model_id: str
         :param src_model_name: 来源模型名称。
         :type src_model_name: str
         :param view_text: 采集的视图来源，dws视图逆向使用。
@@ -142,10 +142,10 @@ class TableMappingVO:
     def id(self):
         """Gets the id of this TableMappingVO.
 
-        编码。
+        编码，填写String类型替代Long类型。
 
         :return: The id of this TableMappingVO.
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -153,10 +153,10 @@ class TableMappingVO:
     def id(self, id):
         """Sets the id of this TableMappingVO.
 
-        编码。
+        编码，填写String类型替代Long类型。
 
         :param id: The id of this TableMappingVO.
-        :type id: int
+        :type id: str
         """
         self._id = id
 
@@ -208,10 +208,10 @@ class TableMappingVO:
     def target_table_id(self):
         """Gets the target_table_id of this TableMappingVO.
 
-        目的表ID。
+        目的表ID，填写String类型替代Long类型。
 
         :return: The target_table_id of this TableMappingVO.
-        :rtype: int
+        :rtype: str
         """
         return self._target_table_id
 
@@ -219,10 +219,10 @@ class TableMappingVO:
     def target_table_id(self, target_table_id):
         """Sets the target_table_id of this TableMappingVO.
 
-        目的表ID。
+        目的表ID，填写String类型替代Long类型。
 
         :param target_table_id: The target_table_id of this TableMappingVO.
-        :type target_table_id: int
+        :type target_table_id: str
         """
         self._target_table_id = target_table_id
 
@@ -230,10 +230,10 @@ class TableMappingVO:
     def src_model_id(self):
         """Gets the src_model_id of this TableMappingVO.
 
-        来源表在关系建模中的模型ID。
+        来源表在关系建模中的模型ID，填写String类型替代Long类型。
 
         :return: The src_model_id of this TableMappingVO.
-        :rtype: int
+        :rtype: str
         """
         return self._src_model_id
 
@@ -241,10 +241,10 @@ class TableMappingVO:
     def src_model_id(self, src_model_id):
         """Sets the src_model_id of this TableMappingVO.
 
-        来源表在关系建模中的模型ID。
+        来源表在关系建模中的模型ID，填写String类型替代Long类型。
 
         :param src_model_id: The src_model_id of this TableMappingVO.
-        :type src_model_id: int
+        :type src_model_id: str
         """
         self._src_model_id = src_model_id
 

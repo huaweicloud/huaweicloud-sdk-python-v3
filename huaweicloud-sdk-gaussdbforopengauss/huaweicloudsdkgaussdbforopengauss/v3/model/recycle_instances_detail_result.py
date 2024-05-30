@@ -65,7 +65,7 @@ class RecycleInstancesDetailResult:
         :type id: str
         :param name: 实例名称。
         :type name: str
-        :param ha_mode: 部署形态。
+        :param ha_mode: 部署形态(Ha:主备版;Independent:独立部署;Combined:混合部署)。
         :type ha_mode: str
         :param engine_name: 引擎名称
         :type engine_name: str
@@ -93,7 +93,7 @@ class RecycleInstancesDetailResult:
         :type recycle_backup_id: str
         :param recycle_status: 回收站备份状态。（Running：运行中；Active：有效的）。
         :type recycle_status: str
-        :param mode: 实例类型（basic：基础版；standard：标准版；enterprise：企业版）。
+        :param mode: 产品类型（basic：基础版；standard：标准版；enterprise：企业版）。
         :type mode: str
         """
         
@@ -188,7 +188,7 @@ class RecycleInstancesDetailResult:
     def ha_mode(self):
         """Gets the ha_mode of this RecycleInstancesDetailResult.
 
-        部署形态。
+        部署形态(Ha:主备版;Independent:独立部署;Combined:混合部署)。
 
         :return: The ha_mode of this RecycleInstancesDetailResult.
         :rtype: str
@@ -199,7 +199,7 @@ class RecycleInstancesDetailResult:
     def ha_mode(self, ha_mode):
         """Sets the ha_mode of this RecycleInstancesDetailResult.
 
-        部署形态。
+        部署形态(Ha:主备版;Independent:独立部署;Combined:混合部署)。
 
         :param ha_mode: The ha_mode of this RecycleInstancesDetailResult.
         :type ha_mode: str
@@ -496,7 +496,7 @@ class RecycleInstancesDetailResult:
     def mode(self):
         """Gets the mode of this RecycleInstancesDetailResult.
 
-        实例类型（basic：基础版；standard：标准版；enterprise：企业版）。
+        产品类型（basic：基础版；standard：标准版；enterprise：企业版）。
 
         :return: The mode of this RecycleInstancesDetailResult.
         :rtype: str
@@ -507,7 +507,7 @@ class RecycleInstancesDetailResult:
     def mode(self, mode):
         """Sets the mode of this RecycleInstancesDetailResult.
 
-        实例类型（basic：基础版；standard：标准版；enterprise：企业版）。
+        产品类型（basic：基础版；standard：标准版；enterprise：企业版）。
 
         :param mode: The mode of this RecycleInstancesDetailResult.
         :type mode: str

@@ -18,7 +18,7 @@ class ListApproversResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'object'
+        'data': 'ListApproversResultData'
     }
 
     attribute_map = {
@@ -30,8 +30,8 @@ class ListApproversResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: 返回的数据信息。
-        :type data: object
+        :param data: 
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.ListApproversResultData`
         """
         
         super(ListApproversResponse, self).__init__()
@@ -46,10 +46,8 @@ class ListApproversResponse(SdkResponse):
     def data(self):
         """Gets the data of this ListApproversResponse.
 
-        返回的数据信息。
-
         :return: The data of this ListApproversResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListApproversResultData`
         """
         return self._data
 
@@ -57,10 +55,8 @@ class ListApproversResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this ListApproversResponse.
 
-        返回的数据信息。
-
         :param data: The data of this ListApproversResponse.
-        :type data: object
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.ListApproversResultData`
         """
         self._data = data
 

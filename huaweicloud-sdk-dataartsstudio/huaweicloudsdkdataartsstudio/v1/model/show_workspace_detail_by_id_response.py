@@ -18,7 +18,7 @@ class ShowWorkspaceDetailByIdResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'object'
+        'data': 'CreateWorkspaceResultData'
     }
 
     attribute_map = {
@@ -30,8 +30,8 @@ class ShowWorkspaceDetailByIdResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: 返回的数据信息。
-        :type data: object
+        :param data: 
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.CreateWorkspaceResultData`
         """
         
         super(ShowWorkspaceDetailByIdResponse, self).__init__()
@@ -46,10 +46,8 @@ class ShowWorkspaceDetailByIdResponse(SdkResponse):
     def data(self):
         """Gets the data of this ShowWorkspaceDetailByIdResponse.
 
-        返回的数据信息。
-
         :return: The data of this ShowWorkspaceDetailByIdResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateWorkspaceResultData`
         """
         return self._data
 
@@ -57,10 +55,8 @@ class ShowWorkspaceDetailByIdResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this ShowWorkspaceDetailByIdResponse.
 
-        返回的数据信息。
-
         :param data: The data of this ShowWorkspaceDetailByIdResponse.
-        :type data: object
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.CreateWorkspaceResultData`
         """
         self._data = data
 

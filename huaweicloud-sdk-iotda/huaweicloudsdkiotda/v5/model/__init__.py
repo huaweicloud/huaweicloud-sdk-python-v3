@@ -11,6 +11,9 @@ from huaweicloudsdkiotda.v5.model.add_application import AddApplication
 from huaweicloudsdkiotda.v5.model.add_application_request import AddApplicationRequest
 from huaweicloudsdkiotda.v5.model.add_application_response import AddApplicationResponse
 from huaweicloudsdkiotda.v5.model.add_backlog_policy import AddBacklogPolicy
+from huaweicloudsdkiotda.v5.model.add_bridge import AddBridge
+from huaweicloudsdkiotda.v5.model.add_bridge_request import AddBridgeRequest
+from huaweicloudsdkiotda.v5.model.add_bridge_response import AddBridgeResponse
 from huaweicloudsdkiotda.v5.model.add_certificate_request import AddCertificateRequest
 from huaweicloudsdkiotda.v5.model.add_certificate_response import AddCertificateResponse
 from huaweicloudsdkiotda.v5.model.add_device import AddDevice
@@ -41,6 +44,8 @@ from huaweicloudsdkiotda.v5.model.batch_target_result import BatchTargetResult
 from huaweicloudsdkiotda.v5.model.batch_targets import BatchTargets
 from huaweicloudsdkiotda.v5.model.batch_task_file import BatchTaskFile
 from huaweicloudsdkiotda.v5.model.bind_tags_dto import BindTagsDTO
+from huaweicloudsdkiotda.v5.model.bridge_auth_info import BridgeAuthInfo
+from huaweicloudsdkiotda.v5.model.bridge_response import BridgeResponse
 from huaweicloudsdkiotda.v5.model.broadcast_message_request import BroadcastMessageRequest
 from huaweicloudsdkiotda.v5.model.broadcast_message_response import BroadcastMessageResponse
 from huaweicloudsdkiotda.v5.model.certificates_rsp_dto import CertificatesRspDTO
@@ -94,6 +99,8 @@ from huaweicloudsdkiotda.v5.model.delete_batch_task_file_request import DeleteBa
 from huaweicloudsdkiotda.v5.model.delete_batch_task_file_response import DeleteBatchTaskFileResponse
 from huaweicloudsdkiotda.v5.model.delete_batch_task_request import DeleteBatchTaskRequest
 from huaweicloudsdkiotda.v5.model.delete_batch_task_response import DeleteBatchTaskResponse
+from huaweicloudsdkiotda.v5.model.delete_bridge_request import DeleteBridgeRequest
+from huaweicloudsdkiotda.v5.model.delete_bridge_response import DeleteBridgeResponse
 from huaweicloudsdkiotda.v5.model.delete_certificate_request import DeleteCertificateRequest
 from huaweicloudsdkiotda.v5.model.delete_certificate_response import DeleteCertificateResponse
 from huaweicloudsdkiotda.v5.model.delete_device_group_request import DeleteDeviceGroupRequest
@@ -150,8 +157,13 @@ from huaweicloudsdkiotda.v5.model.list_batch_task_files_request import ListBatch
 from huaweicloudsdkiotda.v5.model.list_batch_task_files_response import ListBatchTaskFilesResponse
 from huaweicloudsdkiotda.v5.model.list_batch_tasks_request import ListBatchTasksRequest
 from huaweicloudsdkiotda.v5.model.list_batch_tasks_response import ListBatchTasksResponse
+from huaweicloudsdkiotda.v5.model.list_bridges_request import ListBridgesRequest
+from huaweicloudsdkiotda.v5.model.list_bridges_response import ListBridgesResponse
 from huaweicloudsdkiotda.v5.model.list_certificates_request import ListCertificatesRequest
 from huaweicloudsdkiotda.v5.model.list_certificates_response import ListCertificatesResponse
+from huaweicloudsdkiotda.v5.model.list_device_group_summary import ListDeviceGroupSummary
+from huaweicloudsdkiotda.v5.model.list_device_groups_by_device_request import ListDeviceGroupsByDeviceRequest
+from huaweicloudsdkiotda.v5.model.list_device_groups_by_device_response import ListDeviceGroupsByDeviceResponse
 from huaweicloudsdkiotda.v5.model.list_device_groups_request import ListDeviceGroupsRequest
 from huaweicloudsdkiotda.v5.model.list_device_groups_response import ListDeviceGroupsResponse
 from huaweicloudsdkiotda.v5.model.list_device_messages_request import ListDeviceMessagesRequest
@@ -197,6 +209,9 @@ from huaweicloudsdkiotda.v5.model.query_device_simplify import QueryDeviceSimpli
 from huaweicloudsdkiotda.v5.model.query_queue_base import QueryQueueBase
 from huaweicloudsdkiotda.v5.model.query_resource_by_tags_dto import QueryResourceByTagsDTO
 from huaweicloudsdkiotda.v5.model.queue_info import QueueInfo
+from huaweicloudsdkiotda.v5.model.reset_bridge_secret import ResetBridgeSecret
+from huaweicloudsdkiotda.v5.model.reset_bridge_secret_request import ResetBridgeSecretRequest
+from huaweicloudsdkiotda.v5.model.reset_bridge_secret_response import ResetBridgeSecretResponse
 from huaweicloudsdkiotda.v5.model.reset_device_secret import ResetDeviceSecret
 from huaweicloudsdkiotda.v5.model.reset_device_secret_request import ResetDeviceSecretRequest
 from huaweicloudsdkiotda.v5.model.reset_device_secret_response import ResetDeviceSecretResponse
@@ -287,6 +302,9 @@ from huaweicloudsdkiotda.v5.model.update_application_dto import UpdateApplicatio
 from huaweicloudsdkiotda.v5.model.update_application_request import UpdateApplicationRequest
 from huaweicloudsdkiotda.v5.model.update_application_response import UpdateApplicationResponse
 from huaweicloudsdkiotda.v5.model.update_backlog_policy import UpdateBacklogPolicy
+from huaweicloudsdkiotda.v5.model.update_certificate_dto import UpdateCertificateDTO
+from huaweicloudsdkiotda.v5.model.update_certificate_request import UpdateCertificateRequest
+from huaweicloudsdkiotda.v5.model.update_certificate_response import UpdateCertificateResponse
 from huaweicloudsdkiotda.v5.model.update_desired import UpdateDesired
 from huaweicloudsdkiotda.v5.model.update_desireds import UpdateDesireds
 from huaweicloudsdkiotda.v5.model.update_device import UpdateDevice

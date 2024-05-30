@@ -1831,6 +1831,282 @@ class IoTDAAsyncClient(Client):
 
         return http_info
 
+    def add_bridge_async(self, request):
+        """创建网桥
+
+        应用服务器可调用此接口在物联网平台创建一个网桥，仅在创建后的网桥才可以接入物联网平台。
+        - 一个实例最多支持20个网桥。
+        - 仅**标准版实例、企业版实例**支持该接口调用，基础版不支持。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AddBridge
+        :type request: :class:`huaweicloudsdkiotda.v5.AddBridgeRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.AddBridgeResponse`
+        """
+        http_info = self._add_bridge_http_info(request)
+        return self._call_api(**http_info)
+
+    def add_bridge_async_invoker(self, request):
+        http_info = self._add_bridge_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_bridge_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/iot/{project_id}/bridges",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddBridgeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_bridge_async(self, request):
+        """删除网桥
+
+        应用服务器可调用此接口在物联网平台上删除指定网桥。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteBridge
+        :type request: :class:`huaweicloudsdkiotda.v5.DeleteBridgeRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.DeleteBridgeResponse`
+        """
+        http_info = self._delete_bridge_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_bridge_async_invoker(self, request):
+        http_info = self._delete_bridge_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_bridge_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/iot/{project_id}/bridges/{bridge_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteBridgeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'bridge_id' in local_var_params:
+            path_params['bridge_id'] = local_var_params['bridge_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_bridges_async(self, request):
+        """查询网桥列表
+
+        应用服务器可调用此接口在物联网平台查询网桥列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListBridges
+        :type request: :class:`huaweicloudsdkiotda.v5.ListBridgesRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.ListBridgesResponse`
+        """
+        http_info = self._list_bridges_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_bridges_async_invoker(self, request):
+        http_info = self._list_bridges_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_bridges_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/iot/{project_id}/bridges",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBridgesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def reset_bridge_secret_async(self, request):
+        """重置网桥密钥
+
+        应用服务器可调用此接口在物联网平台上重置网桥密钥。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ResetBridgeSecret
+        :type request: :class:`huaweicloudsdkiotda.v5.ResetBridgeSecretRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.ResetBridgeSecretResponse`
+        """
+        http_info = self._reset_bridge_secret_http_info(request)
+        return self._call_api(**http_info)
+
+    def reset_bridge_secret_async_invoker(self, request):
+        http_info = self._reset_bridge_secret_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _reset_bridge_secret_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/iot/{project_id}/bridges/{bridge_id}/reset-secret",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetBridgeSecretResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'bridge_id' in local_var_params:
+            path_params['bridge_id'] = local_var_params['bridge_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def broadcast_message_async(self, request):
         """下发广播消息
 
@@ -2173,6 +2449,75 @@ class IoTDAAsyncClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_certificate_async(self, request):
+        """更新CA证书
+
+        应用服务器可调用此接口在物联网平台上更新CA证书。仅标准版实例、企业版实例支持该接口调用，基础版不支持。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateCertificate
+        :type request: :class:`huaweicloudsdkiotda.v5.UpdateCertificateRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.UpdateCertificateResponse`
+        """
+        http_info = self._update_certificate_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_certificate_async_invoker(self, request):
+        http_info = self._update_certificate_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_certificate_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/iot/{project_id}/certificates/{certificate_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCertificateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'certificate_id' in local_var_params:
+            path_params['certificate_id'] = local_var_params['certificate_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -2923,6 +3268,73 @@ class IoTDAAsyncClient(Client):
             "resource_path": "/v5/iot/{project_id}/devices/{device_id}/freeze",
             "request_type": request.__class__.__name__,
             "response_type": "FreezeDeviceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'device_id' in local_var_params:
+            path_params['device_id'] = local_var_params['device_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_device_groups_by_device_async(self, request):
+        """查询指定设备加入的设备组列表
+
+        应用服务器可调用此接口查询物联网平台中的某个设备加入的设备组信息列表。仅标准版实例、企业版实例支持该接口调用，基础版不支持。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListDeviceGroupsByDevice
+        :type request: :class:`huaweicloudsdkiotda.v5.ListDeviceGroupsByDeviceRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.ListDeviceGroupsByDeviceResponse`
+        """
+        http_info = self._list_device_groups_by_device_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_device_groups_by_device_async_invoker(self, request):
+        http_info = self._list_device_groups_by_device_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_device_groups_by_device_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/iot/{project_id}/devices/{device_id}/list-device-group",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDeviceGroupsByDeviceResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

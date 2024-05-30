@@ -61,7 +61,7 @@ class PeriodProductInfo:
         :type resource_spec: str
         :param region: 云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
         :type region: str
-        :param available_zone: 可用区标识，例如：“cn-north-1a”。具体请参见地区和终端节点可用分区的“可用分区名称”列的值。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
+        :param available_zone: 可用区标识，例如：“cn-north-1a”，大小写不敏感。具体请参见地区和终端节点可用分区的“可用分区名称”列的值。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
         :type available_zone: str
         :param resource_size: 资源容量大小，例如购买的卷大小或带宽大小。 线性产品时该参数不能为空。线性产品为包括硬盘，带宽等在订购时需要指定大小的产品。例如硬盘在订购时需选择10G、20G等不同大小。非线性产品时此参数不携带或者携带值为null时，不作为筛选条件。
         :type resource_size: int
@@ -224,7 +224,7 @@ class PeriodProductInfo:
     def available_zone(self):
         """Gets the available_zone of this PeriodProductInfo.
 
-        可用区标识，例如：“cn-north-1a”。具体请参见地区和终端节点可用分区的“可用分区名称”列的值。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
+        可用区标识，例如：“cn-north-1a”，大小写不敏感。具体请参见地区和终端节点可用分区的“可用分区名称”列的值。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
         :return: The available_zone of this PeriodProductInfo.
         :rtype: str
@@ -235,7 +235,7 @@ class PeriodProductInfo:
     def available_zone(self, available_zone):
         """Sets the available_zone of this PeriodProductInfo.
 
-        可用区标识，例如：“cn-north-1a”。具体请参见地区和终端节点可用分区的“可用分区名称”列的值。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
+        可用区标识，例如：“cn-north-1a”，大小写不敏感。具体请参见地区和终端节点可用分区的“可用分区名称”列的值。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
         :param available_zone: The available_zone of this PeriodProductInfo.
         :type available_zone: str

@@ -18,51 +18,47 @@ class ListSubjectLevelsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'levels': 'list[CatalogLevelVO]'
+        'data': 'ListSubjectLevelsResultData'
     }
 
     attribute_map = {
-        'levels': 'levels'
+        'data': 'data'
     }
 
-    def __init__(self, levels=None):
+    def __init__(self, data=None):
         """ListSubjectLevelsResponse
 
         The model defined in huaweicloud sdk
 
-        :param levels: 主题层级信息。
-        :type levels: list[:class:`huaweicloudsdkdataartsstudio.v1.CatalogLevelVO`]
+        :param data: 
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.ListSubjectLevelsResultData`
         """
         
         super(ListSubjectLevelsResponse, self).__init__()
 
-        self._levels = None
+        self._data = None
         self.discriminator = None
 
-        if levels is not None:
-            self.levels = levels
+        if data is not None:
+            self.data = data
 
     @property
-    def levels(self):
-        """Gets the levels of this ListSubjectLevelsResponse.
+    def data(self):
+        """Gets the data of this ListSubjectLevelsResponse.
 
-        主题层级信息。
-
-        :return: The levels of this ListSubjectLevelsResponse.
-        :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.CatalogLevelVO`]
+        :return: The data of this ListSubjectLevelsResponse.
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListSubjectLevelsResultData`
         """
-        return self._levels
+        return self._data
 
-    @levels.setter
-    def levels(self, levels):
-        """Sets the levels of this ListSubjectLevelsResponse.
+    @data.setter
+    def data(self, data):
+        """Sets the data of this ListSubjectLevelsResponse.
 
-        主题层级信息。
-
-        :param levels: The levels of this ListSubjectLevelsResponse.
-        :type levels: list[:class:`huaweicloudsdkdataartsstudio.v1.CatalogLevelVO`]
+        :param data: The data of this ListSubjectLevelsResponse.
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.ListSubjectLevelsResultData`
         """
-        self._levels = levels
+        self._data = data
 
     def to_dict(self):
         """Returns the model properties as a dict"""

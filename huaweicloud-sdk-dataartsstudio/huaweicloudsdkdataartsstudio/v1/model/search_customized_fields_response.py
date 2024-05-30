@@ -18,7 +18,7 @@ class SearchCustomizedFieldsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'object'
+        'data': 'SearchCustomizedFieldsResultData'
     }
 
     attribute_map = {
@@ -30,8 +30,8 @@ class SearchCustomizedFieldsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: 返回的数据信息。
-        :type data: object
+        :param data: 
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.SearchCustomizedFieldsResultData`
         """
         
         super(SearchCustomizedFieldsResponse, self).__init__()
@@ -46,10 +46,8 @@ class SearchCustomizedFieldsResponse(SdkResponse):
     def data(self):
         """Gets the data of this SearchCustomizedFieldsResponse.
 
-        返回的数据信息。
-
         :return: The data of this SearchCustomizedFieldsResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SearchCustomizedFieldsResultData`
         """
         return self._data
 
@@ -57,10 +55,8 @@ class SearchCustomizedFieldsResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this SearchCustomizedFieldsResponse.
 
-        返回的数据信息。
-
         :param data: The data of this SearchCustomizedFieldsResponse.
-        :type data: object
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.SearchCustomizedFieldsResultData`
         """
         self._data = data
 

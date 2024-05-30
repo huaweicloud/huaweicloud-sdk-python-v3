@@ -41,11 +41,11 @@ class SearchCustomizedFieldsRequest:
         :type workspace: str
         :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
         :type x_project_id: str
-        :param limit: 查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+        :param limit: 每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
         :type limit: int
         :param offset: 查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
         :type offset: int
-        :param type: 自定义项类型。TABLE(表自定义项)、ATTRIBUTE(属性自定义项)、SUBJECT(主题自定义项)、METRIC(业务指标自定义项)。
+        :param type: 自定义项类型。 枚举值：   - TABLE: 表自定义项   - ATTRIBUTE: 属性自定义项   - SUBJECT: 主题自定义项   - METRIC: 业务指标自定义项 
         :type type: str
         """
         
@@ -115,7 +115,7 @@ class SearchCustomizedFieldsRequest:
     def limit(self):
         """Gets the limit of this SearchCustomizedFieldsRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+        每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :return: The limit of this SearchCustomizedFieldsRequest.
         :rtype: int
@@ -126,7 +126,7 @@ class SearchCustomizedFieldsRequest:
     def limit(self, limit):
         """Sets the limit of this SearchCustomizedFieldsRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+        每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :param limit: The limit of this SearchCustomizedFieldsRequest.
         :type limit: int
@@ -159,7 +159,7 @@ class SearchCustomizedFieldsRequest:
     def type(self):
         """Gets the type of this SearchCustomizedFieldsRequest.
 
-        自定义项类型。TABLE(表自定义项)、ATTRIBUTE(属性自定义项)、SUBJECT(主题自定义项)、METRIC(业务指标自定义项)。
+        自定义项类型。 枚举值：   - TABLE: 表自定义项   - ATTRIBUTE: 属性自定义项   - SUBJECT: 主题自定义项   - METRIC: 业务指标自定义项 
 
         :return: The type of this SearchCustomizedFieldsRequest.
         :rtype: str
@@ -170,7 +170,7 @@ class SearchCustomizedFieldsRequest:
     def type(self, type):
         """Sets the type of this SearchCustomizedFieldsRequest.
 
-        自定义项类型。TABLE(表自定义项)、ATTRIBUTE(属性自定义项)、SUBJECT(主题自定义项)、METRIC(业务指标自定义项)。
+        自定义项类型。 枚举值：   - TABLE: 表自定义项   - ATTRIBUTE: 属性自定义项   - SUBJECT: 主题自定义项   - METRIC: 业务指标自定义项 
 
         :param type: The type of this SearchCustomizedFieldsRequest.
         :type type: str

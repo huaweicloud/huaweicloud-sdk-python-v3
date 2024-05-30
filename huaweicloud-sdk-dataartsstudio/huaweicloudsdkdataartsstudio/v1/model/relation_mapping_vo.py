@@ -17,10 +17,10 @@ class RelationMappingVO:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'int',
-        'relation_id': 'int',
-        'source_field_id': 'int',
-        'target_field_id': 'int',
+        'id': 'str',
+        'relation_id': 'str',
+        'source_field_id': 'str',
+        'target_field_id': 'str',
         'source_field_name': 'str',
         'target_field_name': 'str',
         'create_by': 'str',
@@ -47,14 +47,14 @@ class RelationMappingVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码。
-        :type id: int
-        :param relation_id: 关系ID。
-        :type relation_id: int
-        :param source_field_id: 源字段ID。
-        :type source_field_id: int
-        :param target_field_id: 目标字段ID。
-        :type target_field_id: int
+        :param id: 编码，填写String类型替代Long类型。
+        :type id: str
+        :param relation_id: 关系ID，填写String类型替代Long类型。
+        :type relation_id: str
+        :param source_field_id: 源字段ID，填写String类型替代Long类型。
+        :type source_field_id: str
+        :param target_field_id: 目标字段ID，填写String类型替代Long类型。
+        :type target_field_id: str
         :param source_field_name: 源表名称。
         :type source_field_name: str
         :param target_field_name: 目的表名称。
@@ -63,9 +63,9 @@ class RelationMappingVO:
         :type create_by: str
         :param update_by: 更新人。
         :type update_by: str
-        :param create_time: 创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        :param create_time: 创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
-        :param update_time: 更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        :param update_time: 更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type update_time: datetime
         """
         
@@ -108,10 +108,10 @@ class RelationMappingVO:
     def id(self):
         """Gets the id of this RelationMappingVO.
 
-        编码。
+        编码，填写String类型替代Long类型。
 
         :return: The id of this RelationMappingVO.
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -119,10 +119,10 @@ class RelationMappingVO:
     def id(self, id):
         """Sets the id of this RelationMappingVO.
 
-        编码。
+        编码，填写String类型替代Long类型。
 
         :param id: The id of this RelationMappingVO.
-        :type id: int
+        :type id: str
         """
         self._id = id
 
@@ -130,10 +130,10 @@ class RelationMappingVO:
     def relation_id(self):
         """Gets the relation_id of this RelationMappingVO.
 
-        关系ID。
+        关系ID，填写String类型替代Long类型。
 
         :return: The relation_id of this RelationMappingVO.
-        :rtype: int
+        :rtype: str
         """
         return self._relation_id
 
@@ -141,10 +141,10 @@ class RelationMappingVO:
     def relation_id(self, relation_id):
         """Sets the relation_id of this RelationMappingVO.
 
-        关系ID。
+        关系ID，填写String类型替代Long类型。
 
         :param relation_id: The relation_id of this RelationMappingVO.
-        :type relation_id: int
+        :type relation_id: str
         """
         self._relation_id = relation_id
 
@@ -152,10 +152,10 @@ class RelationMappingVO:
     def source_field_id(self):
         """Gets the source_field_id of this RelationMappingVO.
 
-        源字段ID。
+        源字段ID，填写String类型替代Long类型。
 
         :return: The source_field_id of this RelationMappingVO.
-        :rtype: int
+        :rtype: str
         """
         return self._source_field_id
 
@@ -163,10 +163,10 @@ class RelationMappingVO:
     def source_field_id(self, source_field_id):
         """Sets the source_field_id of this RelationMappingVO.
 
-        源字段ID。
+        源字段ID，填写String类型替代Long类型。
 
         :param source_field_id: The source_field_id of this RelationMappingVO.
-        :type source_field_id: int
+        :type source_field_id: str
         """
         self._source_field_id = source_field_id
 
@@ -174,10 +174,10 @@ class RelationMappingVO:
     def target_field_id(self):
         """Gets the target_field_id of this RelationMappingVO.
 
-        目标字段ID。
+        目标字段ID，填写String类型替代Long类型。
 
         :return: The target_field_id of this RelationMappingVO.
-        :rtype: int
+        :rtype: str
         """
         return self._target_field_id
 
@@ -185,10 +185,10 @@ class RelationMappingVO:
     def target_field_id(self, target_field_id):
         """Sets the target_field_id of this RelationMappingVO.
 
-        目标字段ID。
+        目标字段ID，填写String类型替代Long类型。
 
         :param target_field_id: The target_field_id of this RelationMappingVO.
-        :type target_field_id: int
+        :type target_field_id: str
         """
         self._target_field_id = target_field_id
 
@@ -284,7 +284,7 @@ class RelationMappingVO:
     def create_time(self):
         """Gets the create_time of this RelationMappingVO.
 
-        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The create_time of this RelationMappingVO.
         :rtype: datetime
@@ -295,7 +295,7 @@ class RelationMappingVO:
     def create_time(self, create_time):
         """Sets the create_time of this RelationMappingVO.
 
-        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param create_time: The create_time of this RelationMappingVO.
         :type create_time: datetime
@@ -306,7 +306,7 @@ class RelationMappingVO:
     def update_time(self):
         """Gets the update_time of this RelationMappingVO.
 
-        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The update_time of this RelationMappingVO.
         :rtype: datetime
@@ -317,7 +317,7 @@ class RelationMappingVO:
     def update_time(self, update_time):
         """Sets the update_time of this RelationMappingVO.
 
-        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param update_time: The update_time of this RelationMappingVO.
         :type update_time: datetime

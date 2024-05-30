@@ -123,7 +123,7 @@ class NvlCostAnalysedBillDetail:
         :type shared_month: str
         :param bill_cycle: 账期。 格式：YYYY-MM。按照东八区时间截取。
         :type bill_cycle: str
-        :param bill_type: 账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更
+        :param bill_type: 账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更23：消费-节省计划抵扣24：退款-包年/包月转按需
         :type bill_type: int
         :param customer_id: 消费的客户账号ID。 如果是普通客户或者企业子查询消费记录，只能查询到自身的消费记录，则这个地方显示的是自身的客户ID。如果是企业主查询消费记录，可以查询到自身以及企业子的消费记录，这个地方是消费的实际客户ID，如果是企业主自身消费，为企业主ID，如果这条消费记录是某个企业子客户的消费，这个地方的ID是企业子账号ID。
         :type customer_id: str
@@ -155,7 +155,7 @@ class NvlCostAnalysedBillDetail:
         :type enterprise_project_id: str
         :param enterprise_project_name: 企业项目的名称。
         :type enterprise_project_name: str
-        :param charging_mode: 计费模式。 1：包年/包月3：按需10：预留实例
+        :param charging_mode: 计费模式。 1：包年/包月3：按需10：预留实例11：节省计划
         :type charging_mode: int
         :param order_id: 订单ID。  说明： 包年/包月资源的使用记录才有该字段，按需资源则为空。
         :type order_id: str
@@ -195,17 +195,17 @@ class NvlCostAnalysedBillDetail:
         :type amortized_stored_value_card_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param amortized_bonus_amount: 月度成本分摊时，当月已分摊金额中包含的奖励金分摊金额（用于现网未清干净的奖励金）。
         :type amortized_bonus_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
-        :param sub_service_type_code: 该字段为预留字段
+        :param sub_service_type_code: 整机的子云服务的自身的云服务类型编码。
         :type sub_service_type_code: str
-        :param sub_service_type_name: 该字段为预留字段
+        :param sub_service_type_name: 整机的子云服务的自身的云服务类型名称。
         :type sub_service_type_name: str
-        :param sub_resource_type_code: 该字段为预留字段
+        :param sub_resource_type_code: 整机的子云服务的自身的资源类型编码。
         :type sub_resource_type_code: str
-        :param sub_resource_type_name: 该字段为预留字段。
+        :param sub_resource_type_name: 整机的子云服务的自身的资源类型名称。
         :type sub_resource_type_name: str
-        :param sub_resource_id: 该字段为预留字段。
+        :param sub_resource_id: 整机的子云服务的自身的资源ID，资源标识。（如果为预留实例，则为预留实例标识）
         :type sub_resource_id: str
-        :param sub_resource_name: 该字段为预留字段。
+        :param sub_resource_name: 整机的子云服务的自身的资源名称，资源标识。（如果为预留实例，则为预留实例标识）
         :type sub_resource_name: str
         :param effective_tag_pairs: 成本标签。
         :type effective_tag_pairs: list[:class:`huaweicloudsdkbss.v2.TagPair`]
@@ -404,7 +404,7 @@ class NvlCostAnalysedBillDetail:
     def bill_type(self):
         """Gets the bill_type of this NvlCostAnalysedBillDetail.
 
-        账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更
+        账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更23：消费-节省计划抵扣24：退款-包年/包月转按需
 
         :return: The bill_type of this NvlCostAnalysedBillDetail.
         :rtype: int
@@ -415,7 +415,7 @@ class NvlCostAnalysedBillDetail:
     def bill_type(self, bill_type):
         """Sets the bill_type of this NvlCostAnalysedBillDetail.
 
-        账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更
+        账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更23：消费-节省计划抵扣24：退款-包年/包月转按需
 
         :param bill_type: The bill_type of this NvlCostAnalysedBillDetail.
         :type bill_type: int
@@ -756,7 +756,7 @@ class NvlCostAnalysedBillDetail:
     def charging_mode(self):
         """Gets the charging_mode of this NvlCostAnalysedBillDetail.
 
-        计费模式。 1：包年/包月3：按需10：预留实例
+        计费模式。 1：包年/包月3：按需10：预留实例11：节省计划
 
         :return: The charging_mode of this NvlCostAnalysedBillDetail.
         :rtype: int
@@ -767,7 +767,7 @@ class NvlCostAnalysedBillDetail:
     def charging_mode(self, charging_mode):
         """Sets the charging_mode of this NvlCostAnalysedBillDetail.
 
-        计费模式。 1：包年/包月3：按需10：预留实例
+        计费模式。 1：包年/包月3：按需10：预留实例11：节省计划
 
         :param charging_mode: The charging_mode of this NvlCostAnalysedBillDetail.
         :type charging_mode: int
@@ -1196,7 +1196,7 @@ class NvlCostAnalysedBillDetail:
     def sub_service_type_code(self):
         """Gets the sub_service_type_code of this NvlCostAnalysedBillDetail.
 
-        该字段为预留字段
+        整机的子云服务的自身的云服务类型编码。
 
         :return: The sub_service_type_code of this NvlCostAnalysedBillDetail.
         :rtype: str
@@ -1207,7 +1207,7 @@ class NvlCostAnalysedBillDetail:
     def sub_service_type_code(self, sub_service_type_code):
         """Sets the sub_service_type_code of this NvlCostAnalysedBillDetail.
 
-        该字段为预留字段
+        整机的子云服务的自身的云服务类型编码。
 
         :param sub_service_type_code: The sub_service_type_code of this NvlCostAnalysedBillDetail.
         :type sub_service_type_code: str
@@ -1218,7 +1218,7 @@ class NvlCostAnalysedBillDetail:
     def sub_service_type_name(self):
         """Gets the sub_service_type_name of this NvlCostAnalysedBillDetail.
 
-        该字段为预留字段
+        整机的子云服务的自身的云服务类型名称。
 
         :return: The sub_service_type_name of this NvlCostAnalysedBillDetail.
         :rtype: str
@@ -1229,7 +1229,7 @@ class NvlCostAnalysedBillDetail:
     def sub_service_type_name(self, sub_service_type_name):
         """Sets the sub_service_type_name of this NvlCostAnalysedBillDetail.
 
-        该字段为预留字段
+        整机的子云服务的自身的云服务类型名称。
 
         :param sub_service_type_name: The sub_service_type_name of this NvlCostAnalysedBillDetail.
         :type sub_service_type_name: str
@@ -1240,7 +1240,7 @@ class NvlCostAnalysedBillDetail:
     def sub_resource_type_code(self):
         """Gets the sub_resource_type_code of this NvlCostAnalysedBillDetail.
 
-        该字段为预留字段
+        整机的子云服务的自身的资源类型编码。
 
         :return: The sub_resource_type_code of this NvlCostAnalysedBillDetail.
         :rtype: str
@@ -1251,7 +1251,7 @@ class NvlCostAnalysedBillDetail:
     def sub_resource_type_code(self, sub_resource_type_code):
         """Sets the sub_resource_type_code of this NvlCostAnalysedBillDetail.
 
-        该字段为预留字段
+        整机的子云服务的自身的资源类型编码。
 
         :param sub_resource_type_code: The sub_resource_type_code of this NvlCostAnalysedBillDetail.
         :type sub_resource_type_code: str
@@ -1262,7 +1262,7 @@ class NvlCostAnalysedBillDetail:
     def sub_resource_type_name(self):
         """Gets the sub_resource_type_name of this NvlCostAnalysedBillDetail.
 
-        该字段为预留字段。
+        整机的子云服务的自身的资源类型名称。
 
         :return: The sub_resource_type_name of this NvlCostAnalysedBillDetail.
         :rtype: str
@@ -1273,7 +1273,7 @@ class NvlCostAnalysedBillDetail:
     def sub_resource_type_name(self, sub_resource_type_name):
         """Sets the sub_resource_type_name of this NvlCostAnalysedBillDetail.
 
-        该字段为预留字段。
+        整机的子云服务的自身的资源类型名称。
 
         :param sub_resource_type_name: The sub_resource_type_name of this NvlCostAnalysedBillDetail.
         :type sub_resource_type_name: str
@@ -1284,7 +1284,7 @@ class NvlCostAnalysedBillDetail:
     def sub_resource_id(self):
         """Gets the sub_resource_id of this NvlCostAnalysedBillDetail.
 
-        该字段为预留字段。
+        整机的子云服务的自身的资源ID，资源标识。（如果为预留实例，则为预留实例标识）
 
         :return: The sub_resource_id of this NvlCostAnalysedBillDetail.
         :rtype: str
@@ -1295,7 +1295,7 @@ class NvlCostAnalysedBillDetail:
     def sub_resource_id(self, sub_resource_id):
         """Sets the sub_resource_id of this NvlCostAnalysedBillDetail.
 
-        该字段为预留字段。
+        整机的子云服务的自身的资源ID，资源标识。（如果为预留实例，则为预留实例标识）
 
         :param sub_resource_id: The sub_resource_id of this NvlCostAnalysedBillDetail.
         :type sub_resource_id: str
@@ -1306,7 +1306,7 @@ class NvlCostAnalysedBillDetail:
     def sub_resource_name(self):
         """Gets the sub_resource_name of this NvlCostAnalysedBillDetail.
 
-        该字段为预留字段。
+        整机的子云服务的自身的资源名称，资源标识。（如果为预留实例，则为预留实例标识）
 
         :return: The sub_resource_name of this NvlCostAnalysedBillDetail.
         :rtype: str
@@ -1317,7 +1317,7 @@ class NvlCostAnalysedBillDetail:
     def sub_resource_name(self, sub_resource_name):
         """Sets the sub_resource_name of this NvlCostAnalysedBillDetail.
 
-        该字段为预留字段。
+        整机的子云服务的自身的资源名称，资源标识。（如果为预留实例，则为预留实例标识）
 
         :param sub_resource_name: The sub_resource_name of this NvlCostAnalysedBillDetail.
         :type sub_resource_name: str

@@ -18,7 +18,7 @@ class CountAllModelsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'object'
+        'data': 'CountAllModelsResultData'
     }
 
     attribute_map = {
@@ -30,8 +30,8 @@ class CountAllModelsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: 返回的数据信息。
-        :type data: object
+        :param data: 
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.CountAllModelsResultData`
         """
         
         super(CountAllModelsResponse, self).__init__()
@@ -46,10 +46,8 @@ class CountAllModelsResponse(SdkResponse):
     def data(self):
         """Gets the data of this CountAllModelsResponse.
 
-        返回的数据信息。
-
         :return: The data of this CountAllModelsResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CountAllModelsResultData`
         """
         return self._data
 
@@ -57,10 +55,8 @@ class CountAllModelsResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this CountAllModelsResponse.
 
-        返回的数据信息。
-
         :param data: The data of this CountAllModelsResponse.
-        :type data: object
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.CountAllModelsResultData`
         """
         self._data = data
 

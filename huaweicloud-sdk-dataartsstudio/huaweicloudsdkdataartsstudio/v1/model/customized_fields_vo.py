@@ -17,7 +17,7 @@ class CustomizedFieldsVO:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'int',
+        'id': 'str',
         'name_ch': 'str',
         'name_en': 'str',
         'not_null': 'bool',
@@ -51,29 +51,29 @@ class CustomizedFieldsVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码。
-        :type id: int
-        :param name_ch: 中文名称。
+        :param id: 编码，填写String类型替代Long类型。
+        :type id: str
+        :param name_ch: 自定义项中文名称。
         :type name_ch: str
-        :param name_en: 英文名称。
+        :param name_en: 自定义项英文名称。
         :type name_en: str
         :param not_null: 是否必填。
         :type not_null: bool
-        :param optional_values: 可选值。分号分隔。
+        :param optional_values: 可选值。当可选值有多个时，用分号分隔。
         :type optional_values: str
-        :param type: 自定义项类型。TABLE(表自定义项)、ATTRIBUTE(属性自定义项)、SUBJECT(主题自定义项)、METRIC(业务指标自定义项)。
+        :param type: 自定义项类型。 枚举值：   - TABLE: 表自定义项   - ATTRIBUTE: 属性自定义项   - SUBJECT: 主题自定义项   - METRIC: 业务指标自定义项 
         :type type: str
-        :param ordinal: 顺序。
+        :param ordinal: 系统排序字段，新建、修改时不需要填写。
         :type ordinal: int
-        :param description: 描述。
+        :param description: 自定义项描述。
         :type description: str
-        :param create_by: 创建人。
+        :param create_by: 创建人，只读。
         :type create_by: str
-        :param update_by: 更新人。
+        :param update_by: 更新人，只读。
         :type update_by: str
-        :param create_time: 创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        :param create_time: 创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
-        :param update_time: 更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        :param update_time: 更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type update_time: datetime
         """
         
@@ -118,10 +118,10 @@ class CustomizedFieldsVO:
     def id(self):
         """Gets the id of this CustomizedFieldsVO.
 
-        编码。
+        编码，填写String类型替代Long类型。
 
         :return: The id of this CustomizedFieldsVO.
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -129,10 +129,10 @@ class CustomizedFieldsVO:
     def id(self, id):
         """Sets the id of this CustomizedFieldsVO.
 
-        编码。
+        编码，填写String类型替代Long类型。
 
         :param id: The id of this CustomizedFieldsVO.
-        :type id: int
+        :type id: str
         """
         self._id = id
 
@@ -140,7 +140,7 @@ class CustomizedFieldsVO:
     def name_ch(self):
         """Gets the name_ch of this CustomizedFieldsVO.
 
-        中文名称。
+        自定义项中文名称。
 
         :return: The name_ch of this CustomizedFieldsVO.
         :rtype: str
@@ -151,7 +151,7 @@ class CustomizedFieldsVO:
     def name_ch(self, name_ch):
         """Sets the name_ch of this CustomizedFieldsVO.
 
-        中文名称。
+        自定义项中文名称。
 
         :param name_ch: The name_ch of this CustomizedFieldsVO.
         :type name_ch: str
@@ -162,7 +162,7 @@ class CustomizedFieldsVO:
     def name_en(self):
         """Gets the name_en of this CustomizedFieldsVO.
 
-        英文名称。
+        自定义项英文名称。
 
         :return: The name_en of this CustomizedFieldsVO.
         :rtype: str
@@ -173,7 +173,7 @@ class CustomizedFieldsVO:
     def name_en(self, name_en):
         """Sets the name_en of this CustomizedFieldsVO.
 
-        英文名称。
+        自定义项英文名称。
 
         :param name_en: The name_en of this CustomizedFieldsVO.
         :type name_en: str
@@ -206,7 +206,7 @@ class CustomizedFieldsVO:
     def optional_values(self):
         """Gets the optional_values of this CustomizedFieldsVO.
 
-        可选值。分号分隔。
+        可选值。当可选值有多个时，用分号分隔。
 
         :return: The optional_values of this CustomizedFieldsVO.
         :rtype: str
@@ -217,7 +217,7 @@ class CustomizedFieldsVO:
     def optional_values(self, optional_values):
         """Sets the optional_values of this CustomizedFieldsVO.
 
-        可选值。分号分隔。
+        可选值。当可选值有多个时，用分号分隔。
 
         :param optional_values: The optional_values of this CustomizedFieldsVO.
         :type optional_values: str
@@ -228,7 +228,7 @@ class CustomizedFieldsVO:
     def type(self):
         """Gets the type of this CustomizedFieldsVO.
 
-        自定义项类型。TABLE(表自定义项)、ATTRIBUTE(属性自定义项)、SUBJECT(主题自定义项)、METRIC(业务指标自定义项)。
+        自定义项类型。 枚举值：   - TABLE: 表自定义项   - ATTRIBUTE: 属性自定义项   - SUBJECT: 主题自定义项   - METRIC: 业务指标自定义项 
 
         :return: The type of this CustomizedFieldsVO.
         :rtype: str
@@ -239,7 +239,7 @@ class CustomizedFieldsVO:
     def type(self, type):
         """Sets the type of this CustomizedFieldsVO.
 
-        自定义项类型。TABLE(表自定义项)、ATTRIBUTE(属性自定义项)、SUBJECT(主题自定义项)、METRIC(业务指标自定义项)。
+        自定义项类型。 枚举值：   - TABLE: 表自定义项   - ATTRIBUTE: 属性自定义项   - SUBJECT: 主题自定义项   - METRIC: 业务指标自定义项 
 
         :param type: The type of this CustomizedFieldsVO.
         :type type: str
@@ -250,7 +250,7 @@ class CustomizedFieldsVO:
     def ordinal(self):
         """Gets the ordinal of this CustomizedFieldsVO.
 
-        顺序。
+        系统排序字段，新建、修改时不需要填写。
 
         :return: The ordinal of this CustomizedFieldsVO.
         :rtype: int
@@ -261,7 +261,7 @@ class CustomizedFieldsVO:
     def ordinal(self, ordinal):
         """Sets the ordinal of this CustomizedFieldsVO.
 
-        顺序。
+        系统排序字段，新建、修改时不需要填写。
 
         :param ordinal: The ordinal of this CustomizedFieldsVO.
         :type ordinal: int
@@ -272,7 +272,7 @@ class CustomizedFieldsVO:
     def description(self):
         """Gets the description of this CustomizedFieldsVO.
 
-        描述。
+        自定义项描述。
 
         :return: The description of this CustomizedFieldsVO.
         :rtype: str
@@ -283,7 +283,7 @@ class CustomizedFieldsVO:
     def description(self, description):
         """Sets the description of this CustomizedFieldsVO.
 
-        描述。
+        自定义项描述。
 
         :param description: The description of this CustomizedFieldsVO.
         :type description: str
@@ -294,7 +294,7 @@ class CustomizedFieldsVO:
     def create_by(self):
         """Gets the create_by of this CustomizedFieldsVO.
 
-        创建人。
+        创建人，只读。
 
         :return: The create_by of this CustomizedFieldsVO.
         :rtype: str
@@ -305,7 +305,7 @@ class CustomizedFieldsVO:
     def create_by(self, create_by):
         """Sets the create_by of this CustomizedFieldsVO.
 
-        创建人。
+        创建人，只读。
 
         :param create_by: The create_by of this CustomizedFieldsVO.
         :type create_by: str
@@ -316,7 +316,7 @@ class CustomizedFieldsVO:
     def update_by(self):
         """Gets the update_by of this CustomizedFieldsVO.
 
-        更新人。
+        更新人，只读。
 
         :return: The update_by of this CustomizedFieldsVO.
         :rtype: str
@@ -327,7 +327,7 @@ class CustomizedFieldsVO:
     def update_by(self, update_by):
         """Sets the update_by of this CustomizedFieldsVO.
 
-        更新人。
+        更新人，只读。
 
         :param update_by: The update_by of this CustomizedFieldsVO.
         :type update_by: str
@@ -338,7 +338,7 @@ class CustomizedFieldsVO:
     def create_time(self):
         """Gets the create_time of this CustomizedFieldsVO.
 
-        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The create_time of this CustomizedFieldsVO.
         :rtype: datetime
@@ -349,7 +349,7 @@ class CustomizedFieldsVO:
     def create_time(self, create_time):
         """Sets the create_time of this CustomizedFieldsVO.
 
-        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param create_time: The create_time of this CustomizedFieldsVO.
         :type create_time: datetime
@@ -360,7 +360,7 @@ class CustomizedFieldsVO:
     def update_time(self):
         """Gets the update_time of this CustomizedFieldsVO.
 
-        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The update_time of this CustomizedFieldsVO.
         :rtype: datetime
@@ -371,7 +371,7 @@ class CustomizedFieldsVO:
     def update_time(self, update_time):
         """Sets the update_time of this CustomizedFieldsVO.
 
-        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param update_time: The update_time of this CustomizedFieldsVO.
         :type update_time: datetime

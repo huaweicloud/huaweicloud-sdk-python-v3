@@ -31,9 +31,9 @@ class IdsParam:
 
         The model defined in huaweicloud sdk
 
-        :param ids: ID列表。
+        :param ids: ID列表，填写String类型替代Long类型。
         :type ids: list[str]
-        :param del_types: 删除物理表。PHYSICAL_TABLE(关系建模)。
+        :param del_types: 删除物理表。 枚举值：   - PHYSICAL_TABLE: 关系建模 
         :type del_types: str
         """
         
@@ -51,7 +51,7 @@ class IdsParam:
     def ids(self):
         """Gets the ids of this IdsParam.
 
-        ID列表。
+        ID列表，填写String类型替代Long类型。
 
         :return: The ids of this IdsParam.
         :rtype: list[str]
@@ -62,7 +62,7 @@ class IdsParam:
     def ids(self, ids):
         """Sets the ids of this IdsParam.
 
-        ID列表。
+        ID列表，填写String类型替代Long类型。
 
         :param ids: The ids of this IdsParam.
         :type ids: list[str]
@@ -73,7 +73,7 @@ class IdsParam:
     def del_types(self):
         """Gets the del_types of this IdsParam.
 
-        删除物理表。PHYSICAL_TABLE(关系建模)。
+        删除物理表。 枚举值：   - PHYSICAL_TABLE: 关系建模 
 
         :return: The del_types of this IdsParam.
         :rtype: str
@@ -84,7 +84,7 @@ class IdsParam:
     def del_types(self, del_types):
         """Sets the del_types of this IdsParam.
 
-        删除物理表。PHYSICAL_TABLE(关系建模)。
+        删除物理表。 枚举值：   - PHYSICAL_TABLE: 关系建模 
 
         :param del_types: The del_types of this IdsParam.
         :type del_types: str

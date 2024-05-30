@@ -57,7 +57,7 @@ class SourcesDomainConfig:
         :type https_port: int
         :param host_name: 回源HOST，默认加速域名。
         :type host_name: str
-        :param obs_bucket_type: OBS桶源站类型： - “private” 私有桶； - “public” 公有桶，默认为公有桶。
+        :param obs_bucket_type: OBS桶类型。   - private: 私有桶（除桶ACL授权外的其他用户无桶的访问权限）。   - public: 公有桶（任何用户都可以对桶内对象进行读操作）。
         :type obs_bucket_type: str
         """
         
@@ -245,7 +245,7 @@ class SourcesDomainConfig:
     def obs_bucket_type(self):
         """Gets the obs_bucket_type of this SourcesDomainConfig.
 
-        OBS桶源站类型： - “private” 私有桶； - “public” 公有桶，默认为公有桶。
+        OBS桶类型。   - private: 私有桶（除桶ACL授权外的其他用户无桶的访问权限）。   - public: 公有桶（任何用户都可以对桶内对象进行读操作）。
 
         :return: The obs_bucket_type of this SourcesDomainConfig.
         :rtype: str
@@ -256,7 +256,7 @@ class SourcesDomainConfig:
     def obs_bucket_type(self, obs_bucket_type):
         """Sets the obs_bucket_type of this SourcesDomainConfig.
 
-        OBS桶源站类型： - “private” 私有桶； - “public” 公有桶，默认为公有桶。
+        OBS桶类型。   - private: 私有桶（除桶ACL授权外的其他用户无桶的访问权限）。   - public: 公有桶（任何用户都可以对桶内对象进行读操作）。
 
         :param obs_bucket_type: The obs_bucket_type of this SourcesDomainConfig.
         :type obs_bucket_type: str

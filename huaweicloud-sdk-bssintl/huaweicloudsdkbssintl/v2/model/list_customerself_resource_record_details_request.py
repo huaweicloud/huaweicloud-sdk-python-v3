@@ -17,29 +17,58 @@ class ListCustomerselfResourceRecordDetailsRequest:
     sensitive_list = []
 
     openapi_types = {
+        'x_language': 'str',
         'body': 'QueryResRecordsDetailReq'
     }
 
     attribute_map = {
+        'x_language': 'X-Language',
         'body': 'body'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, x_language=None, body=None):
         """ListCustomerselfResourceRecordDetailsRequest
 
         The model defined in huaweicloud sdk
 
+        :param x_language: |国际站默认英文，枚举：zh_cn：中文 en_us：英文|
+        :type x_language: str
         :param body: Body of the ListCustomerselfResourceRecordDetailsRequest
         :type body: :class:`huaweicloudsdkbssintl.v2.QueryResRecordsDetailReq`
         """
         
         
 
+        self._x_language = None
         self._body = None
         self.discriminator = None
 
+        if x_language is not None:
+            self.x_language = x_language
         if body is not None:
             self.body = body
+
+    @property
+    def x_language(self):
+        """Gets the x_language of this ListCustomerselfResourceRecordDetailsRequest.
+
+        |国际站默认英文，枚举：zh_cn：中文 en_us：英文|
+
+        :return: The x_language of this ListCustomerselfResourceRecordDetailsRequest.
+        :rtype: str
+        """
+        return self._x_language
+
+    @x_language.setter
+    def x_language(self, x_language):
+        """Sets the x_language of this ListCustomerselfResourceRecordDetailsRequest.
+
+        |国际站默认英文，枚举：zh_cn：中文 en_us：英文|
+
+        :param x_language: The x_language of this ListCustomerselfResourceRecordDetailsRequest.
+        :type x_language: str
+        """
+        self._x_language = x_language
 
     @property
     def body(self):

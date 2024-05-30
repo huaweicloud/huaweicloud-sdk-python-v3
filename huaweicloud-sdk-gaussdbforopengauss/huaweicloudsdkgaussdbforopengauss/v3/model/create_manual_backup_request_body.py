@@ -35,7 +35,7 @@ class CreateManualBackupRequestBody:
 
         :param instance_id: 实例ID。
         :type instance_id: str
-        :param name: 备份名称，4~64个字符，必须以英文字母开头，区分大小写，可以包含英文字母、数字、中划线或者下划线，不能包含其他特殊字符。
+        :param name: 备份名称，不可重复，4~64个字符，必须以英文字母开头，区分大小写，可以包含英文字母、数字、中划线或者下划线，不能包含其他特殊字符。
         :type name: str
         :param description: 备份描述，不能包含&gt;!&lt;\&quot;&amp;&#39;&#x3D;特殊字符，不大于256个字符。
         :type description: str
@@ -79,7 +79,7 @@ class CreateManualBackupRequestBody:
     def name(self):
         """Gets the name of this CreateManualBackupRequestBody.
 
-        备份名称，4~64个字符，必须以英文字母开头，区分大小写，可以包含英文字母、数字、中划线或者下划线，不能包含其他特殊字符。
+        备份名称，不可重复，4~64个字符，必须以英文字母开头，区分大小写，可以包含英文字母、数字、中划线或者下划线，不能包含其他特殊字符。
 
         :return: The name of this CreateManualBackupRequestBody.
         :rtype: str
@@ -90,7 +90,7 @@ class CreateManualBackupRequestBody:
     def name(self, name):
         """Sets the name of this CreateManualBackupRequestBody.
 
-        备份名称，4~64个字符，必须以英文字母开头，区分大小写，可以包含英文字母、数字、中划线或者下划线，不能包含其他特殊字符。
+        备份名称，不可重复，4~64个字符，必须以英文字母开头，区分大小写，可以包含英文字母、数字、中划线或者下划线，不能包含其他特殊字符。
 
         :param name: The name of this CreateManualBackupRequestBody.
         :type name: str

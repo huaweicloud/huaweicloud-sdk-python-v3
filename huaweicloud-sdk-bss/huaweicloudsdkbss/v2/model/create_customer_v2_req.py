@@ -47,25 +47,25 @@ class CreateCustomerV2Req:
 
         The model defined in huaweicloud sdk
 
-        :param domain_name: 客户的华为云账号名。 如果为空，随机生成。 不能以“op_”或“shadow_”开头且不能全为数字。 校验长度（5到32位）和规则^\\(\\[a-zA-Z_-\\]\\(\\[a-zA-Z0-9_-\\]\\)\\*\\)$。
+        :param domain_name: 客户的华为云账号名。 如果为空，随机生成。 不能以“op_”或“shadow_”开头且不能全为数字。 校验长度（5到32位）和规则^([a-zA-Z_-]([a-zA-Z0-9_-])*)$。 此参数不携带或携带值为空串或携带值为null时，随机生成。
         :type domain_name: str
-        :param mobile_phone: 手机号。 目前系统只支持中国的手机号。 示例：13XXXXXXXXX
+        :param mobile_phone: 手机号。 目前系统只支持中国的手机号。 示例：13XXXXXXXXX 此参数不携带或携带值为null时，不被赋值；携带值为空串时，赋值为空串。
         :type mobile_phone: str
-        :param verification_code: 验证码。 请调用“发送验证码”接口获取。 如果手机号不存在，则不需要输入验证码。
+        :param verification_code: 验证码。 请调用“发送验证码”接口获取。 如果手机号不存在，则不需要输入验证码。 此参数不携带或携带值为null时，不做处理；不支持携带值为空串。
         :type verification_code: str
         :param xaccount_id: 伙伴销售平台的用户唯一标识，该标识的具体值由伙伴分配。
         :type xaccount_id: str
         :param xaccount_type: 华为分给合作伙伴的平台标识。 该标识的具体值由华为分配。获取方法请参见如何获取xaccountType的取值。
         :type xaccount_type: str
-        :param password: 密码规则如下： 至少包含以下四种字符中的两种： 大写字母、小写字母、数字、特殊字符；不能和账号名或倒序的账号名相同；不能包含手机号。 如果为空，用户没有密码，则不能直接在华为云登录，只能通过伙伴系统SSO方式跳转到华为云。
+        :param password: 密码规则如下： 至少包含以下四种字符中的两种： 大写字母、小写字母、数字、特殊字符；不能和账号名或倒序的账号名相同；不能包含手机号。 如果为空，用户没有密码，则不能直接在华为云登录，只能通过伙伴系统SSO方式跳转到华为云。 此参数不携带或携带值为null时，密码随机生成；不支持携带值为空串。
         :type password: str
-        :param is_close_market_ms: 是否关闭营销消息的发送： true：关闭false：不关闭（默认）
+        :param is_close_market_ms: 是否关闭营销消息的发送。 true：关闭false：不关闭（默认） 此参数不携带或携带值为空串或携带值为null时，赋值为false。
         :type is_close_market_ms: str
         :param cooperation_type: 合作类型。 1：顾问销售。 不传递或传递非1的值，默认会创建成代售模式的客户。
         :type cooperation_type: str
         :param indirect_partner_id: 云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。 如果需要创建云经销商的子客户，必须携带该字段。除此之外，此参数不做处理。
         :type indirect_partner_id: str
-        :param include_association_result: 是否返回子客户的关联结果。 true：返回子客户和伙伴的关联结果false：不返回子客户和伙伴的关联结果 默认值为false。
+        :param include_association_result: 是否返回子客户的关联结果。 true：返回子客户和伙伴的关联结果false：不返回子客户和伙伴的关联结果 默认值为false。 此参数不携带或携带值为空串或携带值为null时，赋值为false。
         :type include_association_result: bool
         """
         
@@ -106,7 +106,7 @@ class CreateCustomerV2Req:
     def domain_name(self):
         """Gets the domain_name of this CreateCustomerV2Req.
 
-        客户的华为云账号名。 如果为空，随机生成。 不能以“op_”或“shadow_”开头且不能全为数字。 校验长度（5到32位）和规则^\\(\\[a-zA-Z_-\\]\\(\\[a-zA-Z0-9_-\\]\\)\\*\\)$。
+        客户的华为云账号名。 如果为空，随机生成。 不能以“op_”或“shadow_”开头且不能全为数字。 校验长度（5到32位）和规则^([a-zA-Z_-]([a-zA-Z0-9_-])*)$。 此参数不携带或携带值为空串或携带值为null时，随机生成。
 
         :return: The domain_name of this CreateCustomerV2Req.
         :rtype: str
@@ -117,7 +117,7 @@ class CreateCustomerV2Req:
     def domain_name(self, domain_name):
         """Sets the domain_name of this CreateCustomerV2Req.
 
-        客户的华为云账号名。 如果为空，随机生成。 不能以“op_”或“shadow_”开头且不能全为数字。 校验长度（5到32位）和规则^\\(\\[a-zA-Z_-\\]\\(\\[a-zA-Z0-9_-\\]\\)\\*\\)$。
+        客户的华为云账号名。 如果为空，随机生成。 不能以“op_”或“shadow_”开头且不能全为数字。 校验长度（5到32位）和规则^([a-zA-Z_-]([a-zA-Z0-9_-])*)$。 此参数不携带或携带值为空串或携带值为null时，随机生成。
 
         :param domain_name: The domain_name of this CreateCustomerV2Req.
         :type domain_name: str
@@ -128,7 +128,7 @@ class CreateCustomerV2Req:
     def mobile_phone(self):
         """Gets the mobile_phone of this CreateCustomerV2Req.
 
-        手机号。 目前系统只支持中国的手机号。 示例：13XXXXXXXXX
+        手机号。 目前系统只支持中国的手机号。 示例：13XXXXXXXXX 此参数不携带或携带值为null时，不被赋值；携带值为空串时，赋值为空串。
 
         :return: The mobile_phone of this CreateCustomerV2Req.
         :rtype: str
@@ -139,7 +139,7 @@ class CreateCustomerV2Req:
     def mobile_phone(self, mobile_phone):
         """Sets the mobile_phone of this CreateCustomerV2Req.
 
-        手机号。 目前系统只支持中国的手机号。 示例：13XXXXXXXXX
+        手机号。 目前系统只支持中国的手机号。 示例：13XXXXXXXXX 此参数不携带或携带值为null时，不被赋值；携带值为空串时，赋值为空串。
 
         :param mobile_phone: The mobile_phone of this CreateCustomerV2Req.
         :type mobile_phone: str
@@ -150,7 +150,7 @@ class CreateCustomerV2Req:
     def verification_code(self):
         """Gets the verification_code of this CreateCustomerV2Req.
 
-        验证码。 请调用“发送验证码”接口获取。 如果手机号不存在，则不需要输入验证码。
+        验证码。 请调用“发送验证码”接口获取。 如果手机号不存在，则不需要输入验证码。 此参数不携带或携带值为null时，不做处理；不支持携带值为空串。
 
         :return: The verification_code of this CreateCustomerV2Req.
         :rtype: str
@@ -161,7 +161,7 @@ class CreateCustomerV2Req:
     def verification_code(self, verification_code):
         """Sets the verification_code of this CreateCustomerV2Req.
 
-        验证码。 请调用“发送验证码”接口获取。 如果手机号不存在，则不需要输入验证码。
+        验证码。 请调用“发送验证码”接口获取。 如果手机号不存在，则不需要输入验证码。 此参数不携带或携带值为null时，不做处理；不支持携带值为空串。
 
         :param verification_code: The verification_code of this CreateCustomerV2Req.
         :type verification_code: str
@@ -216,7 +216,7 @@ class CreateCustomerV2Req:
     def password(self):
         """Gets the password of this CreateCustomerV2Req.
 
-        密码规则如下： 至少包含以下四种字符中的两种： 大写字母、小写字母、数字、特殊字符；不能和账号名或倒序的账号名相同；不能包含手机号。 如果为空，用户没有密码，则不能直接在华为云登录，只能通过伙伴系统SSO方式跳转到华为云。
+        密码规则如下： 至少包含以下四种字符中的两种： 大写字母、小写字母、数字、特殊字符；不能和账号名或倒序的账号名相同；不能包含手机号。 如果为空，用户没有密码，则不能直接在华为云登录，只能通过伙伴系统SSO方式跳转到华为云。 此参数不携带或携带值为null时，密码随机生成；不支持携带值为空串。
 
         :return: The password of this CreateCustomerV2Req.
         :rtype: str
@@ -227,7 +227,7 @@ class CreateCustomerV2Req:
     def password(self, password):
         """Sets the password of this CreateCustomerV2Req.
 
-        密码规则如下： 至少包含以下四种字符中的两种： 大写字母、小写字母、数字、特殊字符；不能和账号名或倒序的账号名相同；不能包含手机号。 如果为空，用户没有密码，则不能直接在华为云登录，只能通过伙伴系统SSO方式跳转到华为云。
+        密码规则如下： 至少包含以下四种字符中的两种： 大写字母、小写字母、数字、特殊字符；不能和账号名或倒序的账号名相同；不能包含手机号。 如果为空，用户没有密码，则不能直接在华为云登录，只能通过伙伴系统SSO方式跳转到华为云。 此参数不携带或携带值为null时，密码随机生成；不支持携带值为空串。
 
         :param password: The password of this CreateCustomerV2Req.
         :type password: str
@@ -238,7 +238,7 @@ class CreateCustomerV2Req:
     def is_close_market_ms(self):
         """Gets the is_close_market_ms of this CreateCustomerV2Req.
 
-        是否关闭营销消息的发送： true：关闭false：不关闭（默认）
+        是否关闭营销消息的发送。 true：关闭false：不关闭（默认） 此参数不携带或携带值为空串或携带值为null时，赋值为false。
 
         :return: The is_close_market_ms of this CreateCustomerV2Req.
         :rtype: str
@@ -249,7 +249,7 @@ class CreateCustomerV2Req:
     def is_close_market_ms(self, is_close_market_ms):
         """Sets the is_close_market_ms of this CreateCustomerV2Req.
 
-        是否关闭营销消息的发送： true：关闭false：不关闭（默认）
+        是否关闭营销消息的发送。 true：关闭false：不关闭（默认） 此参数不携带或携带值为空串或携带值为null时，赋值为false。
 
         :param is_close_market_ms: The is_close_market_ms of this CreateCustomerV2Req.
         :type is_close_market_ms: str
@@ -304,7 +304,7 @@ class CreateCustomerV2Req:
     def include_association_result(self):
         """Gets the include_association_result of this CreateCustomerV2Req.
 
-        是否返回子客户的关联结果。 true：返回子客户和伙伴的关联结果false：不返回子客户和伙伴的关联结果 默认值为false。
+        是否返回子客户的关联结果。 true：返回子客户和伙伴的关联结果false：不返回子客户和伙伴的关联结果 默认值为false。 此参数不携带或携带值为空串或携带值为null时，赋值为false。
 
         :return: The include_association_result of this CreateCustomerV2Req.
         :rtype: bool
@@ -315,7 +315,7 @@ class CreateCustomerV2Req:
     def include_association_result(self, include_association_result):
         """Sets the include_association_result of this CreateCustomerV2Req.
 
-        是否返回子客户的关联结果。 true：返回子客户和伙伴的关联结果false：不返回子客户和伙伴的关联结果 默认值为false。
+        是否返回子客户的关联结果。 true：返回子客户和伙伴的关联结果false：不返回子客户和伙伴的关联结果 默认值为false。 此参数不携带或携带值为空串或携带值为null时，赋值为false。
 
         :param include_association_result: The include_association_result of this CreateCustomerV2Req.
         :type include_association_result: bool

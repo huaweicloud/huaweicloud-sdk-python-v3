@@ -29,7 +29,7 @@ class EngineRbacPwd:
 
         The model defined in huaweicloud sdk
 
-        :param pwd: 开启安全认证的微服务引擎专享版默认root帐号的密码
+        :param pwd: 开启安全认证的ServiceComb引擎专享版默认root帐号的密码
         :type pwd: str
         """
         
@@ -45,7 +45,7 @@ class EngineRbacPwd:
     def pwd(self):
         """Gets the pwd of this EngineRbacPwd.
 
-        开启安全认证的微服务引擎专享版默认root帐号的密码
+        开启安全认证的ServiceComb引擎专享版默认root帐号的密码
 
         :return: The pwd of this EngineRbacPwd.
         :rtype: str
@@ -56,7 +56,7 @@ class EngineRbacPwd:
     def pwd(self, pwd):
         """Sets the pwd of this EngineRbacPwd.
 
-        开启安全认证的微服务引擎专享版默认root帐号的密码
+        开启安全认证的ServiceComb引擎专享版默认root帐号的密码
 
         :param pwd: The pwd of this EngineRbacPwd.
         :type pwd: str

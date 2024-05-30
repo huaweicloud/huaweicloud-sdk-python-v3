@@ -356,4 +356,5 @@ from huaweicloudsdkwaf.v1.model.url_count_item import UrlCountItem
 from huaweicloudsdkwaf.v1.model.url_item import UrlItem
 from huaweicloudsdkwaf.v1.model.value_list_response_body import ValueListResponseBody
 from huaweicloudsdkwaf.v1.model.waf_product_info import WafProductInfo
+from huaweicloudsdkwaf.v1.model.waf_server import WafServer
 from huaweicloudsdkwaf.v1.model.white_black_ip_response_body import WhiteBlackIpResponseBody

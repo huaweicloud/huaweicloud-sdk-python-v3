@@ -32,7 +32,8 @@ class ListCustomerselfResourceRecordsRequest:
         'sub_customer_id': 'str',
         'trade_id': 'str',
         'bill_date_begin': 'str',
-        'bill_date_end': 'str'
+        'bill_date_end': 'str',
+        'statistic_type': 'int'
     }
 
     attribute_map = {
@@ -51,10 +52,11 @@ class ListCustomerselfResourceRecordsRequest:
         'sub_customer_id': 'sub_customer_id',
         'trade_id': 'trade_id',
         'bill_date_begin': 'bill_date_begin',
-        'bill_date_end': 'bill_date_end'
+        'bill_date_end': 'bill_date_end',
+        'statistic_type': 'statistic_type'
     }
 
-    def __init__(self, x_language=None, cycle=None, cloud_service_type=None, region=None, charge_mode=None, bill_type=None, offset=None, limit=None, resource_id=None, enterprise_project_id=None, include_zero_record=None, method=None, sub_customer_id=None, trade_id=None, bill_date_begin=None, bill_date_end=None):
+    def __init__(self, x_language=None, cycle=None, cloud_service_type=None, region=None, charge_mode=None, bill_type=None, offset=None, limit=None, resource_id=None, enterprise_project_id=None, include_zero_record=None, method=None, sub_customer_id=None, trade_id=None, bill_date_begin=None, bill_date_end=None, statistic_type=None):
         """ListCustomerselfResourceRecordsRequest
 
         The model defined in huaweicloud sdk
@@ -67,9 +69,9 @@ class ListCustomerselfResourceRecordsRequest:
         :type cloud_service_type: str
         :param region: 云服务区编码，例如：“ap-southeast-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。此参数不携带时，不作为筛选条件；携带值为空或携带值为空串时，作为筛选条件。
         :type region: str
-        :param charge_mode: 计费模式。1：包年/包月3：按需10：预留实例。此参数不携带时，不作为筛选条件。
+        :param charge_mode: 计费模式。1：包年/包月3：按需10：预留实例11：节省计划。此参数不携带时，不作为筛选条件。
         :type charge_mode: str
-        :param bill_type: 账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿 12：消费-按时计费 14：消费-服务支持计划月末扣费15：消费-税金16：调账-扣费17：消费-保底差额 说明： 保底差额&#x3D;客户签约保底合同后，如果没有达到保底消费，客户需要补交的费用，仅限于直销或者伙伴顾问销售类子客户，且为后付费用户。20：退款-变更100：退款-退订税金101：调账-补偿税金102：调账-扣费税金。此参数不携带或携带值为空时，不作为筛选条件。
+        :param bill_type: 账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿 12：消费-按时计费 14：消费-服务支持计划月末扣费15：消费-税金16：调账-扣费17：消费-保底差额 说明： 保底差额&#x3D;客户签约保底合同后，如果没有达到保底消费，客户需要补交的费用，仅限于直销或者伙伴顾问销售类子客户，且为后付费用户。20：退款-变更100：退款-退订税金23：消费-节省计划抵扣 24：退款-包年/包月转按需101：调账-补偿税金102：调账-扣费税金。此参数不携带或携带值为空时，不作为筛选条件。
         :type bill_type: int
         :param offset: 偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
         :type offset: int
@@ -91,6 +93,8 @@ class ListCustomerselfResourceRecordsRequest:
         :type bill_date_begin: str
         :param bill_date_end: 查询的资源消费记录的结束日期，格式为YYYY-MM-DD。 说明： 必须和cycle（即资源的消费账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照cycle（即资源的消费账期）进行查询。
         :type bill_date_end: str
+        :param statistic_type: |参数名称：统计类型。| |参数的约束及描述：统计类型。非必填，默认值为3。1：按账期 3：按明细|
+        :type statistic_type: int
         """
         
         
@@ -111,6 +115,7 @@ class ListCustomerselfResourceRecordsRequest:
         self._trade_id = None
         self._bill_date_begin = None
         self._bill_date_end = None
+        self._statistic_type = None
         self.discriminator = None
 
         if x_language is not None:
@@ -144,6 +149,8 @@ class ListCustomerselfResourceRecordsRequest:
             self.bill_date_begin = bill_date_begin
         if bill_date_end is not None:
             self.bill_date_end = bill_date_end
+        if statistic_type is not None:
+            self.statistic_type = statistic_type
 
     @property
     def x_language(self):
@@ -237,7 +244,7 @@ class ListCustomerselfResourceRecordsRequest:
     def charge_mode(self):
         """Gets the charge_mode of this ListCustomerselfResourceRecordsRequest.
 
-        计费模式。1：包年/包月3：按需10：预留实例。此参数不携带时，不作为筛选条件。
+        计费模式。1：包年/包月3：按需10：预留实例11：节省计划。此参数不携带时，不作为筛选条件。
 
         :return: The charge_mode of this ListCustomerselfResourceRecordsRequest.
         :rtype: str
@@ -248,7 +255,7 @@ class ListCustomerselfResourceRecordsRequest:
     def charge_mode(self, charge_mode):
         """Sets the charge_mode of this ListCustomerselfResourceRecordsRequest.
 
-        计费模式。1：包年/包月3：按需10：预留实例。此参数不携带时，不作为筛选条件。
+        计费模式。1：包年/包月3：按需10：预留实例11：节省计划。此参数不携带时，不作为筛选条件。
 
         :param charge_mode: The charge_mode of this ListCustomerselfResourceRecordsRequest.
         :type charge_mode: str
@@ -259,7 +266,7 @@ class ListCustomerselfResourceRecordsRequest:
     def bill_type(self):
         """Gets the bill_type of this ListCustomerselfResourceRecordsRequest.
 
-        账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿 12：消费-按时计费 14：消费-服务支持计划月末扣费15：消费-税金16：调账-扣费17：消费-保底差额 说明： 保底差额=客户签约保底合同后，如果没有达到保底消费，客户需要补交的费用，仅限于直销或者伙伴顾问销售类子客户，且为后付费用户。20：退款-变更100：退款-退订税金101：调账-补偿税金102：调账-扣费税金。此参数不携带或携带值为空时，不作为筛选条件。
+        账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿 12：消费-按时计费 14：消费-服务支持计划月末扣费15：消费-税金16：调账-扣费17：消费-保底差额 说明： 保底差额=客户签约保底合同后，如果没有达到保底消费，客户需要补交的费用，仅限于直销或者伙伴顾问销售类子客户，且为后付费用户。20：退款-变更100：退款-退订税金23：消费-节省计划抵扣 24：退款-包年/包月转按需101：调账-补偿税金102：调账-扣费税金。此参数不携带或携带值为空时，不作为筛选条件。
 
         :return: The bill_type of this ListCustomerselfResourceRecordsRequest.
         :rtype: int
@@ -270,7 +277,7 @@ class ListCustomerselfResourceRecordsRequest:
     def bill_type(self, bill_type):
         """Sets the bill_type of this ListCustomerselfResourceRecordsRequest.
 
-        账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿 12：消费-按时计费 14：消费-服务支持计划月末扣费15：消费-税金16：调账-扣费17：消费-保底差额 说明： 保底差额=客户签约保底合同后，如果没有达到保底消费，客户需要补交的费用，仅限于直销或者伙伴顾问销售类子客户，且为后付费用户。20：退款-变更100：退款-退订税金101：调账-补偿税金102：调账-扣费税金。此参数不携带或携带值为空时，不作为筛选条件。
+        账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿 12：消费-按时计费 14：消费-服务支持计划月末扣费15：消费-税金16：调账-扣费17：消费-保底差额 说明： 保底差额=客户签约保底合同后，如果没有达到保底消费，客户需要补交的费用，仅限于直销或者伙伴顾问销售类子客户，且为后付费用户。20：退款-变更100：退款-退订税金23：消费-节省计划抵扣 24：退款-包年/包月转按需101：调账-补偿税金102：调账-扣费税金。此参数不携带或携带值为空时，不作为筛选条件。
 
         :param bill_type: The bill_type of this ListCustomerselfResourceRecordsRequest.
         :type bill_type: int
@@ -496,6 +503,28 @@ class ListCustomerselfResourceRecordsRequest:
         :type bill_date_end: str
         """
         self._bill_date_end = bill_date_end
+
+    @property
+    def statistic_type(self):
+        """Gets the statistic_type of this ListCustomerselfResourceRecordsRequest.
+
+        |参数名称：统计类型。| |参数的约束及描述：统计类型。非必填，默认值为3。1：按账期 3：按明细|
+
+        :return: The statistic_type of this ListCustomerselfResourceRecordsRequest.
+        :rtype: int
+        """
+        return self._statistic_type
+
+    @statistic_type.setter
+    def statistic_type(self, statistic_type):
+        """Sets the statistic_type of this ListCustomerselfResourceRecordsRequest.
+
+        |参数名称：统计类型。| |参数的约束及描述：统计类型。非必填，默认值为3。1：按账期 3：按明细|
+
+        :param statistic_type: The statistic_type of this ListCustomerselfResourceRecordsRequest.
+        :type statistic_type: int
+        """
+        self._statistic_type = statistic_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -23,7 +23,8 @@ class SecurityGroup:
         'project_id': 'str',
         'created_at': 'datetime',
         'updated_at': 'datetime',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'tags': 'list[ResourceTag]'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class SecurityGroup:
         'project_id': 'project_id',
         'created_at': 'created_at',
         'updated_at': 'updated_at',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'tags': 'tags'
     }
 
-    def __init__(self, id=None, name=None, description=None, project_id=None, created_at=None, updated_at=None, enterprise_project_id=None):
+    def __init__(self, id=None, name=None, description=None, project_id=None, created_at=None, updated_at=None, enterprise_project_id=None, tags=None):
         """SecurityGroup
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class SecurityGroup:
         :type updated_at: datetime
         :param enterprise_project_id: 功能说明：安全组所属的企业项目ID。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。
         :type enterprise_project_id: str
+        :param tags: 功能描述：安全组的标签信息
+        :type tags: list[:class:`huaweicloudsdkvpc.v3.ResourceTag`]
         """
         
         
@@ -66,6 +70,7 @@ class SecurityGroup:
         self._created_at = None
         self._updated_at = None
         self._enterprise_project_id = None
+        self._tags = None
         self.discriminator = None
 
         self.id = id
@@ -75,6 +80,7 @@ class SecurityGroup:
         self.created_at = created_at
         self.updated_at = updated_at
         self.enterprise_project_id = enterprise_project_id
+        self.tags = tags
 
     @property
     def id(self):
@@ -229,6 +235,28 @@ class SecurityGroup:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def tags(self):
+        """Gets the tags of this SecurityGroup.
+
+        功能描述：安全组的标签信息
+
+        :return: The tags of this SecurityGroup.
+        :rtype: list[:class:`huaweicloudsdkvpc.v3.ResourceTag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this SecurityGroup.
+
+        功能描述：安全组的标签信息
+
+        :param tags: The tags of this SecurityGroup.
+        :type tags: list[:class:`huaweicloudsdkvpc.v3.ResourceTag`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

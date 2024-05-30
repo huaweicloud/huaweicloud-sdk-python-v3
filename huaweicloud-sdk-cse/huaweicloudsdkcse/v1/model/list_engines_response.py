@@ -32,9 +32,9 @@ class ListEnginesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: 当前符合查询条件的微服务引擎专享版总个数
+        :param total: 当前符合查询条件的微服务引擎个数
         :type total: int
-        :param data: 微服务引擎专享版详情
+        :param data: 微服务引擎详情
         :type data: list[:class:`huaweicloudsdkcse.v1.EngineSimpleInfo`]
         """
         
@@ -53,7 +53,7 @@ class ListEnginesResponse(SdkResponse):
     def total(self):
         """Gets the total of this ListEnginesResponse.
 
-        当前符合查询条件的微服务引擎专享版总个数
+        当前符合查询条件的微服务引擎个数
 
         :return: The total of this ListEnginesResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListEnginesResponse(SdkResponse):
     def total(self, total):
         """Sets the total of this ListEnginesResponse.
 
-        当前符合查询条件的微服务引擎专享版总个数
+        当前符合查询条件的微服务引擎个数
 
         :param total: The total of this ListEnginesResponse.
         :type total: int
@@ -75,7 +75,7 @@ class ListEnginesResponse(SdkResponse):
     def data(self):
         """Gets the data of this ListEnginesResponse.
 
-        微服务引擎专享版详情
+        微服务引擎详情
 
         :return: The data of this ListEnginesResponse.
         :rtype: list[:class:`huaweicloudsdkcse.v1.EngineSimpleInfo`]
@@ -86,7 +86,7 @@ class ListEnginesResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this ListEnginesResponse.
 
-        微服务引擎专享版详情
+        微服务引擎详情
 
         :param data: The data of this ListEnginesResponse.
         :type data: list[:class:`huaweicloudsdkcse.v1.EngineSimpleInfo`]

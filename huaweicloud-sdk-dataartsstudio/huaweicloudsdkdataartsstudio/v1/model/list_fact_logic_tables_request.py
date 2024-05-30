@@ -26,7 +26,7 @@ class ListFactLogicTablesRequest:
         'status': 'str',
         'sync_status': 'str',
         'sync_key': 'list[str]',
-        'l3_id': 'int',
+        'l3_id': 'str',
         'begin_time': 'str',
         'end_time': 'str',
         'limit': 'int',
@@ -69,19 +69,19 @@ class ListFactLogicTablesRequest:
         :type approver: str
         :param owner: 按负责人查询。
         :type owner: str
-        :param status: 业务状态。DRAFT(草稿)、PUBLISH_DEVELOPING(发布待审批)、PUBLISHED(已发布)、OFFLINE_DEVELOPING(下线待审批)、OFFLINE(已下线)、REJECT(已驳回)。
+        :param status: 业务状态。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审批   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审批   - OFFLINE: 已下线   - REJECT: 已驳回 
         :type status: str
-        :param sync_status: 同步状态枚举。RUNNING(同步中)、NO_NEED(未同步)、SUMMARY_SUCCESS(整体成功)、SUMMARY_FAILED(整体失败)。
+        :param sync_status: 同步状态枚举。 枚举值：   - RUNNING: 同步中   - NO_NEED: 未同步   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败 
         :type sync_status: str
-        :param sync_key: 同步任务类型枚举。BUSINESS_ASSET(同步业务资产)、DATA_QUALITY(创建质量作业)、TECHNICAL_ASSET(同步技术资产)、META_DATA_LINK(资产关联)、PHYSICAL_TABLE(创建表（生产环境）)、DEV_PHYSICAL_TABLE(创建表（开发环境）)、DLF_TASK(创建数据开发作业)、MATERIALIZATION(数值落库（码表）)、PUBLISH_TO_DLM(发布数据服务API)、SUMMARY_STATUS(整体状态)。
+        :param sync_key: 同步任务类型枚举。 枚举值：   - BUSINESS_ASSET: 同步业务资产   - DATA_QUALITY: 创建质量作业   - TECHNICAL_ASSET: 同步技术资产   - META_DATA_LINK: 资产关联   - PHYSICAL_TABLE: 创建表（生产环境）   - DEV_PHYSICAL_TABLE: 创建表（开发环境）   - DLF_TASK: 创建数据开发作业   - MATERIALIZATION: 数值落库（码表）   - PUBLISH_TO_DLM: 发布数据服务API   - SUMMARY_STATUS: 整体状态 
         :type sync_key: list[str]
-        :param l3_id: 业务对象l3的ID。
-        :type l3_id: int
+        :param l3_id: 业务对象l3的ID，填写String类型替代Long类型。
+        :type l3_id: str
         :param begin_time: 时间过滤左边界，与end_time一起使用，只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type begin_time: str
         :param end_time: 时间过滤右边界，与begin_time一起使用只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type end_time: str
-        :param limit: 查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+        :param limit: 每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
         :type limit: int
         :param offset: 查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
         :type offset: int
@@ -274,7 +274,7 @@ class ListFactLogicTablesRequest:
     def status(self):
         """Gets the status of this ListFactLogicTablesRequest.
 
-        业务状态。DRAFT(草稿)、PUBLISH_DEVELOPING(发布待审批)、PUBLISHED(已发布)、OFFLINE_DEVELOPING(下线待审批)、OFFLINE(已下线)、REJECT(已驳回)。
+        业务状态。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审批   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审批   - OFFLINE: 已下线   - REJECT: 已驳回 
 
         :return: The status of this ListFactLogicTablesRequest.
         :rtype: str
@@ -285,7 +285,7 @@ class ListFactLogicTablesRequest:
     def status(self, status):
         """Sets the status of this ListFactLogicTablesRequest.
 
-        业务状态。DRAFT(草稿)、PUBLISH_DEVELOPING(发布待审批)、PUBLISHED(已发布)、OFFLINE_DEVELOPING(下线待审批)、OFFLINE(已下线)、REJECT(已驳回)。
+        业务状态。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审批   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审批   - OFFLINE: 已下线   - REJECT: 已驳回 
 
         :param status: The status of this ListFactLogicTablesRequest.
         :type status: str
@@ -296,7 +296,7 @@ class ListFactLogicTablesRequest:
     def sync_status(self):
         """Gets the sync_status of this ListFactLogicTablesRequest.
 
-        同步状态枚举。RUNNING(同步中)、NO_NEED(未同步)、SUMMARY_SUCCESS(整体成功)、SUMMARY_FAILED(整体失败)。
+        同步状态枚举。 枚举值：   - RUNNING: 同步中   - NO_NEED: 未同步   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败 
 
         :return: The sync_status of this ListFactLogicTablesRequest.
         :rtype: str
@@ -307,7 +307,7 @@ class ListFactLogicTablesRequest:
     def sync_status(self, sync_status):
         """Sets the sync_status of this ListFactLogicTablesRequest.
 
-        同步状态枚举。RUNNING(同步中)、NO_NEED(未同步)、SUMMARY_SUCCESS(整体成功)、SUMMARY_FAILED(整体失败)。
+        同步状态枚举。 枚举值：   - RUNNING: 同步中   - NO_NEED: 未同步   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败 
 
         :param sync_status: The sync_status of this ListFactLogicTablesRequest.
         :type sync_status: str
@@ -318,7 +318,7 @@ class ListFactLogicTablesRequest:
     def sync_key(self):
         """Gets the sync_key of this ListFactLogicTablesRequest.
 
-        同步任务类型枚举。BUSINESS_ASSET(同步业务资产)、DATA_QUALITY(创建质量作业)、TECHNICAL_ASSET(同步技术资产)、META_DATA_LINK(资产关联)、PHYSICAL_TABLE(创建表（生产环境）)、DEV_PHYSICAL_TABLE(创建表（开发环境）)、DLF_TASK(创建数据开发作业)、MATERIALIZATION(数值落库（码表）)、PUBLISH_TO_DLM(发布数据服务API)、SUMMARY_STATUS(整体状态)。
+        同步任务类型枚举。 枚举值：   - BUSINESS_ASSET: 同步业务资产   - DATA_QUALITY: 创建质量作业   - TECHNICAL_ASSET: 同步技术资产   - META_DATA_LINK: 资产关联   - PHYSICAL_TABLE: 创建表（生产环境）   - DEV_PHYSICAL_TABLE: 创建表（开发环境）   - DLF_TASK: 创建数据开发作业   - MATERIALIZATION: 数值落库（码表）   - PUBLISH_TO_DLM: 发布数据服务API   - SUMMARY_STATUS: 整体状态 
 
         :return: The sync_key of this ListFactLogicTablesRequest.
         :rtype: list[str]
@@ -329,7 +329,7 @@ class ListFactLogicTablesRequest:
     def sync_key(self, sync_key):
         """Sets the sync_key of this ListFactLogicTablesRequest.
 
-        同步任务类型枚举。BUSINESS_ASSET(同步业务资产)、DATA_QUALITY(创建质量作业)、TECHNICAL_ASSET(同步技术资产)、META_DATA_LINK(资产关联)、PHYSICAL_TABLE(创建表（生产环境）)、DEV_PHYSICAL_TABLE(创建表（开发环境）)、DLF_TASK(创建数据开发作业)、MATERIALIZATION(数值落库（码表）)、PUBLISH_TO_DLM(发布数据服务API)、SUMMARY_STATUS(整体状态)。
+        同步任务类型枚举。 枚举值：   - BUSINESS_ASSET: 同步业务资产   - DATA_QUALITY: 创建质量作业   - TECHNICAL_ASSET: 同步技术资产   - META_DATA_LINK: 资产关联   - PHYSICAL_TABLE: 创建表（生产环境）   - DEV_PHYSICAL_TABLE: 创建表（开发环境）   - DLF_TASK: 创建数据开发作业   - MATERIALIZATION: 数值落库（码表）   - PUBLISH_TO_DLM: 发布数据服务API   - SUMMARY_STATUS: 整体状态 
 
         :param sync_key: The sync_key of this ListFactLogicTablesRequest.
         :type sync_key: list[str]
@@ -340,10 +340,10 @@ class ListFactLogicTablesRequest:
     def l3_id(self):
         """Gets the l3_id of this ListFactLogicTablesRequest.
 
-        业务对象l3的ID。
+        业务对象l3的ID，填写String类型替代Long类型。
 
         :return: The l3_id of this ListFactLogicTablesRequest.
-        :rtype: int
+        :rtype: str
         """
         return self._l3_id
 
@@ -351,10 +351,10 @@ class ListFactLogicTablesRequest:
     def l3_id(self, l3_id):
         """Sets the l3_id of this ListFactLogicTablesRequest.
 
-        业务对象l3的ID。
+        业务对象l3的ID，填写String类型替代Long类型。
 
         :param l3_id: The l3_id of this ListFactLogicTablesRequest.
-        :type l3_id: int
+        :type l3_id: str
         """
         self._l3_id = l3_id
 
@@ -406,7 +406,7 @@ class ListFactLogicTablesRequest:
     def limit(self):
         """Gets the limit of this ListFactLogicTablesRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+        每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :return: The limit of this ListFactLogicTablesRequest.
         :rtype: int
@@ -417,7 +417,7 @@ class ListFactLogicTablesRequest:
     def limit(self, limit):
         """Sets the limit of this ListFactLogicTablesRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+        每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :param limit: The limit of this ListFactLogicTablesRequest.
         :type limit: int

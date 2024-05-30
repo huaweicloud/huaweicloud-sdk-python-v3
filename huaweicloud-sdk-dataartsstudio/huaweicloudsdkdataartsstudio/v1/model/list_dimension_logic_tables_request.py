@@ -26,8 +26,8 @@ class ListDimensionLogicTablesRequest:
         'status': 'str',
         'sync_status': 'str',
         'sync_key': 'list[str]',
-        'l2_id': 'int',
-        'dimension_id': 'int',
+        'l2_id': 'str',
+        'dimension_id': 'str',
         'begin_time': 'str',
         'end_time': 'str',
         'limit': 'int',
@@ -73,27 +73,27 @@ class ListDimensionLogicTablesRequest:
         :type approver: str
         :param owner: 按负责人查询。
         :type owner: str
-        :param status: 业务状态。DRAFT(草稿)、PUBLISH_DEVELOPING(发布待审批)、PUBLISHED(已发布)、OFFLINE_DEVELOPING(下线待审批)、OFFLINE(已下线)、REJECT(已驳回)。
+        :param status: 业务状态。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审批   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审批   - OFFLINE: 已下线   - REJECT: 已驳回 
         :type status: str
-        :param sync_status: 同步状态枚举。RUNNING(同步中)、NO_NEED(未同步)、SUMMARY_SUCCESS(整体成功)、SUMMARY_FAILED(整体失败)。
+        :param sync_status: 同步状态枚举。 枚举值：   - RUNNING: 同步中   - NO_NEED: 未同步   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败 
         :type sync_status: str
-        :param sync_key: 同步任务类型枚举。BUSINESS_ASSET(同步业务资产)、DATA_QUALITY(创建质量作业)、TECHNICAL_ASSET(同步技术资产)、META_DATA_LINK(资产关联)、PHYSICAL_TABLE(创建表（生产环境）)、DEV_PHYSICAL_TABLE(创建表（开发环境）)、DLF_TASK(创建数据开发作业)、MATERIALIZATION(数值落库（码表）)、PUBLISH_TO_DLM(发布数据服务API)、SUMMARY_STATUS(整体状态)。
+        :param sync_key: 同步任务类型枚举。 枚举值：   - BUSINESS_ASSET: 同步业务资产   - DATA_QUALITY: 创建质量作业   - TECHNICAL_ASSET: 同步技术资产   - META_DATA_LINK: 资产关联   - PHYSICAL_TABLE: 创建表（生产环境）   - DEV_PHYSICAL_TABLE: 创建表（开发环境）   - DLF_TASK: 创建数据开发作业   - MATERIALIZATION: 数值落库（码表）   - PUBLISH_TO_DLM: 发布数据服务API   - SUMMARY_STATUS: 整体状态 
         :type sync_key: list[str]
-        :param l2_id: 主题域l2的ID。
-        :type l2_id: int
-        :param dimension_id: 依据维度ID查维度属性。
-        :type dimension_id: int
+        :param l2_id: 主题域l2的ID，填写String类型替代Long类型。
+        :type l2_id: str
+        :param dimension_id: 依据维度ID查维度属性，填写String类型替代Long类型。
+        :type dimension_id: str
         :param begin_time: 时间过滤左边界，与end_time一起使用，只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type begin_time: str
         :param end_time: 时间过滤右边界，与begin_time一起使用只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type end_time: str
-        :param limit: 查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+        :param limit: 每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
         :type limit: int
         :param offset: 查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
         :type offset: int
         :param biz_catalog_id: 所属的业务分层的ID。
         :type biz_catalog_id: str
-        :param dimension_type: 维度类型。COMMON(普通维度)、LOOKUP(码表维度)、HIERARCHIES(层级维度)。
+        :param dimension_type: 维度类型。 枚举值：   - COMMON: 普通维度   - LOOKUP: 码表维度   - HIERARCHIES: 层级维度 
         :type dimension_type: str
         """
         
@@ -288,7 +288,7 @@ class ListDimensionLogicTablesRequest:
     def status(self):
         """Gets the status of this ListDimensionLogicTablesRequest.
 
-        业务状态。DRAFT(草稿)、PUBLISH_DEVELOPING(发布待审批)、PUBLISHED(已发布)、OFFLINE_DEVELOPING(下线待审批)、OFFLINE(已下线)、REJECT(已驳回)。
+        业务状态。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审批   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审批   - OFFLINE: 已下线   - REJECT: 已驳回 
 
         :return: The status of this ListDimensionLogicTablesRequest.
         :rtype: str
@@ -299,7 +299,7 @@ class ListDimensionLogicTablesRequest:
     def status(self, status):
         """Sets the status of this ListDimensionLogicTablesRequest.
 
-        业务状态。DRAFT(草稿)、PUBLISH_DEVELOPING(发布待审批)、PUBLISHED(已发布)、OFFLINE_DEVELOPING(下线待审批)、OFFLINE(已下线)、REJECT(已驳回)。
+        业务状态。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审批   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审批   - OFFLINE: 已下线   - REJECT: 已驳回 
 
         :param status: The status of this ListDimensionLogicTablesRequest.
         :type status: str
@@ -310,7 +310,7 @@ class ListDimensionLogicTablesRequest:
     def sync_status(self):
         """Gets the sync_status of this ListDimensionLogicTablesRequest.
 
-        同步状态枚举。RUNNING(同步中)、NO_NEED(未同步)、SUMMARY_SUCCESS(整体成功)、SUMMARY_FAILED(整体失败)。
+        同步状态枚举。 枚举值：   - RUNNING: 同步中   - NO_NEED: 未同步   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败 
 
         :return: The sync_status of this ListDimensionLogicTablesRequest.
         :rtype: str
@@ -321,7 +321,7 @@ class ListDimensionLogicTablesRequest:
     def sync_status(self, sync_status):
         """Sets the sync_status of this ListDimensionLogicTablesRequest.
 
-        同步状态枚举。RUNNING(同步中)、NO_NEED(未同步)、SUMMARY_SUCCESS(整体成功)、SUMMARY_FAILED(整体失败)。
+        同步状态枚举。 枚举值：   - RUNNING: 同步中   - NO_NEED: 未同步   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败 
 
         :param sync_status: The sync_status of this ListDimensionLogicTablesRequest.
         :type sync_status: str
@@ -332,7 +332,7 @@ class ListDimensionLogicTablesRequest:
     def sync_key(self):
         """Gets the sync_key of this ListDimensionLogicTablesRequest.
 
-        同步任务类型枚举。BUSINESS_ASSET(同步业务资产)、DATA_QUALITY(创建质量作业)、TECHNICAL_ASSET(同步技术资产)、META_DATA_LINK(资产关联)、PHYSICAL_TABLE(创建表（生产环境）)、DEV_PHYSICAL_TABLE(创建表（开发环境）)、DLF_TASK(创建数据开发作业)、MATERIALIZATION(数值落库（码表）)、PUBLISH_TO_DLM(发布数据服务API)、SUMMARY_STATUS(整体状态)。
+        同步任务类型枚举。 枚举值：   - BUSINESS_ASSET: 同步业务资产   - DATA_QUALITY: 创建质量作业   - TECHNICAL_ASSET: 同步技术资产   - META_DATA_LINK: 资产关联   - PHYSICAL_TABLE: 创建表（生产环境）   - DEV_PHYSICAL_TABLE: 创建表（开发环境）   - DLF_TASK: 创建数据开发作业   - MATERIALIZATION: 数值落库（码表）   - PUBLISH_TO_DLM: 发布数据服务API   - SUMMARY_STATUS: 整体状态 
 
         :return: The sync_key of this ListDimensionLogicTablesRequest.
         :rtype: list[str]
@@ -343,7 +343,7 @@ class ListDimensionLogicTablesRequest:
     def sync_key(self, sync_key):
         """Sets the sync_key of this ListDimensionLogicTablesRequest.
 
-        同步任务类型枚举。BUSINESS_ASSET(同步业务资产)、DATA_QUALITY(创建质量作业)、TECHNICAL_ASSET(同步技术资产)、META_DATA_LINK(资产关联)、PHYSICAL_TABLE(创建表（生产环境）)、DEV_PHYSICAL_TABLE(创建表（开发环境）)、DLF_TASK(创建数据开发作业)、MATERIALIZATION(数值落库（码表）)、PUBLISH_TO_DLM(发布数据服务API)、SUMMARY_STATUS(整体状态)。
+        同步任务类型枚举。 枚举值：   - BUSINESS_ASSET: 同步业务资产   - DATA_QUALITY: 创建质量作业   - TECHNICAL_ASSET: 同步技术资产   - META_DATA_LINK: 资产关联   - PHYSICAL_TABLE: 创建表（生产环境）   - DEV_PHYSICAL_TABLE: 创建表（开发环境）   - DLF_TASK: 创建数据开发作业   - MATERIALIZATION: 数值落库（码表）   - PUBLISH_TO_DLM: 发布数据服务API   - SUMMARY_STATUS: 整体状态 
 
         :param sync_key: The sync_key of this ListDimensionLogicTablesRequest.
         :type sync_key: list[str]
@@ -354,10 +354,10 @@ class ListDimensionLogicTablesRequest:
     def l2_id(self):
         """Gets the l2_id of this ListDimensionLogicTablesRequest.
 
-        主题域l2的ID。
+        主题域l2的ID，填写String类型替代Long类型。
 
         :return: The l2_id of this ListDimensionLogicTablesRequest.
-        :rtype: int
+        :rtype: str
         """
         return self._l2_id
 
@@ -365,10 +365,10 @@ class ListDimensionLogicTablesRequest:
     def l2_id(self, l2_id):
         """Sets the l2_id of this ListDimensionLogicTablesRequest.
 
-        主题域l2的ID。
+        主题域l2的ID，填写String类型替代Long类型。
 
         :param l2_id: The l2_id of this ListDimensionLogicTablesRequest.
-        :type l2_id: int
+        :type l2_id: str
         """
         self._l2_id = l2_id
 
@@ -376,10 +376,10 @@ class ListDimensionLogicTablesRequest:
     def dimension_id(self):
         """Gets the dimension_id of this ListDimensionLogicTablesRequest.
 
-        依据维度ID查维度属性。
+        依据维度ID查维度属性，填写String类型替代Long类型。
 
         :return: The dimension_id of this ListDimensionLogicTablesRequest.
-        :rtype: int
+        :rtype: str
         """
         return self._dimension_id
 
@@ -387,10 +387,10 @@ class ListDimensionLogicTablesRequest:
     def dimension_id(self, dimension_id):
         """Sets the dimension_id of this ListDimensionLogicTablesRequest.
 
-        依据维度ID查维度属性。
+        依据维度ID查维度属性，填写String类型替代Long类型。
 
         :param dimension_id: The dimension_id of this ListDimensionLogicTablesRequest.
-        :type dimension_id: int
+        :type dimension_id: str
         """
         self._dimension_id = dimension_id
 
@@ -442,7 +442,7 @@ class ListDimensionLogicTablesRequest:
     def limit(self):
         """Gets the limit of this ListDimensionLogicTablesRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+        每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :return: The limit of this ListDimensionLogicTablesRequest.
         :rtype: int
@@ -453,7 +453,7 @@ class ListDimensionLogicTablesRequest:
     def limit(self, limit):
         """Sets the limit of this ListDimensionLogicTablesRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+        每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :param limit: The limit of this ListDimensionLogicTablesRequest.
         :type limit: int
@@ -508,7 +508,7 @@ class ListDimensionLogicTablesRequest:
     def dimension_type(self):
         """Gets the dimension_type of this ListDimensionLogicTablesRequest.
 
-        维度类型。COMMON(普通维度)、LOOKUP(码表维度)、HIERARCHIES(层级维度)。
+        维度类型。 枚举值：   - COMMON: 普通维度   - LOOKUP: 码表维度   - HIERARCHIES: 层级维度 
 
         :return: The dimension_type of this ListDimensionLogicTablesRequest.
         :rtype: str
@@ -519,7 +519,7 @@ class ListDimensionLogicTablesRequest:
     def dimension_type(self, dimension_type):
         """Sets the dimension_type of this ListDimensionLogicTablesRequest.
 
-        维度类型。COMMON(普通维度)、LOOKUP(码表维度)、HIERARCHIES(层级维度)。
+        维度类型。 枚举值：   - COMMON: 普通维度   - LOOKUP: 码表维度   - HIERARCHIES: 层级维度 
 
         :param dimension_type: The dimension_type of this ListDimensionLogicTablesRequest.
         :type dimension_type: str

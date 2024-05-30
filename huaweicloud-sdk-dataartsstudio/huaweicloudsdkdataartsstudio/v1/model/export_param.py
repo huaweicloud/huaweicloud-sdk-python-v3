@@ -17,13 +17,13 @@ class ExportParam:
     sensitive_list = []
 
     openapi_types = {
-        'ids': 'list[int]',
+        'ids': 'list[str]',
         'asyn': 'bool',
         'type': 'str',
-        'directory_id': 'int',
-        'biz_catalog_id': 'int',
-        'biz_catalog_id_list': 'list[int]',
-        'model_id': 'int'
+        'directory_id': 'str',
+        'biz_catalog_id': 'str',
+        'biz_catalog_id_list': 'list[str]',
+        'model_id': 'str'
     }
 
     attribute_map = {
@@ -41,20 +41,20 @@ class ExportParam:
 
         The model defined in huaweicloud sdk
 
-        :param ids: 导出对象ID的列表，如：某几个逻辑模型的ID。
-        :type ids: list[int]
+        :param ids: 导出对象ID的列表，如：某几个逻辑模型的ID，填写String类型替代Long类型。
+        :type ids: list[str]
         :param asyn: 是否是异步操作导出，true:异步，false:同步。
         :type asyn: bool
         :param type: 导出的业务类型：ER(关系建模)，Directory_CodeTable(码表目录)，Directory_Standard(标准目录)，DIM(维度建模)，codeTable(码表);dataStandard 数据标准;directory_id导出指定目录下的码表/数据标准;model_id，biz_catalog_id导出指定模型，目录下的业务表，import_bizcatalog导出流程架构，import_bizmetric导出业务指标。
         :type type: str
-        :param directory_id: 所属目录ID。
-        :type directory_id: int
-        :param biz_catalog_id: 所属业务分层的ID。
-        :type biz_catalog_id: int
+        :param directory_id: 所属目录ID，填写String类型替代Long类型。
+        :type directory_id: str
+        :param biz_catalog_id: 所属业务分层的ID，填写String类型替代Long类型。
+        :type biz_catalog_id: str
         :param biz_catalog_id_list: 所属的业务分层的ID列表。
-        :type biz_catalog_id_list: list[int]
-        :param model_id: 所属关系建模的模型ID，导出关系模型需要此参数。
-        :type model_id: int
+        :type biz_catalog_id_list: list[str]
+        :param model_id: 所属关系建模的模型ID，导出关系模型需要此参数，填写String类型替代Long类型。
+        :type model_id: str
         """
         
         
@@ -87,10 +87,10 @@ class ExportParam:
     def ids(self):
         """Gets the ids of this ExportParam.
 
-        导出对象ID的列表，如：某几个逻辑模型的ID。
+        导出对象ID的列表，如：某几个逻辑模型的ID，填写String类型替代Long类型。
 
         :return: The ids of this ExportParam.
-        :rtype: list[int]
+        :rtype: list[str]
         """
         return self._ids
 
@@ -98,10 +98,10 @@ class ExportParam:
     def ids(self, ids):
         """Sets the ids of this ExportParam.
 
-        导出对象ID的列表，如：某几个逻辑模型的ID。
+        导出对象ID的列表，如：某几个逻辑模型的ID，填写String类型替代Long类型。
 
         :param ids: The ids of this ExportParam.
-        :type ids: list[int]
+        :type ids: list[str]
         """
         self._ids = ids
 
@@ -153,10 +153,10 @@ class ExportParam:
     def directory_id(self):
         """Gets the directory_id of this ExportParam.
 
-        所属目录ID。
+        所属目录ID，填写String类型替代Long类型。
 
         :return: The directory_id of this ExportParam.
-        :rtype: int
+        :rtype: str
         """
         return self._directory_id
 
@@ -164,10 +164,10 @@ class ExportParam:
     def directory_id(self, directory_id):
         """Sets the directory_id of this ExportParam.
 
-        所属目录ID。
+        所属目录ID，填写String类型替代Long类型。
 
         :param directory_id: The directory_id of this ExportParam.
-        :type directory_id: int
+        :type directory_id: str
         """
         self._directory_id = directory_id
 
@@ -175,10 +175,10 @@ class ExportParam:
     def biz_catalog_id(self):
         """Gets the biz_catalog_id of this ExportParam.
 
-        所属业务分层的ID。
+        所属业务分层的ID，填写String类型替代Long类型。
 
         :return: The biz_catalog_id of this ExportParam.
-        :rtype: int
+        :rtype: str
         """
         return self._biz_catalog_id
 
@@ -186,10 +186,10 @@ class ExportParam:
     def biz_catalog_id(self, biz_catalog_id):
         """Sets the biz_catalog_id of this ExportParam.
 
-        所属业务分层的ID。
+        所属业务分层的ID，填写String类型替代Long类型。
 
         :param biz_catalog_id: The biz_catalog_id of this ExportParam.
-        :type biz_catalog_id: int
+        :type biz_catalog_id: str
         """
         self._biz_catalog_id = biz_catalog_id
 
@@ -200,7 +200,7 @@ class ExportParam:
         所属的业务分层的ID列表。
 
         :return: The biz_catalog_id_list of this ExportParam.
-        :rtype: list[int]
+        :rtype: list[str]
         """
         return self._biz_catalog_id_list
 
@@ -211,7 +211,7 @@ class ExportParam:
         所属的业务分层的ID列表。
 
         :param biz_catalog_id_list: The biz_catalog_id_list of this ExportParam.
-        :type biz_catalog_id_list: list[int]
+        :type biz_catalog_id_list: list[str]
         """
         self._biz_catalog_id_list = biz_catalog_id_list
 
@@ -219,10 +219,10 @@ class ExportParam:
     def model_id(self):
         """Gets the model_id of this ExportParam.
 
-        所属关系建模的模型ID，导出关系模型需要此参数。
+        所属关系建模的模型ID，导出关系模型需要此参数，填写String类型替代Long类型。
 
         :return: The model_id of this ExportParam.
-        :rtype: int
+        :rtype: str
         """
         return self._model_id
 
@@ -230,10 +230,10 @@ class ExportParam:
     def model_id(self, model_id):
         """Sets the model_id of this ExportParam.
 
-        所属关系建模的模型ID，导出关系模型需要此参数。
+        所属关系建模的模型ID，导出关系模型需要此参数，填写String类型替代Long类型。
 
         :param model_id: The model_id of this ExportParam.
-        :type model_id: int
+        :type model_id: str
         """
         self._model_id = model_id
 

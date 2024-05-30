@@ -49,23 +49,23 @@ class EngineReference:
 
         :param vpc: vpc名称
         :type vpc: str
-        :param az_list: 微服务引擎专享版部署的可用区列表
+        :param az_list: 微服务引擎部署的可用区列表
         :type az_list: list[str]
-        :param network_id: 微服务引擎专享版子网网络ID
+        :param network_id: 微服务引擎子网网络ID
         :type network_id: str
-        :param subnet_cidr: 微服务引擎专享版ipv4子网划分
+        :param subnet_cidr: 微服务引擎ipv4子网划分
         :type subnet_cidr: str
-        :param subnet_cidr_v6: 微服务引擎专享版ipv6子网划分
+        :param subnet_cidr_v6: 微服务引擎ipv6子网划分
         :type subnet_cidr_v6: str
-        :param subnet_gateway: 微服务引擎专享版子网网关
+        :param subnet_gateway: 微服务引擎子网网关
         :type subnet_gateway: str
-        :param public_ip_id: 微服务引擎专享版公网地址ID
+        :param public_ip_id: 微服务引擎公网地址ID
         :type public_ip_id: str
-        :param service_limit: 微服务引擎专享版可支持的微服务总数
+        :param service_limit: 微服务引擎可支持的微服务总数
         :type service_limit: int
-        :param instance_limit: 微服务引擎专享版可支持的实例总数
+        :param instance_limit: 微服务引擎可支持的实例总数
         :type instance_limit: int
-        :param inputs: 微服务引擎专享版附加参数
+        :param inputs: 微服务引擎附加参数
         :type inputs: dict(str, str)
         """
         
@@ -130,7 +130,7 @@ class EngineReference:
     def az_list(self):
         """Gets the az_list of this EngineReference.
 
-        微服务引擎专享版部署的可用区列表
+        微服务引擎部署的可用区列表
 
         :return: The az_list of this EngineReference.
         :rtype: list[str]
@@ -141,7 +141,7 @@ class EngineReference:
     def az_list(self, az_list):
         """Sets the az_list of this EngineReference.
 
-        微服务引擎专享版部署的可用区列表
+        微服务引擎部署的可用区列表
 
         :param az_list: The az_list of this EngineReference.
         :type az_list: list[str]
@@ -152,7 +152,7 @@ class EngineReference:
     def network_id(self):
         """Gets the network_id of this EngineReference.
 
-        微服务引擎专享版子网网络ID
+        微服务引擎子网网络ID
 
         :return: The network_id of this EngineReference.
         :rtype: str
@@ -163,7 +163,7 @@ class EngineReference:
     def network_id(self, network_id):
         """Sets the network_id of this EngineReference.
 
-        微服务引擎专享版子网网络ID
+        微服务引擎子网网络ID
 
         :param network_id: The network_id of this EngineReference.
         :type network_id: str
@@ -174,7 +174,7 @@ class EngineReference:
     def subnet_cidr(self):
         """Gets the subnet_cidr of this EngineReference.
 
-        微服务引擎专享版ipv4子网划分
+        微服务引擎ipv4子网划分
 
         :return: The subnet_cidr of this EngineReference.
         :rtype: str
@@ -185,7 +185,7 @@ class EngineReference:
     def subnet_cidr(self, subnet_cidr):
         """Sets the subnet_cidr of this EngineReference.
 
-        微服务引擎专享版ipv4子网划分
+        微服务引擎ipv4子网划分
 
         :param subnet_cidr: The subnet_cidr of this EngineReference.
         :type subnet_cidr: str
@@ -196,7 +196,7 @@ class EngineReference:
     def subnet_cidr_v6(self):
         """Gets the subnet_cidr_v6 of this EngineReference.
 
-        微服务引擎专享版ipv6子网划分
+        微服务引擎ipv6子网划分
 
         :return: The subnet_cidr_v6 of this EngineReference.
         :rtype: str
@@ -207,7 +207,7 @@ class EngineReference:
     def subnet_cidr_v6(self, subnet_cidr_v6):
         """Sets the subnet_cidr_v6 of this EngineReference.
 
-        微服务引擎专享版ipv6子网划分
+        微服务引擎ipv6子网划分
 
         :param subnet_cidr_v6: The subnet_cidr_v6 of this EngineReference.
         :type subnet_cidr_v6: str
@@ -218,7 +218,7 @@ class EngineReference:
     def subnet_gateway(self):
         """Gets the subnet_gateway of this EngineReference.
 
-        微服务引擎专享版子网网关
+        微服务引擎子网网关
 
         :return: The subnet_gateway of this EngineReference.
         :rtype: str
@@ -229,7 +229,7 @@ class EngineReference:
     def subnet_gateway(self, subnet_gateway):
         """Sets the subnet_gateway of this EngineReference.
 
-        微服务引擎专享版子网网关
+        微服务引擎子网网关
 
         :param subnet_gateway: The subnet_gateway of this EngineReference.
         :type subnet_gateway: str
@@ -240,7 +240,7 @@ class EngineReference:
     def public_ip_id(self):
         """Gets the public_ip_id of this EngineReference.
 
-        微服务引擎专享版公网地址ID
+        微服务引擎公网地址ID
 
         :return: The public_ip_id of this EngineReference.
         :rtype: str
@@ -251,7 +251,7 @@ class EngineReference:
     def public_ip_id(self, public_ip_id):
         """Sets the public_ip_id of this EngineReference.
 
-        微服务引擎专享版公网地址ID
+        微服务引擎公网地址ID
 
         :param public_ip_id: The public_ip_id of this EngineReference.
         :type public_ip_id: str
@@ -262,7 +262,7 @@ class EngineReference:
     def service_limit(self):
         """Gets the service_limit of this EngineReference.
 
-        微服务引擎专享版可支持的微服务总数
+        微服务引擎可支持的微服务总数
 
         :return: The service_limit of this EngineReference.
         :rtype: int
@@ -273,7 +273,7 @@ class EngineReference:
     def service_limit(self, service_limit):
         """Sets the service_limit of this EngineReference.
 
-        微服务引擎专享版可支持的微服务总数
+        微服务引擎可支持的微服务总数
 
         :param service_limit: The service_limit of this EngineReference.
         :type service_limit: int
@@ -284,7 +284,7 @@ class EngineReference:
     def instance_limit(self):
         """Gets the instance_limit of this EngineReference.
 
-        微服务引擎专享版可支持的实例总数
+        微服务引擎可支持的实例总数
 
         :return: The instance_limit of this EngineReference.
         :rtype: int
@@ -295,7 +295,7 @@ class EngineReference:
     def instance_limit(self, instance_limit):
         """Sets the instance_limit of this EngineReference.
 
-        微服务引擎专享版可支持的实例总数
+        微服务引擎可支持的实例总数
 
         :param instance_limit: The instance_limit of this EngineReference.
         :type instance_limit: int
@@ -306,7 +306,7 @@ class EngineReference:
     def inputs(self):
         """Gets the inputs of this EngineReference.
 
-        微服务引擎专享版附加参数
+        微服务引擎附加参数
 
         :return: The inputs of this EngineReference.
         :rtype: dict(str, str)
@@ -317,7 +317,7 @@ class EngineReference:
     def inputs(self, inputs):
         """Sets the inputs of this EngineReference.
 
-        微服务引擎专享版附加参数
+        微服务引擎附加参数
 
         :param inputs: The inputs of this EngineReference.
         :type inputs: dict(str, str)

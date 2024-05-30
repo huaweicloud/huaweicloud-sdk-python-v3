@@ -57,7 +57,7 @@ class Snapshots:
         :type finished: str
         :param size: 快照大小，单位 GB。
         :type size: float
-        :param status: 快照状态：  - CREATING：创建中。 - AVAILABLE：可用。 - UNAVAILABLE：不可用。
+        :param status: 快照状态：  - CREATING：创建中。 - AVAILABLE：可用。 - UNAVAILABLE：不可用。 - FROZEN： 普通冻结。 - POLICE_FROZEN： 公安冻结。
         :type status: str
         :param type: 快照创建类型
         :type type: str
@@ -224,7 +224,7 @@ class Snapshots:
     def status(self):
         """Gets the status of this Snapshots.
 
-        快照状态：  - CREATING：创建中。 - AVAILABLE：可用。 - UNAVAILABLE：不可用。
+        快照状态：  - CREATING：创建中。 - AVAILABLE：可用。 - UNAVAILABLE：不可用。 - FROZEN： 普通冻结。 - POLICE_FROZEN： 公安冻结。
 
         :return: The status of this Snapshots.
         :rtype: str
@@ -235,7 +235,7 @@ class Snapshots:
     def status(self, status):
         """Sets the status of this Snapshots.
 
-        快照状态：  - CREATING：创建中。 - AVAILABLE：可用。 - UNAVAILABLE：不可用。
+        快照状态：  - CREATING：创建中。 - AVAILABLE：可用。 - UNAVAILABLE：不可用。 - FROZEN： 普通冻结。 - POLICE_FROZEN： 公安冻结。
 
         :param status: The status of this Snapshots.
         :type status: str

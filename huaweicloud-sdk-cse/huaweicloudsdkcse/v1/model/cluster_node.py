@@ -37,15 +37,15 @@ class ClusterNode:
 
         The model defined in huaweicloud sdk
 
-        :param id: 微服务引擎专享版CCE节点ID
+        :param id: 微服务引擎CCE节点ID
         :type id: str
-        :param az: 微服务引擎专享版CCE节点所属可用区
+        :param az: 微服务引擎CCE节点所属可用区
         :type az: str
-        :param ip: 微服务引擎专享版CCE节点IP
+        :param ip: 微服务引擎CCE节点IP
         :type ip: str
-        :param label: 微服务引擎专享版CCE节点标签
+        :param label: 微服务引擎CCE节点标签
         :type label: str
-        :param status: 微服务引擎专享版CCE节点状态
+        :param status: 微服务引擎CCE节点状态
         :type status: str
         """
         
@@ -73,7 +73,7 @@ class ClusterNode:
     def id(self):
         """Gets the id of this ClusterNode.
 
-        微服务引擎专享版CCE节点ID
+        微服务引擎CCE节点ID
 
         :return: The id of this ClusterNode.
         :rtype: str
@@ -84,7 +84,7 @@ class ClusterNode:
     def id(self, id):
         """Sets the id of this ClusterNode.
 
-        微服务引擎专享版CCE节点ID
+        微服务引擎CCE节点ID
 
         :param id: The id of this ClusterNode.
         :type id: str
@@ -95,7 +95,7 @@ class ClusterNode:
     def az(self):
         """Gets the az of this ClusterNode.
 
-        微服务引擎专享版CCE节点所属可用区
+        微服务引擎CCE节点所属可用区
 
         :return: The az of this ClusterNode.
         :rtype: str
@@ -106,7 +106,7 @@ class ClusterNode:
     def az(self, az):
         """Sets the az of this ClusterNode.
 
-        微服务引擎专享版CCE节点所属可用区
+        微服务引擎CCE节点所属可用区
 
         :param az: The az of this ClusterNode.
         :type az: str
@@ -117,7 +117,7 @@ class ClusterNode:
     def ip(self):
         """Gets the ip of this ClusterNode.
 
-        微服务引擎专享版CCE节点IP
+        微服务引擎CCE节点IP
 
         :return: The ip of this ClusterNode.
         :rtype: str
@@ -128,7 +128,7 @@ class ClusterNode:
     def ip(self, ip):
         """Sets the ip of this ClusterNode.
 
-        微服务引擎专享版CCE节点IP
+        微服务引擎CCE节点IP
 
         :param ip: The ip of this ClusterNode.
         :type ip: str
@@ -139,7 +139,7 @@ class ClusterNode:
     def label(self):
         """Gets the label of this ClusterNode.
 
-        微服务引擎专享版CCE节点标签
+        微服务引擎CCE节点标签
 
         :return: The label of this ClusterNode.
         :rtype: str
@@ -150,7 +150,7 @@ class ClusterNode:
     def label(self, label):
         """Sets the label of this ClusterNode.
 
-        微服务引擎专享版CCE节点标签
+        微服务引擎CCE节点标签
 
         :param label: The label of this ClusterNode.
         :type label: str
@@ -161,7 +161,7 @@ class ClusterNode:
     def status(self):
         """Gets the status of this ClusterNode.
 
-        微服务引擎专享版CCE节点状态
+        微服务引擎CCE节点状态
 
         :return: The status of this ClusterNode.
         :rtype: str
@@ -172,7 +172,7 @@ class ClusterNode:
     def status(self, status):
         """Sets the status of this ClusterNode.
 
-        微服务引擎专享版CCE节点状态
+        微服务引擎CCE节点状态
 
         :param status: The status of this ClusterNode.
         :type status: str

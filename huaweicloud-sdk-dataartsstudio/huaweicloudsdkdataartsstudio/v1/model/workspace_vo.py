@@ -17,7 +17,7 @@ class WorkspaceVO:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'int',
+        'id': 'str',
         'name': 'str',
         'description': 'str',
         'is_physical': 'bool',
@@ -31,7 +31,8 @@ class WorkspaceVO:
         'update_by': 'str',
         'type': 'str',
         'biz_catalog_ids': 'str',
-        'databases': 'list[str]'
+        'databases': 'list[str]',
+        'table_model_prefix': 'str'
     }
 
     attribute_map = {
@@ -49,16 +50,17 @@ class WorkspaceVO:
         'update_by': 'update_by',
         'type': 'type',
         'biz_catalog_ids': 'biz_catalog_ids',
-        'databases': 'databases'
+        'databases': 'databases',
+        'table_model_prefix': 'table_model_prefix'
     }
 
-    def __init__(self, id=None, name=None, description=None, is_physical=None, frequent=None, top=None, level=None, dw_type=None, create_time=None, update_time=None, create_by=None, update_by=None, type=None, biz_catalog_ids=None, databases=None):
+    def __init__(self, id=None, name=None, description=None, is_physical=None, frequent=None, top=None, level=None, dw_type=None, create_time=None, update_time=None, create_by=None, update_by=None, type=None, biz_catalog_ids=None, databases=None, table_model_prefix=None):
         """WorkspaceVO
 
         The model defined in huaweicloud sdk
 
-        :param id: 编号。
-        :type id: int
+        :param id: 编号，填写String类型替代Long类型。
+        :type id: str
         :param name: 工作区名字。
         :type name: str
         :param description: 描述。
@@ -73,20 +75,22 @@ class WorkspaceVO:
         :type level: :class:`huaweicloudsdkdataartsstudio.v1.ModelLevel`
         :param dw_type: 数据连接类型，对应表所在的数仓类型，取值可以为DLI、DWS、MRS_HIVE、POSTGRESQL、MRS_SPARK、CLICKHOUSE、MYSQL、ORACLE和DORIS等。
         :type dw_type: str
-        :param create_time: 创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        :param create_time: 创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
-        :param update_time: 更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        :param update_time: 更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type update_time: datetime
         :param create_by: 创建人。
         :type create_by: str
         :param update_by: 更新人。
         :type update_by: str
-        :param type: 工作区类型枚举。THIRD_NF(关系建模)、DIMENSION(维度建模)。
+        :param type: 工作区类型枚举。 枚举值：   - THIRD_NF: 关系建模   - DIMENSION: 维度建模 
         :type type: str
         :param biz_catalog_ids: 关联的业务分层的ID列表 {\&quot;l1Ids\&quot;:[],\&quot;l2Ids\&quot;:[],\&quot;l3Ids\&quot;:[]}。
         :type biz_catalog_ids: str
         :param databases: 数据库名称数组。
         :type databases: list[str]
+        :param table_model_prefix: 模型校验前缀，长度不超过100，数字字母下划线组成，字母开头
+        :type table_model_prefix: str
         """
         
         
@@ -106,6 +110,7 @@ class WorkspaceVO:
         self._type = None
         self._biz_catalog_ids = None
         self._databases = None
+        self._table_model_prefix = None
         self.discriminator = None
 
         if id is not None:
@@ -136,15 +141,17 @@ class WorkspaceVO:
             self.biz_catalog_ids = biz_catalog_ids
         if databases is not None:
             self.databases = databases
+        if table_model_prefix is not None:
+            self.table_model_prefix = table_model_prefix
 
     @property
     def id(self):
         """Gets the id of this WorkspaceVO.
 
-        编号。
+        编号，填写String类型替代Long类型。
 
         :return: The id of this WorkspaceVO.
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -152,10 +159,10 @@ class WorkspaceVO:
     def id(self, id):
         """Sets the id of this WorkspaceVO.
 
-        编号。
+        编号，填写String类型替代Long类型。
 
         :param id: The id of this WorkspaceVO.
-        :type id: int
+        :type id: str
         """
         self._id = id
 
@@ -313,7 +320,7 @@ class WorkspaceVO:
     def create_time(self):
         """Gets the create_time of this WorkspaceVO.
 
-        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The create_time of this WorkspaceVO.
         :rtype: datetime
@@ -324,7 +331,7 @@ class WorkspaceVO:
     def create_time(self, create_time):
         """Sets the create_time of this WorkspaceVO.
 
-        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param create_time: The create_time of this WorkspaceVO.
         :type create_time: datetime
@@ -335,7 +342,7 @@ class WorkspaceVO:
     def update_time(self):
         """Gets the update_time of this WorkspaceVO.
 
-        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The update_time of this WorkspaceVO.
         :rtype: datetime
@@ -346,7 +353,7 @@ class WorkspaceVO:
     def update_time(self, update_time):
         """Sets the update_time of this WorkspaceVO.
 
-        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param update_time: The update_time of this WorkspaceVO.
         :type update_time: datetime
@@ -401,7 +408,7 @@ class WorkspaceVO:
     def type(self):
         """Gets the type of this WorkspaceVO.
 
-        工作区类型枚举。THIRD_NF(关系建模)、DIMENSION(维度建模)。
+        工作区类型枚举。 枚举值：   - THIRD_NF: 关系建模   - DIMENSION: 维度建模 
 
         :return: The type of this WorkspaceVO.
         :rtype: str
@@ -412,7 +419,7 @@ class WorkspaceVO:
     def type(self, type):
         """Sets the type of this WorkspaceVO.
 
-        工作区类型枚举。THIRD_NF(关系建模)、DIMENSION(维度建模)。
+        工作区类型枚举。 枚举值：   - THIRD_NF: 关系建模   - DIMENSION: 维度建模 
 
         :param type: The type of this WorkspaceVO.
         :type type: str
@@ -462,6 +469,28 @@ class WorkspaceVO:
         :type databases: list[str]
         """
         self._databases = databases
+
+    @property
+    def table_model_prefix(self):
+        """Gets the table_model_prefix of this WorkspaceVO.
+
+        模型校验前缀，长度不超过100，数字字母下划线组成，字母开头
+
+        :return: The table_model_prefix of this WorkspaceVO.
+        :rtype: str
+        """
+        return self._table_model_prefix
+
+    @table_model_prefix.setter
+    def table_model_prefix(self, table_model_prefix):
+        """Sets the table_model_prefix of this WorkspaceVO.
+
+        模型校验前缀，长度不超过100，数字字母下划线组成，字母开头
+
+        :param table_model_prefix: The table_model_prefix of this WorkspaceVO.
+        :type table_model_prefix: str
+        """
+        self._table_model_prefix = table_model_prefix
 
     def to_dict(self):
         """Returns the model properties as a dict"""

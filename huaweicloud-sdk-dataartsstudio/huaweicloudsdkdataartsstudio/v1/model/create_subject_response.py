@@ -18,7 +18,7 @@ class CreateSubjectResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'object'
+        'data': 'CreateSubjectResultData'
     }
 
     attribute_map = {
@@ -30,8 +30,8 @@ class CreateSubjectResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: 返回的数据信息。
-        :type data: object
+        :param data: 
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.CreateSubjectResultData`
         """
         
         super(CreateSubjectResponse, self).__init__()
@@ -46,10 +46,8 @@ class CreateSubjectResponse(SdkResponse):
     def data(self):
         """Gets the data of this CreateSubjectResponse.
 
-        返回的数据信息。
-
         :return: The data of this CreateSubjectResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateSubjectResultData`
         """
         return self._data
 
@@ -57,10 +55,8 @@ class CreateSubjectResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this CreateSubjectResponse.
 
-        返回的数据信息。
-
         :param data: The data of this CreateSubjectResponse.
-        :type data: object
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.CreateSubjectResultData`
         """
         self._data = data
 

@@ -34,11 +34,11 @@ class CreateEngineResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: 创建的微服务引擎专享版ID
+        :param id: 创建的微服务引擎ID
         :type id: str
-        :param name: 创建的微服务引擎专享版名称
+        :param name: 创建的微服务引擎名称
         :type name: str
-        :param job_id: 微服务引擎专享版执行的任务ID
+        :param job_id: 微服务引擎执行的任务ID
         :type job_id: int
         """
         
@@ -60,7 +60,7 @@ class CreateEngineResponse(SdkResponse):
     def id(self):
         """Gets the id of this CreateEngineResponse.
 
-        创建的微服务引擎专享版ID
+        创建的微服务引擎ID
 
         :return: The id of this CreateEngineResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class CreateEngineResponse(SdkResponse):
     def id(self, id):
         """Sets the id of this CreateEngineResponse.
 
-        创建的微服务引擎专享版ID
+        创建的微服务引擎ID
 
         :param id: The id of this CreateEngineResponse.
         :type id: str
@@ -82,7 +82,7 @@ class CreateEngineResponse(SdkResponse):
     def name(self):
         """Gets the name of this CreateEngineResponse.
 
-        创建的微服务引擎专享版名称
+        创建的微服务引擎名称
 
         :return: The name of this CreateEngineResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class CreateEngineResponse(SdkResponse):
     def name(self, name):
         """Sets the name of this CreateEngineResponse.
 
-        创建的微服务引擎专享版名称
+        创建的微服务引擎名称
 
         :param name: The name of this CreateEngineResponse.
         :type name: str
@@ -104,7 +104,7 @@ class CreateEngineResponse(SdkResponse):
     def job_id(self):
         """Gets the job_id of this CreateEngineResponse.
 
-        微服务引擎专享版执行的任务ID
+        微服务引擎执行的任务ID
 
         :return: The job_id of this CreateEngineResponse.
         :rtype: int
@@ -115,7 +115,7 @@ class CreateEngineResponse(SdkResponse):
     def job_id(self, job_id):
         """Sets the job_id of this CreateEngineResponse.
 
-        微服务引擎专享版执行的任务ID
+        微服务引擎执行的任务ID
 
         :param job_id: The job_id of this CreateEngineResponse.
         :type job_id: int

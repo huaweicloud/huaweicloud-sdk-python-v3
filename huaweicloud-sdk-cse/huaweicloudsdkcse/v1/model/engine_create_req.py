@@ -30,7 +30,20 @@ class EngineCreateReq:
         'public_ip_id': 'str',
         'auth_cred': 'EngineRbacPwd',
         'spec_type': 'str',
-        'inputs': 'dict(str, str)'
+        'inputs': 'dict(str, str)',
+        'enginestate_info': 'EngineCreateReqEnginestateInfo',
+        'period_type': 'int',
+        'flavor_type': 'EngineCreateReqFlavorType',
+        'enterprise_project': 'EngineCreateReqEnterpriseProject',
+        'vpc_cidr': 'str',
+        'resource_params': 'EngineCreateReqResourceParams',
+        'product_id': 'str',
+        'capacity_product_id': 'str',
+        'is_free': 'bool',
+        'subnet_name': 'str',
+        'tags': 'list[str]',
+        'maintenance_config': 'EngineCreateReqMaintenanceConfig',
+        'elbid': 'str'
     }
 
     attribute_map = {
@@ -47,42 +60,81 @@ class EngineCreateReq:
         'public_ip_id': 'publicIpId',
         'auth_cred': 'auth_cred',
         'spec_type': 'specType',
-        'inputs': 'inputs'
+        'inputs': 'inputs',
+        'enginestate_info': 'enginestateInfo',
+        'period_type': 'periodType',
+        'flavor_type': 'flavorType',
+        'enterprise_project': 'enterpriseProject',
+        'vpc_cidr': 'vpcCidr',
+        'resource_params': 'resourceParams',
+        'product_id': 'productId',
+        'capacity_product_id': 'capacityProductId',
+        'is_free': 'isFree',
+        'subnet_name': 'subnetName',
+        'tags': 'tags',
+        'maintenance_config': 'maintenanceConfig',
+        'elbid': 'elbid'
     }
 
-    def __init__(self, name=None, description=None, payment=None, flavor=None, az_list=None, auth_type=None, vpc=None, vpc_id=None, network_id=None, subnet_cidr=None, public_ip_id=None, auth_cred=None, spec_type=None, inputs=None):
+    def __init__(self, name=None, description=None, payment=None, flavor=None, az_list=None, auth_type=None, vpc=None, vpc_id=None, network_id=None, subnet_cidr=None, public_ip_id=None, auth_cred=None, spec_type=None, inputs=None, enginestate_info=None, period_type=None, flavor_type=None, enterprise_project=None, vpc_cidr=None, resource_params=None, product_id=None, capacity_product_id=None, is_free=None, subnet_name=None, tags=None, maintenance_config=None, elbid=None):
         """EngineCreateReq
 
         The model defined in huaweicloud sdk
 
-        :param name: 微服务引擎专享版的名称，名称为字母开头，字母、数字、-组成，且不能以-结尾，3-24个字符。
+        :param name: 微服务引擎的名称，名称为字母开头，字母、数字、-组成，且不能以-结尾，3-24个字符。
         :type name: str
-        :param description: 微服务引擎专享版描述，长度0~255。
+        :param description: 微服务引擎描述，长度0~255。
         :type description: str
-        :param payment: 微服务引擎专享版计费方式，1表示按需
+        :param payment: 微服务引擎计费方式，1表示按需
         :type payment: str
-        :param flavor: 微服务引擎专享版的规格
+        :param flavor: 微服务引擎的规格
         :type flavor: str
-        :param az_list: 当前局点可用区列表。
+        :param az_list: 当前局点可用区列表，创建ServiceComb引擎专享版需要填写。
         :type az_list: list[str]
-        :param auth_type: 微服务引擎专享版认证方式，RBAC为安全认证，NONE为无认证。
+        :param auth_type: ServiceComb引擎专享版与注册配置中心认证方式，RBAC为安全认证，NONE为无认证。
         :type auth_type: str
         :param vpc: vpc名称
         :type vpc: str
         :param vpc_id: vpc标识
         :type vpc_id: str
-        :param network_id: 微服务引擎专享版子网ID
+        :param network_id: 微服务引擎子网ID
         :type network_id: str
-        :param subnet_cidr: 微服务引擎专享版子网划分
+        :param subnet_cidr: 微服务引擎子网划分
         :type subnet_cidr: str
-        :param public_ip_id: 微服务引擎专享版公网地址ID，当前为null
+        :param public_ip_id: ServiceComb引擎专享版公网地址ID，当前为null
         :type public_ip_id: str
         :param auth_cred: 
         :type auth_cred: :class:`huaweicloudsdkcse.v1.EngineRbacPwd`
-        :param spec_type: 微服务引擎专享版应用部署类型
+        :param spec_type: 微服务引擎部署类型
         :type spec_type: str
         :param inputs: 引擎附加参数
         :type inputs: dict(str, str)
+        :param enginestate_info: 
+        :type enginestate_info: :class:`huaweicloudsdkcse.v1.EngineCreateReqEnginestateInfo`
+        :param period_type: 创建阶段类型
+        :type period_type: int
+        :param flavor_type: 
+        :type flavor_type: :class:`huaweicloudsdkcse.v1.EngineCreateReqFlavorType`
+        :param enterprise_project: 
+        :type enterprise_project: :class:`huaweicloudsdkcse.v1.EngineCreateReqEnterpriseProject`
+        :param vpc_cidr: 网关vpc划分
+        :type vpc_cidr: str
+        :param resource_params: 
+        :type resource_params: :class:`huaweicloudsdkcse.v1.EngineCreateReqResourceParams`
+        :param product_id: 产品ID
+        :type product_id: str
+        :param capacity_product_id: 容量产品ID
+        :type capacity_product_id: str
+        :param is_free: 微服务引擎是否免费
+        :type is_free: bool
+        :param subnet_name: 微服务引擎使用的子网名称
+        :type subnet_name: str
+        :param tags: 标签
+        :type tags: list[str]
+        :param maintenance_config: 
+        :type maintenance_config: :class:`huaweicloudsdkcse.v1.EngineCreateReqMaintenanceConfig`
+        :param elbid: 微服务引擎使用的elb的id
+        :type elbid: str
         """
         
         
@@ -101,6 +153,19 @@ class EngineCreateReq:
         self._auth_cred = None
         self._spec_type = None
         self._inputs = None
+        self._enginestate_info = None
+        self._period_type = None
+        self._flavor_type = None
+        self._enterprise_project = None
+        self._vpc_cidr = None
+        self._resource_params = None
+        self._product_id = None
+        self._capacity_product_id = None
+        self._is_free = None
+        self._subnet_name = None
+        self._tags = None
+        self._maintenance_config = None
+        self._elbid = None
         self.discriminator = None
 
         self.name = name
@@ -108,7 +173,8 @@ class EngineCreateReq:
             self.description = description
         self.payment = payment
         self.flavor = flavor
-        self.az_list = az_list
+        if az_list is not None:
+            self.az_list = az_list
         self.auth_type = auth_type
         self.vpc = vpc
         if vpc_id is not None:
@@ -122,12 +188,38 @@ class EngineCreateReq:
         self.spec_type = spec_type
         if inputs is not None:
             self.inputs = inputs
+        if enginestate_info is not None:
+            self.enginestate_info = enginestate_info
+        if period_type is not None:
+            self.period_type = period_type
+        if flavor_type is not None:
+            self.flavor_type = flavor_type
+        if enterprise_project is not None:
+            self.enterprise_project = enterprise_project
+        if vpc_cidr is not None:
+            self.vpc_cidr = vpc_cidr
+        if resource_params is not None:
+            self.resource_params = resource_params
+        if product_id is not None:
+            self.product_id = product_id
+        if capacity_product_id is not None:
+            self.capacity_product_id = capacity_product_id
+        if is_free is not None:
+            self.is_free = is_free
+        if subnet_name is not None:
+            self.subnet_name = subnet_name
+        if tags is not None:
+            self.tags = tags
+        if maintenance_config is not None:
+            self.maintenance_config = maintenance_config
+        if elbid is not None:
+            self.elbid = elbid
 
     @property
     def name(self):
         """Gets the name of this EngineCreateReq.
 
-        微服务引擎专享版的名称，名称为字母开头，字母、数字、-组成，且不能以-结尾，3-24个字符。
+        微服务引擎的名称，名称为字母开头，字母、数字、-组成，且不能以-结尾，3-24个字符。
 
         :return: The name of this EngineCreateReq.
         :rtype: str
@@ -138,7 +230,7 @@ class EngineCreateReq:
     def name(self, name):
         """Sets the name of this EngineCreateReq.
 
-        微服务引擎专享版的名称，名称为字母开头，字母、数字、-组成，且不能以-结尾，3-24个字符。
+        微服务引擎的名称，名称为字母开头，字母、数字、-组成，且不能以-结尾，3-24个字符。
 
         :param name: The name of this EngineCreateReq.
         :type name: str
@@ -149,7 +241,7 @@ class EngineCreateReq:
     def description(self):
         """Gets the description of this EngineCreateReq.
 
-        微服务引擎专享版描述，长度0~255。
+        微服务引擎描述，长度0~255。
 
         :return: The description of this EngineCreateReq.
         :rtype: str
@@ -160,7 +252,7 @@ class EngineCreateReq:
     def description(self, description):
         """Sets the description of this EngineCreateReq.
 
-        微服务引擎专享版描述，长度0~255。
+        微服务引擎描述，长度0~255。
 
         :param description: The description of this EngineCreateReq.
         :type description: str
@@ -171,7 +263,7 @@ class EngineCreateReq:
     def payment(self):
         """Gets the payment of this EngineCreateReq.
 
-        微服务引擎专享版计费方式，1表示按需
+        微服务引擎计费方式，1表示按需
 
         :return: The payment of this EngineCreateReq.
         :rtype: str
@@ -182,7 +274,7 @@ class EngineCreateReq:
     def payment(self, payment):
         """Sets the payment of this EngineCreateReq.
 
-        微服务引擎专享版计费方式，1表示按需
+        微服务引擎计费方式，1表示按需
 
         :param payment: The payment of this EngineCreateReq.
         :type payment: str
@@ -193,7 +285,7 @@ class EngineCreateReq:
     def flavor(self):
         """Gets the flavor of this EngineCreateReq.
 
-        微服务引擎专享版的规格
+        微服务引擎的规格
 
         :return: The flavor of this EngineCreateReq.
         :rtype: str
@@ -204,7 +296,7 @@ class EngineCreateReq:
     def flavor(self, flavor):
         """Sets the flavor of this EngineCreateReq.
 
-        微服务引擎专享版的规格
+        微服务引擎的规格
 
         :param flavor: The flavor of this EngineCreateReq.
         :type flavor: str
@@ -215,7 +307,7 @@ class EngineCreateReq:
     def az_list(self):
         """Gets the az_list of this EngineCreateReq.
 
-        当前局点可用区列表。
+        当前局点可用区列表，创建ServiceComb引擎专享版需要填写。
 
         :return: The az_list of this EngineCreateReq.
         :rtype: list[str]
@@ -226,7 +318,7 @@ class EngineCreateReq:
     def az_list(self, az_list):
         """Sets the az_list of this EngineCreateReq.
 
-        当前局点可用区列表。
+        当前局点可用区列表，创建ServiceComb引擎专享版需要填写。
 
         :param az_list: The az_list of this EngineCreateReq.
         :type az_list: list[str]
@@ -237,7 +329,7 @@ class EngineCreateReq:
     def auth_type(self):
         """Gets the auth_type of this EngineCreateReq.
 
-        微服务引擎专享版认证方式，RBAC为安全认证，NONE为无认证。
+        ServiceComb引擎专享版与注册配置中心认证方式，RBAC为安全认证，NONE为无认证。
 
         :return: The auth_type of this EngineCreateReq.
         :rtype: str
@@ -248,7 +340,7 @@ class EngineCreateReq:
     def auth_type(self, auth_type):
         """Sets the auth_type of this EngineCreateReq.
 
-        微服务引擎专享版认证方式，RBAC为安全认证，NONE为无认证。
+        ServiceComb引擎专享版与注册配置中心认证方式，RBAC为安全认证，NONE为无认证。
 
         :param auth_type: The auth_type of this EngineCreateReq.
         :type auth_type: str
@@ -303,7 +395,7 @@ class EngineCreateReq:
     def network_id(self):
         """Gets the network_id of this EngineCreateReq.
 
-        微服务引擎专享版子网ID
+        微服务引擎子网ID
 
         :return: The network_id of this EngineCreateReq.
         :rtype: str
@@ -314,7 +406,7 @@ class EngineCreateReq:
     def network_id(self, network_id):
         """Sets the network_id of this EngineCreateReq.
 
-        微服务引擎专享版子网ID
+        微服务引擎子网ID
 
         :param network_id: The network_id of this EngineCreateReq.
         :type network_id: str
@@ -325,7 +417,7 @@ class EngineCreateReq:
     def subnet_cidr(self):
         """Gets the subnet_cidr of this EngineCreateReq.
 
-        微服务引擎专享版子网划分
+        微服务引擎子网划分
 
         :return: The subnet_cidr of this EngineCreateReq.
         :rtype: str
@@ -336,7 +428,7 @@ class EngineCreateReq:
     def subnet_cidr(self, subnet_cidr):
         """Sets the subnet_cidr of this EngineCreateReq.
 
-        微服务引擎专享版子网划分
+        微服务引擎子网划分
 
         :param subnet_cidr: The subnet_cidr of this EngineCreateReq.
         :type subnet_cidr: str
@@ -347,7 +439,7 @@ class EngineCreateReq:
     def public_ip_id(self):
         """Gets the public_ip_id of this EngineCreateReq.
 
-        微服务引擎专享版公网地址ID，当前为null
+        ServiceComb引擎专享版公网地址ID，当前为null
 
         :return: The public_ip_id of this EngineCreateReq.
         :rtype: str
@@ -358,7 +450,7 @@ class EngineCreateReq:
     def public_ip_id(self, public_ip_id):
         """Sets the public_ip_id of this EngineCreateReq.
 
-        微服务引擎专享版公网地址ID，当前为null
+        ServiceComb引擎专享版公网地址ID，当前为null
 
         :param public_ip_id: The public_ip_id of this EngineCreateReq.
         :type public_ip_id: str
@@ -387,7 +479,7 @@ class EngineCreateReq:
     def spec_type(self):
         """Gets the spec_type of this EngineCreateReq.
 
-        微服务引擎专享版应用部署类型
+        微服务引擎部署类型
 
         :return: The spec_type of this EngineCreateReq.
         :rtype: str
@@ -398,7 +490,7 @@ class EngineCreateReq:
     def spec_type(self, spec_type):
         """Sets the spec_type of this EngineCreateReq.
 
-        微服务引擎专享版应用部署类型
+        微服务引擎部署类型
 
         :param spec_type: The spec_type of this EngineCreateReq.
         :type spec_type: str
@@ -426,6 +518,272 @@ class EngineCreateReq:
         :type inputs: dict(str, str)
         """
         self._inputs = inputs
+
+    @property
+    def enginestate_info(self):
+        """Gets the enginestate_info of this EngineCreateReq.
+
+        :return: The enginestate_info of this EngineCreateReq.
+        :rtype: :class:`huaweicloudsdkcse.v1.EngineCreateReqEnginestateInfo`
+        """
+        return self._enginestate_info
+
+    @enginestate_info.setter
+    def enginestate_info(self, enginestate_info):
+        """Sets the enginestate_info of this EngineCreateReq.
+
+        :param enginestate_info: The enginestate_info of this EngineCreateReq.
+        :type enginestate_info: :class:`huaweicloudsdkcse.v1.EngineCreateReqEnginestateInfo`
+        """
+        self._enginestate_info = enginestate_info
+
+    @property
+    def period_type(self):
+        """Gets the period_type of this EngineCreateReq.
+
+        创建阶段类型
+
+        :return: The period_type of this EngineCreateReq.
+        :rtype: int
+        """
+        return self._period_type
+
+    @period_type.setter
+    def period_type(self, period_type):
+        """Sets the period_type of this EngineCreateReq.
+
+        创建阶段类型
+
+        :param period_type: The period_type of this EngineCreateReq.
+        :type period_type: int
+        """
+        self._period_type = period_type
+
+    @property
+    def flavor_type(self):
+        """Gets the flavor_type of this EngineCreateReq.
+
+        :return: The flavor_type of this EngineCreateReq.
+        :rtype: :class:`huaweicloudsdkcse.v1.EngineCreateReqFlavorType`
+        """
+        return self._flavor_type
+
+    @flavor_type.setter
+    def flavor_type(self, flavor_type):
+        """Sets the flavor_type of this EngineCreateReq.
+
+        :param flavor_type: The flavor_type of this EngineCreateReq.
+        :type flavor_type: :class:`huaweicloudsdkcse.v1.EngineCreateReqFlavorType`
+        """
+        self._flavor_type = flavor_type
+
+    @property
+    def enterprise_project(self):
+        """Gets the enterprise_project of this EngineCreateReq.
+
+        :return: The enterprise_project of this EngineCreateReq.
+        :rtype: :class:`huaweicloudsdkcse.v1.EngineCreateReqEnterpriseProject`
+        """
+        return self._enterprise_project
+
+    @enterprise_project.setter
+    def enterprise_project(self, enterprise_project):
+        """Sets the enterprise_project of this EngineCreateReq.
+
+        :param enterprise_project: The enterprise_project of this EngineCreateReq.
+        :type enterprise_project: :class:`huaweicloudsdkcse.v1.EngineCreateReqEnterpriseProject`
+        """
+        self._enterprise_project = enterprise_project
+
+    @property
+    def vpc_cidr(self):
+        """Gets the vpc_cidr of this EngineCreateReq.
+
+        网关vpc划分
+
+        :return: The vpc_cidr of this EngineCreateReq.
+        :rtype: str
+        """
+        return self._vpc_cidr
+
+    @vpc_cidr.setter
+    def vpc_cidr(self, vpc_cidr):
+        """Sets the vpc_cidr of this EngineCreateReq.
+
+        网关vpc划分
+
+        :param vpc_cidr: The vpc_cidr of this EngineCreateReq.
+        :type vpc_cidr: str
+        """
+        self._vpc_cidr = vpc_cidr
+
+    @property
+    def resource_params(self):
+        """Gets the resource_params of this EngineCreateReq.
+
+        :return: The resource_params of this EngineCreateReq.
+        :rtype: :class:`huaweicloudsdkcse.v1.EngineCreateReqResourceParams`
+        """
+        return self._resource_params
+
+    @resource_params.setter
+    def resource_params(self, resource_params):
+        """Sets the resource_params of this EngineCreateReq.
+
+        :param resource_params: The resource_params of this EngineCreateReq.
+        :type resource_params: :class:`huaweicloudsdkcse.v1.EngineCreateReqResourceParams`
+        """
+        self._resource_params = resource_params
+
+    @property
+    def product_id(self):
+        """Gets the product_id of this EngineCreateReq.
+
+        产品ID
+
+        :return: The product_id of this EngineCreateReq.
+        :rtype: str
+        """
+        return self._product_id
+
+    @product_id.setter
+    def product_id(self, product_id):
+        """Sets the product_id of this EngineCreateReq.
+
+        产品ID
+
+        :param product_id: The product_id of this EngineCreateReq.
+        :type product_id: str
+        """
+        self._product_id = product_id
+
+    @property
+    def capacity_product_id(self):
+        """Gets the capacity_product_id of this EngineCreateReq.
+
+        容量产品ID
+
+        :return: The capacity_product_id of this EngineCreateReq.
+        :rtype: str
+        """
+        return self._capacity_product_id
+
+    @capacity_product_id.setter
+    def capacity_product_id(self, capacity_product_id):
+        """Sets the capacity_product_id of this EngineCreateReq.
+
+        容量产品ID
+
+        :param capacity_product_id: The capacity_product_id of this EngineCreateReq.
+        :type capacity_product_id: str
+        """
+        self._capacity_product_id = capacity_product_id
+
+    @property
+    def is_free(self):
+        """Gets the is_free of this EngineCreateReq.
+
+        微服务引擎是否免费
+
+        :return: The is_free of this EngineCreateReq.
+        :rtype: bool
+        """
+        return self._is_free
+
+    @is_free.setter
+    def is_free(self, is_free):
+        """Sets the is_free of this EngineCreateReq.
+
+        微服务引擎是否免费
+
+        :param is_free: The is_free of this EngineCreateReq.
+        :type is_free: bool
+        """
+        self._is_free = is_free
+
+    @property
+    def subnet_name(self):
+        """Gets the subnet_name of this EngineCreateReq.
+
+        微服务引擎使用的子网名称
+
+        :return: The subnet_name of this EngineCreateReq.
+        :rtype: str
+        """
+        return self._subnet_name
+
+    @subnet_name.setter
+    def subnet_name(self, subnet_name):
+        """Sets the subnet_name of this EngineCreateReq.
+
+        微服务引擎使用的子网名称
+
+        :param subnet_name: The subnet_name of this EngineCreateReq.
+        :type subnet_name: str
+        """
+        self._subnet_name = subnet_name
+
+    @property
+    def tags(self):
+        """Gets the tags of this EngineCreateReq.
+
+        标签
+
+        :return: The tags of this EngineCreateReq.
+        :rtype: list[str]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this EngineCreateReq.
+
+        标签
+
+        :param tags: The tags of this EngineCreateReq.
+        :type tags: list[str]
+        """
+        self._tags = tags
+
+    @property
+    def maintenance_config(self):
+        """Gets the maintenance_config of this EngineCreateReq.
+
+        :return: The maintenance_config of this EngineCreateReq.
+        :rtype: :class:`huaweicloudsdkcse.v1.EngineCreateReqMaintenanceConfig`
+        """
+        return self._maintenance_config
+
+    @maintenance_config.setter
+    def maintenance_config(self, maintenance_config):
+        """Sets the maintenance_config of this EngineCreateReq.
+
+        :param maintenance_config: The maintenance_config of this EngineCreateReq.
+        :type maintenance_config: :class:`huaweicloudsdkcse.v1.EngineCreateReqMaintenanceConfig`
+        """
+        self._maintenance_config = maintenance_config
+
+    @property
+    def elbid(self):
+        """Gets the elbid of this EngineCreateReq.
+
+        微服务引擎使用的elb的id
+
+        :return: The elbid of this EngineCreateReq.
+        :rtype: str
+        """
+        return self._elbid
+
+    @elbid.setter
+    def elbid(self, elbid):
+        """Sets the elbid of this EngineCreateReq.
+
+        微服务引擎使用的elb的id
+
+        :param elbid: The elbid of this EngineCreateReq.
+        :type elbid: str
+        """
+        self._elbid = elbid
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -37,7 +37,7 @@ class UpdateDesignTableQualityParam:
 
         The model defined in huaweicloud sdk
 
-        :param biz_type: 表类型。TABLE_MODEL(关系模型（逻辑模型/物理模型）)、AGGREGATION_LOGIC_TABLE(汇总表)、FACT_LOGIC_TABLE(事实表)、DIMENSION_LOGIC_TABLE(维度表)。
+        :param biz_type: 表类型。 枚举值：   - TABLE_MODEL: 关系模型（逻辑模型/物理模型）   - AGGREGATION_LOGIC_TABLE: 汇总表   - FACT_LOGIC_TABLE: 事实表   - DIMENSION: 维度   - DIMENSION_LOGIC_TABLE: 维度表 
         :type biz_type: str
         :param dirty_out_switch: 异常数据输出开关。
         :type dirty_out_switch: bool
@@ -73,7 +73,7 @@ class UpdateDesignTableQualityParam:
     def biz_type(self):
         """Gets the biz_type of this UpdateDesignTableQualityParam.
 
-        表类型。TABLE_MODEL(关系模型（逻辑模型/物理模型）)、AGGREGATION_LOGIC_TABLE(汇总表)、FACT_LOGIC_TABLE(事实表)、DIMENSION_LOGIC_TABLE(维度表)。
+        表类型。 枚举值：   - TABLE_MODEL: 关系模型（逻辑模型/物理模型）   - AGGREGATION_LOGIC_TABLE: 汇总表   - FACT_LOGIC_TABLE: 事实表   - DIMENSION: 维度   - DIMENSION_LOGIC_TABLE: 维度表 
 
         :return: The biz_type of this UpdateDesignTableQualityParam.
         :rtype: str
@@ -84,7 +84,7 @@ class UpdateDesignTableQualityParam:
     def biz_type(self, biz_type):
         """Sets the biz_type of this UpdateDesignTableQualityParam.
 
-        表类型。TABLE_MODEL(关系模型（逻辑模型/物理模型）)、AGGREGATION_LOGIC_TABLE(汇总表)、FACT_LOGIC_TABLE(事实表)、DIMENSION_LOGIC_TABLE(维度表)。
+        表类型。 枚举值：   - TABLE_MODEL: 关系模型（逻辑模型/物理模型）   - AGGREGATION_LOGIC_TABLE: 汇总表   - FACT_LOGIC_TABLE: 事实表   - DIMENSION: 维度   - DIMENSION_LOGIC_TABLE: 维度表 
 
         :param biz_type: The biz_type of this UpdateDesignTableQualityParam.
         :type biz_type: str

@@ -19,16 +19,20 @@ class SearchFieldsForRelationRequest:
     openapi_types = {
         'workspace': 'str',
         'x_project_id': 'str',
+        'limit': 'int',
+        'offset': 'int',
         'model_id': 'str'
     }
 
     attribute_map = {
         'workspace': 'workspace',
         'x_project_id': 'X-Project-Id',
+        'limit': 'limit',
+        'offset': 'offset',
         'model_id': 'model_id'
     }
 
-    def __init__(self, workspace=None, x_project_id=None, model_id=None):
+    def __init__(self, workspace=None, x_project_id=None, limit=None, offset=None, model_id=None):
         """SearchFieldsForRelationRequest
 
         The model defined in huaweicloud sdk
@@ -37,7 +41,11 @@ class SearchFieldsForRelationRequest:
         :type workspace: str
         :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
         :type x_project_id: str
-        :param model_id: 所属关系建模的模型ID。
+        :param limit: 每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+        :type limit: int
+        :param offset: 查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
+        :type offset: int
+        :param model_id: 所属关系建模的模型ID，填写String类型替代Long类型。
         :type model_id: str
         """
         
@@ -45,12 +53,18 @@ class SearchFieldsForRelationRequest:
 
         self._workspace = None
         self._x_project_id = None
+        self._limit = None
+        self._offset = None
         self._model_id = None
         self.discriminator = None
 
         self.workspace = workspace
         if x_project_id is not None:
             self.x_project_id = x_project_id
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
         self.model_id = model_id
 
     @property
@@ -98,10 +112,54 @@ class SearchFieldsForRelationRequest:
         self._x_project_id = x_project_id
 
     @property
+    def limit(self):
+        """Gets the limit of this SearchFieldsForRelationRequest.
+
+        每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+
+        :return: The limit of this SearchFieldsForRelationRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this SearchFieldsForRelationRequest.
+
+        每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+
+        :param limit: The limit of this SearchFieldsForRelationRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def offset(self):
+        """Gets the offset of this SearchFieldsForRelationRequest.
+
+        查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
+
+        :return: The offset of this SearchFieldsForRelationRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this SearchFieldsForRelationRequest.
+
+        查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
+
+        :param offset: The offset of this SearchFieldsForRelationRequest.
+        :type offset: int
+        """
+        self._offset = offset
+
+    @property
     def model_id(self):
         """Gets the model_id of this SearchFieldsForRelationRequest.
 
-        所属关系建模的模型ID。
+        所属关系建模的模型ID，填写String类型替代Long类型。
 
         :return: The model_id of this SearchFieldsForRelationRequest.
         :rtype: str
@@ -112,7 +170,7 @@ class SearchFieldsForRelationRequest:
     def model_id(self, model_id):
         """Sets the model_id of this SearchFieldsForRelationRequest.
 
-        所属关系建模的模型ID。
+        所属关系建模的模型ID，填写String类型替代Long类型。
 
         :param model_id: The model_id of this SearchFieldsForRelationRequest.
         :type model_id: str

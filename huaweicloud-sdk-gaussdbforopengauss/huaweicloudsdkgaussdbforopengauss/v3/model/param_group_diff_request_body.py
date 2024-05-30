@@ -33,7 +33,7 @@ class ParamGroupDiffRequestBody:
 
         :param source_id: 需要进行比较的参数组模板ID。
         :type source_id: str
-        :param target_id: 需要进行比较的参数组模板ID。
+        :param target_id: 需要进行比较的参数组模板ID，需要与源参数组模板的部署形态相同才可比较。
         :type target_id: str
         """
         
@@ -72,7 +72,7 @@ class ParamGroupDiffRequestBody:
     def target_id(self):
         """Gets the target_id of this ParamGroupDiffRequestBody.
 
-        需要进行比较的参数组模板ID。
+        需要进行比较的参数组模板ID，需要与源参数组模板的部署形态相同才可比较。
 
         :return: The target_id of this ParamGroupDiffRequestBody.
         :rtype: str
@@ -83,7 +83,7 @@ class ParamGroupDiffRequestBody:
     def target_id(self, target_id):
         """Sets the target_id of this ParamGroupDiffRequestBody.
 
-        需要进行比较的参数组模板ID。
+        需要进行比较的参数组模板ID，需要与源参数组模板的部署形态相同才可比较。
 
         :param target_id: The target_id of this ParamGroupDiffRequestBody.
         :type target_id: str

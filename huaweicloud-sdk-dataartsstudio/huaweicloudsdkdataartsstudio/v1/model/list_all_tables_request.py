@@ -29,7 +29,7 @@ class ListAllTablesRequest:
         'end_time': 'str',
         'limit': 'int',
         'offset': 'int',
-        'biz_catalog_id_list': 'list[int]',
+        'biz_catalog_id_list': 'list[str]',
         'biz_type_list': 'list[str]'
     }
 
@@ -63,11 +63,11 @@ class ListAllTablesRequest:
         :type name: str
         :param create_by: 按创建者查询。
         :type create_by: str
-        :param status: 业务状态。DRAFT(草稿)、PUBLISH_DEVELOPING(发布待审批)、PUBLISHED(已发布)、OFFLINE_DEVELOPING(下线待审批)、OFFLINE(已下线)、REJECT(已驳回)。
+        :param status: 业务状态。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审批   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审批   - OFFLINE: 已下线   - REJECT: 已驳回 
         :type status: str
-        :param sync_status: 同步状态枚举。RUNNING(同步中)、NO_NEED(未同步)、SUMMARY_SUCCESS(整体成功)、SUMMARY_FAILED(整体失败)。
+        :param sync_status: 同步状态枚举。 枚举值：   - RUNNING: 同步中   - NO_NEED: 未同步   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败 
         :type sync_status: str
-        :param sync_key: 同步任务类型枚举。BUSINESS_ASSET(同步业务资产)、DATA_QUALITY(创建质量作业)、TECHNICAL_ASSET(同步技术资产)、META_DATA_LINK(资产关联)、PHYSICAL_TABLE(创建表（生产环境）)、DEV_PHYSICAL_TABLE(创建表（开发环境）)、DLF_TASK(创建数据开发作业)、MATERIALIZATION(数值落库（码表）)、PUBLISH_TO_DLM(发布数据服务API)、SUMMARY_STATUS(整体状态)。
+        :param sync_key: 同步任务类型枚举。 枚举值：   - BUSINESS_ASSET: 同步业务资产   - DATA_QUALITY: 创建质量作业   - TECHNICAL_ASSET: 同步技术资产   - META_DATA_LINK: 资产关联   - PHYSICAL_TABLE: 创建表（生产环境）   - DEV_PHYSICAL_TABLE: 创建表（开发环境）   - DLF_TASK: 创建数据开发作业   - MATERIALIZATION: 数值落库（码表）   - PUBLISH_TO_DLM: 发布数据服务API   - SUMMARY_STATUS: 整体状态 
         :type sync_key: list[str]
         :param biz_catalog_id: 所属的业务分层的ID。
         :type biz_catalog_id: str
@@ -75,13 +75,13 @@ class ListAllTablesRequest:
         :type begin_time: str
         :param end_time: 时间过滤右边界，与begin_time一起使用只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type end_time: str
-        :param limit: 查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+        :param limit: 每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
         :type limit: int
         :param offset: 查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
         :type offset: int
-        :param biz_catalog_id_list: 所属主题的ID列表。
-        :type biz_catalog_id_list: list[int]
-        :param biz_type_list: 查询的表类型，必填。TABLE_MODEL_LOGIC(逻辑实体)、TABLE_MODEL(物理表)、DIMENSION_LOGIC_TABLE(维度表)、FACT_LOGIC_TABLE(事实表)、AGGREGATION_LOGIC_TABLE(汇总表)。
+        :param biz_catalog_id_list: 所属主题的ID列表，填写String类型替代Long类型。
+        :type biz_catalog_id_list: list[str]
+        :param biz_type_list: 查询的表类型，必填。 枚举值：   - TABLE_MODEL_LOGIC: 逻辑实体   - TABLE_MODEL: 物理表   - DIMENSION_LOGIC_TABLE: 维度表   - FACT_LOGIC_TABLE: 事实表   - AGGREGATION_LOGIC_TABLE: 汇总表 
         :type biz_type_list: list[str]
         """
         
@@ -222,7 +222,7 @@ class ListAllTablesRequest:
     def status(self):
         """Gets the status of this ListAllTablesRequest.
 
-        业务状态。DRAFT(草稿)、PUBLISH_DEVELOPING(发布待审批)、PUBLISHED(已发布)、OFFLINE_DEVELOPING(下线待审批)、OFFLINE(已下线)、REJECT(已驳回)。
+        业务状态。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审批   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审批   - OFFLINE: 已下线   - REJECT: 已驳回 
 
         :return: The status of this ListAllTablesRequest.
         :rtype: str
@@ -233,7 +233,7 @@ class ListAllTablesRequest:
     def status(self, status):
         """Sets the status of this ListAllTablesRequest.
 
-        业务状态。DRAFT(草稿)、PUBLISH_DEVELOPING(发布待审批)、PUBLISHED(已发布)、OFFLINE_DEVELOPING(下线待审批)、OFFLINE(已下线)、REJECT(已驳回)。
+        业务状态。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审批   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审批   - OFFLINE: 已下线   - REJECT: 已驳回 
 
         :param status: The status of this ListAllTablesRequest.
         :type status: str
@@ -244,7 +244,7 @@ class ListAllTablesRequest:
     def sync_status(self):
         """Gets the sync_status of this ListAllTablesRequest.
 
-        同步状态枚举。RUNNING(同步中)、NO_NEED(未同步)、SUMMARY_SUCCESS(整体成功)、SUMMARY_FAILED(整体失败)。
+        同步状态枚举。 枚举值：   - RUNNING: 同步中   - NO_NEED: 未同步   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败 
 
         :return: The sync_status of this ListAllTablesRequest.
         :rtype: str
@@ -255,7 +255,7 @@ class ListAllTablesRequest:
     def sync_status(self, sync_status):
         """Sets the sync_status of this ListAllTablesRequest.
 
-        同步状态枚举。RUNNING(同步中)、NO_NEED(未同步)、SUMMARY_SUCCESS(整体成功)、SUMMARY_FAILED(整体失败)。
+        同步状态枚举。 枚举值：   - RUNNING: 同步中   - NO_NEED: 未同步   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败 
 
         :param sync_status: The sync_status of this ListAllTablesRequest.
         :type sync_status: str
@@ -266,7 +266,7 @@ class ListAllTablesRequest:
     def sync_key(self):
         """Gets the sync_key of this ListAllTablesRequest.
 
-        同步任务类型枚举。BUSINESS_ASSET(同步业务资产)、DATA_QUALITY(创建质量作业)、TECHNICAL_ASSET(同步技术资产)、META_DATA_LINK(资产关联)、PHYSICAL_TABLE(创建表（生产环境）)、DEV_PHYSICAL_TABLE(创建表（开发环境）)、DLF_TASK(创建数据开发作业)、MATERIALIZATION(数值落库（码表）)、PUBLISH_TO_DLM(发布数据服务API)、SUMMARY_STATUS(整体状态)。
+        同步任务类型枚举。 枚举值：   - BUSINESS_ASSET: 同步业务资产   - DATA_QUALITY: 创建质量作业   - TECHNICAL_ASSET: 同步技术资产   - META_DATA_LINK: 资产关联   - PHYSICAL_TABLE: 创建表（生产环境）   - DEV_PHYSICAL_TABLE: 创建表（开发环境）   - DLF_TASK: 创建数据开发作业   - MATERIALIZATION: 数值落库（码表）   - PUBLISH_TO_DLM: 发布数据服务API   - SUMMARY_STATUS: 整体状态 
 
         :return: The sync_key of this ListAllTablesRequest.
         :rtype: list[str]
@@ -277,7 +277,7 @@ class ListAllTablesRequest:
     def sync_key(self, sync_key):
         """Sets the sync_key of this ListAllTablesRequest.
 
-        同步任务类型枚举。BUSINESS_ASSET(同步业务资产)、DATA_QUALITY(创建质量作业)、TECHNICAL_ASSET(同步技术资产)、META_DATA_LINK(资产关联)、PHYSICAL_TABLE(创建表（生产环境）)、DEV_PHYSICAL_TABLE(创建表（开发环境）)、DLF_TASK(创建数据开发作业)、MATERIALIZATION(数值落库（码表）)、PUBLISH_TO_DLM(发布数据服务API)、SUMMARY_STATUS(整体状态)。
+        同步任务类型枚举。 枚举值：   - BUSINESS_ASSET: 同步业务资产   - DATA_QUALITY: 创建质量作业   - TECHNICAL_ASSET: 同步技术资产   - META_DATA_LINK: 资产关联   - PHYSICAL_TABLE: 创建表（生产环境）   - DEV_PHYSICAL_TABLE: 创建表（开发环境）   - DLF_TASK: 创建数据开发作业   - MATERIALIZATION: 数值落库（码表）   - PUBLISH_TO_DLM: 发布数据服务API   - SUMMARY_STATUS: 整体状态 
 
         :param sync_key: The sync_key of this ListAllTablesRequest.
         :type sync_key: list[str]
@@ -354,7 +354,7 @@ class ListAllTablesRequest:
     def limit(self):
         """Gets the limit of this ListAllTablesRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+        每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :return: The limit of this ListAllTablesRequest.
         :rtype: int
@@ -365,7 +365,7 @@ class ListAllTablesRequest:
     def limit(self, limit):
         """Sets the limit of this ListAllTablesRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+        每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :param limit: The limit of this ListAllTablesRequest.
         :type limit: int
@@ -398,10 +398,10 @@ class ListAllTablesRequest:
     def biz_catalog_id_list(self):
         """Gets the biz_catalog_id_list of this ListAllTablesRequest.
 
-        所属主题的ID列表。
+        所属主题的ID列表，填写String类型替代Long类型。
 
         :return: The biz_catalog_id_list of this ListAllTablesRequest.
-        :rtype: list[int]
+        :rtype: list[str]
         """
         return self._biz_catalog_id_list
 
@@ -409,10 +409,10 @@ class ListAllTablesRequest:
     def biz_catalog_id_list(self, biz_catalog_id_list):
         """Sets the biz_catalog_id_list of this ListAllTablesRequest.
 
-        所属主题的ID列表。
+        所属主题的ID列表，填写String类型替代Long类型。
 
         :param biz_catalog_id_list: The biz_catalog_id_list of this ListAllTablesRequest.
-        :type biz_catalog_id_list: list[int]
+        :type biz_catalog_id_list: list[str]
         """
         self._biz_catalog_id_list = biz_catalog_id_list
 
@@ -420,7 +420,7 @@ class ListAllTablesRequest:
     def biz_type_list(self):
         """Gets the biz_type_list of this ListAllTablesRequest.
 
-        查询的表类型，必填。TABLE_MODEL_LOGIC(逻辑实体)、TABLE_MODEL(物理表)、DIMENSION_LOGIC_TABLE(维度表)、FACT_LOGIC_TABLE(事实表)、AGGREGATION_LOGIC_TABLE(汇总表)。
+        查询的表类型，必填。 枚举值：   - TABLE_MODEL_LOGIC: 逻辑实体   - TABLE_MODEL: 物理表   - DIMENSION_LOGIC_TABLE: 维度表   - FACT_LOGIC_TABLE: 事实表   - AGGREGATION_LOGIC_TABLE: 汇总表 
 
         :return: The biz_type_list of this ListAllTablesRequest.
         :rtype: list[str]
@@ -431,7 +431,7 @@ class ListAllTablesRequest:
     def biz_type_list(self, biz_type_list):
         """Sets the biz_type_list of this ListAllTablesRequest.
 
-        查询的表类型，必填。TABLE_MODEL_LOGIC(逻辑实体)、TABLE_MODEL(物理表)、DIMENSION_LOGIC_TABLE(维度表)、FACT_LOGIC_TABLE(事实表)、AGGREGATION_LOGIC_TABLE(汇总表)。
+        查询的表类型，必填。 枚举值：   - TABLE_MODEL_LOGIC: 逻辑实体   - TABLE_MODEL: 物理表   - DIMENSION_LOGIC_TABLE: 维度表   - FACT_LOGIC_TABLE: 事实表   - AGGREGATION_LOGIC_TABLE: 汇总表 
 
         :param biz_type_list: The biz_type_list of this ListAllTablesRequest.
         :type biz_type_list: list[str]

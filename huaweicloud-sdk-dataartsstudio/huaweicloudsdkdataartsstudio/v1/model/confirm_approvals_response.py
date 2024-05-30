@@ -18,7 +18,7 @@ class ConfirmApprovalsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'object'
+        'data': 'ConfirmApprovalsResultData'
     }
 
     attribute_map = {
@@ -30,8 +30,8 @@ class ConfirmApprovalsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: 返回的数据信息。
-        :type data: object
+        :param data: 
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.ConfirmApprovalsResultData`
         """
         
         super(ConfirmApprovalsResponse, self).__init__()
@@ -46,10 +46,8 @@ class ConfirmApprovalsResponse(SdkResponse):
     def data(self):
         """Gets the data of this ConfirmApprovalsResponse.
 
-        返回的数据信息。
-
         :return: The data of this ConfirmApprovalsResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ConfirmApprovalsResultData`
         """
         return self._data
 
@@ -57,10 +55,8 @@ class ConfirmApprovalsResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this ConfirmApprovalsResponse.
 
-        返回的数据信息。
-
         :param data: The data of this ConfirmApprovalsResponse.
-        :type data: object
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.ConfirmApprovalsResultData`
         """
         self._data = data
 

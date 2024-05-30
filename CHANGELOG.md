@@ -1,3 +1,1418 @@
+# 3.1.98 2024-05-30
+
+### HuaweiCloud SDK BSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListPayPerUseCustomerResources**
+    - changes of request param
+      - `+ service_type_code`
+  - **ListCustomerselfResourceRecords**
+    - changes of request param
+      - `+ statistic_type`
+  - **ListRenewRateOnPeriod**
+    - changes of request param
+      - `+ include_relative_resources`
+  - **ListCustomerselfResourceRecordDetails**
+    - changes of request param
+      - `+ X-Language`
+  - **ListFreeResourceInfos**
+    - changes of request param
+      - `+ service_type_code_list`
+  - **ListCustomerOrders**
+    - changes of request param
+      - `+ method`
+
+### HuaweiCloud SDK BSSINTL
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListPayPerUseCustomerResources**
+    - changes of request param
+      - `+ service_type_code`
+  - **ListCustomerselfResourceRecords**
+    - changes of request param
+      - `+ statistic_type`
+  - **ListRenewRateOnPeriod**
+    - changes of request param
+      - `+ include_relative_resources`
+  - **ListCustomerselfResourceRecordDetails**
+    - changes of request param
+      - `+ X-Language`
+  - **ListFreeResourceInfos**
+    - changes of request param
+      - `+ service_type_code_list`
+  - **ListCustomerOrders**
+    - changes of request param
+      - `+ method`
+
+### HuaweiCloud SDK CDN
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowHistoryTaskDetails**
+    - changes of response param
+      - `+ urls.fail_classify`
+      - `+ urls.fail_desc`
+  - **ListDomains**
+    - changes of response param
+      - `+ domains.sources.obs_bucket_type`
+  - **CreateDomain**
+    - changes of request param
+      - `+ domain.sources.obs_bucket_type`
+      - `* domain.sources: list<Sources> -> list<SourcesRequestBody>`
+    - changes of response param
+      - `+ domain.sources.obs_bucket_type`
+  - **DeleteDomain**
+    - changes of response param
+      - `+ domain.sources.obs_bucket_type`
+  - **EnableDomain**
+    - changes of response param
+      - `+ domain.sources.obs_bucket_type`
+  - **DisableDomain**
+    - changes of response param
+      - `+ domain.sources.obs_bucket_type`
+  - **ShowDomainFullConfig**
+    - changes of response param
+      - `+ configs.access_area_filter`
+      - `* configs.sources: list<SourcesConfig> -> list<SourcesConfigResponseBody>`
+  - **UpdateDomainFullConfig**
+    - changes of request param
+      - `+ configs.access_area_filter`
+
+### HuaweiCloud SDK CPH
+
+- _Features_
+  - Support the following APIs:
+    - `ListImages`
+    - `DeleteImage`
+    - `ListImageMembers`
+    - `AddImageMember`
+    - `DeleteImageMember`
+    - `BatchShowPhoneConnectInfos`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListCloudPhoneImages**
+    - changes of request param
+      - `+ image_type`
+
+### HuaweiCloud SDK CSE
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateEngine**
+    - changes of request param
+      - `+ enginestateInfo`
+      - `+ periodType`
+      - `+ flavorType`
+      - `+ enterpriseProject`
+      - `+ vpcCidr`
+      - `+ resourceParams`
+      - `+ productId`
+      - `+ capacityProductId`
+      - `+ isFree`
+      - `+ subnetName`
+      - `+ tags`
+      - `+ maintenanceConfig`
+      - `+ elbid`
+      - `+ flavor: enum value [cse.nacos2.c1.large.10,cse.nacos2.c1.xlarge.20,cse.nacos2.c1.xlarge.50,cse.nacos2.c1.xlarge.60,cse.nacos2.c1.2xlarge.100,cse.microgateway.pro.small.1,cse.microgateway.pro.medium.1,cse.microgateway.pro.large.1]`
+      - `+ specType: enum value [Nacos2,MicroGateway]`
+      - `- specType: enum value [CSE]`
+  - **ListEngines**
+    - changes of request param
+      - `+ type`
+    - changes of response param
+      - `+ data.flavor: enum value [cse.nacos2.c1.large.10,cse.nacos2.c1.xlarge.20,cse.nacos2.c1.xlarge.50,cse.nacos2.c1.xlarge.60,cse.nacos2.c1.2xlarge.100,cse.microgateway.pro.small.1,cse.microgateway.pro.medium.1,cse.microgateway.pro.large.1]`
+  - **ShowEngine**
+    - changes of response param
+      - `+ specType: enum value [CSE2,Nacos2,MicroGateway]`
+      - `- specType: enum value [CCE,CSE,SpringCloud]`
+      - `+ type: enum value [NACOS,MICROGATEWAY]`
+      - `- type: enum value [CSE_Share]`
+      - `+ cceSpec.specType: enum value [CSE2,Nacos2,MicroGateway]`
+      - `- cceSpec.specType: enum value [CCE,CSE,SpringCloud]`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _Features_
+  - Support the APIs `ListDataServiceInstancesOverview`, `ListDataServiceInstancesDetail`, `ShowDataServiceInstance`, `ListDataServiceMarketApis`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ResetLinkAttributeAndStandard**
+    - changes of request param
+      - `* ids: list<integer> -> list<string>`
+      - `* stand_row_id: int64 -> string`
+      - `* table_id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **ListCatalogTree**
+    - changes of response param
+      - `+ data`
+      - `- owner`
+      - `- create_time`
+      - `- bizmetric_num`
+      - `- description`
+      - `- children_num`
+      - `- prev_id`
+      - `- create_by`
+      - `- update_time`
+      - `- children`
+      - `- parent_id`
+      - `- name`
+      - `- guid`
+      - `- qualified_id`
+      - `- id`
+      - `- update_by`
+      - `- next_id`
+  - **SearchCatalogs**
+    - changes of response param
+      - `+ data.value`
+  - **ChangeCatalog**
+    - changes of request param
+      - `- owner`
+      - `- create_time`
+      - `- bizmetric_num`
+      - `- description`
+      - `- children_num`
+      - `- prev_id`
+      - `- create_by`
+      - `- update_time`
+      - `- children`
+      - `- parent_id`
+      - `- name`
+      - `- guid`
+      - `- qualified_id`
+      - `- id`
+      - `- update_by`
+      - `- next_id`
+      - `* parent_id: int64 -> string`
+      - `* prev_id: int64 -> string`
+      - `* next_id: int64 -> string`
+      - `* id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **CreateCatalog**
+    - changes of request param
+      - `- owner`
+      - `- create_time`
+      - `- bizmetric_num`
+      - `- description`
+      - `- children_num`
+      - `- prev_id`
+      - `- create_by`
+      - `- update_time`
+      - `- children`
+      - `- parent_id`
+      - `- name`
+      - `- guid`
+      - `- qualified_id`
+      - `- id`
+      - `- update_by`
+      - `- next_id`
+      - `* parent_id: int64 -> string`
+      - `* prev_id: int64 -> string`
+      - `* next_id: int64 -> string`
+      - `* id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **DeleteCatalog**
+    - changes of response param
+      - `+ data.value`
+  - **ShowBizCatalogDetail**
+    - changes of request param
+      - `* id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **ShowStandardTemplate**
+    - changes of response param
+      - `+ data.value`
+  - **UpdateStandardTemplate**
+    - changes of request param
+      - `+ fd_name_en`
+      - `+ descriptionEn`
+      - `+ label`
+      - `+ disabled`
+      - `+ optional_values`
+      - `+ field_type`
+      - `* id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **CreateStandardTemplate**
+    - changes of request param
+      - `+ fd_name_en`
+      - `+ descriptionEn`
+      - `+ label`
+      - `+ disabled`
+      - `+ optional_values`
+      - `+ field_type`
+      - `* id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **DeleteStandardTemplate**
+    - changes of response param
+      - `+ data.value`
+  - **SearchApprovals**
+    - changes of request param
+      - `* biz_id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **RollbackApproval**
+    - changes of response param
+      - `+ data.value`
+  - **ConfirmApprovals**
+    - changes of request param
+      - `* ids: list<integer> -> list<string>`
+    - changes of response param
+      - `+ data.value`
+  - **ListApprovers**
+    - changes of response param
+      - `+ data.value`
+  - **CreateApprover**
+    - changes of request param
+      - `+ app_name`
+    - changes of response param
+      - `+ data.value`
+  - **DeleteApprover**
+    - changes of response param
+      - `+ data.value`
+  - **ListAllTables**
+    - changes of request param
+      - `* biz_catalog_id_list: list<integer> -> list<string>`
+    - changes of response param
+      - `+ data.value`
+  - **CountOverviews**
+    - changes of response param
+      - `+ data.value`
+  - **CountTableModels**
+    - changes of request param
+      - `* model_id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **CountAllModels**
+    - changes of response param
+      - `+ data.value`
+  - **CountStandards**
+    - changes of request param
+      - `* id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **ListDirectories**
+    - changes of response param
+      - `+ data.value`
+  - **UpdateDirectory**
+    - changes of request param
+      - `+ ref_id`
+      - `* id: int64 -> string`
+      - `* parent_id: int64 -> string`
+      - `* prev_id: int64 -> string`
+      - `* root_id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **CreateDirectory**
+    - changes of request param
+      - `+ ref_id`
+      - `* id: int64 -> string`
+      - `* parent_id: int64 -> string`
+      - `* prev_id: int64 -> string`
+      - `* root_id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **DeleteDirectory**
+    - changes of request param
+      - `* ids: list<integer> -> list<string>`
+    - changes of response param
+      - `+ data.value`
+  - **ShowBizMetricById**
+    - changes of request param
+      - `* id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **ListBizMetricDimensions**
+    - changes of response param
+      - `+ data.value`
+  - **ListMetricRelations**
+    - changes of request param
+      - `* id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **ListDimensions**
+    - changes of request param
+      - `* l2_id: int64 -> string`
+      - `* derivative_ids: list<integer> -> list<string>`
+      - `* fact_logic_id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **ShowDimensionById**
+    - changes of request param
+      - `* id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **ListDimensionGroups**
+    - changes of request param
+      - `* table_id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **CheckDimensionStatus**
+    - changes of response param
+      - `+ data.value`
+  - **ListDimensionLogicTables**
+    - changes of request param
+      - `* l2_id: int64 -> string`
+      - `* dimension_id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **ShowDimensionLogicTableById**
+    - changes of request param
+      - `* id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **ListFactLogicTables**
+    - changes of request param
+      - `* l3_id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **ShowFactLogicTableById**
+    - changes of request param
+      - `* id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **CheckFactLogicTableStatus**
+    - changes of response param
+      - `+ data.value`
+  - **ListCondition**
+    - changes of response param
+      - `+ data.value`
+  - **ShowConditionById**
+    - changes of request param
+      - `* id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **ListRelations**
+    - changes of response param
+      - `+ data.value`
+  - **ShowRelationById**
+    - changes of request param
+      - `* id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **ListTableModelRelations**
+    - changes of request param
+      - `* model_id: int64 -> string`
+      - `* table_ids: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **ShowTableModelById**
+    - changes of request param
+      - `* id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **ShowWorkspaceDetailById**
+    - changes of request param
+      - `* model_id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **ImportCatalogs**
+    - changes of response param
+      - `+ data.uuid`
+  - **ImportModels**
+    - changes of request param
+      - `+ X-Language`
+    - changes of response param
+      - `+ data.uuid`
+  - **ImportResult**
+    - changes of response param
+      - `+ data.status`
+      - `+ data.group`
+      - `+ data.rate`
+      - `* data: object -> object<DsProcessImportResultVO>`
+  - **SearchDwByType**
+    - changes of response param
+      - `+ data.value`
+  - **SearchFieldsForRelation**
+    - changes of request param
+      - `+ limit`
+      - `+ offset`
+      - `* model_id: int64 -> string`
+  - **ExportDesignModels**
+    - changes of request param
+      - `* ids: list<integer> -> list<string>`
+      - `* directory_id: int64 -> string`
+      - `* biz_catalog_id: int64 -> string`
+      - `* biz_catalog_id_list: list<integer> -> list<string>`
+      - `* model_id: int64 -> string`
+  - **ExportDesignModelTableDdl**
+    - changes of request param
+      - `* model_id: int64 -> string`
+  - **AddDesignEntityTags**
+    - changes of request param
+      - `* entity_id: int64 -> string`
+      - `* attr_id: int64 -> string`
+  - **RemoveDesignEntityTags**
+    - changes of request param
+      - `* entity_id: int64 -> string`
+      - `* attr_id: int64 -> string`
+  - **DeleteDesignLatestApproval**
+    - changes of request param
+      - `* biz_id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **InitializeStandardTemplate**
+    - changes of response param
+      - `+ data.value`
+  - **ListSubjectLevels**
+    - changes of response param
+      - `+ data`
+      - `- levels`
+  - **ChangeSubjects**
+    - changes of request param
+      - `- levels`
+      - `* levels.id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **ListWorkspaces**
+    - changes of response param
+      - `+ data.value`
+  - **DeleteWorkspaces**
+    - changes of request param
+      - `* ids: list<integer> -> list<string>`
+    - changes of response param
+      - `+ data.value`
+  - **UpdateWorkspace**
+    - changes of request param
+      - `+ table_model_prefix`
+      - `* id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **CreateWorkspace**
+    - changes of request param
+      - `+ table_model_prefix`
+      - `* id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **SearchCustomizedFields**
+    - changes of response param
+      - `+ data.value`
+  - **ModifyCustomizedFields**
+    - changes of request param
+      - `* fields.id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **SearchSubjectNew**
+    - changes of request param
+      - `* parent_id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **DeleteSubjectNew**
+    - changes of response param
+      - `+ data.value`
+  - **UpdateSubjectNew**
+    - changes of request param
+      - `* id: int64 -> string`
+      - `* parent_id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **CreateSubjectNew**
+    - changes of request param
+      - `* id: int64 -> string`
+      - `* parent_id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **ExportDesignResult**
+    - changes of response param
+      - `* data.group.id: int64 -> string`
+      - `* data.group.group_id: int64 -> string`
+      - `* data.group.biz_id: int64 -> string`
+  - **ShowStandardById**
+    - changes of request param
+      - `* id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **UpdateStandard**
+    - changes of request param
+      - `* id: int64 -> string`
+      - `* directory_id: int64 -> string`
+      - `* row_id: int64 -> string`
+      - `* values.fd_id: int64 -> string`
+      - `* values.directory_id: int64 -> string`
+      - `* values.row_id: int64 -> string`
+      - `* values.id: int64 -> string`
+      - `* new_biz.id: int64 -> string`
+      - `* new_biz.biz_id: int64 -> string`
+      - `* approval_info.id: int64 -> string`
+      - `* approval_info.biz_id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **SearchCodeTables**
+    - changes of request param
+      - `* directory_id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **DeleteCodeTable**
+    - changes of response param
+      - `+ data.value`
+  - **CreateCodeTable**
+    - changes of request param
+      - `* id: int64 -> string`
+      - `* directory_id: int64 -> string`
+      - `* new_biz.id: int64 -> string`
+      - `* new_biz.biz_id: int64 -> string`
+      - `* approval_info.id: int64 -> string`
+      - `* approval_info.biz_id: int64 -> string`
+      - `* code_table_fields.id: int64 -> string`
+      - `* code_table_fields.code_table_id: int64 -> string`
+      - `* code_table_fields.code_table_field_values.id: int64 -> string`
+      - `* code_table_fields.code_table_field_values.fd_id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **ShowCodeTableById**
+    - changes of request param
+      - `* id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **UpdateCodeTable**
+    - changes of request param
+      - `* id: int64 -> string`
+      - `* directory_id: int64 -> string`
+      - `* new_biz.id: int64 -> string`
+      - `* new_biz.biz_id: int64 -> string`
+      - `* approval_info.id: int64 -> string`
+      - `* approval_info.biz_id: int64 -> string`
+      - `* code_table_fields.id: int64 -> string`
+      - `* code_table_fields.code_table_id: int64 -> string`
+      - `* code_table_fields.code_table_field_values.id: int64 -> string`
+      - `* code_table_fields.code_table_field_values.fd_id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **SearchCodeTableValues**
+    - changes of request param
+      - `* id: int64 -> string`
+  - **UpdateCodeTableValues**
+    - changes of request param
+      - `* id: int64 -> string`
+      - `* to_add.id: int64 -> string`
+      - `* to_add.code_table_id: int64 -> string`
+      - `* to_add.code_table_field_values.id: int64 -> string`
+      - `* to_add.code_table_field_values.fd_id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **BatchPublish**
+    - changes of request param
+      - `+ env_type`
+      - `+ biz_infos.env_type`
+      - `* biz_infos.biz_id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **BatchOffline**
+    - changes of request param
+      - `+ env_type`
+      - `+ biz_infos.env_type`
+      - `* biz_infos.biz_id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **ListBizMetrics**
+    - changes of response param
+      - `+ data.value`
+  - **DeleteBizMetric**
+    - changes of response param
+      - `+ data.value`
+  - **UpdateBizMetric**
+    - changes of request param
+      - `+ self_defined_fields`
+      - `* id: int64 -> string`
+      - `* biz_catalog_id: int64 -> string`
+      - `* technical_metric: int64 -> string`
+      - `* new_biz.id: int64 -> string`
+      - `* new_biz.biz_id: int64 -> string`
+      - `* approval_info.id: int64 -> string`
+      - `* approval_info.biz_id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **CreateBizMetric**
+    - changes of request param
+      - `+ self_defined_fields`
+      - `* id: int64 -> string`
+      - `* biz_catalog_id: int64 -> string`
+      - `* technical_metric: int64 -> string`
+      - `* new_biz.id: int64 -> string`
+      - `* new_biz.biz_id: int64 -> string`
+      - `* approval_info.id: int64 -> string`
+      - `* approval_info.biz_id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **SearchVersions**
+    - changes of request param
+      - `* biz_id: int64 -> string`
+    - changes of response param
+      - `+ data.value.records.dev_physical_table`
+      - `* data.value.records.id: int64 -> string`
+      - `* data.value.records.biz_id: int64 -> string`
+  - **SearchDesignLatestApprovalDiff**
+    - changes of request param
+      - `* biz_id: int64 -> string`
+    - changes of response param
+      - `+ data.value.dev_physical_table`
+      - `* data.value.id: int64 -> string`
+      - `* data.value.biz_id: int64 -> string`
+  - **DeleteStandard**
+    - changes of response param
+      - `+ data.value`
+  - **CreateStandard**
+    - changes of request param
+      - `* id: int64 -> string`
+      - `* directory_id: int64 -> string`
+      - `* row_id: int64 -> string`
+      - `* values.fd_id: int64 -> string`
+      - `* values.directory_id: int64 -> string`
+      - `* values.row_id: int64 -> string`
+      - `* values.id: int64 -> string`
+      - `* new_biz.id: int64 -> string`
+      - `* new_biz.biz_id: int64 -> string`
+      - `* approval_info.id: int64 -> string`
+      - `* approval_info.biz_id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **ListAllStandards**
+    - changes of response param
+      - `* data.value.records.id: int64 -> string`
+      - `* data.value.records.directory_id: int64 -> string`
+      - `* data.value.records.row_id: int64 -> string`
+      - `* data.value.records.values.fd_id: int64 -> string`
+      - `* data.value.records.values.directory_id: int64 -> string`
+      - `* data.value.records.values.row_id: int64 -> string`
+      - `* data.value.records.values.id: int64 -> string`
+      - `* data.value.records.new_biz.id: int64 -> string`
+      - `* data.value.records.new_biz.biz_id: int64 -> string`
+      - `* data.value.records.approval_info.id: int64 -> string`
+      - `* data.value.records.approval_info.biz_id: int64 -> string`
+  - **SearchSubject**
+    - changes of request param
+      - `* parent_id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **DeleteSubject**
+    - changes of response param
+      - `+ data.value`
+  - **UpdateSubject**
+    - changes of response param
+      - `+ data.value`
+  - **CreateSubject**
+    - changes of response param
+      - `+ data.value`
+  - **DeleteDesignAtomicIndex**
+    - changes of response param
+      - `+ data.value`
+  - **SearchAtomicIndexes**
+    - changes of request param
+      - `* l3_id: int64 -> string`
+      - `* table_id: int64 -> string`
+    - changes of response param
+      - `* data.value.records.id: int64 -> string`
+      - `* data.value.records.cal_fn_ids: list<integer> -> list<string>`
+      - `* data.value.records.l1_id: int64 -> string`
+      - `* data.value.records.l3_id: int64 -> string`
+      - `* data.value.records.table_id: int64 -> string`
+      - `* data.value.records.field_ids: list<integer> -> list<string>`
+      - `* data.value.records.new_biz.id: int64 -> string`
+      - `* data.value.records.new_biz.biz_id: int64 -> string`
+      - `* data.value.records.approval_info.id: int64 -> string`
+      - `* data.value.records.approval_info.biz_id: int64 -> string`
+  - **UpdateDesignAtomicIndex**
+    - changes of request param
+      - `* id: int64 -> string`
+      - `* cal_fn_ids: list<integer> -> list<string>`
+      - `* l1_id: int64 -> string`
+      - `* l3_id: int64 -> string`
+      - `* table_id: int64 -> string`
+      - `* field_ids: list<integer> -> list<string>`
+      - `* new_biz.id: int64 -> string`
+      - `* new_biz.biz_id: int64 -> string`
+      - `* approval_info.id: int64 -> string`
+      - `* approval_info.biz_id: int64 -> string`
+    - changes of response param
+      - `* data.value.id: int64 -> string`
+      - `* data.value.cal_fn_ids: list<integer> -> list<string>`
+      - `* data.value.l1_id: int64 -> string`
+      - `* data.value.l3_id: int64 -> string`
+      - `* data.value.table_id: int64 -> string`
+      - `* data.value.field_ids: list<integer> -> list<string>`
+      - `* data.value.new_biz.id: int64 -> string`
+      - `* data.value.new_biz.biz_id: int64 -> string`
+      - `* data.value.approval_info.id: int64 -> string`
+      - `* data.value.approval_info.biz_id: int64 -> string`
+  - **CreateDesignAtomicIndex**
+    - changes of request param
+      - `* id: int64 -> string`
+      - `* cal_fn_ids: list<integer> -> list<string>`
+      - `* l1_id: int64 -> string`
+      - `* l3_id: int64 -> string`
+      - `* table_id: int64 -> string`
+      - `* field_ids: list<integer> -> list<string>`
+      - `* new_biz.id: int64 -> string`
+      - `* new_biz.biz_id: int64 -> string`
+      - `* approval_info.id: int64 -> string`
+      - `* approval_info.biz_id: int64 -> string`
+    - changes of response param
+      - `* data.value.id: int64 -> string`
+      - `* data.value.cal_fn_ids: list<integer> -> list<string>`
+      - `* data.value.l1_id: int64 -> string`
+      - `* data.value.l3_id: int64 -> string`
+      - `* data.value.table_id: int64 -> string`
+      - `* data.value.field_ids: list<integer> -> list<string>`
+      - `* data.value.new_biz.id: int64 -> string`
+      - `* data.value.new_biz.biz_id: int64 -> string`
+      - `* data.value.approval_info.id: int64 -> string`
+      - `* data.value.approval_info.biz_id: int64 -> string`
+  - **ShowAtomicIndexById**
+    - changes of request param
+      - `* id: int64 -> string`
+    - changes of response param
+      - `* data.value.id: int64 -> string`
+      - `* data.value.cal_fn_ids: list<integer> -> list<string>`
+      - `* data.value.l1_id: int64 -> string`
+      - `* data.value.l3_id: int64 -> string`
+      - `* data.value.table_id: int64 -> string`
+      - `* data.value.field_ids: list<integer> -> list<string>`
+      - `* data.value.new_biz.id: int64 -> string`
+      - `* data.value.new_biz.biz_id: int64 -> string`
+      - `* data.value.approval_info.id: int64 -> string`
+      - `* data.value.approval_info.biz_id: int64 -> string`
+  - **ListCompoundMetrics**
+    - changes of request param
+      - `* atomic_index_id: int64 -> string`
+      - `* l3_id: int64 -> string`
+    - changes of response param
+      - `+ data.value.records.compound_type`
+      - `+ data.value.records.comparison_type`
+      - `+ data.value.records.compound_metric_ids`
+      - `+ data.value.records.compound_metric_names`
+      - `* data.value.records.id: int64 -> string`
+      - `* data.value.records.metric_ids: list<integer> -> list<string>`
+      - `* data.value.records.cal_fn_ids: list<integer> -> list<string>`
+      - `* data.value.records.l1_id: int64 -> string`
+      - `* data.value.records.l3_id: int64 -> string`
+      - `* data.value.records.summary_table_id: int64 -> string`
+      - `* data.value.records.new_biz.id: int64 -> string`
+      - `* data.value.records.new_biz.biz_id: int64 -> string`
+      - `+ data.value.records.monitor.other_compound_metric_ids`
+      - `+ data.value.records.monitor.other_compound_metric_names`
+      - `* data.value.records.monitor.id: int64 -> string`
+      - `* data.value.records.monitor.other_metric_ids: list<integer> -> list<string>`
+      - `* data.value.records.monitor.metric_id: int64 -> string`
+      - `* data.value.records.approval_info.id: int64 -> string`
+      - `* data.value.records.approval_info.biz_id: int64 -> string`
+  - **ShowCompoundMetricById**
+    - changes of request param
+      - `* id: int64 -> string`
+    - changes of response param
+      - `+ data.value.compound_type`
+      - `+ data.value.comparison_type`
+      - `+ data.value.compound_metric_ids`
+      - `+ data.value.compound_metric_names`
+      - `* data.value.id: int64 -> string`
+      - `* data.value.metric_ids: list<integer> -> list<string>`
+      - `* data.value.cal_fn_ids: list<integer> -> list<string>`
+      - `* data.value.l1_id: int64 -> string`
+      - `* data.value.l3_id: int64 -> string`
+      - `* data.value.summary_table_id: int64 -> string`
+      - `* data.value.new_biz.id: int64 -> string`
+      - `* data.value.new_biz.biz_id: int64 -> string`
+      - `+ data.value.monitor.other_compound_metric_ids`
+      - `+ data.value.monitor.other_compound_metric_names`
+      - `* data.value.monitor.id: int64 -> string`
+      - `* data.value.monitor.other_metric_ids: list<integer> -> list<string>`
+      - `* data.value.monitor.metric_id: int64 -> string`
+      - `* data.value.approval_info.id: int64 -> string`
+      - `* data.value.approval_info.biz_id: int64 -> string`
+  - **DeleteDesignAggregationLogicTable**
+    - changes of response param
+      - `+ data.value`
+  - **UpdateDesignAggregationLogicTable**
+    - changes of request param
+      - `+ secret_type`
+      - `+ apply_bg`
+      - `+ env_type`
+      - `* id: int64 -> string`
+      - `* l1_id: int64 -> string`
+      - `* l3_id: int64 -> string`
+      - `* quality_id: int64 -> string`
+      - `* new_biz.id: int64 -> string`
+      - `* new_biz.biz_id: int64 -> string`
+      - `* approval_info.id: int64 -> string`
+      - `* approval_info.biz_id: int64 -> string`
+      - `* time_period.id: int64 -> string`
+      - `* time_period.aggregation_logic_table_id: int64 -> string`
+      - `* time_period.stand_row_id: int64 -> string`
+  - **ListAggregationLogicTables**
+    - changes of request param
+      - `* l3_id: int64 -> string`
+    - changes of response param
+      - `+ data.value.records.secret_type`
+      - `+ data.value.records.apply_bg`
+      - `+ data.value.records.dev_version`
+      - `+ data.value.records.prod_version`
+      - `+ data.value.records.dev_version_name`
+      - `+ data.value.records.prod_version_name`
+      - `+ data.value.records.env_type`
+      - `* data.value.records.id: int64 -> string`
+      - `* data.value.records.l1_id: int64 -> string`
+      - `* data.value.records.l3_id: int64 -> string`
+      - `* data.value.records.quality_id: int64 -> string`
+      - `* data.value.records.new_biz.id: int64 -> string`
+      - `* data.value.records.new_biz.biz_id: int64 -> string`
+      - `* data.value.records.approval_info.id: int64 -> string`
+      - `* data.value.records.approval_info.biz_id: int64 -> string`
+      - `+ data.value.records.time_period.secrecy_levels`
+      - `+ data.value.records.time_period.ref_name_ch`
+      - `+ data.value.records.time_period.ref_name_en`
+      - `* data.value.records.time_period.id: int64 -> string`
+      - `* data.value.records.time_period.aggregation_logic_table_id: int64 -> string`
+      - `* data.value.records.time_period.stand_row_id: int64 -> string`
+      - `* data.value.records.time_period.quality_infos.id: int64 -> string`
+      - `* data.value.records.time_period.quality_infos.table_id: int64 -> string`
+      - `* data.value.records.time_period.quality_infos.attr_id: int64 -> string`
+      - `* data.value.records.time_period.quality_infos.data_quality_id: int64 -> string`
+  - **CreateDesignAggregationLogicTable**
+    - changes of request param
+      - `+ secret_type`
+      - `+ apply_bg`
+      - `+ env_type`
+      - `* id: int64 -> string`
+      - `* l1_id: int64 -> string`
+      - `* l3_id: int64 -> string`
+      - `* quality_id: int64 -> string`
+      - `* new_biz.id: int64 -> string`
+      - `* new_biz.biz_id: int64 -> string`
+      - `* approval_info.id: int64 -> string`
+      - `* approval_info.biz_id: int64 -> string`
+      - `* time_period.id: int64 -> string`
+      - `* time_period.aggregation_logic_table_id: int64 -> string`
+      - `* time_period.stand_row_id: int64 -> string`
+    - changes of response param
+      - `+ data.value.secret_type`
+      - `+ data.value.apply_bg`
+      - `+ data.value.dev_version`
+      - `+ data.value.prod_version`
+      - `+ data.value.dev_version_name`
+      - `+ data.value.prod_version_name`
+      - `+ data.value.env_type`
+      - `* data.value.id: int64 -> string`
+      - `* data.value.l1_id: int64 -> string`
+      - `* data.value.l3_id: int64 -> string`
+      - `* data.value.quality_id: int64 -> string`
+      - `* data.value.new_biz.id: int64 -> string`
+      - `* data.value.new_biz.biz_id: int64 -> string`
+      - `* data.value.approval_info.id: int64 -> string`
+      - `* data.value.approval_info.biz_id: int64 -> string`
+      - `+ data.value.time_period.secrecy_levels`
+      - `+ data.value.time_period.ref_name_ch`
+      - `+ data.value.time_period.ref_name_en`
+      - `* data.value.time_period.id: int64 -> string`
+      - `* data.value.time_period.aggregation_logic_table_id: int64 -> string`
+      - `* data.value.time_period.stand_row_id: int64 -> string`
+      - `* data.value.time_period.quality_infos.id: int64 -> string`
+      - `* data.value.time_period.quality_infos.table_id: int64 -> string`
+      - `* data.value.time_period.quality_infos.attr_id: int64 -> string`
+      - `* data.value.time_period.quality_infos.data_quality_id: int64 -> string`
+  - **ShowAggregationLogicTableById**
+    - changes of request param
+      - `* id: int64 -> string`
+    - changes of response param
+      - `+ data.value.secret_type`
+      - `+ data.value.apply_bg`
+      - `+ data.value.dev_version`
+      - `+ data.value.prod_version`
+      - `+ data.value.dev_version_name`
+      - `+ data.value.prod_version_name`
+      - `+ data.value.env_type`
+      - `* data.value.id: int64 -> string`
+      - `* data.value.l1_id: int64 -> string`
+      - `* data.value.l3_id: int64 -> string`
+      - `* data.value.quality_id: int64 -> string`
+      - `* data.value.new_biz.id: int64 -> string`
+      - `* data.value.new_biz.biz_id: int64 -> string`
+      - `* data.value.approval_info.id: int64 -> string`
+      - `* data.value.approval_info.biz_id: int64 -> string`
+      - `+ data.value.time_period.secrecy_levels`
+      - `+ data.value.time_period.ref_name_ch`
+      - `+ data.value.time_period.ref_name_en`
+      - `* data.value.time_period.id: int64 -> string`
+      - `* data.value.time_period.aggregation_logic_table_id: int64 -> string`
+      - `* data.value.time_period.stand_row_id: int64 -> string`
+      - `* data.value.time_period.quality_infos.id: int64 -> string`
+      - `* data.value.time_period.quality_infos.table_id: int64 -> string`
+      - `* data.value.time_period.quality_infos.attr_id: int64 -> string`
+      - `* data.value.time_period.quality_infos.data_quality_id: int64 -> string`
+  - **ListTableModels**
+    - changes of response param
+      - `+ data.value`
+  - **DeleteTableModel**
+    - changes of response param
+      - `+ data.value`
+  - **UpdateTableModel**
+    - changes of request param
+      - `+ dev_physical_table`
+      - `+ env_type`
+      - `+ has_related_physical_table`
+      - `+ has_related_logic_table`
+      - `* id: int64 -> string`
+      - `* model_id: int64 -> string`
+      - `* parent_table_id: int64 -> string`
+      - `* logic_tb_id: int64 -> string`
+      - `* biz_catalog_id: int64 -> string`
+      - `* l1_id: int64 -> string`
+      - `* l3_id: int64 -> string`
+      - `* quality_id: int64 -> string`
+      - `* new_biz.id: int64 -> string`
+      - `* new_biz.biz_id: int64 -> string`
+      - `+ model.table_model_prefix`
+      - `* model.id: int64 -> string`
+      - `* approval_info.id: int64 -> string`
+      - `* approval_info.biz_id: int64 -> string`
+      - `+ attributes.code`
+      - `+ attributes.related_logic_attr_id`
+      - `* attributes.id: int64 -> string`
+      - `* attributes.table_model_id: int64 -> string`
+      - `* attributes.stand_row_id: int64 -> string`
+      - `* relations.id: int64 -> string`
+      - `* relations.source_table_id: int64 -> string`
+      - `* relations.target_table_id: int64 -> string`
+      - `* mappings.id: int64 -> string`
+      - `* mappings.target_table_id: int64 -> string`
+      - `* mappings.src_model_id: int64 -> string`
+      - `* mappings.details.id: int64 -> string`
+      - `* mappings.details.target_attr_id: int64 -> string`
+      - `* mappings.source_fields.target_field_id: int64 -> string`
+      - `* mappings.source_tables.table1_id: int64 -> string`
+      - `* mappings.source_tables.table2_id: int64 -> string`
+      - `* mappings.source_tables.join_fields.field1_id: int64 -> string`
+      - `* mappings.source_tables.join_fields.field2_id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **CreateTableModel**
+    - changes of request param
+      - `+ related_logic_table_id`
+      - `+ dev_physical_table`
+      - `+ env_type`
+      - `+ code`
+      - `* id: int64 -> string`
+      - `* model_id: int64 -> string`
+      - `* parent_table_id: int64 -> string`
+      - `* logic_tb_id: int64 -> string`
+      - `* biz_catalog_id: int64 -> string`
+      - `* l1_id: int64 -> string`
+      - `* l3_id: int64 -> string`
+      - `* quality_id: int64 -> string`
+      - `* new_biz.id: int64 -> string`
+      - `* new_biz.biz_id: int64 -> string`
+      - `+ model.table_model_prefix`
+      - `* model.id: int64 -> string`
+      - `* approval_info.id: int64 -> string`
+      - `* approval_info.biz_id: int64 -> string`
+      - `+ attributes.code`
+      - `+ attributes.related_logic_attr_id`
+      - `* attributes.id: int64 -> string`
+      - `* attributes.table_model_id: int64 -> string`
+      - `* attributes.stand_row_id: int64 -> string`
+      - `* relations.id: int64 -> string`
+      - `* relations.source_table_id: int64 -> string`
+      - `* relations.target_table_id: int64 -> string`
+      - `* mappings.id: int64 -> string`
+      - `* mappings.target_table_id: int64 -> string`
+      - `* mappings.src_model_id: int64 -> string`
+      - `* mappings.details.id: int64 -> string`
+      - `* mappings.details.target_attr_id: int64 -> string`
+      - `* mappings.source_fields.target_field_id: int64 -> string`
+      - `* mappings.source_tables.table1_id: int64 -> string`
+      - `* mappings.source_tables.table2_id: int64 -> string`
+      - `* mappings.source_tables.join_fields.field1_id: int64 -> string`
+      - `* mappings.source_tables.join_fields.field2_id: int64 -> string`
+    - changes of response param
+      - `+ data.value`
+  - **RemoveDesignQualityInfos**
+    - changes of request param
+      - `* table_id: int64 -> string`
+  - **UpdateDesignTableQuality**
+    - changes of request param
+      - `* table_id: int64 -> string`
+    - changes of response param
+      - `+ data.value.related_logic_table_id`
+      - `+ data.value.related_logic_table_name`
+      - `+ data.value.related_logic_table_model_id`
+      - `+ data.value.related_logic_table_model_name`
+      - `+ data.value.dev_physical_table`
+      - `+ data.value.dev_version`
+      - `+ data.value.prod_version`
+      - `+ data.value.dev_version_name`
+      - `+ data.value.prod_version_name`
+      - `+ data.value.env_type`
+      - `+ data.value.code`
+      - `+ data.value.has_related_physical_table`
+      - `+ data.value.has_related_logic_table`
+      - `* data.value.id: int64 -> string`
+      - `* data.value.model_id: int64 -> string`
+      - `* data.value.parent_table_id: int64 -> string`
+      - `* data.value.logic_tb_id: int64 -> string`
+      - `* data.value.biz_catalog_id: int64 -> string`
+      - `* data.value.l1_id: int64 -> string`
+      - `* data.value.l3_id: int64 -> string`
+      - `* data.value.quality_id: int64 -> string`
+      - `* data.value.new_biz.id: int64 -> string`
+      - `* data.value.new_biz.biz_id: int64 -> string`
+      - `+ data.value.model.table_model_prefix`
+      - `* data.value.model.id: int64 -> string`
+      - `* data.value.tags.id: int64 -> string`
+      - `* data.value.tags.tag_id: int64 -> string`
+      - `* data.value.tags.biz_id: int64 -> string`
+      - `* data.value.approval_info.id: int64 -> string`
+      - `* data.value.approval_info.biz_id: int64 -> string`
+      - `+ data.value.attributes.secrecy_levels`
+      - `+ data.value.attributes.code`
+      - `+ data.value.attributes.related_logic_attr_id`
+      - `+ data.value.attributes.related_logic_attr_name`
+      - `+ data.value.attributes.related_logic_attr_name_en`
+      - `* data.value.attributes.id: int64 -> string`
+      - `* data.value.attributes.table_model_id: int64 -> string`
+      - `* data.value.attributes.stand_row_id: int64 -> string`
+      - `* data.value.attributes.tags.id: int64 -> string`
+      - `* data.value.attributes.quality_infos.id: int64 -> string`
+      - `* data.value.attributes.quality_infos.table_id: int64 -> string`
+      - `* data.value.attributes.quality_infos.attr_id: int64 -> string`
+      - `* data.value.attributes.quality_infos.data_quality_id: int64 -> string`
+      - `* data.value.relations.id: int64 -> string`
+      - `* data.value.relations.source_table_id: int64 -> string`
+      - `* data.value.relations.target_table_id: int64 -> string`
+      - `* data.value.relations.mappings.id: int64 -> string`
+      - `* data.value.relations.mappings.relation_id: int64 -> string`
+      - `* data.value.relations.mappings.source_field_id: int64 -> string`
+      - `* data.value.relations.mappings.target_field_id: int64 -> string`
+      - `* data.value.mappings.id: int64 -> string`
+      - `* data.value.mappings.target_table_id: int64 -> string`
+      - `* data.value.mappings.src_model_id: int64 -> string`
+      - `* data.value.mappings.details.id: int64 -> string`
+      - `* data.value.mappings.details.target_attr_id: int64 -> string`
+      - `* data.value.mappings.details.src_table_model_ids: list<integer> -> list<string>`
+      - `* data.value.mappings.details.src_table_id_list: list<integer> -> list<string>`
+      - `* data.value.mappings.details.src_attr_id_list: list<integer> -> list<string>`
+      - `* data.value.mappings.source_fields.target_field_id: int64 -> string`
+      - `* data.value.mappings.source_tables.table1_id: int64 -> string`
+      - `* data.value.mappings.source_tables.table2_id: int64 -> string`
+      - `* data.value.mappings.source_tables.join_fields.field1_id: int64 -> string`
+      - `* data.value.mappings.source_tables.join_fields.field2_id: int64 -> string`
+  - **ListDerivativeIndexes**
+    - changes of request param
+      - `* dimension_id: int64 -> string`
+      - `* atomic_index_id: int64 -> string`
+      - `* l3_id: int64 -> string`
+    - changes of response param
+      - `* data.value.records.id: int64 -> string`
+      - `* data.value.records.l1_id: int64 -> string`
+      - `* data.value.records.l3_id: int64 -> string`
+      - `* data.value.records.atomic_index_id: int64 -> string`
+      - `* data.value.records.time_condition_id: int64 -> string`
+      - `* data.value.records.time_field_id: int64 -> string`
+      - `* data.value.records.summary_table_id: int64 -> string`
+      - `* data.value.records.common_conditions.cal_fn_ids: list<integer> -> list<string>`
+      - `* data.value.records.common_conditions.id: int64 -> string`
+      - `+ data.value.records.monitor.other_compound_metric_ids`
+      - `+ data.value.records.monitor.other_compound_metric_names`
+      - `* data.value.records.monitor.id: int64 -> string`
+      - `* data.value.records.monitor.other_metric_ids: list<integer> -> list<string>`
+      - `* data.value.records.monitor.metric_id: int64 -> string`
+      - `* data.value.records.new_biz.id: int64 -> string`
+      - `* data.value.records.new_biz.biz_id: int64 -> string`
+      - `* data.value.records.atomic_index.id: int64 -> string`
+      - `* data.value.records.atomic_index.cal_fn_ids: list<integer> -> list<string>`
+      - `* data.value.records.atomic_index.l1_id: int64 -> string`
+      - `* data.value.records.atomic_index.l3_id: int64 -> string`
+      - `* data.value.records.atomic_index.table_id: int64 -> string`
+      - `* data.value.records.atomic_index.field_ids: list<integer> -> list<string>`
+      - `* data.value.records.approval_info.id: int64 -> string`
+      - `* data.value.records.approval_info.biz_id: int64 -> string`
+      - `* data.value.records.dimension_groups.dimension_id: int64 -> string`
+      - `* data.value.records.dimension_groups.hierarchies_id: int64 -> string`
+      - `* data.value.records.dimension_groups.l1_id: int64 -> string`
+      - `* data.value.records.dimension_groups.l3_id: int64 -> string`
+      - `* data.value.records.dimension_groups.id: int64 -> string`
+      - `* data.value.records.dimension_groups.hierarchies.id: int64 -> string`
+      - `* data.value.records.dimension_groups.hierarchies.attrs.id: int64 -> string`
+      - `* data.value.records.dimension_groups.hierarchies.attrs.hierarchies_id: int64 -> string`
+      - `* data.value.records.dimension_groups.hierarchies.attrs.attr_id: int64 -> string`
+      - `* data.value.records.dimension_groups.hierarchies.attrs.detail_attr_ids: list<integer> -> list<string>`
+      - `+ data.value.records.dimension_groups.hierarchies.attrs.attr.secrecy_levels`
+      - `* data.value.records.dimension_groups.hierarchies.attrs.attr.id: int64 -> string`
+      - `* data.value.records.dimension_groups.hierarchies.attrs.attr.dimension_id: int64 -> string`
+      - `* data.value.records.dimension_groups.hierarchies.attrs.attr.code_table_field_id: int64 -> string`
+      - `* data.value.records.dimension_groups.hierarchies.attrs.attr.stand_row_id: int64 -> string`
+      - `* data.value.records.dimension_groups.hierarchies.attrs.attr.quality_infos.id: int64 -> string`
+      - `* data.value.records.dimension_groups.hierarchies.attrs.attr.quality_infos.table_id: int64 -> string`
+      - `* data.value.records.dimension_groups.hierarchies.attrs.attr.quality_infos.attr_id: int64 -> string`
+      - `* data.value.records.dimension_groups.hierarchies.attrs.attr.quality_infos.data_quality_id: int64 -> string`
+  - **ShowDerivativeIndexById**
+    - changes of request param
+      - `* id: int64 -> string`
+    - changes of response param
+      - `* data.value.id: int64 -> string`
+      - `* data.value.l1_id: int64 -> string`
+      - `* data.value.l3_id: int64 -> string`
+      - `* data.value.atomic_index_id: int64 -> string`
+      - `* data.value.time_condition_id: int64 -> string`
+      - `* data.value.time_field_id: int64 -> string`
+      - `* data.value.summary_table_id: int64 -> string`
+      - `* data.value.common_conditions.cal_fn_ids: list<integer> -> list<string>`
+      - `* data.value.common_conditions.id: int64 -> string`
+      - `+ data.value.monitor.other_compound_metric_ids`
+      - `+ data.value.monitor.other_compound_metric_names`
+      - `* data.value.monitor.id: int64 -> string`
+      - `* data.value.monitor.other_metric_ids: list<integer> -> list<string>`
+      - `* data.value.monitor.metric_id: int64 -> string`
+      - `* data.value.new_biz.id: int64 -> string`
+      - `* data.value.new_biz.biz_id: int64 -> string`
+      - `* data.value.atomic_index.id: int64 -> string`
+      - `* data.value.atomic_index.cal_fn_ids: list<integer> -> list<string>`
+      - `* data.value.atomic_index.l1_id: int64 -> string`
+      - `* data.value.atomic_index.l3_id: int64 -> string`
+      - `* data.value.atomic_index.table_id: int64 -> string`
+      - `* data.value.atomic_index.field_ids: list<integer> -> list<string>`
+      - `* data.value.approval_info.id: int64 -> string`
+      - `* data.value.approval_info.biz_id: int64 -> string`
+      - `* data.value.dimension_groups.dimension_id: int64 -> string`
+      - `* data.value.dimension_groups.hierarchies_id: int64 -> string`
+      - `* data.value.dimension_groups.l1_id: int64 -> string`
+      - `* data.value.dimension_groups.l3_id: int64 -> string`
+      - `* data.value.dimension_groups.id: int64 -> string`
+      - `* data.value.dimension_groups.hierarchies.id: int64 -> string`
+      - `* data.value.dimension_groups.hierarchies.attrs.id: int64 -> string`
+      - `* data.value.dimension_groups.hierarchies.attrs.hierarchies_id: int64 -> string`
+      - `* data.value.dimension_groups.hierarchies.attrs.attr_id: int64 -> string`
+      - `* data.value.dimension_groups.hierarchies.attrs.detail_attr_ids: list<integer> -> list<string>`
+      - `+ data.value.dimension_groups.hierarchies.attrs.attr.secrecy_levels`
+      - `* data.value.dimension_groups.hierarchies.attrs.attr.id: int64 -> string`
+      - `* data.value.dimension_groups.hierarchies.attrs.attr.dimension_id: int64 -> string`
+      - `* data.value.dimension_groups.hierarchies.attrs.attr.code_table_field_id: int64 -> string`
+      - `* data.value.dimension_groups.hierarchies.attrs.attr.stand_row_id: int64 -> string`
+      - `* data.value.dimension_groups.hierarchies.attrs.attr.quality_infos.id: int64 -> string`
+      - `* data.value.dimension_groups.hierarchies.attrs.attr.quality_infos.table_id: int64 -> string`
+      - `* data.value.dimension_groups.hierarchies.attrs.attr.quality_infos.attr_id: int64 -> string`
+      - `* data.value.dimension_groups.hierarchies.attrs.attr.quality_infos.data_quality_id: int64 -> string`
+
+### HuaweiCloud SDK ECS
+
+- _Features_
+  - Support the API `ChangeServerNetworkInterface`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK GaussDB
+
+- _Features_
+  - Support the APIs `UpgradeProxyVersion`, `UpdateProxyName`, `ShowProxyIpgroup`, `ShowProxyVersion`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **SearchAutoEnlargePolicy**
+    - changes of response param
+      - `+ step_percent`
+      - `+ step_size`
+  - **UpdateInstanceConfiguration**
+    - changes of response param
+      - `+ job_id`
+  - **CreateConfigurationTemplate**
+    - changes of request param
+      - `+ datastore.instance_mode: enum value [ha:readonly]`
+  - **ListDatabases**
+    - changes of response param
+      - `+ databases.datctype`
+      - `+ databases.compatibility_type`
+  - **ListTasks**
+    - changes of response param
+      - `+ tasks.created_at`
+      - `+ tasks.ended_at`
+  - **ListComponentInfos**
+    - changes of response param
+      - `+ nodes.components.type`
+      - `+ nodes.components.detail`
+  - **ShowUpgradeCandidateVersions**
+    - changes of response param
+      - `+ upgrade_type_list.is_parallel_upgrade`
+
+### HuaweiCloud SDK IoTDA
+
+- _Features_
+  - Support the following APIs:
+    - `ListBridges`
+    - `AddBridge`
+    - `DeleteBridge`
+    - `ResetBridgeSecret`
+    - `ListDeviceGroupsByDevice`
+    - `UpdateCertificate`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK RGC
+
+- _Features_
+  - Support the API `ListControlsForOrganizationalUnit`
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the API `ListControlsForOrganizationUnit`
+
+### HuaweiCloud SDK SMS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateDiskInfo**
+    - changes of request param
+      - `+ disks.physical_volumes.inode_nums`
+      - `+ volumegroups.logical_volumes.inode_nums`
+  - **ShowServer**
+    - changes of response param
+      - `+ disks.physical_volumes.inode_nums`
+      - `+ volume_groups.logical_volumes.inode_nums`
+  - **CreateTask**
+    - changes of request param
+      - `+ target_server.volume_groups.logical_volumes.inode_nums`
+  - **ShowTask**
+    - changes of response param
+      - `+ target_server.volume_groups.logical_volumes.inode_nums`
+  - **UpdateTask**
+    - changes of request param
+      - `+ source_server.io_read_wait`
+      - `+ source_server.disks.physical_volumes.inode_nums`
+      - `+ source_server.volume_groups.logical_volumes.inode_nums`
+  - **RegisterServer**
+    - changes of request param
+      - `+ io_read_wait`
+      - `+ disks.physical_volumes.inode_nums`
+      - `+ volume_groups.logical_volumes.inode_nums`
+  - **ListServers**
+    - changes of response param
+      - `+ source_servers.init_target_server.volume_groups.logical_volumes.inode_nums`
+
+### HuaweiCloud SDK VPC
+
+- _Features_
+  - Support the following APIs:
+    - `ListClouddcnSubnets`
+    - `CreateClouddcnSubnet`
+    - `ShowClouddcnSubnet`
+    - `UpdateClouddcnSubnet`
+    - `DeleteClouddcnSubnet`
+    - `ShowClouddcnSubnetsTags`
+    - `AddClouddcnSubnetsTags`
+    - `ListClouddcnSubnetsFilterTags`
+    - `DeleteClouddcnSubnetsTag`
+    - `ListClouddcnSubnetsCountFilterTags`
+    - `ListClouddcnSubnetsTags`
+    - `BatchDeleteClouddcnSubnetsTags`
+    - `BatchCreateClouddcnSubnetsTags`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListSecurityGroups**
+    - changes of response param
+      - `+ security_groups.tags`
+  - **CreateSecurityGroup**
+    - changes of request param
+      - `+ security_group.tags`
+    - changes of response param
+      - `+ security_group.tags`
+  - **ShowSecurityGroup**
+    - changes of response param
+      - `+ security_group.tags`
+  - **UpdateSecurityGroup**
+    - changes of response param
+      - `+ security_group.tags`
+  - **CreateFirewall**
+    - changes of request param
+      - `+ firewall.tags`
+
+### HuaweiCloud SDK WAF
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowCcRule**
+    - changes of response param
+      - `- conditions.category: enum value [response_code]`
+  - **UpdateCcRule**
+    - changes of request param
+      - `- conditions.category: enum value [response_code]`
+    - changes of response param
+      - `- conditions.category: enum value [response_code]`
+  - **DeleteCcRule**
+    - changes of response param
+      - `- conditions.category: enum value [response_code]`
+  - **ShowPolicy**
+    - changes of response param
+      - `+ action.followed_action_id`
+  - **UpdatePolicyProtectHost**
+    - changes of response param
+      - `+ action.followed_action_id`
+  - **DeletePolicy**
+    - changes of response param
+      - `+ action.followed_action_id`
+  - **UpdatePolicy**
+    - changes of request param
+      - `+ action.followed_action_id`
+    - changes of response param
+      - `+ action.followed_action_id`
+  - **ShowCompositeHost**
+    - changes of response param
+      - `+ server`
+  - **CreateCcRule**
+    - changes of request param
+      - `- conditions.category: enum value [response_code]`
+    - changes of response param
+      - `- conditions.category: enum value [response_code]`
+  - **ListCcRules**
+    - changes of response param
+      - `- items.conditions.category: enum value [response_code]`
+  - **CreatePolicy**
+    - changes of request param
+      - `+ log_action_replaced`
+    - changes of response param
+      - `+ action.followed_action_id`
+  - **ListPolicy**
+    - changes of response param
+      - `+ items.action.followed_action_id`
+  - **ListCompositeHosts**
+    - changes of response param
+      - `+ server`
+      - `+ items.server`
+
 # 3.1.97 2024-05-23
 
 ### HuaweiCloud SDK APM

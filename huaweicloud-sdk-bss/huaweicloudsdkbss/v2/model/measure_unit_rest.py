@@ -39,9 +39,9 @@ class MeasureUnitRest:
         :type measure_id: int
         :param measure_name: 度量单位的名称，根据查询的语言类型返回结果。 例如：GB。
         :type measure_name: str
-        :param abbreviation: 度量单位名称的英文缩写。 例如：度量单位名称“GB”的英文缩写为“GB”。
+        :param abbreviation: 度量单位名称的英文缩写。 例如：度量单位名称“GB”的英文缩写为“G”。
         :type abbreviation: str
-        :param measure_type: 度量类型。 1：货币2：时长3：流量4：数量7：容量9：行数10：周期11：频率12：个数16：带宽速率17：容量时长18：查询速率19：带宽速率（1000进制）20：性能测试用量21：面积22：视频23：吞吐量24：分辨率26：通用资源包抵扣单位27：核数*时长28：内存*时长29：IOPS*时长30：吞吐量*时长31：个/时长40：流量（1000进制）41：1K Tokens
+        :param measure_type: 度量类型。 1：货币2：时长3：流量4：数量6：长度7：容量9：行数10：周期11：频率12：个数15：容量*时长16：带宽速率17：容量时长18：查询速率19：带宽速率（1000进制）20：性能测试用量21：面积22：视频23：吞吐量24：分辨率26：通用资源包抵扣单位27：核数*时长28：内存*时长29：IOPS*时长30：吞吐量*时长31：个/时长40：流量（1000进制）41：1K Tokens82：帧98：缓存带宽x时长
         :type measure_type: int
         """
         
@@ -110,7 +110,7 @@ class MeasureUnitRest:
     def abbreviation(self):
         """Gets the abbreviation of this MeasureUnitRest.
 
-        度量单位名称的英文缩写。 例如：度量单位名称“GB”的英文缩写为“GB”。
+        度量单位名称的英文缩写。 例如：度量单位名称“GB”的英文缩写为“G”。
 
         :return: The abbreviation of this MeasureUnitRest.
         :rtype: str
@@ -121,7 +121,7 @@ class MeasureUnitRest:
     def abbreviation(self, abbreviation):
         """Sets the abbreviation of this MeasureUnitRest.
 
-        度量单位名称的英文缩写。 例如：度量单位名称“GB”的英文缩写为“GB”。
+        度量单位名称的英文缩写。 例如：度量单位名称“GB”的英文缩写为“G”。
 
         :param abbreviation: The abbreviation of this MeasureUnitRest.
         :type abbreviation: str
@@ -132,7 +132,7 @@ class MeasureUnitRest:
     def measure_type(self):
         """Gets the measure_type of this MeasureUnitRest.
 
-        度量类型。 1：货币2：时长3：流量4：数量7：容量9：行数10：周期11：频率12：个数16：带宽速率17：容量时长18：查询速率19：带宽速率（1000进制）20：性能测试用量21：面积22：视频23：吞吐量24：分辨率26：通用资源包抵扣单位27：核数*时长28：内存*时长29：IOPS*时长30：吞吐量*时长31：个/时长40：流量（1000进制）41：1K Tokens
+        度量类型。 1：货币2：时长3：流量4：数量6：长度7：容量9：行数10：周期11：频率12：个数15：容量*时长16：带宽速率17：容量时长18：查询速率19：带宽速率（1000进制）20：性能测试用量21：面积22：视频23：吞吐量24：分辨率26：通用资源包抵扣单位27：核数*时长28：内存*时长29：IOPS*时长30：吞吐量*时长31：个/时长40：流量（1000进制）41：1K Tokens82：帧98：缓存带宽x时长
 
         :return: The measure_type of this MeasureUnitRest.
         :rtype: int
@@ -143,7 +143,7 @@ class MeasureUnitRest:
     def measure_type(self, measure_type):
         """Sets the measure_type of this MeasureUnitRest.
 
-        度量类型。 1：货币2：时长3：流量4：数量7：容量9：行数10：周期11：频率12：个数16：带宽速率17：容量时长18：查询速率19：带宽速率（1000进制）20：性能测试用量21：面积22：视频23：吞吐量24：分辨率26：通用资源包抵扣单位27：核数*时长28：内存*时长29：IOPS*时长30：吞吐量*时长31：个/时长40：流量（1000进制）41：1K Tokens
+        度量类型。 1：货币2：时长3：流量4：数量6：长度7：容量9：行数10：周期11：频率12：个数15：容量*时长16：带宽速率17：容量时长18：查询速率19：带宽速率（1000进制）20：性能测试用量21：面积22：视频23：吞吐量24：分辨率26：通用资源包抵扣单位27：核数*时长28：内存*时长29：IOPS*时长30：吞吐量*时长31：个/时长40：流量（1000进制）41：1K Tokens82：帧98：缓存带宽x时长
 
         :param measure_type: The measure_type of this MeasureUnitRest.
         :type measure_type: int

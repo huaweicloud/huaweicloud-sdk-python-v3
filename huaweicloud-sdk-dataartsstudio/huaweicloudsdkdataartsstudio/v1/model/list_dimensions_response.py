@@ -18,7 +18,7 @@ class ListDimensionsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'object'
+        'data': 'ListDimensionsResultData'
     }
 
     attribute_map = {
@@ -30,8 +30,8 @@ class ListDimensionsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: 返回的数据信息。
-        :type data: object
+        :param data: 
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.ListDimensionsResultData`
         """
         
         super(ListDimensionsResponse, self).__init__()
@@ -46,10 +46,8 @@ class ListDimensionsResponse(SdkResponse):
     def data(self):
         """Gets the data of this ListDimensionsResponse.
 
-        返回的数据信息。
-
         :return: The data of this ListDimensionsResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListDimensionsResultData`
         """
         return self._data
 
@@ -57,10 +55,8 @@ class ListDimensionsResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this ListDimensionsResponse.
 
-        返回的数据信息。
-
         :param data: The data of this ListDimensionsResponse.
-        :type data: object
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.ListDimensionsResultData`
         """
         self._data = data
 

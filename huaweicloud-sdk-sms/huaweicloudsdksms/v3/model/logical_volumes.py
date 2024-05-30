@@ -21,6 +21,7 @@ class LogicalVolumes:
         'block_size': 'int',
         'file_system': 'str',
         'inode_size': 'int',
+        'inode_nums': 'int',
         'device_use': 'str',
         'mount_point': 'str',
         'name': 'str',
@@ -34,6 +35,7 @@ class LogicalVolumes:
         'block_size': 'block_size',
         'file_system': 'file_system',
         'inode_size': 'inode_size',
+        'inode_nums': 'inode_nums',
         'device_use': 'device_use',
         'mount_point': 'mount_point',
         'name': 'name',
@@ -42,7 +44,7 @@ class LogicalVolumes:
         'free_size': 'free_size'
     }
 
-    def __init__(self, block_count=None, block_size=None, file_system=None, inode_size=None, device_use=None, mount_point=None, name=None, size=None, used_size=None, free_size=None):
+    def __init__(self, block_count=None, block_size=None, file_system=None, inode_size=None, inode_nums=None, device_use=None, mount_point=None, name=None, size=None, used_size=None, free_size=None):
         """LogicalVolumes
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class LogicalVolumes:
         :type file_system: str
         :param inode_size: inode数量
         :type inode_size: int
+        :param inode_nums: inode节点数量
+        :type inode_nums: int
         :param device_use: 分区类型，普通分区，启动分区，系统分区
         :type device_use: str
         :param mount_point: 挂载点
@@ -75,6 +79,7 @@ class LogicalVolumes:
         self._block_size = None
         self._file_system = None
         self._inode_size = None
+        self._inode_nums = None
         self._device_use = None
         self._mount_point = None
         self._name = None
@@ -89,6 +94,8 @@ class LogicalVolumes:
             self.block_size = block_size
         self.file_system = file_system
         self.inode_size = inode_size
+        if inode_nums is not None:
+            self.inode_nums = inode_nums
         if device_use is not None:
             self.device_use = device_use
         self.mount_point = mount_point
@@ -184,6 +191,28 @@ class LogicalVolumes:
         :type inode_size: int
         """
         self._inode_size = inode_size
+
+    @property
+    def inode_nums(self):
+        """Gets the inode_nums of this LogicalVolumes.
+
+        inode节点数量
+
+        :return: The inode_nums of this LogicalVolumes.
+        :rtype: int
+        """
+        return self._inode_nums
+
+    @inode_nums.setter
+    def inode_nums(self, inode_nums):
+        """Sets the inode_nums of this LogicalVolumes.
+
+        inode节点数量
+
+        :param inode_nums: The inode_nums of this LogicalVolumes.
+        :type inode_nums: int
+        """
+        self._inode_nums = inode_nums
 
     @property
     def device_use(self):

@@ -17,9 +17,9 @@ class LinkAttributeAndElementVO:
     sensitive_list = []
 
     openapi_types = {
-        'ids': 'list[int]',
-        'stand_row_id': 'int',
-        'table_id': 'int',
+        'ids': 'list[str]',
+        'stand_row_id': 'str',
+        'table_id': 'str',
         'biz_type': 'str'
     }
 
@@ -35,13 +35,13 @@ class LinkAttributeAndElementVO:
 
         The model defined in huaweicloud sdk
 
-        :param ids: 属性ID列表。
-        :type ids: list[int]
-        :param stand_row_id: 关联的数据标准的ID。
-        :type stand_row_id: int
-        :param table_id: 表ID。
-        :type table_id: int
-        :param biz_type: 表类型，默认是TABLE_MODEL。TABLE_MODEL(关系模型（逻辑模型/物理模型）)、AGGREGATION_LOGIC_TABLE(汇总表)、FACT_LOGIC_TABLE(事实表)、DIMENSION(维度)、DIMENSION_LOGIC_TABLE(维度表)。
+        :param ids: 属性ID列表，填写String类型替代Long类型。
+        :type ids: list[str]
+        :param stand_row_id: 关联的数据标准的ID，填写String类型替代Long类型。
+        :type stand_row_id: str
+        :param table_id: 表ID，填写String类型替代Long类型。
+        :type table_id: str
+        :param biz_type: 表类型，默认是TABLE_MODEL。 枚举值：   - TABLE_MODEL: 关系模型（逻辑模型/物理模型）   - AGGREGATION_LOGIC_TABLE: 汇总表   - FACT_LOGIC_TABLE: 事实表   - DIMENSION: 维度   - DIMENSION_LOGIC_TABLE: 维度表 
         :type biz_type: str
         """
         
@@ -62,10 +62,10 @@ class LinkAttributeAndElementVO:
     def ids(self):
         """Gets the ids of this LinkAttributeAndElementVO.
 
-        属性ID列表。
+        属性ID列表，填写String类型替代Long类型。
 
         :return: The ids of this LinkAttributeAndElementVO.
-        :rtype: list[int]
+        :rtype: list[str]
         """
         return self._ids
 
@@ -73,10 +73,10 @@ class LinkAttributeAndElementVO:
     def ids(self, ids):
         """Sets the ids of this LinkAttributeAndElementVO.
 
-        属性ID列表。
+        属性ID列表，填写String类型替代Long类型。
 
         :param ids: The ids of this LinkAttributeAndElementVO.
-        :type ids: list[int]
+        :type ids: list[str]
         """
         self._ids = ids
 
@@ -84,10 +84,10 @@ class LinkAttributeAndElementVO:
     def stand_row_id(self):
         """Gets the stand_row_id of this LinkAttributeAndElementVO.
 
-        关联的数据标准的ID。
+        关联的数据标准的ID，填写String类型替代Long类型。
 
         :return: The stand_row_id of this LinkAttributeAndElementVO.
-        :rtype: int
+        :rtype: str
         """
         return self._stand_row_id
 
@@ -95,10 +95,10 @@ class LinkAttributeAndElementVO:
     def stand_row_id(self, stand_row_id):
         """Sets the stand_row_id of this LinkAttributeAndElementVO.
 
-        关联的数据标准的ID。
+        关联的数据标准的ID，填写String类型替代Long类型。
 
         :param stand_row_id: The stand_row_id of this LinkAttributeAndElementVO.
-        :type stand_row_id: int
+        :type stand_row_id: str
         """
         self._stand_row_id = stand_row_id
 
@@ -106,10 +106,10 @@ class LinkAttributeAndElementVO:
     def table_id(self):
         """Gets the table_id of this LinkAttributeAndElementVO.
 
-        表ID。
+        表ID，填写String类型替代Long类型。
 
         :return: The table_id of this LinkAttributeAndElementVO.
-        :rtype: int
+        :rtype: str
         """
         return self._table_id
 
@@ -117,10 +117,10 @@ class LinkAttributeAndElementVO:
     def table_id(self, table_id):
         """Sets the table_id of this LinkAttributeAndElementVO.
 
-        表ID。
+        表ID，填写String类型替代Long类型。
 
         :param table_id: The table_id of this LinkAttributeAndElementVO.
-        :type table_id: int
+        :type table_id: str
         """
         self._table_id = table_id
 
@@ -128,7 +128,7 @@ class LinkAttributeAndElementVO:
     def biz_type(self):
         """Gets the biz_type of this LinkAttributeAndElementVO.
 
-        表类型，默认是TABLE_MODEL。TABLE_MODEL(关系模型（逻辑模型/物理模型）)、AGGREGATION_LOGIC_TABLE(汇总表)、FACT_LOGIC_TABLE(事实表)、DIMENSION(维度)、DIMENSION_LOGIC_TABLE(维度表)。
+        表类型，默认是TABLE_MODEL。 枚举值：   - TABLE_MODEL: 关系模型（逻辑模型/物理模型）   - AGGREGATION_LOGIC_TABLE: 汇总表   - FACT_LOGIC_TABLE: 事实表   - DIMENSION: 维度   - DIMENSION_LOGIC_TABLE: 维度表 
 
         :return: The biz_type of this LinkAttributeAndElementVO.
         :rtype: str
@@ -139,7 +139,7 @@ class LinkAttributeAndElementVO:
     def biz_type(self, biz_type):
         """Sets the biz_type of this LinkAttributeAndElementVO.
 
-        表类型，默认是TABLE_MODEL。TABLE_MODEL(关系模型（逻辑模型/物理模型）)、AGGREGATION_LOGIC_TABLE(汇总表)、FACT_LOGIC_TABLE(事实表)、DIMENSION(维度)、DIMENSION_LOGIC_TABLE(维度表)。
+        表类型，默认是TABLE_MODEL。 枚举值：   - TABLE_MODEL: 关系模型（逻辑模型/物理模型）   - AGGREGATION_LOGIC_TABLE: 汇总表   - FACT_LOGIC_TABLE: 事实表   - DIMENSION: 维度   - DIMENSION_LOGIC_TABLE: 维度表 
 
         :param biz_type: The biz_type of this LinkAttributeAndElementVO.
         :type biz_type: str

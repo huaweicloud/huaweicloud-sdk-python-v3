@@ -18,7 +18,7 @@ class SearchCatalogsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'object'
+        'data': 'SearchCatalogsResultData'
     }
 
     attribute_map = {
@@ -30,8 +30,8 @@ class SearchCatalogsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: 返回的数据信息。
-        :type data: object
+        :param data: 
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.SearchCatalogsResultData`
         """
         
         super(SearchCatalogsResponse, self).__init__()
@@ -46,10 +46,8 @@ class SearchCatalogsResponse(SdkResponse):
     def data(self):
         """Gets the data of this SearchCatalogsResponse.
 
-        返回的数据信息。
-
         :return: The data of this SearchCatalogsResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SearchCatalogsResultData`
         """
         return self._data
 
@@ -57,10 +55,8 @@ class SearchCatalogsResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this SearchCatalogsResponse.
 
-        返回的数据信息。
-
         :param data: The data of this SearchCatalogsResponse.
-        :type data: object
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.SearchCatalogsResultData`
         """
         self._data = data
 

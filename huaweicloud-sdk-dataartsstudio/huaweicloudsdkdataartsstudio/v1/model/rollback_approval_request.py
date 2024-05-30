@@ -37,7 +37,7 @@ class RollbackApprovalRequest:
         :type workspace: str
         :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
         :type x_project_id: str
-        :param ids: 审批单ID。
+        :param ids: 审批单ID数组。
         :type ids: str
         """
         
@@ -101,7 +101,7 @@ class RollbackApprovalRequest:
     def ids(self):
         """Gets the ids of this RollbackApprovalRequest.
 
-        审批单ID。
+        审批单ID数组。
 
         :return: The ids of this RollbackApprovalRequest.
         :rtype: str
@@ -112,7 +112,7 @@ class RollbackApprovalRequest:
     def ids(self, ids):
         """Sets the ids of this RollbackApprovalRequest.
 
-        审批单ID。
+        审批单ID数组。
 
         :param ids: The ids of this RollbackApprovalRequest.
         :type ids: str

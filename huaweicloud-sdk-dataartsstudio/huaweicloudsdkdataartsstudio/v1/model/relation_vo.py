@@ -17,9 +17,9 @@ class RelationVO:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'int',
-        'source_table_id': 'int',
-        'target_table_id': 'int',
+        'id': 'str',
+        'source_table_id': 'str',
+        'target_table_id': 'str',
         'name': 'str',
         'source_table_name': 'str',
         'target_table_name': 'str',
@@ -57,12 +57,12 @@ class RelationVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码。
-        :type id: int
-        :param source_table_id: 源表ID。
-        :type source_table_id: int
-        :param target_table_id: 目标表ID。
-        :type target_table_id: int
+        :param id: 编码，填写String类型替代Long类型。
+        :type id: str
+        :param source_table_id: 源表ID，填写String类型替代Long类型。
+        :type source_table_id: str
+        :param target_table_id: 目标表ID，填写String类型替代Long类型。
+        :type target_table_id: str
         :param name: 关系名称。
         :type name: str
         :param source_table_name: 源表名称。
@@ -81,11 +81,11 @@ class RelationVO:
         :type create_by: str
         :param update_by: 更新人。
         :type update_by: str
-        :param create_time: 创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        :param create_time: 创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
-        :param update_time: 更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        :param update_time: 更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type update_time: datetime
-        :param mappings: 表属性信息。
+        :param mappings: 表属性信息，只读。
         :type mappings: list[:class:`huaweicloudsdkdataartsstudio.v1.RelationMappingVO`]
         """
         
@@ -142,10 +142,10 @@ class RelationVO:
     def id(self):
         """Gets the id of this RelationVO.
 
-        编码。
+        编码，填写String类型替代Long类型。
 
         :return: The id of this RelationVO.
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -153,10 +153,10 @@ class RelationVO:
     def id(self, id):
         """Sets the id of this RelationVO.
 
-        编码。
+        编码，填写String类型替代Long类型。
 
         :param id: The id of this RelationVO.
-        :type id: int
+        :type id: str
         """
         self._id = id
 
@@ -164,10 +164,10 @@ class RelationVO:
     def source_table_id(self):
         """Gets the source_table_id of this RelationVO.
 
-        源表ID。
+        源表ID，填写String类型替代Long类型。
 
         :return: The source_table_id of this RelationVO.
-        :rtype: int
+        :rtype: str
         """
         return self._source_table_id
 
@@ -175,10 +175,10 @@ class RelationVO:
     def source_table_id(self, source_table_id):
         """Sets the source_table_id of this RelationVO.
 
-        源表ID。
+        源表ID，填写String类型替代Long类型。
 
         :param source_table_id: The source_table_id of this RelationVO.
-        :type source_table_id: int
+        :type source_table_id: str
         """
         self._source_table_id = source_table_id
 
@@ -186,10 +186,10 @@ class RelationVO:
     def target_table_id(self):
         """Gets the target_table_id of this RelationVO.
 
-        目标表ID。
+        目标表ID，填写String类型替代Long类型。
 
         :return: The target_table_id of this RelationVO.
-        :rtype: int
+        :rtype: str
         """
         return self._target_table_id
 
@@ -197,10 +197,10 @@ class RelationVO:
     def target_table_id(self, target_table_id):
         """Sets the target_table_id of this RelationVO.
 
-        目标表ID。
+        目标表ID，填写String类型替代Long类型。
 
         :param target_table_id: The target_table_id of this RelationVO.
-        :type target_table_id: int
+        :type target_table_id: str
         """
         self._target_table_id = target_table_id
 
@@ -398,7 +398,7 @@ class RelationVO:
     def create_time(self):
         """Gets the create_time of this RelationVO.
 
-        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The create_time of this RelationVO.
         :rtype: datetime
@@ -409,7 +409,7 @@ class RelationVO:
     def create_time(self, create_time):
         """Sets the create_time of this RelationVO.
 
-        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param create_time: The create_time of this RelationVO.
         :type create_time: datetime
@@ -420,7 +420,7 @@ class RelationVO:
     def update_time(self):
         """Gets the update_time of this RelationVO.
 
-        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The update_time of this RelationVO.
         :rtype: datetime
@@ -431,7 +431,7 @@ class RelationVO:
     def update_time(self, update_time):
         """Sets the update_time of this RelationVO.
 
-        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param update_time: The update_time of this RelationVO.
         :type update_time: datetime
@@ -442,7 +442,7 @@ class RelationVO:
     def mappings(self):
         """Gets the mappings of this RelationVO.
 
-        表属性信息。
+        表属性信息，只读。
 
         :return: The mappings of this RelationVO.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.RelationMappingVO`]
@@ -453,7 +453,7 @@ class RelationVO:
     def mappings(self, mappings):
         """Sets the mappings of this RelationVO.
 
-        表属性信息。
+        表属性信息，只读。
 
         :param mappings: The mappings of this RelationVO.
         :type mappings: list[:class:`huaweicloudsdkdataartsstudio.v1.RelationMappingVO`]

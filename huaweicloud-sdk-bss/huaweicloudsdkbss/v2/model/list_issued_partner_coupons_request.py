@@ -55,11 +55,11 @@ class ListIssuedPartnerCouponsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param coupon_id: 优惠券ID。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串或携带值为null时，作为筛选条件。
+        :param coupon_id: 优惠券ID。此参数不携带或携带值为空时，不作为筛选条件；携带值为null时，作为筛选条件；不支持携带值为空串。
         :type coupon_id: str
         :param customer_id: 客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串或携带值为null时，作为筛选条件。
         :type customer_id: str
-        :param order_id: 订单ID。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串或携带值为null时，作为筛选条件。
+        :param order_id: 订单ID。此参数不携带或携带值为空时，不作为筛选条件；携带值为null时，作为筛选条件；不支持携带值为空串。
         :type order_id: str
         :param coupon_type: 优惠券类型。1：代金券4：现金券此参数不携带或携带值为空或携带值为null时，不作为筛选条件。
         :type coupon_type: int
@@ -136,7 +136,7 @@ class ListIssuedPartnerCouponsRequest:
     def coupon_id(self):
         """Gets the coupon_id of this ListIssuedPartnerCouponsRequest.
 
-        优惠券ID。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串或携带值为null时，作为筛选条件。
+        优惠券ID。此参数不携带或携带值为空时，不作为筛选条件；携带值为null时，作为筛选条件；不支持携带值为空串。
 
         :return: The coupon_id of this ListIssuedPartnerCouponsRequest.
         :rtype: str
@@ -147,7 +147,7 @@ class ListIssuedPartnerCouponsRequest:
     def coupon_id(self, coupon_id):
         """Sets the coupon_id of this ListIssuedPartnerCouponsRequest.
 
-        优惠券ID。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串或携带值为null时，作为筛选条件。
+        优惠券ID。此参数不携带或携带值为空时，不作为筛选条件；携带值为null时，作为筛选条件；不支持携带值为空串。
 
         :param coupon_id: The coupon_id of this ListIssuedPartnerCouponsRequest.
         :type coupon_id: str
@@ -180,7 +180,7 @@ class ListIssuedPartnerCouponsRequest:
     def order_id(self):
         """Gets the order_id of this ListIssuedPartnerCouponsRequest.
 
-        订单ID。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串或携带值为null时，作为筛选条件。
+        订单ID。此参数不携带或携带值为空时，不作为筛选条件；携带值为null时，作为筛选条件；不支持携带值为空串。
 
         :return: The order_id of this ListIssuedPartnerCouponsRequest.
         :rtype: str
@@ -191,7 +191,7 @@ class ListIssuedPartnerCouponsRequest:
     def order_id(self, order_id):
         """Sets the order_id of this ListIssuedPartnerCouponsRequest.
 
-        订单ID。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串或携带值为null时，作为筛选条件。
+        订单ID。此参数不携带或携带值为空时，不作为筛选条件；携带值为null时，作为筛选条件；不支持携带值为空串。
 
         :param order_id: The order_id of this ListIssuedPartnerCouponsRequest.
         :type order_id: str

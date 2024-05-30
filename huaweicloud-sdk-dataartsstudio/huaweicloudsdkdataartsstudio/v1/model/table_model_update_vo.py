@@ -17,9 +17,9 @@ class TableModelUpdateVO:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'int',
-        'model_id': 'int',
-        'parent_table_id': 'int',
+        'id': 'str',
+        'model_id': 'str',
+        'parent_table_id': 'str',
         'parent_table_name': 'str',
         'parent_table_code': 'str',
         'model': 'WorkspaceVO',
@@ -41,8 +41,8 @@ class TableModelUpdateVO:
         'logic_tb_guid': 'str',
         'description': 'str',
         'status': 'BizStatusEnum',
-        'logic_tb_id': 'int',
-        'biz_catalog_id': 'int',
+        'logic_tb_id': 'str',
+        'biz_catalog_id': 'str',
         'catalog_path': 'str',
         'create_by': 'str',
         'update_by': 'str',
@@ -59,9 +59,9 @@ class TableModelUpdateVO:
         'l1': 'str',
         'l2': 'str',
         'l3': 'str',
-        'l1_id': 'int',
+        'l1_id': 'str',
         'l2_id': 'str',
-        'l3_id': 'int',
+        'l3_id': 'str',
         'partition_conf': 'str',
         'dlf_task_id': 'str',
         'use_recently_partition': 'bool',
@@ -71,18 +71,26 @@ class TableModelUpdateVO:
         'dirty_out_prefix': 'str',
         'dirty_out_suffix': 'str',
         'quality_owner': 'str',
-        'quality_id': 'int',
+        'quality_id': 'str',
         'distribute': 'str',
         'distribute_column': 'str',
         'is_partition': 'bool',
         'physical_table': 'SyncStatusEnum',
+        'dev_physical_table': 'SyncStatusEnum',
         'technical_asset': 'SyncStatusEnum',
         'business_asset': 'SyncStatusEnum',
         'meta_data_link': 'SyncStatusEnum',
         'data_quality': 'SyncStatusEnum',
         'summary_status': 'SyncStatusEnum',
         'alias': 'str',
-        'self_defined_fields': 'list[SelfDefinedFieldVO]'
+        'self_defined_fields': 'list[SelfDefinedFieldVO]',
+        'dev_version': 'str',
+        'prod_version': 'str',
+        'dev_version_name': 'str',
+        'prod_version_name': 'str',
+        'env_type': 'EnvTypeEnum',
+        'has_related_physical_table': 'bool',
+        'has_related_logic_table': 'bool'
     }
 
     attribute_map = {
@@ -145,29 +153,37 @@ class TableModelUpdateVO:
         'distribute_column': 'distribute_column',
         'is_partition': 'is_partition',
         'physical_table': 'physical_table',
+        'dev_physical_table': 'dev_physical_table',
         'technical_asset': 'technical_asset',
         'business_asset': 'business_asset',
         'meta_data_link': 'meta_data_link',
         'data_quality': 'data_quality',
         'summary_status': 'summary_status',
         'alias': 'alias',
-        'self_defined_fields': 'self_defined_fields'
+        'self_defined_fields': 'self_defined_fields',
+        'dev_version': 'dev_version',
+        'prod_version': 'prod_version',
+        'dev_version_name': 'dev_version_name',
+        'prod_version_name': 'prod_version_name',
+        'env_type': 'env_type',
+        'has_related_physical_table': 'has_related_physical_table',
+        'has_related_logic_table': 'has_related_logic_table'
     }
 
-    def __init__(self, id=None, model_id=None, parent_table_id=None, parent_table_name=None, parent_table_code=None, model=None, data_format=None, obs_bucket=None, obs_location=None, configs=None, table_type=None, owner=None, tb_name=None, dw_id=None, db_name=None, queue_name=None, schema=None, extend_info=None, tb_guid=None, tb_id=None, logic_tb_name=None, logic_tb_guid=None, description=None, status=None, logic_tb_id=None, biz_catalog_id=None, catalog_path=None, create_by=None, update_by=None, create_time=None, update_time=None, tags=None, approval_info=None, new_biz=None, attributes=None, mappings=None, relations=None, dw_type=None, dw_name=None, l1=None, l2=None, l3=None, l1_id=None, l2_id=None, l3_id=None, partition_conf=None, dlf_task_id=None, use_recently_partition=None, reversed=None, dirty_out_switch=None, dirty_out_database=None, dirty_out_prefix=None, dirty_out_suffix=None, quality_owner=None, quality_id=None, distribute=None, distribute_column=None, is_partition=None, physical_table=None, technical_asset=None, business_asset=None, meta_data_link=None, data_quality=None, summary_status=None, alias=None, self_defined_fields=None):
+    def __init__(self, id=None, model_id=None, parent_table_id=None, parent_table_name=None, parent_table_code=None, model=None, data_format=None, obs_bucket=None, obs_location=None, configs=None, table_type=None, owner=None, tb_name=None, dw_id=None, db_name=None, queue_name=None, schema=None, extend_info=None, tb_guid=None, tb_id=None, logic_tb_name=None, logic_tb_guid=None, description=None, status=None, logic_tb_id=None, biz_catalog_id=None, catalog_path=None, create_by=None, update_by=None, create_time=None, update_time=None, tags=None, approval_info=None, new_biz=None, attributes=None, mappings=None, relations=None, dw_type=None, dw_name=None, l1=None, l2=None, l3=None, l1_id=None, l2_id=None, l3_id=None, partition_conf=None, dlf_task_id=None, use_recently_partition=None, reversed=None, dirty_out_switch=None, dirty_out_database=None, dirty_out_prefix=None, dirty_out_suffix=None, quality_owner=None, quality_id=None, distribute=None, distribute_column=None, is_partition=None, physical_table=None, dev_physical_table=None, technical_asset=None, business_asset=None, meta_data_link=None, data_quality=None, summary_status=None, alias=None, self_defined_fields=None, dev_version=None, prod_version=None, dev_version_name=None, prod_version_name=None, env_type=None, has_related_physical_table=None, has_related_logic_table=None):
         """TableModelUpdateVO
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码。
-        :type id: int
-        :param model_id: 所属关系建模的模型ID。
-        :type model_id: int
-        :param parent_table_id: 父表ID。
-        :type parent_table_id: int
-        :param parent_table_name: 父表名称。
+        :param id: 编码，填写String类型替代Long类型。
+        :type id: str
+        :param model_id: 所属关系建模的模型ID，填写String类型替代Long类型。
+        :type model_id: str
+        :param parent_table_id: 父表ID，填写String类型替代Long类型。
+        :type parent_table_id: str
+        :param parent_table_name: 父表名称，只读。
         :type parent_table_name: str
-        :param parent_table_code: 父表编码。
+        :param parent_table_code: 父表编码，只读。
         :type parent_table_code: str
         :param model: 
         :type model: :class:`huaweicloudsdkdataartsstudio.v1.WorkspaceVO`
@@ -179,7 +195,7 @@ class TableModelUpdateVO:
         :type obs_location: str
         :param configs: 其他配置。
         :type configs: str
-        :param table_type: 表类型。
+        :param table_type: 表类型，只读。
         :type table_type: str
         :param owner: 责任人。
         :type owner: str
@@ -195,33 +211,33 @@ class TableModelUpdateVO:
         :type schema: str
         :param extend_info: 扩展信息。
         :type extend_info: str
-        :param tb_guid: 表物化后的guid。
+        :param tb_guid: 表物化后的guid，只读。
         :type tb_guid: str
-        :param tb_id: 数据表ID。
+        :param tb_id: 数据表ID，只读。
         :type tb_id: str
         :param logic_tb_name: 逻辑实体名。
         :type logic_tb_name: str
-        :param logic_tb_guid: 逻辑实体的guid。
+        :param logic_tb_guid: 逻辑实体的guid，只读。
         :type logic_tb_guid: str
         :param description: 描述。
         :type description: str
         :param status: 
         :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
-        :param logic_tb_id: 逻辑实体的ID。
-        :type logic_tb_id: int
-        :param biz_catalog_id: 归属的业务分类的ID。
-        :type biz_catalog_id: int
-        :param catalog_path: 归属的业务分类的路径 {\&quot;l1Id\&quot;:\&quot;\&quot;,\&quot;l2Id\&quot;:\&quot;\&quot;,\&quot;l3Id\&quot;:\&quot;\&quot;}。
+        :param logic_tb_id: 逻辑实体的ID，填写String类型替代Long类型。
+        :type logic_tb_id: str
+        :param biz_catalog_id: 归属的业务分类的ID，填写String类型替代Long类型。
+        :type biz_catalog_id: str
+        :param catalog_path: 归属的业务分类的路径，格式： {\&quot;l1Id\&quot;:\&quot;958408897973161984\&quot;,\&quot;l2Id\&quot;:\&quot;958408897973161985\&quot;,\&quot;l3Id\&quot;:\&quot;958408897973161986\&quot;}。
         :type catalog_path: str
-        :param create_by: 创建人。
+        :param create_by: 创建人，只读。
         :type create_by: str
-        :param update_by: 更新人。
+        :param update_by: 更新人，只读。
         :type update_by: str
-        :param create_time: 创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        :param create_time: 创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
-        :param update_time: 更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        :param update_time: 更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type update_time: datetime
-        :param tags: 表标签。
+        :param tags: 表标签，只读。
         :type tags: list[:class:`huaweicloudsdkdataartsstudio.v1.TagVO`]
         :param approval_info: 
         :type approval_info: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalVO`
@@ -243,12 +259,12 @@ class TableModelUpdateVO:
         :type l2: str
         :param l3: 业务对象中文名，只读，创建和更新时无需填写。
         :type l3: str
-        :param l1_id: 主题域分组ID。
-        :type l1_id: int
+        :param l1_id: 主题域分组ID，只读，填写String类型替代Long类型。
+        :type l1_id: str
         :param l2_id: 主题域ID，只读，创建和更新时无需填写。
         :type l2_id: str
-        :param l3_id: 业务对象ID。
-        :type l3_id: int
+        :param l3_id: 业务对象ID，只读，填写String类型替代Long类型。
+        :type l3_id: str
         :param partition_conf: 分区表达式
         :type partition_conf: str
         :param dlf_task_id: DLF作业ID。
@@ -267,16 +283,18 @@ class TableModelUpdateVO:
         :type dirty_out_suffix: str
         :param quality_owner: 质量责任人。
         :type quality_owner: str
-        :param quality_id: 质量ID。
-        :type quality_id: int
-        :param distribute: DISTRIBUTE BY [HASH(column)|REPLICATION]。HASH(对指定的列进行Hash，通过映射，把数据分布到指定DN)、REPLICATION(表的每一行存在所有数据节点（DN）中，即每个数据节点都有完整的表数据)。
+        :param quality_id: 质量ID，填写String类型替代Long类型。
+        :type quality_id: str
+        :param distribute: DISTRIBUTE BY [HASH(column)|REPLICATION]。 枚举值：   - HASH: 对指定的列进行Hash，通过映射，把数据分布到指定DN   - REPLICATION: 表的每一行存在所有数据节点（DN）中，即每个数据节点都有完整的表数据 
         :type distribute: str
         :param distribute_column: DISTRIBUTE BY HASH column.
         :type distribute_column: str
-        :param is_partition: 是否分区表。
+        :param is_partition: 是否分区表，只读。
         :type is_partition: bool
         :param physical_table: 
         :type physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :param dev_physical_table: 
+        :type dev_physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         :param technical_asset: 
         :type technical_asset: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         :param business_asset: 
@@ -291,6 +309,20 @@ class TableModelUpdateVO:
         :type alias: str
         :param self_defined_fields: 自定义项。
         :type self_defined_fields: list[:class:`huaweicloudsdkdataartsstudio.v1.SelfDefinedFieldVO`]
+        :param dev_version: 开发环境版本，填写String类型替代Long类型。
+        :type dev_version: str
+        :param prod_version: 生产环境版本，填写String类型替代Long类型。
+        :type prod_version: str
+        :param dev_version_name: 开发环境版本名称
+        :type dev_version_name: str
+        :param prod_version_name: 生产环境版本名称
+        :type prod_version_name: str
+        :param env_type: 
+        :type env_type: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
+        :param has_related_physical_table: 是否关联了物理表
+        :type has_related_physical_table: bool
+        :param has_related_logic_table: 是否关联了逻辑实体
+        :type has_related_logic_table: bool
         """
         
         
@@ -354,6 +386,7 @@ class TableModelUpdateVO:
         self._distribute_column = None
         self._is_partition = None
         self._physical_table = None
+        self._dev_physical_table = None
         self._technical_asset = None
         self._business_asset = None
         self._meta_data_link = None
@@ -361,6 +394,13 @@ class TableModelUpdateVO:
         self._summary_status = None
         self._alias = None
         self._self_defined_fields = None
+        self._dev_version = None
+        self._prod_version = None
+        self._dev_version_name = None
+        self._prod_version_name = None
+        self._env_type = None
+        self._has_related_physical_table = None
+        self._has_related_logic_table = None
         self.discriminator = None
 
         self.id = id
@@ -474,6 +514,8 @@ class TableModelUpdateVO:
             self.is_partition = is_partition
         if physical_table is not None:
             self.physical_table = physical_table
+        if dev_physical_table is not None:
+            self.dev_physical_table = dev_physical_table
         if technical_asset is not None:
             self.technical_asset = technical_asset
         if business_asset is not None:
@@ -488,15 +530,29 @@ class TableModelUpdateVO:
             self.alias = alias
         if self_defined_fields is not None:
             self.self_defined_fields = self_defined_fields
+        if dev_version is not None:
+            self.dev_version = dev_version
+        if prod_version is not None:
+            self.prod_version = prod_version
+        if dev_version_name is not None:
+            self.dev_version_name = dev_version_name
+        if prod_version_name is not None:
+            self.prod_version_name = prod_version_name
+        if env_type is not None:
+            self.env_type = env_type
+        if has_related_physical_table is not None:
+            self.has_related_physical_table = has_related_physical_table
+        if has_related_logic_table is not None:
+            self.has_related_logic_table = has_related_logic_table
 
     @property
     def id(self):
         """Gets the id of this TableModelUpdateVO.
 
-        编码。
+        编码，填写String类型替代Long类型。
 
         :return: The id of this TableModelUpdateVO.
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -504,10 +560,10 @@ class TableModelUpdateVO:
     def id(self, id):
         """Sets the id of this TableModelUpdateVO.
 
-        编码。
+        编码，填写String类型替代Long类型。
 
         :param id: The id of this TableModelUpdateVO.
-        :type id: int
+        :type id: str
         """
         self._id = id
 
@@ -515,10 +571,10 @@ class TableModelUpdateVO:
     def model_id(self):
         """Gets the model_id of this TableModelUpdateVO.
 
-        所属关系建模的模型ID。
+        所属关系建模的模型ID，填写String类型替代Long类型。
 
         :return: The model_id of this TableModelUpdateVO.
-        :rtype: int
+        :rtype: str
         """
         return self._model_id
 
@@ -526,10 +582,10 @@ class TableModelUpdateVO:
     def model_id(self, model_id):
         """Sets the model_id of this TableModelUpdateVO.
 
-        所属关系建模的模型ID。
+        所属关系建模的模型ID，填写String类型替代Long类型。
 
         :param model_id: The model_id of this TableModelUpdateVO.
-        :type model_id: int
+        :type model_id: str
         """
         self._model_id = model_id
 
@@ -537,10 +593,10 @@ class TableModelUpdateVO:
     def parent_table_id(self):
         """Gets the parent_table_id of this TableModelUpdateVO.
 
-        父表ID。
+        父表ID，填写String类型替代Long类型。
 
         :return: The parent_table_id of this TableModelUpdateVO.
-        :rtype: int
+        :rtype: str
         """
         return self._parent_table_id
 
@@ -548,10 +604,10 @@ class TableModelUpdateVO:
     def parent_table_id(self, parent_table_id):
         """Sets the parent_table_id of this TableModelUpdateVO.
 
-        父表ID。
+        父表ID，填写String类型替代Long类型。
 
         :param parent_table_id: The parent_table_id of this TableModelUpdateVO.
-        :type parent_table_id: int
+        :type parent_table_id: str
         """
         self._parent_table_id = parent_table_id
 
@@ -559,7 +615,7 @@ class TableModelUpdateVO:
     def parent_table_name(self):
         """Gets the parent_table_name of this TableModelUpdateVO.
 
-        父表名称。
+        父表名称，只读。
 
         :return: The parent_table_name of this TableModelUpdateVO.
         :rtype: str
@@ -570,7 +626,7 @@ class TableModelUpdateVO:
     def parent_table_name(self, parent_table_name):
         """Sets the parent_table_name of this TableModelUpdateVO.
 
-        父表名称。
+        父表名称，只读。
 
         :param parent_table_name: The parent_table_name of this TableModelUpdateVO.
         :type parent_table_name: str
@@ -581,7 +637,7 @@ class TableModelUpdateVO:
     def parent_table_code(self):
         """Gets the parent_table_code of this TableModelUpdateVO.
 
-        父表编码。
+        父表编码，只读。
 
         :return: The parent_table_code of this TableModelUpdateVO.
         :rtype: str
@@ -592,7 +648,7 @@ class TableModelUpdateVO:
     def parent_table_code(self, parent_table_code):
         """Sets the parent_table_code of this TableModelUpdateVO.
 
-        父表编码。
+        父表编码，只读。
 
         :param parent_table_code: The parent_table_code of this TableModelUpdateVO.
         :type parent_table_code: str
@@ -709,7 +765,7 @@ class TableModelUpdateVO:
     def table_type(self):
         """Gets the table_type of this TableModelUpdateVO.
 
-        表类型。
+        表类型，只读。
 
         :return: The table_type of this TableModelUpdateVO.
         :rtype: str
@@ -720,7 +776,7 @@ class TableModelUpdateVO:
     def table_type(self, table_type):
         """Sets the table_type of this TableModelUpdateVO.
 
-        表类型。
+        表类型，只读。
 
         :param table_type: The table_type of this TableModelUpdateVO.
         :type table_type: str
@@ -885,7 +941,7 @@ class TableModelUpdateVO:
     def tb_guid(self):
         """Gets the tb_guid of this TableModelUpdateVO.
 
-        表物化后的guid。
+        表物化后的guid，只读。
 
         :return: The tb_guid of this TableModelUpdateVO.
         :rtype: str
@@ -896,7 +952,7 @@ class TableModelUpdateVO:
     def tb_guid(self, tb_guid):
         """Sets the tb_guid of this TableModelUpdateVO.
 
-        表物化后的guid。
+        表物化后的guid，只读。
 
         :param tb_guid: The tb_guid of this TableModelUpdateVO.
         :type tb_guid: str
@@ -907,7 +963,7 @@ class TableModelUpdateVO:
     def tb_id(self):
         """Gets the tb_id of this TableModelUpdateVO.
 
-        数据表ID。
+        数据表ID，只读。
 
         :return: The tb_id of this TableModelUpdateVO.
         :rtype: str
@@ -918,7 +974,7 @@ class TableModelUpdateVO:
     def tb_id(self, tb_id):
         """Sets the tb_id of this TableModelUpdateVO.
 
-        数据表ID。
+        数据表ID，只读。
 
         :param tb_id: The tb_id of this TableModelUpdateVO.
         :type tb_id: str
@@ -951,7 +1007,7 @@ class TableModelUpdateVO:
     def logic_tb_guid(self):
         """Gets the logic_tb_guid of this TableModelUpdateVO.
 
-        逻辑实体的guid。
+        逻辑实体的guid，只读。
 
         :return: The logic_tb_guid of this TableModelUpdateVO.
         :rtype: str
@@ -962,7 +1018,7 @@ class TableModelUpdateVO:
     def logic_tb_guid(self, logic_tb_guid):
         """Sets the logic_tb_guid of this TableModelUpdateVO.
 
-        逻辑实体的guid。
+        逻辑实体的guid，只读。
 
         :param logic_tb_guid: The logic_tb_guid of this TableModelUpdateVO.
         :type logic_tb_guid: str
@@ -1013,10 +1069,10 @@ class TableModelUpdateVO:
     def logic_tb_id(self):
         """Gets the logic_tb_id of this TableModelUpdateVO.
 
-        逻辑实体的ID。
+        逻辑实体的ID，填写String类型替代Long类型。
 
         :return: The logic_tb_id of this TableModelUpdateVO.
-        :rtype: int
+        :rtype: str
         """
         return self._logic_tb_id
 
@@ -1024,10 +1080,10 @@ class TableModelUpdateVO:
     def logic_tb_id(self, logic_tb_id):
         """Sets the logic_tb_id of this TableModelUpdateVO.
 
-        逻辑实体的ID。
+        逻辑实体的ID，填写String类型替代Long类型。
 
         :param logic_tb_id: The logic_tb_id of this TableModelUpdateVO.
-        :type logic_tb_id: int
+        :type logic_tb_id: str
         """
         self._logic_tb_id = logic_tb_id
 
@@ -1035,10 +1091,10 @@ class TableModelUpdateVO:
     def biz_catalog_id(self):
         """Gets the biz_catalog_id of this TableModelUpdateVO.
 
-        归属的业务分类的ID。
+        归属的业务分类的ID，填写String类型替代Long类型。
 
         :return: The biz_catalog_id of this TableModelUpdateVO.
-        :rtype: int
+        :rtype: str
         """
         return self._biz_catalog_id
 
@@ -1046,10 +1102,10 @@ class TableModelUpdateVO:
     def biz_catalog_id(self, biz_catalog_id):
         """Sets the biz_catalog_id of this TableModelUpdateVO.
 
-        归属的业务分类的ID。
+        归属的业务分类的ID，填写String类型替代Long类型。
 
         :param biz_catalog_id: The biz_catalog_id of this TableModelUpdateVO.
-        :type biz_catalog_id: int
+        :type biz_catalog_id: str
         """
         self._biz_catalog_id = biz_catalog_id
 
@@ -1057,7 +1113,7 @@ class TableModelUpdateVO:
     def catalog_path(self):
         """Gets the catalog_path of this TableModelUpdateVO.
 
-        归属的业务分类的路径 {\"l1Id\":\"\",\"l2Id\":\"\",\"l3Id\":\"\"}。
+        归属的业务分类的路径，格式： {\"l1Id\":\"958408897973161984\",\"l2Id\":\"958408897973161985\",\"l3Id\":\"958408897973161986\"}。
 
         :return: The catalog_path of this TableModelUpdateVO.
         :rtype: str
@@ -1068,7 +1124,7 @@ class TableModelUpdateVO:
     def catalog_path(self, catalog_path):
         """Sets the catalog_path of this TableModelUpdateVO.
 
-        归属的业务分类的路径 {\"l1Id\":\"\",\"l2Id\":\"\",\"l3Id\":\"\"}。
+        归属的业务分类的路径，格式： {\"l1Id\":\"958408897973161984\",\"l2Id\":\"958408897973161985\",\"l3Id\":\"958408897973161986\"}。
 
         :param catalog_path: The catalog_path of this TableModelUpdateVO.
         :type catalog_path: str
@@ -1079,7 +1135,7 @@ class TableModelUpdateVO:
     def create_by(self):
         """Gets the create_by of this TableModelUpdateVO.
 
-        创建人。
+        创建人，只读。
 
         :return: The create_by of this TableModelUpdateVO.
         :rtype: str
@@ -1090,7 +1146,7 @@ class TableModelUpdateVO:
     def create_by(self, create_by):
         """Sets the create_by of this TableModelUpdateVO.
 
-        创建人。
+        创建人，只读。
 
         :param create_by: The create_by of this TableModelUpdateVO.
         :type create_by: str
@@ -1101,7 +1157,7 @@ class TableModelUpdateVO:
     def update_by(self):
         """Gets the update_by of this TableModelUpdateVO.
 
-        更新人。
+        更新人，只读。
 
         :return: The update_by of this TableModelUpdateVO.
         :rtype: str
@@ -1112,7 +1168,7 @@ class TableModelUpdateVO:
     def update_by(self, update_by):
         """Sets the update_by of this TableModelUpdateVO.
 
-        更新人。
+        更新人，只读。
 
         :param update_by: The update_by of this TableModelUpdateVO.
         :type update_by: str
@@ -1123,7 +1179,7 @@ class TableModelUpdateVO:
     def create_time(self):
         """Gets the create_time of this TableModelUpdateVO.
 
-        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The create_time of this TableModelUpdateVO.
         :rtype: datetime
@@ -1134,7 +1190,7 @@ class TableModelUpdateVO:
     def create_time(self, create_time):
         """Sets the create_time of this TableModelUpdateVO.
 
-        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param create_time: The create_time of this TableModelUpdateVO.
         :type create_time: datetime
@@ -1145,7 +1201,7 @@ class TableModelUpdateVO:
     def update_time(self):
         """Gets the update_time of this TableModelUpdateVO.
 
-        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The update_time of this TableModelUpdateVO.
         :rtype: datetime
@@ -1156,7 +1212,7 @@ class TableModelUpdateVO:
     def update_time(self, update_time):
         """Sets the update_time of this TableModelUpdateVO.
 
-        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param update_time: The update_time of this TableModelUpdateVO.
         :type update_time: datetime
@@ -1167,7 +1223,7 @@ class TableModelUpdateVO:
     def tags(self):
         """Gets the tags of this TableModelUpdateVO.
 
-        表标签。
+        表标签，只读。
 
         :return: The tags of this TableModelUpdateVO.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.TagVO`]
@@ -1178,7 +1234,7 @@ class TableModelUpdateVO:
     def tags(self, tags):
         """Sets the tags of this TableModelUpdateVO.
 
-        表标签。
+        表标签，只读。
 
         :param tags: The tags of this TableModelUpdateVO.
         :type tags: list[:class:`huaweicloudsdkdataartsstudio.v1.TagVO`]
@@ -1401,10 +1457,10 @@ class TableModelUpdateVO:
     def l1_id(self):
         """Gets the l1_id of this TableModelUpdateVO.
 
-        主题域分组ID。
+        主题域分组ID，只读，填写String类型替代Long类型。
 
         :return: The l1_id of this TableModelUpdateVO.
-        :rtype: int
+        :rtype: str
         """
         return self._l1_id
 
@@ -1412,10 +1468,10 @@ class TableModelUpdateVO:
     def l1_id(self, l1_id):
         """Sets the l1_id of this TableModelUpdateVO.
 
-        主题域分组ID。
+        主题域分组ID，只读，填写String类型替代Long类型。
 
         :param l1_id: The l1_id of this TableModelUpdateVO.
-        :type l1_id: int
+        :type l1_id: str
         """
         self._l1_id = l1_id
 
@@ -1445,10 +1501,10 @@ class TableModelUpdateVO:
     def l3_id(self):
         """Gets the l3_id of this TableModelUpdateVO.
 
-        业务对象ID。
+        业务对象ID，只读，填写String类型替代Long类型。
 
         :return: The l3_id of this TableModelUpdateVO.
-        :rtype: int
+        :rtype: str
         """
         return self._l3_id
 
@@ -1456,10 +1512,10 @@ class TableModelUpdateVO:
     def l3_id(self, l3_id):
         """Sets the l3_id of this TableModelUpdateVO.
 
-        业务对象ID。
+        业务对象ID，只读，填写String类型替代Long类型。
 
         :param l3_id: The l3_id of this TableModelUpdateVO.
-        :type l3_id: int
+        :type l3_id: str
         """
         self._l3_id = l3_id
 
@@ -1665,10 +1721,10 @@ class TableModelUpdateVO:
     def quality_id(self):
         """Gets the quality_id of this TableModelUpdateVO.
 
-        质量ID。
+        质量ID，填写String类型替代Long类型。
 
         :return: The quality_id of this TableModelUpdateVO.
-        :rtype: int
+        :rtype: str
         """
         return self._quality_id
 
@@ -1676,10 +1732,10 @@ class TableModelUpdateVO:
     def quality_id(self, quality_id):
         """Sets the quality_id of this TableModelUpdateVO.
 
-        质量ID。
+        质量ID，填写String类型替代Long类型。
 
         :param quality_id: The quality_id of this TableModelUpdateVO.
-        :type quality_id: int
+        :type quality_id: str
         """
         self._quality_id = quality_id
 
@@ -1687,7 +1743,7 @@ class TableModelUpdateVO:
     def distribute(self):
         """Gets the distribute of this TableModelUpdateVO.
 
-        DISTRIBUTE BY [HASH(column)|REPLICATION]。HASH(对指定的列进行Hash，通过映射，把数据分布到指定DN)、REPLICATION(表的每一行存在所有数据节点（DN）中，即每个数据节点都有完整的表数据)。
+        DISTRIBUTE BY [HASH(column)|REPLICATION]。 枚举值：   - HASH: 对指定的列进行Hash，通过映射，把数据分布到指定DN   - REPLICATION: 表的每一行存在所有数据节点（DN）中，即每个数据节点都有完整的表数据 
 
         :return: The distribute of this TableModelUpdateVO.
         :rtype: str
@@ -1698,7 +1754,7 @@ class TableModelUpdateVO:
     def distribute(self, distribute):
         """Sets the distribute of this TableModelUpdateVO.
 
-        DISTRIBUTE BY [HASH(column)|REPLICATION]。HASH(对指定的列进行Hash，通过映射，把数据分布到指定DN)、REPLICATION(表的每一行存在所有数据节点（DN）中，即每个数据节点都有完整的表数据)。
+        DISTRIBUTE BY [HASH(column)|REPLICATION]。 枚举值：   - HASH: 对指定的列进行Hash，通过映射，把数据分布到指定DN   - REPLICATION: 表的每一行存在所有数据节点（DN）中，即每个数据节点都有完整的表数据 
 
         :param distribute: The distribute of this TableModelUpdateVO.
         :type distribute: str
@@ -1731,7 +1787,7 @@ class TableModelUpdateVO:
     def is_partition(self):
         """Gets the is_partition of this TableModelUpdateVO.
 
-        是否分区表。
+        是否分区表，只读。
 
         :return: The is_partition of this TableModelUpdateVO.
         :rtype: bool
@@ -1742,7 +1798,7 @@ class TableModelUpdateVO:
     def is_partition(self, is_partition):
         """Sets the is_partition of this TableModelUpdateVO.
 
-        是否分区表。
+        是否分区表，只读。
 
         :param is_partition: The is_partition of this TableModelUpdateVO.
         :type is_partition: bool
@@ -1766,6 +1822,24 @@ class TableModelUpdateVO:
         :type physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         """
         self._physical_table = physical_table
+
+    @property
+    def dev_physical_table(self):
+        """Gets the dev_physical_table of this TableModelUpdateVO.
+
+        :return: The dev_physical_table of this TableModelUpdateVO.
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        """
+        return self._dev_physical_table
+
+    @dev_physical_table.setter
+    def dev_physical_table(self, dev_physical_table):
+        """Sets the dev_physical_table of this TableModelUpdateVO.
+
+        :param dev_physical_table: The dev_physical_table of this TableModelUpdateVO.
+        :type dev_physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        """
+        self._dev_physical_table = dev_physical_table
 
     @property
     def technical_asset(self):
@@ -1900,6 +1974,156 @@ class TableModelUpdateVO:
         :type self_defined_fields: list[:class:`huaweicloudsdkdataartsstudio.v1.SelfDefinedFieldVO`]
         """
         self._self_defined_fields = self_defined_fields
+
+    @property
+    def dev_version(self):
+        """Gets the dev_version of this TableModelUpdateVO.
+
+        开发环境版本，填写String类型替代Long类型。
+
+        :return: The dev_version of this TableModelUpdateVO.
+        :rtype: str
+        """
+        return self._dev_version
+
+    @dev_version.setter
+    def dev_version(self, dev_version):
+        """Sets the dev_version of this TableModelUpdateVO.
+
+        开发环境版本，填写String类型替代Long类型。
+
+        :param dev_version: The dev_version of this TableModelUpdateVO.
+        :type dev_version: str
+        """
+        self._dev_version = dev_version
+
+    @property
+    def prod_version(self):
+        """Gets the prod_version of this TableModelUpdateVO.
+
+        生产环境版本，填写String类型替代Long类型。
+
+        :return: The prod_version of this TableModelUpdateVO.
+        :rtype: str
+        """
+        return self._prod_version
+
+    @prod_version.setter
+    def prod_version(self, prod_version):
+        """Sets the prod_version of this TableModelUpdateVO.
+
+        生产环境版本，填写String类型替代Long类型。
+
+        :param prod_version: The prod_version of this TableModelUpdateVO.
+        :type prod_version: str
+        """
+        self._prod_version = prod_version
+
+    @property
+    def dev_version_name(self):
+        """Gets the dev_version_name of this TableModelUpdateVO.
+
+        开发环境版本名称
+
+        :return: The dev_version_name of this TableModelUpdateVO.
+        :rtype: str
+        """
+        return self._dev_version_name
+
+    @dev_version_name.setter
+    def dev_version_name(self, dev_version_name):
+        """Sets the dev_version_name of this TableModelUpdateVO.
+
+        开发环境版本名称
+
+        :param dev_version_name: The dev_version_name of this TableModelUpdateVO.
+        :type dev_version_name: str
+        """
+        self._dev_version_name = dev_version_name
+
+    @property
+    def prod_version_name(self):
+        """Gets the prod_version_name of this TableModelUpdateVO.
+
+        生产环境版本名称
+
+        :return: The prod_version_name of this TableModelUpdateVO.
+        :rtype: str
+        """
+        return self._prod_version_name
+
+    @prod_version_name.setter
+    def prod_version_name(self, prod_version_name):
+        """Sets the prod_version_name of this TableModelUpdateVO.
+
+        生产环境版本名称
+
+        :param prod_version_name: The prod_version_name of this TableModelUpdateVO.
+        :type prod_version_name: str
+        """
+        self._prod_version_name = prod_version_name
+
+    @property
+    def env_type(self):
+        """Gets the env_type of this TableModelUpdateVO.
+
+        :return: The env_type of this TableModelUpdateVO.
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
+        """
+        return self._env_type
+
+    @env_type.setter
+    def env_type(self, env_type):
+        """Sets the env_type of this TableModelUpdateVO.
+
+        :param env_type: The env_type of this TableModelUpdateVO.
+        :type env_type: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
+        """
+        self._env_type = env_type
+
+    @property
+    def has_related_physical_table(self):
+        """Gets the has_related_physical_table of this TableModelUpdateVO.
+
+        是否关联了物理表
+
+        :return: The has_related_physical_table of this TableModelUpdateVO.
+        :rtype: bool
+        """
+        return self._has_related_physical_table
+
+    @has_related_physical_table.setter
+    def has_related_physical_table(self, has_related_physical_table):
+        """Sets the has_related_physical_table of this TableModelUpdateVO.
+
+        是否关联了物理表
+
+        :param has_related_physical_table: The has_related_physical_table of this TableModelUpdateVO.
+        :type has_related_physical_table: bool
+        """
+        self._has_related_physical_table = has_related_physical_table
+
+    @property
+    def has_related_logic_table(self):
+        """Gets the has_related_logic_table of this TableModelUpdateVO.
+
+        是否关联了逻辑实体
+
+        :return: The has_related_logic_table of this TableModelUpdateVO.
+        :rtype: bool
+        """
+        return self._has_related_logic_table
+
+    @has_related_logic_table.setter
+    def has_related_logic_table(self, has_related_logic_table):
+        """Sets the has_related_logic_table of this TableModelUpdateVO.
+
+        是否关联了逻辑实体
+
+        :param has_related_logic_table: The has_related_logic_table of this TableModelUpdateVO.
+        :type has_related_logic_table: bool
+        """
+        self._has_related_logic_table = has_related_logic_table
 
     def to_dict(self):
         """Returns the model properties as a dict"""

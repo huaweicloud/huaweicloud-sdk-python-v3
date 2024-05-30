@@ -3255,6 +3255,867 @@ class VpcAsyncClient(Client):
 
         return http_info
 
+    def add_clouddcn_subnets_tags_async(self, request):
+        """添加Clouddcn子网标签
+
+        添加Clouddcn子网的标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AddClouddcnSubnetsTags
+        :type request: :class:`huaweicloudsdkvpc.v3.AddClouddcnSubnetsTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.AddClouddcnSubnetsTagsResponse`
+        """
+        http_info = self._add_clouddcn_subnets_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def add_clouddcn_subnets_tags_async_invoker(self, request):
+        http_info = self._add_clouddcn_subnets_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_clouddcn_subnets_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/clouddcn-subnets/{resource_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddClouddcnSubnetsTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_create_clouddcn_subnets_tags_async(self, request):
+        """批量添加Clouddcn子网标签
+
+        批量添加Clouddcn子网的标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchCreateClouddcnSubnetsTags
+        :type request: :class:`huaweicloudsdkvpc.v3.BatchCreateClouddcnSubnetsTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.BatchCreateClouddcnSubnetsTagsResponse`
+        """
+        http_info = self._batch_create_clouddcn_subnets_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_create_clouddcn_subnets_tags_async_invoker(self, request):
+        http_info = self._batch_create_clouddcn_subnets_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_create_clouddcn_subnets_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/clouddcn-subnets/{resource_id}/tags/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateClouddcnSubnetsTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_clouddcn_subnets_tags_async(self, request):
+        """批量删除Clouddcn子网标签
+
+        批量删除Clouddcn子网的标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteClouddcnSubnetsTags
+        :type request: :class:`huaweicloudsdkvpc.v3.BatchDeleteClouddcnSubnetsTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.BatchDeleteClouddcnSubnetsTagsResponse`
+        """
+        http_info = self._batch_delete_clouddcn_subnets_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_clouddcn_subnets_tags_async_invoker(self, request):
+        http_info = self._batch_delete_clouddcn_subnets_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_clouddcn_subnets_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/clouddcn-subnets/{resource_id}/tags/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteClouddcnSubnetsTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_clouddcn_subnet_async(self, request):
+        """创建clouddcn子网
+
+        创建clouddcn子网。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateClouddcnSubnet
+        :type request: :class:`huaweicloudsdkvpc.v3.CreateClouddcnSubnetRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.CreateClouddcnSubnetResponse`
+        """
+        http_info = self._create_clouddcn_subnet_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_clouddcn_subnet_async_invoker(self, request):
+        http_info = self._create_clouddcn_subnet_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_clouddcn_subnet_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/vpc/clouddcn-subnets",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateClouddcnSubnetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_clouddcn_subnet_async(self, request):
+        """删除clouddcn子网
+
+        删除clouddcn子网
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteClouddcnSubnet
+        :type request: :class:`huaweicloudsdkvpc.v3.DeleteClouddcnSubnetRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.DeleteClouddcnSubnetResponse`
+        """
+        http_info = self._delete_clouddcn_subnet_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_clouddcn_subnet_async_invoker(self, request):
+        http_info = self._delete_clouddcn_subnet_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_clouddcn_subnet_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/vpc/clouddcn-subnets/{clouddcn_subnet_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteClouddcnSubnetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'clouddcn_subnet_id' in local_var_params:
+            path_params['clouddcn_subnet_id'] = local_var_params['clouddcn_subnet_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_clouddcn_subnets_tag_async(self, request):
+        """删除Clouddcn子网标签
+
+        删除Clouddcn子网的标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteClouddcnSubnetsTag
+        :type request: :class:`huaweicloudsdkvpc.v3.DeleteClouddcnSubnetsTagRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.DeleteClouddcnSubnetsTagResponse`
+        """
+        http_info = self._delete_clouddcn_subnets_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_clouddcn_subnets_tag_async_invoker(self, request):
+        http_info = self._delete_clouddcn_subnets_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_clouddcn_subnets_tag_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/clouddcn-subnets/{resource_id}/tags/{tag_key}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteClouddcnSubnetsTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+        if 'tag_key' in local_var_params:
+            path_params['tag_key'] = local_var_params['tag_key']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_clouddcn_subnets_async(self, request):
+        """查询clouddcn子网列表
+
+        查询clouddcn子网列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListClouddcnSubnets
+        :type request: :class:`huaweicloudsdkvpc.v3.ListClouddcnSubnetsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ListClouddcnSubnetsResponse`
+        """
+        http_info = self._list_clouddcn_subnets_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_clouddcn_subnets_async_invoker(self, request):
+        http_info = self._list_clouddcn_subnets_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_clouddcn_subnets_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/vpc/clouddcn-subnets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListClouddcnSubnetsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'vpc_id' in local_var_params:
+            query_params.append(('vpc_id', local_var_params['vpc_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_clouddcn_subnets_count_filter_tags_async(self, request):
+        """查询资源实例列表数目
+
+        查询资源实例列表数目
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListClouddcnSubnetsCountFilterTags
+        :type request: :class:`huaweicloudsdkvpc.v3.ListClouddcnSubnetsCountFilterTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ListClouddcnSubnetsCountFilterTagsResponse`
+        """
+        http_info = self._list_clouddcn_subnets_count_filter_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_clouddcn_subnets_count_filter_tags_async_invoker(self, request):
+        http_info = self._list_clouddcn_subnets_count_filter_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_clouddcn_subnets_count_filter_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/clouddcn-subnets/resource-instances/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListClouddcnSubnetsCountFilterTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_clouddcn_subnets_filter_tags_async(self, request):
+        """查询资源实例列表
+
+        查询资源实例列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListClouddcnSubnetsFilterTags
+        :type request: :class:`huaweicloudsdkvpc.v3.ListClouddcnSubnetsFilterTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ListClouddcnSubnetsFilterTagsResponse`
+        """
+        http_info = self._list_clouddcn_subnets_filter_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_clouddcn_subnets_filter_tags_async_invoker(self, request):
+        http_info = self._list_clouddcn_subnets_filter_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_clouddcn_subnets_filter_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/clouddcn-subnets/resource-instances/filter",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListClouddcnSubnetsFilterTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_clouddcn_subnets_tags_async(self, request):
+        """查询Clouddcn子网项目标签
+
+        查询Clouddcn子网的项目标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListClouddcnSubnetsTags
+        :type request: :class:`huaweicloudsdkvpc.v3.ListClouddcnSubnetsTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ListClouddcnSubnetsTagsResponse`
+        """
+        http_info = self._list_clouddcn_subnets_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_clouddcn_subnets_tags_async_invoker(self, request):
+        http_info = self._list_clouddcn_subnets_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_clouddcn_subnets_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/clouddcn-subnets/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListClouddcnSubnetsTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_clouddcn_subnet_async(self, request):
+        """查询clouddcn子网
+
+        查询clouddcn子网详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowClouddcnSubnet
+        :type request: :class:`huaweicloudsdkvpc.v3.ShowClouddcnSubnetRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ShowClouddcnSubnetResponse`
+        """
+        http_info = self._show_clouddcn_subnet_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_clouddcn_subnet_async_invoker(self, request):
+        http_info = self._show_clouddcn_subnet_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_clouddcn_subnet_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/vpc/clouddcn-subnets/{clouddcn_subnet_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowClouddcnSubnetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'clouddcn_subnet_id' in local_var_params:
+            path_params['clouddcn_subnet_id'] = local_var_params['clouddcn_subnet_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_clouddcn_subnets_tags_async(self, request):
+        """查询Clouddcn子网标签
+
+        查询Clouddcn子网的标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowClouddcnSubnetsTags
+        :type request: :class:`huaweicloudsdkvpc.v3.ShowClouddcnSubnetsTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ShowClouddcnSubnetsTagsResponse`
+        """
+        http_info = self._show_clouddcn_subnets_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_clouddcn_subnets_tags_async_invoker(self, request):
+        http_info = self._show_clouddcn_subnets_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_clouddcn_subnets_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/clouddcn-subnets/{resource_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowClouddcnSubnetsTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_clouddcn_subnet_async(self, request):
+        """更新clouddcn子网
+
+        更新clouddcn子网。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateClouddcnSubnet
+        :type request: :class:`huaweicloudsdkvpc.v3.UpdateClouddcnSubnetRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.UpdateClouddcnSubnetResponse`
+        """
+        http_info = self._update_clouddcn_subnet_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_clouddcn_subnet_async_invoker(self, request):
+        http_info = self._update_clouddcn_subnet_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_clouddcn_subnet_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/vpc/clouddcn-subnets/{clouddcn_subnet_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateClouddcnSubnetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'clouddcn_subnet_id' in local_var_params:
+            path_params['clouddcn_subnet_id'] = local_var_params['clouddcn_subnet_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_address_group_async(self, request):
         """创建地址组
 

@@ -19,16 +19,18 @@ class UpgradeTypeInfo:
     openapi_types = {
         'upgrade_type': 'str',
         'enable': 'bool',
-        'upgrade_action_list': 'list[UpgradeActionInfo]'
+        'upgrade_action_list': 'list[UpgradeActionInfo]',
+        'is_parallel_upgrade': 'bool'
     }
 
     attribute_map = {
         'upgrade_type': 'upgrade_type',
         'enable': 'enable',
-        'upgrade_action_list': 'upgrade_action_list'
+        'upgrade_action_list': 'upgrade_action_list',
+        'is_parallel_upgrade': 'is_parallel_upgrade'
     }
 
-    def __init__(self, upgrade_type=None, enable=None, upgrade_action_list=None):
+    def __init__(self, upgrade_type=None, enable=None, upgrade_action_list=None, is_parallel_upgrade=None):
         """UpgradeTypeInfo
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class UpgradeTypeInfo:
         :type enable: bool
         :param upgrade_action_list: 升级操作列表
         :type upgrade_action_list: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.UpgradeActionInfo`]
+        :param is_parallel_upgrade: 是否正在进行AZ内并行升级。 -true：当前实例处于灰度升级的升级待观察升级方式中，已选择了AZ内并行升级方式，后续无法更改。 -false：当前实例处于升级流程中，未选择AZ内并行升级的方式，后续无法更改。null：当前实例尚未处于升级流程中。
+        :type is_parallel_upgrade: bool
         """
         
         
@@ -46,6 +50,7 @@ class UpgradeTypeInfo:
         self._upgrade_type = None
         self._enable = None
         self._upgrade_action_list = None
+        self._is_parallel_upgrade = None
         self.discriminator = None
 
         if upgrade_type is not None:
@@ -54,6 +59,8 @@ class UpgradeTypeInfo:
             self.enable = enable
         if upgrade_action_list is not None:
             self.upgrade_action_list = upgrade_action_list
+        if is_parallel_upgrade is not None:
+            self.is_parallel_upgrade = is_parallel_upgrade
 
     @property
     def upgrade_type(self):
@@ -120,6 +127,28 @@ class UpgradeTypeInfo:
         :type upgrade_action_list: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.UpgradeActionInfo`]
         """
         self._upgrade_action_list = upgrade_action_list
+
+    @property
+    def is_parallel_upgrade(self):
+        """Gets the is_parallel_upgrade of this UpgradeTypeInfo.
+
+        是否正在进行AZ内并行升级。 -true：当前实例处于灰度升级的升级待观察升级方式中，已选择了AZ内并行升级方式，后续无法更改。 -false：当前实例处于升级流程中，未选择AZ内并行升级的方式，后续无法更改。null：当前实例尚未处于升级流程中。
+
+        :return: The is_parallel_upgrade of this UpgradeTypeInfo.
+        :rtype: bool
+        """
+        return self._is_parallel_upgrade
+
+    @is_parallel_upgrade.setter
+    def is_parallel_upgrade(self, is_parallel_upgrade):
+        """Sets the is_parallel_upgrade of this UpgradeTypeInfo.
+
+        是否正在进行AZ内并行升级。 -true：当前实例处于灰度升级的升级待观察升级方式中，已选择了AZ内并行升级方式，后续无法更改。 -false：当前实例处于升级流程中，未选择AZ内并行升级的方式，后续无法更改。null：当前实例尚未处于升级流程中。
+
+        :param is_parallel_upgrade: The is_parallel_upgrade of this UpgradeTypeInfo.
+        :type is_parallel_upgrade: bool
+        """
+        self._is_parallel_upgrade = is_parallel_upgrade
 
     def to_dict(self):
         """Returns the model properties as a dict"""

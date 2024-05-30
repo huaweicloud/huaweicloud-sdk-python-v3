@@ -23,7 +23,9 @@ class SearchAutoEnlargePolicyResponse(SdkResponse):
         'min_volume_size': 'int',
         'max_volume_size': 'int',
         'trigger_available_percent': 'int',
-        'percents': 'list[int]'
+        'percents': 'list[int]',
+        'step_size': 'int',
+        'step_percent': 'int'
     }
 
     attribute_map = {
@@ -32,10 +34,12 @@ class SearchAutoEnlargePolicyResponse(SdkResponse):
         'min_volume_size': 'min_volume_size',
         'max_volume_size': 'max_volume_size',
         'trigger_available_percent': 'trigger_available_percent',
-        'percents': 'percents'
+        'percents': 'percents',
+        'step_size': 'step_size',
+        'step_percent': 'step_percent'
     }
 
-    def __init__(self, switch_option=None, limit_volume_size=None, min_volume_size=None, max_volume_size=None, trigger_available_percent=None, percents=None):
+    def __init__(self, switch_option=None, limit_volume_size=None, min_volume_size=None, max_volume_size=None, trigger_available_percent=None, percents=None, step_size=None, step_percent=None):
         """SearchAutoEnlargePolicyResponse
 
         The model defined in huaweicloud sdk
@@ -52,6 +56,10 @@ class SearchAutoEnlargePolicyResponse(SdkResponse):
         :type trigger_available_percent: int
         :param percents: 空间率集合。
         :type percents: list[int]
+        :param step_size: 扩容步长，固定大小扩容方式。
+        :type step_size: int
+        :param step_percent: 扩容步长，百分比扩容方式。
+        :type step_percent: int
         """
         
         super(SearchAutoEnlargePolicyResponse, self).__init__()
@@ -62,6 +70,8 @@ class SearchAutoEnlargePolicyResponse(SdkResponse):
         self._max_volume_size = None
         self._trigger_available_percent = None
         self._percents = None
+        self._step_size = None
+        self._step_percent = None
         self.discriminator = None
 
         if switch_option is not None:
@@ -76,6 +86,10 @@ class SearchAutoEnlargePolicyResponse(SdkResponse):
             self.trigger_available_percent = trigger_available_percent
         if percents is not None:
             self.percents = percents
+        if step_size is not None:
+            self.step_size = step_size
+        if step_percent is not None:
+            self.step_percent = step_percent
 
     @property
     def switch_option(self):
@@ -208,6 +222,50 @@ class SearchAutoEnlargePolicyResponse(SdkResponse):
         :type percents: list[int]
         """
         self._percents = percents
+
+    @property
+    def step_size(self):
+        """Gets the step_size of this SearchAutoEnlargePolicyResponse.
+
+        扩容步长，固定大小扩容方式。
+
+        :return: The step_size of this SearchAutoEnlargePolicyResponse.
+        :rtype: int
+        """
+        return self._step_size
+
+    @step_size.setter
+    def step_size(self, step_size):
+        """Sets the step_size of this SearchAutoEnlargePolicyResponse.
+
+        扩容步长，固定大小扩容方式。
+
+        :param step_size: The step_size of this SearchAutoEnlargePolicyResponse.
+        :type step_size: int
+        """
+        self._step_size = step_size
+
+    @property
+    def step_percent(self):
+        """Gets the step_percent of this SearchAutoEnlargePolicyResponse.
+
+        扩容步长，百分比扩容方式。
+
+        :return: The step_percent of this SearchAutoEnlargePolicyResponse.
+        :rtype: int
+        """
+        return self._step_percent
+
+    @step_percent.setter
+    def step_percent(self, step_percent):
+        """Sets the step_percent of this SearchAutoEnlargePolicyResponse.
+
+        扩容步长，百分比扩容方式。
+
+        :param step_percent: The step_percent of this SearchAutoEnlargePolicyResponse.
+        :type step_percent: int
+        """
+        self._step_percent = step_percent
 
     def to_dict(self):
         """Returns the model properties as a dict"""

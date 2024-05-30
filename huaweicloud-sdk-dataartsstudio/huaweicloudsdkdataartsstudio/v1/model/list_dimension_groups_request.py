@@ -19,7 +19,7 @@ class ListDimensionGroupsRequest:
     openapi_types = {
         'workspace': 'str',
         'x_project_id': 'str',
-        'table_id': 'int',
+        'table_id': 'str',
         'biz_type': 'str',
         'limit': 'int',
         'offset': 'int'
@@ -43,11 +43,11 @@ class ListDimensionGroupsRequest:
         :type workspace: str
         :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
         :type x_project_id: str
-        :param table_id: 关联表的ID。
-        :type table_id: int
-        :param biz_type: 按业务类型查询。
+        :param table_id: 关联表的ID，填写String类型替代Long类型。
+        :type table_id: str
+        :param biz_type: 按业务类型查询，可选业务类型有：ATOMIC_INDEX（原子指标）、DERIVATIVE_INDEX（衍生指标）、DIMENSION（维度）、TIME_CONDITION（时间限定）、DIMENSION_LOGIC_TABLE（维度表）、FACT_LOGIC_TABLE（事实表）、AGGREGATION_LOGIC_TABLE（汇总表）、TABLE_MODEL（关系建模表）、CODE_TABLE（码表）、STANDARD_ELEMENT）（数据标准）、BIZ_METRIC（业务指标）、COMPOUND_METRIC（复合指标）、SUBJECT（主题）、ATOMIC_METRIC（原子指标（新））、DERIVED_METRIC（衍生指标（新））、COMPOSITE_METRIC（复合指标（新））。
         :type biz_type: str
-        :param limit: 查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+        :param limit: 每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
         :type limit: int
         :param offset: 查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
         :type offset: int
@@ -123,10 +123,10 @@ class ListDimensionGroupsRequest:
     def table_id(self):
         """Gets the table_id of this ListDimensionGroupsRequest.
 
-        关联表的ID。
+        关联表的ID，填写String类型替代Long类型。
 
         :return: The table_id of this ListDimensionGroupsRequest.
-        :rtype: int
+        :rtype: str
         """
         return self._table_id
 
@@ -134,10 +134,10 @@ class ListDimensionGroupsRequest:
     def table_id(self, table_id):
         """Sets the table_id of this ListDimensionGroupsRequest.
 
-        关联表的ID。
+        关联表的ID，填写String类型替代Long类型。
 
         :param table_id: The table_id of this ListDimensionGroupsRequest.
-        :type table_id: int
+        :type table_id: str
         """
         self._table_id = table_id
 
@@ -145,7 +145,7 @@ class ListDimensionGroupsRequest:
     def biz_type(self):
         """Gets the biz_type of this ListDimensionGroupsRequest.
 
-        按业务类型查询。
+        按业务类型查询，可选业务类型有：ATOMIC_INDEX（原子指标）、DERIVATIVE_INDEX（衍生指标）、DIMENSION（维度）、TIME_CONDITION（时间限定）、DIMENSION_LOGIC_TABLE（维度表）、FACT_LOGIC_TABLE（事实表）、AGGREGATION_LOGIC_TABLE（汇总表）、TABLE_MODEL（关系建模表）、CODE_TABLE（码表）、STANDARD_ELEMENT）（数据标准）、BIZ_METRIC（业务指标）、COMPOUND_METRIC（复合指标）、SUBJECT（主题）、ATOMIC_METRIC（原子指标（新））、DERIVED_METRIC（衍生指标（新））、COMPOSITE_METRIC（复合指标（新））。
 
         :return: The biz_type of this ListDimensionGroupsRequest.
         :rtype: str
@@ -156,7 +156,7 @@ class ListDimensionGroupsRequest:
     def biz_type(self, biz_type):
         """Sets the biz_type of this ListDimensionGroupsRequest.
 
-        按业务类型查询。
+        按业务类型查询，可选业务类型有：ATOMIC_INDEX（原子指标）、DERIVATIVE_INDEX（衍生指标）、DIMENSION（维度）、TIME_CONDITION（时间限定）、DIMENSION_LOGIC_TABLE（维度表）、FACT_LOGIC_TABLE（事实表）、AGGREGATION_LOGIC_TABLE（汇总表）、TABLE_MODEL（关系建模表）、CODE_TABLE（码表）、STANDARD_ELEMENT）（数据标准）、BIZ_METRIC（业务指标）、COMPOUND_METRIC（复合指标）、SUBJECT（主题）、ATOMIC_METRIC（原子指标（新））、DERIVED_METRIC（衍生指标（新））、COMPOSITE_METRIC（复合指标（新））。
 
         :param biz_type: The biz_type of this ListDimensionGroupsRequest.
         :type biz_type: str
@@ -167,7 +167,7 @@ class ListDimensionGroupsRequest:
     def limit(self):
         """Gets the limit of this ListDimensionGroupsRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+        每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :return: The limit of this ListDimensionGroupsRequest.
         :rtype: int
@@ -178,7 +178,7 @@ class ListDimensionGroupsRequest:
     def limit(self, limit):
         """Sets the limit of this ListDimensionGroupsRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+        每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :param limit: The limit of this ListDimensionGroupsRequest.
         :type limit: int

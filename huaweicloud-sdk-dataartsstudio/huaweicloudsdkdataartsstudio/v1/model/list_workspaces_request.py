@@ -43,9 +43,9 @@ class ListWorkspacesRequest:
         :type workspace: str
         :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
         :type x_project_id: str
-        :param workspace_type: 模型工作区类型枚举。THIRD_NF(关系建模)、DIMENSION(维度建模)。
+        :param workspace_type: 模型工作区类型枚举。 枚举值：   - THIRD_NF: 关系建模   - DIMENSION: 维度建模 
         :type workspace_type: str
-        :param limit: 查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+        :param limit: 每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
         :type limit: int
         :param offset: 查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
         :type offset: int
@@ -123,7 +123,7 @@ class ListWorkspacesRequest:
     def workspace_type(self):
         """Gets the workspace_type of this ListWorkspacesRequest.
 
-        模型工作区类型枚举。THIRD_NF(关系建模)、DIMENSION(维度建模)。
+        模型工作区类型枚举。 枚举值：   - THIRD_NF: 关系建模   - DIMENSION: 维度建模 
 
         :return: The workspace_type of this ListWorkspacesRequest.
         :rtype: str
@@ -134,7 +134,7 @@ class ListWorkspacesRequest:
     def workspace_type(self, workspace_type):
         """Sets the workspace_type of this ListWorkspacesRequest.
 
-        模型工作区类型枚举。THIRD_NF(关系建模)、DIMENSION(维度建模)。
+        模型工作区类型枚举。 枚举值：   - THIRD_NF: 关系建模   - DIMENSION: 维度建模 
 
         :param workspace_type: The workspace_type of this ListWorkspacesRequest.
         :type workspace_type: str
@@ -145,7 +145,7 @@ class ListWorkspacesRequest:
     def limit(self):
         """Gets the limit of this ListWorkspacesRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+        每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :return: The limit of this ListWorkspacesRequest.
         :rtype: int
@@ -156,7 +156,7 @@ class ListWorkspacesRequest:
     def limit(self, limit):
         """Sets the limit of this ListWorkspacesRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+        每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :param limit: The limit of this ListWorkspacesRequest.
         :type limit: int

@@ -20,6 +20,7 @@ class CreateFirewallOption:
         'name': 'str',
         'description': 'str',
         'enterprise_project_id': 'str',
+        'tags': 'list[ResourceTag]',
         'admin_state_up': 'bool'
     }
 
@@ -27,10 +28,11 @@ class CreateFirewallOption:
         'name': 'name',
         'description': 'description',
         'enterprise_project_id': 'enterprise_project_id',
+        'tags': 'tags',
         'admin_state_up': 'admin_state_up'
     }
 
-    def __init__(self, name=None, description=None, enterprise_project_id=None, admin_state_up=None):
+    def __init__(self, name=None, description=None, enterprise_project_id=None, tags=None, admin_state_up=None):
         """CreateFirewallOption
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class CreateFirewallOption:
         :type description: str
         :param enterprise_project_id: 功能说明：ACL企业项目ID。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。
         :type enterprise_project_id: str
+        :param tags: 功能描述：ACL资源标签
+        :type tags: list[:class:`huaweicloudsdkvpc.v3.ResourceTag`]
         :param admin_state_up: 功能说明：ACL是否开启，默认值true 取值范围：true表示ACL开启；false表示ACL关闭
         :type admin_state_up: bool
         """
@@ -50,6 +54,7 @@ class CreateFirewallOption:
         self._name = None
         self._description = None
         self._enterprise_project_id = None
+        self._tags = None
         self._admin_state_up = None
         self.discriminator = None
 
@@ -58,6 +63,8 @@ class CreateFirewallOption:
             self.description = description
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if tags is not None:
+            self.tags = tags
         if admin_state_up is not None:
             self.admin_state_up = admin_state_up
 
@@ -126,6 +133,28 @@ class CreateFirewallOption:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def tags(self):
+        """Gets the tags of this CreateFirewallOption.
+
+        功能描述：ACL资源标签
+
+        :return: The tags of this CreateFirewallOption.
+        :rtype: list[:class:`huaweicloudsdkvpc.v3.ResourceTag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this CreateFirewallOption.
+
+        功能描述：ACL资源标签
+
+        :param tags: The tags of this CreateFirewallOption.
+        :type tags: list[:class:`huaweicloudsdkvpc.v3.ResourceTag`]
+        """
+        self._tags = tags
 
     @property
     def admin_state_up(self):

@@ -17,7 +17,7 @@ class MappingSourceFieldVO:
     sensitive_list = []
 
     openapi_types = {
-        'target_field_id': 'int',
+        'target_field_id': 'str',
         'target_field_name': 'str',
         'field_ids': 'str',
         'transform_expression': 'str',
@@ -39,8 +39,8 @@ class MappingSourceFieldVO:
 
         The model defined in huaweicloud sdk
 
-        :param target_field_id: 目标字段ID，当前表的某个字段。
-        :type target_field_id: int
+        :param target_field_id: 目标字段ID，当前表的某个字段，填写String类型替代Long类型。
+        :type target_field_id: str
         :param target_field_name: 目标字段编码。
         :type target_field_name: str
         :param field_ids: 来源字段ID，多个ID以逗号分隔。
@@ -79,10 +79,10 @@ class MappingSourceFieldVO:
     def target_field_id(self):
         """Gets the target_field_id of this MappingSourceFieldVO.
 
-        目标字段ID，当前表的某个字段。
+        目标字段ID，当前表的某个字段，填写String类型替代Long类型。
 
         :return: The target_field_id of this MappingSourceFieldVO.
-        :rtype: int
+        :rtype: str
         """
         return self._target_field_id
 
@@ -90,10 +90,10 @@ class MappingSourceFieldVO:
     def target_field_id(self, target_field_id):
         """Sets the target_field_id of this MappingSourceFieldVO.
 
-        目标字段ID，当前表的某个字段。
+        目标字段ID，当前表的某个字段，填写String类型替代Long类型。
 
         :param target_field_id: The target_field_id of this MappingSourceFieldVO.
-        :type target_field_id: int
+        :type target_field_id: str
         """
         self._target_field_id = target_field_id
 

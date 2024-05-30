@@ -17,7 +17,7 @@ class ApprovalInfoParam:
     sensitive_list = []
 
     openapi_types = {
-        'ids': 'list[int]',
+        'ids': 'list[str]',
         'msg': 'str'
     }
 
@@ -31,9 +31,9 @@ class ApprovalInfoParam:
 
         The model defined in huaweicloud sdk
 
-        :param ids: 审批单ID列表。
-        :type ids: list[int]
-        :param msg: 审批单信息。
+        :param ids: 审批单ID列表，填写String类型替代Long类型。
+        :type ids: list[str]
+        :param msg: 审批单信息，审批人填写的审批意见。
         :type msg: str
         """
         
@@ -50,10 +50,10 @@ class ApprovalInfoParam:
     def ids(self):
         """Gets the ids of this ApprovalInfoParam.
 
-        审批单ID列表。
+        审批单ID列表，填写String类型替代Long类型。
 
         :return: The ids of this ApprovalInfoParam.
-        :rtype: list[int]
+        :rtype: list[str]
         """
         return self._ids
 
@@ -61,10 +61,10 @@ class ApprovalInfoParam:
     def ids(self, ids):
         """Sets the ids of this ApprovalInfoParam.
 
-        审批单ID列表。
+        审批单ID列表，填写String类型替代Long类型。
 
         :param ids: The ids of this ApprovalInfoParam.
-        :type ids: list[int]
+        :type ids: list[str]
         """
         self._ids = ids
 
@@ -72,7 +72,7 @@ class ApprovalInfoParam:
     def msg(self):
         """Gets the msg of this ApprovalInfoParam.
 
-        审批单信息。
+        审批单信息，审批人填写的审批意见。
 
         :return: The msg of this ApprovalInfoParam.
         :rtype: str
@@ -83,7 +83,7 @@ class ApprovalInfoParam:
     def msg(self, msg):
         """Sets the msg of this ApprovalInfoParam.
 
-        审批单信息。
+        审批单信息，审批人填写的审批意见。
 
         :param msg: The msg of this ApprovalInfoParam.
         :type msg: str

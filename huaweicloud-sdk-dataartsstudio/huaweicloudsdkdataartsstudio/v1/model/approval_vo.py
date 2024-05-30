@@ -71,21 +71,21 @@ class ApprovalVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 审批单ID。
+        :param id: 审批单ID，填写String类型替代Long类型。
         :type id: str
-        :param tenant_id: 项目ID。
+        :param tenant_id: 项目ID，获取方式参考接口路径参数“project_id”。
         :type tenant_id: str
         :param name_ch: 业务中文名。
         :type name_ch: str
         :param name_en: 业务英文名。
         :type name_en: str
-        :param biz_id: 业务ID。
+        :param biz_id: 业务ID，填写String类型替代Long类型。
         :type biz_id: str
         :param biz_type: 
         :type biz_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
-        :param biz_info: 业务详情。
+        :param biz_info: 序列化之后的业务详情，类型是string。
         :type biz_info: str
-        :param biz_info_obj: 业务详情。
+        :param biz_info_obj: 业务详情，类型是object。
         :type biz_info_obj: object
         :param biz_version: 业务版本。
         :type biz_version: int
@@ -99,11 +99,11 @@ class ApprovalVO:
         :type submit_time: datetime
         :param create_by: 创建者。
         :type create_by: str
-        :param l1: 主题域分组。
+        :param l1: 主题域分组中文名，只读，创建和更新时无需填写。
         :type l1: str
-        :param l2: 主题域。
+        :param l2: 主题域中文名，只读，创建和更新时无需填写。
         :type l2: str
-        :param l3: 业务对象。
+        :param l3: 业务对象中文名，只读，创建和更新时无需填写。
         :type l3: str
         :param approval_time: 审核时间。
         :type approval_time: datetime
@@ -192,7 +192,7 @@ class ApprovalVO:
     def id(self):
         """Gets the id of this ApprovalVO.
 
-        审批单ID。
+        审批单ID，填写String类型替代Long类型。
 
         :return: The id of this ApprovalVO.
         :rtype: str
@@ -203,7 +203,7 @@ class ApprovalVO:
     def id(self, id):
         """Sets the id of this ApprovalVO.
 
-        审批单ID。
+        审批单ID，填写String类型替代Long类型。
 
         :param id: The id of this ApprovalVO.
         :type id: str
@@ -214,7 +214,7 @@ class ApprovalVO:
     def tenant_id(self):
         """Gets the tenant_id of this ApprovalVO.
 
-        项目ID。
+        项目ID，获取方式参考接口路径参数“project_id”。
 
         :return: The tenant_id of this ApprovalVO.
         :rtype: str
@@ -225,7 +225,7 @@ class ApprovalVO:
     def tenant_id(self, tenant_id):
         """Sets the tenant_id of this ApprovalVO.
 
-        项目ID。
+        项目ID，获取方式参考接口路径参数“project_id”。
 
         :param tenant_id: The tenant_id of this ApprovalVO.
         :type tenant_id: str
@@ -280,7 +280,7 @@ class ApprovalVO:
     def biz_id(self):
         """Gets the biz_id of this ApprovalVO.
 
-        业务ID。
+        业务ID，填写String类型替代Long类型。
 
         :return: The biz_id of this ApprovalVO.
         :rtype: str
@@ -291,7 +291,7 @@ class ApprovalVO:
     def biz_id(self, biz_id):
         """Sets the biz_id of this ApprovalVO.
 
-        业务ID。
+        业务ID，填写String类型替代Long类型。
 
         :param biz_id: The biz_id of this ApprovalVO.
         :type biz_id: str
@@ -320,7 +320,7 @@ class ApprovalVO:
     def biz_info(self):
         """Gets the biz_info of this ApprovalVO.
 
-        业务详情。
+        序列化之后的业务详情，类型是string。
 
         :return: The biz_info of this ApprovalVO.
         :rtype: str
@@ -331,7 +331,7 @@ class ApprovalVO:
     def biz_info(self, biz_info):
         """Sets the biz_info of this ApprovalVO.
 
-        业务详情。
+        序列化之后的业务详情，类型是string。
 
         :param biz_info: The biz_info of this ApprovalVO.
         :type biz_info: str
@@ -342,7 +342,7 @@ class ApprovalVO:
     def biz_info_obj(self):
         """Gets the biz_info_obj of this ApprovalVO.
 
-        业务详情。
+        业务详情，类型是object。
 
         :return: The biz_info_obj of this ApprovalVO.
         :rtype: object
@@ -353,7 +353,7 @@ class ApprovalVO:
     def biz_info_obj(self, biz_info_obj):
         """Sets the biz_info_obj of this ApprovalVO.
 
-        业务详情。
+        业务详情，类型是object。
 
         :param biz_info_obj: The biz_info_obj of this ApprovalVO.
         :type biz_info_obj: object
@@ -484,7 +484,7 @@ class ApprovalVO:
     def l1(self):
         """Gets the l1 of this ApprovalVO.
 
-        主题域分组。
+        主题域分组中文名，只读，创建和更新时无需填写。
 
         :return: The l1 of this ApprovalVO.
         :rtype: str
@@ -495,7 +495,7 @@ class ApprovalVO:
     def l1(self, l1):
         """Sets the l1 of this ApprovalVO.
 
-        主题域分组。
+        主题域分组中文名，只读，创建和更新时无需填写。
 
         :param l1: The l1 of this ApprovalVO.
         :type l1: str
@@ -506,7 +506,7 @@ class ApprovalVO:
     def l2(self):
         """Gets the l2 of this ApprovalVO.
 
-        主题域。
+        主题域中文名，只读，创建和更新时无需填写。
 
         :return: The l2 of this ApprovalVO.
         :rtype: str
@@ -517,7 +517,7 @@ class ApprovalVO:
     def l2(self, l2):
         """Sets the l2 of this ApprovalVO.
 
-        主题域。
+        主题域中文名，只读，创建和更新时无需填写。
 
         :param l2: The l2 of this ApprovalVO.
         :type l2: str
@@ -528,7 +528,7 @@ class ApprovalVO:
     def l3(self):
         """Gets the l3 of this ApprovalVO.
 
-        业务对象。
+        业务对象中文名，只读，创建和更新时无需填写。
 
         :return: The l3 of this ApprovalVO.
         :rtype: str
@@ -539,7 +539,7 @@ class ApprovalVO:
     def l3(self, l3):
         """Sets the l3 of this ApprovalVO.
 
-        业务对象。
+        业务对象中文名，只读，创建和更新时无需填写。
 
         :param l3: The l3 of this ApprovalVO.
         :type l3: str

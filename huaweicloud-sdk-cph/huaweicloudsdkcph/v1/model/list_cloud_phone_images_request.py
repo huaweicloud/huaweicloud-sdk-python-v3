@@ -17,20 +17,51 @@ class ListCloudPhoneImagesRequest:
     sensitive_list = []
 
     openapi_types = {
+        'image_type': 'str'
     }
 
     attribute_map = {
+        'image_type': 'image_type'
     }
 
-    def __init__(self):
+    def __init__(self, image_type=None):
         """ListCloudPhoneImagesRequest
 
         The model defined in huaweicloud sdk
 
+        :param image_type: 镜像类型 公共镜像：public 私有镜像：private 共享镜像：share 所有类型镜像：all
+        :type image_type: str
         """
         
         
+
+        self._image_type = None
         self.discriminator = None
+
+        if image_type is not None:
+            self.image_type = image_type
+
+    @property
+    def image_type(self):
+        """Gets the image_type of this ListCloudPhoneImagesRequest.
+
+        镜像类型 公共镜像：public 私有镜像：private 共享镜像：share 所有类型镜像：all
+
+        :return: The image_type of this ListCloudPhoneImagesRequest.
+        :rtype: str
+        """
+        return self._image_type
+
+    @image_type.setter
+    def image_type(self, image_type):
+        """Sets the image_type of this ListCloudPhoneImagesRequest.
+
+        镜像类型 公共镜像：public 私有镜像：private 共享镜像：share 所有类型镜像：all
+
+        :param image_type: The image_type of this ListCloudPhoneImagesRequest.
+        :type image_type: str
+        """
+        self._image_type = image_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

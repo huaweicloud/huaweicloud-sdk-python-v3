@@ -71,9 +71,9 @@ class QueryResRecordsDetailReq:
         :type region: str
         :param res_instance_id: 资源实例ID。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
         :type res_instance_id: str
-        :param charge_mode: 计费模式。 1 : 包年/包月3：按需10：预留实例 此参数不携带或者携带值为null时，返回所有计费模式的资源详单数据记录。
+        :param charge_mode: 计费模式。 1 : 包年/包月3：按需10：预留实例11：节省计划。 此参数不携带或者携带值为null时，返回所有计费模式的资源详单数据记录。
         :type charge_mode: int
-        :param bill_type: 账单类型： 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费15：消费-税金16：调账-扣费17：消费-保底差额 说明： 保底差额&#x3D;客户签约保底合同后，如果没有达到保底消费，客户需要补交的费用，仅限于直销或者伙伴顾问销售类子客户，且为后付费用户。 20：退款-变更100：退款-退订税金101：调账-补偿税金102：调账-扣费税金 此参数不携带或者携带值为null时，返回所有账单类型的资源详单数据记录。
+        :param bill_type: 账单类型： 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费15：消费-税金16：调账-扣费17：消费-保底差额 说明： 保底差额&#x3D;客户签约保底合同后，如果没有达到保底消费，客户需要补交的费用，仅限于直销或者伙伴顾问销售类子客户，且为后付费用户。 20：退款-变更100：退款-退订税金23：消费-节省计划抵扣 24：退款-包年/包月转按需101：调账-补偿税金102：调账-扣费税金 此参数不携带或者携带值为null时，返回所有账单类型的资源详单数据记录。
         :type bill_type: int
         :param enterprise_project_id: 企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：null 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
         :type enterprise_project_id: str
@@ -266,7 +266,7 @@ class QueryResRecordsDetailReq:
     def charge_mode(self):
         """Gets the charge_mode of this QueryResRecordsDetailReq.
 
-        计费模式。 1 : 包年/包月3：按需10：预留实例 此参数不携带或者携带值为null时，返回所有计费模式的资源详单数据记录。
+        计费模式。 1 : 包年/包月3：按需10：预留实例11：节省计划。 此参数不携带或者携带值为null时，返回所有计费模式的资源详单数据记录。
 
         :return: The charge_mode of this QueryResRecordsDetailReq.
         :rtype: int
@@ -277,7 +277,7 @@ class QueryResRecordsDetailReq:
     def charge_mode(self, charge_mode):
         """Sets the charge_mode of this QueryResRecordsDetailReq.
 
-        计费模式。 1 : 包年/包月3：按需10：预留实例 此参数不携带或者携带值为null时，返回所有计费模式的资源详单数据记录。
+        计费模式。 1 : 包年/包月3：按需10：预留实例11：节省计划。 此参数不携带或者携带值为null时，返回所有计费模式的资源详单数据记录。
 
         :param charge_mode: The charge_mode of this QueryResRecordsDetailReq.
         :type charge_mode: int
@@ -288,7 +288,7 @@ class QueryResRecordsDetailReq:
     def bill_type(self):
         """Gets the bill_type of this QueryResRecordsDetailReq.
 
-        账单类型： 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费15：消费-税金16：调账-扣费17：消费-保底差额 说明： 保底差额=客户签约保底合同后，如果没有达到保底消费，客户需要补交的费用，仅限于直销或者伙伴顾问销售类子客户，且为后付费用户。 20：退款-变更100：退款-退订税金101：调账-补偿税金102：调账-扣费税金 此参数不携带或者携带值为null时，返回所有账单类型的资源详单数据记录。
+        账单类型： 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费15：消费-税金16：调账-扣费17：消费-保底差额 说明： 保底差额=客户签约保底合同后，如果没有达到保底消费，客户需要补交的费用，仅限于直销或者伙伴顾问销售类子客户，且为后付费用户。 20：退款-变更100：退款-退订税金23：消费-节省计划抵扣 24：退款-包年/包月转按需101：调账-补偿税金102：调账-扣费税金 此参数不携带或者携带值为null时，返回所有账单类型的资源详单数据记录。
 
         :return: The bill_type of this QueryResRecordsDetailReq.
         :rtype: int
@@ -299,7 +299,7 @@ class QueryResRecordsDetailReq:
     def bill_type(self, bill_type):
         """Sets the bill_type of this QueryResRecordsDetailReq.
 
-        账单类型： 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费15：消费-税金16：调账-扣费17：消费-保底差额 说明： 保底差额=客户签约保底合同后，如果没有达到保底消费，客户需要补交的费用，仅限于直销或者伙伴顾问销售类子客户，且为后付费用户。 20：退款-变更100：退款-退订税金101：调账-补偿税金102：调账-扣费税金 此参数不携带或者携带值为null时，返回所有账单类型的资源详单数据记录。
+        账单类型： 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费15：消费-税金16：调账-扣费17：消费-保底差额 说明： 保底差额=客户签约保底合同后，如果没有达到保底消费，客户需要补交的费用，仅限于直销或者伙伴顾问销售类子客户，且为后付费用户。 20：退款-变更100：退款-退订税金23：消费-节省计划抵扣 24：退款-包年/包月转按需101：调账-补偿税金102：调账-扣费税金 此参数不携带或者携带值为null时，返回所有账单类型的资源详单数据记录。
 
         :param bill_type: The bill_type of this QueryResRecordsDetailReq.
         :type bill_type: int

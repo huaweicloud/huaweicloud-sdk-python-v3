@@ -17,7 +17,7 @@ class CatalogLevelVO:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'int',
+        'id': 'str',
         'level': 'int',
         'name_ch': 'str',
         'name_en': 'str'
@@ -35,9 +35,9 @@ class CatalogLevelVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编号。
-        :type id: int
-        :param level: 层级。
+        :param id: 编号，填写String类型替代Long类型。
+        :type id: str
+        :param level: 层级。取值范围为1-7。
         :type level: int
         :param name_ch: 中文名称。
         :type name_ch: str
@@ -66,10 +66,10 @@ class CatalogLevelVO:
     def id(self):
         """Gets the id of this CatalogLevelVO.
 
-        编号。
+        编号，填写String类型替代Long类型。
 
         :return: The id of this CatalogLevelVO.
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -77,10 +77,10 @@ class CatalogLevelVO:
     def id(self, id):
         """Sets the id of this CatalogLevelVO.
 
-        编号。
+        编号，填写String类型替代Long类型。
 
         :param id: The id of this CatalogLevelVO.
-        :type id: int
+        :type id: str
         """
         self._id = id
 
@@ -88,7 +88,7 @@ class CatalogLevelVO:
     def level(self):
         """Gets the level of this CatalogLevelVO.
 
-        层级。
+        层级。取值范围为1-7。
 
         :return: The level of this CatalogLevelVO.
         :rtype: int
@@ -99,7 +99,7 @@ class CatalogLevelVO:
     def level(self, level):
         """Sets the level of this CatalogLevelVO.
 
-        层级。
+        层级。取值范围为1-7。
 
         :param level: The level of this CatalogLevelVO.
         :type level: int

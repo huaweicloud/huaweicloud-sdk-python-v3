@@ -19,16 +19,18 @@ class ListRenewRateOnPeriodReq:
     openapi_types = {
         'resource_ids': 'list[str]',
         'period_type': 'int',
-        'period_num': 'int'
+        'period_num': 'int',
+        'include_relative_resources': 'bool'
     }
 
     attribute_map = {
         'resource_ids': 'resource_ids',
         'period_type': 'period_type',
-        'period_num': 'period_num'
+        'period_num': 'period_num',
+        'include_relative_resources': 'include_relative_resources'
     }
 
-    def __init__(self, resource_ids=None, period_type=None, period_num=None):
+    def __init__(self, resource_ids=None, period_type=None, period_num=None, include_relative_resources=None):
         """ListRenewRateOnPeriodReq
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class ListRenewRateOnPeriodReq:
         :type period_type: int
         :param period_num: |参数名称：周期数目：如果是月，目前支持1-11如果是年，目前支持1-3| |参数的约束及描述：周期数目：如果是月，目前支持1-11如果是年，目前支持1-3|
         :type period_num: int
+        :param include_relative_resources: |参数名称：是否包含关联资源一起询价| |参数的约束及描述：该参数非必填，true:包含。false:不包含|
+        :type include_relative_resources: bool
         """
         
         
@@ -46,11 +50,14 @@ class ListRenewRateOnPeriodReq:
         self._resource_ids = None
         self._period_type = None
         self._period_num = None
+        self._include_relative_resources = None
         self.discriminator = None
 
         self.resource_ids = resource_ids
         self.period_type = period_type
         self.period_num = period_num
+        if include_relative_resources is not None:
+            self.include_relative_resources = include_relative_resources
 
     @property
     def resource_ids(self):
@@ -117,6 +124,28 @@ class ListRenewRateOnPeriodReq:
         :type period_num: int
         """
         self._period_num = period_num
+
+    @property
+    def include_relative_resources(self):
+        """Gets the include_relative_resources of this ListRenewRateOnPeriodReq.
+
+        |参数名称：是否包含关联资源一起询价| |参数的约束及描述：该参数非必填，true:包含。false:不包含|
+
+        :return: The include_relative_resources of this ListRenewRateOnPeriodReq.
+        :rtype: bool
+        """
+        return self._include_relative_resources
+
+    @include_relative_resources.setter
+    def include_relative_resources(self, include_relative_resources):
+        """Sets the include_relative_resources of this ListRenewRateOnPeriodReq.
+
+        |参数名称：是否包含关联资源一起询价| |参数的约束及描述：该参数非必填，true:包含。false:不包含|
+
+        :param include_relative_resources: The include_relative_resources of this ListRenewRateOnPeriodReq.
+        :type include_relative_resources: bool
+        """
+        self._include_relative_resources = include_relative_resources
 
     def to_dict(self):
         """Returns the model properties as a dict"""

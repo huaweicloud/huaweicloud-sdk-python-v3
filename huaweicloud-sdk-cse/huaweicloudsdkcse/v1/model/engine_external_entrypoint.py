@@ -35,13 +35,13 @@ class EngineExternalEntrypoint:
 
         The model defined in huaweicloud sdk
 
-        :param external_address: 微服务引擎专享版暴露的IP地址。
+        :param external_address: 微服务引擎暴露的IP地址。
         :type external_address: str
-        :param public_address: 微服务引擎专享版的公网地址。
+        :param public_address: 微服务引擎的公网地址。
         :type public_address: str
-        :param service_endpoint: 微服务引擎专享版组件的访问地址。
+        :param service_endpoint: 微服务引擎组件的访问地址。
         :type service_endpoint: dict(str, EntrypointItem)
-        :param public_service_endpoint: 微服务引擎专享版组件的公网地址。
+        :param public_service_endpoint: 微服务引擎组件的公网地址。
         :type public_service_endpoint: dict(str, EntrypointItem)
         """
         
@@ -66,7 +66,7 @@ class EngineExternalEntrypoint:
     def external_address(self):
         """Gets the external_address of this EngineExternalEntrypoint.
 
-        微服务引擎专享版暴露的IP地址。
+        微服务引擎暴露的IP地址。
 
         :return: The external_address of this EngineExternalEntrypoint.
         :rtype: str
@@ -77,7 +77,7 @@ class EngineExternalEntrypoint:
     def external_address(self, external_address):
         """Sets the external_address of this EngineExternalEntrypoint.
 
-        微服务引擎专享版暴露的IP地址。
+        微服务引擎暴露的IP地址。
 
         :param external_address: The external_address of this EngineExternalEntrypoint.
         :type external_address: str
@@ -88,7 +88,7 @@ class EngineExternalEntrypoint:
     def public_address(self):
         """Gets the public_address of this EngineExternalEntrypoint.
 
-        微服务引擎专享版的公网地址。
+        微服务引擎的公网地址。
 
         :return: The public_address of this EngineExternalEntrypoint.
         :rtype: str
@@ -99,7 +99,7 @@ class EngineExternalEntrypoint:
     def public_address(self, public_address):
         """Sets the public_address of this EngineExternalEntrypoint.
 
-        微服务引擎专享版的公网地址。
+        微服务引擎的公网地址。
 
         :param public_address: The public_address of this EngineExternalEntrypoint.
         :type public_address: str
@@ -110,7 +110,7 @@ class EngineExternalEntrypoint:
     def service_endpoint(self):
         """Gets the service_endpoint of this EngineExternalEntrypoint.
 
-        微服务引擎专享版组件的访问地址。
+        微服务引擎组件的访问地址。
 
         :return: The service_endpoint of this EngineExternalEntrypoint.
         :rtype: dict(str, EntrypointItem)
@@ -121,7 +121,7 @@ class EngineExternalEntrypoint:
     def service_endpoint(self, service_endpoint):
         """Sets the service_endpoint of this EngineExternalEntrypoint.
 
-        微服务引擎专享版组件的访问地址。
+        微服务引擎组件的访问地址。
 
         :param service_endpoint: The service_endpoint of this EngineExternalEntrypoint.
         :type service_endpoint: dict(str, EntrypointItem)
@@ -132,7 +132,7 @@ class EngineExternalEntrypoint:
     def public_service_endpoint(self):
         """Gets the public_service_endpoint of this EngineExternalEntrypoint.
 
-        微服务引擎专享版组件的公网地址。
+        微服务引擎组件的公网地址。
 
         :return: The public_service_endpoint of this EngineExternalEntrypoint.
         :rtype: dict(str, EntrypointItem)
@@ -143,7 +143,7 @@ class EngineExternalEntrypoint:
     def public_service_endpoint(self, public_service_endpoint):
         """Sets the public_service_endpoint of this EngineExternalEntrypoint.
 
-        微服务引擎专享版组件的公网地址。
+        微服务引擎组件的公网地址。
 
         :param public_service_endpoint: The public_service_endpoint of this EngineExternalEntrypoint.
         :type public_service_endpoint: dict(str, EntrypointItem)

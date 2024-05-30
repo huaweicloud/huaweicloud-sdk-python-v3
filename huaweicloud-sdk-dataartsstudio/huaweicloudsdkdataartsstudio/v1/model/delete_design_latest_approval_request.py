@@ -39,9 +39,9 @@ class DeleteDesignLatestApprovalRequest:
         :type workspace: str
         :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
         :type x_project_id: str
-        :param biz_id: 待删除下展的实体ID。
+        :param biz_id: 待删除下展的实体ID，填写String类型替代Long类型。
         :type biz_id: str
-        :param biz_type: 待删除下展的实体类型。ATOMIC_INDEX(原子指标)、DERIVATIVE_INDEX(衍生指标)、DIMENSION(维度)、FACT_LOGIC_TABLE(事实表)、TABLE_MODEL(业务表：逻辑实体/物理表)、STANDARD_ELEMENT(数据标准)、AGGREGATION_LOGIC_TABLE(汇总表)、CODE_TABLE(码表)、BIZ_METRIC(业务指标)、COMPOUND_METRIC(复合指标)。
+        :param biz_type: 待删除下展的实体类型。 枚举值：   - ATOMIC_INDEX: 原子指标   - DERIVATIVE_INDEX: 衍生指标   - DIMENSION: 维度   - FACT_LOGIC_TABLE: 事实表   - TABLE_MODEL: 关系建模：逻辑实体/物理表   - STANDARD_ELEMENT: 数据标准   - AGGREGATION_LOGIC_TABLE: 汇总表   - CODE_TABLE: 码表   - BIZ_METRIC: 业务指标   - COMPOUND_METRIC: 复合指标 
         :type biz_type: str
         """
         
@@ -107,7 +107,7 @@ class DeleteDesignLatestApprovalRequest:
     def biz_id(self):
         """Gets the biz_id of this DeleteDesignLatestApprovalRequest.
 
-        待删除下展的实体ID。
+        待删除下展的实体ID，填写String类型替代Long类型。
 
         :return: The biz_id of this DeleteDesignLatestApprovalRequest.
         :rtype: str
@@ -118,7 +118,7 @@ class DeleteDesignLatestApprovalRequest:
     def biz_id(self, biz_id):
         """Sets the biz_id of this DeleteDesignLatestApprovalRequest.
 
-        待删除下展的实体ID。
+        待删除下展的实体ID，填写String类型替代Long类型。
 
         :param biz_id: The biz_id of this DeleteDesignLatestApprovalRequest.
         :type biz_id: str
@@ -129,7 +129,7 @@ class DeleteDesignLatestApprovalRequest:
     def biz_type(self):
         """Gets the biz_type of this DeleteDesignLatestApprovalRequest.
 
-        待删除下展的实体类型。ATOMIC_INDEX(原子指标)、DERIVATIVE_INDEX(衍生指标)、DIMENSION(维度)、FACT_LOGIC_TABLE(事实表)、TABLE_MODEL(业务表：逻辑实体/物理表)、STANDARD_ELEMENT(数据标准)、AGGREGATION_LOGIC_TABLE(汇总表)、CODE_TABLE(码表)、BIZ_METRIC(业务指标)、COMPOUND_METRIC(复合指标)。
+        待删除下展的实体类型。 枚举值：   - ATOMIC_INDEX: 原子指标   - DERIVATIVE_INDEX: 衍生指标   - DIMENSION: 维度   - FACT_LOGIC_TABLE: 事实表   - TABLE_MODEL: 关系建模：逻辑实体/物理表   - STANDARD_ELEMENT: 数据标准   - AGGREGATION_LOGIC_TABLE: 汇总表   - CODE_TABLE: 码表   - BIZ_METRIC: 业务指标   - COMPOUND_METRIC: 复合指标 
 
         :return: The biz_type of this DeleteDesignLatestApprovalRequest.
         :rtype: str
@@ -140,7 +140,7 @@ class DeleteDesignLatestApprovalRequest:
     def biz_type(self, biz_type):
         """Sets the biz_type of this DeleteDesignLatestApprovalRequest.
 
-        待删除下展的实体类型。ATOMIC_INDEX(原子指标)、DERIVATIVE_INDEX(衍生指标)、DIMENSION(维度)、FACT_LOGIC_TABLE(事实表)、TABLE_MODEL(业务表：逻辑实体/物理表)、STANDARD_ELEMENT(数据标准)、AGGREGATION_LOGIC_TABLE(汇总表)、CODE_TABLE(码表)、BIZ_METRIC(业务指标)、COMPOUND_METRIC(复合指标)。
+        待删除下展的实体类型。 枚举值：   - ATOMIC_INDEX: 原子指标   - DERIVATIVE_INDEX: 衍生指标   - DIMENSION: 维度   - FACT_LOGIC_TABLE: 事实表   - TABLE_MODEL: 关系建模：逻辑实体/物理表   - STANDARD_ELEMENT: 数据标准   - AGGREGATION_LOGIC_TABLE: 汇总表   - CODE_TABLE: 码表   - BIZ_METRIC: 业务指标   - COMPOUND_METRIC: 复合指标 
 
         :param biz_type: The biz_type of this DeleteDesignLatestApprovalRequest.
         :type biz_type: str

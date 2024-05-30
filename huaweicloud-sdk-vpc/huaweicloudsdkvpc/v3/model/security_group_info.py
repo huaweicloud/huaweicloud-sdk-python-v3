@@ -24,6 +24,7 @@ class SecurityGroupInfo:
         'created_at': 'datetime',
         'updated_at': 'datetime',
         'enterprise_project_id': 'str',
+        'tags': 'list[ResourceTag]',
         'security_group_rules': 'list[SecurityGroupRule]'
     }
 
@@ -35,10 +36,11 @@ class SecurityGroupInfo:
         'created_at': 'created_at',
         'updated_at': 'updated_at',
         'enterprise_project_id': 'enterprise_project_id',
+        'tags': 'tags',
         'security_group_rules': 'security_group_rules'
     }
 
-    def __init__(self, id=None, name=None, description=None, project_id=None, created_at=None, updated_at=None, enterprise_project_id=None, security_group_rules=None):
+    def __init__(self, id=None, name=None, description=None, project_id=None, created_at=None, updated_at=None, enterprise_project_id=None, tags=None, security_group_rules=None):
         """SecurityGroupInfo
 
         The model defined in huaweicloud sdk
@@ -57,6 +59,8 @@ class SecurityGroupInfo:
         :type updated_at: datetime
         :param enterprise_project_id: 功能说明：安全组所属的企业项目ID。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。
         :type enterprise_project_id: str
+        :param tags: 功能描述：安全组的标签信息
+        :type tags: list[:class:`huaweicloudsdkvpc.v3.ResourceTag`]
         :param security_group_rules: 安全组规则
         :type security_group_rules: list[:class:`huaweicloudsdkvpc.v3.SecurityGroupRule`]
         """
@@ -70,6 +74,7 @@ class SecurityGroupInfo:
         self._created_at = None
         self._updated_at = None
         self._enterprise_project_id = None
+        self._tags = None
         self._security_group_rules = None
         self.discriminator = None
 
@@ -80,6 +85,7 @@ class SecurityGroupInfo:
         self.created_at = created_at
         self.updated_at = updated_at
         self.enterprise_project_id = enterprise_project_id
+        self.tags = tags
         self.security_group_rules = security_group_rules
 
     @property
@@ -235,6 +241,28 @@ class SecurityGroupInfo:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def tags(self):
+        """Gets the tags of this SecurityGroupInfo.
+
+        功能描述：安全组的标签信息
+
+        :return: The tags of this SecurityGroupInfo.
+        :rtype: list[:class:`huaweicloudsdkvpc.v3.ResourceTag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this SecurityGroupInfo.
+
+        功能描述：安全组的标签信息
+
+        :param tags: The tags of this SecurityGroupInfo.
+        :type tags: list[:class:`huaweicloudsdkvpc.v3.ResourceTag`]
+        """
+        self._tags = tags
 
     @property
     def security_group_rules(self):

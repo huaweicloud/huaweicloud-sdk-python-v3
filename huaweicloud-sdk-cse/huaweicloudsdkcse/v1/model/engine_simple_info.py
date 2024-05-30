@@ -77,53 +77,53 @@ class EngineSimpleInfo:
 
         The model defined in huaweicloud sdk
 
-        :param id: 微服务引擎专享版的ID
+        :param id: 微服务引擎的ID
         :type id: str
         :param name: 引擎的名称
         :type name: str
-        :param enterprise_project_id: 微服务引擎专享版所属企业项目ID
+        :param enterprise_project_id: 微服务引擎所属企业项目ID
         :type enterprise_project_id: str
-        :param enterprise_project_name: 微服务引擎专享版所属企业项目名称
+        :param enterprise_project_name: 微服务引擎所属企业项目名称
         :type enterprise_project_name: str
-        :param type: 微服务引擎专享版的类型，CSE为专享版引擎，CSE_Share表示为专业版引擎
+        :param type: 微服务引擎的类型，CSE为专享版引擎，CSE_Share表示为专业版引擎
         :type type: str
-        :param description: 微服务引擎专享版的描述
+        :param description: 微服务引擎的描述
         :type description: str
-        :param flavor: 微服务引擎专享版的规格
+        :param flavor: 微服务引擎的规格
         :type flavor: str
-        :param payment: 微服务引擎专享版的计费方式，0表示包周期，1表示按需，2表示免费
+        :param payment: 微服务引擎的计费方式，0表示包周期，1表示按需，2表示免费
         :type payment: str
-        :param auth_type: 微服务引擎专享版的认证方式，RBAC/NONE
+        :param auth_type: 微服务引擎的认证方式，RBAC/NONE
         :type auth_type: str
-        :param status: 微服务引擎专享版当前的状态
+        :param status: 微服务引擎当前的状态
         :type status: str
-        :param external_address: 微服务引擎专享版暴露的IP地址
+        :param external_address: 微服务引擎暴露的IP地址
         :type external_address: str
-        :param service_endpoint: 微服务引擎专享版组件的访问地址。
+        :param service_endpoint: 微服务引擎组件的访问地址。
         :type service_endpoint: dict(str, EntrypointItem)
-        :param public_address: 微服务引擎专享版的公网IP地址
+        :param public_address: 微服务引擎的公网IP地址
         :type public_address: str
-        :param public_service_endpoint: 微服务引擎专享版的公网接入地址
+        :param public_service_endpoint: 微服务引擎的公网接入地址
         :type public_service_endpoint: dict(str, EntrypointItem)
-        :param total_instance: 微服务引擎专享版可支持的实例总数
+        :param total_instance: 微服务引擎可支持的实例总数
         :type total_instance: int
         :param used_instance: 已使用的实例总数
         :type used_instance: int
         :param available_instance: 可用实例总数
         :type available_instance: int
-        :param version: 微服务引擎专享版当前版本
+        :param version: 微服务引擎当前版本
         :type version: str
-        :param latest_version: 微服务引擎专享版最新版本
+        :param latest_version: 微服务引擎最新版本
         :type latest_version: str
-        :param create_time: 微服务引擎专享版创建时间
+        :param create_time: 微服务引擎创建时间
         :type create_time: int
-        :param due_to: 微服务引擎专享版到期时间
+        :param due_to: 微服务引擎到期时间
         :type due_to: int
-        :param latest_job_id: 微服务引擎专享版最近的任务ID
+        :param latest_job_id: 微服务引擎最近的任务ID
         :type latest_job_id: int
-        :param engine_additional_actions: 微服务引擎专享版允许的附加操作
+        :param engine_additional_actions: 微服务引擎允许的附加操作
         :type engine_additional_actions: list[str]
-        :param spec_type: 微服务引擎专享版应用部署类型
+        :param spec_type: 微服务引擎应用部署类型
         :type spec_type: str
         :param reference: 
         :type reference: :class:`huaweicloudsdkcse.v1.EngineReference`
@@ -213,7 +213,7 @@ class EngineSimpleInfo:
     def id(self):
         """Gets the id of this EngineSimpleInfo.
 
-        微服务引擎专享版的ID
+        微服务引擎的ID
 
         :return: The id of this EngineSimpleInfo.
         :rtype: str
@@ -224,7 +224,7 @@ class EngineSimpleInfo:
     def id(self, id):
         """Sets the id of this EngineSimpleInfo.
 
-        微服务引擎专享版的ID
+        微服务引擎的ID
 
         :param id: The id of this EngineSimpleInfo.
         :type id: str
@@ -257,7 +257,7 @@ class EngineSimpleInfo:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this EngineSimpleInfo.
 
-        微服务引擎专享版所属企业项目ID
+        微服务引擎所属企业项目ID
 
         :return: The enterprise_project_id of this EngineSimpleInfo.
         :rtype: str
@@ -268,7 +268,7 @@ class EngineSimpleInfo:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this EngineSimpleInfo.
 
-        微服务引擎专享版所属企业项目ID
+        微服务引擎所属企业项目ID
 
         :param enterprise_project_id: The enterprise_project_id of this EngineSimpleInfo.
         :type enterprise_project_id: str
@@ -279,7 +279,7 @@ class EngineSimpleInfo:
     def enterprise_project_name(self):
         """Gets the enterprise_project_name of this EngineSimpleInfo.
 
-        微服务引擎专享版所属企业项目名称
+        微服务引擎所属企业项目名称
 
         :return: The enterprise_project_name of this EngineSimpleInfo.
         :rtype: str
@@ -290,7 +290,7 @@ class EngineSimpleInfo:
     def enterprise_project_name(self, enterprise_project_name):
         """Sets the enterprise_project_name of this EngineSimpleInfo.
 
-        微服务引擎专享版所属企业项目名称
+        微服务引擎所属企业项目名称
 
         :param enterprise_project_name: The enterprise_project_name of this EngineSimpleInfo.
         :type enterprise_project_name: str
@@ -301,7 +301,7 @@ class EngineSimpleInfo:
     def type(self):
         """Gets the type of this EngineSimpleInfo.
 
-        微服务引擎专享版的类型，CSE为专享版引擎，CSE_Share表示为专业版引擎
+        微服务引擎的类型，CSE为专享版引擎，CSE_Share表示为专业版引擎
 
         :return: The type of this EngineSimpleInfo.
         :rtype: str
@@ -312,7 +312,7 @@ class EngineSimpleInfo:
     def type(self, type):
         """Sets the type of this EngineSimpleInfo.
 
-        微服务引擎专享版的类型，CSE为专享版引擎，CSE_Share表示为专业版引擎
+        微服务引擎的类型，CSE为专享版引擎，CSE_Share表示为专业版引擎
 
         :param type: The type of this EngineSimpleInfo.
         :type type: str
@@ -323,7 +323,7 @@ class EngineSimpleInfo:
     def description(self):
         """Gets the description of this EngineSimpleInfo.
 
-        微服务引擎专享版的描述
+        微服务引擎的描述
 
         :return: The description of this EngineSimpleInfo.
         :rtype: str
@@ -334,7 +334,7 @@ class EngineSimpleInfo:
     def description(self, description):
         """Sets the description of this EngineSimpleInfo.
 
-        微服务引擎专享版的描述
+        微服务引擎的描述
 
         :param description: The description of this EngineSimpleInfo.
         :type description: str
@@ -345,7 +345,7 @@ class EngineSimpleInfo:
     def flavor(self):
         """Gets the flavor of this EngineSimpleInfo.
 
-        微服务引擎专享版的规格
+        微服务引擎的规格
 
         :return: The flavor of this EngineSimpleInfo.
         :rtype: str
@@ -356,7 +356,7 @@ class EngineSimpleInfo:
     def flavor(self, flavor):
         """Sets the flavor of this EngineSimpleInfo.
 
-        微服务引擎专享版的规格
+        微服务引擎的规格
 
         :param flavor: The flavor of this EngineSimpleInfo.
         :type flavor: str
@@ -367,7 +367,7 @@ class EngineSimpleInfo:
     def payment(self):
         """Gets the payment of this EngineSimpleInfo.
 
-        微服务引擎专享版的计费方式，0表示包周期，1表示按需，2表示免费
+        微服务引擎的计费方式，0表示包周期，1表示按需，2表示免费
 
         :return: The payment of this EngineSimpleInfo.
         :rtype: str
@@ -378,7 +378,7 @@ class EngineSimpleInfo:
     def payment(self, payment):
         """Sets the payment of this EngineSimpleInfo.
 
-        微服务引擎专享版的计费方式，0表示包周期，1表示按需，2表示免费
+        微服务引擎的计费方式，0表示包周期，1表示按需，2表示免费
 
         :param payment: The payment of this EngineSimpleInfo.
         :type payment: str
@@ -389,7 +389,7 @@ class EngineSimpleInfo:
     def auth_type(self):
         """Gets the auth_type of this EngineSimpleInfo.
 
-        微服务引擎专享版的认证方式，RBAC/NONE
+        微服务引擎的认证方式，RBAC/NONE
 
         :return: The auth_type of this EngineSimpleInfo.
         :rtype: str
@@ -400,7 +400,7 @@ class EngineSimpleInfo:
     def auth_type(self, auth_type):
         """Sets the auth_type of this EngineSimpleInfo.
 
-        微服务引擎专享版的认证方式，RBAC/NONE
+        微服务引擎的认证方式，RBAC/NONE
 
         :param auth_type: The auth_type of this EngineSimpleInfo.
         :type auth_type: str
@@ -411,7 +411,7 @@ class EngineSimpleInfo:
     def status(self):
         """Gets the status of this EngineSimpleInfo.
 
-        微服务引擎专享版当前的状态
+        微服务引擎当前的状态
 
         :return: The status of this EngineSimpleInfo.
         :rtype: str
@@ -422,7 +422,7 @@ class EngineSimpleInfo:
     def status(self, status):
         """Sets the status of this EngineSimpleInfo.
 
-        微服务引擎专享版当前的状态
+        微服务引擎当前的状态
 
         :param status: The status of this EngineSimpleInfo.
         :type status: str
@@ -433,7 +433,7 @@ class EngineSimpleInfo:
     def external_address(self):
         """Gets the external_address of this EngineSimpleInfo.
 
-        微服务引擎专享版暴露的IP地址
+        微服务引擎暴露的IP地址
 
         :return: The external_address of this EngineSimpleInfo.
         :rtype: str
@@ -444,7 +444,7 @@ class EngineSimpleInfo:
     def external_address(self, external_address):
         """Sets the external_address of this EngineSimpleInfo.
 
-        微服务引擎专享版暴露的IP地址
+        微服务引擎暴露的IP地址
 
         :param external_address: The external_address of this EngineSimpleInfo.
         :type external_address: str
@@ -455,7 +455,7 @@ class EngineSimpleInfo:
     def service_endpoint(self):
         """Gets the service_endpoint of this EngineSimpleInfo.
 
-        微服务引擎专享版组件的访问地址。
+        微服务引擎组件的访问地址。
 
         :return: The service_endpoint of this EngineSimpleInfo.
         :rtype: dict(str, EntrypointItem)
@@ -466,7 +466,7 @@ class EngineSimpleInfo:
     def service_endpoint(self, service_endpoint):
         """Sets the service_endpoint of this EngineSimpleInfo.
 
-        微服务引擎专享版组件的访问地址。
+        微服务引擎组件的访问地址。
 
         :param service_endpoint: The service_endpoint of this EngineSimpleInfo.
         :type service_endpoint: dict(str, EntrypointItem)
@@ -477,7 +477,7 @@ class EngineSimpleInfo:
     def public_address(self):
         """Gets the public_address of this EngineSimpleInfo.
 
-        微服务引擎专享版的公网IP地址
+        微服务引擎的公网IP地址
 
         :return: The public_address of this EngineSimpleInfo.
         :rtype: str
@@ -488,7 +488,7 @@ class EngineSimpleInfo:
     def public_address(self, public_address):
         """Sets the public_address of this EngineSimpleInfo.
 
-        微服务引擎专享版的公网IP地址
+        微服务引擎的公网IP地址
 
         :param public_address: The public_address of this EngineSimpleInfo.
         :type public_address: str
@@ -499,7 +499,7 @@ class EngineSimpleInfo:
     def public_service_endpoint(self):
         """Gets the public_service_endpoint of this EngineSimpleInfo.
 
-        微服务引擎专享版的公网接入地址
+        微服务引擎的公网接入地址
 
         :return: The public_service_endpoint of this EngineSimpleInfo.
         :rtype: dict(str, EntrypointItem)
@@ -510,7 +510,7 @@ class EngineSimpleInfo:
     def public_service_endpoint(self, public_service_endpoint):
         """Sets the public_service_endpoint of this EngineSimpleInfo.
 
-        微服务引擎专享版的公网接入地址
+        微服务引擎的公网接入地址
 
         :param public_service_endpoint: The public_service_endpoint of this EngineSimpleInfo.
         :type public_service_endpoint: dict(str, EntrypointItem)
@@ -521,7 +521,7 @@ class EngineSimpleInfo:
     def total_instance(self):
         """Gets the total_instance of this EngineSimpleInfo.
 
-        微服务引擎专享版可支持的实例总数
+        微服务引擎可支持的实例总数
 
         :return: The total_instance of this EngineSimpleInfo.
         :rtype: int
@@ -532,7 +532,7 @@ class EngineSimpleInfo:
     def total_instance(self, total_instance):
         """Sets the total_instance of this EngineSimpleInfo.
 
-        微服务引擎专享版可支持的实例总数
+        微服务引擎可支持的实例总数
 
         :param total_instance: The total_instance of this EngineSimpleInfo.
         :type total_instance: int
@@ -587,7 +587,7 @@ class EngineSimpleInfo:
     def version(self):
         """Gets the version of this EngineSimpleInfo.
 
-        微服务引擎专享版当前版本
+        微服务引擎当前版本
 
         :return: The version of this EngineSimpleInfo.
         :rtype: str
@@ -598,7 +598,7 @@ class EngineSimpleInfo:
     def version(self, version):
         """Sets the version of this EngineSimpleInfo.
 
-        微服务引擎专享版当前版本
+        微服务引擎当前版本
 
         :param version: The version of this EngineSimpleInfo.
         :type version: str
@@ -609,7 +609,7 @@ class EngineSimpleInfo:
     def latest_version(self):
         """Gets the latest_version of this EngineSimpleInfo.
 
-        微服务引擎专享版最新版本
+        微服务引擎最新版本
 
         :return: The latest_version of this EngineSimpleInfo.
         :rtype: str
@@ -620,7 +620,7 @@ class EngineSimpleInfo:
     def latest_version(self, latest_version):
         """Sets the latest_version of this EngineSimpleInfo.
 
-        微服务引擎专享版最新版本
+        微服务引擎最新版本
 
         :param latest_version: The latest_version of this EngineSimpleInfo.
         :type latest_version: str
@@ -631,7 +631,7 @@ class EngineSimpleInfo:
     def create_time(self):
         """Gets the create_time of this EngineSimpleInfo.
 
-        微服务引擎专享版创建时间
+        微服务引擎创建时间
 
         :return: The create_time of this EngineSimpleInfo.
         :rtype: int
@@ -642,7 +642,7 @@ class EngineSimpleInfo:
     def create_time(self, create_time):
         """Sets the create_time of this EngineSimpleInfo.
 
-        微服务引擎专享版创建时间
+        微服务引擎创建时间
 
         :param create_time: The create_time of this EngineSimpleInfo.
         :type create_time: int
@@ -653,7 +653,7 @@ class EngineSimpleInfo:
     def due_to(self):
         """Gets the due_to of this EngineSimpleInfo.
 
-        微服务引擎专享版到期时间
+        微服务引擎到期时间
 
         :return: The due_to of this EngineSimpleInfo.
         :rtype: int
@@ -664,7 +664,7 @@ class EngineSimpleInfo:
     def due_to(self, due_to):
         """Sets the due_to of this EngineSimpleInfo.
 
-        微服务引擎专享版到期时间
+        微服务引擎到期时间
 
         :param due_to: The due_to of this EngineSimpleInfo.
         :type due_to: int
@@ -675,7 +675,7 @@ class EngineSimpleInfo:
     def latest_job_id(self):
         """Gets the latest_job_id of this EngineSimpleInfo.
 
-        微服务引擎专享版最近的任务ID
+        微服务引擎最近的任务ID
 
         :return: The latest_job_id of this EngineSimpleInfo.
         :rtype: int
@@ -686,7 +686,7 @@ class EngineSimpleInfo:
     def latest_job_id(self, latest_job_id):
         """Sets the latest_job_id of this EngineSimpleInfo.
 
-        微服务引擎专享版最近的任务ID
+        微服务引擎最近的任务ID
 
         :param latest_job_id: The latest_job_id of this EngineSimpleInfo.
         :type latest_job_id: int
@@ -697,7 +697,7 @@ class EngineSimpleInfo:
     def engine_additional_actions(self):
         """Gets the engine_additional_actions of this EngineSimpleInfo.
 
-        微服务引擎专享版允许的附加操作
+        微服务引擎允许的附加操作
 
         :return: The engine_additional_actions of this EngineSimpleInfo.
         :rtype: list[str]
@@ -708,7 +708,7 @@ class EngineSimpleInfo:
     def engine_additional_actions(self, engine_additional_actions):
         """Sets the engine_additional_actions of this EngineSimpleInfo.
 
-        微服务引擎专享版允许的附加操作
+        微服务引擎允许的附加操作
 
         :param engine_additional_actions: The engine_additional_actions of this EngineSimpleInfo.
         :type engine_additional_actions: list[str]
@@ -719,7 +719,7 @@ class EngineSimpleInfo:
     def spec_type(self):
         """Gets the spec_type of this EngineSimpleInfo.
 
-        微服务引擎专享版应用部署类型
+        微服务引擎应用部署类型
 
         :return: The spec_type of this EngineSimpleInfo.
         :rtype: str
@@ -730,7 +730,7 @@ class EngineSimpleInfo:
     def spec_type(self, spec_type):
         """Sets the spec_type of this EngineSimpleInfo.
 
-        微服务引擎专享版应用部署类型
+        微服务引擎应用部署类型
 
         :param spec_type: The spec_type of this EngineSimpleInfo.
         :type spec_type: str

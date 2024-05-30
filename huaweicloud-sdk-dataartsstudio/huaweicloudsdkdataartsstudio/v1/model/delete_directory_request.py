@@ -19,7 +19,7 @@ class DeleteDirectoryRequest:
     openapi_types = {
         'workspace': 'str',
         'x_project_id': 'str',
-        'ids': 'list[int]'
+        'ids': 'list[str]'
     }
 
     attribute_map = {
@@ -37,8 +37,8 @@ class DeleteDirectoryRequest:
         :type workspace: str
         :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
         :type x_project_id: str
-        :param ids: 实体ID数组。
-        :type ids: list[int]
+        :param ids: 实体ID数组，填写String类型替代Long类型。
+        :type ids: list[str]
         """
         
         
@@ -101,10 +101,10 @@ class DeleteDirectoryRequest:
     def ids(self):
         """Gets the ids of this DeleteDirectoryRequest.
 
-        实体ID数组。
+        实体ID数组，填写String类型替代Long类型。
 
         :return: The ids of this DeleteDirectoryRequest.
-        :rtype: list[int]
+        :rtype: list[str]
         """
         return self._ids
 
@@ -112,10 +112,10 @@ class DeleteDirectoryRequest:
     def ids(self, ids):
         """Sets the ids of this DeleteDirectoryRequest.
 
-        实体ID数组。
+        实体ID数组，填写String类型替代Long类型。
 
         :param ids: The ids of this DeleteDirectoryRequest.
-        :type ids: list[int]
+        :type ids: list[str]
         """
         self._ids = ids
 

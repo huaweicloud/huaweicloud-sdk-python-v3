@@ -93,7 +93,7 @@ class ClusterSnapshots:
         :type started: str
         :param size: 快照大小，单位 GB。
         :type size: float
-        :param status: 快照状态： - CREATING：创建中。 - AVAILABLE：可用。 - UNAVAILABLE：不可用。 - RESTORING：恢复中。
+        :param status: 快照状态： - CREATING：创建中。 - AVAILABLE：可用。 - UNAVAILABLE：不可用。 - RESTORING：恢复中。 - FROZEN： 普通冻结。 - POLICE_FROZEN： 公安冻结。
         :type status: str
         :param cluster_id: 快照对应的集群ID
         :type cluster_id: str
@@ -344,7 +344,7 @@ class ClusterSnapshots:
     def status(self):
         """Gets the status of this ClusterSnapshots.
 
-        快照状态： - CREATING：创建中。 - AVAILABLE：可用。 - UNAVAILABLE：不可用。 - RESTORING：恢复中。
+        快照状态： - CREATING：创建中。 - AVAILABLE：可用。 - UNAVAILABLE：不可用。 - RESTORING：恢复中。 - FROZEN： 普通冻结。 - POLICE_FROZEN： 公安冻结。
 
         :return: The status of this ClusterSnapshots.
         :rtype: str
@@ -355,7 +355,7 @@ class ClusterSnapshots:
     def status(self, status):
         """Sets the status of this ClusterSnapshots.
 
-        快照状态： - CREATING：创建中。 - AVAILABLE：可用。 - UNAVAILABLE：不可用。 - RESTORING：恢复中。
+        快照状态： - CREATING：创建中。 - AVAILABLE：可用。 - UNAVAILABLE：不可用。 - RESTORING：恢复中。 - FROZEN： 普通冻结。 - POLICE_FROZEN： 公安冻结。
 
         :param status: The status of this ClusterSnapshots.
         :type status: str

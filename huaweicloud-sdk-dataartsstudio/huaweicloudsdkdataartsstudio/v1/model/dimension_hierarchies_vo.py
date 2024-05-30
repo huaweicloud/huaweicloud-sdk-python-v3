@@ -17,7 +17,7 @@ class DimensionHierarchiesVO:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'int',
+        'id': 'str',
         'name': 'str',
         'attrs': 'list[HierarchiesAttrVO]',
         'create_time': 'datetime',
@@ -41,15 +41,15 @@ class DimensionHierarchiesVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码。
-        :type id: int
+        :param id: 编码，填写String类型替代Long类型。
+        :type id: str
         :param name: 层级名称。
         :type name: str
         :param attrs: 层级包含的属性。
         :type attrs: list[:class:`huaweicloudsdkdataartsstudio.v1.HierarchiesAttrVO`]
-        :param create_time: 创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        :param create_time: 创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
-        :param update_time: 更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        :param update_time: 更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type update_time: datetime
         :param create_by: 创建人。
         :type create_by: str
@@ -87,10 +87,10 @@ class DimensionHierarchiesVO:
     def id(self):
         """Gets the id of this DimensionHierarchiesVO.
 
-        编码。
+        编码，填写String类型替代Long类型。
 
         :return: The id of this DimensionHierarchiesVO.
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -98,10 +98,10 @@ class DimensionHierarchiesVO:
     def id(self, id):
         """Sets the id of this DimensionHierarchiesVO.
 
-        编码。
+        编码，填写String类型替代Long类型。
 
         :param id: The id of this DimensionHierarchiesVO.
-        :type id: int
+        :type id: str
         """
         self._id = id
 
@@ -153,7 +153,7 @@ class DimensionHierarchiesVO:
     def create_time(self):
         """Gets the create_time of this DimensionHierarchiesVO.
 
-        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The create_time of this DimensionHierarchiesVO.
         :rtype: datetime
@@ -164,7 +164,7 @@ class DimensionHierarchiesVO:
     def create_time(self, create_time):
         """Sets the create_time of this DimensionHierarchiesVO.
 
-        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param create_time: The create_time of this DimensionHierarchiesVO.
         :type create_time: datetime
@@ -175,7 +175,7 @@ class DimensionHierarchiesVO:
     def update_time(self):
         """Gets the update_time of this DimensionHierarchiesVO.
 
-        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The update_time of this DimensionHierarchiesVO.
         :rtype: datetime
@@ -186,7 +186,7 @@ class DimensionHierarchiesVO:
     def update_time(self, update_time):
         """Sets the update_time of this DimensionHierarchiesVO.
 
-        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param update_time: The update_time of this DimensionHierarchiesVO.
         :type update_time: datetime

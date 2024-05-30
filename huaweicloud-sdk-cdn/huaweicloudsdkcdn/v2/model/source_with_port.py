@@ -20,6 +20,7 @@ class SourceWithPort:
         'domain_id': 'str',
         'ip_or_domain': 'str',
         'origin_type': 'str',
+        'obs_bucket_type': 'str',
         'active_standby': 'int',
         'enable_obs_web_hosting': 'int',
         'http_port': 'int',
@@ -30,13 +31,14 @@ class SourceWithPort:
         'domain_id': 'domain_id',
         'ip_or_domain': 'ip_or_domain',
         'origin_type': 'origin_type',
+        'obs_bucket_type': 'obs_bucket_type',
         'active_standby': 'active_standby',
         'enable_obs_web_hosting': 'enable_obs_web_hosting',
         'http_port': 'http_port',
         'https_port': 'https_port'
     }
 
-    def __init__(self, domain_id=None, ip_or_domain=None, origin_type=None, active_standby=None, enable_obs_web_hosting=None, http_port=None, https_port=None):
+    def __init__(self, domain_id=None, ip_or_domain=None, origin_type=None, obs_bucket_type=None, active_standby=None, enable_obs_web_hosting=None, http_port=None, https_port=None):
         """SourceWithPort
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class SourceWithPort:
         :type ip_or_domain: str
         :param origin_type: 源站类型，ipaddr：源站IP、 domain：源站域名、obs_bucket：OBS桶域名。
         :type origin_type: str
+        :param obs_bucket_type: OBS桶类型。   - private: 私有桶（除桶ACL授权外的其他用户无桶的访问权限）。   - public: 公有桶（任何用户都可以对桶内对象进行读操作）。
+        :type obs_bucket_type: str
         :param active_standby: 主备状态（1代表主源站；0代表备源站）。
         :type active_standby: int
         :param enable_obs_web_hosting: 是否开OBS托管(0表示关闭,1表示则为开启)，源站类型为obs_bucket时传递。
@@ -62,6 +66,7 @@ class SourceWithPort:
         self._domain_id = None
         self._ip_or_domain = None
         self._origin_type = None
+        self._obs_bucket_type = None
         self._active_standby = None
         self._enable_obs_web_hosting = None
         self._http_port = None
@@ -72,6 +77,8 @@ class SourceWithPort:
             self.domain_id = domain_id
         self.ip_or_domain = ip_or_domain
         self.origin_type = origin_type
+        if obs_bucket_type is not None:
+            self.obs_bucket_type = obs_bucket_type
         self.active_standby = active_standby
         if enable_obs_web_hosting is not None:
             self.enable_obs_web_hosting = enable_obs_web_hosting
@@ -145,6 +152,28 @@ class SourceWithPort:
         :type origin_type: str
         """
         self._origin_type = origin_type
+
+    @property
+    def obs_bucket_type(self):
+        """Gets the obs_bucket_type of this SourceWithPort.
+
+        OBS桶类型。   - private: 私有桶（除桶ACL授权外的其他用户无桶的访问权限）。   - public: 公有桶（任何用户都可以对桶内对象进行读操作）。
+
+        :return: The obs_bucket_type of this SourceWithPort.
+        :rtype: str
+        """
+        return self._obs_bucket_type
+
+    @obs_bucket_type.setter
+    def obs_bucket_type(self, obs_bucket_type):
+        """Sets the obs_bucket_type of this SourceWithPort.
+
+        OBS桶类型。   - private: 私有桶（除桶ACL授权外的其他用户无桶的访问权限）。   - public: 公有桶（任何用户都可以对桶内对象进行读操作）。
+
+        :param obs_bucket_type: The obs_bucket_type of this SourceWithPort.
+        :type obs_bucket_type: str
+        """
+        self._obs_bucket_type = obs_bucket_type
 
     @property
     def active_standby(self):

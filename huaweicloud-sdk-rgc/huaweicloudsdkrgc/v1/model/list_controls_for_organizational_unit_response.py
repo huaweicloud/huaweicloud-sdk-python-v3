@@ -6,7 +6,7 @@ from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ListControlsForOrganizationUnitResponse(SdkResponse):
+class ListControlsForOrganizationalUnitResponse(SdkResponse):
 
     """
     Attributes:
@@ -30,7 +30,7 @@ class ListControlsForOrganizationUnitResponse(SdkResponse):
     }
 
     def __init__(self, control_summaries=None, state=None, page_info=None):
-        """ListControlsForOrganizationUnitResponse
+        """ListControlsForOrganizationalUnitResponse
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListControlsForOrganizationUnitResponse(SdkResponse):
         :type page_info: :class:`huaweicloudsdkrgc.v1.PageInfoDto`
         """
         
-        super(ListControlsForOrganizationUnitResponse, self).__init__()
+        super(ListControlsForOrganizationalUnitResponse, self).__init__()
 
         self._control_summaries = None
         self._state = None
@@ -58,62 +58,62 @@ class ListControlsForOrganizationUnitResponse(SdkResponse):
 
     @property
     def control_summaries(self):
-        """Gets the control_summaries of this ListControlsForOrganizationUnitResponse.
+        """Gets the control_summaries of this ListControlsForOrganizationalUnitResponse.
 
         治理策略概要。
 
-        :return: The control_summaries of this ListControlsForOrganizationUnitResponse.
+        :return: The control_summaries of this ListControlsForOrganizationalUnitResponse.
         :rtype: list[:class:`huaweicloudsdkrgc.v1.TargetControl`]
         """
         return self._control_summaries
 
     @control_summaries.setter
     def control_summaries(self, control_summaries):
-        """Sets the control_summaries of this ListControlsForOrganizationUnitResponse.
+        """Sets the control_summaries of this ListControlsForOrganizationalUnitResponse.
 
         治理策略概要。
 
-        :param control_summaries: The control_summaries of this ListControlsForOrganizationUnitResponse.
+        :param control_summaries: The control_summaries of this ListControlsForOrganizationalUnitResponse.
         :type control_summaries: list[:class:`huaweicloudsdkrgc.v1.TargetControl`]
         """
         self._control_summaries = control_summaries
 
     @property
     def state(self):
-        """Gets the state of this ListControlsForOrganizationUnitResponse.
+        """Gets the state of this ListControlsForOrganizationalUnitResponse.
 
         控制策略启用状态。
 
-        :return: The state of this ListControlsForOrganizationUnitResponse.
+        :return: The state of this ListControlsForOrganizationalUnitResponse.
         :rtype: str
         """
         return self._state
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ListControlsForOrganizationUnitResponse.
+        """Sets the state of this ListControlsForOrganizationalUnitResponse.
 
         控制策略启用状态。
 
-        :param state: The state of this ListControlsForOrganizationUnitResponse.
+        :param state: The state of this ListControlsForOrganizationalUnitResponse.
         :type state: str
         """
         self._state = state
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListControlsForOrganizationUnitResponse.
+        """Gets the page_info of this ListControlsForOrganizationalUnitResponse.
 
-        :return: The page_info of this ListControlsForOrganizationUnitResponse.
+        :return: The page_info of this ListControlsForOrganizationalUnitResponse.
         :rtype: :class:`huaweicloudsdkrgc.v1.PageInfoDto`
         """
         return self._page_info
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListControlsForOrganizationUnitResponse.
+        """Sets the page_info of this ListControlsForOrganizationalUnitResponse.
 
-        :param page_info: The page_info of this ListControlsForOrganizationUnitResponse.
+        :param page_info: The page_info of this ListControlsForOrganizationalUnitResponse.
         :type page_info: :class:`huaweicloudsdkrgc.v1.PageInfoDto`
         """
         self._page_info = page_info
@@ -160,7 +160,7 @@ class ListControlsForOrganizationUnitResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ListControlsForOrganizationUnitResponse):
+        if not isinstance(other, ListControlsForOrganizationalUnitResponse):
             return False
 
         return self.__dict__ == other.__dict__

@@ -84,7 +84,7 @@ class ShowConsistencyTaskDetailResponse(SdkResponse):
         :type schedule_type: str
         :param schedule_period: 调度周期，MINUTE:按分钟调度，HOUR:按小时调度，DAY:按天调度，WEEK:按周调度
         :type schedule_period: str
-        :param schedule_interval: 调度间隔，注意：当调度周期为分钟、小时、天时，间隔时间为数字；而当调度周期为周时，调度间隔为星期的英文，如：每周一、周二调度时，schedule_interval为\&quot;MONDAY,TUESDAY\&quot;
+        :param schedule_interval: 调度间隔，注意：当调度周期为分钟、小时、天时，间隔时间为数字；而当调度周期为周时，调度间隔为星期的英文，如：每周一、周二调度时，schedule_interval为MONDAY,TUESDAY
         :type schedule_interval: str
         :param schedule_start_time: 调度开始时间
         :type schedule_start_time: str
@@ -400,7 +400,7 @@ class ShowConsistencyTaskDetailResponse(SdkResponse):
     def schedule_interval(self):
         """Gets the schedule_interval of this ShowConsistencyTaskDetailResponse.
 
-        调度间隔，注意：当调度周期为分钟、小时、天时，间隔时间为数字；而当调度周期为周时，调度间隔为星期的英文，如：每周一、周二调度时，schedule_interval为\"MONDAY,TUESDAY\"
+        调度间隔，注意：当调度周期为分钟、小时、天时，间隔时间为数字；而当调度周期为周时，调度间隔为星期的英文，如：每周一、周二调度时，schedule_interval为MONDAY,TUESDAY
 
         :return: The schedule_interval of this ShowConsistencyTaskDetailResponse.
         :rtype: str
@@ -411,7 +411,7 @@ class ShowConsistencyTaskDetailResponse(SdkResponse):
     def schedule_interval(self, schedule_interval):
         """Sets the schedule_interval of this ShowConsistencyTaskDetailResponse.
 
-        调度间隔，注意：当调度周期为分钟、小时、天时，间隔时间为数字；而当调度周期为周时，调度间隔为星期的英文，如：每周一、周二调度时，schedule_interval为\"MONDAY,TUESDAY\"
+        调度间隔，注意：当调度周期为分钟、小时、天时，间隔时间为数字；而当调度周期为周时，调度间隔为星期的英文，如：每周一、周二调度时，schedule_interval为MONDAY,TUESDAY
 
         :param schedule_interval: The schedule_interval of this ShowConsistencyTaskDetailResponse.
         :type schedule_interval: str

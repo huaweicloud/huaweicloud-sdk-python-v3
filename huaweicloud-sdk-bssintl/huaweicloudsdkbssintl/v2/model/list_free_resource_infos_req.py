@@ -24,7 +24,8 @@ class ListFreeResourceInfosReq:
         'enterprise_project_id': 'str',
         'status': 'int',
         'offset': 'int',
-        'limit': 'int'
+        'limit': 'int',
+        'service_type_code_list': 'list[str]'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class ListFreeResourceInfosReq:
         'enterprise_project_id': 'enterprise_project_id',
         'status': 'status',
         'offset': 'offset',
-        'limit': 'limit'
+        'limit': 'limit',
+        'service_type_code_list': 'service_type_code_list'
     }
 
-    def __init__(self, region_code=None, order_id=None, product_id=None, product_name=None, enterprise_project_id=None, status=None, offset=None, limit=None):
+    def __init__(self, region_code=None, order_id=None, product_id=None, product_name=None, enterprise_project_id=None, status=None, offset=None, limit=None, service_type_code_list=None):
         """ListFreeResourceInfosReq
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class ListFreeResourceInfosReq:
         :type offset: int
         :param limit: 每次查询的记录数，默认为10。
         :type limit: int
+        :param service_type_code_list: 云服务类型编码列表，大小写不敏感。 例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。 此参数不携带或携带值为空列表或携带值为null时，不作为筛选条件，返回其他条件匹配的记录。
+        :type service_type_code_list: list[str]
         """
         
         
@@ -71,6 +75,7 @@ class ListFreeResourceInfosReq:
         self._status = None
         self._offset = None
         self._limit = None
+        self._service_type_code_list = None
         self.discriminator = None
 
         if region_code is not None:
@@ -89,6 +94,8 @@ class ListFreeResourceInfosReq:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+        if service_type_code_list is not None:
+            self.service_type_code_list = service_type_code_list
 
     @property
     def region_code(self):
@@ -265,6 +272,28 @@ class ListFreeResourceInfosReq:
         :type limit: int
         """
         self._limit = limit
+
+    @property
+    def service_type_code_list(self):
+        """Gets the service_type_code_list of this ListFreeResourceInfosReq.
+
+        云服务类型编码列表，大小写不敏感。 例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。 此参数不携带或携带值为空列表或携带值为null时，不作为筛选条件，返回其他条件匹配的记录。
+
+        :return: The service_type_code_list of this ListFreeResourceInfosReq.
+        :rtype: list[str]
+        """
+        return self._service_type_code_list
+
+    @service_type_code_list.setter
+    def service_type_code_list(self, service_type_code_list):
+        """Sets the service_type_code_list of this ListFreeResourceInfosReq.
+
+        云服务类型编码列表，大小写不敏感。 例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。 此参数不携带或携带值为空列表或携带值为null时，不作为筛选条件，返回其他条件匹配的记录。
+
+        :param service_type_code_list: The service_type_code_list of this ListFreeResourceInfosReq.
+        :type service_type_code_list: list[str]
+        """
+        self._service_type_code_list = service_type_code_list
 
     def to_dict(self):
         """Returns the model properties as a dict"""

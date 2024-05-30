@@ -17,8 +17,8 @@ class CodeTableFieldValueVO:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'int',
-        'fd_id': 'int',
+        'id': 'str',
+        'fd_id': 'str',
         'fd_value': 'str',
         'ordinal': 'int',
         'description': 'str'
@@ -37,10 +37,10 @@ class CodeTableFieldValueVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: ID
-        :type id: int
-        :param fd_id: 所属码表属性ID。
-        :type fd_id: int
+        :param id: 码表字段ID，填写String类型替代Long类型。
+        :type id: str
+        :param fd_id: 所属码表属性ID，填写String类型替代Long类型。
+        :type fd_id: str
         :param fd_value: 码表属性值。
         :type fd_value: str
         :param ordinal: 序号。
@@ -73,10 +73,10 @@ class CodeTableFieldValueVO:
     def id(self):
         """Gets the id of this CodeTableFieldValueVO.
 
-        ID
+        码表字段ID，填写String类型替代Long类型。
 
         :return: The id of this CodeTableFieldValueVO.
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -84,10 +84,10 @@ class CodeTableFieldValueVO:
     def id(self, id):
         """Sets the id of this CodeTableFieldValueVO.
 
-        ID
+        码表字段ID，填写String类型替代Long类型。
 
         :param id: The id of this CodeTableFieldValueVO.
-        :type id: int
+        :type id: str
         """
         self._id = id
 
@@ -95,10 +95,10 @@ class CodeTableFieldValueVO:
     def fd_id(self):
         """Gets the fd_id of this CodeTableFieldValueVO.
 
-        所属码表属性ID。
+        所属码表属性ID，填写String类型替代Long类型。
 
         :return: The fd_id of this CodeTableFieldValueVO.
-        :rtype: int
+        :rtype: str
         """
         return self._fd_id
 
@@ -106,10 +106,10 @@ class CodeTableFieldValueVO:
     def fd_id(self, fd_id):
         """Sets the fd_id of this CodeTableFieldValueVO.
 
-        所属码表属性ID。
+        所属码表属性ID，填写String类型替代Long类型。
 
         :param fd_id: The fd_id of this CodeTableFieldValueVO.
-        :type fd_id: int
+        :type fd_id: str
         """
         self._fd_id = fd_id
 

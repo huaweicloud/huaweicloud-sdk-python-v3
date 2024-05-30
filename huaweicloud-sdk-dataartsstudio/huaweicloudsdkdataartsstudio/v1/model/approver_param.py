@@ -17,6 +17,7 @@ class ApproverParam:
     sensitive_list = []
 
     openapi_types = {
+        'app_name': 'str',
         'approver_name': 'str',
         'user_id': 'str',
         'email': 'str',
@@ -26,6 +27,7 @@ class ApproverParam:
     }
 
     attribute_map = {
+        'app_name': 'app_name',
         'approver_name': 'approver_name',
         'user_id': 'user_id',
         'email': 'email',
@@ -34,11 +36,13 @@ class ApproverParam:
         'sms_notify': 'sms_notify'
     }
 
-    def __init__(self, approver_name=None, user_id=None, email=None, phone_number=None, email_notify=None, sms_notify=None):
+    def __init__(self, app_name=None, approver_name=None, user_id=None, email=None, phone_number=None, email_notify=None, sms_notify=None):
         """ApproverParam
 
         The model defined in huaweicloud sdk
 
+        :param app_name: 调用审核系统的应用名称，开发人员自己定。
+        :type app_name: str
         :param approver_name: 审批人姓名。
         :type approver_name: str
         :param user_id: 审批人ID。
@@ -55,6 +59,7 @@ class ApproverParam:
         
         
 
+        self._app_name = None
         self._approver_name = None
         self._user_id = None
         self._email = None
@@ -63,6 +68,8 @@ class ApproverParam:
         self._sms_notify = None
         self.discriminator = None
 
+        if app_name is not None:
+            self.app_name = app_name
         self.approver_name = approver_name
         self.user_id = user_id
         if email is not None:
@@ -73,6 +80,28 @@ class ApproverParam:
             self.email_notify = email_notify
         if sms_notify is not None:
             self.sms_notify = sms_notify
+
+    @property
+    def app_name(self):
+        """Gets the app_name of this ApproverParam.
+
+        调用审核系统的应用名称，开发人员自己定。
+
+        :return: The app_name of this ApproverParam.
+        :rtype: str
+        """
+        return self._app_name
+
+    @app_name.setter
+    def app_name(self, app_name):
+        """Sets the app_name of this ApproverParam.
+
+        调用审核系统的应用名称，开发人员自己定。
+
+        :param app_name: The app_name of this ApproverParam.
+        :type app_name: str
+        """
+        self._app_name = app_name
 
     @property
     def approver_name(self):

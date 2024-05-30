@@ -45,13 +45,13 @@ class ListTableModelRelationsRequest:
         :type workspace: str
         :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
         :type x_project_id: str
-        :param model_id: 所属关系建模的模型ID。
+        :param model_id: 所属关系建模的模型ID，填写String类型替代Long类型。
         :type model_id: str
-        :param table_ids: 表模型ids
+        :param table_ids: 表模型ids，填写String类型替代Long类型。
         :type table_ids: str
-        :param biz_type: 表类型。TABLE_MODEL(关系建模：逻辑实体/物理表)、FACT_LOGIC_TABLE(事实表)。
+        :param biz_type: 表类型。 枚举值：   - TABLE_MODEL: 关系建模：逻辑实体/物理表   - FACT_LOGIC_TABLE: 事实表 
         :type biz_type: str
-        :param limit: 查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+        :param limit: 每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
         :type limit: int
         :param offset: 查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
         :type offset: int
@@ -129,7 +129,7 @@ class ListTableModelRelationsRequest:
     def model_id(self):
         """Gets the model_id of this ListTableModelRelationsRequest.
 
-        所属关系建模的模型ID。
+        所属关系建模的模型ID，填写String类型替代Long类型。
 
         :return: The model_id of this ListTableModelRelationsRequest.
         :rtype: str
@@ -140,7 +140,7 @@ class ListTableModelRelationsRequest:
     def model_id(self, model_id):
         """Sets the model_id of this ListTableModelRelationsRequest.
 
-        所属关系建模的模型ID。
+        所属关系建模的模型ID，填写String类型替代Long类型。
 
         :param model_id: The model_id of this ListTableModelRelationsRequest.
         :type model_id: str
@@ -151,7 +151,7 @@ class ListTableModelRelationsRequest:
     def table_ids(self):
         """Gets the table_ids of this ListTableModelRelationsRequest.
 
-        表模型ids
+        表模型ids，填写String类型替代Long类型。
 
         :return: The table_ids of this ListTableModelRelationsRequest.
         :rtype: str
@@ -162,7 +162,7 @@ class ListTableModelRelationsRequest:
     def table_ids(self, table_ids):
         """Sets the table_ids of this ListTableModelRelationsRequest.
 
-        表模型ids
+        表模型ids，填写String类型替代Long类型。
 
         :param table_ids: The table_ids of this ListTableModelRelationsRequest.
         :type table_ids: str
@@ -173,7 +173,7 @@ class ListTableModelRelationsRequest:
     def biz_type(self):
         """Gets the biz_type of this ListTableModelRelationsRequest.
 
-        表类型。TABLE_MODEL(关系建模：逻辑实体/物理表)、FACT_LOGIC_TABLE(事实表)。
+        表类型。 枚举值：   - TABLE_MODEL: 关系建模：逻辑实体/物理表   - FACT_LOGIC_TABLE: 事实表 
 
         :return: The biz_type of this ListTableModelRelationsRequest.
         :rtype: str
@@ -184,7 +184,7 @@ class ListTableModelRelationsRequest:
     def biz_type(self, biz_type):
         """Sets the biz_type of this ListTableModelRelationsRequest.
 
-        表类型。TABLE_MODEL(关系建模：逻辑实体/物理表)、FACT_LOGIC_TABLE(事实表)。
+        表类型。 枚举值：   - TABLE_MODEL: 关系建模：逻辑实体/物理表   - FACT_LOGIC_TABLE: 事实表 
 
         :param biz_type: The biz_type of this ListTableModelRelationsRequest.
         :type biz_type: str
@@ -195,7 +195,7 @@ class ListTableModelRelationsRequest:
     def limit(self):
         """Gets the limit of this ListTableModelRelationsRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+        每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :return: The limit of this ListTableModelRelationsRequest.
         :rtype: int
@@ -206,7 +206,7 @@ class ListTableModelRelationsRequest:
     def limit(self, limit):
         """Sets the limit of this ListTableModelRelationsRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+        每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :param limit: The limit of this ListTableModelRelationsRequest.
         :type limit: int

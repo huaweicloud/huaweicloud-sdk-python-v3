@@ -34,7 +34,8 @@ class CompositeHostResponse:
         'premium_waf_instances': 'list[PremiumWafInstances]',
         'description': 'str',
         'exclusive_ip': 'bool',
-        'region': 'str'
+        'region': 'str',
+        'server': 'list[WafServer]'
     }
 
     attribute_map = {
@@ -55,10 +56,11 @@ class CompositeHostResponse:
         'premium_waf_instances': 'premium_waf_instances',
         'description': 'description',
         'exclusive_ip': 'exclusive_ip',
-        'region': 'region'
+        'region': 'region',
+        'server': 'server'
     }
 
-    def __init__(self, id=None, hostid=None, hostname=None, policyid=None, access_code=None, protect_status=None, access_status=None, proxy=None, timestamp=None, paid_type=None, flag=None, waf_type=None, web_tag=None, access_progress=None, premium_waf_instances=None, description=None, exclusive_ip=None, region=None):
+    def __init__(self, id=None, hostid=None, hostname=None, policyid=None, access_code=None, protect_status=None, access_status=None, proxy=None, timestamp=None, paid_type=None, flag=None, waf_type=None, web_tag=None, access_progress=None, premium_waf_instances=None, description=None, exclusive_ip=None, region=None, server=None):
         """CompositeHostResponse
 
         The model defined in huaweicloud sdk
@@ -99,6 +101,8 @@ class CompositeHostResponse:
         :type exclusive_ip: bool
         :param region: 华为云区域ID，控制台创建的域名会携带此参数，api调用创建的域名此参数为空，可以通过华为云上地区和终端节点文档查询区域ID对应的中文名称
         :type region: str
+        :param server: 防护域名的源站服务器配置信息，只有独享模式域名才返回vpc_id
+        :type server: list[:class:`huaweicloudsdkwaf.v1.WafServer`]
         """
         
         
@@ -121,6 +125,7 @@ class CompositeHostResponse:
         self._description = None
         self._exclusive_ip = None
         self._region = None
+        self._server = None
         self.discriminator = None
 
         if id is not None:
@@ -159,6 +164,8 @@ class CompositeHostResponse:
             self.exclusive_ip = exclusive_ip
         if region is not None:
             self.region = region
+        if server is not None:
+            self.server = server
 
     @property
     def id(self):
@@ -551,6 +558,28 @@ class CompositeHostResponse:
         :type region: str
         """
         self._region = region
+
+    @property
+    def server(self):
+        """Gets the server of this CompositeHostResponse.
+
+        防护域名的源站服务器配置信息，只有独享模式域名才返回vpc_id
+
+        :return: The server of this CompositeHostResponse.
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.WafServer`]
+        """
+        return self._server
+
+    @server.setter
+    def server(self, server):
+        """Sets the server of this CompositeHostResponse.
+
+        防护域名的源站服务器配置信息，只有独享模式域名才返回vpc_id
+
+        :param server: The server of this CompositeHostResponse.
+        :type server: list[:class:`huaweicloudsdkwaf.v1.WafServer`]
+        """
+        self._server = server
 
     def to_dict(self):
         """Returns the model properties as a dict"""

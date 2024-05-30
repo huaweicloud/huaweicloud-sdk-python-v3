@@ -51,7 +51,8 @@ class Configs:
         'error_code_redirect_rules': 'list[ErrorCodeRedirectRules]',
         'sni': 'Sni',
         'request_url_rewrite': 'list[RequestUrlRewrite]',
-        'browser_cache_rules': 'list[BrowserCacheRules]'
+        'browser_cache_rules': 'list[BrowserCacheRules]',
+        'access_area_filter': 'list[AccessAreaFilter]'
     }
 
     attribute_map = {
@@ -89,10 +90,11 @@ class Configs:
         'error_code_redirect_rules': 'error_code_redirect_rules',
         'sni': 'sni',
         'request_url_rewrite': 'request_url_rewrite',
-        'browser_cache_rules': 'browser_cache_rules'
+        'browser_cache_rules': 'browser_cache_rules',
+        'access_area_filter': 'access_area_filter'
     }
 
-    def __init__(self, business_type=None, service_area=None, remark=None, origin_request_header=None, http_response_header=None, url_auth=None, https=None, sources=None, origin_protocol=None, origin_follow302_status=None, cache_rules=None, ip_filter=None, referer=None, force_redirect=None, compress=None, cache_url_parameter_filter=None, ipv6_accelerate=None, error_code_cache=None, origin_range_status=None, user_agent_filter=None, origin_request_url_rewrite=None, flexible_origin=None, slice_etag_status=None, origin_receive_timeout=None, remote_auth=None, websocket=None, video_seek=None, request_limit_rules=None, ip_frequency_limit=None, hsts=None, quic=None, error_code_redirect_rules=None, sni=None, request_url_rewrite=None, browser_cache_rules=None):
+    def __init__(self, business_type=None, service_area=None, remark=None, origin_request_header=None, http_response_header=None, url_auth=None, https=None, sources=None, origin_protocol=None, origin_follow302_status=None, cache_rules=None, ip_filter=None, referer=None, force_redirect=None, compress=None, cache_url_parameter_filter=None, ipv6_accelerate=None, error_code_cache=None, origin_range_status=None, user_agent_filter=None, origin_request_url_rewrite=None, flexible_origin=None, slice_etag_status=None, origin_receive_timeout=None, remote_auth=None, websocket=None, video_seek=None, request_limit_rules=None, ip_frequency_limit=None, hsts=None, quic=None, error_code_redirect_rules=None, sni=None, request_url_rewrite=None, browser_cache_rules=None, access_area_filter=None):
         """Configs
 
         The model defined in huaweicloud sdk
@@ -167,6 +169,8 @@ class Configs:
         :type request_url_rewrite: list[:class:`huaweicloudsdkcdn.v2.RequestUrlRewrite`]
         :param browser_cache_rules: 浏览器缓存过期时间。
         :type browser_cache_rules: list[:class:`huaweicloudsdkcdn.v2.BrowserCacheRules`]
+        :param access_area_filter: 
+        :type access_area_filter: list[:class:`huaweicloudsdkcdn.v2.AccessAreaFilter`]
         """
         
         
@@ -206,6 +210,7 @@ class Configs:
         self._sni = None
         self._request_url_rewrite = None
         self._browser_cache_rules = None
+        self._access_area_filter = None
         self.discriminator = None
 
         if business_type is not None:
@@ -278,6 +283,8 @@ class Configs:
             self.request_url_rewrite = request_url_rewrite
         if browser_cache_rules is not None:
             self.browser_cache_rules = browser_cache_rules
+        if access_area_filter is not None:
+            self.access_area_filter = access_area_filter
 
     @property
     def business_type(self):
@@ -988,6 +995,24 @@ class Configs:
         :type browser_cache_rules: list[:class:`huaweicloudsdkcdn.v2.BrowserCacheRules`]
         """
         self._browser_cache_rules = browser_cache_rules
+
+    @property
+    def access_area_filter(self):
+        """Gets the access_area_filter of this Configs.
+
+        :return: The access_area_filter of this Configs.
+        :rtype: list[:class:`huaweicloudsdkcdn.v2.AccessAreaFilter`]
+        """
+        return self._access_area_filter
+
+    @access_area_filter.setter
+    def access_area_filter(self, access_area_filter):
+        """Sets the access_area_filter of this Configs.
+
+        :param access_area_filter: The access_area_filter of this Configs.
+        :type access_area_filter: list[:class:`huaweicloudsdkcdn.v2.AccessAreaFilter`]
+        """
+        self._access_area_filter = access_area_filter
 
     def to_dict(self):
         """Returns the model properties as a dict"""

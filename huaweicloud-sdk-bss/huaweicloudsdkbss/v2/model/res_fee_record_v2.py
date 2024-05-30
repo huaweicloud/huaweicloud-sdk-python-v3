@@ -141,7 +141,7 @@ class ResFeeRecordV2:
 
         :param bill_date: 资源消费记录的日期。 格式：YYYY-MM-DD。按照东八区时间截取。
         :type bill_date: str
-        :param bill_type: 账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更
+        :param bill_type: 账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更23：消费-节省计划抵扣24：退款-包年/包月转按需
         :type bill_type: int
         :param customer_id: 消费的客户账号ID。 如果是普通客户或者企业子查询消费记录，只能查询到自身的消费记录，则这个地方显示的是自身的客户ID如果是企业主查询消费记录，可以查询到自身以及企业子的消费记录，这个地方是消费的实际客户ID，如果是企业主自身消费，为企业主ID，如果这条消费记录是某个企业子客户的消费，这个地方的ID是企业子账号ID。
         :type customer_id: str
@@ -181,7 +181,7 @@ class ResFeeRecordV2:
         :type spec_size_measure_id: int
         :param trade_id: 订单ID或交易ID，扣费维度的唯一标识。
         :type trade_id: str
-        :param id: 唯一标识。
+        :param id: 唯一标识。 按账期类型统计时不返回唯一标识。
         :type id: str
         :param trade_time: 交易时间。
         :type trade_time: str
@@ -189,7 +189,7 @@ class ResFeeRecordV2:
         :type enterprise_project_id: str
         :param enterprise_project_name: 企业项目的名称。
         :type enterprise_project_name: str
-        :param charge_mode: 计费模式。 1：包年/包月3：按需10：预留实例
+        :param charge_mode: 计费模式。 1：包年/包月3：按需10：预留实例11：节省计划
         :type charge_mode: str
         :param order_id: 订单ID。  说明： 包年/包月资源的使用记录才有该字段，按需资源则为空。
         :type order_id: str
@@ -197,9 +197,9 @@ class ResFeeRecordV2:
         :type period_type: str
         :param usage_type: 资源使用量的类型，您可以调用查询使用量类型列表接口获取。
         :type usage_type: str
-        :param usage: 资源的使用量。
+        :param usage: 资源的使用量。  说明： 查询包周期资源，不返回资源的使用量。
         :type usage: float
-        :param usage_measure_id: 资源使用量的度量单位，您可以调用查询度量单位列表接口获取。
+        :param usage_measure_id: 资源使用量的度量单位，您可以调用查询度量单位列表接口获取。  说明： 查询包周期资源，不返回资源使用量的度量单位。
         :type usage_measure_id: int
         :param free_resource_usage: 套餐内使用量。
         :type free_resource_usage: float
@@ -209,9 +209,9 @@ class ResFeeRecordV2:
         :type ri_usage: float
         :param ri_usage_measure_id: 预留实例使用量单位。
         :type ri_usage_measure_id: int
-        :param unit_price: 产品的单价。 按需产品的单价，只有简单定价，不分档的场景会返回。 包周期产品的单价，只有包周期的如下场景会返回：包周期订购/续订/降配/升配/扩容简单定价，不分档 预留实例的单价，只有如下场景下会返回：订购/续订/降配/升配/扩容/按时计费简单定价，不分档
+        :param unit_price: 产品的单价。 按需产品的单价，只有简单定价，不分档的场景会返回。 包周期产品的单价，只有包周期的如下场景会返回：包周期订购/续订/降配/升配/扩容简单定价，不分档 预留实例的单价，只有如下场景下会返回：订购/续订/降配/升配/扩容/按时计费简单定价，不分档  说明： 当statistic_type入参为1，按账期，查询包周期产品时，不返回单价。
         :type unit_price: float
-        :param unit: 产品的单价单位。 线性产品的单价单位为“元/{线性单位}/月”或“元/{线性单位}/小时”等。非线性产品的单价单位为“元/月”或“元/小时”等。  说明： “线性单位”为线性产品（即订购时需要指定大小的产品）的大小的单位，比如硬盘的线性单位为GB，带宽的线性单位为Mbps。
+        :param unit: 产品的单价单位。 线性产品的单价单位为“元/{线性单位}/月”或“元/{线性单位}/小时”等。非线性产品的单价单位为“元/月”或“元/小时”等。  说明： “线性单位”为线性产品（即订购时需要指定大小的产品）的大小的单位，比如硬盘的线性单位为GB，带宽的线性单位为Mbps。当statistic_type入参为1，按账期，查询包周期产品时，不返回单价单位。
         :type unit: str
         :param official_amount: 官网价，华为云商品在官网上未叠加应用商务折扣、促销折扣等优惠的销售价格。
         :type official_amount: float
@@ -237,19 +237,19 @@ class ResFeeRecordV2:
         :type adjustment_amount: float
         :param measure_id: 金额单位。 1：元
         :type measure_id: int
-        :param formula: 实付金额计算公式。当前只包含如下场景： 按需简单定价 按需线性定价 包年包月新购和续费的简单定价 包年包月新购和续费的线性定价  说明： 实付金额计算公式得到的金额值等于amount - coupon_amount的差值。
+        :param formula: 实付金额计算公式。当前只包含如下场景： 按需非线性定价{使用量}【使用量】/{单位转化率}【单位转换】*{单价}【单价】-{优惠金额}【优惠金额】-{抹零金额}【抹零金额】-{代金券抵扣}【代金券抵扣】 按需线性定价{使用量}【使用量】/{单位转化率}【单位转换】*{线性大小}【规格】*{单价}【单价】-{优惠金额}【优惠金额】-{抹零金额}【抹零金额】-{代金券抵扣}【代金券抵扣】 包年包月新购和续订非线性定价{周期数}【周期数】/{周期转化率}【周期转换】*{单价}【单价】-{优惠金额}【优惠金额】-{代金券抵扣}【代金券抵扣】 包年包月新购和续订线性定价{周期数}【周期数】/{周期转化率}【周期转换】*{线性大小}【规格】*{单价}【单价】-{优惠金额}【优惠金额】-{代金券抵扣}【代金券抵扣】 包年包月（一次性）新购和续订非线性定价{单价}【单价】-{优惠金额}【优惠金额】-{代金券抵扣}【代金券抵扣】 包年包月（一次性）新购和续订线性定价{线性大小}【规格】*{单价}【单价】-{优惠金额}【优惠金额】-{代金券抵扣}【代金券抵扣】  说明： 实付金额计算公式得到的金额值等于amount - coupon_amount的差值。按账期类型查询时不返回计算公式。
         :type formula: str
-        :param sub_service_type_code: 该字段为预留字段。
+        :param sub_service_type_code: 整机的子云服务的自身的云服务类型编码。
         :type sub_service_type_code: str
-        :param sub_service_type_name: 该字段为预留字段。
+        :param sub_service_type_name: 整机的子云服务的自身的云服务类型名称。
         :type sub_service_type_name: str
-        :param sub_resource_type_code: 该字段为预留字段。
+        :param sub_resource_type_code: 整机的子云服务的自身的资源类型编码。
         :type sub_resource_type_code: str
-        :param sub_resource_type_name: 该字段为预留字段。
+        :param sub_resource_type_name: 整机的子云服务的自身的资源类型名称。
         :type sub_resource_type_name: str
-        :param sub_resource_id: 该字段为预留字段。
+        :param sub_resource_id: 整机的子云服务的自身的资源ID，资源标识。（如果为预留实例，则为预留实例标识）
         :type sub_resource_id: str
-        :param sub_resource_name: 该字段为预留字段。
+        :param sub_resource_name: 整机的子云服务的自身的资源名称，资源标识。（如果为预留实例，则为预留实例标识）
         :type sub_resource_name: str
         """
         
@@ -452,7 +452,7 @@ class ResFeeRecordV2:
     def bill_type(self):
         """Gets the bill_type of this ResFeeRecordV2.
 
-        账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更
+        账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更23：消费-节省计划抵扣24：退款-包年/包月转按需
 
         :return: The bill_type of this ResFeeRecordV2.
         :rtype: int
@@ -463,7 +463,7 @@ class ResFeeRecordV2:
     def bill_type(self, bill_type):
         """Sets the bill_type of this ResFeeRecordV2.
 
-        账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更
+        账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更23：消费-节省计划抵扣24：退款-包年/包月转按需
 
         :param bill_type: The bill_type of this ResFeeRecordV2.
         :type bill_type: int
@@ -892,7 +892,7 @@ class ResFeeRecordV2:
     def id(self):
         """Gets the id of this ResFeeRecordV2.
 
-        唯一标识。
+        唯一标识。 按账期类型统计时不返回唯一标识。
 
         :return: The id of this ResFeeRecordV2.
         :rtype: str
@@ -903,7 +903,7 @@ class ResFeeRecordV2:
     def id(self, id):
         """Sets the id of this ResFeeRecordV2.
 
-        唯一标识。
+        唯一标识。 按账期类型统计时不返回唯一标识。
 
         :param id: The id of this ResFeeRecordV2.
         :type id: str
@@ -980,7 +980,7 @@ class ResFeeRecordV2:
     def charge_mode(self):
         """Gets the charge_mode of this ResFeeRecordV2.
 
-        计费模式。 1：包年/包月3：按需10：预留实例
+        计费模式。 1：包年/包月3：按需10：预留实例11：节省计划
 
         :return: The charge_mode of this ResFeeRecordV2.
         :rtype: str
@@ -991,7 +991,7 @@ class ResFeeRecordV2:
     def charge_mode(self, charge_mode):
         """Sets the charge_mode of this ResFeeRecordV2.
 
-        计费模式。 1：包年/包月3：按需10：预留实例
+        计费模式。 1：包年/包月3：按需10：预留实例11：节省计划
 
         :param charge_mode: The charge_mode of this ResFeeRecordV2.
         :type charge_mode: str
@@ -1068,7 +1068,7 @@ class ResFeeRecordV2:
     def usage(self):
         """Gets the usage of this ResFeeRecordV2.
 
-        资源的使用量。
+        资源的使用量。  说明： 查询包周期资源，不返回资源的使用量。
 
         :return: The usage of this ResFeeRecordV2.
         :rtype: float
@@ -1079,7 +1079,7 @@ class ResFeeRecordV2:
     def usage(self, usage):
         """Sets the usage of this ResFeeRecordV2.
 
-        资源的使用量。
+        资源的使用量。  说明： 查询包周期资源，不返回资源的使用量。
 
         :param usage: The usage of this ResFeeRecordV2.
         :type usage: float
@@ -1090,7 +1090,7 @@ class ResFeeRecordV2:
     def usage_measure_id(self):
         """Gets the usage_measure_id of this ResFeeRecordV2.
 
-        资源使用量的度量单位，您可以调用查询度量单位列表接口获取。
+        资源使用量的度量单位，您可以调用查询度量单位列表接口获取。  说明： 查询包周期资源，不返回资源使用量的度量单位。
 
         :return: The usage_measure_id of this ResFeeRecordV2.
         :rtype: int
@@ -1101,7 +1101,7 @@ class ResFeeRecordV2:
     def usage_measure_id(self, usage_measure_id):
         """Sets the usage_measure_id of this ResFeeRecordV2.
 
-        资源使用量的度量单位，您可以调用查询度量单位列表接口获取。
+        资源使用量的度量单位，您可以调用查询度量单位列表接口获取。  说明： 查询包周期资源，不返回资源使用量的度量单位。
 
         :param usage_measure_id: The usage_measure_id of this ResFeeRecordV2.
         :type usage_measure_id: int
@@ -1200,7 +1200,7 @@ class ResFeeRecordV2:
     def unit_price(self):
         """Gets the unit_price of this ResFeeRecordV2.
 
-        产品的单价。 按需产品的单价，只有简单定价，不分档的场景会返回。 包周期产品的单价，只有包周期的如下场景会返回：包周期订购/续订/降配/升配/扩容简单定价，不分档 预留实例的单价，只有如下场景下会返回：订购/续订/降配/升配/扩容/按时计费简单定价，不分档
+        产品的单价。 按需产品的单价，只有简单定价，不分档的场景会返回。 包周期产品的单价，只有包周期的如下场景会返回：包周期订购/续订/降配/升配/扩容简单定价，不分档 预留实例的单价，只有如下场景下会返回：订购/续订/降配/升配/扩容/按时计费简单定价，不分档  说明： 当statistic_type入参为1，按账期，查询包周期产品时，不返回单价。
 
         :return: The unit_price of this ResFeeRecordV2.
         :rtype: float
@@ -1211,7 +1211,7 @@ class ResFeeRecordV2:
     def unit_price(self, unit_price):
         """Sets the unit_price of this ResFeeRecordV2.
 
-        产品的单价。 按需产品的单价，只有简单定价，不分档的场景会返回。 包周期产品的单价，只有包周期的如下场景会返回：包周期订购/续订/降配/升配/扩容简单定价，不分档 预留实例的单价，只有如下场景下会返回：订购/续订/降配/升配/扩容/按时计费简单定价，不分档
+        产品的单价。 按需产品的单价，只有简单定价，不分档的场景会返回。 包周期产品的单价，只有包周期的如下场景会返回：包周期订购/续订/降配/升配/扩容简单定价，不分档 预留实例的单价，只有如下场景下会返回：订购/续订/降配/升配/扩容/按时计费简单定价，不分档  说明： 当statistic_type入参为1，按账期，查询包周期产品时，不返回单价。
 
         :param unit_price: The unit_price of this ResFeeRecordV2.
         :type unit_price: float
@@ -1222,7 +1222,7 @@ class ResFeeRecordV2:
     def unit(self):
         """Gets the unit of this ResFeeRecordV2.
 
-        产品的单价单位。 线性产品的单价单位为“元/{线性单位}/月”或“元/{线性单位}/小时”等。非线性产品的单价单位为“元/月”或“元/小时”等。  说明： “线性单位”为线性产品（即订购时需要指定大小的产品）的大小的单位，比如硬盘的线性单位为GB，带宽的线性单位为Mbps。
+        产品的单价单位。 线性产品的单价单位为“元/{线性单位}/月”或“元/{线性单位}/小时”等。非线性产品的单价单位为“元/月”或“元/小时”等。  说明： “线性单位”为线性产品（即订购时需要指定大小的产品）的大小的单位，比如硬盘的线性单位为GB，带宽的线性单位为Mbps。当statistic_type入参为1，按账期，查询包周期产品时，不返回单价单位。
 
         :return: The unit of this ResFeeRecordV2.
         :rtype: str
@@ -1233,7 +1233,7 @@ class ResFeeRecordV2:
     def unit(self, unit):
         """Sets the unit of this ResFeeRecordV2.
 
-        产品的单价单位。 线性产品的单价单位为“元/{线性单位}/月”或“元/{线性单位}/小时”等。非线性产品的单价单位为“元/月”或“元/小时”等。  说明： “线性单位”为线性产品（即订购时需要指定大小的产品）的大小的单位，比如硬盘的线性单位为GB，带宽的线性单位为Mbps。
+        产品的单价单位。 线性产品的单价单位为“元/{线性单位}/月”或“元/{线性单位}/小时”等。非线性产品的单价单位为“元/月”或“元/小时”等。  说明： “线性单位”为线性产品（即订购时需要指定大小的产品）的大小的单位，比如硬盘的线性单位为GB，带宽的线性单位为Mbps。当statistic_type入参为1，按账期，查询包周期产品时，不返回单价单位。
 
         :param unit: The unit of this ResFeeRecordV2.
         :type unit: str
@@ -1508,7 +1508,7 @@ class ResFeeRecordV2:
     def formula(self):
         """Gets the formula of this ResFeeRecordV2.
 
-        实付金额计算公式。当前只包含如下场景： 按需简单定价 按需线性定价 包年包月新购和续费的简单定价 包年包月新购和续费的线性定价  说明： 实付金额计算公式得到的金额值等于amount - coupon_amount的差值。
+        实付金额计算公式。当前只包含如下场景： 按需非线性定价{使用量}【使用量】/{单位转化率}【单位转换】*{单价}【单价】-{优惠金额}【优惠金额】-{抹零金额}【抹零金额】-{代金券抵扣}【代金券抵扣】 按需线性定价{使用量}【使用量】/{单位转化率}【单位转换】*{线性大小}【规格】*{单价}【单价】-{优惠金额}【优惠金额】-{抹零金额}【抹零金额】-{代金券抵扣}【代金券抵扣】 包年包月新购和续订非线性定价{周期数}【周期数】/{周期转化率}【周期转换】*{单价}【单价】-{优惠金额}【优惠金额】-{代金券抵扣}【代金券抵扣】 包年包月新购和续订线性定价{周期数}【周期数】/{周期转化率}【周期转换】*{线性大小}【规格】*{单价}【单价】-{优惠金额}【优惠金额】-{代金券抵扣}【代金券抵扣】 包年包月（一次性）新购和续订非线性定价{单价}【单价】-{优惠金额}【优惠金额】-{代金券抵扣}【代金券抵扣】 包年包月（一次性）新购和续订线性定价{线性大小}【规格】*{单价}【单价】-{优惠金额}【优惠金额】-{代金券抵扣}【代金券抵扣】  说明： 实付金额计算公式得到的金额值等于amount - coupon_amount的差值。按账期类型查询时不返回计算公式。
 
         :return: The formula of this ResFeeRecordV2.
         :rtype: str
@@ -1519,7 +1519,7 @@ class ResFeeRecordV2:
     def formula(self, formula):
         """Sets the formula of this ResFeeRecordV2.
 
-        实付金额计算公式。当前只包含如下场景： 按需简单定价 按需线性定价 包年包月新购和续费的简单定价 包年包月新购和续费的线性定价  说明： 实付金额计算公式得到的金额值等于amount - coupon_amount的差值。
+        实付金额计算公式。当前只包含如下场景： 按需非线性定价{使用量}【使用量】/{单位转化率}【单位转换】*{单价}【单价】-{优惠金额}【优惠金额】-{抹零金额}【抹零金额】-{代金券抵扣}【代金券抵扣】 按需线性定价{使用量}【使用量】/{单位转化率}【单位转换】*{线性大小}【规格】*{单价}【单价】-{优惠金额}【优惠金额】-{抹零金额}【抹零金额】-{代金券抵扣}【代金券抵扣】 包年包月新购和续订非线性定价{周期数}【周期数】/{周期转化率}【周期转换】*{单价}【单价】-{优惠金额}【优惠金额】-{代金券抵扣}【代金券抵扣】 包年包月新购和续订线性定价{周期数}【周期数】/{周期转化率}【周期转换】*{线性大小}【规格】*{单价}【单价】-{优惠金额}【优惠金额】-{代金券抵扣}【代金券抵扣】 包年包月（一次性）新购和续订非线性定价{单价}【单价】-{优惠金额}【优惠金额】-{代金券抵扣}【代金券抵扣】 包年包月（一次性）新购和续订线性定价{线性大小}【规格】*{单价}【单价】-{优惠金额}【优惠金额】-{代金券抵扣}【代金券抵扣】  说明： 实付金额计算公式得到的金额值等于amount - coupon_amount的差值。按账期类型查询时不返回计算公式。
 
         :param formula: The formula of this ResFeeRecordV2.
         :type formula: str
@@ -1530,7 +1530,7 @@ class ResFeeRecordV2:
     def sub_service_type_code(self):
         """Gets the sub_service_type_code of this ResFeeRecordV2.
 
-        该字段为预留字段。
+        整机的子云服务的自身的云服务类型编码。
 
         :return: The sub_service_type_code of this ResFeeRecordV2.
         :rtype: str
@@ -1541,7 +1541,7 @@ class ResFeeRecordV2:
     def sub_service_type_code(self, sub_service_type_code):
         """Sets the sub_service_type_code of this ResFeeRecordV2.
 
-        该字段为预留字段。
+        整机的子云服务的自身的云服务类型编码。
 
         :param sub_service_type_code: The sub_service_type_code of this ResFeeRecordV2.
         :type sub_service_type_code: str
@@ -1552,7 +1552,7 @@ class ResFeeRecordV2:
     def sub_service_type_name(self):
         """Gets the sub_service_type_name of this ResFeeRecordV2.
 
-        该字段为预留字段。
+        整机的子云服务的自身的云服务类型名称。
 
         :return: The sub_service_type_name of this ResFeeRecordV2.
         :rtype: str
@@ -1563,7 +1563,7 @@ class ResFeeRecordV2:
     def sub_service_type_name(self, sub_service_type_name):
         """Sets the sub_service_type_name of this ResFeeRecordV2.
 
-        该字段为预留字段。
+        整机的子云服务的自身的云服务类型名称。
 
         :param sub_service_type_name: The sub_service_type_name of this ResFeeRecordV2.
         :type sub_service_type_name: str
@@ -1574,7 +1574,7 @@ class ResFeeRecordV2:
     def sub_resource_type_code(self):
         """Gets the sub_resource_type_code of this ResFeeRecordV2.
 
-        该字段为预留字段。
+        整机的子云服务的自身的资源类型编码。
 
         :return: The sub_resource_type_code of this ResFeeRecordV2.
         :rtype: str
@@ -1585,7 +1585,7 @@ class ResFeeRecordV2:
     def sub_resource_type_code(self, sub_resource_type_code):
         """Sets the sub_resource_type_code of this ResFeeRecordV2.
 
-        该字段为预留字段。
+        整机的子云服务的自身的资源类型编码。
 
         :param sub_resource_type_code: The sub_resource_type_code of this ResFeeRecordV2.
         :type sub_resource_type_code: str
@@ -1596,7 +1596,7 @@ class ResFeeRecordV2:
     def sub_resource_type_name(self):
         """Gets the sub_resource_type_name of this ResFeeRecordV2.
 
-        该字段为预留字段。
+        整机的子云服务的自身的资源类型名称。
 
         :return: The sub_resource_type_name of this ResFeeRecordV2.
         :rtype: str
@@ -1607,7 +1607,7 @@ class ResFeeRecordV2:
     def sub_resource_type_name(self, sub_resource_type_name):
         """Sets the sub_resource_type_name of this ResFeeRecordV2.
 
-        该字段为预留字段。
+        整机的子云服务的自身的资源类型名称。
 
         :param sub_resource_type_name: The sub_resource_type_name of this ResFeeRecordV2.
         :type sub_resource_type_name: str
@@ -1618,7 +1618,7 @@ class ResFeeRecordV2:
     def sub_resource_id(self):
         """Gets the sub_resource_id of this ResFeeRecordV2.
 
-        该字段为预留字段。
+        整机的子云服务的自身的资源ID，资源标识。（如果为预留实例，则为预留实例标识）
 
         :return: The sub_resource_id of this ResFeeRecordV2.
         :rtype: str
@@ -1629,7 +1629,7 @@ class ResFeeRecordV2:
     def sub_resource_id(self, sub_resource_id):
         """Sets the sub_resource_id of this ResFeeRecordV2.
 
-        该字段为预留字段。
+        整机的子云服务的自身的资源ID，资源标识。（如果为预留实例，则为预留实例标识）
 
         :param sub_resource_id: The sub_resource_id of this ResFeeRecordV2.
         :type sub_resource_id: str
@@ -1640,7 +1640,7 @@ class ResFeeRecordV2:
     def sub_resource_name(self):
         """Gets the sub_resource_name of this ResFeeRecordV2.
 
-        该字段为预留字段。
+        整机的子云服务的自身的资源名称，资源标识。（如果为预留实例，则为预留实例标识）
 
         :return: The sub_resource_name of this ResFeeRecordV2.
         :rtype: str
@@ -1651,7 +1651,7 @@ class ResFeeRecordV2:
     def sub_resource_name(self, sub_resource_name):
         """Sets the sub_resource_name of this ResFeeRecordV2.
 
-        该字段为预留字段。
+        整机的子云服务的自身的资源名称，资源标识。（如果为预留实例，则为预留实例标识）
 
         :param sub_resource_name: The sub_resource_name of this ResFeeRecordV2.
         :type sub_resource_name: str

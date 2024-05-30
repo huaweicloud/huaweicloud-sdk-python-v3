@@ -23,12 +23,12 @@ class ListDerivativeIndexesRequest:
         'create_by': 'str',
         'approver': 'str',
         'status': 'str',
-        'dimension_id': 'int',
+        'dimension_id': 'str',
         'dimension_group': 'str',
-        'atomic_index_id': 'int',
+        'atomic_index_id': 'str',
         'all_metrics': 'bool',
         'dw_type': 'str',
-        'l3_id': 'int',
+        'l3_id': 'str',
         'begin_time': 'str',
         'end_time': 'str',
         'limit': 'int',
@@ -69,25 +69,25 @@ class ListDerivativeIndexesRequest:
         :type create_by: str
         :param approver: 按审核人查询。
         :type approver: str
-        :param status: 业务状态。DRAFT(草稿)、PUBLISH_DEVELOPING(发布待审批)、PUBLISHED(已发布)、OFFLINE_DEVELOPING(下线待审批)、OFFLINE(已下线)、REJECT(已驳回)。
+        :param status: 业务状态。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审批   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审批   - OFFLINE: 已下线   - REJECT: 已驳回 
         :type status: str
-        :param dimension_id: 依据维度ID查维度属性。
-        :type dimension_id: int
+        :param dimension_id: 依据维度ID查维度属性，填写String类型替代Long类型。
+        :type dimension_id: str
         :param dimension_group: 依据维度颗粒度查维度属性。
         :type dimension_group: str
-        :param atomic_index_id: 依据原子指标ID查维度属性。
-        :type atomic_index_id: int
+        :param atomic_index_id: 依据原子指标ID查维度属性，填写String类型替代Long类型。
+        :type atomic_index_id: str
         :param all_metrics: 是否查询复合指标
         :type all_metrics: bool
         :param dw_type: 数据连接类型
         :type dw_type: str
-        :param l3_id: 业务对象l3的ID。
-        :type l3_id: int
+        :param l3_id: 业务对象l3的ID，填写String类型替代Long类型。
+        :type l3_id: str
         :param begin_time: 时间过滤左边界，与end_time一起使用，只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type begin_time: str
         :param end_time: 时间过滤右边界，与begin_time一起使用只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type end_time: str
-        :param limit: 查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+        :param limit: 每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
         :type limit: int
         :param offset: 查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
         :type offset: int
@@ -259,7 +259,7 @@ class ListDerivativeIndexesRequest:
     def status(self):
         """Gets the status of this ListDerivativeIndexesRequest.
 
-        业务状态。DRAFT(草稿)、PUBLISH_DEVELOPING(发布待审批)、PUBLISHED(已发布)、OFFLINE_DEVELOPING(下线待审批)、OFFLINE(已下线)、REJECT(已驳回)。
+        业务状态。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审批   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审批   - OFFLINE: 已下线   - REJECT: 已驳回 
 
         :return: The status of this ListDerivativeIndexesRequest.
         :rtype: str
@@ -270,7 +270,7 @@ class ListDerivativeIndexesRequest:
     def status(self, status):
         """Sets the status of this ListDerivativeIndexesRequest.
 
-        业务状态。DRAFT(草稿)、PUBLISH_DEVELOPING(发布待审批)、PUBLISHED(已发布)、OFFLINE_DEVELOPING(下线待审批)、OFFLINE(已下线)、REJECT(已驳回)。
+        业务状态。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审批   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审批   - OFFLINE: 已下线   - REJECT: 已驳回 
 
         :param status: The status of this ListDerivativeIndexesRequest.
         :type status: str
@@ -281,10 +281,10 @@ class ListDerivativeIndexesRequest:
     def dimension_id(self):
         """Gets the dimension_id of this ListDerivativeIndexesRequest.
 
-        依据维度ID查维度属性。
+        依据维度ID查维度属性，填写String类型替代Long类型。
 
         :return: The dimension_id of this ListDerivativeIndexesRequest.
-        :rtype: int
+        :rtype: str
         """
         return self._dimension_id
 
@@ -292,10 +292,10 @@ class ListDerivativeIndexesRequest:
     def dimension_id(self, dimension_id):
         """Sets the dimension_id of this ListDerivativeIndexesRequest.
 
-        依据维度ID查维度属性。
+        依据维度ID查维度属性，填写String类型替代Long类型。
 
         :param dimension_id: The dimension_id of this ListDerivativeIndexesRequest.
-        :type dimension_id: int
+        :type dimension_id: str
         """
         self._dimension_id = dimension_id
 
@@ -325,10 +325,10 @@ class ListDerivativeIndexesRequest:
     def atomic_index_id(self):
         """Gets the atomic_index_id of this ListDerivativeIndexesRequest.
 
-        依据原子指标ID查维度属性。
+        依据原子指标ID查维度属性，填写String类型替代Long类型。
 
         :return: The atomic_index_id of this ListDerivativeIndexesRequest.
-        :rtype: int
+        :rtype: str
         """
         return self._atomic_index_id
 
@@ -336,10 +336,10 @@ class ListDerivativeIndexesRequest:
     def atomic_index_id(self, atomic_index_id):
         """Sets the atomic_index_id of this ListDerivativeIndexesRequest.
 
-        依据原子指标ID查维度属性。
+        依据原子指标ID查维度属性，填写String类型替代Long类型。
 
         :param atomic_index_id: The atomic_index_id of this ListDerivativeIndexesRequest.
-        :type atomic_index_id: int
+        :type atomic_index_id: str
         """
         self._atomic_index_id = atomic_index_id
 
@@ -391,10 +391,10 @@ class ListDerivativeIndexesRequest:
     def l3_id(self):
         """Gets the l3_id of this ListDerivativeIndexesRequest.
 
-        业务对象l3的ID。
+        业务对象l3的ID，填写String类型替代Long类型。
 
         :return: The l3_id of this ListDerivativeIndexesRequest.
-        :rtype: int
+        :rtype: str
         """
         return self._l3_id
 
@@ -402,10 +402,10 @@ class ListDerivativeIndexesRequest:
     def l3_id(self, l3_id):
         """Sets the l3_id of this ListDerivativeIndexesRequest.
 
-        业务对象l3的ID。
+        业务对象l3的ID，填写String类型替代Long类型。
 
         :param l3_id: The l3_id of this ListDerivativeIndexesRequest.
-        :type l3_id: int
+        :type l3_id: str
         """
         self._l3_id = l3_id
 
@@ -457,7 +457,7 @@ class ListDerivativeIndexesRequest:
     def limit(self):
         """Gets the limit of this ListDerivativeIndexesRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+        每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :return: The limit of this ListDerivativeIndexesRequest.
         :rtype: int
@@ -468,7 +468,7 @@ class ListDerivativeIndexesRequest:
     def limit(self, limit):
         """Sets the limit of this ListDerivativeIndexesRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+        每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :param limit: The limit of this ListDerivativeIndexesRequest.
         :type limit: int

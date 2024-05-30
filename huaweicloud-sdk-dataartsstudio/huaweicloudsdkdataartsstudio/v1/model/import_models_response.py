@@ -18,7 +18,7 @@ class ImportModelsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'object'
+        'data': 'ExportDesignModelsResultData'
     }
 
     attribute_map = {
@@ -30,8 +30,8 @@ class ImportModelsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: 返回的数据信息。
-        :type data: object
+        :param data: 
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.ExportDesignModelsResultData`
         """
         
         super(ImportModelsResponse, self).__init__()
@@ -46,10 +46,8 @@ class ImportModelsResponse(SdkResponse):
     def data(self):
         """Gets the data of this ImportModelsResponse.
 
-        返回的数据信息。
-
         :return: The data of this ImportModelsResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ExportDesignModelsResultData`
         """
         return self._data
 
@@ -57,10 +55,8 @@ class ImportModelsResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this ImportModelsResponse.
 
-        返回的数据信息。
-
         :param data: The data of this ImportModelsResponse.
-        :type data: object
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.ExportDesignModelsResultData`
         """
         self._data = data
 

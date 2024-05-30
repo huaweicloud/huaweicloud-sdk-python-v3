@@ -39,7 +39,7 @@ class CreateKeypairAction:
 
         The model defined in huaweicloud sdk
 
-        :param name: SSH密钥对的名称。 - 新创建的密钥对名称不能和已有密钥对的名称相同。 - SSH密钥对名称由英文字母、数字、下划线、中划线组成，长度不能超过64个字节
+        :param name: SSH密钥对的名称。 - 新创建的密钥对名称不能和已有密钥对的名称相同。 - SSH密钥对名称由英文字母、数字、下划线、中划线组成，长度不能超过255个字节
         :type name: str
         :param type: SSH密钥对的类型。ssh或x509。
         :type type: str
@@ -79,7 +79,7 @@ class CreateKeypairAction:
     def name(self):
         """Gets the name of this CreateKeypairAction.
 
-        SSH密钥对的名称。 - 新创建的密钥对名称不能和已有密钥对的名称相同。 - SSH密钥对名称由英文字母、数字、下划线、中划线组成，长度不能超过64个字节
+        SSH密钥对的名称。 - 新创建的密钥对名称不能和已有密钥对的名称相同。 - SSH密钥对名称由英文字母、数字、下划线、中划线组成，长度不能超过255个字节
 
         :return: The name of this CreateKeypairAction.
         :rtype: str
@@ -90,7 +90,7 @@ class CreateKeypairAction:
     def name(self, name):
         """Sets the name of this CreateKeypairAction.
 
-        SSH密钥对的名称。 - 新创建的密钥对名称不能和已有密钥对的名称相同。 - SSH密钥对名称由英文字母、数字、下划线、中划线组成，长度不能超过64个字节
+        SSH密钥对的名称。 - 新创建的密钥对名称不能和已有密钥对的名称相同。 - SSH密钥对名称由英文字母、数字、下划线、中划线组成，长度不能超过255个字节
 
         :param name: The name of this CreateKeypairAction.
         :type name: str

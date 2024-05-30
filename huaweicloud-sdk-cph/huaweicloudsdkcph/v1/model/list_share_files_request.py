@@ -35,7 +35,7 @@ class ListShareFilesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param offset: 偏移量为一个大于0小于资源总个数的整数，表示查询该偏移量后面的所有的资源数，默认值为0。
+        :param offset: 偏移量为一个大于等于0整数，表示查询该偏移量后面的所有的资源数，默认值为0。
         :type offset: int
         :param limit: 每页返回的资源个数。取值范围：1~100（默认值为100），一般设置为10、20、50。
         :type limit: int
@@ -64,7 +64,7 @@ class ListShareFilesRequest:
     def offset(self):
         """Gets the offset of this ListShareFilesRequest.
 
-        偏移量为一个大于0小于资源总个数的整数，表示查询该偏移量后面的所有的资源数，默认值为0。
+        偏移量为一个大于等于0整数，表示查询该偏移量后面的所有的资源数，默认值为0。
 
         :return: The offset of this ListShareFilesRequest.
         :rtype: int
@@ -75,7 +75,7 @@ class ListShareFilesRequest:
     def offset(self, offset):
         """Sets the offset of this ListShareFilesRequest.
 
-        偏移量为一个大于0小于资源总个数的整数，表示查询该偏移量后面的所有的资源数，默认值为0。
+        偏移量为一个大于等于0整数，表示查询该偏移量后面的所有的资源数，默认值为0。
 
         :param offset: The offset of this ListShareFilesRequest.
         :type offset: int

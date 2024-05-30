@@ -5960,6 +5960,146 @@ class GaussDBClient(Client):
 
         return http_info
 
+    def show_proxy_ipgroup(self, request):
+        """查询代理实例访问控制
+
+        查询代理实例访问控制
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowProxyIpgroup
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowProxyIpgroupRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowProxyIpgroupResponse`
+        """
+        http_info = self._show_proxy_ipgroup_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_proxy_ipgroup_invoker(self, request):
+        http_info = self._show_proxy_ipgroup_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_proxy_ipgroup_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/proxy/{proxy_id}/ipgroup",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProxyIpgroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'proxy_id' in local_var_params:
+            path_params['proxy_id'] = local_var_params['proxy_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_proxy_version(self, request):
+        """查询代理实例小版本
+
+        查询代理实例小版本
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowProxyVersion
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowProxyVersionRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowProxyVersionResponse`
+        """
+        http_info = self._show_proxy_version_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_proxy_version_invoker(self, request):
+        http_info = self._show_proxy_version_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_proxy_version_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/proxy/{proxy_id}/{engine_name}/proxy-version",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProxyVersionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'engine_name' in local_var_params:
+            path_params['engine_name'] = local_var_params['engine_name']
+        if 'proxy_id' in local_var_params:
+            path_params['proxy_id'] = local_var_params['proxy_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_restore_tables(self, request):
         """查询表级时间点恢复可选表
 
@@ -7700,6 +7840,77 @@ class GaussDBClient(Client):
 
         return http_info
 
+    def update_proxy_name(self, request):
+        """修改代理实例名称
+
+        修改代理实例名称
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateProxyName
+        :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateProxyNameRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateProxyNameResponse`
+        """
+        http_info = self._update_proxy_name_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_proxy_name_invoker(self, request):
+        http_info = self._update_proxy_name_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_proxy_name_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/proxy/{proxy_id}/rename",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateProxyNameResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'proxy_id' in local_var_params:
+            path_params['proxy_id'] = local_var_params['proxy_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_proxy_new_configurations(self, request):
         """修改代理实例参数
 
@@ -8018,6 +8229,77 @@ class GaussDBClient(Client):
         path_params = {}
         if 'instance_id' in local_var_params:
             path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def upgrade_proxy_version(self, request):
+        """升级数据库代理实例内核版本
+
+        升级数据库代理实例内核版本。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpgradeProxyVersion
+        :type request: :class:`huaweicloudsdkgaussdb.v3.UpgradeProxyVersionRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.UpgradeProxyVersionResponse`
+        """
+        http_info = self._upgrade_proxy_version_http_info(request)
+        return self._call_api(**http_info)
+
+    def upgrade_proxy_version_invoker(self, request):
+        http_info = self._upgrade_proxy_version_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _upgrade_proxy_version_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/proxy/{proxy_id}/upgrade-version",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpgradeProxyVersionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'proxy_id' in local_var_params:
+            path_params['proxy_id'] = local_var_params['proxy_id']
 
         query_params = []
 

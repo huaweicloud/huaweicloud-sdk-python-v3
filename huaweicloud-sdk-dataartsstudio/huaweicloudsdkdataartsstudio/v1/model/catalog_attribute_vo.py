@@ -71,9 +71,9 @@ class CatalogAttributeVO:
 
         The model defined in huaweicloud sdk
 
-        :param path: 路径。
+        :param path: 路径。用“/”作为分隔，如：运营领域/云学院/云学院培训方案。
         :type path: str
-        :param qualified_name: 名称。
+        :param qualified_name: 资产名称。
         :type qualified_name: str
         :param level: 主题所属层级。
         :type level: str
@@ -103,17 +103,17 @@ class CatalogAttributeVO:
         :type parent: :class:`huaweicloudsdkdataartsstudio.v1.CatalogAttributeVOParent`
         :param parent_id: 父节点ID。
         :type parent_id: str
-        :param l1: 是否为L1层。
+        :param l1: 是否为L1层。主题域分组。
         :type l1: bool
-        :param l2: 是否为L2层。
+        :param l2: 是否为L2层。主题域。
         :type l2: bool
-        :param l3: 是否为L3层。
+        :param l3: 是否为L3层。业务对象。
         :type l3: bool
-        :param ordinal: 顺序编号。
+        :param ordinal: 顺序编号。主题返回时根据此编号由小到大排序。
         :type ordinal: int
-        :param tenant_id: 租户ID。
+        :param tenant_id: 租户ID。获取方式参考此接口的路径参数“project_id”获取。
         :type tenant_id: str
-        :param self_defined_fields: 自定义项。
+        :param self_defined_fields: 自定义项。主题的自定义属性项。
         :type self_defined_fields: list[:class:`huaweicloudsdkdataartsstudio.v1.SelfDefinedFieldVO`]
         """
         
@@ -184,7 +184,7 @@ class CatalogAttributeVO:
     def path(self):
         """Gets the path of this CatalogAttributeVO.
 
-        路径。
+        路径。用“/”作为分隔，如：运营领域/云学院/云学院培训方案。
 
         :return: The path of this CatalogAttributeVO.
         :rtype: str
@@ -195,7 +195,7 @@ class CatalogAttributeVO:
     def path(self, path):
         """Sets the path of this CatalogAttributeVO.
 
-        路径。
+        路径。用“/”作为分隔，如：运营领域/云学院/云学院培训方案。
 
         :param path: The path of this CatalogAttributeVO.
         :type path: str
@@ -206,7 +206,7 @@ class CatalogAttributeVO:
     def qualified_name(self):
         """Gets the qualified_name of this CatalogAttributeVO.
 
-        名称。
+        资产名称。
 
         :return: The qualified_name of this CatalogAttributeVO.
         :rtype: str
@@ -217,7 +217,7 @@ class CatalogAttributeVO:
     def qualified_name(self, qualified_name):
         """Sets the qualified_name of this CatalogAttributeVO.
 
-        名称。
+        资产名称。
 
         :param qualified_name: The qualified_name of this CatalogAttributeVO.
         :type qualified_name: str
@@ -532,7 +532,7 @@ class CatalogAttributeVO:
     def l1(self):
         """Gets the l1 of this CatalogAttributeVO.
 
-        是否为L1层。
+        是否为L1层。主题域分组。
 
         :return: The l1 of this CatalogAttributeVO.
         :rtype: bool
@@ -543,7 +543,7 @@ class CatalogAttributeVO:
     def l1(self, l1):
         """Sets the l1 of this CatalogAttributeVO.
 
-        是否为L1层。
+        是否为L1层。主题域分组。
 
         :param l1: The l1 of this CatalogAttributeVO.
         :type l1: bool
@@ -554,7 +554,7 @@ class CatalogAttributeVO:
     def l2(self):
         """Gets the l2 of this CatalogAttributeVO.
 
-        是否为L2层。
+        是否为L2层。主题域。
 
         :return: The l2 of this CatalogAttributeVO.
         :rtype: bool
@@ -565,7 +565,7 @@ class CatalogAttributeVO:
     def l2(self, l2):
         """Sets the l2 of this CatalogAttributeVO.
 
-        是否为L2层。
+        是否为L2层。主题域。
 
         :param l2: The l2 of this CatalogAttributeVO.
         :type l2: bool
@@ -576,7 +576,7 @@ class CatalogAttributeVO:
     def l3(self):
         """Gets the l3 of this CatalogAttributeVO.
 
-        是否为L3层。
+        是否为L3层。业务对象。
 
         :return: The l3 of this CatalogAttributeVO.
         :rtype: bool
@@ -587,7 +587,7 @@ class CatalogAttributeVO:
     def l3(self, l3):
         """Sets the l3 of this CatalogAttributeVO.
 
-        是否为L3层。
+        是否为L3层。业务对象。
 
         :param l3: The l3 of this CatalogAttributeVO.
         :type l3: bool
@@ -598,7 +598,7 @@ class CatalogAttributeVO:
     def ordinal(self):
         """Gets the ordinal of this CatalogAttributeVO.
 
-        顺序编号。
+        顺序编号。主题返回时根据此编号由小到大排序。
 
         :return: The ordinal of this CatalogAttributeVO.
         :rtype: int
@@ -609,7 +609,7 @@ class CatalogAttributeVO:
     def ordinal(self, ordinal):
         """Sets the ordinal of this CatalogAttributeVO.
 
-        顺序编号。
+        顺序编号。主题返回时根据此编号由小到大排序。
 
         :param ordinal: The ordinal of this CatalogAttributeVO.
         :type ordinal: int
@@ -620,7 +620,7 @@ class CatalogAttributeVO:
     def tenant_id(self):
         """Gets the tenant_id of this CatalogAttributeVO.
 
-        租户ID。
+        租户ID。获取方式参考此接口的路径参数“project_id”获取。
 
         :return: The tenant_id of this CatalogAttributeVO.
         :rtype: str
@@ -631,7 +631,7 @@ class CatalogAttributeVO:
     def tenant_id(self, tenant_id):
         """Sets the tenant_id of this CatalogAttributeVO.
 
-        租户ID。
+        租户ID。获取方式参考此接口的路径参数“project_id”获取。
 
         :param tenant_id: The tenant_id of this CatalogAttributeVO.
         :type tenant_id: str
@@ -642,7 +642,7 @@ class CatalogAttributeVO:
     def self_defined_fields(self):
         """Gets the self_defined_fields of this CatalogAttributeVO.
 
-        自定义项。
+        自定义项。主题的自定义属性项。
 
         :return: The self_defined_fields of this CatalogAttributeVO.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.SelfDefinedFieldVO`]
@@ -653,7 +653,7 @@ class CatalogAttributeVO:
     def self_defined_fields(self, self_defined_fields):
         """Sets the self_defined_fields of this CatalogAttributeVO.
 
-        自定义项。
+        自定义项。主题的自定义属性项。
 
         :param self_defined_fields: The self_defined_fields of this CatalogAttributeVO.
         :type self_defined_fields: list[:class:`huaweicloudsdkdataartsstudio.v1.SelfDefinedFieldVO`]

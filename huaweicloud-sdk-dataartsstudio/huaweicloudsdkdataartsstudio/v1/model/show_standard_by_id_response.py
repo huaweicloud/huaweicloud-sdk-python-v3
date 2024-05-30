@@ -18,7 +18,7 @@ class ShowStandardByIdResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'object'
+        'data': 'ShowStandardByIdResultData'
     }
 
     attribute_map = {
@@ -30,8 +30,8 @@ class ShowStandardByIdResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: 返回的数据信息。
-        :type data: object
+        :param data: 
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.ShowStandardByIdResultData`
         """
         
         super(ShowStandardByIdResponse, self).__init__()
@@ -46,10 +46,8 @@ class ShowStandardByIdResponse(SdkResponse):
     def data(self):
         """Gets the data of this ShowStandardByIdResponse.
 
-        返回的数据信息。
-
         :return: The data of this ShowStandardByIdResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowStandardByIdResultData`
         """
         return self._data
 
@@ -57,10 +55,8 @@ class ShowStandardByIdResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this ShowStandardByIdResponse.
 
-        返回的数据信息。
-
         :param data: The data of this ShowStandardByIdResponse.
-        :type data: object
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.ShowStandardByIdResultData`
         """
         self._data = data
 

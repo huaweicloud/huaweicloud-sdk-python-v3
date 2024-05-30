@@ -38,7 +38,7 @@ class ShowUrlTaskInfoResponse(SdkResponse):
 
         :param total: 查询结果总数。
         :type total: int
-        :param count: 当前查询到的总页数。
+        :param count: 当前页查询到的总数。
         :type count: int
         :param result: url信息。
         :type result: list[:class:`huaweicloudsdkcdn.v2.Urls`]
@@ -89,7 +89,7 @@ class ShowUrlTaskInfoResponse(SdkResponse):
     def count(self):
         """Gets the count of this ShowUrlTaskInfoResponse.
 
-        当前查询到的总页数。
+        当前页查询到的总数。
 
         :return: The count of this ShowUrlTaskInfoResponse.
         :rtype: int
@@ -100,7 +100,7 @@ class ShowUrlTaskInfoResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this ShowUrlTaskInfoResponse.
 
-        当前查询到的总页数。
+        当前页查询到的总数。
 
         :param count: The count of this ShowUrlTaskInfoResponse.
         :type count: int

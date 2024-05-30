@@ -2400,6 +2400,8 @@ class BssAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 
@@ -2495,6 +2497,8 @@ class BssAsyncClient(Client):
             query_params.append(('bill_date_begin', local_var_params['bill_date_begin']))
         if 'bill_date_end' in local_var_params:
             query_params.append(('bill_date_end', local_var_params['bill_date_end']))
+        if 'statistic_type' in local_var_params:
+            query_params.append(('statistic_type', local_var_params['statistic_type']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -5768,6 +5772,8 @@ class BssAsyncClient(Client):
             query_params.append(('payment_time_end', local_var_params['payment_time_end']))
         if 'indirect_partner_id' in local_var_params:
             query_params.append(('indirect_partner_id', local_var_params['indirect_partner_id']))
+        if 'method' in local_var_params:
+            query_params.append(('method', local_var_params['method']))
 
         header_params = {}
 

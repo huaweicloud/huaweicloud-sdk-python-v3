@@ -49,7 +49,7 @@ class CouponRecordV2:
 
         :param id: 该记录的ID。
         :type id: str
-        :param operation_type: 操作类型。 1：发放2：手动回收3：解绑自动回收
+        :param operation_type: 操作类型。 1：发放2：手动回收3：解绑自动回收4：过期回收5：退订回收6：退款充值撤销7：建立关联回收
         :type operation_type: str
         :param quota_id: 额度ID。
         :type quota_id: str
@@ -130,7 +130,7 @@ class CouponRecordV2:
     def operation_type(self):
         """Gets the operation_type of this CouponRecordV2.
 
-        操作类型。 1：发放2：手动回收3：解绑自动回收
+        操作类型。 1：发放2：手动回收3：解绑自动回收4：过期回收5：退订回收6：退款充值撤销7：建立关联回收
 
         :return: The operation_type of this CouponRecordV2.
         :rtype: str
@@ -141,7 +141,7 @@ class CouponRecordV2:
     def operation_type(self, operation_type):
         """Sets the operation_type of this CouponRecordV2.
 
-        操作类型。 1：发放2：手动回收3：解绑自动回收
+        操作类型。 1：发放2：手动回收3：解绑自动回收4：过期回收5：退订回收6：退款充值撤销7：建立关联回收
 
         :param operation_type: The operation_type of this CouponRecordV2.
         :type operation_type: str

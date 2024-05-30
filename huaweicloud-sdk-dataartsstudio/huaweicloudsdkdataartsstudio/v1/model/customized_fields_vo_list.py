@@ -31,7 +31,7 @@ class CustomizedFieldsVOList:
 
         The model defined in huaweicloud sdk
 
-        :param type: 自定义项类型。TABLE(表自定义项)、ATTRIBUTE(属性自定义项)、SUBJECT(主题自定义项)、METRIC(业务指标自定义项)。
+        :param type: 自定义项类型。 枚举值：   - TABLE: 表自定义项   - ATTRIBUTE: 属性自定义项   - SUBJECT: 主题自定义项   - METRIC: 业务指标自定义项 
         :type type: str
         :param fields: 自定义项列表。
         :type fields: list[:class:`huaweicloudsdkdataartsstudio.v1.CustomizedFieldsVO`]
@@ -51,7 +51,7 @@ class CustomizedFieldsVOList:
     def type(self):
         """Gets the type of this CustomizedFieldsVOList.
 
-        自定义项类型。TABLE(表自定义项)、ATTRIBUTE(属性自定义项)、SUBJECT(主题自定义项)、METRIC(业务指标自定义项)。
+        自定义项类型。 枚举值：   - TABLE: 表自定义项   - ATTRIBUTE: 属性自定义项   - SUBJECT: 主题自定义项   - METRIC: 业务指标自定义项 
 
         :return: The type of this CustomizedFieldsVOList.
         :rtype: str
@@ -62,7 +62,7 @@ class CustomizedFieldsVOList:
     def type(self, type):
         """Sets the type of this CustomizedFieldsVOList.
 
-        自定义项类型。TABLE(表自定义项)、ATTRIBUTE(属性自定义项)、SUBJECT(主题自定义项)、METRIC(业务指标自定义项)。
+        自定义项类型。 枚举值：   - TABLE: 表自定义项   - ATTRIBUTE: 属性自定义项   - SUBJECT: 主题自定义项   - METRIC: 业务指标自定义项 
 
         :param type: The type of this CustomizedFieldsVOList.
         :type type: str

@@ -18,7 +18,7 @@ class SearchDwByTypeResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'object'
+        'data': 'SearchDwByTypeResultData'
     }
 
     attribute_map = {
@@ -30,8 +30,8 @@ class SearchDwByTypeResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: 返回的数据信息。
-        :type data: object
+        :param data: 
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.SearchDwByTypeResultData`
         """
         
         super(SearchDwByTypeResponse, self).__init__()
@@ -46,10 +46,8 @@ class SearchDwByTypeResponse(SdkResponse):
     def data(self):
         """Gets the data of this SearchDwByTypeResponse.
 
-        返回的数据信息。
-
         :return: The data of this SearchDwByTypeResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SearchDwByTypeResultData`
         """
         return self._data
 
@@ -57,10 +55,8 @@ class SearchDwByTypeResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this SearchDwByTypeResponse.
 
-        返回的数据信息。
-
         :param data: The data of this SearchDwByTypeResponse.
-        :type data: object
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.SearchDwByTypeResultData`
         """
         self._data = data
 

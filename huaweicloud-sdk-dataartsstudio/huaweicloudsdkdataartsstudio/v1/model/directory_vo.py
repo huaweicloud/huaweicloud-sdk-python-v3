@@ -20,15 +20,17 @@ class DirectoryVO:
         'name': 'str',
         'description': 'str',
         'type': 'str',
-        'id': 'int',
-        'parent_id': 'int',
-        'prev_id': 'int',
-        'root_id': 'int',
+        'id': 'str',
+        'parent_id': 'str',
+        'prev_id': 'str',
+        'root_id': 'str',
         'qualified_name': 'str',
+        'from_public': 'str',
         'create_time': 'datetime',
         'update_time': 'datetime',
         'create_by': 'str',
         'update_by': 'str',
+        'ref_id': 'str',
         'children': 'list[DirectoryVO]'
     }
 
@@ -41,42 +43,48 @@ class DirectoryVO:
         'prev_id': 'prev_id',
         'root_id': 'root_id',
         'qualified_name': 'qualified_name',
+        'from_public': 'from_public',
         'create_time': 'create_time',
         'update_time': 'update_time',
         'create_by': 'create_by',
         'update_by': 'update_by',
+        'ref_id': 'ref_id',
         'children': 'children'
     }
 
-    def __init__(self, name=None, description=None, type=None, id=None, parent_id=None, prev_id=None, root_id=None, qualified_name=None, create_time=None, update_time=None, create_by=None, update_by=None, children=None):
+    def __init__(self, name=None, description=None, type=None, id=None, parent_id=None, prev_id=None, root_id=None, qualified_name=None, from_public=None, create_time=None, update_time=None, create_by=None, update_by=None, ref_id=None, children=None):
         """DirectoryVO
 
         The model defined in huaweicloud sdk
 
-        :param name: 名称。
+        :param name: 目录名称。
         :type name: str
         :param description: 描述。
         :type description: str
-        :param type: 目录类型。STANDARD_ELEMENT(数据标准)、CODE(码表)。
+        :param type: 目录类型。 枚举值：   - STANDARD_ELEMENT: 数据标准   - CODE: 码表 
         :type type: str
-        :param id: ID，创建时可不传，更新时必填。
-        :type id: int
-        :param parent_id: 父目录ID，首层传null。
-        :type parent_id: int
-        :param prev_id: 上个节点ID，首节点传null。
-        :type prev_id: int
-        :param root_id: 根节点ID，根节点此ID为自身ID。
-        :type root_id: int
-        :param qualified_name: 所属目录。
+        :param id: ID，创建时可不传，更新时必填。填写String类型替代Long类型。
+        :type id: str
+        :param parent_id: 父目录ID，首层传null。填写String类型替代Long类型。
+        :type parent_id: str
+        :param prev_id: 上个节点ID，首节点传null。填写String类型替代Long类型。
+        :type prev_id: str
+        :param root_id: 根节点ID，根节点此ID为自身ID，只读。填写String类型替代Long类型。
+        :type root_id: str
+        :param qualified_name: 目录的资产名称，只读。
         :type qualified_name: str
-        :param create_time: 创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        :param from_public: 是否来自公共层，只读。
+        :type from_public: str
+        :param create_time: 创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
-        :param update_time: 更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        :param update_time: 更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type update_time: datetime
-        :param create_by: 创建人。
+        :param create_by: 创建人，只读。
         :type create_by: str
-        :param update_by: 更新人。
+        :param update_by: 更新人，只读。
         :type update_by: str
+        :param ref_id: 关联的主题ID，填写String类型替代Long类型。
+        :type ref_id: str
         :param children: 子目录。
         :type children: list[:class:`huaweicloudsdkdataartsstudio.v1.DirectoryVO`]
         """
@@ -91,10 +99,12 @@ class DirectoryVO:
         self._prev_id = None
         self._root_id = None
         self._qualified_name = None
+        self._from_public = None
         self._create_time = None
         self._update_time = None
         self._create_by = None
         self._update_by = None
+        self._ref_id = None
         self._children = None
         self.discriminator = None
 
@@ -110,6 +120,8 @@ class DirectoryVO:
             self.root_id = root_id
         if qualified_name is not None:
             self.qualified_name = qualified_name
+        if from_public is not None:
+            self.from_public = from_public
         if create_time is not None:
             self.create_time = create_time
         if update_time is not None:
@@ -118,6 +130,8 @@ class DirectoryVO:
             self.create_by = create_by
         if update_by is not None:
             self.update_by = update_by
+        if ref_id is not None:
+            self.ref_id = ref_id
         if children is not None:
             self.children = children
 
@@ -125,7 +139,7 @@ class DirectoryVO:
     def name(self):
         """Gets the name of this DirectoryVO.
 
-        名称。
+        目录名称。
 
         :return: The name of this DirectoryVO.
         :rtype: str
@@ -136,7 +150,7 @@ class DirectoryVO:
     def name(self, name):
         """Sets the name of this DirectoryVO.
 
-        名称。
+        目录名称。
 
         :param name: The name of this DirectoryVO.
         :type name: str
@@ -169,7 +183,7 @@ class DirectoryVO:
     def type(self):
         """Gets the type of this DirectoryVO.
 
-        目录类型。STANDARD_ELEMENT(数据标准)、CODE(码表)。
+        目录类型。 枚举值：   - STANDARD_ELEMENT: 数据标准   - CODE: 码表 
 
         :return: The type of this DirectoryVO.
         :rtype: str
@@ -180,7 +194,7 @@ class DirectoryVO:
     def type(self, type):
         """Sets the type of this DirectoryVO.
 
-        目录类型。STANDARD_ELEMENT(数据标准)、CODE(码表)。
+        目录类型。 枚举值：   - STANDARD_ELEMENT: 数据标准   - CODE: 码表 
 
         :param type: The type of this DirectoryVO.
         :type type: str
@@ -191,10 +205,10 @@ class DirectoryVO:
     def id(self):
         """Gets the id of this DirectoryVO.
 
-        ID，创建时可不传，更新时必填。
+        ID，创建时可不传，更新时必填。填写String类型替代Long类型。
 
         :return: The id of this DirectoryVO.
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -202,10 +216,10 @@ class DirectoryVO:
     def id(self, id):
         """Sets the id of this DirectoryVO.
 
-        ID，创建时可不传，更新时必填。
+        ID，创建时可不传，更新时必填。填写String类型替代Long类型。
 
         :param id: The id of this DirectoryVO.
-        :type id: int
+        :type id: str
         """
         self._id = id
 
@@ -213,10 +227,10 @@ class DirectoryVO:
     def parent_id(self):
         """Gets the parent_id of this DirectoryVO.
 
-        父目录ID，首层传null。
+        父目录ID，首层传null。填写String类型替代Long类型。
 
         :return: The parent_id of this DirectoryVO.
-        :rtype: int
+        :rtype: str
         """
         return self._parent_id
 
@@ -224,10 +238,10 @@ class DirectoryVO:
     def parent_id(self, parent_id):
         """Sets the parent_id of this DirectoryVO.
 
-        父目录ID，首层传null。
+        父目录ID，首层传null。填写String类型替代Long类型。
 
         :param parent_id: The parent_id of this DirectoryVO.
-        :type parent_id: int
+        :type parent_id: str
         """
         self._parent_id = parent_id
 
@@ -235,10 +249,10 @@ class DirectoryVO:
     def prev_id(self):
         """Gets the prev_id of this DirectoryVO.
 
-        上个节点ID，首节点传null。
+        上个节点ID，首节点传null。填写String类型替代Long类型。
 
         :return: The prev_id of this DirectoryVO.
-        :rtype: int
+        :rtype: str
         """
         return self._prev_id
 
@@ -246,10 +260,10 @@ class DirectoryVO:
     def prev_id(self, prev_id):
         """Sets the prev_id of this DirectoryVO.
 
-        上个节点ID，首节点传null。
+        上个节点ID，首节点传null。填写String类型替代Long类型。
 
         :param prev_id: The prev_id of this DirectoryVO.
-        :type prev_id: int
+        :type prev_id: str
         """
         self._prev_id = prev_id
 
@@ -257,10 +271,10 @@ class DirectoryVO:
     def root_id(self):
         """Gets the root_id of this DirectoryVO.
 
-        根节点ID，根节点此ID为自身ID。
+        根节点ID，根节点此ID为自身ID，只读。填写String类型替代Long类型。
 
         :return: The root_id of this DirectoryVO.
-        :rtype: int
+        :rtype: str
         """
         return self._root_id
 
@@ -268,10 +282,10 @@ class DirectoryVO:
     def root_id(self, root_id):
         """Sets the root_id of this DirectoryVO.
 
-        根节点ID，根节点此ID为自身ID。
+        根节点ID，根节点此ID为自身ID，只读。填写String类型替代Long类型。
 
         :param root_id: The root_id of this DirectoryVO.
-        :type root_id: int
+        :type root_id: str
         """
         self._root_id = root_id
 
@@ -279,7 +293,7 @@ class DirectoryVO:
     def qualified_name(self):
         """Gets the qualified_name of this DirectoryVO.
 
-        所属目录。
+        目录的资产名称，只读。
 
         :return: The qualified_name of this DirectoryVO.
         :rtype: str
@@ -290,7 +304,7 @@ class DirectoryVO:
     def qualified_name(self, qualified_name):
         """Sets the qualified_name of this DirectoryVO.
 
-        所属目录。
+        目录的资产名称，只读。
 
         :param qualified_name: The qualified_name of this DirectoryVO.
         :type qualified_name: str
@@ -298,10 +312,32 @@ class DirectoryVO:
         self._qualified_name = qualified_name
 
     @property
+    def from_public(self):
+        """Gets the from_public of this DirectoryVO.
+
+        是否来自公共层，只读。
+
+        :return: The from_public of this DirectoryVO.
+        :rtype: str
+        """
+        return self._from_public
+
+    @from_public.setter
+    def from_public(self, from_public):
+        """Sets the from_public of this DirectoryVO.
+
+        是否来自公共层，只读。
+
+        :param from_public: The from_public of this DirectoryVO.
+        :type from_public: str
+        """
+        self._from_public = from_public
+
+    @property
     def create_time(self):
         """Gets the create_time of this DirectoryVO.
 
-        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The create_time of this DirectoryVO.
         :rtype: datetime
@@ -312,7 +348,7 @@ class DirectoryVO:
     def create_time(self, create_time):
         """Sets the create_time of this DirectoryVO.
 
-        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param create_time: The create_time of this DirectoryVO.
         :type create_time: datetime
@@ -323,7 +359,7 @@ class DirectoryVO:
     def update_time(self):
         """Gets the update_time of this DirectoryVO.
 
-        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The update_time of this DirectoryVO.
         :rtype: datetime
@@ -334,7 +370,7 @@ class DirectoryVO:
     def update_time(self, update_time):
         """Sets the update_time of this DirectoryVO.
 
-        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param update_time: The update_time of this DirectoryVO.
         :type update_time: datetime
@@ -345,7 +381,7 @@ class DirectoryVO:
     def create_by(self):
         """Gets the create_by of this DirectoryVO.
 
-        创建人。
+        创建人，只读。
 
         :return: The create_by of this DirectoryVO.
         :rtype: str
@@ -356,7 +392,7 @@ class DirectoryVO:
     def create_by(self, create_by):
         """Sets the create_by of this DirectoryVO.
 
-        创建人。
+        创建人，只读。
 
         :param create_by: The create_by of this DirectoryVO.
         :type create_by: str
@@ -367,7 +403,7 @@ class DirectoryVO:
     def update_by(self):
         """Gets the update_by of this DirectoryVO.
 
-        更新人。
+        更新人，只读。
 
         :return: The update_by of this DirectoryVO.
         :rtype: str
@@ -378,12 +414,34 @@ class DirectoryVO:
     def update_by(self, update_by):
         """Sets the update_by of this DirectoryVO.
 
-        更新人。
+        更新人，只读。
 
         :param update_by: The update_by of this DirectoryVO.
         :type update_by: str
         """
         self._update_by = update_by
+
+    @property
+    def ref_id(self):
+        """Gets the ref_id of this DirectoryVO.
+
+        关联的主题ID，填写String类型替代Long类型。
+
+        :return: The ref_id of this DirectoryVO.
+        :rtype: str
+        """
+        return self._ref_id
+
+    @ref_id.setter
+    def ref_id(self, ref_id):
+        """Sets the ref_id of this DirectoryVO.
+
+        关联的主题ID，填写String类型替代Long类型。
+
+        :param ref_id: The ref_id of this DirectoryVO.
+        :type ref_id: str
+        """
+        self._ref_id = ref_id
 
     @property
     def children(self):

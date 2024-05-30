@@ -18,15 +18,17 @@ class ListEnginesRequest:
 
     openapi_types = {
         'offset': 'int',
-        'limit': 'str'
+        'limit': 'str',
+        'type': 'str'
     }
 
     attribute_map = {
         'offset': 'offset',
-        'limit': 'limit'
+        'limit': 'limit',
+        'type': 'type'
     }
 
-    def __init__(self, offset=None, limit=None):
+    def __init__(self, offset=None, limit=None, type=None):
         """ListEnginesRequest
 
         The model defined in huaweicloud sdk
@@ -35,18 +37,23 @@ class ListEnginesRequest:
         :type offset: int
         :param limit: 每页显示的条目数量。
         :type limit: str
+        :param type: 查询所有微服务引擎需要将该值设置为ALL，查询ServiceComb引擎专享版需要将该值设置为CSE，查询注册配置中心需要将该值设置为Nacos，查询网关需要将该值设置为MicroGateway。
+        :type type: str
         """
         
         
 
         self._offset = None
         self._limit = None
+        self._type = None
         self.discriminator = None
 
         if offset is not None:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+        if type is not None:
+            self.type = type
 
     @property
     def offset(self):
@@ -91,6 +98,28 @@ class ListEnginesRequest:
         :type limit: str
         """
         self._limit = limit
+
+    @property
+    def type(self):
+        """Gets the type of this ListEnginesRequest.
+
+        查询所有微服务引擎需要将该值设置为ALL，查询ServiceComb引擎专享版需要将该值设置为CSE，查询注册配置中心需要将该值设置为Nacos，查询网关需要将该值设置为MicroGateway。
+
+        :return: The type of this ListEnginesRequest.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this ListEnginesRequest.
+
+        查询所有微服务引擎需要将该值设置为ALL，查询ServiceComb引擎专享版需要将该值设置为CSE，查询注册配置中心需要将该值设置为Nacos，查询网关需要将该值设置为MicroGateway。
+
+        :param type: The type of this ListEnginesRequest.
+        :type type: str
+        """
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

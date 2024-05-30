@@ -21,7 +21,9 @@ class GaussDBforOpenGaussListDatabase:
         'owner': 'str',
         'character_set': 'str',
         'collate_set': 'str',
-        'size': 'str'
+        'size': 'str',
+        'datctype': 'str',
+        'compatibility_type': 'str'
     }
 
     attribute_map = {
@@ -29,10 +31,12 @@ class GaussDBforOpenGaussListDatabase:
         'owner': 'owner',
         'character_set': 'character_set',
         'collate_set': 'collate_set',
-        'size': 'size'
+        'size': 'size',
+        'datctype': 'datctype',
+        'compatibility_type': 'compatibility_type'
     }
 
-    def __init__(self, name=None, owner=None, character_set=None, collate_set=None, size=None):
+    def __init__(self, name=None, owner=None, character_set=None, collate_set=None, size=None, datctype=None, compatibility_type=None):
         """GaussDBforOpenGaussListDatabase
 
         The model defined in huaweicloud sdk
@@ -47,6 +51,10 @@ class GaussDBforOpenGaussListDatabase:
         :type collate_set: str
         :param size: 数据库大小（单位：MB）。
         :type size: str
+        :param datctype: 数据库使用的字符分类，例如en_US.UTF-8等。
+        :type datctype: str
+        :param compatibility_type: 数据库兼容的类型，如GaussDB，M。
+        :type compatibility_type: str
         """
         
         
@@ -56,6 +64,8 @@ class GaussDBforOpenGaussListDatabase:
         self._character_set = None
         self._collate_set = None
         self._size = None
+        self._datctype = None
+        self._compatibility_type = None
         self.discriminator = None
 
         if name is not None:
@@ -68,6 +78,10 @@ class GaussDBforOpenGaussListDatabase:
             self.collate_set = collate_set
         if size is not None:
             self.size = size
+        if datctype is not None:
+            self.datctype = datctype
+        if compatibility_type is not None:
+            self.compatibility_type = compatibility_type
 
     @property
     def name(self):
@@ -178,6 +192,50 @@ class GaussDBforOpenGaussListDatabase:
         :type size: str
         """
         self._size = size
+
+    @property
+    def datctype(self):
+        """Gets the datctype of this GaussDBforOpenGaussListDatabase.
+
+        数据库使用的字符分类，例如en_US.UTF-8等。
+
+        :return: The datctype of this GaussDBforOpenGaussListDatabase.
+        :rtype: str
+        """
+        return self._datctype
+
+    @datctype.setter
+    def datctype(self, datctype):
+        """Sets the datctype of this GaussDBforOpenGaussListDatabase.
+
+        数据库使用的字符分类，例如en_US.UTF-8等。
+
+        :param datctype: The datctype of this GaussDBforOpenGaussListDatabase.
+        :type datctype: str
+        """
+        self._datctype = datctype
+
+    @property
+    def compatibility_type(self):
+        """Gets the compatibility_type of this GaussDBforOpenGaussListDatabase.
+
+        数据库兼容的类型，如GaussDB，M。
+
+        :return: The compatibility_type of this GaussDBforOpenGaussListDatabase.
+        :rtype: str
+        """
+        return self._compatibility_type
+
+    @compatibility_type.setter
+    def compatibility_type(self, compatibility_type):
+        """Sets the compatibility_type of this GaussDBforOpenGaussListDatabase.
+
+        数据库兼容的类型，如GaussDB，M。
+
+        :param compatibility_type: The compatibility_type of this GaussDBforOpenGaussListDatabase.
+        :type compatibility_type: str
+        """
+        self._compatibility_type = compatibility_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

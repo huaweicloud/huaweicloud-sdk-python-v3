@@ -17,29 +17,36 @@ class PolicyAction:
     sensitive_list = []
 
     openapi_types = {
-        'category': 'str'
+        'category': 'str',
+        'followed_action_id': 'str'
     }
 
     attribute_map = {
-        'category': 'category'
+        'category': 'category',
+        'followed_action_id': 'followed_action_id'
     }
 
-    def __init__(self, category=None):
+    def __init__(self, category=None, followed_action_id=None):
         """PolicyAction
 
         The model defined in huaweicloud sdk
 
         :param category: web基础防护动作（log为仅记录、block为拦截）
         :type category: str
+        :param followed_action_id: 攻击惩罚规则ID
+        :type followed_action_id: str
         """
         
         
 
         self._category = None
+        self._followed_action_id = None
         self.discriminator = None
 
         if category is not None:
             self.category = category
+        if followed_action_id is not None:
+            self.followed_action_id = followed_action_id
 
     @property
     def category(self):
@@ -62,6 +69,28 @@ class PolicyAction:
         :type category: str
         """
         self._category = category
+
+    @property
+    def followed_action_id(self):
+        """Gets the followed_action_id of this PolicyAction.
+
+        攻击惩罚规则ID
+
+        :return: The followed_action_id of this PolicyAction.
+        :rtype: str
+        """
+        return self._followed_action_id
+
+    @followed_action_id.setter
+    def followed_action_id(self, followed_action_id):
+        """Sets the followed_action_id of this PolicyAction.
+
+        攻击惩罚规则ID
+
+        :param followed_action_id: The followed_action_id of this PolicyAction.
+        :type followed_action_id: str
+        """
+        self._followed_action_id = followed_action_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

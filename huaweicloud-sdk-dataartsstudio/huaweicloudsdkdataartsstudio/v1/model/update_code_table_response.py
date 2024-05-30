@@ -18,7 +18,7 @@ class UpdateCodeTableResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'object'
+        'data': 'CreateCodeTableResultData'
     }
 
     attribute_map = {
@@ -30,8 +30,8 @@ class UpdateCodeTableResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: 返回的数据信息。
-        :type data: object
+        :param data: 
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.CreateCodeTableResultData`
         """
         
         super(UpdateCodeTableResponse, self).__init__()
@@ -46,10 +46,8 @@ class UpdateCodeTableResponse(SdkResponse):
     def data(self):
         """Gets the data of this UpdateCodeTableResponse.
 
-        返回的数据信息。
-
         :return: The data of this UpdateCodeTableResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateCodeTableResultData`
         """
         return self._data
 
@@ -57,10 +55,8 @@ class UpdateCodeTableResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this UpdateCodeTableResponse.
 
-        返回的数据信息。
-
         :param data: The data of this UpdateCodeTableResponse.
-        :type data: object
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.CreateCodeTableResultData`
         """
         self._data = data
 

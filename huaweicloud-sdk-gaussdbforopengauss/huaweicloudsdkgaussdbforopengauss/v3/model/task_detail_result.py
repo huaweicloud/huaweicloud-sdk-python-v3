@@ -22,6 +22,8 @@ class TaskDetailResult:
         'name': 'str',
         'status': 'str',
         'process': 'str',
+        'created_at': 'str',
+        'ended_at': 'str',
         'fail_reason': 'str'
     }
 
@@ -31,10 +33,12 @@ class TaskDetailResult:
         'name': 'name',
         'status': 'status',
         'process': 'process',
+        'created_at': 'created_at',
+        'ended_at': 'ended_at',
         'fail_reason': 'fail_reason'
     }
 
-    def __init__(self, instance_info=None, job_id=None, name=None, status=None, process=None, fail_reason=None):
+    def __init__(self, instance_info=None, job_id=None, name=None, status=None, process=None, created_at=None, ended_at=None, fail_reason=None):
         """TaskDetailResult
 
         The model defined in huaweicloud sdk
@@ -49,6 +53,10 @@ class TaskDetailResult:
         :type status: str
         :param process: 任务进度，单位：%。
         :type process: str
+        :param created_at: 创建时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :type created_at: str
+        :param ended_at: 结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :type ended_at: str
         :param fail_reason: 失败原因。
         :type fail_reason: str
         """
@@ -60,6 +68,8 @@ class TaskDetailResult:
         self._name = None
         self._status = None
         self._process = None
+        self._created_at = None
+        self._ended_at = None
         self._fail_reason = None
         self.discriminator = None
 
@@ -73,6 +83,10 @@ class TaskDetailResult:
             self.status = status
         if process is not None:
             self.process = process
+        if created_at is not None:
+            self.created_at = created_at
+        if ended_at is not None:
+            self.ended_at = ended_at
         if fail_reason is not None:
             self.fail_reason = fail_reason
 
@@ -181,6 +195,50 @@ class TaskDetailResult:
         :type process: str
         """
         self._process = process
+
+    @property
+    def created_at(self):
+        """Gets the created_at of this TaskDetailResult.
+
+        创建时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+
+        :return: The created_at of this TaskDetailResult.
+        :rtype: str
+        """
+        return self._created_at
+
+    @created_at.setter
+    def created_at(self, created_at):
+        """Sets the created_at of this TaskDetailResult.
+
+        创建时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+
+        :param created_at: The created_at of this TaskDetailResult.
+        :type created_at: str
+        """
+        self._created_at = created_at
+
+    @property
+    def ended_at(self):
+        """Gets the ended_at of this TaskDetailResult.
+
+        结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+
+        :return: The ended_at of this TaskDetailResult.
+        :rtype: str
+        """
+        return self._ended_at
+
+    @ended_at.setter
+    def ended_at(self, ended_at):
+        """Sets the ended_at of this TaskDetailResult.
+
+        结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+
+        :param ended_at: The ended_at of this TaskDetailResult.
+        :type ended_at: str
+        """
+        self._ended_at = ended_at
 
     @property
     def fail_reason(self):

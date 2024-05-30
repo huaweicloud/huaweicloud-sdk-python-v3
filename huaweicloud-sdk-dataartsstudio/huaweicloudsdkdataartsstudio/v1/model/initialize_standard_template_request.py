@@ -39,7 +39,7 @@ class InitializeStandardTemplateRequest:
         :type workspace: str
         :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
         :type x_project_id: str
-        :param action_id: action-id&#x3D;init
+        :param action_id: action-id&#x3D;init，初始化数据标准模板时固定参数。
         :type action_id: str
         :param body: Body of the InitializeStandardTemplateRequest
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.StandElementFieldVOList`
@@ -108,7 +108,7 @@ class InitializeStandardTemplateRequest:
     def action_id(self):
         """Gets the action_id of this InitializeStandardTemplateRequest.
 
-        action-id=init
+        action-id=init，初始化数据标准模板时固定参数。
 
         :return: The action_id of this InitializeStandardTemplateRequest.
         :rtype: str
@@ -119,7 +119,7 @@ class InitializeStandardTemplateRequest:
     def action_id(self, action_id):
         """Sets the action_id of this InitializeStandardTemplateRequest.
 
-        action-id=init
+        action-id=init，初始化数据标准模板时固定参数。
 
         :param action_id: The action_id of this InitializeStandardTemplateRequest.
         :type action_id: str

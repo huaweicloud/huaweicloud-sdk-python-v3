@@ -31,7 +31,7 @@ class CatalogEntityVO:
 
         The model defined in huaweicloud sdk
 
-        :param type_name: 类型名称，填写“BusinessCatalog”即可。
+        :param type_name: 类型名称，填写“BusinessCatalog”即可（业务分层）。
         :type type_name: str
         :param attributes: 
         :type attributes: :class:`huaweicloudsdkdataartsstudio.v1.CatalogAttributeVO`
@@ -51,7 +51,7 @@ class CatalogEntityVO:
     def type_name(self):
         """Gets the type_name of this CatalogEntityVO.
 
-        类型名称，填写“BusinessCatalog”即可。
+        类型名称，填写“BusinessCatalog”即可（业务分层）。
 
         :return: The type_name of this CatalogEntityVO.
         :rtype: str
@@ -62,7 +62,7 @@ class CatalogEntityVO:
     def type_name(self, type_name):
         """Sets the type_name of this CatalogEntityVO.
 
-        类型名称，填写“BusinessCatalog”即可。
+        类型名称，填写“BusinessCatalog”即可（业务分层）。
 
         :param type_name: The type_name of this CatalogEntityVO.
         :type type_name: str

@@ -18,11 +18,17 @@ class StandElementFieldVO:
 
     openapi_types = {
         'fd_name': 'str',
+        'fd_name_en': 'str',
         'description': 'str',
-        'id': 'int',
+        'description_en': 'str',
+        'label': 'str',
+        'disabled': 'bool',
+        'id': 'str',
         'actived': 'bool',
         'required': 'bool',
         'searchable': 'bool',
+        'optional_values': 'str',
+        'field_type': 'int',
         'displayed_name': 'str',
         'displayed_name_en': 'str',
         'create_time': 'datetime',
@@ -33,11 +39,17 @@ class StandElementFieldVO:
 
     attribute_map = {
         'fd_name': 'fd_name',
+        'fd_name_en': 'fd_name_en',
         'description': 'description',
+        'description_en': 'descriptionEn',
+        'label': 'label',
+        'disabled': 'disabled',
         'id': 'id',
         'actived': 'actived',
         'required': 'required',
         'searchable': 'searchable',
+        'optional_values': 'optional_values',
+        'field_type': 'field_type',
         'displayed_name': 'displayed_name',
         'displayed_name_en': 'displayed_name_en',
         'create_time': 'create_time',
@@ -46,30 +58,42 @@ class StandElementFieldVO:
         'update_by': 'update_by'
     }
 
-    def __init__(self, fd_name=None, description=None, id=None, actived=None, required=None, searchable=None, displayed_name=None, displayed_name_en=None, create_time=None, update_time=None, create_by=None, update_by=None):
+    def __init__(self, fd_name=None, fd_name_en=None, description=None, description_en=None, label=None, disabled=None, id=None, actived=None, required=None, searchable=None, optional_values=None, field_type=None, displayed_name=None, displayed_name_en=None, create_time=None, update_time=None, create_by=None, update_by=None):
         """StandElementFieldVO
 
         The model defined in huaweicloud sdk
 
         :param fd_name: 属性名称。
         :type fd_name: str
+        :param fd_name_en: 属性英文名称。
+        :type fd_name_en: str
         :param description: 属性描述。
         :type description: str
-        :param id: 数据标准ID。
-        :type id: int
-        :param actived: 是否显示，系统默认项必然显示不允许修改。
+        :param description_en: 属性英文描述。
+        :type description_en: str
+        :param label: 属性标签。
+        :type label: str
+        :param disabled: 是否禁用。
+        :type disabled: bool
+        :param id: 数据标准ID，填写String类型替代Long类型。
+        :type id: str
+        :param actived: 是否显示，系统默认项必然显示不允许修改。true表示使用数据标准时体现（增改查的时候可以操作该属性），false表示使用数据标准时不体现。
         :type actived: bool
-        :param required: 是否必填。
+        :param required: 是否必填。true：必填，false：非必填。
         :type required: bool
-        :param searchable: 是否可搜索。
+        :param searchable: 是否可搜索。true表示在数据标准列表页面可搜索，false表示在数据标准列表页面不可搜索。
         :type searchable: bool
+        :param optional_values: 允许值。
+        :type optional_values: str
+        :param field_type: 字段类型，0表示系统字段， 1表示自定义字段。
+        :type field_type: int
         :param displayed_name: 前端展示名。
         :type displayed_name: str
         :param displayed_name_en: 前端展示名英文。
         :type displayed_name_en: str
-        :param create_time: 创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        :param create_time: 创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
-        :param update_time: 更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        :param update_time: 更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type update_time: datetime
         :param create_by: 创建人。
         :type create_by: str
@@ -80,11 +104,17 @@ class StandElementFieldVO:
         
 
         self._fd_name = None
+        self._fd_name_en = None
         self._description = None
+        self._description_en = None
+        self._label = None
+        self._disabled = None
         self._id = None
         self._actived = None
         self._required = None
         self._searchable = None
+        self._optional_values = None
+        self._field_type = None
         self._displayed_name = None
         self._displayed_name_en = None
         self._create_time = None
@@ -94,8 +124,16 @@ class StandElementFieldVO:
         self.discriminator = None
 
         self.fd_name = fd_name
+        if fd_name_en is not None:
+            self.fd_name_en = fd_name_en
         if description is not None:
             self.description = description
+        if description_en is not None:
+            self.description_en = description_en
+        if label is not None:
+            self.label = label
+        if disabled is not None:
+            self.disabled = disabled
         if id is not None:
             self.id = id
         self.actived = actived
@@ -103,6 +141,10 @@ class StandElementFieldVO:
             self.required = required
         if searchable is not None:
             self.searchable = searchable
+        if optional_values is not None:
+            self.optional_values = optional_values
+        if field_type is not None:
+            self.field_type = field_type
         if displayed_name is not None:
             self.displayed_name = displayed_name
         if displayed_name_en is not None:
@@ -139,6 +181,28 @@ class StandElementFieldVO:
         self._fd_name = fd_name
 
     @property
+    def fd_name_en(self):
+        """Gets the fd_name_en of this StandElementFieldVO.
+
+        属性英文名称。
+
+        :return: The fd_name_en of this StandElementFieldVO.
+        :rtype: str
+        """
+        return self._fd_name_en
+
+    @fd_name_en.setter
+    def fd_name_en(self, fd_name_en):
+        """Sets the fd_name_en of this StandElementFieldVO.
+
+        属性英文名称。
+
+        :param fd_name_en: The fd_name_en of this StandElementFieldVO.
+        :type fd_name_en: str
+        """
+        self._fd_name_en = fd_name_en
+
+    @property
     def description(self):
         """Gets the description of this StandElementFieldVO.
 
@@ -161,13 +225,79 @@ class StandElementFieldVO:
         self._description = description
 
     @property
+    def description_en(self):
+        """Gets the description_en of this StandElementFieldVO.
+
+        属性英文描述。
+
+        :return: The description_en of this StandElementFieldVO.
+        :rtype: str
+        """
+        return self._description_en
+
+    @description_en.setter
+    def description_en(self, description_en):
+        """Sets the description_en of this StandElementFieldVO.
+
+        属性英文描述。
+
+        :param description_en: The description_en of this StandElementFieldVO.
+        :type description_en: str
+        """
+        self._description_en = description_en
+
+    @property
+    def label(self):
+        """Gets the label of this StandElementFieldVO.
+
+        属性标签。
+
+        :return: The label of this StandElementFieldVO.
+        :rtype: str
+        """
+        return self._label
+
+    @label.setter
+    def label(self, label):
+        """Sets the label of this StandElementFieldVO.
+
+        属性标签。
+
+        :param label: The label of this StandElementFieldVO.
+        :type label: str
+        """
+        self._label = label
+
+    @property
+    def disabled(self):
+        """Gets the disabled of this StandElementFieldVO.
+
+        是否禁用。
+
+        :return: The disabled of this StandElementFieldVO.
+        :rtype: bool
+        """
+        return self._disabled
+
+    @disabled.setter
+    def disabled(self, disabled):
+        """Sets the disabled of this StandElementFieldVO.
+
+        是否禁用。
+
+        :param disabled: The disabled of this StandElementFieldVO.
+        :type disabled: bool
+        """
+        self._disabled = disabled
+
+    @property
     def id(self):
         """Gets the id of this StandElementFieldVO.
 
-        数据标准ID。
+        数据标准ID，填写String类型替代Long类型。
 
         :return: The id of this StandElementFieldVO.
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -175,10 +305,10 @@ class StandElementFieldVO:
     def id(self, id):
         """Sets the id of this StandElementFieldVO.
 
-        数据标准ID。
+        数据标准ID，填写String类型替代Long类型。
 
         :param id: The id of this StandElementFieldVO.
-        :type id: int
+        :type id: str
         """
         self._id = id
 
@@ -186,7 +316,7 @@ class StandElementFieldVO:
     def actived(self):
         """Gets the actived of this StandElementFieldVO.
 
-        是否显示，系统默认项必然显示不允许修改。
+        是否显示，系统默认项必然显示不允许修改。true表示使用数据标准时体现（增改查的时候可以操作该属性），false表示使用数据标准时不体现。
 
         :return: The actived of this StandElementFieldVO.
         :rtype: bool
@@ -197,7 +327,7 @@ class StandElementFieldVO:
     def actived(self, actived):
         """Sets the actived of this StandElementFieldVO.
 
-        是否显示，系统默认项必然显示不允许修改。
+        是否显示，系统默认项必然显示不允许修改。true表示使用数据标准时体现（增改查的时候可以操作该属性），false表示使用数据标准时不体现。
 
         :param actived: The actived of this StandElementFieldVO.
         :type actived: bool
@@ -208,7 +338,7 @@ class StandElementFieldVO:
     def required(self):
         """Gets the required of this StandElementFieldVO.
 
-        是否必填。
+        是否必填。true：必填，false：非必填。
 
         :return: The required of this StandElementFieldVO.
         :rtype: bool
@@ -219,7 +349,7 @@ class StandElementFieldVO:
     def required(self, required):
         """Sets the required of this StandElementFieldVO.
 
-        是否必填。
+        是否必填。true：必填，false：非必填。
 
         :param required: The required of this StandElementFieldVO.
         :type required: bool
@@ -230,7 +360,7 @@ class StandElementFieldVO:
     def searchable(self):
         """Gets the searchable of this StandElementFieldVO.
 
-        是否可搜索。
+        是否可搜索。true表示在数据标准列表页面可搜索，false表示在数据标准列表页面不可搜索。
 
         :return: The searchable of this StandElementFieldVO.
         :rtype: bool
@@ -241,12 +371,56 @@ class StandElementFieldVO:
     def searchable(self, searchable):
         """Sets the searchable of this StandElementFieldVO.
 
-        是否可搜索。
+        是否可搜索。true表示在数据标准列表页面可搜索，false表示在数据标准列表页面不可搜索。
 
         :param searchable: The searchable of this StandElementFieldVO.
         :type searchable: bool
         """
         self._searchable = searchable
+
+    @property
+    def optional_values(self):
+        """Gets the optional_values of this StandElementFieldVO.
+
+        允许值。
+
+        :return: The optional_values of this StandElementFieldVO.
+        :rtype: str
+        """
+        return self._optional_values
+
+    @optional_values.setter
+    def optional_values(self, optional_values):
+        """Sets the optional_values of this StandElementFieldVO.
+
+        允许值。
+
+        :param optional_values: The optional_values of this StandElementFieldVO.
+        :type optional_values: str
+        """
+        self._optional_values = optional_values
+
+    @property
+    def field_type(self):
+        """Gets the field_type of this StandElementFieldVO.
+
+        字段类型，0表示系统字段， 1表示自定义字段。
+
+        :return: The field_type of this StandElementFieldVO.
+        :rtype: int
+        """
+        return self._field_type
+
+    @field_type.setter
+    def field_type(self, field_type):
+        """Sets the field_type of this StandElementFieldVO.
+
+        字段类型，0表示系统字段， 1表示自定义字段。
+
+        :param field_type: The field_type of this StandElementFieldVO.
+        :type field_type: int
+        """
+        self._field_type = field_type
 
     @property
     def displayed_name(self):
@@ -296,7 +470,7 @@ class StandElementFieldVO:
     def create_time(self):
         """Gets the create_time of this StandElementFieldVO.
 
-        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The create_time of this StandElementFieldVO.
         :rtype: datetime
@@ -307,7 +481,7 @@ class StandElementFieldVO:
     def create_time(self, create_time):
         """Sets the create_time of this StandElementFieldVO.
 
-        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param create_time: The create_time of this StandElementFieldVO.
         :type create_time: datetime
@@ -318,7 +492,7 @@ class StandElementFieldVO:
     def update_time(self):
         """Gets the update_time of this StandElementFieldVO.
 
-        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The update_time of this StandElementFieldVO.
         :rtype: datetime
@@ -329,7 +503,7 @@ class StandElementFieldVO:
     def update_time(self, update_time):
         """Sets the update_time of this StandElementFieldVO.
 
-        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param update_time: The update_time of this StandElementFieldVO.
         :type update_time: datetime

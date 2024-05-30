@@ -17,11 +17,13 @@ class MetricMonitorVO:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'int',
-        'other_metric_ids': 'list[int]',
+        'id': 'str',
+        'other_metric_ids': 'list[str]',
         'other_metric_names': 'list[str]',
+        'other_compound_metric_ids': 'list[str]',
+        'other_compound_metric_names': 'list[str]',
         'expression': 'str',
-        'metric_id': 'int',
+        'metric_id': 'str',
         'front_configs': 'str',
         'metric_type': 'BizTypeEnum'
     }
@@ -30,27 +32,33 @@ class MetricMonitorVO:
         'id': 'id',
         'other_metric_ids': 'other_metric_ids',
         'other_metric_names': 'other_metric_names',
+        'other_compound_metric_ids': 'other_compound_metric_ids',
+        'other_compound_metric_names': 'other_compound_metric_names',
         'expression': 'expression',
         'metric_id': 'metric_id',
         'front_configs': 'front_configs',
         'metric_type': 'metric_type'
     }
 
-    def __init__(self, id=None, other_metric_ids=None, other_metric_names=None, expression=None, metric_id=None, front_configs=None, metric_type=None):
+    def __init__(self, id=None, other_metric_ids=None, other_metric_names=None, other_compound_metric_ids=None, other_compound_metric_names=None, expression=None, metric_id=None, front_configs=None, metric_type=None):
         """MetricMonitorVO
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码。
-        :type id: int
-        :param other_metric_ids: 其他指标ID。
-        :type other_metric_ids: list[int]
-        :param other_metric_names: 其他指标名称。
+        :param id: 编码，填写String类型替代Long类型。
+        :type id: str
+        :param other_metric_ids: 其他指标ID，填写String类型替代Long类型。
+        :type other_metric_ids: list[str]
+        :param other_metric_names: 其他指标名称，只读。
         :type other_metric_names: list[str]
+        :param other_compound_metric_ids: 其他复合指标ID。
+        :type other_compound_metric_ids: list[str]
+        :param other_compound_metric_names: 其他复合指标名称。
+        :type other_compound_metric_names: list[str]
         :param expression: 告警表达式。
         :type expression: str
-        :param metric_id: 挂载指ID。
-        :type metric_id: int
+        :param metric_id: 挂载指ID，填写String类型替代Long类型。
+        :type metric_id: str
         :param front_configs: 前端表达式配置，用于前端数据恢复。
         :type front_configs: str
         :param metric_type: 
@@ -62,6 +70,8 @@ class MetricMonitorVO:
         self._id = None
         self._other_metric_ids = None
         self._other_metric_names = None
+        self._other_compound_metric_ids = None
+        self._other_compound_metric_names = None
         self._expression = None
         self._metric_id = None
         self._front_configs = None
@@ -74,6 +84,10 @@ class MetricMonitorVO:
             self.other_metric_ids = other_metric_ids
         if other_metric_names is not None:
             self.other_metric_names = other_metric_names
+        if other_compound_metric_ids is not None:
+            self.other_compound_metric_ids = other_compound_metric_ids
+        if other_compound_metric_names is not None:
+            self.other_compound_metric_names = other_compound_metric_names
         if expression is not None:
             self.expression = expression
         if metric_id is not None:
@@ -87,10 +101,10 @@ class MetricMonitorVO:
     def id(self):
         """Gets the id of this MetricMonitorVO.
 
-        编码。
+        编码，填写String类型替代Long类型。
 
         :return: The id of this MetricMonitorVO.
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -98,10 +112,10 @@ class MetricMonitorVO:
     def id(self, id):
         """Sets the id of this MetricMonitorVO.
 
-        编码。
+        编码，填写String类型替代Long类型。
 
         :param id: The id of this MetricMonitorVO.
-        :type id: int
+        :type id: str
         """
         self._id = id
 
@@ -109,10 +123,10 @@ class MetricMonitorVO:
     def other_metric_ids(self):
         """Gets the other_metric_ids of this MetricMonitorVO.
 
-        其他指标ID。
+        其他指标ID，填写String类型替代Long类型。
 
         :return: The other_metric_ids of this MetricMonitorVO.
-        :rtype: list[int]
+        :rtype: list[str]
         """
         return self._other_metric_ids
 
@@ -120,10 +134,10 @@ class MetricMonitorVO:
     def other_metric_ids(self, other_metric_ids):
         """Sets the other_metric_ids of this MetricMonitorVO.
 
-        其他指标ID。
+        其他指标ID，填写String类型替代Long类型。
 
         :param other_metric_ids: The other_metric_ids of this MetricMonitorVO.
-        :type other_metric_ids: list[int]
+        :type other_metric_ids: list[str]
         """
         self._other_metric_ids = other_metric_ids
 
@@ -131,7 +145,7 @@ class MetricMonitorVO:
     def other_metric_names(self):
         """Gets the other_metric_names of this MetricMonitorVO.
 
-        其他指标名称。
+        其他指标名称，只读。
 
         :return: The other_metric_names of this MetricMonitorVO.
         :rtype: list[str]
@@ -142,12 +156,56 @@ class MetricMonitorVO:
     def other_metric_names(self, other_metric_names):
         """Sets the other_metric_names of this MetricMonitorVO.
 
-        其他指标名称。
+        其他指标名称，只读。
 
         :param other_metric_names: The other_metric_names of this MetricMonitorVO.
         :type other_metric_names: list[str]
         """
         self._other_metric_names = other_metric_names
+
+    @property
+    def other_compound_metric_ids(self):
+        """Gets the other_compound_metric_ids of this MetricMonitorVO.
+
+        其他复合指标ID。
+
+        :return: The other_compound_metric_ids of this MetricMonitorVO.
+        :rtype: list[str]
+        """
+        return self._other_compound_metric_ids
+
+    @other_compound_metric_ids.setter
+    def other_compound_metric_ids(self, other_compound_metric_ids):
+        """Sets the other_compound_metric_ids of this MetricMonitorVO.
+
+        其他复合指标ID。
+
+        :param other_compound_metric_ids: The other_compound_metric_ids of this MetricMonitorVO.
+        :type other_compound_metric_ids: list[str]
+        """
+        self._other_compound_metric_ids = other_compound_metric_ids
+
+    @property
+    def other_compound_metric_names(self):
+        """Gets the other_compound_metric_names of this MetricMonitorVO.
+
+        其他复合指标名称。
+
+        :return: The other_compound_metric_names of this MetricMonitorVO.
+        :rtype: list[str]
+        """
+        return self._other_compound_metric_names
+
+    @other_compound_metric_names.setter
+    def other_compound_metric_names(self, other_compound_metric_names):
+        """Sets the other_compound_metric_names of this MetricMonitorVO.
+
+        其他复合指标名称。
+
+        :param other_compound_metric_names: The other_compound_metric_names of this MetricMonitorVO.
+        :type other_compound_metric_names: list[str]
+        """
+        self._other_compound_metric_names = other_compound_metric_names
 
     @property
     def expression(self):
@@ -175,10 +233,10 @@ class MetricMonitorVO:
     def metric_id(self):
         """Gets the metric_id of this MetricMonitorVO.
 
-        挂载指ID。
+        挂载指ID，填写String类型替代Long类型。
 
         :return: The metric_id of this MetricMonitorVO.
-        :rtype: int
+        :rtype: str
         """
         return self._metric_id
 
@@ -186,10 +244,10 @@ class MetricMonitorVO:
     def metric_id(self, metric_id):
         """Sets the metric_id of this MetricMonitorVO.
 
-        挂载指ID。
+        挂载指ID，填写String类型替代Long类型。
 
         :param metric_id: The metric_id of this MetricMonitorVO.
-        :type metric_id: int
+        :type metric_id: str
         """
         self._metric_id = metric_id
 

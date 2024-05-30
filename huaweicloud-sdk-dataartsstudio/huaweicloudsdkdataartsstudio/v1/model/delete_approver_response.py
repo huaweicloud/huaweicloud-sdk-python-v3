@@ -18,7 +18,7 @@ class DeleteApproverResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'object'
+        'data': 'DeleteResultData'
     }
 
     attribute_map = {
@@ -30,8 +30,8 @@ class DeleteApproverResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: 返回的数据信息。
-        :type data: object
+        :param data: 
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.DeleteResultData`
         """
         
         super(DeleteApproverResponse, self).__init__()
@@ -46,10 +46,8 @@ class DeleteApproverResponse(SdkResponse):
     def data(self):
         """Gets the data of this DeleteApproverResponse.
 
-        返回的数据信息。
-
         :return: The data of this DeleteApproverResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteResultData`
         """
         return self._data
 
@@ -57,10 +55,8 @@ class DeleteApproverResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this DeleteApproverResponse.
 
-        返回的数据信息。
-
         :param data: The data of this DeleteApproverResponse.
-        :type data: object
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.DeleteResultData`
         """
         self._data = data
 

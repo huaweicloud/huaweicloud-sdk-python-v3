@@ -17,8 +17,8 @@ class CodeTableFieldVO:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'int',
-        'code_table_id': 'int',
+        'id': 'str',
+        'code_table_id': 'str',
         'ordinal': 'int',
         'name_en': 'str',
         'name_ch': 'str',
@@ -51,10 +51,10 @@ class CodeTableFieldVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 码表字段ID。
-        :type id: int
-        :param code_table_id: 所属码表ID。
-        :type code_table_id: int
+        :param id: 码表字段ID，填写String类型替代Long类型。
+        :type id: str
+        :param code_table_id: 所属码表ID，填写String类型替代Long类型。
+        :type code_table_id: str
         :param ordinal: 序号。
         :type ordinal: int
         :param name_en: 字段名，英文。
@@ -118,10 +118,10 @@ class CodeTableFieldVO:
     def id(self):
         """Gets the id of this CodeTableFieldVO.
 
-        码表字段ID。
+        码表字段ID，填写String类型替代Long类型。
 
         :return: The id of this CodeTableFieldVO.
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -129,10 +129,10 @@ class CodeTableFieldVO:
     def id(self, id):
         """Sets the id of this CodeTableFieldVO.
 
-        码表字段ID。
+        码表字段ID，填写String类型替代Long类型。
 
         :param id: The id of this CodeTableFieldVO.
-        :type id: int
+        :type id: str
         """
         self._id = id
 
@@ -140,10 +140,10 @@ class CodeTableFieldVO:
     def code_table_id(self):
         """Gets the code_table_id of this CodeTableFieldVO.
 
-        所属码表ID。
+        所属码表ID，填写String类型替代Long类型。
 
         :return: The code_table_id of this CodeTableFieldVO.
-        :rtype: int
+        :rtype: str
         """
         return self._code_table_id
 
@@ -151,10 +151,10 @@ class CodeTableFieldVO:
     def code_table_id(self, code_table_id):
         """Sets the code_table_id of this CodeTableFieldVO.
 
-        所属码表ID。
+        所属码表ID，填写String类型替代Long类型。
 
         :param code_table_id: The code_table_id of this CodeTableFieldVO.
-        :type code_table_id: int
+        :type code_table_id: str
         """
         self._code_table_id = code_table_id
 

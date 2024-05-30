@@ -38,7 +38,7 @@ class ListCostsResponse(SdkResponse):
         :type currency: str
         :param total_count: 总条数。
         :type total_count: int
-        :param cost_data: 按天或按月的明细金额。
+        :param cost_data: 按天或按月的明细金额，具体请参见表 CostDataByDimension。
         :type cost_data: list[:class:`huaweicloudsdkbss.v2.CostDataByDimension`]
         """
         
@@ -104,7 +104,7 @@ class ListCostsResponse(SdkResponse):
     def cost_data(self):
         """Gets the cost_data of this ListCostsResponse.
 
-        按天或按月的明细金额。
+        按天或按月的明细金额，具体请参见表 CostDataByDimension。
 
         :return: The cost_data of this ListCostsResponse.
         :rtype: list[:class:`huaweicloudsdkbss.v2.CostDataByDimension`]
@@ -115,7 +115,7 @@ class ListCostsResponse(SdkResponse):
     def cost_data(self, cost_data):
         """Sets the cost_data of this ListCostsResponse.
 
-        按天或按月的明细金额。
+        按天或按月的明细金额，具体请参见表 CostDataByDimension。
 
         :param cost_data: The cost_data of this ListCostsResponse.
         :type cost_data: list[:class:`huaweicloudsdkbss.v2.CostDataByDimension`]

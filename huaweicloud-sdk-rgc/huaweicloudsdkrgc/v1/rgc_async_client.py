@@ -162,7 +162,7 @@ class RgcAsyncClient(Client):
 
         return http_info
 
-    def list_controls_for_organization_unit_async(self, request):
+    def list_controls_for_organizational_unit_async(self, request):
         """列出注册OU下开启的控制策略
 
         列出组织里某个注册OU开启的所有控制策略信息。
@@ -170,23 +170,23 @@ class RgcAsyncClient(Client):
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for ListControlsForOrganizationUnit
-        :type request: :class:`huaweicloudsdkrgc.v1.ListControlsForOrganizationUnitRequest`
-        :rtype: :class:`huaweicloudsdkrgc.v1.ListControlsForOrganizationUnitResponse`
+        :param request: Request instance for ListControlsForOrganizationalUnit
+        :type request: :class:`huaweicloudsdkrgc.v1.ListControlsForOrganizationalUnitRequest`
+        :rtype: :class:`huaweicloudsdkrgc.v1.ListControlsForOrganizationalUnitResponse`
         """
-        http_info = self._list_controls_for_organization_unit_http_info(request)
+        http_info = self._list_controls_for_organizational_unit_http_info(request)
         return self._call_api(**http_info)
 
-    def list_controls_for_organization_unit_async_invoker(self, request):
-        http_info = self._list_controls_for_organization_unit_http_info(request)
+    def list_controls_for_organizational_unit_async_invoker(self, request):
+        http_info = self._list_controls_for_organizational_unit_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _list_controls_for_organization_unit_http_info(self, request):
+    def _list_controls_for_organizational_unit_http_info(self, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v1/governance/managed-organization-units/{managed_organization_unit_id}/controls",
+            "resource_path": "/v1/governance/managed-organizational-units/{managed_organizational_unit_id}/controls",
             "request_type": request.__class__.__name__,
-            "response_type": "ListControlsForOrganizationUnitResponse"
+            "response_type": "ListControlsForOrganizationalUnitResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -196,8 +196,8 @@ class RgcAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'managed_organization_unit_id' in local_var_params:
-            path_params['managed_organization_unit_id'] = local_var_params['managed_organization_unit_id']
+        if 'managed_organizational_unit_id' in local_var_params:
+            path_params['managed_organizational_unit_id'] = local_var_params['managed_organizational_unit_id']
 
         query_params = []
         if 'limit' in local_var_params:

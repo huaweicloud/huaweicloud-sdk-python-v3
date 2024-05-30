@@ -18,7 +18,7 @@ class SearchApprovalsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'object'
+        'data': 'SearchApprovalsResultData'
     }
 
     attribute_map = {
@@ -30,8 +30,8 @@ class SearchApprovalsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: 返回的数据信息。
-        :type data: object
+        :param data: 
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.SearchApprovalsResultData`
         """
         
         super(SearchApprovalsResponse, self).__init__()
@@ -46,10 +46,8 @@ class SearchApprovalsResponse(SdkResponse):
     def data(self):
         """Gets the data of this SearchApprovalsResponse.
 
-        返回的数据信息。
-
         :return: The data of this SearchApprovalsResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SearchApprovalsResultData`
         """
         return self._data
 
@@ -57,10 +55,8 @@ class SearchApprovalsResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this SearchApprovalsResponse.
 
-        返回的数据信息。
-
         :param data: The data of this SearchApprovalsResponse.
-        :type data: object
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.SearchApprovalsResultData`
         """
         self._data = data
 

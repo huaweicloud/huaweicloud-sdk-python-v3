@@ -18,29 +18,36 @@ class UpdateInstanceConfigurationResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'restart_required': 'bool'
+        'restart_required': 'bool',
+        'job_id': 'str'
     }
 
     attribute_map = {
-        'restart_required': 'restart_required'
+        'restart_required': 'restart_required',
+        'job_id': 'job_id'
     }
 
-    def __init__(self, restart_required=None):
+    def __init__(self, restart_required=None, job_id=None):
         """UpdateInstanceConfigurationResponse
 
         The model defined in huaweicloud sdk
 
         :param restart_required: 实例是否需要重启。  - “true”需要重启。 - “false”不需要重启。
         :type restart_required: bool
+        :param job_id: 修改指定实例参数的任务ID。
+        :type job_id: str
         """
         
         super(UpdateInstanceConfigurationResponse, self).__init__()
 
         self._restart_required = None
+        self._job_id = None
         self.discriminator = None
 
         if restart_required is not None:
             self.restart_required = restart_required
+        if job_id is not None:
+            self.job_id = job_id
 
     @property
     def restart_required(self):
@@ -63,6 +70,28 @@ class UpdateInstanceConfigurationResponse(SdkResponse):
         :type restart_required: bool
         """
         self._restart_required = restart_required
+
+    @property
+    def job_id(self):
+        """Gets the job_id of this UpdateInstanceConfigurationResponse.
+
+        修改指定实例参数的任务ID。
+
+        :return: The job_id of this UpdateInstanceConfigurationResponse.
+        :rtype: str
+        """
+        return self._job_id
+
+    @job_id.setter
+    def job_id(self, job_id):
+        """Sets the job_id of this UpdateInstanceConfigurationResponse.
+
+        修改指定实例参数的任务ID。
+
+        :param job_id: The job_id of this UpdateInstanceConfigurationResponse.
+        :type job_id: str
+        """
+        self._job_id = job_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

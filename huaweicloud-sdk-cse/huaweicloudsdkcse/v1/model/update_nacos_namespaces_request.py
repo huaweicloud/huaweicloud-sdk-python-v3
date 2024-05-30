@@ -37,7 +37,7 @@ class UpdateNacosNamespacesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_engine_id: 微服务引擎专享版的实例ID
+        :param x_engine_id: 微服务引擎的实例ID
         :type x_engine_id: str
         :param x_enterprise_project_id: 企业项目ID
         :type x_enterprise_project_id: str
@@ -68,7 +68,7 @@ class UpdateNacosNamespacesRequest:
     def x_engine_id(self):
         """Gets the x_engine_id of this UpdateNacosNamespacesRequest.
 
-        微服务引擎专享版的实例ID
+        微服务引擎的实例ID
 
         :return: The x_engine_id of this UpdateNacosNamespacesRequest.
         :rtype: str
@@ -79,7 +79,7 @@ class UpdateNacosNamespacesRequest:
     def x_engine_id(self, x_engine_id):
         """Sets the x_engine_id of this UpdateNacosNamespacesRequest.
 
-        微服务引擎专享版的实例ID
+        微服务引擎的实例ID
 
         :param x_engine_id: The x_engine_id of this UpdateNacosNamespacesRequest.
         :type x_engine_id: str

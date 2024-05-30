@@ -39,7 +39,7 @@ class UploadKieRequest:
 
         :param x_enterprise_project_id: 如果不带则默认企业项目为\&quot;default\&quot;，ID为\&quot;0\&quot;
         :type x_enterprise_project_id: str
-        :param x_engine_id: 微服务引擎专享版ID。
+        :param x_engine_id: 微服务引擎ID。
         :type x_engine_id: str
         :param override: 覆盖策略，force 强制覆盖、abort 遇到第一个重复时终止导入后续的kv、skip 跳过重复的key
         :type override: str
@@ -93,7 +93,7 @@ class UploadKieRequest:
     def x_engine_id(self):
         """Gets the x_engine_id of this UploadKieRequest.
 
-        微服务引擎专享版ID。
+        微服务引擎ID。
 
         :return: The x_engine_id of this UploadKieRequest.
         :rtype: str
@@ -104,7 +104,7 @@ class UploadKieRequest:
     def x_engine_id(self, x_engine_id):
         """Sets the x_engine_id of this UploadKieRequest.
 
-        微服务引擎专享版ID。
+        微服务引擎ID。
 
         :param x_engine_id: The x_engine_id of this UploadKieRequest.
         :type x_engine_id: str

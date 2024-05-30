@@ -17,8 +17,8 @@ class MappingJoinFieldVO:
     sensitive_list = []
 
     openapi_types = {
-        'field1_id': 'int',
-        'field2_id': 'int',
+        'field1_id': 'str',
+        'field2_id': 'str',
         'field1_name': 'str',
         'field2_name': 'str'
     }
@@ -35,10 +35,10 @@ class MappingJoinFieldVO:
 
         The model defined in huaweicloud sdk
 
-        :param field1_id: 属性1ID。
-        :type field1_id: int
-        :param field2_id: 属性2ID。
-        :type field2_id: int
+        :param field1_id: 属性1ID，填写String类型替代Long类型。
+        :type field1_id: str
+        :param field2_id: 属性2ID，填写String类型替代Long类型。
+        :type field2_id: str
         :param field1_name: 属性1名称。
         :type field1_name: str
         :param field2_name: 属性2名称。
@@ -62,10 +62,10 @@ class MappingJoinFieldVO:
     def field1_id(self):
         """Gets the field1_id of this MappingJoinFieldVO.
 
-        属性1ID。
+        属性1ID，填写String类型替代Long类型。
 
         :return: The field1_id of this MappingJoinFieldVO.
-        :rtype: int
+        :rtype: str
         """
         return self._field1_id
 
@@ -73,10 +73,10 @@ class MappingJoinFieldVO:
     def field1_id(self, field1_id):
         """Sets the field1_id of this MappingJoinFieldVO.
 
-        属性1ID。
+        属性1ID，填写String类型替代Long类型。
 
         :param field1_id: The field1_id of this MappingJoinFieldVO.
-        :type field1_id: int
+        :type field1_id: str
         """
         self._field1_id = field1_id
 
@@ -84,10 +84,10 @@ class MappingJoinFieldVO:
     def field2_id(self):
         """Gets the field2_id of this MappingJoinFieldVO.
 
-        属性2ID。
+        属性2ID，填写String类型替代Long类型。
 
         :return: The field2_id of this MappingJoinFieldVO.
-        :rtype: int
+        :rtype: str
         """
         return self._field2_id
 
@@ -95,10 +95,10 @@ class MappingJoinFieldVO:
     def field2_id(self, field2_id):
         """Sets the field2_id of this MappingJoinFieldVO.
 
-        属性2ID。
+        属性2ID，填写String类型替代Long类型。
 
         :param field2_id: The field2_id of this MappingJoinFieldVO.
-        :type field2_id: int
+        :type field2_id: str
         """
         self._field2_id = field2_id
 

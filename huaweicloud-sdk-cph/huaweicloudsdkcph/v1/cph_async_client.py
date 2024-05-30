@@ -32,6 +32,74 @@ class CphAsyncClient(Client):
 
         return client_builder
 
+    def add_image_member_async(self, request):
+        """共享镜像给指定账号
+
+        镜像共享,共享镜像给指定账号。
+        - 镜像只能共享给同region下的其他华为云账号(project_id)。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AddImageMember
+        :type request: :class:`huaweicloudsdkcph.v1.AddImageMemberRequest`
+        :rtype: :class:`huaweicloudsdkcph.v1.AddImageMemberResponse`
+        """
+        http_info = self._add_image_member_http_info(request)
+        return self._call_api(**http_info)
+
+    def add_image_member_async_invoker(self, request):
+        http_info = self._add_image_member_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_image_member_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloud-phone/images/{image_id}/members",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddImageMemberResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'image_id' in local_var_params:
+            path_params['image_id'] = local_var_params['image_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_create_tags_async(self, request):
         """批量添加标签
 
@@ -262,6 +330,71 @@ class CphAsyncClient(Client):
             "resource_path": "/v1/{project_id}/cloud-phone/phones/batch-restore",
             "request_type": request.__class__.__name__,
             "response_type": "BatchImportCloudPhoneDataResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_show_phone_connect_infos_async(self, request):
+        """获取云手机连接信息
+
+        获取云手机连接信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchShowPhoneConnectInfos
+        :type request: :class:`huaweicloudsdkcph.v1.BatchShowPhoneConnectInfosRequest`
+        :rtype: :class:`huaweicloudsdkcph.v1.BatchShowPhoneConnectInfosResponse`
+        """
+        http_info = self._batch_show_phone_connect_infos_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_show_phone_connect_infos_async_invoker(self, request):
+        http_info = self._batch_show_phone_connect_infos_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_show_phone_connect_infos_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloud-phone/phones/batch-connection",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchShowPhoneConnectInfosResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -570,6 +703,138 @@ class CphAsyncClient(Client):
 
         return http_info
 
+    def delete_image_async(self, request):
+        """删除镜像
+
+        删除镜像
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteImage
+        :type request: :class:`huaweicloudsdkcph.v1.DeleteImageRequest`
+        :rtype: :class:`huaweicloudsdkcph.v1.DeleteImageResponse`
+        """
+        http_info = self._delete_image_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_image_async_invoker(self, request):
+        http_info = self._delete_image_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_image_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/cloud-phone/images/{image_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteImageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'image_id' in local_var_params:
+            path_params['image_id'] = local_var_params['image_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_image_member_async(self, request):
+        """删除共享镜像
+
+        删除共享镜像
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteImageMember
+        :type request: :class:`huaweicloudsdkcph.v1.DeleteImageMemberRequest`
+        :rtype: :class:`huaweicloudsdkcph.v1.DeleteImageMemberResponse`
+        """
+        http_info = self._delete_image_member_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_image_member_async_invoker(self, request):
+        http_info = self._delete_image_member_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_image_member_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/cloud-phone/images/{image_id}/members/{member_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteImageMemberResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'image_id' in local_var_params:
+            path_params['image_id'] = local_var_params['image_id']
+        if 'member_id' in local_var_params:
+            path_params['member_id'] = local_var_params['member_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_share_apps_async(self, request):
         """删除共享应用
 
@@ -801,6 +1066,8 @@ class CphAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'image_type' in local_var_params:
+            query_params.append(('image_type', local_var_params['image_type']))
 
         header_params = {}
 
@@ -1164,6 +1431,154 @@ class CphAsyncClient(Client):
             query_params.append(('status', local_var_params['status']))
         if 'server_id' in local_var_params:
             query_params.append(('server_id', local_var_params['server_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_image_members_async(self, request):
+        """获取镜像已共享账号列表
+
+        获取镜像已共享账号列表
+        - 路径中的project_id为共享账号的租户id
+        - 路径中的image_id为共享账号的镜像id
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListImageMembers
+        :type request: :class:`huaweicloudsdkcph.v1.ListImageMembersRequest`
+        :rtype: :class:`huaweicloudsdkcph.v1.ListImageMembersResponse`
+        """
+        http_info = self._list_image_members_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_image_members_async_invoker(self, request):
+        http_info = self._list_image_members_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_image_members_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cloud-phone/images/{image_id}/members",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListImageMembersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'image_id' in local_var_params:
+            path_params['image_id'] = local_var_params['image_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_images_async(self, request):
+        """查询镜像列表
+
+        查询镜像列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListImages
+        :type request: :class:`huaweicloudsdkcph.v1.ListImagesRequest`
+        :rtype: :class:`huaweicloudsdkcph.v1.ListImagesResponse`
+        """
+        http_info = self._list_images_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_images_async_invoker(self, request):
+        http_info = self._list_images_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_images_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cloud-phone/images",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListImagesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'image_type' in local_var_params:
+            query_params.append(('image_type', local_var_params['image_type']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'image_id' in local_var_params:
+            query_params.append(('image_id', local_var_params['image_id']))
+        if 'image_name' in local_var_params:
+            query_params.append(('image_name', local_var_params['image_name']))
+        if 'create_since' in local_var_params:
+            query_params.append(('create_since', local_var_params['create_since']))
+        if 'create_until' in local_var_params:
+            query_params.append(('create_until', local_var_params['create_until']))
+        if 'src_project_id' in local_var_params:
+            query_params.append(('src_project_id', local_var_params['src_project_id']))
 
         header_params = {}
 
@@ -1927,7 +2342,7 @@ class CphAsyncClient(Client):
     def show_bandwidth_detail_async(self, request):
         """查询带宽信息
 
-        查询云手机使用的带宽信息。
+        查询云手机使用的带宽信息，本接口只适用于使用系统定义网络的服务器。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2254,7 +2669,7 @@ class CphAsyncClient(Client):
     def update_bandwidth_async(self, request):
         """修改共享带宽
 
-        修改云手机使用的共享带宽大小。
+        修改云手机使用的共享带宽大小，本接口只适用于使用系统定义网络的服务器。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2586,7 +3001,7 @@ class CphAsyncClient(Client):
         """安装apk
 
         在云手机中安装apk。系统会将指定的apk文件下载后直接安装到云手机中。
-        支持安装单apk应用和多apk应用。可使用install命令安装单apk应用，一次只支持安装一个apk；可使用install-multiple命令安装多apk应用（多apk应用为单个应用拆分成多个apk），一次只支持同一个应用的多个apk。该接口为异步接口。[接口调用前请先确保已完成CPH服务操作OBS桶的委托授权。委托CPH操作OBS桶请参见[委托CPH操作OBS桶](https://support.huaweicloud.com/bestpractice-cph/cph_bp_0050.html)。](tag:hws)
+        支持安装单apk应用和多apk应用。可使用install命令安装单apk应用，一次只支持安装一个apk，如果一次传多个apk只有第一个安装成功；可使用install-multiple命令安装多apk应用（多apk应用为单个应用拆分成多个apk），一次只支持同一个应用的多个apk。该接口为异步接口。[接口调用前请先确保已完成CPH服务操作OBS桶的委托授权。委托CPH操作OBS桶请参见[委托CPH操作OBS桶](https://support.huaweicloud.com/bestpractice-cph/cph_bp_0050.html)。](tag:hws)
         - 管理面性能有限，对相同服务器批量执行的ADB命令，将会阻塞云手机其他任务执行。
         - 建议通过开发应用市场的方式安装apk。允许安装的apk大小限制为2G（即不可将obs桶内大于2G的apk安装到手机中），超过限制将返回错误。
         

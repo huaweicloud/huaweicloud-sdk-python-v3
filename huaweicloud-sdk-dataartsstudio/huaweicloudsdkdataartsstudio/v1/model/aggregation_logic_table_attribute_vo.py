@@ -25,12 +25,15 @@ class AggregationLogicTableAttributeVO:
         'attribute_type': 'BizTypeEnum',
         'is_primary_key': 'bool',
         'is_partition_key': 'bool',
+        'secrecy_levels': 'list[SecrecyLevelVO]',
         'not_null': 'bool',
         'description': 'str',
         'data_type': 'str',
         'domain_type': 'DataTypeDomainEnum',
         'data_type_extend': 'str',
         'ref_id': 'str',
+        'ref_name_ch': 'str',
+        'ref_name_en': 'str',
         'stand_row_id': 'str',
         'stand_row_name': 'str',
         'quality_infos': 'list[QualityInfoVO]',
@@ -46,26 +49,29 @@ class AggregationLogicTableAttributeVO:
         'attribute_type': 'attribute_type',
         'is_primary_key': 'is_primary_key',
         'is_partition_key': 'is_partition_key',
+        'secrecy_levels': 'secrecy_levels',
         'not_null': 'not_null',
         'description': 'description',
         'data_type': 'data_type',
         'domain_type': 'domain_type',
         'data_type_extend': 'data_type_extend',
         'ref_id': 'ref_id',
+        'ref_name_ch': 'ref_name_ch',
+        'ref_name_en': 'ref_name_en',
         'stand_row_id': 'stand_row_id',
         'stand_row_name': 'stand_row_name',
         'quality_infos': 'quality_infos',
         'alias': 'alias'
     }
 
-    def __init__(self, id=None, aggregation_logic_table_id=None, ordinal=None, name_en=None, name_ch=None, attribute_type=None, is_primary_key=None, is_partition_key=None, not_null=None, description=None, data_type=None, domain_type=None, data_type_extend=None, ref_id=None, stand_row_id=None, stand_row_name=None, quality_infos=None, alias=None):
+    def __init__(self, id=None, aggregation_logic_table_id=None, ordinal=None, name_en=None, name_ch=None, attribute_type=None, is_primary_key=None, is_partition_key=None, secrecy_levels=None, not_null=None, description=None, data_type=None, domain_type=None, data_type_extend=None, ref_id=None, ref_name_ch=None, ref_name_en=None, stand_row_id=None, stand_row_name=None, quality_infos=None, alias=None):
         """AggregationLogicTableAttributeVO
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码。
+        :param id: 编码，填写String类型替代Long类型。
         :type id: str
-        :param aggregation_logic_table_id: 所属汇总表ID。
+        :param aggregation_logic_table_id: 所属汇总表ID，填写String类型替代Long类型。
         :type aggregation_logic_table_id: str
         :param ordinal: 序号。
         :type ordinal: int
@@ -79,6 +85,8 @@ class AggregationLogicTableAttributeVO:
         :type is_primary_key: bool
         :param is_partition_key: 是否分区键。
         :type is_partition_key: bool
+        :param secrecy_levels: 密级
+        :type secrecy_levels: list[:class:`huaweicloudsdkdataartsstudio.v1.SecrecyLevelVO`]
         :param not_null: 是否不为空。
         :type not_null: bool
         :param description: 描述。
@@ -89,13 +97,17 @@ class AggregationLogicTableAttributeVO:
         :type domain_type: :class:`huaweicloudsdkdataartsstudio.v1.DataTypeDomainEnum`
         :param data_type_extend: 数据类型扩展字段。
         :type data_type_extend: str
-        :param ref_id: 关联ID。
+        :param ref_id: 属性关联对象的id
         :type ref_id: str
-        :param stand_row_id: 关联的数据标准的ID。
+        :param ref_name_ch: 属性关联对象的中文名
+        :type ref_name_ch: str
+        :param ref_name_en: 属性关联对象的英文名
+        :type ref_name_en: str
+        :param stand_row_id: 关联的数据标准的ID，填写String类型替代Long类型。
         :type stand_row_id: str
-        :param stand_row_name: 关联的数据标准名称。
+        :param stand_row_name: 关联的数据标准名称，只读。
         :type stand_row_name: str
-        :param quality_infos: 质量信息。
+        :param quality_infos: 质量信息，只读。
         :type quality_infos: list[:class:`huaweicloudsdkdataartsstudio.v1.QualityInfoVO`]
         :param alias: 别名。
         :type alias: str
@@ -111,12 +123,15 @@ class AggregationLogicTableAttributeVO:
         self._attribute_type = None
         self._is_primary_key = None
         self._is_partition_key = None
+        self._secrecy_levels = None
         self._not_null = None
         self._description = None
         self._data_type = None
         self._domain_type = None
         self._data_type_extend = None
         self._ref_id = None
+        self._ref_name_ch = None
+        self._ref_name_en = None
         self._stand_row_id = None
         self._stand_row_name = None
         self._quality_infos = None
@@ -135,6 +150,8 @@ class AggregationLogicTableAttributeVO:
             self.attribute_type = attribute_type
         self.is_primary_key = is_primary_key
         self.is_partition_key = is_partition_key
+        if secrecy_levels is not None:
+            self.secrecy_levels = secrecy_levels
         if not_null is not None:
             self.not_null = not_null
         if description is not None:
@@ -146,6 +163,10 @@ class AggregationLogicTableAttributeVO:
             self.data_type_extend = data_type_extend
         if ref_id is not None:
             self.ref_id = ref_id
+        if ref_name_ch is not None:
+            self.ref_name_ch = ref_name_ch
+        if ref_name_en is not None:
+            self.ref_name_en = ref_name_en
         if stand_row_id is not None:
             self.stand_row_id = stand_row_id
         if stand_row_name is not None:
@@ -159,7 +180,7 @@ class AggregationLogicTableAttributeVO:
     def id(self):
         """Gets the id of this AggregationLogicTableAttributeVO.
 
-        编码。
+        编码，填写String类型替代Long类型。
 
         :return: The id of this AggregationLogicTableAttributeVO.
         :rtype: str
@@ -170,7 +191,7 @@ class AggregationLogicTableAttributeVO:
     def id(self, id):
         """Sets the id of this AggregationLogicTableAttributeVO.
 
-        编码。
+        编码，填写String类型替代Long类型。
 
         :param id: The id of this AggregationLogicTableAttributeVO.
         :type id: str
@@ -181,7 +202,7 @@ class AggregationLogicTableAttributeVO:
     def aggregation_logic_table_id(self):
         """Gets the aggregation_logic_table_id of this AggregationLogicTableAttributeVO.
 
-        所属汇总表ID。
+        所属汇总表ID，填写String类型替代Long类型。
 
         :return: The aggregation_logic_table_id of this AggregationLogicTableAttributeVO.
         :rtype: str
@@ -192,7 +213,7 @@ class AggregationLogicTableAttributeVO:
     def aggregation_logic_table_id(self, aggregation_logic_table_id):
         """Sets the aggregation_logic_table_id of this AggregationLogicTableAttributeVO.
 
-        所属汇总表ID。
+        所属汇总表ID，填写String类型替代Long类型。
 
         :param aggregation_logic_table_id: The aggregation_logic_table_id of this AggregationLogicTableAttributeVO.
         :type aggregation_logic_table_id: str
@@ -328,6 +349,28 @@ class AggregationLogicTableAttributeVO:
         self._is_partition_key = is_partition_key
 
     @property
+    def secrecy_levels(self):
+        """Gets the secrecy_levels of this AggregationLogicTableAttributeVO.
+
+        密级
+
+        :return: The secrecy_levels of this AggregationLogicTableAttributeVO.
+        :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.SecrecyLevelVO`]
+        """
+        return self._secrecy_levels
+
+    @secrecy_levels.setter
+    def secrecy_levels(self, secrecy_levels):
+        """Sets the secrecy_levels of this AggregationLogicTableAttributeVO.
+
+        密级
+
+        :param secrecy_levels: The secrecy_levels of this AggregationLogicTableAttributeVO.
+        :type secrecy_levels: list[:class:`huaweicloudsdkdataartsstudio.v1.SecrecyLevelVO`]
+        """
+        self._secrecy_levels = secrecy_levels
+
+    @property
     def not_null(self):
         """Gets the not_null of this AggregationLogicTableAttributeVO.
 
@@ -437,7 +480,7 @@ class AggregationLogicTableAttributeVO:
     def ref_id(self):
         """Gets the ref_id of this AggregationLogicTableAttributeVO.
 
-        关联ID。
+        属性关联对象的id
 
         :return: The ref_id of this AggregationLogicTableAttributeVO.
         :rtype: str
@@ -448,7 +491,7 @@ class AggregationLogicTableAttributeVO:
     def ref_id(self, ref_id):
         """Sets the ref_id of this AggregationLogicTableAttributeVO.
 
-        关联ID。
+        属性关联对象的id
 
         :param ref_id: The ref_id of this AggregationLogicTableAttributeVO.
         :type ref_id: str
@@ -456,10 +499,54 @@ class AggregationLogicTableAttributeVO:
         self._ref_id = ref_id
 
     @property
+    def ref_name_ch(self):
+        """Gets the ref_name_ch of this AggregationLogicTableAttributeVO.
+
+        属性关联对象的中文名
+
+        :return: The ref_name_ch of this AggregationLogicTableAttributeVO.
+        :rtype: str
+        """
+        return self._ref_name_ch
+
+    @ref_name_ch.setter
+    def ref_name_ch(self, ref_name_ch):
+        """Sets the ref_name_ch of this AggregationLogicTableAttributeVO.
+
+        属性关联对象的中文名
+
+        :param ref_name_ch: The ref_name_ch of this AggregationLogicTableAttributeVO.
+        :type ref_name_ch: str
+        """
+        self._ref_name_ch = ref_name_ch
+
+    @property
+    def ref_name_en(self):
+        """Gets the ref_name_en of this AggregationLogicTableAttributeVO.
+
+        属性关联对象的英文名
+
+        :return: The ref_name_en of this AggregationLogicTableAttributeVO.
+        :rtype: str
+        """
+        return self._ref_name_en
+
+    @ref_name_en.setter
+    def ref_name_en(self, ref_name_en):
+        """Sets the ref_name_en of this AggregationLogicTableAttributeVO.
+
+        属性关联对象的英文名
+
+        :param ref_name_en: The ref_name_en of this AggregationLogicTableAttributeVO.
+        :type ref_name_en: str
+        """
+        self._ref_name_en = ref_name_en
+
+    @property
     def stand_row_id(self):
         """Gets the stand_row_id of this AggregationLogicTableAttributeVO.
 
-        关联的数据标准的ID。
+        关联的数据标准的ID，填写String类型替代Long类型。
 
         :return: The stand_row_id of this AggregationLogicTableAttributeVO.
         :rtype: str
@@ -470,7 +557,7 @@ class AggregationLogicTableAttributeVO:
     def stand_row_id(self, stand_row_id):
         """Sets the stand_row_id of this AggregationLogicTableAttributeVO.
 
-        关联的数据标准的ID。
+        关联的数据标准的ID，填写String类型替代Long类型。
 
         :param stand_row_id: The stand_row_id of this AggregationLogicTableAttributeVO.
         :type stand_row_id: str
@@ -481,7 +568,7 @@ class AggregationLogicTableAttributeVO:
     def stand_row_name(self):
         """Gets the stand_row_name of this AggregationLogicTableAttributeVO.
 
-        关联的数据标准名称。
+        关联的数据标准名称，只读。
 
         :return: The stand_row_name of this AggregationLogicTableAttributeVO.
         :rtype: str
@@ -492,7 +579,7 @@ class AggregationLogicTableAttributeVO:
     def stand_row_name(self, stand_row_name):
         """Sets the stand_row_name of this AggregationLogicTableAttributeVO.
 
-        关联的数据标准名称。
+        关联的数据标准名称，只读。
 
         :param stand_row_name: The stand_row_name of this AggregationLogicTableAttributeVO.
         :type stand_row_name: str
@@ -503,7 +590,7 @@ class AggregationLogicTableAttributeVO:
     def quality_infos(self):
         """Gets the quality_infos of this AggregationLogicTableAttributeVO.
 
-        质量信息。
+        质量信息，只读。
 
         :return: The quality_infos of this AggregationLogicTableAttributeVO.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.QualityInfoVO`]
@@ -514,7 +601,7 @@ class AggregationLogicTableAttributeVO:
     def quality_infos(self, quality_infos):
         """Sets the quality_infos of this AggregationLogicTableAttributeVO.
 
-        质量信息。
+        质量信息，只读。
 
         :param quality_infos: The quality_infos of this AggregationLogicTableAttributeVO.
         :type quality_infos: list[:class:`huaweicloudsdkdataartsstudio.v1.QualityInfoVO`]

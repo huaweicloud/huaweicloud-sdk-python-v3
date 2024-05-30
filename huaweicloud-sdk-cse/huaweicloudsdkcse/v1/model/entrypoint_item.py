@@ -37,15 +37,15 @@ class EntrypointItem:
 
         The model defined in huaweicloud sdk
 
-        :param master_entrypoint: 微服务引擎专享版组件的ipv4主接入地址
+        :param master_entrypoint: 微服务引擎组件的ipv4主接入地址
         :type master_entrypoint: str
-        :param master_entrypoint_ipv6: 微服务引擎专享版组件的ipv6主接入地址
+        :param master_entrypoint_ipv6: 微服务引擎组件的ipv6主接入地址
         :type master_entrypoint_ipv6: str
-        :param slave_entrypoint: 微服务引擎专享版组件的ipv4备接入地址
+        :param slave_entrypoint: 微服务引擎组件的ipv4备接入地址
         :type slave_entrypoint: str
-        :param slave_entrypoint_ipv6: 微服务引擎专享版组件的ipv6备接入地址
+        :param slave_entrypoint_ipv6: 微服务引擎组件的ipv6备接入地址
         :type slave_entrypoint_ipv6: str
-        :param type: 微服务引擎专享版组件类型
+        :param type: 微服务引擎组件类型
         :type type: str
         """
         
@@ -73,7 +73,7 @@ class EntrypointItem:
     def master_entrypoint(self):
         """Gets the master_entrypoint of this EntrypointItem.
 
-        微服务引擎专享版组件的ipv4主接入地址
+        微服务引擎组件的ipv4主接入地址
 
         :return: The master_entrypoint of this EntrypointItem.
         :rtype: str
@@ -84,7 +84,7 @@ class EntrypointItem:
     def master_entrypoint(self, master_entrypoint):
         """Sets the master_entrypoint of this EntrypointItem.
 
-        微服务引擎专享版组件的ipv4主接入地址
+        微服务引擎组件的ipv4主接入地址
 
         :param master_entrypoint: The master_entrypoint of this EntrypointItem.
         :type master_entrypoint: str
@@ -95,7 +95,7 @@ class EntrypointItem:
     def master_entrypoint_ipv6(self):
         """Gets the master_entrypoint_ipv6 of this EntrypointItem.
 
-        微服务引擎专享版组件的ipv6主接入地址
+        微服务引擎组件的ipv6主接入地址
 
         :return: The master_entrypoint_ipv6 of this EntrypointItem.
         :rtype: str
@@ -106,7 +106,7 @@ class EntrypointItem:
     def master_entrypoint_ipv6(self, master_entrypoint_ipv6):
         """Sets the master_entrypoint_ipv6 of this EntrypointItem.
 
-        微服务引擎专享版组件的ipv6主接入地址
+        微服务引擎组件的ipv6主接入地址
 
         :param master_entrypoint_ipv6: The master_entrypoint_ipv6 of this EntrypointItem.
         :type master_entrypoint_ipv6: str
@@ -117,7 +117,7 @@ class EntrypointItem:
     def slave_entrypoint(self):
         """Gets the slave_entrypoint of this EntrypointItem.
 
-        微服务引擎专享版组件的ipv4备接入地址
+        微服务引擎组件的ipv4备接入地址
 
         :return: The slave_entrypoint of this EntrypointItem.
         :rtype: str
@@ -128,7 +128,7 @@ class EntrypointItem:
     def slave_entrypoint(self, slave_entrypoint):
         """Sets the slave_entrypoint of this EntrypointItem.
 
-        微服务引擎专享版组件的ipv4备接入地址
+        微服务引擎组件的ipv4备接入地址
 
         :param slave_entrypoint: The slave_entrypoint of this EntrypointItem.
         :type slave_entrypoint: str
@@ -139,7 +139,7 @@ class EntrypointItem:
     def slave_entrypoint_ipv6(self):
         """Gets the slave_entrypoint_ipv6 of this EntrypointItem.
 
-        微服务引擎专享版组件的ipv6备接入地址
+        微服务引擎组件的ipv6备接入地址
 
         :return: The slave_entrypoint_ipv6 of this EntrypointItem.
         :rtype: str
@@ -150,7 +150,7 @@ class EntrypointItem:
     def slave_entrypoint_ipv6(self, slave_entrypoint_ipv6):
         """Sets the slave_entrypoint_ipv6 of this EntrypointItem.
 
-        微服务引擎专享版组件的ipv6备接入地址
+        微服务引擎组件的ipv6备接入地址
 
         :param slave_entrypoint_ipv6: The slave_entrypoint_ipv6 of this EntrypointItem.
         :type slave_entrypoint_ipv6: str
@@ -161,7 +161,7 @@ class EntrypointItem:
     def type(self):
         """Gets the type of this EntrypointItem.
 
-        微服务引擎专享版组件类型
+        微服务引擎组件类型
 
         :return: The type of this EntrypointItem.
         :rtype: str
@@ -172,7 +172,7 @@ class EntrypointItem:
     def type(self, type):
         """Sets the type of this EntrypointItem.
 
-        微服务引擎专享版组件类型
+        微服务引擎组件类型
 
         :param type: The type of this EntrypointItem.
         :type type: str

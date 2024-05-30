@@ -65,9 +65,9 @@ class ListCustomerBillsMonthlyBreakDownRequest:
         :type resource_type_code: str
         :param region_code: 云服务区编码，例如：“cn-north-1”。具体请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)对应云服务的“区域”列的值。此参数不携带或携带值为空时，不作为筛选条件。
         :type region_code: str
-        :param charging_mode: 计费模式。1：包年/包月3：按需10：预留实例此参数不携带或携带值为空时，不作为筛选条件。
+        :param charging_mode: 计费模式。1：包年/包月3：按需10：预留实例11：节省计划此参数不携带或携带值为空时，不作为筛选条件。
         :type charging_mode: int
-        :param bill_type: 账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更 此参数不携带或携带值为空时，不作为筛选条件。
+        :param bill_type: 账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更23：消费-节省计划抵扣24：退款-包年/包月转按需此参数不携带或携带值为空时，不作为筛选条件。
         :type bill_type: int
         :param offset: 偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
         :type offset: int
@@ -245,7 +245,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def charging_mode(self):
         """Gets the charging_mode of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        计费模式。1：包年/包月3：按需10：预留实例此参数不携带或携带值为空时，不作为筛选条件。
+        计费模式。1：包年/包月3：按需10：预留实例11：节省计划此参数不携带或携带值为空时，不作为筛选条件。
 
         :return: The charging_mode of this ListCustomerBillsMonthlyBreakDownRequest.
         :rtype: int
@@ -256,7 +256,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def charging_mode(self, charging_mode):
         """Sets the charging_mode of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        计费模式。1：包年/包月3：按需10：预留实例此参数不携带或携带值为空时，不作为筛选条件。
+        计费模式。1：包年/包月3：按需10：预留实例11：节省计划此参数不携带或携带值为空时，不作为筛选条件。
 
         :param charging_mode: The charging_mode of this ListCustomerBillsMonthlyBreakDownRequest.
         :type charging_mode: int
@@ -267,7 +267,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def bill_type(self):
         """Gets the bill_type of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更 此参数不携带或携带值为空时，不作为筛选条件。
+        账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更23：消费-节省计划抵扣24：退款-包年/包月转按需此参数不携带或携带值为空时，不作为筛选条件。
 
         :return: The bill_type of this ListCustomerBillsMonthlyBreakDownRequest.
         :rtype: int
@@ -278,7 +278,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def bill_type(self, bill_type):
         """Sets the bill_type of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更 此参数不携带或携带值为空时，不作为筛选条件。
+        账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更23：消费-节省计划抵扣24：退款-包年/包月转按需此参数不携带或携带值为空时，不作为筛选条件。
 
         :param bill_type: The bill_type of this ListCustomerBillsMonthlyBreakDownRequest.
         :type bill_type: int

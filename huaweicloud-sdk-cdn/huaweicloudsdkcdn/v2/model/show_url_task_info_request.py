@@ -47,9 +47,9 @@ class ShowUrlTaskInfoRequest:
         :type start_time: int
         :param end_time: 结束时间戳（毫秒），默认次日00:00。
         :type end_time: int
-        :param offset: 偏移量：特定数据字段与起始数据字段位置的距离。
+        :param offset: 偏移量：特定数据字段与起始数据字段位置的距离，默认为0。
         :type offset: int
-        :param limit: 单次查询数据条数，上限为100。
+        :param limit: 单次查询数据条数，上限为100，默认为10。
         :type limit: int
         :param url: 刷新预热url。
         :type url: str
@@ -138,7 +138,7 @@ class ShowUrlTaskInfoRequest:
     def offset(self):
         """Gets the offset of this ShowUrlTaskInfoRequest.
 
-        偏移量：特定数据字段与起始数据字段位置的距离。
+        偏移量：特定数据字段与起始数据字段位置的距离，默认为0。
 
         :return: The offset of this ShowUrlTaskInfoRequest.
         :rtype: int
@@ -149,7 +149,7 @@ class ShowUrlTaskInfoRequest:
     def offset(self, offset):
         """Sets the offset of this ShowUrlTaskInfoRequest.
 
-        偏移量：特定数据字段与起始数据字段位置的距离。
+        偏移量：特定数据字段与起始数据字段位置的距离，默认为0。
 
         :param offset: The offset of this ShowUrlTaskInfoRequest.
         :type offset: int
@@ -160,7 +160,7 @@ class ShowUrlTaskInfoRequest:
     def limit(self):
         """Gets the limit of this ShowUrlTaskInfoRequest.
 
-        单次查询数据条数，上限为100。
+        单次查询数据条数，上限为100，默认为10。
 
         :return: The limit of this ShowUrlTaskInfoRequest.
         :rtype: int
@@ -171,7 +171,7 @@ class ShowUrlTaskInfoRequest:
     def limit(self, limit):
         """Sets the limit of this ShowUrlTaskInfoRequest.
 
-        单次查询数据条数，上限为100。
+        单次查询数据条数，上限为100，默认为10。
 
         :param limit: The limit of this ShowUrlTaskInfoRequest.
         :type limit: int

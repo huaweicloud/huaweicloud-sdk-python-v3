@@ -41,7 +41,7 @@ class ImportCatalogsRequest:
         :type workspace: str
         :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
         :type x_project_id: str
-        :param action_id: 需要执行的动作。start-import(开始导入)。
+        :param action_id: 需要执行的动作。 枚举值：   - start-import: 开始导入 
         :type action_id: str
         :param skip_exist: 是否需要覆盖更新已有的主题。
         :type skip_exist: bool
@@ -115,7 +115,7 @@ class ImportCatalogsRequest:
     def action_id(self):
         """Gets the action_id of this ImportCatalogsRequest.
 
-        需要执行的动作。start-import(开始导入)。
+        需要执行的动作。 枚举值：   - start-import: 开始导入 
 
         :return: The action_id of this ImportCatalogsRequest.
         :rtype: str
@@ -126,7 +126,7 @@ class ImportCatalogsRequest:
     def action_id(self, action_id):
         """Sets the action_id of this ImportCatalogsRequest.
 
-        需要执行的动作。start-import(开始导入)。
+        需要执行的动作。 枚举值：   - start-import: 开始导入 
 
         :param action_id: The action_id of this ImportCatalogsRequest.
         :type action_id: str

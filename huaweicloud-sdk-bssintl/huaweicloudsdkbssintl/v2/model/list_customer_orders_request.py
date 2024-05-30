@@ -29,7 +29,8 @@ class ListCustomerOrdersRequest:
         'order_by': 'str',
         'payment_time_begin': 'str',
         'payment_time_end': 'str',
-        'indirect_partner_id': 'str'
+        'indirect_partner_id': 'str',
+        'method': 'str'
     }
 
     attribute_map = {
@@ -45,10 +46,11 @@ class ListCustomerOrdersRequest:
         'order_by': 'order_by',
         'payment_time_begin': 'payment_time_begin',
         'payment_time_end': 'payment_time_end',
-        'indirect_partner_id': 'indirect_partner_id'
+        'indirect_partner_id': 'indirect_partner_id',
+        'method': 'method'
     }
 
-    def __init__(self, order_id=None, customer_id=None, create_time_begin=None, create_time_end=None, service_type_code=None, status=None, order_type=None, limit=None, offset=None, order_by=None, payment_time_begin=None, payment_time_end=None, indirect_partner_id=None):
+    def __init__(self, order_id=None, customer_id=None, create_time_begin=None, create_time_end=None, service_type_code=None, status=None, order_type=None, limit=None, offset=None, order_by=None, payment_time_begin=None, payment_time_end=None, indirect_partner_id=None, method=None):
         """ListCustomerOrdersRequest
 
         The model defined in huaweicloud sdk
@@ -79,6 +81,8 @@ class ListCustomerOrdersRequest:
         :type payment_time_end: str
         :param indirect_partner_id: 云经销商ID。华为云总经销商（一级经销商）查询云经销商的客户订单列表时，需要携带该参数；除此之外，此参数不做处理。否则只能查询自己客户的订单列表。
         :type indirect_partner_id: str
+        :param method: |参数名称：查询方式，oneself：客户自己订单sub_customer：客户给企业子代付订单。| |参数的约束及描述：默认为oneself。仅customer_id有值时生效。此参数不携带或携带值为空串或携带值为null时，默认值为“oneself”。|
+        :type method: str
         """
         
         
@@ -96,6 +100,7 @@ class ListCustomerOrdersRequest:
         self._payment_time_begin = None
         self._payment_time_end = None
         self._indirect_partner_id = None
+        self._method = None
         self.discriminator = None
 
         if order_id is not None:
@@ -124,6 +129,8 @@ class ListCustomerOrdersRequest:
             self.payment_time_end = payment_time_end
         if indirect_partner_id is not None:
             self.indirect_partner_id = indirect_partner_id
+        if method is not None:
+            self.method = method
 
     @property
     def order_id(self):
@@ -410,6 +417,28 @@ class ListCustomerOrdersRequest:
         :type indirect_partner_id: str
         """
         self._indirect_partner_id = indirect_partner_id
+
+    @property
+    def method(self):
+        """Gets the method of this ListCustomerOrdersRequest.
+
+        |参数名称：查询方式，oneself：客户自己订单sub_customer：客户给企业子代付订单。| |参数的约束及描述：默认为oneself。仅customer_id有值时生效。此参数不携带或携带值为空串或携带值为null时，默认值为“oneself”。|
+
+        :return: The method of this ListCustomerOrdersRequest.
+        :rtype: str
+        """
+        return self._method
+
+    @method.setter
+    def method(self, method):
+        """Sets the method of this ListCustomerOrdersRequest.
+
+        |参数名称：查询方式，oneself：客户自己订单sub_customer：客户给企业子代付订单。| |参数的约束及描述：默认为oneself。仅customer_id有值时生效。此参数不携带或携带值为空串或携带值为null时，默认值为“oneself”。|
+
+        :param method: The method of this ListCustomerOrdersRequest.
+        :type method: str
+        """
+        self._method = method
 
     def to_dict(self):
         """Returns the model properties as a dict"""

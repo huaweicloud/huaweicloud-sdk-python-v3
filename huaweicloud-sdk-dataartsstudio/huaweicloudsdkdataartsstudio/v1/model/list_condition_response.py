@@ -18,7 +18,7 @@ class ListConditionResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'object'
+        'data': 'ListConditionResultData'
     }
 
     attribute_map = {
@@ -30,8 +30,8 @@ class ListConditionResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: 返回的数据信息。
-        :type data: object
+        :param data: 
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.ListConditionResultData`
         """
         
         super(ListConditionResponse, self).__init__()
@@ -46,10 +46,8 @@ class ListConditionResponse(SdkResponse):
     def data(self):
         """Gets the data of this ListConditionResponse.
 
-        返回的数据信息。
-
         :return: The data of this ListConditionResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListConditionResultData`
         """
         return self._data
 
@@ -57,10 +55,8 @@ class ListConditionResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this ListConditionResponse.
 
-        返回的数据信息。
-
         :param data: The data of this ListConditionResponse.
-        :type data: object
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.ListConditionResultData`
         """
         self._data = data
 

@@ -24,7 +24,8 @@ class QueryResourcesReq:
         'offset': 'int',
         'limit': 'int',
         'expire_time_begin': 'str',
-        'expire_time_end': 'str'
+        'expire_time_end': 'str',
+        'service_type_code': 'str'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class QueryResourcesReq:
         'offset': 'offset',
         'limit': 'limit',
         'expire_time_begin': 'expire_time_begin',
-        'expire_time_end': 'expire_time_end'
+        'expire_time_end': 'expire_time_end',
+        'service_type_code': 'service_type_code'
     }
 
-    def __init__(self, resource_ids=None, order_id=None, only_main_resource=None, status_list=None, offset=None, limit=None, expire_time_begin=None, expire_time_end=None):
+    def __init__(self, resource_ids=None, order_id=None, only_main_resource=None, status_list=None, offset=None, limit=None, expire_time_begin=None, expire_time_end=None, service_type_code=None):
         """QueryResourcesReq
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class QueryResourcesReq:
         :type expire_time_begin: str
         :param expire_time_end: 查询指定时间段内失效的资源列表，时间段的结束时间，UTC时间。
         :type expire_time_end: str
+        :param service_type_code: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。 此参数不携带、携带值为null，不作为筛选条件。此参数不允许为空串，有参数校验。
+        :type service_type_code: str
         """
         
         
@@ -71,6 +75,7 @@ class QueryResourcesReq:
         self._limit = None
         self._expire_time_begin = None
         self._expire_time_end = None
+        self._service_type_code = None
         self.discriminator = None
 
         if resource_ids is not None:
@@ -89,6 +94,8 @@ class QueryResourcesReq:
             self.expire_time_begin = expire_time_begin
         if expire_time_end is not None:
             self.expire_time_end = expire_time_end
+        if service_type_code is not None:
+            self.service_type_code = service_type_code
 
     @property
     def resource_ids(self):
@@ -265,6 +272,28 @@ class QueryResourcesReq:
         :type expire_time_end: str
         """
         self._expire_time_end = expire_time_end
+
+    @property
+    def service_type_code(self):
+        """Gets the service_type_code of this QueryResourcesReq.
+
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。 此参数不携带、携带值为null，不作为筛选条件。此参数不允许为空串，有参数校验。
+
+        :return: The service_type_code of this QueryResourcesReq.
+        :rtype: str
+        """
+        return self._service_type_code
+
+    @service_type_code.setter
+    def service_type_code(self, service_type_code):
+        """Sets the service_type_code of this QueryResourcesReq.
+
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。 此参数不携带、携带值为null，不作为筛选条件。此参数不允许为空串，有参数校验。
+
+        :param service_type_code: The service_type_code of this QueryResourcesReq.
+        :type service_type_code: str
+        """
+        self._service_type_code = service_type_code
 
     def to_dict(self):
         """Returns the model properties as a dict"""

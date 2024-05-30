@@ -31,7 +31,7 @@ class PublishVersionVOSearchResultDataValue:
 
         The model defined in huaweicloud sdk
 
-        :param records: 查询到的的版本值对象（PublishVersionVO）数组。
+        :param records: 查询到的版本值对象（PublishVersionVO）数组。
         :type records: list[:class:`huaweicloudsdkdataartsstudio.v1.PublishVersionVO`]
         :param total: 符合搜索条件的记录总数。
         :type total: int
@@ -52,7 +52,7 @@ class PublishVersionVOSearchResultDataValue:
     def records(self):
         """Gets the records of this PublishVersionVOSearchResultDataValue.
 
-        查询到的的版本值对象（PublishVersionVO）数组。
+        查询到的版本值对象（PublishVersionVO）数组。
 
         :return: The records of this PublishVersionVOSearchResultDataValue.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.PublishVersionVO`]
@@ -63,7 +63,7 @@ class PublishVersionVOSearchResultDataValue:
     def records(self, records):
         """Sets the records of this PublishVersionVOSearchResultDataValue.
 
-        查询到的的版本值对象（PublishVersionVO）数组。
+        查询到的版本值对象（PublishVersionVO）数组。
 
         :param records: The records of this PublishVersionVOSearchResultDataValue.
         :type records: list[:class:`huaweicloudsdkdataartsstudio.v1.PublishVersionVO`]

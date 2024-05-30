@@ -31,9 +31,9 @@ class Tag:
 
         The model defined in huaweicloud sdk
 
-        :param key: 键。  - 最大长度127个unicode字符。  - key不能为空。
+        :param key: 键。  - 最大长度127个unicode字符。          - 不能为空，可以包含任意语种字母、数字、空格和_.：&#x3D;+-@，但首尾不能含有空所有服务均可在标签输入框下拉选择同一标格，不能以_sys_开头。
         :type key: str
-        :param value: 值列表。  - 每个值最大长度255个unicode字符。
+        :param value: 值列表。  - 每个值最大长度255个unicode字符。 - 不能为空，可以包含任意语种字母、、数字、空格和_.：&#x3D;+-@，但首尾不能含有空格。
         :type value: str
         """
         
@@ -50,7 +50,7 @@ class Tag:
     def key(self):
         """Gets the key of this Tag.
 
-        键。  - 最大长度127个unicode字符。  - key不能为空。
+        键。  - 最大长度127个unicode字符。          - 不能为空，可以包含任意语种字母、数字、空格和_.：=+-@，但首尾不能含有空所有服务均可在标签输入框下拉选择同一标格，不能以_sys_开头。
 
         :return: The key of this Tag.
         :rtype: str
@@ -61,7 +61,7 @@ class Tag:
     def key(self, key):
         """Sets the key of this Tag.
 
-        键。  - 最大长度127个unicode字符。  - key不能为空。
+        键。  - 最大长度127个unicode字符。          - 不能为空，可以包含任意语种字母、数字、空格和_.：=+-@，但首尾不能含有空所有服务均可在标签输入框下拉选择同一标格，不能以_sys_开头。
 
         :param key: The key of this Tag.
         :type key: str
@@ -72,7 +72,7 @@ class Tag:
     def value(self):
         """Gets the value of this Tag.
 
-        值列表。  - 每个值最大长度255个unicode字符。
+        值列表。  - 每个值最大长度255个unicode字符。 - 不能为空，可以包含任意语种字母、、数字、空格和_.：=+-@，但首尾不能含有空格。
 
         :return: The value of this Tag.
         :rtype: str
@@ -83,7 +83,7 @@ class Tag:
     def value(self, value):
         """Sets the value of this Tag.
 
-        值列表。  - 每个值最大长度255个unicode字符。
+        值列表。  - 每个值最大长度255个unicode字符。 - 不能为空，可以包含任意语种字母、、数字、空格和_.：=+-@，但首尾不能含有空格。
 
         :param value: The value of this Tag.
         :type value: str

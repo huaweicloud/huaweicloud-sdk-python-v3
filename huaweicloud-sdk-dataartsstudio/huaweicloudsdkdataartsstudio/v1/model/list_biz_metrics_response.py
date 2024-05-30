@@ -18,7 +18,7 @@ class ListBizMetricsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'object'
+        'data': 'ListBizMetricsResultData'
     }
 
     attribute_map = {
@@ -30,8 +30,8 @@ class ListBizMetricsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: 返回的数据信息。
-        :type data: object
+        :param data: 
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.ListBizMetricsResultData`
         """
         
         super(ListBizMetricsResponse, self).__init__()
@@ -46,10 +46,8 @@ class ListBizMetricsResponse(SdkResponse):
     def data(self):
         """Gets the data of this ListBizMetricsResponse.
 
-        返回的数据信息。
-
         :return: The data of this ListBizMetricsResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListBizMetricsResultData`
         """
         return self._data
 
@@ -57,10 +55,8 @@ class ListBizMetricsResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this ListBizMetricsResponse.
 
-        返回的数据信息。
-
         :param data: The data of this ListBizMetricsResponse.
-        :type data: object
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.ListBizMetricsResultData`
         """
         self._data = data
 

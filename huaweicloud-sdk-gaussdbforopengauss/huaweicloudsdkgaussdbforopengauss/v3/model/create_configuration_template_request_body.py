@@ -35,7 +35,7 @@ class CreateConfigurationTemplateRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param name: 参数模板名称。 取值范围：长度1到64位之间，区分大小写字母，可包含字母、数字、中划线、下划线或句点，不能包含其他特殊字符。
+        :param name: 参数模板名称，不可与已有参数模板名称重复。 取值范围：长度1到64位之间，区分大小写字母，可包含字母、数字、中划线、下划线或句点，不能包含其他特殊字符。
         :type name: str
         :param description: 参数模板描述，默认为空。 取值范围：长度不超过256，不能包含回车&lt;&gt;!&amp;等特殊字符。
         :type description: str
@@ -64,7 +64,7 @@ class CreateConfigurationTemplateRequestBody:
     def name(self):
         """Gets the name of this CreateConfigurationTemplateRequestBody.
 
-        参数模板名称。 取值范围：长度1到64位之间，区分大小写字母，可包含字母、数字、中划线、下划线或句点，不能包含其他特殊字符。
+        参数模板名称，不可与已有参数模板名称重复。 取值范围：长度1到64位之间，区分大小写字母，可包含字母、数字、中划线、下划线或句点，不能包含其他特殊字符。
 
         :return: The name of this CreateConfigurationTemplateRequestBody.
         :rtype: str
@@ -75,7 +75,7 @@ class CreateConfigurationTemplateRequestBody:
     def name(self, name):
         """Sets the name of this CreateConfigurationTemplateRequestBody.
 
-        参数模板名称。 取值范围：长度1到64位之间，区分大小写字母，可包含字母、数字、中划线、下划线或句点，不能包含其他特殊字符。
+        参数模板名称，不可与已有参数模板名称重复。 取值范围：长度1到64位之间，区分大小写字母，可包含字母、数字、中划线、下划线或句点，不能包含其他特殊字符。
 
         :param name: The name of this CreateConfigurationTemplateRequestBody.
         :type name: str

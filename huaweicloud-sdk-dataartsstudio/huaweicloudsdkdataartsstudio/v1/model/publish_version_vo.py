@@ -29,6 +29,7 @@ class PublishVersionVO:
         'change_props': 'str',
         'sql_ddl': 'str',
         'physical_table': 'SyncStatusEnum',
+        'dev_physical_table': 'SyncStatusEnum',
         'technical_asset': 'SyncStatusEnum',
         'business_asset': 'SyncStatusEnum',
         'meta_data_link': 'SyncStatusEnum',
@@ -56,6 +57,7 @@ class PublishVersionVO:
         'change_props': 'change_props',
         'sql_ddl': 'sql_ddl',
         'physical_table': 'physical_table',
+        'dev_physical_table': 'dev_physical_table',
         'technical_asset': 'technical_asset',
         'business_asset': 'business_asset',
         'meta_data_link': 'meta_data_link',
@@ -70,35 +72,37 @@ class PublishVersionVO:
         'create_by': 'create_by'
     }
 
-    def __init__(self, id=None, version_name=None, version_tag=None, description=None, biz_id=None, biz_type=None, biz_info=None, biz_info_vo=None, effect_objs=None, change_props=None, sql_ddl=None, physical_table=None, technical_asset=None, business_asset=None, meta_data_link=None, data_quality=None, dlf_task=None, materialization=None, publish_to_dlm=None, biz_metric=None, summary_status=None, is_current_version=None, create_time=None, create_by=None):
+    def __init__(self, id=None, version_name=None, version_tag=None, description=None, biz_id=None, biz_type=None, biz_info=None, biz_info_vo=None, effect_objs=None, change_props=None, sql_ddl=None, physical_table=None, dev_physical_table=None, technical_asset=None, business_asset=None, meta_data_link=None, data_quality=None, dlf_task=None, materialization=None, publish_to_dlm=None, biz_metric=None, summary_status=None, is_current_version=None, create_time=None, create_by=None):
         """PublishVersionVO
 
         The model defined in huaweicloud sdk
 
-        :param id: 版本ID。
+        :param id: 版本ID，填写String类型替代Long类型。
         :type id: str
         :param version_name: 版本名称。
         :type version_name: str
-        :param version_tag: 版本标记。
+        :param version_tag: 版本标记，只读。
         :type version_tag: str
         :param description: 版本描述。
         :type description: str
-        :param biz_id: 业务对象ID。
+        :param biz_id: 业务对象ID，填写String类型替代Long类型。
         :type biz_id: str
         :param biz_type: 
         :type biz_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
-        :param biz_info: 业务详情。
+        :param biz_info: 业务详情，只读。
         :type biz_info: str
         :param biz_info_vo: 业务对象。
         :type biz_info_vo: object
-        :param effect_objs: 影响信息。
+        :param effect_objs: 影响信息，只读。
         :type effect_objs: str
-        :param change_props: 变化信息。
+        :param change_props: 变化信息，只读。
         :type change_props: str
-        :param sql_ddl: SQL脚本。
+        :param sql_ddl: SQL脚本，只读。
         :type sql_ddl: str
         :param physical_table: 
         :type physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :param dev_physical_table: 
+        :type dev_physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         :param technical_asset: 
         :type technical_asset: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         :param business_asset: 
@@ -117,11 +121,11 @@ class PublishVersionVO:
         :type biz_metric: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         :param summary_status: 
         :type summary_status: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
-        :param is_current_version: 是否为当前版本。
+        :param is_current_version: 是否为当前版本，只读。
         :type is_current_version: bool
-        :param create_time: 创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        :param create_time: 创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
-        :param create_by: 创建人。
+        :param create_by: 创建人，只读。
         :type create_by: str
         """
         
@@ -139,6 +143,7 @@ class PublishVersionVO:
         self._change_props = None
         self._sql_ddl = None
         self._physical_table = None
+        self._dev_physical_table = None
         self._technical_asset = None
         self._business_asset = None
         self._meta_data_link = None
@@ -176,6 +181,8 @@ class PublishVersionVO:
             self.sql_ddl = sql_ddl
         if physical_table is not None:
             self.physical_table = physical_table
+        if dev_physical_table is not None:
+            self.dev_physical_table = dev_physical_table
         if technical_asset is not None:
             self.technical_asset = technical_asset
         if business_asset is not None:
@@ -205,7 +212,7 @@ class PublishVersionVO:
     def id(self):
         """Gets the id of this PublishVersionVO.
 
-        版本ID。
+        版本ID，填写String类型替代Long类型。
 
         :return: The id of this PublishVersionVO.
         :rtype: str
@@ -216,7 +223,7 @@ class PublishVersionVO:
     def id(self, id):
         """Sets the id of this PublishVersionVO.
 
-        版本ID。
+        版本ID，填写String类型替代Long类型。
 
         :param id: The id of this PublishVersionVO.
         :type id: str
@@ -249,7 +256,7 @@ class PublishVersionVO:
     def version_tag(self):
         """Gets the version_tag of this PublishVersionVO.
 
-        版本标记。
+        版本标记，只读。
 
         :return: The version_tag of this PublishVersionVO.
         :rtype: str
@@ -260,7 +267,7 @@ class PublishVersionVO:
     def version_tag(self, version_tag):
         """Sets the version_tag of this PublishVersionVO.
 
-        版本标记。
+        版本标记，只读。
 
         :param version_tag: The version_tag of this PublishVersionVO.
         :type version_tag: str
@@ -293,7 +300,7 @@ class PublishVersionVO:
     def biz_id(self):
         """Gets the biz_id of this PublishVersionVO.
 
-        业务对象ID。
+        业务对象ID，填写String类型替代Long类型。
 
         :return: The biz_id of this PublishVersionVO.
         :rtype: str
@@ -304,7 +311,7 @@ class PublishVersionVO:
     def biz_id(self, biz_id):
         """Sets the biz_id of this PublishVersionVO.
 
-        业务对象ID。
+        业务对象ID，填写String类型替代Long类型。
 
         :param biz_id: The biz_id of this PublishVersionVO.
         :type biz_id: str
@@ -333,7 +340,7 @@ class PublishVersionVO:
     def biz_info(self):
         """Gets the biz_info of this PublishVersionVO.
 
-        业务详情。
+        业务详情，只读。
 
         :return: The biz_info of this PublishVersionVO.
         :rtype: str
@@ -344,7 +351,7 @@ class PublishVersionVO:
     def biz_info(self, biz_info):
         """Sets the biz_info of this PublishVersionVO.
 
-        业务详情。
+        业务详情，只读。
 
         :param biz_info: The biz_info of this PublishVersionVO.
         :type biz_info: str
@@ -377,7 +384,7 @@ class PublishVersionVO:
     def effect_objs(self):
         """Gets the effect_objs of this PublishVersionVO.
 
-        影响信息。
+        影响信息，只读。
 
         :return: The effect_objs of this PublishVersionVO.
         :rtype: str
@@ -388,7 +395,7 @@ class PublishVersionVO:
     def effect_objs(self, effect_objs):
         """Sets the effect_objs of this PublishVersionVO.
 
-        影响信息。
+        影响信息，只读。
 
         :param effect_objs: The effect_objs of this PublishVersionVO.
         :type effect_objs: str
@@ -399,7 +406,7 @@ class PublishVersionVO:
     def change_props(self):
         """Gets the change_props of this PublishVersionVO.
 
-        变化信息。
+        变化信息，只读。
 
         :return: The change_props of this PublishVersionVO.
         :rtype: str
@@ -410,7 +417,7 @@ class PublishVersionVO:
     def change_props(self, change_props):
         """Sets the change_props of this PublishVersionVO.
 
-        变化信息。
+        变化信息，只读。
 
         :param change_props: The change_props of this PublishVersionVO.
         :type change_props: str
@@ -421,7 +428,7 @@ class PublishVersionVO:
     def sql_ddl(self):
         """Gets the sql_ddl of this PublishVersionVO.
 
-        SQL脚本。
+        SQL脚本，只读。
 
         :return: The sql_ddl of this PublishVersionVO.
         :rtype: str
@@ -432,7 +439,7 @@ class PublishVersionVO:
     def sql_ddl(self, sql_ddl):
         """Sets the sql_ddl of this PublishVersionVO.
 
-        SQL脚本。
+        SQL脚本，只读。
 
         :param sql_ddl: The sql_ddl of this PublishVersionVO.
         :type sql_ddl: str
@@ -456,6 +463,24 @@ class PublishVersionVO:
         :type physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         """
         self._physical_table = physical_table
+
+    @property
+    def dev_physical_table(self):
+        """Gets the dev_physical_table of this PublishVersionVO.
+
+        :return: The dev_physical_table of this PublishVersionVO.
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        """
+        return self._dev_physical_table
+
+    @dev_physical_table.setter
+    def dev_physical_table(self, dev_physical_table):
+        """Sets the dev_physical_table of this PublishVersionVO.
+
+        :param dev_physical_table: The dev_physical_table of this PublishVersionVO.
+        :type dev_physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        """
+        self._dev_physical_table = dev_physical_table
 
     @property
     def technical_asset(self):
@@ -623,7 +648,7 @@ class PublishVersionVO:
     def is_current_version(self):
         """Gets the is_current_version of this PublishVersionVO.
 
-        是否为当前版本。
+        是否为当前版本，只读。
 
         :return: The is_current_version of this PublishVersionVO.
         :rtype: bool
@@ -634,7 +659,7 @@ class PublishVersionVO:
     def is_current_version(self, is_current_version):
         """Sets the is_current_version of this PublishVersionVO.
 
-        是否为当前版本。
+        是否为当前版本，只读。
 
         :param is_current_version: The is_current_version of this PublishVersionVO.
         :type is_current_version: bool
@@ -645,7 +670,7 @@ class PublishVersionVO:
     def create_time(self):
         """Gets the create_time of this PublishVersionVO.
 
-        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The create_time of this PublishVersionVO.
         :rtype: datetime
@@ -656,7 +681,7 @@ class PublishVersionVO:
     def create_time(self, create_time):
         """Sets the create_time of this PublishVersionVO.
 
-        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param create_time: The create_time of this PublishVersionVO.
         :type create_time: datetime
@@ -667,7 +692,7 @@ class PublishVersionVO:
     def create_by(self):
         """Gets the create_by of this PublishVersionVO.
 
-        创建人。
+        创建人，只读。
 
         :return: The create_by of this PublishVersionVO.
         :rtype: str
@@ -678,7 +703,7 @@ class PublishVersionVO:
     def create_by(self, create_by):
         """Sets the create_by of this PublishVersionVO.
 
-        创建人。
+        创建人，只读。
 
         :param create_by: The create_by of this PublishVersionVO.
         :type create_by: str

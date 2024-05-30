@@ -5,6 +5,7 @@ from __future__ import absolute_import
 from huaweicloudsdkcdn.v2.cdn_client import CdnClient
 from huaweicloudsdkcdn.v2.cdn_async_client import CdnAsyncClient
 
+from huaweicloudsdkcdn.v2.model.access_area_filter import AccessAreaFilter
 from huaweicloudsdkcdn.v2.model.back_sources import BackSources
 from huaweicloudsdkcdn.v2.model.batch_copy_configs import BatchCopyConfigs
 from huaweicloudsdkcdn.v2.model.batch_copy_d_request_body import BatchCopyDRequestBody
@@ -133,7 +134,9 @@ from huaweicloudsdkcdn.v2.model.sni import Sni
 from huaweicloudsdkcdn.v2.model.source_with_port import SourceWithPort
 from huaweicloudsdkcdn.v2.model.sources import Sources
 from huaweicloudsdkcdn.v2.model.sources_config import SourcesConfig
+from huaweicloudsdkcdn.v2.model.sources_config_response_body import SourcesConfigResponseBody
 from huaweicloudsdkcdn.v2.model.sources_domain_config import SourcesDomainConfig
+from huaweicloudsdkcdn.v2.model.sources_request_body import SourcesRequestBody
 from huaweicloudsdkcdn.v2.model.tag_map import TagMap
 from huaweicloudsdkcdn.v2.model.tasks_object import TasksObject
 from huaweicloudsdkcdn.v2.model.top_refer_summary import TopReferSummary

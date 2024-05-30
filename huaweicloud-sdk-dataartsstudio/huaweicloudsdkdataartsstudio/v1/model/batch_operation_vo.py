@@ -17,11 +17,11 @@ class BatchOperationVO:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'int',
+        'id': 'str',
         'tenant_id': 'str',
-        'group_id': 'int',
+        'group_id': 'str',
         'biz_name': 'str',
-        'biz_id': 'int',
+        'biz_id': 'str',
         'operation_status': 'str',
         'operation_type': 'str',
         'biz_info': 'str',
@@ -59,17 +59,17 @@ class BatchOperationVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 批量审批ID。
-        :type id: int
+        :param id: 批量审批ID，填写String类型替代Long类型。
+        :type id: str
         :param tenant_id: 项目ID。
         :type tenant_id: str
-        :param group_id: 组ID。
-        :type group_id: int
+        :param group_id: 组ID，填写String类型替代Long类型。
+        :type group_id: str
         :param biz_name: 业务名。
         :type biz_name: str
-        :param biz_id: 业务ID。
-        :type biz_id: int
-        :param operation_status: 操作结果类型枚举。RUNNING(运行中)、SUCCESS(操作成功)、FAILED(操作失败)。
+        :param biz_id: 业务ID，填写String类型替代Long类型。
+        :type biz_id: str
+        :param operation_status: 操作结果类型枚举。RUNNING(运行中)、SUCCESS(操作成功)、FAILED(操作失败)。 枚举值：   - RUNNING: 运行中   - SUCCESS: 操作成功   - FAILED: 操作失败 
         :type operation_status: str
         :param operation_type: 类型。
         :type operation_type: str
@@ -81,9 +81,9 @@ class BatchOperationVO:
         :type remark: str
         :param total: 总数。
         :type total: int
-        :param success: 成功个数。
+        :param success: 操作成功个数。
         :type success: int
-        :param failed: 失败个数。
+        :param failed: 操作失败个数。
         :type failed: int
         :param rate: 当前进度。
         :type rate: str
@@ -150,10 +150,10 @@ class BatchOperationVO:
     def id(self):
         """Gets the id of this BatchOperationVO.
 
-        批量审批ID。
+        批量审批ID，填写String类型替代Long类型。
 
         :return: The id of this BatchOperationVO.
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -161,10 +161,10 @@ class BatchOperationVO:
     def id(self, id):
         """Sets the id of this BatchOperationVO.
 
-        批量审批ID。
+        批量审批ID，填写String类型替代Long类型。
 
         :param id: The id of this BatchOperationVO.
-        :type id: int
+        :type id: str
         """
         self._id = id
 
@@ -194,10 +194,10 @@ class BatchOperationVO:
     def group_id(self):
         """Gets the group_id of this BatchOperationVO.
 
-        组ID。
+        组ID，填写String类型替代Long类型。
 
         :return: The group_id of this BatchOperationVO.
-        :rtype: int
+        :rtype: str
         """
         return self._group_id
 
@@ -205,10 +205,10 @@ class BatchOperationVO:
     def group_id(self, group_id):
         """Sets the group_id of this BatchOperationVO.
 
-        组ID。
+        组ID，填写String类型替代Long类型。
 
         :param group_id: The group_id of this BatchOperationVO.
-        :type group_id: int
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -238,10 +238,10 @@ class BatchOperationVO:
     def biz_id(self):
         """Gets the biz_id of this BatchOperationVO.
 
-        业务ID。
+        业务ID，填写String类型替代Long类型。
 
         :return: The biz_id of this BatchOperationVO.
-        :rtype: int
+        :rtype: str
         """
         return self._biz_id
 
@@ -249,10 +249,10 @@ class BatchOperationVO:
     def biz_id(self, biz_id):
         """Sets the biz_id of this BatchOperationVO.
 
-        业务ID。
+        业务ID，填写String类型替代Long类型。
 
         :param biz_id: The biz_id of this BatchOperationVO.
-        :type biz_id: int
+        :type biz_id: str
         """
         self._biz_id = biz_id
 
@@ -260,7 +260,7 @@ class BatchOperationVO:
     def operation_status(self):
         """Gets the operation_status of this BatchOperationVO.
 
-        操作结果类型枚举。RUNNING(运行中)、SUCCESS(操作成功)、FAILED(操作失败)。
+        操作结果类型枚举。RUNNING(运行中)、SUCCESS(操作成功)、FAILED(操作失败)。 枚举值：   - RUNNING: 运行中   - SUCCESS: 操作成功   - FAILED: 操作失败 
 
         :return: The operation_status of this BatchOperationVO.
         :rtype: str
@@ -271,7 +271,7 @@ class BatchOperationVO:
     def operation_status(self, operation_status):
         """Sets the operation_status of this BatchOperationVO.
 
-        操作结果类型枚举。RUNNING(运行中)、SUCCESS(操作成功)、FAILED(操作失败)。
+        操作结果类型枚举。RUNNING(运行中)、SUCCESS(操作成功)、FAILED(操作失败)。 枚举值：   - RUNNING: 运行中   - SUCCESS: 操作成功   - FAILED: 操作失败 
 
         :param operation_status: The operation_status of this BatchOperationVO.
         :type operation_status: str
@@ -392,7 +392,7 @@ class BatchOperationVO:
     def success(self):
         """Gets the success of this BatchOperationVO.
 
-        成功个数。
+        操作成功个数。
 
         :return: The success of this BatchOperationVO.
         :rtype: int
@@ -403,7 +403,7 @@ class BatchOperationVO:
     def success(self, success):
         """Sets the success of this BatchOperationVO.
 
-        成功个数。
+        操作成功个数。
 
         :param success: The success of this BatchOperationVO.
         :type success: int
@@ -414,7 +414,7 @@ class BatchOperationVO:
     def failed(self):
         """Gets the failed of this BatchOperationVO.
 
-        失败个数。
+        操作失败个数。
 
         :return: The failed of this BatchOperationVO.
         :rtype: int
@@ -425,7 +425,7 @@ class BatchOperationVO:
     def failed(self, failed):
         """Sets the failed of this BatchOperationVO.
 
-        失败个数。
+        操作失败个数。
 
         :param failed: The failed of this BatchOperationVO.
         :type failed: int

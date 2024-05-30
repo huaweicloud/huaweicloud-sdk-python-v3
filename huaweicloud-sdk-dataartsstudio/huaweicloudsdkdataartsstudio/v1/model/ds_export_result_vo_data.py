@@ -33,7 +33,7 @@ class DsExportResultVOData:
 
         The model defined in huaweicloud sdk
 
-        :param status: 标识本次导出的唯一值，用于查询导入结果。importing(导出中)、fail(导出失败)、success(导出成功)。
+        :param status: 标识本次导出的唯一值，用于查询导入结果。importing(导出中)、fail(导出失败)、success(导出成功)。 枚举值：   - importing: 导出中   - fail: 导出失败   - success: 导出成功 
         :type status: str
         :param group: 
         :type group: :class:`huaweicloudsdkdataartsstudio.v1.BatchOperationVO`
@@ -59,7 +59,7 @@ class DsExportResultVOData:
     def status(self):
         """Gets the status of this DsExportResultVOData.
 
-        标识本次导出的唯一值，用于查询导入结果。importing(导出中)、fail(导出失败)、success(导出成功)。
+        标识本次导出的唯一值，用于查询导入结果。importing(导出中)、fail(导出失败)、success(导出成功)。 枚举值：   - importing: 导出中   - fail: 导出失败   - success: 导出成功 
 
         :return: The status of this DsExportResultVOData.
         :rtype: str
@@ -70,7 +70,7 @@ class DsExportResultVOData:
     def status(self, status):
         """Sets the status of this DsExportResultVOData.
 
-        标识本次导出的唯一值，用于查询导入结果。importing(导出中)、fail(导出失败)、success(导出成功)。
+        标识本次导出的唯一值，用于查询导入结果。importing(导出中)、fail(导出失败)、success(导出成功)。 枚举值：   - importing: 导出中   - fail: 导出失败   - success: 导出成功 
 
         :param status: The status of this DsExportResultVOData.
         :type status: str

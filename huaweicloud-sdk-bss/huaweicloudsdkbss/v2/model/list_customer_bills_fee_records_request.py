@@ -75,9 +75,9 @@ class ListCustomerBillsFeeRecordsRequest:
         :type resource_type_code: str
         :param region_code: 云服务区编码，例如：“cn-north-1”。具体请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)对应云服务的“区域”列的值。此参数不携带或携带值为空时，不作为筛选条件。
         :type region_code: str
-        :param charging_mode: 计费模式：1 : 包年/包月3：按需10：预留实例 此参数不携带或携带值为空时，不作为筛选条件。
+        :param charging_mode: 计费模式：1 : 包年/包月3：按需10：预留实例11：节省计划 此参数不携带或携带值为空时，不作为筛选条件。
         :type charging_mode: int
-        :param bill_type: 账单类型：1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20 退款-变更(整机)21 退款-变更(降配) 此参数不携带或携带值为空时，不作为筛选条件。
+        :param bill_type: 账单类型：1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更23：消费-节省计划抵扣24：退款-包年/包月转按需此参数不携带或携带值为空时，不作为筛选条件。
         :type bill_type: int
         :param trade_id: 订单ID或交易ID。账单类型为1、2、3、4和8时此处为订单ID。账单类型为其它场景时此处为交易ID，为扣费维度的唯一标识。例如非月末扣费时为应收ID；月末扣费时为账单ID。此参数不携带或携带值为空时，不作为筛选条件。
         :type trade_id: str
@@ -295,7 +295,7 @@ class ListCustomerBillsFeeRecordsRequest:
     def charging_mode(self):
         """Gets the charging_mode of this ListCustomerBillsFeeRecordsRequest.
 
-        计费模式：1 : 包年/包月3：按需10：预留实例 此参数不携带或携带值为空时，不作为筛选条件。
+        计费模式：1 : 包年/包月3：按需10：预留实例11：节省计划 此参数不携带或携带值为空时，不作为筛选条件。
 
         :return: The charging_mode of this ListCustomerBillsFeeRecordsRequest.
         :rtype: int
@@ -306,7 +306,7 @@ class ListCustomerBillsFeeRecordsRequest:
     def charging_mode(self, charging_mode):
         """Sets the charging_mode of this ListCustomerBillsFeeRecordsRequest.
 
-        计费模式：1 : 包年/包月3：按需10：预留实例 此参数不携带或携带值为空时，不作为筛选条件。
+        计费模式：1 : 包年/包月3：按需10：预留实例11：节省计划 此参数不携带或携带值为空时，不作为筛选条件。
 
         :param charging_mode: The charging_mode of this ListCustomerBillsFeeRecordsRequest.
         :type charging_mode: int
@@ -317,7 +317,7 @@ class ListCustomerBillsFeeRecordsRequest:
     def bill_type(self):
         """Gets the bill_type of this ListCustomerBillsFeeRecordsRequest.
 
-        账单类型：1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20 退款-变更(整机)21 退款-变更(降配) 此参数不携带或携带值为空时，不作为筛选条件。
+        账单类型：1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更23：消费-节省计划抵扣24：退款-包年/包月转按需此参数不携带或携带值为空时，不作为筛选条件。
 
         :return: The bill_type of this ListCustomerBillsFeeRecordsRequest.
         :rtype: int
@@ -328,7 +328,7 @@ class ListCustomerBillsFeeRecordsRequest:
     def bill_type(self, bill_type):
         """Sets the bill_type of this ListCustomerBillsFeeRecordsRequest.
 
-        账单类型：1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20 退款-变更(整机)21 退款-变更(降配) 此参数不携带或携带值为空时，不作为筛选条件。
+        账单类型：1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更23：消费-节省计划抵扣24：退款-包年/包月转按需此参数不携带或携带值为空时，不作为筛选条件。
 
         :param bill_type: The bill_type of this ListCustomerBillsFeeRecordsRequest.
         :type bill_type: int

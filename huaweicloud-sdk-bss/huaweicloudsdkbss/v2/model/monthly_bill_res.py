@@ -117,7 +117,7 @@ class MonthlyBillRes:
         :type cycle: str
         :param bill_date: 消费日期，东八区时间，格式为YYYY-MM-DD。  说明： 当statistic_type&#x3D;2时该字段才有值，否则返回null。
         :type bill_date: str
-        :param bill_type: 账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更
+        :param bill_type: 账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更23：消费-节省计划抵扣24：退款-包年/包月转按需
         :type bill_type: int
         :param customer_id: 消费的客户账号ID。 如果是普通客户或者企业子客户查询消费记录，只能查询到客户自己的消费记录，且此处显示的是客户自己的客户ID。如果是企业主查询消费记录，可以查询到企业主以及企业子客户的消费记录，此处为消费的实际客户ID。如果是企业主自己的消费记录，则为企业主ID；如果是某个企业子客户的消费记录，则此处为企业子账号ID。
         :type customer_id: str
@@ -145,7 +145,7 @@ class MonthlyBillRes:
         :type enterprise_project_id: str
         :param enterprise_project_name: 企业项目名称。
         :type enterprise_project_name: str
-        :param charge_mode: 计费模式。 1 : 包年/包月3：按需10：预留实例
+        :param charge_mode: 计费模式。 1 : 包年/包月3：按需10：预留实例11：节省计划
         :type charge_mode: int
         :param consume_amount: 客户购买云服务类型的消费金额，包含代金券、现金券，精确到小数点后2位。  说明： consume_amount的值等于cash_amount，credit_amount，coupon_amount，flexipurchase_coupon_amount，stored_card_amount，bonus_amount，debt_amount，adjustment_amount的总和。
         :type consume_amount: float
@@ -183,17 +183,17 @@ class MonthlyBillRes:
         :type id: str
         :param product_spec_desc: 产品的规格描述。
         :type product_spec_desc: str
-        :param sub_service_type_code: 该字段为预留字段。
+        :param sub_service_type_code: 整机的子云服务的自身的云服务类型编码。
         :type sub_service_type_code: str
-        :param sub_service_type_name: 该字段为预留字段。
+        :param sub_service_type_name: 整机的子云服务的自身的云服务类型名称。
         :type sub_service_type_name: str
-        :param sub_resource_type_code: 该字段为预留字段。
+        :param sub_resource_type_code: 整机的子云服务的自身的资源类型编码。
         :type sub_resource_type_code: str
-        :param sub_resource_type_name: 该字段为预留字段。
+        :param sub_resource_type_name: 整机的子云服务的自身的资源类型名称。
         :type sub_resource_type_name: str
-        :param sub_resource_id: 该字段为预留字段。
+        :param sub_resource_id: 整机的子云服务的自身的资源ID，资源标识。（如果为预留实例，则为预留实例标识）
         :type sub_resource_id: str
-        :param sub_resource_name: 该字段为预留字段。
+        :param sub_resource_name: 整机的子云服务的自身的资源名称，资源标识。（如果为预留实例，则为预留实例标识）
         :type sub_resource_name: str
         :param pre_order_id: 原订单ID 。
         :type pre_order_id: str
@@ -383,7 +383,7 @@ class MonthlyBillRes:
     def bill_type(self):
         """Gets the bill_type of this MonthlyBillRes.
 
-        账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更
+        账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更23：消费-节省计划抵扣24：退款-包年/包月转按需
 
         :return: The bill_type of this MonthlyBillRes.
         :rtype: int
@@ -394,7 +394,7 @@ class MonthlyBillRes:
     def bill_type(self, bill_type):
         """Sets the bill_type of this MonthlyBillRes.
 
-        账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更
+        账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更23：消费-节省计划抵扣24：退款-包年/包月转按需
 
         :param bill_type: The bill_type of this MonthlyBillRes.
         :type bill_type: int
@@ -691,7 +691,7 @@ class MonthlyBillRes:
     def charge_mode(self):
         """Gets the charge_mode of this MonthlyBillRes.
 
-        计费模式。 1 : 包年/包月3：按需10：预留实例
+        计费模式。 1 : 包年/包月3：按需10：预留实例11：节省计划
 
         :return: The charge_mode of this MonthlyBillRes.
         :rtype: int
@@ -702,7 +702,7 @@ class MonthlyBillRes:
     def charge_mode(self, charge_mode):
         """Sets the charge_mode of this MonthlyBillRes.
 
-        计费模式。 1 : 包年/包月3：按需10：预留实例
+        计费模式。 1 : 包年/包月3：按需10：预留实例11：节省计划
 
         :param charge_mode: The charge_mode of this MonthlyBillRes.
         :type charge_mode: int
@@ -1109,7 +1109,7 @@ class MonthlyBillRes:
     def sub_service_type_code(self):
         """Gets the sub_service_type_code of this MonthlyBillRes.
 
-        该字段为预留字段。
+        整机的子云服务的自身的云服务类型编码。
 
         :return: The sub_service_type_code of this MonthlyBillRes.
         :rtype: str
@@ -1120,7 +1120,7 @@ class MonthlyBillRes:
     def sub_service_type_code(self, sub_service_type_code):
         """Sets the sub_service_type_code of this MonthlyBillRes.
 
-        该字段为预留字段。
+        整机的子云服务的自身的云服务类型编码。
 
         :param sub_service_type_code: The sub_service_type_code of this MonthlyBillRes.
         :type sub_service_type_code: str
@@ -1131,7 +1131,7 @@ class MonthlyBillRes:
     def sub_service_type_name(self):
         """Gets the sub_service_type_name of this MonthlyBillRes.
 
-        该字段为预留字段。
+        整机的子云服务的自身的云服务类型名称。
 
         :return: The sub_service_type_name of this MonthlyBillRes.
         :rtype: str
@@ -1142,7 +1142,7 @@ class MonthlyBillRes:
     def sub_service_type_name(self, sub_service_type_name):
         """Sets the sub_service_type_name of this MonthlyBillRes.
 
-        该字段为预留字段。
+        整机的子云服务的自身的云服务类型名称。
 
         :param sub_service_type_name: The sub_service_type_name of this MonthlyBillRes.
         :type sub_service_type_name: str
@@ -1153,7 +1153,7 @@ class MonthlyBillRes:
     def sub_resource_type_code(self):
         """Gets the sub_resource_type_code of this MonthlyBillRes.
 
-        该字段为预留字段。
+        整机的子云服务的自身的资源类型编码。
 
         :return: The sub_resource_type_code of this MonthlyBillRes.
         :rtype: str
@@ -1164,7 +1164,7 @@ class MonthlyBillRes:
     def sub_resource_type_code(self, sub_resource_type_code):
         """Sets the sub_resource_type_code of this MonthlyBillRes.
 
-        该字段为预留字段。
+        整机的子云服务的自身的资源类型编码。
 
         :param sub_resource_type_code: The sub_resource_type_code of this MonthlyBillRes.
         :type sub_resource_type_code: str
@@ -1175,7 +1175,7 @@ class MonthlyBillRes:
     def sub_resource_type_name(self):
         """Gets the sub_resource_type_name of this MonthlyBillRes.
 
-        该字段为预留字段。
+        整机的子云服务的自身的资源类型名称。
 
         :return: The sub_resource_type_name of this MonthlyBillRes.
         :rtype: str
@@ -1186,7 +1186,7 @@ class MonthlyBillRes:
     def sub_resource_type_name(self, sub_resource_type_name):
         """Sets the sub_resource_type_name of this MonthlyBillRes.
 
-        该字段为预留字段。
+        整机的子云服务的自身的资源类型名称。
 
         :param sub_resource_type_name: The sub_resource_type_name of this MonthlyBillRes.
         :type sub_resource_type_name: str
@@ -1197,7 +1197,7 @@ class MonthlyBillRes:
     def sub_resource_id(self):
         """Gets the sub_resource_id of this MonthlyBillRes.
 
-        该字段为预留字段。
+        整机的子云服务的自身的资源ID，资源标识。（如果为预留实例，则为预留实例标识）
 
         :return: The sub_resource_id of this MonthlyBillRes.
         :rtype: str
@@ -1208,7 +1208,7 @@ class MonthlyBillRes:
     def sub_resource_id(self, sub_resource_id):
         """Sets the sub_resource_id of this MonthlyBillRes.
 
-        该字段为预留字段。
+        整机的子云服务的自身的资源ID，资源标识。（如果为预留实例，则为预留实例标识）
 
         :param sub_resource_id: The sub_resource_id of this MonthlyBillRes.
         :type sub_resource_id: str
@@ -1219,7 +1219,7 @@ class MonthlyBillRes:
     def sub_resource_name(self):
         """Gets the sub_resource_name of this MonthlyBillRes.
 
-        该字段为预留字段。
+        整机的子云服务的自身的资源名称，资源标识。（如果为预留实例，则为预留实例标识）
 
         :return: The sub_resource_name of this MonthlyBillRes.
         :rtype: str
@@ -1230,7 +1230,7 @@ class MonthlyBillRes:
     def sub_resource_name(self, sub_resource_name):
         """Sets the sub_resource_name of this MonthlyBillRes.
 
-        该字段为预留字段。
+        整机的子云服务的自身的资源名称，资源标识。（如果为预留实例，则为预留实例标识）
 
         :param sub_resource_name: The sub_resource_name of this MonthlyBillRes.
         :type sub_resource_name: str

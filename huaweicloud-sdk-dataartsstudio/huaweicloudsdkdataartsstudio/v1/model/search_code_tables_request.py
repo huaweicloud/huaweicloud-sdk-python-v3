@@ -22,7 +22,7 @@ class SearchCodeTablesRequest:
         'name': 'str',
         'create_by': 'str',
         'approver': 'str',
-        'directory_id': 'int',
+        'directory_id': 'str',
         'status': 'str',
         'begin_time': 'str',
         'end_time': 'str',
@@ -59,15 +59,15 @@ class SearchCodeTablesRequest:
         :type create_by: str
         :param approver: 按审核人查询。
         :type approver: str
-        :param directory_id: 目录ID
-        :type directory_id: int
-        :param status: 业务状态。DRAFT(草稿)、PUBLISH_DEVELOPING(发布待审批)、PUBLISHED(已发布)、OFFLINE_DEVELOPING(下线待审批)、OFFLINE(已下线)、REJECT(已驳回)。
+        :param directory_id: 目录ID，填写String类型替代Long类型。
+        :type directory_id: str
+        :param status: 业务状态。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审批   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审批   - OFFLINE: 已下线   - REJECT: 已驳回 
         :type status: str
         :param begin_time: 时间过滤左边界，与end_time一起使用，只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type begin_time: str
         :param end_time: 时间过滤右边界，与begin_time一起使用只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type end_time: str
-        :param limit: 查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+        :param limit: 每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
         :type limit: int
         :param offset: 查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
         :type offset: int
@@ -224,10 +224,10 @@ class SearchCodeTablesRequest:
     def directory_id(self):
         """Gets the directory_id of this SearchCodeTablesRequest.
 
-        目录ID
+        目录ID，填写String类型替代Long类型。
 
         :return: The directory_id of this SearchCodeTablesRequest.
-        :rtype: int
+        :rtype: str
         """
         return self._directory_id
 
@@ -235,10 +235,10 @@ class SearchCodeTablesRequest:
     def directory_id(self, directory_id):
         """Sets the directory_id of this SearchCodeTablesRequest.
 
-        目录ID
+        目录ID，填写String类型替代Long类型。
 
         :param directory_id: The directory_id of this SearchCodeTablesRequest.
-        :type directory_id: int
+        :type directory_id: str
         """
         self._directory_id = directory_id
 
@@ -246,7 +246,7 @@ class SearchCodeTablesRequest:
     def status(self):
         """Gets the status of this SearchCodeTablesRequest.
 
-        业务状态。DRAFT(草稿)、PUBLISH_DEVELOPING(发布待审批)、PUBLISHED(已发布)、OFFLINE_DEVELOPING(下线待审批)、OFFLINE(已下线)、REJECT(已驳回)。
+        业务状态。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审批   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审批   - OFFLINE: 已下线   - REJECT: 已驳回 
 
         :return: The status of this SearchCodeTablesRequest.
         :rtype: str
@@ -257,7 +257,7 @@ class SearchCodeTablesRequest:
     def status(self, status):
         """Sets the status of this SearchCodeTablesRequest.
 
-        业务状态。DRAFT(草稿)、PUBLISH_DEVELOPING(发布待审批)、PUBLISHED(已发布)、OFFLINE_DEVELOPING(下线待审批)、OFFLINE(已下线)、REJECT(已驳回)。
+        业务状态。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审批   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审批   - OFFLINE: 已下线   - REJECT: 已驳回 
 
         :param status: The status of this SearchCodeTablesRequest.
         :type status: str
@@ -312,7 +312,7 @@ class SearchCodeTablesRequest:
     def limit(self):
         """Gets the limit of this SearchCodeTablesRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+        每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :return: The limit of this SearchCodeTablesRequest.
         :rtype: int
@@ -323,7 +323,7 @@ class SearchCodeTablesRequest:
     def limit(self, limit):
         """Sets the limit of this SearchCodeTablesRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+        每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :param limit: The limit of this SearchCodeTablesRequest.
         :type limit: int

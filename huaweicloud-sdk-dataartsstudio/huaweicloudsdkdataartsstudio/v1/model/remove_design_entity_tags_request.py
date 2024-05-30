@@ -41,9 +41,9 @@ class RemoveDesignEntityTagsRequest:
         :type workspace: str
         :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
         :type x_project_id: str
-        :param entity_id: 表的ID。
+        :param entity_id: 表的ID，填写String类型替代Long类型。
         :type entity_id: str
-        :param attr_id: 属性的ID。
+        :param attr_id: 属性的ID，填写String类型替代Long类型。
         :type attr_id: str
         :param tag: 标签名。
         :type tag: str
@@ -114,7 +114,7 @@ class RemoveDesignEntityTagsRequest:
     def entity_id(self):
         """Gets the entity_id of this RemoveDesignEntityTagsRequest.
 
-        表的ID。
+        表的ID，填写String类型替代Long类型。
 
         :return: The entity_id of this RemoveDesignEntityTagsRequest.
         :rtype: str
@@ -125,7 +125,7 @@ class RemoveDesignEntityTagsRequest:
     def entity_id(self, entity_id):
         """Sets the entity_id of this RemoveDesignEntityTagsRequest.
 
-        表的ID。
+        表的ID，填写String类型替代Long类型。
 
         :param entity_id: The entity_id of this RemoveDesignEntityTagsRequest.
         :type entity_id: str
@@ -136,7 +136,7 @@ class RemoveDesignEntityTagsRequest:
     def attr_id(self):
         """Gets the attr_id of this RemoveDesignEntityTagsRequest.
 
-        属性的ID。
+        属性的ID，填写String类型替代Long类型。
 
         :return: The attr_id of this RemoveDesignEntityTagsRequest.
         :rtype: str
@@ -147,7 +147,7 @@ class RemoveDesignEntityTagsRequest:
     def attr_id(self, attr_id):
         """Sets the attr_id of this RemoveDesignEntityTagsRequest.
 
-        属性的ID。
+        属性的ID，填写String类型替代Long类型。
 
         :param attr_id: The attr_id of this RemoveDesignEntityTagsRequest.
         :type attr_id: str

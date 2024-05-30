@@ -33,9 +33,9 @@ class CseClient(Client):
         return client_builder
 
     def create_engine(self, request):
-        """创建微服务引擎专享版
+        """创建微服务引擎
 
-        创建微服务引擎专享版。
+        创建微服务引擎，支持创建ServiceComb引擎专享版、注册配置中心、应用网关（公测）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -252,9 +252,9 @@ class CseClient(Client):
         return http_info
 
     def delete_engine(self, request):
-        """删除微服务引擎专享版
+        """删除微服务引擎
 
-        删除微服务引擎专享版。
+        删除微服务引擎。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -581,6 +581,8 @@ class CseClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
 
         header_params = {}
 
@@ -609,9 +611,9 @@ class CseClient(Client):
         return http_info
 
     def list_flavors(self, request):
-        """查询微服务引擎专享版的规格列表
+        """查询微服务引擎的规格列表
 
-        查询微服务引擎专享版的规格列表。
+        查询微服务引擎的规格列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1041,9 +1043,9 @@ class CseClient(Client):
         return http_info
 
     def retry_engine(self, request):
-        """对微服务引擎专享版进行重试
+        """对微服务引擎进行重试
 
-        对微服务引擎专享版进行重试
+        对微服务引擎进行重试，当前支持ServiceComb专享版引擎
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1110,9 +1112,9 @@ class CseClient(Client):
         return http_info
 
     def show_engine(self, request):
-        """查询微服务引擎专享版详情
+        """查询微服务引擎详情
 
-        查询微服务引擎专享版详情
+        查询微服务引擎详情
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1386,9 +1388,9 @@ class CseClient(Client):
         return http_info
 
     def upgrade_engine(self, request):
-        """升级微服务引擎专享版
+        """升级微服务引擎
 
-        升级微服务引擎专享版
+        升级微服务引擎
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1455,9 +1457,9 @@ class CseClient(Client):
         return http_info
 
     def upgrade_engine_config(self, request):
-        """更新微服务引擎专享版配置
+        """更新微服务引擎配置
 
-        更新微服务引擎专享版配置
+        更新微服务引擎配置，更新ServiceComb专享版引擎与注册配置中心引擎的配置
         
         Please refer to HUAWEI cloud API Explorer for details.
 

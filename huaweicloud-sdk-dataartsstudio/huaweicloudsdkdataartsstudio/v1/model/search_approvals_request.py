@@ -19,7 +19,7 @@ class SearchApprovalsRequest:
     openapi_types = {
         'workspace': 'str',
         'x_project_id': 'str',
-        'biz_id': 'int',
+        'biz_id': 'str',
         'name': 'str',
         'create_by': 'str',
         'approver': 'str',
@@ -59,27 +59,27 @@ class SearchApprovalsRequest:
         :type workspace: str
         :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
         :type x_project_id: str
-        :param biz_id: 业务定义ID。
-        :type biz_id: int
+        :param biz_id: 业务定义ID，填写String类型替代Long类型。
+        :type biz_id: str
         :param name: 按名称或编码模糊查询。
         :type name: str
         :param create_by: 按创建者查询。
         :type create_by: str
         :param approver: 按审核人查询。
         :type approver: str
-        :param approval_status: 审批单状态。DEVELOPING(待审批)、FINISHED(已审批)。
+        :param approval_status: 审批单状态。 枚举值：   - DEVELOPING: 待审批   - FINISHED: 已审批 
         :type approval_status: str
-        :param approval_status_detail: 审批单状态。DEVELOPING(待审批)、APPROVED(审批通过)、REJECT(审批驳回)。
+        :param approval_status_detail: 审批单状态。 枚举值：   - DEVELOPING: 待审批   - APPROVED: 审批通过   - REJECT: 审批驳回 
         :type approval_status_detail: str
-        :param approval_type: 业务审核类型。PUBLISH(发布)、OFFLINE(下线)。
+        :param approval_type: 业务审核类型。 枚举值：   - PUBLISH: 发布   - OFFLINE: 下线 
         :type approval_type: str
-        :param biz_type: 按业务类型查询。
+        :param biz_type: 按业务类型查询，可选业务类型有：ATOMIC_INDEX（原子指标）、DERIVATIVE_INDEX（衍生指标）、DIMENSION（维度）、TIME_CONDITION（时间限定）、DIMENSION_LOGIC_TABLE（维度表）、FACT_LOGIC_TABLE（事实表）、AGGREGATION_LOGIC_TABLE（汇总表）、TABLE_MODEL（关系建模表）、CODE_TABLE（码表）、STANDARD_ELEMENT）（数据标准）、BIZ_METRIC（业务指标）、COMPOUND_METRIC（复合指标）、SUBJECT（主题）、ATOMIC_METRIC（原子指标（新））、DERIVED_METRIC（衍生指标（新））、COMPOSITE_METRIC（复合指标（新））。
         :type biz_type: str
         :param begin_time: 时间过滤左边界，与end_time一起使用，只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type begin_time: str
         :param end_time: 时间过滤右边界，与begin_time一起使用只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type end_time: str
-        :param limit: 查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+        :param limit: 每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
         :type limit: int
         :param offset: 查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
         :type offset: int
@@ -179,10 +179,10 @@ class SearchApprovalsRequest:
     def biz_id(self):
         """Gets the biz_id of this SearchApprovalsRequest.
 
-        业务定义ID。
+        业务定义ID，填写String类型替代Long类型。
 
         :return: The biz_id of this SearchApprovalsRequest.
-        :rtype: int
+        :rtype: str
         """
         return self._biz_id
 
@@ -190,10 +190,10 @@ class SearchApprovalsRequest:
     def biz_id(self, biz_id):
         """Sets the biz_id of this SearchApprovalsRequest.
 
-        业务定义ID。
+        业务定义ID，填写String类型替代Long类型。
 
         :param biz_id: The biz_id of this SearchApprovalsRequest.
-        :type biz_id: int
+        :type biz_id: str
         """
         self._biz_id = biz_id
 
@@ -267,7 +267,7 @@ class SearchApprovalsRequest:
     def approval_status(self):
         """Gets the approval_status of this SearchApprovalsRequest.
 
-        审批单状态。DEVELOPING(待审批)、FINISHED(已审批)。
+        审批单状态。 枚举值：   - DEVELOPING: 待审批   - FINISHED: 已审批 
 
         :return: The approval_status of this SearchApprovalsRequest.
         :rtype: str
@@ -278,7 +278,7 @@ class SearchApprovalsRequest:
     def approval_status(self, approval_status):
         """Sets the approval_status of this SearchApprovalsRequest.
 
-        审批单状态。DEVELOPING(待审批)、FINISHED(已审批)。
+        审批单状态。 枚举值：   - DEVELOPING: 待审批   - FINISHED: 已审批 
 
         :param approval_status: The approval_status of this SearchApprovalsRequest.
         :type approval_status: str
@@ -289,7 +289,7 @@ class SearchApprovalsRequest:
     def approval_status_detail(self):
         """Gets the approval_status_detail of this SearchApprovalsRequest.
 
-        审批单状态。DEVELOPING(待审批)、APPROVED(审批通过)、REJECT(审批驳回)。
+        审批单状态。 枚举值：   - DEVELOPING: 待审批   - APPROVED: 审批通过   - REJECT: 审批驳回 
 
         :return: The approval_status_detail of this SearchApprovalsRequest.
         :rtype: str
@@ -300,7 +300,7 @@ class SearchApprovalsRequest:
     def approval_status_detail(self, approval_status_detail):
         """Sets the approval_status_detail of this SearchApprovalsRequest.
 
-        审批单状态。DEVELOPING(待审批)、APPROVED(审批通过)、REJECT(审批驳回)。
+        审批单状态。 枚举值：   - DEVELOPING: 待审批   - APPROVED: 审批通过   - REJECT: 审批驳回 
 
         :param approval_status_detail: The approval_status_detail of this SearchApprovalsRequest.
         :type approval_status_detail: str
@@ -311,7 +311,7 @@ class SearchApprovalsRequest:
     def approval_type(self):
         """Gets the approval_type of this SearchApprovalsRequest.
 
-        业务审核类型。PUBLISH(发布)、OFFLINE(下线)。
+        业务审核类型。 枚举值：   - PUBLISH: 发布   - OFFLINE: 下线 
 
         :return: The approval_type of this SearchApprovalsRequest.
         :rtype: str
@@ -322,7 +322,7 @@ class SearchApprovalsRequest:
     def approval_type(self, approval_type):
         """Sets the approval_type of this SearchApprovalsRequest.
 
-        业务审核类型。PUBLISH(发布)、OFFLINE(下线)。
+        业务审核类型。 枚举值：   - PUBLISH: 发布   - OFFLINE: 下线 
 
         :param approval_type: The approval_type of this SearchApprovalsRequest.
         :type approval_type: str
@@ -333,7 +333,7 @@ class SearchApprovalsRequest:
     def biz_type(self):
         """Gets the biz_type of this SearchApprovalsRequest.
 
-        按业务类型查询。
+        按业务类型查询，可选业务类型有：ATOMIC_INDEX（原子指标）、DERIVATIVE_INDEX（衍生指标）、DIMENSION（维度）、TIME_CONDITION（时间限定）、DIMENSION_LOGIC_TABLE（维度表）、FACT_LOGIC_TABLE（事实表）、AGGREGATION_LOGIC_TABLE（汇总表）、TABLE_MODEL（关系建模表）、CODE_TABLE（码表）、STANDARD_ELEMENT）（数据标准）、BIZ_METRIC（业务指标）、COMPOUND_METRIC（复合指标）、SUBJECT（主题）、ATOMIC_METRIC（原子指标（新））、DERIVED_METRIC（衍生指标（新））、COMPOSITE_METRIC（复合指标（新））。
 
         :return: The biz_type of this SearchApprovalsRequest.
         :rtype: str
@@ -344,7 +344,7 @@ class SearchApprovalsRequest:
     def biz_type(self, biz_type):
         """Sets the biz_type of this SearchApprovalsRequest.
 
-        按业务类型查询。
+        按业务类型查询，可选业务类型有：ATOMIC_INDEX（原子指标）、DERIVATIVE_INDEX（衍生指标）、DIMENSION（维度）、TIME_CONDITION（时间限定）、DIMENSION_LOGIC_TABLE（维度表）、FACT_LOGIC_TABLE（事实表）、AGGREGATION_LOGIC_TABLE（汇总表）、TABLE_MODEL（关系建模表）、CODE_TABLE（码表）、STANDARD_ELEMENT）（数据标准）、BIZ_METRIC（业务指标）、COMPOUND_METRIC（复合指标）、SUBJECT（主题）、ATOMIC_METRIC（原子指标（新））、DERIVED_METRIC（衍生指标（新））、COMPOSITE_METRIC（复合指标（新））。
 
         :param biz_type: The biz_type of this SearchApprovalsRequest.
         :type biz_type: str
@@ -399,7 +399,7 @@ class SearchApprovalsRequest:
     def limit(self):
         """Gets the limit of this SearchApprovalsRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+        每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :return: The limit of this SearchApprovalsRequest.
         :rtype: int
@@ -410,7 +410,7 @@ class SearchApprovalsRequest:
     def limit(self, limit):
         """Sets the limit of this SearchApprovalsRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
+        每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :param limit: The limit of this SearchApprovalsRequest.
         :type limit: int

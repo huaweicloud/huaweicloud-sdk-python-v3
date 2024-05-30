@@ -55,13 +55,13 @@ class ListSubCustomerCouponsRequest:
         :type order_id: str
         :param promotion_plan_id: 促销计划ID。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串时，作为筛选条件。
         :type promotion_plan_id: str
-        :param coupon_type: 优惠券类型：1：代金券2：折扣券3：产品券4：现金券此参数不携带或携带值为空时，不作为筛选条件。
+        :param coupon_type: 优惠券类型：1：代金券2：折扣券3：产品券4：现金券。此参数不携带或携带值为空或携带值为null时，不作为筛选条件；不支持携带值为空串。
         :type coupon_type: int
-        :param status: 客户优惠券实例状态：1：未激活2：待使用3：已使用4：已过期此参数不携带或携带值为空时，不作为筛选条件。
+        :param status: 客户优惠券实例状态：1：未激活2：待使用3：已使用4：已过期。此参数不携带或携带值为空时，不作为筛选条件。 说明： 已过期优惠券，只返回12个月以内的数据。
         :type status: int
-        :param active_start_time: 激活时间。UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。此参数不携带或携带值为空时，不作为筛选条件。
+        :param active_start_time: 激活时间。UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。此参数不携带或携带值为空时，不作为筛选条件；不支持携带值为空串或携带值为null。
         :type active_start_time: str
-        :param active_end_time: 结束时间。UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。此参数不携带或携带值为空时，不作为筛选条件。
+        :param active_end_time: 结束时间。UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。此参数不携带或携带值为空时，不作为筛选条件；不支持携带值为空串或携带值为null。
         :type active_end_time: str
         :param offset: 偏移量，从0开始。默认值为0。此参数需与limit联合使用，不支持单独使用。说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
         :type offset: int
@@ -181,7 +181,7 @@ class ListSubCustomerCouponsRequest:
     def coupon_type(self):
         """Gets the coupon_type of this ListSubCustomerCouponsRequest.
 
-        优惠券类型：1：代金券2：折扣券3：产品券4：现金券此参数不携带或携带值为空时，不作为筛选条件。
+        优惠券类型：1：代金券2：折扣券3：产品券4：现金券。此参数不携带或携带值为空或携带值为null时，不作为筛选条件；不支持携带值为空串。
 
         :return: The coupon_type of this ListSubCustomerCouponsRequest.
         :rtype: int
@@ -192,7 +192,7 @@ class ListSubCustomerCouponsRequest:
     def coupon_type(self, coupon_type):
         """Sets the coupon_type of this ListSubCustomerCouponsRequest.
 
-        优惠券类型：1：代金券2：折扣券3：产品券4：现金券此参数不携带或携带值为空时，不作为筛选条件。
+        优惠券类型：1：代金券2：折扣券3：产品券4：现金券。此参数不携带或携带值为空或携带值为null时，不作为筛选条件；不支持携带值为空串。
 
         :param coupon_type: The coupon_type of this ListSubCustomerCouponsRequest.
         :type coupon_type: int
@@ -203,7 +203,7 @@ class ListSubCustomerCouponsRequest:
     def status(self):
         """Gets the status of this ListSubCustomerCouponsRequest.
 
-        客户优惠券实例状态：1：未激活2：待使用3：已使用4：已过期此参数不携带或携带值为空时，不作为筛选条件。
+        客户优惠券实例状态：1：未激活2：待使用3：已使用4：已过期。此参数不携带或携带值为空时，不作为筛选条件。 说明： 已过期优惠券，只返回12个月以内的数据。
 
         :return: The status of this ListSubCustomerCouponsRequest.
         :rtype: int
@@ -214,7 +214,7 @@ class ListSubCustomerCouponsRequest:
     def status(self, status):
         """Sets the status of this ListSubCustomerCouponsRequest.
 
-        客户优惠券实例状态：1：未激活2：待使用3：已使用4：已过期此参数不携带或携带值为空时，不作为筛选条件。
+        客户优惠券实例状态：1：未激活2：待使用3：已使用4：已过期。此参数不携带或携带值为空时，不作为筛选条件。 说明： 已过期优惠券，只返回12个月以内的数据。
 
         :param status: The status of this ListSubCustomerCouponsRequest.
         :type status: int
@@ -225,7 +225,7 @@ class ListSubCustomerCouponsRequest:
     def active_start_time(self):
         """Gets the active_start_time of this ListSubCustomerCouponsRequest.
 
-        激活时间。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。此参数不携带或携带值为空时，不作为筛选条件。
+        激活时间。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。此参数不携带或携带值为空时，不作为筛选条件；不支持携带值为空串或携带值为null。
 
         :return: The active_start_time of this ListSubCustomerCouponsRequest.
         :rtype: str
@@ -236,7 +236,7 @@ class ListSubCustomerCouponsRequest:
     def active_start_time(self, active_start_time):
         """Sets the active_start_time of this ListSubCustomerCouponsRequest.
 
-        激活时间。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。此参数不携带或携带值为空时，不作为筛选条件。
+        激活时间。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。此参数不携带或携带值为空时，不作为筛选条件；不支持携带值为空串或携带值为null。
 
         :param active_start_time: The active_start_time of this ListSubCustomerCouponsRequest.
         :type active_start_time: str
@@ -247,7 +247,7 @@ class ListSubCustomerCouponsRequest:
     def active_end_time(self):
         """Gets the active_end_time of this ListSubCustomerCouponsRequest.
 
-        结束时间。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。此参数不携带或携带值为空时，不作为筛选条件。
+        结束时间。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。此参数不携带或携带值为空时，不作为筛选条件；不支持携带值为空串或携带值为null。
 
         :return: The active_end_time of this ListSubCustomerCouponsRequest.
         :rtype: str
@@ -258,7 +258,7 @@ class ListSubCustomerCouponsRequest:
     def active_end_time(self, active_end_time):
         """Sets the active_end_time of this ListSubCustomerCouponsRequest.
 
-        结束时间。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。此参数不携带或携带值为空时，不作为筛选条件。
+        结束时间。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。此参数不携带或携带值为空时，不作为筛选条件；不支持携带值为空串或携带值为null。
 
         :param active_end_time: The active_end_time of this ListSubCustomerCouponsRequest.
         :type active_end_time: str

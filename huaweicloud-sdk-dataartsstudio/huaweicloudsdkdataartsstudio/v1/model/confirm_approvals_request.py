@@ -39,7 +39,7 @@ class ConfirmApprovalsRequest:
         :type workspace: str
         :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
         :type x_project_id: str
-        :param action_id: 处理审批单结果类型。reject(审批驳回)、resolve(审批通过)。
+        :param action_id: 处理审批单结果类型。 枚举值：   - reject: 审批驳回   - resolve: 审批通过 
         :type action_id: str
         :param body: Body of the ConfirmApprovalsRequest
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalInfoParam`
@@ -108,7 +108,7 @@ class ConfirmApprovalsRequest:
     def action_id(self):
         """Gets the action_id of this ConfirmApprovalsRequest.
 
-        处理审批单结果类型。reject(审批驳回)、resolve(审批通过)。
+        处理审批单结果类型。 枚举值：   - reject: 审批驳回   - resolve: 审批通过 
 
         :return: The action_id of this ConfirmApprovalsRequest.
         :rtype: str
@@ -119,7 +119,7 @@ class ConfirmApprovalsRequest:
     def action_id(self, action_id):
         """Sets the action_id of this ConfirmApprovalsRequest.
 
-        处理审批单结果类型。reject(审批驳回)、resolve(审批通过)。
+        处理审批单结果类型。 枚举值：   - reject: 审批驳回   - resolve: 审批通过 
 
         :param action_id: The action_id of this ConfirmApprovalsRequest.
         :type action_id: str

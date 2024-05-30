@@ -18,7 +18,7 @@ class ShowFactLogicTableByIdResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'object'
+        'data': 'ShowFactLogicTableByIdResultData'
     }
 
     attribute_map = {
@@ -30,8 +30,8 @@ class ShowFactLogicTableByIdResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: 返回的数据信息。
-        :type data: object
+        :param data: 
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.ShowFactLogicTableByIdResultData`
         """
         
         super(ShowFactLogicTableByIdResponse, self).__init__()
@@ -46,10 +46,8 @@ class ShowFactLogicTableByIdResponse(SdkResponse):
     def data(self):
         """Gets the data of this ShowFactLogicTableByIdResponse.
 
-        返回的数据信息。
-
         :return: The data of this ShowFactLogicTableByIdResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowFactLogicTableByIdResultData`
         """
         return self._data
 
@@ -57,10 +55,8 @@ class ShowFactLogicTableByIdResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this ShowFactLogicTableByIdResponse.
 
-        返回的数据信息。
-
         :param data: The data of this ShowFactLogicTableByIdResponse.
-        :type data: object
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.ShowFactLogicTableByIdResultData`
         """
         self._data = data
 

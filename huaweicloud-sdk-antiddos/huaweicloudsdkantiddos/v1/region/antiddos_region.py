@@ -52,6 +52,8 @@ class AntiDDoSRegion:
                         "https://antiddos.eu-west-0.myhuaweicloud.com")
     MY_KUALALUMPUR_1 = Region("my-kualalumpur-1",
                         "https://antiddos.my-kualalumpur-1.myhuaweicloud.com")
+    ME_EAST_1 = Region("me-east-1",
+                        "https://antiddos.me-east-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-1": CN_NORTH_1,
@@ -77,6 +79,7 @@ class AntiDDoSRegion:
         "ae-ad-1": AE_AD_1,
         "eu-west-0": EU_WEST_0,
         "my-kualalumpur-1": MY_KUALALUMPUR_1,
+        "me-east-1": ME_EAST_1,
     }
 
     @classmethod

@@ -35,7 +35,7 @@ class ShowEngineJobRequest:
 
         :param x_enterprise_project_id: 如果不带则默认企业项目为\&quot;default\&quot;，ID为\&quot;0\&quot;。
         :type x_enterprise_project_id: str
-        :param engine_id: 微服务引擎专享版ID。
+        :param engine_id: 微服务引擎ID。
         :type engine_id: str
         :param job_id: 任务ID。
         :type job_id: str
@@ -79,7 +79,7 @@ class ShowEngineJobRequest:
     def engine_id(self):
         """Gets the engine_id of this ShowEngineJobRequest.
 
-        微服务引擎专享版ID。
+        微服务引擎ID。
 
         :return: The engine_id of this ShowEngineJobRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class ShowEngineJobRequest:
     def engine_id(self, engine_id):
         """Sets the engine_id of this ShowEngineJobRequest.
 
-        微服务引擎专享版ID。
+        微服务引擎ID。
 
         :param engine_id: The engine_id of this ShowEngineJobRequest.
         :type engine_id: str

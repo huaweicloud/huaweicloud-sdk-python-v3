@@ -33,9 +33,9 @@ class FlavorBrief:
 
         The model defined in huaweicloud sdk
 
-        :param flavor: 微服务引擎专享版规格
+        :param flavor: 微服务引擎规格
         :type flavor: str
-        :param description: 微服务引擎专享版规格描述
+        :param description: 微服务引擎规格描述
         :type description: str
         :param spec: 
         :type spec: :class:`huaweicloudsdkcse.v1.EngineSpec`
@@ -59,7 +59,7 @@ class FlavorBrief:
     def flavor(self):
         """Gets the flavor of this FlavorBrief.
 
-        微服务引擎专享版规格
+        微服务引擎规格
 
         :return: The flavor of this FlavorBrief.
         :rtype: str
@@ -70,7 +70,7 @@ class FlavorBrief:
     def flavor(self, flavor):
         """Sets the flavor of this FlavorBrief.
 
-        微服务引擎专享版规格
+        微服务引擎规格
 
         :param flavor: The flavor of this FlavorBrief.
         :type flavor: str
@@ -81,7 +81,7 @@ class FlavorBrief:
     def description(self):
         """Gets the description of this FlavorBrief.
 
-        微服务引擎专享版规格描述
+        微服务引擎规格描述
 
         :return: The description of this FlavorBrief.
         :rtype: str
@@ -92,7 +92,7 @@ class FlavorBrief:
     def description(self, description):
         """Sets the description of this FlavorBrief.
 
-        微服务引擎专享版规格描述
+        微服务引擎规格描述
 
         :param description: The description of this FlavorBrief.
         :type description: str

@@ -573,10 +573,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.ListDomainsRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ListDomainsResponse`
         """
+        warnings.warn("Method 'list_domains' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_domains_http_info(request)
         return self._call_api(**http_info)
 
     def list_domains_invoker(self, request):
+        warnings.warn("Method 'list_domains_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_domains_http_info(request)
         return SyncInvoker(self, http_info)
 

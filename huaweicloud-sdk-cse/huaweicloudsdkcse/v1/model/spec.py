@@ -47,25 +47,25 @@ class Spec:
 
         The model defined in huaweicloud sdk
 
-        :param id: 微服务引擎专享版CCE规格ID
+        :param id: 微服务引擎CCE规格ID
         :type id: int
-        :param engine_id: 微服务引擎专享版ID
+        :param engine_id: 微服务引擎ID
         :type engine_id: str
-        :param spec_type: 微服务引擎专享版CCE集群部署类型
+        :param spec_type: 微服务引擎的集群部署类型
         :type spec_type: str
-        :param cluster: 微服务引擎专享版CCE集群信息，目前为null
+        :param cluster: 微服务引擎的CCE集群信息，目前为null
         :type cluster: str
-        :param cluster_id: 微服务引擎专享版CCE集群ID
+        :param cluster_id: 微服务引擎的CCE集群ID
         :type cluster_id: str
         :param cluster_nodes: 
         :type cluster_nodes: :class:`huaweicloudsdkcse.v1.SpecClusterNode`
-        :param flavor: 微服务引擎专享版CCE集群规格
+        :param flavor: 微服务引擎的CCE集群规格
         :type flavor: str
-        :param region: 微服务引擎专享版CCE集群所在region
+        :param region: 微服务引擎的CCE集群所在region
         :type region: str
-        :param version: 微服务引擎专享版CCE集群版本
+        :param version: 微服务引擎的CCE集群版本
         :type version: str
-        :param extend_param: 微服务引擎专享版CCE集群附加参数
+        :param extend_param: 微服务引擎的CCE集群附加参数
         :type extend_param: str
         """
         
@@ -108,7 +108,7 @@ class Spec:
     def id(self):
         """Gets the id of this Spec.
 
-        微服务引擎专享版CCE规格ID
+        微服务引擎CCE规格ID
 
         :return: The id of this Spec.
         :rtype: int
@@ -119,7 +119,7 @@ class Spec:
     def id(self, id):
         """Sets the id of this Spec.
 
-        微服务引擎专享版CCE规格ID
+        微服务引擎CCE规格ID
 
         :param id: The id of this Spec.
         :type id: int
@@ -130,7 +130,7 @@ class Spec:
     def engine_id(self):
         """Gets the engine_id of this Spec.
 
-        微服务引擎专享版ID
+        微服务引擎ID
 
         :return: The engine_id of this Spec.
         :rtype: str
@@ -141,7 +141,7 @@ class Spec:
     def engine_id(self, engine_id):
         """Sets the engine_id of this Spec.
 
-        微服务引擎专享版ID
+        微服务引擎ID
 
         :param engine_id: The engine_id of this Spec.
         :type engine_id: str
@@ -152,7 +152,7 @@ class Spec:
     def spec_type(self):
         """Gets the spec_type of this Spec.
 
-        微服务引擎专享版CCE集群部署类型
+        微服务引擎的集群部署类型
 
         :return: The spec_type of this Spec.
         :rtype: str
@@ -163,7 +163,7 @@ class Spec:
     def spec_type(self, spec_type):
         """Sets the spec_type of this Spec.
 
-        微服务引擎专享版CCE集群部署类型
+        微服务引擎的集群部署类型
 
         :param spec_type: The spec_type of this Spec.
         :type spec_type: str
@@ -174,7 +174,7 @@ class Spec:
     def cluster(self):
         """Gets the cluster of this Spec.
 
-        微服务引擎专享版CCE集群信息，目前为null
+        微服务引擎的CCE集群信息，目前为null
 
         :return: The cluster of this Spec.
         :rtype: str
@@ -185,7 +185,7 @@ class Spec:
     def cluster(self, cluster):
         """Sets the cluster of this Spec.
 
-        微服务引擎专享版CCE集群信息，目前为null
+        微服务引擎的CCE集群信息，目前为null
 
         :param cluster: The cluster of this Spec.
         :type cluster: str
@@ -196,7 +196,7 @@ class Spec:
     def cluster_id(self):
         """Gets the cluster_id of this Spec.
 
-        微服务引擎专享版CCE集群ID
+        微服务引擎的CCE集群ID
 
         :return: The cluster_id of this Spec.
         :rtype: str
@@ -207,7 +207,7 @@ class Spec:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this Spec.
 
-        微服务引擎专享版CCE集群ID
+        微服务引擎的CCE集群ID
 
         :param cluster_id: The cluster_id of this Spec.
         :type cluster_id: str
@@ -236,7 +236,7 @@ class Spec:
     def flavor(self):
         """Gets the flavor of this Spec.
 
-        微服务引擎专享版CCE集群规格
+        微服务引擎的CCE集群规格
 
         :return: The flavor of this Spec.
         :rtype: str
@@ -247,7 +247,7 @@ class Spec:
     def flavor(self, flavor):
         """Sets the flavor of this Spec.
 
-        微服务引擎专享版CCE集群规格
+        微服务引擎的CCE集群规格
 
         :param flavor: The flavor of this Spec.
         :type flavor: str
@@ -258,7 +258,7 @@ class Spec:
     def region(self):
         """Gets the region of this Spec.
 
-        微服务引擎专享版CCE集群所在region
+        微服务引擎的CCE集群所在region
 
         :return: The region of this Spec.
         :rtype: str
@@ -269,7 +269,7 @@ class Spec:
     def region(self, region):
         """Sets the region of this Spec.
 
-        微服务引擎专享版CCE集群所在region
+        微服务引擎的CCE集群所在region
 
         :param region: The region of this Spec.
         :type region: str
@@ -280,7 +280,7 @@ class Spec:
     def version(self):
         """Gets the version of this Spec.
 
-        微服务引擎专享版CCE集群版本
+        微服务引擎的CCE集群版本
 
         :return: The version of this Spec.
         :rtype: str
@@ -291,7 +291,7 @@ class Spec:
     def version(self, version):
         """Sets the version of this Spec.
 
-        微服务引擎专享版CCE集群版本
+        微服务引擎的CCE集群版本
 
         :param version: The version of this Spec.
         :type version: str
@@ -302,7 +302,7 @@ class Spec:
     def extend_param(self):
         """Gets the extend_param of this Spec.
 
-        微服务引擎专享版CCE集群附加参数
+        微服务引擎的CCE集群附加参数
 
         :return: The extend_param of this Spec.
         :rtype: str
@@ -313,7 +313,7 @@ class Spec:
     def extend_param(self, extend_param):
         """Sets the extend_param of this Spec.
 
-        微服务引擎专享版CCE集群附加参数
+        微服务引擎的CCE集群附加参数
 
         :param extend_param: The extend_param of this Spec.
         :type extend_param: str

@@ -31,7 +31,7 @@ class AggregationLogicTableVOSearchResultDataValue:
 
         The model defined in huaweicloud sdk
 
-        :param records: 查询到的的汇总表值对象（AggregationLogicTableVO）数组。
+        :param records: 查询到的汇总表值对象（AggregationLogicTableVO）数组。
         :type records: list[:class:`huaweicloudsdkdataartsstudio.v1.AggregationLogicTableVO`]
         :param total: 符合搜索条件的记录总数。
         :type total: int
@@ -52,7 +52,7 @@ class AggregationLogicTableVOSearchResultDataValue:
     def records(self):
         """Gets the records of this AggregationLogicTableVOSearchResultDataValue.
 
-        查询到的的汇总表值对象（AggregationLogicTableVO）数组。
+        查询到的汇总表值对象（AggregationLogicTableVO）数组。
 
         :return: The records of this AggregationLogicTableVOSearchResultDataValue.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.AggregationLogicTableVO`]
@@ -63,7 +63,7 @@ class AggregationLogicTableVOSearchResultDataValue:
     def records(self, records):
         """Sets the records of this AggregationLogicTableVOSearchResultDataValue.
 
-        查询到的的汇总表值对象（AggregationLogicTableVO）数组。
+        查询到的汇总表值对象（AggregationLogicTableVO）数组。
 
         :param records: The records of this AggregationLogicTableVOSearchResultDataValue.
         :type records: list[:class:`huaweicloudsdkdataartsstudio.v1.AggregationLogicTableVO`]

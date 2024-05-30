@@ -33,15 +33,20 @@ class TableModelAttributeVO:
         'extend_field': 'bool',
         'not_null': 'bool',
         'ordinal': 'int',
-        'table_model_id': 'int',
+        'table_model_id': 'str',
         'create_time': 'datetime',
         'update_time': 'datetime',
         'tags': 'list[TagVO]',
-        'stand_row_id': 'int',
+        'secrecy_levels': 'list[SecrecyLevelVO]',
+        'stand_row_id': 'str',
         'stand_row_name': 'str',
         'quality_infos': 'list[QualityInfoVO]',
         'alias': 'str',
-        'self_defined_fields': 'list[SelfDefinedFieldVO]'
+        'self_defined_fields': 'list[SelfDefinedFieldVO]',
+        'code': 'str',
+        'related_logic_attr_id': 'str',
+        'related_logic_attr_name': 'str',
+        'related_logic_attr_name_en': 'str'
     }
 
     attribute_map = {
@@ -65,19 +70,24 @@ class TableModelAttributeVO:
         'create_time': 'create_time',
         'update_time': 'update_time',
         'tags': 'tags',
+        'secrecy_levels': 'secrecy_levels',
         'stand_row_id': 'stand_row_id',
         'stand_row_name': 'stand_row_name',
         'quality_infos': 'quality_infos',
         'alias': 'alias',
-        'self_defined_fields': 'self_defined_fields'
+        'self_defined_fields': 'self_defined_fields',
+        'code': 'code',
+        'related_logic_attr_id': 'related_logic_attr_id',
+        'related_logic_attr_name': 'related_logic_attr_name',
+        'related_logic_attr_name_en': 'related_logic_attr_name_en'
     }
 
-    def __init__(self, id=None, name_en=None, name_ch=None, description=None, obs_location=None, create_by=None, update_by=None, data_type=None, domain_type=None, data_type_extend=None, is_primary_key=None, is_partition_key=None, is_foreign_key=None, extend_field=None, not_null=None, ordinal=None, table_model_id=None, create_time=None, update_time=None, tags=None, stand_row_id=None, stand_row_name=None, quality_infos=None, alias=None, self_defined_fields=None):
+    def __init__(self, id=None, name_en=None, name_ch=None, description=None, obs_location=None, create_by=None, update_by=None, data_type=None, domain_type=None, data_type_extend=None, is_primary_key=None, is_partition_key=None, is_foreign_key=None, extend_field=None, not_null=None, ordinal=None, table_model_id=None, create_time=None, update_time=None, tags=None, secrecy_levels=None, stand_row_id=None, stand_row_name=None, quality_infos=None, alias=None, self_defined_fields=None, code=None, related_logic_attr_id=None, related_logic_attr_name=None, related_logic_attr_name_en=None):
         """TableModelAttributeVO
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码。
+        :param id: 编码，填写String类型替代Long类型。
         :type id: str
         :param name_en: 字段名。
         :type name_en: str
@@ -109,24 +119,34 @@ class TableModelAttributeVO:
         :type not_null: bool
         :param ordinal: 序号。
         :type ordinal: int
-        :param table_model_id: 所属关系建模的模型ID。
-        :type table_model_id: int
-        :param create_time: 创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        :param table_model_id: 所属关系建模的模型ID，填写String类型替代Long类型。
+        :type table_model_id: str
+        :param create_time: 创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
-        :param update_time: 更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        :param update_time: 更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type update_time: datetime
-        :param tags: 表标签。
+        :param tags: 表标签，只读。
         :type tags: list[:class:`huaweicloudsdkdataartsstudio.v1.TagVO`]
-        :param stand_row_id: 关联的数据标准的ID。
-        :type stand_row_id: int
-        :param stand_row_name: 关联的数据标准名称。
+        :param secrecy_levels: 密级
+        :type secrecy_levels: list[:class:`huaweicloudsdkdataartsstudio.v1.SecrecyLevelVO`]
+        :param stand_row_id: 关联的数据标准的ID，填写String类型替代Long类型。
+        :type stand_row_id: str
+        :param stand_row_name: 关联的数据标准名称，只读。
         :type stand_row_name: str
-        :param quality_infos: 质量信息。
+        :param quality_infos: 质量信息，只读。
         :type quality_infos: list[:class:`huaweicloudsdkdataartsstudio.v1.QualityInfoVO`]
         :param alias: 别名。
         :type alias: str
         :param self_defined_fields: 自定义项。
         :type self_defined_fields: list[:class:`huaweicloudsdkdataartsstudio.v1.SelfDefinedFieldVO`]
+        :param code: 逻辑属性编码
+        :type code: str
+        :param related_logic_attr_id: 关联逻辑属性ID，填写String类型替代Long类型。
+        :type related_logic_attr_id: str
+        :param related_logic_attr_name: 关联逻辑实体属性中文名称
+        :type related_logic_attr_name: str
+        :param related_logic_attr_name_en: 关联逻辑实体属性英文名称
+        :type related_logic_attr_name_en: str
         """
         
         
@@ -151,11 +171,16 @@ class TableModelAttributeVO:
         self._create_time = None
         self._update_time = None
         self._tags = None
+        self._secrecy_levels = None
         self._stand_row_id = None
         self._stand_row_name = None
         self._quality_infos = None
         self._alias = None
         self._self_defined_fields = None
+        self._code = None
+        self._related_logic_attr_id = None
+        self._related_logic_attr_name = None
+        self._related_logic_attr_name_en = None
         self.discriminator = None
 
         if id is not None:
@@ -194,6 +219,8 @@ class TableModelAttributeVO:
             self.update_time = update_time
         if tags is not None:
             self.tags = tags
+        if secrecy_levels is not None:
+            self.secrecy_levels = secrecy_levels
         if stand_row_id is not None:
             self.stand_row_id = stand_row_id
         if stand_row_name is not None:
@@ -204,12 +231,20 @@ class TableModelAttributeVO:
             self.alias = alias
         if self_defined_fields is not None:
             self.self_defined_fields = self_defined_fields
+        if code is not None:
+            self.code = code
+        if related_logic_attr_id is not None:
+            self.related_logic_attr_id = related_logic_attr_id
+        if related_logic_attr_name is not None:
+            self.related_logic_attr_name = related_logic_attr_name
+        if related_logic_attr_name_en is not None:
+            self.related_logic_attr_name_en = related_logic_attr_name_en
 
     @property
     def id(self):
         """Gets the id of this TableModelAttributeVO.
 
-        编码。
+        编码，填写String类型替代Long类型。
 
         :return: The id of this TableModelAttributeVO.
         :rtype: str
@@ -220,7 +255,7 @@ class TableModelAttributeVO:
     def id(self, id):
         """Sets the id of this TableModelAttributeVO.
 
-        编码。
+        编码，填写String类型替代Long类型。
 
         :param id: The id of this TableModelAttributeVO.
         :type id: str
@@ -557,10 +592,10 @@ class TableModelAttributeVO:
     def table_model_id(self):
         """Gets the table_model_id of this TableModelAttributeVO.
 
-        所属关系建模的模型ID。
+        所属关系建模的模型ID，填写String类型替代Long类型。
 
         :return: The table_model_id of this TableModelAttributeVO.
-        :rtype: int
+        :rtype: str
         """
         return self._table_model_id
 
@@ -568,10 +603,10 @@ class TableModelAttributeVO:
     def table_model_id(self, table_model_id):
         """Sets the table_model_id of this TableModelAttributeVO.
 
-        所属关系建模的模型ID。
+        所属关系建模的模型ID，填写String类型替代Long类型。
 
         :param table_model_id: The table_model_id of this TableModelAttributeVO.
-        :type table_model_id: int
+        :type table_model_id: str
         """
         self._table_model_id = table_model_id
 
@@ -579,7 +614,7 @@ class TableModelAttributeVO:
     def create_time(self):
         """Gets the create_time of this TableModelAttributeVO.
 
-        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The create_time of this TableModelAttributeVO.
         :rtype: datetime
@@ -590,7 +625,7 @@ class TableModelAttributeVO:
     def create_time(self, create_time):
         """Sets the create_time of this TableModelAttributeVO.
 
-        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param create_time: The create_time of this TableModelAttributeVO.
         :type create_time: datetime
@@ -601,7 +636,7 @@ class TableModelAttributeVO:
     def update_time(self):
         """Gets the update_time of this TableModelAttributeVO.
 
-        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The update_time of this TableModelAttributeVO.
         :rtype: datetime
@@ -612,7 +647,7 @@ class TableModelAttributeVO:
     def update_time(self, update_time):
         """Sets the update_time of this TableModelAttributeVO.
 
-        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param update_time: The update_time of this TableModelAttributeVO.
         :type update_time: datetime
@@ -623,7 +658,7 @@ class TableModelAttributeVO:
     def tags(self):
         """Gets the tags of this TableModelAttributeVO.
 
-        表标签。
+        表标签，只读。
 
         :return: The tags of this TableModelAttributeVO.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.TagVO`]
@@ -634,7 +669,7 @@ class TableModelAttributeVO:
     def tags(self, tags):
         """Sets the tags of this TableModelAttributeVO.
 
-        表标签。
+        表标签，只读。
 
         :param tags: The tags of this TableModelAttributeVO.
         :type tags: list[:class:`huaweicloudsdkdataartsstudio.v1.TagVO`]
@@ -642,13 +677,35 @@ class TableModelAttributeVO:
         self._tags = tags
 
     @property
+    def secrecy_levels(self):
+        """Gets the secrecy_levels of this TableModelAttributeVO.
+
+        密级
+
+        :return: The secrecy_levels of this TableModelAttributeVO.
+        :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.SecrecyLevelVO`]
+        """
+        return self._secrecy_levels
+
+    @secrecy_levels.setter
+    def secrecy_levels(self, secrecy_levels):
+        """Sets the secrecy_levels of this TableModelAttributeVO.
+
+        密级
+
+        :param secrecy_levels: The secrecy_levels of this TableModelAttributeVO.
+        :type secrecy_levels: list[:class:`huaweicloudsdkdataartsstudio.v1.SecrecyLevelVO`]
+        """
+        self._secrecy_levels = secrecy_levels
+
+    @property
     def stand_row_id(self):
         """Gets the stand_row_id of this TableModelAttributeVO.
 
-        关联的数据标准的ID。
+        关联的数据标准的ID，填写String类型替代Long类型。
 
         :return: The stand_row_id of this TableModelAttributeVO.
-        :rtype: int
+        :rtype: str
         """
         return self._stand_row_id
 
@@ -656,10 +713,10 @@ class TableModelAttributeVO:
     def stand_row_id(self, stand_row_id):
         """Sets the stand_row_id of this TableModelAttributeVO.
 
-        关联的数据标准的ID。
+        关联的数据标准的ID，填写String类型替代Long类型。
 
         :param stand_row_id: The stand_row_id of this TableModelAttributeVO.
-        :type stand_row_id: int
+        :type stand_row_id: str
         """
         self._stand_row_id = stand_row_id
 
@@ -667,7 +724,7 @@ class TableModelAttributeVO:
     def stand_row_name(self):
         """Gets the stand_row_name of this TableModelAttributeVO.
 
-        关联的数据标准名称。
+        关联的数据标准名称，只读。
 
         :return: The stand_row_name of this TableModelAttributeVO.
         :rtype: str
@@ -678,7 +735,7 @@ class TableModelAttributeVO:
     def stand_row_name(self, stand_row_name):
         """Sets the stand_row_name of this TableModelAttributeVO.
 
-        关联的数据标准名称。
+        关联的数据标准名称，只读。
 
         :param stand_row_name: The stand_row_name of this TableModelAttributeVO.
         :type stand_row_name: str
@@ -689,7 +746,7 @@ class TableModelAttributeVO:
     def quality_infos(self):
         """Gets the quality_infos of this TableModelAttributeVO.
 
-        质量信息。
+        质量信息，只读。
 
         :return: The quality_infos of this TableModelAttributeVO.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.QualityInfoVO`]
@@ -700,7 +757,7 @@ class TableModelAttributeVO:
     def quality_infos(self, quality_infos):
         """Sets the quality_infos of this TableModelAttributeVO.
 
-        质量信息。
+        质量信息，只读。
 
         :param quality_infos: The quality_infos of this TableModelAttributeVO.
         :type quality_infos: list[:class:`huaweicloudsdkdataartsstudio.v1.QualityInfoVO`]
@@ -750,6 +807,94 @@ class TableModelAttributeVO:
         :type self_defined_fields: list[:class:`huaweicloudsdkdataartsstudio.v1.SelfDefinedFieldVO`]
         """
         self._self_defined_fields = self_defined_fields
+
+    @property
+    def code(self):
+        """Gets the code of this TableModelAttributeVO.
+
+        逻辑属性编码
+
+        :return: The code of this TableModelAttributeVO.
+        :rtype: str
+        """
+        return self._code
+
+    @code.setter
+    def code(self, code):
+        """Sets the code of this TableModelAttributeVO.
+
+        逻辑属性编码
+
+        :param code: The code of this TableModelAttributeVO.
+        :type code: str
+        """
+        self._code = code
+
+    @property
+    def related_logic_attr_id(self):
+        """Gets the related_logic_attr_id of this TableModelAttributeVO.
+
+        关联逻辑属性ID，填写String类型替代Long类型。
+
+        :return: The related_logic_attr_id of this TableModelAttributeVO.
+        :rtype: str
+        """
+        return self._related_logic_attr_id
+
+    @related_logic_attr_id.setter
+    def related_logic_attr_id(self, related_logic_attr_id):
+        """Sets the related_logic_attr_id of this TableModelAttributeVO.
+
+        关联逻辑属性ID，填写String类型替代Long类型。
+
+        :param related_logic_attr_id: The related_logic_attr_id of this TableModelAttributeVO.
+        :type related_logic_attr_id: str
+        """
+        self._related_logic_attr_id = related_logic_attr_id
+
+    @property
+    def related_logic_attr_name(self):
+        """Gets the related_logic_attr_name of this TableModelAttributeVO.
+
+        关联逻辑实体属性中文名称
+
+        :return: The related_logic_attr_name of this TableModelAttributeVO.
+        :rtype: str
+        """
+        return self._related_logic_attr_name
+
+    @related_logic_attr_name.setter
+    def related_logic_attr_name(self, related_logic_attr_name):
+        """Sets the related_logic_attr_name of this TableModelAttributeVO.
+
+        关联逻辑实体属性中文名称
+
+        :param related_logic_attr_name: The related_logic_attr_name of this TableModelAttributeVO.
+        :type related_logic_attr_name: str
+        """
+        self._related_logic_attr_name = related_logic_attr_name
+
+    @property
+    def related_logic_attr_name_en(self):
+        """Gets the related_logic_attr_name_en of this TableModelAttributeVO.
+
+        关联逻辑实体属性英文名称
+
+        :return: The related_logic_attr_name_en of this TableModelAttributeVO.
+        :rtype: str
+        """
+        return self._related_logic_attr_name_en
+
+    @related_logic_attr_name_en.setter
+    def related_logic_attr_name_en(self, related_logic_attr_name_en):
+        """Sets the related_logic_attr_name_en of this TableModelAttributeVO.
+
+        关联逻辑实体属性英文名称
+
+        :param related_logic_attr_name_en: The related_logic_attr_name_en of this TableModelAttributeVO.
+        :type related_logic_attr_name_en: str
+        """
+        self._related_logic_attr_name_en = related_logic_attr_name_en
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -18,7 +18,7 @@ class CheckDimensionStatusResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'object'
+        'data': 'CheckDimensionStatusResultData'
     }
 
     attribute_map = {
@@ -30,8 +30,8 @@ class CheckDimensionStatusResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: 返回的数据信息。
-        :type data: object
+        :param data: 
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.CheckDimensionStatusResultData`
         """
         
         super(CheckDimensionStatusResponse, self).__init__()
@@ -46,10 +46,8 @@ class CheckDimensionStatusResponse(SdkResponse):
     def data(self):
         """Gets the data of this CheckDimensionStatusResponse.
 
-        返回的数据信息。
-
         :return: The data of this CheckDimensionStatusResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CheckDimensionStatusResultData`
         """
         return self._data
 
@@ -57,10 +55,8 @@ class CheckDimensionStatusResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this CheckDimensionStatusResponse.
 
-        返回的数据信息。
-
         :param data: The data of this CheckDimensionStatusResponse.
-        :type data: object
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.CheckDimensionStatusResultData`
         """
         self._data = data
 

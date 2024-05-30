@@ -22,7 +22,9 @@ class UrlObject:
         'status': 'str',
         'create_time': 'int',
         'task_id': 'str',
-        'task_type': 'str'
+        'task_type': 'str',
+        'fail_classify': 'str',
+        'fail_desc': 'str'
     }
 
     attribute_map = {
@@ -31,10 +33,12 @@ class UrlObject:
         'status': 'status',
         'create_time': 'create_time',
         'task_id': 'task_id',
-        'task_type': 'task_type'
+        'task_type': 'task_type',
+        'fail_classify': 'fail_classify',
+        'fail_desc': 'fail_desc'
     }
 
-    def __init__(self, id=None, url=None, status=None, create_time=None, task_id=None, task_type=None):
+    def __init__(self, id=None, url=None, status=None, create_time=None, task_id=None, task_type=None, fail_classify=None, fail_desc=None):
         """UrlObject
 
         The model defined in huaweicloud sdk
@@ -51,6 +55,10 @@ class UrlObject:
         :type task_id: str
         :param task_type: 任务的类型， 其值可以为REFRESH：刷新任务、PREHEATING：预热任务、REFRESH_AFTER_PREHEATING：预热后刷新
         :type task_type: str
+        :param fail_classify: 失败原因，url状态为failed时返回。   - ORIGIN_ERROR：源站错误。   - INNER_ERROR：内部错误。   - UNKNOWN_ERROR：未知错误。
+        :type fail_classify: str
+        :param fail_desc: 刷新预热失败描述。
+        :type fail_desc: str
         """
         
         
@@ -61,6 +69,8 @@ class UrlObject:
         self._create_time = None
         self._task_id = None
         self._task_type = None
+        self._fail_classify = None
+        self._fail_desc = None
         self.discriminator = None
 
         if id is not None:
@@ -75,6 +85,10 @@ class UrlObject:
             self.task_id = task_id
         if task_type is not None:
             self.task_type = task_type
+        if fail_classify is not None:
+            self.fail_classify = fail_classify
+        if fail_desc is not None:
+            self.fail_desc = fail_desc
 
     @property
     def id(self):
@@ -207,6 +221,50 @@ class UrlObject:
         :type task_type: str
         """
         self._task_type = task_type
+
+    @property
+    def fail_classify(self):
+        """Gets the fail_classify of this UrlObject.
+
+        失败原因，url状态为failed时返回。   - ORIGIN_ERROR：源站错误。   - INNER_ERROR：内部错误。   - UNKNOWN_ERROR：未知错误。
+
+        :return: The fail_classify of this UrlObject.
+        :rtype: str
+        """
+        return self._fail_classify
+
+    @fail_classify.setter
+    def fail_classify(self, fail_classify):
+        """Sets the fail_classify of this UrlObject.
+
+        失败原因，url状态为failed时返回。   - ORIGIN_ERROR：源站错误。   - INNER_ERROR：内部错误。   - UNKNOWN_ERROR：未知错误。
+
+        :param fail_classify: The fail_classify of this UrlObject.
+        :type fail_classify: str
+        """
+        self._fail_classify = fail_classify
+
+    @property
+    def fail_desc(self):
+        """Gets the fail_desc of this UrlObject.
+
+        刷新预热失败描述。
+
+        :return: The fail_desc of this UrlObject.
+        :rtype: str
+        """
+        return self._fail_desc
+
+    @fail_desc.setter
+    def fail_desc(self, fail_desc):
+        """Sets the fail_desc of this UrlObject.
+
+        刷新预热失败描述。
+
+        :param fail_desc: The fail_desc of this UrlObject.
+        :type fail_desc: str
+        """
+        self._fail_desc = fail_desc
 
     def to_dict(self):
         """Returns the model properties as a dict"""

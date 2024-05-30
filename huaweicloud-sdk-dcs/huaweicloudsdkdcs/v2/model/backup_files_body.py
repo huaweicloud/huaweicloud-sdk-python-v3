@@ -55,7 +55,8 @@ class BackupFilesBody:
 
         if file_source is not None:
             self.file_source = file_source
-        self.bucket_name = bucket_name
+        if bucket_name is not None:
+            self.bucket_name = bucket_name
         self.files = files
         if backup_id is not None:
             self.backup_id = backup_id

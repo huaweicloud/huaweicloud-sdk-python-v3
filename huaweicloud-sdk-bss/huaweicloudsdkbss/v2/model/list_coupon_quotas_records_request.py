@@ -47,11 +47,11 @@ class ListCouponQuotasRecordsRequest:
         :type indirect_partner_id: str
         :param quota_id: 云经销商的代金券额度ID。获取方法请参见[查询优惠券额度](https://support.huaweicloud.com/api-bpconsole/mp_02003.html)。即华为云总经销商给云经销商发放代金券额度时，产生的云经销商的代金券额度ID，或者从云经销商回收代金券额度时，云经销商的代金券额度ID。此参数不携带或携带值为空时，不作为筛选条件。
         :type quota_id: str
-        :param operation_time_begin: 查询条件：操作起始时间。UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。此参数不携带或携带值为空时，不作为筛选条件。
+        :param operation_time_begin: 查询条件：操作起始时间。UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。此参数不携带或携带值为空时，不作为筛选条件。不支持携带值为空串。
         :type operation_time_begin: str
-        :param operation_time_end: 查询条件：操作截止时间。UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。此参数不携带或携带值为空时，不作为筛选条件。
+        :param operation_time_end: 查询条件：操作截止时间。UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。此参数不携带或携带值为空时，不作为筛选条件。不支持携带值为空串。
         :type operation_time_end: str
-        :param parent_quota_id: 父额度ID。这即华为云总经销商给云经销商发放代金券额度时，华为云总经销商的额度ID，或者从云经销商回收代金券额度时，回收的华为云总经销商的额度ID。此参数不携带或携带值为空时，不作为筛选条件。
+        :param parent_quota_id: 父额度ID。这即华为云总经销商给云经销商发放代金券额度时，华为云总经销商的额度ID，或者从云经销商回收代金券额度时，回收的华为云总经销商的额度ID。此参数不携带或携带值为空时，不作为筛选条件。携带值为空串或携带值为null时，作为筛选条件。
         :type parent_quota_id: str
         :param operation_type: 操作类型。10：发放额度11：回收额度此参数不携带或携带值为空或携带值为空串时，不作为筛选条件。
         :type operation_type: str
@@ -138,7 +138,7 @@ class ListCouponQuotasRecordsRequest:
     def operation_time_begin(self):
         """Gets the operation_time_begin of this ListCouponQuotasRecordsRequest.
 
-        查询条件：操作起始时间。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。此参数不携带或携带值为空时，不作为筛选条件。
+        查询条件：操作起始时间。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。此参数不携带或携带值为空时，不作为筛选条件。不支持携带值为空串。
 
         :return: The operation_time_begin of this ListCouponQuotasRecordsRequest.
         :rtype: str
@@ -149,7 +149,7 @@ class ListCouponQuotasRecordsRequest:
     def operation_time_begin(self, operation_time_begin):
         """Sets the operation_time_begin of this ListCouponQuotasRecordsRequest.
 
-        查询条件：操作起始时间。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。此参数不携带或携带值为空时，不作为筛选条件。
+        查询条件：操作起始时间。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。此参数不携带或携带值为空时，不作为筛选条件。不支持携带值为空串。
 
         :param operation_time_begin: The operation_time_begin of this ListCouponQuotasRecordsRequest.
         :type operation_time_begin: str
@@ -160,7 +160,7 @@ class ListCouponQuotasRecordsRequest:
     def operation_time_end(self):
         """Gets the operation_time_end of this ListCouponQuotasRecordsRequest.
 
-        查询条件：操作截止时间。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。此参数不携带或携带值为空时，不作为筛选条件。
+        查询条件：操作截止时间。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。此参数不携带或携带值为空时，不作为筛选条件。不支持携带值为空串。
 
         :return: The operation_time_end of this ListCouponQuotasRecordsRequest.
         :rtype: str
@@ -171,7 +171,7 @@ class ListCouponQuotasRecordsRequest:
     def operation_time_end(self, operation_time_end):
         """Sets the operation_time_end of this ListCouponQuotasRecordsRequest.
 
-        查询条件：操作截止时间。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。此参数不携带或携带值为空时，不作为筛选条件。
+        查询条件：操作截止时间。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。此参数不携带或携带值为空时，不作为筛选条件。不支持携带值为空串。
 
         :param operation_time_end: The operation_time_end of this ListCouponQuotasRecordsRequest.
         :type operation_time_end: str
@@ -182,7 +182,7 @@ class ListCouponQuotasRecordsRequest:
     def parent_quota_id(self):
         """Gets the parent_quota_id of this ListCouponQuotasRecordsRequest.
 
-        父额度ID。这即华为云总经销商给云经销商发放代金券额度时，华为云总经销商的额度ID，或者从云经销商回收代金券额度时，回收的华为云总经销商的额度ID。此参数不携带或携带值为空时，不作为筛选条件。
+        父额度ID。这即华为云总经销商给云经销商发放代金券额度时，华为云总经销商的额度ID，或者从云经销商回收代金券额度时，回收的华为云总经销商的额度ID。此参数不携带或携带值为空时，不作为筛选条件。携带值为空串或携带值为null时，作为筛选条件。
 
         :return: The parent_quota_id of this ListCouponQuotasRecordsRequest.
         :rtype: str
@@ -193,7 +193,7 @@ class ListCouponQuotasRecordsRequest:
     def parent_quota_id(self, parent_quota_id):
         """Sets the parent_quota_id of this ListCouponQuotasRecordsRequest.
 
-        父额度ID。这即华为云总经销商给云经销商发放代金券额度时，华为云总经销商的额度ID，或者从云经销商回收代金券额度时，回收的华为云总经销商的额度ID。此参数不携带或携带值为空时，不作为筛选条件。
+        父额度ID。这即华为云总经销商给云经销商发放代金券额度时，华为云总经销商的额度ID，或者从云经销商回收代金券额度时，回收的华为云总经销商的额度ID。此参数不携带或携带值为空时，不作为筛选条件。携带值为空串或携带值为null时，作为筛选条件。
 
         :param parent_quota_id: The parent_quota_id of this ListCouponQuotasRecordsRequest.
         :type parent_quota_id: str

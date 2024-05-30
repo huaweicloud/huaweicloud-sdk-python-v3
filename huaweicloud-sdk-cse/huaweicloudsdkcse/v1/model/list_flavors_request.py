@@ -29,7 +29,7 @@ class ListFlavorsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param spec_type: 微服务引擎专享版应用部署类型，查询CSE微服务引擎专享版需要将该值设置为CSE2。
+        :param spec_type: 微服务引擎应用部署类型，查询ServiceComb引擎专享版需要将该值设置为CSE2，查询注册配置中心需要将该值设置为Nacos2，查询网关需要将该值设置为MicroGateway。
         :type spec_type: str
         """
         
@@ -45,7 +45,7 @@ class ListFlavorsRequest:
     def spec_type(self):
         """Gets the spec_type of this ListFlavorsRequest.
 
-        微服务引擎专享版应用部署类型，查询CSE微服务引擎专享版需要将该值设置为CSE2。
+        微服务引擎应用部署类型，查询ServiceComb引擎专享版需要将该值设置为CSE2，查询注册配置中心需要将该值设置为Nacos2，查询网关需要将该值设置为MicroGateway。
 
         :return: The spec_type of this ListFlavorsRequest.
         :rtype: str
@@ -56,7 +56,7 @@ class ListFlavorsRequest:
     def spec_type(self, spec_type):
         """Sets the spec_type of this ListFlavorsRequest.
 
-        微服务引擎专享版应用部署类型，查询CSE微服务引擎专享版需要将该值设置为CSE2。
+        微服务引擎应用部署类型，查询ServiceComb引擎专享版需要将该值设置为CSE2，查询注册配置中心需要将该值设置为Nacos2，查询网关需要将该值设置为MicroGateway。
 
         :param spec_type: The spec_type of this ListFlavorsRequest.
         :type spec_type: str

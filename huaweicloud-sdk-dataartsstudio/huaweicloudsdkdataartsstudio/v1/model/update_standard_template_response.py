@@ -18,7 +18,7 @@ class UpdateStandardTemplateResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'object'
+        'data': 'CreateStandardTemplateResultData'
     }
 
     attribute_map = {
@@ -30,8 +30,8 @@ class UpdateStandardTemplateResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: 返回的数据信息。
-        :type data: object
+        :param data: 
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.CreateStandardTemplateResultData`
         """
         
         super(UpdateStandardTemplateResponse, self).__init__()
@@ -46,10 +46,8 @@ class UpdateStandardTemplateResponse(SdkResponse):
     def data(self):
         """Gets the data of this UpdateStandardTemplateResponse.
 
-        返回的数据信息。
-
         :return: The data of this UpdateStandardTemplateResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateStandardTemplateResultData`
         """
         return self._data
 
@@ -57,10 +55,8 @@ class UpdateStandardTemplateResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this UpdateStandardTemplateResponse.
 
-        返回的数据信息。
-
         :param data: The data of this UpdateStandardTemplateResponse.
-        :type data: object
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.CreateStandardTemplateResultData`
         """
         self._data = data
 

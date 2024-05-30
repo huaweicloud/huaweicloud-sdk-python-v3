@@ -19,7 +19,7 @@ class DomainBody:
     openapi_types = {
         'domain_name': 'str',
         'business_type': 'str',
-        'sources': 'list[Sources]',
+        'sources': 'list[SourcesRequestBody]',
         'service_area': 'str',
         'enterprise_project_id': 'str'
     }
@@ -42,7 +42,7 @@ class DomainBody:
         :param business_type: 域名业务类型，若为web，则表示类型为网页加速；若为download，则表示业务类型为文件下载加速；若为video，则表示业务类型为点播加速；若为wholeSite，则表示业务类型为全站加速。
         :type business_type: str
         :param sources: 源站配置。
-        :type sources: list[:class:`huaweicloudsdkcdn.v2.Sources`]
+        :type sources: list[:class:`huaweicloudsdkcdn.v2.SourcesRequestBody`]
         :param service_area: 域名服务范围，若为mainland_china，则表示服务范围为中国大陆；若为outside_mainland_china，则表示服务范围为中国大陆境外；若为global，则表示服务范围为全球。
         :type service_area: str
         :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示添加加速域名到该企业项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
@@ -116,7 +116,7 @@ class DomainBody:
         源站配置。
 
         :return: The sources of this DomainBody.
-        :rtype: list[:class:`huaweicloudsdkcdn.v2.Sources`]
+        :rtype: list[:class:`huaweicloudsdkcdn.v2.SourcesRequestBody`]
         """
         return self._sources
 
@@ -127,7 +127,7 @@ class DomainBody:
         源站配置。
 
         :param sources: The sources of this DomainBody.
-        :type sources: list[:class:`huaweicloudsdkcdn.v2.Sources`]
+        :type sources: list[:class:`huaweicloudsdkcdn.v2.SourcesRequestBody`]
         """
         self._sources = sources
 

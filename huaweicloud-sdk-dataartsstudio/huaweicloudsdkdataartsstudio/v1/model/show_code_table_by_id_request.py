@@ -37,7 +37,7 @@ class ShowCodeTableByIdRequest:
         :type workspace: str
         :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
         :type x_project_id: str
-        :param id: 实体ID
+        :param id: 实体ID，填写String类型替代Long类型。
         :type id: str
         """
         
@@ -101,7 +101,7 @@ class ShowCodeTableByIdRequest:
     def id(self):
         """Gets the id of this ShowCodeTableByIdRequest.
 
-        实体ID
+        实体ID，填写String类型替代Long类型。
 
         :return: The id of this ShowCodeTableByIdRequest.
         :rtype: str
@@ -112,7 +112,7 @@ class ShowCodeTableByIdRequest:
     def id(self, id):
         """Sets the id of this ShowCodeTableByIdRequest.
 
-        实体ID
+        实体ID，填写String类型替代Long类型。
 
         :param id: The id of this ShowCodeTableByIdRequest.
         :type id: str
