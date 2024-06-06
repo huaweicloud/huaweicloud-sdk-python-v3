@@ -973,7 +973,7 @@ class IAMAccessAnalyzerClient(Client):
     def create_access_preview(self, request):
         """创建访问预览
 
-        创建访问预览
+        创建访问预览。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1037,31 +1037,31 @@ class IAMAccessAnalyzerClient(Client):
 
         return http_info
 
-    def get_access_preview(self, request):
-        """获取相关访问预览的信息
+    def list_access_preview_findings(self, request):
+        """获取相关预览生成的分析结果
 
-        获取相关访问预览的信息。
+        获取相关预览生成的分析结果。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
-        :param request: Request instance for GetAccessPreview
-        :type request: :class:`huaweicloudsdkiamaccessanalyzer.v1.GetAccessPreviewRequest`
-        :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.GetAccessPreviewResponse`
+        :param request: Request instance for ListAccessPreviewFindings
+        :type request: :class:`huaweicloudsdkiamaccessanalyzer.v1.ListAccessPreviewFindingsRequest`
+        :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.ListAccessPreviewFindingsResponse`
         """
-        http_info = self._get_access_preview_http_info(request)
+        http_info = self._list_access_preview_findings_http_info(request)
         return self._call_api(**http_info)
 
-    def get_access_preview_invoker(self, request):
-        http_info = self._get_access_preview_http_info(request)
+    def list_access_preview_findings_invoker(self, request):
+        http_info = self._list_access_preview_findings_http_info(request)
         return SyncInvoker(self, http_info)
 
     @classmethod
-    def _get_access_preview_http_info(cls, request):
+    def _list_access_preview_findings_http_info(cls, request):
         http_info = {
-            "method": "GET",
-            "resource_path": "/v5/analyzers/{analyzer_id}/access-previews/{access_preview_id}",
+            "method": "POST",
+            "resource_path": "/v5/analyzers/{analyzer_id}/access-previews/{access_preview_id}/findings",
             "request_type": request.__class__.__name__,
-            "response_type": "GetAccessPreviewResponse"
+            "response_type": "ListAccessPreviewFindingsResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1083,6 +1083,8 @@ class IAMAccessAnalyzerClient(Client):
         form_params = {}
 
         body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -1107,7 +1109,7 @@ class IAMAccessAnalyzerClient(Client):
     def list_access_previews(self, request):
         """获取所有访问预览
 
-        获取所有访问预览
+        获取所有访问预览。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1173,31 +1175,31 @@ class IAMAccessAnalyzerClient(Client):
 
         return http_info
 
-    def list_preview_findings(self, request):
-        """获取相关预览生成的分析结果
+    def show_access_preview(self, request):
+        """获取相关访问预览的信息
 
-        获取相关预览生成的分析结果
+        获取相关访问预览的信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
-        :param request: Request instance for ListPreviewFindings
-        :type request: :class:`huaweicloudsdkiamaccessanalyzer.v1.ListPreviewFindingsRequest`
-        :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.ListPreviewFindingsResponse`
+        :param request: Request instance for ShowAccessPreview
+        :type request: :class:`huaweicloudsdkiamaccessanalyzer.v1.ShowAccessPreviewRequest`
+        :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.ShowAccessPreviewResponse`
         """
-        http_info = self._list_preview_findings_http_info(request)
+        http_info = self._show_access_preview_http_info(request)
         return self._call_api(**http_info)
 
-    def list_preview_findings_invoker(self, request):
-        http_info = self._list_preview_findings_http_info(request)
+    def show_access_preview_invoker(self, request):
+        http_info = self._show_access_preview_http_info(request)
         return SyncInvoker(self, http_info)
 
     @classmethod
-    def _list_preview_findings_http_info(cls, request):
+    def _show_access_preview_http_info(cls, request):
         http_info = {
-            "method": "POST",
-            "resource_path": "/v5/analyzers/{analyzer_id}/access-previews/{access_preview_id}/findings",
+            "method": "GET",
+            "resource_path": "/v5/analyzers/{analyzer_id}/access-previews/{access_preview_id}",
             "request_type": request.__class__.__name__,
-            "response_type": "ListPreviewFindingsResponse"
+            "response_type": "ShowAccessPreviewResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1219,8 +1221,6 @@ class IAMAccessAnalyzerClient(Client):
         form_params = {}
 
         body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

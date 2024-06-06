@@ -1199,6 +1199,89 @@ class MrsClient(Client):
 
         return http_info
 
+    def list_nodes(self, request):
+        """查询集群节点列表
+
+        查询集群节点列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListNodes
+        :type request: :class:`huaweicloudsdkmrs.v2.ListNodesRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v2.ListNodesResponse`
+        """
+        http_info = self._list_nodes_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_nodes_invoker(self, request):
+        http_info = self._list_nodes_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_nodes_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/nodes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNodesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+        if 'node_group' in local_var_params:
+            query_params.append(('node_group', local_var_params['node_group']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'node_name' in local_var_params:
+            query_params.append(('node_name', local_var_params['node_name']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'query_node_detail' in local_var_params:
+            query_params.append(('query_node_detail', local_var_params['query_node_detail']))
+        if 'query_ecs_detail' in local_var_params:
+            query_params.append(('query_ecs_detail', local_var_params['query_ecs_detail']))
+        if 'internal_ip' in local_var_params:
+            query_params.append(('internal_ip', local_var_params['internal_ip']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def shrink_cluster(self, request):
         """缩容集群
 
@@ -2250,6 +2333,8 @@ class MrsClient(Client):
             path_params['version_name'] = local_var_params['version_name']
 
         query_params = []
+        if 'availability_zone' in local_var_params:
+            query_params.append(('availability_zone', local_var_params['availability_zone']))
 
         header_params = {}
 

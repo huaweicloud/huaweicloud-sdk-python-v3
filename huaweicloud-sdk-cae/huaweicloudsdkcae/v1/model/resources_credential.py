@@ -2,11 +2,10 @@
 
 import six
 
-from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class GetAccessPreviewResponse(SdkResponse):
+class ResourcesCredential:
 
     """
     Attributes:
@@ -18,47 +17,80 @@ class GetAccessPreviewResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'access_preview': 'AccessPreview'
+        'access': 'str',
+        'secret': 'str'
     }
 
     attribute_map = {
-        'access_preview': 'access_preview'
+        'access': 'access',
+        'secret': 'secret'
     }
 
-    def __init__(self, access_preview=None):
-        """GetAccessPreviewResponse
+    def __init__(self, access=None, secret=None):
+        """ResourcesCredential
 
         The model defined in huaweicloud sdk
 
-        :param access_preview: 
-        :type access_preview: :class:`huaweicloudsdkiamaccessanalyzer.v1.AccessPreview`
+        :param access: 用户access key，当前access key应该包含访问授权云存储的权限。
+        :type access: str
+        :param secret: 用户secret key，当前secret key应该包含访问授权云存储的权限。
+        :type secret: str
         """
         
-        super(GetAccessPreviewResponse, self).__init__()
+        
 
-        self._access_preview = None
+        self._access = None
+        self._secret = None
         self.discriminator = None
 
-        if access_preview is not None:
-            self.access_preview = access_preview
+        if access is not None:
+            self.access = access
+        if secret is not None:
+            self.secret = secret
 
     @property
-    def access_preview(self):
-        """Gets the access_preview of this GetAccessPreviewResponse.
+    def access(self):
+        """Gets the access of this ResourcesCredential.
 
-        :return: The access_preview of this GetAccessPreviewResponse.
-        :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.AccessPreview`
+        用户access key，当前access key应该包含访问授权云存储的权限。
+
+        :return: The access of this ResourcesCredential.
+        :rtype: str
         """
-        return self._access_preview
+        return self._access
 
-    @access_preview.setter
-    def access_preview(self, access_preview):
-        """Sets the access_preview of this GetAccessPreviewResponse.
+    @access.setter
+    def access(self, access):
+        """Sets the access of this ResourcesCredential.
 
-        :param access_preview: The access_preview of this GetAccessPreviewResponse.
-        :type access_preview: :class:`huaweicloudsdkiamaccessanalyzer.v1.AccessPreview`
+        用户access key，当前access key应该包含访问授权云存储的权限。
+
+        :param access: The access of this ResourcesCredential.
+        :type access: str
         """
-        self._access_preview = access_preview
+        self._access = access
+
+    @property
+    def secret(self):
+        """Gets the secret of this ResourcesCredential.
+
+        用户secret key，当前secret key应该包含访问授权云存储的权限。
+
+        :return: The secret of this ResourcesCredential.
+        :rtype: str
+        """
+        return self._secret
+
+    @secret.setter
+    def secret(self, secret):
+        """Sets the secret of this ResourcesCredential.
+
+        用户secret key，当前secret key应该包含访问授权云存储的权限。
+
+        :param secret: The secret of this ResourcesCredential.
+        :type secret: str
+        """
+        self._secret = secret
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -102,7 +134,7 @@ class GetAccessPreviewResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, GetAccessPreviewResponse):
+        if not isinstance(other, ResourcesCredential):
             return False
 
         return self.__dict__ == other.__dict__

@@ -36,7 +36,8 @@ class NodeSpec:
         'runtime': 'Runtime',
         'initialized_conditions': 'list[str]',
         'extend_param': 'NodeExtendParam',
-        'hostname_config': 'HostnameConfig'
+        'hostname_config': 'HostnameConfig',
+        'server_enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -59,10 +60,11 @@ class NodeSpec:
         'runtime': 'runtime',
         'initialized_conditions': 'initializedConditions',
         'extend_param': 'extendParam',
-        'hostname_config': 'hostnameConfig'
+        'hostname_config': 'hostnameConfig',
+        'server_enterprise_project_id': 'serverEnterpriseProjectID'
     }
 
-    def __init__(self, flavor=None, az=None, os=None, login=None, root_volume=None, data_volumes=None, storage=None, public_ip=None, node_nic_spec=None, count=None, billing_mode=None, taints=None, k8s_tags=None, ecs_group_id=None, dedicated_host_id=None, user_tags=None, runtime=None, initialized_conditions=None, extend_param=None, hostname_config=None):
+    def __init__(self, flavor=None, az=None, os=None, login=None, root_volume=None, data_volumes=None, storage=None, public_ip=None, node_nic_spec=None, count=None, billing_mode=None, taints=None, k8s_tags=None, ecs_group_id=None, dedicated_host_id=None, user_tags=None, runtime=None, initialized_conditions=None, extend_param=None, hostname_config=None, server_enterprise_project_id=None):
         """NodeSpec
 
         The model defined in huaweicloud sdk
@@ -71,7 +73,7 @@ class NodeSpec:
         :type flavor: str
         :param az: 待创建节点所在的可用区，需要指定可用区（AZ）的名称，不填或者填random选择随机可用区。 [CCE支持的可用区请参考[地区和终端节点](https://developer.huaweicloud.com/endpoint?CCE)](tag:hws) [CCE支持的可用区请参考[地区和终端节点](https://developer.huaweicloud.com/intl/zh-cn/endpoint?CCE)](tag:hws_hk) 
         :type az: str
-        :param os: 节点的操作系统类型。具体支持的操作系统请参见[节点操作系统说明](node-os.xml)。 &gt; - 系统会根据集群版本自动选择支持的系统版本。当前集群版本不支持该系统类型，则会报错。 &gt; - 若在创建节点时指定了extendParam中的alpha.cce/NodeImageID参数，可以不填写此参数。 &gt; - 创建节点池时，该参数为必选。 
+        :param os: 节点的操作系统类型。具体支持的操作系统请参见[节点操作系统说明](node-os.xml)。 &gt; - 系统会根据集群版本自动选择支持的系统版本。当前集群版本不支持该系统类型，则会报错。 &gt; - 若在创建节点时指定了extendParam中的alpha.cce/NodeImageID参数，可以不填写此参数。 &gt; - 创建节点池时，该参数为必选。 &gt; - 若创建节点时使用共享磁盘空间，即磁盘初始化配置管理参数使用storage，且StorageGroups中virtualSpaces的name字段指定为share，该参数为必选。 
         :type os: str
         :param login: 
         :type login: :class:`huaweicloudsdkcce.v3.Login`
@@ -107,6 +109,8 @@ class NodeSpec:
         :type extend_param: :class:`huaweicloudsdkcce.v3.NodeExtendParam`
         :param hostname_config: 
         :type hostname_config: :class:`huaweicloudsdkcce.v3.HostnameConfig`
+        :param server_enterprise_project_id: 服务器企业项目ID。CCE服务不实现EPS相关特性，该字段仅用于同步服务器企业项目ID。 创建节点/节点池场景：可指定已存在企业项目，当取值为空时，该字段继承集群企业项目属性。 更新节点池场景：配置修改后仅会对新增节点的服务器生效，存量节点需前往EPS界面迁移。 如果更新时不指定值，不会更新该字段。 当该字段为空时，返回集群企业项目。
+        :type server_enterprise_project_id: str
         """
         
         
@@ -131,6 +135,7 @@ class NodeSpec:
         self._initialized_conditions = None
         self._extend_param = None
         self._hostname_config = None
+        self._server_enterprise_project_id = None
         self.discriminator = None
 
         self.flavor = flavor
@@ -168,6 +173,8 @@ class NodeSpec:
             self.extend_param = extend_param
         if hostname_config is not None:
             self.hostname_config = hostname_config
+        if server_enterprise_project_id is not None:
+            self.server_enterprise_project_id = server_enterprise_project_id
 
     @property
     def flavor(self):
@@ -217,7 +224,7 @@ class NodeSpec:
     def os(self):
         """Gets the os of this NodeSpec.
 
-        节点的操作系统类型。具体支持的操作系统请参见[节点操作系统说明](node-os.xml)。 > - 系统会根据集群版本自动选择支持的系统版本。当前集群版本不支持该系统类型，则会报错。 > - 若在创建节点时指定了extendParam中的alpha.cce/NodeImageID参数，可以不填写此参数。 > - 创建节点池时，该参数为必选。 
+        节点的操作系统类型。具体支持的操作系统请参见[节点操作系统说明](node-os.xml)。 > - 系统会根据集群版本自动选择支持的系统版本。当前集群版本不支持该系统类型，则会报错。 > - 若在创建节点时指定了extendParam中的alpha.cce/NodeImageID参数，可以不填写此参数。 > - 创建节点池时，该参数为必选。 > - 若创建节点时使用共享磁盘空间，即磁盘初始化配置管理参数使用storage，且StorageGroups中virtualSpaces的name字段指定为share，该参数为必选。 
 
         :return: The os of this NodeSpec.
         :rtype: str
@@ -228,7 +235,7 @@ class NodeSpec:
     def os(self, os):
         """Sets the os of this NodeSpec.
 
-        节点的操作系统类型。具体支持的操作系统请参见[节点操作系统说明](node-os.xml)。 > - 系统会根据集群版本自动选择支持的系统版本。当前集群版本不支持该系统类型，则会报错。 > - 若在创建节点时指定了extendParam中的alpha.cce/NodeImageID参数，可以不填写此参数。 > - 创建节点池时，该参数为必选。 
+        节点的操作系统类型。具体支持的操作系统请参见[节点操作系统说明](node-os.xml)。 > - 系统会根据集群版本自动选择支持的系统版本。当前集群版本不支持该系统类型，则会报错。 > - 若在创建节点时指定了extendParam中的alpha.cce/NodeImageID参数，可以不填写此参数。 > - 创建节点池时，该参数为必选。 > - 若创建节点时使用共享磁盘空间，即磁盘初始化配置管理参数使用storage，且StorageGroups中virtualSpaces的name字段指定为share，该参数为必选。 
 
         :param os: The os of this NodeSpec.
         :type os: str
@@ -576,6 +583,28 @@ class NodeSpec:
         :type hostname_config: :class:`huaweicloudsdkcce.v3.HostnameConfig`
         """
         self._hostname_config = hostname_config
+
+    @property
+    def server_enterprise_project_id(self):
+        """Gets the server_enterprise_project_id of this NodeSpec.
+
+        服务器企业项目ID。CCE服务不实现EPS相关特性，该字段仅用于同步服务器企业项目ID。 创建节点/节点池场景：可指定已存在企业项目，当取值为空时，该字段继承集群企业项目属性。 更新节点池场景：配置修改后仅会对新增节点的服务器生效，存量节点需前往EPS界面迁移。 如果更新时不指定值，不会更新该字段。 当该字段为空时，返回集群企业项目。
+
+        :return: The server_enterprise_project_id of this NodeSpec.
+        :rtype: str
+        """
+        return self._server_enterprise_project_id
+
+    @server_enterprise_project_id.setter
+    def server_enterprise_project_id(self, server_enterprise_project_id):
+        """Sets the server_enterprise_project_id of this NodeSpec.
+
+        服务器企业项目ID。CCE服务不实现EPS相关特性，该字段仅用于同步服务器企业项目ID。 创建节点/节点池场景：可指定已存在企业项目，当取值为空时，该字段继承集群企业项目属性。 更新节点池场景：配置修改后仅会对新增节点的服务器生效，存量节点需前往EPS界面迁移。 如果更新时不指定值，不会更新该字段。 当该字段为空时，返回集群企业项目。
+
+        :param server_enterprise_project_id: The server_enterprise_project_id of this NodeSpec.
+        :type server_enterprise_project_id: str
+        """
+        self._server_enterprise_project_id = server_enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -27,6 +27,7 @@ class SearchParam:
         'image_base64': 'str',
         'image_url': 'str',
         'keywords': 'list[str]',
+        'text': 'str',
         'optional_params': 'SearchOptionalParam'
     }
 
@@ -41,17 +42,18 @@ class SearchParam:
         'image_base64': 'image_base64',
         'image_url': 'image_url',
         'keywords': 'keywords',
+        'text': 'text',
         'optional_params': 'optional_params'
     }
 
-    def __init__(self, search_type=None, limit=None, offset=None, last_item=None, min_score=None, custom_tags=None, custom_num_tags=None, image_base64=None, image_url=None, keywords=None, optional_params=None):
+    def __init__(self, search_type=None, limit=None, offset=None, last_item=None, min_score=None, custom_tags=None, custom_num_tags=None, image_base64=None, image_url=None, keywords=None, text=None, optional_params=None):
         """SearchParam
 
         The model defined in huaweicloud sdk
 
         :param search_type: 搜索类型，必须为服务实例支持的搜索类型。服务实例的搜索类型列表可在创建服务实例时进行配置。 &gt; 可以使用枚举名或者枚举值（例如IMAGE/0），枚举值可能会变动，建议使用枚举名。
         :type search_type: str
-        :param limit: 返回搜索结果的数量，默认为10，取值范围为[1, 100]。
+        :param limit: 返回搜索结果的数量，默认为10，取值范围为[1, 1000]。
         :type limit: int
         :param offset: 返回搜索结果的偏移量，即返回序号在[offset, offset+limit]内的搜索结果。默认为0，取值范围为[0, N]。 - 默认情况下，搜索要求offset+limit &lt;&#x3D; 1000。 - 针对支持全量召回的场景，使用全量召回时，要求offset必须为0。
         :type offset: int
@@ -69,6 +71,8 @@ class SearchParam:
         :type image_url: str
         :param keywords: 关键词列表，搜索时关键词数量范围为[1, 10]，关键词字符长度范围为[1, 64]。使用KEYWORD搜索类型进行搜索时，必须提供该参数。
         :type keywords: list[str]
+        :param text: 文本字符串，字符长度范围为[1, 512]。
+        :type text: str
         :param optional_params: 
         :type optional_params: :class:`huaweicloudsdkimagesearch.v2.SearchOptionalParam`
         """
@@ -85,6 +89,7 @@ class SearchParam:
         self._image_base64 = None
         self._image_url = None
         self._keywords = None
+        self._text = None
         self._optional_params = None
         self.discriminator = None
 
@@ -107,6 +112,8 @@ class SearchParam:
             self.image_url = image_url
         if keywords is not None:
             self.keywords = keywords
+        if text is not None:
+            self.text = text
         if optional_params is not None:
             self.optional_params = optional_params
 
@@ -136,7 +143,7 @@ class SearchParam:
     def limit(self):
         """Gets the limit of this SearchParam.
 
-        返回搜索结果的数量，默认为10，取值范围为[1, 100]。
+        返回搜索结果的数量，默认为10，取值范围为[1, 1000]。
 
         :return: The limit of this SearchParam.
         :rtype: int
@@ -147,7 +154,7 @@ class SearchParam:
     def limit(self, limit):
         """Sets the limit of this SearchParam.
 
-        返回搜索结果的数量，默认为10，取值范围为[1, 100]。
+        返回搜索结果的数量，默认为10，取值范围为[1, 1000]。
 
         :param limit: The limit of this SearchParam.
         :type limit: int
@@ -325,6 +332,28 @@ class SearchParam:
         :type keywords: list[str]
         """
         self._keywords = keywords
+
+    @property
+    def text(self):
+        """Gets the text of this SearchParam.
+
+        文本字符串，字符长度范围为[1, 512]。
+
+        :return: The text of this SearchParam.
+        :rtype: str
+        """
+        return self._text
+
+    @text.setter
+    def text(self, text):
+        """Sets the text of this SearchParam.
+
+        文本字符串，字符长度范围为[1, 512]。
+
+        :param text: The text of this SearchParam.
+        :type text: str
+        """
+        self._text = text
 
     @property
     def optional_params(self):

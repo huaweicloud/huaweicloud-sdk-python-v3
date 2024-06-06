@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ListPreviewFindingsRequest:
+class ListAccessPreviewFindingsRequest:
 
     """
     Attributes:
@@ -29,7 +29,7 @@ class ListPreviewFindingsRequest:
     }
 
     def __init__(self, analyzer_id=None, access_preview_id=None, body=None):
-        """ListPreviewFindingsRequest
+        """ListAccessPreviewFindingsRequest
 
         The model defined in huaweicloud sdk
 
@@ -37,7 +37,7 @@ class ListPreviewFindingsRequest:
         :type analyzer_id: str
         :param access_preview_id: 访问预览的唯一标识符。
         :type access_preview_id: str
-        :param body: Body of the ListPreviewFindingsRequest
+        :param body: Body of the ListAccessPreviewFindingsRequest
         :type body: :class:`huaweicloudsdkiamaccessanalyzer.v1.ListPreviewFindingsReqBody`
         """
         
@@ -55,62 +55,62 @@ class ListPreviewFindingsRequest:
 
     @property
     def analyzer_id(self):
-        """Gets the analyzer_id of this ListPreviewFindingsRequest.
+        """Gets the analyzer_id of this ListAccessPreviewFindingsRequest.
 
         分析器的唯一标识符。
 
-        :return: The analyzer_id of this ListPreviewFindingsRequest.
+        :return: The analyzer_id of this ListAccessPreviewFindingsRequest.
         :rtype: str
         """
         return self._analyzer_id
 
     @analyzer_id.setter
     def analyzer_id(self, analyzer_id):
-        """Sets the analyzer_id of this ListPreviewFindingsRequest.
+        """Sets the analyzer_id of this ListAccessPreviewFindingsRequest.
 
         分析器的唯一标识符。
 
-        :param analyzer_id: The analyzer_id of this ListPreviewFindingsRequest.
+        :param analyzer_id: The analyzer_id of this ListAccessPreviewFindingsRequest.
         :type analyzer_id: str
         """
         self._analyzer_id = analyzer_id
 
     @property
     def access_preview_id(self):
-        """Gets the access_preview_id of this ListPreviewFindingsRequest.
+        """Gets the access_preview_id of this ListAccessPreviewFindingsRequest.
 
         访问预览的唯一标识符。
 
-        :return: The access_preview_id of this ListPreviewFindingsRequest.
+        :return: The access_preview_id of this ListAccessPreviewFindingsRequest.
         :rtype: str
         """
         return self._access_preview_id
 
     @access_preview_id.setter
     def access_preview_id(self, access_preview_id):
-        """Sets the access_preview_id of this ListPreviewFindingsRequest.
+        """Sets the access_preview_id of this ListAccessPreviewFindingsRequest.
 
         访问预览的唯一标识符。
 
-        :param access_preview_id: The access_preview_id of this ListPreviewFindingsRequest.
+        :param access_preview_id: The access_preview_id of this ListAccessPreviewFindingsRequest.
         :type access_preview_id: str
         """
         self._access_preview_id = access_preview_id
 
     @property
     def body(self):
-        """Gets the body of this ListPreviewFindingsRequest.
+        """Gets the body of this ListAccessPreviewFindingsRequest.
 
-        :return: The body of this ListPreviewFindingsRequest.
+        :return: The body of this ListAccessPreviewFindingsRequest.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.ListPreviewFindingsReqBody`
         """
         return self._body
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListPreviewFindingsRequest.
+        """Sets the body of this ListAccessPreviewFindingsRequest.
 
-        :param body: The body of this ListPreviewFindingsRequest.
+        :param body: The body of this ListAccessPreviewFindingsRequest.
         :type body: :class:`huaweicloudsdkiamaccessanalyzer.v1.ListPreviewFindingsReqBody`
         """
         self._body = body
@@ -157,7 +157,7 @@ class ListPreviewFindingsRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ListPreviewFindingsRequest):
+        if not isinstance(other, ListAccessPreviewFindingsRequest):
             return False
 
         return self.__dict__ == other.__dict__

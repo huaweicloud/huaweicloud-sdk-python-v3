@@ -24,7 +24,9 @@ class ExportSqlJobResultRequestBody:
         'export_mode': 'str',
         'with_column_header': 'bool',
         'limit_num': 'int',
-        'encoding_type': 'str'
+        'encoding_type': 'str',
+        'quote_char': 'str',
+        'escape_char': 'str'
     }
 
     attribute_map = {
@@ -35,10 +37,12 @@ class ExportSqlJobResultRequestBody:
         'export_mode': 'export_mode',
         'with_column_header': 'with_column_header',
         'limit_num': 'limit_num',
-        'encoding_type': 'encoding_type'
+        'encoding_type': 'encoding_type',
+        'quote_char': 'quote_char',
+        'escape_char': 'escape_char'
     }
 
-    def __init__(self, data_path=None, compress=None, data_type=None, queue_name=None, export_mode=None, with_column_header=None, limit_num=None, encoding_type=None):
+    def __init__(self, data_path=None, compress=None, data_type=None, queue_name=None, export_mode=None, with_column_header=None, limit_num=None, encoding_type=None, quote_char=None, escape_char=None):
         """ExportSqlJobResultRequestBody
 
         The model defined in huaweicloud sdk
@@ -59,6 +63,10 @@ class ExportSqlJobResultRequestBody:
         :type limit_num: int
         :param encoding_type: 导出数据的编码格式。支持\&quot;utf-8\&quot;，\&quot;gb2312\&quot;，\&quot;gbk\&quot;三种，如果不填写默认为\&quot;utf-8\&quot;。
         :type encoding_type: str
+        :param quote_char: 用户自定义引用字符
+        :type quote_char: str
+        :param escape_char: 用户自定义转义字符
+        :type escape_char: str
         """
         
         
@@ -71,6 +79,8 @@ class ExportSqlJobResultRequestBody:
         self._with_column_header = None
         self._limit_num = None
         self._encoding_type = None
+        self._quote_char = None
+        self._escape_char = None
         self.discriminator = None
 
         self.data_path = data_path
@@ -87,6 +97,10 @@ class ExportSqlJobResultRequestBody:
             self.limit_num = limit_num
         if encoding_type is not None:
             self.encoding_type = encoding_type
+        if quote_char is not None:
+            self.quote_char = quote_char
+        if escape_char is not None:
+            self.escape_char = escape_char
 
     @property
     def data_path(self):
@@ -263,6 +277,50 @@ class ExportSqlJobResultRequestBody:
         :type encoding_type: str
         """
         self._encoding_type = encoding_type
+
+    @property
+    def quote_char(self):
+        """Gets the quote_char of this ExportSqlJobResultRequestBody.
+
+        用户自定义引用字符
+
+        :return: The quote_char of this ExportSqlJobResultRequestBody.
+        :rtype: str
+        """
+        return self._quote_char
+
+    @quote_char.setter
+    def quote_char(self, quote_char):
+        """Sets the quote_char of this ExportSqlJobResultRequestBody.
+
+        用户自定义引用字符
+
+        :param quote_char: The quote_char of this ExportSqlJobResultRequestBody.
+        :type quote_char: str
+        """
+        self._quote_char = quote_char
+
+    @property
+    def escape_char(self):
+        """Gets the escape_char of this ExportSqlJobResultRequestBody.
+
+        用户自定义转义字符
+
+        :return: The escape_char of this ExportSqlJobResultRequestBody.
+        :rtype: str
+        """
+        return self._escape_char
+
+    @escape_char.setter
+    def escape_char(self, escape_char):
+        """Sets the escape_char of this ExportSqlJobResultRequestBody.
+
+        用户自定义转义字符
+
+        :param escape_char: The escape_char of this ExportSqlJobResultRequestBody.
+        :type escape_char: str
+        """
+        self._escape_char = escape_char
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -18,41 +18,48 @@ class GaussDBforOpenGaussUserForList:
 
     openapi_types = {
         'name': 'str',
-        'attributes': 'GaussDBforOpenGaussUserForListAttributes',
-        'memberof': 'str'
+        'attribute': 'GaussDBforOpenGaussUserForListAttribute',
+        'memberof': 'str',
+        'lock_status': 'bool'
     }
 
     attribute_map = {
         'name': 'name',
-        'attributes': 'attributes',
-        'memberof': 'memberof'
+        'attribute': 'attribute',
+        'memberof': 'memberof',
+        'lock_status': 'lock_status'
     }
 
-    def __init__(self, name=None, attributes=None, memberof=None):
+    def __init__(self, name=None, attribute=None, memberof=None, lock_status=None):
         """GaussDBforOpenGaussUserForList
 
         The model defined in huaweicloud sdk
 
         :param name: 帐号名。
         :type name: str
-        :param attributes: 
-        :type attributes: :class:`huaweicloudsdkgaussdbforopengauss.v3.GaussDBforOpenGaussUserForListAttributes`
+        :param attribute: 
+        :type attribute: :class:`huaweicloudsdkgaussdbforopengauss.v3.GaussDBforOpenGaussUserForListAttribute`
         :param memberof: 用户的默认权限。
         :type memberof: str
+        :param lock_status: 用户是否被锁，取值为“true”或“false”。
+        :type lock_status: bool
         """
         
         
 
         self._name = None
-        self._attributes = None
+        self._attribute = None
         self._memberof = None
+        self._lock_status = None
         self.discriminator = None
 
         self.name = name
-        if attributes is not None:
-            self.attributes = attributes
+        if attribute is not None:
+            self.attribute = attribute
         if memberof is not None:
             self.memberof = memberof
+        if lock_status is not None:
+            self.lock_status = lock_status
 
     @property
     def name(self):
@@ -77,22 +84,22 @@ class GaussDBforOpenGaussUserForList:
         self._name = name
 
     @property
-    def attributes(self):
-        """Gets the attributes of this GaussDBforOpenGaussUserForList.
+    def attribute(self):
+        """Gets the attribute of this GaussDBforOpenGaussUserForList.
 
-        :return: The attributes of this GaussDBforOpenGaussUserForList.
-        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.GaussDBforOpenGaussUserForListAttributes`
+        :return: The attribute of this GaussDBforOpenGaussUserForList.
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.GaussDBforOpenGaussUserForListAttribute`
         """
-        return self._attributes
+        return self._attribute
 
-    @attributes.setter
-    def attributes(self, attributes):
-        """Sets the attributes of this GaussDBforOpenGaussUserForList.
+    @attribute.setter
+    def attribute(self, attribute):
+        """Sets the attribute of this GaussDBforOpenGaussUserForList.
 
-        :param attributes: The attributes of this GaussDBforOpenGaussUserForList.
-        :type attributes: :class:`huaweicloudsdkgaussdbforopengauss.v3.GaussDBforOpenGaussUserForListAttributes`
+        :param attribute: The attribute of this GaussDBforOpenGaussUserForList.
+        :type attribute: :class:`huaweicloudsdkgaussdbforopengauss.v3.GaussDBforOpenGaussUserForListAttribute`
         """
-        self._attributes = attributes
+        self._attribute = attribute
 
     @property
     def memberof(self):
@@ -115,6 +122,28 @@ class GaussDBforOpenGaussUserForList:
         :type memberof: str
         """
         self._memberof = memberof
+
+    @property
+    def lock_status(self):
+        """Gets the lock_status of this GaussDBforOpenGaussUserForList.
+
+        用户是否被锁，取值为“true”或“false”。
+
+        :return: The lock_status of this GaussDBforOpenGaussUserForList.
+        :rtype: bool
+        """
+        return self._lock_status
+
+    @lock_status.setter
+    def lock_status(self, lock_status):
+        """Sets the lock_status of this GaussDBforOpenGaussUserForList.
+
+        用户是否被锁，取值为“true”或“false”。
+
+        :param lock_status: The lock_status of this GaussDBforOpenGaussUserForList.
+        :type lock_status: bool
+        """
+        self._lock_status = lock_status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

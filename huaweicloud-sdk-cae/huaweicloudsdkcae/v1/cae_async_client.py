@@ -2455,6 +2455,351 @@ class CaeAsyncClient(Client):
 
         return http_info
 
+    def create_notice_rule_async(self, request):
+        """创建事件通知规则。
+
+        创建事件通知规则。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateNoticeRule
+        :type request: :class:`huaweicloudsdkcae.v1.CreateNoticeRuleRequest`
+        :rtype: :class:`huaweicloudsdkcae.v1.CreateNoticeRuleResponse`
+        """
+        http_info = self._create_notice_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_notice_rule_async_invoker(self, request):
+        http_info = self._create_notice_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_notice_rule_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cae/notice-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateNoticeRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_notice_rule_async(self, request):
+        """删除事件通知规则。
+
+        删除事件通知规则。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteNoticeRule
+        :type request: :class:`huaweicloudsdkcae.v1.DeleteNoticeRuleRequest`
+        :rtype: :class:`huaweicloudsdkcae.v1.DeleteNoticeRuleResponse`
+        """
+        http_info = self._delete_notice_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_notice_rule_async_invoker(self, request):
+        http_info = self._delete_notice_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_notice_rule_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/cae/notice-rules/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteNoticeRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'rule_id' in local_var_params:
+            path_params['rule_id'] = local_var_params['rule_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_notice_rules_async(self, request):
+        """查询事件通知规则列表。
+
+        查询事件通知规则列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListNoticeRules
+        :type request: :class:`huaweicloudsdkcae.v1.ListNoticeRulesRequest`
+        :rtype: :class:`huaweicloudsdkcae.v1.ListNoticeRulesResponse`
+        """
+        http_info = self._list_notice_rules_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_notice_rules_async_invoker(self, request):
+        http_info = self._list_notice_rules_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_notice_rules_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cae/notice-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNoticeRulesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_notice_rule_async(self, request):
+        """查询事件通知规则。
+
+        查询事件通知规则。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowNoticeRule
+        :type request: :class:`huaweicloudsdkcae.v1.ShowNoticeRuleRequest`
+        :rtype: :class:`huaweicloudsdkcae.v1.ShowNoticeRuleResponse`
+        """
+        http_info = self._show_notice_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_notice_rule_async_invoker(self, request):
+        http_info = self._show_notice_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_notice_rule_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cae/notice-rules/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowNoticeRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'rule_id' in local_var_params:
+            path_params['rule_id'] = local_var_params['rule_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_notice_rule_async(self, request):
+        """修改事件通知规则。
+
+        修改事件通知规则。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateNoticeRule
+        :type request: :class:`huaweicloudsdkcae.v1.UpdateNoticeRuleRequest`
+        :rtype: :class:`huaweicloudsdkcae.v1.UpdateNoticeRuleResponse`
+        """
+        http_info = self._update_notice_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_notice_rule_async_invoker(self, request):
+        http_info = self._update_notice_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_notice_rule_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/cae/notice-rules/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateNoticeRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'rule_id' in local_var_params:
+            path_params['rule_id'] = local_var_params['rule_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_volume_async(self, request):
         """授权云存储
 

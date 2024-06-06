@@ -25,7 +25,9 @@ class ShowUpgradeCandidateVersionsResponse(SdkResponse):
         'roll_upgrade_progress': 'RollUpgradeProgress',
         'upgrade_candidate_versions': 'list[str]',
         'hotfix_upgrade_candidate_versions': 'list[str]',
-        'hotfix_rollback_candidate_versions': 'list[str]'
+        'hotfix_rollback_candidate_versions': 'list[str]',
+        'hotfix_upgrade_infos': 'HotfixUpgradeInfos',
+        'hotfix_rollback_infos': 'HotfixRollbackInfos'
     }
 
     attribute_map = {
@@ -36,10 +38,12 @@ class ShowUpgradeCandidateVersionsResponse(SdkResponse):
         'roll_upgrade_progress': 'roll_upgrade_progress',
         'upgrade_candidate_versions': 'upgrade_candidate_versions',
         'hotfix_upgrade_candidate_versions': 'hotfix_upgrade_candidate_versions',
-        'hotfix_rollback_candidate_versions': 'hotfix_rollback_candidate_versions'
+        'hotfix_rollback_candidate_versions': 'hotfix_rollback_candidate_versions',
+        'hotfix_upgrade_infos': 'hotfix_upgrade_infos',
+        'hotfix_rollback_infos': 'hotfix_rollback_infos'
     }
 
-    def __init__(self, upgrade_type_list=None, rollback_enabled=None, source_version=None, target_version=None, roll_upgrade_progress=None, upgrade_candidate_versions=None, hotfix_upgrade_candidate_versions=None, hotfix_rollback_candidate_versions=None):
+    def __init__(self, upgrade_type_list=None, rollback_enabled=None, source_version=None, target_version=None, roll_upgrade_progress=None, upgrade_candidate_versions=None, hotfix_upgrade_candidate_versions=None, hotfix_rollback_candidate_versions=None, hotfix_upgrade_infos=None, hotfix_rollback_infos=None):
         """ShowUpgradeCandidateVersionsResponse
 
         The model defined in huaweicloud sdk
@@ -60,6 +64,10 @@ class ShowUpgradeCandidateVersionsResponse(SdkResponse):
         :type hotfix_upgrade_candidate_versions: list[str]
         :param hotfix_rollback_candidate_versions: 可以回滚的热补丁版本，滚动升级中返回空数组
         :type hotfix_rollback_candidate_versions: list[str]
+        :param hotfix_upgrade_infos: 
+        :type hotfix_upgrade_infos: :class:`huaweicloudsdkgaussdbforopengauss.v3.HotfixUpgradeInfos`
+        :param hotfix_rollback_infos: 
+        :type hotfix_rollback_infos: :class:`huaweicloudsdkgaussdbforopengauss.v3.HotfixRollbackInfos`
         """
         
         super(ShowUpgradeCandidateVersionsResponse, self).__init__()
@@ -72,6 +80,8 @@ class ShowUpgradeCandidateVersionsResponse(SdkResponse):
         self._upgrade_candidate_versions = None
         self._hotfix_upgrade_candidate_versions = None
         self._hotfix_rollback_candidate_versions = None
+        self._hotfix_upgrade_infos = None
+        self._hotfix_rollback_infos = None
         self.discriminator = None
 
         if upgrade_type_list is not None:
@@ -90,6 +100,10 @@ class ShowUpgradeCandidateVersionsResponse(SdkResponse):
             self.hotfix_upgrade_candidate_versions = hotfix_upgrade_candidate_versions
         if hotfix_rollback_candidate_versions is not None:
             self.hotfix_rollback_candidate_versions = hotfix_rollback_candidate_versions
+        if hotfix_upgrade_infos is not None:
+            self.hotfix_upgrade_infos = hotfix_upgrade_infos
+        if hotfix_rollback_infos is not None:
+            self.hotfix_rollback_infos = hotfix_rollback_infos
 
     @property
     def upgrade_type_list(self):
@@ -262,6 +276,42 @@ class ShowUpgradeCandidateVersionsResponse(SdkResponse):
         :type hotfix_rollback_candidate_versions: list[str]
         """
         self._hotfix_rollback_candidate_versions = hotfix_rollback_candidate_versions
+
+    @property
+    def hotfix_upgrade_infos(self):
+        """Gets the hotfix_upgrade_infos of this ShowUpgradeCandidateVersionsResponse.
+
+        :return: The hotfix_upgrade_infos of this ShowUpgradeCandidateVersionsResponse.
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.HotfixUpgradeInfos`
+        """
+        return self._hotfix_upgrade_infos
+
+    @hotfix_upgrade_infos.setter
+    def hotfix_upgrade_infos(self, hotfix_upgrade_infos):
+        """Sets the hotfix_upgrade_infos of this ShowUpgradeCandidateVersionsResponse.
+
+        :param hotfix_upgrade_infos: The hotfix_upgrade_infos of this ShowUpgradeCandidateVersionsResponse.
+        :type hotfix_upgrade_infos: :class:`huaweicloudsdkgaussdbforopengauss.v3.HotfixUpgradeInfos`
+        """
+        self._hotfix_upgrade_infos = hotfix_upgrade_infos
+
+    @property
+    def hotfix_rollback_infos(self):
+        """Gets the hotfix_rollback_infos of this ShowUpgradeCandidateVersionsResponse.
+
+        :return: The hotfix_rollback_infos of this ShowUpgradeCandidateVersionsResponse.
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.HotfixRollbackInfos`
+        """
+        return self._hotfix_rollback_infos
+
+    @hotfix_rollback_infos.setter
+    def hotfix_rollback_infos(self, hotfix_rollback_infos):
+        """Sets the hotfix_rollback_infos of this ShowUpgradeCandidateVersionsResponse.
+
+        :param hotfix_rollback_infos: The hotfix_rollback_infos of this ShowUpgradeCandidateVersionsResponse.
+        :type hotfix_rollback_infos: :class:`huaweicloudsdkgaussdbforopengauss.v3.HotfixRollbackInfos`
+        """
+        self._hotfix_rollback_infos = hotfix_rollback_infos
 
     def to_dict(self):
         """Returns the model properties as a dict"""

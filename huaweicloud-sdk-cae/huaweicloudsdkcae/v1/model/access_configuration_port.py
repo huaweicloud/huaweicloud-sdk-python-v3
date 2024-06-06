@@ -23,7 +23,8 @@ class AccessConfigurationPort:
         'default_certificate': 'str',
         'certificate': 'str',
         'policy': 'str',
-        'paths': 'list[AccessConfigurationHttpPath]'
+        'paths': 'list[AccessConfigurationHttpPath]',
+        'elb_id': 'str'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class AccessConfigurationPort:
         'default_certificate': 'default_certificate',
         'certificate': 'certificate',
         'policy': 'policy',
-        'paths': 'paths'
+        'paths': 'paths',
+        'elb_id': 'elb_id'
     }
 
-    def __init__(self, target_port=None, port=None, protocol=None, default_certificate=None, certificate=None, policy=None, paths=None):
+    def __init__(self, target_port=None, port=None, protocol=None, default_certificate=None, certificate=None, policy=None, paths=None, elb_id=None):
         """AccessConfigurationPort
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class AccessConfigurationPort:
         :type policy: str
         :param paths: 
         :type paths: list[:class:`huaweicloudsdkcae.v1.AccessConfigurationHttpPath`]
+        :param elb_id: 用户选择的elb的ID。
+        :type elb_id: str
         """
         
         
@@ -66,6 +70,7 @@ class AccessConfigurationPort:
         self._certificate = None
         self._policy = None
         self._paths = None
+        self._elb_id = None
         self.discriminator = None
 
         if target_port is not None:
@@ -82,6 +87,8 @@ class AccessConfigurationPort:
             self.policy = policy
         if paths is not None:
             self.paths = paths
+        if elb_id is not None:
+            self.elb_id = elb_id
 
     @property
     def target_port(self):
@@ -232,6 +239,28 @@ class AccessConfigurationPort:
         :type paths: list[:class:`huaweicloudsdkcae.v1.AccessConfigurationHttpPath`]
         """
         self._paths = paths
+
+    @property
+    def elb_id(self):
+        """Gets the elb_id of this AccessConfigurationPort.
+
+        用户选择的elb的ID。
+
+        :return: The elb_id of this AccessConfigurationPort.
+        :rtype: str
+        """
+        return self._elb_id
+
+    @elb_id.setter
+    def elb_id(self, elb_id):
+        """Sets the elb_id of this AccessConfigurationPort.
+
+        用户选择的elb的ID。
+
+        :param elb_id: The elb_id of this AccessConfigurationPort.
+        :type elb_id: str
+        """
+        self._elb_id = elb_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

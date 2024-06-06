@@ -1,3 +1,309 @@
+# 3.1.99 2024-06-06
+
+### HuaweiCloud SDK CAE
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListNoticeRules`
+    - `CreateNoticeRule`
+    - `ShowNoticeRule`
+    - `UpdateNoticeRule`
+    - `DeleteNoticeRule`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListAgencies**
+    - 响应参数变更
+      - `+ agencies.name: enum value [cae_trust]`
+  - **CreateAgency**
+    - 请求参数变更
+      - `+ metadata.enum`
+  - **ListVolumes**
+    - 响应参数变更
+      - `+ items.access`
+  - **CreateVolume**
+    - 请求参数变更
+      - `+ spec.resources_credentials`
+  - **ListComponentConfigurations**
+    - 响应参数变更
+      - `+ items.data.spec.items.ports.elb_id`
+  - **CreateComponentConfiguration**
+    - 请求参数变更
+      - `+ items.data.spec.ip`
+      - `+ items.data.spec.items.ports.elb_id`
+
+### HuaweiCloud SDK CCE
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowNode**
+    - 响应参数变更
+      - `+ spec.serverEnterpriseProjectID`
+  - **UpdateNode**
+    - 响应参数变更
+      - `+ spec.serverEnterpriseProjectID`
+  - **DeleteNode**
+    - 响应参数变更
+      - `+ spec.serverEnterpriseProjectID`
+  - **CreateNode**
+    - 请求参数变更
+      - `+ spec.serverEnterpriseProjectID`
+    - 响应参数变更
+      - `+ spec.serverEnterpriseProjectID`
+  - **ListNodes**
+    - 响应参数变更
+      - `+ items.spec.serverEnterpriseProjectID`
+  - **ShowNodePool**
+    - 响应参数变更
+      - `+ spec.nodeTemplate.serverEnterpriseProjectID`
+  - **UpdateNodePool**
+    - 请求参数变更
+      - `+ spec.nodeTemplate.serverEnterpriseProjectID`
+    - 响应参数变更
+      - `+ spec.nodeTemplate.serverEnterpriseProjectID`
+  - **DeleteNodePool**
+    - 响应参数变更
+      - `+ spec.nodeTemplate.serverEnterpriseProjectID`
+  - **CreateNodePool**
+    - 请求参数变更
+      - `+ spec.nodeTemplate.serverEnterpriseProjectID`
+    - 响应参数变更
+      - `+ spec.nodeTemplate.serverEnterpriseProjectID`
+  - **ListNodePools**
+    - 响应参数变更
+      - `+ items.spec.nodeTemplate.serverEnterpriseProjectID`
+
+### HuaweiCloud SDK CodeArtsPipeline
+
+- _新增特性_
+  - 支持接口`UpdatePipelineInfo`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowStepOutputs**
+    - 响应参数变更
+      - `* current_system_time: int32 -> int64`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _新增特性_
+  - 支持接口`SearchSgcComputeDimensions`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DLI
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ExportSqlJobResult**
+    - 请求参数变更
+      - `+ quote_char`
+      - `+ escape_char`
+
+### HuaweiCloud SDK ECS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ChangeVpc**
+    - 请求参数变更
+      - `* nic.security_groups: object<ChangeVpcSecurityGroups> -> list<ChangeVpcSecurityGroups>`
+  - **ListFlavors**
+    - 响应参数变更
+      - `+ flavors.os_extra_specs.cond:storage:type`
+  - **ListResizeFlavors**
+    - 响应参数变更
+      - `+ flavors.extra_specs.cond:storage:type`
+
+### HuaweiCloud SDK GaussDB
+
+- _新增特性_
+  - 支持以下接口：
+    - `ShowLtsConfigs`
+    - `CreateLtsConfigs`
+    - `DeleteLtsConfigs`
+    - `ShowRecyclePolicy`
+    - `SetRecyclePolicy`
+    - `ListRecycleInstances`
+    - `ShowSlowlogSensitiveStatus`
+    - `UpdateSlowlogSensitiveSwitch`
+    - `RestartProxyInstance`
+    - `RenameInstanceNode`
+    - `ShowAutoScalingHistory`
+    - `UpdateServerlessPolicy`
+    - `ModifyNodePriority`
+    - `ShowInstanceEip`
+    - `ListParamsTemplateApplyHistory`
+    - `ShowProxyConfigurations`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowProxyIpgroup**
+    - 响应参数变更
+      - `+ ip_group.id`
+      - `+ ip_group.name`
+      - `+ ip_group.ip_list`
+      - `* ip_group: object -> object<ProxyIpGroupDetail>`
+  - **UpdateGaussMySqlInstanceName**
+    - 请求参数变更
+      - `+ is_modify_node_name`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **OfflineNodes**
+    - 响应参数变更
+      - `+ job_id`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListAvailableFlavors**
+    - 响应参数变更
+      - `+ flavors.spec_code`
+      - `- flavors.spec_cpde`
+  - **ListRestorableInstances**
+    - 响应参数变更
+      - `* instances.version: number -> string`
+  - **ListDbUsers**
+    - 响应参数变更
+      - `+ users.attribute`
+      - `+ users.lock_status`
+      - `- users.attributes`
+  - **ShowUpgradeCandidateVersions**
+    - 响应参数变更
+      - `+ hotfix_upgrade_infos`
+      - `+ hotfix_rollback_infos`
+
+### HuaweiCloud SDK GES
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListGraphs2**
+    - 响应参数变更
+      - `+ graphs.sort_key_type`
+  - **CreateGraph2**
+    - 请求参数变更
+      - `+ graph.sort_key_type`
+  - **ShowGraph2**
+    - 响应参数变更
+      - `+ graph.sort_key_type`
+  - **ImportGraph2**
+    - 请求参数变更
+      - `+ parallel_edge.sort_key_column`
+
+### HuaweiCloud SDK IAMAccessAnalyzer
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **StartResourceScan**
+    - 请求参数变更
+      - `+ resource_project_id`
+  - **ListFindings**
+    - 响应参数变更
+      - `+ findings.resource_project_id`
+      - `+ findings.resource_type: enum value [kms:cmk]`
+  - **ShowFinding**
+    - 响应参数变更
+      - `+ finding.resource_project_id`
+      - `+ finding.resource_type: enum value [kms:cmk]`
+  - **ListAccessPreviewFindings**
+    - 响应参数变更
+      - `+ findings.resource_type: enum value [kms:cmk]`
+  - **CreateAnalyzer**
+    - 请求参数变更
+      - `+ type: enum value [organization]`
+  - **ListAnalyzers**
+    - 请求参数变更
+      - `+ type: enum value [organization]`
+    - 响应参数变更
+      - `+ analyzers.organization_id`
+      - `+ analyzers.status: enum value [disabled]`
+      - `+ analyzers.status_reason.code: enum value [delegated_administrator_deregistered,trusted_service_disabled,internal_error,organization_deleted]`
+      - `+ analyzers.type: enum value [organization]`
+  - **ShowAnalyzer**
+    - 响应参数变更
+      - `+ analyzer.organization_id`
+      - `+ analyzer.status: enum value [disabled]`
+      - `+ analyzer.status_reason.code: enum value [delegated_administrator_deregistered,trusted_service_disabled,internal_error,organization_deleted]`
+      - `+ analyzer.type: enum value [organization]`
+  - **CreateAccessPreview**
+    - 请求参数变更
+      - `+ configurations.kms_cmk`
+  - **ShowAccessPreview**
+    - 响应参数变更
+      - `+ access_preview.configurations.kms_cmk`
+
+### HuaweiCloud SDK ImageSearch
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RunSearch**
+    - 请求参数变更
+      - `+ text`
+      - `+ search_type: enum value [TEXT]`
+      - `+ optional_params.text_lang`
+
+### HuaweiCloud SDK LTS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateLogStreamIndex**
+    - 请求参数变更
+      - `+ sqlAnalysisEnable`
+
+### HuaweiCloud SDK MRS
+
+- _新增特性_
+  - 支持接口`ListNodes`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowMrsFlavors**
+    - 请求参数变更
+      - `+ availability_zone`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 支持接口`ShowReplayDelayStatus`、`SwitchLogReplay`、`ListShareBackups`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListBackups**
+    - 请求参数变更
+      - `+ status`
+
 # 3.1.98 2024-05-30
 
 ### HuaweiCloud SDK BSS

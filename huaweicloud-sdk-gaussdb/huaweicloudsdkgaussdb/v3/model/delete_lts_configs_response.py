@@ -2,10 +2,11 @@
 
 import six
 
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class Urn:
+class DeleteLtsConfigsResponse(SdkResponse):
 
     """
     Attributes:
@@ -23,13 +24,13 @@ class Urn:
     }
 
     def __init__(self):
-        """Urn
+        """DeleteLtsConfigsResponse
 
         The model defined in huaweicloud sdk
 
         """
         
-        
+        super(DeleteLtsConfigsResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):
@@ -74,7 +75,7 @@ class Urn:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, Urn):
+        if not isinstance(other, DeleteLtsConfigsResponse):
             return False
 
         return self.__dict__ == other.__dict__

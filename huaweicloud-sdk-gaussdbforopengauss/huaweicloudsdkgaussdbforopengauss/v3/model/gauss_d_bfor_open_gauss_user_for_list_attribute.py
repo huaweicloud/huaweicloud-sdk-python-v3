@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class GaussDBforOpenGaussUserForListAttributes:
+class GaussDBforOpenGaussUserForListAttribute:
 
     """
     Attributes:
@@ -24,7 +24,8 @@ class GaussDBforOpenGaussUserForListAttributes:
         'rolcanlogin': 'bool',
         'rolconnlimit': 'int',
         'rolreplication': 'bool',
-        'rolbypassrls': 'bool'
+        'rolbypassrls': 'bool',
+        'rolpassworddeadline': 'str'
     }
 
     attribute_map = {
@@ -35,11 +36,12 @@ class GaussDBforOpenGaussUserForListAttributes:
         'rolcanlogin': 'rolcanlogin',
         'rolconnlimit': 'rolconnlimit',
         'rolreplication': 'rolreplication',
-        'rolbypassrls': 'rolbypassrls'
+        'rolbypassrls': 'rolbypassrls',
+        'rolpassworddeadline': 'rolpassworddeadline'
     }
 
-    def __init__(self, rolsuper=None, rolinherit=None, rolcreaterole=None, rolcreatedb=None, rolcanlogin=None, rolconnlimit=None, rolreplication=None, rolbypassrls=None):
-        """GaussDBforOpenGaussUserForListAttributes
+    def __init__(self, rolsuper=None, rolinherit=None, rolcreaterole=None, rolcreatedb=None, rolcanlogin=None, rolconnlimit=None, rolreplication=None, rolbypassrls=None, rolpassworddeadline=None):
+        """GaussDBforOpenGaussUserForListAttribute
 
         The model defined in huaweicloud sdk
 
@@ -59,6 +61,8 @@ class GaussDBforOpenGaussUserForListAttributes:
         :type rolreplication: bool
         :param rolbypassrls: 用户是否绕过每个行级安全策略，取值为“true”或“false”。
         :type rolbypassrls: bool
+        :param rolpassworddeadline: 用户密码过期时间。
+        :type rolpassworddeadline: str
         """
         
         
@@ -71,6 +75,7 @@ class GaussDBforOpenGaussUserForListAttributes:
         self._rolconnlimit = None
         self._rolreplication = None
         self._rolbypassrls = None
+        self._rolpassworddeadline = None
         self.discriminator = None
 
         if rolsuper is not None:
@@ -89,182 +94,206 @@ class GaussDBforOpenGaussUserForListAttributes:
             self.rolreplication = rolreplication
         if rolbypassrls is not None:
             self.rolbypassrls = rolbypassrls
+        if rolpassworddeadline is not None:
+            self.rolpassworddeadline = rolpassworddeadline
 
     @property
     def rolsuper(self):
-        """Gets the rolsuper of this GaussDBforOpenGaussUserForListAttributes.
+        """Gets the rolsuper of this GaussDBforOpenGaussUserForListAttribute.
 
         用户是否具有超级用户权限，取值为“true”或“false”。
 
-        :return: The rolsuper of this GaussDBforOpenGaussUserForListAttributes.
+        :return: The rolsuper of this GaussDBforOpenGaussUserForListAttribute.
         :rtype: bool
         """
         return self._rolsuper
 
     @rolsuper.setter
     def rolsuper(self, rolsuper):
-        """Sets the rolsuper of this GaussDBforOpenGaussUserForListAttributes.
+        """Sets the rolsuper of this GaussDBforOpenGaussUserForListAttribute.
 
         用户是否具有超级用户权限，取值为“true”或“false”。
 
-        :param rolsuper: The rolsuper of this GaussDBforOpenGaussUserForListAttributes.
+        :param rolsuper: The rolsuper of this GaussDBforOpenGaussUserForListAttribute.
         :type rolsuper: bool
         """
         self._rolsuper = rolsuper
 
     @property
     def rolinherit(self):
-        """Gets the rolinherit of this GaussDBforOpenGaussUserForListAttributes.
+        """Gets the rolinherit of this GaussDBforOpenGaussUserForListAttribute.
 
         用户是否自动继承其所属角色的权限，取值为“true”或“false”。
 
-        :return: The rolinherit of this GaussDBforOpenGaussUserForListAttributes.
+        :return: The rolinherit of this GaussDBforOpenGaussUserForListAttribute.
         :rtype: bool
         """
         return self._rolinherit
 
     @rolinherit.setter
     def rolinherit(self, rolinherit):
-        """Sets the rolinherit of this GaussDBforOpenGaussUserForListAttributes.
+        """Sets the rolinherit of this GaussDBforOpenGaussUserForListAttribute.
 
         用户是否自动继承其所属角色的权限，取值为“true”或“false”。
 
-        :param rolinherit: The rolinherit of this GaussDBforOpenGaussUserForListAttributes.
+        :param rolinherit: The rolinherit of this GaussDBforOpenGaussUserForListAttribute.
         :type rolinherit: bool
         """
         self._rolinherit = rolinherit
 
     @property
     def rolcreaterole(self):
-        """Gets the rolcreaterole of this GaussDBforOpenGaussUserForListAttributes.
+        """Gets the rolcreaterole of this GaussDBforOpenGaussUserForListAttribute.
 
         用户是否支持创建其他子用户，取值为“true”或“false”。
 
-        :return: The rolcreaterole of this GaussDBforOpenGaussUserForListAttributes.
+        :return: The rolcreaterole of this GaussDBforOpenGaussUserForListAttribute.
         :rtype: bool
         """
         return self._rolcreaterole
 
     @rolcreaterole.setter
     def rolcreaterole(self, rolcreaterole):
-        """Sets the rolcreaterole of this GaussDBforOpenGaussUserForListAttributes.
+        """Sets the rolcreaterole of this GaussDBforOpenGaussUserForListAttribute.
 
         用户是否支持创建其他子用户，取值为“true”或“false”。
 
-        :param rolcreaterole: The rolcreaterole of this GaussDBforOpenGaussUserForListAttributes.
+        :param rolcreaterole: The rolcreaterole of this GaussDBforOpenGaussUserForListAttribute.
         :type rolcreaterole: bool
         """
         self._rolcreaterole = rolcreaterole
 
     @property
     def rolcreatedb(self):
-        """Gets the rolcreatedb of this GaussDBforOpenGaussUserForListAttributes.
+        """Gets the rolcreatedb of this GaussDBforOpenGaussUserForListAttribute.
 
         用户是否可以创建数据库，取值为“true”或“false”。
 
-        :return: The rolcreatedb of this GaussDBforOpenGaussUserForListAttributes.
+        :return: The rolcreatedb of this GaussDBforOpenGaussUserForListAttribute.
         :rtype: bool
         """
         return self._rolcreatedb
 
     @rolcreatedb.setter
     def rolcreatedb(self, rolcreatedb):
-        """Sets the rolcreatedb of this GaussDBforOpenGaussUserForListAttributes.
+        """Sets the rolcreatedb of this GaussDBforOpenGaussUserForListAttribute.
 
         用户是否可以创建数据库，取值为“true”或“false”。
 
-        :param rolcreatedb: The rolcreatedb of this GaussDBforOpenGaussUserForListAttributes.
+        :param rolcreatedb: The rolcreatedb of this GaussDBforOpenGaussUserForListAttribute.
         :type rolcreatedb: bool
         """
         self._rolcreatedb = rolcreatedb
 
     @property
     def rolcanlogin(self):
-        """Gets the rolcanlogin of this GaussDBforOpenGaussUserForListAttributes.
+        """Gets the rolcanlogin of this GaussDBforOpenGaussUserForListAttribute.
 
         用户是否可以登录数据库，取值为“true”或“false”。
 
-        :return: The rolcanlogin of this GaussDBforOpenGaussUserForListAttributes.
+        :return: The rolcanlogin of this GaussDBforOpenGaussUserForListAttribute.
         :rtype: bool
         """
         return self._rolcanlogin
 
     @rolcanlogin.setter
     def rolcanlogin(self, rolcanlogin):
-        """Sets the rolcanlogin of this GaussDBforOpenGaussUserForListAttributes.
+        """Sets the rolcanlogin of this GaussDBforOpenGaussUserForListAttribute.
 
         用户是否可以登录数据库，取值为“true”或“false”。
 
-        :param rolcanlogin: The rolcanlogin of this GaussDBforOpenGaussUserForListAttributes.
+        :param rolcanlogin: The rolcanlogin of this GaussDBforOpenGaussUserForListAttribute.
         :type rolcanlogin: bool
         """
         self._rolcanlogin = rolcanlogin
 
     @property
     def rolconnlimit(self):
-        """Gets the rolconnlimit of this GaussDBforOpenGaussUserForListAttributes.
+        """Gets the rolconnlimit of this GaussDBforOpenGaussUserForListAttribute.
 
         用户连接实例的最大并发连接数。-1表示没有限制。
 
-        :return: The rolconnlimit of this GaussDBforOpenGaussUserForListAttributes.
+        :return: The rolconnlimit of this GaussDBforOpenGaussUserForListAttribute.
         :rtype: int
         """
         return self._rolconnlimit
 
     @rolconnlimit.setter
     def rolconnlimit(self, rolconnlimit):
-        """Sets the rolconnlimit of this GaussDBforOpenGaussUserForListAttributes.
+        """Sets the rolconnlimit of this GaussDBforOpenGaussUserForListAttribute.
 
         用户连接实例的最大并发连接数。-1表示没有限制。
 
-        :param rolconnlimit: The rolconnlimit of this GaussDBforOpenGaussUserForListAttributes.
+        :param rolconnlimit: The rolconnlimit of this GaussDBforOpenGaussUserForListAttribute.
         :type rolconnlimit: int
         """
         self._rolconnlimit = rolconnlimit
 
     @property
     def rolreplication(self):
-        """Gets the rolreplication of this GaussDBforOpenGaussUserForListAttributes.
+        """Gets the rolreplication of this GaussDBforOpenGaussUserForListAttribute.
 
         用户是否属于复制角色，取值为“true”或“false”。
 
-        :return: The rolreplication of this GaussDBforOpenGaussUserForListAttributes.
+        :return: The rolreplication of this GaussDBforOpenGaussUserForListAttribute.
         :rtype: bool
         """
         return self._rolreplication
 
     @rolreplication.setter
     def rolreplication(self, rolreplication):
-        """Sets the rolreplication of this GaussDBforOpenGaussUserForListAttributes.
+        """Sets the rolreplication of this GaussDBforOpenGaussUserForListAttribute.
 
         用户是否属于复制角色，取值为“true”或“false”。
 
-        :param rolreplication: The rolreplication of this GaussDBforOpenGaussUserForListAttributes.
+        :param rolreplication: The rolreplication of this GaussDBforOpenGaussUserForListAttribute.
         :type rolreplication: bool
         """
         self._rolreplication = rolreplication
 
     @property
     def rolbypassrls(self):
-        """Gets the rolbypassrls of this GaussDBforOpenGaussUserForListAttributes.
+        """Gets the rolbypassrls of this GaussDBforOpenGaussUserForListAttribute.
 
         用户是否绕过每个行级安全策略，取值为“true”或“false”。
 
-        :return: The rolbypassrls of this GaussDBforOpenGaussUserForListAttributes.
+        :return: The rolbypassrls of this GaussDBforOpenGaussUserForListAttribute.
         :rtype: bool
         """
         return self._rolbypassrls
 
     @rolbypassrls.setter
     def rolbypassrls(self, rolbypassrls):
-        """Sets the rolbypassrls of this GaussDBforOpenGaussUserForListAttributes.
+        """Sets the rolbypassrls of this GaussDBforOpenGaussUserForListAttribute.
 
         用户是否绕过每个行级安全策略，取值为“true”或“false”。
 
-        :param rolbypassrls: The rolbypassrls of this GaussDBforOpenGaussUserForListAttributes.
+        :param rolbypassrls: The rolbypassrls of this GaussDBforOpenGaussUserForListAttribute.
         :type rolbypassrls: bool
         """
         self._rolbypassrls = rolbypassrls
+
+    @property
+    def rolpassworddeadline(self):
+        """Gets the rolpassworddeadline of this GaussDBforOpenGaussUserForListAttribute.
+
+        用户密码过期时间。
+
+        :return: The rolpassworddeadline of this GaussDBforOpenGaussUserForListAttribute.
+        :rtype: str
+        """
+        return self._rolpassworddeadline
+
+    @rolpassworddeadline.setter
+    def rolpassworddeadline(self, rolpassworddeadline):
+        """Sets the rolpassworddeadline of this GaussDBforOpenGaussUserForListAttribute.
+
+        用户密码过期时间。
+
+        :param rolpassworddeadline: The rolpassworddeadline of this GaussDBforOpenGaussUserForListAttribute.
+        :type rolpassworddeadline: str
+        """
+        self._rolpassworddeadline = rolpassworddeadline
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -308,7 +337,7 @@ class GaussDBforOpenGaussUserForListAttributes:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, GaussDBforOpenGaussUserForListAttributes):
+        if not isinstance(other, GaussDBforOpenGaussUserForListAttribute):
             return False
 
         return self.__dict__ == other.__dict__

@@ -55,7 +55,7 @@ class NodeGroupV2:
         :type root_volume: :class:`huaweicloudsdkmrs.v2.Volume`
         :param data_volume: 
         :type data_volume: :class:`huaweicloudsdkmrs.v2.Volume`
-        :param data_volume_count: 节点数据磁盘存储数目，取值范围：0～10。
+        :param data_volume_count: 节点数据磁盘存储数目，取值范围：0～20。
         :type data_volume_count: int
         :param charge_info: 
         :type charge_info: :class:`huaweicloudsdkmrs.v2.ChargeInfo`
@@ -200,7 +200,7 @@ class NodeGroupV2:
     def data_volume_count(self):
         """Gets the data_volume_count of this NodeGroupV2.
 
-        节点数据磁盘存储数目，取值范围：0～10。
+        节点数据磁盘存储数目，取值范围：0～20。
 
         :return: The data_volume_count of this NodeGroupV2.
         :rtype: int
@@ -211,7 +211,7 @@ class NodeGroupV2:
     def data_volume_count(self, data_volume_count):
         """Sets the data_volume_count of this NodeGroupV2.
 
-        节点数据磁盘存储数目，取值范围：0～10。
+        节点数据磁盘存储数目，取值范围：0～20。
 
         :param data_volume_count: The data_volume_count of this NodeGroupV2.
         :type data_volume_count: int

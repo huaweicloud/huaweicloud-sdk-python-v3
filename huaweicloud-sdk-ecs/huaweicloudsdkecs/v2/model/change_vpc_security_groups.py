@@ -17,7 +17,7 @@ class ChangeVpcSecurityGroups:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'object'
+        'id': 'str'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class ChangeVpcSecurityGroups:
         The model defined in huaweicloud sdk
 
         :param id: 安全组id
-        :type id: object
+        :type id: str
         """
         
         
@@ -47,7 +47,7 @@ class ChangeVpcSecurityGroups:
         安全组id
 
         :return: The id of this ChangeVpcSecurityGroups.
-        :rtype: object
+        :rtype: str
         """
         return self._id
 
@@ -58,7 +58,7 @@ class ChangeVpcSecurityGroups:
         安全组id
 
         :param id: The id of this ChangeVpcSecurityGroups.
-        :type id: object
+        :type id: str
         """
         self._id = id
 

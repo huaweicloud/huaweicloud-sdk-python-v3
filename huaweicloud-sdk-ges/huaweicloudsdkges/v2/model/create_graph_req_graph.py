@@ -38,7 +38,8 @@ class CreateGraphReqGraph:
         'vertex_id_type': 'CreateGraphReqGraphVertexIdType',
         'enable_multi_label': 'bool',
         'capacity_ratio': 'int',
-        'is_dynamic_graph': 'bool'
+        'is_dynamic_graph': 'bool',
+        'sort_key_type': 'str'
     }
 
     attribute_map = {
@@ -63,10 +64,11 @@ class CreateGraphReqGraph:
         'vertex_id_type': 'vertex_id_type',
         'enable_multi_label': 'enable_multi_label',
         'capacity_ratio': 'capacity_ratio',
-        'is_dynamic_graph': 'is_dynamic_graph'
+        'is_dynamic_graph': 'is_dynamic_graph',
+        'sort_key_type': 'sort_key_type'
     }
 
-    def __init__(self, name=None, graph_size_type_index=None, arch=None, vpc_id=None, subnet_id=None, security_group_id=None, public_ip=None, enable_multi_az=None, encryption=None, lts_operation_trace=None, sys_tags=None, tags=None, enable_rbac=None, enable_full_text_index=None, enable_hyg=None, crypt_algorithm=None, enable_https=None, product_type=None, vertex_id_type=None, enable_multi_label=None, capacity_ratio=None, is_dynamic_graph=None):
+    def __init__(self, name=None, graph_size_type_index=None, arch=None, vpc_id=None, subnet_id=None, security_group_id=None, public_ip=None, enable_multi_az=None, encryption=None, lts_operation_trace=None, sys_tags=None, tags=None, enable_rbac=None, enable_full_text_index=None, enable_hyg=None, crypt_algorithm=None, enable_https=None, product_type=None, vertex_id_type=None, enable_multi_label=None, capacity_ratio=None, is_dynamic_graph=None, sort_key_type=None):
         """CreateGraphReqGraph
 
         The model defined in huaweicloud sdk
@@ -115,6 +117,8 @@ class CreateGraphReqGraph:
         :type capacity_ratio: int
         :param is_dynamic_graph: 是否为动态图
         :type is_dynamic_graph: bool
+        :param sort_key_type: 持久化版图数据的sortKey的类型，通过配置不同SortKey的值来区分重复边（源点，终点，Label三者都相同的边），仅持久化图需要填写。取值为： - int：整型 - string：字节长度小于等于40的字符串 - varString：不限长度字符串，过长会影响读写性能，建议长度控制在1K字节以内，最大不要超过2K字节
+        :type sort_key_type: str
         """
         
         
@@ -141,6 +145,7 @@ class CreateGraphReqGraph:
         self._enable_multi_label = None
         self._capacity_ratio = None
         self._is_dynamic_graph = None
+        self._sort_key_type = None
         self.discriminator = None
 
         self.name = name
@@ -180,6 +185,8 @@ class CreateGraphReqGraph:
             self.capacity_ratio = capacity_ratio
         if is_dynamic_graph is not None:
             self.is_dynamic_graph = is_dynamic_graph
+        if sort_key_type is not None:
+            self.sort_key_type = sort_key_type
 
     @property
     def name(self):
@@ -648,6 +655,28 @@ class CreateGraphReqGraph:
         :type is_dynamic_graph: bool
         """
         self._is_dynamic_graph = is_dynamic_graph
+
+    @property
+    def sort_key_type(self):
+        """Gets the sort_key_type of this CreateGraphReqGraph.
+
+        持久化版图数据的sortKey的类型，通过配置不同SortKey的值来区分重复边（源点，终点，Label三者都相同的边），仅持久化图需要填写。取值为： - int：整型 - string：字节长度小于等于40的字符串 - varString：不限长度字符串，过长会影响读写性能，建议长度控制在1K字节以内，最大不要超过2K字节
+
+        :return: The sort_key_type of this CreateGraphReqGraph.
+        :rtype: str
+        """
+        return self._sort_key_type
+
+    @sort_key_type.setter
+    def sort_key_type(self, sort_key_type):
+        """Sets the sort_key_type of this CreateGraphReqGraph.
+
+        持久化版图数据的sortKey的类型，通过配置不同SortKey的值来区分重复边（源点，终点，Label三者都相同的边），仅持久化图需要填写。取值为： - int：整型 - string：字节长度小于等于40的字符串 - varString：不限长度字符串，过长会影响读写性能，建议长度控制在1K字节以内，最大不要超过2K字节
+
+        :param sort_key_type: The sort_key_type of this CreateGraphReqGraph.
+        :type sort_key_type: str
+        """
+        self._sort_key_type = sort_key_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

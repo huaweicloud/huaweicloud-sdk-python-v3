@@ -17,26 +17,26 @@ class AvailableFlavorInfoResult:
     sensitive_list = []
 
     openapi_types = {
-        'spec_cpde': 'str',
+        'spec_code': 'str',
         'vcpus': 'str',
         'ram': 'str',
         'az_status': 'dict(str, str)'
     }
 
     attribute_map = {
-        'spec_cpde': 'spec_cpde',
+        'spec_code': 'spec_code',
         'vcpus': 'vcpus',
         'ram': 'ram',
         'az_status': 'az_status'
     }
 
-    def __init__(self, spec_cpde=None, vcpus=None, ram=None, az_status=None):
+    def __init__(self, spec_code=None, vcpus=None, ram=None, az_status=None):
         """AvailableFlavorInfoResult
 
         The model defined in huaweicloud sdk
 
-        :param spec_cpde: 资源规格编码。
-        :type spec_cpde: str
+        :param spec_code: 资源规格编码。
+        :type spec_code: str
         :param vcpus: CPU核数。
         :type vcpus: str
         :param ram: 内存大小，单位：GB。
@@ -47,14 +47,14 @@ class AvailableFlavorInfoResult:
         
         
 
-        self._spec_cpde = None
+        self._spec_code = None
         self._vcpus = None
         self._ram = None
         self._az_status = None
         self.discriminator = None
 
-        if spec_cpde is not None:
-            self.spec_cpde = spec_cpde
+        if spec_code is not None:
+            self.spec_code = spec_code
         if vcpus is not None:
             self.vcpus = vcpus
         if ram is not None:
@@ -63,26 +63,26 @@ class AvailableFlavorInfoResult:
             self.az_status = az_status
 
     @property
-    def spec_cpde(self):
-        """Gets the spec_cpde of this AvailableFlavorInfoResult.
+    def spec_code(self):
+        """Gets the spec_code of this AvailableFlavorInfoResult.
 
         资源规格编码。
 
-        :return: The spec_cpde of this AvailableFlavorInfoResult.
+        :return: The spec_code of this AvailableFlavorInfoResult.
         :rtype: str
         """
-        return self._spec_cpde
+        return self._spec_code
 
-    @spec_cpde.setter
-    def spec_cpde(self, spec_cpde):
-        """Sets the spec_cpde of this AvailableFlavorInfoResult.
+    @spec_code.setter
+    def spec_code(self, spec_code):
+        """Sets the spec_code of this AvailableFlavorInfoResult.
 
         资源规格编码。
 
-        :param spec_cpde: The spec_cpde of this AvailableFlavorInfoResult.
-        :type spec_cpde: str
+        :param spec_code: The spec_code of this AvailableFlavorInfoResult.
+        :type spec_code: str
         """
-        self._spec_cpde = spec_cpde
+        self._spec_code = spec_code
 
     @property
     def vcpus(self):

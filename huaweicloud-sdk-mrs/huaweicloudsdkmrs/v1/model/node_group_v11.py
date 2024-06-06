@@ -57,7 +57,7 @@ class NodeGroupV11:
         :type root_volume_type: str
         :param data_volume_type: 节点数据磁盘存储类别，目前支持SATA、SAS和SSD。 - SATA：普通IO - SAS：高IO - SSD：超高IO - GPSSD：通用型SSD
         :type data_volume_type: str
-        :param data_volume_count: 节点数据磁盘存储数目 取值范围：0～10。
+        :param data_volume_count: 节点数据磁盘存储数目 取值范围：0～20。
         :type data_volume_count: int
         :param data_volume_size: 节点数据磁盘存储大小 取值范围：100GB～32000GB。
         :type data_volume_size: int
@@ -230,7 +230,7 @@ class NodeGroupV11:
     def data_volume_count(self):
         """Gets the data_volume_count of this NodeGroupV11.
 
-        节点数据磁盘存储数目 取值范围：0～10。
+        节点数据磁盘存储数目 取值范围：0～20。
 
         :return: The data_volume_count of this NodeGroupV11.
         :rtype: int
@@ -241,7 +241,7 @@ class NodeGroupV11:
     def data_volume_count(self, data_volume_count):
         """Sets the data_volume_count of this NodeGroupV11.
 
-        节点数据磁盘存储数目 取值范围：0～10。
+        节点数据磁盘存储数目 取值范围：0～20。
 
         :param data_volume_count: The data_volume_count of this NodeGroupV11.
         :type data_volume_count: int

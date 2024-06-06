@@ -11,6 +11,7 @@ class ResourceType:
     """
     IAM_AGENCY = "iam:agency"
     OBS_BUCKET = "obs:bucket"
+    KMS_CMK = "kms:cmk"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

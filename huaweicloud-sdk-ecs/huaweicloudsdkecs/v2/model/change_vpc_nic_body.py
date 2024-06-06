@@ -19,7 +19,7 @@ class ChangeVpcNicBody:
     openapi_types = {
         'port_id': 'str',
         'subnet_id': 'str',
-        'security_groups': 'ChangeVpcSecurityGroups',
+        'security_groups': 'list[ChangeVpcSecurityGroups]',
         'ip_address': 'str'
     }
 
@@ -39,8 +39,8 @@ class ChangeVpcNicBody:
         :type port_id: str
         :param subnet_id: 云服务器云主机添加网卡的信息。 需要指定云服务器云主机所属虚拟私有云下已创建的网络（network）的ID，UUID格式。
         :type subnet_id: str
-        :param security_groups: 
-        :type security_groups: :class:`huaweicloudsdkecs.v2.ChangeVpcSecurityGroups`
+        :param security_groups: 添加网卡的安全组信息
+        :type security_groups: list[:class:`huaweicloudsdkecs.v2.ChangeVpcSecurityGroups`]
         :param ip_address: P地址，无该参数表示自动分配IP地址
         :type ip_address: str
         """
@@ -110,8 +110,10 @@ class ChangeVpcNicBody:
     def security_groups(self):
         """Gets the security_groups of this ChangeVpcNicBody.
 
+        添加网卡的安全组信息
+
         :return: The security_groups of this ChangeVpcNicBody.
-        :rtype: :class:`huaweicloudsdkecs.v2.ChangeVpcSecurityGroups`
+        :rtype: list[:class:`huaweicloudsdkecs.v2.ChangeVpcSecurityGroups`]
         """
         return self._security_groups
 
@@ -119,8 +121,10 @@ class ChangeVpcNicBody:
     def security_groups(self, security_groups):
         """Sets the security_groups of this ChangeVpcNicBody.
 
+        添加网卡的安全组信息
+
         :param security_groups: The security_groups of this ChangeVpcNicBody.
-        :type security_groups: :class:`huaweicloudsdkecs.v2.ChangeVpcSecurityGroups`
+        :type security_groups: list[:class:`huaweicloudsdkecs.v2.ChangeVpcSecurityGroups`]
         """
         self._security_groups = security_groups
 

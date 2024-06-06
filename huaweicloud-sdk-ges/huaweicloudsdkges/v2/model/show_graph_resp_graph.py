@@ -60,7 +60,8 @@ class ShowGraphRespGraph:
         'expand_time': 'str',
         'resize_time': 'str',
         'enable_multi_label': 'bool',
-        'capacity_ratio': 'int'
+        'capacity_ratio': 'int',
+        'sort_key_type': 'str'
     }
 
     attribute_map = {
@@ -107,10 +108,11 @@ class ShowGraphRespGraph:
         'expand_time': 'expand_time',
         'resize_time': 'resize_time',
         'enable_multi_label': 'enable_multi_label',
-        'capacity_ratio': 'capacity_ratio'
+        'capacity_ratio': 'capacity_ratio',
+        'sort_key_type': 'sort_key_type'
     }
 
-    def __init__(self, id=None, name=None, created_by=None, is_multi_az=None, region_code=None, az_code=None, schema_path=None, edgeset_path=None, vertexset_path=None, edgeset_format=None, edgeset_default_label=None, vertexset_format=None, vertexset_default_label=None, data_store_version=None, sys_tags=None, status=None, action_progress=None, graph_size_type_index=None, vpc_id=None, subnet_id=None, security_group_id=None, replication=None, created=None, updated=None, private_ip=None, public_ip=None, arch=None, encrypted=None, master_key_id=None, master_key_name=None, enable_rbac=None, enable_full_text_index=None, enable_hyg=None, traffic_ip_list=None, crypt_algorithm=None, enable_https=None, tags=None, product_type=None, vertex_id_type=None, origin_graph_size_type_index=None, expand_time=None, resize_time=None, enable_multi_label=None, capacity_ratio=None):
+    def __init__(self, id=None, name=None, created_by=None, is_multi_az=None, region_code=None, az_code=None, schema_path=None, edgeset_path=None, vertexset_path=None, edgeset_format=None, edgeset_default_label=None, vertexset_format=None, vertexset_default_label=None, data_store_version=None, sys_tags=None, status=None, action_progress=None, graph_size_type_index=None, vpc_id=None, subnet_id=None, security_group_id=None, replication=None, created=None, updated=None, private_ip=None, public_ip=None, arch=None, encrypted=None, master_key_id=None, master_key_name=None, enable_rbac=None, enable_full_text_index=None, enable_hyg=None, traffic_ip_list=None, crypt_algorithm=None, enable_https=None, tags=None, product_type=None, vertex_id_type=None, origin_graph_size_type_index=None, expand_time=None, resize_time=None, enable_multi_label=None, capacity_ratio=None, sort_key_type=None):
         """ShowGraphRespGraph
 
         The model defined in huaweicloud sdk
@@ -203,6 +205,8 @@ class ShowGraphRespGraph:
         :type enable_multi_label: bool
         :param capacity_ratio: 图的容量倍率。该参数只有持久化版百亿规格图支持，且从2.3.18版本后开始支持。
         :type capacity_ratio: int
+        :param sort_key_type: 持久化版图边数据的sortKey类型
+        :type sort_key_type: str
         """
         
         
@@ -251,6 +255,7 @@ class ShowGraphRespGraph:
         self._resize_time = None
         self._enable_multi_label = None
         self._capacity_ratio = None
+        self._sort_key_type = None
         self.discriminator = None
 
         if id is not None:
@@ -341,6 +346,8 @@ class ShowGraphRespGraph:
             self.enable_multi_label = enable_multi_label
         if capacity_ratio is not None:
             self.capacity_ratio = capacity_ratio
+        if sort_key_type is not None:
+            self.sort_key_type = sort_key_type
 
     @property
     def id(self):
@@ -1305,6 +1312,28 @@ class ShowGraphRespGraph:
         :type capacity_ratio: int
         """
         self._capacity_ratio = capacity_ratio
+
+    @property
+    def sort_key_type(self):
+        """Gets the sort_key_type of this ShowGraphRespGraph.
+
+        持久化版图边数据的sortKey类型
+
+        :return: The sort_key_type of this ShowGraphRespGraph.
+        :rtype: str
+        """
+        return self._sort_key_type
+
+    @sort_key_type.setter
+    def sort_key_type(self, sort_key_type):
+        """Sets the sort_key_type of this ShowGraphRespGraph.
+
+        持久化版图边数据的sortKey类型
+
+        :param sort_key_type: The sort_key_type of this ShowGraphRespGraph.
+        :type sort_key_type: str
+        """
+        self._sort_key_type = sort_key_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

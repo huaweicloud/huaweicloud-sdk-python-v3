@@ -21,6 +21,7 @@ class ListBackupsRequest:
         'instance_id': 'str',
         'backup_id': 'str',
         'backup_type': 'str',
+        'status': 'str',
         'offset': 'int',
         'limit': 'int',
         'begin_time': 'str',
@@ -32,13 +33,14 @@ class ListBackupsRequest:
         'instance_id': 'instance_id',
         'backup_id': 'backup_id',
         'backup_type': 'backup_type',
+        'status': 'status',
         'offset': 'offset',
         'limit': 'limit',
         'begin_time': 'begin_time',
         'end_time': 'end_time'
     }
 
-    def __init__(self, x_language=None, instance_id=None, backup_id=None, backup_type=None, offset=None, limit=None, begin_time=None, end_time=None):
+    def __init__(self, x_language=None, instance_id=None, backup_id=None, backup_type=None, status=None, offset=None, limit=None, begin_time=None, end_time=None):
         """ListBackupsRequest
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class ListBackupsRequest:
         :type backup_id: str
         :param backup_type: 备份类型，取值：  - “auto”: 自动全量备份 - “manual”: 手动全量备份 - “fragment”: 差异全量备份 - “incremental”: 自动增量备份
         :type backup_type: str
+        :param status: 备份状态，只支持筛选RDS for SQL Server的全量备份的状态。取值：  - “BUILDING”: 备份中 - “COMPLETED”: 备份完成 - “FAILED”: 备份失败
+        :type status: str
         :param offset: 索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
         :type offset: int
         :param limit: 查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
@@ -67,6 +71,7 @@ class ListBackupsRequest:
         self._instance_id = None
         self._backup_id = None
         self._backup_type = None
+        self._status = None
         self._offset = None
         self._limit = None
         self._begin_time = None
@@ -80,6 +85,8 @@ class ListBackupsRequest:
             self.backup_id = backup_id
         if backup_type is not None:
             self.backup_type = backup_type
+        if status is not None:
+            self.status = status
         if offset is not None:
             self.offset = offset
         if limit is not None:
@@ -176,6 +183,28 @@ class ListBackupsRequest:
         :type backup_type: str
         """
         self._backup_type = backup_type
+
+    @property
+    def status(self):
+        """Gets the status of this ListBackupsRequest.
+
+        备份状态，只支持筛选RDS for SQL Server的全量备份的状态。取值：  - “BUILDING”: 备份中 - “COMPLETED”: 备份完成 - “FAILED”: 备份失败
+
+        :return: The status of this ListBackupsRequest.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this ListBackupsRequest.
+
+        备份状态，只支持筛选RDS for SQL Server的全量备份的状态。取值：  - “BUILDING”: 备份中 - “COMPLETED”: 备份完成 - “FAILED”: 备份失败
+
+        :param status: The status of this ListBackupsRequest.
+        :type status: str
+        """
+        self._status = status
 
     @property
     def offset(self):

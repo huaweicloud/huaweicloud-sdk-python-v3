@@ -21,7 +21,7 @@ class InstancesResult:
         'instance_id': 'str',
         'volume_type': 'str',
         'data_volume_size': 'float',
-        'version': 'float',
+        'version': 'str',
         'mode': 'str',
         'instance_mode': 'str'
     }
@@ -50,7 +50,7 @@ class InstancesResult:
         :param data_volume_size: 磁盘大小，单位：GB。
         :type data_volume_size: float
         :param version: 实例版本信息。
-        :type version: float
+        :type version: str
         :param mode: 部署形态。
         :type mode: str
         :param instance_mode: 实例模型，企业版，标准版，基础版。
@@ -178,7 +178,7 @@ class InstancesResult:
         实例版本信息。
 
         :return: The version of this InstancesResult.
-        :rtype: float
+        :rtype: str
         """
         return self._version
 
@@ -189,7 +189,7 @@ class InstancesResult:
         实例版本信息。
 
         :param version: The version of this InstancesResult.
-        :type version: float
+        :type version: str
         """
         self._version = version
 

@@ -27,7 +27,9 @@ from huaweicloudsdkmrs.v2.model.cancel_sync_iam_user_response import CancelSyncI
 from huaweicloudsdkmrs.v2.model.cancel_sync_request import CancelSyncRequest
 from huaweicloudsdkmrs.v2.model.charge_info import ChargeInfo
 from huaweicloudsdkmrs.v2.model.cluster_data_connector_map import ClusterDataConnectorMap
+from huaweicloudsdkmrs.v2.model.cluster_node import ClusterNode
 from huaweicloudsdkmrs.v2.model.component_config import ComponentConfig
+from huaweicloudsdkmrs.v2.model.component_info import ComponentInfo
 from huaweicloudsdkmrs.v2.model.component_install_mode import ComponentInstallMode
 from huaweicloudsdkmrs.v2.model.config import Config
 from huaweicloudsdkmrs.v2.model.create_auto_scaling_policy_request import CreateAutoScalingPolicyRequest
@@ -59,7 +61,10 @@ from huaweicloudsdkmrs.v2.model.job_query_bean import JobQueryBean
 from huaweicloudsdkmrs.v2.model.job_submit_result import JobSubmitResult
 from huaweicloudsdkmrs.v2.model.list_data_connector_request import ListDataConnectorRequest
 from huaweicloudsdkmrs.v2.model.list_data_connector_response import ListDataConnectorResponse
+from huaweicloudsdkmrs.v2.model.list_nodes_request import ListNodesRequest
+from huaweicloudsdkmrs.v2.model.list_nodes_response import ListNodesResponse
 from huaweicloudsdkmrs.v2.model.modify_default_tags_request_body import ModifyDefaultTagsRequestBody
+from huaweicloudsdkmrs.v2.model.node_detail import NodeDetail
 from huaweicloudsdkmrs.v2.model.node_group_v2 import NodeGroupV2
 from huaweicloudsdkmrs.v2.model.resources_plan import ResourcesPlan
 from huaweicloudsdkmrs.v2.model.rule import Rule
@@ -67,6 +72,7 @@ from huaweicloudsdkmrs.v2.model.run_job_flow_command import RunJobFlowCommand
 from huaweicloudsdkmrs.v2.model.run_job_flow_request import RunJobFlowRequest
 from huaweicloudsdkmrs.v2.model.run_job_flow_response import RunJobFlowResponse
 from huaweicloudsdkmrs.v2.model.scale_script import ScaleScript
+from huaweicloudsdkmrs.v2.model.server_info import ServerInfo
 from huaweicloudsdkmrs.v2.model.show_agency_mapping_request import ShowAgencyMappingRequest
 from huaweicloudsdkmrs.v2.model.show_agency_mapping_response import ShowAgencyMappingResponse
 from huaweicloudsdkmrs.v2.model.show_auto_scaling_policy_request import ShowAutoScalingPolicyRequest
@@ -116,4 +122,5 @@ from huaweicloudsdkmrs.v2.model.update_sync_iam_user_request import UpdateSyncIa
 from huaweicloudsdkmrs.v2.model.update_sync_iam_user_response import UpdateSyncIamUserResponse
 from huaweicloudsdkmrs.v2.model.update_sync_request import UpdateSyncRequest
 from huaweicloudsdkmrs.v2.model.volume import Volume
+from huaweicloudsdkmrs.v2.model.volume_info import VolumeInfo
 

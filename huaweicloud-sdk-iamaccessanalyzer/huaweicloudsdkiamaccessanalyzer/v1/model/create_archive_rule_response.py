@@ -34,7 +34,7 @@ class CreateArchiveRuleResponse(SdkResponse):
 
         :param id: 存档规则的唯一标识符。
         :type id: str
-        :param urn: 访问分析的唯一资源标识。
+        :param urn: 存档规则的唯一资源标识符。
         :type urn: str
         """
         
@@ -75,7 +75,7 @@ class CreateArchiveRuleResponse(SdkResponse):
     def urn(self):
         """Gets the urn of this CreateArchiveRuleResponse.
 
-        访问分析的唯一资源标识。
+        存档规则的唯一资源标识符。
 
         :return: The urn of this CreateArchiveRuleResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class CreateArchiveRuleResponse(SdkResponse):
     def urn(self, urn):
         """Sets the urn of this CreateArchiveRuleResponse.
 
-        访问分析的唯一资源标识。
+        存档规则的唯一资源标识符。
 
         :param urn: The urn of this CreateArchiveRuleResponse.
         :type urn: str

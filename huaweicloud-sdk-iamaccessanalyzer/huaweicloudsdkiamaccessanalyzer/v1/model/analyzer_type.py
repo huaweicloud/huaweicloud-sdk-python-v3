@@ -10,6 +10,7 @@ class AnalyzerType:
     allowed enum values
     """
     ACCOUNT = "account"
+    ORGANIZATION = "organization"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

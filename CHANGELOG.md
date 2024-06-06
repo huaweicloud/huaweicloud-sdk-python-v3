@@ -1,3 +1,309 @@
+# 3.1.99 2024-06-06
+
+### HuaweiCloud SDK CAE
+
+- _Features_
+  - Support the following APIs:
+    - `ListNoticeRules`
+    - `CreateNoticeRule`
+    - `ShowNoticeRule`
+    - `UpdateNoticeRule`
+    - `DeleteNoticeRule`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListAgencies**
+    - changes of response param
+      - `+ agencies.name: enum value [cae_trust]`
+  - **CreateAgency**
+    - changes of request param
+      - `+ metadata.enum`
+  - **ListVolumes**
+    - changes of response param
+      - `+ items.access`
+  - **CreateVolume**
+    - changes of request param
+      - `+ spec.resources_credentials`
+  - **ListComponentConfigurations**
+    - changes of response param
+      - `+ items.data.spec.items.ports.elb_id`
+  - **CreateComponentConfiguration**
+    - changes of request param
+      - `+ items.data.spec.ip`
+      - `+ items.data.spec.items.ports.elb_id`
+
+### HuaweiCloud SDK CCE
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowNode**
+    - changes of response param
+      - `+ spec.serverEnterpriseProjectID`
+  - **UpdateNode**
+    - changes of response param
+      - `+ spec.serverEnterpriseProjectID`
+  - **DeleteNode**
+    - changes of response param
+      - `+ spec.serverEnterpriseProjectID`
+  - **CreateNode**
+    - changes of request param
+      - `+ spec.serverEnterpriseProjectID`
+    - changes of response param
+      - `+ spec.serverEnterpriseProjectID`
+  - **ListNodes**
+    - changes of response param
+      - `+ items.spec.serverEnterpriseProjectID`
+  - **ShowNodePool**
+    - changes of response param
+      - `+ spec.nodeTemplate.serverEnterpriseProjectID`
+  - **UpdateNodePool**
+    - changes of request param
+      - `+ spec.nodeTemplate.serverEnterpriseProjectID`
+    - changes of response param
+      - `+ spec.nodeTemplate.serverEnterpriseProjectID`
+  - **DeleteNodePool**
+    - changes of response param
+      - `+ spec.nodeTemplate.serverEnterpriseProjectID`
+  - **CreateNodePool**
+    - changes of request param
+      - `+ spec.nodeTemplate.serverEnterpriseProjectID`
+    - changes of response param
+      - `+ spec.nodeTemplate.serverEnterpriseProjectID`
+  - **ListNodePools**
+    - changes of response param
+      - `+ items.spec.nodeTemplate.serverEnterpriseProjectID`
+
+### HuaweiCloud SDK CodeArtsPipeline
+
+- _Features_
+  - Support the API `UpdatePipelineInfo`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowStepOutputs**
+    - changes of response param
+      - `* current_system_time: int32 -> int64`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _Features_
+  - Support the API `SearchSgcComputeDimensions`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DLI
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ExportSqlJobResult**
+    - changes of request param
+      - `+ quote_char`
+      - `+ escape_char`
+
+### HuaweiCloud SDK ECS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ChangeVpc**
+    - changes of request param
+      - `* nic.security_groups: object<ChangeVpcSecurityGroups> -> list<ChangeVpcSecurityGroups>`
+  - **ListFlavors**
+    - changes of response param
+      - `+ flavors.os_extra_specs.cond:storage:type`
+  - **ListResizeFlavors**
+    - changes of response param
+      - `+ flavors.extra_specs.cond:storage:type`
+
+### HuaweiCloud SDK GaussDB
+
+- _Features_
+  - Support the following APIs:
+    - `ShowLtsConfigs`
+    - `CreateLtsConfigs`
+    - `DeleteLtsConfigs`
+    - `ShowRecyclePolicy`
+    - `SetRecyclePolicy`
+    - `ListRecycleInstances`
+    - `ShowSlowlogSensitiveStatus`
+    - `UpdateSlowlogSensitiveSwitch`
+    - `RestartProxyInstance`
+    - `RenameInstanceNode`
+    - `ShowAutoScalingHistory`
+    - `UpdateServerlessPolicy`
+    - `ModifyNodePriority`
+    - `ShowInstanceEip`
+    - `ListParamsTemplateApplyHistory`
+    - `ShowProxyConfigurations`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowProxyIpgroup**
+    - changes of response param
+      - `+ ip_group.id`
+      - `+ ip_group.name`
+      - `+ ip_group.ip_list`
+      - `* ip_group: object -> object<ProxyIpGroupDetail>`
+  - **UpdateGaussMySqlInstanceName**
+    - changes of request param
+      - `+ is_modify_node_name`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **OfflineNodes**
+    - changes of response param
+      - `+ job_id`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListAvailableFlavors**
+    - changes of response param
+      - `+ flavors.spec_code`
+      - `- flavors.spec_cpde`
+  - **ListRestorableInstances**
+    - changes of response param
+      - `* instances.version: number -> string`
+  - **ListDbUsers**
+    - changes of response param
+      - `+ users.attribute`
+      - `+ users.lock_status`
+      - `- users.attributes`
+  - **ShowUpgradeCandidateVersions**
+    - changes of response param
+      - `+ hotfix_upgrade_infos`
+      - `+ hotfix_rollback_infos`
+
+### HuaweiCloud SDK GES
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListGraphs2**
+    - changes of response param
+      - `+ graphs.sort_key_type`
+  - **CreateGraph2**
+    - changes of request param
+      - `+ graph.sort_key_type`
+  - **ShowGraph2**
+    - changes of response param
+      - `+ graph.sort_key_type`
+  - **ImportGraph2**
+    - changes of request param
+      - `+ parallel_edge.sort_key_column`
+
+### HuaweiCloud SDK IAMAccessAnalyzer
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **StartResourceScan**
+    - changes of request param
+      - `+ resource_project_id`
+  - **ListFindings**
+    - changes of response param
+      - `+ findings.resource_project_id`
+      - `+ findings.resource_type: enum value [kms:cmk]`
+  - **ShowFinding**
+    - changes of response param
+      - `+ finding.resource_project_id`
+      - `+ finding.resource_type: enum value [kms:cmk]`
+  - **ListAccessPreviewFindings**
+    - changes of response param
+      - `+ findings.resource_type: enum value [kms:cmk]`
+  - **CreateAnalyzer**
+    - changes of request param
+      - `+ type: enum value [organization]`
+  - **ListAnalyzers**
+    - changes of request param
+      - `+ type: enum value [organization]`
+    - changes of response param
+      - `+ analyzers.organization_id`
+      - `+ analyzers.status: enum value [disabled]`
+      - `+ analyzers.status_reason.code: enum value [delegated_administrator_deregistered,trusted_service_disabled,internal_error,organization_deleted]`
+      - `+ analyzers.type: enum value [organization]`
+  - **ShowAnalyzer**
+    - changes of response param
+      - `+ analyzer.organization_id`
+      - `+ analyzer.status: enum value [disabled]`
+      - `+ analyzer.status_reason.code: enum value [delegated_administrator_deregistered,trusted_service_disabled,internal_error,organization_deleted]`
+      - `+ analyzer.type: enum value [organization]`
+  - **CreateAccessPreview**
+    - changes of request param
+      - `+ configurations.kms_cmk`
+  - **ShowAccessPreview**
+    - changes of response param
+      - `+ access_preview.configurations.kms_cmk`
+
+### HuaweiCloud SDK ImageSearch
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **RunSearch**
+    - changes of request param
+      - `+ text`
+      - `+ search_type: enum value [TEXT]`
+      - `+ optional_params.text_lang`
+
+### HuaweiCloud SDK LTS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateLogStreamIndex**
+    - changes of request param
+      - `+ sqlAnalysisEnable`
+
+### HuaweiCloud SDK MRS
+
+- _Features_
+  - Support the API `ListNodes`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowMrsFlavors**
+    - changes of request param
+      - `+ availability_zone`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - Support the APIs `ShowReplayDelayStatus`, `SwitchLogReplay`, `ListShareBackups`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListBackups**
+    - changes of request param
+      - `+ status`
+
 # 3.1.98 2024-05-30
 
 ### HuaweiCloud SDK BSS

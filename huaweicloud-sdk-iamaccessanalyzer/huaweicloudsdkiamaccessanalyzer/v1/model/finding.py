@@ -27,6 +27,7 @@ class Finding:
         'resource': 'str',
         'resource_id': 'str',
         'resource_owner_account': 'str',
+        'resource_project_id': 'str',
         'resource_type': 'ResourceType',
         'sources': 'list[FindingSourceType]',
         'status': 'str',
@@ -44,13 +45,14 @@ class Finding:
         'resource': 'resource',
         'resource_id': 'resource_id',
         'resource_owner_account': 'resource_owner_account',
+        'resource_project_id': 'resource_project_id',
         'resource_type': 'resource_type',
         'sources': 'sources',
         'status': 'status',
         'updated_at': 'updated_at'
     }
 
-    def __init__(self, action=None, analyzed_at=None, condition=None, created_at=None, id=None, is_public=None, principal=None, resource=None, resource_id=None, resource_owner_account=None, resource_type=None, sources=None, status=None, updated_at=None):
+    def __init__(self, action=None, analyzed_at=None, condition=None, created_at=None, id=None, is_public=None, principal=None, resource=None, resource_id=None, resource_owner_account=None, resource_project_id=None, resource_type=None, sources=None, status=None, updated_at=None):
         """Finding
 
         The model defined in huaweicloud sdk
@@ -69,12 +71,14 @@ class Finding:
         :type is_public: bool
         :param principal: 
         :type principal: :class:`huaweicloudsdkiamaccessanalyzer.v1.FindingPrincipal`
-        :param resource: 访问分析的唯一资源标识。
+        :param resource: 资源的唯一资源标识符。
         :type resource: str
         :param resource_id: 资源的唯一标识符。
         :type resource_id: str
-        :param resource_owner_account: 拥有资源的账户ID。
+        :param resource_owner_account: 拥有资源的账号ID。
         :type resource_owner_account: str
+        :param resource_project_id: 资源所属的项目标识符
+        :type resource_project_id: str
         :param resource_type: 
         :type resource_type: :class:`huaweicloudsdkiamaccessanalyzer.v1.ResourceType`
         :param sources: 访问分析结果的来源，这指示如何授予生成访问分析结果的访问权限。
@@ -97,6 +101,7 @@ class Finding:
         self._resource = None
         self._resource_id = None
         self._resource_owner_account = None
+        self._resource_project_id = None
         self._resource_type = None
         self._sources = None
         self._status = None
@@ -114,6 +119,8 @@ class Finding:
         if resource_id is not None:
             self.resource_id = resource_id
         self.resource_owner_account = resource_owner_account
+        if resource_project_id is not None:
+            self.resource_project_id = resource_project_id
         self.resource_type = resource_type
         if sources is not None:
             self.sources = sources
@@ -274,7 +281,7 @@ class Finding:
     def resource(self):
         """Gets the resource of this Finding.
 
-        访问分析的唯一资源标识。
+        资源的唯一资源标识符。
 
         :return: The resource of this Finding.
         :rtype: str
@@ -285,7 +292,7 @@ class Finding:
     def resource(self, resource):
         """Sets the resource of this Finding.
 
-        访问分析的唯一资源标识。
+        资源的唯一资源标识符。
 
         :param resource: The resource of this Finding.
         :type resource: str
@@ -318,7 +325,7 @@ class Finding:
     def resource_owner_account(self):
         """Gets the resource_owner_account of this Finding.
 
-        拥有资源的账户ID。
+        拥有资源的账号ID。
 
         :return: The resource_owner_account of this Finding.
         :rtype: str
@@ -329,12 +336,34 @@ class Finding:
     def resource_owner_account(self, resource_owner_account):
         """Sets the resource_owner_account of this Finding.
 
-        拥有资源的账户ID。
+        拥有资源的账号ID。
 
         :param resource_owner_account: The resource_owner_account of this Finding.
         :type resource_owner_account: str
         """
         self._resource_owner_account = resource_owner_account
+
+    @property
+    def resource_project_id(self):
+        """Gets the resource_project_id of this Finding.
+
+        资源所属的项目标识符
+
+        :return: The resource_project_id of this Finding.
+        :rtype: str
+        """
+        return self._resource_project_id
+
+    @resource_project_id.setter
+    def resource_project_id(self, resource_project_id):
+        """Sets the resource_project_id of this Finding.
+
+        资源所属的项目标识符
+
+        :param resource_project_id: The resource_project_id of this Finding.
+        :type resource_project_id: str
+        """
+        self._resource_project_id = resource_project_id
 
     @property
     def resource_type(self):

@@ -17,28 +17,35 @@ class MysqlUpdateInstanceNameRequest:
     sensitive_list = []
 
     openapi_types = {
-        'name': 'str'
+        'name': 'str',
+        'is_modify_node_name': 'str'
     }
 
     attribute_map = {
-        'name': 'name'
+        'name': 'name',
+        'is_modify_node_name': 'is_modify_node_name'
     }
 
-    def __init__(self, name=None):
+    def __init__(self, name=None, is_modify_node_name=None):
         """MysqlUpdateInstanceNameRequest
 
         The model defined in huaweicloud sdk
 
         :param name: 实例名称。  用于表示实例的名称，同一租户下，同类型的实例名可重名。取值范围：最小为4个字符，最大为64个字符且不超过64个字节（注意：一个中文字符占用3个字节），必须以字母或中文开头，区分大小写，可以包含字母、数字、中划线、下划线或中文，不能包含其他特殊字符。
         :type name: str
+        :param is_modify_node_name: 是否同步修改节点名称，取值：true或false, 默认值为true。
+        :type is_modify_node_name: str
         """
         
         
 
         self._name = None
+        self._is_modify_node_name = None
         self.discriminator = None
 
         self.name = name
+        if is_modify_node_name is not None:
+            self.is_modify_node_name = is_modify_node_name
 
     @property
     def name(self):
@@ -61,6 +68,28 @@ class MysqlUpdateInstanceNameRequest:
         :type name: str
         """
         self._name = name
+
+    @property
+    def is_modify_node_name(self):
+        """Gets the is_modify_node_name of this MysqlUpdateInstanceNameRequest.
+
+        是否同步修改节点名称，取值：true或false, 默认值为true。
+
+        :return: The is_modify_node_name of this MysqlUpdateInstanceNameRequest.
+        :rtype: str
+        """
+        return self._is_modify_node_name
+
+    @is_modify_node_name.setter
+    def is_modify_node_name(self, is_modify_node_name):
+        """Sets the is_modify_node_name of this MysqlUpdateInstanceNameRequest.
+
+        是否同步修改节点名称，取值：true或false, 默认值为true。
+
+        :param is_modify_node_name: The is_modify_node_name of this MysqlUpdateInstanceNameRequest.
+        :type is_modify_node_name: str
+        """
+        self._is_modify_node_name = is_modify_node_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

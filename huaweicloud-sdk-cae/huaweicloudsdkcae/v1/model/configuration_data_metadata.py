@@ -29,7 +29,7 @@ class ConfigurationDataMetadata:
 
         The model defined in huaweicloud sdk
 
-        :param annotations: 附加参数。 
+        :param annotations: 附加参数。  举例：负载均衡分配策略使用加权轮询算法，不启用健康检查。配置如下： - \&quot;kubernetes.io/elb.health-check-flag\&quot;: \&quot;off\&quot; - \&quot;kubernetes.io/elb.lb-algorithm\&quot;: \&quot;ROUND_ROBIN\&quot; 
         :type annotations: dict(str, str)
         """
         
@@ -45,7 +45,7 @@ class ConfigurationDataMetadata:
     def annotations(self):
         """Gets the annotations of this ConfigurationDataMetadata.
 
-        附加参数。 
+        附加参数。  举例：负载均衡分配策略使用加权轮询算法，不启用健康检查。配置如下： - \"kubernetes.io/elb.health-check-flag\": \"off\" - \"kubernetes.io/elb.lb-algorithm\": \"ROUND_ROBIN\" 
 
         :return: The annotations of this ConfigurationDataMetadata.
         :rtype: dict(str, str)
@@ -56,7 +56,7 @@ class ConfigurationDataMetadata:
     def annotations(self, annotations):
         """Sets the annotations of this ConfigurationDataMetadata.
 
-        附加参数。 
+        附加参数。  举例：负载均衡分配策略使用加权轮询算法，不启用健康检查。配置如下： - \"kubernetes.io/elb.health-check-flag\": \"off\" - \"kubernetes.io/elb.lb-algorithm\": \"ROUND_ROBIN\" 
 
         :param annotations: The annotations of this ConfigurationDataMetadata.
         :type annotations: dict(str, str)

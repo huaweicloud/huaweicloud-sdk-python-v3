@@ -19,25 +19,29 @@ class StartResourceScanReqBody:
     openapi_types = {
         'resource_id': 'str',
         'resource_owner_account': 'str',
+        'resource_project_id': 'str',
         'resource_urn': 'str'
     }
 
     attribute_map = {
         'resource_id': 'resource_id',
         'resource_owner_account': 'resource_owner_account',
+        'resource_project_id': 'resource_project_id',
         'resource_urn': 'resource_urn'
     }
 
-    def __init__(self, resource_id=None, resource_owner_account=None, resource_urn=None):
+    def __init__(self, resource_id=None, resource_owner_account=None, resource_project_id=None, resource_urn=None):
         """StartResourceScanReqBody
 
         The model defined in huaweicloud sdk
 
         :param resource_id: 资源的唯一标识符。
         :type resource_id: str
-        :param resource_owner_account: 拥有资源的账户ID。
+        :param resource_owner_account: 拥有资源的账号ID。
         :type resource_owner_account: str
-        :param resource_urn: 访问分析的唯一资源标识。
+        :param resource_project_id: 资源所属的项目标识符
+        :type resource_project_id: str
+        :param resource_urn: 资源的唯一资源标识符。
         :type resource_urn: str
         """
         
@@ -45,12 +49,15 @@ class StartResourceScanReqBody:
 
         self._resource_id = None
         self._resource_owner_account = None
+        self._resource_project_id = None
         self._resource_urn = None
         self.discriminator = None
 
         if resource_id is not None:
             self.resource_id = resource_id
         self.resource_owner_account = resource_owner_account
+        if resource_project_id is not None:
+            self.resource_project_id = resource_project_id
         self.resource_urn = resource_urn
 
     @property
@@ -79,7 +86,7 @@ class StartResourceScanReqBody:
     def resource_owner_account(self):
         """Gets the resource_owner_account of this StartResourceScanReqBody.
 
-        拥有资源的账户ID。
+        拥有资源的账号ID。
 
         :return: The resource_owner_account of this StartResourceScanReqBody.
         :rtype: str
@@ -90,7 +97,7 @@ class StartResourceScanReqBody:
     def resource_owner_account(self, resource_owner_account):
         """Sets the resource_owner_account of this StartResourceScanReqBody.
 
-        拥有资源的账户ID。
+        拥有资源的账号ID。
 
         :param resource_owner_account: The resource_owner_account of this StartResourceScanReqBody.
         :type resource_owner_account: str
@@ -98,10 +105,32 @@ class StartResourceScanReqBody:
         self._resource_owner_account = resource_owner_account
 
     @property
+    def resource_project_id(self):
+        """Gets the resource_project_id of this StartResourceScanReqBody.
+
+        资源所属的项目标识符
+
+        :return: The resource_project_id of this StartResourceScanReqBody.
+        :rtype: str
+        """
+        return self._resource_project_id
+
+    @resource_project_id.setter
+    def resource_project_id(self, resource_project_id):
+        """Sets the resource_project_id of this StartResourceScanReqBody.
+
+        资源所属的项目标识符
+
+        :param resource_project_id: The resource_project_id of this StartResourceScanReqBody.
+        :type resource_project_id: str
+        """
+        self._resource_project_id = resource_project_id
+
+    @property
     def resource_urn(self):
         """Gets the resource_urn of this StartResourceScanReqBody.
 
-        访问分析的唯一资源标识。
+        资源的唯一资源标识符。
 
         :return: The resource_urn of this StartResourceScanReqBody.
         :rtype: str
@@ -112,7 +141,7 @@ class StartResourceScanReqBody:
     def resource_urn(self, resource_urn):
         """Sets the resource_urn of this StartResourceScanReqBody.
 
-        访问分析的唯一资源标识。
+        资源的唯一资源标识符。
 
         :param resource_urn: The resource_urn of this StartResourceScanReqBody.
         :type resource_urn: str

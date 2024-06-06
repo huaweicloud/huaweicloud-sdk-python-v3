@@ -20,7 +20,7 @@ class ShowProxyIpgroupResponse(SdkResponse):
     openapi_types = {
         'enable_ip_group': 'bool',
         'type': 'str',
-        'ip_group': 'object'
+        'ip_group': 'ProxyIpGroupDetail'
     }
 
     attribute_map = {
@@ -38,8 +38,8 @@ class ShowProxyIpgroupResponse(SdkResponse):
         :type enable_ip_group: bool
         :param type: 白名单或者黑名单 &#39;white&#39; | &#39;black&#39;
         :type type: str
-        :param ip_group: 白名单或黑名单详细信息
-        :type ip_group: object
+        :param ip_group: 
+        :type ip_group: :class:`huaweicloudsdkgaussdb.v3.ProxyIpGroupDetail`
         """
         
         super(ShowProxyIpgroupResponse, self).__init__()
@@ -104,10 +104,8 @@ class ShowProxyIpgroupResponse(SdkResponse):
     def ip_group(self):
         """Gets the ip_group of this ShowProxyIpgroupResponse.
 
-        白名单或黑名单详细信息
-
         :return: The ip_group of this ShowProxyIpgroupResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ProxyIpGroupDetail`
         """
         return self._ip_group
 
@@ -115,10 +113,8 @@ class ShowProxyIpgroupResponse(SdkResponse):
     def ip_group(self, ip_group):
         """Sets the ip_group of this ShowProxyIpgroupResponse.
 
-        白名单或黑名单详细信息
-
         :param ip_group: The ip_group of this ShowProxyIpgroupResponse.
-        :type ip_group: object
+        :type ip_group: :class:`huaweicloudsdkgaussdb.v3.ProxyIpGroupDetail`
         """
         self._ip_group = ip_group
 

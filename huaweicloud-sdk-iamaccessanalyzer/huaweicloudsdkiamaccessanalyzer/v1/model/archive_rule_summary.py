@@ -50,7 +50,7 @@ class ArchiveRuleSummary:
         :type name: str
         :param updated_at: 上次更新存档规则的时间。
         :type updated_at: datetime
-        :param urn: 访问分析的唯一资源标识。
+        :param urn: 存档规则的唯一资源标识符。
         :type urn: str
         """
         
@@ -185,7 +185,7 @@ class ArchiveRuleSummary:
     def urn(self):
         """Gets the urn of this ArchiveRuleSummary.
 
-        访问分析的唯一资源标识。
+        存档规则的唯一资源标识符。
 
         :return: The urn of this ArchiveRuleSummary.
         :rtype: str
@@ -196,7 +196,7 @@ class ArchiveRuleSummary:
     def urn(self, urn):
         """Sets the urn of this ArchiveRuleSummary.
 
-        访问分析的唯一资源标识。
+        存档规则的唯一资源标识符。
 
         :param urn: The urn of this ArchiveRuleSummary.
         :type urn: str

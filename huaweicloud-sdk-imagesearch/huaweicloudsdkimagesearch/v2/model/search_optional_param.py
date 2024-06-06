@@ -23,7 +23,8 @@ class SearchOptionalParam:
         'category': 'int',
         'collapse_key': 'str',
         'max_scan_num': 'int',
-        'nprobe': 'int'
+        'nprobe': 'int',
+        'text_lang': 'str'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class SearchOptionalParam:
         'category': 'category',
         'collapse_key': 'collapse_key',
         'max_scan_num': 'max_scan_num',
-        'nprobe': 'nprobe'
+        'nprobe': 'nprobe',
+        'text_lang': 'text_lang'
     }
 
-    def __init__(self, do_det=None, box=None, do_cls=None, category=None, collapse_key=None, max_scan_num=None, nprobe=None):
+    def __init__(self, do_det=None, box=None, do_cls=None, category=None, collapse_key=None, max_scan_num=None, nprobe=None, text_lang=None):
         """SearchOptionalParam
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class SearchOptionalParam:
         :type max_scan_num: int
         :param nprobe: 查询考察中心点的数目。值越大精度越高，查询速度变慢。默认值为100。
         :type nprobe: int
+        :param text_lang: 文本字符串的语言类型枚举值。
+        :type text_lang: str
         """
         
         
@@ -66,6 +70,7 @@ class SearchOptionalParam:
         self._collapse_key = None
         self._max_scan_num = None
         self._nprobe = None
+        self._text_lang = None
         self.discriminator = None
 
         if do_det is not None:
@@ -82,6 +87,8 @@ class SearchOptionalParam:
             self.max_scan_num = max_scan_num
         if nprobe is not None:
             self.nprobe = nprobe
+        if text_lang is not None:
+            self.text_lang = text_lang
 
     @property
     def do_det(self):
@@ -236,6 +243,28 @@ class SearchOptionalParam:
         :type nprobe: int
         """
         self._nprobe = nprobe
+
+    @property
+    def text_lang(self):
+        """Gets the text_lang of this SearchOptionalParam.
+
+        文本字符串的语言类型枚举值。
+
+        :return: The text_lang of this SearchOptionalParam.
+        :rtype: str
+        """
+        return self._text_lang
+
+    @text_lang.setter
+    def text_lang(self, text_lang):
+        """Sets the text_lang of this SearchOptionalParam.
+
+        文本字符串的语言类型枚举值。
+
+        :param text_lang: The text_lang of this SearchOptionalParam.
+        :type text_lang: str
+        """
+        self._text_lang = text_lang
 
     def to_dict(self):
         """Returns the model properties as a dict"""

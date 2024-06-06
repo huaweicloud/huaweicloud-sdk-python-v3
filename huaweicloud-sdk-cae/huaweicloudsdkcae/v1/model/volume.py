@@ -22,6 +22,7 @@ class Volume:
         'resource_name': 'str',
         'resource_type': 'str',
         'resource_sub_type': 'str',
+        'access': 'str',
         'time': 'str'
     }
 
@@ -31,10 +32,11 @@ class Volume:
         'resource_name': 'resource_name',
         'resource_type': 'resource_type',
         'resource_sub_type': 'resource_sub_type',
+        'access': 'access',
         'time': 'time'
     }
 
-    def __init__(self, id=None, resource_info=None, resource_name=None, resource_type=None, resource_sub_type=None, time=None):
+    def __init__(self, id=None, resource_info=None, resource_name=None, resource_type=None, resource_sub_type=None, access=None, time=None):
         """Volume
 
         The model defined in huaweicloud sdk
@@ -49,6 +51,8 @@ class Volume:
         :type resource_type: str
         :param resource_sub_type: 存储资源子类型。
         :type resource_sub_type: str
+        :param access: 用户access key。
+        :type access: str
         :param time: 创建时间。
         :type time: str
         """
@@ -60,6 +64,7 @@ class Volume:
         self._resource_name = None
         self._resource_type = None
         self._resource_sub_type = None
+        self._access = None
         self._time = None
         self.discriminator = None
 
@@ -73,6 +78,8 @@ class Volume:
             self.resource_type = resource_type
         if resource_sub_type is not None:
             self.resource_sub_type = resource_sub_type
+        if access is not None:
+            self.access = access
         if time is not None:
             self.time = time
 
@@ -185,6 +192,28 @@ class Volume:
         :type resource_sub_type: str
         """
         self._resource_sub_type = resource_sub_type
+
+    @property
+    def access(self):
+        """Gets the access of this Volume.
+
+        用户access key。
+
+        :return: The access of this Volume.
+        :rtype: str
+        """
+        return self._access
+
+    @access.setter
+    def access(self, access):
+        """Sets the access of this Volume.
+
+        用户access key。
+
+        :param access: The access of this Volume.
+        :type access: str
+        """
+        self._access = access
 
     @property
     def time(self):

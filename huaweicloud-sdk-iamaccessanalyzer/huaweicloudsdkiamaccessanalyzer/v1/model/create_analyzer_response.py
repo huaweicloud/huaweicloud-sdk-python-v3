@@ -34,7 +34,7 @@ class CreateAnalyzerResponse(SdkResponse):
 
         :param id: 分析器的唯一标识符。
         :type id: str
-        :param urn: 访问分析的唯一资源标识。
+        :param urn: 分析器的唯一资源标识符。
         :type urn: str
         """
         
@@ -75,7 +75,7 @@ class CreateAnalyzerResponse(SdkResponse):
     def urn(self):
         """Gets the urn of this CreateAnalyzerResponse.
 
-        访问分析的唯一资源标识。
+        分析器的唯一资源标识符。
 
         :return: The urn of this CreateAnalyzerResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class CreateAnalyzerResponse(SdkResponse):
     def urn(self, urn):
         """Sets the urn of this CreateAnalyzerResponse.
 
-        访问分析的唯一资源标识。
+        分析器的唯一资源标识符。
 
         :param urn: The urn of this CreateAnalyzerResponse.
         :type urn: str

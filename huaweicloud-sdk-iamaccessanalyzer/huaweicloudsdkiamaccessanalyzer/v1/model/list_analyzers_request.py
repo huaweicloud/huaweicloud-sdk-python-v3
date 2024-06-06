@@ -19,7 +19,7 @@ class ListAnalyzersRequest:
     openapi_types = {
         'limit': 'int',
         'marker': 'str',
-        'type': 'AnalyzerType'
+        'type': 'str'
     }
 
     attribute_map = {
@@ -38,7 +38,7 @@ class ListAnalyzersRequest:
         :param marker: 页面标记。
         :type marker: str
         :param type: 分析器的类型。
-        :type type: :class:`huaweicloudsdkiamaccessanalyzer.v1.AnalyzerType`
+        :type type: str
         """
         
         
@@ -106,7 +106,7 @@ class ListAnalyzersRequest:
         分析器的类型。
 
         :return: The type of this ListAnalyzersRequest.
-        :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.AnalyzerType`
+        :rtype: str
         """
         return self._type
 
@@ -117,7 +117,7 @@ class ListAnalyzersRequest:
         分析器的类型。
 
         :param type: The type of this ListAnalyzersRequest.
-        :type type: :class:`huaweicloudsdkiamaccessanalyzer.v1.AnalyzerType`
+        :type type: str
         """
         self._type = type
 

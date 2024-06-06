@@ -35,7 +35,7 @@ class UpdateFindingsReqBody:
 
         :param ids: 要更新的访问分析结果唯一标识符数组。
         :type ids: list[str]
-        :param resource_urn: 访问分析的唯一资源标识。
+        :param resource_urn: 资源的唯一资源标识符。
         :type resource_urn: str
         :param status: 要更新的访问分析结果状态。
         :type status: str
@@ -80,7 +80,7 @@ class UpdateFindingsReqBody:
     def resource_urn(self):
         """Gets the resource_urn of this UpdateFindingsReqBody.
 
-        访问分析的唯一资源标识。
+        资源的唯一资源标识符。
 
         :return: The resource_urn of this UpdateFindingsReqBody.
         :rtype: str
@@ -91,7 +91,7 @@ class UpdateFindingsReqBody:
     def resource_urn(self, resource_urn):
         """Sets the resource_urn of this UpdateFindingsReqBody.
 
-        访问分析的唯一资源标识。
+        资源的唯一资源标识符。
 
         :param resource_urn: The resource_urn of this UpdateFindingsReqBody.
         :type resource_urn: str

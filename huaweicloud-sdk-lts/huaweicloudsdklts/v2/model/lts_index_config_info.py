@@ -17,64 +17,49 @@ class LTSIndexConfigInfo:
     sensitive_list = []
 
     openapi_types = {
-        'log_stream_id': 'str',
         'full_text_index': 'LTSFullTextIndexInfo',
-        'fields': 'list[LTSFieldsInfo]'
+        'fields': 'list[LTSFieldsInfo]',
+        'sql_analysis_enable': 'bool',
+        'log_stream_id': 'str'
     }
 
     attribute_map = {
-        'log_stream_id': 'logStreamId',
         'full_text_index': 'fullTextIndex',
-        'fields': 'fields'
+        'fields': 'fields',
+        'sql_analysis_enable': 'sqlAnalysisEnable',
+        'log_stream_id': 'logStreamId'
     }
 
-    def __init__(self, log_stream_id=None, full_text_index=None, fields=None):
+    def __init__(self, full_text_index=None, fields=None, sql_analysis_enable=None, log_stream_id=None):
         """LTSIndexConfigInfo
 
         The model defined in huaweicloud sdk
 
-        :param log_stream_id: 日志流ID
-        :type log_stream_id: str
         :param full_text_index: 
         :type full_text_index: :class:`huaweicloudsdklts.v2.LTSFullTextIndexInfo`
         :param fields: 字段索引配置
         :type fields: list[:class:`huaweicloudsdklts.v2.LTSFieldsInfo`]
+        :param sql_analysis_enable: 是否开启可视化
+        :type sql_analysis_enable: bool
+        :param log_stream_id: 日志流id
+        :type log_stream_id: str
         """
         
         
 
-        self._log_stream_id = None
         self._full_text_index = None
         self._fields = None
+        self._sql_analysis_enable = None
+        self._log_stream_id = None
         self.discriminator = None
 
-        if log_stream_id is not None:
-            self.log_stream_id = log_stream_id
         self.full_text_index = full_text_index
         if fields is not None:
             self.fields = fields
-
-    @property
-    def log_stream_id(self):
-        """Gets the log_stream_id of this LTSIndexConfigInfo.
-
-        日志流ID
-
-        :return: The log_stream_id of this LTSIndexConfigInfo.
-        :rtype: str
-        """
-        return self._log_stream_id
-
-    @log_stream_id.setter
-    def log_stream_id(self, log_stream_id):
-        """Sets the log_stream_id of this LTSIndexConfigInfo.
-
-        日志流ID
-
-        :param log_stream_id: The log_stream_id of this LTSIndexConfigInfo.
-        :type log_stream_id: str
-        """
-        self._log_stream_id = log_stream_id
+        if sql_analysis_enable is not None:
+            self.sql_analysis_enable = sql_analysis_enable
+        if log_stream_id is not None:
+            self.log_stream_id = log_stream_id
 
     @property
     def full_text_index(self):
@@ -115,6 +100,50 @@ class LTSIndexConfigInfo:
         :type fields: list[:class:`huaweicloudsdklts.v2.LTSFieldsInfo`]
         """
         self._fields = fields
+
+    @property
+    def sql_analysis_enable(self):
+        """Gets the sql_analysis_enable of this LTSIndexConfigInfo.
+
+        是否开启可视化
+
+        :return: The sql_analysis_enable of this LTSIndexConfigInfo.
+        :rtype: bool
+        """
+        return self._sql_analysis_enable
+
+    @sql_analysis_enable.setter
+    def sql_analysis_enable(self, sql_analysis_enable):
+        """Sets the sql_analysis_enable of this LTSIndexConfigInfo.
+
+        是否开启可视化
+
+        :param sql_analysis_enable: The sql_analysis_enable of this LTSIndexConfigInfo.
+        :type sql_analysis_enable: bool
+        """
+        self._sql_analysis_enable = sql_analysis_enable
+
+    @property
+    def log_stream_id(self):
+        """Gets the log_stream_id of this LTSIndexConfigInfo.
+
+        日志流id
+
+        :return: The log_stream_id of this LTSIndexConfigInfo.
+        :rtype: str
+        """
+        return self._log_stream_id
+
+    @log_stream_id.setter
+    def log_stream_id(self, log_stream_id):
+        """Sets the log_stream_id of this LTSIndexConfigInfo.
+
+        日志流id
+
+        :param log_stream_id: The log_stream_id of this LTSIndexConfigInfo.
+        :type log_stream_id: str
+        """
+        self._log_stream_id = log_stream_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

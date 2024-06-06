@@ -35,7 +35,7 @@ class Position:
 
         :param line: 位置的行号，从1开始。
         :type line: int
-        :param column: 位置的列号，从0开开始。
+        :param column: 位置的列号，从0开始。
         :type column: int
         :param offset: 策略中与位置对应的偏移量，从0开始。
         :type offset: int
@@ -78,7 +78,7 @@ class Position:
     def column(self):
         """Gets the column of this Position.
 
-        位置的列号，从0开开始。
+        位置的列号，从0开始。
 
         :return: The column of this Position.
         :rtype: int
@@ -89,7 +89,7 @@ class Position:
     def column(self, column):
         """Sets the column of this Position.
 
-        位置的列号，从0开开始。
+        位置的列号，从0开始。
 
         :param column: The column of this Position.
         :type column: int

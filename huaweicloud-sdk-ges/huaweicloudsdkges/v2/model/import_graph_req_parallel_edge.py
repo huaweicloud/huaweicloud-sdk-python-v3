@@ -18,15 +18,17 @@ class ImportGraphReqParallelEdge:
 
     openapi_types = {
         'action': 'str',
-        'ignore_label': 'bool'
+        'ignore_label': 'bool',
+        'sort_key_column': 'str'
     }
 
     attribute_map = {
         'action': 'action',
-        'ignore_label': 'ignore_label'
+        'ignore_label': 'ignore_label',
+        'sort_key_column': 'sort_key_column'
     }
 
-    def __init__(self, action=None, ignore_label=None):
+    def __init__(self, action=None, ignore_label=None, sort_key_column=None):
         """ImportGraphReqParallelEdge
 
         The model defined in huaweicloud sdk
@@ -35,18 +37,23 @@ class ImportGraphReqParallelEdge:
         :type action: str
         :param ignore_label: 重复边的定义，是否忽略Label。取值为true或者false，默认取true。  - true 表示重复边定义不包含Label，即用&lt;源点，终点&gt;标记一条边，不包含Label。 - false 表示重复边定义包含Label，即用&lt;源点，终点，Label&gt;标记一条边。 图规格为（一千亿边）的图暂不支持该参数。
         :type ignore_label: bool
+        :param sort_key_column: sortKey在边文件中的位置，当前仅支持\&quot;lastColumn\&quot;，边文件中无sortKey时，不传此参数。
+        :type sort_key_column: str
         """
         
         
 
         self._action = None
         self._ignore_label = None
+        self._sort_key_column = None
         self.discriminator = None
 
         if action is not None:
             self.action = action
         if ignore_label is not None:
             self.ignore_label = ignore_label
+        if sort_key_column is not None:
+            self.sort_key_column = sort_key_column
 
     @property
     def action(self):
@@ -91,6 +98,28 @@ class ImportGraphReqParallelEdge:
         :type ignore_label: bool
         """
         self._ignore_label = ignore_label
+
+    @property
+    def sort_key_column(self):
+        """Gets the sort_key_column of this ImportGraphReqParallelEdge.
+
+        sortKey在边文件中的位置，当前仅支持\"lastColumn\"，边文件中无sortKey时，不传此参数。
+
+        :return: The sort_key_column of this ImportGraphReqParallelEdge.
+        :rtype: str
+        """
+        return self._sort_key_column
+
+    @sort_key_column.setter
+    def sort_key_column(self, sort_key_column):
+        """Sets the sort_key_column of this ImportGraphReqParallelEdge.
+
+        sortKey在边文件中的位置，当前仅支持\"lastColumn\"，边文件中无sortKey时，不传此参数。
+
+        :param sort_key_column: The sort_key_column of this ImportGraphReqParallelEdge.
+        :type sort_key_column: str
+        """
+        self._sort_key_column = sort_key_column
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -145,7 +145,7 @@ class CreateClusterReqV11:
         :type core_data_volume_type: str
         :param core_data_volume_size: 该参数为多磁盘参数，表示Core节点数据磁盘存储空间。为增大数据存储容量，创建集群时可同时添加磁盘。  取值范围：100GB～32000GB，传值只需填数字，不需要带单位GB。
         :type core_data_volume_size: int
-        :param core_data_volume_count: 该参数为多磁盘参数，表示Core节点数据磁盘个数。 取值范围：1～10
+        :param core_data_volume_count: 该参数为多磁盘参数，表示Core节点数据磁盘个数。 取值范围：1～20
         :type core_data_volume_count: int
         :param task_node_groups: Task节点列表信息。
         :type task_node_groups: list[:class:`huaweicloudsdkmrs.v1.TaskNodeGroup`]
@@ -785,7 +785,7 @@ class CreateClusterReqV11:
     def core_data_volume_count(self):
         """Gets the core_data_volume_count of this CreateClusterReqV11.
 
-        该参数为多磁盘参数，表示Core节点数据磁盘个数。 取值范围：1～10
+        该参数为多磁盘参数，表示Core节点数据磁盘个数。 取值范围：1～20
 
         :return: The core_data_volume_count of this CreateClusterReqV11.
         :rtype: int
@@ -796,7 +796,7 @@ class CreateClusterReqV11:
     def core_data_volume_count(self, core_data_volume_count):
         """Sets the core_data_volume_count of this CreateClusterReqV11.
 
-        该参数为多磁盘参数，表示Core节点数据磁盘个数。 取值范围：1～10
+        该参数为多磁盘参数，表示Core节点数据磁盘个数。 取值范围：1～20
 
         :param core_data_volume_count: The core_data_volume_count of this CreateClusterReqV11.
         :type core_data_volume_count: int

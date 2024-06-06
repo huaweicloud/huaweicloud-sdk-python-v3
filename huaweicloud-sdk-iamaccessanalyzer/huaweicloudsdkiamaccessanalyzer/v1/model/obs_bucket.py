@@ -31,7 +31,7 @@ class OBSBucket:
 
         The model defined in huaweicloud sdk
 
-        :param bucket_acl: 桶ACL xml文件的string格式
+        :param bucket_acl: 桶ACL xml文件的string格式。
         :type bucket_acl: str
         :param bucket_policy: 该策略JSON格式策略文档。
         :type bucket_policy: str
@@ -52,7 +52,7 @@ class OBSBucket:
     def bucket_acl(self):
         """Gets the bucket_acl of this OBSBucket.
 
-        桶ACL xml文件的string格式
+        桶ACL xml文件的string格式。
 
         :return: The bucket_acl of this OBSBucket.
         :rtype: str
@@ -63,7 +63,7 @@ class OBSBucket:
     def bucket_acl(self, bucket_acl):
         """Sets the bucket_acl of this OBSBucket.
 
-        桶ACL xml文件的string格式
+        桶ACL xml文件的string格式。
 
         :param bucket_acl: The bucket_acl of this OBSBucket.
         :type bucket_acl: str

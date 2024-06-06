@@ -18,15 +18,17 @@ class Configuration:
 
     openapi_types = {
         'iam_agency': 'IAMAgency',
-        'obs_bucket': 'OBSBucket'
+        'obs_bucket': 'OBSBucket',
+        'kms_cmk': 'KMSCmk'
     }
 
     attribute_map = {
         'iam_agency': 'iam_agency',
-        'obs_bucket': 'obs_bucket'
+        'obs_bucket': 'obs_bucket',
+        'kms_cmk': 'kms_cmk'
     }
 
-    def __init__(self, iam_agency=None, obs_bucket=None):
+    def __init__(self, iam_agency=None, obs_bucket=None, kms_cmk=None):
         """Configuration
 
         The model defined in huaweicloud sdk
@@ -35,18 +37,23 @@ class Configuration:
         :type iam_agency: :class:`huaweicloudsdkiamaccessanalyzer.v1.IAMAgency`
         :param obs_bucket: 
         :type obs_bucket: :class:`huaweicloudsdkiamaccessanalyzer.v1.OBSBucket`
+        :param kms_cmk: 
+        :type kms_cmk: :class:`huaweicloudsdkiamaccessanalyzer.v1.KMSCmk`
         """
         
         
 
         self._iam_agency = None
         self._obs_bucket = None
+        self._kms_cmk = None
         self.discriminator = None
 
         if iam_agency is not None:
             self.iam_agency = iam_agency
         if obs_bucket is not None:
             self.obs_bucket = obs_bucket
+        if kms_cmk is not None:
+            self.kms_cmk = kms_cmk
 
     @property
     def iam_agency(self):
@@ -83,6 +90,24 @@ class Configuration:
         :type obs_bucket: :class:`huaweicloudsdkiamaccessanalyzer.v1.OBSBucket`
         """
         self._obs_bucket = obs_bucket
+
+    @property
+    def kms_cmk(self):
+        """Gets the kms_cmk of this Configuration.
+
+        :return: The kms_cmk of this Configuration.
+        :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.KMSCmk`
+        """
+        return self._kms_cmk
+
+    @kms_cmk.setter
+    def kms_cmk(self, kms_cmk):
+        """Sets the kms_cmk of this Configuration.
+
+        :param kms_cmk: The kms_cmk of this Configuration.
+        :type kms_cmk: :class:`huaweicloudsdkiamaccessanalyzer.v1.KMSCmk`
+        """
+        self._kms_cmk = kms_cmk
 
     def to_dict(self):
         """Returns the model properties as a dict"""

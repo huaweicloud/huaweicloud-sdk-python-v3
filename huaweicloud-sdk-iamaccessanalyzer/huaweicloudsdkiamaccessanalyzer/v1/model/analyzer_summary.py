@@ -23,6 +23,7 @@ class AnalyzerSummary:
         'last_analyzed_resource': 'str',
         'last_resource_analyzed_at': 'datetime',
         'name': 'str',
+        'organization_id': 'str',
         'status': 'str',
         'status_reason': 'StatusReason',
         'tags': 'list[Tag]',
@@ -36,6 +37,7 @@ class AnalyzerSummary:
         'last_analyzed_resource': 'last_analyzed_resource',
         'last_resource_analyzed_at': 'last_resource_analyzed_at',
         'name': 'name',
+        'organization_id': 'organization_id',
         'status': 'status',
         'status_reason': 'status_reason',
         'tags': 'tags',
@@ -43,7 +45,7 @@ class AnalyzerSummary:
         'urn': 'urn'
     }
 
-    def __init__(self, created_at=None, id=None, last_analyzed_resource=None, last_resource_analyzed_at=None, name=None, status=None, status_reason=None, tags=None, type=None, urn=None):
+    def __init__(self, created_at=None, id=None, last_analyzed_resource=None, last_resource_analyzed_at=None, name=None, organization_id=None, status=None, status_reason=None, tags=None, type=None, urn=None):
         """AnalyzerSummary
 
         The model defined in huaweicloud sdk
@@ -52,12 +54,14 @@ class AnalyzerSummary:
         :type created_at: datetime
         :param id: 分析器的唯一标识符。
         :type id: str
-        :param last_analyzed_resource: 访问分析的唯一资源标识。
+        :param last_analyzed_resource: 最近分析的资源的唯一资源标识符。
         :type last_analyzed_resource: str
         :param last_resource_analyzed_at: 最近一次分析资源的时间。
         :type last_resource_analyzed_at: datetime
         :param name: 分析器的名称。
         :type name: str
+        :param organization_id: 组织ID。
+        :type organization_id: str
         :param status: 分析器的状态。
         :type status: str
         :param status_reason: 
@@ -66,7 +70,7 @@ class AnalyzerSummary:
         :type tags: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.Tag`]
         :param type: 
         :type type: :class:`huaweicloudsdkiamaccessanalyzer.v1.AnalyzerType`
-        :param urn: 访问分析的唯一资源标识。
+        :param urn: 分析器的唯一资源标识符。
         :type urn: str
         """
         
@@ -77,6 +81,7 @@ class AnalyzerSummary:
         self._last_analyzed_resource = None
         self._last_resource_analyzed_at = None
         self._name = None
+        self._organization_id = None
         self._status = None
         self._status_reason = None
         self._tags = None
@@ -91,6 +96,8 @@ class AnalyzerSummary:
         if last_resource_analyzed_at is not None:
             self.last_resource_analyzed_at = last_resource_analyzed_at
         self.name = name
+        if organization_id is not None:
+            self.organization_id = organization_id
         self.status = status
         if status_reason is not None:
             self.status_reason = status_reason
@@ -147,7 +154,7 @@ class AnalyzerSummary:
     def last_analyzed_resource(self):
         """Gets the last_analyzed_resource of this AnalyzerSummary.
 
-        访问分析的唯一资源标识。
+        最近分析的资源的唯一资源标识符。
 
         :return: The last_analyzed_resource of this AnalyzerSummary.
         :rtype: str
@@ -158,7 +165,7 @@ class AnalyzerSummary:
     def last_analyzed_resource(self, last_analyzed_resource):
         """Sets the last_analyzed_resource of this AnalyzerSummary.
 
-        访问分析的唯一资源标识。
+        最近分析的资源的唯一资源标识符。
 
         :param last_analyzed_resource: The last_analyzed_resource of this AnalyzerSummary.
         :type last_analyzed_resource: str
@@ -208,6 +215,28 @@ class AnalyzerSummary:
         :type name: str
         """
         self._name = name
+
+    @property
+    def organization_id(self):
+        """Gets the organization_id of this AnalyzerSummary.
+
+        组织ID。
+
+        :return: The organization_id of this AnalyzerSummary.
+        :rtype: str
+        """
+        return self._organization_id
+
+    @organization_id.setter
+    def organization_id(self, organization_id):
+        """Sets the organization_id of this AnalyzerSummary.
+
+        组织ID。
+
+        :param organization_id: The organization_id of this AnalyzerSummary.
+        :type organization_id: str
+        """
+        self._organization_id = organization_id
 
     @property
     def status(self):
@@ -293,7 +322,7 @@ class AnalyzerSummary:
     def urn(self):
         """Gets the urn of this AnalyzerSummary.
 
-        访问分析的唯一资源标识。
+        分析器的唯一资源标识符。
 
         :return: The urn of this AnalyzerSummary.
         :rtype: str
@@ -304,7 +333,7 @@ class AnalyzerSummary:
     def urn(self, urn):
         """Sets the urn of this AnalyzerSummary.
 
-        访问分析的唯一资源标识。
+        分析器的唯一资源标识符。
 
         :param urn: The urn of this AnalyzerSummary.
         :type urn: str

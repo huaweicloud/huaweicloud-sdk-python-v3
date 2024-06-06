@@ -17,28 +17,35 @@ class AgencyMetadata:
     sensitive_list = []
 
     openapi_types = {
-        'name': 'str'
+        'name': 'str',
+        'enum': 'object'
     }
 
     attribute_map = {
-        'name': 'name'
+        'name': 'name',
+        'enum': 'enum'
     }
 
-    def __init__(self, name=None):
+    def __init__(self, name=None, enum=None):
         """AgencyMetadata
 
         The model defined in huaweicloud sdk
 
         :param name: 委托名称，固定值“cae_trust”，该值不可修改。
         :type name: str
+        :param enum: 
+        :type enum: object
         """
         
         
 
         self._name = None
+        self._enum = None
         self.discriminator = None
 
         self.name = name
+        if enum is not None:
+            self.enum = enum
 
     @property
     def name(self):
@@ -61,6 +68,24 @@ class AgencyMetadata:
         :type name: str
         """
         self._name = name
+
+    @property
+    def enum(self):
+        """Gets the enum of this AgencyMetadata.
+
+        :return: The enum of this AgencyMetadata.
+        :rtype: object
+        """
+        return self._enum
+
+    @enum.setter
+    def enum(self, enum):
+        """Sets the enum of this AgencyMetadata.
+
+        :param enum: The enum of this AgencyMetadata.
+        :type enum: object
+        """
+        self._enum = enum
 
     def to_dict(self):
         """Returns the model properties as a dict"""

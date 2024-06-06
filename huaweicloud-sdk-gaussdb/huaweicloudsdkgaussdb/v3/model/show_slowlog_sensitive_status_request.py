@@ -2,11 +2,10 @@
 
 import six
 
-from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ListPreviewFindingsResponse(SdkResponse):
+class ShowSlowlogSensitiveStatusRequest:
 
     """
     Attributes:
@@ -18,76 +17,79 @@ class ListPreviewFindingsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'findings': 'list[PreviewFinding]',
-        'page_info': 'PageInfo'
+        'x_language': 'str',
+        'instance_id': 'str'
     }
 
     attribute_map = {
-        'findings': 'findings',
-        'page_info': 'page_info'
+        'x_language': 'X-Language',
+        'instance_id': 'instance_id'
     }
 
-    def __init__(self, findings=None, page_info=None):
-        """ListPreviewFindingsResponse
+    def __init__(self, x_language=None, instance_id=None):
+        """ShowSlowlogSensitiveStatusRequest
 
         The model defined in huaweicloud sdk
 
-        :param findings: 访问预览生成的分析结果列表。
-        :type findings: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.PreviewFinding`]
-        :param page_info: 
-        :type page_info: :class:`huaweicloudsdkiamaccessanalyzer.v1.PageInfo`
+        :param x_language: 语言。
+        :type x_language: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
         """
         
-        super(ListPreviewFindingsResponse, self).__init__()
+        
 
-        self._findings = None
-        self._page_info = None
+        self._x_language = None
+        self._instance_id = None
         self.discriminator = None
 
-        if findings is not None:
-            self.findings = findings
-        if page_info is not None:
-            self.page_info = page_info
+        if x_language is not None:
+            self.x_language = x_language
+        self.instance_id = instance_id
 
     @property
-    def findings(self):
-        """Gets the findings of this ListPreviewFindingsResponse.
+    def x_language(self):
+        """Gets the x_language of this ShowSlowlogSensitiveStatusRequest.
 
-        访问预览生成的分析结果列表。
+        语言。
 
-        :return: The findings of this ListPreviewFindingsResponse.
-        :rtype: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.PreviewFinding`]
+        :return: The x_language of this ShowSlowlogSensitiveStatusRequest.
+        :rtype: str
         """
-        return self._findings
+        return self._x_language
 
-    @findings.setter
-    def findings(self, findings):
-        """Sets the findings of this ListPreviewFindingsResponse.
+    @x_language.setter
+    def x_language(self, x_language):
+        """Sets the x_language of this ShowSlowlogSensitiveStatusRequest.
 
-        访问预览生成的分析结果列表。
+        语言。
 
-        :param findings: The findings of this ListPreviewFindingsResponse.
-        :type findings: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.PreviewFinding`]
+        :param x_language: The x_language of this ShowSlowlogSensitiveStatusRequest.
+        :type x_language: str
         """
-        self._findings = findings
+        self._x_language = x_language
 
     @property
-    def page_info(self):
-        """Gets the page_info of this ListPreviewFindingsResponse.
+    def instance_id(self):
+        """Gets the instance_id of this ShowSlowlogSensitiveStatusRequest.
 
-        :return: The page_info of this ListPreviewFindingsResponse.
-        :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.PageInfo`
+        实例ID。
+
+        :return: The instance_id of this ShowSlowlogSensitiveStatusRequest.
+        :rtype: str
         """
-        return self._page_info
+        return self._instance_id
 
-    @page_info.setter
-    def page_info(self, page_info):
-        """Sets the page_info of this ListPreviewFindingsResponse.
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        """Sets the instance_id of this ShowSlowlogSensitiveStatusRequest.
 
-        :param page_info: The page_info of this ListPreviewFindingsResponse.
-        :type page_info: :class:`huaweicloudsdkiamaccessanalyzer.v1.PageInfo`
+        实例ID。
+
+        :param instance_id: The instance_id of this ShowSlowlogSensitiveStatusRequest.
+        :type instance_id: str
         """
-        self._page_info = page_info
+        self._instance_id = instance_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -131,7 +133,7 @@ class ListPreviewFindingsResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ListPreviewFindingsResponse):
+        if not isinstance(other, ShowSlowlogSensitiveStatusRequest):
             return False
 
         return self.__dict__ == other.__dict__

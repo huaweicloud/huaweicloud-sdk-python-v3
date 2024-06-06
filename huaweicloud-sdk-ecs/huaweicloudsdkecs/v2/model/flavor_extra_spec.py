@@ -44,6 +44,7 @@ class FlavorExtraSpec:
         'condspotoperationstatus': 'str',
         'condnetwork': 'str',
         'condstorage': 'str',
+        'condstoragetype': 'str',
         'condcomputelive_resizable': 'str',
         'condcompute': 'str',
         'infogpuname': 'str',
@@ -82,6 +83,7 @@ class FlavorExtraSpec:
         'condspotoperationstatus': 'cond:spot:operation:status',
         'condnetwork': 'cond:network',
         'condstorage': 'cond:storage',
+        'condstoragetype': 'cond:storage:type',
         'condcomputelive_resizable': 'cond:compute:live_resizable',
         'condcompute': 'cond:compute',
         'infogpuname': 'info:gpu:name',
@@ -92,7 +94,7 @@ class FlavorExtraSpec:
         'ecsinstance_architecture': 'ecs:instance_architecture'
     }
 
-    def __init__(self, ecsperformancetype=None, hwnuma_nodes=None, resource_type=None, hpet_support=None, instance_vnictype=None, instance_vnicinstance_bandwidth=None, instance_vnicmax_count=None, quotalocal_disk=None, quotanvme_ssd=None, extra_speciopersistent_grant=None, ecsgeneration=None, ecsvirtualization_env_types=None, pci_passthroughenable_gpu=None, pci_passthroughgpu_specs=None, pci_passthroughalias=None, condoperationstatus=None, condoperationaz=None, quotamax_rate=None, quotamin_rate=None, quotamax_pps=None, condoperationcharge=None, condoperationchargestop=None, condspotoperationaz=None, condoperationroles=None, condspotoperationstatus=None, condnetwork=None, condstorage=None, condcomputelive_resizable=None, condcompute=None, infogpuname=None, infocpuname=None, quotagpu=None, quotavif_max_num=None, quotasub_network_interface_max_num=None, ecsinstance_architecture=None):
+    def __init__(self, ecsperformancetype=None, hwnuma_nodes=None, resource_type=None, hpet_support=None, instance_vnictype=None, instance_vnicinstance_bandwidth=None, instance_vnicmax_count=None, quotalocal_disk=None, quotanvme_ssd=None, extra_speciopersistent_grant=None, ecsgeneration=None, ecsvirtualization_env_types=None, pci_passthroughenable_gpu=None, pci_passthroughgpu_specs=None, pci_passthroughalias=None, condoperationstatus=None, condoperationaz=None, quotamax_rate=None, quotamin_rate=None, quotamax_pps=None, condoperationcharge=None, condoperationchargestop=None, condspotoperationaz=None, condoperationroles=None, condspotoperationstatus=None, condnetwork=None, condstorage=None, condstoragetype=None, condcomputelive_resizable=None, condcompute=None, infogpuname=None, infocpuname=None, quotagpu=None, quotavif_max_num=None, quotasub_network_interface_max_num=None, ecsinstance_architecture=None):
         """FlavorExtraSpec
 
         The model defined in huaweicloud sdk
@@ -151,6 +153,8 @@ class FlavorExtraSpec:
         :type condnetwork: str
         :param condstorage: 存储约束  - 支持磁盘特性，不配置时以UI配置为准。 - scsi，支持scsi - localdisk，支持本地盘 - ib，支持ib
         :type condstorage: str
+        :param condstoragetype: 存储约束  - 支持磁盘特性，不配置时以UI配置为准。
+        :type condstoragetype: str
         :param condcomputelive_resizable: 计算约束  - true，支持在线扩容。 - false或不存在该字段，不支持在线扩容。
         :type condcomputelive_resizable: str
         :param condcompute: 计算约束  - autorecovery，自动恢复特性。 - 不存在该字段，不支持自动恢复。
@@ -198,6 +202,7 @@ class FlavorExtraSpec:
         self._condspotoperationstatus = None
         self._condnetwork = None
         self._condstorage = None
+        self._condstoragetype = None
         self._condcomputelive_resizable = None
         self._condcompute = None
         self._infogpuname = None
@@ -262,6 +267,8 @@ class FlavorExtraSpec:
             self.condnetwork = condnetwork
         if condstorage is not None:
             self.condstorage = condstorage
+        if condstoragetype is not None:
+            self.condstoragetype = condstoragetype
         if condcomputelive_resizable is not None:
             self.condcomputelive_resizable = condcomputelive_resizable
         if condcompute is not None:
@@ -872,6 +879,28 @@ class FlavorExtraSpec:
         :type condstorage: str
         """
         self._condstorage = condstorage
+
+    @property
+    def condstoragetype(self):
+        """Gets the condstoragetype of this FlavorExtraSpec.
+
+        存储约束  - 支持磁盘特性，不配置时以UI配置为准。
+
+        :return: The condstoragetype of this FlavorExtraSpec.
+        :rtype: str
+        """
+        return self._condstoragetype
+
+    @condstoragetype.setter
+    def condstoragetype(self, condstoragetype):
+        """Sets the condstoragetype of this FlavorExtraSpec.
+
+        存储约束  - 支持磁盘特性，不配置时以UI配置为准。
+
+        :param condstoragetype: The condstoragetype of this FlavorExtraSpec.
+        :type condstoragetype: str
+        """
+        self._condstoragetype = condstoragetype
 
     @property
     def condcomputelive_resizable(self):

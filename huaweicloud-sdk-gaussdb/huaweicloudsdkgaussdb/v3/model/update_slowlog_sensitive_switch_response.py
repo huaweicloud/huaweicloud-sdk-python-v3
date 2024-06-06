@@ -2,10 +2,11 @@
 
 import six
 
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class GetAccessPreviewRequest:
+class UpdateSlowlogSensitiveSwitchResponse(SdkResponse):
 
     """
     Attributes:
@@ -17,78 +18,20 @@ class GetAccessPreviewRequest:
     sensitive_list = []
 
     openapi_types = {
-        'analyzer_id': 'str',
-        'access_preview_id': 'str'
     }
 
     attribute_map = {
-        'analyzer_id': 'analyzer_id',
-        'access_preview_id': 'access_preview_id'
     }
 
-    def __init__(self, analyzer_id=None, access_preview_id=None):
-        """GetAccessPreviewRequest
+    def __init__(self):
+        """UpdateSlowlogSensitiveSwitchResponse
 
         The model defined in huaweicloud sdk
 
-        :param analyzer_id: 分析器的唯一标识符。
-        :type analyzer_id: str
-        :param access_preview_id: 访问预览的唯一标识符。
-        :type access_preview_id: str
         """
         
-        
-
-        self._analyzer_id = None
-        self._access_preview_id = None
+        super(UpdateSlowlogSensitiveSwitchResponse, self).__init__()
         self.discriminator = None
-
-        self.analyzer_id = analyzer_id
-        self.access_preview_id = access_preview_id
-
-    @property
-    def analyzer_id(self):
-        """Gets the analyzer_id of this GetAccessPreviewRequest.
-
-        分析器的唯一标识符。
-
-        :return: The analyzer_id of this GetAccessPreviewRequest.
-        :rtype: str
-        """
-        return self._analyzer_id
-
-    @analyzer_id.setter
-    def analyzer_id(self, analyzer_id):
-        """Sets the analyzer_id of this GetAccessPreviewRequest.
-
-        分析器的唯一标识符。
-
-        :param analyzer_id: The analyzer_id of this GetAccessPreviewRequest.
-        :type analyzer_id: str
-        """
-        self._analyzer_id = analyzer_id
-
-    @property
-    def access_preview_id(self):
-        """Gets the access_preview_id of this GetAccessPreviewRequest.
-
-        访问预览的唯一标识符。
-
-        :return: The access_preview_id of this GetAccessPreviewRequest.
-        :rtype: str
-        """
-        return self._access_preview_id
-
-    @access_preview_id.setter
-    def access_preview_id(self, access_preview_id):
-        """Sets the access_preview_id of this GetAccessPreviewRequest.
-
-        访问预览的唯一标识符。
-
-        :param access_preview_id: The access_preview_id of this GetAccessPreviewRequest.
-        :type access_preview_id: str
-        """
-        self._access_preview_id = access_preview_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -132,7 +75,7 @@ class GetAccessPreviewRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, GetAccessPreviewRequest):
+        if not isinstance(other, UpdateSlowlogSensitiveSwitchResponse):
             return False
 
         return self.__dict__ == other.__dict__
