@@ -20,6 +20,7 @@ class TargetInstanceBody:
         'id': 'str',
         'name': 'str',
         'password': 'str',
+        'task_status': 'str',
         'ip': 'str',
         'port': 'str',
         'addrs': 'str',
@@ -31,6 +32,7 @@ class TargetInstanceBody:
         'id': 'id',
         'name': 'name',
         'password': 'password',
+        'task_status': 'task_status',
         'ip': 'ip',
         'port': 'port',
         'addrs': 'addrs',
@@ -38,7 +40,7 @@ class TargetInstanceBody:
         'db': 'db'
     }
 
-    def __init__(self, id=None, name=None, password=None, ip=None, port=None, addrs=None, proxy_multi_db=None, db=None):
+    def __init__(self, id=None, name=None, password=None, task_status=None, ip=None, port=None, addrs=None, proxy_multi_db=None, db=None):
         """TargetInstanceBody
 
         The model defined in huaweicloud sdk
@@ -49,6 +51,8 @@ class TargetInstanceBody:
         :type name: str
         :param password: Redis密码，如果设置了密码，则必须填写。
         :type password: str
+        :param task_status: 任务状态。
+        :type task_status: str
         :param ip: Redis IP地址。
         :type ip: str
         :param port: Redis端口。
@@ -66,6 +70,7 @@ class TargetInstanceBody:
         self._id = None
         self._name = None
         self._password = None
+        self._task_status = None
         self._ip = None
         self._port = None
         self._addrs = None
@@ -78,6 +83,8 @@ class TargetInstanceBody:
             self.name = name
         if password is not None:
             self.password = password
+        if task_status is not None:
+            self.task_status = task_status
         if ip is not None:
             self.ip = ip
         if port is not None:
@@ -154,6 +161,28 @@ class TargetInstanceBody:
         :type password: str
         """
         self._password = password
+
+    @property
+    def task_status(self):
+        """Gets the task_status of this TargetInstanceBody.
+
+        任务状态。
+
+        :return: The task_status of this TargetInstanceBody.
+        :rtype: str
+        """
+        return self._task_status
+
+    @task_status.setter
+    def task_status(self, task_status):
+        """Sets the task_status of this TargetInstanceBody.
+
+        任务状态。
+
+        :param task_status: The task_status of this TargetInstanceBody.
+        :type task_status: str
+        """
+        self._task_status = task_status
 
     @property
     def ip(self):

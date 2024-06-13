@@ -19,7 +19,7 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
 
     openapi_types = {
         'id': 'str',
-        'name': 'str',
+        'resource_name': 'str',
         'engine_name': 'str',
         'availability_zone_ids': 'list[str]',
         'architecture': 'str',
@@ -30,7 +30,7 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
 
     attribute_map = {
         'id': 'id',
-        'name': 'name',
+        'resource_name': 'resource_name',
         'engine_name': 'engine_name',
         'availability_zone_ids': 'availability_zone_ids',
         'architecture': 'architecture',
@@ -39,15 +39,15 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
         'dedicated_storage_info': 'dedicated_storage_info'
     }
 
-    def __init__(self, id=None, name=None, engine_name=None, availability_zone_ids=None, architecture=None, status=None, dedicated_compute_info=None, dedicated_storage_info=None):
+    def __init__(self, id=None, resource_name=None, engine_name=None, availability_zone_ids=None, architecture=None, status=None, dedicated_compute_info=None, dedicated_storage_info=None):
         """ShowDedicatedResourceInfoResponse
 
         The model defined in huaweicloud sdk
 
         :param id: 专属资源池ID。
         :type id: str
-        :param name: 专属资源池名称。
-        :type name: str
+        :param resource_name: 专属资源池名称。
+        :type resource_name: str
         :param engine_name: 引擎名称。
         :type engine_name: str
         :param availability_zone_ids: 可用区。
@@ -65,7 +65,7 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
         super(ShowDedicatedResourceInfoResponse, self).__init__()
 
         self._id = None
-        self._name = None
+        self._resource_name = None
         self._engine_name = None
         self._availability_zone_ids = None
         self._architecture = None
@@ -76,8 +76,8 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
 
         if id is not None:
             self.id = id
-        if name is not None:
-            self.name = name
+        if resource_name is not None:
+            self.resource_name = resource_name
         if engine_name is not None:
             self.engine_name = engine_name
         if availability_zone_ids is not None:
@@ -114,26 +114,26 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
         self._id = id
 
     @property
-    def name(self):
-        """Gets the name of this ShowDedicatedResourceInfoResponse.
+    def resource_name(self):
+        """Gets the resource_name of this ShowDedicatedResourceInfoResponse.
 
         专属资源池名称。
 
-        :return: The name of this ShowDedicatedResourceInfoResponse.
+        :return: The resource_name of this ShowDedicatedResourceInfoResponse.
         :rtype: str
         """
-        return self._name
+        return self._resource_name
 
-    @name.setter
-    def name(self, name):
-        """Sets the name of this ShowDedicatedResourceInfoResponse.
+    @resource_name.setter
+    def resource_name(self, resource_name):
+        """Sets the resource_name of this ShowDedicatedResourceInfoResponse.
 
         专属资源池名称。
 
-        :param name: The name of this ShowDedicatedResourceInfoResponse.
-        :type name: str
+        :param resource_name: The resource_name of this ShowDedicatedResourceInfoResponse.
+        :type resource_name: str
         """
-        self._name = name
+        self._resource_name = resource_name
 
     @property
     def engine_name(self):

@@ -26,7 +26,8 @@ class VideoConfig:
         'is_subtitle_enable': 'bool',
         'subtitle_config': 'SubtitleConfig',
         'dx': 'int',
-        'dy': 'int'
+        'dy': 'int',
+        'is_enable_super_resolution': 'bool'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class VideoConfig:
         'is_subtitle_enable': 'is_subtitle_enable',
         'subtitle_config': 'subtitle_config',
         'dx': 'dx',
-        'dy': 'dy'
+        'dy': 'dy',
+        'is_enable_super_resolution': 'is_enable_super_resolution'
     }
 
-    def __init__(self, clip_mode=None, codec=None, bitrate=None, width=None, height=None, frame_rate=None, is_subtitle_enable=None, subtitle_config=None, dx=None, dy=None):
+    def __init__(self, clip_mode=None, codec=None, bitrate=None, width=None, height=None, frame_rate=None, is_subtitle_enable=None, subtitle_config=None, dx=None, dy=None, is_enable_super_resolution=None):
         """VideoConfig
 
         The model defined in huaweicloud sdk
@@ -67,6 +69,8 @@ class VideoConfig:
         :type dx: int
         :param dy: 裁剪视频左上角像素点坐标。  clip_mode&#x3D; CROP时生效。 &gt; * 以模特分辨率为画布大小，比如1920*1080分辨率的模特，dy最小值是0，最大值是1080
         :type dy: int
+        :param is_enable_super_resolution: 视频是否开启超分。 &gt; true: 开启 &gt; false: 不开启
+        :type is_enable_super_resolution: bool
         """
         
         
@@ -81,6 +85,7 @@ class VideoConfig:
         self._subtitle_config = None
         self._dx = None
         self._dy = None
+        self._is_enable_super_resolution = None
         self.discriminator = None
 
         if clip_mode is not None:
@@ -99,6 +104,8 @@ class VideoConfig:
             self.dx = dx
         if dy is not None:
             self.dy = dy
+        if is_enable_super_resolution is not None:
+            self.is_enable_super_resolution = is_enable_super_resolution
 
     @property
     def clip_mode(self):
@@ -315,6 +322,28 @@ class VideoConfig:
         :type dy: int
         """
         self._dy = dy
+
+    @property
+    def is_enable_super_resolution(self):
+        """Gets the is_enable_super_resolution of this VideoConfig.
+
+        视频是否开启超分。 > true: 开启 > false: 不开启
+
+        :return: The is_enable_super_resolution of this VideoConfig.
+        :rtype: bool
+        """
+        return self._is_enable_super_resolution
+
+    @is_enable_super_resolution.setter
+    def is_enable_super_resolution(self, is_enable_super_resolution):
+        """Sets the is_enable_super_resolution of this VideoConfig.
+
+        视频是否开启超分。 > true: 开启 > false: 不开启
+
+        :param is_enable_super_resolution: The is_enable_super_resolution of this VideoConfig.
+        :type is_enable_super_resolution: bool
+        """
+        self._is_enable_super_resolution = is_enable_super_resolution
 
     def to_dict(self):
         """Returns the model properties as a dict"""

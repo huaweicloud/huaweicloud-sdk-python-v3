@@ -18,6 +18,7 @@ class ShowAssetResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'project_id': 'str',
         'asset_id': 'str',
         'asset_name': 'str',
         'asset_description': 'str',
@@ -36,6 +37,7 @@ class ShowAssetResponse(SdkResponse):
     }
 
     attribute_map = {
+        'project_id': 'project_id',
         'asset_id': 'asset_id',
         'asset_name': 'asset_name',
         'asset_description': 'asset_description',
@@ -53,11 +55,13 @@ class ShowAssetResponse(SdkResponse):
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, asset_id=None, asset_name=None, asset_description=None, app_user_id=None, create_time=None, update_time=None, asset_type=None, asset_state=None, fail_type=None, reason=None, tags=None, asset_extra_meta=None, system_properties=None, files=None, x_request_id=None):
+    def __init__(self, project_id=None, asset_id=None, asset_name=None, asset_description=None, app_user_id=None, create_time=None, update_time=None, asset_type=None, asset_state=None, fail_type=None, reason=None, tags=None, asset_extra_meta=None, system_properties=None, files=None, x_request_id=None):
         """ShowAssetResponse
 
         The model defined in huaweicloud sdk
 
+        :param project_id: 租户id
+        :type project_id: str
         :param asset_id: 资产ID。
         :type asset_id: str
         :param asset_name: 资产名称。
@@ -92,6 +96,7 @@ class ShowAssetResponse(SdkResponse):
         
         super(ShowAssetResponse, self).__init__()
 
+        self._project_id = None
         self._asset_id = None
         self._asset_name = None
         self._asset_description = None
@@ -109,6 +114,8 @@ class ShowAssetResponse(SdkResponse):
         self._x_request_id = None
         self.discriminator = None
 
+        if project_id is not None:
+            self.project_id = project_id
         if asset_id is not None:
             self.asset_id = asset_id
         if asset_name is not None:
@@ -139,6 +146,28 @@ class ShowAssetResponse(SdkResponse):
             self.files = files
         if x_request_id is not None:
             self.x_request_id = x_request_id
+
+    @property
+    def project_id(self):
+        """Gets the project_id of this ShowAssetResponse.
+
+        租户id
+
+        :return: The project_id of this ShowAssetResponse.
+        :rtype: str
+        """
+        return self._project_id
+
+    @project_id.setter
+    def project_id(self, project_id):
+        """Sets the project_id of this ShowAssetResponse.
+
+        租户id
+
+        :param project_id: The project_id of this ShowAssetResponse.
+        :type project_id: str
+        """
+        self._project_id = project_id
 
     @property
     def asset_id(self):

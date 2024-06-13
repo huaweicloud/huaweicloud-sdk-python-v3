@@ -909,31 +909,98 @@ class MetaStudioClient(Client):
 
         return http_info
 
-    def create_assetby_replication_info(self, request):
+    def batch_execute_asset_action(self, request):
+        """批量资产操作
+
+        该接口用批量资产操作。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchExecuteAssetAction
+        :type request: :class:`huaweicloudsdkmetastudio.v1.BatchExecuteAssetActionRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.BatchExecuteAssetActionResponse`
+        """
+        http_info = self._batch_execute_asset_action_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_execute_asset_action_invoker(self, request):
+        http_info = self._batch_execute_asset_action_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_execute_asset_action_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-assets/batch-action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchExecuteAssetActionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_asset_by_replication_info(self, request):
         """复制资产
 
         该接口用于在Region B复制Region A的指定资产。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
-        :param request: Request instance for CreateAssetbyReplicationInfo
-        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateAssetbyReplicationInfoRequest`
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateAssetbyReplicationInfoResponse`
+        :param request: Request instance for CreateAssetByReplicationInfo
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateAssetByReplicationInfoRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateAssetByReplicationInfoResponse`
         """
-        http_info = self._create_assetby_replication_info_http_info(request)
+        http_info = self._create_asset_by_replication_info_http_info(request)
         return self._call_api(**http_info)
 
-    def create_assetby_replication_info_invoker(self, request):
-        http_info = self._create_assetby_replication_info_http_info(request)
+    def create_asset_by_replication_info_invoker(self, request):
+        http_info = self._create_asset_by_replication_info_http_info(request)
         return SyncInvoker(self, http_info)
 
     @classmethod
-    def _create_assetby_replication_info_http_info(cls, request):
+    def _create_asset_by_replication_info_http_info(cls, request):
         http_info = {
             "method": "POST",
             "resource_path": "/v1/{project_id}/digital-assets-by-replication-info",
             "request_type": request.__class__.__name__,
-            "response_type": "CreateAssetbyReplicationInfoResponse"
+            "response_type": "CreateAssetByReplicationInfoResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1019,6 +1086,8 @@ class MetaStudioClient(Client):
         header_params = {}
         if 'x_app_user_id' in local_var_params:
             header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+        if 'x_mss_authorization' in local_var_params:
+            header_params['X-MSS-Authorization'] = local_var_params['x_mss_authorization']
 
         form_params = {}
 
@@ -1242,6 +1311,9 @@ class MetaStudioClient(Client):
             query_params.append(('style_id', local_var_params['style_id']))
         if 'render_engine' in local_var_params:
             query_params.append(('render_engine', local_var_params['render_engine']))
+        if 'asset_id' in local_var_params:
+            query_params.append(('asset_id', local_var_params['asset_id']))
+            collection_formats['asset_id'] = 'csv'
         if 'sex' in local_var_params:
             query_params.append(('sex', local_var_params['sex']))
         if 'language' in local_var_params:
@@ -1256,6 +1328,14 @@ class MetaStudioClient(Client):
             query_params.append(('voice_provider', local_var_params['voice_provider']))
         if 'role' in local_var_params:
             query_params.append(('role', local_var_params['role']))
+        if 'is_realtime_voice' in local_var_params:
+            query_params.append(('is_realtime_voice', local_var_params['is_realtime_voice']))
+        if 'human_model_2d_version' in local_var_params:
+            query_params.append(('human_model_2d_version', local_var_params['human_model_2d_version']))
+        if 'include_device_name' in local_var_params:
+            query_params.append(('include_device_name', local_var_params['include_device_name']))
+        if 'exclude_device_name' in local_var_params:
+            query_params.append(('exclude_device_name', local_var_params['exclude_device_name']))
 
         header_params = {}
         if 'x_app_user_id' in local_var_params:
@@ -5249,6 +5329,428 @@ class MetaStudioClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_product(self, request):
+        """创建商品
+
+        Create product
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateProduct
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateProductRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateProductResponse`
+        """
+        http_info = self._create_product_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_product_invoker(self, request):
+        http_info = self._create_product_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_product_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/products",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateProductResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_product(self, request):
+        """删除商品
+
+        删除商品
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteProduct
+        :type request: :class:`huaweicloudsdkmetastudio.v1.DeleteProductRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.DeleteProductResponse`
+        """
+        http_info = self._delete_product_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_product_invoker(self, request):
+        http_info = self._delete_product_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_product_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/products/{product_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteProductResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'product_id' in local_var_params:
+            path_params['product_id'] = local_var_params['product_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_products(self, request):
+        """查询商品列表
+
+        查询商品列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListProducts
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ListProductsRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListProductsResponse`
+        """
+        http_info = self._list_products_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_products_invoker(self, request):
+        http_info = self._list_products_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_products_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/products",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProductsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'create_until' in local_var_params:
+            query_params.append(('create_until', local_var_params['create_until']))
+        if 'create_since' in local_var_params:
+            query_params.append(('create_since', local_var_params['create_since']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'tag' in local_var_params:
+            query_params.append(('tag', local_var_params['tag']))
+        if 'state' in local_var_params:
+            query_params.append(('state', local_var_params['state']))
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def set_product_asset(self, request):
+        """商品资产组合配置
+
+        商品资产组合配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SetProductAsset
+        :type request: :class:`huaweicloudsdkmetastudio.v1.SetProductAssetRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.SetProductAssetResponse`
+        """
+        http_info = self._set_product_asset_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_product_asset_invoker(self, request):
+        http_info = self._set_product_asset_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _set_product_asset_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/products/{product_id}/assets",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetProductAssetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'product_id' in local_var_params:
+            path_params['product_id'] = local_var_params['product_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_product(self, request):
+        """查询商品详情
+
+        Show product
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowProduct
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowProductRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowProductResponse`
+        """
+        http_info = self._show_product_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_product_invoker(self, request):
+        http_info = self._show_product_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_product_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/products/{product_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProductResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'product_id' in local_var_params:
+            path_params['product_id'] = local_var_params['product_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_product(self, request):
+        """更新商品
+
+        Update product
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateProduct
+        :type request: :class:`huaweicloudsdkmetastudio.v1.UpdateProductRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateProductResponse`
+        """
+        http_info = self._update_product_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_product_invoker(self, request):
+        http_info = self._update_product_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_product_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/products/{product_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateProductResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'product_id' in local_var_params:
+            path_params['product_id'] = local_var_params['product_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

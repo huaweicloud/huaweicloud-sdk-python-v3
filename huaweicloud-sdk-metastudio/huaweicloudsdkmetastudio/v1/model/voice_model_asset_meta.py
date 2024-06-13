@@ -23,6 +23,8 @@ class VoiceModelAssetMeta:
         'language': 'str',
         'speed_ratio': 'float',
         'volume_ratio': 'float',
+        'is_realtime_voice': 'bool',
+        'voice_capability': 'VoiceCapability',
         'external_voice_meta': 'ExternalVoiceAssetMeta'
     }
 
@@ -33,10 +35,12 @@ class VoiceModelAssetMeta:
         'language': 'language',
         'speed_ratio': 'speed_ratio',
         'volume_ratio': 'volume_ratio',
+        'is_realtime_voice': 'is_realtime_voice',
+        'voice_capability': 'voice_capability',
         'external_voice_meta': 'external_voice_meta'
     }
 
-    def __init__(self, order=None, model_type=None, sex=None, language=None, speed_ratio=None, volume_ratio=None, external_voice_meta=None):
+    def __init__(self, order=None, model_type=None, sex=None, language=None, speed_ratio=None, volume_ratio=None, is_realtime_voice=None, voice_capability=None, external_voice_meta=None):
         """VoiceModelAssetMeta
 
         The model defined in huaweicloud sdk
@@ -53,6 +57,10 @@ class VoiceModelAssetMeta:
         :type speed_ratio: float
         :param volume_ratio: 音量缩放比例
         :type volume_ratio: float
+        :param is_realtime_voice: 该音色是否支持实时合成，默认是true。 &gt; * 支持实时合成的音色，可以用于直播和智能交互场景。否则只能用于视频制作。
+        :type is_realtime_voice: bool
+        :param voice_capability: 
+        :type voice_capability: :class:`huaweicloudsdkmetastudio.v1.VoiceCapability`
         :param external_voice_meta: 
         :type external_voice_meta: :class:`huaweicloudsdkmetastudio.v1.ExternalVoiceAssetMeta`
         """
@@ -65,6 +73,8 @@ class VoiceModelAssetMeta:
         self._language = None
         self._speed_ratio = None
         self._volume_ratio = None
+        self._is_realtime_voice = None
+        self._voice_capability = None
         self._external_voice_meta = None
         self.discriminator = None
 
@@ -80,6 +90,10 @@ class VoiceModelAssetMeta:
             self.speed_ratio = speed_ratio
         if volume_ratio is not None:
             self.volume_ratio = volume_ratio
+        if is_realtime_voice is not None:
+            self.is_realtime_voice = is_realtime_voice
+        if voice_capability is not None:
+            self.voice_capability = voice_capability
         if external_voice_meta is not None:
             self.external_voice_meta = external_voice_meta
 
@@ -214,6 +228,46 @@ class VoiceModelAssetMeta:
         :type volume_ratio: float
         """
         self._volume_ratio = volume_ratio
+
+    @property
+    def is_realtime_voice(self):
+        """Gets the is_realtime_voice of this VoiceModelAssetMeta.
+
+        该音色是否支持实时合成，默认是true。 > * 支持实时合成的音色，可以用于直播和智能交互场景。否则只能用于视频制作。
+
+        :return: The is_realtime_voice of this VoiceModelAssetMeta.
+        :rtype: bool
+        """
+        return self._is_realtime_voice
+
+    @is_realtime_voice.setter
+    def is_realtime_voice(self, is_realtime_voice):
+        """Sets the is_realtime_voice of this VoiceModelAssetMeta.
+
+        该音色是否支持实时合成，默认是true。 > * 支持实时合成的音色，可以用于直播和智能交互场景。否则只能用于视频制作。
+
+        :param is_realtime_voice: The is_realtime_voice of this VoiceModelAssetMeta.
+        :type is_realtime_voice: bool
+        """
+        self._is_realtime_voice = is_realtime_voice
+
+    @property
+    def voice_capability(self):
+        """Gets the voice_capability of this VoiceModelAssetMeta.
+
+        :return: The voice_capability of this VoiceModelAssetMeta.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.VoiceCapability`
+        """
+        return self._voice_capability
+
+    @voice_capability.setter
+    def voice_capability(self, voice_capability):
+        """Sets the voice_capability of this VoiceModelAssetMeta.
+
+        :param voice_capability: The voice_capability of this VoiceModelAssetMeta.
+        :type voice_capability: :class:`huaweicloudsdkmetastudio.v1.VoiceCapability`
+        """
+        self._voice_capability = voice_capability
 
     @property
     def external_voice_meta(self):

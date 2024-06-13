@@ -132,6 +132,7 @@ from huaweicloudsdkiotedge.v2.model.execute_device_controls_set_response import 
 from huaweicloudsdkiotedge.v2.model.ext_device import ExtDevice
 from huaweicloudsdkiotedge.v2.model.external_entity_resp_dto import ExternalEntityRespDTO
 from huaweicloudsdkiotedge.v2.model.ha_config_dto import HaConfigDTO
+from huaweicloudsdkiotedge.v2.model.host_info_dto import HostInfoDTO
 from huaweicloudsdkiotedge.v2.model.http_get_dto import HttpGetDTO
 from huaweicloudsdkiotedge.v2.model.import_points_request import ImportPointsRequest
 from huaweicloudsdkiotedge.v2.model.import_points_request_body import ImportPointsRequestBody
@@ -153,7 +154,9 @@ from huaweicloudsdkiotedge.v2.model.list_routes_response import ListRoutesRespon
 from huaweicloudsdkiotedge.v2.model.log_config_dto import LogConfigDTO
 from huaweicloudsdkiotedge.v2.model.module_container_settings_res_dto import ModuleContainerSettingsResDTO
 from huaweicloudsdkiotedge.v2.model.mqtt_connection_info import MqttConnectionInfo
+from huaweicloudsdkiotedge.v2.model.npu_details_dto import NPUDetailsDTO
 from huaweicloudsdkiotedge.v2.model.nic import Nic
+from huaweicloudsdkiotedge.v2.model.npu_used_info_dto import NpuUsedInfoDTO
 from huaweicloudsdkiotedge.v2.model.offline_cache_configs_dto import OfflineCacheConfigsDTO
 from huaweicloudsdkiotedge.v2.model.page_info_dto import PageInfoDTO
 from huaweicloudsdkiotedge.v2.model.point_clean_dto import PointCleanDTO
@@ -188,6 +191,8 @@ from huaweicloudsdkiotedge.v2.model.show_edge_app_request import ShowEdgeAppRequ
 from huaweicloudsdkiotedge.v2.model.show_edge_app_response import ShowEdgeAppResponse
 from huaweicloudsdkiotedge.v2.model.show_edge_application_version_request import ShowEdgeApplicationVersionRequest
 from huaweicloudsdkiotedge.v2.model.show_edge_application_version_response import ShowEdgeApplicationVersionResponse
+from huaweicloudsdkiotedge.v2.model.show_edge_node_hosts_info_request import ShowEdgeNodeHostsInfoRequest
+from huaweicloudsdkiotedge.v2.model.show_edge_node_hosts_info_response import ShowEdgeNodeHostsInfoResponse
 from huaweicloudsdkiotedge.v2.model.show_edge_node_request import ShowEdgeNodeRequest
 from huaweicloudsdkiotedge.v2.model.show_edge_node_response import ShowEdgeNodeResponse
 from huaweicloudsdkiotedge.v2.model.show_ia_config_request import ShowIaConfigRequest
@@ -227,6 +232,8 @@ from huaweicloudsdkiotedge.v2.model.update_edge_application_version_state_reques
 from huaweicloudsdkiotedge.v2.model.update_edge_application_version_state_response import UpdateEdgeApplicationVersionStateResponse
 from huaweicloudsdkiotedge.v2.model.update_edge_module_req_dto import UpdateEdgeModuleReqDTO
 from huaweicloudsdkiotedge.v2.model.update_edge_module_state_req_dto import UpdateEdgeModuleStateReqDTO
+from huaweicloudsdkiotedge.v2.model.update_edge_node_request import UpdateEdgeNodeRequest
+from huaweicloudsdkiotedge.v2.model.update_edge_node_response import UpdateEdgeNodeResponse
 from huaweicloudsdkiotedge.v2.model.update_external_entity_req_dto import UpdateExternalEntityReqDTO
 from huaweicloudsdkiotedge.v2.model.update_external_entity_request import UpdateExternalEntityRequest
 from huaweicloudsdkiotedge.v2.model.update_external_entity_response import UpdateExternalEntityResponse
@@ -243,6 +250,8 @@ from huaweicloudsdkiotedge.v2.model.update_module_state_response import UpdateMo
 from huaweicloudsdkiotedge.v2.model.update_na_request import UpdateNaRequest
 from huaweicloudsdkiotedge.v2.model.update_na_request_dto import UpdateNaRequestDTO
 from huaweicloudsdkiotedge.v2.model.update_na_response import UpdateNaResponse
+from huaweicloudsdkiotedge.v2.model.update_node_req_dto import UpdateNodeReqDTO
+from huaweicloudsdkiotedge.v2.model.update_offline_cache_configs_dto import UpdateOfflineCacheConfigsDTO
 from huaweicloudsdkiotedge.v2.model.update_routes_request import UpdateRoutesRequest
 from huaweicloudsdkiotedge.v2.model.update_routes_response import UpdateRoutesResponse
 from huaweicloudsdkiotedge.v2.model.update_schedule_req_dto import UpdateScheduleReqDTO

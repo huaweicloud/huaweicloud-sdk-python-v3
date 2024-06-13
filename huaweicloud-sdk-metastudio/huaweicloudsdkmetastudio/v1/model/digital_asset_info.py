@@ -17,6 +17,7 @@ class DigitalAssetInfo:
     sensitive_list = []
 
     openapi_types = {
+        'project_id': 'str',
         'asset_id': 'str',
         'asset_name': 'str',
         'asset_description': 'str',
@@ -34,6 +35,7 @@ class DigitalAssetInfo:
     }
 
     attribute_map = {
+        'project_id': 'project_id',
         'asset_id': 'asset_id',
         'asset_name': 'asset_name',
         'asset_description': 'asset_description',
@@ -50,11 +52,13 @@ class DigitalAssetInfo:
         'files': 'files'
     }
 
-    def __init__(self, asset_id=None, asset_name=None, asset_description=None, app_user_id=None, create_time=None, update_time=None, asset_type=None, asset_state=None, fail_type=None, reason=None, tags=None, asset_extra_meta=None, system_properties=None, files=None):
+    def __init__(self, project_id=None, asset_id=None, asset_name=None, asset_description=None, app_user_id=None, create_time=None, update_time=None, asset_type=None, asset_state=None, fail_type=None, reason=None, tags=None, asset_extra_meta=None, system_properties=None, files=None):
         """DigitalAssetInfo
 
         The model defined in huaweicloud sdk
 
+        :param project_id: 租户id
+        :type project_id: str
         :param asset_id: 资产ID。
         :type asset_id: str
         :param asset_name: 资产名称。
@@ -87,6 +91,7 @@ class DigitalAssetInfo:
         
         
 
+        self._project_id = None
         self._asset_id = None
         self._asset_name = None
         self._asset_description = None
@@ -103,6 +108,8 @@ class DigitalAssetInfo:
         self._files = None
         self.discriminator = None
 
+        if project_id is not None:
+            self.project_id = project_id
         if asset_id is not None:
             self.asset_id = asset_id
         if asset_name is not None:
@@ -131,6 +138,28 @@ class DigitalAssetInfo:
             self.system_properties = system_properties
         if files is not None:
             self.files = files
+
+    @property
+    def project_id(self):
+        """Gets the project_id of this DigitalAssetInfo.
+
+        租户id
+
+        :return: The project_id of this DigitalAssetInfo.
+        :rtype: str
+        """
+        return self._project_id
+
+    @project_id.setter
+    def project_id(self, project_id):
+        """Sets the project_id of this DigitalAssetInfo.
+
+        租户id
+
+        :param project_id: The project_id of this DigitalAssetInfo.
+        :type project_id: str
+        """
+        self._project_id = project_id
 
     @property
     def asset_id(self):

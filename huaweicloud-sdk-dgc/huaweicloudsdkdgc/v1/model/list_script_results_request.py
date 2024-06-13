@@ -35,9 +35,9 @@ class ListScriptResultsRequest:
 
         :param workspace: 工作空间id
         :type workspace: str
-        :param script_name: 
+        :param script_name: 脚本名称
         :type script_name: str
-        :param instance_id: 
+        :param instance_id: 脚本实例id
         :type instance_id: str
         """
         
@@ -79,6 +79,8 @@ class ListScriptResultsRequest:
     def script_name(self):
         """Gets the script_name of this ListScriptResultsRequest.
 
+        脚本名称
+
         :return: The script_name of this ListScriptResultsRequest.
         :rtype: str
         """
@@ -87,6 +89,8 @@ class ListScriptResultsRequest:
     @script_name.setter
     def script_name(self, script_name):
         """Sets the script_name of this ListScriptResultsRequest.
+
+        脚本名称
 
         :param script_name: The script_name of this ListScriptResultsRequest.
         :type script_name: str
@@ -97,6 +101,8 @@ class ListScriptResultsRequest:
     def instance_id(self):
         """Gets the instance_id of this ListScriptResultsRequest.
 
+        脚本实例id
+
         :return: The instance_id of this ListScriptResultsRequest.
         :rtype: str
         """
@@ -105,6 +111,8 @@ class ListScriptResultsRequest:
     @instance_id.setter
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListScriptResultsRequest.
+
+        脚本实例id
 
         :param instance_id: The instance_id of this ListScriptResultsRequest.
         :type instance_id: str

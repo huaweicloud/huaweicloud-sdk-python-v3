@@ -2712,6 +2712,207 @@ class VpcClient(Client):
 
         return http_info
 
+    def batch_create_firewall_tags(self, request):
+        """批量添加ACL资源标签
+
+        为指定的IP地址组资源实例批量添加标签。
+        此接口为幂等接口：创建时如果请求体中存在重复key则报错。创建时，不允许设置重复key数据，如果数据库已存在该key，就覆盖value的值。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchCreateFirewallTags
+        :type request: :class:`huaweicloudsdkvpc.v3.BatchCreateFirewallTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.BatchCreateFirewallTagsResponse`
+        """
+        http_info = self._batch_create_firewall_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_create_firewall_tags_invoker(self, request):
+        http_info = self._batch_create_firewall_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_create_firewall_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/firewalls/{firewall_id}/tags/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateFirewallTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'firewall_id' in local_var_params:
+            path_params['firewall_id'] = local_var_params['firewall_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_firewall_tags(self, request):
+        """批量删除ACL资源标签
+
+        为指定的IP地址组资源实例批量删除标签。
+        此接口为幂等接口：删除时，如果删除的标签不存在，默认处理成功；删除时不对标签字符集范围做校验。删除时tags结构体不能缺失，key不能为空，或者空字符串。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteFirewallTags
+        :type request: :class:`huaweicloudsdkvpc.v3.BatchDeleteFirewallTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.BatchDeleteFirewallTagsResponse`
+        """
+        http_info = self._batch_delete_firewall_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_firewall_tags_invoker(self, request):
+        http_info = self._batch_delete_firewall_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_firewall_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/firewalls/{firewall_id}/tags/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteFirewallTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'firewall_id' in local_var_params:
+            path_params['firewall_id'] = local_var_params['firewall_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def count_firewalls_by_tags(self, request):
+        """查询ACL资源实例数量
+
+        使用标签过滤查询ACL实例数量。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CountFirewallsByTags
+        :type request: :class:`huaweicloudsdkvpc.v3.CountFirewallsByTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.CountFirewallsByTagsResponse`
+        """
+        http_info = self._count_firewalls_by_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def count_firewalls_by_tags_invoker(self, request):
+        http_info = self._count_firewalls_by_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _count_firewalls_by_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/firewalls/resource-instances/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "CountFirewallsByTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_firewall(self, request):
         """创建网络ACL
 
@@ -2746,6 +2947,74 @@ class VpcClient(Client):
         collection_formats = {}
 
         path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_firewall_tag(self, request):
+        """添加ACL资源标签
+
+        给指定IP地址组资源实例增加标签信息
+        此接口为幂等接口：创建时，如果创建的标签已经存在（key相同），则覆盖。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateFirewallTag
+        :type request: :class:`huaweicloudsdkvpc.v3.CreateFirewallTagRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.CreateFirewallTagResponse`
+        """
+        http_info = self._create_firewall_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_firewall_tag_invoker(self, request):
+        http_info = self._create_firewall_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_firewall_tag_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/firewalls/{firewall_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateFirewallTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'firewall_id' in local_var_params:
+            path_params['firewall_id'] = local_var_params['firewall_id']
 
         query_params = []
 
@@ -2813,6 +3082,74 @@ class VpcClient(Client):
         path_params = {}
         if 'firewall_id' in local_var_params:
             path_params['firewall_id'] = local_var_params['firewall_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_firewall_tag(self, request):
+        """删除ACL资源标签
+
+        删除指定IP地址组资源实例的标签信息
+        该接口为幂等接口：删除的key不存在报404，key不能为空或者空字符串
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteFirewallTag
+        :type request: :class:`huaweicloudsdkvpc.v3.DeleteFirewallTagRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.DeleteFirewallTagResponse`
+        """
+        http_info = self._delete_firewall_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_firewall_tag_invoker(self, request):
+        http_info = self._delete_firewall_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_firewall_tag_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/firewalls/{firewall_id}/tags/{tag_key}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteFirewallTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'firewall_id' in local_var_params:
+            path_params['firewall_id'] = local_var_params['firewall_id']
+        if 'tag_key' in local_var_params:
+            path_params['tag_key'] = local_var_params['tag_key']
 
         query_params = []
 
@@ -2989,6 +3326,138 @@ class VpcClient(Client):
 
         return http_info
 
+    def list_firewall_tags(self, request):
+        """查询ACL项目标签
+
+        查询租户在指定Project中实例类型的所有资源标签集合
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListFirewallTags
+        :type request: :class:`huaweicloudsdkvpc.v3.ListFirewallTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ListFirewallTagsResponse`
+        """
+        http_info = self._list_firewall_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_firewall_tags_invoker(self, request):
+        http_info = self._list_firewall_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_firewall_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/firewalls/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFirewallTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_firewalls_by_tags(self, request):
+        """查询ACL资源实例列表
+
+        使用标签过滤查询ACL实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListFirewallsByTags
+        :type request: :class:`huaweicloudsdkvpc.v3.ListFirewallsByTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ListFirewallsByTagsResponse`
+        """
+        http_info = self._list_firewalls_by_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_firewalls_by_tags_invoker(self, request):
+        http_info = self._list_firewalls_by_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_firewalls_by_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/firewalls/resource-instances/filter",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFirewallsByTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def remove_firewall_rules(self, request):
         """网络ACL移除规则
 
@@ -3081,6 +3550,71 @@ class VpcClient(Client):
             "resource_path": "/v3/{project_id}/vpc/firewalls/{firewall_id}",
             "request_type": request.__class__.__name__,
             "response_type": "ShowFirewallResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'firewall_id' in local_var_params:
+            path_params['firewall_id'] = local_var_params['firewall_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_firewall_tags(self, request):
+        """查询ACL资源标签
+
+        查询指定ACL实例的标签信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowFirewallTags
+        :type request: :class:`huaweicloudsdkvpc.v3.ShowFirewallTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ShowFirewallTagsResponse`
+        """
+        http_info = self._show_firewall_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_firewall_tags_invoker(self, request):
+        http_info = self._show_firewall_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_firewall_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/firewalls/{firewall_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFirewallTagsResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

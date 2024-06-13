@@ -19,9 +19,7 @@ class ShootScriptDetail:
     openapi_types = {
         'script_type': 'str',
         'text_config': 'TextConfig',
-        'animation_config': 'list[AnimationConfig]',
         'background_config': 'list[BackgroundConfigInfo]',
-        'emotion_config': 'list[EmotionConfig]',
         'layer_config': 'list[LayerConfig]',
         'thumbnail_url': 'str'
     }
@@ -29,14 +27,12 @@ class ShootScriptDetail:
     attribute_map = {
         'script_type': 'script_type',
         'text_config': 'text_config',
-        'animation_config': 'animation_config',
         'background_config': 'background_config',
-        'emotion_config': 'emotion_config',
         'layer_config': 'layer_config',
         'thumbnail_url': 'thumbnail_url'
     }
 
-    def __init__(self, script_type=None, text_config=None, animation_config=None, background_config=None, emotion_config=None, layer_config=None, thumbnail_url=None):
+    def __init__(self, script_type=None, text_config=None, background_config=None, layer_config=None, thumbnail_url=None):
         """ShootScriptDetail
 
         The model defined in huaweicloud sdk
@@ -45,12 +41,8 @@ class ShootScriptDetail:
         :type script_type: str
         :param text_config: 
         :type text_config: :class:`huaweicloudsdkmetastudio.v1.TextConfig`
-        :param animation_config: 动作配置。 &gt; * 推荐使用text_config中插入动作标签，不配置animation_config。 &gt; * 使用animation_config方式配置动作，在整个讲解过程中动作循环播放。 &gt; * 分身数字人视频制作时此参数不生效。
-        :type animation_config: list[:class:`huaweicloudsdkmetastudio.v1.AnimationConfig`]
         :param background_config: 背景配置。
         :type background_config: list[:class:`huaweicloudsdkmetastudio.v1.BackgroundConfigInfo`]
-        :param emotion_config: 情感标签配置。  &gt; * 分身数字人视频制作时此参数不生效。  &gt; * 推荐在text_config中插入情感标签，此参数将被废弃。
-        :type emotion_config: list[:class:`huaweicloudsdkmetastudio.v1.EmotionConfig`]
         :param layer_config: 图层配置。
         :type layer_config: list[:class:`huaweicloudsdkmetastudio.v1.LayerConfig`]
         :param thumbnail_url: 剧本场景缩略图url。
@@ -61,9 +53,7 @@ class ShootScriptDetail:
 
         self._script_type = None
         self._text_config = None
-        self._animation_config = None
         self._background_config = None
-        self._emotion_config = None
         self._layer_config = None
         self._thumbnail_url = None
         self.discriminator = None
@@ -72,12 +62,8 @@ class ShootScriptDetail:
             self.script_type = script_type
         if text_config is not None:
             self.text_config = text_config
-        if animation_config is not None:
-            self.animation_config = animation_config
         if background_config is not None:
             self.background_config = background_config
-        if emotion_config is not None:
-            self.emotion_config = emotion_config
         if layer_config is not None:
             self.layer_config = layer_config
         if thumbnail_url is not None:
@@ -124,28 +110,6 @@ class ShootScriptDetail:
         self._text_config = text_config
 
     @property
-    def animation_config(self):
-        """Gets the animation_config of this ShootScriptDetail.
-
-        动作配置。 > * 推荐使用text_config中插入动作标签，不配置animation_config。 > * 使用animation_config方式配置动作，在整个讲解过程中动作循环播放。 > * 分身数字人视频制作时此参数不生效。
-
-        :return: The animation_config of this ShootScriptDetail.
-        :rtype: list[:class:`huaweicloudsdkmetastudio.v1.AnimationConfig`]
-        """
-        return self._animation_config
-
-    @animation_config.setter
-    def animation_config(self, animation_config):
-        """Sets the animation_config of this ShootScriptDetail.
-
-        动作配置。 > * 推荐使用text_config中插入动作标签，不配置animation_config。 > * 使用animation_config方式配置动作，在整个讲解过程中动作循环播放。 > * 分身数字人视频制作时此参数不生效。
-
-        :param animation_config: The animation_config of this ShootScriptDetail.
-        :type animation_config: list[:class:`huaweicloudsdkmetastudio.v1.AnimationConfig`]
-        """
-        self._animation_config = animation_config
-
-    @property
     def background_config(self):
         """Gets the background_config of this ShootScriptDetail.
 
@@ -166,28 +130,6 @@ class ShootScriptDetail:
         :type background_config: list[:class:`huaweicloudsdkmetastudio.v1.BackgroundConfigInfo`]
         """
         self._background_config = background_config
-
-    @property
-    def emotion_config(self):
-        """Gets the emotion_config of this ShootScriptDetail.
-
-        情感标签配置。  > * 分身数字人视频制作时此参数不生效。  > * 推荐在text_config中插入情感标签，此参数将被废弃。
-
-        :return: The emotion_config of this ShootScriptDetail.
-        :rtype: list[:class:`huaweicloudsdkmetastudio.v1.EmotionConfig`]
-        """
-        return self._emotion_config
-
-    @emotion_config.setter
-    def emotion_config(self, emotion_config):
-        """Sets the emotion_config of this ShootScriptDetail.
-
-        情感标签配置。  > * 分身数字人视频制作时此参数不生效。  > * 推荐在text_config中插入情感标签，此参数将被废弃。
-
-        :param emotion_config: The emotion_config of this ShootScriptDetail.
-        :type emotion_config: list[:class:`huaweicloudsdkmetastudio.v1.EmotionConfig`]
-        """
-        self._emotion_config = emotion_config
 
     @property
     def layer_config(self):

@@ -33,7 +33,7 @@ class HitCondition:
 
         The model defined in huaweicloud sdk
 
-        :param relation: 条件关系；取值And或者Or
+        :param relation: 条件关系；取值And或者Or RESERVED 为兜底回复不会去判断其他命中条件
         :type relation: str
         :param priority: 优先级，数值越低优先级越高；取值0-999，默认值为500，为可选值
         :type priority: int
@@ -59,7 +59,7 @@ class HitCondition:
     def relation(self):
         """Gets the relation of this HitCondition.
 
-        条件关系；取值And或者Or
+        条件关系；取值And或者Or RESERVED 为兜底回复不会去判断其他命中条件
 
         :return: The relation of this HitCondition.
         :rtype: str
@@ -70,7 +70,7 @@ class HitCondition:
     def relation(self, relation):
         """Sets the relation of this HitCondition.
 
-        条件关系；取值And或者Or
+        条件关系；取值And或者Or RESERVED 为兜底回复不会去判断其他命中条件
 
         :param relation: The relation of this HitCondition.
         :type relation: str

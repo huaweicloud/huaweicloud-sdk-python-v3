@@ -1,3 +1,507 @@
+# 3.1.100 2024-06-13
+
+### HuaweiCloud SDK Core
+
+- _Features_
+  - Support retry for request.
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK AS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateScalingV2Policy**
+    - changes of request param
+      - `+ interval_alarm_actions`
+  - **ListAllScalingV2Policies**
+    - changes of response param
+      - `+ scaling_policies.interval_alarm_actions`
+  - **UpdateScalingV2Policy**
+    - changes of request param
+      - `+ interval_alarm_actions`
+  - **ShowScalingV2Policy**
+    - changes of response param
+      - `+ scaling_policy.interval_alarm_actions`
+  - **ListScalingV2Policies**
+    - changes of response param
+      - `+ scaling_policies.interval_alarm_actions`
+
+### HuaweiCloud SDK CAE
+
+- _Features_
+  - Support the API `CreateComponentWithConfiguration`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CDM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateLink**
+    - changes of request param
+      - `* links.link-config-values.configs.inputs.value: string -> object`
+  - **ShowLink**
+    - changes of response param
+      - `* links.link-config-values.configs.inputs.value: string -> object`
+  - **UpdateLink**
+    - changes of request param
+      - `* links.link-config-values.configs.inputs.value: string -> object`
+  - **ShowJobs**
+    - changes of response param
+      - `* jobs.to-config-values.configs.inputs.value: string -> object`
+  - **UpdateJob**
+    - changes of request param
+      - `* jobs.to-config-values.configs.inputs.value: string -> object`
+  - **CreateAndStartRandomClusterJob**
+    - changes of request param
+      - `* jobs.to-config-values.configs.inputs.value: string -> object`
+  - **CreateJob**
+    - changes of request param
+      - `* jobs.to-config-values.configs.inputs.value: string -> object`
+
+### HuaweiCloud SDK Cloudtest
+
+- _Features_
+  - Support the following APIs:
+    - `ShowSystemConfigs`
+    - `ShowMindmapByPage`
+    - `ShowMindmapCreatorName`
+    - `CheckPermission`
+    - `ListUserPopupInfo`
+    - `ListUserPackageUsage`
+    - `ListBasicAw`
+    - `ListPublicLibAndAws`
+    - `ListUserDnsMapping`
+    - `ListVariables`
+    - `ListTaskTestCases`
+    - `ListResourcePools`
+    - `ListAttachments`
+    - `ShowBackgroundInfo`
+    - `ListUsageInfos`
+    - `ShowProgress`
+    - `ListProjectTestCaseFields`
+    - `ShowFreeDeclaration`
+    - `ListTestTypes`
+    - `ShowTestCase`
+    - `CreateResourceUri`
+    - `ShowDomainInfo`
+    - `ShowDisclaimerRecord`
+    - `ListProjectFieldConfigs`
+    - `ShowFeatureChildren`
+    - `ShowAllFeatureChildren`
+    - `ListAllIterators`
+    - `ListIssueTree`
+    - `ShowIteratorByDefect`
+    - `ListAllBranches`
+    - `ShowUserAccessInfo`
+    - `ListReports`
+    - `ShowRequirementsOverview`
+    - `BatchDeleteTestReport`
+    - `CreateRelationsByOneCase`
+    - `DeleteRelationsByOneCase`
+    - `BatchAddRelationsByOneCase`
+    - `ListTestReportsByCondition`
+    - `SaveTaskSetting`
+    - `ListAllConfigItemByType`
+    - `ListAlertGroupsByCondition`
+    - `ShowIfUserNameRepeat`
+    - `ListAlertTemplates`
+    - `ShowIfTaskNameRepeat`
+    - `ShowAllConfigValueByTypeAndKey`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Config
+
+- _Features_
+  - Support the following APIs:
+    - `ShowRemediationConfiguration`
+    - `CreateOrUpdateRemediationConfiguration`
+    - `DeleteRemediationConfiguration`
+    - `BatchCreateRemediationExceptions`
+    - `BatchDeleteRemediationExceptions`
+    - `ListRemediationExceptions`
+    - `RunRemediationExecution`
+    - `ListRemediationExecutionStatuses`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateConformancePack**
+    - changes of request param
+      - `+ X-Language`
+  - **CreateOrganizationConformancePack**
+    - changes of request param
+      - `+ X-Language`
+
+### HuaweiCloud SDK DCS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateMigrationTask**
+    - changes of request param
+      - `+ target_instance.task_status`
+  - **ShowMigrationTask**
+    - changes of response param
+      - `+ target_instance.task_status`
+  - **StopMigrationTask**
+    - changes of response param
+      - `+ target_instance.task_status`
+
+### HuaweiCloud SDK DGC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListScriptResults**
+    - changes of response param
+      - `+ message`
+      - `+ results`
+      - `- result`
+
+### HuaweiCloud SDK DLI
+
+- _Features_
+  - Support the API `CreateStreamJob`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK ECS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowServer**
+    - changes of response param
+      - `- server.fault.code`
+      - `- server.fault.created`
+      - `- server.fault.message`
+      - `- server.fault.details`
+      - `* server.fault: object<ServerFault> -> object`
+  - **ListServersDetails**
+    - changes of response param
+      - `- servers.fault.code`
+      - `- servers.fault.created`
+      - `- servers.fault.message`
+      - `- servers.fault.details`
+      - `* servers.fault: object<ServerFault> -> object`
+
+### HuaweiCloud SDK EIP
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **DisassociatePublicips**
+    - changes of response param
+      - `- publicip.associate_instance_type: enum value [null]`
+  - **AssociatePublicips**
+    - changes of response param
+      - `- publicip.associate_instance_type: enum value [null]`
+  - **UpdatePublicip**
+    - changes of request param
+      - `+ publicip.associate_instance_type: enum value [VPN]`
+      - `- publicip.associate_instance_type: enum value []`
+    - changes of response param
+      - `- publicip.associate_instance_type: enum value [null]`
+
+### HuaweiCloud SDK GaussDB
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowDedicatedResourceInfo**
+    - changes of response param
+      - `+ resource_name`
+      - `- name`
+
+### HuaweiCloud SDK IoTEdge
+
+- _Features_
+  - Support the APIs `ShowEdgeNodeHostsInfo`, `UpdateEdgeNode`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK MetaStudio
+
+- _Features_
+  - Support the following APIs:
+    - `BatchExecuteAssetAction`
+    - `ListProducts`
+    - `CreateProduct`
+    - `ShowProduct`
+    - `UpdateProduct`
+    - `DeleteProduct`
+    - `SetProductAsset`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowRobot**
+    - changes of response param
+      - `+ enable_question_audit`
+      - `+ enable_hot_words`
+  - **UpdateRobot**
+    - changes of request param
+      - `+ enable_question_audit`
+  - **CreateTrainingBasicJob**
+    - changes of request param
+      - `- language: enum value [CN,EN]`
+  - **CreateTrainingMiddleJob**
+    - changes of request param
+      - `- language: enum value [CN,EN]`
+  - **CreateTrainingAdvanceJob**
+    - changes of request param
+      - `- language: enum value [CN,EN]`
+  - **CommitVoiceTrainingJob**
+    - changes of request param
+      - `- language: enum value [CN,EN]`
+  - **CreateRobot**
+    - changes of request param
+      - `+ enable_question_audit`
+  - **ListRobot**
+    - changes of response param
+      - `+ enable_question_audit`
+      - `+ enable_hot_words`
+      - `+ data.enable_hot_words`
+      - `+ data.enable_question_audit`
+  - **CreateDigitalHumanBusinessCard**
+    - changes of request param
+      - `+ callback_config`
+  - **UpdateDigitalHumanBusinessCard**
+    - changes of request param
+      - `+ callback_config`
+  - **CreateSmartChatRoom**
+    - changes of request param
+      - `+ video_config.is_enable_super_resolution`
+  - **ShowSmartChatRoom**
+    - changes of response param
+      - `+ video_config.is_enable_super_resolution`
+  - **UpdateSmartChatRoom**
+    - changes of request param
+      - `+ video_config.is_enable_super_resolution`
+    - changes of response param
+      - `+ video_config.is_enable_super_resolution`
+  - **ShowSmartLive**
+    - changes of response param
+      - `+ rtc_callback_config`
+      - `+ live_event_callback_config.auth_type: enum value [MSS_A_HEAD]`
+      - `- live_event_callback_config.auth_type: enum value [RTMP_STREAM_STATE_CHANGE]`
+  - **ShowAsset**
+    - changes of response param
+      - `+ project_id`
+      - `+ system_properties.key: enum value [LAYER_CONFIG_ENABLE]`
+      - `+ files.state: enum value [BLOCK]`
+      - `+ asset_extra_meta.human_model_2d_meta.device_names`
+      - `+ asset_extra_meta.voice_model_meta.is_realtime_voice`
+      - `+ asset_extra_meta.voice_model_meta.voice_capability`
+      - `- asset_extra_meta.voice_model_meta.external_voice_meta.mobvoi_voice_meta`
+      - `+ asset_extra_meta.voice_model_meta.external_voice_meta.provider: enum value [AUDIOX,SINOVOICE,DATABACK,AISPEECH]`
+  - **UpdateDigitalAsset**
+    - changes of request param
+      - `+ system_properties.key: enum value [LAYER_CONFIG_ENABLE]`
+      - `- shared_config.shared_state`
+      - `* shared_config: object<SharedConfig> -> object<AssetSharedConfig>`
+      - `+ asset_extra_meta.human_model_2d_meta.device_names`
+      - `+ asset_extra_meta.voice_model_meta.is_realtime_voice`
+      - `+ asset_extra_meta.voice_model_meta.voice_capability`
+      - `- asset_extra_meta.voice_model_meta.external_voice_meta.mobvoi_voice_meta`
+      - `+ asset_extra_meta.voice_model_meta.external_voice_meta.provider: enum value [AUDIOX,SINOVOICE,DATABACK,AISPEECH]`
+    - changes of response param
+      - `+ project_id`
+      - `+ system_properties.key: enum value [LAYER_CONFIG_ENABLE]`
+      - `+ files.state: enum value [BLOCK]`
+      - `+ asset_extra_meta.human_model_2d_meta.device_names`
+      - `+ asset_extra_meta.voice_model_meta.is_realtime_voice`
+      - `+ asset_extra_meta.voice_model_meta.voice_capability`
+      - `- asset_extra_meta.voice_model_meta.external_voice_meta.mobvoi_voice_meta`
+      - `+ asset_extra_meta.voice_model_meta.external_voice_meta.provider: enum value [AUDIOX,SINOVOICE,DATABACK,AISPEECH]`
+  - **CreateSmartLiveRoom**
+    - changes of request param
+      - `+ rtc_callback_config`
+      - `* interaction_rules: list<InteractionRuleInfo> -> list<LiveRoomInteractionRuleInfo>`
+      - `+ live_event_callback_config.auth_type: enum value [MSS_A_HEAD]`
+      - `- live_event_callback_config.auth_type: enum value [RTMP_STREAM_STATE_CHANGE]`
+      - `+ video_config.is_enable_super_resolution`
+  - **ShowSmartLiveRoom**
+    - changes of response param
+      - `+ rtc_callback_config`
+      - `* interaction_rules: list<InteractionRuleInfo> -> list<LiveRoomInteractionRuleInfo>`
+      - `+ live_event_callback_config.auth_type: enum value [MSS_A_HEAD]`
+      - `- live_event_callback_config.auth_type: enum value [RTMP_STREAM_STATE_CHANGE]`
+      - `+ video_config.is_enable_super_resolution`
+  - **UpdateSmartLiveRoom**
+    - changes of request param
+      - `+ rtc_callback_config`
+      - `* interaction_rules: list<InteractionRuleInfo> -> list<LiveRoomInteractionRuleInfo>`
+      - `+ live_event_callback_config.auth_type: enum value [MSS_A_HEAD]`
+      - `- live_event_callback_config.auth_type: enum value [RTMP_STREAM_STATE_CHANGE]`
+      - `+ video_config.is_enable_super_resolution`
+    - changes of response param
+      - `+ rtc_callback_config`
+      - `* interaction_rules: list<InteractionRuleInfo> -> list<LiveRoomInteractionRuleInfo>`
+      - `+ live_event_callback_config.auth_type: enum value [MSS_A_HEAD]`
+      - `- live_event_callback_config.auth_type: enum value [RTMP_STREAM_STATE_CHANGE]`
+      - `+ video_config.is_enable_super_resolution`
+  - **StartSmartLive**
+    - changes of request param
+      - `+ rtc_callback_config`
+      - `+ live_event_callback_config.auth_type: enum value [MSS_A_HEAD]`
+      - `- live_event_callback_config.auth_type: enum value [RTMP_STREAM_STATE_CHANGE]`
+      - `+ video_config.is_enable_super_resolution`
+    - changes of response param
+      - `+ live_event_callback_config.auth_type: enum value [MSS_A_HEAD]`
+      - `- live_event_callback_config.auth_type: enum value [RTMP_STREAM_STATE_CHANGE]`
+  - **ListSmartLive**
+    - changes of response param
+      - `+ rtc_callback_config`
+      - `+ smart_live_jobs.rtc_callback_config`
+      - `+ smart_live_jobs.live_event_callback_config.auth_type: enum value [MSS_A_HEAD]`
+      - `- smart_live_jobs.live_event_callback_config.auth_type: enum value [RTMP_STREAM_STATE_CHANGE]`
+  - **ListSmartLiveJobs**
+    - changes of response param
+      - `+ rtc_callback_config`
+      - `+ smart_live_jobs.rtc_callback_config`
+      - `+ smart_live_jobs.live_event_callback_config.auth_type: enum value [MSS_A_HEAD]`
+      - `- smart_live_jobs.live_event_callback_config.auth_type: enum value [RTMP_STREAM_STATE_CHANGE]`
+  - **CreateDigitalAsset**
+    - changes of request param
+      - `+ X-MSS-Authorization`
+      - `+ system_properties.key: enum value [LAYER_CONFIG_ENABLE]`
+      - `- shared_config.shared_state`
+      - `* shared_config: object<SharedConfig> -> object<AssetSharedConfig>`
+      - `+ asset_extra_meta.human_model_2d_meta.device_names`
+      - `+ asset_extra_meta.voice_model_meta.is_realtime_voice`
+      - `+ asset_extra_meta.voice_model_meta.voice_capability`
+      - `- asset_extra_meta.voice_model_meta.external_voice_meta.mobvoi_voice_meta`
+      - `+ asset_extra_meta.voice_model_meta.external_voice_meta.provider: enum value [AUDIOX,SINOVOICE,DATABACK,AISPEECH]`
+  - **ListAssets**
+    - changes of request param
+      - `+ asset_id`
+      - `+ is_realtime_voice`
+      - `+ human_model_2d_version`
+      - `+ include_device_name`
+      - `+ exclude_device_name`
+    - changes of response param
+      - `+ project_id`
+      - `+ assets.project_id`
+      - `+ assets.system_properties.key: enum value [LAYER_CONFIG_ENABLE]`
+      - `+ assets.files.state: enum value [BLOCK]`
+      - `+ assets.asset_extra_meta.human_model_2d_meta.device_names`
+      - `+ assets.asset_extra_meta.voice_model_meta.is_realtime_voice`
+      - `+ assets.asset_extra_meta.voice_model_meta.voice_capability`
+      - `- assets.asset_extra_meta.voice_model_meta.external_voice_meta.mobvoi_voice_meta`
+      - `+ assets.asset_extra_meta.voice_model_meta.external_voice_meta.provider: enum value [AUDIOX,SINOVOICE,DATABACK,AISPEECH]`
+  - **Create2DDigitalHumanVideo**
+    - changes of request param
+      - `- video_making_type`
+      - `- human_image`
+      - `- output_asset_config.is_preview_video`
+      - `+ video_config.is_enable_super_resolution`
+      - `- shoot_scripts.shoot_script.animation_config`
+      - `- shoot_scripts.shoot_script.emotion_config`
+  - **Show2DDigitalHumanVideo**
+    - changes of response param
+      - `+ video_config.is_enable_super_resolution`
+      - `- shoot_scripts.shoot_script.animation_config`
+      - `- shoot_scripts.shoot_script.emotion_config`
+  - **CreatePhotoDigitalHumanVideo**
+    - changes of request param
+      - `+ callback_config`
+      - `- output_asset_config.is_preview_video`
+      - `- shoot_scripts.shoot_script.animation_config`
+      - `- shoot_scripts.shoot_script.emotion_config`
+  - **ShowPhotoDigitalHumanVideo**
+    - changes of response param
+      - `- shoot_scripts.shoot_script.animation_config`
+      - `- shoot_scripts.shoot_script.emotion_config`
+  - **UpdateInteractionRuleGroup**
+    - changes of request param
+      - `+ interaction_rules.hit_condition.relation: enum value [RESERVED]`
+      - `+ interaction_rules.trigger.robot_id`
+      - `+ interaction_rules.trigger.reply_mode: enum value [INTELLIGENT_REPLY]`
+    - changes of response param
+      - `+ interaction_rules.hit_condition.relation: enum value [RESERVED]`
+      - `+ interaction_rules.trigger.robot_id`
+      - `+ interaction_rules.trigger.reply_mode: enum value [INTELLIGENT_REPLY]`
+  - **CreateVideoScripts**
+    - changes of request param
+      - `+ video_config.is_enable_super_resolution`
+      - `- shoot_scripts.shoot_script.animation_config`
+      - `- shoot_scripts.shoot_script.emotion_config`
+  - **ShowVideoScript**
+    - changes of response param
+      - `+ video_config.is_enable_super_resolution`
+      - `- shoot_scripts.shoot_script.animation_config`
+      - `- shoot_scripts.shoot_script.emotion_config`
+  - **UpdateVideoScript**
+    - changes of request param
+      - `+ video_config.is_enable_super_resolution`
+      - `- shoot_scripts.shoot_script.animation_config`
+      - `- shoot_scripts.shoot_script.emotion_config`
+  - **CreateInteractionRuleGroup**
+    - changes of request param
+      - `+ interaction_rules.hit_condition.relation: enum value [RESERVED]`
+      - `+ interaction_rules.trigger.robot_id`
+      - `+ interaction_rules.trigger.reply_mode: enum value [INTELLIGENT_REPLY]`
+  - **ListInteractionRuleGroups**
+    - changes of response param
+      - `+ interaction_rule_groups.interaction_rules.hit_condition.relation: enum value [RESERVED]`
+      - `+ interaction_rule_groups.interaction_rules.trigger.robot_id`
+      - `+ interaction_rule_groups.interaction_rules.trigger.reply_mode: enum value [INTELLIGENT_REPLY]`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowReplayDelayStatus**
+    - changes of response param
+      - `+ delay_time_value_range`
+
+### HuaweiCloud SDK VPC
+
+- _Features_
+  - Support the following APIs:
+    - `ListSecurityGroupsByTags`
+    - `BatchCreateSecurityGroupTags`
+    - `BatchDeleteSecurityGroupTags`
+    - `ShowSecurityGroupTags`
+    - `CreateSecurityGroupTag`
+    - `DeleteSecurityGroupTag`
+    - `ListSecurityGroupTags`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.1.99 2024-06-06
 
 ### HuaweiCloud SDK CAE

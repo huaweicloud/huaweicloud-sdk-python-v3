@@ -228,6 +228,7 @@ if __name__ == "__main__":
     * [6.2 HTTP 监听器](#62-http-监听器-top)
 * [7. 接口调用器](#7-接口调用器-top)
     * [7.1 自定义请求头](#71-自定义请求头-top)
+    * [7.2 请求重试](#72-请求重试-top)
 * [8. 文件上传与下载](#8-文件上传与下载-top)
 
 ### 1. 客户端连接参数 [:top:](#用户手册-top)
@@ -991,6 +992,43 @@ response = client.list_vpcs_async_invoker(request) \
     .add_header("key2", "value2") \
     .invoke().result()
 print(response)
+```
+
+#### 7.2 请求重试 [:top:](#用户手册-top)
+
+`v3.1.97`版本起支持请求重试，需要配置以下参数：
+ 
+- 重试条件：根据上一次请求的响应或异常来判断是否重试
+- 最大重试次数：当符合重试条件时的最大重试次数，指定范围[1, 10]
+- 重试策略：计算每次重试前的等待时间（毫秒）
+
+```python
+from huaweicloudsdkcore.exceptions.exceptions import ConnectionException, ServerResponseException
+from huaweicloudsdkvpc.v2 import ListVpcsRequest
+from huaweicloudsdkvpc.v2.vpc_client import VpcClient
+
+from huaweicloudsdkcore.retry.backoff_strategy import BackoffStrategies
+
+
+client = VpcClient.new_builder() \
+    .with_credentials(credentials) \
+    .with_region(VpcRegion.value_of("cn-north-4")) \
+    .build()
+    
+request = ListVpcsRequest()
+# 当发生网络连接异常时进行请求重试，最大重试次数为3，重试间隔策略为立即重试
+response = client.list_vpcs_invoker(request).with_retry(
+    retry_condition=lambda resp, exc: isinstance(exc, ConnectionException),
+    max_retries=3,
+    backoff_strategy=BackoffStrategies.NONE
+).invoke()
+
+# 当服务不可用时进行请求重试，最大重试次数为10，重试间隔策略为等抖动指数退避
+# response = client.list_vpcs_invoker(request).with_retry(
+#     retry_condition=lambda resp, exc: isinstance(exc, ServerResponseException) and exc.status_code == 503,
+#     max_retries=10,
+#     backoff_strategy=BackoffStrategies.EQUAL_JITTER
+# ).invoke()
 ```
 
 ### 8. 文件上传与下载 [:top:](#用户手册-top)

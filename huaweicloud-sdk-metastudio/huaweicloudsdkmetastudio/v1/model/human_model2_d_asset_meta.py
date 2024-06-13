@@ -21,7 +21,8 @@ class HumanModel2DAssetMeta:
         'is_real_background': 'bool',
         'support_live': 'bool',
         'model_version': 'str',
-        'model_resolution': 'str'
+        'model_resolution': 'str',
+        'device_names': 'list[str]'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class HumanModel2DAssetMeta:
         'is_real_background': 'is_real_background',
         'support_live': 'support_live',
         'model_version': 'model_version',
-        'model_resolution': 'model_resolution'
+        'model_resolution': 'model_resolution',
+        'device_names': 'device_names'
     }
 
-    def __init__(self, is_action_editable=None, is_real_background=None, support_live=None, model_version=None, model_resolution=None):
+    def __init__(self, is_action_editable=None, is_real_background=None, support_live=None, model_version=None, model_resolution=None, device_names=None):
         """HumanModel2DAssetMeta
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class HumanModel2DAssetMeta:
         :type model_version: str
         :param model_resolution: 分身数字人模型分辨率。默认是1080P。 * 1080P：1080P。支持1080P及720P的视频输出。 * 4K：4K。支持4K、1080P及720P的视频输出。
         :type model_resolution: str
+        :param device_names: 已执行编译任务
+        :type device_names: list[str]
         """
         
         
@@ -56,6 +60,7 @@ class HumanModel2DAssetMeta:
         self._support_live = None
         self._model_version = None
         self._model_resolution = None
+        self._device_names = None
         self.discriminator = None
 
         if is_action_editable is not None:
@@ -68,6 +73,8 @@ class HumanModel2DAssetMeta:
             self.model_version = model_version
         if model_resolution is not None:
             self.model_resolution = model_resolution
+        if device_names is not None:
+            self.device_names = device_names
 
     @property
     def is_action_editable(self):
@@ -178,6 +185,28 @@ class HumanModel2DAssetMeta:
         :type model_resolution: str
         """
         self._model_resolution = model_resolution
+
+    @property
+    def device_names(self):
+        """Gets the device_names of this HumanModel2DAssetMeta.
+
+        已执行编译任务
+
+        :return: The device_names of this HumanModel2DAssetMeta.
+        :rtype: list[str]
+        """
+        return self._device_names
+
+    @device_names.setter
+    def device_names(self, device_names):
+        """Sets the device_names of this HumanModel2DAssetMeta.
+
+        已执行编译任务
+
+        :param device_names: The device_names of this HumanModel2DAssetMeta.
+        :type device_names: list[str]
+        """
+        self._device_names = device_names
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -26,7 +26,7 @@ class UpdateDigitalAssetRequestBody:
         'tags': 'list[str]',
         'asset_extra_meta': 'AssetExtraMeta',
         'system_properties': 'list[SystemProperty]',
-        'shared_config': 'SharedConfig'
+        'shared_config': 'AssetSharedConfig'
     }
 
     attribute_map = {
@@ -66,7 +66,7 @@ class UpdateDigitalAssetRequestBody:
         :param system_properties: 设置系统属性。
         :type system_properties: list[:class:`huaweicloudsdkmetastudio.v1.SystemProperty`]
         :param shared_config: 
-        :type shared_config: :class:`huaweicloudsdkmetastudio.v1.SharedConfig`
+        :type shared_config: :class:`huaweicloudsdkmetastudio.v1.AssetSharedConfig`
         """
         
         
@@ -299,7 +299,7 @@ class UpdateDigitalAssetRequestBody:
         """Gets the shared_config of this UpdateDigitalAssetRequestBody.
 
         :return: The shared_config of this UpdateDigitalAssetRequestBody.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.SharedConfig`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.AssetSharedConfig`
         """
         return self._shared_config
 
@@ -308,7 +308,7 @@ class UpdateDigitalAssetRequestBody:
         """Sets the shared_config of this UpdateDigitalAssetRequestBody.
 
         :param shared_config: The shared_config of this UpdateDigitalAssetRequestBody.
-        :type shared_config: :class:`huaweicloudsdkmetastudio.v1.SharedConfig`
+        :type shared_config: :class:`huaweicloudsdkmetastudio.v1.AssetSharedConfig`
         """
         self._shared_config = shared_config
 

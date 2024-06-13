@@ -24,7 +24,8 @@ class TriggerProcess:
         'reply_texts': 'list[str]',
         'reply_audios': 'list[ReplyAudioInfo]',
         'reply_order': 'str',
-        'reply_role': 'str'
+        'reply_role': 'str',
+        'robot_id': 'str'
     }
 
     attribute_map = {
@@ -35,17 +36,18 @@ class TriggerProcess:
         'reply_texts': 'reply_texts',
         'reply_audios': 'reply_audios',
         'reply_order': 'reply_order',
-        'reply_role': 'reply_role'
+        'reply_role': 'reply_role',
+        'robot_id': 'robot_id'
     }
 
-    def __init__(self, time_window=None, reply_mode=None, layer_config=None, extra_layer_config=None, reply_texts=None, reply_audios=None, reply_order=None, reply_role=None):
+    def __init__(self, time_window=None, reply_mode=None, layer_config=None, extra_layer_config=None, reply_texts=None, reply_audios=None, reply_order=None, reply_role=None, robot_id=None):
         """TriggerProcess
 
         The model defined in huaweicloud sdk
 
         :param time_window: 处理抑制时长。单位秒。 -1 表示整场直播 0 表示无抑制，每次都触发
         :type time_window: int
-        :param reply_mode: 回复类型。 * SYSTEM_REPLY：系统自动回复设置的话术。 * CALLBACK：回调给其他服务，携带设置的话术。 * SHOW_LAYER: 显示叠加图层，不影响话术。
+        :param reply_mode: 回复类型。 * SYSTEM_REPLY：系统自动回复设置的话术。 * CALLBACK：回调给其他服务，携带设置的话术。 * SHOW_LAYER: 显示叠加图层，不影响话术。 * INTELLIGENT_REPLY: 智能交互回复话术。
         :type reply_mode: str
         :param layer_config: 
         :type layer_config: :class:`huaweicloudsdkmetastudio.v1.SmartLayerConfig`
@@ -59,6 +61,8 @@ class TriggerProcess:
         :type reply_order: str
         :param reply_role: 回复角色。默认为主播 * STREAMER：主播 * CO_STREAMER：助播
         :type reply_role: str
+        :param robot_id: 机器人ID。
+        :type robot_id: str
         """
         
         
@@ -71,6 +75,7 @@ class TriggerProcess:
         self._reply_audios = None
         self._reply_order = None
         self._reply_role = None
+        self._robot_id = None
         self.discriminator = None
 
         if time_window is not None:
@@ -89,6 +94,8 @@ class TriggerProcess:
             self.reply_order = reply_order
         if reply_role is not None:
             self.reply_role = reply_role
+        if robot_id is not None:
+            self.robot_id = robot_id
 
     @property
     def time_window(self):
@@ -116,7 +123,7 @@ class TriggerProcess:
     def reply_mode(self):
         """Gets the reply_mode of this TriggerProcess.
 
-        回复类型。 * SYSTEM_REPLY：系统自动回复设置的话术。 * CALLBACK：回调给其他服务，携带设置的话术。 * SHOW_LAYER: 显示叠加图层，不影响话术。
+        回复类型。 * SYSTEM_REPLY：系统自动回复设置的话术。 * CALLBACK：回调给其他服务，携带设置的话术。 * SHOW_LAYER: 显示叠加图层，不影响话术。 * INTELLIGENT_REPLY: 智能交互回复话术。
 
         :return: The reply_mode of this TriggerProcess.
         :rtype: str
@@ -127,7 +134,7 @@ class TriggerProcess:
     def reply_mode(self, reply_mode):
         """Sets the reply_mode of this TriggerProcess.
 
-        回复类型。 * SYSTEM_REPLY：系统自动回复设置的话术。 * CALLBACK：回调给其他服务，携带设置的话术。 * SHOW_LAYER: 显示叠加图层，不影响话术。
+        回复类型。 * SYSTEM_REPLY：系统自动回复设置的话术。 * CALLBACK：回调给其他服务，携带设置的话术。 * SHOW_LAYER: 显示叠加图层，不影响话术。 * INTELLIGENT_REPLY: 智能交互回复话术。
 
         :param reply_mode: The reply_mode of this TriggerProcess.
         :type reply_mode: str
@@ -257,6 +264,28 @@ class TriggerProcess:
         :type reply_role: str
         """
         self._reply_role = reply_role
+
+    @property
+    def robot_id(self):
+        """Gets the robot_id of this TriggerProcess.
+
+        机器人ID。
+
+        :return: The robot_id of this TriggerProcess.
+        :rtype: str
+        """
+        return self._robot_id
+
+    @robot_id.setter
+    def robot_id(self, robot_id):
+        """Sets the robot_id of this TriggerProcess.
+
+        机器人ID。
+
+        :param robot_id: The robot_id of this TriggerProcess.
+        :type robot_id: str
+        """
+        self._robot_id = robot_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

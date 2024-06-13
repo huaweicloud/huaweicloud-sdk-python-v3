@@ -23,6 +23,7 @@ class StartSmartLiveReq:
         'stream_keys': 'list[str]',
         'interaction_callback_url': 'str',
         'live_event_callback_config': 'LiveEventCallBackConfig',
+        'rtc_callback_config': 'RTCLiveEventCallBackConfig',
         'view_mode': 'str',
         'co_streamer_config': 'CoStreamerConfig'
     }
@@ -34,11 +35,12 @@ class StartSmartLiveReq:
         'stream_keys': 'stream_keys',
         'interaction_callback_url': 'interaction_callback_url',
         'live_event_callback_config': 'live_event_callback_config',
+        'rtc_callback_config': 'rtc_callback_config',
         'view_mode': 'view_mode',
         'co_streamer_config': 'co_streamer_config'
     }
 
-    def __init__(self, video_config=None, play_policy=None, output_urls=None, stream_keys=None, interaction_callback_url=None, live_event_callback_config=None, view_mode=None, co_streamer_config=None):
+    def __init__(self, video_config=None, play_policy=None, output_urls=None, stream_keys=None, interaction_callback_url=None, live_event_callback_config=None, rtc_callback_config=None, view_mode=None, co_streamer_config=None):
         """StartSmartLiveReq
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class StartSmartLiveReq:
         :type interaction_callback_url: str
         :param live_event_callback_config: 
         :type live_event_callback_config: :class:`huaweicloudsdkmetastudio.v1.LiveEventCallBackConfig`
+        :param rtc_callback_config: 
+        :type rtc_callback_config: :class:`huaweicloudsdkmetastudio.v1.RTCLiveEventCallBackConfig`
         :param view_mode: 横竖屏类型。默认值为：VERTICAL。 * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
         :type view_mode: str
         :param co_streamer_config: 
@@ -69,6 +73,7 @@ class StartSmartLiveReq:
         self._stream_keys = None
         self._interaction_callback_url = None
         self._live_event_callback_config = None
+        self._rtc_callback_config = None
         self._view_mode = None
         self._co_streamer_config = None
         self.discriminator = None
@@ -85,6 +90,8 @@ class StartSmartLiveReq:
             self.interaction_callback_url = interaction_callback_url
         if live_event_callback_config is not None:
             self.live_event_callback_config = live_event_callback_config
+        if rtc_callback_config is not None:
+            self.rtc_callback_config = rtc_callback_config
         if view_mode is not None:
             self.view_mode = view_mode
         if co_streamer_config is not None:
@@ -209,6 +216,24 @@ class StartSmartLiveReq:
         :type live_event_callback_config: :class:`huaweicloudsdkmetastudio.v1.LiveEventCallBackConfig`
         """
         self._live_event_callback_config = live_event_callback_config
+
+    @property
+    def rtc_callback_config(self):
+        """Gets the rtc_callback_config of this StartSmartLiveReq.
+
+        :return: The rtc_callback_config of this StartSmartLiveReq.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.RTCLiveEventCallBackConfig`
+        """
+        return self._rtc_callback_config
+
+    @rtc_callback_config.setter
+    def rtc_callback_config(self, rtc_callback_config):
+        """Sets the rtc_callback_config of this StartSmartLiveReq.
+
+        :param rtc_callback_config: The rtc_callback_config of this StartSmartLiveReq.
+        :type rtc_callback_config: :class:`huaweicloudsdkmetastudio.v1.RTCLiveEventCallBackConfig`
+        """
+        self._rtc_callback_config = rtc_callback_config
 
     @property
     def view_mode(self):

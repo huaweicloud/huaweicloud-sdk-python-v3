@@ -22,6 +22,7 @@ class CreateRobotReq:
         'room_id': 'str',
         'language': 'LanguageEnum',
         'tail_silence_time': 'int',
+        'enable_question_audit': 'bool',
         'huawei_ei_cbs': 'HuaweiEiCbs',
         'iflytek_aiui_config': 'IflytekAiuiConfig',
         'iflytek_spark': 'IflytekSpark',
@@ -35,6 +36,7 @@ class CreateRobotReq:
         'room_id': 'room_id',
         'language': 'language',
         'tail_silence_time': 'tail_silence_time',
+        'enable_question_audit': 'enable_question_audit',
         'huawei_ei_cbs': 'huawei_ei_cbs',
         'iflytek_aiui_config': 'iflytek_aiui_config',
         'iflytek_spark': 'iflytek_spark',
@@ -42,7 +44,7 @@ class CreateRobotReq:
         'mobvoi_config': 'mobvoi_config'
     }
 
-    def __init__(self, name=None, app_type=None, room_id=None, language=None, tail_silence_time=None, huawei_ei_cbs=None, iflytek_aiui_config=None, iflytek_spark=None, third_party_model_config=None, mobvoi_config=None):
+    def __init__(self, name=None, app_type=None, room_id=None, language=None, tail_silence_time=None, enable_question_audit=None, huawei_ei_cbs=None, iflytek_aiui_config=None, iflytek_spark=None, third_party_model_config=None, mobvoi_config=None):
         """CreateRobotReq
 
         The model defined in huaweicloud sdk
@@ -57,6 +59,8 @@ class CreateRobotReq:
         :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
         :param tail_silence_time: 语音识别后端点静音时长默认500ms
         :type tail_silence_time: int
+        :param enable_question_audit: 提问文本审核开关
+        :type enable_question_audit: bool
         :param huawei_ei_cbs: 
         :type huawei_ei_cbs: :class:`huaweicloudsdkmetastudio.v1.HuaweiEiCbs`
         :param iflytek_aiui_config: 
@@ -76,6 +80,7 @@ class CreateRobotReq:
         self._room_id = None
         self._language = None
         self._tail_silence_time = None
+        self._enable_question_audit = None
         self._huawei_ei_cbs = None
         self._iflytek_aiui_config = None
         self._iflytek_spark = None
@@ -91,6 +96,8 @@ class CreateRobotReq:
             self.language = language
         if tail_silence_time is not None:
             self.tail_silence_time = tail_silence_time
+        if enable_question_audit is not None:
+            self.enable_question_audit = enable_question_audit
         if huawei_ei_cbs is not None:
             self.huawei_ei_cbs = huawei_ei_cbs
         if iflytek_aiui_config is not None:
@@ -207,6 +214,28 @@ class CreateRobotReq:
         :type tail_silence_time: int
         """
         self._tail_silence_time = tail_silence_time
+
+    @property
+    def enable_question_audit(self):
+        """Gets the enable_question_audit of this CreateRobotReq.
+
+        提问文本审核开关
+
+        :return: The enable_question_audit of this CreateRobotReq.
+        :rtype: bool
+        """
+        return self._enable_question_audit
+
+    @enable_question_audit.setter
+    def enable_question_audit(self, enable_question_audit):
+        """Sets the enable_question_audit of this CreateRobotReq.
+
+        提问文本审核开关
+
+        :param enable_question_audit: The enable_question_audit of this CreateRobotReq.
+        :type enable_question_audit: bool
+        """
+        self._enable_question_audit = enable_question_audit
 
     @property
     def huawei_ei_cbs(self):

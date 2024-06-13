@@ -17,41 +17,34 @@ class ExternalVoiceAssetMeta:
     sensitive_list = []
 
     openapi_types = {
-        'provider': 'str',
-        'mobvoi_voice_meta': 'MobvoiVoiceAssetMeta'
+        'provider': 'str'
     }
 
     attribute_map = {
-        'provider': 'provider',
-        'mobvoi_voice_meta': 'mobvoi_voice_meta'
+        'provider': 'provider'
     }
 
-    def __init__(self, provider=None, mobvoi_voice_meta=None):
+    def __init__(self, provider=None):
         """ExternalVoiceAssetMeta
 
         The model defined in huaweicloud sdk
 
-        :param provider: 第三方TTS供应商类型。 * XIMALAYA：喜马拉雅TTS * HUAWEI_EI：EI TTS * MOBVOI：出门问问TTS
+        :param provider: 第三方TTS供应商类型。 * XIMALAYA：喜马拉雅TTS * HUAWEI_EI: 华为云EI TTS * MOBVOI: 出门问问 TTSS * AUDIOX: 逻辑智能 TTSS * SINOVOICE: 捷通华声 TTSS * DATABACK: 标贝 TTSS * AISPEECH: 思必驰 TTSS
         :type provider: str
-        :param mobvoi_voice_meta: 
-        :type mobvoi_voice_meta: :class:`huaweicloudsdkmetastudio.v1.MobvoiVoiceAssetMeta`
         """
         
         
 
         self._provider = None
-        self._mobvoi_voice_meta = None
         self.discriminator = None
 
         self.provider = provider
-        if mobvoi_voice_meta is not None:
-            self.mobvoi_voice_meta = mobvoi_voice_meta
 
     @property
     def provider(self):
         """Gets the provider of this ExternalVoiceAssetMeta.
 
-        第三方TTS供应商类型。 * XIMALAYA：喜马拉雅TTS * HUAWEI_EI：EI TTS * MOBVOI：出门问问TTS
+        第三方TTS供应商类型。 * XIMALAYA：喜马拉雅TTS * HUAWEI_EI: 华为云EI TTS * MOBVOI: 出门问问 TTSS * AUDIOX: 逻辑智能 TTSS * SINOVOICE: 捷通华声 TTSS * DATABACK: 标贝 TTSS * AISPEECH: 思必驰 TTSS
 
         :return: The provider of this ExternalVoiceAssetMeta.
         :rtype: str
@@ -62,30 +55,12 @@ class ExternalVoiceAssetMeta:
     def provider(self, provider):
         """Sets the provider of this ExternalVoiceAssetMeta.
 
-        第三方TTS供应商类型。 * XIMALAYA：喜马拉雅TTS * HUAWEI_EI：EI TTS * MOBVOI：出门问问TTS
+        第三方TTS供应商类型。 * XIMALAYA：喜马拉雅TTS * HUAWEI_EI: 华为云EI TTS * MOBVOI: 出门问问 TTSS * AUDIOX: 逻辑智能 TTSS * SINOVOICE: 捷通华声 TTSS * DATABACK: 标贝 TTSS * AISPEECH: 思必驰 TTSS
 
         :param provider: The provider of this ExternalVoiceAssetMeta.
         :type provider: str
         """
         self._provider = provider
-
-    @property
-    def mobvoi_voice_meta(self):
-        """Gets the mobvoi_voice_meta of this ExternalVoiceAssetMeta.
-
-        :return: The mobvoi_voice_meta of this ExternalVoiceAssetMeta.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.MobvoiVoiceAssetMeta`
-        """
-        return self._mobvoi_voice_meta
-
-    @mobvoi_voice_meta.setter
-    def mobvoi_voice_meta(self, mobvoi_voice_meta):
-        """Sets the mobvoi_voice_meta of this ExternalVoiceAssetMeta.
-
-        :param mobvoi_voice_meta: The mobvoi_voice_meta of this ExternalVoiceAssetMeta.
-        :type mobvoi_voice_meta: :class:`huaweicloudsdkmetastudio.v1.MobvoiVoiceAssetMeta`
-        """
-        self._mobvoi_voice_meta = mobvoi_voice_meta
 
     def to_dict(self):
         """Returns the model properties as a dict"""

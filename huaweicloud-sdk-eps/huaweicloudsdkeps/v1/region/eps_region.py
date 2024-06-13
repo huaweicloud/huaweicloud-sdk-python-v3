@@ -11,10 +11,14 @@ class EpsRegion:
                         "https://eps.myhuaweicloud.cn")
     EU_WEST_101 = Region("eu-west-101",
                         "https://eps.eu-west-101.myhuaweicloud.eu")
+    RU_MOSCOW_1 = Region("ru-moscow-1",
+                        "https://eps.ru-moscow-1.myhuaweicloud.com",
+                        "https://eps.ru-moscow-1.myhuaweicloud.cn")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
         "eu-west-101": EU_WEST_101,
+        "ru-moscow-1": RU_MOSCOW_1,
     }
 
     @classmethod

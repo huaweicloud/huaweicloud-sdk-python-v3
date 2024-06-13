@@ -164,6 +164,74 @@ class VpcAsyncClient(Client):
 
         return http_info
 
+    def batch_create_security_group_tags_async(self, request):
+        """批量创建安全组资源标签
+
+        为指定的安全组资源实例批量添加标签。
+        此接口为幂等接口：创建时如果请求体中存在重复key则报错。创建时，不允许设置重复key数据，如果数据库已存在该key，就覆盖value的值。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchCreateSecurityGroupTags
+        :type request: :class:`huaweicloudsdkvpc.v2.BatchCreateSecurityGroupTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.BatchCreateSecurityGroupTagsResponse`
+        """
+        http_info = self._batch_create_security_group_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_create_security_group_tags_async_invoker(self, request):
+        http_info = self._batch_create_security_group_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_create_security_group_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/security-groups/{security_group_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateSecurityGroupTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'security_group_id' in local_var_params:
+            path_params['security_group_id'] = local_var_params['security_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_create_subnet_tags_async(self, request):
         """批量创建子网资源标签
 
@@ -201,6 +269,74 @@ class VpcAsyncClient(Client):
         path_params = {}
         if 'subnet_id' in local_var_params:
             path_params['subnet_id'] = local_var_params['subnet_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_security_group_tags_async(self, request):
+        """批量删除安全组资源标签
+
+        为指定的安全组资源实例批量删除标签
+        此接口为幂等接口：删除时，如果删除的标签不存在，默认处理成功；删除时不对标签字符集范围做校验。删除时tags结构体不能缺失，key不能为空，或者空字符串。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteSecurityGroupTags
+        :type request: :class:`huaweicloudsdkvpc.v2.BatchDeleteSecurityGroupTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.BatchDeleteSecurityGroupTagsResponse`
+        """
+        http_info = self._batch_delete_security_group_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_security_group_tags_async_invoker(self, request):
+        http_info = self._batch_delete_security_group_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_security_group_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/security-groups/{security_group_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteSecurityGroupTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'security_group_id' in local_var_params:
+            path_params['security_group_id'] = local_var_params['security_group_id']
 
         query_params = []
 
@@ -596,6 +732,74 @@ class VpcAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_security_group_tag_async(self, request):
+        """创建安全组资源标签
+
+        给指定安全组资源实例增加标签信息。
+        此接口为幂等接口：创建时，如果创建的标签已经存在（key相同），则覆盖。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateSecurityGroupTag
+        :type request: :class:`huaweicloudsdkvpc.v2.CreateSecurityGroupTagRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.CreateSecurityGroupTagResponse`
+        """
+        http_info = self._create_security_group_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_security_group_tag_async_invoker(self, request):
+        http_info = self._create_security_group_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_security_group_tag_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/security-groups/{security_group_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSecurityGroupTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'security_group_id' in local_var_params:
+            path_params['security_group_id'] = local_var_params['security_group_id']
 
         query_params = []
 
@@ -1121,6 +1325,74 @@ class VpcAsyncClient(Client):
         path_params = {}
         if 'security_group_rule_id' in local_var_params:
             path_params['security_group_rule_id'] = local_var_params['security_group_rule_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_security_group_tag_async(self, request):
+        """删除安全组资源标签
+
+        删除指定安全组资源实例的标签信息。
+        该接口为幂等接口：删除的key不存在报404，Key不能为空或者空字符串
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteSecurityGroupTag
+        :type request: :class:`huaweicloudsdkvpc.v2.DeleteSecurityGroupTagRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.DeleteSecurityGroupTagResponse`
+        """
+        http_info = self._delete_security_group_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_security_group_tag_async_invoker(self, request):
+        http_info = self._delete_security_group_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_security_group_tag_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2.0/{project_id}/security-groups/{security_group_id}/tags/{key}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSecurityGroupTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'key' in local_var_params:
+            path_params['key'] = local_var_params['key']
+        if 'security_group_id' in local_var_params:
+            path_params['security_group_id'] = local_var_params['security_group_id']
 
         query_params = []
 
@@ -1744,6 +2016,69 @@ class VpcAsyncClient(Client):
 
         return http_info
 
+    def list_security_group_tags_async(self, request):
+        """查询安全组项目标签
+
+        查询租户在指定区域和实例类型的所有标签集合
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSecurityGroupTags
+        :type request: :class:`huaweicloudsdkvpc.v2.ListSecurityGroupTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.ListSecurityGroupTagsResponse`
+        """
+        http_info = self._list_security_group_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_security_group_tags_async_invoker(self, request):
+        http_info = self._list_security_group_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_security_group_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/{project_id}/security-groups/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecurityGroupTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_security_groups_async(self, request):
         """查询安全组列表
 
@@ -1801,6 +2136,71 @@ class VpcAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_security_groups_by_tags_async(self, request):
+        """查询安全组资源实例
+
+        使用标签过滤实例
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSecurityGroupsByTags
+        :type request: :class:`huaweicloudsdkvpc.v2.ListSecurityGroupsByTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.ListSecurityGroupsByTagsResponse`
+        """
+        http_info = self._list_security_groups_by_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_security_groups_by_tags_async_invoker(self, request):
+        http_info = self._list_security_groups_by_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_security_groups_by_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/security-groups/resource_instances/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecurityGroupsByTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -2515,6 +2915,71 @@ class VpcAsyncClient(Client):
         path_params = {}
         if 'security_group_rule_id' in local_var_params:
             path_params['security_group_rule_id'] = local_var_params['security_group_rule_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_security_group_tags_async(self, request):
+        """查询安全组资源标签
+
+        查询指定安全组实例的标签信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowSecurityGroupTags
+        :type request: :class:`huaweicloudsdkvpc.v2.ShowSecurityGroupTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.ShowSecurityGroupTagsResponse`
+        """
+        http_info = self._show_security_group_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_security_group_tags_async_invoker(self, request):
+        http_info = self._show_security_group_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_security_group_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/{project_id}/security-groups/{security_group_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSecurityGroupTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'security_group_id' in local_var_params:
+            path_params['security_group_id'] = local_var_params['security_group_id']
 
         query_params = []
 

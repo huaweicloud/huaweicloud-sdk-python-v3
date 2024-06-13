@@ -26,6 +26,7 @@ class ScalingPoliciesV2:
         'alarm_id': 'str',
         'scheduled_policy': 'ScheduledPolicy',
         'scaling_policy_action': 'ScalingPolicyActionV2',
+        'interval_alarm_actions': 'list[IntervalAlarmActionsV2]',
         'cool_down_time': 'int',
         'create_time': 'datetime',
         'meta_data': 'ScalingPolicyV2MetaData',
@@ -42,13 +43,14 @@ class ScalingPoliciesV2:
         'alarm_id': 'alarm_id',
         'scheduled_policy': 'scheduled_policy',
         'scaling_policy_action': 'scaling_policy_action',
+        'interval_alarm_actions': 'interval_alarm_actions',
         'cool_down_time': 'cool_down_time',
         'create_time': 'create_time',
         'meta_data': 'meta_data',
         'description': 'description'
     }
 
-    def __init__(self, scaling_policy_name=None, scaling_policy_id=None, scaling_resource_id=None, scaling_resource_type=None, policy_status=None, scaling_policy_type=None, alarm_id=None, scheduled_policy=None, scaling_policy_action=None, cool_down_time=None, create_time=None, meta_data=None, description=None):
+    def __init__(self, scaling_policy_name=None, scaling_policy_id=None, scaling_resource_id=None, scaling_resource_type=None, policy_status=None, scaling_policy_type=None, alarm_id=None, scheduled_policy=None, scaling_policy_action=None, interval_alarm_actions=None, cool_down_time=None, create_time=None, meta_data=None, description=None):
         """ScalingPoliciesV2
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class ScalingPoliciesV2:
         :type scheduled_policy: :class:`huaweicloudsdkas.v1.ScheduledPolicy`
         :param scaling_policy_action: 
         :type scaling_policy_action: :class:`huaweicloudsdkas.v1.ScalingPolicyActionV2`
+        :param interval_alarm_actions: 
+        :type interval_alarm_actions: list[:class:`huaweicloudsdkas.v1.IntervalAlarmActionsV2`]
         :param cool_down_time: 冷却时间，取值范围0-86400，默认为300，单位是秒。
         :type cool_down_time: int
         :param create_time: 创建伸缩策略时间，遵循UTC时间
@@ -92,6 +96,7 @@ class ScalingPoliciesV2:
         self._alarm_id = None
         self._scheduled_policy = None
         self._scaling_policy_action = None
+        self._interval_alarm_actions = None
         self._cool_down_time = None
         self._create_time = None
         self._meta_data = None
@@ -116,6 +121,8 @@ class ScalingPoliciesV2:
             self.scheduled_policy = scheduled_policy
         if scaling_policy_action is not None:
             self.scaling_policy_action = scaling_policy_action
+        if interval_alarm_actions is not None:
+            self.interval_alarm_actions = interval_alarm_actions
         if cool_down_time is not None:
             self.cool_down_time = cool_down_time
         if create_time is not None:
@@ -314,6 +321,24 @@ class ScalingPoliciesV2:
         :type scaling_policy_action: :class:`huaweicloudsdkas.v1.ScalingPolicyActionV2`
         """
         self._scaling_policy_action = scaling_policy_action
+
+    @property
+    def interval_alarm_actions(self):
+        """Gets the interval_alarm_actions of this ScalingPoliciesV2.
+
+        :return: The interval_alarm_actions of this ScalingPoliciesV2.
+        :rtype: list[:class:`huaweicloudsdkas.v1.IntervalAlarmActionsV2`]
+        """
+        return self._interval_alarm_actions
+
+    @interval_alarm_actions.setter
+    def interval_alarm_actions(self, interval_alarm_actions):
+        """Sets the interval_alarm_actions of this ScalingPoliciesV2.
+
+        :param interval_alarm_actions: The interval_alarm_actions of this ScalingPoliciesV2.
+        :type interval_alarm_actions: list[:class:`huaweicloudsdkas.v1.IntervalAlarmActionsV2`]
+        """
+        self._interval_alarm_actions = interval_alarm_actions
 
     @property
     def cool_down_time(self):

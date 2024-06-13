@@ -19,39 +19,48 @@ class ListScriptResultsResponse(SdkResponse):
 
     openapi_types = {
         'status': 'str',
-        'result': 'list[Result]'
+        'results': 'list[Result]',
+        'message': 'str'
     }
 
     attribute_map = {
         'status': 'status',
-        'result': 'result'
+        'results': 'results',
+        'message': 'message'
     }
 
-    def __init__(self, status=None, result=None):
+    def __init__(self, status=None, results=None, message=None):
         """ListScriptResultsResponse
 
         The model defined in huaweicloud sdk
 
-        :param status: 
+        :param status: 执行状态。 - LAUNCHING ：提交中 - RUNNING ： 运行中 - FINISHED：执行成功 - FAILED：执行失败
         :type status: str
-        :param result: 
-        :type result: list[:class:`huaweicloudsdkdgc.v1.Result`]
+        :param results: 执行结果
+        :type results: list[:class:`huaweicloudsdkdgc.v1.Result`]
+        :param message: 执行失败消息
+        :type message: str
         """
         
         super(ListScriptResultsResponse, self).__init__()
 
         self._status = None
-        self._result = None
+        self._results = None
+        self._message = None
         self.discriminator = None
 
         if status is not None:
             self.status = status
-        if result is not None:
-            self.result = result
+        if results is not None:
+            self.results = results
+        if message is not None:
+            self.message = message
 
     @property
     def status(self):
         """Gets the status of this ListScriptResultsResponse.
+
+        执行状态。 - LAUNCHING ：提交中 - RUNNING ： 运行中 - FINISHED：执行成功 - FAILED：执行失败
 
         :return: The status of this ListScriptResultsResponse.
         :rtype: str
@@ -62,28 +71,56 @@ class ListScriptResultsResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this ListScriptResultsResponse.
 
+        执行状态。 - LAUNCHING ：提交中 - RUNNING ： 运行中 - FINISHED：执行成功 - FAILED：执行失败
+
         :param status: The status of this ListScriptResultsResponse.
         :type status: str
         """
         self._status = status
 
     @property
-    def result(self):
-        """Gets the result of this ListScriptResultsResponse.
+    def results(self):
+        """Gets the results of this ListScriptResultsResponse.
 
-        :return: The result of this ListScriptResultsResponse.
+        执行结果
+
+        :return: The results of this ListScriptResultsResponse.
         :rtype: list[:class:`huaweicloudsdkdgc.v1.Result`]
         """
-        return self._result
+        return self._results
 
-    @result.setter
-    def result(self, result):
-        """Sets the result of this ListScriptResultsResponse.
+    @results.setter
+    def results(self, results):
+        """Sets the results of this ListScriptResultsResponse.
 
-        :param result: The result of this ListScriptResultsResponse.
-        :type result: list[:class:`huaweicloudsdkdgc.v1.Result`]
+        执行结果
+
+        :param results: The results of this ListScriptResultsResponse.
+        :type results: list[:class:`huaweicloudsdkdgc.v1.Result`]
         """
-        self._result = result
+        self._results = results
+
+    @property
+    def message(self):
+        """Gets the message of this ListScriptResultsResponse.
+
+        执行失败消息
+
+        :return: The message of this ListScriptResultsResponse.
+        :rtype: str
+        """
+        return self._message
+
+    @message.setter
+    def message(self, message):
+        """Sets the message of this ListScriptResultsResponse.
+
+        执行失败消息
+
+        :param message: The message of this ListScriptResultsResponse.
+        :type message: str
+        """
+        self._message = message
 
     def to_dict(self):
         """Returns the model properties as a dict"""

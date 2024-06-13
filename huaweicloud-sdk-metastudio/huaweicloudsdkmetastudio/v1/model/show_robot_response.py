@@ -37,6 +37,8 @@ class ShowRobotResponse(SdkResponse):
         'role_id': 'str',
         'sis_region': 'int',
         'sis_project_id': 'str',
+        'enable_hot_words': 'bool',
+        'enable_question_audit': 'bool',
         'x_request_id': 'str'
     }
 
@@ -60,10 +62,12 @@ class ShowRobotResponse(SdkResponse):
         'role_id': 'role_id',
         'sis_region': 'sis_region',
         'sis_project_id': 'sis_project_id',
+        'enable_hot_words': 'enable_hot_words',
+        'enable_question_audit': 'enable_question_audit',
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, robot_id=None, name=None, room_id=None, app_id=None, app_type=None, app_key=None, language=None, create_time=None, update_time=None, region=None, cbs_project_id=None, llm_url=None, is_stream=None, chat_rounds=None, is_ifly_production=None, tail_silence_time=None, role_id=None, sis_region=None, sis_project_id=None, x_request_id=None):
+    def __init__(self, robot_id=None, name=None, room_id=None, app_id=None, app_type=None, app_key=None, language=None, create_time=None, update_time=None, region=None, cbs_project_id=None, llm_url=None, is_stream=None, chat_rounds=None, is_ifly_production=None, tail_silence_time=None, role_id=None, sis_region=None, sis_project_id=None, enable_hot_words=None, enable_question_audit=None, x_request_id=None):
         """ShowRobotResponse
 
         The model defined in huaweicloud sdk
@@ -106,6 +110,10 @@ class ShowRobotResponse(SdkResponse):
         :type sis_region: int
         :param sis_project_id: SIS所在区域的projectId
         :type sis_project_id: str
+        :param enable_hot_words: 是否开启热词
+        :type enable_hot_words: bool
+        :param enable_question_audit: 是否开启提问文本审核开关
+        :type enable_question_audit: bool
         :param x_request_id: 
         :type x_request_id: str
         """
@@ -131,6 +139,8 @@ class ShowRobotResponse(SdkResponse):
         self._role_id = None
         self._sis_region = None
         self._sis_project_id = None
+        self._enable_hot_words = None
+        self._enable_question_audit = None
         self._x_request_id = None
         self.discriminator = None
 
@@ -172,6 +182,10 @@ class ShowRobotResponse(SdkResponse):
             self.sis_region = sis_region
         if sis_project_id is not None:
             self.sis_project_id = sis_project_id
+        if enable_hot_words is not None:
+            self.enable_hot_words = enable_hot_words
+        if enable_question_audit is not None:
+            self.enable_question_audit = enable_question_audit
         if x_request_id is not None:
             self.x_request_id = x_request_id
 
@@ -588,6 +602,50 @@ class ShowRobotResponse(SdkResponse):
         :type sis_project_id: str
         """
         self._sis_project_id = sis_project_id
+
+    @property
+    def enable_hot_words(self):
+        """Gets the enable_hot_words of this ShowRobotResponse.
+
+        是否开启热词
+
+        :return: The enable_hot_words of this ShowRobotResponse.
+        :rtype: bool
+        """
+        return self._enable_hot_words
+
+    @enable_hot_words.setter
+    def enable_hot_words(self, enable_hot_words):
+        """Sets the enable_hot_words of this ShowRobotResponse.
+
+        是否开启热词
+
+        :param enable_hot_words: The enable_hot_words of this ShowRobotResponse.
+        :type enable_hot_words: bool
+        """
+        self._enable_hot_words = enable_hot_words
+
+    @property
+    def enable_question_audit(self):
+        """Gets the enable_question_audit of this ShowRobotResponse.
+
+        是否开启提问文本审核开关
+
+        :return: The enable_question_audit of this ShowRobotResponse.
+        :rtype: bool
+        """
+        return self._enable_question_audit
+
+    @enable_question_audit.setter
+    def enable_question_audit(self, enable_question_audit):
+        """Sets the enable_question_audit of this ShowRobotResponse.
+
+        是否开启提问文本审核开关
+
+        :param enable_question_audit: The enable_question_audit of this ShowRobotResponse.
+        :type enable_question_audit: bool
+        """
+        self._enable_question_audit = enable_question_audit
 
     @property
     def x_request_id(self):

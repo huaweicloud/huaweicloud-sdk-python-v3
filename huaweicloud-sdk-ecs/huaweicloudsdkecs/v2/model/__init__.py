@@ -283,7 +283,6 @@ from huaweicloudsdkecs.v2.model.server_attachable_quantity import ServerAttachab
 from huaweicloudsdkecs.v2.model.server_block_device import ServerBlockDevice
 from huaweicloudsdkecs.v2.model.server_detail import ServerDetail
 from huaweicloudsdkecs.v2.model.server_extend_volume_attachment import ServerExtendVolumeAttachment
-from huaweicloudsdkecs.v2.model.server_fault import ServerFault
 from huaweicloudsdkecs.v2.model.server_flavor import ServerFlavor
 from huaweicloudsdkecs.v2.model.server_group_member import ServerGroupMember
 from huaweicloudsdkecs.v2.model.server_id import ServerId

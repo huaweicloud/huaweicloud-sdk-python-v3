@@ -30,6 +30,7 @@ class SmartLiveJob:
         'rtc_room_info': 'RTCRoomInfoList',
         'live_event_report_url': 'str',
         'live_event_callback_config': 'LiveEventCallBackConfig',
+        'rtc_callback_config': 'RTCLiveEventCallBackConfig',
         'stream_duration': 'float',
         'block_reason': 'str',
         'cover_url': 'str',
@@ -51,6 +52,7 @@ class SmartLiveJob:
         'rtc_room_info': 'rtc_room_info',
         'live_event_report_url': 'live_event_report_url',
         'live_event_callback_config': 'live_event_callback_config',
+        'rtc_callback_config': 'rtc_callback_config',
         'stream_duration': 'stream_duration',
         'block_reason': 'block_reason',
         'cover_url': 'cover_url',
@@ -58,7 +60,7 @@ class SmartLiveJob:
         'live_job_log': 'live_job_log'
     }
 
-    def __init__(self, job_id=None, room_id=None, room_name=None, state=None, duration=None, start_time=None, end_time=None, error_info=None, create_time=None, lastupdate_time=None, rtc_room_info=None, live_event_report_url=None, live_event_callback_config=None, stream_duration=None, block_reason=None, cover_url=None, co_streamer_config=None, live_job_log=None):
+    def __init__(self, job_id=None, room_id=None, room_name=None, state=None, duration=None, start_time=None, end_time=None, error_info=None, create_time=None, lastupdate_time=None, rtc_room_info=None, live_event_report_url=None, live_event_callback_config=None, rtc_callback_config=None, stream_duration=None, block_reason=None, cover_url=None, co_streamer_config=None, live_job_log=None):
         """SmartLiveJob
 
         The model defined in huaweicloud sdk
@@ -89,6 +91,8 @@ class SmartLiveJob:
         :type live_event_report_url: str
         :param live_event_callback_config: 
         :type live_event_callback_config: :class:`huaweicloudsdkmetastudio.v1.LiveEventCallBackConfig`
+        :param rtc_callback_config: 
+        :type rtc_callback_config: :class:`huaweicloudsdkmetastudio.v1.RTCLiveEventCallBackConfig`
         :param stream_duration: 数字人直播推流时长，单位秒
         :type stream_duration: float
         :param block_reason: 封禁信息
@@ -116,6 +120,7 @@ class SmartLiveJob:
         self._rtc_room_info = None
         self._live_event_report_url = None
         self._live_event_callback_config = None
+        self._rtc_callback_config = None
         self._stream_duration = None
         self._block_reason = None
         self._cover_url = None
@@ -149,6 +154,8 @@ class SmartLiveJob:
             self.live_event_report_url = live_event_report_url
         if live_event_callback_config is not None:
             self.live_event_callback_config = live_event_callback_config
+        if rtc_callback_config is not None:
+            self.rtc_callback_config = rtc_callback_config
         if stream_duration is not None:
             self.stream_duration = stream_duration
         if block_reason is not None:
@@ -433,6 +440,24 @@ class SmartLiveJob:
         :type live_event_callback_config: :class:`huaweicloudsdkmetastudio.v1.LiveEventCallBackConfig`
         """
         self._live_event_callback_config = live_event_callback_config
+
+    @property
+    def rtc_callback_config(self):
+        """Gets the rtc_callback_config of this SmartLiveJob.
+
+        :return: The rtc_callback_config of this SmartLiveJob.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.RTCLiveEventCallBackConfig`
+        """
+        return self._rtc_callback_config
+
+    @rtc_callback_config.setter
+    def rtc_callback_config(self, rtc_callback_config):
+        """Sets the rtc_callback_config of this SmartLiveJob.
+
+        :param rtc_callback_config: The rtc_callback_config of this SmartLiveJob.
+        :type rtc_callback_config: :class:`huaweicloudsdkmetastudio.v1.RTCLiveEventCallBackConfig`
+        """
+        self._rtc_callback_config = rtc_callback_config
 
     @property
     def stream_duration(self):

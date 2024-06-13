@@ -18,21 +18,25 @@ class CreateOrganizationConformancePackRequest:
 
     openapi_types = {
         'organization_id': 'str',
+        'x_language': 'str',
         'body': 'OrgConformancePackRequestBody'
     }
 
     attribute_map = {
         'organization_id': 'organization_id',
+        'x_language': 'X-Language',
         'body': 'body'
     }
 
-    def __init__(self, organization_id=None, body=None):
+    def __init__(self, organization_id=None, x_language=None, body=None):
         """CreateOrganizationConformancePackRequest
 
         The model defined in huaweicloud sdk
 
         :param organization_id: 组织ID。
         :type organization_id: str
+        :param x_language: 组织合规包信息语言，默认为\&quot;en-us\&quot;英文
+        :type x_language: str
         :param body: Body of the CreateOrganizationConformancePackRequest
         :type body: :class:`huaweicloudsdkconfig.v1.OrgConformancePackRequestBody`
         """
@@ -40,10 +44,13 @@ class CreateOrganizationConformancePackRequest:
         
 
         self._organization_id = None
+        self._x_language = None
         self._body = None
         self.discriminator = None
 
         self.organization_id = organization_id
+        if x_language is not None:
+            self.x_language = x_language
         if body is not None:
             self.body = body
 
@@ -68,6 +75,28 @@ class CreateOrganizationConformancePackRequest:
         :type organization_id: str
         """
         self._organization_id = organization_id
+
+    @property
+    def x_language(self):
+        """Gets the x_language of this CreateOrganizationConformancePackRequest.
+
+        组织合规包信息语言，默认为\"en-us\"英文
+
+        :return: The x_language of this CreateOrganizationConformancePackRequest.
+        :rtype: str
+        """
+        return self._x_language
+
+    @x_language.setter
+    def x_language(self, x_language):
+        """Sets the x_language of this CreateOrganizationConformancePackRequest.
+
+        组织合规包信息语言，默认为\"en-us\"英文
+
+        :param x_language: The x_language of this CreateOrganizationConformancePackRequest.
+        :type x_language: str
+        """
+        self._x_language = x_language
 
     @property
     def body(self):

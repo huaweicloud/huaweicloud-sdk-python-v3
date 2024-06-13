@@ -31,13 +31,18 @@ class ListAssetsRequest:
         'asset_state': 'str',
         'style_id': 'str',
         'render_engine': 'str',
+        'asset_id': 'list[str]',
         'sex': 'str',
         'language': 'str',
         'system_property': 'str',
         'action_editable': 'bool',
         'is_movable': 'bool',
         'voice_provider': 'str',
-        'role': 'str'
+        'role': 'str',
+        'is_realtime_voice': 'bool',
+        'human_model_2d_version': 'str',
+        'include_device_name': 'str',
+        'exclude_device_name': 'str'
     }
 
     attribute_map = {
@@ -55,16 +60,21 @@ class ListAssetsRequest:
         'asset_state': 'asset_state',
         'style_id': 'style_id',
         'render_engine': 'render_engine',
+        'asset_id': 'asset_id',
         'sex': 'sex',
         'language': 'language',
         'system_property': 'system_property',
         'action_editable': 'action_editable',
         'is_movable': 'is_movable',
         'voice_provider': 'voice_provider',
-        'role': 'role'
+        'role': 'role',
+        'is_realtime_voice': 'is_realtime_voice',
+        'human_model_2d_version': 'human_model_2d_version',
+        'include_device_name': 'include_device_name',
+        'exclude_device_name': 'exclude_device_name'
     }
 
-    def __init__(self, x_app_user_id=None, limit=None, offset=None, name=None, tag=None, start_time=None, end_time=None, asset_type=None, sort_key=None, sort_dir=None, asset_source=None, asset_state=None, style_id=None, render_engine=None, sex=None, language=None, system_property=None, action_editable=None, is_movable=None, voice_provider=None, role=None):
+    def __init__(self, x_app_user_id=None, limit=None, offset=None, name=None, tag=None, start_time=None, end_time=None, asset_type=None, sort_key=None, sort_dir=None, asset_source=None, asset_state=None, style_id=None, render_engine=None, asset_id=None, sex=None, language=None, system_property=None, action_editable=None, is_movable=None, voice_provider=None, role=None, is_realtime_voice=None, human_model_2d_version=None, include_device_name=None, exclude_device_name=None):
         """ListAssetsRequest
 
         The model defined in huaweicloud sdk
@@ -97,6 +107,8 @@ class ListAssetsRequest:
         :type style_id: str
         :param render_engine: 可用引擎。 * UE：UE引擎 * MetaEngine：MetaEngine引擎 &gt; 该字段当前只对MetaEngine白名单用户生效
         :type render_engine: str
+        :param asset_id: 资产id
+        :type asset_id: list[str]
         :param sex: 性别。多选使用英文逗号分隔。
         :type sex: str
         :param language: 语言。多选使用英文逗号分隔。
@@ -111,6 +123,14 @@ class ListAssetsRequest:
         :type voice_provider: str
         :param role: 角色。 SHARER：共享方，SHAREE：被共享方
         :type role: str
+        :param is_realtime_voice: 音色是否支持实时合成。仅在音色查询时有效。 &gt; * 支持实时合成的音色，可以用于直播和智能交互场景。否则只能用于视频制作。
+        :type is_realtime_voice: bool
+        :param human_model_2d_version: 模型版本
+        :type human_model_2d_version: str
+        :param include_device_name: 资产已执行的任务名称
+        :type include_device_name: str
+        :param exclude_device_name: 资产已执行的任务名称
+        :type exclude_device_name: str
         """
         
         
@@ -129,6 +149,7 @@ class ListAssetsRequest:
         self._asset_state = None
         self._style_id = None
         self._render_engine = None
+        self._asset_id = None
         self._sex = None
         self._language = None
         self._system_property = None
@@ -136,6 +157,10 @@ class ListAssetsRequest:
         self._is_movable = None
         self._voice_provider = None
         self._role = None
+        self._is_realtime_voice = None
+        self._human_model_2d_version = None
+        self._include_device_name = None
+        self._exclude_device_name = None
         self.discriminator = None
 
         if x_app_user_id is not None:
@@ -166,6 +191,8 @@ class ListAssetsRequest:
             self.style_id = style_id
         if render_engine is not None:
             self.render_engine = render_engine
+        if asset_id is not None:
+            self.asset_id = asset_id
         if sex is not None:
             self.sex = sex
         if language is not None:
@@ -180,6 +207,14 @@ class ListAssetsRequest:
             self.voice_provider = voice_provider
         if role is not None:
             self.role = role
+        if is_realtime_voice is not None:
+            self.is_realtime_voice = is_realtime_voice
+        if human_model_2d_version is not None:
+            self.human_model_2d_version = human_model_2d_version
+        if include_device_name is not None:
+            self.include_device_name = include_device_name
+        if exclude_device_name is not None:
+            self.exclude_device_name = exclude_device_name
 
     @property
     def x_app_user_id(self):
@@ -490,6 +525,28 @@ class ListAssetsRequest:
         self._render_engine = render_engine
 
     @property
+    def asset_id(self):
+        """Gets the asset_id of this ListAssetsRequest.
+
+        资产id
+
+        :return: The asset_id of this ListAssetsRequest.
+        :rtype: list[str]
+        """
+        return self._asset_id
+
+    @asset_id.setter
+    def asset_id(self, asset_id):
+        """Sets the asset_id of this ListAssetsRequest.
+
+        资产id
+
+        :param asset_id: The asset_id of this ListAssetsRequest.
+        :type asset_id: list[str]
+        """
+        self._asset_id = asset_id
+
+    @property
     def sex(self):
         """Gets the sex of this ListAssetsRequest.
 
@@ -642,6 +699,94 @@ class ListAssetsRequest:
         :type role: str
         """
         self._role = role
+
+    @property
+    def is_realtime_voice(self):
+        """Gets the is_realtime_voice of this ListAssetsRequest.
+
+        音色是否支持实时合成。仅在音色查询时有效。 > * 支持实时合成的音色，可以用于直播和智能交互场景。否则只能用于视频制作。
+
+        :return: The is_realtime_voice of this ListAssetsRequest.
+        :rtype: bool
+        """
+        return self._is_realtime_voice
+
+    @is_realtime_voice.setter
+    def is_realtime_voice(self, is_realtime_voice):
+        """Sets the is_realtime_voice of this ListAssetsRequest.
+
+        音色是否支持实时合成。仅在音色查询时有效。 > * 支持实时合成的音色，可以用于直播和智能交互场景。否则只能用于视频制作。
+
+        :param is_realtime_voice: The is_realtime_voice of this ListAssetsRequest.
+        :type is_realtime_voice: bool
+        """
+        self._is_realtime_voice = is_realtime_voice
+
+    @property
+    def human_model_2d_version(self):
+        """Gets the human_model_2d_version of this ListAssetsRequest.
+
+        模型版本
+
+        :return: The human_model_2d_version of this ListAssetsRequest.
+        :rtype: str
+        """
+        return self._human_model_2d_version
+
+    @human_model_2d_version.setter
+    def human_model_2d_version(self, human_model_2d_version):
+        """Sets the human_model_2d_version of this ListAssetsRequest.
+
+        模型版本
+
+        :param human_model_2d_version: The human_model_2d_version of this ListAssetsRequest.
+        :type human_model_2d_version: str
+        """
+        self._human_model_2d_version = human_model_2d_version
+
+    @property
+    def include_device_name(self):
+        """Gets the include_device_name of this ListAssetsRequest.
+
+        资产已执行的任务名称
+
+        :return: The include_device_name of this ListAssetsRequest.
+        :rtype: str
+        """
+        return self._include_device_name
+
+    @include_device_name.setter
+    def include_device_name(self, include_device_name):
+        """Sets the include_device_name of this ListAssetsRequest.
+
+        资产已执行的任务名称
+
+        :param include_device_name: The include_device_name of this ListAssetsRequest.
+        :type include_device_name: str
+        """
+        self._include_device_name = include_device_name
+
+    @property
+    def exclude_device_name(self):
+        """Gets the exclude_device_name of this ListAssetsRequest.
+
+        资产已执行的任务名称
+
+        :return: The exclude_device_name of this ListAssetsRequest.
+        :rtype: str
+        """
+        return self._exclude_device_name
+
+    @exclude_device_name.setter
+    def exclude_device_name(self, exclude_device_name):
+        """Sets the exclude_device_name of this ListAssetsRequest.
+
+        资产已执行的任务名称
+
+        :param exclude_device_name: The exclude_device_name of this ListAssetsRequest.
+        :type exclude_device_name: str
+        """
+        self._exclude_device_name = exclude_device_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

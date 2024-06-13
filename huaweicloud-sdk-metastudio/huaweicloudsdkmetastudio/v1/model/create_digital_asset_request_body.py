@@ -25,7 +25,7 @@ class CreateDigitalAssetRequestBody:
         'tags': 'list[str]',
         'asset_extra_meta': 'AssetExtraMeta',
         'system_properties': 'list[SystemProperty]',
-        'shared_config': 'SharedConfig',
+        'shared_config': 'AssetSharedConfig',
         'is_need_generate_cover': 'bool'
     }
 
@@ -64,7 +64,7 @@ class CreateDigitalAssetRequestBody:
         :param system_properties: 设置系统属性。
         :type system_properties: list[:class:`huaweicloudsdkmetastudio.v1.SystemProperty`]
         :param shared_config: 
-        :type shared_config: :class:`huaweicloudsdkmetastudio.v1.SharedConfig`
+        :type shared_config: :class:`huaweicloudsdkmetastudio.v1.AssetSharedConfig`
         :param is_need_generate_cover: 是否需要生成封面。
         :type is_need_generate_cover: bool
         """
@@ -275,7 +275,7 @@ class CreateDigitalAssetRequestBody:
         """Gets the shared_config of this CreateDigitalAssetRequestBody.
 
         :return: The shared_config of this CreateDigitalAssetRequestBody.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.SharedConfig`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.AssetSharedConfig`
         """
         return self._shared_config
 
@@ -284,7 +284,7 @@ class CreateDigitalAssetRequestBody:
         """Sets the shared_config of this CreateDigitalAssetRequestBody.
 
         :param shared_config: The shared_config of this CreateDigitalAssetRequestBody.
-        :type shared_config: :class:`huaweicloudsdkmetastudio.v1.SharedConfig`
+        :type shared_config: :class:`huaweicloudsdkmetastudio.v1.AssetSharedConfig`
         """
         self._shared_config = shared_config
 

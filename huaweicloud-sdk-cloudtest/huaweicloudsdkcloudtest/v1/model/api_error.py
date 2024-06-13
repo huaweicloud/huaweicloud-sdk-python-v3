@@ -31,7 +31,7 @@ class ApiError:
 
         The model defined in huaweicloud sdk
 
-        :param code: 只有对外的接口才会返回此内容
+        :param code: 业务失败的错误码
         :type code: str
         :param reason: 业务失败的提示内容
         :type reason: str
@@ -52,7 +52,7 @@ class ApiError:
     def code(self):
         """Gets the code of this ApiError.
 
-        只有对外的接口才会返回此内容
+        业务失败的错误码
 
         :return: The code of this ApiError.
         :rtype: str
@@ -63,7 +63,7 @@ class ApiError:
     def code(self, code):
         """Sets the code of this ApiError.
 
-        只有对外的接口才会返回此内容
+        业务失败的错误码
 
         :param code: The code of this ApiError.
         :type code: str

@@ -18,9 +18,7 @@ class Create2DDigitalHumanVideoReq:
 
     openapi_types = {
         'script_id': 'str',
-        'video_making_type': 'str',
         'model_asset_id': 'str',
-        'human_image': 'str',
         'voice_config': 'VoiceConfig',
         'video_config': 'VideoConfig',
         'shoot_scripts': 'list[ShootScriptItem]',
@@ -32,9 +30,7 @@ class Create2DDigitalHumanVideoReq:
 
     attribute_map = {
         'script_id': 'script_id',
-        'video_making_type': 'video_making_type',
         'model_asset_id': 'model_asset_id',
-        'human_image': 'human_image',
         'voice_config': 'voice_config',
         'video_config': 'video_config',
         'shoot_scripts': 'shoot_scripts',
@@ -44,19 +40,15 @@ class Create2DDigitalHumanVideoReq:
         'callback_config': 'callback_config'
     }
 
-    def __init__(self, script_id=None, video_making_type=None, model_asset_id=None, human_image=None, voice_config=None, video_config=None, shoot_scripts=None, output_asset_config=None, background_music_config=None, review_config=None, callback_config=None):
+    def __init__(self, script_id=None, model_asset_id=None, voice_config=None, video_config=None, shoot_scripts=None, output_asset_config=None, background_music_config=None, review_config=None, callback_config=None):
         """Create2DDigitalHumanVideoReq
 
         The model defined in huaweicloud sdk
 
         :param script_id: 剧本ID。 &gt; * 如果填写了script_id，model_asset_id、voice_config、scene_asset_id、video_config、shoot_scripts可以不填，以脚本中的配置为准。 &gt; * 如果填写了script_id，并且同时也填写了model_asset_id、voice_config、scene_asset_id、video_config、shoot_scripts则以本接口中的配置为准。
         :type script_id: str
-        :param video_making_type: 视频生成类型。该参数取值是MODEL时，model_asset_id必填；取值是PICTURE时，human_image必填。 * MODEL：通过分身数字人模型生成视频 * PICTURE： 通过单张照片生成视频 &gt; * 该参数已废弃，照片数字人视频制作使用“创建照片分身数字人视频制作任务”接口。
-        :type video_making_type: str
         :param model_asset_id: 分身数字人模型资产ID。
         :type model_asset_id: str
-        :param human_image: 人物照片，需要Base64编码。照片分辨率不超过1080P。 &gt; * 该参数已废弃，照片数字人视频制作使用“创建照片分身数字人视频制作任务”接口。
-        :type human_image: str
         :param voice_config: 
         :type voice_config: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
         :param video_config: 
@@ -76,9 +68,7 @@ class Create2DDigitalHumanVideoReq:
         
 
         self._script_id = None
-        self._video_making_type = None
         self._model_asset_id = None
-        self._human_image = None
         self._voice_config = None
         self._video_config = None
         self._shoot_scripts = None
@@ -90,12 +80,8 @@ class Create2DDigitalHumanVideoReq:
 
         if script_id is not None:
             self.script_id = script_id
-        if video_making_type is not None:
-            self.video_making_type = video_making_type
         if model_asset_id is not None:
             self.model_asset_id = model_asset_id
-        if human_image is not None:
-            self.human_image = human_image
         if voice_config is not None:
             self.voice_config = voice_config
         if video_config is not None:
@@ -134,28 +120,6 @@ class Create2DDigitalHumanVideoReq:
         self._script_id = script_id
 
     @property
-    def video_making_type(self):
-        """Gets the video_making_type of this Create2DDigitalHumanVideoReq.
-
-        视频生成类型。该参数取值是MODEL时，model_asset_id必填；取值是PICTURE时，human_image必填。 * MODEL：通过分身数字人模型生成视频 * PICTURE： 通过单张照片生成视频 > * 该参数已废弃，照片数字人视频制作使用“创建照片分身数字人视频制作任务”接口。
-
-        :return: The video_making_type of this Create2DDigitalHumanVideoReq.
-        :rtype: str
-        """
-        return self._video_making_type
-
-    @video_making_type.setter
-    def video_making_type(self, video_making_type):
-        """Sets the video_making_type of this Create2DDigitalHumanVideoReq.
-
-        视频生成类型。该参数取值是MODEL时，model_asset_id必填；取值是PICTURE时，human_image必填。 * MODEL：通过分身数字人模型生成视频 * PICTURE： 通过单张照片生成视频 > * 该参数已废弃，照片数字人视频制作使用“创建照片分身数字人视频制作任务”接口。
-
-        :param video_making_type: The video_making_type of this Create2DDigitalHumanVideoReq.
-        :type video_making_type: str
-        """
-        self._video_making_type = video_making_type
-
-    @property
     def model_asset_id(self):
         """Gets the model_asset_id of this Create2DDigitalHumanVideoReq.
 
@@ -176,28 +140,6 @@ class Create2DDigitalHumanVideoReq:
         :type model_asset_id: str
         """
         self._model_asset_id = model_asset_id
-
-    @property
-    def human_image(self):
-        """Gets the human_image of this Create2DDigitalHumanVideoReq.
-
-        人物照片，需要Base64编码。照片分辨率不超过1080P。 > * 该参数已废弃，照片数字人视频制作使用“创建照片分身数字人视频制作任务”接口。
-
-        :return: The human_image of this Create2DDigitalHumanVideoReq.
-        :rtype: str
-        """
-        return self._human_image
-
-    @human_image.setter
-    def human_image(self, human_image):
-        """Sets the human_image of this Create2DDigitalHumanVideoReq.
-
-        人物照片，需要Base64编码。照片分辨率不超过1080P。 > * 该参数已废弃，照片数字人视频制作使用“创建照片分身数字人视频制作任务”接口。
-
-        :param human_image: The human_image of this Create2DDigitalHumanVideoReq.
-        :type human_image: str
-        """
-        self._human_image = human_image
 
     @property
     def voice_config(self):

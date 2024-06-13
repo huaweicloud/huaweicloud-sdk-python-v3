@@ -1,3 +1,507 @@
+# 3.1.100 2024-06-13
+
+### HuaweiCloud SDK Core
+
+- _新增特性_
+  - 支持请求重试
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK AS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateScalingV2Policy**
+    - 请求参数变更
+      - `+ interval_alarm_actions`
+  - **ListAllScalingV2Policies**
+    - 响应参数变更
+      - `+ scaling_policies.interval_alarm_actions`
+  - **UpdateScalingV2Policy**
+    - 请求参数变更
+      - `+ interval_alarm_actions`
+  - **ShowScalingV2Policy**
+    - 响应参数变更
+      - `+ scaling_policy.interval_alarm_actions`
+  - **ListScalingV2Policies**
+    - 响应参数变更
+      - `+ scaling_policies.interval_alarm_actions`
+
+### HuaweiCloud SDK CAE
+
+- _新增特性_
+  - 支持接口`CreateComponentWithConfiguration`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CDM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateLink**
+    - 请求参数变更
+      - `* links.link-config-values.configs.inputs.value: string -> object`
+  - **ShowLink**
+    - 响应参数变更
+      - `* links.link-config-values.configs.inputs.value: string -> object`
+  - **UpdateLink**
+    - 请求参数变更
+      - `* links.link-config-values.configs.inputs.value: string -> object`
+  - **ShowJobs**
+    - 响应参数变更
+      - `* jobs.to-config-values.configs.inputs.value: string -> object`
+  - **UpdateJob**
+    - 请求参数变更
+      - `* jobs.to-config-values.configs.inputs.value: string -> object`
+  - **CreateAndStartRandomClusterJob**
+    - 请求参数变更
+      - `* jobs.to-config-values.configs.inputs.value: string -> object`
+  - **CreateJob**
+    - 请求参数变更
+      - `* jobs.to-config-values.configs.inputs.value: string -> object`
+
+### HuaweiCloud SDK Cloudtest
+
+- _新增特性_
+  - 支持以下接口：
+    - `ShowSystemConfigs`
+    - `ShowMindmapByPage`
+    - `ShowMindmapCreatorName`
+    - `CheckPermission`
+    - `ListUserPopupInfo`
+    - `ListUserPackageUsage`
+    - `ListBasicAw`
+    - `ListPublicLibAndAws`
+    - `ListUserDnsMapping`
+    - `ListVariables`
+    - `ListTaskTestCases`
+    - `ListResourcePools`
+    - `ListAttachments`
+    - `ShowBackgroundInfo`
+    - `ListUsageInfos`
+    - `ShowProgress`
+    - `ListProjectTestCaseFields`
+    - `ShowFreeDeclaration`
+    - `ListTestTypes`
+    - `ShowTestCase`
+    - `CreateResourceUri`
+    - `ShowDomainInfo`
+    - `ShowDisclaimerRecord`
+    - `ListProjectFieldConfigs`
+    - `ShowFeatureChildren`
+    - `ShowAllFeatureChildren`
+    - `ListAllIterators`
+    - `ListIssueTree`
+    - `ShowIteratorByDefect`
+    - `ListAllBranches`
+    - `ShowUserAccessInfo`
+    - `ListReports`
+    - `ShowRequirementsOverview`
+    - `BatchDeleteTestReport`
+    - `CreateRelationsByOneCase`
+    - `DeleteRelationsByOneCase`
+    - `BatchAddRelationsByOneCase`
+    - `ListTestReportsByCondition`
+    - `SaveTaskSetting`
+    - `ListAllConfigItemByType`
+    - `ListAlertGroupsByCondition`
+    - `ShowIfUserNameRepeat`
+    - `ListAlertTemplates`
+    - `ShowIfTaskNameRepeat`
+    - `ShowAllConfigValueByTypeAndKey`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK Config
+
+- _新增特性_
+  - 支持以下接口：
+    - `ShowRemediationConfiguration`
+    - `CreateOrUpdateRemediationConfiguration`
+    - `DeleteRemediationConfiguration`
+    - `BatchCreateRemediationExceptions`
+    - `BatchDeleteRemediationExceptions`
+    - `ListRemediationExceptions`
+    - `RunRemediationExecution`
+    - `ListRemediationExecutionStatuses`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateConformancePack**
+    - 请求参数变更
+      - `+ X-Language`
+  - **CreateOrganizationConformancePack**
+    - 请求参数变更
+      - `+ X-Language`
+
+### HuaweiCloud SDK DCS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateMigrationTask**
+    - 请求参数变更
+      - `+ target_instance.task_status`
+  - **ShowMigrationTask**
+    - 响应参数变更
+      - `+ target_instance.task_status`
+  - **StopMigrationTask**
+    - 响应参数变更
+      - `+ target_instance.task_status`
+
+### HuaweiCloud SDK DGC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListScriptResults**
+    - 响应参数变更
+      - `+ message`
+      - `+ results`
+      - `- result`
+
+### HuaweiCloud SDK DLI
+
+- _新增特性_
+  - 支持接口`CreateStreamJob`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK ECS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowServer**
+    - 响应参数变更
+      - `- server.fault.code`
+      - `- server.fault.created`
+      - `- server.fault.message`
+      - `- server.fault.details`
+      - `* server.fault: object<ServerFault> -> object`
+  - **ListServersDetails**
+    - 响应参数变更
+      - `- servers.fault.code`
+      - `- servers.fault.created`
+      - `- servers.fault.message`
+      - `- servers.fault.details`
+      - `* servers.fault: object<ServerFault> -> object`
+
+### HuaweiCloud SDK EIP
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **DisassociatePublicips**
+    - 响应参数变更
+      - `- publicip.associate_instance_type: enum value [null]`
+  - **AssociatePublicips**
+    - 响应参数变更
+      - `- publicip.associate_instance_type: enum value [null]`
+  - **UpdatePublicip**
+    - 请求参数变更
+      - `+ publicip.associate_instance_type: enum value [VPN]`
+      - `- publicip.associate_instance_type: enum value []`
+    - 响应参数变更
+      - `- publicip.associate_instance_type: enum value [null]`
+
+### HuaweiCloud SDK GaussDB
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowDedicatedResourceInfo**
+    - 响应参数变更
+      - `+ resource_name`
+      - `- name`
+
+### HuaweiCloud SDK IoTEdge
+
+- _新增特性_
+  - 支持接口`ShowEdgeNodeHostsInfo`、`UpdateEdgeNode`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK MetaStudio
+
+- _新增特性_
+  - 支持以下接口：
+    - `BatchExecuteAssetAction`
+    - `ListProducts`
+    - `CreateProduct`
+    - `ShowProduct`
+    - `UpdateProduct`
+    - `DeleteProduct`
+    - `SetProductAsset`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowRobot**
+    - 响应参数变更
+      - `+ enable_question_audit`
+      - `+ enable_hot_words`
+  - **UpdateRobot**
+    - 请求参数变更
+      - `+ enable_question_audit`
+  - **CreateTrainingBasicJob**
+    - 请求参数变更
+      - `- language: enum value [CN,EN]`
+  - **CreateTrainingMiddleJob**
+    - 请求参数变更
+      - `- language: enum value [CN,EN]`
+  - **CreateTrainingAdvanceJob**
+    - 请求参数变更
+      - `- language: enum value [CN,EN]`
+  - **CommitVoiceTrainingJob**
+    - 请求参数变更
+      - `- language: enum value [CN,EN]`
+  - **CreateRobot**
+    - 请求参数变更
+      - `+ enable_question_audit`
+  - **ListRobot**
+    - 响应参数变更
+      - `+ enable_question_audit`
+      - `+ enable_hot_words`
+      - `+ data.enable_hot_words`
+      - `+ data.enable_question_audit`
+  - **CreateDigitalHumanBusinessCard**
+    - 请求参数变更
+      - `+ callback_config`
+  - **UpdateDigitalHumanBusinessCard**
+    - 请求参数变更
+      - `+ callback_config`
+  - **CreateSmartChatRoom**
+    - 请求参数变更
+      - `+ video_config.is_enable_super_resolution`
+  - **ShowSmartChatRoom**
+    - 响应参数变更
+      - `+ video_config.is_enable_super_resolution`
+  - **UpdateSmartChatRoom**
+    - 请求参数变更
+      - `+ video_config.is_enable_super_resolution`
+    - 响应参数变更
+      - `+ video_config.is_enable_super_resolution`
+  - **ShowSmartLive**
+    - 响应参数变更
+      - `+ rtc_callback_config`
+      - `+ live_event_callback_config.auth_type: enum value [MSS_A_HEAD]`
+      - `- live_event_callback_config.auth_type: enum value [RTMP_STREAM_STATE_CHANGE]`
+  - **ShowAsset**
+    - 响应参数变更
+      - `+ project_id`
+      - `+ system_properties.key: enum value [LAYER_CONFIG_ENABLE]`
+      - `+ files.state: enum value [BLOCK]`
+      - `+ asset_extra_meta.human_model_2d_meta.device_names`
+      - `+ asset_extra_meta.voice_model_meta.is_realtime_voice`
+      - `+ asset_extra_meta.voice_model_meta.voice_capability`
+      - `- asset_extra_meta.voice_model_meta.external_voice_meta.mobvoi_voice_meta`
+      - `+ asset_extra_meta.voice_model_meta.external_voice_meta.provider: enum value [AUDIOX,SINOVOICE,DATABACK,AISPEECH]`
+  - **UpdateDigitalAsset**
+    - 请求参数变更
+      - `+ system_properties.key: enum value [LAYER_CONFIG_ENABLE]`
+      - `- shared_config.shared_state`
+      - `* shared_config: object<SharedConfig> -> object<AssetSharedConfig>`
+      - `+ asset_extra_meta.human_model_2d_meta.device_names`
+      - `+ asset_extra_meta.voice_model_meta.is_realtime_voice`
+      - `+ asset_extra_meta.voice_model_meta.voice_capability`
+      - `- asset_extra_meta.voice_model_meta.external_voice_meta.mobvoi_voice_meta`
+      - `+ asset_extra_meta.voice_model_meta.external_voice_meta.provider: enum value [AUDIOX,SINOVOICE,DATABACK,AISPEECH]`
+    - 响应参数变更
+      - `+ project_id`
+      - `+ system_properties.key: enum value [LAYER_CONFIG_ENABLE]`
+      - `+ files.state: enum value [BLOCK]`
+      - `+ asset_extra_meta.human_model_2d_meta.device_names`
+      - `+ asset_extra_meta.voice_model_meta.is_realtime_voice`
+      - `+ asset_extra_meta.voice_model_meta.voice_capability`
+      - `- asset_extra_meta.voice_model_meta.external_voice_meta.mobvoi_voice_meta`
+      - `+ asset_extra_meta.voice_model_meta.external_voice_meta.provider: enum value [AUDIOX,SINOVOICE,DATABACK,AISPEECH]`
+  - **CreateSmartLiveRoom**
+    - 请求参数变更
+      - `+ rtc_callback_config`
+      - `* interaction_rules: list<InteractionRuleInfo> -> list<LiveRoomInteractionRuleInfo>`
+      - `+ live_event_callback_config.auth_type: enum value [MSS_A_HEAD]`
+      - `- live_event_callback_config.auth_type: enum value [RTMP_STREAM_STATE_CHANGE]`
+      - `+ video_config.is_enable_super_resolution`
+  - **ShowSmartLiveRoom**
+    - 响应参数变更
+      - `+ rtc_callback_config`
+      - `* interaction_rules: list<InteractionRuleInfo> -> list<LiveRoomInteractionRuleInfo>`
+      - `+ live_event_callback_config.auth_type: enum value [MSS_A_HEAD]`
+      - `- live_event_callback_config.auth_type: enum value [RTMP_STREAM_STATE_CHANGE]`
+      - `+ video_config.is_enable_super_resolution`
+  - **UpdateSmartLiveRoom**
+    - 请求参数变更
+      - `+ rtc_callback_config`
+      - `* interaction_rules: list<InteractionRuleInfo> -> list<LiveRoomInteractionRuleInfo>`
+      - `+ live_event_callback_config.auth_type: enum value [MSS_A_HEAD]`
+      - `- live_event_callback_config.auth_type: enum value [RTMP_STREAM_STATE_CHANGE]`
+      - `+ video_config.is_enable_super_resolution`
+    - 响应参数变更
+      - `+ rtc_callback_config`
+      - `* interaction_rules: list<InteractionRuleInfo> -> list<LiveRoomInteractionRuleInfo>`
+      - `+ live_event_callback_config.auth_type: enum value [MSS_A_HEAD]`
+      - `- live_event_callback_config.auth_type: enum value [RTMP_STREAM_STATE_CHANGE]`
+      - `+ video_config.is_enable_super_resolution`
+  - **StartSmartLive**
+    - 请求参数变更
+      - `+ rtc_callback_config`
+      - `+ live_event_callback_config.auth_type: enum value [MSS_A_HEAD]`
+      - `- live_event_callback_config.auth_type: enum value [RTMP_STREAM_STATE_CHANGE]`
+      - `+ video_config.is_enable_super_resolution`
+    - 响应参数变更
+      - `+ live_event_callback_config.auth_type: enum value [MSS_A_HEAD]`
+      - `- live_event_callback_config.auth_type: enum value [RTMP_STREAM_STATE_CHANGE]`
+  - **ListSmartLive**
+    - 响应参数变更
+      - `+ rtc_callback_config`
+      - `+ smart_live_jobs.rtc_callback_config`
+      - `+ smart_live_jobs.live_event_callback_config.auth_type: enum value [MSS_A_HEAD]`
+      - `- smart_live_jobs.live_event_callback_config.auth_type: enum value [RTMP_STREAM_STATE_CHANGE]`
+  - **ListSmartLiveJobs**
+    - 响应参数变更
+      - `+ rtc_callback_config`
+      - `+ smart_live_jobs.rtc_callback_config`
+      - `+ smart_live_jobs.live_event_callback_config.auth_type: enum value [MSS_A_HEAD]`
+      - `- smart_live_jobs.live_event_callback_config.auth_type: enum value [RTMP_STREAM_STATE_CHANGE]`
+  - **CreateDigitalAsset**
+    - 请求参数变更
+      - `+ X-MSS-Authorization`
+      - `+ system_properties.key: enum value [LAYER_CONFIG_ENABLE]`
+      - `- shared_config.shared_state`
+      - `* shared_config: object<SharedConfig> -> object<AssetSharedConfig>`
+      - `+ asset_extra_meta.human_model_2d_meta.device_names`
+      - `+ asset_extra_meta.voice_model_meta.is_realtime_voice`
+      - `+ asset_extra_meta.voice_model_meta.voice_capability`
+      - `- asset_extra_meta.voice_model_meta.external_voice_meta.mobvoi_voice_meta`
+      - `+ asset_extra_meta.voice_model_meta.external_voice_meta.provider: enum value [AUDIOX,SINOVOICE,DATABACK,AISPEECH]`
+  - **ListAssets**
+    - 请求参数变更
+      - `+ asset_id`
+      - `+ is_realtime_voice`
+      - `+ human_model_2d_version`
+      - `+ include_device_name`
+      - `+ exclude_device_name`
+    - 响应参数变更
+      - `+ project_id`
+      - `+ assets.project_id`
+      - `+ assets.system_properties.key: enum value [LAYER_CONFIG_ENABLE]`
+      - `+ assets.files.state: enum value [BLOCK]`
+      - `+ assets.asset_extra_meta.human_model_2d_meta.device_names`
+      - `+ assets.asset_extra_meta.voice_model_meta.is_realtime_voice`
+      - `+ assets.asset_extra_meta.voice_model_meta.voice_capability`
+      - `- assets.asset_extra_meta.voice_model_meta.external_voice_meta.mobvoi_voice_meta`
+      - `+ assets.asset_extra_meta.voice_model_meta.external_voice_meta.provider: enum value [AUDIOX,SINOVOICE,DATABACK,AISPEECH]`
+  - **Create2DDigitalHumanVideo**
+    - 请求参数变更
+      - `- video_making_type`
+      - `- human_image`
+      - `- output_asset_config.is_preview_video`
+      - `+ video_config.is_enable_super_resolution`
+      - `- shoot_scripts.shoot_script.animation_config`
+      - `- shoot_scripts.shoot_script.emotion_config`
+  - **Show2DDigitalHumanVideo**
+    - 响应参数变更
+      - `+ video_config.is_enable_super_resolution`
+      - `- shoot_scripts.shoot_script.animation_config`
+      - `- shoot_scripts.shoot_script.emotion_config`
+  - **CreatePhotoDigitalHumanVideo**
+    - 请求参数变更
+      - `+ callback_config`
+      - `- output_asset_config.is_preview_video`
+      - `- shoot_scripts.shoot_script.animation_config`
+      - `- shoot_scripts.shoot_script.emotion_config`
+  - **ShowPhotoDigitalHumanVideo**
+    - 响应参数变更
+      - `- shoot_scripts.shoot_script.animation_config`
+      - `- shoot_scripts.shoot_script.emotion_config`
+  - **UpdateInteractionRuleGroup**
+    - 请求参数变更
+      - `+ interaction_rules.hit_condition.relation: enum value [RESERVED]`
+      - `+ interaction_rules.trigger.robot_id`
+      - `+ interaction_rules.trigger.reply_mode: enum value [INTELLIGENT_REPLY]`
+    - 响应参数变更
+      - `+ interaction_rules.hit_condition.relation: enum value [RESERVED]`
+      - `+ interaction_rules.trigger.robot_id`
+      - `+ interaction_rules.trigger.reply_mode: enum value [INTELLIGENT_REPLY]`
+  - **CreateVideoScripts**
+    - 请求参数变更
+      - `+ video_config.is_enable_super_resolution`
+      - `- shoot_scripts.shoot_script.animation_config`
+      - `- shoot_scripts.shoot_script.emotion_config`
+  - **ShowVideoScript**
+    - 响应参数变更
+      - `+ video_config.is_enable_super_resolution`
+      - `- shoot_scripts.shoot_script.animation_config`
+      - `- shoot_scripts.shoot_script.emotion_config`
+  - **UpdateVideoScript**
+    - 请求参数变更
+      - `+ video_config.is_enable_super_resolution`
+      - `- shoot_scripts.shoot_script.animation_config`
+      - `- shoot_scripts.shoot_script.emotion_config`
+  - **CreateInteractionRuleGroup**
+    - 请求参数变更
+      - `+ interaction_rules.hit_condition.relation: enum value [RESERVED]`
+      - `+ interaction_rules.trigger.robot_id`
+      - `+ interaction_rules.trigger.reply_mode: enum value [INTELLIGENT_REPLY]`
+  - **ListInteractionRuleGroups**
+    - 响应参数变更
+      - `+ interaction_rule_groups.interaction_rules.hit_condition.relation: enum value [RESERVED]`
+      - `+ interaction_rule_groups.interaction_rules.trigger.robot_id`
+      - `+ interaction_rule_groups.interaction_rules.trigger.reply_mode: enum value [INTELLIGENT_REPLY]`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowReplayDelayStatus**
+    - 响应参数变更
+      - `+ delay_time_value_range`
+
+### HuaweiCloud SDK VPC
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListSecurityGroupsByTags`
+    - `BatchCreateSecurityGroupTags`
+    - `BatchDeleteSecurityGroupTags`
+    - `ShowSecurityGroupTags`
+    - `CreateSecurityGroupTag`
+    - `DeleteSecurityGroupTag`
+    - `ListSecurityGroupTags`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
 # 3.1.99 2024-06-06
 
 ### HuaweiCloud SDK CAE

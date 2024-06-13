@@ -229,6 +229,7 @@ the [CHANGELOG.md](https://github.com/huaweicloud/huaweicloud-sdk-python-v3/blob
     * [6.2 Original HTTP Listener](#62-original-http-listener-top)
 * [7. API Invoker](#7-api-invoker-top)
     * [7.1 Custom request headers](#71-custom-request-headers-top)
+    * [7.2 Retry](#72-retry-top)
 * [8. Upload and download files](#7-upload-and-download-files-top)
 
 ### 1. Client Configuration [:top:](#user-manual-top)
@@ -1001,6 +1002,43 @@ response = client.list_vpcs_async_invoker(request) \
     .add_header("key2", "value2") \
     .invoke().result()
 print(response)
+```
+
+#### 7.2 Retry [:top:](#user-manual-top)
+
+Retry feature is supported since `v3.1.97`, the following parameters is required:
+
+- retry_condition: whether to retry based on the last response or exception.
+- max_retries: maximum number of retries when retry conditions are met, in range [1, 10].
+- backoff_strategy: calculate delay(milliseconds) before next retry.
+
+```python
+from huaweicloudsdkcore.exceptions.exceptions import ConnectionException, ServerResponseException
+from huaweicloudsdkvpc.v2 import ListVpcsRequest
+from huaweicloudsdkvpc.v2.vpc_client import VpcClient
+
+from huaweicloudsdkcore.retry.backoff_strategy import BackoffStrategies
+
+
+client = VpcClient.new_builder() \
+    .with_credentials(credentials) \
+    .with_region(VpcRegion.value_of("cn-north-4")) \
+    .build()
+    
+request = ListVpcsRequest()
+# Retry on connection exception, max retry times is 3, retry interval strategy is immediate retry.
+response = client.list_vpcs_invoker(request).with_retry(
+    retry_condition=lambda resp, exc: isinstance(exc, ConnectionException),
+    max_retries=3,
+    backoff_strategy=BackoffStrategies.NONE
+).invoke()
+
+# Retry on server response exception, max retry times is 3, retry interval strategy is equal jitter backoff strategy.
+# response = client.list_vpcs_invoker(request).with_retry(
+#     retry_condition=lambda resp, exc: isinstance(exc, ServerResponseException) and exc.status_code == 503,
+#     max_retries=10,
+#     backoff_strategy=BackoffStrategies.EQUAL_JITTER
+# ).invoke()
 ```
 
 ### 8. Upload and download files [:top:](#user-manual-top)

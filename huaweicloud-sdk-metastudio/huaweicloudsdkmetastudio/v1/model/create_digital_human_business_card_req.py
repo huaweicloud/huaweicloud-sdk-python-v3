@@ -27,7 +27,8 @@ class CreateDigitalHumanBusinessCardReq:
         'introduction_audio_asset_id': 'str',
         'video_asset_name': 'str',
         'gender': 'str',
-        'review_config': 'ReviewConfig'
+        'review_config': 'ReviewConfig',
+        'callback_config': 'CallBackConfig'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class CreateDigitalHumanBusinessCardReq:
         'introduction_audio_asset_id': 'introduction_audio_asset_id',
         'video_asset_name': 'video_asset_name',
         'gender': 'gender',
-        'review_config': 'review_config'
+        'review_config': 'review_config',
+        'callback_config': 'callback_config'
     }
 
-    def __init__(self, business_card_type=None, card_templet_asset_id=None, card_text_config=None, card_image_config=None, introduction_type=None, introduction_text=None, voice_asset_id=None, introduction_audio_asset_id=None, video_asset_name=None, gender=None, review_config=None):
+    def __init__(self, business_card_type=None, card_templet_asset_id=None, card_text_config=None, card_image_config=None, introduction_type=None, introduction_text=None, voice_asset_id=None, introduction_audio_asset_id=None, video_asset_name=None, gender=None, review_config=None, callback_config=None):
         """CreateDigitalHumanBusinessCardReq
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class CreateDigitalHumanBusinessCardReq:
         :type gender: str
         :param review_config: 
         :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
+        :param callback_config: 
+        :type callback_config: :class:`huaweicloudsdkmetastudio.v1.CallBackConfig`
         """
         
         
@@ -86,6 +90,7 @@ class CreateDigitalHumanBusinessCardReq:
         self._video_asset_name = None
         self._gender = None
         self._review_config = None
+        self._callback_config = None
         self.discriminator = None
 
         self.business_card_type = business_card_type
@@ -106,6 +111,8 @@ class CreateDigitalHumanBusinessCardReq:
             self.gender = gender
         if review_config is not None:
             self.review_config = review_config
+        if callback_config is not None:
+            self.callback_config = callback_config
 
     @property
     def business_card_type(self):
@@ -336,6 +343,24 @@ class CreateDigitalHumanBusinessCardReq:
         :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
         """
         self._review_config = review_config
+
+    @property
+    def callback_config(self):
+        """Gets the callback_config of this CreateDigitalHumanBusinessCardReq.
+
+        :return: The callback_config of this CreateDigitalHumanBusinessCardReq.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CallBackConfig`
+        """
+        return self._callback_config
+
+    @callback_config.setter
+    def callback_config(self, callback_config):
+        """Sets the callback_config of this CreateDigitalHumanBusinessCardReq.
+
+        :param callback_config: The callback_config of this CreateDigitalHumanBusinessCardReq.
+        :type callback_config: :class:`huaweicloudsdkmetastudio.v1.CallBackConfig`
+        """
+        self._callback_config = callback_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

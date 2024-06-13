@@ -96,6 +96,7 @@ from huaweicloudsdkas.v1.model.instance_config import InstanceConfig
 from huaweicloudsdkas.v1.model.instance_config_result import InstanceConfigResult
 from huaweicloudsdkas.v1.model.instance_hanging_infos import InstanceHangingInfos
 from huaweicloudsdkas.v1.model.integer_range import IntegerRange
+from huaweicloudsdkas.v1.model.interval_alarm_actions_v2 import IntervalAlarmActionsV2
 from huaweicloudsdkas.v1.model.ipv6_bandwidth import Ipv6Bandwidth
 from huaweicloudsdkas.v1.model.job_records import JobRecords
 from huaweicloudsdkas.v1.model.lbaas_listener import LbaasListener

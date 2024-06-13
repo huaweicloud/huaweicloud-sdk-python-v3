@@ -19,6 +19,7 @@ class ShowReplayDelayStatusResponse(SdkResponse):
 
     openapi_types = {
         'cur_delay_time_mills': 'int',
+        'delay_time_value_range': 'str',
         'real_delay_time_mills': 'int',
         'cur_log_replay_paused': 'bool',
         'latest_receive_log': 'str',
@@ -27,19 +28,22 @@ class ShowReplayDelayStatusResponse(SdkResponse):
 
     attribute_map = {
         'cur_delay_time_mills': 'cur_delay_time_mills',
+        'delay_time_value_range': 'delay_time_value_range',
         'real_delay_time_mills': 'real_delay_time_mills',
         'cur_log_replay_paused': 'cur_log_replay_paused',
         'latest_receive_log': 'latest_receive_log',
         'latest_replay_log': 'latest_replay_log'
     }
 
-    def __init__(self, cur_delay_time_mills=None, real_delay_time_mills=None, cur_log_replay_paused=None, latest_receive_log=None, latest_replay_log=None):
+    def __init__(self, cur_delay_time_mills=None, delay_time_value_range=None, real_delay_time_mills=None, cur_log_replay_paused=None, latest_receive_log=None, latest_replay_log=None):
         """ShowReplayDelayStatusResponse
 
         The model defined in huaweicloud sdk
 
         :param cur_delay_time_mills: 当前配置的延迟时间，单位ms
         :type cur_delay_time_mills: int
+        :param delay_time_value_range: 延迟时间参数取值范围
+        :type delay_time_value_range: str
         :param real_delay_time_mills: 真实延迟时间，单位ms
         :type real_delay_time_mills: int
         :param cur_log_replay_paused: 当前日志回放状态。true表示回放暂停，false表示回放正常
@@ -53,6 +57,7 @@ class ShowReplayDelayStatusResponse(SdkResponse):
         super(ShowReplayDelayStatusResponse, self).__init__()
 
         self._cur_delay_time_mills = None
+        self._delay_time_value_range = None
         self._real_delay_time_mills = None
         self._cur_log_replay_paused = None
         self._latest_receive_log = None
@@ -61,6 +66,8 @@ class ShowReplayDelayStatusResponse(SdkResponse):
 
         if cur_delay_time_mills is not None:
             self.cur_delay_time_mills = cur_delay_time_mills
+        if delay_time_value_range is not None:
+            self.delay_time_value_range = delay_time_value_range
         if real_delay_time_mills is not None:
             self.real_delay_time_mills = real_delay_time_mills
         if cur_log_replay_paused is not None:
@@ -91,6 +98,28 @@ class ShowReplayDelayStatusResponse(SdkResponse):
         :type cur_delay_time_mills: int
         """
         self._cur_delay_time_mills = cur_delay_time_mills
+
+    @property
+    def delay_time_value_range(self):
+        """Gets the delay_time_value_range of this ShowReplayDelayStatusResponse.
+
+        延迟时间参数取值范围
+
+        :return: The delay_time_value_range of this ShowReplayDelayStatusResponse.
+        :rtype: str
+        """
+        return self._delay_time_value_range
+
+    @delay_time_value_range.setter
+    def delay_time_value_range(self, delay_time_value_range):
+        """Sets the delay_time_value_range of this ShowReplayDelayStatusResponse.
+
+        延迟时间参数取值范围
+
+        :param delay_time_value_range: The delay_time_value_range of this ShowReplayDelayStatusResponse.
+        :type delay_time_value_range: str
+        """
+        self._delay_time_value_range = delay_time_value_range
 
     @property
     def real_delay_time_mills(self):

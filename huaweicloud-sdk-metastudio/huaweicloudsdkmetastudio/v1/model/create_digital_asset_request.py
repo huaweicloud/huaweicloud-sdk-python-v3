@@ -18,21 +18,25 @@ class CreateDigitalAssetRequest:
 
     openapi_types = {
         'x_app_user_id': 'str',
+        'x_mss_authorization': 'str',
         'body': 'CreateDigitalAssetRequestBody'
     }
 
     attribute_map = {
         'x_app_user_id': 'X-App-UserId',
+        'x_mss_authorization': 'X-MSS-Authorization',
         'body': 'body'
     }
 
-    def __init__(self, x_app_user_id=None, body=None):
+    def __init__(self, x_app_user_id=None, x_mss_authorization=None, body=None):
         """CreateDigitalAssetRequest
 
         The model defined in huaweicloud sdk
 
         :param x_app_user_id: 第三方用户ID。不允许输入中文。
         :type x_app_user_id: str
+        :param x_mss_authorization: 数字人内部token
+        :type x_mss_authorization: str
         :param body: Body of the CreateDigitalAssetRequest
         :type body: :class:`huaweicloudsdkmetastudio.v1.CreateDigitalAssetRequestBody`
         """
@@ -40,11 +44,14 @@ class CreateDigitalAssetRequest:
         
 
         self._x_app_user_id = None
+        self._x_mss_authorization = None
         self._body = None
         self.discriminator = None
 
         if x_app_user_id is not None:
             self.x_app_user_id = x_app_user_id
+        if x_mss_authorization is not None:
+            self.x_mss_authorization = x_mss_authorization
         if body is not None:
             self.body = body
 
@@ -69,6 +76,28 @@ class CreateDigitalAssetRequest:
         :type x_app_user_id: str
         """
         self._x_app_user_id = x_app_user_id
+
+    @property
+    def x_mss_authorization(self):
+        """Gets the x_mss_authorization of this CreateDigitalAssetRequest.
+
+        数字人内部token
+
+        :return: The x_mss_authorization of this CreateDigitalAssetRequest.
+        :rtype: str
+        """
+        return self._x_mss_authorization
+
+    @x_mss_authorization.setter
+    def x_mss_authorization(self, x_mss_authorization):
+        """Sets the x_mss_authorization of this CreateDigitalAssetRequest.
+
+        数字人内部token
+
+        :param x_mss_authorization: The x_mss_authorization of this CreateDigitalAssetRequest.
+        :type x_mss_authorization: str
+        """
+        self._x_mss_authorization = x_mss_authorization
 
     @property
     def body(self):

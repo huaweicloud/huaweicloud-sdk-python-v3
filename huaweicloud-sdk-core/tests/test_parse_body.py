@@ -17,6 +17,7 @@
  specific language governing permissions and limitations
  under the LICENSE.
 """
+import pytest
 
 from huaweicloudsdkcore.client import Client
 from tests.model.vpc import Vpc
@@ -58,3 +59,7 @@ def test_parse_body():
                                  '"routes": "routes", "status": "status"}]')
     assert parse_body({"vpc": vpc}) == ('{"vpc": {"id": "id", "name": "name", "cidr": "cidr", "description": '
                                         '"description", "routes": "routes", "status": "status"}}')
+
+
+if __name__ == "__main__":
+    pytest.main()

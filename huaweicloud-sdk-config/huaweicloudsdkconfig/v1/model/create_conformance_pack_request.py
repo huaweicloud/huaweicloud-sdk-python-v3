@@ -17,29 +17,58 @@ class CreateConformancePackRequest:
     sensitive_list = []
 
     openapi_types = {
+        'x_language': 'str',
         'body': 'ConformancePackRequestBody'
     }
 
     attribute_map = {
+        'x_language': 'X-Language',
         'body': 'body'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, x_language=None, body=None):
         """CreateConformancePackRequest
 
         The model defined in huaweicloud sdk
 
+        :param x_language: 合规包信息语言，默认为\&quot;en-us\&quot;英文
+        :type x_language: str
         :param body: Body of the CreateConformancePackRequest
         :type body: :class:`huaweicloudsdkconfig.v1.ConformancePackRequestBody`
         """
         
         
 
+        self._x_language = None
         self._body = None
         self.discriminator = None
 
+        if x_language is not None:
+            self.x_language = x_language
         if body is not None:
             self.body = body
+
+    @property
+    def x_language(self):
+        """Gets the x_language of this CreateConformancePackRequest.
+
+        合规包信息语言，默认为\"en-us\"英文
+
+        :return: The x_language of this CreateConformancePackRequest.
+        :rtype: str
+        """
+        return self._x_language
+
+    @x_language.setter
+    def x_language(self, x_language):
+        """Sets the x_language of this CreateConformancePackRequest.
+
+        合规包信息语言，默认为\"en-us\"英文
+
+        :param x_language: The x_language of this CreateConformancePackRequest.
+        :type x_language: str
+        """
+        self._x_language = x_language
 
     @property
     def body(self):

@@ -40,7 +40,7 @@ class ServerDetail:
         'os_dc_fdisk_config': 'str',
         'access_i_pv4': 'str',
         'access_i_pv6': 'str',
-        'fault': 'ServerFault',
+        'fault': 'object',
         'progress': 'int',
         'os_ext_st_spower_state': 'int',
         'config_drive': 'str',
@@ -167,8 +167,8 @@ class ServerDetail:
         :type access_i_pv4: str
         :param access_i_pv6: 预留属性。
         :type access_i_pv6: str
-        :param fault: 
-        :type fault: :class:`huaweicloudsdkecs.v2.ServerFault`
+        :param fault: 弹性云服务器故障信息。  可选参数，在弹性云服务器状态为ERROR且存在异常的情况下返回。
+        :type fault: object
         :param progress: 弹性云服务器进度。
         :type progress: int
         :param os_ext_st_spower_state: 扩展属性，弹性云服务器电源状态。
@@ -830,8 +830,10 @@ class ServerDetail:
     def fault(self):
         """Gets the fault of this ServerDetail.
 
+        弹性云服务器故障信息。  可选参数，在弹性云服务器状态为ERROR且存在异常的情况下返回。
+
         :return: The fault of this ServerDetail.
-        :rtype: :class:`huaweicloudsdkecs.v2.ServerFault`
+        :rtype: object
         """
         return self._fault
 
@@ -839,8 +841,10 @@ class ServerDetail:
     def fault(self, fault):
         """Sets the fault of this ServerDetail.
 
+        弹性云服务器故障信息。  可选参数，在弹性云服务器状态为ERROR且存在异常的情况下返回。
+
         :param fault: The fault of this ServerDetail.
-        :type fault: :class:`huaweicloudsdkecs.v2.ServerFault`
+        :type fault: object
         """
         self._fault = fault
 

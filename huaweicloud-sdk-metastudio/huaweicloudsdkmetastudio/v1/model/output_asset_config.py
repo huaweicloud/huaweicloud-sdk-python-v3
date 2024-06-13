@@ -17,35 +17,28 @@ class OutputAssetConfig:
     sensitive_list = []
 
     openapi_types = {
-        'asset_name': 'str',
-        'is_preview_video': 'bool'
+        'asset_name': 'str'
     }
 
     attribute_map = {
-        'asset_name': 'asset_name',
-        'is_preview_video': 'is_preview_video'
+        'asset_name': 'asset_name'
     }
 
-    def __init__(self, asset_name=None, is_preview_video=None):
+    def __init__(self, asset_name=None):
         """OutputAssetConfig
 
         The model defined in huaweicloud sdk
 
         :param asset_name: 输出视频资产名称。
         :type asset_name: str
-        :param is_preview_video: 是否是预览视频。如果是预览视频不存资产库。 &gt; * 分身数字人视频制作不支持预览。
-        :type is_preview_video: bool
         """
         
         
 
         self._asset_name = None
-        self._is_preview_video = None
         self.discriminator = None
 
         self.asset_name = asset_name
-        if is_preview_video is not None:
-            self.is_preview_video = is_preview_video
 
     @property
     def asset_name(self):
@@ -68,28 +61,6 @@ class OutputAssetConfig:
         :type asset_name: str
         """
         self._asset_name = asset_name
-
-    @property
-    def is_preview_video(self):
-        """Gets the is_preview_video of this OutputAssetConfig.
-
-        是否是预览视频。如果是预览视频不存资产库。 > * 分身数字人视频制作不支持预览。
-
-        :return: The is_preview_video of this OutputAssetConfig.
-        :rtype: bool
-        """
-        return self._is_preview_video
-
-    @is_preview_video.setter
-    def is_preview_video(self, is_preview_video):
-        """Sets the is_preview_video of this OutputAssetConfig.
-
-        是否是预览视频。如果是预览视频不存资产库。 > * 分身数字人视频制作不支持预览。
-
-        :param is_preview_video: The is_preview_video of this OutputAssetConfig.
-        :type is_preview_video: bool
-        """
-        self._is_preview_video = is_preview_video
 
     def to_dict(self):
         """Returns the model properties as a dict"""

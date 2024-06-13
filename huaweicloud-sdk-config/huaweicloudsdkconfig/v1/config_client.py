@@ -1408,6 +1408,8 @@ class ConfigClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 
@@ -1475,6 +1477,8 @@ class ConfigClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 
@@ -2616,6 +2620,207 @@ class ConfigClient(Client):
 
         return http_info
 
+    def batch_create_remediation_exceptions(self, request):
+        """批量创建修正例外
+
+        批量创建合规规则修正例外。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchCreateRemediationExceptions
+        :type request: :class:`huaweicloudsdkconfig.v1.BatchCreateRemediationExceptionsRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.BatchCreateRemediationExceptionsResponse`
+        """
+        http_info = self._batch_create_remediation_exceptions_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_create_remediation_exceptions_invoker(self, request):
+        http_info = self._batch_create_remediation_exceptions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_create_remediation_exceptions_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/policy-assignments/{policy_assignment_id}/remediation-exception/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateRemediationExceptionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_assignment_id' in local_var_params:
+            path_params['policy_assignment_id'] = local_var_params['policy_assignment_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_remediation_exceptions(self, request):
+        """批量删除修正例外
+
+        批量删除合规规则修正例外。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteRemediationExceptions
+        :type request: :class:`huaweicloudsdkconfig.v1.BatchDeleteRemediationExceptionsRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.BatchDeleteRemediationExceptionsResponse`
+        """
+        http_info = self._batch_delete_remediation_exceptions_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_remediation_exceptions_invoker(self, request):
+        http_info = self._batch_delete_remediation_exceptions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_remediation_exceptions_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/policy-assignments/{policy_assignment_id}/remediation-exception/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteRemediationExceptionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_assignment_id' in local_var_params:
+            path_params['policy_assignment_id'] = local_var_params['policy_assignment_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_or_update_remediation_configuration(self, request):
+        """创建或更新修正配置
+
+        创建或更新合规规则修正配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateOrUpdateRemediationConfiguration
+        :type request: :class:`huaweicloudsdkconfig.v1.CreateOrUpdateRemediationConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.CreateOrUpdateRemediationConfigurationResponse`
+        """
+        http_info = self._create_or_update_remediation_configuration_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_or_update_remediation_configuration_invoker(self, request):
+        http_info = self._create_or_update_remediation_configuration_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_or_update_remediation_configuration_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/policy-assignments/{policy_assignment_id}/remediation-configuration",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateOrUpdateRemediationConfigurationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_assignment_id' in local_var_params:
+            path_params['policy_assignment_id'] = local_var_params['policy_assignment_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_organization_policy_assignment(self, request):
         """创建组织合规规则
 
@@ -2868,6 +3073,71 @@ class ConfigClient(Client):
             ['application/json'])
 
         auth_settings = ['PkiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_remediation_configuration(self, request):
+        """删除修正配置
+
+        删除合规规则修正配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteRemediationConfiguration
+        :type request: :class:`huaweicloudsdkconfig.v1.DeleteRemediationConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.DeleteRemediationConfigurationResponse`
+        """
+        http_info = self._delete_remediation_configuration_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_remediation_configuration_invoker(self, request):
+        http_info = self._delete_remediation_configuration_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_remediation_configuration_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/policy-assignments/{policy_assignment_id}/remediation-configuration",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRemediationConfigurationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_assignment_id' in local_var_params:
+            path_params['policy_assignment_id'] = local_var_params['policy_assignment_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -3436,6 +3706,152 @@ class ConfigClient(Client):
 
         return http_info
 
+    def list_remediation_exceptions(self, request):
+        """查询修正例外
+
+        查询合规规则修正例外。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListRemediationExceptions
+        :type request: :class:`huaweicloudsdkconfig.v1.ListRemediationExceptionsRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.ListRemediationExceptionsResponse`
+        """
+        http_info = self._list_remediation_exceptions_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_remediation_exceptions_invoker(self, request):
+        http_info = self._list_remediation_exceptions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_remediation_exceptions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/policy-assignments/{policy_assignment_id}/remediation-exception",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRemediationExceptionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_assignment_id' in local_var_params:
+            path_params['policy_assignment_id'] = local_var_params['policy_assignment_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'resource_id' in local_var_params:
+            query_params.append(('resource_id', local_var_params['resource_id']))
+        if 'resource_name' in local_var_params:
+            query_params.append(('resource_name', local_var_params['resource_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_remediation_execution_statuses(self, request):
+        """查询修正执行结果
+
+        查询合规规则修正执行结果详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListRemediationExecutionStatuses
+        :type request: :class:`huaweicloudsdkconfig.v1.ListRemediationExecutionStatusesRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.ListRemediationExecutionStatusesResponse`
+        """
+        http_info = self._list_remediation_execution_statuses_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_remediation_execution_statuses_invoker(self, request):
+        http_info = self._list_remediation_execution_statuses_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_remediation_execution_statuses_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/policy-assignments/{policy_assignment_id}/remediation-execution-statuses",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRemediationExecutionStatusesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_assignment_id' in local_var_params:
+            path_params['policy_assignment_id'] = local_var_params['policy_assignment_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'resource_id' in local_var_params:
+            query_params.append(('resource_id', local_var_params['resource_id']))
+        if 'resource_name' in local_var_params:
+            query_params.append(('resource_name', local_var_params['resource_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def run_evaluation_by_policy_assignment_id(self, request):
         """运行合规评估
 
@@ -3489,6 +3905,73 @@ class ConfigClient(Client):
             ['application/json'])
 
         auth_settings = ['PkiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def run_remediation_execution(self, request):
+        """运行修正执行
+
+        手动运行合规规则修正执行。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RunRemediationExecution
+        :type request: :class:`huaweicloudsdkconfig.v1.RunRemediationExecutionRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.RunRemediationExecutionResponse`
+        """
+        http_info = self._run_remediation_execution_http_info(request)
+        return self._call_api(**http_info)
+
+    def run_remediation_execution_invoker(self, request):
+        http_info = self._run_remediation_execution_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _run_remediation_execution_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/policy-assignments/{policy_assignment_id}/remediation-execution",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunRemediationExecutionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_assignment_id' in local_var_params:
+            path_params['policy_assignment_id'] = local_var_params['policy_assignment_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -3901,6 +4384,71 @@ class ConfigClient(Client):
             ['application/json'])
 
         auth_settings = ['PkiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_remediation_configuration(self, request):
+        """查询修正配置
+
+        查询合规规则修正配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowRemediationConfiguration
+        :type request: :class:`huaweicloudsdkconfig.v1.ShowRemediationConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.ShowRemediationConfigurationResponse`
+        """
+        http_info = self._show_remediation_configuration_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_remediation_configuration_invoker(self, request):
+        http_info = self._show_remediation_configuration_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_remediation_configuration_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/policy-assignments/{policy_assignment_id}/remediation-configuration",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRemediationConfigurationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_assignment_id' in local_var_params:
+            path_params['policy_assignment_id'] = local_var_params['policy_assignment_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats

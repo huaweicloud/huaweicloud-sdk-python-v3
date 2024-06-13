@@ -18,7 +18,7 @@ class Input:
 
     openapi_types = {
         'name': 'str',
-        'value': 'str',
+        'value': 'object',
         'type': 'str'
     }
 
@@ -36,7 +36,7 @@ class Input:
         :param name: 参数名
         :type name: str
         :param value: 参数值
-        :type value: str
+        :type value: object
         :param type: 值类型
         :type type: str
         """
@@ -82,7 +82,7 @@ class Input:
         参数值
 
         :return: The value of this Input.
-        :rtype: str
+        :rtype: object
         """
         return self._value
 
@@ -93,7 +93,7 @@ class Input:
         参数值
 
         :param value: The value of this Input.
-        :type value: str
+        :type value: object
         """
         self._value = value
 

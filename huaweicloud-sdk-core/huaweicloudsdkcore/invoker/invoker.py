@@ -19,6 +19,10 @@
  specific language governing permissions and limitations
  under the LICENSE.
 """
+import time
+
+from huaweicloudsdkcore.retry.backoff_strategy import BackoffStrategy
+
 try:
     from typing import TypeVar, Generic
 except ImportError:
@@ -30,6 +34,7 @@ from huaweicloudsdkcore.sdk_response import SdkResponse, FutureSdkResponse
 from huaweicloudsdkcore.exceptions.exceptions import SdkException
 
 _TInvoker = TypeVar("_TInvoker", bound="BaseInvoker")
+_MAX_RETRIES_LIMIT = 10
 
 
 class BaseInvoker(Generic[_TInvoker]):
@@ -57,10 +62,61 @@ class BaseInvoker(Generic[_TInvoker]):
 class SyncInvoker(BaseInvoker["SyncInvoker"]):
     def __init__(self, client, http_info):
         super(SyncInvoker, self).__init__(client, http_info)
+        self._retry_condition = None
+        self._max_retries = 0
+        self._backoff_strategy = None
 
     def invoke(self):
         # type: () -> SdkResponse
-        return self._client.do_http_request(**self._http_info)
+        if not self._max_retries or not self._retry_condition:
+            return self._client.do_http_request(**self._http_info)
+
+        exec_times = 0
+        while True:
+            try:
+                resp = self._client.do_http_request(**self._http_info)
+                exception = None
+            except SdkException as e:
+                exception = e
+                resp = None
+            finally:
+                exec_times += 1
+
+            if exec_times > self._max_retries or not self._retry_condition(resp, exception):
+                break
+
+            delay_ms = self._backoff_strategy.calculate_retry_delay_millis(exec_times)
+            if delay_ms > 0:
+                time.sleep(delay_ms / 1000)
+
+        if exception:
+            raise exception
+
+        return resp
+
+    def with_retry(self, retry_condition, max_retries, backoff_strategy):
+        """
+        Retry on condition.
+
+        :param retry_condition: Retry condition, retry if true
+        :type retry_condition: Callable[[SdkResponse, SdkException], bool]
+
+        :param max_retries: Max retry times
+        :type max_retries: int
+
+        :param backoff_strategy: Calculate the delay before next retry
+        :type backoff_strategy: BackoffStrategy
+        """
+        if not retry_condition:
+            raise ValueError("retry condition cannot be None")
+        if not backoff_strategy:
+            raise ValueError("backoff strategy cannot be None")
+        if max_retries > _MAX_RETRIES_LIMIT or max_retries <= 0:
+            raise ValueError("max retries is not in range [1, %d]" % _MAX_RETRIES_LIMIT)
+        self._retry_condition = retry_condition
+        self._max_retries = max_retries
+        self._backoff_strategy = backoff_strategy
+        return self
 
 
 class AsyncInvoker(BaseInvoker["AsyncInvoker"]):

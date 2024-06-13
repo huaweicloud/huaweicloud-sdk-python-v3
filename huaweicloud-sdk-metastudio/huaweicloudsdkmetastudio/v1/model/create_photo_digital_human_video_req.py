@@ -24,7 +24,8 @@ class CreatePhotoDigitalHumanVideoReq:
         'shoot_scripts': 'list[ShootScriptItem]',
         'output_asset_config': 'OutputAssetConfig',
         'background_music_config': 'BackgroundMusicConfig',
-        'review_config': 'ReviewConfig'
+        'review_config': 'ReviewConfig',
+        'callback_config': 'CallBackConfig'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class CreatePhotoDigitalHumanVideoReq:
         'shoot_scripts': 'shoot_scripts',
         'output_asset_config': 'output_asset_config',
         'background_music_config': 'background_music_config',
-        'review_config': 'review_config'
+        'review_config': 'review_config',
+        'callback_config': 'callback_config'
     }
 
-    def __init__(self, script_id=None, human_image=None, voice_config=None, video_config=None, shoot_scripts=None, output_asset_config=None, background_music_config=None, review_config=None):
+    def __init__(self, script_id=None, human_image=None, voice_config=None, video_config=None, shoot_scripts=None, output_asset_config=None, background_music_config=None, review_config=None, callback_config=None):
         """CreatePhotoDigitalHumanVideoReq
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class CreatePhotoDigitalHumanVideoReq:
         :type background_music_config: :class:`huaweicloudsdkmetastudio.v1.BackgroundMusicConfig`
         :param review_config: 
         :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
+        :param callback_config: 
+        :type callback_config: :class:`huaweicloudsdkmetastudio.v1.CallBackConfig`
         """
         
         
@@ -71,6 +75,7 @@ class CreatePhotoDigitalHumanVideoReq:
         self._output_asset_config = None
         self._background_music_config = None
         self._review_config = None
+        self._callback_config = None
         self.discriminator = None
 
         if script_id is not None:
@@ -86,6 +91,8 @@ class CreatePhotoDigitalHumanVideoReq:
             self.background_music_config = background_music_config
         if review_config is not None:
             self.review_config = review_config
+        if callback_config is not None:
+            self.callback_config = callback_config
 
     @property
     def script_id(self):
@@ -242,6 +249,24 @@ class CreatePhotoDigitalHumanVideoReq:
         :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
         """
         self._review_config = review_config
+
+    @property
+    def callback_config(self):
+        """Gets the callback_config of this CreatePhotoDigitalHumanVideoReq.
+
+        :return: The callback_config of this CreatePhotoDigitalHumanVideoReq.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CallBackConfig`
+        """
+        return self._callback_config
+
+    @callback_config.setter
+    def callback_config(self, callback_config):
+        """Sets the callback_config of this CreatePhotoDigitalHumanVideoReq.
+
+        :param callback_config: The callback_config of this CreatePhotoDigitalHumanVideoReq.
+        :type callback_config: :class:`huaweicloudsdkmetastudio.v1.CallBackConfig`
+        """
+        self._callback_config = callback_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

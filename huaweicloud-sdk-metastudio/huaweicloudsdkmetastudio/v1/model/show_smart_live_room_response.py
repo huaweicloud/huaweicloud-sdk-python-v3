@@ -22,13 +22,14 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         'room_description': 'str',
         'room_type': 'str',
         'scene_scripts': 'list[LiveVideoScriptInfo]',
-        'interaction_rules': 'list[InteractionRuleInfo]',
+        'interaction_rules': 'list[LiveRoomInteractionRuleInfo]',
         'play_policy': 'PlayPolicy',
         'video_config': 'VideoConfig',
         'output_urls': 'list[str]',
         'stream_keys': 'list[str]',
         'backup_model_asset_ids': 'list[str]',
         'live_event_callback_config': 'LiveEventCallBackConfig',
+        'rtc_callback_config': 'RTCLiveEventCallBackConfig',
         'review_config': 'ReviewConfig',
         'shared_config': 'SharedConfig',
         'view_mode': 'str',
@@ -55,6 +56,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         'stream_keys': 'stream_keys',
         'backup_model_asset_ids': 'backup_model_asset_ids',
         'live_event_callback_config': 'live_event_callback_config',
+        'rtc_callback_config': 'rtc_callback_config',
         'review_config': 'review_config',
         'shared_config': 'shared_config',
         'view_mode': 'view_mode',
@@ -69,7 +71,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, room_name=None, room_description=None, room_type=None, scene_scripts=None, interaction_rules=None, play_policy=None, video_config=None, output_urls=None, stream_keys=None, backup_model_asset_ids=None, live_event_callback_config=None, review_config=None, shared_config=None, view_mode=None, co_streamer_config=None, room_id=None, create_time=None, update_time=None, cover_url=None, thumbnail=None, room_state=None, error_info=None, x_request_id=None):
+    def __init__(self, room_name=None, room_description=None, room_type=None, scene_scripts=None, interaction_rules=None, play_policy=None, video_config=None, output_urls=None, stream_keys=None, backup_model_asset_ids=None, live_event_callback_config=None, rtc_callback_config=None, review_config=None, shared_config=None, view_mode=None, co_streamer_config=None, room_id=None, create_time=None, update_time=None, cover_url=None, thumbnail=None, room_state=None, error_info=None, x_request_id=None):
         """ShowSmartLiveRoomResponse
 
         The model defined in huaweicloud sdk
@@ -83,7 +85,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         :param scene_scripts: 默认直播剧本列表。
         :type scene_scripts: list[:class:`huaweicloudsdkmetastudio.v1.LiveVideoScriptInfo`]
         :param interaction_rules: 互动规则列表
-        :type interaction_rules: list[:class:`huaweicloudsdkmetastudio.v1.InteractionRuleInfo`]
+        :type interaction_rules: list[:class:`huaweicloudsdkmetastudio.v1.LiveRoomInteractionRuleInfo`]
         :param play_policy: 
         :type play_policy: :class:`huaweicloudsdkmetastudio.v1.PlayPolicy`
         :param video_config: 
@@ -96,6 +98,8 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         :type backup_model_asset_ids: list[str]
         :param live_event_callback_config: 
         :type live_event_callback_config: :class:`huaweicloudsdkmetastudio.v1.LiveEventCallBackConfig`
+        :param rtc_callback_config: 
+        :type rtc_callback_config: :class:`huaweicloudsdkmetastudio.v1.RTCLiveEventCallBackConfig`
         :param review_config: 
         :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
         :param shared_config: 
@@ -135,6 +139,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         self._stream_keys = None
         self._backup_model_asset_ids = None
         self._live_event_callback_config = None
+        self._rtc_callback_config = None
         self._review_config = None
         self._shared_config = None
         self._view_mode = None
@@ -170,6 +175,8 @@ class ShowSmartLiveRoomResponse(SdkResponse):
             self.backup_model_asset_ids = backup_model_asset_ids
         if live_event_callback_config is not None:
             self.live_event_callback_config = live_event_callback_config
+        if rtc_callback_config is not None:
+            self.rtc_callback_config = rtc_callback_config
         if review_config is not None:
             self.review_config = review_config
         if shared_config is not None:
@@ -290,7 +297,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         互动规则列表
 
         :return: The interaction_rules of this ShowSmartLiveRoomResponse.
-        :rtype: list[:class:`huaweicloudsdkmetastudio.v1.InteractionRuleInfo`]
+        :rtype: list[:class:`huaweicloudsdkmetastudio.v1.LiveRoomInteractionRuleInfo`]
         """
         return self._interaction_rules
 
@@ -301,7 +308,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         互动规则列表
 
         :param interaction_rules: The interaction_rules of this ShowSmartLiveRoomResponse.
-        :type interaction_rules: list[:class:`huaweicloudsdkmetastudio.v1.InteractionRuleInfo`]
+        :type interaction_rules: list[:class:`huaweicloudsdkmetastudio.v1.LiveRoomInteractionRuleInfo`]
         """
         self._interaction_rules = interaction_rules
 
@@ -424,6 +431,24 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         :type live_event_callback_config: :class:`huaweicloudsdkmetastudio.v1.LiveEventCallBackConfig`
         """
         self._live_event_callback_config = live_event_callback_config
+
+    @property
+    def rtc_callback_config(self):
+        """Gets the rtc_callback_config of this ShowSmartLiveRoomResponse.
+
+        :return: The rtc_callback_config of this ShowSmartLiveRoomResponse.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.RTCLiveEventCallBackConfig`
+        """
+        return self._rtc_callback_config
+
+    @rtc_callback_config.setter
+    def rtc_callback_config(self, rtc_callback_config):
+        """Sets the rtc_callback_config of this ShowSmartLiveRoomResponse.
+
+        :param rtc_callback_config: The rtc_callback_config of this ShowSmartLiveRoomResponse.
+        :type rtc_callback_config: :class:`huaweicloudsdkmetastudio.v1.RTCLiveEventCallBackConfig`
+        """
+        self._rtc_callback_config = rtc_callback_config
 
     @property
     def review_config(self):
