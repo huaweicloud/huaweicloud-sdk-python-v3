@@ -19,7 +19,7 @@ class PeriodProductOfficialRatingResult:
     openapi_types = {
         'id': 'str',
         'product_id': 'str',
-        'official_website_amount': 'float',
+        'official_website_amount': 'decimal.Decimal',
         'measure_id': 'int',
         'installment_official_website_amount': 'str',
         'installment_period_type': 'int'
@@ -44,7 +44,7 @@ class PeriodProductOfficialRatingResult:
         :param product_id: 包年/包月产品的ID。
         :type product_id: str
         :param official_website_amount: 包年/包月产品的官网价。
-        :type official_website_amount: float
+        :type official_website_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param measure_id: 价格度量单位标识。 1：元
         :type measure_id: int
         :param installment_official_website_amount: 分期金额的官网价。  说明： 暂只支持IES产品。
@@ -127,7 +127,7 @@ class PeriodProductOfficialRatingResult:
         包年/包月产品的官网价。
 
         :return: The official_website_amount of this PeriodProductOfficialRatingResult.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._official_website_amount
 
@@ -138,7 +138,7 @@ class PeriodProductOfficialRatingResult:
         包年/包月产品的官网价。
 
         :param official_website_amount: The official_website_amount of this PeriodProductOfficialRatingResult.
-        :type official_website_amount: float
+        :type official_website_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._official_website_amount = official_website_amount
 

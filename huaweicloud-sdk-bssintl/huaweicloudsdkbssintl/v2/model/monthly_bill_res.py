@@ -34,17 +34,17 @@ class MonthlyBillRes:
         'enterprise_project_id': 'str',
         'enterprise_project_name': 'str',
         'charge_mode': 'int',
-        'consume_amount': 'float',
-        'cash_amount': 'float',
-        'credit_amount': 'float',
-        'coupon_amount': 'float',
-        'flexipurchase_coupon_amount': 'float',
-        'stored_card_amount': 'float',
-        'bonus_amount': 'float',
-        'debt_amount': 'float',
-        'adjustment_amount': 'float',
-        'official_amount': 'float',
-        'discount_amount': 'float',
+        'consume_amount': 'decimal.Decimal',
+        'cash_amount': 'decimal.Decimal',
+        'credit_amount': 'decimal.Decimal',
+        'coupon_amount': 'decimal.Decimal',
+        'flexipurchase_coupon_amount': 'decimal.Decimal',
+        'stored_card_amount': 'decimal.Decimal',
+        'bonus_amount': 'decimal.Decimal',
+        'debt_amount': 'decimal.Decimal',
+        'adjustment_amount': 'decimal.Decimal',
+        'official_amount': 'decimal.Decimal',
+        'discount_amount': 'decimal.Decimal',
         'measure_id': 'int',
         'period_type': 'int',
         'root_resource_id': 'str',
@@ -148,27 +148,27 @@ class MonthlyBillRes:
         :param charge_mode: 计费模式。 1 : 包年/包月3：按需10：预留实例11：节省计划。
         :type charge_mode: int
         :param consume_amount: 客户购买云服务类型的消费金额，包含代金券、现金券，精确到小数点后8位。  说明： consume_amount的值等于cash_amount，credit_amount，coupon_amount，flexipurchase_coupon_amount，stored_card_amount，bonus_amount，debt_amount，adjustment_amount的总和。
-        :type consume_amount: float
+        :type consume_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param cash_amount: 现金支付金额。
-        :type cash_amount: float
+        :type cash_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param credit_amount: 信用额度支付金额。
-        :type credit_amount: float
+        :type credit_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param coupon_amount: 代金券支付金额。
-        :type coupon_amount: float
+        :type coupon_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param flexipurchase_coupon_amount: 现金券支付金额。
-        :type flexipurchase_coupon_amount: float
+        :type flexipurchase_coupon_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param stored_card_amount: 储值卡支付金额。
-        :type stored_card_amount: float
+        :type stored_card_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param bonus_amount: 奖励金支付金额（用于现网客户未使用完的奖励金）。
-        :type bonus_amount: float
+        :type bonus_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param debt_amount: 欠费金额。
-        :type debt_amount: float
+        :type debt_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param adjustment_amount: 欠费核销金额。
-        :type adjustment_amount: float
+        :type adjustment_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param official_amount: 官网价。
-        :type official_amount: float
+        :type official_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param discount_amount: 对应官网价折扣金额。
-        :type discount_amount: float
+        :type discount_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param measure_id: 金额单位。 1：元
         :type measure_id: int
         :param period_type: 周期类型： 19：年20：月24：天25：小时5：一次性
@@ -716,7 +716,7 @@ class MonthlyBillRes:
         客户购买云服务类型的消费金额，包含代金券、现金券，精确到小数点后8位。  说明： consume_amount的值等于cash_amount，credit_amount，coupon_amount，flexipurchase_coupon_amount，stored_card_amount，bonus_amount，debt_amount，adjustment_amount的总和。
 
         :return: The consume_amount of this MonthlyBillRes.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._consume_amount
 
@@ -727,7 +727,7 @@ class MonthlyBillRes:
         客户购买云服务类型的消费金额，包含代金券、现金券，精确到小数点后8位。  说明： consume_amount的值等于cash_amount，credit_amount，coupon_amount，flexipurchase_coupon_amount，stored_card_amount，bonus_amount，debt_amount，adjustment_amount的总和。
 
         :param consume_amount: The consume_amount of this MonthlyBillRes.
-        :type consume_amount: float
+        :type consume_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._consume_amount = consume_amount
 
@@ -738,7 +738,7 @@ class MonthlyBillRes:
         现金支付金额。
 
         :return: The cash_amount of this MonthlyBillRes.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._cash_amount
 
@@ -749,7 +749,7 @@ class MonthlyBillRes:
         现金支付金额。
 
         :param cash_amount: The cash_amount of this MonthlyBillRes.
-        :type cash_amount: float
+        :type cash_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._cash_amount = cash_amount
 
@@ -760,7 +760,7 @@ class MonthlyBillRes:
         信用额度支付金额。
 
         :return: The credit_amount of this MonthlyBillRes.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._credit_amount
 
@@ -771,7 +771,7 @@ class MonthlyBillRes:
         信用额度支付金额。
 
         :param credit_amount: The credit_amount of this MonthlyBillRes.
-        :type credit_amount: float
+        :type credit_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._credit_amount = credit_amount
 
@@ -782,7 +782,7 @@ class MonthlyBillRes:
         代金券支付金额。
 
         :return: The coupon_amount of this MonthlyBillRes.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._coupon_amount
 
@@ -793,7 +793,7 @@ class MonthlyBillRes:
         代金券支付金额。
 
         :param coupon_amount: The coupon_amount of this MonthlyBillRes.
-        :type coupon_amount: float
+        :type coupon_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._coupon_amount = coupon_amount
 
@@ -804,7 +804,7 @@ class MonthlyBillRes:
         现金券支付金额。
 
         :return: The flexipurchase_coupon_amount of this MonthlyBillRes.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._flexipurchase_coupon_amount
 
@@ -815,7 +815,7 @@ class MonthlyBillRes:
         现金券支付金额。
 
         :param flexipurchase_coupon_amount: The flexipurchase_coupon_amount of this MonthlyBillRes.
-        :type flexipurchase_coupon_amount: float
+        :type flexipurchase_coupon_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._flexipurchase_coupon_amount = flexipurchase_coupon_amount
 
@@ -826,7 +826,7 @@ class MonthlyBillRes:
         储值卡支付金额。
 
         :return: The stored_card_amount of this MonthlyBillRes.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._stored_card_amount
 
@@ -837,7 +837,7 @@ class MonthlyBillRes:
         储值卡支付金额。
 
         :param stored_card_amount: The stored_card_amount of this MonthlyBillRes.
-        :type stored_card_amount: float
+        :type stored_card_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._stored_card_amount = stored_card_amount
 
@@ -848,7 +848,7 @@ class MonthlyBillRes:
         奖励金支付金额（用于现网客户未使用完的奖励金）。
 
         :return: The bonus_amount of this MonthlyBillRes.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._bonus_amount
 
@@ -859,7 +859,7 @@ class MonthlyBillRes:
         奖励金支付金额（用于现网客户未使用完的奖励金）。
 
         :param bonus_amount: The bonus_amount of this MonthlyBillRes.
-        :type bonus_amount: float
+        :type bonus_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._bonus_amount = bonus_amount
 
@@ -870,7 +870,7 @@ class MonthlyBillRes:
         欠费金额。
 
         :return: The debt_amount of this MonthlyBillRes.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._debt_amount
 
@@ -881,7 +881,7 @@ class MonthlyBillRes:
         欠费金额。
 
         :param debt_amount: The debt_amount of this MonthlyBillRes.
-        :type debt_amount: float
+        :type debt_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._debt_amount = debt_amount
 
@@ -892,7 +892,7 @@ class MonthlyBillRes:
         欠费核销金额。
 
         :return: The adjustment_amount of this MonthlyBillRes.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._adjustment_amount
 
@@ -903,7 +903,7 @@ class MonthlyBillRes:
         欠费核销金额。
 
         :param adjustment_amount: The adjustment_amount of this MonthlyBillRes.
-        :type adjustment_amount: float
+        :type adjustment_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._adjustment_amount = adjustment_amount
 
@@ -914,7 +914,7 @@ class MonthlyBillRes:
         官网价。
 
         :return: The official_amount of this MonthlyBillRes.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._official_amount
 
@@ -925,7 +925,7 @@ class MonthlyBillRes:
         官网价。
 
         :param official_amount: The official_amount of this MonthlyBillRes.
-        :type official_amount: float
+        :type official_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._official_amount = official_amount
 
@@ -936,7 +936,7 @@ class MonthlyBillRes:
         对应官网价折扣金额。
 
         :return: The discount_amount of this MonthlyBillRes.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._discount_amount
 
@@ -947,7 +947,7 @@ class MonthlyBillRes:
         对应官网价折扣金额。
 
         :param discount_amount: The discount_amount of this MonthlyBillRes.
-        :type discount_amount: float
+        :type discount_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._discount_amount = discount_amount
 

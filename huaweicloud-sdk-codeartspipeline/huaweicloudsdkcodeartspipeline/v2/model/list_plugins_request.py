@@ -54,10 +54,8 @@ class ListPluginsRequest:
         self.discriminator = None
 
         self.domain_id = domain_id
-        if offset is not None:
-            self.offset = offset
-        if limit is not None:
-            self.limit = limit
+        self.offset = offset
+        self.limit = limit
         if body is not None:
             self.body = body
 

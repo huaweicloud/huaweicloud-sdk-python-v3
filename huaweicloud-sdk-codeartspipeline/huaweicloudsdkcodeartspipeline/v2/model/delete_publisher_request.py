@@ -44,8 +44,7 @@ class DeletePublisherRequest:
         self.discriminator = None
 
         self.domain_id = domain_id
-        if publisher_unique_id is not None:
-            self.publisher_unique_id = publisher_unique_id
+        self.publisher_unique_id = publisher_unique_id
 
     @property
     def domain_id(self):

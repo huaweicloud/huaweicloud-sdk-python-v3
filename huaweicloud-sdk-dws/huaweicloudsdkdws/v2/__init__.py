@@ -45,6 +45,9 @@ from huaweicloudsdkdws.v2.model.batch_delete_resource_tag_response import BatchD
 from huaweicloudsdkdws.v2.model.batch_delete_resource_tags import BatchDeleteResourceTags
 from huaweicloudsdkdws.v2.model.cancel_readonly_cluster_request import CancelReadonlyClusterRequest
 from huaweicloudsdkdws.v2.model.cancel_readonly_cluster_response import CancelReadonlyClusterResponse
+from huaweicloudsdkdws.v2.model.change_security_group_request import ChangeSecurityGroupRequest
+from huaweicloudsdkdws.v2.model.change_security_group_request_body import ChangeSecurityGroupRequestBody
+from huaweicloudsdkdws.v2.model.change_security_group_response import ChangeSecurityGroupResponse
 from huaweicloudsdkdws.v2.model.check_cluster_request import CheckClusterRequest
 from huaweicloudsdkdws.v2.model.check_cluster_response import CheckClusterResponse
 from huaweicloudsdkdws.v2.model.check_disaster_name_request import CheckDisasterNameRequest
@@ -61,6 +64,7 @@ from huaweicloudsdkdws.v2.model.cluster_description_info import ClusterDescripti
 from huaweicloudsdkdws.v2.model.cluster_detail import ClusterDetail
 from huaweicloudsdkdws.v2.model.cluster_disaster_recovery import ClusterDisasterRecovery
 from huaweicloudsdkdws.v2.model.cluster_elb_info import ClusterElbInfo
+from huaweicloudsdkdws.v2.model.cluster_flavor_detail_info import ClusterFlavorDetailInfo
 from huaweicloudsdkdws.v2.model.cluster_flavor_resp import ClusterFlavorResp
 from huaweicloudsdkdws.v2.model.cluster_info import ClusterInfo
 from huaweicloudsdkdws.v2.model.cluster_metric import ClusterMetric
@@ -196,6 +200,8 @@ from huaweicloudsdkdws.v2.model.ext_data_source import ExtDataSource
 from huaweicloudsdkdws.v2.model.ext_data_source_req import ExtDataSourceReq
 from huaweicloudsdkdws.v2.model.failed_reason import FailedReason
 from huaweicloudsdkdws.v2.model.fine_grained_snapshot_detail import FineGrainedSnapshotDetail
+from huaweicloudsdkdws.v2.model.flavor_attribute_info import FlavorAttributeInfo
+from huaweicloudsdkdws.v2.model.flavor_volume_node_info import FlavorVolumeNodeInfo
 from huaweicloudsdkdws.v2.model.grant import Grant
 from huaweicloudsdkdws.v2.model.host_overview_response import HostOverviewResponse
 from huaweicloudsdkdws.v2.model.indicator_info import IndicatorInfo
@@ -399,6 +405,8 @@ from huaweicloudsdkdws.v2.model.save_cluster_description_info_response import Sa
 from huaweicloudsdkdws.v2.model.scale_out import ScaleOut
 from huaweicloudsdkdws.v2.model.schedule_conf import ScheduleConf
 from huaweicloudsdkdws.v2.model.schema_info import SchemaInfo
+from huaweicloudsdkdws.v2.model.show_cluster_flavor_request import ShowClusterFlavorRequest
+from huaweicloudsdkdws.v2.model.show_cluster_flavor_response import ShowClusterFlavorResponse
 from huaweicloudsdkdws.v2.model.show_cluster_redistribution_request import ShowClusterRedistributionRequest
 from huaweicloudsdkdws.v2.model.show_cluster_redistribution_response import ShowClusterRedistributionResponse
 from huaweicloudsdkdws.v2.model.show_database_authority_request import ShowDatabaseAuthorityRequest

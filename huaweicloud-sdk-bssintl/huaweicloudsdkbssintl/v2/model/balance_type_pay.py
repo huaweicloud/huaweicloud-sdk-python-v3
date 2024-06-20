@@ -18,7 +18,7 @@ class BalanceTypePay:
 
     openapi_types = {
         'balance_type_id': 'str',
-        'deduct_amount': 'float'
+        'deduct_amount': 'decimal.Decimal'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class BalanceTypePay:
         :param balance_type_id: 账户类型。 BALANCE_TYPE_DEBIT：现金账户BALANCE_TYPE_CREDIT：信用账户BALANCE_TYPE_BONUS：奖励账户（该账户已下线）BALANCE_TYPE_COUPON：代金券账户BALANCE_TYPE_DEBIT_RATE：折扣账户
         :type balance_type_id: str
         :param deduct_amount: 支出金额。 单位：分
-        :type deduct_amount: float
+        :type deduct_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         
         
@@ -77,7 +77,7 @@ class BalanceTypePay:
         支出金额。 单位：分
 
         :return: The deduct_amount of this BalanceTypePay.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._deduct_amount
 
@@ -88,7 +88,7 @@ class BalanceTypePay:
         支出金额。 单位：分
 
         :param deduct_amount: The deduct_amount of this BalanceTypePay.
-        :type deduct_amount: float
+        :type deduct_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._deduct_amount = deduct_amount
 

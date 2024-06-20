@@ -18,7 +18,7 @@ class OrderRefundInfoV2:
 
     openapi_types = {
         'id': 'str',
-        'amount': 'float',
+        'amount': 'decimal.Decimal',
         'measure_id': 'str',
         'customer_id': 'str',
         'resource_type_code': 'str',
@@ -50,7 +50,7 @@ class OrderRefundInfoV2:
         :param id: 该记录的ID。
         :type id: str
         :param amount: 金额。 金额为负数，表示退订金额。金额为正数，表示已消费金额或收取的退订手续费。
-        :type amount: float
+        :type amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param measure_id: 金额的度量单位。 1：元
         :type measure_id: str
         :param customer_id: 客户账号ID。
@@ -126,7 +126,7 @@ class OrderRefundInfoV2:
         金额。 金额为负数，表示退订金额。金额为正数，表示已消费金额或收取的退订手续费。
 
         :return: The amount of this OrderRefundInfoV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._amount
 
@@ -137,7 +137,7 @@ class OrderRefundInfoV2:
         金额。 金额为负数，表示退订金额。金额为正数，表示已消费金额或收取的退订手续费。
 
         :param amount: The amount of this OrderRefundInfoV2.
-        :type amount: float
+        :type amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._amount = amount
 

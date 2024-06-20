@@ -43,8 +43,7 @@ class UpdateRuleSetReq:
         self._rules = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
+        self.name = name
         if rules is not None:
             self.rules = rules
 

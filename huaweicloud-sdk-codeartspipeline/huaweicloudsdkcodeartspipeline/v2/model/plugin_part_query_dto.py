@@ -43,9 +43,9 @@ class PluginPartQueryDTO:
         :type display_name: str
         :param version: 版本号
         :type version: str
-        :param plugin_attribution: 插件属性
+        :param plugin_attribution: 插件属性,custom/official
         :type plugin_attribution: str
-        :param version_attribution: 版本属性
+        :param version_attribution: 版本属性,draft/formal
         :type version_attribution: str
         """
         
@@ -58,14 +58,10 @@ class PluginPartQueryDTO:
         self._version_attribution = None
         self.discriminator = None
 
-        if plugin_name is not None:
-            self.plugin_name = plugin_name
-        if display_name is not None:
-            self.display_name = display_name
-        if version is not None:
-            self.version = version
-        if plugin_attribution is not None:
-            self.plugin_attribution = plugin_attribution
+        self.plugin_name = plugin_name
+        self.display_name = display_name
+        self.version = version
+        self.plugin_attribution = plugin_attribution
         if version_attribution is not None:
             self.version_attribution = version_attribution
 
@@ -139,7 +135,7 @@ class PluginPartQueryDTO:
     def plugin_attribution(self):
         """Gets the plugin_attribution of this PluginPartQueryDTO.
 
-        插件属性
+        插件属性,custom/official
 
         :return: The plugin_attribution of this PluginPartQueryDTO.
         :rtype: str
@@ -150,7 +146,7 @@ class PluginPartQueryDTO:
     def plugin_attribution(self, plugin_attribution):
         """Sets the plugin_attribution of this PluginPartQueryDTO.
 
-        插件属性
+        插件属性,custom/official
 
         :param plugin_attribution: The plugin_attribution of this PluginPartQueryDTO.
         :type plugin_attribution: str
@@ -161,7 +157,7 @@ class PluginPartQueryDTO:
     def version_attribution(self):
         """Gets the version_attribution of this PluginPartQueryDTO.
 
-        版本属性
+        版本属性,draft/formal
 
         :return: The version_attribution of this PluginPartQueryDTO.
         :rtype: str
@@ -172,7 +168,7 @@ class PluginPartQueryDTO:
     def version_attribution(self, version_attribution):
         """Sets the version_attribution of this PluginPartQueryDTO.
 
-        版本属性
+        版本属性,draft/formal
 
         :param version_attribution: The version_attribution of this PluginPartQueryDTO.
         :type version_attribution: str

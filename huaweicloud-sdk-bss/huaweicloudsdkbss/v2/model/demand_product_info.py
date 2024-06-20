@@ -26,7 +26,7 @@ class DemandProductInfo:
         'resource_size': 'int',
         'size_measure_id': 'int',
         'usage_factor': 'str',
-        'usage_value': 'float',
+        'usage_value': 'decimal.Decimal',
         'usage_measure_id': 'int',
         'subscription_num': 'int'
     }
@@ -70,7 +70,7 @@ class DemandProductInfo:
         :param usage_factor: 使用量因子编码，大小写不敏感，取值和话单中的使用量因子一致，云服务和使用量因子对应关系举例如下： 云服务器：Duration云硬盘：Duration弹性IP：Duration带宽：Duration或upflow市场镜像：Duration 您可以调用查询使用量类型列表接口获取响应参数表3中参数code的取值，即每种云服务对应的计费因子。
         :type usage_factor: str
         :param usage_value: 使用量值。 例如按小时询价，使用量值为1，使用量单位为小时。
-        :type usage_value: float
+        :type usage_value: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param usage_measure_id: 使用量度量单位， 例如按小时询价，使用量值为1，使用量单位为小时。
         :type usage_measure_id: int
         :param subscription_num: 订购数量。
@@ -314,7 +314,7 @@ class DemandProductInfo:
         使用量值。 例如按小时询价，使用量值为1，使用量单位为小时。
 
         :return: The usage_value of this DemandProductInfo.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._usage_value
 
@@ -325,7 +325,7 @@ class DemandProductInfo:
         使用量值。 例如按小时询价，使用量值为1，使用量单位为小时。
 
         :param usage_value: The usage_value of this DemandProductInfo.
-        :type usage_value: float
+        :type usage_value: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._usage_value = usage_value
 

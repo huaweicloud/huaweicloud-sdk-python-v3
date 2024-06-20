@@ -22,13 +22,13 @@ class ListMonthlyExpendituresResponse(SdkResponse):
         'error_msg': 'str',
         'currency': 'str',
         'total_count': 'int',
-        'total_amount': 'float',
-        'debt_amount': 'float',
-        'coupon_amount': 'float',
-        'cashcoupon_amount': 'float',
-        'storedcard_amount': 'float',
-        'debit_amount': 'float',
-        'credit_amount': 'float',
+        'total_amount': 'decimal.Decimal',
+        'debt_amount': 'decimal.Decimal',
+        'coupon_amount': 'decimal.Decimal',
+        'cashcoupon_amount': 'decimal.Decimal',
+        'storedcard_amount': 'decimal.Decimal',
+        'debit_amount': 'decimal.Decimal',
+        'credit_amount': 'decimal.Decimal',
         'measure_id': 'int',
         'bill_sums': 'list[BillSumRecordInfo]'
     }
@@ -63,19 +63,19 @@ class ListMonthlyExpendituresResponse(SdkResponse):
         :param total_count: 总条数
         :type total_count: int
         :param total_amount: 总金额（包含退订）。
-        :type total_amount: float
+        :type total_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param debt_amount: 总欠费金额。
-        :type debt_amount: float
+        :type debt_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param coupon_amount: 代金券金额。
-        :type coupon_amount: float
+        :type coupon_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param cashcoupon_amount: 现金券金额，预留。
-        :type cashcoupon_amount: float
+        :type cashcoupon_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param storedcard_amount: 储值卡金额，预留。
-        :type storedcard_amount: float
+        :type storedcard_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param debit_amount: 现金账户金额。
-        :type debit_amount: float
+        :type debit_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param credit_amount: 信用账户金额。
-        :type credit_amount: float
+        :type credit_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param measure_id: 金额单位。 1：元3：分 默认值为3。
         :type measure_id: int
         :param bill_sums: 账单记录，具体参考表3。
@@ -221,7 +221,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
         总金额（包含退订）。
 
         :return: The total_amount of this ListMonthlyExpendituresResponse.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._total_amount
 
@@ -232,7 +232,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
         总金额（包含退订）。
 
         :param total_amount: The total_amount of this ListMonthlyExpendituresResponse.
-        :type total_amount: float
+        :type total_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._total_amount = total_amount
 
@@ -243,7 +243,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
         总欠费金额。
 
         :return: The debt_amount of this ListMonthlyExpendituresResponse.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._debt_amount
 
@@ -254,7 +254,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
         总欠费金额。
 
         :param debt_amount: The debt_amount of this ListMonthlyExpendituresResponse.
-        :type debt_amount: float
+        :type debt_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._debt_amount = debt_amount
 
@@ -265,7 +265,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
         代金券金额。
 
         :return: The coupon_amount of this ListMonthlyExpendituresResponse.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._coupon_amount
 
@@ -276,7 +276,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
         代金券金额。
 
         :param coupon_amount: The coupon_amount of this ListMonthlyExpendituresResponse.
-        :type coupon_amount: float
+        :type coupon_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._coupon_amount = coupon_amount
 
@@ -287,7 +287,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
         现金券金额，预留。
 
         :return: The cashcoupon_amount of this ListMonthlyExpendituresResponse.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._cashcoupon_amount
 
@@ -298,7 +298,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
         现金券金额，预留。
 
         :param cashcoupon_amount: The cashcoupon_amount of this ListMonthlyExpendituresResponse.
-        :type cashcoupon_amount: float
+        :type cashcoupon_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._cashcoupon_amount = cashcoupon_amount
 
@@ -309,7 +309,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
         储值卡金额，预留。
 
         :return: The storedcard_amount of this ListMonthlyExpendituresResponse.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._storedcard_amount
 
@@ -320,7 +320,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
         储值卡金额，预留。
 
         :param storedcard_amount: The storedcard_amount of this ListMonthlyExpendituresResponse.
-        :type storedcard_amount: float
+        :type storedcard_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._storedcard_amount = storedcard_amount
 
@@ -331,7 +331,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
         现金账户金额。
 
         :return: The debit_amount of this ListMonthlyExpendituresResponse.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._debit_amount
 
@@ -342,7 +342,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
         现金账户金额。
 
         :param debit_amount: The debit_amount of this ListMonthlyExpendituresResponse.
-        :type debit_amount: float
+        :type debit_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._debit_amount = debit_amount
 
@@ -353,7 +353,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
         信用账户金额。
 
         :return: The credit_amount of this ListMonthlyExpendituresResponse.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._credit_amount
 
@@ -364,7 +364,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
         信用账户金额。
 
         :param credit_amount: The credit_amount of this ListMonthlyExpendituresResponse.
-        :type credit_amount: float
+        :type credit_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._credit_amount = credit_amount
 

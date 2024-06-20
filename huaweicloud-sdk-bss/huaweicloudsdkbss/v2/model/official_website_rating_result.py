@@ -17,7 +17,7 @@ class OfficialWebsiteRatingResult:
     sensitive_list = []
 
     openapi_types = {
-        'official_website_amount': 'float',
+        'official_website_amount': 'decimal.Decimal',
         'installment_official_website_amount': 'str',
         'installment_period_type': 'int',
         'measure_id': 'int',
@@ -38,7 +38,7 @@ class OfficialWebsiteRatingResult:
         The model defined in huaweicloud sdk
 
         :param official_website_amount: 包年/包月产品的官网价。
-        :type official_website_amount: float
+        :type official_website_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param installment_official_website_amount: 分期金额的官网价。  说明： 暂只支持IES产品。
         :type installment_official_website_amount: str
         :param installment_period_type: 分期付款的周期类型。 2：月  说明： 暂只支持IES产品。
@@ -76,7 +76,7 @@ class OfficialWebsiteRatingResult:
         包年/包月产品的官网价。
 
         :return: The official_website_amount of this OfficialWebsiteRatingResult.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._official_website_amount
 
@@ -87,7 +87,7 @@ class OfficialWebsiteRatingResult:
         包年/包月产品的官网价。
 
         :param official_website_amount: The official_website_amount of this OfficialWebsiteRatingResult.
-        :type official_website_amount: float
+        :type official_website_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._official_website_amount = official_website_amount
 

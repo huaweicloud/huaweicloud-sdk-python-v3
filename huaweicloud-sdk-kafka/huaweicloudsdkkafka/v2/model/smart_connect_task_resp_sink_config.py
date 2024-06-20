@@ -32,9 +32,6 @@ class SmartConnectTaskRespSinkConfig:
         'obs_part_size': 'int',
         'flush_size': 'int',
         'timezone': 'str',
-        'connector_class': 'str',
-        'storage_class': 'str',
-        'format_class': 'str',
         'schema_generator_class': 'str',
         'partitioner_class': 'str',
         'value_converter': 'str',
@@ -58,9 +55,6 @@ class SmartConnectTaskRespSinkConfig:
         'obs_part_size': 'obs_part_size',
         'flush_size': 'flush_size',
         'timezone': 'timezone',
-        'connector_class': 'connector_class',
-        'storage_class': 'storage_class',
-        'format_class': 'format_class',
         'schema_generator_class': 'schema_generator_class',
         'partitioner_class': 'partitioner_class',
         'value_converter': 'value_converter',
@@ -68,7 +62,7 @@ class SmartConnectTaskRespSinkConfig:
         'kv_delimiter': 'kv_delimiter'
     }
 
-    def __init__(self, redis_address=None, redis_type=None, dcs_instance_id=None, target_db=None, consumer_strategy=None, destination_file_type=None, deliver_time_interval=None, obs_bucket_name=None, obs_path=None, partition_format=None, record_delimiter=None, store_keys=None, obs_part_size=None, flush_size=None, timezone=None, connector_class=None, storage_class=None, format_class=None, schema_generator_class=None, partitioner_class=None, value_converter=None, key_converter=None, kv_delimiter=None):
+    def __init__(self, redis_address=None, redis_type=None, dcs_instance_id=None, target_db=None, consumer_strategy=None, destination_file_type=None, deliver_time_interval=None, obs_bucket_name=None, obs_path=None, partition_format=None, record_delimiter=None, store_keys=None, obs_part_size=None, flush_size=None, timezone=None, schema_generator_class=None, partitioner_class=None, value_converter=None, key_converter=None, kv_delimiter=None):
         """SmartConnectTaskRespSinkConfig
 
         The model defined in huaweicloud sdk
@@ -103,12 +97,6 @@ class SmartConnectTaskRespSinkConfig:
         :type flush_size: int
         :param timezone: 时区。（仅目标端类型为OBS时会显示）
         :type timezone: str
-        :param connector_class: connector类，默认为\&quot;com.huawei.dms.connector.obs.OBSSinkConnector\&quot;。（仅目标端类型为OBS时会显示）
-        :type connector_class: str
-        :param storage_class: storage类，默认为com.huawei.dms.connector.obs.storage.OBSStorage\&quot;。（仅目标端类型为OBS时会显示）
-        :type storage_class: str
-        :param format_class: format类，默认为\&quot;com.huawei.dms.connector.obs.format.bytearray.ByteArrayFormat\&quot;。（仅目标端类型为OBS时会显示）
-        :type format_class: str
         :param schema_generator_class: schema_generator类，默认为\&quot;io.confluent.connect.storage.hive.schema.DefaultSchemaGenerator\&quot;。（仅目标端类型为OBS时会显示）
         :type schema_generator_class: str
         :param partitioner_class: partitioner类，默认\&quot;io.confluent.connect.storage.partitioner.TimeBasedPartitioner\&quot;。（仅目标端类型为OBS时会显示）
@@ -138,9 +126,6 @@ class SmartConnectTaskRespSinkConfig:
         self._obs_part_size = None
         self._flush_size = None
         self._timezone = None
-        self._connector_class = None
-        self._storage_class = None
-        self._format_class = None
         self._schema_generator_class = None
         self._partitioner_class = None
         self._value_converter = None
@@ -178,12 +163,6 @@ class SmartConnectTaskRespSinkConfig:
             self.flush_size = flush_size
         if timezone is not None:
             self.timezone = timezone
-        if connector_class is not None:
-            self.connector_class = connector_class
-        if storage_class is not None:
-            self.storage_class = storage_class
-        if format_class is not None:
-            self.format_class = format_class
         if schema_generator_class is not None:
             self.schema_generator_class = schema_generator_class
         if partitioner_class is not None:
@@ -524,72 +503,6 @@ class SmartConnectTaskRespSinkConfig:
         :type timezone: str
         """
         self._timezone = timezone
-
-    @property
-    def connector_class(self):
-        """Gets the connector_class of this SmartConnectTaskRespSinkConfig.
-
-        connector类，默认为\"com.huawei.dms.connector.obs.OBSSinkConnector\"。（仅目标端类型为OBS时会显示）
-
-        :return: The connector_class of this SmartConnectTaskRespSinkConfig.
-        :rtype: str
-        """
-        return self._connector_class
-
-    @connector_class.setter
-    def connector_class(self, connector_class):
-        """Sets the connector_class of this SmartConnectTaskRespSinkConfig.
-
-        connector类，默认为\"com.huawei.dms.connector.obs.OBSSinkConnector\"。（仅目标端类型为OBS时会显示）
-
-        :param connector_class: The connector_class of this SmartConnectTaskRespSinkConfig.
-        :type connector_class: str
-        """
-        self._connector_class = connector_class
-
-    @property
-    def storage_class(self):
-        """Gets the storage_class of this SmartConnectTaskRespSinkConfig.
-
-        storage类，默认为com.huawei.dms.connector.obs.storage.OBSStorage\"。（仅目标端类型为OBS时会显示）
-
-        :return: The storage_class of this SmartConnectTaskRespSinkConfig.
-        :rtype: str
-        """
-        return self._storage_class
-
-    @storage_class.setter
-    def storage_class(self, storage_class):
-        """Sets the storage_class of this SmartConnectTaskRespSinkConfig.
-
-        storage类，默认为com.huawei.dms.connector.obs.storage.OBSStorage\"。（仅目标端类型为OBS时会显示）
-
-        :param storage_class: The storage_class of this SmartConnectTaskRespSinkConfig.
-        :type storage_class: str
-        """
-        self._storage_class = storage_class
-
-    @property
-    def format_class(self):
-        """Gets the format_class of this SmartConnectTaskRespSinkConfig.
-
-        format类，默认为\"com.huawei.dms.connector.obs.format.bytearray.ByteArrayFormat\"。（仅目标端类型为OBS时会显示）
-
-        :return: The format_class of this SmartConnectTaskRespSinkConfig.
-        :rtype: str
-        """
-        return self._format_class
-
-    @format_class.setter
-    def format_class(self, format_class):
-        """Sets the format_class of this SmartConnectTaskRespSinkConfig.
-
-        format类，默认为\"com.huawei.dms.connector.obs.format.bytearray.ByteArrayFormat\"。（仅目标端类型为OBS时会显示）
-
-        :param format_class: The format_class of this SmartConnectTaskRespSinkConfig.
-        :type format_class: str
-        """
-        self._format_class = format_class
 
     @property
     def schema_generator_class(self):

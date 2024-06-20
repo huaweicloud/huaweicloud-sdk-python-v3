@@ -1410,6 +1410,8 @@ class CssAsyncClient(Client):
             query_params.append(('start', local_var_params['start']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'datastore_type' in local_var_params:
+            query_params.append(('datastoreType', local_var_params['datastore_type']))
 
         header_params = {}
 

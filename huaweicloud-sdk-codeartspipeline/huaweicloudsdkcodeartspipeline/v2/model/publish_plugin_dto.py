@@ -48,12 +48,9 @@ class PublishPluginDTO:
         self._publisher_unique_id = None
         self.discriminator = None
 
-        if plugin_name is not None:
-            self.plugin_name = plugin_name
-        if version is not None:
-            self.version = version
-        if publisher_unique_id is not None:
-            self.publisher_unique_id = publisher_unique_id
+        self.plugin_name = plugin_name
+        self.version = version
+        self.publisher_unique_id = publisher_unique_id
 
     @property
     def plugin_name(self):

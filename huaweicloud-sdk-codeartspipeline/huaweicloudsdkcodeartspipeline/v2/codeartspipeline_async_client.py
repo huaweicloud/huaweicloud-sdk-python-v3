@@ -738,6 +738,10 @@ class CodeArtsPipelineAsyncClient(Client):
         query_params = []
         if 'plugin_name' in local_var_params:
             query_params.append(('plugin_name', local_var_params['plugin_name']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'version' in local_var_params:
+            query_params.append(('version', local_var_params['version']))
 
         header_params = {}
 

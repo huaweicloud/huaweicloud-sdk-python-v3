@@ -18,15 +18,17 @@ class ListClustersDetailsRequest:
 
     openapi_types = {
         'start': 'int',
-        'limit': 'int'
+        'limit': 'int',
+        'datastore_type': 'str'
     }
 
     attribute_map = {
         'start': 'start',
-        'limit': 'limit'
+        'limit': 'limit',
+        'datastore_type': 'datastoreType'
     }
 
-    def __init__(self, start=None, limit=None):
+    def __init__(self, start=None, limit=None, datastore_type=None):
         """ListClustersDetailsRequest
 
         The model defined in huaweicloud sdk
@@ -35,18 +37,23 @@ class ListClustersDetailsRequest:
         :type start: int
         :param limit: 指定查询个数，默认值为10，即一次查询10个集群信息。
         :type limit: int
+        :param datastore_type: 指定查询的集群引擎类型。
+        :type datastore_type: str
         """
         
         
 
         self._start = None
         self._limit = None
+        self._datastore_type = None
         self.discriminator = None
 
         if start is not None:
             self.start = start
         if limit is not None:
             self.limit = limit
+        if datastore_type is not None:
+            self.datastore_type = datastore_type
 
     @property
     def start(self):
@@ -91,6 +98,28 @@ class ListClustersDetailsRequest:
         :type limit: int
         """
         self._limit = limit
+
+    @property
+    def datastore_type(self):
+        """Gets the datastore_type of this ListClustersDetailsRequest.
+
+        指定查询的集群引擎类型。
+
+        :return: The datastore_type of this ListClustersDetailsRequest.
+        :rtype: str
+        """
+        return self._datastore_type
+
+    @datastore_type.setter
+    def datastore_type(self, datastore_type):
+        """Sets the datastore_type of this ListClustersDetailsRequest.
+
+        指定查询的集群引擎类型。
+
+        :param datastore_type: The datastore_type of this ListClustersDetailsRequest.
+        :type datastore_type: str
+        """
+        self._datastore_type = datastore_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

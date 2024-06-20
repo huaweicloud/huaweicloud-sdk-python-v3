@@ -46,6 +46,8 @@ class DwsRegion:
                         "https://dws.ap-southeast-4.myhuaweicloud.cn")
     CN_EAST_5 = Region("cn-east-5",
                         "https://dws.cn-east-5.myhuaweicloud.com")
+    AF_NORTH_1 = Region("af-north-1",
+                        "https://dws.af-north-1.myhuaweicloud.com")
 
     static_fields = {
         "eu-west-101": EU_WEST_101,
@@ -68,6 +70,7 @@ class DwsRegion:
         "tr-west-1": TR_WEST_1,
         "ap-southeast-4": AP_SOUTHEAST_4,
         "cn-east-5": CN_EAST_5,
+        "af-north-1": AF_NORTH_1,
     }
 
     @classmethod

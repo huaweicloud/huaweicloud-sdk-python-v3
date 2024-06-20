@@ -23,6 +23,8 @@ class ShowPackageDetailRespTaskDetails:
         'pending_item_id': 'str',
         'pending_version': 'int',
         'script_id': 'str',
+        'task_id': 'str',
+        'start_job_status': 'int',
         'submit_timestamp': 'int',
         'submit_user_id': 'str',
         'submit_user_name': 'str',
@@ -37,6 +39,8 @@ class ShowPackageDetailRespTaskDetails:
         'pending_item_id': 'pending_item_id',
         'pending_version': 'pending_version',
         'script_id': 'script_id',
+        'task_id': 'task_id',
+        'start_job_status': 'start_job_status',
         'submit_timestamp': 'submit_timestamp',
         'submit_user_id': 'submit_user_id',
         'submit_user_name': 'submit_user_name',
@@ -44,7 +48,7 @@ class ShowPackageDetailRespTaskDetails:
         'update_type': 'update_type'
     }
 
-    def __init__(self, deploy_status=None, deployed_version=None, item_name=None, pending_item_id=None, pending_version=None, script_id=None, submit_timestamp=None, submit_user_id=None, submit_user_name=None, task_type=None, update_type=None):
+    def __init__(self, deploy_status=None, deployed_version=None, item_name=None, pending_item_id=None, pending_version=None, script_id=None, task_id=None, start_job_status=None, submit_timestamp=None, submit_user_id=None, submit_user_name=None, task_type=None, update_type=None):
         """ShowPackageDetailRespTaskDetails
 
         The model defined in huaweicloud sdk
@@ -61,6 +65,10 @@ class ShowPackageDetailRespTaskDetails:
         :type pending_version: int
         :param script_id: 具体脚本ID
         :type script_id: str
+        :param task_id: 作业ID
+        :type task_id: str
+        :param start_job_status: 作业启动状态，2：成功，3：失败
+        :type start_job_status: int
         :param submit_timestamp: 提交时间戳，13位时间戳
         :type submit_timestamp: int
         :param submit_user_id: 提交人id
@@ -81,6 +89,8 @@ class ShowPackageDetailRespTaskDetails:
         self._pending_item_id = None
         self._pending_version = None
         self._script_id = None
+        self._task_id = None
+        self._start_job_status = None
         self._submit_timestamp = None
         self._submit_user_id = None
         self._submit_user_name = None
@@ -100,6 +110,10 @@ class ShowPackageDetailRespTaskDetails:
             self.pending_version = pending_version
         if script_id is not None:
             self.script_id = script_id
+        if task_id is not None:
+            self.task_id = task_id
+        if start_job_status is not None:
+            self.start_job_status = start_job_status
         if submit_timestamp is not None:
             self.submit_timestamp = submit_timestamp
         if submit_user_id is not None:
@@ -242,6 +256,50 @@ class ShowPackageDetailRespTaskDetails:
         :type script_id: str
         """
         self._script_id = script_id
+
+    @property
+    def task_id(self):
+        """Gets the task_id of this ShowPackageDetailRespTaskDetails.
+
+        作业ID
+
+        :return: The task_id of this ShowPackageDetailRespTaskDetails.
+        :rtype: str
+        """
+        return self._task_id
+
+    @task_id.setter
+    def task_id(self, task_id):
+        """Sets the task_id of this ShowPackageDetailRespTaskDetails.
+
+        作业ID
+
+        :param task_id: The task_id of this ShowPackageDetailRespTaskDetails.
+        :type task_id: str
+        """
+        self._task_id = task_id
+
+    @property
+    def start_job_status(self):
+        """Gets the start_job_status of this ShowPackageDetailRespTaskDetails.
+
+        作业启动状态，2：成功，3：失败
+
+        :return: The start_job_status of this ShowPackageDetailRespTaskDetails.
+        :rtype: int
+        """
+        return self._start_job_status
+
+    @start_job_status.setter
+    def start_job_status(self, start_job_status):
+        """Sets the start_job_status of this ShowPackageDetailRespTaskDetails.
+
+        作业启动状态，2：成功，3：失败
+
+        :param start_job_status: The start_job_status of this ShowPackageDetailRespTaskDetails.
+        :type start_job_status: int
+        """
+        self._start_job_status = start_job_status
 
     @property
     def submit_timestamp(self):

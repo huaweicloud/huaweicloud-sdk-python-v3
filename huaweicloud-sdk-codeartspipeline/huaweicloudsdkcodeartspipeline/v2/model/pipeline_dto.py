@@ -28,7 +28,8 @@ class PipelineDTO:
         'definition': 'str',
         'project_name': 'str',
         'group_id': 'str',
-        'id': 'str'
+        'id': 'str',
+        'concurrency_control': 'PipelineConcurrencyMgmt'
     }
 
     attribute_map = {
@@ -43,10 +44,11 @@ class PipelineDTO:
         'definition': 'definition',
         'project_name': 'project_name',
         'group_id': 'group_id',
-        'id': 'id'
+        'id': 'id',
+        'concurrency_control': 'concurrency_control'
     }
 
-    def __init__(self, name=None, description=None, is_publish=None, sources=None, variables=None, schedules=None, triggers=None, manifest_version=None, definition=None, project_name=None, group_id=None, id=None):
+    def __init__(self, name=None, description=None, is_publish=None, sources=None, variables=None, schedules=None, triggers=None, manifest_version=None, definition=None, project_name=None, group_id=None, id=None, concurrency_control=None):
         """PipelineDTO
 
         The model defined in huaweicloud sdk
@@ -75,6 +77,8 @@ class PipelineDTO:
         :type group_id: str
         :param id: 若为复制场景，则为原流水线ID
         :type id: str
+        :param concurrency_control: 
+        :type concurrency_control: :class:`huaweicloudsdkcodeartspipeline.v2.PipelineConcurrencyMgmt`
         """
         
         
@@ -91,14 +95,13 @@ class PipelineDTO:
         self._project_name = None
         self._group_id = None
         self._id = None
+        self._concurrency_control = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
+        self.name = name
         if description is not None:
             self.description = description
-        if is_publish is not None:
-            self.is_publish = is_publish
+        self.is_publish = is_publish
         if sources is not None:
             self.sources = sources
         if variables is not None:
@@ -109,14 +112,15 @@ class PipelineDTO:
             self.triggers = triggers
         if manifest_version is not None:
             self.manifest_version = manifest_version
-        if definition is not None:
-            self.definition = definition
+        self.definition = definition
         if project_name is not None:
             self.project_name = project_name
         if group_id is not None:
             self.group_id = group_id
         if id is not None:
             self.id = id
+        if concurrency_control is not None:
+            self.concurrency_control = concurrency_control
 
     @property
     def name(self):
@@ -381,6 +385,24 @@ class PipelineDTO:
         :type id: str
         """
         self._id = id
+
+    @property
+    def concurrency_control(self):
+        """Gets the concurrency_control of this PipelineDTO.
+
+        :return: The concurrency_control of this PipelineDTO.
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.PipelineConcurrencyMgmt`
+        """
+        return self._concurrency_control
+
+    @concurrency_control.setter
+    def concurrency_control(self, concurrency_control):
+        """Sets the concurrency_control of this PipelineDTO.
+
+        :param concurrency_control: The concurrency_control of this PipelineDTO.
+        :type concurrency_control: :class:`huaweicloudsdkcodeartspipeline.v2.PipelineConcurrencyMgmt`
+        """
+        self._concurrency_control = concurrency_control
 
     def to_dict(self):
         """Returns the model properties as a dict"""

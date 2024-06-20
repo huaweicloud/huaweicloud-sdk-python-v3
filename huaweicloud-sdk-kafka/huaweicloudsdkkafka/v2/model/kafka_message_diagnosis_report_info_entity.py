@@ -43,7 +43,7 @@ class KafkaMessageDiagnosisReportInfoEntity:
 
         :param report_id: 诊断报告ID
         :type report_id: str
-        :param status: 消息积压诊断任务状态。 - diagnosing：诊断中; - failed：诊断失败; - deleted：手动删除; - finished：诊断完成; - normal：诊断结果正常; - abnormal：诊断结果异常
+        :param status: 消息积压诊断任务状态。 - diagnosing：诊断中 - failed：诊断失败 - deleted：手动删除 - finished：诊断完成 - normal：诊断结果正常 - abnormal：诊断结果异常
         :type status: str
         :param begin_time: 诊断任务开始时间
         :type begin_time: str
@@ -103,7 +103,7 @@ class KafkaMessageDiagnosisReportInfoEntity:
     def status(self):
         """Gets the status of this KafkaMessageDiagnosisReportInfoEntity.
 
-        消息积压诊断任务状态。 - diagnosing：诊断中; - failed：诊断失败; - deleted：手动删除; - finished：诊断完成; - normal：诊断结果正常; - abnormal：诊断结果异常
+        消息积压诊断任务状态。 - diagnosing：诊断中 - failed：诊断失败 - deleted：手动删除 - finished：诊断完成 - normal：诊断结果正常 - abnormal：诊断结果异常
 
         :return: The status of this KafkaMessageDiagnosisReportInfoEntity.
         :rtype: str
@@ -114,7 +114,7 @@ class KafkaMessageDiagnosisReportInfoEntity:
     def status(self, status):
         """Sets the status of this KafkaMessageDiagnosisReportInfoEntity.
 
-        消息积压诊断任务状态。 - diagnosing：诊断中; - failed：诊断失败; - deleted：手动删除; - finished：诊断完成; - normal：诊断结果正常; - abnormal：诊断结果异常
+        消息积压诊断任务状态。 - diagnosing：诊断中 - failed：诊断失败 - deleted：手动删除 - finished：诊断完成 - normal：诊断结果正常 - abnormal：诊断结果异常
 
         :param status: The status of this KafkaMessageDiagnosisReportInfoEntity.
         :type status: str

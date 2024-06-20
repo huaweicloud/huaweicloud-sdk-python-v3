@@ -839,7 +839,7 @@ class BssintlClient(Client):
     def create_sub_customer(self, request):
         """创建客户
 
-        功能描述：在伙伴销售平台创建客户时同步创建华为云账号，并将客户在伙伴销售平台上的账号与华为云账号进行映射。同时，创建的华为云账号与伙伴账号关联绑定。华为云伙伴能力中心（一级经销商）可以注册精英服务商伙伴（二级经销商）的子客户。注册完成后，子客户可以自动和精英服务商伙伴绑定。
+        功能描述：在伙伴销售平台创建客户时同步创建华为云账号，并将客户在伙伴销售平台上的账号与华为云账号进行映射。同时，创建的华为云账号与伙伴账号关联绑定。华为云伙伴能力中心（一级经销商）可以注册云经销商伙伴（二级经销商）的子客户。注册完成后，子客户可以自动和云经销商伙伴绑定。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1517,71 +1517,6 @@ class BssintlClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_order_discounts(self, request):
-        """查询订单可用折扣
-
-        功能描述：功能介绍客户在伙伴销售平台支付待支付订单时，查询可使用的折扣。只返回商务合同折扣和伙伴授权折扣客户在客户自建平台查看订单可用的优惠券列表。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for ListOrderDiscounts
-        :type request: :class:`huaweicloudsdkbssintl.v2.ListOrderDiscountsRequest`
-        :rtype: :class:`huaweicloudsdkbssintl.v2.ListOrderDiscountsResponse`
-        """
-        http_info = self._list_order_discounts_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_order_discounts_invoker(self, request):
-        http_info = self._list_order_discounts_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _list_order_discounts_http_info(cls, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v2/orders/customer-orders/order-discounts",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListOrderDiscountsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'order_id' in local_var_params:
-            query_params.append(('order_id', local_var_params['order_id']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -2478,71 +2413,6 @@ class BssintlClient(Client):
 
         return http_info
 
-    def update_period_to_on_demand(self, request):
-        """设置或者取消包年/包月资源到期转按需
-
-        功能描述：客户可以设置包年/包月资源到期后转为按需资源计费。包年/包月计费模式到期后，按需的计费模式即生效
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for UpdatePeriodToOnDemand
-        :type request: :class:`huaweicloudsdkbssintl.v2.UpdatePeriodToOnDemandRequest`
-        :rtype: :class:`huaweicloudsdkbssintl.v2.UpdatePeriodToOnDemandResponse`
-        """
-        http_info = self._update_period_to_on_demand_http_info(request)
-        return self._call_api(**http_info)
-
-    def update_period_to_on_demand_invoker(self, request):
-        http_info = self._update_period_to_on_demand_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _update_period_to_on_demand_http_info(cls, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v2/orders/subscriptions/resources/to-on-demand",
-            "request_type": request.__class__.__name__,
-            "response_type": "UpdatePeriodToOnDemandResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def update_sub_customer_budget(self, request):
         """设置客户预算
 
@@ -2959,6 +2829,71 @@ class BssintlClient(Client):
 
         return http_info
 
+    def list_order_discounts(self, request):
+        """查询订单可用折扣
+
+        功能描述：功能介绍客户在伙伴销售平台支付待支付订单时，查询可使用的折扣。只返回商务合同折扣和伙伴授权折扣客户在客户自建平台查看订单可用的优惠券列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListOrderDiscounts
+        :type request: :class:`huaweicloudsdkbssintl.v2.ListOrderDiscountsRequest`
+        :rtype: :class:`huaweicloudsdkbssintl.v2.ListOrderDiscountsResponse`
+        """
+        http_info = self._list_order_discounts_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_order_discounts_invoker(self, request):
+        http_info = self._list_order_discounts_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_order_discounts_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/orders/customer-orders/order-discounts",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOrderDiscountsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'order_id' in local_var_params:
+            query_params.append(('order_id', local_var_params['order_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_pay_per_use_customer_resources(self, request):
         """查询客户包年/包月资源列表
 
@@ -3271,6 +3206,71 @@ class BssintlClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_period_to_on_demand(self, request):
+        """设置或者取消包年/包月资源到期转按需
+
+        功能描述：客户可以设置包年/包月资源到期后转为按需资源计费。包年/包月计费模式到期后，按需的计费模式即生效
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdatePeriodToOnDemand
+        :type request: :class:`huaweicloudsdkbssintl.v2.UpdatePeriodToOnDemandRequest`
+        :rtype: :class:`huaweicloudsdkbssintl.v2.UpdatePeriodToOnDemandResponse`
+        """
+        http_info = self._update_period_to_on_demand_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_period_to_on_demand_invoker(self, request):
+        http_info = self._update_period_to_on_demand_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_period_to_on_demand_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/orders/subscriptions/resources/to-on-demand",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePeriodToOnDemandResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

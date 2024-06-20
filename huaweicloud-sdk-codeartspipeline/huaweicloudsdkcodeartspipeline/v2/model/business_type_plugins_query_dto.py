@@ -37,7 +37,7 @@ class BusinessTypePluginsQueryDTO:
 
         The model defined in huaweicloud sdk
 
-        :param use_condition: 用于区分插件为流水线可使用/模板可使用
+        :param use_condition: 用于区分插件为流水线可使用/模板可使用, 可选pipeline/template
         :type use_condition: str
         :param input_repo_type: 用于区分源的代码仓类型codehub/gitlab/github等
         :type input_repo_type: str
@@ -73,7 +73,7 @@ class BusinessTypePluginsQueryDTO:
     def use_condition(self):
         """Gets the use_condition of this BusinessTypePluginsQueryDTO.
 
-        用于区分插件为流水线可使用/模板可使用
+        用于区分插件为流水线可使用/模板可使用, 可选pipeline/template
 
         :return: The use_condition of this BusinessTypePluginsQueryDTO.
         :rtype: str
@@ -84,7 +84,7 @@ class BusinessTypePluginsQueryDTO:
     def use_condition(self, use_condition):
         """Sets the use_condition of this BusinessTypePluginsQueryDTO.
 
-        用于区分插件为流水线可使用/模板可使用
+        用于区分插件为流水线可使用/模板可使用, 可选pipeline/template
 
         :param use_condition: The use_condition of this BusinessTypePluginsQueryDTO.
         :type use_condition: str

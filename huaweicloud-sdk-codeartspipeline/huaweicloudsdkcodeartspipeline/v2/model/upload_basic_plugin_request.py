@@ -54,10 +54,8 @@ class UploadBasicPluginRequest:
         self.discriminator = None
 
         self.domain_id = domain_id
-        if plugin_name is not None:
-            self.plugin_name = plugin_name
-        if business_type is not None:
-            self.business_type = business_type
+        self.plugin_name = plugin_name
+        self.business_type = business_type
         if body is not None:
             self.body = body
 

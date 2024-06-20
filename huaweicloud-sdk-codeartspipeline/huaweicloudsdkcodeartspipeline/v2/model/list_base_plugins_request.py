@@ -37,7 +37,7 @@ class ListBasePluginsRequest:
 
         :param domain_id: 租户ID
         :type domain_id: str
-        :param attribution: 属性
+        :param attribution: 插件属性,可选official、published
         :type attribution: str
         :param offset: 偏移
         :type offset: str
@@ -54,12 +54,9 @@ class ListBasePluginsRequest:
         self.discriminator = None
 
         self.domain_id = domain_id
-        if attribution is not None:
-            self.attribution = attribution
-        if offset is not None:
-            self.offset = offset
-        if limit is not None:
-            self.limit = limit
+        self.attribution = attribution
+        self.offset = offset
+        self.limit = limit
 
     @property
     def domain_id(self):
@@ -87,7 +84,7 @@ class ListBasePluginsRequest:
     def attribution(self):
         """Gets the attribution of this ListBasePluginsRequest.
 
-        属性
+        插件属性,可选official、published
 
         :return: The attribution of this ListBasePluginsRequest.
         :rtype: str
@@ -98,7 +95,7 @@ class ListBasePluginsRequest:
     def attribution(self, attribution):
         """Sets the attribution of this ListBasePluginsRequest.
 
-        属性
+        插件属性,可选official、published
 
         :param attribution: The attribution of this ListBasePluginsRequest.
         :type attribution: str

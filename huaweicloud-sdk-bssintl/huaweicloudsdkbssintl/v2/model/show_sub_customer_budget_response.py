@@ -18,8 +18,8 @@ class ShowSubCustomerBudgetResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'budget_amount': 'float',
-        'used_amount': 'float',
+        'budget_amount': 'decimal.Decimal',
+        'used_amount': 'decimal.Decimal',
         'measure_id': 'int',
         'currency': 'str',
         'budget_type': 'str'
@@ -39,9 +39,9 @@ class ShowSubCustomerBudgetResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param budget_amount: 初始预算金额。
-        :type budget_amount: float
+        :type budget_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param used_amount: 已经使用的预算。该预算存在一定的时延和误差。
-        :type used_amount: float
+        :type used_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param measure_id: 金额单位。 1：元
         :type measure_id: int
         :param currency: 币种。 USD：美金
@@ -77,7 +77,7 @@ class ShowSubCustomerBudgetResponse(SdkResponse):
         初始预算金额。
 
         :return: The budget_amount of this ShowSubCustomerBudgetResponse.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._budget_amount
 
@@ -88,7 +88,7 @@ class ShowSubCustomerBudgetResponse(SdkResponse):
         初始预算金额。
 
         :param budget_amount: The budget_amount of this ShowSubCustomerBudgetResponse.
-        :type budget_amount: float
+        :type budget_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._budget_amount = budget_amount
 
@@ -99,7 +99,7 @@ class ShowSubCustomerBudgetResponse(SdkResponse):
         已经使用的预算。该预算存在一定的时延和误差。
 
         :return: The used_amount of this ShowSubCustomerBudgetResponse.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._used_amount
 
@@ -110,7 +110,7 @@ class ShowSubCustomerBudgetResponse(SdkResponse):
         已经使用的预算。该预算存在一定的时延和误差。
 
         :param used_amount: The used_amount of this ShowSubCustomerBudgetResponse.
-        :type used_amount: float
+        :type used_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._used_amount = used_amount
 

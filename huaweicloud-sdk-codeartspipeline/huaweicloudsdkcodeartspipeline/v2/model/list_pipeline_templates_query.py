@@ -49,7 +49,7 @@ class ListPipelineTemplatesQuery:
         :type name: str
         :param offset: 偏移量，表示从此偏移量开始查询，offset大于等于0，默认为0
         :type offset: int
-        :param limit: 每次查询的条目数量
+        :param limit: 每次查询的条目数量，默认为10。
         :type limit: int
         :param sort_key: 用于排序的字段，非必选。取值为：name，create_time
         :type sort_key: str
@@ -175,7 +175,7 @@ class ListPipelineTemplatesQuery:
     def limit(self):
         """Gets the limit of this ListPipelineTemplatesQuery.
 
-        每次查询的条目数量
+        每次查询的条目数量，默认为10。
 
         :return: The limit of this ListPipelineTemplatesQuery.
         :rtype: int
@@ -186,7 +186,7 @@ class ListPipelineTemplatesQuery:
     def limit(self, limit):
         """Sets the limit of this ListPipelineTemplatesQuery.
 
-        每次查询的条目数量
+        每次查询的条目数量，默认为10。
 
         :param limit: The limit of this ListPipelineTemplatesQuery.
         :type limit: int

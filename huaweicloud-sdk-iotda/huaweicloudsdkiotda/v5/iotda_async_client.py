@@ -2611,6 +2611,351 @@ class IoTDAAsyncClient(Client):
 
         return http_info
 
+    def create_device_authorizer_async(self, request):
+        """创建自定义鉴权
+
+        应用服务器可调用此接口在物联网平台创建一个自定义鉴权。自定义鉴权是指用户可以通过函数服务自定义实现鉴权逻辑，以对接入平台的设备进行身份认证。
+        - 单个实例最大可配置10个自定义鉴权
+        - 仅标准版实例、企业版实例支持该接口调用，基础版不支持。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateDeviceAuthorizer
+        :type request: :class:`huaweicloudsdkiotda.v5.CreateDeviceAuthorizerRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.CreateDeviceAuthorizerResponse`
+        """
+        http_info = self._create_device_authorizer_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_device_authorizer_async_invoker(self, request):
+        http_info = self._create_device_authorizer_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_device_authorizer_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/iot/{project_id}/device-authorizers",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDeviceAuthorizerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_device_authorizer_async(self, request):
+        """删除自定义鉴权
+
+        应用服务器可调用此接口在物联网平台上删除指定自定义鉴权。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteDeviceAuthorizer
+        :type request: :class:`huaweicloudsdkiotda.v5.DeleteDeviceAuthorizerRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.DeleteDeviceAuthorizerResponse`
+        """
+        http_info = self._delete_device_authorizer_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_device_authorizer_async_invoker(self, request):
+        http_info = self._delete_device_authorizer_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_device_authorizer_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/iot/{project_id}/device-authorizers/{authorizer_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDeviceAuthorizerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'authorizer_id' in local_var_params:
+            path_params['authorizer_id'] = local_var_params['authorizer_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_device_authorizers_async(self, request):
+        """查询自定义鉴权列表
+
+        应用服务器可调用此接口在物联网平台查询自定义鉴权列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListDeviceAuthorizers
+        :type request: :class:`huaweicloudsdkiotda.v5.ListDeviceAuthorizersRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.ListDeviceAuthorizersResponse`
+        """
+        http_info = self._list_device_authorizers_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_device_authorizers_async_invoker(self, request):
+        http_info = self._list_device_authorizers_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_device_authorizers_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/iot/{project_id}/device-authorizers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDeviceAuthorizersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'authorizer_name' in local_var_params:
+            query_params.append(('authorizer_name', local_var_params['authorizer_name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_device_authorizer_async(self, request):
+        """查询自定义鉴权详情
+
+        应用服务器可调用此接口在物联网平台查询指定自定义鉴权ID的详细信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowDeviceAuthorizer
+        :type request: :class:`huaweicloudsdkiotda.v5.ShowDeviceAuthorizerRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.ShowDeviceAuthorizerResponse`
+        """
+        http_info = self._show_device_authorizer_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_device_authorizer_async_invoker(self, request):
+        http_info = self._show_device_authorizer_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_device_authorizer_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/iot/{project_id}/device-authorizers/{authorizer_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDeviceAuthorizerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'authorizer_id' in local_var_params:
+            path_params['authorizer_id'] = local_var_params['authorizer_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_device_authorizer_async(self, request):
+        """更新指定id的自定义鉴权
+
+        应用服务器可调用此接口在物联网平台更新指定id的自定义鉴权。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateDeviceAuthorizer
+        :type request: :class:`huaweicloudsdkiotda.v5.UpdateDeviceAuthorizerRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.UpdateDeviceAuthorizerResponse`
+        """
+        http_info = self._update_device_authorizer_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_device_authorizer_async_invoker(self, request):
+        http_info = self._update_device_authorizer_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_device_authorizer_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/iot/{project_id}/device-authorizers/{authorizer_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDeviceAuthorizerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'authorizer_id' in local_var_params:
+            path_params['authorizer_id'] = local_var_params['authorizer_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def add_device_group_async(self, request):
         """添加设备组
 
@@ -5331,6 +5676,560 @@ class IoTDAAsyncClient(Client):
 
         return http_info
 
+    def bind_device_policy_async(self, request):
+        """绑定设备策略
+
+        应用服务器可调用此接口在物联网平台上为批量设备绑定目标策略，目前支持绑定目标类型为：设备、产品，当目标类型为产品时，该产品下所有设备都会生效。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BindDevicePolicy
+        :type request: :class:`huaweicloudsdkiotda.v5.BindDevicePolicyRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.BindDevicePolicyResponse`
+        """
+        http_info = self._bind_device_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def bind_device_policy_async_invoker(self, request):
+        http_info = self._bind_device_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _bind_device_policy_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/iot/{project_id}/device-policies/{policy_id}/bind",
+            "request_type": request.__class__.__name__,
+            "response_type": "BindDevicePolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_device_policy_async(self, request):
+        """创建设备策略
+
+        应用服务器可调用此接口在物联网平台创建一个策略，该策略需要绑定到设备和产品下才能生效。
+        - 一个实例最多能创建50个设备策略。
+        - 仅**标准版实例、企业版实例**支持该接口调用，基础版不支持。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateDevicePolicy
+        :type request: :class:`huaweicloudsdkiotda.v5.CreateDevicePolicyRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.CreateDevicePolicyResponse`
+        """
+        http_info = self._create_device_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_device_policy_async_invoker(self, request):
+        http_info = self._create_device_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_device_policy_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/iot/{project_id}/device-policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDevicePolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_device_policy_async(self, request):
+        """删除设备策略
+
+        应用服务器可调用此接口在物联网平台上删除指定策略，注意：删除策略同时会解绑该策略下所有绑定对象。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteDevicePolicy
+        :type request: :class:`huaweicloudsdkiotda.v5.DeleteDevicePolicyRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.DeleteDevicePolicyResponse`
+        """
+        http_info = self._delete_device_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_device_policy_async_invoker(self, request):
+        http_info = self._delete_device_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_device_policy_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/iot/{project_id}/device-policies/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDevicePolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_device_policies_async(self, request):
+        """查询设备策略列表
+
+        应用服务器可调用此接口在物联网平台查询策略列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListDevicePolicies
+        :type request: :class:`huaweicloudsdkiotda.v5.ListDevicePoliciesRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.ListDevicePoliciesResponse`
+        """
+        http_info = self._list_device_policies_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_device_policies_async_invoker(self, request):
+        http_info = self._list_device_policies_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_device_policies_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/iot/{project_id}/device-policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDevicePoliciesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'app_id' in local_var_params:
+            query_params.append(('app_id', local_var_params['app_id']))
+        if 'policy_name' in local_var_params:
+            query_params.append(('policy_name', local_var_params['policy_name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_device_policy_async(self, request):
+        """查询设备策略详情
+
+        应用服务器可调用此接口在物联网平台查询指定策略ID的详细信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowDevicePolicy
+        :type request: :class:`huaweicloudsdkiotda.v5.ShowDevicePolicyRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.ShowDevicePolicyResponse`
+        """
+        http_info = self._show_device_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_device_policy_async_invoker(self, request):
+        http_info = self._show_device_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_device_policy_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/iot/{project_id}/device-policies/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDevicePolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_targets_in_device_policy_async(self, request):
+        """查询设备策略绑定的目标列表
+
+        应用服务器可调用此接口在物联网平台上查询指定策略ID下绑定的目标列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowTargetsInDevicePolicy
+        :type request: :class:`huaweicloudsdkiotda.v5.ShowTargetsInDevicePolicyRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.ShowTargetsInDevicePolicyResponse`
+        """
+        http_info = self._show_targets_in_device_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_targets_in_device_policy_async_invoker(self, request):
+        http_info = self._show_targets_in_device_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_targets_in_device_policy_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/iot/{project_id}/device-policies/{policy_id}/list-targets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTargetsInDevicePolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def unbind_device_policy_async(self, request):
+        """解绑设备策略
+
+        应用服务器可调用此接口在物联网平台上解除指定策略下绑定的目标对象。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UnbindDevicePolicy
+        :type request: :class:`huaweicloudsdkiotda.v5.UnbindDevicePolicyRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.UnbindDevicePolicyResponse`
+        """
+        http_info = self._unbind_device_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def unbind_device_policy_async_invoker(self, request):
+        http_info = self._unbind_device_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _unbind_device_policy_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/iot/{project_id}/device-policies/{policy_id}/unbind",
+            "request_type": request.__class__.__name__,
+            "response_type": "UnbindDevicePolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_device_policy_async(self, request):
+        """更新设备策略信息
+
+        应用服务器可调用此接口在物联网平台更新策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateDevicePolicy
+        :type request: :class:`huaweicloudsdkiotda.v5.UpdateDevicePolicyRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.UpdateDevicePolicyResponse`
+        """
+        http_info = self._update_device_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_device_policy_async_invoker(self, request):
+        http_info = self._update_device_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_device_policy_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/iot/{project_id}/device-policies/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDevicePolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_product_async(self, request):
         """创建产品
 
@@ -5787,6 +6686,352 @@ class IoTDAAsyncClient(Client):
         path_params = {}
         if 'device_id' in local_var_params:
             path_params['device_id'] = local_var_params['device_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_provisioning_template_async(self, request):
+        """创建预调配模板
+
+        应用服务器可调用此接口在物联网平台创建一个预调配模板。用户的设备未在平台注册时，可以通过预调配模板在设备首次接入物联网平台时将设备信息自动注册到物联网平台。
+        - 该预调配模板至少需要绑定到一个设备CA证书下才能生效。
+        - 一个实例最多可有10个预调配模板。
+        - 仅标准版实例、企业版实例支持该接口调用，基础版不支持。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateProvisioningTemplate
+        :type request: :class:`huaweicloudsdkiotda.v5.CreateProvisioningTemplateRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.CreateProvisioningTemplateResponse`
+        """
+        http_info = self._create_provisioning_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_provisioning_template_async_invoker(self, request):
+        http_info = self._create_provisioning_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_provisioning_template_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/iot/{project_id}/provisioning-templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateProvisioningTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_provisioning_template_async(self, request):
+        """删除预调配模板
+
+        应用服务器可调用此接口在物联网平台上删除指定预调配模板。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteProvisioningTemplate
+        :type request: :class:`huaweicloudsdkiotda.v5.DeleteProvisioningTemplateRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.DeleteProvisioningTemplateResponse`
+        """
+        http_info = self._delete_provisioning_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_provisioning_template_async_invoker(self, request):
+        http_info = self._delete_provisioning_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_provisioning_template_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/iot/{project_id}/provisioning-templates/{template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteProvisioningTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'template_id' in local_var_params:
+            path_params['template_id'] = local_var_params['template_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_provisioning_templates_async(self, request):
+        """查询预调配模板列表
+
+        应用服务器可调用此接口在物联网平台查询预调配模板列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListProvisioningTemplates
+        :type request: :class:`huaweicloudsdkiotda.v5.ListProvisioningTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.ListProvisioningTemplatesResponse`
+        """
+        http_info = self._list_provisioning_templates_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_provisioning_templates_async_invoker(self, request):
+        http_info = self._list_provisioning_templates_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_provisioning_templates_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/iot/{project_id}/provisioning-templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProvisioningTemplatesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'template_name' in local_var_params:
+            query_params.append(('template_name', local_var_params['template_name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_provisioning_template_async(self, request):
+        """查询预调配模板详情
+
+        应用服务器可调用此接口在物联网平台查询指定预调配模板ID的详细信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowProvisioningTemplate
+        :type request: :class:`huaweicloudsdkiotda.v5.ShowProvisioningTemplateRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.ShowProvisioningTemplateResponse`
+        """
+        http_info = self._show_provisioning_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_provisioning_template_async_invoker(self, request):
+        http_info = self._show_provisioning_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_provisioning_template_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/iot/{project_id}/provisioning-templates/{template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProvisioningTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'template_id' in local_var_params:
+            path_params['template_id'] = local_var_params['template_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_provisioning_template_async(self, request):
+        """更新指定id的预调配模板信息
+
+        应用服务器可调用此接口在物联网平台更新指定id的预调配模板。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateProvisioningTemplate
+        :type request: :class:`huaweicloudsdkiotda.v5.UpdateProvisioningTemplateRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.UpdateProvisioningTemplateResponse`
+        """
+        http_info = self._update_provisioning_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_provisioning_template_async_invoker(self, request):
+        http_info = self._update_provisioning_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_provisioning_template_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/iot/{project_id}/provisioning-templates/{template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateProvisioningTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'template_id' in local_var_params:
+            path_params['template_id'] = local_var_params['template_id']
 
         query_params = []
 

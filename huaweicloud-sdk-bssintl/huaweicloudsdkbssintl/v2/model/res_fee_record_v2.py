@@ -35,7 +35,7 @@ class ResFeeRecordV2:
         'product_name': 'str',
         'product_spec_desc': 'str',
         'sku_code': 'str',
-        'spec_size': 'float',
+        'spec_size': 'decimal.Decimal',
         'spec_size_measure_id': 'int',
         'trade_id': 'str',
         'id': 'str',
@@ -46,25 +46,25 @@ class ResFeeRecordV2:
         'order_id': 'str',
         'period_type': 'str',
         'usage_type': 'str',
-        'usage': 'float',
+        'usage': 'decimal.Decimal',
         'usage_measure_id': 'int',
-        'free_resource_usage': 'float',
+        'free_resource_usage': 'decimal.Decimal',
         'free_resource_measure_id': 'int',
-        'ri_usage': 'float',
+        'ri_usage': 'decimal.Decimal',
         'ri_usage_measure_id': 'int',
-        'unit_price': 'float',
+        'unit_price': 'decimal.Decimal',
         'unit': 'str',
-        'official_amount': 'float',
-        'discount_amount': 'float',
-        'amount': 'float',
-        'cash_amount': 'float',
-        'credit_amount': 'float',
-        'coupon_amount': 'float',
-        'flexipurchase_coupon_amount': 'float',
-        'stored_card_amount': 'float',
-        'bonus_amount': 'float',
-        'debt_amount': 'float',
-        'adjustment_amount': 'float',
+        'official_amount': 'decimal.Decimal',
+        'discount_amount': 'decimal.Decimal',
+        'amount': 'decimal.Decimal',
+        'cash_amount': 'decimal.Decimal',
+        'credit_amount': 'decimal.Decimal',
+        'coupon_amount': 'decimal.Decimal',
+        'flexipurchase_coupon_amount': 'decimal.Decimal',
+        'stored_card_amount': 'decimal.Decimal',
+        'bonus_amount': 'decimal.Decimal',
+        'debt_amount': 'decimal.Decimal',
+        'adjustment_amount': 'decimal.Decimal',
         'measure_id': 'int',
         'formula': 'str',
         'sub_service_type_code': 'str',
@@ -176,7 +176,7 @@ class ResFeeRecordV2:
         :param sku_code: SKU编码，在账单中唯一标识一个资源的规格。
         :type sku_code: str
         :param spec_size: 产品的实例大小，仅线性产品有效。  说明： 线性产品是指订购时需要指定大小的产品。例如硬盘在订购时需选择10G、20G等不同大小规格。
-        :type spec_size: float
+        :type spec_size: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param spec_size_measure_id: 产品实例大小的单位，仅线性产品有该字段。 您可以调用查询度量单位列表接口获取。
         :type spec_size_measure_id: int
         :param trade_id: 订单ID或交易ID，扣费维度的唯一标识。
@@ -198,43 +198,43 @@ class ResFeeRecordV2:
         :param usage_type: 资源使用量的类型，您可以调用查询使用量类型列表接口获取。
         :type usage_type: str
         :param usage: 资源的使用量。
-        :type usage: float
+        :type usage: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param usage_measure_id: 资源使用量的度量单位，您可以调用查询度量单位列表接口获取。
         :type usage_measure_id: int
         :param free_resource_usage: 套餐内使用量。
-        :type free_resource_usage: float
+        :type free_resource_usage: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param free_resource_measure_id: 套餐内使用量的度量单位，您可以调用查询度量单位列表接口获取。
         :type free_resource_measure_id: int
         :param ri_usage: 预留实例使用量。
-        :type ri_usage: float
+        :type ri_usage: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param ri_usage_measure_id: 预留实例使用量单位。
         :type ri_usage_measure_id: int
         :param unit_price: 产品的单价。 按需产品的单价，只有简单定价，不分档的场景会返回。 包周期产品的单价，只有包周期的如下场景会返回：包周期订购/续订/降配/升配/扩容简单定价，不分档 预留实例的单价，只有如下场景下会返回：订购/续订/降配/升配/扩容/按时计费简单定价，不分档
-        :type unit_price: float
+        :type unit_price: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param unit: 产品的单价单位。 线性产品的单价单位为“元/{线性单位}/月”或“元/{线性单位}/小时”等。非线性产品的单价单位为“元/月”或“元/小时”等。  说明： “线性单位”为线性产品（即订购时需要指定大小的产品）的大小的单位，比如硬盘的线性单位为GB，带宽的线性单位为Mbps。
         :type unit: str
         :param official_amount: 官网价，华为云商品在官网上未叠加应用商务折扣、促销折扣等优惠的销售价格。
-        :type official_amount: float
+        :type official_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param discount_amount: 优惠金额，用户使用云服务享受折扣优惠如商务折扣、伙伴授予折扣以及促销优惠等减免的金额。
-        :type discount_amount: float
+        :type discount_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param amount: 应付金额，用户使用云服务享受折扣优惠后需要支付的费用金额，包括代金券金额，精确到小数点后8位。  说明： amount的值等于cash_amount，credit_amount，coupon_amount，flexipurchase_coupon_amount，stored_card_amount，bonus_amount，debt_amount，adjustment_amount的总和。
-        :type amount: float
+        :type amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param cash_amount: 现金支付金额。
-        :type cash_amount: float
+        :type cash_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param credit_amount: 信用额度支付金额。
-        :type credit_amount: float
+        :type credit_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param coupon_amount: 代金券支付金额。
-        :type coupon_amount: float
+        :type coupon_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param flexipurchase_coupon_amount: 现金券支付金额。
-        :type flexipurchase_coupon_amount: float
+        :type flexipurchase_coupon_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param stored_card_amount: 储值卡支付金额。
-        :type stored_card_amount: float
+        :type stored_card_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param bonus_amount: 奖励金支付金额（用于现网客户未使用完的奖励金）。
-        :type bonus_amount: float
+        :type bonus_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param debt_amount: 欠费金额。
-        :type debt_amount: float
+        :type debt_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param adjustment_amount: 欠费核销金额。
-        :type adjustment_amount: float
+        :type adjustment_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param measure_id: 金额单位。 1：元
         :type measure_id: int
         :param formula: 实付金额计算公式。当前只包含如下场景： 按需简单定价 按需线性定价 包年包月新购和续费的简单定价 包年包月新购和续费的线性定价  说明： 实付金额计算公式得到的金额值等于amount - coupon_amount的差值。
@@ -829,7 +829,7 @@ class ResFeeRecordV2:
         产品的实例大小，仅线性产品有效。  说明： 线性产品是指订购时需要指定大小的产品。例如硬盘在订购时需选择10G、20G等不同大小规格。
 
         :return: The spec_size of this ResFeeRecordV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._spec_size
 
@@ -840,7 +840,7 @@ class ResFeeRecordV2:
         产品的实例大小，仅线性产品有效。  说明： 线性产品是指订购时需要指定大小的产品。例如硬盘在订购时需选择10G、20G等不同大小规格。
 
         :param spec_size: The spec_size of this ResFeeRecordV2.
-        :type spec_size: float
+        :type spec_size: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._spec_size = spec_size
 
@@ -1071,7 +1071,7 @@ class ResFeeRecordV2:
         资源的使用量。
 
         :return: The usage of this ResFeeRecordV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._usage
 
@@ -1082,7 +1082,7 @@ class ResFeeRecordV2:
         资源的使用量。
 
         :param usage: The usage of this ResFeeRecordV2.
-        :type usage: float
+        :type usage: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._usage = usage
 
@@ -1115,7 +1115,7 @@ class ResFeeRecordV2:
         套餐内使用量。
 
         :return: The free_resource_usage of this ResFeeRecordV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._free_resource_usage
 
@@ -1126,7 +1126,7 @@ class ResFeeRecordV2:
         套餐内使用量。
 
         :param free_resource_usage: The free_resource_usage of this ResFeeRecordV2.
-        :type free_resource_usage: float
+        :type free_resource_usage: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._free_resource_usage = free_resource_usage
 
@@ -1159,7 +1159,7 @@ class ResFeeRecordV2:
         预留实例使用量。
 
         :return: The ri_usage of this ResFeeRecordV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._ri_usage
 
@@ -1170,7 +1170,7 @@ class ResFeeRecordV2:
         预留实例使用量。
 
         :param ri_usage: The ri_usage of this ResFeeRecordV2.
-        :type ri_usage: float
+        :type ri_usage: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._ri_usage = ri_usage
 
@@ -1203,7 +1203,7 @@ class ResFeeRecordV2:
         产品的单价。 按需产品的单价，只有简单定价，不分档的场景会返回。 包周期产品的单价，只有包周期的如下场景会返回：包周期订购/续订/降配/升配/扩容简单定价，不分档 预留实例的单价，只有如下场景下会返回：订购/续订/降配/升配/扩容/按时计费简单定价，不分档
 
         :return: The unit_price of this ResFeeRecordV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._unit_price
 
@@ -1214,7 +1214,7 @@ class ResFeeRecordV2:
         产品的单价。 按需产品的单价，只有简单定价，不分档的场景会返回。 包周期产品的单价，只有包周期的如下场景会返回：包周期订购/续订/降配/升配/扩容简单定价，不分档 预留实例的单价，只有如下场景下会返回：订购/续订/降配/升配/扩容/按时计费简单定价，不分档
 
         :param unit_price: The unit_price of this ResFeeRecordV2.
-        :type unit_price: float
+        :type unit_price: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._unit_price = unit_price
 
@@ -1247,7 +1247,7 @@ class ResFeeRecordV2:
         官网价，华为云商品在官网上未叠加应用商务折扣、促销折扣等优惠的销售价格。
 
         :return: The official_amount of this ResFeeRecordV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._official_amount
 
@@ -1258,7 +1258,7 @@ class ResFeeRecordV2:
         官网价，华为云商品在官网上未叠加应用商务折扣、促销折扣等优惠的销售价格。
 
         :param official_amount: The official_amount of this ResFeeRecordV2.
-        :type official_amount: float
+        :type official_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._official_amount = official_amount
 
@@ -1269,7 +1269,7 @@ class ResFeeRecordV2:
         优惠金额，用户使用云服务享受折扣优惠如商务折扣、伙伴授予折扣以及促销优惠等减免的金额。
 
         :return: The discount_amount of this ResFeeRecordV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._discount_amount
 
@@ -1280,7 +1280,7 @@ class ResFeeRecordV2:
         优惠金额，用户使用云服务享受折扣优惠如商务折扣、伙伴授予折扣以及促销优惠等减免的金额。
 
         :param discount_amount: The discount_amount of this ResFeeRecordV2.
-        :type discount_amount: float
+        :type discount_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._discount_amount = discount_amount
 
@@ -1291,7 +1291,7 @@ class ResFeeRecordV2:
         应付金额，用户使用云服务享受折扣优惠后需要支付的费用金额，包括代金券金额，精确到小数点后8位。  说明： amount的值等于cash_amount，credit_amount，coupon_amount，flexipurchase_coupon_amount，stored_card_amount，bonus_amount，debt_amount，adjustment_amount的总和。
 
         :return: The amount of this ResFeeRecordV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._amount
 
@@ -1302,7 +1302,7 @@ class ResFeeRecordV2:
         应付金额，用户使用云服务享受折扣优惠后需要支付的费用金额，包括代金券金额，精确到小数点后8位。  说明： amount的值等于cash_amount，credit_amount，coupon_amount，flexipurchase_coupon_amount，stored_card_amount，bonus_amount，debt_amount，adjustment_amount的总和。
 
         :param amount: The amount of this ResFeeRecordV2.
-        :type amount: float
+        :type amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._amount = amount
 
@@ -1313,7 +1313,7 @@ class ResFeeRecordV2:
         现金支付金额。
 
         :return: The cash_amount of this ResFeeRecordV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._cash_amount
 
@@ -1324,7 +1324,7 @@ class ResFeeRecordV2:
         现金支付金额。
 
         :param cash_amount: The cash_amount of this ResFeeRecordV2.
-        :type cash_amount: float
+        :type cash_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._cash_amount = cash_amount
 
@@ -1335,7 +1335,7 @@ class ResFeeRecordV2:
         信用额度支付金额。
 
         :return: The credit_amount of this ResFeeRecordV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._credit_amount
 
@@ -1346,7 +1346,7 @@ class ResFeeRecordV2:
         信用额度支付金额。
 
         :param credit_amount: The credit_amount of this ResFeeRecordV2.
-        :type credit_amount: float
+        :type credit_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._credit_amount = credit_amount
 
@@ -1357,7 +1357,7 @@ class ResFeeRecordV2:
         代金券支付金额。
 
         :return: The coupon_amount of this ResFeeRecordV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._coupon_amount
 
@@ -1368,7 +1368,7 @@ class ResFeeRecordV2:
         代金券支付金额。
 
         :param coupon_amount: The coupon_amount of this ResFeeRecordV2.
-        :type coupon_amount: float
+        :type coupon_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._coupon_amount = coupon_amount
 
@@ -1379,7 +1379,7 @@ class ResFeeRecordV2:
         现金券支付金额。
 
         :return: The flexipurchase_coupon_amount of this ResFeeRecordV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._flexipurchase_coupon_amount
 
@@ -1390,7 +1390,7 @@ class ResFeeRecordV2:
         现金券支付金额。
 
         :param flexipurchase_coupon_amount: The flexipurchase_coupon_amount of this ResFeeRecordV2.
-        :type flexipurchase_coupon_amount: float
+        :type flexipurchase_coupon_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._flexipurchase_coupon_amount = flexipurchase_coupon_amount
 
@@ -1401,7 +1401,7 @@ class ResFeeRecordV2:
         储值卡支付金额。
 
         :return: The stored_card_amount of this ResFeeRecordV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._stored_card_amount
 
@@ -1412,7 +1412,7 @@ class ResFeeRecordV2:
         储值卡支付金额。
 
         :param stored_card_amount: The stored_card_amount of this ResFeeRecordV2.
-        :type stored_card_amount: float
+        :type stored_card_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._stored_card_amount = stored_card_amount
 
@@ -1423,7 +1423,7 @@ class ResFeeRecordV2:
         奖励金支付金额（用于现网客户未使用完的奖励金）。
 
         :return: The bonus_amount of this ResFeeRecordV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._bonus_amount
 
@@ -1434,7 +1434,7 @@ class ResFeeRecordV2:
         奖励金支付金额（用于现网客户未使用完的奖励金）。
 
         :param bonus_amount: The bonus_amount of this ResFeeRecordV2.
-        :type bonus_amount: float
+        :type bonus_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._bonus_amount = bonus_amount
 
@@ -1445,7 +1445,7 @@ class ResFeeRecordV2:
         欠费金额。
 
         :return: The debt_amount of this ResFeeRecordV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._debt_amount
 
@@ -1456,7 +1456,7 @@ class ResFeeRecordV2:
         欠费金额。
 
         :param debt_amount: The debt_amount of this ResFeeRecordV2.
-        :type debt_amount: float
+        :type debt_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._debt_amount = debt_amount
 
@@ -1467,7 +1467,7 @@ class ResFeeRecordV2:
         欠费核销金额。
 
         :return: The adjustment_amount of this ResFeeRecordV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._adjustment_amount
 
@@ -1478,7 +1478,7 @@ class ResFeeRecordV2:
         欠费核销金额。
 
         :param adjustment_amount: The adjustment_amount of this ResFeeRecordV2.
-        :type adjustment_amount: float
+        :type adjustment_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._adjustment_amount = adjustment_amount
 

@@ -112,30 +112,22 @@ class PluginDTO:
             self.unique_id = unique_id
         if icon_url is not None:
             self.icon_url = icon_url
-        if runtime_attribution is not None:
-            self.runtime_attribution = runtime_attribution
-        if plugin_name is not None:
-            self.plugin_name = plugin_name
-        if display_name is not None:
-            self.display_name = display_name
-        if business_type is not None:
-            self.business_type = business_type
-        if business_type_display_name is not None:
-            self.business_type_display_name = business_type_display_name
-        if description is not None:
-            self.description = description
+        self.runtime_attribution = runtime_attribution
+        self.plugin_name = plugin_name
+        self.display_name = display_name
+        self.business_type = business_type
+        self.business_type_display_name = business_type_display_name
+        self.description = description
         if is_private is not None:
             self.is_private = is_private
         if region is not None:
             self.region = region
         if maintainers is not None:
             self.maintainers = maintainers
-        if version is not None:
-            self.version = version
+        self.version = version
         if version_description is not None:
             self.version_description = version_description
-        if execution_info is not None:
-            self.execution_info = execution_info
+        self.execution_info = execution_info
         if input_info is not None:
             self.input_info = input_info
 

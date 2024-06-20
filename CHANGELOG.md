@@ -1,3 +1,362 @@
+# 3.1.102 2024-06-20
+
+### HuaweiCloud SDK BSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowRefundOrderDetails**
+    - changes of response param
+      - `* refund_infos.amount: double -> bigdecimal`
+  - **ListCustomerselfResourceRecords**
+    - changes of response param
+      - `* fee_records.spec_size: double -> bigdecimal`
+      - `* fee_records.usage: double -> bigdecimal`
+      - `* fee_records.free_resource_usage: double -> bigdecimal`
+      - `* fee_records.ri_usage: double -> bigdecimal`
+      - `* fee_records.unit_price: double -> bigdecimal`
+      - `* fee_records.official_amount: double -> bigdecimal`
+      - `* fee_records.discount_amount: double -> bigdecimal`
+      - `* fee_records.amount: double -> bigdecimal`
+      - `* fee_records.cash_amount: double -> bigdecimal`
+      - `* fee_records.credit_amount: double -> bigdecimal`
+      - `* fee_records.coupon_amount: double -> bigdecimal`
+      - `* fee_records.flexipurchase_coupon_amount: double -> bigdecimal`
+      - `* fee_records.stored_card_amount: double -> bigdecimal`
+      - `* fee_records.bonus_amount: double -> bigdecimal`
+      - `* fee_records.debt_amount: double -> bigdecimal`
+      - `* fee_records.adjustment_amount: double -> bigdecimal`
+  - **ShowMultiAccountTransferAmount**
+    - changes of response param
+      - `* amount_infos.avail_transfer_amount: double -> bigdecimal`
+      - `* amount_infos.amount: double -> bigdecimal`
+      - `* amount_infos.credit_amount: double -> bigdecimal`
+  - **ListEnterpriseMultiAccount**
+    - changes of response param
+      - `* amount_infos.avail_retrieve_amount: double -> bigdecimal`
+      - `* amount_infos.amount: double -> bigdecimal`
+      - `* amount_infos.credit_amount: double -> bigdecimal`
+  - **ListCustomerBillsFeeRecords**
+    - changes of response param
+      - `* records.official_amount: double -> bigdecimal`
+      - `* records.official_discount_amount: double -> bigdecimal`
+      - `* records.erase_amount: double -> bigdecimal`
+      - `* records.consume_amount: double -> bigdecimal`
+      - `* records.cash_amount: double -> bigdecimal`
+      - `* records.credit_amount: double -> bigdecimal`
+      - `* records.coupon_amount: double -> bigdecimal`
+      - `* records.flexipurchase_coupon_amount: double -> bigdecimal`
+      - `* records.stored_value_card_amount: double -> bigdecimal`
+      - `* records.bonus_amount: double -> bigdecimal`
+      - `* records.debt_amount: double -> bigdecimal`
+      - `* records.writeoff_amount: double -> bigdecimal`
+  - **ListRateOnPeriodDetail**
+    - changes of response param
+      - `* official_website_rating_result.official_website_amount: double -> bigdecimal`
+      - `* official_website_rating_result.product_rating_results.official_website_amount: double -> bigdecimal`
+      - `* optional_discount_rating_results.amount: double -> bigdecimal`
+      - `* optional_discount_rating_results.official_website_amount: double -> bigdecimal`
+      - `* optional_discount_rating_results.discount_amount: double -> bigdecimal`
+      - `* optional_discount_rating_results.product_rating_results.amount: double -> bigdecimal`
+      - `* optional_discount_rating_results.product_rating_results.official_website_amount: double -> bigdecimal`
+      - `* optional_discount_rating_results.product_rating_results.discount_amount: double -> bigdecimal`
+  - **ListOnDemandResourceRatings**
+    - changes of request param
+      - `* product_infos.usage_value: double -> bigdecimal`
+    - changes of response param
+      - `* product_rating_results.discount_rating_results.amount: double -> bigdecimal`
+  - **ListCustomerselfResourceRecordDetails**
+    - changes of response param
+      - `* monthly_records.consume_amount: double -> bigdecimal`
+      - `* monthly_records.cash_amount: double -> bigdecimal`
+      - `* monthly_records.credit_amount: double -> bigdecimal`
+      - `* monthly_records.coupon_amount: double -> bigdecimal`
+      - `* monthly_records.flexipurchase_coupon_amount: double -> bigdecimal`
+      - `* monthly_records.stored_card_amount: double -> bigdecimal`
+      - `* monthly_records.bonus_amount: double -> bigdecimal`
+      - `* monthly_records.debt_amount: double -> bigdecimal`
+      - `* monthly_records.adjustment_amount: double -> bigdecimal`
+      - `* monthly_records.official_amount: double -> bigdecimal`
+      - `* monthly_records.discount_amount: double -> bigdecimal`
+  - **ListOrderDiscounts**
+    - changes of response param
+      - `* discounts.orders.order_line_items.discount_amount: double -> bigdecimal`
+      - `* discounts.orders.order_line_items.discount_ratio: double -> bigdecimal`
+
+### HuaweiCloud SDK BSSINTL
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowSubCustomerBudget**
+    - changes of response param
+      - `* budget_amount: double -> bigdecimal`
+      - `* used_amount: double -> bigdecimal`
+  - **ListPostpaidBillSum**
+    - changes of response param
+      - `* initial_amount_due: double -> bigdecimal`
+      - `* consume_amount: double -> bigdecimal`
+      - `* refunds: double -> bigdecimal`
+      - `* adjustments: double -> bigdecimal`
+      - `* tax_amount: double -> bigdecimal`
+  - **ShowRefundOrderDetails**
+    - changes of response param
+      - `* refund_infos.amount: double -> bigdecimal`
+  - **ListCustomerselfResourceRecords**
+    - changes of response param
+      - `* fee_records.spec_size: double -> bigdecimal`
+      - `* fee_records.usage: double -> bigdecimal`
+      - `* fee_records.free_resource_usage: double -> bigdecimal`
+      - `* fee_records.ri_usage: double -> bigdecimal`
+      - `* fee_records.unit_price: double -> bigdecimal`
+      - `* fee_records.official_amount: double -> bigdecimal`
+      - `* fee_records.discount_amount: double -> bigdecimal`
+      - `* fee_records.amount: double -> bigdecimal`
+      - `* fee_records.cash_amount: double -> bigdecimal`
+      - `* fee_records.credit_amount: double -> bigdecimal`
+      - `* fee_records.coupon_amount: double -> bigdecimal`
+      - `* fee_records.flexipurchase_coupon_amount: double -> bigdecimal`
+      - `* fee_records.stored_card_amount: double -> bigdecimal`
+      - `* fee_records.bonus_amount: double -> bigdecimal`
+      - `* fee_records.debt_amount: double -> bigdecimal`
+      - `* fee_records.adjustment_amount: double -> bigdecimal`
+  - **ShowCustomerAccountBalances**
+    - changes of response param
+      - `* debt_amount: double -> bigdecimal`
+      - `* account_balances.amount: double -> bigdecimal`
+      - `* account_balances.designated_amount: double -> bigdecimal`
+      - `* account_balances.credit_amount: double -> bigdecimal`
+  - **ListRateOnPeriodDetail**
+    - changes of response param
+      - `* official_website_rating_result.official_website_amount: double -> bigdecimal`
+      - `* official_website_rating_result.product_rating_results.official_website_amount: double -> bigdecimal`
+      - `* optional_discount_rating_results.amount: double -> bigdecimal`
+      - `* optional_discount_rating_results.official_website_amount: double -> bigdecimal`
+      - `* optional_discount_rating_results.discount_amount: double -> bigdecimal`
+      - `* optional_discount_rating_results.product_rating_results.amount: double -> bigdecimal`
+      - `* optional_discount_rating_results.product_rating_results.official_website_amount: double -> bigdecimal`
+      - `* optional_discount_rating_results.product_rating_results.discount_amount: double -> bigdecimal`
+  - **ListOnDemandResourceRatings**
+    - changes of response param
+      - `* product_rating_results.discount_rating_results.amount: double -> bigdecimal`
+  - **ListMonthlyExpenditures**
+    - changes of response param
+      - `* total_amount: double -> bigdecimal`
+      - `* debt_amount: double -> bigdecimal`
+      - `* coupon_amount: double -> bigdecimal`
+      - `* cashcoupon_amount: double -> bigdecimal`
+      - `* storedcard_amount: double -> bigdecimal`
+      - `* debit_amount: double -> bigdecimal`
+      - `* credit_amount: double -> bigdecimal`
+      - `* bill_sums.consume_amount: double -> bigdecimal`
+      - `* bill_sums.debt: double -> bigdecimal`
+      - `* bill_sums.discount: double -> bigdecimal`
+      - `* bill_sums.account_details.deduct_amount: double -> bigdecimal`
+      - `* bill_sums.discount_detail_infos.discount_amount: double -> bigdecimal`
+  - **ListCustomerselfResourceRecordDetails**
+    - changes of response param
+      - `* monthly_records.consume_amount: double -> bigdecimal`
+      - `* monthly_records.cash_amount: double -> bigdecimal`
+      - `* monthly_records.credit_amount: double -> bigdecimal`
+      - `* monthly_records.coupon_amount: double -> bigdecimal`
+      - `* monthly_records.flexipurchase_coupon_amount: double -> bigdecimal`
+      - `* monthly_records.stored_card_amount: double -> bigdecimal`
+      - `* monthly_records.bonus_amount: double -> bigdecimal`
+      - `* monthly_records.debt_amount: double -> bigdecimal`
+      - `* monthly_records.adjustment_amount: double -> bigdecimal`
+      - `* monthly_records.official_amount: double -> bigdecimal`
+      - `* monthly_records.discount_amount: double -> bigdecimal`
+  - **ListInvoices**
+    - changes of response param
+      - `* invoices.invoiceAmount: double -> bigdecimal`
+      - `* invoices.taxList.taxAmount: double -> bigdecimal`
+  - **ListOrderDiscounts**
+    - changes of response param
+      - `* discounts.orders.order_line_items.discount_amount: double -> bigdecimal`
+      - `* discounts.orders.order_line_items.discount_ratio: double -> bigdecimal`
+
+### HuaweiCloud SDK CodeArtsPipeline
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UploadPluginIcon**
+    - changes of request param
+      - `* plugin_name: optional -> required`
+  - **UploadPublisherIcon**
+    - changes of request param
+      - `* publisher_en_name: optional -> required`
+  - **DeletePluginDraft**
+    - changes of request param
+      - `* plugin_name: optional -> required`
+      - `* version: optional -> required`
+  - **DeletePublisher**
+    - changes of request param
+      - `* publisher_unique_id: optional -> required`
+  - **DeleteBasicPlugin**
+    - changes of request param
+      - `+ type`
+      - `+ version`
+      - `* plugin_name: optional -> required`
+  - **UploadBasicPlugin**
+    - changes of request param
+      - `* plugin_name: optional -> required`
+      - `* business_type: optional -> required`
+  - **ListBasePlugins**
+    - changes of request param
+      - `* attribution: optional -> required`
+      - `* offset: optional -> required`
+      - `* limit: optional -> required`
+  - **ListPluginVersionNumber**
+    - changes of request param
+      - `* plugin_name: optional -> required`
+      - `* offset: optional -> required`
+      - `* limit: optional -> required`
+  - **ListPublisher**
+    - changes of request param
+      - `* offset: optional -> required`
+      - `* limit: optional -> required`
+  - **ListPlugins**
+    - changes of request param
+      - `* offset: optional -> required`
+      - `* limit: optional -> required`
+  - **ListPLuginVersion**
+    - changes of request param
+      - `* plugin_name: optional -> required`
+      - `* offset: optional -> required`
+      - `* limit: optional -> required`
+  - **ShowPluginVersion**
+    - changes of request param
+      - `* plugin_name: optional -> required`
+  - **ShowBasicPlugin**
+    - changes of request param
+      - `* plugin_name: optional -> required`
+      - `* version: optional -> required`
+  - **CreatePipelineNew**
+    - changes of request param
+      - `+ concurrency_control`
+  - **UpdatePipelineInfo**
+    - changes of request param
+      - `+ concurrency_control`
+
+### HuaweiCloud SDK CSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowVpcepConnection**
+    - changes of response param
+      - `+ vpcServiceName`
+      - `+ permissions`
+  - **ListClustersDetails**
+    - changes of request param
+      - `+ datastoreType`
+
+### HuaweiCloud SDK DAS
+
+- _Features_
+  - Support the API `ParseSqlLimitRules`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListFactoryReleasePackages**
+    - changes of response param
+      - `* data.apply_timestamp: string -> int64`
+  - **ShowFactoryPackageDetail**
+    - changes of response param
+      - `+ task_details.task_id`
+      - `+ task_details.start_job_status`
+
+### HuaweiCloud SDK DWS
+
+- _Features_
+  - Support the APIs `ChangeSecurityGroup`, `ShowClusterFlavor`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK IoTDA
+
+- _Features_
+  - Support the following APIs:
+    - `ListProvisioningTemplates`
+    - `CreateProvisioningTemplate`
+    - `ShowProvisioningTemplate`
+    - `UpdateProvisioningTemplate`
+    - `DeleteProvisioningTemplate`
+    - `ListDeviceAuthorizers`
+    - `CreateDeviceAuthorizer`
+    - `ShowDeviceAuthorizer`
+    - `UpdateDeviceAuthorizer`
+    - `DeleteDeviceAuthorizer`
+    - `ListDevicePolicies`
+    - `CreateDevicePolicy`
+    - `ShowDevicePolicy`
+    - `UpdateDevicePolicy`
+    - `DeleteDevicePolicy`
+    - `BindDevicePolicy`
+    - `UnbindDevicePolicy`
+    - `ShowTargetsInDevicePolicy`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Kafka
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowConnectorTask**
+    - changes of response param
+      - `- sink_task.connector_class`
+      - `- sink_task.storage_class`
+      - `- sink_task.format_class`
+  - **CreateConnectorTask**
+    - changes of response param
+      - `- sink_task.connector_class`
+      - `- sink_task.storage_class`
+      - `- sink_task.format_class`
+  - **ListConnectorTasks**
+    - changes of response param
+      - `- tasks.sink_task.connector_class`
+      - `- tasks.sink_task.storage_class`
+      - `- tasks.sink_task.format_class`
+
+### HuaweiCloud SDK Moderation
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **RunCreateAudioStreamModerationJob**
+    - changes of request param
+      - `+ data.language`
+  - **RunCreateAudioModerationJob**
+    - changes of request param
+      - `+ data.language`
+
 # 3.1.101 2024-06-14
 
 ### HuaweiCloud SDK DLI

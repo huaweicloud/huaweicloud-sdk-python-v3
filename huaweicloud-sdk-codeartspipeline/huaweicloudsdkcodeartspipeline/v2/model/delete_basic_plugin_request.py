@@ -18,34 +18,46 @@ class DeleteBasicPluginRequest:
 
     openapi_types = {
         'domain_id': 'str',
-        'plugin_name': 'str'
+        'plugin_name': 'str',
+        'type': 'str',
+        'version': 'str'
     }
 
     attribute_map = {
         'domain_id': 'domain_id',
-        'plugin_name': 'plugin_name'
+        'plugin_name': 'plugin_name',
+        'type': 'type',
+        'version': 'version'
     }
 
-    def __init__(self, domain_id=None, plugin_name=None):
+    def __init__(self, domain_id=None, plugin_name=None, type=None, version=None):
         """DeleteBasicPluginRequest
 
         The model defined in huaweicloud sdk
 
         :param domain_id: 租户ID
         :type domain_id: str
-        :param plugin_name: 是否调用成功
+        :param plugin_name: 需要删除的插件名
         :type plugin_name: str
+        :param type: 删除类型，all 代表删除整个插件，single代表删除单个插件版本
+        :type type: str
+        :param version: 需要删除的插件版本
+        :type version: str
         """
         
         
 
         self._domain_id = None
         self._plugin_name = None
+        self._type = None
+        self._version = None
         self.discriminator = None
 
         self.domain_id = domain_id
-        if plugin_name is not None:
-            self.plugin_name = plugin_name
+        self.plugin_name = plugin_name
+        self.type = type
+        if version is not None:
+            self.version = version
 
     @property
     def domain_id(self):
@@ -73,7 +85,7 @@ class DeleteBasicPluginRequest:
     def plugin_name(self):
         """Gets the plugin_name of this DeleteBasicPluginRequest.
 
-        是否调用成功
+        需要删除的插件名
 
         :return: The plugin_name of this DeleteBasicPluginRequest.
         :rtype: str
@@ -84,12 +96,56 @@ class DeleteBasicPluginRequest:
     def plugin_name(self, plugin_name):
         """Sets the plugin_name of this DeleteBasicPluginRequest.
 
-        是否调用成功
+        需要删除的插件名
 
         :param plugin_name: The plugin_name of this DeleteBasicPluginRequest.
         :type plugin_name: str
         """
         self._plugin_name = plugin_name
+
+    @property
+    def type(self):
+        """Gets the type of this DeleteBasicPluginRequest.
+
+        删除类型，all 代表删除整个插件，single代表删除单个插件版本
+
+        :return: The type of this DeleteBasicPluginRequest.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this DeleteBasicPluginRequest.
+
+        删除类型，all 代表删除整个插件，single代表删除单个插件版本
+
+        :param type: The type of this DeleteBasicPluginRequest.
+        :type type: str
+        """
+        self._type = type
+
+    @property
+    def version(self):
+        """Gets the version of this DeleteBasicPluginRequest.
+
+        需要删除的插件版本
+
+        :return: The version of this DeleteBasicPluginRequest.
+        :rtype: str
+        """
+        return self._version
+
+    @version.setter
+    def version(self, version):
+        """Sets the version of this DeleteBasicPluginRequest.
+
+        需要删除的插件版本
+
+        :param version: The version of this DeleteBasicPluginRequest.
+        :type version: str
+        """
+        self._version = version
 
     def to_dict(self):
         """Returns the model properties as a dict"""

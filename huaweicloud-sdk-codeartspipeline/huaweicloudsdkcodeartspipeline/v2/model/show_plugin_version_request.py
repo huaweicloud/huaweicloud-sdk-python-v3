@@ -49,8 +49,7 @@ class ShowPluginVersionRequest:
         self.discriminator = None
 
         self.domain_id = domain_id
-        if plugin_name is not None:
-            self.plugin_name = plugin_name
+        self.plugin_name = plugin_name
         if version is not None:
             self.version = version
 

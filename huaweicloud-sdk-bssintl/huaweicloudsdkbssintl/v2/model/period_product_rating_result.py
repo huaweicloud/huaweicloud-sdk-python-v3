@@ -19,9 +19,9 @@ class PeriodProductRatingResult:
     openapi_types = {
         'id': 'str',
         'product_id': 'str',
-        'amount': 'float',
-        'official_website_amount': 'float',
-        'discount_amount': 'float',
+        'amount': 'decimal.Decimal',
+        'official_website_amount': 'decimal.Decimal',
+        'discount_amount': 'decimal.Decimal',
         'measure_id': 'int',
         'limit': 'int'
     }
@@ -46,11 +46,11 @@ class PeriodProductRatingResult:
         :param product_id: 包年/包月产品的ID。
         :type product_id: str
         :param amount: 总额，即最终优惠后的金额。 amount&#x3D; official_website_amount - discountAmount。
-        :type amount: float
+        :type amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param official_website_amount: 包年/包月产品的官网价。
-        :type official_website_amount: float
+        :type official_website_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param discount_amount: 可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额。
-        :type discount_amount: float
+        :type discount_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param measure_id: 价格度量单位标识。 1：元
         :type measure_id: int
         :param limit: |参数名称：每页数量| |参数的约束及描述：该参数非必填，且只允许1-100数字，默认10，最多100|
@@ -134,7 +134,7 @@ class PeriodProductRatingResult:
         总额，即最终优惠后的金额。 amount= official_website_amount - discountAmount。
 
         :return: The amount of this PeriodProductRatingResult.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._amount
 
@@ -145,7 +145,7 @@ class PeriodProductRatingResult:
         总额，即最终优惠后的金额。 amount= official_website_amount - discountAmount。
 
         :param amount: The amount of this PeriodProductRatingResult.
-        :type amount: float
+        :type amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._amount = amount
 
@@ -156,7 +156,7 @@ class PeriodProductRatingResult:
         包年/包月产品的官网价。
 
         :return: The official_website_amount of this PeriodProductRatingResult.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._official_website_amount
 
@@ -167,7 +167,7 @@ class PeriodProductRatingResult:
         包年/包月产品的官网价。
 
         :param official_website_amount: The official_website_amount of this PeriodProductRatingResult.
-        :type official_website_amount: float
+        :type official_website_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._official_website_amount = official_website_amount
 
@@ -178,7 +178,7 @@ class PeriodProductRatingResult:
         可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额。
 
         :return: The discount_amount of this PeriodProductRatingResult.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._discount_amount
 
@@ -189,7 +189,7 @@ class PeriodProductRatingResult:
         可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额。
 
         :param discount_amount: The discount_amount of this PeriodProductRatingResult.
-        :type discount_amount: float
+        :type discount_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._discount_amount = discount_amount
 

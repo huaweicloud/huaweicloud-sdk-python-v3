@@ -54,12 +54,9 @@ class ListPLuginVersionRequest:
         self.discriminator = None
 
         self.domain_id = domain_id
-        if plugin_name is not None:
-            self.plugin_name = plugin_name
-        if offset is not None:
-            self.offset = offset
-        if limit is not None:
-            self.limit = limit
+        self.plugin_name = plugin_name
+        self.offset = offset
+        self.limit = limit
 
     @property
     def domain_id(self):

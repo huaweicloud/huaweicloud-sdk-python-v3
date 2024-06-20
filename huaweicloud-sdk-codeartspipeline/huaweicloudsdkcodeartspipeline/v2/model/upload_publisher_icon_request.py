@@ -49,8 +49,7 @@ class UploadPublisherIconRequest:
         self.discriminator = None
 
         self.domain_id = domain_id
-        if publisher_en_name is not None:
-            self.publisher_en_name = publisher_en_name
+        self.publisher_en_name = publisher_en_name
         if body is not None:
             self.body = body
 

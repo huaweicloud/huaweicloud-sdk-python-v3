@@ -17,7 +17,7 @@ class OfficialWebsiteRatingResult:
     sensitive_list = []
 
     openapi_types = {
-        'official_website_amount': 'float',
+        'official_website_amount': 'decimal.Decimal',
         'measure_id': 'int',
         'product_rating_results': 'list[PeriodProductOfficialRatingResult]'
     }
@@ -34,7 +34,7 @@ class OfficialWebsiteRatingResult:
         The model defined in huaweicloud sdk
 
         :param official_website_amount: 包年/包月产品的官网价。
-        :type official_website_amount: float
+        :type official_website_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param measure_id: 价格度量单位标识。 1：元
         :type measure_id: int
         :param product_rating_results: 产品询价结果，具体参见表5。
@@ -62,7 +62,7 @@ class OfficialWebsiteRatingResult:
         包年/包月产品的官网价。
 
         :return: The official_website_amount of this OfficialWebsiteRatingResult.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._official_website_amount
 
@@ -73,7 +73,7 @@ class OfficialWebsiteRatingResult:
         包年/包月产品的官网价。
 
         :param official_website_amount: The official_website_amount of this OfficialWebsiteRatingResult.
-        :type official_website_amount: float
+        :type official_website_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._official_website_amount = official_website_amount
 

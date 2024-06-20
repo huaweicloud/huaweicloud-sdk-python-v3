@@ -19,7 +19,7 @@ class ShowCustomerAccountBalancesResponse(SdkResponse):
 
     openapi_types = {
         'account_balances': 'list[AccountBalanceV3]',
-        'debt_amount': 'float',
+        'debt_amount': 'decimal.Decimal',
         'measure_id': 'int',
         'currency': 'str'
     }
@@ -39,7 +39,7 @@ class ShowCustomerAccountBalancesResponse(SdkResponse):
         :param account_balances: 账户余额列表。 具体请参见表1。
         :type account_balances: list[:class:`huaweicloudsdkbssintl.v2.AccountBalanceV3`]
         :param debt_amount: 欠款总金额。
-        :type debt_amount: float
+        :type debt_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param measure_id: 度量单位。 1：元
         :type measure_id: int
         :param currency: 币种。 USD：美元。
@@ -92,7 +92,7 @@ class ShowCustomerAccountBalancesResponse(SdkResponse):
         欠款总金额。
 
         :return: The debt_amount of this ShowCustomerAccountBalancesResponse.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._debt_amount
 
@@ -103,7 +103,7 @@ class ShowCustomerAccountBalancesResponse(SdkResponse):
         欠款总金额。
 
         :param debt_amount: The debt_amount of this ShowCustomerAccountBalancesResponse.
-        :type debt_amount: float
+        :type debt_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._debt_amount = debt_amount
 

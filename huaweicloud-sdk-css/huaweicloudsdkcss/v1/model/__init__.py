@@ -163,6 +163,7 @@ from huaweicloudsdkcss.v1.model.log_configuration import LogConfiguration
 from huaweicloudsdkcss.v1.model.log_list import LogList
 from huaweicloudsdkcss.v1.model.pay_info_body import PayInfoBody
 from huaweicloudsdkcss.v1.model.period_req import PeriodReq
+from huaweicloudsdkcss.v1.model.permission_info import PermissionInfo
 from huaweicloudsdkcss.v1.model.pipelines import Pipelines
 from huaweicloudsdkcss.v1.model.public_kibana_resp_body import PublicKibanaRespBody
 from huaweicloudsdkcss.v1.model.reset_password_req import ResetPasswordReq

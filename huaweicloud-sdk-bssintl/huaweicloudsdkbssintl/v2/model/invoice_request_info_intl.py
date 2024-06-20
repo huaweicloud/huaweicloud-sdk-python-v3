@@ -23,7 +23,7 @@ class InvoiceRequestInfoIntl:
         'channel_type': 'int',
         'invoice_type': 'int',
         'invoice_title': 'str',
-        'invoice_amount': 'float',
+        'invoice_amount': 'decimal.Decimal',
         'invoice_method': 'int',
         'invoice_class': 'int',
         'invoice_state': 'int',
@@ -84,7 +84,7 @@ class InvoiceRequestInfoIntl:
         :param invoice_title: 发票抬头。
         :type invoice_title: str
         :param invoice_amount: 已开票金额（美元） 。
-        :type invoice_amount: float
+        :type invoice_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param invoice_method: 开票方式。 0：账期1：到账2：订单
         :type invoice_method: int
         :param invoice_class: 发票类别。 0：税票1：商票
@@ -327,7 +327,7 @@ class InvoiceRequestInfoIntl:
         已开票金额（美元） 。
 
         :return: The invoice_amount of this InvoiceRequestInfoIntl.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._invoice_amount
 
@@ -338,7 +338,7 @@ class InvoiceRequestInfoIntl:
         已开票金额（美元） 。
 
         :param invoice_amount: The invoice_amount of this InvoiceRequestInfoIntl.
-        :type invoice_amount: float
+        :type invoice_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._invoice_amount = invoice_amount
 

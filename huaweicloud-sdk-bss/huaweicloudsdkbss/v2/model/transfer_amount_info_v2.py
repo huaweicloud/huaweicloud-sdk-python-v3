@@ -17,11 +17,11 @@ class TransferAmountInfoV2:
     sensitive_list = []
 
     openapi_types = {
-        'avail_transfer_amount': 'float',
+        'avail_transfer_amount': 'decimal.Decimal',
         'measure_id': 'int',
         'currency': 'str',
-        'amount': 'float',
-        'credit_amount': 'float',
+        'amount': 'decimal.Decimal',
+        'credit_amount': 'decimal.Decimal',
         'expire_time': 'str'
     }
 
@@ -40,15 +40,15 @@ class TransferAmountInfoV2:
         The model defined in huaweicloud sdk
 
         :param avail_transfer_amount: 可拨款的金额。
-        :type avail_transfer_amount: float
+        :type avail_transfer_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param measure_id: 金额单位。 1：元
         :type measure_id: int
         :param currency: 币种。 CNY：人民币
         :type currency: str
         :param amount: 账户余额（仅balance_type&#x3D;信用账户时才有这个字段）。
-        :type amount: float
+        :type amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param credit_amount: 信用额度（仅balance_type&#x3D;信用账户时才有这个字段）。
-        :type credit_amount: float
+        :type credit_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param expire_time: 信用额度过期时间。 UTC时间，格式为：2016-03-28T14:45:38Z。 （仅balance_type&#x3D;信用账户时才有这个字段）。 如果查询信用账户可拨款余额的查询结果没有失效时间，表示永久有效。
         :type expire_time: str
         """
@@ -83,7 +83,7 @@ class TransferAmountInfoV2:
         可拨款的金额。
 
         :return: The avail_transfer_amount of this TransferAmountInfoV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._avail_transfer_amount
 
@@ -94,7 +94,7 @@ class TransferAmountInfoV2:
         可拨款的金额。
 
         :param avail_transfer_amount: The avail_transfer_amount of this TransferAmountInfoV2.
-        :type avail_transfer_amount: float
+        :type avail_transfer_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._avail_transfer_amount = avail_transfer_amount
 
@@ -149,7 +149,7 @@ class TransferAmountInfoV2:
         账户余额（仅balance_type=信用账户时才有这个字段）。
 
         :return: The amount of this TransferAmountInfoV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._amount
 
@@ -160,7 +160,7 @@ class TransferAmountInfoV2:
         账户余额（仅balance_type=信用账户时才有这个字段）。
 
         :param amount: The amount of this TransferAmountInfoV2.
-        :type amount: float
+        :type amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._amount = amount
 
@@ -171,7 +171,7 @@ class TransferAmountInfoV2:
         信用额度（仅balance_type=信用账户时才有这个字段）。
 
         :return: The credit_amount of this TransferAmountInfoV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._credit_amount
 
@@ -182,7 +182,7 @@ class TransferAmountInfoV2:
         信用额度（仅balance_type=信用账户时才有这个字段）。
 
         :param credit_amount: The credit_amount of this TransferAmountInfoV2.
-        :type credit_amount: float
+        :type credit_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._credit_amount = credit_amount
 

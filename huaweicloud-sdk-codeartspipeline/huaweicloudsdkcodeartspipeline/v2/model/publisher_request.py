@@ -78,8 +78,7 @@ class PublisherRequest:
         self._publisher_unique_id = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
+        self.name = name
         if user_id is not None:
             self.user_id = user_id
         if description is not None:
@@ -88,12 +87,10 @@ class PublisherRequest:
             self.logo_url = logo_url
         if website is not None:
             self.website = website
-        if support_url is not None:
-            self.support_url = support_url
+        self.support_url = support_url
         if source_url is not None:
             self.source_url = source_url
-        if en_name is not None:
-            self.en_name = en_name
+        self.en_name = en_name
         if publisher_unique_id is not None:
             self.publisher_unique_id = publisher_unique_id
 

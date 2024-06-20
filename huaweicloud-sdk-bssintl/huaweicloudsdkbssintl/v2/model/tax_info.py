@@ -20,7 +20,7 @@ class TaxInfo:
         'tax_class': 'str',
         'tax_rate': 'str',
         'sub_tax_class': 'str',
-        'tax_amount': 'float'
+        'tax_amount': 'decimal.Decimal'
     }
 
     attribute_map = {
@@ -42,7 +42,7 @@ class TaxInfo:
         :param sub_tax_class: 税种子类。 PISCOFINSCGSTSGSTIGSTISSWHTVAT
         :type sub_tax_class: str
         :param tax_amount: 税金金额。 单位：美元
-        :type tax_amount: float
+        :type tax_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         
         
@@ -135,7 +135,7 @@ class TaxInfo:
         税金金额。 单位：美元
 
         :return: The tax_amount of this TaxInfo.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._tax_amount
 
@@ -146,7 +146,7 @@ class TaxInfo:
         税金金额。 单位：美元
 
         :param tax_amount: The tax_amount of this TaxInfo.
-        :type tax_amount: float
+        :type tax_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._tax_amount = tax_amount
 

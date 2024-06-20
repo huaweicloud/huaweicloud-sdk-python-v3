@@ -33,7 +33,7 @@ class BatchDeleteMessageDiagnosisRespResults:
 
         :param result: 报告删除结果
         :type result: bool
-        :param id: 报告id
+        :param id: 报告ID
         :type id: str
         """
         
@@ -72,7 +72,7 @@ class BatchDeleteMessageDiagnosisRespResults:
     def id(self):
         """Gets the id of this BatchDeleteMessageDiagnosisRespResults.
 
-        报告id
+        报告ID
 
         :return: The id of this BatchDeleteMessageDiagnosisRespResults.
         :rtype: str
@@ -83,7 +83,7 @@ class BatchDeleteMessageDiagnosisRespResults:
     def id(self, id):
         """Sets the id of this BatchDeleteMessageDiagnosisRespResults.
 
-        报告id
+        报告ID
 
         :param id: The id of this BatchDeleteMessageDiagnosisRespResults.
         :type id: str

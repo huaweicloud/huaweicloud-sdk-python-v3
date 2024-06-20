@@ -99,14 +99,10 @@ class PluginBasicDTO:
             self.icon_url = icon_url
         if runtime_attribution is not None:
             self.runtime_attribution = runtime_attribution
-        if plugin_name is not None:
-            self.plugin_name = plugin_name
-        if display_name is not None:
-            self.display_name = display_name
-        if business_type is not None:
-            self.business_type = business_type
-        if business_type_display_name is not None:
-            self.business_type_display_name = business_type_display_name
+        self.plugin_name = plugin_name
+        self.display_name = display_name
+        self.business_type = business_type
+        self.business_type_display_name = business_type_display_name
         if description is not None:
             self.description = description
         if is_private is not None:

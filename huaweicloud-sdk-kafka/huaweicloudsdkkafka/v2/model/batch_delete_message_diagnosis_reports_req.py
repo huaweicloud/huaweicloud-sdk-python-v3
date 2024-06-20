@@ -29,7 +29,7 @@ class BatchDeleteMessageDiagnosisReportsReq:
 
         The model defined in huaweicloud sdk
 
-        :param report_id_list: 待删除report id 列表
+        :param report_id_list: 待删除report id列表
         :type report_id_list: list[str]
         """
         
@@ -44,7 +44,7 @@ class BatchDeleteMessageDiagnosisReportsReq:
     def report_id_list(self):
         """Gets the report_id_list of this BatchDeleteMessageDiagnosisReportsReq.
 
-        待删除report id 列表
+        待删除report id列表
 
         :return: The report_id_list of this BatchDeleteMessageDiagnosisReportsReq.
         :rtype: list[str]
@@ -55,7 +55,7 @@ class BatchDeleteMessageDiagnosisReportsReq:
     def report_id_list(self, report_id_list):
         """Sets the report_id_list of this BatchDeleteMessageDiagnosisReportsReq.
 
-        待删除report id 列表
+        待删除report id列表
 
         :param report_id_list: The report_id_list of this BatchDeleteMessageDiagnosisReportsReq.
         :type report_id_list: list[str]

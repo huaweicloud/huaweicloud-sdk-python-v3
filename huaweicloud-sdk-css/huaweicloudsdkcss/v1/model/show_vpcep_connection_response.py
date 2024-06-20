@@ -20,16 +20,20 @@ class ShowVpcepConnectionResponse(SdkResponse):
     openapi_types = {
         'connections': 'list[Connections]',
         'vpcep_update_switch': 'bool',
-        'total_count': 'int'
+        'total_count': 'int',
+        'vpc_service_name': 'str',
+        'permissions': 'list[PermissionInfo]'
     }
 
     attribute_map = {
         'connections': 'connections',
         'vpcep_update_switch': 'vpcepUpdateSwitch',
-        'total_count': 'total_count'
+        'total_count': 'total_count',
+        'vpc_service_name': 'vpcServiceName',
+        'permissions': 'permissions'
     }
 
-    def __init__(self, connections=None, vpcep_update_switch=None, total_count=None):
+    def __init__(self, connections=None, vpcep_update_switch=None, total_count=None, vpc_service_name=None, permissions=None):
         """ShowVpcepConnectionResponse
 
         The model defined in huaweicloud sdk
@@ -40,6 +44,10 @@ class ShowVpcepConnectionResponse(SdkResponse):
         :type vpcep_update_switch: bool
         :param total_count: 终端节点数量。
         :type total_count: int
+        :param vpc_service_name: 终端节点服务名称。
+        :type vpc_service_name: str
+        :param permissions: 
+        :type permissions: list[:class:`huaweicloudsdkcss.v1.PermissionInfo`]
         """
         
         super(ShowVpcepConnectionResponse, self).__init__()
@@ -47,6 +55,8 @@ class ShowVpcepConnectionResponse(SdkResponse):
         self._connections = None
         self._vpcep_update_switch = None
         self._total_count = None
+        self._vpc_service_name = None
+        self._permissions = None
         self.discriminator = None
 
         if connections is not None:
@@ -55,6 +65,10 @@ class ShowVpcepConnectionResponse(SdkResponse):
             self.vpcep_update_switch = vpcep_update_switch
         if total_count is not None:
             self.total_count = total_count
+        if vpc_service_name is not None:
+            self.vpc_service_name = vpc_service_name
+        if permissions is not None:
+            self.permissions = permissions
 
     @property
     def connections(self):
@@ -117,6 +131,46 @@ class ShowVpcepConnectionResponse(SdkResponse):
         :type total_count: int
         """
         self._total_count = total_count
+
+    @property
+    def vpc_service_name(self):
+        """Gets the vpc_service_name of this ShowVpcepConnectionResponse.
+
+        终端节点服务名称。
+
+        :return: The vpc_service_name of this ShowVpcepConnectionResponse.
+        :rtype: str
+        """
+        return self._vpc_service_name
+
+    @vpc_service_name.setter
+    def vpc_service_name(self, vpc_service_name):
+        """Sets the vpc_service_name of this ShowVpcepConnectionResponse.
+
+        终端节点服务名称。
+
+        :param vpc_service_name: The vpc_service_name of this ShowVpcepConnectionResponse.
+        :type vpc_service_name: str
+        """
+        self._vpc_service_name = vpc_service_name
+
+    @property
+    def permissions(self):
+        """Gets the permissions of this ShowVpcepConnectionResponse.
+
+        :return: The permissions of this ShowVpcepConnectionResponse.
+        :rtype: list[:class:`huaweicloudsdkcss.v1.PermissionInfo`]
+        """
+        return self._permissions
+
+    @permissions.setter
+    def permissions(self, permissions):
+        """Sets the permissions of this ShowVpcepConnectionResponse.
+
+        :param permissions: The permissions of this ShowVpcepConnectionResponse.
+        :type permissions: list[:class:`huaweicloudsdkcss.v1.PermissionInfo`]
+        """
+        self._permissions = permissions
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -23,9 +23,9 @@ class BillSumRecordInfo:
         'cloud_service_type_code': 'str',
         'consume_time': 'str',
         'pay_method': 'str',
-        'consume_amount': 'float',
-        'debt': 'float',
-        'discount': 'float',
+        'consume_amount': 'decimal.Decimal',
+        'debt': 'decimal.Decimal',
+        'discount': 'decimal.Decimal',
         'measure_id': 'int',
         'bill_type': 'int',
         'account_details': 'list[BalanceTypePay]',
@@ -68,11 +68,11 @@ class BillSumRecordInfo:
         :param pay_method: 消费类型。 当请求消息中不传递“cloud_service_type_code”参数时，如果此值返回“0”表示此服务类型下所有的资源类型都是包年/包月计费模式，如果此值返回空字符串表示此服务类型下有资源类型为按需计费模式。当请求消息中传递“cloud_service_type_code”参数时，如果此值返回“0”表示此资源类型是包年/包月计费模式，如果此值返回“1”表示此资源类型为按需计费模式。
         :type pay_method: str
         :param consume_amount: 消费的金额，即从客户账户实际扣除的金额。包含代金券支付的金额。
-        :type consume_amount: float
+        :type consume_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param debt: 欠费金额，即从客户账户扣费的时候，客户账户金额不足，欠费的金额。
-        :type debt: float
+        :type debt: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param discount: 折扣金额。
-        :type discount: float
+        :type discount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param measure_id: 金额单位。 1：元3：分 默认值为3。
         :type measure_id: int
         :param bill_type: 账单类型。 0：消费1：退订
@@ -271,7 +271,7 @@ class BillSumRecordInfo:
         消费的金额，即从客户账户实际扣除的金额。包含代金券支付的金额。
 
         :return: The consume_amount of this BillSumRecordInfo.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._consume_amount
 
@@ -282,7 +282,7 @@ class BillSumRecordInfo:
         消费的金额，即从客户账户实际扣除的金额。包含代金券支付的金额。
 
         :param consume_amount: The consume_amount of this BillSumRecordInfo.
-        :type consume_amount: float
+        :type consume_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._consume_amount = consume_amount
 
@@ -293,7 +293,7 @@ class BillSumRecordInfo:
         欠费金额，即从客户账户扣费的时候，客户账户金额不足，欠费的金额。
 
         :return: The debt of this BillSumRecordInfo.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._debt
 
@@ -304,7 +304,7 @@ class BillSumRecordInfo:
         欠费金额，即从客户账户扣费的时候，客户账户金额不足，欠费的金额。
 
         :param debt: The debt of this BillSumRecordInfo.
-        :type debt: float
+        :type debt: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._debt = debt
 
@@ -315,7 +315,7 @@ class BillSumRecordInfo:
         折扣金额。
 
         :return: The discount of this BillSumRecordInfo.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._discount
 
@@ -326,7 +326,7 @@ class BillSumRecordInfo:
         折扣金额。
 
         :param discount: The discount of this BillSumRecordInfo.
-        :type discount: float
+        :type discount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._discount = discount
 

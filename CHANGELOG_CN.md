@@ -1,3 +1,362 @@
+# 3.1.102 2024-06-20
+
+### HuaweiCloud SDK BSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowRefundOrderDetails**
+    - 响应参数变更
+      - `* refund_infos.amount: double -> bigdecimal`
+  - **ListCustomerselfResourceRecords**
+    - 响应参数变更
+      - `* fee_records.spec_size: double -> bigdecimal`
+      - `* fee_records.usage: double -> bigdecimal`
+      - `* fee_records.free_resource_usage: double -> bigdecimal`
+      - `* fee_records.ri_usage: double -> bigdecimal`
+      - `* fee_records.unit_price: double -> bigdecimal`
+      - `* fee_records.official_amount: double -> bigdecimal`
+      - `* fee_records.discount_amount: double -> bigdecimal`
+      - `* fee_records.amount: double -> bigdecimal`
+      - `* fee_records.cash_amount: double -> bigdecimal`
+      - `* fee_records.credit_amount: double -> bigdecimal`
+      - `* fee_records.coupon_amount: double -> bigdecimal`
+      - `* fee_records.flexipurchase_coupon_amount: double -> bigdecimal`
+      - `* fee_records.stored_card_amount: double -> bigdecimal`
+      - `* fee_records.bonus_amount: double -> bigdecimal`
+      - `* fee_records.debt_amount: double -> bigdecimal`
+      - `* fee_records.adjustment_amount: double -> bigdecimal`
+  - **ShowMultiAccountTransferAmount**
+    - 响应参数变更
+      - `* amount_infos.avail_transfer_amount: double -> bigdecimal`
+      - `* amount_infos.amount: double -> bigdecimal`
+      - `* amount_infos.credit_amount: double -> bigdecimal`
+  - **ListEnterpriseMultiAccount**
+    - 响应参数变更
+      - `* amount_infos.avail_retrieve_amount: double -> bigdecimal`
+      - `* amount_infos.amount: double -> bigdecimal`
+      - `* amount_infos.credit_amount: double -> bigdecimal`
+  - **ListCustomerBillsFeeRecords**
+    - 响应参数变更
+      - `* records.official_amount: double -> bigdecimal`
+      - `* records.official_discount_amount: double -> bigdecimal`
+      - `* records.erase_amount: double -> bigdecimal`
+      - `* records.consume_amount: double -> bigdecimal`
+      - `* records.cash_amount: double -> bigdecimal`
+      - `* records.credit_amount: double -> bigdecimal`
+      - `* records.coupon_amount: double -> bigdecimal`
+      - `* records.flexipurchase_coupon_amount: double -> bigdecimal`
+      - `* records.stored_value_card_amount: double -> bigdecimal`
+      - `* records.bonus_amount: double -> bigdecimal`
+      - `* records.debt_amount: double -> bigdecimal`
+      - `* records.writeoff_amount: double -> bigdecimal`
+  - **ListRateOnPeriodDetail**
+    - 响应参数变更
+      - `* official_website_rating_result.official_website_amount: double -> bigdecimal`
+      - `* official_website_rating_result.product_rating_results.official_website_amount: double -> bigdecimal`
+      - `* optional_discount_rating_results.amount: double -> bigdecimal`
+      - `* optional_discount_rating_results.official_website_amount: double -> bigdecimal`
+      - `* optional_discount_rating_results.discount_amount: double -> bigdecimal`
+      - `* optional_discount_rating_results.product_rating_results.amount: double -> bigdecimal`
+      - `* optional_discount_rating_results.product_rating_results.official_website_amount: double -> bigdecimal`
+      - `* optional_discount_rating_results.product_rating_results.discount_amount: double -> bigdecimal`
+  - **ListOnDemandResourceRatings**
+    - 请求参数变更
+      - `* product_infos.usage_value: double -> bigdecimal`
+    - 响应参数变更
+      - `* product_rating_results.discount_rating_results.amount: double -> bigdecimal`
+  - **ListCustomerselfResourceRecordDetails**
+    - 响应参数变更
+      - `* monthly_records.consume_amount: double -> bigdecimal`
+      - `* monthly_records.cash_amount: double -> bigdecimal`
+      - `* monthly_records.credit_amount: double -> bigdecimal`
+      - `* monthly_records.coupon_amount: double -> bigdecimal`
+      - `* monthly_records.flexipurchase_coupon_amount: double -> bigdecimal`
+      - `* monthly_records.stored_card_amount: double -> bigdecimal`
+      - `* monthly_records.bonus_amount: double -> bigdecimal`
+      - `* monthly_records.debt_amount: double -> bigdecimal`
+      - `* monthly_records.adjustment_amount: double -> bigdecimal`
+      - `* monthly_records.official_amount: double -> bigdecimal`
+      - `* monthly_records.discount_amount: double -> bigdecimal`
+  - **ListOrderDiscounts**
+    - 响应参数变更
+      - `* discounts.orders.order_line_items.discount_amount: double -> bigdecimal`
+      - `* discounts.orders.order_line_items.discount_ratio: double -> bigdecimal`
+
+### HuaweiCloud SDK BSSINTL
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowSubCustomerBudget**
+    - 响应参数变更
+      - `* budget_amount: double -> bigdecimal`
+      - `* used_amount: double -> bigdecimal`
+  - **ListPostpaidBillSum**
+    - 响应参数变更
+      - `* initial_amount_due: double -> bigdecimal`
+      - `* consume_amount: double -> bigdecimal`
+      - `* refunds: double -> bigdecimal`
+      - `* adjustments: double -> bigdecimal`
+      - `* tax_amount: double -> bigdecimal`
+  - **ShowRefundOrderDetails**
+    - 响应参数变更
+      - `* refund_infos.amount: double -> bigdecimal`
+  - **ListCustomerselfResourceRecords**
+    - 响应参数变更
+      - `* fee_records.spec_size: double -> bigdecimal`
+      - `* fee_records.usage: double -> bigdecimal`
+      - `* fee_records.free_resource_usage: double -> bigdecimal`
+      - `* fee_records.ri_usage: double -> bigdecimal`
+      - `* fee_records.unit_price: double -> bigdecimal`
+      - `* fee_records.official_amount: double -> bigdecimal`
+      - `* fee_records.discount_amount: double -> bigdecimal`
+      - `* fee_records.amount: double -> bigdecimal`
+      - `* fee_records.cash_amount: double -> bigdecimal`
+      - `* fee_records.credit_amount: double -> bigdecimal`
+      - `* fee_records.coupon_amount: double -> bigdecimal`
+      - `* fee_records.flexipurchase_coupon_amount: double -> bigdecimal`
+      - `* fee_records.stored_card_amount: double -> bigdecimal`
+      - `* fee_records.bonus_amount: double -> bigdecimal`
+      - `* fee_records.debt_amount: double -> bigdecimal`
+      - `* fee_records.adjustment_amount: double -> bigdecimal`
+  - **ShowCustomerAccountBalances**
+    - 响应参数变更
+      - `* debt_amount: double -> bigdecimal`
+      - `* account_balances.amount: double -> bigdecimal`
+      - `* account_balances.designated_amount: double -> bigdecimal`
+      - `* account_balances.credit_amount: double -> bigdecimal`
+  - **ListRateOnPeriodDetail**
+    - 响应参数变更
+      - `* official_website_rating_result.official_website_amount: double -> bigdecimal`
+      - `* official_website_rating_result.product_rating_results.official_website_amount: double -> bigdecimal`
+      - `* optional_discount_rating_results.amount: double -> bigdecimal`
+      - `* optional_discount_rating_results.official_website_amount: double -> bigdecimal`
+      - `* optional_discount_rating_results.discount_amount: double -> bigdecimal`
+      - `* optional_discount_rating_results.product_rating_results.amount: double -> bigdecimal`
+      - `* optional_discount_rating_results.product_rating_results.official_website_amount: double -> bigdecimal`
+      - `* optional_discount_rating_results.product_rating_results.discount_amount: double -> bigdecimal`
+  - **ListOnDemandResourceRatings**
+    - 响应参数变更
+      - `* product_rating_results.discount_rating_results.amount: double -> bigdecimal`
+  - **ListMonthlyExpenditures**
+    - 响应参数变更
+      - `* total_amount: double -> bigdecimal`
+      - `* debt_amount: double -> bigdecimal`
+      - `* coupon_amount: double -> bigdecimal`
+      - `* cashcoupon_amount: double -> bigdecimal`
+      - `* storedcard_amount: double -> bigdecimal`
+      - `* debit_amount: double -> bigdecimal`
+      - `* credit_amount: double -> bigdecimal`
+      - `* bill_sums.consume_amount: double -> bigdecimal`
+      - `* bill_sums.debt: double -> bigdecimal`
+      - `* bill_sums.discount: double -> bigdecimal`
+      - `* bill_sums.account_details.deduct_amount: double -> bigdecimal`
+      - `* bill_sums.discount_detail_infos.discount_amount: double -> bigdecimal`
+  - **ListCustomerselfResourceRecordDetails**
+    - 响应参数变更
+      - `* monthly_records.consume_amount: double -> bigdecimal`
+      - `* monthly_records.cash_amount: double -> bigdecimal`
+      - `* monthly_records.credit_amount: double -> bigdecimal`
+      - `* monthly_records.coupon_amount: double -> bigdecimal`
+      - `* monthly_records.flexipurchase_coupon_amount: double -> bigdecimal`
+      - `* monthly_records.stored_card_amount: double -> bigdecimal`
+      - `* monthly_records.bonus_amount: double -> bigdecimal`
+      - `* monthly_records.debt_amount: double -> bigdecimal`
+      - `* monthly_records.adjustment_amount: double -> bigdecimal`
+      - `* monthly_records.official_amount: double -> bigdecimal`
+      - `* monthly_records.discount_amount: double -> bigdecimal`
+  - **ListInvoices**
+    - 响应参数变更
+      - `* invoices.invoiceAmount: double -> bigdecimal`
+      - `* invoices.taxList.taxAmount: double -> bigdecimal`
+  - **ListOrderDiscounts**
+    - 响应参数变更
+      - `* discounts.orders.order_line_items.discount_amount: double -> bigdecimal`
+      - `* discounts.orders.order_line_items.discount_ratio: double -> bigdecimal`
+
+### HuaweiCloud SDK CodeArtsPipeline
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UploadPluginIcon**
+    - 请求参数变更
+      - `* plugin_name: optional -> required`
+  - **UploadPublisherIcon**
+    - 请求参数变更
+      - `* publisher_en_name: optional -> required`
+  - **DeletePluginDraft**
+    - 请求参数变更
+      - `* plugin_name: optional -> required`
+      - `* version: optional -> required`
+  - **DeletePublisher**
+    - 请求参数变更
+      - `* publisher_unique_id: optional -> required`
+  - **DeleteBasicPlugin**
+    - 请求参数变更
+      - `+ type`
+      - `+ version`
+      - `* plugin_name: optional -> required`
+  - **UploadBasicPlugin**
+    - 请求参数变更
+      - `* plugin_name: optional -> required`
+      - `* business_type: optional -> required`
+  - **ListBasePlugins**
+    - 请求参数变更
+      - `* attribution: optional -> required`
+      - `* offset: optional -> required`
+      - `* limit: optional -> required`
+  - **ListPluginVersionNumber**
+    - 请求参数变更
+      - `* plugin_name: optional -> required`
+      - `* offset: optional -> required`
+      - `* limit: optional -> required`
+  - **ListPublisher**
+    - 请求参数变更
+      - `* offset: optional -> required`
+      - `* limit: optional -> required`
+  - **ListPlugins**
+    - 请求参数变更
+      - `* offset: optional -> required`
+      - `* limit: optional -> required`
+  - **ListPLuginVersion**
+    - 请求参数变更
+      - `* plugin_name: optional -> required`
+      - `* offset: optional -> required`
+      - `* limit: optional -> required`
+  - **ShowPluginVersion**
+    - 请求参数变更
+      - `* plugin_name: optional -> required`
+  - **ShowBasicPlugin**
+    - 请求参数变更
+      - `* plugin_name: optional -> required`
+      - `* version: optional -> required`
+  - **CreatePipelineNew**
+    - 请求参数变更
+      - `+ concurrency_control`
+  - **UpdatePipelineInfo**
+    - 请求参数变更
+      - `+ concurrency_control`
+
+### HuaweiCloud SDK CSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowVpcepConnection**
+    - 响应参数变更
+      - `+ vpcServiceName`
+      - `+ permissions`
+  - **ListClustersDetails**
+    - 请求参数变更
+      - `+ datastoreType`
+
+### HuaweiCloud SDK DAS
+
+- _新增特性_
+  - 支持接口`ParseSqlLimitRules`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListFactoryReleasePackages**
+    - 响应参数变更
+      - `* data.apply_timestamp: string -> int64`
+  - **ShowFactoryPackageDetail**
+    - 响应参数变更
+      - `+ task_details.task_id`
+      - `+ task_details.start_job_status`
+
+### HuaweiCloud SDK DWS
+
+- _新增特性_
+  - 支持接口`ChangeSecurityGroup`、`ShowClusterFlavor`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK IoTDA
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListProvisioningTemplates`
+    - `CreateProvisioningTemplate`
+    - `ShowProvisioningTemplate`
+    - `UpdateProvisioningTemplate`
+    - `DeleteProvisioningTemplate`
+    - `ListDeviceAuthorizers`
+    - `CreateDeviceAuthorizer`
+    - `ShowDeviceAuthorizer`
+    - `UpdateDeviceAuthorizer`
+    - `DeleteDeviceAuthorizer`
+    - `ListDevicePolicies`
+    - `CreateDevicePolicy`
+    - `ShowDevicePolicy`
+    - `UpdateDevicePolicy`
+    - `DeleteDevicePolicy`
+    - `BindDevicePolicy`
+    - `UnbindDevicePolicy`
+    - `ShowTargetsInDevicePolicy`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK Kafka
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowConnectorTask**
+    - 响应参数变更
+      - `- sink_task.connector_class`
+      - `- sink_task.storage_class`
+      - `- sink_task.format_class`
+  - **CreateConnectorTask**
+    - 响应参数变更
+      - `- sink_task.connector_class`
+      - `- sink_task.storage_class`
+      - `- sink_task.format_class`
+  - **ListConnectorTasks**
+    - 响应参数变更
+      - `- tasks.sink_task.connector_class`
+      - `- tasks.sink_task.storage_class`
+      - `- tasks.sink_task.format_class`
+
+### HuaweiCloud SDK Moderation
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RunCreateAudioStreamModerationJob**
+    - 请求参数变更
+      - `+ data.language`
+  - **RunCreateAudioModerationJob**
+    - 请求参数变更
+      - `+ data.language`
+
 # 3.1.101 2024-06-14
 
 ### HuaweiCloud SDK DLI

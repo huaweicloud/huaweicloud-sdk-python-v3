@@ -17,28 +17,35 @@ class AudioStreamCreateRequestData:
     sensitive_list = []
 
     openapi_types = {
-        'url': 'str'
+        'url': 'str',
+        'language': 'str'
     }
 
     attribute_map = {
-        'url': 'url'
+        'url': 'url',
+        'language': 'language'
     }
 
-    def __init__(self, url=None):
+    def __init__(self, url=None, language=None):
         """AudioStreamCreateRequestData
 
         The model defined in huaweicloud sdk
 
         :param url: 音频流url地址，支持rtmp、rtmps、hls、http、https等主流协议。
         :type url: str
+        :param language: 指定音频流中语种类型 zh: 中文,默认值为zh
+        :type language: str
         """
         
         
 
         self._url = None
+        self._language = None
         self.discriminator = None
 
         self.url = url
+        if language is not None:
+            self.language = language
 
     @property
     def url(self):
@@ -61,6 +68,28 @@ class AudioStreamCreateRequestData:
         :type url: str
         """
         self._url = url
+
+    @property
+    def language(self):
+        """Gets the language of this AudioStreamCreateRequestData.
+
+        指定音频流中语种类型 zh: 中文,默认值为zh
+
+        :return: The language of this AudioStreamCreateRequestData.
+        :rtype: str
+        """
+        return self._language
+
+    @language.setter
+    def language(self, language):
+        """Sets the language of this AudioStreamCreateRequestData.
+
+        指定音频流中语种类型 zh: 中文,默认值为zh
+
+        :param language: The language of this AudioStreamCreateRequestData.
+        :type language: str
+        """
+        self._language = language
 
     def to_dict(self):
         """Returns the model properties as a dict"""

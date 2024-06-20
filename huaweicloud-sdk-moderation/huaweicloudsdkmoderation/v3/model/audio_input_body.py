@@ -17,28 +17,35 @@ class AudioInputBody:
     sensitive_list = []
 
     openapi_types = {
-        'url': 'str'
+        'url': 'str',
+        'language': 'str'
     }
 
     attribute_map = {
-        'url': 'url'
+        'url': 'url',
+        'language': 'language'
     }
 
-    def __init__(self, url=None):
+    def __init__(self, url=None, language=None):
         """AudioInputBody
 
         The model defined in huaweicloud sdk
 
         :param url: 音频url地址。
         :type url: str
+        :param language: 支持的语言，默认为zh，zh：中文
+        :type language: str
         """
         
         
 
         self._url = None
+        self._language = None
         self.discriminator = None
 
         self.url = url
+        if language is not None:
+            self.language = language
 
     @property
     def url(self):
@@ -61,6 +68,28 @@ class AudioInputBody:
         :type url: str
         """
         self._url = url
+
+    @property
+    def language(self):
+        """Gets the language of this AudioInputBody.
+
+        支持的语言，默认为zh，zh：中文
+
+        :return: The language of this AudioInputBody.
+        :rtype: str
+        """
+        return self._language
+
+    @language.setter
+    def language(self, language):
+        """Sets the language of this AudioInputBody.
+
+        支持的语言，默认为zh，zh：中文
+
+        :param language: The language of this AudioInputBody.
+        :type language: str
+        """
+        self._language = language
 
     def to_dict(self):
         """Returns the model properties as a dict"""

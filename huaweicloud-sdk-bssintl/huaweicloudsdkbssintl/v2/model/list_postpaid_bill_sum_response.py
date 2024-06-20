@@ -19,11 +19,11 @@ class ListPostpaidBillSumResponse(SdkResponse):
 
     openapi_types = {
         'bill_cycle': 'str',
-        'initial_amount_due': 'float',
-        'consume_amount': 'float',
-        'refunds': 'float',
-        'adjustments': 'float',
-        'tax_amount': 'float',
+        'initial_amount_due': 'decimal.Decimal',
+        'consume_amount': 'decimal.Decimal',
+        'refunds': 'decimal.Decimal',
+        'adjustments': 'decimal.Decimal',
+        'tax_amount': 'decimal.Decimal',
         'currency': 'str'
     }
 
@@ -45,15 +45,15 @@ class ListPostpaidBillSumResponse(SdkResponse):
         :param bill_cycle: 账单所归属的月份。只有成功才返回这个参数。 格式：YYYY-MM
         :type bill_cycle: str
         :param initial_amount_due: 账单中的应还金额（含税）。 应还金额（包含销项税）&#x3D;消费金额+退款金额+调账金额
-        :type initial_amount_due: float
+        :type initial_amount_due: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param consume_amount: 账单中的消费金额。
-        :type consume_amount: float
+        :type consume_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param refunds: 账单中的退款金额。
-        :type refunds: float
+        :type refunds: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param adjustments: 账单中的调账金额，即伙伴在账期内的调账信息如：欠款核销金额等。
-        :type adjustments: float
+        :type adjustments: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param tax_amount: 账单中的销项税金额，销项税不计入应还金额。
-        :type tax_amount: float
+        :type tax_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param currency: 只有成功才返回这个参数。 美金：USD
         :type currency: str
         """
@@ -113,7 +113,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
         账单中的应还金额（含税）。 应还金额（包含销项税）=消费金额+退款金额+调账金额
 
         :return: The initial_amount_due of this ListPostpaidBillSumResponse.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._initial_amount_due
 
@@ -124,7 +124,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
         账单中的应还金额（含税）。 应还金额（包含销项税）=消费金额+退款金额+调账金额
 
         :param initial_amount_due: The initial_amount_due of this ListPostpaidBillSumResponse.
-        :type initial_amount_due: float
+        :type initial_amount_due: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._initial_amount_due = initial_amount_due
 
@@ -135,7 +135,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
         账单中的消费金额。
 
         :return: The consume_amount of this ListPostpaidBillSumResponse.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._consume_amount
 
@@ -146,7 +146,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
         账单中的消费金额。
 
         :param consume_amount: The consume_amount of this ListPostpaidBillSumResponse.
-        :type consume_amount: float
+        :type consume_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._consume_amount = consume_amount
 
@@ -157,7 +157,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
         账单中的退款金额。
 
         :return: The refunds of this ListPostpaidBillSumResponse.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._refunds
 
@@ -168,7 +168,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
         账单中的退款金额。
 
         :param refunds: The refunds of this ListPostpaidBillSumResponse.
-        :type refunds: float
+        :type refunds: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._refunds = refunds
 
@@ -179,7 +179,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
         账单中的调账金额，即伙伴在账期内的调账信息如：欠款核销金额等。
 
         :return: The adjustments of this ListPostpaidBillSumResponse.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._adjustments
 
@@ -190,7 +190,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
         账单中的调账金额，即伙伴在账期内的调账信息如：欠款核销金额等。
 
         :param adjustments: The adjustments of this ListPostpaidBillSumResponse.
-        :type adjustments: float
+        :type adjustments: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._adjustments = adjustments
 
@@ -201,7 +201,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
         账单中的销项税金额，销项税不计入应还金额。
 
         :return: The tax_amount of this ListPostpaidBillSumResponse.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._tax_amount
 
@@ -212,7 +212,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
         账单中的销项税金额，销项税不计入应还金额。
 
         :param tax_amount: The tax_amount of this ListPostpaidBillSumResponse.
-        :type tax_amount: float
+        :type tax_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._tax_amount = tax_amount
 

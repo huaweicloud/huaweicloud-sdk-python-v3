@@ -22,6 +22,26 @@ class DasRegion:
                         "https://das.cn-southwest-2.myhuaweicloud.com")
     TR_WEST_1 = Region("tr-west-1",
                         "https://das.tr-west-1.myhuaweicloud.com")
+    AP_SOUTHEAST_4 = Region("ap-southeast-4",
+                        "https://das.ap-southeast-4.myhuaweicloud.com")
+    ME_EAST_1 = Region("me-east-1",
+                        "https://das.me-east-1.myhuaweicloud.com")
+    NA_MEXICO_1 = Region("na-mexico-1",
+                        "https://das.la-south-2.myhuaweicloud.com")
+    CN_NORTH_9 = Region("cn-north-9",
+                        "https://das.cn-north-9.myhuaweicloud.com")
+    CN_SOUTH_4 = Region("cn-south-4",
+                        "https://das.cn-south-4.myhuaweicloud.com")
+    CN_EAST_5 = Region("cn-east-5",
+                        "https://das.cn-east-5.myhuaweicloud.com")
+    SA_BRAZIL_1 = Region("sa-brazil-1",
+                        "https://das.sa-brazil-1.myhuaweicloud.com")
+    AP_SOUTHEAST_3 = Region("ap-southeast-3",
+                        "https://das.ap-southeast-3.myhuaweicloud.com")
+    AF_SOUTH_1 = Region("af-south-1",
+                        "https://das.af-south-1.myhuaweicloud.com")
+    AP_SOUTHEAST_1 = Region("ap-southeast-1",
+                        "https://das.ap-southeast-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-south-1": CN_SOUTH_1,
@@ -32,6 +52,16 @@ class DasRegion:
         "cn-east-2": CN_EAST_2,
         "cn-southwest-2": CN_SOUTHWEST_2,
         "tr-west-1": TR_WEST_1,
+        "ap-southeast-4": AP_SOUTHEAST_4,
+        "me-east-1": ME_EAST_1,
+        "na-mexico-1": NA_MEXICO_1,
+        "cn-north-9": CN_NORTH_9,
+        "cn-south-4": CN_SOUTH_4,
+        "cn-east-5": CN_EAST_5,
+        "sa-brazil-1": SA_BRAZIL_1,
+        "ap-southeast-3": AP_SOUTHEAST_3,
+        "af-south-1": AF_SOUTH_1,
+        "ap-southeast-1": AP_SOUTHEAST_1,
     }
 
     @classmethod

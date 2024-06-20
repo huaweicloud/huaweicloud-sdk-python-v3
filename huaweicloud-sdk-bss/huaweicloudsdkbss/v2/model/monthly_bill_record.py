@@ -33,18 +33,18 @@ class MonthlyBillRecord:
         'trade_id': 'str',
         'bill_type': 'int',
         'status': 'int',
-        'official_amount': 'float',
-        'official_discount_amount': 'float',
-        'erase_amount': 'float',
-        'consume_amount': 'float',
-        'cash_amount': 'float',
-        'credit_amount': 'float',
-        'coupon_amount': 'float',
-        'flexipurchase_coupon_amount': 'float',
-        'stored_value_card_amount': 'float',
-        'bonus_amount': 'float',
-        'debt_amount': 'float',
-        'writeoff_amount': 'float',
+        'official_amount': 'decimal.Decimal',
+        'official_discount_amount': 'decimal.Decimal',
+        'erase_amount': 'decimal.Decimal',
+        'consume_amount': 'decimal.Decimal',
+        'cash_amount': 'decimal.Decimal',
+        'credit_amount': 'decimal.Decimal',
+        'coupon_amount': 'decimal.Decimal',
+        'flexipurchase_coupon_amount': 'decimal.Decimal',
+        'stored_value_card_amount': 'decimal.Decimal',
+        'bonus_amount': 'decimal.Decimal',
+        'debt_amount': 'decimal.Decimal',
+        'writeoff_amount': 'decimal.Decimal',
         'region_name': 'str'
     }
 
@@ -118,29 +118,29 @@ class MonthlyBillRecord:
         :param status: 支付状态。 1：已支付2：未结清3：未结算
         :type status: int
         :param official_amount: 官网价。单位：元。  说明： official_amount &#x3D; official_discount_amount + erase_amount + consume_amount
-        :type official_amount: float
+        :type official_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param official_discount_amount: 折扣金额。单位：元。
-        :type official_discount_amount: float
+        :type official_discount_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param erase_amount: 抹零金额。单位：元。
-        :type erase_amount: float
+        :type erase_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param consume_amount: 应付金额，包括现金券和储值卡和代金券金额。单位：元。  说明： consume_amount的值等于cash_amount，credit_amount，coupon_amount，flexipurchase_coupon_amount，stored_value_card_amount，bonus_amount，debt_amount，writeoff_amount的总和。
-        :type consume_amount: float
+        :type consume_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param cash_amount: 现金支付金额。单位：元.
-        :type cash_amount: float
+        :type cash_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param credit_amount: 信用额度支付金额。单位：元。
-        :type credit_amount: float
+        :type credit_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param coupon_amount: 代金券支付金额。单位：元。
-        :type coupon_amount: float
+        :type coupon_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param flexipurchase_coupon_amount: 现金券支付金额。单位：元。
-        :type flexipurchase_coupon_amount: float
+        :type flexipurchase_coupon_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param stored_value_card_amount: 储值卡支付金额。单位：元。
-        :type stored_value_card_amount: float
+        :type stored_value_card_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param bonus_amount: 奖励金支付金额（奖励金已经下线，目前用于现网客户未使用完的奖励金）。单位：元。
-        :type bonus_amount: float
+        :type bonus_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param debt_amount: 欠费金额。单位：元。  说明： 对于月结客户，欠费金额即页面上的月度结算金额。
-        :type debt_amount: float
+        :type debt_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param writeoff_amount: 欠费核销金额。单位：元。
-        :type writeoff_amount: float
+        :type writeoff_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param region_name: 云服务区名称，例如：“华北-北京一”。具体请参见地区和终端节点对应云服务的“区域名称”列的值。
         :type region_name: str
         """
@@ -596,7 +596,7 @@ class MonthlyBillRecord:
         官网价。单位：元。  说明： official_amount = official_discount_amount + erase_amount + consume_amount
 
         :return: The official_amount of this MonthlyBillRecord.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._official_amount
 
@@ -607,7 +607,7 @@ class MonthlyBillRecord:
         官网价。单位：元。  说明： official_amount = official_discount_amount + erase_amount + consume_amount
 
         :param official_amount: The official_amount of this MonthlyBillRecord.
-        :type official_amount: float
+        :type official_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._official_amount = official_amount
 
@@ -618,7 +618,7 @@ class MonthlyBillRecord:
         折扣金额。单位：元。
 
         :return: The official_discount_amount of this MonthlyBillRecord.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._official_discount_amount
 
@@ -629,7 +629,7 @@ class MonthlyBillRecord:
         折扣金额。单位：元。
 
         :param official_discount_amount: The official_discount_amount of this MonthlyBillRecord.
-        :type official_discount_amount: float
+        :type official_discount_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._official_discount_amount = official_discount_amount
 
@@ -640,7 +640,7 @@ class MonthlyBillRecord:
         抹零金额。单位：元。
 
         :return: The erase_amount of this MonthlyBillRecord.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._erase_amount
 
@@ -651,7 +651,7 @@ class MonthlyBillRecord:
         抹零金额。单位：元。
 
         :param erase_amount: The erase_amount of this MonthlyBillRecord.
-        :type erase_amount: float
+        :type erase_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._erase_amount = erase_amount
 
@@ -662,7 +662,7 @@ class MonthlyBillRecord:
         应付金额，包括现金券和储值卡和代金券金额。单位：元。  说明： consume_amount的值等于cash_amount，credit_amount，coupon_amount，flexipurchase_coupon_amount，stored_value_card_amount，bonus_amount，debt_amount，writeoff_amount的总和。
 
         :return: The consume_amount of this MonthlyBillRecord.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._consume_amount
 
@@ -673,7 +673,7 @@ class MonthlyBillRecord:
         应付金额，包括现金券和储值卡和代金券金额。单位：元。  说明： consume_amount的值等于cash_amount，credit_amount，coupon_amount，flexipurchase_coupon_amount，stored_value_card_amount，bonus_amount，debt_amount，writeoff_amount的总和。
 
         :param consume_amount: The consume_amount of this MonthlyBillRecord.
-        :type consume_amount: float
+        :type consume_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._consume_amount = consume_amount
 
@@ -684,7 +684,7 @@ class MonthlyBillRecord:
         现金支付金额。单位：元.
 
         :return: The cash_amount of this MonthlyBillRecord.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._cash_amount
 
@@ -695,7 +695,7 @@ class MonthlyBillRecord:
         现金支付金额。单位：元.
 
         :param cash_amount: The cash_amount of this MonthlyBillRecord.
-        :type cash_amount: float
+        :type cash_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._cash_amount = cash_amount
 
@@ -706,7 +706,7 @@ class MonthlyBillRecord:
         信用额度支付金额。单位：元。
 
         :return: The credit_amount of this MonthlyBillRecord.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._credit_amount
 
@@ -717,7 +717,7 @@ class MonthlyBillRecord:
         信用额度支付金额。单位：元。
 
         :param credit_amount: The credit_amount of this MonthlyBillRecord.
-        :type credit_amount: float
+        :type credit_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._credit_amount = credit_amount
 
@@ -728,7 +728,7 @@ class MonthlyBillRecord:
         代金券支付金额。单位：元。
 
         :return: The coupon_amount of this MonthlyBillRecord.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._coupon_amount
 
@@ -739,7 +739,7 @@ class MonthlyBillRecord:
         代金券支付金额。单位：元。
 
         :param coupon_amount: The coupon_amount of this MonthlyBillRecord.
-        :type coupon_amount: float
+        :type coupon_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._coupon_amount = coupon_amount
 
@@ -750,7 +750,7 @@ class MonthlyBillRecord:
         现金券支付金额。单位：元。
 
         :return: The flexipurchase_coupon_amount of this MonthlyBillRecord.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._flexipurchase_coupon_amount
 
@@ -761,7 +761,7 @@ class MonthlyBillRecord:
         现金券支付金额。单位：元。
 
         :param flexipurchase_coupon_amount: The flexipurchase_coupon_amount of this MonthlyBillRecord.
-        :type flexipurchase_coupon_amount: float
+        :type flexipurchase_coupon_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._flexipurchase_coupon_amount = flexipurchase_coupon_amount
 
@@ -772,7 +772,7 @@ class MonthlyBillRecord:
         储值卡支付金额。单位：元。
 
         :return: The stored_value_card_amount of this MonthlyBillRecord.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._stored_value_card_amount
 
@@ -783,7 +783,7 @@ class MonthlyBillRecord:
         储值卡支付金额。单位：元。
 
         :param stored_value_card_amount: The stored_value_card_amount of this MonthlyBillRecord.
-        :type stored_value_card_amount: float
+        :type stored_value_card_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._stored_value_card_amount = stored_value_card_amount
 
@@ -794,7 +794,7 @@ class MonthlyBillRecord:
         奖励金支付金额（奖励金已经下线，目前用于现网客户未使用完的奖励金）。单位：元。
 
         :return: The bonus_amount of this MonthlyBillRecord.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._bonus_amount
 
@@ -805,7 +805,7 @@ class MonthlyBillRecord:
         奖励金支付金额（奖励金已经下线，目前用于现网客户未使用完的奖励金）。单位：元。
 
         :param bonus_amount: The bonus_amount of this MonthlyBillRecord.
-        :type bonus_amount: float
+        :type bonus_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._bonus_amount = bonus_amount
 
@@ -816,7 +816,7 @@ class MonthlyBillRecord:
         欠费金额。单位：元。  说明： 对于月结客户，欠费金额即页面上的月度结算金额。
 
         :return: The debt_amount of this MonthlyBillRecord.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._debt_amount
 
@@ -827,7 +827,7 @@ class MonthlyBillRecord:
         欠费金额。单位：元。  说明： 对于月结客户，欠费金额即页面上的月度结算金额。
 
         :param debt_amount: The debt_amount of this MonthlyBillRecord.
-        :type debt_amount: float
+        :type debt_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._debt_amount = debt_amount
 
@@ -838,7 +838,7 @@ class MonthlyBillRecord:
         欠费核销金额。单位：元。
 
         :return: The writeoff_amount of this MonthlyBillRecord.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._writeoff_amount
 
@@ -849,7 +849,7 @@ class MonthlyBillRecord:
         欠费核销金额。单位：元。
 
         :param writeoff_amount: The writeoff_amount of this MonthlyBillRecord.
-        :type writeoff_amount: float
+        :type writeoff_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._writeoff_amount = writeoff_amount
 

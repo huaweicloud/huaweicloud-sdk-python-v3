@@ -19,8 +19,8 @@ class OrderLineItemV3:
     openapi_types = {
         'order_line_item_ids': 'list[str]',
         'discount_mode': 'int',
-        'discount_amount': 'float',
-        'discount_ratio': 'float'
+        'discount_amount': 'decimal.Decimal',
+        'discount_ratio': 'decimal.Decimal'
     }
 
     attribute_map = {
@@ -40,9 +40,9 @@ class OrderLineItemV3:
         :param discount_mode: 订单可用折扣的模式 。 0：折扣1：一口价2：满减
         :type discount_mode: int
         :param discount_amount: 订单可用的折扣金额（即减免金额）。
-        :type discount_amount: float
+        :type discount_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param discount_ratio: 订单可用的折扣比例。
-        :type discount_ratio: float
+        :type discount_ratio: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         
         
@@ -109,7 +109,7 @@ class OrderLineItemV3:
         订单可用的折扣金额（即减免金额）。
 
         :return: The discount_amount of this OrderLineItemV3.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._discount_amount
 
@@ -120,7 +120,7 @@ class OrderLineItemV3:
         订单可用的折扣金额（即减免金额）。
 
         :param discount_amount: The discount_amount of this OrderLineItemV3.
-        :type discount_amount: float
+        :type discount_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._discount_amount = discount_amount
 
@@ -131,7 +131,7 @@ class OrderLineItemV3:
         订单可用的折扣比例。
 
         :return: The discount_ratio of this OrderLineItemV3.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._discount_ratio
 
@@ -142,7 +142,7 @@ class OrderLineItemV3:
         订单可用的折扣比例。
 
         :param discount_ratio: The discount_ratio of this OrderLineItemV3.
-        :type discount_ratio: float
+        :type discount_ratio: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._discount_ratio = discount_ratio
 

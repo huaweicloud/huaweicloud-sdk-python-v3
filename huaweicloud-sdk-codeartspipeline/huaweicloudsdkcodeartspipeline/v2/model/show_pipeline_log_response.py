@@ -42,9 +42,9 @@ class ShowPipelineLogResponse(SdkResponse):
 
         :param has_more: 是否有更多日志
         :type has_more: bool
-        :param end_offset: 查询日志结束偏移
+        :param end_offset: 查询日志结束偏移。填入请求体end_offset字段，用于查询下一页日志。
         :type end_offset: str
-        :param start_offset: 查询日志起始偏移
+        :param start_offset: 查询日志起始偏移。填入请求体start_offset字段，用于查询下一页日志。
         :type start_offset: str
         :param log: 日志内容
         :type log: str
@@ -103,7 +103,7 @@ class ShowPipelineLogResponse(SdkResponse):
     def end_offset(self):
         """Gets the end_offset of this ShowPipelineLogResponse.
 
-        查询日志结束偏移
+        查询日志结束偏移。填入请求体end_offset字段，用于查询下一页日志。
 
         :return: The end_offset of this ShowPipelineLogResponse.
         :rtype: str
@@ -114,7 +114,7 @@ class ShowPipelineLogResponse(SdkResponse):
     def end_offset(self, end_offset):
         """Sets the end_offset of this ShowPipelineLogResponse.
 
-        查询日志结束偏移
+        查询日志结束偏移。填入请求体end_offset字段，用于查询下一页日志。
 
         :param end_offset: The end_offset of this ShowPipelineLogResponse.
         :type end_offset: str
@@ -125,7 +125,7 @@ class ShowPipelineLogResponse(SdkResponse):
     def start_offset(self):
         """Gets the start_offset of this ShowPipelineLogResponse.
 
-        查询日志起始偏移
+        查询日志起始偏移。填入请求体start_offset字段，用于查询下一页日志。
 
         :return: The start_offset of this ShowPipelineLogResponse.
         :rtype: str
@@ -136,7 +136,7 @@ class ShowPipelineLogResponse(SdkResponse):
     def start_offset(self, start_offset):
         """Sets the start_offset of this ShowPipelineLogResponse.
 
-        查询日志起始偏移
+        查询日志起始偏移。填入请求体start_offset字段，用于查询下一页日志。
 
         :param start_offset: The start_offset of this ShowPipelineLogResponse.
         :type start_offset: str

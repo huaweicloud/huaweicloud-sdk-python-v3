@@ -19,7 +19,7 @@ class DemandDiscountRatingResult:
     openapi_types = {
         'discount_id': 'str',
         'discount_type': 'int',
-        'amount': 'float',
+        'amount': 'decimal.Decimal',
         'measure_id': 'int',
         'discount_name': 'str'
     }
@@ -42,7 +42,7 @@ class DemandDiscountRatingResult:
         :param discount_type: 折扣优惠类型。 合同商务折扣：605：华为云BE场景下的合同商务折扣606：分销商BE场景下的合同商务折扣 伙伴授予折扣：607：合作伙伴授予折扣-折扣率
         :type discount_type: int
         :param amount: 折扣的金额。
-        :type amount: float
+        :type amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param measure_id: 度量单位标识。 1：元
         :type measure_id: int
         :param discount_name: 折扣名称。
@@ -120,7 +120,7 @@ class DemandDiscountRatingResult:
         折扣的金额。
 
         :return: The amount of this DemandDiscountRatingResult.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._amount
 
@@ -131,7 +131,7 @@ class DemandDiscountRatingResult:
         折扣的金额。
 
         :param amount: The amount of this DemandDiscountRatingResult.
-        :type amount: float
+        :type amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._amount = amount
 

@@ -17,7 +17,7 @@ class ListReleasePackagesRespData:
     sensitive_list = []
 
     openapi_types = {
-        'apply_timestamp': 'str',
+        'apply_timestamp': 'int',
         'apply_user_id': 'str',
         'apply_user_name': 'str',
         'delete_flag': 'int',
@@ -54,7 +54,7 @@ class ListReleasePackagesRespData:
         The model defined in huaweicloud sdk
 
         :param apply_timestamp: 申请时间，13位时间戳
-        :type apply_timestamp: str
+        :type apply_timestamp: int
         :param apply_user_id: 申请人id
         :type apply_user_id: str
         :param apply_user_name: 申请人名称
@@ -131,7 +131,7 @@ class ListReleasePackagesRespData:
         申请时间，13位时间戳
 
         :return: The apply_timestamp of this ListReleasePackagesRespData.
-        :rtype: str
+        :rtype: int
         """
         return self._apply_timestamp
 
@@ -142,7 +142,7 @@ class ListReleasePackagesRespData:
         申请时间，13位时间戳
 
         :param apply_timestamp: The apply_timestamp of this ListReleasePackagesRespData.
-        :type apply_timestamp: str
+        :type apply_timestamp: int
         """
         self._apply_timestamp = apply_timestamp
 

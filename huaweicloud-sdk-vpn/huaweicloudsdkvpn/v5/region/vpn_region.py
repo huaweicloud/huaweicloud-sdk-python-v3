@@ -48,6 +48,8 @@ class VpnRegion:
                         "https://vpn.cn-east-5.myhuaweicloud.com")
     AF_SOUTH_1 = Region("af-south-1",
                         "https://vpn.af-south-1.myhuaweicloud.com")
+    RU_MOSCOW_1 = Region("ru-moscow-1",
+                        "https://vpn.ru-moscow-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
@@ -71,6 +73,7 @@ class VpnRegion:
         "me-east-1": ME_EAST_1,
         "cn-east-5": CN_EAST_5,
         "af-south-1": AF_SOUTH_1,
+        "ru-moscow-1": RU_MOSCOW_1,
     }
 
     @classmethod

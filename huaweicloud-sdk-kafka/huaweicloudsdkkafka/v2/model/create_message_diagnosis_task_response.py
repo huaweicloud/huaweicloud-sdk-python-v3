@@ -30,7 +30,7 @@ class CreateMessageDiagnosisTaskResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param report_id: 诊断报告id。
+        :param report_id: 诊断报告ID。
         :type report_id: str
         """
         
@@ -46,7 +46,7 @@ class CreateMessageDiagnosisTaskResponse(SdkResponse):
     def report_id(self):
         """Gets the report_id of this CreateMessageDiagnosisTaskResponse.
 
-        诊断报告id。
+        诊断报告ID。
 
         :return: The report_id of this CreateMessageDiagnosisTaskResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class CreateMessageDiagnosisTaskResponse(SdkResponse):
     def report_id(self, report_id):
         """Sets the report_id of this CreateMessageDiagnosisTaskResponse.
 
-        诊断报告id。
+        诊断报告ID。
 
         :param report_id: The report_id of this CreateMessageDiagnosisTaskResponse.
         :type report_id: str

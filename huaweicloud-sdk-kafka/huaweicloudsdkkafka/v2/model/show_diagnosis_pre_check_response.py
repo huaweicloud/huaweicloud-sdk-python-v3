@@ -30,7 +30,7 @@ class ShowDiagnosisPreCheckResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: kafka消息积压诊断预检查返回对象
+        :param body: Kafka消息积压诊断预检查返回对象
         :type body: list[:class:`huaweicloudsdkkafka.v2.KafkaDiagnosisCheckEntity`]
         """
         
@@ -46,7 +46,7 @@ class ShowDiagnosisPreCheckResponse(SdkResponse):
     def body(self):
         """Gets the body of this ShowDiagnosisPreCheckResponse.
 
-        kafka消息积压诊断预检查返回对象
+        Kafka消息积压诊断预检查返回对象
 
         :return: The body of this ShowDiagnosisPreCheckResponse.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.KafkaDiagnosisCheckEntity`]
@@ -57,7 +57,7 @@ class ShowDiagnosisPreCheckResponse(SdkResponse):
     def body(self, body):
         """Sets the body of this ShowDiagnosisPreCheckResponse.
 
-        kafka消息积压诊断预检查返回对象
+        Kafka消息积压诊断预检查返回对象
 
         :param body: The body of this ShowDiagnosisPreCheckResponse.
         :type body: list[:class:`huaweicloudsdkkafka.v2.KafkaDiagnosisCheckEntity`]

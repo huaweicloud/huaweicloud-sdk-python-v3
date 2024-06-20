@@ -115,7 +115,7 @@ class CreateFlinkSqlJobRequestBody:
         :type restart_when_exception: bool
         :param idle_state_retention: 空闲状态过期周期，单位为秒，默认值为3600。
         :type idle_state_retention: int
-        :param job_type: 作业类型：flink_sql_job和flink_sql_edge_job。 run_mode为edge_node时，作业类型须为flink_sql_edge_job。 run_mode为shared_cluster跟exclusive_cluster时，作业类型须为flink_sql_job。 默认值：flink_sql_job。
+        :param job_type: 作业类型：flink_sql_job、flink_opensource_sql_job。 默认值：“flink_opensource_sql_job”。  “run_mode”为“exclusive_cluster”时，作业类型须为“flink_sql_job”或“flink_opensource_sql_job”。  “run_mode””为“shared_cluster”时作业类型必须为”flink_sql_job“。
         :type job_type: str
         :param edge_group_ids: 边缘计算组ID列表。
         :type edge_group_ids: list[str]
@@ -585,7 +585,7 @@ class CreateFlinkSqlJobRequestBody:
     def job_type(self):
         """Gets the job_type of this CreateFlinkSqlJobRequestBody.
 
-        作业类型：flink_sql_job和flink_sql_edge_job。 run_mode为edge_node时，作业类型须为flink_sql_edge_job。 run_mode为shared_cluster跟exclusive_cluster时，作业类型须为flink_sql_job。 默认值：flink_sql_job。
+        作业类型：flink_sql_job、flink_opensource_sql_job。 默认值：“flink_opensource_sql_job”。  “run_mode”为“exclusive_cluster”时，作业类型须为“flink_sql_job”或“flink_opensource_sql_job”。  “run_mode””为“shared_cluster”时作业类型必须为”flink_sql_job“。
 
         :return: The job_type of this CreateFlinkSqlJobRequestBody.
         :rtype: str
@@ -596,7 +596,7 @@ class CreateFlinkSqlJobRequestBody:
     def job_type(self, job_type):
         """Sets the job_type of this CreateFlinkSqlJobRequestBody.
 
-        作业类型：flink_sql_job和flink_sql_edge_job。 run_mode为edge_node时，作业类型须为flink_sql_edge_job。 run_mode为shared_cluster跟exclusive_cluster时，作业类型须为flink_sql_job。 默认值：flink_sql_job。
+        作业类型：flink_sql_job、flink_opensource_sql_job。 默认值：“flink_opensource_sql_job”。  “run_mode”为“exclusive_cluster”时，作业类型须为“flink_sql_job”或“flink_opensource_sql_job”。  “run_mode””为“shared_cluster”时作业类型必须为”flink_sql_job“。
 
         :param job_type: The job_type of this CreateFlinkSqlJobRequestBody.
         :type job_type: str

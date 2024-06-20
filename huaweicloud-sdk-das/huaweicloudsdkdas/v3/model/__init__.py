@@ -74,6 +74,9 @@ from huaweicloudsdkdas.v3.model.list_space_analysis_response import ListSpaceAna
 from huaweicloudsdkdas.v3.model.list_sql_limit_rules_request import ListSqlLimitRulesRequest
 from huaweicloudsdkdas.v3.model.list_sql_limit_rules_response import ListSqlLimitRulesResponse
 from huaweicloudsdkdas.v3.model.metadata_lock import MetadataLock
+from huaweicloudsdkdas.v3.model.parse_sql_limit_rules_req import ParseSqlLimitRulesReq
+from huaweicloudsdkdas.v3.model.parse_sql_limit_rules_request import ParseSqlLimitRulesRequest
+from huaweicloudsdkdas.v3.model.parse_sql_limit_rules_response import ParseSqlLimitRulesResponse
 from huaweicloudsdkdas.v3.model.process import Process
 from huaweicloudsdkdas.v3.model.query_sql_plan_body import QuerySqlPlanBody
 from huaweicloudsdkdas.v3.model.register_db_user_request import RegisterDbUserRequest
