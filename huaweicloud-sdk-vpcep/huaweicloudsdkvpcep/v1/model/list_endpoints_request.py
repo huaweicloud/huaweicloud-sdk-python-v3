@@ -23,8 +23,7 @@ class ListEndpointsRequest:
         'limit': 'int',
         'offset': 'int',
         'sort_key': 'str',
-        'sort_dir': 'str',
-        'public_border_group': 'str'
+        'sort_dir': 'str'
     }
 
     attribute_map = {
@@ -34,11 +33,10 @@ class ListEndpointsRequest:
         'limit': 'limit',
         'offset': 'offset',
         'sort_key': 'sort_key',
-        'sort_dir': 'sort_dir',
-        'public_border_group': 'public_border_group'
+        'sort_dir': 'sort_dir'
     }
 
-    def __init__(self, endpoint_service_name=None, vpc_id=None, id=None, limit=None, offset=None, sort_key=None, sort_dir=None, public_border_group=None):
+    def __init__(self, endpoint_service_name=None, vpc_id=None, id=None, limit=None, offset=None, sort_key=None, sort_dir=None):
         """ListEndpointsRequest
 
         The model defined in huaweicloud sdk
@@ -57,8 +55,6 @@ class ListEndpointsRequest:
         :type sort_key: str
         :param sort_dir: 查询结果中终端节点列表的排序方式，取值为：  - desc：降序排序  - asc：升序排序 默认值为desc。
         :type sort_dir: str
-        :param public_border_group: 筛选结果中匹配边缘属性的EPS
-        :type public_border_group: str
         """
         
         
@@ -70,7 +66,6 @@ class ListEndpointsRequest:
         self._offset = None
         self._sort_key = None
         self._sort_dir = None
-        self._public_border_group = None
         self.discriminator = None
 
         if endpoint_service_name is not None:
@@ -87,8 +82,6 @@ class ListEndpointsRequest:
             self.sort_key = sort_key
         if sort_dir is not None:
             self.sort_dir = sort_dir
-        if public_border_group is not None:
-            self.public_border_group = public_border_group
 
     @property
     def endpoint_service_name(self):
@@ -243,28 +236,6 @@ class ListEndpointsRequest:
         :type sort_dir: str
         """
         self._sort_dir = sort_dir
-
-    @property
-    def public_border_group(self):
-        """Gets the public_border_group of this ListEndpointsRequest.
-
-        筛选结果中匹配边缘属性的EPS
-
-        :return: The public_border_group of this ListEndpointsRequest.
-        :rtype: str
-        """
-        return self._public_border_group
-
-    @public_border_group.setter
-    def public_border_group(self, public_border_group):
-        """Sets the public_border_group of this ListEndpointsRequest.
-
-        筛选结果中匹配边缘属性的EPS
-
-        :param public_border_group: The public_border_group of this ListEndpointsRequest.
-        :type public_border_group: str
-        """
-        self._public_border_group = public_border_group
 
     def to_dict(self):
         """Returns the model properties as a dict"""

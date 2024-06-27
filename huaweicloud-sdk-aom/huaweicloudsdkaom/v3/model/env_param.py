@@ -43,9 +43,9 @@ class EnvParam:
 
         :param component_id: 环境关联组件id；id长度不能超过36位，由大小写字母、数字组成。创建环境必传，修改环境时非必选
         :type component_id: str
-        :param description: 描述：最大255字符
+        :param description: 描述
         :type description: str
-        :param env_name: 显示名：字符集长度2-64，仅支持字符集：中文字符、英文字母、数字、下划线、中划线、点
+        :param env_name: 环境名称
         :type env_name: str
         :param env_type: 环境类型，取值：DEV、TEST、PRE、ONLINE，不区分大小写
         :type env_type: str
@@ -105,7 +105,7 @@ class EnvParam:
     def description(self):
         """Gets the description of this EnvParam.
 
-        描述：最大255字符
+        描述
 
         :return: The description of this EnvParam.
         :rtype: str
@@ -116,7 +116,7 @@ class EnvParam:
     def description(self, description):
         """Sets the description of this EnvParam.
 
-        描述：最大255字符
+        描述
 
         :param description: The description of this EnvParam.
         :type description: str
@@ -127,7 +127,7 @@ class EnvParam:
     def env_name(self):
         """Gets the env_name of this EnvParam.
 
-        显示名：字符集长度2-64，仅支持字符集：中文字符、英文字母、数字、下划线、中划线、点
+        环境名称
 
         :return: The env_name of this EnvParam.
         :rtype: str
@@ -138,7 +138,7 @@ class EnvParam:
     def env_name(self, env_name):
         """Sets the env_name of this EnvParam.
 
-        显示名：字符集长度2-64，仅支持字符集：中文字符、英文字母、数字、下划线、中划线、点
+        环境名称
 
         :param env_name: The env_name of this EnvParam.
         :type env_name: str

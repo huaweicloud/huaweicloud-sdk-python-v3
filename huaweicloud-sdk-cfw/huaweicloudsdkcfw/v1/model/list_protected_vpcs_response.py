@@ -18,58 +18,29 @@ class ListProtectedVpcsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'trace_id': 'str',
         'data': 'VPCProtectsVo'
     }
 
     attribute_map = {
-        'trace_id': 'trace_id',
         'data': 'data'
     }
 
-    def __init__(self, trace_id=None, data=None):
+    def __init__(self, data=None):
         """ListProtectedVpcsResponse
 
         The model defined in huaweicloud sdk
 
-        :param trace_id: 调用链id
-        :type trace_id: str
         :param data: 
         :type data: :class:`huaweicloudsdkcfw.v1.VPCProtectsVo`
         """
         
         super(ListProtectedVpcsResponse, self).__init__()
 
-        self._trace_id = None
         self._data = None
         self.discriminator = None
 
-        if trace_id is not None:
-            self.trace_id = trace_id
         if data is not None:
             self.data = data
-
-    @property
-    def trace_id(self):
-        """Gets the trace_id of this ListProtectedVpcsResponse.
-
-        调用链id
-
-        :return: The trace_id of this ListProtectedVpcsResponse.
-        :rtype: str
-        """
-        return self._trace_id
-
-    @trace_id.setter
-    def trace_id(self, trace_id):
-        """Sets the trace_id of this ListProtectedVpcsResponse.
-
-        调用链id
-
-        :param trace_id: The trace_id of this ListProtectedVpcsResponse.
-        :type trace_id: str
-        """
-        self._trace_id = trace_id
 
     @property
     def data(self):

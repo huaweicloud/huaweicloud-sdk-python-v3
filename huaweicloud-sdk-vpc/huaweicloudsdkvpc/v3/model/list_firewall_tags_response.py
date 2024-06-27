@@ -18,43 +18,52 @@ class ListFirewallTagsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'tags': 'ListTag',
-        'request_id': 'str'
+        'tags': 'list[ListTag]',
+        'request_id': 'str',
+        'total_count': 'int'
     }
 
     attribute_map = {
         'tags': 'tags',
-        'request_id': 'request_id'
+        'request_id': 'request_id',
+        'total_count': 'total_count'
     }
 
-    def __init__(self, tags=None, request_id=None):
+    def __init__(self, tags=None, request_id=None, total_count=None):
         """ListFirewallTagsResponse
 
         The model defined in huaweicloud sdk
 
-        :param tags: 
-        :type tags: :class:`huaweicloudsdkvpc.v3.ListTag`
+        :param tags: tag对象列表
+        :type tags: list[:class:`huaweicloudsdkvpc.v3.ListTag`]
         :param request_id: 请求ID
         :type request_id: str
+        :param total_count: 资源数量
+        :type total_count: int
         """
         
         super(ListFirewallTagsResponse, self).__init__()
 
         self._tags = None
         self._request_id = None
+        self._total_count = None
         self.discriminator = None
 
         if tags is not None:
             self.tags = tags
         if request_id is not None:
             self.request_id = request_id
+        if total_count is not None:
+            self.total_count = total_count
 
     @property
     def tags(self):
         """Gets the tags of this ListFirewallTagsResponse.
 
+        tag对象列表
+
         :return: The tags of this ListFirewallTagsResponse.
-        :rtype: :class:`huaweicloudsdkvpc.v3.ListTag`
+        :rtype: list[:class:`huaweicloudsdkvpc.v3.ListTag`]
         """
         return self._tags
 
@@ -62,8 +71,10 @@ class ListFirewallTagsResponse(SdkResponse):
     def tags(self, tags):
         """Sets the tags of this ListFirewallTagsResponse.
 
+        tag对象列表
+
         :param tags: The tags of this ListFirewallTagsResponse.
-        :type tags: :class:`huaweicloudsdkvpc.v3.ListTag`
+        :type tags: list[:class:`huaweicloudsdkvpc.v3.ListTag`]
         """
         self._tags = tags
 
@@ -88,6 +99,28 @@ class ListFirewallTagsResponse(SdkResponse):
         :type request_id: str
         """
         self._request_id = request_id
+
+    @property
+    def total_count(self):
+        """Gets the total_count of this ListFirewallTagsResponse.
+
+        资源数量
+
+        :return: The total_count of this ListFirewallTagsResponse.
+        :rtype: int
+        """
+        return self._total_count
+
+    @total_count.setter
+    def total_count(self, total_count):
+        """Sets the total_count of this ListFirewallTagsResponse.
+
+        资源数量
+
+        :param total_count: The total_count of this ListFirewallTagsResponse.
+        :type total_count: int
+        """
+        self._total_count = total_count
 
     def to_dict(self):
         """Returns the model properties as a dict"""

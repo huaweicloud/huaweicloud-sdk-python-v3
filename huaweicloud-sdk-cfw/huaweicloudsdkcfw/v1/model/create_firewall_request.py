@@ -19,25 +19,21 @@ class CreateFirewallRequest:
 
     openapi_types = {
         'x_client_token': 'str',
-        'x_trace_id': 'str',
         'body': 'CreateFirewallReq'
     }
 
     attribute_map = {
         'x_client_token': 'X-Client-Token',
-        'x_trace_id': 'X-Trace-Id',
         'body': 'body'
     }
 
-    def __init__(self, x_client_token=None, x_trace_id=None, body=None):
+    def __init__(self, x_client_token=None, body=None):
         """CreateFirewallRequest
 
         The model defined in huaweicloud sdk
 
         :param x_client_token: 保证客户端请求幂等性的标识。  该标识为32位UUID格式，由客户端生成，且需确保不同请求之间该标识具有唯一性。
         :type x_client_token: str
-        :param x_trace_id: 
-        :type x_trace_id: str
         :param body: Body of the CreateFirewallRequest
         :type body: :class:`huaweicloudsdkcfw.v1.CreateFirewallReq`
         """
@@ -45,14 +41,11 @@ class CreateFirewallRequest:
         
 
         self._x_client_token = None
-        self._x_trace_id = None
         self._body = None
         self.discriminator = None
 
         if x_client_token is not None:
             self.x_client_token = x_client_token
-        if x_trace_id is not None:
-            self.x_trace_id = x_trace_id
         if body is not None:
             self.body = body
 
@@ -77,24 +70,6 @@ class CreateFirewallRequest:
         :type x_client_token: str
         """
         self._x_client_token = x_client_token
-
-    @property
-    def x_trace_id(self):
-        """Gets the x_trace_id of this CreateFirewallRequest.
-
-        :return: The x_trace_id of this CreateFirewallRequest.
-        :rtype: str
-        """
-        return self._x_trace_id
-
-    @x_trace_id.setter
-    def x_trace_id(self, x_trace_id):
-        """Sets the x_trace_id of this CreateFirewallRequest.
-
-        :param x_trace_id: The x_trace_id of this CreateFirewallRequest.
-        :type x_trace_id: str
-        """
-        self._x_trace_id = x_trace_id
 
     @property
     def body(self):

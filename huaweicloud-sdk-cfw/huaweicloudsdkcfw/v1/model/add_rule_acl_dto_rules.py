@@ -31,7 +31,6 @@ class AddRuleAclDtoRules:
         'long_connect_enable': 'int',
         'description': 'str',
         'direction': 'int',
-        'profile': 'RuleProfileDto',
         'source': 'RuleAddressDtoForRequest',
         'destination': 'RuleAddressDtoForRequest',
         'service': 'RuleServiceDto',
@@ -53,14 +52,13 @@ class AddRuleAclDtoRules:
         'long_connect_enable': 'long_connect_enable',
         'description': 'description',
         'direction': 'direction',
-        'profile': 'profile',
         'source': 'source',
         'destination': 'destination',
         'service': 'service',
         'tag': 'tag'
     }
 
-    def __init__(self, name=None, sequence=None, address_type=None, action_type=None, status=None, applications=None, applications_json_string=None, long_connect_time=None, long_connect_time_hour=None, long_connect_time_minute=None, long_connect_time_second=None, long_connect_enable=None, description=None, direction=None, profile=None, source=None, destination=None, service=None, tag=None):
+    def __init__(self, name=None, sequence=None, address_type=None, action_type=None, status=None, applications=None, applications_json_string=None, long_connect_time=None, long_connect_time_hour=None, long_connect_time_minute=None, long_connect_time_second=None, long_connect_enable=None, description=None, direction=None, source=None, destination=None, service=None, tag=None):
         """AddRuleAclDtoRules
 
         The model defined in huaweicloud sdk
@@ -93,8 +91,6 @@ class AddRuleAclDtoRules:
         :type description: str
         :param direction: 方向：0表示外到内，1表示内到外【说明：规则type&#x3D;0：互联网规则 | 2：nat规则时方向值必填】
         :type direction: int
-        :param profile: 
-        :type profile: :class:`huaweicloudsdkcfw.v1.RuleProfileDto`
         :param source: 
         :type source: :class:`huaweicloudsdkcfw.v1.RuleAddressDtoForRequest`
         :param destination: 
@@ -121,7 +117,6 @@ class AddRuleAclDtoRules:
         self._long_connect_enable = None
         self._description = None
         self._direction = None
-        self._profile = None
         self._source = None
         self._destination = None
         self._service = None
@@ -150,8 +145,6 @@ class AddRuleAclDtoRules:
             self.description = description
         if direction is not None:
             self.direction = direction
-        if profile is not None:
-            self.profile = profile
         self.source = source
         self.destination = destination
         self.service = service
@@ -461,24 +454,6 @@ class AddRuleAclDtoRules:
         :type direction: int
         """
         self._direction = direction
-
-    @property
-    def profile(self):
-        """Gets the profile of this AddRuleAclDtoRules.
-
-        :return: The profile of this AddRuleAclDtoRules.
-        :rtype: :class:`huaweicloudsdkcfw.v1.RuleProfileDto`
-        """
-        return self._profile
-
-    @profile.setter
-    def profile(self, profile):
-        """Sets the profile of this AddRuleAclDtoRules.
-
-        :param profile: The profile of this AddRuleAclDtoRules.
-        :type profile: :class:`huaweicloudsdkcfw.v1.RuleProfileDto`
-        """
-        self._profile = profile
 
     @property
     def source(self):

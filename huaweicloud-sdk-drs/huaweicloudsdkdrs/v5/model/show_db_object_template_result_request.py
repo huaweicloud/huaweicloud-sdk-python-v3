@@ -19,16 +19,18 @@ class ShowDbObjectTemplateResultRequest:
     openapi_types = {
         'job_id': 'str',
         'x_language': 'str',
-        'type': 'str'
+        'type': 'str',
+        'file_export_object_level': 'str'
     }
 
     attribute_map = {
         'job_id': 'job_id',
         'x_language': 'X-Language',
-        'type': 'type'
+        'type': 'type',
+        'file_export_object_level': 'file_export_object_level'
     }
 
-    def __init__(self, job_id=None, x_language=None, type=None):
+    def __init__(self, job_id=None, x_language=None, type=None, file_export_object_level=None):
         """ShowDbObjectTemplateResultRequest
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class ShowDbObjectTemplateResultRequest:
         :type x_language: str
         :param type: 导入的结果类型。取值： - detail：获取最新导入的文件与校验结果，上传后的文件若存在错误，会同时将错误原因标记在文件内。 - synchronized：获取已同步的（已下发的）对象文件结果。 - change: 获取新增和删除的对象结果（当再编辑时使用）
         :type type: str
+        :param file_export_object_level: 默认为空。当进行列加工导入时，查询列加工导入进度，取值column。
+        :type file_export_object_level: str
         """
         
         
@@ -46,12 +50,15 @@ class ShowDbObjectTemplateResultRequest:
         self._job_id = None
         self._x_language = None
         self._type = None
+        self._file_export_object_level = None
         self.discriminator = None
 
         self.job_id = job_id
         if x_language is not None:
             self.x_language = x_language
         self.type = type
+        if file_export_object_level is not None:
+            self.file_export_object_level = file_export_object_level
 
     @property
     def job_id(self):
@@ -118,6 +125,28 @@ class ShowDbObjectTemplateResultRequest:
         :type type: str
         """
         self._type = type
+
+    @property
+    def file_export_object_level(self):
+        """Gets the file_export_object_level of this ShowDbObjectTemplateResultRequest.
+
+        默认为空。当进行列加工导入时，查询列加工导入进度，取值column。
+
+        :return: The file_export_object_level of this ShowDbObjectTemplateResultRequest.
+        :rtype: str
+        """
+        return self._file_export_object_level
+
+    @file_export_object_level.setter
+    def file_export_object_level(self, file_export_object_level):
+        """Sets the file_export_object_level of this ShowDbObjectTemplateResultRequest.
+
+        默认为空。当进行列加工导入时，查询列加工导入进度，取值column。
+
+        :param file_export_object_level: The file_export_object_level of this ShowDbObjectTemplateResultRequest.
+        :type file_export_object_level: str
+        """
+        self._file_export_object_level = file_export_object_level
 
     def to_dict(self):
         """Returns the model properties as a dict"""

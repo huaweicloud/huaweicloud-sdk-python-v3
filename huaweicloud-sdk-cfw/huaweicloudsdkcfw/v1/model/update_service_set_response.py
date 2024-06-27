@@ -18,7 +18,7 @@ class UpdateServiceSetResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'IdObject'
+        'data': 'CommonResponseDTOData'
     }
 
     attribute_map = {
@@ -31,7 +31,7 @@ class UpdateServiceSetResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param data: 
-        :type data: :class:`huaweicloudsdkcfw.v1.IdObject`
+        :type data: :class:`huaweicloudsdkcfw.v1.CommonResponseDTOData`
         """
         
         super(UpdateServiceSetResponse, self).__init__()
@@ -47,7 +47,7 @@ class UpdateServiceSetResponse(SdkResponse):
         """Gets the data of this UpdateServiceSetResponse.
 
         :return: The data of this UpdateServiceSetResponse.
-        :rtype: :class:`huaweicloudsdkcfw.v1.IdObject`
+        :rtype: :class:`huaweicloudsdkcfw.v1.CommonResponseDTOData`
         """
         return self._data
 
@@ -56,7 +56,7 @@ class UpdateServiceSetResponse(SdkResponse):
         """Sets the data of this UpdateServiceSetResponse.
 
         :param data: The data of this UpdateServiceSetResponse.
-        :type data: :class:`huaweicloudsdkcfw.v1.IdObject`
+        :type data: :class:`huaweicloudsdkcfw.v1.CommonResponseDTOData`
         """
         self._data = data
 

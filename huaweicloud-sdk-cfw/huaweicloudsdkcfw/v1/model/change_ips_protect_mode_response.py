@@ -18,7 +18,7 @@ class ChangeIpsProtectModeResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'IdObject'
+        'data': 'CommonResponseDTOData'
     }
 
     attribute_map = {
@@ -31,7 +31,7 @@ class ChangeIpsProtectModeResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param data: 
-        :type data: :class:`huaweicloudsdkcfw.v1.IdObject`
+        :type data: :class:`huaweicloudsdkcfw.v1.CommonResponseDTOData`
         """
         
         super(ChangeIpsProtectModeResponse, self).__init__()
@@ -47,7 +47,7 @@ class ChangeIpsProtectModeResponse(SdkResponse):
         """Gets the data of this ChangeIpsProtectModeResponse.
 
         :return: The data of this ChangeIpsProtectModeResponse.
-        :rtype: :class:`huaweicloudsdkcfw.v1.IdObject`
+        :rtype: :class:`huaweicloudsdkcfw.v1.CommonResponseDTOData`
         """
         return self._data
 
@@ -56,7 +56,7 @@ class ChangeIpsProtectModeResponse(SdkResponse):
         """Sets the data of this ChangeIpsProtectModeResponse.
 
         :param data: The data of this ChangeIpsProtectModeResponse.
-        :type data: :class:`huaweicloudsdkcfw.v1.IdObject`
+        :type data: :class:`huaweicloudsdkcfw.v1.CommonResponseDTOData`
         """
         self._data = data
 

@@ -51,7 +51,7 @@ class AddressSetListResponseDTODataRecords:
         :type name: str
         :param address_type: 地址类型0 ipv4,1 ipv6
         :type address_type: int
-        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用查询防火墙实例接口获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
+        :param object_id: 互联网边界防护对象id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，type为0的为互联网边界防护对象id。
         :type object_id: str
         :param address_set_type: 地址组类型，0表示自定义地址组，1表示WAF回源IP地址组，2表示DDoS回源IP地址组，3表示NAT64转换地址组
         :type address_set_type: int
@@ -197,7 +197,7 @@ class AddressSetListResponseDTODataRecords:
     def object_id(self):
         """Gets the object_id of this AddressSetListResponseDTODataRecords.
 
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用查询防火墙实例接口获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
+        互联网边界防护对象id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，type为0的为互联网边界防护对象id。
 
         :return: The object_id of this AddressSetListResponseDTODataRecords.
         :rtype: str
@@ -208,7 +208,7 @@ class AddressSetListResponseDTODataRecords:
     def object_id(self, object_id):
         """Sets the object_id of this AddressSetListResponseDTODataRecords.
 
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用查询防火墙实例接口获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
+        互联网边界防护对象id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，type为0的为互联网边界防护对象id。
 
         :param object_id: The object_id of this AddressSetListResponseDTODataRecords.
         :type object_id: str

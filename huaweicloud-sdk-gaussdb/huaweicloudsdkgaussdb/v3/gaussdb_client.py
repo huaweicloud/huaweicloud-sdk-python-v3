@@ -9439,6 +9439,144 @@ class GaussDBClient(Client):
 
         return http_info
 
+    def check_click_house_data_base_config(self, request):
+        """数据同步库配置校验
+
+        数据同步库配置校验。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CheckClickHouseDataBaseConfig
+        :type request: :class:`huaweicloudsdkgaussdb.v3.CheckClickHouseDataBaseConfigRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.CheckClickHouseDataBaseConfigResponse`
+        """
+        http_info = self._check_click_house_data_base_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def check_click_house_data_base_config_invoker(self, request):
+        http_info = self._check_click_house_data_base_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_click_house_data_base_config_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/clickhouse/replication/database-check",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckClickHouseDataBaseConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def check_click_house_table_config(self, request):
+        """数据同步表配置校验
+
+        数据同步表配置校验。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CheckClickHouseTableConfig
+        :type request: :class:`huaweicloudsdkgaussdb.v3.CheckClickHouseTableConfigRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.CheckClickHouseTableConfigResponse`
+        """
+        http_info = self._check_click_house_table_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def check_click_house_table_config_invoker(self, request):
+        http_info = self._check_click_house_table_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_click_house_table_config_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/clickhouse/replication/table-check",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckClickHouseTableConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def check_data_base_config(self, request):
         """HTAP数据同步库配置校验
 
@@ -9600,6 +9738,213 @@ class GaussDBClient(Client):
             "resource_path": "/v3/{project_id}/instances/{instance_id}/starrocks/databases/replication/table-config-check",
             "request_type": request.__class__.__name__,
             "response_type": "CheckTableConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_click_house_data_base_replication(self, request):
+        """创建数据同步
+
+        创建数据同步。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateClickHouseDataBaseReplication
+        :type request: :class:`huaweicloudsdkgaussdb.v3.CreateClickHouseDataBaseReplicationRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateClickHouseDataBaseReplicationResponse`
+        """
+        http_info = self._create_click_house_data_base_replication_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_click_house_data_base_replication_invoker(self, request):
+        http_info = self._create_click_house_data_base_replication_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_click_house_data_base_replication_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/clickhouse/replication",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateClickHouseDataBaseReplicationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_click_house_database_user(self, request):
+        """创建数据库账号
+
+        创建数据库账号。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateClickHouseDatabaseUser
+        :type request: :class:`huaweicloudsdkgaussdb.v3.CreateClickHouseDatabaseUserRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateClickHouseDatabaseUserResponse`
+        """
+        http_info = self._create_click_house_database_user_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_click_house_database_user_invoker(self, request):
+        http_info = self._create_click_house_database_user_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_click_house_database_user_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/clickhouse/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateClickHouseDatabaseUserResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_click_house_instance(self, request):
+        """创建实例
+
+        创建实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateClickHouseInstance
+        :type request: :class:`huaweicloudsdkgaussdb.v3.CreateClickHouseInstanceRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateClickHouseInstanceResponse`
+        """
+        http_info = self._create_click_house_instance_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_click_house_instance_invoker(self, request):
+        http_info = self._create_click_house_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_click_house_instance_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/clickhouse",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateClickHouseInstanceResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -9851,6 +10196,349 @@ class GaussDBClient(Client):
 
         return http_info
 
+    def delete_click_house_data_base_config(self, request):
+        """停止修改数据同步
+
+        停止修改数据同步。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteClickHouseDataBaseConfig
+        :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteClickHouseDataBaseConfigRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteClickHouseDataBaseConfigResponse`
+        """
+        http_info = self._delete_click_house_data_base_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_click_house_data_base_config_invoker(self, request):
+        http_info = self._delete_click_house_data_base_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_click_house_data_base_config_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/clickhouse/databases/replication/config",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteClickHouseDataBaseConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'database' in local_var_params:
+            query_params.append(('database', local_var_params['database']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_click_house_data_base_replication(self, request):
+        """删除数据同步
+
+        删除数据同步。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteClickHouseDataBaseReplication
+        :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteClickHouseDataBaseReplicationRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteClickHouseDataBaseReplicationResponse`
+        """
+        http_info = self._delete_click_house_data_base_replication_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_click_house_data_base_replication_invoker(self, request):
+        http_info = self._delete_click_house_data_base_replication_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_click_house_data_base_replication_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/clickhouse/replication/{database_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteClickHouseDataBaseReplicationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'database_name' in local_var_params:
+            path_params['database_name'] = local_var_params['database_name']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_click_house_database_user(self, request):
+        """删除数据库账户
+
+        删除数据库账户。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteClickHouseDatabaseUser
+        :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteClickHouseDatabaseUserRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteClickHouseDatabaseUserResponse`
+        """
+        http_info = self._delete_click_house_database_user_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_click_house_database_user_invoker(self, request):
+        http_info = self._delete_click_house_database_user_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_click_house_database_user_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/clickhouse/users/{user_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteClickHouseDatabaseUserResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'user_name' in local_var_params:
+            path_params['user_name'] = local_var_params['user_name']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_click_house_instance(self, request):
+        """删除实例
+
+        删除实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteClickHouseInstance
+        :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteClickHouseInstanceRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteClickHouseInstanceResponse`
+        """
+        http_info = self._delete_click_house_instance_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_click_house_instance_invoker(self, request):
+        http_info = self._delete_click_house_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_click_house_instance_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/clickhouse/{clickhouse_instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteClickHouseInstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'clickhouse_instance_id' in local_var_params:
+            path_params['clickhouse_instance_id'] = local_var_params['clickhouse_instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_click_house_lts_config(self, request):
+        """批量解除LTS日志配置
+
+        批量解除LTS日志配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteClickHouseLtsConfig
+        :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteClickHouseLtsConfigRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteClickHouseLtsConfigResponse`
+        """
+        http_info = self._delete_click_house_lts_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_click_house_lts_config_invoker(self, request):
+        http_info = self._delete_click_house_lts_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_click_house_lts_config_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/clickhouse/instances/logs/lts-configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteClickHouseLtsConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_star_rocks_data_replication(self, request):
         """删除StarRocks数据同步
 
@@ -10027,6 +10715,422 @@ class GaussDBClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
         if 'starrocks_instance_id' in local_var_params:
             path_params['starrocks_instance_id'] = local_var_params['starrocks_instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_click_house_data_base(self, request):
+        """查询数据库列表
+
+        查询数据库列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListClickHouseDataBase
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ListClickHouseDataBaseRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ListClickHouseDataBaseResponse`
+        """
+        http_info = self._list_click_house_data_base_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_click_house_data_base_invoker(self, request):
+        http_info = self._list_click_house_data_base_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_click_house_data_base_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/clickhouse/databases",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListClickHouseDataBaseResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'database_name' in local_var_params:
+            query_params.append(('database_name', local_var_params['database_name']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_click_house_data_base_parameter(self, request):
+        """查询数据同步的库参数配置
+
+        查询数据同步的库参数配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListClickHouseDataBaseParameter
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ListClickHouseDataBaseParameterRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ListClickHouseDataBaseParameterResponse`
+        """
+        http_info = self._list_click_house_data_base_parameter_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_click_house_data_base_parameter_invoker(self, request):
+        http_info = self._list_click_house_data_base_parameter_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_click_house_data_base_parameter_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/clickhouse/replication/database-parameter",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListClickHouseDataBaseParameterResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_click_house_data_base_replication(self, request):
+        """查询数据同步信息
+
+        查询数据同步信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListClickHouseDataBaseReplication
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ListClickHouseDataBaseReplicationRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ListClickHouseDataBaseReplicationResponse`
+        """
+        http_info = self._list_click_house_data_base_replication_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_click_house_data_base_replication_invoker(self, request):
+        http_info = self._list_click_house_data_base_replication_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_click_house_data_base_replication_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/clickhouse/replication",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListClickHouseDataBaseReplicationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_click_house_data_base_replication_config(self, request):
+        """查看数据同步配置
+
+        查看数据同步配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListClickHouseDataBaseReplicationConfig
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ListClickHouseDataBaseReplicationConfigRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ListClickHouseDataBaseReplicationConfigResponse`
+        """
+        http_info = self._list_click_house_data_base_replication_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_click_house_data_base_replication_config_invoker(self, request):
+        http_info = self._list_click_house_data_base_replication_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_click_house_data_base_replication_config_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/clickhouse/replication/config",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListClickHouseDataBaseReplicationConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'database_name' in local_var_params:
+            query_params.append(('database_name', local_var_params['database_name']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_click_house_instance(self, request):
+        """查询实例详情
+
+        查询实例详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListClickHouseInstance
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ListClickHouseInstanceRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ListClickHouseInstanceResponse`
+        """
+        http_info = self._list_click_house_instance_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_click_house_instance_invoker(self, request):
+        http_info = self._list_click_house_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_click_house_instance_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/clickhouse/{clickhouse_instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListClickHouseInstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'clickhouse_instance_id' in local_var_params:
+            path_params['clickhouse_instance_id'] = local_var_params['clickhouse_instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_click_house_instance_node(self, request):
+        """查询错误日志、慢日志节点信息
+
+        查询错误日志、慢日志节点信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListClickHouseInstanceNode
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ListClickHouseInstanceNodeRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ListClickHouseInstanceNodeResponse`
+        """
+        http_info = self._list_click_house_instance_node_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_click_house_instance_node_invoker(self, request):
+        http_info = self._list_click_house_instance_node_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_click_house_instance_node_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/clickhouse/nodes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListClickHouseInstanceNodeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
 
@@ -10683,6 +11787,280 @@ class GaussDBClient(Client):
 
         return http_info
 
+    def pause_star_rocks_data_replication(self, request):
+        """暂停StarRocks数据同步
+
+        暂停StarRocks数据同步。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for PauseStarRocksDataReplication
+        :type request: :class:`huaweicloudsdkgaussdb.v3.PauseStarRocksDataReplicationRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.PauseStarRocksDataReplicationResponse`
+        """
+        http_info = self._pause_star_rocks_data_replication_http_info(request)
+        return self._call_api(**http_info)
+
+    def pause_star_rocks_data_replication_invoker(self, request):
+        http_info = self._pause_star_rocks_data_replication_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _pause_star_rocks_data_replication_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/starrocks/databases/replication/pause",
+            "request_type": request.__class__.__name__,
+            "response_type": "PauseStarRocksDataReplicationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def reboot_click_house_instance(self, request):
+        """重启实例
+
+        重启实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RebootClickHouseInstance
+        :type request: :class:`huaweicloudsdkgaussdb.v3.RebootClickHouseInstanceRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.RebootClickHouseInstanceResponse`
+        """
+        http_info = self._reboot_click_house_instance_http_info(request)
+        return self._call_api(**http_info)
+
+    def reboot_click_house_instance_invoker(self, request):
+        http_info = self._reboot_click_house_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _reboot_click_house_instance_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/clickhouse/restart",
+            "request_type": request.__class__.__name__,
+            "response_type": "RebootClickHouseInstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def resize_click_house_flavor(self, request):
+        """实例规格变更
+
+        实例规格变更。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ResizeClickHouseFlavor
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ResizeClickHouseFlavorRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ResizeClickHouseFlavorResponse`
+        """
+        http_info = self._resize_click_house_flavor_http_info(request)
+        return self._call_api(**http_info)
+
+    def resize_click_house_flavor_invoker(self, request):
+        http_info = self._resize_click_house_flavor_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _resize_click_house_flavor_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/clickhouse/resize-flavor",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResizeClickHouseFlavorResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def resize_click_house_instance(self, request):
+        """实例磁盘扩容
+
+        实例磁盘扩容。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ResizeClickHouseInstance
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ResizeClickHouseInstanceRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ResizeClickHouseInstanceResponse`
+        """
+        http_info = self._resize_click_house_instance_http_info(request)
+        return self._call_api(**http_info)
+
+    def resize_click_house_instance_invoker(self, request):
+        http_info = self._resize_click_house_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _resize_click_house_instance_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/clickhouse/resize",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResizeClickHouseInstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def restart_starrocks_instance(self, request):
         """重启StarRocks实例
 
@@ -10819,6 +12197,359 @@ class GaussDBClient(Client):
 
         return http_info
 
+    def resume_star_rocks_data_replication(self, request):
+        """恢复StarRocks数据同步
+
+        恢复StarRocks数据同步。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ResumeStarRocksDataReplication
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ResumeStarRocksDataReplicationRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ResumeStarRocksDataReplicationResponse`
+        """
+        http_info = self._resume_star_rocks_data_replication_http_info(request)
+        return self._call_api(**http_info)
+
+    def resume_star_rocks_data_replication_invoker(self, request):
+        http_info = self._resume_star_rocks_data_replication_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _resume_star_rocks_data_replication_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/starrocks/databases/replication/resume",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResumeStarRocksDataReplicationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_click_house_database_user(self, request):
+        """查询数据库账户
+
+        查询数据库账户。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowClickHouseDatabaseUser
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowClickHouseDatabaseUserRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowClickHouseDatabaseUserResponse`
+        """
+        http_info = self._show_click_house_database_user_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_click_house_database_user_invoker(self, request):
+        http_info = self._show_click_house_database_user_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_click_house_database_user_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/clickhouse/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowClickHouseDatabaseUserResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'user_name' in local_var_params:
+            query_params.append(('user_name', local_var_params['user_name']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_click_house_lts_config(self, request):
+        """查询实例LTS日志配置列表
+
+        查询实例LTS日志配置列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowClickHouseLtsConfig
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowClickHouseLtsConfigRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowClickHouseLtsConfigResponse`
+        """
+        http_info = self._show_click_house_lts_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_click_house_lts_config_invoker(self, request):
+        http_info = self._show_click_house_lts_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_click_house_lts_config_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/clickhouse/instances/logs/lts-configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowClickHouseLtsConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'instance_name' in local_var_params:
+            query_params.append(('instance_name', local_var_params['instance_name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_click_house_slow_log_detail(self, request):
+        """查询慢日志
+
+        获取内核慢日志信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowClickHouseSlowLogDetail
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowClickHouseSlowLogDetailRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowClickHouseSlowLogDetailResponse`
+        """
+        http_info = self._show_click_house_slow_log_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_click_house_slow_log_detail_invoker(self, request):
+        http_info = self._show_click_house_slow_log_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_click_house_slow_log_detail_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/clickhouse/slow-logs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowClickHouseSlowLogDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_click_house_slow_log_sensitive_status(self, request):
+        """查询慢日志脱敏状态
+
+        查询慢日志脱敏状态。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowClickHouseSlowLogSensitiveStatus
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowClickHouseSlowLogSensitiveStatusRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowClickHouseSlowLogSensitiveStatusResponse`
+        """
+        http_info = self._show_click_house_slow_log_sensitive_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_click_house_slow_log_sensitive_status_invoker(self, request):
+        http_info = self._show_click_house_slow_log_sensitive_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_click_house_slow_log_sensitive_status_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/clickhouse/slowlog-sensitive",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowClickHouseSlowLogSensitiveStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_star_rocks_database_user(self, request):
         """查询数据库账户
 
@@ -10878,6 +12609,349 @@ class GaussDBClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_click_house_data_base_config(self, request):
+        """修改数据同步
+
+        修改数据同步。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateClickHouseDataBaseConfig
+        :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateClickHouseDataBaseConfigRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateClickHouseDataBaseConfigResponse`
+        """
+        http_info = self._update_click_house_data_base_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_click_house_data_base_config_invoker(self, request):
+        http_info = self._update_click_house_data_base_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_click_house_data_base_config_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/clickhouse/databases/replication/config",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateClickHouseDataBaseConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_click_house_database_user_password(self, request):
+        """修改数据库账号密码
+
+        修改数据库账号密码。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateClickHouseDatabaseUserPassword
+        :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateClickHouseDatabaseUserPasswordRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateClickHouseDatabaseUserPasswordResponse`
+        """
+        http_info = self._update_click_house_database_user_password_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_click_house_database_user_password_invoker(self, request):
+        http_info = self._update_click_house_database_user_password_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_click_house_database_user_password_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/clickhouse/users/password",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateClickHouseDatabaseUserPasswordResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_click_house_database_user_permission(self, request):
+        """修改数据库账号权限
+
+        修改数据库账号权限。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateClickHouseDatabaseUserPermission
+        :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateClickHouseDatabaseUserPermissionRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateClickHouseDatabaseUserPermissionResponse`
+        """
+        http_info = self._update_click_house_database_user_permission_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_click_house_database_user_permission_invoker(self, request):
+        http_info = self._update_click_house_database_user_permission_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_click_house_database_user_permission_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/clickhouse/users/permission",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateClickHouseDatabaseUserPermissionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_click_house_lts_config(self, request):
+        """批量创建LTS日志配置
+
+        批量创建LTS日志配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateClickHouseLtsConfig
+        :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateClickHouseLtsConfigRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateClickHouseLtsConfigResponse`
+        """
+        http_info = self._update_click_house_lts_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_click_house_lts_config_invoker(self, request):
+        http_info = self._update_click_house_lts_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_click_house_lts_config_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/clickhouse/instances/logs/lts-configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateClickHouseLtsConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_click_house_slow_log_sensitive_status(self, request):
+        """修改慢日志脱敏状态
+
+        修改慢日志脱敏状态。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateClickHouseSlowLogSensitiveStatus
+        :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateClickHouseSlowLogSensitiveStatusRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateClickHouseSlowLogSensitiveStatusResponse`
+        """
+        http_info = self._update_click_house_slow_log_sensitive_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_click_house_slow_log_sensitive_status_invoker(self, request):
+        http_info = self._update_click_house_slow_log_sensitive_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_click_house_slow_log_sensitive_status_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/clickhouse/slowlog-sensitive",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateClickHouseSlowLogSensitiveStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 

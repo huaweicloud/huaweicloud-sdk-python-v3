@@ -31,7 +31,7 @@ class ListLogConfigRequest:
 
         The model defined in huaweicloud sdk
 
-        :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。
+        :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)。
         :type fw_instance_id: str
         :param enterprise_project_id: 企业项目id，用户支持企业项目后，由企业项目生成的id。
         :type enterprise_project_id: str
@@ -51,7 +51,7 @@ class ListLogConfigRequest:
     def fw_instance_id(self):
         """Gets the fw_instance_id of this ListLogConfigRequest.
 
-        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。
+        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)。
 
         :return: The fw_instance_id of this ListLogConfigRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class ListLogConfigRequest:
     def fw_instance_id(self, fw_instance_id):
         """Sets the fw_instance_id of this ListLogConfigRequest.
 
-        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。
+        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)。
 
         :param fw_instance_id: The fw_instance_id of this ListLogConfigRequest.
         :type fw_instance_id: str

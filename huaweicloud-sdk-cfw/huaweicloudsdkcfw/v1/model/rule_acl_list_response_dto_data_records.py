@@ -20,19 +20,18 @@ class RuleAclListResponseDTODataRecords:
         'rule_id': 'str',
         'address_type': 'int',
         'name': 'str',
-        'sequence': 'OrderRuleAclDto',
         'direction': 'int',
         'action_type': 'int',
         'status': 'int',
         'description': 'str',
+        'long_connect_time': 'int',
+        'long_connect_enable': 'int',
         'long_connect_time_hour': 'int',
         'long_connect_time_minute': 'int',
         'long_connect_time_second': 'int',
-        'long_connect_time': 'int',
-        'long_connect_enable': 'int',
-        'source': 'RuleAddressDto',
-        'destination': 'RuleAddressDto',
-        'service': 'RuleServiceDto',
+        'source': 'RuleAddressDtoForResponse',
+        'destination': 'RuleAddressDtoForResponse',
+        'service': 'RuleServiceDtoForResponse',
         'type': 'int',
         'created_date': 'str',
         'last_open_time': 'str',
@@ -43,16 +42,15 @@ class RuleAclListResponseDTODataRecords:
         'rule_id': 'rule_id',
         'address_type': 'address_type',
         'name': 'name',
-        'sequence': 'sequence',
         'direction': 'direction',
         'action_type': 'action_type',
         'status': 'status',
         'description': 'description',
+        'long_connect_time': 'long_connect_time',
+        'long_connect_enable': 'long_connect_enable',
         'long_connect_time_hour': 'long_connect_time_hour',
         'long_connect_time_minute': 'long_connect_time_minute',
         'long_connect_time_second': 'long_connect_time_second',
-        'long_connect_time': 'long_connect_time',
-        'long_connect_enable': 'long_connect_enable',
         'source': 'source',
         'destination': 'destination',
         'service': 'service',
@@ -62,7 +60,7 @@ class RuleAclListResponseDTODataRecords:
         'tag': 'tag'
     }
 
-    def __init__(self, rule_id=None, address_type=None, name=None, sequence=None, direction=None, action_type=None, status=None, description=None, long_connect_time_hour=None, long_connect_time_minute=None, long_connect_time_second=None, long_connect_time=None, long_connect_enable=None, source=None, destination=None, service=None, type=None, created_date=None, last_open_time=None, tag=None):
+    def __init__(self, rule_id=None, address_type=None, name=None, direction=None, action_type=None, status=None, description=None, long_connect_time=None, long_connect_enable=None, long_connect_time_hour=None, long_connect_time_minute=None, long_connect_time_second=None, source=None, destination=None, service=None, type=None, created_date=None, last_open_time=None, tag=None):
         """RuleAclListResponseDTODataRecords
 
         The model defined in huaweicloud sdk
@@ -73,8 +71,6 @@ class RuleAclListResponseDTODataRecords:
         :type address_type: int
         :param name: 规则名称
         :type name: str
-        :param sequence: 
-        :type sequence: :class:`huaweicloudsdkcfw.v1.OrderRuleAclDto`
         :param direction: 规则方向0：外到内1：内到外
         :type direction: int
         :param action_type: 动作0：permit,1：deny
@@ -83,22 +79,22 @@ class RuleAclListResponseDTODataRecords:
         :type status: int
         :param description: 描述
         :type description: str
+        :param long_connect_time: 长连接时长
+        :type long_connect_time: int
+        :param long_connect_enable: 长连接支持
+        :type long_connect_enable: int
         :param long_connect_time_hour: 长连接时长小时
         :type long_connect_time_hour: int
         :param long_connect_time_minute: 长连接时长分钟
         :type long_connect_time_minute: int
         :param long_connect_time_second: 长连接时长秒
         :type long_connect_time_second: int
-        :param long_connect_time: 长连接时长
-        :type long_connect_time: int
-        :param long_connect_enable: 长连接支持
-        :type long_connect_enable: int
         :param source: 
-        :type source: :class:`huaweicloudsdkcfw.v1.RuleAddressDto`
+        :type source: :class:`huaweicloudsdkcfw.v1.RuleAddressDtoForResponse`
         :param destination: 
-        :type destination: :class:`huaweicloudsdkcfw.v1.RuleAddressDto`
+        :type destination: :class:`huaweicloudsdkcfw.v1.RuleAddressDtoForResponse`
         :param service: 
-        :type service: :class:`huaweicloudsdkcfw.v1.RuleServiceDto`
+        :type service: :class:`huaweicloudsdkcfw.v1.RuleServiceDtoForResponse`
         :param type: 规则type，0：互联网规则，1：vpc规则，2：nat规则
         :type type: int
         :param created_date: 创建时间
@@ -114,16 +110,15 @@ class RuleAclListResponseDTODataRecords:
         self._rule_id = None
         self._address_type = None
         self._name = None
-        self._sequence = None
         self._direction = None
         self._action_type = None
         self._status = None
         self._description = None
+        self._long_connect_time = None
+        self._long_connect_enable = None
         self._long_connect_time_hour = None
         self._long_connect_time_minute = None
         self._long_connect_time_second = None
-        self._long_connect_time = None
-        self._long_connect_enable = None
         self._source = None
         self._destination = None
         self._service = None
@@ -139,8 +134,6 @@ class RuleAclListResponseDTODataRecords:
             self.address_type = address_type
         if name is not None:
             self.name = name
-        if sequence is not None:
-            self.sequence = sequence
         if direction is not None:
             self.direction = direction
         if action_type is not None:
@@ -149,16 +142,16 @@ class RuleAclListResponseDTODataRecords:
             self.status = status
         if description is not None:
             self.description = description
+        if long_connect_time is not None:
+            self.long_connect_time = long_connect_time
+        if long_connect_enable is not None:
+            self.long_connect_enable = long_connect_enable
         if long_connect_time_hour is not None:
             self.long_connect_time_hour = long_connect_time_hour
         if long_connect_time_minute is not None:
             self.long_connect_time_minute = long_connect_time_minute
         if long_connect_time_second is not None:
             self.long_connect_time_second = long_connect_time_second
-        if long_connect_time is not None:
-            self.long_connect_time = long_connect_time
-        if long_connect_enable is not None:
-            self.long_connect_enable = long_connect_enable
         if source is not None:
             self.source = source
         if destination is not None:
@@ -239,24 +232,6 @@ class RuleAclListResponseDTODataRecords:
         :type name: str
         """
         self._name = name
-
-    @property
-    def sequence(self):
-        """Gets the sequence of this RuleAclListResponseDTODataRecords.
-
-        :return: The sequence of this RuleAclListResponseDTODataRecords.
-        :rtype: :class:`huaweicloudsdkcfw.v1.OrderRuleAclDto`
-        """
-        return self._sequence
-
-    @sequence.setter
-    def sequence(self, sequence):
-        """Sets the sequence of this RuleAclListResponseDTODataRecords.
-
-        :param sequence: The sequence of this RuleAclListResponseDTODataRecords.
-        :type sequence: :class:`huaweicloudsdkcfw.v1.OrderRuleAclDto`
-        """
-        self._sequence = sequence
 
     @property
     def direction(self):
@@ -347,6 +322,50 @@ class RuleAclListResponseDTODataRecords:
         self._description = description
 
     @property
+    def long_connect_time(self):
+        """Gets the long_connect_time of this RuleAclListResponseDTODataRecords.
+
+        长连接时长
+
+        :return: The long_connect_time of this RuleAclListResponseDTODataRecords.
+        :rtype: int
+        """
+        return self._long_connect_time
+
+    @long_connect_time.setter
+    def long_connect_time(self, long_connect_time):
+        """Sets the long_connect_time of this RuleAclListResponseDTODataRecords.
+
+        长连接时长
+
+        :param long_connect_time: The long_connect_time of this RuleAclListResponseDTODataRecords.
+        :type long_connect_time: int
+        """
+        self._long_connect_time = long_connect_time
+
+    @property
+    def long_connect_enable(self):
+        """Gets the long_connect_enable of this RuleAclListResponseDTODataRecords.
+
+        长连接支持
+
+        :return: The long_connect_enable of this RuleAclListResponseDTODataRecords.
+        :rtype: int
+        """
+        return self._long_connect_enable
+
+    @long_connect_enable.setter
+    def long_connect_enable(self, long_connect_enable):
+        """Sets the long_connect_enable of this RuleAclListResponseDTODataRecords.
+
+        长连接支持
+
+        :param long_connect_enable: The long_connect_enable of this RuleAclListResponseDTODataRecords.
+        :type long_connect_enable: int
+        """
+        self._long_connect_enable = long_connect_enable
+
+    @property
     def long_connect_time_hour(self):
         """Gets the long_connect_time_hour of this RuleAclListResponseDTODataRecords.
 
@@ -413,55 +432,11 @@ class RuleAclListResponseDTODataRecords:
         self._long_connect_time_second = long_connect_time_second
 
     @property
-    def long_connect_time(self):
-        """Gets the long_connect_time of this RuleAclListResponseDTODataRecords.
-
-        长连接时长
-
-        :return: The long_connect_time of this RuleAclListResponseDTODataRecords.
-        :rtype: int
-        """
-        return self._long_connect_time
-
-    @long_connect_time.setter
-    def long_connect_time(self, long_connect_time):
-        """Sets the long_connect_time of this RuleAclListResponseDTODataRecords.
-
-        长连接时长
-
-        :param long_connect_time: The long_connect_time of this RuleAclListResponseDTODataRecords.
-        :type long_connect_time: int
-        """
-        self._long_connect_time = long_connect_time
-
-    @property
-    def long_connect_enable(self):
-        """Gets the long_connect_enable of this RuleAclListResponseDTODataRecords.
-
-        长连接支持
-
-        :return: The long_connect_enable of this RuleAclListResponseDTODataRecords.
-        :rtype: int
-        """
-        return self._long_connect_enable
-
-    @long_connect_enable.setter
-    def long_connect_enable(self, long_connect_enable):
-        """Sets the long_connect_enable of this RuleAclListResponseDTODataRecords.
-
-        长连接支持
-
-        :param long_connect_enable: The long_connect_enable of this RuleAclListResponseDTODataRecords.
-        :type long_connect_enable: int
-        """
-        self._long_connect_enable = long_connect_enable
-
-    @property
     def source(self):
         """Gets the source of this RuleAclListResponseDTODataRecords.
 
         :return: The source of this RuleAclListResponseDTODataRecords.
-        :rtype: :class:`huaweicloudsdkcfw.v1.RuleAddressDto`
+        :rtype: :class:`huaweicloudsdkcfw.v1.RuleAddressDtoForResponse`
         """
         return self._source
 
@@ -470,7 +445,7 @@ class RuleAclListResponseDTODataRecords:
         """Sets the source of this RuleAclListResponseDTODataRecords.
 
         :param source: The source of this RuleAclListResponseDTODataRecords.
-        :type source: :class:`huaweicloudsdkcfw.v1.RuleAddressDto`
+        :type source: :class:`huaweicloudsdkcfw.v1.RuleAddressDtoForResponse`
         """
         self._source = source
 
@@ -479,7 +454,7 @@ class RuleAclListResponseDTODataRecords:
         """Gets the destination of this RuleAclListResponseDTODataRecords.
 
         :return: The destination of this RuleAclListResponseDTODataRecords.
-        :rtype: :class:`huaweicloudsdkcfw.v1.RuleAddressDto`
+        :rtype: :class:`huaweicloudsdkcfw.v1.RuleAddressDtoForResponse`
         """
         return self._destination
 
@@ -488,7 +463,7 @@ class RuleAclListResponseDTODataRecords:
         """Sets the destination of this RuleAclListResponseDTODataRecords.
 
         :param destination: The destination of this RuleAclListResponseDTODataRecords.
-        :type destination: :class:`huaweicloudsdkcfw.v1.RuleAddressDto`
+        :type destination: :class:`huaweicloudsdkcfw.v1.RuleAddressDtoForResponse`
         """
         self._destination = destination
 
@@ -497,7 +472,7 @@ class RuleAclListResponseDTODataRecords:
         """Gets the service of this RuleAclListResponseDTODataRecords.
 
         :return: The service of this RuleAclListResponseDTODataRecords.
-        :rtype: :class:`huaweicloudsdkcfw.v1.RuleServiceDto`
+        :rtype: :class:`huaweicloudsdkcfw.v1.RuleServiceDtoForResponse`
         """
         return self._service
 
@@ -506,7 +481,7 @@ class RuleAclListResponseDTODataRecords:
         """Sets the service of this RuleAclListResponseDTODataRecords.
 
         :param service: The service of this RuleAclListResponseDTODataRecords.
-        :type service: :class:`huaweicloudsdkcfw.v1.RuleServiceDto`
+        :type service: :class:`huaweicloudsdkcfw.v1.RuleServiceDtoForResponse`
         """
         self._service = service
 

@@ -24,7 +24,8 @@ class ShowReplayResultsResponse(SdkResponse):
         'slow_sql_templates': 'list[ReplaySlowSqlTemplateResp]',
         'error_sqls': 'list[ReplayErrorSqlResp]',
         'error_sql_templates': 'list[ReplayErrorSqlTemplateResp]',
-        'replaying_sqls': 'list[ReplayingSqlResp]'
+        'replaying_sqls': 'list[ReplayingSqlResp]',
+        'error_classifications': 'list[ReplayErrorClassification]'
     }
 
     attribute_map = {
@@ -34,10 +35,11 @@ class ShowReplayResultsResponse(SdkResponse):
         'slow_sql_templates': 'slow_sql_templates',
         'error_sqls': 'error_sqls',
         'error_sql_templates': 'error_sql_templates',
-        'replaying_sqls': 'replaying_sqls'
+        'replaying_sqls': 'replaying_sqls',
+        'error_classifications': 'error_classifications'
     }
 
-    def __init__(self, total_count=None, shard_statics=None, slow_sqls=None, slow_sql_templates=None, error_sqls=None, error_sql_templates=None, replaying_sqls=None):
+    def __init__(self, total_count=None, shard_statics=None, slow_sqls=None, slow_sql_templates=None, error_sqls=None, error_sql_templates=None, replaying_sqls=None, error_classifications=None):
         """ShowReplayResultsResponse
 
         The model defined in huaweicloud sdk
@@ -56,6 +58,8 @@ class ShowReplayResultsResponse(SdkResponse):
         :type error_sql_templates: list[:class:`huaweicloudsdkdrs.v5.ReplayErrorSqlTemplateResp`]
         :param replaying_sqls: 正在回放SQL信息列表，在type为replaying_sql时返回
         :type replaying_sqls: list[:class:`huaweicloudsdkdrs.v5.ReplayingSqlResp`]
+        :param error_classifications: 回放异常SQL分类信息，在type为error_classification时返回
+        :type error_classifications: list[:class:`huaweicloudsdkdrs.v5.ReplayErrorClassification`]
         """
         
         super(ShowReplayResultsResponse, self).__init__()
@@ -67,6 +71,7 @@ class ShowReplayResultsResponse(SdkResponse):
         self._error_sqls = None
         self._error_sql_templates = None
         self._replaying_sqls = None
+        self._error_classifications = None
         self.discriminator = None
 
         if total_count is not None:
@@ -83,6 +88,8 @@ class ShowReplayResultsResponse(SdkResponse):
             self.error_sql_templates = error_sql_templates
         if replaying_sqls is not None:
             self.replaying_sqls = replaying_sqls
+        if error_classifications is not None:
+            self.error_classifications = error_classifications
 
     @property
     def total_count(self):
@@ -237,6 +244,28 @@ class ShowReplayResultsResponse(SdkResponse):
         :type replaying_sqls: list[:class:`huaweicloudsdkdrs.v5.ReplayingSqlResp`]
         """
         self._replaying_sqls = replaying_sqls
+
+    @property
+    def error_classifications(self):
+        """Gets the error_classifications of this ShowReplayResultsResponse.
+
+        回放异常SQL分类信息，在type为error_classification时返回
+
+        :return: The error_classifications of this ShowReplayResultsResponse.
+        :rtype: list[:class:`huaweicloudsdkdrs.v5.ReplayErrorClassification`]
+        """
+        return self._error_classifications
+
+    @error_classifications.setter
+    def error_classifications(self, error_classifications):
+        """Sets the error_classifications of this ShowReplayResultsResponse.
+
+        回放异常SQL分类信息，在type为error_classification时返回
+
+        :param error_classifications: The error_classifications of this ShowReplayResultsResponse.
+        :type error_classifications: list[:class:`huaweicloudsdkdrs.v5.ReplayErrorClassification`]
+        """
+        self._error_classifications = error_classifications
 
     def to_dict(self):
         """Returns the model properties as a dict"""

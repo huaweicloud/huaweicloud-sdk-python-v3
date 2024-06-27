@@ -37,7 +37,7 @@ class DownloadDbObjectTemplateRequest:
         :type job_id: str
         :param x_language: 请求语言类型。
         :type x_language: str
-        :param file_import_db_level: 文件模板支持数据同步级别，不填默认为table表级。 - database：库级 - table：表级
+        :param file_import_db_level: 文件模板支持数据同步级别，不填默认为table表级。 - database：库级 - table：表级 - column：列级
         :type file_import_db_level: str
         """
         
@@ -102,7 +102,7 @@ class DownloadDbObjectTemplateRequest:
     def file_import_db_level(self):
         """Gets the file_import_db_level of this DownloadDbObjectTemplateRequest.
 
-        文件模板支持数据同步级别，不填默认为table表级。 - database：库级 - table：表级
+        文件模板支持数据同步级别，不填默认为table表级。 - database：库级 - table：表级 - column：列级
 
         :return: The file_import_db_level of this DownloadDbObjectTemplateRequest.
         :rtype: str
@@ -113,7 +113,7 @@ class DownloadDbObjectTemplateRequest:
     def file_import_db_level(self, file_import_db_level):
         """Sets the file_import_db_level of this DownloadDbObjectTemplateRequest.
 
-        文件模板支持数据同步级别，不填默认为table表级。 - database：库级 - table：表级
+        文件模板支持数据同步级别，不填默认为table表级。 - database：库级 - table：表级 - column：列级
 
         :param file_import_db_level: The file_import_db_level of this DownloadDbObjectTemplateRequest.
         :type file_import_db_level: str

@@ -26,7 +26,10 @@ class ShowReplayResultsRequest:
         'limit': 'int',
         'sort_key': 'str',
         'sort_dir': 'str',
-        'target_name': 'str'
+        'target_name': 'str',
+        'is_sample': 'bool',
+        'error_type': 'str',
+        'sql_template_md5': 'str'
     }
 
     attribute_map = {
@@ -39,10 +42,13 @@ class ShowReplayResultsRequest:
         'limit': 'limit',
         'sort_key': 'sort_key',
         'sort_dir': 'sort_dir',
-        'target_name': 'target_name'
+        'target_name': 'target_name',
+        'is_sample': 'is_sample',
+        'error_type': 'error_type',
+        'sql_template_md5': 'sql_template_md5'
     }
 
-    def __init__(self, job_id=None, x_language=None, type=None, start_time=None, end_time=None, offset=None, limit=None, sort_key=None, sort_dir=None, target_name=None):
+    def __init__(self, job_id=None, x_language=None, type=None, start_time=None, end_time=None, offset=None, limit=None, sort_key=None, sort_dir=None, target_name=None, is_sample=None, error_type=None, sql_template_md5=None):
         """ShowReplayResultsRequest
 
         The model defined in huaweicloud sdk
@@ -51,7 +57,7 @@ class ShowReplayResultsRequest:
         :type job_id: str
         :param x_language: 请求语言类型。
         :type x_language: str
-        :param type: 结果类型。取值： - shard_statistics：回放概览基于时间维度统计信息。 - slow_sql：慢SQL详情。 - error_sql： 回放异常SQL详情。 - slow_sql_template：慢SQL统计信息。  - error_sql_template：异常SQL统计信息。 - replaying_sql：正在回放SQL详情。
+        :param type: 结果类型。取值： - shard_statistics：回放概览基于时间维度统计信息。 - slow_sql：慢SQL详情。 - error_sql： 回放异常SQL详情。 - slow_sql_template：慢SQL统计信息。  - error_sql_template：异常SQL统计信息。 - replaying_sql：正在回放SQL详情。 - error_classification：回放异常SQL分类。
         :type type: str
         :param start_time: 查询数据的起始时间，在type为shard_statistics、slow_sql、error_sql时必填
         :type start_time: str
@@ -67,6 +73,12 @@ class ShowReplayResultsRequest:
         :type sort_dir: str
         :param target_name: 回放数据库名称，用于在一致性回放策略场景，过滤目标库与源库镜像库回放结果。参数非必须，不提供则默认查询所有数据，其取值如下： - target：查询目标库回放结果 - target_mirror：查询源库镜像库回放结果
         :type target_name: str
+        :param is_sample: 是否查询样例true/false，type&#x3D;slow_sql/error_sql时生效，值为true时只查询一条样例数据。
+        :type is_sample: bool
+        :param error_type: 错误分类，type&#x3D;error_sql/error_sql_template时生效，根据错误分类过滤数据。
+        :type error_type: str
+        :param sql_template_md5: sql模板md5，type&#x3D;slow_sql/error_sql时生效，根据模板过滤对应的异常SQL和慢SQL，该值为本接口type&#x3D;slow_sql_template/error_sql_template时的返回字段。
+        :type sql_template_md5: str
         """
         
         
@@ -81,6 +93,9 @@ class ShowReplayResultsRequest:
         self._sort_key = None
         self._sort_dir = None
         self._target_name = None
+        self._is_sample = None
+        self._error_type = None
+        self._sql_template_md5 = None
         self.discriminator = None
 
         self.job_id = job_id
@@ -101,6 +116,12 @@ class ShowReplayResultsRequest:
             self.sort_dir = sort_dir
         if target_name is not None:
             self.target_name = target_name
+        if is_sample is not None:
+            self.is_sample = is_sample
+        if error_type is not None:
+            self.error_type = error_type
+        if sql_template_md5 is not None:
+            self.sql_template_md5 = sql_template_md5
 
     @property
     def job_id(self):
@@ -150,7 +171,7 @@ class ShowReplayResultsRequest:
     def type(self):
         """Gets the type of this ShowReplayResultsRequest.
 
-        结果类型。取值： - shard_statistics：回放概览基于时间维度统计信息。 - slow_sql：慢SQL详情。 - error_sql： 回放异常SQL详情。 - slow_sql_template：慢SQL统计信息。  - error_sql_template：异常SQL统计信息。 - replaying_sql：正在回放SQL详情。
+        结果类型。取值： - shard_statistics：回放概览基于时间维度统计信息。 - slow_sql：慢SQL详情。 - error_sql： 回放异常SQL详情。 - slow_sql_template：慢SQL统计信息。  - error_sql_template：异常SQL统计信息。 - replaying_sql：正在回放SQL详情。 - error_classification：回放异常SQL分类。
 
         :return: The type of this ShowReplayResultsRequest.
         :rtype: str
@@ -161,7 +182,7 @@ class ShowReplayResultsRequest:
     def type(self, type):
         """Sets the type of this ShowReplayResultsRequest.
 
-        结果类型。取值： - shard_statistics：回放概览基于时间维度统计信息。 - slow_sql：慢SQL详情。 - error_sql： 回放异常SQL详情。 - slow_sql_template：慢SQL统计信息。  - error_sql_template：异常SQL统计信息。 - replaying_sql：正在回放SQL详情。
+        结果类型。取值： - shard_statistics：回放概览基于时间维度统计信息。 - slow_sql：慢SQL详情。 - error_sql： 回放异常SQL详情。 - slow_sql_template：慢SQL统计信息。  - error_sql_template：异常SQL统计信息。 - replaying_sql：正在回放SQL详情。 - error_classification：回放异常SQL分类。
 
         :param type: The type of this ShowReplayResultsRequest.
         :type type: str
@@ -321,6 +342,72 @@ class ShowReplayResultsRequest:
         :type target_name: str
         """
         self._target_name = target_name
+
+    @property
+    def is_sample(self):
+        """Gets the is_sample of this ShowReplayResultsRequest.
+
+        是否查询样例true/false，type=slow_sql/error_sql时生效，值为true时只查询一条样例数据。
+
+        :return: The is_sample of this ShowReplayResultsRequest.
+        :rtype: bool
+        """
+        return self._is_sample
+
+    @is_sample.setter
+    def is_sample(self, is_sample):
+        """Sets the is_sample of this ShowReplayResultsRequest.
+
+        是否查询样例true/false，type=slow_sql/error_sql时生效，值为true时只查询一条样例数据。
+
+        :param is_sample: The is_sample of this ShowReplayResultsRequest.
+        :type is_sample: bool
+        """
+        self._is_sample = is_sample
+
+    @property
+    def error_type(self):
+        """Gets the error_type of this ShowReplayResultsRequest.
+
+        错误分类，type=error_sql/error_sql_template时生效，根据错误分类过滤数据。
+
+        :return: The error_type of this ShowReplayResultsRequest.
+        :rtype: str
+        """
+        return self._error_type
+
+    @error_type.setter
+    def error_type(self, error_type):
+        """Sets the error_type of this ShowReplayResultsRequest.
+
+        错误分类，type=error_sql/error_sql_template时生效，根据错误分类过滤数据。
+
+        :param error_type: The error_type of this ShowReplayResultsRequest.
+        :type error_type: str
+        """
+        self._error_type = error_type
+
+    @property
+    def sql_template_md5(self):
+        """Gets the sql_template_md5 of this ShowReplayResultsRequest.
+
+        sql模板md5，type=slow_sql/error_sql时生效，根据模板过滤对应的异常SQL和慢SQL，该值为本接口type=slow_sql_template/error_sql_template时的返回字段。
+
+        :return: The sql_template_md5 of this ShowReplayResultsRequest.
+        :rtype: str
+        """
+        return self._sql_template_md5
+
+    @sql_template_md5.setter
+    def sql_template_md5(self, sql_template_md5):
+        """Sets the sql_template_md5 of this ShowReplayResultsRequest.
+
+        sql模板md5，type=slow_sql/error_sql时生效，根据模板过滤对应的异常SQL和慢SQL，该值为本接口type=slow_sql_template/error_sql_template时的返回字段。
+
+        :param sql_template_md5: The sql_template_md5 of this ShowReplayResultsRequest.
+        :type sql_template_md5: str
+        """
+        self._sql_template_md5 = sql_template_md5
 
     def to_dict(self):
         """Returns the model properties as a dict"""

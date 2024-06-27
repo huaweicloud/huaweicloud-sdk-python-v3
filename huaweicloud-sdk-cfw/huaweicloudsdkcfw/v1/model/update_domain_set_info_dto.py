@@ -18,19 +18,15 @@ class UpdateDomainSetInfoDto:
 
     openapi_types = {
         'name': 'str',
-        'description': 'str',
-        'set_id': 'str',
-        'domain_set_type': 'int'
+        'description': 'str'
     }
 
     attribute_map = {
         'name': 'name',
-        'description': 'description',
-        'set_id': 'set_id',
-        'domain_set_type': 'domain_set_type'
+        'description': 'description'
     }
 
-    def __init__(self, name=None, description=None, set_id=None, domain_set_type=None):
+    def __init__(self, name=None, description=None):
         """UpdateDomainSetInfoDto
 
         The model defined in huaweicloud sdk
@@ -39,27 +35,17 @@ class UpdateDomainSetInfoDto:
         :type name: str
         :param description: 描述
         :type description: str
-        :param set_id: 域名组id
-        :type set_id: str
-        :param domain_set_type: 域名组类型，0表示URL过滤，1表示地址解析
-        :type domain_set_type: int
         """
         
         
 
         self._name = None
         self._description = None
-        self._set_id = None
-        self._domain_set_type = None
         self.discriminator = None
 
         self.name = name
         if description is not None:
             self.description = description
-        if set_id is not None:
-            self.set_id = set_id
-        if domain_set_type is not None:
-            self.domain_set_type = domain_set_type
 
     @property
     def name(self):
@@ -104,50 +90,6 @@ class UpdateDomainSetInfoDto:
         :type description: str
         """
         self._description = description
-
-    @property
-    def set_id(self):
-        """Gets the set_id of this UpdateDomainSetInfoDto.
-
-        域名组id
-
-        :return: The set_id of this UpdateDomainSetInfoDto.
-        :rtype: str
-        """
-        return self._set_id
-
-    @set_id.setter
-    def set_id(self, set_id):
-        """Sets the set_id of this UpdateDomainSetInfoDto.
-
-        域名组id
-
-        :param set_id: The set_id of this UpdateDomainSetInfoDto.
-        :type set_id: str
-        """
-        self._set_id = set_id
-
-    @property
-    def domain_set_type(self):
-        """Gets the domain_set_type of this UpdateDomainSetInfoDto.
-
-        域名组类型，0表示URL过滤，1表示地址解析
-
-        :return: The domain_set_type of this UpdateDomainSetInfoDto.
-        :rtype: int
-        """
-        return self._domain_set_type
-
-    @domain_set_type.setter
-    def domain_set_type(self, domain_set_type):
-        """Sets the domain_set_type of this UpdateDomainSetInfoDto.
-
-        域名组类型，0表示URL过滤，1表示地址解析
-
-        :param domain_set_type: The domain_set_type of this UpdateDomainSetInfoDto.
-        :type domain_set_type: int
-        """
-        self._domain_set_type = domain_set_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

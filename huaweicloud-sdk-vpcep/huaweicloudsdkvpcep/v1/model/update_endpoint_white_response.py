@@ -72,7 +72,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
         :type status: str
         :param ip: 访问所连接的终端节点服务的IP。 仅当同时满足如下条件时，返回该参数：  - 当查询连接interface类型终端节点服务的终端节点时。  - 终端节点服务启用“连接审批”功能，且已经“接受”连接审批。 “status”可以是“accepted”或者“rejected（仅支持“接受”连接审批后再“拒绝”的情况）”。
         :type ip: str
-        :param active_status: 帐号状态。  - frozen：冻结  - active：解冻
+        :param active_status: 账号状态。  - frozen：冻结  - active：解冻
         :type active_status: list[str]
         :param endpoint_service_name: 终端节点服务的名称。
         :type endpoint_service_name: str
@@ -80,7 +80,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
         :type marker_id: int
         :param endpoint_service_id: 终端节点服务的ID。
         :type endpoint_service_id: str
-        :param enable_dns: 是否创建域名。  - true：创建域名  - false：不创建域名 说明 当创建连接gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
+        :param enable_dns: 是否创建域名。  - true：创建域名  - false：不创建域名 说明 当创建gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
         :type enable_dns: bool
         :param dns_names: 访问所连接的终端节点服务的域名。 当“enable_dns”为true时，该参数可见。
         :type dns_names: list[str]
@@ -253,7 +253,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
     def active_status(self):
         """Gets the active_status of this UpdateEndpointWhiteResponse.
 
-        帐号状态。  - frozen：冻结  - active：解冻
+        账号状态。  - frozen：冻结  - active：解冻
 
         :return: The active_status of this UpdateEndpointWhiteResponse.
         :rtype: list[str]
@@ -264,7 +264,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
     def active_status(self, active_status):
         """Sets the active_status of this UpdateEndpointWhiteResponse.
 
-        帐号状态。  - frozen：冻结  - active：解冻
+        账号状态。  - frozen：冻结  - active：解冻
 
         :param active_status: The active_status of this UpdateEndpointWhiteResponse.
         :type active_status: list[str]
@@ -341,7 +341,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
     def enable_dns(self):
         """Gets the enable_dns of this UpdateEndpointWhiteResponse.
 
-        是否创建域名。  - true：创建域名  - false：不创建域名 说明 当创建连接gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
+        是否创建域名。  - true：创建域名  - false：不创建域名 说明 当创建gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
 
         :return: The enable_dns of this UpdateEndpointWhiteResponse.
         :rtype: bool
@@ -352,7 +352,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
     def enable_dns(self, enable_dns):
         """Sets the enable_dns of this UpdateEndpointWhiteResponse.
 
-        是否创建域名。  - true：创建域名  - false：不创建域名 说明 当创建连接gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
+        是否创建域名。  - true：创建域名  - false：不创建域名 说明 当创建gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
 
         :param enable_dns: The enable_dns of this UpdateEndpointWhiteResponse.
         :type enable_dns: bool

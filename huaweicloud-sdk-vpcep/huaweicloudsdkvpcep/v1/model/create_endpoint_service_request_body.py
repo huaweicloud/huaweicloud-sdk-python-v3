@@ -27,7 +27,7 @@ class CreateEndpointServiceRequestBody:
         'tcp_proxy': 'str',
         'tags': 'list[TagList]',
         'description': 'str',
-        'enable_policy': 'bool'
+        'ip_version': 'str'
     }
 
     attribute_map = {
@@ -41,10 +41,10 @@ class CreateEndpointServiceRequestBody:
         'tcp_proxy': 'tcp_proxy',
         'tags': 'tags',
         'description': 'description',
-        'enable_policy': 'enable_policy'
+        'ip_version': 'ip_version'
     }
 
-    def __init__(self, port_id=None, service_name=None, vpc_id=None, approval_enabled=None, service_type=None, server_type=None, ports=None, tcp_proxy=None, tags=None, description=None, enable_policy=None):
+    def __init__(self, port_id=None, service_name=None, vpc_id=None, approval_enabled=None, service_type=None, server_type=None, ports=None, tcp_proxy=None, tags=None, description=None, ip_version=None):
         """CreateEndpointServiceRequestBody
 
         The model defined in huaweicloud sdk
@@ -53,7 +53,7 @@ class CreateEndpointServiceRequestBody:
         :type port_id: str
         :param service_name: 终端节点服务的名称，长度不大于16，允许传入大小写字母、数字、下划线、中划线。 - 传入为空，存入值为regionName+.+serviceId - 传入不为空并校验通过，存入值为regionName+.+serviceName+.+serviceId
         :type service_name: str
-        :param vpc_id: 终端节点服务对应后端资源所在的VPC的ID。 详细内容请参考《虚拟私有云API参考》中的“查询VPC”，详见响应消息中的“id”字段。
+        :param vpc_id: 终端节点服务对应后端资源所在的VPC的ID。
         :type vpc_id: str
         :param approval_enabled: 是否需要审批。  - false：不需要审批，创建的终端节点连接直接为accepted状态。  - true：需要审批，创建的终端节点连接为pendingAcceptance状态， 需要终端节点服务所属用户审核后方可使用。 默认为true，需要审批。
         :type approval_enabled: bool
@@ -63,14 +63,14 @@ class CreateEndpointServiceRequestBody:
         :type server_type: str
         :param ports: 服务开放的端口映射列表，详细内容请参见表4-10。 同一个终端节点服务下，不允许重复的端口映射。若多个终端节点服务共用一个port_id， 则终端节点服务之间的所有端口映射的server_port和protocol的组合不能重复， 单次最多添加200个。
         :type ports: list[:class:`huaweicloudsdkvpcep.v1.PortList`]
-        :param tcp_proxy: 用于控制将哪些信息（如客户端的源IP、源端口、marker_id等）携带到服务端。 支持携带的客户端信息包括如下两种类型：  - TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明：仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。  - Proxy Protocol：表示将客户端信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 该参数的取值包括：  - close：表示关闭代理协议。  - toa_open：表示开启代理协议“tcp_toa”。  - proxy_open：表示开启代理协议“proxy_protocol”。  - open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。  - proxy_vni: 关闭toa，开启proxy和vni。 默认值为“close”。
+        :param tcp_proxy: 用于控制将哪些信息（如客户端的源IP、源端口、marker_id等）携带到服务端。 支持携带的客户端信息包括如下两种类型：  - TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明：仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。  - Proxy Protocol：表示将客户端信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 该参数的取值包括：  - close：表示关闭代理协议。  - toa_open：表示开启代理协议“tcp_toa”。  - proxy_open：表示开启代理协议“proxy_protocol”。  - open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 默认值为“close”。
         :type tcp_proxy: str
         :param tags: 资源标签列表。同一个终端节点服务最多可添加10个标签。
         :type tags: list[:class:`huaweicloudsdkvpcep.v1.TagList`]
         :param description: 描述字段，支持中英文字母、数字等字符，不支持“&lt;”或“&gt;”字符。  描述字段，支持中英文字母、数字等字符，不支持“&lt;”或“&gt;”字符。
         :type description: str
-        :param enable_policy: 是否开启终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false
-        :type enable_policy: bool
+        :param ip_version: 指定终端节点服务的IP版本，仅专业型终端节点服务支持此参数 ● ipv4,  IPv4 ● ipv6,  IPv6
+        :type ip_version: str
         """
         
         
@@ -85,7 +85,7 @@ class CreateEndpointServiceRequestBody:
         self._tcp_proxy = None
         self._tags = None
         self._description = None
-        self._enable_policy = None
+        self._ip_version = None
         self.discriminator = None
 
         self.port_id = port_id
@@ -104,8 +104,8 @@ class CreateEndpointServiceRequestBody:
             self.tags = tags
         if description is not None:
             self.description = description
-        if enable_policy is not None:
-            self.enable_policy = enable_policy
+        if ip_version is not None:
+            self.ip_version = ip_version
 
     @property
     def port_id(self):
@@ -155,7 +155,7 @@ class CreateEndpointServiceRequestBody:
     def vpc_id(self):
         """Gets the vpc_id of this CreateEndpointServiceRequestBody.
 
-        终端节点服务对应后端资源所在的VPC的ID。 详细内容请参考《虚拟私有云API参考》中的“查询VPC”，详见响应消息中的“id”字段。
+        终端节点服务对应后端资源所在的VPC的ID。
 
         :return: The vpc_id of this CreateEndpointServiceRequestBody.
         :rtype: str
@@ -166,7 +166,7 @@ class CreateEndpointServiceRequestBody:
     def vpc_id(self, vpc_id):
         """Sets the vpc_id of this CreateEndpointServiceRequestBody.
 
-        终端节点服务对应后端资源所在的VPC的ID。 详细内容请参考《虚拟私有云API参考》中的“查询VPC”，详见响应消息中的“id”字段。
+        终端节点服务对应后端资源所在的VPC的ID。
 
         :param vpc_id: The vpc_id of this CreateEndpointServiceRequestBody.
         :type vpc_id: str
@@ -265,7 +265,7 @@ class CreateEndpointServiceRequestBody:
     def tcp_proxy(self):
         """Gets the tcp_proxy of this CreateEndpointServiceRequestBody.
 
-        用于控制将哪些信息（如客户端的源IP、源端口、marker_id等）携带到服务端。 支持携带的客户端信息包括如下两种类型：  - TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明：仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。  - Proxy Protocol：表示将客户端信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 该参数的取值包括：  - close：表示关闭代理协议。  - toa_open：表示开启代理协议“tcp_toa”。  - proxy_open：表示开启代理协议“proxy_protocol”。  - open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。  - proxy_vni: 关闭toa，开启proxy和vni。 默认值为“close”。
+        用于控制将哪些信息（如客户端的源IP、源端口、marker_id等）携带到服务端。 支持携带的客户端信息包括如下两种类型：  - TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明：仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。  - Proxy Protocol：表示将客户端信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 该参数的取值包括：  - close：表示关闭代理协议。  - toa_open：表示开启代理协议“tcp_toa”。  - proxy_open：表示开启代理协议“proxy_protocol”。  - open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 默认值为“close”。
 
         :return: The tcp_proxy of this CreateEndpointServiceRequestBody.
         :rtype: str
@@ -276,7 +276,7 @@ class CreateEndpointServiceRequestBody:
     def tcp_proxy(self, tcp_proxy):
         """Sets the tcp_proxy of this CreateEndpointServiceRequestBody.
 
-        用于控制将哪些信息（如客户端的源IP、源端口、marker_id等）携带到服务端。 支持携带的客户端信息包括如下两种类型：  - TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明：仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。  - Proxy Protocol：表示将客户端信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 该参数的取值包括：  - close：表示关闭代理协议。  - toa_open：表示开启代理协议“tcp_toa”。  - proxy_open：表示开启代理协议“proxy_protocol”。  - open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。  - proxy_vni: 关闭toa，开启proxy和vni。 默认值为“close”。
+        用于控制将哪些信息（如客户端的源IP、源端口、marker_id等）携带到服务端。 支持携带的客户端信息包括如下两种类型：  - TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明：仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。  - Proxy Protocol：表示将客户端信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 该参数的取值包括：  - close：表示关闭代理协议。  - toa_open：表示开启代理协议“tcp_toa”。  - proxy_open：表示开启代理协议“proxy_protocol”。  - open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 默认值为“close”。
 
         :param tcp_proxy: The tcp_proxy of this CreateEndpointServiceRequestBody.
         :type tcp_proxy: str
@@ -328,26 +328,26 @@ class CreateEndpointServiceRequestBody:
         self._description = description
 
     @property
-    def enable_policy(self):
-        """Gets the enable_policy of this CreateEndpointServiceRequestBody.
+    def ip_version(self):
+        """Gets the ip_version of this CreateEndpointServiceRequestBody.
 
-        是否开启终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false
+        指定终端节点服务的IP版本，仅专业型终端节点服务支持此参数 ● ipv4,  IPv4 ● ipv6,  IPv6
 
-        :return: The enable_policy of this CreateEndpointServiceRequestBody.
-        :rtype: bool
+        :return: The ip_version of this CreateEndpointServiceRequestBody.
+        :rtype: str
         """
-        return self._enable_policy
+        return self._ip_version
 
-    @enable_policy.setter
-    def enable_policy(self, enable_policy):
-        """Sets the enable_policy of this CreateEndpointServiceRequestBody.
+    @ip_version.setter
+    def ip_version(self, ip_version):
+        """Sets the ip_version of this CreateEndpointServiceRequestBody.
 
-        是否开启终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false
+        指定终端节点服务的IP版本，仅专业型终端节点服务支持此参数 ● ipv4,  IPv4 ● ipv6,  IPv6
 
-        :param enable_policy: The enable_policy of this CreateEndpointServiceRequestBody.
-        :type enable_policy: bool
+        :param ip_version: The ip_version of this CreateEndpointServiceRequestBody.
+        :type ip_version: str
         """
-        self._enable_policy = enable_policy
+        self._ip_version = ip_version
 
     def to_dict(self):
         """Returns the model properties as a dict"""

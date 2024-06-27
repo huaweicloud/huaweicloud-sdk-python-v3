@@ -18,6 +18,7 @@ class ReplayErrorSqlTemplateResp:
 
     openapi_types = {
         'sql_template': 'str',
+        'sql_template_md5': 'str',
         'target_name': 'str',
         'schema_name': 'str',
         'query_type': 'str',
@@ -27,6 +28,7 @@ class ReplayErrorSqlTemplateResp:
 
     attribute_map = {
         'sql_template': 'sql_template',
+        'sql_template_md5': 'sql_template_md5',
         'target_name': 'target_name',
         'schema_name': 'schema_name',
         'query_type': 'query_type',
@@ -34,13 +36,15 @@ class ReplayErrorSqlTemplateResp:
         'count': 'count'
     }
 
-    def __init__(self, sql_template=None, target_name=None, schema_name=None, query_type=None, target_type=None, count=None):
+    def __init__(self, sql_template=None, sql_template_md5=None, target_name=None, schema_name=None, query_type=None, target_type=None, count=None):
         """ReplayErrorSqlTemplateResp
 
         The model defined in huaweicloud sdk
 
         :param sql_template: SQL模板
         :type sql_template: str
+        :param sql_template_md5: SQL模板MD5
+        :type sql_template_md5: str
         :param target_name: 目标库昵称
         :type target_name: str
         :param schema_name: schema名称
@@ -56,6 +60,7 @@ class ReplayErrorSqlTemplateResp:
         
 
         self._sql_template = None
+        self._sql_template_md5 = None
         self._target_name = None
         self._schema_name = None
         self._query_type = None
@@ -65,6 +70,8 @@ class ReplayErrorSqlTemplateResp:
 
         if sql_template is not None:
             self.sql_template = sql_template
+        if sql_template_md5 is not None:
+            self.sql_template_md5 = sql_template_md5
         if target_name is not None:
             self.target_name = target_name
         if schema_name is not None:
@@ -97,6 +104,28 @@ class ReplayErrorSqlTemplateResp:
         :type sql_template: str
         """
         self._sql_template = sql_template
+
+    @property
+    def sql_template_md5(self):
+        """Gets the sql_template_md5 of this ReplayErrorSqlTemplateResp.
+
+        SQL模板MD5
+
+        :return: The sql_template_md5 of this ReplayErrorSqlTemplateResp.
+        :rtype: str
+        """
+        return self._sql_template_md5
+
+    @sql_template_md5.setter
+    def sql_template_md5(self, sql_template_md5):
+        """Sets the sql_template_md5 of this ReplayErrorSqlTemplateResp.
+
+        SQL模板MD5
+
+        :param sql_template_md5: The sql_template_md5 of this ReplayErrorSqlTemplateResp.
+        :type sql_template_md5: str
+        """
+        self._sql_template_md5 = sql_template_md5
 
     @property
     def target_name(self):

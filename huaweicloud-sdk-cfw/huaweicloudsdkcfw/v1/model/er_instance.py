@@ -22,7 +22,8 @@ class ErInstance:
         'state': 'str',
         'enterprise_project_id': 'str',
         'project_id': 'str',
-        'enable_ipv6': 'str'
+        'enable_ipv6': 'str',
+        'attachment_id': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class ErInstance:
         'state': 'state',
         'enterprise_project_id': 'enterprise_project_id',
         'project_id': 'project_id',
-        'enable_ipv6': 'enable_ipv6'
+        'enable_ipv6': 'enable_ipv6',
+        'attachment_id': 'attachment_id'
     }
 
-    def __init__(self, id=None, name=None, state=None, enterprise_project_id=None, project_id=None, enable_ipv6=None):
+    def __init__(self, id=None, name=None, state=None, enterprise_project_id=None, project_id=None, enable_ipv6=None, attachment_id=None):
         """ErInstance
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class ErInstance:
         :type project_id: str
         :param enable_ipv6: 是否开启ipv6
         :type enable_ipv6: str
+        :param attachment_id: 连接id
+        :type attachment_id: str
         """
         
         
@@ -61,6 +65,7 @@ class ErInstance:
         self._enterprise_project_id = None
         self._project_id = None
         self._enable_ipv6 = None
+        self._attachment_id = None
         self.discriminator = None
 
         if id is not None:
@@ -75,6 +80,8 @@ class ErInstance:
             self.project_id = project_id
         if enable_ipv6 is not None:
             self.enable_ipv6 = enable_ipv6
+        if attachment_id is not None:
+            self.attachment_id = attachment_id
 
     @property
     def id(self):
@@ -207,6 +214,28 @@ class ErInstance:
         :type enable_ipv6: str
         """
         self._enable_ipv6 = enable_ipv6
+
+    @property
+    def attachment_id(self):
+        """Gets the attachment_id of this ErInstance.
+
+        连接id
+
+        :return: The attachment_id of this ErInstance.
+        :rtype: str
+        """
+        return self._attachment_id
+
+    @attachment_id.setter
+    def attachment_id(self, attachment_id):
+        """Sets the attachment_id of this ErInstance.
+
+        连接id
+
+        :param attachment_id: The attachment_id of this ErInstance.
+        :type attachment_id: str
+        """
+        self._attachment_id = attachment_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

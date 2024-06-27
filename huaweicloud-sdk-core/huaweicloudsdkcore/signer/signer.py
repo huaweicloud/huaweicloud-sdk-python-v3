@@ -238,6 +238,8 @@ class Signer(object):
         # type: (SdkRequest) -> list
         signed_headers = []
         for key in request.header_params:
+            if "_" in key:
+                continue
             signed_headers.append(key.lower())
         signed_headers.sort()
         return signed_headers

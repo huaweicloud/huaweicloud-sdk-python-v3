@@ -33,7 +33,15 @@ class HttpQueryCfwFlowLogsResponseDTODataRecords:
         'dst_region_id': 'str',
         'dst_region_name': 'str',
         'src_region_id': 'str',
-        'src_region_name': 'str'
+        'src_region_name': 'str',
+        'dst_province_id': 'str',
+        'dst_province_name': 'str',
+        'dst_city_id': 'str',
+        'dst_city_name': 'str',
+        'src_province_id': 'str',
+        'src_province_name': 'str',
+        'src_city_id': 'str',
+        'src_city_name': 'str'
     }
 
     attribute_map = {
@@ -53,10 +61,18 @@ class HttpQueryCfwFlowLogsResponseDTODataRecords:
         'dst_region_id': 'dst_region_id',
         'dst_region_name': 'dst_region_name',
         'src_region_id': 'src_region_id',
-        'src_region_name': 'src_region_name'
+        'src_region_name': 'src_region_name',
+        'dst_province_id': 'dst_province_id',
+        'dst_province_name': 'dst_province_name',
+        'dst_city_id': 'dst_city_id',
+        'dst_city_name': 'dst_city_name',
+        'src_province_id': 'src_province_id',
+        'src_province_name': 'src_province_name',
+        'src_city_id': 'src_city_id',
+        'src_city_name': 'src_city_name'
     }
 
-    def __init__(self, bytes=None, direction=None, packets=None, start_time=None, end_time=None, log_id=None, src_ip=None, src_port=None, dst_ip=None, app=None, dst_port=None, protocol=None, dst_host=None, dst_region_id=None, dst_region_name=None, src_region_id=None, src_region_name=None):
+    def __init__(self, bytes=None, direction=None, packets=None, start_time=None, end_time=None, log_id=None, src_ip=None, src_port=None, dst_ip=None, app=None, dst_port=None, protocol=None, dst_host=None, dst_region_id=None, dst_region_name=None, src_region_id=None, src_region_name=None, dst_province_id=None, dst_province_name=None, dst_city_id=None, dst_city_name=None, src_province_id=None, src_province_name=None, src_city_id=None, src_city_name=None):
         """HttpQueryCfwFlowLogsResponseDTODataRecords
 
         The model defined in huaweicloud sdk
@@ -67,9 +83,9 @@ class HttpQueryCfwFlowLogsResponseDTODataRecords:
         :type direction: str
         :param packets: 包
         :type packets: int
-        :param start_time: 开始时间
+        :param start_time: 开始时间，以毫秒为单位的时间戳，如1718936272648
         :type start_time: int
-        :param end_time: 结束时间
+        :param end_time: 结束时间，以毫秒为单位的时间戳，如1718936272648
         :type end_time: int
         :param log_id: 文档ID
         :type log_id: str
@@ -95,6 +111,22 @@ class HttpQueryCfwFlowLogsResponseDTODataRecords:
         :type src_region_id: str
         :param src_region_name: 源地域名称
         :type src_region_name: str
+        :param dst_province_id: 目的省份id
+        :type dst_province_id: str
+        :param dst_province_name: 目的省份名称
+        :type dst_province_name: str
+        :param dst_city_id: 目的城市id
+        :type dst_city_id: str
+        :param dst_city_name: 目的城市名称
+        :type dst_city_name: str
+        :param src_province_id: 源省份id
+        :type src_province_id: str
+        :param src_province_name: 源省份名称
+        :type src_province_name: str
+        :param src_city_id: 源城市id
+        :type src_city_id: str
+        :param src_city_name: 源城市名称
+        :type src_city_name: str
         """
         
         
@@ -116,6 +148,14 @@ class HttpQueryCfwFlowLogsResponseDTODataRecords:
         self._dst_region_name = None
         self._src_region_id = None
         self._src_region_name = None
+        self._dst_province_id = None
+        self._dst_province_name = None
+        self._dst_city_id = None
+        self._dst_city_name = None
+        self._src_province_id = None
+        self._src_province_name = None
+        self._src_city_id = None
+        self._src_city_name = None
         self.discriminator = None
 
         if bytes is not None:
@@ -152,6 +192,22 @@ class HttpQueryCfwFlowLogsResponseDTODataRecords:
             self.src_region_id = src_region_id
         if src_region_name is not None:
             self.src_region_name = src_region_name
+        if dst_province_id is not None:
+            self.dst_province_id = dst_province_id
+        if dst_province_name is not None:
+            self.dst_province_name = dst_province_name
+        if dst_city_id is not None:
+            self.dst_city_id = dst_city_id
+        if dst_city_name is not None:
+            self.dst_city_name = dst_city_name
+        if src_province_id is not None:
+            self.src_province_id = src_province_id
+        if src_province_name is not None:
+            self.src_province_name = src_province_name
+        if src_city_id is not None:
+            self.src_city_id = src_city_id
+        if src_city_name is not None:
+            self.src_city_name = src_city_name
 
     @property
     def bytes(self):
@@ -223,7 +279,7 @@ class HttpQueryCfwFlowLogsResponseDTODataRecords:
     def start_time(self):
         """Gets the start_time of this HttpQueryCfwFlowLogsResponseDTODataRecords.
 
-        开始时间
+        开始时间，以毫秒为单位的时间戳，如1718936272648
 
         :return: The start_time of this HttpQueryCfwFlowLogsResponseDTODataRecords.
         :rtype: int
@@ -234,7 +290,7 @@ class HttpQueryCfwFlowLogsResponseDTODataRecords:
     def start_time(self, start_time):
         """Sets the start_time of this HttpQueryCfwFlowLogsResponseDTODataRecords.
 
-        开始时间
+        开始时间，以毫秒为单位的时间戳，如1718936272648
 
         :param start_time: The start_time of this HttpQueryCfwFlowLogsResponseDTODataRecords.
         :type start_time: int
@@ -245,7 +301,7 @@ class HttpQueryCfwFlowLogsResponseDTODataRecords:
     def end_time(self):
         """Gets the end_time of this HttpQueryCfwFlowLogsResponseDTODataRecords.
 
-        结束时间
+        结束时间，以毫秒为单位的时间戳，如1718936272648
 
         :return: The end_time of this HttpQueryCfwFlowLogsResponseDTODataRecords.
         :rtype: int
@@ -256,7 +312,7 @@ class HttpQueryCfwFlowLogsResponseDTODataRecords:
     def end_time(self, end_time):
         """Sets the end_time of this HttpQueryCfwFlowLogsResponseDTODataRecords.
 
-        结束时间
+        结束时间，以毫秒为单位的时间戳，如1718936272648
 
         :param end_time: The end_time of this HttpQueryCfwFlowLogsResponseDTODataRecords.
         :type end_time: int
@@ -526,6 +582,182 @@ class HttpQueryCfwFlowLogsResponseDTODataRecords:
         :type src_region_name: str
         """
         self._src_region_name = src_region_name
+
+    @property
+    def dst_province_id(self):
+        """Gets the dst_province_id of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+
+        目的省份id
+
+        :return: The dst_province_id of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+        :rtype: str
+        """
+        return self._dst_province_id
+
+    @dst_province_id.setter
+    def dst_province_id(self, dst_province_id):
+        """Sets the dst_province_id of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+
+        目的省份id
+
+        :param dst_province_id: The dst_province_id of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+        :type dst_province_id: str
+        """
+        self._dst_province_id = dst_province_id
+
+    @property
+    def dst_province_name(self):
+        """Gets the dst_province_name of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+
+        目的省份名称
+
+        :return: The dst_province_name of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+        :rtype: str
+        """
+        return self._dst_province_name
+
+    @dst_province_name.setter
+    def dst_province_name(self, dst_province_name):
+        """Sets the dst_province_name of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+
+        目的省份名称
+
+        :param dst_province_name: The dst_province_name of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+        :type dst_province_name: str
+        """
+        self._dst_province_name = dst_province_name
+
+    @property
+    def dst_city_id(self):
+        """Gets the dst_city_id of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+
+        目的城市id
+
+        :return: The dst_city_id of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+        :rtype: str
+        """
+        return self._dst_city_id
+
+    @dst_city_id.setter
+    def dst_city_id(self, dst_city_id):
+        """Sets the dst_city_id of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+
+        目的城市id
+
+        :param dst_city_id: The dst_city_id of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+        :type dst_city_id: str
+        """
+        self._dst_city_id = dst_city_id
+
+    @property
+    def dst_city_name(self):
+        """Gets the dst_city_name of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+
+        目的城市名称
+
+        :return: The dst_city_name of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+        :rtype: str
+        """
+        return self._dst_city_name
+
+    @dst_city_name.setter
+    def dst_city_name(self, dst_city_name):
+        """Sets the dst_city_name of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+
+        目的城市名称
+
+        :param dst_city_name: The dst_city_name of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+        :type dst_city_name: str
+        """
+        self._dst_city_name = dst_city_name
+
+    @property
+    def src_province_id(self):
+        """Gets the src_province_id of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+
+        源省份id
+
+        :return: The src_province_id of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+        :rtype: str
+        """
+        return self._src_province_id
+
+    @src_province_id.setter
+    def src_province_id(self, src_province_id):
+        """Sets the src_province_id of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+
+        源省份id
+
+        :param src_province_id: The src_province_id of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+        :type src_province_id: str
+        """
+        self._src_province_id = src_province_id
+
+    @property
+    def src_province_name(self):
+        """Gets the src_province_name of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+
+        源省份名称
+
+        :return: The src_province_name of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+        :rtype: str
+        """
+        return self._src_province_name
+
+    @src_province_name.setter
+    def src_province_name(self, src_province_name):
+        """Sets the src_province_name of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+
+        源省份名称
+
+        :param src_province_name: The src_province_name of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+        :type src_province_name: str
+        """
+        self._src_province_name = src_province_name
+
+    @property
+    def src_city_id(self):
+        """Gets the src_city_id of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+
+        源城市id
+
+        :return: The src_city_id of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+        :rtype: str
+        """
+        return self._src_city_id
+
+    @src_city_id.setter
+    def src_city_id(self, src_city_id):
+        """Sets the src_city_id of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+
+        源城市id
+
+        :param src_city_id: The src_city_id of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+        :type src_city_id: str
+        """
+        self._src_city_id = src_city_id
+
+    @property
+    def src_city_name(self):
+        """Gets the src_city_name of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+
+        源城市名称
+
+        :return: The src_city_name of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+        :rtype: str
+        """
+        return self._src_city_name
+
+    @src_city_name.setter
+    def src_city_name(self, src_city_name):
+        """Sets the src_city_name of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+
+        源城市名称
+
+        :param src_city_name: The src_city_name of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+        :type src_city_name: str
+        """
+        self._src_city_name = src_city_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

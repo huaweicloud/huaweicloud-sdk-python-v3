@@ -63,8 +63,7 @@ class CreateFirewallReq:
             self.enterprise_project_id = enterprise_project_id
         if tags is not None:
             self.tags = tags
-        if flavor is not None:
-            self.flavor = flavor
+        self.flavor = flavor
         self.charge_info = charge_info
 
     @property

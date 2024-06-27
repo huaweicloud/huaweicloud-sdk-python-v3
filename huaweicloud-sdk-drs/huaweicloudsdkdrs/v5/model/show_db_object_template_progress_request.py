@@ -20,17 +20,19 @@ class ShowDbObjectTemplateProgressRequest:
         'job_id': 'str',
         'x_language': 'str',
         'offset': 'int',
-        'limit': 'int'
+        'limit': 'int',
+        'type': 'str'
     }
 
     attribute_map = {
         'job_id': 'job_id',
         'x_language': 'X-Language',
         'offset': 'offset',
-        'limit': 'limit'
+        'limit': 'limit',
+        'type': 'type'
     }
 
-    def __init__(self, job_id=None, x_language=None, offset=None, limit=None):
+    def __init__(self, job_id=None, x_language=None, offset=None, limit=None, type=None):
         """ShowDbObjectTemplateProgressRequest
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class ShowDbObjectTemplateProgressRequest:
         :type offset: int
         :param limit: 查询返回记录的数量限制。
         :type limit: int
+        :param type: 默认为空。 - column：当进行列加工导入时，查询列加工导入进度。
+        :type type: str
         """
         
         
@@ -51,6 +55,7 @@ class ShowDbObjectTemplateProgressRequest:
         self._x_language = None
         self._offset = None
         self._limit = None
+        self._type = None
         self.discriminator = None
 
         self.job_id = job_id
@@ -60,6 +65,8 @@ class ShowDbObjectTemplateProgressRequest:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+        if type is not None:
+            self.type = type
 
     @property
     def job_id(self):
@@ -148,6 +155,28 @@ class ShowDbObjectTemplateProgressRequest:
         :type limit: int
         """
         self._limit = limit
+
+    @property
+    def type(self):
+        """Gets the type of this ShowDbObjectTemplateProgressRequest.
+
+        默认为空。 - column：当进行列加工导入时，查询列加工导入进度。
+
+        :return: The type of this ShowDbObjectTemplateProgressRequest.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this ShowDbObjectTemplateProgressRequest.
+
+        默认为空。 - column：当进行列加工导入时，查询列加工导入进度。
+
+        :param type: The type of this ShowDbObjectTemplateProgressRequest.
+        :type type: str
+        """
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

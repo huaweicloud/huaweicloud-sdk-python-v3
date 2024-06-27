@@ -76,7 +76,8 @@ class QueryJobResp:
         'tags': 'list[Tag]',
         'public_ip_list': 'list[PublicIpConfig]',
         'bind_public_ip_state': 'str',
-        'children': 'list[FailedToBindEipChildInfo]'
+        'children': 'list[FailedToBindEipChildInfo]',
+        'is_open_fast_clean': 'bool'
     }
 
     attribute_map = {
@@ -139,10 +140,11 @@ class QueryJobResp:
         'tags': 'tags',
         'public_ip_list': 'public_ip_list',
         'bind_public_ip_state': 'bind_public_ip_state',
-        'children': 'children'
+        'children': 'children',
+        'is_open_fast_clean': 'is_open_fast_clean'
     }
 
-    def __init__(self, id=None, parent_id=None, name=None, status=None, description=None, create_time=None, task_type=None, source_endpoint=None, dmq_endpoint=None, source_sharding=None, target_endpoint=None, net_type=None, failed_reason=None, inst_info=None, actual_start_time=None, full_transfer_complete_time=None, update_time=None, job_direction=None, db_use_type=None, need_restart=None, is_target_readonly=None, conflict_policy=None, filter_ddl_policy=None, speed_limit=None, schema_type=None, node_num=None, object_switch=None, master_job_id=None, full_mode=None, struct_trans=None, index_trans=None, replace_definer=None, migrate_user=None, sync_database=None, error_code=None, error_message=None, target_root_db=None, az_code=None, vpc_id=None, subnet_id=None, security_group_id=None, multi_write=None, support_ip_v6=None, inherit_id=None, gtid=None, alarm_notify=None, incre_start_position=None, is_multi_az=None, az_name=None, master_az=None, slave_az=None, node_role=None, period_order=None, object_infos=None, original_job_direction=None, data_transformation=None, tags=None, public_ip_list=None, bind_public_ip_state=None, children=None):
+    def __init__(self, id=None, parent_id=None, name=None, status=None, description=None, create_time=None, task_type=None, source_endpoint=None, dmq_endpoint=None, source_sharding=None, target_endpoint=None, net_type=None, failed_reason=None, inst_info=None, actual_start_time=None, full_transfer_complete_time=None, update_time=None, job_direction=None, db_use_type=None, need_restart=None, is_target_readonly=None, conflict_policy=None, filter_ddl_policy=None, speed_limit=None, schema_type=None, node_num=None, object_switch=None, master_job_id=None, full_mode=None, struct_trans=None, index_trans=None, replace_definer=None, migrate_user=None, sync_database=None, error_code=None, error_message=None, target_root_db=None, az_code=None, vpc_id=None, subnet_id=None, security_group_id=None, multi_write=None, support_ip_v6=None, inherit_id=None, gtid=None, alarm_notify=None, incre_start_position=None, is_multi_az=None, az_name=None, master_az=None, slave_az=None, node_role=None, period_order=None, object_infos=None, original_job_direction=None, data_transformation=None, tags=None, public_ip_list=None, bind_public_ip_state=None, children=None, is_open_fast_clean=None):
         """QueryJobResp
 
         The model defined in huaweicloud sdk
@@ -259,14 +261,16 @@ class QueryJobResp:
         :type original_job_direction: str
         :param data_transformation: 
         :type data_transformation: :class:`huaweicloudsdkdrs.v3.GetDataTransformationResp`
-        :param tags: DRS任务标签
+        :param tags: DRS任务标签。
         :type tags: list[:class:`huaweicloudsdkdrs.v3.Tag`]
-        :param public_ip_list: 指定公网Ip的信息
+        :param public_ip_list: 指定公网Ip的信息。
         :type public_ip_list: list[:class:`huaweicloudsdkdrs.v3.PublicIpConfig`]
-        :param bind_public_ip_state: 是否成功绑定公网IP
+        :param bind_public_ip_state: 是否成功绑定公网IP。
         :type bind_public_ip_state: str
-        :param children: 多任务时，存在子任务绑定失败时，返回子任务的信息
+        :param children: 多任务时，存在子任务绑定失败时，返回子任务的信息。
         :type children: list[:class:`huaweicloudsdkdrs.v3.FailedToBindEipChildInfo`]
+        :param is_open_fast_clean: 是否开启云数据库RDS for MySQL/MariaDB的binlog快速清理。
+        :type is_open_fast_clean: bool
         """
         
         
@@ -331,6 +335,7 @@ class QueryJobResp:
         self._public_ip_list = None
         self._bind_public_ip_state = None
         self._children = None
+        self._is_open_fast_clean = None
         self.discriminator = None
 
         if id is not None:
@@ -453,6 +458,8 @@ class QueryJobResp:
             self.bind_public_ip_state = bind_public_ip_state
         if children is not None:
             self.children = children
+        if is_open_fast_clean is not None:
+            self.is_open_fast_clean = is_open_fast_clean
 
     @property
     def id(self):
@@ -1658,7 +1665,7 @@ class QueryJobResp:
     def tags(self):
         """Gets the tags of this QueryJobResp.
 
-        DRS任务标签
+        DRS任务标签。
 
         :return: The tags of this QueryJobResp.
         :rtype: list[:class:`huaweicloudsdkdrs.v3.Tag`]
@@ -1669,7 +1676,7 @@ class QueryJobResp:
     def tags(self, tags):
         """Sets the tags of this QueryJobResp.
 
-        DRS任务标签
+        DRS任务标签。
 
         :param tags: The tags of this QueryJobResp.
         :type tags: list[:class:`huaweicloudsdkdrs.v3.Tag`]
@@ -1680,7 +1687,7 @@ class QueryJobResp:
     def public_ip_list(self):
         """Gets the public_ip_list of this QueryJobResp.
 
-        指定公网Ip的信息
+        指定公网Ip的信息。
 
         :return: The public_ip_list of this QueryJobResp.
         :rtype: list[:class:`huaweicloudsdkdrs.v3.PublicIpConfig`]
@@ -1691,7 +1698,7 @@ class QueryJobResp:
     def public_ip_list(self, public_ip_list):
         """Sets the public_ip_list of this QueryJobResp.
 
-        指定公网Ip的信息
+        指定公网Ip的信息。
 
         :param public_ip_list: The public_ip_list of this QueryJobResp.
         :type public_ip_list: list[:class:`huaweicloudsdkdrs.v3.PublicIpConfig`]
@@ -1702,7 +1709,7 @@ class QueryJobResp:
     def bind_public_ip_state(self):
         """Gets the bind_public_ip_state of this QueryJobResp.
 
-        是否成功绑定公网IP
+        是否成功绑定公网IP。
 
         :return: The bind_public_ip_state of this QueryJobResp.
         :rtype: str
@@ -1713,7 +1720,7 @@ class QueryJobResp:
     def bind_public_ip_state(self, bind_public_ip_state):
         """Sets the bind_public_ip_state of this QueryJobResp.
 
-        是否成功绑定公网IP
+        是否成功绑定公网IP。
 
         :param bind_public_ip_state: The bind_public_ip_state of this QueryJobResp.
         :type bind_public_ip_state: str
@@ -1724,7 +1731,7 @@ class QueryJobResp:
     def children(self):
         """Gets the children of this QueryJobResp.
 
-        多任务时，存在子任务绑定失败时，返回子任务的信息
+        多任务时，存在子任务绑定失败时，返回子任务的信息。
 
         :return: The children of this QueryJobResp.
         :rtype: list[:class:`huaweicloudsdkdrs.v3.FailedToBindEipChildInfo`]
@@ -1735,12 +1742,34 @@ class QueryJobResp:
     def children(self, children):
         """Sets the children of this QueryJobResp.
 
-        多任务时，存在子任务绑定失败时，返回子任务的信息
+        多任务时，存在子任务绑定失败时，返回子任务的信息。
 
         :param children: The children of this QueryJobResp.
         :type children: list[:class:`huaweicloudsdkdrs.v3.FailedToBindEipChildInfo`]
         """
         self._children = children
+
+    @property
+    def is_open_fast_clean(self):
+        """Gets the is_open_fast_clean of this QueryJobResp.
+
+        是否开启云数据库RDS for MySQL/MariaDB的binlog快速清理。
+
+        :return: The is_open_fast_clean of this QueryJobResp.
+        :rtype: bool
+        """
+        return self._is_open_fast_clean
+
+    @is_open_fast_clean.setter
+    def is_open_fast_clean(self, is_open_fast_clean):
+        """Sets the is_open_fast_clean of this QueryJobResp.
+
+        是否开启云数据库RDS for MySQL/MariaDB的binlog快速清理。
+
+        :param is_open_fast_clean: The is_open_fast_clean of this QueryJobResp.
+        :type is_open_fast_clean: bool
+        """
+        self._is_open_fast_clean = is_open_fast_clean
 
     def to_dict(self):
         """Returns the model properties as a dict"""

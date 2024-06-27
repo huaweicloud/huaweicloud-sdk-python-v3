@@ -18,7 +18,7 @@ class SmnInfo:
 
     openapi_types = {
         'smn_notified_content': 'str',
-        'smn_subscription_status': 'str',
+        'smn_subscription_status': 'int',
         'smn_subscription_type': 'str'
     }
 
@@ -36,7 +36,7 @@ class SmnInfo:
         :param smn_notified_content: smn发送消息的内容
         :type smn_notified_content: str
         :param smn_subscription_status: smn的订阅的状态
-        :type smn_subscription_status: str
+        :type smn_subscription_status: int
         :param smn_subscription_type: smn的订阅类型
         :type smn_subscription_type: str
         """
@@ -84,7 +84,7 @@ class SmnInfo:
         smn的订阅的状态
 
         :return: The smn_subscription_status of this SmnInfo.
-        :rtype: str
+        :rtype: int
         """
         return self._smn_subscription_status
 
@@ -95,7 +95,7 @@ class SmnInfo:
         smn的订阅的状态
 
         :param smn_subscription_status: The smn_subscription_status of this SmnInfo.
-        :type smn_subscription_status: str
+        :type smn_subscription_status: int
         """
         self._smn_subscription_status = smn_subscription_status
 

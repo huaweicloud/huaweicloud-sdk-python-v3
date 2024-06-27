@@ -39,7 +39,7 @@ class Resources:
         :type quota: int
         :param used: 已使用的配额。
         :type used: int
-        :param type: “资源类型”
+        :param type: 资源类型。 fgs_func_scale_down_timeout：v1版本函数的实例闲置释放时间 fgs_func_occurs：v1版本函数为实例数配额, v2版本函数为预留实例配额 fgs_func_pat_idle_time：vpc函数的pat闲置释放时间 fgs_func_num：用户函数数量配额 fgs_func_code_size：用户函数总代码大小配额 fgs_workflow_num：用户函数流数量配额 fgs_on_demand_instance_limit：v2版本函数单函数最大实例数配额 fgs_func_qos_limit 用户函数实例数配额
         :type type: str
         :param unit: 资源的计数单位。fgs_func_code_size,单位为MB,其他场景无单位
         :type unit: str
@@ -110,7 +110,7 @@ class Resources:
     def type(self):
         """Gets the type of this Resources.
 
-        “资源类型”
+        资源类型。 fgs_func_scale_down_timeout：v1版本函数的实例闲置释放时间 fgs_func_occurs：v1版本函数为实例数配额, v2版本函数为预留实例配额 fgs_func_pat_idle_time：vpc函数的pat闲置释放时间 fgs_func_num：用户函数数量配额 fgs_func_code_size：用户函数总代码大小配额 fgs_workflow_num：用户函数流数量配额 fgs_on_demand_instance_limit：v2版本函数单函数最大实例数配额 fgs_func_qos_limit 用户函数实例数配额
 
         :return: The type of this Resources.
         :rtype: str
@@ -121,7 +121,7 @@ class Resources:
     def type(self, type):
         """Sets the type of this Resources.
 
-        “资源类型”
+        资源类型。 fgs_func_scale_down_timeout：v1版本函数的实例闲置释放时间 fgs_func_occurs：v1版本函数为实例数配额, v2版本函数为预留实例配额 fgs_func_pat_idle_time：vpc函数的pat闲置释放时间 fgs_func_num：用户函数数量配额 fgs_func_code_size：用户函数总代码大小配额 fgs_workflow_num：用户函数流数量配额 fgs_on_demand_instance_limit：v2版本函数单函数最大实例数配额 fgs_func_qos_limit 用户函数实例数配额
 
         :param type: The type of this Resources.
         :type type: str

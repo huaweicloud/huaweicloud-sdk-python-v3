@@ -32,6 +32,75 @@ class CloudtestAsyncClient(Client):
 
         return client_builder
 
+    def add_test_case_comment_async(self, request):
+        """新增用例评论
+
+        新增用例评论
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AddTestCaseComment
+        :type request: :class:`huaweicloudsdkcloudtest.v1.AddTestCaseCommentRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.AddTestCaseCommentResponse`
+        """
+        http_info = self._add_test_case_comment_http_info(request)
+        return self._call_api(**http_info)
+
+    def add_test_case_comment_async_invoker(self, request):
+        http_info = self._add_test_case_comment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_test_case_comment_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/GT3KServer/v4/{project_id}/testcases/{testcase_id}/comments",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddTestCaseCommentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'testcase_id' in local_var_params:
+            path_params['testcase_id'] = local_var_params['testcase_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_add_relations_by_one_case_async(self, request):
         """添加需求/缺陷和多个用例关联关系
 
@@ -68,6 +137,73 @@ class CloudtestAsyncClient(Client):
         path_params = {}
         if 'workitem_id' in local_var_params:
             path_params['workitem_id'] = local_var_params['workitem_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_add_resources_for_iterator_async(self, request):
+        """向迭代中添加资源
+
+        向迭代中添加资源
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchAddResourcesForIterator
+        :type request: :class:`huaweicloudsdkcloudtest.v1.BatchAddResourcesForIteratorRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.BatchAddResourcesForIteratorResponse`
+        """
+        http_info = self._batch_add_resources_for_iterator_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_add_resources_for_iterator_async_invoker(self, request):
+        http_info = self._batch_add_resources_for_iterator_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_add_resources_for_iterator_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/GT3KServer/v4/iterators/{iterator_id}/testcases/batch-add",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchAddResourcesForIteratorResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'iterator_id' in local_var_params:
+            path_params['iterator_id'] = local_var_params['iterator_id']
 
         query_params = []
 
@@ -166,6 +302,73 @@ class CloudtestAsyncClient(Client):
 
         return http_info
 
+    def batch_delete_test_cases_async(self, request):
+        """批量删除用例
+
+        批量删除用例
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteTestCases
+        :type request: :class:`huaweicloudsdkcloudtest.v1.BatchDeleteTestCasesRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.BatchDeleteTestCasesResponse`
+        """
+        http_info = self._batch_delete_test_cases_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_test_cases_async_invoker(self, request):
+        http_info = self._batch_delete_test_cases_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_test_cases_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/GT3KServer/v4/testcases/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteTestCasesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'is_async' in local_var_params:
+            query_params.append(('is_async', local_var_params['is_async']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_delete_test_report_async(self, request):
         """根据测试报告uri列表，删除测试报告
 
@@ -191,6 +394,140 @@ class CloudtestAsyncClient(Client):
             "resource_path": "/testreport/v4/{project_id}/test-reports/batch-delete",
             "request_type": request.__class__.__name__,
             "response_type": "BatchDeleteTestReportResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_remove_test_cases_from_iterator_async(self, request):
+        """从迭代中批量移除用例
+
+        从迭代中批量移除用例
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchRemoveTestCasesFromIterator
+        :type request: :class:`huaweicloudsdkcloudtest.v1.BatchRemoveTestCasesFromIteratorRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.BatchRemoveTestCasesFromIteratorResponse`
+        """
+        http_info = self._batch_remove_test_cases_from_iterator_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_remove_test_cases_from_iterator_async_invoker(self, request):
+        http_info = self._batch_remove_test_cases_from_iterator_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_remove_test_cases_from_iterator_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/GT3KServer/v4/iterators/{iterator_id}/testcases/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchRemoveTestCasesFromIteratorResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'iterator_id' in local_var_params:
+            path_params['iterator_id'] = local_var_params['iterator_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_update_version_test_cases_async(self, request):
+        """批量更新用例属性
+
+        批量更新用例属性
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchUpdateVersionTestCases
+        :type request: :class:`huaweicloudsdkcloudtest.v1.BatchUpdateVersionTestCasesRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.BatchUpdateVersionTestCasesResponse`
+        """
+        http_info = self._batch_update_version_test_cases_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_update_version_test_cases_async_invoker(self, request):
+        http_info = self._batch_update_version_test_cases_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_update_version_test_cases_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/GT3KServer/v4/{project_id}/testcases/batch-update",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchUpdateVersionTestCasesResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -300,6 +637,73 @@ class CloudtestAsyncClient(Client):
 
         return http_info
 
+    def create_iterator_async(self, request):
+        """新增迭代
+
+        新增迭代
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateIterator
+        :type request: :class:`huaweicloudsdkcloudtest.v1.CreateIteratorRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.CreateIteratorResponse`
+        """
+        http_info = self._create_iterator_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_iterator_async_invoker(self, request):
+        http_info = self._create_iterator_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_iterator_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/GT3KServer/v4/iterators",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateIteratorResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'branch_uri' in local_var_params:
+            query_params.append(('branch_uri', local_var_params['branch_uri']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_plan_async(self, request):
         """项目下创建计划
 
@@ -367,6 +771,71 @@ class CloudtestAsyncClient(Client):
 
         return http_info
 
+    def create_project_branch_async(self, request):
+        """新增分支
+
+        新增分支
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateProjectBranch
+        :type request: :class:`huaweicloudsdkcloudtest.v1.CreateProjectBranchRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.CreateProjectBranchResponse`
+        """
+        http_info = self._create_project_branch_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_project_branch_async_invoker(self, request):
+        http_info = self._create_project_branch_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_project_branch_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/GT3KServer/v4/branches",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateProjectBranchResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_relations_by_one_case_async(self, request):
         """添加一个用例和多个需求/缺陷关联关系
 
@@ -403,6 +872,75 @@ class CloudtestAsyncClient(Client):
         path_params = {}
         if 'case_id' in local_var_params:
             path_params['case_id'] = local_var_params['case_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_report_async(self, request):
+        """保存单个自定义报表
+
+        保存单个自定义报表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateReport
+        :type request: :class:`huaweicloudsdkcloudtest.v1.CreateReportRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.CreateReportResponse`
+        """
+        http_info = self._create_report_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_report_async_invoker(self, request):
+        http_info = self._create_report_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_report_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/GT3KServer/v4/{project_id}/versions/{version_id}/custom-reports",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateReportResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'version_id' in local_var_params:
+            path_params['version_id'] = local_var_params['version_id']
 
         query_params = []
 
@@ -700,6 +1238,207 @@ class CloudtestAsyncClient(Client):
 
         return http_info
 
+    def create_user_defined_url_key_word_async(self, request):
+        """新增用户自定义URL关键字
+
+        新增用户自定义URL关键字
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateUserDefinedUrlKeyWord
+        :type request: :class:`huaweicloudsdkcloudtest.v1.CreateUserDefinedUrlKeyWordRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.CreateUserDefinedUrlKeyWordResponse`
+        """
+        http_info = self._create_user_defined_url_key_word_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_user_defined_url_key_word_async_invoker(self, request):
+        http_info = self._create_user_defined_url_key_word_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_user_defined_url_key_word_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/basic-aw",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateUserDefinedUrlKeyWordResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_version_test_case_async(self, request):
+        """在分支或者测试计划下创建用例
+
+        在分支或者测试计划下创建用例
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateVersionTestCase
+        :type request: :class:`huaweicloudsdkcloudtest.v1.CreateVersionTestCaseRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.CreateVersionTestCaseResponse`
+        """
+        http_info = self._create_version_test_case_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_version_test_case_async_invoker(self, request):
+        http_info = self._create_version_test_case_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_version_test_case_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/GT3KServer/v4/versions/{version_id}/testcases",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateVersionTestCaseResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'version_id' in local_var_params:
+            path_params['version_id'] = local_var_params['version_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_basic_aw_by_id_async(self, request):
+        """融合版本删除单个basicAw
+
+        融合版本删除单个basicAw
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteBasicAwById
+        :type request: :class:`huaweicloudsdkcloudtest.v1.DeleteBasicAwByIdRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.DeleteBasicAwByIdResponse`
+        """
+        http_info = self._delete_basic_aw_by_id_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_basic_aw_by_id_async_invoker(self, request):
+        http_info = self._delete_basic_aw_by_id_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_basic_aw_by_id_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/basic-aw/{aw_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteBasicAwByIdResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'aw_id' in local_var_params:
+            path_params['aw_id'] = local_var_params['aw_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_relations_by_one_case_async(self, request):
         """删除一个用例和多个需求/缺陷关联关系
 
@@ -832,6 +1571,282 @@ class CloudtestAsyncClient(Client):
 
         return http_info
 
+    def delete_test_case_comment_async(self, request):
+        """删除用例评论
+
+        删除用例评论
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteTestCaseComment
+        :type request: :class:`huaweicloudsdkcloudtest.v1.DeleteTestCaseCommentRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.DeleteTestCaseCommentResponse`
+        """
+        http_info = self._delete_test_case_comment_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_test_case_comment_async_invoker(self, request):
+        http_info = self._delete_test_case_comment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_test_case_comment_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/GT3KServer/v4/{project_id}/testcases/{testcase_id}/comments/{comment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTestCaseCommentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'testcase_id' in local_var_params:
+            path_params['testcase_id'] = local_var_params['testcase_id']
+        if 'comment_id' in local_var_params:
+            path_params['comment_id'] = local_var_params['comment_id']
+
+        query_params = []
+        if 'version_uri' in local_var_params:
+            query_params.append(('version_uri', local_var_params['version_uri']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_alarm_statistics_using_async(self, request):
+        """查询告警统计数据
+
+        查询告警统计数据
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAlarmStatisticsUsing
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ListAlarmStatisticsUsingRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListAlarmStatisticsUsingResponse`
+        """
+        http_info = self._list_alarm_statistics_using_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_alarm_statistics_using_async_invoker(self, request):
+        http_info = self._list_alarm_statistics_using_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_alarm_statistics_using_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/projects/{service_id}/dashboards/alarm/statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAlarmStatisticsUsingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'service_id' in local_var_params:
+            path_params['service_id'] = local_var_params['service_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_alert_groups_by_condition_async(self, request):
+        """查询告警组列表
+
+        查询告警组列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAlertGroupsByCondition
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ListAlertGroupsByConditionRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListAlertGroupsByConditionResponse`
+        """
+        http_info = self._list_alert_groups_by_condition_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_alert_groups_by_condition_async_invoker(self, request):
+        http_info = self._list_alert_groups_by_condition_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_alert_groups_by_condition_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/projects/{service_id}/alert/group/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAlertGroupsByConditionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'service_id' in local_var_params:
+            path_params['service_id'] = local_var_params['service_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_alert_templates_async(self, request):
+        """查询告警模板
+
+        查询告警模板
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAlertTemplates
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ListAlertTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListAlertTemplatesResponse`
+        """
+        http_info = self._list_alert_templates_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_alert_templates_async_invoker(self, request):
+        http_info = self._list_alert_templates_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_alert_templates_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/projects/{service_id}/alert-templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAlertTemplatesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'service_id' in local_var_params:
+            path_params['service_id'] = local_var_params['service_id']
+
+        query_params = []
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'page_num' in local_var_params:
+            query_params.append(('pageNum', local_var_params['page_num']))
+        if 'page_size' in local_var_params:
+            query_params.append(('pageSize', local_var_params['page_size']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_all_branches_async(self, request):
         """获取分支列表
 
@@ -880,6 +1895,73 @@ class CloudtestAsyncClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_all_config_item_by_type_async(self, request):
+        """查询任务告警信息
+
+        查询任务告警信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAllConfigItemByType
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ListAllConfigItemByTypeRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListAllConfigItemByTypeResponse`
+        """
+        http_info = self._list_all_config_item_by_type_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_all_config_item_by_type_async_invoker(self, request):
+        http_info = self._list_all_config_item_by_type_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_all_config_item_by_type_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/projects/{service_id}/service/configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAllConfigItemByTypeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'service_id' in local_var_params:
+            path_params['service_id'] = local_var_params['service_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -966,6 +2048,73 @@ class CloudtestAsyncClient(Client):
 
         return http_info
 
+    def list_all_test_cases_async(self, request):
+        """查询用例列表
+
+        查询用例列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAllTestCases
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ListAllTestCasesRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListAllTestCasesResponse`
+        """
+        http_info = self._list_all_test_cases_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_all_test_cases_async_invoker(self, request):
+        http_info = self._list_all_test_cases_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_all_test_cases_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/GT3KServer/v4/{project_id}/testcases/batch-query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAllTestCasesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_attachments_async(self, request):
         """查询附件列表
 
@@ -1014,6 +2163,211 @@ class CloudtestAsyncClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_available_config_async(self, request):
+        """获取当前局点功能是否开启
+
+        获取当前局点功能是否开启
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAvailableConfig
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ListAvailableConfigRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListAvailableConfigResponse`
+        """
+        http_info = self._list_available_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_available_config_async_invoker(self, request):
+        http_info = self._list_available_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_available_config_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/available/config",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAvailableConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_basic_aw_async(self, request):
+        """根据id获取单个basicAW信息
+
+        根据id获取单个basicAW信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListBasicAw
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ListBasicAwRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListBasicAwResponse`
+        """
+        http_info = self._list_basic_aw_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_basic_aw_async_invoker(self, request):
+        http_info = self._list_basic_aw_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_basic_aw_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/basic-aw/{aw_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBasicAwResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'aw_id' in local_var_params:
+            path_params['aw_id'] = local_var_params['aw_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_basic_aw_info_list_supports_search_async(self, request):
+        """分页获取工程BasicAW详细信息列表（含目录）
+
+        分页获取工程BasicAW列表（含目录）
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListBasicAwInfoListSupportsSearch
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ListBasicAwInfoListSupportsSearchRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListBasicAwInfoListSupportsSearchResponse`
+        """
+        http_info = self._list_basic_aw_info_list_supports_search_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_basic_aw_info_list_supports_search_async_invoker(self, request):
+        http_info = self._list_basic_aw_info_list_supports_search_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_basic_aw_info_list_supports_search_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/{project_id}/aw-cata/aw-info-list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBasicAwInfoListSupportsSearchResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'page_no' in local_var_params:
+            query_params.append(('page_no', local_var_params['page_no']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
+        if 'parent_id' in local_var_params:
+            query_params.append(('parent_id', local_var_params['parent_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -1108,6 +2462,138 @@ class CloudtestAsyncClient(Client):
 
         return http_info
 
+    def list_cases_status_async(self, request):
+        """批量获取用例状态
+
+        批量获取用例状态
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListCasesStatus
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ListCasesStatusRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListCasesStatusResponse`
+        """
+        http_info = self._list_cases_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_cases_status_async_invoker(self, request):
+        http_info = self._list_cases_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_cases_status_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/querycasestatus",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCasesStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'test_service_id' in local_var_params:
+            query_params.append(('testServiceId', local_var_params['test_service_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_domain_visible_services_async(self, request):
+        """查询当前租户可见的第三方服务列表
+
+        查询当前租户可见的第三方服务列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListDomainVisibleServices
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ListDomainVisibleServicesRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListDomainVisibleServicesResponse`
+        """
+        http_info = self._list_domain_visible_services_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_domain_visible_services_async_invoker(self, request):
+        http_info = self._list_domain_visible_services_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_domain_visible_services_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/GT3KServer/v4/{project_id}/visible-services",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDomainVisibleServicesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_issue_tree_async(self, request):
         """查询需求树
 
@@ -1156,6 +2642,347 @@ class CloudtestAsyncClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_iterator_issue_tree_async(self, request):
+        """查询迭代关联的需求列表或树
+
+        查询迭代关联的需求列表或树
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListIteratorIssueTree
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ListIteratorIssueTreeRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListIteratorIssueTreeResponse`
+        """
+        http_info = self._list_iterator_issue_tree_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_iterator_issue_tree_async_invoker(self, request):
+        http_info = self._list_iterator_issue_tree_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_iterator_issue_tree_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/GT3KServer/v4/{project_id}/iterators/{iterator_id}/issues/batch-query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIteratorIssueTreeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'iterator_id' in local_var_params:
+            path_params['iterator_id'] = local_var_params['iterator_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_iterators_async(self, request):
+        """查询迭代计划列表，包含统计信息
+
+        查询迭代计划列表，包含统计信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListIterators
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ListIteratorsRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListIteratorsResponse`
+        """
+        http_info = self._list_iterators_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_iterators_async_invoker(self, request):
+        http_info = self._list_iterators_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_iterators_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/GT3KServer/v4/iterators/batch-query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIteratorsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_lines_using_async(self, request):
+        """查询仪表盘折线图数据
+
+        查询仪表盘折线图数据
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListLinesUsing
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ListLinesUsingRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListLinesUsingResponse`
+        """
+        http_info = self._list_lines_using_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_lines_using_async_invoker(self, request):
+        http_info = self._list_lines_using_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_lines_using_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/projects/{service_id}/dashboards/lines",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLinesUsingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'service_id' in local_var_params:
+            path_params['service_id'] = local_var_params['service_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_msg_infos_using_async(self, request):
+        """仪表盘根据测试服务ID获取MsgInfo详细信息
+
+        成功返回MsgInfo的详细信息列表，返回值为Model的List
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListMsgInfosUsing
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ListMsgInfosUsingRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListMsgInfosUsingResponse`
+        """
+        http_info = self._list_msg_infos_using_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_msg_infos_using_async_invoker(self, request):
+        http_info = self._list_msg_infos_using_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_msg_infos_using_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/projects/{service_id}/dashboards/alarm/msgs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMsgInfosUsingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'service_id' in local_var_params:
+            path_params['service_id'] = local_var_params['service_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_own_test_cases_async(self, request):
+        """获取责任人是自己的测试用例
+
+        获取责任人是自己的测试用例
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListOwnTestCases
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ListOwnTestCasesRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListOwnTestCasesResponse`
+        """
+        http_info = self._list_own_test_cases_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_own_test_cases_async_invoker(self, request):
+        http_info = self._list_own_test_cases_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_own_test_cases_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/GT3KServer/v4/current-user/testcases",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOwnTestCasesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'page_no' in local_var_params:
+            query_params.append(('page_no', local_var_params['page_no']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
+        if 'sort_field' in local_var_params:
+            query_params.append(('sort_field', local_var_params['sort_field']))
+        if 'sort_type' in local_var_params:
+            query_params.append(('sort_type', local_var_params['sort_type']))
+        if 'keyword' in local_var_params:
+            query_params.append(('keyword', local_var_params['keyword']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -1267,6 +3094,71 @@ class CloudtestAsyncClient(Client):
             "resource_path": "/GT3KServer/v4/{project_id}/testcase/field/batch-query",
             "request_type": request.__class__.__name__,
             "response_type": "ListProjectTestCaseFieldsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_public_lib_and_aws_async(self, request):
+        """获取工程关联的公共aw信息和公共aw所属公共aw库信息
+
+        获取工程关联的公共aw信息和公共aw所属公共aw库信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListPublicLibAndAws
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ListPublicLibAndAwsRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListPublicLibAndAwsResponse`
+        """
+        http_info = self._list_public_lib_and_aws_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_public_lib_and_aws_async_invoker(self, request):
+        http_info = self._list_public_lib_and_aws_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_public_lib_and_aws_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/project/{project_id}/public_aw_lib_and_aws",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPublicLibAndAwsResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1445,6 +3337,221 @@ class CloudtestAsyncClient(Client):
 
         return http_info
 
+    def list_scatters_using_async(self, request):
+        """查询仪表盘散点图数据
+
+        查询仪表盘散点图数据
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListScattersUsing
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ListScattersUsingRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListScattersUsingResponse`
+        """
+        http_info = self._list_scatters_using_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_scatters_using_async_invoker(self, request):
+        http_info = self._list_scatters_using_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_scatters_using_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/projects/{service_id}/dashboards/scatters",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListScattersUsingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'service_id' in local_var_params:
+            path_params['service_id'] = local_var_params['service_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_sub_task_case_overstock_using_async(self, request):
+        """查询subTestCase阻塞任务数据
+
+        成功返回子任务用例数据积压信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSubTaskCaseOverstockUsing
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ListSubTaskCaseOverstockUsingRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListSubTaskCaseOverstockUsingResponse`
+        """
+        http_info = self._list_sub_task_case_overstock_using_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_sub_task_case_overstock_using_async_invoker(self, request):
+        http_info = self._list_sub_task_case_overstock_using_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_sub_task_case_overstock_using_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/projects/{service_id}/dashboard/statistic/block",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSubTaskCaseOverstockUsingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'service_id' in local_var_params:
+            path_params['service_id'] = local_var_params['service_id']
+
+        query_params = []
+        if 'start_time' in local_var_params:
+            query_params.append(('startTime', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('endTime', local_var_params['end_time']))
+        if 'executor_type' in local_var_params:
+            query_params.append(('executorType', local_var_params['executor_type']))
+        if 'label' in local_var_params:
+            query_params.append(('label', local_var_params['label']))
+        if 'location_id' in local_var_params:
+            query_params.append(('locationId', local_var_params['location_id']))
+        if 'page_num' in local_var_params:
+            query_params.append(('pageNum', local_var_params['page_num']))
+        if 'page_size' in local_var_params:
+            query_params.append(('pageSize', local_var_params['page_size']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_task_assign_cases_async(self, request):
+        """获取测试套关联用例详情
+
+        获取测试套关联用例详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTaskAssignCases
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ListTaskAssignCasesRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListTaskAssignCasesResponse`
+        """
+        http_info = self._list_task_assign_cases_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_task_assign_cases_async_invoker(self, request):
+        http_info = self._list_task_assign_cases_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_task_assign_cases_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/GT3KServer/v4/{project_id}/tasks/{task_id}/testcases/batch-query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTaskAssignCasesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_task_test_cases_async(self, request):
         """查询用例关联的测试任务列表
 
@@ -1491,6 +3598,148 @@ class CloudtestAsyncClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_tasks_async(self, request):
+        """查询测试任务列表
+
+        查询测试任务列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTasks
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ListTasksRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListTasksResponse`
+        """
+        http_info = self._list_tasks_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_tasks_async_invoker(self, request):
+        http_info = self._list_tasks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_tasks_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/GT3KServer/v4/{project_id}/versions/{version_id}/tasks/batch-query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTasksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'version_id' in local_var_params:
+            path_params['version_id'] = local_var_params['version_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_test_case_comments_async(self, request):
+        """查询用例评论
+
+        查询用例评论
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTestCaseComments
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ListTestCaseCommentsRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListTestCaseCommentsResponse`
+        """
+        http_info = self._list_test_case_comments_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_test_case_comments_async_invoker(self, request):
+        http_info = self._list_test_case_comments_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_test_case_comments_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/GT3KServer/v4/{project_id}/testcases/{testcase_id}/comments",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTestCaseCommentsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'testcase_id' in local_var_params:
+            path_params['testcase_id'] = local_var_params['testcase_id']
+
+        query_params = []
+        if 'page_no' in local_var_params:
+            query_params.append(('page_no', local_var_params['page_no']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
+        if 'version_uri' in local_var_params:
+            query_params.append(('version_uri', local_var_params['version_uri']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -1581,6 +3830,75 @@ class CloudtestAsyncClient(Client):
 
         return http_info
 
+    def list_test_case_script_detail_async(self, request):
+        """获取用例脚本详细信息
+
+        获取用例脚本详细信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTestCaseScriptDetail
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ListTestCaseScriptDetailRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListTestCaseScriptDetailResponse`
+        """
+        http_info = self._list_test_case_script_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_test_case_script_detail_async_invoker(self, request):
+        http_info = self._list_test_case_script_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_test_case_script_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/{project_id}/testcase/{tmss_case_uri}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTestCaseScriptDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'tmss_case_uri' in local_var_params:
+            path_params['tmss_case_uri'] = local_var_params['tmss_case_uri']
+
+        query_params = []
+        if 'task_id' in local_var_params:
+            query_params.append(('task_id', local_var_params['task_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_test_cases_async(self, request):
         """查询用例列表
 
@@ -1617,6 +3935,75 @@ class CloudtestAsyncClient(Client):
         path_params = {}
         if 'project_id' in local_var_params:
             path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_test_cases_by_issue_async(self, request):
+        """查询需求下的用例列表
+
+        查询需求下的用例列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTestCasesByIssue
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ListTestCasesByIssueRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListTestCasesByIssueResponse`
+        """
+        http_info = self._list_test_cases_by_issue_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_test_cases_by_issue_async_invoker(self, request):
+        http_info = self._list_test_cases_by_issue_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_test_cases_by_issue_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/testrelation/v4/{project_id}/issues/{issue_id}/testcases/batch-query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTestCasesByIssueResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'issue_id' in local_var_params:
+            path_params['issue_id'] = local_var_params['issue_id']
 
         query_params = []
 
@@ -1918,6 +4305,71 @@ class CloudtestAsyncClient(Client):
 
         return http_info
 
+    def list_user_dns_mapping_async(self, request):
+        """查询用户DNS映射
+
+        查询用户DNS映射
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListUserDnsMapping
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ListUserDnsMappingRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListUserDnsMappingResponse`
+        """
+        http_info = self._list_user_dns_mapping_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_user_dns_mapping_async_invoker(self, request):
+        http_info = self._list_user_dns_mapping_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_user_dns_mapping_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dns-mapping",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUserDnsMappingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_user_package_usage_async(self, request):
         """ListUserPackageUsage
 
@@ -2046,6 +4498,217 @@ class CloudtestAsyncClient(Client):
 
         return http_info
 
+    def list_using_get_async(self, request):
+        """查询仪表盘用户的看板
+
+        查询仪表盘用户的看板
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListUsingGet
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ListUsingGetRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListUsingGetResponse`
+        """
+        http_info = self._list_using_get_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_using_get_async_invoker(self, request):
+        http_info = self._list_using_get_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_using_get_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/projects/{service_id}/dashboards",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUsingGetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'service_id' in local_var_params:
+            path_params['service_id'] = local_var_params['service_id']
+
+        query_params = []
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'page_number' in local_var_params:
+            query_params.append(('page_number', local_var_params['page_number']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_variables_async(self, request):
+        """查询全局变量参数列表V4
+
+        查询全局变量参数列表V4
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListVariables
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ListVariablesRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListVariablesResponse`
+        """
+        http_info = self._list_variables_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_variables_async_invoker(self, request):
+        http_info = self._list_variables_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_variables_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/{project_id}/variables",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVariablesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'group_id' in local_var_params:
+            query_params.append(('group_id', local_var_params['group_id']))
+        if 'page_no' in local_var_params:
+            query_params.append(('page_no', local_var_params['page_no']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def remove_issues_from_iterator_async(self, request):
+        """从迭代中移除需求
+
+        从迭代中移除需求
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RemoveIssuesFromIterator
+        :type request: :class:`huaweicloudsdkcloudtest.v1.RemoveIssuesFromIteratorRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.RemoveIssuesFromIteratorResponse`
+        """
+        http_info = self._remove_issues_from_iterator_http_info(request)
+        return self._call_api(**http_info)
+
+    def remove_issues_from_iterator_async_invoker(self, request):
+        http_info = self._remove_issues_from_iterator_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _remove_issues_from_iterator_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/GT3KServer/v4/{project_id}/iterators/{iterator_id}/issues",
+            "request_type": request.__class__.__name__,
+            "response_type": "RemoveIssuesFromIteratorResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'iterator_id' in local_var_params:
+            path_params['iterator_id'] = local_var_params['iterator_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def run_test_case_async(self, request):
         """批量执行测试用例
 
@@ -2113,9 +4776,146 @@ class CloudtestAsyncClient(Client):
 
         return http_info
 
+    def save_task_setting_async(self, request):
+        """保存任务配置
+
+        保存任务配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SaveTaskSetting
+        :type request: :class:`huaweicloudsdkcloudtest.v1.SaveTaskSettingRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.SaveTaskSettingResponse`
+        """
+        http_info = self._save_task_setting_http_info(request)
+        return self._call_api(**http_info)
+
+    def save_task_setting_async_invoker(self, request):
+        http_info = self._save_task_setting_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _save_task_setting_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/projects/{service_id}/task/settings",
+            "request_type": request.__class__.__name__,
+            "response_type": "SaveTaskSettingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'service_id' in local_var_params:
+            path_params['service_id'] = local_var_params['service_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_all_config_value_by_type_and_key_async(self, request):
+        """查询任务配置
+
+        查询任务配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAllConfigValueByTypeAndKey
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ShowAllConfigValueByTypeAndKeyRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowAllConfigValueByTypeAndKeyResponse`
+        """
+        http_info = self._show_all_config_value_by_type_and_key_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_all_config_value_by_type_and_key_async_invoker(self, request):
+        http_info = self._show_all_config_value_by_type_and_key_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_all_config_value_by_type_and_key_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/projects/{service_id}/service/config",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAllConfigValueByTypeAndKeyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'service_id' in local_var_params:
+            path_params['service_id'] = local_var_params['service_id']
+
+        query_params = []
+        if 'key' in local_var_params:
+            query_params.append(('key', local_var_params['key']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_all_feature_children_async(self, request):
         """获取特性树V5
 
+        获取目录\\特性树
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2166,7 +4966,7 @@ class CloudtestAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -2252,6 +5052,138 @@ class CloudtestAsyncClient(Client):
 
         return http_info
 
+    def show_asset_async(self, request):
+        """获取资产列表
+
+        获取资产列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAsset
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ShowAssetRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowAssetResponse`
+        """
+        http_info = self._show_asset_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_asset_async_invoker(self, request):
+        http_info = self._show_asset_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_asset_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/asset",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAssetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_asset_tree_async(self, request):
+        """获取资产树列表
+
+        获取资产树列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAssetTree
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ShowAssetTreeRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowAssetTreeResponse`
+        """
+        http_info = self._show_asset_tree_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_asset_tree_async_invoker(self, request):
+        http_info = self._show_asset_tree_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_asset_tree_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/asset-tree/{asset_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAssetTreeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'asset_id' in local_var_params:
+            path_params['asset_id'] = local_var_params['asset_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_background_info_async(self, request):
         """获取测试报告的模板设置
 
@@ -2290,6 +5222,140 @@ class CloudtestAsyncClient(Client):
             path_params['project_id'] = local_var_params['project_id']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_branch_async(self, request):
+        """获取分支详情
+
+        获取分支详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowBranch
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ShowBranchRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowBranchResponse`
+        """
+        http_info = self._show_branch_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_branch_async_invoker(self, request):
+        http_info = self._show_branch_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_branch_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/GT3KServer/v4/branches/{branch_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBranchResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'branch_id' in local_var_params:
+            path_params['branch_id'] = local_var_params['branch_id']
+
+        query_params = []
+        if 'project_uuid' in local_var_params:
+            query_params.append(('project_uuid', local_var_params['project_uuid']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_concurrency_package_using_async(self, request):
+        """查询租户测试并发套餐状态
+
+        查询租户测试并发套餐状态
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowConcurrencyPackageUsing
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ShowConcurrencyPackageUsingRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowConcurrencyPackageUsingResponse`
+        """
+        http_info = self._show_concurrency_package_using_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_concurrency_package_using_async_invoker(self, request):
+        http_info = self._show_concurrency_package_using_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_concurrency_package_using_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/echotest/concurrency/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowConcurrencyPackageUsingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'service_id' in local_var_params:
+            query_params.append(('service_id', local_var_params['service_id']))
+        if 'test_type' in local_var_params:
+            query_params.append(('test_type', local_var_params['test_type']))
 
         header_params = {}
 
@@ -2445,6 +5511,207 @@ class CloudtestAsyncClient(Client):
 
         return http_info
 
+    def show_echo_test_package_using_async(self, request):
+        """查询租户在线拨测套餐状态
+
+        查询租户在线拨测套餐状态
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowEchoTestPackageUsing
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ShowEchoTestPackageUsingRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowEchoTestPackageUsingResponse`
+        """
+        http_info = self._show_echo_test_package_using_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_echo_test_package_using_async_invoker(self, request):
+        http_info = self._show_echo_test_package_using_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_echo_test_package_using_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/projects/{service_id}/package/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEchoTestPackageUsingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'service_id' in local_var_params:
+            path_params['service_id'] = local_var_params['service_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_factor_by_asset_id_async(self, request):
+        """根据目录查询因子
+
+        根据目录查询因子
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowFactorByAssetId
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ShowFactorByAssetIdRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowFactorByAssetIdResponse`
+        """
+        http_info = self._show_factor_by_asset_id_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_factor_by_asset_id_async_invoker(self, request):
+        http_info = self._show_factor_by_asset_id_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_factor_by_asset_id_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/factor/{asset_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFactorByAssetIdResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'asset_id' in local_var_params:
+            path_params['asset_id'] = local_var_params['asset_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_factor_by_id_async(self, request):
+        """根据id获取因子
+
+        根据id获取因子
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowFactorById
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ShowFactorByIdRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowFactorByIdResponse`
+        """
+        http_info = self._show_factor_by_id_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_factor_by_id_async_invoker(self, request):
+        http_info = self._show_factor_by_id_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_factor_by_id_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/factor/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFactorByIdResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_feature_children_async(self, request):
         """获取目录\\特性树
 
@@ -2548,6 +5815,144 @@ class CloudtestAsyncClient(Client):
         path_params = {}
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_if_task_name_repeat_async(self, request):
+        """查询告警模板名称是否重复
+
+        查询告警模板名称是否重复
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowIfTaskNameRepeat
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ShowIfTaskNameRepeatRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowIfTaskNameRepeatResponse`
+        """
+        http_info = self._show_if_task_name_repeat_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_if_task_name_repeat_async_invoker(self, request):
+        http_info = self._show_if_task_name_repeat_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_if_task_name_repeat_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/projects/{service_id}/alert-templates/name",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowIfTaskNameRepeatResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'service_id' in local_var_params:
+            path_params['service_id'] = local_var_params['service_id']
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_if_user_name_repeat_async(self, request):
+        """查询告警组用户名是否重复
+
+        查询告警组用户名是否重复
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowIfUserNameRepeat
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ShowIfUserNameRepeatRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowIfUserNameRepeatResponse`
+        """
+        http_info = self._show_if_user_name_repeat_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_if_user_name_repeat_async_invoker(self, request):
+        http_info = self._show_if_user_name_repeat_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_if_user_name_repeat_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/projects/{service_id}/alert/user/name",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowIfUserNameRepeatResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'service_id' in local_var_params:
+            path_params['service_id'] = local_var_params['service_id']
+
+        query_params = []
+        if 'user_id' in local_var_params:
+            query_params.append(('userId', local_var_params['user_id']))
+        if 'user_name' in local_var_params:
+            query_params.append(('userName', local_var_params['user_name']))
 
         header_params = {}
 
@@ -2713,6 +6118,140 @@ class CloudtestAsyncClient(Client):
 
         return http_info
 
+    def show_iterator_detail_async(self, request):
+        """查询迭代计划详情，包含统计信息
+
+        查询迭代计划详情，包含统计信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowIteratorDetail
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ShowIteratorDetailRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowIteratorDetailResponse`
+        """
+        http_info = self._show_iterator_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_iterator_detail_async_invoker(self, request):
+        http_info = self._show_iterator_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_iterator_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/GT3KServer/v4/iterators/{iterator_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowIteratorDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'iterator_id' in local_var_params:
+            path_params['iterator_id'] = local_var_params['iterator_id']
+
+        query_params = []
+        if 'project_uuid' in local_var_params:
+            query_params.append(('project_uuid', local_var_params['project_uuid']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_mind_map_by_id_async(self, request):
+        """根据id获取脑图对象
+
+        根据id获取脑图对象
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowMindMapById
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ShowMindMapByIdRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowMindMapByIdResponse`
+        """
+        http_info = self._show_mind_map_by_id_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_mind_map_by_id_async_invoker(self, request):
+        http_info = self._show_mind_map_by_id_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_mind_map_by_id_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/mindmaps/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMindMapByIdResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_mindmap_by_page_async(self, request):
         """根据条件分页获取脑图对象V3
 
@@ -2816,6 +6355,71 @@ class CloudtestAsyncClient(Client):
         path_params = {}
         if 'project_id' in local_var_params:
             path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_operational_data_current_month_using_async(self, request):
+        """查询运行面板信息
+
+        成功返回运行面板信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowOperationalDataCurrentMonthUsing
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ShowOperationalDataCurrentMonthUsingRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowOperationalDataCurrentMonthUsingResponse`
+        """
+        http_info = self._show_operational_data_current_month_using_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_operational_data_current_month_using_async_invoker(self, request):
+        http_info = self._show_operational_data_current_month_using_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_operational_data_current_month_using_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/projects/{service_id}/dashboard/run-panel",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowOperationalDataCurrentMonthUsingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'service_id' in local_var_params:
+            path_params['service_id'] = local_var_params['service_id']
 
         query_params = []
 
@@ -3403,6 +7007,207 @@ class CloudtestAsyncClient(Client):
 
         return http_info
 
+    def show_review_by_page_async(self, request):
+        """根据条件分页获取评审对象V2
+
+        根据条件分页获取评审对象V2
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowReviewByPage
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ShowReviewByPageRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowReviewByPageResponse`
+        """
+        http_info = self._show_review_by_page_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_review_by_page_async_invoker(self, request):
+        http_info = self._show_review_by_page_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_review_by_page_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/reviews/page",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowReviewByPageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_scene_by_page_async(self, request):
+        """根据条件分页获取场景对象V2
+
+        根据条件分页获取场景对象V2
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowSceneByPage
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ShowSceneByPageRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowSceneByPageResponse`
+        """
+        http_info = self._show_scene_by_page_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_scene_by_page_async_invoker(self, request):
+        http_info = self._show_scene_by_page_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_scene_by_page_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/scenes/page",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSceneByPageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_statistic_by_id_async(self, request):
+        """根据脑图id查询统计数目
+
+        根据脑图id查询统计数目
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowStatisticById
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ShowStatisticByIdRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowStatisticByIdResponse`
+        """
+        http_info = self._show_statistic_by_id_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_statistic_by_id_async_invoker(self, request):
+        http_info = self._show_statistic_by_id_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_statistic_by_id_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/statistics/{mindmap_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowStatisticByIdResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'mindmap_id' in local_var_params:
+            path_params['mindmap_id'] = local_var_params['mindmap_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_system_configs_async(self, request):
         """根据入参动态查询系统配置中的信息
 
@@ -3428,6 +7233,73 @@ class CloudtestAsyncClient(Client):
             "resource_path": "/v1/{project_id}/system-config/find-all",
             "request_type": request.__class__.__name__,
             "response_type": "ShowSystemConfigsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_template_by_page_async(self, request):
+        """根据条件分页获取模板V3
+
+        根据条件分页获取模板V3
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowTemplateByPage
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ShowTemplateByPageRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowTemplateByPageResponse`
+        """
+        http_info = self._show_template_by_page_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_template_by_page_async_invoker(self, request):
+        http_info = self._show_template_by_page_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_template_by_page_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/templates/page",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTemplateByPageResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -3746,6 +7618,207 @@ class CloudtestAsyncClient(Client):
 
         return http_info
 
+    def show_test_cases_change_statistics_async(self, request):
+        """版本测试用例变更统计（只统计分支，不统计基线）
+
+        版本测试用例变更统计（只统计分支，不统计基线）
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowTestCasesChangeStatistics
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ShowTestCasesChangeStatisticsRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowTestCasesChangeStatisticsResponse`
+        """
+        http_info = self._show_test_cases_change_statistics_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_test_cases_change_statistics_async_invoker(self, request):
+        http_info = self._show_test_cases_change_statistics_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_test_cases_change_statistics_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/GT3KServer/v4/{project_id}/versions/{version_id}/testcases/change-statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTestCasesChangeStatisticsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'version_id' in local_var_params:
+            path_params['version_id'] = local_var_params['version_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_testcase_by_page_async(self, request):
+        """根据条件分页获取测试用例对象V2
+
+        根据条件分页获取测试用例对象V2
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowTestcaseByPage
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ShowTestcaseByPageRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowTestcaseByPageResponse`
+        """
+        http_info = self._show_testcase_by_page_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_testcase_by_page_async_invoker(self, request):
+        http_info = self._show_testcase_by_page_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_testcase_by_page_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/testcases/page",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTestcaseByPageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_testpoint_by_page_async(self, request):
+        """根据条件分页获取测试点对象V2
+
+        根据条件分页获取测试点对象V2
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowTestpointByPage
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ShowTestpointByPageRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowTestpointByPageResponse`
+        """
+        http_info = self._show_testpoint_by_page_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_testpoint_by_page_async_invoker(self, request):
+        http_info = self._show_testpoint_by_page_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_testpoint_by_page_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/testpoints/page",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTestpointByPageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_user_access_info_async(self, request):
         """获取租户订单信息
 
@@ -3847,6 +7920,142 @@ class CloudtestAsyncClient(Client):
         path_params = {}
         if 'project_id' in local_var_params:
             path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_basic_aw_by_id_async(self, request):
+        """修改关键字信息接口
+
+        修改关键字信息接口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateBasicAwById
+        :type request: :class:`huaweicloudsdkcloudtest.v1.UpdateBasicAwByIdRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.UpdateBasicAwByIdResponse`
+        """
+        http_info = self._update_basic_aw_by_id_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_basic_aw_by_id_async_invoker(self, request):
+        http_info = self._update_basic_aw_by_id_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_basic_aw_by_id_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/basic-aw/{aw_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateBasicAwByIdResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'aw_id' in local_var_params:
+            path_params['aw_id'] = local_var_params['aw_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_iterator_async(self, request):
+        """修改测试计划
+
+        修改测试计划
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateIterator
+        :type request: :class:`huaweicloudsdkcloudtest.v1.UpdateIteratorRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.UpdateIteratorResponse`
+        """
+        http_info = self._update_iterator_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_iterator_async_invoker(self, request):
+        http_info = self._update_iterator_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_iterator_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/GT3KServer/v4/iterators/{iterator_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateIteratorResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'iterator_id' in local_var_params:
+            path_params['iterator_id'] = local_var_params['iterator_id']
 
         query_params = []
 
@@ -4014,6 +8223,148 @@ class CloudtestAsyncClient(Client):
 
         return http_info
 
+    def update_test_case_and_script_async(self, request):
+        """更新tmss用例和用例脚本
+
+        更新tmss用例和用例脚本
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateTestCaseAndScript
+        :type request: :class:`huaweicloudsdkcloudtest.v1.UpdateTestCaseAndScriptRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.UpdateTestCaseAndScriptResponse`
+        """
+        http_info = self._update_test_case_and_script_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_test_case_and_script_async_invoker(self, request):
+        http_info = self._update_test_case_and_script_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_test_case_and_script_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v4/{project_id}/testcase/{tmss_case_uri}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTestCaseAndScriptResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'tmss_case_uri' in local_var_params:
+            path_params['tmss_case_uri'] = local_var_params['tmss_case_uri']
+
+        query_params = []
+        if 'turn_on_awmapping' in local_var_params:
+            query_params.append(('turn_on_awmapping', local_var_params['turn_on_awmapping']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_test_case_comment_async(self, request):
+        """修改用例评论
+
+        修改用例评论
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateTestCaseComment
+        :type request: :class:`huaweicloudsdkcloudtest.v1.UpdateTestCaseCommentRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.UpdateTestCaseCommentResponse`
+        """
+        http_info = self._update_test_case_comment_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_test_case_comment_async_invoker(self, request):
+        http_info = self._update_test_case_comment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_test_case_comment_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/GT3KServer/v4/{project_id}/testcases/{testcase_id}/comments/{comment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTestCaseCommentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'testcase_id' in local_var_params:
+            path_params['testcase_id'] = local_var_params['testcase_id']
+        if 'comment_id' in local_var_params:
+            path_params['comment_id'] = local_var_params['comment_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_test_case_result_async(self, request):
         """批量更新测试用例结果
 
@@ -4081,31 +8432,31 @@ class CloudtestAsyncClient(Client):
 
         return http_info
 
-    def list_alert_groups_by_condition_async(self, request):
-        """查询告警组列表
+    def update_user_dns_mapping_async(self, request):
+        """更新用户DNS映射
 
-        查询告警组列表
+        更新用户DNS映射，执行器自定义映射
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for ListAlertGroupsByCondition
-        :type request: :class:`huaweicloudsdkcloudtest.v1.ListAlertGroupsByConditionRequest`
-        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListAlertGroupsByConditionResponse`
+        :param request: Request instance for UpdateUserDnsMapping
+        :type request: :class:`huaweicloudsdkcloudtest.v1.UpdateUserDnsMappingRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.UpdateUserDnsMappingResponse`
         """
-        http_info = self._list_alert_groups_by_condition_http_info(request)
+        http_info = self._update_user_dns_mapping_http_info(request)
         return self._call_api(**http_info)
 
-    def list_alert_groups_by_condition_async_invoker(self, request):
-        http_info = self._list_alert_groups_by_condition_http_info(request)
+    def update_user_dns_mapping_async_invoker(self, request):
+        http_info = self._update_user_dns_mapping_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _list_alert_groups_by_condition_http_info(self, request):
+    def _update_user_dns_mapping_http_info(self, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/v1/projects/{service_id}/alert/group/users",
+            "resource_path": "/v1/{project_id}/dns-mapping",
             "request_type": request.__class__.__name__,
-            "response_type": "ListAlertGroupsByConditionResponse"
+            "response_type": "UpdateUserDnsMappingResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -4115,8 +8466,8 @@ class CloudtestAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'service_id' in local_var_params:
-            path_params['service_id'] = local_var_params['service_id']
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
 
         query_params = []
 
@@ -4148,31 +8499,31 @@ class CloudtestAsyncClient(Client):
 
         return http_info
 
-    def list_alert_templates_async(self, request):
-        """查询告警模板
+    def update_version_test_case_async(self, request):
+        """在分支或者测试计划下修改用例
 
-        查询告警模板
+        在分支或者测试计划下修改用例
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for ListAlertTemplates
-        :type request: :class:`huaweicloudsdkcloudtest.v1.ListAlertTemplatesRequest`
-        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListAlertTemplatesResponse`
+        :param request: Request instance for UpdateVersionTestCase
+        :type request: :class:`huaweicloudsdkcloudtest.v1.UpdateVersionTestCaseRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.UpdateVersionTestCaseResponse`
         """
-        http_info = self._list_alert_templates_http_info(request)
+        http_info = self._update_version_test_case_http_info(request)
         return self._call_api(**http_info)
 
-    def list_alert_templates_async_invoker(self, request):
-        http_info = self._list_alert_templates_http_info(request)
+    def update_version_test_case_async_invoker(self, request):
+        http_info = self._update_version_test_case_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _list_alert_templates_http_info(self, request):
+    def _update_version_test_case_http_info(self, request):
         http_info = {
-            "method": "GET",
-            "resource_path": "/v1/projects/{service_id}/alert-templates",
+            "method": "PUT",
+            "resource_path": "/GT3KServer/v4/testcases/{case_id}",
             "request_type": request.__class__.__name__,
-            "response_type": "ListAlertTemplatesResponse"
+            "response_type": "UpdateVersionTestCaseResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -4182,79 +8533,8 @@ class CloudtestAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'service_id' in local_var_params:
-            path_params['service_id'] = local_var_params['service_id']
-
-        query_params = []
-        if 'name' in local_var_params:
-            query_params.append(('name', local_var_params['name']))
-        if 'page_num' in local_var_params:
-            query_params.append(('pageNum', local_var_params['page_num']))
-        if 'page_size' in local_var_params:
-            query_params.append(('pageSize', local_var_params['page_size']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['apig-auth-iam']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_all_config_item_by_type_async(self, request):
-        """查询任务告警信息
-
-        查询任务告警信息
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListAllConfigItemByType
-        :type request: :class:`huaweicloudsdkcloudtest.v1.ListAllConfigItemByTypeRequest`
-        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListAllConfigItemByTypeResponse`
-        """
-        http_info = self._list_all_config_item_by_type_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_all_config_item_by_type_async_invoker(self, request):
-        http_info = self._list_all_config_item_by_type_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_all_config_item_by_type_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/projects/{service_id}/service/configs",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListAllConfigItemByTypeResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'service_id' in local_var_params:
-            path_params['service_id'] = local_var_params['service_id']
+        if 'case_id' in local_var_params:
+            path_params['case_id'] = local_var_params['case_id']
 
         query_params = []
 
@@ -4265,280 +8545,6 @@ class CloudtestAsyncClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['apig-auth-iam']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def save_task_setting_async(self, request):
-        """保存任务配置
-
-        保存任务配置
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for SaveTaskSetting
-        :type request: :class:`huaweicloudsdkcloudtest.v1.SaveTaskSettingRequest`
-        :rtype: :class:`huaweicloudsdkcloudtest.v1.SaveTaskSettingResponse`
-        """
-        http_info = self._save_task_setting_http_info(request)
-        return self._call_api(**http_info)
-
-    def save_task_setting_async_invoker(self, request):
-        http_info = self._save_task_setting_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _save_task_setting_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/projects/{service_id}/task/settings",
-            "request_type": request.__class__.__name__,
-            "response_type": "SaveTaskSettingResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'service_id' in local_var_params:
-            path_params['service_id'] = local_var_params['service_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['apig-auth-iam']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_all_config_value_by_type_and_key_async(self, request):
-        """查询任务配置
-
-        查询任务配置
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowAllConfigValueByTypeAndKey
-        :type request: :class:`huaweicloudsdkcloudtest.v1.ShowAllConfigValueByTypeAndKeyRequest`
-        :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowAllConfigValueByTypeAndKeyResponse`
-        """
-        http_info = self._show_all_config_value_by_type_and_key_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_all_config_value_by_type_and_key_async_invoker(self, request):
-        http_info = self._show_all_config_value_by_type_and_key_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_all_config_value_by_type_and_key_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/projects/{service_id}/service/config",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowAllConfigValueByTypeAndKeyResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'service_id' in local_var_params:
-            path_params['service_id'] = local_var_params['service_id']
-
-        query_params = []
-        if 'key' in local_var_params:
-            query_params.append(('key', local_var_params['key']))
-        if 'type' in local_var_params:
-            query_params.append(('type', local_var_params['type']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['apig-auth-iam']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_if_task_name_repeat_async(self, request):
-        """查询告警模板名称是否重复
-
-        查询告警模板名称是否重复
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowIfTaskNameRepeat
-        :type request: :class:`huaweicloudsdkcloudtest.v1.ShowIfTaskNameRepeatRequest`
-        :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowIfTaskNameRepeatResponse`
-        """
-        http_info = self._show_if_task_name_repeat_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_if_task_name_repeat_async_invoker(self, request):
-        http_info = self._show_if_task_name_repeat_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_if_task_name_repeat_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/projects/{service_id}/alert-templates/name",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowIfTaskNameRepeatResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'service_id' in local_var_params:
-            path_params['service_id'] = local_var_params['service_id']
-
-        query_params = []
-        if 'id' in local_var_params:
-            query_params.append(('id', local_var_params['id']))
-        if 'name' in local_var_params:
-            query_params.append(('name', local_var_params['name']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['apig-auth-iam']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_if_user_name_repeat_async(self, request):
-        """查询告警组用户名是否重复
-
-        查询告警组用户名是否重复
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowIfUserNameRepeat
-        :type request: :class:`huaweicloudsdkcloudtest.v1.ShowIfUserNameRepeatRequest`
-        :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowIfUserNameRepeatResponse`
-        """
-        http_info = self._show_if_user_name_repeat_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_if_user_name_repeat_async_invoker(self, request):
-        http_info = self._show_if_user_name_repeat_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_if_user_name_repeat_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/projects/{service_id}/alert/user/name",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowIfUserNameRepeatResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'service_id' in local_var_params:
-            path_params['service_id'] = local_var_params['service_id']
-
-        query_params = []
-        if 'user_id' in local_var_params:
-            query_params.append(('userId', local_var_params['user_id']))
-        if 'user_name' in local_var_params:
-            query_params.append(('userName', local_var_params['user_name']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -4684,274 +8690,6 @@ class CloudtestAsyncClient(Client):
             ['application/json'])
 
         auth_settings = ['apig-auth-iam']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_basic_aw_async(self, request):
-        """根据id获取单个basicAW信息
-
-        根据id获取单个basicAW信息
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListBasicAw
-        :type request: :class:`huaweicloudsdkcloudtest.v1.ListBasicAwRequest`
-        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListBasicAwResponse`
-        """
-        http_info = self._list_basic_aw_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_basic_aw_async_invoker(self, request):
-        http_info = self._list_basic_aw_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_basic_aw_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v3/{project_id}/basic-aw/{aw_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListBasicAwResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-        if 'aw_id' in local_var_params:
-            path_params['aw_id'] = local_var_params['aw_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['apig-auth-iam']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_public_lib_and_aws_async(self, request):
-        """获取工程关联的公共aw信息和公共aw所属公共aw库信息
-
-        获取工程关联的公共aw信息和公共aw所属公共aw库信息
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListPublicLibAndAws
-        :type request: :class:`huaweicloudsdkcloudtest.v1.ListPublicLibAndAwsRequest`
-        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListPublicLibAndAwsResponse`
-        """
-        http_info = self._list_public_lib_and_aws_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_public_lib_and_aws_async_invoker(self, request):
-        http_info = self._list_public_lib_and_aws_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_public_lib_and_aws_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/project/{project_id}/public_aw_lib_and_aws",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListPublicLibAndAwsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['apig-auth-iam']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_user_dns_mapping_async(self, request):
-        """查询用户DNS映射
-
-        查询用户DNS映射
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListUserDnsMapping
-        :type request: :class:`huaweicloudsdkcloudtest.v1.ListUserDnsMappingRequest`
-        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListUserDnsMappingResponse`
-        """
-        http_info = self._list_user_dns_mapping_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_user_dns_mapping_async_invoker(self, request):
-        http_info = self._list_user_dns_mapping_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_user_dns_mapping_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/dns-mapping",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListUserDnsMappingResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['apig-auth-iam']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_variables_async(self, request):
-        """查询全局变量参数列表V4
-
-        查询全局变量参数列表V4
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListVariables
-        :type request: :class:`huaweicloudsdkcloudtest.v1.ListVariablesRequest`
-        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListVariablesResponse`
-        """
-        http_info = self._list_variables_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_variables_async_invoker(self, request):
-        http_info = self._list_variables_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_variables_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v4/{project_id}/variables",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListVariablesResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-
-        query_params = []
-        if 'group_id' in local_var_params:
-            query_params.append(('group_id', local_var_params['group_id']))
-        if 'page_no' in local_var_params:
-            query_params.append(('page_no', local_var_params['page_no']))
-        if 'page_size' in local_var_params:
-            query_params.append(('page_size', local_var_params['page_size']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats

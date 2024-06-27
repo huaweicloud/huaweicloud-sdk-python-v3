@@ -166,6 +166,74 @@ class VpcClient(Client):
 
         return http_info
 
+    def batch_create_port_tags(self, request):
+        """批量添加端口资源标签
+
+        为指定的端口批量添加标签。
+        此接口为幂等接口：创建时如果请求体中存在重复key则报错。创建时，不允许设置重复key数据，如果数据库已存在该key，就覆盖value的值。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchCreatePortTags
+        :type request: :class:`huaweicloudsdkvpc.v3.BatchCreatePortTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.BatchCreatePortTagsResponse`
+        """
+        http_info = self._batch_create_port_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_create_port_tags_invoker(self, request):
+        http_info = self._batch_create_port_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_create_port_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/ports/{port_id}/tags/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreatePortTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'port_id' in local_var_params:
+            path_params['port_id'] = local_var_params['port_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_create_security_group_rules(self, request):
         """批量创建安全组规则
 
@@ -267,6 +335,207 @@ class VpcClient(Client):
         collection_formats = {}
 
         path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_port_tags(self, request):
+        """批量删除端口资源标签
+
+        为指定的端口资源实例批量删除标签。
+        此接口为幂等接口：删除时，如果删除的标签不存在，默认处理成功；删除时不对标签字符集范围做校验。删除时tags结构体不能缺失，key不能为空，或者空字符串。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeletePortTags
+        :type request: :class:`huaweicloudsdkvpc.v3.BatchDeletePortTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.BatchDeletePortTagsResponse`
+        """
+        http_info = self._batch_delete_port_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_port_tags_invoker(self, request):
+        http_info = self._batch_delete_port_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_port_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/ports/{port_id}/tags/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeletePortTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'port_id' in local_var_params:
+            path_params['port_id'] = local_var_params['port_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def count_ports_by_tags(self, request):
+        """查询端口资源实例数量
+
+        使用标签过滤查询端口实例数量。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CountPortsByTags
+        :type request: :class:`huaweicloudsdkvpc.v3.CountPortsByTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.CountPortsByTagsResponse`
+        """
+        http_info = self._count_ports_by_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def count_ports_by_tags_invoker(self, request):
+        http_info = self._count_ports_by_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _count_ports_by_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/ports/resource-instances/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "CountPortsByTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_port_tag(self, request):
+        """添加端口资源标签
+
+        给指定端口资源实例增加标签信息
+        此接口为幂等接口：创建时，如果创建的标签已经存在（key相同），则覆盖。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreatePortTag
+        :type request: :class:`huaweicloudsdkvpc.v3.CreatePortTagRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.CreatePortTagResponse`
+        """
+        http_info = self._create_port_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_port_tag_invoker(self, request):
+        http_info = self._create_port_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_port_tag_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/ports/{port_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePortTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'port_id' in local_var_params:
+            path_params['port_id'] = local_var_params['port_id']
 
         query_params = []
 
@@ -688,6 +957,74 @@ class VpcClient(Client):
 
         return http_info
 
+    def delete_port_tag(self, request):
+        """删除端口资源标签
+
+        删除指定端口的标签信息
+        该接口为幂等接口：删除的key不存在报404，key不能为空或者空字符串
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeletePortTag
+        :type request: :class:`huaweicloudsdkvpc.v3.DeletePortTagRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.DeletePortTagResponse`
+        """
+        http_info = self._delete_port_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_port_tag_invoker(self, request):
+        http_info = self._delete_port_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_port_tag_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/ports/{port_id}/tags/{tag_key}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePortTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'port_id' in local_var_params:
+            path_params['port_id'] = local_var_params['port_id']
+        if 'tag_key' in local_var_params:
+            path_params['tag_key'] = local_var_params['tag_key']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_security_group(self, request):
         """删除安全组
 
@@ -1057,6 +1394,142 @@ class VpcClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_port_tags(self, request):
+        """查询端口项目标签
+
+        查询租户在指定Project中实例类型的所有资源标签集合
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListPortTags
+        :type request: :class:`huaweicloudsdkvpc.v3.ListPortTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ListPortTagsResponse`
+        """
+        http_info = self._list_port_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_port_tags_invoker(self, request):
+        http_info = self._list_port_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_port_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/ports/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPortTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ports_by_tags(self, request):
+        """查询端口资源实例列表
+
+        使用标签过滤查询端口。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListPortsByTags
+        :type request: :class:`huaweicloudsdkvpc.v3.ListPortsByTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ListPortsByTagsResponse`
+        """
+        http_info = self._list_ports_by_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ports_by_tags_invoker(self, request):
+        http_info = self._list_ports_by_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_ports_by_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/ports/resource-instances/filter",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPortsByTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -1769,6 +2242,71 @@ class VpcClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_port_tags(self, request):
+        """查询端口资源标签
+
+        查询指定端口的标签信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowPortTags
+        :type request: :class:`huaweicloudsdkvpc.v3.ShowPortTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ShowPortTagsResponse`
+        """
+        http_info = self._show_port_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_port_tags_invoker(self, request):
+        http_info = self._show_port_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_port_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/ports/{port_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPortTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'port_id' in local_var_params:
+            path_params['port_id'] = local_var_params['port_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -2715,7 +3253,7 @@ class VpcClient(Client):
     def batch_create_firewall_tags(self, request):
         """批量添加ACL资源标签
 
-        为指定的IP地址组资源实例批量添加标签。
+        为指定的网络ACL资源实例批量添加标签。
         此接口为幂等接口：创建时如果请求体中存在重复key则报错。创建时，不允许设置重复key数据，如果数据库已存在该key，就覆盖value的值。
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -2783,7 +3321,7 @@ class VpcClient(Client):
     def batch_delete_firewall_tags(self, request):
         """批量删除ACL资源标签
 
-        为指定的IP地址组资源实例批量删除标签。
+        为指定的网络ACL资源实例批量删除标签。
         此接口为幂等接口：删除时，如果删除的标签不存在，默认处理成功；删除时不对标签字符集范围做校验。删除时tags结构体不能缺失，key不能为空，或者空字符串。
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -3362,6 +3900,10 @@ class VpcClient(Client):
         path_params = {}
 
         query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
 

@@ -18,7 +18,7 @@ class CreateEastWestFirewallResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'IdObject'
+        'data': 'CreateEWFirewallResp'
     }
 
     attribute_map = {
@@ -31,7 +31,7 @@ class CreateEastWestFirewallResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param data: 
-        :type data: :class:`huaweicloudsdkcfw.v1.IdObject`
+        :type data: :class:`huaweicloudsdkcfw.v1.CreateEWFirewallResp`
         """
         
         super(CreateEastWestFirewallResponse, self).__init__()
@@ -47,7 +47,7 @@ class CreateEastWestFirewallResponse(SdkResponse):
         """Gets the data of this CreateEastWestFirewallResponse.
 
         :return: The data of this CreateEastWestFirewallResponse.
-        :rtype: :class:`huaweicloudsdkcfw.v1.IdObject`
+        :rtype: :class:`huaweicloudsdkcfw.v1.CreateEWFirewallResp`
         """
         return self._data
 
@@ -56,7 +56,7 @@ class CreateEastWestFirewallResponse(SdkResponse):
         """Sets the data of this CreateEastWestFirewallResponse.
 
         :param data: The data of this CreateEastWestFirewallResponse.
-        :type data: :class:`huaweicloudsdkcfw.v1.IdObject`
+        :type data: :class:`huaweicloudsdkcfw.v1.CreateEWFirewallResp`
         """
         self._data = data
 

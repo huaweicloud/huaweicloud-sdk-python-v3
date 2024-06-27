@@ -52,7 +52,9 @@ class FlavorExtraSpec:
         'quotagpu': 'str',
         'quotavif_max_num': 'str',
         'quotasub_network_interface_max_num': 'str',
-        'ecsinstance_architecture': 'str'
+        'ecsinstance_architecture': 'str',
+        'network_interfacetraffic_mirroring_supported': 'str',
+        'securityenclave_supported': 'str'
     }
 
     attribute_map = {
@@ -91,10 +93,12 @@ class FlavorExtraSpec:
         'quotagpu': 'quota:gpu',
         'quotavif_max_num': 'quota:vif_max_num',
         'quotasub_network_interface_max_num': 'quota:sub_network_interface_max_num',
-        'ecsinstance_architecture': 'ecs:instance_architecture'
+        'ecsinstance_architecture': 'ecs:instance_architecture',
+        'network_interfacetraffic_mirroring_supported': 'network_interface:traffic_mirroring_supported',
+        'securityenclave_supported': 'security:enclave_supported'
     }
 
-    def __init__(self, ecsperformancetype=None, hwnuma_nodes=None, resource_type=None, hpet_support=None, instance_vnictype=None, instance_vnicinstance_bandwidth=None, instance_vnicmax_count=None, quotalocal_disk=None, quotanvme_ssd=None, extra_speciopersistent_grant=None, ecsgeneration=None, ecsvirtualization_env_types=None, pci_passthroughenable_gpu=None, pci_passthroughgpu_specs=None, pci_passthroughalias=None, condoperationstatus=None, condoperationaz=None, quotamax_rate=None, quotamin_rate=None, quotamax_pps=None, condoperationcharge=None, condoperationchargestop=None, condspotoperationaz=None, condoperationroles=None, condspotoperationstatus=None, condnetwork=None, condstorage=None, condstoragetype=None, condcomputelive_resizable=None, condcompute=None, infogpuname=None, infocpuname=None, quotagpu=None, quotavif_max_num=None, quotasub_network_interface_max_num=None, ecsinstance_architecture=None):
+    def __init__(self, ecsperformancetype=None, hwnuma_nodes=None, resource_type=None, hpet_support=None, instance_vnictype=None, instance_vnicinstance_bandwidth=None, instance_vnicmax_count=None, quotalocal_disk=None, quotanvme_ssd=None, extra_speciopersistent_grant=None, ecsgeneration=None, ecsvirtualization_env_types=None, pci_passthroughenable_gpu=None, pci_passthroughgpu_specs=None, pci_passthroughalias=None, condoperationstatus=None, condoperationaz=None, quotamax_rate=None, quotamin_rate=None, quotamax_pps=None, condoperationcharge=None, condoperationchargestop=None, condspotoperationaz=None, condoperationroles=None, condspotoperationstatus=None, condnetwork=None, condstorage=None, condstoragetype=None, condcomputelive_resizable=None, condcompute=None, infogpuname=None, infocpuname=None, quotagpu=None, quotavif_max_num=None, quotasub_network_interface_max_num=None, ecsinstance_architecture=None, network_interfacetraffic_mirroring_supported=None, securityenclave_supported=None):
         """FlavorExtraSpec
 
         The model defined in huaweicloud sdk
@@ -171,6 +175,10 @@ class FlavorExtraSpec:
         :type quotasub_network_interface_max_num: str
         :param ecsinstance_architecture: 该规格对应的CPU架构，且仅鲲鹏实例架构规格返回该字段  - 取值为arm64表示CPU架构为鲲鹏计算。
         :type ecsinstance_architecture: str
+        :param network_interfacetraffic_mirroring_supported: 该规格是否支持流量镜像。
+        :type network_interfacetraffic_mirroring_supported: str
+        :param securityenclave_supported: 该规格是否支持QingTian Enclave。
+        :type securityenclave_supported: str
         """
         
         
@@ -211,6 +219,8 @@ class FlavorExtraSpec:
         self._quotavif_max_num = None
         self._quotasub_network_interface_max_num = None
         self._ecsinstance_architecture = None
+        self._network_interfacetraffic_mirroring_supported = None
+        self._securityenclave_supported = None
         self.discriminator = None
 
         if ecsperformancetype is not None:
@@ -285,6 +295,10 @@ class FlavorExtraSpec:
             self.quotasub_network_interface_max_num = quotasub_network_interface_max_num
         if ecsinstance_architecture is not None:
             self.ecsinstance_architecture = ecsinstance_architecture
+        if network_interfacetraffic_mirroring_supported is not None:
+            self.network_interfacetraffic_mirroring_supported = network_interfacetraffic_mirroring_supported
+        if securityenclave_supported is not None:
+            self.securityenclave_supported = securityenclave_supported
 
     @property
     def ecsperformancetype(self):
@@ -1077,6 +1091,50 @@ class FlavorExtraSpec:
         :type ecsinstance_architecture: str
         """
         self._ecsinstance_architecture = ecsinstance_architecture
+
+    @property
+    def network_interfacetraffic_mirroring_supported(self):
+        """Gets the network_interfacetraffic_mirroring_supported of this FlavorExtraSpec.
+
+        该规格是否支持流量镜像。
+
+        :return: The network_interfacetraffic_mirroring_supported of this FlavorExtraSpec.
+        :rtype: str
+        """
+        return self._network_interfacetraffic_mirroring_supported
+
+    @network_interfacetraffic_mirroring_supported.setter
+    def network_interfacetraffic_mirroring_supported(self, network_interfacetraffic_mirroring_supported):
+        """Sets the network_interfacetraffic_mirroring_supported of this FlavorExtraSpec.
+
+        该规格是否支持流量镜像。
+
+        :param network_interfacetraffic_mirroring_supported: The network_interfacetraffic_mirroring_supported of this FlavorExtraSpec.
+        :type network_interfacetraffic_mirroring_supported: str
+        """
+        self._network_interfacetraffic_mirroring_supported = network_interfacetraffic_mirroring_supported
+
+    @property
+    def securityenclave_supported(self):
+        """Gets the securityenclave_supported of this FlavorExtraSpec.
+
+        该规格是否支持QingTian Enclave。
+
+        :return: The securityenclave_supported of this FlavorExtraSpec.
+        :rtype: str
+        """
+        return self._securityenclave_supported
+
+    @securityenclave_supported.setter
+    def securityenclave_supported(self, securityenclave_supported):
+        """Sets the securityenclave_supported of this FlavorExtraSpec.
+
+        该规格是否支持QingTian Enclave。
+
+        :param securityenclave_supported: The securityenclave_supported of this FlavorExtraSpec.
+        :type securityenclave_supported: str
+        """
+        self._securityenclave_supported = securityenclave_supported
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -5082,6 +5082,154 @@ class WorkspaceAsyncClient(Client):
 
         return http_info
 
+    def list_metrics_async(self, request):
+        """查询指标
+
+        查询指标
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListMetrics
+        :type request: :class:`huaweicloudsdkworkspace.v2.ListMetricsRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ListMetricsResponse`
+        """
+        http_info = self._list_metrics_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_metrics_async_invoker(self, request):
+        http_info = self._list_metrics_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_metrics_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/statistics/metrics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMetricsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'dim' in local_var_params:
+            query_params.append(('dim', local_var_params['dim']))
+        if 'metric_names' in local_var_params:
+            query_params.append(('metric_names', local_var_params['metric_names']))
+            collection_formats['metric_names'] = 'csv'
+        if 'period' in local_var_params:
+            query_params.append(('period', local_var_params['period']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_metrics_trend_async(self, request):
+        """查询指标趋势
+
+        查询指标趋势
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListMetricsTrend
+        :type request: :class:`huaweicloudsdkworkspace.v2.ListMetricsTrendRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ListMetricsTrendResponse`
+        """
+        http_info = self._list_metrics_trend_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_metrics_trend_async_invoker(self, request):
+        http_info = self._list_metrics_trend_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_metrics_trend_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/statistics/metrics/trend",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMetricsTrendResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'dim' in local_var_params:
+            query_params.append(('dim', local_var_params['dim']))
+        if 'metric_names' in local_var_params:
+            query_params.append(('metric_names', local_var_params['metric_names']))
+            collection_formats['metric_names'] = 'csv'
+        if 'period' in local_var_params:
+            query_params.append(('period', local_var_params['period']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_user_usage_metric_async(self, request):
         """查询用户使用统计数据
 

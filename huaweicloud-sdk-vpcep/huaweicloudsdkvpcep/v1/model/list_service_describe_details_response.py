@@ -54,7 +54,7 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
         :type is_charge: bool
         :param public_border_group: 终端节点对应Pool的Public Border Group信息
         :type public_border_group: str
-        :param enable_policy: 是否开启终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false 是否开启终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false
+        :param enable_policy: 是否允许自定义终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false
         :type enable_policy: bool
         """
         
@@ -220,7 +220,7 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
     def enable_policy(self):
         """Gets the enable_policy of this ListServiceDescribeDetailsResponse.
 
-        是否开启终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false 是否开启终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false
+        是否允许自定义终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false
 
         :return: The enable_policy of this ListServiceDescribeDetailsResponse.
         :rtype: bool
@@ -231,7 +231,7 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
     def enable_policy(self, enable_policy):
         """Sets the enable_policy of this ListServiceDescribeDetailsResponse.
 
-        是否开启终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false 是否开启终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false
+        是否允许自定义终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false
 
         :param enable_policy: The enable_policy of this ListServiceDescribeDetailsResponse.
         :type enable_policy: bool

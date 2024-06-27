@@ -41,7 +41,8 @@ class CreateEndpointResponse(SdkResponse):
         'policy_statement': 'list[PolicyStatement]',
         'enable_status': 'str',
         'endpoint_pool_id': 'str',
-        'public_border_group': 'str'
+        'public_border_group': 'str',
+        'ipv6_address': 'str'
     }
 
     attribute_map = {
@@ -68,23 +69,24 @@ class CreateEndpointResponse(SdkResponse):
         'policy_statement': 'policy_statement',
         'enable_status': 'enable_status',
         'endpoint_pool_id': 'endpoint_pool_id',
-        'public_border_group': 'public_border_group'
+        'public_border_group': 'public_border_group',
+        'ipv6_address': 'ipv6_address'
     }
 
-    def __init__(self, id=None, service_type=None, status=None, ip=None, active_status=None, endpoint_service_name=None, marker_id=None, endpoint_service_id=None, enable_dns=None, subnet_id=None, vpc_id=None, created_at=None, updated_at=None, project_id=None, tags=None, whitelist=None, enable_whitelist=None, routetables=None, specification_name=None, description=None, policy_statement=None, enable_status=None, endpoint_pool_id=None, public_border_group=None):
+    def __init__(self, id=None, service_type=None, status=None, ip=None, active_status=None, endpoint_service_name=None, marker_id=None, endpoint_service_id=None, enable_dns=None, subnet_id=None, vpc_id=None, created_at=None, updated_at=None, project_id=None, tags=None, whitelist=None, enable_whitelist=None, routetables=None, specification_name=None, description=None, policy_statement=None, enable_status=None, endpoint_pool_id=None, public_border_group=None, ipv6_address=None):
         """CreateEndpointResponse
 
         The model defined in huaweicloud sdk
 
         :param id: 终端节点的ID，唯一标识。
         :type id: str
-        :param service_type: 终端节点连接的终端节点服务类型。  - gateway：由运维人员配置。用户无需创建，可直接使用。  - interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。您可以通过查询公共终端节点服务列表， 查看由运维人员配置的所有用户可见且可连接的终端节点服务， 并通过创建终端节点服务创建Interface类型的终端节点服务。
+        :param service_type: 终端节点连接的终端节点服务类型。   - gateway：由运维人员配置。用户无需创建，可直接使用。   - interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过\&quot;查询公共终端节点服务列表\&quot;查看由运维人员配置的所有用户可见且可连接的终端节点服务，并通过创建终端节点服务创建Interface类型的终端节点服务。
         :type service_type: str
         :param status: 终端节点的状态。  - pendingAcceptance：待接受  - creating：创建中  - accepted：已接受  - rejected：已拒绝  - failed：失败  - deleting：删除中
         :type status: str
         :param ip: 终端节点ip
         :type ip: str
-        :param active_status: 帐号状态。  - frozen：冻结  - active：解冻
+        :param active_status: 账号状态。  - frozen：冻结  - active：解冻
         :type active_status: list[str]
         :param endpoint_service_name: 终端节点服务的名称。
         :type endpoint_service_name: str
@@ -92,7 +94,7 @@ class CreateEndpointResponse(SdkResponse):
         :type marker_id: int
         :param endpoint_service_id: 终端节点服务的ID。
         :type endpoint_service_id: str
-        :param enable_dns: 是否创建域名。  - true：创建域名  - false：不创建域名 说明 当创建连接gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
+        :param enable_dns: 是否创建域名。  - true：创建域名  - false：不创建域名 说明 当创建gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
         :type enable_dns: bool
         :param subnet_id: vpc_id对应VPC下已创建的网络（network）的ID，UUID格式。
         :type subnet_id: str
@@ -110,13 +112,13 @@ class CreateEndpointResponse(SdkResponse):
         :type whitelist: list[str]
         :param enable_whitelist: 是否开启网络ACL隔离。  - true：开启网络ACL隔离  - false：不开启网络ACL隔离 若未指定，则返回false。 创建连接Interface类型终端节点服务的终端节点时，显示此参数。
         :type enable_whitelist: bool
-        :param routetables: 路由表ID列表。 若未指定，返回默认VPC下路由表ID。 创建连接Gateway类型终端节点服务的终端节点时，显示此参数。
+        :param routetables: 路由表ID列表。 若未指定，返回默认VPC下路由表ID。 创建gateway类型终端节点服务的终端节点时，显示此参数。
         :type routetables: list[str]
         :param specification_name: 规格名称
         :type specification_name: str
         :param description: 描述
         :type description: str
-        :param policy_statement: 只涉及开启双端固定的网关型终端节点，响应体展示此字段
+        :param policy_statement: 终端节点策略信息
         :type policy_statement: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]
         :param enable_status: 终端节点是否可用。  - enable：启用  - disable：不启用
         :type enable_status: str
@@ -124,6 +126,8 @@ class CreateEndpointResponse(SdkResponse):
         :type endpoint_pool_id: str
         :param public_border_group: 终端节点对应Pool的Public Border Group信息
         :type public_border_group: str
+        :param ipv6_address: 终端节点的IPv6地址,仅专业型终端节点支持此参数
+        :type ipv6_address: str
         """
         
         super(CreateEndpointResponse, self).__init__()
@@ -152,6 +156,7 @@ class CreateEndpointResponse(SdkResponse):
         self._enable_status = None
         self._endpoint_pool_id = None
         self._public_border_group = None
+        self._ipv6_address = None
         self.discriminator = None
 
         if id is not None:
@@ -202,6 +207,8 @@ class CreateEndpointResponse(SdkResponse):
             self.endpoint_pool_id = endpoint_pool_id
         if public_border_group is not None:
             self.public_border_group = public_border_group
+        if ipv6_address is not None:
+            self.ipv6_address = ipv6_address
 
     @property
     def id(self):
@@ -229,7 +236,7 @@ class CreateEndpointResponse(SdkResponse):
     def service_type(self):
         """Gets the service_type of this CreateEndpointResponse.
 
-        终端节点连接的终端节点服务类型。  - gateway：由运维人员配置。用户无需创建，可直接使用。  - interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。您可以通过查询公共终端节点服务列表， 查看由运维人员配置的所有用户可见且可连接的终端节点服务， 并通过创建终端节点服务创建Interface类型的终端节点服务。
+        终端节点连接的终端节点服务类型。   - gateway：由运维人员配置。用户无需创建，可直接使用。   - interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过\"查询公共终端节点服务列表\"查看由运维人员配置的所有用户可见且可连接的终端节点服务，并通过创建终端节点服务创建Interface类型的终端节点服务。
 
         :return: The service_type of this CreateEndpointResponse.
         :rtype: str
@@ -240,7 +247,7 @@ class CreateEndpointResponse(SdkResponse):
     def service_type(self, service_type):
         """Sets the service_type of this CreateEndpointResponse.
 
-        终端节点连接的终端节点服务类型。  - gateway：由运维人员配置。用户无需创建，可直接使用。  - interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。您可以通过查询公共终端节点服务列表， 查看由运维人员配置的所有用户可见且可连接的终端节点服务， 并通过创建终端节点服务创建Interface类型的终端节点服务。
+        终端节点连接的终端节点服务类型。   - gateway：由运维人员配置。用户无需创建，可直接使用。   - interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过\"查询公共终端节点服务列表\"查看由运维人员配置的所有用户可见且可连接的终端节点服务，并通过创建终端节点服务创建Interface类型的终端节点服务。
 
         :param service_type: The service_type of this CreateEndpointResponse.
         :type service_type: str
@@ -295,7 +302,7 @@ class CreateEndpointResponse(SdkResponse):
     def active_status(self):
         """Gets the active_status of this CreateEndpointResponse.
 
-        帐号状态。  - frozen：冻结  - active：解冻
+        账号状态。  - frozen：冻结  - active：解冻
 
         :return: The active_status of this CreateEndpointResponse.
         :rtype: list[str]
@@ -306,7 +313,7 @@ class CreateEndpointResponse(SdkResponse):
     def active_status(self, active_status):
         """Sets the active_status of this CreateEndpointResponse.
 
-        帐号状态。  - frozen：冻结  - active：解冻
+        账号状态。  - frozen：冻结  - active：解冻
 
         :param active_status: The active_status of this CreateEndpointResponse.
         :type active_status: list[str]
@@ -383,7 +390,7 @@ class CreateEndpointResponse(SdkResponse):
     def enable_dns(self):
         """Gets the enable_dns of this CreateEndpointResponse.
 
-        是否创建域名。  - true：创建域名  - false：不创建域名 说明 当创建连接gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
+        是否创建域名。  - true：创建域名  - false：不创建域名 说明 当创建gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
 
         :return: The enable_dns of this CreateEndpointResponse.
         :rtype: bool
@@ -394,7 +401,7 @@ class CreateEndpointResponse(SdkResponse):
     def enable_dns(self, enable_dns):
         """Sets the enable_dns of this CreateEndpointResponse.
 
-        是否创建域名。  - true：创建域名  - false：不创建域名 说明 当创建连接gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
+        是否创建域名。  - true：创建域名  - false：不创建域名 说明 当创建gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
 
         :param enable_dns: The enable_dns of this CreateEndpointResponse.
         :type enable_dns: bool
@@ -581,7 +588,7 @@ class CreateEndpointResponse(SdkResponse):
     def routetables(self):
         """Gets the routetables of this CreateEndpointResponse.
 
-        路由表ID列表。 若未指定，返回默认VPC下路由表ID。 创建连接Gateway类型终端节点服务的终端节点时，显示此参数。
+        路由表ID列表。 若未指定，返回默认VPC下路由表ID。 创建gateway类型终端节点服务的终端节点时，显示此参数。
 
         :return: The routetables of this CreateEndpointResponse.
         :rtype: list[str]
@@ -592,7 +599,7 @@ class CreateEndpointResponse(SdkResponse):
     def routetables(self, routetables):
         """Sets the routetables of this CreateEndpointResponse.
 
-        路由表ID列表。 若未指定，返回默认VPC下路由表ID。 创建连接Gateway类型终端节点服务的终端节点时，显示此参数。
+        路由表ID列表。 若未指定，返回默认VPC下路由表ID。 创建gateway类型终端节点服务的终端节点时，显示此参数。
 
         :param routetables: The routetables of this CreateEndpointResponse.
         :type routetables: list[str]
@@ -647,7 +654,7 @@ class CreateEndpointResponse(SdkResponse):
     def policy_statement(self):
         """Gets the policy_statement of this CreateEndpointResponse.
 
-        只涉及开启双端固定的网关型终端节点，响应体展示此字段
+        终端节点策略信息
 
         :return: The policy_statement of this CreateEndpointResponse.
         :rtype: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]
@@ -658,7 +665,7 @@ class CreateEndpointResponse(SdkResponse):
     def policy_statement(self, policy_statement):
         """Sets the policy_statement of this CreateEndpointResponse.
 
-        只涉及开启双端固定的网关型终端节点，响应体展示此字段
+        终端节点策略信息
 
         :param policy_statement: The policy_statement of this CreateEndpointResponse.
         :type policy_statement: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]
@@ -730,6 +737,28 @@ class CreateEndpointResponse(SdkResponse):
         :type public_border_group: str
         """
         self._public_border_group = public_border_group
+
+    @property
+    def ipv6_address(self):
+        """Gets the ipv6_address of this CreateEndpointResponse.
+
+        终端节点的IPv6地址,仅专业型终端节点支持此参数
+
+        :return: The ipv6_address of this CreateEndpointResponse.
+        :rtype: str
+        """
+        return self._ipv6_address
+
+    @ipv6_address.setter
+    def ipv6_address(self, ipv6_address):
+        """Sets the ipv6_address of this CreateEndpointResponse.
+
+        终端节点的IPv6地址,仅专业型终端节点支持此参数
+
+        :param ipv6_address: The ipv6_address of this CreateEndpointResponse.
+        :type ipv6_address: str
+        """
+        self._ipv6_address = ipv6_address
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -28,7 +28,8 @@ class ShowSupportObjectTypeResponse(SdkResponse):
         'is_table_support_search': 'bool',
         'file_size': 'str',
         'previous_select': 'str',
-        'import_level': 'str'
+        'import_level': 'str',
+        'is_import_cloumn': 'bool'
     }
 
     attribute_map = {
@@ -42,10 +43,11 @@ class ShowSupportObjectTypeResponse(SdkResponse):
         'is_table_support_search': 'is_table_support_search',
         'file_size': 'file_size',
         'previous_select': 'previous_select',
-        'import_level': 'import_level'
+        'import_level': 'import_level',
+        'is_import_cloumn': 'is_import_cloumn'
     }
 
-    def __init__(self, is_full_trans_support_object=None, is_incre_trans_support_object=None, is_full_incre_trans_support_object=None, support_object_import_engine=None, is_support_column_mapping=None, is_database_support_search=None, is_schema_support_search=None, is_table_support_search=None, file_size=None, previous_select=None, import_level=None):
+    def __init__(self, is_full_trans_support_object=None, is_incre_trans_support_object=None, is_full_incre_trans_support_object=None, support_object_import_engine=None, is_support_column_mapping=None, is_database_support_search=None, is_schema_support_search=None, is_table_support_search=None, file_size=None, previous_select=None, import_level=None, is_import_cloumn=None):
         """ShowSupportObjectTypeResponse
 
         The model defined in huaweicloud sdk
@@ -72,6 +74,8 @@ class ShowSupportObjectTypeResponse(SdkResponse):
         :type previous_select: str
         :param import_level: 对象导入类型。 - table：表级 - database：库级
         :type import_level: str
+        :param is_import_cloumn: 取值： - true： 当前任务上次选择列加工方式为导入方式 - false 或者 空：当前任务上次选择列加工方式为手动选择方式
+        :type is_import_cloumn: bool
         """
         
         super(ShowSupportObjectTypeResponse, self).__init__()
@@ -87,6 +91,7 @@ class ShowSupportObjectTypeResponse(SdkResponse):
         self._file_size = None
         self._previous_select = None
         self._import_level = None
+        self._is_import_cloumn = None
         self.discriminator = None
 
         if is_full_trans_support_object is not None:
@@ -111,6 +116,8 @@ class ShowSupportObjectTypeResponse(SdkResponse):
             self.previous_select = previous_select
         if import_level is not None:
             self.import_level = import_level
+        if is_import_cloumn is not None:
+            self.is_import_cloumn = is_import_cloumn
 
     @property
     def is_full_trans_support_object(self):
@@ -353,6 +360,28 @@ class ShowSupportObjectTypeResponse(SdkResponse):
         :type import_level: str
         """
         self._import_level = import_level
+
+    @property
+    def is_import_cloumn(self):
+        """Gets the is_import_cloumn of this ShowSupportObjectTypeResponse.
+
+        取值： - true： 当前任务上次选择列加工方式为导入方式 - false 或者 空：当前任务上次选择列加工方式为手动选择方式
+
+        :return: The is_import_cloumn of this ShowSupportObjectTypeResponse.
+        :rtype: bool
+        """
+        return self._is_import_cloumn
+
+    @is_import_cloumn.setter
+    def is_import_cloumn(self, is_import_cloumn):
+        """Sets the is_import_cloumn of this ShowSupportObjectTypeResponse.
+
+        取值： - true： 当前任务上次选择列加工方式为导入方式 - false 或者 空：当前任务上次选择列加工方式为手动选择方式
+
+        :param is_import_cloumn: The is_import_cloumn of this ShowSupportObjectTypeResponse.
+        :type is_import_cloumn: bool
+        """
+        self._is_import_cloumn = is_import_cloumn
 
     def to_dict(self):
         """Returns the model properties as a dict"""

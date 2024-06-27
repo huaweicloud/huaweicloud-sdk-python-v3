@@ -43,7 +43,8 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
         'description': 'str',
         'policy_statement': 'list[PolicyStatement]',
         'endpoint_pool_id': 'str',
-        'public_border_group': 'str'
+        'public_border_group': 'str',
+        'ipv6_address': 'str'
     }
 
     attribute_map = {
@@ -72,10 +73,11 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
         'description': 'description',
         'policy_statement': 'policy_statement',
         'endpoint_pool_id': 'endpoint_pool_id',
-        'public_border_group': 'public_border_group'
+        'public_border_group': 'public_border_group',
+        'ipv6_address': 'ipv6_address'
     }
 
-    def __init__(self, id=None, service_type=None, status=None, active_status=None, enable_status=None, specification_name=None, endpoint_service_name=None, marker_id=None, endpoint_service_id=None, enable_dns=None, dns_names=None, ip=None, vpc_id=None, subnet_id=None, created_at=None, updated_at=None, project_id=None, tags=None, error=None, whitelist=None, enable_whitelist=None, routetables=None, description=None, policy_statement=None, endpoint_pool_id=None, public_border_group=None):
+    def __init__(self, id=None, service_type=None, status=None, active_status=None, enable_status=None, specification_name=None, endpoint_service_name=None, marker_id=None, endpoint_service_id=None, enable_dns=None, dns_names=None, ip=None, vpc_id=None, subnet_id=None, created_at=None, updated_at=None, project_id=None, tags=None, error=None, whitelist=None, enable_whitelist=None, routetables=None, description=None, policy_statement=None, endpoint_pool_id=None, public_border_group=None, ipv6_address=None):
         """ListEndpointInfoDetailsResponse
 
         The model defined in huaweicloud sdk
@@ -86,7 +88,7 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
         :type service_type: str
         :param status: 终端节点的连接状态。  - pendingAcceptance：待接受  - creating：创建中  - accepted：已接受  - rejected：已拒绝  - failed：失败  - deleting：删除中
         :type status: str
-        :param active_status: 帐号状态。  - frozen：冻结  - active：解冻
+        :param active_status: 账号状态。  - frozen：冻结  - active：解冻
         :type active_status: list[str]
         :param enable_status: 终端节点是否可用。  - enable：启用  - disable：不启用
         :type enable_status: str
@@ -98,7 +100,7 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
         :type marker_id: int
         :param endpoint_service_id: 终端节点服务的ID。
         :type endpoint_service_id: str
-        :param enable_dns: 是否创建域名。  - true：创建域名  - false：不创建域名 说明 当创建连接gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
+        :param enable_dns: 是否创建域名。  - true：创建域名  - false：不创建域名 说明 当创建gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
         :type enable_dns: bool
         :param dns_names: 访问所连接的终端节点服务的域名。 当“enable_dns”为true时，该参数可见。
         :type dns_names: list[str]
@@ -122,16 +124,18 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
         :type whitelist: list[str]
         :param enable_whitelist: 是否开启网络ACL隔离。  - true：开启网络ACL隔离  - false：不开启网络ACL隔离 若未指定，则返回false。 创建连接Interface类型终端节点服务的终端节点时，显示此参数。
         :type enable_whitelist: bool
-        :param routetables: 路由表ID列表。 若未指定，返回默认VPC下路由表ID。 创建连接Gateway类型终端节点服务的终端节点时，显示此参数。
+        :param routetables: 路由表ID列表。 若未指定，返回默认VPC下路由表ID。 创建gateway类型终端节点服务的终端节点时，显示此参数。
         :type routetables: list[str]
         :param description: 描述字段，支持中英文字母、数字等字符，不支持“&lt;”或“&gt;”字符。
         :type description: str
-        :param policy_statement: 只涉及开启双端固定的网关型终端节点，响应体展示此字段
+        :param policy_statement: 终端节点策略信息
         :type policy_statement: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]
         :param endpoint_pool_id: 待废弃，实例相关联的集群ID
         :type endpoint_pool_id: str
         :param public_border_group: 终端节点对应Pool的Public Border Group信息
         :type public_border_group: str
+        :param ipv6_address: 访问所连接的终端节点服务的IPv6的地址。 创建终端节点时，可以指定访问所连接的终端节点服务的IP，不指定的情况下，会使用系统生成的一个地址。 仅专业型终端节点支持此参数。
+        :type ipv6_address: str
         """
         
         super(ListEndpointInfoDetailsResponse, self).__init__()
@@ -162,6 +166,7 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
         self._policy_statement = None
         self._endpoint_pool_id = None
         self._public_border_group = None
+        self._ipv6_address = None
         self.discriminator = None
 
         if id is not None:
@@ -216,6 +221,8 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
             self.endpoint_pool_id = endpoint_pool_id
         if public_border_group is not None:
             self.public_border_group = public_border_group
+        if ipv6_address is not None:
+            self.ipv6_address = ipv6_address
 
     @property
     def id(self):
@@ -287,7 +294,7 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
     def active_status(self):
         """Gets the active_status of this ListEndpointInfoDetailsResponse.
 
-        帐号状态。  - frozen：冻结  - active：解冻
+        账号状态。  - frozen：冻结  - active：解冻
 
         :return: The active_status of this ListEndpointInfoDetailsResponse.
         :rtype: list[str]
@@ -298,7 +305,7 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
     def active_status(self, active_status):
         """Sets the active_status of this ListEndpointInfoDetailsResponse.
 
-        帐号状态。  - frozen：冻结  - active：解冻
+        账号状态。  - frozen：冻结  - active：解冻
 
         :param active_status: The active_status of this ListEndpointInfoDetailsResponse.
         :type active_status: list[str]
@@ -419,7 +426,7 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
     def enable_dns(self):
         """Gets the enable_dns of this ListEndpointInfoDetailsResponse.
 
-        是否创建域名。  - true：创建域名  - false：不创建域名 说明 当创建连接gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
+        是否创建域名。  - true：创建域名  - false：不创建域名 说明 当创建gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
 
         :return: The enable_dns of this ListEndpointInfoDetailsResponse.
         :rtype: bool
@@ -430,7 +437,7 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
     def enable_dns(self, enable_dns):
         """Sets the enable_dns of this ListEndpointInfoDetailsResponse.
 
-        是否创建域名。  - true：创建域名  - false：不创建域名 说明 当创建连接gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
+        是否创建域名。  - true：创建域名  - false：不创建域名 说明 当创建gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
 
         :param enable_dns: The enable_dns of this ListEndpointInfoDetailsResponse.
         :type enable_dns: bool
@@ -679,7 +686,7 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
     def routetables(self):
         """Gets the routetables of this ListEndpointInfoDetailsResponse.
 
-        路由表ID列表。 若未指定，返回默认VPC下路由表ID。 创建连接Gateway类型终端节点服务的终端节点时，显示此参数。
+        路由表ID列表。 若未指定，返回默认VPC下路由表ID。 创建gateway类型终端节点服务的终端节点时，显示此参数。
 
         :return: The routetables of this ListEndpointInfoDetailsResponse.
         :rtype: list[str]
@@ -690,7 +697,7 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
     def routetables(self, routetables):
         """Sets the routetables of this ListEndpointInfoDetailsResponse.
 
-        路由表ID列表。 若未指定，返回默认VPC下路由表ID。 创建连接Gateway类型终端节点服务的终端节点时，显示此参数。
+        路由表ID列表。 若未指定，返回默认VPC下路由表ID。 创建gateway类型终端节点服务的终端节点时，显示此参数。
 
         :param routetables: The routetables of this ListEndpointInfoDetailsResponse.
         :type routetables: list[str]
@@ -723,7 +730,7 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
     def policy_statement(self):
         """Gets the policy_statement of this ListEndpointInfoDetailsResponse.
 
-        只涉及开启双端固定的网关型终端节点，响应体展示此字段
+        终端节点策略信息
 
         :return: The policy_statement of this ListEndpointInfoDetailsResponse.
         :rtype: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]
@@ -734,7 +741,7 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
     def policy_statement(self, policy_statement):
         """Sets the policy_statement of this ListEndpointInfoDetailsResponse.
 
-        只涉及开启双端固定的网关型终端节点，响应体展示此字段
+        终端节点策略信息
 
         :param policy_statement: The policy_statement of this ListEndpointInfoDetailsResponse.
         :type policy_statement: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]
@@ -784,6 +791,28 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
         :type public_border_group: str
         """
         self._public_border_group = public_border_group
+
+    @property
+    def ipv6_address(self):
+        """Gets the ipv6_address of this ListEndpointInfoDetailsResponse.
+
+        访问所连接的终端节点服务的IPv6的地址。 创建终端节点时，可以指定访问所连接的终端节点服务的IP，不指定的情况下，会使用系统生成的一个地址。 仅专业型终端节点支持此参数。
+
+        :return: The ipv6_address of this ListEndpointInfoDetailsResponse.
+        :rtype: str
+        """
+        return self._ipv6_address
+
+    @ipv6_address.setter
+    def ipv6_address(self, ipv6_address):
+        """Sets the ipv6_address of this ListEndpointInfoDetailsResponse.
+
+        访问所连接的终端节点服务的IPv6的地址。 创建终端节点时，可以指定访问所连接的终端节点服务的IP，不指定的情况下，会使用系统生成的一个地址。 仅专业型终端节点支持此参数。
+
+        :param ipv6_address: The ipv6_address of this ListEndpointInfoDetailsResponse.
+        :type ipv6_address: str
+        """
+        self._ipv6_address = ipv6_address
 
     def to_dict(self):
         """Returns the model properties as a dict"""

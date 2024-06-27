@@ -22,7 +22,6 @@ class ServiceSet:
         'description': 'str',
         'service_set_type': 'int',
         'ref_count': 'int',
-        'status': 'str',
         'project_id': 'str',
         'protocols': 'list[int]'
     }
@@ -33,12 +32,11 @@ class ServiceSet:
         'description': 'description',
         'service_set_type': 'service_set_type',
         'ref_count': 'ref_count',
-        'status': 'status',
         'project_id': 'project_id',
         'protocols': 'protocols'
     }
 
-    def __init__(self, set_id=None, name=None, description=None, service_set_type=None, ref_count=None, status=None, project_id=None, protocols=None):
+    def __init__(self, set_id=None, name=None, description=None, service_set_type=None, ref_count=None, project_id=None, protocols=None):
         """ServiceSet
 
         The model defined in huaweicloud sdk
@@ -53,8 +51,6 @@ class ServiceSet:
         :type service_set_type: int
         :param ref_count: 引用次数
         :type ref_count: int
-        :param status: 状态
-        :type status: str
         :param project_id: 项目id
         :type project_id: str
         :param protocols: 协议类型列表
@@ -68,7 +64,6 @@ class ServiceSet:
         self._description = None
         self._service_set_type = None
         self._ref_count = None
-        self._status = None
         self._project_id = None
         self._protocols = None
         self.discriminator = None
@@ -83,8 +78,6 @@ class ServiceSet:
             self.service_set_type = service_set_type
         if ref_count is not None:
             self.ref_count = ref_count
-        if status is not None:
-            self.status = status
         if project_id is not None:
             self.project_id = project_id
         if protocols is not None:
@@ -199,28 +192,6 @@ class ServiceSet:
         :type ref_count: int
         """
         self._ref_count = ref_count
-
-    @property
-    def status(self):
-        """Gets the status of this ServiceSet.
-
-        状态
-
-        :return: The status of this ServiceSet.
-        :rtype: str
-        """
-        return self._status
-
-    @status.setter
-    def status(self, status):
-        """Sets the status of this ServiceSet.
-
-        状态
-
-        :param status: The status of this ServiceSet.
-        :type status: str
-        """
-        self._status = status
 
     @property
     def project_id(self):

@@ -104,7 +104,7 @@ class VpcepClient(Client):
 
         批量添加或移除当前用户下终端节点服务的白名单。
         说明
-        本帐号默认在自身用户的终端节点服务的白名单中。
+        本账号默认在自身用户的终端节点服务的白名单中。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -173,7 +173,7 @@ class VpcepClient(Client):
 
         批量添加当前用户下终端节点服务的白名单，支持添加描述信息。
         说明
-        本帐号默认在自身用户的终端节点服务的白名单中。
+        本账号默认在自身用户的终端节点服务的白名单中。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -827,8 +827,6 @@ class VpcepClient(Client):
             query_params.append(('sort_key', local_var_params['sort_key']))
         if 'sort_dir' in local_var_params:
             query_params.append(('sort_dir', local_var_params['sort_dir']))
-        if 'public_border_group' in local_var_params:
-            query_params.append(('public_border_group', local_var_params['public_border_group']))
 
         header_params = {}
 
@@ -1137,7 +1135,7 @@ class VpcepClient(Client):
 
         查询当前用户下终端节点服务的白名单列表。
         说明
-        本帐号默认在当前用户下终端节点服务的白名单中。
+        本账号默认在当前用户下终端节点服务的白名单中。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

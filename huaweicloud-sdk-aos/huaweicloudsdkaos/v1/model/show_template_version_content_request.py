@@ -20,17 +20,21 @@ class ShowTemplateVersionContentRequest:
         'client_request_id': 'str',
         'template_name': 'str',
         'version_id': 'str',
-        'template_id': 'str'
+        'template_id': 'str',
+        'access_control_source_vpc_ids': 'list[str]',
+        'access_control_source_ips': 'list[str]'
     }
 
     attribute_map = {
         'client_request_id': 'Client-Request-Id',
         'template_name': 'template_name',
         'version_id': 'version_id',
-        'template_id': 'template_id'
+        'template_id': 'template_id',
+        'access_control_source_vpc_ids': 'access_control_source_vpc_ids',
+        'access_control_source_ips': 'access_control_source_ips'
     }
 
-    def __init__(self, client_request_id=None, template_name=None, version_id=None, template_id=None):
+    def __init__(self, client_request_id=None, template_name=None, version_id=None, template_id=None, access_control_source_vpc_ids=None, access_control_source_ips=None):
         """ShowTemplateVersionContentRequest
 
         The model defined in huaweicloud sdk
@@ -43,6 +47,10 @@ class ShowTemplateVersionContentRequest:
         :type version_id: str
         :param template_id: 模板的ID。当template_id存在时，模板服务会检查template_id是否和template_name匹配，不匹配会返回400
         :type template_id: str
+        :param access_control_source_vpc_ids: 允许访问资源栈模板的source vpc id列表， source vpc id应仅包含小写字母、数字或中划线。
+        :type access_control_source_vpc_ids: list[str]
+        :param access_control_source_ips: 允许访问资源栈模板的source ip列表，source ip应是具有CIDR表示法且带有子网掩码的IPv4地址。
+        :type access_control_source_ips: list[str]
         """
         
         
@@ -51,6 +59,8 @@ class ShowTemplateVersionContentRequest:
         self._template_name = None
         self._version_id = None
         self._template_id = None
+        self._access_control_source_vpc_ids = None
+        self._access_control_source_ips = None
         self.discriminator = None
 
         self.client_request_id = client_request_id
@@ -58,6 +68,10 @@ class ShowTemplateVersionContentRequest:
         self.version_id = version_id
         if template_id is not None:
             self.template_id = template_id
+        if access_control_source_vpc_ids is not None:
+            self.access_control_source_vpc_ids = access_control_source_vpc_ids
+        if access_control_source_ips is not None:
+            self.access_control_source_ips = access_control_source_ips
 
     @property
     def client_request_id(self):
@@ -146,6 +160,50 @@ class ShowTemplateVersionContentRequest:
         :type template_id: str
         """
         self._template_id = template_id
+
+    @property
+    def access_control_source_vpc_ids(self):
+        """Gets the access_control_source_vpc_ids of this ShowTemplateVersionContentRequest.
+
+        允许访问资源栈模板的source vpc id列表， source vpc id应仅包含小写字母、数字或中划线。
+
+        :return: The access_control_source_vpc_ids of this ShowTemplateVersionContentRequest.
+        :rtype: list[str]
+        """
+        return self._access_control_source_vpc_ids
+
+    @access_control_source_vpc_ids.setter
+    def access_control_source_vpc_ids(self, access_control_source_vpc_ids):
+        """Sets the access_control_source_vpc_ids of this ShowTemplateVersionContentRequest.
+
+        允许访问资源栈模板的source vpc id列表， source vpc id应仅包含小写字母、数字或中划线。
+
+        :param access_control_source_vpc_ids: The access_control_source_vpc_ids of this ShowTemplateVersionContentRequest.
+        :type access_control_source_vpc_ids: list[str]
+        """
+        self._access_control_source_vpc_ids = access_control_source_vpc_ids
+
+    @property
+    def access_control_source_ips(self):
+        """Gets the access_control_source_ips of this ShowTemplateVersionContentRequest.
+
+        允许访问资源栈模板的source ip列表，source ip应是具有CIDR表示法且带有子网掩码的IPv4地址。
+
+        :return: The access_control_source_ips of this ShowTemplateVersionContentRequest.
+        :rtype: list[str]
+        """
+        return self._access_control_source_ips
+
+    @access_control_source_ips.setter
+    def access_control_source_ips(self, access_control_source_ips):
+        """Sets the access_control_source_ips of this ShowTemplateVersionContentRequest.
+
+        允许访问资源栈模板的source ip列表，source ip应是具有CIDR表示法且带有子网掩码的IPv4地址。
+
+        :param access_control_source_ips: The access_control_source_ips of this ShowTemplateVersionContentRequest.
+        :type access_control_source_ips: list[str]
+        """
+        self._access_control_source_ips = access_control_source_ips
 
     def to_dict(self):
         """Returns the model properties as a dict"""

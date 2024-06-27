@@ -18,17 +18,15 @@ class UpdateAddressSetDto:
 
     openapi_types = {
         'name': 'str',
-        'description': 'str',
-        'address_type': 'int'
+        'description': 'str'
     }
 
     attribute_map = {
         'name': 'name',
-        'description': 'description',
-        'address_type': 'address_type'
+        'description': 'description'
     }
 
-    def __init__(self, name=None, description=None, address_type=None):
+    def __init__(self, name=None, description=None):
         """UpdateAddressSetDto
 
         The model defined in huaweicloud sdk
@@ -37,23 +35,18 @@ class UpdateAddressSetDto:
         :type name: str
         :param description: 地址组描述
         :type description: str
-        :param address_type: 地址类型0 ipv4,1 ipv6,2 domain
-        :type address_type: int
         """
         
         
 
         self._name = None
         self._description = None
-        self._address_type = None
         self.discriminator = None
 
         if name is not None:
             self.name = name
         if description is not None:
             self.description = description
-        if address_type is not None:
-            self.address_type = address_type
 
     @property
     def name(self):
@@ -98,28 +91,6 @@ class UpdateAddressSetDto:
         :type description: str
         """
         self._description = description
-
-    @property
-    def address_type(self):
-        """Gets the address_type of this UpdateAddressSetDto.
-
-        地址类型0 ipv4,1 ipv6,2 domain
-
-        :return: The address_type of this UpdateAddressSetDto.
-        :rtype: int
-        """
-        return self._address_type
-
-    @address_type.setter
-    def address_type(self, address_type):
-        """Sets the address_type of this UpdateAddressSetDto.
-
-        地址类型0 ipv4,1 ipv6,2 domain
-
-        :param address_type: The address_type of this UpdateAddressSetDto.
-        :type address_type: int
-        """
-        self._address_type = address_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -188,6 +188,7 @@ from huaweicloudsdkdrs.v5.model.query_pre_check_result import QueryPreCheckResul
 from huaweicloudsdkdrs.v5.model.query_select_object_info_req import QuerySelectObjectInfoReq
 from huaweicloudsdkdrs.v5.model.query_user_selected_object_info_req import QueryUserSelectedObjectInfoReq
 from huaweicloudsdkdrs.v5.model.replay_config_info import ReplayConfigInfo
+from huaweicloudsdkdrs.v5.model.replay_error_classification import ReplayErrorClassification
 from huaweicloudsdkdrs.v5.model.replay_error_sql_resp import ReplayErrorSqlResp
 from huaweicloudsdkdrs.v5.model.replay_error_sql_template_resp import ReplayErrorSqlTemplateResp
 from huaweicloudsdkdrs.v5.model.replay_shard_statics_resp import ReplayShardStaticsResp

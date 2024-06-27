@@ -3100,6 +3100,8 @@ class DrsAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -3169,6 +3171,8 @@ class DrsAsyncClient(Client):
         query_params = []
         if 'type' in local_var_params:
             query_params.append(('type', local_var_params['type']))
+        if 'file_export_object_level' in local_var_params:
+            query_params.append(('file_export_object_level', local_var_params['file_export_object_level']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -4256,6 +4260,12 @@ class DrsAsyncClient(Client):
             query_params.append(('sort_dir', local_var_params['sort_dir']))
         if 'target_name' in local_var_params:
             query_params.append(('target_name', local_var_params['target_name']))
+        if 'is_sample' in local_var_params:
+            query_params.append(('is_sample', local_var_params['is_sample']))
+        if 'error_type' in local_var_params:
+            query_params.append(('error_type', local_var_params['error_type']))
+        if 'sql_template_md5' in local_var_params:
+            query_params.append(('sql_template_md5', local_var_params['sql_template_md5']))
 
         header_params = {}
         if 'x_language' in local_var_params:

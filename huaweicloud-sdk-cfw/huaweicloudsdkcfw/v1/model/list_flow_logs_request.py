@@ -35,7 +35,11 @@ class ListFlowLogsRequest:
         'enterprise_project_id': 'str',
         'dst_host': 'str',
         'src_region_name': 'str',
-        'dst_region_name': 'str'
+        'dst_region_name': 'str',
+        'src_province_name': 'str',
+        'dst_province_name': 'str',
+        'src_city_name': 'str',
+        'dst_city_name': 'str'
     }
 
     attribute_map = {
@@ -57,23 +61,27 @@ class ListFlowLogsRequest:
         'enterprise_project_id': 'enterprise_project_id',
         'dst_host': 'dst_host',
         'src_region_name': 'src_region_name',
-        'dst_region_name': 'dst_region_name'
+        'dst_region_name': 'dst_region_name',
+        'src_province_name': 'src_province_name',
+        'dst_province_name': 'dst_province_name',
+        'src_city_name': 'src_city_name',
+        'dst_city_name': 'dst_city_name'
     }
 
-    def __init__(self, fw_instance_id=None, direction=None, log_type=None, start_time=None, end_time=None, src_ip=None, src_port=None, dst_ip=None, dst_port=None, protocol=None, app=None, log_id=None, next_date=None, offset=None, limit=None, enterprise_project_id=None, dst_host=None, src_region_name=None, dst_region_name=None):
+    def __init__(self, fw_instance_id=None, direction=None, log_type=None, start_time=None, end_time=None, src_ip=None, src_port=None, dst_ip=None, dst_port=None, protocol=None, app=None, log_id=None, next_date=None, offset=None, limit=None, enterprise_project_id=None, dst_host=None, src_region_name=None, dst_region_name=None, src_province_name=None, dst_province_name=None, src_city_name=None, dst_city_name=None):
         """ListFlowLogsRequest
 
         The model defined in huaweicloud sdk
 
-        :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。
+        :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)。
         :type fw_instance_id: str
-        :param direction: 方向
+        :param direction: 方向，包含in2out，out2in
         :type direction: str
-        :param log_type: 日志类型
+        :param log_type: 日志类型包括：internet，vpc，nat
         :type log_type: str
-        :param start_time: 开始时间
+        :param start_time: 开始时间，以毫秒为单位的时间戳，如1718936272648
         :type start_time: int
-        :param end_time: 结束时间
+        :param end_time: 结束时间，以毫秒为单位的时间戳，如1718936272648
         :type end_time: int
         :param src_ip: 源IP
         :type src_ip: str
@@ -83,15 +91,15 @@ class ListFlowLogsRequest:
         :type dst_ip: str
         :param dst_port: 目的端口
         :type dst_port: int
-        :param protocol: 协议类型:TCP为6, UDP为17,ICMP为1,ICMPV6为58,ANY为-1,手动类型不为空，自动类型为空
+        :param protocol: 协议类型，包含TCP, UDP,ICMP,ICMPV6等。
         :type protocol: str
         :param app: 应用协议
         :type app: str
-        :param log_id: 文档ID，首页时为null，非首页时不为null
+        :param log_id: 文档ID,第一页为空，其他页不为空，其他页可取上一次查询最后一条数据的log_id
         :type log_id: str
-        :param next_date: 日期，首页时为null，非首页时不为null
+        :param next_date: 下个日期，当是第一页时为空，不是第一页时不为空，其他页可取上一次查询最后一条数据的start_time
         :type next_date: int
-        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于0，首页时为空，非首页时不为空
         :type offset: int
         :param limit: 每页显示个数，范围为1-1024
         :type limit: int
@@ -103,6 +111,14 @@ class ListFlowLogsRequest:
         :type src_region_name: str
         :param dst_region_name: 目的region名称
         :type dst_region_name: str
+        :param src_province_name: 源省份名称
+        :type src_province_name: str
+        :param dst_province_name: 目的省份名称
+        :type dst_province_name: str
+        :param src_city_name: 源城市名称
+        :type src_city_name: str
+        :param dst_city_name: 目的城市名称
+        :type dst_city_name: str
         """
         
         
@@ -126,6 +142,10 @@ class ListFlowLogsRequest:
         self._dst_host = None
         self._src_region_name = None
         self._dst_region_name = None
+        self._src_province_name = None
+        self._dst_province_name = None
+        self._src_city_name = None
+        self._dst_city_name = None
         self.discriminator = None
 
         self.fw_instance_id = fw_instance_id
@@ -162,12 +182,20 @@ class ListFlowLogsRequest:
             self.src_region_name = src_region_name
         if dst_region_name is not None:
             self.dst_region_name = dst_region_name
+        if src_province_name is not None:
+            self.src_province_name = src_province_name
+        if dst_province_name is not None:
+            self.dst_province_name = dst_province_name
+        if src_city_name is not None:
+            self.src_city_name = src_city_name
+        if dst_city_name is not None:
+            self.dst_city_name = dst_city_name
 
     @property
     def fw_instance_id(self):
         """Gets the fw_instance_id of this ListFlowLogsRequest.
 
-        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。
+        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)。
 
         :return: The fw_instance_id of this ListFlowLogsRequest.
         :rtype: str
@@ -178,7 +206,7 @@ class ListFlowLogsRequest:
     def fw_instance_id(self, fw_instance_id):
         """Sets the fw_instance_id of this ListFlowLogsRequest.
 
-        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。
+        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)。
 
         :param fw_instance_id: The fw_instance_id of this ListFlowLogsRequest.
         :type fw_instance_id: str
@@ -189,7 +217,7 @@ class ListFlowLogsRequest:
     def direction(self):
         """Gets the direction of this ListFlowLogsRequest.
 
-        方向
+        方向，包含in2out，out2in
 
         :return: The direction of this ListFlowLogsRequest.
         :rtype: str
@@ -200,7 +228,7 @@ class ListFlowLogsRequest:
     def direction(self, direction):
         """Sets the direction of this ListFlowLogsRequest.
 
-        方向
+        方向，包含in2out，out2in
 
         :param direction: The direction of this ListFlowLogsRequest.
         :type direction: str
@@ -211,7 +239,7 @@ class ListFlowLogsRequest:
     def log_type(self):
         """Gets the log_type of this ListFlowLogsRequest.
 
-        日志类型
+        日志类型包括：internet，vpc，nat
 
         :return: The log_type of this ListFlowLogsRequest.
         :rtype: str
@@ -222,7 +250,7 @@ class ListFlowLogsRequest:
     def log_type(self, log_type):
         """Sets the log_type of this ListFlowLogsRequest.
 
-        日志类型
+        日志类型包括：internet，vpc，nat
 
         :param log_type: The log_type of this ListFlowLogsRequest.
         :type log_type: str
@@ -233,7 +261,7 @@ class ListFlowLogsRequest:
     def start_time(self):
         """Gets the start_time of this ListFlowLogsRequest.
 
-        开始时间
+        开始时间，以毫秒为单位的时间戳，如1718936272648
 
         :return: The start_time of this ListFlowLogsRequest.
         :rtype: int
@@ -244,7 +272,7 @@ class ListFlowLogsRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ListFlowLogsRequest.
 
-        开始时间
+        开始时间，以毫秒为单位的时间戳，如1718936272648
 
         :param start_time: The start_time of this ListFlowLogsRequest.
         :type start_time: int
@@ -255,7 +283,7 @@ class ListFlowLogsRequest:
     def end_time(self):
         """Gets the end_time of this ListFlowLogsRequest.
 
-        结束时间
+        结束时间，以毫秒为单位的时间戳，如1718936272648
 
         :return: The end_time of this ListFlowLogsRequest.
         :rtype: int
@@ -266,7 +294,7 @@ class ListFlowLogsRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ListFlowLogsRequest.
 
-        结束时间
+        结束时间，以毫秒为单位的时间戳，如1718936272648
 
         :param end_time: The end_time of this ListFlowLogsRequest.
         :type end_time: int
@@ -365,7 +393,7 @@ class ListFlowLogsRequest:
     def protocol(self):
         """Gets the protocol of this ListFlowLogsRequest.
 
-        协议类型:TCP为6, UDP为17,ICMP为1,ICMPV6为58,ANY为-1,手动类型不为空，自动类型为空
+        协议类型，包含TCP, UDP,ICMP,ICMPV6等。
 
         :return: The protocol of this ListFlowLogsRequest.
         :rtype: str
@@ -376,7 +404,7 @@ class ListFlowLogsRequest:
     def protocol(self, protocol):
         """Sets the protocol of this ListFlowLogsRequest.
 
-        协议类型:TCP为6, UDP为17,ICMP为1,ICMPV6为58,ANY为-1,手动类型不为空，自动类型为空
+        协议类型，包含TCP, UDP,ICMP,ICMPV6等。
 
         :param protocol: The protocol of this ListFlowLogsRequest.
         :type protocol: str
@@ -409,7 +437,7 @@ class ListFlowLogsRequest:
     def log_id(self):
         """Gets the log_id of this ListFlowLogsRequest.
 
-        文档ID，首页时为null，非首页时不为null
+        文档ID,第一页为空，其他页不为空，其他页可取上一次查询最后一条数据的log_id
 
         :return: The log_id of this ListFlowLogsRequest.
         :rtype: str
@@ -420,7 +448,7 @@ class ListFlowLogsRequest:
     def log_id(self, log_id):
         """Sets the log_id of this ListFlowLogsRequest.
 
-        文档ID，首页时为null，非首页时不为null
+        文档ID,第一页为空，其他页不为空，其他页可取上一次查询最后一条数据的log_id
 
         :param log_id: The log_id of this ListFlowLogsRequest.
         :type log_id: str
@@ -431,7 +459,7 @@ class ListFlowLogsRequest:
     def next_date(self):
         """Gets the next_date of this ListFlowLogsRequest.
 
-        日期，首页时为null，非首页时不为null
+        下个日期，当是第一页时为空，不是第一页时不为空，其他页可取上一次查询最后一条数据的start_time
 
         :return: The next_date of this ListFlowLogsRequest.
         :rtype: int
@@ -442,7 +470,7 @@ class ListFlowLogsRequest:
     def next_date(self, next_date):
         """Sets the next_date of this ListFlowLogsRequest.
 
-        日期，首页时为null，非首页时不为null
+        下个日期，当是第一页时为空，不是第一页时不为空，其他页可取上一次查询最后一条数据的start_time
 
         :param next_date: The next_date of this ListFlowLogsRequest.
         :type next_date: int
@@ -453,7 +481,7 @@ class ListFlowLogsRequest:
     def offset(self):
         """Gets the offset of this ListFlowLogsRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于0，首页时为空，非首页时不为空
 
         :return: The offset of this ListFlowLogsRequest.
         :rtype: int
@@ -464,7 +492,7 @@ class ListFlowLogsRequest:
     def offset(self, offset):
         """Sets the offset of this ListFlowLogsRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于0，首页时为空，非首页时不为空
 
         :param offset: The offset of this ListFlowLogsRequest.
         :type offset: int
@@ -580,6 +608,94 @@ class ListFlowLogsRequest:
         :type dst_region_name: str
         """
         self._dst_region_name = dst_region_name
+
+    @property
+    def src_province_name(self):
+        """Gets the src_province_name of this ListFlowLogsRequest.
+
+        源省份名称
+
+        :return: The src_province_name of this ListFlowLogsRequest.
+        :rtype: str
+        """
+        return self._src_province_name
+
+    @src_province_name.setter
+    def src_province_name(self, src_province_name):
+        """Sets the src_province_name of this ListFlowLogsRequest.
+
+        源省份名称
+
+        :param src_province_name: The src_province_name of this ListFlowLogsRequest.
+        :type src_province_name: str
+        """
+        self._src_province_name = src_province_name
+
+    @property
+    def dst_province_name(self):
+        """Gets the dst_province_name of this ListFlowLogsRequest.
+
+        目的省份名称
+
+        :return: The dst_province_name of this ListFlowLogsRequest.
+        :rtype: str
+        """
+        return self._dst_province_name
+
+    @dst_province_name.setter
+    def dst_province_name(self, dst_province_name):
+        """Sets the dst_province_name of this ListFlowLogsRequest.
+
+        目的省份名称
+
+        :param dst_province_name: The dst_province_name of this ListFlowLogsRequest.
+        :type dst_province_name: str
+        """
+        self._dst_province_name = dst_province_name
+
+    @property
+    def src_city_name(self):
+        """Gets the src_city_name of this ListFlowLogsRequest.
+
+        源城市名称
+
+        :return: The src_city_name of this ListFlowLogsRequest.
+        :rtype: str
+        """
+        return self._src_city_name
+
+    @src_city_name.setter
+    def src_city_name(self, src_city_name):
+        """Sets the src_city_name of this ListFlowLogsRequest.
+
+        源城市名称
+
+        :param src_city_name: The src_city_name of this ListFlowLogsRequest.
+        :type src_city_name: str
+        """
+        self._src_city_name = src_city_name
+
+    @property
+    def dst_city_name(self):
+        """Gets the dst_city_name of this ListFlowLogsRequest.
+
+        目的城市名称
+
+        :return: The dst_city_name of this ListFlowLogsRequest.
+        :rtype: str
+        """
+        return self._dst_city_name
+
+    @dst_city_name.setter
+    def dst_city_name(self, dst_city_name):
+        """Sets the dst_city_name of this ListFlowLogsRequest.
+
+        目的城市名称
+
+        :param dst_city_name: The dst_city_name of this ListFlowLogsRequest.
+        :type dst_city_name: str
+        """
+        self._dst_city_name = dst_city_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

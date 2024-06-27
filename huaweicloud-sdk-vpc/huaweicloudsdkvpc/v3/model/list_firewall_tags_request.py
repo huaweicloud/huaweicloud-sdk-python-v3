@@ -17,20 +17,80 @@ class ListFirewallTagsRequest:
     sensitive_list = []
 
     openapi_types = {
+        'limit': 'int',
+        'offset': 'int'
     }
 
     attribute_map = {
+        'limit': 'limit',
+        'offset': 'offset'
     }
 
-    def __init__(self):
+    def __init__(self, limit=None, offset=None):
         """ListFirewallTagsRequest
 
         The model defined in huaweicloud sdk
 
+        :param limit: 功能说明：查询记录数 取值范围：1-1000 约束：默认为1000
+        :type limit: int
+        :param offset: 功能说明：索引位置， 从第一条数据偏移offset条数据后开始查询 约束：默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数
+        :type offset: int
         """
         
         
+
+        self._limit = None
+        self._offset = None
         self.discriminator = None
+
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
+
+    @property
+    def limit(self):
+        """Gets the limit of this ListFirewallTagsRequest.
+
+        功能说明：查询记录数 取值范围：1-1000 约束：默认为1000
+
+        :return: The limit of this ListFirewallTagsRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListFirewallTagsRequest.
+
+        功能说明：查询记录数 取值范围：1-1000 约束：默认为1000
+
+        :param limit: The limit of this ListFirewallTagsRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def offset(self):
+        """Gets the offset of this ListFirewallTagsRequest.
+
+        功能说明：索引位置， 从第一条数据偏移offset条数据后开始查询 约束：默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数
+
+        :return: The offset of this ListFirewallTagsRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ListFirewallTagsRequest.
+
+        功能说明：索引位置， 从第一条数据偏移offset条数据后开始查询 约束：默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数
+
+        :param offset: The offset of this ListFirewallTagsRequest.
+        :type offset: int
+        """
+        self._offset = offset
 
     def to_dict(self):
         """Returns the model properties as a dict"""

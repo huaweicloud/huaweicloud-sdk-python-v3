@@ -43,13 +43,13 @@ class AddBlackWhiteListDto:
 
         The model defined in huaweicloud sdk
 
-        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用查询防火墙实例接口获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
+        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。
         :type object_id: str
         :param list_type: 黑白名单类型4：黑名单，5：白名单
         :type list_type: int
         :param direction: 地址方向0：源地址1：目的地址
         :type direction: int
-        :param address_type: Ip地址类型 0：ipv4,1:ipv6,2:domain
+        :param address_type: Ip地址类型 0：ipv4,1:ipv6
         :type address_type: int
         :param address: 地址类型
         :type address: str
@@ -87,7 +87,7 @@ class AddBlackWhiteListDto:
     def object_id(self):
         """Gets the object_id of this AddBlackWhiteListDto.
 
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用查询防火墙实例接口获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
+        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。
 
         :return: The object_id of this AddBlackWhiteListDto.
         :rtype: str
@@ -98,7 +98,7 @@ class AddBlackWhiteListDto:
     def object_id(self, object_id):
         """Sets the object_id of this AddBlackWhiteListDto.
 
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用查询防火墙实例接口获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
+        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。
 
         :param object_id: The object_id of this AddBlackWhiteListDto.
         :type object_id: str
@@ -153,7 +153,7 @@ class AddBlackWhiteListDto:
     def address_type(self):
         """Gets the address_type of this AddBlackWhiteListDto.
 
-        Ip地址类型 0：ipv4,1:ipv6,2:domain
+        Ip地址类型 0：ipv4,1:ipv6
 
         :return: The address_type of this AddBlackWhiteListDto.
         :rtype: int
@@ -164,7 +164,7 @@ class AddBlackWhiteListDto:
     def address_type(self, address_type):
         """Sets the address_type of this AddBlackWhiteListDto.
 
-        Ip地址类型 0：ipv4,1:ipv6,2:domain
+        Ip地址类型 0：ipv4,1:ipv6
 
         :param address_type: The address_type of this AddBlackWhiteListDto.
         :type address_type: int

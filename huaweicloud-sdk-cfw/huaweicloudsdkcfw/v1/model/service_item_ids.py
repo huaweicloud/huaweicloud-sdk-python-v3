@@ -17,7 +17,7 @@ class ServiceItemIds:
     sensitive_list = []
 
     openapi_types = {
-        'items': 'list[IdObject]'
+        'items': 'list[ServiceItemIdsItems]'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class ServiceItemIds:
         The model defined in huaweicloud sdk
 
         :param items: 服务组成员id列表
-        :type items: list[:class:`huaweicloudsdkcfw.v1.IdObject`]
+        :type items: list[:class:`huaweicloudsdkcfw.v1.ServiceItemIdsItems`]
         """
         
         
@@ -48,7 +48,7 @@ class ServiceItemIds:
         服务组成员id列表
 
         :return: The items of this ServiceItemIds.
-        :rtype: list[:class:`huaweicloudsdkcfw.v1.IdObject`]
+        :rtype: list[:class:`huaweicloudsdkcfw.v1.ServiceItemIdsItems`]
         """
         return self._items
 
@@ -59,7 +59,7 @@ class ServiceItemIds:
         服务组成员id列表
 
         :param items: The items of this ServiceItemIds.
-        :type items: list[:class:`huaweicloudsdkcfw.v1.IdObject`]
+        :type items: list[:class:`huaweicloudsdkcfw.v1.ServiceItemIdsItems`]
         """
         self._items = items
 

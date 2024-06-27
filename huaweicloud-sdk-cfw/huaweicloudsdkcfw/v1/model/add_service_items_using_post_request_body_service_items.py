@@ -17,83 +17,47 @@ class AddServiceItemsUsingPOSTRequestBodyServiceItems:
     sensitive_list = []
 
     openapi_types = {
-        'item_id': 'str',
         'protocol': 'int',
         'source_port': 'str',
         'dest_port': 'str',
-        'name': 'str',
         'description': 'str'
     }
 
     attribute_map = {
-        'item_id': 'item_id',
         'protocol': 'protocol',
         'source_port': 'source_port',
         'dest_port': 'dest_port',
-        'name': 'name',
         'description': 'description'
     }
 
-    def __init__(self, item_id=None, protocol=None, source_port=None, dest_port=None, name=None, description=None):
+    def __init__(self, protocol=None, source_port=None, dest_port=None, description=None):
         """AddServiceItemsUsingPOSTRequestBodyServiceItems
 
         The model defined in huaweicloud sdk
 
-        :param item_id: 服务成员id
-        :type item_id: str
         :param protocol: 协议类型:TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1，手动类型不为空，自动类型为空
         :type protocol: int
         :param source_port: 源端口
         :type source_port: str
         :param dest_port: 目的端口
         :type dest_port: str
-        :param name: 服务成员名称
-        :type name: str
         :param description: 服务成员描述
         :type description: str
         """
         
         
 
-        self._item_id = None
         self._protocol = None
         self._source_port = None
         self._dest_port = None
-        self._name = None
         self._description = None
         self.discriminator = None
 
-        if item_id is not None:
-            self.item_id = item_id
         self.protocol = protocol
         self.source_port = source_port
         self.dest_port = dest_port
-        if name is not None:
-            self.name = name
         if description is not None:
             self.description = description
-
-    @property
-    def item_id(self):
-        """Gets the item_id of this AddServiceItemsUsingPOSTRequestBodyServiceItems.
-
-        服务成员id
-
-        :return: The item_id of this AddServiceItemsUsingPOSTRequestBodyServiceItems.
-        :rtype: str
-        """
-        return self._item_id
-
-    @item_id.setter
-    def item_id(self, item_id):
-        """Sets the item_id of this AddServiceItemsUsingPOSTRequestBodyServiceItems.
-
-        服务成员id
-
-        :param item_id: The item_id of this AddServiceItemsUsingPOSTRequestBodyServiceItems.
-        :type item_id: str
-        """
-        self._item_id = item_id
 
     @property
     def protocol(self):
@@ -160,28 +124,6 @@ class AddServiceItemsUsingPOSTRequestBodyServiceItems:
         :type dest_port: str
         """
         self._dest_port = dest_port
-
-    @property
-    def name(self):
-        """Gets the name of this AddServiceItemsUsingPOSTRequestBodyServiceItems.
-
-        服务成员名称
-
-        :return: The name of this AddServiceItemsUsingPOSTRequestBodyServiceItems.
-        :rtype: str
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        """Sets the name of this AddServiceItemsUsingPOSTRequestBodyServiceItems.
-
-        服务成员名称
-
-        :param name: The name of this AddServiceItemsUsingPOSTRequestBodyServiceItems.
-        :type name: str
-        """
-        self._name = name
 
     @property
     def description(self):

@@ -45,7 +45,7 @@ class BlackWhiteListResponseDataRecords:
         :type list_id: str
         :param direction: 黑白地址方向0：源地址1：目的地址
         :type direction: int
-        :param address_type: IP地址类型0：ipv4,1:ipv6,2:domain
+        :param address_type: IP地址类型0：ipv4,1:ipv6
         :type address_type: int
         :param address: ip地址
         :type address: str
@@ -131,7 +131,7 @@ class BlackWhiteListResponseDataRecords:
     def address_type(self):
         """Gets the address_type of this BlackWhiteListResponseDataRecords.
 
-        IP地址类型0：ipv4,1:ipv6,2:domain
+        IP地址类型0：ipv4,1:ipv6
 
         :return: The address_type of this BlackWhiteListResponseDataRecords.
         :rtype: int
@@ -142,7 +142,7 @@ class BlackWhiteListResponseDataRecords:
     def address_type(self, address_type):
         """Sets the address_type of this BlackWhiteListResponseDataRecords.
 
-        IP地址类型0：ipv4,1:ipv6,2:domain
+        IP地址类型0：ipv4,1:ipv6
 
         :param address_type: The address_type of this BlackWhiteListResponseDataRecords.
         :type address_type: int

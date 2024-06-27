@@ -43,8 +43,7 @@ class UpdateDnsServersRequestBody:
         self._health_check_domain_name = None
         self.discriminator = None
 
-        if dns_server is not None:
-            self.dns_server = dns_server
+        self.dns_server = dns_server
         if health_check_domain_name is not None:
             self.health_check_domain_name = health_check_domain_name
 

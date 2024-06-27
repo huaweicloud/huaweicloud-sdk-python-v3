@@ -53,7 +53,7 @@ class EndpointService:
         :type created_at: datetime
         :param is_charge: 连接该终端节点服务的终端节点是否计费。  - true：计费  - false：不计费
         :type is_charge: bool
-        :param enable_policy: 是否开启终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false 是否开启终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false
+        :param enable_policy: 是否允许自定义终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false
         :type enable_policy: bool
         """
         
@@ -219,7 +219,7 @@ class EndpointService:
     def enable_policy(self):
         """Gets the enable_policy of this EndpointService.
 
-        是否开启终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false 是否开启终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false
+        是否允许自定义终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false
 
         :return: The enable_policy of this EndpointService.
         :rtype: bool
@@ -230,7 +230,7 @@ class EndpointService:
     def enable_policy(self, enable_policy):
         """Sets the enable_policy of this EndpointService.
 
-        是否开启终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false 是否开启终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false
+        是否允许自定义终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false
 
         :param enable_policy: The enable_policy of this EndpointService.
         :type enable_policy: bool

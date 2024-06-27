@@ -20,7 +20,7 @@ class ListDomainParseDetailRequest:
         'domain_name': 'str',
         'enterprise_project_id': 'str',
         'fw_instance_id': 'str',
-        'address_type': 'str'
+        'address_type': 'int'
     }
 
     attribute_map = {
@@ -39,10 +39,10 @@ class ListDomainParseDetailRequest:
         :type domain_name: str
         :param enterprise_project_id: 企业项目id，用户支持企业项目后，由企业项目生成的id。
         :type enterprise_project_id: str
-        :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。默认情况下，fw_instance_Id为空时，返回帐号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
+        :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，默认情况下，fw_instance_Id为空时，返回账号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
         :type fw_instance_id: str
-        :param address_type: 地址类型，0 ipv4,1 ipv6,2 domain
-        :type address_type: str
+        :param address_type: 地址类型，0 ipv4,1 ipv6
+        :type address_type: int
         """
         
         
@@ -109,7 +109,7 @@ class ListDomainParseDetailRequest:
     def fw_instance_id(self):
         """Gets the fw_instance_id of this ListDomainParseDetailRequest.
 
-        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。默认情况下，fw_instance_Id为空时，返回帐号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
+        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，默认情况下，fw_instance_Id为空时，返回账号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
 
         :return: The fw_instance_id of this ListDomainParseDetailRequest.
         :rtype: str
@@ -120,7 +120,7 @@ class ListDomainParseDetailRequest:
     def fw_instance_id(self, fw_instance_id):
         """Sets the fw_instance_id of this ListDomainParseDetailRequest.
 
-        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。默认情况下，fw_instance_Id为空时，返回帐号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
+        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，默认情况下，fw_instance_Id为空时，返回账号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
 
         :param fw_instance_id: The fw_instance_id of this ListDomainParseDetailRequest.
         :type fw_instance_id: str
@@ -131,10 +131,10 @@ class ListDomainParseDetailRequest:
     def address_type(self):
         """Gets the address_type of this ListDomainParseDetailRequest.
 
-        地址类型，0 ipv4,1 ipv6,2 domain
+        地址类型，0 ipv4,1 ipv6
 
         :return: The address_type of this ListDomainParseDetailRequest.
-        :rtype: str
+        :rtype: int
         """
         return self._address_type
 
@@ -142,10 +142,10 @@ class ListDomainParseDetailRequest:
     def address_type(self, address_type):
         """Sets the address_type of this ListDomainParseDetailRequest.
 
-        地址类型，0 ipv4,1 ipv6,2 domain
+        地址类型，0 ipv4,1 ipv6
 
         :param address_type: The address_type of this ListDomainParseDetailRequest.
-        :type address_type: str
+        :type address_type: int
         """
         self._address_type = address_type
 

@@ -21,7 +21,6 @@ class ServiceItemListResponseDtoDataRecords:
         'protocol': 'int',
         'source_port': 'str',
         'dest_port': 'str',
-        'name': 'str',
         'description': 'str'
     }
 
@@ -30,11 +29,10 @@ class ServiceItemListResponseDtoDataRecords:
         'protocol': 'protocol',
         'source_port': 'source_port',
         'dest_port': 'dest_port',
-        'name': 'name',
         'description': 'description'
     }
 
-    def __init__(self, item_id=None, protocol=None, source_port=None, dest_port=None, name=None, description=None):
+    def __init__(self, item_id=None, protocol=None, source_port=None, dest_port=None, description=None):
         """ServiceItemListResponseDtoDataRecords
 
         The model defined in huaweicloud sdk
@@ -47,8 +45,6 @@ class ServiceItemListResponseDtoDataRecords:
         :type source_port: str
         :param dest_port: 目的端口
         :type dest_port: str
-        :param name: 服务成员名称
-        :type name: str
         :param description: 服务成员描述
         :type description: str
         """
@@ -59,7 +55,6 @@ class ServiceItemListResponseDtoDataRecords:
         self._protocol = None
         self._source_port = None
         self._dest_port = None
-        self._name = None
         self._description = None
         self.discriminator = None
 
@@ -71,8 +66,6 @@ class ServiceItemListResponseDtoDataRecords:
             self.source_port = source_port
         if dest_port is not None:
             self.dest_port = dest_port
-        if name is not None:
-            self.name = name
         if description is not None:
             self.description = description
 
@@ -163,28 +156,6 @@ class ServiceItemListResponseDtoDataRecords:
         :type dest_port: str
         """
         self._dest_port = dest_port
-
-    @property
-    def name(self):
-        """Gets the name of this ServiceItemListResponseDtoDataRecords.
-
-        服务成员名称
-
-        :return: The name of this ServiceItemListResponseDtoDataRecords.
-        :rtype: str
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        """Sets the name of this ServiceItemListResponseDtoDataRecords.
-
-        服务成员名称
-
-        :param name: The name of this ServiceItemListResponseDtoDataRecords.
-        :type name: str
-        """
-        self._name = name
 
     @property
     def description(self):

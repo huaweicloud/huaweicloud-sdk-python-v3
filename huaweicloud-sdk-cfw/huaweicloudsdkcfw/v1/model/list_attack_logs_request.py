@@ -35,13 +35,16 @@ class ListAttackLogsRequest:
         'attack_type': 'str',
         'attack_rule': 'str',
         'level': 'str',
-        'source': 'str',
         'enterprise_project_id': 'str',
         'dst_host': 'str',
         'log_type': 'str',
         'attack_rule_id': 'str',
         'src_region_name': 'str',
-        'dst_region_name': 'str'
+        'dst_region_name': 'str',
+        'src_province_name': 'str',
+        'dst_province_name': 'str',
+        'src_city_name': 'str',
+        'dst_city_name': 'str'
     }
 
     attribute_map = {
@@ -63,23 +66,26 @@ class ListAttackLogsRequest:
         'attack_type': 'attack_type',
         'attack_rule': 'attack_rule',
         'level': 'level',
-        'source': 'source',
         'enterprise_project_id': 'enterprise_project_id',
         'dst_host': 'dst_host',
         'log_type': 'log_type',
         'attack_rule_id': 'attack_rule_id',
         'src_region_name': 'src_region_name',
-        'dst_region_name': 'dst_region_name'
+        'dst_region_name': 'dst_region_name',
+        'src_province_name': 'src_province_name',
+        'dst_province_name': 'dst_province_name',
+        'src_city_name': 'src_city_name',
+        'dst_city_name': 'dst_city_name'
     }
 
-    def __init__(self, start_time=None, end_time=None, src_ip=None, src_port=None, dst_ip=None, dst_port=None, protocol=None, app=None, log_id=None, next_date=None, offset=None, limit=None, fw_instance_id=None, action=None, direction=None, attack_type=None, attack_rule=None, level=None, source=None, enterprise_project_id=None, dst_host=None, log_type=None, attack_rule_id=None, src_region_name=None, dst_region_name=None):
+    def __init__(self, start_time=None, end_time=None, src_ip=None, src_port=None, dst_ip=None, dst_port=None, protocol=None, app=None, log_id=None, next_date=None, offset=None, limit=None, fw_instance_id=None, action=None, direction=None, attack_type=None, attack_rule=None, level=None, enterprise_project_id=None, dst_host=None, log_type=None, attack_rule_id=None, src_region_name=None, dst_region_name=None, src_province_name=None, dst_province_name=None, src_city_name=None, dst_city_name=None):
         """ListAttackLogsRequest
 
         The model defined in huaweicloud sdk
 
-        :param start_time: 开始时间
+        :param start_time: 开始时间，以毫秒为单位的时间戳，如1718936272648
         :type start_time: int
-        :param end_time: 结束时间
+        :param end_time: 结束时间，以毫秒为单位的时间戳，如1718936272648
         :type end_time: int
         :param src_ip: 源IP
         :type src_ip: str
@@ -89,37 +95,35 @@ class ListAttackLogsRequest:
         :type dst_ip: str
         :param dst_port: 目的端口号
         :type dst_port: int
-        :param protocol: 协议类型:TCP为6, UDP为17,ICMP为1,ICMPV6为58,ANY为-1,手动类型不为空，自动类型为空
+        :param protocol: 协议类型，包含TCP, UDP,ICMP,ICMPV6等。
         :type protocol: str
         :param app: 应用协议
         :type app: str
-        :param log_id: 日志ID，当是第一页时为空，不是第一页时不为空
+        :param log_id: 文档ID,第一页为空，其他页不为空，其他页可取上一次查询最后一条数据的log_id
         :type log_id: str
-        :param next_date: 下个日期，当是第一页时为空，不是第一页时不为空
+        :param next_date: 下个日期，当是第一页时为空，不是第一页时不为空，其他页可取上一次查询最后一条数据的event_time
         :type next_date: int
-        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于0，首页时为空，非首页时不为空
         :type offset: int
         :param limit: 每页显示个数，范围为1-1024
         :type limit: int
-        :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。
+        :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)。
         :type fw_instance_id: str
-        :param action: 动作0：permit,1：deny
+        :param action: 动作包含permit，deny
         :type action: str
-        :param direction: 方向0：外到内1：内到外
+        :param direction: 方向，包含in2out，out2in
         :type direction: str
         :param attack_type: 入侵事件类型
         :type attack_type: str
         :param attack_rule: 入侵事件规则
         :type attack_rule: str
-        :param level: 威胁等级
+        :param level: 威胁等级，包括CRITICAL、HIGH、MEDIUM、LOW
         :type level: str
-        :param source: 判断来源
-        :type source: str
         :param enterprise_project_id: 企业项目id，用户支持企业项目后，由企业项目生成的id。
         :type enterprise_project_id: str
         :param dst_host: 目标主机
         :type dst_host: str
-        :param log_type: 日志类型
+        :param log_type: 日志类型包括：internet，vpc，nat
         :type log_type: str
         :param attack_rule_id: 入侵事件id
         :type attack_rule_id: str
@@ -127,6 +131,14 @@ class ListAttackLogsRequest:
         :type src_region_name: str
         :param dst_region_name: 目的region名称
         :type dst_region_name: str
+        :param src_province_name: 源省份名称
+        :type src_province_name: str
+        :param dst_province_name: 目的省份名称
+        :type dst_province_name: str
+        :param src_city_name: 源城市名称
+        :type src_city_name: str
+        :param dst_city_name: 目的城市名称
+        :type dst_city_name: str
         """
         
         
@@ -149,13 +161,16 @@ class ListAttackLogsRequest:
         self._attack_type = None
         self._attack_rule = None
         self._level = None
-        self._source = None
         self._enterprise_project_id = None
         self._dst_host = None
         self._log_type = None
         self._attack_rule_id = None
         self._src_region_name = None
         self._dst_region_name = None
+        self._src_province_name = None
+        self._dst_province_name = None
+        self._src_city_name = None
+        self._dst_city_name = None
         self.discriminator = None
 
         self.start_time = start_time
@@ -190,8 +205,6 @@ class ListAttackLogsRequest:
             self.attack_rule = attack_rule
         if level is not None:
             self.level = level
-        if source is not None:
-            self.source = source
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if dst_host is not None:
@@ -204,12 +217,20 @@ class ListAttackLogsRequest:
             self.src_region_name = src_region_name
         if dst_region_name is not None:
             self.dst_region_name = dst_region_name
+        if src_province_name is not None:
+            self.src_province_name = src_province_name
+        if dst_province_name is not None:
+            self.dst_province_name = dst_province_name
+        if src_city_name is not None:
+            self.src_city_name = src_city_name
+        if dst_city_name is not None:
+            self.dst_city_name = dst_city_name
 
     @property
     def start_time(self):
         """Gets the start_time of this ListAttackLogsRequest.
 
-        开始时间
+        开始时间，以毫秒为单位的时间戳，如1718936272648
 
         :return: The start_time of this ListAttackLogsRequest.
         :rtype: int
@@ -220,7 +241,7 @@ class ListAttackLogsRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ListAttackLogsRequest.
 
-        开始时间
+        开始时间，以毫秒为单位的时间戳，如1718936272648
 
         :param start_time: The start_time of this ListAttackLogsRequest.
         :type start_time: int
@@ -231,7 +252,7 @@ class ListAttackLogsRequest:
     def end_time(self):
         """Gets the end_time of this ListAttackLogsRequest.
 
-        结束时间
+        结束时间，以毫秒为单位的时间戳，如1718936272648
 
         :return: The end_time of this ListAttackLogsRequest.
         :rtype: int
@@ -242,7 +263,7 @@ class ListAttackLogsRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ListAttackLogsRequest.
 
-        结束时间
+        结束时间，以毫秒为单位的时间戳，如1718936272648
 
         :param end_time: The end_time of this ListAttackLogsRequest.
         :type end_time: int
@@ -341,7 +362,7 @@ class ListAttackLogsRequest:
     def protocol(self):
         """Gets the protocol of this ListAttackLogsRequest.
 
-        协议类型:TCP为6, UDP为17,ICMP为1,ICMPV6为58,ANY为-1,手动类型不为空，自动类型为空
+        协议类型，包含TCP, UDP,ICMP,ICMPV6等。
 
         :return: The protocol of this ListAttackLogsRequest.
         :rtype: str
@@ -352,7 +373,7 @@ class ListAttackLogsRequest:
     def protocol(self, protocol):
         """Sets the protocol of this ListAttackLogsRequest.
 
-        协议类型:TCP为6, UDP为17,ICMP为1,ICMPV6为58,ANY为-1,手动类型不为空，自动类型为空
+        协议类型，包含TCP, UDP,ICMP,ICMPV6等。
 
         :param protocol: The protocol of this ListAttackLogsRequest.
         :type protocol: str
@@ -385,7 +406,7 @@ class ListAttackLogsRequest:
     def log_id(self):
         """Gets the log_id of this ListAttackLogsRequest.
 
-        日志ID，当是第一页时为空，不是第一页时不为空
+        文档ID,第一页为空，其他页不为空，其他页可取上一次查询最后一条数据的log_id
 
         :return: The log_id of this ListAttackLogsRequest.
         :rtype: str
@@ -396,7 +417,7 @@ class ListAttackLogsRequest:
     def log_id(self, log_id):
         """Sets the log_id of this ListAttackLogsRequest.
 
-        日志ID，当是第一页时为空，不是第一页时不为空
+        文档ID,第一页为空，其他页不为空，其他页可取上一次查询最后一条数据的log_id
 
         :param log_id: The log_id of this ListAttackLogsRequest.
         :type log_id: str
@@ -407,7 +428,7 @@ class ListAttackLogsRequest:
     def next_date(self):
         """Gets the next_date of this ListAttackLogsRequest.
 
-        下个日期，当是第一页时为空，不是第一页时不为空
+        下个日期，当是第一页时为空，不是第一页时不为空，其他页可取上一次查询最后一条数据的event_time
 
         :return: The next_date of this ListAttackLogsRequest.
         :rtype: int
@@ -418,7 +439,7 @@ class ListAttackLogsRequest:
     def next_date(self, next_date):
         """Sets the next_date of this ListAttackLogsRequest.
 
-        下个日期，当是第一页时为空，不是第一页时不为空
+        下个日期，当是第一页时为空，不是第一页时不为空，其他页可取上一次查询最后一条数据的event_time
 
         :param next_date: The next_date of this ListAttackLogsRequest.
         :type next_date: int
@@ -429,7 +450,7 @@ class ListAttackLogsRequest:
     def offset(self):
         """Gets the offset of this ListAttackLogsRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于0，首页时为空，非首页时不为空
 
         :return: The offset of this ListAttackLogsRequest.
         :rtype: int
@@ -440,7 +461,7 @@ class ListAttackLogsRequest:
     def offset(self, offset):
         """Sets the offset of this ListAttackLogsRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于0，首页时为空，非首页时不为空
 
         :param offset: The offset of this ListAttackLogsRequest.
         :type offset: int
@@ -473,7 +494,7 @@ class ListAttackLogsRequest:
     def fw_instance_id(self):
         """Gets the fw_instance_id of this ListAttackLogsRequest.
 
-        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。
+        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)。
 
         :return: The fw_instance_id of this ListAttackLogsRequest.
         :rtype: str
@@ -484,7 +505,7 @@ class ListAttackLogsRequest:
     def fw_instance_id(self, fw_instance_id):
         """Sets the fw_instance_id of this ListAttackLogsRequest.
 
-        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。
+        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)。
 
         :param fw_instance_id: The fw_instance_id of this ListAttackLogsRequest.
         :type fw_instance_id: str
@@ -495,7 +516,7 @@ class ListAttackLogsRequest:
     def action(self):
         """Gets the action of this ListAttackLogsRequest.
 
-        动作0：permit,1：deny
+        动作包含permit，deny
 
         :return: The action of this ListAttackLogsRequest.
         :rtype: str
@@ -506,7 +527,7 @@ class ListAttackLogsRequest:
     def action(self, action):
         """Sets the action of this ListAttackLogsRequest.
 
-        动作0：permit,1：deny
+        动作包含permit，deny
 
         :param action: The action of this ListAttackLogsRequest.
         :type action: str
@@ -517,7 +538,7 @@ class ListAttackLogsRequest:
     def direction(self):
         """Gets the direction of this ListAttackLogsRequest.
 
-        方向0：外到内1：内到外
+        方向，包含in2out，out2in
 
         :return: The direction of this ListAttackLogsRequest.
         :rtype: str
@@ -528,7 +549,7 @@ class ListAttackLogsRequest:
     def direction(self, direction):
         """Sets the direction of this ListAttackLogsRequest.
 
-        方向0：外到内1：内到外
+        方向，包含in2out，out2in
 
         :param direction: The direction of this ListAttackLogsRequest.
         :type direction: str
@@ -583,7 +604,7 @@ class ListAttackLogsRequest:
     def level(self):
         """Gets the level of this ListAttackLogsRequest.
 
-        威胁等级
+        威胁等级，包括CRITICAL、HIGH、MEDIUM、LOW
 
         :return: The level of this ListAttackLogsRequest.
         :rtype: str
@@ -594,34 +615,12 @@ class ListAttackLogsRequest:
     def level(self, level):
         """Sets the level of this ListAttackLogsRequest.
 
-        威胁等级
+        威胁等级，包括CRITICAL、HIGH、MEDIUM、LOW
 
         :param level: The level of this ListAttackLogsRequest.
         :type level: str
         """
         self._level = level
-
-    @property
-    def source(self):
-        """Gets the source of this ListAttackLogsRequest.
-
-        判断来源
-
-        :return: The source of this ListAttackLogsRequest.
-        :rtype: str
-        """
-        return self._source
-
-    @source.setter
-    def source(self, source):
-        """Sets the source of this ListAttackLogsRequest.
-
-        判断来源
-
-        :param source: The source of this ListAttackLogsRequest.
-        :type source: str
-        """
-        self._source = source
 
     @property
     def enterprise_project_id(self):
@@ -671,7 +670,7 @@ class ListAttackLogsRequest:
     def log_type(self):
         """Gets the log_type of this ListAttackLogsRequest.
 
-        日志类型
+        日志类型包括：internet，vpc，nat
 
         :return: The log_type of this ListAttackLogsRequest.
         :rtype: str
@@ -682,7 +681,7 @@ class ListAttackLogsRequest:
     def log_type(self, log_type):
         """Sets the log_type of this ListAttackLogsRequest.
 
-        日志类型
+        日志类型包括：internet，vpc，nat
 
         :param log_type: The log_type of this ListAttackLogsRequest.
         :type log_type: str
@@ -754,6 +753,94 @@ class ListAttackLogsRequest:
         :type dst_region_name: str
         """
         self._dst_region_name = dst_region_name
+
+    @property
+    def src_province_name(self):
+        """Gets the src_province_name of this ListAttackLogsRequest.
+
+        源省份名称
+
+        :return: The src_province_name of this ListAttackLogsRequest.
+        :rtype: str
+        """
+        return self._src_province_name
+
+    @src_province_name.setter
+    def src_province_name(self, src_province_name):
+        """Sets the src_province_name of this ListAttackLogsRequest.
+
+        源省份名称
+
+        :param src_province_name: The src_province_name of this ListAttackLogsRequest.
+        :type src_province_name: str
+        """
+        self._src_province_name = src_province_name
+
+    @property
+    def dst_province_name(self):
+        """Gets the dst_province_name of this ListAttackLogsRequest.
+
+        目的省份名称
+
+        :return: The dst_province_name of this ListAttackLogsRequest.
+        :rtype: str
+        """
+        return self._dst_province_name
+
+    @dst_province_name.setter
+    def dst_province_name(self, dst_province_name):
+        """Sets the dst_province_name of this ListAttackLogsRequest.
+
+        目的省份名称
+
+        :param dst_province_name: The dst_province_name of this ListAttackLogsRequest.
+        :type dst_province_name: str
+        """
+        self._dst_province_name = dst_province_name
+
+    @property
+    def src_city_name(self):
+        """Gets the src_city_name of this ListAttackLogsRequest.
+
+        源城市名称
+
+        :return: The src_city_name of this ListAttackLogsRequest.
+        :rtype: str
+        """
+        return self._src_city_name
+
+    @src_city_name.setter
+    def src_city_name(self, src_city_name):
+        """Sets the src_city_name of this ListAttackLogsRequest.
+
+        源城市名称
+
+        :param src_city_name: The src_city_name of this ListAttackLogsRequest.
+        :type src_city_name: str
+        """
+        self._src_city_name = src_city_name
+
+    @property
+    def dst_city_name(self):
+        """Gets the dst_city_name of this ListAttackLogsRequest.
+
+        目的城市名称
+
+        :return: The dst_city_name of this ListAttackLogsRequest.
+        :rtype: str
+        """
+        return self._dst_city_name
+
+    @dst_city_name.setter
+    def dst_city_name(self, dst_city_name):
+        """Sets the dst_city_name of this ListAttackLogsRequest.
+
+        目的城市名称
+
+        :param dst_city_name: The dst_city_name of this ListAttackLogsRequest.
+        :type dst_city_name: str
+        """
+        self._dst_city_name = dst_city_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

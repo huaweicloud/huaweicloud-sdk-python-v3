@@ -22,8 +22,6 @@ class UpdateBlackWhiteListDto:
         'address': 'str',
         'protocol': 'int',
         'port': 'str',
-        'list_type': 'int',
-        'object_id': 'str',
         'description': 'str'
     }
 
@@ -33,19 +31,17 @@ class UpdateBlackWhiteListDto:
         'address': 'address',
         'protocol': 'protocol',
         'port': 'port',
-        'list_type': 'list_type',
-        'object_id': 'object_id',
         'description': 'description'
     }
 
-    def __init__(self, direction=None, address_type=None, address=None, protocol=None, port=None, list_type=None, object_id=None, description=None):
+    def __init__(self, direction=None, address_type=None, address=None, protocol=None, port=None, description=None):
         """UpdateBlackWhiteListDto
 
         The model defined in huaweicloud sdk
 
         :param direction: 地址方向0：源地址1：目的地址
         :type direction: int
-        :param address_type: 地址类型0：ipv4,1:ipv6,2:domain
+        :param address_type: 地址类型0：ipv4,1:ipv6
         :type address_type: int
         :param address: ip地址
         :type address: str
@@ -53,10 +49,6 @@ class UpdateBlackWhiteListDto:
         :type protocol: int
         :param port: 端口
         :type port: str
-        :param list_type: 黑白名单类型4：黑名单，5：白名单
-        :type list_type: int
-        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用查询防火墙实例接口获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
-        :type object_id: str
         :param description: 描述
         :type description: str
         """
@@ -68,8 +60,6 @@ class UpdateBlackWhiteListDto:
         self._address = None
         self._protocol = None
         self._port = None
-        self._list_type = None
-        self._object_id = None
         self._description = None
         self.discriminator = None
 
@@ -77,16 +67,11 @@ class UpdateBlackWhiteListDto:
             self.direction = direction
         if address_type is not None:
             self.address_type = address_type
-        if address is not None:
-            self.address = address
+        self.address = address
         if protocol is not None:
             self.protocol = protocol
         if port is not None:
             self.port = port
-        if list_type is not None:
-            self.list_type = list_type
-        if object_id is not None:
-            self.object_id = object_id
         if description is not None:
             self.description = description
 
@@ -116,7 +101,7 @@ class UpdateBlackWhiteListDto:
     def address_type(self):
         """Gets the address_type of this UpdateBlackWhiteListDto.
 
-        地址类型0：ipv4,1:ipv6,2:domain
+        地址类型0：ipv4,1:ipv6
 
         :return: The address_type of this UpdateBlackWhiteListDto.
         :rtype: int
@@ -127,7 +112,7 @@ class UpdateBlackWhiteListDto:
     def address_type(self, address_type):
         """Sets the address_type of this UpdateBlackWhiteListDto.
 
-        地址类型0：ipv4,1:ipv6,2:domain
+        地址类型0：ipv4,1:ipv6
 
         :param address_type: The address_type of this UpdateBlackWhiteListDto.
         :type address_type: int
@@ -199,50 +184,6 @@ class UpdateBlackWhiteListDto:
         :type port: str
         """
         self._port = port
-
-    @property
-    def list_type(self):
-        """Gets the list_type of this UpdateBlackWhiteListDto.
-
-        黑白名单类型4：黑名单，5：白名单
-
-        :return: The list_type of this UpdateBlackWhiteListDto.
-        :rtype: int
-        """
-        return self._list_type
-
-    @list_type.setter
-    def list_type(self, list_type):
-        """Sets the list_type of this UpdateBlackWhiteListDto.
-
-        黑白名单类型4：黑名单，5：白名单
-
-        :param list_type: The list_type of this UpdateBlackWhiteListDto.
-        :type list_type: int
-        """
-        self._list_type = list_type
-
-    @property
-    def object_id(self):
-        """Gets the object_id of this UpdateBlackWhiteListDto.
-
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用查询防火墙实例接口获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
-
-        :return: The object_id of this UpdateBlackWhiteListDto.
-        :rtype: str
-        """
-        return self._object_id
-
-    @object_id.setter
-    def object_id(self, object_id):
-        """Sets the object_id of this UpdateBlackWhiteListDto.
-
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用查询防火墙实例接口获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
-
-        :param object_id: The object_id of this UpdateBlackWhiteListDto.
-        :type object_id: str
-        """
-        self._object_id = object_id
 
     @property
     def description(self):

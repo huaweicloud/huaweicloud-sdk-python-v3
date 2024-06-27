@@ -23,8 +23,8 @@ class DeployStackSetRequestBody:
         'template_uri': 'str',
         'vars_uri': 'str',
         'vars_body': 'str',
-        'var_overrides': 'VarOverridesPrimitiveTypeHolderVarOverrides',
-        'operation_preferences': 'OperationPreferences'
+        'operation_preferences': 'OperationPreferences',
+        'call_identity': 'str'
     }
 
     attribute_map = {
@@ -34,11 +34,11 @@ class DeployStackSetRequestBody:
         'template_uri': 'template_uri',
         'vars_uri': 'vars_uri',
         'vars_body': 'vars_body',
-        'var_overrides': 'var_overrides',
-        'operation_preferences': 'operation_preferences'
+        'operation_preferences': 'operation_preferences',
+        'call_identity': 'call_identity'
     }
 
-    def __init__(self, stack_set_id=None, deployment_targets=None, template_body=None, template_uri=None, vars_uri=None, vars_body=None, var_overrides=None, operation_preferences=None):
+    def __init__(self, stack_set_id=None, deployment_targets=None, template_body=None, template_uri=None, vars_uri=None, vars_body=None, operation_preferences=None, call_identity=None):
         """DeployStackSetRequestBody
 
         The model defined in huaweicloud sdk
@@ -55,10 +55,10 @@ class DeployStackSetRequestBody:
         :type vars_uri: str
         :param vars_body: HCL参数文件的内容。HCL模板支持参数传入，即，同一个模板可以给予不同的参数而达到不同的效果。  * vars_body使用HCL的tfvars格式，用户可以将“.tfvars”中的内容提交到vars_body中  * 资源编排服务支持vars_body和vars_uri，如果以上两种方式中声名了同一个变量，将报错400  * 如果vars_body过大，可以使用vars_uri  * 资源栈集不支持敏感数据加密，资源编排服务会直接明文使用、log、展示、存储对应的vars_body。
         :type vars_body: str
-        :param var_overrides: 
-        :type var_overrides: :class:`huaweicloudsdkaos.v1.VarOverridesPrimitiveTypeHolderVarOverrides`
         :param operation_preferences: 
         :type operation_preferences: :class:`huaweicloudsdkaos.v1.OperationPreferences`
+        :param call_identity: 仅支持资源栈集权限模式为SERVICE_MANAGED时指定该参数。用于指定用户是以组织管理账号还是成员帐户中的服务委托管理员身份调用资源栈集。默认为SELF。 当资源栈集权限模式为SELF_MANAGED时，默认为SELF。 * 无论指定何种用户身份，涉及操作的资源栈集始终在组织管理账号名下。*   * &#x60;SELF&#x60; - 以组织管理账号身份调用。   * &#x60;DELEGATED_ADMIN&#x60; - 以服务委托管理员身份调用。用户的华为云账号必须在组织中已经被注册为”资源编排资源栈集服务“的委托管理员。
+        :type call_identity: str
         """
         
         
@@ -69,8 +69,8 @@ class DeployStackSetRequestBody:
         self._template_uri = None
         self._vars_uri = None
         self._vars_body = None
-        self._var_overrides = None
         self._operation_preferences = None
+        self._call_identity = None
         self.discriminator = None
 
         if stack_set_id is not None:
@@ -84,10 +84,10 @@ class DeployStackSetRequestBody:
             self.vars_uri = vars_uri
         if vars_body is not None:
             self.vars_body = vars_body
-        if var_overrides is not None:
-            self.var_overrides = var_overrides
         if operation_preferences is not None:
             self.operation_preferences = operation_preferences
+        if call_identity is not None:
+            self.call_identity = call_identity
 
     @property
     def stack_set_id(self):
@@ -218,24 +218,6 @@ class DeployStackSetRequestBody:
         self._vars_body = vars_body
 
     @property
-    def var_overrides(self):
-        """Gets the var_overrides of this DeployStackSetRequestBody.
-
-        :return: The var_overrides of this DeployStackSetRequestBody.
-        :rtype: :class:`huaweicloudsdkaos.v1.VarOverridesPrimitiveTypeHolderVarOverrides`
-        """
-        return self._var_overrides
-
-    @var_overrides.setter
-    def var_overrides(self, var_overrides):
-        """Sets the var_overrides of this DeployStackSetRequestBody.
-
-        :param var_overrides: The var_overrides of this DeployStackSetRequestBody.
-        :type var_overrides: :class:`huaweicloudsdkaos.v1.VarOverridesPrimitiveTypeHolderVarOverrides`
-        """
-        self._var_overrides = var_overrides
-
-    @property
     def operation_preferences(self):
         """Gets the operation_preferences of this DeployStackSetRequestBody.
 
@@ -252,6 +234,28 @@ class DeployStackSetRequestBody:
         :type operation_preferences: :class:`huaweicloudsdkaos.v1.OperationPreferences`
         """
         self._operation_preferences = operation_preferences
+
+    @property
+    def call_identity(self):
+        """Gets the call_identity of this DeployStackSetRequestBody.
+
+        仅支持资源栈集权限模式为SERVICE_MANAGED时指定该参数。用于指定用户是以组织管理账号还是成员帐户中的服务委托管理员身份调用资源栈集。默认为SELF。 当资源栈集权限模式为SELF_MANAGED时，默认为SELF。 * 无论指定何种用户身份，涉及操作的资源栈集始终在组织管理账号名下。*   * `SELF` - 以组织管理账号身份调用。   * `DELEGATED_ADMIN` - 以服务委托管理员身份调用。用户的华为云账号必须在组织中已经被注册为”资源编排资源栈集服务“的委托管理员。
+
+        :return: The call_identity of this DeployStackSetRequestBody.
+        :rtype: str
+        """
+        return self._call_identity
+
+    @call_identity.setter
+    def call_identity(self, call_identity):
+        """Sets the call_identity of this DeployStackSetRequestBody.
+
+        仅支持资源栈集权限模式为SERVICE_MANAGED时指定该参数。用于指定用户是以组织管理账号还是成员帐户中的服务委托管理员身份调用资源栈集。默认为SELF。 当资源栈集权限模式为SELF_MANAGED时，默认为SELF。 * 无论指定何种用户身份，涉及操作的资源栈集始终在组织管理账号名下。*   * `SELF` - 以组织管理账号身份调用。   * `DELEGATED_ADMIN` - 以服务委托管理员身份调用。用户的华为云账号必须在组织中已经被注册为”资源编排资源栈集服务“的委托管理员。
+
+        :param call_identity: The call_identity of this DeployStackSetRequestBody.
+        :type call_identity: str
+        """
+        self._call_identity = call_identity
 
     def to_dict(self):
         """Returns the model properties as a dict"""

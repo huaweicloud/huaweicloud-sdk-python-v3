@@ -17,7 +17,7 @@ class SrCreateInstanceRspInstanceTagsInfo:
     sensitive_list = []
 
     openapi_types = {
-        'tags': 'list[SrCreateInstanceRspInstanceTagsInfoTags]',
+        'tags': 'list[CreateChInstanceInfoTagsInfoTags]',
         'sys_tags': 'list[SrCreateInstanceRspInstanceTagsInfoSysTags]'
     }
 
@@ -32,7 +32,7 @@ class SrCreateInstanceRspInstanceTagsInfo:
         The model defined in huaweicloud sdk
 
         :param tags: 用户标签。默认为空。
-        :type tags: list[:class:`huaweicloudsdkgaussdb.v3.SrCreateInstanceRspInstanceTagsInfoTags`]
+        :type tags: list[:class:`huaweicloudsdkgaussdb.v3.CreateChInstanceInfoTagsInfoTags`]
         :param sys_tags: 系统标签。
         :type sys_tags: list[:class:`huaweicloudsdkgaussdb.v3.SrCreateInstanceRspInstanceTagsInfoSysTags`]
         """
@@ -55,7 +55,7 @@ class SrCreateInstanceRspInstanceTagsInfo:
         用户标签。默认为空。
 
         :return: The tags of this SrCreateInstanceRspInstanceTagsInfo.
-        :rtype: list[:class:`huaweicloudsdkgaussdb.v3.SrCreateInstanceRspInstanceTagsInfoTags`]
+        :rtype: list[:class:`huaweicloudsdkgaussdb.v3.CreateChInstanceInfoTagsInfoTags`]
         """
         return self._tags
 
@@ -66,7 +66,7 @@ class SrCreateInstanceRspInstanceTagsInfo:
         用户标签。默认为空。
 
         :param tags: The tags of this SrCreateInstanceRspInstanceTagsInfo.
-        :type tags: list[:class:`huaweicloudsdkgaussdb.v3.SrCreateInstanceRspInstanceTagsInfoTags`]
+        :type tags: list[:class:`huaweicloudsdkgaussdb.v3.CreateChInstanceInfoTagsInfoTags`]
         """
         self._tags = tags
 

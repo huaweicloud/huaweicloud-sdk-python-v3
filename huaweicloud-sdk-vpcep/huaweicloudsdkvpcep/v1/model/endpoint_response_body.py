@@ -81,7 +81,7 @@ class EndpointResponseBody:
         :type service_type: str
         :param status: 终端节点的连接状态。  - pendingAcceptance：待接受  - creating：创建中  - accepted：已接受  - rejected：已拒绝  - failed：失败  - deleting：删除中
         :type status: str
-        :param active_status: 帐号状态。  - frozen：冻结  - active：解冻
+        :param active_status: 账号状态。  - frozen：冻结  - active：解冻
         :type active_status: list[str]
         :param endpoint_service_name: 终端节点服务的名称。
         :type endpoint_service_name: str
@@ -89,7 +89,7 @@ class EndpointResponseBody:
         :type marker_id: int
         :param endpoint_service_id: 终端节点服务的ID。
         :type endpoint_service_id: str
-        :param enable_dns: 是否创建域名。  - true：创建域名  - false：不创建域名 说明 当创建连接gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
+        :param enable_dns: 是否创建域名。  - true：创建域名  - false：不创建域名 说明 当创建gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
         :type enable_dns: bool
         :param dns_names: 访问所连接的终端节点服务的域名。 当“enable_dns”为true时，该参数可见。
         :type dns_names: list[str]
@@ -113,11 +113,11 @@ class EndpointResponseBody:
         :type whitelist: list[str]
         :param enable_whitelist: 是否开启网络ACL隔离。  - true：开启网络ACL隔离  - false：不开启网络ACL隔离 若未指定，则返回false。 创建连接Interface类型终端节点服务的终端节点时，显示此参数。
         :type enable_whitelist: bool
-        :param routetables: 路由表ID列表。 若未指定，返回默认VPC下路由表ID。 创建连接Gateway类型终端节点服务的终端节点时，显示此参数。
+        :param routetables: 路由表ID列表。 若未指定，返回默认VPC下路由表ID。 创建gateway类型终端节点服务的终端节点时，显示此参数。
         :type routetables: list[str]
         :param description: 描述字段，支持中英文字母、数字等字符，不支持“&lt;”或“&gt;”字符。
         :type description: str
-        :param policy_statement: 只涉及开启双端固定的网关型终端节点，响应体展示此字段
+        :param policy_statement: 终端节点策略信息
         :type policy_statement: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]
         :param endpoint_pool_id: 待废弃，实例相关联的集群ID
         :type endpoint_pool_id: str
@@ -272,7 +272,7 @@ class EndpointResponseBody:
     def active_status(self):
         """Gets the active_status of this EndpointResponseBody.
 
-        帐号状态。  - frozen：冻结  - active：解冻
+        账号状态。  - frozen：冻结  - active：解冻
 
         :return: The active_status of this EndpointResponseBody.
         :rtype: list[str]
@@ -283,7 +283,7 @@ class EndpointResponseBody:
     def active_status(self, active_status):
         """Sets the active_status of this EndpointResponseBody.
 
-        帐号状态。  - frozen：冻结  - active：解冻
+        账号状态。  - frozen：冻结  - active：解冻
 
         :param active_status: The active_status of this EndpointResponseBody.
         :type active_status: list[str]
@@ -360,7 +360,7 @@ class EndpointResponseBody:
     def enable_dns(self):
         """Gets the enable_dns of this EndpointResponseBody.
 
-        是否创建域名。  - true：创建域名  - false：不创建域名 说明 当创建连接gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
+        是否创建域名。  - true：创建域名  - false：不创建域名 说明 当创建gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
 
         :return: The enable_dns of this EndpointResponseBody.
         :rtype: bool
@@ -371,7 +371,7 @@ class EndpointResponseBody:
     def enable_dns(self, enable_dns):
         """Sets the enable_dns of this EndpointResponseBody.
 
-        是否创建域名。  - true：创建域名  - false：不创建域名 说明 当创建连接gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
+        是否创建域名。  - true：创建域名  - false：不创建域名 说明 当创建gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
 
         :param enable_dns: The enable_dns of this EndpointResponseBody.
         :type enable_dns: bool
@@ -624,7 +624,7 @@ class EndpointResponseBody:
     def routetables(self):
         """Gets the routetables of this EndpointResponseBody.
 
-        路由表ID列表。 若未指定，返回默认VPC下路由表ID。 创建连接Gateway类型终端节点服务的终端节点时，显示此参数。
+        路由表ID列表。 若未指定，返回默认VPC下路由表ID。 创建gateway类型终端节点服务的终端节点时，显示此参数。
 
         :return: The routetables of this EndpointResponseBody.
         :rtype: list[str]
@@ -635,7 +635,7 @@ class EndpointResponseBody:
     def routetables(self, routetables):
         """Sets the routetables of this EndpointResponseBody.
 
-        路由表ID列表。 若未指定，返回默认VPC下路由表ID。 创建连接Gateway类型终端节点服务的终端节点时，显示此参数。
+        路由表ID列表。 若未指定，返回默认VPC下路由表ID。 创建gateway类型终端节点服务的终端节点时，显示此参数。
 
         :param routetables: The routetables of this EndpointResponseBody.
         :type routetables: list[str]
@@ -668,7 +668,7 @@ class EndpointResponseBody:
     def policy_statement(self):
         """Gets the policy_statement of this EndpointResponseBody.
 
-        只涉及开启双端固定的网关型终端节点，响应体展示此字段
+        终端节点策略信息
 
         :return: The policy_statement of this EndpointResponseBody.
         :rtype: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]
@@ -679,7 +679,7 @@ class EndpointResponseBody:
     def policy_statement(self, policy_statement):
         """Sets the policy_statement of this EndpointResponseBody.
 
-        只涉及开启双端固定的网关型终端节点，响应体展示此字段
+        终端节点策略信息
 
         :param policy_statement: The policy_statement of this EndpointResponseBody.
         :type policy_statement: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]

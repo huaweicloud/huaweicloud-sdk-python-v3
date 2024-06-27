@@ -61,7 +61,7 @@ class QueryJobsReq:
         :type engine_type: str
         :param enterprise_project_id: 企业项目
         :type enterprise_project_id: str
-        :param name: name或id
+        :param name: Name或ID。支持传入多个任务ID，逗号分隔，最多100个。
         :type name: str
         :param net_type: 网络类型
         :type net_type: str
@@ -229,7 +229,7 @@ class QueryJobsReq:
     def name(self):
         """Gets the name of this QueryJobsReq.
 
-        name或id
+        Name或ID。支持传入多个任务ID，逗号分隔，最多100个。
 
         :return: The name of this QueryJobsReq.
         :rtype: str
@@ -240,7 +240,7 @@ class QueryJobsReq:
     def name(self, name):
         """Sets the name of this QueryJobsReq.
 
-        name或id
+        Name或ID。支持传入多个任务ID，逗号分隔，最多100个。
 
         :param name: The name of this QueryJobsReq.
         :type name: str

@@ -17,7 +17,7 @@ class BatchDeleteFirewallTagsRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'tags': 'list[ResourceTag]'
+        'tags': 'list[DeleteResourceTagRequestBody]'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class BatchDeleteFirewallTagsRequestBody:
         The model defined in huaweicloud sdk
 
         :param tags: 标签列表
-        :type tags: list[:class:`huaweicloudsdkvpc.v3.ResourceTag`]
+        :type tags: list[:class:`huaweicloudsdkvpc.v3.DeleteResourceTagRequestBody`]
         """
         
         
@@ -48,7 +48,7 @@ class BatchDeleteFirewallTagsRequestBody:
         标签列表
 
         :return: The tags of this BatchDeleteFirewallTagsRequestBody.
-        :rtype: list[:class:`huaweicloudsdkvpc.v3.ResourceTag`]
+        :rtype: list[:class:`huaweicloudsdkvpc.v3.DeleteResourceTagRequestBody`]
         """
         return self._tags
 
@@ -59,7 +59,7 @@ class BatchDeleteFirewallTagsRequestBody:
         标签列表
 
         :param tags: The tags of this BatchDeleteFirewallTagsRequestBody.
-        :type tags: list[:class:`huaweicloudsdkvpc.v3.ResourceTag`]
+        :type tags: list[:class:`huaweicloudsdkvpc.v3.DeleteResourceTagRequestBody`]
         """
         self._tags = tags
 

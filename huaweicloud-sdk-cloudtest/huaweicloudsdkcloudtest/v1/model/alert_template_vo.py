@@ -18,13 +18,13 @@ class AlertTemplateVo:
 
     openapi_types = {
         'alert_levels': 'list[AlertLevel]',
-        'create_time': 'datetime',
+        'create_time': 'str',
         'create_user': 'str',
         'id': 'str',
         'name': 'str',
         'remarks': 'str',
         'test_service_id': 'str',
-        'update_time': 'datetime',
+        'update_time': 'str',
         'update_user': 'str'
     }
 
@@ -48,7 +48,7 @@ class AlertTemplateVo:
         :param alert_levels: 告警级别列表
         :type alert_levels: list[:class:`huaweicloudsdkcloudtest.v1.AlertLevel`]
         :param create_time: 创建时间
-        :type create_time: datetime
+        :type create_time: str
         :param create_user: 创建人
         :type create_user: str
         :param id: 唯一ID，主键
@@ -60,7 +60,7 @@ class AlertTemplateVo:
         :param test_service_id: 服务ID
         :type test_service_id: str
         :param update_time: 创建时间
-        :type update_time: datetime
+        :type update_time: str
         :param update_user: 更新人
         :type update_user: str
         """
@@ -126,7 +126,7 @@ class AlertTemplateVo:
         创建时间
 
         :return: The create_time of this AlertTemplateVo.
-        :rtype: datetime
+        :rtype: str
         """
         return self._create_time
 
@@ -137,7 +137,7 @@ class AlertTemplateVo:
         创建时间
 
         :param create_time: The create_time of this AlertTemplateVo.
-        :type create_time: datetime
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -258,7 +258,7 @@ class AlertTemplateVo:
         创建时间
 
         :return: The update_time of this AlertTemplateVo.
-        :rtype: datetime
+        :rtype: str
         """
         return self._update_time
 
@@ -269,7 +269,7 @@ class AlertTemplateVo:
         创建时间
 
         :param update_time: The update_time of this AlertTemplateVo.
-        :type update_time: datetime
+        :type update_time: str
         """
         self._update_time = update_time
 

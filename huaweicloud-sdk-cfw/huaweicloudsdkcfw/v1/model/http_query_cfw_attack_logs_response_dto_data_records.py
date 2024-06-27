@@ -36,11 +36,18 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
         'packet': 'str',
         'app': 'str',
         'packet_messages': 'list[PacketMessage]',
-        'dst_host': 'str',
         'src_region_id': 'str',
         'src_region_name': 'str',
         'dst_region_id': 'str',
-        'dst_region_name': 'str'
+        'dst_region_name': 'str',
+        'src_province_id': 'str',
+        'src_province_name': 'str',
+        'src_city_id': 'str',
+        'src_city_name': 'str',
+        'dst_province_id': 'str',
+        'dst_province_name': 'str',
+        'dst_city_id': 'str',
+        'dst_city_name': 'str'
     }
 
     attribute_map = {
@@ -63,14 +70,21 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
         'packet': 'packet',
         'app': 'app',
         'packet_messages': 'packetMessages',
-        'dst_host': 'dst_host',
         'src_region_id': 'src_region_id',
         'src_region_name': 'src_region_name',
         'dst_region_id': 'dst_region_id',
-        'dst_region_name': 'dst_region_name'
+        'dst_region_name': 'dst_region_name',
+        'src_province_id': 'src_province_id',
+        'src_province_name': 'src_province_name',
+        'src_city_id': 'src_city_id',
+        'src_city_name': 'src_city_name',
+        'dst_province_id': 'dst_province_id',
+        'dst_province_name': 'dst_province_name',
+        'dst_city_id': 'dst_city_id',
+        'dst_city_name': 'dst_city_name'
     }
 
-    def __init__(self, direction=None, action=None, event_time=None, attack_type=None, attack_rule=None, level=None, source=None, packet_length=None, attack_rule_id=None, hit_time=None, log_id=None, src_ip=None, src_port=None, dst_ip=None, dst_port=None, protocol=None, packet=None, app=None, packet_messages=None, dst_host=None, src_region_id=None, src_region_name=None, dst_region_id=None, dst_region_name=None):
+    def __init__(self, direction=None, action=None, event_time=None, attack_type=None, attack_rule=None, level=None, source=None, packet_length=None, attack_rule_id=None, hit_time=None, log_id=None, src_ip=None, src_port=None, dst_ip=None, dst_port=None, protocol=None, packet=None, app=None, packet_messages=None, src_region_id=None, src_region_name=None, dst_region_id=None, dst_region_name=None, src_province_id=None, src_province_name=None, src_city_id=None, src_city_name=None, dst_province_id=None, dst_province_name=None, dst_city_id=None, dst_city_name=None):
         """HttpQueryCfwAttackLogsResponseDTODataRecords
 
         The model defined in huaweicloud sdk
@@ -79,7 +93,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
         :type direction: str
         :param action: 动作
         :type action: str
-        :param event_time: 事件时间
+        :param event_time: 事件时间，以毫秒为单位的时间戳，如1718936272648
         :type event_time: int
         :param attack_type: 攻击类型
         :type attack_type: str
@@ -93,7 +107,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
         :type packet_length: int
         :param attack_rule_id: 攻击规则id
         :type attack_rule_id: str
-        :param hit_time: 命中时间
+        :param hit_time: 命中时间，以毫秒为单位的时间戳，如1718936272648
         :type hit_time: int
         :param log_id: 日志ID
         :type log_id: str
@@ -113,8 +127,6 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
         :type app: str
         :param packet_messages: 攻击报文信息
         :type packet_messages: list[:class:`huaweicloudsdkcfw.v1.PacketMessage`]
-        :param dst_host: 目标主机
-        :type dst_host: str
         :param src_region_id: 源区域id
         :type src_region_id: str
         :param src_region_name: 源区域名称
@@ -123,6 +135,22 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
         :type dst_region_id: str
         :param dst_region_name: 目的区域名称
         :type dst_region_name: str
+        :param src_province_id: 源省份id
+        :type src_province_id: str
+        :param src_province_name: 源省份名称
+        :type src_province_name: str
+        :param src_city_id: 源城市id
+        :type src_city_id: str
+        :param src_city_name: 源城市名称
+        :type src_city_name: str
+        :param dst_province_id: 目的省份id
+        :type dst_province_id: str
+        :param dst_province_name: 目的省份名称
+        :type dst_province_name: str
+        :param dst_city_id: 目的城市id
+        :type dst_city_id: str
+        :param dst_city_name: 目的城市名称
+        :type dst_city_name: str
         """
         
         
@@ -146,11 +174,18 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
         self._packet = None
         self._app = None
         self._packet_messages = None
-        self._dst_host = None
         self._src_region_id = None
         self._src_region_name = None
         self._dst_region_id = None
         self._dst_region_name = None
+        self._src_province_id = None
+        self._src_province_name = None
+        self._src_city_id = None
+        self._src_city_name = None
+        self._dst_province_id = None
+        self._dst_province_name = None
+        self._dst_city_id = None
+        self._dst_city_name = None
         self.discriminator = None
 
         if direction is not None:
@@ -191,8 +226,6 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
             self.app = app
         if packet_messages is not None:
             self.packet_messages = packet_messages
-        if dst_host is not None:
-            self.dst_host = dst_host
         if src_region_id is not None:
             self.src_region_id = src_region_id
         if src_region_name is not None:
@@ -201,6 +234,22 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
             self.dst_region_id = dst_region_id
         if dst_region_name is not None:
             self.dst_region_name = dst_region_name
+        if src_province_id is not None:
+            self.src_province_id = src_province_id
+        if src_province_name is not None:
+            self.src_province_name = src_province_name
+        if src_city_id is not None:
+            self.src_city_id = src_city_id
+        if src_city_name is not None:
+            self.src_city_name = src_city_name
+        if dst_province_id is not None:
+            self.dst_province_id = dst_province_id
+        if dst_province_name is not None:
+            self.dst_province_name = dst_province_name
+        if dst_city_id is not None:
+            self.dst_city_id = dst_city_id
+        if dst_city_name is not None:
+            self.dst_city_name = dst_city_name
 
     @property
     def direction(self):
@@ -250,7 +299,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
     def event_time(self):
         """Gets the event_time of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
-        事件时间
+        事件时间，以毫秒为单位的时间戳，如1718936272648
 
         :return: The event_time of this HttpQueryCfwAttackLogsResponseDTODataRecords.
         :rtype: int
@@ -261,7 +310,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
     def event_time(self, event_time):
         """Sets the event_time of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
-        事件时间
+        事件时间，以毫秒为单位的时间戳，如1718936272648
 
         :param event_time: The event_time of this HttpQueryCfwAttackLogsResponseDTODataRecords.
         :type event_time: int
@@ -404,7 +453,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
     def hit_time(self):
         """Gets the hit_time of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
-        命中时间
+        命中时间，以毫秒为单位的时间戳，如1718936272648
 
         :return: The hit_time of this HttpQueryCfwAttackLogsResponseDTODataRecords.
         :rtype: int
@@ -415,7 +464,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
     def hit_time(self, hit_time):
         """Sets the hit_time of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
-        命中时间
+        命中时间，以毫秒为单位的时间戳，如1718936272648
 
         :param hit_time: The hit_time of this HttpQueryCfwAttackLogsResponseDTODataRecords.
         :type hit_time: int
@@ -621,28 +670,6 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
         self._packet_messages = packet_messages
 
     @property
-    def dst_host(self):
-        """Gets the dst_host of this HttpQueryCfwAttackLogsResponseDTODataRecords.
-
-        目标主机
-
-        :return: The dst_host of this HttpQueryCfwAttackLogsResponseDTODataRecords.
-        :rtype: str
-        """
-        return self._dst_host
-
-    @dst_host.setter
-    def dst_host(self, dst_host):
-        """Sets the dst_host of this HttpQueryCfwAttackLogsResponseDTODataRecords.
-
-        目标主机
-
-        :param dst_host: The dst_host of this HttpQueryCfwAttackLogsResponseDTODataRecords.
-        :type dst_host: str
-        """
-        self._dst_host = dst_host
-
-    @property
     def src_region_id(self):
         """Gets the src_region_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
@@ -729,6 +756,182 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
         :type dst_region_name: str
         """
         self._dst_region_name = dst_region_name
+
+    @property
+    def src_province_id(self):
+        """Gets the src_province_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+
+        源省份id
+
+        :return: The src_province_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        :rtype: str
+        """
+        return self._src_province_id
+
+    @src_province_id.setter
+    def src_province_id(self, src_province_id):
+        """Sets the src_province_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+
+        源省份id
+
+        :param src_province_id: The src_province_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        :type src_province_id: str
+        """
+        self._src_province_id = src_province_id
+
+    @property
+    def src_province_name(self):
+        """Gets the src_province_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+
+        源省份名称
+
+        :return: The src_province_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        :rtype: str
+        """
+        return self._src_province_name
+
+    @src_province_name.setter
+    def src_province_name(self, src_province_name):
+        """Sets the src_province_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+
+        源省份名称
+
+        :param src_province_name: The src_province_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        :type src_province_name: str
+        """
+        self._src_province_name = src_province_name
+
+    @property
+    def src_city_id(self):
+        """Gets the src_city_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+
+        源城市id
+
+        :return: The src_city_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        :rtype: str
+        """
+        return self._src_city_id
+
+    @src_city_id.setter
+    def src_city_id(self, src_city_id):
+        """Sets the src_city_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+
+        源城市id
+
+        :param src_city_id: The src_city_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        :type src_city_id: str
+        """
+        self._src_city_id = src_city_id
+
+    @property
+    def src_city_name(self):
+        """Gets the src_city_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+
+        源城市名称
+
+        :return: The src_city_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        :rtype: str
+        """
+        return self._src_city_name
+
+    @src_city_name.setter
+    def src_city_name(self, src_city_name):
+        """Sets the src_city_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+
+        源城市名称
+
+        :param src_city_name: The src_city_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        :type src_city_name: str
+        """
+        self._src_city_name = src_city_name
+
+    @property
+    def dst_province_id(self):
+        """Gets the dst_province_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+
+        目的省份id
+
+        :return: The dst_province_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        :rtype: str
+        """
+        return self._dst_province_id
+
+    @dst_province_id.setter
+    def dst_province_id(self, dst_province_id):
+        """Sets the dst_province_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+
+        目的省份id
+
+        :param dst_province_id: The dst_province_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        :type dst_province_id: str
+        """
+        self._dst_province_id = dst_province_id
+
+    @property
+    def dst_province_name(self):
+        """Gets the dst_province_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+
+        目的省份名称
+
+        :return: The dst_province_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        :rtype: str
+        """
+        return self._dst_province_name
+
+    @dst_province_name.setter
+    def dst_province_name(self, dst_province_name):
+        """Sets the dst_province_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+
+        目的省份名称
+
+        :param dst_province_name: The dst_province_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        :type dst_province_name: str
+        """
+        self._dst_province_name = dst_province_name
+
+    @property
+    def dst_city_id(self):
+        """Gets the dst_city_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+
+        目的城市id
+
+        :return: The dst_city_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        :rtype: str
+        """
+        return self._dst_city_id
+
+    @dst_city_id.setter
+    def dst_city_id(self, dst_city_id):
+        """Sets the dst_city_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+
+        目的城市id
+
+        :param dst_city_id: The dst_city_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        :type dst_city_id: str
+        """
+        self._dst_city_id = dst_city_id
+
+    @property
+    def dst_city_name(self):
+        """Gets the dst_city_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+
+        目的城市名称
+
+        :return: The dst_city_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        :rtype: str
+        """
+        return self._dst_city_name
+
+    @dst_city_name.setter
+    def dst_city_name(self, dst_city_name):
+        """Sets the dst_city_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+
+        目的城市名称
+
+        :param dst_city_name: The dst_city_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        :type dst_city_name: str
+        """
+        self._dst_city_name = dst_city_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

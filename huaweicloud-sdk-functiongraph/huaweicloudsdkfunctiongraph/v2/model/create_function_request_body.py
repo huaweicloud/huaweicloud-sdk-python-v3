@@ -109,7 +109,7 @@ class CreateFunctionRequestBody:
         :type gpu_memory: int
         :param gpu_type: 显卡类型。
         :type gpu_type: str
-        :param code_type: 函数代码类型，取值有5种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。 Custom-Image-Swr: 函数代码来源与SWR自定义镜像。
+        :param code_type: 函数代码类型，取值有5种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。 Custom-Image-Swr: 函数代码来源与SWR自定义镜像。 创建自定义镜像函数此参数非必填，其他类型函数此参数必填。
         :type code_type: str
         :param code_url: 当CodeType为obs时，该值为函数代码包在OBS上的地址，CodeType为其他值时，该字段为空。
         :type code_url: str
@@ -202,7 +202,8 @@ class CreateFunctionRequestBody:
             self.gpu_memory = gpu_memory
         if gpu_type is not None:
             self.gpu_type = gpu_type
-        self.code_type = code_type
+        if code_type is not None:
+            self.code_type = code_type
         if code_url is not None:
             self.code_url = code_url
         if code_filename is not None:
@@ -464,7 +465,7 @@ class CreateFunctionRequestBody:
     def code_type(self):
         """Gets the code_type of this CreateFunctionRequestBody.
 
-        函数代码类型，取值有5种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。 Custom-Image-Swr: 函数代码来源与SWR自定义镜像。
+        函数代码类型，取值有5种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。 Custom-Image-Swr: 函数代码来源与SWR自定义镜像。 创建自定义镜像函数此参数非必填，其他类型函数此参数必填。
 
         :return: The code_type of this CreateFunctionRequestBody.
         :rtype: str
@@ -475,7 +476,7 @@ class CreateFunctionRequestBody:
     def code_type(self, code_type):
         """Sets the code_type of this CreateFunctionRequestBody.
 
-        函数代码类型，取值有5种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。 Custom-Image-Swr: 函数代码来源与SWR自定义镜像。
+        函数代码类型，取值有5种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。 Custom-Image-Swr: 函数代码来源与SWR自定义镜像。 创建自定义镜像函数此参数非必填，其他类型函数此参数必填。
 
         :param code_type: The code_type of this CreateFunctionRequestBody.
         :type code_type: str

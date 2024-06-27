@@ -164,6 +164,8 @@ from huaweicloudsdkmeeting.v1.model.invite_with_pwd_response import InviteWithPw
 from huaweicloudsdkmeeting.v1.model.list_history_webinars_request import ListHistoryWebinarsRequest
 from huaweicloudsdkmeeting.v1.model.list_history_webinars_response import ListHistoryWebinarsResponse
 from huaweicloudsdkmeeting.v1.model.list_meeting_file_response_dto import ListMeetingFileResponseDTO
+from huaweicloudsdkmeeting.v1.model.list_network_quality_request import ListNetworkQualityRequest
+from huaweicloudsdkmeeting.v1.model.list_network_quality_response import ListNetworkQualityResponse
 from huaweicloudsdkmeeting.v1.model.list_ongoing_webinars_request import ListOngoingWebinarsRequest
 from huaweicloudsdkmeeting.v1.model.list_ongoing_webinars_response import ListOngoingWebinarsResponse
 from huaweicloudsdkmeeting.v1.model.list_up_coming_webinars_request import ListUpComingWebinarsRequest
@@ -175,6 +177,7 @@ from huaweicloudsdkmeeting.v1.model.lock_meeting_response import LockMeetingResp
 from huaweicloudsdkmeeting.v1.model.lock_view_request import LockViewRequest
 from huaweicloudsdkmeeting.v1.model.lock_view_response import LockViewResponse
 from huaweicloudsdkmeeting.v1.model.material import Material
+from huaweicloudsdkmeeting.v1.model.media_qos import MediaQos
 from huaweicloudsdkmeeting.v1.model.meeting_file_base import MeetingFileBase
 from huaweicloudsdkmeeting.v1.model.meeting_status import MeetingStatus
 from huaweicloudsdkmeeting.v1.model.mod_admin_dto import ModAdminDTO
@@ -228,6 +231,7 @@ from huaweicloudsdkmeeting.v1.model.publication_request_base import PublicationR
 from huaweicloudsdkmeeting.v1.model.publication_response_base import PublicationResponseBase
 from huaweicloudsdkmeeting.v1.model.publish_dept_response_dto import PublishDeptResponseDTO
 from huaweicloudsdkmeeting.v1.model.publish_device_response_dto import PublishDeviceResponseDTO
+from huaweicloudsdkmeeting.v1.model.qos import Qos
 from huaweicloudsdkmeeting.v1.model.qos_conference_info import QosConferenceInfo
 from huaweicloudsdkmeeting.v1.model.qos_cpu_info import QosCpuInfo
 from huaweicloudsdkmeeting.v1.model.qos_data_element import QosDataElement
@@ -297,6 +301,7 @@ from huaweicloudsdkmeeting.v1.model.rest_participant_view_req_body import RestPa
 from huaweicloudsdkmeeting.v1.model.rest_pic_layout import RestPicLayout
 from huaweicloudsdkmeeting.v1.model.rest_pic_layout_body import RestPicLayoutBody
 from huaweicloudsdkmeeting.v1.model.rest_prolong_dur_req_body import RestProlongDurReqBody
+from huaweicloudsdkmeeting.v1.model.rest_qos_request_dto import RestQosRequestDTO
 from huaweicloudsdkmeeting.v1.model.rest_rename_part_req_body import RestRenamePartReqBody
 from huaweicloudsdkmeeting.v1.model.rest_response import RestResponse
 from huaweicloudsdkmeeting.v1.model.rest_schedule_conf_dto import RestScheduleConfDTO
@@ -552,6 +557,8 @@ from huaweicloudsdkmeeting.v1.model.upload_file_response import UploadFileRespon
 from huaweicloudsdkmeeting.v1.model.user_dto import UserDTO
 from huaweicloudsdkmeeting.v1.model.user_function_dto import UserFunctionDTO
 from huaweicloudsdkmeeting.v1.model.user_info import UserInfo
+from huaweicloudsdkmeeting.v1.model.user_qos import UserQos
+from huaweicloudsdkmeeting.v1.model.user_qos_req_info import UserQosReqInfo
 from huaweicloudsdkmeeting.v1.model.user_status_dto import UserStatusDTO
 from huaweicloudsdkmeeting.v1.model.user_vmr_dto import UserVmrDTO
 from huaweicloudsdkmeeting.v1.model.validate_token_req_dto import ValidateTokenReqDTO

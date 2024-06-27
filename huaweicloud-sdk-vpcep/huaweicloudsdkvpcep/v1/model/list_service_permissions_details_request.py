@@ -41,7 +41,7 @@ class ListServicePermissionsDetailsRequest:
 
         :param vpc_endpoint_service_id: 终端节点服务的ID。
         :type vpc_endpoint_service_id: str
-        :param permission: 权限帐号ID，格式为“iam:domain::domain_id”。 其中“domain_id”为授权用户的帐号ID， 例如“iam:domain::6e9dfd51d1124e8d8498dce894923a0d”，支持模糊搜索。
+        :param permission: 权限账号ID，格式为“iam:domain::domain_id”。 其中“domain_id”为授权用户的账号ID， 例如“iam:domain::6e9dfd51d1124e8d8498dce894923a0d”，支持模糊搜索。
         :type permission: str
         :param limit: 查询返回终端节点服务的白名单数量限制，即每页返回的个数。 取值范围：0~500，取值一般为10，20或者50，默认为10。
         :type limit: int
@@ -101,7 +101,7 @@ class ListServicePermissionsDetailsRequest:
     def permission(self):
         """Gets the permission of this ListServicePermissionsDetailsRequest.
 
-        权限帐号ID，格式为“iam:domain::domain_id”。 其中“domain_id”为授权用户的帐号ID， 例如“iam:domain::6e9dfd51d1124e8d8498dce894923a0d”，支持模糊搜索。
+        权限账号ID，格式为“iam:domain::domain_id”。 其中“domain_id”为授权用户的账号ID， 例如“iam:domain::6e9dfd51d1124e8d8498dce894923a0d”，支持模糊搜索。
 
         :return: The permission of this ListServicePermissionsDetailsRequest.
         :rtype: str
@@ -112,7 +112,7 @@ class ListServicePermissionsDetailsRequest:
     def permission(self, permission):
         """Sets the permission of this ListServicePermissionsDetailsRequest.
 
-        权限帐号ID，格式为“iam:domain::domain_id”。 其中“domain_id”为授权用户的帐号ID， 例如“iam:domain::6e9dfd51d1124e8d8498dce894923a0d”，支持模糊搜索。
+        权限账号ID，格式为“iam:domain::domain_id”。 其中“domain_id”为授权用户的账号ID， 例如“iam:domain::6e9dfd51d1124e8d8498dce894923a0d”，支持模糊搜索。
 
         :param permission: The permission of this ListServicePermissionsDetailsRequest.
         :type permission: str

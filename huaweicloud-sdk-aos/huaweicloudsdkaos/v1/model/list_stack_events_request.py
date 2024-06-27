@@ -49,7 +49,7 @@ class ListStackEventsRequest:
         :type deployment_id: str
         :param filter: 过滤条件  * 与（AND）运算符使用逗号（，）定义 * 或（OR）运算符使用竖线（|）定义，OR运算符优先级高于AND运算符 * 不支持括号 * 过滤运算符仅支持等号（&#x3D;&#x3D;） * 过滤参数名及其值仅支持包含大小写英文、数字和下划线 * 过滤条件中禁止使用分号，如果有分号，则此条过滤会被忽略 * 一个过滤参数仅能与一个与条件相关，一个与条件中的多个或条件仅能与一个过滤参数相关
         :type filter: str
-        :param field: 选择的属性名称  * 属性名仅支持包含大小写英文、数字和下划线 * 多个属性名称之间以逗号（，）分隔
+        :param field: 选择的属性名称  * 属性名仅支持包含大小写英文、数字和下划线 * 多个属性名称之间以逗号（,）分隔
         :type field: str
         """
         
@@ -188,7 +188,7 @@ class ListStackEventsRequest:
     def field(self):
         """Gets the field of this ListStackEventsRequest.
 
-        选择的属性名称  * 属性名仅支持包含大小写英文、数字和下划线 * 多个属性名称之间以逗号（，）分隔
+        选择的属性名称  * 属性名仅支持包含大小写英文、数字和下划线 * 多个属性名称之间以逗号（,）分隔
 
         :return: The field of this ListStackEventsRequest.
         :rtype: str
@@ -199,7 +199,7 @@ class ListStackEventsRequest:
     def field(self, field):
         """Sets the field of this ListStackEventsRequest.
 
-        选择的属性名称  * 属性名仅支持包含大小写英文、数字和下划线 * 多个属性名称之间以逗号（，）分隔
+        选择的属性名称  * 属性名仅支持包含大小写英文、数字和下划线 * 多个属性名称之间以逗号（,）分隔
 
         :param field: The field of this ListStackEventsRequest.
         :type field: str

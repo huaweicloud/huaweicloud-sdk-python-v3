@@ -29,7 +29,8 @@ class RuleAddressDtoForRequest:
         'domain_set_name': 'str',
         'ip_address': 'list[str]',
         'address_set_type': 'int',
-        'predefined_group': 'list[str]'
+        'predefined_group': 'list[str]',
+        'address_group': 'list[str]'
     }
 
     attribute_map = {
@@ -45,10 +46,11 @@ class RuleAddressDtoForRequest:
         'domain_set_name': 'domain_set_name',
         'ip_address': 'ip_address',
         'address_set_type': 'address_set_type',
-        'predefined_group': 'predefined_group'
+        'predefined_group': 'predefined_group',
+        'address_group': 'address_group'
     }
 
-    def __init__(self, type=None, address_type=None, address=None, address_set_id=None, address_set_name=None, domain_address_name=None, region_list_json=None, region_list=None, domain_set_id=None, domain_set_name=None, ip_address=None, address_set_type=None, predefined_group=None):
+    def __init__(self, type=None, address_type=None, address=None, address_set_id=None, address_set_name=None, domain_address_name=None, region_list_json=None, region_list=None, domain_set_id=None, domain_set_name=None, ip_address=None, address_set_type=None, predefined_group=None, address_group=None):
         """RuleAddressDtoForRequest
 
         The model defined in huaweicloud sdk
@@ -79,6 +81,8 @@ class RuleAddressDtoForRequest:
         :type address_set_type: int
         :param predefined_group: 预定义地址组列表
         :type predefined_group: list[str]
+        :param address_group: 地址组列表
+        :type address_group: list[str]
         """
         
         
@@ -96,6 +100,7 @@ class RuleAddressDtoForRequest:
         self._ip_address = None
         self._address_set_type = None
         self._predefined_group = None
+        self._address_group = None
         self.discriminator = None
 
         self.type = type
@@ -123,6 +128,8 @@ class RuleAddressDtoForRequest:
             self.address_set_type = address_set_type
         if predefined_group is not None:
             self.predefined_group = predefined_group
+        if address_group is not None:
+            self.address_group = address_group
 
     @property
     def type(self):
@@ -409,6 +416,28 @@ class RuleAddressDtoForRequest:
         :type predefined_group: list[str]
         """
         self._predefined_group = predefined_group
+
+    @property
+    def address_group(self):
+        """Gets the address_group of this RuleAddressDtoForRequest.
+
+        地址组列表
+
+        :return: The address_group of this RuleAddressDtoForRequest.
+        :rtype: list[str]
+        """
+        return self._address_group
+
+    @address_group.setter
+    def address_group(self, address_group):
+        """Sets the address_group of this RuleAddressDtoForRequest.
+
+        地址组列表
+
+        :param address_group: The address_group of this RuleAddressDtoForRequest.
+        :type address_group: list[str]
+        """
+        self._address_group = address_group
 
     def to_dict(self):
         """Returns the model properties as a dict"""

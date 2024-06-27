@@ -29,7 +29,7 @@ class UpdateEndpointPolicyRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param policy_statement: 只涉及开启双端固定的网关型终端节点
+        :param policy_statement: 终端节点策略信息
         :type policy_statement: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]
         """
         
@@ -44,7 +44,7 @@ class UpdateEndpointPolicyRequestBody:
     def policy_statement(self):
         """Gets the policy_statement of this UpdateEndpointPolicyRequestBody.
 
-        只涉及开启双端固定的网关型终端节点
+        终端节点策略信息
 
         :return: The policy_statement of this UpdateEndpointPolicyRequestBody.
         :rtype: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]
@@ -55,7 +55,7 @@ class UpdateEndpointPolicyRequestBody:
     def policy_statement(self, policy_statement):
         """Sets the policy_statement of this UpdateEndpointPolicyRequestBody.
 
-        只涉及开启双端固定的网关型终端节点
+        终端节点策略信息
 
         :param policy_statement: The policy_statement of this UpdateEndpointPolicyRequestBody.
         :type policy_statement: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]

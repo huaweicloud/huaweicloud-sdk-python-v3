@@ -45,17 +45,17 @@ class ListAlertTemplatesResponse(SdkResponse):
         'is_first_page': 'is_first_page',
         'is_last_page': 'is_last_page',
         'list': 'list',
-        'navigate_first_page': 'navigateFirstPage',
-        'navigate_last_page': 'navigateLastPage',
-        'navigate_pages': 'navigatePages',
-        'navigatepage_nums': 'navigatepageNums',
+        'navigate_first_page': 'navigate_first_page',
+        'navigate_last_page': 'navigate_last_page',
+        'navigate_pages': 'navigate_pages',
+        'navigatepage_nums': 'navigatepage_nums',
         'next_page': 'next_page',
         'page_num': 'page_num',
         'page_size': 'page_size',
         'pages': 'pages',
-        'pre_page': 'prePage',
+        'pre_page': 'pre_page',
         'size': 'size',
-        'start_row': 'startRow',
+        'start_row': 'start_row',
         'total': 'total'
     }
 
@@ -64,41 +64,41 @@ class ListAlertTemplatesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param end_row: 
+        :param end_row: 当前页面最后一个元素在数据库中的行号
         :type end_row: int
-        :param has_next_page: 
+        :param has_next_page: 是否有下一页
         :type has_next_page: bool
-        :param has_previous_page: 
+        :param has_previous_page: 是否有前一页
         :type has_previous_page: bool
-        :param is_first_page: 
+        :param is_first_page: 是否为第一页
         :type is_first_page: bool
-        :param is_last_page: 
+        :param is_last_page: 是否为最后一页
         :type is_last_page: bool
-        :param list: 
+        :param list: 返回结果
         :type list: list[:class:`huaweicloudsdkcloudtest.v1.AlertTemplateVo`]
-        :param navigate_first_page: 
+        :param navigate_first_page: 导航条上的第一页
         :type navigate_first_page: int
-        :param navigate_last_page: 
+        :param navigate_last_page: 导航条上的最后一页
         :type navigate_last_page: int
-        :param navigate_pages: 
+        :param navigate_pages: 导航页码数
         :type navigate_pages: int
-        :param navigatepage_nums: 
+        :param navigatepage_nums: 所有导航页号
         :type navigatepage_nums: list[int]
-        :param next_page: 
+        :param next_page: 下一页
         :type next_page: int
-        :param page_num: 
+        :param page_num: 当前页
         :type page_num: int
-        :param page_size: 
+        :param page_size: 每页的数量
         :type page_size: int
-        :param pages: 
+        :param pages: 总页数
         :type pages: int
-        :param pre_page: 
+        :param pre_page: 前一页
         :type pre_page: int
-        :param size: 
+        :param size: 当前页的数量
         :type size: int
-        :param start_row: 
+        :param start_row: 当前页面第一个元素在数据库中的行号
         :type start_row: int
-        :param total: 
+        :param total: 总条数
         :type total: int
         """
         
@@ -165,6 +165,8 @@ class ListAlertTemplatesResponse(SdkResponse):
     def end_row(self):
         """Gets the end_row of this ListAlertTemplatesResponse.
 
+        当前页面最后一个元素在数据库中的行号
+
         :return: The end_row of this ListAlertTemplatesResponse.
         :rtype: int
         """
@@ -173,6 +175,8 @@ class ListAlertTemplatesResponse(SdkResponse):
     @end_row.setter
     def end_row(self, end_row):
         """Sets the end_row of this ListAlertTemplatesResponse.
+
+        当前页面最后一个元素在数据库中的行号
 
         :param end_row: The end_row of this ListAlertTemplatesResponse.
         :type end_row: int
@@ -183,6 +187,8 @@ class ListAlertTemplatesResponse(SdkResponse):
     def has_next_page(self):
         """Gets the has_next_page of this ListAlertTemplatesResponse.
 
+        是否有下一页
+
         :return: The has_next_page of this ListAlertTemplatesResponse.
         :rtype: bool
         """
@@ -191,6 +197,8 @@ class ListAlertTemplatesResponse(SdkResponse):
     @has_next_page.setter
     def has_next_page(self, has_next_page):
         """Sets the has_next_page of this ListAlertTemplatesResponse.
+
+        是否有下一页
 
         :param has_next_page: The has_next_page of this ListAlertTemplatesResponse.
         :type has_next_page: bool
@@ -201,6 +209,8 @@ class ListAlertTemplatesResponse(SdkResponse):
     def has_previous_page(self):
         """Gets the has_previous_page of this ListAlertTemplatesResponse.
 
+        是否有前一页
+
         :return: The has_previous_page of this ListAlertTemplatesResponse.
         :rtype: bool
         """
@@ -209,6 +219,8 @@ class ListAlertTemplatesResponse(SdkResponse):
     @has_previous_page.setter
     def has_previous_page(self, has_previous_page):
         """Sets the has_previous_page of this ListAlertTemplatesResponse.
+
+        是否有前一页
 
         :param has_previous_page: The has_previous_page of this ListAlertTemplatesResponse.
         :type has_previous_page: bool
@@ -219,6 +231,8 @@ class ListAlertTemplatesResponse(SdkResponse):
     def is_first_page(self):
         """Gets the is_first_page of this ListAlertTemplatesResponse.
 
+        是否为第一页
+
         :return: The is_first_page of this ListAlertTemplatesResponse.
         :rtype: bool
         """
@@ -227,6 +241,8 @@ class ListAlertTemplatesResponse(SdkResponse):
     @is_first_page.setter
     def is_first_page(self, is_first_page):
         """Sets the is_first_page of this ListAlertTemplatesResponse.
+
+        是否为第一页
 
         :param is_first_page: The is_first_page of this ListAlertTemplatesResponse.
         :type is_first_page: bool
@@ -237,6 +253,8 @@ class ListAlertTemplatesResponse(SdkResponse):
     def is_last_page(self):
         """Gets the is_last_page of this ListAlertTemplatesResponse.
 
+        是否为最后一页
+
         :return: The is_last_page of this ListAlertTemplatesResponse.
         :rtype: bool
         """
@@ -245,6 +263,8 @@ class ListAlertTemplatesResponse(SdkResponse):
     @is_last_page.setter
     def is_last_page(self, is_last_page):
         """Sets the is_last_page of this ListAlertTemplatesResponse.
+
+        是否为最后一页
 
         :param is_last_page: The is_last_page of this ListAlertTemplatesResponse.
         :type is_last_page: bool
@@ -255,6 +275,8 @@ class ListAlertTemplatesResponse(SdkResponse):
     def list(self):
         """Gets the list of this ListAlertTemplatesResponse.
 
+        返回结果
+
         :return: The list of this ListAlertTemplatesResponse.
         :rtype: list[:class:`huaweicloudsdkcloudtest.v1.AlertTemplateVo`]
         """
@@ -263,6 +285,8 @@ class ListAlertTemplatesResponse(SdkResponse):
     @list.setter
     def list(self, list):
         """Sets the list of this ListAlertTemplatesResponse.
+
+        返回结果
 
         :param list: The list of this ListAlertTemplatesResponse.
         :type list: list[:class:`huaweicloudsdkcloudtest.v1.AlertTemplateVo`]
@@ -273,6 +297,8 @@ class ListAlertTemplatesResponse(SdkResponse):
     def navigate_first_page(self):
         """Gets the navigate_first_page of this ListAlertTemplatesResponse.
 
+        导航条上的第一页
+
         :return: The navigate_first_page of this ListAlertTemplatesResponse.
         :rtype: int
         """
@@ -281,6 +307,8 @@ class ListAlertTemplatesResponse(SdkResponse):
     @navigate_first_page.setter
     def navigate_first_page(self, navigate_first_page):
         """Sets the navigate_first_page of this ListAlertTemplatesResponse.
+
+        导航条上的第一页
 
         :param navigate_first_page: The navigate_first_page of this ListAlertTemplatesResponse.
         :type navigate_first_page: int
@@ -291,6 +319,8 @@ class ListAlertTemplatesResponse(SdkResponse):
     def navigate_last_page(self):
         """Gets the navigate_last_page of this ListAlertTemplatesResponse.
 
+        导航条上的最后一页
+
         :return: The navigate_last_page of this ListAlertTemplatesResponse.
         :rtype: int
         """
@@ -299,6 +329,8 @@ class ListAlertTemplatesResponse(SdkResponse):
     @navigate_last_page.setter
     def navigate_last_page(self, navigate_last_page):
         """Sets the navigate_last_page of this ListAlertTemplatesResponse.
+
+        导航条上的最后一页
 
         :param navigate_last_page: The navigate_last_page of this ListAlertTemplatesResponse.
         :type navigate_last_page: int
@@ -309,6 +341,8 @@ class ListAlertTemplatesResponse(SdkResponse):
     def navigate_pages(self):
         """Gets the navigate_pages of this ListAlertTemplatesResponse.
 
+        导航页码数
+
         :return: The navigate_pages of this ListAlertTemplatesResponse.
         :rtype: int
         """
@@ -317,6 +351,8 @@ class ListAlertTemplatesResponse(SdkResponse):
     @navigate_pages.setter
     def navigate_pages(self, navigate_pages):
         """Sets the navigate_pages of this ListAlertTemplatesResponse.
+
+        导航页码数
 
         :param navigate_pages: The navigate_pages of this ListAlertTemplatesResponse.
         :type navigate_pages: int
@@ -327,6 +363,8 @@ class ListAlertTemplatesResponse(SdkResponse):
     def navigatepage_nums(self):
         """Gets the navigatepage_nums of this ListAlertTemplatesResponse.
 
+        所有导航页号
+
         :return: The navigatepage_nums of this ListAlertTemplatesResponse.
         :rtype: list[int]
         """
@@ -335,6 +373,8 @@ class ListAlertTemplatesResponse(SdkResponse):
     @navigatepage_nums.setter
     def navigatepage_nums(self, navigatepage_nums):
         """Sets the navigatepage_nums of this ListAlertTemplatesResponse.
+
+        所有导航页号
 
         :param navigatepage_nums: The navigatepage_nums of this ListAlertTemplatesResponse.
         :type navigatepage_nums: list[int]
@@ -345,6 +385,8 @@ class ListAlertTemplatesResponse(SdkResponse):
     def next_page(self):
         """Gets the next_page of this ListAlertTemplatesResponse.
 
+        下一页
+
         :return: The next_page of this ListAlertTemplatesResponse.
         :rtype: int
         """
@@ -353,6 +395,8 @@ class ListAlertTemplatesResponse(SdkResponse):
     @next_page.setter
     def next_page(self, next_page):
         """Sets the next_page of this ListAlertTemplatesResponse.
+
+        下一页
 
         :param next_page: The next_page of this ListAlertTemplatesResponse.
         :type next_page: int
@@ -363,6 +407,8 @@ class ListAlertTemplatesResponse(SdkResponse):
     def page_num(self):
         """Gets the page_num of this ListAlertTemplatesResponse.
 
+        当前页
+
         :return: The page_num of this ListAlertTemplatesResponse.
         :rtype: int
         """
@@ -371,6 +417,8 @@ class ListAlertTemplatesResponse(SdkResponse):
     @page_num.setter
     def page_num(self, page_num):
         """Sets the page_num of this ListAlertTemplatesResponse.
+
+        当前页
 
         :param page_num: The page_num of this ListAlertTemplatesResponse.
         :type page_num: int
@@ -381,6 +429,8 @@ class ListAlertTemplatesResponse(SdkResponse):
     def page_size(self):
         """Gets the page_size of this ListAlertTemplatesResponse.
 
+        每页的数量
+
         :return: The page_size of this ListAlertTemplatesResponse.
         :rtype: int
         """
@@ -389,6 +439,8 @@ class ListAlertTemplatesResponse(SdkResponse):
     @page_size.setter
     def page_size(self, page_size):
         """Sets the page_size of this ListAlertTemplatesResponse.
+
+        每页的数量
 
         :param page_size: The page_size of this ListAlertTemplatesResponse.
         :type page_size: int
@@ -399,6 +451,8 @@ class ListAlertTemplatesResponse(SdkResponse):
     def pages(self):
         """Gets the pages of this ListAlertTemplatesResponse.
 
+        总页数
+
         :return: The pages of this ListAlertTemplatesResponse.
         :rtype: int
         """
@@ -407,6 +461,8 @@ class ListAlertTemplatesResponse(SdkResponse):
     @pages.setter
     def pages(self, pages):
         """Sets the pages of this ListAlertTemplatesResponse.
+
+        总页数
 
         :param pages: The pages of this ListAlertTemplatesResponse.
         :type pages: int
@@ -417,6 +473,8 @@ class ListAlertTemplatesResponse(SdkResponse):
     def pre_page(self):
         """Gets the pre_page of this ListAlertTemplatesResponse.
 
+        前一页
+
         :return: The pre_page of this ListAlertTemplatesResponse.
         :rtype: int
         """
@@ -425,6 +483,8 @@ class ListAlertTemplatesResponse(SdkResponse):
     @pre_page.setter
     def pre_page(self, pre_page):
         """Sets the pre_page of this ListAlertTemplatesResponse.
+
+        前一页
 
         :param pre_page: The pre_page of this ListAlertTemplatesResponse.
         :type pre_page: int
@@ -435,6 +495,8 @@ class ListAlertTemplatesResponse(SdkResponse):
     def size(self):
         """Gets the size of this ListAlertTemplatesResponse.
 
+        当前页的数量
+
         :return: The size of this ListAlertTemplatesResponse.
         :rtype: int
         """
@@ -443,6 +505,8 @@ class ListAlertTemplatesResponse(SdkResponse):
     @size.setter
     def size(self, size):
         """Sets the size of this ListAlertTemplatesResponse.
+
+        当前页的数量
 
         :param size: The size of this ListAlertTemplatesResponse.
         :type size: int
@@ -453,6 +517,8 @@ class ListAlertTemplatesResponse(SdkResponse):
     def start_row(self):
         """Gets the start_row of this ListAlertTemplatesResponse.
 
+        当前页面第一个元素在数据库中的行号
+
         :return: The start_row of this ListAlertTemplatesResponse.
         :rtype: int
         """
@@ -461,6 +527,8 @@ class ListAlertTemplatesResponse(SdkResponse):
     @start_row.setter
     def start_row(self, start_row):
         """Sets the start_row of this ListAlertTemplatesResponse.
+
+        当前页面第一个元素在数据库中的行号
 
         :param start_row: The start_row of this ListAlertTemplatesResponse.
         :type start_row: int
@@ -471,6 +539,8 @@ class ListAlertTemplatesResponse(SdkResponse):
     def total(self):
         """Gets the total of this ListAlertTemplatesResponse.
 
+        总条数
+
         :return: The total of this ListAlertTemplatesResponse.
         :rtype: int
         """
@@ -479,6 +549,8 @@ class ListAlertTemplatesResponse(SdkResponse):
     @total.setter
     def total(self, total):
         """Sets the total of this ListAlertTemplatesResponse.
+
+        总条数
 
         :param total: The total of this ListAlertTemplatesResponse.
         :type total: int

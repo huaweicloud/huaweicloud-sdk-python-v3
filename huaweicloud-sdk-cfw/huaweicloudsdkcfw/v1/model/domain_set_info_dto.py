@@ -43,8 +43,7 @@ class DomainSetInfoDto:
         self._description = None
         self.discriminator = None
 
-        if domain_name is not None:
-            self.domain_name = domain_name
+        self.domain_name = domain_name
         if description is not None:
             self.description = description
 

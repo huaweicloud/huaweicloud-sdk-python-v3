@@ -18,15 +18,31 @@ class UpdateStartedConfigReqBody:
 
     openapi_types = {
         'lock_sharing': 'int',
-        'call_in_restriction': 'int'
+        'call_in_restriction': 'int',
+        'allow_unmute_by_oneself': 'int',
+        'chat_permission': 'int',
+        'audience_call_in_restriction': 'int',
+        'client_rec_mode': 'int',
+        'allow_open_camera': 'int',
+        'allow_rename': 'int',
+        'label_permission': 'int',
+        'free_share': 'int'
     }
 
     attribute_map = {
         'lock_sharing': 'lockSharing',
-        'call_in_restriction': 'callInRestriction'
+        'call_in_restriction': 'callInRestriction',
+        'allow_unmute_by_oneself': 'allowUnmuteByOneself',
+        'chat_permission': 'chatPermission',
+        'audience_call_in_restriction': 'audienceCallInRestriction',
+        'client_rec_mode': 'clientRecMode',
+        'allow_open_camera': 'allowOpenCamera',
+        'allow_rename': 'allowRename',
+        'label_permission': 'labelPermission',
+        'free_share': 'freeShare'
     }
 
-    def __init__(self, lock_sharing=None, call_in_restriction=None):
+    def __init__(self, lock_sharing=None, call_in_restriction=None, allow_unmute_by_oneself=None, chat_permission=None, audience_call_in_restriction=None, client_rec_mode=None, allow_open_camera=None, allow_rename=None, label_permission=None, free_share=None):
         """UpdateStartedConfigReqBody
 
         The model defined in huaweicloud sdk
@@ -35,18 +51,58 @@ class UpdateStartedConfigReqBody:
         :type lock_sharing: int
         :param call_in_restriction: 允许加入会议的范围。 - 0: 所有用户 - 2: 企业内用户 - 3: 被邀请用户 
         :type call_in_restriction: int
+        :param allow_unmute_by_oneself: 是否允许自己解除静音，默认为允许 - 0: 不允许 - 1: 允许 
+        :type allow_unmute_by_oneself: int
+        :param chat_permission: 会议聊天权限 1.全员禁止 2.仅允许私聊 3.仅允许公开聊天 4.允许自由聊天
+        :type chat_permission: int
+        :param audience_call_in_restriction: 网络研讨会观众允许呼入的范围 0：所有用户  2：企业内用户和被邀请用户
+        :type audience_call_in_restriction: int
+        :param client_rec_mode: 客户端本地录制权限的范围，默认为仅主持人支持本地录制 - 0: 所有用户 - 1：全部人可录制 - 2：部分人可录制 
+        :type client_rec_mode: int
+        :param allow_open_camera: 与会人自行开启摄像头 0:禁止 1:允许
+        :type allow_open_camera: int
+        :param allow_rename: 是否允许与会人改名 0:不允许 1:允许
+        :type allow_rename: int
+        :param label_permission: 标注权限 0:所有人可标注 1:仅共享人可标注
+        :type label_permission: int
+        :param free_share: 抢共享权限设置 0:仅主持人/联席 1:所有人可抢共享
+        :type free_share: int
         """
         
         
 
         self._lock_sharing = None
         self._call_in_restriction = None
+        self._allow_unmute_by_oneself = None
+        self._chat_permission = None
+        self._audience_call_in_restriction = None
+        self._client_rec_mode = None
+        self._allow_open_camera = None
+        self._allow_rename = None
+        self._label_permission = None
+        self._free_share = None
         self.discriminator = None
 
         if lock_sharing is not None:
             self.lock_sharing = lock_sharing
         if call_in_restriction is not None:
             self.call_in_restriction = call_in_restriction
+        if allow_unmute_by_oneself is not None:
+            self.allow_unmute_by_oneself = allow_unmute_by_oneself
+        if chat_permission is not None:
+            self.chat_permission = chat_permission
+        if audience_call_in_restriction is not None:
+            self.audience_call_in_restriction = audience_call_in_restriction
+        if client_rec_mode is not None:
+            self.client_rec_mode = client_rec_mode
+        if allow_open_camera is not None:
+            self.allow_open_camera = allow_open_camera
+        if allow_rename is not None:
+            self.allow_rename = allow_rename
+        if label_permission is not None:
+            self.label_permission = label_permission
+        if free_share is not None:
+            self.free_share = free_share
 
     @property
     def lock_sharing(self):
@@ -91,6 +147,182 @@ class UpdateStartedConfigReqBody:
         :type call_in_restriction: int
         """
         self._call_in_restriction = call_in_restriction
+
+    @property
+    def allow_unmute_by_oneself(self):
+        """Gets the allow_unmute_by_oneself of this UpdateStartedConfigReqBody.
+
+        是否允许自己解除静音，默认为允许 - 0: 不允许 - 1: 允许 
+
+        :return: The allow_unmute_by_oneself of this UpdateStartedConfigReqBody.
+        :rtype: int
+        """
+        return self._allow_unmute_by_oneself
+
+    @allow_unmute_by_oneself.setter
+    def allow_unmute_by_oneself(self, allow_unmute_by_oneself):
+        """Sets the allow_unmute_by_oneself of this UpdateStartedConfigReqBody.
+
+        是否允许自己解除静音，默认为允许 - 0: 不允许 - 1: 允许 
+
+        :param allow_unmute_by_oneself: The allow_unmute_by_oneself of this UpdateStartedConfigReqBody.
+        :type allow_unmute_by_oneself: int
+        """
+        self._allow_unmute_by_oneself = allow_unmute_by_oneself
+
+    @property
+    def chat_permission(self):
+        """Gets the chat_permission of this UpdateStartedConfigReqBody.
+
+        会议聊天权限 1.全员禁止 2.仅允许私聊 3.仅允许公开聊天 4.允许自由聊天
+
+        :return: The chat_permission of this UpdateStartedConfigReqBody.
+        :rtype: int
+        """
+        return self._chat_permission
+
+    @chat_permission.setter
+    def chat_permission(self, chat_permission):
+        """Sets the chat_permission of this UpdateStartedConfigReqBody.
+
+        会议聊天权限 1.全员禁止 2.仅允许私聊 3.仅允许公开聊天 4.允许自由聊天
+
+        :param chat_permission: The chat_permission of this UpdateStartedConfigReqBody.
+        :type chat_permission: int
+        """
+        self._chat_permission = chat_permission
+
+    @property
+    def audience_call_in_restriction(self):
+        """Gets the audience_call_in_restriction of this UpdateStartedConfigReqBody.
+
+        网络研讨会观众允许呼入的范围 0：所有用户  2：企业内用户和被邀请用户
+
+        :return: The audience_call_in_restriction of this UpdateStartedConfigReqBody.
+        :rtype: int
+        """
+        return self._audience_call_in_restriction
+
+    @audience_call_in_restriction.setter
+    def audience_call_in_restriction(self, audience_call_in_restriction):
+        """Sets the audience_call_in_restriction of this UpdateStartedConfigReqBody.
+
+        网络研讨会观众允许呼入的范围 0：所有用户  2：企业内用户和被邀请用户
+
+        :param audience_call_in_restriction: The audience_call_in_restriction of this UpdateStartedConfigReqBody.
+        :type audience_call_in_restriction: int
+        """
+        self._audience_call_in_restriction = audience_call_in_restriction
+
+    @property
+    def client_rec_mode(self):
+        """Gets the client_rec_mode of this UpdateStartedConfigReqBody.
+
+        客户端本地录制权限的范围，默认为仅主持人支持本地录制 - 0: 所有用户 - 1：全部人可录制 - 2：部分人可录制 
+
+        :return: The client_rec_mode of this UpdateStartedConfigReqBody.
+        :rtype: int
+        """
+        return self._client_rec_mode
+
+    @client_rec_mode.setter
+    def client_rec_mode(self, client_rec_mode):
+        """Sets the client_rec_mode of this UpdateStartedConfigReqBody.
+
+        客户端本地录制权限的范围，默认为仅主持人支持本地录制 - 0: 所有用户 - 1：全部人可录制 - 2：部分人可录制 
+
+        :param client_rec_mode: The client_rec_mode of this UpdateStartedConfigReqBody.
+        :type client_rec_mode: int
+        """
+        self._client_rec_mode = client_rec_mode
+
+    @property
+    def allow_open_camera(self):
+        """Gets the allow_open_camera of this UpdateStartedConfigReqBody.
+
+        与会人自行开启摄像头 0:禁止 1:允许
+
+        :return: The allow_open_camera of this UpdateStartedConfigReqBody.
+        :rtype: int
+        """
+        return self._allow_open_camera
+
+    @allow_open_camera.setter
+    def allow_open_camera(self, allow_open_camera):
+        """Sets the allow_open_camera of this UpdateStartedConfigReqBody.
+
+        与会人自行开启摄像头 0:禁止 1:允许
+
+        :param allow_open_camera: The allow_open_camera of this UpdateStartedConfigReqBody.
+        :type allow_open_camera: int
+        """
+        self._allow_open_camera = allow_open_camera
+
+    @property
+    def allow_rename(self):
+        """Gets the allow_rename of this UpdateStartedConfigReqBody.
+
+        是否允许与会人改名 0:不允许 1:允许
+
+        :return: The allow_rename of this UpdateStartedConfigReqBody.
+        :rtype: int
+        """
+        return self._allow_rename
+
+    @allow_rename.setter
+    def allow_rename(self, allow_rename):
+        """Sets the allow_rename of this UpdateStartedConfigReqBody.
+
+        是否允许与会人改名 0:不允许 1:允许
+
+        :param allow_rename: The allow_rename of this UpdateStartedConfigReqBody.
+        :type allow_rename: int
+        """
+        self._allow_rename = allow_rename
+
+    @property
+    def label_permission(self):
+        """Gets the label_permission of this UpdateStartedConfigReqBody.
+
+        标注权限 0:所有人可标注 1:仅共享人可标注
+
+        :return: The label_permission of this UpdateStartedConfigReqBody.
+        :rtype: int
+        """
+        return self._label_permission
+
+    @label_permission.setter
+    def label_permission(self, label_permission):
+        """Sets the label_permission of this UpdateStartedConfigReqBody.
+
+        标注权限 0:所有人可标注 1:仅共享人可标注
+
+        :param label_permission: The label_permission of this UpdateStartedConfigReqBody.
+        :type label_permission: int
+        """
+        self._label_permission = label_permission
+
+    @property
+    def free_share(self):
+        """Gets the free_share of this UpdateStartedConfigReqBody.
+
+        抢共享权限设置 0:仅主持人/联席 1:所有人可抢共享
+
+        :return: The free_share of this UpdateStartedConfigReqBody.
+        :rtype: int
+        """
+        return self._free_share
+
+    @free_share.setter
+    def free_share(self, free_share):
+        """Sets the free_share of this UpdateStartedConfigReqBody.
+
+        抢共享权限设置 0:仅主持人/联席 1:所有人可抢共享
+
+        :param free_share: The free_share of this UpdateStartedConfigReqBody.
+        :type free_share: int
+        """
+        self._free_share = free_share
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -29,7 +29,8 @@ class JobBaseInfo:
         'description': 'str',
         'start_time': 'str',
         'expired_days': 'str',
-        'tags': 'list[ResourceTag]'
+        'tags': 'list[ResourceTag]',
+        'is_open_fast_clean': 'bool'
     }
 
     attribute_map = {
@@ -45,10 +46,11 @@ class JobBaseInfo:
         'description': 'description',
         'start_time': 'start_time',
         'expired_days': 'expired_days',
-        'tags': 'tags'
+        'tags': 'tags',
+        'is_open_fast_clean': 'is_open_fast_clean'
     }
 
-    def __init__(self, name=None, job_type=None, multi_write=None, engine_type=None, job_direction=None, task_type=None, net_type=None, charging_mode=None, enterprise_project_id=None, description=None, start_time=None, expired_days=None, tags=None):
+    def __init__(self, name=None, job_type=None, multi_write=None, engine_type=None, job_direction=None, task_type=None, net_type=None, charging_mode=None, enterprise_project_id=None, description=None, start_time=None, expired_days=None, tags=None, is_open_fast_clean=None):
         """JobBaseInfo
 
         The model defined in huaweicloud sdk
@@ -79,6 +81,8 @@ class JobBaseInfo:
         :type expired_days: str
         :param tags: 标签信息，最多添加10个标签。
         :type tags: list[:class:`huaweicloudsdkdrs.v5.ResourceTag`]
+        :param is_open_fast_clean: 是否开启云数据库RDS for MySQL/MariaDB的binlog快速清理。
+        :type is_open_fast_clean: bool
         """
         
         
@@ -96,6 +100,7 @@ class JobBaseInfo:
         self._start_time = None
         self._expired_days = None
         self._tags = None
+        self._is_open_fast_clean = None
         self.discriminator = None
 
         if name is not None:
@@ -124,6 +129,8 @@ class JobBaseInfo:
             self.expired_days = expired_days
         if tags is not None:
             self.tags = tags
+        if is_open_fast_clean is not None:
+            self.is_open_fast_clean = is_open_fast_clean
 
     @property
     def name(self):
@@ -410,6 +417,28 @@ class JobBaseInfo:
         :type tags: list[:class:`huaweicloudsdkdrs.v5.ResourceTag`]
         """
         self._tags = tags
+
+    @property
+    def is_open_fast_clean(self):
+        """Gets the is_open_fast_clean of this JobBaseInfo.
+
+        是否开启云数据库RDS for MySQL/MariaDB的binlog快速清理。
+
+        :return: The is_open_fast_clean of this JobBaseInfo.
+        :rtype: bool
+        """
+        return self._is_open_fast_clean
+
+    @is_open_fast_clean.setter
+    def is_open_fast_clean(self, is_open_fast_clean):
+        """Sets the is_open_fast_clean of this JobBaseInfo.
+
+        是否开启云数据库RDS for MySQL/MariaDB的binlog快速清理。
+
+        :param is_open_fast_clean: The is_open_fast_clean of this JobBaseInfo.
+        :type is_open_fast_clean: bool
+        """
+        self._is_open_fast_clean = is_open_fast_clean
 
     def to_dict(self):
         """Returns the model properties as a dict"""

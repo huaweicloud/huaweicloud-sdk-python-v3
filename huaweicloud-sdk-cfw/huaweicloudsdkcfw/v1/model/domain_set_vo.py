@@ -51,7 +51,7 @@ class DomainSetVo:
         :type description: str
         :param ref_count: 引用次数
         :type ref_count: int
-        :param domain_set_type: 域名组类型，0表示URL过滤，1表示地址解析
+        :param domain_set_type: 域名组类型，0表示应用域名组，1表示网络域名组
         :type domain_set_type: int
         :param config_status: 配置状态
         :type config_status: int
@@ -182,7 +182,7 @@ class DomainSetVo:
     def domain_set_type(self):
         """Gets the domain_set_type of this DomainSetVo.
 
-        域名组类型，0表示URL过滤，1表示地址解析
+        域名组类型，0表示应用域名组，1表示网络域名组
 
         :return: The domain_set_type of this DomainSetVo.
         :rtype: int
@@ -193,7 +193,7 @@ class DomainSetVo:
     def domain_set_type(self, domain_set_type):
         """Sets the domain_set_type of this DomainSetVo.
 
-        域名组类型，0表示URL过滤，1表示地址解析
+        域名组类型，0表示应用域名组，1表示网络域名组
 
         :param domain_set_type: The domain_set_type of this DomainSetVo.
         :type domain_set_type: int

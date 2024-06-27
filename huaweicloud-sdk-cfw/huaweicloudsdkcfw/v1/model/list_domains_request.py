@@ -23,8 +23,6 @@ class ListDomainsRequest:
         'limit': 'int',
         'offset': 'int',
         'domain_name': 'str',
-        'description': 'str',
-        'set_id': 'str',
         'object_id': 'str'
     }
 
@@ -35,12 +33,10 @@ class ListDomainsRequest:
         'limit': 'limit',
         'offset': 'offset',
         'domain_name': 'domain_name',
-        'description': 'description',
-        'set_id': 'set_id',
         'object_id': 'object_Id'
     }
 
-    def __init__(self, domain_set_id=None, enterprise_project_id=None, fw_instance_id=None, limit=None, offset=None, domain_name=None, description=None, set_id=None, object_id=None):
+    def __init__(self, domain_set_id=None, enterprise_project_id=None, fw_instance_id=None, limit=None, offset=None, domain_name=None, object_id=None):
         """ListDomainsRequest
 
         The model defined in huaweicloud sdk
@@ -49,7 +45,7 @@ class ListDomainsRequest:
         :type domain_set_id: str
         :param enterprise_project_id: 企业项目id，用户支持企业项目后，由企业项目生成的id。
         :type enterprise_project_id: str
-        :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。默认情况下，fw_instance_Id为空时，返回帐号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
+        :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，默认情况下，fw_instance_Id为空时，返回账号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
         :type fw_instance_id: str
         :param limit: 每页显示个数，范围为1-1024
         :type limit: int
@@ -57,11 +53,7 @@ class ListDomainsRequest:
         :type offset: int
         :param domain_name: 域名名称
         :type domain_name: str
-        :param description: 描述
-        :type description: str
-        :param set_id: 域名组id
-        :type set_id: str
-        :param object_id: 防护对象id,是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id,可通过调用查询防火墙实例接口获得,注意type为0的为互联网边界防护对象id,type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
+        :param object_id: 互联网边界防护对象id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，type为0的为互联网边界防护对象id。
         :type object_id: str
         """
         
@@ -73,8 +65,6 @@ class ListDomainsRequest:
         self._limit = None
         self._offset = None
         self._domain_name = None
-        self._description = None
-        self._set_id = None
         self._object_id = None
         self.discriminator = None
 
@@ -86,10 +76,6 @@ class ListDomainsRequest:
         self.offset = offset
         if domain_name is not None:
             self.domain_name = domain_name
-        if description is not None:
-            self.description = description
-        if set_id is not None:
-            self.set_id = set_id
         if object_id is not None:
             self.object_id = object_id
 
@@ -141,7 +127,7 @@ class ListDomainsRequest:
     def fw_instance_id(self):
         """Gets the fw_instance_id of this ListDomainsRequest.
 
-        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。默认情况下，fw_instance_Id为空时，返回帐号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
+        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，默认情况下，fw_instance_Id为空时，返回账号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
 
         :return: The fw_instance_id of this ListDomainsRequest.
         :rtype: str
@@ -152,7 +138,7 @@ class ListDomainsRequest:
     def fw_instance_id(self, fw_instance_id):
         """Sets the fw_instance_id of this ListDomainsRequest.
 
-        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。默认情况下，fw_instance_Id为空时，返回帐号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
+        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，默认情况下，fw_instance_Id为空时，返回账号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
 
         :param fw_instance_id: The fw_instance_id of this ListDomainsRequest.
         :type fw_instance_id: str
@@ -226,54 +212,10 @@ class ListDomainsRequest:
         self._domain_name = domain_name
 
     @property
-    def description(self):
-        """Gets the description of this ListDomainsRequest.
-
-        描述
-
-        :return: The description of this ListDomainsRequest.
-        :rtype: str
-        """
-        return self._description
-
-    @description.setter
-    def description(self, description):
-        """Sets the description of this ListDomainsRequest.
-
-        描述
-
-        :param description: The description of this ListDomainsRequest.
-        :type description: str
-        """
-        self._description = description
-
-    @property
-    def set_id(self):
-        """Gets the set_id of this ListDomainsRequest.
-
-        域名组id
-
-        :return: The set_id of this ListDomainsRequest.
-        :rtype: str
-        """
-        return self._set_id
-
-    @set_id.setter
-    def set_id(self, set_id):
-        """Sets the set_id of this ListDomainsRequest.
-
-        域名组id
-
-        :param set_id: The set_id of this ListDomainsRequest.
-        :type set_id: str
-        """
-        self._set_id = set_id
-
-    @property
     def object_id(self):
         """Gets the object_id of this ListDomainsRequest.
 
-        防护对象id,是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id,可通过调用查询防火墙实例接口获得,注意type为0的为互联网边界防护对象id,type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
+        互联网边界防护对象id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，type为0的为互联网边界防护对象id。
 
         :return: The object_id of this ListDomainsRequest.
         :rtype: str
@@ -284,7 +226,7 @@ class ListDomainsRequest:
     def object_id(self, object_id):
         """Sets the object_id of this ListDomainsRequest.
 
-        防护对象id,是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id,可通过调用查询防火墙实例接口获得,注意type为0的为互联网边界防护对象id,type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
+        互联网边界防护对象id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，type为0的为互联网边界防护对象id。
 
         :param object_id: The object_id of this ListDomainsRequest.
         :type object_id: str

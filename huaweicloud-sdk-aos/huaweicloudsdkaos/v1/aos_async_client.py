@@ -1488,6 +1488,12 @@ class AosAsyncClient(Client):
         query_params = []
         if 'stack_id' in local_var_params:
             query_params.append(('stack_id', local_var_params['stack_id']))
+        if 'access_control_source_ips' in local_var_params:
+            query_params.append(('access_control_source_ips', local_var_params['access_control_source_ips']))
+            collection_formats['access_control_source_ips'] = 'multi'
+        if 'access_control_source_vpc_ids' in local_var_params:
+            query_params.append(('access_control_source_vpc_ids', local_var_params['access_control_source_vpc_ids']))
+            collection_formats['access_control_source_vpc_ids'] = 'multi'
 
         header_params = {}
         if 'client_request_id' in local_var_params:
@@ -2262,6 +2268,8 @@ class AosAsyncClient(Client):
         query_params = []
         if 'stack_set_id' in local_var_params:
             query_params.append(('stack_set_id', local_var_params['stack_set_id']))
+        if 'call_identity' in local_var_params:
+            query_params.append(('call_identity', local_var_params['call_identity']))
 
         header_params = {}
         if 'client_request_id' in local_var_params:
@@ -2426,6 +2434,8 @@ class AosAsyncClient(Client):
         if 'sort_dir' in local_var_params:
             query_params.append(('sort_dir', local_var_params['sort_dir']))
             collection_formats['sort_dir'] = 'multi'
+        if 'call_identity' in local_var_params:
+            query_params.append(('call_identity', local_var_params['call_identity']))
 
         header_params = {}
         if 'client_request_id' in local_var_params:
@@ -2509,6 +2519,8 @@ class AosAsyncClient(Client):
         if 'sort_dir' in local_var_params:
             query_params.append(('sort_dir', local_var_params['sort_dir']))
             collection_formats['sort_dir'] = 'multi'
+        if 'call_identity' in local_var_params:
+            query_params.append(('call_identity', local_var_params['call_identity']))
 
         header_params = {}
         if 'client_request_id' in local_var_params:
@@ -2589,6 +2601,8 @@ class AosAsyncClient(Client):
         if 'sort_dir' in local_var_params:
             query_params.append(('sort_dir', local_var_params['sort_dir']))
             collection_formats['sort_dir'] = 'multi'
+        if 'call_identity' in local_var_params:
+            query_params.append(('call_identity', local_var_params['call_identity']))
 
         header_params = {}
         if 'client_request_id' in local_var_params:
@@ -2662,6 +2676,8 @@ class AosAsyncClient(Client):
         query_params = []
         if 'stack_set_id' in local_var_params:
             query_params.append(('stack_set_id', local_var_params['stack_set_id']))
+        if 'call_identity' in local_var_params:
+            query_params.append(('call_identity', local_var_params['call_identity']))
 
         header_params = {}
         if 'client_request_id' in local_var_params:
@@ -2733,6 +2749,8 @@ class AosAsyncClient(Client):
         query_params = []
         if 'stack_set_id' in local_var_params:
             query_params.append(('stack_set_id', local_var_params['stack_set_id']))
+        if 'call_identity' in local_var_params:
+            query_params.append(('call_identity', local_var_params['call_identity']))
 
         header_params = {}
         if 'client_request_id' in local_var_params:
@@ -2808,6 +2826,8 @@ class AosAsyncClient(Client):
         query_params = []
         if 'stack_set_id' in local_var_params:
             query_params.append(('stack_set_id', local_var_params['stack_set_id']))
+        if 'call_identity' in local_var_params:
+            query_params.append(('call_identity', local_var_params['call_identity']))
 
         header_params = {}
         if 'client_request_id' in local_var_params:
@@ -2882,6 +2902,14 @@ class AosAsyncClient(Client):
         query_params = []
         if 'stack_set_id' in local_var_params:
             query_params.append(('stack_set_id', local_var_params['stack_set_id']))
+        if 'access_control_source_ips' in local_var_params:
+            query_params.append(('access_control_source_ips', local_var_params['access_control_source_ips']))
+            collection_formats['access_control_source_ips'] = 'multi'
+        if 'access_control_source_vpc_ids' in local_var_params:
+            query_params.append(('access_control_source_vpc_ids', local_var_params['access_control_source_vpc_ids']))
+            collection_formats['access_control_source_vpc_ids'] = 'multi'
+        if 'call_identity' in local_var_params:
+            query_params.append(('call_identity', local_var_params['call_identity']))
 
         header_params = {}
         if 'client_request_id' in local_var_params:
@@ -3573,6 +3601,12 @@ class AosAsyncClient(Client):
         query_params = []
         if 'template_id' in local_var_params:
             query_params.append(('template_id', local_var_params['template_id']))
+        if 'access_control_source_vpc_ids' in local_var_params:
+            query_params.append(('access_control_source_vpc_ids', local_var_params['access_control_source_vpc_ids']))
+            collection_formats['access_control_source_vpc_ids'] = 'multi'
+        if 'access_control_source_ips' in local_var_params:
+            query_params.append(('access_control_source_ips', local_var_params['access_control_source_ips']))
+            collection_formats['access_control_source_ips'] = 'multi'
 
         header_params = {}
         if 'client_request_id' in local_var_params:

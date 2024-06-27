@@ -17,7 +17,6 @@ class BlackWhiteListResponseData:
     sensitive_list = []
 
     openapi_types = {
-        'object_id': 'str',
         'offset': 'int',
         'limit': 'int',
         'total': 'int',
@@ -25,20 +24,17 @@ class BlackWhiteListResponseData:
     }
 
     attribute_map = {
-        'object_id': 'object_id',
         'offset': 'offset',
         'limit': 'limit',
         'total': 'total',
         'records': 'records'
     }
 
-    def __init__(self, object_id=None, offset=None, limit=None, total=None, records=None):
+    def __init__(self, offset=None, limit=None, total=None, records=None):
         """BlackWhiteListResponseData
 
         The model defined in huaweicloud sdk
 
-        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用查询防火墙实例接口获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
-        :type object_id: str
         :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
         :type offset: int
         :param limit: 每页显示个数，范围为1-1024
@@ -51,15 +47,12 @@ class BlackWhiteListResponseData:
         
         
 
-        self._object_id = None
         self._offset = None
         self._limit = None
         self._total = None
         self._records = None
         self.discriminator = None
 
-        if object_id is not None:
-            self.object_id = object_id
         if offset is not None:
             self.offset = offset
         if limit is not None:
@@ -68,28 +61,6 @@ class BlackWhiteListResponseData:
             self.total = total
         if records is not None:
             self.records = records
-
-    @property
-    def object_id(self):
-        """Gets the object_id of this BlackWhiteListResponseData.
-
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用查询防火墙实例接口获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
-
-        :return: The object_id of this BlackWhiteListResponseData.
-        :rtype: str
-        """
-        return self._object_id
-
-    @object_id.setter
-    def object_id(self, object_id):
-        """Sets the object_id of this BlackWhiteListResponseData.
-
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用查询防火墙实例接口获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
-
-        :param object_id: The object_id of this BlackWhiteListResponseData.
-        :type object_id: str
-        """
-        self._object_id = object_id
 
     @property
     def offset(self):

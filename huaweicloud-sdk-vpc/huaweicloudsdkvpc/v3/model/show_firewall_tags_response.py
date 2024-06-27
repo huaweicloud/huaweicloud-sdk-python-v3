@@ -18,50 +18,45 @@ class ShowFirewallTagsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'tags': 'ResourceTag',
-        'request_id': 'str',
-        'sys_tags': 'ResourceTag'
+        'tags': 'list[ResourceTag]',
+        'request_id': 'str'
     }
 
     attribute_map = {
         'tags': 'tags',
-        'request_id': 'request_id',
-        'sys_tags': 'sys_tags'
+        'request_id': 'request_id'
     }
 
-    def __init__(self, tags=None, request_id=None, sys_tags=None):
+    def __init__(self, tags=None, request_id=None):
         """ShowFirewallTagsResponse
 
         The model defined in huaweicloud sdk
 
-        :param tags: 
-        :type tags: :class:`huaweicloudsdkvpc.v3.ResourceTag`
+        :param tags: tag对象列表
+        :type tags: list[:class:`huaweicloudsdkvpc.v3.ResourceTag`]
         :param request_id: 请求ID
         :type request_id: str
-        :param sys_tags: 
-        :type sys_tags: :class:`huaweicloudsdkvpc.v3.ResourceTag`
         """
         
         super(ShowFirewallTagsResponse, self).__init__()
 
         self._tags = None
         self._request_id = None
-        self._sys_tags = None
         self.discriminator = None
 
         if tags is not None:
             self.tags = tags
         if request_id is not None:
             self.request_id = request_id
-        if sys_tags is not None:
-            self.sys_tags = sys_tags
 
     @property
     def tags(self):
         """Gets the tags of this ShowFirewallTagsResponse.
 
+        tag对象列表
+
         :return: The tags of this ShowFirewallTagsResponse.
-        :rtype: :class:`huaweicloudsdkvpc.v3.ResourceTag`
+        :rtype: list[:class:`huaweicloudsdkvpc.v3.ResourceTag`]
         """
         return self._tags
 
@@ -69,8 +64,10 @@ class ShowFirewallTagsResponse(SdkResponse):
     def tags(self, tags):
         """Sets the tags of this ShowFirewallTagsResponse.
 
+        tag对象列表
+
         :param tags: The tags of this ShowFirewallTagsResponse.
-        :type tags: :class:`huaweicloudsdkvpc.v3.ResourceTag`
+        :type tags: list[:class:`huaweicloudsdkvpc.v3.ResourceTag`]
         """
         self._tags = tags
 
@@ -95,24 +92,6 @@ class ShowFirewallTagsResponse(SdkResponse):
         :type request_id: str
         """
         self._request_id = request_id
-
-    @property
-    def sys_tags(self):
-        """Gets the sys_tags of this ShowFirewallTagsResponse.
-
-        :return: The sys_tags of this ShowFirewallTagsResponse.
-        :rtype: :class:`huaweicloudsdkvpc.v3.ResourceTag`
-        """
-        return self._sys_tags
-
-    @sys_tags.setter
-    def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this ShowFirewallTagsResponse.
-
-        :param sys_tags: The sys_tags of this ShowFirewallTagsResponse.
-        :type sys_tags: :class:`huaweicloudsdkvpc.v3.ResourceTag`
-        """
-        self._sys_tags = sys_tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

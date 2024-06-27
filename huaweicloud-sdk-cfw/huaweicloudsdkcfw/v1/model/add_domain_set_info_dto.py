@@ -39,9 +39,9 @@ class AddDomainSetInfoDto:
 
         The model defined in huaweicloud sdk
 
-        :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。默认情况下，fw_instance_Id为空时，返回帐号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
+        :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，默认情况下，fw_instance_Id为空时，返回账号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
         :type fw_instance_id: str
-        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用查询防火墙实例接口获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
+        :param object_id: 互联网边界防护对象id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，type为0的为互联网边界防护对象id。
         :type object_id: str
         :param name: 域名组名称
         :type name: str
@@ -49,7 +49,7 @@ class AddDomainSetInfoDto:
         :type description: str
         :param domain_names: 域名信息列表
         :type domain_names: list[:class:`huaweicloudsdkcfw.v1.DomainSetInfoDto`]
-        :param domain_set_type: 域名组类型，0表示URL过滤，1表示地址解析
+        :param domain_set_type: 域名组类型，0表示应用域名组，1表示网络域名组
         :type domain_set_type: int
         """
         
@@ -68,15 +68,14 @@ class AddDomainSetInfoDto:
         self.name = name
         if description is not None:
             self.description = description
-        if domain_names is not None:
-            self.domain_names = domain_names
+        self.domain_names = domain_names
         self.domain_set_type = domain_set_type
 
     @property
     def fw_instance_id(self):
         """Gets the fw_instance_id of this AddDomainSetInfoDto.
 
-        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。默认情况下，fw_instance_Id为空时，返回帐号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
+        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，默认情况下，fw_instance_Id为空时，返回账号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
 
         :return: The fw_instance_id of this AddDomainSetInfoDto.
         :rtype: str
@@ -87,7 +86,7 @@ class AddDomainSetInfoDto:
     def fw_instance_id(self, fw_instance_id):
         """Sets the fw_instance_id of this AddDomainSetInfoDto.
 
-        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。默认情况下，fw_instance_Id为空时，返回帐号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
+        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，默认情况下，fw_instance_Id为空时，返回账号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
 
         :param fw_instance_id: The fw_instance_id of this AddDomainSetInfoDto.
         :type fw_instance_id: str
@@ -98,7 +97,7 @@ class AddDomainSetInfoDto:
     def object_id(self):
         """Gets the object_id of this AddDomainSetInfoDto.
 
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用查询防火墙实例接口获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
+        互联网边界防护对象id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，type为0的为互联网边界防护对象id。
 
         :return: The object_id of this AddDomainSetInfoDto.
         :rtype: str
@@ -109,7 +108,7 @@ class AddDomainSetInfoDto:
     def object_id(self, object_id):
         """Sets the object_id of this AddDomainSetInfoDto.
 
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用查询防火墙实例接口获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
+        互联网边界防护对象id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，type为0的为互联网边界防护对象id。
 
         :param object_id: The object_id of this AddDomainSetInfoDto.
         :type object_id: str
@@ -186,7 +185,7 @@ class AddDomainSetInfoDto:
     def domain_set_type(self):
         """Gets the domain_set_type of this AddDomainSetInfoDto.
 
-        域名组类型，0表示URL过滤，1表示地址解析
+        域名组类型，0表示应用域名组，1表示网络域名组
 
         :return: The domain_set_type of this AddDomainSetInfoDto.
         :rtype: int
@@ -197,7 +196,7 @@ class AddDomainSetInfoDto:
     def domain_set_type(self, domain_set_type):
         """Sets the domain_set_type of this AddDomainSetInfoDto.
 
-        域名组类型，0表示URL过滤，1表示地址解析
+        域名组类型，0表示应用域名组，1表示网络域名组
 
         :param domain_set_type: The domain_set_type of this AddDomainSetInfoDto.
         :type domain_set_type: int

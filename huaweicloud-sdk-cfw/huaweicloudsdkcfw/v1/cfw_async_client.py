@@ -724,6 +724,75 @@ class CfwAsyncClient(Client):
 
         return http_info
 
+    def cancel_capture_task_async(self, request):
+        """取消抓包任务
+
+        取消抓包任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CancelCaptureTask
+        :type request: :class:`huaweicloudsdkcfw.v1.CancelCaptureTaskRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.CancelCaptureTaskResponse`
+        """
+        http_info = self._cancel_capture_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def cancel_capture_task_async_invoker(self, request):
+        http_info = self._cancel_capture_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _cancel_capture_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/capture-task/stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelCaptureTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def change_east_west_firewall_status_async(self, request):
         """修改东西向防火墙防护状态
 
@@ -749,6 +818,75 @@ class CfwAsyncClient(Client):
             "resource_path": "/v1/{project_id}/firewall/east-west/protect",
             "request_type": request.__class__.__name__,
             "response_type": "ChangeEastWestFirewallStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_capture_task_async(self, request):
+        """创建抓包任务
+
+        创建抓包任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateCaptureTask
+        :type request: :class:`huaweicloudsdkcfw.v1.CreateCaptureTaskRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.CreateCaptureTaskResponse`
+        """
+        http_info = self._create_capture_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_capture_task_async_invoker(self, request):
+        http_info = self._create_capture_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_capture_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/capture-task",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCaptureTaskResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -902,8 +1040,73 @@ class CfwAsyncClient(Client):
         header_params = {}
         if 'x_client_token' in local_var_params:
             header_params['X-Client-Token'] = local_var_params['x_client_token']
-        if 'x_trace_id' in local_var_params:
-            header_params['X-Trace-Id'] = local_var_params['x_trace_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_tag_async(self, request):
+        """标签创建接口
+
+        创建标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateTag
+        :type request: :class:`huaweicloudsdkcfw.v1.CreateTagRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.CreateTagResponse`
+        """
+        http_info = self._create_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_tag_async_invoker(self, request):
+        http_info = self._create_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_tag_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/cfw-cfw/{fw_instance_id}/tags/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'fw_instance_id' in local_var_params:
+            path_params['fw_instance_id'] = local_var_params['fw_instance_id']
+
+        query_params = []
+
+        header_params = {}
 
         form_params = {}
 
@@ -1117,6 +1320,75 @@ class CfwAsyncClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_capture_task_async(self, request):
+        """删除抓包任务
+
+        删除抓包任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteCaptureTask
+        :type request: :class:`huaweicloudsdkcfw.v1.DeleteCaptureTaskRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.DeleteCaptureTaskResponse`
+        """
+        http_info = self._delete_capture_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_capture_task_async_invoker(self, request):
+        http_info = self._delete_capture_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_capture_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/capture-task/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCaptureTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -1479,6 +1751,73 @@ class CfwAsyncClient(Client):
 
         return http_info
 
+    def delete_tag_async(self, request):
+        """删除标签
+
+        删除标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteTag
+        :type request: :class:`huaweicloudsdkcfw.v1.DeleteTagRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.DeleteTagResponse`
+        """
+        http_info = self._delete_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_tag_async_invoker(self, request):
+        http_info = self._delete_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_tag_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/cfw-cfw/{fw_instance_id}/tags/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'fw_instance_id' in local_var_params:
+            path_params['fw_instance_id'] = local_var_params['fw_instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_access_control_logs_async(self, request):
         """查询访问控制日志
 
@@ -1557,6 +1896,14 @@ class CfwAsyncClient(Client):
             query_params.append(('src_region_name', local_var_params['src_region_name']))
         if 'dst_region_name' in local_var_params:
             query_params.append(('dst_region_name', local_var_params['dst_region_name']))
+        if 'src_province_name' in local_var_params:
+            query_params.append(('src_province_name', local_var_params['src_province_name']))
+        if 'dst_province_name' in local_var_params:
+            query_params.append(('dst_province_name', local_var_params['dst_province_name']))
+        if 'src_city_name' in local_var_params:
+            query_params.append(('src_city_name', local_var_params['src_city_name']))
+        if 'dst_city_name' in local_var_params:
+            query_params.append(('dst_city_name', local_var_params['dst_city_name']))
 
         header_params = {}
 
@@ -1889,8 +2236,6 @@ class CfwAsyncClient(Client):
             query_params.append(('attack_rule', local_var_params['attack_rule']))
         if 'level' in local_var_params:
             query_params.append(('level', local_var_params['level']))
-        if 'source' in local_var_params:
-            query_params.append(('source', local_var_params['source']))
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'dst_host' in local_var_params:
@@ -1903,6 +2248,14 @@ class CfwAsyncClient(Client):
             query_params.append(('src_region_name', local_var_params['src_region_name']))
         if 'dst_region_name' in local_var_params:
             query_params.append(('dst_region_name', local_var_params['dst_region_name']))
+        if 'src_province_name' in local_var_params:
+            query_params.append(('src_province_name', local_var_params['src_province_name']))
+        if 'dst_province_name' in local_var_params:
+            query_params.append(('dst_province_name', local_var_params['dst_province_name']))
+        if 'src_city_name' in local_var_params:
+            query_params.append(('src_city_name', local_var_params['src_city_name']))
+        if 'dst_city_name' in local_var_params:
+            query_params.append(('dst_city_name', local_var_params['dst_city_name']))
 
         header_params = {}
 
@@ -1984,6 +2337,151 @@ class CfwAsyncClient(Client):
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'fw_instance_id' in local_var_params:
             query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_capture_result_async(self, request):
+        """获取抓包任务结果
+
+        获取抓包任务结果
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListCaptureResult
+        :type request: :class:`huaweicloudsdkcfw.v1.ListCaptureResultRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.ListCaptureResultResponse`
+        """
+        http_info = self._list_capture_result_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_capture_result_async_invoker(self, request):
+        http_info = self._list_capture_result_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_capture_result_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/capture-task/capture-result",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCaptureResultResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+        if 'task_id' in local_var_params:
+            query_params.append(('task_id', local_var_params['task_id']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'ip' in local_var_params:
+            query_params.append(('ip', local_var_params['ip']))
+            collection_formats['ip'] = 'csv'
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_capture_task_async(self, request):
+        """查询抓包任务
+
+        查询抓包任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListCaptureTask
+        :type request: :class:`huaweicloudsdkcfw.v1.ListCaptureTaskRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.ListCaptureTaskResponse`
+        """
+        http_info = self._list_capture_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_capture_task_async_invoker(self, request):
+        http_info = self._list_capture_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_capture_task_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/capture-task",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCaptureTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
 
@@ -2280,10 +2778,6 @@ class CfwAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'domain_name' in local_var_params:
             query_params.append(('domain_name', local_var_params['domain_name']))
-        if 'description' in local_var_params:
-            query_params.append(('description', local_var_params['description']))
-        if 'set_id' in local_var_params:
-            query_params.append(('set_id', local_var_params['set_id']))
         if 'object_id' in local_var_params:
             query_params.append(('object_Id', local_var_params['object_id']))
 
@@ -2600,6 +3094,14 @@ class CfwAsyncClient(Client):
             query_params.append(('src_region_name', local_var_params['src_region_name']))
         if 'dst_region_name' in local_var_params:
             query_params.append(('dst_region_name', local_var_params['dst_region_name']))
+        if 'src_province_name' in local_var_params:
+            query_params.append(('src_province_name', local_var_params['src_province_name']))
+        if 'dst_province_name' in local_var_params:
+            query_params.append(('dst_province_name', local_var_params['dst_province_name']))
+        if 'src_city_name' in local_var_params:
+            query_params.append(('src_city_name', local_var_params['src_city_name']))
+        if 'dst_city_name' in local_var_params:
+            query_params.append(('dst_city_name', local_var_params['dst_city_name']))
 
         header_params = {}
 
@@ -3927,8 +4429,6 @@ class CfwAsyncClient(Client):
             query_params.append(('object_id', local_var_params['object_id']))
         if 'type' in local_var_params:
             query_params.append(('type', local_var_params['type']))
-        if 'protocol' in local_var_params:
-            query_params.append(('protocol', local_var_params['protocol']))
         if 'ip' in local_var_params:
             query_params.append(('ip', local_var_params['ip']))
         if 'name' in local_var_params:

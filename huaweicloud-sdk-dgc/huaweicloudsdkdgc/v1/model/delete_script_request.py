@@ -18,15 +18,17 @@ class DeleteScriptRequest:
 
     openapi_types = {
         'workspace': 'str',
-        'script_name': 'str'
+        'script_name': 'str',
+        'body': 'DeleteReq'
     }
 
     attribute_map = {
         'workspace': 'workspace',
-        'script_name': 'script_name'
+        'script_name': 'script_name',
+        'body': 'body'
     }
 
-    def __init__(self, workspace=None, script_name=None):
+    def __init__(self, workspace=None, script_name=None, body=None):
         """DeleteScriptRequest
 
         The model defined in huaweicloud sdk
@@ -35,17 +37,22 @@ class DeleteScriptRequest:
         :type workspace: str
         :param script_name: 
         :type script_name: str
+        :param body: Body of the DeleteScriptRequest
+        :type body: :class:`huaweicloudsdkdgc.v1.DeleteReq`
         """
         
         
 
         self._workspace = None
         self._script_name = None
+        self._body = None
         self.discriminator = None
 
         if workspace is not None:
             self.workspace = workspace
         self.script_name = script_name
+        if body is not None:
+            self.body = body
 
     @property
     def workspace(self):
@@ -86,6 +93,24 @@ class DeleteScriptRequest:
         :type script_name: str
         """
         self._script_name = script_name
+
+    @property
+    def body(self):
+        """Gets the body of this DeleteScriptRequest.
+
+        :return: The body of this DeleteScriptRequest.
+        :rtype: :class:`huaweicloudsdkdgc.v1.DeleteReq`
+        """
+        return self._body
+
+    @body.setter
+    def body(self, body):
+        """Sets the body of this DeleteScriptRequest.
+
+        :param body: The body of this DeleteScriptRequest.
+        :type body: :class:`huaweicloudsdkdgc.v1.DeleteReq`
+        """
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

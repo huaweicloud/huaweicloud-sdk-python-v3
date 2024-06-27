@@ -44,7 +44,7 @@ def sdk_request_get():
                              host="service.endpoint.myhuaweicloud.com",
                              resource_path="/resources",
                              query_params=[("size", "1")],
-                             header_params={"X-Sdk-Date": "20200608T023900Z"},
+                             header_params={"X-Sdk-Date": "20200608T023900Z", "TEST_UNDERSCORE": "TEST_VALUE"},
                              body="")
     yield sdk_request
 
@@ -56,7 +56,7 @@ def sdk_request_post():
                              host="service.endpoint.myhuaweicloud.com",
                              resource_path="/resources",
                              query_params=[("size", "1")],
-                             header_params={"X-Sdk-Date": "20200608T023900Z"},
+                             header_params={"X-Sdk-Date": "20200608T023900Z", "TEST_UNDERSCORE": "TEST_VALUE"},
                              body='{"name":"test","id":1}')
     yield sdk_request
 

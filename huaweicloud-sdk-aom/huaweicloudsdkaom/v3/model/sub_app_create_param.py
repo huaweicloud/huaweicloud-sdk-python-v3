@@ -37,15 +37,15 @@ class SubAppCreateParam:
 
         The model defined in huaweicloud sdk
 
-        :param name: 子应用名称：字符集长度2-64，仅支持字符集：英文字母、数字、下划线、中划线、点
+        :param name: 子应用唯一标识
         :type name: str
-        :param display_name: 子应用节点显示名：字符集长度2-64，仅支持字符集：中文字符、英文字母、数字、下划线、中划线、点
+        :param display_name: 子应用节点显示名称
         :type display_name: str
-        :param model_id: 应用Id、子应用Id,id长度不能超过36位，由大小写字母、数字组成
+        :param model_id: 应用Id、子应用Id
         :type model_id: str
-        :param model_type: 应用、子应用，取值：APPLICATION、SUB_APPLICATION，不区分大小写
+        :param model_type: 应用、子应用，取值：APPLICATION、SUB_APPLICATION
         :type model_type: str
-        :param description: 描述：最大255字符
+        :param description: 子应用描述
         :type description: str
         """
         
@@ -70,7 +70,7 @@ class SubAppCreateParam:
     def name(self):
         """Gets the name of this SubAppCreateParam.
 
-        子应用名称：字符集长度2-64，仅支持字符集：英文字母、数字、下划线、中划线、点
+        子应用唯一标识
 
         :return: The name of this SubAppCreateParam.
         :rtype: str
@@ -81,7 +81,7 @@ class SubAppCreateParam:
     def name(self, name):
         """Sets the name of this SubAppCreateParam.
 
-        子应用名称：字符集长度2-64，仅支持字符集：英文字母、数字、下划线、中划线、点
+        子应用唯一标识
 
         :param name: The name of this SubAppCreateParam.
         :type name: str
@@ -92,7 +92,7 @@ class SubAppCreateParam:
     def display_name(self):
         """Gets the display_name of this SubAppCreateParam.
 
-        子应用节点显示名：字符集长度2-64，仅支持字符集：中文字符、英文字母、数字、下划线、中划线、点
+        子应用节点显示名称
 
         :return: The display_name of this SubAppCreateParam.
         :rtype: str
@@ -103,7 +103,7 @@ class SubAppCreateParam:
     def display_name(self, display_name):
         """Sets the display_name of this SubAppCreateParam.
 
-        子应用节点显示名：字符集长度2-64，仅支持字符集：中文字符、英文字母、数字、下划线、中划线、点
+        子应用节点显示名称
 
         :param display_name: The display_name of this SubAppCreateParam.
         :type display_name: str
@@ -114,7 +114,7 @@ class SubAppCreateParam:
     def model_id(self):
         """Gets the model_id of this SubAppCreateParam.
 
-        应用Id、子应用Id,id长度不能超过36位，由大小写字母、数字组成
+        应用Id、子应用Id
 
         :return: The model_id of this SubAppCreateParam.
         :rtype: str
@@ -125,7 +125,7 @@ class SubAppCreateParam:
     def model_id(self, model_id):
         """Sets the model_id of this SubAppCreateParam.
 
-        应用Id、子应用Id,id长度不能超过36位，由大小写字母、数字组成
+        应用Id、子应用Id
 
         :param model_id: The model_id of this SubAppCreateParam.
         :type model_id: str
@@ -136,7 +136,7 @@ class SubAppCreateParam:
     def model_type(self):
         """Gets the model_type of this SubAppCreateParam.
 
-        应用、子应用，取值：APPLICATION、SUB_APPLICATION，不区分大小写
+        应用、子应用，取值：APPLICATION、SUB_APPLICATION
 
         :return: The model_type of this SubAppCreateParam.
         :rtype: str
@@ -147,7 +147,7 @@ class SubAppCreateParam:
     def model_type(self, model_type):
         """Sets the model_type of this SubAppCreateParam.
 
-        应用、子应用，取值：APPLICATION、SUB_APPLICATION，不区分大小写
+        应用、子应用，取值：APPLICATION、SUB_APPLICATION
 
         :param model_type: The model_type of this SubAppCreateParam.
         :type model_type: str
@@ -158,7 +158,7 @@ class SubAppCreateParam:
     def description(self):
         """Gets the description of this SubAppCreateParam.
 
-        描述：最大255字符
+        子应用描述
 
         :return: The description of this SubAppCreateParam.
         :rtype: str
@@ -169,7 +169,7 @@ class SubAppCreateParam:
     def description(self, description):
         """Sets the description of this SubAppCreateParam.
 
-        描述：最大255字符
+        子应用描述
 
         :param description: The description of this SubAppCreateParam.
         :type description: str

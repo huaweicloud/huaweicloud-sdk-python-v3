@@ -53,8 +53,7 @@ class CreateFirewallReqFlavor:
         self._extend_vpc_count = None
         self.discriminator = None
 
-        if version is not None:
-            self.version = version
+        self.version = version
         if extend_eip_count is not None:
             self.extend_eip_count = extend_eip_count
         if extend_bandwidth is not None:

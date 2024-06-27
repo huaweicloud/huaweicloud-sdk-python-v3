@@ -19,16 +19,18 @@ class DeleteStackInstanceRequestBody:
     openapi_types = {
         'stack_set_id': 'str',
         'deployment_targets': 'DeploymentTargets',
-        'operation_preferences': 'OperationPreferences'
+        'operation_preferences': 'OperationPreferences',
+        'call_identity': 'str'
     }
 
     attribute_map = {
         'stack_set_id': 'stack_set_id',
         'deployment_targets': 'deployment_targets',
-        'operation_preferences': 'operation_preferences'
+        'operation_preferences': 'operation_preferences',
+        'call_identity': 'call_identity'
     }
 
-    def __init__(self, stack_set_id=None, deployment_targets=None, operation_preferences=None):
+    def __init__(self, stack_set_id=None, deployment_targets=None, operation_preferences=None, call_identity=None):
         """DeleteStackInstanceRequestBody
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class DeleteStackInstanceRequestBody:
         :type deployment_targets: :class:`huaweicloudsdkaos.v1.DeploymentTargets`
         :param operation_preferences: 
         :type operation_preferences: :class:`huaweicloudsdkaos.v1.OperationPreferences`
+        :param call_identity: 仅支持资源栈集权限模式为SERVICE_MANAGED时指定该参数。用于指定用户是以组织管理账号还是成员帐户中的服务委托管理员身份调用资源栈集。默认为SELF。 当资源栈集权限模式为SELF_MANAGED时，默认为SELF。 * 无论指定何种用户身份，涉及操作的资源栈集始终在组织管理账号名下。*   * &#x60;SELF&#x60; - 以组织管理账号身份调用。   * &#x60;DELEGATED_ADMIN&#x60; - 以服务委托管理员身份调用。用户的华为云账号必须在组织中已经被注册为”资源编排资源栈集服务“的委托管理员。
+        :type call_identity: str
         """
         
         
@@ -46,6 +50,7 @@ class DeleteStackInstanceRequestBody:
         self._stack_set_id = None
         self._deployment_targets = None
         self._operation_preferences = None
+        self._call_identity = None
         self.discriminator = None
 
         if stack_set_id is not None:
@@ -53,6 +58,8 @@ class DeleteStackInstanceRequestBody:
         self.deployment_targets = deployment_targets
         if operation_preferences is not None:
             self.operation_preferences = operation_preferences
+        if call_identity is not None:
+            self.call_identity = call_identity
 
     @property
     def stack_set_id(self):
@@ -111,6 +118,28 @@ class DeleteStackInstanceRequestBody:
         :type operation_preferences: :class:`huaweicloudsdkaos.v1.OperationPreferences`
         """
         self._operation_preferences = operation_preferences
+
+    @property
+    def call_identity(self):
+        """Gets the call_identity of this DeleteStackInstanceRequestBody.
+
+        仅支持资源栈集权限模式为SERVICE_MANAGED时指定该参数。用于指定用户是以组织管理账号还是成员帐户中的服务委托管理员身份调用资源栈集。默认为SELF。 当资源栈集权限模式为SELF_MANAGED时，默认为SELF。 * 无论指定何种用户身份，涉及操作的资源栈集始终在组织管理账号名下。*   * `SELF` - 以组织管理账号身份调用。   * `DELEGATED_ADMIN` - 以服务委托管理员身份调用。用户的华为云账号必须在组织中已经被注册为”资源编排资源栈集服务“的委托管理员。
+
+        :return: The call_identity of this DeleteStackInstanceRequestBody.
+        :rtype: str
+        """
+        return self._call_identity
+
+    @call_identity.setter
+    def call_identity(self, call_identity):
+        """Sets the call_identity of this DeleteStackInstanceRequestBody.
+
+        仅支持资源栈集权限模式为SERVICE_MANAGED时指定该参数。用于指定用户是以组织管理账号还是成员帐户中的服务委托管理员身份调用资源栈集。默认为SELF。 当资源栈集权限模式为SELF_MANAGED时，默认为SELF。 * 无论指定何种用户身份，涉及操作的资源栈集始终在组织管理账号名下。*   * `SELF` - 以组织管理账号身份调用。   * `DELEGATED_ADMIN` - 以服务委托管理员身份调用。用户的华为云账号必须在组织中已经被注册为”资源编排资源栈集服务“的委托管理员。
+
+        :param call_identity: The call_identity of this DeleteStackInstanceRequestBody.
+        :type call_identity: str
+        """
+        self._call_identity = call_identity
 
     def to_dict(self):
         """Returns the model properties as a dict"""

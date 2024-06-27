@@ -33,11 +33,11 @@ class SubAppUpdateParam:
 
         The model defined in huaweicloud sdk
 
-        :param name: 子应用名称：字符集长度2-64，仅支持字符集：英文字母、数字、下划线、中划线、点
+        :param name: 子应用唯一标识
         :type name: str
-        :param display_name: 子应用节点显示名：字符集长度2-64，仅支持字符集：中文字符、英文字母、数字、下划线、中划线、点
+        :param display_name: 子应用节点显示名称
         :type display_name: str
-        :param description: 描述：最大255字符
+        :param description: 子应用描述
         :type description: str
         """
         
@@ -58,7 +58,7 @@ class SubAppUpdateParam:
     def name(self):
         """Gets the name of this SubAppUpdateParam.
 
-        子应用名称：字符集长度2-64，仅支持字符集：英文字母、数字、下划线、中划线、点
+        子应用唯一标识
 
         :return: The name of this SubAppUpdateParam.
         :rtype: str
@@ -69,7 +69,7 @@ class SubAppUpdateParam:
     def name(self, name):
         """Sets the name of this SubAppUpdateParam.
 
-        子应用名称：字符集长度2-64，仅支持字符集：英文字母、数字、下划线、中划线、点
+        子应用唯一标识
 
         :param name: The name of this SubAppUpdateParam.
         :type name: str
@@ -80,7 +80,7 @@ class SubAppUpdateParam:
     def display_name(self):
         """Gets the display_name of this SubAppUpdateParam.
 
-        子应用节点显示名：字符集长度2-64，仅支持字符集：中文字符、英文字母、数字、下划线、中划线、点
+        子应用节点显示名称
 
         :return: The display_name of this SubAppUpdateParam.
         :rtype: str
@@ -91,7 +91,7 @@ class SubAppUpdateParam:
     def display_name(self, display_name):
         """Sets the display_name of this SubAppUpdateParam.
 
-        子应用节点显示名：字符集长度2-64，仅支持字符集：中文字符、英文字母、数字、下划线、中划线、点
+        子应用节点显示名称
 
         :param display_name: The display_name of this SubAppUpdateParam.
         :type display_name: str
@@ -102,7 +102,7 @@ class SubAppUpdateParam:
     def description(self):
         """Gets the description of this SubAppUpdateParam.
 
-        描述：最大255字符
+        子应用描述
 
         :return: The description of this SubAppUpdateParam.
         :rtype: str
@@ -113,7 +113,7 @@ class SubAppUpdateParam:
     def description(self, description):
         """Sets the description of this SubAppUpdateParam.
 
-        描述：最大255字符
+        子应用描述
 
         :param description: The description of this SubAppUpdateParam.
         :type description: str

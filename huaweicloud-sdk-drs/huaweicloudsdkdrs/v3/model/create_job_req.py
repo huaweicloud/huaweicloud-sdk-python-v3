@@ -40,7 +40,8 @@ class CreateJobReq:
         'slave_az': 'str',
         'charging_mode': 'str',
         'period_order': 'PeriodOrderInfo',
-        'public_ip_list': 'list[PublicIpConfig]'
+        'public_ip_list': 'list[PublicIpConfig]',
+        'is_open_fast_clean': 'bool'
     }
 
     attribute_map = {
@@ -67,10 +68,11 @@ class CreateJobReq:
         'slave_az': 'slave_az',
         'charging_mode': 'charging_mode',
         'period_order': 'period_order',
-        'public_ip_list': 'public_ip_list'
+        'public_ip_list': 'public_ip_list',
+        'is_open_fast_clean': 'is_open_fast_clean'
     }
 
-    def __init__(self, bind_eip=None, db_use_type=None, name=None, description=None, engine_type=None, is_target_readonly=None, job_direction=None, multi_write=None, net_type=None, node_num=None, node_type=None, source_endpoint=None, target_endpoint=None, tags=None, task_type=None, customize_sutnet_id=None, product_id=None, sys_tags=None, expired_days=None, master_az=None, slave_az=None, charging_mode=None, period_order=None, public_ip_list=None):
+    def __init__(self, bind_eip=None, db_use_type=None, name=None, description=None, engine_type=None, is_target_readonly=None, job_direction=None, multi_write=None, net_type=None, node_num=None, node_type=None, source_endpoint=None, target_endpoint=None, tags=None, task_type=None, customize_sutnet_id=None, product_id=None, sys_tags=None, expired_days=None, master_az=None, slave_az=None, charging_mode=None, period_order=None, public_ip_list=None, is_open_fast_clean=None):
         """CreateJobReq
 
         The model defined in huaweicloud sdk
@@ -109,7 +111,7 @@ class CreateJobReq:
         :type customize_sutnet_id: str
         :param product_id: 产品id。
         :type product_id: str
-        :param sys_tags: 企业项目，不填默认为default，key值必须为_sys_enterprise_project_id，value为企业项目ID，只能有一个企业项目。
+        :param sys_tags: 企业项目，不填默认为default，key值必须为_sys_enterprise_project_id，value为企业项目ID，只能填一个企业项目。
         :type sys_tags: list[:class:`huaweicloudsdkdrs.v3.ResourceTag`]
         :param expired_days: 任务处于异常状态一段时间后，将会自动结束，单位为天。(范围14-100)，不传默认为14天。
         :type expired_days: str
@@ -121,8 +123,10 @@ class CreateJobReq:
         :type charging_mode: str
         :param period_order: 
         :type period_order: :class:`huaweicloudsdkdrs.v3.PeriodOrderInfo`
-        :param public_ip_list: 指定公网IP的信息
+        :param public_ip_list: 指定公网IP的信息。
         :type public_ip_list: list[:class:`huaweicloudsdkdrs.v3.PublicIpConfig`]
+        :param is_open_fast_clean: 是否开启云数据库RDS for MySQL/MariaDB的binlog快速清理。不传默认为false，不开启快速清理。
+        :type is_open_fast_clean: bool
         """
         
         
@@ -151,6 +155,7 @@ class CreateJobReq:
         self._charging_mode = None
         self._period_order = None
         self._public_ip_list = None
+        self._is_open_fast_clean = None
         self.discriminator = None
 
         if bind_eip is not None:
@@ -191,6 +196,8 @@ class CreateJobReq:
             self.period_order = period_order
         if public_ip_list is not None:
             self.public_ip_list = public_ip_list
+        if is_open_fast_clean is not None:
+            self.is_open_fast_clean = is_open_fast_clean
 
     @property
     def bind_eip(self):
@@ -562,7 +569,7 @@ class CreateJobReq:
     def sys_tags(self):
         """Gets the sys_tags of this CreateJobReq.
 
-        企业项目，不填默认为default，key值必须为_sys_enterprise_project_id，value为企业项目ID，只能有一个企业项目。
+        企业项目，不填默认为default，key值必须为_sys_enterprise_project_id，value为企业项目ID，只能填一个企业项目。
 
         :return: The sys_tags of this CreateJobReq.
         :rtype: list[:class:`huaweicloudsdkdrs.v3.ResourceTag`]
@@ -573,7 +580,7 @@ class CreateJobReq:
     def sys_tags(self, sys_tags):
         """Sets the sys_tags of this CreateJobReq.
 
-        企业项目，不填默认为default，key值必须为_sys_enterprise_project_id，value为企业项目ID，只能有一个企业项目。
+        企业项目，不填默认为default，key值必须为_sys_enterprise_project_id，value为企业项目ID，只能填一个企业项目。
 
         :param sys_tags: The sys_tags of this CreateJobReq.
         :type sys_tags: list[:class:`huaweicloudsdkdrs.v3.ResourceTag`]
@@ -690,7 +697,7 @@ class CreateJobReq:
     def public_ip_list(self):
         """Gets the public_ip_list of this CreateJobReq.
 
-        指定公网IP的信息
+        指定公网IP的信息。
 
         :return: The public_ip_list of this CreateJobReq.
         :rtype: list[:class:`huaweicloudsdkdrs.v3.PublicIpConfig`]
@@ -701,12 +708,34 @@ class CreateJobReq:
     def public_ip_list(self, public_ip_list):
         """Sets the public_ip_list of this CreateJobReq.
 
-        指定公网IP的信息
+        指定公网IP的信息。
 
         :param public_ip_list: The public_ip_list of this CreateJobReq.
         :type public_ip_list: list[:class:`huaweicloudsdkdrs.v3.PublicIpConfig`]
         """
         self._public_ip_list = public_ip_list
+
+    @property
+    def is_open_fast_clean(self):
+        """Gets the is_open_fast_clean of this CreateJobReq.
+
+        是否开启云数据库RDS for MySQL/MariaDB的binlog快速清理。不传默认为false，不开启快速清理。
+
+        :return: The is_open_fast_clean of this CreateJobReq.
+        :rtype: bool
+        """
+        return self._is_open_fast_clean
+
+    @is_open_fast_clean.setter
+    def is_open_fast_clean(self, is_open_fast_clean):
+        """Sets the is_open_fast_clean of this CreateJobReq.
+
+        是否开启云数据库RDS for MySQL/MariaDB的binlog快速清理。不传默认为false，不开启快速清理。
+
+        :param is_open_fast_clean: The is_open_fast_clean of this CreateJobReq.
+        :type is_open_fast_clean: bool
+        """
+        self._is_open_fast_clean = is_open_fast_clean
 
     def to_dict(self):
         """Returns the model properties as a dict"""

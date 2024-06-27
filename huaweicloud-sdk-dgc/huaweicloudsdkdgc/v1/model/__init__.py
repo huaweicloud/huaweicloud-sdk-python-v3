@@ -25,6 +25,7 @@ from huaweicloudsdkdgc.v1.model.delete_connction_request import DeleteConnctionR
 from huaweicloudsdkdgc.v1.model.delete_connction_response import DeleteConnctionResponse
 from huaweicloudsdkdgc.v1.model.delete_job_request import DeleteJobRequest
 from huaweicloudsdkdgc.v1.model.delete_job_response import DeleteJobResponse
+from huaweicloudsdkdgc.v1.model.delete_req import DeleteReq
 from huaweicloudsdkdgc.v1.model.delete_resource_request import DeleteResourceRequest
 from huaweicloudsdkdgc.v1.model.delete_resource_response import DeleteResourceResponse
 from huaweicloudsdkdgc.v1.model.delete_script_request import DeleteScriptRequest

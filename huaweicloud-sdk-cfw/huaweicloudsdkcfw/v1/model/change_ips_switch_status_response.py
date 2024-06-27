@@ -18,58 +18,29 @@ class ChangeIpsSwitchStatusResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'trace_id': 'str',
         'data': 'CommonResponseDTOData'
     }
 
     attribute_map = {
-        'trace_id': 'trace_id',
         'data': 'data'
     }
 
-    def __init__(self, trace_id=None, data=None):
+    def __init__(self, data=None):
         """ChangeIpsSwitchStatusResponse
 
         The model defined in huaweicloud sdk
 
-        :param trace_id: trace_id
-        :type trace_id: str
         :param data: 
         :type data: :class:`huaweicloudsdkcfw.v1.CommonResponseDTOData`
         """
         
         super(ChangeIpsSwitchStatusResponse, self).__init__()
 
-        self._trace_id = None
         self._data = None
         self.discriminator = None
 
-        if trace_id is not None:
-            self.trace_id = trace_id
         if data is not None:
             self.data = data
-
-    @property
-    def trace_id(self):
-        """Gets the trace_id of this ChangeIpsSwitchStatusResponse.
-
-        trace_id
-
-        :return: The trace_id of this ChangeIpsSwitchStatusResponse.
-        :rtype: str
-        """
-        return self._trace_id
-
-    @trace_id.setter
-    def trace_id(self, trace_id):
-        """Sets the trace_id of this ChangeIpsSwitchStatusResponse.
-
-        trace_id
-
-        :param trace_id: The trace_id of this ChangeIpsSwitchStatusResponse.
-        :type trace_id: str
-        """
-        self._trace_id = trace_id
 
     @property
     def data(self):

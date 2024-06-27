@@ -201,6 +201,10 @@ from huaweicloudsdkworkspace.v2.model.list_metric_notify_record_request import L
 from huaweicloudsdkworkspace.v2.model.list_metric_notify_record_response import ListMetricNotifyRecordResponse
 from huaweicloudsdkworkspace.v2.model.list_metric_notify_rule_request import ListMetricNotifyRuleRequest
 from huaweicloudsdkworkspace.v2.model.list_metric_notify_rule_response import ListMetricNotifyRuleResponse
+from huaweicloudsdkworkspace.v2.model.list_metrics_request import ListMetricsRequest
+from huaweicloudsdkworkspace.v2.model.list_metrics_response import ListMetricsResponse
+from huaweicloudsdkworkspace.v2.model.list_metrics_trend_request import ListMetricsTrendRequest
+from huaweicloudsdkworkspace.v2.model.list_metrics_trend_response import ListMetricsTrendResponse
 from huaweicloudsdkworkspace.v2.model.list_otp_devices_by_user_id_request import ListOtpDevicesByUserIdRequest
 from huaweicloudsdkworkspace.v2.model.list_otp_devices_by_user_id_response import ListOtpDevicesByUserIdResponse
 from huaweicloudsdkworkspace.v2.model.list_products_request import ListProductsRequest
@@ -238,6 +242,7 @@ from huaweicloudsdkworkspace.v2.model.logoff_desktops_req import LogoffDesktopsR
 from huaweicloudsdkworkspace.v2.model.match import Match
 from huaweicloudsdkworkspace.v2.model.metric import Metric
 from huaweicloudsdkworkspace.v2.model.metric_notify_rule import MetricNotifyRule
+from huaweicloudsdkworkspace.v2.model.metrics_with_time import MetricsWithTime
 from huaweicloudsdkworkspace.v2.model.modify_workspace_attributes_req import ModifyWorkspaceAttributesReq
 from huaweicloudsdkworkspace.v2.model.network_info import NetworkInfo
 from huaweicloudsdkworkspace.v2.model.nic import Nic

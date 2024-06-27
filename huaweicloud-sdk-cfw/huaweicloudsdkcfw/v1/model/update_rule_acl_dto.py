@@ -31,7 +31,6 @@ class UpdateRuleAclDto:
         'long_connect_time_second': 'int',
         'long_connect_time': 'int',
         'long_connect_enable': 'int',
-        'profile': 'RuleProfileDto',
         'source': 'RuleAddressDto',
         'destination': 'RuleAddressDto',
         'service': 'RuleServiceDto',
@@ -54,7 +53,6 @@ class UpdateRuleAclDto:
         'long_connect_time_second': 'long_connect_time_second',
         'long_connect_time': 'long_connect_time',
         'long_connect_enable': 'long_connect_enable',
-        'profile': 'profile',
         'source': 'source',
         'destination': 'destination',
         'service': 'service',
@@ -62,7 +60,7 @@ class UpdateRuleAclDto:
         'tag': 'tag'
     }
 
-    def __init__(self, address_type=None, name=None, sequence=None, direction=None, action_type=None, status=None, applications=None, applications_json_string=None, description=None, long_connect_time_hour=None, long_connect_time_minute=None, long_connect_time_second=None, long_connect_time=None, long_connect_enable=None, profile=None, source=None, destination=None, service=None, type=None, tag=None):
+    def __init__(self, address_type=None, name=None, sequence=None, direction=None, action_type=None, status=None, applications=None, applications_json_string=None, description=None, long_connect_time_hour=None, long_connect_time_minute=None, long_connect_time_second=None, long_connect_time=None, long_connect_enable=None, source=None, destination=None, service=None, type=None, tag=None):
         """UpdateRuleAclDto
 
         The model defined in huaweicloud sdk
@@ -95,8 +93,6 @@ class UpdateRuleAclDto:
         :type long_connect_time: int
         :param long_connect_enable: 是否支持长连接，0表示不支持，1表示支持
         :type long_connect_enable: int
-        :param profile: 
-        :type profile: :class:`huaweicloudsdkcfw.v1.RuleProfileDto`
         :param source: 
         :type source: :class:`huaweicloudsdkcfw.v1.RuleAddressDto`
         :param destination: 
@@ -125,7 +121,6 @@ class UpdateRuleAclDto:
         self._long_connect_time_second = None
         self._long_connect_time = None
         self._long_connect_enable = None
-        self._profile = None
         self._source = None
         self._destination = None
         self._service = None
@@ -161,8 +156,6 @@ class UpdateRuleAclDto:
             self.long_connect_time = long_connect_time
         if long_connect_enable is not None:
             self.long_connect_enable = long_connect_enable
-        if profile is not None:
-            self.profile = profile
         if source is not None:
             self.source = source
         if destination is not None:
@@ -477,24 +470,6 @@ class UpdateRuleAclDto:
         :type long_connect_enable: int
         """
         self._long_connect_enable = long_connect_enable
-
-    @property
-    def profile(self):
-        """Gets the profile of this UpdateRuleAclDto.
-
-        :return: The profile of this UpdateRuleAclDto.
-        :rtype: :class:`huaweicloudsdkcfw.v1.RuleProfileDto`
-        """
-        return self._profile
-
-    @profile.setter
-    def profile(self, profile):
-        """Sets the profile of this UpdateRuleAclDto.
-
-        :param profile: The profile of this UpdateRuleAclDto.
-        :type profile: :class:`huaweicloudsdkcfw.v1.RuleProfileDto`
-        """
-        self._profile = profile
 
     @property
     def source(self):

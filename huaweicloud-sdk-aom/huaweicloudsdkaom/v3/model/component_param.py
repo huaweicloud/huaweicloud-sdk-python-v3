@@ -35,7 +35,7 @@ class ComponentParam:
 
         The model defined in huaweicloud sdk
 
-        :param description: 组件描述：最大255字符
+        :param description: 组件描述
         :type description: str
         :param model_id: 应用Id、子应用Id,id长度不能超过36位，由大小写字母、数字组成
         :type model_id: str
@@ -63,7 +63,7 @@ class ComponentParam:
     def description(self):
         """Gets the description of this ComponentParam.
 
-        组件描述：最大255字符
+        组件描述
 
         :return: The description of this ComponentParam.
         :rtype: str
@@ -74,7 +74,7 @@ class ComponentParam:
     def description(self, description):
         """Sets the description of this ComponentParam.
 
-        组件描述：最大255字符
+        组件描述
 
         :param description: The description of this ComponentParam.
         :type description: str

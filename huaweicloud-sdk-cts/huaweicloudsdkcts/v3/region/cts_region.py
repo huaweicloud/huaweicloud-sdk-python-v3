@@ -77,6 +77,8 @@ class CtsRegion:
                         "https://cts.eu-west-0.myhuaweicloud.com")
     MY_KUALALUMPUR_1 = Region("my-kualalumpur-1",
                         "https://cts.my-kualalumpur-1.myhuaweicloud.com")
+    RU_MOSCOW_1 = Region("ru-moscow-1",
+                        "https://cts.ru-moscow-1.myhuaweicloud.com")
 
     static_fields = {
         "af-south-1": AF_SOUTH_1,
@@ -104,6 +106,7 @@ class CtsRegion:
         "me-east-1": ME_EAST_1,
         "eu-west-0": EU_WEST_0,
         "my-kualalumpur-1": MY_KUALALUMPUR_1,
+        "ru-moscow-1": RU_MOSCOW_1,
     }
 
     @classmethod

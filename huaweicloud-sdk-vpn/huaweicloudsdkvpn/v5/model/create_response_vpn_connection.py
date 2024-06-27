@@ -33,7 +33,6 @@ class CreateResponseVpnConnection:
         'created_at': 'str',
         'updated_at': 'str',
         'enterprise_project_id': 'str',
-        'connection_monitor_id': 'str',
         'ha_role': 'str',
         'tags': 'list[VpnResourceTag]'
     }
@@ -55,12 +54,11 @@ class CreateResponseVpnConnection:
         'created_at': 'created_at',
         'updated_at': 'updated_at',
         'enterprise_project_id': 'enterprise_project_id',
-        'connection_monitor_id': 'connection_monitor_id',
         'ha_role': 'ha_role',
         'tags': 'tags'
     }
 
-    def __init__(self, id=None, name=None, vgw_id=None, vgw_ip=None, style=None, cgw_id=None, peer_subnets=None, tunnel_local_address=None, tunnel_peer_address=None, enable_nqa=None, policy_rules=None, ikepolicy=None, ipsecpolicy=None, created_at=None, updated_at=None, enterprise_project_id=None, connection_monitor_id=None, ha_role=None, tags=None):
+    def __init__(self, id=None, name=None, vgw_id=None, vgw_ip=None, style=None, cgw_id=None, peer_subnets=None, tunnel_local_address=None, tunnel_peer_address=None, enable_nqa=None, policy_rules=None, ikepolicy=None, ipsecpolicy=None, created_at=None, updated_at=None, enterprise_project_id=None, ha_role=None, tags=None):
         """CreateResponseVpnConnection
 
         The model defined in huaweicloud sdk
@@ -97,8 +95,6 @@ class CreateResponseVpnConnection:
         :type updated_at: str
         :param enterprise_project_id: 企业项目ID
         :type enterprise_project_id: str
-        :param connection_monitor_id: 连接监控ID
-        :type connection_monitor_id: str
         :param ha_role: 连接的HA角色
         :type ha_role: str
         :param tags: 标签
@@ -123,7 +119,6 @@ class CreateResponseVpnConnection:
         self._created_at = None
         self._updated_at = None
         self._enterprise_project_id = None
-        self._connection_monitor_id = None
         self._ha_role = None
         self._tags = None
         self.discriminator = None
@@ -160,8 +155,6 @@ class CreateResponseVpnConnection:
             self.updated_at = updated_at
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
-        if connection_monitor_id is not None:
-            self.connection_monitor_id = connection_monitor_id
         if ha_role is not None:
             self.ha_role = ha_role
         if tags is not None:
@@ -510,28 +503,6 @@ class CreateResponseVpnConnection:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
-
-    @property
-    def connection_monitor_id(self):
-        """Gets the connection_monitor_id of this CreateResponseVpnConnection.
-
-        连接监控ID
-
-        :return: The connection_monitor_id of this CreateResponseVpnConnection.
-        :rtype: str
-        """
-        return self._connection_monitor_id
-
-    @connection_monitor_id.setter
-    def connection_monitor_id(self, connection_monitor_id):
-        """Sets the connection_monitor_id of this CreateResponseVpnConnection.
-
-        连接监控ID
-
-        :param connection_monitor_id: The connection_monitor_id of this CreateResponseVpnConnection.
-        :type connection_monitor_id: str
-        """
-        self._connection_monitor_id = connection_monitor_id
 
     @property
     def ha_role(self):

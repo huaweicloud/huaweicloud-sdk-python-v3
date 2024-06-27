@@ -18,7 +18,7 @@ class ListTestcasesByProjectIssuesRelationResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'testcases': 'list[TestCaseVo]',
+        'testcases': 'list[IssuesRelationTestCaseVo]',
         'total_count': 'int',
         'page_no': 'int',
         'page_size': 'int'
@@ -37,7 +37,7 @@ class ListTestcasesByProjectIssuesRelationResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param testcases: 用例详情
-        :type testcases: list[:class:`huaweicloudsdkcloudtest.v1.TestCaseVo`]
+        :type testcases: list[:class:`huaweicloudsdkcloudtest.v1.IssuesRelationTestCaseVo`]
         :param total_count: 用例总数
         :type total_count: int
         :param page_no: 页码
@@ -70,7 +70,7 @@ class ListTestcasesByProjectIssuesRelationResponse(SdkResponse):
         用例详情
 
         :return: The testcases of this ListTestcasesByProjectIssuesRelationResponse.
-        :rtype: list[:class:`huaweicloudsdkcloudtest.v1.TestCaseVo`]
+        :rtype: list[:class:`huaweicloudsdkcloudtest.v1.IssuesRelationTestCaseVo`]
         """
         return self._testcases
 
@@ -81,7 +81,7 @@ class ListTestcasesByProjectIssuesRelationResponse(SdkResponse):
         用例详情
 
         :param testcases: The testcases of this ListTestcasesByProjectIssuesRelationResponse.
-        :type testcases: list[:class:`huaweicloudsdkcloudtest.v1.TestCaseVo`]
+        :type testcases: list[:class:`huaweicloudsdkcloudtest.v1.IssuesRelationTestCaseVo`]
         """
         self._testcases = testcases
 

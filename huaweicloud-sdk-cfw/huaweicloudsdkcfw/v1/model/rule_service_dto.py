@@ -27,7 +27,7 @@ class RuleServiceDto:
         'custom_service': 'list[ServiceItem]',
         'predefined_group': 'list[str]',
         'service_group': 'list[str]',
-        'service_group_names': 'list[AddressGroupVO]',
+        'service_group_names': 'list[ServiceGroupVO]',
         'service_set_type': 'int'
     }
 
@@ -72,7 +72,7 @@ class RuleServiceDto:
         :param service_group: 服务组列表
         :type service_group: list[str]
         :param service_group_names: 服务组名称列表
-        :type service_group_names: list[:class:`huaweicloudsdkcfw.v1.AddressGroupVO`]
+        :type service_group_names: list[:class:`huaweicloudsdkcfw.v1.ServiceGroupVO`]
         :param service_set_type: 服务组类型，0表示自定义服务组，1表示常用WEB服务，2表示常用远程登录和PING，3表示常用数据库
         :type service_set_type: int
         """
@@ -344,7 +344,7 @@ class RuleServiceDto:
         服务组名称列表
 
         :return: The service_group_names of this RuleServiceDto.
-        :rtype: list[:class:`huaweicloudsdkcfw.v1.AddressGroupVO`]
+        :rtype: list[:class:`huaweicloudsdkcfw.v1.ServiceGroupVO`]
         """
         return self._service_group_names
 
@@ -355,7 +355,7 @@ class RuleServiceDto:
         服务组名称列表
 
         :param service_group_names: The service_group_names of this RuleServiceDto.
-        :type service_group_names: list[:class:`huaweicloudsdkcfw.v1.AddressGroupVO`]
+        :type service_group_names: list[:class:`huaweicloudsdkcfw.v1.ServiceGroupVO`]
         """
         self._service_group_names = service_group_names
 

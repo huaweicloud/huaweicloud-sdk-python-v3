@@ -34,7 +34,8 @@ class CreateEndpointServiceResponse(SdkResponse):
         'tcp_proxy': 'str',
         'tags': 'list[TagList]',
         'description': 'str',
-        'enable_policy': 'bool'
+        'enable_policy': 'bool',
+        'ip_version': 'str'
     }
 
     attribute_map = {
@@ -54,10 +55,11 @@ class CreateEndpointServiceResponse(SdkResponse):
         'tcp_proxy': 'tcp_proxy',
         'tags': 'tags',
         'description': 'description',
-        'enable_policy': 'enable_policy'
+        'enable_policy': 'enable_policy',
+        'ip_version': 'ip_version'
     }
 
-    def __init__(self, id=None, port_id=None, service_name=None, server_type=None, vpc_id=None, pool_id=None, approval_enabled=None, status=None, service_type=None, created_at=None, updated_at=None, project_id=None, ports=None, tcp_proxy=None, tags=None, description=None, enable_policy=None):
+    def __init__(self, id=None, port_id=None, service_name=None, server_type=None, vpc_id=None, pool_id=None, approval_enabled=None, status=None, service_type=None, created_at=None, updated_at=None, project_id=None, ports=None, tcp_proxy=None, tags=None, description=None, enable_policy=None, ip_version=None):
         """CreateEndpointServiceResponse
 
         The model defined in huaweicloud sdk
@@ -88,14 +90,16 @@ class CreateEndpointServiceResponse(SdkResponse):
         :type project_id: str
         :param ports: 服务开放的端口映射列表 同一个终端节点服务下，不允许重复的端口映射。 若多个终端节点服务共用一个port_id， 则终端节点服务之间的所有端口映射的server_port和protocol的组合不能重复。
         :type ports: list[:class:`huaweicloudsdkvpcep.v1.PortList`]
-        :param tcp_proxy: 用于控制将哪些信息（如客户端的源IP、源端口、marker_id等）携带到服务端。 支持携带的客户端信息包括如下两种类型：  - TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明：仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。  - Proxy Protocol：表示将客户端信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 该参数的取值包括：  - close：表示关闭代理协议。  - toa_open：表示开启代理协议“tcp_toa”。  - proxy_open：表示开启代理协议“proxy_protocol”。  - open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。  - proxy_vni: 关闭toa，开启proxy和vni。 默认值为“close”。
+        :param tcp_proxy: 用于控制将哪些信息（如客户端的源IP、源端口、marker_id等）携带到服务端。 支持携带的客户端信息包括如下两种类型：  - TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明：仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。  - Proxy Protocol：表示将客户端信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 该参数的取值包括：  - close：表示关闭代理协议。  - toa_open：表示开启代理协议“tcp_toa”。  - proxy_open：表示开启代理协议“proxy_protocol”。  - open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 默认值为“close”。
         :type tcp_proxy: str
         :param tags: 资源标签列表
         :type tags: list[:class:`huaweicloudsdkvpcep.v1.TagList`]
         :param description: 描述字段，支持中英文字母、数字等字符，不支持“&lt;”或“&gt;”字符。
         :type description: str
-        :param enable_policy: 是否开启终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false
+        :param enable_policy: 是否允许自定义终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false
         :type enable_policy: bool
+        :param ip_version: 指定终端节点服务的IP版本，仅专业型终端节点服务支持此参数 ● ipv4,  IPv4 ● ipv6,  IPv6
+        :type ip_version: str
         """
         
         super(CreateEndpointServiceResponse, self).__init__()
@@ -117,6 +121,7 @@ class CreateEndpointServiceResponse(SdkResponse):
         self._tags = None
         self._description = None
         self._enable_policy = None
+        self._ip_version = None
         self.discriminator = None
 
         if id is not None:
@@ -153,6 +158,8 @@ class CreateEndpointServiceResponse(SdkResponse):
             self.description = description
         if enable_policy is not None:
             self.enable_policy = enable_policy
+        if ip_version is not None:
+            self.ip_version = ip_version
 
     @property
     def id(self):
@@ -444,7 +451,7 @@ class CreateEndpointServiceResponse(SdkResponse):
     def tcp_proxy(self):
         """Gets the tcp_proxy of this CreateEndpointServiceResponse.
 
-        用于控制将哪些信息（如客户端的源IP、源端口、marker_id等）携带到服务端。 支持携带的客户端信息包括如下两种类型：  - TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明：仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。  - Proxy Protocol：表示将客户端信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 该参数的取值包括：  - close：表示关闭代理协议。  - toa_open：表示开启代理协议“tcp_toa”。  - proxy_open：表示开启代理协议“proxy_protocol”。  - open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。  - proxy_vni: 关闭toa，开启proxy和vni。 默认值为“close”。
+        用于控制将哪些信息（如客户端的源IP、源端口、marker_id等）携带到服务端。 支持携带的客户端信息包括如下两种类型：  - TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明：仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。  - Proxy Protocol：表示将客户端信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 该参数的取值包括：  - close：表示关闭代理协议。  - toa_open：表示开启代理协议“tcp_toa”。  - proxy_open：表示开启代理协议“proxy_protocol”。  - open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 默认值为“close”。
 
         :return: The tcp_proxy of this CreateEndpointServiceResponse.
         :rtype: str
@@ -455,7 +462,7 @@ class CreateEndpointServiceResponse(SdkResponse):
     def tcp_proxy(self, tcp_proxy):
         """Sets the tcp_proxy of this CreateEndpointServiceResponse.
 
-        用于控制将哪些信息（如客户端的源IP、源端口、marker_id等）携带到服务端。 支持携带的客户端信息包括如下两种类型：  - TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明：仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。  - Proxy Protocol：表示将客户端信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 该参数的取值包括：  - close：表示关闭代理协议。  - toa_open：表示开启代理协议“tcp_toa”。  - proxy_open：表示开启代理协议“proxy_protocol”。  - open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。  - proxy_vni: 关闭toa，开启proxy和vni。 默认值为“close”。
+        用于控制将哪些信息（如客户端的源IP、源端口、marker_id等）携带到服务端。 支持携带的客户端信息包括如下两种类型：  - TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明：仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。  - Proxy Protocol：表示将客户端信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 该参数的取值包括：  - close：表示关闭代理协议。  - toa_open：表示开启代理协议“tcp_toa”。  - proxy_open：表示开启代理协议“proxy_protocol”。  - open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 默认值为“close”。
 
         :param tcp_proxy: The tcp_proxy of this CreateEndpointServiceResponse.
         :type tcp_proxy: str
@@ -510,7 +517,7 @@ class CreateEndpointServiceResponse(SdkResponse):
     def enable_policy(self):
         """Gets the enable_policy of this CreateEndpointServiceResponse.
 
-        是否开启终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false
+        是否允许自定义终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false
 
         :return: The enable_policy of this CreateEndpointServiceResponse.
         :rtype: bool
@@ -521,12 +528,34 @@ class CreateEndpointServiceResponse(SdkResponse):
     def enable_policy(self, enable_policy):
         """Sets the enable_policy of this CreateEndpointServiceResponse.
 
-        是否开启终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false
+        是否允许自定义终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false
 
         :param enable_policy: The enable_policy of this CreateEndpointServiceResponse.
         :type enable_policy: bool
         """
         self._enable_policy = enable_policy
+
+    @property
+    def ip_version(self):
+        """Gets the ip_version of this CreateEndpointServiceResponse.
+
+        指定终端节点服务的IP版本，仅专业型终端节点服务支持此参数 ● ipv4,  IPv4 ● ipv6,  IPv6
+
+        :return: The ip_version of this CreateEndpointServiceResponse.
+        :rtype: str
+        """
+        return self._ip_version
+
+    @ip_version.setter
+    def ip_version(self, ip_version):
+        """Sets the ip_version of this CreateEndpointServiceResponse.
+
+        指定终端节点服务的IP版本，仅专业型终端节点服务支持此参数 ● ipv4,  IPv4 ● ipv6,  IPv6
+
+        :param ip_version: The ip_version of this CreateEndpointServiceResponse.
+        :type ip_version: str
+        """
+        self._ip_version = ip_version
 
     def to_dict(self):
         """Returns the model properties as a dict"""

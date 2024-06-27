@@ -17,12 +17,12 @@ class AlarmTemplateInfo:
     sensitive_list = []
 
     openapi_types = {
-        'create_time': 'datetime',
+        'create_time': 'str',
         'create_user': 'str',
         'id': 'str',
         'remarks': 'str',
         'test_service_id': 'str',
-        'update_time': 'datetime',
+        'update_time': 'str',
         'update_user': 'str',
         'name': 'str'
     }
@@ -44,7 +44,7 @@ class AlarmTemplateInfo:
         The model defined in huaweicloud sdk
 
         :param create_time: 创建时间
-        :type create_time: datetime
+        :type create_time: str
         :param create_user: 创建者
         :type create_user: str
         :param id: UUID
@@ -54,7 +54,7 @@ class AlarmTemplateInfo:
         :param test_service_id: 服务id
         :type test_service_id: str
         :param update_time: 修改时间
-        :type update_time: datetime
+        :type update_time: str
         :param update_user: 修改者
         :type update_user: str
         :param name: 模板名称
@@ -97,7 +97,7 @@ class AlarmTemplateInfo:
         创建时间
 
         :return: The create_time of this AlarmTemplateInfo.
-        :rtype: datetime
+        :rtype: str
         """
         return self._create_time
 
@@ -108,7 +108,7 @@ class AlarmTemplateInfo:
         创建时间
 
         :param create_time: The create_time of this AlarmTemplateInfo.
-        :type create_time: datetime
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -207,7 +207,7 @@ class AlarmTemplateInfo:
         修改时间
 
         :return: The update_time of this AlarmTemplateInfo.
-        :rtype: datetime
+        :rtype: str
         """
         return self._update_time
 
@@ -218,7 +218,7 @@ class AlarmTemplateInfo:
         修改时间
 
         :param update_time: The update_time of this AlarmTemplateInfo.
-        :type update_time: datetime
+        :type update_time: str
         """
         self._update_time = update_time
 

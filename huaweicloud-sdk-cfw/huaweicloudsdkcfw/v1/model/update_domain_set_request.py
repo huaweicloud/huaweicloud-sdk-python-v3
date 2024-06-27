@@ -35,11 +35,11 @@ class UpdateDomainSetRequest:
 
         The model defined in huaweicloud sdk
 
-        :param set_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用查询防火墙实例接口获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
+        :param set_id: 域名组id
         :type set_id: str
         :param enterprise_project_id: 企业项目id，用户支持企业项目后，由企业项目生成的id。
         :type enterprise_project_id: str
-        :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。默认情况下，fw_instance_Id为空时，返回帐号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
+        :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)。
         :type fw_instance_id: str
         :param body: Body of the UpdateDomainSetRequest
         :type body: :class:`huaweicloudsdkcfw.v1.UpdateDomainSetInfoDto`
@@ -56,8 +56,7 @@ class UpdateDomainSetRequest:
         self.set_id = set_id
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
-        if fw_instance_id is not None:
-            self.fw_instance_id = fw_instance_id
+        self.fw_instance_id = fw_instance_id
         if body is not None:
             self.body = body
 
@@ -65,7 +64,7 @@ class UpdateDomainSetRequest:
     def set_id(self):
         """Gets the set_id of this UpdateDomainSetRequest.
 
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用查询防火墙实例接口获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
+        域名组id
 
         :return: The set_id of this UpdateDomainSetRequest.
         :rtype: str
@@ -76,7 +75,7 @@ class UpdateDomainSetRequest:
     def set_id(self, set_id):
         """Sets the set_id of this UpdateDomainSetRequest.
 
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用查询防火墙实例接口获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
+        域名组id
 
         :param set_id: The set_id of this UpdateDomainSetRequest.
         :type set_id: str
@@ -109,7 +108,7 @@ class UpdateDomainSetRequest:
     def fw_instance_id(self):
         """Gets the fw_instance_id of this UpdateDomainSetRequest.
 
-        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。默认情况下，fw_instance_Id为空时，返回帐号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
+        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)。
 
         :return: The fw_instance_id of this UpdateDomainSetRequest.
         :rtype: str
@@ -120,7 +119,7 @@ class UpdateDomainSetRequest:
     def fw_instance_id(self, fw_instance_id):
         """Sets the fw_instance_id of this UpdateDomainSetRequest.
 
-        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。默认情况下，fw_instance_Id为空时，返回帐号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
+        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)。
 
         :param fw_instance_id: The fw_instance_id of this UpdateDomainSetRequest.
         :type fw_instance_id: str

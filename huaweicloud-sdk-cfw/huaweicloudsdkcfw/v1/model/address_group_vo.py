@@ -17,72 +17,65 @@ class AddressGroupVO:
     sensitive_list = []
 
     openapi_types = {
-        'set_id': 'str',
+        'address_set_type': 'int',
         'name': 'str',
-        'protocols': 'list[int]',
-        'service_set_type': 'int'
+        'set_id': 'str'
     }
 
     attribute_map = {
-        'set_id': 'set_id',
+        'address_set_type': 'address_set_type',
         'name': 'name',
-        'protocols': 'protocols',
-        'service_set_type': 'service_set_type'
+        'set_id': 'set_id'
     }
 
-    def __init__(self, set_id=None, name=None, protocols=None, service_set_type=None):
+    def __init__(self, address_set_type=None, name=None, set_id=None):
         """AddressGroupVO
 
         The model defined in huaweicloud sdk
 
-        :param set_id: 地址组id
-        :type set_id: str
+        :param address_set_type: 地址组类型，0表示自定义地址组，1表示WAF回源IP地址组，2表示DDoS回源IP地址组，3表示NAT64转换地址组
+        :type address_set_type: int
         :param name: 地址组名称
         :type name: str
-        :param protocols: 协议列表，协议类型:TCP为6, UDP为17,ICMP为1,ICMPV6为58,ANY为-1,手动类型不为空，自动类型为空
-        :type protocols: list[int]
-        :param service_set_type: 服务组类型，0表示自定义服务组，1表示常用WEB服务，2表示常用远程登录和PING，3表示常用数据库
-        :type service_set_type: int
-        """
-        
-        
-
-        self._set_id = None
-        self._name = None
-        self._protocols = None
-        self._service_set_type = None
-        self.discriminator = None
-
-        if set_id is not None:
-            self.set_id = set_id
-        if name is not None:
-            self.name = name
-        if protocols is not None:
-            self.protocols = protocols
-        if service_set_type is not None:
-            self.service_set_type = service_set_type
-
-    @property
-    def set_id(self):
-        """Gets the set_id of this AddressGroupVO.
-
-        地址组id
-
-        :return: The set_id of this AddressGroupVO.
-        :rtype: str
-        """
-        return self._set_id
-
-    @set_id.setter
-    def set_id(self, set_id):
-        """Sets the set_id of this AddressGroupVO.
-
-        地址组id
-
-        :param set_id: The set_id of this AddressGroupVO.
+        :param set_id: 地址组id
         :type set_id: str
         """
-        self._set_id = set_id
+        
+        
+
+        self._address_set_type = None
+        self._name = None
+        self._set_id = None
+        self.discriminator = None
+
+        if address_set_type is not None:
+            self.address_set_type = address_set_type
+        if name is not None:
+            self.name = name
+        if set_id is not None:
+            self.set_id = set_id
+
+    @property
+    def address_set_type(self):
+        """Gets the address_set_type of this AddressGroupVO.
+
+        地址组类型，0表示自定义地址组，1表示WAF回源IP地址组，2表示DDoS回源IP地址组，3表示NAT64转换地址组
+
+        :return: The address_set_type of this AddressGroupVO.
+        :rtype: int
+        """
+        return self._address_set_type
+
+    @address_set_type.setter
+    def address_set_type(self, address_set_type):
+        """Sets the address_set_type of this AddressGroupVO.
+
+        地址组类型，0表示自定义地址组，1表示WAF回源IP地址组，2表示DDoS回源IP地址组，3表示NAT64转换地址组
+
+        :param address_set_type: The address_set_type of this AddressGroupVO.
+        :type address_set_type: int
+        """
+        self._address_set_type = address_set_type
 
     @property
     def name(self):
@@ -107,48 +100,26 @@ class AddressGroupVO:
         self._name = name
 
     @property
-    def protocols(self):
-        """Gets the protocols of this AddressGroupVO.
+    def set_id(self):
+        """Gets the set_id of this AddressGroupVO.
 
-        协议列表，协议类型:TCP为6, UDP为17,ICMP为1,ICMPV6为58,ANY为-1,手动类型不为空，自动类型为空
+        地址组id
 
-        :return: The protocols of this AddressGroupVO.
-        :rtype: list[int]
+        :return: The set_id of this AddressGroupVO.
+        :rtype: str
         """
-        return self._protocols
+        return self._set_id
 
-    @protocols.setter
-    def protocols(self, protocols):
-        """Sets the protocols of this AddressGroupVO.
+    @set_id.setter
+    def set_id(self, set_id):
+        """Sets the set_id of this AddressGroupVO.
 
-        协议列表，协议类型:TCP为6, UDP为17,ICMP为1,ICMPV6为58,ANY为-1,手动类型不为空，自动类型为空
+        地址组id
 
-        :param protocols: The protocols of this AddressGroupVO.
-        :type protocols: list[int]
+        :param set_id: The set_id of this AddressGroupVO.
+        :type set_id: str
         """
-        self._protocols = protocols
-
-    @property
-    def service_set_type(self):
-        """Gets the service_set_type of this AddressGroupVO.
-
-        服务组类型，0表示自定义服务组，1表示常用WEB服务，2表示常用远程登录和PING，3表示常用数据库
-
-        :return: The service_set_type of this AddressGroupVO.
-        :rtype: int
-        """
-        return self._service_set_type
-
-    @service_set_type.setter
-    def service_set_type(self, service_set_type):
-        """Sets the service_set_type of this AddressGroupVO.
-
-        服务组类型，0表示自定义服务组，1表示常用WEB服务，2表示常用远程登录和PING，3表示常用数据库
-
-        :param service_set_type: The service_set_type of this AddressGroupVO.
-        :type service_set_type: int
-        """
-        self._service_set_type = service_set_type
+        self._set_id = set_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
