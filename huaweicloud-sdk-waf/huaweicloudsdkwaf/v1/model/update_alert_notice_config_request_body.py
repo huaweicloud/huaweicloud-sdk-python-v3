@@ -53,7 +53,7 @@ class UpdateAlertNoticeConfigRequestBody:
         :type enabled: bool
         :param topic_urn: 主题URN，通过消息通知服务获取
         :type topic_urn: str
-        :param sendfreq: 时间间隔，单位为分钟。当通知类型为防护事件时，该参数表示在改时间间隔内，攻击次数等于或者大于设定阈值时，将发送告警通知，支持的值：5、15、30、60、120、360、720、1440；当通知类型为证书到期时，该参数表示每隔多长时间发送一次告警通知，支持的值为1440、10080（单位为分钟）。
+        :param sendfreq: 时间间隔，单位为分钟。当通知类型为防护事件时，该参数表示在该时间间隔内，攻击次数等于或者大于设定阈值时，将发送告警通知，支持的值：5、15、30、60、120、360、720、1440；当通知类型为证书到期时，该参数表示每隔多长时间发送一次告警通知，支持的值为1440、10080（单位为分钟）。
         :type sendfreq: int
         :param locale: 语言   - zh-cn：中文   - en-us
         :type locale: str
@@ -171,7 +171,7 @@ class UpdateAlertNoticeConfigRequestBody:
     def sendfreq(self):
         """Gets the sendfreq of this UpdateAlertNoticeConfigRequestBody.
 
-        时间间隔，单位为分钟。当通知类型为防护事件时，该参数表示在改时间间隔内，攻击次数等于或者大于设定阈值时，将发送告警通知，支持的值：5、15、30、60、120、360、720、1440；当通知类型为证书到期时，该参数表示每隔多长时间发送一次告警通知，支持的值为1440、10080（单位为分钟）。
+        时间间隔，单位为分钟。当通知类型为防护事件时，该参数表示在该时间间隔内，攻击次数等于或者大于设定阈值时，将发送告警通知，支持的值：5、15、30、60、120、360、720、1440；当通知类型为证书到期时，该参数表示每隔多长时间发送一次告警通知，支持的值为1440、10080（单位为分钟）。
 
         :return: The sendfreq of this UpdateAlertNoticeConfigRequestBody.
         :rtype: int
@@ -182,7 +182,7 @@ class UpdateAlertNoticeConfigRequestBody:
     def sendfreq(self, sendfreq):
         """Sets the sendfreq of this UpdateAlertNoticeConfigRequestBody.
 
-        时间间隔，单位为分钟。当通知类型为防护事件时，该参数表示在改时间间隔内，攻击次数等于或者大于设定阈值时，将发送告警通知，支持的值：5、15、30、60、120、360、720、1440；当通知类型为证书到期时，该参数表示每隔多长时间发送一次告警通知，支持的值为1440、10080（单位为分钟）。
+        时间间隔，单位为分钟。当通知类型为防护事件时，该参数表示在该时间间隔内，攻击次数等于或者大于设定阈值时，将发送告警通知，支持的值：5、15、30、60、120、360、720、1440；当通知类型为证书到期时，该参数表示每隔多长时间发送一次告警通知，支持的值为1440、10080（单位为分钟）。
 
         :param sendfreq: The sendfreq of this UpdateAlertNoticeConfigRequestBody.
         :type sendfreq: int

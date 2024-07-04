@@ -45,7 +45,7 @@ class ListPolicyGroupRequest:
         :type enterprise_project_id: str
         :param group_name: 策略组名
         :type group_name: str
-        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        :param offset: 偏移量：指定返回记录的开始位置
         :type offset: int
         :param limit: 每页显示个数
         :type limit: int
@@ -145,7 +145,7 @@ class ListPolicyGroupRequest:
     def offset(self):
         """Gets the offset of this ListPolicyGroupRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        偏移量：指定返回记录的开始位置
 
         :return: The offset of this ListPolicyGroupRequest.
         :rtype: int
@@ -156,7 +156,7 @@ class ListPolicyGroupRequest:
     def offset(self, offset):
         """Sets the offset of this ListPolicyGroupRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        偏移量：指定返回记录的开始位置
 
         :param offset: The offset of this ListPolicyGroupRequest.
         :type offset: int

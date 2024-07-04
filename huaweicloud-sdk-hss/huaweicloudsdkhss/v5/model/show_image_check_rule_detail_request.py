@@ -51,7 +51,7 @@ class ShowImageCheckRuleDetailRequest:
 
         :param region: Region ID
         :type region: str
-        :param enterprise_project_id: 租户企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
         :param image_type: 镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库   - local_image : 本地镜像   - instance_image : 企业镜像
         :type image_type: str
@@ -88,7 +88,8 @@ class ShowImageCheckRuleDetailRequest:
         self._instance_id = None
         self.discriminator = None
 
-        self.region = region
+        if region is not None:
+            self.region = region
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         self.image_type = image_type
@@ -131,7 +132,7 @@ class ShowImageCheckRuleDetailRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ShowImageCheckRuleDetailRequest.
 
-        租户企业项目ID，查询所有企业项目时填写：all_granted_eps
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :return: The enterprise_project_id of this ShowImageCheckRuleDetailRequest.
         :rtype: str
@@ -142,7 +143,7 @@ class ShowImageCheckRuleDetailRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ShowImageCheckRuleDetailRequest.
 
-        租户企业项目ID，查询所有企业项目时填写：all_granted_eps
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :param enterprise_project_id: The enterprise_project_id of this ShowImageCheckRuleDetailRequest.
         :type enterprise_project_id: str

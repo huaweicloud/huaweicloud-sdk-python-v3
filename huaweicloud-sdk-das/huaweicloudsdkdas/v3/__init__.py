@@ -48,6 +48,8 @@ from huaweicloudsdkdas.v3.model.export_slow_sql_statistics_request_body import E
 from huaweicloudsdkdas.v3.model.export_slow_sql_statistics_response import ExportSlowSqlStatisticsResponse
 from huaweicloudsdkdas.v3.model.export_slow_sql_templates_details_request import ExportSlowSqlTemplatesDetailsRequest
 from huaweicloudsdkdas.v3.model.export_slow_sql_templates_details_response import ExportSlowSqlTemplatesDetailsResponse
+from huaweicloudsdkdas.v3.model.export_slow_sql_trend_details_request import ExportSlowSqlTrendDetailsRequest
+from huaweicloudsdkdas.v3.model.export_slow_sql_trend_details_response import ExportSlowSqlTrendDetailsResponse
 from huaweicloudsdkdas.v3.model.export_sql_statements_request import ExportSqlStatementsRequest
 from huaweicloudsdkdas.v3.model.export_sql_statements_response import ExportSqlStatementsResponse
 from huaweicloudsdkdas.v3.model.export_top_sql_templates_details_request import ExportTopSqlTemplatesDetailsRequest
@@ -106,6 +108,7 @@ from huaweicloudsdkdas.v3.model.show_tuning_response import ShowTuningResponse
 from huaweicloudsdkdas.v3.model.slow_log import SlowLog
 from huaweicloudsdkdas.v3.model.slow_sql_statistics import SlowSqlStatistics
 from huaweicloudsdkdas.v3.model.slow_sql_template import SlowSqlTemplate
+from huaweicloudsdkdas.v3.model.slow_sql_trend_item import SlowSqlTrendItem
 from huaweicloudsdkdas.v3.model.sql_limit_rule import SqlLimitRule
 from huaweicloudsdkdas.v3.model.tb_pos_info import TbPosInfo
 from huaweicloudsdkdas.v3.model.top_sql_template import TopSqlTemplate

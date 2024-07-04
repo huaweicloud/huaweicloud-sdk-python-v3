@@ -43,7 +43,7 @@ class ListVulScanTaskHostRequest:
         :type enterprise_project_id: str
         :param limit: 每页显示个数
         :type limit: int
-        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        :param offset: 偏移量：指定返回记录的开始位置
         :type offset: int
         :param scan_status: 主机的扫描状态，包含如下：   -scanning : 扫描中   -success : 扫描成功   -failed : 扫描失败
         :type scan_status: str
@@ -138,7 +138,7 @@ class ListVulScanTaskHostRequest:
     def offset(self):
         """Gets the offset of this ListVulScanTaskHostRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        偏移量：指定返回记录的开始位置
 
         :return: The offset of this ListVulScanTaskHostRequest.
         :rtype: int
@@ -149,7 +149,7 @@ class ListVulScanTaskHostRequest:
     def offset(self, offset):
         """Sets the offset of this ListVulScanTaskHostRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        偏移量：指定返回记录的开始位置
 
         :param offset: The offset of this ListVulScanTaskHostRequest.
         :type offset: int

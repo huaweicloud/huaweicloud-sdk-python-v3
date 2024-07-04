@@ -35,7 +35,7 @@ class BatchScanSwrImageRequest:
 
         :param region: Region ID
         :type region: str
-        :param enterprise_project_id: 租户企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
         :param body: Body of the BatchScanSwrImageRequest
         :type body: :class:`huaweicloudsdkhss.v5.BatchScanPrivateImageRequestInfo`
@@ -48,7 +48,8 @@ class BatchScanSwrImageRequest:
         self._body = None
         self.discriminator = None
 
-        self.region = region
+        if region is not None:
+            self.region = region
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if body is not None:
@@ -80,7 +81,7 @@ class BatchScanSwrImageRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this BatchScanSwrImageRequest.
 
-        租户企业项目ID，查询所有企业项目时填写：all_granted_eps
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :return: The enterprise_project_id of this BatchScanSwrImageRequest.
         :rtype: str
@@ -91,7 +92,7 @@ class BatchScanSwrImageRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this BatchScanSwrImageRequest.
 
-        租户企业项目ID，查询所有企业项目时填写：all_granted_eps
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :param enterprise_project_id: The enterprise_project_id of this BatchScanSwrImageRequest.
         :type enterprise_project_id: str

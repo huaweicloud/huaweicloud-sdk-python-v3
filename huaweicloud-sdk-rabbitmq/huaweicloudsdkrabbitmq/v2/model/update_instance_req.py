@@ -24,7 +24,8 @@ class UpdateInstanceReq:
         'security_group_id': 'str',
         'enable_publicip': 'bool',
         'publicip_id': 'str',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'enable_acl': 'bool'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class UpdateInstanceReq:
         'security_group_id': 'security_group_id',
         'enable_publicip': 'enable_publicip',
         'publicip_id': 'publicip_id',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'enable_acl': 'enable_acl'
     }
 
-    def __init__(self, name=None, description=None, maintain_begin=None, maintain_end=None, security_group_id=None, enable_publicip=None, publicip_id=None, enterprise_project_id=None):
+    def __init__(self, name=None, description=None, maintain_begin=None, maintain_end=None, security_group_id=None, enable_publicip=None, publicip_id=None, enterprise_project_id=None, enable_acl=None):
         """UpdateInstanceReq
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class UpdateInstanceReq:
         :type publicip_id: str
         :param enterprise_project_id: 企业项目。
         :type enterprise_project_id: str
+        :param enable_acl: ACL访问控制（仅AMQP版本支持此参数）。
+        :type enable_acl: bool
         """
         
         
@@ -71,6 +75,7 @@ class UpdateInstanceReq:
         self._enable_publicip = None
         self._publicip_id = None
         self._enterprise_project_id = None
+        self._enable_acl = None
         self.discriminator = None
 
         if name is not None:
@@ -89,6 +94,8 @@ class UpdateInstanceReq:
             self.publicip_id = publicip_id
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if enable_acl is not None:
+            self.enable_acl = enable_acl
 
     @property
     def name(self):
@@ -265,6 +272,28 @@ class UpdateInstanceReq:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def enable_acl(self):
+        """Gets the enable_acl of this UpdateInstanceReq.
+
+        ACL访问控制（仅AMQP版本支持此参数）。
+
+        :return: The enable_acl of this UpdateInstanceReq.
+        :rtype: bool
+        """
+        return self._enable_acl
+
+    @enable_acl.setter
+    def enable_acl(self, enable_acl):
+        """Sets the enable_acl of this UpdateInstanceReq.
+
+        ACL访问控制（仅AMQP版本支持此参数）。
+
+        :param enable_acl: The enable_acl of this UpdateInstanceReq.
+        :type enable_acl: bool
+        """
+        self._enable_acl = enable_acl
 
     def to_dict(self):
         """Returns the model properties as a dict"""

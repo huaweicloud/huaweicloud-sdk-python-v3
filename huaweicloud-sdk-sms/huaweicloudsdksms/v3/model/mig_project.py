@@ -21,7 +21,6 @@ class MigProject:
         'name': 'str',
         'description': 'str',
         'isdefault': 'bool',
-        'template': 'TemplateResponseBody',
         'region': 'str',
         'start_target_server': 'bool',
         'speed_limit': 'int',
@@ -38,7 +37,6 @@ class MigProject:
         'name': 'name',
         'description': 'description',
         'isdefault': 'isdefault',
-        'template': 'template',
         'region': 'region',
         'start_target_server': 'start_target_server',
         'speed_limit': 'speed_limit',
@@ -50,7 +48,7 @@ class MigProject:
         'start_network_check': 'start_network_check'
     }
 
-    def __init__(self, id=None, name=None, description=None, isdefault=None, template=None, region=None, start_target_server=None, speed_limit=None, use_public_ip=None, exist_server=None, type=None, enterprise_project=None, syncing=None, start_network_check=None):
+    def __init__(self, id=None, name=None, description=None, isdefault=None, region=None, start_target_server=None, speed_limit=None, use_public_ip=None, exist_server=None, type=None, enterprise_project=None, syncing=None, start_network_check=None):
         """MigProject
 
         The model defined in huaweicloud sdk
@@ -63,8 +61,6 @@ class MigProject:
         :type description: str
         :param isdefault: 是否为默认模板
         :type isdefault: bool
-        :param template: 
-        :type template: :class:`huaweicloudsdksms.v3.TemplateResponseBody`
         :param region: 区域名称
         :type region: str
         :param start_target_server: 迁移后是否启动目的端虚拟机
@@ -91,7 +87,6 @@ class MigProject:
         self._name = None
         self._description = None
         self._isdefault = None
-        self._template = None
         self._region = None
         self._start_target_server = None
         self._speed_limit = None
@@ -110,8 +105,6 @@ class MigProject:
             self.description = description
         if isdefault is not None:
             self.isdefault = isdefault
-        if template is not None:
-            self.template = template
         self.region = region
         if start_target_server is not None:
             self.start_target_server = start_target_server
@@ -213,24 +206,6 @@ class MigProject:
         :type isdefault: bool
         """
         self._isdefault = isdefault
-
-    @property
-    def template(self):
-        """Gets the template of this MigProject.
-
-        :return: The template of this MigProject.
-        :rtype: :class:`huaweicloudsdksms.v3.TemplateResponseBody`
-        """
-        return self._template
-
-    @template.setter
-    def template(self, template):
-        """Sets the template of this MigProject.
-
-        :param template: The template of this MigProject.
-        :type template: :class:`huaweicloudsdksms.v3.TemplateResponseBody`
-        """
-        self._template = template
 
     @property
     def region(self):

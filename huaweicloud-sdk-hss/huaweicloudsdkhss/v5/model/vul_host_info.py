@@ -83,7 +83,7 @@ class VulHostInfo:
         :type host_name: str
         :param host_ip: 受影响主机ip
         :type host_ip: str
-        :param agent_id: 主机对应的Agent ID
+        :param agent_id: Agent ID
         :type agent_id: str
         :param version: 主机绑定的配额版本
         :type version: str
@@ -294,7 +294,7 @@ class VulHostInfo:
     def agent_id(self):
         """Gets the agent_id of this VulHostInfo.
 
-        主机对应的Agent ID
+        Agent ID
 
         :return: The agent_id of this VulHostInfo.
         :rtype: str
@@ -305,7 +305,7 @@ class VulHostInfo:
     def agent_id(self, agent_id):
         """Sets the agent_id of this VulHostInfo.
 
-        主机对应的Agent ID
+        Agent ID
 
         :param agent_id: The agent_id of this VulHostInfo.
         :type agent_id: str

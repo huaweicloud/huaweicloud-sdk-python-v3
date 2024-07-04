@@ -99,6 +99,73 @@ class ApigClient(Client):
 
         return http_info
 
+    def add_custom_ingress_port(self, request):
+        """新增实例的自定义入方向端口
+
+        新增实例的自定义入方向端口，在同个实例中，一个端口仅能支持一种协议。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AddCustomIngressPort
+        :type request: :class:`huaweicloudsdkapig.v2.AddCustomIngressPortRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.AddCustomIngressPortResponse`
+        """
+        http_info = self._add_custom_ingress_port_http_info(request)
+        return self._call_api(**http_info)
+
+    def add_custom_ingress_port_invoker(self, request):
+        http_info = self._add_custom_ingress_port_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_custom_ingress_port_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/custom-ingress-ports",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddCustomIngressPortResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def add_eip_v2(self, request):
         """实例更新或绑定EIP
 
@@ -440,6 +507,7 @@ class ApigClient(Client):
         """绑定域名证书
 
         如果创建API时，“定义API请求”使用HTTPS请求协议，那么在独立域名中需要添加SSL证书。
+        使用实例自定义入方向端口的特性时，相同的域名会同时绑定证书，注意开启/关闭客户端校验会对相同域名的不同端口同时生效。
         本章节主要介绍为特定域名绑定证书。
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -2445,6 +2513,73 @@ class ApigClient(Client):
 
         return http_info
 
+    def delete_custom_ingress_port(self, request):
+        """删除实例指定的自定义入方向端口
+
+        删除实例指定的自定义入方向端口，不包含默认端口80和443。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteCustomIngressPort
+        :type request: :class:`huaweicloudsdkapig.v2.DeleteCustomIngressPortRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.DeleteCustomIngressPortResponse`
+        """
+        http_info = self._delete_custom_ingress_port_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_custom_ingress_port_invoker(self, request):
+        http_info = self._delete_custom_ingress_port_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_custom_ingress_port_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/custom-ingress-ports/{ingress_port_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCustomIngressPortResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'ingress_port_id' in local_var_params:
+            path_params['ingress_port_id'] = local_var_params['ingress_port_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_endpoint_permissions(self, request):
         """批量删除实例终端节点连接白名单
 
@@ -3338,7 +3473,7 @@ class ApigClient(Client):
     def disassociate_certificate_v2(self, request):
         """删除域名证书
 
-        如果域名证书不再需要或者已过期，则可以删除证书内容。
+        如果域名证书不再需要或者已过期，则可以删除证书内容。在使用自定义入方向端口的特性时，相同的域名会同时解绑证书。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4757,6 +4892,152 @@ class ApigClient(Client):
             query_params.append(('name', local_var_params['name']))
         if 'type' in local_var_params:
             query_params.append(('type', local_var_params['type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_custom_ingress_port_domains(self, request):
+        """查询实例指定的自定义入方向端口绑定的域名信息
+
+        查询实例指定的自定义入方向端口绑定的域名信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListCustomIngressPortDomains
+        :type request: :class:`huaweicloudsdkapig.v2.ListCustomIngressPortDomainsRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.ListCustomIngressPortDomainsResponse`
+        """
+        http_info = self._list_custom_ingress_port_domains_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_custom_ingress_port_domains_invoker(self, request):
+        http_info = self._list_custom_ingress_port_domains_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_custom_ingress_port_domains_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/custom-ingress-ports/{ingress_port_id}/domains",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCustomIngressPortDomainsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'ingress_port_id' in local_var_params:
+            path_params['ingress_port_id'] = local_var_params['ingress_port_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'domain_name' in local_var_params:
+            query_params.append(('domain_name', local_var_params['domain_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_custom_ingress_ports(self, request):
+        """查询实例的自定义入方向端口列表
+
+        查询实例的自定义入方向端口列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListCustomIngressPorts
+        :type request: :class:`huaweicloudsdkapig.v2.ListCustomIngressPortsRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.ListCustomIngressPortsResponse`
+        """
+        http_info = self._list_custom_ingress_ports_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_custom_ingress_ports_invoker(self, request):
+        http_info = self._list_custom_ingress_ports_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_custom_ingress_ports_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/custom-ingress-ports",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCustomIngressPortsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'protocol' in local_var_params:
+            query_params.append(('protocol', local_var_params['protocol']))
+        if 'ingress_port' in local_var_params:
+            query_params.append(('ingress_port', local_var_params['ingress_port']))
 
         header_params = {}
 
@@ -8092,7 +8373,7 @@ class ApigClient(Client):
     def update_domain_v2(self, request):
         """修改域名
 
-        修改绑定的域名所对应的配置信息。
+        修改绑定的域名所对应的配置信息。使用实例自定义入方向端口的特性时，注意开启/关闭客户端校验会对相同域名的不同端口同时生效。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -12239,7 +12520,7 @@ class ApigClient(Client):
     def batch_associate_certs_v2(self, request):
         """域名绑定SSL证书
 
-        域名绑定SSL证书。目前暂时仅支持单个绑定，请求体当中的certificate_ids里面有且只能有一个证书ID。
+        域名绑定SSL证书。目前暂时仅支持单个绑定，请求体当中的certificate_ids里面有且只能有一个证书ID。使用实例自定义入方向端口的特性时，相同的域名会同时绑定证书，注意开启/关闭客户端校验会对相同域名的不同端口同时生效。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -12310,7 +12591,7 @@ class ApigClient(Client):
     def batch_associate_domains_v2(self, request):
         """SSL证书绑定域名
 
-        SSL证书绑定域名。
+        SSL证书绑定域名。使用实例自定义入方向端口的特性时，相同的域名会同时绑定证书，注意开启/关闭客户端校验会对相同域名的不同端口同时生效。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -12377,7 +12658,7 @@ class ApigClient(Client):
     def batch_disassociate_certs_v2(self, request):
         """域名解绑SSL证书
 
-        域名解绑SSL证书。目前暂时仅支持单个解绑，请求体当中的certificate_ids里面有且只能有一个证书ID。
+        域名解绑SSL证书。目前暂时仅支持单个解绑，请求体当中的certificate_ids里面有且只能有一个证书ID。在使用自定义入方向端口的特性时，相同的域名会同时解绑证书。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -12448,7 +12729,7 @@ class ApigClient(Client):
     def batch_disassociate_domains_v2(self, request):
         """SSL证书解绑域名
 
-        SSL证书解绑域名。
+        SSL证书解绑域名。在使用自定义入方向端口的特性时，相同的域名会同时解绑证书。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

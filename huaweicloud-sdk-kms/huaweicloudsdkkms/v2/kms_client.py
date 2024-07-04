@@ -2336,6 +2336,136 @@ class KmsClient(Client):
 
         return http_info
 
+    def list_support_regions(self, request):
+        """查询跨区域密钥所支持的区域
+
+        - 功能介绍：查询跨区域密钥所支持的区域。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSupportRegions
+        :type request: :class:`huaweicloudsdkkms.v2.ListSupportRegionsRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.ListSupportRegionsResponse`
+        """
+        http_info = self._list_support_regions_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_support_regions_invoker(self, request):
+        http_info = self._list_support_regions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_support_regions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/kms/regions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSupportRegionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def replicate_key(self, request):
+        """复制密钥到指定区域
+
+        将本区域的密钥复制到指定区域。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ReplicateKey
+        :type request: :class:`huaweicloudsdkkms.v2.ReplicateKeyRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.ReplicateKeyResponse`
+        """
+        http_info = self._replicate_key_http_info(request)
+        return self._call_api(**http_info)
+
+    def replicate_key_invoker(self, request):
+        http_info = self._replicate_key_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _replicate_key_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/kms/keys/{key_id}/replicate",
+            "request_type": request.__class__.__name__,
+            "response_type": "ReplicateKeyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'key_id' in local_var_params:
+            path_params['key_id'] = local_var_params['key_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_key_rotation_status(self, request):
         """查询密钥轮换状态
 
@@ -2957,6 +3087,73 @@ class KmsClient(Client):
         collection_formats = {}
 
         path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_primary_region(self, request):
+        """修改密钥所属的主区域
+
+        修改密钥所属的主区域。修改后当前区域会变为副本区域。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdatePrimaryRegion
+        :type request: :class:`huaweicloudsdkkms.v2.UpdatePrimaryRegionRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.UpdatePrimaryRegionResponse`
+        """
+        http_info = self._update_primary_region_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_primary_region_invoker(self, request):
+        http_info = self._update_primary_region_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_primary_region_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/kms/keys/{key_id}/update-primary-region",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePrimaryRegionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'key_id' in local_var_params:
+            path_params['key_id'] = local_var_params['key_id']
 
         query_params = []
 

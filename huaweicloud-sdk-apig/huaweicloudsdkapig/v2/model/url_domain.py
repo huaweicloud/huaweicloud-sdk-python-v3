@@ -24,7 +24,9 @@ class UrlDomain:
         'ssl_name': 'str',
         'min_ssl_version': 'str',
         'verified_client_certificate_enabled': 'bool',
-        'is_has_trusted_root_ca': 'bool'
+        'is_has_trusted_root_ca': 'bool',
+        'ingress_http_port': 'int',
+        'ingress_https_port': 'int'
     }
 
     attribute_map = {
@@ -35,10 +37,12 @@ class UrlDomain:
         'ssl_name': 'ssl_name',
         'min_ssl_version': 'min_ssl_version',
         'verified_client_certificate_enabled': 'verified_client_certificate_enabled',
-        'is_has_trusted_root_ca': 'is_has_trusted_root_ca'
+        'is_has_trusted_root_ca': 'is_has_trusted_root_ca',
+        'ingress_http_port': 'ingress_http_port',
+        'ingress_https_port': 'ingress_https_port'
     }
 
-    def __init__(self, id=None, domain=None, cname_status=None, ssl_id=None, ssl_name=None, min_ssl_version=None, verified_client_certificate_enabled=None, is_has_trusted_root_ca=None):
+    def __init__(self, id=None, domain=None, cname_status=None, ssl_id=None, ssl_name=None, min_ssl_version=None, verified_client_certificate_enabled=None, is_has_trusted_root_ca=None, ingress_http_port=None, ingress_https_port=None):
         """UrlDomain
 
         The model defined in huaweicloud sdk
@@ -59,6 +63,10 @@ class UrlDomain:
         :type verified_client_certificate_enabled: bool
         :param is_has_trusted_root_ca: 是否存在信任的根证书CA。当绑定证书存在trusted_root_ca时为true。
         :type is_has_trusted_root_ca: bool
+        :param ingress_http_port: 访问该域名绑定的http协议入方向端口，-1表示无端口且协议不支持，可使用80默认端口，其他有效端口允许的取值范围为1024~49151，需为实例已开放的HTTP协议的自定义入方向端口。  当创建域名时，该参数未填表示用默认80端口；若填写该参数，则必须同时填写https_port；若要http_port和https_port同时使用默认端口，则两个参数都不填。  当修改域名时，该参数未填表示不修改该端口。 
+        :type ingress_http_port: int
+        :param ingress_https_port: 访问该域名绑定的http协议入方向端口，-1表示无端口且协议不支持，可使用443默认端口，其他有效端口允许的取值范围为1024~49151，需为实例已开放的HTTPS协议的自定义入方向端口。  当创建域名时，该参数未填表示用默认443端口；若填写该参数，则必须同时填写http_port；若要http_port和https_port同时使用默认端口，则两个参数都不填。  当修改域名时，该参数未填表示不修改该端口。 
+        :type ingress_https_port: int
         """
         
         
@@ -71,6 +79,8 @@ class UrlDomain:
         self._min_ssl_version = None
         self._verified_client_certificate_enabled = None
         self._is_has_trusted_root_ca = None
+        self._ingress_http_port = None
+        self._ingress_https_port = None
         self.discriminator = None
 
         if id is not None:
@@ -89,6 +99,10 @@ class UrlDomain:
             self.verified_client_certificate_enabled = verified_client_certificate_enabled
         if is_has_trusted_root_ca is not None:
             self.is_has_trusted_root_ca = is_has_trusted_root_ca
+        if ingress_http_port is not None:
+            self.ingress_http_port = ingress_http_port
+        if ingress_https_port is not None:
+            self.ingress_https_port = ingress_https_port
 
     @property
     def id(self):
@@ -265,6 +279,50 @@ class UrlDomain:
         :type is_has_trusted_root_ca: bool
         """
         self._is_has_trusted_root_ca = is_has_trusted_root_ca
+
+    @property
+    def ingress_http_port(self):
+        """Gets the ingress_http_port of this UrlDomain.
+
+        访问该域名绑定的http协议入方向端口，-1表示无端口且协议不支持，可使用80默认端口，其他有效端口允许的取值范围为1024~49151，需为实例已开放的HTTP协议的自定义入方向端口。  当创建域名时，该参数未填表示用默认80端口；若填写该参数，则必须同时填写https_port；若要http_port和https_port同时使用默认端口，则两个参数都不填。  当修改域名时，该参数未填表示不修改该端口。 
+
+        :return: The ingress_http_port of this UrlDomain.
+        :rtype: int
+        """
+        return self._ingress_http_port
+
+    @ingress_http_port.setter
+    def ingress_http_port(self, ingress_http_port):
+        """Sets the ingress_http_port of this UrlDomain.
+
+        访问该域名绑定的http协议入方向端口，-1表示无端口且协议不支持，可使用80默认端口，其他有效端口允许的取值范围为1024~49151，需为实例已开放的HTTP协议的自定义入方向端口。  当创建域名时，该参数未填表示用默认80端口；若填写该参数，则必须同时填写https_port；若要http_port和https_port同时使用默认端口，则两个参数都不填。  当修改域名时，该参数未填表示不修改该端口。 
+
+        :param ingress_http_port: The ingress_http_port of this UrlDomain.
+        :type ingress_http_port: int
+        """
+        self._ingress_http_port = ingress_http_port
+
+    @property
+    def ingress_https_port(self):
+        """Gets the ingress_https_port of this UrlDomain.
+
+        访问该域名绑定的http协议入方向端口，-1表示无端口且协议不支持，可使用443默认端口，其他有效端口允许的取值范围为1024~49151，需为实例已开放的HTTPS协议的自定义入方向端口。  当创建域名时，该参数未填表示用默认443端口；若填写该参数，则必须同时填写http_port；若要http_port和https_port同时使用默认端口，则两个参数都不填。  当修改域名时，该参数未填表示不修改该端口。 
+
+        :return: The ingress_https_port of this UrlDomain.
+        :rtype: int
+        """
+        return self._ingress_https_port
+
+    @ingress_https_port.setter
+    def ingress_https_port(self, ingress_https_port):
+        """Sets the ingress_https_port of this UrlDomain.
+
+        访问该域名绑定的http协议入方向端口，-1表示无端口且协议不支持，可使用443默认端口，其他有效端口允许的取值范围为1024~49151，需为实例已开放的HTTPS协议的自定义入方向端口。  当创建域名时，该参数未填表示用默认443端口；若填写该参数，则必须同时填写http_port；若要http_port和https_port同时使用默认端口，则两个参数都不填。  当修改域名时，该参数未填表示不修改该端口。 
+
+        :param ingress_https_port: The ingress_https_port of this UrlDomain.
+        :type ingress_https_port: int
+        """
+        self._ingress_https_port = ingress_https_port
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -57,13 +57,13 @@ class ListImageVulnerabilitiesRequest:
 
         :param region: Region ID
         :type region: str
-        :param enterprise_project_id: 租户企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
         :param image_type: 镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库   - local_image : 本地镜像   - instance_image : 企业镜像
         :type image_type: str
-        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        :param offset: 偏移量：指定返回记录的开始位置
         :type offset: int
-        :param limit: 每页显示个数
+        :param limit: 每页显示数量
         :type limit: int
         :param image_id: 镜像id
         :type image_id: str
@@ -103,7 +103,8 @@ class ListImageVulnerabilitiesRequest:
         self._type = None
         self.discriminator = None
 
-        self.region = region
+        if region is not None:
+            self.region = region
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         self.image_type = image_type
@@ -152,7 +153,7 @@ class ListImageVulnerabilitiesRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListImageVulnerabilitiesRequest.
 
-        租户企业项目ID，查询所有企业项目时填写：all_granted_eps
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :return: The enterprise_project_id of this ListImageVulnerabilitiesRequest.
         :rtype: str
@@ -163,7 +164,7 @@ class ListImageVulnerabilitiesRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListImageVulnerabilitiesRequest.
 
-        租户企业项目ID，查询所有企业项目时填写：all_granted_eps
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :param enterprise_project_id: The enterprise_project_id of this ListImageVulnerabilitiesRequest.
         :type enterprise_project_id: str
@@ -196,7 +197,7 @@ class ListImageVulnerabilitiesRequest:
     def offset(self):
         """Gets the offset of this ListImageVulnerabilitiesRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        偏移量：指定返回记录的开始位置
 
         :return: The offset of this ListImageVulnerabilitiesRequest.
         :rtype: int
@@ -207,7 +208,7 @@ class ListImageVulnerabilitiesRequest:
     def offset(self, offset):
         """Sets the offset of this ListImageVulnerabilitiesRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        偏移量：指定返回记录的开始位置
 
         :param offset: The offset of this ListImageVulnerabilitiesRequest.
         :type offset: int
@@ -218,7 +219,7 @@ class ListImageVulnerabilitiesRequest:
     def limit(self):
         """Gets the limit of this ListImageVulnerabilitiesRequest.
 
-        每页显示个数
+        每页显示数量
 
         :return: The limit of this ListImageVulnerabilitiesRequest.
         :rtype: int
@@ -229,7 +230,7 @@ class ListImageVulnerabilitiesRequest:
     def limit(self, limit):
         """Sets the limit of this ListImageVulnerabilitiesRequest.
 
-        每页显示个数
+        每页显示数量
 
         :param limit: The limit of this ListImageVulnerabilitiesRequest.
         :type limit: int

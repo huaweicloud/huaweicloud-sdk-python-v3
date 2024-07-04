@@ -91,7 +91,7 @@ class ListSecurityEventsRequest:
         :type public_ip: str
         :param container_name: 容器实例名称
         :type container_name: str
-        :param offset: 偏移量：指定返回记录的开始位置，必须为数字
+        :param offset: 偏移量：指定返回记录的开始位置
         :type offset: int
         :param limit: 每页显示个数
         :type limit: int
@@ -395,7 +395,7 @@ class ListSecurityEventsRequest:
     def offset(self):
         """Gets the offset of this ListSecurityEventsRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字
+        偏移量：指定返回记录的开始位置
 
         :return: The offset of this ListSecurityEventsRequest.
         :rtype: int
@@ -406,7 +406,7 @@ class ListSecurityEventsRequest:
     def offset(self, offset):
         """Sets the offset of this ListSecurityEventsRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字
+        偏移量：指定返回记录的开始位置
 
         :param offset: The offset of this ListSecurityEventsRequest.
         :type offset: int

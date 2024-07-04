@@ -26,7 +26,8 @@ class UrlAuthGetBody:
         'key': 'str',
         'backup_key': 'str',
         'sign_arg': 'str',
-        'time_format': 'str'
+        'time_format': 'str',
+        'time_arg': 'str'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class UrlAuthGetBody:
         'key': 'key',
         'backup_key': 'backup_key',
         'sign_arg': 'sign_arg',
-        'time_format': 'time_format'
+        'time_format': 'time_format',
+        'time_arg': 'time_arg'
     }
 
-    def __init__(self, status=None, type=None, expire_time=None, sign_method=None, match_type=None, inherit_config=None, key=None, backup_key=None, sign_arg=None, time_format=None):
+    def __init__(self, status=None, type=None, expire_time=None, sign_method=None, match_type=None, inherit_config=None, key=None, backup_key=None, sign_arg=None, time_format=None, time_arg=None):
         """UrlAuthGetBody
 
         The model defined in huaweicloud sdk
@@ -67,6 +69,8 @@ class UrlAuthGetBody:
         :type sign_arg: str
         :param time_format: 时间格式， dec：十进制, hex：十六进制。
         :type time_format: str
+        :param time_arg: 时间参数。
+        :type time_arg: str
         """
         
         
@@ -81,6 +85,7 @@ class UrlAuthGetBody:
         self._backup_key = None
         self._sign_arg = None
         self._time_format = None
+        self._time_arg = None
         self.discriminator = None
 
         self.status = status
@@ -102,6 +107,8 @@ class UrlAuthGetBody:
             self.sign_arg = sign_arg
         if time_format is not None:
             self.time_format = time_format
+        if time_arg is not None:
+            self.time_arg = time_arg
 
     @property
     def status(self):
@@ -318,6 +325,28 @@ class UrlAuthGetBody:
         :type time_format: str
         """
         self._time_format = time_format
+
+    @property
+    def time_arg(self):
+        """Gets the time_arg of this UrlAuthGetBody.
+
+        时间参数。
+
+        :return: The time_arg of this UrlAuthGetBody.
+        :rtype: str
+        """
+        return self._time_arg
+
+    @time_arg.setter
+    def time_arg(self, time_arg):
+        """Sets the time_arg of this UrlAuthGetBody.
+
+        时间参数。
+
+        :param time_arg: The time_arg of this UrlAuthGetBody.
+        :type time_arg: str
+        """
+        self._time_arg = time_arg
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -79,7 +79,7 @@ class IsolatedFileResponseInfo:
         :type public_ip: str
         :param asset_value: 资产重要性
         :type asset_value: str
-        :param update_time: 事件白名单更新时间，毫秒
+        :param update_time: 更新时间，毫秒
         :type update_time: int
         :param agent_version: agent版本
         :type agent_version: str
@@ -354,7 +354,7 @@ class IsolatedFileResponseInfo:
     def update_time(self):
         """Gets the update_time of this IsolatedFileResponseInfo.
 
-        事件白名单更新时间，毫秒
+        更新时间，毫秒
 
         :return: The update_time of this IsolatedFileResponseInfo.
         :rtype: int
@@ -365,7 +365,7 @@ class IsolatedFileResponseInfo:
     def update_time(self, update_time):
         """Sets the update_time of this IsolatedFileResponseInfo.
 
-        事件白名单更新时间，毫秒
+        更新时间，毫秒
 
         :param update_time: The update_time of this IsolatedFileResponseInfo.
         :type update_time: int

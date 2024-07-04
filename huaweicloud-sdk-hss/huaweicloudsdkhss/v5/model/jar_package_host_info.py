@@ -71,7 +71,7 @@ class JarPackageHostInfo:
 
         The model defined in huaweicloud sdk
 
-        :param agent_id: agent_id
+        :param agent_id: Agent ID
         :type agent_id: str
         :param host_id: 主机id
         :type host_id: str
@@ -192,7 +192,7 @@ class JarPackageHostInfo:
     def agent_id(self):
         """Gets the agent_id of this JarPackageHostInfo.
 
-        agent_id
+        Agent ID
 
         :return: The agent_id of this JarPackageHostInfo.
         :rtype: str
@@ -203,7 +203,7 @@ class JarPackageHostInfo:
     def agent_id(self, agent_id):
         """Sets the agent_id of this JarPackageHostInfo.
 
-        agent_id
+        Agent ID
 
         :param agent_id: The agent_id of this JarPackageHostInfo.
         :type agent_id: str

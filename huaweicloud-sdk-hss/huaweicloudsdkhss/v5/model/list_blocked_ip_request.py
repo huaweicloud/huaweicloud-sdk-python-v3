@@ -55,7 +55,7 @@ class ListBlockedIpRequest:
         :type src_ip: str
         :param intercept_status: 拦截状态，包含如下:   - intercepted : 已拦截   - canceled : 已解除拦截   - cancelling : 待解除拦截
         :type intercept_status: str
-        :param offset: 偏移量：指定返回记录的开始位置，必须为数字
+        :param offset: 偏移量：指定返回记录的开始位置
         :type offset: int
         :param limit: 每页显示个数
         :type limit: int
@@ -225,7 +225,7 @@ class ListBlockedIpRequest:
     def offset(self):
         """Gets the offset of this ListBlockedIpRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字
+        偏移量：指定返回记录的开始位置
 
         :return: The offset of this ListBlockedIpRequest.
         :rtype: int
@@ -236,7 +236,7 @@ class ListBlockedIpRequest:
     def offset(self, offset):
         """Sets the offset of this ListBlockedIpRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字
+        偏移量：指定返回记录的开始位置
 
         :param offset: The offset of this ListBlockedIpRequest.
         :type offset: int

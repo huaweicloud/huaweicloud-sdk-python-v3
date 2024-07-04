@@ -1,3 +1,282 @@
+# 3.1.104 2024-07-04
+
+### HuaweiCloud SDK APIG
+
+- _新增特性_
+  - 支持接口`ListCustomIngressPortDomains`、`ListCustomIngressPorts`、`AddCustomIngressPort`、`DeleteCustomIngressPort`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **AssociateDomainV2**
+    - 请求参数变更
+      - `+ ingress_http_port`
+      - `+ ingress_https_port`
+    - 响应参数变更
+      - `+ ingress_https_port`
+      - `+ ingress_http_port`
+  - **UpdateDomainV2**
+    - 请求参数变更
+      - `+ ingress_http_port`
+      - `+ ingress_https_port`
+    - 响应参数变更
+      - `+ ingress_https_port`
+      - `+ ingress_http_port`
+  - **AssociateCertificateV2**
+    - 响应参数变更
+      - `+ ingress_https_port`
+      - `+ ingress_http_port`
+  - **ShowDetailsOfApiGroupV2**
+    - 响应参数变更
+      - `+ url_domains.ingress_http_port`
+      - `+ url_domains.ingress_https_port`
+  - **UpdateApiGroupV2**
+    - 响应参数变更
+      - `+ url_domains.ingress_http_port`
+      - `+ url_domains.ingress_https_port`
+  - **ListAttachedDomainsV2**
+    - 响应参数变更
+      - `+ ingress_https_port`
+      - `+ ingress_http_port`
+      - `+ bound_domains.ingress_http_port`
+      - `+ bound_domains.ingress_https_port`
+  - **CreateApiGroupV2**
+    - 响应参数变更
+      - `+ url_domains.ingress_http_port`
+      - `+ url_domains.ingress_https_port`
+  - **ListApiGroupsV2**
+    - 响应参数变更
+      - `+ groups.url_domains.ingress_http_port`
+      - `+ groups.url_domains.ingress_https_port`
+  - **ShowDetailsOfApiV2**
+    - 响应参数变更
+      - `+ api_group_info.url_domains.ingress_http_port`
+      - `+ api_group_info.url_domains.ingress_https_port`
+  - **UpdateApiV2**
+    - 响应参数变更
+      - `+ api_group_info.url_domains.ingress_http_port`
+      - `+ api_group_info.url_domains.ingress_https_port`
+  - **ListApiVersionDetailV2**
+    - 响应参数变更
+      - `+ api_group_info.url_domains.ingress_http_port`
+      - `+ api_group_info.url_domains.ingress_https_port`
+  - **CreateApiV2**
+    - 响应参数变更
+      - `+ api_group_info.url_domains.ingress_http_port`
+      - `+ api_group_info.url_domains.ingress_https_port`
+  - **ListApisV2**
+    - 响应参数变更
+      - `+ apis.api_group_info.url_domains.ingress_http_port`
+      - `+ apis.api_group_info.url_domains.ingress_https_port`
+
+### HuaweiCloud SDK CDN
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowDomainFullConfig**
+    - 响应参数变更
+      - `+ configs.url_auth.time_arg`
+  - **UpdateDomainFullConfig**
+    - 请求参数变更
+      - `+ configs.url_auth.time_arg`
+
+### HuaweiCloud SDK DAS
+
+- _新增特性_
+  - 支持接口`ExportSlowSqlTrendDetails`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateSqlLimitRules**
+    - 请求参数变更
+      - `+ sql_limit_rules.his_sql_limit_switch`
+      - `+ sql_limit_rules.sql_type: enum value [INSERT]`
+
+### HuaweiCloud SDK GaussDB
+
+- _新增特性_
+  - 支持以下接口：
+    - `ResizeStarRocksFlavor`
+    - `ShowStarrocksParams`
+    - `UpdateStarrocksParams`
+    - `SyncStarRocksUsers`
+    - `CheckStarrocksParams`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListInstances**
+    - 响应参数变更
+      - `+ instances.datastore.target_version`
+      - `+ instances.datastore.hotfix_finished_times`
+  - **ListInstancesDetails**
+    - 响应参数变更
+      - `+ instances.datastore.target_version`
+      - `+ instances.datastore.hotfix_finished_times`
+
+### HuaweiCloud SDK HSS
+
+- _新增特性_
+  - 支持接口`ListContainers`、`ListImageLocal`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RunImageSynchronize**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **BatchScanSwrImage**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **ListImageVulnerabilities**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **ListVulnerabilityCve**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **ListImageRiskConfigs**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **ListImageRiskConfigRules**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **ShowImageCheckRuleDetail**
+    - 请求参数变更
+      - `* region: required -> optional`
+
+### HuaweiCloud SDK KMS
+
+- _新增特性_
+  - 支持接口`UpdatePrimaryRegion`、`ReplicateKey`、`ListSupportRegions`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListKeys**
+    - 响应参数变更
+      - `- key_details.partition_type`
+  - **ListKeyDetail**
+    - 响应参数变更
+      - `- key_info.partition_type`
+  - **ListKmsByTags**
+    - 响应参数变更
+      - `- resources.resource_detail.partition_type`
+
+### HuaweiCloud SDK OCR
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RecognizeCambodianIdCard**
+    - 请求参数变更
+      - `+ detect_border_integrity`
+      - `+ detect_blocking_within_border`
+      - `+ detect_blur`
+      - `+ detect_glare`
+      - `+ return_adjusted_image`
+      - `+ detect_tampering`
+    - 响应参数变更
+      - `+ result.adjusted_image`
+      - `+ result.detect_border_integrity_result`
+      - `+ result.detect_blocking_within_border_result`
+      - `+ result.detect_blur_result`
+      - `+ result.detect_glare_result`
+      - `+ result.detect_tampering_result`
+      - `+ result.score_info`
+
+### HuaweiCloud SDK RabbitMQ
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListVhosts`
+    - `CreateVhost`
+    - `BatchDeleteVhosts`
+    - `ListExchanges`
+    - `CreateExchange`
+    - `BatchDeleteExchanges`
+    - `ListQueues`
+    - `CreateQueue`
+    - `BatchDeleteQueues`
+    - `ShowQueueDetails`
+    - `DeleteQueueInfo`
+    - `ListBindings`
+    - `CreateBinding`
+    - `DeleteBinding`
+    - `ListUser`
+    - `CreateUser`
+    - `UpdateUser`
+    - `DeleteUser`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreatePostPaidInstanceByEngine**
+    - 请求参数变更
+      - `- engine_version: enum value [3.8.35]`
+  - **UpdateInstance**
+    - 请求参数变更
+      - `+ enable_acl`
+  - **CreatePostPaidInstance**
+    - 请求参数变更
+      - `- engine_version: enum value [3.8.35]`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 支持接口`CreateInstanceIam5`、`UnlockNodeReadonlyStatus`、`DeleteDisasterRecovery`、`ListFlavorsResize`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK ServiceStage
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListComponentOverviews**
+    - 响应参数变更
+      - `+ components.instances`
+      - `* components: list<ComponentView> -> list<ComponentOverview>`
+
+### HuaweiCloud SDK SMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateTaskStatus**
+    - 请求参数变更
+      - `+ template_id`
+      - `- param`
+      - `- operation: enum value [collect_log,sync_failed_rollback]`
+  - **ShowMigproject**
+    - 响应参数变更
+      - `- template`
+  - **UpdateMigproject**
+    - 请求参数变更
+      - `- template`
+  - **CreateTask**
+    - 请求参数变更
+      - `+ auto_start`
+      - `+ priority`
+      - `+ use_ipv6`
+  - **ShowTask**
+    - 响应参数变更
+      - `+ exist_server`
+
 # 3.1.103 2024-06-27
 
 ### HuaweiCloud SDK AOM

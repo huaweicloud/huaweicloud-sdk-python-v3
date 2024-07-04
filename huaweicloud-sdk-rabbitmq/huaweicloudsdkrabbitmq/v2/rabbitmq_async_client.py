@@ -298,6 +298,73 @@ class RabbitMQAsyncClient(Client):
 
         return http_info
 
+    def create_user_async(self, request):
+        """创建用户
+
+        创建用户（仅AMQP版本支持）。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateUser
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.CreateUserRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.CreateUserResponse`
+        """
+        http_info = self._create_user_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_user_async_invoker(self, request):
+        http_info = self._create_user_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_user_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateUserResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_background_task_async(self, request):
         """删除后台任务管理中的指定记录
 
@@ -401,6 +468,73 @@ class RabbitMQAsyncClient(Client):
         path_params = {}
         if 'instance_id' in local_var_params:
             path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_user_async(self, request):
+        """删除用户
+
+        删除用户（仅AMQP版本支持）。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteUser
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.DeleteUserRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.DeleteUserResponse`
+        """
+        http_info = self._delete_user_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_user_async_invoker(self, request):
+        http_info = self._delete_user_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_user_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/users/{user_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteUserResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'user_name' in local_var_params:
+            path_params['user_name'] = local_var_params['user_name']
 
         query_params = []
 
@@ -817,6 +951,75 @@ class RabbitMQAsyncClient(Client):
         query_params = []
         if 'engine' in local_var_params:
             query_params.append(('engine', local_var_params['engine']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_user_async(self, request):
+        """查询用户列表
+
+        查询用户列表（仅AMQP版本支持）。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListUser
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.ListUserRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.ListUserResponse`
+        """
+        http_info = self._list_user_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_user_async_invoker(self, request):
+        http_info = self._list_user_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_user_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUserResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -1692,6 +1895,1049 @@ class RabbitMQAsyncClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_user_async(self, request):
+        """修改用户参数
+
+        修改用户参数（仅AMQP版本支持）。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateUser
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.UpdateUserRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.UpdateUserResponse`
+        """
+        http_info = self._update_user_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_user_async_invoker(self, request):
+        http_info = self._update_user_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_user_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/users/{user_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateUserResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'user_name' in local_var_params:
+            path_params['user_name'] = local_var_params['user_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_binding_async(self, request):
+        """添加绑定
+
+        添加绑定。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateBinding
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.CreateBindingRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.CreateBindingResponse`
+        """
+        http_info = self._create_binding_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_binding_async_invoker(self, request):
+        http_info = self._create_binding_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_binding_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/rabbitmq/{project_id}/instances/{instance_id}/vhosts/{vhost}/exchanges/{exchange}/binding",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateBindingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'vhost' in local_var_params:
+            path_params['vhost'] = local_var_params['vhost']
+        if 'exchange' in local_var_params:
+            path_params['exchange'] = local_var_params['exchange']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_binding_async(self, request):
+        """删除绑定
+
+        删除绑定。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteBinding
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.DeleteBindingRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.DeleteBindingResponse`
+        """
+        http_info = self._delete_binding_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_binding_async_invoker(self, request):
+        http_info = self._delete_binding_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_binding_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/rabbitmq/{project_id}/instances/{instance_id}/vhosts/{vhost}/exchanges/{exchange}/destination-type/{destination_type}/destination/{destination}/properties-key/{properties_key}/unbinding",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteBindingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'vhost' in local_var_params:
+            path_params['vhost'] = local_var_params['vhost']
+        if 'exchange' in local_var_params:
+            path_params['exchange'] = local_var_params['exchange']
+        if 'destination_type' in local_var_params:
+            path_params['destination_type'] = local_var_params['destination_type']
+        if 'destination' in local_var_params:
+            path_params['destination'] = local_var_params['destination']
+        if 'properties_key' in local_var_params:
+            path_params['properties_key'] = local_var_params['properties_key']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_bindings_async(self, request):
+        """查询Exchange绑定信息列表
+
+        查询Exchange绑定信息列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListBindings
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.ListBindingsRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.ListBindingsResponse`
+        """
+        http_info = self._list_bindings_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_bindings_async_invoker(self, request):
+        http_info = self._list_bindings_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_bindings_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/rabbitmq/{project_id}/instances/{instance_id}/vhosts/{vhost}/exchanges/{exchange}/binding",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBindingsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'vhost' in local_var_params:
+            path_params['vhost'] = local_var_params['vhost']
+        if 'exchange' in local_var_params:
+            path_params['exchange'] = local_var_params['exchange']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_exchanges_async(self, request):
+        """批量删除指定Exchange
+
+        批量删除指定Exchange。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteExchanges
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.BatchDeleteExchangesRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.BatchDeleteExchangesResponse`
+        """
+        http_info = self._batch_delete_exchanges_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_exchanges_async_invoker(self, request):
+        http_info = self._batch_delete_exchanges_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_exchanges_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/rabbitmq/{project_id}/instances/{instance_id}/vhosts/{vhost}/exchanges",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteExchangesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'vhost' in local_var_params:
+            path_params['vhost'] = local_var_params['vhost']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_exchange_async(self, request):
+        """创建Exchange
+
+        创建Exchange。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateExchange
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.CreateExchangeRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.CreateExchangeResponse`
+        """
+        http_info = self._create_exchange_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_exchange_async_invoker(self, request):
+        http_info = self._create_exchange_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_exchange_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/rabbitmq/{project_id}/instances/{instance_id}/vhosts/{vhost}/exchanges",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateExchangeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'vhost' in local_var_params:
+            path_params['vhost'] = local_var_params['vhost']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_exchanges_async(self, request):
+        """查询Exchange列表
+
+        查询Exchange列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListExchanges
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.ListExchangesRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.ListExchangesResponse`
+        """
+        http_info = self._list_exchanges_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_exchanges_async_invoker(self, request):
+        http_info = self._list_exchanges_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_exchanges_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/rabbitmq/{project_id}/instances/{instance_id}/vhosts/{vhost}/exchanges",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListExchangesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'vhost' in local_var_params:
+            path_params['vhost'] = local_var_params['vhost']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_queues_async(self, request):
+        """批量删除指定Queue
+
+        批量删除指定Queue。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteQueues
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.BatchDeleteQueuesRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.BatchDeleteQueuesResponse`
+        """
+        http_info = self._batch_delete_queues_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_queues_async_invoker(self, request):
+        http_info = self._batch_delete_queues_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_queues_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/rabbitmq/{project_id}/instances/{instance_id}/vhosts/{vhost}/queues",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteQueuesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'vhost' in local_var_params:
+            path_params['vhost'] = local_var_params['vhost']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_queue_async(self, request):
+        """创建Queue
+
+        创建Queue。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateQueue
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.CreateQueueRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.CreateQueueResponse`
+        """
+        http_info = self._create_queue_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_queue_async_invoker(self, request):
+        http_info = self._create_queue_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_queue_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/rabbitmq/{project_id}/instances/{instance_id}/vhosts/{vhost}/queues",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateQueueResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'vhost' in local_var_params:
+            path_params['vhost'] = local_var_params['vhost']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_queue_info_async(self, request):
+        """清空Queue消息
+
+        清空Queue消息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteQueueInfo
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.DeleteQueueInfoRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.DeleteQueueInfoResponse`
+        """
+        http_info = self._delete_queue_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_queue_info_async_invoker(self, request):
+        http_info = self._delete_queue_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_queue_info_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/rabbitmq/{project_id}/instances/{instance_id}/vhosts/{vhost}/queues/{queue}/contents",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteQueueInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'vhost' in local_var_params:
+            path_params['vhost'] = local_var_params['vhost']
+        if 'queue' in local_var_params:
+            path_params['queue'] = local_var_params['queue']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_queues_async(self, request):
+        """查询所属Vhost下Queue的列表
+
+        查询所属Vhost下Queue的列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListQueues
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.ListQueuesRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.ListQueuesResponse`
+        """
+        http_info = self._list_queues_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_queues_async_invoker(self, request):
+        http_info = self._list_queues_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_queues_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/rabbitmq/{project_id}/instances/{instance_id}/vhosts/{vhost}/queues",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListQueuesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'vhost' in local_var_params:
+            path_params['vhost'] = local_var_params['vhost']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_queue_details_async(self, request):
+        """查询指定Queue详情
+
+        查询指定Queue详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowQueueDetails
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowQueueDetailsRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.ShowQueueDetailsResponse`
+        """
+        http_info = self._show_queue_details_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_queue_details_async_invoker(self, request):
+        http_info = self._show_queue_details_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_queue_details_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/rabbitmq/{project_id}/instances/{instance_id}/vhosts/{vhost}/queues/{queue}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowQueueDetailsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'vhost' in local_var_params:
+            path_params['vhost'] = local_var_params['vhost']
+        if 'queue' in local_var_params:
+            path_params['queue'] = local_var_params['queue']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_vhosts_async(self, request):
+        """批量删除指定Vhost
+
+        批量删除指定Vhost。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteVhosts
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.BatchDeleteVhostsRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.BatchDeleteVhostsResponse`
+        """
+        http_info = self._batch_delete_vhosts_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_vhosts_async_invoker(self, request):
+        http_info = self._batch_delete_vhosts_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_vhosts_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/rabbitmq/{project_id}/instances/{instance_id}/vhosts",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteVhostsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_vhost_async(self, request):
+        """创建Vhost
+
+        创建Vhost。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateVhost
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.CreateVhostRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.CreateVhostResponse`
+        """
+        http_info = self._create_vhost_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_vhost_async_invoker(self, request):
+        http_info = self._create_vhost_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_vhost_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/rabbitmq/{project_id}/instances/{instance_id}/vhosts",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateVhostResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_vhosts_async(self, request):
+        """查询Vhost列表
+
+        查询Vhost列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListVhosts
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.ListVhostsRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.ListVhostsResponse`
+        """
+        http_info = self._list_vhosts_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_vhosts_async_invoker(self, request):
+        http_info = self._list_vhosts_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_vhosts_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/rabbitmq/{project_id}/instances/{instance_id}/vhosts",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVhostsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

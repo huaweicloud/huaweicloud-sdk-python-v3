@@ -21,7 +21,13 @@ class CambodianIdCardRequestBody:
         'url': 'str',
         'return_portrait_image': 'bool',
         'return_portrait_location': 'bool',
-        'return_idcard_type': 'bool'
+        'return_idcard_type': 'bool',
+        'detect_border_integrity': 'bool',
+        'detect_blocking_within_border': 'bool',
+        'detect_blur': 'bool',
+        'detect_glare': 'bool',
+        'return_adjusted_image': 'bool',
+        'detect_tampering': 'bool'
     }
 
     attribute_map = {
@@ -29,10 +35,16 @@ class CambodianIdCardRequestBody:
         'url': 'url',
         'return_portrait_image': 'return_portrait_image',
         'return_portrait_location': 'return_portrait_location',
-        'return_idcard_type': 'return_idcard_type'
+        'return_idcard_type': 'return_idcard_type',
+        'detect_border_integrity': 'detect_border_integrity',
+        'detect_blocking_within_border': 'detect_blocking_within_border',
+        'detect_blur': 'detect_blur',
+        'detect_glare': 'detect_glare',
+        'return_adjusted_image': 'return_adjusted_image',
+        'detect_tampering': 'detect_tampering'
     }
 
-    def __init__(self, image=None, url=None, return_portrait_image=None, return_portrait_location=None, return_idcard_type=None):
+    def __init__(self, image=None, url=None, return_portrait_image=None, return_portrait_location=None, return_idcard_type=None, detect_border_integrity=None, detect_blocking_within_border=None, detect_blur=None, detect_glare=None, return_adjusted_image=None, detect_tampering=None):
         """CambodianIdCardRequestBody
 
         The model defined in huaweicloud sdk
@@ -47,6 +59,18 @@ class CambodianIdCardRequestBody:
         :type return_portrait_location: bool
         :param return_idcard_type: 是否返回身份证类型的开关，可选值如下所示： - true:返回身份证的类型，类型包括身份证原件以及身份证复印件 - false：不返回身份证的类型 
         :type return_idcard_type: bool
+        :param detect_border_integrity: 返回身份证边框完整性的告警结果的开关，可选值如下所示 - true：打开身份证图像边框完整性告警功能  - false：关闭身份证图像边框完整性告警功能 
+        :type detect_border_integrity: bool
+        :param detect_blocking_within_border: 返回身份证内部是否有被遮挡的告警结果的开关，可选值如下所示 - true：打开身份证内部是否有被遮挡的告警功能  - false：关闭身份证内部是否有被遮挡的告警功能 
+        :type detect_blocking_within_border: bool
+        :param detect_blur: 返回身份证模糊告警结果的开关，可选值如下所示 - true:打开身份证是否模糊的告警功能 - false：关闭身份证是否模糊的告警功能 
+        :type detect_blur: bool
+        :param detect_glare: 返回身份证是否反光的告警结果的开关，可选值如下所示 - true：打开身份证是否反光的告警功能  - false：关闭身份证是否反光的告警功能 
+        :type detect_glare: bool
+        :param return_adjusted_image: 返回身份证四点原图的base64编码 - true: 返回身份证原图的base64编码  - false：不返回身份证原图的base64编码 
+        :type return_adjusted_image: bool
+        :param detect_tampering: 返回身份证人像是否被篡改的告警结果的开关，可选值如下所示 - true:  打开身份证人像是否被篡改的告警功能  - false：关闭身份证人像被篡改的告警功能 不支持精细化的P图 
+        :type detect_tampering: bool
         """
         
         
@@ -56,6 +80,12 @@ class CambodianIdCardRequestBody:
         self._return_portrait_image = None
         self._return_portrait_location = None
         self._return_idcard_type = None
+        self._detect_border_integrity = None
+        self._detect_blocking_within_border = None
+        self._detect_blur = None
+        self._detect_glare = None
+        self._return_adjusted_image = None
+        self._detect_tampering = None
         self.discriminator = None
 
         if image is not None:
@@ -68,6 +98,18 @@ class CambodianIdCardRequestBody:
             self.return_portrait_location = return_portrait_location
         if return_idcard_type is not None:
             self.return_idcard_type = return_idcard_type
+        if detect_border_integrity is not None:
+            self.detect_border_integrity = detect_border_integrity
+        if detect_blocking_within_border is not None:
+            self.detect_blocking_within_border = detect_blocking_within_border
+        if detect_blur is not None:
+            self.detect_blur = detect_blur
+        if detect_glare is not None:
+            self.detect_glare = detect_glare
+        if return_adjusted_image is not None:
+            self.return_adjusted_image = return_adjusted_image
+        if detect_tampering is not None:
+            self.detect_tampering = detect_tampering
 
     @property
     def image(self):
@@ -178,6 +220,138 @@ class CambodianIdCardRequestBody:
         :type return_idcard_type: bool
         """
         self._return_idcard_type = return_idcard_type
+
+    @property
+    def detect_border_integrity(self):
+        """Gets the detect_border_integrity of this CambodianIdCardRequestBody.
+
+        返回身份证边框完整性的告警结果的开关，可选值如下所示 - true：打开身份证图像边框完整性告警功能  - false：关闭身份证图像边框完整性告警功能 
+
+        :return: The detect_border_integrity of this CambodianIdCardRequestBody.
+        :rtype: bool
+        """
+        return self._detect_border_integrity
+
+    @detect_border_integrity.setter
+    def detect_border_integrity(self, detect_border_integrity):
+        """Sets the detect_border_integrity of this CambodianIdCardRequestBody.
+
+        返回身份证边框完整性的告警结果的开关，可选值如下所示 - true：打开身份证图像边框完整性告警功能  - false：关闭身份证图像边框完整性告警功能 
+
+        :param detect_border_integrity: The detect_border_integrity of this CambodianIdCardRequestBody.
+        :type detect_border_integrity: bool
+        """
+        self._detect_border_integrity = detect_border_integrity
+
+    @property
+    def detect_blocking_within_border(self):
+        """Gets the detect_blocking_within_border of this CambodianIdCardRequestBody.
+
+        返回身份证内部是否有被遮挡的告警结果的开关，可选值如下所示 - true：打开身份证内部是否有被遮挡的告警功能  - false：关闭身份证内部是否有被遮挡的告警功能 
+
+        :return: The detect_blocking_within_border of this CambodianIdCardRequestBody.
+        :rtype: bool
+        """
+        return self._detect_blocking_within_border
+
+    @detect_blocking_within_border.setter
+    def detect_blocking_within_border(self, detect_blocking_within_border):
+        """Sets the detect_blocking_within_border of this CambodianIdCardRequestBody.
+
+        返回身份证内部是否有被遮挡的告警结果的开关，可选值如下所示 - true：打开身份证内部是否有被遮挡的告警功能  - false：关闭身份证内部是否有被遮挡的告警功能 
+
+        :param detect_blocking_within_border: The detect_blocking_within_border of this CambodianIdCardRequestBody.
+        :type detect_blocking_within_border: bool
+        """
+        self._detect_blocking_within_border = detect_blocking_within_border
+
+    @property
+    def detect_blur(self):
+        """Gets the detect_blur of this CambodianIdCardRequestBody.
+
+        返回身份证模糊告警结果的开关，可选值如下所示 - true:打开身份证是否模糊的告警功能 - false：关闭身份证是否模糊的告警功能 
+
+        :return: The detect_blur of this CambodianIdCardRequestBody.
+        :rtype: bool
+        """
+        return self._detect_blur
+
+    @detect_blur.setter
+    def detect_blur(self, detect_blur):
+        """Sets the detect_blur of this CambodianIdCardRequestBody.
+
+        返回身份证模糊告警结果的开关，可选值如下所示 - true:打开身份证是否模糊的告警功能 - false：关闭身份证是否模糊的告警功能 
+
+        :param detect_blur: The detect_blur of this CambodianIdCardRequestBody.
+        :type detect_blur: bool
+        """
+        self._detect_blur = detect_blur
+
+    @property
+    def detect_glare(self):
+        """Gets the detect_glare of this CambodianIdCardRequestBody.
+
+        返回身份证是否反光的告警结果的开关，可选值如下所示 - true：打开身份证是否反光的告警功能  - false：关闭身份证是否反光的告警功能 
+
+        :return: The detect_glare of this CambodianIdCardRequestBody.
+        :rtype: bool
+        """
+        return self._detect_glare
+
+    @detect_glare.setter
+    def detect_glare(self, detect_glare):
+        """Sets the detect_glare of this CambodianIdCardRequestBody.
+
+        返回身份证是否反光的告警结果的开关，可选值如下所示 - true：打开身份证是否反光的告警功能  - false：关闭身份证是否反光的告警功能 
+
+        :param detect_glare: The detect_glare of this CambodianIdCardRequestBody.
+        :type detect_glare: bool
+        """
+        self._detect_glare = detect_glare
+
+    @property
+    def return_adjusted_image(self):
+        """Gets the return_adjusted_image of this CambodianIdCardRequestBody.
+
+        返回身份证四点原图的base64编码 - true: 返回身份证原图的base64编码  - false：不返回身份证原图的base64编码 
+
+        :return: The return_adjusted_image of this CambodianIdCardRequestBody.
+        :rtype: bool
+        """
+        return self._return_adjusted_image
+
+    @return_adjusted_image.setter
+    def return_adjusted_image(self, return_adjusted_image):
+        """Sets the return_adjusted_image of this CambodianIdCardRequestBody.
+
+        返回身份证四点原图的base64编码 - true: 返回身份证原图的base64编码  - false：不返回身份证原图的base64编码 
+
+        :param return_adjusted_image: The return_adjusted_image of this CambodianIdCardRequestBody.
+        :type return_adjusted_image: bool
+        """
+        self._return_adjusted_image = return_adjusted_image
+
+    @property
+    def detect_tampering(self):
+        """Gets the detect_tampering of this CambodianIdCardRequestBody.
+
+        返回身份证人像是否被篡改的告警结果的开关，可选值如下所示 - true:  打开身份证人像是否被篡改的告警功能  - false：关闭身份证人像被篡改的告警功能 不支持精细化的P图 
+
+        :return: The detect_tampering of this CambodianIdCardRequestBody.
+        :rtype: bool
+        """
+        return self._detect_tampering
+
+    @detect_tampering.setter
+    def detect_tampering(self, detect_tampering):
+        """Sets the detect_tampering of this CambodianIdCardRequestBody.
+
+        返回身份证人像是否被篡改的告警结果的开关，可选值如下所示 - true:  打开身份证人像是否被篡改的告警功能  - false：关闭身份证人像被篡改的告警功能 不支持精细化的P图 
+
+        :param detect_tampering: The detect_tampering of this CambodianIdCardRequestBody.
+        :type detect_tampering: bool
+        """
+        self._detect_tampering = detect_tampering
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -67,13 +67,13 @@ class ListAutoLaunchChangeHistoriesRequest:
         :type variation_type: str
         :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
-        :param sort_key: 排序的key值，目前只支持按照recent_scan_time排序
+        :param sort_key: 排序的key值，目前只支持按照recent_scan_time排序，按照recent_scan_time排序时，根据sort_dir的值决定升序还是降序
         :type sort_key: str
-        :param sort_dir: 排序方式，默认为降序:   - asc ：升序   - desc ：降序
+        :param sort_dir: 排序方式，默认为降序，当sort_key为按照recent_scan_time排序时，根据当前值决定升序还是降序，当sort_key为其他值时均为降序   - asc ：升序   - desc ：降序
         :type sort_dir: str
-        :param limit: 每页显示数量，默认10
+        :param limit: 每页显示数量
         :type limit: int
-        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        :param offset: 偏移量：指定返回记录的开始位置
         :type offset: int
         :param start_time: 变更开始时间，13位时间戳
         :type start_time: int
@@ -283,7 +283,7 @@ class ListAutoLaunchChangeHistoriesRequest:
     def sort_key(self):
         """Gets the sort_key of this ListAutoLaunchChangeHistoriesRequest.
 
-        排序的key值，目前只支持按照recent_scan_time排序
+        排序的key值，目前只支持按照recent_scan_time排序，按照recent_scan_time排序时，根据sort_dir的值决定升序还是降序
 
         :return: The sort_key of this ListAutoLaunchChangeHistoriesRequest.
         :rtype: str
@@ -294,7 +294,7 @@ class ListAutoLaunchChangeHistoriesRequest:
     def sort_key(self, sort_key):
         """Sets the sort_key of this ListAutoLaunchChangeHistoriesRequest.
 
-        排序的key值，目前只支持按照recent_scan_time排序
+        排序的key值，目前只支持按照recent_scan_time排序，按照recent_scan_time排序时，根据sort_dir的值决定升序还是降序
 
         :param sort_key: The sort_key of this ListAutoLaunchChangeHistoriesRequest.
         :type sort_key: str
@@ -305,7 +305,7 @@ class ListAutoLaunchChangeHistoriesRequest:
     def sort_dir(self):
         """Gets the sort_dir of this ListAutoLaunchChangeHistoriesRequest.
 
-        排序方式，默认为降序:   - asc ：升序   - desc ：降序
+        排序方式，默认为降序，当sort_key为按照recent_scan_time排序时，根据当前值决定升序还是降序，当sort_key为其他值时均为降序   - asc ：升序   - desc ：降序
 
         :return: The sort_dir of this ListAutoLaunchChangeHistoriesRequest.
         :rtype: str
@@ -316,7 +316,7 @@ class ListAutoLaunchChangeHistoriesRequest:
     def sort_dir(self, sort_dir):
         """Sets the sort_dir of this ListAutoLaunchChangeHistoriesRequest.
 
-        排序方式，默认为降序:   - asc ：升序   - desc ：降序
+        排序方式，默认为降序，当sort_key为按照recent_scan_time排序时，根据当前值决定升序还是降序，当sort_key为其他值时均为降序   - asc ：升序   - desc ：降序
 
         :param sort_dir: The sort_dir of this ListAutoLaunchChangeHistoriesRequest.
         :type sort_dir: str
@@ -327,7 +327,7 @@ class ListAutoLaunchChangeHistoriesRequest:
     def limit(self):
         """Gets the limit of this ListAutoLaunchChangeHistoriesRequest.
 
-        每页显示数量，默认10
+        每页显示数量
 
         :return: The limit of this ListAutoLaunchChangeHistoriesRequest.
         :rtype: int
@@ -338,7 +338,7 @@ class ListAutoLaunchChangeHistoriesRequest:
     def limit(self, limit):
         """Sets the limit of this ListAutoLaunchChangeHistoriesRequest.
 
-        每页显示数量，默认10
+        每页显示数量
 
         :param limit: The limit of this ListAutoLaunchChangeHistoriesRequest.
         :type limit: int
@@ -349,7 +349,7 @@ class ListAutoLaunchChangeHistoriesRequest:
     def offset(self):
         """Gets the offset of this ListAutoLaunchChangeHistoriesRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        偏移量：指定返回记录的开始位置
 
         :return: The offset of this ListAutoLaunchChangeHistoriesRequest.
         :rtype: int
@@ -360,7 +360,7 @@ class ListAutoLaunchChangeHistoriesRequest:
     def offset(self, offset):
         """Sets the offset of this ListAutoLaunchChangeHistoriesRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        偏移量：指定返回记录的开始位置
 
         :param offset: The offset of this ListAutoLaunchChangeHistoriesRequest.
         :type offset: int

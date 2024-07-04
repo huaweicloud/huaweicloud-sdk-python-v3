@@ -45,7 +45,7 @@ class ListProtectionPolicyRequest:
         :type region: str
         :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
-        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        :param offset: 偏移量：指定返回记录的开始位置
         :type offset: int
         :param limit: 每页显示个数
         :type limit: int
@@ -130,7 +130,7 @@ class ListProtectionPolicyRequest:
     def offset(self):
         """Gets the offset of this ListProtectionPolicyRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        偏移量：指定返回记录的开始位置
 
         :return: The offset of this ListProtectionPolicyRequest.
         :rtype: int
@@ -141,7 +141,7 @@ class ListProtectionPolicyRequest:
     def offset(self, offset):
         """Sets the offset of this ListProtectionPolicyRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        偏移量：指定返回记录的开始位置
 
         :param offset: The offset of this ListProtectionPolicyRequest.
         :type offset: int

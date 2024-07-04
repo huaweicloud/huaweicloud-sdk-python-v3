@@ -35,7 +35,7 @@ class SetWtpProtectionStatusRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param status: 开启关闭状态
+        :param status: 开启关闭状态，true表示enable， false表示disable
         :type status: bool
         :param host_id_list: 主机ID数组，不能为空
         :type host_id_list: list[str]
@@ -64,7 +64,7 @@ class SetWtpProtectionStatusRequestInfo:
     def status(self):
         """Gets the status of this SetWtpProtectionStatusRequestInfo.
 
-        开启关闭状态
+        开启关闭状态，true表示enable， false表示disable
 
         :return: The status of this SetWtpProtectionStatusRequestInfo.
         :rtype: bool
@@ -75,7 +75,7 @@ class SetWtpProtectionStatusRequestInfo:
     def status(self, status):
         """Sets the status of this SetWtpProtectionStatusRequestInfo.
 
-        开启关闭状态
+        开启关闭状态，true表示enable， false表示disable
 
         :param status: The status of this SetWtpProtectionStatusRequestInfo.
         :type status: bool

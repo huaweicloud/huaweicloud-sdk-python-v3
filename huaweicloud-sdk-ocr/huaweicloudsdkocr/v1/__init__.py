@@ -24,6 +24,7 @@ from huaweicloudsdkocr.v1.model.business_license_request_body import BusinessLic
 from huaweicloudsdkocr.v1.model.business_license_result import BusinessLicenseResult
 from huaweicloudsdkocr.v1.model.cambodian_id_card_request_body import CambodianIdCardRequestBody
 from huaweicloudsdkocr.v1.model.cambodian_id_card_result import CambodianIdCardResult
+from huaweicloudsdkocr.v1.model.cambodian_id_card_score_information_result import CambodianIdCardScoreInformationResult
 from huaweicloudsdkocr.v1.model.char_list_iem import CharListIem
 from huaweicloudsdkocr.v1.model.chile_id_card_confidence import ChileIdCardConfidence
 from huaweicloudsdkocr.v1.model.chile_id_card_request_body import ChileIdCardRequestBody

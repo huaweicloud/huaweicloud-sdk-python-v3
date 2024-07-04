@@ -49,7 +49,7 @@ class PwdPolicyInfoResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param host_id: 主机id(鼠标在“服务器名称”放置后上浮显示)
+        :param host_id: 主机id
         :type host_id: str
         :param host_name: 服务器名称
         :type host_name: str
@@ -115,7 +115,7 @@ class PwdPolicyInfoResponseInfo:
     def host_id(self):
         """Gets the host_id of this PwdPolicyInfoResponseInfo.
 
-        主机id(鼠标在“服务器名称”放置后上浮显示)
+        主机id
 
         :return: The host_id of this PwdPolicyInfoResponseInfo.
         :rtype: str
@@ -126,7 +126,7 @@ class PwdPolicyInfoResponseInfo:
     def host_id(self, host_id):
         """Sets the host_id of this PwdPolicyInfoResponseInfo.
 
-        主机id(鼠标在“服务器名称”放置后上浮显示)
+        主机id
 
         :param host_id: The host_id of this PwdPolicyInfoResponseInfo.
         :type host_id: str

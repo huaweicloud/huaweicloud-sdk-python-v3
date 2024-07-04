@@ -31,9 +31,9 @@ class ShowCeshierarchyRespExchanges:
 
         The model defined in huaweicloud sdk
 
-        :param name: exchange名称。
+        :param name: Exchange名称。
         :type name: str
-        :param vhost: 对应的vhost。
+        :param vhost: 对应的Vhost。
         :type vhost: str
         """
         
@@ -52,7 +52,7 @@ class ShowCeshierarchyRespExchanges:
     def name(self):
         """Gets the name of this ShowCeshierarchyRespExchanges.
 
-        exchange名称。
+        Exchange名称。
 
         :return: The name of this ShowCeshierarchyRespExchanges.
         :rtype: str
@@ -63,7 +63,7 @@ class ShowCeshierarchyRespExchanges:
     def name(self, name):
         """Sets the name of this ShowCeshierarchyRespExchanges.
 
-        exchange名称。
+        Exchange名称。
 
         :param name: The name of this ShowCeshierarchyRespExchanges.
         :type name: str
@@ -74,7 +74,7 @@ class ShowCeshierarchyRespExchanges:
     def vhost(self):
         """Gets the vhost of this ShowCeshierarchyRespExchanges.
 
-        对应的vhost。
+        对应的Vhost。
 
         :return: The vhost of this ShowCeshierarchyRespExchanges.
         :rtype: str
@@ -85,7 +85,7 @@ class ShowCeshierarchyRespExchanges:
     def vhost(self, vhost):
         """Sets the vhost of this ShowCeshierarchyRespExchanges.
 
-        对应的vhost。
+        对应的Vhost。
 
         :param vhost: The vhost of this ShowCeshierarchyRespExchanges.
         :type vhost: str

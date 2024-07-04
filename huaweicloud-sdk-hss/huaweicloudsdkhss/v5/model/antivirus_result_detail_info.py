@@ -67,7 +67,7 @@ class AntivirusResultDetailInfo:
         :type file_ctime: int
         :param file_mtime: 文件更新时间
         :type file_mtime: int
-        :param update_time: 事件白名单更新时间，毫秒
+        :param update_time: 更新时间，毫秒
         :type update_time: int
         :param agent_id: Agent ID
         :type agent_id: str
@@ -313,7 +313,7 @@ class AntivirusResultDetailInfo:
     def update_time(self):
         """Gets the update_time of this AntivirusResultDetailInfo.
 
-        事件白名单更新时间，毫秒
+        更新时间，毫秒
 
         :return: The update_time of this AntivirusResultDetailInfo.
         :rtype: int
@@ -324,7 +324,7 @@ class AntivirusResultDetailInfo:
     def update_time(self, update_time):
         """Sets the update_time of this AntivirusResultDetailInfo.
 
-        事件白名单更新时间，毫秒
+        更新时间，毫秒
 
         :param update_time: The update_time of this AntivirusResultDetailInfo.
         :type update_time: int

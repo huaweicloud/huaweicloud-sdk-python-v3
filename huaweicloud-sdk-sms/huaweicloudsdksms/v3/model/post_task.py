@@ -20,6 +20,7 @@ class PostTask:
         'name': 'str',
         'type': 'str',
         'start_target_server': 'bool',
+        'auto_start': 'bool',
         'os_type': 'str',
         'source_server': 'SourceServerByTask',
         'target_server': 'TargetServerByTask',
@@ -28,8 +29,10 @@ class PostTask:
         'region_id': 'str',
         'project_name': 'str',
         'project_id': 'str',
+        'priority': 'int',
         'vm_template_id': 'str',
         'use_public_ip': 'bool',
+        'use_ipv6': 'bool',
         'syncing': 'bool',
         'exist_server': 'bool',
         'start_network_check': 'bool'
@@ -39,6 +42,7 @@ class PostTask:
         'name': 'name',
         'type': 'type',
         'start_target_server': 'start_target_server',
+        'auto_start': 'auto_start',
         'os_type': 'os_type',
         'source_server': 'source_server',
         'target_server': 'target_server',
@@ -47,14 +51,16 @@ class PostTask:
         'region_id': 'region_id',
         'project_name': 'project_name',
         'project_id': 'project_id',
+        'priority': 'priority',
         'vm_template_id': 'vm_template_id',
         'use_public_ip': 'use_public_ip',
+        'use_ipv6': 'use_ipv6',
         'syncing': 'syncing',
         'exist_server': 'exist_server',
         'start_network_check': 'start_network_check'
     }
 
-    def __init__(self, name=None, type=None, start_target_server=None, os_type=None, source_server=None, target_server=None, migration_ip=None, region_name=None, region_id=None, project_name=None, project_id=None, vm_template_id=None, use_public_ip=None, syncing=None, exist_server=None, start_network_check=None):
+    def __init__(self, name=None, type=None, start_target_server=None, auto_start=None, os_type=None, source_server=None, target_server=None, migration_ip=None, region_name=None, region_id=None, project_name=None, project_id=None, priority=None, vm_template_id=None, use_public_ip=None, use_ipv6=None, syncing=None, exist_server=None, start_network_check=None):
         """PostTask
 
         The model defined in huaweicloud sdk
@@ -65,6 +71,8 @@ class PostTask:
         :type type: str
         :param start_target_server: 迁移后是否启动目的端虚拟机
         :type start_target_server: bool
+        :param auto_start: 是否自动启动
+        :type auto_start: bool
         :param os_type: 操作系统类型
         :type os_type: str
         :param source_server: 
@@ -81,10 +89,14 @@ class PostTask:
         :type project_name: str
         :param project_id: 项目ID
         :type project_id: str
+        :param priority: 优先级。默认为1
+        :type priority: int
         :param vm_template_id: 自动创建虚拟机使用模板
         :type vm_template_id: str
         :param use_public_ip: 是否使用公网ip
         :type use_public_ip: bool
+        :param use_ipv6: 是否使用ipv6
+        :type use_ipv6: bool
         :param syncing: 复制或者同步后是否会继续持续同步，不添加则默认是false
         :type syncing: bool
         :param exist_server: 是否存在服务，如果存在，则创建任务
@@ -98,6 +110,7 @@ class PostTask:
         self._name = None
         self._type = None
         self._start_target_server = None
+        self._auto_start = None
         self._os_type = None
         self._source_server = None
         self._target_server = None
@@ -106,8 +119,10 @@ class PostTask:
         self._region_id = None
         self._project_name = None
         self._project_id = None
+        self._priority = None
         self._vm_template_id = None
         self._use_public_ip = None
+        self._use_ipv6 = None
         self._syncing = None
         self._exist_server = None
         self._start_network_check = None
@@ -117,6 +132,8 @@ class PostTask:
         self.type = type
         if start_target_server is not None:
             self.start_target_server = start_target_server
+        if auto_start is not None:
+            self.auto_start = auto_start
         self.os_type = os_type
         self.source_server = source_server
         self.target_server = target_server
@@ -126,10 +143,14 @@ class PostTask:
         self.region_id = region_id
         self.project_name = project_name
         self.project_id = project_id
+        if priority is not None:
+            self.priority = priority
         if vm_template_id is not None:
             self.vm_template_id = vm_template_id
         if use_public_ip is not None:
             self.use_public_ip = use_public_ip
+        if use_ipv6 is not None:
+            self.use_ipv6 = use_ipv6
         if syncing is not None:
             self.syncing = syncing
         if exist_server is not None:
@@ -202,6 +223,28 @@ class PostTask:
         :type start_target_server: bool
         """
         self._start_target_server = start_target_server
+
+    @property
+    def auto_start(self):
+        """Gets the auto_start of this PostTask.
+
+        是否自动启动
+
+        :return: The auto_start of this PostTask.
+        :rtype: bool
+        """
+        return self._auto_start
+
+    @auto_start.setter
+    def auto_start(self, auto_start):
+        """Sets the auto_start of this PostTask.
+
+        是否自动启动
+
+        :param auto_start: The auto_start of this PostTask.
+        :type auto_start: bool
+        """
+        self._auto_start = auto_start
 
     @property
     def os_type(self):
@@ -372,6 +415,28 @@ class PostTask:
         self._project_id = project_id
 
     @property
+    def priority(self):
+        """Gets the priority of this PostTask.
+
+        优先级。默认为1
+
+        :return: The priority of this PostTask.
+        :rtype: int
+        """
+        return self._priority
+
+    @priority.setter
+    def priority(self, priority):
+        """Sets the priority of this PostTask.
+
+        优先级。默认为1
+
+        :param priority: The priority of this PostTask.
+        :type priority: int
+        """
+        self._priority = priority
+
+    @property
     def vm_template_id(self):
         """Gets the vm_template_id of this PostTask.
 
@@ -414,6 +479,28 @@ class PostTask:
         :type use_public_ip: bool
         """
         self._use_public_ip = use_public_ip
+
+    @property
+    def use_ipv6(self):
+        """Gets the use_ipv6 of this PostTask.
+
+        是否使用ipv6
+
+        :return: The use_ipv6 of this PostTask.
+        :rtype: bool
+        """
+        return self._use_ipv6
+
+    @use_ipv6.setter
+    def use_ipv6(self, use_ipv6):
+        """Sets the use_ipv6 of this PostTask.
+
+        是否使用ipv6
+
+        :param use_ipv6: The use_ipv6 of this PostTask.
+        :type use_ipv6: bool
+        """
+        self._use_ipv6 = use_ipv6
 
     @property
     def syncing(self):

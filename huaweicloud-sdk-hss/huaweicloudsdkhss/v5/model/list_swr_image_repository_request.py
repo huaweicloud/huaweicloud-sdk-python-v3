@@ -69,19 +69,19 @@ class ListSwrImageRepositoryRequest:
 
         :param region: Region ID
         :type region: str
-        :param enterprise_project_id: 租户企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
         :param namespace: 组织名称
         :type namespace: str
-        :param image_name: 镜像名称 id
+        :param image_name: 镜像名称
         :type image_name: str
         :param image_version: 镜像版本
         :type image_version: str
         :param latest_version: 仅关注最新版本镜像
         :type latest_version: bool
-        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        :param offset: 偏移量：指定返回记录的开始位置
         :type offset: int
-        :param limit: 每页显示个数
+        :param limit: 每页显示数量
         :type limit: int
         :param image_type: 镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库   - local_image : 本地镜像   - instance_image : 企业镜像
         :type image_type: str
@@ -198,7 +198,7 @@ class ListSwrImageRepositoryRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListSwrImageRepositoryRequest.
 
-        租户企业项目ID，查询所有企业项目时填写：all_granted_eps
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :return: The enterprise_project_id of this ListSwrImageRepositoryRequest.
         :rtype: str
@@ -209,7 +209,7 @@ class ListSwrImageRepositoryRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListSwrImageRepositoryRequest.
 
-        租户企业项目ID，查询所有企业项目时填写：all_granted_eps
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :param enterprise_project_id: The enterprise_project_id of this ListSwrImageRepositoryRequest.
         :type enterprise_project_id: str
@@ -242,7 +242,7 @@ class ListSwrImageRepositoryRequest:
     def image_name(self):
         """Gets the image_name of this ListSwrImageRepositoryRequest.
 
-        镜像名称 id
+        镜像名称
 
         :return: The image_name of this ListSwrImageRepositoryRequest.
         :rtype: str
@@ -253,7 +253,7 @@ class ListSwrImageRepositoryRequest:
     def image_name(self, image_name):
         """Sets the image_name of this ListSwrImageRepositoryRequest.
 
-        镜像名称 id
+        镜像名称
 
         :param image_name: The image_name of this ListSwrImageRepositoryRequest.
         :type image_name: str
@@ -308,7 +308,7 @@ class ListSwrImageRepositoryRequest:
     def offset(self):
         """Gets the offset of this ListSwrImageRepositoryRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        偏移量：指定返回记录的开始位置
 
         :return: The offset of this ListSwrImageRepositoryRequest.
         :rtype: int
@@ -319,7 +319,7 @@ class ListSwrImageRepositoryRequest:
     def offset(self, offset):
         """Sets the offset of this ListSwrImageRepositoryRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        偏移量：指定返回记录的开始位置
 
         :param offset: The offset of this ListSwrImageRepositoryRequest.
         :type offset: int
@@ -330,7 +330,7 @@ class ListSwrImageRepositoryRequest:
     def limit(self):
         """Gets the limit of this ListSwrImageRepositoryRequest.
 
-        每页显示个数
+        每页显示数量
 
         :return: The limit of this ListSwrImageRepositoryRequest.
         :rtype: int
@@ -341,7 +341,7 @@ class ListSwrImageRepositoryRequest:
     def limit(self, limit):
         """Sets the limit of this ListSwrImageRepositoryRequest.
 
-        每页显示个数
+        每页显示数量
 
         :param limit: The limit of this ListSwrImageRepositoryRequest.
         :type limit: int

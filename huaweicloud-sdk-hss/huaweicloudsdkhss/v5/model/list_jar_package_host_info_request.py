@@ -53,9 +53,9 @@ class ListJarPackageHostInfoRequest:
         :type host_name: str
         :param host_ip: 服务器IP
         :type host_ip: str
-        :param limit: 每页显示数量，默认10
+        :param limit: 每页显示数量
         :type limit: int
-        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        :param offset: 偏移量：指定返回记录的开始位置
         :type offset: int
         :param part_match: 是否模糊匹配，默认false表示精确匹配
         :type part_match: bool
@@ -203,7 +203,7 @@ class ListJarPackageHostInfoRequest:
     def limit(self):
         """Gets the limit of this ListJarPackageHostInfoRequest.
 
-        每页显示数量，默认10
+        每页显示数量
 
         :return: The limit of this ListJarPackageHostInfoRequest.
         :rtype: int
@@ -214,7 +214,7 @@ class ListJarPackageHostInfoRequest:
     def limit(self, limit):
         """Sets the limit of this ListJarPackageHostInfoRequest.
 
-        每页显示数量，默认10
+        每页显示数量
 
         :param limit: The limit of this ListJarPackageHostInfoRequest.
         :type limit: int
@@ -225,7 +225,7 @@ class ListJarPackageHostInfoRequest:
     def offset(self):
         """Gets the offset of this ListJarPackageHostInfoRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        偏移量：指定返回记录的开始位置
 
         :return: The offset of this ListJarPackageHostInfoRequest.
         :rtype: int
@@ -236,7 +236,7 @@ class ListJarPackageHostInfoRequest:
     def offset(self, offset):
         """Sets the offset of this ListJarPackageHostInfoRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        偏移量：指定返回记录的开始位置
 
         :param offset: The offset of this ListJarPackageHostInfoRequest.
         :type offset: int

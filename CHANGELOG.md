@@ -1,3 +1,282 @@
+# 3.1.104 2024-07-04
+
+### HuaweiCloud SDK APIG
+
+- _Features_
+  - Support the APIs `ListCustomIngressPortDomains`, `ListCustomIngressPorts`, `AddCustomIngressPort`, `DeleteCustomIngressPort`
+- _Bug Fix_
+  - None
+- _Change_
+  - **AssociateDomainV2**
+    - changes of request param
+      - `+ ingress_http_port`
+      - `+ ingress_https_port`
+    - changes of response param
+      - `+ ingress_https_port`
+      - `+ ingress_http_port`
+  - **UpdateDomainV2**
+    - changes of request param
+      - `+ ingress_http_port`
+      - `+ ingress_https_port`
+    - changes of response param
+      - `+ ingress_https_port`
+      - `+ ingress_http_port`
+  - **AssociateCertificateV2**
+    - changes of response param
+      - `+ ingress_https_port`
+      - `+ ingress_http_port`
+  - **ShowDetailsOfApiGroupV2**
+    - changes of response param
+      - `+ url_domains.ingress_http_port`
+      - `+ url_domains.ingress_https_port`
+  - **UpdateApiGroupV2**
+    - changes of response param
+      - `+ url_domains.ingress_http_port`
+      - `+ url_domains.ingress_https_port`
+  - **ListAttachedDomainsV2**
+    - changes of response param
+      - `+ ingress_https_port`
+      - `+ ingress_http_port`
+      - `+ bound_domains.ingress_http_port`
+      - `+ bound_domains.ingress_https_port`
+  - **CreateApiGroupV2**
+    - changes of response param
+      - `+ url_domains.ingress_http_port`
+      - `+ url_domains.ingress_https_port`
+  - **ListApiGroupsV2**
+    - changes of response param
+      - `+ groups.url_domains.ingress_http_port`
+      - `+ groups.url_domains.ingress_https_port`
+  - **ShowDetailsOfApiV2**
+    - changes of response param
+      - `+ api_group_info.url_domains.ingress_http_port`
+      - `+ api_group_info.url_domains.ingress_https_port`
+  - **UpdateApiV2**
+    - changes of response param
+      - `+ api_group_info.url_domains.ingress_http_port`
+      - `+ api_group_info.url_domains.ingress_https_port`
+  - **ListApiVersionDetailV2**
+    - changes of response param
+      - `+ api_group_info.url_domains.ingress_http_port`
+      - `+ api_group_info.url_domains.ingress_https_port`
+  - **CreateApiV2**
+    - changes of response param
+      - `+ api_group_info.url_domains.ingress_http_port`
+      - `+ api_group_info.url_domains.ingress_https_port`
+  - **ListApisV2**
+    - changes of response param
+      - `+ apis.api_group_info.url_domains.ingress_http_port`
+      - `+ apis.api_group_info.url_domains.ingress_https_port`
+
+### HuaweiCloud SDK CDN
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowDomainFullConfig**
+    - changes of response param
+      - `+ configs.url_auth.time_arg`
+  - **UpdateDomainFullConfig**
+    - changes of request param
+      - `+ configs.url_auth.time_arg`
+
+### HuaweiCloud SDK DAS
+
+- _Features_
+  - Support the API `ExportSlowSqlTrendDetails`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateSqlLimitRules**
+    - changes of request param
+      - `+ sql_limit_rules.his_sql_limit_switch`
+      - `+ sql_limit_rules.sql_type: enum value [INSERT]`
+
+### HuaweiCloud SDK GaussDB
+
+- _Features_
+  - Support the following APIs:
+    - `ResizeStarRocksFlavor`
+    - `ShowStarrocksParams`
+    - `UpdateStarrocksParams`
+    - `SyncStarRocksUsers`
+    - `CheckStarrocksParams`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListInstances**
+    - changes of response param
+      - `+ instances.datastore.target_version`
+      - `+ instances.datastore.hotfix_finished_times`
+  - **ListInstancesDetails**
+    - changes of response param
+      - `+ instances.datastore.target_version`
+      - `+ instances.datastore.hotfix_finished_times`
+
+### HuaweiCloud SDK HSS
+
+- _Features_
+  - Support the APIs `ListContainers`, `ListImageLocal`
+- _Bug Fix_
+  - None
+- _Change_
+  - **RunImageSynchronize**
+    - changes of request param
+      - `* region: required -> optional`
+  - **BatchScanSwrImage**
+    - changes of request param
+      - `* region: required -> optional`
+  - **ListImageVulnerabilities**
+    - changes of request param
+      - `* region: required -> optional`
+  - **ListVulnerabilityCve**
+    - changes of request param
+      - `* region: required -> optional`
+  - **ListImageRiskConfigs**
+    - changes of request param
+      - `* region: required -> optional`
+  - **ListImageRiskConfigRules**
+    - changes of request param
+      - `* region: required -> optional`
+  - **ShowImageCheckRuleDetail**
+    - changes of request param
+      - `* region: required -> optional`
+
+### HuaweiCloud SDK KMS
+
+- _Features_
+  - Support the APIs `UpdatePrimaryRegion`, `ReplicateKey`, `ListSupportRegions`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListKeys**
+    - changes of response param
+      - `- key_details.partition_type`
+  - **ListKeyDetail**
+    - changes of response param
+      - `- key_info.partition_type`
+  - **ListKmsByTags**
+    - changes of response param
+      - `- resources.resource_detail.partition_type`
+
+### HuaweiCloud SDK OCR
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **RecognizeCambodianIdCard**
+    - changes of request param
+      - `+ detect_border_integrity`
+      - `+ detect_blocking_within_border`
+      - `+ detect_blur`
+      - `+ detect_glare`
+      - `+ return_adjusted_image`
+      - `+ detect_tampering`
+    - changes of response param
+      - `+ result.adjusted_image`
+      - `+ result.detect_border_integrity_result`
+      - `+ result.detect_blocking_within_border_result`
+      - `+ result.detect_blur_result`
+      - `+ result.detect_glare_result`
+      - `+ result.detect_tampering_result`
+      - `+ result.score_info`
+
+### HuaweiCloud SDK RabbitMQ
+
+- _Features_
+  - Support the following APIs:
+    - `ListVhosts`
+    - `CreateVhost`
+    - `BatchDeleteVhosts`
+    - `ListExchanges`
+    - `CreateExchange`
+    - `BatchDeleteExchanges`
+    - `ListQueues`
+    - `CreateQueue`
+    - `BatchDeleteQueues`
+    - `ShowQueueDetails`
+    - `DeleteQueueInfo`
+    - `ListBindings`
+    - `CreateBinding`
+    - `DeleteBinding`
+    - `ListUser`
+    - `CreateUser`
+    - `UpdateUser`
+    - `DeleteUser`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreatePostPaidInstanceByEngine**
+    - changes of request param
+      - `- engine_version: enum value [3.8.35]`
+  - **UpdateInstance**
+    - changes of request param
+      - `+ enable_acl`
+  - **CreatePostPaidInstance**
+    - changes of request param
+      - `- engine_version: enum value [3.8.35]`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - Support the APIs `CreateInstanceIam5`, `UnlockNodeReadonlyStatus`, `DeleteDisasterRecovery`, `ListFlavorsResize`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK ServiceStage
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListComponentOverviews**
+    - changes of response param
+      - `+ components.instances`
+      - `* components: list<ComponentView> -> list<ComponentOverview>`
+
+### HuaweiCloud SDK SMS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateTaskStatus**
+    - changes of request param
+      - `+ template_id`
+      - `- param`
+      - `- operation: enum value [collect_log,sync_failed_rollback]`
+  - **ShowMigproject**
+    - changes of response param
+      - `- template`
+  - **UpdateMigproject**
+    - changes of request param
+      - `- template`
+  - **CreateTask**
+    - changes of request param
+      - `+ auto_start`
+      - `+ priority`
+      - `+ use_ipv6`
+  - **ShowTask**
+    - changes of response param
+      - `+ exist_server`
+
 # 3.1.103 2024-06-27
 
 ### HuaweiCloud SDK AOM

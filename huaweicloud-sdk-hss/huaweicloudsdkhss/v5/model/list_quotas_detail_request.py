@@ -69,7 +69,7 @@ class ListQuotasDetailRequest:
         :type charging_mode: str
         :param limit: 每页数量
         :type limit: int
-        :param offset: 偏移量：指定返回记录的开始位置，必须为数字
+        :param offset: 偏移量：指定返回记录的开始位置
         :type offset: int
         """
         
@@ -335,7 +335,7 @@ class ListQuotasDetailRequest:
     def offset(self):
         """Gets the offset of this ListQuotasDetailRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字
+        偏移量：指定返回记录的开始位置
 
         :return: The offset of this ListQuotasDetailRequest.
         :rtype: int
@@ -346,7 +346,7 @@ class ListQuotasDetailRequest:
     def offset(self, offset):
         """Sets the offset of this ListQuotasDetailRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字
+        偏移量：指定返回记录的开始位置
 
         :param offset: The offset of this ListQuotasDetailRequest.
         :type offset: int

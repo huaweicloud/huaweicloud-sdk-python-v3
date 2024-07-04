@@ -135,9 +135,9 @@ class ListHostStatusRequest:
         :type server_group: str
         :param agent_upgradable: agent是否可升级
         :type agent_upgradable: bool
-        :param limit: 每页显示个数，默认10
+        :param limit: 每页显示数量
         :type limit: int
-        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        :param offset: 偏移量：指定返回记录的开始位置
         :type offset: int
         """
         
@@ -806,7 +806,7 @@ class ListHostStatusRequest:
     def limit(self):
         """Gets the limit of this ListHostStatusRequest.
 
-        每页显示个数，默认10
+        每页显示数量
 
         :return: The limit of this ListHostStatusRequest.
         :rtype: int
@@ -817,7 +817,7 @@ class ListHostStatusRequest:
     def limit(self, limit):
         """Sets the limit of this ListHostStatusRequest.
 
-        每页显示个数，默认10
+        每页显示数量
 
         :param limit: The limit of this ListHostStatusRequest.
         :type limit: int
@@ -828,7 +828,7 @@ class ListHostStatusRequest:
     def offset(self):
         """Gets the offset of this ListHostStatusRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        偏移量：指定返回记录的开始位置
 
         :return: The offset of this ListHostStatusRequest.
         :rtype: int
@@ -839,7 +839,7 @@ class ListHostStatusRequest:
     def offset(self, offset):
         """Sets the offset of this ListHostStatusRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        偏移量：指定返回记录的开始位置
 
         :param offset: The offset of this ListHostStatusRequest.
         :type offset: int

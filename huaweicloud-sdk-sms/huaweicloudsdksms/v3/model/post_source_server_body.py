@@ -190,11 +190,14 @@ class PostSourceServerBody:
 
         if id is not None:
             self.id = id
-        self.ip = ip
-        self.name = name
+        if ip is not None:
+            self.ip = ip
+        if name is not None:
+            self.name = name
         if hostname is not None:
             self.hostname = hostname
-        self.os_type = os_type
+        if os_type is not None:
+            self.os_type = os_type
         if os_version is not None:
             self.os_version = os_version
         if virtualization_type is not None:
@@ -233,7 +236,8 @@ class PostSourceServerBody:
             self.system_dir = system_dir
         if volume_groups is not None:
             self.volume_groups = volume_groups
-        self.agent_version = agent_version
+        if agent_version is not None:
+            self.agent_version = agent_version
         if kernel_version is not None:
             self.kernel_version = kernel_version
         if migration_cycle is not None:

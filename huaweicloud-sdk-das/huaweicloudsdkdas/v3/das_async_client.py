@@ -1009,7 +1009,7 @@ class DasAsyncClient(Client):
         return http_info
 
     def export_slow_sql_templates_details_async(self, request):
-        """导出慢SQL模板列表。
+        """导出慢SQL模板列表
 
         慢SQL开关打开后，导出慢SQL模板列表。免费实例仅支持查看最近一小时数据。查询时间间隔最长一天。
         
@@ -1054,6 +1054,85 @@ class DasAsyncClient(Client):
             query_params.append(('datastore_type', local_var_params['datastore_type']))
         if 'db_name' in local_var_params:
             query_params.append(('db_name', local_var_params['db_name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def export_slow_sql_trend_details_async(self, request):
+        """导出慢SQL数量趋势
+
+        慢SQL开关打开后，导出慢SQL数量趋势。免费实例仅支持查看最近一小时数据。查询时间间隔最长一天。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ExportSlowSqlTrendDetails
+        :type request: :class:`huaweicloudsdkdas.v3.ExportSlowSqlTrendDetailsRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ExportSlowSqlTrendDetailsResponse`
+        """
+        http_info = self._export_slow_sql_trend_details_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_slow_sql_trend_details_async_invoker(self, request):
+        http_info = self._export_slow_sql_trend_details_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _export_slow_sql_trend_details_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/slow-sql-trend",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportSlowSqlTrendDetailsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'start_at' in local_var_params:
+            query_params.append(('start_at', local_var_params['start_at']))
+        if 'end_at' in local_var_params:
+            query_params.append(('end_at', local_var_params['end_at']))
+        if 'datastore_type' in local_var_params:
+            query_params.append(('datastore_type', local_var_params['datastore_type']))
+        if 'node_id' in local_var_params:
+            query_params.append(('node_id', local_var_params['node_id']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
@@ -1165,7 +1244,7 @@ class DasAsyncClient(Client):
         return http_info
 
     def export_top_sql_templates_details_async(self, request):
-        """导出TopSQL模板列表。
+        """导出TopSQL模板列表
 
         TopSQL开关打开后，导出TopSQL模板列表。该功能仅支持付费实例。查询时间间隔最长一小时。
         
@@ -1248,7 +1327,7 @@ class DasAsyncClient(Client):
         return http_info
 
     def export_top_sql_trend_details_async(self, request):
-        """导出SQL执行耗时区间数据。
+        """导出SQL执行耗时区间数据
 
         TopSQL开关打开后，导出SQL执行耗时区间数据。该功能仅支持付费实例。查询时间间隔最长六小时。
         
@@ -2336,7 +2415,7 @@ class DasAsyncClient(Client):
         return http_info
 
     def show_sql_switch_status_async(self, request):
-        """查询全量SQL和慢SQL的开关状态。
+        """查询全量SQL和慢SQL的开关状态
 
         查询DAS收集全量SQL和慢SQL的开关状态。该功能仅支持付费实例。
         

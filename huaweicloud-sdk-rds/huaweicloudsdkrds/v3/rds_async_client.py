@@ -1116,6 +1116,75 @@ class RdsAsyncClient(Client):
 
         return http_info
 
+    def create_instance_iam5_async(self, request):
+        """创建数据库实例V5接口，仅支持IAM5的新平面认证方式（AK/SK认证方式）
+
+        创建数据库实例V5接口，仅支持IAM5的新平面认证方式（AK/SK认证方式）
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateInstanceIam5
+        :type request: :class:`huaweicloudsdkrds.v3.CreateInstanceIam5Request`
+        :rtype: :class:`huaweicloudsdkrds.v3.CreateInstanceIam5Response`
+        """
+        http_info = self._create_instance_iam5_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_instance_iam5_async_invoker(self, request):
+        http_info = self._create_instance_iam5_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_instance_iam5_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateInstanceIam5Response"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+        if 'x_client_token' in local_var_params:
+            header_params['X-Client-Token'] = local_var_params['x_client_token']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_manual_backup_async(self, request):
         """创建手动备份
 
@@ -1501,6 +1570,75 @@ class RdsAsyncClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_disaster_recovery_async(self, request):
+        """解除实例容灾关系接口
+
+        解除实例容灾关系接口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteDisasterRecovery
+        :type request: :class:`huaweicloudsdkrds.v3.DeleteDisasterRecoveryRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.DeleteDisasterRecoveryResponse`
+        """
+        http_info = self._delete_disaster_recovery_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_disaster_recovery_async_invoker(self, request):
+        http_info = self._delete_disaster_recovery_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_disaster_recovery_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/delete-disaster-recovery",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDisasterRecoveryResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -2961,6 +3099,73 @@ class RdsAsyncClient(Client):
             query_params.append(('spec_code', local_var_params['spec_code']))
         if 'is_serverless' in local_var_params:
             query_params.append(('is_serverless', local_var_params['is_serverless']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_flavors_resize_async(self, request):
+        """查询数据库可变更规格接口
+
+        查询数据库可变更规格接口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListFlavorsResize
+        :type request: :class:`huaweicloudsdkrds.v3.ListFlavorsResizeRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListFlavorsResizeResponse`
+        """
+        http_info = self._list_flavors_resize_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_flavors_resize_async_invoker(self, request):
+        http_info = self._list_flavors_resize_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_flavors_resize_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/flavors-resize",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFlavorsResizeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -8908,6 +9113,75 @@ class RdsAsyncClient(Client):
             "resource_path": "/v3/{project_id}/instances/{instance_id}/ssl",
             "request_type": request.__class__.__name__,
             "response_type": "SwitchSslResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def unlock_node_readonly_status_async(self, request):
+        """解除节点只读状态接口
+
+        解除节点只读状态接口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UnlockNodeReadonlyStatus
+        :type request: :class:`huaweicloudsdkrds.v3.UnlockNodeReadonlyStatusRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.UnlockNodeReadonlyStatusResponse`
+        """
+        http_info = self._unlock_node_readonly_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def unlock_node_readonly_status_async_invoker(self, request):
+        http_info = self._unlock_node_readonly_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _unlock_node_readonly_status_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/unlock-node-readonly-status",
+            "request_type": request.__class__.__name__,
+            "response_type": "UnlockNodeReadonlyStatusResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

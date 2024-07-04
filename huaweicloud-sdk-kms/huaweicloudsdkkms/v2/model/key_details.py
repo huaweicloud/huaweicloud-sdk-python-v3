@@ -34,8 +34,7 @@ class KeyDetails:
         'key_rotation_enabled': 'str',
         'sys_enterprise_project_id': 'str',
         'keystore_id': 'str',
-        'key_label': 'str',
-        'partition_type': 'str'
+        'key_label': 'str'
     }
 
     attribute_map = {
@@ -56,11 +55,10 @@ class KeyDetails:
         'key_rotation_enabled': 'key_rotation_enabled',
         'sys_enterprise_project_id': 'sys_enterprise_project_id',
         'keystore_id': 'keystore_id',
-        'key_label': 'key_label',
-        'partition_type': 'partition_type'
+        'key_label': 'key_label'
     }
 
-    def __init__(self, key_id=None, domain_id=None, key_alias=None, realm=None, key_spec=None, key_usage=None, key_description=None, creation_date=None, scheduled_deletion_date=None, key_state=None, default_key_flag=None, key_type=None, expiration_time=None, origin=None, key_rotation_enabled=None, sys_enterprise_project_id=None, keystore_id=None, key_label=None, partition_type=None):
+    def __init__(self, key_id=None, domain_id=None, key_alias=None, realm=None, key_spec=None, key_usage=None, key_description=None, creation_date=None, scheduled_deletion_date=None, key_state=None, default_key_flag=None, key_type=None, expiration_time=None, origin=None, key_rotation_enabled=None, sys_enterprise_project_id=None, keystore_id=None, key_label=None):
         """KeyDetails
 
         The model defined in huaweicloud sdk
@@ -101,8 +99,6 @@ class KeyDetails:
         :type keystore_id: str
         :param key_label: 密钥在加密机中的标签
         :type key_label: str
-        :param partition_type: 分区类型，枚举如下：  - 1为专业版
-        :type partition_type: str
         """
         
         
@@ -125,7 +121,6 @@ class KeyDetails:
         self._sys_enterprise_project_id = None
         self._keystore_id = None
         self._key_label = None
-        self._partition_type = None
         self.discriminator = None
 
         if key_id is not None:
@@ -164,8 +159,6 @@ class KeyDetails:
             self.keystore_id = keystore_id
         if key_label is not None:
             self.key_label = key_label
-        if partition_type is not None:
-            self.partition_type = partition_type
 
     @property
     def key_id(self):
@@ -562,28 +555,6 @@ class KeyDetails:
         :type key_label: str
         """
         self._key_label = key_label
-
-    @property
-    def partition_type(self):
-        """Gets the partition_type of this KeyDetails.
-
-        分区类型，枚举如下：  - 1为专业版
-
-        :return: The partition_type of this KeyDetails.
-        :rtype: str
-        """
-        return self._partition_type
-
-    @partition_type.setter
-    def partition_type(self, partition_type):
-        """Sets the partition_type of this KeyDetails.
-
-        分区类型，枚举如下：  - 1为专业版
-
-        :param partition_type: The partition_type of this KeyDetails.
-        :type partition_type: str
-        """
-        self._partition_type = partition_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

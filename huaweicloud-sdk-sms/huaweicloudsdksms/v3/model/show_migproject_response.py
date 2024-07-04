@@ -22,7 +22,6 @@ class ShowMigprojectResponse(SdkResponse):
         'name': 'str',
         'description': 'str',
         'isdefault': 'bool',
-        'template': 'TemplateResponseBody',
         'region': 'str',
         'start_target_server': 'bool',
         'speed_limit': 'int',
@@ -39,7 +38,6 @@ class ShowMigprojectResponse(SdkResponse):
         'name': 'name',
         'description': 'description',
         'isdefault': 'isdefault',
-        'template': 'template',
         'region': 'region',
         'start_target_server': 'start_target_server',
         'speed_limit': 'speed_limit',
@@ -51,7 +49,7 @@ class ShowMigprojectResponse(SdkResponse):
         'start_network_check': 'start_network_check'
     }
 
-    def __init__(self, id=None, name=None, description=None, isdefault=None, template=None, region=None, start_target_server=None, speed_limit=None, use_public_ip=None, exist_server=None, type=None, enterprise_project=None, syncing=None, start_network_check=None):
+    def __init__(self, id=None, name=None, description=None, isdefault=None, region=None, start_target_server=None, speed_limit=None, use_public_ip=None, exist_server=None, type=None, enterprise_project=None, syncing=None, start_network_check=None):
         """ShowMigprojectResponse
 
         The model defined in huaweicloud sdk
@@ -64,8 +62,6 @@ class ShowMigprojectResponse(SdkResponse):
         :type description: str
         :param isdefault: 是否为默认模板
         :type isdefault: bool
-        :param template: 
-        :type template: :class:`huaweicloudsdksms.v3.TemplateResponseBody`
         :param region: 区域名称
         :type region: str
         :param start_target_server: 迁移后是否启动目的端虚拟机
@@ -92,7 +88,6 @@ class ShowMigprojectResponse(SdkResponse):
         self._name = None
         self._description = None
         self._isdefault = None
-        self._template = None
         self._region = None
         self._start_target_server = None
         self._speed_limit = None
@@ -112,8 +107,6 @@ class ShowMigprojectResponse(SdkResponse):
             self.description = description
         if isdefault is not None:
             self.isdefault = isdefault
-        if template is not None:
-            self.template = template
         if region is not None:
             self.region = region
         if start_target_server is not None:
@@ -220,24 +213,6 @@ class ShowMigprojectResponse(SdkResponse):
         :type isdefault: bool
         """
         self._isdefault = isdefault
-
-    @property
-    def template(self):
-        """Gets the template of this ShowMigprojectResponse.
-
-        :return: The template of this ShowMigprojectResponse.
-        :rtype: :class:`huaweicloudsdksms.v3.TemplateResponseBody`
-        """
-        return self._template
-
-    @template.setter
-    def template(self, template):
-        """Sets the template of this ShowMigprojectResponse.
-
-        :param template: The template of this ShowMigprojectResponse.
-        :type template: :class:`huaweicloudsdksms.v3.TemplateResponseBody`
-        """
-        self._template = template
 
     @property
     def region(self):

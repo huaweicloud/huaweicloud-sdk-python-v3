@@ -55,9 +55,9 @@ class ListPortHostRequest:
         :type type: str
         :param category: 类别，默认为host，包含如下： - host：主机 - container：容器
         :type category: str
-        :param limit: 每页显示数量，默认10
+        :param limit: 每页显示数量
         :type limit: int
-        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        :param offset: 偏移量：指定返回记录的开始位置
         :type offset: int
         """
         
@@ -225,7 +225,7 @@ class ListPortHostRequest:
     def limit(self):
         """Gets the limit of this ListPortHostRequest.
 
-        每页显示数量，默认10
+        每页显示数量
 
         :return: The limit of this ListPortHostRequest.
         :rtype: int
@@ -236,7 +236,7 @@ class ListPortHostRequest:
     def limit(self, limit):
         """Sets the limit of this ListPortHostRequest.
 
-        每页显示数量，默认10
+        每页显示数量
 
         :param limit: The limit of this ListPortHostRequest.
         :type limit: int
@@ -247,7 +247,7 @@ class ListPortHostRequest:
     def offset(self):
         """Gets the offset of this ListPortHostRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        偏移量：指定返回记录的开始位置
 
         :return: The offset of this ListPortHostRequest.
         :rtype: int
@@ -258,7 +258,7 @@ class ListPortHostRequest:
     def offset(self, offset):
         """Sets the offset of this ListPortHostRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        偏移量：指定返回记录的开始位置
 
         :param offset: The offset of this ListPortHostRequest.
         :type offset: int

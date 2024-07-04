@@ -29,7 +29,7 @@ class ShowCeshierarchyRespVhosts:
 
         The model defined in huaweicloud sdk
 
-        :param name: vhost名称。
+        :param name: Vhost名称。
         :type name: str
         """
         
@@ -45,7 +45,7 @@ class ShowCeshierarchyRespVhosts:
     def name(self):
         """Gets the name of this ShowCeshierarchyRespVhosts.
 
-        vhost名称。
+        Vhost名称。
 
         :return: The name of this ShowCeshierarchyRespVhosts.
         :rtype: str
@@ -56,7 +56,7 @@ class ShowCeshierarchyRespVhosts:
     def name(self, name):
         """Sets the name of this ShowCeshierarchyRespVhosts.
 
-        vhost名称。
+        Vhost名称。
 
         :param name: The name of this ShowCeshierarchyRespVhosts.
         :type name: str

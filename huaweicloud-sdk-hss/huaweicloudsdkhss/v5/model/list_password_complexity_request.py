@@ -47,9 +47,9 @@ class ListPasswordComplexityRequest:
         :type host_ip: str
         :param host_id: 主机id，不赋值时，查租户所有主机
         :type host_id: str
-        :param limit: 每页显示数量，默认10
+        :param limit: 每页显示数量
         :type limit: int
-        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0。
+        :param offset: 偏移量：指定返回记录的开始位置
         :type offset: int
         """
         
@@ -168,7 +168,7 @@ class ListPasswordComplexityRequest:
     def limit(self):
         """Gets the limit of this ListPasswordComplexityRequest.
 
-        每页显示数量，默认10
+        每页显示数量
 
         :return: The limit of this ListPasswordComplexityRequest.
         :rtype: int
@@ -179,7 +179,7 @@ class ListPasswordComplexityRequest:
     def limit(self, limit):
         """Sets the limit of this ListPasswordComplexityRequest.
 
-        每页显示数量，默认10
+        每页显示数量
 
         :param limit: The limit of this ListPasswordComplexityRequest.
         :type limit: int
@@ -190,7 +190,7 @@ class ListPasswordComplexityRequest:
     def offset(self):
         """Gets the offset of this ListPasswordComplexityRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0。
+        偏移量：指定返回记录的开始位置
 
         :return: The offset of this ListPasswordComplexityRequest.
         :rtype: int
@@ -201,7 +201,7 @@ class ListPasswordComplexityRequest:
     def offset(self, offset):
         """Sets the offset of this ListPasswordComplexityRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0。
+        偏移量：指定返回记录的开始位置
 
         :param offset: The offset of this ListPasswordComplexityRequest.
         :type offset: int

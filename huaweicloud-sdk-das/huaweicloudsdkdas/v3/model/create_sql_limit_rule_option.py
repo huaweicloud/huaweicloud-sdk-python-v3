@@ -20,17 +20,19 @@ class CreateSqlLimitRuleOption:
         'sql_type': 'str',
         'max_concurrency': 'int',
         'max_waiting': 'int',
-        'pattern': 'str'
+        'pattern': 'str',
+        'his_sql_limit_switch': 'bool'
     }
 
     attribute_map = {
         'sql_type': 'sql_type',
         'max_concurrency': 'max_concurrency',
         'max_waiting': 'max_waiting',
-        'pattern': 'pattern'
+        'pattern': 'pattern',
+        'his_sql_limit_switch': 'his_sql_limit_switch'
     }
 
-    def __init__(self, sql_type=None, max_concurrency=None, max_waiting=None, pattern=None):
+    def __init__(self, sql_type=None, max_concurrency=None, max_waiting=None, pattern=None, his_sql_limit_switch=None):
         """CreateSqlLimitRuleOption
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class CreateSqlLimitRuleOption:
         :type max_waiting: int
         :param pattern: SQL限流规则。限流规则以~分隔关键字，例如select~a。规则举例详细说明：例如关键字是\&quot;select~a\&quot;, 含义为：select以及a为该并发控制所包含的两个关键字，~为关键字间隔符，即若执行SQL命令包含select与a两个关键字视为命中此条并发控制规则。
         :type pattern: str
+        :param his_sql_limit_switch: 历史SQL限流开关。 本开关仅对本条SQL限流规则生效。 开启时，将kill掉命中此条SQL限流规则的已有会话。
+        :type his_sql_limit_switch: bool
         """
         
         
@@ -51,6 +55,7 @@ class CreateSqlLimitRuleOption:
         self._max_concurrency = None
         self._max_waiting = None
         self._pattern = None
+        self._his_sql_limit_switch = None
         self.discriminator = None
 
         self.sql_type = sql_type
@@ -58,6 +63,8 @@ class CreateSqlLimitRuleOption:
         if max_waiting is not None:
             self.max_waiting = max_waiting
         self.pattern = pattern
+        if his_sql_limit_switch is not None:
+            self.his_sql_limit_switch = his_sql_limit_switch
 
     @property
     def sql_type(self):
@@ -146,6 +153,28 @@ class CreateSqlLimitRuleOption:
         :type pattern: str
         """
         self._pattern = pattern
+
+    @property
+    def his_sql_limit_switch(self):
+        """Gets the his_sql_limit_switch of this CreateSqlLimitRuleOption.
+
+        历史SQL限流开关。 本开关仅对本条SQL限流规则生效。 开启时，将kill掉命中此条SQL限流规则的已有会话。
+
+        :return: The his_sql_limit_switch of this CreateSqlLimitRuleOption.
+        :rtype: bool
+        """
+        return self._his_sql_limit_switch
+
+    @his_sql_limit_switch.setter
+    def his_sql_limit_switch(self, his_sql_limit_switch):
+        """Sets the his_sql_limit_switch of this CreateSqlLimitRuleOption.
+
+        历史SQL限流开关。 本开关仅对本条SQL限流规则生效。 开启时，将kill掉命中此条SQL限流规则的已有会话。
+
+        :param his_sql_limit_switch: The his_sql_limit_switch of this CreateSqlLimitRuleOption.
+        :type his_sql_limit_switch: bool
+        """
+        self._his_sql_limit_switch = his_sql_limit_switch
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -18,27 +18,27 @@ class UpdateTaskStatusReq:
 
     openapi_types = {
         'operation': 'str',
-        'param': 'dict(str, str)',
+        'template_id': 'str',
         'switch_hce': 'bool',
         'is_need_consistency_check': 'bool'
     }
 
     attribute_map = {
         'operation': 'operation',
-        'param': 'param',
+        'template_id': 'template_id',
         'switch_hce': 'switch_hce',
         'is_need_consistency_check': 'is_need_consistency_check'
     }
 
-    def __init__(self, operation=None, param=None, switch_hce=None, is_need_consistency_check=None):
+    def __init__(self, operation=None, template_id=None, switch_hce=None, is_need_consistency_check=None):
         """UpdateTaskStatusReq
 
         The model defined in huaweicloud sdk
 
-        :param operation: 操作任务的具体动作 start:开始任务 stop:停止任务 collect_log:收集日志 test:测试 clone_test:克隆测试 restart:重新开始 sync_failed_rollback:同步失败回滚 network_check:网络质量检测 
+        :param operation: 操作任务的具体动作 start:开始任务 stop:停止任务 test:测试 clone_test:克隆测试 restart:重新开始 network_check:网络质量检测 
         :type operation: str
-        :param param: 操作参数
-        :type param: dict(str, str)
+        :param template_id: 模板id
+        :type template_id: str
         :param switch_hce: 是否切换hce
         :type switch_hce: bool
         :param is_need_consistency_check: 是否进行一致性校验
@@ -48,14 +48,14 @@ class UpdateTaskStatusReq:
         
 
         self._operation = None
-        self._param = None
+        self._template_id = None
         self._switch_hce = None
         self._is_need_consistency_check = None
         self.discriminator = None
 
         self.operation = operation
-        if param is not None:
-            self.param = param
+        if template_id is not None:
+            self.template_id = template_id
         if switch_hce is not None:
             self.switch_hce = switch_hce
         if is_need_consistency_check is not None:
@@ -65,7 +65,7 @@ class UpdateTaskStatusReq:
     def operation(self):
         """Gets the operation of this UpdateTaskStatusReq.
 
-        操作任务的具体动作 start:开始任务 stop:停止任务 collect_log:收集日志 test:测试 clone_test:克隆测试 restart:重新开始 sync_failed_rollback:同步失败回滚 network_check:网络质量检测 
+        操作任务的具体动作 start:开始任务 stop:停止任务 test:测试 clone_test:克隆测试 restart:重新开始 network_check:网络质量检测 
 
         :return: The operation of this UpdateTaskStatusReq.
         :rtype: str
@@ -76,7 +76,7 @@ class UpdateTaskStatusReq:
     def operation(self, operation):
         """Sets the operation of this UpdateTaskStatusReq.
 
-        操作任务的具体动作 start:开始任务 stop:停止任务 collect_log:收集日志 test:测试 clone_test:克隆测试 restart:重新开始 sync_failed_rollback:同步失败回滚 network_check:网络质量检测 
+        操作任务的具体动作 start:开始任务 stop:停止任务 test:测试 clone_test:克隆测试 restart:重新开始 network_check:网络质量检测 
 
         :param operation: The operation of this UpdateTaskStatusReq.
         :type operation: str
@@ -84,26 +84,26 @@ class UpdateTaskStatusReq:
         self._operation = operation
 
     @property
-    def param(self):
-        """Gets the param of this UpdateTaskStatusReq.
+    def template_id(self):
+        """Gets the template_id of this UpdateTaskStatusReq.
 
-        操作参数
+        模板id
 
-        :return: The param of this UpdateTaskStatusReq.
-        :rtype: dict(str, str)
+        :return: The template_id of this UpdateTaskStatusReq.
+        :rtype: str
         """
-        return self._param
+        return self._template_id
 
-    @param.setter
-    def param(self, param):
-        """Sets the param of this UpdateTaskStatusReq.
+    @template_id.setter
+    def template_id(self, template_id):
+        """Sets the template_id of this UpdateTaskStatusReq.
 
-        操作参数
+        模板id
 
-        :param param: The param of this UpdateTaskStatusReq.
-        :type param: dict(str, str)
+        :param template_id: The template_id of this UpdateTaskStatusReq.
+        :type template_id: str
         """
-        self._param = param
+        self._template_id = template_id
 
     @property
     def switch_hce(self):

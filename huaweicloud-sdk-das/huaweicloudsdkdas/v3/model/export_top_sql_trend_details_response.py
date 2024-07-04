@@ -34,7 +34,7 @@ class ExportTopSqlTrendDetailsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param interval_millis: 返回列表两个时间点之间的时间间隔。总查询时长一小时之内间隔10s，一小时到六小时范围内间隔60s，六小时以上间隔300s。单位为毫秒。
+        :param interval_millis: 返回列表两个时间点之间的时间间隔。总查询时长一小时之内间隔10s，一小时到六小时范围内间隔60s。单位为毫秒。
         :type interval_millis: int
         :param top_sql_trend_items: SQL执行耗时区间数据。
         :type top_sql_trend_items: list[:class:`huaweicloudsdkdas.v3.TopSqlTrendItem`]
@@ -60,7 +60,7 @@ class ExportTopSqlTrendDetailsResponse(SdkResponse):
     def interval_millis(self):
         """Gets the interval_millis of this ExportTopSqlTrendDetailsResponse.
 
-        返回列表两个时间点之间的时间间隔。总查询时长一小时之内间隔10s，一小时到六小时范围内间隔60s，六小时以上间隔300s。单位为毫秒。
+        返回列表两个时间点之间的时间间隔。总查询时长一小时之内间隔10s，一小时到六小时范围内间隔60s。单位为毫秒。
 
         :return: The interval_millis of this ExportTopSqlTrendDetailsResponse.
         :rtype: int
@@ -71,7 +71,7 @@ class ExportTopSqlTrendDetailsResponse(SdkResponse):
     def interval_millis(self, interval_millis):
         """Sets the interval_millis of this ExportTopSqlTrendDetailsResponse.
 
-        返回列表两个时间点之间的时间间隔。总查询时长一小时之内间隔10s，一小时到六小时范围内间隔60s，六小时以上间隔300s。单位为毫秒。
+        返回列表两个时间点之间的时间间隔。总查询时长一小时之内间隔10s，一小时到六小时范围内间隔60s。单位为毫秒。
 
         :param interval_millis: The interval_millis of this ExportTopSqlTrendDetailsResponse.
         :type interval_millis: int

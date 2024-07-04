@@ -31,9 +31,9 @@ class ShowCeshierarchyRespQueues:
 
         The model defined in huaweicloud sdk
 
-        :param name: 队列名称。
+        :param name: Queue名称。
         :type name: str
-        :param vhost: 对应的vhost。
+        :param vhost: 对应的Vhost。
         :type vhost: str
         """
         
@@ -52,7 +52,7 @@ class ShowCeshierarchyRespQueues:
     def name(self):
         """Gets the name of this ShowCeshierarchyRespQueues.
 
-        队列名称。
+        Queue名称。
 
         :return: The name of this ShowCeshierarchyRespQueues.
         :rtype: str
@@ -63,7 +63,7 @@ class ShowCeshierarchyRespQueues:
     def name(self, name):
         """Sets the name of this ShowCeshierarchyRespQueues.
 
-        队列名称。
+        Queue名称。
 
         :param name: The name of this ShowCeshierarchyRespQueues.
         :type name: str
@@ -74,7 +74,7 @@ class ShowCeshierarchyRespQueues:
     def vhost(self):
         """Gets the vhost of this ShowCeshierarchyRespQueues.
 
-        对应的vhost。
+        对应的Vhost。
 
         :return: The vhost of this ShowCeshierarchyRespQueues.
         :rtype: str
@@ -85,7 +85,7 @@ class ShowCeshierarchyRespQueues:
     def vhost(self, vhost):
         """Sets the vhost of this ShowCeshierarchyRespQueues.
 
-        对应的vhost。
+        对应的Vhost。
 
         :param vhost: The vhost of this ShowCeshierarchyRespQueues.
         :type vhost: str

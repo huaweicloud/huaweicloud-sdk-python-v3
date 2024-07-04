@@ -61,7 +61,7 @@ class ListRiskConfigCheckRulesRequest:
         :type host_id: str
         :param limit: 每页数量
         :type limit: int
-        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0。
+        :param offset: 偏移量：指定返回记录的开始位置
         :type offset: int
         """
         
@@ -275,7 +275,7 @@ class ListRiskConfigCheckRulesRequest:
     def offset(self):
         """Gets the offset of this ListRiskConfigCheckRulesRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0。
+        偏移量：指定返回记录的开始位置
 
         :return: The offset of this ListRiskConfigCheckRulesRequest.
         :rtype: int
@@ -286,7 +286,7 @@ class ListRiskConfigCheckRulesRequest:
     def offset(self, offset):
         """Sets the offset of this ListRiskConfigCheckRulesRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0。
+        偏移量：指定返回记录的开始位置
 
         :param offset: The offset of this ListRiskConfigCheckRulesRequest.
         :type offset: int

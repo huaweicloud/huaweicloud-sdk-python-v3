@@ -63,7 +63,7 @@ class ListVulnerabilitiesRequest:
         :type vul_name: str
         :param limit: 每页显示个数
         :type limit: int
-        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        :param offset: 偏移量：指定返回记录的开始位置
         :type offset: int
         :param repair_priority: 修复优先级 Critical 紧急 High  高 Medium 中 Low 低
         :type repair_priority: str
@@ -239,7 +239,7 @@ class ListVulnerabilitiesRequest:
     def offset(self):
         """Gets the offset of this ListVulnerabilitiesRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        偏移量：指定返回记录的开始位置
 
         :return: The offset of this ListVulnerabilitiesRequest.
         :rtype: int
@@ -250,7 +250,7 @@ class ListVulnerabilitiesRequest:
     def offset(self, offset):
         """Sets the offset of this ListVulnerabilitiesRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        偏移量：指定返回记录的开始位置
 
         :param offset: The offset of this ListVulnerabilitiesRequest.
         :type offset: int

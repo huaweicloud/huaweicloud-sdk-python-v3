@@ -48,9 +48,9 @@ class ShowCesHierarchyResponse(SdkResponse):
         :type instance_ids: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespInstanceIds`]
         :param nodes: 节点信息。
         :type nodes: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespNodes`]
-        :param queues: 队列信息。
+        :param queues: Queue信息。
         :type queues: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespQueues`]
-        :param vhosts: vhost信息
+        :param vhosts: Vhost信息
         :type vhosts: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespVhosts`]
         :param exchanges: exchange信息
         :type exchanges: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespExchanges`]
@@ -154,7 +154,7 @@ class ShowCesHierarchyResponse(SdkResponse):
     def queues(self):
         """Gets the queues of this ShowCesHierarchyResponse.
 
-        队列信息。
+        Queue信息。
 
         :return: The queues of this ShowCesHierarchyResponse.
         :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespQueues`]
@@ -165,7 +165,7 @@ class ShowCesHierarchyResponse(SdkResponse):
     def queues(self, queues):
         """Sets the queues of this ShowCesHierarchyResponse.
 
-        队列信息。
+        Queue信息。
 
         :param queues: The queues of this ShowCesHierarchyResponse.
         :type queues: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespQueues`]
@@ -176,7 +176,7 @@ class ShowCesHierarchyResponse(SdkResponse):
     def vhosts(self):
         """Gets the vhosts of this ShowCesHierarchyResponse.
 
-        vhost信息
+        Vhost信息
 
         :return: The vhosts of this ShowCesHierarchyResponse.
         :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespVhosts`]
@@ -187,7 +187,7 @@ class ShowCesHierarchyResponse(SdkResponse):
     def vhosts(self, vhosts):
         """Sets the vhosts of this ShowCesHierarchyResponse.
 
-        vhost信息
+        Vhost信息
 
         :param vhosts: The vhosts of this ShowCesHierarchyResponse.
         :type vhosts: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespVhosts`]

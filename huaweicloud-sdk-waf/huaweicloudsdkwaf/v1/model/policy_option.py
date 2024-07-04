@@ -67,7 +67,7 @@ class PolicyOption:
         :type webattack: bool
         :param common: 常规检测是否开启
         :type common: bool
-        :param crawler: 预留参数，改参数值一直为true，用户可忽略该参数值
+        :param crawler: 预留参数，该参数值一直为true，用户可忽略该参数值
         :type crawler: bool
         :param crawler_engine: 搜索engine是否开启
         :type crawler_engine: bool
@@ -208,7 +208,7 @@ class PolicyOption:
     def crawler(self):
         """Gets the crawler of this PolicyOption.
 
-        预留参数，改参数值一直为true，用户可忽略该参数值
+        预留参数，该参数值一直为true，用户可忽略该参数值
 
         :return: The crawler of this PolicyOption.
         :rtype: bool
@@ -219,7 +219,7 @@ class PolicyOption:
     def crawler(self, crawler):
         """Sets the crawler of this PolicyOption.
 
-        预留参数，改参数值一直为true，用户可忽略该参数值
+        预留参数，该参数值一直为true，用户可忽略该参数值
 
         :param crawler: The crawler of this PolicyOption.
         :type crawler: bool

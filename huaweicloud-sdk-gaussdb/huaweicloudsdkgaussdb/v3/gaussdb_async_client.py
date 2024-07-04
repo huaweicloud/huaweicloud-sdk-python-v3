@@ -9713,6 +9713,73 @@ class GaussDBAsyncClient(Client):
 
         return http_info
 
+    def check_starrocks_params_async(self, request):
+        """参数对比
+
+        对比实例参数和默认模板的差异
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CheckStarrocksParams
+        :type request: :class:`huaweicloudsdkgaussdb.v3.CheckStarrocksParamsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.CheckStarrocksParamsResponse`
+        """
+        http_info = self._check_starrocks_params_http_info(request)
+        return self._call_api(**http_info)
+
+    def check_starrocks_params_async_invoker(self, request):
+        http_info = self._check_starrocks_params_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _check_starrocks_params_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/configurations/starrocks/comparison",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckStarrocksParamsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def check_table_config_async(self, request):
         """HTAP数据同步表配置校验
 
@@ -12061,6 +12128,75 @@ class GaussDBAsyncClient(Client):
 
         return http_info
 
+    def resize_star_rocks_flavor_async(self, request):
+        """StarRocks实例规格变更
+
+        StarRocks实例规格变更。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ResizeStarRocksFlavor
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ResizeStarRocksFlavorRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ResizeStarRocksFlavorResponse`
+        """
+        http_info = self._resize_star_rocks_flavor_http_info(request)
+        return self._call_api(**http_info)
+
+    def resize_star_rocks_flavor_async_invoker(self, request):
+        http_info = self._resize_star_rocks_flavor_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _resize_star_rocks_flavor_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/starrocks/resize-flavor",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResizeStarRocksFlavorResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def restart_starrocks_instance_async(self, request):
         """重启StarRocks实例
 
@@ -12623,6 +12759,148 @@ class GaussDBAsyncClient(Client):
 
         return http_info
 
+    def show_starrocks_params_async(self, request):
+        """查询参数
+
+        按节点类型查询参数
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowStarrocksParams
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowStarrocksParamsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowStarrocksParamsResponse`
+        """
+        http_info = self._show_starrocks_params_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_starrocks_params_async_invoker(self, request):
+        http_info = self._show_starrocks_params_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_starrocks_params_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/starrocks/configurations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowStarrocksParamsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'node_type' in local_var_params:
+            query_params.append(('node_type', local_var_params['node_type']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def sync_star_rocks_users_async(self, request):
+        """StarRocks实例开启行列分流
+
+        StarRocks实例开启行列分流。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SyncStarRocksUsers
+        :type request: :class:`huaweicloudsdkgaussdb.v3.SyncStarRocksUsersRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.SyncStarRocksUsersResponse`
+        """
+        http_info = self._sync_star_rocks_users_http_info(request)
+        return self._call_api(**http_info)
+
+    def sync_star_rocks_users_async_invoker(self, request):
+        http_info = self._sync_star_rocks_users_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _sync_star_rocks_users_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/starrocks/users/sync",
+            "request_type": request.__class__.__name__,
+            "response_type": "SyncStarRocksUsersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_click_house_data_base_config_async(self, request):
         """修改数据同步
 
@@ -13060,6 +13338,75 @@ class GaussDBAsyncClient(Client):
             "resource_path": "/v3/{project_id}/instances/{instance_id}/starrocks/users/permission",
             "request_type": request.__class__.__name__,
             "response_type": "UpdateStarRocksDatabaseUserPermissionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_starrocks_params_async(self, request):
+        """修改参数
+
+        按节点类型修改节点参数
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateStarrocksParams
+        :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateStarrocksParamsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateStarrocksParamsResponse`
+        """
+        http_info = self._update_starrocks_params_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_starrocks_params_async_invoker(self, request):
+        http_info = self._update_starrocks_params_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_starrocks_params_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/starrocks/configurations",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateStarrocksParamsResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

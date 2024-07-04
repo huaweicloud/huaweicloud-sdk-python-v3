@@ -42,6 +42,8 @@ class DasRegion:
                         "https://das.af-south-1.myhuaweicloud.com")
     AP_SOUTHEAST_1 = Region("ap-southeast-1",
                         "https://das.ap-southeast-1.myhuaweicloud.com")
+    AF_NORTH_1 = Region("af-north-1",
+                        "https://das.af-north-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-south-1": CN_SOUTH_1,
@@ -62,6 +64,7 @@ class DasRegion:
         "ap-southeast-3": AP_SOUTHEAST_3,
         "af-south-1": AF_SOUTH_1,
         "ap-southeast-1": AP_SOUTHEAST_1,
+        "af-north-1": AF_NORTH_1,
     }
 
     @classmethod

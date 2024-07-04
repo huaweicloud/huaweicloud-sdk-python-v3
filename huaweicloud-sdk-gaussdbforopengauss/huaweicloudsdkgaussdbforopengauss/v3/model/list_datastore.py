@@ -20,17 +20,21 @@ class ListDatastore:
         'type': 'str',
         'version': 'str',
         'complete_version': 'str',
-        'hotfix_versions': 'str'
+        'hotfix_versions': 'str',
+        'target_version': 'str',
+        'hotfix_finished_times': 'list[str]'
     }
 
     attribute_map = {
         'type': 'type',
         'version': 'version',
         'complete_version': 'complete_version',
-        'hotfix_versions': 'hotfix_versions'
+        'hotfix_versions': 'hotfix_versions',
+        'target_version': 'target_version',
+        'hotfix_finished_times': 'hotfix_finished_times'
     }
 
-    def __init__(self, type=None, version=None, complete_version=None, hotfix_versions=None):
+    def __init__(self, type=None, version=None, complete_version=None, hotfix_versions=None, target_version=None, hotfix_finished_times=None):
         """ListDatastore
 
         The model defined in huaweicloud sdk
@@ -43,6 +47,10 @@ class ListDatastore:
         :type complete_version: str
         :param hotfix_versions: 数据库已升级的热补丁版本，当数据库热补丁升级成功后，该值不为空。
         :type hotfix_versions: str
+        :param target_version: 数据库正在升级的目标版本。
+        :type target_version: str
+        :param hotfix_finished_times: 热补丁升级完成时间列表。  热补丁升级完成时间，格式为“yyyy-mm-dd hh:mm:ss timezone”。  其中timezone是指时区。 
+        :type hotfix_finished_times: list[str]
         """
         
         
@@ -51,6 +59,8 @@ class ListDatastore:
         self._version = None
         self._complete_version = None
         self._hotfix_versions = None
+        self._target_version = None
+        self._hotfix_finished_times = None
         self.discriminator = None
 
         self.type = type
@@ -59,6 +69,10 @@ class ListDatastore:
             self.complete_version = complete_version
         if hotfix_versions is not None:
             self.hotfix_versions = hotfix_versions
+        if target_version is not None:
+            self.target_version = target_version
+        if hotfix_finished_times is not None:
+            self.hotfix_finished_times = hotfix_finished_times
 
     @property
     def type(self):
@@ -147,6 +161,50 @@ class ListDatastore:
         :type hotfix_versions: str
         """
         self._hotfix_versions = hotfix_versions
+
+    @property
+    def target_version(self):
+        """Gets the target_version of this ListDatastore.
+
+        数据库正在升级的目标版本。
+
+        :return: The target_version of this ListDatastore.
+        :rtype: str
+        """
+        return self._target_version
+
+    @target_version.setter
+    def target_version(self, target_version):
+        """Sets the target_version of this ListDatastore.
+
+        数据库正在升级的目标版本。
+
+        :param target_version: The target_version of this ListDatastore.
+        :type target_version: str
+        """
+        self._target_version = target_version
+
+    @property
+    def hotfix_finished_times(self):
+        """Gets the hotfix_finished_times of this ListDatastore.
+
+        热补丁升级完成时间列表。  热补丁升级完成时间，格式为“yyyy-mm-dd hh:mm:ss timezone”。  其中timezone是指时区。 
+
+        :return: The hotfix_finished_times of this ListDatastore.
+        :rtype: list[str]
+        """
+        return self._hotfix_finished_times
+
+    @hotfix_finished_times.setter
+    def hotfix_finished_times(self, hotfix_finished_times):
+        """Sets the hotfix_finished_times of this ListDatastore.
+
+        热补丁升级完成时间列表。  热补丁升级完成时间，格式为“yyyy-mm-dd hh:mm:ss timezone”。  其中timezone是指时区。 
+
+        :param hotfix_finished_times: The hotfix_finished_times of this ListDatastore.
+        :type hotfix_finished_times: list[str]
+        """
+        self._hotfix_finished_times = hotfix_finished_times
 
     def to_dict(self):
         """Returns the model properties as a dict"""

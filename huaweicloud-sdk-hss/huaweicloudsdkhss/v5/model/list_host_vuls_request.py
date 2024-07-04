@@ -55,7 +55,7 @@ class ListHostVulsRequest:
         :type vul_name: str
         :param limit: 每页显示个数
         :type limit: int
-        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        :param offset: 偏移量：指定返回记录的开始位置
         :type offset: int
         :param handle_status: 处置状态，包含如下:   - unhandled ：未处理   - handled : 已处理
         :type handle_status: str
@@ -210,7 +210,7 @@ class ListHostVulsRequest:
     def offset(self):
         """Gets the offset of this ListHostVulsRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        偏移量：指定返回记录的开始位置
 
         :return: The offset of this ListHostVulsRequest.
         :rtype: int
@@ -221,7 +221,7 @@ class ListHostVulsRequest:
     def offset(self, offset):
         """Sets the offset of this ListHostVulsRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        偏移量：指定返回记录的开始位置
 
         :param offset: The offset of this ListHostVulsRequest.
         :type offset: int

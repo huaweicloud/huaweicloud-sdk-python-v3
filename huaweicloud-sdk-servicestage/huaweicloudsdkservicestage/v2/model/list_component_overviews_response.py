@@ -19,7 +19,7 @@ class ListComponentOverviewsResponse(SdkResponse):
 
     openapi_types = {
         'count': 'int',
-        'components': 'list[ComponentView]'
+        'components': 'list[ComponentOverview]'
     }
 
     attribute_map = {
@@ -35,7 +35,7 @@ class ListComponentOverviewsResponse(SdkResponse):
         :param count: 组件个数。
         :type count: int
         :param components: 组件部署信息列表。
-        :type components: list[:class:`huaweicloudsdkservicestage.v2.ComponentView`]
+        :type components: list[:class:`huaweicloudsdkservicestage.v2.ComponentOverview`]
         """
         
         super(ListComponentOverviewsResponse, self).__init__()
@@ -78,7 +78,7 @@ class ListComponentOverviewsResponse(SdkResponse):
         组件部署信息列表。
 
         :return: The components of this ListComponentOverviewsResponse.
-        :rtype: list[:class:`huaweicloudsdkservicestage.v2.ComponentView`]
+        :rtype: list[:class:`huaweicloudsdkservicestage.v2.ComponentOverview`]
         """
         return self._components
 
@@ -89,7 +89,7 @@ class ListComponentOverviewsResponse(SdkResponse):
         组件部署信息列表。
 
         :param components: The components of this ListComponentOverviewsResponse.
-        :type components: list[:class:`huaweicloudsdkservicestage.v2.ComponentView`]
+        :type components: list[:class:`huaweicloudsdkservicestage.v2.ComponentOverview`]
         """
         self._components = components
 

@@ -34,6 +34,13 @@ class CambodianIdCardResult:
         'portrait_image': 'str',
         'portrait_location': 'list[list[int]]',
         'idcard_type': 'str',
+        'adjusted_image': 'str',
+        'detect_border_integrity_result': 'bool',
+        'detect_blocking_within_border_result': 'bool',
+        'detect_blur_result': 'bool',
+        'detect_glare_result': 'bool',
+        'detect_tampering_result': 'bool',
+        'score_info': 'CambodianIdCardScoreInformationResult',
         'confidence': 'object'
     }
 
@@ -55,10 +62,17 @@ class CambodianIdCardResult:
         'portrait_image': 'portrait_image',
         'portrait_location': 'portrait_location',
         'idcard_type': 'idcard_type',
+        'adjusted_image': 'adjusted_image',
+        'detect_border_integrity_result': 'detect_border_integrity_result',
+        'detect_blocking_within_border_result': 'detect_blocking_within_border_result',
+        'detect_blur_result': 'detect_blur_result',
+        'detect_glare_result': 'detect_glare_result',
+        'detect_tampering_result': 'detect_tampering_result',
+        'score_info': 'score_info',
         'confidence': 'confidence'
     }
 
-    def __init__(self, id_number=None, name_kh=None, name_en=None, birth_date=None, sex=None, height=None, birth_place=None, address=None, issue_date=None, expiry_date=None, description=None, machine_code1=None, machine_code2=None, machine_code3=None, portrait_image=None, portrait_location=None, idcard_type=None, confidence=None):
+    def __init__(self, id_number=None, name_kh=None, name_en=None, birth_date=None, sex=None, height=None, birth_place=None, address=None, issue_date=None, expiry_date=None, description=None, machine_code1=None, machine_code2=None, machine_code3=None, portrait_image=None, portrait_location=None, idcard_type=None, adjusted_image=None, detect_border_integrity_result=None, detect_blocking_within_border_result=None, detect_blur_result=None, detect_glare_result=None, detect_tampering_result=None, score_info=None, confidence=None):
         """CambodianIdCardResult
 
         The model defined in huaweicloud sdk
@@ -95,8 +109,22 @@ class CambodianIdCardResult:
         :type portrait_image: str
         :param portrait_location: 头像在原图上的位置。 当输入参数“return_portrait_location”为“true”时，才返回该参数。以列表形式显示，包含头像区域四个顶点的二维坐标（x,y），坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
         :type portrait_location: list[list[int]]
-        :param idcard_type: 身份证的类型。当输入参数“ idcard_type ”为“true”时，才返回该参数。取值如下所示： - normal：身份证原件 - copy：复印的身份证 
+        :param idcard_type: 身份证的类型。当输入参数\&quot;idcard_type \&quot;为\&quot;true\&quot;时，才返回该参数。取值如下所示： - normal：身份证原件 - copy：复印的身份证 
         :type idcard_type: str
+        :param adjusted_image: 身份证原图的base64编码。 当输入参数\&quot;return_adjusted_image\&quot;为\&quot;true\&quot;时，才返回该参数。 
+        :type adjusted_image: str
+        :param detect_border_integrity_result: 身份证图片边框完整性告警结果，\&quot;true\&quot;表示边框不完整，\&quot;false\&quot;表示边框完整。仅在输入参数detect_border_integrity为true时，返回该字段。 
+        :type detect_border_integrity_result: bool
+        :param detect_blocking_within_border_result: 身份证图像框内是否存在遮挡的告警结果，\&quot;true\&quot;表示边框内部存在遮挡，\&quot;false\&quot;表示边框内部完整。仅在输入参数detect_blocking_within_border为true时，返回该字段。 
+        :type detect_blocking_within_border_result: bool
+        :param detect_blur_result: 身份证模糊告警结果，\&quot;true\&quot;表示图片模糊，\&quot;false\&quot;表示身份证清晰。仅在输入参数detect_blur为true时，返回该字段。 
+        :type detect_blur_result: bool
+        :param detect_glare_result: 身份证反光告警结果，\&quot;true\&quot;表示身份证反光，\&quot;false\&quot;表示是身份证无反光。仅在输入参数detect_glare为true时，返回该字段。 
+        :type detect_glare_result: bool
+        :param detect_tampering_result: 身份证人像被篡改的告警结果，\&quot;true\&quot;表示身份证人像被篡改，\&quot;false\&quot;表示是身份证人像未被篡改。仅在输入参数detect_tampering为true时，返回该字段。 
+        :type detect_tampering_result: bool
+        :param score_info: 
+        :type score_info: :class:`huaweicloudsdkocr.v1.CambodianIdCardScoreInformationResult`
         :param confidence: 相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。 
         :type confidence: object
         """
@@ -120,6 +148,13 @@ class CambodianIdCardResult:
         self._portrait_image = None
         self._portrait_location = None
         self._idcard_type = None
+        self._adjusted_image = None
+        self._detect_border_integrity_result = None
+        self._detect_blocking_within_border_result = None
+        self._detect_blur_result = None
+        self._detect_glare_result = None
+        self._detect_tampering_result = None
+        self._score_info = None
         self._confidence = None
         self.discriminator = None
 
@@ -157,6 +192,20 @@ class CambodianIdCardResult:
             self.portrait_location = portrait_location
         if idcard_type is not None:
             self.idcard_type = idcard_type
+        if adjusted_image is not None:
+            self.adjusted_image = adjusted_image
+        if detect_border_integrity_result is not None:
+            self.detect_border_integrity_result = detect_border_integrity_result
+        if detect_blocking_within_border_result is not None:
+            self.detect_blocking_within_border_result = detect_blocking_within_border_result
+        if detect_blur_result is not None:
+            self.detect_blur_result = detect_blur_result
+        if detect_glare_result is not None:
+            self.detect_glare_result = detect_glare_result
+        if detect_tampering_result is not None:
+            self.detect_tampering_result = detect_tampering_result
+        if score_info is not None:
+            self.score_info = score_info
         if confidence is not None:
             self.confidence = confidence
 
@@ -516,7 +565,7 @@ class CambodianIdCardResult:
     def idcard_type(self):
         """Gets the idcard_type of this CambodianIdCardResult.
 
-        身份证的类型。当输入参数“ idcard_type ”为“true”时，才返回该参数。取值如下所示： - normal：身份证原件 - copy：复印的身份证 
+        身份证的类型。当输入参数\"idcard_type \"为\"true\"时，才返回该参数。取值如下所示： - normal：身份证原件 - copy：复印的身份证 
 
         :return: The idcard_type of this CambodianIdCardResult.
         :rtype: str
@@ -527,12 +576,162 @@ class CambodianIdCardResult:
     def idcard_type(self, idcard_type):
         """Sets the idcard_type of this CambodianIdCardResult.
 
-        身份证的类型。当输入参数“ idcard_type ”为“true”时，才返回该参数。取值如下所示： - normal：身份证原件 - copy：复印的身份证 
+        身份证的类型。当输入参数\"idcard_type \"为\"true\"时，才返回该参数。取值如下所示： - normal：身份证原件 - copy：复印的身份证 
 
         :param idcard_type: The idcard_type of this CambodianIdCardResult.
         :type idcard_type: str
         """
         self._idcard_type = idcard_type
+
+    @property
+    def adjusted_image(self):
+        """Gets the adjusted_image of this CambodianIdCardResult.
+
+        身份证原图的base64编码。 当输入参数\"return_adjusted_image\"为\"true\"时，才返回该参数。 
+
+        :return: The adjusted_image of this CambodianIdCardResult.
+        :rtype: str
+        """
+        return self._adjusted_image
+
+    @adjusted_image.setter
+    def adjusted_image(self, adjusted_image):
+        """Sets the adjusted_image of this CambodianIdCardResult.
+
+        身份证原图的base64编码。 当输入参数\"return_adjusted_image\"为\"true\"时，才返回该参数。 
+
+        :param adjusted_image: The adjusted_image of this CambodianIdCardResult.
+        :type adjusted_image: str
+        """
+        self._adjusted_image = adjusted_image
+
+    @property
+    def detect_border_integrity_result(self):
+        """Gets the detect_border_integrity_result of this CambodianIdCardResult.
+
+        身份证图片边框完整性告警结果，\"true\"表示边框不完整，\"false\"表示边框完整。仅在输入参数detect_border_integrity为true时，返回该字段。 
+
+        :return: The detect_border_integrity_result of this CambodianIdCardResult.
+        :rtype: bool
+        """
+        return self._detect_border_integrity_result
+
+    @detect_border_integrity_result.setter
+    def detect_border_integrity_result(self, detect_border_integrity_result):
+        """Sets the detect_border_integrity_result of this CambodianIdCardResult.
+
+        身份证图片边框完整性告警结果，\"true\"表示边框不完整，\"false\"表示边框完整。仅在输入参数detect_border_integrity为true时，返回该字段。 
+
+        :param detect_border_integrity_result: The detect_border_integrity_result of this CambodianIdCardResult.
+        :type detect_border_integrity_result: bool
+        """
+        self._detect_border_integrity_result = detect_border_integrity_result
+
+    @property
+    def detect_blocking_within_border_result(self):
+        """Gets the detect_blocking_within_border_result of this CambodianIdCardResult.
+
+        身份证图像框内是否存在遮挡的告警结果，\"true\"表示边框内部存在遮挡，\"false\"表示边框内部完整。仅在输入参数detect_blocking_within_border为true时，返回该字段。 
+
+        :return: The detect_blocking_within_border_result of this CambodianIdCardResult.
+        :rtype: bool
+        """
+        return self._detect_blocking_within_border_result
+
+    @detect_blocking_within_border_result.setter
+    def detect_blocking_within_border_result(self, detect_blocking_within_border_result):
+        """Sets the detect_blocking_within_border_result of this CambodianIdCardResult.
+
+        身份证图像框内是否存在遮挡的告警结果，\"true\"表示边框内部存在遮挡，\"false\"表示边框内部完整。仅在输入参数detect_blocking_within_border为true时，返回该字段。 
+
+        :param detect_blocking_within_border_result: The detect_blocking_within_border_result of this CambodianIdCardResult.
+        :type detect_blocking_within_border_result: bool
+        """
+        self._detect_blocking_within_border_result = detect_blocking_within_border_result
+
+    @property
+    def detect_blur_result(self):
+        """Gets the detect_blur_result of this CambodianIdCardResult.
+
+        身份证模糊告警结果，\"true\"表示图片模糊，\"false\"表示身份证清晰。仅在输入参数detect_blur为true时，返回该字段。 
+
+        :return: The detect_blur_result of this CambodianIdCardResult.
+        :rtype: bool
+        """
+        return self._detect_blur_result
+
+    @detect_blur_result.setter
+    def detect_blur_result(self, detect_blur_result):
+        """Sets the detect_blur_result of this CambodianIdCardResult.
+
+        身份证模糊告警结果，\"true\"表示图片模糊，\"false\"表示身份证清晰。仅在输入参数detect_blur为true时，返回该字段。 
+
+        :param detect_blur_result: The detect_blur_result of this CambodianIdCardResult.
+        :type detect_blur_result: bool
+        """
+        self._detect_blur_result = detect_blur_result
+
+    @property
+    def detect_glare_result(self):
+        """Gets the detect_glare_result of this CambodianIdCardResult.
+
+        身份证反光告警结果，\"true\"表示身份证反光，\"false\"表示是身份证无反光。仅在输入参数detect_glare为true时，返回该字段。 
+
+        :return: The detect_glare_result of this CambodianIdCardResult.
+        :rtype: bool
+        """
+        return self._detect_glare_result
+
+    @detect_glare_result.setter
+    def detect_glare_result(self, detect_glare_result):
+        """Sets the detect_glare_result of this CambodianIdCardResult.
+
+        身份证反光告警结果，\"true\"表示身份证反光，\"false\"表示是身份证无反光。仅在输入参数detect_glare为true时，返回该字段。 
+
+        :param detect_glare_result: The detect_glare_result of this CambodianIdCardResult.
+        :type detect_glare_result: bool
+        """
+        self._detect_glare_result = detect_glare_result
+
+    @property
+    def detect_tampering_result(self):
+        """Gets the detect_tampering_result of this CambodianIdCardResult.
+
+        身份证人像被篡改的告警结果，\"true\"表示身份证人像被篡改，\"false\"表示是身份证人像未被篡改。仅在输入参数detect_tampering为true时，返回该字段。 
+
+        :return: The detect_tampering_result of this CambodianIdCardResult.
+        :rtype: bool
+        """
+        return self._detect_tampering_result
+
+    @detect_tampering_result.setter
+    def detect_tampering_result(self, detect_tampering_result):
+        """Sets the detect_tampering_result of this CambodianIdCardResult.
+
+        身份证人像被篡改的告警结果，\"true\"表示身份证人像被篡改，\"false\"表示是身份证人像未被篡改。仅在输入参数detect_tampering为true时，返回该字段。 
+
+        :param detect_tampering_result: The detect_tampering_result of this CambodianIdCardResult.
+        :type detect_tampering_result: bool
+        """
+        self._detect_tampering_result = detect_tampering_result
+
+    @property
+    def score_info(self):
+        """Gets the score_info of this CambodianIdCardResult.
+
+        :return: The score_info of this CambodianIdCardResult.
+        :rtype: :class:`huaweicloudsdkocr.v1.CambodianIdCardScoreInformationResult`
+        """
+        return self._score_info
+
+    @score_info.setter
+    def score_info(self, score_info):
+        """Sets the score_info of this CambodianIdCardResult.
+
+        :param score_info: The score_info of this CambodianIdCardResult.
+        :type score_info: :class:`huaweicloudsdkocr.v1.CambodianIdCardScoreInformationResult`
+        """
+        self._score_info = score_info
 
     @property
     def confidence(self):

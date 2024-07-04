@@ -1788,6 +1788,83 @@ class HssAsyncClient(Client):
 
         return http_info
 
+    def list_containers_async(self, request):
+        """查询容器基本信息列表
+
+        查询容器基本信息列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListContainers
+        :type request: :class:`huaweicloudsdkhss.v5.ListContainersRequest`
+        :rtype: :class:`huaweicloudsdkhss.v5.ListContainersResponse`
+        """
+        http_info = self._list_containers_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_containers_async_invoker(self, request):
+        http_info = self._list_containers_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_containers_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/container/kubernetes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListContainersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'container_name' in local_var_params:
+            query_params.append(('container_name', local_var_params['container_name']))
+        if 'pod_name' in local_var_params:
+            query_params.append(('pod_name', local_var_params['pod_name']))
+        if 'image_name' in local_var_params:
+            query_params.append(('image_name', local_var_params['image_name']))
+        if 'cluster_container' in local_var_params:
+            query_params.append(('cluster_container', local_var_params['cluster_container']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_host_groups_async(self, request):
         """查询服务器组列表
 
@@ -2202,6 +2279,111 @@ class HssAsyncClient(Client):
             query_params.append(('status', local_var_params['status']))
         if 'repair_priority' in local_var_params:
             query_params.append(('repair_priority', local_var_params['repair_priority']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_image_local_async(self, request):
+        """本地镜像列表查询
+
+        本地镜像列表查询
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListImageLocal
+        :type request: :class:`huaweicloudsdkhss.v5.ListImageLocalRequest`
+        :rtype: :class:`huaweicloudsdkhss.v5.ListImageLocalResponse`
+        """
+        http_info = self._list_image_local_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_image_local_async_invoker(self, request):
+        http_info = self._list_image_local_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_image_local_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/image/local-repositories",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListImageLocalResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'image_name' in local_var_params:
+            query_params.append(('image_name', local_var_params['image_name']))
+        if 'image_version' in local_var_params:
+            query_params.append(('image_version', local_var_params['image_version']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'scan_status' in local_var_params:
+            query_params.append(('scan_status', local_var_params['scan_status']))
+        if 'local_image_type' in local_var_params:
+            query_params.append(('local_image_type', local_var_params['local_image_type']))
+        if 'image_size' in local_var_params:
+            query_params.append(('image_size', local_var_params['image_size']))
+        if 'start_latest_update_time' in local_var_params:
+            query_params.append(('start_latest_update_time', local_var_params['start_latest_update_time']))
+        if 'end_latest_update_time' in local_var_params:
+            query_params.append(('end_latest_update_time', local_var_params['end_latest_update_time']))
+        if 'start_latest_scan_time' in local_var_params:
+            query_params.append(('start_latest_scan_time', local_var_params['start_latest_scan_time']))
+        if 'end_latest_scan_time' in local_var_params:
+            query_params.append(('end_latest_scan_time', local_var_params['end_latest_scan_time']))
+        if 'has_vul' in local_var_params:
+            query_params.append(('has_vul', local_var_params['has_vul']))
+        if 'host_name' in local_var_params:
+            query_params.append(('host_name', local_var_params['host_name']))
+        if 'host_id' in local_var_params:
+            query_params.append(('host_id', local_var_params['host_id']))
+        if 'host_ip' in local_var_params:
+            query_params.append(('host_ip', local_var_params['host_ip']))
+        if 'container_id' in local_var_params:
+            query_params.append(('container_id', local_var_params['container_id']))
+        if 'container_name' in local_var_params:
+            query_params.append(('container_name', local_var_params['container_name']))
+        if 'pod_id' in local_var_params:
+            query_params.append(('pod_id', local_var_params['pod_id']))
+        if 'pod_name' in local_var_params:
+            query_params.append(('pod_name', local_var_params['pod_name']))
+        if 'app_name' in local_var_params:
+            query_params.append(('app_name', local_var_params['app_name']))
 
         header_params = {}
 

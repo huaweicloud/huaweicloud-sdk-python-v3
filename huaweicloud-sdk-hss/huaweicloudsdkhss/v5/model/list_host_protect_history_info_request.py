@@ -61,7 +61,7 @@ class ListHostProtectHistoryInfoRequest:
         :type end_time: int
         :param limit: limit
         :type limit: int
-        :param offset: offset
+        :param offset: 偏移量：指定返回记录的开始位置
         :type offset: int
         :param host_name: 服务器名称
         :type host_name: str
@@ -242,7 +242,7 @@ class ListHostProtectHistoryInfoRequest:
     def offset(self):
         """Gets the offset of this ListHostProtectHistoryInfoRequest.
 
-        offset
+        偏移量：指定返回记录的开始位置
 
         :return: The offset of this ListHostProtectHistoryInfoRequest.
         :rtype: int
@@ -253,7 +253,7 @@ class ListHostProtectHistoryInfoRequest:
     def offset(self, offset):
         """Sets the offset of this ListHostProtectHistoryInfoRequest.
 
-        offset
+        偏移量：指定返回记录的开始位置
 
         :param offset: The offset of this ListHostProtectHistoryInfoRequest.
         :type offset: int

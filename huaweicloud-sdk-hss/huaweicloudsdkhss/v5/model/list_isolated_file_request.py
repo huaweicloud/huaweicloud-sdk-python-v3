@@ -63,7 +63,7 @@ class ListIsolatedFileRequest:
         :type file_hash: str
         :param asset_value: 资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
         :type asset_value: str
-        :param offset: 偏移量：指定返回记录的开始位置，必须为数字
+        :param offset: 偏移量：指定返回记录的开始位置
         :type offset: int
         :param limit: 每页显示个数
         :type limit: int
@@ -283,7 +283,7 @@ class ListIsolatedFileRequest:
     def offset(self):
         """Gets the offset of this ListIsolatedFileRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字
+        偏移量：指定返回记录的开始位置
 
         :return: The offset of this ListIsolatedFileRequest.
         :rtype: int
@@ -294,7 +294,7 @@ class ListIsolatedFileRequest:
     def offset(self, offset):
         """Sets the offset of this ListIsolatedFileRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字
+        偏移量：指定返回记录的开始位置
 
         :param offset: The offset of this ListIsolatedFileRequest.
         :type offset: int

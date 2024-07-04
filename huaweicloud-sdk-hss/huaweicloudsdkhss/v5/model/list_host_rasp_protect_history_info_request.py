@@ -59,7 +59,7 @@ class ListHostRaspProtectHistoryInfoRequest:
         :type end_time: int
         :param limit: limit
         :type limit: int
-        :param offset: offset
+        :param offset: 偏移量：指定返回记录的开始位置
         :type offset: int
         :param alarm_level: 告警级别 - 1 : 低危 - 2 : 中危 - 3 : 高危 - 4 : 严重
         :type alarm_level: int
@@ -235,7 +235,7 @@ class ListHostRaspProtectHistoryInfoRequest:
     def offset(self):
         """Gets the offset of this ListHostRaspProtectHistoryInfoRequest.
 
-        offset
+        偏移量：指定返回记录的开始位置
 
         :return: The offset of this ListHostRaspProtectHistoryInfoRequest.
         :rtype: int
@@ -246,7 +246,7 @@ class ListHostRaspProtectHistoryInfoRequest:
     def offset(self, offset):
         """Sets the offset of this ListHostRaspProtectHistoryInfoRequest.
 
-        offset
+        偏移量：指定返回记录的开始位置
 
         :param offset: The offset of this ListHostRaspProtectHistoryInfoRequest.
         :type offset: int

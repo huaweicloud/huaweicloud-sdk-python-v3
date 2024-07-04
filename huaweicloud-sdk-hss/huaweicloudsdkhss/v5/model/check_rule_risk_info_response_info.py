@@ -71,7 +71,7 @@ class CheckRuleRiskInfoResponseInfo:
         :type status: str
         :param enable_fix: 是否支持一键修复,1:支持一键修复,0:不支持
         :type enable_fix: int
-        :param enable_click: 该检查项的修复&amp;忽略&amp;验证按钮是否可点击,true:按钮可点击,false:按钮不可点击
+        :param enable_click: 该检查项的修复&amp;忽略&amp;验证按钮是否可单击,true:按钮可单击,false:按钮不可单击
         :type enable_click: bool
         :param rule_params: 支持传递参数修复的检查项可传递参数的范围，只有支持传递参数修复的检查项才返回此数据
         :type rule_params: list[:class:`huaweicloudsdkhss.v5.CheckRuleFixParamInfo`]
@@ -342,7 +342,7 @@ class CheckRuleRiskInfoResponseInfo:
     def enable_click(self):
         """Gets the enable_click of this CheckRuleRiskInfoResponseInfo.
 
-        该检查项的修复&忽略&验证按钮是否可点击,true:按钮可点击,false:按钮不可点击
+        该检查项的修复&忽略&验证按钮是否可单击,true:按钮可单击,false:按钮不可单击
 
         :return: The enable_click of this CheckRuleRiskInfoResponseInfo.
         :rtype: bool
@@ -353,7 +353,7 @@ class CheckRuleRiskInfoResponseInfo:
     def enable_click(self, enable_click):
         """Sets the enable_click of this CheckRuleRiskInfoResponseInfo.
 
-        该检查项的修复&忽略&验证按钮是否可点击,true:按钮可点击,false:按钮不可点击
+        该检查项的修复&忽略&验证按钮是否可单击,true:按钮可单击,false:按钮不可单击
 
         :param enable_click: The enable_click of this CheckRuleRiskInfoResponseInfo.
         :type enable_click: bool

@@ -37,7 +37,7 @@ class TopSqlTrendItem:
 
         The model defined in huaweicloud sdk
 
-        :param execute_at: 执行时间点，毫秒时间戳。表示统计数据的时间范围为execute_at - interval_millis到execute_at。
+        :param execute_at: 执行时间点，毫秒时间戳。表示统计数据的时间范围为execute_at到execute_at + interval_millis。
         :type execute_at: int
         :param query_time_in_100ms: 执行耗时小于100ms。
         :type query_time_in_100ms: int
@@ -68,7 +68,7 @@ class TopSqlTrendItem:
     def execute_at(self):
         """Gets the execute_at of this TopSqlTrendItem.
 
-        执行时间点，毫秒时间戳。表示统计数据的时间范围为execute_at - interval_millis到execute_at。
+        执行时间点，毫秒时间戳。表示统计数据的时间范围为execute_at到execute_at + interval_millis。
 
         :return: The execute_at of this TopSqlTrendItem.
         :rtype: int
@@ -79,7 +79,7 @@ class TopSqlTrendItem:
     def execute_at(self, execute_at):
         """Sets the execute_at of this TopSqlTrendItem.
 
-        执行时间点，毫秒时间戳。表示统计数据的时间范围为execute_at - interval_millis到execute_at。
+        执行时间点，毫秒时间戳。表示统计数据的时间范围为execute_at到execute_at + interval_millis。
 
         :param execute_at: The execute_at of this TopSqlTrendItem.
         :type execute_at: int
