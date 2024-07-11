@@ -89,7 +89,7 @@ class AppDetailInfo:
         :type is_disable: bool
         :param create_type: 创建方式
         :type create_type: str
-        :param project_id: 项目ID
+        :param project_id: 项目id
         :type project_id: str
         :param project_name: 项目名称
         :type project_name: str
@@ -113,11 +113,11 @@ class AppDetailInfo:
         :type can_create_env: bool
         :param can_disable: 是否有禁用应用的权限
         :type can_disable: bool
-        :param owner_tenant_id: 应用所属人租户ID
+        :param owner_tenant_id: 应用所属人租户id
         :type owner_tenant_id: str
         :param create_user_id: 应用创建者用户名
         :type create_user_id: str
-        :param create_tenant_id: 应用创建人租户ID
+        :param create_tenant_id: 应用创建人租户id
         :type create_tenant_id: str
         :param create_time: 创建时间
         :type create_time: str
@@ -345,7 +345,7 @@ class AppDetailInfo:
     def project_id(self):
         """Gets the project_id of this AppDetailInfo.
 
-        项目ID
+        项目id
 
         :return: The project_id of this AppDetailInfo.
         :rtype: str
@@ -356,7 +356,7 @@ class AppDetailInfo:
     def project_id(self, project_id):
         """Sets the project_id of this AppDetailInfo.
 
-        项目ID
+        项目id
 
         :param project_id: The project_id of this AppDetailInfo.
         :type project_id: str
@@ -609,7 +609,7 @@ class AppDetailInfo:
     def owner_tenant_id(self):
         """Gets the owner_tenant_id of this AppDetailInfo.
 
-        应用所属人租户ID
+        应用所属人租户id
 
         :return: The owner_tenant_id of this AppDetailInfo.
         :rtype: str
@@ -620,7 +620,7 @@ class AppDetailInfo:
     def owner_tenant_id(self, owner_tenant_id):
         """Sets the owner_tenant_id of this AppDetailInfo.
 
-        应用所属人租户ID
+        应用所属人租户id
 
         :param owner_tenant_id: The owner_tenant_id of this AppDetailInfo.
         :type owner_tenant_id: str
@@ -653,7 +653,7 @@ class AppDetailInfo:
     def create_tenant_id(self):
         """Gets the create_tenant_id of this AppDetailInfo.
 
-        应用创建人租户ID
+        应用创建人租户id
 
         :return: The create_tenant_id of this AppDetailInfo.
         :rtype: str
@@ -664,7 +664,7 @@ class AppDetailInfo:
     def create_tenant_id(self, create_tenant_id):
         """Sets the create_tenant_id of this AppDetailInfo.
 
-        应用创建人租户ID
+        应用创建人租户id
 
         :param create_tenant_id: The create_tenant_id of this AppDetailInfo.
         :type create_tenant_id: str

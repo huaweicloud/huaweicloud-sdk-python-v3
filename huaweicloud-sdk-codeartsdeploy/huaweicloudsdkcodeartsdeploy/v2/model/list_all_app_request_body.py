@@ -41,7 +41,7 @@ class ListAllAppRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: 项目ID
+        :param project_id: 项目id
         :type project_id: str
         :param page: 分页页码， 表示从此页开始查询， page大于等于1
         :type page: int
@@ -84,7 +84,7 @@ class ListAllAppRequestBody:
     def project_id(self):
         """Gets the project_id of this ListAllAppRequestBody.
 
-        项目ID
+        项目id
 
         :return: The project_id of this ListAllAppRequestBody.
         :rtype: str
@@ -95,7 +95,7 @@ class ListAllAppRequestBody:
     def project_id(self, project_id):
         """Sets the project_id of this ListAllAppRequestBody.
 
-        项目ID
+        项目id
 
         :param project_id: The project_id of this ListAllAppRequestBody.
         :type project_id: str

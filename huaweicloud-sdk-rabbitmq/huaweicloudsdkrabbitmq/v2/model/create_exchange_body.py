@@ -41,11 +41,11 @@ class CreateExchangeBody:
         :type name: str
         :param type: 类型（direct、fanout、topic、headers）
         :type type: str
-        :param durable: 是否持久化（AMQP版本默认持久化，不涉及此参数）。
+        :param durable: 是否持久化[（AMQP版本默认持久化，不涉及此参数）](tag:hws,hws_hk)。
         :type durable: bool
         :param auto_delete: 是否自动删除
         :type auto_delete: bool
-        :param internal: 内部Exchange（AMQP版本不支持内部Exchange，不涉及此参数）。
+        :param internal: 内部Exchange[（AMQP版本不支持内部Exchange，不涉及此参数）](tag:hws,hws_hk)。
         :type internal: bool
         """
         
@@ -114,7 +114,7 @@ class CreateExchangeBody:
     def durable(self):
         """Gets the durable of this CreateExchangeBody.
 
-        是否持久化（AMQP版本默认持久化，不涉及此参数）。
+        是否持久化[（AMQP版本默认持久化，不涉及此参数）](tag:hws,hws_hk)。
 
         :return: The durable of this CreateExchangeBody.
         :rtype: bool
@@ -125,7 +125,7 @@ class CreateExchangeBody:
     def durable(self, durable):
         """Sets the durable of this CreateExchangeBody.
 
-        是否持久化（AMQP版本默认持久化，不涉及此参数）。
+        是否持久化[（AMQP版本默认持久化，不涉及此参数）](tag:hws,hws_hk)。
 
         :param durable: The durable of this CreateExchangeBody.
         :type durable: bool
@@ -158,7 +158,7 @@ class CreateExchangeBody:
     def internal(self):
         """Gets the internal of this CreateExchangeBody.
 
-        内部Exchange（AMQP版本不支持内部Exchange，不涉及此参数）。
+        内部Exchange[（AMQP版本不支持内部Exchange，不涉及此参数）](tag:hws,hws_hk)。
 
         :return: The internal of this CreateExchangeBody.
         :rtype: bool
@@ -169,7 +169,7 @@ class CreateExchangeBody:
     def internal(self, internal):
         """Sets the internal of this CreateExchangeBody.
 
-        内部Exchange（AMQP版本不支持内部Exchange，不涉及此参数）。
+        内部Exchange[（AMQP版本不支持内部Exchange，不涉及此参数）](tag:hws,hws_hk)。
 
         :param internal: The internal of this CreateExchangeBody.
         :type internal: bool

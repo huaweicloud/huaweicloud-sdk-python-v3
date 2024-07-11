@@ -30,7 +30,7 @@ class DeleteDeploymentGroupResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param group_id: 主机集群ID
+        :param group_id: 主机集群id
         :type group_id: str
         """
         
@@ -46,7 +46,7 @@ class DeleteDeploymentGroupResponse(SdkResponse):
     def group_id(self):
         """Gets the group_id of this DeleteDeploymentGroupResponse.
 
-        主机集群ID
+        主机集群id
 
         :return: The group_id of this DeleteDeploymentGroupResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class DeleteDeploymentGroupResponse(SdkResponse):
     def group_id(self, group_id):
         """Sets the group_id of this DeleteDeploymentGroupResponse.
 
-        主机集群ID
+        主机集群id
 
         :param group_id: The group_id of this DeleteDeploymentGroupResponse.
         :type group_id: str

@@ -14,6 +14,8 @@ from huaweicloudsdkdas.v3.model.change_sql_limit_switch_status_response import C
 from huaweicloudsdkdas.v3.model.change_sql_switch_body import ChangeSqlSwitchBody
 from huaweicloudsdkdas.v3.model.change_sql_switch_request import ChangeSqlSwitchRequest
 from huaweicloudsdkdas.v3.model.change_sql_switch_response import ChangeSqlSwitchResponse
+from huaweicloudsdkdas.v3.model.change_transaction_switch_status_request import ChangeTransactionSwitchStatusRequest
+from huaweicloudsdkdas.v3.model.change_transaction_switch_status_response import ChangeTransactionSwitchStatusResponse
 from huaweicloudsdkdas.v3.model.create_share_connections_request import CreateShareConnectionsRequest
 from huaweicloudsdkdas.v3.model.create_share_connections_request_body import CreateShareConnectionsRequestBody
 from huaweicloudsdkdas.v3.model.create_share_connections_response import CreateShareConnectionsResponse
@@ -56,6 +58,7 @@ from huaweicloudsdkdas.v3.model.export_top_sql_trend_details_request import Expo
 from huaweicloudsdkdas.v3.model.export_top_sql_trend_details_response import ExportTopSqlTrendDetailsResponse
 from huaweicloudsdkdas.v3.model.feedback_info import FeedbackInfo
 from huaweicloudsdkdas.v3.model.full_sql import FullSql
+from huaweicloudsdkdas.v3.model.get_transaction_list_resp_transaction_info_list import GetTransactionListRespTransactionInfoList
 from huaweicloudsdkdas.v3.model.index_advice_info import IndexAdviceInfo
 from huaweicloudsdkdas.v3.model.innodb_lock import InnodbLock
 from huaweicloudsdkdas.v3.model.innodb_lock_waits import InnodbLockWaits
@@ -75,6 +78,8 @@ from huaweicloudsdkdas.v3.model.list_space_analysis_request import ListSpaceAnal
 from huaweicloudsdkdas.v3.model.list_space_analysis_response import ListSpaceAnalysisResponse
 from huaweicloudsdkdas.v3.model.list_sql_limit_rules_request import ListSqlLimitRulesRequest
 from huaweicloudsdkdas.v3.model.list_sql_limit_rules_response import ListSqlLimitRulesResponse
+from huaweicloudsdkdas.v3.model.list_transactions_request import ListTransactionsRequest
+from huaweicloudsdkdas.v3.model.list_transactions_response import ListTransactionsResponse
 from huaweicloudsdkdas.v3.model.metadata_lock import MetadataLock
 from huaweicloudsdkdas.v3.model.parse_sql_limit_rules_req import ParseSqlLimitRulesReq
 from huaweicloudsdkdas.v3.model.parse_sql_limit_rules_request import ParseSqlLimitRulesRequest
@@ -101,6 +106,8 @@ from huaweicloudsdkdas.v3.model.show_sql_limit_switch_status_request import Show
 from huaweicloudsdkdas.v3.model.show_sql_limit_switch_status_response import ShowSqlLimitSwitchStatusResponse
 from huaweicloudsdkdas.v3.model.show_sql_switch_status_request import ShowSqlSwitchStatusRequest
 from huaweicloudsdkdas.v3.model.show_sql_switch_status_response import ShowSqlSwitchStatusResponse
+from huaweicloudsdkdas.v3.model.show_transaction_switch_status_request import ShowTransactionSwitchStatusRequest
+from huaweicloudsdkdas.v3.model.show_transaction_switch_status_response import ShowTransactionSwitchStatusResponse
 from huaweicloudsdkdas.v3.model.show_tuning_request import ShowTuningRequest
 from huaweicloudsdkdas.v3.model.show_tuning_response import ShowTuningResponse
 from huaweicloudsdkdas.v3.model.slow_log import SlowLog
@@ -111,6 +118,7 @@ from huaweicloudsdkdas.v3.model.sql_limit_rule import SqlLimitRule
 from huaweicloudsdkdas.v3.model.tb_pos_info import TbPosInfo
 from huaweicloudsdkdas.v3.model.top_sql_template import TopSqlTemplate
 from huaweicloudsdkdas.v3.model.top_sql_trend_item import TopSqlTrendItem
+from huaweicloudsdkdas.v3.model.transaction_switch_req import TransactionSwitchReq
 from huaweicloudsdkdas.v3.model.update_db_user_request import UpdateDbUserRequest
 from huaweicloudsdkdas.v3.model.update_db_user_request_body import UpdateDbUserRequestBody
 from huaweicloudsdkdas.v3.model.update_db_user_response import UpdateDbUserResponse

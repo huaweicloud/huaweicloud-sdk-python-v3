@@ -37,7 +37,7 @@ class CreateBindingBody:
         :type destination: str
         :param routing_key: 绑定键值，用于告知Exchange应该将消息投递到哪些Queue或Exchange中
         :type routing_key: str
-        :param destination_type: 绑定目标端类型，Exchange或Queue（AMQP版本只支持绑定Queue）
+        :param destination_type: 绑定目标端类型，Exchange或Queue。[（AMQP版本只支持绑定Queue）](tag:hws,hws_hk)
         :type destination_type: str
         """
         
@@ -100,7 +100,7 @@ class CreateBindingBody:
     def destination_type(self):
         """Gets the destination_type of this CreateBindingBody.
 
-        绑定目标端类型，Exchange或Queue（AMQP版本只支持绑定Queue）
+        绑定目标端类型，Exchange或Queue。[（AMQP版本只支持绑定Queue）](tag:hws,hws_hk)
 
         :return: The destination_type of this CreateBindingBody.
         :rtype: str
@@ -111,7 +111,7 @@ class CreateBindingBody:
     def destination_type(self, destination_type):
         """Sets the destination_type of this CreateBindingBody.
 
-        绑定目标端类型，Exchange或Queue（AMQP版本只支持绑定Queue）
+        绑定目标端类型，Exchange或Queue。[（AMQP版本只支持绑定Queue）](tag:hws,hws_hk)
 
         :param destination_type: The destination_type of this CreateBindingBody.
         :type destination_type: str

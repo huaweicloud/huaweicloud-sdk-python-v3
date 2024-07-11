@@ -41,13 +41,13 @@ class ListRocketMqMigrationTaskRequest:
 
         :param instance_id: 实例ID。
         :type instance_id: str
-        :param id: 任务ID
+        :param id: 任务ID。
         :type id: str
-        :param type: 查询类型
+        :param type: 查询类型。
         :type type: str
-        :param offset: 当前页，从1开始
+        :param offset: 当前页，从1开始。
         :type offset: str
-        :param limit: 当前页大小
+        :param limit: 当前页大小。
         :type limit: str
         :param name: - 查询vhost列表时，该字段可为空。 - 查询exchange列表时，该字段为exchange所属vhost名称。 - 查询queue列表时，该字段为queue所属vhost-所属exchange，例vhost1-exchange1。
         :type name: str
@@ -101,7 +101,7 @@ class ListRocketMqMigrationTaskRequest:
     def id(self):
         """Gets the id of this ListRocketMqMigrationTaskRequest.
 
-        任务ID
+        任务ID。
 
         :return: The id of this ListRocketMqMigrationTaskRequest.
         :rtype: str
@@ -112,7 +112,7 @@ class ListRocketMqMigrationTaskRequest:
     def id(self, id):
         """Sets the id of this ListRocketMqMigrationTaskRequest.
 
-        任务ID
+        任务ID。
 
         :param id: The id of this ListRocketMqMigrationTaskRequest.
         :type id: str
@@ -123,7 +123,7 @@ class ListRocketMqMigrationTaskRequest:
     def type(self):
         """Gets the type of this ListRocketMqMigrationTaskRequest.
 
-        查询类型
+        查询类型。
 
         :return: The type of this ListRocketMqMigrationTaskRequest.
         :rtype: str
@@ -134,7 +134,7 @@ class ListRocketMqMigrationTaskRequest:
     def type(self, type):
         """Sets the type of this ListRocketMqMigrationTaskRequest.
 
-        查询类型
+        查询类型。
 
         :param type: The type of this ListRocketMqMigrationTaskRequest.
         :type type: str
@@ -145,7 +145,7 @@ class ListRocketMqMigrationTaskRequest:
     def offset(self):
         """Gets the offset of this ListRocketMqMigrationTaskRequest.
 
-        当前页，从1开始
+        当前页，从1开始。
 
         :return: The offset of this ListRocketMqMigrationTaskRequest.
         :rtype: str
@@ -156,7 +156,7 @@ class ListRocketMqMigrationTaskRequest:
     def offset(self, offset):
         """Sets the offset of this ListRocketMqMigrationTaskRequest.
 
-        当前页，从1开始
+        当前页，从1开始。
 
         :param offset: The offset of this ListRocketMqMigrationTaskRequest.
         :type offset: str
@@ -167,7 +167,7 @@ class ListRocketMqMigrationTaskRequest:
     def limit(self):
         """Gets the limit of this ListRocketMqMigrationTaskRequest.
 
-        当前页大小
+        当前页大小。
 
         :return: The limit of this ListRocketMqMigrationTaskRequest.
         :rtype: str
@@ -178,7 +178,7 @@ class ListRocketMqMigrationTaskRequest:
     def limit(self, limit):
         """Sets the limit of this ListRocketMqMigrationTaskRequest.
 
-        当前页大小
+        当前页大小。
 
         :param limit: The limit of this ListRocketMqMigrationTaskRequest.
         :type limit: str

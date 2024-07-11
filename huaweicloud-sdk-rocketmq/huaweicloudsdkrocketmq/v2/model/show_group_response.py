@@ -58,7 +58,7 @@ class ShowGroupResponse(SdkResponse):
         :type group_desc: str
         :param retry_max_time: 最大重试次数。
         :type retry_max_time: int
-        :param app_id: 应用id。
+        :param app_id: 应用ID。
         :type app_id: str
         :param app_name: 应用名称。
         :type app_name: str
@@ -234,7 +234,7 @@ class ShowGroupResponse(SdkResponse):
     def app_id(self):
         """Gets the app_id of this ShowGroupResponse.
 
-        应用id。
+        应用ID。
 
         :return: The app_id of this ShowGroupResponse.
         :rtype: str
@@ -245,7 +245,7 @@ class ShowGroupResponse(SdkResponse):
     def app_id(self, app_id):
         """Sets the app_id of this ShowGroupResponse.
 
-        应用id。
+        应用ID。
 
         :param app_id: The app_id of this ShowGroupResponse.
         :type app_id: str

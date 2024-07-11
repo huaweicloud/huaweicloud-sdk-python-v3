@@ -137,6 +137,8 @@ from huaweicloudsdkiotedge.v2.model.http_get_dto import HttpGetDTO
 from huaweicloudsdkiotedge.v2.model.import_points_request import ImportPointsRequest
 from huaweicloudsdkiotedge.v2.model.import_points_request_body import ImportPointsRequestBody
 from huaweicloudsdkiotedge.v2.model.import_points_response import ImportPointsResponse
+from huaweicloudsdkiotedge.v2.model.invoke_module_msg_request import InvokeModuleMsgRequest
+from huaweicloudsdkiotedge.v2.model.invoke_module_msg_response import InvokeModuleMsgResponse
 from huaweicloudsdkiotedge.v2.model.list_devices_request import ListDevicesRequest
 from huaweicloudsdkiotedge.v2.model.list_devices_response import ListDevicesResponse
 from huaweicloudsdkiotedge.v2.model.list_edge_nodes_request import ListEdgeNodesRequest

@@ -55,7 +55,7 @@ class ListMessagesRequest:
         :type limit: str
         :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0。
         :type offset: str
-        :param key: 消息的key
+        :param key: 消息的key。
         :type key: str
         :param start_time: 开始时间（不通过msg_id精确查询消息时，此参数必填）。
         :type start_time: str
@@ -208,7 +208,7 @@ class ListMessagesRequest:
     def key(self):
         """Gets the key of this ListMessagesRequest.
 
-        消息的key
+        消息的key。
 
         :return: The key of this ListMessagesRequest.
         :rtype: str
@@ -219,7 +219,7 @@ class ListMessagesRequest:
     def key(self, key):
         """Sets the key of this ListMessagesRequest.
 
-        消息的key
+        消息的key。
 
         :param key: The key of this ListMessagesRequest.
         :type key: str

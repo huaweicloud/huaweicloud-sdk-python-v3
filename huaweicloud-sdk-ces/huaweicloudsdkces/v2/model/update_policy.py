@@ -87,7 +87,8 @@ class UpdatePolicy:
         self.period = period
         self.filter = filter
         self.comparison_operator = comparison_operator
-        self.value = value
+        if value is not None:
+            self.value = value
         if unit is not None:
             self.unit = unit
         if type is not None:

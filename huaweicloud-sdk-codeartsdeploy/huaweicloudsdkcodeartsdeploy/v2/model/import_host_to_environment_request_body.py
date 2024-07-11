@@ -33,7 +33,7 @@ class ImportHostToEnvironmentRequestBody:
 
         :param group_id: 主机集群id
         :type group_id: str
-        :param host_ids: 要导入的主机ids
+        :param host_ids: 要导入的主机id列表
         :type host_ids: list[str]
         """
         
@@ -72,7 +72,7 @@ class ImportHostToEnvironmentRequestBody:
     def host_ids(self):
         """Gets the host_ids of this ImportHostToEnvironmentRequestBody.
 
-        要导入的主机ids
+        要导入的主机id列表
 
         :return: The host_ids of this ImportHostToEnvironmentRequestBody.
         :rtype: list[str]
@@ -83,7 +83,7 @@ class ImportHostToEnvironmentRequestBody:
     def host_ids(self, host_ids):
         """Sets the host_ids of this ImportHostToEnvironmentRequestBody.
 
-        要导入的主机ids
+        要导入的主机id列表
 
         :param host_ids: The host_ids of this ImportHostToEnvironmentRequestBody.
         :type host_ids: list[str]

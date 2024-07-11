@@ -1075,6 +1075,71 @@ class LiveAsyncClient(Client):
 
         return http_info
 
+    def delete_referer_chain_async(self, request):
+        """删除Referer防盗链黑白名单
+
+        删除Referer防盗链黑白名单
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteRefererChain
+        :type request: :class:`huaweicloudsdklive.v1.DeleteRefererChainRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.DeleteRefererChainResponse`
+        """
+        http_info = self._delete_referer_chain_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_referer_chain_async_invoker(self, request):
+        http_info = self._delete_referer_chain_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_referer_chain_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/guard/referer-chain",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRefererChainResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'domain' in local_var_params:
+            query_params.append(('domain', local_var_params['domain']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_snapshot_config_async(self, request):
         """删除直播截图配置
 
@@ -1391,6 +1456,71 @@ class LiveAsyncClient(Client):
             body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_hls_config_async(self, request):
+        """查询域名HLS配置
+
+        查询域名HLS配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListHlsConfig
+        :type request: :class:`huaweicloudsdklive.v1.ListHlsConfigRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.ListHlsConfigResponse`
+        """
+        http_info = self._list_hls_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_hls_config_async_invoker(self, request):
+        http_info = self._list_hls_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_hls_config_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/domain/hls",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHlsConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'push_domain' in local_var_params:
+            query_params.append(('push_domain', local_var_params['push_domain']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -2119,6 +2249,71 @@ class LiveAsyncClient(Client):
 
         return http_info
 
+    def set_referer_chain_async(self, request):
+        """设置Referer防盗链黑白名单
+
+        设置Referer黑白名单，直播服务会根据配置的referer黑白名单，对访问者的身份进行识别和过滤，符合规则的可以顺利访问到该内容。如果不符合规则，该访问请求将会被禁止。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SetRefererChain
+        :type request: :class:`huaweicloudsdklive.v1.SetRefererChainRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.SetRefererChainResponse`
+        """
+        http_info = self._set_referer_chain_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_referer_chain_async_invoker(self, request):
+        http_info = self._set_referer_chain_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_referer_chain_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/guard/referer-chain",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetRefererChainResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_domain_async(self, request):
         """查询直播域名
 
@@ -2419,6 +2614,71 @@ class LiveAsyncClient(Client):
             path_params['id'] = local_var_params['id']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_referer_chain_async(self, request):
+        """查询Referer防盗链黑白名单
+
+        查询Referer防盗链黑白名单
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowRefererChain
+        :type request: :class:`huaweicloudsdklive.v1.ShowRefererChainRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.ShowRefererChainResponse`
+        """
+        http_info = self._show_referer_chain_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_referer_chain_async_invoker(self, request):
+        http_info = self._show_referer_chain_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_referer_chain_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/guard/referer-chain",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRefererChainResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'domain' in local_var_params:
+            query_params.append(('domain', local_var_params['domain']))
 
         header_params = {}
 
@@ -2829,6 +3089,71 @@ class LiveAsyncClient(Client):
             body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_hls_config_async(self, request):
+        """修改域名HLS配置
+
+        修改域名HLS配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateHlsConfig
+        :type request: :class:`huaweicloudsdklive.v1.UpdateHlsConfigRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.UpdateHlsConfigResponse`
+        """
+        http_info = self._update_hls_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_hls_config_async_invoker(self, request):
+        http_info = self._update_hls_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_hls_config_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/domain/hls",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateHlsConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json; charset=UTF-8'])

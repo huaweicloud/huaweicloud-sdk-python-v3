@@ -65,7 +65,7 @@ class HostInfoDetail:
 
         The model defined in huaweicloud sdk
 
-        :param host_id: 主机ID
+        :param host_id: 主机id
         :type host_id: str
         :param ip: 主机IP
         :type ip: str
@@ -83,7 +83,7 @@ class HostInfoDetail:
         :type host_name: str
         :param as_proxy: 是否为代理机
         :type as_proxy: bool
-        :param proxy_host_id: 代理机ID
+        :param proxy_host_id: 代理机id
         :type proxy_host_id: str
         :param owner_name: 主机所属人名称
         :type owner_name: str
@@ -171,7 +171,7 @@ class HostInfoDetail:
     def host_id(self):
         """Gets the host_id of this HostInfoDetail.
 
-        主机ID
+        主机id
 
         :return: The host_id of this HostInfoDetail.
         :rtype: str
@@ -182,7 +182,7 @@ class HostInfoDetail:
     def host_id(self, host_id):
         """Sets the host_id of this HostInfoDetail.
 
-        主机ID
+        主机id
 
         :param host_id: The host_id of this HostInfoDetail.
         :type host_id: str
@@ -361,7 +361,7 @@ class HostInfoDetail:
     def proxy_host_id(self):
         """Gets the proxy_host_id of this HostInfoDetail.
 
-        代理机ID
+        代理机id
 
         :return: The proxy_host_id of this HostInfoDetail.
         :rtype: str
@@ -372,7 +372,7 @@ class HostInfoDetail:
     def proxy_host_id(self, proxy_host_id):
         """Sets the proxy_host_id of this HostInfoDetail.
 
-        代理机ID
+        代理机id
 
         :param proxy_host_id: The proxy_host_id of this HostInfoDetail.
         :type proxy_host_id: str

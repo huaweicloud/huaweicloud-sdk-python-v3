@@ -34,11 +34,11 @@ class ShowEngineInstanceExtendProductInfoResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param engine: 消息引擎类型
+        :param engine: 消息引擎类型。
         :type engine: str
-        :param versions: 消息引擎支持的版本
+        :param versions: 消息引擎支持的版本。
         :type versions: list[str]
-        :param products: 规格变更的产品信息
+        :param products: 规格变更的产品信息。
         :type products: list[:class:`huaweicloudsdkrocketmq.v2.RocketMQExtendProductInfoEntity`]
         """
         
@@ -60,7 +60,7 @@ class ShowEngineInstanceExtendProductInfoResponse(SdkResponse):
     def engine(self):
         """Gets the engine of this ShowEngineInstanceExtendProductInfoResponse.
 
-        消息引擎类型
+        消息引擎类型。
 
         :return: The engine of this ShowEngineInstanceExtendProductInfoResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class ShowEngineInstanceExtendProductInfoResponse(SdkResponse):
     def engine(self, engine):
         """Sets the engine of this ShowEngineInstanceExtendProductInfoResponse.
 
-        消息引擎类型
+        消息引擎类型。
 
         :param engine: The engine of this ShowEngineInstanceExtendProductInfoResponse.
         :type engine: str
@@ -82,7 +82,7 @@ class ShowEngineInstanceExtendProductInfoResponse(SdkResponse):
     def versions(self):
         """Gets the versions of this ShowEngineInstanceExtendProductInfoResponse.
 
-        消息引擎支持的版本
+        消息引擎支持的版本。
 
         :return: The versions of this ShowEngineInstanceExtendProductInfoResponse.
         :rtype: list[str]
@@ -93,7 +93,7 @@ class ShowEngineInstanceExtendProductInfoResponse(SdkResponse):
     def versions(self, versions):
         """Sets the versions of this ShowEngineInstanceExtendProductInfoResponse.
 
-        消息引擎支持的版本
+        消息引擎支持的版本。
 
         :param versions: The versions of this ShowEngineInstanceExtendProductInfoResponse.
         :type versions: list[str]
@@ -104,7 +104,7 @@ class ShowEngineInstanceExtendProductInfoResponse(SdkResponse):
     def products(self):
         """Gets the products of this ShowEngineInstanceExtendProductInfoResponse.
 
-        规格变更的产品信息
+        规格变更的产品信息。
 
         :return: The products of this ShowEngineInstanceExtendProductInfoResponse.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.RocketMQExtendProductInfoEntity`]
@@ -115,7 +115,7 @@ class ShowEngineInstanceExtendProductInfoResponse(SdkResponse):
     def products(self, products):
         """Sets the products of this ShowEngineInstanceExtendProductInfoResponse.
 
-        规格变更的产品信息
+        规格变更的产品信息。
 
         :param products: The products of this ShowEngineInstanceExtendProductInfoResponse.
         :type products: list[:class:`huaweicloudsdkrocketmq.v2.RocketMQExtendProductInfoEntity`]

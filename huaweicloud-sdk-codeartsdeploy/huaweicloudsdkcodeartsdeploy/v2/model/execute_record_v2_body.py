@@ -51,7 +51,7 @@ class ExecuteRecordV2Body:
         :type state: str
         :param operator: 操作人用户名
         :type operator: str
-        :param execution_id: 部署记录ID
+        :param execution_id: 部署记录id
         :type execution_id: str
         :param start_time: 部署应用的开始时间
         :type start_time: str
@@ -167,7 +167,7 @@ class ExecuteRecordV2Body:
     def execution_id(self):
         """Gets the execution_id of this ExecuteRecordV2Body.
 
-        部署记录ID
+        部署记录id
 
         :return: The execution_id of this ExecuteRecordV2Body.
         :rtype: str
@@ -178,7 +178,7 @@ class ExecuteRecordV2Body:
     def execution_id(self, execution_id):
         """Sets the execution_id of this ExecuteRecordV2Body.
 
-        部署记录ID
+        部署记录id
 
         :param execution_id: The execution_id of this ExecuteRecordV2Body.
         :type execution_id: str

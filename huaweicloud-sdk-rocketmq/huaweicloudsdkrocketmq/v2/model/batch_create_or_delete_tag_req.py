@@ -31,7 +31,7 @@ class BatchCreateOrDeleteTagReq:
 
         The model defined in huaweicloud sdk
 
-        :param action: 操作标识（仅支持小写）: - create（创建） - delete（删除）
+        :param action: 操作标识（仅支持小写）： - create（创建） - delete（删除）
         :type action: str
         :param tags: 标签列表。
         :type tags: list[:class:`huaweicloudsdkrocketmq.v2.TagEntity`]
@@ -52,7 +52,7 @@ class BatchCreateOrDeleteTagReq:
     def action(self):
         """Gets the action of this BatchCreateOrDeleteTagReq.
 
-        操作标识（仅支持小写）: - create（创建） - delete（删除）
+        操作标识（仅支持小写）： - create（创建） - delete（删除）
 
         :return: The action of this BatchCreateOrDeleteTagReq.
         :rtype: str
@@ -63,7 +63,7 @@ class BatchCreateOrDeleteTagReq:
     def action(self, action):
         """Sets the action of this BatchCreateOrDeleteTagReq.
 
-        操作标识（仅支持小写）: - create（创建） - delete（删除）
+        操作标识（仅支持小写）： - create（创建） - delete（删除）
 
         :param action: The action of this BatchCreateOrDeleteTagReq.
         :type action: str

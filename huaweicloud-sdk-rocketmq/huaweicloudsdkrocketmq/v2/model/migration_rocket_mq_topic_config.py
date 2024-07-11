@@ -41,19 +41,19 @@ class MigrationRocketMqTopicConfig:
 
         The model defined in huaweicloud sdk
 
-        :param topic_name: topic名称。
+        :param topic_name: Topic名称。
         :type topic_name: str
         :param order: 是否有序消息。
         :type order: bool
-        :param perm: topic权限。
+        :param perm: Topic权限。
         :type perm: int
         :param read_queue_nums: 读队列个数。
         :type read_queue_nums: int
         :param write_queue_nums: 写队列个数。
         :type write_queue_nums: int
-        :param topic_filter_type: topic过滤类型。   - SINGLE_TAG：单标签   - MULTI_TAG：多标签
+        :param topic_filter_type: Topic过滤类型。   - SINGLE_TAG：单标签   - MULTI_TAG：多标签
         :type topic_filter_type: str
-        :param topic_sys_flag: topic系统标志位。
+        :param topic_sys_flag: Topic系统标志位。
         :type topic_sys_flag: int
         """
         
@@ -87,7 +87,7 @@ class MigrationRocketMqTopicConfig:
     def topic_name(self):
         """Gets the topic_name of this MigrationRocketMqTopicConfig.
 
-        topic名称。
+        Topic名称。
 
         :return: The topic_name of this MigrationRocketMqTopicConfig.
         :rtype: str
@@ -98,7 +98,7 @@ class MigrationRocketMqTopicConfig:
     def topic_name(self, topic_name):
         """Sets the topic_name of this MigrationRocketMqTopicConfig.
 
-        topic名称。
+        Topic名称。
 
         :param topic_name: The topic_name of this MigrationRocketMqTopicConfig.
         :type topic_name: str
@@ -131,7 +131,7 @@ class MigrationRocketMqTopicConfig:
     def perm(self):
         """Gets the perm of this MigrationRocketMqTopicConfig.
 
-        topic权限。
+        Topic权限。
 
         :return: The perm of this MigrationRocketMqTopicConfig.
         :rtype: int
@@ -142,7 +142,7 @@ class MigrationRocketMqTopicConfig:
     def perm(self, perm):
         """Sets the perm of this MigrationRocketMqTopicConfig.
 
-        topic权限。
+        Topic权限。
 
         :param perm: The perm of this MigrationRocketMqTopicConfig.
         :type perm: int
@@ -197,7 +197,7 @@ class MigrationRocketMqTopicConfig:
     def topic_filter_type(self):
         """Gets the topic_filter_type of this MigrationRocketMqTopicConfig.
 
-        topic过滤类型。   - SINGLE_TAG：单标签   - MULTI_TAG：多标签
+        Topic过滤类型。   - SINGLE_TAG：单标签   - MULTI_TAG：多标签
 
         :return: The topic_filter_type of this MigrationRocketMqTopicConfig.
         :rtype: str
@@ -208,7 +208,7 @@ class MigrationRocketMqTopicConfig:
     def topic_filter_type(self, topic_filter_type):
         """Sets the topic_filter_type of this MigrationRocketMqTopicConfig.
 
-        topic过滤类型。   - SINGLE_TAG：单标签   - MULTI_TAG：多标签
+        Topic过滤类型。   - SINGLE_TAG：单标签   - MULTI_TAG：多标签
 
         :param topic_filter_type: The topic_filter_type of this MigrationRocketMqTopicConfig.
         :type topic_filter_type: str
@@ -219,7 +219,7 @@ class MigrationRocketMqTopicConfig:
     def topic_sys_flag(self):
         """Gets the topic_sys_flag of this MigrationRocketMqTopicConfig.
 
-        topic系统标志位。
+        Topic系统标志位。
 
         :return: The topic_sys_flag of this MigrationRocketMqTopicConfig.
         :rtype: int
@@ -230,7 +230,7 @@ class MigrationRocketMqTopicConfig:
     def topic_sys_flag(self, topic_sys_flag):
         """Sets the topic_sys_flag of this MigrationRocketMqTopicConfig.
 
-        topic系统标志位。
+        Topic系统标志位。
 
         :param topic_sys_flag: The topic_sys_flag of this MigrationRocketMqTopicConfig.
         :type topic_sys_flag: int

@@ -34,7 +34,7 @@ class ListHostClustersResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param status: 请求状态
+        :param status: 请求成功失败状态
         :type status: str
         :param total: 主机集群个数
         :type total: int
@@ -60,7 +60,7 @@ class ListHostClustersResponse(SdkResponse):
     def status(self):
         """Gets the status of this ListHostClustersResponse.
 
-        请求状态
+        请求成功失败状态
 
         :return: The status of this ListHostClustersResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class ListHostClustersResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this ListHostClustersResponse.
 
-        请求状态
+        请求成功失败状态
 
         :param status: The status of this ListHostClustersResponse.
         :type status: str

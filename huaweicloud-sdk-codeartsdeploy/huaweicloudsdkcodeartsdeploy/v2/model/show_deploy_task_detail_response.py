@@ -104,7 +104,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         :type task_id: str
         :param name: 应用名称
         :type name: str
-        :param project_id: 项目ID
+        :param project_id: 项目id
         :type project_id: str
         :param project_name: 项目名称
         :type project_name: str
@@ -128,9 +128,9 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         :type owner: str
         :param nick_name: 应用创建者昵称
         :type nick_name: str
-        :param owner_id: 应用创建者用户ID
+        :param owner_id: 应用创建者用户id
         :type owner_id: str
-        :param tenant_id: 应用创建者租户ID
+        :param tenant_id: 应用创建者租户id
         :type tenant_id: str
         :param tenant_name: 应用创建者租户名
         :type tenant_name: str
@@ -154,7 +154,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         :type can_disable: bool
         :param app_component_list: 应用和AOM应用组件对应关系
         :type app_component_list: list[:class:`huaweicloudsdkcodeartsdeploy.v2.AppComponentDao`]
-        :param role_id: 角色ID,0：应用创建者，-1：项目创建者，3：项目经理，4：开发人员，5：测试经理，6：测试人员，7：参与者，8：浏览者
+        :param role_id: 角色id,0：应用创建者，-1：项目创建者，3：项目经理，4：开发人员，5：测试经理，6：测试人员，7：参与者，8：浏览者
         :type role_id: int
         :param id: 部署任务id
         :type id: str
@@ -335,7 +335,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
     def project_id(self):
         """Gets the project_id of this ShowDeployTaskDetailResponse.
 
-        项目ID
+        项目id
 
         :return: The project_id of this ShowDeployTaskDetailResponse.
         :rtype: str
@@ -346,7 +346,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
     def project_id(self, project_id):
         """Sets the project_id of this ShowDeployTaskDetailResponse.
 
-        项目ID
+        项目id
 
         :param project_id: The project_id of this ShowDeployTaskDetailResponse.
         :type project_id: str
@@ -599,7 +599,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
     def owner_id(self):
         """Gets the owner_id of this ShowDeployTaskDetailResponse.
 
-        应用创建者用户ID
+        应用创建者用户id
 
         :return: The owner_id of this ShowDeployTaskDetailResponse.
         :rtype: str
@@ -610,7 +610,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
     def owner_id(self, owner_id):
         """Sets the owner_id of this ShowDeployTaskDetailResponse.
 
-        应用创建者用户ID
+        应用创建者用户id
 
         :param owner_id: The owner_id of this ShowDeployTaskDetailResponse.
         :type owner_id: str
@@ -621,7 +621,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
     def tenant_id(self):
         """Gets the tenant_id of this ShowDeployTaskDetailResponse.
 
-        应用创建者租户ID
+        应用创建者租户id
 
         :return: The tenant_id of this ShowDeployTaskDetailResponse.
         :rtype: str
@@ -632,7 +632,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
     def tenant_id(self, tenant_id):
         """Sets the tenant_id of this ShowDeployTaskDetailResponse.
 
-        应用创建者租户ID
+        应用创建者租户id
 
         :param tenant_id: The tenant_id of this ShowDeployTaskDetailResponse.
         :type tenant_id: str
@@ -885,7 +885,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
     def role_id(self):
         """Gets the role_id of this ShowDeployTaskDetailResponse.
 
-        角色ID,0：应用创建者，-1：项目创建者，3：项目经理，4：开发人员，5：测试经理，6：测试人员，7：参与者，8：浏览者
+        角色id,0：应用创建者，-1：项目创建者，3：项目经理，4：开发人员，5：测试经理，6：测试人员，7：参与者，8：浏览者
 
         :return: The role_id of this ShowDeployTaskDetailResponse.
         :rtype: int
@@ -896,7 +896,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
     def role_id(self, role_id):
         """Sets the role_id of this ShowDeployTaskDetailResponse.
 
-        角色ID,0：应用创建者，-1：项目创建者，3：项目经理，4：开发人员，5：测试经理，6：测试人员，7：参与者，8：浏览者
+        角色id,0：应用创建者，-1：项目创建者，3：项目经理，4：开发人员，5：测试经理，6：测试人员，7：参与者，8：浏览者
 
         :param role_id: The role_id of this ShowDeployTaskDetailResponse.
         :type role_id: int

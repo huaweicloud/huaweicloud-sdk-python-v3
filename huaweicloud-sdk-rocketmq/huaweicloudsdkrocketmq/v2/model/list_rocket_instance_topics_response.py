@@ -40,17 +40,17 @@ class ListRocketInstanceTopicsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: topic总数。
+        :param total: Topic总数。
         :type total: int
-        :param max: 最大可创建topic数量。
+        :param max: 最大可创建Topic数量。
         :type max: int
-        :param remaining: 剩余可创建topic数量。
+        :param remaining: 剩余可创建Topic数量。
         :type remaining: int
         :param next_offset: 下个分页的offset。
         :type next_offset: int
         :param previous_offset: 上个分页的offset。
         :type previous_offset: int
-        :param topics: topic列表。
+        :param topics: Topic列表。
         :type topics: list[:class:`huaweicloudsdkrocketmq.v2.Topic`]
         """
         
@@ -81,7 +81,7 @@ class ListRocketInstanceTopicsResponse(SdkResponse):
     def total(self):
         """Gets the total of this ListRocketInstanceTopicsResponse.
 
-        topic总数。
+        Topic总数。
 
         :return: The total of this ListRocketInstanceTopicsResponse.
         :rtype: int
@@ -92,7 +92,7 @@ class ListRocketInstanceTopicsResponse(SdkResponse):
     def total(self, total):
         """Sets the total of this ListRocketInstanceTopicsResponse.
 
-        topic总数。
+        Topic总数。
 
         :param total: The total of this ListRocketInstanceTopicsResponse.
         :type total: int
@@ -103,7 +103,7 @@ class ListRocketInstanceTopicsResponse(SdkResponse):
     def max(self):
         """Gets the max of this ListRocketInstanceTopicsResponse.
 
-        最大可创建topic数量。
+        最大可创建Topic数量。
 
         :return: The max of this ListRocketInstanceTopicsResponse.
         :rtype: int
@@ -114,7 +114,7 @@ class ListRocketInstanceTopicsResponse(SdkResponse):
     def max(self, max):
         """Sets the max of this ListRocketInstanceTopicsResponse.
 
-        最大可创建topic数量。
+        最大可创建Topic数量。
 
         :param max: The max of this ListRocketInstanceTopicsResponse.
         :type max: int
@@ -125,7 +125,7 @@ class ListRocketInstanceTopicsResponse(SdkResponse):
     def remaining(self):
         """Gets the remaining of this ListRocketInstanceTopicsResponse.
 
-        剩余可创建topic数量。
+        剩余可创建Topic数量。
 
         :return: The remaining of this ListRocketInstanceTopicsResponse.
         :rtype: int
@@ -136,7 +136,7 @@ class ListRocketInstanceTopicsResponse(SdkResponse):
     def remaining(self, remaining):
         """Sets the remaining of this ListRocketInstanceTopicsResponse.
 
-        剩余可创建topic数量。
+        剩余可创建Topic数量。
 
         :param remaining: The remaining of this ListRocketInstanceTopicsResponse.
         :type remaining: int
@@ -191,7 +191,7 @@ class ListRocketInstanceTopicsResponse(SdkResponse):
     def topics(self):
         """Gets the topics of this ListRocketInstanceTopicsResponse.
 
-        topic列表。
+        Topic列表。
 
         :return: The topics of this ListRocketInstanceTopicsResponse.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.Topic`]
@@ -202,7 +202,7 @@ class ListRocketInstanceTopicsResponse(SdkResponse):
     def topics(self, topics):
         """Sets the topics of this ListRocketInstanceTopicsResponse.
 
-        topic列表。
+        Topic列表。
 
         :param topics: The topics of this ListRocketInstanceTopicsResponse.
         :type topics: list[:class:`huaweicloudsdkrocketmq.v2.Topic`]

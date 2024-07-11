@@ -31,9 +31,9 @@ class Brokers:
 
         The model defined in huaweicloud sdk
 
-        :param broker_name: Topic关联代理名称
+        :param broker_name: Topic关联代理名称。
         :type broker_name: str
-        :param queues: 关联代理的队列详情
+        :param queues: 关联代理的队列详情。
         :type queues: list[:class:`huaweicloudsdkrocketmq.v2.Queue`]
         """
         
@@ -52,7 +52,7 @@ class Brokers:
     def broker_name(self):
         """Gets the broker_name of this Brokers.
 
-        Topic关联代理名称
+        Topic关联代理名称。
 
         :return: The broker_name of this Brokers.
         :rtype: str
@@ -63,7 +63,7 @@ class Brokers:
     def broker_name(self, broker_name):
         """Sets the broker_name of this Brokers.
 
-        Topic关联代理名称
+        Topic关联代理名称。
 
         :param broker_name: The broker_name of this Brokers.
         :type broker_name: str
@@ -74,7 +74,7 @@ class Brokers:
     def queues(self):
         """Gets the queues of this Brokers.
 
-        关联代理的队列详情
+        关联代理的队列详情。
 
         :return: The queues of this Brokers.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.Queue`]
@@ -85,7 +85,7 @@ class Brokers:
     def queues(self, queues):
         """Sets the queues of this Brokers.
 
-        关联代理的队列详情
+        关联代理的队列详情。
 
         :param queues: The queues of this Brokers.
         :type queues: list[:class:`huaweicloudsdkrocketmq.v2.Queue`]

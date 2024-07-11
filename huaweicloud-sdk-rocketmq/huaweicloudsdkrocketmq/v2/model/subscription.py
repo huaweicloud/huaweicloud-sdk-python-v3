@@ -33,11 +33,11 @@ class Subscription:
 
         The model defined in huaweicloud sdk
 
-        :param topic: 订阅的topic名称
+        :param topic: 订阅的Topic名称。
         :type topic: str
-        :param type: 订阅类型，取值如下：TAG和SQL92
+        :param type: 订阅类型，取值如下：TAG和SQL92。
         :type type: str
-        :param expression: 订阅tag字符
+        :param expression: 订阅tag字符。
         :type expression: str
         """
         
@@ -59,7 +59,7 @@ class Subscription:
     def topic(self):
         """Gets the topic of this Subscription.
 
-        订阅的topic名称
+        订阅的Topic名称。
 
         :return: The topic of this Subscription.
         :rtype: str
@@ -70,7 +70,7 @@ class Subscription:
     def topic(self, topic):
         """Sets the topic of this Subscription.
 
-        订阅的topic名称
+        订阅的Topic名称。
 
         :param topic: The topic of this Subscription.
         :type topic: str
@@ -81,7 +81,7 @@ class Subscription:
     def type(self):
         """Gets the type of this Subscription.
 
-        订阅类型，取值如下：TAG和SQL92
+        订阅类型，取值如下：TAG和SQL92。
 
         :return: The type of this Subscription.
         :rtype: str
@@ -92,7 +92,7 @@ class Subscription:
     def type(self, type):
         """Sets the type of this Subscription.
 
-        订阅类型，取值如下：TAG和SQL92
+        订阅类型，取值如下：TAG和SQL92。
 
         :param type: The type of this Subscription.
         :type type: str
@@ -103,7 +103,7 @@ class Subscription:
     def expression(self):
         """Gets the expression of this Subscription.
 
-        订阅tag字符
+        订阅tag字符。
 
         :return: The expression of this Subscription.
         :rtype: str
@@ -114,7 +114,7 @@ class Subscription:
     def expression(self, expression):
         """Sets the expression of this Subscription.
 
-        订阅tag字符
+        订阅tag字符。
 
         :param expression: The expression of this Subscription.
         :type expression: str

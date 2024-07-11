@@ -1459,6 +1459,75 @@ class GaussDBforopenGaussClient(Client):
 
         return http_info
 
+    def install_kernel_plugin(self, request):
+        """安装插件
+
+        安装插件
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for InstallKernelPlugin
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.InstallKernelPluginRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.InstallKernelPluginResponse`
+        """
+        http_info = self._install_kernel_plugin_http_info(request)
+        return self._call_api(**http_info)
+
+    def install_kernel_plugin_invoker(self, request):
+        http_info = self._install_kernel_plugin_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _install_kernel_plugin_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/kernel-plugin",
+            "request_type": request.__class__.__name__,
+            "response_type": "InstallKernelPluginResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_applicable_instances(self, request):
         """查询可应用实例列表
 
@@ -3216,6 +3285,73 @@ class GaussDBforopenGaussClient(Client):
 
         return http_info
 
+    def list_kernel_plugins(self, request):
+        """查询实例已安装的插件列表
+
+        查询实例已安装的插件列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListKernelPlugins
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListKernelPluginsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListKernelPluginsResponse`
+        """
+        http_info = self._list_kernel_plugins_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_kernel_plugins_invoker(self, request):
+        http_info = self._list_kernel_plugins_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_kernel_plugins_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/kernel-plugins",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListKernelPluginsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_param_group_templates(self, request):
         """获取参数模板列表
 
@@ -3271,6 +3407,75 @@ class GaussDBforopenGaussClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_plugin_extensions(self, request):
+        """查询实例插件拓展信息
+
+        查询实例插件拓展信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListPluginExtensions
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListPluginExtensionsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListPluginExtensionsResponse`
+        """
+        http_info = self._list_plugin_extensions_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_plugin_extensions_invoker(self, request):
+        http_info = self._list_plugin_extensions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_plugin_extensions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/plugin-extensions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPluginExtensionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -3671,6 +3876,71 @@ class GaussDBforopenGaussClient(Client):
             query_params.append(('version', local_var_params['version']))
         if 'ha_mode' in local_var_params:
             query_params.append(('ha_mode', local_var_params['ha_mode']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_support_kernel_plugins(self, request):
+        """查询支持的插件列表
+
+        查询支持的插件列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSupportKernelPlugins
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListSupportKernelPluginsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListSupportKernelPluginsResponse`
+        """
+        http_info = self._list_support_kernel_plugins_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_support_kernel_plugins_invoker(self, request):
+        http_info = self._list_support_kernel_plugins_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_support_kernel_plugins_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/kernel-plugins",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSupportKernelPluginsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -4258,6 +4528,75 @@ class GaussDBforopenGaussClient(Client):
 
         return http_info
 
+    def resume_plugin_extensions(self, request):
+        """配置插件拓展能力
+
+        配置插件拓展能力
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ResumePluginExtensions
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ResumePluginExtensionsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ResumePluginExtensionsResponse`
+        """
+        http_info = self._resume_plugin_extensions_http_info(request)
+        return self._call_api(**http_info)
+
+    def resume_plugin_extensions_invoker(self, request):
+        http_info = self._resume_plugin_extensions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _resume_plugin_extensions_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/config-plugin-extensions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResumePluginExtensionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def run_instance_action(self, request):
         """CN横向扩容/DN分片扩容/磁盘扩容
 
@@ -4488,6 +4827,75 @@ class GaussDBforopenGaussClient(Client):
             "resource_path": "/v3/{project_id}/instances/{instance_id}/db-user/password",
             "request_type": request.__class__.__name__,
             "response_type": "SetDbUserPwdResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def set_kernel_plugin_license(self, request):
+        """配置插件license
+
+        配置插件license
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SetKernelPluginLicense
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.SetKernelPluginLicenseRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.SetKernelPluginLicenseResponse`
+        """
+        http_info = self._set_kernel_plugin_license_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_kernel_plugin_license_invoker(self, request):
+        http_info = self._set_kernel_plugin_license_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _set_kernel_plugin_license_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/kernel-plugin-license",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetKernelPluginLicenseResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

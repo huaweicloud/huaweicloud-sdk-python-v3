@@ -40,7 +40,7 @@ class ShowOneTopicResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param name: topic名称。
+        :param name: Topic名称。
         :type name: str
         :param total_read_queue_num: 总读队列个数。
         :type total_read_queue_num: float
@@ -81,7 +81,7 @@ class ShowOneTopicResponse(SdkResponse):
     def name(self):
         """Gets the name of this ShowOneTopicResponse.
 
-        topic名称。
+        Topic名称。
 
         :return: The name of this ShowOneTopicResponse.
         :rtype: str
@@ -92,7 +92,7 @@ class ShowOneTopicResponse(SdkResponse):
     def name(self, name):
         """Sets the name of this ShowOneTopicResponse.
 
-        topic名称。
+        Topic名称。
 
         :param name: The name of this ShowOneTopicResponse.
         :type name: str

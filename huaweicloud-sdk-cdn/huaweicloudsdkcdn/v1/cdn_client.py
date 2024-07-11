@@ -43,10 +43,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.BatchDeleteTagsRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.BatchDeleteTagsResponse`
         """
+        warnings.warn("Method 'batch_delete_tags' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_delete_tags_http_info(request)
         return self._call_api(**http_info)
 
     def batch_delete_tags_invoker(self, request):
+        warnings.warn("Method 'batch_delete_tags_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_delete_tags_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -108,10 +110,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.CreateDomainRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.CreateDomainResponse`
         """
+        warnings.warn("Method 'create_domain' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_domain_http_info(request)
         return self._call_api(**http_info)
 
     def create_domain_invoker(self, request):
+        warnings.warn("Method 'create_domain_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_domain_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -173,10 +177,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.CreatePreheatingTasksRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.CreatePreheatingTasksResponse`
         """
+        warnings.warn("Method 'create_preheating_tasks' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_preheating_tasks_http_info(request)
         return self._call_api(**http_info)
 
     def create_preheating_tasks_invoker(self, request):
+        warnings.warn("Method 'create_preheating_tasks_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_preheating_tasks_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -240,10 +246,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.CreateRefreshTasksRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.CreateRefreshTasksResponse`
         """
+        warnings.warn("Method 'create_refresh_tasks' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_refresh_tasks_http_info(request)
         return self._call_api(**http_info)
 
     def create_refresh_tasks_invoker(self, request):
+        warnings.warn("Method 'create_refresh_tasks_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_refresh_tasks_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -307,10 +315,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.CreateTagsRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.CreateTagsResponse`
         """
+        warnings.warn("Method 'create_tags' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_tags_http_info(request)
         return self._call_api(**http_info)
 
     def create_tags_invoker(self, request):
+        warnings.warn("Method 'create_tags_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_tags_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -372,10 +382,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.DeleteDomainRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.DeleteDomainResponse`
         """
+        warnings.warn("Method 'delete_domain' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._delete_domain_http_info(request)
         return self._call_api(**http_info)
 
     def delete_domain_invoker(self, request):
+        warnings.warn("Method 'delete_domain_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._delete_domain_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -439,10 +451,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.DisableDomainRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.DisableDomainResponse`
         """
+        warnings.warn("Method 'disable_domain' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._disable_domain_http_info(request)
         return self._call_api(**http_info)
 
     def disable_domain_invoker(self, request):
+        warnings.warn("Method 'disable_domain_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._disable_domain_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -506,10 +520,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.EnableDomainRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.EnableDomainResponse`
         """
+        warnings.warn("Method 'enable_domain' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._enable_domain_http_info(request)
         return self._call_api(**http_info)
 
     def enable_domain_invoker(self, request):
+        warnings.warn("Method 'enable_domain_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._enable_domain_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -656,10 +672,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.ShowBlackWhiteListRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowBlackWhiteListResponse`
         """
+        warnings.warn("Method 'show_black_white_list' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_black_white_list_http_info(request)
         return self._call_api(**http_info)
 
     def show_black_white_list_invoker(self, request):
+        warnings.warn("Method 'show_black_white_list_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_black_white_list_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -723,10 +741,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.ShowCacheRulesRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowCacheRulesResponse`
         """
+        warnings.warn("Method 'show_cache_rules' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_cache_rules_http_info(request)
         return self._call_api(**http_info)
 
     def show_cache_rules_invoker(self, request):
+        warnings.warn("Method 'show_cache_rules_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_cache_rules_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -790,10 +810,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.ShowCertificatesHttpsInfoRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowCertificatesHttpsInfoResponse`
         """
+        warnings.warn("Method 'show_certificates_https_info' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_certificates_https_info_http_info(request)
         return self._call_api(**http_info)
 
     def show_certificates_https_info_invoker(self, request):
+        warnings.warn("Method 'show_certificates_https_info_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_certificates_https_info_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -863,10 +885,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.ShowDomainDetailRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowDomainDetailResponse`
         """
+        warnings.warn("Method 'show_domain_detail' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_domain_detail_http_info(request)
         return self._call_api(**http_info)
 
     def show_domain_detail_invoker(self, request):
+        warnings.warn("Method 'show_domain_detail_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_domain_detail_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -1369,10 +1393,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.ShowHistoryTaskDetailsRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowHistoryTaskDetailsResponse`
         """
+        warnings.warn("Method 'show_history_task_details' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_history_task_details_http_info(request)
         return self._call_api(**http_info)
 
     def show_history_task_details_invoker(self, request):
+        warnings.warn("Method 'show_history_task_details_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_history_task_details_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -1446,10 +1472,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.ShowHistoryTasksRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowHistoryTasksResponse`
         """
+        warnings.warn("Method 'show_history_tasks' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_history_tasks_http_info(request)
         return self._call_api(**http_info)
 
     def show_history_tasks_invoker(self, request):
+        warnings.warn("Method 'show_history_tasks_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_history_tasks_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -1529,10 +1557,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.ShowHttpInfoRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowHttpInfoResponse`
         """
+        warnings.warn("Method 'show_http_info' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_http_info_http_info(request)
         return self._call_api(**http_info)
 
     def show_http_info_invoker(self, request):
+        warnings.warn("Method 'show_http_info_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_http_info_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -1596,10 +1626,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.ShowIpInfoRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowIpInfoResponse`
         """
+        warnings.warn("Method 'show_ip_info' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_ip_info_http_info(request)
         return self._call_api(**http_info)
 
     def show_ip_info_invoker(self, request):
+        warnings.warn("Method 'show_ip_info_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_ip_info_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -1738,10 +1770,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.ShowOriginHostRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowOriginHostResponse`
         """
+        warnings.warn("Method 'show_origin_host' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_origin_host_http_info(request)
         return self._call_api(**http_info)
 
     def show_origin_host_invoker(self, request):
+        warnings.warn("Method 'show_origin_host_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_origin_host_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -1805,10 +1839,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.ShowQuotaRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowQuotaResponse`
         """
+        warnings.warn("Method 'show_quota' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_quota_http_info(request)
         return self._call_api(**http_info)
 
     def show_quota_invoker(self, request):
+        warnings.warn("Method 'show_quota_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_quota_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -1868,10 +1904,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.ShowReferRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowReferResponse`
         """
+        warnings.warn("Method 'show_refer' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_refer_http_info(request)
         return self._call_api(**http_info)
 
     def show_refer_invoker(self, request):
+        warnings.warn("Method 'show_refer_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_refer_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -1935,10 +1973,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.ShowResponseHeaderRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowResponseHeaderResponse`
         """
+        warnings.warn("Method 'show_response_header' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_response_header_http_info(request)
         return self._call_api(**http_info)
 
     def show_response_header_invoker(self, request):
+        warnings.warn("Method 'show_response_header_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_response_header_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -2002,10 +2042,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.ShowTagsRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowTagsResponse`
         """
+        warnings.warn("Method 'show_tags' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_tags_http_info(request)
         return self._call_api(**http_info)
 
     def show_tags_invoker(self, request):
+        warnings.warn("Method 'show_tags_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_tags_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -2157,10 +2199,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.ShowUrlTaskInfoRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowUrlTaskInfoResponse`
         """
+        warnings.warn("Method 'show_url_task_info' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_url_task_info_http_info(request)
         return self._call_api(**http_info)
 
     def show_url_task_info_invoker(self, request):
+        warnings.warn("Method 'show_url_task_info_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_url_task_info_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -2236,10 +2280,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.UpdateBlackWhiteListRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.UpdateBlackWhiteListResponse`
         """
+        warnings.warn("Method 'update_black_white_list' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_black_white_list_http_info(request)
         return self._call_api(**http_info)
 
     def update_black_white_list_invoker(self, request):
+        warnings.warn("Method 'update_black_white_list_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_black_white_list_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -2305,10 +2351,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.UpdateCacheRulesRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.UpdateCacheRulesResponse`
         """
+        warnings.warn("Method 'update_cache_rules' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_cache_rules_http_info(request)
         return self._call_api(**http_info)
 
     def update_cache_rules_invoker(self, request):
+        warnings.warn("Method 'update_cache_rules_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_cache_rules_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -2446,10 +2494,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.UpdateDomainMultiCertificatesRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.UpdateDomainMultiCertificatesResponse`
         """
+        warnings.warn("Method 'update_domain_multi_certificates' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_domain_multi_certificates_http_info(request)
         return self._call_api(**http_info)
 
     def update_domain_multi_certificates_invoker(self, request):
+        warnings.warn("Method 'update_domain_multi_certificates_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_domain_multi_certificates_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -2513,10 +2563,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.UpdateDomainOriginRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.UpdateDomainOriginResponse`
         """
+        warnings.warn("Method 'update_domain_origin' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_domain_origin_http_info(request)
         return self._call_api(**http_info)
 
     def update_domain_origin_invoker(self, request):
+        warnings.warn("Method 'update_domain_origin_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_domain_origin_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -2582,10 +2634,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.UpdateFollow302SwitchRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.UpdateFollow302SwitchResponse`
         """
+        warnings.warn("Method 'update_follow302_switch' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_follow302_switch_http_info(request)
         return self._call_api(**http_info)
 
     def update_follow302_switch_invoker(self, request):
+        warnings.warn("Method 'update_follow302_switch_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_follow302_switch_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -2651,10 +2705,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.UpdateHttpsInfoRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.UpdateHttpsInfoResponse`
         """
+        warnings.warn("Method 'update_https_info' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_https_info_http_info(request)
         return self._call_api(**http_info)
 
     def update_https_info_invoker(self, request):
+        warnings.warn("Method 'update_https_info_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_https_info_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -2720,10 +2776,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.UpdateOriginHostRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.UpdateOriginHostResponse`
         """
+        warnings.warn("Method 'update_origin_host' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_origin_host_http_info(request)
         return self._call_api(**http_info)
 
     def update_origin_host_invoker(self, request):
+        warnings.warn("Method 'update_origin_host_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_origin_host_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -2789,10 +2847,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.UpdatePrivateBucketAccessRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.UpdatePrivateBucketAccessResponse`
         """
+        warnings.warn("Method 'update_private_bucket_access' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_private_bucket_access_http_info(request)
         return self._call_api(**http_info)
 
     def update_private_bucket_access_invoker(self, request):
+        warnings.warn("Method 'update_private_bucket_access_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_private_bucket_access_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -2860,10 +2920,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.UpdateRangeSwitchRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.UpdateRangeSwitchResponse`
         """
+        warnings.warn("Method 'update_range_switch' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_range_switch_http_info(request)
         return self._call_api(**http_info)
 
     def update_range_switch_invoker(self, request):
+        warnings.warn("Method 'update_range_switch_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_range_switch_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -2929,10 +2991,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.UpdateReferRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.UpdateReferResponse`
         """
+        warnings.warn("Method 'update_refer' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_refer_http_info(request)
         return self._call_api(**http_info)
 
     def update_refer_invoker(self, request):
+        warnings.warn("Method 'update_refer_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_refer_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -2998,10 +3062,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.UpdateResponseHeaderRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.UpdateResponseHeaderResponse`
         """
+        warnings.warn("Method 'update_response_header' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_response_header_http_info(request)
         return self._call_api(**http_info)
 
     def update_response_header_invoker(self, request):
+        warnings.warn("Method 'update_response_header_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_response_header_http_info(request)
         return SyncInvoker(self, http_info)
 

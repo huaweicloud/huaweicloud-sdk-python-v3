@@ -51,7 +51,7 @@ class QueryResourcesReq:
         :type order_id: str
         :param only_main_resource: 是否只查询主资源，该参数对于请求参数是子资源ID的时候无效，如果resource_ids是子资源ID，只能查询自己。 0：查询主资源及附属资源。1：只查询主资源。 默认值为0。  说明： 主资源是指有关联的几个资源中，处于主导位置的资源。 对于ECS而言，虚拟机VM是主资源，磁盘EVS是辅资源。对于VPC而言，共享带宽的情况下，带宽为主资源，对应的从资源为弹性IP（可能包含多个IP）；独享带宽的情况下，弹性IP为主资源，对应的从资源为带宽。
         :type only_main_resource: int
-        :param status_list: 资源状态。 查询指定状态的资源。多个状态以英文逗号分隔。 2：使用中4：已冻结5：已过期 此参数不携带或携带值为空列表时，不作为筛选条件，返回所有状态的资源列表。
+        :param status_list: 资源状态。 查询指定状态的资源。多个状态以英文逗号分隔。 2：使用中3：已关闭4：已冻结5：已过期 此参数不携带或携带值为空列表时，不作为筛选条件，返回所有状态的资源列表。
         :type status_list: list[int]
         :param offset: 偏移量，从0开始。默认值为0。  说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。 例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
         :type offset: int
@@ -167,7 +167,7 @@ class QueryResourcesReq:
     def status_list(self):
         """Gets the status_list of this QueryResourcesReq.
 
-        资源状态。 查询指定状态的资源。多个状态以英文逗号分隔。 2：使用中4：已冻结5：已过期 此参数不携带或携带值为空列表时，不作为筛选条件，返回所有状态的资源列表。
+        资源状态。 查询指定状态的资源。多个状态以英文逗号分隔。 2：使用中3：已关闭4：已冻结5：已过期 此参数不携带或携带值为空列表时，不作为筛选条件，返回所有状态的资源列表。
 
         :return: The status_list of this QueryResourcesReq.
         :rtype: list[int]
@@ -178,7 +178,7 @@ class QueryResourcesReq:
     def status_list(self, status_list):
         """Sets the status_list of this QueryResourcesReq.
 
-        资源状态。 查询指定状态的资源。多个状态以英文逗号分隔。 2：使用中4：已冻结5：已过期 此参数不携带或携带值为空列表时，不作为筛选条件，返回所有状态的资源列表。
+        资源状态。 查询指定状态的资源。多个状态以英文逗号分隔。 2：使用中3：已关闭4：已冻结5：已过期 此参数不携带或携带值为空列表时，不作为筛选条件，返回所有状态的资源列表。
 
         :param status_list: The status_list of this QueryResourcesReq.
         :type status_list: list[int]

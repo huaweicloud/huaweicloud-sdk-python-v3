@@ -41,7 +41,7 @@ class QueueArguments:
         :type x_dead_letter_exchange: str
         :param x_dead_letter_routing_key: 死信的RoutingKey，死信Exchange会发送死信消息到绑定对应RoutingKey的Queue上。
         :type x_dead_letter_routing_key: str
-        :param x_queue_mode: 惰性队列（AMQP版本默认持久化所有消息，不涉及此参数）
+        :param x_queue_mode: 惰性队列[（AMQP版本默认持久化所有消息，不涉及此参数）](tag:hws,hws_hk)
         :type x_queue_mode: str
         """
         
@@ -132,7 +132,7 @@ class QueueArguments:
     def x_queue_mode(self):
         """Gets the x_queue_mode of this QueueArguments.
 
-        惰性队列（AMQP版本默认持久化所有消息，不涉及此参数）
+        惰性队列[（AMQP版本默认持久化所有消息，不涉及此参数）](tag:hws,hws_hk)
 
         :return: The x_queue_mode of this QueueArguments.
         :rtype: str
@@ -143,7 +143,7 @@ class QueueArguments:
     def x_queue_mode(self, x_queue_mode):
         """Sets the x_queue_mode of this QueueArguments.
 
-        惰性队列（AMQP版本默认持久化所有消息，不涉及此参数）
+        惰性队列[（AMQP版本默认持久化所有消息，不涉及此参数）](tag:hws,hws_hk)
 
         :param x_queue_mode: The x_queue_mode of this QueueArguments.
         :type x_queue_mode: str

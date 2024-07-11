@@ -37,7 +37,7 @@ class ResendReq:
 
         :param group: Group ID。
         :type group: str
-        :param topic: 消息所属topic。
+        :param topic: 消息所属Topic。
         :type topic: str
         :param client_id: 客户端ID。
         :type client_id: str
@@ -88,7 +88,7 @@ class ResendReq:
     def topic(self):
         """Gets the topic of this ResendReq.
 
-        消息所属topic。
+        消息所属Topic。
 
         :return: The topic of this ResendReq.
         :rtype: str
@@ -99,7 +99,7 @@ class ResendReq:
     def topic(self, topic):
         """Sets the topic of this ResendReq.
 
-        消息所属topic。
+        消息所属Topic。
 
         :param topic: The topic of this ResendReq.
         :type topic: str

@@ -26,6 +26,7 @@ from huaweicloudsdkcce.v3.model.batch_create_cluster_tags_response import BatchC
 from huaweicloudsdkcce.v3.model.batch_delete_cluster_tags_request import BatchDeleteClusterTagsRequest
 from huaweicloudsdkcce.v3.model.batch_delete_cluster_tags_request_body import BatchDeleteClusterTagsRequestBody
 from huaweicloudsdkcce.v3.model.batch_delete_cluster_tags_response import BatchDeleteClusterTagsResponse
+from huaweicloudsdkcce.v3.model.capacity_reservation_specification import CapacityReservationSpecification
 from huaweicloudsdkcce.v3.model.cert_duration import CertDuration
 from huaweicloudsdkcce.v3.model.chart_resp import ChartResp
 from huaweicloudsdkcce.v3.model.chart_value_values import ChartValueValues
@@ -111,6 +112,9 @@ from huaweicloudsdkcce.v3.model.eip_spec import EipSpec
 from huaweicloudsdkcce.v3.model.eip_spec_bandwidth import EipSpecBandwidth
 from huaweicloudsdkcce.v3.model.eni_network import EniNetwork
 from huaweicloudsdkcce.v3.model.eni_network_update import EniNetworkUpdate
+from huaweicloudsdkcce.v3.model.extension_scale_group import ExtensionScaleGroup
+from huaweicloudsdkcce.v3.model.extension_scale_group_metadata import ExtensionScaleGroupMetadata
+from huaweicloudsdkcce.v3.model.extension_scale_group_spec import ExtensionScaleGroupSpec
 from huaweicloudsdkcce.v3.model.hibernate_cluster_request import HibernateClusterRequest
 from huaweicloudsdkcce.v3.model.hibernate_cluster_response import HibernateClusterResponse
 from huaweicloudsdkcce.v3.model.host_network import HostNetwork
@@ -181,6 +185,7 @@ from huaweicloudsdkcce.v3.model.node_lifecycle_config import NodeLifecycleConfig
 from huaweicloudsdkcce.v3.model.node_management import NodeManagement
 from huaweicloudsdkcce.v3.model.node_metadata import NodeMetadata
 from huaweicloudsdkcce.v3.model.node_nic_spec import NodeNicSpec
+from huaweicloudsdkcce.v3.model.node_owner_reference import NodeOwnerReference
 from huaweicloudsdkcce.v3.model.node_pool import NodePool
 from huaweicloudsdkcce.v3.model.node_pool_condition import NodePoolCondition
 from huaweicloudsdkcce.v3.model.node_pool_metadata import NodePoolMetadata
@@ -264,6 +269,14 @@ from huaweicloudsdkcce.v3.model.rollback_addon_instance_request import RollbackA
 from huaweicloudsdkcce.v3.model.rollback_addon_instance_response import RollbackAddonInstanceResponse
 from huaweicloudsdkcce.v3.model.runtime import Runtime
 from huaweicloudsdkcce.v3.model.runtime_config import RuntimeConfig
+from huaweicloudsdkcce.v3.model.scale_group_autoscaling import ScaleGroupAutoscaling
+from huaweicloudsdkcce.v3.model.scale_node_pool_options import ScaleNodePoolOptions
+from huaweicloudsdkcce.v3.model.scale_node_pool_request import ScaleNodePoolRequest
+from huaweicloudsdkcce.v3.model.scale_node_pool_request_body import ScaleNodePoolRequestBody
+from huaweicloudsdkcce.v3.model.scale_node_pool_response import ScaleNodePoolResponse
+from huaweicloudsdkcce.v3.model.scale_node_pool_spec import ScaleNodePoolSpec
+from huaweicloudsdkcce.v3.model.scale_up_billing_config_override import ScaleUpBillingConfigOverride
+from huaweicloudsdkcce.v3.model.scale_up_extend_param import ScaleUpExtendParam
 from huaweicloudsdkcce.v3.model.security_id import SecurityID
 from huaweicloudsdkcce.v3.model.service_network import ServiceNetwork
 from huaweicloudsdkcce.v3.model.show_addon_instance_request import ShowAddonInstanceRequest

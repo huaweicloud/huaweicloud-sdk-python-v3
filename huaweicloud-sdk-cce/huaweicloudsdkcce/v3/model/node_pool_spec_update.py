@@ -19,16 +19,18 @@ class NodePoolSpecUpdate:
     openapi_types = {
         'node_template': 'NodeSpecUpdate',
         'initial_node_count': 'int',
-        'autoscaling': 'NodePoolNodeAutoscaling'
+        'autoscaling': 'NodePoolNodeAutoscaling',
+        'extension_scale_groups': 'ExtensionScaleGroup'
     }
 
     attribute_map = {
         'node_template': 'nodeTemplate',
         'initial_node_count': 'initialNodeCount',
-        'autoscaling': 'autoscaling'
+        'autoscaling': 'autoscaling',
+        'extension_scale_groups': 'extensionScaleGroups'
     }
 
-    def __init__(self, node_template=None, initial_node_count=None, autoscaling=None):
+    def __init__(self, node_template=None, initial_node_count=None, autoscaling=None, extension_scale_groups=None):
         """NodePoolSpecUpdate
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class NodePoolSpecUpdate:
         :type initial_node_count: int
         :param autoscaling: 
         :type autoscaling: :class:`huaweicloudsdkcce.v3.NodePoolNodeAutoscaling`
+        :param extension_scale_groups: 
+        :type extension_scale_groups: :class:`huaweicloudsdkcce.v3.ExtensionScaleGroup`
         """
         
         
@@ -46,11 +50,14 @@ class NodePoolSpecUpdate:
         self._node_template = None
         self._initial_node_count = None
         self._autoscaling = None
+        self._extension_scale_groups = None
         self.discriminator = None
 
         self.node_template = node_template
         self.initial_node_count = initial_node_count
         self.autoscaling = autoscaling
+        if extension_scale_groups is not None:
+            self.extension_scale_groups = extension_scale_groups
 
     @property
     def node_template(self):
@@ -109,6 +116,24 @@ class NodePoolSpecUpdate:
         :type autoscaling: :class:`huaweicloudsdkcce.v3.NodePoolNodeAutoscaling`
         """
         self._autoscaling = autoscaling
+
+    @property
+    def extension_scale_groups(self):
+        """Gets the extension_scale_groups of this NodePoolSpecUpdate.
+
+        :return: The extension_scale_groups of this NodePoolSpecUpdate.
+        :rtype: :class:`huaweicloudsdkcce.v3.ExtensionScaleGroup`
+        """
+        return self._extension_scale_groups
+
+    @extension_scale_groups.setter
+    def extension_scale_groups(self, extension_scale_groups):
+        """Sets the extension_scale_groups of this NodePoolSpecUpdate.
+
+        :param extension_scale_groups: The extension_scale_groups of this NodePoolSpecUpdate.
+        :type extension_scale_groups: :class:`huaweicloudsdkcce.v3.ExtensionScaleGroup`
+        """
+        self._extension_scale_groups = extension_scale_groups
 
     def to_dict(self):
         """Returns the model properties as a dict"""

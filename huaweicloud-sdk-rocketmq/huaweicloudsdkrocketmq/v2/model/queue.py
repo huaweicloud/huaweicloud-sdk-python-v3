@@ -37,15 +37,15 @@ class Queue:
 
         The model defined in huaweicloud sdk
 
-        :param id: 队列ID
+        :param id: 队列ID。
         :type id: int
-        :param lag: 队列消费堆积总数
+        :param lag: 队列消费堆积总数。
         :type lag: int
-        :param broker_offset: 队列消息总数
+        :param broker_offset: 队列消息总数。
         :type broker_offset: int
-        :param consumer_offset: 已消费消息数
+        :param consumer_offset: 已消费消息数。
         :type consumer_offset: int
-        :param last_message_time: 最新消费消息的存储时间，unix毫秒时间戳格式
+        :param last_message_time: 最新消费消息的存储时间，unix毫秒时间戳格式。
         :type last_message_time: int
         """
         
@@ -73,7 +73,7 @@ class Queue:
     def id(self):
         """Gets the id of this Queue.
 
-        队列ID
+        队列ID。
 
         :return: The id of this Queue.
         :rtype: int
@@ -84,7 +84,7 @@ class Queue:
     def id(self, id):
         """Sets the id of this Queue.
 
-        队列ID
+        队列ID。
 
         :param id: The id of this Queue.
         :type id: int
@@ -95,7 +95,7 @@ class Queue:
     def lag(self):
         """Gets the lag of this Queue.
 
-        队列消费堆积总数
+        队列消费堆积总数。
 
         :return: The lag of this Queue.
         :rtype: int
@@ -106,7 +106,7 @@ class Queue:
     def lag(self, lag):
         """Sets the lag of this Queue.
 
-        队列消费堆积总数
+        队列消费堆积总数。
 
         :param lag: The lag of this Queue.
         :type lag: int
@@ -117,7 +117,7 @@ class Queue:
     def broker_offset(self):
         """Gets the broker_offset of this Queue.
 
-        队列消息总数
+        队列消息总数。
 
         :return: The broker_offset of this Queue.
         :rtype: int
@@ -128,7 +128,7 @@ class Queue:
     def broker_offset(self, broker_offset):
         """Sets the broker_offset of this Queue.
 
-        队列消息总数
+        队列消息总数。
 
         :param broker_offset: The broker_offset of this Queue.
         :type broker_offset: int
@@ -139,7 +139,7 @@ class Queue:
     def consumer_offset(self):
         """Gets the consumer_offset of this Queue.
 
-        已消费消息数
+        已消费消息数。
 
         :return: The consumer_offset of this Queue.
         :rtype: int
@@ -150,7 +150,7 @@ class Queue:
     def consumer_offset(self, consumer_offset):
         """Sets the consumer_offset of this Queue.
 
-        已消费消息数
+        已消费消息数。
 
         :param consumer_offset: The consumer_offset of this Queue.
         :type consumer_offset: int
@@ -161,7 +161,7 @@ class Queue:
     def last_message_time(self):
         """Gets the last_message_time of this Queue.
 
-        最新消费消息的存储时间，unix毫秒时间戳格式
+        最新消费消息的存储时间，unix毫秒时间戳格式。
 
         :return: The last_message_time of this Queue.
         :rtype: int
@@ -172,7 +172,7 @@ class Queue:
     def last_message_time(self, last_message_time):
         """Sets the last_message_time of this Queue.
 
-        最新消费消息的存储时间，unix毫秒时间戳格式
+        最新消费消息的存储时间，unix毫秒时间戳格式。
 
         :param last_message_time: The last_message_time of this Queue.
         :type last_message_time: int

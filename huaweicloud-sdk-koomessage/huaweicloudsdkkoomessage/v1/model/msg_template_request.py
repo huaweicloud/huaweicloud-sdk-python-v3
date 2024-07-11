@@ -53,9 +53,9 @@ class MsgTemplateRequest:
         :type template_desc: str
         :param template_name: 模板名称。
         :type template_name: str
-        :param template_type: 模板类型。默认取所属签名的签名类型。
+        :param template_type: 模板类型。默认取所属签名的签名类型。PROMOTION_TYPE：营销类，NOTIFY_TYPE：通知类。
         :type template_type: str
-        :param universal_template: 是否为通用模板(暂不支持通用模板)。
+        :param universal_template: 是否为通用模板(暂不支持通用模板)。0：非通用模板，1：通用模板。
         :type universal_template: str
         :param variable_attributes: 模板参数。
         :type variable_attributes: list[:class:`huaweicloudsdkkoomessage.v1.VariableAttributes`]
@@ -200,7 +200,7 @@ class MsgTemplateRequest:
     def template_type(self):
         """Gets the template_type of this MsgTemplateRequest.
 
-        模板类型。默认取所属签名的签名类型。
+        模板类型。默认取所属签名的签名类型。PROMOTION_TYPE：营销类，NOTIFY_TYPE：通知类。
 
         :return: The template_type of this MsgTemplateRequest.
         :rtype: str
@@ -211,7 +211,7 @@ class MsgTemplateRequest:
     def template_type(self, template_type):
         """Sets the template_type of this MsgTemplateRequest.
 
-        模板类型。默认取所属签名的签名类型。
+        模板类型。默认取所属签名的签名类型。PROMOTION_TYPE：营销类，NOTIFY_TYPE：通知类。
 
         :param template_type: The template_type of this MsgTemplateRequest.
         :type template_type: str
@@ -222,7 +222,7 @@ class MsgTemplateRequest:
     def universal_template(self):
         """Gets the universal_template of this MsgTemplateRequest.
 
-        是否为通用模板(暂不支持通用模板)。
+        是否为通用模板(暂不支持通用模板)。0：非通用模板，1：通用模板。
 
         :return: The universal_template of this MsgTemplateRequest.
         :rtype: str
@@ -233,7 +233,7 @@ class MsgTemplateRequest:
     def universal_template(self, universal_template):
         """Sets the universal_template of this MsgTemplateRequest.
 
-        是否为通用模板(暂不支持通用模板)。
+        是否为通用模板(暂不支持通用模板)。0：非通用模板，1：通用模板。
 
         :param universal_template: The universal_template of this MsgTemplateRequest.
         :type universal_template: str

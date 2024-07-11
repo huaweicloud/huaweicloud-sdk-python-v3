@@ -45,7 +45,7 @@ class CreateAppRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: 项目ID
+        :param project_id: 项目id
         :type project_id: str
         :param name: 应用名称
         :type name: str
@@ -97,7 +97,7 @@ class CreateAppRequestBody:
     def project_id(self):
         """Gets the project_id of this CreateAppRequestBody.
 
-        项目ID
+        项目id
 
         :return: The project_id of this CreateAppRequestBody.
         :rtype: str
@@ -108,7 +108,7 @@ class CreateAppRequestBody:
     def project_id(self, project_id):
         """Sets the project_id of this CreateAppRequestBody.
 
-        项目ID
+        项目id
 
         :param project_id: The project_id of this CreateAppRequestBody.
         :type project_id: str

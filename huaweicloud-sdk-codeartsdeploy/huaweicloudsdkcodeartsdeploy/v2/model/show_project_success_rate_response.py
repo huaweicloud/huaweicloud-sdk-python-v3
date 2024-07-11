@@ -46,7 +46,7 @@ class ShowProjectSuccessRateResponse(SdkResponse):
 
         :param success_rate: 成功率
         :type success_rate: str
-        :param project_id: 项目ID
+        :param project_id: 项目id
         :type project_id: str
         :param project_name: 项目名称
         :type project_name: str
@@ -117,7 +117,7 @@ class ShowProjectSuccessRateResponse(SdkResponse):
     def project_id(self):
         """Gets the project_id of this ShowProjectSuccessRateResponse.
 
-        项目ID
+        项目id
 
         :return: The project_id of this ShowProjectSuccessRateResponse.
         :rtype: str
@@ -128,7 +128,7 @@ class ShowProjectSuccessRateResponse(SdkResponse):
     def project_id(self, project_id):
         """Sets the project_id of this ShowProjectSuccessRateResponse.
 
-        项目ID
+        项目id
 
         :param project_id: The project_id of this ShowProjectSuccessRateResponse.
         :type project_id: str

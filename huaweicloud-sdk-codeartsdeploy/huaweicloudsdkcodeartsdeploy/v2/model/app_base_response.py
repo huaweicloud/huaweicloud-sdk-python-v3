@@ -41,7 +41,7 @@ class AppBaseResponse:
         :type name: str
         :param region: 应用所属区域
         :type region: str
-        :param arrange_infos: 部署任务列表
+        :param arrange_infos: 部署任务列表信息
         :type arrange_infos: list[:class:`huaweicloudsdkcodeartsdeploy.v2.TaskBaseBody`]
         """
         
@@ -132,7 +132,7 @@ class AppBaseResponse:
     def arrange_infos(self):
         """Gets the arrange_infos of this AppBaseResponse.
 
-        部署任务列表
+        部署任务列表信息
 
         :return: The arrange_infos of this AppBaseResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartsdeploy.v2.TaskBaseBody`]
@@ -143,7 +143,7 @@ class AppBaseResponse:
     def arrange_infos(self, arrange_infos):
         """Sets the arrange_infos of this AppBaseResponse.
 
-        部署任务列表
+        部署任务列表信息
 
         :param arrange_infos: The arrange_infos of this AppBaseResponse.
         :type arrange_infos: list[:class:`huaweicloudsdkcodeartsdeploy.v2.TaskBaseBody`]

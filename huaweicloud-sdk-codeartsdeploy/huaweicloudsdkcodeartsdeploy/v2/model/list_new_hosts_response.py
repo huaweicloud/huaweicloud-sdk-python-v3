@@ -36,7 +36,7 @@ class ListNewHostsResponse(SdkResponse):
 
         :param total: 主机数量
         :type total: int
-        :param status: 请求状态
+        :param status: 请求成功失败状态
         :type status: str
         :param result: 主机信息列表
         :type result: list[:class:`huaweicloudsdkcodeartsdeploy.v2.HostInfo`]
@@ -82,7 +82,7 @@ class ListNewHostsResponse(SdkResponse):
     def status(self):
         """Gets the status of this ListNewHostsResponse.
 
-        请求状态
+        请求成功失败状态
 
         :return: The status of this ListNewHostsResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class ListNewHostsResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this ListNewHostsResponse.
 
-        请求状态
+        请求成功失败状态
 
         :param status: The status of this ListNewHostsResponse.
         :type status: str

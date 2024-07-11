@@ -221,7 +221,7 @@ class ShowInstanceResp:
         :type instance_id: str
         :param resource_spec_code: 资源规格标识。   [- dms.instance.kafka.cluster.c3.mini：Kafka实例的基准带宽为100MByte/秒。   - dms.instance.kafka.cluster.c3.small.2：Kafka实例的基准带宽为300MByte/秒。   - dms.instance.kafka.cluster.c3.middle.2：Kafka实例的基准带宽为600MByte/秒。   - dms.instance.kafka.cluster.c3.high.2：Kafka实例的基准带宽为1200MByte/秒。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)
         :type resource_spec_code: str
-        :param charging_mode: [付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_hk,ctc,cmcc)[付费模式，暂未使用。](tag:hws_ocb,ocb) [付费模式，1表示按需计费。](tag:dt,g42,tm,hk_g42,hk_tm,hcs,sbc,hk_sbc,hws_eu)
+        :param charging_mode: [付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_hk,ctc,cmcc)[付费模式，暂未使用。](tag:hws_ocb,ocb) [付费模式，1表示按需计费。](tag:dt,g42,tm,hk_g42,hk_tm,hcs,fcs,sbc,hk_sbc,hws_eu)
         :type charging_mode: int
         :param vpc_id: VPC ID。
         :type vpc_id: str
@@ -349,7 +349,7 @@ class ShowInstanceResp:
         :type kafka_private_connect_address: str
         :param ces_version: 云监控版本。
         :type ces_version: str
-        :param public_access_enabled: 区分实例什么时候开启的公网访问：true,actived,closed,false。
+        :param public_access_enabled:  区分实例什么时候开启的公网访问  取值范围：   - true：已开启公网访问   - actived：已开启公网访问   - closed：已关闭公网访问   - false：已关闭公网访问 
         :type public_access_enabled: str
         :param node_num: 节点数。
         :type node_num: int
@@ -912,7 +912,7 @@ class ShowInstanceResp:
     def charging_mode(self):
         """Gets the charging_mode of this ShowInstanceResp.
 
-        [付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_hk,ctc,cmcc)[付费模式，暂未使用。](tag:hws_ocb,ocb) [付费模式，1表示按需计费。](tag:dt,g42,tm,hk_g42,hk_tm,hcs,sbc,hk_sbc,hws_eu)
+        [付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_hk,ctc,cmcc)[付费模式，暂未使用。](tag:hws_ocb,ocb) [付费模式，1表示按需计费。](tag:dt,g42,tm,hk_g42,hk_tm,hcs,fcs,sbc,hk_sbc,hws_eu)
 
         :return: The charging_mode of this ShowInstanceResp.
         :rtype: int
@@ -923,7 +923,7 @@ class ShowInstanceResp:
     def charging_mode(self, charging_mode):
         """Sets the charging_mode of this ShowInstanceResp.
 
-        [付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_hk,ctc,cmcc)[付费模式，暂未使用。](tag:hws_ocb,ocb) [付费模式，1表示按需计费。](tag:dt,g42,tm,hk_g42,hk_tm,hcs,sbc,hk_sbc,hws_eu)
+        [付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_hk,ctc,cmcc)[付费模式，暂未使用。](tag:hws_ocb,ocb) [付费模式，1表示按需计费。](tag:dt,g42,tm,hk_g42,hk_tm,hcs,fcs,sbc,hk_sbc,hws_eu)
 
         :param charging_mode: The charging_mode of this ShowInstanceResp.
         :type charging_mode: int
@@ -2320,7 +2320,7 @@ class ShowInstanceResp:
     def public_access_enabled(self):
         """Gets the public_access_enabled of this ShowInstanceResp.
 
-        区分实例什么时候开启的公网访问：true,actived,closed,false。
+         区分实例什么时候开启的公网访问  取值范围：   - true：已开启公网访问   - actived：已开启公网访问   - closed：已关闭公网访问   - false：已关闭公网访问 
 
         :return: The public_access_enabled of this ShowInstanceResp.
         :rtype: str
@@ -2331,7 +2331,7 @@ class ShowInstanceResp:
     def public_access_enabled(self, public_access_enabled):
         """Sets the public_access_enabled of this ShowInstanceResp.
 
-        区分实例什么时候开启的公网访问：true,actived,closed,false。
+         区分实例什么时候开启的公网访问  取值范围：   - true：已开启公网访问   - actived：已开启公网访问   - closed：已关闭公网访问   - false：已关闭公网访问 
 
         :param public_access_enabled: The public_access_enabled of this ShowInstanceResp.
         :type public_access_enabled: str

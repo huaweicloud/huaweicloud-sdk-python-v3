@@ -31,7 +31,7 @@ class DeadletterResendReq:
 
         The model defined in huaweicloud sdk
 
-        :param topic: topic。
+        :param topic: Topic名称。
         :type topic: str
         :param msg_id_list: 消息列表。
         :type msg_id_list: list[str]
@@ -52,7 +52,7 @@ class DeadletterResendReq:
     def topic(self):
         """Gets the topic of this DeadletterResendReq.
 
-        topic。
+        Topic名称。
 
         :return: The topic of this DeadletterResendReq.
         :rtype: str
@@ -63,7 +63,7 @@ class DeadletterResendReq:
     def topic(self, topic):
         """Sets the topic of this DeadletterResendReq.
 
-        topic。
+        Topic名称。
 
         :param topic: The topic of this DeadletterResendReq.
         :type topic: str

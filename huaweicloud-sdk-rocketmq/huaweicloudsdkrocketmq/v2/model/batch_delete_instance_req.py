@@ -35,7 +35,7 @@ class BatchDeleteInstanceReq:
 
         :param instances: 实例的ID列表。
         :type instances: list[str]
-        :param action: 对实例的操作：delete
+        :param action: 对实例的操作：delete。
         :type action: str
         :param all_failure: 参数值为reliability，表示删除租户所有创建失败的RocketMQ实例。
         :type all_failure: str
@@ -80,7 +80,7 @@ class BatchDeleteInstanceReq:
     def action(self):
         """Gets the action of this BatchDeleteInstanceReq.
 
-        对实例的操作：delete
+        对实例的操作：delete。
 
         :return: The action of this BatchDeleteInstanceReq.
         :rtype: str
@@ -91,7 +91,7 @@ class BatchDeleteInstanceReq:
     def action(self, action):
         """Sets the action of this BatchDeleteInstanceReq.
 
-        对实例的操作：delete
+        对实例的操作：delete。
 
         :param action: The action of this BatchDeleteInstanceReq.
         :type action: str

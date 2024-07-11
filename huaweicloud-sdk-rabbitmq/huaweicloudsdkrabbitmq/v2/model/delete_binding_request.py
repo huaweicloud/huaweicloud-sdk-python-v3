@@ -45,7 +45,7 @@ class DeleteBindingRequest:
         :type vhost: str
         :param exchange: Exchange名称
         :type exchange: str
-        :param destination_type: 绑定目标端类型，Exchange或Queue（AMQP版本只支持Queue绑定类型）
+        :param destination_type: 绑定目标端类型，Exchange或Queue。[（AMQP版本只支持Queue绑定类型）](tag:hws,hws_hk)
         :type destination_type: str
         :param destination: 绑定的目标端名称
         :type destination: str
@@ -140,7 +140,7 @@ class DeleteBindingRequest:
     def destination_type(self):
         """Gets the destination_type of this DeleteBindingRequest.
 
-        绑定目标端类型，Exchange或Queue（AMQP版本只支持Queue绑定类型）
+        绑定目标端类型，Exchange或Queue。[（AMQP版本只支持Queue绑定类型）](tag:hws,hws_hk)
 
         :return: The destination_type of this DeleteBindingRequest.
         :rtype: str
@@ -151,7 +151,7 @@ class DeleteBindingRequest:
     def destination_type(self, destination_type):
         """Sets the destination_type of this DeleteBindingRequest.
 
-        绑定目标端类型，Exchange或Queue（AMQP版本只支持Queue绑定类型）
+        绑定目标端类型，Exchange或Queue。[（AMQP版本只支持Queue绑定类型）](tag:hws,hws_hk)
 
         :param destination_type: The destination_type of this DeleteBindingRequest.
         :type destination_type: str

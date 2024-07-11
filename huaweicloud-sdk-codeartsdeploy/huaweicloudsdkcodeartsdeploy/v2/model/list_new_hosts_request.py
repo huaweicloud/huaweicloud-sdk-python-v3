@@ -43,7 +43,7 @@ class ListNewHostsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param group_id: 项目ID
+        :param group_id: 项目id
         :type group_id: str
         :param key_field: 主机名模糊查询信息
         :type key_field: str
@@ -93,7 +93,7 @@ class ListNewHostsRequest:
     def group_id(self):
         """Gets the group_id of this ListNewHostsRequest.
 
-        项目ID
+        项目id
 
         :return: The group_id of this ListNewHostsRequest.
         :rtype: str
@@ -104,7 +104,7 @@ class ListNewHostsRequest:
     def group_id(self, group_id):
         """Sets the group_id of this ListNewHostsRequest.
 
-        项目ID
+        项目id
 
         :param group_id: The group_id of this ListNewHostsRequest.
         :type group_id: str

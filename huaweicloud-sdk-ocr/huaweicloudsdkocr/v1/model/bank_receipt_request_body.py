@@ -18,15 +18,17 @@ class BankReceiptRequestBody:
 
     openapi_types = {
         'data': 'str',
-        'url': 'str'
+        'url': 'str',
+        'page_num': 'int'
     }
 
     attribute_map = {
         'data': 'data',
-        'url': 'url'
+        'url': 'url',
+        'page_num': 'page_num'
     }
 
-    def __init__(self, data=None, url=None):
+    def __init__(self, data=None, url=None, page_num=None):
         """BankReceiptRequestBody
 
         The model defined in huaweicloud sdk
@@ -35,18 +37,23 @@ class BankReceiptRequestBody:
         :type data: str
         :param url: 与data二选一 图片的URL路径，目前支持： - 公网http/https url - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/api-ocr/ocr_03_0132.html)。 &gt; 说明： - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 - url中不能存在中文字符，若存在，中文需要进行utf8编码。 
         :type url: str
+        :param page_num: 指定PDF页码识别。传入该参数时，则识别指定页码的内容。如果不传该参数，则默认识别第1页，该参数仅在文件为PDF格式时有效。 
+        :type page_num: int
         """
         
         
 
         self._data = None
         self._url = None
+        self._page_num = None
         self.discriminator = None
 
         if data is not None:
             self.data = data
         if url is not None:
             self.url = url
+        if page_num is not None:
+            self.page_num = page_num
 
     @property
     def data(self):
@@ -91,6 +98,28 @@ class BankReceiptRequestBody:
         :type url: str
         """
         self._url = url
+
+    @property
+    def page_num(self):
+        """Gets the page_num of this BankReceiptRequestBody.
+
+        指定PDF页码识别。传入该参数时，则识别指定页码的内容。如果不传该参数，则默认识别第1页，该参数仅在文件为PDF格式时有效。 
+
+        :return: The page_num of this BankReceiptRequestBody.
+        :rtype: int
+        """
+        return self._page_num
+
+    @page_num.setter
+    def page_num(self, page_num):
+        """Sets the page_num of this BankReceiptRequestBody.
+
+        指定PDF页码识别。传入该参数时，则识别指定页码的内容。如果不传该参数，则默认识别第1页，该参数仅在文件为PDF格式时有效。 
+
+        :param page_num: The page_num of this BankReceiptRequestBody.
+        :type page_num: int
+        """
+        self._page_num = page_num
 
     def to_dict(self):
         """Returns the model properties as a dict"""

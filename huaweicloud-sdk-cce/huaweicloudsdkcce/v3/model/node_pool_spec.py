@@ -23,6 +23,7 @@ class NodePoolSpec:
         'autoscaling': 'NodePoolNodeAutoscaling',
         'node_management': 'NodeManagement',
         'pod_security_groups': 'list[SecurityID]',
+        'extension_scale_groups': 'ExtensionScaleGroup',
         'custom_security_groups': 'list[str]'
     }
 
@@ -33,10 +34,11 @@ class NodePoolSpec:
         'autoscaling': 'autoscaling',
         'node_management': 'nodeManagement',
         'pod_security_groups': 'podSecurityGroups',
+        'extension_scale_groups': 'extensionScaleGroups',
         'custom_security_groups': 'customSecurityGroups'
     }
 
-    def __init__(self, type=None, node_template=None, initial_node_count=None, autoscaling=None, node_management=None, pod_security_groups=None, custom_security_groups=None):
+    def __init__(self, type=None, node_template=None, initial_node_count=None, autoscaling=None, node_management=None, pod_security_groups=None, extension_scale_groups=None, custom_security_groups=None):
         """NodePoolSpec
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class NodePoolSpec:
         :type node_management: :class:`huaweicloudsdkcce.v3.NodeManagement`
         :param pod_security_groups: 1.21版本集群节点池支持绑定安全组，最多五个。
         :type pod_security_groups: list[:class:`huaweicloudsdkcce.v3.SecurityID`]
+        :param extension_scale_groups: 
+        :type extension_scale_groups: :class:`huaweicloudsdkcce.v3.ExtensionScaleGroup`
         :param custom_security_groups: 节点池自定义安全组相关配置。支持节点池新扩容节点绑定指定的安全组。  - 未指定安全组ID，新建节点将添加Node节点默认安全组。  - 指定有效安全组ID，新建节点将使用指定安全组。  - 指定安全组，应避免对CCE运行依赖的端口规则进行修改。[详细设置请参考[集群安全组规则配置](https://support.huaweicloud.com/cce_faq/cce_faq_00265.html)。](tag:hws)[详细设置请参考[集群安全组规则配置](https://support.huaweicloud.com/intl/zh-cn/cce_faq/cce_faq_00265.html)。](tag:hws_hk) 
         :type custom_security_groups: list[str]
         """
@@ -65,6 +69,7 @@ class NodePoolSpec:
         self._autoscaling = None
         self._node_management = None
         self._pod_security_groups = None
+        self._extension_scale_groups = None
         self._custom_security_groups = None
         self.discriminator = None
 
@@ -79,6 +84,8 @@ class NodePoolSpec:
             self.node_management = node_management
         if pod_security_groups is not None:
             self.pod_security_groups = pod_security_groups
+        if extension_scale_groups is not None:
+            self.extension_scale_groups = extension_scale_groups
         if custom_security_groups is not None:
             self.custom_security_groups = custom_security_groups
 
@@ -201,6 +208,24 @@ class NodePoolSpec:
         :type pod_security_groups: list[:class:`huaweicloudsdkcce.v3.SecurityID`]
         """
         self._pod_security_groups = pod_security_groups
+
+    @property
+    def extension_scale_groups(self):
+        """Gets the extension_scale_groups of this NodePoolSpec.
+
+        :return: The extension_scale_groups of this NodePoolSpec.
+        :rtype: :class:`huaweicloudsdkcce.v3.ExtensionScaleGroup`
+        """
+        return self._extension_scale_groups
+
+    @extension_scale_groups.setter
+    def extension_scale_groups(self, extension_scale_groups):
+        """Sets the extension_scale_groups of this NodePoolSpec.
+
+        :param extension_scale_groups: The extension_scale_groups of this NodePoolSpec.
+        :type extension_scale_groups: :class:`huaweicloudsdkcce.v3.ExtensionScaleGroup`
+        """
+        self._extension_scale_groups = extension_scale_groups
 
     @property
     def custom_security_groups(self):

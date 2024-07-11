@@ -17,6 +17,7 @@ class DeployV2OperationsDO:
     sensitive_list = []
 
     openapi_types = {
+        'id': 'str',
         'name': 'str',
         'description': 'str',
         'code': 'str',
@@ -27,6 +28,7 @@ class DeployV2OperationsDO:
     }
 
     attribute_map = {
+        'id': 'id',
         'name': 'name',
         'description': 'description',
         'code': 'code',
@@ -36,18 +38,20 @@ class DeployV2OperationsDO:
         'module_id': 'module_id'
     }
 
-    def __init__(self, name=None, description=None, code=None, params=None, entrance=None, version=None, module_id=None):
+    def __init__(self, id=None, name=None, description=None, code=None, params=None, entrance=None, version=None, module_id=None):
         """DeployV2OperationsDO
 
         The model defined in huaweicloud sdk
 
+        :param id: 步骤id
+        :type id: str
         :param name: 步骤名称
         :type name: str
         :param description: 步骤描述
         :type description: str
         :param code: 下载地址
         :type code: str
-        :param params: 参数
+        :param params: 步骤详细定义
         :type params: str
         :param entrance: 入口函数
         :type entrance: str
@@ -59,6 +63,7 @@ class DeployV2OperationsDO:
         
         
 
+        self._id = None
         self._name = None
         self._description = None
         self._code = None
@@ -68,6 +73,8 @@ class DeployV2OperationsDO:
         self._module_id = None
         self.discriminator = None
 
+        if id is not None:
+            self.id = id
         if name is not None:
             self.name = name
         if description is not None:
@@ -82,6 +89,28 @@ class DeployV2OperationsDO:
             self.version = version
         if module_id is not None:
             self.module_id = module_id
+
+    @property
+    def id(self):
+        """Gets the id of this DeployV2OperationsDO.
+
+        步骤id
+
+        :return: The id of this DeployV2OperationsDO.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this DeployV2OperationsDO.
+
+        步骤id
+
+        :param id: The id of this DeployV2OperationsDO.
+        :type id: str
+        """
+        self._id = id
 
     @property
     def name(self):
@@ -153,7 +182,7 @@ class DeployV2OperationsDO:
     def params(self):
         """Gets the params of this DeployV2OperationsDO.
 
-        参数
+        步骤详细定义
 
         :return: The params of this DeployV2OperationsDO.
         :rtype: str
@@ -164,7 +193,7 @@ class DeployV2OperationsDO:
     def params(self, params):
         """Sets the params of this DeployV2OperationsDO.
 
-        参数
+        步骤详细定义
 
         :param params: The params of this DeployV2OperationsDO.
         :type params: str

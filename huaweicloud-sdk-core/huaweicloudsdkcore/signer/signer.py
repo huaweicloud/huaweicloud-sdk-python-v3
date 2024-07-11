@@ -192,6 +192,10 @@ class Signer(object):
         return url_path
 
     @classmethod
+    def process_canonical_query_string(cls, request):
+        return cls._process_canonical_query_string(request)
+
+    @classmethod
     def _process_canonical_query_string(cls, request):
         # type: (SdkRequest) -> str
         params = []

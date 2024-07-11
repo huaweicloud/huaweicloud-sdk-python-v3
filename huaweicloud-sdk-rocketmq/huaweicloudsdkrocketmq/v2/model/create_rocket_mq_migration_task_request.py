@@ -39,9 +39,9 @@ class CreateRocketMqMigrationTaskRequest:
 
         :param instance_id: 实例ID。
         :type instance_id: str
-        :param overwrite: true开启同名覆盖，会对已有的同名元数据的配置进行修改，false时当topic或group已存在则会报错。
+        :param overwrite: true开启同名覆盖，会对已有的同名元数据的配置进行修改，false时当Topic或group已存在则会报错。
         :type overwrite: str
-        :param name: 迁移任务名称，名称规则参考创建实例
+        :param name: 迁移任务名称，名称规则参考创建实例。
         :type name: str
         :param type: 迁移任务类型，分为自建RocketMQ上云(rocketmq)、自建RabbitMQ上云(rabbitToRocket)
         :type type: str
@@ -91,7 +91,7 @@ class CreateRocketMqMigrationTaskRequest:
     def overwrite(self):
         """Gets the overwrite of this CreateRocketMqMigrationTaskRequest.
 
-        true开启同名覆盖，会对已有的同名元数据的配置进行修改，false时当topic或group已存在则会报错。
+        true开启同名覆盖，会对已有的同名元数据的配置进行修改，false时当Topic或group已存在则会报错。
 
         :return: The overwrite of this CreateRocketMqMigrationTaskRequest.
         :rtype: str
@@ -102,7 +102,7 @@ class CreateRocketMqMigrationTaskRequest:
     def overwrite(self, overwrite):
         """Sets the overwrite of this CreateRocketMqMigrationTaskRequest.
 
-        true开启同名覆盖，会对已有的同名元数据的配置进行修改，false时当topic或group已存在则会报错。
+        true开启同名覆盖，会对已有的同名元数据的配置进行修改，false时当Topic或group已存在则会报错。
 
         :param overwrite: The overwrite of this CreateRocketMqMigrationTaskRequest.
         :type overwrite: str
@@ -113,7 +113,7 @@ class CreateRocketMqMigrationTaskRequest:
     def name(self):
         """Gets the name of this CreateRocketMqMigrationTaskRequest.
 
-        迁移任务名称，名称规则参考创建实例
+        迁移任务名称，名称规则参考创建实例。
 
         :return: The name of this CreateRocketMqMigrationTaskRequest.
         :rtype: str
@@ -124,7 +124,7 @@ class CreateRocketMqMigrationTaskRequest:
     def name(self, name):
         """Sets the name of this CreateRocketMqMigrationTaskRequest.
 
-        迁移任务名称，名称规则参考创建实例
+        迁移任务名称，名称规则参考创建实例。
 
         :param name: The name of this CreateRocketMqMigrationTaskRequest.
         :type name: str

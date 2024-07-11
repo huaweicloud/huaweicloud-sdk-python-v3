@@ -32,8 +32,6 @@ class CreatePostPaidInstanceReq:
         'subnet_id': 'str',
         'available_zones': 'list[str]',
         'product_id': 'str',
-        'kafka_manager_user': 'str',
-        'kafka_manager_password': 'str',
         'maintain_begin': 'str',
         'maintain_end': 'str',
         'enable_publicip': 'bool',
@@ -68,8 +66,6 @@ class CreatePostPaidInstanceReq:
         'subnet_id': 'subnet_id',
         'available_zones': 'available_zones',
         'product_id': 'product_id',
-        'kafka_manager_user': 'kafka_manager_user',
-        'kafka_manager_password': 'kafka_manager_password',
         'maintain_begin': 'maintain_begin',
         'maintain_end': 'maintain_end',
         'enable_publicip': 'enable_publicip',
@@ -88,18 +84,18 @@ class CreatePostPaidInstanceReq:
         'tags': 'tags'
     }
 
-    def __init__(self, name=None, description=None, engine=None, engine_version=None, specification=None, broker_num=None, storage_space=None, partition_num=None, access_user=None, password=None, vpc_id=None, security_group_id=None, subnet_id=None, available_zones=None, product_id=None, kafka_manager_user=None, kafka_manager_password=None, maintain_begin=None, maintain_end=None, enable_publicip=None, public_bandwidth=None, publicip_id=None, ssl_enable=None, kafka_security_protocol=None, sasl_enabled_mechanisms=None, retention_policy=None, disk_encrypted_enable=None, disk_encrypted_key=None, connector_enable=None, enable_auto_topic=None, storage_spec_code=None, enterprise_project_id=None, tags=None):
+    def __init__(self, name=None, description=None, engine=None, engine_version=None, specification=None, broker_num=None, storage_space=None, partition_num=None, access_user=None, password=None, vpc_id=None, security_group_id=None, subnet_id=None, available_zones=None, product_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, public_bandwidth=None, publicip_id=None, ssl_enable=None, kafka_security_protocol=None, sasl_enabled_mechanisms=None, retention_policy=None, disk_encrypted_enable=None, disk_encrypted_key=None, connector_enable=None, enable_auto_topic=None, storage_spec_code=None, enterprise_project_id=None, tags=None):
         """CreatePostPaidInstanceReq
 
         The model defined in huaweicloud sdk
 
         :param name: 实例名称。  由英文字符开头，只能由英文字母、数字、中划线、下划线组成，长度为4~64的字符。
         :type name: str
-        :param description: 实例的描述信息。  长度不超过1024的字符串。[且字符串不能包含\&quot;&gt;\&quot;与\&quot;&lt;\&quot;，字符串首字符不能为\&quot;&#x3D;\&quot;,\&quot;+\&quot;,\&quot;-\&quot;,\&quot;@\&quot;的全角和半角字符。](tag:hcs)  &gt; \\与\&quot;在json报文中属于特殊字符，如果参数值中需要显示\\或者\&quot;字符，请在字符前增加转义字符\\，比如\\\\或者\\\&quot;。
+        :param description: 实例的描述信息。  长度不超过1024的字符串。[且字符串不能包含\&quot;&gt;\&quot;与\&quot;&lt;\&quot;，字符串首字符不能为\&quot;&#x3D;\&quot;,\&quot;+\&quot;,\&quot;-\&quot;,\&quot;@\&quot;的全角和半角字符。](tag:hcs,fcs)  &gt; \\与\&quot;在json报文中属于特殊字符，如果参数值中需要显示\\或者\&quot;字符，请在字符前增加转义字符\\，比如\\\\或者\\\&quot;。
         :type description: str
         :param engine: 消息引擎。取值填写为：kafka。
         :type engine: str
-        :param engine_version: 消息引擎的版本。取值填写为：   - 1.1.0   [- 2.3.0](tag:ocb,hws_ocb,sbc,hk_sbc,cmcc,hws_eu,dt,ctc,g42,hk_g42,tm,hk_tm)   - 2.7
+        :param engine_version: 消息引擎的版本。取值填写为：   - 1.1.0   [- 2.3.0](tag:ocb,hws_ocb,sbc,hk_sbc,cmcc,hws_eu,dt,ctc,g42,hk_g42,tm,hk_tm)   - 2.7   - 3.x
         :type engine_version: str
         :param specification:  [新规格实例：Kafka实例业务TPS规格，取值范围：   - c6.2u4g.cluster   - c6.4u8g.cluster   - c6.8u16g.cluster   - c6.12u24g.cluster   - c6.16u32g.cluster  老规格实例：](tag:hws,hws_hk) Kafka实例的基准带宽，表示单位时间内传送的最大数据量，单位MB。取值范围：   - 100MB   - 300MB   - 600MB   - 1200MB  注：此参数无需设置，其取值实际是由产品ID（product_id）决定。
         :type specification: str
@@ -123,10 +119,6 @@ class CreatePostPaidInstanceReq:
         :type available_zones: list[str]
         :param product_id: 产品ID。  [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ctc,cmcc,hws_eu,g42,hk_g42,tm,hk_tm,ocb,hws_ocb,dt) [产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:hk_sbc,sbc) [创建kafka实例,支持的产品规格有: (product_id/specification/partition_num/storage_space)  00300-30308-0--0/100MB/300/600;  00300-30310-0--0/300MB/900/1200;  00300-30312-0--0/600MB/1800/2400;  00300-30314-0--0/1200MB/1800/4800](tag:dt)
         :type product_id: str
-        :param kafka_manager_user: 表示登录Kafka Manager的用户名。只能由英文字母、数字、中划线组成，长度为4~64的字符。
-        :type kafka_manager_user: str
-        :param kafka_manager_password: 表示登录Kafka Manager的密码。  复杂度要求：   - 输入长度为8到32位的字符串。   - 必须包含如下四种字符中的三种组合：       - 小写字母       - 大写字母       - 数字       - 特殊字符包括（&#x60;~!@#$%^&amp;*()-_&#x3D;+\\|[{}]:&#39;\&quot;,&lt;.&gt;/?）和空格，并且不能以-开头
-        :type kafka_manager_password: str
         :param maintain_begin: 维护时间窗开始时间，格式为HH:mm。
         :type maintain_begin: str
         :param maintain_end: 维护时间窗结束时间，格式为HH:mm。
@@ -178,8 +170,6 @@ class CreatePostPaidInstanceReq:
         self._subnet_id = None
         self._available_zones = None
         self._product_id = None
-        self._kafka_manager_user = None
-        self._kafka_manager_password = None
         self._maintain_begin = None
         self._maintain_end = None
         self._enable_publicip = None
@@ -219,10 +209,6 @@ class CreatePostPaidInstanceReq:
         self.subnet_id = subnet_id
         self.available_zones = available_zones
         self.product_id = product_id
-        if kafka_manager_user is not None:
-            self.kafka_manager_user = kafka_manager_user
-        if kafka_manager_password is not None:
-            self.kafka_manager_password = kafka_manager_password
         if maintain_begin is not None:
             self.maintain_begin = maintain_begin
         if maintain_end is not None:
@@ -281,7 +267,7 @@ class CreatePostPaidInstanceReq:
     def description(self):
         """Gets the description of this CreatePostPaidInstanceReq.
 
-        实例的描述信息。  长度不超过1024的字符串。[且字符串不能包含\">\"与\"<\"，字符串首字符不能为\"=\",\"+\",\"-\",\"@\"的全角和半角字符。](tag:hcs)  > \\与\"在json报文中属于特殊字符，如果参数值中需要显示\\或者\"字符，请在字符前增加转义字符\\，比如\\\\或者\\\"。
+        实例的描述信息。  长度不超过1024的字符串。[且字符串不能包含\">\"与\"<\"，字符串首字符不能为\"=\",\"+\",\"-\",\"@\"的全角和半角字符。](tag:hcs,fcs)  > \\与\"在json报文中属于特殊字符，如果参数值中需要显示\\或者\"字符，请在字符前增加转义字符\\，比如\\\\或者\\\"。
 
         :return: The description of this CreatePostPaidInstanceReq.
         :rtype: str
@@ -292,7 +278,7 @@ class CreatePostPaidInstanceReq:
     def description(self, description):
         """Sets the description of this CreatePostPaidInstanceReq.
 
-        实例的描述信息。  长度不超过1024的字符串。[且字符串不能包含\">\"与\"<\"，字符串首字符不能为\"=\",\"+\",\"-\",\"@\"的全角和半角字符。](tag:hcs)  > \\与\"在json报文中属于特殊字符，如果参数值中需要显示\\或者\"字符，请在字符前增加转义字符\\，比如\\\\或者\\\"。
+        实例的描述信息。  长度不超过1024的字符串。[且字符串不能包含\">\"与\"<\"，字符串首字符不能为\"=\",\"+\",\"-\",\"@\"的全角和半角字符。](tag:hcs,fcs)  > \\与\"在json报文中属于特殊字符，如果参数值中需要显示\\或者\"字符，请在字符前增加转义字符\\，比如\\\\或者\\\"。
 
         :param description: The description of this CreatePostPaidInstanceReq.
         :type description: str
@@ -325,7 +311,7 @@ class CreatePostPaidInstanceReq:
     def engine_version(self):
         """Gets the engine_version of this CreatePostPaidInstanceReq.
 
-        消息引擎的版本。取值填写为：   - 1.1.0   [- 2.3.0](tag:ocb,hws_ocb,sbc,hk_sbc,cmcc,hws_eu,dt,ctc,g42,hk_g42,tm,hk_tm)   - 2.7
+        消息引擎的版本。取值填写为：   - 1.1.0   [- 2.3.0](tag:ocb,hws_ocb,sbc,hk_sbc,cmcc,hws_eu,dt,ctc,g42,hk_g42,tm,hk_tm)   - 2.7   - 3.x
 
         :return: The engine_version of this CreatePostPaidInstanceReq.
         :rtype: str
@@ -336,7 +322,7 @@ class CreatePostPaidInstanceReq:
     def engine_version(self, engine_version):
         """Sets the engine_version of this CreatePostPaidInstanceReq.
 
-        消息引擎的版本。取值填写为：   - 1.1.0   [- 2.3.0](tag:ocb,hws_ocb,sbc,hk_sbc,cmcc,hws_eu,dt,ctc,g42,hk_g42,tm,hk_tm)   - 2.7
+        消息引擎的版本。取值填写为：   - 1.1.0   [- 2.3.0](tag:ocb,hws_ocb,sbc,hk_sbc,cmcc,hws_eu,dt,ctc,g42,hk_g42,tm,hk_tm)   - 2.7   - 3.x
 
         :param engine_version: The engine_version of this CreatePostPaidInstanceReq.
         :type engine_version: str
@@ -584,50 +570,6 @@ class CreatePostPaidInstanceReq:
         :type product_id: str
         """
         self._product_id = product_id
-
-    @property
-    def kafka_manager_user(self):
-        """Gets the kafka_manager_user of this CreatePostPaidInstanceReq.
-
-        表示登录Kafka Manager的用户名。只能由英文字母、数字、中划线组成，长度为4~64的字符。
-
-        :return: The kafka_manager_user of this CreatePostPaidInstanceReq.
-        :rtype: str
-        """
-        return self._kafka_manager_user
-
-    @kafka_manager_user.setter
-    def kafka_manager_user(self, kafka_manager_user):
-        """Sets the kafka_manager_user of this CreatePostPaidInstanceReq.
-
-        表示登录Kafka Manager的用户名。只能由英文字母、数字、中划线组成，长度为4~64的字符。
-
-        :param kafka_manager_user: The kafka_manager_user of this CreatePostPaidInstanceReq.
-        :type kafka_manager_user: str
-        """
-        self._kafka_manager_user = kafka_manager_user
-
-    @property
-    def kafka_manager_password(self):
-        """Gets the kafka_manager_password of this CreatePostPaidInstanceReq.
-
-        表示登录Kafka Manager的密码。  复杂度要求：   - 输入长度为8到32位的字符串。   - 必须包含如下四种字符中的三种组合：       - 小写字母       - 大写字母       - 数字       - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）和空格，并且不能以-开头
-
-        :return: The kafka_manager_password of this CreatePostPaidInstanceReq.
-        :rtype: str
-        """
-        return self._kafka_manager_password
-
-    @kafka_manager_password.setter
-    def kafka_manager_password(self, kafka_manager_password):
-        """Sets the kafka_manager_password of this CreatePostPaidInstanceReq.
-
-        表示登录Kafka Manager的密码。  复杂度要求：   - 输入长度为8到32位的字符串。   - 必须包含如下四种字符中的三种组合：       - 小写字母       - 大写字母       - 数字       - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）和空格，并且不能以-开头
-
-        :param kafka_manager_password: The kafka_manager_password of this CreatePostPaidInstanceReq.
-        :type kafka_manager_password: str
-        """
-        self._kafka_manager_password = kafka_manager_password
 
     @property
     def maintain_begin(self):

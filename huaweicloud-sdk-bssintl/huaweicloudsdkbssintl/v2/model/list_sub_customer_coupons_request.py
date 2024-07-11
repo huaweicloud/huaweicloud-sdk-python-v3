@@ -55,7 +55,7 @@ class ListSubCustomerCouponsRequest:
         :type promotion_plan_id: str
         :param coupon_type: 优惠券类型：1：代金券2：折扣券（预留）3：产品券（预留）4：现金券（预留）
         :type coupon_type: int
-        :param status: 客户优惠券实例状态：1：未激活2：待使用3：已使用4：已过期
+        :param status: 客户优惠券实例状态：1：未激活2：待使用3：已使用4：已过期5：已回收。此参数不携带或携带值为空时，不作为筛选条件。 说明： 已使用、已过期和已回收优惠券，只返回12个月以内的数据。
         :type status: int
         :param active_start_time: 激活时间。UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。
         :type active_start_time: str
@@ -196,7 +196,7 @@ class ListSubCustomerCouponsRequest:
     def status(self):
         """Gets the status of this ListSubCustomerCouponsRequest.
 
-        客户优惠券实例状态：1：未激活2：待使用3：已使用4：已过期
+        客户优惠券实例状态：1：未激活2：待使用3：已使用4：已过期5：已回收。此参数不携带或携带值为空时，不作为筛选条件。 说明： 已使用、已过期和已回收优惠券，只返回12个月以内的数据。
 
         :return: The status of this ListSubCustomerCouponsRequest.
         :rtype: int
@@ -207,7 +207,7 @@ class ListSubCustomerCouponsRequest:
     def status(self, status):
         """Sets the status of this ListSubCustomerCouponsRequest.
 
-        客户优惠券实例状态：1：未激活2：待使用3：已使用4：已过期
+        客户优惠券实例状态：1：未激活2：待使用3：已使用4：已过期5：已回收。此参数不携带或携带值为空时，不作为筛选条件。 说明： 已使用、已过期和已回收优惠券，只返回12个月以内的数据。
 
         :param status: The status of this ListSubCustomerCouponsRequest.
         :type status: int

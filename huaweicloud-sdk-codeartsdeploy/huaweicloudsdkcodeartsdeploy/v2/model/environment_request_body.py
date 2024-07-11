@@ -37,7 +37,7 @@ class EnvironmentRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: 项目ID
+        :param project_id: 项目id
         :type project_id: str
         :param name: 环境名称
         :type name: str
@@ -69,7 +69,7 @@ class EnvironmentRequestBody:
     def project_id(self):
         """Gets the project_id of this EnvironmentRequestBody.
 
-        项目ID
+        项目id
 
         :return: The project_id of this EnvironmentRequestBody.
         :rtype: str
@@ -80,7 +80,7 @@ class EnvironmentRequestBody:
     def project_id(self, project_id):
         """Sets the project_id of this EnvironmentRequestBody.
 
-        项目ID
+        项目id
 
         :param project_id: The project_id of this EnvironmentRequestBody.
         :type project_id: str

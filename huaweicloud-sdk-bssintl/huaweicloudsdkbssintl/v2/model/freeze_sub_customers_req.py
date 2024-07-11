@@ -19,16 +19,18 @@ class FreezeSubCustomersReq:
     openapi_types = {
         'customer_ids': 'list[str]',
         'reason': 'str',
-        'indirect_partner_id': 'str'
+        'indirect_partner_id': 'str',
+        'freeze_type': 'str'
     }
 
     attribute_map = {
         'customer_ids': 'customer_ids',
         'reason': 'reason',
-        'indirect_partner_id': 'indirect_partner_id'
+        'indirect_partner_id': 'indirect_partner_id',
+        'freeze_type': 'freeze_type'
     }
 
-    def __init__(self, customer_ids=None, reason=None, indirect_partner_id=None):
+    def __init__(self, customer_ids=None, reason=None, indirect_partner_id=None, freeze_type=None):
         """FreezeSubCustomersReq
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class FreezeSubCustomersReq:
         :type reason: str
         :param indirect_partner_id: 云经销商ID。获取方法请参见查询云经销商列表。如果需要查询云经销商的子客户列表，必须携带该字段。除此之外，此参数不做处理。
         :type indirect_partner_id: str
+        :param freeze_type: |参数名称：冻结类型| |参数的约束及描述：该参数非必填，冻结类型，支持枚举| |ACCOUNT：冻结账户，ACCOUNT_AND_RESOURCE：冻结账户与资源|
+        :type freeze_type: str
         """
         
         
@@ -46,12 +50,15 @@ class FreezeSubCustomersReq:
         self._customer_ids = None
         self._reason = None
         self._indirect_partner_id = None
+        self._freeze_type = None
         self.discriminator = None
 
         self.customer_ids = customer_ids
         self.reason = reason
         if indirect_partner_id is not None:
             self.indirect_partner_id = indirect_partner_id
+        if freeze_type is not None:
+            self.freeze_type = freeze_type
 
     @property
     def customer_ids(self):
@@ -118,6 +125,28 @@ class FreezeSubCustomersReq:
         :type indirect_partner_id: str
         """
         self._indirect_partner_id = indirect_partner_id
+
+    @property
+    def freeze_type(self):
+        """Gets the freeze_type of this FreezeSubCustomersReq.
+
+        |参数名称：冻结类型| |参数的约束及描述：该参数非必填，冻结类型，支持枚举| |ACCOUNT：冻结账户，ACCOUNT_AND_RESOURCE：冻结账户与资源|
+
+        :return: The freeze_type of this FreezeSubCustomersReq.
+        :rtype: str
+        """
+        return self._freeze_type
+
+    @freeze_type.setter
+    def freeze_type(self, freeze_type):
+        """Sets the freeze_type of this FreezeSubCustomersReq.
+
+        |参数名称：冻结类型| |参数的约束及描述：该参数非必填，冻结类型，支持枚举| |ACCOUNT：冻结账户，ACCOUNT_AND_RESOURCE：冻结账户与资源|
+
+        :param freeze_type: The freeze_type of this FreezeSubCustomersReq.
+        :type freeze_type: str
+        """
+        self._freeze_type = freeze_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

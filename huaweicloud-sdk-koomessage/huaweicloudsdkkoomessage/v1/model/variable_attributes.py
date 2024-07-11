@@ -35,7 +35,7 @@ class VariableAttributes:
 
         :param variable_index: 参数索引。
         :type variable_index: int
-        :param variable_type: 参数类型。
+        :param variable_type: 参数类型。PHONE：电话号码，NEWTEXT：解析标识，CHARDIGIT：其他号码(如验证码、订单号、密码等)，DATETIME：日期时间，MONEY：金额，TEXT：其他。
         :type variable_type: str
         :param variable_desc: 参数描述。变量类型为TEXT（其他）时必填。
         :type variable_desc: str
@@ -79,7 +79,7 @@ class VariableAttributes:
     def variable_type(self):
         """Gets the variable_type of this VariableAttributes.
 
-        参数类型。
+        参数类型。PHONE：电话号码，NEWTEXT：解析标识，CHARDIGIT：其他号码(如验证码、订单号、密码等)，DATETIME：日期时间，MONEY：金额，TEXT：其他。
 
         :return: The variable_type of this VariableAttributes.
         :rtype: str
@@ -90,7 +90,7 @@ class VariableAttributes:
     def variable_type(self, variable_type):
         """Sets the variable_type of this VariableAttributes.
 
-        参数类型。
+        参数类型。PHONE：电话号码，NEWTEXT：解析标识，CHARDIGIT：其他号码(如验证码、订单号、密码等)，DATETIME：日期时间，MONEY：金额，TEXT：其他。
 
         :param variable_type: The variable_type of this VariableAttributes.
         :type variable_type: str

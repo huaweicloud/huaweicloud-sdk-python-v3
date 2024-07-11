@@ -22,6 +22,7 @@ class ShowPullSourcesConfigResponse(SdkResponse):
         'source_type': 'str',
         'sources': 'list[str]',
         'sources_ip': 'list[str]',
+        'source_port': 'int',
         'scheme': 'str',
         'additional_args': 'dict(str, str)'
     }
@@ -31,11 +32,12 @@ class ShowPullSourcesConfigResponse(SdkResponse):
         'source_type': 'source_type',
         'sources': 'sources',
         'sources_ip': 'sources_ip',
+        'source_port': 'source_port',
         'scheme': 'scheme',
         'additional_args': 'additional_args'
     }
 
-    def __init__(self, play_domain=None, source_type=None, sources=None, sources_ip=None, scheme=None, additional_args=None):
+    def __init__(self, play_domain=None, source_type=None, sources=None, sources_ip=None, source_port=None, scheme=None, additional_args=None):
         """ShowPullSourcesConfigResponse
 
         The model defined in huaweicloud sdk
@@ -48,6 +50,8 @@ class ShowPullSourcesConfigResponse(SdkResponse):
         :type sources: list[str]
         :param sources_ip: 回源IP地址列表，最多可配置10个。当回源方式是“ipaddr”时，此参数必选，IP配置多个时，如果回源失败，将按照配置顺序进行轮循。
         :type sources_ip: list[str]
+        :param source_port: 回源端口。 
+        :type source_port: int
         :param scheme: 回源协议，回源方式非“huawei”时必选。
         :type scheme: str
         :param additional_args: 回源客户源站时在URL携带的参数。
@@ -60,6 +64,7 @@ class ShowPullSourcesConfigResponse(SdkResponse):
         self._source_type = None
         self._sources = None
         self._sources_ip = None
+        self._source_port = None
         self._scheme = None
         self._additional_args = None
         self.discriminator = None
@@ -72,6 +77,8 @@ class ShowPullSourcesConfigResponse(SdkResponse):
             self.sources = sources
         if sources_ip is not None:
             self.sources_ip = sources_ip
+        if source_port is not None:
+            self.source_port = source_port
         if scheme is not None:
             self.scheme = scheme
         if additional_args is not None:
@@ -164,6 +171,28 @@ class ShowPullSourcesConfigResponse(SdkResponse):
         :type sources_ip: list[str]
         """
         self._sources_ip = sources_ip
+
+    @property
+    def source_port(self):
+        """Gets the source_port of this ShowPullSourcesConfigResponse.
+
+        回源端口。 
+
+        :return: The source_port of this ShowPullSourcesConfigResponse.
+        :rtype: int
+        """
+        return self._source_port
+
+    @source_port.setter
+    def source_port(self, source_port):
+        """Sets the source_port of this ShowPullSourcesConfigResponse.
+
+        回源端口。 
+
+        :param source_port: The source_port of this ShowPullSourcesConfigResponse.
+        :type source_port: int
+        """
+        self._source_port = source_port
 
     @property
     def scheme(self):

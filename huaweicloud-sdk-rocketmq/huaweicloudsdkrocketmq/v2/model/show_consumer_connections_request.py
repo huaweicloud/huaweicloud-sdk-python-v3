@@ -37,9 +37,9 @@ class ShowConsumerConnectionsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例ID
+        :param instance_id: 实例ID。
         :type instance_id: str
-        :param group: 消费组名称
+        :param group: 消费组名称。
         :type group: str
         :param limit: 查询数量，取值范围为1~50。
         :type limit: int
@@ -71,7 +71,7 @@ class ShowConsumerConnectionsRequest:
     def instance_id(self):
         """Gets the instance_id of this ShowConsumerConnectionsRequest.
 
-        实例ID
+        实例ID。
 
         :return: The instance_id of this ShowConsumerConnectionsRequest.
         :rtype: str
@@ -82,7 +82,7 @@ class ShowConsumerConnectionsRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ShowConsumerConnectionsRequest.
 
-        实例ID
+        实例ID。
 
         :param instance_id: The instance_id of this ShowConsumerConnectionsRequest.
         :type instance_id: str
@@ -93,7 +93,7 @@ class ShowConsumerConnectionsRequest:
     def group(self):
         """Gets the group of this ShowConsumerConnectionsRequest.
 
-        消费组名称
+        消费组名称。
 
         :return: The group of this ShowConsumerConnectionsRequest.
         :rtype: str
@@ -104,7 +104,7 @@ class ShowConsumerConnectionsRequest:
     def group(self, group):
         """Sets the group of this ShowConsumerConnectionsRequest.
 
-        消费组名称
+        消费组名称。
 
         :param group: The group of this ShowConsumerConnectionsRequest.
         :type group: str

@@ -37,15 +37,15 @@ class ClientData:
 
         The model defined in huaweicloud sdk
 
-        :param language: 客户端语言
+        :param language: 客户端语言。
         :type language: str
-        :param version: 客户端版本
+        :param version: 客户端版本。
         :type version: str
-        :param client_id: 客户端ID
+        :param client_id: 客户端ID。
         :type client_id: str
-        :param client_addr: 客户端地址
+        :param client_addr: 客户端地址。
         :type client_addr: str
-        :param subscriptions: 订阅关系列表
+        :param subscriptions: 订阅关系列表。
         :type subscriptions: list[:class:`huaweicloudsdkrocketmq.v2.Subscription`]
         """
         
@@ -73,7 +73,7 @@ class ClientData:
     def language(self):
         """Gets the language of this ClientData.
 
-        客户端语言
+        客户端语言。
 
         :return: The language of this ClientData.
         :rtype: str
@@ -84,7 +84,7 @@ class ClientData:
     def language(self, language):
         """Sets the language of this ClientData.
 
-        客户端语言
+        客户端语言。
 
         :param language: The language of this ClientData.
         :type language: str
@@ -95,7 +95,7 @@ class ClientData:
     def version(self):
         """Gets the version of this ClientData.
 
-        客户端版本
+        客户端版本。
 
         :return: The version of this ClientData.
         :rtype: str
@@ -106,7 +106,7 @@ class ClientData:
     def version(self, version):
         """Sets the version of this ClientData.
 
-        客户端版本
+        客户端版本。
 
         :param version: The version of this ClientData.
         :type version: str
@@ -117,7 +117,7 @@ class ClientData:
     def client_id(self):
         """Gets the client_id of this ClientData.
 
-        客户端ID
+        客户端ID。
 
         :return: The client_id of this ClientData.
         :rtype: str
@@ -128,7 +128,7 @@ class ClientData:
     def client_id(self, client_id):
         """Sets the client_id of this ClientData.
 
-        客户端ID
+        客户端ID。
 
         :param client_id: The client_id of this ClientData.
         :type client_id: str
@@ -139,7 +139,7 @@ class ClientData:
     def client_addr(self):
         """Gets the client_addr of this ClientData.
 
-        客户端地址
+        客户端地址。
 
         :return: The client_addr of this ClientData.
         :rtype: str
@@ -150,7 +150,7 @@ class ClientData:
     def client_addr(self, client_addr):
         """Sets the client_addr of this ClientData.
 
-        客户端地址
+        客户端地址。
 
         :param client_addr: The client_addr of this ClientData.
         :type client_addr: str
@@ -161,7 +161,7 @@ class ClientData:
     def subscriptions(self):
         """Gets the subscriptions of this ClientData.
 
-        订阅关系列表
+        订阅关系列表。
 
         :return: The subscriptions of this ClientData.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.Subscription`]
@@ -172,7 +172,7 @@ class ClientData:
     def subscriptions(self, subscriptions):
         """Sets the subscriptions of this ClientData.
 
-        订阅关系列表
+        订阅关系列表。
 
         :param subscriptions: The subscriptions of this ClientData.
         :type subscriptions: list[:class:`huaweicloudsdkrocketmq.v2.Subscription`]

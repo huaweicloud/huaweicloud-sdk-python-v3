@@ -39,9 +39,9 @@ class ListDeployTaskHistoryByDateRequest:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: 项目ID
+        :param project_id: 项目id
         :type project_id: str
-        :param id: 任务ID
+        :param id: 任务id
         :type id: str
         :param page: 分页页码， 表示从此页开始查询， page大于等于1
         :type page: int
@@ -74,7 +74,7 @@ class ListDeployTaskHistoryByDateRequest:
     def project_id(self):
         """Gets the project_id of this ListDeployTaskHistoryByDateRequest.
 
-        项目ID
+        项目id
 
         :return: The project_id of this ListDeployTaskHistoryByDateRequest.
         :rtype: str
@@ -85,7 +85,7 @@ class ListDeployTaskHistoryByDateRequest:
     def project_id(self, project_id):
         """Sets the project_id of this ListDeployTaskHistoryByDateRequest.
 
-        项目ID
+        项目id
 
         :param project_id: The project_id of this ListDeployTaskHistoryByDateRequest.
         :type project_id: str
@@ -96,7 +96,7 @@ class ListDeployTaskHistoryByDateRequest:
     def id(self):
         """Gets the id of this ListDeployTaskHistoryByDateRequest.
 
-        任务ID
+        任务id
 
         :return: The id of this ListDeployTaskHistoryByDateRequest.
         :rtype: str
@@ -107,7 +107,7 @@ class ListDeployTaskHistoryByDateRequest:
     def id(self, id):
         """Sets the id of this ListDeployTaskHistoryByDateRequest.
 
-        任务ID
+        任务id
 
         :param id: The id of this ListDeployTaskHistoryByDateRequest.
         :type id: str

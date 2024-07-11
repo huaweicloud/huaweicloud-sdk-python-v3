@@ -41,7 +41,7 @@ class ShowConsumerListOrDetailsRequest:
         :type instance_id: str
         :param group: 消费组名称。
         :type group: str
-        :param topic: 待查询的topic，不指定时查询topic列表，指定时查询详情。
+        :param topic: 待查询的Topic，不指定时查询Topic列表，指定时查询详情。
         :type topic: str
         :param limit: 当次查询返回的最大个数，默认值为10，取值范围为1~50。
         :type limit: int
@@ -115,7 +115,7 @@ class ShowConsumerListOrDetailsRequest:
     def topic(self):
         """Gets the topic of this ShowConsumerListOrDetailsRequest.
 
-        待查询的topic，不指定时查询topic列表，指定时查询详情。
+        待查询的Topic，不指定时查询Topic列表，指定时查询详情。
 
         :return: The topic of this ShowConsumerListOrDetailsRequest.
         :rtype: str
@@ -126,7 +126,7 @@ class ShowConsumerListOrDetailsRequest:
     def topic(self, topic):
         """Sets the topic of this ShowConsumerListOrDetailsRequest.
 
-        待查询的topic，不指定时查询topic列表，指定时查询详情。
+        待查询的Topic，不指定时查询Topic列表，指定时查询详情。
 
         :param topic: The topic of this ShowConsumerListOrDetailsRequest.
         :type topic: str

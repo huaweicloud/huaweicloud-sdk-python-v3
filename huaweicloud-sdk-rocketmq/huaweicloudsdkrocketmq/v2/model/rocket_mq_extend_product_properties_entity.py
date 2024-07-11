@@ -55,9 +55,9 @@ class RocketMQExtendProductPropertiesEntity:
         :type min_broker: str
         :param engine_versions: 消息引擎版本。
         :type engine_versions: str
-        :param min_storage_per_node: 每个节点的最小存储。单位为GB
+        :param min_storage_per_node: 每个节点的最小存储。单位为GB。
         :type min_storage_per_node: str
-        :param product_alias: product_id的别名
+        :param product_alias: product_id的别名。
         :type product_alias: str
         """
         
@@ -226,7 +226,7 @@ class RocketMQExtendProductPropertiesEntity:
     def min_storage_per_node(self):
         """Gets the min_storage_per_node of this RocketMQExtendProductPropertiesEntity.
 
-        每个节点的最小存储。单位为GB
+        每个节点的最小存储。单位为GB。
 
         :return: The min_storage_per_node of this RocketMQExtendProductPropertiesEntity.
         :rtype: str
@@ -237,7 +237,7 @@ class RocketMQExtendProductPropertiesEntity:
     def min_storage_per_node(self, min_storage_per_node):
         """Sets the min_storage_per_node of this RocketMQExtendProductPropertiesEntity.
 
-        每个节点的最小存储。单位为GB
+        每个节点的最小存储。单位为GB。
 
         :param min_storage_per_node: The min_storage_per_node of this RocketMQExtendProductPropertiesEntity.
         :type min_storage_per_node: str
@@ -248,7 +248,7 @@ class RocketMQExtendProductPropertiesEntity:
     def product_alias(self):
         """Gets the product_alias of this RocketMQExtendProductPropertiesEntity.
 
-        product_id的别名
+        product_id的别名。
 
         :return: The product_alias of this RocketMQExtendProductPropertiesEntity.
         :rtype: str
@@ -259,7 +259,7 @@ class RocketMQExtendProductPropertiesEntity:
     def product_alias(self, product_alias):
         """Sets the product_alias of this RocketMQExtendProductPropertiesEntity.
 
-        product_id的别名
+        product_id的别名。
 
         :param product_alias: The product_alias of this RocketMQExtendProductPropertiesEntity.
         :type product_alias: str

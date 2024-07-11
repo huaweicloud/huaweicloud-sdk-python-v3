@@ -39,17 +39,17 @@ class RocketMQConfigResp:
 
         The model defined in huaweicloud sdk
 
-        :param name: RocketMQ配置名称
+        :param name: RocketMQ配置名称。
         :type name: str
-        :param value: RocketMQ配置当前值
+        :param value: RocketMQ配置当前值。
         :type value: str
-        :param config_type: RocketMQ配置的类型
+        :param config_type: RocketMQ配置的类型。
         :type config_type: str
-        :param default_value: RocketMQ配置的默认值
+        :param default_value: RocketMQ配置的默认值。
         :type default_value: str
-        :param valid_values: RocketMQ配置取值的范围
+        :param valid_values: RocketMQ配置取值的范围。
         :type valid_values: str
-        :param value_type: RocketMQ配置值的类型
+        :param value_type: RocketMQ配置值的类型。
         :type value_type: str
         """
         
@@ -80,7 +80,7 @@ class RocketMQConfigResp:
     def name(self):
         """Gets the name of this RocketMQConfigResp.
 
-        RocketMQ配置名称
+        RocketMQ配置名称。
 
         :return: The name of this RocketMQConfigResp.
         :rtype: str
@@ -91,7 +91,7 @@ class RocketMQConfigResp:
     def name(self, name):
         """Sets the name of this RocketMQConfigResp.
 
-        RocketMQ配置名称
+        RocketMQ配置名称。
 
         :param name: The name of this RocketMQConfigResp.
         :type name: str
@@ -102,7 +102,7 @@ class RocketMQConfigResp:
     def value(self):
         """Gets the value of this RocketMQConfigResp.
 
-        RocketMQ配置当前值
+        RocketMQ配置当前值。
 
         :return: The value of this RocketMQConfigResp.
         :rtype: str
@@ -113,7 +113,7 @@ class RocketMQConfigResp:
     def value(self, value):
         """Sets the value of this RocketMQConfigResp.
 
-        RocketMQ配置当前值
+        RocketMQ配置当前值。
 
         :param value: The value of this RocketMQConfigResp.
         :type value: str
@@ -124,7 +124,7 @@ class RocketMQConfigResp:
     def config_type(self):
         """Gets the config_type of this RocketMQConfigResp.
 
-        RocketMQ配置的类型
+        RocketMQ配置的类型。
 
         :return: The config_type of this RocketMQConfigResp.
         :rtype: str
@@ -135,7 +135,7 @@ class RocketMQConfigResp:
     def config_type(self, config_type):
         """Sets the config_type of this RocketMQConfigResp.
 
-        RocketMQ配置的类型
+        RocketMQ配置的类型。
 
         :param config_type: The config_type of this RocketMQConfigResp.
         :type config_type: str
@@ -146,7 +146,7 @@ class RocketMQConfigResp:
     def default_value(self):
         """Gets the default_value of this RocketMQConfigResp.
 
-        RocketMQ配置的默认值
+        RocketMQ配置的默认值。
 
         :return: The default_value of this RocketMQConfigResp.
         :rtype: str
@@ -157,7 +157,7 @@ class RocketMQConfigResp:
     def default_value(self, default_value):
         """Sets the default_value of this RocketMQConfigResp.
 
-        RocketMQ配置的默认值
+        RocketMQ配置的默认值。
 
         :param default_value: The default_value of this RocketMQConfigResp.
         :type default_value: str
@@ -168,7 +168,7 @@ class RocketMQConfigResp:
     def valid_values(self):
         """Gets the valid_values of this RocketMQConfigResp.
 
-        RocketMQ配置取值的范围
+        RocketMQ配置取值的范围。
 
         :return: The valid_values of this RocketMQConfigResp.
         :rtype: str
@@ -179,7 +179,7 @@ class RocketMQConfigResp:
     def valid_values(self, valid_values):
         """Sets the valid_values of this RocketMQConfigResp.
 
-        RocketMQ配置取值的范围
+        RocketMQ配置取值的范围。
 
         :param valid_values: The valid_values of this RocketMQConfigResp.
         :type valid_values: str
@@ -190,7 +190,7 @@ class RocketMQConfigResp:
     def value_type(self):
         """Gets the value_type of this RocketMQConfigResp.
 
-        RocketMQ配置值的类型
+        RocketMQ配置值的类型。
 
         :return: The value_type of this RocketMQConfigResp.
         :rtype: str
@@ -201,7 +201,7 @@ class RocketMQConfigResp:
     def value_type(self, value_type):
         """Sets the value_type of this RocketMQConfigResp.
 
-        RocketMQ配置值的类型
+        RocketMQ配置值的类型。
 
         :param value_type: The value_type of this RocketMQConfigResp.
         :type value_type: str

@@ -33,7 +33,7 @@ class ShowVhostDetailResp:
 
         :param name: Vhost名称。
         :type name: str
-        :param tracing: 是否开启消息轨迹（AMQP版本不涉及此字段）
+        :param tracing: 是否开启消息轨迹[（AMQP版本不涉及此字段）](tag:hws,hws_hk)。
         :type tracing: bool
         """
         
@@ -74,7 +74,7 @@ class ShowVhostDetailResp:
     def tracing(self):
         """Gets the tracing of this ShowVhostDetailResp.
 
-        是否开启消息轨迹（AMQP版本不涉及此字段）
+        是否开启消息轨迹[（AMQP版本不涉及此字段）](tag:hws,hws_hk)。
 
         :return: The tracing of this ShowVhostDetailResp.
         :rtype: bool
@@ -85,7 +85,7 @@ class ShowVhostDetailResp:
     def tracing(self, tracing):
         """Sets the tracing of this ShowVhostDetailResp.
 
-        是否开启消息轨迹（AMQP版本不涉及此字段）
+        是否开启消息轨迹[（AMQP版本不涉及此字段）](tag:hws,hws_hk)。
 
         :param tracing: The tracing of this ShowVhostDetailResp.
         :type tracing: bool

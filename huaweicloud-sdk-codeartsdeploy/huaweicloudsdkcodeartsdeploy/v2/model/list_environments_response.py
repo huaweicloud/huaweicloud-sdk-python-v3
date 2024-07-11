@@ -34,7 +34,7 @@ class ListEnvironmentsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param status: 响应状态
+        :param status: 请求成功失败状态
         :type status: str
         :param total: 应用下环境总数
         :type total: int
@@ -60,7 +60,7 @@ class ListEnvironmentsResponse(SdkResponse):
     def status(self):
         """Gets the status of this ListEnvironmentsResponse.
 
-        响应状态
+        请求成功失败状态
 
         :return: The status of this ListEnvironmentsResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class ListEnvironmentsResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this ListEnvironmentsResponse.
 
-        响应状态
+        请求成功失败状态
 
         :param status: The status of this ListEnvironmentsResponse.
         :type status: str

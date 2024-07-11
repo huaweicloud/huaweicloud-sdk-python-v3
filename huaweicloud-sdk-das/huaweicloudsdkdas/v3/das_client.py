@@ -367,6 +367,75 @@ class DasClient(Client):
 
         return http_info
 
+    def change_transaction_switch_status(self, request):
+        """开启/关闭历史事务开关
+
+        开启/关闭历史事务开关，仅支持MySQL引擎，并且依赖开启全量SQL或者慢SQL功能
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ChangeTransactionSwitchStatus
+        :type request: :class:`huaweicloudsdkdas.v3.ChangeTransactionSwitchStatusRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ChangeTransactionSwitchStatusResponse`
+        """
+        http_info = self._change_transaction_switch_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def change_transaction_switch_status_invoker(self, request):
+        http_info = self._change_transaction_switch_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_transaction_switch_status_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/transaction/switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeTransactionSwitchStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_share_connections(self, request):
         """设置共享链接
 
@@ -1857,6 +1926,92 @@ class DasClient(Client):
 
         return http_info
 
+    def list_transactions(self, request):
+        """查询历史事务列表
+
+        查询历史事务列表。
+        目前仅支持MySQL实例，仅支持查看最近7天的历史事务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListTransactions
+        :type request: :class:`huaweicloudsdkdas.v3.ListTransactionsRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ListTransactionsResponse`
+        """
+        http_info = self._list_transactions_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_transactions_invoker(self, request):
+        http_info = self._list_transactions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_transactions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/transaction",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTransactionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'datastore_type' in local_var_params:
+            query_params.append(('datastore_type', local_var_params['datastore_type']))
+        if 'start_at' in local_var_params:
+            query_params.append(('start_at', local_var_params['start_at']))
+        if 'end_at' in local_var_params:
+            query_params.append(('end_at', local_var_params['end_at']))
+        if 'page_num' in local_var_params:
+            query_params.append(('page_num', local_var_params['page_num']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
+        if 'order' in local_var_params:
+            query_params.append(('order', local_var_params['order']))
+        if 'order_by' in local_var_params:
+            query_params.append(('order_by', local_var_params['order_by']))
+        if 'last_sec_min' in local_var_params:
+            query_params.append(('last_sec_min', local_var_params['last_sec_min']))
+        if 'last_sec_max' in local_var_params:
+            query_params.append(('last_sec_max', local_var_params['last_sec_max']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def parse_sql_limit_rules(self, request):
         """根据原始SQL生成SQL限流关键字
 
@@ -2454,6 +2609,76 @@ class DasClient(Client):
         query_params = []
         if 'type' in local_var_params:
             query_params.append(('type', local_var_params['type']))
+        if 'datastore_type' in local_var_params:
+            query_params.append(('datastore_type', local_var_params['datastore_type']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_transaction_switch_status(self, request):
+        """查询历史事务开关
+
+        查询历史事务开关。
+        目前仅支持MySQL实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowTransactionSwitchStatus
+        :type request: :class:`huaweicloudsdkdas.v3.ShowTransactionSwitchStatusRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ShowTransactionSwitchStatusResponse`
+        """
+        http_info = self._show_transaction_switch_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_transaction_switch_status_invoker(self, request):
+        http_info = self._show_transaction_switch_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_transaction_switch_status_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/transaction/switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTransactionSwitchStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
         if 'datastore_type' in local_var_params:
             query_params.append(('datastore_type', local_var_params['datastore_type']))
 

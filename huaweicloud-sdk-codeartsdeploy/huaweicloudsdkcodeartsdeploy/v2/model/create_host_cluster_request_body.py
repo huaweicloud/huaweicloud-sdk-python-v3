@@ -41,7 +41,7 @@ class CreateHostClusterRequestBody:
 
         :param name: 主机集群名
         :type name: str
-        :param project_id: 项目ID
+        :param project_id: 项目id
         :type project_id: str
         :param os: 操作系统：windows|linux
         :type os: str
@@ -98,7 +98,7 @@ class CreateHostClusterRequestBody:
     def project_id(self):
         """Gets the project_id of this CreateHostClusterRequestBody.
 
-        项目ID
+        项目id
 
         :return: The project_id of this CreateHostClusterRequestBody.
         :rtype: str
@@ -109,7 +109,7 @@ class CreateHostClusterRequestBody:
     def project_id(self, project_id):
         """Sets the project_id of this CreateHostClusterRequestBody.
 
-        项目ID
+        项目id
 
         :param project_id: The project_id of this CreateHostClusterRequestBody.
         :type project_id: str

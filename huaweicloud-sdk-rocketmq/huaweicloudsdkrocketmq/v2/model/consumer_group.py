@@ -61,7 +61,7 @@ class ConsumerGroup:
         :type created_at: int
         :param permissions: 权限集。
         :type permissions: list[str]
-        :param consume_orderly: 是否按序消费。
+        :param consume_orderly: 是否按顺序消费。
         :type consume_orderly: bool
         """
         
@@ -277,7 +277,7 @@ class ConsumerGroup:
     def consume_orderly(self):
         """Gets the consume_orderly of this ConsumerGroup.
 
-        是否按序消费。
+        是否按顺序消费。
 
         :return: The consume_orderly of this ConsumerGroup.
         :rtype: bool
@@ -288,7 +288,7 @@ class ConsumerGroup:
     def consume_orderly(self, consume_orderly):
         """Sets the consume_orderly of this ConsumerGroup.
 
-        是否按序消费。
+        是否按顺序消费。
 
         :param consume_orderly: The consume_orderly of this ConsumerGroup.
         :type consume_orderly: bool

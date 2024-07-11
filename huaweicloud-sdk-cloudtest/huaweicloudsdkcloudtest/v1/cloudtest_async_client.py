@@ -7618,6 +7618,79 @@ class CloudtestAsyncClient(Client):
 
         return http_info
 
+    def show_test_case_reviews_async(self, request):
+        """根据用例查询评审记录
+
+        根据用例查询评审记录
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowTestCaseReviews
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ShowTestCaseReviewsRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowTestCaseReviewsResponse`
+        """
+        http_info = self._show_test_case_reviews_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_test_case_reviews_async_invoker(self, request):
+        http_info = self._show_test_case_reviews_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_test_case_reviews_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/GT3KServer/v4/testcases/{testcase_uri}/review",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTestCaseReviewsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'testcase_uri' in local_var_params:
+            path_params['testcase_uri'] = local_var_params['testcase_uri']
+
+        query_params = []
+        if 'project_uuid' in local_var_params:
+            query_params.append(('project_uuid', local_var_params['project_uuid']))
+        if 'version_uri' in local_var_params:
+            query_params.append(('version_uri', local_var_params['version_uri']))
+        if 'page_no' in local_var_params:
+            query_params.append(('page_no', local_var_params['page_no']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_test_cases_change_statistics_async(self, request):
         """版本测试用例变更统计（只统计分支，不统计基线）
 

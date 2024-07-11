@@ -20,6 +20,7 @@ class CreateAntileakageRuleRequestBody:
         'url': 'str',
         'category': 'str',
         'contents': 'list[str]',
+        'action': 'CreateAntileakageRuleRequestBodyAction',
         'description': 'str'
     }
 
@@ -27,10 +28,11 @@ class CreateAntileakageRuleRequestBody:
         'url': 'url',
         'category': 'category',
         'contents': 'contents',
+        'action': 'action',
         'description': 'description'
     }
 
-    def __init__(self, url=None, category=None, contents=None, description=None):
+    def __init__(self, url=None, category=None, contents=None, action=None, description=None):
         """CreateAntileakageRuleRequestBody
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class CreateAntileakageRuleRequestBody:
         :type category: str
         :param contents: 规则内容（http状态码：400 、401、402 、 403 、404 、 405 、500 、501 、502 、503、 504 、507；手机：phone、身份证号：id_card、邮箱：email）
         :type contents: list[str]
+        :param action: 
+        :type action: :class:`huaweicloudsdkwaf.v1.CreateAntileakageRuleRequestBodyAction`
         :param description: 规则描述
         :type description: str
         """
@@ -50,12 +54,15 @@ class CreateAntileakageRuleRequestBody:
         self._url = None
         self._category = None
         self._contents = None
+        self._action = None
         self._description = None
         self.discriminator = None
 
         self.url = url
         self.category = category
         self.contents = contents
+        if action is not None:
+            self.action = action
         if description is not None:
             self.description = description
 
@@ -124,6 +131,24 @@ class CreateAntileakageRuleRequestBody:
         :type contents: list[str]
         """
         self._contents = contents
+
+    @property
+    def action(self):
+        """Gets the action of this CreateAntileakageRuleRequestBody.
+
+        :return: The action of this CreateAntileakageRuleRequestBody.
+        :rtype: :class:`huaweicloudsdkwaf.v1.CreateAntileakageRuleRequestBodyAction`
+        """
+        return self._action
+
+    @action.setter
+    def action(self, action):
+        """Sets the action of this CreateAntileakageRuleRequestBody.
+
+        :param action: The action of this CreateAntileakageRuleRequestBody.
+        :type action: :class:`huaweicloudsdkwaf.v1.CreateAntileakageRuleRequestBodyAction`
+        """
+        self._action = action
 
     @property
     def description(self):

@@ -31,7 +31,8 @@ class HostModel:
         'root_volume_size': 'str',
         'data_volume_type': 'str',
         'data_volume_size': 'int',
-        'data_volume_count': 'int'
+        'data_volume_count': 'int',
+        'node_group_name': 'str'
     }
 
     attribute_map = {
@@ -49,10 +50,11 @@ class HostModel:
         'root_volume_size': 'root_volume_size',
         'data_volume_type': 'data_volume_type',
         'data_volume_size': 'data_volume_size',
-        'data_volume_count': 'data_volume_count'
+        'data_volume_count': 'data_volume_count',
+        'node_group_name': 'node_group_name'
     }
 
-    def __init__(self, id=None, name=None, ip=None, availability_zone_id=None, tags=None, status=None, resource_id=None, flavor=None, type=None, mem=None, cpu=None, root_volume_size=None, data_volume_type=None, data_volume_size=None, data_volume_count=None):
+    def __init__(self, id=None, name=None, ip=None, availability_zone_id=None, tags=None, status=None, resource_id=None, flavor=None, type=None, mem=None, cpu=None, root_volume_size=None, data_volume_type=None, data_volume_size=None, data_volume_count=None, node_group_name=None):
         """HostModel
 
         The model defined in huaweicloud sdk
@@ -87,6 +89,8 @@ class HostModel:
         :type data_volume_size: int
         :param data_volume_count: 数据盘个数
         :type data_volume_count: int
+        :param node_group_name: 节点组名称
+        :type node_group_name: str
         """
         
         
@@ -106,6 +110,7 @@ class HostModel:
         self._data_volume_type = None
         self._data_volume_size = None
         self._data_volume_count = None
+        self._node_group_name = None
         self.discriminator = None
 
         if id is not None:
@@ -138,6 +143,8 @@ class HostModel:
             self.data_volume_size = data_volume_size
         if data_volume_count is not None:
             self.data_volume_count = data_volume_count
+        if node_group_name is not None:
+            self.node_group_name = node_group_name
 
     @property
     def id(self):
@@ -468,6 +475,28 @@ class HostModel:
         :type data_volume_count: int
         """
         self._data_volume_count = data_volume_count
+
+    @property
+    def node_group_name(self):
+        """Gets the node_group_name of this HostModel.
+
+        节点组名称
+
+        :return: The node_group_name of this HostModel.
+        :rtype: str
+        """
+        return self._node_group_name
+
+    @node_group_name.setter
+    def node_group_name(self, node_group_name):
+        """Sets the node_group_name of this HostModel.
+
+        节点组名称
+
+        :param node_group_name: The node_group_name of this HostModel.
+        :type node_group_name: str
+        """
+        self._node_group_name = node_group_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

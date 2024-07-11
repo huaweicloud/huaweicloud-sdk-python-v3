@@ -31,9 +31,9 @@ class RocketMQProductSupportFeaturesEntity:
 
         The model defined in huaweicloud sdk
 
-        :param name: 特性名称
+        :param name: 特性名称。
         :type name: str
-        :param properties: 功能特性的键值对
+        :param properties: 功能特性的键值对。
         :type properties: dict(str, str)
         """
         
@@ -52,7 +52,7 @@ class RocketMQProductSupportFeaturesEntity:
     def name(self):
         """Gets the name of this RocketMQProductSupportFeaturesEntity.
 
-        特性名称
+        特性名称。
 
         :return: The name of this RocketMQProductSupportFeaturesEntity.
         :rtype: str
@@ -63,7 +63,7 @@ class RocketMQProductSupportFeaturesEntity:
     def name(self, name):
         """Sets the name of this RocketMQProductSupportFeaturesEntity.
 
-        特性名称
+        特性名称。
 
         :param name: The name of this RocketMQProductSupportFeaturesEntity.
         :type name: str
@@ -74,7 +74,7 @@ class RocketMQProductSupportFeaturesEntity:
     def properties(self):
         """Gets the properties of this RocketMQProductSupportFeaturesEntity.
 
-        功能特性的键值对
+        功能特性的键值对。
 
         :return: The properties of this RocketMQProductSupportFeaturesEntity.
         :rtype: dict(str, str)
@@ -85,7 +85,7 @@ class RocketMQProductSupportFeaturesEntity:
     def properties(self, properties):
         """Sets the properties of this RocketMQProductSupportFeaturesEntity.
 
-        功能特性的键值对
+        功能特性的键值对。
 
         :param properties: The properties of this RocketMQProductSupportFeaturesEntity.
         :type properties: dict(str, str)

@@ -46,7 +46,7 @@ class CreateQueueResponse(SdkResponse):
         :type name: str
         :param auto_delete: 是否自动删除
         :type auto_delete: bool
-        :param durable: 是否持久化（AMQP版本默认持久化，不涉及此字段）
+        :param durable: 是否持久化[（AMQP版本默认持久化，不涉及此字段）](tag:hws,hws_hk)
         :type durable: bool
         :param dead_letter_exchange: 死信Exchange名称，消息被拒绝或过期时将重新发布到该Exchange。
         :type dead_letter_exchange: str
@@ -54,7 +54,7 @@ class CreateQueueResponse(SdkResponse):
         :type dead_letter_routing_key: str
         :param message_ttl: 发布到Queue的消息在被丢弃之前可以存活多长时间
         :type message_ttl: int
-        :param lazy_mode: 若设置惰性队列，请输入lazy。惰性队列模式会在磁盘上存储尽可能多的消息以减少内存使用；若不设置，队列将消息存储在内存缓存以尽可能快地传递消息。（AMQP版本默认将消息存储到磁盘，不涉及此字段）
+        :param lazy_mode: 若设置惰性队列，请输入lazy。惰性队列模式会在磁盘上存储尽可能多的消息以减少内存使用；若不设置，队列将消息存储在内存缓存以尽可能快地传递消息。[（AMQP版本默认将消息存储到磁盘，不涉及此字段）](tag:hws,hws_hk)
         :type lazy_mode: str
         """
         
@@ -132,7 +132,7 @@ class CreateQueueResponse(SdkResponse):
     def durable(self):
         """Gets the durable of this CreateQueueResponse.
 
-        是否持久化（AMQP版本默认持久化，不涉及此字段）
+        是否持久化[（AMQP版本默认持久化，不涉及此字段）](tag:hws,hws_hk)
 
         :return: The durable of this CreateQueueResponse.
         :rtype: bool
@@ -143,7 +143,7 @@ class CreateQueueResponse(SdkResponse):
     def durable(self, durable):
         """Sets the durable of this CreateQueueResponse.
 
-        是否持久化（AMQP版本默认持久化，不涉及此字段）
+        是否持久化[（AMQP版本默认持久化，不涉及此字段）](tag:hws,hws_hk)
 
         :param durable: The durable of this CreateQueueResponse.
         :type durable: bool
@@ -220,7 +220,7 @@ class CreateQueueResponse(SdkResponse):
     def lazy_mode(self):
         """Gets the lazy_mode of this CreateQueueResponse.
 
-        若设置惰性队列，请输入lazy。惰性队列模式会在磁盘上存储尽可能多的消息以减少内存使用；若不设置，队列将消息存储在内存缓存以尽可能快地传递消息。（AMQP版本默认将消息存储到磁盘，不涉及此字段）
+        若设置惰性队列，请输入lazy。惰性队列模式会在磁盘上存储尽可能多的消息以减少内存使用；若不设置，队列将消息存储在内存缓存以尽可能快地传递消息。[（AMQP版本默认将消息存储到磁盘，不涉及此字段）](tag:hws,hws_hk)
 
         :return: The lazy_mode of this CreateQueueResponse.
         :rtype: str
@@ -231,7 +231,7 @@ class CreateQueueResponse(SdkResponse):
     def lazy_mode(self, lazy_mode):
         """Sets the lazy_mode of this CreateQueueResponse.
 
-        若设置惰性队列，请输入lazy。惰性队列模式会在磁盘上存储尽可能多的消息以减少内存使用；若不设置，队列将消息存储在内存缓存以尽可能快地传递消息。（AMQP版本默认将消息存储到磁盘，不涉及此字段）
+        若设置惰性队列，请输入lazy。惰性队列模式会在磁盘上存储尽可能多的消息以减少内存使用；若不设置，队列将消息存储在内存缓存以尽可能快地传递消息。[（AMQP版本默认将消息存储到磁盘，不涉及此字段）](tag:hws,hws_hk)
 
         :param lazy_mode: The lazy_mode of this CreateQueueResponse.
         :type lazy_mode: str

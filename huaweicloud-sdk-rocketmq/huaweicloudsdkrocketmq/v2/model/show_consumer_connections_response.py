@@ -42,19 +42,19 @@ class ShowConsumerConnectionsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param group_name: 消费组名称
+        :param group_name: 消费组名称。
         :type group_name: str
-        :param online: 消费组是否在线
+        :param online: 消费组是否在线。
         :type online: bool
-        :param subscription_consistency: 订阅关系是否一致
+        :param subscription_consistency: 订阅关系是否一致。
         :type subscription_consistency: bool
-        :param total: 消费者总数
+        :param total: 消费者总数。
         :type total: int
-        :param next_offset: 下个分页的offset
+        :param next_offset: 下个分页的offset。
         :type next_offset: int
-        :param previous_offset: 上个分页的offset
+        :param previous_offset: 上个分页的offset。
         :type previous_offset: int
-        :param clients: 消费者订阅详情列表
+        :param clients: 消费者订阅详情列表。
         :type clients: list[:class:`huaweicloudsdkrocketmq.v2.ClientData`]
         """
         
@@ -88,7 +88,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
     def group_name(self):
         """Gets the group_name of this ShowConsumerConnectionsResponse.
 
-        消费组名称
+        消费组名称。
 
         :return: The group_name of this ShowConsumerConnectionsResponse.
         :rtype: str
@@ -99,7 +99,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
     def group_name(self, group_name):
         """Sets the group_name of this ShowConsumerConnectionsResponse.
 
-        消费组名称
+        消费组名称。
 
         :param group_name: The group_name of this ShowConsumerConnectionsResponse.
         :type group_name: str
@@ -110,7 +110,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
     def online(self):
         """Gets the online of this ShowConsumerConnectionsResponse.
 
-        消费组是否在线
+        消费组是否在线。
 
         :return: The online of this ShowConsumerConnectionsResponse.
         :rtype: bool
@@ -121,7 +121,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
     def online(self, online):
         """Sets the online of this ShowConsumerConnectionsResponse.
 
-        消费组是否在线
+        消费组是否在线。
 
         :param online: The online of this ShowConsumerConnectionsResponse.
         :type online: bool
@@ -132,7 +132,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
     def subscription_consistency(self):
         """Gets the subscription_consistency of this ShowConsumerConnectionsResponse.
 
-        订阅关系是否一致
+        订阅关系是否一致。
 
         :return: The subscription_consistency of this ShowConsumerConnectionsResponse.
         :rtype: bool
@@ -143,7 +143,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
     def subscription_consistency(self, subscription_consistency):
         """Sets the subscription_consistency of this ShowConsumerConnectionsResponse.
 
-        订阅关系是否一致
+        订阅关系是否一致。
 
         :param subscription_consistency: The subscription_consistency of this ShowConsumerConnectionsResponse.
         :type subscription_consistency: bool
@@ -154,7 +154,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
     def total(self):
         """Gets the total of this ShowConsumerConnectionsResponse.
 
-        消费者总数
+        消费者总数。
 
         :return: The total of this ShowConsumerConnectionsResponse.
         :rtype: int
@@ -165,7 +165,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
     def total(self, total):
         """Sets the total of this ShowConsumerConnectionsResponse.
 
-        消费者总数
+        消费者总数。
 
         :param total: The total of this ShowConsumerConnectionsResponse.
         :type total: int
@@ -176,7 +176,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
     def next_offset(self):
         """Gets the next_offset of this ShowConsumerConnectionsResponse.
 
-        下个分页的offset
+        下个分页的offset。
 
         :return: The next_offset of this ShowConsumerConnectionsResponse.
         :rtype: int
@@ -187,7 +187,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
     def next_offset(self, next_offset):
         """Sets the next_offset of this ShowConsumerConnectionsResponse.
 
-        下个分页的offset
+        下个分页的offset。
 
         :param next_offset: The next_offset of this ShowConsumerConnectionsResponse.
         :type next_offset: int
@@ -198,7 +198,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
     def previous_offset(self):
         """Gets the previous_offset of this ShowConsumerConnectionsResponse.
 
-        上个分页的offset
+        上个分页的offset。
 
         :return: The previous_offset of this ShowConsumerConnectionsResponse.
         :rtype: int
@@ -209,7 +209,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
     def previous_offset(self, previous_offset):
         """Sets the previous_offset of this ShowConsumerConnectionsResponse.
 
-        上个分页的offset
+        上个分页的offset。
 
         :param previous_offset: The previous_offset of this ShowConsumerConnectionsResponse.
         :type previous_offset: int
@@ -220,7 +220,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
     def clients(self):
         """Gets the clients of this ShowConsumerConnectionsResponse.
 
-        消费者订阅详情列表
+        消费者订阅详情列表。
 
         :return: The clients of this ShowConsumerConnectionsResponse.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.ClientData`]
@@ -231,7 +231,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
     def clients(self, clients):
         """Sets the clients of this ShowConsumerConnectionsResponse.
 
-        消费者订阅详情列表
+        消费者订阅详情列表。
 
         :param clients: The clients of this ShowConsumerConnectionsResponse.
         :type clients: list[:class:`huaweicloudsdkrocketmq.v2.ClientData`]

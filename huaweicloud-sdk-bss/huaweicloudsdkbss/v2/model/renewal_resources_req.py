@@ -61,7 +61,8 @@ class RenewalResourcesReq:
         self.resource_ids = resource_ids
         self.period_type = period_type
         self.period_num = period_num
-        self.expire_policy = expire_policy
+        if expire_policy is not None:
+            self.expire_policy = expire_policy
         if is_auto_pay is not None:
             self.is_auto_pay = is_auto_pay
 

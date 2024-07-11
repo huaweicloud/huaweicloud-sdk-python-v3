@@ -30,7 +30,7 @@ class CreateRocketMqMigrationTaskResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param task_id: 任务ID
+        :param task_id: 任务ID。
         :type task_id: str
         """
         
@@ -46,7 +46,7 @@ class CreateRocketMqMigrationTaskResponse(SdkResponse):
     def task_id(self):
         """Gets the task_id of this CreateRocketMqMigrationTaskResponse.
 
-        任务ID
+        任务ID。
 
         :return: The task_id of this CreateRocketMqMigrationTaskResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class CreateRocketMqMigrationTaskResponse(SdkResponse):
     def task_id(self, task_id):
         """Sets the task_id of this CreateRocketMqMigrationTaskResponse.
 
-        任务ID
+        任务ID。
 
         :param task_id: The task_id of this CreateRocketMqMigrationTaskResponse.
         :type task_id: str

@@ -31,9 +31,9 @@ class RocketMQConfigReq:
 
         The model defined in huaweicloud sdk
 
-        :param name: RocketMQ配置名称
+        :param name: RocketMQ配置名称。
         :type name: str
-        :param value: RocketMQ配置目标值
+        :param value: RocketMQ配置目标值。
         :type value: str
         """
         
@@ -52,7 +52,7 @@ class RocketMQConfigReq:
     def name(self):
         """Gets the name of this RocketMQConfigReq.
 
-        RocketMQ配置名称
+        RocketMQ配置名称。
 
         :return: The name of this RocketMQConfigReq.
         :rtype: str
@@ -63,7 +63,7 @@ class RocketMQConfigReq:
     def name(self, name):
         """Sets the name of this RocketMQConfigReq.
 
-        RocketMQ配置名称
+        RocketMQ配置名称。
 
         :param name: The name of this RocketMQConfigReq.
         :type name: str
@@ -74,7 +74,7 @@ class RocketMQConfigReq:
     def value(self):
         """Gets the value of this RocketMQConfigReq.
 
-        RocketMQ配置目标值
+        RocketMQ配置目标值。
 
         :return: The value of this RocketMQConfigReq.
         :rtype: str
@@ -85,7 +85,7 @@ class RocketMQConfigReq:
     def value(self, value):
         """Sets the value of this RocketMQConfigReq.
 
-        RocketMQ配置目标值
+        RocketMQ配置目标值。
 
         :param value: The value of this RocketMQConfigReq.
         :type value: str

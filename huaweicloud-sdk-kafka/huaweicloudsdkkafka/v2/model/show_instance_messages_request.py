@@ -51,7 +51,7 @@ class ShowInstanceMessagesRequest:
 
         :param instance_id: 实例ID。
         :type instance_id: str
-        :param topic: Topic名称。  Topic名称必现以字母开头且只支持大小写字母、中横线、下划线以及数字。
+        :param topic: Topic名称。  Topic名称必须以字母开头且只支持大小写字母、中横线、下划线以及数字。
         :type topic: str
         :param asc: 是否按照时间排序。
         :type asc: bool
@@ -135,7 +135,7 @@ class ShowInstanceMessagesRequest:
     def topic(self):
         """Gets the topic of this ShowInstanceMessagesRequest.
 
-        Topic名称。  Topic名称必现以字母开头且只支持大小写字母、中横线、下划线以及数字。
+        Topic名称。  Topic名称必须以字母开头且只支持大小写字母、中横线、下划线以及数字。
 
         :return: The topic of this ShowInstanceMessagesRequest.
         :rtype: str
@@ -146,7 +146,7 @@ class ShowInstanceMessagesRequest:
     def topic(self, topic):
         """Sets the topic of this ShowInstanceMessagesRequest.
 
-        Topic名称。  Topic名称必现以字母开头且只支持大小写字母、中横线、下划线以及数字。
+        Topic名称。  Topic名称必须以字母开头且只支持大小写字母、中横线、下划线以及数字。
 
         :param topic: The topic of this ShowInstanceMessagesRequest.
         :type topic: str

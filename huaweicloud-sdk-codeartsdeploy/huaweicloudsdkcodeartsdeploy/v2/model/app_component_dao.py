@@ -53,7 +53,7 @@ class AppComponentDao:
         :type comp_id: str
         :param comp_name: AOM应用组件名称
         :type comp_name: str
-        :param domain_id: 租户ID
+        :param domain_id: 租户id
         :type domain_id: str
         :param region: 局点信息
         :type region: str
@@ -204,7 +204,7 @@ class AppComponentDao:
     def domain_id(self):
         """Gets the domain_id of this AppComponentDao.
 
-        租户ID
+        租户id
 
         :return: The domain_id of this AppComponentDao.
         :rtype: str
@@ -215,7 +215,7 @@ class AppComponentDao:
     def domain_id(self, domain_id):
         """Sets the domain_id of this AppComponentDao.
 
-        租户ID
+        租户id
 
         :param domain_id: The domain_id of this AppComponentDao.
         :type domain_id: str

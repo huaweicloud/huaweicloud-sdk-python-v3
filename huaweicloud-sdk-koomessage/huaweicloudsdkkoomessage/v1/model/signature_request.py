@@ -47,7 +47,7 @@ class SignatureRequest:
 
         :param signature_name: 签名名称。
         :type signature_name: str
-        :param signature_type: 签名类型。
+        :param signature_type: 签名类型。PROMOTION_TYPE：营销类，NOTIFY_TYPE：通知类。
         :type signature_type: str
         :param app_id: 短信应用ID。
         :type app_id: str
@@ -55,9 +55,9 @@ class SignatureRequest:
         :type apply_desc: str
         :param file_id: 营业执照文件ID。调用上传申请文件接口获取。
         :type file_id: str
-        :param signature_source: 签名来源。
+        :param signature_source: 签名来源。0：企事业单位的全称或简称，1：工信部备案网站的全称或简称，2：APP应用的全称或简称，3：公众号或小程序的全称或简称，4：电商平台店铺名的全称或简称，5：商标名的全称或简称。
         :type signature_source: int
-        :param is_involved_third: 是否涉及第三方权益。若为yes，则还需要传入授权委托书。
+        :param is_involved_third: 是否涉及第三方权益。若为yes，则还需要传入授权委托书。yes：涉及，no：不涉及。
         :type is_involved_third: str
         :param power_attorney_file_id: 授权委托书文件ID。调用上传申请文件接口获取。
         :type power_attorney_file_id: str
@@ -117,7 +117,7 @@ class SignatureRequest:
     def signature_type(self):
         """Gets the signature_type of this SignatureRequest.
 
-        签名类型。
+        签名类型。PROMOTION_TYPE：营销类，NOTIFY_TYPE：通知类。
 
         :return: The signature_type of this SignatureRequest.
         :rtype: str
@@ -128,7 +128,7 @@ class SignatureRequest:
     def signature_type(self, signature_type):
         """Sets the signature_type of this SignatureRequest.
 
-        签名类型。
+        签名类型。PROMOTION_TYPE：营销类，NOTIFY_TYPE：通知类。
 
         :param signature_type: The signature_type of this SignatureRequest.
         :type signature_type: str
@@ -205,7 +205,7 @@ class SignatureRequest:
     def signature_source(self):
         """Gets the signature_source of this SignatureRequest.
 
-        签名来源。
+        签名来源。0：企事业单位的全称或简称，1：工信部备案网站的全称或简称，2：APP应用的全称或简称，3：公众号或小程序的全称或简称，4：电商平台店铺名的全称或简称，5：商标名的全称或简称。
 
         :return: The signature_source of this SignatureRequest.
         :rtype: int
@@ -216,7 +216,7 @@ class SignatureRequest:
     def signature_source(self, signature_source):
         """Sets the signature_source of this SignatureRequest.
 
-        签名来源。
+        签名来源。0：企事业单位的全称或简称，1：工信部备案网站的全称或简称，2：APP应用的全称或简称，3：公众号或小程序的全称或简称，4：电商平台店铺名的全称或简称，5：商标名的全称或简称。
 
         :param signature_source: The signature_source of this SignatureRequest.
         :type signature_source: int
@@ -227,7 +227,7 @@ class SignatureRequest:
     def is_involved_third(self):
         """Gets the is_involved_third of this SignatureRequest.
 
-        是否涉及第三方权益。若为yes，则还需要传入授权委托书。
+        是否涉及第三方权益。若为yes，则还需要传入授权委托书。yes：涉及，no：不涉及。
 
         :return: The is_involved_third of this SignatureRequest.
         :rtype: str
@@ -238,7 +238,7 @@ class SignatureRequest:
     def is_involved_third(self, is_involved_third):
         """Sets the is_involved_third of this SignatureRequest.
 
-        是否涉及第三方权益。若为yes，则还需要传入授权委托书。
+        是否涉及第三方权益。若为yes，则还需要传入授权委托书。yes：涉及，no：不涉及。
 
         :param is_involved_third: The is_involved_third of this SignatureRequest.
         :type is_involved_third: str

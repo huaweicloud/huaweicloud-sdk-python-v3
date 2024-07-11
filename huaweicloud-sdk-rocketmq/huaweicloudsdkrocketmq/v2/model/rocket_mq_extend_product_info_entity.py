@@ -51,27 +51,27 @@ class RocketMQExtendProductInfoEntity:
 
         The model defined in huaweicloud sdk
 
-        :param type: 实例类型
+        :param type: 实例类型。
         :type type: str
-        :param product_id: 产品ID
+        :param product_id: 产品ID。
         :type product_id: str
-        :param ecs_flavor_id: 该产品使用的ECS规格
+        :param ecs_flavor_id: 该产品使用的ECS规格。
         :type ecs_flavor_id: str
         :param billing_code: 账单计费类型。
         :type billing_code: str
-        :param arch_types: 支持的CPU架构类型
+        :param arch_types: 支持的CPU架构类型。
         :type arch_types: list[str]
-        :param charging_mode: 支持的计费模式类型
+        :param charging_mode: 支持的计费模式类型。
         :type charging_mode: list[str]
-        :param ios: 磁盘IO信息
+        :param ios: 磁盘IO信息。
         :type ios: list[:class:`huaweicloudsdkrocketmq.v2.RocketMQExtendProductIosEntity`]
         :param properties: 
         :type properties: :class:`huaweicloudsdkrocketmq.v2.RocketMQExtendProductPropertiesEntity`
-        :param available_zones: 有可用资源的可用区列表
+        :param available_zones: 有可用资源的可用区列表。
         :type available_zones: list[str]
-        :param unavailable_zones: 资源售罄的可用区列表
+        :param unavailable_zones: 资源售罄的可用区列表。
         :type unavailable_zones: list[str]
-        :param support_features: 支持的特性功能
+        :param support_features: 支持的特性功能。
         :type support_features: list[:class:`huaweicloudsdkrocketmq.v2.RocketMQProductSupportFeaturesEntity`]
         :param qingtian_incompatible: 是否为擎天实例。
         :type qingtian_incompatible: bool
@@ -122,7 +122,7 @@ class RocketMQExtendProductInfoEntity:
     def type(self):
         """Gets the type of this RocketMQExtendProductInfoEntity.
 
-        实例类型
+        实例类型。
 
         :return: The type of this RocketMQExtendProductInfoEntity.
         :rtype: str
@@ -133,7 +133,7 @@ class RocketMQExtendProductInfoEntity:
     def type(self, type):
         """Sets the type of this RocketMQExtendProductInfoEntity.
 
-        实例类型
+        实例类型。
 
         :param type: The type of this RocketMQExtendProductInfoEntity.
         :type type: str
@@ -144,7 +144,7 @@ class RocketMQExtendProductInfoEntity:
     def product_id(self):
         """Gets the product_id of this RocketMQExtendProductInfoEntity.
 
-        产品ID
+        产品ID。
 
         :return: The product_id of this RocketMQExtendProductInfoEntity.
         :rtype: str
@@ -155,7 +155,7 @@ class RocketMQExtendProductInfoEntity:
     def product_id(self, product_id):
         """Sets the product_id of this RocketMQExtendProductInfoEntity.
 
-        产品ID
+        产品ID。
 
         :param product_id: The product_id of this RocketMQExtendProductInfoEntity.
         :type product_id: str
@@ -166,7 +166,7 @@ class RocketMQExtendProductInfoEntity:
     def ecs_flavor_id(self):
         """Gets the ecs_flavor_id of this RocketMQExtendProductInfoEntity.
 
-        该产品使用的ECS规格
+        该产品使用的ECS规格。
 
         :return: The ecs_flavor_id of this RocketMQExtendProductInfoEntity.
         :rtype: str
@@ -177,7 +177,7 @@ class RocketMQExtendProductInfoEntity:
     def ecs_flavor_id(self, ecs_flavor_id):
         """Sets the ecs_flavor_id of this RocketMQExtendProductInfoEntity.
 
-        该产品使用的ECS规格
+        该产品使用的ECS规格。
 
         :param ecs_flavor_id: The ecs_flavor_id of this RocketMQExtendProductInfoEntity.
         :type ecs_flavor_id: str
@@ -210,7 +210,7 @@ class RocketMQExtendProductInfoEntity:
     def arch_types(self):
         """Gets the arch_types of this RocketMQExtendProductInfoEntity.
 
-        支持的CPU架构类型
+        支持的CPU架构类型。
 
         :return: The arch_types of this RocketMQExtendProductInfoEntity.
         :rtype: list[str]
@@ -221,7 +221,7 @@ class RocketMQExtendProductInfoEntity:
     def arch_types(self, arch_types):
         """Sets the arch_types of this RocketMQExtendProductInfoEntity.
 
-        支持的CPU架构类型
+        支持的CPU架构类型。
 
         :param arch_types: The arch_types of this RocketMQExtendProductInfoEntity.
         :type arch_types: list[str]
@@ -232,7 +232,7 @@ class RocketMQExtendProductInfoEntity:
     def charging_mode(self):
         """Gets the charging_mode of this RocketMQExtendProductInfoEntity.
 
-        支持的计费模式类型
+        支持的计费模式类型。
 
         :return: The charging_mode of this RocketMQExtendProductInfoEntity.
         :rtype: list[str]
@@ -243,7 +243,7 @@ class RocketMQExtendProductInfoEntity:
     def charging_mode(self, charging_mode):
         """Sets the charging_mode of this RocketMQExtendProductInfoEntity.
 
-        支持的计费模式类型
+        支持的计费模式类型。
 
         :param charging_mode: The charging_mode of this RocketMQExtendProductInfoEntity.
         :type charging_mode: list[str]
@@ -254,7 +254,7 @@ class RocketMQExtendProductInfoEntity:
     def ios(self):
         """Gets the ios of this RocketMQExtendProductInfoEntity.
 
-        磁盘IO信息
+        磁盘IO信息。
 
         :return: The ios of this RocketMQExtendProductInfoEntity.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.RocketMQExtendProductIosEntity`]
@@ -265,7 +265,7 @@ class RocketMQExtendProductInfoEntity:
     def ios(self, ios):
         """Sets the ios of this RocketMQExtendProductInfoEntity.
 
-        磁盘IO信息
+        磁盘IO信息。
 
         :param ios: The ios of this RocketMQExtendProductInfoEntity.
         :type ios: list[:class:`huaweicloudsdkrocketmq.v2.RocketMQExtendProductIosEntity`]
@@ -294,7 +294,7 @@ class RocketMQExtendProductInfoEntity:
     def available_zones(self):
         """Gets the available_zones of this RocketMQExtendProductInfoEntity.
 
-        有可用资源的可用区列表
+        有可用资源的可用区列表。
 
         :return: The available_zones of this RocketMQExtendProductInfoEntity.
         :rtype: list[str]
@@ -305,7 +305,7 @@ class RocketMQExtendProductInfoEntity:
     def available_zones(self, available_zones):
         """Sets the available_zones of this RocketMQExtendProductInfoEntity.
 
-        有可用资源的可用区列表
+        有可用资源的可用区列表。
 
         :param available_zones: The available_zones of this RocketMQExtendProductInfoEntity.
         :type available_zones: list[str]
@@ -316,7 +316,7 @@ class RocketMQExtendProductInfoEntity:
     def unavailable_zones(self):
         """Gets the unavailable_zones of this RocketMQExtendProductInfoEntity.
 
-        资源售罄的可用区列表
+        资源售罄的可用区列表。
 
         :return: The unavailable_zones of this RocketMQExtendProductInfoEntity.
         :rtype: list[str]
@@ -327,7 +327,7 @@ class RocketMQExtendProductInfoEntity:
     def unavailable_zones(self, unavailable_zones):
         """Sets the unavailable_zones of this RocketMQExtendProductInfoEntity.
 
-        资源售罄的可用区列表
+        资源售罄的可用区列表。
 
         :param unavailable_zones: The unavailable_zones of this RocketMQExtendProductInfoEntity.
         :type unavailable_zones: list[str]
@@ -338,7 +338,7 @@ class RocketMQExtendProductInfoEntity:
     def support_features(self):
         """Gets the support_features of this RocketMQExtendProductInfoEntity.
 
-        支持的特性功能
+        支持的特性功能。
 
         :return: The support_features of this RocketMQExtendProductInfoEntity.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.RocketMQProductSupportFeaturesEntity`]
@@ -349,7 +349,7 @@ class RocketMQExtendProductInfoEntity:
     def support_features(self, support_features):
         """Sets the support_features of this RocketMQExtendProductInfoEntity.
 
-        支持的特性功能
+        支持的特性功能。
 
         :param support_features: The support_features of this RocketMQExtendProductInfoEntity.
         :type support_features: list[:class:`huaweicloudsdkrocketmq.v2.RocketMQProductSupportFeaturesEntity`]

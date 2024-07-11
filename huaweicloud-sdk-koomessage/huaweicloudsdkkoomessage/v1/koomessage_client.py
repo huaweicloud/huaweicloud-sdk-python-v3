@@ -3131,7 +3131,7 @@ class KooMessageClient(Client):
     def _delete_aim_msg_signature_http_info(cls, request):
         http_info = {
             "method": "DELETE",
-            "resource_path": "/v1/aim/sms/signatures/{signature_id}",
+            "resource_path": "/v1/sms/signatures/{signature_id}",
             "request_type": request.__class__.__name__,
             "response_type": "DeleteAimMsgSignatureResponse"
             }

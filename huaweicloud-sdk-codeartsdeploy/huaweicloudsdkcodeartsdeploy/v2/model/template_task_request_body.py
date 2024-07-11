@@ -39,7 +39,7 @@ class TemplateTaskRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: 项目ID
+        :param project_id: 项目id
         :type project_id: str
         :param project_name: 项目名称
         :type project_name: str
@@ -76,7 +76,7 @@ class TemplateTaskRequestBody:
     def project_id(self):
         """Gets the project_id of this TemplateTaskRequestBody.
 
-        项目ID
+        项目id
 
         :return: The project_id of this TemplateTaskRequestBody.
         :rtype: str
@@ -87,7 +87,7 @@ class TemplateTaskRequestBody:
     def project_id(self, project_id):
         """Sets the project_id of this TemplateTaskRequestBody.
 
-        项目ID
+        项目id
 
         :param project_id: The project_id of this TemplateTaskRequestBody.
         :type project_id: str

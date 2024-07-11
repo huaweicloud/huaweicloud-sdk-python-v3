@@ -32,7 +32,7 @@ class DeleteHostFromEnvironmentResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param status: 响应状态
+        :param status: 请求成功失败状态
         :type status: str
         :param result: 环境id
         :type result: str
@@ -53,7 +53,7 @@ class DeleteHostFromEnvironmentResponse(SdkResponse):
     def status(self):
         """Gets the status of this DeleteHostFromEnvironmentResponse.
 
-        响应状态
+        请求成功失败状态
 
         :return: The status of this DeleteHostFromEnvironmentResponse.
         :rtype: str
@@ -64,7 +64,7 @@ class DeleteHostFromEnvironmentResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this DeleteHostFromEnvironmentResponse.
 
-        响应状态
+        请求成功失败状态
 
         :param status: The status of this DeleteHostFromEnvironmentResponse.
         :type status: str

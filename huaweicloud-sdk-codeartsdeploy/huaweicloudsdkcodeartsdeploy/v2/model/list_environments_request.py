@@ -43,7 +43,7 @@ class ListEnvironmentsRequest:
 
         :param application_id: 应用id
         :type application_id: str
-        :param project_id: 项目ID
+        :param project_id: 项目id
         :type project_id: str
         :param page_index: 分页页码， 表示从此页开始查询， page大于等于1
         :type page_index: int
@@ -107,7 +107,7 @@ class ListEnvironmentsRequest:
     def project_id(self):
         """Gets the project_id of this ListEnvironmentsRequest.
 
-        项目ID
+        项目id
 
         :return: The project_id of this ListEnvironmentsRequest.
         :rtype: str
@@ -118,7 +118,7 @@ class ListEnvironmentsRequest:
     def project_id(self, project_id):
         """Sets the project_id of this ListEnvironmentsRequest.
 
-        项目ID
+        项目id
 
         :param project_id: The project_id of this ListEnvironmentsRequest.
         :type project_id: str

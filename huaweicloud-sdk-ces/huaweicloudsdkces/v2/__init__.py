@@ -182,6 +182,7 @@ from huaweicloudsdkces.v2.model.resources_in_list_resp import ResourcesInListRes
 from huaweicloudsdkces.v2.model.resources_req import ResourcesReq
 from huaweicloudsdkces.v2.model.resources_req_v2 import ResourcesReqV2
 from huaweicloudsdkces.v2.model.smn_urn import SMNUrn
+from huaweicloudsdkces.v2.model.selected_unit import SelectedUnit
 from huaweicloudsdkces.v2.model.show_alarm_template_request import ShowAlarmTemplateRequest
 from huaweicloudsdkces.v2.model.show_alarm_template_response import ShowAlarmTemplateResponse
 from huaweicloudsdkces.v2.model.show_resource_group_request import ShowResourceGroupRequest

@@ -103,7 +103,7 @@ class TaskV2Info:
         :type owner: str
         :param steps: 部署步骤
         :type steps: dict(str, Step)
-        :param project_id: 项目ID
+        :param project_id: 项目id
         :type project_id: str
         :param project_name: 项目名称
         :type project_name: str
@@ -113,7 +113,7 @@ class TaskV2Info:
         :type create_time: str
         :param update_time: 修改时间
         :type update_time: str
-        :param role_id: 角色ID
+        :param role_id: 角色id
         :type role_id: int
         :param is_defaut_permission: 是否为默认角色
         :type is_defaut_permission: bool
@@ -121,9 +121,9 @@ class TaskV2Info:
         :type template_id: str
         :param nick_name: 应用创建者昵称
         :type nick_name: str
-        :param owner_id: 应用创建者用户ID
+        :param owner_id: 应用创建者用户id
         :type owner_id: str
-        :param tenant_id: 应用创建者租户ID
+        :param tenant_id: 应用创建者租户id
         :type tenant_id: str
         :param tenant_name: 应用创建者租户名
         :type tenant_name: str
@@ -394,7 +394,7 @@ class TaskV2Info:
     def project_id(self):
         """Gets the project_id of this TaskV2Info.
 
-        项目ID
+        项目id
 
         :return: The project_id of this TaskV2Info.
         :rtype: str
@@ -405,7 +405,7 @@ class TaskV2Info:
     def project_id(self, project_id):
         """Sets the project_id of this TaskV2Info.
 
-        项目ID
+        项目id
 
         :param project_id: The project_id of this TaskV2Info.
         :type project_id: str
@@ -504,7 +504,7 @@ class TaskV2Info:
     def role_id(self):
         """Gets the role_id of this TaskV2Info.
 
-        角色ID
+        角色id
 
         :return: The role_id of this TaskV2Info.
         :rtype: int
@@ -515,7 +515,7 @@ class TaskV2Info:
     def role_id(self, role_id):
         """Sets the role_id of this TaskV2Info.
 
-        角色ID
+        角色id
 
         :param role_id: The role_id of this TaskV2Info.
         :type role_id: int
@@ -592,7 +592,7 @@ class TaskV2Info:
     def owner_id(self):
         """Gets the owner_id of this TaskV2Info.
 
-        应用创建者用户ID
+        应用创建者用户id
 
         :return: The owner_id of this TaskV2Info.
         :rtype: str
@@ -603,7 +603,7 @@ class TaskV2Info:
     def owner_id(self, owner_id):
         """Sets the owner_id of this TaskV2Info.
 
-        应用创建者用户ID
+        应用创建者用户id
 
         :param owner_id: The owner_id of this TaskV2Info.
         :type owner_id: str
@@ -614,7 +614,7 @@ class TaskV2Info:
     def tenant_id(self):
         """Gets the tenant_id of this TaskV2Info.
 
-        应用创建者租户ID
+        应用创建者租户id
 
         :return: The tenant_id of this TaskV2Info.
         :rtype: str
@@ -625,7 +625,7 @@ class TaskV2Info:
     def tenant_id(self, tenant_id):
         """Sets the tenant_id of this TaskV2Info.
 
-        应用创建者租户ID
+        应用创建者租户id
 
         :param tenant_id: The tenant_id of this TaskV2Info.
         :type tenant_id: str

@@ -45,7 +45,7 @@ class ListHostClustersRequest:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: 项目ID
+        :param project_id: 项目id
         :type project_id: str
         :param name: 主机集群模糊查询信息
         :type name: str
@@ -100,7 +100,7 @@ class ListHostClustersRequest:
     def project_id(self):
         """Gets the project_id of this ListHostClustersRequest.
 
-        项目ID
+        项目id
 
         :return: The project_id of this ListHostClustersRequest.
         :rtype: str
@@ -111,7 +111,7 @@ class ListHostClustersRequest:
     def project_id(self, project_id):
         """Sets the project_id of this ListHostClustersRequest.
 
-        项目ID
+        项目id
 
         :param project_id: The project_id of this ListHostClustersRequest.
         :type project_id: str

@@ -54,7 +54,9 @@ class FlavorExtraSpec:
         'quotasub_network_interface_max_num': 'str',
         'ecsinstance_architecture': 'str',
         'network_interfacetraffic_mirroring_supported': 'str',
-        'securityenclave_supported': 'str'
+        'securityenclave_supported': 'str',
+        'infogpus': 'str',
+        'infoasic_accelerators': 'str'
     }
 
     attribute_map = {
@@ -95,10 +97,12 @@ class FlavorExtraSpec:
         'quotasub_network_interface_max_num': 'quota:sub_network_interface_max_num',
         'ecsinstance_architecture': 'ecs:instance_architecture',
         'network_interfacetraffic_mirroring_supported': 'network_interface:traffic_mirroring_supported',
-        'securityenclave_supported': 'security:enclave_supported'
+        'securityenclave_supported': 'security:enclave_supported',
+        'infogpus': 'info:gpus',
+        'infoasic_accelerators': 'info:asic_accelerators'
     }
 
-    def __init__(self, ecsperformancetype=None, hwnuma_nodes=None, resource_type=None, hpet_support=None, instance_vnictype=None, instance_vnicinstance_bandwidth=None, instance_vnicmax_count=None, quotalocal_disk=None, quotanvme_ssd=None, extra_speciopersistent_grant=None, ecsgeneration=None, ecsvirtualization_env_types=None, pci_passthroughenable_gpu=None, pci_passthroughgpu_specs=None, pci_passthroughalias=None, condoperationstatus=None, condoperationaz=None, quotamax_rate=None, quotamin_rate=None, quotamax_pps=None, condoperationcharge=None, condoperationchargestop=None, condspotoperationaz=None, condoperationroles=None, condspotoperationstatus=None, condnetwork=None, condstorage=None, condstoragetype=None, condcomputelive_resizable=None, condcompute=None, infogpuname=None, infocpuname=None, quotagpu=None, quotavif_max_num=None, quotasub_network_interface_max_num=None, ecsinstance_architecture=None, network_interfacetraffic_mirroring_supported=None, securityenclave_supported=None):
+    def __init__(self, ecsperformancetype=None, hwnuma_nodes=None, resource_type=None, hpet_support=None, instance_vnictype=None, instance_vnicinstance_bandwidth=None, instance_vnicmax_count=None, quotalocal_disk=None, quotanvme_ssd=None, extra_speciopersistent_grant=None, ecsgeneration=None, ecsvirtualization_env_types=None, pci_passthroughenable_gpu=None, pci_passthroughgpu_specs=None, pci_passthroughalias=None, condoperationstatus=None, condoperationaz=None, quotamax_rate=None, quotamin_rate=None, quotamax_pps=None, condoperationcharge=None, condoperationchargestop=None, condspotoperationaz=None, condoperationroles=None, condspotoperationstatus=None, condnetwork=None, condstorage=None, condstoragetype=None, condcomputelive_resizable=None, condcompute=None, infogpuname=None, infocpuname=None, quotagpu=None, quotavif_max_num=None, quotasub_network_interface_max_num=None, ecsinstance_architecture=None, network_interfacetraffic_mirroring_supported=None, securityenclave_supported=None, infogpus=None, infoasic_accelerators=None):
         """FlavorExtraSpec
 
         The model defined in huaweicloud sdk
@@ -179,6 +183,10 @@ class FlavorExtraSpec:
         :type network_interfacetraffic_mirroring_supported: str
         :param securityenclave_supported: 该规格是否支持QingTian Enclave。
         :type securityenclave_supported: str
+        :param infogpus: 该规格的GPU卡信息。  name：GPU名称 memory_mb：GPU显存大小 count：GPU显卡数量 alias_prefix：GPU显卡内部别名
+        :type infogpus: str
+        :param infoasic_accelerators: 该规格的加速器信息。  name：加速器名称 memory_mb：加速器显存大小 count：加速器显卡数量 alias_prefix：加速器显卡内部别名
+        :type infoasic_accelerators: str
         """
         
         
@@ -221,6 +229,8 @@ class FlavorExtraSpec:
         self._ecsinstance_architecture = None
         self._network_interfacetraffic_mirroring_supported = None
         self._securityenclave_supported = None
+        self._infogpus = None
+        self._infoasic_accelerators = None
         self.discriminator = None
 
         if ecsperformancetype is not None:
@@ -299,6 +309,10 @@ class FlavorExtraSpec:
             self.network_interfacetraffic_mirroring_supported = network_interfacetraffic_mirroring_supported
         if securityenclave_supported is not None:
             self.securityenclave_supported = securityenclave_supported
+        if infogpus is not None:
+            self.infogpus = infogpus
+        if infoasic_accelerators is not None:
+            self.infoasic_accelerators = infoasic_accelerators
 
     @property
     def ecsperformancetype(self):
@@ -1135,6 +1149,50 @@ class FlavorExtraSpec:
         :type securityenclave_supported: str
         """
         self._securityenclave_supported = securityenclave_supported
+
+    @property
+    def infogpus(self):
+        """Gets the infogpus of this FlavorExtraSpec.
+
+        该规格的GPU卡信息。  name：GPU名称 memory_mb：GPU显存大小 count：GPU显卡数量 alias_prefix：GPU显卡内部别名
+
+        :return: The infogpus of this FlavorExtraSpec.
+        :rtype: str
+        """
+        return self._infogpus
+
+    @infogpus.setter
+    def infogpus(self, infogpus):
+        """Sets the infogpus of this FlavorExtraSpec.
+
+        该规格的GPU卡信息。  name：GPU名称 memory_mb：GPU显存大小 count：GPU显卡数量 alias_prefix：GPU显卡内部别名
+
+        :param infogpus: The infogpus of this FlavorExtraSpec.
+        :type infogpus: str
+        """
+        self._infogpus = infogpus
+
+    @property
+    def infoasic_accelerators(self):
+        """Gets the infoasic_accelerators of this FlavorExtraSpec.
+
+        该规格的加速器信息。  name：加速器名称 memory_mb：加速器显存大小 count：加速器显卡数量 alias_prefix：加速器显卡内部别名
+
+        :return: The infoasic_accelerators of this FlavorExtraSpec.
+        :rtype: str
+        """
+        return self._infoasic_accelerators
+
+    @infoasic_accelerators.setter
+    def infoasic_accelerators(self, infoasic_accelerators):
+        """Sets the infoasic_accelerators of this FlavorExtraSpec.
+
+        该规格的加速器信息。  name：加速器名称 memory_mb：加速器显存大小 count：加速器显卡数量 alias_prefix：加速器显卡内部别名
+
+        :param infoasic_accelerators: The infoasic_accelerators of this FlavorExtraSpec.
+        :type infoasic_accelerators: str
+        """
+        self._infoasic_accelerators = infoasic_accelerators
 
     def to_dict(self):
         """Returns the model properties as a dict"""

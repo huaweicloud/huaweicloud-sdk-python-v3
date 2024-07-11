@@ -32,9 +32,9 @@ class CreateHostClusterResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: 主机集群ID
+        :param id: 主机集群id
         :type id: str
-        :param status: 请求状态
+        :param status: 请求成功失败状态
         :type status: str
         """
         
@@ -53,7 +53,7 @@ class CreateHostClusterResponse(SdkResponse):
     def id(self):
         """Gets the id of this CreateHostClusterResponse.
 
-        主机集群ID
+        主机集群id
 
         :return: The id of this CreateHostClusterResponse.
         :rtype: str
@@ -64,7 +64,7 @@ class CreateHostClusterResponse(SdkResponse):
     def id(self, id):
         """Sets the id of this CreateHostClusterResponse.
 
-        主机集群ID
+        主机集群id
 
         :param id: The id of this CreateHostClusterResponse.
         :type id: str
@@ -75,7 +75,7 @@ class CreateHostClusterResponse(SdkResponse):
     def status(self):
         """Gets the status of this CreateHostClusterResponse.
 
-        请求状态
+        请求成功失败状态
 
         :return: The status of this CreateHostClusterResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class CreateHostClusterResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this CreateHostClusterResponse.
 
-        请求状态
+        请求成功失败状态
 
         :param status: The status of this CreateHostClusterResponse.
         :type status: str

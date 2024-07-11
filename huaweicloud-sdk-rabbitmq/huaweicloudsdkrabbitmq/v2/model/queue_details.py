@@ -55,7 +55,7 @@ class QueueDetails:
         :type messages: int
         :param consumers: 连接的消费者数
         :type consumers: int
-        :param policy: 策略（AMQP版本不支持policy，不涉及此参数）
+        :param policy: 策略[（AMQP版本不支持policy，不涉及此参数）](tag:hws,hws_hk)
         :type policy: str
         :param arguments: 
         :type arguments: :class:`huaweicloudsdkrabbitmq.v2.QueueArguments`
@@ -226,7 +226,7 @@ class QueueDetails:
     def policy(self):
         """Gets the policy of this QueueDetails.
 
-        策略（AMQP版本不支持policy，不涉及此参数）
+        策略[（AMQP版本不支持policy，不涉及此参数）](tag:hws,hws_hk)
 
         :return: The policy of this QueueDetails.
         :rtype: str
@@ -237,7 +237,7 @@ class QueueDetails:
     def policy(self, policy):
         """Sets the policy of this QueueDetails.
 
-        策略（AMQP版本不支持policy，不涉及此参数）
+        策略[（AMQP版本不支持policy，不涉及此参数）](tag:hws,hws_hk)
 
         :param policy: The policy of this QueueDetails.
         :type policy: str

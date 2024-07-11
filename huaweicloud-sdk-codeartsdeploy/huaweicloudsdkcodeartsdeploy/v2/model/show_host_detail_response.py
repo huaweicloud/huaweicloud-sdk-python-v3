@@ -32,7 +32,7 @@ class ShowHostDetailResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param status: 请求状态
+        :param status: 请求成功失败状态
         :type status: str
         :param result: 
         :type result: :class:`huaweicloudsdkcodeartsdeploy.v2.HostInfoDetail`
@@ -53,7 +53,7 @@ class ShowHostDetailResponse(SdkResponse):
     def status(self):
         """Gets the status of this ShowHostDetailResponse.
 
-        请求状态
+        请求成功失败状态
 
         :return: The status of this ShowHostDetailResponse.
         :rtype: str
@@ -64,7 +64,7 @@ class ShowHostDetailResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this ShowHostDetailResponse.
 
-        请求状态
+        请求成功失败状态
 
         :param status: The status of this ShowHostDetailResponse.
         :type status: str

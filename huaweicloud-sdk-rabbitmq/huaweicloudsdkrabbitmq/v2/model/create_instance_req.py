@@ -149,8 +149,10 @@ class CreateInstanceReq:
         self.engine = engine
         self.engine_version = engine_version
         self.storage_space = storage_space
-        self.access_user = access_user
-        self.password = password
+        if access_user is not None:
+            self.access_user = access_user
+        if password is not None:
+            self.password = password
         self.vpc_id = vpc_id
         self.security_group_id = security_group_id
         self.subnet_id = subnet_id

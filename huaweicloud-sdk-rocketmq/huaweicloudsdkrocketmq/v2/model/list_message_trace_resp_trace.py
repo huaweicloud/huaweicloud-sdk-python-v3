@@ -79,7 +79,7 @@ class ListMessageTraceRespTrace:
         :type cost_time: float
         :param request_id: 请求ID。
         :type request_id: str
-        :param consume_status: 消费状态。0-消费成功, 1-消费超时, 2-消费发生异常, 3-消费返回NULL, 5-消费失败。
+        :param consume_status: 消费状态：  - 0-消费成功  - 1-消费超时  - 2-消费发生异常   - 3-消费返回NULL  - 5-消费失败
         :type consume_status: float
         :param topic: 主题名称。
         :type topic: str
@@ -310,7 +310,7 @@ class ListMessageTraceRespTrace:
     def consume_status(self):
         """Gets the consume_status of this ListMessageTraceRespTrace.
 
-        消费状态。0-消费成功, 1-消费超时, 2-消费发生异常, 3-消费返回NULL, 5-消费失败。
+        消费状态：  - 0-消费成功  - 1-消费超时  - 2-消费发生异常   - 3-消费返回NULL  - 5-消费失败
 
         :return: The consume_status of this ListMessageTraceRespTrace.
         :rtype: float
@@ -321,7 +321,7 @@ class ListMessageTraceRespTrace:
     def consume_status(self, consume_status):
         """Sets the consume_status of this ListMessageTraceRespTrace.
 
-        消费状态。0-消费成功, 1-消费超时, 2-消费发生异常, 3-消费返回NULL, 5-消费失败。
+        消费状态：  - 0-消费成功  - 1-消费超时  - 2-消费发生异常   - 3-消费返回NULL  - 5-消费失败
 
         :param consume_status: The consume_status of this ListMessageTraceRespTrace.
         :type consume_status: float

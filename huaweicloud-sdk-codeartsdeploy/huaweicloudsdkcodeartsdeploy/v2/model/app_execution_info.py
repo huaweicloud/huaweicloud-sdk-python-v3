@@ -89,7 +89,7 @@ class AppExecutionInfo:
         :type duration: str
         :param is_disable: 当前应用是否被禁用
         :type is_disable: bool
-        :param project_id: 项目ID
+        :param project_id: 项目id
         :type project_id: str
         :param project_name: 项目名称
         :type project_name: str
@@ -113,9 +113,9 @@ class AppExecutionInfo:
         :type can_disable: bool
         :param deploy_system: 部署类型模式，包括deployTemplate、ansible、shell
         :type deploy_system: str
-        :param create_user_id: 应用创建者用户ID
+        :param create_user_id: 应用创建者用户id
         :type create_user_id: str
-        :param create_tenant_id: 应用创建者租户ID
+        :param create_tenant_id: 应用创建者租户id
         :type create_tenant_id: str
         :param create_time: 创建时间
         :type create_time: str
@@ -315,7 +315,7 @@ class AppExecutionInfo:
     def project_id(self):
         """Gets the project_id of this AppExecutionInfo.
 
-        项目ID
+        项目id
 
         :return: The project_id of this AppExecutionInfo.
         :rtype: str
@@ -326,7 +326,7 @@ class AppExecutionInfo:
     def project_id(self, project_id):
         """Sets the project_id of this AppExecutionInfo.
 
-        项目ID
+        项目id
 
         :param project_id: The project_id of this AppExecutionInfo.
         :type project_id: str
@@ -579,7 +579,7 @@ class AppExecutionInfo:
     def create_user_id(self):
         """Gets the create_user_id of this AppExecutionInfo.
 
-        应用创建者用户ID
+        应用创建者用户id
 
         :return: The create_user_id of this AppExecutionInfo.
         :rtype: str
@@ -590,7 +590,7 @@ class AppExecutionInfo:
     def create_user_id(self, create_user_id):
         """Sets the create_user_id of this AppExecutionInfo.
 
-        应用创建者用户ID
+        应用创建者用户id
 
         :param create_user_id: The create_user_id of this AppExecutionInfo.
         :type create_user_id: str
@@ -601,7 +601,7 @@ class AppExecutionInfo:
     def create_tenant_id(self):
         """Gets the create_tenant_id of this AppExecutionInfo.
 
-        应用创建者租户ID
+        应用创建者租户id
 
         :return: The create_tenant_id of this AppExecutionInfo.
         :rtype: str
@@ -612,7 +612,7 @@ class AppExecutionInfo:
     def create_tenant_id(self, create_tenant_id):
         """Sets the create_tenant_id of this AppExecutionInfo.
 
-        应用创建者租户ID
+        应用创建者租户id
 
         :param create_tenant_id: The create_tenant_id of this AppExecutionInfo.
         :type create_tenant_id: str

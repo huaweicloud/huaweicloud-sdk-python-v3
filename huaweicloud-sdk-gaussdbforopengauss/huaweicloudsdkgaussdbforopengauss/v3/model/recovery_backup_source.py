@@ -20,21 +20,17 @@ class RecoveryBackupSource:
         'instance_id': 'str',
         'type': 'str',
         'backup_id': 'str',
-        'restore_time': 'str',
-        'table_list': 'list[RestoreTableListDetail]',
-        'schema_type': 'str'
+        'restore_time': 'str'
     }
 
     attribute_map = {
         'instance_id': 'instance_id',
         'type': 'type',
         'backup_id': 'backup_id',
-        'restore_time': 'restore_time',
-        'table_list': 'table_list',
-        'schema_type': 'schema_type'
+        'restore_time': 'restore_time'
     }
 
-    def __init__(self, instance_id=None, type=None, backup_id=None, restore_time=None, table_list=None, schema_type=None):
+    def __init__(self, instance_id=None, type=None, backup_id=None, restore_time=None):
         """RecoveryBackupSource
 
         The model defined in huaweicloud sdk
@@ -47,10 +43,6 @@ class RecoveryBackupSource:
         :type backup_id: str
         :param restore_time: UTC时间，时间戳
         :type restore_time: str
-        :param table_list: 表基础信息。
-        :type table_list: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.RestoreTableListDetail`]
-        :param schema_type: 备份级别取值, 默认值：INSTANCE
-        :type schema_type: str
         """
         
         
@@ -59,19 +51,14 @@ class RecoveryBackupSource:
         self._type = None
         self._backup_id = None
         self._restore_time = None
-        self._table_list = None
-        self._schema_type = None
         self.discriminator = None
 
         self.instance_id = instance_id
-        if type is not None:
-            self.type = type
-        self.backup_id = backup_id
-        self.restore_time = restore_time
-        if table_list is not None:
-            self.table_list = table_list
-        if schema_type is not None:
-            self.schema_type = schema_type
+        self.type = type
+        if backup_id is not None:
+            self.backup_id = backup_id
+        if restore_time is not None:
+            self.restore_time = restore_time
 
     @property
     def instance_id(self):
@@ -160,50 +147,6 @@ class RecoveryBackupSource:
         :type restore_time: str
         """
         self._restore_time = restore_time
-
-    @property
-    def table_list(self):
-        """Gets the table_list of this RecoveryBackupSource.
-
-        表基础信息。
-
-        :return: The table_list of this RecoveryBackupSource.
-        :rtype: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.RestoreTableListDetail`]
-        """
-        return self._table_list
-
-    @table_list.setter
-    def table_list(self, table_list):
-        """Sets the table_list of this RecoveryBackupSource.
-
-        表基础信息。
-
-        :param table_list: The table_list of this RecoveryBackupSource.
-        :type table_list: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.RestoreTableListDetail`]
-        """
-        self._table_list = table_list
-
-    @property
-    def schema_type(self):
-        """Gets the schema_type of this RecoveryBackupSource.
-
-        备份级别取值, 默认值：INSTANCE
-
-        :return: The schema_type of this RecoveryBackupSource.
-        :rtype: str
-        """
-        return self._schema_type
-
-    @schema_type.setter
-    def schema_type(self, schema_type):
-        """Sets the schema_type of this RecoveryBackupSource.
-
-        备份级别取值, 默认值：INSTANCE
-
-        :param schema_type: The schema_type of this RecoveryBackupSource.
-        :type schema_type: str
-        """
-        self._schema_type = schema_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

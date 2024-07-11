@@ -3390,6 +3390,75 @@ class IoTEdgeAsyncClient(Client):
 
         return http_info
 
+    def invoke_module_msg_async(self, request):
+        """代理边缘模块消息
+
+        iotedge通过该接口透明代理用户到模块的请求
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for InvokeModuleMsg
+        :type request: :class:`huaweicloudsdkiotedge.v2.InvokeModuleMsgRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.InvokeModuleMsgResponse`
+        """
+        http_info = self._invoke_module_msg_http_info(request)
+        return self._call_api(**http_info)
+
+    def invoke_module_msg_async_invoker(self, request):
+        http_info = self._invoke_module_msg_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _invoke_module_msg_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/modules/{module_id}/proxy",
+            "request_type": request.__class__.__name__,
+            "response_type": "InvokeModuleMsgResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'edge_node_id' in local_var_params:
+            path_params['edge_node_id'] = local_var_params['edge_node_id']
+        if 'module_id' in local_var_params:
+            path_params['module_id'] = local_var_params['module_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_module_async(self, request):
         """查询边缘模块
 

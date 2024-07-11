@@ -35,13 +35,13 @@ class RocketMQExtendProductIosEntity:
 
         The model defined in huaweicloud sdk
 
-        :param io_spec: 存储IO规格
+        :param io_spec: 存储IO规格。
         :type io_spec: str
-        :param available_zones: 有可用资源的可用区列表
+        :param available_zones: 有可用资源的可用区列表。
         :type available_zones: list[str]
-        :param type: IO类型
+        :param type: IO类型。
         :type type: str
-        :param unavailable_zones: 资源售罄的可用区列表
+        :param unavailable_zones: 资源售罄的可用区列表。
         :type unavailable_zones: list[str]
         """
         
@@ -66,7 +66,7 @@ class RocketMQExtendProductIosEntity:
     def io_spec(self):
         """Gets the io_spec of this RocketMQExtendProductIosEntity.
 
-        存储IO规格
+        存储IO规格。
 
         :return: The io_spec of this RocketMQExtendProductIosEntity.
         :rtype: str
@@ -77,7 +77,7 @@ class RocketMQExtendProductIosEntity:
     def io_spec(self, io_spec):
         """Sets the io_spec of this RocketMQExtendProductIosEntity.
 
-        存储IO规格
+        存储IO规格。
 
         :param io_spec: The io_spec of this RocketMQExtendProductIosEntity.
         :type io_spec: str
@@ -88,7 +88,7 @@ class RocketMQExtendProductIosEntity:
     def available_zones(self):
         """Gets the available_zones of this RocketMQExtendProductIosEntity.
 
-        有可用资源的可用区列表
+        有可用资源的可用区列表。
 
         :return: The available_zones of this RocketMQExtendProductIosEntity.
         :rtype: list[str]
@@ -99,7 +99,7 @@ class RocketMQExtendProductIosEntity:
     def available_zones(self, available_zones):
         """Sets the available_zones of this RocketMQExtendProductIosEntity.
 
-        有可用资源的可用区列表
+        有可用资源的可用区列表。
 
         :param available_zones: The available_zones of this RocketMQExtendProductIosEntity.
         :type available_zones: list[str]
@@ -110,7 +110,7 @@ class RocketMQExtendProductIosEntity:
     def type(self):
         """Gets the type of this RocketMQExtendProductIosEntity.
 
-        IO类型
+        IO类型。
 
         :return: The type of this RocketMQExtendProductIosEntity.
         :rtype: str
@@ -121,7 +121,7 @@ class RocketMQExtendProductIosEntity:
     def type(self, type):
         """Sets the type of this RocketMQExtendProductIosEntity.
 
-        IO类型
+        IO类型。
 
         :param type: The type of this RocketMQExtendProductIosEntity.
         :type type: str
@@ -132,7 +132,7 @@ class RocketMQExtendProductIosEntity:
     def unavailable_zones(self):
         """Gets the unavailable_zones of this RocketMQExtendProductIosEntity.
 
-        资源售罄的可用区列表
+        资源售罄的可用区列表。
 
         :return: The unavailable_zones of this RocketMQExtendProductIosEntity.
         :rtype: list[str]
@@ -143,7 +143,7 @@ class RocketMQExtendProductIosEntity:
     def unavailable_zones(self, unavailable_zones):
         """Sets the unavailable_zones of this RocketMQExtendProductIosEntity.
 
-        资源售罄的可用区列表
+        资源售罄的可用区列表。
 
         :param unavailable_zones: The unavailable_zones of this RocketMQExtendProductIosEntity.
         :type unavailable_zones: list[str]

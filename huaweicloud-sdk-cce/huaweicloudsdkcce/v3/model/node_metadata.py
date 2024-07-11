@@ -22,7 +22,8 @@ class NodeMetadata:
         'labels': 'dict(str, str)',
         'annotations': 'dict(str, str)',
         'creation_timestamp': 'str',
-        'update_timestamp': 'str'
+        'update_timestamp': 'str',
+        'owner_reference': 'NodeOwnerReference'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class NodeMetadata:
         'labels': 'labels',
         'annotations': 'annotations',
         'creation_timestamp': 'creationTimestamp',
-        'update_timestamp': 'updateTimestamp'
+        'update_timestamp': 'updateTimestamp',
+        'owner_reference': 'ownerReference'
     }
 
-    def __init__(self, name=None, uid=None, labels=None, annotations=None, creation_timestamp=None, update_timestamp=None):
+    def __init__(self, name=None, uid=None, labels=None, annotations=None, creation_timestamp=None, update_timestamp=None, owner_reference=None):
         """NodeMetadata
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class NodeMetadata:
         :type creation_timestamp: str
         :param update_timestamp: 更新时间，创建成功后自动生成，填写无效
         :type update_timestamp: str
+        :param owner_reference: 
+        :type owner_reference: :class:`huaweicloudsdkcce.v3.NodeOwnerReference`
         """
         
         
@@ -61,6 +65,7 @@ class NodeMetadata:
         self._annotations = None
         self._creation_timestamp = None
         self._update_timestamp = None
+        self._owner_reference = None
         self.discriminator = None
 
         if name is not None:
@@ -75,6 +80,8 @@ class NodeMetadata:
             self.creation_timestamp = creation_timestamp
         if update_timestamp is not None:
             self.update_timestamp = update_timestamp
+        if owner_reference is not None:
+            self.owner_reference = owner_reference
 
     @property
     def name(self):
@@ -207,6 +214,24 @@ class NodeMetadata:
         :type update_timestamp: str
         """
         self._update_timestamp = update_timestamp
+
+    @property
+    def owner_reference(self):
+        """Gets the owner_reference of this NodeMetadata.
+
+        :return: The owner_reference of this NodeMetadata.
+        :rtype: :class:`huaweicloudsdkcce.v3.NodeOwnerReference`
+        """
+        return self._owner_reference
+
+    @owner_reference.setter
+    def owner_reference(self, owner_reference):
+        """Sets the owner_reference of this NodeMetadata.
+
+        :param owner_reference: The owner_reference of this NodeMetadata.
+        :type owner_reference: :class:`huaweicloudsdkcce.v3.NodeOwnerReference`
+        """
+        self._owner_reference = owner_reference
 
     def to_dict(self):
         """Returns the model properties as a dict"""

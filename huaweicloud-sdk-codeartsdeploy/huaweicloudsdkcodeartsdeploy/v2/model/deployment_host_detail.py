@@ -95,13 +95,13 @@ class DeploymentHostDetail:
         :type authorization: :class:`huaweicloudsdkcodeartsdeploy.v2.DeploymentHostAuthorizationBody`
         :param install_icagent: 免费启用应用运维服务（AOM），提供指标监控、日志查询、告警功能（自动安装数据采集器 ICAgent，仅支持华为云linux主机）
         :type install_icagent: bool
-        :param host_id: 主机ID
+        :param host_id: 主机id
         :type host_id: str
         :param proxy_host: 
         :type proxy_host: :class:`huaweicloudsdkcodeartsdeploy.v2.DeploymentHostDetail`
         :param group_name: 主机集群名
         :type group_name: str
-        :param project_id: 项目ID
+        :param project_id: 项目id
         :type project_id: str
         :param project_name: 项目名称
         :type project_name: str
@@ -400,7 +400,7 @@ class DeploymentHostDetail:
     def host_id(self):
         """Gets the host_id of this DeploymentHostDetail.
 
-        主机ID
+        主机id
 
         :return: The host_id of this DeploymentHostDetail.
         :rtype: str
@@ -411,7 +411,7 @@ class DeploymentHostDetail:
     def host_id(self, host_id):
         """Sets the host_id of this DeploymentHostDetail.
 
-        主机ID
+        主机id
 
         :param host_id: The host_id of this DeploymentHostDetail.
         :type host_id: str
@@ -462,7 +462,7 @@ class DeploymentHostDetail:
     def project_id(self):
         """Gets the project_id of this DeploymentHostDetail.
 
-        项目ID
+        项目id
 
         :return: The project_id of this DeploymentHostDetail.
         :rtype: str
@@ -473,7 +473,7 @@ class DeploymentHostDetail:
     def project_id(self, project_id):
         """Sets the project_id of this DeploymentHostDetail.
 
-        项目ID
+        项目id
 
         :param project_id: The project_id of this DeploymentHostDetail.
         :type project_id: str

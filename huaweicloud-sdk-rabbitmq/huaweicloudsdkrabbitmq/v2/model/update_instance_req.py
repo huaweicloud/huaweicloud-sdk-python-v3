@@ -61,7 +61,7 @@ class UpdateInstanceReq:
         :type publicip_id: str
         :param enterprise_project_id: 企业项目。
         :type enterprise_project_id: str
-        :param enable_acl: ACL访问控制（仅AMQP版本支持此参数）。
+        :param enable_acl: ACL访问控制[（仅AMQP版本支持此参数）](tag:hws,hws_hk)。
         :type enable_acl: bool
         """
         
@@ -277,7 +277,7 @@ class UpdateInstanceReq:
     def enable_acl(self):
         """Gets the enable_acl of this UpdateInstanceReq.
 
-        ACL访问控制（仅AMQP版本支持此参数）。
+        ACL访问控制[（仅AMQP版本支持此参数）](tag:hws,hws_hk)。
 
         :return: The enable_acl of this UpdateInstanceReq.
         :rtype: bool
@@ -288,7 +288,7 @@ class UpdateInstanceReq:
     def enable_acl(self, enable_acl):
         """Sets the enable_acl of this UpdateInstanceReq.
 
-        ACL访问控制（仅AMQP版本支持此参数）。
+        ACL访问控制[（仅AMQP版本支持此参数）](tag:hws,hws_hk)。
 
         :param enable_acl: The enable_acl of this UpdateInstanceReq.
         :type enable_acl: bool

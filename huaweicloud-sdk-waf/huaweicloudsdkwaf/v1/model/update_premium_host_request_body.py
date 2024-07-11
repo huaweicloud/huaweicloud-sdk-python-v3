@@ -20,6 +20,7 @@ class UpdatePremiumHostRequestBody:
         'proxy': 'bool',
         'certificateid': 'str',
         'certificatename': 'str',
+        'server': 'list[PremiumWafServer]',
         'tls': 'str',
         'cipher': 'str',
         'mode': 'str',
@@ -40,6 +41,7 @@ class UpdatePremiumHostRequestBody:
         'proxy': 'proxy',
         'certificateid': 'certificateid',
         'certificatename': 'certificatename',
+        'server': 'server',
         'tls': 'tls',
         'cipher': 'cipher',
         'mode': 'mode',
@@ -56,7 +58,7 @@ class UpdatePremiumHostRequestBody:
         'forward_header_map': 'forward_header_map'
     }
 
-    def __init__(self, proxy=None, certificateid=None, certificatename=None, tls=None, cipher=None, mode=None, locked=None, protect_status=None, access_status=None, timestamp=None, pool_ids=None, block_page=None, traffic_mark=None, circuit_breaker=None, timeout_config=None, flag=None, forward_header_map=None):
+    def __init__(self, proxy=None, certificateid=None, certificatename=None, server=None, tls=None, cipher=None, mode=None, locked=None, protect_status=None, access_status=None, timestamp=None, pool_ids=None, block_page=None, traffic_mark=None, circuit_breaker=None, timeout_config=None, flag=None, forward_header_map=None):
         """UpdatePremiumHostRequestBody
 
         The model defined in huaweicloud sdk
@@ -67,6 +69,8 @@ class UpdatePremiumHostRequestBody:
         :type certificateid: str
         :param certificatename: 证书名   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
         :type certificatename: str
+        :param server: 防护域名的源站服务器配置信息
+        :type server: list[:class:`huaweicloudsdkwaf.v1.PremiumWafServer`]
         :param tls: 配置的最低TLS版本（TLS v1.0/TLS v1.1/TLS v1.2）,默认为TLS v1.0版本，对于低于最低TLS版本的请求，将无法正常访问网站
         :type tls: str
         :param cipher: 加密套件（cipher_1，cipher_2，cipher_3，cipher_4，cipher_default）：  - cipher_1： 加密算法为ECDHE-ECDSA-AES256-GCM-SHA384:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!DES:!MD5:!PSK:!RC4:!kRSA:!SRP:!3DES:!DSS:!EXP:!CAMELLIA:@STRENGTH   - cipher_2：加密算法为EECDH+AESGCM:EDH+AESGCM   - cipher_3：加密算法为ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH   - cipher_4：加密算法为ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!EDH    cipher_5：加密算法为AES128-SHA:AES256-SHA:AES128-SHA256:AES256-SHA256:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!EXPORT:!DES:!MD5:!PSK:!RC4:!DHE:@STRENGTH    cipher_6：加密算法为ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256   - cipher_default： 加密算法为ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH:!AESGCM
@@ -102,6 +106,7 @@ class UpdatePremiumHostRequestBody:
         self._proxy = None
         self._certificateid = None
         self._certificatename = None
+        self._server = None
         self._tls = None
         self._cipher = None
         self._mode = None
@@ -124,6 +129,8 @@ class UpdatePremiumHostRequestBody:
             self.certificateid = certificateid
         if certificatename is not None:
             self.certificatename = certificatename
+        if server is not None:
+            self.server = server
         if tls is not None:
             self.tls = tls
         if cipher is not None:
@@ -218,6 +225,28 @@ class UpdatePremiumHostRequestBody:
         :type certificatename: str
         """
         self._certificatename = certificatename
+
+    @property
+    def server(self):
+        """Gets the server of this UpdatePremiumHostRequestBody.
+
+        防护域名的源站服务器配置信息
+
+        :return: The server of this UpdatePremiumHostRequestBody.
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.PremiumWafServer`]
+        """
+        return self._server
+
+    @server.setter
+    def server(self, server):
+        """Sets the server of this UpdatePremiumHostRequestBody.
+
+        防护域名的源站服务器配置信息
+
+        :param server: The server of this UpdatePremiumHostRequestBody.
+        :type server: list[:class:`huaweicloudsdkwaf.v1.PremiumWafServer`]
+        """
+        self._server = server
 
     @property
     def tls(self):

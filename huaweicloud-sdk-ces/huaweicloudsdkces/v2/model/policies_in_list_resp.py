@@ -28,7 +28,8 @@ class PoliciesInListResp:
         'count': 'int',
         'type': 'str',
         'suppress_duration': 'SuppressDuration',
-        'alarm_level': 'int'
+        'alarm_level': 'int',
+        'selected_unit': 'str'
     }
 
     attribute_map = {
@@ -43,10 +44,11 @@ class PoliciesInListResp:
         'count': 'count',
         'type': 'type',
         'suppress_duration': 'suppress_duration',
-        'alarm_level': 'alarm_level'
+        'alarm_level': 'alarm_level',
+        'selected_unit': 'selected_unit'
     }
 
-    def __init__(self, alarm_policy_id=None, metric_name=None, extra_info=None, period=None, filter=None, comparison_operator=None, value=None, unit=None, count=None, type=None, suppress_duration=None, alarm_level=None):
+    def __init__(self, alarm_policy_id=None, metric_name=None, extra_info=None, period=None, filter=None, comparison_operator=None, value=None, unit=None, count=None, type=None, suppress_duration=None, alarm_level=None, selected_unit=None):
         """PoliciesInListResp
 
         The model defined in huaweicloud sdk
@@ -75,6 +77,8 @@ class PoliciesInListResp:
         :type suppress_duration: :class:`huaweicloudsdkces.v2.SuppressDuration`
         :param alarm_level: 告警级别，1为紧急，2为重要，3为次要，4为提示
         :type alarm_level: int
+        :param selected_unit: 用户在页面中选择的指标单位， 用于后续指标数据回显和计算
+        :type selected_unit: str
         """
         
         
@@ -91,6 +95,7 @@ class PoliciesInListResp:
         self._type = None
         self._suppress_duration = None
         self._alarm_level = None
+        self._selected_unit = None
         self.discriminator = None
 
         self.alarm_policy_id = alarm_policy_id
@@ -110,6 +115,8 @@ class PoliciesInListResp:
             self.suppress_duration = suppress_duration
         if alarm_level is not None:
             self.alarm_level = alarm_level
+        if selected_unit is not None:
+            self.selected_unit = selected_unit
 
     @property
     def alarm_policy_id(self):
@@ -362,6 +369,28 @@ class PoliciesInListResp:
         :type alarm_level: int
         """
         self._alarm_level = alarm_level
+
+    @property
+    def selected_unit(self):
+        """Gets the selected_unit of this PoliciesInListResp.
+
+        用户在页面中选择的指标单位， 用于后续指标数据回显和计算
+
+        :return: The selected_unit of this PoliciesInListResp.
+        :rtype: str
+        """
+        return self._selected_unit
+
+    @selected_unit.setter
+    def selected_unit(self, selected_unit):
+        """Sets the selected_unit of this PoliciesInListResp.
+
+        用户在页面中选择的指标单位， 用于后续指标数据回显和计算
+
+        :param selected_unit: The selected_unit of this PoliciesInListResp.
+        :type selected_unit: str
+        """
+        self._selected_unit = selected_unit
 
     def to_dict(self):
         """Returns the model properties as a dict"""

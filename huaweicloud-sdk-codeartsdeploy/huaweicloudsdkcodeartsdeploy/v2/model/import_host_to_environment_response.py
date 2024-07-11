@@ -32,9 +32,9 @@ class ImportHostToEnvironmentResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param status: 响应状态
+        :param status: 请求成功失败状态
         :type status: str
-        :param result: 被导入的主机ids
+        :param result: 被导入的主机id列表
         :type result: list[str]
         """
         
@@ -53,7 +53,7 @@ class ImportHostToEnvironmentResponse(SdkResponse):
     def status(self):
         """Gets the status of this ImportHostToEnvironmentResponse.
 
-        响应状态
+        请求成功失败状态
 
         :return: The status of this ImportHostToEnvironmentResponse.
         :rtype: str
@@ -64,7 +64,7 @@ class ImportHostToEnvironmentResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this ImportHostToEnvironmentResponse.
 
-        响应状态
+        请求成功失败状态
 
         :param status: The status of this ImportHostToEnvironmentResponse.
         :type status: str
@@ -75,7 +75,7 @@ class ImportHostToEnvironmentResponse(SdkResponse):
     def result(self):
         """Gets the result of this ImportHostToEnvironmentResponse.
 
-        被导入的主机ids
+        被导入的主机id列表
 
         :return: The result of this ImportHostToEnvironmentResponse.
         :rtype: list[str]
@@ -86,7 +86,7 @@ class ImportHostToEnvironmentResponse(SdkResponse):
     def result(self, result):
         """Sets the result of this ImportHostToEnvironmentResponse.
 
-        被导入的主机ids
+        被导入的主机id列表
 
         :param result: The result of this ImportHostToEnvironmentResponse.
         :type result: list[str]

@@ -39,7 +39,7 @@ class CreateRocketMqMigrationTaskReq:
 
         The model defined in huaweicloud sdk
 
-        :param topic_config_table: RocketMQ topic 元数据，键为topic名，值为topic配置，迁移任务类型为自建RocketMQ上云(rocketmq)时必填。
+        :param topic_config_table: RocketMQ Topic 元数据，键为Topic名，值为topic配置，迁移任务类型为自建RocketMQ上云(rocketmq)时必填。
         :type topic_config_table: dict(str, MigrationRocketMqTopicConfig)
         :param subscription_group_table: RocketMQ消费组元数据，键为消费组名，值为消费组配置，迁移任务类型为自建RocketMQ上云(rocketmq)时必填。
         :type subscription_group_table: dict(str, MigrationRocketMqSubscriptionGroup)
@@ -80,7 +80,7 @@ class CreateRocketMqMigrationTaskReq:
     def topic_config_table(self):
         """Gets the topic_config_table of this CreateRocketMqMigrationTaskReq.
 
-        RocketMQ topic 元数据，键为topic名，值为topic配置，迁移任务类型为自建RocketMQ上云(rocketmq)时必填。
+        RocketMQ Topic 元数据，键为Topic名，值为topic配置，迁移任务类型为自建RocketMQ上云(rocketmq)时必填。
 
         :return: The topic_config_table of this CreateRocketMqMigrationTaskReq.
         :rtype: dict(str, MigrationRocketMqTopicConfig)
@@ -91,7 +91,7 @@ class CreateRocketMqMigrationTaskReq:
     def topic_config_table(self, topic_config_table):
         """Sets the topic_config_table of this CreateRocketMqMigrationTaskReq.
 
-        RocketMQ topic 元数据，键为topic名，值为topic配置，迁移任务类型为自建RocketMQ上云(rocketmq)时必填。
+        RocketMQ Topic 元数据，键为Topic名，值为topic配置，迁移任务类型为自建RocketMQ上云(rocketmq)时必填。
 
         :param topic_config_table: The topic_config_table of this CreateRocketMqMigrationTaskReq.
         :type topic_config_table: dict(str, MigrationRocketMqTopicConfig)

@@ -51,7 +51,7 @@ class CreateOrUpdateConsumerGroup:
         :type retry_max_time: int
         :param enabled: 是否可以消费。
         :type enabled: bool
-        :param consume_orderly: 是否按序消费（仅RocketMQ实例5.x版本需要填写此参数）。
+        :param consume_orderly: 是否按顺序消费（仅RocketMQ实例5.x版本需要填写此参数）。
         :type consume_orderly: bool
         :param group_desc: 消费组描述，长度0~200个字符。
         :type group_desc: str
@@ -197,7 +197,7 @@ class CreateOrUpdateConsumerGroup:
     def consume_orderly(self):
         """Gets the consume_orderly of this CreateOrUpdateConsumerGroup.
 
-        是否按序消费（仅RocketMQ实例5.x版本需要填写此参数）。
+        是否按顺序消费（仅RocketMQ实例5.x版本需要填写此参数）。
 
         :return: The consume_orderly of this CreateOrUpdateConsumerGroup.
         :rtype: bool
@@ -208,7 +208,7 @@ class CreateOrUpdateConsumerGroup:
     def consume_orderly(self, consume_orderly):
         """Sets the consume_orderly of this CreateOrUpdateConsumerGroup.
 
-        是否按序消费（仅RocketMQ实例5.x版本需要填写此参数）。
+        是否按顺序消费（仅RocketMQ实例5.x版本需要填写此参数）。
 
         :param consume_orderly: The consume_orderly of this CreateOrUpdateConsumerGroup.
         :type consume_orderly: bool

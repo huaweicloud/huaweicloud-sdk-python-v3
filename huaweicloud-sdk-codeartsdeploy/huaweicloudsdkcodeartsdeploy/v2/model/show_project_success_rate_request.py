@@ -33,7 +33,7 @@ class ShowProjectSuccessRateRequest:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: 项目ID
+        :param project_id: 项目id
         :type project_id: str
         :param start_date: 部署应用开始时间范围的左边界（包含），格式yyyy-MM-dd
         :type start_date: str
@@ -56,7 +56,7 @@ class ShowProjectSuccessRateRequest:
     def project_id(self):
         """Gets the project_id of this ShowProjectSuccessRateRequest.
 
-        项目ID
+        项目id
 
         :return: The project_id of this ShowProjectSuccessRateRequest.
         :rtype: str
@@ -67,7 +67,7 @@ class ShowProjectSuccessRateRequest:
     def project_id(self, project_id):
         """Sets the project_id of this ShowProjectSuccessRateRequest.
 
-        项目ID
+        项目id
 
         :param project_id: The project_id of this ShowProjectSuccessRateRequest.
         :type project_id: str

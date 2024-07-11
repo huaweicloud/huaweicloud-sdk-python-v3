@@ -39,7 +39,7 @@ class Topic:
 
         The model defined in huaweicloud sdk
 
-        :param name: topic名称。
+        :param name: Topic名称。
         :type name: str
         :param total_read_queue_num: 总读队列个数。
         :type total_read_queue_num: float
@@ -80,7 +80,7 @@ class Topic:
     def name(self):
         """Gets the name of this Topic.
 
-        topic名称。
+        Topic名称。
 
         :return: The name of this Topic.
         :rtype: str
@@ -91,7 +91,7 @@ class Topic:
     def name(self, name):
         """Sets the name of this Topic.
 
-        topic名称。
+        Topic名称。
 
         :param name: The name of this Topic.
         :type name: str

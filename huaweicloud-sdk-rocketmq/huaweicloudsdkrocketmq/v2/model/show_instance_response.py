@@ -154,7 +154,7 @@ class ShowInstanceResponse(SdkResponse):
         :type engine_version: str
         :param instance_id: 实例ID。
         :type instance_id: str
-        :param charging_mode: [付费模式，1表示按需计费。](tag:hws_eu,g42,hk_g42,tm,sbc,hk_sbc,hk_tm)[付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_eu,hws_hk,ctc) [计费模式，参数暂未使用。](tag:ocb,hws_ocb,hcs)
+        :param charging_mode: [付费模式，1表示按需计费。](tag:hws_eu,g42,hk_g42,tm,sbc,hk_sbc,hk_tm)[付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_eu,hws_hk,ctc) [计费模式，参数暂未使用。](tag:ocb,hws_ocb,hcs,fcs)
         :type charging_mode: int
         :param vpc_id: 私有云ID。
         :type vpc_id: str
@@ -600,7 +600,7 @@ class ShowInstanceResponse(SdkResponse):
     def charging_mode(self):
         """Gets the charging_mode of this ShowInstanceResponse.
 
-        [付费模式，1表示按需计费。](tag:hws_eu,g42,hk_g42,tm,sbc,hk_sbc,hk_tm)[付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_eu,hws_hk,ctc) [计费模式，参数暂未使用。](tag:ocb,hws_ocb,hcs)
+        [付费模式，1表示按需计费。](tag:hws_eu,g42,hk_g42,tm,sbc,hk_sbc,hk_tm)[付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_eu,hws_hk,ctc) [计费模式，参数暂未使用。](tag:ocb,hws_ocb,hcs,fcs)
 
         :return: The charging_mode of this ShowInstanceResponse.
         :rtype: int
@@ -611,7 +611,7 @@ class ShowInstanceResponse(SdkResponse):
     def charging_mode(self, charging_mode):
         """Sets the charging_mode of this ShowInstanceResponse.
 
-        [付费模式，1表示按需计费。](tag:hws_eu,g42,hk_g42,tm,sbc,hk_sbc,hk_tm)[付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_eu,hws_hk,ctc) [计费模式，参数暂未使用。](tag:ocb,hws_ocb,hcs)
+        [付费模式，1表示按需计费。](tag:hws_eu,g42,hk_g42,tm,sbc,hk_sbc,hk_tm)[付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_eu,hws_hk,ctc) [计费模式，参数暂未使用。](tag:ocb,hws_ocb,hcs,fcs)
 
         :param charging_mode: The charging_mode of this ShowInstanceResponse.
         :type charging_mode: int
