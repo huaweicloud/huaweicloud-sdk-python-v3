@@ -17,29 +17,36 @@ class RealTimeConfInfo:
     sensitive_list = []
 
     openapi_types = {
-        'chair_id': 'str'
+        'chair_id': 'str',
+        'co_hosts': 'list[str]'
     }
 
     attribute_map = {
-        'chair_id': 'chairID'
+        'chair_id': 'chairID',
+        'co_hosts': 'coHosts'
     }
 
-    def __init__(self, chair_id=None):
+    def __init__(self, chair_id=None, co_hosts=None):
         """RealTimeConfInfo
 
         The model defined in huaweicloud sdk
 
         :param chair_id: 主持人与会者标识。
         :type chair_id: str
+        :param co_hosts: 联席主持人会场id。
+        :type co_hosts: list[str]
         """
         
         
 
         self._chair_id = None
+        self._co_hosts = None
         self.discriminator = None
 
         if chair_id is not None:
             self.chair_id = chair_id
+        if co_hosts is not None:
+            self.co_hosts = co_hosts
 
     @property
     def chair_id(self):
@@ -62,6 +69,28 @@ class RealTimeConfInfo:
         :type chair_id: str
         """
         self._chair_id = chair_id
+
+    @property
+    def co_hosts(self):
+        """Gets the co_hosts of this RealTimeConfInfo.
+
+        联席主持人会场id。
+
+        :return: The co_hosts of this RealTimeConfInfo.
+        :rtype: list[str]
+        """
+        return self._co_hosts
+
+    @co_hosts.setter
+    def co_hosts(self, co_hosts):
+        """Sets the co_hosts of this RealTimeConfInfo.
+
+        联席主持人会场id。
+
+        :param co_hosts: The co_hosts of this RealTimeConfInfo.
+        :type co_hosts: list[str]
+        """
+        self._co_hosts = co_hosts
 
     def to_dict(self):
         """Returns the model properties as a dict"""

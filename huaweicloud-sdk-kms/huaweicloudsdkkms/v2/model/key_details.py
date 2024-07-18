@@ -33,8 +33,7 @@ class KeyDetails:
         'origin': 'str',
         'key_rotation_enabled': 'str',
         'sys_enterprise_project_id': 'str',
-        'keystore_id': 'str',
-        'key_label': 'str'
+        'keystore_id': 'str'
     }
 
     attribute_map = {
@@ -54,11 +53,10 @@ class KeyDetails:
         'origin': 'origin',
         'key_rotation_enabled': 'key_rotation_enabled',
         'sys_enterprise_project_id': 'sys_enterprise_project_id',
-        'keystore_id': 'keystore_id',
-        'key_label': 'key_label'
+        'keystore_id': 'keystore_id'
     }
 
-    def __init__(self, key_id=None, domain_id=None, key_alias=None, realm=None, key_spec=None, key_usage=None, key_description=None, creation_date=None, scheduled_deletion_date=None, key_state=None, default_key_flag=None, key_type=None, expiration_time=None, origin=None, key_rotation_enabled=None, sys_enterprise_project_id=None, keystore_id=None, key_label=None):
+    def __init__(self, key_id=None, domain_id=None, key_alias=None, realm=None, key_spec=None, key_usage=None, key_description=None, creation_date=None, scheduled_deletion_date=None, key_state=None, default_key_flag=None, key_type=None, expiration_time=None, origin=None, key_rotation_enabled=None, sys_enterprise_project_id=None, keystore_id=None):
         """KeyDetails
 
         The model defined in huaweicloud sdk
@@ -97,8 +95,6 @@ class KeyDetails:
         :type sys_enterprise_project_id: str
         :param keystore_id: 密钥库ID
         :type keystore_id: str
-        :param key_label: 密钥在加密机中的标签
-        :type key_label: str
         """
         
         
@@ -120,7 +116,6 @@ class KeyDetails:
         self._key_rotation_enabled = None
         self._sys_enterprise_project_id = None
         self._keystore_id = None
-        self._key_label = None
         self.discriminator = None
 
         if key_id is not None:
@@ -157,8 +152,6 @@ class KeyDetails:
             self.sys_enterprise_project_id = sys_enterprise_project_id
         if keystore_id is not None:
             self.keystore_id = keystore_id
-        if key_label is not None:
-            self.key_label = key_label
 
     @property
     def key_id(self):
@@ -533,28 +526,6 @@ class KeyDetails:
         :type keystore_id: str
         """
         self._keystore_id = keystore_id
-
-    @property
-    def key_label(self):
-        """Gets the key_label of this KeyDetails.
-
-        密钥在加密机中的标签
-
-        :return: The key_label of this KeyDetails.
-        :rtype: str
-        """
-        return self._key_label
-
-    @key_label.setter
-    def key_label(self, key_label):
-        """Sets the key_label of this KeyDetails.
-
-        密钥在加密机中的标签
-
-        :param key_label: The key_label of this KeyDetails.
-        :type key_label: str
-        """
-        self._key_label = key_label
 
     def to_dict(self):
         """Returns the model properties as a dict"""

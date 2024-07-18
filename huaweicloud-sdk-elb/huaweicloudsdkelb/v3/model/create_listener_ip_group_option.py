@@ -33,7 +33,7 @@ class CreateListenerIpGroupOption:
 
         The model defined in huaweicloud sdk
 
-        :param ipgroup_id: 监听器关联的访问控制组的id。  当关联的ipgroup中的ip_list为[]，且类型为白名单时，表示禁止所有ip的访问。  当关联的ipgroup中的ip_list为[]，且类型为黑名单时，表示允许所有ip的访问。 
+        :param ipgroup_id: 监听器关联的访问控制组的id。  当关联的ipgroup中的ip_list为[]，且类型为白名单时，表示禁止所有ip的访问。  当关联的ipgroup中的ip_list为[]，且类型为黑名单时，表示允许所有ip的访问。
         :type ipgroup_id: str
         :param enable_ipgroup: 访问控制组的状态。  取值： - true：开启访问控制，默认值。 - flase：关闭访问控制。
         :type enable_ipgroup: bool
@@ -58,7 +58,7 @@ class CreateListenerIpGroupOption:
     def ipgroup_id(self):
         """Gets the ipgroup_id of this CreateListenerIpGroupOption.
 
-        监听器关联的访问控制组的id。  当关联的ipgroup中的ip_list为[]，且类型为白名单时，表示禁止所有ip的访问。  当关联的ipgroup中的ip_list为[]，且类型为黑名单时，表示允许所有ip的访问。 
+        监听器关联的访问控制组的id。  当关联的ipgroup中的ip_list为[]，且类型为白名单时，表示禁止所有ip的访问。  当关联的ipgroup中的ip_list为[]，且类型为黑名单时，表示允许所有ip的访问。
 
         :return: The ipgroup_id of this CreateListenerIpGroupOption.
         :rtype: str
@@ -69,7 +69,7 @@ class CreateListenerIpGroupOption:
     def ipgroup_id(self, ipgroup_id):
         """Sets the ipgroup_id of this CreateListenerIpGroupOption.
 
-        监听器关联的访问控制组的id。  当关联的ipgroup中的ip_list为[]，且类型为白名单时，表示禁止所有ip的访问。  当关联的ipgroup中的ip_list为[]，且类型为黑名单时，表示允许所有ip的访问。 
+        监听器关联的访问控制组的id。  当关联的ipgroup中的ip_list为[]，且类型为白名单时，表示禁止所有ip的访问。  当关联的ipgroup中的ip_list为[]，且类型为黑名单时，表示允许所有ip的访问。
 
         :param ipgroup_id: The ipgroup_id of this CreateListenerIpGroupOption.
         :type ipgroup_id: str

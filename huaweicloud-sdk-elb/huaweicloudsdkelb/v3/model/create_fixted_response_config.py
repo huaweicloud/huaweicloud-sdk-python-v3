@@ -19,16 +19,22 @@ class CreateFixtedResponseConfig:
     openapi_types = {
         'status_code': 'str',
         'content_type': 'str',
-        'message_body': 'str'
+        'message_body': 'str',
+        'insert_headers_config': 'CreateInsertHeadersConfig',
+        'remove_headers_config': 'CreateRemoveHeadersConfig',
+        'traffic_limit_config': 'CreateTrafficLimitConfig'
     }
 
     attribute_map = {
         'status_code': 'status_code',
         'content_type': 'content_type',
-        'message_body': 'message_body'
+        'message_body': 'message_body',
+        'insert_headers_config': 'insert_headers_config',
+        'remove_headers_config': 'remove_headers_config',
+        'traffic_limit_config': 'traffic_limit_config'
     }
 
-    def __init__(self, status_code=None, content_type=None, message_body=None):
+    def __init__(self, status_code=None, content_type=None, message_body=None, insert_headers_config=None, remove_headers_config=None, traffic_limit_config=None):
         """CreateFixtedResponseConfig
 
         The model defined in huaweicloud sdk
@@ -39,6 +45,12 @@ class CreateFixtedResponseConfig:
         :type content_type: str
         :param message_body: 返回消息内容。
         :type message_body: str
+        :param insert_headers_config: 
+        :type insert_headers_config: :class:`huaweicloudsdkelb.v3.CreateInsertHeadersConfig`
+        :param remove_headers_config: 
+        :type remove_headers_config: :class:`huaweicloudsdkelb.v3.CreateRemoveHeadersConfig`
+        :param traffic_limit_config: 
+        :type traffic_limit_config: :class:`huaweicloudsdkelb.v3.CreateTrafficLimitConfig`
         """
         
         
@@ -46,6 +58,9 @@ class CreateFixtedResponseConfig:
         self._status_code = None
         self._content_type = None
         self._message_body = None
+        self._insert_headers_config = None
+        self._remove_headers_config = None
+        self._traffic_limit_config = None
         self.discriminator = None
 
         self.status_code = status_code
@@ -53,6 +68,12 @@ class CreateFixtedResponseConfig:
             self.content_type = content_type
         if message_body is not None:
             self.message_body = message_body
+        if insert_headers_config is not None:
+            self.insert_headers_config = insert_headers_config
+        if remove_headers_config is not None:
+            self.remove_headers_config = remove_headers_config
+        if traffic_limit_config is not None:
+            self.traffic_limit_config = traffic_limit_config
 
     @property
     def status_code(self):
@@ -119,6 +140,60 @@ class CreateFixtedResponseConfig:
         :type message_body: str
         """
         self._message_body = message_body
+
+    @property
+    def insert_headers_config(self):
+        """Gets the insert_headers_config of this CreateFixtedResponseConfig.
+
+        :return: The insert_headers_config of this CreateFixtedResponseConfig.
+        :rtype: :class:`huaweicloudsdkelb.v3.CreateInsertHeadersConfig`
+        """
+        return self._insert_headers_config
+
+    @insert_headers_config.setter
+    def insert_headers_config(self, insert_headers_config):
+        """Sets the insert_headers_config of this CreateFixtedResponseConfig.
+
+        :param insert_headers_config: The insert_headers_config of this CreateFixtedResponseConfig.
+        :type insert_headers_config: :class:`huaweicloudsdkelb.v3.CreateInsertHeadersConfig`
+        """
+        self._insert_headers_config = insert_headers_config
+
+    @property
+    def remove_headers_config(self):
+        """Gets the remove_headers_config of this CreateFixtedResponseConfig.
+
+        :return: The remove_headers_config of this CreateFixtedResponseConfig.
+        :rtype: :class:`huaweicloudsdkelb.v3.CreateRemoveHeadersConfig`
+        """
+        return self._remove_headers_config
+
+    @remove_headers_config.setter
+    def remove_headers_config(self, remove_headers_config):
+        """Sets the remove_headers_config of this CreateFixtedResponseConfig.
+
+        :param remove_headers_config: The remove_headers_config of this CreateFixtedResponseConfig.
+        :type remove_headers_config: :class:`huaweicloudsdkelb.v3.CreateRemoveHeadersConfig`
+        """
+        self._remove_headers_config = remove_headers_config
+
+    @property
+    def traffic_limit_config(self):
+        """Gets the traffic_limit_config of this CreateFixtedResponseConfig.
+
+        :return: The traffic_limit_config of this CreateFixtedResponseConfig.
+        :rtype: :class:`huaweicloudsdkelb.v3.CreateTrafficLimitConfig`
+        """
+        return self._traffic_limit_config
+
+    @traffic_limit_config.setter
+    def traffic_limit_config(self, traffic_limit_config):
+        """Sets the traffic_limit_config of this CreateFixtedResponseConfig.
+
+        :param traffic_limit_config: The traffic_limit_config of this CreateFixtedResponseConfig.
+        :type traffic_limit_config: :class:`huaweicloudsdkelb.v3.CreateTrafficLimitConfig`
+        """
+        self._traffic_limit_config = traffic_limit_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

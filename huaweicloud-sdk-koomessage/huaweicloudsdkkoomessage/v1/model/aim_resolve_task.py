@@ -45,15 +45,15 @@ class AIMResolveTask:
         :type tpl_id: str
         :param resolve_times: 短链的最大解析次数。  &gt; 个性化短链只支持最大解析数为1，设置其他值无效 
         :type resolve_times: int
-        :param aim_code_type: 智能信息编码类型。 - group：群发 - individual：个性化  &gt; 智能信息编码类型选择群发时，所有发送使用同一个短链，无法获取到单个手机号码的解析情况。 
+        :param aim_code_type: 智能信息编码类型。 - individual：个性化 
         :type aim_code_type: str
         :param generation_type: 生成短码方式。  - 1：标准 - 2：自定义  &gt; 默认1，即标准生成短码。 
         :type generation_type: str
         :param domain: 自定义短链域名，由大小写字母和数字组成的二级域名。   &gt; 自定义短码即generation_type为2时，此参数为必填。域名需要提前报备，请联系KooMessage运营人员进行域名报备，域名区分生成短码方式，如报备的是标准生成短码方式，则在自定义生成短码时不能使用此域名。 
         :type domain: str
-        :param expiration_time: 失效时间（天）。aim_code_type为group时，取值范围为1~180；aim_code_type为individual个性化时，取值范围为1~7。  &gt; 失效时间精确到秒，例如参数设置为1，创建时间为2022-07-22 21:10:12，过期时间为2022-07-23 21:10:12。 
+        :param expiration_time: 失效时间（天）。aim_code_type为individual个性化时，取值范围为1~7。  &gt; 失效时间精确到秒，例如参数设置为1，创建时间为2022-07-22 21:10:12，过期时间为2022-07-23 21:10:12。 
         :type expiration_time: int
-        :param params: 短链解析详情列表。一次请求最多100个短链。  &gt; OPPO模板一次最多申请10个短链。 
+        :param params: 短链解析详情列表。一次请求最多100个短链。 
         :type params: list[:class:`huaweicloudsdkkoomessage.v1.CreateResolveTaskParam`]
         """
         
@@ -126,7 +126,7 @@ class AIMResolveTask:
     def aim_code_type(self):
         """Gets the aim_code_type of this AIMResolveTask.
 
-        智能信息编码类型。 - group：群发 - individual：个性化  > 智能信息编码类型选择群发时，所有发送使用同一个短链，无法获取到单个手机号码的解析情况。 
+        智能信息编码类型。 - individual：个性化 
 
         :return: The aim_code_type of this AIMResolveTask.
         :rtype: str
@@ -137,7 +137,7 @@ class AIMResolveTask:
     def aim_code_type(self, aim_code_type):
         """Sets the aim_code_type of this AIMResolveTask.
 
-        智能信息编码类型。 - group：群发 - individual：个性化  > 智能信息编码类型选择群发时，所有发送使用同一个短链，无法获取到单个手机号码的解析情况。 
+        智能信息编码类型。 - individual：个性化 
 
         :param aim_code_type: The aim_code_type of this AIMResolveTask.
         :type aim_code_type: str
@@ -192,7 +192,7 @@ class AIMResolveTask:
     def expiration_time(self):
         """Gets the expiration_time of this AIMResolveTask.
 
-        失效时间（天）。aim_code_type为group时，取值范围为1~180；aim_code_type为individual个性化时，取值范围为1~7。  > 失效时间精确到秒，例如参数设置为1，创建时间为2022-07-22 21:10:12，过期时间为2022-07-23 21:10:12。 
+        失效时间（天）。aim_code_type为individual个性化时，取值范围为1~7。  > 失效时间精确到秒，例如参数设置为1，创建时间为2022-07-22 21:10:12，过期时间为2022-07-23 21:10:12。 
 
         :return: The expiration_time of this AIMResolveTask.
         :rtype: int
@@ -203,7 +203,7 @@ class AIMResolveTask:
     def expiration_time(self, expiration_time):
         """Sets the expiration_time of this AIMResolveTask.
 
-        失效时间（天）。aim_code_type为group时，取值范围为1~180；aim_code_type为individual个性化时，取值范围为1~7。  > 失效时间精确到秒，例如参数设置为1，创建时间为2022-07-22 21:10:12，过期时间为2022-07-23 21:10:12。 
+        失效时间（天）。aim_code_type为individual个性化时，取值范围为1~7。  > 失效时间精确到秒，例如参数设置为1，创建时间为2022-07-22 21:10:12，过期时间为2022-07-23 21:10:12。 
 
         :param expiration_time: The expiration_time of this AIMResolveTask.
         :type expiration_time: int
@@ -214,7 +214,7 @@ class AIMResolveTask:
     def params(self):
         """Gets the params of this AIMResolveTask.
 
-        短链解析详情列表。一次请求最多100个短链。  > OPPO模板一次最多申请10个短链。 
+        短链解析详情列表。一次请求最多100个短链。 
 
         :return: The params of this AIMResolveTask.
         :rtype: list[:class:`huaweicloudsdkkoomessage.v1.CreateResolveTaskParam`]
@@ -225,7 +225,7 @@ class AIMResolveTask:
     def params(self, params):
         """Sets the params of this AIMResolveTask.
 
-        短链解析详情列表。一次请求最多100个短链。  > OPPO模板一次最多申请10个短链。 
+        短链解析详情列表。一次请求最多100个短链。 
 
         :param params: The params of this AIMResolveTask.
         :type params: list[:class:`huaweicloudsdkkoomessage.v1.CreateResolveTaskParam`]

@@ -5,6 +5,7 @@ from __future__ import absolute_import
 from huaweicloudsdkcts.v3.cts_client import CtsClient
 from huaweicloudsdkcts.v3.cts_async_client import CtsAsyncClient
 
+from huaweicloudsdkcts.v3.model.attributes import Attributes
 from huaweicloudsdkcts.v3.model.base_user import BaseUser
 from huaweicloudsdkcts.v3.model.batch_create_resource_tags_request import BatchCreateResourceTagsRequest
 from huaweicloudsdkcts.v3.model.batch_create_resource_tags_request_body import BatchCreateResourceTagsRequestBody
@@ -54,6 +55,7 @@ from huaweicloudsdkcts.v3.model.notification_users import NotificationUsers
 from huaweicloudsdkcts.v3.model.notifications_response_body import NotificationsResponseBody
 from huaweicloudsdkcts.v3.model.obs_info import ObsInfo
 from huaweicloudsdkcts.v3.model.operations import Operations
+from huaweicloudsdkcts.v3.model.session_context import SessionContext
 from huaweicloudsdkcts.v3.model.tags import Tags
 from huaweicloudsdkcts.v3.model.trace_resource import TraceResource
 from huaweicloudsdkcts.v3.model.traces import Traces

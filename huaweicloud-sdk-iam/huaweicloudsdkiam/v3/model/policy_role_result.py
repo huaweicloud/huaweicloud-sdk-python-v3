@@ -29,7 +29,7 @@ class PolicyRoleResult:
         'id': 'str',
         'display_name': 'str',
         'type': 'str',
-        'policy': 'ServicePolicy'
+        'policy': 'CustomPolicy'
     }
 
     attribute_map = {
@@ -78,7 +78,7 @@ class PolicyRoleResult:
         :param type: 自定义策略的显示模式。 &gt; - AX表示在domain层显示。 &gt; - XA表示在project层显示。 &gt; - 自定义策略的显示模式只能为AX或者XA，不能在domain层和project层都显示（AA），或者在domain层和project层都不显示（XX）。
         :type type: str
         :param policy: 
-        :type policy: :class:`huaweicloudsdkiam.v3.ServicePolicy`
+        :type policy: :class:`huaweicloudsdkiam.v3.CustomPolicy`
         """
         
         
@@ -381,7 +381,7 @@ class PolicyRoleResult:
         """Gets the policy of this PolicyRoleResult.
 
         :return: The policy of this PolicyRoleResult.
-        :rtype: :class:`huaweicloudsdkiam.v3.ServicePolicy`
+        :rtype: :class:`huaweicloudsdkiam.v3.CustomPolicy`
         """
         return self._policy
 
@@ -390,7 +390,7 @@ class PolicyRoleResult:
         """Sets the policy of this PolicyRoleResult.
 
         :param policy: The policy of this PolicyRoleResult.
-        :type policy: :class:`huaweicloudsdkiam.v3.ServicePolicy`
+        :type policy: :class:`huaweicloudsdkiam.v3.CustomPolicy`
         """
         self._policy = policy
 

@@ -19,6 +19,7 @@ class ListWorkflowExecutionsRequest:
     openapi_types = {
         'workflow_id': 'str',
         'limit': 'int',
+        'offset': 'int',
         'status': 'str',
         'start_time': 'str',
         'end_time': 'str'
@@ -27,12 +28,13 @@ class ListWorkflowExecutionsRequest:
     attribute_map = {
         'workflow_id': 'workflow_id',
         'limit': 'limit',
+        'offset': 'offset',
         'status': 'status',
         'start_time': 'start_time',
         'end_time': 'end_time'
     }
 
-    def __init__(self, workflow_id=None, limit=None, status=None, start_time=None, end_time=None):
+    def __init__(self, workflow_id=None, limit=None, offset=None, status=None, start_time=None, end_time=None):
         """ListWorkflowExecutionsRequest
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class ListWorkflowExecutionsRequest:
         :type workflow_id: str
         :param limit: 分页查询，每页显示的条目数量，最大数量200，超过200后只返回200
         :type limit: int
+        :param offset: 分页查询，分页的偏移量，默认值为0 offset小于0时，按照0处理
+        :type offset: int
         :param status: 需要过滤的流程实例状态
         :type status: str
         :param start_time: 查询开始时间，UTC时间。若起始时间未填写，以终止时间前推3天为起始时间
@@ -53,6 +57,7 @@ class ListWorkflowExecutionsRequest:
 
         self._workflow_id = None
         self._limit = None
+        self._offset = None
         self._status = None
         self._start_time = None
         self._end_time = None
@@ -61,6 +66,8 @@ class ListWorkflowExecutionsRequest:
         self.workflow_id = workflow_id
         if limit is not None:
             self.limit = limit
+        if offset is not None:
+            self.offset = offset
         if status is not None:
             self.status = status
         if start_time is not None:
@@ -111,6 +118,28 @@ class ListWorkflowExecutionsRequest:
         :type limit: int
         """
         self._limit = limit
+
+    @property
+    def offset(self):
+        """Gets the offset of this ListWorkflowExecutionsRequest.
+
+        分页查询，分页的偏移量，默认值为0 offset小于0时，按照0处理
+
+        :return: The offset of this ListWorkflowExecutionsRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ListWorkflowExecutionsRequest.
+
+        分页查询，分页的偏移量，默认值为0 offset小于0时，按照0处理
+
+        :param offset: The offset of this ListWorkflowExecutionsRequest.
+        :type offset: int
+        """
+        self._offset = offset
 
     @property
     def status(self):

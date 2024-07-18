@@ -5,6 +5,7 @@ from __future__ import absolute_import
 from huaweicloudsdkbms.v1.bms_client import BmsClient
 from huaweicloudsdkbms.v1.bms_async_client import BmsAsyncClient
 
+from huaweicloudsdkbms.v1.model.asic_accelerator_info import ASICAcceleratorInfo
 from huaweicloudsdkbms.v1.model.absolute import Absolute
 from huaweicloudsdkbms.v1.model.add_server_nics_req import AddServerNicsReq
 from huaweicloudsdkbms.v1.model.add_server_nics_request import AddServerNicsRequest
@@ -63,6 +64,7 @@ from huaweicloudsdkbms.v1.model.fixed_ips import FixedIps
 from huaweicloudsdkbms.v1.model.flavor_info import FlavorInfo
 from huaweicloudsdkbms.v1.model.flavor_infos import FlavorInfos
 from huaweicloudsdkbms.v1.model.flavors_resp import FlavorsResp
+from huaweicloudsdkbms.v1.model.gpu_info import GpuInfo
 from huaweicloudsdkbms.v1.model.image import Image
 from huaweicloudsdkbms.v1.model.image_info import ImageInfo
 from huaweicloudsdkbms.v1.model.interface_attachments import InterfaceAttachments

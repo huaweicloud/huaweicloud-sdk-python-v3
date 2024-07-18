@@ -1174,6 +1174,78 @@ class LiveAsyncClient(Client):
 
         return http_info
 
+    def list_play_domain_stream_info_async(self, request):
+        """查询播放域名下的流数据
+
+        查询播放域名下的监控数据，根据输入时间点，返回查询该时间点所有流的带宽、在线人数、协议。
+        
+        返回的数据粒度为1分钟。
+        
+        最大查询周期7天，数据延迟5分钟。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListPlayDomainStreamInfo
+        :type request: :class:`huaweicloudsdklive.v2.ListPlayDomainStreamInfoRequest`
+        :rtype: :class:`huaweicloudsdklive.v2.ListPlayDomainStreamInfoResponse`
+        """
+        http_info = self._list_play_domain_stream_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_play_domain_stream_info_async_invoker(self, request):
+        http_info = self._list_play_domain_stream_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_play_domain_stream_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/stats/stream/play-info",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPlayDomainStreamInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'play_domains' in local_var_params:
+            query_params.append(('play_domains', local_var_params['play_domains']))
+            collection_formats['play_domains'] = 'csv'
+        if 'time' in local_var_params:
+            query_params.append(('time', local_var_params['time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_single_stream_bitrate_async(self, request):
         """查询推流码率数据接口
 

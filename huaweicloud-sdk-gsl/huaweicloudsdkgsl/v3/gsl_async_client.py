@@ -658,7 +658,7 @@ class GslAsyncClient(Client):
     def delete_real_name_async(self, request):
         """清除实名认证信息
 
-        清除实名认证信息，接口仅支持中国电信卡调用。
+        清除实名认证信息，接口仅支持中国电信卡调用。注：由于运营商侧业务限制，建议您同一张SIM卡不要同时执行多种不同业务的操作。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -725,7 +725,7 @@ class GslAsyncClient(Client):
     def enable_sim_card_async(self, request):
         """激活实体卡
 
-        创建激活实体卡申请，返回业务受理单号。1~2个工作日完成激活操作。
+        创建激活实体卡申请，返回业务受理单号。1~2个工作日完成激活操作。注：由于运营商侧业务限制，建议您同一张SIM卡不要同时执行多种不同业务的操作。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -910,7 +910,7 @@ class GslAsyncClient(Client):
     def register_imei_async(self, request):
         """SIM卡机卡重绑
 
-        支持固定机卡重绑(需要上传IMEI，将SIM卡绑定到指定IMEI的设备)和普通机卡重绑(会清除之前绑定的设备,将SIM卡绑定到正在使用的设备)，接口仅支持中国电信卡，中国移动卡调用。中国电信卡单卡每月只允许重绑2次，中国移动卡仅支持普通机卡重绑。
+        支持固定机卡重绑(需要上传IMEI，将SIM卡绑定到指定IMEI的设备)和普通机卡重绑(会清除之前绑定的设备,将SIM卡绑定到正在使用的设备)，接口仅支持中国电信卡，中国移动卡调用。中国电信卡单卡每月只允许重绑2次，中国移动卡仅支持普通机卡重绑。注：由于运营商侧业务限制，建议您同一张SIM卡不要同时执行多种不同业务的操作。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -977,7 +977,7 @@ class GslAsyncClient(Client):
     def reset_sim_card_async(self, request):
         """SIM卡单卡复机
 
-        创建复机申请，返回业务受理单号。1~2个工作日完成复机操作。
+        创建复机申请，返回业务受理单号。1~2个工作日完成复机操作。注：由于运营商侧业务限制，建议您同一张SIM卡不要同时执行多种不同业务的操作。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1044,7 +1044,7 @@ class GslAsyncClient(Client):
     def set_exceed_cut_net_async(self, request):
         """SIM卡达量断网/取消达量断网
 
-        SIM卡达量断网/取消达量断网，接口仅支持中国电信的卡以及中国联通、中国移动的组池卡调用。
+        SIM卡达量断网/取消达量断网，接口仅支持中国电信的卡以及中国联通、中国移动的组池卡调用。注：由于运营商侧业务限制，建议您同一张SIM卡不要同时执行多种不同业务的操作。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1111,7 +1111,7 @@ class GslAsyncClient(Client):
     def set_speed_value_async(self, request):
         """实体卡限速
 
-        实体卡限速接口，接口仅支持中国电信和中国联通实体卡调用。中国联通卡需要个人实名认证后才能使用限速功能。
+        实体卡限速接口，接口仅支持中国电信和中国联通实体卡调用。中国联通卡需要个人实名认证后才能使用限速功能。注：由于运营商侧业务限制，建议您同一张SIM卡不要同时执行多种不同业务的操作。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1377,7 +1377,7 @@ class GslAsyncClient(Client):
     def start_stop_net_async(self, request):
         """SIM卡申请断网/恢复在用
 
-        SIM卡申请断网/恢复在用，接口仅支持中国电信卡调用。
+        SIM卡申请断网/恢复在用，接口仅支持中国电信卡调用。注：由于运营商侧业务限制，建议您同一张SIM卡不要同时执行多种不同业务的操作。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1444,7 +1444,7 @@ class GslAsyncClient(Client):
     def stop_sim_card_async(self, request):
         """SIM卡单卡停机
 
-        创建停机申请，返回业务受理单号。1~2个工作日完成停机操作。
+        创建停机申请，返回业务受理单号。1~2个工作日完成停机操作。注：由于运营商侧业务限制，建议您同一张SIM卡不要同时执行多种不同业务的操作。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

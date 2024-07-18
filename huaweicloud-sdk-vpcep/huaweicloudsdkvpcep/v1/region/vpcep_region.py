@@ -50,6 +50,20 @@ class VpcepRegion:
                         "https://vpcep.eu-west-0.myhuaweicloud.com")
     MY_KUALALUMPUR_1 = Region("my-kualalumpur-1",
                         "https://vpcep.my-kualalumpur-1.myhuaweicloud.com")
+    AE_AD_1 = Region("ae-ad-1",
+                        "https://vpcep.ae-ad-1.myhuaweicloud.com")
+    RU_MOSCOW_1 = Region("ru-moscow-1",
+                        "https://vpcep.ru-moscow-1.myhuaweicloud.com")
+    CN_EAST_5 = Region("cn-east-5",
+                        "https://vpcep.cn-east-5.myhuaweicloud.com")
+    CN_SOUTH_4 = Region("cn-south-4",
+                        "https://vpcep.cn-south-4.myhuaweicloud.com")
+    ME_EAST_1 = Region("me-east-1",
+                        "https://vpcep.me-east-1.myhuaweicloud.com")
+    RU_NORTHWEST_2 = Region("ru-northwest-2",
+                        "https://vpcep.ru-northwest-2.myhuaweicloud.com")
+    CN_NORTH_11 = Region("cn-north-11",
+                        "https://vpcep.cn-north-11.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
@@ -74,6 +88,13 @@ class VpcepRegion:
         "ap-southeast-4": AP_SOUTHEAST_4,
         "eu-west-0": EU_WEST_0,
         "my-kualalumpur-1": MY_KUALALUMPUR_1,
+        "ae-ad-1": AE_AD_1,
+        "ru-moscow-1": RU_MOSCOW_1,
+        "cn-east-5": CN_EAST_5,
+        "cn-south-4": CN_SOUTH_4,
+        "me-east-1": ME_EAST_1,
+        "ru-northwest-2": RU_NORTHWEST_2,
+        "cn-north-11": CN_NORTH_11,
     }
 
     @classmethod

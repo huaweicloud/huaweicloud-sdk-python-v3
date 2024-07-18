@@ -47,7 +47,7 @@ class CreateResolveTaskRequestBody:
         :type tpl_id: str
         :param sms_signs: 短信签名列表，需要与最终发送短信的签名一致，才能解析。  &gt; 最多传入5个签名，单个签名内容不包括中括号。 
         :type sms_signs: list[str]
-        :param resolving_times: 短链最大解析次数。  &gt;个性化短链只支持最大解析数为1，设置其他值无效。 
+        :param resolving_times: 短链最大解析次数。  &gt;个性化短链只支持最大解析数为1，设置其他值无效。 &gt;群发短链设置解析次数需要大于等于2。 
         :type resolving_times: int
         :param aim_code_type: 生成短链类型。  - group：群发 - individual：个性化  &gt; 使用动态参数模板时，该字段只能为individual。 
         :type aim_code_type: str
@@ -132,7 +132,7 @@ class CreateResolveTaskRequestBody:
     def resolving_times(self):
         """Gets the resolving_times of this CreateResolveTaskRequestBody.
 
-        短链最大解析次数。  >个性化短链只支持最大解析数为1，设置其他值无效。 
+        短链最大解析次数。  >个性化短链只支持最大解析数为1，设置其他值无效。 >群发短链设置解析次数需要大于等于2。 
 
         :return: The resolving_times of this CreateResolveTaskRequestBody.
         :rtype: int
@@ -143,7 +143,7 @@ class CreateResolveTaskRequestBody:
     def resolving_times(self, resolving_times):
         """Sets the resolving_times of this CreateResolveTaskRequestBody.
 
-        短链最大解析次数。  >个性化短链只支持最大解析数为1，设置其他值无效。 
+        短链最大解析次数。  >个性化短链只支持最大解析数为1，设置其他值无效。 >群发短链设置解析次数需要大于等于2。 
 
         :param resolving_times: The resolving_times of this CreateResolveTaskRequestBody.
         :type resolving_times: int

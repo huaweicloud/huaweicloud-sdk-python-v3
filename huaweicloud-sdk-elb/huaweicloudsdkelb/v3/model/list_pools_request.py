@@ -38,7 +38,10 @@ class ListPoolsRequest:
         'vpc_id': 'list[str]',
         'type': 'list[str]',
         'protection_status': 'list[str]',
-        'connection_drain': 'bool'
+        'connection_drain': 'bool',
+        'pool_health': 'str',
+        'any_port_enable': 'bool',
+        'public_border_group': 'str'
     }
 
     attribute_map = {
@@ -63,23 +66,26 @@ class ListPoolsRequest:
         'vpc_id': 'vpc_id',
         'type': 'type',
         'protection_status': 'protection_status',
-        'connection_drain': 'connection_drain'
+        'connection_drain': 'connection_drain',
+        'pool_health': 'pool_health',
+        'any_port_enable': 'any_port_enable',
+        'public_border_group': 'public_border_group'
     }
 
-    def __init__(self, marker=None, limit=None, page_reverse=None, description=None, admin_state_up=None, healthmonitor_id=None, id=None, name=None, loadbalancer_id=None, protocol=None, lb_algorithm=None, enterprise_project_id=None, ip_version=None, member_address=None, member_device_id=None, member_deletion_protection_enable=None, listener_id=None, member_instance_id=None, vpc_id=None, type=None, protection_status=None, connection_drain=None):
+    def __init__(self, marker=None, limit=None, page_reverse=None, description=None, admin_state_up=None, healthmonitor_id=None, id=None, name=None, loadbalancer_id=None, protocol=None, lb_algorithm=None, enterprise_project_id=None, ip_version=None, member_address=None, member_device_id=None, member_deletion_protection_enable=None, listener_id=None, member_instance_id=None, vpc_id=None, type=None, protection_status=None, connection_drain=None, pool_health=None, any_port_enable=None, public_border_group=None):
         """ListPoolsRequest
 
         The model defined in huaweicloud sdk
 
         :param marker: 上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
         :type marker: str
-        :param limit: 每页返回的个数。
+        :param limit: 参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
         :type limit: int
         :param page_reverse: 是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse&#x3D;true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
         :type page_reverse: bool
         :param description: 后端云服务器组的描述信息。  支持多值查询，查询条件格式：*description&#x3D;xxx&amp;description&#x3D;xxx*。
         :type description: list[str]
-        :param admin_state_up: 后端云服务器组的管理状态。  不支持该字段，请勿使用。
+        :param admin_state_up: 后端云服务器组的管理状态。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
         :type admin_state_up: bool
         :param healthmonitor_id: 后端云服务器组关联的健康检查的ID。  支持多值查询，查询条件格式：*healthmonitor_id&#x3D;xxx&amp;healthmonitor_id&#x3D;xxx*。
         :type healthmonitor_id: list[str]
@@ -89,9 +95,9 @@ class ListPoolsRequest:
         :type name: list[str]
         :param loadbalancer_id: 后端云服务器组绑定的负载均衡器ID。  支持多值查询，查询条件格式：*loadbalancer_id&#x3D;xxx&amp;loadbalancer_id&#x3D;xxx*。
         :type loadbalancer_id: list[str]
-        :param protocol: 后端云服务器组的后端协议。  取值：TCP、UDP、HTTP、HTTPS、QUIC和TCPSSL。  支持多值查询，查询条件格式：*protocol&#x3D;xxx&amp;protocol&#x3D;xxx*。  [不支持QUIC协议。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt,dt_test)
+        :param protocol: 后端云服务器组的后端协议。  取值：TCP、UDP、[IP、](tag:hws_eu)TLS、HTTP、HTTPS、QUIC和GRPC。  支持多值查询，查询条件格式：*protocol&#x3D;xxx&amp;protocol&#x3D;xxx*。  [不支持QUIC协议。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt,dt_test)
         :type protocol: list[str]
-        :param lb_algorithm: 后端云服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  支持多值查询，查询条件格式：*lb_algorithm&#x3D;xxx&amp;lb_algorithm&#x3D;xxx*。  [不支持QUIC_CID。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt,dt_test)
+        :param lb_algorithm: 后端云服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。 [- 2_TUPLE_HASH：二元组hash算法，仅IP类型的pool支持。 - 3_TUPLE_HASH：三元组hash算法，仅IP类型的pool支持。 - 4_TUPLE_HASH：五元组hash算法，仅IP类型的pool支持。](tag:hws_eu)  支持多值查询，查询条件格式：*lb_algorithm&#x3D;xxx&amp;lb_algorithm&#x3D;xxx*。  [不支持QUIC_CID。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt,dt_test)
         :type lb_algorithm: list[str]
         :param enterprise_project_id: 企业项目ID。不传时查询default企业项目\&quot;0\&quot;下的资源，鉴权按照default企业项目鉴权； 如果传值，则传已存在的企业项目ID或all_granted_eps（表示查询所有企业项目）进行查询。  支持多值查询，查询条件格式：*enterprise_project_id&#x3D;xxx&amp;enterprise_project_id&#x3D;xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
         :type enterprise_project_id: list[str]
@@ -101,7 +107,7 @@ class ListPoolsRequest:
         :type member_address: list[str]
         :param member_device_id: 后端云服务器对应的弹性云服务器的ID。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_device_id&#x3D;xxx&amp;member_device_id&#x3D;xxx*。
         :type member_device_id: list[str]
-        :param member_deletion_protection_enable: 是否开启删除保护，false不开启，true开启，不传查询全部。 [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        :param member_deletion_protection_enable: 是否开启删除保护，false不开启，true开启，不传查询全部。 [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt,dt_test)
         :type member_deletion_protection_enable: bool
         :param listener_id: 关联的监听器ID，包括通过l7policy关联的。  支持多值查询，查询条件格式：*listener_id&#x3D;xxx&amp;listener_id&#x3D;xxx*。
         :type listener_id: list[str]
@@ -115,6 +121,12 @@ class ListPoolsRequest:
         :type protection_status: list[str]
         :param connection_drain: 查询是否开启延迟注销的功能，查询条件格式：*connection_drain&#x3D;true或者*connection_drain&#x3D;false
         :type connection_drain: bool
+        :param pool_health: 查询是否开启后端全下线转发功能，查询条件格式：*pool_health&#x3D;minimum_healthy_member_count&#x3D;0或者*pool_health&#x3D;minimum_healthy_member_count&#x3D;1
+        :type pool_health: str
+        :param any_port_enable: 后端是否开启端口透传。开启后，后端服务器端口与前端监听器端口保持一致。取值：false不开启，true开启。
+        :type any_port_enable: bool
+        :param public_border_group: 可用区组
+        :type public_border_group: str
         """
         
         
@@ -141,6 +153,9 @@ class ListPoolsRequest:
         self._type = None
         self._protection_status = None
         self._connection_drain = None
+        self._pool_health = None
+        self._any_port_enable = None
+        self._public_border_group = None
         self.discriminator = None
 
         if marker is not None:
@@ -187,6 +202,12 @@ class ListPoolsRequest:
             self.protection_status = protection_status
         if connection_drain is not None:
             self.connection_drain = connection_drain
+        if pool_health is not None:
+            self.pool_health = pool_health
+        if any_port_enable is not None:
+            self.any_port_enable = any_port_enable
+        if public_border_group is not None:
+            self.public_border_group = public_border_group
 
     @property
     def marker(self):
@@ -214,7 +235,7 @@ class ListPoolsRequest:
     def limit(self):
         """Gets the limit of this ListPoolsRequest.
 
-        每页返回的个数。
+        参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
 
         :return: The limit of this ListPoolsRequest.
         :rtype: int
@@ -225,7 +246,7 @@ class ListPoolsRequest:
     def limit(self, limit):
         """Sets the limit of this ListPoolsRequest.
 
-        每页返回的个数。
+        参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
 
         :param limit: The limit of this ListPoolsRequest.
         :type limit: int
@@ -280,7 +301,7 @@ class ListPoolsRequest:
     def admin_state_up(self):
         """Gets the admin_state_up of this ListPoolsRequest.
 
-        后端云服务器组的管理状态。  不支持该字段，请勿使用。
+        后端云服务器组的管理状态。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
 
         :return: The admin_state_up of this ListPoolsRequest.
         :rtype: bool
@@ -291,7 +312,7 @@ class ListPoolsRequest:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this ListPoolsRequest.
 
-        后端云服务器组的管理状态。  不支持该字段，请勿使用。
+        后端云服务器组的管理状态。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
 
         :param admin_state_up: The admin_state_up of this ListPoolsRequest.
         :type admin_state_up: bool
@@ -390,7 +411,7 @@ class ListPoolsRequest:
     def protocol(self):
         """Gets the protocol of this ListPoolsRequest.
 
-        后端云服务器组的后端协议。  取值：TCP、UDP、HTTP、HTTPS、QUIC和TCPSSL。  支持多值查询，查询条件格式：*protocol=xxx&protocol=xxx*。  [不支持QUIC协议。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt,dt_test)
+        后端云服务器组的后端协议。  取值：TCP、UDP、[IP、](tag:hws_eu)TLS、HTTP、HTTPS、QUIC和GRPC。  支持多值查询，查询条件格式：*protocol=xxx&protocol=xxx*。  [不支持QUIC协议。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt,dt_test)
 
         :return: The protocol of this ListPoolsRequest.
         :rtype: list[str]
@@ -401,7 +422,7 @@ class ListPoolsRequest:
     def protocol(self, protocol):
         """Sets the protocol of this ListPoolsRequest.
 
-        后端云服务器组的后端协议。  取值：TCP、UDP、HTTP、HTTPS、QUIC和TCPSSL。  支持多值查询，查询条件格式：*protocol=xxx&protocol=xxx*。  [不支持QUIC协议。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt,dt_test)
+        后端云服务器组的后端协议。  取值：TCP、UDP、[IP、](tag:hws_eu)TLS、HTTP、HTTPS、QUIC和GRPC。  支持多值查询，查询条件格式：*protocol=xxx&protocol=xxx*。  [不支持QUIC协议。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt,dt_test)
 
         :param protocol: The protocol of this ListPoolsRequest.
         :type protocol: list[str]
@@ -412,7 +433,7 @@ class ListPoolsRequest:
     def lb_algorithm(self):
         """Gets the lb_algorithm of this ListPoolsRequest.
 
-        后端云服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  支持多值查询，查询条件格式：*lb_algorithm=xxx&lb_algorithm=xxx*。  [不支持QUIC_CID。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt,dt_test)
+        后端云服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。 [- 2_TUPLE_HASH：二元组hash算法，仅IP类型的pool支持。 - 3_TUPLE_HASH：三元组hash算法，仅IP类型的pool支持。 - 4_TUPLE_HASH：五元组hash算法，仅IP类型的pool支持。](tag:hws_eu)  支持多值查询，查询条件格式：*lb_algorithm=xxx&lb_algorithm=xxx*。  [不支持QUIC_CID。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt,dt_test)
 
         :return: The lb_algorithm of this ListPoolsRequest.
         :rtype: list[str]
@@ -423,7 +444,7 @@ class ListPoolsRequest:
     def lb_algorithm(self, lb_algorithm):
         """Sets the lb_algorithm of this ListPoolsRequest.
 
-        后端云服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  支持多值查询，查询条件格式：*lb_algorithm=xxx&lb_algorithm=xxx*。  [不支持QUIC_CID。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt,dt_test)
+        后端云服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。 [- 2_TUPLE_HASH：二元组hash算法，仅IP类型的pool支持。 - 3_TUPLE_HASH：三元组hash算法，仅IP类型的pool支持。 - 4_TUPLE_HASH：五元组hash算法，仅IP类型的pool支持。](tag:hws_eu)  支持多值查询，查询条件格式：*lb_algorithm=xxx&lb_algorithm=xxx*。  [不支持QUIC_CID。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt,dt_test)
 
         :param lb_algorithm: The lb_algorithm of this ListPoolsRequest.
         :type lb_algorithm: list[str]
@@ -522,7 +543,7 @@ class ListPoolsRequest:
     def member_deletion_protection_enable(self):
         """Gets the member_deletion_protection_enable of this ListPoolsRequest.
 
-        是否开启删除保护，false不开启，true开启，不传查询全部。 [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        是否开启删除保护，false不开启，true开启，不传查询全部。 [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt,dt_test)
 
         :return: The member_deletion_protection_enable of this ListPoolsRequest.
         :rtype: bool
@@ -533,7 +554,7 @@ class ListPoolsRequest:
     def member_deletion_protection_enable(self, member_deletion_protection_enable):
         """Sets the member_deletion_protection_enable of this ListPoolsRequest.
 
-        是否开启删除保护，false不开启，true开启，不传查询全部。 [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        是否开启删除保护，false不开启，true开启，不传查询全部。 [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt,dt_test)
 
         :param member_deletion_protection_enable: The member_deletion_protection_enable of this ListPoolsRequest.
         :type member_deletion_protection_enable: bool
@@ -671,6 +692,72 @@ class ListPoolsRequest:
         :type connection_drain: bool
         """
         self._connection_drain = connection_drain
+
+    @property
+    def pool_health(self):
+        """Gets the pool_health of this ListPoolsRequest.
+
+        查询是否开启后端全下线转发功能，查询条件格式：*pool_health=minimum_healthy_member_count=0或者*pool_health=minimum_healthy_member_count=1
+
+        :return: The pool_health of this ListPoolsRequest.
+        :rtype: str
+        """
+        return self._pool_health
+
+    @pool_health.setter
+    def pool_health(self, pool_health):
+        """Sets the pool_health of this ListPoolsRequest.
+
+        查询是否开启后端全下线转发功能，查询条件格式：*pool_health=minimum_healthy_member_count=0或者*pool_health=minimum_healthy_member_count=1
+
+        :param pool_health: The pool_health of this ListPoolsRequest.
+        :type pool_health: str
+        """
+        self._pool_health = pool_health
+
+    @property
+    def any_port_enable(self):
+        """Gets the any_port_enable of this ListPoolsRequest.
+
+        后端是否开启端口透传。开启后，后端服务器端口与前端监听器端口保持一致。取值：false不开启，true开启。
+
+        :return: The any_port_enable of this ListPoolsRequest.
+        :rtype: bool
+        """
+        return self._any_port_enable
+
+    @any_port_enable.setter
+    def any_port_enable(self, any_port_enable):
+        """Sets the any_port_enable of this ListPoolsRequest.
+
+        后端是否开启端口透传。开启后，后端服务器端口与前端监听器端口保持一致。取值：false不开启，true开启。
+
+        :param any_port_enable: The any_port_enable of this ListPoolsRequest.
+        :type any_port_enable: bool
+        """
+        self._any_port_enable = any_port_enable
+
+    @property
+    def public_border_group(self):
+        """Gets the public_border_group of this ListPoolsRequest.
+
+        可用区组
+
+        :return: The public_border_group of this ListPoolsRequest.
+        :rtype: str
+        """
+        return self._public_border_group
+
+    @public_border_group.setter
+    def public_border_group(self, public_border_group):
+        """Sets the public_border_group of this ListPoolsRequest.
+
+        可用区组
+
+        :param public_border_group: The public_border_group of this ListPoolsRequest.
+        :type public_border_group: str
+        """
+        self._public_border_group = public_border_group
 
     def to_dict(self):
         """Returns the model properties as a dict"""

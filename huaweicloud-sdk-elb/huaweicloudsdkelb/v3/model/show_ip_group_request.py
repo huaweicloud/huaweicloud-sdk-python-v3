@@ -29,7 +29,7 @@ class ShowIpGroupRequest:
 
         The model defined in huaweicloud sdk
 
-        :param ipgroup_id: IP地址组ID。
+        :param ipgroup_id: 参数解释：IP地址组ID。
         :type ipgroup_id: str
         """
         
@@ -44,7 +44,7 @@ class ShowIpGroupRequest:
     def ipgroup_id(self):
         """Gets the ipgroup_id of this ShowIpGroupRequest.
 
-        IP地址组ID。
+        参数解释：IP地址组ID。
 
         :return: The ipgroup_id of this ShowIpGroupRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class ShowIpGroupRequest:
     def ipgroup_id(self, ipgroup_id):
         """Sets the ipgroup_id of this ShowIpGroupRequest.
 
-        IP地址组ID。
+        参数解释：IP地址组ID。
 
         :param ipgroup_id: The ipgroup_id of this ShowIpGroupRequest.
         :type ipgroup_id: str

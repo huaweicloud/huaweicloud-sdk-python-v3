@@ -51,8 +51,9 @@ def mocked_client():
 
 
 def test_application_json(mocked_responses, mocked_client):
-    mocked_responses.post(
-        "https://example.com/test-content-type/application-json",
+    mocked_responses.add(
+        method=responses.POST,
+        url="https://example.com/test-content-type/application-json",
         match=[
             matchers.header_matcher({"Content-Type": "application/json"}),
             matchers.json_params_matcher({
@@ -81,8 +82,9 @@ def test_application_json(mocked_responses, mocked_client):
 
 
 def test_form_urlencoded(mocked_responses, mocked_client):
-    mocked_responses.post(
-        "https://example.com/test-content-type/x-www-form-urlencoded",
+    mocked_responses.add(
+        method=responses.POST,
+        url="https://example.com/test-content-type/x-www-form-urlencoded",
         match=[
             matchers.header_matcher({"Content-Type": "application/x-www-form-urlencoded"}),
             matchers.urlencoded_params_matcher({"str": "val", "int": "1", "bool": "true"})

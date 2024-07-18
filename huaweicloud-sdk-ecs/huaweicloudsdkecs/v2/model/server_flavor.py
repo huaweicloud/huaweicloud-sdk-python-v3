@@ -21,7 +21,9 @@ class ServerFlavor:
         'name': 'str',
         'disk': 'str',
         'vcpus': 'str',
-        'ram': 'str'
+        'ram': 'str',
+        'gpus': 'list[GpuInfo]',
+        'asic_accelerators': 'list[ASICAcceleratorInfo]'
     }
 
     attribute_map = {
@@ -29,10 +31,12 @@ class ServerFlavor:
         'name': 'name',
         'disk': 'disk',
         'vcpus': 'vcpus',
-        'ram': 'ram'
+        'ram': 'ram',
+        'gpus': 'gpus',
+        'asic_accelerators': 'asic_accelerators'
     }
 
-    def __init__(self, id=None, name=None, disk=None, vcpus=None, ram=None):
+    def __init__(self, id=None, name=None, disk=None, vcpus=None, ram=None, gpus=None, asic_accelerators=None):
         """ServerFlavor
 
         The model defined in huaweicloud sdk
@@ -47,6 +51,10 @@ class ServerFlavor:
         :type vcpus: str
         :param ram: 该云服务器规格对应的内存大小，单位为MB。
         :type ram: str
+        :param gpus: 该云服务器规格对应的GPU设备。
+        :type gpus: list[:class:`huaweicloudsdkecs.v2.GpuInfo`]
+        :param asic_accelerators: 该云服务器规格对应的ASIC设备。
+        :type asic_accelerators: list[:class:`huaweicloudsdkecs.v2.ASICAcceleratorInfo`]
         """
         
         
@@ -56,6 +64,8 @@ class ServerFlavor:
         self._disk = None
         self._vcpus = None
         self._ram = None
+        self._gpus = None
+        self._asic_accelerators = None
         self.discriminator = None
 
         self.id = id
@@ -63,6 +73,8 @@ class ServerFlavor:
         self.disk = disk
         self.vcpus = vcpus
         self.ram = ram
+        self.gpus = gpus
+        self.asic_accelerators = asic_accelerators
 
     @property
     def id(self):
@@ -173,6 +185,50 @@ class ServerFlavor:
         :type ram: str
         """
         self._ram = ram
+
+    @property
+    def gpus(self):
+        """Gets the gpus of this ServerFlavor.
+
+        该云服务器规格对应的GPU设备。
+
+        :return: The gpus of this ServerFlavor.
+        :rtype: list[:class:`huaweicloudsdkecs.v2.GpuInfo`]
+        """
+        return self._gpus
+
+    @gpus.setter
+    def gpus(self, gpus):
+        """Sets the gpus of this ServerFlavor.
+
+        该云服务器规格对应的GPU设备。
+
+        :param gpus: The gpus of this ServerFlavor.
+        :type gpus: list[:class:`huaweicloudsdkecs.v2.GpuInfo`]
+        """
+        self._gpus = gpus
+
+    @property
+    def asic_accelerators(self):
+        """Gets the asic_accelerators of this ServerFlavor.
+
+        该云服务器规格对应的ASIC设备。
+
+        :return: The asic_accelerators of this ServerFlavor.
+        :rtype: list[:class:`huaweicloudsdkecs.v2.ASICAcceleratorInfo`]
+        """
+        return self._asic_accelerators
+
+    @asic_accelerators.setter
+    def asic_accelerators(self, asic_accelerators):
+        """Sets the asic_accelerators of this ServerFlavor.
+
+        该云服务器规格对应的ASIC设备。
+
+        :param asic_accelerators: The asic_accelerators of this ServerFlavor.
+        :type asic_accelerators: list[:class:`huaweicloudsdkecs.v2.ASICAcceleratorInfo`]
+        """
+        self._asic_accelerators = asic_accelerators
 
     def to_dict(self):
         """Returns the model properties as a dict"""

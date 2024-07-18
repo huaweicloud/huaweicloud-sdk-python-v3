@@ -1,3 +1,639 @@
+# 3.1.106 2024-07-18
+
+### HuaweiCloud SDK AS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateScalingV2Policy**
+    - 请求参数变更
+      - `+ scaling_policy_type: enum value [INTERVAL_ALARM]`
+      - `+ interval_alarm_actions.percentage`
+      - `* interval_alarm_actions.lower_bound: int32 -> double`
+      - `* interval_alarm_actions.upper_bound: int32 -> double`
+  - **ListAllScalingV2Policies**
+    - 响应参数变更
+      - `+ scaling_policies.scaling_policy_type: enum value [INTERVAL_ALARM]`
+      - `+ scaling_policies.interval_alarm_actions.percentage`
+      - `* scaling_policies.interval_alarm_actions.lower_bound: int32 -> double`
+      - `* scaling_policies.interval_alarm_actions.upper_bound: int32 -> double`
+  - **UpdateScalingV2Policy**
+    - 请求参数变更
+      - `+ scaling_policy_type: enum value [INTERVAL_ALARM]`
+      - `+ interval_alarm_actions.percentage`
+      - `* interval_alarm_actions.lower_bound: int32 -> double`
+      - `* interval_alarm_actions.upper_bound: int32 -> double`
+  - **ShowScalingV2Policy**
+    - 响应参数变更
+      - `+ scaling_policy.scaling_policy_type: enum value [INTERVAL_ALARM]`
+      - `+ scaling_policy.interval_alarm_actions.percentage`
+      - `* scaling_policy.interval_alarm_actions.lower_bound: int32 -> double`
+      - `* scaling_policy.interval_alarm_actions.upper_bound: int32 -> double`
+  - **ListScalingV2Policies**
+    - 响应参数变更
+      - `+ scaling_policies.scaling_policy_type: enum value [INTERVAL_ALARM]`
+      - `+ scaling_policies.interval_alarm_actions.percentage`
+      - `* scaling_policies.interval_alarm_actions.lower_bound: int32 -> double`
+      - `* scaling_policies.interval_alarm_actions.upper_bound: int32 -> double`
+
+### HuaweiCloud SDK BMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListBareMetalServers**
+    - 响应参数变更
+      - `+ servers.flavor.gpus`
+      - `+ servers.flavor.asic_accelerators`
+  - **ListBareMetalServerDetails**
+    - 响应参数变更
+      - `+ server.flavor.gpus`
+      - `+ server.flavor.asic_accelerators`
+
+### HuaweiCloud SDK CCE
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListAutopilotClusters`
+    - `CreateAutopilotCluster`
+    - `ShowAutopilotCluster`
+    - `UpdateAutopilotCluster`
+    - `DeleteAutopilotCluster`
+    - `CreateAutopilotKubernetesClusterCert`
+    - `ShowAutopilotJob`
+    - `ShowAutopilotClusterEndpoints`
+    - `ListAutopilotAddonInstances`
+    - `CreateAutopilotAddonInstance`
+    - `ListAutopilotAddonTemplates`
+    - `ShowAutopilotAddonInstance`
+    - `UpdateAutopilotAddonInstance`
+    - `DeleteAutopilotAddonInstance`
+    - `RollbackAutopilotAddonInstance`
+    - `UpgradeAutopilotCluster`
+    - `ShowAutopilotUpgradeClusterTask`
+    - `RetryAutopilotUpgradeClusterTask`
+    - `ListAutopilotUpgradeClusterTasks`
+    - `CreateAutopilotPreCheck`
+    - `ShowAutopilotPreCheck`
+    - `ListAutopilotPreCheckTasks`
+    - `CreateAutopilotPostCheck`
+    - `CreateAutopilotClusterMasterSnapshot`
+    - `ListAutopilotClusterMasterSnapshotTasks`
+    - `ShowAutopilotClusterUpgradeInfo`
+    - `ListAutopilotClusterUpgradePaths`
+    - `ListAutopilotClusterUpgradeFeatureGates`
+    - `ListAutopilotUpgradeWorkFlows`
+    - `CreateAutopilotUpgradeWorkFlow`
+    - `ShowAutopilotUpgradeWorkFlow`
+    - `UpgradeAutopilotWorkFlowUpdate`
+    - `ShowAutopilotQuotas`
+    - `BatchCreateAutopilotClusterTags`
+    - `BatchDeleteAutopilotClusterTags`
+    - `ListAutopilotCharts`
+    - `UploadAutopilotChart`
+    - `ListAutopilotReleases`
+    - `CreateAutopilotRelease`
+    - `ShowAutopilotChart`
+    - `UpdateAutopilotChart`
+    - `DeleteAutopilotChart`
+    - `ShowAutopilotRelease`
+    - `UpdateAutopilotRelease`
+    - `DeleteAutopilotRelease`
+    - `DownloadAutopilotChart`
+    - `ShowAutopilotChartValues`
+    - `ShowAutopilotReleaseHistory`
+    - `ShowAutopilotUserChartsQuotas`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CTS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListTraces**
+    - 请求参数变更
+      - `+ access_key_id`
+      - `+ enterprise_project_id`
+    - 响应参数变更
+      - `+ traces.enterprise_project_id`
+      - `+ traces.resource_account_id`
+      - `+ traces.user.user_name`
+      - `+ traces.user.account_id`
+      - `+ traces.user.access_key_id`
+      - `+ traces.user.principal_urn`
+      - `+ traces.user.principal_id`
+      - `+ traces.user.principal_is_root_user`
+      - `+ traces.user.type`
+      - `+ traces.user.invoked_by`
+      - `+ traces.user.session_context`
+
+### HuaweiCloud SDK DDM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ExpandInstanceNodes**
+    - 请求参数变更
+      - `+ available_zones`
+    - 响应参数变更
+      - `+ order_id`
+  - **ShrinkInstanceNodes**
+    - 响应参数变更
+      - `+ order_id`
+  - **RestartInstance**
+    - 响应参数变更
+      - `+ order_id`
+  - **ListUsers**
+    - 响应参数变更
+      - `+ users.password_last_changed`
+
+### HuaweiCloud SDK DRS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **BatchCreateJobs**
+    - 请求参数变更
+      - `+ jobs.node_type: enum value [micro,small,medium,xlarge,2xlarge]`
+  - **BatchUpdateJob**
+    - 请求参数变更
+      - `+ jobs.node_type: enum value [micro,small,medium,xlarge,2xlarge]`
+
+### HuaweiCloud SDK ECS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowServer**
+    - 响应参数变更
+      - `+ server.flavor.gpus`
+      - `+ server.flavor.asic_accelerators`
+  - **ListServersDetails**
+    - 响应参数变更
+      - `+ servers.flavor.gpus`
+      - `+ servers.flavor.asic_accelerators`
+
+### HuaweiCloud SDK ELB
+
+- _新增特性_
+  - 支持接口`ShowCertificatePrivateKeyEcho`、`CreateCertificatePrivateKeyEcho`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowQuota**
+    - 响应参数变更
+      - `+ quota.free_instance_members_per_pool`
+      - `+ quota.free_instance_listeners_per_loadbalancer`
+  - **ChangeLoadbalancerChargeMode**
+    - 请求参数变更
+      - `+ pay_type`
+      - `+ prepaid_options.cloud_service_console_url`
+  - **ListCertificates**
+    - 请求参数变更
+      - `+ common_name`
+      - `+ fingerprint`
+    - 响应参数变更
+      - `+ certificates.common_name`
+      - `+ certificates.fingerprint`
+      - `+ certificates.subject_alternative_names`
+  - **CreateCertificate**
+    - 响应参数变更
+      - `+ certificate.common_name`
+      - `+ certificate.fingerprint`
+      - `+ certificate.subject_alternative_names`
+  - **ShowCertificate**
+    - 响应参数变更
+      - `+ certificate.common_name`
+      - `+ certificate.fingerprint`
+      - `+ certificate.subject_alternative_names`
+  - **UpdateCertificate**
+    - 请求参数变更
+      - `+ certificate.scm_certificate_id`
+    - 响应参数变更
+      - `+ certificate.common_name`
+      - `+ certificate.fingerprint`
+      - `+ certificate.subject_alternative_names`
+  - **ListFlavors**
+    - 请求参数变更
+      - `+ loadbalancer_type`
+    - 响应参数变更
+      - `+ flavors.public_border_group`
+      - `+ flavors.category`
+  - **ShowFlavor**
+    - 响应参数变更
+      - `+ flavor.public_border_group`
+      - `+ flavor.category`
+  - **UpdateLoadBalancer**
+    - 请求参数变更
+      - `+ loadbalancer.gw_flavor_id`
+  - **ListIpGroups**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+    - 响应参数变更
+      - `+ ipgroups.enterprise_project_id`
+  - **CreateIpGroup**
+    - 响应参数变更
+      - `+ ipgroup.enterprise_project_id`
+  - **ShowIpGroup**
+    - 响应参数变更
+      - `+ ipgroup.enterprise_project_id`
+  - **UpdateIpGroup**
+    - 响应参数变更
+      - `+ ipgroup.enterprise_project_id`
+  - **UpdateIpList**
+    - 响应参数变更
+      - `+ ipgroup.enterprise_project_id`
+  - **BatchDeleteIpList**
+    - 响应参数变更
+      - `+ ipgroup.enterprise_project_id`
+  - **ListListeners**
+    - 响应参数变更
+      - `+ listeners.insert_headers.X-Nuwa-Trace`
+  - **CreateListener**
+    - 请求参数变更
+      - `+ listener.insert_headers.X-Nuwa-Trace`
+    - 响应参数变更
+      - `+ listener.insert_headers.X-Nuwa-Trace`
+  - **ShowListener**
+    - 响应参数变更
+      - `+ listener.insert_headers.X-Nuwa-Trace`
+  - **UpdateListener**
+    - 请求参数变更
+      - `+ listener.insert_headers.X-Nuwa-Trace`
+    - 响应参数变更
+      - `+ listener.insert_headers.X-Nuwa-Trace`
+  - **ListPools**
+    - 请求参数变更
+      - `+ pool_health`
+      - `+ any_port_enable`
+      - `+ public_border_group`
+    - 响应参数变更
+      - `+ pools.enterprise_project_id`
+      - `+ pools.pool_health`
+      - `+ pools.public_border_group`
+  - **CreatePool**
+    - 请求参数变更
+      - `+ pool.target_rebalance`
+      - `+ pool.pool_health`
+      - `+ pool.public_border_group`
+    - 响应参数变更
+      - `+ pool.enterprise_project_id`
+      - `+ pool.pool_health`
+      - `+ pool.public_border_group`
+  - **ShowPool**
+    - 响应参数变更
+      - `+ pool.enterprise_project_id`
+      - `+ pool.pool_health`
+      - `+ pool.public_border_group`
+  - **UpdatePool**
+    - 请求参数变更
+      - `+ pool.pool_health`
+    - 响应参数变更
+      - `+ pool.enterprise_project_id`
+      - `+ pool.pool_health`
+      - `+ pool.public_border_group`
+  - **ListMembers**
+    - 响应参数变更
+      - `- members.pool_id`
+      - `- members.device_owner`
+      - `- members.device_id`
+      - `- members.loadbalancer_id`
+      - `- members.loadbalancers`
+  - **CreateMember**
+    - 响应参数变更
+      - `- member.pool_id`
+      - `- member.device_owner`
+      - `- member.device_id`
+      - `- member.loadbalancer_id`
+      - `- member.loadbalancers`
+  - **ShowMember**
+    - 响应参数变更
+      - `- member.pool_id`
+      - `- member.device_owner`
+      - `- member.device_id`
+      - `- member.loadbalancer_id`
+      - `- member.loadbalancers`
+  - **UpdateMember**
+    - 响应参数变更
+      - `- member.pool_id`
+      - `- member.device_owner`
+      - `- member.device_id`
+      - `- member.loadbalancer_id`
+      - `- member.loadbalancers`
+  - **ListAllMembers**
+    - 响应参数变更
+      - `* members: list<Member> -> list<MemberInfo>`
+  - **BatchUpdateMembers**
+    - 响应参数变更
+      - `+ members.created_at`
+      - `+ members.updated_at`
+  - **UpdateHealthMonitor**
+    - 请求参数变更
+      - `- healthmonitor.http_method: enum value [PUT,DELETE,TRACE,OPTIONS,CONNECT,PATCH]`
+  - **ListLoadBalancers**
+    - 请求参数变更
+      - `+ loadbalancer_type`
+  - **CreateLoadBalancer**
+    - 请求参数变更
+      - `+ loadbalancer.gw_flavor_id`
+      - `+ loadbalancer.loadbalancer_type`
+      - `+ loadbalancer.prepaid_options.promotion_info`
+      - `+ loadbalancer.prepaid_options.cloud_service_console_url`
+  - **ListL7Policies**
+    - 响应参数变更
+      - `+ l7policies.redirect_pools_config`
+      - `+ l7policies.redirect_pools_sticky_session_config`
+      - `+ l7policies.redirect_url_config.insert_headers_config`
+      - `+ l7policies.redirect_url_config.remove_headers_config`
+      - `+ l7policies.fixed_response_config.insert_headers_config`
+      - `+ l7policies.fixed_response_config.remove_headers_config`
+      - `+ l7policies.fixed_response_config.traffic_limit_config`
+      - `+ l7policies.redirect_pools_extend_config.insert_headers_config`
+      - `+ l7policies.redirect_pools_extend_config.remove_headers_config`
+      - `+ l7policies.redirect_pools_extend_config.traffic_limit_config`
+  - **CreateL7Policy**
+    - 请求参数变更
+      - `+ l7policy.redirect_pools_config`
+      - `+ l7policy.redirect_pools_sticky_session_config`
+      - `+ l7policy.redirect_url_config.insert_headers_config`
+      - `+ l7policy.redirect_url_config.remove_headers_config`
+      - `+ l7policy.fixed_response_config.insert_headers_config`
+      - `+ l7policy.fixed_response_config.remove_headers_config`
+      - `+ l7policy.fixed_response_config.traffic_limit_config`
+      - `+ l7policy.redirect_pools_extend_config.insert_headers_config`
+      - `+ l7policy.redirect_pools_extend_config.remove_headers_config`
+      - `+ l7policy.redirect_pools_extend_config.traffic_limit_config`
+    - 响应参数变更
+      - `+ l7policy.redirect_pools_config`
+      - `+ l7policy.redirect_pools_sticky_session_config`
+      - `+ l7policy.redirect_url_config.insert_headers_config`
+      - `+ l7policy.redirect_url_config.remove_headers_config`
+      - `+ l7policy.fixed_response_config.insert_headers_config`
+      - `+ l7policy.fixed_response_config.remove_headers_config`
+      - `+ l7policy.fixed_response_config.traffic_limit_config`
+      - `+ l7policy.redirect_pools_extend_config.insert_headers_config`
+      - `+ l7policy.redirect_pools_extend_config.remove_headers_config`
+      - `+ l7policy.redirect_pools_extend_config.traffic_limit_config`
+  - **ShowL7Policy**
+    - 响应参数变更
+      - `+ l7policy.redirect_pools_config`
+      - `+ l7policy.redirect_pools_sticky_session_config`
+      - `+ l7policy.redirect_url_config.insert_headers_config`
+      - `+ l7policy.redirect_url_config.remove_headers_config`
+      - `+ l7policy.fixed_response_config.insert_headers_config`
+      - `+ l7policy.fixed_response_config.remove_headers_config`
+      - `+ l7policy.fixed_response_config.traffic_limit_config`
+      - `+ l7policy.redirect_pools_extend_config.insert_headers_config`
+      - `+ l7policy.redirect_pools_extend_config.remove_headers_config`
+      - `+ l7policy.redirect_pools_extend_config.traffic_limit_config`
+  - **UpdateL7Policy**
+    - 请求参数变更
+      - `+ l7policy.redirect_pools_config`
+      - `+ l7policy.redirect_pools_sticky_session_config`
+      - `+ l7policy.redirect_url_config.insert_headers_config`
+      - `+ l7policy.redirect_url_config.remove_headers_config`
+      - `+ l7policy.fixed_response_config.insert_headers_config`
+      - `+ l7policy.fixed_response_config.remove_headers_config`
+      - `+ l7policy.fixed_response_config.traffic_limit_config`
+      - `+ l7policy.redirect_pools_extend_config.insert_headers_config`
+      - `+ l7policy.redirect_pools_extend_config.remove_headers_config`
+      - `+ l7policy.redirect_pools_extend_config.traffic_limit_config`
+      - `* l7policy.redirect_pools_extend_config.rewrite_url_config: object<CreateRewriteUrlConfig> -> object<UpdateRewriteUrlConfig>`
+    - 响应参数变更
+      - `+ l7policy.redirect_pools_config`
+      - `+ l7policy.redirect_pools_sticky_session_config`
+      - `+ l7policy.redirect_url_config.insert_headers_config`
+      - `+ l7policy.redirect_url_config.remove_headers_config`
+      - `+ l7policy.fixed_response_config.insert_headers_config`
+      - `+ l7policy.fixed_response_config.remove_headers_config`
+      - `+ l7policy.fixed_response_config.traffic_limit_config`
+      - `+ l7policy.redirect_pools_extend_config.insert_headers_config`
+      - `+ l7policy.redirect_pools_extend_config.remove_headers_config`
+      - `+ l7policy.redirect_pools_extend_config.traffic_limit_config`
+
+### HuaweiCloud SDK EVS
+
+- _新增特性_
+  - 支持接口`ChangeVolumeChargeMode`、`UnsubscribePostpaidVolume`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK FunctionGraph
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListWorkflowExecutions**
+    - 请求参数变更
+      - `+ offset`
+
+### HuaweiCloud SDK IAM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListAgencies**
+    - 响应参数变更
+      - `- agencies.duration`
+  - **CreateAgency**
+    - 响应参数变更
+      - `- agency.duration`
+  - **ShowAgency**
+    - 响应参数变更
+      - `- agency.duration`
+  - **UpdateAgency**
+    - 响应参数变更
+      - `- agency.duration`
+  - **ListRolesForGroupOnEnterpriseProject**
+    - 响应参数变更
+      - `* roles.policy.Statement.Resource: list<string> -> object`
+  - **KeystoneListPermissions**
+    - 响应参数变更
+      - `* roles.policy.Statement.Resource: list<string> -> object`
+  - **KeystoneShowPermission**
+    - 响应参数变更
+      - `* role.policy.Statement.Resource: list<string> -> object`
+  - **KeystoneListDomainPermissionsForGroup**
+    - 响应参数变更
+      - `* roles.policy.Statement.Resource: list<string> -> object`
+  - **KeystoneListProjectPermissionsForGroup**
+    - 响应参数变更
+      - `* roles.policy.Statement.Resource: list<string> -> object`
+  - **KeystoneListAllProjectPermissionsForGroup**
+    - 响应参数变更
+      - `* roles.policy.Statement.Resource: list<string> -> object`
+  - **ListDomainPermissionsForAgency**
+    - 响应参数变更
+      - `* roles.policy.Statement.Resource: list<string> -> object`
+  - **ListProjectPermissionsForAgency**
+    - 响应参数变更
+      - `* roles.policy.Statement.Resource: list<string> -> object`
+  - **ListRolesForUserOnEnterpriseProject**
+    - 响应参数变更
+      - `* roles.policy.Statement.Resource: list<string> -> object`
+  - **CreateCloudServiceCustomPolicy**
+    - 请求参数变更
+      - `* role.policy.Statement.Resource: object -> list<string>`
+    - 响应参数变更
+      - `* role.policy.Statement.Resource: object -> list<string>`
+  - **UpdateCloudServiceCustomPolicy**
+    - 请求参数变更
+      - `* role.policy.Statement.Resource: object -> list<string>`
+    - 响应参数变更
+      - `* role.policy.Statement.Resource: object -> list<string>`
+  - **CreateTemporaryAccessKeyByToken**
+    - 请求参数变更
+      - `* auth.identity.policy.Statement.Resource: object -> list<string>`
+  - **CreateTemporaryAccessKeyByAgency**
+    - 请求参数变更
+      - `* auth.identity.policy.Statement.Resource: object -> list<string>`
+
+### HuaweiCloud SDK IMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListImages**
+    - 请求参数变更
+      - `+ __platform: enum value [Huawei Cloud EulerOS]`
+
+### HuaweiCloud SDK KMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListKeys**
+    - 响应参数变更
+      - `- key_details.key_label`
+  - **ListKeyDetail**
+    - 响应参数变更
+      - `- key_info.key_label`
+  - **ListKmsByTags**
+    - 响应参数变更
+      - `- resources.resource_detail.key_label`
+
+### HuaweiCloud SDK Live
+
+- _新增特性_
+  - 支持接口`ListPlayDomainStreamInfo`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK Meeting
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateStartedConfConfig**
+    - 请求参数变更
+      - `+ isLock`
+      - `- labelPermission`
+  - **ShowRealTimeInfoOfMeeting**
+    - 响应参数变更
+      - `+ confInfo.coHosts`
+
+### HuaweiCloud SDK VOD
+
+- _新增特性_
+  - 支持接口`DeleteTranscodeProduct`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowVodStatistics**
+    - 响应参数变更
+      - `+ sample_data.storage_warm`
+      - `+ sample_data.storage_cold`
+
+### HuaweiCloud SDK VPN
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListP2cVgws`
+    - `ShowP2cVgw`
+    - `UpdateP2cVgw`
+    - `ListP2cVgwAvailabilityZones`
+    - `ListP2cVgwConnections`
+    - `ListVpnAccessPolicies`
+    - `CreateVpnAccessPolicy`
+    - `ShowVpnAccessPolicy`
+    - `UpdateVpnAccessPolicy`
+    - `DeleteVpnAccessPolicy`
+    - `ListVpnServersByVgw`
+    - `CreateVpnServer`
+    - `UpdateVpnServer`
+    - `ExportClientConfig`
+    - `CheckClientCaCertificate`
+    - `ImportClientCa`
+    - `ShowClientCa`
+    - `UpdateClientCa`
+    - `DeleteClientCa`
+    - `ListVpnServersByProject`
+    - `ListVpnUsers`
+    - `CreateVpnUser`
+    - `ShowVpnUser`
+    - `UpdateVpnUser`
+    - `DeleteVpnUser`
+    - `UpdateVpnUserPassword`
+    - `ResetVpnUserPassword`
+    - `ListVpnUserGroups`
+    - `CreateVpnUserGroup`
+    - `ShowVpnUserGroup`
+    - `UpdateVpnUserGroup`
+    - `DeleteVpnUserGroup`
+    - `AddVpnUsersToGroup`
+    - `RemoveVpnUsersFromGroup`
+    - `ListVpnUsersInGroup`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **BatchCreateResourceTags**
+    - 请求参数变更
+      - `+ resource_type: enum value [p2c-vpn-gateways]`
+  - **BatchDeleteResourceTags**
+    - 请求参数变更
+      - `+ resource_type: enum value [p2c-vpn-gateways]`
+  - **CountResourcesByTags**
+    - 请求参数变更
+      - `+ resource_type: enum value [p2c-vpn-gateways]`
+  - **ShowResourceTags**
+    - 请求参数变更
+      - `+ resource_type: enum value [p2c-vpn-gateways]`
+  - **ListProjectTags**
+    - 请求参数变更
+      - `+ resource_type: enum value [p2c-vpn-gateways]`
+  - **ListResourcesByTags**
+    - 请求参数变更
+      - `+ resource_type: enum value [p2c-vpn-gateways]`
+
 # 3.1.105 2024-07-11
 
 ### HuaweiCloud SDK BSSINTL

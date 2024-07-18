@@ -5659,6 +5659,3292 @@ class CceClient(Client):
 
         return http_info
 
+    def batch_create_autopilot_cluster_tags(self, request):
+        """批量添加指定集群的资源标签
+
+        该API用于批量添加指定集群的资源标签。
+        &gt; - 每个集群支持最多20个资源标签。
+        &gt; - 此接口为幂等接口：创建时，如果创建的标签已经存在（key/value均相同视为重复），默认处理成功；key相同，value不同时会覆盖原有标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchCreateAutopilotClusterTags
+        :type request: :class:`huaweicloudsdkcce.v3.BatchCreateAutopilotClusterTagsRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.BatchCreateAutopilotClusterTagsResponse`
+        """
+        http_info = self._batch_create_autopilot_cluster_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_create_autopilot_cluster_tags_invoker(self, request):
+        http_info = self._batch_create_autopilot_cluster_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_create_autopilot_cluster_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/autopilot/v3/projects/{project_id}/clusters/{cluster_id}/tags/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateAutopilotClusterTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_autopilot_cluster_tags(self, request):
+        """批量删除指定集群的资源标签
+
+        该API用于批量删除指定集群的资源标签。
+        &gt; - 此接口为幂等接口：删除时，如果删除的标签key不存在，默认处理成功。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteAutopilotClusterTags
+        :type request: :class:`huaweicloudsdkcce.v3.BatchDeleteAutopilotClusterTagsRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.BatchDeleteAutopilotClusterTagsResponse`
+        """
+        http_info = self._batch_delete_autopilot_cluster_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_autopilot_cluster_tags_invoker(self, request):
+        http_info = self._batch_delete_autopilot_cluster_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_autopilot_cluster_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/autopilot/v3/projects/{project_id}/clusters/{cluster_id}/tags/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteAutopilotClusterTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_autopilot_addon_instance(self, request):
+        """创建AddonInstance
+
+        根据提供的插件模板，安装插件实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateAutopilotAddonInstance
+        :type request: :class:`huaweicloudsdkcce.v3.CreateAutopilotAddonInstanceRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.CreateAutopilotAddonInstanceResponse`
+        """
+        http_info = self._create_autopilot_addon_instance_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_autopilot_addon_instance_invoker(self, request):
+        http_info = self._create_autopilot_addon_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_autopilot_addon_instance_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/autopilot/v3/addons",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAutopilotAddonInstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_autopilot_cluster(self, request):
+        """创建集群
+
+        该API用于创建一个空集群（即只有控制节点Master，没有工作节点Node）。请在调用本接口完成集群创建之后，通过[创建节点](cce_02_0242.xml)添加节点。
+        
+        
+        &gt;   - 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        &gt;   - 调用该接口创建集群时，默认不安装ICAgent，若需安装ICAgent，可在请求Body参数的annotations中加入\&quot;cluster.install.addons.external/install\&quot;:\&quot;[{\&quot;addonTemplateName\&quot;:\&quot;icagent\&quot;}]\&quot;的集群注解，将在创建集群时自动安装ICAgent。ICAgent是应用性能管理APM的采集代理，运行在应用所在的服务器上，用于实时采集探针所获取的数据，安装ICAgent是使用应用性能管理APM的前提。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateAutopilotCluster
+        :type request: :class:`huaweicloudsdkcce.v3.CreateAutopilotClusterRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.CreateAutopilotClusterResponse`
+        """
+        http_info = self._create_autopilot_cluster_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_autopilot_cluster_invoker(self, request):
+        http_info = self._create_autopilot_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_autopilot_cluster_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/autopilot/v3/projects/{project_id}/clusters",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAutopilotClusterResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_autopilot_cluster_master_snapshot(self, request):
+        """集群备份
+
+        集群备份
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateAutopilotClusterMasterSnapshot
+        :type request: :class:`huaweicloudsdkcce.v3.CreateAutopilotClusterMasterSnapshotRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.CreateAutopilotClusterMasterSnapshotResponse`
+        """
+        http_info = self._create_autopilot_cluster_master_snapshot_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_autopilot_cluster_master_snapshot_invoker(self, request):
+        http_info = self._create_autopilot_cluster_master_snapshot_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_autopilot_cluster_master_snapshot_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/autopilot/v3.1/projects/{project_id}/clusters/{cluster_id}/operation/snapshot",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAutopilotClusterMasterSnapshotResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_autopilot_kubernetes_cluster_cert(self, request):
+        """获取集群证书
+
+        该API用于获取指定集群的证书信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateAutopilotKubernetesClusterCert
+        :type request: :class:`huaweicloudsdkcce.v3.CreateAutopilotKubernetesClusterCertRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.CreateAutopilotKubernetesClusterCertResponse`
+        """
+        http_info = self._create_autopilot_kubernetes_cluster_cert_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_autopilot_kubernetes_cluster_cert_invoker(self, request):
+        http_info = self._create_autopilot_kubernetes_cluster_cert_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_autopilot_kubernetes_cluster_cert_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/autopilot/v3/projects/{project_id}/clusters/{cluster_id}/clustercert",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAutopilotKubernetesClusterCertResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["Port-ID", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_autopilot_post_check(self, request):
+        """集群升级后确认
+
+        集群升级后确认，该接口建议配合Console使用，主要用于升级步骤完成后，客户确认集群状态和业务正常后做反馈。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateAutopilotPostCheck
+        :type request: :class:`huaweicloudsdkcce.v3.CreateAutopilotPostCheckRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.CreateAutopilotPostCheckResponse`
+        """
+        http_info = self._create_autopilot_post_check_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_autopilot_post_check_invoker(self, request):
+        http_info = self._create_autopilot_post_check_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_autopilot_post_check_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/autopilot/v3/projects/{project_id}/clusters/{cluster_id}/operation/postcheck",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAutopilotPostCheckResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_autopilot_pre_check(self, request):
+        """集群升级前检查
+
+        集群升级前检查
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateAutopilotPreCheck
+        :type request: :class:`huaweicloudsdkcce.v3.CreateAutopilotPreCheckRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.CreateAutopilotPreCheckResponse`
+        """
+        http_info = self._create_autopilot_pre_check_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_autopilot_pre_check_invoker(self, request):
+        http_info = self._create_autopilot_pre_check_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_autopilot_pre_check_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/autopilot/v3/projects/{project_id}/clusters/{cluster_id}/operation/precheck",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAutopilotPreCheckResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_autopilot_release(self, request):
+        """创建模板实例
+
+        创建模板实例
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateAutopilotRelease
+        :type request: :class:`huaweicloudsdkcce.v3.CreateAutopilotReleaseRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.CreateAutopilotReleaseResponse`
+        """
+        http_info = self._create_autopilot_release_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_autopilot_release_invoker(self, request):
+        http_info = self._create_autopilot_release_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_autopilot_release_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/autopilot/cam/v3/clusters/{cluster_id}/releases",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAutopilotReleaseResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_autopilot_upgrade_work_flow(self, request):
+        """开启集群升级流程引导任务
+
+        该API用于创建一个集群升级流程引导任务。请在调用本接口完成引导任务创建之后，通过集群升级前检查开始检查任务。
+        升级流程任务用于控制集群升级任务的执行流程，执行流程为 升级前检查 &#x3D;&gt; 集群升级 &#x3D;&gt; 升级后检查。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateAutopilotUpgradeWorkFlow
+        :type request: :class:`huaweicloudsdkcce.v3.CreateAutopilotUpgradeWorkFlowRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.CreateAutopilotUpgradeWorkFlowResponse`
+        """
+        http_info = self._create_autopilot_upgrade_work_flow_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_autopilot_upgrade_work_flow_invoker(self, request):
+        http_info = self._create_autopilot_upgrade_work_flow_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_autopilot_upgrade_work_flow_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/autopilot/v3/projects/{project_id}/clusters/{cluster_id}/operation/upgradeworkflows",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAutopilotUpgradeWorkFlowResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_autopilot_addon_instance(self, request):
+        """删除AddonInstance
+
+        删除插件实例的功能。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteAutopilotAddonInstance
+        :type request: :class:`huaweicloudsdkcce.v3.DeleteAutopilotAddonInstanceRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.DeleteAutopilotAddonInstanceResponse`
+        """
+        http_info = self._delete_autopilot_addon_instance_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_autopilot_addon_instance_invoker(self, request):
+        http_info = self._delete_autopilot_addon_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_autopilot_addon_instance_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/autopilot/v3/addons/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAutopilotAddonInstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+        if 'cluster_id' in local_var_params:
+            query_params.append(('cluster_id', local_var_params['cluster_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_autopilot_chart(self, request):
+        """删除模板
+
+        删除模板
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteAutopilotChart
+        :type request: :class:`huaweicloudsdkcce.v3.DeleteAutopilotChartRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.DeleteAutopilotChartResponse`
+        """
+        http_info = self._delete_autopilot_chart_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_autopilot_chart_invoker(self, request):
+        http_info = self._delete_autopilot_chart_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_autopilot_chart_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/autopilot/v2/charts/{chart_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAutopilotChartResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'chart_id' in local_var_params:
+            path_params['chart_id'] = local_var_params['chart_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_autopilot_cluster(self, request):
+        """删除集群
+
+        该API用于删除一个指定的集群。
+        &gt;集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteAutopilotCluster
+        :type request: :class:`huaweicloudsdkcce.v3.DeleteAutopilotClusterRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.DeleteAutopilotClusterResponse`
+        """
+        http_info = self._delete_autopilot_cluster_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_autopilot_cluster_invoker(self, request):
+        http_info = self._delete_autopilot_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_autopilot_cluster_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/autopilot/v3/projects/{project_id}/clusters/{cluster_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAutopilotClusterResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+        if 'delete_efs' in local_var_params:
+            query_params.append(('delete_efs', local_var_params['delete_efs']))
+        if 'delete_eni' in local_var_params:
+            query_params.append(('delete_eni', local_var_params['delete_eni']))
+        if 'delete_net' in local_var_params:
+            query_params.append(('delete_net', local_var_params['delete_net']))
+        if 'delete_obs' in local_var_params:
+            query_params.append(('delete_obs', local_var_params['delete_obs']))
+        if 'delete_sfs30' in local_var_params:
+            query_params.append(('delete_sfs30', local_var_params['delete_sfs30']))
+        if 'lts_reclaim_policy' in local_var_params:
+            query_params.append(('lts_reclaim_policy', local_var_params['lts_reclaim_policy']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_autopilot_release(self, request):
+        """删除指定模板实例
+
+        删除指定模板实例
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteAutopilotRelease
+        :type request: :class:`huaweicloudsdkcce.v3.DeleteAutopilotReleaseRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.DeleteAutopilotReleaseResponse`
+        """
+        http_info = self._delete_autopilot_release_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_autopilot_release_invoker(self, request):
+        http_info = self._delete_autopilot_release_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_autopilot_release_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/autopilot/cam/v3/clusters/{cluster_id}/namespace/{namespace}/releases/{name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAutopilotReleaseResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'name' in local_var_params:
+            path_params['name'] = local_var_params['name']
+        if 'namespace' in local_var_params:
+            path_params['namespace'] = local_var_params['namespace']
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def download_autopilot_chart(self, request):
+        """下载模板
+
+        下载模板
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DownloadAutopilotChart
+        :type request: :class:`huaweicloudsdkcce.v3.DownloadAutopilotChartRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.DownloadAutopilotChartResponse`
+        """
+        http_info = self._download_autopilot_chart_http_info(request)
+        return self._call_api(**http_info)
+
+    def download_autopilot_chart_invoker(self, request):
+        http_info = self._download_autopilot_chart_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _download_autopilot_chart_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autopilot/v2/charts/{chart_id}/archive",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadAutopilotChartResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'chart_id' in local_var_params:
+            path_params['chart_id'] = local_var_params['chart_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_autopilot_addon_instances(self, request):
+        """获取AddonInstance列表
+
+        获取集群所有已安装插件实例
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAutopilotAddonInstances
+        :type request: :class:`huaweicloudsdkcce.v3.ListAutopilotAddonInstancesRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ListAutopilotAddonInstancesResponse`
+        """
+        http_info = self._list_autopilot_addon_instances_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_autopilot_addon_instances_invoker(self, request):
+        http_info = self._list_autopilot_addon_instances_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_autopilot_addon_instances_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autopilot/v3/addons",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAutopilotAddonInstancesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'cluster_id' in local_var_params:
+            query_params.append(('cluster_id', local_var_params['cluster_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_autopilot_addon_templates(self, request):
+        """查询AddonTemplates列表
+
+        插件模板查询接口，查询插件信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAutopilotAddonTemplates
+        :type request: :class:`huaweicloudsdkcce.v3.ListAutopilotAddonTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ListAutopilotAddonTemplatesResponse`
+        """
+        http_info = self._list_autopilot_addon_templates_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_autopilot_addon_templates_invoker(self, request):
+        http_info = self._list_autopilot_addon_templates_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_autopilot_addon_templates_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autopilot/v3/addontemplates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAutopilotAddonTemplatesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'addon_template_name' in local_var_params:
+            query_params.append(('addon_template_name', local_var_params['addon_template_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_autopilot_charts(self, request):
+        """获取模板列表
+
+        获取模板列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAutopilotCharts
+        :type request: :class:`huaweicloudsdkcce.v3.ListAutopilotChartsRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ListAutopilotChartsResponse`
+        """
+        http_info = self._list_autopilot_charts_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_autopilot_charts_invoker(self, request):
+        http_info = self._list_autopilot_charts_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_autopilot_charts_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autopilot/v2/charts",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAutopilotChartsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_autopilot_cluster_master_snapshot_tasks(self, request):
+        """获取集群备份任务详情列表
+
+        获取集群备份任务详情列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAutopilotClusterMasterSnapshotTasks
+        :type request: :class:`huaweicloudsdkcce.v3.ListAutopilotClusterMasterSnapshotTasksRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ListAutopilotClusterMasterSnapshotTasksResponse`
+        """
+        http_info = self._list_autopilot_cluster_master_snapshot_tasks_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_autopilot_cluster_master_snapshot_tasks_invoker(self, request):
+        http_info = self._list_autopilot_cluster_master_snapshot_tasks_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_autopilot_cluster_master_snapshot_tasks_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autopilot/v3.1/projects/{project_id}/clusters/{cluster_id}/operation/snapshot/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAutopilotClusterMasterSnapshotTasksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_autopilot_cluster_upgrade_feature_gates(self, request):
+        """获取集群升级特性开关配置
+
+        获取集群升级特性开关配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAutopilotClusterUpgradeFeatureGates
+        :type request: :class:`huaweicloudsdkcce.v3.ListAutopilotClusterUpgradeFeatureGatesRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ListAutopilotClusterUpgradeFeatureGatesResponse`
+        """
+        http_info = self._list_autopilot_cluster_upgrade_feature_gates_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_autopilot_cluster_upgrade_feature_gates_invoker(self, request):
+        http_info = self._list_autopilot_cluster_upgrade_feature_gates_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_autopilot_cluster_upgrade_feature_gates_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autopilot/v3/clusterupgradefeaturegates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAutopilotClusterUpgradeFeatureGatesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_autopilot_cluster_upgrade_paths(self, request):
+        """获取集群升级路径
+
+        获取集群升级路径
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAutopilotClusterUpgradePaths
+        :type request: :class:`huaweicloudsdkcce.v3.ListAutopilotClusterUpgradePathsRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ListAutopilotClusterUpgradePathsResponse`
+        """
+        http_info = self._list_autopilot_cluster_upgrade_paths_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_autopilot_cluster_upgrade_paths_invoker(self, request):
+        http_info = self._list_autopilot_cluster_upgrade_paths_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_autopilot_cluster_upgrade_paths_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autopilot/v3/clusterupgradepaths",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAutopilotClusterUpgradePathsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_autopilot_clusters(self, request):
+        """获取指定项目下的集群
+
+        该API用于获取指定项目下所有集群的详细信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAutopilotClusters
+        :type request: :class:`huaweicloudsdkcce.v3.ListAutopilotClustersRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ListAutopilotClustersResponse`
+        """
+        http_info = self._list_autopilot_clusters_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_autopilot_clusters_invoker(self, request):
+        http_info = self._list_autopilot_clusters_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_autopilot_clusters_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autopilot/v3/projects/{project_id}/clusters",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAutopilotClustersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'detail' in local_var_params:
+            query_params.append(('detail', local_var_params['detail']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'version' in local_var_params:
+            query_params.append(('version', local_var_params['version']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_autopilot_pre_check_tasks(self, request):
+        """获取集群升级前检查任务详情列表
+
+        获取集群升级前检查任务详情列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAutopilotPreCheckTasks
+        :type request: :class:`huaweicloudsdkcce.v3.ListAutopilotPreCheckTasksRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ListAutopilotPreCheckTasksResponse`
+        """
+        http_info = self._list_autopilot_pre_check_tasks_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_autopilot_pre_check_tasks_invoker(self, request):
+        http_info = self._list_autopilot_pre_check_tasks_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_autopilot_pre_check_tasks_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autopilot/v3/projects/{project_id}/clusters/{cluster_id}/operation/precheck/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAutopilotPreCheckTasksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_autopilot_releases(self, request):
+        """获取模板实例列表
+
+        获取模板实例列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAutopilotReleases
+        :type request: :class:`huaweicloudsdkcce.v3.ListAutopilotReleasesRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ListAutopilotReleasesResponse`
+        """
+        http_info = self._list_autopilot_releases_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_autopilot_releases_invoker(self, request):
+        http_info = self._list_autopilot_releases_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_autopilot_releases_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autopilot/cam/v3/clusters/{cluster_id}/releases",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAutopilotReleasesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+        if 'chart_id' in local_var_params:
+            query_params.append(('chart_id', local_var_params['chart_id']))
+        if 'namespace' in local_var_params:
+            query_params.append(('namespace', local_var_params['namespace']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_autopilot_upgrade_cluster_tasks(self, request):
+        """获取集群升级任务详情列表
+
+        获取集群升级任务详情列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAutopilotUpgradeClusterTasks
+        :type request: :class:`huaweicloudsdkcce.v3.ListAutopilotUpgradeClusterTasksRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ListAutopilotUpgradeClusterTasksResponse`
+        """
+        http_info = self._list_autopilot_upgrade_cluster_tasks_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_autopilot_upgrade_cluster_tasks_invoker(self, request):
+        http_info = self._list_autopilot_upgrade_cluster_tasks_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_autopilot_upgrade_cluster_tasks_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autopilot/v3/projects/{project_id}/clusters/{cluster_id}/operation/upgrade/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAutopilotUpgradeClusterTasksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_autopilot_upgrade_work_flows(self, request):
+        """获取UpgradeWorkFlows列表
+
+        获取历史集群升级引导任务列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAutopilotUpgradeWorkFlows
+        :type request: :class:`huaweicloudsdkcce.v3.ListAutopilotUpgradeWorkFlowsRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ListAutopilotUpgradeWorkFlowsResponse`
+        """
+        http_info = self._list_autopilot_upgrade_work_flows_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_autopilot_upgrade_work_flows_invoker(self, request):
+        http_info = self._list_autopilot_upgrade_work_flows_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_autopilot_upgrade_work_flows_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autopilot/v3/projects/{project_id}/clusters/{cluster_id}/operation/upgradeworkflows",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAutopilotUpgradeWorkFlowsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def retry_autopilot_upgrade_cluster_task(self, request):
+        """重试集群升级任务
+
+        重新执行失败的集群升级任务。
+        &gt; - 集群升级涉及多维度的组件升级操作，强烈建议统一通过CCE控制台执行交互式升级，降低集群升级过程的业务意外受损风险；
+        &gt; - 当前集群升级相关接口受限开放。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RetryAutopilotUpgradeClusterTask
+        :type request: :class:`huaweicloudsdkcce.v3.RetryAutopilotUpgradeClusterTaskRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.RetryAutopilotUpgradeClusterTaskResponse`
+        """
+        http_info = self._retry_autopilot_upgrade_cluster_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def retry_autopilot_upgrade_cluster_task_invoker(self, request):
+        http_info = self._retry_autopilot_upgrade_cluster_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _retry_autopilot_upgrade_cluster_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/autopilot/v3/projects/{project_id}/clusters/{cluster_id}/operation/upgrade/retry",
+            "request_type": request.__class__.__name__,
+            "response_type": "RetryAutopilotUpgradeClusterTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def rollback_autopilot_addon_instance(self, request):
+        """回滚AddonInstance
+
+        将插件实例回滚到升级前的版本。只有在当前插件实例版本支持回滚到升级前的版本（status.isRollbackable为true），且插件实例状态为running（运行中）、available（可用）、abnormal（不可用）、upgradeFailed（升级失败）、rollbackFailed（回滚失败）时支持回滚。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RollbackAutopilotAddonInstance
+        :type request: :class:`huaweicloudsdkcce.v3.RollbackAutopilotAddonInstanceRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.RollbackAutopilotAddonInstanceResponse`
+        """
+        http_info = self._rollback_autopilot_addon_instance_http_info(request)
+        return self._call_api(**http_info)
+
+    def rollback_autopilot_addon_instance_invoker(self, request):
+        http_info = self._rollback_autopilot_addon_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _rollback_autopilot_addon_instance_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/autopilot/v3/addons/{id}/operation/rollback",
+            "request_type": request.__class__.__name__,
+            "response_type": "RollbackAutopilotAddonInstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_autopilot_addon_instance(self, request):
+        """获取AddonInstance详情
+
+        获取插件实例详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAutopilotAddonInstance
+        :type request: :class:`huaweicloudsdkcce.v3.ShowAutopilotAddonInstanceRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ShowAutopilotAddonInstanceResponse`
+        """
+        http_info = self._show_autopilot_addon_instance_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_autopilot_addon_instance_invoker(self, request):
+        http_info = self._show_autopilot_addon_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_autopilot_addon_instance_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autopilot/v3/addons/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAutopilotAddonInstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+        if 'cluster_id' in local_var_params:
+            query_params.append(('cluster_id', local_var_params['cluster_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_autopilot_chart(self, request):
+        """获取模板
+
+        获取模板
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAutopilotChart
+        :type request: :class:`huaweicloudsdkcce.v3.ShowAutopilotChartRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ShowAutopilotChartResponse`
+        """
+        http_info = self._show_autopilot_chart_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_autopilot_chart_invoker(self, request):
+        http_info = self._show_autopilot_chart_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_autopilot_chart_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autopilot/v2/charts/{chart_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAutopilotChartResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'chart_id' in local_var_params:
+            path_params['chart_id'] = local_var_params['chart_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_autopilot_chart_values(self, request):
+        """获取模板Values
+
+        获取模板Values
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAutopilotChartValues
+        :type request: :class:`huaweicloudsdkcce.v3.ShowAutopilotChartValuesRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ShowAutopilotChartValuesResponse`
+        """
+        http_info = self._show_autopilot_chart_values_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_autopilot_chart_values_invoker(self, request):
+        http_info = self._show_autopilot_chart_values_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_autopilot_chart_values_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autopilot/v2/charts/{chart_id}/values",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAutopilotChartValuesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'chart_id' in local_var_params:
+            path_params['chart_id'] = local_var_params['chart_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_autopilot_cluster(self, request):
+        """获取指定的集群
+
+        该API用于获取指定集群的详细信息。
+        &gt;集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAutopilotCluster
+        :type request: :class:`huaweicloudsdkcce.v3.ShowAutopilotClusterRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ShowAutopilotClusterResponse`
+        """
+        http_info = self._show_autopilot_cluster_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_autopilot_cluster_invoker(self, request):
+        http_info = self._show_autopilot_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_autopilot_cluster_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autopilot/v3/projects/{project_id}/clusters/{cluster_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAutopilotClusterResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+        if 'detail' in local_var_params:
+            query_params.append(('detail', local_var_params['detail']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_autopilot_cluster_endpoints(self, request):
+        """获取集群访问的地址
+
+        该API用于通过集群ID获取集群访问的地址，包括PrivateIP(HA集群返回VIP)与PublicIP
+        &gt;集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAutopilotClusterEndpoints
+        :type request: :class:`huaweicloudsdkcce.v3.ShowAutopilotClusterEndpointsRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ShowAutopilotClusterEndpointsResponse`
+        """
+        http_info = self._show_autopilot_cluster_endpoints_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_autopilot_cluster_endpoints_invoker(self, request):
+        http_info = self._show_autopilot_cluster_endpoints_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_autopilot_cluster_endpoints_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autopilot/v3/projects/{project_id}/clusters/{cluster_id}/openapi",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAutopilotClusterEndpointsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_autopilot_cluster_upgrade_info(self, request):
+        """获取集群升级相关信息
+
+        获取集群升级相关信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAutopilotClusterUpgradeInfo
+        :type request: :class:`huaweicloudsdkcce.v3.ShowAutopilotClusterUpgradeInfoRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ShowAutopilotClusterUpgradeInfoResponse`
+        """
+        http_info = self._show_autopilot_cluster_upgrade_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_autopilot_cluster_upgrade_info_invoker(self, request):
+        http_info = self._show_autopilot_cluster_upgrade_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_autopilot_cluster_upgrade_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autopilot/v3/projects/{project_id}/clusters/{cluster_id}/upgradeinfo",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAutopilotClusterUpgradeInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_autopilot_job(self, request):
+        """获取任务信息
+
+        该API用于获取任务信息。通过某一任务请求下发后返回的jobID来查询指定任务的进度。
+        &gt; - 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径
+        &gt; - 该接口通常使用场景为：
+        &gt;   - 创建、删除集群时，查询相应任务的进度。
+        &gt;   - 创建、删除节点时，查询相应任务的进度。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAutopilotJob
+        :type request: :class:`huaweicloudsdkcce.v3.ShowAutopilotJobRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ShowAutopilotJobResponse`
+        """
+        http_info = self._show_autopilot_job_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_autopilot_job_invoker(self, request):
+        http_info = self._show_autopilot_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_autopilot_job_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autopilot/v3/projects/{project_id}/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAutopilotJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_autopilot_pre_check(self, request):
+        """获取集群升级前检查任务详情
+
+        获取集群升级前检查任务详情，任务ID由调用集群检查API后从响应体中uid字段获取。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAutopilotPreCheck
+        :type request: :class:`huaweicloudsdkcce.v3.ShowAutopilotPreCheckRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ShowAutopilotPreCheckResponse`
+        """
+        http_info = self._show_autopilot_pre_check_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_autopilot_pre_check_invoker(self, request):
+        http_info = self._show_autopilot_pre_check_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_autopilot_pre_check_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autopilot/v3/projects/{project_id}/clusters/{cluster_id}/operation/precheck/tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAutopilotPreCheckResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_autopilot_quotas(self, request):
+        """查询CCE服务下的资源配额
+
+        该API用于查询CCE服务下的资源配额。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAutopilotQuotas
+        :type request: :class:`huaweicloudsdkcce.v3.ShowAutopilotQuotasRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ShowAutopilotQuotasResponse`
+        """
+        http_info = self._show_autopilot_quotas_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_autopilot_quotas_invoker(self, request):
+        http_info = self._show_autopilot_quotas_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_autopilot_quotas_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autopilot/v3/projects/{project_id}/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAutopilotQuotasResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_autopilot_release(self, request):
+        """获取指定模板实例
+
+        获取指定模板实例
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAutopilotRelease
+        :type request: :class:`huaweicloudsdkcce.v3.ShowAutopilotReleaseRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ShowAutopilotReleaseResponse`
+        """
+        http_info = self._show_autopilot_release_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_autopilot_release_invoker(self, request):
+        http_info = self._show_autopilot_release_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_autopilot_release_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autopilot/cam/v3/clusters/{cluster_id}/namespace/{namespace}/releases/{name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAutopilotReleaseResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'name' in local_var_params:
+            path_params['name'] = local_var_params['name']
+        if 'namespace' in local_var_params:
+            path_params['namespace'] = local_var_params['namespace']
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_autopilot_release_history(self, request):
+        """查询指定模板实例历史记录
+
+        查询指定模板实例历史记录
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAutopilotReleaseHistory
+        :type request: :class:`huaweicloudsdkcce.v3.ShowAutopilotReleaseHistoryRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ShowAutopilotReleaseHistoryResponse`
+        """
+        http_info = self._show_autopilot_release_history_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_autopilot_release_history_invoker(self, request):
+        http_info = self._show_autopilot_release_history_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_autopilot_release_history_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autopilot/cam/v3/clusters/{cluster_id}/namespace/{namespace}/releases/{name}/history",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAutopilotReleaseHistoryResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'name' in local_var_params:
+            path_params['name'] = local_var_params['name']
+        if 'namespace' in local_var_params:
+            path_params['namespace'] = local_var_params['namespace']
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_autopilot_upgrade_cluster_task(self, request):
+        """获取集群升级任务详情
+
+        获取集群升级任务详情，任务ID由调用集群升级API后从响应体中uid字段获取。
+        &gt; - 集群升级涉及多维度的组件升级操作，强烈建议统一通过CCE控制台执行交互式升级，降低集群升级过程的业务意外受损风险；
+        &gt; - 当前集群升级相关接口受限开放。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAutopilotUpgradeClusterTask
+        :type request: :class:`huaweicloudsdkcce.v3.ShowAutopilotUpgradeClusterTaskRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ShowAutopilotUpgradeClusterTaskResponse`
+        """
+        http_info = self._show_autopilot_upgrade_cluster_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_autopilot_upgrade_cluster_task_invoker(self, request):
+        http_info = self._show_autopilot_upgrade_cluster_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_autopilot_upgrade_cluster_task_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autopilot/v3/projects/{project_id}/clusters/{cluster_id}/operation/upgrade/tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAutopilotUpgradeClusterTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_autopilot_upgrade_work_flow(self, request):
+        """获取指定集群升级引导任务详情
+
+        该API用于通过升级引导任务ID获取任务的详细信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAutopilotUpgradeWorkFlow
+        :type request: :class:`huaweicloudsdkcce.v3.ShowAutopilotUpgradeWorkFlowRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ShowAutopilotUpgradeWorkFlowResponse`
+        """
+        http_info = self._show_autopilot_upgrade_work_flow_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_autopilot_upgrade_work_flow_invoker(self, request):
+        http_info = self._show_autopilot_upgrade_work_flow_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_autopilot_upgrade_work_flow_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autopilot/v3/projects/{project_id}/clusters/{cluster_id}/operation/upgradeworkflows/{upgrade_workflow_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAutopilotUpgradeWorkFlowResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'upgrade_workflow_id' in local_var_params:
+            path_params['upgrade_workflow_id'] = local_var_params['upgrade_workflow_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_autopilot_user_charts_quotas(self, request):
+        """获取用户模板配额
+
+        获取用户模板配额
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAutopilotUserChartsQuotas
+        :type request: :class:`huaweicloudsdkcce.v3.ShowAutopilotUserChartsQuotasRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ShowAutopilotUserChartsQuotasResponse`
+        """
+        http_info = self._show_autopilot_user_charts_quotas_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_autopilot_user_charts_quotas_invoker(self, request):
+        http_info = self._show_autopilot_user_charts_quotas_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_autopilot_user_charts_quotas_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autopilot/v2/charts/{project_id}/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAutopilotUserChartsQuotasResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_autopilot_addon_instance(self, request):
+        """更新AddonInstance
+
+        更新插件实例的功能。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateAutopilotAddonInstance
+        :type request: :class:`huaweicloudsdkcce.v3.UpdateAutopilotAddonInstanceRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.UpdateAutopilotAddonInstanceResponse`
+        """
+        http_info = self._update_autopilot_addon_instance_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_autopilot_addon_instance_invoker(self, request):
+        http_info = self._update_autopilot_addon_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_autopilot_addon_instance_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/autopilot/v3/addons/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAutopilotAddonInstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_autopilot_chart(self, request):
+        """更新模板
+
+        更新模板
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateAutopilotChart
+        :type request: :class:`huaweicloudsdkcce.v3.UpdateAutopilotChartRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.UpdateAutopilotChartResponse`
+        """
+        http_info = self._update_autopilot_chart_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_autopilot_chart_invoker(self, request):
+        http_info = self._update_autopilot_chart_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_autopilot_chart_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/autopilot/v2/charts/{chart_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAutopilotChartResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'chart_id' in local_var_params:
+            path_params['chart_id'] = local_var_params['chart_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+        if 'parameters' in local_var_params:
+            form_params['parameters'] = local_var_params['parameters']
+        if 'content' in local_var_params:
+            form_params['content'] = local_var_params['content']
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_autopilot_cluster(self, request):
+        """更新指定的集群
+
+        该API用于更新指定的集群。
+        &gt;集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateAutopilotCluster
+        :type request: :class:`huaweicloudsdkcce.v3.UpdateAutopilotClusterRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.UpdateAutopilotClusterResponse`
+        """
+        http_info = self._update_autopilot_cluster_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_autopilot_cluster_invoker(self, request):
+        http_info = self._update_autopilot_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_autopilot_cluster_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/autopilot/v3/projects/{project_id}/clusters/{cluster_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAutopilotClusterResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_autopilot_release(self, request):
+        """更新指定模板实例
+
+        更新指定模板实例
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateAutopilotRelease
+        :type request: :class:`huaweicloudsdkcce.v3.UpdateAutopilotReleaseRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.UpdateAutopilotReleaseResponse`
+        """
+        http_info = self._update_autopilot_release_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_autopilot_release_invoker(self, request):
+        http_info = self._update_autopilot_release_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_autopilot_release_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/autopilot/cam/v3/clusters/{cluster_id}/namespace/{namespace}/releases/{name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAutopilotReleaseResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'name' in local_var_params:
+            path_params['name'] = local_var_params['name']
+        if 'namespace' in local_var_params:
+            path_params['namespace'] = local_var_params['namespace']
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def upgrade_autopilot_cluster(self, request):
+        """集群升级
+
+        集群升级。
+        &gt; - 集群升级涉及多维度的组件升级操作，强烈建议统一通过CCE控制台执行交互式升级，降低集群升级过程的业务意外受损风险；
+        &gt; - 当前集群升级相关接口受限开放。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpgradeAutopilotCluster
+        :type request: :class:`huaweicloudsdkcce.v3.UpgradeAutopilotClusterRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.UpgradeAutopilotClusterResponse`
+        """
+        http_info = self._upgrade_autopilot_cluster_http_info(request)
+        return self._call_api(**http_info)
+
+    def upgrade_autopilot_cluster_invoker(self, request):
+        http_info = self._upgrade_autopilot_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _upgrade_autopilot_cluster_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/autopilot/v3/projects/{project_id}/clusters/{cluster_id}/operation/upgrade",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpgradeAutopilotClusterResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def upgrade_autopilot_work_flow_update(self, request):
+        """更新指定集群升级引导任务状态
+
+        该API用于更新指定集群升级引导任务状态，当前仅适用于取消升级流程
+        调用该API时升级流程引导任务状态不能为进行中(running) 已完成(success) 已取消(cancel),升级子任务状态不能为running(进行中) init(已初始化) pause(任务被暂停) queue(队列中)
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpgradeAutopilotWorkFlowUpdate
+        :type request: :class:`huaweicloudsdkcce.v3.UpgradeAutopilotWorkFlowUpdateRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.UpgradeAutopilotWorkFlowUpdateResponse`
+        """
+        http_info = self._upgrade_autopilot_work_flow_update_http_info(request)
+        return self._call_api(**http_info)
+
+    def upgrade_autopilot_work_flow_update_invoker(self, request):
+        http_info = self._upgrade_autopilot_work_flow_update_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _upgrade_autopilot_work_flow_update_http_info(cls, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/autopilot/v3/projects/{project_id}/clusters/{cluster_id}/operation/upgradeworkflows/{upgrade_workflow_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpgradeAutopilotWorkFlowUpdateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'upgrade_workflow_id' in local_var_params:
+            path_params['upgrade_workflow_id'] = local_var_params['upgrade_workflow_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def upload_autopilot_chart(self, request):
+        """上传模板
+
+        上传模板
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UploadAutopilotChart
+        :type request: :class:`huaweicloudsdkcce.v3.UploadAutopilotChartRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.UploadAutopilotChartResponse`
+        """
+        http_info = self._upload_autopilot_chart_http_info(request)
+        return self._call_api(**http_info)
+
+    def upload_autopilot_chart_invoker(self, request):
+        http_info = self._upload_autopilot_chart_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _upload_autopilot_chart_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/autopilot/v2/charts",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadAutopilotChartResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+        if 'parameters' in local_var_params:
+            form_params['parameters'] = local_var_params['parameters']
+        if 'content' in local_var_params:
+            form_params['content'] = local_var_params['content']
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def _call_api(self, **kwargs):
         try:
             return self.do_http_request(**kwargs)

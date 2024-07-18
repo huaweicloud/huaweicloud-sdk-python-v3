@@ -3620,6 +3620,8 @@ class FunctionGraphClient(Client):
         query_params = []
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
         if 'status' in local_var_params:
             query_params.append(('status', local_var_params['status']))
         if 'start_time' in local_var_params:

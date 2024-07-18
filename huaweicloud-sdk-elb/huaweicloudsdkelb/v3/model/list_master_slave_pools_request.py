@@ -67,7 +67,7 @@ class ListMasterSlavePoolsRequest:
 
         :param marker: 上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
         :type marker: str
-        :param limit: 每页返回的个数。
+        :param limit: 参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
         :type limit: int
         :param page_reverse: 是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse&#x3D;true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
         :type page_reverse: bool
@@ -81,7 +81,7 @@ class ListMasterSlavePoolsRequest:
         :type name: list[str]
         :param loadbalancer_id: 后端云服务器组绑定的负载均衡器ID。  支持多值查询，查询条件格式：*loadbalancer_id&#x3D;xxx&amp;loadbalancer_id&#x3D;xxx*。
         :type loadbalancer_id: list[str]
-        :param protocol: 后端云服务器组的后端协议。  取值：TCP、UDP、HTTP、HTTPS和QUIC。  支持多值查询，查询条件格式：*protocol&#x3D;xxx&amp;protocol&#x3D;xxx*。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt,dt_test)
+        :param protocol: 后端云服务器组的后端协议。  取值：TCP、UDP、[IP、](tag:hws_eu)TLS、GRPC、HTTP、HTTPS和QUIC。 IP类型为网关型LB独有的后端服务器组协议。  支持多值查询，查询条件格式：*protocol&#x3D;xxx&amp;protocol&#x3D;xxx*。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt,dt_test)
         :type protocol: list[str]
         :param lb_algorithm: 后端云服务器组的负载均衡算法。  取值： 1、ROUND_ROBIN：加权轮询算法。 2、LEAST_CONNECTIONS：加权最少连接算法。 3、SOURCE_IP：源IP算法。 4、QUIC_CID：连接ID算法。  支持多值查询，查询条件格式：*lb_algorithm&#x3D;xxx&amp;lb_algorithm&#x3D;xxx*。  [不支持QUIC_CID。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt,dt_test)
         :type lb_algorithm: list[str]
@@ -193,7 +193,7 @@ class ListMasterSlavePoolsRequest:
     def limit(self):
         """Gets the limit of this ListMasterSlavePoolsRequest.
 
-        每页返回的个数。
+        参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
 
         :return: The limit of this ListMasterSlavePoolsRequest.
         :rtype: int
@@ -204,7 +204,7 @@ class ListMasterSlavePoolsRequest:
     def limit(self, limit):
         """Sets the limit of this ListMasterSlavePoolsRequest.
 
-        每页返回的个数。
+        参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
 
         :param limit: The limit of this ListMasterSlavePoolsRequest.
         :type limit: int
@@ -347,7 +347,7 @@ class ListMasterSlavePoolsRequest:
     def protocol(self):
         """Gets the protocol of this ListMasterSlavePoolsRequest.
 
-        后端云服务器组的后端协议。  取值：TCP、UDP、HTTP、HTTPS和QUIC。  支持多值查询，查询条件格式：*protocol=xxx&protocol=xxx*。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt,dt_test)
+        后端云服务器组的后端协议。  取值：TCP、UDP、[IP、](tag:hws_eu)TLS、GRPC、HTTP、HTTPS和QUIC。 IP类型为网关型LB独有的后端服务器组协议。  支持多值查询，查询条件格式：*protocol=xxx&protocol=xxx*。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt,dt_test)
 
         :return: The protocol of this ListMasterSlavePoolsRequest.
         :rtype: list[str]
@@ -358,7 +358,7 @@ class ListMasterSlavePoolsRequest:
     def protocol(self, protocol):
         """Sets the protocol of this ListMasterSlavePoolsRequest.
 
-        后端云服务器组的后端协议。  取值：TCP、UDP、HTTP、HTTPS和QUIC。  支持多值查询，查询条件格式：*protocol=xxx&protocol=xxx*。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt,dt_test)
+        后端云服务器组的后端协议。  取值：TCP、UDP、[IP、](tag:hws_eu)TLS、GRPC、HTTP、HTTPS和QUIC。 IP类型为网关型LB独有的后端服务器组协议。  支持多值查询，查询条件格式：*protocol=xxx&protocol=xxx*。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt,dt_test)
 
         :param protocol: The protocol of this ListMasterSlavePoolsRequest.
         :type protocol: list[str]

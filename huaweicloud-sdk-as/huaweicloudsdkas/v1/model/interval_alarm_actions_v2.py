@@ -20,8 +20,9 @@ class IntervalAlarmActionsV2:
         'operation': 'str',
         'limits': 'int',
         'size': 'int',
-        'lower_bound': 'int',
-        'upper_bound': 'int'
+        'lower_bound': 'float',
+        'upper_bound': 'float',
+        'percentage': 'int'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class IntervalAlarmActionsV2:
         'limits': 'limits',
         'size': 'size',
         'lower_bound': 'lower_bound',
-        'upper_bound': 'upper_bound'
+        'upper_bound': 'upper_bound',
+        'percentage': 'percentage'
     }
 
-    def __init__(self, operation=None, limits=None, size=None, lower_bound=None, upper_bound=None):
+    def __init__(self, operation=None, limits=None, size=None, lower_bound=None, upper_bound=None, percentage=None):
         """IntervalAlarmActionsV2
 
         The model defined in huaweicloud sdk
@@ -44,9 +46,11 @@ class IntervalAlarmActionsV2:
         :param size: 操作大小，取值范围为0到300的整数，默认为1。当scaling_resource_type为SCALING_GROUP时，size为实例个数,取值范围为0-300的整数，默认为1。当scaling_resource_type为BANDWIDTH时，size表示带宽大小，单位为Mbit/s，取值范围为1到300的整数，默认为1。当scaling_resource_type为SCALING_GROUP时，size和percentage参数只能选其中一个进行配置。
         :type size: int
         :param lower_bound: 
-        :type lower_bound: int
+        :type lower_bound: float
         :param upper_bound: 
-        :type upper_bound: int
+        :type upper_bound: float
+        :param percentage: 操作百分比，取值为0到20000的整数。当scaling_resource_type为SCALING_GROUP时，size和instance_percentage参数均无配置，则size默认为1。当scaling_resource_type为BANDWIDTH时，不支持配置instance_percentage参数。
+        :type percentage: int
         """
         
         
@@ -56,6 +60,7 @@ class IntervalAlarmActionsV2:
         self._size = None
         self._lower_bound = None
         self._upper_bound = None
+        self._percentage = None
         self.discriminator = None
 
         if operation is not None:
@@ -68,6 +73,8 @@ class IntervalAlarmActionsV2:
             self.lower_bound = lower_bound
         if upper_bound is not None:
             self.upper_bound = upper_bound
+        if percentage is not None:
+            self.percentage = percentage
 
     @property
     def operation(self):
@@ -140,7 +147,7 @@ class IntervalAlarmActionsV2:
         """Gets the lower_bound of this IntervalAlarmActionsV2.
 
         :return: The lower_bound of this IntervalAlarmActionsV2.
-        :rtype: int
+        :rtype: float
         """
         return self._lower_bound
 
@@ -149,7 +156,7 @@ class IntervalAlarmActionsV2:
         """Sets the lower_bound of this IntervalAlarmActionsV2.
 
         :param lower_bound: The lower_bound of this IntervalAlarmActionsV2.
-        :type lower_bound: int
+        :type lower_bound: float
         """
         self._lower_bound = lower_bound
 
@@ -158,7 +165,7 @@ class IntervalAlarmActionsV2:
         """Gets the upper_bound of this IntervalAlarmActionsV2.
 
         :return: The upper_bound of this IntervalAlarmActionsV2.
-        :rtype: int
+        :rtype: float
         """
         return self._upper_bound
 
@@ -167,9 +174,31 @@ class IntervalAlarmActionsV2:
         """Sets the upper_bound of this IntervalAlarmActionsV2.
 
         :param upper_bound: The upper_bound of this IntervalAlarmActionsV2.
-        :type upper_bound: int
+        :type upper_bound: float
         """
         self._upper_bound = upper_bound
+
+    @property
+    def percentage(self):
+        """Gets the percentage of this IntervalAlarmActionsV2.
+
+        操作百分比，取值为0到20000的整数。当scaling_resource_type为SCALING_GROUP时，size和instance_percentage参数均无配置，则size默认为1。当scaling_resource_type为BANDWIDTH时，不支持配置instance_percentage参数。
+
+        :return: The percentage of this IntervalAlarmActionsV2.
+        :rtype: int
+        """
+        return self._percentage
+
+    @percentage.setter
+    def percentage(self, percentage):
+        """Sets the percentage of this IntervalAlarmActionsV2.
+
+        操作百分比，取值为0到20000的整数。当scaling_resource_type为SCALING_GROUP时，size和instance_percentage参数均无配置，则size默认为1。当scaling_resource_type为BANDWIDTH时，不支持配置instance_percentage参数。
+
+        :param percentage: The percentage of this IntervalAlarmActionsV2.
+        :type percentage: int
+        """
+        self._percentage = percentage
 
     def to_dict(self):
         """Returns the model properties as a dict"""

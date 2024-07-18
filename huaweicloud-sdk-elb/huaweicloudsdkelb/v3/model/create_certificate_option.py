@@ -55,7 +55,7 @@ class CreateCertificateOption:
         :type certificate: str
         :param description: 证书的描述。
         :type description: str
-        :param domain: 服务器证书所签域名。该字段仅type为server时有效。  总长度为0-10000，由若干普通域名或泛域名组成，域名之间以\&quot;,\&quot;分割，不超过100个域名。  普通域名：由若干字符串组成，字符串间以\&quot;.\&quot;分割，单个字符串长度不超过63个字符， 只能包含英文字母、数字或\&quot;-\&quot;，且必须以字母或数字开头和结尾。例：www.test.com；  泛域名：在普通域名的基础上仅允许首字母为\&quot;\&quot;。例：.test.com
+        :param domain: 服务器证书所签域名。该字段仅type为server时有效。  总长度为0-10000，由若干普通域名或泛域名组成，域名之间以\&quot;,\&quot;分割，不超过100个域名。  普通域名：由若干字符串组成，字符串间以\&quot;.\&quot;分割，单个字符串长度不超过63个字符， 只能包含英文字母、数字或\&quot;-\&quot;，且必须以字母或数字开头和结尾。例：www.test.com；  泛域名：在普通域名的基础上仅允许首字母为\&quot;\\*\&quot;。例：\\*.test.com
         :type domain: str
         :param name: 证书的名称。
         :type name: str
@@ -90,7 +90,8 @@ class CreateCertificateOption:
 
         if admin_state_up is not None:
             self.admin_state_up = admin_state_up
-        self.certificate = certificate
+        if certificate is not None:
+            self.certificate = certificate
         if description is not None:
             self.description = description
         if domain is not None:
@@ -180,7 +181,7 @@ class CreateCertificateOption:
     def domain(self):
         """Gets the domain of this CreateCertificateOption.
 
-        服务器证书所签域名。该字段仅type为server时有效。  总长度为0-10000，由若干普通域名或泛域名组成，域名之间以\",\"分割，不超过100个域名。  普通域名：由若干字符串组成，字符串间以\".\"分割，单个字符串长度不超过63个字符， 只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。例：www.test.com；  泛域名：在普通域名的基础上仅允许首字母为\"\"。例：.test.com
+        服务器证书所签域名。该字段仅type为server时有效。  总长度为0-10000，由若干普通域名或泛域名组成，域名之间以\",\"分割，不超过100个域名。  普通域名：由若干字符串组成，字符串间以\".\"分割，单个字符串长度不超过63个字符， 只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。例：www.test.com；  泛域名：在普通域名的基础上仅允许首字母为\"\\*\"。例：\\*.test.com
 
         :return: The domain of this CreateCertificateOption.
         :rtype: str
@@ -191,7 +192,7 @@ class CreateCertificateOption:
     def domain(self, domain):
         """Sets the domain of this CreateCertificateOption.
 
-        服务器证书所签域名。该字段仅type为server时有效。  总长度为0-10000，由若干普通域名或泛域名组成，域名之间以\",\"分割，不超过100个域名。  普通域名：由若干字符串组成，字符串间以\".\"分割，单个字符串长度不超过63个字符， 只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。例：www.test.com；  泛域名：在普通域名的基础上仅允许首字母为\"\"。例：.test.com
+        服务器证书所签域名。该字段仅type为server时有效。  总长度为0-10000，由若干普通域名或泛域名组成，域名之间以\",\"分割，不超过100个域名。  普通域名：由若干字符串组成，字符串间以\".\"分割，单个字符串长度不超过63个字符， 只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。例：www.test.com；  泛域名：在普通域名的基础上仅允许首字母为\"\\*\"。例：\\*.test.com
 
         :param domain: The domain of this CreateCertificateOption.
         :type domain: str

@@ -20,7 +20,7 @@ class ListAllMembersResponse(SdkResponse):
     openapi_types = {
         'request_id': 'str',
         'page_info': 'PageInfo',
-        'members': 'list[Member]'
+        'members': 'list[MemberInfo]'
     }
 
     attribute_map = {
@@ -39,7 +39,7 @@ class ListAllMembersResponse(SdkResponse):
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
         :param members: 后端服务器对象列表。
-        :type members: list[:class:`huaweicloudsdkelb.v3.Member`]
+        :type members: list[:class:`huaweicloudsdkelb.v3.MemberInfo`]
         """
         
         super(ListAllMembersResponse, self).__init__()
@@ -103,7 +103,7 @@ class ListAllMembersResponse(SdkResponse):
         后端服务器对象列表。
 
         :return: The members of this ListAllMembersResponse.
-        :rtype: list[:class:`huaweicloudsdkelb.v3.Member`]
+        :rtype: list[:class:`huaweicloudsdkelb.v3.MemberInfo`]
         """
         return self._members
 
@@ -114,7 +114,7 @@ class ListAllMembersResponse(SdkResponse):
         后端服务器对象列表。
 
         :param members: The members of this ListAllMembersResponse.
-        :type members: list[:class:`huaweicloudsdkelb.v3.Member`]
+        :type members: list[:class:`huaweicloudsdkelb.v3.MemberInfo`]
         """
         self._members = members
 

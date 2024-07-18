@@ -37,7 +37,9 @@ class Traces:
         'request_id': 'str',
         'location_info': 'str',
         'endpoint': 'str',
-        'resource_url': 'str'
+        'resource_url': 'str',
+        'enterprise_project_id': 'str',
+        'resource_account_id': 'str'
     }
 
     attribute_map = {
@@ -61,10 +63,12 @@ class Traces:
         'request_id': 'request_id',
         'location_info': 'location_info',
         'endpoint': 'endpoint',
-        'resource_url': 'resource_url'
+        'resource_url': 'resource_url',
+        'enterprise_project_id': 'enterprise_project_id',
+        'resource_account_id': 'resource_account_id'
     }
 
-    def __init__(self, resource_id=None, trace_name=None, trace_rating=None, trace_type=None, request=None, response=None, code=None, api_version=None, message=None, record_time=None, trace_id=None, time=None, user=None, service_type=None, resource_type=None, source_ip=None, resource_name=None, request_id=None, location_info=None, endpoint=None, resource_url=None):
+    def __init__(self, resource_id=None, trace_name=None, trace_rating=None, trace_type=None, request=None, response=None, code=None, api_version=None, message=None, record_time=None, trace_id=None, time=None, user=None, service_type=None, resource_type=None, source_ip=None, resource_name=None, request_id=None, location_info=None, endpoint=None, resource_url=None, enterprise_project_id=None, resource_account_id=None):
         """Traces
 
         The model defined in huaweicloud sdk
@@ -111,6 +115,10 @@ class Traces:
         :type endpoint: str
         :param resource_url: 云资源的详情页面的访问链接（不含endpoint）
         :type resource_url: str
+        :param enterprise_project_id: 标识资源所在的企业项目ID。
+        :type enterprise_project_id: str
+        :param resource_account_id: 标识资源所在的账号ID。仅在跨租户操作资源时有值。
+        :type resource_account_id: str
         """
         
         
@@ -136,6 +144,8 @@ class Traces:
         self._location_info = None
         self._endpoint = None
         self._resource_url = None
+        self._enterprise_project_id = None
+        self._resource_account_id = None
         self.discriminator = None
 
         if resource_id is not None:
@@ -180,6 +190,10 @@ class Traces:
             self.endpoint = endpoint
         if resource_url is not None:
             self.resource_url = resource_url
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
+        if resource_account_id is not None:
+            self.resource_account_id = resource_account_id
 
     @property
     def resource_id(self):
@@ -638,6 +652,50 @@ class Traces:
         :type resource_url: str
         """
         self._resource_url = resource_url
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this Traces.
+
+        标识资源所在的企业项目ID。
+
+        :return: The enterprise_project_id of this Traces.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this Traces.
+
+        标识资源所在的企业项目ID。
+
+        :param enterprise_project_id: The enterprise_project_id of this Traces.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def resource_account_id(self):
+        """Gets the resource_account_id of this Traces.
+
+        标识资源所在的账号ID。仅在跨租户操作资源时有值。
+
+        :return: The resource_account_id of this Traces.
+        :rtype: str
+        """
+        return self._resource_account_id
+
+    @resource_account_id.setter
+    def resource_account_id(self, resource_account_id):
+        """Sets the resource_account_id of this Traces.
+
+        标识资源所在的账号ID。仅在跨租户操作资源时有值。
+
+        :param resource_account_id: The resource_account_id of this Traces.
+        :type resource_account_id: str
+        """
+        self._resource_account_id = resource_account_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -55,7 +55,7 @@ class ListL7RulesRequest:
 
         :param l7policy_id: 策略ID。
         :type l7policy_id: str
-        :param limit: 每页返回的个数。
+        :param limit: 参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
         :type limit: int
         :param marker: 上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
         :type marker: str
@@ -150,7 +150,7 @@ class ListL7RulesRequest:
     def limit(self):
         """Gets the limit of this ListL7RulesRequest.
 
-        每页返回的个数。
+        参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
 
         :return: The limit of this ListL7RulesRequest.
         :rtype: int
@@ -161,7 +161,7 @@ class ListL7RulesRequest:
     def limit(self, limit):
         """Sets the limit of this ListL7RulesRequest.
 
-        每页返回的个数。
+        参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
 
         :param limit: The limit of this ListL7RulesRequest.
         :type limit: int

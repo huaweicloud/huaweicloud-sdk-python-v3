@@ -37,13 +37,13 @@ class CreateLoadBalancerPublicIpOption:
 
         The model defined in huaweicloud sdk
 
-        :param ip_version: IP版本。  取值：4表示IPv4，6表示IPv6。  [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
+        :param ip_version: 参数解释：IP版本。  约束限制：取值只有4和6。4：IPv4, 6: IPv6。 [不支持IPv6，请勿设置为6。](tag:dt,dt_test)  取值范围：  - 4：表示IPv4。  - 6：表示IPv6。  默认取值：4
         :type ip_version: int
-        :param network_type: 弹性公网IP的网络类型，默认5_bgp，更多请参考弹性公网ip创建。  [华南-深圳局点该参数取值只能为5_gray](tag:hws) [只支持设置为5_gray](tag:dt)
+        :param network_type: 参数解释：弹性公网IP的网络类型，默认5_bgp，更多请参考弹性公网ip创建。  约束限制： [华南-深圳局点该参数取值只能为5_gray。](tag:hws) [只支持设置为5_gray。](tag:dt)  取值范围：5_bgp。  默认取值：5_bgp。
         :type network_type: str
-        :param billing_info: 资源账单信息。  取值： - 空：按需计费。 [- 非空：包周期计费。](tag:hws,hk,hws_eu,otc,tlf,ctc,hcso,sbc,g42,cmcc,hk_g42,dt_test,hcso_dt,mix,hk_sbc,hws_ocb,fcs,fcs_dt,dt)  [不支持该字段，请勿使用](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
+        :param billing_info: 参数解释：计费订单信息。  约束限制： - 空：按需计费。 [ - 非空：包周期计费。格式：order_id:product_id:region_id:project_id ](tag:hws,hk,hws_eu,otc,tlf,ctc,hcso,sbc,g42,cmcc,hk_g42,dt_test,hcso_dt,mix,hk_sbc,hws_ocb,hk_vdf,fcs,fcs_dt,dt)  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,hcso,hk_vdf,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
         :type billing_info: str
-        :param description: 弹性公网IP的描述信息，不支持特殊字符
+        :param description: 参数解释：弹性公网IP的描述信息。
         :type description: str
         :param bandwidth: 
         :type bandwidth: :class:`huaweicloudsdkelb.v3.CreateLoadBalancerBandwidthOption`
@@ -71,7 +71,7 @@ class CreateLoadBalancerPublicIpOption:
     def ip_version(self):
         """Gets the ip_version of this CreateLoadBalancerPublicIpOption.
 
-        IP版本。  取值：4表示IPv4，6表示IPv6。  [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
+        参数解释：IP版本。  约束限制：取值只有4和6。4：IPv4, 6: IPv6。 [不支持IPv6，请勿设置为6。](tag:dt,dt_test)  取值范围：  - 4：表示IPv4。  - 6：表示IPv6。  默认取值：4
 
         :return: The ip_version of this CreateLoadBalancerPublicIpOption.
         :rtype: int
@@ -82,7 +82,7 @@ class CreateLoadBalancerPublicIpOption:
     def ip_version(self, ip_version):
         """Sets the ip_version of this CreateLoadBalancerPublicIpOption.
 
-        IP版本。  取值：4表示IPv4，6表示IPv6。  [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
+        参数解释：IP版本。  约束限制：取值只有4和6。4：IPv4, 6: IPv6。 [不支持IPv6，请勿设置为6。](tag:dt,dt_test)  取值范围：  - 4：表示IPv4。  - 6：表示IPv6。  默认取值：4
 
         :param ip_version: The ip_version of this CreateLoadBalancerPublicIpOption.
         :type ip_version: int
@@ -93,7 +93,7 @@ class CreateLoadBalancerPublicIpOption:
     def network_type(self):
         """Gets the network_type of this CreateLoadBalancerPublicIpOption.
 
-        弹性公网IP的网络类型，默认5_bgp，更多请参考弹性公网ip创建。  [华南-深圳局点该参数取值只能为5_gray](tag:hws) [只支持设置为5_gray](tag:dt)
+        参数解释：弹性公网IP的网络类型，默认5_bgp，更多请参考弹性公网ip创建。  约束限制： [华南-深圳局点该参数取值只能为5_gray。](tag:hws) [只支持设置为5_gray。](tag:dt)  取值范围：5_bgp。  默认取值：5_bgp。
 
         :return: The network_type of this CreateLoadBalancerPublicIpOption.
         :rtype: str
@@ -104,7 +104,7 @@ class CreateLoadBalancerPublicIpOption:
     def network_type(self, network_type):
         """Sets the network_type of this CreateLoadBalancerPublicIpOption.
 
-        弹性公网IP的网络类型，默认5_bgp，更多请参考弹性公网ip创建。  [华南-深圳局点该参数取值只能为5_gray](tag:hws) [只支持设置为5_gray](tag:dt)
+        参数解释：弹性公网IP的网络类型，默认5_bgp，更多请参考弹性公网ip创建。  约束限制： [华南-深圳局点该参数取值只能为5_gray。](tag:hws) [只支持设置为5_gray。](tag:dt)  取值范围：5_bgp。  默认取值：5_bgp。
 
         :param network_type: The network_type of this CreateLoadBalancerPublicIpOption.
         :type network_type: str
@@ -115,7 +115,7 @@ class CreateLoadBalancerPublicIpOption:
     def billing_info(self):
         """Gets the billing_info of this CreateLoadBalancerPublicIpOption.
 
-        资源账单信息。  取值： - 空：按需计费。 [- 非空：包周期计费。](tag:hws,hk,hws_eu,otc,tlf,ctc,hcso,sbc,g42,cmcc,hk_g42,dt_test,hcso_dt,mix,hk_sbc,hws_ocb,fcs,fcs_dt,dt)  [不支持该字段，请勿使用](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
+        参数解释：计费订单信息。  约束限制： - 空：按需计费。 [ - 非空：包周期计费。格式：order_id:product_id:region_id:project_id ](tag:hws,hk,hws_eu,otc,tlf,ctc,hcso,sbc,g42,cmcc,hk_g42,dt_test,hcso_dt,mix,hk_sbc,hws_ocb,hk_vdf,fcs,fcs_dt,dt)  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,hcso,hk_vdf,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
 
         :return: The billing_info of this CreateLoadBalancerPublicIpOption.
         :rtype: str
@@ -126,7 +126,7 @@ class CreateLoadBalancerPublicIpOption:
     def billing_info(self, billing_info):
         """Sets the billing_info of this CreateLoadBalancerPublicIpOption.
 
-        资源账单信息。  取值： - 空：按需计费。 [- 非空：包周期计费。](tag:hws,hk,hws_eu,otc,tlf,ctc,hcso,sbc,g42,cmcc,hk_g42,dt_test,hcso_dt,mix,hk_sbc,hws_ocb,fcs,fcs_dt,dt)  [不支持该字段，请勿使用](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
+        参数解释：计费订单信息。  约束限制： - 空：按需计费。 [ - 非空：包周期计费。格式：order_id:product_id:region_id:project_id ](tag:hws,hk,hws_eu,otc,tlf,ctc,hcso,sbc,g42,cmcc,hk_g42,dt_test,hcso_dt,mix,hk_sbc,hws_ocb,hk_vdf,fcs,fcs_dt,dt)  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,hcso,hk_vdf,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
 
         :param billing_info: The billing_info of this CreateLoadBalancerPublicIpOption.
         :type billing_info: str
@@ -137,7 +137,7 @@ class CreateLoadBalancerPublicIpOption:
     def description(self):
         """Gets the description of this CreateLoadBalancerPublicIpOption.
 
-        弹性公网IP的描述信息，不支持特殊字符
+        参数解释：弹性公网IP的描述信息。
 
         :return: The description of this CreateLoadBalancerPublicIpOption.
         :rtype: str
@@ -148,7 +148,7 @@ class CreateLoadBalancerPublicIpOption:
     def description(self, description):
         """Sets the description of this CreateLoadBalancerPublicIpOption.
 
-        弹性公网IP的描述信息，不支持特殊字符
+        参数解释：弹性公网IP的描述信息。
 
         :param description: The description of this CreateLoadBalancerPublicIpOption.
         :type description: str

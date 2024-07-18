@@ -69,7 +69,7 @@ class Quota:
         :type listener: int
         :param l7policy: 转发策略配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
         :type l7policy: int
-        :param condition_per_policy: 转发策略配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        :param condition_per_policy: 单个转发策略下所有转发规则的condition总数配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
         :type condition_per_policy: int
         :param pool: 后端云服务器组配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
         :type pool: int
@@ -79,13 +79,13 @@ class Quota:
         :type member: int
         :param members_per_pool: 单个pool下的member的配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
         :type members_per_pool: int
-        :param listeners_per_pool: 单个pool下的member的配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        :param listeners_per_pool: 单个监听器下的pool的配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
         :type listeners_per_pool: int
         :param ipgroup: IP地址组配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
         :type ipgroup: int
-        :param ipgroup_bindings: IP地址组配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
+        :param ipgroup_bindings: 单个IP地址组可以关联的监听器数量配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
         :type ipgroup_bindings: int
-        :param ipgroup_max_length: IP地址组配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
+        :param ipgroup_max_length: 单个监听器下关联的所有IP地址组的ip列表中的IP总数不能超过ipgroup_max_length。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
         :type ipgroup_max_length: int
         :param security_policy: 自定义安全策略配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
         :type security_policy: int
@@ -244,7 +244,7 @@ class Quota:
     def condition_per_policy(self):
         """Gets the condition_per_policy of this Quota.
 
-        转发策略配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        单个转发策略下所有转发规则的condition总数配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
         :return: The condition_per_policy of this Quota.
         :rtype: int
@@ -255,7 +255,7 @@ class Quota:
     def condition_per_policy(self, condition_per_policy):
         """Sets the condition_per_policy of this Quota.
 
-        转发策略配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        单个转发策略下所有转发规则的condition总数配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
         :param condition_per_policy: The condition_per_policy of this Quota.
         :type condition_per_policy: int
@@ -354,7 +354,7 @@ class Quota:
     def listeners_per_pool(self):
         """Gets the listeners_per_pool of this Quota.
 
-        单个pool下的member的配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        单个监听器下的pool的配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
         :return: The listeners_per_pool of this Quota.
         :rtype: int
@@ -365,7 +365,7 @@ class Quota:
     def listeners_per_pool(self, listeners_per_pool):
         """Sets the listeners_per_pool of this Quota.
 
-        单个pool下的member的配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        单个监听器下的pool的配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
         :param listeners_per_pool: The listeners_per_pool of this Quota.
         :type listeners_per_pool: int
@@ -398,7 +398,7 @@ class Quota:
     def ipgroup_bindings(self):
         """Gets the ipgroup_bindings of this Quota.
 
-        IP地址组配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
+        单个IP地址组可以关联的监听器数量配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
 
         :return: The ipgroup_bindings of this Quota.
         :rtype: int
@@ -409,7 +409,7 @@ class Quota:
     def ipgroup_bindings(self, ipgroup_bindings):
         """Sets the ipgroup_bindings of this Quota.
 
-        IP地址组配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
+        单个IP地址组可以关联的监听器数量配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
 
         :param ipgroup_bindings: The ipgroup_bindings of this Quota.
         :type ipgroup_bindings: int
@@ -420,7 +420,7 @@ class Quota:
     def ipgroup_max_length(self):
         """Gets the ipgroup_max_length of this Quota.
 
-        IP地址组配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
+        单个监听器下关联的所有IP地址组的ip列表中的IP总数不能超过ipgroup_max_length。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
 
         :return: The ipgroup_max_length of this Quota.
         :rtype: int
@@ -431,7 +431,7 @@ class Quota:
     def ipgroup_max_length(self, ipgroup_max_length):
         """Sets the ipgroup_max_length of this Quota.
 
-        IP地址组配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
+        单个监听器下关联的所有IP地址组的ip列表中的IP总数不能超过ipgroup_max_length。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
 
         :param ipgroup_max_length: The ipgroup_max_length of this Quota.
         :type ipgroup_max_length: int

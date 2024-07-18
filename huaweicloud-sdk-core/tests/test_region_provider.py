@@ -33,7 +33,10 @@ def set_region_file_env():
 
     yield
 
-    os.unsetenv("HUAWEICLOUD_SDK_REGIONS_FILE")
+    try:
+        os.unsetenv("HUAWEICLOUD_SDK_REGIONS_FILE")
+    except AttributeError:
+        del os.environ["HUAWEICLOUD_SDK_REGIONS_FILE"]
 
 
 def test_env_region_provider():

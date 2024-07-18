@@ -826,6 +826,10 @@ class CtsAsyncClient(Client):
             query_params.append(('trace_name', local_var_params['trace_name']))
         if 'trace_rating' in local_var_params:
             query_params.append(('trace_rating', local_var_params['trace_rating']))
+        if 'access_key_id' in local_var_params:
+            query_params.append(('access_key_id', local_var_params['access_key_id']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 

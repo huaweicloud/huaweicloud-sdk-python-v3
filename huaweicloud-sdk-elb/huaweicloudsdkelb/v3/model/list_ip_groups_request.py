@@ -23,7 +23,8 @@ class ListIpGroupsRequest:
         'id': 'list[str]',
         'name': 'list[str]',
         'description': 'list[str]',
-        'ip_list': 'list[str]'
+        'ip_list': 'list[str]',
+        'enterprise_project_id': 'list[str]'
     }
 
     attribute_map = {
@@ -33,28 +34,31 @@ class ListIpGroupsRequest:
         'id': 'id',
         'name': 'name',
         'description': 'description',
-        'ip_list': 'ip_list'
+        'ip_list': 'ip_list',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, marker=None, limit=None, page_reverse=None, id=None, name=None, description=None, ip_list=None):
+    def __init__(self, marker=None, limit=None, page_reverse=None, id=None, name=None, description=None, ip_list=None, enterprise_project_id=None):
         """ListIpGroupsRequest
 
         The model defined in huaweicloud sdk
 
-        :param marker: 上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        :param marker: 参数解释：上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
         :type marker: str
-        :param limit: 每页返回的个数。
+        :param limit: 参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
         :type limit: int
-        :param page_reverse: 是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse&#x3D;true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
+        :param page_reverse: 参数解释：是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse&#x3D;true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
         :type page_reverse: bool
-        :param id: IP地址组的ID。
+        :param id: 参数解释：IP地址组的ID。
         :type id: list[str]
-        :param name: IP地址组的名称。
+        :param name: 参数解释：IP地址组的名称。
         :type name: list[str]
-        :param description: IP地址组的描述信息。
+        :param description: 参数解释：IP地址组的描述信息。
         :type description: list[str]
-        :param ip_list: IP地址，多个用逗号分隔。
+        :param ip_list: 参数解释：IP地址，多个用逗号分隔。
         :type ip_list: list[str]
+        :param enterprise_project_id: 参数解释：企业项目ID。
+        :type enterprise_project_id: list[str]
         """
         
         
@@ -66,6 +70,7 @@ class ListIpGroupsRequest:
         self._name = None
         self._description = None
         self._ip_list = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         if marker is not None:
@@ -82,12 +87,14 @@ class ListIpGroupsRequest:
             self.description = description
         if ip_list is not None:
             self.ip_list = ip_list
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def marker(self):
         """Gets the marker of this ListIpGroupsRequest.
 
-        上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        参数解释：上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
         :return: The marker of this ListIpGroupsRequest.
         :rtype: str
@@ -98,7 +105,7 @@ class ListIpGroupsRequest:
     def marker(self, marker):
         """Sets the marker of this ListIpGroupsRequest.
 
-        上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        参数解释：上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
         :param marker: The marker of this ListIpGroupsRequest.
         :type marker: str
@@ -109,7 +116,7 @@ class ListIpGroupsRequest:
     def limit(self):
         """Gets the limit of this ListIpGroupsRequest.
 
-        每页返回的个数。
+        参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
 
         :return: The limit of this ListIpGroupsRequest.
         :rtype: int
@@ -120,7 +127,7 @@ class ListIpGroupsRequest:
     def limit(self, limit):
         """Sets the limit of this ListIpGroupsRequest.
 
-        每页返回的个数。
+        参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
 
         :param limit: The limit of this ListIpGroupsRequest.
         :type limit: int
@@ -131,7 +138,7 @@ class ListIpGroupsRequest:
     def page_reverse(self):
         """Gets the page_reverse of this ListIpGroupsRequest.
 
-        是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
+        参数解释：是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
 
         :return: The page_reverse of this ListIpGroupsRequest.
         :rtype: bool
@@ -142,7 +149,7 @@ class ListIpGroupsRequest:
     def page_reverse(self, page_reverse):
         """Sets the page_reverse of this ListIpGroupsRequest.
 
-        是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
+        参数解释：是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
 
         :param page_reverse: The page_reverse of this ListIpGroupsRequest.
         :type page_reverse: bool
@@ -153,7 +160,7 @@ class ListIpGroupsRequest:
     def id(self):
         """Gets the id of this ListIpGroupsRequest.
 
-        IP地址组的ID。
+        参数解释：IP地址组的ID。
 
         :return: The id of this ListIpGroupsRequest.
         :rtype: list[str]
@@ -164,7 +171,7 @@ class ListIpGroupsRequest:
     def id(self, id):
         """Sets the id of this ListIpGroupsRequest.
 
-        IP地址组的ID。
+        参数解释：IP地址组的ID。
 
         :param id: The id of this ListIpGroupsRequest.
         :type id: list[str]
@@ -175,7 +182,7 @@ class ListIpGroupsRequest:
     def name(self):
         """Gets the name of this ListIpGroupsRequest.
 
-        IP地址组的名称。
+        参数解释：IP地址组的名称。
 
         :return: The name of this ListIpGroupsRequest.
         :rtype: list[str]
@@ -186,7 +193,7 @@ class ListIpGroupsRequest:
     def name(self, name):
         """Sets the name of this ListIpGroupsRequest.
 
-        IP地址组的名称。
+        参数解释：IP地址组的名称。
 
         :param name: The name of this ListIpGroupsRequest.
         :type name: list[str]
@@ -197,7 +204,7 @@ class ListIpGroupsRequest:
     def description(self):
         """Gets the description of this ListIpGroupsRequest.
 
-        IP地址组的描述信息。
+        参数解释：IP地址组的描述信息。
 
         :return: The description of this ListIpGroupsRequest.
         :rtype: list[str]
@@ -208,7 +215,7 @@ class ListIpGroupsRequest:
     def description(self, description):
         """Sets the description of this ListIpGroupsRequest.
 
-        IP地址组的描述信息。
+        参数解释：IP地址组的描述信息。
 
         :param description: The description of this ListIpGroupsRequest.
         :type description: list[str]
@@ -219,7 +226,7 @@ class ListIpGroupsRequest:
     def ip_list(self):
         """Gets the ip_list of this ListIpGroupsRequest.
 
-        IP地址，多个用逗号分隔。
+        参数解释：IP地址，多个用逗号分隔。
 
         :return: The ip_list of this ListIpGroupsRequest.
         :rtype: list[str]
@@ -230,12 +237,34 @@ class ListIpGroupsRequest:
     def ip_list(self, ip_list):
         """Sets the ip_list of this ListIpGroupsRequest.
 
-        IP地址，多个用逗号分隔。
+        参数解释：IP地址，多个用逗号分隔。
 
         :param ip_list: The ip_list of this ListIpGroupsRequest.
         :type ip_list: list[str]
         """
         self._ip_list = ip_list
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListIpGroupsRequest.
+
+        参数解释：企业项目ID。
+
+        :return: The enterprise_project_id of this ListIpGroupsRequest.
+        :rtype: list[str]
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListIpGroupsRequest.
+
+        参数解释：企业项目ID。
+
+        :param enterprise_project_id: The enterprise_project_id of this ListIpGroupsRequest.
+        :type enterprise_project_id: list[str]
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

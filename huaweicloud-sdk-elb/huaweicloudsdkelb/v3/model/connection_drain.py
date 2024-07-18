@@ -31,7 +31,7 @@ class ConnectionDrain:
 
         The model defined in huaweicloud sdk
 
-        :param enable: 延迟注销功能开关，默认值：false； true：开启； false：关闭
+        :param enable: 延迟注销功能开关。取值：true 开启，false 关闭，默认true。
         :type enable: bool
         :param timeout: 延迟注销时间，单位：s； 取值范围：10~4000
         :type timeout: int
@@ -52,7 +52,7 @@ class ConnectionDrain:
     def enable(self):
         """Gets the enable of this ConnectionDrain.
 
-        延迟注销功能开关，默认值：false； true：开启； false：关闭
+        延迟注销功能开关。取值：true 开启，false 关闭，默认true。
 
         :return: The enable of this ConnectionDrain.
         :rtype: bool
@@ -63,7 +63,7 @@ class ConnectionDrain:
     def enable(self, enable):
         """Sets the enable of this ConnectionDrain.
 
-        延迟注销功能开关，默认值：false； true：开启； false：关闭
+        延迟注销功能开关。取值：true 开启，false 关闭，默认true。
 
         :param enable: The enable of this ConnectionDrain.
         :type enable: bool

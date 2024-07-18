@@ -97,7 +97,7 @@ class CreateJobReq:
         :type net_type: str
         :param node_num: 节点个数。MongoDB数据库时对应源端分片个数，源库为集群时必填，[1-32]，MySQL双主灾备时会默认设置为2。
         :type node_num: int
-        :param node_type: 规格类型。
+        :param node_type: 规格类型。取值： - micro：极小规格。 - small：小规格。 - medium：中规格。 - high：大规格。 - xlarge：超大规格。 - 2xlarge：极大规格。 具体某种场景支持的取值可以通过[查询可用的Node规格接口](https://support.huaweicloud.com/api-drs/drs_03_0239.html)获取。
         :type node_type: str
         :param source_endpoint: 
         :type source_endpoint: :class:`huaweicloudsdkdrs.v3.Endpoint`
@@ -423,7 +423,7 @@ class CreateJobReq:
     def node_type(self):
         """Gets the node_type of this CreateJobReq.
 
-        规格类型。
+        规格类型。取值： - micro：极小规格。 - small：小规格。 - medium：中规格。 - high：大规格。 - xlarge：超大规格。 - 2xlarge：极大规格。 具体某种场景支持的取值可以通过[查询可用的Node规格接口](https://support.huaweicloud.com/api-drs/drs_03_0239.html)获取。
 
         :return: The node_type of this CreateJobReq.
         :rtype: str
@@ -434,7 +434,7 @@ class CreateJobReq:
     def node_type(self, node_type):
         """Sets the node_type of this CreateJobReq.
 
-        规格类型。
+        规格类型。取值： - micro：极小规格。 - small：小规格。 - medium：中规格。 - high：大规格。 - xlarge：超大规格。 - 2xlarge：极大规格。 具体某种场景支持的取值可以通过[查询可用的Node规格接口](https://support.huaweicloud.com/api-drs/drs_03_0239.html)获取。
 
         :param node_type: The node_type of this CreateJobReq.
         :type node_type: str

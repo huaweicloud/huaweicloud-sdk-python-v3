@@ -33,13 +33,13 @@ class CdmRegion:
     CN_NORTH_9 = Region("cn-north-9",
                         "https://cdm.cn-north-9.myhuaweicloud.com")
     CN_NORTH_2 = Region("cn-north-2",
-                        "https://cdm.cn-north-2.myhuaweicloud.cn")
+                        "https://cdm.cn-north-2.myhuaweicloud.com")
     NA_MEXICO_1 = Region("na-mexico-1",
-                        "https://cdm.na-mexico-1.myhuaweicloud.cn")
+                        "https://cdm.na-mexico-1.myhuaweicloud.com")
     LA_NORTH_2 = Region("la-north-2",
-                        "https://cdm.la-north-2.myhuaweicloud.cn")
+                        "https://cdm.la-north-2.myhuaweicloud.com")
     AP_SOUTHEAST_3 = Region("ap-southeast-3",
-                        "https://cdm.ap-southeast-3.myhuaweicloud.cn")
+                        "https://cdm.ap-southeast-3.myhuaweicloud.com")
     AP_SOUTHEAST_4 = Region("ap-southeast-4",
                         "https://cdm.ap-southeast-4.myhuaweicloud.com")
     TR_WEST_1 = Region("tr-west-1",

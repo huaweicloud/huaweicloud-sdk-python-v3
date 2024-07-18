@@ -18,33 +18,47 @@ class VodSampleData:
 
     openapi_types = {
         'storage': 'float',
+        'storage_warm': 'float',
+        'storage_cold': 'float',
         'transcode': 'int'
     }
 
     attribute_map = {
         'storage': 'storage',
+        'storage_warm': 'storage_warm',
+        'storage_cold': 'storage_cold',
         'transcode': 'transcode'
     }
 
-    def __init__(self, storage=None, transcode=None):
+    def __init__(self, storage=None, storage_warm=None, storage_cold=None, transcode=None):
         """VodSampleData
 
         The model defined in huaweicloud sdk
 
         :param storage: 存储空间。  单位：GB。
         :type storage: float
-        :param transcode: 转码时长。  单位：秒。
+        :param storage_warm: 低频存储空间。  单位：GB。
+        :type storage_warm: float
+        :param storage_cold: 归档存储空间。  单位：GB。
+        :type storage_cold: float
+        :param transcode: 转码时长。  单位：分钟。
         :type transcode: int
         """
         
         
 
         self._storage = None
+        self._storage_warm = None
+        self._storage_cold = None
         self._transcode = None
         self.discriminator = None
 
         if storage is not None:
             self.storage = storage
+        if storage_warm is not None:
+            self.storage_warm = storage_warm
+        if storage_cold is not None:
+            self.storage_cold = storage_cold
         if transcode is not None:
             self.transcode = transcode
 
@@ -71,10 +85,54 @@ class VodSampleData:
         self._storage = storage
 
     @property
+    def storage_warm(self):
+        """Gets the storage_warm of this VodSampleData.
+
+        低频存储空间。  单位：GB。
+
+        :return: The storage_warm of this VodSampleData.
+        :rtype: float
+        """
+        return self._storage_warm
+
+    @storage_warm.setter
+    def storage_warm(self, storage_warm):
+        """Sets the storage_warm of this VodSampleData.
+
+        低频存储空间。  单位：GB。
+
+        :param storage_warm: The storage_warm of this VodSampleData.
+        :type storage_warm: float
+        """
+        self._storage_warm = storage_warm
+
+    @property
+    def storage_cold(self):
+        """Gets the storage_cold of this VodSampleData.
+
+        归档存储空间。  单位：GB。
+
+        :return: The storage_cold of this VodSampleData.
+        :rtype: float
+        """
+        return self._storage_cold
+
+    @storage_cold.setter
+    def storage_cold(self, storage_cold):
+        """Sets the storage_cold of this VodSampleData.
+
+        归档存储空间。  单位：GB。
+
+        :param storage_cold: The storage_cold of this VodSampleData.
+        :type storage_cold: float
+        """
+        self._storage_cold = storage_cold
+
+    @property
     def transcode(self):
         """Gets the transcode of this VodSampleData.
 
-        转码时长。  单位：秒。
+        转码时长。  单位：分钟。
 
         :return: The transcode of this VodSampleData.
         :rtype: int
@@ -85,7 +143,7 @@ class VodSampleData:
     def transcode(self, transcode):
         """Sets the transcode of this VodSampleData.
 
-        转码时长。  单位：秒。
+        转码时长。  单位：分钟。
 
         :param transcode: The transcode of this VodSampleData.
         :type transcode: int

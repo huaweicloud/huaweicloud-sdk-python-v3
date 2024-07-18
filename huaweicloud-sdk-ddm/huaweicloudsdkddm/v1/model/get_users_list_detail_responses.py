@@ -20,6 +20,7 @@ class GetUsersListDetailResponses:
         'name': 'str',
         'status': 'str',
         'base_authority': 'list[str]',
+        'password_last_changed': 'int',
         'extend_authority': 'list[str]',
         'description': 'str',
         'created': 'int',
@@ -30,13 +31,14 @@ class GetUsersListDetailResponses:
         'name': 'name',
         'status': 'status',
         'base_authority': 'base_authority',
+        'password_last_changed': 'password_last_changed',
         'extend_authority': 'extend_authority',
         'description': 'description',
         'created': 'created',
         'databases': 'databases'
     }
 
-    def __init__(self, name=None, status=None, base_authority=None, extend_authority=None, description=None, created=None, databases=None):
+    def __init__(self, name=None, status=None, base_authority=None, password_last_changed=None, extend_authority=None, description=None, created=None, databases=None):
         """GetUsersListDetailResponses
 
         The model defined in huaweicloud sdk
@@ -47,11 +49,13 @@ class GetUsersListDetailResponses:
         :type status: str
         :param base_authority: DDM实例帐号的基础权限。  取值为：CREATE、DROP、ALTER、INDEX、INSERT、DELETE、UPDATE、SELECT
         :type base_authority: list[str]
+        :param password_last_changed: DDM实例账号的密码修改时间，UNIX时间戳格式。
+        :type password_last_changed: int
         :param extend_authority: DDM实例帐号的扩展权限。2021年8月开始不支持该字段，9月会去掉该字段。  取值为：fulltableDelete、fulltableSelect、fulltableUpdate
         :type extend_authority: list[str]
         :param description: DDM实例帐号的描述。
         :type description: str
-        :param created: DDM实例帐号的创建时间。
+        :param created: DDM实例帐号的创建时间，UNIX时间戳格式。
         :type created: int
         :param databases: 关联的逻辑库的集合。
         :type databases: list[:class:`huaweicloudsdkddm.v1.GetUsersListdatabase`]
@@ -62,6 +66,7 @@ class GetUsersListDetailResponses:
         self._name = None
         self._status = None
         self._base_authority = None
+        self._password_last_changed = None
         self._extend_authority = None
         self._description = None
         self._created = None
@@ -71,6 +76,8 @@ class GetUsersListDetailResponses:
         self.name = name
         self.status = status
         self.base_authority = base_authority
+        if password_last_changed is not None:
+            self.password_last_changed = password_last_changed
         if extend_authority is not None:
             self.extend_authority = extend_authority
         self.description = description
@@ -144,6 +151,28 @@ class GetUsersListDetailResponses:
         self._base_authority = base_authority
 
     @property
+    def password_last_changed(self):
+        """Gets the password_last_changed of this GetUsersListDetailResponses.
+
+        DDM实例账号的密码修改时间，UNIX时间戳格式。
+
+        :return: The password_last_changed of this GetUsersListDetailResponses.
+        :rtype: int
+        """
+        return self._password_last_changed
+
+    @password_last_changed.setter
+    def password_last_changed(self, password_last_changed):
+        """Sets the password_last_changed of this GetUsersListDetailResponses.
+
+        DDM实例账号的密码修改时间，UNIX时间戳格式。
+
+        :param password_last_changed: The password_last_changed of this GetUsersListDetailResponses.
+        :type password_last_changed: int
+        """
+        self._password_last_changed = password_last_changed
+
+    @property
     def extend_authority(self):
         """Gets the extend_authority of this GetUsersListDetailResponses.
 
@@ -191,7 +220,7 @@ class GetUsersListDetailResponses:
     def created(self):
         """Gets the created of this GetUsersListDetailResponses.
 
-        DDM实例帐号的创建时间。
+        DDM实例帐号的创建时间，UNIX时间戳格式。
 
         :return: The created of this GetUsersListDetailResponses.
         :rtype: int
@@ -202,7 +231,7 @@ class GetUsersListDetailResponses:
     def created(self, created):
         """Sets the created of this GetUsersListDetailResponses.
 
-        DDM实例帐号的创建时间。
+        DDM实例帐号的创建时间，UNIX时间戳格式。
 
         :param created: The created of this GetUsersListDetailResponses.
         :type created: int

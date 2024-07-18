@@ -33,11 +33,11 @@ class UpdateIpListOption:
 
         The model defined in huaweicloud sdk
 
-        :param name: IP地址组的名称
+        :param name: 参数解释：IP地址组的名称
         :type name: str
-        :param ip_list: IP地址组中包含的IP列表。
+        :param ip_list: 参数解释：IP地址组中包含的IP列表。
         :type ip_list: list[:class:`huaweicloudsdkelb.v3.UpadateIpGroupIpOption`]
-        :param description: IP地址组的描述信息
+        :param description: 参数解释：IP地址组的描述信息
         :type description: str
         """
         
@@ -59,7 +59,7 @@ class UpdateIpListOption:
     def name(self):
         """Gets the name of this UpdateIpListOption.
 
-        IP地址组的名称
+        参数解释：IP地址组的名称
 
         :return: The name of this UpdateIpListOption.
         :rtype: str
@@ -70,7 +70,7 @@ class UpdateIpListOption:
     def name(self, name):
         """Sets the name of this UpdateIpListOption.
 
-        IP地址组的名称
+        参数解释：IP地址组的名称
 
         :param name: The name of this UpdateIpListOption.
         :type name: str
@@ -81,7 +81,7 @@ class UpdateIpListOption:
     def ip_list(self):
         """Gets the ip_list of this UpdateIpListOption.
 
-        IP地址组中包含的IP列表。
+        参数解释：IP地址组中包含的IP列表。
 
         :return: The ip_list of this UpdateIpListOption.
         :rtype: list[:class:`huaweicloudsdkelb.v3.UpadateIpGroupIpOption`]
@@ -92,7 +92,7 @@ class UpdateIpListOption:
     def ip_list(self, ip_list):
         """Sets the ip_list of this UpdateIpListOption.
 
-        IP地址组中包含的IP列表。
+        参数解释：IP地址组中包含的IP列表。
 
         :param ip_list: The ip_list of this UpdateIpListOption.
         :type ip_list: list[:class:`huaweicloudsdkelb.v3.UpadateIpGroupIpOption`]
@@ -103,7 +103,7 @@ class UpdateIpListOption:
     def description(self):
         """Gets the description of this UpdateIpListOption.
 
-        IP地址组的描述信息
+        参数解释：IP地址组的描述信息
 
         :return: The description of this UpdateIpListOption.
         :rtype: str
@@ -114,7 +114,7 @@ class UpdateIpListOption:
     def description(self, description):
         """Sets the description of this UpdateIpListOption.
 
-        IP地址组的描述信息
+        参数解释：IP地址组的描述信息
 
         :param description: The description of this UpdateIpListOption.
         :type description: str

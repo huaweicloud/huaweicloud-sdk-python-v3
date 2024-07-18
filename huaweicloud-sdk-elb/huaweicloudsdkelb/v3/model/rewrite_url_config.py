@@ -33,11 +33,11 @@ class RewriteUrlConfig:
 
         The model defined in huaweicloud sdk
 
-        :param host: url host
+        :param host: 重定向的域名。取值只能包含英文字母、数字、“-”、“.”，必须以字母、数字开头。  默认值${host}，表示继承原值（即与被重写请求host保持一致）。
         :type host: str
-        :param path: url路径
+        :param path: 重定向的请求路径。 取值只能包含英文字母、数字、_~&#39;;@^-%#&amp;$.+?,&#x3D;!:|/()，且必须以\&quot;/\&quot;开头。其中$1-$9会匹配请求url通配符星号()，当正则匹配分组小于指定数字，则$指定数字结果为空。$后面跟字母，匹配结果均为空，直到下一个特殊字符出现，例如$abc#123，则匹配结果为#123；$后面跟特殊字符则直接输出特殊字符，例如$#匹配结果为$#。  默认值${path}表示继承原值（即与被重写请求保持一致）。
         :type path: str
-        :param query: url查询字符串
+        :param query: 重定向的查询字符串。取值只能包含英文字母、数字和特殊字符：!$&amp;&#39;()+,-./:;&#x3D;?@^_&#x60;。字母区分大小写。其中$1-$9会匹配请求url通配符星号（），当正则匹配分组小于指定数字，则$指定数字结果为空。$后面跟字母，匹配结果均为空，直到下一个特殊字符出现，例如$abc#123，则匹配结果为#123；$后面跟特殊字符则直接输出特殊字符，例如$#匹配结果为$#。  默认${query}，表示继承原值（即与被重写请求保持一致）。
         :type query: str
         """
         
@@ -59,7 +59,7 @@ class RewriteUrlConfig:
     def host(self):
         """Gets the host of this RewriteUrlConfig.
 
-        url host
+        重定向的域名。取值只能包含英文字母、数字、“-”、“.”，必须以字母、数字开头。  默认值${host}，表示继承原值（即与被重写请求host保持一致）。
 
         :return: The host of this RewriteUrlConfig.
         :rtype: str
@@ -70,7 +70,7 @@ class RewriteUrlConfig:
     def host(self, host):
         """Sets the host of this RewriteUrlConfig.
 
-        url host
+        重定向的域名。取值只能包含英文字母、数字、“-”、“.”，必须以字母、数字开头。  默认值${host}，表示继承原值（即与被重写请求host保持一致）。
 
         :param host: The host of this RewriteUrlConfig.
         :type host: str
@@ -81,7 +81,7 @@ class RewriteUrlConfig:
     def path(self):
         """Gets the path of this RewriteUrlConfig.
 
-        url路径
+        重定向的请求路径。 取值只能包含英文字母、数字、_~';@^-%#&$.+?,=!:|/()，且必须以\"/\"开头。其中$1-$9会匹配请求url通配符星号()，当正则匹配分组小于指定数字，则$指定数字结果为空。$后面跟字母，匹配结果均为空，直到下一个特殊字符出现，例如$abc#123，则匹配结果为#123；$后面跟特殊字符则直接输出特殊字符，例如$#匹配结果为$#。  默认值${path}表示继承原值（即与被重写请求保持一致）。
 
         :return: The path of this RewriteUrlConfig.
         :rtype: str
@@ -92,7 +92,7 @@ class RewriteUrlConfig:
     def path(self, path):
         """Sets the path of this RewriteUrlConfig.
 
-        url路径
+        重定向的请求路径。 取值只能包含英文字母、数字、_~';@^-%#&$.+?,=!:|/()，且必须以\"/\"开头。其中$1-$9会匹配请求url通配符星号()，当正则匹配分组小于指定数字，则$指定数字结果为空。$后面跟字母，匹配结果均为空，直到下一个特殊字符出现，例如$abc#123，则匹配结果为#123；$后面跟特殊字符则直接输出特殊字符，例如$#匹配结果为$#。  默认值${path}表示继承原值（即与被重写请求保持一致）。
 
         :param path: The path of this RewriteUrlConfig.
         :type path: str
@@ -103,7 +103,7 @@ class RewriteUrlConfig:
     def query(self):
         """Gets the query of this RewriteUrlConfig.
 
-        url查询字符串
+        重定向的查询字符串。取值只能包含英文字母、数字和特殊字符：!$&'()+,-./:;=?@^_`。字母区分大小写。其中$1-$9会匹配请求url通配符星号（），当正则匹配分组小于指定数字，则$指定数字结果为空。$后面跟字母，匹配结果均为空，直到下一个特殊字符出现，例如$abc#123，则匹配结果为#123；$后面跟特殊字符则直接输出特殊字符，例如$#匹配结果为$#。  默认${query}，表示继承原值（即与被重写请求保持一致）。
 
         :return: The query of this RewriteUrlConfig.
         :rtype: str
@@ -114,7 +114,7 @@ class RewriteUrlConfig:
     def query(self, query):
         """Sets the query of this RewriteUrlConfig.
 
-        url查询字符串
+        重定向的查询字符串。取值只能包含英文字母、数字和特殊字符：!$&'()+,-./:;=?@^_`。字母区分大小写。其中$1-$9会匹配请求url通配符星号（），当正则匹配分组小于指定数字，则$指定数字结果为空。$后面跟字母，匹配结果均为空，直到下一个特殊字符出现，例如$abc#123，则匹配结果为#123；$后面跟特殊字符则直接输出特殊字符，例如$#匹配结果为$#。  默认${query}，表示继承原值（即与被重写请求保持一致）。
 
         :param query: The query of this RewriteUrlConfig.
         :type query: str

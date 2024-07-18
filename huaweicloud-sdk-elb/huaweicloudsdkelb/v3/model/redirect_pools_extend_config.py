@@ -18,41 +18,62 @@ class RedirectPoolsExtendConfig:
 
     openapi_types = {
         'rewrite_url_enable': 'bool',
-        'rewrite_url_config': 'RewriteUrlConfig'
+        'rewrite_url_config': 'RewriteUrlConfig',
+        'insert_headers_config': 'InsertHeadersConfig',
+        'remove_headers_config': 'RemoveHeadersConfig',
+        'traffic_limit_config': 'TrafficLimitConfig'
     }
 
     attribute_map = {
         'rewrite_url_enable': 'rewrite_url_enable',
-        'rewrite_url_config': 'rewrite_url_config'
+        'rewrite_url_config': 'rewrite_url_config',
+        'insert_headers_config': 'insert_headers_config',
+        'remove_headers_config': 'remove_headers_config',
+        'traffic_limit_config': 'traffic_limit_config'
     }
 
-    def __init__(self, rewrite_url_enable=None, rewrite_url_config=None):
+    def __init__(self, rewrite_url_enable=None, rewrite_url_config=None, insert_headers_config=None, remove_headers_config=None, traffic_limit_config=None):
         """RedirectPoolsExtendConfig
 
         The model defined in huaweicloud sdk
 
-        :param rewrite_url_enable: 是否开启url重定向
+        :param rewrite_url_enable: 是否开启url重定向。
         :type rewrite_url_enable: bool
         :param rewrite_url_config: 
         :type rewrite_url_config: :class:`huaweicloudsdkelb.v3.RewriteUrlConfig`
+        :param insert_headers_config: 
+        :type insert_headers_config: :class:`huaweicloudsdkelb.v3.InsertHeadersConfig`
+        :param remove_headers_config: 
+        :type remove_headers_config: :class:`huaweicloudsdkelb.v3.RemoveHeadersConfig`
+        :param traffic_limit_config: 
+        :type traffic_limit_config: :class:`huaweicloudsdkelb.v3.TrafficLimitConfig`
         """
         
         
 
         self._rewrite_url_enable = None
         self._rewrite_url_config = None
+        self._insert_headers_config = None
+        self._remove_headers_config = None
+        self._traffic_limit_config = None
         self.discriminator = None
 
         if rewrite_url_enable is not None:
             self.rewrite_url_enable = rewrite_url_enable
         if rewrite_url_config is not None:
             self.rewrite_url_config = rewrite_url_config
+        if insert_headers_config is not None:
+            self.insert_headers_config = insert_headers_config
+        if remove_headers_config is not None:
+            self.remove_headers_config = remove_headers_config
+        if traffic_limit_config is not None:
+            self.traffic_limit_config = traffic_limit_config
 
     @property
     def rewrite_url_enable(self):
         """Gets the rewrite_url_enable of this RedirectPoolsExtendConfig.
 
-        是否开启url重定向
+        是否开启url重定向。
 
         :return: The rewrite_url_enable of this RedirectPoolsExtendConfig.
         :rtype: bool
@@ -63,7 +84,7 @@ class RedirectPoolsExtendConfig:
     def rewrite_url_enable(self, rewrite_url_enable):
         """Sets the rewrite_url_enable of this RedirectPoolsExtendConfig.
 
-        是否开启url重定向
+        是否开启url重定向。
 
         :param rewrite_url_enable: The rewrite_url_enable of this RedirectPoolsExtendConfig.
         :type rewrite_url_enable: bool
@@ -87,6 +108,60 @@ class RedirectPoolsExtendConfig:
         :type rewrite_url_config: :class:`huaweicloudsdkelb.v3.RewriteUrlConfig`
         """
         self._rewrite_url_config = rewrite_url_config
+
+    @property
+    def insert_headers_config(self):
+        """Gets the insert_headers_config of this RedirectPoolsExtendConfig.
+
+        :return: The insert_headers_config of this RedirectPoolsExtendConfig.
+        :rtype: :class:`huaweicloudsdkelb.v3.InsertHeadersConfig`
+        """
+        return self._insert_headers_config
+
+    @insert_headers_config.setter
+    def insert_headers_config(self, insert_headers_config):
+        """Sets the insert_headers_config of this RedirectPoolsExtendConfig.
+
+        :param insert_headers_config: The insert_headers_config of this RedirectPoolsExtendConfig.
+        :type insert_headers_config: :class:`huaweicloudsdkelb.v3.InsertHeadersConfig`
+        """
+        self._insert_headers_config = insert_headers_config
+
+    @property
+    def remove_headers_config(self):
+        """Gets the remove_headers_config of this RedirectPoolsExtendConfig.
+
+        :return: The remove_headers_config of this RedirectPoolsExtendConfig.
+        :rtype: :class:`huaweicloudsdkelb.v3.RemoveHeadersConfig`
+        """
+        return self._remove_headers_config
+
+    @remove_headers_config.setter
+    def remove_headers_config(self, remove_headers_config):
+        """Sets the remove_headers_config of this RedirectPoolsExtendConfig.
+
+        :param remove_headers_config: The remove_headers_config of this RedirectPoolsExtendConfig.
+        :type remove_headers_config: :class:`huaweicloudsdkelb.v3.RemoveHeadersConfig`
+        """
+        self._remove_headers_config = remove_headers_config
+
+    @property
+    def traffic_limit_config(self):
+        """Gets the traffic_limit_config of this RedirectPoolsExtendConfig.
+
+        :return: The traffic_limit_config of this RedirectPoolsExtendConfig.
+        :rtype: :class:`huaweicloudsdkelb.v3.TrafficLimitConfig`
+        """
+        return self._traffic_limit_config
+
+    @traffic_limit_config.setter
+    def traffic_limit_config(self, traffic_limit_config):
+        """Sets the traffic_limit_config of this RedirectPoolsExtendConfig.
+
+        :param traffic_limit_config: The traffic_limit_config of this RedirectPoolsExtendConfig.
+        :type traffic_limit_config: :class:`huaweicloudsdkelb.v3.TrafficLimitConfig`
+        """
+        self._traffic_limit_config = traffic_limit_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

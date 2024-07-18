@@ -35,13 +35,13 @@ class PrepaidCreateOption:
 
         The model defined in huaweicloud sdk
 
-        :param period_type: 订购周期类型，当前支持包月和包年： month：月； year：年；
+        :param period_type: 参数解释：预付费实例的订购周期类型，当前支持月和年。  取值范围：  - month：月。  - year：年。
         :type period_type: str
-        :param period_num: 订购周期数，取值会随运营策略变化。 period_type为month时，为[1,9]， period_type为year时，为[1,3]
+        :param period_num: 参数解释：预付费实例的订购周期数，取值会随运营策略变化。  约束限制： - period_type为month时，为[1,9]。 - period_type为year时，为[1,3]。
         :type period_num: int
-        :param auto_renew: 是否自动续订； true：自动续订 false：不自动续订
+        :param auto_renew: 参数解释：自动续订开关。  取值范围： - true：开启自动续订。 - false：关闭自动续订。
         :type auto_renew: bool
-        :param auto_pay: 下单订购后，是否自动从客户的账户中支付； true：自动支付； false：不自动支付。 自动支付时，只能使用账户的现金支付；如果要使用代金券，请选择不自动支付，然后在用户费用中心，选择代金券支付。
+        :param auto_pay: 参数解释：自动支付开关。下单订购后，是否自动从客户的账户中支付。  约束限制：开启自动支付时，只能使用账户的现金支付；如果要使用代金券，请选择关闭自动支付，然后在用户费用中心，选择代金券支付。  取值范围：  - true：开启自动支付。  - false：关闭自动支付。
         :type auto_pay: bool
         """
         
@@ -65,7 +65,7 @@ class PrepaidCreateOption:
     def period_type(self):
         """Gets the period_type of this PrepaidCreateOption.
 
-        订购周期类型，当前支持包月和包年： month：月； year：年；
+        参数解释：预付费实例的订购周期类型，当前支持月和年。  取值范围：  - month：月。  - year：年。
 
         :return: The period_type of this PrepaidCreateOption.
         :rtype: str
@@ -76,7 +76,7 @@ class PrepaidCreateOption:
     def period_type(self, period_type):
         """Sets the period_type of this PrepaidCreateOption.
 
-        订购周期类型，当前支持包月和包年： month：月； year：年；
+        参数解释：预付费实例的订购周期类型，当前支持月和年。  取值范围：  - month：月。  - year：年。
 
         :param period_type: The period_type of this PrepaidCreateOption.
         :type period_type: str
@@ -87,7 +87,7 @@ class PrepaidCreateOption:
     def period_num(self):
         """Gets the period_num of this PrepaidCreateOption.
 
-        订购周期数，取值会随运营策略变化。 period_type为month时，为[1,9]， period_type为year时，为[1,3]
+        参数解释：预付费实例的订购周期数，取值会随运营策略变化。  约束限制： - period_type为month时，为[1,9]。 - period_type为year时，为[1,3]。
 
         :return: The period_num of this PrepaidCreateOption.
         :rtype: int
@@ -98,7 +98,7 @@ class PrepaidCreateOption:
     def period_num(self, period_num):
         """Sets the period_num of this PrepaidCreateOption.
 
-        订购周期数，取值会随运营策略变化。 period_type为month时，为[1,9]， period_type为year时，为[1,3]
+        参数解释：预付费实例的订购周期数，取值会随运营策略变化。  约束限制： - period_type为month时，为[1,9]。 - period_type为year时，为[1,3]。
 
         :param period_num: The period_num of this PrepaidCreateOption.
         :type period_num: int
@@ -109,7 +109,7 @@ class PrepaidCreateOption:
     def auto_renew(self):
         """Gets the auto_renew of this PrepaidCreateOption.
 
-        是否自动续订； true：自动续订 false：不自动续订
+        参数解释：自动续订开关。  取值范围： - true：开启自动续订。 - false：关闭自动续订。
 
         :return: The auto_renew of this PrepaidCreateOption.
         :rtype: bool
@@ -120,7 +120,7 @@ class PrepaidCreateOption:
     def auto_renew(self, auto_renew):
         """Sets the auto_renew of this PrepaidCreateOption.
 
-        是否自动续订； true：自动续订 false：不自动续订
+        参数解释：自动续订开关。  取值范围： - true：开启自动续订。 - false：关闭自动续订。
 
         :param auto_renew: The auto_renew of this PrepaidCreateOption.
         :type auto_renew: bool
@@ -131,7 +131,7 @@ class PrepaidCreateOption:
     def auto_pay(self):
         """Gets the auto_pay of this PrepaidCreateOption.
 
-        下单订购后，是否自动从客户的账户中支付； true：自动支付； false：不自动支付。 自动支付时，只能使用账户的现金支付；如果要使用代金券，请选择不自动支付，然后在用户费用中心，选择代金券支付。
+        参数解释：自动支付开关。下单订购后，是否自动从客户的账户中支付。  约束限制：开启自动支付时，只能使用账户的现金支付；如果要使用代金券，请选择关闭自动支付，然后在用户费用中心，选择代金券支付。  取值范围：  - true：开启自动支付。  - false：关闭自动支付。
 
         :return: The auto_pay of this PrepaidCreateOption.
         :rtype: bool
@@ -142,7 +142,7 @@ class PrepaidCreateOption:
     def auto_pay(self, auto_pay):
         """Sets the auto_pay of this PrepaidCreateOption.
 
-        下单订购后，是否自动从客户的账户中支付； true：自动支付； false：不自动支付。 自动支付时，只能使用账户的现金支付；如果要使用代金券，请选择不自动支付，然后在用户费用中心，选择代金券支付。
+        参数解释：自动支付开关。下单订购后，是否自动从客户的账户中支付。  约束限制：开启自动支付时，只能使用账户的现金支付；如果要使用代金券，请选择关闭自动支付，然后在用户费用中心，选择代金券支付。  取值范围：  - true：开启自动支付。  - false：关闭自动支付。
 
         :param auto_pay: The auto_pay of this PrepaidCreateOption.
         :type auto_pay: bool

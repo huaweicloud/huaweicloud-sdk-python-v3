@@ -25,7 +25,9 @@ class ListCertificatesRequest:
         'description': 'list[str]',
         'admin_state_up': 'bool',
         'domain': 'list[str]',
-        'type': 'list[str]'
+        'type': 'list[str]',
+        'common_name': 'list[str]',
+        'fingerprint': 'list[str]'
     }
 
     attribute_map = {
@@ -37,17 +39,19 @@ class ListCertificatesRequest:
         'description': 'description',
         'admin_state_up': 'admin_state_up',
         'domain': 'domain',
-        'type': 'type'
+        'type': 'type',
+        'common_name': 'common_name',
+        'fingerprint': 'fingerprint'
     }
 
-    def __init__(self, marker=None, limit=None, page_reverse=None, id=None, name=None, description=None, admin_state_up=None, domain=None, type=None):
+    def __init__(self, marker=None, limit=None, page_reverse=None, id=None, name=None, description=None, admin_state_up=None, domain=None, type=None, common_name=None, fingerprint=None):
         """ListCertificatesRequest
 
         The model defined in huaweicloud sdk
 
         :param marker: 上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
         :type marker: str
-        :param limit: 每页返回的个数。
+        :param limit: 参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
         :type limit: int
         :param page_reverse: 是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse&#x3D;true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
         :type page_reverse: bool
@@ -63,6 +67,10 @@ class ListCertificatesRequest:
         :type domain: list[str]
         :param type: 证书的类型。分为服务器证书(server)和CA证书(client)。  支持多值查询，查询条件格式：type&#x3D;xxx&amp;type&#x3D;xxx。
         :type type: list[str]
+        :param common_name: 证书的主域名。  支持多值查询，查询条件格式：common_name&#x3D;xxx&amp;common_name&#x3D;xxx。
+        :type common_name: list[str]
+        :param fingerprint: 证书的指纹。  支持多值查询，查询条件格式：fingerprint&#x3D;xxx&amp;fingerprint&#x3D;xxx。
+        :type fingerprint: list[str]
         """
         
         
@@ -76,6 +84,8 @@ class ListCertificatesRequest:
         self._admin_state_up = None
         self._domain = None
         self._type = None
+        self._common_name = None
+        self._fingerprint = None
         self.discriminator = None
 
         if marker is not None:
@@ -96,6 +106,10 @@ class ListCertificatesRequest:
             self.domain = domain
         if type is not None:
             self.type = type
+        if common_name is not None:
+            self.common_name = common_name
+        if fingerprint is not None:
+            self.fingerprint = fingerprint
 
     @property
     def marker(self):
@@ -123,7 +137,7 @@ class ListCertificatesRequest:
     def limit(self):
         """Gets the limit of this ListCertificatesRequest.
 
-        每页返回的个数。
+        参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
 
         :return: The limit of this ListCertificatesRequest.
         :rtype: int
@@ -134,7 +148,7 @@ class ListCertificatesRequest:
     def limit(self, limit):
         """Sets the limit of this ListCertificatesRequest.
 
-        每页返回的个数。
+        参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
 
         :param limit: The limit of this ListCertificatesRequest.
         :type limit: int
@@ -294,6 +308,50 @@ class ListCertificatesRequest:
         :type type: list[str]
         """
         self._type = type
+
+    @property
+    def common_name(self):
+        """Gets the common_name of this ListCertificatesRequest.
+
+        证书的主域名。  支持多值查询，查询条件格式：common_name=xxx&common_name=xxx。
+
+        :return: The common_name of this ListCertificatesRequest.
+        :rtype: list[str]
+        """
+        return self._common_name
+
+    @common_name.setter
+    def common_name(self, common_name):
+        """Sets the common_name of this ListCertificatesRequest.
+
+        证书的主域名。  支持多值查询，查询条件格式：common_name=xxx&common_name=xxx。
+
+        :param common_name: The common_name of this ListCertificatesRequest.
+        :type common_name: list[str]
+        """
+        self._common_name = common_name
+
+    @property
+    def fingerprint(self):
+        """Gets the fingerprint of this ListCertificatesRequest.
+
+        证书的指纹。  支持多值查询，查询条件格式：fingerprint=xxx&fingerprint=xxx。
+
+        :return: The fingerprint of this ListCertificatesRequest.
+        :rtype: list[str]
+        """
+        return self._fingerprint
+
+    @fingerprint.setter
+    def fingerprint(self, fingerprint):
+        """Sets the fingerprint of this ListCertificatesRequest.
+
+        证书的指纹。  支持多值查询，查询条件格式：fingerprint=xxx&fingerprint=xxx。
+
+        :param fingerprint: The fingerprint of this ListCertificatesRequest.
+        :type fingerprint: list[str]
+        """
+        self._fingerprint = fingerprint
 
     def to_dict(self):
         """Returns the model properties as a dict"""

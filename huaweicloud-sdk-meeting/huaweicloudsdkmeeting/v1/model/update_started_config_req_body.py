@@ -25,7 +25,7 @@ class UpdateStartedConfigReqBody:
         'client_rec_mode': 'int',
         'allow_open_camera': 'int',
         'allow_rename': 'int',
-        'label_permission': 'int',
+        'is_lock': 'int',
         'free_share': 'int'
     }
 
@@ -38,11 +38,11 @@ class UpdateStartedConfigReqBody:
         'client_rec_mode': 'clientRecMode',
         'allow_open_camera': 'allowOpenCamera',
         'allow_rename': 'allowRename',
-        'label_permission': 'labelPermission',
+        'is_lock': 'isLock',
         'free_share': 'freeShare'
     }
 
-    def __init__(self, lock_sharing=None, call_in_restriction=None, allow_unmute_by_oneself=None, chat_permission=None, audience_call_in_restriction=None, client_rec_mode=None, allow_open_camera=None, allow_rename=None, label_permission=None, free_share=None):
+    def __init__(self, lock_sharing=None, call_in_restriction=None, allow_unmute_by_oneself=None, chat_permission=None, audience_call_in_restriction=None, client_rec_mode=None, allow_open_camera=None, allow_rename=None, is_lock=None, free_share=None):
         """UpdateStartedConfigReqBody
 
         The model defined in huaweicloud sdk
@@ -63,8 +63,8 @@ class UpdateStartedConfigReqBody:
         :type allow_open_camera: int
         :param allow_rename: 是否允许与会人改名 0:不允许 1:允许
         :type allow_rename: int
-        :param label_permission: 标注权限 0:所有人可标注 1:仅共享人可标注
-        :type label_permission: int
+        :param is_lock: 锁定会议 0：解锁 1：锁定
+        :type is_lock: int
         :param free_share: 抢共享权限设置 0:仅主持人/联席 1:所有人可抢共享
         :type free_share: int
         """
@@ -79,7 +79,7 @@ class UpdateStartedConfigReqBody:
         self._client_rec_mode = None
         self._allow_open_camera = None
         self._allow_rename = None
-        self._label_permission = None
+        self._is_lock = None
         self._free_share = None
         self.discriminator = None
 
@@ -99,8 +99,8 @@ class UpdateStartedConfigReqBody:
             self.allow_open_camera = allow_open_camera
         if allow_rename is not None:
             self.allow_rename = allow_rename
-        if label_permission is not None:
-            self.label_permission = label_permission
+        if is_lock is not None:
+            self.is_lock = is_lock
         if free_share is not None:
             self.free_share = free_share
 
@@ -281,26 +281,26 @@ class UpdateStartedConfigReqBody:
         self._allow_rename = allow_rename
 
     @property
-    def label_permission(self):
-        """Gets the label_permission of this UpdateStartedConfigReqBody.
+    def is_lock(self):
+        """Gets the is_lock of this UpdateStartedConfigReqBody.
 
-        标注权限 0:所有人可标注 1:仅共享人可标注
+        锁定会议 0：解锁 1：锁定
 
-        :return: The label_permission of this UpdateStartedConfigReqBody.
+        :return: The is_lock of this UpdateStartedConfigReqBody.
         :rtype: int
         """
-        return self._label_permission
+        return self._is_lock
 
-    @label_permission.setter
-    def label_permission(self, label_permission):
-        """Sets the label_permission of this UpdateStartedConfigReqBody.
+    @is_lock.setter
+    def is_lock(self, is_lock):
+        """Sets the is_lock of this UpdateStartedConfigReqBody.
 
-        标注权限 0:所有人可标注 1:仅共享人可标注
+        锁定会议 0：解锁 1：锁定
 
-        :param label_permission: The label_permission of this UpdateStartedConfigReqBody.
-        :type label_permission: int
+        :param is_lock: The is_lock of this UpdateStartedConfigReqBody.
+        :type is_lock: int
         """
-        self._label_permission = label_permission
+        self._is_lock = is_lock
 
     @property
     def free_share(self):

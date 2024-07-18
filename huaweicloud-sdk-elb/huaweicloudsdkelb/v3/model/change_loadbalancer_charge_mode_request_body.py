@@ -35,7 +35,7 @@ class ChangeLoadbalancerChargeModeRequestBody:
 
         :param loadbalancer_ids: 需要修改计费类型的负载均衡器ID列表。
         :type loadbalancer_ids: list[str]
-        :param charge_mode: 计费模式。取值： - prepaid：包周期计费（仅当不传pay_type时，允许设为该值）
+        :param charge_mode: 计费模式。取值： - prepaid：包周期计费[（仅当不传pay_type时，允许设为该值）](tag:test)
         :type charge_mode: str
         :param prepaid_options: 
         :type prepaid_options: :class:`huaweicloudsdkelb.v3.PrepaidChangeChargeModeOption`
@@ -79,7 +79,7 @@ class ChangeLoadbalancerChargeModeRequestBody:
     def charge_mode(self):
         """Gets the charge_mode of this ChangeLoadbalancerChargeModeRequestBody.
 
-        计费模式。取值： - prepaid：包周期计费（仅当不传pay_type时，允许设为该值）
+        计费模式。取值： - prepaid：包周期计费[（仅当不传pay_type时，允许设为该值）](tag:test)
 
         :return: The charge_mode of this ChangeLoadbalancerChargeModeRequestBody.
         :rtype: str
@@ -90,7 +90,7 @@ class ChangeLoadbalancerChargeModeRequestBody:
     def charge_mode(self, charge_mode):
         """Sets the charge_mode of this ChangeLoadbalancerChargeModeRequestBody.
 
-        计费模式。取值： - prepaid：包周期计费（仅当不传pay_type时，允许设为该值）
+        计费模式。取值： - prepaid：包周期计费[（仅当不传pay_type时，允许设为该值）](tag:test)
 
         :param charge_mode: The charge_mode of this ChangeLoadbalancerChargeModeRequestBody.
         :type charge_mode: str

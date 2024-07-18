@@ -19,6 +19,7 @@
  specific language governing permissions and limitations
  under the LICENSE.
 """
+import hashlib
 from sys import version_info
 from abc import abstractmethod
 
@@ -158,8 +159,6 @@ if version_info.major == 3:
 
         new_sm3_hash = lambda data=b'': _SM3Hash(data)
     else:
-        import hashlib
-
         new_sm3_hash = lambda data=b'': hashlib.new('sm3', data)
 else:
     new_sm3_hash = None

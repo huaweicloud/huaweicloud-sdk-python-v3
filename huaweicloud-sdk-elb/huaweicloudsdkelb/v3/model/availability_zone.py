@@ -41,7 +41,7 @@ class AvailabilityZone:
         :type code: str
         :param state: 可用区状态。  取值：ACTIVE。
         :type state: str
-        :param protocol: [未售罄的LB规格类别。  取值：L4 表示网络型LB未售罄；L7 表示应用型LB未售罄。](tag:hws,hk,hws_eu,otc,tlf,ctc,hcso,sbc,g42,cmcc,hk_g42,dt_test,hcso_dt,mix,hk_sbc,hws_ocb,fcs,fcs_dt,dt) [LB规格类别。取值：L4 表示网络型LB；L7 表示应用型LB。](tag:ocb,tm)
+        :param protocol: [未售罄的LB规格类别。  取值：L4 表示网络型LB未售罄；L7 表示应用型LB未售罄。](tag:hws,hk,hws_eu,otc,tlf,ctc,sbc,g42,cmcc,hk_g42,dt_test,mix,hk_sbc,hws_ocb,dt) [LB规格类别。取值：L4 表示网络型LB；L7 表示应用型LB。](tag:ocb,tm,fcs,fcs_dt,hcso,hcso_dt,hk_vdf)
         :type protocol: list[str]
         :param public_border_group: 可用区组，如：center
         :type public_border_group: str
@@ -112,7 +112,7 @@ class AvailabilityZone:
     def protocol(self):
         """Gets the protocol of this AvailabilityZone.
 
-        [未售罄的LB规格类别。  取值：L4 表示网络型LB未售罄；L7 表示应用型LB未售罄。](tag:hws,hk,hws_eu,otc,tlf,ctc,hcso,sbc,g42,cmcc,hk_g42,dt_test,hcso_dt,mix,hk_sbc,hws_ocb,fcs,fcs_dt,dt) [LB规格类别。取值：L4 表示网络型LB；L7 表示应用型LB。](tag:ocb,tm)
+        [未售罄的LB规格类别。  取值：L4 表示网络型LB未售罄；L7 表示应用型LB未售罄。](tag:hws,hk,hws_eu,otc,tlf,ctc,sbc,g42,cmcc,hk_g42,dt_test,mix,hk_sbc,hws_ocb,dt) [LB规格类别。取值：L4 表示网络型LB；L7 表示应用型LB。](tag:ocb,tm,fcs,fcs_dt,hcso,hcso_dt,hk_vdf)
 
         :return: The protocol of this AvailabilityZone.
         :rtype: list[str]
@@ -123,7 +123,7 @@ class AvailabilityZone:
     def protocol(self, protocol):
         """Sets the protocol of this AvailabilityZone.
 
-        [未售罄的LB规格类别。  取值：L4 表示网络型LB未售罄；L7 表示应用型LB未售罄。](tag:hws,hk,hws_eu,otc,tlf,ctc,hcso,sbc,g42,cmcc,hk_g42,dt_test,hcso_dt,mix,hk_sbc,hws_ocb,fcs,fcs_dt,dt) [LB规格类别。取值：L4 表示网络型LB；L7 表示应用型LB。](tag:ocb,tm)
+        [未售罄的LB规格类别。  取值：L4 表示网络型LB未售罄；L7 表示应用型LB未售罄。](tag:hws,hk,hws_eu,otc,tlf,ctc,sbc,g42,cmcc,hk_g42,dt_test,mix,hk_sbc,hws_ocb,dt) [LB规格类别。取值：L4 表示网络型LB；L7 表示应用型LB。](tag:ocb,tm,fcs,fcs_dt,hcso,hcso_dt,hk_vdf)
 
         :param protocol: The protocol of this AvailabilityZone.
         :type protocol: list[str]

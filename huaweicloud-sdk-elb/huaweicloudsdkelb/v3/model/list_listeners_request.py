@@ -83,15 +83,15 @@ class ListListenersRequest:
 
         The model defined in huaweicloud sdk
 
-        :param limit: 每页返回的个数。
+        :param limit: 参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
         :type limit: int
         :param marker: 上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
         :type marker: str
         :param page_reverse: 是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse&#x3D;true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
         :type page_reverse: bool
-        :param protocol_port: 监听器的前端监听端口。  支持多值查询，查询条件格式：*protocol_port&#x3D;xxx&amp;protocol_port&#x3D;xxx*。
+        :param protocol_port: 监听器的前端监听端口。  [当监听器的protocol为IP时，前端端口固定为0。](tag:hws_eu) 支持多值查询，查询条件格式：*protocol_port&#x3D;xxx&amp;protocol_port&#x3D;xxx*。
         :type protocol_port: list[str]
-        :param protocol: 监听器的监听协议。  [取值：TCP、UDP、HTTP、HTTPS、TERMINATED_HTTPS、QUIC。  说明：TERMINATED_HTTPS为共享型LB上的监听器独有的协议。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt)  [取值：TCP、UDP、HTTP、HTTPS。](tag:hws_eu,hcso_dt)  支持多值查询，查询条件格式：*protocol&#x3D;xxx&amp;protocol&#x3D;xxx*。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt,dt_test)
+        :param protocol: 监听器的监听协议。  [取值：TCP、UDP、HTTP、HTTPS、TERMINATED_HTTPS、QUIC、TLS。 说明：TERMINATED_HTTPS为共享型LB上的监听器独有的协议。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt)  [取值：TCP、UDP、IP、HTTP、HTTPS。IP为网关型LB上的监听器独有的协议。](tag:hws_eu,hcso_dt)  支持多值查询，查询条件格式：*protocol&#x3D;xxx&amp;protocol&#x3D;xxx*。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt,dt_test)
         :type protocol: list[str]
         :param description: 监听器的描述信息。  支持多值查询，查询条件格式：*description&#x3D;xxx&amp;description&#x3D;xxx*。
         :type description: list[str]
@@ -99,7 +99,7 @@ class ListListenersRequest:
         :type default_tls_container_ref: list[str]
         :param client_ca_tls_container_ref: 监听器的CA证书ID。  支持多值查询，查询条件格式： *client_ca_tls_container_ref&#x3D;xxx&amp;client_ca_tls_container_ref&#x3D;xxx*。
         :type client_ca_tls_container_ref: list[str]
-        :param admin_state_up: 监听器的管理状态，只能设置为true。  不支持该字段，请勿使用。
+        :param admin_state_up: 监听器的管理状态。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
         :type admin_state_up: bool
         :param connection_limit: ​监听器的最大连接数。  取值：-1表示不限制连接数。  支持多值查询，查询条件格式：*connection_limit&#x3D;xxx&amp;connection_limit&#x3D;xxx*。  不支持该字段，请勿使用。
         :type connection_limit: list[int]
@@ -127,13 +127,13 @@ class ListListenersRequest:
         :type member_timeout: list[int]
         :param client_timeout: 等待客户端请求超时时间，包括两种情况： - 读取整个客户端请求头的超时时长：如果客户端未在超时时长内发送完整个请求头，则请求将被中断 - 两个连续body体的数据包到达LB的时间间隔，超出client_timeout将会断开连接。  取值：1-300s。  支持多值查询，查询条件格式：*client_timeout&#x3D;xxx&amp;client_timeout&#x3D;xxx*。
         :type client_timeout: list[int]
-        :param keepalive_timeout: 客户端连接空闲超时时间。在超过keepalive_timeout时长一直没有请求， 负载均衡会暂时中断当前连接，直到下一次请求时重新建立新的连接。  取值： - TCP监听器：10-4000s。 - HTTP/HTTPS/TERMINATED_HTTPS监听器：0-4000s。 - 共享型实例的UDP监听器不支持此字段。  支持多值查询，查询条件格式：*keepalive_timeout&#x3D;xxx&amp;keepalive_timeout&#x3D;xxx*。
+        :param keepalive_timeout: 客户端连接空闲超时时间。在超过keepalive_timeout时长一直没有请求， 负载均衡会暂时中断当前连接，直到下一次请求时重新建立新的连接。  取值： - TCP监听器[和IP监听器](tag:hws_eu)：10-4000s。 - HTTP/HTTPS/TERMINATED_HTTPS监听器：0-4000s。 [- 共享型实例的UDP监听器不支持此字段。](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt,dt_test,hk_tm)  支持多值查询，查询条件格式：*keepalive_timeout&#x3D;xxx&amp;keepalive_timeout&#x3D;xxx*。
         :type keepalive_timeout: list[int]
-        :param transparent_client_ip_enable: 是否透传客户端IP地址。开启后客户端IP地址将透传到后端服务器。  [仅作用于共享型LB的TCP/UDP监听器。取值：true开启，false不开启。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt,hk_tm)
+        :param transparent_client_ip_enable: 是否透传客户端IP地址。开启后客户端IP地址将透传到后端服务器。  [仅作用于共享型LB的TCP/UDP监听器。取值：true开启，false不开启。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,fcs,dt,hk_tm)
         :type transparent_client_ip_enable: bool
-        :param proxy_protocol_enable: 是否开启proxy_protocol。仅tcpssl监听器可指定，其他协议的监听器该字段不生效，proxy_protocol不开启。
+        :param proxy_protocol_enable: 是否开启proxy_protocol。仅TLS监听器可指定，其他协议的监听器该字段不生效，proxy_protocol不开启。
         :type proxy_protocol_enable: bool
-        :param enhance_l7policy_enable: 是否开启高级转发策略功能。开启高级转发策略后，支持更灵活的转发策略和转发规则设置。  取值：true开启，false不开启。  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        :param enhance_l7policy_enable: 是否开启高级转发策略功能。开启高级转发策略后，支持更灵活的转发策略和转发规则设置。  取值：true开启，false不开启。  [荷兰region不支持该字段，请勿使用。](tag:dt,dt_test)
         :type enhance_l7policy_enable: bool
         :param member_instance_id: 后端云服务器ID。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_instance_id&#x3D;xxx&amp;member_instance_id&#x3D;xxx*。
         :type member_instance_id: list[str]
@@ -234,7 +234,7 @@ class ListListenersRequest:
     def limit(self):
         """Gets the limit of this ListListenersRequest.
 
-        每页返回的个数。
+        参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
 
         :return: The limit of this ListListenersRequest.
         :rtype: int
@@ -245,7 +245,7 @@ class ListListenersRequest:
     def limit(self, limit):
         """Sets the limit of this ListListenersRequest.
 
-        每页返回的个数。
+        参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
 
         :param limit: The limit of this ListListenersRequest.
         :type limit: int
@@ -300,7 +300,7 @@ class ListListenersRequest:
     def protocol_port(self):
         """Gets the protocol_port of this ListListenersRequest.
 
-        监听器的前端监听端口。  支持多值查询，查询条件格式：*protocol_port=xxx&protocol_port=xxx*。
+        监听器的前端监听端口。  [当监听器的protocol为IP时，前端端口固定为0。](tag:hws_eu) 支持多值查询，查询条件格式：*protocol_port=xxx&protocol_port=xxx*。
 
         :return: The protocol_port of this ListListenersRequest.
         :rtype: list[str]
@@ -311,7 +311,7 @@ class ListListenersRequest:
     def protocol_port(self, protocol_port):
         """Sets the protocol_port of this ListListenersRequest.
 
-        监听器的前端监听端口。  支持多值查询，查询条件格式：*protocol_port=xxx&protocol_port=xxx*。
+        监听器的前端监听端口。  [当监听器的protocol为IP时，前端端口固定为0。](tag:hws_eu) 支持多值查询，查询条件格式：*protocol_port=xxx&protocol_port=xxx*。
 
         :param protocol_port: The protocol_port of this ListListenersRequest.
         :type protocol_port: list[str]
@@ -322,7 +322,7 @@ class ListListenersRequest:
     def protocol(self):
         """Gets the protocol of this ListListenersRequest.
 
-        监听器的监听协议。  [取值：TCP、UDP、HTTP、HTTPS、TERMINATED_HTTPS、QUIC。  说明：TERMINATED_HTTPS为共享型LB上的监听器独有的协议。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt)  [取值：TCP、UDP、HTTP、HTTPS。](tag:hws_eu,hcso_dt)  支持多值查询，查询条件格式：*protocol=xxx&protocol=xxx*。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt,dt_test)
+        监听器的监听协议。  [取值：TCP、UDP、HTTP、HTTPS、TERMINATED_HTTPS、QUIC、TLS。 说明：TERMINATED_HTTPS为共享型LB上的监听器独有的协议。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt)  [取值：TCP、UDP、IP、HTTP、HTTPS。IP为网关型LB上的监听器独有的协议。](tag:hws_eu,hcso_dt)  支持多值查询，查询条件格式：*protocol=xxx&protocol=xxx*。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt,dt_test)
 
         :return: The protocol of this ListListenersRequest.
         :rtype: list[str]
@@ -333,7 +333,7 @@ class ListListenersRequest:
     def protocol(self, protocol):
         """Sets the protocol of this ListListenersRequest.
 
-        监听器的监听协议。  [取值：TCP、UDP、HTTP、HTTPS、TERMINATED_HTTPS、QUIC。  说明：TERMINATED_HTTPS为共享型LB上的监听器独有的协议。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt)  [取值：TCP、UDP、HTTP、HTTPS。](tag:hws_eu,hcso_dt)  支持多值查询，查询条件格式：*protocol=xxx&protocol=xxx*。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt,dt_test)
+        监听器的监听协议。  [取值：TCP、UDP、HTTP、HTTPS、TERMINATED_HTTPS、QUIC、TLS。 说明：TERMINATED_HTTPS为共享型LB上的监听器独有的协议。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt)  [取值：TCP、UDP、IP、HTTP、HTTPS。IP为网关型LB上的监听器独有的协议。](tag:hws_eu,hcso_dt)  支持多值查询，查询条件格式：*protocol=xxx&protocol=xxx*。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt,dt_test)
 
         :param protocol: The protocol of this ListListenersRequest.
         :type protocol: list[str]
@@ -410,7 +410,7 @@ class ListListenersRequest:
     def admin_state_up(self):
         """Gets the admin_state_up of this ListListenersRequest.
 
-        监听器的管理状态，只能设置为true。  不支持该字段，请勿使用。
+        监听器的管理状态。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
 
         :return: The admin_state_up of this ListListenersRequest.
         :rtype: bool
@@ -421,7 +421,7 @@ class ListListenersRequest:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this ListListenersRequest.
 
-        监听器的管理状态，只能设置为true。  不支持该字段，请勿使用。
+        监听器的管理状态。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
 
         :param admin_state_up: The admin_state_up of this ListListenersRequest.
         :type admin_state_up: bool
@@ -718,7 +718,7 @@ class ListListenersRequest:
     def keepalive_timeout(self):
         """Gets the keepalive_timeout of this ListListenersRequest.
 
-        客户端连接空闲超时时间。在超过keepalive_timeout时长一直没有请求， 负载均衡会暂时中断当前连接，直到下一次请求时重新建立新的连接。  取值： - TCP监听器：10-4000s。 - HTTP/HTTPS/TERMINATED_HTTPS监听器：0-4000s。 - 共享型实例的UDP监听器不支持此字段。  支持多值查询，查询条件格式：*keepalive_timeout=xxx&keepalive_timeout=xxx*。
+        客户端连接空闲超时时间。在超过keepalive_timeout时长一直没有请求， 负载均衡会暂时中断当前连接，直到下一次请求时重新建立新的连接。  取值： - TCP监听器[和IP监听器](tag:hws_eu)：10-4000s。 - HTTP/HTTPS/TERMINATED_HTTPS监听器：0-4000s。 [- 共享型实例的UDP监听器不支持此字段。](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt,dt_test,hk_tm)  支持多值查询，查询条件格式：*keepalive_timeout=xxx&keepalive_timeout=xxx*。
 
         :return: The keepalive_timeout of this ListListenersRequest.
         :rtype: list[int]
@@ -729,7 +729,7 @@ class ListListenersRequest:
     def keepalive_timeout(self, keepalive_timeout):
         """Sets the keepalive_timeout of this ListListenersRequest.
 
-        客户端连接空闲超时时间。在超过keepalive_timeout时长一直没有请求， 负载均衡会暂时中断当前连接，直到下一次请求时重新建立新的连接。  取值： - TCP监听器：10-4000s。 - HTTP/HTTPS/TERMINATED_HTTPS监听器：0-4000s。 - 共享型实例的UDP监听器不支持此字段。  支持多值查询，查询条件格式：*keepalive_timeout=xxx&keepalive_timeout=xxx*。
+        客户端连接空闲超时时间。在超过keepalive_timeout时长一直没有请求， 负载均衡会暂时中断当前连接，直到下一次请求时重新建立新的连接。  取值： - TCP监听器[和IP监听器](tag:hws_eu)：10-4000s。 - HTTP/HTTPS/TERMINATED_HTTPS监听器：0-4000s。 [- 共享型实例的UDP监听器不支持此字段。](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt,dt_test,hk_tm)  支持多值查询，查询条件格式：*keepalive_timeout=xxx&keepalive_timeout=xxx*。
 
         :param keepalive_timeout: The keepalive_timeout of this ListListenersRequest.
         :type keepalive_timeout: list[int]
@@ -740,7 +740,7 @@ class ListListenersRequest:
     def transparent_client_ip_enable(self):
         """Gets the transparent_client_ip_enable of this ListListenersRequest.
 
-        是否透传客户端IP地址。开启后客户端IP地址将透传到后端服务器。  [仅作用于共享型LB的TCP/UDP监听器。取值：true开启，false不开启。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt,hk_tm)
+        是否透传客户端IP地址。开启后客户端IP地址将透传到后端服务器。  [仅作用于共享型LB的TCP/UDP监听器。取值：true开启，false不开启。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,fcs,dt,hk_tm)
 
         :return: The transparent_client_ip_enable of this ListListenersRequest.
         :rtype: bool
@@ -751,7 +751,7 @@ class ListListenersRequest:
     def transparent_client_ip_enable(self, transparent_client_ip_enable):
         """Sets the transparent_client_ip_enable of this ListListenersRequest.
 
-        是否透传客户端IP地址。开启后客户端IP地址将透传到后端服务器。  [仅作用于共享型LB的TCP/UDP监听器。取值：true开启，false不开启。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt,hk_tm)
+        是否透传客户端IP地址。开启后客户端IP地址将透传到后端服务器。  [仅作用于共享型LB的TCP/UDP监听器。取值：true开启，false不开启。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,fcs,dt,hk_tm)
 
         :param transparent_client_ip_enable: The transparent_client_ip_enable of this ListListenersRequest.
         :type transparent_client_ip_enable: bool
@@ -762,7 +762,7 @@ class ListListenersRequest:
     def proxy_protocol_enable(self):
         """Gets the proxy_protocol_enable of this ListListenersRequest.
 
-        是否开启proxy_protocol。仅tcpssl监听器可指定，其他协议的监听器该字段不生效，proxy_protocol不开启。
+        是否开启proxy_protocol。仅TLS监听器可指定，其他协议的监听器该字段不生效，proxy_protocol不开启。
 
         :return: The proxy_protocol_enable of this ListListenersRequest.
         :rtype: bool
@@ -773,7 +773,7 @@ class ListListenersRequest:
     def proxy_protocol_enable(self, proxy_protocol_enable):
         """Sets the proxy_protocol_enable of this ListListenersRequest.
 
-        是否开启proxy_protocol。仅tcpssl监听器可指定，其他协议的监听器该字段不生效，proxy_protocol不开启。
+        是否开启proxy_protocol。仅TLS监听器可指定，其他协议的监听器该字段不生效，proxy_protocol不开启。
 
         :param proxy_protocol_enable: The proxy_protocol_enable of this ListListenersRequest.
         :type proxy_protocol_enable: bool
@@ -784,7 +784,7 @@ class ListListenersRequest:
     def enhance_l7policy_enable(self):
         """Gets the enhance_l7policy_enable of this ListListenersRequest.
 
-        是否开启高级转发策略功能。开启高级转发策略后，支持更灵活的转发策略和转发规则设置。  取值：true开启，false不开启。  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        是否开启高级转发策略功能。开启高级转发策略后，支持更灵活的转发策略和转发规则设置。  取值：true开启，false不开启。  [荷兰region不支持该字段，请勿使用。](tag:dt,dt_test)
 
         :return: The enhance_l7policy_enable of this ListListenersRequest.
         :rtype: bool
@@ -795,7 +795,7 @@ class ListListenersRequest:
     def enhance_l7policy_enable(self, enhance_l7policy_enable):
         """Sets the enhance_l7policy_enable of this ListListenersRequest.
 
-        是否开启高级转发策略功能。开启高级转发策略后，支持更灵活的转发策略和转发规则设置。  取值：true开启，false不开启。  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        是否开启高级转发策略功能。开启高级转发策略后，支持更灵活的转发策略和转发规则设置。  取值：true开启，false不开启。  [荷兰region不支持该字段，请勿使用。](tag:dt,dt_test)
 
         :param enhance_l7policy_enable: The enhance_l7policy_enable of this ListListenersRequest.
         :type enhance_l7policy_enable: bool

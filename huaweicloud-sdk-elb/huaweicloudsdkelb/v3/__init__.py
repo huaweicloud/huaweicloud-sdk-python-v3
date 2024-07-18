@@ -46,6 +46,9 @@ from huaweicloudsdkelb.v3.model.connection_drain import ConnectionDrain
 from huaweicloudsdkelb.v3.model.count_preoccupy_ip_num_request import CountPreoccupyIpNumRequest
 from huaweicloudsdkelb.v3.model.count_preoccupy_ip_num_response import CountPreoccupyIpNumResponse
 from huaweicloudsdkelb.v3.model.create_certificate_option import CreateCertificateOption
+from huaweicloudsdkelb.v3.model.create_certificate_private_key_echo_request import CreateCertificatePrivateKeyEchoRequest
+from huaweicloudsdkelb.v3.model.create_certificate_private_key_echo_request_body import CreateCertificatePrivateKeyEchoRequestBody
+from huaweicloudsdkelb.v3.model.create_certificate_private_key_echo_response import CreateCertificatePrivateKeyEchoResponse
 from huaweicloudsdkelb.v3.model.create_certificate_request import CreateCertificateRequest
 from huaweicloudsdkelb.v3.model.create_certificate_request_body import CreateCertificateRequestBody
 from huaweicloudsdkelb.v3.model.create_certificate_response import CreateCertificateResponse
@@ -54,6 +57,8 @@ from huaweicloudsdkelb.v3.model.create_health_monitor_option import CreateHealth
 from huaweicloudsdkelb.v3.model.create_health_monitor_request import CreateHealthMonitorRequest
 from huaweicloudsdkelb.v3.model.create_health_monitor_request_body import CreateHealthMonitorRequestBody
 from huaweicloudsdkelb.v3.model.create_health_monitor_response import CreateHealthMonitorResponse
+from huaweicloudsdkelb.v3.model.create_insert_header_config import CreateInsertHeaderConfig
+from huaweicloudsdkelb.v3.model.create_insert_headers_config import CreateInsertHeadersConfig
 from huaweicloudsdkelb.v3.model.create_ip_group_ip_option import CreateIpGroupIpOption
 from huaweicloudsdkelb.v3.model.create_ip_group_option import CreateIpGroupOption
 from huaweicloudsdkelb.v3.model.create_ip_group_request import CreateIpGroupRequest
@@ -100,8 +105,12 @@ from huaweicloudsdkelb.v3.model.create_pool_request_body import CreatePoolReques
 from huaweicloudsdkelb.v3.model.create_pool_response import CreatePoolResponse
 from huaweicloudsdkelb.v3.model.create_pool_session_persistence_option import CreatePoolSessionPersistenceOption
 from huaweicloudsdkelb.v3.model.create_pool_slow_start_option import CreatePoolSlowStartOption
+from huaweicloudsdkelb.v3.model.create_redirect_pools_config import CreateRedirectPoolsConfig
 from huaweicloudsdkelb.v3.model.create_redirect_pools_extend_config import CreateRedirectPoolsExtendConfig
+from huaweicloudsdkelb.v3.model.create_redirect_pools_sticky_session_config import CreateRedirectPoolsStickySessionConfig
 from huaweicloudsdkelb.v3.model.create_redirect_url_config import CreateRedirectUrlConfig
+from huaweicloudsdkelb.v3.model.create_remove_header_config import CreateRemoveHeaderConfig
+from huaweicloudsdkelb.v3.model.create_remove_headers_config import CreateRemoveHeadersConfig
 from huaweicloudsdkelb.v3.model.create_rewrite_url_config import CreateRewriteUrlConfig
 from huaweicloudsdkelb.v3.model.create_rule_condition import CreateRuleCondition
 from huaweicloudsdkelb.v3.model.create_rule_option import CreateRuleOption
@@ -109,6 +118,7 @@ from huaweicloudsdkelb.v3.model.create_security_policy_option import CreateSecur
 from huaweicloudsdkelb.v3.model.create_security_policy_request import CreateSecurityPolicyRequest
 from huaweicloudsdkelb.v3.model.create_security_policy_request_body import CreateSecurityPolicyRequestBody
 from huaweicloudsdkelb.v3.model.create_security_policy_response import CreateSecurityPolicyResponse
+from huaweicloudsdkelb.v3.model.create_traffic_limit_config import CreateTrafficLimitConfig
 from huaweicloudsdkelb.v3.model.delete_certificate_request import DeleteCertificateRequest
 from huaweicloudsdkelb.v3.model.delete_certificate_response import DeleteCertificateResponse
 from huaweicloudsdkelb.v3.model.delete_health_monitor_request import DeleteHealthMonitorRequest
@@ -143,6 +153,8 @@ from huaweicloudsdkelb.v3.model.flavor import Flavor
 from huaweicloudsdkelb.v3.model.flavor_info import FlavorInfo
 from huaweicloudsdkelb.v3.model.global_eip_info import GlobalEipInfo
 from huaweicloudsdkelb.v3.model.health_monitor import HealthMonitor
+from huaweicloudsdkelb.v3.model.insert_header_config import InsertHeaderConfig
+from huaweicloudsdkelb.v3.model.insert_headers_config import InsertHeadersConfig
 from huaweicloudsdkelb.v3.model.ip_group import IpGroup
 from huaweicloudsdkelb.v3.model.ip_group_ip import IpGroupIp
 from huaweicloudsdkelb.v3.model.ip_info import IpInfo
@@ -205,10 +217,12 @@ from huaweicloudsdkelb.v3.model.master_slave_health_monitor import MasterSlaveHe
 from huaweicloudsdkelb.v3.model.master_slave_member import MasterSlaveMember
 from huaweicloudsdkelb.v3.model.master_slave_pool import MasterSlavePool
 from huaweicloudsdkelb.v3.model.member import Member
+from huaweicloudsdkelb.v3.model.member_info import MemberInfo
 from huaweicloudsdkelb.v3.model.member_ref import MemberRef
 from huaweicloudsdkelb.v3.model.member_status import MemberStatus
 from huaweicloudsdkelb.v3.model.page_info import PageInfo
 from huaweicloudsdkelb.v3.model.pool import Pool
+from huaweicloudsdkelb.v3.model.pool_health import PoolHealth
 from huaweicloudsdkelb.v3.model.pool_ref import PoolRef
 from huaweicloudsdkelb.v3.model.port_range import PortRange
 from huaweicloudsdkelb.v3.model.preoccupy_ip import PreoccupyIp
@@ -218,14 +232,20 @@ from huaweicloudsdkelb.v3.model.prepaid_update_option import PrepaidUpdateOption
 from huaweicloudsdkelb.v3.model.public_ip_info import PublicIpInfo
 from huaweicloudsdkelb.v3.model.quota import Quota
 from huaweicloudsdkelb.v3.model.quota_info import QuotaInfo
+from huaweicloudsdkelb.v3.model.redirect_pools_config import RedirectPoolsConfig
 from huaweicloudsdkelb.v3.model.redirect_pools_extend_config import RedirectPoolsExtendConfig
+from huaweicloudsdkelb.v3.model.redirect_pools_sticky_session_config import RedirectPoolsStickySessionConfig
 from huaweicloudsdkelb.v3.model.redirect_url_config import RedirectUrlConfig
+from huaweicloudsdkelb.v3.model.remove_header_config import RemoveHeaderConfig
+from huaweicloudsdkelb.v3.model.remove_headers_config import RemoveHeadersConfig
 from huaweicloudsdkelb.v3.model.resource_id import ResourceID
 from huaweicloudsdkelb.v3.model.rewrite_url_config import RewriteUrlConfig
 from huaweicloudsdkelb.v3.model.rule_condition import RuleCondition
 from huaweicloudsdkelb.v3.model.rule_ref import RuleRef
 from huaweicloudsdkelb.v3.model.security_policy import SecurityPolicy
 from huaweicloudsdkelb.v3.model.session_persistence import SessionPersistence
+from huaweicloudsdkelb.v3.model.show_certificate_private_key_echo_request import ShowCertificatePrivateKeyEchoRequest
+from huaweicloudsdkelb.v3.model.show_certificate_private_key_echo_response import ShowCertificatePrivateKeyEchoResponse
 from huaweicloudsdkelb.v3.model.show_certificate_request import ShowCertificateRequest
 from huaweicloudsdkelb.v3.model.show_certificate_response import ShowCertificateResponse
 from huaweicloudsdkelb.v3.model.show_flavor_request import ShowFlavorRequest
@@ -259,6 +279,7 @@ from huaweicloudsdkelb.v3.model.show_security_policy_response import ShowSecurit
 from huaweicloudsdkelb.v3.model.slow_start import SlowStart
 from huaweicloudsdkelb.v3.model.system_security_policy import SystemSecurityPolicy
 from huaweicloudsdkelb.v3.model.tag import Tag
+from huaweicloudsdkelb.v3.model.traffic_limit_config import TrafficLimitConfig
 from huaweicloudsdkelb.v3.model.upadate_ip_group_ip_option import UpadateIpGroupIpOption
 from huaweicloudsdkelb.v3.model.update_certificate_option import UpdateCertificateOption
 from huaweicloudsdkelb.v3.model.update_certificate_request import UpdateCertificateRequest
@@ -269,6 +290,8 @@ from huaweicloudsdkelb.v3.model.update_health_monitor_option import UpdateHealth
 from huaweicloudsdkelb.v3.model.update_health_monitor_request import UpdateHealthMonitorRequest
 from huaweicloudsdkelb.v3.model.update_health_monitor_request_body import UpdateHealthMonitorRequestBody
 from huaweicloudsdkelb.v3.model.update_health_monitor_response import UpdateHealthMonitorResponse
+from huaweicloudsdkelb.v3.model.update_insert_header_config import UpdateInsertHeaderConfig
+from huaweicloudsdkelb.v3.model.update_insert_headers_config import UpdateInsertHeadersConfig
 from huaweicloudsdkelb.v3.model.update_ip_group_option import UpdateIpGroupOption
 from huaweicloudsdkelb.v3.model.update_ip_group_request import UpdateIpGroupRequest
 from huaweicloudsdkelb.v3.model.update_ip_group_request_body import UpdateIpGroupRequestBody
@@ -310,11 +333,17 @@ from huaweicloudsdkelb.v3.model.update_pool_request_body import UpdatePoolReques
 from huaweicloudsdkelb.v3.model.update_pool_response import UpdatePoolResponse
 from huaweicloudsdkelb.v3.model.update_pool_session_persistence_option import UpdatePoolSessionPersistenceOption
 from huaweicloudsdkelb.v3.model.update_pool_slow_start_option import UpdatePoolSlowStartOption
+from huaweicloudsdkelb.v3.model.update_redirect_pools_config import UpdateRedirectPoolsConfig
 from huaweicloudsdkelb.v3.model.update_redirect_pools_extend_config import UpdateRedirectPoolsExtendConfig
+from huaweicloudsdkelb.v3.model.update_redirect_pools_sticky_session_config import UpdateRedirectPoolsStickySessionConfig
 from huaweicloudsdkelb.v3.model.update_redirect_url_config import UpdateRedirectUrlConfig
+from huaweicloudsdkelb.v3.model.update_remove_header_config import UpdateRemoveHeaderConfig
+from huaweicloudsdkelb.v3.model.update_remove_headers_config import UpdateRemoveHeadersConfig
+from huaweicloudsdkelb.v3.model.update_rewrite_url_config import UpdateRewriteUrlConfig
 from huaweicloudsdkelb.v3.model.update_rule_condition import UpdateRuleCondition
 from huaweicloudsdkelb.v3.model.update_security_policy_option import UpdateSecurityPolicyOption
 from huaweicloudsdkelb.v3.model.update_security_policy_request import UpdateSecurityPolicyRequest
 from huaweicloudsdkelb.v3.model.update_security_policy_request_body import UpdateSecurityPolicyRequestBody
 from huaweicloudsdkelb.v3.model.update_security_policy_response import UpdateSecurityPolicyResponse
+from huaweicloudsdkelb.v3.model.update_traffic_limit_config import UpdateTrafficLimitConfig
 

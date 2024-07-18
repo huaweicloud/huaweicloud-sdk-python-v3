@@ -77,7 +77,7 @@ class ModifyJobReq:
         :type source_endpoint: :class:`huaweicloudsdkdrs.v3.Endpoint`
         :param target_endpoint: 
         :type target_endpoint: :class:`huaweicloudsdkdrs.v3.Endpoint`
-        :param node_type: node规格类型，测试连接之后修改调用时必填。
+        :param node_type: node规格类型，测试连接之后修改调用时必填。取值： - micro：极小规格。 - small：小规格。 - medium：中规格。 - high：大规格。 - xlarge：超大规格。 - 2xlarge：极大规格。
         :type node_type: str
         :param engine_type: 引擎类型，测试连接之后修改调用时必填。mysql：迁移，同步使用。mongodb：迁移使用。cloudDataGuard-mysql：灾备使用
         :type engine_type: str
@@ -305,7 +305,7 @@ class ModifyJobReq:
     def node_type(self):
         """Gets the node_type of this ModifyJobReq.
 
-        node规格类型，测试连接之后修改调用时必填。
+        node规格类型，测试连接之后修改调用时必填。取值： - micro：极小规格。 - small：小规格。 - medium：中规格。 - high：大规格。 - xlarge：超大规格。 - 2xlarge：极大规格。
 
         :return: The node_type of this ModifyJobReq.
         :rtype: str
@@ -316,7 +316,7 @@ class ModifyJobReq:
     def node_type(self, node_type):
         """Sets the node_type of this ModifyJobReq.
 
-        node规格类型，测试连接之后修改调用时必填。
+        node规格类型，测试连接之后修改调用时必填。取值： - micro：极小规格。 - small：小规格。 - medium：中规格。 - high：大规格。 - xlarge：超大规格。 - 2xlarge：极大规格。
 
         :param node_type: The node_type of this ModifyJobReq.
         :type node_type: str

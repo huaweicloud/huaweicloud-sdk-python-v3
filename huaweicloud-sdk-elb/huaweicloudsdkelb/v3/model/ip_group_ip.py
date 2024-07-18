@@ -29,7 +29,7 @@ class IpGroupIp:
 
         The model defined in huaweicloud sdk
 
-        :param ip: IP地址，可以是具体的IP地址或者IP地址段。
+        :param ip: 参数解释：IP地址，可以是具体的IP地址或者IP地址段。
         :type ip: str
         """
         
@@ -44,7 +44,7 @@ class IpGroupIp:
     def ip(self):
         """Gets the ip of this IpGroupIp.
 
-        IP地址，可以是具体的IP地址或者IP地址段。
+        参数解释：IP地址，可以是具体的IP地址或者IP地址段。
 
         :return: The ip of this IpGroupIp.
         :rtype: str
@@ -55,7 +55,7 @@ class IpGroupIp:
     def ip(self, ip):
         """Sets the ip of this IpGroupIp.
 
-        IP地址，可以是具体的IP地址或者IP地址段。
+        参数解释：IP地址，可以是具体的IP地址或者IP地址段。
 
         :param ip: The ip of this IpGroupIp.
         :type ip: str

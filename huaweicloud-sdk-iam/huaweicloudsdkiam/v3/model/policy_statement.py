@@ -20,7 +20,7 @@ class PolicyStatement:
         'action': 'list[str]',
         'effect': 'str',
         'condition': 'object',
-        'resource': 'list[str]'
+        'resource': 'object'
     }
 
     attribute_map = {
@@ -42,7 +42,7 @@ class PolicyStatement:
         :param condition: 限制条件。不超过10个。
         :type condition: object
         :param resource: 资源。数组长度不超过10，每个字符串长度不超过128，规则如下： &gt; - 可填 * 的五段式：&lt;service-name&gt;:&lt;region&gt;:&lt;account-id&gt;:&lt;resource-type&gt;:&lt;resource-path&gt;，例：\&quot;obs:*:*:bucket:*\&quot;。 &gt; - region字段为*或用户可访问的region。service必须存在且resource属于对应service。 &gt; - 当该自定义策略为委托自定义策略时，该字段类型为Object，值为：&#x60;&#x60;&#x60;\&quot;Resource\&quot;: {\&quot;uri\&quot;: [\&quot;/iam/agencies/07805acaba800fdd4fbdc00b8f888c7c\&quot;]}&#x60;&#x60;&#x60;。
-        :type resource: list[str]
+        :type resource: object
         """
         
         
@@ -133,7 +133,7 @@ class PolicyStatement:
         资源。数组长度不超过10，每个字符串长度不超过128，规则如下： > - 可填 * 的五段式：<service-name>:<region>:<account-id>:<resource-type>:<resource-path>，例：\"obs:*:*:bucket:*\"。 > - region字段为*或用户可访问的region。service必须存在且resource属于对应service。 > - 当该自定义策略为委托自定义策略时，该字段类型为Object，值为：```\"Resource\": {\"uri\": [\"/iam/agencies/07805acaba800fdd4fbdc00b8f888c7c\"]}```。
 
         :return: The resource of this PolicyStatement.
-        :rtype: list[str]
+        :rtype: object
         """
         return self._resource
 
@@ -144,7 +144,7 @@ class PolicyStatement:
         资源。数组长度不超过10，每个字符串长度不超过128，规则如下： > - 可填 * 的五段式：<service-name>:<region>:<account-id>:<resource-type>:<resource-path>，例：\"obs:*:*:bucket:*\"。 > - region字段为*或用户可访问的region。service必须存在且resource属于对应service。 > - 当该自定义策略为委托自定义策略时，该字段类型为Object，值为：```\"Resource\": {\"uri\": [\"/iam/agencies/07805acaba800fdd4fbdc00b8f888c7c\"]}```。
 
         :param resource: The resource of this PolicyStatement.
-        :type resource: list[str]
+        :type resource: object
         """
         self._resource = resource
 

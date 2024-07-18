@@ -63,7 +63,7 @@ class ListHealthMonitorsRequest:
 
         :param marker: 上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
         :type marker: str
-        :param limit: 每页返回的个数。
+        :param limit: 参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
         :type limit: int
         :param page_reverse: 是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse&#x3D;true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
         :type page_reverse: bool
@@ -85,13 +85,13 @@ class ListHealthMonitorsRequest:
         :type max_retries_down: list[int]
         :param timeout: 一次健康检查请求的超时时间。
         :type timeout: int
-        :param type: 健康检查请求协议。  取值：TCP、UDP_CONNECT、HTTP、HTTPS。  支持多值查询，查询条件格式：*****type&#x3D;xxx&amp;type&#x3D;xxx*****。
+        :param type: 健康检查请求协议。  取值：TCP、UDP_CONNECT、HTTP、HTTPS、TLS和GRPC。  支持多值查询，查询条件格式：*****type&#x3D;xxx&amp;type&#x3D;xxx*****。
         :type type: list[str]
-        :param expected_codes: 期望响应状态码。  取值： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。   默认值：200。  仅支持HTTP/HTTPS设置该字段，其他协议设置不会生效。  支持多值查询，查询条件格式：****expected_codes&#x3D;xxx&amp;expected_codes&#x3D;xxx****。
+        :param expected_codes: 期望响应状态码。  取值： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。   默认值：200。  仅支持HTTP/HTTPS/GRPC设置该字段，其他协议设置不会生效。  支持多值查询，查询条件格式：****expected_codes&#x3D;xxx&amp;expected_codes&#x3D;xxx****。
         :type expected_codes: list[str]
         :param url_path: 健康检查测试member健康时发送的http请求路径。默认为“/”。  使用说明：以“/”开头。当type为HTTP/HTTPS时生效。  支持多值查询，查询条件格式：***url_path&#x3D;xxx&amp;url_path&#x3D;xxx***。
         :type url_path: list[str]
-        :param http_method: HTTP请求方法。  取值：GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH。  支持多值查询，查询条件格式：**http_method&#x3D;xxx&amp;http_method&#x3D;xxx**。  不支持该字段，请勿使用。
+        :param http_method: HTTP请求方法。  取值：GET、HEAD、POST。  支持多值查询，查询条件格式：**http_method&#x3D;xxx&amp;http_method&#x3D;xxx**。
         :type http_method: list[str]
         :param enterprise_project_id: 企业项目ID。不传时查询default企业项目\&quot;0\&quot;下的资源，鉴权按照default企业项目鉴权； 如果传值，则传已存在的企业项目ID或all_granted_eps（表示查询所有企业项目）进行查询。  支持多值查询，查询条件格式： *enterprise_project_id&#x3D;xxx&amp;enterprise_project_id&#x3D;xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
         :type enterprise_project_id: list[str]
@@ -179,7 +179,7 @@ class ListHealthMonitorsRequest:
     def limit(self):
         """Gets the limit of this ListHealthMonitorsRequest.
 
-        每页返回的个数。
+        参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
 
         :return: The limit of this ListHealthMonitorsRequest.
         :rtype: int
@@ -190,7 +190,7 @@ class ListHealthMonitorsRequest:
     def limit(self, limit):
         """Sets the limit of this ListHealthMonitorsRequest.
 
-        每页返回的个数。
+        参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
 
         :param limit: The limit of this ListHealthMonitorsRequest.
         :type limit: int
@@ -421,7 +421,7 @@ class ListHealthMonitorsRequest:
     def type(self):
         """Gets the type of this ListHealthMonitorsRequest.
 
-        健康检查请求协议。  取值：TCP、UDP_CONNECT、HTTP、HTTPS。  支持多值查询，查询条件格式：*****type=xxx&type=xxx*****。
+        健康检查请求协议。  取值：TCP、UDP_CONNECT、HTTP、HTTPS、TLS和GRPC。  支持多值查询，查询条件格式：*****type=xxx&type=xxx*****。
 
         :return: The type of this ListHealthMonitorsRequest.
         :rtype: list[str]
@@ -432,7 +432,7 @@ class ListHealthMonitorsRequest:
     def type(self, type):
         """Sets the type of this ListHealthMonitorsRequest.
 
-        健康检查请求协议。  取值：TCP、UDP_CONNECT、HTTP、HTTPS。  支持多值查询，查询条件格式：*****type=xxx&type=xxx*****。
+        健康检查请求协议。  取值：TCP、UDP_CONNECT、HTTP、HTTPS、TLS和GRPC。  支持多值查询，查询条件格式：*****type=xxx&type=xxx*****。
 
         :param type: The type of this ListHealthMonitorsRequest.
         :type type: list[str]
@@ -443,7 +443,7 @@ class ListHealthMonitorsRequest:
     def expected_codes(self):
         """Gets the expected_codes of this ListHealthMonitorsRequest.
 
-        期望响应状态码。  取值： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。   默认值：200。  仅支持HTTP/HTTPS设置该字段，其他协议设置不会生效。  支持多值查询，查询条件格式：****expected_codes=xxx&expected_codes=xxx****。
+        期望响应状态码。  取值： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。   默认值：200。  仅支持HTTP/HTTPS/GRPC设置该字段，其他协议设置不会生效。  支持多值查询，查询条件格式：****expected_codes=xxx&expected_codes=xxx****。
 
         :return: The expected_codes of this ListHealthMonitorsRequest.
         :rtype: list[str]
@@ -454,7 +454,7 @@ class ListHealthMonitorsRequest:
     def expected_codes(self, expected_codes):
         """Sets the expected_codes of this ListHealthMonitorsRequest.
 
-        期望响应状态码。  取值： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。   默认值：200。  仅支持HTTP/HTTPS设置该字段，其他协议设置不会生效。  支持多值查询，查询条件格式：****expected_codes=xxx&expected_codes=xxx****。
+        期望响应状态码。  取值： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。   默认值：200。  仅支持HTTP/HTTPS/GRPC设置该字段，其他协议设置不会生效。  支持多值查询，查询条件格式：****expected_codes=xxx&expected_codes=xxx****。
 
         :param expected_codes: The expected_codes of this ListHealthMonitorsRequest.
         :type expected_codes: list[str]
@@ -487,7 +487,7 @@ class ListHealthMonitorsRequest:
     def http_method(self):
         """Gets the http_method of this ListHealthMonitorsRequest.
 
-        HTTP请求方法。  取值：GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH。  支持多值查询，查询条件格式：**http_method=xxx&http_method=xxx**。  不支持该字段，请勿使用。
+        HTTP请求方法。  取值：GET、HEAD、POST。  支持多值查询，查询条件格式：**http_method=xxx&http_method=xxx**。
 
         :return: The http_method of this ListHealthMonitorsRequest.
         :rtype: list[str]
@@ -498,7 +498,7 @@ class ListHealthMonitorsRequest:
     def http_method(self, http_method):
         """Sets the http_method of this ListHealthMonitorsRequest.
 
-        HTTP请求方法。  取值：GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH。  支持多值查询，查询条件格式：**http_method=xxx&http_method=xxx**。  不支持该字段，请勿使用。
+        HTTP请求方法。  取值：GET、HEAD、POST。  支持多值查询，查询条件格式：**http_method=xxx&http_method=xxx**。
 
         :param http_method: The http_method of this ListHealthMonitorsRequest.
         :type http_method: list[str]

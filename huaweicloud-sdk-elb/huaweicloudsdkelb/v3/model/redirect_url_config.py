@@ -22,7 +22,9 @@ class RedirectUrlConfig:
         'port': 'str',
         'path': 'str',
         'query': 'str',
-        'status_code': 'str'
+        'status_code': 'str',
+        'insert_headers_config': 'InsertHeadersConfig',
+        'remove_headers_config': 'RemoveHeadersConfig'
     }
 
     attribute_map = {
@@ -31,10 +33,12 @@ class RedirectUrlConfig:
         'port': 'port',
         'path': 'path',
         'query': 'query',
-        'status_code': 'status_code'
+        'status_code': 'status_code',
+        'insert_headers_config': 'insert_headers_config',
+        'remove_headers_config': 'remove_headers_config'
     }
 
-    def __init__(self, protocol=None, host=None, port=None, path=None, query=None, status_code=None):
+    def __init__(self, protocol=None, host=None, port=None, path=None, query=None, status_code=None, insert_headers_config=None, remove_headers_config=None):
         """RedirectUrlConfig
 
         The model defined in huaweicloud sdk
@@ -51,6 +55,10 @@ class RedirectUrlConfig:
         :type query: str
         :param status_code: 重定向后的返回码。  取值范围： - 301 - 302 - 303 - 307 - 308
         :type status_code: str
+        :param insert_headers_config: 
+        :type insert_headers_config: :class:`huaweicloudsdkelb.v3.InsertHeadersConfig`
+        :param remove_headers_config: 
+        :type remove_headers_config: :class:`huaweicloudsdkelb.v3.RemoveHeadersConfig`
         """
         
         
@@ -61,14 +69,26 @@ class RedirectUrlConfig:
         self._path = None
         self._query = None
         self._status_code = None
+        self._insert_headers_config = None
+        self._remove_headers_config = None
         self.discriminator = None
 
-        self.protocol = protocol
-        self.host = host
-        self.port = port
-        self.path = path
-        self.query = query
-        self.status_code = status_code
+        if protocol is not None:
+            self.protocol = protocol
+        if host is not None:
+            self.host = host
+        if port is not None:
+            self.port = port
+        if path is not None:
+            self.path = path
+        if query is not None:
+            self.query = query
+        if status_code is not None:
+            self.status_code = status_code
+        if insert_headers_config is not None:
+            self.insert_headers_config = insert_headers_config
+        if remove_headers_config is not None:
+            self.remove_headers_config = remove_headers_config
 
     @property
     def protocol(self):
@@ -201,6 +221,42 @@ class RedirectUrlConfig:
         :type status_code: str
         """
         self._status_code = status_code
+
+    @property
+    def insert_headers_config(self):
+        """Gets the insert_headers_config of this RedirectUrlConfig.
+
+        :return: The insert_headers_config of this RedirectUrlConfig.
+        :rtype: :class:`huaweicloudsdkelb.v3.InsertHeadersConfig`
+        """
+        return self._insert_headers_config
+
+    @insert_headers_config.setter
+    def insert_headers_config(self, insert_headers_config):
+        """Sets the insert_headers_config of this RedirectUrlConfig.
+
+        :param insert_headers_config: The insert_headers_config of this RedirectUrlConfig.
+        :type insert_headers_config: :class:`huaweicloudsdkelb.v3.InsertHeadersConfig`
+        """
+        self._insert_headers_config = insert_headers_config
+
+    @property
+    def remove_headers_config(self):
+        """Gets the remove_headers_config of this RedirectUrlConfig.
+
+        :return: The remove_headers_config of this RedirectUrlConfig.
+        :rtype: :class:`huaweicloudsdkelb.v3.RemoveHeadersConfig`
+        """
+        return self._remove_headers_config
+
+    @remove_headers_config.setter
+    def remove_headers_config(self, remove_headers_config):
+        """Sets the remove_headers_config of this RedirectUrlConfig.
+
+        :param remove_headers_config: The remove_headers_config of this RedirectUrlConfig.
+        :type remove_headers_config: :class:`huaweicloudsdkelb.v3.RemoveHeadersConfig`
+        """
+        self._remove_headers_config = remove_headers_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

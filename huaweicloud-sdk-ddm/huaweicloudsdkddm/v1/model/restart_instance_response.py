@@ -20,26 +20,30 @@ class RestartInstanceResponse(SdkResponse):
     openapi_types = {
         'instance_id': 'str',
         'instance_name': 'str',
-        'job_id': 'str'
+        'job_id': 'str',
+        'order_id': 'str'
     }
 
     attribute_map = {
         'instance_id': 'instanceId',
         'instance_name': 'instanceName',
-        'job_id': 'jobId'
+        'job_id': 'jobId',
+        'order_id': 'order_id'
     }
 
-    def __init__(self, instance_id=None, instance_name=None, job_id=None):
+    def __init__(self, instance_id=None, instance_name=None, job_id=None, order_id=None):
         """RestartInstanceResponse
 
         The model defined in huaweicloud sdk
 
         :param instance_id: DDM实例ID。
         :type instance_id: str
-        :param instance_name: DDM实例名称。
+        :param instance_name: DDM实例名称,仅按需实例时会返回该参数。
         :type instance_name: str
-        :param job_id: 任务ID。
+        :param job_id: 任务ID,仅按需实例时会返回该参数。
         :type job_id: str
+        :param order_id: 订单号,仅包年包月实例时返回该参数。
+        :type order_id: str
         """
         
         super(RestartInstanceResponse, self).__init__()
@@ -47,6 +51,7 @@ class RestartInstanceResponse(SdkResponse):
         self._instance_id = None
         self._instance_name = None
         self._job_id = None
+        self._order_id = None
         self.discriminator = None
 
         if instance_id is not None:
@@ -55,6 +60,8 @@ class RestartInstanceResponse(SdkResponse):
             self.instance_name = instance_name
         if job_id is not None:
             self.job_id = job_id
+        if order_id is not None:
+            self.order_id = order_id
 
     @property
     def instance_id(self):
@@ -82,7 +89,7 @@ class RestartInstanceResponse(SdkResponse):
     def instance_name(self):
         """Gets the instance_name of this RestartInstanceResponse.
 
-        DDM实例名称。
+        DDM实例名称,仅按需实例时会返回该参数。
 
         :return: The instance_name of this RestartInstanceResponse.
         :rtype: str
@@ -93,7 +100,7 @@ class RestartInstanceResponse(SdkResponse):
     def instance_name(self, instance_name):
         """Sets the instance_name of this RestartInstanceResponse.
 
-        DDM实例名称。
+        DDM实例名称,仅按需实例时会返回该参数。
 
         :param instance_name: The instance_name of this RestartInstanceResponse.
         :type instance_name: str
@@ -104,7 +111,7 @@ class RestartInstanceResponse(SdkResponse):
     def job_id(self):
         """Gets the job_id of this RestartInstanceResponse.
 
-        任务ID。
+        任务ID,仅按需实例时会返回该参数。
 
         :return: The job_id of this RestartInstanceResponse.
         :rtype: str
@@ -115,12 +122,34 @@ class RestartInstanceResponse(SdkResponse):
     def job_id(self, job_id):
         """Sets the job_id of this RestartInstanceResponse.
 
-        任务ID。
+        任务ID,仅按需实例时会返回该参数。
 
         :param job_id: The job_id of this RestartInstanceResponse.
         :type job_id: str
         """
         self._job_id = job_id
+
+    @property
+    def order_id(self):
+        """Gets the order_id of this RestartInstanceResponse.
+
+        订单号,仅包年包月实例时返回该参数。
+
+        :return: The order_id of this RestartInstanceResponse.
+        :rtype: str
+        """
+        return self._order_id
+
+    @order_id.setter
+    def order_id(self, order_id):
+        """Sets the order_id of this RestartInstanceResponse.
+
+        订单号,仅包年包月实例时返回该参数。
+
+        :param order_id: The order_id of this RestartInstanceResponse.
+        :type order_id: str
+        """
+        self._order_id = order_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

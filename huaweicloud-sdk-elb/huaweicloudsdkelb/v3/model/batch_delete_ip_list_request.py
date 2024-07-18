@@ -31,7 +31,7 @@ class BatchDeleteIpListRequest:
 
         The model defined in huaweicloud sdk
 
-        :param ipgroup_id: IP地址组ID。
+        :param ipgroup_id: 参数解释：IP地址组ID。
         :type ipgroup_id: str
         :param body: Body of the BatchDeleteIpListRequest
         :type body: :class:`huaweicloudsdkelb.v3.BatchDeleteIpListRequestBody`
@@ -51,7 +51,7 @@ class BatchDeleteIpListRequest:
     def ipgroup_id(self):
         """Gets the ipgroup_id of this BatchDeleteIpListRequest.
 
-        IP地址组ID。
+        参数解释：IP地址组ID。
 
         :return: The ipgroup_id of this BatchDeleteIpListRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class BatchDeleteIpListRequest:
     def ipgroup_id(self, ipgroup_id):
         """Sets the ipgroup_id of this BatchDeleteIpListRequest.
 
-        IP地址组ID。
+        参数解释：IP地址组ID。
 
         :param ipgroup_id: The ipgroup_id of this BatchDeleteIpListRequest.
         :type ipgroup_id: str

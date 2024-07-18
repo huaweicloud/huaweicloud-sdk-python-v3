@@ -32,6 +32,343 @@ class VpnAsyncClient(Client):
 
         return client_builder
 
+    def check_client_ca_certificate_async(self, request):
+        """校验客户端CA
+
+        创建服务端时，可以先调用客户端CA的预校验API，检查CA的合法性
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CheckClientCaCertificate
+        :type request: :class:`huaweicloudsdkvpn.v5.CheckClientCaCertificateRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.CheckClientCaCertificateResponse`
+        """
+        http_info = self._check_client_ca_certificate_http_info(request)
+        return self._call_api(**http_info)
+
+    def check_client_ca_certificate_async_invoker(self, request):
+        http_info = self._check_client_ca_certificate_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _check_client_ca_certificate_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/vpn-servers/client-ca-certificates/check",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckClientCaCertificateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_client_ca_async(self, request):
+        """删除客户端的CA证书
+
+        删除客户端CA证书
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteClientCa
+        :type request: :class:`huaweicloudsdkvpn.v5.DeleteClientCaRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.DeleteClientCaResponse`
+        """
+        http_info = self._delete_client_ca_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_client_ca_async_invoker(self, request):
+        http_info = self._delete_client_ca_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_client_ca_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/vpn-servers/{vpn_server_id}/client-ca-certificates/{client_ca_certificate_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteClientCaResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpn_server_id' in local_var_params:
+            path_params['vpn_server_id'] = local_var_params['vpn_server_id']
+        if 'client_ca_certificate_id' in local_var_params:
+            path_params['client_ca_certificate_id'] = local_var_params['client_ca_certificate_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def import_client_ca_async(self, request):
+        """导入客户端 CA 证书
+
+        导入客户端 CA 证书
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ImportClientCa
+        :type request: :class:`huaweicloudsdkvpn.v5.ImportClientCaRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.ImportClientCaResponse`
+        """
+        http_info = self._import_client_ca_http_info(request)
+        return self._call_api(**http_info)
+
+    def import_client_ca_async_invoker(self, request):
+        http_info = self._import_client_ca_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _import_client_ca_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/vpn-servers/{vpn_server_id}/client-ca-certificates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportClientCaResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpn_server_id' in local_var_params:
+            path_params['vpn_server_id'] = local_var_params['vpn_server_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_client_token' in local_var_params:
+            header_params['X-Client-Token'] = local_var_params['x_client_token']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["header-response-token", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_client_ca_async(self, request):
+        """查询客户端的CA证书
+
+        查询客户端CA证书
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowClientCa
+        :type request: :class:`huaweicloudsdkvpn.v5.ShowClientCaRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.ShowClientCaResponse`
+        """
+        http_info = self._show_client_ca_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_client_ca_async_invoker(self, request):
+        http_info = self._show_client_ca_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_client_ca_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/vpn-servers/{vpn_server_id}/client-ca-certificates/{client_ca_certificate_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowClientCaResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpn_server_id' in local_var_params:
+            path_params['vpn_server_id'] = local_var_params['vpn_server_id']
+        if 'client_ca_certificate_id' in local_var_params:
+            path_params['client_ca_certificate_id'] = local_var_params['client_ca_certificate_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["header-response-token", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_client_ca_async(self, request):
+        """修改客户端的CA证书
+
+        修改客户端CA证书
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateClientCa
+        :type request: :class:`huaweicloudsdkvpn.v5.UpdateClientCaRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.UpdateClientCaResponse`
+        """
+        http_info = self._update_client_ca_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_client_ca_async_invoker(self, request):
+        http_info = self._update_client_ca_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_client_ca_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/vpn-servers/{vpn_server_id}/client-ca-certificates/{client_ca_certificate_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateClientCaResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpn_server_id' in local_var_params:
+            path_params['vpn_server_id'] = local_var_params['vpn_server_id']
+        if 'client_ca_certificate_id' in local_var_params:
+            path_params['client_ca_certificate_id'] = local_var_params['client_ca_certificate_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["header-response-token", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_connection_monitor_async(self, request):
         """创建VPN连接监控
 
@@ -626,6 +963,335 @@ class VpnAsyncClient(Client):
 
         return http_info
 
+    def list_p2c_vgw_availability_zones_async(self, request):
+        """查询P2C VPN网关可用区
+
+        查询P2C VPN网关可用区
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListP2cVgwAvailabilityZones
+        :type request: :class:`huaweicloudsdkvpn.v5.ListP2cVgwAvailabilityZonesRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.ListP2cVgwAvailabilityZonesResponse`
+        """
+        http_info = self._list_p2c_vgw_availability_zones_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_p2c_vgw_availability_zones_async_invoker(self, request):
+        http_info = self._list_p2c_vgw_availability_zones_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_p2c_vgw_availability_zones_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/availability-zones",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListP2cVgwAvailabilityZonesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'flavor' in local_var_params:
+            query_params.append(('flavor', local_var_params['flavor']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_p2c_vgw_connections_async(self, request):
+        """查询P2C VPN网关连接信息列表
+
+        List p2c vpn gateway connections
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListP2cVgwConnections
+        :type request: :class:`huaweicloudsdkvpn.v5.ListP2cVgwConnectionsRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.ListP2cVgwConnectionsResponse`
+        """
+        http_info = self._list_p2c_vgw_connections_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_p2c_vgw_connections_async_invoker(self, request):
+        http_info = self._list_p2c_vgw_connections_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_p2c_vgw_connections_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/{p2c_vgw_id}/connections",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListP2cVgwConnectionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'p2c_vgw_id' in local_var_params:
+            path_params['p2c_vgw_id'] = local_var_params['p2c_vgw_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_p2c_vgws_async(self, request):
+        """查询P2C VPN网关列表
+
+        查询P2C VPN网关列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListP2cVgws
+        :type request: :class:`huaweicloudsdkvpn.v5.ListP2cVgwsRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.ListP2cVgwsResponse`
+        """
+        http_info = self._list_p2c_vgws_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_p2c_vgws_async_invoker(self, request):
+        http_info = self._list_p2c_vgws_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_p2c_vgws_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListP2cVgwsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_p2c_vgw_async(self, request):
+        """查询P2C VPN网关
+
+        根据P2C VPN网关ID，查询指定的VPN网关
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowP2cVgw
+        :type request: :class:`huaweicloudsdkvpn.v5.ShowP2cVgwRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.ShowP2cVgwResponse`
+        """
+        http_info = self._show_p2c_vgw_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_p2c_vgw_async_invoker(self, request):
+        http_info = self._show_p2c_vgw_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_p2c_vgw_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/{p2c_vgw_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowP2cVgwResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'p2c_vgw_id' in local_var_params:
+            path_params['p2c_vgw_id'] = local_var_params['p2c_vgw_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_p2c_vgw_async(self, request):
+        """更新P2C VPN网关
+
+        根据P2C VPN网关ID，更新指定的P2C VPN网关
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateP2cVgw
+        :type request: :class:`huaweicloudsdkvpn.v5.UpdateP2cVgwRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.UpdateP2cVgwResponse`
+        """
+        http_info = self._update_p2c_vgw_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_p2c_vgw_async_invoker(self, request):
+        http_info = self._update_p2c_vgw_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_p2c_vgw_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/{p2c_vgw_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateP2cVgwResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'p2c_vgw_id' in local_var_params:
+            path_params['p2c_vgw_id'] = local_var_params['p2c_vgw_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["header-response-token", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_create_resource_tags_async(self, request):
         """批量添加资源标签
 
@@ -1017,6 +1683,347 @@ class VpnAsyncClient(Client):
             body = request.get_file_stream()
 
         response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_vpn_access_policy_async(self, request):
+        """创建VPN访问策略
+
+        创建VPN访问策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateVpnAccessPolicy
+        :type request: :class:`huaweicloudsdkvpn.v5.CreateVpnAccessPolicyRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.CreateVpnAccessPolicyResponse`
+        """
+        http_info = self._create_vpn_access_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_vpn_access_policy_async_invoker(self, request):
+        http_info = self._create_vpn_access_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_vpn_access_policy_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/vpn-servers/{vpn_server_id}/access-policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateVpnAccessPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpn_server_id' in local_var_params:
+            path_params['vpn_server_id'] = local_var_params['vpn_server_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_client_token' in local_var_params:
+            header_params['X-Client-Token'] = local_var_params['x_client_token']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["header-response-token", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_vpn_access_policy_async(self, request):
+        """删除VPN访问策略
+
+        删除VPN访问策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteVpnAccessPolicy
+        :type request: :class:`huaweicloudsdkvpn.v5.DeleteVpnAccessPolicyRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.DeleteVpnAccessPolicyResponse`
+        """
+        http_info = self._delete_vpn_access_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_vpn_access_policy_async_invoker(self, request):
+        http_info = self._delete_vpn_access_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_vpn_access_policy_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/vpn-servers/{vpn_server_id}/access-policies/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteVpnAccessPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpn_server_id' in local_var_params:
+            path_params['vpn_server_id'] = local_var_params['vpn_server_id']
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_vpn_access_policies_async(self, request):
+        """查询VPN访问策略列表
+
+        查询VPN访问策略列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListVpnAccessPolicies
+        :type request: :class:`huaweicloudsdkvpn.v5.ListVpnAccessPoliciesRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.ListVpnAccessPoliciesResponse`
+        """
+        http_info = self._list_vpn_access_policies_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_vpn_access_policies_async_invoker(self, request):
+        http_info = self._list_vpn_access_policies_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_vpn_access_policies_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/vpn-servers/{vpn_server_id}/access-policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVpnAccessPoliciesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpn_server_id' in local_var_params:
+            path_params['vpn_server_id'] = local_var_params['vpn_server_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_vpn_access_policy_async(self, request):
+        """查询VPN访问策略
+
+        查询VPN访问策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowVpnAccessPolicy
+        :type request: :class:`huaweicloudsdkvpn.v5.ShowVpnAccessPolicyRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.ShowVpnAccessPolicyResponse`
+        """
+        http_info = self._show_vpn_access_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_vpn_access_policy_async_invoker(self, request):
+        http_info = self._show_vpn_access_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_vpn_access_policy_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/vpn-servers/{vpn_server_id}/access-policies/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVpnAccessPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpn_server_id' in local_var_params:
+            path_params['vpn_server_id'] = local_var_params['vpn_server_id']
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["header-response-token", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_vpn_access_policy_async(self, request):
+        """修改VPN访问策略
+
+        修改VPN访问策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateVpnAccessPolicy
+        :type request: :class:`huaweicloudsdkvpn.v5.UpdateVpnAccessPolicyRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.UpdateVpnAccessPolicyResponse`
+        """
+        http_info = self._update_vpn_access_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_vpn_access_policy_async_invoker(self, request):
+        http_info = self._update_vpn_access_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_vpn_access_policy_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/vpn-servers/{vpn_server_id}/access-policies/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateVpnAccessPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpn_server_id' in local_var_params:
+            path_params['vpn_server_id'] = local_var_params['vpn_server_id']
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["header-response-token", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -2014,6 +3021,1364 @@ class VpnAsyncClient(Client):
             body = request.get_file_stream()
 
         response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_vpn_server_async(self, request):
+        """创建一个VPN 服务端
+
+        创建一个VPN 服务端
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateVpnServer
+        :type request: :class:`huaweicloudsdkvpn.v5.CreateVpnServerRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.CreateVpnServerResponse`
+        """
+        http_info = self._create_vpn_server_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_vpn_server_async_invoker(self, request):
+        http_info = self._create_vpn_server_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_vpn_server_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/{p2c_vgw_id}/vpn-servers",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateVpnServerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'p2c_vgw_id' in local_var_params:
+            path_params['p2c_vgw_id'] = local_var_params['p2c_vgw_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_client_token' in local_var_params:
+            header_params['X-Client-Token'] = local_var_params['x_client_token']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["header-response-token", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def export_client_config_async(self, request):
+        """导出服务端对应的客户端配置信息
+
+        导出客户端配置信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ExportClientConfig
+        :type request: :class:`huaweicloudsdkvpn.v5.ExportClientConfigRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.ExportClientConfigResponse`
+        """
+        http_info = self._export_client_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_client_config_async_invoker(self, request):
+        http_info = self._export_client_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _export_client_config_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/vpn-servers/{vpn_server_id}/client-config/export",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportClientConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpn_server_id' in local_var_params:
+            path_params['vpn_server_id'] = local_var_params['vpn_server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["header-response-token", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_vpn_servers_by_project_async(self, request):
+        """查询租户下的所有服务端信息
+
+        查询租户下的所有服务端信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListVpnServersByProject
+        :type request: :class:`huaweicloudsdkvpn.v5.ListVpnServersByProjectRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.ListVpnServersByProjectResponse`
+        """
+        http_info = self._list_vpn_servers_by_project_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_vpn_servers_by_project_async_invoker(self, request):
+        http_info = self._list_vpn_servers_by_project_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_vpn_servers_by_project_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/vpn-servers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVpnServersByProjectResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["header-response-token", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_vpn_servers_by_vgw_async(self, request):
+        """查询一个网关下的服务端信息
+
+        查询一个网关下的服务端信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListVpnServersByVgw
+        :type request: :class:`huaweicloudsdkvpn.v5.ListVpnServersByVgwRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.ListVpnServersByVgwResponse`
+        """
+        http_info = self._list_vpn_servers_by_vgw_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_vpn_servers_by_vgw_async_invoker(self, request):
+        http_info = self._list_vpn_servers_by_vgw_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_vpn_servers_by_vgw_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/{p2c_vgw_id}/vpn-servers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVpnServersByVgwResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'p2c_vgw_id' in local_var_params:
+            path_params['p2c_vgw_id'] = local_var_params['p2c_vgw_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["header-response-token", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_vpn_server_async(self, request):
+        """更新指定VPN 服务端
+
+        更新指定VPN 服务端
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateVpnServer
+        :type request: :class:`huaweicloudsdkvpn.v5.UpdateVpnServerRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.UpdateVpnServerResponse`
+        """
+        http_info = self._update_vpn_server_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_vpn_server_async_invoker(self, request):
+        http_info = self._update_vpn_server_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_vpn_server_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/vpn-servers/{vpn_server_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateVpnServerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpn_server_id' in local_var_params:
+            path_params['vpn_server_id'] = local_var_params['vpn_server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["header-response-token", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_vpn_user_async(self, request):
+        """创建VPN用户
+
+        创建VPN用户
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateVpnUser
+        :type request: :class:`huaweicloudsdkvpn.v5.CreateVpnUserRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.CreateVpnUserResponse`
+        """
+        http_info = self._create_vpn_user_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_vpn_user_async_invoker(self, request):
+        http_info = self._create_vpn_user_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_vpn_user_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/vpn-servers/{vpn_server_id}/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateVpnUserResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpn_server_id' in local_var_params:
+            path_params['vpn_server_id'] = local_var_params['vpn_server_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_client_token' in local_var_params:
+            header_params['X-Client-Token'] = local_var_params['x_client_token']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["header-response-token", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_vpn_user_async(self, request):
+        """删除VPN用户
+
+        删除VPN用户
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteVpnUser
+        :type request: :class:`huaweicloudsdkvpn.v5.DeleteVpnUserRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.DeleteVpnUserResponse`
+        """
+        http_info = self._delete_vpn_user_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_vpn_user_async_invoker(self, request):
+        http_info = self._delete_vpn_user_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_vpn_user_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/vpn-servers/{vpn_server_id}/users/{user_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteVpnUserResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpn_server_id' in local_var_params:
+            path_params['vpn_server_id'] = local_var_params['vpn_server_id']
+        if 'user_id' in local_var_params:
+            path_params['user_id'] = local_var_params['user_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_vpn_users_async(self, request):
+        """查询VPN用户列表
+
+        查询VPN用户列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListVpnUsers
+        :type request: :class:`huaweicloudsdkvpn.v5.ListVpnUsersRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.ListVpnUsersResponse`
+        """
+        http_info = self._list_vpn_users_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_vpn_users_async_invoker(self, request):
+        http_info = self._list_vpn_users_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_vpn_users_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/vpn-servers/{vpn_server_id}/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVpnUsersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpn_server_id' in local_var_params:
+            path_params['vpn_server_id'] = local_var_params['vpn_server_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def reset_vpn_user_password_async(self, request):
+        """重置VPN用户密码
+
+        重置VPN用户密码
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ResetVpnUserPassword
+        :type request: :class:`huaweicloudsdkvpn.v5.ResetVpnUserPasswordRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.ResetVpnUserPasswordResponse`
+        """
+        http_info = self._reset_vpn_user_password_http_info(request)
+        return self._call_api(**http_info)
+
+    def reset_vpn_user_password_async_invoker(self, request):
+        http_info = self._reset_vpn_user_password_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _reset_vpn_user_password_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/vpn-servers/{vpn_server_id}/users/{user_id}/reset-password",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetVpnUserPasswordResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpn_server_id' in local_var_params:
+            path_params['vpn_server_id'] = local_var_params['vpn_server_id']
+        if 'user_id' in local_var_params:
+            path_params['user_id'] = local_var_params['user_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["header-response-token", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_vpn_user_async(self, request):
+        """查询VPN用户
+
+        查询VPN用户
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowVpnUser
+        :type request: :class:`huaweicloudsdkvpn.v5.ShowVpnUserRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.ShowVpnUserResponse`
+        """
+        http_info = self._show_vpn_user_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_vpn_user_async_invoker(self, request):
+        http_info = self._show_vpn_user_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_vpn_user_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/vpn-servers/{vpn_server_id}/users/{user_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVpnUserResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpn_server_id' in local_var_params:
+            path_params['vpn_server_id'] = local_var_params['vpn_server_id']
+        if 'user_id' in local_var_params:
+            path_params['user_id'] = local_var_params['user_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["header-response-token", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_vpn_user_async(self, request):
+        """修改VPN用户
+
+        修改VPN用户
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateVpnUser
+        :type request: :class:`huaweicloudsdkvpn.v5.UpdateVpnUserRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.UpdateVpnUserResponse`
+        """
+        http_info = self._update_vpn_user_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_vpn_user_async_invoker(self, request):
+        http_info = self._update_vpn_user_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_vpn_user_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/vpn-servers/{vpn_server_id}/users/{user_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateVpnUserResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpn_server_id' in local_var_params:
+            path_params['vpn_server_id'] = local_var_params['vpn_server_id']
+        if 'user_id' in local_var_params:
+            path_params['user_id'] = local_var_params['user_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["header-response-token", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_vpn_user_password_async(self, request):
+        """修改VPN用户密码
+
+        修改VPN用户密码
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateVpnUserPassword
+        :type request: :class:`huaweicloudsdkvpn.v5.UpdateVpnUserPasswordRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.UpdateVpnUserPasswordResponse`
+        """
+        http_info = self._update_vpn_user_password_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_vpn_user_password_async_invoker(self, request):
+        http_info = self._update_vpn_user_password_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_vpn_user_password_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/vpn-servers/{vpn_server_id}/users/{user_id}/password",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateVpnUserPasswordResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpn_server_id' in local_var_params:
+            path_params['vpn_server_id'] = local_var_params['vpn_server_id']
+        if 'user_id' in local_var_params:
+            path_params['user_id'] = local_var_params['user_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["header-response-token", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def add_vpn_users_to_group_async(self, request):
+        """添加VPN用户到组
+
+        添加VPN用户到组
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AddVpnUsersToGroup
+        :type request: :class:`huaweicloudsdkvpn.v5.AddVpnUsersToGroupRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.AddVpnUsersToGroupResponse`
+        """
+        http_info = self._add_vpn_users_to_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def add_vpn_users_to_group_async_invoker(self, request):
+        http_info = self._add_vpn_users_to_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_vpn_users_to_group_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/vpn-servers/{vpn_server_id}/groups/{group_id}/add-users",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddVpnUsersToGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpn_server_id' in local_var_params:
+            path_params['vpn_server_id'] = local_var_params['vpn_server_id']
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["header-response-token", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_vpn_user_group_async(self, request):
+        """创建VPN用户组
+
+        创建VPN用户组
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateVpnUserGroup
+        :type request: :class:`huaweicloudsdkvpn.v5.CreateVpnUserGroupRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.CreateVpnUserGroupResponse`
+        """
+        http_info = self._create_vpn_user_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_vpn_user_group_async_invoker(self, request):
+        http_info = self._create_vpn_user_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_vpn_user_group_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/vpn-servers/{vpn_server_id}/groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateVpnUserGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpn_server_id' in local_var_params:
+            path_params['vpn_server_id'] = local_var_params['vpn_server_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_client_token' in local_var_params:
+            header_params['X-Client-Token'] = local_var_params['x_client_token']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["header-response-token", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_vpn_user_group_async(self, request):
+        """删除VPN用户组
+
+        删除VPN用户组
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteVpnUserGroup
+        :type request: :class:`huaweicloudsdkvpn.v5.DeleteVpnUserGroupRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.DeleteVpnUserGroupResponse`
+        """
+        http_info = self._delete_vpn_user_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_vpn_user_group_async_invoker(self, request):
+        http_info = self._delete_vpn_user_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_vpn_user_group_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/vpn-servers/{vpn_server_id}/groups/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteVpnUserGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpn_server_id' in local_var_params:
+            path_params['vpn_server_id'] = local_var_params['vpn_server_id']
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_vpn_user_groups_async(self, request):
+        """查询VPN用户组列表
+
+        查询VPN用户组列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListVpnUserGroups
+        :type request: :class:`huaweicloudsdkvpn.v5.ListVpnUserGroupsRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.ListVpnUserGroupsResponse`
+        """
+        http_info = self._list_vpn_user_groups_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_vpn_user_groups_async_invoker(self, request):
+        http_info = self._list_vpn_user_groups_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_vpn_user_groups_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/vpn-servers/{vpn_server_id}/groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVpnUserGroupsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpn_server_id' in local_var_params:
+            path_params['vpn_server_id'] = local_var_params['vpn_server_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_vpn_users_in_group_async(self, request):
+        """查询组内VPN用户
+
+        查询组内VPN用户
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListVpnUsersInGroup
+        :type request: :class:`huaweicloudsdkvpn.v5.ListVpnUsersInGroupRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.ListVpnUsersInGroupResponse`
+        """
+        http_info = self._list_vpn_users_in_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_vpn_users_in_group_async_invoker(self, request):
+        http_info = self._list_vpn_users_in_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_vpn_users_in_group_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/vpn-servers/{vpn_server_id}/groups/{group_id}/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVpnUsersInGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpn_server_id' in local_var_params:
+            path_params['vpn_server_id'] = local_var_params['vpn_server_id']
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["header-response-token", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def remove_vpn_users_from_group_async(self, request):
+        """删除组内VPN用户
+
+        删除组内VPN用户
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RemoveVpnUsersFromGroup
+        :type request: :class:`huaweicloudsdkvpn.v5.RemoveVpnUsersFromGroupRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.RemoveVpnUsersFromGroupResponse`
+        """
+        http_info = self._remove_vpn_users_from_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def remove_vpn_users_from_group_async_invoker(self, request):
+        http_info = self._remove_vpn_users_from_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _remove_vpn_users_from_group_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/vpn-servers/{vpn_server_id}/groups/{group_id}/remove-users",
+            "request_type": request.__class__.__name__,
+            "response_type": "RemoveVpnUsersFromGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpn_server_id' in local_var_params:
+            path_params['vpn_server_id'] = local_var_params['vpn_server_id']
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["header-response-token", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_vpn_user_group_async(self, request):
+        """查询VPN用户组
+
+        查询VPN用户组
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowVpnUserGroup
+        :type request: :class:`huaweicloudsdkvpn.v5.ShowVpnUserGroupRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.ShowVpnUserGroupResponse`
+        """
+        http_info = self._show_vpn_user_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_vpn_user_group_async_invoker(self, request):
+        http_info = self._show_vpn_user_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_vpn_user_group_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/vpn-servers/{vpn_server_id}/groups/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVpnUserGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpn_server_id' in local_var_params:
+            path_params['vpn_server_id'] = local_var_params['vpn_server_id']
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["header-response-token", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_vpn_user_group_async(self, request):
+        """修改VPN用户组
+
+        修改VPN用户组
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateVpnUserGroup
+        :type request: :class:`huaweicloudsdkvpn.v5.UpdateVpnUserGroupRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.UpdateVpnUserGroupResponse`
+        """
+        http_info = self._update_vpn_user_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_vpn_user_group_async_invoker(self, request):
+        http_info = self._update_vpn_user_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_vpn_user_group_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/vpn-servers/{vpn_server_id}/groups/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateVpnUserGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpn_server_id' in local_var_params:
+            path_params['vpn_server_id'] = local_var_params['vpn_server_id']
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["header-response-token", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])

@@ -22,7 +22,9 @@ class CreateRedirectUrlConfig:
         'port': 'str',
         'path': 'str',
         'query': 'str',
-        'status_code': 'str'
+        'status_code': 'str',
+        'insert_headers_config': 'CreateInsertHeadersConfig',
+        'remove_headers_config': 'CreateRemoveHeadersConfig'
     }
 
     attribute_map = {
@@ -31,10 +33,12 @@ class CreateRedirectUrlConfig:
         'port': 'port',
         'path': 'path',
         'query': 'query',
-        'status_code': 'status_code'
+        'status_code': 'status_code',
+        'insert_headers_config': 'insert_headers_config',
+        'remove_headers_config': 'remove_headers_config'
     }
 
-    def __init__(self, protocol=None, host=None, port=None, path=None, query=None, status_code=None):
+    def __init__(self, protocol=None, host=None, port=None, path=None, query=None, status_code=None, insert_headers_config=None, remove_headers_config=None):
         """CreateRedirectUrlConfig
 
         The model defined in huaweicloud sdk
@@ -51,6 +55,10 @@ class CreateRedirectUrlConfig:
         :type query: str
         :param status_code: 重定向后的返回码。  取值范围： - 301 - 302 - 303 - 307 - 308
         :type status_code: str
+        :param insert_headers_config: 
+        :type insert_headers_config: :class:`huaweicloudsdkelb.v3.CreateInsertHeadersConfig`
+        :param remove_headers_config: 
+        :type remove_headers_config: :class:`huaweicloudsdkelb.v3.CreateRemoveHeadersConfig`
         """
         
         
@@ -61,6 +69,8 @@ class CreateRedirectUrlConfig:
         self._path = None
         self._query = None
         self._status_code = None
+        self._insert_headers_config = None
+        self._remove_headers_config = None
         self.discriminator = None
 
         if protocol is not None:
@@ -74,6 +84,10 @@ class CreateRedirectUrlConfig:
         if query is not None:
             self.query = query
         self.status_code = status_code
+        if insert_headers_config is not None:
+            self.insert_headers_config = insert_headers_config
+        if remove_headers_config is not None:
+            self.remove_headers_config = remove_headers_config
 
     @property
     def protocol(self):
@@ -206,6 +220,42 @@ class CreateRedirectUrlConfig:
         :type status_code: str
         """
         self._status_code = status_code
+
+    @property
+    def insert_headers_config(self):
+        """Gets the insert_headers_config of this CreateRedirectUrlConfig.
+
+        :return: The insert_headers_config of this CreateRedirectUrlConfig.
+        :rtype: :class:`huaweicloudsdkelb.v3.CreateInsertHeadersConfig`
+        """
+        return self._insert_headers_config
+
+    @insert_headers_config.setter
+    def insert_headers_config(self, insert_headers_config):
+        """Sets the insert_headers_config of this CreateRedirectUrlConfig.
+
+        :param insert_headers_config: The insert_headers_config of this CreateRedirectUrlConfig.
+        :type insert_headers_config: :class:`huaweicloudsdkelb.v3.CreateInsertHeadersConfig`
+        """
+        self._insert_headers_config = insert_headers_config
+
+    @property
+    def remove_headers_config(self):
+        """Gets the remove_headers_config of this CreateRedirectUrlConfig.
+
+        :return: The remove_headers_config of this CreateRedirectUrlConfig.
+        :rtype: :class:`huaweicloudsdkelb.v3.CreateRemoveHeadersConfig`
+        """
+        return self._remove_headers_config
+
+    @remove_headers_config.setter
+    def remove_headers_config(self, remove_headers_config):
+        """Sets the remove_headers_config of this CreateRedirectUrlConfig.
+
+        :param remove_headers_config: The remove_headers_config of this CreateRedirectUrlConfig.
+        :type remove_headers_config: :class:`huaweicloudsdkelb.v3.CreateRemoveHeadersConfig`
+        """
+        self._remove_headers_config = remove_headers_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

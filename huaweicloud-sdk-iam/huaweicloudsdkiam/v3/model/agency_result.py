@@ -20,7 +20,6 @@ class AgencyResult:
         'create_time': 'str',
         'description': 'str',
         'domain_id': 'str',
-        'duration': 'str',
         'expire_time': 'str',
         'id': 'str',
         'name': 'str',
@@ -32,7 +31,6 @@ class AgencyResult:
         'create_time': 'create_time',
         'description': 'description',
         'domain_id': 'domain_id',
-        'duration': 'duration',
         'expire_time': 'expire_time',
         'id': 'id',
         'name': 'name',
@@ -40,7 +38,7 @@ class AgencyResult:
         'trust_domain_name': 'trust_domain_name'
     }
 
-    def __init__(self, create_time=None, description=None, domain_id=None, duration=None, expire_time=None, id=None, name=None, trust_domain_id=None, trust_domain_name=None):
+    def __init__(self, create_time=None, description=None, domain_id=None, expire_time=None, id=None, name=None, trust_domain_id=None, trust_domain_name=None):
         """AgencyResult
 
         The model defined in huaweicloud sdk
@@ -51,8 +49,6 @@ class AgencyResult:
         :type description: str
         :param domain_id: 委托方账号ID。
         :type domain_id: str
-        :param duration: 委托的期限。取值为\&quot;FOREVER\&quot;或“null”表示委托的期限为永久，取值为\&quot;ONEDAY\&quot;表示委托的期限为一天。
-        :type duration: str
         :param expire_time: 委托过期时间。“null”表示不过期。
         :type expire_time: str
         :param id: 委托ID。
@@ -70,7 +66,6 @@ class AgencyResult:
         self._create_time = None
         self._description = None
         self._domain_id = None
-        self._duration = None
         self._expire_time = None
         self._id = None
         self._name = None
@@ -82,7 +77,6 @@ class AgencyResult:
         self.description = description
         if domain_id is not None:
             self.domain_id = domain_id
-        self.duration = duration
         self.expire_time = expire_time
         self.id = id
         self.name = name
@@ -156,28 +150,6 @@ class AgencyResult:
         :type domain_id: str
         """
         self._domain_id = domain_id
-
-    @property
-    def duration(self):
-        """Gets the duration of this AgencyResult.
-
-        委托的期限。取值为\"FOREVER\"或“null”表示委托的期限为永久，取值为\"ONEDAY\"表示委托的期限为一天。
-
-        :return: The duration of this AgencyResult.
-        :rtype: str
-        """
-        return self._duration
-
-    @duration.setter
-    def duration(self, duration):
-        """Sets the duration of this AgencyResult.
-
-        委托的期限。取值为\"FOREVER\"或“null”表示委托的期限为永久，取值为\"ONEDAY\"表示委托的期限为一天。
-
-        :param duration: The duration of this AgencyResult.
-        :type duration: str
-        """
-        self._duration = duration
 
     @property
     def expire_time(self):

@@ -24,7 +24,6 @@ import json
 import pytest
 import responses
 from responses import matchers
-from responses.registries import OrderedRegistry
 
 from huaweicloudsdkcore.auth.credentials import BasicCredentials
 from huaweicloudsdkcore.client import Client
@@ -33,6 +32,35 @@ from huaweicloudsdkcore.http.http_config import HttpConfig
 from huaweicloudsdkcore.invoker.invoker import SyncInvoker
 from huaweicloudsdkcore.retry.backoff_strategy import BackoffStrategies
 from huaweicloudsdkcore.sdk_response import SdkResponse
+
+try:
+    from responses.registries import OrderedRegistry
+except ImportError:
+    from responses.registries import FirstMatchRegistry
+
+
+    class OrderedRegistry(FirstMatchRegistry):
+        """
+        responses-0.17.0(earlier than python3.8) does not have OrderedRegistry,
+        the class is copied from responses-0.25.3(python 3.8+ required).
+        """
+
+        def find(self, request):
+            if not self.registered:
+                return None, ["No more registered responses"]
+
+            response = self.registered.pop(0)
+            match_result, reason = response.matches(request)
+            if not match_result:
+                self.reset()
+                self.add(response)
+                reason = (
+                    "Next 'Response' in the order doesn't match "
+                    f"due to the following reason: {reason}."
+                )
+                return None, [reason]
+
+            return response, []
 
 
 class MockSdkResponse(SdkResponse):
@@ -52,8 +80,9 @@ def mocked_client():
 
 @responses.activate
 def test_invoker_add_header(mocked_client):
-    responses.get(
-        "https://example.com/invoker/headers",
+    responses.add(
+        method=responses.GET,
+        url="https://example.com/invoker/headers",
         match=[
             matchers.header_matcher({"x-test-header": "test-value"}),
         ]
@@ -91,7 +120,7 @@ class TestRetry(object):
         当发生ServerResponseException(status_code>=500)时进行重试,最大重试次数设置为3
         预期状态码为502,调用次数为4(正常调用1次+请求重试3次)
         """
-        responses.get(self.URL, status=502)
+        responses.add(responses.GET, self.URL, status=502)
         try:
             (SyncInvoker(mocked_client, self.mock_http_info()).
              with_retry(retry_condition=lambda _, exc: isinstance(exc, ServerResponseException),
@@ -110,10 +139,10 @@ class TestRetry(object):
         预期状态码为200,调用次数为3(正常调用1次+请求重试2次)
         """
         # first invoke
-        responses.get(self.URL, status=502)
+        responses.add(responses.GET, self.URL, status=502)
         # first retry
-        responses.get(self.URL, status=502)
-        responses.get(self.URL, status=200)
+        responses.add(responses.GET, self.URL, status=502)
+        responses.add(responses.GET, self.URL, status=200)
 
         resp = (SyncInvoker(
             client=mocked_client,
@@ -132,10 +161,10 @@ class TestRetry(object):
         预期状态码为200,调用次数为3(正常调用1次+请求重试2次)
         """
         # first invoke
-        responses.get(self.URL, status=502)
+        responses.add(responses.GET, self.URL, status=502)
         # first retry
-        responses.get(self.URL, status=502)
-        responses.get(self.URL, status=200)
+        responses.add(responses.GET, self.URL, status=502)
+        responses.add(responses.GET, self.URL, status=200)
 
         resp = (SyncInvoker(mocked_client, self.mock_http_info()).
                 with_retry(retry_condition=lambda _, exc: isinstance(exc, ServerResponseException),
@@ -153,10 +182,10 @@ class TestRetry(object):
         """
         headers = {"Content-Type": "application/json"}
         # first invoke
-        responses.get(self.URL, headers=headers, json=[])
+        responses.add(responses.GET, self.URL, headers=headers, json=[])
         # first retry
-        responses.get(self.URL, headers=headers, json=[])
-        responses.get(self.URL, headers=headers, json=[1, 2, 3])
+        responses.add(responses.GET, self.URL, headers=headers, json=[])
+        responses.add(responses.GET, self.URL, headers=headers, json=[1, 2, 3])
 
         def retry_condition(resp, _):
             if not resp and not resp.raw_content:
@@ -181,7 +210,7 @@ class TestRetry(object):
         预期状态码为200,调用次数为6（正常调用1次+请求重试5次）
         """
         headers = {"Content-Type": "application/json"}
-        responses.get(self.URL, headers=headers, json=[])
+        responses.add(responses.GET, self.URL, headers=headers, json=[])
 
         def retry_condition(resp, _):
             if not resp and not resp.raw_content:
@@ -205,7 +234,7 @@ class TestRetry(object):
         """
         请求重试一次，预期调用次数为2(正常调用1次+请求重试1次)
         """
-        responses.get(self.URL, status=502)
+        responses.add(responses.GET, self.URL, status=502)
         try:
             (SyncInvoker(mocked_client, self.mock_http_info()).
              with_retry(retry_condition=lambda _, exc: isinstance(exc, ServerResponseException),
@@ -222,7 +251,7 @@ class TestRetry(object):
         """
         不满足重试条件不进行重试
         """
-        responses.get(self.URL, status=502)
+        responses.add(responses.GET, self.URL, status=502)
         try:
             (SyncInvoker(mocked_client, self.mock_http_info()).
              with_retry(retry_condition=lambda _, exc: False,

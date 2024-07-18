@@ -33,11 +33,11 @@ class UpdateIpGroupOption:
 
         The model defined in huaweicloud sdk
 
-        :param description: IP地址组的描述信息
+        :param description: 参数解释：IP地址组的描述信息
         :type description: str
-        :param name: IP地址组的名称
+        :param name: 参数解释：IP地址组的名称
         :type name: str
-        :param ip_list: IP地址组中包含的IP列表。
+        :param ip_list: 参数解释：IP地址组中包含的IP列表。
         :type ip_list: list[:class:`huaweicloudsdkelb.v3.UpadateIpGroupIpOption`]
         """
         
@@ -59,7 +59,7 @@ class UpdateIpGroupOption:
     def description(self):
         """Gets the description of this UpdateIpGroupOption.
 
-        IP地址组的描述信息
+        参数解释：IP地址组的描述信息
 
         :return: The description of this UpdateIpGroupOption.
         :rtype: str
@@ -70,7 +70,7 @@ class UpdateIpGroupOption:
     def description(self, description):
         """Sets the description of this UpdateIpGroupOption.
 
-        IP地址组的描述信息
+        参数解释：IP地址组的描述信息
 
         :param description: The description of this UpdateIpGroupOption.
         :type description: str
@@ -81,7 +81,7 @@ class UpdateIpGroupOption:
     def name(self):
         """Gets the name of this UpdateIpGroupOption.
 
-        IP地址组的名称
+        参数解释：IP地址组的名称
 
         :return: The name of this UpdateIpGroupOption.
         :rtype: str
@@ -92,7 +92,7 @@ class UpdateIpGroupOption:
     def name(self, name):
         """Sets the name of this UpdateIpGroupOption.
 
-        IP地址组的名称
+        参数解释：IP地址组的名称
 
         :param name: The name of this UpdateIpGroupOption.
         :type name: str
@@ -103,7 +103,7 @@ class UpdateIpGroupOption:
     def ip_list(self):
         """Gets the ip_list of this UpdateIpGroupOption.
 
-        IP地址组中包含的IP列表。
+        参数解释：IP地址组中包含的IP列表。
 
         :return: The ip_list of this UpdateIpGroupOption.
         :rtype: list[:class:`huaweicloudsdkelb.v3.UpadateIpGroupIpOption`]
@@ -114,7 +114,7 @@ class UpdateIpGroupOption:
     def ip_list(self, ip_list):
         """Sets the ip_list of this UpdateIpGroupOption.
 
-        IP地址组中包含的IP列表。
+        参数解释：IP地址组中包含的IP列表。
 
         :param ip_list: The ip_list of this UpdateIpGroupOption.
         :type ip_list: list[:class:`huaweicloudsdkelb.v3.UpadateIpGroupIpOption`]

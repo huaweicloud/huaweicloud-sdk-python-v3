@@ -29,7 +29,7 @@ class BatchDeleteIpListOption:
 
         The model defined in huaweicloud sdk
 
-        :param ip_list: IP列表。
+        :param ip_list: 参数解释：IP列表。
         :type ip_list: list[:class:`huaweicloudsdkelb.v3.IpGroupIp`]
         """
         
@@ -45,7 +45,7 @@ class BatchDeleteIpListOption:
     def ip_list(self):
         """Gets the ip_list of this BatchDeleteIpListOption.
 
-        IP列表。
+        参数解释：IP列表。
 
         :return: The ip_list of this BatchDeleteIpListOption.
         :rtype: list[:class:`huaweicloudsdkelb.v3.IpGroupIp`]
@@ -56,7 +56,7 @@ class BatchDeleteIpListOption:
     def ip_list(self, ip_list):
         """Sets the ip_list of this BatchDeleteIpListOption.
 
-        IP列表。
+        参数解释：IP列表。
 
         :param ip_list: The ip_list of this BatchDeleteIpListOption.
         :type ip_list: list[:class:`huaweicloudsdkelb.v3.IpGroupIp`]

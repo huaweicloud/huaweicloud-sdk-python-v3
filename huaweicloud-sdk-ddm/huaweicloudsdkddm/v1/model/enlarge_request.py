@@ -20,17 +20,19 @@ class EnlargeRequest:
         'flavor_id': 'str',
         'node_number': 'int',
         'group_id': 'str',
-        'is_auto_pay': 'bool'
+        'is_auto_pay': 'bool',
+        'available_zones': 'list[str]'
     }
 
     attribute_map = {
         'flavor_id': 'flavor_id',
         'node_number': 'node_number',
         'group_id': 'group_id',
-        'is_auto_pay': 'is_auto_pay'
+        'is_auto_pay': 'is_auto_pay',
+        'available_zones': 'available_zones'
     }
 
-    def __init__(self, flavor_id=None, node_number=None, group_id=None, is_auto_pay=None):
+    def __init__(self, flavor_id=None, node_number=None, group_id=None, is_auto_pay=None, available_zones=None):
         """EnlargeRequest
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class EnlargeRequest:
         :type group_id: str
         :param is_auto_pay: 变更包年包月实例规格时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。true，表示自动从账户中支付。false，表示手动从账户中支付，默认为该方式。
         :type is_auto_pay: bool
+        :param available_zones: 可用区Code，仅包年包月实例传递该参数，个数需与node_number一致。请参见地区和终端节点(https://developer.huaweicloud.com/endpoint?DDM)。
+        :type available_zones: list[str]
         """
         
         
@@ -51,6 +55,7 @@ class EnlargeRequest:
         self._node_number = None
         self._group_id = None
         self._is_auto_pay = None
+        self._available_zones = None
         self.discriminator = None
 
         self.flavor_id = flavor_id
@@ -59,6 +64,8 @@ class EnlargeRequest:
             self.group_id = group_id
         if is_auto_pay is not None:
             self.is_auto_pay = is_auto_pay
+        if available_zones is not None:
+            self.available_zones = available_zones
 
     @property
     def flavor_id(self):
@@ -147,6 +154,28 @@ class EnlargeRequest:
         :type is_auto_pay: bool
         """
         self._is_auto_pay = is_auto_pay
+
+    @property
+    def available_zones(self):
+        """Gets the available_zones of this EnlargeRequest.
+
+        可用区Code，仅包年包月实例传递该参数，个数需与node_number一致。请参见地区和终端节点(https://developer.huaweicloud.com/endpoint?DDM)。
+
+        :return: The available_zones of this EnlargeRequest.
+        :rtype: list[str]
+        """
+        return self._available_zones
+
+    @available_zones.setter
+    def available_zones(self, available_zones):
+        """Sets the available_zones of this EnlargeRequest.
+
+        可用区Code，仅包年包月实例传递该参数，个数需与node_number一致。请参见地区和终端节点(https://developer.huaweicloud.com/endpoint?DDM)。
+
+        :param available_zones: The available_zones of this EnlargeRequest.
+        :type available_zones: list[str]
+        """
+        self._available_zones = available_zones
 
     def to_dict(self):
         """Returns the model properties as a dict"""

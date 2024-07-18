@@ -114,6 +114,8 @@ from huaweicloudsdkiam.v3.model.create_user_response import CreateUserResponse
 from huaweicloudsdkiam.v3.model.create_user_result import CreateUserResult
 from huaweicloudsdkiam.v3.model.credential import Credential
 from huaweicloudsdkiam.v3.model.credentials import Credentials
+from huaweicloudsdkiam.v3.model.custom_policy import CustomPolicy
+from huaweicloudsdkiam.v3.model.custom_statement import CustomStatement
 from huaweicloudsdkiam.v3.model.delete_agency_request import DeleteAgencyRequest
 from huaweicloudsdkiam.v3.model.delete_agency_response import DeleteAgencyResponse
 from huaweicloudsdkiam.v3.model.delete_binding_device_request import DeleteBindingDeviceRequest

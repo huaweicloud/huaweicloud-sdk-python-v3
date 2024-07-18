@@ -34,9 +34,9 @@ class ListIpGroupsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param ipgroups: IP地址组列表返回对象。
+        :param ipgroups: 参数解释：IP地址组列表返回对象。
         :type ipgroups: list[:class:`huaweicloudsdkelb.v3.IpGroup`]
-        :param request_id: 请求ID。  注：自动生成 。
+        :param request_id: 参数解释：请求ID。  注：自动生成 。
         :type request_id: str
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
@@ -60,7 +60,7 @@ class ListIpGroupsResponse(SdkResponse):
     def ipgroups(self):
         """Gets the ipgroups of this ListIpGroupsResponse.
 
-        IP地址组列表返回对象。
+        参数解释：IP地址组列表返回对象。
 
         :return: The ipgroups of this ListIpGroupsResponse.
         :rtype: list[:class:`huaweicloudsdkelb.v3.IpGroup`]
@@ -71,7 +71,7 @@ class ListIpGroupsResponse(SdkResponse):
     def ipgroups(self, ipgroups):
         """Sets the ipgroups of this ListIpGroupsResponse.
 
-        IP地址组列表返回对象。
+        参数解释：IP地址组列表返回对象。
 
         :param ipgroups: The ipgroups of this ListIpGroupsResponse.
         :type ipgroups: list[:class:`huaweicloudsdkelb.v3.IpGroup`]
@@ -82,7 +82,7 @@ class ListIpGroupsResponse(SdkResponse):
     def request_id(self):
         """Gets the request_id of this ListIpGroupsResponse.
 
-        请求ID。  注：自动生成 。
+        参数解释：请求ID。  注：自动生成 。
 
         :return: The request_id of this ListIpGroupsResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class ListIpGroupsResponse(SdkResponse):
     def request_id(self, request_id):
         """Sets the request_id of this ListIpGroupsResponse.
 
-        请求ID。  注：自动生成 。
+        参数解释：请求ID。  注：自动生成 。
 
         :param request_id: The request_id of this ListIpGroupsResponse.
         :type request_id: str

@@ -3,6 +3,7 @@
 from __future__ import absolute_import
 
 # import models into model package
+from huaweicloudsdkecs.v2.model.asic_accelerator_info import ASICAcceleratorInfo
 from huaweicloudsdkecs.v2.model.add_server_group_member_request import AddServerGroupMemberRequest
 from huaweicloudsdkecs.v2.model.add_server_group_member_request_body import AddServerGroupMemberRequestBody
 from huaweicloudsdkecs.v2.model.add_server_group_member_response import AddServerGroupMemberResponse
@@ -110,6 +111,7 @@ from huaweicloudsdkecs.v2.model.flavor_extra_spec import FlavorExtraSpec
 from huaweicloudsdkecs.v2.model.flavor_link import FlavorLink
 from huaweicloudsdkecs.v2.model.flavor_spot_options import FlavorSpotOptions
 from huaweicloudsdkecs.v2.model.get_server_remote_console_option import GetServerRemoteConsoleOption
+from huaweicloudsdkecs.v2.model.gpu_info import GpuInfo
 from huaweicloudsdkecs.v2.model.hypervisor import Hypervisor
 from huaweicloudsdkecs.v2.model.interface_attachable_quantity import InterfaceAttachableQuantity
 from huaweicloudsdkecs.v2.model.interface_attachment import InterfaceAttachment

@@ -30,7 +30,10 @@ class CertificateInfo:
         'expire_time': 'str',
         'project_id': 'str',
         'enc_certificate': 'str',
-        'enc_private_key': 'str'
+        'enc_private_key': 'str',
+        'common_name': 'str',
+        'fingerprint': 'str',
+        'subject_alternative_names': 'list[str]'
     }
 
     attribute_map = {
@@ -47,10 +50,13 @@ class CertificateInfo:
         'expire_time': 'expire_time',
         'project_id': 'project_id',
         'enc_certificate': 'enc_certificate',
-        'enc_private_key': 'enc_private_key'
+        'enc_private_key': 'enc_private_key',
+        'common_name': 'common_name',
+        'fingerprint': 'fingerprint',
+        'subject_alternative_names': 'subject_alternative_names'
     }
 
-    def __init__(self, admin_state_up=None, certificate=None, description=None, domain=None, id=None, name=None, private_key=None, type=None, created_at=None, updated_at=None, expire_time=None, project_id=None, enc_certificate=None, enc_private_key=None):
+    def __init__(self, admin_state_up=None, certificate=None, description=None, domain=None, id=None, name=None, private_key=None, type=None, created_at=None, updated_at=None, expire_time=None, project_id=None, enc_certificate=None, enc_private_key=None, common_name=None, fingerprint=None, subject_alternative_names=None):
         """CertificateInfo
 
         The model defined in huaweicloud sdk
@@ -61,7 +67,7 @@ class CertificateInfo:
         :type certificate: str
         :param description: 证书的描述。
         :type description: str
-        :param domain: 服务器证书所签域名。该字段仅type为server时有效。  总长度为0-10000，由若干普通域名或泛域名组成，域名之间以\&quot;,\&quot;分割，不超过100个域名。  普通域名：由若干字符串组成，字符串间以\&quot;.\&quot;分割，单个字符串长度不超过63个字符， 只能包含英文字母、数字或\&quot;-\&quot;，且必须以字母或数字开头和结尾。例：www.test.com。  泛域名：在普通域名的基础上仅允许首字母为\&quot;*\&quot;。例：*.test.com
+        :param domain: 服务器证书所签域名。该字段仅type为server时有效。  总长度为0-10000，由若干普通域名或泛域名组成，域名之间以\&quot;,\&quot;分割，不超过100个域名。  普通域名：由若干字符串组成，字符串间以\&quot;.\&quot;分割，单个字符串长度不超过63个字符， 只能包含英文字母、数字或\&quot;-\&quot;，且必须以字母或数字开头和结尾。例：www.test.com。  泛域名：在普通域名的基础上仅允许首字母为\&quot;\\*\&quot;。例：\\*.test.com
         :type domain: str
         :param id: 证书ID。
         :type id: str
@@ -83,6 +89,12 @@ class CertificateInfo:
         :type enc_certificate: str
         :param enc_private_key: HTTPS协议使用的SM加密证书私钥。  取值：PEM编码格式。  注意：仅在当前局点的SM加密证书特性开启才会返回该字段。
         :type enc_private_key: str
+        :param common_name: 证书主域名
+        :type common_name: str
+        :param fingerprint: 证书指纹
+        :type fingerprint: str
+        :param subject_alternative_names: 证书全部域名
+        :type subject_alternative_names: list[str]
         """
         
         
@@ -101,6 +113,9 @@ class CertificateInfo:
         self._project_id = None
         self._enc_certificate = None
         self._enc_private_key = None
+        self._common_name = None
+        self._fingerprint = None
+        self._subject_alternative_names = None
         self.discriminator = None
 
         self.admin_state_up = admin_state_up
@@ -119,6 +134,12 @@ class CertificateInfo:
             self.enc_certificate = enc_certificate
         if enc_private_key is not None:
             self.enc_private_key = enc_private_key
+        if common_name is not None:
+            self.common_name = common_name
+        if fingerprint is not None:
+            self.fingerprint = fingerprint
+        if subject_alternative_names is not None:
+            self.subject_alternative_names = subject_alternative_names
 
     @property
     def admin_state_up(self):
@@ -190,7 +211,7 @@ class CertificateInfo:
     def domain(self):
         """Gets the domain of this CertificateInfo.
 
-        服务器证书所签域名。该字段仅type为server时有效。  总长度为0-10000，由若干普通域名或泛域名组成，域名之间以\",\"分割，不超过100个域名。  普通域名：由若干字符串组成，字符串间以\".\"分割，单个字符串长度不超过63个字符， 只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。例：www.test.com。  泛域名：在普通域名的基础上仅允许首字母为\"*\"。例：*.test.com
+        服务器证书所签域名。该字段仅type为server时有效。  总长度为0-10000，由若干普通域名或泛域名组成，域名之间以\",\"分割，不超过100个域名。  普通域名：由若干字符串组成，字符串间以\".\"分割，单个字符串长度不超过63个字符， 只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。例：www.test.com。  泛域名：在普通域名的基础上仅允许首字母为\"\\*\"。例：\\*.test.com
 
         :return: The domain of this CertificateInfo.
         :rtype: str
@@ -201,7 +222,7 @@ class CertificateInfo:
     def domain(self, domain):
         """Sets the domain of this CertificateInfo.
 
-        服务器证书所签域名。该字段仅type为server时有效。  总长度为0-10000，由若干普通域名或泛域名组成，域名之间以\",\"分割，不超过100个域名。  普通域名：由若干字符串组成，字符串间以\".\"分割，单个字符串长度不超过63个字符， 只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。例：www.test.com。  泛域名：在普通域名的基础上仅允许首字母为\"*\"。例：*.test.com
+        服务器证书所签域名。该字段仅type为server时有效。  总长度为0-10000，由若干普通域名或泛域名组成，域名之间以\",\"分割，不超过100个域名。  普通域名：由若干字符串组成，字符串间以\".\"分割，单个字符串长度不超过63个字符， 只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。例：www.test.com。  泛域名：在普通域名的基础上仅允许首字母为\"\\*\"。例：\\*.test.com
 
         :param domain: The domain of this CertificateInfo.
         :type domain: str
@@ -427,6 +448,72 @@ class CertificateInfo:
         :type enc_private_key: str
         """
         self._enc_private_key = enc_private_key
+
+    @property
+    def common_name(self):
+        """Gets the common_name of this CertificateInfo.
+
+        证书主域名
+
+        :return: The common_name of this CertificateInfo.
+        :rtype: str
+        """
+        return self._common_name
+
+    @common_name.setter
+    def common_name(self, common_name):
+        """Sets the common_name of this CertificateInfo.
+
+        证书主域名
+
+        :param common_name: The common_name of this CertificateInfo.
+        :type common_name: str
+        """
+        self._common_name = common_name
+
+    @property
+    def fingerprint(self):
+        """Gets the fingerprint of this CertificateInfo.
+
+        证书指纹
+
+        :return: The fingerprint of this CertificateInfo.
+        :rtype: str
+        """
+        return self._fingerprint
+
+    @fingerprint.setter
+    def fingerprint(self, fingerprint):
+        """Sets the fingerprint of this CertificateInfo.
+
+        证书指纹
+
+        :param fingerprint: The fingerprint of this CertificateInfo.
+        :type fingerprint: str
+        """
+        self._fingerprint = fingerprint
+
+    @property
+    def subject_alternative_names(self):
+        """Gets the subject_alternative_names of this CertificateInfo.
+
+        证书全部域名
+
+        :return: The subject_alternative_names of this CertificateInfo.
+        :rtype: list[str]
+        """
+        return self._subject_alternative_names
+
+    @subject_alternative_names.setter
+    def subject_alternative_names(self, subject_alternative_names):
+        """Sets the subject_alternative_names of this CertificateInfo.
+
+        证书全部域名
+
+        :param subject_alternative_names: The subject_alternative_names of this CertificateInfo.
+        :type subject_alternative_names: list[str]
+        """
+        self._subject_alternative_names = subject_alternative_names
 
     def to_dict(self):
         """Returns the model properties as a dict"""

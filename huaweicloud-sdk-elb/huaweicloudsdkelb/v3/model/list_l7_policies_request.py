@@ -63,7 +63,7 @@ class ListL7PoliciesRequest:
 
         :param marker: 上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
         :type marker: str
-        :param limit: 每页返回的个数。
+        :param limit: 参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
         :type limit: int
         :param page_reverse: 是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse&#x3D;true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
         :type page_reverse: bool
@@ -179,7 +179,7 @@ class ListL7PoliciesRequest:
     def limit(self):
         """Gets the limit of this ListL7PoliciesRequest.
 
-        每页返回的个数。
+        参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
 
         :return: The limit of this ListL7PoliciesRequest.
         :rtype: int
@@ -190,7 +190,7 @@ class ListL7PoliciesRequest:
     def limit(self, limit):
         """Sets the limit of this ListL7PoliciesRequest.
 
-        每页返回的个数。
+        参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
 
         :param limit: The limit of this ListL7PoliciesRequest.
         :type limit: int

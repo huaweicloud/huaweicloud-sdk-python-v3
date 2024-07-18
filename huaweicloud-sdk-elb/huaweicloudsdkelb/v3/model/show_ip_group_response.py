@@ -34,7 +34,7 @@ class ShowIpGroupResponse(SdkResponse):
 
         :param ipgroup: 
         :type ipgroup: :class:`huaweicloudsdkelb.v3.IpGroup`
-        :param request_id: 请求ID。  注：自动生成 。
+        :param request_id: 参数解释：请求ID。  注：自动生成 。
         :type request_id: str
         """
         
@@ -71,7 +71,7 @@ class ShowIpGroupResponse(SdkResponse):
     def request_id(self):
         """Gets the request_id of this ShowIpGroupResponse.
 
-        请求ID。  注：自动生成 。
+        参数解释：请求ID。  注：自动生成 。
 
         :return: The request_id of this ShowIpGroupResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ShowIpGroupResponse(SdkResponse):
     def request_id(self, request_id):
         """Sets the request_id of this ShowIpGroupResponse.
 
-        请求ID。  注：自动生成 。
+        参数解释：请求ID。  注：自动生成 。
 
         :param request_id: The request_id of this ShowIpGroupResponse.
         :type request_id: str

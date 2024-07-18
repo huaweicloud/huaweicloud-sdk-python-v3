@@ -30,7 +30,9 @@ class ListTracesRequest:
         'resource_type': 'str',
         'trace_id': 'str',
         'trace_name': 'str',
-        'trace_rating': 'str'
+        'trace_rating': 'str',
+        'access_key_id': 'str',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -47,10 +49,12 @@ class ListTracesRequest:
         'resource_type': 'resource_type',
         'trace_id': 'trace_id',
         'trace_name': 'trace_name',
-        'trace_rating': 'trace_rating'
+        'trace_rating': 'trace_rating',
+        'access_key_id': 'access_key_id',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, trace_type=None, limit=None, _from=None, next=None, to=None, tracker_name=None, service_type=None, user=None, resource_id=None, resource_name=None, resource_type=None, trace_id=None, trace_name=None, trace_rating=None):
+    def __init__(self, trace_type=None, limit=None, _from=None, next=None, to=None, tracker_name=None, service_type=None, user=None, resource_id=None, resource_name=None, resource_type=None, trace_id=None, trace_name=None, trace_rating=None, access_key_id=None, enterprise_project_id=None):
         """ListTracesRequest
 
         The model defined in huaweicloud sdk
@@ -83,6 +87,10 @@ class ListTracesRequest:
         :type trace_name: str
         :param trace_rating: 标示查询事件列表对应的事件等级目前有三种：正常(normal), 警告(warning),事故(incident)。 当\&quot;trace_type\&quot;字段值为\&quot;system\&quot;时，该字段筛选有效\&quot;。
         :type trace_rating: str
+        :param access_key_id: 标示查询事件列表对应的访问密钥ID。包含临时访问凭证和永久访问密钥。
+        :type access_key_id: str
+        :param enterprise_project_id: 标示查询事件列表对应的企业项目ID。
+        :type enterprise_project_id: str
         """
         
         
@@ -101,6 +109,8 @@ class ListTracesRequest:
         self._trace_id = None
         self._trace_name = None
         self._trace_rating = None
+        self._access_key_id = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         self.trace_type = trace_type
@@ -130,6 +140,10 @@ class ListTracesRequest:
             self.trace_name = trace_name
         if trace_rating is not None:
             self.trace_rating = trace_rating
+        if access_key_id is not None:
+            self.access_key_id = access_key_id
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def trace_type(self):
@@ -438,6 +452,50 @@ class ListTracesRequest:
         :type trace_rating: str
         """
         self._trace_rating = trace_rating
+
+    @property
+    def access_key_id(self):
+        """Gets the access_key_id of this ListTracesRequest.
+
+        标示查询事件列表对应的访问密钥ID。包含临时访问凭证和永久访问密钥。
+
+        :return: The access_key_id of this ListTracesRequest.
+        :rtype: str
+        """
+        return self._access_key_id
+
+    @access_key_id.setter
+    def access_key_id(self, access_key_id):
+        """Sets the access_key_id of this ListTracesRequest.
+
+        标示查询事件列表对应的访问密钥ID。包含临时访问凭证和永久访问密钥。
+
+        :param access_key_id: The access_key_id of this ListTracesRequest.
+        :type access_key_id: str
+        """
+        self._access_key_id = access_key_id
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListTracesRequest.
+
+        标示查询事件列表对应的企业项目ID。
+
+        :return: The enterprise_project_id of this ListTracesRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListTracesRequest.
+
+        标示查询事件列表对应的企业项目ID。
+
+        :param enterprise_project_id: The enterprise_project_id of this ListTracesRequest.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -1343,6 +1343,71 @@ class VodAsyncClient(Client):
 
         return http_info
 
+    def delete_transcode_product_async(self, request):
+        """删除转码产物
+
+        删除转码产物。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteTranscodeProduct
+        :type request: :class:`huaweicloudsdkvod.v1.DeleteTranscodeProductRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.DeleteTranscodeProductResponse`
+        """
+        http_info = self._delete_transcode_product_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_transcode_product_async_invoker(self, request):
+        http_info = self._delete_transcode_product_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_transcode_product_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/asset/transcode-product",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTranscodeProductResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_transcode_template_async(self, request):
         """删除自定义模板
 
@@ -2122,6 +2187,71 @@ class VodAsyncClient(Client):
 
         return http_info
 
+    def modify_subtitle_async(self, request):
+        """多字幕封装
+
+        多字幕封装，仅支持 HLS VTT格式
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ModifySubtitle
+        :type request: :class:`huaweicloudsdkvod.v1.ModifySubtitleRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.ModifySubtitleResponse`
+        """
+        http_info = self._modify_subtitle_http_info(request)
+        return self._call_api(**http_info)
+
+    def modify_subtitle_async_invoker(self, request):
+        http_info = self._modify_subtitle_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _modify_subtitle_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/asset/subtitles",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifySubtitleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def publish_asset_from_obs_async(self, request):
         """创建媒资：OBS转存方式
 
@@ -2695,6 +2825,79 @@ class VodAsyncClient(Client):
 
         return http_info
 
+    def show_vod_retrieval_async(self, request):
+        """查询取回数据信息
+
+        ## 典型场景 ##
+         用于查询点播低频和归档取回量统计数据。&lt;br/&gt;
+        
+        ## 接口功能 ##
+         用于查询点播低频和归档取回量统计数据。&lt;br/&gt;
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowVodRetrieval
+        :type request: :class:`huaweicloudsdkvod.v1.ShowVodRetrievalRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.ShowVodRetrievalResponse`
+        """
+        http_info = self._show_vod_retrieval_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_vod_retrieval_async_invoker(self, request):
+        http_info = self._show_vod_retrieval_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_vod_retrieval_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/asset/vod-retrieval",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVodRetrievalResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'interval' in local_var_params:
+            query_params.append(('interval', local_var_params['interval']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_vod_statistics_async(self, request):
         """查询源站统计信息
 
@@ -3120,6 +3323,72 @@ class VodAsyncClient(Client):
             "resource_path": "/v1.0/{project_id}/asset/cover",
             "request_type": request.__class__.__name__,
             "response_type": "UpdateCoverByThumbnailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_storage_mode_async(self, request):
+        """修改媒资文件在obs的存储模式
+
+        ## 接口功能 ##
+          修改媒资文件在obs的存储模式&lt;br/&gt;
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateStorageMode
+        :type request: :class:`huaweicloudsdkvod.v1.UpdateStorageModeRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.UpdateStorageModeResponse`
+        """
+        http_info = self._update_storage_mode_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_storage_mode_async_invoker(self, request):
+        http_info = self._update_storage_mode_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_storage_mode_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/asset/storage-mode",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateStorageModeResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -3671,210 +3940,6 @@ class VodAsyncClient(Client):
         form_params = {}
 
         body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_vod_retrieval_async(self, request):
-        """查询取回数据信息
-
-        ## 典型场景 ##
-         用于查询点播低频和归档取回量统计数据。&lt;br/&gt;
-        
-        ## 接口功能 ##
-         用于查询点播低频和归档取回量统计数据。&lt;br/&gt;
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowVodRetrieval
-        :type request: :class:`huaweicloudsdkvod.v1.ShowVodRetrievalRequest`
-        :rtype: :class:`huaweicloudsdkvod.v1.ShowVodRetrievalResponse`
-        """
-        http_info = self._show_vod_retrieval_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_vod_retrieval_async_invoker(self, request):
-        http_info = self._show_vod_retrieval_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_vod_retrieval_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/asset/vod-retrieval",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowVodRetrievalResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'start_time' in local_var_params:
-            query_params.append(('start_time', local_var_params['start_time']))
-        if 'end_time' in local_var_params:
-            query_params.append(('end_time', local_var_params['end_time']))
-        if 'interval' in local_var_params:
-            query_params.append(('interval', local_var_params['interval']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def update_storage_mode_async(self, request):
-        """修改媒资文件在obs的存储模式
-
-        ## 接口功能 ##
-          修改媒资文件在obs的存储模式&lt;br/&gt;
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for UpdateStorageMode
-        :type request: :class:`huaweicloudsdkvod.v1.UpdateStorageModeRequest`
-        :rtype: :class:`huaweicloudsdkvod.v1.UpdateStorageModeResponse`
-        """
-        http_info = self._update_storage_mode_http_info(request)
-        return self._call_api(**http_info)
-
-    def update_storage_mode_async_invoker(self, request):
-        http_info = self._update_storage_mode_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _update_storage_mode_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v1/{project_id}/asset/storage-mode",
-            "request_type": request.__class__.__name__,
-            "response_type": "UpdateStorageModeResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def modify_subtitle_async(self, request):
-        """多字幕封装
-
-        多字幕封装，仅支持 HLS VTT格式
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ModifySubtitle
-        :type request: :class:`huaweicloudsdkvod.v1.ModifySubtitleRequest`
-        :rtype: :class:`huaweicloudsdkvod.v1.ModifySubtitleResponse`
-        """
-        http_info = self._modify_subtitle_http_info(request)
-        return self._call_api(**http_info)
-
-    def modify_subtitle_async_invoker(self, request):
-        http_info = self._modify_subtitle_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _modify_subtitle_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v1/{project_id}/asset/subtitles",
-            "request_type": request.__class__.__name__,
-            "response_type": "ModifySubtitleResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

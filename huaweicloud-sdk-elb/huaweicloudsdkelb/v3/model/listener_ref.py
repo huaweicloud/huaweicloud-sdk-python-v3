@@ -29,7 +29,7 @@ class ListenerRef:
 
         The model defined in huaweicloud sdk
 
-        :param id: 监听器ID。
+        :param id: 参数解释：监听器ID。
         :type id: str
         """
         
@@ -44,7 +44,7 @@ class ListenerRef:
     def id(self):
         """Gets the id of this ListenerRef.
 
-        监听器ID。
+        参数解释：监听器ID。
 
         :return: The id of this ListenerRef.
         :rtype: str
@@ -55,7 +55,7 @@ class ListenerRef:
     def id(self, id):
         """Sets the id of this ListenerRef.
 
-        监听器ID。
+        参数解释：监听器ID。
 
         :param id: The id of this ListenerRef.
         :type id: str

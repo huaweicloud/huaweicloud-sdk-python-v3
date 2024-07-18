@@ -18,15 +18,21 @@ class UpdateRedirectPoolsExtendConfig:
 
     openapi_types = {
         'rewrite_url_enable': 'bool',
-        'rewrite_url_config': 'CreateRewriteUrlConfig'
+        'rewrite_url_config': 'UpdateRewriteUrlConfig',
+        'insert_headers_config': 'UpdateInsertHeadersConfig',
+        'remove_headers_config': 'UpdateRemoveHeadersConfig',
+        'traffic_limit_config': 'UpdateTrafficLimitConfig'
     }
 
     attribute_map = {
         'rewrite_url_enable': 'rewrite_url_enable',
-        'rewrite_url_config': 'rewrite_url_config'
+        'rewrite_url_config': 'rewrite_url_config',
+        'insert_headers_config': 'insert_headers_config',
+        'remove_headers_config': 'remove_headers_config',
+        'traffic_limit_config': 'traffic_limit_config'
     }
 
-    def __init__(self, rewrite_url_enable=None, rewrite_url_config=None):
+    def __init__(self, rewrite_url_enable=None, rewrite_url_config=None, insert_headers_config=None, remove_headers_config=None, traffic_limit_config=None):
         """UpdateRedirectPoolsExtendConfig
 
         The model defined in huaweicloud sdk
@@ -34,19 +40,34 @@ class UpdateRedirectPoolsExtendConfig:
         :param rewrite_url_enable: 是否开启url重定向
         :type rewrite_url_enable: bool
         :param rewrite_url_config: 
-        :type rewrite_url_config: :class:`huaweicloudsdkelb.v3.CreateRewriteUrlConfig`
+        :type rewrite_url_config: :class:`huaweicloudsdkelb.v3.UpdateRewriteUrlConfig`
+        :param insert_headers_config: 
+        :type insert_headers_config: :class:`huaweicloudsdkelb.v3.UpdateInsertHeadersConfig`
+        :param remove_headers_config: 
+        :type remove_headers_config: :class:`huaweicloudsdkelb.v3.UpdateRemoveHeadersConfig`
+        :param traffic_limit_config: 
+        :type traffic_limit_config: :class:`huaweicloudsdkelb.v3.UpdateTrafficLimitConfig`
         """
         
         
 
         self._rewrite_url_enable = None
         self._rewrite_url_config = None
+        self._insert_headers_config = None
+        self._remove_headers_config = None
+        self._traffic_limit_config = None
         self.discriminator = None
 
         if rewrite_url_enable is not None:
             self.rewrite_url_enable = rewrite_url_enable
         if rewrite_url_config is not None:
             self.rewrite_url_config = rewrite_url_config
+        if insert_headers_config is not None:
+            self.insert_headers_config = insert_headers_config
+        if remove_headers_config is not None:
+            self.remove_headers_config = remove_headers_config
+        if traffic_limit_config is not None:
+            self.traffic_limit_config = traffic_limit_config
 
     @property
     def rewrite_url_enable(self):
@@ -75,7 +96,7 @@ class UpdateRedirectPoolsExtendConfig:
         """Gets the rewrite_url_config of this UpdateRedirectPoolsExtendConfig.
 
         :return: The rewrite_url_config of this UpdateRedirectPoolsExtendConfig.
-        :rtype: :class:`huaweicloudsdkelb.v3.CreateRewriteUrlConfig`
+        :rtype: :class:`huaweicloudsdkelb.v3.UpdateRewriteUrlConfig`
         """
         return self._rewrite_url_config
 
@@ -84,9 +105,63 @@ class UpdateRedirectPoolsExtendConfig:
         """Sets the rewrite_url_config of this UpdateRedirectPoolsExtendConfig.
 
         :param rewrite_url_config: The rewrite_url_config of this UpdateRedirectPoolsExtendConfig.
-        :type rewrite_url_config: :class:`huaweicloudsdkelb.v3.CreateRewriteUrlConfig`
+        :type rewrite_url_config: :class:`huaweicloudsdkelb.v3.UpdateRewriteUrlConfig`
         """
         self._rewrite_url_config = rewrite_url_config
+
+    @property
+    def insert_headers_config(self):
+        """Gets the insert_headers_config of this UpdateRedirectPoolsExtendConfig.
+
+        :return: The insert_headers_config of this UpdateRedirectPoolsExtendConfig.
+        :rtype: :class:`huaweicloudsdkelb.v3.UpdateInsertHeadersConfig`
+        """
+        return self._insert_headers_config
+
+    @insert_headers_config.setter
+    def insert_headers_config(self, insert_headers_config):
+        """Sets the insert_headers_config of this UpdateRedirectPoolsExtendConfig.
+
+        :param insert_headers_config: The insert_headers_config of this UpdateRedirectPoolsExtendConfig.
+        :type insert_headers_config: :class:`huaweicloudsdkelb.v3.UpdateInsertHeadersConfig`
+        """
+        self._insert_headers_config = insert_headers_config
+
+    @property
+    def remove_headers_config(self):
+        """Gets the remove_headers_config of this UpdateRedirectPoolsExtendConfig.
+
+        :return: The remove_headers_config of this UpdateRedirectPoolsExtendConfig.
+        :rtype: :class:`huaweicloudsdkelb.v3.UpdateRemoveHeadersConfig`
+        """
+        return self._remove_headers_config
+
+    @remove_headers_config.setter
+    def remove_headers_config(self, remove_headers_config):
+        """Sets the remove_headers_config of this UpdateRedirectPoolsExtendConfig.
+
+        :param remove_headers_config: The remove_headers_config of this UpdateRedirectPoolsExtendConfig.
+        :type remove_headers_config: :class:`huaweicloudsdkelb.v3.UpdateRemoveHeadersConfig`
+        """
+        self._remove_headers_config = remove_headers_config
+
+    @property
+    def traffic_limit_config(self):
+        """Gets the traffic_limit_config of this UpdateRedirectPoolsExtendConfig.
+
+        :return: The traffic_limit_config of this UpdateRedirectPoolsExtendConfig.
+        :rtype: :class:`huaweicloudsdkelb.v3.UpdateTrafficLimitConfig`
+        """
+        return self._traffic_limit_config
+
+    @traffic_limit_config.setter
+    def traffic_limit_config(self, traffic_limit_config):
+        """Sets the traffic_limit_config of this UpdateRedirectPoolsExtendConfig.
+
+        :param traffic_limit_config: The traffic_limit_config of this UpdateRedirectPoolsExtendConfig.
+        :type traffic_limit_config: :class:`huaweicloudsdkelb.v3.UpdateTrafficLimitConfig`
+        """
+        self._traffic_limit_config = traffic_limit_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

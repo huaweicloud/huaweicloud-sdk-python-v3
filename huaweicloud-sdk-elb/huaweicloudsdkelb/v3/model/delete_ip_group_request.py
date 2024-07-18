@@ -29,7 +29,7 @@ class DeleteIpGroupRequest:
 
         The model defined in huaweicloud sdk
 
-        :param ipgroup_id: IP地址组的ID。
+        :param ipgroup_id: 参数解释：IP地址组的ID。
         :type ipgroup_id: str
         """
         
@@ -44,7 +44,7 @@ class DeleteIpGroupRequest:
     def ipgroup_id(self):
         """Gets the ipgroup_id of this DeleteIpGroupRequest.
 
-        IP地址组的ID。
+        参数解释：IP地址组的ID。
 
         :return: The ipgroup_id of this DeleteIpGroupRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class DeleteIpGroupRequest:
     def ipgroup_id(self, ipgroup_id):
         """Sets the ipgroup_id of this DeleteIpGroupRequest.
 
-        IP地址组的ID。
+        参数解释：IP地址组的ID。
 
         :param ipgroup_id: The ipgroup_id of this DeleteIpGroupRequest.
         :type ipgroup_id: str
