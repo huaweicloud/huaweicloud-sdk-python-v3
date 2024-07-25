@@ -41,6 +41,7 @@ class ListApiVersionDetailV2Response(SdkResponse):
         'domain_name': 'str',
         'tag': 'str',
         'content_type': 'str',
+        'is_send_fg_body_base64': 'bool',
         'id': 'str',
         'status': 'int',
         'arrange_necessary': 'int',
@@ -92,6 +93,7 @@ class ListApiVersionDetailV2Response(SdkResponse):
         'domain_name': 'domain_name',
         'tag': 'tag',
         'content_type': 'content_type',
+        'is_send_fg_body_base64': 'is_send_fg_body_base64',
         'id': 'id',
         'status': 'status',
         'arrange_necessary': 'arrange_necessary',
@@ -119,7 +121,7 @@ class ListApiVersionDetailV2Response(SdkResponse):
         'version_id': 'version_id'
     }
 
-    def __init__(self, name=None, type=None, version=None, req_protocol=None, req_method=None, req_uri=None, auth_type=None, auth_opt=None, cors=None, match_mode=None, backend_type=None, remark=None, group_id=None, body_remark=None, result_normal_sample=None, result_failure_sample=None, authorizer_id=None, tags=None, response_id=None, roma_app_id=None, domain_name=None, tag=None, content_type=None, id=None, status=None, arrange_necessary=None, register_time=None, update_time=None, group_name=None, group_version=None, run_env_id=None, run_env_name=None, publish_id=None, publish_time=None, roma_app_name=None, ld_api_id=None, backend_api=None, api_group_info=None, func_info=None, mock_info=None, req_params=None, backend_params=None, policy_functions=None, policy_mocks=None, policy_https=None, sl_domain=None, sl_domains=None, version_id=None):
+    def __init__(self, name=None, type=None, version=None, req_protocol=None, req_method=None, req_uri=None, auth_type=None, auth_opt=None, cors=None, match_mode=None, backend_type=None, remark=None, group_id=None, body_remark=None, result_normal_sample=None, result_failure_sample=None, authorizer_id=None, tags=None, response_id=None, roma_app_id=None, domain_name=None, tag=None, content_type=None, is_send_fg_body_base64=None, id=None, status=None, arrange_necessary=None, register_time=None, update_time=None, group_name=None, group_version=None, run_env_id=None, run_env_name=None, publish_id=None, publish_time=None, roma_app_name=None, ld_api_id=None, backend_api=None, api_group_info=None, func_info=None, mock_info=None, req_params=None, backend_params=None, policy_functions=None, policy_mocks=None, policy_https=None, sl_domain=None, sl_domains=None, version_id=None):
         """ListApiVersionDetailV2Response
 
         The model defined in huaweicloud sdk
@@ -156,7 +158,7 @@ class ListApiVersionDetailV2Response(SdkResponse):
         :type result_normal_sample: str
         :param result_failure_sample: 失败返回示例，描述API的异常返回信息。字符长度不超过20480 &gt; 中文字符必须为UTF-8或者unicode编码。  当API的请求协议为GRPC类型时不支持配置。
         :type result_failure_sample: str
-        :param authorizer_id: 前端自定义认证对象的ID，API请求协议为GRPC类型时不支持前端自定义认证
+        :param authorizer_id: 前端自定义认证对象的ID
         :type authorizer_id: str
         :param tags: 标签。  支持英文，数字，中文，特殊符号（-*#%.:_），且只能以中文或英文开头。  默认支持10个标签，如需扩大配额请联系技术工程师修改API_TAG_NUM_LIMIT配置。 
         :type tags: list[str]
@@ -168,8 +170,10 @@ class ListApiVersionDetailV2Response(SdkResponse):
         :type domain_name: str
         :param tag: 标签  待废弃，优先使用tags字段
         :type tag: str
-        :param content_type: 请求内容格式类型：  application/json application/xml multipart/form-data text/plain  暂不支持
+        :param content_type: 请求内容格式类型：  application/json application/xml multipart/form-data text/plain
         :type content_type: str
+        :param is_send_fg_body_base64: 是否对与FunctionGraph交互场景的body进行Base64编码。仅当content_type为application/json时，可以不对body进行Base64编码。 应用场景： - 自定义认证 - 绑定断路器插件，且断路器后端降级策略为函数后端 - API后端类型为函数工作流
+        :type is_send_fg_body_base64: bool
         :param id: API编号
         :type id: str
         :param status: API状态   - 1： 有效
@@ -247,6 +251,7 @@ class ListApiVersionDetailV2Response(SdkResponse):
         self._domain_name = None
         self._tag = None
         self._content_type = None
+        self._is_send_fg_body_base64 = None
         self._id = None
         self._status = None
         self._arrange_necessary = None
@@ -312,6 +317,8 @@ class ListApiVersionDetailV2Response(SdkResponse):
             self.tag = tag
         if content_type is not None:
             self.content_type = content_type
+        if is_send_fg_body_base64 is not None:
+            self.is_send_fg_body_base64 = is_send_fg_body_base64
         if id is not None:
             self.id = id
         if status is not None:
@@ -715,7 +722,7 @@ class ListApiVersionDetailV2Response(SdkResponse):
     def authorizer_id(self):
         """Gets the authorizer_id of this ListApiVersionDetailV2Response.
 
-        前端自定义认证对象的ID，API请求协议为GRPC类型时不支持前端自定义认证
+        前端自定义认证对象的ID
 
         :return: The authorizer_id of this ListApiVersionDetailV2Response.
         :rtype: str
@@ -726,7 +733,7 @@ class ListApiVersionDetailV2Response(SdkResponse):
     def authorizer_id(self, authorizer_id):
         """Sets the authorizer_id of this ListApiVersionDetailV2Response.
 
-        前端自定义认证对象的ID，API请求协议为GRPC类型时不支持前端自定义认证
+        前端自定义认证对象的ID
 
         :param authorizer_id: The authorizer_id of this ListApiVersionDetailV2Response.
         :type authorizer_id: str
@@ -847,7 +854,7 @@ class ListApiVersionDetailV2Response(SdkResponse):
     def content_type(self):
         """Gets the content_type of this ListApiVersionDetailV2Response.
 
-        请求内容格式类型：  application/json application/xml multipart/form-data text/plain  暂不支持
+        请求内容格式类型：  application/json application/xml multipart/form-data text/plain
 
         :return: The content_type of this ListApiVersionDetailV2Response.
         :rtype: str
@@ -858,12 +865,34 @@ class ListApiVersionDetailV2Response(SdkResponse):
     def content_type(self, content_type):
         """Sets the content_type of this ListApiVersionDetailV2Response.
 
-        请求内容格式类型：  application/json application/xml multipart/form-data text/plain  暂不支持
+        请求内容格式类型：  application/json application/xml multipart/form-data text/plain
 
         :param content_type: The content_type of this ListApiVersionDetailV2Response.
         :type content_type: str
         """
         self._content_type = content_type
+
+    @property
+    def is_send_fg_body_base64(self):
+        """Gets the is_send_fg_body_base64 of this ListApiVersionDetailV2Response.
+
+        是否对与FunctionGraph交互场景的body进行Base64编码。仅当content_type为application/json时，可以不对body进行Base64编码。 应用场景： - 自定义认证 - 绑定断路器插件，且断路器后端降级策略为函数后端 - API后端类型为函数工作流
+
+        :return: The is_send_fg_body_base64 of this ListApiVersionDetailV2Response.
+        :rtype: bool
+        """
+        return self._is_send_fg_body_base64
+
+    @is_send_fg_body_base64.setter
+    def is_send_fg_body_base64(self, is_send_fg_body_base64):
+        """Sets the is_send_fg_body_base64 of this ListApiVersionDetailV2Response.
+
+        是否对与FunctionGraph交互场景的body进行Base64编码。仅当content_type为application/json时，可以不对body进行Base64编码。 应用场景： - 自定义认证 - 绑定断路器插件，且断路器后端降级策略为函数后端 - API后端类型为函数工作流
+
+        :param is_send_fg_body_base64: The is_send_fg_body_base64 of this ListApiVersionDetailV2Response.
+        :type is_send_fg_body_base64: bool
+        """
+        self._is_send_fg_body_base64 = is_send_fg_body_base64
 
     @property
     def id(self):

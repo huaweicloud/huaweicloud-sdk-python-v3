@@ -19,8 +19,8 @@ class ListWorkflowsRequest:
     openapi_types = {
         'project_id': 'str',
         'workspace_id': 'str',
-        'offset': 'float',
-        'limit': 'float',
+        'offset': 'int',
+        'limit': 'int',
         'order': 'str',
         'sortby': 'str',
         'enabled': 'bool',
@@ -58,9 +58,9 @@ class ListWorkflowsRequest:
         :param workspace_id: 工作空间id
         :type workspace_id: str
         :param offset: 偏移量
-        :type offset: float
+        :type offset: int
         :param limit: 数据量
-        :type limit: float
+        :type limit: int
         :param order: 排序顺序，asc：升序，desc：降序
         :type order: str
         :param sortby: 排序字段，create_time：创建时间，category：类型分类名称
@@ -174,7 +174,7 @@ class ListWorkflowsRequest:
         偏移量
 
         :return: The offset of this ListWorkflowsRequest.
-        :rtype: float
+        :rtype: int
         """
         return self._offset
 
@@ -185,7 +185,7 @@ class ListWorkflowsRequest:
         偏移量
 
         :param offset: The offset of this ListWorkflowsRequest.
-        :type offset: float
+        :type offset: int
         """
         self._offset = offset
 
@@ -196,7 +196,7 @@ class ListWorkflowsRequest:
         数据量
 
         :return: The limit of this ListWorkflowsRequest.
-        :rtype: float
+        :rtype: int
         """
         return self._limit
 
@@ -207,7 +207,7 @@ class ListWorkflowsRequest:
         数据量
 
         :param limit: The limit of this ListWorkflowsRequest.
-        :type limit: float
+        :type limit: int
         """
         self._limit = limit
 

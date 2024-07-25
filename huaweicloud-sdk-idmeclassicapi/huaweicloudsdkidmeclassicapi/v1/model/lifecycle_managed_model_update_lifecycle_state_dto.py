@@ -33,11 +33,11 @@ class LifecycleManagedModelUpdateLifecycleStateDTO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 数据实例ID。
+        :param id: **参数解释：**  数据实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
         :type id: str
         :param lifecycle_state: 
         :type lifecycle_state: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
-        :param modifier: 修改人。
+        :param modifier: **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type modifier: str
         """
         
@@ -57,7 +57,7 @@ class LifecycleManagedModelUpdateLifecycleStateDTO:
     def id(self):
         """Gets the id of this LifecycleManagedModelUpdateLifecycleStateDTO.
 
-        数据实例ID。
+        **参数解释：**  数据实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :return: The id of this LifecycleManagedModelUpdateLifecycleStateDTO.
         :rtype: str
@@ -68,7 +68,7 @@ class LifecycleManagedModelUpdateLifecycleStateDTO:
     def id(self, id):
         """Sets the id of this LifecycleManagedModelUpdateLifecycleStateDTO.
 
-        数据实例ID。
+        **参数解释：**  数据实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :param id: The id of this LifecycleManagedModelUpdateLifecycleStateDTO.
         :type id: str
@@ -97,7 +97,7 @@ class LifecycleManagedModelUpdateLifecycleStateDTO:
     def modifier(self):
         """Gets the modifier of this LifecycleManagedModelUpdateLifecycleStateDTO.
 
-        修改人。
+        **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The modifier of this LifecycleManagedModelUpdateLifecycleStateDTO.
         :rtype: str
@@ -108,7 +108,7 @@ class LifecycleManagedModelUpdateLifecycleStateDTO:
     def modifier(self, modifier):
         """Sets the modifier of this LifecycleManagedModelUpdateLifecycleStateDTO.
 
-        修改人。
+        **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param modifier: The modifier of this LifecycleManagedModelUpdateLifecycleStateDTO.
         :type modifier: str

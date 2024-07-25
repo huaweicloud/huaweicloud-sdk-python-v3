@@ -31,6 +31,7 @@ class MonthlyBillRecord:
         'trade_time': 'str',
         'provider_type': 'int',
         'trade_id': 'str',
+        'id': 'str',
         'bill_type': 'int',
         'status': 'int',
         'official_amount': 'decimal.Decimal',
@@ -63,6 +64,7 @@ class MonthlyBillRecord:
         'trade_time': 'trade_time',
         'provider_type': 'provider_type',
         'trade_id': 'trade_id',
+        'id': 'id',
         'bill_type': 'bill_type',
         'status': 'status',
         'official_amount': 'official_amount',
@@ -80,7 +82,7 @@ class MonthlyBillRecord:
         'region_name': 'region_name'
     }
 
-    def __init__(self, bill_cycle=None, customer_id=None, service_type_code=None, resource_type_code=None, service_type_name=None, resource_type_name=None, region_code=None, enterprise_project_id=None, enterprise_project_name=None, charging_mode=None, consume_time=None, trade_time=None, provider_type=None, trade_id=None, bill_type=None, status=None, official_amount=None, official_discount_amount=None, erase_amount=None, consume_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_value_card_amount=None, bonus_amount=None, debt_amount=None, writeoff_amount=None, region_name=None):
+    def __init__(self, bill_cycle=None, customer_id=None, service_type_code=None, resource_type_code=None, service_type_name=None, resource_type_name=None, region_code=None, enterprise_project_id=None, enterprise_project_name=None, charging_mode=None, consume_time=None, trade_time=None, provider_type=None, trade_id=None, id=None, bill_type=None, status=None, official_amount=None, official_discount_amount=None, erase_amount=None, consume_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_value_card_amount=None, bonus_amount=None, debt_amount=None, writeoff_amount=None, region_name=None):
         """MonthlyBillRecord
 
         The model defined in huaweicloud sdk
@@ -113,6 +115,8 @@ class MonthlyBillRecord:
         :type provider_type: int
         :param trade_id: 订单ID或交易ID，扣费维度的唯一标识。
         :type trade_id: str
+        :param id: 唯一标识。 该字段为预留字段。
+        :type id: str
         :param bill_type: 账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更23：消费-节省计划抵扣24：退款-包年/包月转按需
         :type bill_type: int
         :param status: 支付状态。 1：已支付2：未结清3：未结算
@@ -161,6 +165,7 @@ class MonthlyBillRecord:
         self._trade_time = None
         self._provider_type = None
         self._trade_id = None
+        self._id = None
         self._bill_type = None
         self._status = None
         self._official_amount = None
@@ -206,6 +211,8 @@ class MonthlyBillRecord:
             self.provider_type = provider_type
         if trade_id is not None:
             self.trade_id = trade_id
+        if id is not None:
+            self.id = id
         if bill_type is not None:
             self.bill_type = bill_type
         if status is not None:
@@ -544,6 +551,28 @@ class MonthlyBillRecord:
         :type trade_id: str
         """
         self._trade_id = trade_id
+
+    @property
+    def id(self):
+        """Gets the id of this MonthlyBillRecord.
+
+        唯一标识。 该字段为预留字段。
+
+        :return: The id of this MonthlyBillRecord.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this MonthlyBillRecord.
+
+        唯一标识。 该字段为预留字段。
+
+        :param id: The id of this MonthlyBillRecord.
+        :type id: str
+        """
+        self._id = id
 
     @property
     def bill_type(self):

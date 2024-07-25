@@ -35,13 +35,13 @@ class PageInfoViewDTO:
 
         The model defined in huaweicloud sdk
 
-        :param cur_page: 当前页。
+        :param cur_page: **参数解释：**  当前页。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type cur_page: int
-        :param page_size: 每页大小。
+        :param page_size: **参数解释：**  每页大小。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type page_size: int
-        :param total_rows: 总行数。
+        :param total_rows: **参数解释：**  总行数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type total_rows: int
-        :param total_pages: 总页数。
+        :param total_pages: **参数解释：**  总页数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type total_pages: int
         """
         
@@ -66,7 +66,7 @@ class PageInfoViewDTO:
     def cur_page(self):
         """Gets the cur_page of this PageInfoViewDTO.
 
-        当前页。
+        **参数解释：**  当前页。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The cur_page of this PageInfoViewDTO.
         :rtype: int
@@ -77,7 +77,7 @@ class PageInfoViewDTO:
     def cur_page(self, cur_page):
         """Sets the cur_page of this PageInfoViewDTO.
 
-        当前页。
+        **参数解释：**  当前页。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param cur_page: The cur_page of this PageInfoViewDTO.
         :type cur_page: int
@@ -88,7 +88,7 @@ class PageInfoViewDTO:
     def page_size(self):
         """Gets the page_size of this PageInfoViewDTO.
 
-        每页大小。
+        **参数解释：**  每页大小。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The page_size of this PageInfoViewDTO.
         :rtype: int
@@ -99,7 +99,7 @@ class PageInfoViewDTO:
     def page_size(self, page_size):
         """Sets the page_size of this PageInfoViewDTO.
 
-        每页大小。
+        **参数解释：**  每页大小。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param page_size: The page_size of this PageInfoViewDTO.
         :type page_size: int
@@ -110,7 +110,7 @@ class PageInfoViewDTO:
     def total_rows(self):
         """Gets the total_rows of this PageInfoViewDTO.
 
-        总行数。
+        **参数解释：**  总行数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The total_rows of this PageInfoViewDTO.
         :rtype: int
@@ -121,7 +121,7 @@ class PageInfoViewDTO:
     def total_rows(self, total_rows):
         """Sets the total_rows of this PageInfoViewDTO.
 
-        总行数。
+        **参数解释：**  总行数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param total_rows: The total_rows of this PageInfoViewDTO.
         :type total_rows: int
@@ -132,7 +132,7 @@ class PageInfoViewDTO:
     def total_pages(self):
         """Gets the total_pages of this PageInfoViewDTO.
 
-        总页数。
+        **参数解释：**  总页数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The total_pages of this PageInfoViewDTO.
         :rtype: int
@@ -143,7 +143,7 @@ class PageInfoViewDTO:
     def total_pages(self, total_pages):
         """Sets the total_pages of this PageInfoViewDTO.
 
-        总页数。
+        **参数解释：**  总页数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param total_pages: The total_pages of this PageInfoViewDTO.
         :type total_pages: int

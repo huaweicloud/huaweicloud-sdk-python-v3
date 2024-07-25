@@ -22,6 +22,7 @@ class AlertDetail:
         'dataclass_ref': 'AlertDetailDataclassRef',
         'format_version': 'int',
         'id': 'str',
+        'type': 'str',
         'project_id': 'str',
         'update_time': 'str',
         'version': 'int',
@@ -34,13 +35,14 @@ class AlertDetail:
         'dataclass_ref': 'dataclass_ref',
         'format_version': 'format_version',
         'id': 'id',
+        'type': 'type',
         'project_id': 'project_id',
         'update_time': 'update_time',
         'version': 'version',
         'workspace_id': 'workspace_id'
     }
 
-    def __init__(self, create_time=None, data_object=None, dataclass_ref=None, format_version=None, id=None, project_id=None, update_time=None, version=None, workspace_id=None):
+    def __init__(self, create_time=None, data_object=None, dataclass_ref=None, format_version=None, id=None, type=None, project_id=None, update_time=None, version=None, workspace_id=None):
         """AlertDetail
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class AlertDetail:
         :type format_version: int
         :param id: 事件唯一标识，UUID格式，最大36个字符
         :type id: str
+        :param type: 数据类型
+        :type type: str
         :param project_id: 当前项目的id
         :type project_id: str
         :param update_time: 更新时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
@@ -72,6 +76,7 @@ class AlertDetail:
         self._dataclass_ref = None
         self._format_version = None
         self._id = None
+        self._type = None
         self._project_id = None
         self._update_time = None
         self._version = None
@@ -88,6 +93,8 @@ class AlertDetail:
             self.format_version = format_version
         if id is not None:
             self.id = id
+        if type is not None:
+            self.type = type
         if project_id is not None:
             self.project_id = project_id
         if update_time is not None:
@@ -198,6 +205,28 @@ class AlertDetail:
         :type id: str
         """
         self._id = id
+
+    @property
+    def type(self):
+        """Gets the type of this AlertDetail.
+
+        数据类型
+
+        :return: The type of this AlertDetail.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this AlertDetail.
+
+        数据类型
+
+        :param type: The type of this AlertDetail.
+        :type type: str
+        """
+        self._type = type
 
     @property
     def project_id(self):

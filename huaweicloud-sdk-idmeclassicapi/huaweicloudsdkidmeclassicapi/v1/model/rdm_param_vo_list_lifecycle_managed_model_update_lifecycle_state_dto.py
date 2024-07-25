@@ -31,9 +31,9 @@ class RDMParamVOListLifecycleManagedModelUpdateLifecycleStateDTO:
 
         The model defined in huaweicloud sdk
 
-        :param params: 参数对象。
+        :param params: **参数解释：**  迭代版本。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type params: list[:class:`huaweicloudsdkidmeclassicapi.v1.LifecycleManagedModelUpdateLifecycleStateDTO`]
-        :param application_id: 应用ID。
+        :param application_id: **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。 
         :type application_id: str
         """
         
@@ -52,7 +52,7 @@ class RDMParamVOListLifecycleManagedModelUpdateLifecycleStateDTO:
     def params(self):
         """Gets the params of this RDMParamVOListLifecycleManagedModelUpdateLifecycleStateDTO.
 
-        参数对象。
+        **参数解释：**  迭代版本。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The params of this RDMParamVOListLifecycleManagedModelUpdateLifecycleStateDTO.
         :rtype: list[:class:`huaweicloudsdkidmeclassicapi.v1.LifecycleManagedModelUpdateLifecycleStateDTO`]
@@ -63,7 +63,7 @@ class RDMParamVOListLifecycleManagedModelUpdateLifecycleStateDTO:
     def params(self, params):
         """Sets the params of this RDMParamVOListLifecycleManagedModelUpdateLifecycleStateDTO.
 
-        参数对象。
+        **参数解释：**  迭代版本。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param params: The params of this RDMParamVOListLifecycleManagedModelUpdateLifecycleStateDTO.
         :type params: list[:class:`huaweicloudsdkidmeclassicapi.v1.LifecycleManagedModelUpdateLifecycleStateDTO`]
@@ -74,7 +74,7 @@ class RDMParamVOListLifecycleManagedModelUpdateLifecycleStateDTO:
     def application_id(self):
         """Gets the application_id of this RDMParamVOListLifecycleManagedModelUpdateLifecycleStateDTO.
 
-        应用ID。
+        **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。 
 
         :return: The application_id of this RDMParamVOListLifecycleManagedModelUpdateLifecycleStateDTO.
         :rtype: str
@@ -85,7 +85,7 @@ class RDMParamVOListLifecycleManagedModelUpdateLifecycleStateDTO:
     def application_id(self, application_id):
         """Sets the application_id of this RDMParamVOListLifecycleManagedModelUpdateLifecycleStateDTO.
 
-        应用ID。
+        **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。 
 
         :param application_id: The application_id of this RDMParamVOListLifecycleManagedModelUpdateLifecycleStateDTO.
         :type application_id: str

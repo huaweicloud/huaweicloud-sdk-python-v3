@@ -31,9 +31,9 @@ class PersistObjectIdsModifierDTO:
 
         The model defined in huaweicloud sdk
 
-        :param ids: 数据实例ID列表。
+        :param ids: **参数解释：**  数据实例ID列表。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type ids: list[str]
-        :param modifier: 修改人。
+        :param modifier: **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type modifier: str
         """
         
@@ -51,7 +51,7 @@ class PersistObjectIdsModifierDTO:
     def ids(self):
         """Gets the ids of this PersistObjectIdsModifierDTO.
 
-        数据实例ID列表。
+        **参数解释：**  数据实例ID列表。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The ids of this PersistObjectIdsModifierDTO.
         :rtype: list[str]
@@ -62,7 +62,7 @@ class PersistObjectIdsModifierDTO:
     def ids(self, ids):
         """Sets the ids of this PersistObjectIdsModifierDTO.
 
-        数据实例ID列表。
+        **参数解释：**  数据实例ID列表。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param ids: The ids of this PersistObjectIdsModifierDTO.
         :type ids: list[str]
@@ -73,7 +73,7 @@ class PersistObjectIdsModifierDTO:
     def modifier(self):
         """Gets the modifier of this PersistObjectIdsModifierDTO.
 
-        修改人。
+        **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The modifier of this PersistObjectIdsModifierDTO.
         :rtype: str
@@ -84,7 +84,7 @@ class PersistObjectIdsModifierDTO:
     def modifier(self, modifier):
         """Sets the modifier of this PersistObjectIdsModifierDTO.
 
-        修改人。
+        **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param modifier: The modifier of this PersistObjectIdsModifierDTO.
         :type modifier: str

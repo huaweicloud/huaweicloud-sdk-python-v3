@@ -31,9 +31,9 @@ class BatchOperateChildDTO:
 
         The model defined in huaweicloud sdk
 
-        :param child_list: 子节点实例ID列表。
+        :param child_list: **参数解释：**  子节点实例ID列表。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
         :type child_list: list[str]
-        :param parent_id: 父节点实例ID。
+        :param parent_id: **参数解释：**  父节点实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
         :type parent_id: str
         """
         
@@ -50,7 +50,7 @@ class BatchOperateChildDTO:
     def child_list(self):
         """Gets the child_list of this BatchOperateChildDTO.
 
-        子节点实例ID列表。
+        **参数解释：**  子节点实例ID列表。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :return: The child_list of this BatchOperateChildDTO.
         :rtype: list[str]
@@ -61,7 +61,7 @@ class BatchOperateChildDTO:
     def child_list(self, child_list):
         """Sets the child_list of this BatchOperateChildDTO.
 
-        子节点实例ID列表。
+        **参数解释：**  子节点实例ID列表。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :param child_list: The child_list of this BatchOperateChildDTO.
         :type child_list: list[str]
@@ -72,7 +72,7 @@ class BatchOperateChildDTO:
     def parent_id(self):
         """Gets the parent_id of this BatchOperateChildDTO.
 
-        父节点实例ID。
+        **参数解释：**  父节点实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :return: The parent_id of this BatchOperateChildDTO.
         :rtype: str
@@ -83,7 +83,7 @@ class BatchOperateChildDTO:
     def parent_id(self, parent_id):
         """Sets the parent_id of this BatchOperateChildDTO.
 
-        父节点实例ID。
+        **参数解释：**  父节点实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :param parent_id: The parent_id of this BatchOperateChildDTO.
         :type parent_id: str

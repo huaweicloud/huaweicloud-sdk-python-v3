@@ -169,7 +169,7 @@ class ApigClient(Client):
     def add_eip_v2(self, request):
         """实例更新或绑定EIP
 
-        实例更新或绑定EIP
+        实例更新或绑定EIP(仅当实例为LVS类型时支持)
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1693,6 +1693,73 @@ class ApigClient(Client):
 
         return http_info
 
+    def create_orchestration(self, request):
+        """创建编排规则
+
+        创建编排规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateOrchestration
+        :type request: :class:`huaweicloudsdkapig.v2.CreateOrchestrationRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.CreateOrchestrationResponse`
+        """
+        http_info = self._create_orchestration_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_orchestration_invoker(self, request):
+        http_info = self._create_orchestration_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_orchestration_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/orchestrations",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateOrchestrationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_order(self, request):
         """创建专享版实例（包周期）
 
@@ -2990,6 +3057,73 @@ class ApigClient(Client):
 
         return http_info
 
+    def delete_orchestration(self, request):
+        """删除编排规则
+
+        删除编排规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteOrchestration
+        :type request: :class:`huaweicloudsdkapig.v2.DeleteOrchestrationRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.DeleteOrchestrationResponse`
+        """
+        http_info = self._delete_orchestration_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_orchestration_invoker(self, request):
+        http_info = self._delete_orchestration_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_orchestration_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/orchestrations/{orchestration_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteOrchestrationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'orchestration_id' in local_var_params:
+            path_params['orchestration_id'] = local_var_params['orchestration_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_plugin(self, request):
         """删除插件
 
@@ -3680,7 +3814,7 @@ class ApigClient(Client):
     def export_api_definitions_async(self, request):
         """异步导出API
 
-        导出分组下API的定义信息。导出文件内容符合swagger标准规范，API网关自定义扩展字段请参考《API网关开发指南》的“导入导出API：扩展定义”章节。
+        导出分组下API的定义信息。导出文件内容符合swagger标准规范，API网关自定义扩展字段请参考《API网关用户指南》的“导入导出API：扩展定义”章节。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3749,7 +3883,7 @@ class ApigClient(Client):
     def import_api_definitions_async(self, request):
         """异步导入API
 
-        导入API。导入文件内容需要符合swagger标准规范，API网关自定义扩展字段请参考《API网关开发指南》的“导入导出API：扩展定义”章节。
+        导入API。导入文件内容需要符合swagger标准规范，API网关自定义扩展字段请参考《API网关用户指南》的“导入导出API：扩展定义”章节。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5702,6 +5836,75 @@ class ApigClient(Client):
 
         return http_info
 
+    def list_instances_by_tags(self, request):
+        """通过标签查询实例列表
+
+        通过标签查询实例列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListInstancesByTags
+        :type request: :class:`huaweicloudsdkapig.v2.ListInstancesByTagsRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.ListInstancesByTagsResponse`
+        """
+        http_info = self._list_instances_by_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_instances_by_tags_invoker(self, request):
+        http_info = self._list_instances_by_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_instances_by_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/resource-instances/filter",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstancesByTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_instances_v2(self, request):
         """查询专享版实例列表
 
@@ -5963,6 +6166,159 @@ class ApigClient(Client):
             query_params.append(('period', local_var_params['period']))
         if 'filter' in local_var_params:
             query_params.append(('filter', local_var_params['filter']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_orchestration_attached_apis(self, request):
+        """查询编排规则绑定的API
+
+        查询指定插件下绑定的API信息
+        - 用于查询指定插件下已经绑定的API列表信息
+        - 支持分页返回
+        - 支持API名称模糊查询
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListOrchestrationAttachedApis
+        :type request: :class:`huaweicloudsdkapig.v2.ListOrchestrationAttachedApisRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.ListOrchestrationAttachedApisResponse`
+        """
+        http_info = self._list_orchestration_attached_apis_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_orchestration_attached_apis_invoker(self, request):
+        http_info = self._list_orchestration_attached_apis_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_orchestration_attached_apis_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/orchestrations/{orchestration_id}/attached-apis",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOrchestrationAttachedApisResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'orchestration_id' in local_var_params:
+            path_params['orchestration_id'] = local_var_params['orchestration_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'api_name' in local_var_params:
+            query_params.append(('api_name', local_var_params['api_name']))
+        if 'api_id' in local_var_params:
+            query_params.append(('api_id', local_var_params['api_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_orchestrations(self, request):
+        """查看编排规则列表
+
+        查看编排规则列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListOrchestrations
+        :type request: :class:`huaweicloudsdkapig.v2.ListOrchestrationsRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.ListOrchestrationsResponse`
+        """
+        http_info = self._list_orchestrations_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_orchestrations_invoker(self, request):
+        http_info = self._list_orchestrations_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_orchestrations_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/orchestrations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOrchestrationsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'orchestration_name' in local_var_params:
+            query_params.append(('orchestration_name', local_var_params['orchestration_name']))
+        if 'precise_search' in local_var_params:
+            query_params.append(('precise_search', local_var_params['precise_search']))
+        if 'orchestration_id' in local_var_params:
+            query_params.append(('orchestration_id', local_var_params['orchestration_id']))
 
         header_params = {}
 
@@ -7895,6 +8251,73 @@ class ApigClient(Client):
 
         return http_info
 
+    def show_details_of_orchestration(self, request):
+        """查询编排规则详情
+
+        查询编排规则详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowDetailsOfOrchestration
+        :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfOrchestrationRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.ShowDetailsOfOrchestrationResponse`
+        """
+        http_info = self._show_details_of_orchestration_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_details_of_orchestration_invoker(self, request):
+        http_info = self._show_details_of_orchestration_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_details_of_orchestration_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/orchestrations/{orchestration_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailsOfOrchestrationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'orchestration_id' in local_var_params:
+            path_params['orchestration_id'] = local_var_params['orchestration_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_details_of_request_throttling_policy_v2(self, request):
         """查看流控策略详情
 
@@ -7948,6 +8371,71 @@ class ApigClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_instances_num_by_tags(self, request):
+        """查询包含指定标签的实例数量
+
+        查询包含指定标签的实例数量。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowInstancesNumByTags
+        :type request: :class:`huaweicloudsdkapig.v2.ShowInstancesNumByTagsRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.ShowInstancesNumByTagsResponse`
+        """
+        http_info = self._show_instances_num_by_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_instances_num_by_tags_invoker(self, request):
+        http_info = self._show_instances_num_by_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_instances_num_by_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/resource-instances/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInstancesNumByTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -8893,6 +9381,75 @@ class ApigClient(Client):
         path_params = {}
         if 'instance_id' in local_var_params:
             path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_orchestration(self, request):
+        """更新编排规则
+
+        更新编排规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateOrchestration
+        :type request: :class:`huaweicloudsdkapig.v2.UpdateOrchestrationRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.UpdateOrchestrationResponse`
+        """
+        http_info = self._update_orchestration_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_orchestration_invoker(self, request):
+        http_info = self._update_orchestration_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_orchestration_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/orchestrations/{orchestration_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateOrchestrationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'orchestration_id' in local_var_params:
+            path_params['orchestration_id'] = local_var_params['orchestration_id']
 
         query_params = []
 
@@ -12370,7 +12927,7 @@ class ApigClient(Client):
     def export_api_definitions_v2(self, request):
         """导出API
 
-        导出分组下API的定义信息。导出文件内容符合swagger标准规范，API网关自定义扩展字段请参考《API网关开发指南》的“导入导出API：扩展定义”章节。
+        导出分组下API的定义信息。导出文件内容符合swagger标准规范，API网关自定义扩展字段请参考《API网关用户指南》的“导入导出API：扩展定义”章节。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -12439,7 +12996,7 @@ class ApigClient(Client):
     def import_api_definitions_v2(self, request):
         """导入API
 
-        导入API。导入文件内容需要符合swagger标准规范，API网关自定义扩展字段请参考《API网关开发指南》的“导入导出API：扩展定义”章节。
+        导入API。导入文件内容需要符合swagger标准规范，API网关自定义扩展字段请参考《API网关用户指南》的“导入导出API：扩展定义”章节。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -13208,7 +13765,7 @@ class ApigClient(Client):
 
         为指定的VPC通道添加后端实例
         
-        若指定地址的后端实例已存在，则更新对应后端实例信息。若请求体中包含多个重复地址的后端实例定义，则使用第一个定义。
+        如果指定地址的后端实例已存在，则更新对应后端实例信息。如果请求体中包含多个重复地址的后端实例定义，则使用第一个定义。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -13417,7 +13974,7 @@ class ApigClient(Client):
 
         在APIG中创建VPC通道后端服务器组，VPC通道后端实例可以选择是否关联后端实例服务器组，以便管理后端服务器节点。
         
-        若指定名称的后端服务器组已存在，则更新对应后端服务器组信息。若请求体中包含多个重复名称的后端服务器定义，则使用第一个定义。
+        如果指定名称的后端服务器组已存在，则更新对应后端服务器组信息。如果请求体中包含多个重复名称的后端服务器定义，则使用第一个定义。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -14136,7 +14693,7 @@ class ApigClient(Client):
     def update_backend_instances_v2(self, request):
         """更新后端实例
 
-        更新指定的VPC通道的后端实例。更新时，使用传入的请求参数对对应云服务组的后端实例进行全量覆盖修改。若未指定修改的云服务器组，则进行全量覆盖。
+        更新指定的VPC通道的后端实例。更新时，使用传入的请求参数对对应云服务组的后端实例进行全量覆盖修改。如果未指定修改的云服务器组，则进行全量覆盖。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -14347,9 +14904,9 @@ class ApigClient(Client):
 
         更新指定VPC通道的参数
         
-        使用传入的后端实例列表对VPC通道进行全量覆盖，若后端实例列表为空，则会全量删除已有的后端实例；
+        使用传入的后端实例列表对VPC通道进行全量覆盖，如果后端实例列表为空，则会全量删除已有的后端实例；
         
-        使用传入的后端服务器组列表对VPC通道进行全量覆盖，若后端服务器组列表为空，则会全量删除已有的服务器组；
+        使用传入的后端服务器组列表对VPC通道进行全量覆盖，如果后端服务器组列表为空，则会全量删除已有的服务器组；
         
         Please refer to HUAWEI cloud API Explorer for details.
 

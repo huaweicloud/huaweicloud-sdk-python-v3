@@ -24,10 +24,10 @@ class ListUsingPostRequest:
         'start_index': 'int',
         'total_pages': 'int',
         'total_rows': 'int',
-        'identifier': 'str',
-        'model_name': 'str',
         'page_size_path': 'int',
         'cur_page_path': 'int',
+        'identifier': 'str',
+        'model_name': 'str',
         'body': 'RDMParamVOQueryRequestVo'
     }
 
@@ -39,40 +39,40 @@ class ListUsingPostRequest:
         'start_index': 'startIndex',
         'total_pages': 'totalPages',
         'total_rows': 'totalRows',
-        'identifier': 'identifier',
-        'model_name': 'modelName',
         'page_size_path': 'pageSizePath',
         'cur_page_path': 'curPagePath',
+        'identifier': 'identifier',
+        'model_name': 'modelName',
         'body': 'body'
     }
 
-    def __init__(self, cur_page=None, end_index=None, max_page_size=None, page_size=None, start_index=None, total_pages=None, total_rows=None, identifier=None, model_name=None, page_size_path=None, cur_page_path=None, body=None):
+    def __init__(self, cur_page=None, end_index=None, max_page_size=None, page_size=None, start_index=None, total_pages=None, total_rows=None, page_size_path=None, cur_page_path=None, identifier=None, model_name=None, body=None):
         """ListUsingPostRequest
 
         The model defined in huaweicloud sdk
 
-        :param cur_page: 当前页。
+        :param cur_page: **参数解释：**  当前页。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1。 
         :type cur_page: int
-        :param end_index: 结束索引。
+        :param end_index: **参数解释：**  结束索引。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
         :type end_index: int
-        :param max_page_size: 最大分页数。
+        :param max_page_size: **参数解释：**  最大分页数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1000。 
         :type max_page_size: int
-        :param page_size: 每页大小。
+        :param page_size: **参数解释：**  每页大小。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1000。 
         :type page_size: int
-        :param start_index: 起始索引。
+        :param start_index: **参数解释：**  起始索引。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
         :type start_index: int
-        :param total_pages: 总页数。
+        :param total_pages: **参数解释：**  总页数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
         :type total_pages: int
-        :param total_rows: 总行数。
+        :param total_rows: **参数解释：**  总行数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
         :type total_rows: int
-        :param identifier: 应用ID。
-        :type identifier: str
-        :param model_name: 数据模型的英文名称。
-        :type model_name: str
-        :param page_size_path: 分页大小（路径参数）。
+        :param page_size_path: **参数解释：**  分页大小（路径参数）。  **约束限制：**  不涉及。  **取值范围：**  1-1000。  **默认取值：**  不涉及。 
         :type page_size_path: int
-        :param cur_page_path: 当前页数（路径参数）。
+        :param cur_page_path: **参数解释：**  当前页数（路径参数）。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1。 
         :type cur_page_path: int
+        :param identifier: **参数解释：**  应用唯一标识。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
+        :type identifier: str
+        :param model_name: **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、\&quot;_\&quot;，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
+        :type model_name: str
         :param body: Body of the ListUsingPostRequest
         :type body: :class:`huaweicloudsdkidmeclassicapi.v1.RDMParamVOQueryRequestVo`
         """
@@ -86,10 +86,10 @@ class ListUsingPostRequest:
         self._start_index = None
         self._total_pages = None
         self._total_rows = None
-        self._identifier = None
-        self._model_name = None
         self._page_size_path = None
         self._cur_page_path = None
+        self._identifier = None
+        self._model_name = None
         self._body = None
         self.discriminator = None
 
@@ -107,10 +107,10 @@ class ListUsingPostRequest:
             self.total_pages = total_pages
         if total_rows is not None:
             self.total_rows = total_rows
-        self.identifier = identifier
-        self.model_name = model_name
         self.page_size_path = page_size_path
         self.cur_page_path = cur_page_path
+        self.identifier = identifier
+        self.model_name = model_name
         if body is not None:
             self.body = body
 
@@ -118,7 +118,7 @@ class ListUsingPostRequest:
     def cur_page(self):
         """Gets the cur_page of this ListUsingPostRequest.
 
-        当前页。
+        **参数解释：**  当前页。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1。 
 
         :return: The cur_page of this ListUsingPostRequest.
         :rtype: int
@@ -129,7 +129,7 @@ class ListUsingPostRequest:
     def cur_page(self, cur_page):
         """Sets the cur_page of this ListUsingPostRequest.
 
-        当前页。
+        **参数解释：**  当前页。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1。 
 
         :param cur_page: The cur_page of this ListUsingPostRequest.
         :type cur_page: int
@@ -140,7 +140,7 @@ class ListUsingPostRequest:
     def end_index(self):
         """Gets the end_index of this ListUsingPostRequest.
 
-        结束索引。
+        **参数解释：**  结束索引。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
 
         :return: The end_index of this ListUsingPostRequest.
         :rtype: int
@@ -151,7 +151,7 @@ class ListUsingPostRequest:
     def end_index(self, end_index):
         """Sets the end_index of this ListUsingPostRequest.
 
-        结束索引。
+        **参数解释：**  结束索引。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
 
         :param end_index: The end_index of this ListUsingPostRequest.
         :type end_index: int
@@ -162,7 +162,7 @@ class ListUsingPostRequest:
     def max_page_size(self):
         """Gets the max_page_size of this ListUsingPostRequest.
 
-        最大分页数。
+        **参数解释：**  最大分页数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1000。 
 
         :return: The max_page_size of this ListUsingPostRequest.
         :rtype: int
@@ -173,7 +173,7 @@ class ListUsingPostRequest:
     def max_page_size(self, max_page_size):
         """Sets the max_page_size of this ListUsingPostRequest.
 
-        最大分页数。
+        **参数解释：**  最大分页数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1000。 
 
         :param max_page_size: The max_page_size of this ListUsingPostRequest.
         :type max_page_size: int
@@ -184,7 +184,7 @@ class ListUsingPostRequest:
     def page_size(self):
         """Gets the page_size of this ListUsingPostRequest.
 
-        每页大小。
+        **参数解释：**  每页大小。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1000。 
 
         :return: The page_size of this ListUsingPostRequest.
         :rtype: int
@@ -195,7 +195,7 @@ class ListUsingPostRequest:
     def page_size(self, page_size):
         """Sets the page_size of this ListUsingPostRequest.
 
-        每页大小。
+        **参数解释：**  每页大小。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1000。 
 
         :param page_size: The page_size of this ListUsingPostRequest.
         :type page_size: int
@@ -206,7 +206,7 @@ class ListUsingPostRequest:
     def start_index(self):
         """Gets the start_index of this ListUsingPostRequest.
 
-        起始索引。
+        **参数解释：**  起始索引。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
 
         :return: The start_index of this ListUsingPostRequest.
         :rtype: int
@@ -217,7 +217,7 @@ class ListUsingPostRequest:
     def start_index(self, start_index):
         """Sets the start_index of this ListUsingPostRequest.
 
-        起始索引。
+        **参数解释：**  起始索引。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
 
         :param start_index: The start_index of this ListUsingPostRequest.
         :type start_index: int
@@ -228,7 +228,7 @@ class ListUsingPostRequest:
     def total_pages(self):
         """Gets the total_pages of this ListUsingPostRequest.
 
-        总页数。
+        **参数解释：**  总页数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
 
         :return: The total_pages of this ListUsingPostRequest.
         :rtype: int
@@ -239,7 +239,7 @@ class ListUsingPostRequest:
     def total_pages(self, total_pages):
         """Sets the total_pages of this ListUsingPostRequest.
 
-        总页数。
+        **参数解释：**  总页数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
 
         :param total_pages: The total_pages of this ListUsingPostRequest.
         :type total_pages: int
@@ -250,7 +250,7 @@ class ListUsingPostRequest:
     def total_rows(self):
         """Gets the total_rows of this ListUsingPostRequest.
 
-        总行数。
+        **参数解释：**  总行数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
 
         :return: The total_rows of this ListUsingPostRequest.
         :rtype: int
@@ -261,7 +261,7 @@ class ListUsingPostRequest:
     def total_rows(self, total_rows):
         """Sets the total_rows of this ListUsingPostRequest.
 
-        总行数。
+        **参数解释：**  总行数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
 
         :param total_rows: The total_rows of this ListUsingPostRequest.
         :type total_rows: int
@@ -269,54 +269,10 @@ class ListUsingPostRequest:
         self._total_rows = total_rows
 
     @property
-    def identifier(self):
-        """Gets the identifier of this ListUsingPostRequest.
-
-        应用ID。
-
-        :return: The identifier of this ListUsingPostRequest.
-        :rtype: str
-        """
-        return self._identifier
-
-    @identifier.setter
-    def identifier(self, identifier):
-        """Sets the identifier of this ListUsingPostRequest.
-
-        应用ID。
-
-        :param identifier: The identifier of this ListUsingPostRequest.
-        :type identifier: str
-        """
-        self._identifier = identifier
-
-    @property
-    def model_name(self):
-        """Gets the model_name of this ListUsingPostRequest.
-
-        数据模型的英文名称。
-
-        :return: The model_name of this ListUsingPostRequest.
-        :rtype: str
-        """
-        return self._model_name
-
-    @model_name.setter
-    def model_name(self, model_name):
-        """Sets the model_name of this ListUsingPostRequest.
-
-        数据模型的英文名称。
-
-        :param model_name: The model_name of this ListUsingPostRequest.
-        :type model_name: str
-        """
-        self._model_name = model_name
-
-    @property
     def page_size_path(self):
         """Gets the page_size_path of this ListUsingPostRequest.
 
-        分页大小（路径参数）。
+        **参数解释：**  分页大小（路径参数）。  **约束限制：**  不涉及。  **取值范围：**  1-1000。  **默认取值：**  不涉及。 
 
         :return: The page_size_path of this ListUsingPostRequest.
         :rtype: int
@@ -327,7 +283,7 @@ class ListUsingPostRequest:
     def page_size_path(self, page_size_path):
         """Sets the page_size_path of this ListUsingPostRequest.
 
-        分页大小（路径参数）。
+        **参数解释：**  分页大小（路径参数）。  **约束限制：**  不涉及。  **取值范围：**  1-1000。  **默认取值：**  不涉及。 
 
         :param page_size_path: The page_size_path of this ListUsingPostRequest.
         :type page_size_path: int
@@ -338,7 +294,7 @@ class ListUsingPostRequest:
     def cur_page_path(self):
         """Gets the cur_page_path of this ListUsingPostRequest.
 
-        当前页数（路径参数）。
+        **参数解释：**  当前页数（路径参数）。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1。 
 
         :return: The cur_page_path of this ListUsingPostRequest.
         :rtype: int
@@ -349,12 +305,56 @@ class ListUsingPostRequest:
     def cur_page_path(self, cur_page_path):
         """Sets the cur_page_path of this ListUsingPostRequest.
 
-        当前页数（路径参数）。
+        **参数解释：**  当前页数（路径参数）。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1。 
 
         :param cur_page_path: The cur_page_path of this ListUsingPostRequest.
         :type cur_page_path: int
         """
         self._cur_page_path = cur_page_path
+
+    @property
+    def identifier(self):
+        """Gets the identifier of this ListUsingPostRequest.
+
+        **参数解释：**  应用唯一标识。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
+
+        :return: The identifier of this ListUsingPostRequest.
+        :rtype: str
+        """
+        return self._identifier
+
+    @identifier.setter
+    def identifier(self, identifier):
+        """Sets the identifier of this ListUsingPostRequest.
+
+        **参数解释：**  应用唯一标识。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
+
+        :param identifier: The identifier of this ListUsingPostRequest.
+        :type identifier: str
+        """
+        self._identifier = identifier
+
+    @property
+    def model_name(self):
+        """Gets the model_name of this ListUsingPostRequest.
+
+        **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、\"_\"，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
+
+        :return: The model_name of this ListUsingPostRequest.
+        :rtype: str
+        """
+        return self._model_name
+
+    @model_name.setter
+    def model_name(self, model_name):
+        """Sets the model_name of this ListUsingPostRequest.
+
+        **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、\"_\"，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
+
+        :param model_name: The model_name of this ListUsingPostRequest.
+        :type model_name: str
+        """
+        self._model_name = model_name
 
     @property
     def body(self):

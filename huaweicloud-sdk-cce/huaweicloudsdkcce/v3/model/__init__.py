@@ -44,6 +44,9 @@ from huaweicloudsdkcce.v3.model.batch_create_autopilot_cluster_tags_response imp
 from huaweicloudsdkcce.v3.model.batch_create_cluster_tags_request import BatchCreateClusterTagsRequest
 from huaweicloudsdkcce.v3.model.batch_create_cluster_tags_request_body import BatchCreateClusterTagsRequestBody
 from huaweicloudsdkcce.v3.model.batch_create_cluster_tags_response import BatchCreateClusterTagsResponse
+from huaweicloudsdkcce.v3.model.batch_create_delete_resource_tags import BatchCreateDeleteResourceTags
+from huaweicloudsdkcce.v3.model.batch_create_delete_resource_tags_request import BatchCreateDeleteResourceTagsRequest
+from huaweicloudsdkcce.v3.model.batch_create_delete_resource_tags_response import BatchCreateDeleteResourceTagsResponse
 from huaweicloudsdkcce.v3.model.batch_delete_autopilot_cluster_tags_request import BatchDeleteAutopilotClusterTagsRequest
 from huaweicloudsdkcce.v3.model.batch_delete_autopilot_cluster_tags_response import BatchDeleteAutopilotClusterTagsResponse
 from huaweicloudsdkcce.v3.model.batch_delete_cluster_tags_request import BatchDeleteClusterTagsRequest
@@ -267,6 +270,7 @@ from huaweicloudsdkcce.v3.model.node_pool_spec import NodePoolSpec
 from huaweicloudsdkcce.v3.model.node_pool_spec_update import NodePoolSpecUpdate
 from huaweicloudsdkcce.v3.model.node_pool_status import NodePoolStatus
 from huaweicloudsdkcce.v3.model.node_pool_update import NodePoolUpdate
+from huaweicloudsdkcce.v3.model.node_pool_upgrade_spec import NodePoolUpgradeSpec
 from huaweicloudsdkcce.v3.model.node_priority import NodePriority
 from huaweicloudsdkcce.v3.model.node_public_ip import NodePublicIP
 from huaweicloudsdkcce.v3.model.node_risks import NodeRisks
@@ -275,6 +279,13 @@ from huaweicloudsdkcce.v3.model.node_spec import NodeSpec
 from huaweicloudsdkcce.v3.model.node_spec_update import NodeSpecUpdate
 from huaweicloudsdkcce.v3.model.node_stage_status import NodeStageStatus
 from huaweicloudsdkcce.v3.model.node_status import NodeStatus
+from huaweicloudsdkcce.v3.model.node_template import NodeTemplate
+from huaweicloudsdkcce.v3.model.node_template_extend_param import NodeTemplateExtendParam
+from huaweicloudsdkcce.v3.model.node_template_life_cycle import NodeTemplateLifeCycle
+from huaweicloudsdkcce.v3.model.node_template_login import NodeTemplateLogin
+from huaweicloudsdkcce.v3.model.node_template_login_user_password import NodeTemplateLoginUserPassword
+from huaweicloudsdkcce.v3.model.node_template_runtime_config import NodeTemplateRuntimeConfig
+from huaweicloudsdkcce.v3.model.node_template_runtime_config_runtime import NodeTemplateRuntimeConfigRuntime
 from huaweicloudsdkcce.v3.model.open_api_spec import OpenAPISpec
 from huaweicloudsdkcce.v3.model.open_api_spec_spec import OpenAPISpecSpec
 from huaweicloudsdkcce.v3.model.package_configuration import PackageConfiguration
@@ -321,6 +332,7 @@ from huaweicloudsdkcce.v3.model.remove_node_request import RemoveNodeRequest
 from huaweicloudsdkcce.v3.model.remove_node_response import RemoveNodeResponse
 from huaweicloudsdkcce.v3.model.remove_nodes_spec import RemoveNodesSpec
 from huaweicloudsdkcce.v3.model.remove_nodes_task import RemoveNodesTask
+from huaweicloudsdkcce.v3.model.res_instance_body import ResInstanceBody
 from huaweicloudsdkcce.v3.model.reset_node import ResetNode
 from huaweicloudsdkcce.v3.model.reset_node_list import ResetNodeList
 from huaweicloudsdkcce.v3.model.reset_node_request import ResetNodeRequest
@@ -333,6 +345,7 @@ from huaweicloudsdkcce.v3.model.resource_delete_tag import ResourceDeleteTag
 from huaweicloudsdkcce.v3.model.resource_requirements import ResourceRequirements
 from huaweicloudsdkcce.v3.model.resource_selector import ResourceSelector
 from huaweicloudsdkcce.v3.model.resource_tag import ResourceTag
+from huaweicloudsdkcce.v3.model.resource_tag_body import ResourceTagBody
 from huaweicloudsdkcce.v3.model.retry_autopilot_upgrade_cluster_task_request import RetryAutopilotUpgradeClusterTaskRequest
 from huaweicloudsdkcce.v3.model.retry_autopilot_upgrade_cluster_task_response import RetryAutopilotUpgradeClusterTaskResponse
 from huaweicloudsdkcce.v3.model.retry_upgrade_cluster_task_request import RetryUpgradeClusterTaskRequest
@@ -396,8 +409,12 @@ from huaweicloudsdkcce.v3.model.show_cluster_endpoints_request import ShowCluste
 from huaweicloudsdkcce.v3.model.show_cluster_endpoints_response import ShowClusterEndpointsResponse
 from huaweicloudsdkcce.v3.model.show_cluster_request import ShowClusterRequest
 from huaweicloudsdkcce.v3.model.show_cluster_response import ShowClusterResponse
+from huaweicloudsdkcce.v3.model.show_cluster_support_configuration_request import ShowClusterSupportConfigurationRequest
+from huaweicloudsdkcce.v3.model.show_cluster_support_configuration_response import ShowClusterSupportConfigurationResponse
 from huaweicloudsdkcce.v3.model.show_cluster_upgrade_info_request import ShowClusterUpgradeInfoRequest
 from huaweicloudsdkcce.v3.model.show_cluster_upgrade_info_response import ShowClusterUpgradeInfoResponse
+from huaweicloudsdkcce.v3.model.show_customize_cluster_tags_by_project_id_request import ShowCustomizeClusterTagsByProjectIdRequest
+from huaweicloudsdkcce.v3.model.show_customize_cluster_tags_by_project_id_response import ShowCustomizeClusterTagsByProjectIdResponse
 from huaweicloudsdkcce.v3.model.show_job_request import ShowJobRequest
 from huaweicloudsdkcce.v3.model.show_job_response import ShowJobResponse
 from huaweicloudsdkcce.v3.model.show_node_pool_configuration_details_request import ShowNodePoolConfigurationDetailsRequest
@@ -418,6 +435,11 @@ from huaweicloudsdkcce.v3.model.show_release_history_request import ShowReleaseH
 from huaweicloudsdkcce.v3.model.show_release_history_response import ShowReleaseHistoryResponse
 from huaweicloudsdkcce.v3.model.show_release_request import ShowReleaseRequest
 from huaweicloudsdkcce.v3.model.show_release_response import ShowReleaseResponse
+from huaweicloudsdkcce.v3.model.show_resource_instances import ShowResourceInstances
+from huaweicloudsdkcce.v3.model.show_resource_instances_request import ShowResourceInstancesRequest
+from huaweicloudsdkcce.v3.model.show_resource_instances_response import ShowResourceInstancesResponse
+from huaweicloudsdkcce.v3.model.show_resource_tags_request import ShowResourceTagsRequest
+from huaweicloudsdkcce.v3.model.show_resource_tags_response import ShowResourceTagsResponse
 from huaweicloudsdkcce.v3.model.show_upgrade_cluster_task_request import ShowUpgradeClusterTaskRequest
 from huaweicloudsdkcce.v3.model.show_upgrade_cluster_task_response import ShowUpgradeClusterTaskResponse
 from huaweicloudsdkcce.v3.model.show_upgrade_work_flow_request import ShowUpgradeWorkFlowRequest
@@ -439,6 +461,10 @@ from huaweicloudsdkcce.v3.model.storage_groups import StorageGroups
 from huaweicloudsdkcce.v3.model.storage_selectors import StorageSelectors
 from huaweicloudsdkcce.v3.model.storage_selectors_match_labels import StorageSelectorsMatchLabels
 from huaweicloudsdkcce.v3.model.support_versions import SupportVersions
+from huaweicloudsdkcce.v3.model.sync_node_pool_request import SyncNodePoolRequest
+from huaweicloudsdkcce.v3.model.sync_node_pool_resp import SyncNodePoolResp
+from huaweicloudsdkcce.v3.model.sync_node_pool_response import SyncNodePoolResponse
+from huaweicloudsdkcce.v3.model.tag_filter import TagFilter
 from huaweicloudsdkcce.v3.model.taint import Taint
 from huaweicloudsdkcce.v3.model.task_status import TaskStatus
 from huaweicloudsdkcce.v3.model.task_type import TaskType
@@ -450,6 +476,8 @@ from huaweicloudsdkcce.v3.model.update_autopilot_addon_instance_response import 
 from huaweicloudsdkcce.v3.model.update_autopilot_chart_request import UpdateAutopilotChartRequest
 from huaweicloudsdkcce.v3.model.update_autopilot_chart_request_body import UpdateAutopilotChartRequestBody
 from huaweicloudsdkcce.v3.model.update_autopilot_chart_response import UpdateAutopilotChartResponse
+from huaweicloudsdkcce.v3.model.update_autopilot_cluster_eip_request import UpdateAutopilotClusterEipRequest
+from huaweicloudsdkcce.v3.model.update_autopilot_cluster_eip_response import UpdateAutopilotClusterEipResponse
 from huaweicloudsdkcce.v3.model.update_autopilot_cluster_request import UpdateAutopilotClusterRequest
 from huaweicloudsdkcce.v3.model.update_autopilot_cluster_response import UpdateAutopilotClusterResponse
 from huaweicloudsdkcce.v3.model.update_autopilot_release_request import UpdateAutopilotReleaseRequest
@@ -489,6 +517,9 @@ from huaweicloudsdkcce.v3.model.upgrade_cluster_response import UpgradeClusterRe
 from huaweicloudsdkcce.v3.model.upgrade_feature_gates import UpgradeFeatureGates
 from huaweicloudsdkcce.v3.model.upgrade_info_spec import UpgradeInfoSpec
 from huaweicloudsdkcce.v3.model.upgrade_info_status import UpgradeInfoStatus
+from huaweicloudsdkcce.v3.model.upgrade_node_pool import UpgradeNodePool
+from huaweicloudsdkcce.v3.model.upgrade_node_pool_request import UpgradeNodePoolRequest
+from huaweicloudsdkcce.v3.model.upgrade_node_pool_response import UpgradeNodePoolResponse
 from huaweicloudsdkcce.v3.model.upgrade_path import UpgradePath
 from huaweicloudsdkcce.v3.model.upgrade_response_spec import UpgradeResponseSpec
 from huaweicloudsdkcce.v3.model.upgrade_spec import UpgradeSpec

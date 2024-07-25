@@ -28,7 +28,7 @@ class ShrinkInstanceNodesResponse(SdkResponse):
         'instance_id': 'instanceId',
         'instance_name': 'instanceName',
         'job_id': 'jobId',
-        'order_id': 'order_id'
+        'order_id': 'orderId'
     }
 
     def __init__(self, instance_id=None, instance_name=None, job_id=None, order_id=None):

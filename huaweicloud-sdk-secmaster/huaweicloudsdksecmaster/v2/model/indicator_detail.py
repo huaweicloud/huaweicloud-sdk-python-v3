@@ -43,9 +43,9 @@ class IndicatorDetail:
 
         The model defined in huaweicloud sdk
 
-        :param id: 指标ID
+        :param id: 威胁情报ID
         :type id: str
-        :param name: 指标名称
+        :param name: 威胁情报名称
         :type name: str
         :param data_object: 
         :type data_object: :class:`huaweicloudsdksecmaster.v2.IndicatorDataObjectDetail`
@@ -93,7 +93,7 @@ class IndicatorDetail:
     def id(self):
         """Gets the id of this IndicatorDetail.
 
-        指标ID
+        威胁情报ID
 
         :return: The id of this IndicatorDetail.
         :rtype: str
@@ -104,7 +104,7 @@ class IndicatorDetail:
     def id(self, id):
         """Sets the id of this IndicatorDetail.
 
-        指标ID
+        威胁情报ID
 
         :param id: The id of this IndicatorDetail.
         :type id: str
@@ -115,7 +115,7 @@ class IndicatorDetail:
     def name(self):
         """Gets the name of this IndicatorDetail.
 
-        指标名称
+        威胁情报名称
 
         :return: The name of this IndicatorDetail.
         :rtype: str
@@ -126,7 +126,7 @@ class IndicatorDetail:
     def name(self, name):
         """Sets the name of this IndicatorDetail.
 
-        指标名称
+        威胁情报名称
 
         :param name: The name of this IndicatorDetail.
         :type name: str

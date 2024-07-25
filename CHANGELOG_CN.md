@@ -1,3 +1,409 @@
+# 3.1.107 2024-07-25
+
+### HuaweiCloud SDK APIG
+
+- _新增特性_
+  - 支持以下接口：
+    - `ShowInstancesNumByTags`
+    - `ListInstancesByTags`
+    - `ListOrchestrations`
+    - `CreateOrchestration`
+    - `ShowDetailsOfOrchestration`
+    - `UpdateOrchestration`
+    - `DeleteOrchestration`
+    - `ListOrchestrationAttachedApis`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowPlugin**
+    - 响应参数变更
+      - `+ plugin_type: enum value [proxy_cache]`
+  - **UpdatePlugin**
+    - 请求参数变更
+      - `+ plugin_type: enum value [proxy_cache]`
+    - 响应参数变更
+      - `+ plugin_type: enum value [proxy_cache]`
+  - **ListApiRuntimeDefinitionV2**
+    - 响应参数变更
+      - `+ is_send_fg_body_base64`
+      - `+ req_params.orchestrations`
+      - `+ req_params.location: enum value [COOKIE]`
+  - **ListBackendInstancesV2**
+    - 响应参数变更
+      - `+ members.health_status`
+  - **UpdateBackendInstancesV2**
+    - 响应参数变更
+      - `+ members.health_status`
+  - **AddingBackendInstancesV2**
+    - 响应参数变更
+      - `+ members.health_status`
+  - **CreatePlugin**
+    - 请求参数变更
+      - `+ plugin_type: enum value [proxy_cache]`
+    - 响应参数变更
+      - `+ plugin_type: enum value [proxy_cache]`
+  - **ListPlugins**
+    - 响应参数变更
+      - `+ plugins.plugin_type: enum value [proxy_cache]`
+  - **AttachApiToPlugin**
+    - 响应参数变更
+      - `+ attached_plugins.plugin_type: enum value [proxy_cache]`
+  - **AttachPluginToApi**
+    - 响应参数变更
+      - `+ attached_plugins.plugin_type: enum value [proxy_cache]`
+  - **ListApiAttachedPlugins**
+    - 响应参数变更
+      - `+ plugins.plugin_type: enum value [proxy_cache]`
+  - **ListApiAttachablePlugins**
+    - 响应参数变更
+      - `+ plugins.plugin_type: enum value [proxy_cache]`
+  - **ShowDetailsOfApiV2**
+    - 响应参数变更
+      - `+ is_send_fg_body_base64`
+      - `+ req_params.orchestrations`
+      - `+ req_params.location: enum value [COOKIE]`
+      - `+ policy_functions.conditions.mapped_param_name`
+      - `+ policy_functions.conditions.mapped_param_location`
+  - **UpdateApiV2**
+    - 请求参数变更
+      - `+ is_send_fg_body_base64`
+      - `+ req_params.orchestrations`
+      - `+ req_params.location: enum value [COOKIE]`
+      - `+ policy_mocks.conditions.mapped_param_name`
+      - `+ policy_mocks.conditions.mapped_param_location`
+    - 响应参数变更
+      - `+ is_send_fg_body_base64`
+      - `+ req_params.orchestrations`
+      - `+ req_params.location: enum value [COOKIE]`
+      - `+ policy_functions.conditions.mapped_param_name`
+      - `+ policy_functions.conditions.mapped_param_location`
+  - **ListApiVersionDetailV2**
+    - 响应参数变更
+      - `+ is_send_fg_body_base64`
+      - `+ req_params.orchestrations`
+      - `+ req_params.location: enum value [COOKIE]`
+      - `+ policy_functions.conditions.mapped_param_name`
+      - `+ policy_functions.conditions.mapped_param_location`
+  - **ShowDetailsOfVpcChannelV2**
+    - 响应参数变更
+      - `+ members.health_status`
+      - `- microservice_info.cce_service_info`
+  - **UpdateVpcChannelV2**
+    - 请求参数变更
+      - `- microservice_info.cce_service_info`
+    - 响应参数变更
+      - `- microservice_info.cce_service_info`
+  - **ImportMicroservice**
+    - 请求参数变更
+      - `- cce_service_info`
+  - **CreateApiV2**
+    - 请求参数变更
+      - `+ is_send_fg_body_base64`
+      - `+ req_params.orchestrations`
+      - `+ req_params.location: enum value [COOKIE]`
+      - `+ policy_mocks.conditions.mapped_param_name`
+      - `+ policy_mocks.conditions.mapped_param_location`
+    - 响应参数变更
+      - `+ is_send_fg_body_base64`
+      - `+ req_params.orchestrations`
+      - `+ req_params.location: enum value [COOKIE]`
+      - `+ policy_functions.conditions.mapped_param_name`
+      - `+ policy_functions.conditions.mapped_param_location`
+  - **ListApisV2**
+    - 响应参数变更
+      - `+ apis.is_send_fg_body_base64`
+      - `+ apis.req_params.orchestrations`
+      - `+ apis.req_params.location: enum value [COOKIE]`
+  - **CreateVpcChannelV2**
+    - 请求参数变更
+      - `- microservice_info.cce_service_info`
+    - 响应参数变更
+      - `- microservice_info.cce_service_info`
+  - **ListVpcChannelsV2**
+    - 响应参数变更
+      - `- vpc_channels.microservice_info.cce_service_info`
+
+### HuaweiCloud SDK BSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListCustomerBillsFeeRecords**
+    - 响应参数变更
+      - `+ records.id`
+
+### HuaweiCloud SDK CCE
+
+- _新增特性_
+  - 支持以下接口：
+    - `SyncNodePool`
+    - `UpgradeNodePool`
+    - `ShowClusterSupportConfiguration`
+    - `ShowResourceInstances`
+    - `BatchCreateDeleteResourceTags`
+    - `ShowResourceTags`
+    - `ShowCustomizeClusterTagsByProjectId`
+    - `UpdateAutopilotClusterEip`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListSecurityDynamicMaskingPolicies`
+    - `CreateSecurityDynamicMaskingPolicy`
+    - `ShowSecurityDynamicMaskingPolicy`
+    - `UpdateSecurityDynamicMaskingPolicy`
+    - `BatchDeleteSecurityDynamicMaskingPolicies`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DLI
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateSqlJob**
+    - 请求参数变更
+      - `+ engine_type: enum value [hetuEngine]`
+      - `- engine_type: enum value [trino]`
+
+### HuaweiCloud SDK GES
+
+- _新增特性_
+  - 支持接口`ChangeSecurityGroup`、`ShowBackupDownloadLink`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK iDMEClassicAPI
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateMultiView**
+    - 响应参数变更
+      - `* data.branch.lastUpdateTime: object -> string`
+  - **BatchCreateView**
+    - 响应参数变更
+      - `* data.branch.lastUpdateTime: object -> string`
+  - **CreateView**
+    - 响应参数变更
+      - `* data.branch.lastUpdateTime: object -> string`
+  - **ListHistoryData**
+    - 请求参数变更
+      - `+ endIndex`
+      - `+ maxPageSize`
+      - `+ startIndex`
+      - `- limit`
+      - `- offset`
+
+### HuaweiCloud SDK Moderation
+
+- _新增特性_
+  - 支持接口`BatchCheckImageSync`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RunTextModeration**
+    - 请求参数变更
+      - `+ Enterprise-Project-Id`
+  - **CheckImageModeration**
+    - 请求参数变更
+      - `+ Enterprise-Project-Id`
+
+### HuaweiCloud SDK OCR
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RecognizeCambodianIdCard**
+    - 请求参数变更
+      - `+ detect_reproduce`
+    - 响应参数变更
+      - `+ result.detect_reproduce_result`
+      - `+ result.score_info.reproduce_score`
+
+### HuaweiCloud SDK SecMaster
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListWorkspaces`
+    - `CreateWorkspace`
+    - `CreatePostPaidOrder`
+    - `BatchSearchMetricHits`
+    - `SearchBaseline`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **EnableAlertRule**
+    - 响应参数变更
+      - `+ fail_list`
+      - `+ success_list`
+      - `- rule_id`
+      - `- status`
+  - **DisableAlertRule**
+    - 响应参数变更
+      - `+ fail_list`
+      - `+ success_list`
+      - `- rule_id`
+      - `- status`
+  - **CreatePlaybook**
+    - 请求参数变更
+      - `- enabled`
+  - **CreateDataobjectRelations**
+    - 响应参数变更
+      - `* data: object<DataResponse> -> object<BatchOperateDataobjectResult>`
+  - **ListDataclass**
+    - 请求参数变更
+      - `* offset: number -> int32`
+      - `* limit: number -> int32`
+  - **ListDataclassFields**
+    - 请求参数变更
+      - `* offset: number -> int32`
+      - `* limit: number -> int32`
+  - **ListWorkflows**
+    - 请求参数变更
+      - `* offset: number -> int32`
+      - `* limit: number -> int32`
+  - **ListAlerts**
+    - 响应参数变更
+      - `+ data.data_object.domain_id`
+      - `+ data.data_object.region_id`
+      - `+ data.data_object.labels`
+      - `+ data.data_object.environment.cross_workspace_id`
+      - `+ data.data_object.data_source.company_name`
+      - `+ data.data_object.data_source.product_name`
+      - `+ data.data_object.data_source.product_feature`
+      - `+ data.data_object.data_source.product_module`
+      - `+ data.data_object.severity: enum value [Tips,Low,Medium,High,Fatal]`
+      - `+ data.data_object.alert_type.category`
+      - `+ data.data_object.alert_type.alert_type`
+      - `* data.data_object.network_list.direction: object -> string`
+      - `+ data.data_object.network_list.src_geo.latitude`
+      - `+ data.data_object.network_list.src_geo.longitude`
+      - `+ data.data_object.network_list.src_geo.city_code`
+      - `+ data.data_object.network_list.src_geo.country_code`
+      - `+ data.data_object.network_list.dest_geo.latitude`
+      - `+ data.data_object.network_list.dest_geo.longitude`
+      - `+ data.data_object.network_list.dest_geo.city_code`
+      - `+ data.data_object.network_list.dest_geo.country_code`
+      - `+ data.data_object.resource_list.provider`
+      - `+ data.data_object.verification_state: enum value [Unknown,True_Positive,False_Positive]`
+      - `+ data.data_object.handle_status: enum value [Open,Block,Closed]`
+      - `+ data.data_object.chop_phase: enum value [Prepartion,Detection and Analysis,Containm，Eradication& Recovery,Post-Incident-Activity]`
+      - `+ data.data_object.ipdrr_phase: enum value [Prepartion,Detection and Analysis,Containm，Eradication& Recovery,Post-Incident-Activity]`
+      - `+ data.data_object.ppdr_phase: enum value [Prepartion,Detection and Analysis,Containm，Eradication& Recovery,Post-Incident-Activity]`
+      - `+ data.data_object.close_reason: enum value [False detection,Resolved,Repeated,Other]`
+      - `+ data.data_object.process.process_parent_name`
+      - `+ data.data_object.process.process_parent_path`
+      - `+ data.data_object.process.process_parent_pid`
+      - `+ data.data_object.process.process_parent_uid`
+      - `+ data.data_object.process.process_parent_cmdline`
+      - `+ data.data_object.process.process_child_name`
+      - `+ data.data_object.process.process_child_path`
+      - `+ data.data_object.process.process_child_pid`
+      - `+ data.data_object.process.process_child_uid`
+      - `+ data.data_object.process.process_child_cmdline`
+      - `+ data.data_object.process.process_launche_time`
+      - `+ data.data_object.process.process_terminate_time`
+  - **CreateAlert**
+    - 响应参数变更
+      - `+ data.type`
+  - **ShowAlert**
+    - 响应参数变更
+      - `+ data.type`
+  - **ChangeAlert**
+    - 响应参数变更
+      - `+ data.type`
+  - **ListIndicators**
+    - 请求参数变更
+      - `- name`
+    - 响应参数变更
+      - `- data.data_object.indicator_type.category`
+      - `- data.data_object.indicator_type.layout_id`
+  - **CreateIndicator**
+    - 请求参数变更
+      - `- data_object.data_object`
+      - `- data_object.layout_id`
+      - `- data_object.indicator_type.category`
+      - `- data_object.indicator_type.layout_id`
+    - 响应参数变更
+      - `- data.data_object.indicator_type.category`
+      - `- data.data_object.indicator_type.layout_id`
+  - **ShowIndicatorDetail**
+    - 响应参数变更
+      - `- data.data_object.indicator_type.category`
+      - `- data.data_object.indicator_type.layout_id`
+  - **UpdateIndicator**
+    - 请求参数变更
+      - `- data_object.indicator_type.category`
+      - `- data_object.indicator_type.layout_id`
+    - 响应参数变更
+      - `- data.data_object.indicator_type.category`
+      - `- data.data_object.indicator_type.layout_id`
+  - **DeleteAlertRule**
+    - 响应参数变更
+      - `+ fail_list`
+      - `+ deleted`
+      - `+ success_list`
+      - `- rule_id`
+      - `- delete_time`
+  - **CreateAlertRule**
+    - 请求参数变更
+      - `+ pipe_name`
+      - `+ alert_name`
+      - `+ alert_description`
+      - `+ alert_remediation`
+      - `+ accumulated_times`
+
+### HuaweiCloud SDK Workspace
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListLoginRecordsNew**
+    - 响应参数变更
+      - `+ records.sid`
+      - `+ records.transaction_id`
+      - `+ records.network_rtt`
+      - `+ records.e2e_rtt`
+
+### HuaweiCloud SDK DDM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ExpandInstanceNodes**
+    - 响应参数变更
+      - `+ orderId`
+      - `- order_id`
+  - **ShrinkInstanceNodes**
+    - 响应参数变更
+      - `+ orderId`
+      - `- order_id`
+  - **RestartInstance**
+    - 响应参数变更
+      - `- order_id`
+
 # 3.1.106 2024-07-18
 
 ### HuaweiCloud SDK AS

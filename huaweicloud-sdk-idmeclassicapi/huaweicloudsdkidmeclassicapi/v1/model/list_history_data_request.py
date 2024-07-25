@@ -18,57 +18,61 @@ class ListHistoryDataRequest:
 
     openapi_types = {
         'cur_page': 'int',
+        'end_index': 'int',
+        'max_page_size': 'int',
         'page_size': 'int',
-        'total_rows': 'int',
+        'start_index': 'int',
         'total_pages': 'int',
-        'limit': 'int',
-        'offset': 'int',
-        'identifier': 'str',
-        'model_name': 'str',
+        'total_rows': 'int',
         'page_size_path': 'int',
         'cur_page_path': 'int',
+        'identifier': 'str',
+        'model_name': 'str',
         'body': 'RDMParamVOMongPageRequest'
     }
 
     attribute_map = {
         'cur_page': 'curPage',
+        'end_index': 'endIndex',
+        'max_page_size': 'maxPageSize',
         'page_size': 'pageSize',
-        'total_rows': 'totalRows',
+        'start_index': 'startIndex',
         'total_pages': 'totalPages',
-        'limit': 'limit',
-        'offset': 'offset',
-        'identifier': 'identifier',
-        'model_name': 'modelName',
+        'total_rows': 'totalRows',
         'page_size_path': 'pageSizePath',
         'cur_page_path': 'curPagePath',
+        'identifier': 'identifier',
+        'model_name': 'modelName',
         'body': 'body'
     }
 
-    def __init__(self, cur_page=None, page_size=None, total_rows=None, total_pages=None, limit=None, offset=None, identifier=None, model_name=None, page_size_path=None, cur_page_path=None, body=None):
+    def __init__(self, cur_page=None, end_index=None, max_page_size=None, page_size=None, start_index=None, total_pages=None, total_rows=None, page_size_path=None, cur_page_path=None, identifier=None, model_name=None, body=None):
         """ListHistoryDataRequest
 
         The model defined in huaweicloud sdk
 
-        :param cur_page: 当前页。
+        :param cur_page: **参数解释：**  当前页。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1。 
         :type cur_page: int
-        :param page_size: 每页大小。
+        :param end_index: **参数解释：**  结束索引。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
+        :type end_index: int
+        :param max_page_size: **参数解释：**  最大分页数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1000。 
+        :type max_page_size: int
+        :param page_size: **参数解释：**  每页大小。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1000。 
         :type page_size: int
-        :param total_rows: 总行数。
-        :type total_rows: int
-        :param total_pages: 总页数。
+        :param start_index: **参数解释：**  起始索引。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
+        :type start_index: int
+        :param total_pages: **参数解释：**  总页数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
         :type total_pages: int
-        :param limit: 每页显示条目数量，limit和offset均传正确的数值时才起作用，且优先级高于pageSize和curPage。
-        :type limit: int
-        :param offset: 偏移量，limit和offset均传正确的数值时才起作用，且优先级高于pageSize和curPage。
-        :type offset: int
-        :param identifier: 应用ID。
-        :type identifier: str
-        :param model_name: 数据模型的英文名称。
-        :type model_name: str
-        :param page_size_path: 分页大小（路径参数）。
+        :param total_rows: **参数解释：**  总行数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
+        :type total_rows: int
+        :param page_size_path: **参数解释：**  分页大小（路径参数）。  **约束限制：**  不涉及。  **取值范围：**  1-1000。  **默认取值：**  不涉及。 
         :type page_size_path: int
-        :param cur_page_path: 当前页数（路径参数）。
+        :param cur_page_path: **参数解释：**  当前页数（路径参数）。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1。 
         :type cur_page_path: int
+        :param identifier: **参数解释：**  应用唯一标识。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
+        :type identifier: str
+        :param model_name: **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、\&quot;_\&quot;，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
+        :type model_name: str
         :param body: Body of the ListHistoryDataRequest
         :type body: :class:`huaweicloudsdkidmeclassicapi.v1.RDMParamVOMongPageRequest`
         """
@@ -76,34 +80,37 @@ class ListHistoryDataRequest:
         
 
         self._cur_page = None
+        self._end_index = None
+        self._max_page_size = None
         self._page_size = None
-        self._total_rows = None
+        self._start_index = None
         self._total_pages = None
-        self._limit = None
-        self._offset = None
-        self._identifier = None
-        self._model_name = None
+        self._total_rows = None
         self._page_size_path = None
         self._cur_page_path = None
+        self._identifier = None
+        self._model_name = None
         self._body = None
         self.discriminator = None
 
         if cur_page is not None:
             self.cur_page = cur_page
+        if end_index is not None:
+            self.end_index = end_index
+        if max_page_size is not None:
+            self.max_page_size = max_page_size
         if page_size is not None:
             self.page_size = page_size
-        if total_rows is not None:
-            self.total_rows = total_rows
+        if start_index is not None:
+            self.start_index = start_index
         if total_pages is not None:
             self.total_pages = total_pages
-        if limit is not None:
-            self.limit = limit
-        if offset is not None:
-            self.offset = offset
-        self.identifier = identifier
-        self.model_name = model_name
+        if total_rows is not None:
+            self.total_rows = total_rows
         self.page_size_path = page_size_path
         self.cur_page_path = cur_page_path
+        self.identifier = identifier
+        self.model_name = model_name
         if body is not None:
             self.body = body
 
@@ -111,7 +118,7 @@ class ListHistoryDataRequest:
     def cur_page(self):
         """Gets the cur_page of this ListHistoryDataRequest.
 
-        当前页。
+        **参数解释：**  当前页。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1。 
 
         :return: The cur_page of this ListHistoryDataRequest.
         :rtype: int
@@ -122,7 +129,7 @@ class ListHistoryDataRequest:
     def cur_page(self, cur_page):
         """Sets the cur_page of this ListHistoryDataRequest.
 
-        当前页。
+        **参数解释：**  当前页。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1。 
 
         :param cur_page: The cur_page of this ListHistoryDataRequest.
         :type cur_page: int
@@ -130,10 +137,54 @@ class ListHistoryDataRequest:
         self._cur_page = cur_page
 
     @property
+    def end_index(self):
+        """Gets the end_index of this ListHistoryDataRequest.
+
+        **参数解释：**  结束索引。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
+
+        :return: The end_index of this ListHistoryDataRequest.
+        :rtype: int
+        """
+        return self._end_index
+
+    @end_index.setter
+    def end_index(self, end_index):
+        """Sets the end_index of this ListHistoryDataRequest.
+
+        **参数解释：**  结束索引。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
+
+        :param end_index: The end_index of this ListHistoryDataRequest.
+        :type end_index: int
+        """
+        self._end_index = end_index
+
+    @property
+    def max_page_size(self):
+        """Gets the max_page_size of this ListHistoryDataRequest.
+
+        **参数解释：**  最大分页数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1000。 
+
+        :return: The max_page_size of this ListHistoryDataRequest.
+        :rtype: int
+        """
+        return self._max_page_size
+
+    @max_page_size.setter
+    def max_page_size(self, max_page_size):
+        """Sets the max_page_size of this ListHistoryDataRequest.
+
+        **参数解释：**  最大分页数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1000。 
+
+        :param max_page_size: The max_page_size of this ListHistoryDataRequest.
+        :type max_page_size: int
+        """
+        self._max_page_size = max_page_size
+
+    @property
     def page_size(self):
         """Gets the page_size of this ListHistoryDataRequest.
 
-        每页大小。
+        **参数解释：**  每页大小。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1000。 
 
         :return: The page_size of this ListHistoryDataRequest.
         :rtype: int
@@ -144,7 +195,7 @@ class ListHistoryDataRequest:
     def page_size(self, page_size):
         """Sets the page_size of this ListHistoryDataRequest.
 
-        每页大小。
+        **参数解释：**  每页大小。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1000。 
 
         :param page_size: The page_size of this ListHistoryDataRequest.
         :type page_size: int
@@ -152,32 +203,32 @@ class ListHistoryDataRequest:
         self._page_size = page_size
 
     @property
-    def total_rows(self):
-        """Gets the total_rows of this ListHistoryDataRequest.
+    def start_index(self):
+        """Gets the start_index of this ListHistoryDataRequest.
 
-        总行数。
+        **参数解释：**  起始索引。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
 
-        :return: The total_rows of this ListHistoryDataRequest.
+        :return: The start_index of this ListHistoryDataRequest.
         :rtype: int
         """
-        return self._total_rows
+        return self._start_index
 
-    @total_rows.setter
-    def total_rows(self, total_rows):
-        """Sets the total_rows of this ListHistoryDataRequest.
+    @start_index.setter
+    def start_index(self, start_index):
+        """Sets the start_index of this ListHistoryDataRequest.
 
-        总行数。
+        **参数解释：**  起始索引。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
 
-        :param total_rows: The total_rows of this ListHistoryDataRequest.
-        :type total_rows: int
+        :param start_index: The start_index of this ListHistoryDataRequest.
+        :type start_index: int
         """
-        self._total_rows = total_rows
+        self._start_index = start_index
 
     @property
     def total_pages(self):
         """Gets the total_pages of this ListHistoryDataRequest.
 
-        总页数。
+        **参数解释：**  总页数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
 
         :return: The total_pages of this ListHistoryDataRequest.
         :rtype: int
@@ -188,7 +239,7 @@ class ListHistoryDataRequest:
     def total_pages(self, total_pages):
         """Sets the total_pages of this ListHistoryDataRequest.
 
-        总页数。
+        **参数解释：**  总页数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
 
         :param total_pages: The total_pages of this ListHistoryDataRequest.
         :type total_pages: int
@@ -196,98 +247,32 @@ class ListHistoryDataRequest:
         self._total_pages = total_pages
 
     @property
-    def limit(self):
-        """Gets the limit of this ListHistoryDataRequest.
+    def total_rows(self):
+        """Gets the total_rows of this ListHistoryDataRequest.
 
-        每页显示条目数量，limit和offset均传正确的数值时才起作用，且优先级高于pageSize和curPage。
+        **参数解释：**  总行数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
 
-        :return: The limit of this ListHistoryDataRequest.
+        :return: The total_rows of this ListHistoryDataRequest.
         :rtype: int
         """
-        return self._limit
+        return self._total_rows
 
-    @limit.setter
-    def limit(self, limit):
-        """Sets the limit of this ListHistoryDataRequest.
+    @total_rows.setter
+    def total_rows(self, total_rows):
+        """Sets the total_rows of this ListHistoryDataRequest.
 
-        每页显示条目数量，limit和offset均传正确的数值时才起作用，且优先级高于pageSize和curPage。
+        **参数解释：**  总行数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
 
-        :param limit: The limit of this ListHistoryDataRequest.
-        :type limit: int
+        :param total_rows: The total_rows of this ListHistoryDataRequest.
+        :type total_rows: int
         """
-        self._limit = limit
-
-    @property
-    def offset(self):
-        """Gets the offset of this ListHistoryDataRequest.
-
-        偏移量，limit和offset均传正确的数值时才起作用，且优先级高于pageSize和curPage。
-
-        :return: The offset of this ListHistoryDataRequest.
-        :rtype: int
-        """
-        return self._offset
-
-    @offset.setter
-    def offset(self, offset):
-        """Sets the offset of this ListHistoryDataRequest.
-
-        偏移量，limit和offset均传正确的数值时才起作用，且优先级高于pageSize和curPage。
-
-        :param offset: The offset of this ListHistoryDataRequest.
-        :type offset: int
-        """
-        self._offset = offset
-
-    @property
-    def identifier(self):
-        """Gets the identifier of this ListHistoryDataRequest.
-
-        应用ID。
-
-        :return: The identifier of this ListHistoryDataRequest.
-        :rtype: str
-        """
-        return self._identifier
-
-    @identifier.setter
-    def identifier(self, identifier):
-        """Sets the identifier of this ListHistoryDataRequest.
-
-        应用ID。
-
-        :param identifier: The identifier of this ListHistoryDataRequest.
-        :type identifier: str
-        """
-        self._identifier = identifier
-
-    @property
-    def model_name(self):
-        """Gets the model_name of this ListHistoryDataRequest.
-
-        数据模型的英文名称。
-
-        :return: The model_name of this ListHistoryDataRequest.
-        :rtype: str
-        """
-        return self._model_name
-
-    @model_name.setter
-    def model_name(self, model_name):
-        """Sets the model_name of this ListHistoryDataRequest.
-
-        数据模型的英文名称。
-
-        :param model_name: The model_name of this ListHistoryDataRequest.
-        :type model_name: str
-        """
-        self._model_name = model_name
+        self._total_rows = total_rows
 
     @property
     def page_size_path(self):
         """Gets the page_size_path of this ListHistoryDataRequest.
 
-        分页大小（路径参数）。
+        **参数解释：**  分页大小（路径参数）。  **约束限制：**  不涉及。  **取值范围：**  1-1000。  **默认取值：**  不涉及。 
 
         :return: The page_size_path of this ListHistoryDataRequest.
         :rtype: int
@@ -298,7 +283,7 @@ class ListHistoryDataRequest:
     def page_size_path(self, page_size_path):
         """Sets the page_size_path of this ListHistoryDataRequest.
 
-        分页大小（路径参数）。
+        **参数解释：**  分页大小（路径参数）。  **约束限制：**  不涉及。  **取值范围：**  1-1000。  **默认取值：**  不涉及。 
 
         :param page_size_path: The page_size_path of this ListHistoryDataRequest.
         :type page_size_path: int
@@ -309,7 +294,7 @@ class ListHistoryDataRequest:
     def cur_page_path(self):
         """Gets the cur_page_path of this ListHistoryDataRequest.
 
-        当前页数（路径参数）。
+        **参数解释：**  当前页数（路径参数）。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1。 
 
         :return: The cur_page_path of this ListHistoryDataRequest.
         :rtype: int
@@ -320,12 +305,56 @@ class ListHistoryDataRequest:
     def cur_page_path(self, cur_page_path):
         """Sets the cur_page_path of this ListHistoryDataRequest.
 
-        当前页数（路径参数）。
+        **参数解释：**  当前页数（路径参数）。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1。 
 
         :param cur_page_path: The cur_page_path of this ListHistoryDataRequest.
         :type cur_page_path: int
         """
         self._cur_page_path = cur_page_path
+
+    @property
+    def identifier(self):
+        """Gets the identifier of this ListHistoryDataRequest.
+
+        **参数解释：**  应用唯一标识。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
+
+        :return: The identifier of this ListHistoryDataRequest.
+        :rtype: str
+        """
+        return self._identifier
+
+    @identifier.setter
+    def identifier(self, identifier):
+        """Sets the identifier of this ListHistoryDataRequest.
+
+        **参数解释：**  应用唯一标识。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
+
+        :param identifier: The identifier of this ListHistoryDataRequest.
+        :type identifier: str
+        """
+        self._identifier = identifier
+
+    @property
+    def model_name(self):
+        """Gets the model_name of this ListHistoryDataRequest.
+
+        **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、\"_\"，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
+
+        :return: The model_name of this ListHistoryDataRequest.
+        :rtype: str
+        """
+        return self._model_name
+
+    @model_name.setter
+    def model_name(self, model_name):
+        """Sets the model_name of this ListHistoryDataRequest.
+
+        **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、\"_\"，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
+
+        :param model_name: The model_name of this ListHistoryDataRequest.
+        :type model_name: str
+        """
+        self._model_name = model_name
 
     @property
     def body(self):

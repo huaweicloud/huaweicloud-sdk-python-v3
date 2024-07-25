@@ -44,8 +44,6 @@ class DnsRegion:
                         "https://dns.ap-southeast-4.myhuaweicloud.com")
     AE_AD_1 = Region("ae-ad-1",
                         "https://dns.ae-ad-1.myhuaweicloud.com")
-    EU_WEST_0 = Region("eu-west-0",
-                        "https://dns.eu-west-0.myhuaweicloud.com")
     RU_MOSCOW_1 = Region("ru-moscow-1",
                         "https://dns.ru-moscow-1.myhuaweicloud.com")
 
@@ -69,7 +67,6 @@ class DnsRegion:
         "cn-south-2": CN_SOUTH_2,
         "ap-southeast-4": AP_SOUTHEAST_4,
         "ae-ad-1": AE_AD_1,
-        "eu-west-0": EU_WEST_0,
         "ru-moscow-1": RU_MOSCOW_1,
     }
 

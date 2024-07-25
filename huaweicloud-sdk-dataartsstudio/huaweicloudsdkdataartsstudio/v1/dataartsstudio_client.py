@@ -650,6 +650,73 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def batch_delete_security_dynamic_masking_policies(self, request):
+        """批量删除动态脱敏策略
+
+        批量删除动态脱敏策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteSecurityDynamicMaskingPolicies
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.BatchDeleteSecurityDynamicMaskingPoliciesRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BatchDeleteSecurityDynamicMaskingPoliciesResponse`
+        """
+        http_info = self._batch_delete_security_dynamic_masking_policies_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_security_dynamic_masking_policies_invoker(self, request):
+        http_info = self._batch_delete_security_dynamic_masking_policies_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_security_dynamic_masking_policies_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/security/masking/dynamic/policies/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteSecurityDynamicMaskingPoliciesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_delete_security_permission_set_members(self, request):
         """批量删除权限集成员
 
@@ -3124,6 +3191,73 @@ class DataArtsStudioClient(Client):
             "resource_path": "/v1/{project_id}/security/data-classification/rule",
             "request_type": request.__class__.__name__,
             "response_type": "CreateSecurityDataClassificationRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_security_dynamic_masking_policy(self, request):
+        """创建数据脱敏策略
+
+        创建动态数据脱敏策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateSecurityDynamicMaskingPolicy
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateSecurityDynamicMaskingPolicyRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateSecurityDynamicMaskingPolicyResponse`
+        """
+        http_info = self._create_security_dynamic_masking_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_security_dynamic_masking_policy_invoker(self, request):
+        http_info = self._create_security_dynamic_masking_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_security_dynamic_masking_policy_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/security/masking/dynamic/policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSecurityDynamicMaskingPolicyResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -11223,6 +11357,87 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def list_security_dynamic_masking_policies(self, request):
+        """查询动态数据脱敏策略列表
+
+        查询动态数据脱敏策略列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSecurityDynamicMaskingPolicies
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListSecurityDynamicMaskingPoliciesRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListSecurityDynamicMaskingPoliciesResponse`
+        """
+        http_info = self._list_security_dynamic_masking_policies_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_security_dynamic_masking_policies_invoker(self, request):
+        http_info = self._list_security_dynamic_masking_policies_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_security_dynamic_masking_policies_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/security/masking/dynamic/policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecurityDynamicMaskingPoliciesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'cluster_name' in local_var_params:
+            query_params.append(('cluster_name', local_var_params['cluster_name']))
+        if 'database_name' in local_var_params:
+            query_params.append(('database_name', local_var_params['database_name']))
+        if 'table_name' in local_var_params:
+            query_params.append(('table_name', local_var_params['table_name']))
+        if 'order_by' in local_var_params:
+            query_params.append(('order_by', local_var_params['order_by']))
+        if 'order_by_asc' in local_var_params:
+            query_params.append(('order_by_asc', local_var_params['order_by_asc']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_security_member_sync_tasks(self, request):
         """查询用户同步列表
 
@@ -17943,6 +18158,73 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def show_security_dynamic_masking_policy(self, request):
+        """查询某个脱敏策略的详细信息
+
+        查询某个脱敏策略的详细信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowSecurityDynamicMaskingPolicy
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowSecurityDynamicMaskingPolicyRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowSecurityDynamicMaskingPolicyResponse`
+        """
+        http_info = self._show_security_dynamic_masking_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_security_dynamic_masking_policy_invoker(self, request):
+        http_info = self._show_security_dynamic_masking_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_security_dynamic_masking_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/security/masking/dynamic/policies/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSecurityDynamicMaskingPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_security_member_sync_task(self, request):
         """查询单个用户同步任务
 
@@ -19831,6 +20113,75 @@ class DataArtsStudioClient(Client):
             "resource_path": "/v1/{project_id}/security/data-classification/rule/{id}",
             "request_type": request.__class__.__name__,
             "response_type": "UpdateSecurityDataClassificationRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_security_dynamic_masking_policy(self, request):
+        """更新动态数据脱敏策略
+
+        更新动态数据脱敏策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateSecurityDynamicMaskingPolicy
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.UpdateSecurityDynamicMaskingPolicyRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateSecurityDynamicMaskingPolicyResponse`
+        """
+        http_info = self._update_security_dynamic_masking_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_security_dynamic_masking_policy_invoker(self, request):
+        http_info = self._update_security_dynamic_masking_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_security_dynamic_masking_policy_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/security/masking/dynamic/policies/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSecurityDynamicMaskingPolicyResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

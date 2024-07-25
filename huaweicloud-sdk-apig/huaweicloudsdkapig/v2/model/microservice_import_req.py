@@ -25,8 +25,7 @@ class MicroserviceImportReq:
         'auth_type': 'str',
         'cors': 'bool',
         'cse_info': 'MicroServiceInfoCSECreate',
-        'cce_info': 'MicroServiceInfoCCECreate',
-        'cce_service_info': 'MicroServiceInfoCCEServiceCreate'
+        'cce_info': 'MicroServiceInfoCCECreate'
     }
 
     attribute_map = {
@@ -38,11 +37,10 @@ class MicroserviceImportReq:
         'auth_type': 'auth_type',
         'cors': 'cors',
         'cse_info': 'cse_info',
-        'cce_info': 'cce_info',
-        'cce_service_info': 'cce_service_info'
+        'cce_info': 'cce_info'
     }
 
-    def __init__(self, group_info=None, service_type=None, protocol=None, apis=None, backend_timeout=None, auth_type=None, cors=None, cse_info=None, cce_info=None, cce_service_info=None):
+    def __init__(self, group_info=None, service_type=None, protocol=None, apis=None, backend_timeout=None, auth_type=None, cors=None, cse_info=None, cce_info=None):
         """MicroserviceImportReq
 
         The model defined in huaweicloud sdk
@@ -57,7 +55,7 @@ class MicroserviceImportReq:
         :type apis: list[:class:`huaweicloudsdkapig.v2.MicroserviceApiCreate`]
         :param backend_timeout: APIG请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000，默认5000  单位：毫秒。
         :type backend_timeout: int
-        :param auth_type: API的认证方式，默认无认证[，site暂不支持IAM认证。](tag:Site) - NONE：无认证 - APP：APP认证 - IAM：IAM认证
+        :param auth_type: API的认证方式，默认无认证。 - NONE：无认证 - APP：APP认证 - IAM：IAM认证
         :type auth_type: str
         :param cors: 是否支持跨域，默认不支持 - true：支持 - false：不支持
         :type cors: bool
@@ -65,8 +63,6 @@ class MicroserviceImportReq:
         :type cse_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCSECreate`
         :param cce_info: 
         :type cce_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCCECreate`
-        :param cce_service_info: 
-        :type cce_service_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCCEServiceCreate`
         """
         
         
@@ -80,7 +76,6 @@ class MicroserviceImportReq:
         self._cors = None
         self._cse_info = None
         self._cce_info = None
-        self._cce_service_info = None
         self.discriminator = None
 
         self.group_info = group_info
@@ -98,8 +93,6 @@ class MicroserviceImportReq:
             self.cse_info = cse_info
         if cce_info is not None:
             self.cce_info = cce_info
-        if cce_service_info is not None:
-            self.cce_service_info = cce_service_info
 
     @property
     def group_info(self):
@@ -211,7 +204,7 @@ class MicroserviceImportReq:
     def auth_type(self):
         """Gets the auth_type of this MicroserviceImportReq.
 
-        API的认证方式，默认无认证[，site暂不支持IAM认证。](tag:Site) - NONE：无认证 - APP：APP认证 - IAM：IAM认证
+        API的认证方式，默认无认证。 - NONE：无认证 - APP：APP认证 - IAM：IAM认证
 
         :return: The auth_type of this MicroserviceImportReq.
         :rtype: str
@@ -222,7 +215,7 @@ class MicroserviceImportReq:
     def auth_type(self, auth_type):
         """Sets the auth_type of this MicroserviceImportReq.
 
-        API的认证方式，默认无认证[，site暂不支持IAM认证。](tag:Site) - NONE：无认证 - APP：APP认证 - IAM：IAM认证
+        API的认证方式，默认无认证。 - NONE：无认证 - APP：APP认证 - IAM：IAM认证
 
         :param auth_type: The auth_type of this MicroserviceImportReq.
         :type auth_type: str
@@ -286,24 +279,6 @@ class MicroserviceImportReq:
         :type cce_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCCECreate`
         """
         self._cce_info = cce_info
-
-    @property
-    def cce_service_info(self):
-        """Gets the cce_service_info of this MicroserviceImportReq.
-
-        :return: The cce_service_info of this MicroserviceImportReq.
-        :rtype: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCCEServiceCreate`
-        """
-        return self._cce_service_info
-
-    @cce_service_info.setter
-    def cce_service_info(self, cce_service_info):
-        """Sets the cce_service_info of this MicroserviceImportReq.
-
-        :param cce_service_info: The cce_service_info of this MicroserviceImportReq.
-        :type cce_service_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCCEServiceCreate`
-        """
-        self._cce_service_info = cce_service_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

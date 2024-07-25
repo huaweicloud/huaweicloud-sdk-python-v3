@@ -22,6 +22,7 @@
 
 import json
 import os
+import warnings
 
 import requests
 from requests.exceptions import HTTPError
@@ -64,13 +65,13 @@ class Metadata(object):
             raise exceptions.ClientRequestException(http_err.response.status_code, sdk_error)
 
         if not resp or not resp.content:
-            raise exceptions.ApiValueError("failed to get credential from metadata, metadata is empty")
+            raise exceptions.ApiValueError("Failed to get credential from metadata, metadata is empty")
 
         try:
             credential = json.loads(resp.content).get("credential")
             return credential
         except JSON_DECODE_ERROR as decode_err:
-            raise exceptions.ApiValueError("failed to get credential from metadata: {}".format(decode_err))
+            raise exceptions.ApiValueError("Failed to get credential from metadata: {}".format(decode_err))
 
 
 class Iam(object):
@@ -139,7 +140,7 @@ class Iam(object):
     def create_token_by_id_token(cls, http_client, request):
         resp = http_client.do_request_sync(request)
         if not resp or not resp.content or "X-Subject-Token" not in resp.headers:
-            raise exceptions.ApiValueError("failed to get token by id_token")
+            raise exceptions.ApiValueError("Failed to get token by id_token")
 
         token = resp.headers.get("X-Subject-Token")
         expired_str = json.loads(resp.content).get("token").get("expires_at")
@@ -147,6 +148,8 @@ class Iam(object):
 
     @classmethod
     def keystone_list_projects(cls, http_client, request):
+        warnings.warn("This method is for internal use only and is deprecated. "
+                      "It will be removed in a future version.", DeprecationWarning)
         try:
             http_response = http_client.do_request_sync(request)
         except exceptions.ServiceResponseException as e:
@@ -186,6 +189,8 @@ class Iam(object):
 
     @classmethod
     def keystone_list_auth_domains(cls, http_client, request):
+        warnings.warn("This method is for internal use only and is deprecated. "
+                      "It will be removed in a future version.", DeprecationWarning)
         try:
             http_response = http_client.do_request_sync(request)
         except exceptions.ServiceResponseException as e:

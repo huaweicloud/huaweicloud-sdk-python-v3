@@ -31,9 +31,9 @@ class PersistObjectIdModifierDTO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 唯一标识。
+        :param id: **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
         :type id: str
-        :param modifier: 修改人。
+        :param modifier: **参数解释：**  请求参数对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type modifier: str
         """
         
@@ -51,7 +51,7 @@ class PersistObjectIdModifierDTO:
     def id(self):
         """Gets the id of this PersistObjectIdModifierDTO.
 
-        唯一标识。
+        **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :return: The id of this PersistObjectIdModifierDTO.
         :rtype: str
@@ -62,7 +62,7 @@ class PersistObjectIdModifierDTO:
     def id(self, id):
         """Sets the id of this PersistObjectIdModifierDTO.
 
-        唯一标识。
+        **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :param id: The id of this PersistObjectIdModifierDTO.
         :type id: str
@@ -73,7 +73,7 @@ class PersistObjectIdModifierDTO:
     def modifier(self):
         """Gets the modifier of this PersistObjectIdModifierDTO.
 
-        修改人。
+        **参数解释：**  请求参数对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The modifier of this PersistObjectIdModifierDTO.
         :rtype: str
@@ -84,7 +84,7 @@ class PersistObjectIdModifierDTO:
     def modifier(self, modifier):
         """Sets the modifier of this PersistObjectIdModifierDTO.
 
-        修改人。
+        **参数解释：**  请求参数对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param modifier: The modifier of this PersistObjectIdModifierDTO.
         :type modifier: str

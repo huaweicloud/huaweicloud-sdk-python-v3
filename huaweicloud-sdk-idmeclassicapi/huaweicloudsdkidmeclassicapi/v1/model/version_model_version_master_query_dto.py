@@ -35,13 +35,13 @@ class VersionModelVersionMasterQueryDTO:
 
         The model defined in huaweicloud sdk
 
-        :param decrypt: 是否加密。 - true：加密。 - false：不加密。
+        :param decrypt: **参数解释：**  是否加密。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  false。 
         :type decrypt: bool
-        :param iteration: 迭代版本。如果此参数为空，则返回M-V模型实例的最新版本信息。
+        :param iteration: **参数解释：**  迭代版本。如果此参数为空，则返回M-V模型实例的最新版本信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type iteration: int
-        :param master_id: 主对象ID。
+        :param master_id: **参数解释：**  主对象ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type master_id: str
-        :param version: 版本号。
+        :param version: **参数解释：**  版本号。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type version: str
         """
         
@@ -64,7 +64,7 @@ class VersionModelVersionMasterQueryDTO:
     def decrypt(self):
         """Gets the decrypt of this VersionModelVersionMasterQueryDTO.
 
-        是否加密。 - true：加密。 - false：不加密。
+        **参数解释：**  是否加密。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  false。 
 
         :return: The decrypt of this VersionModelVersionMasterQueryDTO.
         :rtype: bool
@@ -75,7 +75,7 @@ class VersionModelVersionMasterQueryDTO:
     def decrypt(self, decrypt):
         """Sets the decrypt of this VersionModelVersionMasterQueryDTO.
 
-        是否加密。 - true：加密。 - false：不加密。
+        **参数解释：**  是否加密。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  false。 
 
         :param decrypt: The decrypt of this VersionModelVersionMasterQueryDTO.
         :type decrypt: bool
@@ -86,7 +86,7 @@ class VersionModelVersionMasterQueryDTO:
     def iteration(self):
         """Gets the iteration of this VersionModelVersionMasterQueryDTO.
 
-        迭代版本。如果此参数为空，则返回M-V模型实例的最新版本信息。
+        **参数解释：**  迭代版本。如果此参数为空，则返回M-V模型实例的最新版本信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The iteration of this VersionModelVersionMasterQueryDTO.
         :rtype: int
@@ -97,7 +97,7 @@ class VersionModelVersionMasterQueryDTO:
     def iteration(self, iteration):
         """Sets the iteration of this VersionModelVersionMasterQueryDTO.
 
-        迭代版本。如果此参数为空，则返回M-V模型实例的最新版本信息。
+        **参数解释：**  迭代版本。如果此参数为空，则返回M-V模型实例的最新版本信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param iteration: The iteration of this VersionModelVersionMasterQueryDTO.
         :type iteration: int
@@ -108,7 +108,7 @@ class VersionModelVersionMasterQueryDTO:
     def master_id(self):
         """Gets the master_id of this VersionModelVersionMasterQueryDTO.
 
-        主对象ID。
+        **参数解释：**  主对象ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The master_id of this VersionModelVersionMasterQueryDTO.
         :rtype: str
@@ -119,7 +119,7 @@ class VersionModelVersionMasterQueryDTO:
     def master_id(self, master_id):
         """Sets the master_id of this VersionModelVersionMasterQueryDTO.
 
-        主对象ID。
+        **参数解释：**  主对象ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param master_id: The master_id of this VersionModelVersionMasterQueryDTO.
         :type master_id: str
@@ -130,7 +130,7 @@ class VersionModelVersionMasterQueryDTO:
     def version(self):
         """Gets the version of this VersionModelVersionMasterQueryDTO.
 
-        版本号。
+        **参数解释：**  版本号。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The version of this VersionModelVersionMasterQueryDTO.
         :rtype: str
@@ -141,7 +141,7 @@ class VersionModelVersionMasterQueryDTO:
     def version(self, version):
         """Sets the version of this VersionModelVersionMasterQueryDTO.
 
-        版本号。
+        **参数解释：**  版本号。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param version: The version of this VersionModelVersionMasterQueryDTO.
         :type version: str

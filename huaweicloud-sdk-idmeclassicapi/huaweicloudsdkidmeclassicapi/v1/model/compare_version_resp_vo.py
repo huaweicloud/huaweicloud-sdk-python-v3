@@ -31,9 +31,9 @@ class CompareVersionRespVo:
 
         The model defined in huaweicloud sdk
 
-        :param basic_version: 基础版本对象。
+        :param basic_version: **参数解释：**  基础版本对象。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type basic_version: object
-        :param correlation_version: 当前版本对象。
+        :param correlation_version: **参数解释：**  当前版本对象。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type correlation_version: object
         """
         
@@ -52,7 +52,7 @@ class CompareVersionRespVo:
     def basic_version(self):
         """Gets the basic_version of this CompareVersionRespVo.
 
-        基础版本对象。
+        **参数解释：**  基础版本对象。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The basic_version of this CompareVersionRespVo.
         :rtype: object
@@ -63,7 +63,7 @@ class CompareVersionRespVo:
     def basic_version(self, basic_version):
         """Sets the basic_version of this CompareVersionRespVo.
 
-        基础版本对象。
+        **参数解释：**  基础版本对象。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param basic_version: The basic_version of this CompareVersionRespVo.
         :type basic_version: object
@@ -74,7 +74,7 @@ class CompareVersionRespVo:
     def correlation_version(self):
         """Gets the correlation_version of this CompareVersionRespVo.
 
-        当前版本对象。
+        **参数解释：**  当前版本对象。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The correlation_version of this CompareVersionRespVo.
         :rtype: object
@@ -85,7 +85,7 @@ class CompareVersionRespVo:
     def correlation_version(self, correlation_version):
         """Sets the correlation_version of this CompareVersionRespVo.
 
-        当前版本对象。
+        **参数解释：**  当前版本对象。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param correlation_version: The correlation_version of this CompareVersionRespVo.
         :type correlation_version: object

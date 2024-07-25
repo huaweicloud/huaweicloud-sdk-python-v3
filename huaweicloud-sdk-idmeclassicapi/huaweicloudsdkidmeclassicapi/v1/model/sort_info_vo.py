@@ -39,13 +39,13 @@ class SortInfoVo:
 
         :param character_set: 
         :type character_set: :class:`huaweicloudsdkidmeclassicapi.v1.CharacterSetEnum`
-        :param order_by: 按某个字段进行排序。
+        :param order_by: **参数解释：**  按某个字段进行排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type order_by: str
-        :param sort: 排序方向。 - ASC：表示升序。 - DESC：表示降序。
+        :param sort: **参数解释：**  排序方向。  **约束限制：**  不涉及。  **取值范围：**  - ASC：表示升序。 - DESC：表示降序。  **默认取值：**  ASC。 
         :type sort: str
-        :param sort_info: 排序信息。
+        :param sort_info: **参数解释：**  排序信息。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type sort_info: str
-        :param sort_info_order_by: 排序信息字段。
+        :param sort_info_order_by: **参数解释：**  排序信息字段。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type sort_info_order_by: str
         """
         
@@ -91,7 +91,7 @@ class SortInfoVo:
     def order_by(self):
         """Gets the order_by of this SortInfoVo.
 
-        按某个字段进行排序。
+        **参数解释：**  按某个字段进行排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The order_by of this SortInfoVo.
         :rtype: str
@@ -102,7 +102,7 @@ class SortInfoVo:
     def order_by(self, order_by):
         """Sets the order_by of this SortInfoVo.
 
-        按某个字段进行排序。
+        **参数解释：**  按某个字段进行排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param order_by: The order_by of this SortInfoVo.
         :type order_by: str
@@ -113,7 +113,7 @@ class SortInfoVo:
     def sort(self):
         """Gets the sort of this SortInfoVo.
 
-        排序方向。 - ASC：表示升序。 - DESC：表示降序。
+        **参数解释：**  排序方向。  **约束限制：**  不涉及。  **取值范围：**  - ASC：表示升序。 - DESC：表示降序。  **默认取值：**  ASC。 
 
         :return: The sort of this SortInfoVo.
         :rtype: str
@@ -124,7 +124,7 @@ class SortInfoVo:
     def sort(self, sort):
         """Sets the sort of this SortInfoVo.
 
-        排序方向。 - ASC：表示升序。 - DESC：表示降序。
+        **参数解释：**  排序方向。  **约束限制：**  不涉及。  **取值范围：**  - ASC：表示升序。 - DESC：表示降序。  **默认取值：**  ASC。 
 
         :param sort: The sort of this SortInfoVo.
         :type sort: str
@@ -135,7 +135,7 @@ class SortInfoVo:
     def sort_info(self):
         """Gets the sort_info of this SortInfoVo.
 
-        排序信息。
+        **参数解释：**  排序信息。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The sort_info of this SortInfoVo.
         :rtype: str
@@ -146,7 +146,7 @@ class SortInfoVo:
     def sort_info(self, sort_info):
         """Sets the sort_info of this SortInfoVo.
 
-        排序信息。
+        **参数解释：**  排序信息。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param sort_info: The sort_info of this SortInfoVo.
         :type sort_info: str
@@ -157,7 +157,7 @@ class SortInfoVo:
     def sort_info_order_by(self):
         """Gets the sort_info_order_by of this SortInfoVo.
 
-        排序信息字段。
+        **参数解释：**  排序信息字段。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The sort_info_order_by of this SortInfoVo.
         :rtype: str
@@ -168,7 +168,7 @@ class SortInfoVo:
     def sort_info_order_by(self, sort_info_order_by):
         """Sets the sort_info_order_by of this SortInfoVo.
 
-        排序信息字段。
+        **参数解释：**  排序信息字段。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param sort_info_order_by: The sort_info_order_by of this SortInfoVo.
         :type sort_info_order_by: str

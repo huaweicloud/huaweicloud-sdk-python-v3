@@ -19,18 +19,16 @@ class CreatePlaybookInfo:
     openapi_types = {
         'name': 'str',
         'description': 'str',
-        'workspace_id': 'str',
-        'enabled': 'bool'
+        'workspace_id': 'str'
     }
 
     attribute_map = {
         'name': 'name',
         'description': 'description',
-        'workspace_id': 'workspace_id',
-        'enabled': 'enabled'
+        'workspace_id': 'workspace_id'
     }
 
-    def __init__(self, name=None, description=None, workspace_id=None, enabled=None):
+    def __init__(self, name=None, description=None, workspace_id=None):
         """CreatePlaybookInfo
 
         The model defined in huaweicloud sdk
@@ -41,8 +39,6 @@ class CreatePlaybookInfo:
         :type description: str
         :param workspace_id: 工作空间ID
         :type workspace_id: str
-        :param enabled: 是否启用，默认传false
-        :type enabled: bool
         """
         
         
@@ -50,15 +46,12 @@ class CreatePlaybookInfo:
         self._name = None
         self._description = None
         self._workspace_id = None
-        self._enabled = None
         self.discriminator = None
 
         self.name = name
         if description is not None:
             self.description = description
         self.workspace_id = workspace_id
-        if enabled is not None:
-            self.enabled = enabled
 
     @property
     def name(self):
@@ -125,28 +118,6 @@ class CreatePlaybookInfo:
         :type workspace_id: str
         """
         self._workspace_id = workspace_id
-
-    @property
-    def enabled(self):
-        """Gets the enabled of this CreatePlaybookInfo.
-
-        是否启用，默认传false
-
-        :return: The enabled of this CreatePlaybookInfo.
-        :rtype: bool
-        """
-        return self._enabled
-
-    @enabled.setter
-    def enabled(self, enabled):
-        """Sets the enabled of this CreatePlaybookInfo.
-
-        是否启用，默认传false
-
-        :param enabled: The enabled of this CreatePlaybookInfo.
-        :type enabled: bool
-        """
-        self._enabled = enabled
 
     def to_dict(self):
         """Returns the model properties as a dict"""

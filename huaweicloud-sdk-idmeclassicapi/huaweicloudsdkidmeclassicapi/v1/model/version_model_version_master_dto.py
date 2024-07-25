@@ -31,9 +31,9 @@ class VersionModelVersionMasterDTO:
 
         The model defined in huaweicloud sdk
 
-        :param master_id: 主对象ID。
+        :param master_id: **参数解释：**  主对象ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
         :type master_id: str
-        :param version: 版本对象版本号。
+        :param version: **参数解释：**  版本对象版本号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type version: str
         """
         
@@ -51,7 +51,7 @@ class VersionModelVersionMasterDTO:
     def master_id(self):
         """Gets the master_id of this VersionModelVersionMasterDTO.
 
-        主对象ID。
+        **参数解释：**  主对象ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :return: The master_id of this VersionModelVersionMasterDTO.
         :rtype: str
@@ -62,7 +62,7 @@ class VersionModelVersionMasterDTO:
     def master_id(self, master_id):
         """Sets the master_id of this VersionModelVersionMasterDTO.
 
-        主对象ID。
+        **参数解释：**  主对象ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :param master_id: The master_id of this VersionModelVersionMasterDTO.
         :type master_id: str
@@ -73,7 +73,7 @@ class VersionModelVersionMasterDTO:
     def version(self):
         """Gets the version of this VersionModelVersionMasterDTO.
 
-        版本对象版本号。
+        **参数解释：**  版本对象版本号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The version of this VersionModelVersionMasterDTO.
         :rtype: str
@@ -84,7 +84,7 @@ class VersionModelVersionMasterDTO:
     def version(self, version):
         """Sets the version of this VersionModelVersionMasterDTO.
 
-        版本对象版本号。
+        **参数解释：**  版本对象版本号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param version: The version of this VersionModelVersionMasterDTO.
         :type version: str

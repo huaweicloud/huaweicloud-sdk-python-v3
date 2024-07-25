@@ -33,11 +33,11 @@ class GenericLinkTypeDTO:
 
         The model defined in huaweicloud sdk
 
-        :param latest_only: 是否返回源模型数据实例关联的最新版本目标模型数据实例。此参数仅对源/目标模型为M-V模型实体有效。 - true：返回源模型数据实例关联的最新版本的目标模型数据实例。 - false：返回源模型数据实例关联的所有版本的目标模型数据实例。默认为false。
+        :param latest_only: **参数解释：**  是否返回源模型数据实例关联的最新版本目标模型数据实例。此参数仅对源/目标模型为M-V模型实体有效。  **约束限制：**  不涉及。  **取值范围：**  - true：返回源模型数据实例关联的最新版本的目标模型数据实例。 - false：返回源模型数据实例关联的所有版本的目标模型数据实例。默认为false。  **默认取值：**  false。 
         :type latest_only: bool
-        :param source_id: 源模型数据实例的ID。
+        :param source_id: **参数解释：**  源模型数据实例的ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
         :type source_id: str
-        :param target_type: 目标模型的英文名称。
+        :param target_type: **参数解释：**  目标模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type target_type: str
         """
         
@@ -59,7 +59,7 @@ class GenericLinkTypeDTO:
     def latest_only(self):
         """Gets the latest_only of this GenericLinkTypeDTO.
 
-        是否返回源模型数据实例关联的最新版本目标模型数据实例。此参数仅对源/目标模型为M-V模型实体有效。 - true：返回源模型数据实例关联的最新版本的目标模型数据实例。 - false：返回源模型数据实例关联的所有版本的目标模型数据实例。默认为false。
+        **参数解释：**  是否返回源模型数据实例关联的最新版本目标模型数据实例。此参数仅对源/目标模型为M-V模型实体有效。  **约束限制：**  不涉及。  **取值范围：**  - true：返回源模型数据实例关联的最新版本的目标模型数据实例。 - false：返回源模型数据实例关联的所有版本的目标模型数据实例。默认为false。  **默认取值：**  false。 
 
         :return: The latest_only of this GenericLinkTypeDTO.
         :rtype: bool
@@ -70,7 +70,7 @@ class GenericLinkTypeDTO:
     def latest_only(self, latest_only):
         """Sets the latest_only of this GenericLinkTypeDTO.
 
-        是否返回源模型数据实例关联的最新版本目标模型数据实例。此参数仅对源/目标模型为M-V模型实体有效。 - true：返回源模型数据实例关联的最新版本的目标模型数据实例。 - false：返回源模型数据实例关联的所有版本的目标模型数据实例。默认为false。
+        **参数解释：**  是否返回源模型数据实例关联的最新版本目标模型数据实例。此参数仅对源/目标模型为M-V模型实体有效。  **约束限制：**  不涉及。  **取值范围：**  - true：返回源模型数据实例关联的最新版本的目标模型数据实例。 - false：返回源模型数据实例关联的所有版本的目标模型数据实例。默认为false。  **默认取值：**  false。 
 
         :param latest_only: The latest_only of this GenericLinkTypeDTO.
         :type latest_only: bool
@@ -81,7 +81,7 @@ class GenericLinkTypeDTO:
     def source_id(self):
         """Gets the source_id of this GenericLinkTypeDTO.
 
-        源模型数据实例的ID。
+        **参数解释：**  源模型数据实例的ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :return: The source_id of this GenericLinkTypeDTO.
         :rtype: str
@@ -92,7 +92,7 @@ class GenericLinkTypeDTO:
     def source_id(self, source_id):
         """Sets the source_id of this GenericLinkTypeDTO.
 
-        源模型数据实例的ID。
+        **参数解释：**  源模型数据实例的ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :param source_id: The source_id of this GenericLinkTypeDTO.
         :type source_id: str
@@ -103,7 +103,7 @@ class GenericLinkTypeDTO:
     def target_type(self):
         """Gets the target_type of this GenericLinkTypeDTO.
 
-        目标模型的英文名称。
+        **参数解释：**  目标模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The target_type of this GenericLinkTypeDTO.
         :rtype: str
@@ -114,7 +114,7 @@ class GenericLinkTypeDTO:
     def target_type(self, target_type):
         """Sets the target_type of this GenericLinkTypeDTO.
 
-        目标模型的英文名称。
+        **参数解释：**  目标模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param target_type: The target_type of this GenericLinkTypeDTO.
         :type target_type: str

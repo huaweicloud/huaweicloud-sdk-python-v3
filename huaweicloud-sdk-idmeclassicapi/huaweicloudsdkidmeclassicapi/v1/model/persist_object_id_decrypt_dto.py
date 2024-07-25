@@ -31,9 +31,9 @@ class PersistObjectIdDecryptDTO:
 
         The model defined in huaweicloud sdk
 
-        :param decrypt: 是否加密。 - true：加密。 - false：不加密。
+        :param decrypt: **参数解释：**  是否加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  false。 
         :type decrypt: bool
-        :param id: 唯一标识。
+        :param id: **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
         :type id: str
         """
         
@@ -51,7 +51,7 @@ class PersistObjectIdDecryptDTO:
     def decrypt(self):
         """Gets the decrypt of this PersistObjectIdDecryptDTO.
 
-        是否加密。 - true：加密。 - false：不加密。
+        **参数解释：**  是否加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  false。 
 
         :return: The decrypt of this PersistObjectIdDecryptDTO.
         :rtype: bool
@@ -62,7 +62,7 @@ class PersistObjectIdDecryptDTO:
     def decrypt(self, decrypt):
         """Sets the decrypt of this PersistObjectIdDecryptDTO.
 
-        是否加密。 - true：加密。 - false：不加密。
+        **参数解释：**  是否加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  false。 
 
         :param decrypt: The decrypt of this PersistObjectIdDecryptDTO.
         :type decrypt: bool
@@ -73,7 +73,7 @@ class PersistObjectIdDecryptDTO:
     def id(self):
         """Gets the id of this PersistObjectIdDecryptDTO.
 
-        唯一标识。
+        **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :return: The id of this PersistObjectIdDecryptDTO.
         :rtype: str
@@ -84,7 +84,7 @@ class PersistObjectIdDecryptDTO:
     def id(self, id):
         """Sets the id of this PersistObjectIdDecryptDTO.
 
-        唯一标识。
+        **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :param id: The id of this PersistObjectIdDecryptDTO.
         :type id: str

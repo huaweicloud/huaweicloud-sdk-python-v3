@@ -31,9 +31,9 @@ class PersistObjectIdsDecryptDTO:
 
         The model defined in huaweicloud sdk
 
-        :param decrypt: 是否加密。 - true：加密。 - false：不加密。
+        :param decrypt: **参数解释：**  是否加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  false。 
         :type decrypt: bool
-        :param ids: ID列表。
+        :param ids: **参数解释：**  ID列表。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type ids: list[str]
         """
         
@@ -51,7 +51,7 @@ class PersistObjectIdsDecryptDTO:
     def decrypt(self):
         """Gets the decrypt of this PersistObjectIdsDecryptDTO.
 
-        是否加密。 - true：加密。 - false：不加密。
+        **参数解释：**  是否加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  false。 
 
         :return: The decrypt of this PersistObjectIdsDecryptDTO.
         :rtype: bool
@@ -62,7 +62,7 @@ class PersistObjectIdsDecryptDTO:
     def decrypt(self, decrypt):
         """Sets the decrypt of this PersistObjectIdsDecryptDTO.
 
-        是否加密。 - true：加密。 - false：不加密。
+        **参数解释：**  是否加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  false。 
 
         :param decrypt: The decrypt of this PersistObjectIdsDecryptDTO.
         :type decrypt: bool
@@ -73,7 +73,7 @@ class PersistObjectIdsDecryptDTO:
     def ids(self):
         """Gets the ids of this PersistObjectIdsDecryptDTO.
 
-        ID列表。
+        **参数解释：**  ID列表。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The ids of this PersistObjectIdsDecryptDTO.
         :rtype: list[str]
@@ -84,7 +84,7 @@ class PersistObjectIdsDecryptDTO:
     def ids(self, ids):
         """Sets the ids of this PersistObjectIdsDecryptDTO.
 
-        ID列表。
+        **参数解释：**  ID列表。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param ids: The ids of this PersistObjectIdsDecryptDTO.
         :type ids: list[str]

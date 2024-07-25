@@ -37,7 +37,7 @@ class ShowIndicatorDetailRequest:
         :type project_id: str
         :param workspace_id: 工作空间ID
         :type workspace_id: str
-        :param indicator_id: 情报指标ID
+        :param indicator_id: 威胁情报ID
         :type indicator_id: str
         """
         
@@ -100,7 +100,7 @@ class ShowIndicatorDetailRequest:
     def indicator_id(self):
         """Gets the indicator_id of this ShowIndicatorDetailRequest.
 
-        情报指标ID
+        威胁情报ID
 
         :return: The indicator_id of this ShowIndicatorDetailRequest.
         :rtype: str
@@ -111,7 +111,7 @@ class ShowIndicatorDetailRequest:
     def indicator_id(self, indicator_id):
         """Sets the indicator_id of this ShowIndicatorDetailRequest.
 
-        情报指标ID
+        威胁情报ID
 
         :param indicator_id: The indicator_id of this ShowIndicatorDetailRequest.
         :type indicator_id: str

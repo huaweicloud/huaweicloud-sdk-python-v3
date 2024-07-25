@@ -33,11 +33,11 @@ class VersionModelVersionMasterModifierDTO:
 
         The model defined in huaweicloud sdk
 
-        :param master_id: 父模型ID。
+        :param master_id: **参数解释：**  父模型ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
         :type master_id: str
-        :param modifier: 修改人。
+        :param modifier: **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type modifier: str
-        :param version: 版本对象。
+        :param version: **参数解释：**  版本对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type version: str
         """
         
@@ -58,7 +58,7 @@ class VersionModelVersionMasterModifierDTO:
     def master_id(self):
         """Gets the master_id of this VersionModelVersionMasterModifierDTO.
 
-        父模型ID。
+        **参数解释：**  父模型ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :return: The master_id of this VersionModelVersionMasterModifierDTO.
         :rtype: str
@@ -69,7 +69,7 @@ class VersionModelVersionMasterModifierDTO:
     def master_id(self, master_id):
         """Sets the master_id of this VersionModelVersionMasterModifierDTO.
 
-        父模型ID。
+        **参数解释：**  父模型ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :param master_id: The master_id of this VersionModelVersionMasterModifierDTO.
         :type master_id: str
@@ -80,7 +80,7 @@ class VersionModelVersionMasterModifierDTO:
     def modifier(self):
         """Gets the modifier of this VersionModelVersionMasterModifierDTO.
 
-        修改人。
+        **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The modifier of this VersionModelVersionMasterModifierDTO.
         :rtype: str
@@ -91,7 +91,7 @@ class VersionModelVersionMasterModifierDTO:
     def modifier(self, modifier):
         """Sets the modifier of this VersionModelVersionMasterModifierDTO.
 
-        修改人。
+        **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param modifier: The modifier of this VersionModelVersionMasterModifierDTO.
         :type modifier: str
@@ -102,7 +102,7 @@ class VersionModelVersionMasterModifierDTO:
     def version(self):
         """Gets the version of this VersionModelVersionMasterModifierDTO.
 
-        版本对象。
+        **参数解释：**  版本对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The version of this VersionModelVersionMasterModifierDTO.
         :rtype: str
@@ -113,7 +113,7 @@ class VersionModelVersionMasterModifierDTO:
     def version(self, version):
         """Sets the version of this VersionModelVersionMasterModifierDTO.
 
-        版本对象。
+        **参数解释：**  版本对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param version: The version of this VersionModelVersionMasterModifierDTO.
         :type version: str

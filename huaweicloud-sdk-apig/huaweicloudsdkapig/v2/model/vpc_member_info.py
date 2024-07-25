@@ -28,7 +28,8 @@ class VpcMemberInfo:
         'id': 'str',
         'vpc_channel_id': 'str',
         'create_time': 'datetime',
-        'member_group_id': 'str'
+        'member_group_id': 'str',
+        'health_status': 'str'
     }
 
     attribute_map = {
@@ -43,10 +44,11 @@ class VpcMemberInfo:
         'id': 'id',
         'vpc_channel_id': 'vpc_channel_id',
         'create_time': 'create_time',
-        'member_group_id': 'member_group_id'
+        'member_group_id': 'member_group_id',
+        'health_status': 'health_status'
     }
 
-    def __init__(self, host=None, weight=None, is_backup=None, member_group_name=None, status=None, port=None, ecs_id=None, ecs_name=None, id=None, vpc_channel_id=None, create_time=None, member_group_id=None):
+    def __init__(self, host=None, weight=None, is_backup=None, member_group_name=None, status=None, port=None, ecs_id=None, ecs_name=None, id=None, vpc_channel_id=None, create_time=None, member_group_id=None, health_status=None):
         """VpcMemberInfo
 
         The model defined in huaweicloud sdk
@@ -55,7 +57,7 @@ class VpcMemberInfo:
         :type host: str
         :param weight: 权重值。  允许您对后端服务进行评级，权重值越大，转发到该云服务的请求数量越多。
         :type weight: int
-        :param is_backup: 是否备用节点。  开启后对应后端服务为备用节点，仅当非备用节点全部故障时工作。  实例需要升级到对应版本才支持此功能，若不支持请联系技术支持。
+        :param is_backup: 是否备用节点。  开启后对应后端服务为备用节点，仅当非备用节点全部故障时工作。  实例需要升级到对应版本才支持此功能，如果不支持请联系技术支持。
         :type is_backup: bool
         :param member_group_name: 后端服务器组名称。为后端服务地址选择服务器组，便于统一修改对应服务器组的后端地址。
         :type member_group_name: str
@@ -75,6 +77,8 @@ class VpcMemberInfo:
         :type create_time: datetime
         :param member_group_id: 后端服务器组编号
         :type member_group_id: str
+        :param health_status: 负载通道后端实例健康状态，unknown、healthy、unhealthy分别标识未做健康检查、健康、不健康。
+        :type health_status: str
         """
         
         
@@ -91,6 +95,7 @@ class VpcMemberInfo:
         self._vpc_channel_id = None
         self._create_time = None
         self._member_group_id = None
+        self._health_status = None
         self.discriminator = None
 
         if host is not None:
@@ -117,6 +122,8 @@ class VpcMemberInfo:
             self.create_time = create_time
         if member_group_id is not None:
             self.member_group_id = member_group_id
+        if health_status is not None:
+            self.health_status = health_status
 
     @property
     def host(self):
@@ -166,7 +173,7 @@ class VpcMemberInfo:
     def is_backup(self):
         """Gets the is_backup of this VpcMemberInfo.
 
-        是否备用节点。  开启后对应后端服务为备用节点，仅当非备用节点全部故障时工作。  实例需要升级到对应版本才支持此功能，若不支持请联系技术支持。
+        是否备用节点。  开启后对应后端服务为备用节点，仅当非备用节点全部故障时工作。  实例需要升级到对应版本才支持此功能，如果不支持请联系技术支持。
 
         :return: The is_backup of this VpcMemberInfo.
         :rtype: bool
@@ -177,7 +184,7 @@ class VpcMemberInfo:
     def is_backup(self, is_backup):
         """Sets the is_backup of this VpcMemberInfo.
 
-        是否备用节点。  开启后对应后端服务为备用节点，仅当非备用节点全部故障时工作。  实例需要升级到对应版本才支持此功能，若不支持请联系技术支持。
+        是否备用节点。  开启后对应后端服务为备用节点，仅当非备用节点全部故障时工作。  实例需要升级到对应版本才支持此功能，如果不支持请联系技术支持。
 
         :param is_backup: The is_backup of this VpcMemberInfo.
         :type is_backup: bool
@@ -381,6 +388,28 @@ class VpcMemberInfo:
         :type member_group_id: str
         """
         self._member_group_id = member_group_id
+
+    @property
+    def health_status(self):
+        """Gets the health_status of this VpcMemberInfo.
+
+        负载通道后端实例健康状态，unknown、healthy、unhealthy分别标识未做健康检查、健康、不健康。
+
+        :return: The health_status of this VpcMemberInfo.
+        :rtype: str
+        """
+        return self._health_status
+
+    @health_status.setter
+    def health_status(self, health_status):
+        """Sets the health_status of this VpcMemberInfo.
+
+        负载通道后端实例健康状态，unknown、healthy、unhealthy分别标识未做健康检查、健康、不健康。
+
+        :param health_status: The health_status of this VpcMemberInfo.
+        :type health_status: str
+        """
+        self._health_status = health_status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

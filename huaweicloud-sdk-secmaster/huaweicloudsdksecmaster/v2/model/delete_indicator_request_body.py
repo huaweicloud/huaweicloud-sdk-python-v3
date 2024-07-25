@@ -29,7 +29,7 @@ class DeleteIndicatorRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param batch_ids: 指标ID列表
+        :param batch_ids: 威胁情报ID列表
         :type batch_ids: list[str]
         """
         
@@ -45,7 +45,7 @@ class DeleteIndicatorRequestBody:
     def batch_ids(self):
         """Gets the batch_ids of this DeleteIndicatorRequestBody.
 
-        指标ID列表
+        威胁情报ID列表
 
         :return: The batch_ids of this DeleteIndicatorRequestBody.
         :rtype: list[str]
@@ -56,7 +56,7 @@ class DeleteIndicatorRequestBody:
     def batch_ids(self, batch_ids):
         """Sets the batch_ids of this DeleteIndicatorRequestBody.
 
-        指标ID列表
+        威胁情报ID列表
 
         :param batch_ids: The batch_ids of this DeleteIndicatorRequestBody.
         :type batch_ids: list[str]

@@ -41,7 +41,7 @@ class AlertEnvironment:
         :type vendor_type: str
         :param domain_id: 租户id
         :type domain_id: str
-        :param region_id: 区域od，全局服务global
+        :param region_id: 区域id，全局服务global
         :type region_id: str
         :param cross_workspace_id: 数据投递前的源工作空间id，在源空间下值为null，投递后为被委托用户的id
         :type cross_workspace_id: str
@@ -117,7 +117,7 @@ class AlertEnvironment:
     def region_id(self):
         """Gets the region_id of this AlertEnvironment.
 
-        区域od，全局服务global
+        区域id，全局服务global
 
         :return: The region_id of this AlertEnvironment.
         :rtype: str
@@ -128,7 +128,7 @@ class AlertEnvironment:
     def region_id(self, region_id):
         """Sets the region_id of this AlertEnvironment.
 
-        区域od，全局服务global
+        区域id，全局服务global
 
         :param region_id: The region_id of this AlertEnvironment.
         :type region_id: str

@@ -33,11 +33,11 @@ class VersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO:
 
         The model defined in huaweicloud sdk
 
-        :param version_id: 版本对象ID
+        :param version_id: **参数解释：**  版本对象ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type version_id: str
         :param new_view_attrs: 
         :type new_view_attrs: :class:`huaweicloudsdkidmeclassicapi.v1.MultiViewModelViewUpdateAttrDTO`
-        :param need_set_null: 指定不复制的视图属性，其值将被设置为null。
+        :param need_set_null: **参数解释：**  指定不复制的视图属性，其值将被设置为null。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type need_set_null: list[str]
         """
         
@@ -57,7 +57,7 @@ class VersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO:
     def version_id(self):
         """Gets the version_id of this VersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO.
 
-        版本对象ID
+        **参数解释：**  版本对象ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The version_id of this VersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO.
         :rtype: str
@@ -68,7 +68,7 @@ class VersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO:
     def version_id(self, version_id):
         """Sets the version_id of this VersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO.
 
-        版本对象ID
+        **参数解释：**  版本对象ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param version_id: The version_id of this VersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO.
         :type version_id: str
@@ -97,7 +97,7 @@ class VersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO:
     def need_set_null(self):
         """Gets the need_set_null of this VersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO.
 
-        指定不复制的视图属性，其值将被设置为null。
+        **参数解释：**  指定不复制的视图属性，其值将被设置为null。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The need_set_null of this VersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO.
         :rtype: list[str]
@@ -108,7 +108,7 @@ class VersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO:
     def need_set_null(self, need_set_null):
         """Sets the need_set_null of this VersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO.
 
-        指定不复制的视图属性，其值将被设置为null。
+        **参数解释：**  指定不复制的视图属性，其值将被设置为null。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param need_set_null: The need_set_null of this VersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO.
         :type need_set_null: list[str]

@@ -53,7 +53,7 @@ class ListEnvironmentVariablesV2Request:
         :type env_id: str
         :param variable_name: 变量名
         :type variable_name: str
-        :param precise_search: 指定需要精确匹配查找的参数名称，目前仅支持name
+        :param precise_search: 指定需要精确匹配查找的参数名称，目前仅支持variable_name
         :type precise_search: str
         """
         
@@ -217,7 +217,7 @@ class ListEnvironmentVariablesV2Request:
     def precise_search(self):
         """Gets the precise_search of this ListEnvironmentVariablesV2Request.
 
-        指定需要精确匹配查找的参数名称，目前仅支持name
+        指定需要精确匹配查找的参数名称，目前仅支持variable_name
 
         :return: The precise_search of this ListEnvironmentVariablesV2Request.
         :rtype: str
@@ -228,7 +228,7 @@ class ListEnvironmentVariablesV2Request:
     def precise_search(self, precise_search):
         """Sets the precise_search of this ListEnvironmentVariablesV2Request.
 
-        指定需要精确匹配查找的参数名称，目前仅支持name
+        指定需要精确匹配查找的参数名称，目前仅支持variable_name
 
         :param precise_search: The precise_search of this ListEnvironmentVariablesV2Request.
         :type precise_search: str

@@ -18,7 +18,6 @@ class IndicatorListSearchRequest:
 
     openapi_types = {
         'ids': 'list[str]',
-        'name': 'str',
         'dataclass_id': 'str',
         'condition': 'DataobjectSearchCondition',
         'offset': 'int',
@@ -30,7 +29,6 @@ class IndicatorListSearchRequest:
 
     attribute_map = {
         'ids': 'ids',
-        'name': 'name',
         'dataclass_id': 'dataclass_id',
         'condition': 'condition',
         'offset': 'offset',
@@ -40,15 +38,13 @@ class IndicatorListSearchRequest:
         'to_date': 'to_date'
     }
 
-    def __init__(self, ids=None, name=None, dataclass_id=None, condition=None, offset=None, limit=None, sort_by=None, from_date=None, to_date=None):
+    def __init__(self, ids=None, dataclass_id=None, condition=None, offset=None, limit=None, sort_by=None, from_date=None, to_date=None):
         """IndicatorListSearchRequest
 
         The model defined in huaweicloud sdk
 
-        :param ids: 指标ID列表
+        :param ids: 威胁情报ID列表
         :type ids: list[str]
-        :param name: 指标名称
-        :type name: str
         :param dataclass_id: 数据类ID
         :type dataclass_id: str
         :param condition: 
@@ -68,7 +64,6 @@ class IndicatorListSearchRequest:
         
 
         self._ids = None
-        self._name = None
         self._dataclass_id = None
         self._condition = None
         self._offset = None
@@ -80,8 +75,6 @@ class IndicatorListSearchRequest:
 
         if ids is not None:
             self.ids = ids
-        if name is not None:
-            self.name = name
         if dataclass_id is not None:
             self.dataclass_id = dataclass_id
         self.condition = condition
@@ -98,7 +91,7 @@ class IndicatorListSearchRequest:
     def ids(self):
         """Gets the ids of this IndicatorListSearchRequest.
 
-        指标ID列表
+        威胁情报ID列表
 
         :return: The ids of this IndicatorListSearchRequest.
         :rtype: list[str]
@@ -109,34 +102,12 @@ class IndicatorListSearchRequest:
     def ids(self, ids):
         """Sets the ids of this IndicatorListSearchRequest.
 
-        指标ID列表
+        威胁情报ID列表
 
         :param ids: The ids of this IndicatorListSearchRequest.
         :type ids: list[str]
         """
         self._ids = ids
-
-    @property
-    def name(self):
-        """Gets the name of this IndicatorListSearchRequest.
-
-        指标名称
-
-        :return: The name of this IndicatorListSearchRequest.
-        :rtype: str
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        """Sets the name of this IndicatorListSearchRequest.
-
-        指标名称
-
-        :param name: The name of this IndicatorListSearchRequest.
-        :type name: str
-        """
-        self._name = name
 
     @property
     def dataclass_id(self):

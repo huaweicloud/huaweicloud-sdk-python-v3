@@ -35,13 +35,13 @@ class StatisticsRVO:
 
         The model defined in huaweicloud sdk
 
-        :param create_count: 新增统计记录数。
+        :param create_count: **参数解释：**  新增统计记录数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type create_count: int
-        :param delete_count: 删除统计记录数。
+        :param delete_count: **参数解释：**  删除统计记录数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type delete_count: int
-        :param logical_delete_count: 软删除统计记录数。
+        :param logical_delete_count: **参数解释：**  软删除统计记录数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type logical_delete_count: int
-        :param update_count: 更新统计记录数。
+        :param update_count: **参数解释：**  更新统计记录数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type update_count: int
         """
         
@@ -66,7 +66,7 @@ class StatisticsRVO:
     def create_count(self):
         """Gets the create_count of this StatisticsRVO.
 
-        新增统计记录数。
+        **参数解释：**  新增统计记录数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The create_count of this StatisticsRVO.
         :rtype: int
@@ -77,7 +77,7 @@ class StatisticsRVO:
     def create_count(self, create_count):
         """Sets the create_count of this StatisticsRVO.
 
-        新增统计记录数。
+        **参数解释：**  新增统计记录数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param create_count: The create_count of this StatisticsRVO.
         :type create_count: int
@@ -88,7 +88,7 @@ class StatisticsRVO:
     def delete_count(self):
         """Gets the delete_count of this StatisticsRVO.
 
-        删除统计记录数。
+        **参数解释：**  删除统计记录数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The delete_count of this StatisticsRVO.
         :rtype: int
@@ -99,7 +99,7 @@ class StatisticsRVO:
     def delete_count(self, delete_count):
         """Sets the delete_count of this StatisticsRVO.
 
-        删除统计记录数。
+        **参数解释：**  删除统计记录数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param delete_count: The delete_count of this StatisticsRVO.
         :type delete_count: int
@@ -110,7 +110,7 @@ class StatisticsRVO:
     def logical_delete_count(self):
         """Gets the logical_delete_count of this StatisticsRVO.
 
-        软删除统计记录数。
+        **参数解释：**  软删除统计记录数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The logical_delete_count of this StatisticsRVO.
         :rtype: int
@@ -121,7 +121,7 @@ class StatisticsRVO:
     def logical_delete_count(self, logical_delete_count):
         """Sets the logical_delete_count of this StatisticsRVO.
 
-        软删除统计记录数。
+        **参数解释：**  软删除统计记录数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param logical_delete_count: The logical_delete_count of this StatisticsRVO.
         :type logical_delete_count: int
@@ -132,7 +132,7 @@ class StatisticsRVO:
     def update_count(self):
         """Gets the update_count of this StatisticsRVO.
 
-        更新统计记录数。
+        **参数解释：**  更新统计记录数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The update_count of this StatisticsRVO.
         :rtype: int
@@ -143,7 +143,7 @@ class StatisticsRVO:
     def update_count(self, update_count):
         """Sets the update_count of this StatisticsRVO.
 
-        更新统计记录数。
+        **参数解释：**  更新统计记录数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param update_count: The update_count of this StatisticsRVO.
         :type update_count: int

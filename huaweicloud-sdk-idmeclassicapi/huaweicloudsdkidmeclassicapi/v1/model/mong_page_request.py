@@ -45,23 +45,23 @@ class MongPageRequest:
 
         The model defined in huaweicloud sdk
 
-        :param end_last_modified_time: 结束时间。系统以数据实例的最后修改时间作为查询条件，您定义的开始时间和结束时间作为时间范围进行查询。
+        :param end_last_modified_time: **参数解释：**  结束时间。系统以数据实例的最后修改时间作为查询条件，您定义的开始时间和结束时间作为时间范围进行查询。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type end_last_modified_time: str
-        :param id: 数据实例ID。
+        :param id: **参数解释：**  数据实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
         :type id: str
-        :param rdm_version: 版本号。
+        :param rdm_version: **参数解释：**  版本号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type rdm_version: int
-        :param source_id: 关系实体源端ID。
+        :param source_id: **参数解释：**  关系实体源端ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type source_id: str
-        :param source_rdm_version: 关系实体源端系统版本。
+        :param source_rdm_version: **参数解释：**  关系实体源端系统版本。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type source_rdm_version: int
-        :param start_last_modified_time: 开始时间。系统以数据实例的最后修改时间作为查询条件，您定义的开始时间和结束时间作为时间范围进行查询。
+        :param start_last_modified_time: **参数解释：**  开始时间。系统以数据实例的最后修改时间作为查询条件，您定义的开始时间和结束时间作为时间范围进行查询。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type start_last_modified_time: str
-        :param target_id: 关系实体目标端ID。
+        :param target_id: **参数解释：**  关系实体目标端ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type target_id: str
-        :param target_rdm_version: 关系实体目标端系统版本。
+        :param target_rdm_version: **参数解释：**  关系实体目标端系统版本。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type target_rdm_version: int
-        :param target_type: 单边不确定关系的目标端类型。
+        :param target_type: **参数解释：**  单边不确定关系的目标端类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type target_type: str
         """
         
@@ -100,7 +100,7 @@ class MongPageRequest:
     def end_last_modified_time(self):
         """Gets the end_last_modified_time of this MongPageRequest.
 
-        结束时间。系统以数据实例的最后修改时间作为查询条件，您定义的开始时间和结束时间作为时间范围进行查询。
+        **参数解释：**  结束时间。系统以数据实例的最后修改时间作为查询条件，您定义的开始时间和结束时间作为时间范围进行查询。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The end_last_modified_time of this MongPageRequest.
         :rtype: str
@@ -111,7 +111,7 @@ class MongPageRequest:
     def end_last_modified_time(self, end_last_modified_time):
         """Sets the end_last_modified_time of this MongPageRequest.
 
-        结束时间。系统以数据实例的最后修改时间作为查询条件，您定义的开始时间和结束时间作为时间范围进行查询。
+        **参数解释：**  结束时间。系统以数据实例的最后修改时间作为查询条件，您定义的开始时间和结束时间作为时间范围进行查询。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param end_last_modified_time: The end_last_modified_time of this MongPageRequest.
         :type end_last_modified_time: str
@@ -122,7 +122,7 @@ class MongPageRequest:
     def id(self):
         """Gets the id of this MongPageRequest.
 
-        数据实例ID。
+        **参数解释：**  数据实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :return: The id of this MongPageRequest.
         :rtype: str
@@ -133,7 +133,7 @@ class MongPageRequest:
     def id(self, id):
         """Sets the id of this MongPageRequest.
 
-        数据实例ID。
+        **参数解释：**  数据实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :param id: The id of this MongPageRequest.
         :type id: str
@@ -144,7 +144,7 @@ class MongPageRequest:
     def rdm_version(self):
         """Gets the rdm_version of this MongPageRequest.
 
-        版本号。
+        **参数解释：**  版本号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The rdm_version of this MongPageRequest.
         :rtype: int
@@ -155,7 +155,7 @@ class MongPageRequest:
     def rdm_version(self, rdm_version):
         """Sets the rdm_version of this MongPageRequest.
 
-        版本号。
+        **参数解释：**  版本号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param rdm_version: The rdm_version of this MongPageRequest.
         :type rdm_version: int
@@ -166,7 +166,7 @@ class MongPageRequest:
     def source_id(self):
         """Gets the source_id of this MongPageRequest.
 
-        关系实体源端ID。
+        **参数解释：**  关系实体源端ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The source_id of this MongPageRequest.
         :rtype: str
@@ -177,7 +177,7 @@ class MongPageRequest:
     def source_id(self, source_id):
         """Sets the source_id of this MongPageRequest.
 
-        关系实体源端ID。
+        **参数解释：**  关系实体源端ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param source_id: The source_id of this MongPageRequest.
         :type source_id: str
@@ -188,7 +188,7 @@ class MongPageRequest:
     def source_rdm_version(self):
         """Gets the source_rdm_version of this MongPageRequest.
 
-        关系实体源端系统版本。
+        **参数解释：**  关系实体源端系统版本。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The source_rdm_version of this MongPageRequest.
         :rtype: int
@@ -199,7 +199,7 @@ class MongPageRequest:
     def source_rdm_version(self, source_rdm_version):
         """Sets the source_rdm_version of this MongPageRequest.
 
-        关系实体源端系统版本。
+        **参数解释：**  关系实体源端系统版本。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param source_rdm_version: The source_rdm_version of this MongPageRequest.
         :type source_rdm_version: int
@@ -210,7 +210,7 @@ class MongPageRequest:
     def start_last_modified_time(self):
         """Gets the start_last_modified_time of this MongPageRequest.
 
-        开始时间。系统以数据实例的最后修改时间作为查询条件，您定义的开始时间和结束时间作为时间范围进行查询。
+        **参数解释：**  开始时间。系统以数据实例的最后修改时间作为查询条件，您定义的开始时间和结束时间作为时间范围进行查询。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The start_last_modified_time of this MongPageRequest.
         :rtype: str
@@ -221,7 +221,7 @@ class MongPageRequest:
     def start_last_modified_time(self, start_last_modified_time):
         """Sets the start_last_modified_time of this MongPageRequest.
 
-        开始时间。系统以数据实例的最后修改时间作为查询条件，您定义的开始时间和结束时间作为时间范围进行查询。
+        **参数解释：**  开始时间。系统以数据实例的最后修改时间作为查询条件，您定义的开始时间和结束时间作为时间范围进行查询。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param start_last_modified_time: The start_last_modified_time of this MongPageRequest.
         :type start_last_modified_time: str
@@ -232,7 +232,7 @@ class MongPageRequest:
     def target_id(self):
         """Gets the target_id of this MongPageRequest.
 
-        关系实体目标端ID。
+        **参数解释：**  关系实体目标端ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The target_id of this MongPageRequest.
         :rtype: str
@@ -243,7 +243,7 @@ class MongPageRequest:
     def target_id(self, target_id):
         """Sets the target_id of this MongPageRequest.
 
-        关系实体目标端ID。
+        **参数解释：**  关系实体目标端ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param target_id: The target_id of this MongPageRequest.
         :type target_id: str
@@ -254,7 +254,7 @@ class MongPageRequest:
     def target_rdm_version(self):
         """Gets the target_rdm_version of this MongPageRequest.
 
-        关系实体目标端系统版本。
+        **参数解释：**  关系实体目标端系统版本。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The target_rdm_version of this MongPageRequest.
         :rtype: int
@@ -265,7 +265,7 @@ class MongPageRequest:
     def target_rdm_version(self, target_rdm_version):
         """Sets the target_rdm_version of this MongPageRequest.
 
-        关系实体目标端系统版本。
+        **参数解释：**  关系实体目标端系统版本。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param target_rdm_version: The target_rdm_version of this MongPageRequest.
         :type target_rdm_version: int
@@ -276,7 +276,7 @@ class MongPageRequest:
     def target_type(self):
         """Gets the target_type of this MongPageRequest.
 
-        单边不确定关系的目标端类型。
+        **参数解释：**  单边不确定关系的目标端类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The target_type of this MongPageRequest.
         :rtype: str
@@ -287,7 +287,7 @@ class MongPageRequest:
     def target_type(self, target_type):
         """Sets the target_type of this MongPageRequest.
 
-        单边不确定关系的目标端类型。
+        **参数解释：**  单边不确定关系的目标端类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param target_type: The target_type of this MongPageRequest.
         :type target_type: str

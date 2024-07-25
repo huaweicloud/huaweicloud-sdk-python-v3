@@ -44,6 +44,8 @@ class CfwRegion:
                         "https://cfw.me-east-1.myhuaweicloud.com")
     CN_NORTH_11 = Region("cn-north-11",
                         "https://cfw.cn-north-11.myhuaweicloud.com")
+    CN_SOUTH_2 = Region("cn-south-2",
+                        "https://cfw.cn-south-2.myhuaweicloud.com")
 
     static_fields = {
         "eu-west-101": EU_WEST_101,
@@ -65,6 +67,7 @@ class CfwRegion:
         "tr-west-1": TR_WEST_1,
         "me-east-1": ME_EAST_1,
         "cn-north-11": CN_NORTH_11,
+        "cn-south-2": CN_SOUTH_2,
     }
 
     @classmethod

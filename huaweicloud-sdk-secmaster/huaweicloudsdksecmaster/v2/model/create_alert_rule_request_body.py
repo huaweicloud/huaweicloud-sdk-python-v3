@@ -30,7 +30,12 @@ class CreateAlertRuleRequestBody:
         'suspression': 'bool',
         'simulation': 'bool',
         'schedule': 'Schedule',
-        'triggers': 'list[AlertRuleTrigger]'
+        'triggers': 'list[AlertRuleTrigger]',
+        'pipe_name': 'str',
+        'alert_name': 'str',
+        'alert_description': 'str',
+        'alert_remediation': 'str',
+        'accumulated_times': 'int'
     }
 
     attribute_map = {
@@ -47,10 +52,15 @@ class CreateAlertRuleRequestBody:
         'suspression': 'suspression',
         'simulation': 'simulation',
         'schedule': 'schedule',
-        'triggers': 'triggers'
+        'triggers': 'triggers',
+        'pipe_name': 'pipe_name',
+        'alert_name': 'alert_name',
+        'alert_description': 'alert_description',
+        'alert_remediation': 'alert_remediation',
+        'accumulated_times': 'accumulated_times'
     }
 
-    def __init__(self, pipe_id=None, rule_name=None, description=None, query=None, query_type=None, status=None, severity=None, custom_properties=None, alert_type=None, event_grouping=None, suspression=None, simulation=None, schedule=None, triggers=None):
+    def __init__(self, pipe_id=None, rule_name=None, description=None, query=None, query_type=None, status=None, severity=None, custom_properties=None, alert_type=None, event_grouping=None, suspression=None, simulation=None, schedule=None, triggers=None, pipe_name=None, alert_name=None, alert_description=None, alert_remediation=None, accumulated_times=None):
         """CreateAlertRuleRequestBody
 
         The model defined in huaweicloud sdk
@@ -83,6 +93,16 @@ class CreateAlertRuleRequestBody:
         :type schedule: :class:`huaweicloudsdksecmaster.v2.Schedule`
         :param triggers: 告警触发规则。Alert triggers.
         :type triggers: list[:class:`huaweicloudsdksecmaster.v2.AlertRuleTrigger`]
+        :param pipe_name: 管道名称
+        :type pipe_name: str
+        :param alert_name: 告警名称
+        :type alert_name: str
+        :param alert_description: 告警描述
+        :type alert_description: str
+        :param alert_remediation: 修复建议
+        :type alert_remediation: str
+        :param accumulated_times: 执行次数
+        :type accumulated_times: int
         """
         
         
@@ -101,6 +121,11 @@ class CreateAlertRuleRequestBody:
         self._simulation = None
         self._schedule = None
         self._triggers = None
+        self._pipe_name = None
+        self._alert_name = None
+        self._alert_description = None
+        self._alert_remediation = None
+        self._accumulated_times = None
         self.discriminator = None
 
         self.pipe_id = pipe_id
@@ -126,6 +151,14 @@ class CreateAlertRuleRequestBody:
             self.simulation = simulation
         self.schedule = schedule
         self.triggers = triggers
+        self.pipe_name = pipe_name
+        self.alert_name = alert_name
+        if alert_description is not None:
+            self.alert_description = alert_description
+        if alert_remediation is not None:
+            self.alert_remediation = alert_remediation
+        if accumulated_times is not None:
+            self.accumulated_times = accumulated_times
 
     @property
     def pipe_id(self):
@@ -430,6 +463,116 @@ class CreateAlertRuleRequestBody:
         :type triggers: list[:class:`huaweicloudsdksecmaster.v2.AlertRuleTrigger`]
         """
         self._triggers = triggers
+
+    @property
+    def pipe_name(self):
+        """Gets the pipe_name of this CreateAlertRuleRequestBody.
+
+        管道名称
+
+        :return: The pipe_name of this CreateAlertRuleRequestBody.
+        :rtype: str
+        """
+        return self._pipe_name
+
+    @pipe_name.setter
+    def pipe_name(self, pipe_name):
+        """Sets the pipe_name of this CreateAlertRuleRequestBody.
+
+        管道名称
+
+        :param pipe_name: The pipe_name of this CreateAlertRuleRequestBody.
+        :type pipe_name: str
+        """
+        self._pipe_name = pipe_name
+
+    @property
+    def alert_name(self):
+        """Gets the alert_name of this CreateAlertRuleRequestBody.
+
+        告警名称
+
+        :return: The alert_name of this CreateAlertRuleRequestBody.
+        :rtype: str
+        """
+        return self._alert_name
+
+    @alert_name.setter
+    def alert_name(self, alert_name):
+        """Sets the alert_name of this CreateAlertRuleRequestBody.
+
+        告警名称
+
+        :param alert_name: The alert_name of this CreateAlertRuleRequestBody.
+        :type alert_name: str
+        """
+        self._alert_name = alert_name
+
+    @property
+    def alert_description(self):
+        """Gets the alert_description of this CreateAlertRuleRequestBody.
+
+        告警描述
+
+        :return: The alert_description of this CreateAlertRuleRequestBody.
+        :rtype: str
+        """
+        return self._alert_description
+
+    @alert_description.setter
+    def alert_description(self, alert_description):
+        """Sets the alert_description of this CreateAlertRuleRequestBody.
+
+        告警描述
+
+        :param alert_description: The alert_description of this CreateAlertRuleRequestBody.
+        :type alert_description: str
+        """
+        self._alert_description = alert_description
+
+    @property
+    def alert_remediation(self):
+        """Gets the alert_remediation of this CreateAlertRuleRequestBody.
+
+        修复建议
+
+        :return: The alert_remediation of this CreateAlertRuleRequestBody.
+        :rtype: str
+        """
+        return self._alert_remediation
+
+    @alert_remediation.setter
+    def alert_remediation(self, alert_remediation):
+        """Sets the alert_remediation of this CreateAlertRuleRequestBody.
+
+        修复建议
+
+        :param alert_remediation: The alert_remediation of this CreateAlertRuleRequestBody.
+        :type alert_remediation: str
+        """
+        self._alert_remediation = alert_remediation
+
+    @property
+    def accumulated_times(self):
+        """Gets the accumulated_times of this CreateAlertRuleRequestBody.
+
+        执行次数
+
+        :return: The accumulated_times of this CreateAlertRuleRequestBody.
+        :rtype: int
+        """
+        return self._accumulated_times
+
+    @accumulated_times.setter
+    def accumulated_times(self, accumulated_times):
+        """Sets the accumulated_times of this CreateAlertRuleRequestBody.
+
+        执行次数
+
+        :param accumulated_times: The accumulated_times of this CreateAlertRuleRequestBody.
+        :type accumulated_times: int
+        """
+        self._accumulated_times = accumulated_times
 
     def to_dict(self):
         """Returns the model properties as a dict"""

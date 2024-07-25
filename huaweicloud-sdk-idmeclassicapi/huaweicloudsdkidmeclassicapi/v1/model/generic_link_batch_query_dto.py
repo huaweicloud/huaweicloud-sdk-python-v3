@@ -33,11 +33,11 @@ class GenericLinkBatchQueryDTO:
 
         The model defined in huaweicloud sdk
 
-        :param latest_only: 是否返回源模型数据实例关联的最新版本目标模型数据实例。此参数仅对源/目标模型为M-V模型实体有效。 - true：返回源模型数据实例关联的最新版本的目标模型数据实例。 - false：返回源模型数据实例关联的所有版本的目标模型数据实例。默认为false。
+        :param latest_only: **参数解释：**  是否返回源模型数据实例关联的最新版本目标模型数据实例。此参数仅对源/目标模型为M-V模型实体有效。  **约束限制：**  不涉及。  **取值范围：**  - true：返回源模型数据实例关联的最新版本的目标模型数据实例。 - false：返回源模型数据实例关联的所有版本的目标模型数据实例。  **默认取值：**  false。 
         :type latest_only: bool
-        :param object_ids: 角色对应的数据实例ID列表。
+        :param object_ids: **参数解释：**  角色对应的数据实例ID列表。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type object_ids: list[str]
-        :param role: 角色。 - TARGET：目标模型。 - SOURCE：源模型。
+        :param role: **参数解释：**  角色。  **约束限制：**  不涉及。  **取值范围：**  - TARGET：目标模型。 - SOURCE：源模型。  **默认取值：**  不涉及。 
         :type role: str
         """
         
@@ -59,7 +59,7 @@ class GenericLinkBatchQueryDTO:
     def latest_only(self):
         """Gets the latest_only of this GenericLinkBatchQueryDTO.
 
-        是否返回源模型数据实例关联的最新版本目标模型数据实例。此参数仅对源/目标模型为M-V模型实体有效。 - true：返回源模型数据实例关联的最新版本的目标模型数据实例。 - false：返回源模型数据实例关联的所有版本的目标模型数据实例。默认为false。
+        **参数解释：**  是否返回源模型数据实例关联的最新版本目标模型数据实例。此参数仅对源/目标模型为M-V模型实体有效。  **约束限制：**  不涉及。  **取值范围：**  - true：返回源模型数据实例关联的最新版本的目标模型数据实例。 - false：返回源模型数据实例关联的所有版本的目标模型数据实例。  **默认取值：**  false。 
 
         :return: The latest_only of this GenericLinkBatchQueryDTO.
         :rtype: bool
@@ -70,7 +70,7 @@ class GenericLinkBatchQueryDTO:
     def latest_only(self, latest_only):
         """Sets the latest_only of this GenericLinkBatchQueryDTO.
 
-        是否返回源模型数据实例关联的最新版本目标模型数据实例。此参数仅对源/目标模型为M-V模型实体有效。 - true：返回源模型数据实例关联的最新版本的目标模型数据实例。 - false：返回源模型数据实例关联的所有版本的目标模型数据实例。默认为false。
+        **参数解释：**  是否返回源模型数据实例关联的最新版本目标模型数据实例。此参数仅对源/目标模型为M-V模型实体有效。  **约束限制：**  不涉及。  **取值范围：**  - true：返回源模型数据实例关联的最新版本的目标模型数据实例。 - false：返回源模型数据实例关联的所有版本的目标模型数据实例。  **默认取值：**  false。 
 
         :param latest_only: The latest_only of this GenericLinkBatchQueryDTO.
         :type latest_only: bool
@@ -81,7 +81,7 @@ class GenericLinkBatchQueryDTO:
     def object_ids(self):
         """Gets the object_ids of this GenericLinkBatchQueryDTO.
 
-        角色对应的数据实例ID列表。
+        **参数解释：**  角色对应的数据实例ID列表。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The object_ids of this GenericLinkBatchQueryDTO.
         :rtype: list[str]
@@ -92,7 +92,7 @@ class GenericLinkBatchQueryDTO:
     def object_ids(self, object_ids):
         """Sets the object_ids of this GenericLinkBatchQueryDTO.
 
-        角色对应的数据实例ID列表。
+        **参数解释：**  角色对应的数据实例ID列表。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param object_ids: The object_ids of this GenericLinkBatchQueryDTO.
         :type object_ids: list[str]
@@ -103,7 +103,7 @@ class GenericLinkBatchQueryDTO:
     def role(self):
         """Gets the role of this GenericLinkBatchQueryDTO.
 
-        角色。 - TARGET：目标模型。 - SOURCE：源模型。
+        **参数解释：**  角色。  **约束限制：**  不涉及。  **取值范围：**  - TARGET：目标模型。 - SOURCE：源模型。  **默认取值：**  不涉及。 
 
         :return: The role of this GenericLinkBatchQueryDTO.
         :rtype: str
@@ -114,7 +114,7 @@ class GenericLinkBatchQueryDTO:
     def role(self, role):
         """Sets the role of this GenericLinkBatchQueryDTO.
 
-        角色。 - TARGET：目标模型。 - SOURCE：源模型。
+        **参数解释：**  角色。  **约束限制：**  不涉及。  **取值范围：**  - TARGET：目标模型。 - SOURCE：源模型。  **默认取值：**  不涉及。 
 
         :param role: The role of this GenericLinkBatchQueryDTO.
         :type role: str

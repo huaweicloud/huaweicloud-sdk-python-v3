@@ -32,7 +32,8 @@ class ReqParamBase:
         'max_size': 'int',
         'regular': 'str',
         'json_schema': 'str',
-        'pass_through': 'int'
+        'pass_through': 'int',
+        'orchestrations': 'list[str]'
     }
 
     attribute_map = {
@@ -51,10 +52,11 @@ class ReqParamBase:
         'max_size': 'max_size',
         'regular': 'regular',
         'json_schema': 'json_schema',
-        'pass_through': 'pass_through'
+        'pass_through': 'pass_through',
+        'orchestrations': 'orchestrations'
     }
 
-    def __init__(self, name=None, type=None, location=None, default_value=None, sample_value=None, required=None, valid_enable=None, remark=None, enumerations=None, min_num=None, max_num=None, min_size=None, max_size=None, regular=None, json_schema=None, pass_through=None):
+    def __init__(self, name=None, type=None, location=None, default_value=None, sample_value=None, required=None, valid_enable=None, remark=None, enumerations=None, min_num=None, max_num=None, min_size=None, max_size=None, regular=None, json_schema=None, pass_through=None, orchestrations=None):
         """ReqParamBase
 
         The model defined in huaweicloud sdk
@@ -91,6 +93,8 @@ class ReqParamBase:
         :type json_schema: str
         :param pass_through: 是否透传 - 1：是 - 2：否
         :type pass_through: int
+        :param orchestrations: 请求参数匹配编排规则的生效优先级与列表顺序保持一致，列表中靠前的配置匹配优先级较高； 如果编配规则列表中包含none_value类型的规则，则none_value类型的规则优先级最高，至多绑定一个none_value类型的规则； 如果编排规则列表中包含default类型的规则，则default类型的规则优先级最低，至多绑定一个default类型的规则； 当编排规则为预处理策略时，该规则不能作为除default以外的最后一个编排规则； 每个API仅允许选择一个参数绑定编排规则，且编排规则不能重复，支持绑定的编排规则数量有配额限制，具体请参见产品介绍的“配额说明”章节。
+        :type orchestrations: list[str]
         """
         
         
@@ -111,6 +115,7 @@ class ReqParamBase:
         self._regular = None
         self._json_schema = None
         self._pass_through = None
+        self._orchestrations = None
         self.discriminator = None
 
         self.name = name
@@ -142,6 +147,8 @@ class ReqParamBase:
             self.json_schema = json_schema
         if pass_through is not None:
             self.pass_through = pass_through
+        if orchestrations is not None:
+            self.orchestrations = orchestrations
 
     @property
     def name(self):
@@ -494,6 +501,28 @@ class ReqParamBase:
         :type pass_through: int
         """
         self._pass_through = pass_through
+
+    @property
+    def orchestrations(self):
+        """Gets the orchestrations of this ReqParamBase.
+
+        请求参数匹配编排规则的生效优先级与列表顺序保持一致，列表中靠前的配置匹配优先级较高； 如果编配规则列表中包含none_value类型的规则，则none_value类型的规则优先级最高，至多绑定一个none_value类型的规则； 如果编排规则列表中包含default类型的规则，则default类型的规则优先级最低，至多绑定一个default类型的规则； 当编排规则为预处理策略时，该规则不能作为除default以外的最后一个编排规则； 每个API仅允许选择一个参数绑定编排规则，且编排规则不能重复，支持绑定的编排规则数量有配额限制，具体请参见产品介绍的“配额说明”章节。
+
+        :return: The orchestrations of this ReqParamBase.
+        :rtype: list[str]
+        """
+        return self._orchestrations
+
+    @orchestrations.setter
+    def orchestrations(self, orchestrations):
+        """Sets the orchestrations of this ReqParamBase.
+
+        请求参数匹配编排规则的生效优先级与列表顺序保持一致，列表中靠前的配置匹配优先级较高； 如果编配规则列表中包含none_value类型的规则，则none_value类型的规则优先级最高，至多绑定一个none_value类型的规则； 如果编排规则列表中包含default类型的规则，则default类型的规则优先级最低，至多绑定一个default类型的规则； 当编排规则为预处理策略时，该规则不能作为除default以外的最后一个编排规则； 每个API仅允许选择一个参数绑定编排规则，且编排规则不能重复，支持绑定的编排规则数量有配额限制，具体请参见产品介绍的“配额说明”章节。
+
+        :param orchestrations: The orchestrations of this ReqParamBase.
+        :type orchestrations: list[str]
+        """
+        self._orchestrations = orchestrations
 
     def to_dict(self):
         """Returns the model properties as a dict"""

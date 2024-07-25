@@ -18,20 +18,80 @@ class ListLogLtsConfigsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'instance_lts_configs': 'list[InstanceLtsConfigResp]',
+        'total_count': 'int'
     }
 
     attribute_map = {
+        'instance_lts_configs': 'instance_lts_configs',
+        'total_count': 'total_count'
     }
 
-    def __init__(self):
+    def __init__(self, instance_lts_configs=None, total_count=None):
         """ListLogLtsConfigsResponse
 
         The model defined in huaweicloud sdk
 
+        :param instance_lts_configs: 实例的LTS配置
+        :type instance_lts_configs: list[:class:`huaweicloudsdkrds.v3.InstanceLtsConfigResp`]
+        :param total_count: 结果集大小
+        :type total_count: int
         """
         
         super(ListLogLtsConfigsResponse, self).__init__()
+
+        self._instance_lts_configs = None
+        self._total_count = None
         self.discriminator = None
+
+        if instance_lts_configs is not None:
+            self.instance_lts_configs = instance_lts_configs
+        if total_count is not None:
+            self.total_count = total_count
+
+    @property
+    def instance_lts_configs(self):
+        """Gets the instance_lts_configs of this ListLogLtsConfigsResponse.
+
+        实例的LTS配置
+
+        :return: The instance_lts_configs of this ListLogLtsConfigsResponse.
+        :rtype: list[:class:`huaweicloudsdkrds.v3.InstanceLtsConfigResp`]
+        """
+        return self._instance_lts_configs
+
+    @instance_lts_configs.setter
+    def instance_lts_configs(self, instance_lts_configs):
+        """Sets the instance_lts_configs of this ListLogLtsConfigsResponse.
+
+        实例的LTS配置
+
+        :param instance_lts_configs: The instance_lts_configs of this ListLogLtsConfigsResponse.
+        :type instance_lts_configs: list[:class:`huaweicloudsdkrds.v3.InstanceLtsConfigResp`]
+        """
+        self._instance_lts_configs = instance_lts_configs
+
+    @property
+    def total_count(self):
+        """Gets the total_count of this ListLogLtsConfigsResponse.
+
+        结果集大小
+
+        :return: The total_count of this ListLogLtsConfigsResponse.
+        :rtype: int
+        """
+        return self._total_count
+
+    @total_count.setter
+    def total_count(self, total_count):
+        """Sets the total_count of this ListLogLtsConfigsResponse.
+
+        结果集大小
+
+        :param total_count: The total_count of this ListLogLtsConfigsResponse.
+        :type total_count: int
+        """
+        self._total_count = total_count
 
     def to_dict(self):
         """Returns the model properties as a dict"""

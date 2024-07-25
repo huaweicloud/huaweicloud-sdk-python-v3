@@ -49,27 +49,27 @@ class PersistableModelViewDTO:
 
         The model defined in huaweicloud sdk
 
-        :param class_name: 类名。
+        :param class_name: **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type class_name: str
-        :param create_time: 创建时间。
+        :param create_time: **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type create_time: str
-        :param creator: 创建者。
+        :param creator: **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type creator: str
-        :param id: 唯一标识。
+        :param id: **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
         :type id: str
-        :param rdm_delete_flag: 软删除标识，参数值为0或1。 - 0：表示未删除。 - 1：表示已删除。
+        :param rdm_delete_flag: **参数解释：**  软删除标识。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  0。 
         :type rdm_delete_flag: int
-        :param rdm_extension_type: 扩展类型。
+        :param rdm_extension_type: **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type rdm_extension_type: str
-        :param rdm_version: 系统版本。
+        :param rdm_version: **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type rdm_version: int
-        :param modifier: 修改人。
+        :param modifier: **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type modifier: str
-        :param last_update_time: 最后更新时间。
+        :param last_update_time: **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type last_update_time: object
         :param tenant: 
         :type tenant: :class:`huaweicloudsdkidmeclassicapi.v1.TenantViewDTO`
-        :param unique_key: 示例模型中定义的唯一键属性。
+        :param unique_key: **参数解释：**  示例模型中定义的唯一键属性。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type unique_key: str
         """
         
@@ -115,7 +115,7 @@ class PersistableModelViewDTO:
     def class_name(self):
         """Gets the class_name of this PersistableModelViewDTO.
 
-        类名。
+        **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The class_name of this PersistableModelViewDTO.
         :rtype: str
@@ -126,7 +126,7 @@ class PersistableModelViewDTO:
     def class_name(self, class_name):
         """Sets the class_name of this PersistableModelViewDTO.
 
-        类名。
+        **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param class_name: The class_name of this PersistableModelViewDTO.
         :type class_name: str
@@ -137,7 +137,7 @@ class PersistableModelViewDTO:
     def create_time(self):
         """Gets the create_time of this PersistableModelViewDTO.
 
-        创建时间。
+        **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The create_time of this PersistableModelViewDTO.
         :rtype: str
@@ -148,7 +148,7 @@ class PersistableModelViewDTO:
     def create_time(self, create_time):
         """Sets the create_time of this PersistableModelViewDTO.
 
-        创建时间。
+        **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param create_time: The create_time of this PersistableModelViewDTO.
         :type create_time: str
@@ -159,7 +159,7 @@ class PersistableModelViewDTO:
     def creator(self):
         """Gets the creator of this PersistableModelViewDTO.
 
-        创建者。
+        **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The creator of this PersistableModelViewDTO.
         :rtype: str
@@ -170,7 +170,7 @@ class PersistableModelViewDTO:
     def creator(self, creator):
         """Sets the creator of this PersistableModelViewDTO.
 
-        创建者。
+        **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param creator: The creator of this PersistableModelViewDTO.
         :type creator: str
@@ -181,7 +181,7 @@ class PersistableModelViewDTO:
     def id(self):
         """Gets the id of this PersistableModelViewDTO.
 
-        唯一标识。
+        **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :return: The id of this PersistableModelViewDTO.
         :rtype: str
@@ -192,7 +192,7 @@ class PersistableModelViewDTO:
     def id(self, id):
         """Sets the id of this PersistableModelViewDTO.
 
-        唯一标识。
+        **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :param id: The id of this PersistableModelViewDTO.
         :type id: str
@@ -203,7 +203,7 @@ class PersistableModelViewDTO:
     def rdm_delete_flag(self):
         """Gets the rdm_delete_flag of this PersistableModelViewDTO.
 
-        软删除标识，参数值为0或1。 - 0：表示未删除。 - 1：表示已删除。
+        **参数解释：**  软删除标识。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  0。 
 
         :return: The rdm_delete_flag of this PersistableModelViewDTO.
         :rtype: int
@@ -214,7 +214,7 @@ class PersistableModelViewDTO:
     def rdm_delete_flag(self, rdm_delete_flag):
         """Sets the rdm_delete_flag of this PersistableModelViewDTO.
 
-        软删除标识，参数值为0或1。 - 0：表示未删除。 - 1：表示已删除。
+        **参数解释：**  软删除标识。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  0。 
 
         :param rdm_delete_flag: The rdm_delete_flag of this PersistableModelViewDTO.
         :type rdm_delete_flag: int
@@ -225,7 +225,7 @@ class PersistableModelViewDTO:
     def rdm_extension_type(self):
         """Gets the rdm_extension_type of this PersistableModelViewDTO.
 
-        扩展类型。
+        **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The rdm_extension_type of this PersistableModelViewDTO.
         :rtype: str
@@ -236,7 +236,7 @@ class PersistableModelViewDTO:
     def rdm_extension_type(self, rdm_extension_type):
         """Sets the rdm_extension_type of this PersistableModelViewDTO.
 
-        扩展类型。
+        **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param rdm_extension_type: The rdm_extension_type of this PersistableModelViewDTO.
         :type rdm_extension_type: str
@@ -247,7 +247,7 @@ class PersistableModelViewDTO:
     def rdm_version(self):
         """Gets the rdm_version of this PersistableModelViewDTO.
 
-        系统版本。
+        **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The rdm_version of this PersistableModelViewDTO.
         :rtype: int
@@ -258,7 +258,7 @@ class PersistableModelViewDTO:
     def rdm_version(self, rdm_version):
         """Sets the rdm_version of this PersistableModelViewDTO.
 
-        系统版本。
+        **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param rdm_version: The rdm_version of this PersistableModelViewDTO.
         :type rdm_version: int
@@ -269,7 +269,7 @@ class PersistableModelViewDTO:
     def modifier(self):
         """Gets the modifier of this PersistableModelViewDTO.
 
-        修改人。
+        **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The modifier of this PersistableModelViewDTO.
         :rtype: str
@@ -280,7 +280,7 @@ class PersistableModelViewDTO:
     def modifier(self, modifier):
         """Sets the modifier of this PersistableModelViewDTO.
 
-        修改人。
+        **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param modifier: The modifier of this PersistableModelViewDTO.
         :type modifier: str
@@ -291,7 +291,7 @@ class PersistableModelViewDTO:
     def last_update_time(self):
         """Gets the last_update_time of this PersistableModelViewDTO.
 
-        最后更新时间。
+        **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The last_update_time of this PersistableModelViewDTO.
         :rtype: object
@@ -302,7 +302,7 @@ class PersistableModelViewDTO:
     def last_update_time(self, last_update_time):
         """Sets the last_update_time of this PersistableModelViewDTO.
 
-        最后更新时间。
+        **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param last_update_time: The last_update_time of this PersistableModelViewDTO.
         :type last_update_time: object
@@ -331,7 +331,7 @@ class PersistableModelViewDTO:
     def unique_key(self):
         """Gets the unique_key of this PersistableModelViewDTO.
 
-        示例模型中定义的唯一键属性。
+        **参数解释：**  示例模型中定义的唯一键属性。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The unique_key of this PersistableModelViewDTO.
         :rtype: str
@@ -342,7 +342,7 @@ class PersistableModelViewDTO:
     def unique_key(self, unique_key):
         """Sets the unique_key of this PersistableModelViewDTO.
 
-        示例模型中定义的唯一键属性。
+        **参数解释：**  示例模型中定义的唯一键属性。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param unique_key: The unique_key of this PersistableModelViewDTO.
         :type unique_key: str

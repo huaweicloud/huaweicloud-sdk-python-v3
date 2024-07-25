@@ -35,11 +35,11 @@ class ShowGetByUniqueKeyRequest:
 
         The model defined in huaweicloud sdk
 
-        :param identifier: 应用ID。
+        :param identifier: **参数解释：**  应用唯一标识。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
         :type identifier: str
-        :param model_name: 数据模型的英文名称。
+        :param model_name: **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、\&quot;_\&quot;，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
         :type model_name: str
-        :param get_unique_field_method: 方法名称，格式为：getBy{uniqueName}。  uniqueName：表示“唯一键”为“是”的属性英文名称。
+        :param get_unique_field_method: **参数解释：**  方法名称，格式为：getBy{uniqueName}。  uniqueName：表示“唯一键”为“是”的属性英文名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type get_unique_field_method: str
         :param body: Body of the ShowGetByUniqueKeyRequest
         :type body: :class:`huaweicloudsdkidmeclassicapi.v1.RDMParamVOPersistableModelUniqueKeyDTO`
@@ -63,7 +63,7 @@ class ShowGetByUniqueKeyRequest:
     def identifier(self):
         """Gets the identifier of this ShowGetByUniqueKeyRequest.
 
-        应用ID。
+        **参数解释：**  应用唯一标识。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
 
         :return: The identifier of this ShowGetByUniqueKeyRequest.
         :rtype: str
@@ -74,7 +74,7 @@ class ShowGetByUniqueKeyRequest:
     def identifier(self, identifier):
         """Sets the identifier of this ShowGetByUniqueKeyRequest.
 
-        应用ID。
+        **参数解释：**  应用唯一标识。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
 
         :param identifier: The identifier of this ShowGetByUniqueKeyRequest.
         :type identifier: str
@@ -85,7 +85,7 @@ class ShowGetByUniqueKeyRequest:
     def model_name(self):
         """Gets the model_name of this ShowGetByUniqueKeyRequest.
 
-        数据模型的英文名称。
+        **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、\"_\"，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
 
         :return: The model_name of this ShowGetByUniqueKeyRequest.
         :rtype: str
@@ -96,7 +96,7 @@ class ShowGetByUniqueKeyRequest:
     def model_name(self, model_name):
         """Sets the model_name of this ShowGetByUniqueKeyRequest.
 
-        数据模型的英文名称。
+        **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、\"_\"，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
 
         :param model_name: The model_name of this ShowGetByUniqueKeyRequest.
         :type model_name: str
@@ -107,7 +107,7 @@ class ShowGetByUniqueKeyRequest:
     def get_unique_field_method(self):
         """Gets the get_unique_field_method of this ShowGetByUniqueKeyRequest.
 
-        方法名称，格式为：getBy{uniqueName}。  uniqueName：表示“唯一键”为“是”的属性英文名称。
+        **参数解释：**  方法名称，格式为：getBy{uniqueName}。  uniqueName：表示“唯一键”为“是”的属性英文名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The get_unique_field_method of this ShowGetByUniqueKeyRequest.
         :rtype: str
@@ -118,7 +118,7 @@ class ShowGetByUniqueKeyRequest:
     def get_unique_field_method(self, get_unique_field_method):
         """Sets the get_unique_field_method of this ShowGetByUniqueKeyRequest.
 
-        方法名称，格式为：getBy{uniqueName}。  uniqueName：表示“唯一键”为“是”的属性英文名称。
+        **参数解释：**  方法名称，格式为：getBy{uniqueName}。  uniqueName：表示“唯一键”为“是”的属性英文名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param get_unique_field_method: The get_unique_field_method of this ShowGetByUniqueKeyRequest.
         :type get_unique_field_method: str

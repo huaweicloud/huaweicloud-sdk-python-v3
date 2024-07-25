@@ -53,31 +53,31 @@ class PersistableModelSaveAsDTO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 唯一标识。
+        :param id: **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
         :type id: str
-        :param modifier: 修改者。
+        :param modifier: **参数解释：**  修改者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type modifier: str
-        :param last_update_time: 最后更新时间。
+        :param last_update_time: **参数解释：**  最后更新时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type last_update_time: str
-        :param creator: 创建者。
+        :param creator: **参数解释：**  创建者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type creator: str
-        :param create_time: 创建时间。
+        :param create_time: **参数解释：**  创建时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type create_time: str
-        :param rdm_extension_type: 扩展类型。
+        :param rdm_extension_type: **参数解释：**  扩展类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type rdm_extension_type: str
         :param tenant: 
         :type tenant: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
-        :param source_entity_number: 源模型编号。
+        :param source_entity_number: **参数解释：**  源模型编号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type source_entity_number: str
-        :param source_instance_id: 源实例的唯一标识（单实例为ID，版本实例为versionId）。
+        :param source_instance_id: **参数解释：**  源实例的唯一标识（单实例为ID，版本实例为versionId）。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type source_instance_id: str
-        :param need_set_null_attrs: 置空字段数组。
+        :param need_set_null_attrs: **参数解释：**  置空字段数组。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type need_set_null_attrs: list[str]
-        :param entity_to_save: 要保存的属性。
+        :param entity_to_save: **参数解释：**  要保存的属性。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type entity_to_save: object
-        :param entity_to_return: 要保存的结果。
+        :param entity_to_return: **参数解释：**  要保存的结果。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type entity_to_return: object
-        :param unique_key: 唯一键。
+        :param unique_key: **参数解释：**  唯一键约束属性。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type unique_key: str
         """
         
@@ -128,7 +128,7 @@ class PersistableModelSaveAsDTO:
     def id(self):
         """Gets the id of this PersistableModelSaveAsDTO.
 
-        唯一标识。
+        **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :return: The id of this PersistableModelSaveAsDTO.
         :rtype: str
@@ -139,7 +139,7 @@ class PersistableModelSaveAsDTO:
     def id(self, id):
         """Sets the id of this PersistableModelSaveAsDTO.
 
-        唯一标识。
+        **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :param id: The id of this PersistableModelSaveAsDTO.
         :type id: str
@@ -150,7 +150,7 @@ class PersistableModelSaveAsDTO:
     def modifier(self):
         """Gets the modifier of this PersistableModelSaveAsDTO.
 
-        修改者。
+        **参数解释：**  修改者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The modifier of this PersistableModelSaveAsDTO.
         :rtype: str
@@ -161,7 +161,7 @@ class PersistableModelSaveAsDTO:
     def modifier(self, modifier):
         """Sets the modifier of this PersistableModelSaveAsDTO.
 
-        修改者。
+        **参数解释：**  修改者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param modifier: The modifier of this PersistableModelSaveAsDTO.
         :type modifier: str
@@ -172,7 +172,7 @@ class PersistableModelSaveAsDTO:
     def last_update_time(self):
         """Gets the last_update_time of this PersistableModelSaveAsDTO.
 
-        最后更新时间。
+        **参数解释：**  最后更新时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The last_update_time of this PersistableModelSaveAsDTO.
         :rtype: str
@@ -183,7 +183,7 @@ class PersistableModelSaveAsDTO:
     def last_update_time(self, last_update_time):
         """Sets the last_update_time of this PersistableModelSaveAsDTO.
 
-        最后更新时间。
+        **参数解释：**  最后更新时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param last_update_time: The last_update_time of this PersistableModelSaveAsDTO.
         :type last_update_time: str
@@ -194,7 +194,7 @@ class PersistableModelSaveAsDTO:
     def creator(self):
         """Gets the creator of this PersistableModelSaveAsDTO.
 
-        创建者。
+        **参数解释：**  创建者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The creator of this PersistableModelSaveAsDTO.
         :rtype: str
@@ -205,7 +205,7 @@ class PersistableModelSaveAsDTO:
     def creator(self, creator):
         """Sets the creator of this PersistableModelSaveAsDTO.
 
-        创建者。
+        **参数解释：**  创建者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param creator: The creator of this PersistableModelSaveAsDTO.
         :type creator: str
@@ -216,7 +216,7 @@ class PersistableModelSaveAsDTO:
     def create_time(self):
         """Gets the create_time of this PersistableModelSaveAsDTO.
 
-        创建时间。
+        **参数解释：**  创建时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The create_time of this PersistableModelSaveAsDTO.
         :rtype: str
@@ -227,7 +227,7 @@ class PersistableModelSaveAsDTO:
     def create_time(self, create_time):
         """Sets the create_time of this PersistableModelSaveAsDTO.
 
-        创建时间。
+        **参数解释：**  创建时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param create_time: The create_time of this PersistableModelSaveAsDTO.
         :type create_time: str
@@ -238,7 +238,7 @@ class PersistableModelSaveAsDTO:
     def rdm_extension_type(self):
         """Gets the rdm_extension_type of this PersistableModelSaveAsDTO.
 
-        扩展类型。
+        **参数解释：**  扩展类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The rdm_extension_type of this PersistableModelSaveAsDTO.
         :rtype: str
@@ -249,7 +249,7 @@ class PersistableModelSaveAsDTO:
     def rdm_extension_type(self, rdm_extension_type):
         """Sets the rdm_extension_type of this PersistableModelSaveAsDTO.
 
-        扩展类型。
+        **参数解释：**  扩展类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param rdm_extension_type: The rdm_extension_type of this PersistableModelSaveAsDTO.
         :type rdm_extension_type: str
@@ -278,7 +278,7 @@ class PersistableModelSaveAsDTO:
     def source_entity_number(self):
         """Gets the source_entity_number of this PersistableModelSaveAsDTO.
 
-        源模型编号。
+        **参数解释：**  源模型编号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The source_entity_number of this PersistableModelSaveAsDTO.
         :rtype: str
@@ -289,7 +289,7 @@ class PersistableModelSaveAsDTO:
     def source_entity_number(self, source_entity_number):
         """Sets the source_entity_number of this PersistableModelSaveAsDTO.
 
-        源模型编号。
+        **参数解释：**  源模型编号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param source_entity_number: The source_entity_number of this PersistableModelSaveAsDTO.
         :type source_entity_number: str
@@ -300,7 +300,7 @@ class PersistableModelSaveAsDTO:
     def source_instance_id(self):
         """Gets the source_instance_id of this PersistableModelSaveAsDTO.
 
-        源实例的唯一标识（单实例为ID，版本实例为versionId）。
+        **参数解释：**  源实例的唯一标识（单实例为ID，版本实例为versionId）。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The source_instance_id of this PersistableModelSaveAsDTO.
         :rtype: str
@@ -311,7 +311,7 @@ class PersistableModelSaveAsDTO:
     def source_instance_id(self, source_instance_id):
         """Sets the source_instance_id of this PersistableModelSaveAsDTO.
 
-        源实例的唯一标识（单实例为ID，版本实例为versionId）。
+        **参数解释：**  源实例的唯一标识（单实例为ID，版本实例为versionId）。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param source_instance_id: The source_instance_id of this PersistableModelSaveAsDTO.
         :type source_instance_id: str
@@ -322,7 +322,7 @@ class PersistableModelSaveAsDTO:
     def need_set_null_attrs(self):
         """Gets the need_set_null_attrs of this PersistableModelSaveAsDTO.
 
-        置空字段数组。
+        **参数解释：**  置空字段数组。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The need_set_null_attrs of this PersistableModelSaveAsDTO.
         :rtype: list[str]
@@ -333,7 +333,7 @@ class PersistableModelSaveAsDTO:
     def need_set_null_attrs(self, need_set_null_attrs):
         """Sets the need_set_null_attrs of this PersistableModelSaveAsDTO.
 
-        置空字段数组。
+        **参数解释：**  置空字段数组。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param need_set_null_attrs: The need_set_null_attrs of this PersistableModelSaveAsDTO.
         :type need_set_null_attrs: list[str]
@@ -344,7 +344,7 @@ class PersistableModelSaveAsDTO:
     def entity_to_save(self):
         """Gets the entity_to_save of this PersistableModelSaveAsDTO.
 
-        要保存的属性。
+        **参数解释：**  要保存的属性。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The entity_to_save of this PersistableModelSaveAsDTO.
         :rtype: object
@@ -355,7 +355,7 @@ class PersistableModelSaveAsDTO:
     def entity_to_save(self, entity_to_save):
         """Sets the entity_to_save of this PersistableModelSaveAsDTO.
 
-        要保存的属性。
+        **参数解释：**  要保存的属性。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param entity_to_save: The entity_to_save of this PersistableModelSaveAsDTO.
         :type entity_to_save: object
@@ -366,7 +366,7 @@ class PersistableModelSaveAsDTO:
     def entity_to_return(self):
         """Gets the entity_to_return of this PersistableModelSaveAsDTO.
 
-        要保存的结果。
+        **参数解释：**  要保存的结果。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The entity_to_return of this PersistableModelSaveAsDTO.
         :rtype: object
@@ -377,7 +377,7 @@ class PersistableModelSaveAsDTO:
     def entity_to_return(self, entity_to_return):
         """Sets the entity_to_return of this PersistableModelSaveAsDTO.
 
-        要保存的结果。
+        **参数解释：**  要保存的结果。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param entity_to_return: The entity_to_return of this PersistableModelSaveAsDTO.
         :type entity_to_return: object
@@ -388,7 +388,7 @@ class PersistableModelSaveAsDTO:
     def unique_key(self):
         """Gets the unique_key of this PersistableModelSaveAsDTO.
 
-        唯一键。
+        **参数解释：**  唯一键约束属性。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The unique_key of this PersistableModelSaveAsDTO.
         :rtype: str
@@ -399,7 +399,7 @@ class PersistableModelSaveAsDTO:
     def unique_key(self, unique_key):
         """Sets the unique_key of this PersistableModelSaveAsDTO.
 
-        唯一键。
+        **参数解释：**  唯一键约束属性。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param unique_key: The unique_key of this PersistableModelSaveAsDTO.
         :type unique_key: str

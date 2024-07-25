@@ -29,7 +29,7 @@ class QueryParentDTO:
 
         The model defined in huaweicloud sdk
 
-        :param child_id: 子节点实例ID。
+        :param child_id: **参数解释：**  子节点实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
         :type child_id: str
         """
         
@@ -44,7 +44,7 @@ class QueryParentDTO:
     def child_id(self):
         """Gets the child_id of this QueryParentDTO.
 
-        子节点实例ID。
+        **参数解释：**  子节点实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :return: The child_id of this QueryParentDTO.
         :rtype: str
@@ -55,7 +55,7 @@ class QueryParentDTO:
     def child_id(self, child_id):
         """Sets the child_id of this QueryParentDTO.
 
-        子节点实例ID。
+        **参数解释：**  子节点实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :param child_id: The child_id of this QueryParentDTO.
         :type child_id: str

@@ -49,27 +49,27 @@ class StudentQueryViewDTO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 唯一编码。
+        :param id: **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
         :type id: str
-        :param creator: 创建者。
+        :param creator: **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type creator: str
-        :param create_time: 创建时间。
+        :param create_time: **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type create_time: str
-        :param modifier: 修改人。
+        :param modifier: **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type modifier: str
-        :param last_update_time: 最后的修改时间。
+        :param last_update_time: **参数解释：**  最后的修改时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type last_update_time: str
-        :param rdm_extension_type: 扩展类型。
+        :param rdm_extension_type: **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type rdm_extension_type: str
         :param tenant: 
         :type tenant: :class:`huaweicloudsdkidmeclassicapi.v1.TenantViewDTO`
-        :param class_name: 类名。
+        :param class_name: **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type class_name: str
-        :param name: 名称。
+        :param name: **参数解释：**  名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type name: str
-        :param description: 描述。
+        :param description: **参数解释：**  描述。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type description: str
-        :param grade: 成绩。
+        :param grade: **参数解释：**  成绩。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type grade: float
         """
         
@@ -115,7 +115,7 @@ class StudentQueryViewDTO:
     def id(self):
         """Gets the id of this StudentQueryViewDTO.
 
-        唯一编码。
+        **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :return: The id of this StudentQueryViewDTO.
         :rtype: str
@@ -126,7 +126,7 @@ class StudentQueryViewDTO:
     def id(self, id):
         """Sets the id of this StudentQueryViewDTO.
 
-        唯一编码。
+        **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :param id: The id of this StudentQueryViewDTO.
         :type id: str
@@ -137,7 +137,7 @@ class StudentQueryViewDTO:
     def creator(self):
         """Gets the creator of this StudentQueryViewDTO.
 
-        创建者。
+        **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The creator of this StudentQueryViewDTO.
         :rtype: str
@@ -148,7 +148,7 @@ class StudentQueryViewDTO:
     def creator(self, creator):
         """Sets the creator of this StudentQueryViewDTO.
 
-        创建者。
+        **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param creator: The creator of this StudentQueryViewDTO.
         :type creator: str
@@ -159,7 +159,7 @@ class StudentQueryViewDTO:
     def create_time(self):
         """Gets the create_time of this StudentQueryViewDTO.
 
-        创建时间。
+        **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The create_time of this StudentQueryViewDTO.
         :rtype: str
@@ -170,7 +170,7 @@ class StudentQueryViewDTO:
     def create_time(self, create_time):
         """Sets the create_time of this StudentQueryViewDTO.
 
-        创建时间。
+        **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param create_time: The create_time of this StudentQueryViewDTO.
         :type create_time: str
@@ -181,7 +181,7 @@ class StudentQueryViewDTO:
     def modifier(self):
         """Gets the modifier of this StudentQueryViewDTO.
 
-        修改人。
+        **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The modifier of this StudentQueryViewDTO.
         :rtype: str
@@ -192,7 +192,7 @@ class StudentQueryViewDTO:
     def modifier(self, modifier):
         """Sets the modifier of this StudentQueryViewDTO.
 
-        修改人。
+        **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param modifier: The modifier of this StudentQueryViewDTO.
         :type modifier: str
@@ -203,7 +203,7 @@ class StudentQueryViewDTO:
     def last_update_time(self):
         """Gets the last_update_time of this StudentQueryViewDTO.
 
-        最后的修改时间。
+        **参数解释：**  最后的修改时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The last_update_time of this StudentQueryViewDTO.
         :rtype: str
@@ -214,7 +214,7 @@ class StudentQueryViewDTO:
     def last_update_time(self, last_update_time):
         """Sets the last_update_time of this StudentQueryViewDTO.
 
-        最后的修改时间。
+        **参数解释：**  最后的修改时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param last_update_time: The last_update_time of this StudentQueryViewDTO.
         :type last_update_time: str
@@ -225,7 +225,7 @@ class StudentQueryViewDTO:
     def rdm_extension_type(self):
         """Gets the rdm_extension_type of this StudentQueryViewDTO.
 
-        扩展类型。
+        **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The rdm_extension_type of this StudentQueryViewDTO.
         :rtype: str
@@ -236,7 +236,7 @@ class StudentQueryViewDTO:
     def rdm_extension_type(self, rdm_extension_type):
         """Sets the rdm_extension_type of this StudentQueryViewDTO.
 
-        扩展类型。
+        **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param rdm_extension_type: The rdm_extension_type of this StudentQueryViewDTO.
         :type rdm_extension_type: str
@@ -265,7 +265,7 @@ class StudentQueryViewDTO:
     def class_name(self):
         """Gets the class_name of this StudentQueryViewDTO.
 
-        类名。
+        **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The class_name of this StudentQueryViewDTO.
         :rtype: str
@@ -276,7 +276,7 @@ class StudentQueryViewDTO:
     def class_name(self, class_name):
         """Sets the class_name of this StudentQueryViewDTO.
 
-        类名。
+        **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param class_name: The class_name of this StudentQueryViewDTO.
         :type class_name: str
@@ -287,7 +287,7 @@ class StudentQueryViewDTO:
     def name(self):
         """Gets the name of this StudentQueryViewDTO.
 
-        名称。
+        **参数解释：**  名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The name of this StudentQueryViewDTO.
         :rtype: str
@@ -298,7 +298,7 @@ class StudentQueryViewDTO:
     def name(self, name):
         """Sets the name of this StudentQueryViewDTO.
 
-        名称。
+        **参数解释：**  名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param name: The name of this StudentQueryViewDTO.
         :type name: str
@@ -309,7 +309,7 @@ class StudentQueryViewDTO:
     def description(self):
         """Gets the description of this StudentQueryViewDTO.
 
-        描述。
+        **参数解释：**  描述。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The description of this StudentQueryViewDTO.
         :rtype: str
@@ -320,7 +320,7 @@ class StudentQueryViewDTO:
     def description(self, description):
         """Sets the description of this StudentQueryViewDTO.
 
-        描述。
+        **参数解释：**  描述。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param description: The description of this StudentQueryViewDTO.
         :type description: str
@@ -331,7 +331,7 @@ class StudentQueryViewDTO:
     def grade(self):
         """Gets the grade of this StudentQueryViewDTO.
 
-        成绩。
+        **参数解释：**  成绩。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The grade of this StudentQueryViewDTO.
         :rtype: float
@@ -342,7 +342,7 @@ class StudentQueryViewDTO:
     def grade(self, grade):
         """Sets the grade of this StudentQueryViewDTO.
 
-        成绩。
+        **参数解释：**  成绩。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param grade: The grade of this StudentQueryViewDTO.
         :type grade: float

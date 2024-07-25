@@ -31,9 +31,9 @@ class VersionMasterIdsDtoVersionModelVersionMasterDTO:
 
         The model defined in huaweicloud sdk
 
-        :param master_ids: 主对象集合。
+        :param master_ids: **参数解释：**  主对象集合。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type master_ids: list[:class:`huaweicloudsdkidmeclassicapi.v1.VersionModelMasterIdsDTO`]
-        :param modifier: 更新者。
+        :param modifier: **参数解释：**  更新者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type modifier: str
         """
         
@@ -51,7 +51,7 @@ class VersionMasterIdsDtoVersionModelVersionMasterDTO:
     def master_ids(self):
         """Gets the master_ids of this VersionMasterIdsDtoVersionModelVersionMasterDTO.
 
-        主对象集合。
+        **参数解释：**  主对象集合。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The master_ids of this VersionMasterIdsDtoVersionModelVersionMasterDTO.
         :rtype: list[:class:`huaweicloudsdkidmeclassicapi.v1.VersionModelMasterIdsDTO`]
@@ -62,7 +62,7 @@ class VersionMasterIdsDtoVersionModelVersionMasterDTO:
     def master_ids(self, master_ids):
         """Sets the master_ids of this VersionMasterIdsDtoVersionModelVersionMasterDTO.
 
-        主对象集合。
+        **参数解释：**  主对象集合。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param master_ids: The master_ids of this VersionMasterIdsDtoVersionModelVersionMasterDTO.
         :type master_ids: list[:class:`huaweicloudsdkidmeclassicapi.v1.VersionModelMasterIdsDTO`]
@@ -73,7 +73,7 @@ class VersionMasterIdsDtoVersionModelVersionMasterDTO:
     def modifier(self):
         """Gets the modifier of this VersionMasterIdsDtoVersionModelVersionMasterDTO.
 
-        更新者。
+        **参数解释：**  更新者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The modifier of this VersionMasterIdsDtoVersionModelVersionMasterDTO.
         :rtype: str
@@ -84,7 +84,7 @@ class VersionMasterIdsDtoVersionModelVersionMasterDTO:
     def modifier(self, modifier):
         """Sets the modifier of this VersionMasterIdsDtoVersionModelVersionMasterDTO.
 
-        更新者。
+        **参数解释：**  更新者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param modifier: The modifier of this VersionMasterIdsDtoVersionModelVersionMasterDTO.
         :type modifier: str

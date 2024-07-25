@@ -35,13 +35,13 @@ class GenericLinkQueryDTO:
 
         The model defined in huaweicloud sdk
 
-        :param is_need_total: 是否需要查询总记录数。 - true：需要。 - false：不需要。
+        :param is_need_total: **参数解释：**  是否需要查询总记录数。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  false。 
         :type is_need_total: bool
-        :param latest_only: 是否返回源模型数据实例关联的最新版本目标模型数据实例。此参数仅对源/目标模型为M-V模型实体有效。 - true：返回源模型数据实例关联的最新版本的目标模型数据实例。 - false：返回源模型数据实例关联的所有版本的目标模型数据实例。默认为false。
+        :param latest_only: **参数解释：**  是否返回源模型数据实例关联的最新版本目标模型数据实例。此参数仅对源/目标模型为M-V模型实体有效。  **约束限制：**  不涉及。  **取值范围：**  - true：返回源模型数据实例关联的最新版本的目标模型数据实例。 - false：返回源模型数据实例关联的所有版本的目标模型数据实例。默认为false。  **默认取值：**  false。 
         :type latest_only: bool
-        :param object_id: 角色对应数据实例ID。
+        :param object_id: **参数解释：**  角色对应数据实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
         :type object_id: str
-        :param role: 角色。 - TARGET：目标模型。 - SOURCE：源模型。
+        :param role: **参数解释：**  角色。  **约束限制：**  不涉及。  **取值范围：**  - TARGET：目标模型。 - SOURCE：源模型。  **默认取值：**  不涉及。 
         :type role: str
         """
         
@@ -66,7 +66,7 @@ class GenericLinkQueryDTO:
     def is_need_total(self):
         """Gets the is_need_total of this GenericLinkQueryDTO.
 
-        是否需要查询总记录数。 - true：需要。 - false：不需要。
+        **参数解释：**  是否需要查询总记录数。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  false。 
 
         :return: The is_need_total of this GenericLinkQueryDTO.
         :rtype: bool
@@ -77,7 +77,7 @@ class GenericLinkQueryDTO:
     def is_need_total(self, is_need_total):
         """Sets the is_need_total of this GenericLinkQueryDTO.
 
-        是否需要查询总记录数。 - true：需要。 - false：不需要。
+        **参数解释：**  是否需要查询总记录数。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  false。 
 
         :param is_need_total: The is_need_total of this GenericLinkQueryDTO.
         :type is_need_total: bool
@@ -88,7 +88,7 @@ class GenericLinkQueryDTO:
     def latest_only(self):
         """Gets the latest_only of this GenericLinkQueryDTO.
 
-        是否返回源模型数据实例关联的最新版本目标模型数据实例。此参数仅对源/目标模型为M-V模型实体有效。 - true：返回源模型数据实例关联的最新版本的目标模型数据实例。 - false：返回源模型数据实例关联的所有版本的目标模型数据实例。默认为false。
+        **参数解释：**  是否返回源模型数据实例关联的最新版本目标模型数据实例。此参数仅对源/目标模型为M-V模型实体有效。  **约束限制：**  不涉及。  **取值范围：**  - true：返回源模型数据实例关联的最新版本的目标模型数据实例。 - false：返回源模型数据实例关联的所有版本的目标模型数据实例。默认为false。  **默认取值：**  false。 
 
         :return: The latest_only of this GenericLinkQueryDTO.
         :rtype: bool
@@ -99,7 +99,7 @@ class GenericLinkQueryDTO:
     def latest_only(self, latest_only):
         """Sets the latest_only of this GenericLinkQueryDTO.
 
-        是否返回源模型数据实例关联的最新版本目标模型数据实例。此参数仅对源/目标模型为M-V模型实体有效。 - true：返回源模型数据实例关联的最新版本的目标模型数据实例。 - false：返回源模型数据实例关联的所有版本的目标模型数据实例。默认为false。
+        **参数解释：**  是否返回源模型数据实例关联的最新版本目标模型数据实例。此参数仅对源/目标模型为M-V模型实体有效。  **约束限制：**  不涉及。  **取值范围：**  - true：返回源模型数据实例关联的最新版本的目标模型数据实例。 - false：返回源模型数据实例关联的所有版本的目标模型数据实例。默认为false。  **默认取值：**  false。 
 
         :param latest_only: The latest_only of this GenericLinkQueryDTO.
         :type latest_only: bool
@@ -110,7 +110,7 @@ class GenericLinkQueryDTO:
     def object_id(self):
         """Gets the object_id of this GenericLinkQueryDTO.
 
-        角色对应数据实例ID。
+        **参数解释：**  角色对应数据实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :return: The object_id of this GenericLinkQueryDTO.
         :rtype: str
@@ -121,7 +121,7 @@ class GenericLinkQueryDTO:
     def object_id(self, object_id):
         """Sets the object_id of this GenericLinkQueryDTO.
 
-        角色对应数据实例ID。
+        **参数解释：**  角色对应数据实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :param object_id: The object_id of this GenericLinkQueryDTO.
         :type object_id: str
@@ -132,7 +132,7 @@ class GenericLinkQueryDTO:
     def role(self):
         """Gets the role of this GenericLinkQueryDTO.
 
-        角色。 - TARGET：目标模型。 - SOURCE：源模型。
+        **参数解释：**  角色。  **约束限制：**  不涉及。  **取值范围：**  - TARGET：目标模型。 - SOURCE：源模型。  **默认取值：**  不涉及。 
 
         :return: The role of this GenericLinkQueryDTO.
         :rtype: str
@@ -143,7 +143,7 @@ class GenericLinkQueryDTO:
     def role(self, role):
         """Sets the role of this GenericLinkQueryDTO.
 
-        角色。 - TARGET：目标模型。 - SOURCE：源模型。
+        **参数解释：**  角色。  **约束限制：**  不涉及。  **取值范围：**  - TARGET：目标模型。 - SOURCE：源模型。  **默认取值：**  不涉及。 
 
         :param role: The role of this GenericLinkQueryDTO.
         :type role: str

@@ -31,9 +31,9 @@ class FuncInfo:
 
         The model defined in huaweicloud sdk
 
-        :param func: 指定简单函数名称。 - AVG：求平均值。 - COUNT：求总数。 - MAX：求最大值。 - MIX：求最小值。
+        :param func: **参数解释：**  指定简单函数名称。  **约束限制：**  不涉及。  **取值范围：**  - AVG：求平均值。 - COUNT：求总数。 - MAX：求最大值。 - MIX：求最小值。  **默认取值：**  不涉及。 
         :type func: str
-        :param func_by: 指定简单函数以哪个属性为维度操作。
+        :param func_by: **参数解释：**  指定简单函数以哪个属性为维度操作。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type func_by: str
         """
         
@@ -50,7 +50,7 @@ class FuncInfo:
     def func(self):
         """Gets the func of this FuncInfo.
 
-        指定简单函数名称。 - AVG：求平均值。 - COUNT：求总数。 - MAX：求最大值。 - MIX：求最小值。
+        **参数解释：**  指定简单函数名称。  **约束限制：**  不涉及。  **取值范围：**  - AVG：求平均值。 - COUNT：求总数。 - MAX：求最大值。 - MIX：求最小值。  **默认取值：**  不涉及。 
 
         :return: The func of this FuncInfo.
         :rtype: str
@@ -61,7 +61,7 @@ class FuncInfo:
     def func(self, func):
         """Sets the func of this FuncInfo.
 
-        指定简单函数名称。 - AVG：求平均值。 - COUNT：求总数。 - MAX：求最大值。 - MIX：求最小值。
+        **参数解释：**  指定简单函数名称。  **约束限制：**  不涉及。  **取值范围：**  - AVG：求平均值。 - COUNT：求总数。 - MAX：求最大值。 - MIX：求最小值。  **默认取值：**  不涉及。 
 
         :param func: The func of this FuncInfo.
         :type func: str
@@ -72,7 +72,7 @@ class FuncInfo:
     def func_by(self):
         """Gets the func_by of this FuncInfo.
 
-        指定简单函数以哪个属性为维度操作。
+        **参数解释：**  指定简单函数以哪个属性为维度操作。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The func_by of this FuncInfo.
         :rtype: str
@@ -83,7 +83,7 @@ class FuncInfo:
     def func_by(self, func_by):
         """Sets the func_by of this FuncInfo.
 
-        指定简单函数以哪个属性为维度操作。
+        **参数解释：**  指定简单函数以哪个属性为维度操作。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param func_by: The func_by of this FuncInfo.
         :type func_by: str

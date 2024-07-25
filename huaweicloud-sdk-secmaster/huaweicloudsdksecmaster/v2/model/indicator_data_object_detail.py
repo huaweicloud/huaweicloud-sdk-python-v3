@@ -85,7 +85,7 @@ class IndicatorDataObjectDetail:
         :type granular_marking: int
         :param name: 名称
         :type name: str
-        :param id: 情报ID
+        :param id: 威胁情报ID
         :type id: str
         :param project_id: 项目ID
         :type project_id: str
@@ -394,7 +394,7 @@ class IndicatorDataObjectDetail:
     def id(self):
         """Gets the id of this IndicatorDataObjectDetail.
 
-        情报ID
+        威胁情报ID
 
         :return: The id of this IndicatorDataObjectDetail.
         :rtype: str
@@ -405,7 +405,7 @@ class IndicatorDataObjectDetail:
     def id(self, id):
         """Sets the id of this IndicatorDataObjectDetail.
 
-        情报ID
+        威胁情报ID
 
         :param id: The id of this IndicatorDataObjectDetail.
         :type id: str

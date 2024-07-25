@@ -43,7 +43,7 @@ class MemberBase:
         :type host: str
         :param weight: 权重值。  允许您对后端服务进行评级，权重值越大，转发到该云服务的请求数量越多。
         :type weight: int
-        :param is_backup: 是否备用节点。  开启后对应后端服务为备用节点，仅当非备用节点全部故障时工作。  实例需要升级到对应版本才支持此功能，若不支持请联系技术支持。
+        :param is_backup: 是否备用节点。  开启后对应后端服务为备用节点，仅当非备用节点全部故障时工作。  实例需要升级到对应版本才支持此功能，如果不支持请联系技术支持。
         :type is_backup: bool
         :param member_group_name: 后端服务器组名称。为后端服务地址选择服务器组，便于统一修改对应服务器组的后端地址。
         :type member_group_name: str
@@ -124,7 +124,7 @@ class MemberBase:
     def is_backup(self):
         """Gets the is_backup of this MemberBase.
 
-        是否备用节点。  开启后对应后端服务为备用节点，仅当非备用节点全部故障时工作。  实例需要升级到对应版本才支持此功能，若不支持请联系技术支持。
+        是否备用节点。  开启后对应后端服务为备用节点，仅当非备用节点全部故障时工作。  实例需要升级到对应版本才支持此功能，如果不支持请联系技术支持。
 
         :return: The is_backup of this MemberBase.
         :rtype: bool
@@ -135,7 +135,7 @@ class MemberBase:
     def is_backup(self, is_backup):
         """Sets the is_backup of this MemberBase.
 
-        是否备用节点。  开启后对应后端服务为备用节点，仅当非备用节点全部故障时工作。  实例需要升级到对应版本才支持此功能，若不支持请联系技术支持。
+        是否备用节点。  开启后对应后端服务为备用节点，仅当非备用节点全部故障时工作。  实例需要升级到对应版本才支持此功能，如果不支持请联系技术支持。
 
         :param is_backup: The is_backup of this MemberBase.
         :type is_backup: bool

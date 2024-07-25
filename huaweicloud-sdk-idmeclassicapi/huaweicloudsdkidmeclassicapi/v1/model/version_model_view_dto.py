@@ -83,55 +83,55 @@ class VersionModelViewDTO:
 
         :param branch: 
         :type branch: :class:`huaweicloudsdkidmeclassicapi.v1.VersionModelBranchViewDTO`
-        :param check_out_time: 检出时间。
+        :param check_out_time: **参数解释：**  检出时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type check_out_time: str
-        :param check_out_user_name: 检出人。
+        :param check_out_user_name: **参数解释：**  检出人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type check_out_user_name: str
-        :param class_name: 类名。
+        :param class_name: **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type class_name: str
-        :param create_time: 创建时间。
+        :param create_time: **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type create_time: str
-        :param creator: 创建者。
+        :param creator: **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type creator: str
-        :param description: 描述信息。
+        :param description: **参数解释：**  描述信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type description: str
-        :param id: 唯一标识。
+        :param id: **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
         :type id: str
-        :param iteration: 迭代版本。
+        :param iteration: **参数解释：**  迭代版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type iteration: int
-        :param kiaguid: KIA密级。
+        :param kiaguid: **参数解释：**  KIA密级。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type kiaguid: str
-        :param last_update_time: 最后更新时间。
+        :param last_update_time: **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type last_update_time: str
-        :param latest: 是否为最新版本。 - true：是最新版本。 - false：不是最新版本。
+        :param latest: **参数解释：**  是否为最新版本。  **取值范围：**  - true：是最新版本。 - false：不是最新版本。  **默认取值：**  false。 
         :type latest: bool
-        :param latest_iteration: 是否为最新迭代版本。 - true：是最新迭代版本。 - false：不是最新迭代版本。
+        :param latest_iteration: **参数解释：**  是否为最新迭代版本。  **取值范围：**  - true：是最新迭代版本。 - false：不是最新迭代版本。  **默认取值：**  不涉及。 
         :type latest_iteration: bool
-        :param latest_version: 是否为最新修订版本。 - true：是最新修订版本。 - false：不是最新修订版本。
+        :param latest_version: **参数解释：**  是否为最新修订版本。  **取值范围：**  - true：是最新修订版本。 - false：不是最新修订版本。  **默认取值：**  不涉及。 
         :type latest_version: bool
         :param master: 
         :type master: :class:`huaweicloudsdkidmeclassicapi.v1.VersionModelMasterViewDTO`
-        :param modifier: 修改人。
+        :param modifier: **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type modifier: str
-        :param name: 中文名称。
+        :param name: **参数解释：**  中文名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type name: str
-        :param pre_version_id: 前序版本实例ID。
+        :param pre_version_id: **参数解释：**  前序版本实例ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type pre_version_id: str
-        :param rdm_delete_flag: 软删除标识，参数值为0或1。 - 0：表示未删除。 - 1：表示已删除。
+        :param rdm_delete_flag: **参数解释：**  软删除标识。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  0。 
         :type rdm_delete_flag: int
-        :param rdm_extension_type: 扩展类型。
+        :param rdm_extension_type: **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type rdm_extension_type: str
-        :param rdm_version: 系统版本。
+        :param rdm_version: **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type rdm_version: int
-        :param security_level: 安全密级。 - INTERNAL：内部公开。 - SECRET：秘密。 - CONFIDENTIAL：机密。 - TOP_SECRET：绝密。
+        :param security_level: **参数解释：**  安全密级。  **取值范围：**  - INTERNAL：内部公开。 - SECRET：秘密。 - CONFIDENTIAL：机密。 - TOP_SECRET：绝密。  **默认取值：**  不涉及。 
         :type security_level: str
         :param tenant: 
         :type tenant: :class:`huaweicloudsdkidmeclassicapi.v1.TenantViewDTO`
-        :param version: 版本号。
+        :param version: **参数解释：**  版本号。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type version: str
-        :param version_code: 业务版本内码。
+        :param version_code: **参数解释：**  业务版本内码。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type version_code: int
-        :param working_copy: 是否已检出。 - true：已检出。 - false：未检出。
+        :param working_copy: **参数解释：**  是否已检出。  **取值范围：**  - true：已检出。 - false：未检出。  **默认取值：**  false。 
         :type working_copy: bool
         :param working_state: 
         :type working_state: :class:`huaweicloudsdkidmeclassicapi.v1.WorkingState`
@@ -245,7 +245,7 @@ class VersionModelViewDTO:
     def check_out_time(self):
         """Gets the check_out_time of this VersionModelViewDTO.
 
-        检出时间。
+        **参数解释：**  检出时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The check_out_time of this VersionModelViewDTO.
         :rtype: str
@@ -256,7 +256,7 @@ class VersionModelViewDTO:
     def check_out_time(self, check_out_time):
         """Sets the check_out_time of this VersionModelViewDTO.
 
-        检出时间。
+        **参数解释：**  检出时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param check_out_time: The check_out_time of this VersionModelViewDTO.
         :type check_out_time: str
@@ -267,7 +267,7 @@ class VersionModelViewDTO:
     def check_out_user_name(self):
         """Gets the check_out_user_name of this VersionModelViewDTO.
 
-        检出人。
+        **参数解释：**  检出人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The check_out_user_name of this VersionModelViewDTO.
         :rtype: str
@@ -278,7 +278,7 @@ class VersionModelViewDTO:
     def check_out_user_name(self, check_out_user_name):
         """Sets the check_out_user_name of this VersionModelViewDTO.
 
-        检出人。
+        **参数解释：**  检出人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param check_out_user_name: The check_out_user_name of this VersionModelViewDTO.
         :type check_out_user_name: str
@@ -289,7 +289,7 @@ class VersionModelViewDTO:
     def class_name(self):
         """Gets the class_name of this VersionModelViewDTO.
 
-        类名。
+        **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The class_name of this VersionModelViewDTO.
         :rtype: str
@@ -300,7 +300,7 @@ class VersionModelViewDTO:
     def class_name(self, class_name):
         """Sets the class_name of this VersionModelViewDTO.
 
-        类名。
+        **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param class_name: The class_name of this VersionModelViewDTO.
         :type class_name: str
@@ -311,7 +311,7 @@ class VersionModelViewDTO:
     def create_time(self):
         """Gets the create_time of this VersionModelViewDTO.
 
-        创建时间。
+        **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The create_time of this VersionModelViewDTO.
         :rtype: str
@@ -322,7 +322,7 @@ class VersionModelViewDTO:
     def create_time(self, create_time):
         """Sets the create_time of this VersionModelViewDTO.
 
-        创建时间。
+        **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param create_time: The create_time of this VersionModelViewDTO.
         :type create_time: str
@@ -333,7 +333,7 @@ class VersionModelViewDTO:
     def creator(self):
         """Gets the creator of this VersionModelViewDTO.
 
-        创建者。
+        **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The creator of this VersionModelViewDTO.
         :rtype: str
@@ -344,7 +344,7 @@ class VersionModelViewDTO:
     def creator(self, creator):
         """Sets the creator of this VersionModelViewDTO.
 
-        创建者。
+        **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param creator: The creator of this VersionModelViewDTO.
         :type creator: str
@@ -355,7 +355,7 @@ class VersionModelViewDTO:
     def description(self):
         """Gets the description of this VersionModelViewDTO.
 
-        描述信息。
+        **参数解释：**  描述信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The description of this VersionModelViewDTO.
         :rtype: str
@@ -366,7 +366,7 @@ class VersionModelViewDTO:
     def description(self, description):
         """Sets the description of this VersionModelViewDTO.
 
-        描述信息。
+        **参数解释：**  描述信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param description: The description of this VersionModelViewDTO.
         :type description: str
@@ -377,7 +377,7 @@ class VersionModelViewDTO:
     def id(self):
         """Gets the id of this VersionModelViewDTO.
 
-        唯一标识。
+        **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :return: The id of this VersionModelViewDTO.
         :rtype: str
@@ -388,7 +388,7 @@ class VersionModelViewDTO:
     def id(self, id):
         """Sets the id of this VersionModelViewDTO.
 
-        唯一标识。
+        **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :param id: The id of this VersionModelViewDTO.
         :type id: str
@@ -399,7 +399,7 @@ class VersionModelViewDTO:
     def iteration(self):
         """Gets the iteration of this VersionModelViewDTO.
 
-        迭代版本。
+        **参数解释：**  迭代版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The iteration of this VersionModelViewDTO.
         :rtype: int
@@ -410,7 +410,7 @@ class VersionModelViewDTO:
     def iteration(self, iteration):
         """Sets the iteration of this VersionModelViewDTO.
 
-        迭代版本。
+        **参数解释：**  迭代版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param iteration: The iteration of this VersionModelViewDTO.
         :type iteration: int
@@ -421,7 +421,7 @@ class VersionModelViewDTO:
     def kiaguid(self):
         """Gets the kiaguid of this VersionModelViewDTO.
 
-        KIA密级。
+        **参数解释：**  KIA密级。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The kiaguid of this VersionModelViewDTO.
         :rtype: str
@@ -432,7 +432,7 @@ class VersionModelViewDTO:
     def kiaguid(self, kiaguid):
         """Sets the kiaguid of this VersionModelViewDTO.
 
-        KIA密级。
+        **参数解释：**  KIA密级。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param kiaguid: The kiaguid of this VersionModelViewDTO.
         :type kiaguid: str
@@ -443,7 +443,7 @@ class VersionModelViewDTO:
     def last_update_time(self):
         """Gets the last_update_time of this VersionModelViewDTO.
 
-        最后更新时间。
+        **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The last_update_time of this VersionModelViewDTO.
         :rtype: str
@@ -454,7 +454,7 @@ class VersionModelViewDTO:
     def last_update_time(self, last_update_time):
         """Sets the last_update_time of this VersionModelViewDTO.
 
-        最后更新时间。
+        **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param last_update_time: The last_update_time of this VersionModelViewDTO.
         :type last_update_time: str
@@ -465,7 +465,7 @@ class VersionModelViewDTO:
     def latest(self):
         """Gets the latest of this VersionModelViewDTO.
 
-        是否为最新版本。 - true：是最新版本。 - false：不是最新版本。
+        **参数解释：**  是否为最新版本。  **取值范围：**  - true：是最新版本。 - false：不是最新版本。  **默认取值：**  false。 
 
         :return: The latest of this VersionModelViewDTO.
         :rtype: bool
@@ -476,7 +476,7 @@ class VersionModelViewDTO:
     def latest(self, latest):
         """Sets the latest of this VersionModelViewDTO.
 
-        是否为最新版本。 - true：是最新版本。 - false：不是最新版本。
+        **参数解释：**  是否为最新版本。  **取值范围：**  - true：是最新版本。 - false：不是最新版本。  **默认取值：**  false。 
 
         :param latest: The latest of this VersionModelViewDTO.
         :type latest: bool
@@ -487,7 +487,7 @@ class VersionModelViewDTO:
     def latest_iteration(self):
         """Gets the latest_iteration of this VersionModelViewDTO.
 
-        是否为最新迭代版本。 - true：是最新迭代版本。 - false：不是最新迭代版本。
+        **参数解释：**  是否为最新迭代版本。  **取值范围：**  - true：是最新迭代版本。 - false：不是最新迭代版本。  **默认取值：**  不涉及。 
 
         :return: The latest_iteration of this VersionModelViewDTO.
         :rtype: bool
@@ -498,7 +498,7 @@ class VersionModelViewDTO:
     def latest_iteration(self, latest_iteration):
         """Sets the latest_iteration of this VersionModelViewDTO.
 
-        是否为最新迭代版本。 - true：是最新迭代版本。 - false：不是最新迭代版本。
+        **参数解释：**  是否为最新迭代版本。  **取值范围：**  - true：是最新迭代版本。 - false：不是最新迭代版本。  **默认取值：**  不涉及。 
 
         :param latest_iteration: The latest_iteration of this VersionModelViewDTO.
         :type latest_iteration: bool
@@ -509,7 +509,7 @@ class VersionModelViewDTO:
     def latest_version(self):
         """Gets the latest_version of this VersionModelViewDTO.
 
-        是否为最新修订版本。 - true：是最新修订版本。 - false：不是最新修订版本。
+        **参数解释：**  是否为最新修订版本。  **取值范围：**  - true：是最新修订版本。 - false：不是最新修订版本。  **默认取值：**  不涉及。 
 
         :return: The latest_version of this VersionModelViewDTO.
         :rtype: bool
@@ -520,7 +520,7 @@ class VersionModelViewDTO:
     def latest_version(self, latest_version):
         """Sets the latest_version of this VersionModelViewDTO.
 
-        是否为最新修订版本。 - true：是最新修订版本。 - false：不是最新修订版本。
+        **参数解释：**  是否为最新修订版本。  **取值范围：**  - true：是最新修订版本。 - false：不是最新修订版本。  **默认取值：**  不涉及。 
 
         :param latest_version: The latest_version of this VersionModelViewDTO.
         :type latest_version: bool
@@ -549,7 +549,7 @@ class VersionModelViewDTO:
     def modifier(self):
         """Gets the modifier of this VersionModelViewDTO.
 
-        修改人。
+        **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The modifier of this VersionModelViewDTO.
         :rtype: str
@@ -560,7 +560,7 @@ class VersionModelViewDTO:
     def modifier(self, modifier):
         """Sets the modifier of this VersionModelViewDTO.
 
-        修改人。
+        **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param modifier: The modifier of this VersionModelViewDTO.
         :type modifier: str
@@ -571,7 +571,7 @@ class VersionModelViewDTO:
     def name(self):
         """Gets the name of this VersionModelViewDTO.
 
-        中文名称。
+        **参数解释：**  中文名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The name of this VersionModelViewDTO.
         :rtype: str
@@ -582,7 +582,7 @@ class VersionModelViewDTO:
     def name(self, name):
         """Sets the name of this VersionModelViewDTO.
 
-        中文名称。
+        **参数解释：**  中文名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param name: The name of this VersionModelViewDTO.
         :type name: str
@@ -593,7 +593,7 @@ class VersionModelViewDTO:
     def pre_version_id(self):
         """Gets the pre_version_id of this VersionModelViewDTO.
 
-        前序版本实例ID。
+        **参数解释：**  前序版本实例ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The pre_version_id of this VersionModelViewDTO.
         :rtype: str
@@ -604,7 +604,7 @@ class VersionModelViewDTO:
     def pre_version_id(self, pre_version_id):
         """Sets the pre_version_id of this VersionModelViewDTO.
 
-        前序版本实例ID。
+        **参数解释：**  前序版本实例ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param pre_version_id: The pre_version_id of this VersionModelViewDTO.
         :type pre_version_id: str
@@ -615,7 +615,7 @@ class VersionModelViewDTO:
     def rdm_delete_flag(self):
         """Gets the rdm_delete_flag of this VersionModelViewDTO.
 
-        软删除标识，参数值为0或1。 - 0：表示未删除。 - 1：表示已删除。
+        **参数解释：**  软删除标识。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  0。 
 
         :return: The rdm_delete_flag of this VersionModelViewDTO.
         :rtype: int
@@ -626,7 +626,7 @@ class VersionModelViewDTO:
     def rdm_delete_flag(self, rdm_delete_flag):
         """Sets the rdm_delete_flag of this VersionModelViewDTO.
 
-        软删除标识，参数值为0或1。 - 0：表示未删除。 - 1：表示已删除。
+        **参数解释：**  软删除标识。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  0。 
 
         :param rdm_delete_flag: The rdm_delete_flag of this VersionModelViewDTO.
         :type rdm_delete_flag: int
@@ -637,7 +637,7 @@ class VersionModelViewDTO:
     def rdm_extension_type(self):
         """Gets the rdm_extension_type of this VersionModelViewDTO.
 
-        扩展类型。
+        **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The rdm_extension_type of this VersionModelViewDTO.
         :rtype: str
@@ -648,7 +648,7 @@ class VersionModelViewDTO:
     def rdm_extension_type(self, rdm_extension_type):
         """Sets the rdm_extension_type of this VersionModelViewDTO.
 
-        扩展类型。
+        **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param rdm_extension_type: The rdm_extension_type of this VersionModelViewDTO.
         :type rdm_extension_type: str
@@ -659,7 +659,7 @@ class VersionModelViewDTO:
     def rdm_version(self):
         """Gets the rdm_version of this VersionModelViewDTO.
 
-        系统版本。
+        **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The rdm_version of this VersionModelViewDTO.
         :rtype: int
@@ -670,7 +670,7 @@ class VersionModelViewDTO:
     def rdm_version(self, rdm_version):
         """Sets the rdm_version of this VersionModelViewDTO.
 
-        系统版本。
+        **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param rdm_version: The rdm_version of this VersionModelViewDTO.
         :type rdm_version: int
@@ -681,7 +681,7 @@ class VersionModelViewDTO:
     def security_level(self):
         """Gets the security_level of this VersionModelViewDTO.
 
-        安全密级。 - INTERNAL：内部公开。 - SECRET：秘密。 - CONFIDENTIAL：机密。 - TOP_SECRET：绝密。
+        **参数解释：**  安全密级。  **取值范围：**  - INTERNAL：内部公开。 - SECRET：秘密。 - CONFIDENTIAL：机密。 - TOP_SECRET：绝密。  **默认取值：**  不涉及。 
 
         :return: The security_level of this VersionModelViewDTO.
         :rtype: str
@@ -692,7 +692,7 @@ class VersionModelViewDTO:
     def security_level(self, security_level):
         """Sets the security_level of this VersionModelViewDTO.
 
-        安全密级。 - INTERNAL：内部公开。 - SECRET：秘密。 - CONFIDENTIAL：机密。 - TOP_SECRET：绝密。
+        **参数解释：**  安全密级。  **取值范围：**  - INTERNAL：内部公开。 - SECRET：秘密。 - CONFIDENTIAL：机密。 - TOP_SECRET：绝密。  **默认取值：**  不涉及。 
 
         :param security_level: The security_level of this VersionModelViewDTO.
         :type security_level: str
@@ -721,7 +721,7 @@ class VersionModelViewDTO:
     def version(self):
         """Gets the version of this VersionModelViewDTO.
 
-        版本号。
+        **参数解释：**  版本号。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The version of this VersionModelViewDTO.
         :rtype: str
@@ -732,7 +732,7 @@ class VersionModelViewDTO:
     def version(self, version):
         """Sets the version of this VersionModelViewDTO.
 
-        版本号。
+        **参数解释：**  版本号。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param version: The version of this VersionModelViewDTO.
         :type version: str
@@ -743,7 +743,7 @@ class VersionModelViewDTO:
     def version_code(self):
         """Gets the version_code of this VersionModelViewDTO.
 
-        业务版本内码。
+        **参数解释：**  业务版本内码。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The version_code of this VersionModelViewDTO.
         :rtype: int
@@ -754,7 +754,7 @@ class VersionModelViewDTO:
     def version_code(self, version_code):
         """Sets the version_code of this VersionModelViewDTO.
 
-        业务版本内码。
+        **参数解释：**  业务版本内码。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param version_code: The version_code of this VersionModelViewDTO.
         :type version_code: int
@@ -765,7 +765,7 @@ class VersionModelViewDTO:
     def working_copy(self):
         """Gets the working_copy of this VersionModelViewDTO.
 
-        是否已检出。 - true：已检出。 - false：未检出。
+        **参数解释：**  是否已检出。  **取值范围：**  - true：已检出。 - false：未检出。  **默认取值：**  false。 
 
         :return: The working_copy of this VersionModelViewDTO.
         :rtype: bool
@@ -776,7 +776,7 @@ class VersionModelViewDTO:
     def working_copy(self, working_copy):
         """Sets the working_copy of this VersionModelViewDTO.
 
-        是否已检出。 - true：已检出。 - false：未检出。
+        **参数解释：**  是否已检出。  **取值范围：**  - true：已检出。 - false：未检出。  **默认取值：**  false。 
 
         :param working_copy: The working_copy of this VersionModelViewDTO.
         :type working_copy: bool

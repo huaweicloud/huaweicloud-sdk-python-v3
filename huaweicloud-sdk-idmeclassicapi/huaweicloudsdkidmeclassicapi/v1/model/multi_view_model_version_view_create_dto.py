@@ -39,15 +39,15 @@ class MultiViewModelVersionViewCreateDTO:
 
         The model defined in huaweicloud sdk
 
-        :param modifier: 修改人。
+        :param modifier: **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type modifier: str
-        :param version_id: 版本对象ID。
+        :param version_id: **参数解释：**  版本对象ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type version_id: str
-        :param work_copy_type: 关系的复制类型。 - BOTH：若存在关系实例引用此数据实例作为源端实例或目标端实例，创建多维版本后的数据实例将继承这些关系实例。 - SOURCE：若存在关系实例引用此数据实例作为源端实例，创建多维版本后的数据实例将继承这些关系实例。 - TARGET：若存在关系实例引用此数据实例作为目标端实例，创建多维版本后的数据实例将继承这些关系实例。 - NONE：创建多维版本后的数据实例将不继承任何关系实例。 - CUSTOM：若指定的关系实体集合对应的关系实例引用此数据实例作为源端实例或目标端实例，创建多维版本后的数据实例将继承这些关系实例。
+        :param work_copy_type: **参数解释：**  关系的复制类型。  **约束限制：**  不涉及。  **取值范围：**  - BOTH：若存在关系实例引用此数据实例作为源端实例或目标端实例，创建多维版本后的数据实例将继承这些关系实例。 - SOURCE：若存在关系实例引用此数据实例作为源端实例，创建多维版本后的数据实例将继承这些关系实例。 - TARGET：若存在关系实例引用此数据实例作为目标端实例，创建多维版本后的数据实例将继承这些关系实例。 - NONE：创建多维版本后的数据实例将不继承任何关系实例。 - CUSTOM：若指定的关系实体集合对应的关系实例引用此数据实例作为源端实例或目标端实例，创建多维版本后的数据实例将继承这些关系实例。  **默认取值：**  不涉及。 
         :type work_copy_type: str
-        :param custom_link_set: 关系实体名称集合，与workCopyType的值CUSTOM配合使用。
+        :param custom_link_set: **参数解释：**  关系实体名称集合，与workCopyType的值CUSTOM配合使用。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type custom_link_set: list[str]
-        :param need_set_null: 指定不复制的属性，其值将被设置为null。
+        :param need_set_null: **参数解释：**  指定不复制的属性，其值将被设置为null。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type need_set_null: list[str]
         :param item: 
         :type item: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
@@ -78,7 +78,7 @@ class MultiViewModelVersionViewCreateDTO:
     def modifier(self):
         """Gets the modifier of this MultiViewModelVersionViewCreateDTO.
 
-        修改人。
+        **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The modifier of this MultiViewModelVersionViewCreateDTO.
         :rtype: str
@@ -89,7 +89,7 @@ class MultiViewModelVersionViewCreateDTO:
     def modifier(self, modifier):
         """Sets the modifier of this MultiViewModelVersionViewCreateDTO.
 
-        修改人。
+        **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param modifier: The modifier of this MultiViewModelVersionViewCreateDTO.
         :type modifier: str
@@ -100,7 +100,7 @@ class MultiViewModelVersionViewCreateDTO:
     def version_id(self):
         """Gets the version_id of this MultiViewModelVersionViewCreateDTO.
 
-        版本对象ID。
+        **参数解释：**  版本对象ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The version_id of this MultiViewModelVersionViewCreateDTO.
         :rtype: str
@@ -111,7 +111,7 @@ class MultiViewModelVersionViewCreateDTO:
     def version_id(self, version_id):
         """Sets the version_id of this MultiViewModelVersionViewCreateDTO.
 
-        版本对象ID。
+        **参数解释：**  版本对象ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param version_id: The version_id of this MultiViewModelVersionViewCreateDTO.
         :type version_id: str
@@ -122,7 +122,7 @@ class MultiViewModelVersionViewCreateDTO:
     def work_copy_type(self):
         """Gets the work_copy_type of this MultiViewModelVersionViewCreateDTO.
 
-        关系的复制类型。 - BOTH：若存在关系实例引用此数据实例作为源端实例或目标端实例，创建多维版本后的数据实例将继承这些关系实例。 - SOURCE：若存在关系实例引用此数据实例作为源端实例，创建多维版本后的数据实例将继承这些关系实例。 - TARGET：若存在关系实例引用此数据实例作为目标端实例，创建多维版本后的数据实例将继承这些关系实例。 - NONE：创建多维版本后的数据实例将不继承任何关系实例。 - CUSTOM：若指定的关系实体集合对应的关系实例引用此数据实例作为源端实例或目标端实例，创建多维版本后的数据实例将继承这些关系实例。
+        **参数解释：**  关系的复制类型。  **约束限制：**  不涉及。  **取值范围：**  - BOTH：若存在关系实例引用此数据实例作为源端实例或目标端实例，创建多维版本后的数据实例将继承这些关系实例。 - SOURCE：若存在关系实例引用此数据实例作为源端实例，创建多维版本后的数据实例将继承这些关系实例。 - TARGET：若存在关系实例引用此数据实例作为目标端实例，创建多维版本后的数据实例将继承这些关系实例。 - NONE：创建多维版本后的数据实例将不继承任何关系实例。 - CUSTOM：若指定的关系实体集合对应的关系实例引用此数据实例作为源端实例或目标端实例，创建多维版本后的数据实例将继承这些关系实例。  **默认取值：**  不涉及。 
 
         :return: The work_copy_type of this MultiViewModelVersionViewCreateDTO.
         :rtype: str
@@ -133,7 +133,7 @@ class MultiViewModelVersionViewCreateDTO:
     def work_copy_type(self, work_copy_type):
         """Sets the work_copy_type of this MultiViewModelVersionViewCreateDTO.
 
-        关系的复制类型。 - BOTH：若存在关系实例引用此数据实例作为源端实例或目标端实例，创建多维版本后的数据实例将继承这些关系实例。 - SOURCE：若存在关系实例引用此数据实例作为源端实例，创建多维版本后的数据实例将继承这些关系实例。 - TARGET：若存在关系实例引用此数据实例作为目标端实例，创建多维版本后的数据实例将继承这些关系实例。 - NONE：创建多维版本后的数据实例将不继承任何关系实例。 - CUSTOM：若指定的关系实体集合对应的关系实例引用此数据实例作为源端实例或目标端实例，创建多维版本后的数据实例将继承这些关系实例。
+        **参数解释：**  关系的复制类型。  **约束限制：**  不涉及。  **取值范围：**  - BOTH：若存在关系实例引用此数据实例作为源端实例或目标端实例，创建多维版本后的数据实例将继承这些关系实例。 - SOURCE：若存在关系实例引用此数据实例作为源端实例，创建多维版本后的数据实例将继承这些关系实例。 - TARGET：若存在关系实例引用此数据实例作为目标端实例，创建多维版本后的数据实例将继承这些关系实例。 - NONE：创建多维版本后的数据实例将不继承任何关系实例。 - CUSTOM：若指定的关系实体集合对应的关系实例引用此数据实例作为源端实例或目标端实例，创建多维版本后的数据实例将继承这些关系实例。  **默认取值：**  不涉及。 
 
         :param work_copy_type: The work_copy_type of this MultiViewModelVersionViewCreateDTO.
         :type work_copy_type: str
@@ -144,7 +144,7 @@ class MultiViewModelVersionViewCreateDTO:
     def custom_link_set(self):
         """Gets the custom_link_set of this MultiViewModelVersionViewCreateDTO.
 
-        关系实体名称集合，与workCopyType的值CUSTOM配合使用。
+        **参数解释：**  关系实体名称集合，与workCopyType的值CUSTOM配合使用。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The custom_link_set of this MultiViewModelVersionViewCreateDTO.
         :rtype: list[str]
@@ -155,7 +155,7 @@ class MultiViewModelVersionViewCreateDTO:
     def custom_link_set(self, custom_link_set):
         """Sets the custom_link_set of this MultiViewModelVersionViewCreateDTO.
 
-        关系实体名称集合，与workCopyType的值CUSTOM配合使用。
+        **参数解释：**  关系实体名称集合，与workCopyType的值CUSTOM配合使用。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param custom_link_set: The custom_link_set of this MultiViewModelVersionViewCreateDTO.
         :type custom_link_set: list[str]
@@ -166,7 +166,7 @@ class MultiViewModelVersionViewCreateDTO:
     def need_set_null(self):
         """Gets the need_set_null of this MultiViewModelVersionViewCreateDTO.
 
-        指定不复制的属性，其值将被设置为null。
+        **参数解释：**  指定不复制的属性，其值将被设置为null。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The need_set_null of this MultiViewModelVersionViewCreateDTO.
         :rtype: list[str]
@@ -177,7 +177,7 @@ class MultiViewModelVersionViewCreateDTO:
     def need_set_null(self, need_set_null):
         """Sets the need_set_null of this MultiViewModelVersionViewCreateDTO.
 
-        指定不复制的属性，其值将被设置为null。
+        **参数解释：**  指定不复制的属性，其值将被设置为null。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param need_set_null: The need_set_null of this MultiViewModelVersionViewCreateDTO.
         :type need_set_null: list[str]

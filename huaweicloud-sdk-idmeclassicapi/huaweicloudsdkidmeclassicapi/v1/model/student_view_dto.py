@@ -57,33 +57,33 @@ class StudentViewDTO:
 
         The model defined in huaweicloud sdk
 
-        :param class_name: 类名。
+        :param class_name: **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type class_name: str
-        :param create_time: 创建时间。
+        :param create_time: **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type create_time: str
-        :param creator: 创建者。
+        :param creator: **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type creator: str
-        :param description: 描述。
+        :param description: **参数解释：**  描述。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type description: str
-        :param grade: 成绩。
+        :param grade: **参数解释：**  成绩。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type grade: float
-        :param id: 唯一标识。
+        :param id: **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
         :type id: str
-        :param kiaguid: 关键信息资产ID。
+        :param kiaguid: **参数解释：**  关键信息资产ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type kiaguid: str
-        :param last_update_time: 最新更新时间。
+        :param last_update_time: **参数解释：**  最新更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type last_update_time: str
-        :param modifier: 修改人。
+        :param modifier: **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type modifier: str
-        :param name: 名称。
+        :param name: **参数解释：**  名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type name: str
-        :param rdm_delete_flag: 软删除标识，参数值为0或1。  - 0：表示未删除。  - 1：表示已删除。
+        :param rdm_delete_flag: **参数解释：**  软删除标识，参数值为0或1。  **取值范围：**  - 0：表示未删除。  - 1：表示已删除。  **默认取值：**  不涉及。 
         :type rdm_delete_flag: int
-        :param rdm_extension_type: 扩展类型。
+        :param rdm_extension_type: **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type rdm_extension_type: str
-        :param rdm_version: 系统版本。
+        :param rdm_version: **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type rdm_version: int
-        :param security_level: 安全密级。  - INTERNAL：内部公开。  - SECRET：秘密。  - CONFIDENTIAL：机密。  - TOP_SECRET：绝密。
+        :param security_level: **参数解释：**  安全密级。  **取值范围：**  - INTERNAL：内部公开。  - SECRET：秘密。  - CONFIDENTIAL：机密。  - TOP_SECRET：绝密。  **默认取值：**  不涉及。 
         :type security_level: str
         :param tenant: 
         :type tenant: :class:`huaweicloudsdkidmeclassicapi.v1.TenantViewDTO`
@@ -143,7 +143,7 @@ class StudentViewDTO:
     def class_name(self):
         """Gets the class_name of this StudentViewDTO.
 
-        类名。
+        **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The class_name of this StudentViewDTO.
         :rtype: str
@@ -154,7 +154,7 @@ class StudentViewDTO:
     def class_name(self, class_name):
         """Sets the class_name of this StudentViewDTO.
 
-        类名。
+        **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param class_name: The class_name of this StudentViewDTO.
         :type class_name: str
@@ -165,7 +165,7 @@ class StudentViewDTO:
     def create_time(self):
         """Gets the create_time of this StudentViewDTO.
 
-        创建时间。
+        **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The create_time of this StudentViewDTO.
         :rtype: str
@@ -176,7 +176,7 @@ class StudentViewDTO:
     def create_time(self, create_time):
         """Sets the create_time of this StudentViewDTO.
 
-        创建时间。
+        **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param create_time: The create_time of this StudentViewDTO.
         :type create_time: str
@@ -187,7 +187,7 @@ class StudentViewDTO:
     def creator(self):
         """Gets the creator of this StudentViewDTO.
 
-        创建者。
+        **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The creator of this StudentViewDTO.
         :rtype: str
@@ -198,7 +198,7 @@ class StudentViewDTO:
     def creator(self, creator):
         """Sets the creator of this StudentViewDTO.
 
-        创建者。
+        **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param creator: The creator of this StudentViewDTO.
         :type creator: str
@@ -209,7 +209,7 @@ class StudentViewDTO:
     def description(self):
         """Gets the description of this StudentViewDTO.
 
-        描述。
+        **参数解释：**  描述。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The description of this StudentViewDTO.
         :rtype: str
@@ -220,7 +220,7 @@ class StudentViewDTO:
     def description(self, description):
         """Sets the description of this StudentViewDTO.
 
-        描述。
+        **参数解释：**  描述。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param description: The description of this StudentViewDTO.
         :type description: str
@@ -231,7 +231,7 @@ class StudentViewDTO:
     def grade(self):
         """Gets the grade of this StudentViewDTO.
 
-        成绩。
+        **参数解释：**  成绩。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The grade of this StudentViewDTO.
         :rtype: float
@@ -242,7 +242,7 @@ class StudentViewDTO:
     def grade(self, grade):
         """Sets the grade of this StudentViewDTO.
 
-        成绩。
+        **参数解释：**  成绩。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param grade: The grade of this StudentViewDTO.
         :type grade: float
@@ -253,7 +253,7 @@ class StudentViewDTO:
     def id(self):
         """Gets the id of this StudentViewDTO.
 
-        唯一标识。
+        **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :return: The id of this StudentViewDTO.
         :rtype: str
@@ -264,7 +264,7 @@ class StudentViewDTO:
     def id(self, id):
         """Sets the id of this StudentViewDTO.
 
-        唯一标识。
+        **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :param id: The id of this StudentViewDTO.
         :type id: str
@@ -275,7 +275,7 @@ class StudentViewDTO:
     def kiaguid(self):
         """Gets the kiaguid of this StudentViewDTO.
 
-        关键信息资产ID。
+        **参数解释：**  关键信息资产ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The kiaguid of this StudentViewDTO.
         :rtype: str
@@ -286,7 +286,7 @@ class StudentViewDTO:
     def kiaguid(self, kiaguid):
         """Sets the kiaguid of this StudentViewDTO.
 
-        关键信息资产ID。
+        **参数解释：**  关键信息资产ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param kiaguid: The kiaguid of this StudentViewDTO.
         :type kiaguid: str
@@ -297,7 +297,7 @@ class StudentViewDTO:
     def last_update_time(self):
         """Gets the last_update_time of this StudentViewDTO.
 
-        最新更新时间。
+        **参数解释：**  最新更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The last_update_time of this StudentViewDTO.
         :rtype: str
@@ -308,7 +308,7 @@ class StudentViewDTO:
     def last_update_time(self, last_update_time):
         """Sets the last_update_time of this StudentViewDTO.
 
-        最新更新时间。
+        **参数解释：**  最新更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param last_update_time: The last_update_time of this StudentViewDTO.
         :type last_update_time: str
@@ -319,7 +319,7 @@ class StudentViewDTO:
     def modifier(self):
         """Gets the modifier of this StudentViewDTO.
 
-        修改人。
+        **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The modifier of this StudentViewDTO.
         :rtype: str
@@ -330,7 +330,7 @@ class StudentViewDTO:
     def modifier(self, modifier):
         """Sets the modifier of this StudentViewDTO.
 
-        修改人。
+        **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param modifier: The modifier of this StudentViewDTO.
         :type modifier: str
@@ -341,7 +341,7 @@ class StudentViewDTO:
     def name(self):
         """Gets the name of this StudentViewDTO.
 
-        名称。
+        **参数解释：**  名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The name of this StudentViewDTO.
         :rtype: str
@@ -352,7 +352,7 @@ class StudentViewDTO:
     def name(self, name):
         """Sets the name of this StudentViewDTO.
 
-        名称。
+        **参数解释：**  名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param name: The name of this StudentViewDTO.
         :type name: str
@@ -363,7 +363,7 @@ class StudentViewDTO:
     def rdm_delete_flag(self):
         """Gets the rdm_delete_flag of this StudentViewDTO.
 
-        软删除标识，参数值为0或1。  - 0：表示未删除。  - 1：表示已删除。
+        **参数解释：**  软删除标识，参数值为0或1。  **取值范围：**  - 0：表示未删除。  - 1：表示已删除。  **默认取值：**  不涉及。 
 
         :return: The rdm_delete_flag of this StudentViewDTO.
         :rtype: int
@@ -374,7 +374,7 @@ class StudentViewDTO:
     def rdm_delete_flag(self, rdm_delete_flag):
         """Sets the rdm_delete_flag of this StudentViewDTO.
 
-        软删除标识，参数值为0或1。  - 0：表示未删除。  - 1：表示已删除。
+        **参数解释：**  软删除标识，参数值为0或1。  **取值范围：**  - 0：表示未删除。  - 1：表示已删除。  **默认取值：**  不涉及。 
 
         :param rdm_delete_flag: The rdm_delete_flag of this StudentViewDTO.
         :type rdm_delete_flag: int
@@ -385,7 +385,7 @@ class StudentViewDTO:
     def rdm_extension_type(self):
         """Gets the rdm_extension_type of this StudentViewDTO.
 
-        扩展类型。
+        **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The rdm_extension_type of this StudentViewDTO.
         :rtype: str
@@ -396,7 +396,7 @@ class StudentViewDTO:
     def rdm_extension_type(self, rdm_extension_type):
         """Sets the rdm_extension_type of this StudentViewDTO.
 
-        扩展类型。
+        **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param rdm_extension_type: The rdm_extension_type of this StudentViewDTO.
         :type rdm_extension_type: str
@@ -407,7 +407,7 @@ class StudentViewDTO:
     def rdm_version(self):
         """Gets the rdm_version of this StudentViewDTO.
 
-        系统版本。
+        **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The rdm_version of this StudentViewDTO.
         :rtype: int
@@ -418,7 +418,7 @@ class StudentViewDTO:
     def rdm_version(self, rdm_version):
         """Sets the rdm_version of this StudentViewDTO.
 
-        系统版本。
+        **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param rdm_version: The rdm_version of this StudentViewDTO.
         :type rdm_version: int
@@ -429,7 +429,7 @@ class StudentViewDTO:
     def security_level(self):
         """Gets the security_level of this StudentViewDTO.
 
-        安全密级。  - INTERNAL：内部公开。  - SECRET：秘密。  - CONFIDENTIAL：机密。  - TOP_SECRET：绝密。
+        **参数解释：**  安全密级。  **取值范围：**  - INTERNAL：内部公开。  - SECRET：秘密。  - CONFIDENTIAL：机密。  - TOP_SECRET：绝密。  **默认取值：**  不涉及。 
 
         :return: The security_level of this StudentViewDTO.
         :rtype: str
@@ -440,7 +440,7 @@ class StudentViewDTO:
     def security_level(self, security_level):
         """Sets the security_level of this StudentViewDTO.
 
-        安全密级。  - INTERNAL：内部公开。  - SECRET：秘密。  - CONFIDENTIAL：机密。  - TOP_SECRET：绝密。
+        **参数解释：**  安全密级。  **取值范围：**  - INTERNAL：内部公开。  - SECRET：秘密。  - CONFIDENTIAL：机密。  - TOP_SECRET：绝密。  **默认取值：**  不涉及。 
 
         :param security_level: The security_level of this StudentViewDTO.
         :type security_level: str

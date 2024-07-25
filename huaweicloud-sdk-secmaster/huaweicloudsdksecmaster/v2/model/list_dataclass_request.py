@@ -19,8 +19,8 @@ class ListDataclassRequest:
     openapi_types = {
         'project_id': 'str',
         'workspace_id': 'str',
-        'offset': 'float',
-        'limit': 'float',
+        'offset': 'int',
+        'limit': 'int',
         'name': 'str',
         'business_code': 'str',
         'description': 'str',
@@ -48,9 +48,9 @@ class ListDataclassRequest:
         :param workspace_id: 工作空间id
         :type workspace_id: str
         :param offset: 偏移量
-        :type offset: float
+        :type offset: int
         :param limit: 数据量
-        :type limit: float
+        :type limit: int
         :param name: 名称查询
         :type name: str
         :param business_code: 业务编码
@@ -139,7 +139,7 @@ class ListDataclassRequest:
         偏移量
 
         :return: The offset of this ListDataclassRequest.
-        :rtype: float
+        :rtype: int
         """
         return self._offset
 
@@ -150,7 +150,7 @@ class ListDataclassRequest:
         偏移量
 
         :param offset: The offset of this ListDataclassRequest.
-        :type offset: float
+        :type offset: int
         """
         self._offset = offset
 
@@ -161,7 +161,7 @@ class ListDataclassRequest:
         数据量
 
         :return: The limit of this ListDataclassRequest.
-        :rtype: float
+        :rtype: int
         """
         return self._limit
 
@@ -172,7 +172,7 @@ class ListDataclassRequest:
         数据量
 
         :param limit: The limit of this ListDataclassRequest.
-        :type limit: float
+        :type limit: int
         """
         self._limit = limit
 

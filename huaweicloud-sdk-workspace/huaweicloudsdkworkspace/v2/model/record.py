@@ -17,6 +17,8 @@ class Record:
     sensitive_list = []
 
     openapi_types = {
+        'sid': 'str',
+        'transaction_id': 'str',
         'computer_name': 'str',
         'user_name': 'str',
         'terminal_mac': 'str',
@@ -30,10 +32,14 @@ class Record:
         'connection_setup_time': 'str',
         'connection_end_time': 'str',
         'is_reconnect': 'bool',
-        'connection_failure_reason': 'str'
+        'connection_failure_reason': 'str',
+        'network_rtt': 'int',
+        'e2e_rtt': 'int'
     }
 
     attribute_map = {
+        'sid': 'sid',
+        'transaction_id': 'transaction_id',
         'computer_name': 'computer_name',
         'user_name': 'user_name',
         'terminal_mac': 'terminal_mac',
@@ -47,14 +53,20 @@ class Record:
         'connection_setup_time': 'connection_setup_time',
         'connection_end_time': 'connection_end_time',
         'is_reconnect': 'is_reconnect',
-        'connection_failure_reason': 'connection_failure_reason'
+        'connection_failure_reason': 'connection_failure_reason',
+        'network_rtt': 'network_rtt',
+        'e2e_rtt': 'e2e_rtt'
     }
 
-    def __init__(self, computer_name=None, user_name=None, terminal_mac=None, terminal_name=None, terminal_ip=None, client_version=None, terminal_type=None, agent_version=None, desktop_ip=None, connection_start_time=None, connection_setup_time=None, connection_end_time=None, is_reconnect=None, connection_failure_reason=None):
+    def __init__(self, sid=None, transaction_id=None, computer_name=None, user_name=None, terminal_mac=None, terminal_name=None, terminal_ip=None, client_version=None, terminal_type=None, agent_version=None, desktop_ip=None, connection_start_time=None, connection_setup_time=None, connection_end_time=None, is_reconnect=None, connection_failure_reason=None, network_rtt=None, e2e_rtt=None):
         """Record
 
         The model defined in huaweicloud sdk
 
+        :param sid: 桌面sid
+        :type sid: str
+        :param transaction_id: 事务id
+        :type transaction_id: str
         :param computer_name: 计算机名。
         :type computer_name: str
         :param user_name: 用户名。
@@ -83,10 +95,16 @@ class Record:
         :type is_reconnect: bool
         :param connection_failure_reason: 连接失败原因。
         :type connection_failure_reason: str
+        :param network_rtt: 网络时延ms
+        :type network_rtt: int
+        :param e2e_rtt: 端到端时延 ms
+        :type e2e_rtt: int
         """
         
         
 
+        self._sid = None
+        self._transaction_id = None
         self._computer_name = None
         self._user_name = None
         self._terminal_mac = None
@@ -101,8 +119,14 @@ class Record:
         self._connection_end_time = None
         self._is_reconnect = None
         self._connection_failure_reason = None
+        self._network_rtt = None
+        self._e2e_rtt = None
         self.discriminator = None
 
+        if sid is not None:
+            self.sid = sid
+        if transaction_id is not None:
+            self.transaction_id = transaction_id
         if computer_name is not None:
             self.computer_name = computer_name
         if user_name is not None:
@@ -131,6 +155,54 @@ class Record:
             self.is_reconnect = is_reconnect
         if connection_failure_reason is not None:
             self.connection_failure_reason = connection_failure_reason
+        if network_rtt is not None:
+            self.network_rtt = network_rtt
+        if e2e_rtt is not None:
+            self.e2e_rtt = e2e_rtt
+
+    @property
+    def sid(self):
+        """Gets the sid of this Record.
+
+        桌面sid
+
+        :return: The sid of this Record.
+        :rtype: str
+        """
+        return self._sid
+
+    @sid.setter
+    def sid(self, sid):
+        """Sets the sid of this Record.
+
+        桌面sid
+
+        :param sid: The sid of this Record.
+        :type sid: str
+        """
+        self._sid = sid
+
+    @property
+    def transaction_id(self):
+        """Gets the transaction_id of this Record.
+
+        事务id
+
+        :return: The transaction_id of this Record.
+        :rtype: str
+        """
+        return self._transaction_id
+
+    @transaction_id.setter
+    def transaction_id(self, transaction_id):
+        """Sets the transaction_id of this Record.
+
+        事务id
+
+        :param transaction_id: The transaction_id of this Record.
+        :type transaction_id: str
+        """
+        self._transaction_id = transaction_id
 
     @property
     def computer_name(self):
@@ -439,6 +511,50 @@ class Record:
         :type connection_failure_reason: str
         """
         self._connection_failure_reason = connection_failure_reason
+
+    @property
+    def network_rtt(self):
+        """Gets the network_rtt of this Record.
+
+        网络时延ms
+
+        :return: The network_rtt of this Record.
+        :rtype: int
+        """
+        return self._network_rtt
+
+    @network_rtt.setter
+    def network_rtt(self, network_rtt):
+        """Sets the network_rtt of this Record.
+
+        网络时延ms
+
+        :param network_rtt: The network_rtt of this Record.
+        :type network_rtt: int
+        """
+        self._network_rtt = network_rtt
+
+    @property
+    def e2e_rtt(self):
+        """Gets the e2e_rtt of this Record.
+
+        端到端时延 ms
+
+        :return: The e2e_rtt of this Record.
+        :rtype: int
+        """
+        return self._e2e_rtt
+
+    @e2e_rtt.setter
+    def e2e_rtt(self, e2e_rtt):
+        """Sets the e2e_rtt of this Record.
+
+        端到端时延 ms
+
+        :param e2e_rtt: The e2e_rtt of this Record.
+        :type e2e_rtt: int
+        """
+        self._e2e_rtt = e2e_rtt
 
     def to_dict(self):
         """Returns the model properties as a dict"""

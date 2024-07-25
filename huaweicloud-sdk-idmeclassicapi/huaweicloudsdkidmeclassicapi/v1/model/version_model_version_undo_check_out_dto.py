@@ -31,9 +31,9 @@ class VersionModelVersionUndoCheckOutDTO:
 
         The model defined in huaweicloud sdk
 
-        :param master_id: 主对象ID。
+        :param master_id: **参数解释：**  主对象ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
         :type master_id: str
-        :param modifier: 更新者。
+        :param modifier: **参数解释：**  更新者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type modifier: str
         """
         
@@ -51,7 +51,7 @@ class VersionModelVersionUndoCheckOutDTO:
     def master_id(self):
         """Gets the master_id of this VersionModelVersionUndoCheckOutDTO.
 
-        主对象ID。
+        **参数解释：**  主对象ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :return: The master_id of this VersionModelVersionUndoCheckOutDTO.
         :rtype: str
@@ -62,7 +62,7 @@ class VersionModelVersionUndoCheckOutDTO:
     def master_id(self, master_id):
         """Sets the master_id of this VersionModelVersionUndoCheckOutDTO.
 
-        主对象ID。
+        **参数解释：**  主对象ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :param master_id: The master_id of this VersionModelVersionUndoCheckOutDTO.
         :type master_id: str
@@ -73,7 +73,7 @@ class VersionModelVersionUndoCheckOutDTO:
     def modifier(self):
         """Gets the modifier of this VersionModelVersionUndoCheckOutDTO.
 
-        更新者。
+        **参数解释：**  更新者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The modifier of this VersionModelVersionUndoCheckOutDTO.
         :rtype: str
@@ -84,7 +84,7 @@ class VersionModelVersionUndoCheckOutDTO:
     def modifier(self, modifier):
         """Sets the modifier of this VersionModelVersionUndoCheckOutDTO.
 
-        更新者。
+        **参数解释：**  更新者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param modifier: The modifier of this VersionModelVersionUndoCheckOutDTO.
         :type modifier: str

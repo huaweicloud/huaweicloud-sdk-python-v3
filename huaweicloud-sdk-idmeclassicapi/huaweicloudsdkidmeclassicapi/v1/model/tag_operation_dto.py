@@ -31,9 +31,9 @@ class TagOperationDTO:
 
         The model defined in huaweicloud sdk
 
-        :param object_id: 数据实例ID。
+        :param object_id: **参数解释：**  数据实例ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type object_id: str
-        :param tag_id: 标签ID。
+        :param tag_id: **参数解释：**  标签ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
         :type tag_id: str
         """
         
@@ -50,7 +50,7 @@ class TagOperationDTO:
     def object_id(self):
         """Gets the object_id of this TagOperationDTO.
 
-        数据实例ID。
+        **参数解释：**  数据实例ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The object_id of this TagOperationDTO.
         :rtype: str
@@ -61,7 +61,7 @@ class TagOperationDTO:
     def object_id(self, object_id):
         """Sets the object_id of this TagOperationDTO.
 
-        数据实例ID。
+        **参数解释：**  数据实例ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param object_id: The object_id of this TagOperationDTO.
         :type object_id: str
@@ -72,7 +72,7 @@ class TagOperationDTO:
     def tag_id(self):
         """Gets the tag_id of this TagOperationDTO.
 
-        标签ID。
+        **参数解释：**  标签ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :return: The tag_id of this TagOperationDTO.
         :rtype: str
@@ -83,7 +83,7 @@ class TagOperationDTO:
     def tag_id(self, tag_id):
         """Sets the tag_id of this TagOperationDTO.
 
-        标签ID。
+        **参数解释：**  标签ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :param tag_id: The tag_id of this TagOperationDTO.
         :type tag_id: str

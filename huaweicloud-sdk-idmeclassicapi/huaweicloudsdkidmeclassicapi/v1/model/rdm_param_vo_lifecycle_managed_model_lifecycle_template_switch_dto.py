@@ -33,7 +33,7 @@ class RDMParamVOLifecycleManagedModelLifecycleTemplateSwitchDTO:
 
         :param params: 
         :type params: :class:`huaweicloudsdkidmeclassicapi.v1.LifecycleManagedModelLifecycleTemplateSwitchDTO`
-        :param application_id: 应用ID。
+        :param application_id: **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。 
         :type application_id: str
         """
         
@@ -70,7 +70,7 @@ class RDMParamVOLifecycleManagedModelLifecycleTemplateSwitchDTO:
     def application_id(self):
         """Gets the application_id of this RDMParamVOLifecycleManagedModelLifecycleTemplateSwitchDTO.
 
-        应用ID。
+        **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。 
 
         :return: The application_id of this RDMParamVOLifecycleManagedModelLifecycleTemplateSwitchDTO.
         :rtype: str
@@ -81,7 +81,7 @@ class RDMParamVOLifecycleManagedModelLifecycleTemplateSwitchDTO:
     def application_id(self, application_id):
         """Sets the application_id of this RDMParamVOLifecycleManagedModelLifecycleTemplateSwitchDTO.
 
-        应用ID。
+        **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。 
 
         :param application_id: The application_id of this RDMParamVOLifecycleManagedModelLifecycleTemplateSwitchDTO.
         :type application_id: str

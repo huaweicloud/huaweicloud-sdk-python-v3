@@ -27,7 +27,8 @@ class CambodianIdCardRequestBody:
         'detect_blur': 'bool',
         'detect_glare': 'bool',
         'return_adjusted_image': 'bool',
-        'detect_tampering': 'bool'
+        'detect_tampering': 'bool',
+        'detect_reproduce': 'bool'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class CambodianIdCardRequestBody:
         'detect_blur': 'detect_blur',
         'detect_glare': 'detect_glare',
         'return_adjusted_image': 'return_adjusted_image',
-        'detect_tampering': 'detect_tampering'
+        'detect_tampering': 'detect_tampering',
+        'detect_reproduce': 'detect_reproduce'
     }
 
-    def __init__(self, image=None, url=None, return_portrait_image=None, return_portrait_location=None, return_idcard_type=None, detect_border_integrity=None, detect_blocking_within_border=None, detect_blur=None, detect_glare=None, return_adjusted_image=None, detect_tampering=None):
+    def __init__(self, image=None, url=None, return_portrait_image=None, return_portrait_location=None, return_idcard_type=None, detect_border_integrity=None, detect_blocking_within_border=None, detect_blur=None, detect_glare=None, return_adjusted_image=None, detect_tampering=None, detect_reproduce=None):
         """CambodianIdCardRequestBody
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class CambodianIdCardRequestBody:
         :type return_adjusted_image: bool
         :param detect_tampering: 返回身份证人像是否被篡改的告警结果的开关，可选值如下所示 - true:  打开身份证人像是否被篡改的告警功能  - false：关闭身份证人像被篡改的告警功能 不支持精细化的P图 
         :type detect_tampering: bool
+        :param detect_reproduce: 返回判断身份证图像是否经过翻拍告警的开关，可选值如下所示 - true:打开判断身份证图像是否经过翻拍告警的功能  - false:关闭判断身份证图像是否经过翻拍告警的功能 
+        :type detect_reproduce: bool
         """
         
         
@@ -86,6 +90,7 @@ class CambodianIdCardRequestBody:
         self._detect_glare = None
         self._return_adjusted_image = None
         self._detect_tampering = None
+        self._detect_reproduce = None
         self.discriminator = None
 
         if image is not None:
@@ -110,6 +115,8 @@ class CambodianIdCardRequestBody:
             self.return_adjusted_image = return_adjusted_image
         if detect_tampering is not None:
             self.detect_tampering = detect_tampering
+        if detect_reproduce is not None:
+            self.detect_reproduce = detect_reproduce
 
     @property
     def image(self):
@@ -352,6 +359,28 @@ class CambodianIdCardRequestBody:
         :type detect_tampering: bool
         """
         self._detect_tampering = detect_tampering
+
+    @property
+    def detect_reproduce(self):
+        """Gets the detect_reproduce of this CambodianIdCardRequestBody.
+
+        返回判断身份证图像是否经过翻拍告警的开关，可选值如下所示 - true:打开判断身份证图像是否经过翻拍告警的功能  - false:关闭判断身份证图像是否经过翻拍告警的功能 
+
+        :return: The detect_reproduce of this CambodianIdCardRequestBody.
+        :rtype: bool
+        """
+        return self._detect_reproduce
+
+    @detect_reproduce.setter
+    def detect_reproduce(self, detect_reproduce):
+        """Sets the detect_reproduce of this CambodianIdCardRequestBody.
+
+        返回判断身份证图像是否经过翻拍告警的开关，可选值如下所示 - true:打开判断身份证图像是否经过翻拍告警的功能  - false:关闭判断身份证图像是否经过翻拍告警的功能 
+
+        :param detect_reproduce: The detect_reproduce of this CambodianIdCardRequestBody.
+        :type detect_reproduce: bool
+        """
+        self._detect_reproduce = detect_reproduce
 
     def to_dict(self):
         """Returns the model properties as a dict"""

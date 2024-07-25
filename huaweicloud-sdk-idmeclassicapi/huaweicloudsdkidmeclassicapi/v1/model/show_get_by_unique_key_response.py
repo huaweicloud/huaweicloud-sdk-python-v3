@@ -34,11 +34,11 @@ class ShowGetByUniqueKeyResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param result: 请求结果。
+        :param result: **参数解释：**  请求结果。  **取值范围：**  - SUCCESS：请求成功。 - FAIL：请求失败。  **默认取值：**  不涉及。 
         :type result: str
         :param data: 请求数据。
         :type data: list[:class:`huaweicloudsdkidmeclassicapi.v1.PersistableModelViewDTO`]
-        :param errors: 异常信息。
+        :param errors: **参数解释：**  异常信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type errors: list[str]
         """
         
@@ -60,7 +60,7 @@ class ShowGetByUniqueKeyResponse(SdkResponse):
     def result(self):
         """Gets the result of this ShowGetByUniqueKeyResponse.
 
-        请求结果。
+        **参数解释：**  请求结果。  **取值范围：**  - SUCCESS：请求成功。 - FAIL：请求失败。  **默认取值：**  不涉及。 
 
         :return: The result of this ShowGetByUniqueKeyResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class ShowGetByUniqueKeyResponse(SdkResponse):
     def result(self, result):
         """Sets the result of this ShowGetByUniqueKeyResponse.
 
-        请求结果。
+        **参数解释：**  请求结果。  **取值范围：**  - SUCCESS：请求成功。 - FAIL：请求失败。  **默认取值：**  不涉及。 
 
         :param result: The result of this ShowGetByUniqueKeyResponse.
         :type result: str
@@ -104,7 +104,7 @@ class ShowGetByUniqueKeyResponse(SdkResponse):
     def errors(self):
         """Gets the errors of this ShowGetByUniqueKeyResponse.
 
-        异常信息。
+        **参数解释：**  异常信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The errors of this ShowGetByUniqueKeyResponse.
         :rtype: list[str]
@@ -115,7 +115,7 @@ class ShowGetByUniqueKeyResponse(SdkResponse):
     def errors(self, errors):
         """Sets the errors of this ShowGetByUniqueKeyResponse.
 
-        异常信息。
+        **参数解释：**  异常信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param errors: The errors of this ShowGetByUniqueKeyResponse.
         :type errors: list[str]

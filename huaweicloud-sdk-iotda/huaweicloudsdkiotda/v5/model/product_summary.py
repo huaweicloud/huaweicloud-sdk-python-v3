@@ -59,7 +59,7 @@ class ProductSummary:
         :type name: str
         :param device_type: 设备类型。
         :type device_type: str
-        :param protocol_type: 设备使用的协议类型。取值范围：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF， OPC-UA，OPC-DA，Other。
+        :param protocol_type: 设备使用的协议类型。取值范围：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF， OPC-UA，OPC-DA，Other，TCP，UDP。
         :type protocol_type: str
         :param data_format: 设备上报数据的格式，取值范围：json，binary。
         :type data_format: str
@@ -225,7 +225,7 @@ class ProductSummary:
     def protocol_type(self):
         """Gets the protocol_type of this ProductSummary.
 
-        设备使用的协议类型。取值范围：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF， OPC-UA，OPC-DA，Other。
+        设备使用的协议类型。取值范围：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF， OPC-UA，OPC-DA，Other，TCP，UDP。
 
         :return: The protocol_type of this ProductSummary.
         :rtype: str
@@ -236,7 +236,7 @@ class ProductSummary:
     def protocol_type(self, protocol_type):
         """Sets the protocol_type of this ProductSummary.
 
-        设备使用的协议类型。取值范围：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF， OPC-UA，OPC-DA，Other。
+        设备使用的协议类型。取值范围：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF， OPC-UA，OPC-DA，Other，TCP，UDP。
 
         :param protocol_type: The protocol_type of this ProductSummary.
         :type protocol_type: str

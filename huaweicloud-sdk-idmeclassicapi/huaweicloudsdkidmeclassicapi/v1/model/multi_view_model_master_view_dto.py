@@ -47,23 +47,23 @@ class MultiViewModelMasterViewDTO:
 
         The model defined in huaweicloud sdk
 
-        :param class_name: 类名。
+        :param class_name: **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type class_name: str
-        :param create_time: 创建时间。
+        :param create_time: **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type create_time: str
-        :param creator: 创建者。
+        :param creator: **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type creator: str
-        :param id: 唯一标识。
+        :param id: **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
         :type id: str
-        :param last_update_time: 最后更新时间。
+        :param last_update_time: **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type last_update_time: str
-        :param modifier: 修改人。
+        :param modifier: **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type modifier: str
-        :param rdm_delete_flag: 软删除标识，参数值为0或1。 - 0：表示未删除。 - 1：表示已删除。
+        :param rdm_delete_flag: **参数解释：**  软删除标识，参数值为0或1。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  不涉及。 
         :type rdm_delete_flag: int
-        :param rdm_extension_type: 扩展类型。
+        :param rdm_extension_type: **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type rdm_extension_type: str
-        :param rdm_version: 系统版本。
+        :param rdm_version: **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type rdm_version: int
         :param tenant: 
         :type tenant: :class:`huaweicloudsdkidmeclassicapi.v1.TenantViewDTO`
@@ -108,7 +108,7 @@ class MultiViewModelMasterViewDTO:
     def class_name(self):
         """Gets the class_name of this MultiViewModelMasterViewDTO.
 
-        类名。
+        **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The class_name of this MultiViewModelMasterViewDTO.
         :rtype: str
@@ -119,7 +119,7 @@ class MultiViewModelMasterViewDTO:
     def class_name(self, class_name):
         """Sets the class_name of this MultiViewModelMasterViewDTO.
 
-        类名。
+        **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param class_name: The class_name of this MultiViewModelMasterViewDTO.
         :type class_name: str
@@ -130,7 +130,7 @@ class MultiViewModelMasterViewDTO:
     def create_time(self):
         """Gets the create_time of this MultiViewModelMasterViewDTO.
 
-        创建时间。
+        **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The create_time of this MultiViewModelMasterViewDTO.
         :rtype: str
@@ -141,7 +141,7 @@ class MultiViewModelMasterViewDTO:
     def create_time(self, create_time):
         """Sets the create_time of this MultiViewModelMasterViewDTO.
 
-        创建时间。
+        **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param create_time: The create_time of this MultiViewModelMasterViewDTO.
         :type create_time: str
@@ -152,7 +152,7 @@ class MultiViewModelMasterViewDTO:
     def creator(self):
         """Gets the creator of this MultiViewModelMasterViewDTO.
 
-        创建者。
+        **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The creator of this MultiViewModelMasterViewDTO.
         :rtype: str
@@ -163,7 +163,7 @@ class MultiViewModelMasterViewDTO:
     def creator(self, creator):
         """Sets the creator of this MultiViewModelMasterViewDTO.
 
-        创建者。
+        **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param creator: The creator of this MultiViewModelMasterViewDTO.
         :type creator: str
@@ -174,7 +174,7 @@ class MultiViewModelMasterViewDTO:
     def id(self):
         """Gets the id of this MultiViewModelMasterViewDTO.
 
-        唯一标识。
+        **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :return: The id of this MultiViewModelMasterViewDTO.
         :rtype: str
@@ -185,7 +185,7 @@ class MultiViewModelMasterViewDTO:
     def id(self, id):
         """Sets the id of this MultiViewModelMasterViewDTO.
 
-        唯一标识。
+        **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :param id: The id of this MultiViewModelMasterViewDTO.
         :type id: str
@@ -196,7 +196,7 @@ class MultiViewModelMasterViewDTO:
     def last_update_time(self):
         """Gets the last_update_time of this MultiViewModelMasterViewDTO.
 
-        最后更新时间。
+        **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The last_update_time of this MultiViewModelMasterViewDTO.
         :rtype: str
@@ -207,7 +207,7 @@ class MultiViewModelMasterViewDTO:
     def last_update_time(self, last_update_time):
         """Sets the last_update_time of this MultiViewModelMasterViewDTO.
 
-        最后更新时间。
+        **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param last_update_time: The last_update_time of this MultiViewModelMasterViewDTO.
         :type last_update_time: str
@@ -218,7 +218,7 @@ class MultiViewModelMasterViewDTO:
     def modifier(self):
         """Gets the modifier of this MultiViewModelMasterViewDTO.
 
-        修改人。
+        **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The modifier of this MultiViewModelMasterViewDTO.
         :rtype: str
@@ -229,7 +229,7 @@ class MultiViewModelMasterViewDTO:
     def modifier(self, modifier):
         """Sets the modifier of this MultiViewModelMasterViewDTO.
 
-        修改人。
+        **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param modifier: The modifier of this MultiViewModelMasterViewDTO.
         :type modifier: str
@@ -240,7 +240,7 @@ class MultiViewModelMasterViewDTO:
     def rdm_delete_flag(self):
         """Gets the rdm_delete_flag of this MultiViewModelMasterViewDTO.
 
-        软删除标识，参数值为0或1。 - 0：表示未删除。 - 1：表示已删除。
+        **参数解释：**  软删除标识，参数值为0或1。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  不涉及。 
 
         :return: The rdm_delete_flag of this MultiViewModelMasterViewDTO.
         :rtype: int
@@ -251,7 +251,7 @@ class MultiViewModelMasterViewDTO:
     def rdm_delete_flag(self, rdm_delete_flag):
         """Sets the rdm_delete_flag of this MultiViewModelMasterViewDTO.
 
-        软删除标识，参数值为0或1。 - 0：表示未删除。 - 1：表示已删除。
+        **参数解释：**  软删除标识，参数值为0或1。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  不涉及。 
 
         :param rdm_delete_flag: The rdm_delete_flag of this MultiViewModelMasterViewDTO.
         :type rdm_delete_flag: int
@@ -262,7 +262,7 @@ class MultiViewModelMasterViewDTO:
     def rdm_extension_type(self):
         """Gets the rdm_extension_type of this MultiViewModelMasterViewDTO.
 
-        扩展类型。
+        **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The rdm_extension_type of this MultiViewModelMasterViewDTO.
         :rtype: str
@@ -273,7 +273,7 @@ class MultiViewModelMasterViewDTO:
     def rdm_extension_type(self, rdm_extension_type):
         """Sets the rdm_extension_type of this MultiViewModelMasterViewDTO.
 
-        扩展类型。
+        **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param rdm_extension_type: The rdm_extension_type of this MultiViewModelMasterViewDTO.
         :type rdm_extension_type: str
@@ -284,7 +284,7 @@ class MultiViewModelMasterViewDTO:
     def rdm_version(self):
         """Gets the rdm_version of this MultiViewModelMasterViewDTO.
 
-        系统版本。
+        **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The rdm_version of this MultiViewModelMasterViewDTO.
         :rtype: int
@@ -295,7 +295,7 @@ class MultiViewModelMasterViewDTO:
     def rdm_version(self, rdm_version):
         """Sets the rdm_version of this MultiViewModelMasterViewDTO.
 
-        系统版本。
+        **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param rdm_version: The rdm_version of this MultiViewModelMasterViewDTO.
         :type rdm_version: int

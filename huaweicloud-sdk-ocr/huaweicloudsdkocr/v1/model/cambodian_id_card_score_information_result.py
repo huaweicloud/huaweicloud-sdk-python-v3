@@ -22,7 +22,8 @@ class CambodianIdCardScoreInformationResult:
         'blocking_within_border_score': 'int',
         'blur_score': 'int',
         'glare_score': 'int',
-        'tampering_score': 'int'
+        'tampering_score': 'int',
+        'reproduce_score': 'int'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class CambodianIdCardScoreInformationResult:
         'blocking_within_border_score': 'blocking_within_border_score',
         'blur_score': 'blur_score',
         'glare_score': 'glare_score',
-        'tampering_score': 'tampering_score'
+        'tampering_score': 'tampering_score',
+        'reproduce_score': 'reproduce_score'
     }
 
-    def __init__(self, idcard_type_score=None, border_integrity_score=None, blocking_within_border_score=None, blur_score=None, glare_score=None, tampering_score=None):
+    def __init__(self, idcard_type_score=None, border_integrity_score=None, blocking_within_border_score=None, blur_score=None, glare_score=None, tampering_score=None, reproduce_score=None):
         """CambodianIdCardScoreInformationResult
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class CambodianIdCardScoreInformationResult:
         :type glare_score: int
         :param tampering_score: 告警分数，字段取值范围[0, 99]值大于50表示身份证人像被其他非身份证人像篡改过，小于50表示身份证人像未被篡改，值越靠近99，表示身份证人像被篡改的可能性越大，值越靠近0，表示身份证未人像被篡改的可能性越大。 仅在传入参数detect_tampering为true时，返回该字段。 
         :type tampering_score: int
+        :param reproduce_score: 告警分数，字段取值范围[0, 99]值大于50表示身份证经过翻拍，小于50表示身份证未经过翻拍，值越靠近99，表示身份证图像被翻拍过的可能性越大，值越靠近0，表示身份证图像未被翻拍的可能性越大。 仅在传入参数detect_reproduce为true时，返回该字段。 
+        :type reproduce_score: int
         """
         
         
@@ -61,6 +65,7 @@ class CambodianIdCardScoreInformationResult:
         self._blur_score = None
         self._glare_score = None
         self._tampering_score = None
+        self._reproduce_score = None
         self.discriminator = None
 
         if idcard_type_score is not None:
@@ -75,6 +80,8 @@ class CambodianIdCardScoreInformationResult:
             self.glare_score = glare_score
         if tampering_score is not None:
             self.tampering_score = tampering_score
+        if reproduce_score is not None:
+            self.reproduce_score = reproduce_score
 
     @property
     def idcard_type_score(self):
@@ -207,6 +214,28 @@ class CambodianIdCardScoreInformationResult:
         :type tampering_score: int
         """
         self._tampering_score = tampering_score
+
+    @property
+    def reproduce_score(self):
+        """Gets the reproduce_score of this CambodianIdCardScoreInformationResult.
+
+        告警分数，字段取值范围[0, 99]值大于50表示身份证经过翻拍，小于50表示身份证未经过翻拍，值越靠近99，表示身份证图像被翻拍过的可能性越大，值越靠近0，表示身份证图像未被翻拍的可能性越大。 仅在传入参数detect_reproduce为true时，返回该字段。 
+
+        :return: The reproduce_score of this CambodianIdCardScoreInformationResult.
+        :rtype: int
+        """
+        return self._reproduce_score
+
+    @reproduce_score.setter
+    def reproduce_score(self, reproduce_score):
+        """Sets the reproduce_score of this CambodianIdCardScoreInformationResult.
+
+        告警分数，字段取值范围[0, 99]值大于50表示身份证经过翻拍，小于50表示身份证未经过翻拍，值越靠近99，表示身份证图像被翻拍过的可能性越大，值越靠近0，表示身份证图像未被翻拍的可能性越大。 仅在传入参数detect_reproduce为true时，返回该字段。 
+
+        :param reproduce_score: The reproduce_score of this CambodianIdCardScoreInformationResult.
+        :type reproduce_score: int
+        """
+        self._reproduce_score = reproduce_score
 
     def to_dict(self):
         """Returns the model properties as a dict"""

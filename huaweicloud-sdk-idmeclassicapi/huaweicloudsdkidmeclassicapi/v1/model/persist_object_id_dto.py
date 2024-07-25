@@ -29,7 +29,7 @@ class PersistObjectIdDTO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 数据实例ID。
+        :param id: **参数解释：**  数据实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
         :type id: str
         """
         
@@ -44,7 +44,7 @@ class PersistObjectIdDTO:
     def id(self):
         """Gets the id of this PersistObjectIdDTO.
 
-        数据实例ID。
+        **参数解释：**  数据实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :return: The id of this PersistObjectIdDTO.
         :rtype: str
@@ -55,7 +55,7 @@ class PersistObjectIdDTO:
     def id(self, id):
         """Sets the id of this PersistObjectIdDTO.
 
-        数据实例ID。
+        **参数解释：**  数据实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :param id: The id of this PersistObjectIdDTO.
         :type id: str

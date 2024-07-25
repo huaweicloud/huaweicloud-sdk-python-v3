@@ -35,13 +35,13 @@ class WorkingState:
 
         The model defined in huaweicloud sdk
 
-        :param alias: 别名。
+        :param alias: **参数解释：**  别名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type alias: str
-        :param cn_name: 中文名称。
+        :param cn_name: **参数解释：**  中文名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type cn_name: str
-        :param code: 编码。
+        :param code: **参数解释：**  编码。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type code: str
-        :param en_name: 英文名称。
+        :param en_name: **参数解释：**  英文名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type en_name: str
         """
         
@@ -66,7 +66,7 @@ class WorkingState:
     def alias(self):
         """Gets the alias of this WorkingState.
 
-        别名。
+        **参数解释：**  别名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The alias of this WorkingState.
         :rtype: str
@@ -77,7 +77,7 @@ class WorkingState:
     def alias(self, alias):
         """Sets the alias of this WorkingState.
 
-        别名。
+        **参数解释：**  别名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param alias: The alias of this WorkingState.
         :type alias: str
@@ -88,7 +88,7 @@ class WorkingState:
     def cn_name(self):
         """Gets the cn_name of this WorkingState.
 
-        中文名称。
+        **参数解释：**  中文名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The cn_name of this WorkingState.
         :rtype: str
@@ -99,7 +99,7 @@ class WorkingState:
     def cn_name(self, cn_name):
         """Sets the cn_name of this WorkingState.
 
-        中文名称。
+        **参数解释：**  中文名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param cn_name: The cn_name of this WorkingState.
         :type cn_name: str
@@ -110,7 +110,7 @@ class WorkingState:
     def code(self):
         """Gets the code of this WorkingState.
 
-        编码。
+        **参数解释：**  编码。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The code of this WorkingState.
         :rtype: str
@@ -121,7 +121,7 @@ class WorkingState:
     def code(self, code):
         """Sets the code of this WorkingState.
 
-        编码。
+        **参数解释：**  编码。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param code: The code of this WorkingState.
         :type code: str
@@ -132,7 +132,7 @@ class WorkingState:
     def en_name(self):
         """Gets the en_name of this WorkingState.
 
-        英文名称。
+        **参数解释：**  英文名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The en_name of this WorkingState.
         :rtype: str
@@ -143,7 +143,7 @@ class WorkingState:
     def en_name(self, en_name):
         """Sets the en_name of this WorkingState.
 
-        英文名称。
+        **参数解释：**  英文名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param en_name: The en_name of this WorkingState.
         :type en_name: str

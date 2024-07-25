@@ -33,11 +33,11 @@ class VersionModelVersionUpdateDTO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 唯一标识。
+        :param id: **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
         :type id: str
-        :param iteration: 迭代版本。
+        :param iteration: **参数解释：**  迭代版本。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type iteration: int
-        :param version: 版本号。
+        :param version: **参数解释：**  版本号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type version: str
         """
         
@@ -57,7 +57,7 @@ class VersionModelVersionUpdateDTO:
     def id(self):
         """Gets the id of this VersionModelVersionUpdateDTO.
 
-        唯一标识。
+        **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :return: The id of this VersionModelVersionUpdateDTO.
         :rtype: str
@@ -68,7 +68,7 @@ class VersionModelVersionUpdateDTO:
     def id(self, id):
         """Sets the id of this VersionModelVersionUpdateDTO.
 
-        唯一标识。
+        **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :param id: The id of this VersionModelVersionUpdateDTO.
         :type id: str
@@ -79,7 +79,7 @@ class VersionModelVersionUpdateDTO:
     def iteration(self):
         """Gets the iteration of this VersionModelVersionUpdateDTO.
 
-        迭代版本。
+        **参数解释：**  迭代版本。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The iteration of this VersionModelVersionUpdateDTO.
         :rtype: int
@@ -90,7 +90,7 @@ class VersionModelVersionUpdateDTO:
     def iteration(self, iteration):
         """Sets the iteration of this VersionModelVersionUpdateDTO.
 
-        迭代版本。
+        **参数解释：**  迭代版本。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param iteration: The iteration of this VersionModelVersionUpdateDTO.
         :type iteration: int
@@ -101,7 +101,7 @@ class VersionModelVersionUpdateDTO:
     def version(self):
         """Gets the version of this VersionModelVersionUpdateDTO.
 
-        版本号。
+        **参数解释：**  版本号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The version of this VersionModelVersionUpdateDTO.
         :rtype: str
@@ -112,7 +112,7 @@ class VersionModelVersionUpdateDTO:
     def version(self, version):
         """Sets the version of this VersionModelVersionUpdateDTO.
 
-        版本号。
+        **参数解释：**  版本号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param version: The version of this VersionModelVersionUpdateDTO.
         :type version: str

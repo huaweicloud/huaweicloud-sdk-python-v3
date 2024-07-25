@@ -21,11 +21,11 @@ class CreateDataobjectRelationsResponse(SdkResponse):
         'code': 'str',
         'message': 'str',
         'request_id': 'str',
-        'success': 'bool',
         'total': 'int',
         'limit': 'int',
         'offset': 'int',
-        'data': 'DataResponse',
+        'success': 'bool',
+        'data': 'BatchOperateDataobjectResult',
         'x_request_id': 'str'
     }
 
@@ -33,35 +33,35 @@ class CreateDataobjectRelationsResponse(SdkResponse):
         'code': 'code',
         'message': 'message',
         'request_id': 'request_id',
-        'success': 'success',
         'total': 'total',
         'limit': 'limit',
         'offset': 'offset',
+        'success': 'success',
         'data': 'data',
         'x_request_id': 'X-request-id'
     }
 
-    def __init__(self, code=None, message=None, request_id=None, success=None, total=None, limit=None, offset=None, data=None, x_request_id=None):
+    def __init__(self, code=None, message=None, request_id=None, total=None, limit=None, offset=None, success=None, data=None, x_request_id=None):
         """CreateDataobjectRelationsResponse
 
         The model defined in huaweicloud sdk
 
-        :param code: Id value
+        :param code: 错误码
         :type code: str
-        :param message: Error message
+        :param message: 错误信息
         :type message: str
-        :param request_id: Error message
+        :param request_id: 请求ID
         :type request_id: str
-        :param success: Error message
-        :type success: bool
-        :param total: tatal count
+        :param total: 总数
         :type total: int
-        :param limit: current page count
+        :param limit: 分页大小
         :type limit: int
-        :param offset: current page size
+        :param offset: 偏移量
         :type offset: int
+        :param success: 是否成功
+        :type success: bool
         :param data: 
-        :type data: :class:`huaweicloudsdksecmaster.v2.DataResponse`
+        :type data: :class:`huaweicloudsdksecmaster.v2.BatchOperateDataobjectResult`
         :param x_request_id: 
         :type x_request_id: str
         """
@@ -71,10 +71,10 @@ class CreateDataobjectRelationsResponse(SdkResponse):
         self._code = None
         self._message = None
         self._request_id = None
-        self._success = None
         self._total = None
         self._limit = None
         self._offset = None
+        self._success = None
         self._data = None
         self._x_request_id = None
         self.discriminator = None
@@ -85,14 +85,14 @@ class CreateDataobjectRelationsResponse(SdkResponse):
             self.message = message
         if request_id is not None:
             self.request_id = request_id
-        if success is not None:
-            self.success = success
         if total is not None:
             self.total = total
         if limit is not None:
             self.limit = limit
         if offset is not None:
             self.offset = offset
+        if success is not None:
+            self.success = success
         if data is not None:
             self.data = data
         if x_request_id is not None:
@@ -102,7 +102,7 @@ class CreateDataobjectRelationsResponse(SdkResponse):
     def code(self):
         """Gets the code of this CreateDataobjectRelationsResponse.
 
-        Id value
+        错误码
 
         :return: The code of this CreateDataobjectRelationsResponse.
         :rtype: str
@@ -113,7 +113,7 @@ class CreateDataobjectRelationsResponse(SdkResponse):
     def code(self, code):
         """Sets the code of this CreateDataobjectRelationsResponse.
 
-        Id value
+        错误码
 
         :param code: The code of this CreateDataobjectRelationsResponse.
         :type code: str
@@ -124,7 +124,7 @@ class CreateDataobjectRelationsResponse(SdkResponse):
     def message(self):
         """Gets the message of this CreateDataobjectRelationsResponse.
 
-        Error message
+        错误信息
 
         :return: The message of this CreateDataobjectRelationsResponse.
         :rtype: str
@@ -135,7 +135,7 @@ class CreateDataobjectRelationsResponse(SdkResponse):
     def message(self, message):
         """Sets the message of this CreateDataobjectRelationsResponse.
 
-        Error message
+        错误信息
 
         :param message: The message of this CreateDataobjectRelationsResponse.
         :type message: str
@@ -146,7 +146,7 @@ class CreateDataobjectRelationsResponse(SdkResponse):
     def request_id(self):
         """Gets the request_id of this CreateDataobjectRelationsResponse.
 
-        Error message
+        请求ID
 
         :return: The request_id of this CreateDataobjectRelationsResponse.
         :rtype: str
@@ -157,7 +157,7 @@ class CreateDataobjectRelationsResponse(SdkResponse):
     def request_id(self, request_id):
         """Sets the request_id of this CreateDataobjectRelationsResponse.
 
-        Error message
+        请求ID
 
         :param request_id: The request_id of this CreateDataobjectRelationsResponse.
         :type request_id: str
@@ -165,32 +165,10 @@ class CreateDataobjectRelationsResponse(SdkResponse):
         self._request_id = request_id
 
     @property
-    def success(self):
-        """Gets the success of this CreateDataobjectRelationsResponse.
-
-        Error message
-
-        :return: The success of this CreateDataobjectRelationsResponse.
-        :rtype: bool
-        """
-        return self._success
-
-    @success.setter
-    def success(self, success):
-        """Sets the success of this CreateDataobjectRelationsResponse.
-
-        Error message
-
-        :param success: The success of this CreateDataobjectRelationsResponse.
-        :type success: bool
-        """
-        self._success = success
-
-    @property
     def total(self):
         """Gets the total of this CreateDataobjectRelationsResponse.
 
-        tatal count
+        总数
 
         :return: The total of this CreateDataobjectRelationsResponse.
         :rtype: int
@@ -201,7 +179,7 @@ class CreateDataobjectRelationsResponse(SdkResponse):
     def total(self, total):
         """Sets the total of this CreateDataobjectRelationsResponse.
 
-        tatal count
+        总数
 
         :param total: The total of this CreateDataobjectRelationsResponse.
         :type total: int
@@ -212,7 +190,7 @@ class CreateDataobjectRelationsResponse(SdkResponse):
     def limit(self):
         """Gets the limit of this CreateDataobjectRelationsResponse.
 
-        current page count
+        分页大小
 
         :return: The limit of this CreateDataobjectRelationsResponse.
         :rtype: int
@@ -223,7 +201,7 @@ class CreateDataobjectRelationsResponse(SdkResponse):
     def limit(self, limit):
         """Sets the limit of this CreateDataobjectRelationsResponse.
 
-        current page count
+        分页大小
 
         :param limit: The limit of this CreateDataobjectRelationsResponse.
         :type limit: int
@@ -234,7 +212,7 @@ class CreateDataobjectRelationsResponse(SdkResponse):
     def offset(self):
         """Gets the offset of this CreateDataobjectRelationsResponse.
 
-        current page size
+        偏移量
 
         :return: The offset of this CreateDataobjectRelationsResponse.
         :rtype: int
@@ -245,7 +223,7 @@ class CreateDataobjectRelationsResponse(SdkResponse):
     def offset(self, offset):
         """Sets the offset of this CreateDataobjectRelationsResponse.
 
-        current page size
+        偏移量
 
         :param offset: The offset of this CreateDataobjectRelationsResponse.
         :type offset: int
@@ -253,11 +231,33 @@ class CreateDataobjectRelationsResponse(SdkResponse):
         self._offset = offset
 
     @property
+    def success(self):
+        """Gets the success of this CreateDataobjectRelationsResponse.
+
+        是否成功
+
+        :return: The success of this CreateDataobjectRelationsResponse.
+        :rtype: bool
+        """
+        return self._success
+
+    @success.setter
+    def success(self, success):
+        """Sets the success of this CreateDataobjectRelationsResponse.
+
+        是否成功
+
+        :param success: The success of this CreateDataobjectRelationsResponse.
+        :type success: bool
+        """
+        self._success = success
+
+    @property
     def data(self):
         """Gets the data of this CreateDataobjectRelationsResponse.
 
         :return: The data of this CreateDataobjectRelationsResponse.
-        :rtype: :class:`huaweicloudsdksecmaster.v2.DataResponse`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.BatchOperateDataobjectResult`
         """
         return self._data
 
@@ -266,7 +266,7 @@ class CreateDataobjectRelationsResponse(SdkResponse):
         """Sets the data of this CreateDataobjectRelationsResponse.
 
         :param data: The data of this CreateDataobjectRelationsResponse.
-        :type data: :class:`huaweicloudsdksecmaster.v2.DataResponse`
+        :type data: :class:`huaweicloudsdksecmaster.v2.BatchOperateDataobjectResult`
         """
         self._data = data
 

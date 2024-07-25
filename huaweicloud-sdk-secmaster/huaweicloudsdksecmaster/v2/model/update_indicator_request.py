@@ -39,7 +39,7 @@ class UpdateIndicatorRequest:
         :type project_id: str
         :param workspace_id: 工作空间ID
         :type workspace_id: str
-        :param indicator_id: 情报ID
+        :param indicator_id: 威胁情报ID
         :type indicator_id: str
         :param body: Body of the UpdateIndicatorRequest
         :type body: :class:`huaweicloudsdksecmaster.v2.UpdateIndicatorRequestBody`
@@ -107,7 +107,7 @@ class UpdateIndicatorRequest:
     def indicator_id(self):
         """Gets the indicator_id of this UpdateIndicatorRequest.
 
-        情报ID
+        威胁情报ID
 
         :return: The indicator_id of this UpdateIndicatorRequest.
         :rtype: str
@@ -118,7 +118,7 @@ class UpdateIndicatorRequest:
     def indicator_id(self, indicator_id):
         """Sets the indicator_id of this UpdateIndicatorRequest.
 
-        情报ID
+        威胁情报ID
 
         :param indicator_id: The indicator_id of this UpdateIndicatorRequest.
         :type indicator_id: str

@@ -78,16 +78,12 @@ class ScanJobRequest:
         self._use_nlp = None
         self.discriminator = None
 
-        if asset_ids is not None:
-            self.asset_ids = asset_ids
-        if cycle is not None:
-            self.cycle = cycle
-        if name is not None:
-            self.name = name
+        self.asset_ids = asset_ids
+        self.cycle = cycle
+        self.name = name
         if open is not None:
             self.open = open
-        if rule_group_ids is not None:
-            self.rule_group_ids = rule_group_ids
+        self.rule_group_ids = rule_group_ids
         if start_time is not None:
             self.start_time = start_time
         if time_zone is not None:

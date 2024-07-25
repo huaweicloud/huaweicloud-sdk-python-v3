@@ -372,6 +372,7 @@ class VpcClient(Client):
 
         为指定的端口资源实例批量删除标签。
         此接口为幂等接口：删除时，如果删除的标签不存在，默认处理成功；删除时不对标签字符集范围做校验。删除时tags结构体不能缺失，key不能为空，或者空字符串。
+        该接口在华南-深圳上线。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

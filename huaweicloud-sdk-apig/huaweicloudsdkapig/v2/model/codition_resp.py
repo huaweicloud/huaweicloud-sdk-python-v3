@@ -24,6 +24,8 @@ class CoditionResp:
         'condition_type': 'str',
         'condition_origin': 'str',
         'condition_value': 'str',
+        'mapped_param_name': 'str',
+        'mapped_param_location': 'str',
         'id': 'str',
         'req_param_id': 'str',
         'req_param_location': 'str'
@@ -37,12 +39,14 @@ class CoditionResp:
         'condition_type': 'condition_type',
         'condition_origin': 'condition_origin',
         'condition_value': 'condition_value',
+        'mapped_param_name': 'mapped_param_name',
+        'mapped_param_location': 'mapped_param_location',
         'id': 'id',
         'req_param_id': 'req_param_id',
         'req_param_location': 'req_param_location'
     }
 
-    def __init__(self, req_param_name=None, sys_param_name=None, cookie_param_name=None, frontend_authorizer_param_name=None, condition_type=None, condition_origin=None, condition_value=None, id=None, req_param_id=None, req_param_location=None):
+    def __init__(self, req_param_name=None, sys_param_name=None, cookie_param_name=None, frontend_authorizer_param_name=None, condition_type=None, condition_origin=None, condition_value=None, mapped_param_name=None, mapped_param_location=None, id=None, req_param_id=None, req_param_location=None):
         """CoditionResp
 
         The model defined in huaweicloud sdk
@@ -59,8 +63,12 @@ class CoditionResp:
         :type condition_type: str
         :param condition_origin: 策略类型 - param：参数 - source：源IP - system: 系统参数-网关内置参数 - cookie: COOKIE参数 - frontend_authorizer: 系统参数-前端认证参数
         :type condition_origin: str
-        :param condition_value: 策略值。策略类型为param，source，cookie，frontend_authorizer时必填
+        :param condition_value: 策略值。
         :type condition_value: str
+        :param mapped_param_name: 参数编排规则编排后生成的参数名称，当condition_origin为orchestration的时候必填，并且生成的参数名称必须在api绑定的编排规则中存在
+        :type mapped_param_name: str
+        :param mapped_param_location: 参数编排规则编排后生成的参数所在的位置，当condition_origin为orchestration的时候必填，并且生成的参数所在的位置必须在api绑定的编排规则中存在
+        :type mapped_param_location: str
         :param id: 编号
         :type id: str
         :param req_param_id: 关联的请求参数对象编号
@@ -78,6 +86,8 @@ class CoditionResp:
         self._condition_type = None
         self._condition_origin = None
         self._condition_value = None
+        self._mapped_param_name = None
+        self._mapped_param_location = None
         self._id = None
         self._req_param_id = None
         self._req_param_location = None
@@ -95,6 +105,10 @@ class CoditionResp:
             self.condition_type = condition_type
         self.condition_origin = condition_origin
         self.condition_value = condition_value
+        if mapped_param_name is not None:
+            self.mapped_param_name = mapped_param_name
+        if mapped_param_location is not None:
+            self.mapped_param_location = mapped_param_location
         if id is not None:
             self.id = id
         if req_param_id is not None:
@@ -238,7 +252,7 @@ class CoditionResp:
     def condition_value(self):
         """Gets the condition_value of this CoditionResp.
 
-        策略值。策略类型为param，source，cookie，frontend_authorizer时必填
+        策略值。
 
         :return: The condition_value of this CoditionResp.
         :rtype: str
@@ -249,12 +263,56 @@ class CoditionResp:
     def condition_value(self, condition_value):
         """Sets the condition_value of this CoditionResp.
 
-        策略值。策略类型为param，source，cookie，frontend_authorizer时必填
+        策略值。
 
         :param condition_value: The condition_value of this CoditionResp.
         :type condition_value: str
         """
         self._condition_value = condition_value
+
+    @property
+    def mapped_param_name(self):
+        """Gets the mapped_param_name of this CoditionResp.
+
+        参数编排规则编排后生成的参数名称，当condition_origin为orchestration的时候必填，并且生成的参数名称必须在api绑定的编排规则中存在
+
+        :return: The mapped_param_name of this CoditionResp.
+        :rtype: str
+        """
+        return self._mapped_param_name
+
+    @mapped_param_name.setter
+    def mapped_param_name(self, mapped_param_name):
+        """Sets the mapped_param_name of this CoditionResp.
+
+        参数编排规则编排后生成的参数名称，当condition_origin为orchestration的时候必填，并且生成的参数名称必须在api绑定的编排规则中存在
+
+        :param mapped_param_name: The mapped_param_name of this CoditionResp.
+        :type mapped_param_name: str
+        """
+        self._mapped_param_name = mapped_param_name
+
+    @property
+    def mapped_param_location(self):
+        """Gets the mapped_param_location of this CoditionResp.
+
+        参数编排规则编排后生成的参数所在的位置，当condition_origin为orchestration的时候必填，并且生成的参数所在的位置必须在api绑定的编排规则中存在
+
+        :return: The mapped_param_location of this CoditionResp.
+        :rtype: str
+        """
+        return self._mapped_param_location
+
+    @mapped_param_location.setter
+    def mapped_param_location(self, mapped_param_location):
+        """Sets the mapped_param_location of this CoditionResp.
+
+        参数编排规则编排后生成的参数所在的位置，当condition_origin为orchestration的时候必填，并且生成的参数所在的位置必须在api绑定的编排规则中存在
+
+        :param mapped_param_location: The mapped_param_location of this CoditionResp.
+        :type mapped_param_location: str
+        """
+        self._mapped_param_location = mapped_param_location
 
     @property
     def id(self):

@@ -33,7 +33,7 @@ class BatchCreateUsingPostRequest:
 
         The model defined in huaweicloud sdk
 
-        :param identifier: 应用ID。
+        :param identifier: **参数解释：**  应用唯一标识。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
         :type identifier: str
         :param model_name: 数据模型的英文名称。
         :type model_name: str
@@ -57,7 +57,7 @@ class BatchCreateUsingPostRequest:
     def identifier(self):
         """Gets the identifier of this BatchCreateUsingPostRequest.
 
-        应用ID。
+        **参数解释：**  应用唯一标识。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
 
         :return: The identifier of this BatchCreateUsingPostRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class BatchCreateUsingPostRequest:
     def identifier(self, identifier):
         """Sets the identifier of this BatchCreateUsingPostRequest.
 
-        应用ID。
+        **参数解释：**  应用唯一标识。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
 
         :param identifier: The identifier of this BatchCreateUsingPostRequest.
         :type identifier: str

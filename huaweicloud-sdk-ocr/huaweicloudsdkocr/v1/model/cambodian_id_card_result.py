@@ -40,6 +40,7 @@ class CambodianIdCardResult:
         'detect_blur_result': 'bool',
         'detect_glare_result': 'bool',
         'detect_tampering_result': 'bool',
+        'detect_reproduce_result': 'bool',
         'score_info': 'CambodianIdCardScoreInformationResult',
         'confidence': 'object'
     }
@@ -68,11 +69,12 @@ class CambodianIdCardResult:
         'detect_blur_result': 'detect_blur_result',
         'detect_glare_result': 'detect_glare_result',
         'detect_tampering_result': 'detect_tampering_result',
+        'detect_reproduce_result': 'detect_reproduce_result',
         'score_info': 'score_info',
         'confidence': 'confidence'
     }
 
-    def __init__(self, id_number=None, name_kh=None, name_en=None, birth_date=None, sex=None, height=None, birth_place=None, address=None, issue_date=None, expiry_date=None, description=None, machine_code1=None, machine_code2=None, machine_code3=None, portrait_image=None, portrait_location=None, idcard_type=None, adjusted_image=None, detect_border_integrity_result=None, detect_blocking_within_border_result=None, detect_blur_result=None, detect_glare_result=None, detect_tampering_result=None, score_info=None, confidence=None):
+    def __init__(self, id_number=None, name_kh=None, name_en=None, birth_date=None, sex=None, height=None, birth_place=None, address=None, issue_date=None, expiry_date=None, description=None, machine_code1=None, machine_code2=None, machine_code3=None, portrait_image=None, portrait_location=None, idcard_type=None, adjusted_image=None, detect_border_integrity_result=None, detect_blocking_within_border_result=None, detect_blur_result=None, detect_glare_result=None, detect_tampering_result=None, detect_reproduce_result=None, score_info=None, confidence=None):
         """CambodianIdCardResult
 
         The model defined in huaweicloud sdk
@@ -123,6 +125,8 @@ class CambodianIdCardResult:
         :type detect_glare_result: bool
         :param detect_tampering_result: 身份证人像被篡改的告警结果，\&quot;true\&quot;表示身份证人像被篡改，\&quot;false\&quot;表示是身份证人像未被篡改。仅在输入参数detect_tampering为true时，返回该字段。 
         :type detect_tampering_result: bool
+        :param detect_reproduce_result: 身份证是否经过翻拍的告警结果，“true”表示身份证经过翻拍，“false”表示身份证未经过翻拍。仅在输入参数detect_reproduce为true时，返回该字段。 
+        :type detect_reproduce_result: bool
         :param score_info: 
         :type score_info: :class:`huaweicloudsdkocr.v1.CambodianIdCardScoreInformationResult`
         :param confidence: 相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。 
@@ -154,6 +158,7 @@ class CambodianIdCardResult:
         self._detect_blur_result = None
         self._detect_glare_result = None
         self._detect_tampering_result = None
+        self._detect_reproduce_result = None
         self._score_info = None
         self._confidence = None
         self.discriminator = None
@@ -204,6 +209,8 @@ class CambodianIdCardResult:
             self.detect_glare_result = detect_glare_result
         if detect_tampering_result is not None:
             self.detect_tampering_result = detect_tampering_result
+        if detect_reproduce_result is not None:
+            self.detect_reproduce_result = detect_reproduce_result
         if score_info is not None:
             self.score_info = score_info
         if confidence is not None:
@@ -714,6 +721,28 @@ class CambodianIdCardResult:
         :type detect_tampering_result: bool
         """
         self._detect_tampering_result = detect_tampering_result
+
+    @property
+    def detect_reproduce_result(self):
+        """Gets the detect_reproduce_result of this CambodianIdCardResult.
+
+        身份证是否经过翻拍的告警结果，“true”表示身份证经过翻拍，“false”表示身份证未经过翻拍。仅在输入参数detect_reproduce为true时，返回该字段。 
+
+        :return: The detect_reproduce_result of this CambodianIdCardResult.
+        :rtype: bool
+        """
+        return self._detect_reproduce_result
+
+    @detect_reproduce_result.setter
+    def detect_reproduce_result(self, detect_reproduce_result):
+        """Sets the detect_reproduce_result of this CambodianIdCardResult.
+
+        身份证是否经过翻拍的告警结果，“true”表示身份证经过翻拍，“false”表示身份证未经过翻拍。仅在输入参数detect_reproduce为true时，返回该字段。 
+
+        :param detect_reproduce_result: The detect_reproduce_result of this CambodianIdCardResult.
+        :type detect_reproduce_result: bool
+        """
+        self._detect_reproduce_result = detect_reproduce_result
 
     @property
     def score_info(self):

@@ -214,7 +214,7 @@ class TestCredentialProviderChain:
         try:
             chain.get_credentials()
         except ApiValueError as e:
-            assert "failed to get credentials from provider chain\n" \
+            assert "Failed to get credentials from provider chain\n" \
                    "credentials file '{}' does not exist\n" \
                    "ak&sk or idpId&idTokenFile does not exist in environmental variables".format(path) == str(e)
 

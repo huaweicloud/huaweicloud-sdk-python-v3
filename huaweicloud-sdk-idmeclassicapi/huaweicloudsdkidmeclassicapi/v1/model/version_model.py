@@ -59,33 +59,33 @@ class VersionModel:
 
         :param branch: 
         :type branch: :class:`huaweicloudsdkidmeclassicapi.v1.VersionModelBranch`
-        :param check_out_time: 检出时间。
+        :param check_out_time: **参数解释：**  检出时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type check_out_time: str
-        :param check_out_user_name: 检出用户名称。
+        :param check_out_user_name: **参数解释：**  检出用户名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type check_out_user_name: str
-        :param create_time: 创建时间。
+        :param create_time: **参数解释：**  创建时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type create_time: str
-        :param creator: 创建者。
+        :param creator: **参数解释：**  创建者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type creator: str
-        :param description: 描述信息。
+        :param description: **参数解释：**  描述信息。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type description: str
-        :param id: 唯一标识。
+        :param id: **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
         :type id: str
-        :param kiaguid: 关键信息资产ID。
+        :param kiaguid: **参数解释：**  关键信息资产ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type kiaguid: str
-        :param last_update_time: 最后更新时间。
+        :param last_update_time: **参数解释：**  最后更新时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type last_update_time: str
         :param master: 
         :type master: :class:`huaweicloudsdkidmeclassicapi.v1.VersionModelMaster`
-        :param modifier: 更新者。
+        :param modifier: **参数解释：**  更新者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type modifier: str
-        :param name: 中文名称。
+        :param name: **参数解释：**  中文名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type name: str
-        :param need_set_null_attrs: 设置NULL值的属性名称。
+        :param need_set_null_attrs: **参数解释：**  设置NULL值的属性名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type need_set_null_attrs: list[str]
-        :param rdm_extension_type: 扩展类型。
+        :param rdm_extension_type: **参数解释：**  扩展类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type rdm_extension_type: str
-        :param security_level: 安全密级。 - INTERNAL：内部公开。 - SECRET：秘密。 - CONFIDENTIAL：机密。 - TOP_SECRET：绝密。
+        :param security_level: **参数解释：**  安全密级。  **约束限制：**  不涉及。  **取值范围：**  - INTERNAL：内部公开。 - SECRET：秘密。 - CONFIDENTIAL：机密。 - TOP_SECRET：绝密。  **默认取值：**  不涉及。 
         :type security_level: str
         """
         
@@ -161,7 +161,7 @@ class VersionModel:
     def check_out_time(self):
         """Gets the check_out_time of this VersionModel.
 
-        检出时间。
+        **参数解释：**  检出时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The check_out_time of this VersionModel.
         :rtype: str
@@ -172,7 +172,7 @@ class VersionModel:
     def check_out_time(self, check_out_time):
         """Sets the check_out_time of this VersionModel.
 
-        检出时间。
+        **参数解释：**  检出时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param check_out_time: The check_out_time of this VersionModel.
         :type check_out_time: str
@@ -183,7 +183,7 @@ class VersionModel:
     def check_out_user_name(self):
         """Gets the check_out_user_name of this VersionModel.
 
-        检出用户名称。
+        **参数解释：**  检出用户名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The check_out_user_name of this VersionModel.
         :rtype: str
@@ -194,7 +194,7 @@ class VersionModel:
     def check_out_user_name(self, check_out_user_name):
         """Sets the check_out_user_name of this VersionModel.
 
-        检出用户名称。
+        **参数解释：**  检出用户名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param check_out_user_name: The check_out_user_name of this VersionModel.
         :type check_out_user_name: str
@@ -205,7 +205,7 @@ class VersionModel:
     def create_time(self):
         """Gets the create_time of this VersionModel.
 
-        创建时间。
+        **参数解释：**  创建时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The create_time of this VersionModel.
         :rtype: str
@@ -216,7 +216,7 @@ class VersionModel:
     def create_time(self, create_time):
         """Sets the create_time of this VersionModel.
 
-        创建时间。
+        **参数解释：**  创建时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param create_time: The create_time of this VersionModel.
         :type create_time: str
@@ -227,7 +227,7 @@ class VersionModel:
     def creator(self):
         """Gets the creator of this VersionModel.
 
-        创建者。
+        **参数解释：**  创建者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The creator of this VersionModel.
         :rtype: str
@@ -238,7 +238,7 @@ class VersionModel:
     def creator(self, creator):
         """Sets the creator of this VersionModel.
 
-        创建者。
+        **参数解释：**  创建者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param creator: The creator of this VersionModel.
         :type creator: str
@@ -249,7 +249,7 @@ class VersionModel:
     def description(self):
         """Gets the description of this VersionModel.
 
-        描述信息。
+        **参数解释：**  描述信息。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The description of this VersionModel.
         :rtype: str
@@ -260,7 +260,7 @@ class VersionModel:
     def description(self, description):
         """Sets the description of this VersionModel.
 
-        描述信息。
+        **参数解释：**  描述信息。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param description: The description of this VersionModel.
         :type description: str
@@ -271,7 +271,7 @@ class VersionModel:
     def id(self):
         """Gets the id of this VersionModel.
 
-        唯一标识。
+        **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :return: The id of this VersionModel.
         :rtype: str
@@ -282,7 +282,7 @@ class VersionModel:
     def id(self, id):
         """Sets the id of this VersionModel.
 
-        唯一标识。
+        **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :param id: The id of this VersionModel.
         :type id: str
@@ -293,7 +293,7 @@ class VersionModel:
     def kiaguid(self):
         """Gets the kiaguid of this VersionModel.
 
-        关键信息资产ID。
+        **参数解释：**  关键信息资产ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The kiaguid of this VersionModel.
         :rtype: str
@@ -304,7 +304,7 @@ class VersionModel:
     def kiaguid(self, kiaguid):
         """Sets the kiaguid of this VersionModel.
 
-        关键信息资产ID。
+        **参数解释：**  关键信息资产ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param kiaguid: The kiaguid of this VersionModel.
         :type kiaguid: str
@@ -315,7 +315,7 @@ class VersionModel:
     def last_update_time(self):
         """Gets the last_update_time of this VersionModel.
 
-        最后更新时间。
+        **参数解释：**  最后更新时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The last_update_time of this VersionModel.
         :rtype: str
@@ -326,7 +326,7 @@ class VersionModel:
     def last_update_time(self, last_update_time):
         """Sets the last_update_time of this VersionModel.
 
-        最后更新时间。
+        **参数解释：**  最后更新时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param last_update_time: The last_update_time of this VersionModel.
         :type last_update_time: str
@@ -355,7 +355,7 @@ class VersionModel:
     def modifier(self):
         """Gets the modifier of this VersionModel.
 
-        更新者。
+        **参数解释：**  更新者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The modifier of this VersionModel.
         :rtype: str
@@ -366,7 +366,7 @@ class VersionModel:
     def modifier(self, modifier):
         """Sets the modifier of this VersionModel.
 
-        更新者。
+        **参数解释：**  更新者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param modifier: The modifier of this VersionModel.
         :type modifier: str
@@ -377,7 +377,7 @@ class VersionModel:
     def name(self):
         """Gets the name of this VersionModel.
 
-        中文名称。
+        **参数解释：**  中文名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The name of this VersionModel.
         :rtype: str
@@ -388,7 +388,7 @@ class VersionModel:
     def name(self, name):
         """Sets the name of this VersionModel.
 
-        中文名称。
+        **参数解释：**  中文名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param name: The name of this VersionModel.
         :type name: str
@@ -399,7 +399,7 @@ class VersionModel:
     def need_set_null_attrs(self):
         """Gets the need_set_null_attrs of this VersionModel.
 
-        设置NULL值的属性名称。
+        **参数解释：**  设置NULL值的属性名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The need_set_null_attrs of this VersionModel.
         :rtype: list[str]
@@ -410,7 +410,7 @@ class VersionModel:
     def need_set_null_attrs(self, need_set_null_attrs):
         """Sets the need_set_null_attrs of this VersionModel.
 
-        设置NULL值的属性名称。
+        **参数解释：**  设置NULL值的属性名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param need_set_null_attrs: The need_set_null_attrs of this VersionModel.
         :type need_set_null_attrs: list[str]
@@ -421,7 +421,7 @@ class VersionModel:
     def rdm_extension_type(self):
         """Gets the rdm_extension_type of this VersionModel.
 
-        扩展类型。
+        **参数解释：**  扩展类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The rdm_extension_type of this VersionModel.
         :rtype: str
@@ -432,7 +432,7 @@ class VersionModel:
     def rdm_extension_type(self, rdm_extension_type):
         """Sets the rdm_extension_type of this VersionModel.
 
-        扩展类型。
+        **参数解释：**  扩展类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param rdm_extension_type: The rdm_extension_type of this VersionModel.
         :type rdm_extension_type: str
@@ -443,7 +443,7 @@ class VersionModel:
     def security_level(self):
         """Gets the security_level of this VersionModel.
 
-        安全密级。 - INTERNAL：内部公开。 - SECRET：秘密。 - CONFIDENTIAL：机密。 - TOP_SECRET：绝密。
+        **参数解释：**  安全密级。  **约束限制：**  不涉及。  **取值范围：**  - INTERNAL：内部公开。 - SECRET：秘密。 - CONFIDENTIAL：机密。 - TOP_SECRET：绝密。  **默认取值：**  不涉及。 
 
         :return: The security_level of this VersionModel.
         :rtype: str
@@ -454,7 +454,7 @@ class VersionModel:
     def security_level(self, security_level):
         """Sets the security_level of this VersionModel.
 
-        安全密级。 - INTERNAL：内部公开。 - SECRET：秘密。 - CONFIDENTIAL：机密。 - TOP_SECRET：绝密。
+        **参数解释：**  安全密级。  **约束限制：**  不涉及。  **取值范围：**  - INTERNAL：内部公开。 - SECRET：秘密。 - CONFIDENTIAL：机密。 - TOP_SECRET：绝密。  **默认取值：**  不涉及。 
 
         :param security_level: The security_level of this VersionModel.
         :type security_level: str

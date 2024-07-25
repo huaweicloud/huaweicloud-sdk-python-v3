@@ -19,6 +19,7 @@
  specific language governing permissions and limitations
  under the LICENSE.
 """
+import json
 import os
 import re
 from abc import abstractmethod
@@ -260,19 +261,30 @@ class BasicCredentials(Credentials):
         if self.iam_endpoint is None:
             self.iam_endpoint = Iam.get_iam_endpoint()
         req = Iam.get_keystone_list_projects_request(http_client.config, self.iam_endpoint, region_id=region_id)
-        future_request = self.process_auth_request(req, http_client)
-        request = future_request.result()
         try:
             http_client.logger.info("project id of region '%s' not found in BasicCredentials, "
-                                    "trying to obtain project id from IAM service: %s", region_id, self.iam_endpoint)
-            self.project_id = Iam.keystone_list_projects(http_client, request)
-            http_client.logger.info("success to obtain project id of region '%s': %s", region_id, self.project_id)
+                                    "trying to get project id from IAM service automatically: %s",
+                                    region_id, self.iam_endpoint)
+            response = http_client.do_request_sync(self.process_auth_request(req, http_client).result())
+            trace_id = response.headers.get("X-IAM-Trace-Id")
+            data = json.loads(response.content)
+            projects = data.get("projects")
+            if not projects:
+                raise SdkException("Failed to get project id of region '%s' automatically, X-IAM-Trace-Id=%s. " % (
+                    region_id, trace_id) + "Confirm that the project exists in your account, "
+                                           "or set project id manually: BasicCredentials(ak, sk, project_id)")
+            elif len(projects) > 1:
+                project_ids = ",".join(map(lambda project: project["id"], projects))
+                raise SdkException("Multiple project ids found: [%s], X-IAM-Trace-Id=%s. " % (project_ids, trace_id) +
+                                   "Please select one when initializing the credentials: "
+                                   "BasicCredentials(ak, sk, project_id)")
+
+            self.project_id = projects[0]["id"]
+            http_client.logger.info("success to get project id of region '%s' automatically: %s",
+                                    region_id, self.project_id)
             AuthCache.put_auth(ak_with_name, self.project_id)
         except ServiceResponseException as e:
-            err_msg = "failed to obtain project id, " \
-                      + (e.error_msg if hasattr(e, "error_msg") else "unknown exception.")
-            raise ApiValueError(err_msg)
-
+            raise SdkException("Failed to get project id of region '%s' automatically, %s" % (region_id, e))
         self._derived_predicate = derived_predicate
 
         return self
@@ -337,18 +349,23 @@ class GlobalCredentials(Credentials):
         if self.iam_endpoint is None:
             self.iam_endpoint = Iam.get_iam_endpoint()
         req = Iam.get_keystone_list_auth_domains_request(http_client.config, self.iam_endpoint)
-        future_request = self.process_auth_request(req, http_client)
-        request = future_request.result()
         try:
             http_client.logger.info('domain id not found in GlobalCredentials, '
-                                    'trying to obtain domain id from IAM service: %s', self.iam_endpoint)
-            self.domain_id = Iam.keystone_list_auth_domains(http_client, request)
-            http_client.logger.info('success to obtain domain id: %s', self.domain_id)
+                                    'trying to get domain id from IAM service automatically: %s', self.iam_endpoint)
+            response = http_client.do_request_sync(self.process_auth_request(req, http_client).result())
+            trace_id = response.headers.get("X-IAM-Trace-Id")
+            data = json.loads(response.content)
+            domains = data.get("domains")
+            if not domains:
+                raise SdkException("Failed to get domain id automatically, X-IAM-Trace-Id=%s. " % trace_id +
+                                   "Please confirm that you have 'iam:users:getUser' permission, "
+                                   "or set domain id manully: GlobalCredentials(ak, sk, domain_id)")
+
+            self.domain_id = domains[0]["id"]
+            http_client.logger.info('success to get domain id automatically: %s', self.domain_id)
             AuthCache.put_auth(self.ak, self.domain_id)
         except ServiceResponseException as e:
-            err_msg = "failed to obtain domain id, " \
-                      + (e.error_msg if hasattr(e, "error_msg") else "unknown exception.")
-            raise ApiValueError(err_msg)
+            raise SdkException("Failed to get domain id automatically, " + str(e))
 
         self._derived_predicate = derived_predicate
 

@@ -34,11 +34,11 @@ class BatchDeleteBranchResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param result: 请求结果。
+        :param result: **参数解释：**  请求结果。  **取值范围：**  - SUCCESS：请求成功。 - FAIL：请求失败。  **默认取值：**  不涉及。 
         :type result: str
-        :param data: 请求数据。
+        :param data: **参数解释：**  请求数据。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type data: list[int]
-        :param errors: 异常信息。
+        :param errors: **参数解释：**  异常信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type errors: list[str]
         """
         
@@ -60,7 +60,7 @@ class BatchDeleteBranchResponse(SdkResponse):
     def result(self):
         """Gets the result of this BatchDeleteBranchResponse.
 
-        请求结果。
+        **参数解释：**  请求结果。  **取值范围：**  - SUCCESS：请求成功。 - FAIL：请求失败。  **默认取值：**  不涉及。 
 
         :return: The result of this BatchDeleteBranchResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class BatchDeleteBranchResponse(SdkResponse):
     def result(self, result):
         """Sets the result of this BatchDeleteBranchResponse.
 
-        请求结果。
+        **参数解释：**  请求结果。  **取值范围：**  - SUCCESS：请求成功。 - FAIL：请求失败。  **默认取值：**  不涉及。 
 
         :param result: The result of this BatchDeleteBranchResponse.
         :type result: str
@@ -82,7 +82,7 @@ class BatchDeleteBranchResponse(SdkResponse):
     def data(self):
         """Gets the data of this BatchDeleteBranchResponse.
 
-        请求数据。
+        **参数解释：**  请求数据。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The data of this BatchDeleteBranchResponse.
         :rtype: list[int]
@@ -93,7 +93,7 @@ class BatchDeleteBranchResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this BatchDeleteBranchResponse.
 
-        请求数据。
+        **参数解释：**  请求数据。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param data: The data of this BatchDeleteBranchResponse.
         :type data: list[int]
@@ -104,7 +104,7 @@ class BatchDeleteBranchResponse(SdkResponse):
     def errors(self):
         """Gets the errors of this BatchDeleteBranchResponse.
 
-        异常信息。
+        **参数解释：**  异常信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The errors of this BatchDeleteBranchResponse.
         :rtype: list[str]
@@ -115,7 +115,7 @@ class BatchDeleteBranchResponse(SdkResponse):
     def errors(self, errors):
         """Sets the errors of this BatchDeleteBranchResponse.
 
-        异常信息。
+        **参数解释：**  异常信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param errors: The errors of this BatchDeleteBranchResponse.
         :type errors: list[str]

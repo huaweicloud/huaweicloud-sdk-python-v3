@@ -225,4 +225,4 @@ class CredentialProviderChain(object):
             except (ApiTypeError, ApiValueError, SdkException) as e:
                 errors.append(str(e))
 
-        raise ApiValueError("failed to get credentials from provider chain\n" + "\n".join(errors))
+        raise ApiValueError("Failed to get credentials from provider chain\n" + "\n".join(errors))

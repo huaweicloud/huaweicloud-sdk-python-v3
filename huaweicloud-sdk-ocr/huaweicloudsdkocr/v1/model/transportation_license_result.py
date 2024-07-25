@@ -67,7 +67,7 @@ class TransportationLicenseResult:
         :type vehicle_size: str
         :param issuing_authority: 核发机关（非必有，依赖对应运输证板式）。 
         :type issuing_authority: str
-        :param issue_date: 签发日期（非必有，依赖对应运输证板式）。 
+        :param issue_date: 发证日期（非必有，依赖对应运输证板式）。 
         :type issue_date: str
         :param owner_address: 业户地址（非必有，依赖对应运输证板式）。 
         :type owner_address: str
@@ -75,7 +75,7 @@ class TransportationLicenseResult:
         :type economic_type: str
         :param business_certificate: 经营许可证号（非必有，依赖对应运输证板式）。 
         :type business_certificate: str
-        :param business_scope: 道路普通货物运输（非必有，依赖对应运输证板式）。 
+        :param business_scope: 经营范围（非必有，依赖对应运输证板式）。 
         :type business_scope: str
         :param confidence: 相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。 
         :type confidence: object
@@ -283,7 +283,7 @@ class TransportationLicenseResult:
     def issue_date(self):
         """Gets the issue_date of this TransportationLicenseResult.
 
-        签发日期（非必有，依赖对应运输证板式）。 
+        发证日期（非必有，依赖对应运输证板式）。 
 
         :return: The issue_date of this TransportationLicenseResult.
         :rtype: str
@@ -294,7 +294,7 @@ class TransportationLicenseResult:
     def issue_date(self, issue_date):
         """Sets the issue_date of this TransportationLicenseResult.
 
-        签发日期（非必有，依赖对应运输证板式）。 
+        发证日期（非必有，依赖对应运输证板式）。 
 
         :param issue_date: The issue_date of this TransportationLicenseResult.
         :type issue_date: str
@@ -371,7 +371,7 @@ class TransportationLicenseResult:
     def business_scope(self):
         """Gets the business_scope of this TransportationLicenseResult.
 
-        道路普通货物运输（非必有，依赖对应运输证板式）。 
+        经营范围（非必有，依赖对应运输证板式）。 
 
         :return: The business_scope of this TransportationLicenseResult.
         :rtype: str
@@ -382,7 +382,7 @@ class TransportationLicenseResult:
     def business_scope(self, business_scope):
         """Sets the business_scope of this TransportationLicenseResult.
 
-        道路普通货物运输（非必有，依赖对应运输证板式）。 
+        经营范围（非必有，依赖对应运输证板式）。 
 
         :param business_scope: The business_scope of this TransportationLicenseResult.
         :type business_scope: str

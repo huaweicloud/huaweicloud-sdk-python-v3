@@ -215,6 +215,9 @@ from huaweicloudsdkrds.v3.model.history_database_instance import HistoryDatabase
 from huaweicloudsdkrds.v3.model.inspection_reports import InspectionReports
 from huaweicloudsdkrds.v3.model.instance_dr_relation import InstanceDrRelation
 from huaweicloudsdkrds.v3.model.instance_info import InstanceInfo
+from huaweicloudsdkrds.v3.model.instance_lts_basic_info_resp import InstanceLtsBasicInfoResp
+from huaweicloudsdkrds.v3.model.instance_lts_config_detail_resp import InstanceLtsConfigDetailResp
+from huaweicloudsdkrds.v3.model.instance_lts_config_resp import InstanceLtsConfigResp
 from huaweicloudsdkrds.v3.model.instance_request import InstanceRequest
 from huaweicloudsdkrds.v3.model.instance_response import InstanceResponse
 from huaweicloudsdkrds.v3.model.instance_restart_requset_body import InstanceRestartRequsetBody

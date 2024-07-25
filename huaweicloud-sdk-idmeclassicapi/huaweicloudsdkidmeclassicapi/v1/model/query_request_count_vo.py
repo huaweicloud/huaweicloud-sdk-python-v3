@@ -57,31 +57,31 @@ class QueryRequestCountVo:
 
         :param character_set: 
         :type character_set: :class:`huaweicloudsdkidmeclassicapi.v1.CharacterSetEnum`
-        :param conditions: 查询条件。
+        :param conditions: **参数解释：**  查询条件。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type conditions: list[:class:`huaweicloudsdkidmeclassicapi.v1.QueryCondition`]
-        :param decrypt: 是否加密。 - true：加密。 - false：不加密。
+        :param decrypt: **参数解释：**  是否加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  false。 
         :type decrypt: bool
-        :param entity_type: 实体类型。
+        :param entity_type: **参数解释：**  实体类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type entity_type: str
         :param filter: 
         :type filter: :class:`huaweicloudsdkidmeclassicapi.v1.QueryCondition`
-        :param is_need_total: 是否需要查询总记录数。 - true：需要。 - false：不需要。
+        :param is_need_total: **参数解释：**  是否需要查询总记录数。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  false。 
         :type is_need_total: bool
-        :param is_present_all: 是否需要展示所有参考对象信息。 - true：需要。 - false：不需要。
+        :param is_present_all: **参数解释：**  是否需要展示所有参考对象信息。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  false。 
         :type is_present_all: bool
-        :param max_count: 指定数量上限，如果超过统计总数超过上限则返回上限。
+        :param max_count: **参数解释：**  指定数量上限，如果超过统计总数超过上限则返回上限。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type max_count: int
-        :param need_present_detail: 需要展示详细信息的参考对象。
+        :param need_present_detail: **参数解释：**  需要展示详细信息的参考对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type need_present_detail: list[str]
-        :param order_by: 按某个字段进行排序。
+        :param order_by: **参数解释：**  按某个字段进行排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type order_by: str
-        :param order_by_table_alias: 排序字段的表别名。
+        :param order_by_table_alias: **参数解释：**  排序字段的表别名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type order_by_table_alias: str
-        :param public_data: 多租查询参数。 - EXCLUDE_PUBLIC_DATA：不包括公共数据。 - INCLUDE_PUBLIC_DATA：包括公共数据。 - ONLY_NEED_PUBLIC_DATA：只有公共数据。
+        :param public_data: **参数解释：**  多租查询参数。  **约束限制：**  不涉及。  **取值范围：**  - EXCLUDE_PUBLIC_DATA：不包括公共数据。 - INCLUDE_PUBLIC_DATA：包括公共数据。 - ONLY_NEED_PUBLIC_DATA：只有公共数据。  **默认取值：**  不涉及。 
         :type public_data: str
-        :param sort: 排序方向。 - ASC：表示升序。 - DESC：表示降序。
+        :param sort: **参数解释：**  排序方向。  **约束限制：**  不涉及。  **取值范围：**  - ASC：表示升序。 - DESC：表示降序。  **默认取值：**  ASC。 
         :type sort: str
-        :param sorts: 排序。
+        :param sorts: **参数解释：**  排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type sorts: list[:class:`huaweicloudsdkidmeclassicapi.v1.SortInfoVo`]
         """
         
@@ -154,7 +154,7 @@ class QueryRequestCountVo:
     def conditions(self):
         """Gets the conditions of this QueryRequestCountVo.
 
-        查询条件。
+        **参数解释：**  查询条件。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The conditions of this QueryRequestCountVo.
         :rtype: list[:class:`huaweicloudsdkidmeclassicapi.v1.QueryCondition`]
@@ -165,7 +165,7 @@ class QueryRequestCountVo:
     def conditions(self, conditions):
         """Sets the conditions of this QueryRequestCountVo.
 
-        查询条件。
+        **参数解释：**  查询条件。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param conditions: The conditions of this QueryRequestCountVo.
         :type conditions: list[:class:`huaweicloudsdkidmeclassicapi.v1.QueryCondition`]
@@ -176,7 +176,7 @@ class QueryRequestCountVo:
     def decrypt(self):
         """Gets the decrypt of this QueryRequestCountVo.
 
-        是否加密。 - true：加密。 - false：不加密。
+        **参数解释：**  是否加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  false。 
 
         :return: The decrypt of this QueryRequestCountVo.
         :rtype: bool
@@ -187,7 +187,7 @@ class QueryRequestCountVo:
     def decrypt(self, decrypt):
         """Sets the decrypt of this QueryRequestCountVo.
 
-        是否加密。 - true：加密。 - false：不加密。
+        **参数解释：**  是否加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  false。 
 
         :param decrypt: The decrypt of this QueryRequestCountVo.
         :type decrypt: bool
@@ -198,7 +198,7 @@ class QueryRequestCountVo:
     def entity_type(self):
         """Gets the entity_type of this QueryRequestCountVo.
 
-        实体类型。
+        **参数解释：**  实体类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The entity_type of this QueryRequestCountVo.
         :rtype: str
@@ -209,7 +209,7 @@ class QueryRequestCountVo:
     def entity_type(self, entity_type):
         """Sets the entity_type of this QueryRequestCountVo.
 
-        实体类型。
+        **参数解释：**  实体类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param entity_type: The entity_type of this QueryRequestCountVo.
         :type entity_type: str
@@ -238,7 +238,7 @@ class QueryRequestCountVo:
     def is_need_total(self):
         """Gets the is_need_total of this QueryRequestCountVo.
 
-        是否需要查询总记录数。 - true：需要。 - false：不需要。
+        **参数解释：**  是否需要查询总记录数。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  false。 
 
         :return: The is_need_total of this QueryRequestCountVo.
         :rtype: bool
@@ -249,7 +249,7 @@ class QueryRequestCountVo:
     def is_need_total(self, is_need_total):
         """Sets the is_need_total of this QueryRequestCountVo.
 
-        是否需要查询总记录数。 - true：需要。 - false：不需要。
+        **参数解释：**  是否需要查询总记录数。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  false。 
 
         :param is_need_total: The is_need_total of this QueryRequestCountVo.
         :type is_need_total: bool
@@ -260,7 +260,7 @@ class QueryRequestCountVo:
     def is_present_all(self):
         """Gets the is_present_all of this QueryRequestCountVo.
 
-        是否需要展示所有参考对象信息。 - true：需要。 - false：不需要。
+        **参数解释：**  是否需要展示所有参考对象信息。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  false。 
 
         :return: The is_present_all of this QueryRequestCountVo.
         :rtype: bool
@@ -271,7 +271,7 @@ class QueryRequestCountVo:
     def is_present_all(self, is_present_all):
         """Sets the is_present_all of this QueryRequestCountVo.
 
-        是否需要展示所有参考对象信息。 - true：需要。 - false：不需要。
+        **参数解释：**  是否需要展示所有参考对象信息。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  false。 
 
         :param is_present_all: The is_present_all of this QueryRequestCountVo.
         :type is_present_all: bool
@@ -282,7 +282,7 @@ class QueryRequestCountVo:
     def max_count(self):
         """Gets the max_count of this QueryRequestCountVo.
 
-        指定数量上限，如果超过统计总数超过上限则返回上限。
+        **参数解释：**  指定数量上限，如果超过统计总数超过上限则返回上限。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The max_count of this QueryRequestCountVo.
         :rtype: int
@@ -293,7 +293,7 @@ class QueryRequestCountVo:
     def max_count(self, max_count):
         """Sets the max_count of this QueryRequestCountVo.
 
-        指定数量上限，如果超过统计总数超过上限则返回上限。
+        **参数解释：**  指定数量上限，如果超过统计总数超过上限则返回上限。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param max_count: The max_count of this QueryRequestCountVo.
         :type max_count: int
@@ -304,7 +304,7 @@ class QueryRequestCountVo:
     def need_present_detail(self):
         """Gets the need_present_detail of this QueryRequestCountVo.
 
-        需要展示详细信息的参考对象。
+        **参数解释：**  需要展示详细信息的参考对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The need_present_detail of this QueryRequestCountVo.
         :rtype: list[str]
@@ -315,7 +315,7 @@ class QueryRequestCountVo:
     def need_present_detail(self, need_present_detail):
         """Sets the need_present_detail of this QueryRequestCountVo.
 
-        需要展示详细信息的参考对象。
+        **参数解释：**  需要展示详细信息的参考对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param need_present_detail: The need_present_detail of this QueryRequestCountVo.
         :type need_present_detail: list[str]
@@ -326,7 +326,7 @@ class QueryRequestCountVo:
     def order_by(self):
         """Gets the order_by of this QueryRequestCountVo.
 
-        按某个字段进行排序。
+        **参数解释：**  按某个字段进行排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The order_by of this QueryRequestCountVo.
         :rtype: str
@@ -337,7 +337,7 @@ class QueryRequestCountVo:
     def order_by(self, order_by):
         """Sets the order_by of this QueryRequestCountVo.
 
-        按某个字段进行排序。
+        **参数解释：**  按某个字段进行排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param order_by: The order_by of this QueryRequestCountVo.
         :type order_by: str
@@ -348,7 +348,7 @@ class QueryRequestCountVo:
     def order_by_table_alias(self):
         """Gets the order_by_table_alias of this QueryRequestCountVo.
 
-        排序字段的表别名。
+        **参数解释：**  排序字段的表别名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The order_by_table_alias of this QueryRequestCountVo.
         :rtype: str
@@ -359,7 +359,7 @@ class QueryRequestCountVo:
     def order_by_table_alias(self, order_by_table_alias):
         """Sets the order_by_table_alias of this QueryRequestCountVo.
 
-        排序字段的表别名。
+        **参数解释：**  排序字段的表别名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param order_by_table_alias: The order_by_table_alias of this QueryRequestCountVo.
         :type order_by_table_alias: str
@@ -370,7 +370,7 @@ class QueryRequestCountVo:
     def public_data(self):
         """Gets the public_data of this QueryRequestCountVo.
 
-        多租查询参数。 - EXCLUDE_PUBLIC_DATA：不包括公共数据。 - INCLUDE_PUBLIC_DATA：包括公共数据。 - ONLY_NEED_PUBLIC_DATA：只有公共数据。
+        **参数解释：**  多租查询参数。  **约束限制：**  不涉及。  **取值范围：**  - EXCLUDE_PUBLIC_DATA：不包括公共数据。 - INCLUDE_PUBLIC_DATA：包括公共数据。 - ONLY_NEED_PUBLIC_DATA：只有公共数据。  **默认取值：**  不涉及。 
 
         :return: The public_data of this QueryRequestCountVo.
         :rtype: str
@@ -381,7 +381,7 @@ class QueryRequestCountVo:
     def public_data(self, public_data):
         """Sets the public_data of this QueryRequestCountVo.
 
-        多租查询参数。 - EXCLUDE_PUBLIC_DATA：不包括公共数据。 - INCLUDE_PUBLIC_DATA：包括公共数据。 - ONLY_NEED_PUBLIC_DATA：只有公共数据。
+        **参数解释：**  多租查询参数。  **约束限制：**  不涉及。  **取值范围：**  - EXCLUDE_PUBLIC_DATA：不包括公共数据。 - INCLUDE_PUBLIC_DATA：包括公共数据。 - ONLY_NEED_PUBLIC_DATA：只有公共数据。  **默认取值：**  不涉及。 
 
         :param public_data: The public_data of this QueryRequestCountVo.
         :type public_data: str
@@ -392,7 +392,7 @@ class QueryRequestCountVo:
     def sort(self):
         """Gets the sort of this QueryRequestCountVo.
 
-        排序方向。 - ASC：表示升序。 - DESC：表示降序。
+        **参数解释：**  排序方向。  **约束限制：**  不涉及。  **取值范围：**  - ASC：表示升序。 - DESC：表示降序。  **默认取值：**  ASC。 
 
         :return: The sort of this QueryRequestCountVo.
         :rtype: str
@@ -403,7 +403,7 @@ class QueryRequestCountVo:
     def sort(self, sort):
         """Sets the sort of this QueryRequestCountVo.
 
-        排序方向。 - ASC：表示升序。 - DESC：表示降序。
+        **参数解释：**  排序方向。  **约束限制：**  不涉及。  **取值范围：**  - ASC：表示升序。 - DESC：表示降序。  **默认取值：**  ASC。 
 
         :param sort: The sort of this QueryRequestCountVo.
         :type sort: str
@@ -414,7 +414,7 @@ class QueryRequestCountVo:
     def sorts(self):
         """Gets the sorts of this QueryRequestCountVo.
 
-        排序。
+        **参数解释：**  排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The sorts of this QueryRequestCountVo.
         :rtype: list[:class:`huaweicloudsdkidmeclassicapi.v1.SortInfoVo`]
@@ -425,7 +425,7 @@ class QueryRequestCountVo:
     def sorts(self, sorts):
         """Sets the sorts of this QueryRequestCountVo.
 
-        排序。
+        **参数解释：**  排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param sorts: The sorts of this QueryRequestCountVo.
         :type sorts: list[:class:`huaweicloudsdkidmeclassicapi.v1.SortInfoVo`]

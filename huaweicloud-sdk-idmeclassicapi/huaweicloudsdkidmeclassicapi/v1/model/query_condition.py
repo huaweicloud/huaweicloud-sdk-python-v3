@@ -45,21 +45,21 @@ class QueryCondition:
 
         The model defined in huaweicloud sdk
 
-        :param condition_name: 查询条件的名称（数据模型的属性英文名称）。
+        :param condition_name: **参数解释：**  查询条件的名称（数据模型的属性英文名称）。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type condition_name: str
-        :param condition_value: 查询条件值（已过时）。
+        :param condition_value: **参数解释：**  查询条件值（已过时）。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type condition_value: str
-        :param condition_values: 查询条件的值。operator为in时有多值，operator为其他操作符时均为单值。
+        :param condition_values: **参数解释：**  查询条件的值。operator为in时有多值，operator为其他操作符时均为单值。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type condition_values: list[str]
-        :param conditions: 查询条件列表。
+        :param conditions: **参数解释：**  查询条件列表。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type conditions: list[:class:`huaweicloudsdkidmeclassicapi.v1.QueryCondition`]
-        :param ignore_str: 是否忽略大小写。 - true：表示忽略。 - false：表示不忽略。
+        :param ignore_str: **参数解释：**  是否忽略大小写。  **约束限制：**  不涉及。  **取值范围：**  - true：表示忽略。 - false：表示不忽略。  **默认取值：**  false。 
         :type ignore_str: bool
-        :param join_table_alias: 关联查询时被关联表的别名。
+        :param join_table_alias: **参数解释：**  关联查询时被关联表的别名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type join_table_alias: str
-        :param joiner: 连接符。
+        :param joiner: **参数解释：**  连接符。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type joiner: str
-        :param operator: 操作符。 - &#x3D;：等于查询。 - like：模糊查询。 - customLike：支持输入*或%的模糊查询。 - in：包含查询。 - &lt;：小于查询。 - \\&gt;：大于查询。 - \\&gt;&#x3D;：大于等于查询。 - &lt;&#x3D;：小于等于查询。 - &lt;&gt;：不等于查询。
+        :param operator: **参数解释：**  操作符。  **约束限制：**  不涉及。  **取值范围：**  - &#x3D;：等于查询。 - like：模糊查询。 - customLike：支持输入*或%的模糊查询。 - in：包含查询。 - &lt;：小于查询。 - \\&gt;：大于查询。 - \\&gt;&#x3D;：大于等于查询。 - &lt;&#x3D;：小于等于查询。 - &lt;&gt;：不等于查询。  **默认取值：**  不涉及。 
         :type operator: str
         :param pre_condition: 
         :type pre_condition: :class:`huaweicloudsdkidmeclassicapi.v1.QueryCondition`
@@ -101,7 +101,7 @@ class QueryCondition:
     def condition_name(self):
         """Gets the condition_name of this QueryCondition.
 
-        查询条件的名称（数据模型的属性英文名称）。
+        **参数解释：**  查询条件的名称（数据模型的属性英文名称）。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The condition_name of this QueryCondition.
         :rtype: str
@@ -112,7 +112,7 @@ class QueryCondition:
     def condition_name(self, condition_name):
         """Sets the condition_name of this QueryCondition.
 
-        查询条件的名称（数据模型的属性英文名称）。
+        **参数解释：**  查询条件的名称（数据模型的属性英文名称）。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param condition_name: The condition_name of this QueryCondition.
         :type condition_name: str
@@ -123,7 +123,7 @@ class QueryCondition:
     def condition_value(self):
         """Gets the condition_value of this QueryCondition.
 
-        查询条件值（已过时）。
+        **参数解释：**  查询条件值（已过时）。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The condition_value of this QueryCondition.
         :rtype: str
@@ -134,7 +134,7 @@ class QueryCondition:
     def condition_value(self, condition_value):
         """Sets the condition_value of this QueryCondition.
 
-        查询条件值（已过时）。
+        **参数解释：**  查询条件值（已过时）。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param condition_value: The condition_value of this QueryCondition.
         :type condition_value: str
@@ -145,7 +145,7 @@ class QueryCondition:
     def condition_values(self):
         """Gets the condition_values of this QueryCondition.
 
-        查询条件的值。operator为in时有多值，operator为其他操作符时均为单值。
+        **参数解释：**  查询条件的值。operator为in时有多值，operator为其他操作符时均为单值。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The condition_values of this QueryCondition.
         :rtype: list[str]
@@ -156,7 +156,7 @@ class QueryCondition:
     def condition_values(self, condition_values):
         """Sets the condition_values of this QueryCondition.
 
-        查询条件的值。operator为in时有多值，operator为其他操作符时均为单值。
+        **参数解释：**  查询条件的值。operator为in时有多值，operator为其他操作符时均为单值。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param condition_values: The condition_values of this QueryCondition.
         :type condition_values: list[str]
@@ -167,7 +167,7 @@ class QueryCondition:
     def conditions(self):
         """Gets the conditions of this QueryCondition.
 
-        查询条件列表。
+        **参数解释：**  查询条件列表。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The conditions of this QueryCondition.
         :rtype: list[:class:`huaweicloudsdkidmeclassicapi.v1.QueryCondition`]
@@ -178,7 +178,7 @@ class QueryCondition:
     def conditions(self, conditions):
         """Sets the conditions of this QueryCondition.
 
-        查询条件列表。
+        **参数解释：**  查询条件列表。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param conditions: The conditions of this QueryCondition.
         :type conditions: list[:class:`huaweicloudsdkidmeclassicapi.v1.QueryCondition`]
@@ -189,7 +189,7 @@ class QueryCondition:
     def ignore_str(self):
         """Gets the ignore_str of this QueryCondition.
 
-        是否忽略大小写。 - true：表示忽略。 - false：表示不忽略。
+        **参数解释：**  是否忽略大小写。  **约束限制：**  不涉及。  **取值范围：**  - true：表示忽略。 - false：表示不忽略。  **默认取值：**  false。 
 
         :return: The ignore_str of this QueryCondition.
         :rtype: bool
@@ -200,7 +200,7 @@ class QueryCondition:
     def ignore_str(self, ignore_str):
         """Sets the ignore_str of this QueryCondition.
 
-        是否忽略大小写。 - true：表示忽略。 - false：表示不忽略。
+        **参数解释：**  是否忽略大小写。  **约束限制：**  不涉及。  **取值范围：**  - true：表示忽略。 - false：表示不忽略。  **默认取值：**  false。 
 
         :param ignore_str: The ignore_str of this QueryCondition.
         :type ignore_str: bool
@@ -211,7 +211,7 @@ class QueryCondition:
     def join_table_alias(self):
         """Gets the join_table_alias of this QueryCondition.
 
-        关联查询时被关联表的别名。
+        **参数解释：**  关联查询时被关联表的别名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The join_table_alias of this QueryCondition.
         :rtype: str
@@ -222,7 +222,7 @@ class QueryCondition:
     def join_table_alias(self, join_table_alias):
         """Sets the join_table_alias of this QueryCondition.
 
-        关联查询时被关联表的别名。
+        **参数解释：**  关联查询时被关联表的别名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param join_table_alias: The join_table_alias of this QueryCondition.
         :type join_table_alias: str
@@ -233,7 +233,7 @@ class QueryCondition:
     def joiner(self):
         """Gets the joiner of this QueryCondition.
 
-        连接符。
+        **参数解释：**  连接符。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The joiner of this QueryCondition.
         :rtype: str
@@ -244,7 +244,7 @@ class QueryCondition:
     def joiner(self, joiner):
         """Sets the joiner of this QueryCondition.
 
-        连接符。
+        **参数解释：**  连接符。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param joiner: The joiner of this QueryCondition.
         :type joiner: str
@@ -255,7 +255,7 @@ class QueryCondition:
     def operator(self):
         """Gets the operator of this QueryCondition.
 
-        操作符。 - =：等于查询。 - like：模糊查询。 - customLike：支持输入*或%的模糊查询。 - in：包含查询。 - <：小于查询。 - \\>：大于查询。 - \\>=：大于等于查询。 - <=：小于等于查询。 - <>：不等于查询。
+        **参数解释：**  操作符。  **约束限制：**  不涉及。  **取值范围：**  - =：等于查询。 - like：模糊查询。 - customLike：支持输入*或%的模糊查询。 - in：包含查询。 - <：小于查询。 - \\>：大于查询。 - \\>=：大于等于查询。 - <=：小于等于查询。 - <>：不等于查询。  **默认取值：**  不涉及。 
 
         :return: The operator of this QueryCondition.
         :rtype: str
@@ -266,7 +266,7 @@ class QueryCondition:
     def operator(self, operator):
         """Sets the operator of this QueryCondition.
 
-        操作符。 - =：等于查询。 - like：模糊查询。 - customLike：支持输入*或%的模糊查询。 - in：包含查询。 - <：小于查询。 - \\>：大于查询。 - \\>=：大于等于查询。 - <=：小于等于查询。 - <>：不等于查询。
+        **参数解释：**  操作符。  **约束限制：**  不涉及。  **取值范围：**  - =：等于查询。 - like：模糊查询。 - customLike：支持输入*或%的模糊查询。 - in：包含查询。 - <：小于查询。 - \\>：大于查询。 - \\>=：大于等于查询。 - <=：小于等于查询。 - <>：不等于查询。  **默认取值：**  不涉及。 
 
         :param operator: The operator of this QueryCondition.
         :type operator: str

@@ -1,3 +1,409 @@
+# 3.1.107 2024-07-25
+
+### HuaweiCloud SDK APIG
+
+- _Features_
+  - Support the following APIs:
+    - `ShowInstancesNumByTags`
+    - `ListInstancesByTags`
+    - `ListOrchestrations`
+    - `CreateOrchestration`
+    - `ShowDetailsOfOrchestration`
+    - `UpdateOrchestration`
+    - `DeleteOrchestration`
+    - `ListOrchestrationAttachedApis`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowPlugin**
+    - changes of response param
+      - `+ plugin_type: enum value [proxy_cache]`
+  - **UpdatePlugin**
+    - changes of request param
+      - `+ plugin_type: enum value [proxy_cache]`
+    - changes of response param
+      - `+ plugin_type: enum value [proxy_cache]`
+  - **ListApiRuntimeDefinitionV2**
+    - changes of response param
+      - `+ is_send_fg_body_base64`
+      - `+ req_params.orchestrations`
+      - `+ req_params.location: enum value [COOKIE]`
+  - **ListBackendInstancesV2**
+    - changes of response param
+      - `+ members.health_status`
+  - **UpdateBackendInstancesV2**
+    - changes of response param
+      - `+ members.health_status`
+  - **AddingBackendInstancesV2**
+    - changes of response param
+      - `+ members.health_status`
+  - **CreatePlugin**
+    - changes of request param
+      - `+ plugin_type: enum value [proxy_cache]`
+    - changes of response param
+      - `+ plugin_type: enum value [proxy_cache]`
+  - **ListPlugins**
+    - changes of response param
+      - `+ plugins.plugin_type: enum value [proxy_cache]`
+  - **AttachApiToPlugin**
+    - changes of response param
+      - `+ attached_plugins.plugin_type: enum value [proxy_cache]`
+  - **AttachPluginToApi**
+    - changes of response param
+      - `+ attached_plugins.plugin_type: enum value [proxy_cache]`
+  - **ListApiAttachedPlugins**
+    - changes of response param
+      - `+ plugins.plugin_type: enum value [proxy_cache]`
+  - **ListApiAttachablePlugins**
+    - changes of response param
+      - `+ plugins.plugin_type: enum value [proxy_cache]`
+  - **ShowDetailsOfApiV2**
+    - changes of response param
+      - `+ is_send_fg_body_base64`
+      - `+ req_params.orchestrations`
+      - `+ req_params.location: enum value [COOKIE]`
+      - `+ policy_functions.conditions.mapped_param_name`
+      - `+ policy_functions.conditions.mapped_param_location`
+  - **UpdateApiV2**
+    - changes of request param
+      - `+ is_send_fg_body_base64`
+      - `+ req_params.orchestrations`
+      - `+ req_params.location: enum value [COOKIE]`
+      - `+ policy_mocks.conditions.mapped_param_name`
+      - `+ policy_mocks.conditions.mapped_param_location`
+    - changes of response param
+      - `+ is_send_fg_body_base64`
+      - `+ req_params.orchestrations`
+      - `+ req_params.location: enum value [COOKIE]`
+      - `+ policy_functions.conditions.mapped_param_name`
+      - `+ policy_functions.conditions.mapped_param_location`
+  - **ListApiVersionDetailV2**
+    - changes of response param
+      - `+ is_send_fg_body_base64`
+      - `+ req_params.orchestrations`
+      - `+ req_params.location: enum value [COOKIE]`
+      - `+ policy_functions.conditions.mapped_param_name`
+      - `+ policy_functions.conditions.mapped_param_location`
+  - **ShowDetailsOfVpcChannelV2**
+    - changes of response param
+      - `+ members.health_status`
+      - `- microservice_info.cce_service_info`
+  - **UpdateVpcChannelV2**
+    - changes of request param
+      - `- microservice_info.cce_service_info`
+    - changes of response param
+      - `- microservice_info.cce_service_info`
+  - **ImportMicroservice**
+    - changes of request param
+      - `- cce_service_info`
+  - **CreateApiV2**
+    - changes of request param
+      - `+ is_send_fg_body_base64`
+      - `+ req_params.orchestrations`
+      - `+ req_params.location: enum value [COOKIE]`
+      - `+ policy_mocks.conditions.mapped_param_name`
+      - `+ policy_mocks.conditions.mapped_param_location`
+    - changes of response param
+      - `+ is_send_fg_body_base64`
+      - `+ req_params.orchestrations`
+      - `+ req_params.location: enum value [COOKIE]`
+      - `+ policy_functions.conditions.mapped_param_name`
+      - `+ policy_functions.conditions.mapped_param_location`
+  - **ListApisV2**
+    - changes of response param
+      - `+ apis.is_send_fg_body_base64`
+      - `+ apis.req_params.orchestrations`
+      - `+ apis.req_params.location: enum value [COOKIE]`
+  - **CreateVpcChannelV2**
+    - changes of request param
+      - `- microservice_info.cce_service_info`
+    - changes of response param
+      - `- microservice_info.cce_service_info`
+  - **ListVpcChannelsV2**
+    - changes of response param
+      - `- vpc_channels.microservice_info.cce_service_info`
+
+### HuaweiCloud SDK BSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListCustomerBillsFeeRecords**
+    - changes of response param
+      - `+ records.id`
+
+### HuaweiCloud SDK CCE
+
+- _Features_
+  - Support the following APIs:
+    - `SyncNodePool`
+    - `UpgradeNodePool`
+    - `ShowClusterSupportConfiguration`
+    - `ShowResourceInstances`
+    - `BatchCreateDeleteResourceTags`
+    - `ShowResourceTags`
+    - `ShowCustomizeClusterTagsByProjectId`
+    - `UpdateAutopilotClusterEip`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _Features_
+  - Support the following APIs:
+    - `ListSecurityDynamicMaskingPolicies`
+    - `CreateSecurityDynamicMaskingPolicy`
+    - `ShowSecurityDynamicMaskingPolicy`
+    - `UpdateSecurityDynamicMaskingPolicy`
+    - `BatchDeleteSecurityDynamicMaskingPolicies`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DLI
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateSqlJob**
+    - changes of request param
+      - `+ engine_type: enum value [hetuEngine]`
+      - `- engine_type: enum value [trino]`
+
+### HuaweiCloud SDK GES
+
+- _Features_
+  - Support the APIs `ChangeSecurityGroup`, `ShowBackupDownloadLink`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK iDMEClassicAPI
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateMultiView**
+    - changes of response param
+      - `* data.branch.lastUpdateTime: object -> string`
+  - **BatchCreateView**
+    - changes of response param
+      - `* data.branch.lastUpdateTime: object -> string`
+  - **CreateView**
+    - changes of response param
+      - `* data.branch.lastUpdateTime: object -> string`
+  - **ListHistoryData**
+    - changes of request param
+      - `+ endIndex`
+      - `+ maxPageSize`
+      - `+ startIndex`
+      - `- limit`
+      - `- offset`
+
+### HuaweiCloud SDK Moderation
+
+- _Features_
+  - Support the API `BatchCheckImageSync`
+- _Bug Fix_
+  - None
+- _Change_
+  - **RunTextModeration**
+    - changes of request param
+      - `+ Enterprise-Project-Id`
+  - **CheckImageModeration**
+    - changes of request param
+      - `+ Enterprise-Project-Id`
+
+### HuaweiCloud SDK OCR
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **RecognizeCambodianIdCard**
+    - changes of request param
+      - `+ detect_reproduce`
+    - changes of response param
+      - `+ result.detect_reproduce_result`
+      - `+ result.score_info.reproduce_score`
+
+### HuaweiCloud SDK SecMaster
+
+- _Features_
+  - Support the following APIs:
+    - `ListWorkspaces`
+    - `CreateWorkspace`
+    - `CreatePostPaidOrder`
+    - `BatchSearchMetricHits`
+    - `SearchBaseline`
+- _Bug Fix_
+  - None
+- _Change_
+  - **EnableAlertRule**
+    - changes of response param
+      - `+ fail_list`
+      - `+ success_list`
+      - `- rule_id`
+      - `- status`
+  - **DisableAlertRule**
+    - changes of response param
+      - `+ fail_list`
+      - `+ success_list`
+      - `- rule_id`
+      - `- status`
+  - **CreatePlaybook**
+    - changes of request param
+      - `- enabled`
+  - **CreateDataobjectRelations**
+    - changes of response param
+      - `* data: object<DataResponse> -> object<BatchOperateDataobjectResult>`
+  - **ListDataclass**
+    - changes of request param
+      - `* offset: number -> int32`
+      - `* limit: number -> int32`
+  - **ListDataclassFields**
+    - changes of request param
+      - `* offset: number -> int32`
+      - `* limit: number -> int32`
+  - **ListWorkflows**
+    - changes of request param
+      - `* offset: number -> int32`
+      - `* limit: number -> int32`
+  - **ListAlerts**
+    - changes of response param
+      - `+ data.data_object.domain_id`
+      - `+ data.data_object.region_id`
+      - `+ data.data_object.labels`
+      - `+ data.data_object.environment.cross_workspace_id`
+      - `+ data.data_object.data_source.company_name`
+      - `+ data.data_object.data_source.product_name`
+      - `+ data.data_object.data_source.product_feature`
+      - `+ data.data_object.data_source.product_module`
+      - `+ data.data_object.severity: enum value [Tips,Low,Medium,High,Fatal]`
+      - `+ data.data_object.alert_type.category`
+      - `+ data.data_object.alert_type.alert_type`
+      - `* data.data_object.network_list.direction: object -> string`
+      - `+ data.data_object.network_list.src_geo.latitude`
+      - `+ data.data_object.network_list.src_geo.longitude`
+      - `+ data.data_object.network_list.src_geo.city_code`
+      - `+ data.data_object.network_list.src_geo.country_code`
+      - `+ data.data_object.network_list.dest_geo.latitude`
+      - `+ data.data_object.network_list.dest_geo.longitude`
+      - `+ data.data_object.network_list.dest_geo.city_code`
+      - `+ data.data_object.network_list.dest_geo.country_code`
+      - `+ data.data_object.resource_list.provider`
+      - `+ data.data_object.verification_state: enum value [Unknown,True_Positive,False_Positive]`
+      - `+ data.data_object.handle_status: enum value [Open,Block,Closed]`
+      - `+ data.data_object.chop_phase: enum value [Prepartion,Detection and Analysis,Containm，Eradication& Recovery,Post-Incident-Activity]`
+      - `+ data.data_object.ipdrr_phase: enum value [Prepartion,Detection and Analysis,Containm，Eradication& Recovery,Post-Incident-Activity]`
+      - `+ data.data_object.ppdr_phase: enum value [Prepartion,Detection and Analysis,Containm，Eradication& Recovery,Post-Incident-Activity]`
+      - `+ data.data_object.close_reason: enum value [False detection,Resolved,Repeated,Other]`
+      - `+ data.data_object.process.process_parent_name`
+      - `+ data.data_object.process.process_parent_path`
+      - `+ data.data_object.process.process_parent_pid`
+      - `+ data.data_object.process.process_parent_uid`
+      - `+ data.data_object.process.process_parent_cmdline`
+      - `+ data.data_object.process.process_child_name`
+      - `+ data.data_object.process.process_child_path`
+      - `+ data.data_object.process.process_child_pid`
+      - `+ data.data_object.process.process_child_uid`
+      - `+ data.data_object.process.process_child_cmdline`
+      - `+ data.data_object.process.process_launche_time`
+      - `+ data.data_object.process.process_terminate_time`
+  - **CreateAlert**
+    - changes of response param
+      - `+ data.type`
+  - **ShowAlert**
+    - changes of response param
+      - `+ data.type`
+  - **ChangeAlert**
+    - changes of response param
+      - `+ data.type`
+  - **ListIndicators**
+    - changes of request param
+      - `- name`
+    - changes of response param
+      - `- data.data_object.indicator_type.category`
+      - `- data.data_object.indicator_type.layout_id`
+  - **CreateIndicator**
+    - changes of request param
+      - `- data_object.data_object`
+      - `- data_object.layout_id`
+      - `- data_object.indicator_type.category`
+      - `- data_object.indicator_type.layout_id`
+    - changes of response param
+      - `- data.data_object.indicator_type.category`
+      - `- data.data_object.indicator_type.layout_id`
+  - **ShowIndicatorDetail**
+    - changes of response param
+      - `- data.data_object.indicator_type.category`
+      - `- data.data_object.indicator_type.layout_id`
+  - **UpdateIndicator**
+    - changes of request param
+      - `- data_object.indicator_type.category`
+      - `- data_object.indicator_type.layout_id`
+    - changes of response param
+      - `- data.data_object.indicator_type.category`
+      - `- data.data_object.indicator_type.layout_id`
+  - **DeleteAlertRule**
+    - changes of response param
+      - `+ fail_list`
+      - `+ deleted`
+      - `+ success_list`
+      - `- rule_id`
+      - `- delete_time`
+  - **CreateAlertRule**
+    - changes of request param
+      - `+ pipe_name`
+      - `+ alert_name`
+      - `+ alert_description`
+      - `+ alert_remediation`
+      - `+ accumulated_times`
+
+### HuaweiCloud SDK Workspace
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListLoginRecordsNew**
+    - changes of response param
+      - `+ records.sid`
+      - `+ records.transaction_id`
+      - `+ records.network_rtt`
+      - `+ records.e2e_rtt`
+
+### HuaweiCloud SDK DDM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ExpandInstanceNodes**
+    - changes of response param
+      - `+ orderId`
+      - `- order_id`
+  - **ShrinkInstanceNodes**
+    - changes of response param
+      - `+ orderId`
+      - `- order_id`
+  - **RestartInstance**
+    - changes of response param
+      - `- order_id`
+
 # 3.1.106 2024-07-18
 
 ### HuaweiCloud SDK AS

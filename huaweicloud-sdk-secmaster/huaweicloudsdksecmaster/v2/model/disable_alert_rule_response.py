@@ -18,87 +18,87 @@ class DisableAlertRuleResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'rule_id': 'str',
-        'status': 'str',
+        'fail_list': 'list[AlertRule]',
+        'success_list': 'list[AlertRule]',
         'x_request_id': 'str'
     }
 
     attribute_map = {
-        'rule_id': 'rule_id',
-        'status': 'status',
+        'fail_list': 'fail_list',
+        'success_list': 'success_list',
         'x_request_id': 'X-request-id'
     }
 
-    def __init__(self, rule_id=None, status=None, x_request_id=None):
+    def __init__(self, fail_list=None, success_list=None, x_request_id=None):
         """DisableAlertRuleResponse
 
         The model defined in huaweicloud sdk
 
-        :param rule_id: 告警规则 ID。Alert rule ID.
-        :type rule_id: str
-        :param status: 启用状态，启用、停用。Status, enabled, disabled.
-        :type status: str
+        :param fail_list: Alert rule ID.
+        :type fail_list: list[:class:`huaweicloudsdksecmaster.v2.AlertRule`]
+        :param success_list: Alert rule ID.
+        :type success_list: list[:class:`huaweicloudsdksecmaster.v2.AlertRule`]
         :param x_request_id: 
         :type x_request_id: str
         """
         
         super(DisableAlertRuleResponse, self).__init__()
 
-        self._rule_id = None
-        self._status = None
+        self._fail_list = None
+        self._success_list = None
         self._x_request_id = None
         self.discriminator = None
 
-        if rule_id is not None:
-            self.rule_id = rule_id
-        if status is not None:
-            self.status = status
+        if fail_list is not None:
+            self.fail_list = fail_list
+        if success_list is not None:
+            self.success_list = success_list
         if x_request_id is not None:
             self.x_request_id = x_request_id
 
     @property
-    def rule_id(self):
-        """Gets the rule_id of this DisableAlertRuleResponse.
+    def fail_list(self):
+        """Gets the fail_list of this DisableAlertRuleResponse.
 
-        告警规则 ID。Alert rule ID.
+        Alert rule ID.
 
-        :return: The rule_id of this DisableAlertRuleResponse.
-        :rtype: str
+        :return: The fail_list of this DisableAlertRuleResponse.
+        :rtype: list[:class:`huaweicloudsdksecmaster.v2.AlertRule`]
         """
-        return self._rule_id
+        return self._fail_list
 
-    @rule_id.setter
-    def rule_id(self, rule_id):
-        """Sets the rule_id of this DisableAlertRuleResponse.
+    @fail_list.setter
+    def fail_list(self, fail_list):
+        """Sets the fail_list of this DisableAlertRuleResponse.
 
-        告警规则 ID。Alert rule ID.
+        Alert rule ID.
 
-        :param rule_id: The rule_id of this DisableAlertRuleResponse.
-        :type rule_id: str
+        :param fail_list: The fail_list of this DisableAlertRuleResponse.
+        :type fail_list: list[:class:`huaweicloudsdksecmaster.v2.AlertRule`]
         """
-        self._rule_id = rule_id
+        self._fail_list = fail_list
 
     @property
-    def status(self):
-        """Gets the status of this DisableAlertRuleResponse.
+    def success_list(self):
+        """Gets the success_list of this DisableAlertRuleResponse.
 
-        启用状态，启用、停用。Status, enabled, disabled.
+        Alert rule ID.
 
-        :return: The status of this DisableAlertRuleResponse.
-        :rtype: str
+        :return: The success_list of this DisableAlertRuleResponse.
+        :rtype: list[:class:`huaweicloudsdksecmaster.v2.AlertRule`]
         """
-        return self._status
+        return self._success_list
 
-    @status.setter
-    def status(self, status):
-        """Sets the status of this DisableAlertRuleResponse.
+    @success_list.setter
+    def success_list(self, success_list):
+        """Sets the success_list of this DisableAlertRuleResponse.
 
-        启用状态，启用、停用。Status, enabled, disabled.
+        Alert rule ID.
 
-        :param status: The status of this DisableAlertRuleResponse.
-        :type status: str
+        :param success_list: The success_list of this DisableAlertRuleResponse.
+        :type success_list: list[:class:`huaweicloudsdksecmaster.v2.AlertRule`]
         """
-        self._status = status
+        self._success_list = success_list
 
     @property
     def x_request_id(self):

@@ -18,19 +18,15 @@ class IndicatorDataObjectDetailIndicatorType:
 
     openapi_types = {
         'indicator_type': 'str',
-        'id': 'str',
-        'category': 'str',
-        'layout_id': 'str'
+        'id': 'str'
     }
 
     attribute_map = {
         'indicator_type': 'indicator_type',
-        'id': 'id',
-        'category': 'category',
-        'layout_id': 'layout_id'
+        'id': 'id'
     }
 
-    def __init__(self, indicator_type=None, id=None, category=None, layout_id=None):
+    def __init__(self, indicator_type=None, id=None):
         """IndicatorDataObjectDetailIndicatorType
 
         The model defined in huaweicloud sdk
@@ -39,28 +35,18 @@ class IndicatorDataObjectDetailIndicatorType:
         :type indicator_type: str
         :param id: 情报类型ID
         :type id: str
-        :param category: 目录
-        :type category: str
-        :param layout_id: 布局ID
-        :type layout_id: str
         """
         
         
 
         self._indicator_type = None
         self._id = None
-        self._category = None
-        self._layout_id = None
         self.discriminator = None
 
         if indicator_type is not None:
             self.indicator_type = indicator_type
         if id is not None:
             self.id = id
-        if category is not None:
-            self.category = category
-        if layout_id is not None:
-            self.layout_id = layout_id
 
     @property
     def indicator_type(self):
@@ -105,50 +91,6 @@ class IndicatorDataObjectDetailIndicatorType:
         :type id: str
         """
         self._id = id
-
-    @property
-    def category(self):
-        """Gets the category of this IndicatorDataObjectDetailIndicatorType.
-
-        目录
-
-        :return: The category of this IndicatorDataObjectDetailIndicatorType.
-        :rtype: str
-        """
-        return self._category
-
-    @category.setter
-    def category(self, category):
-        """Sets the category of this IndicatorDataObjectDetailIndicatorType.
-
-        目录
-
-        :param category: The category of this IndicatorDataObjectDetailIndicatorType.
-        :type category: str
-        """
-        self._category = category
-
-    @property
-    def layout_id(self):
-        """Gets the layout_id of this IndicatorDataObjectDetailIndicatorType.
-
-        布局ID
-
-        :return: The layout_id of this IndicatorDataObjectDetailIndicatorType.
-        :rtype: str
-        """
-        return self._layout_id
-
-    @layout_id.setter
-    def layout_id(self, layout_id):
-        """Sets the layout_id of this IndicatorDataObjectDetailIndicatorType.
-
-        布局ID
-
-        :param layout_id: The layout_id of this IndicatorDataObjectDetailIndicatorType.
-        :type layout_id: str
-        """
-        self._layout_id = layout_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

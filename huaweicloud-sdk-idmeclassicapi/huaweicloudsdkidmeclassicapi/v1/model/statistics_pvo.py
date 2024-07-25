@@ -31,9 +31,9 @@ class StatisticsPVO:
 
         The model defined in huaweicloud sdk
 
-        :param end_time: 结束时间。
+        :param end_time: **参数解释：**  结束时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type end_time: str
-        :param start_time: 开始时间。
+        :param start_time: **参数解释：**  开始时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type start_time: str
         """
         
@@ -50,7 +50,7 @@ class StatisticsPVO:
     def end_time(self):
         """Gets the end_time of this StatisticsPVO.
 
-        结束时间。
+        **参数解释：**  结束时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The end_time of this StatisticsPVO.
         :rtype: str
@@ -61,7 +61,7 @@ class StatisticsPVO:
     def end_time(self, end_time):
         """Sets the end_time of this StatisticsPVO.
 
-        结束时间。
+        **参数解释：**  结束时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param end_time: The end_time of this StatisticsPVO.
         :type end_time: str
@@ -72,7 +72,7 @@ class StatisticsPVO:
     def start_time(self):
         """Gets the start_time of this StatisticsPVO.
 
-        开始时间。
+        **参数解释：**  开始时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The start_time of this StatisticsPVO.
         :rtype: str
@@ -83,7 +83,7 @@ class StatisticsPVO:
     def start_time(self, start_time):
         """Sets the start_time of this StatisticsPVO.
 
-        开始时间。
+        **参数解释：**  开始时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param start_time: The start_time of this StatisticsPVO.
         :type start_time: str

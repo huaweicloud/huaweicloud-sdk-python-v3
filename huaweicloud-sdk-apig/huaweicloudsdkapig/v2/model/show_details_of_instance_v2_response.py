@@ -160,7 +160,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         :type maintain_end: str
         :param ingress_ip: 实例入口，虚拟私有云访问地址
         :type ingress_ip: str
-        :param ingress_ip_v6: 实例入口，虚拟私有云访问地址 (IPv6) 
+        :param ingress_ip_v6: 实例入口，虚拟私有云访问地址 (IPv6)
         :type ingress_ip_v6: str
         :param user_id: 实例所属用户ID
         :type user_id: str
@@ -816,7 +816,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
     def ingress_ip_v6(self):
         """Gets the ingress_ip_v6 of this ShowDetailsOfInstanceV2Response.
 
-        实例入口，虚拟私有云访问地址 (IPv6) 
+        实例入口，虚拟私有云访问地址 (IPv6)
 
         :return: The ingress_ip_v6 of this ShowDetailsOfInstanceV2Response.
         :rtype: str
@@ -827,7 +827,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
     def ingress_ip_v6(self, ingress_ip_v6):
         """Sets the ingress_ip_v6 of this ShowDetailsOfInstanceV2Response.
 
-        实例入口，虚拟私有云访问地址 (IPv6) 
+        实例入口，虚拟私有云访问地址 (IPv6)
 
         :param ingress_ip_v6: The ingress_ip_v6 of this ShowDetailsOfInstanceV2Response.
         :type ingress_ip_v6: str

@@ -232,6 +232,7 @@ from huaweicloudsdkidmeclassicapi.v1.model.related_object_view_dto import Relate
 from huaweicloudsdkidmeclassicapi.v1.model.relation_model_view_dto import RelationModelViewDTO
 from huaweicloudsdkidmeclassicapi.v1.model.remove_tag_request import RemoveTagRequest
 from huaweicloudsdkidmeclassicapi.v1.model.remove_tag_response import RemoveTagResponse
+from huaweicloudsdkidmeclassicapi.v1.model.result import Result
 from huaweicloudsdkidmeclassicapi.v1.model.save_all_using_post_request import SaveAllUsingPostRequest
 from huaweicloudsdkidmeclassicapi.v1.model.save_all_using_post_response import SaveAllUsingPostResponse
 from huaweicloudsdkidmeclassicapi.v1.model.save_as_using_post_request import SaveAsUsingPostRequest

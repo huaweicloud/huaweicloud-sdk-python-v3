@@ -3173,14 +3173,14 @@ class IDMEClassicAPIClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'page_size_path' in local_var_params:
+            path_params['pageSizePath'] = local_var_params['page_size_path']
+        if 'cur_page_path' in local_var_params:
+            path_params['curPagePath'] = local_var_params['cur_page_path']
         if 'identifier' in local_var_params:
             path_params['identifier'] = local_var_params['identifier']
         if 'model_name' in local_var_params:
             path_params['modelName'] = local_var_params['model_name']
-        if 'cur_page_path' in local_var_params:
-            path_params['curPagePath'] = local_var_params['cur_page_path']
-        if 'page_size_path' in local_var_params:
-            path_params['pageSizePath'] = local_var_params['page_size_path']
 
         query_params = []
         if 'cur_page' in local_var_params:
@@ -3260,14 +3260,14 @@ class IDMEClassicAPIClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'identifier' in local_var_params:
-            path_params['identifier'] = local_var_params['identifier']
-        if 'model_name' in local_var_params:
-            path_params['modelName'] = local_var_params['model_name']
         if 'page_size_path' in local_var_params:
             path_params['pageSizePath'] = local_var_params['page_size_path']
         if 'cur_page_path' in local_var_params:
             path_params['curPagePath'] = local_var_params['cur_page_path']
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
 
         query_params = []
         if 'cur_page' in local_var_params:
@@ -3416,14 +3416,14 @@ class IDMEClassicAPIClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'identifier' in local_var_params:
-            path_params['identifier'] = local_var_params['identifier']
-        if 'model_name' in local_var_params:
-            path_params['modelName'] = local_var_params['model_name']
         if 'page_size_path' in local_var_params:
             path_params['pageSizePath'] = local_var_params['page_size_path']
         if 'cur_page_path' in local_var_params:
             path_params['curPagePath'] = local_var_params['cur_page_path']
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
 
         query_params = []
         if 'cur_page' in local_var_params:
@@ -3503,28 +3503,30 @@ class IDMEClassicAPIClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'identifier' in local_var_params:
-            path_params['identifier'] = local_var_params['identifier']
-        if 'model_name' in local_var_params:
-            path_params['modelName'] = local_var_params['model_name']
         if 'page_size_path' in local_var_params:
             path_params['pageSizePath'] = local_var_params['page_size_path']
         if 'cur_page_path' in local_var_params:
             path_params['curPagePath'] = local_var_params['cur_page_path']
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
 
         query_params = []
         if 'cur_page' in local_var_params:
             query_params.append(('curPage', local_var_params['cur_page']))
+        if 'end_index' in local_var_params:
+            query_params.append(('endIndex', local_var_params['end_index']))
+        if 'max_page_size' in local_var_params:
+            query_params.append(('maxPageSize', local_var_params['max_page_size']))
         if 'page_size' in local_var_params:
             query_params.append(('pageSize', local_var_params['page_size']))
-        if 'total_rows' in local_var_params:
-            query_params.append(('totalRows', local_var_params['total_rows']))
+        if 'start_index' in local_var_params:
+            query_params.append(('startIndex', local_var_params['start_index']))
         if 'total_pages' in local_var_params:
             query_params.append(('totalPages', local_var_params['total_pages']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
+        if 'total_rows' in local_var_params:
+            query_params.append(('totalRows', local_var_params['total_rows']))
 
         header_params = {}
 
@@ -3588,14 +3590,14 @@ class IDMEClassicAPIClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'identifier' in local_var_params:
-            path_params['identifier'] = local_var_params['identifier']
-        if 'model_name' in local_var_params:
-            path_params['modelName'] = local_var_params['model_name']
         if 'page_size_path' in local_var_params:
             path_params['pageSizePath'] = local_var_params['page_size_path']
         if 'cur_page_path' in local_var_params:
             path_params['curPagePath'] = local_var_params['cur_page_path']
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
 
         query_params = []
         if 'cur_page' in local_var_params:
@@ -3676,14 +3678,14 @@ class IDMEClassicAPIClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'identifier' in local_var_params:
-            path_params['identifier'] = local_var_params['identifier']
-        if 'model_name' in local_var_params:
-            path_params['modelName'] = local_var_params['model_name']
         if 'page_size_path' in local_var_params:
             path_params['pageSizePath'] = local_var_params['page_size_path']
         if 'cur_page_path' in local_var_params:
             path_params['curPagePath'] = local_var_params['cur_page_path']
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
 
         query_params = []
         if 'cur_page' in local_var_params:
@@ -3764,14 +3766,14 @@ class IDMEClassicAPIClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'identifier' in local_var_params:
-            path_params['identifier'] = local_var_params['identifier']
-        if 'model_name' in local_var_params:
-            path_params['modelName'] = local_var_params['model_name']
         if 'page_size_path' in local_var_params:
             path_params['pageSizePath'] = local_var_params['page_size_path']
         if 'cur_page_path' in local_var_params:
             path_params['curPagePath'] = local_var_params['cur_page_path']
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
 
         query_params = []
         if 'cur_page' in local_var_params:
@@ -3851,14 +3853,14 @@ class IDMEClassicAPIClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'identifier' in local_var_params:
-            path_params['identifier'] = local_var_params['identifier']
-        if 'model_name' in local_var_params:
-            path_params['modelName'] = local_var_params['model_name']
         if 'page_size_path' in local_var_params:
             path_params['pageSizePath'] = local_var_params['page_size_path']
         if 'cur_page_path' in local_var_params:
             path_params['curPagePath'] = local_var_params['cur_page_path']
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
 
         query_params = []
         if 'cur_page' in local_var_params:
@@ -3938,14 +3940,14 @@ class IDMEClassicAPIClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'identifier' in local_var_params:
-            path_params['identifier'] = local_var_params['identifier']
-        if 'model_name' in local_var_params:
-            path_params['modelName'] = local_var_params['model_name']
         if 'page_size_path' in local_var_params:
             path_params['pageSizePath'] = local_var_params['page_size_path']
         if 'cur_page_path' in local_var_params:
             path_params['curPagePath'] = local_var_params['cur_page_path']
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
 
         query_params = []
         if 'cur_page' in local_var_params:
@@ -4025,14 +4027,14 @@ class IDMEClassicAPIClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'identifier' in local_var_params:
-            path_params['identifier'] = local_var_params['identifier']
-        if 'model_name' in local_var_params:
-            path_params['modelName'] = local_var_params['model_name']
         if 'page_size_path' in local_var_params:
             path_params['pageSizePath'] = local_var_params['page_size_path']
         if 'cur_page_path' in local_var_params:
             path_params['curPagePath'] = local_var_params['cur_page_path']
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
 
         query_params = []
         if 'cur_page' in local_var_params:
@@ -4462,14 +4464,14 @@ class IDMEClassicAPIClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'identifier' in local_var_params:
-            path_params['identifier'] = local_var_params['identifier']
-        if 'model_name' in local_var_params:
-            path_params['modelName'] = local_var_params['model_name']
         if 'page_size_path' in local_var_params:
             path_params['pageSizePath'] = local_var_params['page_size_path']
         if 'cur_page_path' in local_var_params:
             path_params['curPagePath'] = local_var_params['cur_page_path']
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
 
         query_params = []
         if 'cur_page' in local_var_params:

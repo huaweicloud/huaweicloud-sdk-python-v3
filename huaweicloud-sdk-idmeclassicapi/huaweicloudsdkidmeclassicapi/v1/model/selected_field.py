@@ -31,9 +31,9 @@ class SelectedField:
 
         The model defined in huaweicloud sdk
 
-        :param name: 字段名称，如果是子参考对象的属性，则为“参考对象.属性名称”，例如：“master.name”
+        :param name: **参数解释：**  字段名称，如果是子参考对象的属性，则为“参考对象.属性名称”，例如：“master.name”。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type name: str
-        :param name_as: 字段别名。如果不填，默认使用name参数的值。
+        :param name_as: **参数解释：**  字段别名。如果不填，默认使用name参数的值。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type name_as: str
         """
         
@@ -51,7 +51,7 @@ class SelectedField:
     def name(self):
         """Gets the name of this SelectedField.
 
-        字段名称，如果是子参考对象的属性，则为“参考对象.属性名称”，例如：“master.name”
+        **参数解释：**  字段名称，如果是子参考对象的属性，则为“参考对象.属性名称”，例如：“master.name”。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The name of this SelectedField.
         :rtype: str
@@ -62,7 +62,7 @@ class SelectedField:
     def name(self, name):
         """Sets the name of this SelectedField.
 
-        字段名称，如果是子参考对象的属性，则为“参考对象.属性名称”，例如：“master.name”
+        **参数解释：**  字段名称，如果是子参考对象的属性，则为“参考对象.属性名称”，例如：“master.name”。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param name: The name of this SelectedField.
         :type name: str
@@ -73,7 +73,7 @@ class SelectedField:
     def name_as(self):
         """Gets the name_as of this SelectedField.
 
-        字段别名。如果不填，默认使用name参数的值。
+        **参数解释：**  字段别名。如果不填，默认使用name参数的值。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The name_as of this SelectedField.
         :rtype: str
@@ -84,7 +84,7 @@ class SelectedField:
     def name_as(self, name_as):
         """Sets the name_as of this SelectedField.
 
-        字段别名。如果不填，默认使用name参数的值。
+        **参数解释：**  字段别名。如果不填，默认使用name参数的值。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param name_as: The name_as of this SelectedField.
         :type name_as: str

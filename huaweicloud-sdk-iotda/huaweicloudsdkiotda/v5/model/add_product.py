@@ -53,7 +53,7 @@ class AddProduct:
         :type name: str
         :param device_type: **参数说明**：设备类型。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?&#39;#().,&amp;%@!-等字符的组合。
         :type device_type: str
-        :param protocol_type: **参数说明**：设备使用的协议类型。 **取值范围**：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF，OPC-UA，OPC-DA，Other。
+        :param protocol_type: **参数说明**：设备使用的协议类型。 **取值范围**：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF，OPC-UA，OPC-DA，Other，TCP，UDP。
         :type protocol_type: str
         :param data_format: **参数说明**：设备上报数据的格式。 **取值范围**： - json：JSON格式 - binary：二进制码流格式 默认值json。
         :type data_format: str
@@ -169,7 +169,7 @@ class AddProduct:
     def protocol_type(self):
         """Gets the protocol_type of this AddProduct.
 
-        **参数说明**：设备使用的协议类型。 **取值范围**：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF，OPC-UA，OPC-DA，Other。
+        **参数说明**：设备使用的协议类型。 **取值范围**：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF，OPC-UA，OPC-DA，Other，TCP，UDP。
 
         :return: The protocol_type of this AddProduct.
         :rtype: str
@@ -180,7 +180,7 @@ class AddProduct:
     def protocol_type(self, protocol_type):
         """Sets the protocol_type of this AddProduct.
 
-        **参数说明**：设备使用的协议类型。 **取值范围**：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF，OPC-UA，OPC-DA，Other。
+        **参数说明**：设备使用的协议类型。 **取值范围**：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF，OPC-UA，OPC-DA，Other，TCP，UDP。
 
         :param protocol_type: The protocol_type of this AddProduct.
         :type protocol_type: str

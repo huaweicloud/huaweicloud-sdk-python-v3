@@ -21,7 +21,7 @@ class MultiViewModelBranchViewDTO:
         'create_time': 'str',
         'creator': 'str',
         'id': 'str',
-        'last_update_time': 'object',
+        'last_update_time': 'str',
         'modifier': 'str',
         'rdm_delete_flag': 'int',
         'rdm_extension_type': 'str',
@@ -49,27 +49,27 @@ class MultiViewModelBranchViewDTO:
 
         The model defined in huaweicloud sdk
 
-        :param class_name: 类名。
+        :param class_name: **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type class_name: str
-        :param create_time: 创建时间。
+        :param create_time: **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type create_time: str
-        :param creator: 创建者。
+        :param creator: **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type creator: str
-        :param id: 唯一标识。
+        :param id: **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
         :type id: str
-        :param last_update_time: 最后更新时间。
-        :type last_update_time: object
-        :param modifier: 修改人。
+        :param last_update_time: **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :type last_update_time: str
+        :param modifier: **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type modifier: str
-        :param rdm_delete_flag: 软删除标识，参数值为0或1。 - 0：表示未删除。 - 1：表示已删除。
+        :param rdm_delete_flag: **参数解释：**  软删除标识，参数值为0或1。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  不涉及。 
         :type rdm_delete_flag: int
-        :param rdm_extension_type: 扩展类型。
+        :param rdm_extension_type: **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type rdm_extension_type: str
-        :param rdm_version: 系统版本。
+        :param rdm_version: **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type rdm_version: int
         :param tenant: 
         :type tenant: :class:`huaweicloudsdkidmeclassicapi.v1.TenantViewDTO`
-        :param version: 版本号。
+        :param version: **参数解释：**  版本号。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type version: str
         """
         
@@ -115,7 +115,7 @@ class MultiViewModelBranchViewDTO:
     def class_name(self):
         """Gets the class_name of this MultiViewModelBranchViewDTO.
 
-        类名。
+        **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The class_name of this MultiViewModelBranchViewDTO.
         :rtype: str
@@ -126,7 +126,7 @@ class MultiViewModelBranchViewDTO:
     def class_name(self, class_name):
         """Sets the class_name of this MultiViewModelBranchViewDTO.
 
-        类名。
+        **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param class_name: The class_name of this MultiViewModelBranchViewDTO.
         :type class_name: str
@@ -137,7 +137,7 @@ class MultiViewModelBranchViewDTO:
     def create_time(self):
         """Gets the create_time of this MultiViewModelBranchViewDTO.
 
-        创建时间。
+        **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The create_time of this MultiViewModelBranchViewDTO.
         :rtype: str
@@ -148,7 +148,7 @@ class MultiViewModelBranchViewDTO:
     def create_time(self, create_time):
         """Sets the create_time of this MultiViewModelBranchViewDTO.
 
-        创建时间。
+        **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param create_time: The create_time of this MultiViewModelBranchViewDTO.
         :type create_time: str
@@ -159,7 +159,7 @@ class MultiViewModelBranchViewDTO:
     def creator(self):
         """Gets the creator of this MultiViewModelBranchViewDTO.
 
-        创建者。
+        **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The creator of this MultiViewModelBranchViewDTO.
         :rtype: str
@@ -170,7 +170,7 @@ class MultiViewModelBranchViewDTO:
     def creator(self, creator):
         """Sets the creator of this MultiViewModelBranchViewDTO.
 
-        创建者。
+        **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param creator: The creator of this MultiViewModelBranchViewDTO.
         :type creator: str
@@ -181,7 +181,7 @@ class MultiViewModelBranchViewDTO:
     def id(self):
         """Gets the id of this MultiViewModelBranchViewDTO.
 
-        唯一标识。
+        **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :return: The id of this MultiViewModelBranchViewDTO.
         :rtype: str
@@ -192,7 +192,7 @@ class MultiViewModelBranchViewDTO:
     def id(self, id):
         """Sets the id of this MultiViewModelBranchViewDTO.
 
-        唯一标识。
+        **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :param id: The id of this MultiViewModelBranchViewDTO.
         :type id: str
@@ -203,10 +203,10 @@ class MultiViewModelBranchViewDTO:
     def last_update_time(self):
         """Gets the last_update_time of this MultiViewModelBranchViewDTO.
 
-        最后更新时间。
+        **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The last_update_time of this MultiViewModelBranchViewDTO.
-        :rtype: object
+        :rtype: str
         """
         return self._last_update_time
 
@@ -214,10 +214,10 @@ class MultiViewModelBranchViewDTO:
     def last_update_time(self, last_update_time):
         """Sets the last_update_time of this MultiViewModelBranchViewDTO.
 
-        最后更新时间。
+        **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param last_update_time: The last_update_time of this MultiViewModelBranchViewDTO.
-        :type last_update_time: object
+        :type last_update_time: str
         """
         self._last_update_time = last_update_time
 
@@ -225,7 +225,7 @@ class MultiViewModelBranchViewDTO:
     def modifier(self):
         """Gets the modifier of this MultiViewModelBranchViewDTO.
 
-        修改人。
+        **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The modifier of this MultiViewModelBranchViewDTO.
         :rtype: str
@@ -236,7 +236,7 @@ class MultiViewModelBranchViewDTO:
     def modifier(self, modifier):
         """Sets the modifier of this MultiViewModelBranchViewDTO.
 
-        修改人。
+        **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param modifier: The modifier of this MultiViewModelBranchViewDTO.
         :type modifier: str
@@ -247,7 +247,7 @@ class MultiViewModelBranchViewDTO:
     def rdm_delete_flag(self):
         """Gets the rdm_delete_flag of this MultiViewModelBranchViewDTO.
 
-        软删除标识，参数值为0或1。 - 0：表示未删除。 - 1：表示已删除。
+        **参数解释：**  软删除标识，参数值为0或1。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  不涉及。 
 
         :return: The rdm_delete_flag of this MultiViewModelBranchViewDTO.
         :rtype: int
@@ -258,7 +258,7 @@ class MultiViewModelBranchViewDTO:
     def rdm_delete_flag(self, rdm_delete_flag):
         """Sets the rdm_delete_flag of this MultiViewModelBranchViewDTO.
 
-        软删除标识，参数值为0或1。 - 0：表示未删除。 - 1：表示已删除。
+        **参数解释：**  软删除标识，参数值为0或1。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  不涉及。 
 
         :param rdm_delete_flag: The rdm_delete_flag of this MultiViewModelBranchViewDTO.
         :type rdm_delete_flag: int
@@ -269,7 +269,7 @@ class MultiViewModelBranchViewDTO:
     def rdm_extension_type(self):
         """Gets the rdm_extension_type of this MultiViewModelBranchViewDTO.
 
-        扩展类型。
+        **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The rdm_extension_type of this MultiViewModelBranchViewDTO.
         :rtype: str
@@ -280,7 +280,7 @@ class MultiViewModelBranchViewDTO:
     def rdm_extension_type(self, rdm_extension_type):
         """Sets the rdm_extension_type of this MultiViewModelBranchViewDTO.
 
-        扩展类型。
+        **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param rdm_extension_type: The rdm_extension_type of this MultiViewModelBranchViewDTO.
         :type rdm_extension_type: str
@@ -291,7 +291,7 @@ class MultiViewModelBranchViewDTO:
     def rdm_version(self):
         """Gets the rdm_version of this MultiViewModelBranchViewDTO.
 
-        系统版本。
+        **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The rdm_version of this MultiViewModelBranchViewDTO.
         :rtype: int
@@ -302,7 +302,7 @@ class MultiViewModelBranchViewDTO:
     def rdm_version(self, rdm_version):
         """Sets the rdm_version of this MultiViewModelBranchViewDTO.
 
-        系统版本。
+        **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param rdm_version: The rdm_version of this MultiViewModelBranchViewDTO.
         :type rdm_version: int
@@ -331,7 +331,7 @@ class MultiViewModelBranchViewDTO:
     def version(self):
         """Gets the version of this MultiViewModelBranchViewDTO.
 
-        版本号。
+        **参数解释：**  版本号。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The version of this MultiViewModelBranchViewDTO.
         :rtype: str
@@ -342,7 +342,7 @@ class MultiViewModelBranchViewDTO:
     def version(self, version):
         """Sets the version of this MultiViewModelBranchViewDTO.
 
-        版本号。
+        **参数解释：**  版本号。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param version: The version of this MultiViewModelBranchViewDTO.
         :type version: str

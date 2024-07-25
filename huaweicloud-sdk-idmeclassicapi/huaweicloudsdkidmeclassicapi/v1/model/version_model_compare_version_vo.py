@@ -33,11 +33,11 @@ class VersionModelCompareVersionVO:
 
         The model defined in huaweicloud sdk
 
-        :param basic_version: 基础版本号。
+        :param basic_version: **参数解释：**  基础版本号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type basic_version: str
-        :param correlation_version: 对比版本号。
+        :param correlation_version: **参数解释：**  对比版本号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type correlation_version: str
-        :param id: 主对象ID。
+        :param id: **参数解释：**  主对象ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
         :type id: str
         """
         
@@ -56,7 +56,7 @@ class VersionModelCompareVersionVO:
     def basic_version(self):
         """Gets the basic_version of this VersionModelCompareVersionVO.
 
-        基础版本号。
+        **参数解释：**  基础版本号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The basic_version of this VersionModelCompareVersionVO.
         :rtype: str
@@ -67,7 +67,7 @@ class VersionModelCompareVersionVO:
     def basic_version(self, basic_version):
         """Sets the basic_version of this VersionModelCompareVersionVO.
 
-        基础版本号。
+        **参数解释：**  基础版本号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param basic_version: The basic_version of this VersionModelCompareVersionVO.
         :type basic_version: str
@@ -78,7 +78,7 @@ class VersionModelCompareVersionVO:
     def correlation_version(self):
         """Gets the correlation_version of this VersionModelCompareVersionVO.
 
-        对比版本号。
+        **参数解释：**  对比版本号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The correlation_version of this VersionModelCompareVersionVO.
         :rtype: str
@@ -89,7 +89,7 @@ class VersionModelCompareVersionVO:
     def correlation_version(self, correlation_version):
         """Sets the correlation_version of this VersionModelCompareVersionVO.
 
-        对比版本号。
+        **参数解释：**  对比版本号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param correlation_version: The correlation_version of this VersionModelCompareVersionVO.
         :type correlation_version: str
@@ -100,7 +100,7 @@ class VersionModelCompareVersionVO:
     def id(self):
         """Gets the id of this VersionModelCompareVersionVO.
 
-        主对象ID。
+        **参数解释：**  主对象ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :return: The id of this VersionModelCompareVersionVO.
         :rtype: str
@@ -111,7 +111,7 @@ class VersionModelCompareVersionVO:
     def id(self, id):
         """Sets the id of this VersionModelCompareVersionVO.
 
-        主对象ID。
+        **参数解释：**  主对象ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :param id: The id of this VersionModelCompareVersionVO.
         :type id: str

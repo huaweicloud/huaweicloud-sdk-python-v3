@@ -55,7 +55,7 @@ class VpcHealthConfig:
         :type path: str
         :param method: 健康检查时的请求方法
         :type method: str
-        :param port: 健康检查的目标端口，缺少或port &#x3D; 0时为VPC中主机的端口号。  若此端口存在非0值，则使用此端口进行健康检查。
+        :param port: 健康检查的目标端口，缺少或port &#x3D; 0时为VPC中主机的端口号。  如果此端口存在非0值，则使用此端口进行健康检查。
         :type port: int
         :param threshold_normal: 正常阈值。判定VPC通道中主机正常的依据为：连续检查x成功，x为您设置的正常阈值。
         :type threshold_normal: int
@@ -65,7 +65,7 @@ class VpcHealthConfig:
         :type time_interval: int
         :param http_code: 检查目标HTTP响应时，判断成功使用的HTTP响应码。取值范围为100到599之前的任意整数值，支持如下三种格式： - 多个值，如：200,201,202 - 一系列值，如：200-299 - 组合值，如：201,202,210-299 protocol &#x3D; http时必选
         :type http_code: str
-        :param enable_client_ssl: 是否开启双向认证。若开启，则使用实例配置中的backend_client_certificate配置项的证书
+        :param enable_client_ssl: 是否开启双向认证。如果开启，则使用实例配置中的backend_client_certificate配置项的证书
         :type enable_client_ssl: bool
         :param status: 健康检查状态   - 1：可用   - 2：不可用
         :type status: int
@@ -177,7 +177,7 @@ class VpcHealthConfig:
     def port(self):
         """Gets the port of this VpcHealthConfig.
 
-        健康检查的目标端口，缺少或port = 0时为VPC中主机的端口号。  若此端口存在非0值，则使用此端口进行健康检查。
+        健康检查的目标端口，缺少或port = 0时为VPC中主机的端口号。  如果此端口存在非0值，则使用此端口进行健康检查。
 
         :return: The port of this VpcHealthConfig.
         :rtype: int
@@ -188,7 +188,7 @@ class VpcHealthConfig:
     def port(self, port):
         """Sets the port of this VpcHealthConfig.
 
-        健康检查的目标端口，缺少或port = 0时为VPC中主机的端口号。  若此端口存在非0值，则使用此端口进行健康检查。
+        健康检查的目标端口，缺少或port = 0时为VPC中主机的端口号。  如果此端口存在非0值，则使用此端口进行健康检查。
 
         :param port: The port of this VpcHealthConfig.
         :type port: int
@@ -287,7 +287,7 @@ class VpcHealthConfig:
     def enable_client_ssl(self):
         """Gets the enable_client_ssl of this VpcHealthConfig.
 
-        是否开启双向认证。若开启，则使用实例配置中的backend_client_certificate配置项的证书
+        是否开启双向认证。如果开启，则使用实例配置中的backend_client_certificate配置项的证书
 
         :return: The enable_client_ssl of this VpcHealthConfig.
         :rtype: bool
@@ -298,7 +298,7 @@ class VpcHealthConfig:
     def enable_client_ssl(self, enable_client_ssl):
         """Sets the enable_client_ssl of this VpcHealthConfig.
 
-        是否开启双向认证。若开启，则使用实例配置中的backend_client_certificate配置项的证书
+        是否开启双向认证。如果开启，则使用实例配置中的backend_client_certificate配置项的证书
 
         :param enable_client_ssl: The enable_client_ssl of this VpcHealthConfig.
         :type enable_client_ssl: bool

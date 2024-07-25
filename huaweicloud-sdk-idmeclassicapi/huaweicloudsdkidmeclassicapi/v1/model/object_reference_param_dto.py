@@ -31,9 +31,9 @@ class ObjectReferenceParamDTO:
 
         The model defined in huaweicloud sdk
 
-        :param clazz: 类名。
+        :param clazz: **参数解释：**  类名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type clazz: str
-        :param id: 数据实例ID。
+        :param id: **参数解释：**  数据实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
         :type id: str
         """
         
@@ -51,7 +51,7 @@ class ObjectReferenceParamDTO:
     def clazz(self):
         """Gets the clazz of this ObjectReferenceParamDTO.
 
-        类名。
+        **参数解释：**  类名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The clazz of this ObjectReferenceParamDTO.
         :rtype: str
@@ -62,7 +62,7 @@ class ObjectReferenceParamDTO:
     def clazz(self, clazz):
         """Sets the clazz of this ObjectReferenceParamDTO.
 
-        类名。
+        **参数解释：**  类名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param clazz: The clazz of this ObjectReferenceParamDTO.
         :type clazz: str
@@ -73,7 +73,7 @@ class ObjectReferenceParamDTO:
     def id(self):
         """Gets the id of this ObjectReferenceParamDTO.
 
-        数据实例ID。
+        **参数解释：**  数据实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :return: The id of this ObjectReferenceParamDTO.
         :rtype: str
@@ -84,7 +84,7 @@ class ObjectReferenceParamDTO:
     def id(self, id):
         """Sets the id of this ObjectReferenceParamDTO.
 
-        数据实例ID。
+        **参数解释：**  数据实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :param id: The id of this ObjectReferenceParamDTO.
         :type id: str

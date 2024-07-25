@@ -31,7 +31,7 @@ class RDMParamVOTagOperationDTO:
 
         The model defined in huaweicloud sdk
 
-        :param application_id: 应用ID。
+        :param application_id: **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。 
         :type application_id: str
         :param params: 
         :type params: :class:`huaweicloudsdkidmeclassicapi.v1.TagOperationDTO`
@@ -52,7 +52,7 @@ class RDMParamVOTagOperationDTO:
     def application_id(self):
         """Gets the application_id of this RDMParamVOTagOperationDTO.
 
-        应用ID。
+        **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。 
 
         :return: The application_id of this RDMParamVOTagOperationDTO.
         :rtype: str
@@ -63,7 +63,7 @@ class RDMParamVOTagOperationDTO:
     def application_id(self, application_id):
         """Sets the application_id of this RDMParamVOTagOperationDTO.
 
-        应用ID。
+        **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。 
 
         :param application_id: The application_id of this RDMParamVOTagOperationDTO.
         :type application_id: str

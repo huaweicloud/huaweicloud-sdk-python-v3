@@ -6,6 +6,10 @@ from __future__ import absolute_import
 from huaweicloudsdkges.v2.model.attach_eip2_request import AttachEip2Request
 from huaweicloudsdkges.v2.model.attach_eip2_response import AttachEip2Response
 from huaweicloudsdkges.v2.model.attach_eip_req import AttachEipReq
+from huaweicloudsdkges.v2.model.backup_download_link import BackupDownloadLink
+from huaweicloudsdkges.v2.model.change_security_group_req import ChangeSecurityGroupReq
+from huaweicloudsdkges.v2.model.change_security_group_request import ChangeSecurityGroupRequest
+from huaweicloudsdkges.v2.model.change_security_group_response import ChangeSecurityGroupResponse
 from huaweicloudsdkges.v2.model.clear_graph2_request import ClearGraph2Request
 from huaweicloudsdkges.v2.model.clear_graph2_response import ClearGraph2Response
 from huaweicloudsdkges.v2.model.create_backup2_request import CreateBackup2Request
@@ -90,6 +94,8 @@ from huaweicloudsdkges.v2.model.resize_graph_req import ResizeGraphReq
 from huaweicloudsdkges.v2.model.resize_graph_req_resize import ResizeGraphReqResize
 from huaweicloudsdkges.v2.model.restart_graph2_request import RestartGraph2Request
 from huaweicloudsdkges.v2.model.restart_graph2_response import RestartGraph2Response
+from huaweicloudsdkges.v2.model.show_backup_download_link_request import ShowBackupDownloadLinkRequest
+from huaweicloudsdkges.v2.model.show_backup_download_link_response import ShowBackupDownloadLinkResponse
 from huaweicloudsdkges.v2.model.show_graph2_request import ShowGraph2Request
 from huaweicloudsdkges.v2.model.show_graph2_response import ShowGraph2Response
 from huaweicloudsdkges.v2.model.show_graph_resp_graph import ShowGraphRespGraph

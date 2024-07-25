@@ -19,8 +19,8 @@ class ListDataclassFieldsRequest:
     openapi_types = {
         'project_id': 'str',
         'workspace_id': 'str',
-        'offset': 'float',
-        'limit': 'float',
+        'offset': 'int',
+        'limit': 'int',
         'name': 'str',
         'is_built_in': 'bool',
         'dataclass_id': 'str',
@@ -50,9 +50,9 @@ class ListDataclassFieldsRequest:
         :param workspace_id: 工作空间id
         :type workspace_id: str
         :param offset: 偏移量
-        :type offset: float
+        :type offset: int
         :param limit: 数据量
-        :type limit: float
+        :type limit: int
         :param name: 名称查询
         :type name: str
         :param is_built_in: 是否内置
@@ -145,7 +145,7 @@ class ListDataclassFieldsRequest:
         偏移量
 
         :return: The offset of this ListDataclassFieldsRequest.
-        :rtype: float
+        :rtype: int
         """
         return self._offset
 
@@ -156,7 +156,7 @@ class ListDataclassFieldsRequest:
         偏移量
 
         :param offset: The offset of this ListDataclassFieldsRequest.
-        :type offset: float
+        :type offset: int
         """
         self._offset = offset
 
@@ -167,7 +167,7 @@ class ListDataclassFieldsRequest:
         数据量
 
         :return: The limit of this ListDataclassFieldsRequest.
-        :rtype: float
+        :rtype: int
         """
         return self._limit
 
@@ -178,7 +178,7 @@ class ListDataclassFieldsRequest:
         数据量
 
         :param limit: The limit of this ListDataclassFieldsRequest.
-        :type limit: float
+        :type limit: int
         """
         self._limit = limit
 
