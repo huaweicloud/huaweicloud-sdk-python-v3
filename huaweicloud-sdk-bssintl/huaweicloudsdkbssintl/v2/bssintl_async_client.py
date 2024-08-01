@@ -2216,6 +2216,69 @@ class BssintlAsyncClient(Client):
 
         return http_info
 
+    def show_partner_consumption_quota_async(self, request):
+        """查询消费配额
+
+        功能描述：合作伙伴可以查询消费配额。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowPartnerConsumptionQuota
+        :type request: :class:`huaweicloudsdkbssintl.v2.ShowPartnerConsumptionQuotaRequest`
+        :rtype: :class:`huaweicloudsdkbssintl.v2.ShowPartnerConsumptionQuotaResponse`
+        """
+        http_info = self._show_partner_consumption_quota_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_partner_consumption_quota_async_invoker(self, request):
+        http_info = self._show_partner_consumption_quota_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_partner_consumption_quota_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/partners/credit/consumption-quota",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPartnerConsumptionQuotaResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_realname_authentication_review_result_async(self, request):
         """查询实名认证审核结果
 

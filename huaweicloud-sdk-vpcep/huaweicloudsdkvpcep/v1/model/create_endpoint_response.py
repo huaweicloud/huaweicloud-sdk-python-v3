@@ -39,6 +39,7 @@ class CreateEndpointResponse(SdkResponse):
         'specification_name': 'str',
         'description': 'str',
         'policy_statement': 'list[PolicyStatement]',
+        'policy_document': 'object',
         'enable_status': 'str',
         'endpoint_pool_id': 'str',
         'public_border_group': 'str',
@@ -67,13 +68,14 @@ class CreateEndpointResponse(SdkResponse):
         'specification_name': 'specification_name',
         'description': 'description',
         'policy_statement': 'policy_statement',
+        'policy_document': 'policy_document',
         'enable_status': 'enable_status',
         'endpoint_pool_id': 'endpoint_pool_id',
         'public_border_group': 'public_border_group',
         'ipv6_address': 'ipv6_address'
     }
 
-    def __init__(self, id=None, service_type=None, status=None, ip=None, active_status=None, endpoint_service_name=None, marker_id=None, endpoint_service_id=None, enable_dns=None, subnet_id=None, vpc_id=None, created_at=None, updated_at=None, project_id=None, tags=None, whitelist=None, enable_whitelist=None, routetables=None, specification_name=None, description=None, policy_statement=None, enable_status=None, endpoint_pool_id=None, public_border_group=None, ipv6_address=None):
+    def __init__(self, id=None, service_type=None, status=None, ip=None, active_status=None, endpoint_service_name=None, marker_id=None, endpoint_service_id=None, enable_dns=None, subnet_id=None, vpc_id=None, created_at=None, updated_at=None, project_id=None, tags=None, whitelist=None, enable_whitelist=None, routetables=None, specification_name=None, description=None, policy_statement=None, policy_document=None, enable_status=None, endpoint_pool_id=None, public_border_group=None, ipv6_address=None):
         """CreateEndpointResponse
 
         The model defined in huaweicloud sdk
@@ -120,6 +122,8 @@ class CreateEndpointResponse(SdkResponse):
         :type description: str
         :param policy_statement: 终端节点策略信息
         :type policy_statement: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]
+        :param policy_document: iam 5.0 策略
+        :type policy_document: object
         :param enable_status: 终端节点是否可用。  - enable：启用  - disable：不启用
         :type enable_status: str
         :param endpoint_pool_id: 待废弃，实例相关联的集群ID
@@ -153,6 +157,7 @@ class CreateEndpointResponse(SdkResponse):
         self._specification_name = None
         self._description = None
         self._policy_statement = None
+        self._policy_document = None
         self._enable_status = None
         self._endpoint_pool_id = None
         self._public_border_group = None
@@ -201,6 +206,8 @@ class CreateEndpointResponse(SdkResponse):
             self.description = description
         if policy_statement is not None:
             self.policy_statement = policy_statement
+        if policy_document is not None:
+            self.policy_document = policy_document
         if enable_status is not None:
             self.enable_status = enable_status
         if endpoint_pool_id is not None:
@@ -671,6 +678,28 @@ class CreateEndpointResponse(SdkResponse):
         :type policy_statement: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]
         """
         self._policy_statement = policy_statement
+
+    @property
+    def policy_document(self):
+        """Gets the policy_document of this CreateEndpointResponse.
+
+        iam 5.0 策略
+
+        :return: The policy_document of this CreateEndpointResponse.
+        :rtype: object
+        """
+        return self._policy_document
+
+    @policy_document.setter
+    def policy_document(self, policy_document):
+        """Sets the policy_document of this CreateEndpointResponse.
+
+        iam 5.0 策略
+
+        :param policy_document: The policy_document of this CreateEndpointResponse.
+        :type policy_document: object
+        """
+        self._policy_document = policy_document
 
     @property
     def enable_status(self):

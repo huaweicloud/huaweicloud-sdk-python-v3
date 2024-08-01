@@ -24,7 +24,8 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
         'bucket': 'str',
         'base_path': 'str',
         'agency': 'str',
-        'enable': 'str'
+        'enable': 'str',
+        'frequency': 'str'
     }
 
     attribute_map = {
@@ -34,10 +35,11 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
         'bucket': 'bucket',
         'base_path': 'basePath',
         'agency': 'agency',
-        'enable': 'enable'
+        'enable': 'enable',
+        'frequency': 'frequency'
     }
 
-    def __init__(self, keepday=None, period=None, prefix=None, bucket=None, base_path=None, agency=None, enable=None):
+    def __init__(self, keepday=None, period=None, prefix=None, bucket=None, base_path=None, agency=None, enable=None, frequency=None):
         """ShowAutoCreatePolicyResponse
 
         The model defined in huaweicloud sdk
@@ -56,6 +58,8 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
         :type agency: str
         :param enable: 是否开启自动创建快照策略。 - true：表示开启自动创建快照策略。 - false：表示关闭自动创建快照策略。
         :type enable: str
+        :param frequency: 自动创建快照的执行频次。
+        :type frequency: str
         """
         
         super(ShowAutoCreatePolicyResponse, self).__init__()
@@ -67,6 +71,7 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
         self._base_path = None
         self._agency = None
         self._enable = None
+        self._frequency = None
         self.discriminator = None
 
         if keepday is not None:
@@ -83,6 +88,8 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
             self.agency = agency
         if enable is not None:
             self.enable = enable
+        if frequency is not None:
+            self.frequency = frequency
 
     @property
     def keepday(self):
@@ -237,6 +244,28 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
         :type enable: str
         """
         self._enable = enable
+
+    @property
+    def frequency(self):
+        """Gets the frequency of this ShowAutoCreatePolicyResponse.
+
+        自动创建快照的执行频次。
+
+        :return: The frequency of this ShowAutoCreatePolicyResponse.
+        :rtype: str
+        """
+        return self._frequency
+
+    @frequency.setter
+    def frequency(self, frequency):
+        """Sets the frequency of this ShowAutoCreatePolicyResponse.
+
+        自动创建快照的执行频次。
+
+        :param frequency: The frequency of this ShowAutoCreatePolicyResponse.
+        :type frequency: str
+        """
+        self._frequency = frequency
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -22,8 +22,7 @@ class PeriodProductRatingResult:
         'amount': 'decimal.Decimal',
         'official_website_amount': 'decimal.Decimal',
         'discount_amount': 'decimal.Decimal',
-        'measure_id': 'int',
-        'limit': 'int'
+        'measure_id': 'int'
     }
 
     attribute_map = {
@@ -32,11 +31,10 @@ class PeriodProductRatingResult:
         'amount': 'amount',
         'official_website_amount': 'official_website_amount',
         'discount_amount': 'discount_amount',
-        'measure_id': 'measure_id',
-        'limit': 'limit'
+        'measure_id': 'measure_id'
     }
 
-    def __init__(self, id=None, product_id=None, amount=None, official_website_amount=None, discount_amount=None, measure_id=None, limit=None):
+    def __init__(self, id=None, product_id=None, amount=None, official_website_amount=None, discount_amount=None, measure_id=None):
         """PeriodProductRatingResult
 
         The model defined in huaweicloud sdk
@@ -53,8 +51,6 @@ class PeriodProductRatingResult:
         :type discount_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param measure_id: 价格度量单位标识。 1：元
         :type measure_id: int
-        :param limit: |参数名称：每页数量| |参数的约束及描述：该参数非必填，且只允许1-100数字，默认10，最多100|
-        :type limit: int
         """
         
         
@@ -65,7 +61,6 @@ class PeriodProductRatingResult:
         self._official_website_amount = None
         self._discount_amount = None
         self._measure_id = None
-        self._limit = None
         self.discriminator = None
 
         if id is not None:
@@ -80,8 +75,6 @@ class PeriodProductRatingResult:
             self.discount_amount = discount_amount
         if measure_id is not None:
             self.measure_id = measure_id
-        if limit is not None:
-            self.limit = limit
 
     @property
     def id(self):
@@ -214,28 +207,6 @@ class PeriodProductRatingResult:
         :type measure_id: int
         """
         self._measure_id = measure_id
-
-    @property
-    def limit(self):
-        """Gets the limit of this PeriodProductRatingResult.
-
-        |参数名称：每页数量| |参数的约束及描述：该参数非必填，且只允许1-100数字，默认10，最多100|
-
-        :return: The limit of this PeriodProductRatingResult.
-        :rtype: int
-        """
-        return self._limit
-
-    @limit.setter
-    def limit(self, limit):
-        """Sets the limit of this PeriodProductRatingResult.
-
-        |参数名称：每页数量| |参数的约束及描述：该参数非必填，且只允许1-100数字，默认10，最多100|
-
-        :param limit: The limit of this PeriodProductRatingResult.
-        :type limit: int
-        """
-        self._limit = limit
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -42,6 +42,7 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
         'routetables': 'list[str]',
         'description': 'str',
         'policy_statement': 'list[PolicyStatement]',
+        'policy_document': 'object',
         'endpoint_pool_id': 'str',
         'public_border_group': 'str',
         'ipv6_address': 'str'
@@ -72,12 +73,13 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
         'routetables': 'routetables',
         'description': 'description',
         'policy_statement': 'policy_statement',
+        'policy_document': 'policy_document',
         'endpoint_pool_id': 'endpoint_pool_id',
         'public_border_group': 'public_border_group',
         'ipv6_address': 'ipv6_address'
     }
 
-    def __init__(self, id=None, service_type=None, status=None, active_status=None, enable_status=None, specification_name=None, endpoint_service_name=None, marker_id=None, endpoint_service_id=None, enable_dns=None, dns_names=None, ip=None, vpc_id=None, subnet_id=None, created_at=None, updated_at=None, project_id=None, tags=None, error=None, whitelist=None, enable_whitelist=None, routetables=None, description=None, policy_statement=None, endpoint_pool_id=None, public_border_group=None, ipv6_address=None):
+    def __init__(self, id=None, service_type=None, status=None, active_status=None, enable_status=None, specification_name=None, endpoint_service_name=None, marker_id=None, endpoint_service_id=None, enable_dns=None, dns_names=None, ip=None, vpc_id=None, subnet_id=None, created_at=None, updated_at=None, project_id=None, tags=None, error=None, whitelist=None, enable_whitelist=None, routetables=None, description=None, policy_statement=None, policy_document=None, endpoint_pool_id=None, public_border_group=None, ipv6_address=None):
         """ListEndpointInfoDetailsResponse
 
         The model defined in huaweicloud sdk
@@ -130,11 +132,13 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
         :type description: str
         :param policy_statement: 终端节点策略信息
         :type policy_statement: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]
+        :param policy_document: iam 5.0 策略
+        :type policy_document: object
         :param endpoint_pool_id: 待废弃，实例相关联的集群ID
         :type endpoint_pool_id: str
         :param public_border_group: 终端节点对应Pool的Public Border Group信息
         :type public_border_group: str
-        :param ipv6_address: 访问所连接的终端节点服务的IPv6的地址。 创建终端节点时，可以指定访问所连接的终端节点服务的IP，不指定的情况下，会使用系统生成的一个地址。 仅专业型终端节点支持此参数。
+        :param ipv6_address: 访问所连接的终端节点服务的IPv6的地址。  创建终端节点时，可以指定访问所连接的终端节点服务的IP，不指定的情况下，会使用系统生成的一个地址。  仅专业型终端节点支持此参数。
         :type ipv6_address: str
         """
         
@@ -164,6 +168,7 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
         self._routetables = None
         self._description = None
         self._policy_statement = None
+        self._policy_document = None
         self._endpoint_pool_id = None
         self._public_border_group = None
         self._ipv6_address = None
@@ -217,6 +222,8 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
             self.description = description
         if policy_statement is not None:
             self.policy_statement = policy_statement
+        if policy_document is not None:
+            self.policy_document = policy_document
         if endpoint_pool_id is not None:
             self.endpoint_pool_id = endpoint_pool_id
         if public_border_group is not None:
@@ -749,6 +756,28 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
         self._policy_statement = policy_statement
 
     @property
+    def policy_document(self):
+        """Gets the policy_document of this ListEndpointInfoDetailsResponse.
+
+        iam 5.0 策略
+
+        :return: The policy_document of this ListEndpointInfoDetailsResponse.
+        :rtype: object
+        """
+        return self._policy_document
+
+    @policy_document.setter
+    def policy_document(self, policy_document):
+        """Sets the policy_document of this ListEndpointInfoDetailsResponse.
+
+        iam 5.0 策略
+
+        :param policy_document: The policy_document of this ListEndpointInfoDetailsResponse.
+        :type policy_document: object
+        """
+        self._policy_document = policy_document
+
+    @property
     def endpoint_pool_id(self):
         """Gets the endpoint_pool_id of this ListEndpointInfoDetailsResponse.
 
@@ -796,7 +825,7 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
     def ipv6_address(self):
         """Gets the ipv6_address of this ListEndpointInfoDetailsResponse.
 
-        访问所连接的终端节点服务的IPv6的地址。 创建终端节点时，可以指定访问所连接的终端节点服务的IP，不指定的情况下，会使用系统生成的一个地址。 仅专业型终端节点支持此参数。
+        访问所连接的终端节点服务的IPv6的地址。  创建终端节点时，可以指定访问所连接的终端节点服务的IP，不指定的情况下，会使用系统生成的一个地址。  仅专业型终端节点支持此参数。
 
         :return: The ipv6_address of this ListEndpointInfoDetailsResponse.
         :rtype: str
@@ -807,7 +836,7 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
     def ipv6_address(self, ipv6_address):
         """Sets the ipv6_address of this ListEndpointInfoDetailsResponse.
 
-        访问所连接的终端节点服务的IPv6的地址。 创建终端节点时，可以指定访问所连接的终端节点服务的IP，不指定的情况下，会使用系统生成的一个地址。 仅专业型终端节点支持此参数。
+        访问所连接的终端节点服务的IPv6的地址。  创建终端节点时，可以指定访问所连接的终端节点服务的IP，不指定的情况下，会使用系统生成的一个地址。  仅专业型终端节点支持此参数。
 
         :param ipv6_address: The ipv6_address of this ListEndpointInfoDetailsResponse.
         :type ipv6_address: str

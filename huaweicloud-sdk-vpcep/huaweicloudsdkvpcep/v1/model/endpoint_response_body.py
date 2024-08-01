@@ -39,6 +39,7 @@ class EndpointResponseBody:
         'routetables': 'list[str]',
         'description': 'str',
         'policy_statement': 'list[PolicyStatement]',
+        'policy_document': 'object',
         'endpoint_pool_id': 'str',
         'public_border_group': 'str'
     }
@@ -66,11 +67,12 @@ class EndpointResponseBody:
         'routetables': 'routetables',
         'description': 'description',
         'policy_statement': 'policy_statement',
+        'policy_document': 'policy_document',
         'endpoint_pool_id': 'endpoint_pool_id',
         'public_border_group': 'public_border_group'
     }
 
-    def __init__(self, id=None, service_type=None, status=None, active_status=None, endpoint_service_name=None, marker_id=None, endpoint_service_id=None, enable_dns=None, dns_names=None, ip=None, vpc_id=None, subnet_id=None, created_at=None, updated_at=None, project_id=None, tags=None, error=None, whitelist=None, enable_whitelist=None, routetables=None, description=None, policy_statement=None, endpoint_pool_id=None, public_border_group=None):
+    def __init__(self, id=None, service_type=None, status=None, active_status=None, endpoint_service_name=None, marker_id=None, endpoint_service_id=None, enable_dns=None, dns_names=None, ip=None, vpc_id=None, subnet_id=None, created_at=None, updated_at=None, project_id=None, tags=None, error=None, whitelist=None, enable_whitelist=None, routetables=None, description=None, policy_statement=None, policy_document=None, endpoint_pool_id=None, public_border_group=None):
         """EndpointResponseBody
 
         The model defined in huaweicloud sdk
@@ -119,9 +121,11 @@ class EndpointResponseBody:
         :type description: str
         :param policy_statement: 终端节点策略信息
         :type policy_statement: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]
+        :param policy_document: iam 5.0 策略
+        :type policy_document: object
         :param endpoint_pool_id: 待废弃，实例相关联的集群ID
         :type endpoint_pool_id: str
-        :param public_border_group: 终端节点关联的Public Border Group信息，只有当终端节点和边缘Pool相关联时才会返回改字段
+        :param public_border_group: 终端节点关联的Public Border Group信息，只有当终端节点和边缘Pool相关联时才会返回该字段
         :type public_border_group: str
         """
         
@@ -149,6 +153,7 @@ class EndpointResponseBody:
         self._routetables = None
         self._description = None
         self._policy_statement = None
+        self._policy_document = None
         self._endpoint_pool_id = None
         self._public_border_group = None
         self.discriminator = None
@@ -197,6 +202,8 @@ class EndpointResponseBody:
             self.description = description
         if policy_statement is not None:
             self.policy_statement = policy_statement
+        if policy_document is not None:
+            self.policy_document = policy_document
         if endpoint_pool_id is not None:
             self.endpoint_pool_id = endpoint_pool_id
         if public_border_group is not None:
@@ -687,6 +694,28 @@ class EndpointResponseBody:
         self._policy_statement = policy_statement
 
     @property
+    def policy_document(self):
+        """Gets the policy_document of this EndpointResponseBody.
+
+        iam 5.0 策略
+
+        :return: The policy_document of this EndpointResponseBody.
+        :rtype: object
+        """
+        return self._policy_document
+
+    @policy_document.setter
+    def policy_document(self, policy_document):
+        """Sets the policy_document of this EndpointResponseBody.
+
+        iam 5.0 策略
+
+        :param policy_document: The policy_document of this EndpointResponseBody.
+        :type policy_document: object
+        """
+        self._policy_document = policy_document
+
+    @property
     def endpoint_pool_id(self):
         """Gets the endpoint_pool_id of this EndpointResponseBody.
 
@@ -712,7 +741,7 @@ class EndpointResponseBody:
     def public_border_group(self):
         """Gets the public_border_group of this EndpointResponseBody.
 
-        终端节点关联的Public Border Group信息，只有当终端节点和边缘Pool相关联时才会返回改字段
+        终端节点关联的Public Border Group信息，只有当终端节点和边缘Pool相关联时才会返回该字段
 
         :return: The public_border_group of this EndpointResponseBody.
         :rtype: str
@@ -723,7 +752,7 @@ class EndpointResponseBody:
     def public_border_group(self, public_border_group):
         """Sets the public_border_group of this EndpointResponseBody.
 
-        终端节点关联的Public Border Group信息，只有当终端节点和边缘Pool相关联时才会返回改字段
+        终端节点关联的Public Border Group信息，只有当终端节点和边缘Pool相关联时才会返回该字段
 
         :param public_border_group: The public_border_group of this EndpointResponseBody.
         :type public_border_group: str

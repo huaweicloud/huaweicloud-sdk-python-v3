@@ -65,7 +65,7 @@ class PreviewFinding:
         :type created_at: datetime
         :param existing_finding_id: 访问分析结果的唯一标识符。
         :type existing_finding_id: str
-        :param existing_finding_status: 分析结果的当前状态。
+        :param existing_finding_status: 访问分析结果当前状态。
         :type existing_finding_status: str
         :param id: 访问分析结果的唯一标识符。
         :type id: str
@@ -235,7 +235,7 @@ class PreviewFinding:
     def existing_finding_status(self):
         """Gets the existing_finding_status of this PreviewFinding.
 
-        分析结果的当前状态。
+        访问分析结果当前状态。
 
         :return: The existing_finding_status of this PreviewFinding.
         :rtype: str
@@ -246,7 +246,7 @@ class PreviewFinding:
     def existing_finding_status(self, existing_finding_status):
         """Sets the existing_finding_status of this PreviewFinding.
 
-        分析结果的当前状态。
+        访问分析结果当前状态。
 
         :param existing_finding_status: The existing_finding_status of this PreviewFinding.
         :type existing_finding_status: str

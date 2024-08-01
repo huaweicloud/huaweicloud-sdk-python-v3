@@ -82,9 +82,9 @@ class UpdateEndpointServiceResponse(SdkResponse):
         :type status: str
         :param service_type: 终端节点服务类型。 终端节点服务类型包括“网关（gateway）型”和“接口（interface）型”：  - gateway：由运维人员配置。用户无需创建，可直接使用。  - interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节点。
         :type service_type: str
-        :param created_at: 终端节点服务的创建时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
+        :param created_at: 终端节点服务的创建时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
         :type created_at: datetime
-        :param updated_at: 终端节点服务的更新时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
+        :param updated_at: 终端节点服务的更新时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
         :type updated_at: datetime
         :param project_id: 项目ID
         :type project_id: str
@@ -363,7 +363,7 @@ class UpdateEndpointServiceResponse(SdkResponse):
     def created_at(self):
         """Gets the created_at of this UpdateEndpointServiceResponse.
 
-        终端节点服务的创建时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
+        终端节点服务的创建时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
         :return: The created_at of this UpdateEndpointServiceResponse.
         :rtype: datetime
@@ -374,7 +374,7 @@ class UpdateEndpointServiceResponse(SdkResponse):
     def created_at(self, created_at):
         """Sets the created_at of this UpdateEndpointServiceResponse.
 
-        终端节点服务的创建时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
+        终端节点服务的创建时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
         :param created_at: The created_at of this UpdateEndpointServiceResponse.
         :type created_at: datetime
@@ -385,7 +385,7 @@ class UpdateEndpointServiceResponse(SdkResponse):
     def updated_at(self):
         """Gets the updated_at of this UpdateEndpointServiceResponse.
 
-        终端节点服务的更新时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
+        终端节点服务的更新时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
         :return: The updated_at of this UpdateEndpointServiceResponse.
         :rtype: datetime
@@ -396,7 +396,7 @@ class UpdateEndpointServiceResponse(SdkResponse):
     def updated_at(self, updated_at):
         """Sets the updated_at of this UpdateEndpointServiceResponse.
 
-        终端节点服务的更新时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
+        终端节点服务的更新时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
         :param updated_at: The updated_at of this UpdateEndpointServiceResponse.
         :type updated_at: datetime

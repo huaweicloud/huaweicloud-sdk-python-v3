@@ -18,6 +18,7 @@ class AnalyzerSummary:
     sensitive_list.append('name')
 
     openapi_types = {
+        'configuration': 'AnalyzerConfiguration',
         'created_at': 'datetime',
         'id': 'str',
         'last_analyzed_resource': 'str',
@@ -32,6 +33,7 @@ class AnalyzerSummary:
     }
 
     attribute_map = {
+        'configuration': 'configuration',
         'created_at': 'created_at',
         'id': 'id',
         'last_analyzed_resource': 'last_analyzed_resource',
@@ -45,11 +47,13 @@ class AnalyzerSummary:
         'urn': 'urn'
     }
 
-    def __init__(self, created_at=None, id=None, last_analyzed_resource=None, last_resource_analyzed_at=None, name=None, organization_id=None, status=None, status_reason=None, tags=None, type=None, urn=None):
+    def __init__(self, configuration=None, created_at=None, id=None, last_analyzed_resource=None, last_resource_analyzed_at=None, name=None, organization_id=None, status=None, status_reason=None, tags=None, type=None, urn=None):
         """AnalyzerSummary
 
         The model defined in huaweicloud sdk
 
+        :param configuration: 
+        :type configuration: :class:`huaweicloudsdkiamaccessanalyzer.v1.AnalyzerConfiguration`
         :param created_at: 分析器创建的时间。
         :type created_at: datetime
         :param id: 分析器的唯一标识符。
@@ -76,6 +80,7 @@ class AnalyzerSummary:
         
         
 
+        self._configuration = None
         self._created_at = None
         self._id = None
         self._last_analyzed_resource = None
@@ -89,6 +94,8 @@ class AnalyzerSummary:
         self._urn = None
         self.discriminator = None
 
+        if configuration is not None:
+            self.configuration = configuration
         self.created_at = created_at
         self.id = id
         if last_analyzed_resource is not None:
@@ -105,6 +112,24 @@ class AnalyzerSummary:
             self.tags = tags
         self.type = type
         self.urn = urn
+
+    @property
+    def configuration(self):
+        """Gets the configuration of this AnalyzerSummary.
+
+        :return: The configuration of this AnalyzerSummary.
+        :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.AnalyzerConfiguration`
+        """
+        return self._configuration
+
+    @configuration.setter
+    def configuration(self, configuration):
+        """Sets the configuration of this AnalyzerSummary.
+
+        :param configuration: The configuration of this AnalyzerSummary.
+        :type configuration: :class:`huaweicloudsdkiamaccessanalyzer.v1.AnalyzerConfiguration`
+        """
+        self._configuration = configuration
 
     @property
     def created_at(self):

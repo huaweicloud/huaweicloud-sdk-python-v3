@@ -18,22 +18,26 @@ class CreateAnalyzerReqBody:
     sensitive_list.append('name')
 
     openapi_types = {
+        'configuration': 'AnalyzerConfiguration',
         'name': 'str',
         'tags': 'list[Tag]',
         'type': 'AnalyzerType'
     }
 
     attribute_map = {
+        'configuration': 'configuration',
         'name': 'name',
         'tags': 'tags',
         'type': 'type'
     }
 
-    def __init__(self, name=None, tags=None, type=None):
+    def __init__(self, configuration=None, name=None, tags=None, type=None):
         """CreateAnalyzerReqBody
 
         The model defined in huaweicloud sdk
 
+        :param configuration: 
+        :type configuration: :class:`huaweicloudsdkiamaccessanalyzer.v1.AnalyzerConfiguration`
         :param name: 分析器的名称。
         :type name: str
         :param tags: 自定义标签列表。
@@ -44,15 +48,36 @@ class CreateAnalyzerReqBody:
         
         
 
+        self._configuration = None
         self._name = None
         self._tags = None
         self._type = None
         self.discriminator = None
 
+        if configuration is not None:
+            self.configuration = configuration
         self.name = name
         if tags is not None:
             self.tags = tags
         self.type = type
+
+    @property
+    def configuration(self):
+        """Gets the configuration of this CreateAnalyzerReqBody.
+
+        :return: The configuration of this CreateAnalyzerReqBody.
+        :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.AnalyzerConfiguration`
+        """
+        return self._configuration
+
+    @configuration.setter
+    def configuration(self, configuration):
+        """Sets the configuration of this CreateAnalyzerReqBody.
+
+        :param configuration: The configuration of this CreateAnalyzerReqBody.
+        :type configuration: :class:`huaweicloudsdkiamaccessanalyzer.v1.AnalyzerConfiguration`
+        """
+        self._configuration = configuration
 
     @property
     def name(self):

@@ -37,9 +37,9 @@ class ListMetricsTrendRequest:
 
         The model defined in huaweicloud sdk
 
-        :param start_time: 开始时间
+        :param start_time: 开始时间, UTC时间, 格式为：yyyy-MM-ddTHH:mm:ssZ
         :type start_time: str
-        :param end_time: 结束时间
+        :param end_time: 结束时间, UTC时间, 格式为：yyyy-MM-ddTHH:mm:ssZ
         :type end_time: str
         :param dim: 指标维度 | 目前最大支持3个维度，必须从0开始；维度格式为dim.{i}&#x3D;key,value，key的最大长度32，value的最大长度为256。 单维度：dim.0&#x3D;instance_id,6f3c6f91-4b24-4e1b-b7d1-a94ac1cb011d 多维度：dim.0&#x3D;key,value&amp;dim.1&#x3D;key,value
         :type dim: str
@@ -70,7 +70,7 @@ class ListMetricsTrendRequest:
     def start_time(self):
         """Gets the start_time of this ListMetricsTrendRequest.
 
-        开始时间
+        开始时间, UTC时间, 格式为：yyyy-MM-ddTHH:mm:ssZ
 
         :return: The start_time of this ListMetricsTrendRequest.
         :rtype: str
@@ -81,7 +81,7 @@ class ListMetricsTrendRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ListMetricsTrendRequest.
 
-        开始时间
+        开始时间, UTC时间, 格式为：yyyy-MM-ddTHH:mm:ssZ
 
         :param start_time: The start_time of this ListMetricsTrendRequest.
         :type start_time: str
@@ -92,7 +92,7 @@ class ListMetricsTrendRequest:
     def end_time(self):
         """Gets the end_time of this ListMetricsTrendRequest.
 
-        结束时间
+        结束时间, UTC时间, 格式为：yyyy-MM-ddTHH:mm:ssZ
 
         :return: The end_time of this ListMetricsTrendRequest.
         :rtype: str
@@ -103,7 +103,7 @@ class ListMetricsTrendRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ListMetricsTrendRequest.
 
-        结束时间
+        结束时间, UTC时间, 格式为：yyyy-MM-ddTHH:mm:ssZ
 
         :param end_time: The end_time of this ListMetricsTrendRequest.
         :type end_time: str

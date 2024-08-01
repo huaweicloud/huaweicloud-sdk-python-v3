@@ -99,6 +99,73 @@ class DdmClient(Client):
 
         return http_info
 
+    def create_group(self, request):
+        """创建组
+
+        创建组
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateGroup
+        :type request: :class:`huaweicloudsdkddm.v1.CreateGroupRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.CreateGroupResponse`
+        """
+        http_info = self._create_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_group_invoker(self, request):
+        http_info = self._create_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_group_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_instance(self, request):
         """购买DDM实例
 
@@ -436,6 +503,140 @@ class DdmClient(Client):
 
         return http_info
 
+    def execute_kill_logical_processes(self, request):
+        """kill逻辑会话
+
+        kill逻辑会话
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExecuteKillLogicalProcesses
+        :type request: :class:`huaweicloudsdkddm.v1.ExecuteKillLogicalProcessesRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ExecuteKillLogicalProcessesResponse`
+        """
+        http_info = self._execute_kill_logical_processes_http_info(request)
+        return self._call_api(**http_info)
+
+    def execute_kill_logical_processes_invoker(self, request):
+        http_info = self._execute_kill_logical_processes_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_kill_logical_processes_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/logical-processes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteKillLogicalProcessesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def execute_kill_physical_processes(self, request):
+        """kill物理会话
+
+        kill物理会话
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExecuteKillPhysicalProcesses
+        :type request: :class:`huaweicloudsdkddm.v1.ExecuteKillPhysicalProcessesRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ExecuteKillPhysicalProcessesResponse`
+        """
+        http_info = self._execute_kill_physical_processes_http_info(request)
+        return self._call_api(**http_info)
+
+    def execute_kill_physical_processes_invoker(self, request):
+        http_info = self._execute_kill_physical_processes_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_kill_physical_processes_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/physical-processes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteKillPhysicalProcessesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def expand_instance_nodes(self, request):
         """DDM实例节点扩容
 
@@ -746,6 +947,75 @@ class DdmClient(Client):
         query_params = []
         if 'engine_id' in local_var_params:
             query_params.append(('engine_id', local_var_params['engine_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_group(self, request):
+        """获取实例组信息列表
+
+        获取实例组信息列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListGroup
+        :type request: :class:`huaweicloudsdkddm.v1.ListGroupRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ListGroupResponse`
+        """
+        http_info = self._list_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_group_invoker(self, request):
+        http_info = self._list_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_group_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
@@ -1666,6 +1936,77 @@ class DdmClient(Client):
 
         return http_info
 
+    def show_logical_processes(self, request):
+        """查询逻辑会话列表
+
+        查询逻辑会话列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowLogicalProcesses
+        :type request: :class:`huaweicloudsdkddm.v1.ShowLogicalProcessesRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ShowLogicalProcessesResponse`
+        """
+        http_info = self._show_logical_processes_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_logical_processes_invoker(self, request):
+        http_info = self._show_logical_processes_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_logical_processes_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/logical-processes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowLogicalProcessesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'keyword' in local_var_params:
+            query_params.append(('keyword', local_var_params['keyword']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_node(self, request):
         """查询DDM实例节点详情
 
@@ -1706,6 +2047,150 @@ class DdmClient(Client):
             path_params['node_id'] = local_var_params['node_id']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_physical_processes(self, request):
+        """查询物理会话列表
+
+        查询物理会话列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowPhysicalProcesses
+        :type request: :class:`huaweicloudsdkddm.v1.ShowPhysicalProcessesRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ShowPhysicalProcessesResponse`
+        """
+        http_info = self._show_physical_processes_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_physical_processes_invoker(self, request):
+        http_info = self._show_physical_processes_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_physical_processes_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/physical-processes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPhysicalProcessesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'keyword' in local_var_params:
+            query_params.append(('keyword', local_var_params['keyword']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_processes_audit_log(self, request):
+        """查询kill会话审计日志
+
+        查询kill会话审计日志
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowProcessesAuditLog
+        :type request: :class:`huaweicloudsdkddm.v1.ShowProcessesAuditLogRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ShowProcessesAuditLogResponse`
+        """
+        http_info = self._show_processes_audit_log_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_processes_audit_log_invoker(self, request):
+        http_info = self._show_processes_audit_log_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_processes_audit_log_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/processes-audit-log",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProcessesAuditLogResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
 
         header_params = {}
 

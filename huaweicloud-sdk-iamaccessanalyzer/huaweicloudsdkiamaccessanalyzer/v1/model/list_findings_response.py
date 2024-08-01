@@ -18,7 +18,7 @@ class ListFindingsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'findings': 'list[Finding]',
+        'findings': 'list[FindingSummary]',
         'page_info': 'PageInfo'
     }
 
@@ -33,7 +33,7 @@ class ListFindingsResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param findings: 访问分析结果列表。
-        :type findings: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.Finding`]
+        :type findings: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.FindingSummary`]
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkiamaccessanalyzer.v1.PageInfo`
         """
@@ -56,7 +56,7 @@ class ListFindingsResponse(SdkResponse):
         访问分析结果列表。
 
         :return: The findings of this ListFindingsResponse.
-        :rtype: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.Finding`]
+        :rtype: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.FindingSummary`]
         """
         return self._findings
 
@@ -67,7 +67,7 @@ class ListFindingsResponse(SdkResponse):
         访问分析结果列表。
 
         :param findings: The findings of this ListFindingsResponse.
-        :type findings: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.Finding`]
+        :type findings: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.FindingSummary`]
         """
         self._findings = findings
 

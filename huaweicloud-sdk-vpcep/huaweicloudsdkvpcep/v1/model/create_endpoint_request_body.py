@@ -28,6 +28,7 @@ class CreateEndpointRequestBody:
         'enable_whitelist': 'bool',
         'description': 'str',
         'policy_statement': 'list[PolicyStatement]',
+        'policy_document': 'object',
         'ip_version': 'str',
         'ipv6_address': 'str'
     }
@@ -44,11 +45,12 @@ class CreateEndpointRequestBody:
         'enable_whitelist': 'enable_whitelist',
         'description': 'description',
         'policy_statement': 'policy_statement',
+        'policy_document': 'policy_document',
         'ip_version': 'ip_version',
         'ipv6_address': 'ipv6_address'
     }
 
-    def __init__(self, subnet_id=None, endpoint_service_id=None, vpc_id=None, enable_dns=None, tags=None, routetables=None, port_ip=None, whitelist=None, enable_whitelist=None, description=None, policy_statement=None, ip_version=None, ipv6_address=None):
+    def __init__(self, subnet_id=None, endpoint_service_id=None, vpc_id=None, enable_dns=None, tags=None, routetables=None, port_ip=None, whitelist=None, enable_whitelist=None, description=None, policy_statement=None, policy_document=None, ip_version=None, ipv6_address=None):
         """CreateEndpointRequestBody
 
         The model defined in huaweicloud sdk
@@ -75,9 +77,11 @@ class CreateEndpointRequestBody:
         :type description: str
         :param policy_statement: 终端节点策略信息
         :type policy_statement: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]
-        :param ip_version: 指定终端节点的IP版本，仅专业型终端节点支持此参数。 ● ipv4,  IPv4 ● dualstack, 双栈
+        :param policy_document: iam 5.0 策略
+        :type policy_document: object
+        :param ip_version: 指定终端节点的IP版本，仅专业型终端节点支持此参数。  - ipv4,  IPv4 - dualstack, 双栈
         :type ip_version: str
-        :param ipv6_address: 访问所连接的终端节点服务的IPv6的地址。 创建终端节点时，可以指定访问所连接的终端节点服务的IP，不指定的情况下，会使用系统生成的一个地址。 仅专业型终端节点支持此参数。
+        :param ipv6_address: 访问所连接的终端节点服务的IPv6的地址。  创建终端节点时，可以指定访问所连接的终端节点服务的IP，不指定的情况下，会使用系统生成的一个地址。  仅专业型终端节点支持此参数。
         :type ipv6_address: str
         """
         
@@ -94,6 +98,7 @@ class CreateEndpointRequestBody:
         self._enable_whitelist = None
         self._description = None
         self._policy_statement = None
+        self._policy_document = None
         self._ip_version = None
         self._ipv6_address = None
         self.discriminator = None
@@ -118,6 +123,8 @@ class CreateEndpointRequestBody:
             self.description = description
         if policy_statement is not None:
             self.policy_statement = policy_statement
+        if policy_document is not None:
+            self.policy_document = policy_document
         if ip_version is not None:
             self.ip_version = ip_version
         if ipv6_address is not None:
@@ -366,10 +373,32 @@ class CreateEndpointRequestBody:
         self._policy_statement = policy_statement
 
     @property
+    def policy_document(self):
+        """Gets the policy_document of this CreateEndpointRequestBody.
+
+        iam 5.0 策略
+
+        :return: The policy_document of this CreateEndpointRequestBody.
+        :rtype: object
+        """
+        return self._policy_document
+
+    @policy_document.setter
+    def policy_document(self, policy_document):
+        """Sets the policy_document of this CreateEndpointRequestBody.
+
+        iam 5.0 策略
+
+        :param policy_document: The policy_document of this CreateEndpointRequestBody.
+        :type policy_document: object
+        """
+        self._policy_document = policy_document
+
+    @property
     def ip_version(self):
         """Gets the ip_version of this CreateEndpointRequestBody.
 
-        指定终端节点的IP版本，仅专业型终端节点支持此参数。 ● ipv4,  IPv4 ● dualstack, 双栈
+        指定终端节点的IP版本，仅专业型终端节点支持此参数。  - ipv4,  IPv4 - dualstack, 双栈
 
         :return: The ip_version of this CreateEndpointRequestBody.
         :rtype: str
@@ -380,7 +409,7 @@ class CreateEndpointRequestBody:
     def ip_version(self, ip_version):
         """Sets the ip_version of this CreateEndpointRequestBody.
 
-        指定终端节点的IP版本，仅专业型终端节点支持此参数。 ● ipv4,  IPv4 ● dualstack, 双栈
+        指定终端节点的IP版本，仅专业型终端节点支持此参数。  - ipv4,  IPv4 - dualstack, 双栈
 
         :param ip_version: The ip_version of this CreateEndpointRequestBody.
         :type ip_version: str
@@ -391,7 +420,7 @@ class CreateEndpointRequestBody:
     def ipv6_address(self):
         """Gets the ipv6_address of this CreateEndpointRequestBody.
 
-        访问所连接的终端节点服务的IPv6的地址。 创建终端节点时，可以指定访问所连接的终端节点服务的IP，不指定的情况下，会使用系统生成的一个地址。 仅专业型终端节点支持此参数。
+        访问所连接的终端节点服务的IPv6的地址。  创建终端节点时，可以指定访问所连接的终端节点服务的IP，不指定的情况下，会使用系统生成的一个地址。  仅专业型终端节点支持此参数。
 
         :return: The ipv6_address of this CreateEndpointRequestBody.
         :rtype: str
@@ -402,7 +431,7 @@ class CreateEndpointRequestBody:
     def ipv6_address(self, ipv6_address):
         """Sets the ipv6_address of this CreateEndpointRequestBody.
 
-        访问所连接的终端节点服务的IPv6的地址。 创建终端节点时，可以指定访问所连接的终端节点服务的IP，不指定的情况下，会使用系统生成的一个地址。 仅专业型终端节点支持此参数。
+        访问所连接的终端节点服务的IPv6的地址。  创建终端节点时，可以指定访问所连接的终端节点服务的IP，不指定的情况下，会使用系统生成的一个地址。  仅专业型终端节点支持此参数。
 
         :param ipv6_address: The ipv6_address of this CreateEndpointRequestBody.
         :type ipv6_address: str

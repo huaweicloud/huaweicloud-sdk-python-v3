@@ -21,6 +21,8 @@ class Finding:
         'analyzed_at': 'datetime',
         'condition': 'list[FindingCondition]',
         'created_at': 'datetime',
+        'finding_details': 'list[FindingDetails]',
+        'finding_type': 'FindingType',
         'id': 'str',
         'is_public': 'bool',
         'principal': 'FindingPrincipal',
@@ -39,6 +41,8 @@ class Finding:
         'analyzed_at': 'analyzed_at',
         'condition': 'condition',
         'created_at': 'created_at',
+        'finding_details': 'finding_details',
+        'finding_type': 'finding_type',
         'id': 'id',
         'is_public': 'is_public',
         'principal': 'principal',
@@ -52,7 +56,7 @@ class Finding:
         'updated_at': 'updated_at'
     }
 
-    def __init__(self, action=None, analyzed_at=None, condition=None, created_at=None, id=None, is_public=None, principal=None, resource=None, resource_id=None, resource_owner_account=None, resource_project_id=None, resource_type=None, sources=None, status=None, updated_at=None):
+    def __init__(self, action=None, analyzed_at=None, condition=None, created_at=None, finding_details=None, finding_type=None, id=None, is_public=None, principal=None, resource=None, resource_id=None, resource_owner_account=None, resource_project_id=None, resource_type=None, sources=None, status=None, updated_at=None):
         """Finding
 
         The model defined in huaweicloud sdk
@@ -65,6 +69,10 @@ class Finding:
         :type condition: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.FindingCondition`]
         :param created_at: 生成访问分析结果的时间。
         :type created_at: datetime
+        :param finding_details: 访问分析结果的详细信息。
+        :type finding_details: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.FindingDetails`]
+        :param finding_type: 
+        :type finding_type: :class:`huaweicloudsdkiamaccessanalyzer.v1.FindingType`
         :param id: 访问分析结果的唯一标识符。
         :type id: str
         :param is_public: 表示生成访问分析结果的策略是否允许公共访问资源。
@@ -83,7 +91,7 @@ class Finding:
         :type resource_type: :class:`huaweicloudsdkiamaccessanalyzer.v1.ResourceType`
         :param sources: 访问分析结果的来源，这指示如何授予生成访问分析结果的访问权限。
         :type sources: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.FindingSourceType`]
-        :param status: 结果的当前状态。
+        :param status: 访问分析结果当前状态。
         :type status: str
         :param updated_at: 更新访问分析结果的时间。
         :type updated_at: datetime
@@ -95,6 +103,8 @@ class Finding:
         self._analyzed_at = None
         self._condition = None
         self._created_at = None
+        self._finding_details = None
+        self._finding_type = None
         self._id = None
         self._is_public = None
         self._principal = None
@@ -108,13 +118,19 @@ class Finding:
         self._updated_at = None
         self.discriminator = None
 
-        self.action = action
+        if action is not None:
+            self.action = action
         self.analyzed_at = analyzed_at
-        self.condition = condition
+        if condition is not None:
+            self.condition = condition
         self.created_at = created_at
+        self.finding_details = finding_details
+        self.finding_type = finding_type
         self.id = id
-        self.is_public = is_public
-        self.principal = principal
+        if is_public is not None:
+            self.is_public = is_public
+        if principal is not None:
+            self.principal = principal
         self.resource = resource
         if resource_id is not None:
             self.resource_id = resource_id
@@ -214,6 +230,46 @@ class Finding:
         :type created_at: datetime
         """
         self._created_at = created_at
+
+    @property
+    def finding_details(self):
+        """Gets the finding_details of this Finding.
+
+        访问分析结果的详细信息。
+
+        :return: The finding_details of this Finding.
+        :rtype: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.FindingDetails`]
+        """
+        return self._finding_details
+
+    @finding_details.setter
+    def finding_details(self, finding_details):
+        """Sets the finding_details of this Finding.
+
+        访问分析结果的详细信息。
+
+        :param finding_details: The finding_details of this Finding.
+        :type finding_details: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.FindingDetails`]
+        """
+        self._finding_details = finding_details
+
+    @property
+    def finding_type(self):
+        """Gets the finding_type of this Finding.
+
+        :return: The finding_type of this Finding.
+        :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.FindingType`
+        """
+        return self._finding_type
+
+    @finding_type.setter
+    def finding_type(self, finding_type):
+        """Sets the finding_type of this Finding.
+
+        :param finding_type: The finding_type of this Finding.
+        :type finding_type: :class:`huaweicloudsdkiamaccessanalyzer.v1.FindingType`
+        """
+        self._finding_type = finding_type
 
     @property
     def id(self):
@@ -409,7 +465,7 @@ class Finding:
     def status(self):
         """Gets the status of this Finding.
 
-        结果的当前状态。
+        访问分析结果当前状态。
 
         :return: The status of this Finding.
         :rtype: str
@@ -420,7 +476,7 @@ class Finding:
     def status(self, status):
         """Sets the status of this Finding.
 
-        结果的当前状态。
+        访问分析结果当前状态。
 
         :param status: The status of this Finding.
         :type status: str

@@ -17,28 +17,36 @@ class UpdateEndpointPolicyRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'policy_statement': 'list[PolicyStatement]'
+        'policy_statement': 'list[PolicyStatement]',
+        'policy_document': 'object'
     }
 
     attribute_map = {
-        'policy_statement': 'policy_statement'
+        'policy_statement': 'policy_statement',
+        'policy_document': 'policy_document'
     }
 
-    def __init__(self, policy_statement=None):
+    def __init__(self, policy_statement=None, policy_document=None):
         """UpdateEndpointPolicyRequestBody
 
         The model defined in huaweicloud sdk
 
         :param policy_statement: 终端节点策略信息
         :type policy_statement: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]
+        :param policy_document: iam 5.0 策略
+        :type policy_document: object
         """
         
         
 
         self._policy_statement = None
+        self._policy_document = None
         self.discriminator = None
 
-        self.policy_statement = policy_statement
+        if policy_statement is not None:
+            self.policy_statement = policy_statement
+        if policy_document is not None:
+            self.policy_document = policy_document
 
     @property
     def policy_statement(self):
@@ -61,6 +69,28 @@ class UpdateEndpointPolicyRequestBody:
         :type policy_statement: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]
         """
         self._policy_statement = policy_statement
+
+    @property
+    def policy_document(self):
+        """Gets the policy_document of this UpdateEndpointPolicyRequestBody.
+
+        iam 5.0 策略
+
+        :return: The policy_document of this UpdateEndpointPolicyRequestBody.
+        :rtype: object
+        """
+        return self._policy_document
+
+    @policy_document.setter
+    def policy_document(self, policy_document):
+        """Sets the policy_document of this UpdateEndpointPolicyRequestBody.
+
+        iam 5.0 策略
+
+        :param policy_document: The policy_document of this UpdateEndpointPolicyRequestBody.
+        :type policy_document: object
+        """
+        self._policy_document = policy_document
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -1312,6 +1312,79 @@ class DasClient(Client):
 
         return http_info
 
+    def export_top_risk_instances(self, request):
+        """导出TOP风险实例列表
+
+        导出TOP风险实例列表，支持查看最近24小时数据。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExportTopRiskInstances
+        :type request: :class:`huaweicloudsdkdas.v3.ExportTopRiskInstancesRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ExportTopRiskInstancesResponse`
+        """
+        http_info = self._export_top_risk_instances_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_top_risk_instances_invoker(self, request):
+        http_info = self._export_top_risk_instances_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_top_risk_instances_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/top-risk",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportTopRiskInstancesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'start_at' in local_var_params:
+            query_params.append(('start_at', local_var_params['start_at']))
+        if 'end_at' in local_var_params:
+            query_params.append(('end_at', local_var_params['end_at']))
+        if 'datastore_type' in local_var_params:
+            query_params.append(('datastore_type', local_var_params['datastore_type']))
+        if 'num' in local_var_params:
+            query_params.append(('num', local_var_params['num']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def export_top_sql_templates_details(self, request):
         """导出TopSQL模板列表
 

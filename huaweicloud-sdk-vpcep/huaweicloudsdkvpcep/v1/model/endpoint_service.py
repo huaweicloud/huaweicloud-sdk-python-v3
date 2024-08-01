@@ -49,7 +49,7 @@ class EndpointService:
         :type service_name: str
         :param service_type: 终端节点服务类型。  - gateway：由运维人员配置。用户无需创建，可直接使用。  - interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建， 用户可直接使用。 您可以通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节点。
         :type service_type: str
-        :param created_at: 终端节点服务的创建时间。 采用UTC时间格式，格式为：YYYYMM-DDTHH:MM:SSZ
+        :param created_at: 终端节点服务的创建时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
         :type created_at: datetime
         :param is_charge: 连接该终端节点服务的终端节点是否计费。  - true：计费  - false：不计费
         :type is_charge: bool
@@ -175,7 +175,7 @@ class EndpointService:
     def created_at(self):
         """Gets the created_at of this EndpointService.
 
-        终端节点服务的创建时间。 采用UTC时间格式，格式为：YYYYMM-DDTHH:MM:SSZ
+        终端节点服务的创建时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
         :return: The created_at of this EndpointService.
         :rtype: datetime
@@ -186,7 +186,7 @@ class EndpointService:
     def created_at(self, created_at):
         """Sets the created_at of this EndpointService.
 
-        终端节点服务的创建时间。 采用UTC时间格式，格式为：YYYYMM-DDTHH:MM:SSZ
+        终端节点服务的创建时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
         :param created_at: The created_at of this EndpointService.
         :type created_at: datetime

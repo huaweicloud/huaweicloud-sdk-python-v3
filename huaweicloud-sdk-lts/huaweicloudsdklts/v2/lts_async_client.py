@@ -5119,6 +5119,635 @@ class LtsAsyncClient(Client):
 
         return http_info
 
+    def consumer_group_heart_beat_async(self, request):
+        """消费者发送心跳到服务端
+
+        消费者发送心跳到服务端
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ConsumerGroupHeartBeat
+        :type request: :class:`huaweicloudsdklts.v2.ConsumerGroupHeartBeatRequest`
+        :rtype: :class:`huaweicloudsdklts.v2.ConsumerGroupHeartBeatResponse`
+        """
+        http_info = self._consumer_group_heart_beat_http_info(request)
+        return self._call_api(**http_info)
+
+    def consumer_group_heart_beat_async_invoker(self, request):
+        http_info = self._consumer_group_heart_beat_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _consumer_group_heart_beat_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/groups/{group_id}/streams/{stream_id}/consumer-groups/{consumer_group_name}/heartbeat",
+            "request_type": request.__class__.__name__,
+            "response_type": "ConsumerGroupHeartBeatResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+        if 'stream_id' in local_var_params:
+            path_params['stream_id'] = local_var_params['stream_id']
+        if 'consumer_group_name' in local_var_params:
+            path_params['consumer_group_name'] = local_var_params['consumer_group_name']
+
+        query_params = []
+        if 'consumer_name' in local_var_params:
+            query_params.append(('consumer_name', local_var_params['consumer_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_consumer_group_async(self, request):
+        """创建消费组
+
+        创建消费组
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateConsumerGroup
+        :type request: :class:`huaweicloudsdklts.v2.CreateConsumerGroupRequest`
+        :rtype: :class:`huaweicloudsdklts.v2.CreateConsumerGroupResponse`
+        """
+        http_info = self._create_consumer_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_consumer_group_async_invoker(self, request):
+        http_info = self._create_consumer_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_consumer_group_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/groups/{group_id}/streams/{stream_id}/consumer-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateConsumerGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+        if 'stream_id' in local_var_params:
+            path_params['stream_id'] = local_var_params['stream_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_consumer_group_async(self, request):
+        """删除消费组
+
+        删除消费组
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteConsumerGroup
+        :type request: :class:`huaweicloudsdklts.v2.DeleteConsumerGroupRequest`
+        :rtype: :class:`huaweicloudsdklts.v2.DeleteConsumerGroupResponse`
+        """
+        http_info = self._delete_consumer_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_consumer_group_async_invoker(self, request):
+        http_info = self._delete_consumer_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_consumer_group_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/{project_id}/groups/{group_id}/streams/{stream_id}/consumer-groups/{consumer_group_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteConsumerGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+        if 'stream_id' in local_var_params:
+            path_params['stream_id'] = local_var_params['stream_id']
+        if 'consumer_group_name' in local_var_params:
+            path_params['consumer_group_name'] = local_var_params['consumer_group_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_consumer_group_async(self, request):
+        """查询消费组列表
+
+        查询消费组列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListConsumerGroup
+        :type request: :class:`huaweicloudsdklts.v2.ListConsumerGroupRequest`
+        :rtype: :class:`huaweicloudsdklts.v2.ListConsumerGroupResponse`
+        """
+        http_info = self._list_consumer_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_consumer_group_async_invoker(self, request):
+        http_info = self._list_consumer_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_consumer_group_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/groups/{group_id}/streams/{stream_id}/consumer-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListConsumerGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+        if 'stream_id' in local_var_params:
+            path_params['stream_id'] = local_var_params['stream_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_details_consumer_group_async(self, request):
+        """查询消费组详情
+
+        查询消费组详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListDetailsConsumerGroup
+        :type request: :class:`huaweicloudsdklts.v2.ListDetailsConsumerGroupRequest`
+        :rtype: :class:`huaweicloudsdklts.v2.ListDetailsConsumerGroupResponse`
+        """
+        http_info = self._list_details_consumer_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_details_consumer_group_async_invoker(self, request):
+        http_info = self._list_details_consumer_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_details_consumer_group_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/groups/{group_id}/streams/{stream_id}/consumer-groups/{consumer_group_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDetailsConsumerGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+        if 'stream_id' in local_var_params:
+            path_params['stream_id'] = local_var_params['stream_id']
+        if 'consumer_group_name' in local_var_params:
+            path_params['consumer_group_name'] = local_var_params['consumer_group_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_cursor_by_time_async(self, request):
+        """通过时间获取消费游标
+
+        通过时间查询cursor
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowCursorByTime
+        :type request: :class:`huaweicloudsdklts.v2.ShowCursorByTimeRequest`
+        :rtype: :class:`huaweicloudsdklts.v2.ShowCursorByTimeResponse`
+        """
+        http_info = self._show_cursor_by_time_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_cursor_by_time_async_invoker(self, request):
+        http_info = self._show_cursor_by_time_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_cursor_by_time_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/groups/{group_id}/streams/{stream_id}/shards/{shard_id}/cursor",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCursorByTimeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+        if 'stream_id' in local_var_params:
+            path_params['stream_id'] = local_var_params['stream_id']
+        if 'shard_id' in local_var_params:
+            path_params['shard_id'] = local_var_params['shard_id']
+
+        query_params = []
+        if '_from' in local_var_params:
+            query_params.append(('from', local_var_params['_from']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_cursor_time_async(self, request):
+        """通过消费游标获取时间
+
+        通过cursor查询服务端时间
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowCursorTime
+        :type request: :class:`huaweicloudsdklts.v2.ShowCursorTimeRequest`
+        :rtype: :class:`huaweicloudsdklts.v2.ShowCursorTimeResponse`
+        """
+        http_info = self._show_cursor_time_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_cursor_time_async_invoker(self, request):
+        http_info = self._show_cursor_time_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_cursor_time_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/groups/{group_id}/streams/{stream_id}/shards/{shard_id}/time",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCursorTimeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+        if 'stream_id' in local_var_params:
+            path_params['stream_id'] = local_var_params['stream_id']
+        if 'shard_id' in local_var_params:
+            path_params['shard_id'] = local_var_params['shard_id']
+
+        query_params = []
+        if 'cursor' in local_var_params:
+            query_params.append(('cursor', local_var_params['cursor']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_log_stream_shards_async(self, request):
+        """流消费获取Shards
+
+        流消费获取所有的query shards
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowLogStreamShards
+        :type request: :class:`huaweicloudsdklts.v2.ShowLogStreamShardsRequest`
+        :rtype: :class:`huaweicloudsdklts.v2.ShowLogStreamShardsResponse`
+        """
+        http_info = self._show_log_stream_shards_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_log_stream_shards_async_invoker(self, request):
+        http_info = self._show_log_stream_shards_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_log_stream_shards_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/groups/{group_id}/streams/{stream_id}/shards",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowLogStreamShardsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+        if 'stream_id' in local_var_params:
+            path_params['stream_id'] = local_var_params['stream_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_check_point_async(self, request):
+        """更新消费组位点
+
+        更新消费组位点
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateCheckPoint
+        :type request: :class:`huaweicloudsdklts.v2.UpdateCheckPointRequest`
+        :rtype: :class:`huaweicloudsdklts.v2.UpdateCheckPointResponse`
+        """
+        http_info = self._update_check_point_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_check_point_async_invoker(self, request):
+        http_info = self._update_check_point_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_check_point_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/groups/{group_id}/streams/{stream_id}/consumer-groups/{consumer_group_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCheckPointResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+        if 'stream_id' in local_var_params:
+            path_params['stream_id'] = local_var_params['stream_id']
+        if 'consumer_group_name' in local_var_params:
+            path_params['consumer_group_name'] = local_var_params['consumer_group_name']
+
+        query_params = []
+        if 'consumer_name' in local_var_params:
+            query_params.append(('consumer_name', local_var_params['consumer_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_sql_alarm_rule_async(self, request):
         """创建SQL告警规则
 

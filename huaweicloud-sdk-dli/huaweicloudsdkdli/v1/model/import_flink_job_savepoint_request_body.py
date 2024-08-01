@@ -33,7 +33,7 @@ class ImportFlinkJobSavepointRequestBody:
 
         :param job_id: Flink作业的id
         :type job_id: int
-        :param savepoint_path: Savepoint路径
+        :param savepoint_path: Savepoint路径。需指定到_metaData文件的上级目录 例：\&quot;obs://bucket_name/file_name/\&quot;
         :type savepoint_path: str
         """
         
@@ -72,7 +72,7 @@ class ImportFlinkJobSavepointRequestBody:
     def savepoint_path(self):
         """Gets the savepoint_path of this ImportFlinkJobSavepointRequestBody.
 
-        Savepoint路径
+        Savepoint路径。需指定到_metaData文件的上级目录 例：\"obs://bucket_name/file_name/\"
 
         :return: The savepoint_path of this ImportFlinkJobSavepointRequestBody.
         :rtype: str
@@ -83,7 +83,7 @@ class ImportFlinkJobSavepointRequestBody:
     def savepoint_path(self, savepoint_path):
         """Sets the savepoint_path of this ImportFlinkJobSavepointRequestBody.
 
-        Savepoint路径
+        Savepoint路径。需指定到_metaData文件的上级目录 例：\"obs://bucket_name/file_name/\"
 
         :param savepoint_path: The savepoint_path of this ImportFlinkJobSavepointRequestBody.
         :type savepoint_path: str

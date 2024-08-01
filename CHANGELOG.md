@@ -1,3 +1,153 @@
+# 3.1.108 2024-08-01
+
+### HuaweiCloud SDK BSSINTL
+
+- _Features_
+  - Support the API `ShowPartnerConsumptionQuota`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListRateOnPeriodDetail**
+    - changes of response param
+      - `- optional_discount_rating_results.product_rating_results.limit`
+
+### HuaweiCloud SDK CSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowAutoCreatePolicy**
+    - changes of response param
+      - `+ frequency`
+
+### HuaweiCloud SDK DAS
+
+- _Features_
+  - Support the API `ExportTopRiskInstances`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DDM
+
+- _Features_
+  - Support the following APIs:
+    - `ShowLogicalProcesses`
+    - `ExecuteKillLogicalProcesses`
+    - `ShowPhysicalProcesses`
+    - `ExecuteKillPhysicalProcesses`
+    - `ShowProcessesAuditLog`
+    - `ListGroup`
+    - `CreateGroup`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK IAMAccessAnalyzer
+
+- _Features_
+  - Support the API `CheckNoNewAccess`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListFindings**
+    - changes of request param
+      - `+ filters.key: enum value [condition.g:SourceVpce,finding_type]`
+    - changes of response param
+      - `+ findings.finding_type`
+      - `+ findings.resource_type: enum value [iam:user]`
+      - `* findings: list<Finding> -> list<FindingSummary>`
+  - **ShowFinding**
+    - changes of response param
+      - `+ finding.finding_details`
+      - `+ finding.finding_type`
+      - `+ finding.resource_type: enum value [iam:user]`
+  - **ListAccessPreviewFindings**
+    - changes of request param
+      - `+ filters.key: enum value [condition.g:SourceVpce,finding_type]`
+    - changes of response param
+      - `+ findings.resource_type: enum value [iam:user]`
+  - **CreateAnalyzer**
+    - changes of request param
+      - `+ configuration`
+      - `+ type: enum value [account_unused_access,organization_unused_access]`
+  - **ListAnalyzers**
+    - changes of request param
+      - `+ type: enum value [account_unused_access,organization_unused_access]`
+    - changes of response param
+      - `+ analyzers.configuration`
+      - `+ analyzers.status_reason.details`
+      - `+ analyzers.type: enum value [account_unused_access,organization_unused_access]`
+  - **ShowAnalyzer**
+    - changes of response param
+      - `+ analyzer.configuration`
+      - `+ analyzer.status_reason.details`
+      - `+ analyzer.type: enum value [account_unused_access,organization_unused_access]`
+  - **CreateArchiveRule**
+    - changes of request param
+      - `+ filters.key: enum value [condition.g:SourceVpce,finding_type]`
+  - **ListArchiveRules**
+    - changes of response param
+      - `+ archive_rules.filters.key: enum value [condition.g:SourceVpce,finding_type]`
+  - **UpdateArchiveRule**
+    - changes of request param
+      - `+ filters.key: enum value [condition.g:SourceVpce,finding_type]`
+  - **ShowArchiveRule**
+    - changes of response param
+      - `+ archive_rule.filters.key: enum value [condition.g:SourceVpce,finding_type]`
+
+### HuaweiCloud SDK LTS
+
+- _Features_
+  - Support the following APIs:
+    - `ListConsumerGroup`
+    - `CreateConsumerGroup`
+    - `ConsumerGroupHeartBeat`
+    - `ShowLogStreamShards`
+    - `ListDetailsConsumerGroup`
+    - `UpdateCheckPoint`
+    - `DeleteConsumerGroup`
+    - `ShowCursorByTime`
+    - `ShowCursorTime`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK VPCEP
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListEndpointInfoDetails**
+    - changes of response param
+      - `+ policy_document`
+  - **UpdateEndpointWhite**
+    - changes of response param
+      - `+ policy_document`
+  - **UpdateEndpointPolicy**
+    - changes of request param
+      - `+ policy_document`
+    - changes of response param
+      - `+ policy_document`
+  - **DeleteEndpointPolicy**
+    - changes of response param
+      - `+ policy_document`
+  - **CreateEndpoint**
+    - changes of request param
+      - `+ policy_document`
+    - changes of response param
+      - `+ policy_document`
+  - **ListEndpoints**
+    - changes of response param
+      - `+ endpoints.policy_document`
+
 # 3.1.107 2024-07-25
 
 ### HuaweiCloud SDK APIG

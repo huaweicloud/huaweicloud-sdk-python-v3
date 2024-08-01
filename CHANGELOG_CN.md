@@ -1,3 +1,153 @@
+# 3.1.108 2024-08-01
+
+### HuaweiCloud SDK BSSINTL
+
+- _新增特性_
+  - 支持接口`ShowPartnerConsumptionQuota`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListRateOnPeriodDetail**
+    - 响应参数变更
+      - `- optional_discount_rating_results.product_rating_results.limit`
+
+### HuaweiCloud SDK CSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowAutoCreatePolicy**
+    - 响应参数变更
+      - `+ frequency`
+
+### HuaweiCloud SDK DAS
+
+- _新增特性_
+  - 支持接口`ExportTopRiskInstances`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DDM
+
+- _新增特性_
+  - 支持以下接口：
+    - `ShowLogicalProcesses`
+    - `ExecuteKillLogicalProcesses`
+    - `ShowPhysicalProcesses`
+    - `ExecuteKillPhysicalProcesses`
+    - `ShowProcessesAuditLog`
+    - `ListGroup`
+    - `CreateGroup`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK IAMAccessAnalyzer
+
+- _新增特性_
+  - 支持接口`CheckNoNewAccess`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListFindings**
+    - 请求参数变更
+      - `+ filters.key: enum value [condition.g:SourceVpce,finding_type]`
+    - 响应参数变更
+      - `+ findings.finding_type`
+      - `+ findings.resource_type: enum value [iam:user]`
+      - `* findings: list<Finding> -> list<FindingSummary>`
+  - **ShowFinding**
+    - 响应参数变更
+      - `+ finding.finding_details`
+      - `+ finding.finding_type`
+      - `+ finding.resource_type: enum value [iam:user]`
+  - **ListAccessPreviewFindings**
+    - 请求参数变更
+      - `+ filters.key: enum value [condition.g:SourceVpce,finding_type]`
+    - 响应参数变更
+      - `+ findings.resource_type: enum value [iam:user]`
+  - **CreateAnalyzer**
+    - 请求参数变更
+      - `+ configuration`
+      - `+ type: enum value [account_unused_access,organization_unused_access]`
+  - **ListAnalyzers**
+    - 请求参数变更
+      - `+ type: enum value [account_unused_access,organization_unused_access]`
+    - 响应参数变更
+      - `+ analyzers.configuration`
+      - `+ analyzers.status_reason.details`
+      - `+ analyzers.type: enum value [account_unused_access,organization_unused_access]`
+  - **ShowAnalyzer**
+    - 响应参数变更
+      - `+ analyzer.configuration`
+      - `+ analyzer.status_reason.details`
+      - `+ analyzer.type: enum value [account_unused_access,organization_unused_access]`
+  - **CreateArchiveRule**
+    - 请求参数变更
+      - `+ filters.key: enum value [condition.g:SourceVpce,finding_type]`
+  - **ListArchiveRules**
+    - 响应参数变更
+      - `+ archive_rules.filters.key: enum value [condition.g:SourceVpce,finding_type]`
+  - **UpdateArchiveRule**
+    - 请求参数变更
+      - `+ filters.key: enum value [condition.g:SourceVpce,finding_type]`
+  - **ShowArchiveRule**
+    - 响应参数变更
+      - `+ archive_rule.filters.key: enum value [condition.g:SourceVpce,finding_type]`
+
+### HuaweiCloud SDK LTS
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListConsumerGroup`
+    - `CreateConsumerGroup`
+    - `ConsumerGroupHeartBeat`
+    - `ShowLogStreamShards`
+    - `ListDetailsConsumerGroup`
+    - `UpdateCheckPoint`
+    - `DeleteConsumerGroup`
+    - `ShowCursorByTime`
+    - `ShowCursorTime`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK VPCEP
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListEndpointInfoDetails**
+    - 响应参数变更
+      - `+ policy_document`
+  - **UpdateEndpointWhite**
+    - 响应参数变更
+      - `+ policy_document`
+  - **UpdateEndpointPolicy**
+    - 请求参数变更
+      - `+ policy_document`
+    - 响应参数变更
+      - `+ policy_document`
+  - **DeleteEndpointPolicy**
+    - 响应参数变更
+      - `+ policy_document`
+  - **CreateEndpoint**
+    - 请求参数变更
+      - `+ policy_document`
+    - 响应参数变更
+      - `+ policy_document`
+  - **ListEndpoints**
+    - 响应参数变更
+      - `+ endpoints.policy_document`
+
 # 3.1.107 2024-07-25
 
 ### HuaweiCloud SDK APIG

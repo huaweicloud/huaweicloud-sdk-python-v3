@@ -33,7 +33,7 @@ class ExecuteFlinkJobSavepointRequestBody:
 
         :param action: 操作类型
         :type action: str
-        :param savepoint_path: Savepoint路径
+        :param savepoint_path: obs桶路径.例 \&quot;bucket_name/file_name/\&quot;
         :type savepoint_path: str
         """
         
@@ -72,7 +72,7 @@ class ExecuteFlinkJobSavepointRequestBody:
     def savepoint_path(self):
         """Gets the savepoint_path of this ExecuteFlinkJobSavepointRequestBody.
 
-        Savepoint路径
+        obs桶路径.例 \"bucket_name/file_name/\"
 
         :return: The savepoint_path of this ExecuteFlinkJobSavepointRequestBody.
         :rtype: str
@@ -83,7 +83,7 @@ class ExecuteFlinkJobSavepointRequestBody:
     def savepoint_path(self, savepoint_path):
         """Sets the savepoint_path of this ExecuteFlinkJobSavepointRequestBody.
 
-        Savepoint路径
+        obs桶路径.例 \"bucket_name/file_name/\"
 
         :param savepoint_path: The savepoint_path of this ExecuteFlinkJobSavepointRequestBody.
         :type savepoint_path: str

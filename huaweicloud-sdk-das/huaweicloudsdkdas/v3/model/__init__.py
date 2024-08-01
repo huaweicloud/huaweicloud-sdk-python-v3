@@ -52,6 +52,8 @@ from huaweicloudsdkdas.v3.model.export_slow_sql_trend_details_request import Exp
 from huaweicloudsdkdas.v3.model.export_slow_sql_trend_details_response import ExportSlowSqlTrendDetailsResponse
 from huaweicloudsdkdas.v3.model.export_sql_statements_request import ExportSqlStatementsRequest
 from huaweicloudsdkdas.v3.model.export_sql_statements_response import ExportSqlStatementsResponse
+from huaweicloudsdkdas.v3.model.export_top_risk_instances_request import ExportTopRiskInstancesRequest
+from huaweicloudsdkdas.v3.model.export_top_risk_instances_response import ExportTopRiskInstancesResponse
 from huaweicloudsdkdas.v3.model.export_top_sql_templates_details_request import ExportTopSqlTemplatesDetailsRequest
 from huaweicloudsdkdas.v3.model.export_top_sql_templates_details_response import ExportTopSqlTemplatesDetailsResponse
 from huaweicloudsdkdas.v3.model.export_top_sql_trend_details_request import ExportTopSqlTrendDetailsRequest
@@ -116,6 +118,7 @@ from huaweicloudsdkdas.v3.model.slow_sql_template import SlowSqlTemplate
 from huaweicloudsdkdas.v3.model.slow_sql_trend_item import SlowSqlTrendItem
 from huaweicloudsdkdas.v3.model.sql_limit_rule import SqlLimitRule
 from huaweicloudsdkdas.v3.model.tb_pos_info import TbPosInfo
+from huaweicloudsdkdas.v3.model.top_risk_info import TopRiskInfo
 from huaweicloudsdkdas.v3.model.top_sql_template import TopSqlTemplate
 from huaweicloudsdkdas.v3.model.top_sql_trend_item import TopSqlTrendItem
 from huaweicloudsdkdas.v3.model.transaction_switch_req import TransactionSwitchReq

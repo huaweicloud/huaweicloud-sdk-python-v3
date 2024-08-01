@@ -10,8 +10,9 @@ class ResourceType:
     allowed enum values
     """
     IAM_AGENCY = "iam:agency"
-    OBS_BUCKET = "obs:bucket"
+    IAM_USER = "iam:user"
     KMS_CMK = "kms:cmk"
+    OBS_BUCKET = "obs:bucket"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

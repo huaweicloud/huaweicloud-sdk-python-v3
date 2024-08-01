@@ -47,9 +47,9 @@ class ConnectionEndpoints:
         :type id: str
         :param marker_id: 终端节点的报文标识。
         :type marker_id: int
-        :param created_at: 终端节点的创建时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
+        :param created_at: 终端节点的创建时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
         :type created_at: datetime
-        :param updated_at: 终端节点的更新时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
+        :param updated_at: 终端节点的更新时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
         :type updated_at: datetime
         :param domain_id: 用户的Domain ID。
         :type domain_id: str
@@ -138,7 +138,7 @@ class ConnectionEndpoints:
     def created_at(self):
         """Gets the created_at of this ConnectionEndpoints.
 
-        终端节点的创建时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
+        终端节点的创建时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
         :return: The created_at of this ConnectionEndpoints.
         :rtype: datetime
@@ -149,7 +149,7 @@ class ConnectionEndpoints:
     def created_at(self, created_at):
         """Sets the created_at of this ConnectionEndpoints.
 
-        终端节点的创建时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
+        终端节点的创建时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
         :param created_at: The created_at of this ConnectionEndpoints.
         :type created_at: datetime
@@ -160,7 +160,7 @@ class ConnectionEndpoints:
     def updated_at(self):
         """Gets the updated_at of this ConnectionEndpoints.
 
-        终端节点的更新时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
+        终端节点的更新时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
         :return: The updated_at of this ConnectionEndpoints.
         :rtype: datetime
@@ -171,7 +171,7 @@ class ConnectionEndpoints:
     def updated_at(self, updated_at):
         """Sets the updated_at of this ConnectionEndpoints.
 
-        终端节点的更新时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
+        终端节点的更新时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
         :param updated_at: The updated_at of this ConnectionEndpoints.
         :type updated_at: datetime

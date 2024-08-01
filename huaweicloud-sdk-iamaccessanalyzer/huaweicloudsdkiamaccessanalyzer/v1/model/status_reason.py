@@ -17,28 +17,35 @@ class StatusReason:
     sensitive_list = []
 
     openapi_types = {
-        'code': 'str'
+        'code': 'str',
+        'details': 'str'
     }
 
     attribute_map = {
-        'code': 'code'
+        'code': 'code',
+        'details': 'details'
     }
 
-    def __init__(self, code=None):
+    def __init__(self, code=None, details=None):
         """StatusReason
 
         The model defined in huaweicloud sdk
 
         :param code: 分析器当前状态的原因。
         :type code: str
+        :param details: 分析器当前状态的详细原因。
+        :type details: str
         """
         
         
 
         self._code = None
+        self._details = None
         self.discriminator = None
 
         self.code = code
+        if details is not None:
+            self.details = details
 
     @property
     def code(self):
@@ -61,6 +68,28 @@ class StatusReason:
         :type code: str
         """
         self._code = code
+
+    @property
+    def details(self):
+        """Gets the details of this StatusReason.
+
+        分析器当前状态的详细原因。
+
+        :return: The details of this StatusReason.
+        :rtype: str
+        """
+        return self._details
+
+    @details.setter
+    def details(self, details):
+        """Sets the details of this StatusReason.
+
+        分析器当前状态的详细原因。
+
+        :param details: The details of this StatusReason.
+        :type details: str
+        """
+        self._details = details
 
     def to_dict(self):
         """Returns the model properties as a dict"""
