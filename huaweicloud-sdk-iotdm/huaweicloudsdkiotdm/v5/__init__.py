@@ -1,0 +1,46 @@
+# coding: utf-8
+
+from __future__ import absolute_import
+
+from huaweicloudsdkiotdm.v5.iotdm_client import IoTDMClient
+from huaweicloudsdkiotdm.v5.iotdm_async_client import IoTDMAsyncClient
+
+from huaweicloudsdkiotdm.v5.model.access_info import AccessInfo
+from huaweicloudsdkiotdm.v5.model.additional_params import AdditionalParams
+from huaweicloudsdkiotdm.v5.model.additional_params_resp import AdditionalParamsResp
+from huaweicloudsdkiotdm.v5.model.bind_instance_tags import BindInstanceTags
+from huaweicloudsdkiotdm.v5.model.bind_instance_tags_request import BindInstanceTagsRequest
+from huaweicloudsdkiotdm.v5.model.bind_instance_tags_response import BindInstanceTagsResponse
+from huaweicloudsdkiotdm.v5.model.change_instance_charge_mode import ChangeInstanceChargeMode
+from huaweicloudsdkiotdm.v5.model.change_instance_charge_mode_request import ChangeInstanceChargeModeRequest
+from huaweicloudsdkiotdm.v5.model.change_instance_charge_mode_response import ChangeInstanceChargeModeResponse
+from huaweicloudsdkiotdm.v5.model.charge_info import ChargeInfo
+from huaweicloudsdkiotdm.v5.model.create_instance import CreateInstance
+from huaweicloudsdkiotdm.v5.model.create_instance_request import CreateInstanceRequest
+from huaweicloudsdkiotdm.v5.model.create_instance_response import CreateInstanceResponse
+from huaweicloudsdkiotdm.v5.model.delete_instance_request import DeleteInstanceRequest
+from huaweicloudsdkiotdm.v5.model.delete_instance_response import DeleteInstanceResponse
+from huaweicloudsdkiotdm.v5.model.flavor import Flavor
+from huaweicloudsdkiotdm.v5.model.forwarding_info import ForwardingInfo
+from huaweicloudsdkiotdm.v5.model.ip_white_list import IPWhiteList
+from huaweicloudsdkiotdm.v5.model.ip_allow_list import IpAllowList
+from huaweicloudsdkiotdm.v5.model.list_instances_request import ListInstancesRequest
+from huaweicloudsdkiotdm.v5.model.list_instances_response import ListInstancesResponse
+from huaweicloudsdkiotdm.v5.model.operate_window import OperateWindow
+from huaweicloudsdkiotdm.v5.model.port import Port
+from huaweicloudsdkiotdm.v5.model.query_instance_simplify import QueryInstanceSimplify
+from huaweicloudsdkiotdm.v5.model.resize_instance import ResizeInstance
+from huaweicloudsdkiotdm.v5.model.resize_instance_request import ResizeInstanceRequest
+from huaweicloudsdkiotdm.v5.model.resize_instance_response import ResizeInstanceResponse
+from huaweicloudsdkiotdm.v5.model.show_instance_request import ShowInstanceRequest
+from huaweicloudsdkiotdm.v5.model.show_instance_response import ShowInstanceResponse
+from huaweicloudsdkiotdm.v5.model.tag import Tag
+from huaweicloudsdkiotdm.v5.model.unbind_instance_tags import UnbindInstanceTags
+from huaweicloudsdkiotdm.v5.model.unbind_instance_tags_request import UnbindInstanceTagsRequest
+from huaweicloudsdkiotdm.v5.model.unbind_instance_tags_response import UnbindInstanceTagsResponse
+from huaweicloudsdkiotdm.v5.model.update_access_info import UpdateAccessInfo
+from huaweicloudsdkiotdm.v5.model.update_forwarding_info import UpdateForwardingInfo
+from huaweicloudsdkiotdm.v5.model.update_instance import UpdateInstance
+from huaweicloudsdkiotdm.v5.model.update_instance_request import UpdateInstanceRequest
+from huaweicloudsdkiotdm.v5.model.update_instance_response import UpdateInstanceResponse
+

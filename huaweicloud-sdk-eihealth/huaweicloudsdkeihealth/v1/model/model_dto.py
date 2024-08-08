@@ -31,7 +31,9 @@ class ModelDto:
         'description': 'str',
         'failed_message': 'str',
         'losses': 'list[float]',
-        'metrics': 'list[ModelMetric]'
+        'metrics': 'list[ModelMetric]',
+        'base_model_id': 'str',
+        'base_model_name': 'str'
     }
 
     attribute_map = {
@@ -49,10 +51,12 @@ class ModelDto:
         'description': 'description',
         'failed_message': 'failed_message',
         'losses': 'losses',
-        'metrics': 'metrics'
+        'metrics': 'metrics',
+        'base_model_id': 'base_model_id',
+        'base_model_name': 'base_model_name'
     }
 
-    def __init__(self, name=None, id=None, type=None, create_time=None, finish_time=None, creator=None, status=None, shareable=None, data_quantity=None, file=None, value_range=None, description=None, failed_message=None, losses=None, metrics=None):
+    def __init__(self, name=None, id=None, type=None, create_time=None, finish_time=None, creator=None, status=None, shareable=None, data_quantity=None, file=None, value_range=None, description=None, failed_message=None, losses=None, metrics=None, base_model_id=None, base_model_name=None):
         """ModelDto
 
         The model defined in huaweicloud sdk
@@ -87,6 +91,10 @@ class ModelDto:
         :type losses: list[float]
         :param metrics: 模型评估指标
         :type metrics: list[:class:`huaweicloudsdkeihealth.v1.ModelMetric`]
+        :param base_model_id: 基模型id
+        :type base_model_id: str
+        :param base_model_name: 基模型名称
+        :type base_model_name: str
         """
         
         
@@ -106,6 +114,8 @@ class ModelDto:
         self._failed_message = None
         self._losses = None
         self._metrics = None
+        self._base_model_id = None
+        self._base_model_name = None
         self.discriminator = None
 
         if name is not None:
@@ -138,6 +148,10 @@ class ModelDto:
             self.losses = losses
         if metrics is not None:
             self.metrics = metrics
+        if base_model_id is not None:
+            self.base_model_id = base_model_id
+        if base_model_name is not None:
+            self.base_model_name = base_model_name
 
     @property
     def name(self):
@@ -460,6 +474,50 @@ class ModelDto:
         :type metrics: list[:class:`huaweicloudsdkeihealth.v1.ModelMetric`]
         """
         self._metrics = metrics
+
+    @property
+    def base_model_id(self):
+        """Gets the base_model_id of this ModelDto.
+
+        基模型id
+
+        :return: The base_model_id of this ModelDto.
+        :rtype: str
+        """
+        return self._base_model_id
+
+    @base_model_id.setter
+    def base_model_id(self, base_model_id):
+        """Sets the base_model_id of this ModelDto.
+
+        基模型id
+
+        :param base_model_id: The base_model_id of this ModelDto.
+        :type base_model_id: str
+        """
+        self._base_model_id = base_model_id
+
+    @property
+    def base_model_name(self):
+        """Gets the base_model_name of this ModelDto.
+
+        基模型名称
+
+        :return: The base_model_name of this ModelDto.
+        :rtype: str
+        """
+        return self._base_model_name
+
+    @base_model_name.setter
+    def base_model_name(self, base_model_name):
+        """Sets the base_model_name of this ModelDto.
+
+        基模型名称
+
+        :param base_model_name: The base_model_name of this ModelDto.
+        :type base_model_name: str
+        """
+        self._base_model_name = base_model_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

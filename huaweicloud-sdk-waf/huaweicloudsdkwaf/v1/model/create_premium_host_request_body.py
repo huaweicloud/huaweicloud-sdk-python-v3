@@ -25,6 +25,10 @@ class CreatePremiumHostRequestBody:
         'server': 'list[PremiumWafServer]',
         'block_page': 'BlockPage',
         'forward_header_map': 'dict(str, str)',
+        'mode': 'str',
+        'loadbalancer_id': 'str',
+        'listener_id': 'str',
+        'protocol_port': 'int',
         'description': 'str'
     }
 
@@ -37,10 +41,14 @@ class CreatePremiumHostRequestBody:
         'server': 'server',
         'block_page': 'block_page',
         'forward_header_map': 'forward_header_map',
+        'mode': 'mode',
+        'loadbalancer_id': 'loadbalancer_id',
+        'listener_id': 'listener_id',
+        'protocol_port': 'protocol_port',
         'description': 'description'
     }
 
-    def __init__(self, certificateid=None, certificatename=None, hostname=None, proxy=None, policyid=None, server=None, block_page=None, forward_header_map=None, description=None):
+    def __init__(self, certificateid=None, certificatename=None, hostname=None, proxy=None, policyid=None, server=None, block_page=None, forward_header_map=None, mode=None, loadbalancer_id=None, listener_id=None, protocol_port=None, description=None):
         """CreatePremiumHostRequestBody
 
         The model defined in huaweicloud sdk
@@ -61,6 +69,14 @@ class CreatePremiumHostRequestBody:
         :type block_page: :class:`huaweicloudsdkwaf.v1.BlockPage`
         :param forward_header_map: 字段转发配置，WAF会将添加的字段插到header中，转给源站；Key不能跟nginx原生字段重复。Value支持的值包括:   - $time_local   - $request_id   - $connection_requests   - $tenant_id   - $project_id   - $remote_addr   - $remote_port   - $scheme   - $request_method   - $http_host   -$origin_uri   - $request_length   - $ssl_server_name   - $ssl_protocol   - $ssl_curves   - $ssl_session_reused
         :type forward_header_map: dict(str, str)
+        :param mode: 添加云模式elb接入域名时，请输入elb-shared，否则不输入
+        :type mode: str
+        :param loadbalancer_id: 负载均衡器（ELB）id,可以在ELB侧查询其id，添加云模式elb接入域名时，此为必须输入的值
+        :type loadbalancer_id: str
+        :param listener_id: 监听器id，可在ELB侧监听器页签下查询其id；不输入时，负载均衡器（ELB）下的所有监听器都将接入WAF防护，包括该ELB下未来新增的符合条件的监听器，添加云模式elb接入域名时，可考虑输入此项id
+        :type listener_id: str
+        :param protocol_port: 业务端口，添加云模式elb接入域名时，此为必须输入的值（0 - 65535）
+        :type protocol_port: int
         :param description: 防护域名备注
         :type description: str
         """
@@ -75,6 +91,10 @@ class CreatePremiumHostRequestBody:
         self._server = None
         self._block_page = None
         self._forward_header_map = None
+        self._mode = None
+        self._loadbalancer_id = None
+        self._listener_id = None
+        self._protocol_port = None
         self._description = None
         self.discriminator = None
 
@@ -91,6 +111,14 @@ class CreatePremiumHostRequestBody:
             self.block_page = block_page
         if forward_header_map is not None:
             self.forward_header_map = forward_header_map
+        if mode is not None:
+            self.mode = mode
+        if loadbalancer_id is not None:
+            self.loadbalancer_id = loadbalancer_id
+        if listener_id is not None:
+            self.listener_id = listener_id
+        if protocol_port is not None:
+            self.protocol_port = protocol_port
         if description is not None:
             self.description = description
 
@@ -265,6 +293,94 @@ class CreatePremiumHostRequestBody:
         :type forward_header_map: dict(str, str)
         """
         self._forward_header_map = forward_header_map
+
+    @property
+    def mode(self):
+        """Gets the mode of this CreatePremiumHostRequestBody.
+
+        添加云模式elb接入域名时，请输入elb-shared，否则不输入
+
+        :return: The mode of this CreatePremiumHostRequestBody.
+        :rtype: str
+        """
+        return self._mode
+
+    @mode.setter
+    def mode(self, mode):
+        """Sets the mode of this CreatePremiumHostRequestBody.
+
+        添加云模式elb接入域名时，请输入elb-shared，否则不输入
+
+        :param mode: The mode of this CreatePremiumHostRequestBody.
+        :type mode: str
+        """
+        self._mode = mode
+
+    @property
+    def loadbalancer_id(self):
+        """Gets the loadbalancer_id of this CreatePremiumHostRequestBody.
+
+        负载均衡器（ELB）id,可以在ELB侧查询其id，添加云模式elb接入域名时，此为必须输入的值
+
+        :return: The loadbalancer_id of this CreatePremiumHostRequestBody.
+        :rtype: str
+        """
+        return self._loadbalancer_id
+
+    @loadbalancer_id.setter
+    def loadbalancer_id(self, loadbalancer_id):
+        """Sets the loadbalancer_id of this CreatePremiumHostRequestBody.
+
+        负载均衡器（ELB）id,可以在ELB侧查询其id，添加云模式elb接入域名时，此为必须输入的值
+
+        :param loadbalancer_id: The loadbalancer_id of this CreatePremiumHostRequestBody.
+        :type loadbalancer_id: str
+        """
+        self._loadbalancer_id = loadbalancer_id
+
+    @property
+    def listener_id(self):
+        """Gets the listener_id of this CreatePremiumHostRequestBody.
+
+        监听器id，可在ELB侧监听器页签下查询其id；不输入时，负载均衡器（ELB）下的所有监听器都将接入WAF防护，包括该ELB下未来新增的符合条件的监听器，添加云模式elb接入域名时，可考虑输入此项id
+
+        :return: The listener_id of this CreatePremiumHostRequestBody.
+        :rtype: str
+        """
+        return self._listener_id
+
+    @listener_id.setter
+    def listener_id(self, listener_id):
+        """Sets the listener_id of this CreatePremiumHostRequestBody.
+
+        监听器id，可在ELB侧监听器页签下查询其id；不输入时，负载均衡器（ELB）下的所有监听器都将接入WAF防护，包括该ELB下未来新增的符合条件的监听器，添加云模式elb接入域名时，可考虑输入此项id
+
+        :param listener_id: The listener_id of this CreatePremiumHostRequestBody.
+        :type listener_id: str
+        """
+        self._listener_id = listener_id
+
+    @property
+    def protocol_port(self):
+        """Gets the protocol_port of this CreatePremiumHostRequestBody.
+
+        业务端口，添加云模式elb接入域名时，此为必须输入的值（0 - 65535）
+
+        :return: The protocol_port of this CreatePremiumHostRequestBody.
+        :rtype: int
+        """
+        return self._protocol_port
+
+    @protocol_port.setter
+    def protocol_port(self, protocol_port):
+        """Sets the protocol_port of this CreatePremiumHostRequestBody.
+
+        业务端口，添加云模式elb接入域名时，此为必须输入的值（0 - 65535）
+
+        :param protocol_port: The protocol_port of this CreatePremiumHostRequestBody.
+        :type protocol_port: int
+        """
+        self._protocol_port = protocol_port
 
     @property
     def description(self):

@@ -41,7 +41,7 @@ class BindSiteDto:
 
         The model defined in huaweicloud sdk
 
-        :param name: 靶点名称
+        :param name: 靶点名称，只能设置为target1或者target2。
         :type name: str
         :param receptor: 
         :type receptor: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFile`
@@ -86,7 +86,7 @@ class BindSiteDto:
     def name(self):
         """Gets the name of this BindSiteDto.
 
-        靶点名称
+        靶点名称，只能设置为target1或者target2。
 
         :return: The name of this BindSiteDto.
         :rtype: str
@@ -97,7 +97,7 @@ class BindSiteDto:
     def name(self, name):
         """Sets the name of this BindSiteDto.
 
-        靶点名称
+        靶点名称，只能设置为target1或者target2。
 
         :param name: The name of this BindSiteDto.
         :type name: str

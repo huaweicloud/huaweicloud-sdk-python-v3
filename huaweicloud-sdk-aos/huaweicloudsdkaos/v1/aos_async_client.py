@@ -870,6 +870,563 @@ class AosAsyncClient(Client):
 
         return http_info
 
+    def create_private_hook_async(self, request):
+        """创建私有hook
+
+        创建私有hook（CreatePrivateHook）
+        
+        创建一个带有初始默认版本的私有hook，创建私有hook的时候需要同时创建一个初始化默认版本，不允许空私有hook的创建。
+        设置配置(Configuration)后的私有hook才会在触发资源栈部署时生效，资源栈使用私有hook的默认版本。若创建私有hook时未指定配置项，则该私有hook在资源栈部署时不生效，后续可通过UpdatePrivateHook API更新配置。
+          * 支持hook策略模板检验的资源栈服务API：
+              DeployStack 
+              DeleteStack
+          * 创建私有hook时指定的版本为初始默认版本。
+          * 如果同名的私有hook在当前domain_id+region下已经存在，则会返回409。
+          * 私有hook版本号遵循语义化版本号（Semantic Version），为用户自定义。
+          * 资源编排服务只会对私有hook进行浅校验，如文件大小。不进行策略文件语法类校验。若语法类存在错误，则会在hook策略校验生效时报错。
+          * 当前仅支持部署资源前的检测，不支持部署资源过程中的检测。如果通过了部署资源前的检测，资源栈则会继续部署资源。反之会停止部署资源，并记录资源栈事件（stack events）。
+          * 仅支持OPA开源引擎识别的，以rego（https://www.openpolicyagent.org/docs/latest/policy-language/）语言编写的策略模板(用户可以通过policy_uri或policy_body给与策略文件内容)。
+          * 策略模板中的决策结果使用object类型的hook_result，hook_result所在包的包名必须使用policy。hook_result格式如下：
+              &#x60;&#x60;&#x60;
+              hook_result :&#x3D; {
+                \&quot;is_passed\&quot;: Bool,
+                \&quot;err_msg\&quot;: String,
+              }
+              &#x60;&#x60;&#x60;
+            其中is_passed必选，err_msg可选。RFS通过查询policy.hook_result[is_passed]判断是否通过策略校验。
+            * 如果policy.hook_result[is_passed]的结果是true，则表示通过策略校验，资源编排服务会继续部署资源。
+            * 如果policy.hook_result[is_passed]的结果是false，则表示没有通过策略校验，资源编排服务会停止部署资源。并记录资源栈事件信息，信息的内容为policy.hook_result[err_msg]。如果没有设置err_msg，则资源栈事件信息内容为默认错误信息（校验私有hook失败）。
+            * 如果没有使用policy.hook_result，则该策略不会生效，资源编排服务会继续部署资源。
+          * 策略模板中不支持调用其他服务API等方式获取数据、不支持任何形式的网络访问、不支持以任何形式的自定义函数或者方法等、不支持读取本地文件以及系统操作。
+        
+        私有hook的策略模板语法如下：
+        &#x60;&#x60;&#x60;
+        package policy
+        
+        import rego.v1
+        
+        hook_result :&#x3D; {
+          \&quot;is_passed\&quot;: input.message &#x3D;&#x3D; \&quot;world\&quot;,
+          \&quot;err_msg\&quot;: \&quot;The error msg when private hook is not passed the validation\&quot;,
+        }
+        &#x60;&#x60;&#x60;
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreatePrivateHook
+        :type request: :class:`huaweicloudsdkaos.v1.CreatePrivateHookRequest`
+        :rtype: :class:`huaweicloudsdkaos.v1.CreatePrivateHookResponse`
+        """
+        http_info = self._create_private_hook_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_private_hook_async_invoker(self, request):
+        http_info = self._create_private_hook_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_private_hook_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/private-hooks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePrivateHookResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'client_request_id' in local_var_params:
+            header_params['Client-Request-Id'] = local_var_params['client_request_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['token']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_private_hook_version_async(self, request):
+        """创建私有hook版本
+
+        创建私有hook版本（CreatePrivateHookVersion）
+        
+        创建私有hook版本，创建私有hook版本后需要调用UpdatePrivateHook API设置为默认版本才能生效。
+          * 版本号遵循语义化版本号（Semantic Version），为用户自定义。
+          * 若hook_name和hook_id同时存在，则资源编排服务会检查是否两个匹配，如果不匹配则会返回400。
+          * 资源编排服务只会对私有hook进行浅校验，如文件大小。不进行策略文件语法类校验。若语法类存在错误，则会在hook策略校验生效时报错。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreatePrivateHookVersion
+        :type request: :class:`huaweicloudsdkaos.v1.CreatePrivateHookVersionRequest`
+        :rtype: :class:`huaweicloudsdkaos.v1.CreatePrivateHookVersionResponse`
+        """
+        http_info = self._create_private_hook_version_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_private_hook_version_async_invoker(self, request):
+        http_info = self._create_private_hook_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_private_hook_version_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/private-hooks/{hook_name}/versions",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePrivateHookVersionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'hook_name' in local_var_params:
+            path_params['hook_name'] = local_var_params['hook_name']
+
+        query_params = []
+
+        header_params = {}
+        if 'client_request_id' in local_var_params:
+            header_params['Client-Request-Id'] = local_var_params['client_request_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['token']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_private_hook_async(self, request):
+        """删除私有hook
+
+        删除私有hook（DeletePrivateHook）
+        
+        删除某个私有hook以及私有hook下的全部hook版本
+          * 默认版本只能调用本API删除，除默认版本外的其它版本可以调用DeletePrivateHookVersion API删除。
+          * 若hook_name和hook_id同时存在，则资源编排服务会检查是否两个匹配，如果不匹配则会返回400。
+        
+        **请谨慎操作，删除私有hook将会删除该私有hook和该私有hook下的所有私有hook版本。**
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeletePrivateHook
+        :type request: :class:`huaweicloudsdkaos.v1.DeletePrivateHookRequest`
+        :rtype: :class:`huaweicloudsdkaos.v1.DeletePrivateHookResponse`
+        """
+        http_info = self._delete_private_hook_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_private_hook_async_invoker(self, request):
+        http_info = self._delete_private_hook_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_private_hook_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/private-hooks/{hook_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePrivateHookResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'hook_name' in local_var_params:
+            path_params['hook_name'] = local_var_params['hook_name']
+
+        query_params = []
+        if 'hook_id' in local_var_params:
+            query_params.append(('hook_id', local_var_params['hook_id']))
+
+        header_params = {}
+        if 'client_request_id' in local_var_params:
+            header_params['Client-Request-Id'] = local_var_params['client_request_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['token']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_private_hook_version_async(self, request):
+        """删除私有hook版本
+
+        删除私有hook版本（DeletePrivateHookVersion）
+        
+        删除某个私有hook版本
+          * 默认版本只能调用DeletePrivateHook API删除，除默认版本外的其它版本都可以调用本API删除。
+          * 若hook_name和hook_id同时存在，则资源编排服务会检查是否两个匹配，如果不匹配则会返回400。
+        
+        **请谨慎操作**
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeletePrivateHookVersion
+        :type request: :class:`huaweicloudsdkaos.v1.DeletePrivateHookVersionRequest`
+        :rtype: :class:`huaweicloudsdkaos.v1.DeletePrivateHookVersionResponse`
+        """
+        http_info = self._delete_private_hook_version_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_private_hook_version_async_invoker(self, request):
+        http_info = self._delete_private_hook_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_private_hook_version_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/private-hooks/{hook_name}/versions/{hook_version}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePrivateHookVersionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'hook_name' in local_var_params:
+            path_params['hook_name'] = local_var_params['hook_name']
+        if 'hook_version' in local_var_params:
+            path_params['hook_version'] = local_var_params['hook_version']
+
+        query_params = []
+        if 'hook_id' in local_var_params:
+            query_params.append(('hook_id', local_var_params['hook_id']))
+
+        header_params = {}
+        if 'client_request_id' in local_var_params:
+            header_params['Client-Request-Id'] = local_var_params['client_request_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['token']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_private_hook_metadata_async(self, request):
+        """获取私有hook元数据
+
+        获取私有hook元数据（ShowPrivateHookMetadata）
+        
+        获取某个私有hook的元数据信息
+        
+          * 具体返回的信息见ShowPrivateHookMetadataResponseBody，若想查看私有hook下全部版本，请调用ListPrivateHookVersions。
+          * 若hook_name和hook_id同时存在，则资源编排服务会检查两个是否匹配，如果不匹配则会返回400。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowPrivateHookMetadata
+        :type request: :class:`huaweicloudsdkaos.v1.ShowPrivateHookMetadataRequest`
+        :rtype: :class:`huaweicloudsdkaos.v1.ShowPrivateHookMetadataResponse`
+        """
+        http_info = self._show_private_hook_metadata_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_private_hook_metadata_async_invoker(self, request):
+        http_info = self._show_private_hook_metadata_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_private_hook_metadata_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/private-hooks/{hook_name}/metadata",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPrivateHookMetadataResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'hook_name' in local_var_params:
+            path_params['hook_name'] = local_var_params['hook_name']
+
+        query_params = []
+        if 'hook_id' in local_var_params:
+            query_params.append(('hook_id', local_var_params['hook_id']))
+
+        header_params = {}
+        if 'client_request_id' in local_var_params:
+            header_params['Client-Request-Id'] = local_var_params['client_request_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['token']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_private_hook_version_metadata_async(self, request):
+        """获取私有hook版本元数据
+
+        获取私有hook版本元数据（ShowPrivateHookVersionMetadata）
+        
+        获取当前私有hook对应的版本的元数据信息
+        
+          * 具体返回的信息见ShowPrivateHookVersionMetadataResponseBody。
+          * 如果hook_name和hook_id同时存在，则资源编排服务会检查是否两个匹配，如果不匹配则会返回400。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowPrivateHookVersionMetadata
+        :type request: :class:`huaweicloudsdkaos.v1.ShowPrivateHookVersionMetadataRequest`
+        :rtype: :class:`huaweicloudsdkaos.v1.ShowPrivateHookVersionMetadataResponse`
+        """
+        http_info = self._show_private_hook_version_metadata_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_private_hook_version_metadata_async_invoker(self, request):
+        http_info = self._show_private_hook_version_metadata_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_private_hook_version_metadata_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/private-hooks/{hook_name}/versions/{hook_version}/metadata",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPrivateHookVersionMetadataResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'hook_name' in local_var_params:
+            path_params['hook_name'] = local_var_params['hook_name']
+        if 'hook_version' in local_var_params:
+            path_params['hook_version'] = local_var_params['hook_version']
+
+        query_params = []
+        if 'hook_id' in local_var_params:
+            query_params.append(('hook_id', local_var_params['hook_id']))
+
+        header_params = {}
+        if 'client_request_id' in local_var_params:
+            header_params['Client-Request-Id'] = local_var_params['client_request_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['token']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_private_hook_metadata_async(self, request):
+        """更新私有hook元数据
+
+        更新私有hook元数据（UpdatePrivateHookMetadata）
+        
+        更新当前私有hook的元数据信息
+        
+          * 目前支持更新私有hook的描述、默认版本、配置。
+          * 如果需要创建新的版本，请调用CreatePrivateHookVersion。
+          * 更新为增量更新，即如果某个参数不提供，则保持原始值。
+          * 如果请求中没有需要被更新的参数（如请求中没有任何内容，或仅有hook_id），则返回400。注意：即使更新原始值和目标值一致也被认为是有效更新
+          * 更新后私有hook的更新时间（update_time）也会被更新
+          * 若hook_name和hook_id同时存在，则资源编排服务会检查是否两个匹配，如果不匹配则会返回400。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdatePrivateHookMetadata
+        :type request: :class:`huaweicloudsdkaos.v1.UpdatePrivateHookMetadataRequest`
+        :rtype: :class:`huaweicloudsdkaos.v1.UpdatePrivateHookMetadataResponse`
+        """
+        http_info = self._update_private_hook_metadata_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_private_hook_metadata_async_invoker(self, request):
+        http_info = self._update_private_hook_metadata_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_private_hook_metadata_http_info(self, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v1/private-hooks/{hook_name}/metadata",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePrivateHookMetadataResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'hook_name' in local_var_params:
+            path_params['hook_name'] = local_var_params['hook_name']
+
+        query_params = []
+
+        header_params = {}
+        if 'client_request_id' in local_var_params:
+            header_params['Client-Request-Id'] = local_var_params['client_request_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['token']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def continue_deploy_stack_async(self, request):
         """继续部署资源栈
 

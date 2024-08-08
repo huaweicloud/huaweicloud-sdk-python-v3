@@ -32,7 +32,13 @@ class BaseServerGroup:
         'app_type': 'AppTypeEnum',
         'create_time': 'datetime',
         'update_time': 'datetime',
-        'storage_mount_policy': 'StorageFolderMountType'
+        'storage_mount_policy': 'StorageFolderMountType',
+        'enterprise_project_id': 'str',
+        'primary_server_group_ids': 'list[str]',
+        'secondary_server_group_ids': 'list[str]',
+        'server_group_status': 'bool',
+        'site_type': 'str',
+        'site_id': 'str'
     }
 
     attribute_map = {
@@ -51,10 +57,16 @@ class BaseServerGroup:
         'app_type': 'app_type',
         'create_time': 'create_time',
         'update_time': 'update_time',
-        'storage_mount_policy': 'storage_mount_policy'
+        'storage_mount_policy': 'storage_mount_policy',
+        'enterprise_project_id': 'enterprise_project_id',
+        'primary_server_group_ids': 'primary_server_group_ids',
+        'secondary_server_group_ids': 'secondary_server_group_ids',
+        'server_group_status': 'server_group_status',
+        'site_type': 'site_type',
+        'site_id': 'site_id'
     }
 
-    def __init__(self, id=None, name=None, description=None, image_id=None, os_type=None, product_id=None, subnet_id=None, system_disk_type=None, system_disk_size=None, is_vdi=None, extra_session_type=None, extra_session_size=None, app_type=None, create_time=None, update_time=None, storage_mount_policy=None):
+    def __init__(self, id=None, name=None, description=None, image_id=None, os_type=None, product_id=None, subnet_id=None, system_disk_type=None, system_disk_size=None, is_vdi=None, extra_session_type=None, extra_session_size=None, app_type=None, create_time=None, update_time=None, storage_mount_policy=None, enterprise_project_id=None, primary_server_group_ids=None, secondary_server_group_ids=None, server_group_status=None, site_type=None, site_id=None):
         """BaseServerGroup
 
         The model defined in huaweicloud sdk
@@ -91,6 +103,18 @@ class BaseServerGroup:
         :type update_time: datetime
         :param storage_mount_policy: 
         :type storage_mount_policy: :class:`huaweicloudsdkworkspaceapp.v1.StorageFolderMountType`
+        :param enterprise_project_id: 企业项目ID(0表示默认企业项目Id)
+        :type enterprise_project_id: str
+        :param primary_server_group_ids: 主服务器组id列表。
+        :type primary_server_group_ids: list[str]
+        :param secondary_server_group_ids: 备服务器组id列表。
+        :type secondary_server_group_ids: list[str]
+        :param server_group_status: 服务器是否处于启用状态，true表示处于启用状态 false表示处于禁用状态。
+        :type server_group_status: bool
+        :param site_type: 站点类型 - CENTER/IES
+        :type site_type: str
+        :param site_id: 站点id
+        :type site_id: str
         """
         
         
@@ -111,6 +135,12 @@ class BaseServerGroup:
         self._create_time = None
         self._update_time = None
         self._storage_mount_policy = None
+        self._enterprise_project_id = None
+        self._primary_server_group_ids = None
+        self._secondary_server_group_ids = None
+        self._server_group_status = None
+        self._site_type = None
+        self._site_id = None
         self.discriminator = None
 
         if id is not None:
@@ -145,6 +175,18 @@ class BaseServerGroup:
             self.update_time = update_time
         if storage_mount_policy is not None:
             self.storage_mount_policy = storage_mount_policy
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
+        if primary_server_group_ids is not None:
+            self.primary_server_group_ids = primary_server_group_ids
+        if secondary_server_group_ids is not None:
+            self.secondary_server_group_ids = secondary_server_group_ids
+        if server_group_status is not None:
+            self.server_group_status = server_group_status
+        if site_type is not None:
+            self.site_type = site_type
+        if site_id is not None:
+            self.site_id = site_id
 
     @property
     def id(self):
@@ -477,6 +519,138 @@ class BaseServerGroup:
         :type storage_mount_policy: :class:`huaweicloudsdkworkspaceapp.v1.StorageFolderMountType`
         """
         self._storage_mount_policy = storage_mount_policy
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this BaseServerGroup.
+
+        企业项目ID(0表示默认企业项目Id)
+
+        :return: The enterprise_project_id of this BaseServerGroup.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this BaseServerGroup.
+
+        企业项目ID(0表示默认企业项目Id)
+
+        :param enterprise_project_id: The enterprise_project_id of this BaseServerGroup.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def primary_server_group_ids(self):
+        """Gets the primary_server_group_ids of this BaseServerGroup.
+
+        主服务器组id列表。
+
+        :return: The primary_server_group_ids of this BaseServerGroup.
+        :rtype: list[str]
+        """
+        return self._primary_server_group_ids
+
+    @primary_server_group_ids.setter
+    def primary_server_group_ids(self, primary_server_group_ids):
+        """Sets the primary_server_group_ids of this BaseServerGroup.
+
+        主服务器组id列表。
+
+        :param primary_server_group_ids: The primary_server_group_ids of this BaseServerGroup.
+        :type primary_server_group_ids: list[str]
+        """
+        self._primary_server_group_ids = primary_server_group_ids
+
+    @property
+    def secondary_server_group_ids(self):
+        """Gets the secondary_server_group_ids of this BaseServerGroup.
+
+        备服务器组id列表。
+
+        :return: The secondary_server_group_ids of this BaseServerGroup.
+        :rtype: list[str]
+        """
+        return self._secondary_server_group_ids
+
+    @secondary_server_group_ids.setter
+    def secondary_server_group_ids(self, secondary_server_group_ids):
+        """Sets the secondary_server_group_ids of this BaseServerGroup.
+
+        备服务器组id列表。
+
+        :param secondary_server_group_ids: The secondary_server_group_ids of this BaseServerGroup.
+        :type secondary_server_group_ids: list[str]
+        """
+        self._secondary_server_group_ids = secondary_server_group_ids
+
+    @property
+    def server_group_status(self):
+        """Gets the server_group_status of this BaseServerGroup.
+
+        服务器是否处于启用状态，true表示处于启用状态 false表示处于禁用状态。
+
+        :return: The server_group_status of this BaseServerGroup.
+        :rtype: bool
+        """
+        return self._server_group_status
+
+    @server_group_status.setter
+    def server_group_status(self, server_group_status):
+        """Sets the server_group_status of this BaseServerGroup.
+
+        服务器是否处于启用状态，true表示处于启用状态 false表示处于禁用状态。
+
+        :param server_group_status: The server_group_status of this BaseServerGroup.
+        :type server_group_status: bool
+        """
+        self._server_group_status = server_group_status
+
+    @property
+    def site_type(self):
+        """Gets the site_type of this BaseServerGroup.
+
+        站点类型 - CENTER/IES
+
+        :return: The site_type of this BaseServerGroup.
+        :rtype: str
+        """
+        return self._site_type
+
+    @site_type.setter
+    def site_type(self, site_type):
+        """Sets the site_type of this BaseServerGroup.
+
+        站点类型 - CENTER/IES
+
+        :param site_type: The site_type of this BaseServerGroup.
+        :type site_type: str
+        """
+        self._site_type = site_type
+
+    @property
+    def site_id(self):
+        """Gets the site_id of this BaseServerGroup.
+
+        站点id
+
+        :return: The site_id of this BaseServerGroup.
+        :rtype: str
+        """
+        return self._site_id
+
+    @site_id.setter
+    def site_id(self, site_id):
+        """Sets the site_id of this BaseServerGroup.
+
+        站点id
+
+        :param site_id: The site_id of this BaseServerGroup.
+        :type site_id: str
+        """
+        self._site_id = site_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

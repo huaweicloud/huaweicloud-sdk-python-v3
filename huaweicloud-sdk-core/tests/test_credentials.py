@@ -92,10 +92,13 @@ def test_global_credentials_sign_with_temp_aksk(sdk_request):
 
 
 def test_auto_get_project_id(mocked_http_client, mocked_responses):
-    mocked_responses.get("https://iam.myhuaweicloud.com/v3/projects",
-                         content_type="application/json",
-                         headers={"X-IAM-Trace-Id": "trace-id"},
-                         body="{\"projects\":[{\"id\":\"project_id\"}]}")
+    mocked_responses.add(
+        method=responses.GET,
+        url="https://iam.myhuaweicloud.com/v3/projects",
+        content_type="application/json",
+        headers={"X-IAM-Trace-Id": "trace-id"},
+        body="{\"projects\":[{\"id\":\"project_id\"}]}"
+    )
 
     credentials = BasicCredentials("ak", "sk")
     credentials.process_auth_params(mocked_http_client, "region-id-1")
@@ -103,10 +106,13 @@ def test_auto_get_project_id(mocked_http_client, mocked_responses):
 
 
 def test_empty_project_id(mocked_http_client, mocked_responses):
-    mocked_responses.get("https://iam.myhuaweicloud.com/v3/projects",
-                         content_type="application/json",
-                         headers={"X-IAM-Trace-Id": "trace-id"},
-                         body="{\"projects\":[]}")
+    mocked_responses.add(
+        method=responses.GET,
+        url="https://iam.myhuaweicloud.com/v3/projects",
+        content_type="application/json",
+        headers={"X-IAM-Trace-Id": "trace-id"},
+        body="{\"projects\":[]}"
+    )
 
     credentials = BasicCredentials("ak", "sk")
     try:
@@ -119,10 +125,13 @@ def test_empty_project_id(mocked_http_client, mocked_responses):
 
 
 def test_multiple_project_ids(mocked_http_client, mocked_responses):
-    mocked_responses.get("https://iam.myhuaweicloud.com/v3/projects",
-                         content_type="application/json",
-                         headers={"X-IAM-Trace-Id": "trace-id"},
-                         body="{\"projects\":[{\"id\":\"project_id1\"},{\"id\":\"project_id2\"}]}")
+    mocked_responses.add(
+        method=responses.GET,
+        url="https://iam.myhuaweicloud.com/v3/projects",
+        content_type="application/json",
+        headers={"X-IAM-Trace-Id": "trace-id"},
+        body="{\"projects\":[{\"id\":\"project_id1\"},{\"id\":\"project_id2\"}]}"
+    )
 
     credentials = BasicCredentials("ak", "sk")
     try:
@@ -135,10 +144,13 @@ def test_multiple_project_ids(mocked_http_client, mocked_responses):
 
 
 def test_auto_get_domain_id(mocked_http_client, mocked_responses):
-    mocked_responses.get("https://iam.myhuaweicloud.com/v3/auth/domains",
-                         content_type="application/json",
-                         headers={"X-IAM-Trace-Id": "trace-id"},
-                         body="{\"domains\":[{\"id\":\"domain_id\"}]}")
+    mocked_responses.add(
+        method=responses.GET,
+        url="https://iam.myhuaweicloud.com/v3/auth/domains",
+        content_type="application/json",
+        headers={"X-IAM-Trace-Id": "trace-id"},
+        body="{\"domains\":[{\"id\":\"domain_id\"}]}"
+    )
 
     credentials = GlobalCredentials("ak", "sk")
     credentials.process_auth_params(mocked_http_client, "region-id")
@@ -146,10 +158,13 @@ def test_auto_get_domain_id(mocked_http_client, mocked_responses):
 
 
 def test_empty_domain_id(mocked_http_client, mocked_responses):
-    mocked_responses.get("https://iam.myhuaweicloud.com/v3/auth/domains",
-                         content_type="application/json",
-                         headers={"X-IAM-Trace-Id": "trace-id"},
-                         body="{\"domains\":[]}")
+    mocked_responses.add(
+        method=responses.GET,
+        url="https://iam.myhuaweicloud.com/v3/auth/domains",
+        content_type="application/json",
+        headers={"X-IAM-Trace-Id": "trace-id"},
+        body="{\"domains\":[]}"
+    )
 
     credentials = GlobalCredentials("ak2", "sk2")
     try:

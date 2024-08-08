@@ -34,7 +34,7 @@ class ShowPublishableAppResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: 总数。
+        :param count: 总数
         :type count: int
         :param group_images: 组下面的镜像ID列表。
         :type group_images: list[str]
@@ -60,7 +60,7 @@ class ShowPublishableAppResponse(SdkResponse):
     def count(self):
         """Gets the count of this ShowPublishableAppResponse.
 
-        总数。
+        总数
 
         :return: The count of this ShowPublishableAppResponse.
         :rtype: int
@@ -71,7 +71,7 @@ class ShowPublishableAppResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this ShowPublishableAppResponse.
 
-        总数。
+        总数
 
         :param count: The count of this ShowPublishableAppResponse.
         :type count: int

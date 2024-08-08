@@ -25,7 +25,11 @@ class CreateSubNetworkInterfaceOption:
         'private_ip_address': 'str',
         'ipv6_ip_address': 'str',
         'security_groups': 'list[str]',
-        'project_id': 'str'
+        'project_id': 'str',
+        'allowed_address_pairs': 'list[AllowedAddressPair]',
+        'instance_id': 'str',
+        'instance_type': 'str',
+        'tags': 'list[ResourceTag]'
     }
 
     attribute_map = {
@@ -37,10 +41,14 @@ class CreateSubNetworkInterfaceOption:
         'private_ip_address': 'private_ip_address',
         'ipv6_ip_address': 'ipv6_ip_address',
         'security_groups': 'security_groups',
-        'project_id': 'project_id'
+        'project_id': 'project_id',
+        'allowed_address_pairs': 'allowed_address_pairs',
+        'instance_id': 'instance_id',
+        'instance_type': 'instance_type',
+        'tags': 'tags'
     }
 
-    def __init__(self, virsubnet_id=None, vlan_id=None, parent_id=None, description=None, ipv6_enable=None, private_ip_address=None, ipv6_ip_address=None, security_groups=None, project_id=None):
+    def __init__(self, virsubnet_id=None, vlan_id=None, parent_id=None, description=None, ipv6_enable=None, private_ip_address=None, ipv6_ip_address=None, security_groups=None, project_id=None, allowed_address_pairs=None, instance_id=None, instance_type=None, tags=None):
         """CreateSubNetworkInterfaceOption
 
         The model defined in huaweicloud sdk
@@ -63,6 +71,14 @@ class CreateSubNetworkInterfaceOption:
         :type security_groups: list[str]
         :param project_id: 功能说明：辅助弹性网卡所属的项目ID 取值范围：标准UUID 约束：只有管理员有权限指定
         :type project_id: str
+        :param allowed_address_pairs: 1. 扩展属性：IP/Mac对列表，allowed_address_pair参见“allowed_address_pair对象” 2. 使用说明: IP地址不允许为 “0.0.0.0”如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组硬件SDN环境不支持ip_address属性配置为CIDR格式。
+        :type allowed_address_pairs: list[:class:`huaweicloudsdkvpc.v3.AllowedAddressPair`]
+        :param instance_id: 功能说明：辅助弹性网卡所属实例ID，例如RDS实例ID 约束： 1-64个字符
+        :type instance_id: str
+        :param instance_type: 功能说明：辅助弹性网卡所属实例类型，例如“RDS” 约束：1-64个字符
+        :type instance_type: str
+        :param tags: 辅助弹性网卡资源标签
+        :type tags: list[:class:`huaweicloudsdkvpc.v3.ResourceTag`]
         """
         
         
@@ -76,6 +92,10 @@ class CreateSubNetworkInterfaceOption:
         self._ipv6_ip_address = None
         self._security_groups = None
         self._project_id = None
+        self._allowed_address_pairs = None
+        self._instance_id = None
+        self._instance_type = None
+        self._tags = None
         self.discriminator = None
 
         self.virsubnet_id = virsubnet_id
@@ -94,6 +114,14 @@ class CreateSubNetworkInterfaceOption:
             self.security_groups = security_groups
         if project_id is not None:
             self.project_id = project_id
+        if allowed_address_pairs is not None:
+            self.allowed_address_pairs = allowed_address_pairs
+        if instance_id is not None:
+            self.instance_id = instance_id
+        if instance_type is not None:
+            self.instance_type = instance_type
+        if tags is not None:
+            self.tags = tags
 
     @property
     def virsubnet_id(self):
@@ -292,6 +320,94 @@ class CreateSubNetworkInterfaceOption:
         :type project_id: str
         """
         self._project_id = project_id
+
+    @property
+    def allowed_address_pairs(self):
+        """Gets the allowed_address_pairs of this CreateSubNetworkInterfaceOption.
+
+        1. 扩展属性：IP/Mac对列表，allowed_address_pair参见“allowed_address_pair对象” 2. 使用说明: IP地址不允许为 “0.0.0.0”如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组硬件SDN环境不支持ip_address属性配置为CIDR格式。
+
+        :return: The allowed_address_pairs of this CreateSubNetworkInterfaceOption.
+        :rtype: list[:class:`huaweicloudsdkvpc.v3.AllowedAddressPair`]
+        """
+        return self._allowed_address_pairs
+
+    @allowed_address_pairs.setter
+    def allowed_address_pairs(self, allowed_address_pairs):
+        """Sets the allowed_address_pairs of this CreateSubNetworkInterfaceOption.
+
+        1. 扩展属性：IP/Mac对列表，allowed_address_pair参见“allowed_address_pair对象” 2. 使用说明: IP地址不允许为 “0.0.0.0”如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组硬件SDN环境不支持ip_address属性配置为CIDR格式。
+
+        :param allowed_address_pairs: The allowed_address_pairs of this CreateSubNetworkInterfaceOption.
+        :type allowed_address_pairs: list[:class:`huaweicloudsdkvpc.v3.AllowedAddressPair`]
+        """
+        self._allowed_address_pairs = allowed_address_pairs
+
+    @property
+    def instance_id(self):
+        """Gets the instance_id of this CreateSubNetworkInterfaceOption.
+
+        功能说明：辅助弹性网卡所属实例ID，例如RDS实例ID 约束： 1-64个字符
+
+        :return: The instance_id of this CreateSubNetworkInterfaceOption.
+        :rtype: str
+        """
+        return self._instance_id
+
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        """Sets the instance_id of this CreateSubNetworkInterfaceOption.
+
+        功能说明：辅助弹性网卡所属实例ID，例如RDS实例ID 约束： 1-64个字符
+
+        :param instance_id: The instance_id of this CreateSubNetworkInterfaceOption.
+        :type instance_id: str
+        """
+        self._instance_id = instance_id
+
+    @property
+    def instance_type(self):
+        """Gets the instance_type of this CreateSubNetworkInterfaceOption.
+
+        功能说明：辅助弹性网卡所属实例类型，例如“RDS” 约束：1-64个字符
+
+        :return: The instance_type of this CreateSubNetworkInterfaceOption.
+        :rtype: str
+        """
+        return self._instance_type
+
+    @instance_type.setter
+    def instance_type(self, instance_type):
+        """Sets the instance_type of this CreateSubNetworkInterfaceOption.
+
+        功能说明：辅助弹性网卡所属实例类型，例如“RDS” 约束：1-64个字符
+
+        :param instance_type: The instance_type of this CreateSubNetworkInterfaceOption.
+        :type instance_type: str
+        """
+        self._instance_type = instance_type
+
+    @property
+    def tags(self):
+        """Gets the tags of this CreateSubNetworkInterfaceOption.
+
+        辅助弹性网卡资源标签
+
+        :return: The tags of this CreateSubNetworkInterfaceOption.
+        :rtype: list[:class:`huaweicloudsdkvpc.v3.ResourceTag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this CreateSubNetworkInterfaceOption.
+
+        辅助弹性网卡资源标签
+
+        :param tags: The tags of this CreateSubNetworkInterfaceOption.
+        :type tags: list[:class:`huaweicloudsdkvpc.v3.ResourceTag`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

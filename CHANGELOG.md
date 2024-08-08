@@ -1,3 +1,373 @@
+# 3.1.109 2024-08-08
+
+### HuaweiCloud SDK Config
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListRemediationExceptions**
+    - changes of request param
+      - `- resource_name`
+
+### HuaweiCloud SDK DGC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateJob**
+    - changes of request param
+      - `+ cleanOverdueDays`
+      - `+ cleanWaitingJob`
+      - `+ emptyRunningJob`
+  - **UpdateJob**
+    - changes of request param
+      - `+ cleanOverdueDays`
+      - `+ cleanWaitingJob`
+      - `+ emptyRunningJob`
+  - **CreateSupplementdata**
+    - changes of request param
+      - `+ dependJobs.cleanOverdueDays`
+      - `+ dependJobs.cleanWaitingJob`
+      - `+ dependJobs.emptyRunningJob`
+
+### HuaweiCloud SDK eiHealth
+
+- _Features_
+  - Support the following APIs:
+    - `CreateCpiJob`
+    - `ShowCpiJob`
+    - `CreateTargetOptJob`
+    - `ShowTargetOptJob`
+    - `CreateGenJob`
+    - `ShowGenJob`
+    - `RunFastaPreprocess`
+    - `ListBaseModel`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateAdmetJob**
+    - changes of request param
+      - `+ base_model_id`
+      - `+ save_fingerprint`
+  - **ShowAdmetJob**
+    - changes of response param
+      - `+ base_model`
+      - `+ save_fingerprint`
+  - **CreatePocketMolDesignJob**
+    - changes of request param
+      - `+ ligands.name`
+  - **ShowPocketMolDesignJob**
+    - changes of response param
+      - `+ ligands.name`
+  - **CreateDrugLigandInteraction2dSvg**
+    - changes of request param
+      - `+ name`
+  - **CreateDrugLigandPreviewTask**
+    - changes of request param
+      - `+ generate_3d`
+  - **CreateOptmJob**
+    - changes of request param
+      - `+ base_model_id`
+      - `+ strong_constraints.interaction`
+      - `+ strong_constraints.type: enum value [interaction]`
+      - `+ weak_constraints.interaction`
+      - `+ weak_constraints.type: enum value [interaction]`
+  - **ShowOptmJob**
+    - changes of response param
+      - `+ base_model`
+      - `+ strong_constraints.interaction`
+      - `+ strong_constraints.type: enum value [interaction]`
+      - `+ weak_constraints.interaction`
+      - `+ weak_constraints.type: enum value [interaction]`
+  - **CreateDockingJob**
+    - changes of request param
+      - `+ engine`
+  - **ShowDockingJob**
+    - changes of response param
+      - `+ engine`
+  - **CreateDrugModel**
+    - changes of request param
+      - `+ base_model_id`
+  - **ListDrugModel**
+    - changes of request param
+      - `+ base_model_list`
+    - changes of response param
+      - `+ models.base_model_id`
+      - `+ models.base_model_name`
+
+### HuaweiCloud SDK HSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListImageLocal**
+    - changes of response param
+      - `+ data_list.severity_level`
+      - `+ data_list.host_name`
+      - `+ data_list.host_id`
+      - `+ data_list.agent_id`
+
+### HuaweiCloud SDK OCR
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **RecognizeSmartDocumentRecognizer**
+    - changes of request param
+      - `+ single_orientation_mode`
+
+### HuaweiCloud SDK VPC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListSubNetworkInterfaces**
+    - changes of response param
+      - `+ sub_network_interfaces.allowed_address_pairs`
+      - `+ sub_network_interfaces.state`
+      - `+ sub_network_interfaces.instance_id`
+      - `+ sub_network_interfaces.instance_type`
+      - `+ sub_network_interfaces.scope`
+      - `* sub_network_interfaces.tags: list<string> -> list<ResourceTag>`
+  - **CreateSubNetworkInterface**
+    - changes of request param
+      - `+ sub_network_interface.allowed_address_pairs`
+      - `+ sub_network_interface.instance_id`
+      - `+ sub_network_interface.instance_type`
+      - `+ sub_network_interface.tags`
+    - changes of response param
+      - `+ sub_network_interface.allowed_address_pairs`
+      - `+ sub_network_interface.state`
+      - `+ sub_network_interface.instance_id`
+      - `+ sub_network_interface.instance_type`
+      - `+ sub_network_interface.scope`
+      - `* sub_network_interface.tags: list<string> -> list<ResourceTag>`
+  - **BatchCreateSubNetworkInterface**
+    - changes of request param
+      - `+ sub_network_interface.allowed_address_pairs`
+      - `+ sub_network_interface.instance_id`
+      - `+ sub_network_interface.instance_type`
+      - `+ sub_network_interface.tags`
+    - changes of response param
+      - `+ sub_network_interfaces.allowed_address_pairs`
+      - `+ sub_network_interfaces.state`
+      - `+ sub_network_interfaces.instance_id`
+      - `+ sub_network_interfaces.instance_type`
+      - `+ sub_network_interfaces.scope`
+      - `* sub_network_interfaces.tags: list<string> -> list<ResourceTag>`
+  - **ShowSubNetworkInterface**
+    - changes of response param
+      - `+ sub_network_interface.allowed_address_pairs`
+      - `+ sub_network_interface.state`
+      - `+ sub_network_interface.instance_id`
+      - `+ sub_network_interface.instance_type`
+      - `+ sub_network_interface.scope`
+      - `* sub_network_interface.tags: list<string> -> list<ResourceTag>`
+  - **UpdateSubNetworkInterface**
+    - changes of request param
+      - `+ sub_network_interface.allowed_address_pairs`
+    - changes of response param
+      - `+ sub_network_interface.allowed_address_pairs`
+      - `+ sub_network_interface.state`
+      - `+ sub_network_interface.instance_id`
+      - `+ sub_network_interface.instance_type`
+      - `+ sub_network_interface.scope`
+      - `* sub_network_interface.tags: list<string> -> list<ResourceTag>`
+  - **MigrateSubNetworkInterface**
+    - changes of response param
+      - `+ sub_network_interfaces.allowed_address_pairs`
+      - `+ sub_network_interfaces.state`
+      - `+ sub_network_interfaces.instance_id`
+      - `+ sub_network_interfaces.instance_type`
+      - `+ sub_network_interfaces.scope`
+      - `* sub_network_interfaces.tags: list<string> -> list<ResourceTag>`
+  - **UpdateTrafficMirrorSession**
+    - changes of request param
+      - `- traffic_mirror_session.type`
+
+### HuaweiCloud SDK WAF
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreatePremiumHost**
+    - changes of request param
+      - `+ mode`
+      - `+ loadbalancer_id`
+      - `+ listener_id`
+      - `+ protocol_port`
+
+### HuaweiCloud SDK WorkspaceApp
+
+- _Features_
+  - Support the following APIs:
+    - `AuthorizeObs`
+    - `UploadWarehouseAppIcon`
+    - `ListWarehouseApps`
+    - `CreateWarehouseApp`
+    - `UpdateWarehouseApp`
+    - `BatchDeleteWarehouseApp`
+    - `ListSessions`
+    - `ShowServerVnc`
+    - `ListServerMetricData`
+    - `ShowImageJob`
+    - `ListImageServers`
+    - `CreateImageServer`
+    - `UpdateImageServer`
+    - `BatchDeleteImageServer`
+    - `AttachImageServerApp`
+    - `ListLatestAttachedServerApp`
+    - `RecreateServerImage`
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateServer**
+    - changes of request param
+      - `* X-Auth-Token: required -> optional`
+  - **BatchStartServer**
+    - changes of request param
+      - `* X-Auth-Token: required -> optional`
+  - **BatchRejoinDomain**
+    - changes of request param
+      - `* X-Auth-Token: required -> optional`
+  - **BatchMigrateHostsServer**
+    - changes of request param
+      - `* X-Auth-Token: required -> optional`
+  - **BatchUpdateTsvi**
+    - changes of request param
+      - `* X-Auth-Token: required -> optional`
+  - **UpdateAppGroup**
+    - changes of request param
+      - `* X-Auth-Token: required -> optional`
+  - **UpdateApp**
+    - changes of request param
+      - `* X-Auth-Token: required -> optional`
+  - **BatchRebootServer**
+    - changes of request param
+      - `* X-Auth-Token: required -> optional`
+  - **BatchStopServer**
+    - changes of request param
+      - `* X-Auth-Token: required -> optional`
+  - **UpdateServerGroup**
+    - changes of request param
+      - `* X-Auth-Token: required -> optional`
+      - `+ server_group_status`
+  - **ListProduct**
+    - changes of request param
+      - `+ flavor_id`
+    - changes of response param
+      - `+ products.series_type`
+  - **CreateAppServers**
+    - changes of request param
+      - `+ flavor_id`
+  - **CheckQuota**
+    - changes of request param
+      - `+ flavor_id`
+  - **ListServers**
+    - changes of response param
+      - `+ items.enterprise_project_id`
+      - `+ items.tags`
+      - `+ items.job_type: enum value [CREATE_SERVER_SNAPSHOT,DELETE_SERVER_SNAPSHOT,RESTORE_SERVER_SNAPSHOT]`
+      - `+ items.product_info.series_type`
+      - `+ items.vm_status: enum value [BUILD_SNAPSHOT,RESTORE_SNAPSHOT]`
+      - `+ items.task_status: enum value [build_snapshot,restore_snapshot]`
+  - **CreateServerGroup**
+    - changes of request param
+      - `+ flavor_id`
+      - `+ tags`
+      - `+ enterprise_project_id`
+      - `+ primary_server_group_id`
+      - `+ server_group_status`
+    - changes of response param
+      - `+ site_type`
+      - `+ secondary_server_group_ids`
+      - `+ primary_server_group_ids`
+      - `+ tags`
+      - `+ server_group_status`
+      - `+ enterprise_project_id`
+      - `+ site_id`
+      - `+ product_info.series_type`
+  - **ListServerGroups**
+    - changes of request param
+      - `+ tags`
+      - `+ enterprise_project_id`
+      - `+ is_secondary_server_group`
+    - changes of response param
+      - `+ site_type`
+      - `+ secondary_server_group_ids`
+      - `+ primary_server_group_ids`
+      - `+ tags`
+      - `+ server_group_status`
+      - `+ enterprise_project_id`
+      - `+ site_id`
+      - `+ items.enterprise_project_id`
+      - `+ items.primary_server_group_ids`
+      - `+ items.secondary_server_group_ids`
+      - `+ items.server_group_status`
+      - `+ items.site_type`
+      - `+ items.site_id`
+      - `+ items.tags`
+      - `+ items.product_info.series_type`
+  - **ShowJobDetail**
+    - changes of response param
+      - `+ job_type: enum value [CREATE_SERVER_SNAPSHOT,DELETE_SERVER_SNAPSHOT,RESTORE_SERVER_SNAPSHOT]`
+  - **ShowOriginalPolicyInfo**
+    - changes of response param
+      - `+ policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_cts_enable`
+      - `+ policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_cts`
+      - `+ policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_stc_enable`
+      - `+ policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_stc`
+  - **ListPolicyGroup**
+    - changes of response param
+      - `+ items.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_cts_enable`
+      - `+ items.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_cts`
+      - `+ items.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_stc_enable`
+      - `+ items.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_stc`
+  - **CreatePolicyGroup**
+    - changes of request param
+      - `+ policy_group.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_cts_enable`
+      - `+ policy_group.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_cts`
+      - `+ policy_group.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_stc_enable`
+      - `+ policy_group.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_stc`
+  - **UpdatePolicyGroup**
+    - changes of request param
+      - `* X-Auth-Token: required -> optional`
+      - `+ policy_group.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_cts_enable`
+      - `+ policy_group.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_cts`
+      - `+ policy_group.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_stc_enable`
+      - `+ policy_group.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_stc`
+  - **ListPolicyTemplate**
+    - changes of response param
+      - `+ items.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_cts_enable`
+      - `+ items.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_cts`
+      - `+ items.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_stc_enable`
+      - `+ items.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_stc`
+  - **CreatePolicyTemplate**
+    - changes of request param
+      - `+ policy_group.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_cts_enable`
+      - `+ policy_group.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_cts`
+      - `+ policy_group.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_stc_enable`
+      - `+ policy_group.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_stc`
+  - **UpdatePolicyTemplate**
+    - changes of request param
+      - `* X-Auth-Token: required -> optional`
+      - `+ policy_group.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_cts_enable`
+      - `+ policy_group.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_cts`
+      - `+ policy_group.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_stc_enable`
+      - `+ policy_group.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_stc`
+
 # 3.1.108 2024-08-01
 
 ### HuaweiCloud SDK BSSINTL

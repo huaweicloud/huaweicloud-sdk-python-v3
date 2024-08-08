@@ -20,17 +20,25 @@ class PoliciesFileAndClipboardClipboardRedirectionOptions:
         'rich_text_redirection_enable': 'bool',
         'rich_text_clipboard_redirection': 'str',
         'clipboard_file_redirection_enable': 'bool',
-        'file_clipboard_redirection': 'str'
+        'file_clipboard_redirection': 'str',
+        'clipboard_length_limit_cts_enable': 'bool',
+        'clipboard_length_limit_cts': 'int',
+        'clipboard_length_limit_stc_enable': 'bool',
+        'clipboard_length_limit_stc': 'int'
     }
 
     attribute_map = {
         'rich_text_redirection_enable': 'rich_text_redirection_enable',
         'rich_text_clipboard_redirection': 'rich_text_clipboard_redirection',
         'clipboard_file_redirection_enable': 'clipboard_file_redirection_enable',
-        'file_clipboard_redirection': 'file_clipboard_redirection'
+        'file_clipboard_redirection': 'file_clipboard_redirection',
+        'clipboard_length_limit_cts_enable': 'clipboard_length_limit_cts_enable',
+        'clipboard_length_limit_cts': 'clipboard_length_limit_cts',
+        'clipboard_length_limit_stc_enable': 'clipboard_length_limit_stc_enable',
+        'clipboard_length_limit_stc': 'clipboard_length_limit_stc'
     }
 
-    def __init__(self, rich_text_redirection_enable=None, rich_text_clipboard_redirection=None, clipboard_file_redirection_enable=None, file_clipboard_redirection=None):
+    def __init__(self, rich_text_redirection_enable=None, rich_text_clipboard_redirection=None, clipboard_file_redirection_enable=None, file_clipboard_redirection=None, clipboard_length_limit_cts_enable=None, clipboard_length_limit_cts=None, clipboard_length_limit_stc_enable=None, clipboard_length_limit_stc=None):
         """PoliciesFileAndClipboardClipboardRedirectionOptions
 
         The model defined in huaweicloud sdk
@@ -43,6 +51,14 @@ class PoliciesFileAndClipboardClipboardRedirectionOptions:
         :type clipboard_file_redirection_enable: bool
         :param file_clipboard_redirection: 剪切板文件重定向。取值为： DISABLED：表示禁用。（默认） SERVER_TO_CLIENT_ENABLED：表示开启服务端到客户端。 CLIENT_TO_SERVER_ENABLED：表示开启客户端到服务端。 TWO_WAY_ENABLED：表示开启双向。
         :type file_clipboard_redirection: str
+        :param clipboard_length_limit_cts_enable: 本地到虚拟机长度限制开关。取值为： false: 标识关闭。 ture: 标识开启。
+        :type clipboard_length_limit_cts_enable: bool
+        :param clipboard_length_limit_cts: 本地到虚拟机长度限制。
+        :type clipboard_length_limit_cts: int
+        :param clipboard_length_limit_stc_enable: 虚拟机到本地到长度限制开关。取值为： false: 标识关闭。 ture: 标识开启。
+        :type clipboard_length_limit_stc_enable: bool
+        :param clipboard_length_limit_stc: 虚拟机到本地长度限制。
+        :type clipboard_length_limit_stc: int
         """
         
         
@@ -51,6 +67,10 @@ class PoliciesFileAndClipboardClipboardRedirectionOptions:
         self._rich_text_clipboard_redirection = None
         self._clipboard_file_redirection_enable = None
         self._file_clipboard_redirection = None
+        self._clipboard_length_limit_cts_enable = None
+        self._clipboard_length_limit_cts = None
+        self._clipboard_length_limit_stc_enable = None
+        self._clipboard_length_limit_stc = None
         self.discriminator = None
 
         if rich_text_redirection_enable is not None:
@@ -61,6 +81,14 @@ class PoliciesFileAndClipboardClipboardRedirectionOptions:
             self.clipboard_file_redirection_enable = clipboard_file_redirection_enable
         if file_clipboard_redirection is not None:
             self.file_clipboard_redirection = file_clipboard_redirection
+        if clipboard_length_limit_cts_enable is not None:
+            self.clipboard_length_limit_cts_enable = clipboard_length_limit_cts_enable
+        if clipboard_length_limit_cts is not None:
+            self.clipboard_length_limit_cts = clipboard_length_limit_cts
+        if clipboard_length_limit_stc_enable is not None:
+            self.clipboard_length_limit_stc_enable = clipboard_length_limit_stc_enable
+        if clipboard_length_limit_stc is not None:
+            self.clipboard_length_limit_stc = clipboard_length_limit_stc
 
     @property
     def rich_text_redirection_enable(self):
@@ -149,6 +177,94 @@ class PoliciesFileAndClipboardClipboardRedirectionOptions:
         :type file_clipboard_redirection: str
         """
         self._file_clipboard_redirection = file_clipboard_redirection
+
+    @property
+    def clipboard_length_limit_cts_enable(self):
+        """Gets the clipboard_length_limit_cts_enable of this PoliciesFileAndClipboardClipboardRedirectionOptions.
+
+        本地到虚拟机长度限制开关。取值为： false: 标识关闭。 ture: 标识开启。
+
+        :return: The clipboard_length_limit_cts_enable of this PoliciesFileAndClipboardClipboardRedirectionOptions.
+        :rtype: bool
+        """
+        return self._clipboard_length_limit_cts_enable
+
+    @clipboard_length_limit_cts_enable.setter
+    def clipboard_length_limit_cts_enable(self, clipboard_length_limit_cts_enable):
+        """Sets the clipboard_length_limit_cts_enable of this PoliciesFileAndClipboardClipboardRedirectionOptions.
+
+        本地到虚拟机长度限制开关。取值为： false: 标识关闭。 ture: 标识开启。
+
+        :param clipboard_length_limit_cts_enable: The clipboard_length_limit_cts_enable of this PoliciesFileAndClipboardClipboardRedirectionOptions.
+        :type clipboard_length_limit_cts_enable: bool
+        """
+        self._clipboard_length_limit_cts_enable = clipboard_length_limit_cts_enable
+
+    @property
+    def clipboard_length_limit_cts(self):
+        """Gets the clipboard_length_limit_cts of this PoliciesFileAndClipboardClipboardRedirectionOptions.
+
+        本地到虚拟机长度限制。
+
+        :return: The clipboard_length_limit_cts of this PoliciesFileAndClipboardClipboardRedirectionOptions.
+        :rtype: int
+        """
+        return self._clipboard_length_limit_cts
+
+    @clipboard_length_limit_cts.setter
+    def clipboard_length_limit_cts(self, clipboard_length_limit_cts):
+        """Sets the clipboard_length_limit_cts of this PoliciesFileAndClipboardClipboardRedirectionOptions.
+
+        本地到虚拟机长度限制。
+
+        :param clipboard_length_limit_cts: The clipboard_length_limit_cts of this PoliciesFileAndClipboardClipboardRedirectionOptions.
+        :type clipboard_length_limit_cts: int
+        """
+        self._clipboard_length_limit_cts = clipboard_length_limit_cts
+
+    @property
+    def clipboard_length_limit_stc_enable(self):
+        """Gets the clipboard_length_limit_stc_enable of this PoliciesFileAndClipboardClipboardRedirectionOptions.
+
+        虚拟机到本地到长度限制开关。取值为： false: 标识关闭。 ture: 标识开启。
+
+        :return: The clipboard_length_limit_stc_enable of this PoliciesFileAndClipboardClipboardRedirectionOptions.
+        :rtype: bool
+        """
+        return self._clipboard_length_limit_stc_enable
+
+    @clipboard_length_limit_stc_enable.setter
+    def clipboard_length_limit_stc_enable(self, clipboard_length_limit_stc_enable):
+        """Sets the clipboard_length_limit_stc_enable of this PoliciesFileAndClipboardClipboardRedirectionOptions.
+
+        虚拟机到本地到长度限制开关。取值为： false: 标识关闭。 ture: 标识开启。
+
+        :param clipboard_length_limit_stc_enable: The clipboard_length_limit_stc_enable of this PoliciesFileAndClipboardClipboardRedirectionOptions.
+        :type clipboard_length_limit_stc_enable: bool
+        """
+        self._clipboard_length_limit_stc_enable = clipboard_length_limit_stc_enable
+
+    @property
+    def clipboard_length_limit_stc(self):
+        """Gets the clipboard_length_limit_stc of this PoliciesFileAndClipboardClipboardRedirectionOptions.
+
+        虚拟机到本地长度限制。
+
+        :return: The clipboard_length_limit_stc of this PoliciesFileAndClipboardClipboardRedirectionOptions.
+        :rtype: int
+        """
+        return self._clipboard_length_limit_stc
+
+    @clipboard_length_limit_stc.setter
+    def clipboard_length_limit_stc(self, clipboard_length_limit_stc):
+        """Sets the clipboard_length_limit_stc of this PoliciesFileAndClipboardClipboardRedirectionOptions.
+
+        虚拟机到本地长度限制。
+
+        :param clipboard_length_limit_stc: The clipboard_length_limit_stc of this PoliciesFileAndClipboardClipboardRedirectionOptions.
+        :type clipboard_length_limit_stc: int
+        """
+        self._clipboard_length_limit_stc = clipboard_length_limit_stc
 
     def to_dict(self):
         """Returns the model properties as a dict"""

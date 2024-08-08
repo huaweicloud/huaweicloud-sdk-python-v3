@@ -28,9 +28,14 @@ class SubNetworkInterface:
         'vpc_id': 'str',
         'vlan_id': 'int',
         'security_groups': 'list[str]',
-        'tags': 'list[str]',
+        'tags': 'list[ResourceTag]',
         'project_id': 'str',
         'created_at': 'datetime',
+        'allowed_address_pairs': 'list[AllowedAddressPair]',
+        'state': 'str',
+        'instance_id': 'str',
+        'instance_type': 'str',
+        'scope': 'str',
         'security_enabled': 'bool'
     }
 
@@ -49,10 +54,15 @@ class SubNetworkInterface:
         'tags': 'tags',
         'project_id': 'project_id',
         'created_at': 'created_at',
+        'allowed_address_pairs': 'allowed_address_pairs',
+        'state': 'state',
+        'instance_id': 'instance_id',
+        'instance_type': 'instance_type',
+        'scope': 'scope',
         'security_enabled': 'security_enabled'
     }
 
-    def __init__(self, id=None, virsubnet_id=None, private_ip_address=None, ipv6_ip_address=None, mac_address=None, parent_device_id=None, parent_id=None, description=None, vpc_id=None, vlan_id=None, security_groups=None, tags=None, project_id=None, created_at=None, security_enabled=None):
+    def __init__(self, id=None, virsubnet_id=None, private_ip_address=None, ipv6_ip_address=None, mac_address=None, parent_device_id=None, parent_id=None, description=None, vpc_id=None, vlan_id=None, security_groups=None, tags=None, project_id=None, created_at=None, allowed_address_pairs=None, state=None, instance_id=None, instance_type=None, scope=None, security_enabled=None):
         """SubNetworkInterface
 
         The model defined in huaweicloud sdk
@@ -80,11 +90,21 @@ class SubNetworkInterface:
         :param security_groups: 功能说明：安全组的ID列表；例如：\&quot;security_groups\&quot;: [\&quot;a0608cbf-d047-4f54-8b28-cd7b59853fff\&quot;] 取值范围：默认值为系统默认安全组
         :type security_groups: list[str]
         :param tags: 功能说明：辅助弹性网卡的标签列表
-        :type tags: list[str]
+        :type tags: list[:class:`huaweicloudsdkvpc.v3.ResourceTag`]
         :param project_id: 功能说明：辅助弹性网卡所属项目ID
         :type project_id: str
         :param created_at: 功能说明：辅助弹性网卡的创建时间 取值范围：UTC时间格式：yyyy-MM-ddTHH:mm:ss
         :type created_at: datetime
+        :param allowed_address_pairs: 1. 扩展属性：IP/Mac对列表，allowed_address_pair参见“allowed_address_pair对象” 2. 使用说明: IP地址不允许为 “0.0.0.0”如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组硬件SDN环境不支持ip_address属性配置为CIDR
+        :type allowed_address_pairs: list[:class:`huaweicloudsdkvpc.v3.AllowedAddressPair`]
+        :param state: 功能说明：辅助弹性网卡当前状态
+        :type state: str
+        :param instance_id: 功能说明：辅助弹性网卡所属实例ID，例如RDS实例ID
+        :type instance_id: str
+        :param instance_type: 功能说明：辅助弹性网卡所属实例类型，例如“RDS”
+        :type instance_type: str
+        :param scope: 功能说明：辅助弹性网卡所在站点的公网出口信息
+        :type scope: str
         :param security_enabled: 功能说明：辅助弹性网卡安全使能标记，如果不使能则安全组不生效。 取值范围：true（使能），false（不使能）
         :type security_enabled: bool
         """
@@ -105,6 +125,11 @@ class SubNetworkInterface:
         self._tags = None
         self._project_id = None
         self._created_at = None
+        self._allowed_address_pairs = None
+        self._state = None
+        self._instance_id = None
+        self._instance_type = None
+        self._scope = None
         self._security_enabled = None
         self.discriminator = None
 
@@ -122,6 +147,11 @@ class SubNetworkInterface:
         self.tags = tags
         self.project_id = project_id
         self.created_at = created_at
+        self.allowed_address_pairs = allowed_address_pairs
+        self.state = state
+        self.instance_id = instance_id
+        self.instance_type = instance_type
+        self.scope = scope
         self.security_enabled = security_enabled
 
     @property
@@ -373,7 +403,7 @@ class SubNetworkInterface:
         功能说明：辅助弹性网卡的标签列表
 
         :return: The tags of this SubNetworkInterface.
-        :rtype: list[str]
+        :rtype: list[:class:`huaweicloudsdkvpc.v3.ResourceTag`]
         """
         return self._tags
 
@@ -384,7 +414,7 @@ class SubNetworkInterface:
         功能说明：辅助弹性网卡的标签列表
 
         :param tags: The tags of this SubNetworkInterface.
-        :type tags: list[str]
+        :type tags: list[:class:`huaweicloudsdkvpc.v3.ResourceTag`]
         """
         self._tags = tags
 
@@ -431,6 +461,116 @@ class SubNetworkInterface:
         :type created_at: datetime
         """
         self._created_at = created_at
+
+    @property
+    def allowed_address_pairs(self):
+        """Gets the allowed_address_pairs of this SubNetworkInterface.
+
+        1. 扩展属性：IP/Mac对列表，allowed_address_pair参见“allowed_address_pair对象” 2. 使用说明: IP地址不允许为 “0.0.0.0”如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组硬件SDN环境不支持ip_address属性配置为CIDR
+
+        :return: The allowed_address_pairs of this SubNetworkInterface.
+        :rtype: list[:class:`huaweicloudsdkvpc.v3.AllowedAddressPair`]
+        """
+        return self._allowed_address_pairs
+
+    @allowed_address_pairs.setter
+    def allowed_address_pairs(self, allowed_address_pairs):
+        """Sets the allowed_address_pairs of this SubNetworkInterface.
+
+        1. 扩展属性：IP/Mac对列表，allowed_address_pair参见“allowed_address_pair对象” 2. 使用说明: IP地址不允许为 “0.0.0.0”如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组硬件SDN环境不支持ip_address属性配置为CIDR
+
+        :param allowed_address_pairs: The allowed_address_pairs of this SubNetworkInterface.
+        :type allowed_address_pairs: list[:class:`huaweicloudsdkvpc.v3.AllowedAddressPair`]
+        """
+        self._allowed_address_pairs = allowed_address_pairs
+
+    @property
+    def state(self):
+        """Gets the state of this SubNetworkInterface.
+
+        功能说明：辅助弹性网卡当前状态
+
+        :return: The state of this SubNetworkInterface.
+        :rtype: str
+        """
+        return self._state
+
+    @state.setter
+    def state(self, state):
+        """Sets the state of this SubNetworkInterface.
+
+        功能说明：辅助弹性网卡当前状态
+
+        :param state: The state of this SubNetworkInterface.
+        :type state: str
+        """
+        self._state = state
+
+    @property
+    def instance_id(self):
+        """Gets the instance_id of this SubNetworkInterface.
+
+        功能说明：辅助弹性网卡所属实例ID，例如RDS实例ID
+
+        :return: The instance_id of this SubNetworkInterface.
+        :rtype: str
+        """
+        return self._instance_id
+
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        """Sets the instance_id of this SubNetworkInterface.
+
+        功能说明：辅助弹性网卡所属实例ID，例如RDS实例ID
+
+        :param instance_id: The instance_id of this SubNetworkInterface.
+        :type instance_id: str
+        """
+        self._instance_id = instance_id
+
+    @property
+    def instance_type(self):
+        """Gets the instance_type of this SubNetworkInterface.
+
+        功能说明：辅助弹性网卡所属实例类型，例如“RDS”
+
+        :return: The instance_type of this SubNetworkInterface.
+        :rtype: str
+        """
+        return self._instance_type
+
+    @instance_type.setter
+    def instance_type(self, instance_type):
+        """Sets the instance_type of this SubNetworkInterface.
+
+        功能说明：辅助弹性网卡所属实例类型，例如“RDS”
+
+        :param instance_type: The instance_type of this SubNetworkInterface.
+        :type instance_type: str
+        """
+        self._instance_type = instance_type
+
+    @property
+    def scope(self):
+        """Gets the scope of this SubNetworkInterface.
+
+        功能说明：辅助弹性网卡所在站点的公网出口信息
+
+        :return: The scope of this SubNetworkInterface.
+        :rtype: str
+        """
+        return self._scope
+
+    @scope.setter
+    def scope(self, scope):
+        """Sets the scope of this SubNetworkInterface.
+
+        功能说明：辅助弹性网卡所在站点的公网出口信息
+
+        :param scope: The scope of this SubNetworkInterface.
+        :type scope: str
+        """
+        self._scope = scope
 
     @property
     def security_enabled(self):

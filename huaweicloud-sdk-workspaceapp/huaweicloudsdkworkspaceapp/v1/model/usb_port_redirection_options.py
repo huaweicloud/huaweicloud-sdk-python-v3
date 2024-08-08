@@ -57,7 +57,7 @@ class UsbPortRedirectionOptions:
         :type usb_storage_enable: bool
         :param wireless_devices_enable: 是否开启无线设备（如：蓝牙）。取值为： - false：表示关闭。 - true：表示开启。
         :type wireless_devices_enable: bool
-        :param network_devices_enable: 是否开启网路设备（如：无线网卡）。取值为： - false：表示关闭。 - true：表示开启。
+        :param network_devices_enable: 是否开启网络设备（如：无线网卡）。取值为： - false：表示关闭。 - true：表示开启。
         :type network_devices_enable: bool
         :param usb_smart_card_enable: 是否开启智能卡设备（如：Ukey）。取值为： - false：表示关闭。 - true：表示开启。
         :type usb_smart_card_enable: bool
@@ -218,7 +218,7 @@ class UsbPortRedirectionOptions:
     def network_devices_enable(self):
         """Gets the network_devices_enable of this UsbPortRedirectionOptions.
 
-        是否开启网路设备（如：无线网卡）。取值为： - false：表示关闭。 - true：表示开启。
+        是否开启网络设备（如：无线网卡）。取值为： - false：表示关闭。 - true：表示开启。
 
         :return: The network_devices_enable of this UsbPortRedirectionOptions.
         :rtype: bool
@@ -229,7 +229,7 @@ class UsbPortRedirectionOptions:
     def network_devices_enable(self, network_devices_enable):
         """Sets the network_devices_enable of this UsbPortRedirectionOptions.
 
-        是否开启网路设备（如：无线网卡）。取值为： - false：表示关闭。 - true：表示开启。
+        是否开启网络设备（如：无线网卡）。取值为： - false：表示关闭。 - true：表示开启。
 
         :param network_devices_enable: The network_devices_enable of this UsbPortRedirectionOptions.
         :type network_devices_enable: bool

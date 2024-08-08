@@ -19,16 +19,18 @@ class CreateDockJobReq:
     openapi_types = {
         'basic_info': 'CreateDrugJobBasicInfo',
         'receptors': 'list[DockingReceptorDto]',
-        'ligands': 'list[LigandDto]'
+        'ligands': 'list[LigandDto]',
+        'engine': 'str'
     }
 
     attribute_map = {
         'basic_info': 'basic_info',
         'receptors': 'receptors',
-        'ligands': 'ligands'
+        'ligands': 'ligands',
+        'engine': 'engine'
     }
 
-    def __init__(self, basic_info=None, receptors=None, ligands=None):
+    def __init__(self, basic_info=None, receptors=None, ligands=None, engine=None):
         """CreateDockJobReq
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class CreateDockJobReq:
         :type receptors: list[:class:`huaweicloudsdkeihealth.v1.DockingReceptorDto`]
         :param ligands: 配体文件列表，当前仅支持1个
         :type ligands: list[:class:`huaweicloudsdkeihealth.v1.LigandDto`]
+        :param engine: 引擎，默认为AUTODOCK_VINA
+        :type engine: str
         """
         
         
@@ -46,11 +50,14 @@ class CreateDockJobReq:
         self._basic_info = None
         self._receptors = None
         self._ligands = None
+        self._engine = None
         self.discriminator = None
 
         self.basic_info = basic_info
         self.receptors = receptors
         self.ligands = ligands
+        if engine is not None:
+            self.engine = engine
 
     @property
     def basic_info(self):
@@ -113,6 +120,28 @@ class CreateDockJobReq:
         :type ligands: list[:class:`huaweicloudsdkeihealth.v1.LigandDto`]
         """
         self._ligands = ligands
+
+    @property
+    def engine(self):
+        """Gets the engine of this CreateDockJobReq.
+
+        引擎，默认为AUTODOCK_VINA
+
+        :return: The engine of this CreateDockJobReq.
+        :rtype: str
+        """
+        return self._engine
+
+    @engine.setter
+    def engine(self, engine):
+        """Sets the engine of this CreateDockJobReq.
+
+        引擎，默认为AUTODOCK_VINA
+
+        :param engine: The engine of this CreateDockJobReq.
+        :type engine: str
+        """
+        self._engine = engine
 
     def to_dict(self):
         """Returns the model properties as a dict"""

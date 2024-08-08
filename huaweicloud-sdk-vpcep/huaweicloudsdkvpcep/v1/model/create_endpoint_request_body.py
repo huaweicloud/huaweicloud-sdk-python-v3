@@ -28,7 +28,7 @@ class CreateEndpointRequestBody:
         'enable_whitelist': 'bool',
         'description': 'str',
         'policy_statement': 'list[PolicyStatement]',
-        'policy_document': 'object',
+        'policy_document': 'str',
         'ip_version': 'str',
         'ipv6_address': 'str'
     }
@@ -75,10 +75,10 @@ class CreateEndpointRequestBody:
         :type enable_whitelist: bool
         :param description: 描述字段，支持中英文字母、数字等字符，不支持“&lt;”或“&gt;”字符。
         :type description: str
-        :param policy_statement: 终端节点策略信息
+        :param policy_statement: Gateway类型终端节点策略信息，仅限OBS、SFS的终端节点服务的enable_policy值为true时支持该参数。
         :type policy_statement: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]
-        :param policy_document: iam 5.0 策略
-        :type policy_document: object
+        :param policy_document: 终端节点策略信息，仅当终端节点服务的enable_policy值为true时支持该参数，默认值为完全访问权限。（OBS、SFS的终端节点服务暂不支持该参数）
+        :type policy_document: str
         :param ip_version: 指定终端节点的IP版本，仅专业型终端节点支持此参数。  - ipv4,  IPv4 - dualstack, 双栈
         :type ip_version: str
         :param ipv6_address: 访问所连接的终端节点服务的IPv6的地址。  创建终端节点时，可以指定访问所连接的终端节点服务的IP，不指定的情况下，会使用系统生成的一个地址。  仅专业型终端节点支持此参数。
@@ -354,7 +354,7 @@ class CreateEndpointRequestBody:
     def policy_statement(self):
         """Gets the policy_statement of this CreateEndpointRequestBody.
 
-        终端节点策略信息
+        Gateway类型终端节点策略信息，仅限OBS、SFS的终端节点服务的enable_policy值为true时支持该参数。
 
         :return: The policy_statement of this CreateEndpointRequestBody.
         :rtype: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]
@@ -365,7 +365,7 @@ class CreateEndpointRequestBody:
     def policy_statement(self, policy_statement):
         """Sets the policy_statement of this CreateEndpointRequestBody.
 
-        终端节点策略信息
+        Gateway类型终端节点策略信息，仅限OBS、SFS的终端节点服务的enable_policy值为true时支持该参数。
 
         :param policy_statement: The policy_statement of this CreateEndpointRequestBody.
         :type policy_statement: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]
@@ -376,10 +376,10 @@ class CreateEndpointRequestBody:
     def policy_document(self):
         """Gets the policy_document of this CreateEndpointRequestBody.
 
-        iam 5.0 策略
+        终端节点策略信息，仅当终端节点服务的enable_policy值为true时支持该参数，默认值为完全访问权限。（OBS、SFS的终端节点服务暂不支持该参数）
 
         :return: The policy_document of this CreateEndpointRequestBody.
-        :rtype: object
+        :rtype: str
         """
         return self._policy_document
 
@@ -387,10 +387,10 @@ class CreateEndpointRequestBody:
     def policy_document(self, policy_document):
         """Sets the policy_document of this CreateEndpointRequestBody.
 
-        iam 5.0 策略
+        终端节点策略信息，仅当终端节点服务的enable_policy值为true时支持该参数，默认值为完全访问权限。（OBS、SFS的终端节点服务暂不支持该参数）
 
         :param policy_document: The policy_document of this CreateEndpointRequestBody.
-        :type policy_document: object
+        :type policy_document: str
         """
         self._policy_document = policy_document
 

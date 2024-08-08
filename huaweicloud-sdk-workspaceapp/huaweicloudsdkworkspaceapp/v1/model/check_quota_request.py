@@ -18,6 +18,7 @@ class CheckQuotaRequest:
 
     openapi_types = {
         'product_id': 'str',
+        'flavor_id': 'str',
         'subscription_num': 'int',
         'disk_size': 'int',
         'disk_num': 'int',
@@ -28,6 +29,7 @@ class CheckQuotaRequest:
 
     attribute_map = {
         'product_id': 'product_id',
+        'flavor_id': 'flavor_id',
         'subscription_num': 'subscription_num',
         'disk_size': 'disk_size',
         'disk_num': 'disk_num',
@@ -36,13 +38,15 @@ class CheckQuotaRequest:
         'cluster_id': 'cluster_id'
     }
 
-    def __init__(self, product_id=None, subscription_num=None, disk_size=None, disk_num=None, is_period=None, deh_id=None, cluster_id=None):
+    def __init__(self, product_id=None, flavor_id=None, subscription_num=None, disk_size=None, disk_num=None, is_period=None, deh_id=None, cluster_id=None):
         """CheckQuotaRequest
 
         The model defined in huaweicloud sdk
 
         :param product_id: 产品id。
         :type product_id: str
+        :param flavor_id: 规格id。
+        :type flavor_id: str
         :param subscription_num: 订单需要创建总实例数、订购数量。
         :type subscription_num: int
         :param disk_size: 单台实例所需的磁盘大小（最大系统盘1块*1024、数据盘10块*32768）。
@@ -60,6 +64,7 @@ class CheckQuotaRequest:
         
 
         self._product_id = None
+        self._flavor_id = None
         self._subscription_num = None
         self._disk_size = None
         self._disk_num = None
@@ -69,6 +74,8 @@ class CheckQuotaRequest:
         self.discriminator = None
 
         self.product_id = product_id
+        if flavor_id is not None:
+            self.flavor_id = flavor_id
         self.subscription_num = subscription_num
         self.disk_size = disk_size
         self.disk_num = disk_num
@@ -100,6 +107,28 @@ class CheckQuotaRequest:
         :type product_id: str
         """
         self._product_id = product_id
+
+    @property
+    def flavor_id(self):
+        """Gets the flavor_id of this CheckQuotaRequest.
+
+        规格id。
+
+        :return: The flavor_id of this CheckQuotaRequest.
+        :rtype: str
+        """
+        return self._flavor_id
+
+    @flavor_id.setter
+    def flavor_id(self, flavor_id):
+        """Sets the flavor_id of this CheckQuotaRequest.
+
+        规格id。
+
+        :param flavor_id: The flavor_id of this CheckQuotaRequest.
+        :type flavor_id: str
+        """
+        self._flavor_id = flavor_id
 
     @property
     def subscription_num(self):

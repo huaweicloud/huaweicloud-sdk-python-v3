@@ -42,7 +42,7 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
         'routetables': 'list[str]',
         'description': 'str',
         'policy_statement': 'list[PolicyStatement]',
-        'policy_document': 'object',
+        'policy_document': 'str',
         'endpoint_pool_id': 'str',
         'public_border_group': 'str',
         'ipv6_address': 'str'
@@ -130,10 +130,10 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
         :type routetables: list[str]
         :param description: 描述字段，支持中英文字母、数字等字符，不支持“&lt;”或“&gt;”字符。
         :type description: str
-        :param policy_statement: 终端节点策略信息
+        :param policy_statement: Gateway类型终端节点策略信息，仅限OBS、SFS的终端节点服务的enable_policy值为true时支持该参数。
         :type policy_statement: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]
-        :param policy_document: iam 5.0 策略
-        :type policy_document: object
+        :param policy_document: 终端节点策略信息，仅当终端节点服务的enable_policy值为true时支持该参数，默认值为完全访问权限。（OBS、SFS的终端节点服务暂不支持该参数）
+        :type policy_document: str
         :param endpoint_pool_id: 待废弃，实例相关联的集群ID
         :type endpoint_pool_id: str
         :param public_border_group: 终端节点对应Pool的Public Border Group信息
@@ -737,7 +737,7 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
     def policy_statement(self):
         """Gets the policy_statement of this ListEndpointInfoDetailsResponse.
 
-        终端节点策略信息
+        Gateway类型终端节点策略信息，仅限OBS、SFS的终端节点服务的enable_policy值为true时支持该参数。
 
         :return: The policy_statement of this ListEndpointInfoDetailsResponse.
         :rtype: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]
@@ -748,7 +748,7 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
     def policy_statement(self, policy_statement):
         """Sets the policy_statement of this ListEndpointInfoDetailsResponse.
 
-        终端节点策略信息
+        Gateway类型终端节点策略信息，仅限OBS、SFS的终端节点服务的enable_policy值为true时支持该参数。
 
         :param policy_statement: The policy_statement of this ListEndpointInfoDetailsResponse.
         :type policy_statement: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]
@@ -759,10 +759,10 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
     def policy_document(self):
         """Gets the policy_document of this ListEndpointInfoDetailsResponse.
 
-        iam 5.0 策略
+        终端节点策略信息，仅当终端节点服务的enable_policy值为true时支持该参数，默认值为完全访问权限。（OBS、SFS的终端节点服务暂不支持该参数）
 
         :return: The policy_document of this ListEndpointInfoDetailsResponse.
-        :rtype: object
+        :rtype: str
         """
         return self._policy_document
 
@@ -770,10 +770,10 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
     def policy_document(self, policy_document):
         """Sets the policy_document of this ListEndpointInfoDetailsResponse.
 
-        iam 5.0 策略
+        终端节点策略信息，仅当终端节点服务的enable_policy值为true时支持该参数，默认值为完全访问权限。（OBS、SFS的终端节点服务暂不支持该参数）
 
         :param policy_document: The policy_document of this ListEndpointInfoDetailsResponse.
-        :type policy_document: object
+        :type policy_document: str
         """
         self._policy_document = policy_document
 

@@ -27,6 +27,7 @@ class ShowOptmJobResponse(SdkResponse):
         'weak_constraints': 'list[WeakConstraintDto]',
         'strong_constraints': 'list[StrongConstraintDto]',
         'sampler_mixin_weight': 'float',
+        'base_model': 'BaseModel',
         'models': 'list[BasicDrugModel]',
         'cluster_result': 'ClusterJobRsp'
     }
@@ -41,11 +42,12 @@ class ShowOptmJobResponse(SdkResponse):
         'weak_constraints': 'weak_constraints',
         'strong_constraints': 'strong_constraints',
         'sampler_mixin_weight': 'sampler_mixin_weight',
+        'base_model': 'base_model',
         'models': 'models',
         'cluster_result': 'cluster_result'
     }
 
-    def __init__(self, basic_info=None, smiles=None, molecule_file=None, num_trials=None, binding_site=None, binding_sites=None, weak_constraints=None, strong_constraints=None, sampler_mixin_weight=None, models=None, cluster_result=None):
+    def __init__(self, basic_info=None, smiles=None, molecule_file=None, num_trials=None, binding_site=None, binding_sites=None, weak_constraints=None, strong_constraints=None, sampler_mixin_weight=None, base_model=None, models=None, cluster_result=None):
         """ShowOptmJobResponse
 
         The model defined in huaweicloud sdk
@@ -68,6 +70,8 @@ class ShowOptmJobResponse(SdkResponse):
         :type strong_constraints: list[:class:`huaweicloudsdkeihealth.v1.StrongConstraintDto`]
         :param sampler_mixin_weight: 初始化采样权重
         :type sampler_mixin_weight: float
+        :param base_model: 
+        :type base_model: :class:`huaweicloudsdkeihealth.v1.BaseModel`
         :param models: 模型列表
         :type models: list[:class:`huaweicloudsdkeihealth.v1.BasicDrugModel`]
         :param cluster_result: 
@@ -85,6 +89,7 @@ class ShowOptmJobResponse(SdkResponse):
         self._weak_constraints = None
         self._strong_constraints = None
         self._sampler_mixin_weight = None
+        self._base_model = None
         self._models = None
         self._cluster_result = None
         self.discriminator = None
@@ -107,6 +112,8 @@ class ShowOptmJobResponse(SdkResponse):
             self.strong_constraints = strong_constraints
         if sampler_mixin_weight is not None:
             self.sampler_mixin_weight = sampler_mixin_weight
+        if base_model is not None:
+            self.base_model = base_model
         if models is not None:
             self.models = models
         if cluster_result is not None:
@@ -297,6 +304,24 @@ class ShowOptmJobResponse(SdkResponse):
         :type sampler_mixin_weight: float
         """
         self._sampler_mixin_weight = sampler_mixin_weight
+
+    @property
+    def base_model(self):
+        """Gets the base_model of this ShowOptmJobResponse.
+
+        :return: The base_model of this ShowOptmJobResponse.
+        :rtype: :class:`huaweicloudsdkeihealth.v1.BaseModel`
+        """
+        return self._base_model
+
+    @base_model.setter
+    def base_model(self, base_model):
+        """Sets the base_model of this ShowOptmJobResponse.
+
+        :param base_model: The base_model of this ShowOptmJobResponse.
+        :type base_model: :class:`huaweicloudsdkeihealth.v1.BaseModel`
+        """
+        self._base_model = base_model
 
     @property
     def models(self):

@@ -40,6 +40,7 @@ class ProductInfo:
         'sub_product_list': 'list[str]',
         'domain_ids': 'list[str]',
         'package_type': 'str',
+        'series_type': 'str',
         'expire_time': 'datetime',
         'support_gpu_type': 'str'
     }
@@ -68,11 +69,12 @@ class ProductInfo:
         'sub_product_list': 'sub_product_list',
         'domain_ids': 'domain_ids',
         'package_type': 'package_type',
+        'series_type': 'series_type',
         'expire_time': 'expire_time',
         'support_gpu_type': 'support_gpu_type'
     }
 
-    def __init__(self, product_id=None, flavor_id=None, type=None, architecture=None, cpu=None, cpu_desc=None, memory=None, is_gpu=None, system_disk_type=None, system_disk_size=None, gpu_desc=None, descriptions=None, charge_mode=None, contain_data_disk=None, resource_type=None, cloud_service_type=None, volume_product_type=None, sessions=None, status=None, cond_operation_az=None, sub_product_list=None, domain_ids=None, package_type=None, expire_time=None, support_gpu_type=None):
+    def __init__(self, product_id=None, flavor_id=None, type=None, architecture=None, cpu=None, cpu_desc=None, memory=None, is_gpu=None, system_disk_type=None, system_disk_size=None, gpu_desc=None, descriptions=None, charge_mode=None, contain_data_disk=None, resource_type=None, cloud_service_type=None, volume_product_type=None, sessions=None, status=None, cond_operation_az=None, sub_product_list=None, domain_ids=None, package_type=None, series_type=None, expire_time=None, support_gpu_type=None):
         """ProductInfo
 
         The model defined in huaweicloud sdk
@@ -123,6 +125,8 @@ class ProductInfo:
         :type domain_ids: list[str]
         :param package_type: 套餐类型： - general：表示产品通用套餐。 - dedicated：表示产品专属主机套餐。
         :type package_type: str
+        :param series_type: 系列类型
+        :type series_type: str
         :param expire_time: 产品套餐过期时间,产品将在改时间点后逐步下架。
         :type expire_time: datetime
         :param support_gpu_type: 产品套餐支持的GPU类型。
@@ -154,6 +158,7 @@ class ProductInfo:
         self._sub_product_list = None
         self._domain_ids = None
         self._package_type = None
+        self._series_type = None
         self._expire_time = None
         self._support_gpu_type = None
         self.discriminator = None
@@ -204,6 +209,8 @@ class ProductInfo:
             self.domain_ids = domain_ids
         if package_type is not None:
             self.package_type = package_type
+        if series_type is not None:
+            self.series_type = series_type
         if expire_time is not None:
             self.expire_time = expire_time
         if support_gpu_type is not None:
@@ -714,6 +721,28 @@ class ProductInfo:
         :type package_type: str
         """
         self._package_type = package_type
+
+    @property
+    def series_type(self):
+        """Gets the series_type of this ProductInfo.
+
+        系列类型
+
+        :return: The series_type of this ProductInfo.
+        :rtype: str
+        """
+        return self._series_type
+
+    @series_type.setter
+    def series_type(self, series_type):
+        """Sets the series_type of this ProductInfo.
+
+        系列类型
+
+        :param series_type: The series_type of this ProductInfo.
+        :type series_type: str
+        """
+        self._series_type = series_type
 
     @property
     def expire_time(self):

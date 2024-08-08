@@ -32,7 +32,7 @@ class PublishAppResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: 总数。
+        :param count: 总数
         :type count: int
         :param items: 查发布的应用列表。
         :type items: list[:class:`huaweicloudsdkworkspaceapp.v1.App`]
@@ -53,7 +53,7 @@ class PublishAppResponse(SdkResponse):
     def count(self):
         """Gets the count of this PublishAppResponse.
 
-        总数。
+        总数
 
         :return: The count of this PublishAppResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class PublishAppResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this PublishAppResponse.
 
-        总数。
+        总数
 
         :param count: The count of this PublishAppResponse.
         :type count: int

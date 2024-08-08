@@ -18,15 +18,17 @@ class UpdateSubNetworkInterfaceOption:
 
     openapi_types = {
         'description': 'str',
-        'security_groups': 'list[str]'
+        'security_groups': 'list[str]',
+        'allowed_address_pairs': 'list[AllowedAddressPair]'
     }
 
     attribute_map = {
         'description': 'description',
-        'security_groups': 'security_groups'
+        'security_groups': 'security_groups',
+        'allowed_address_pairs': 'allowed_address_pairs'
     }
 
-    def __init__(self, description=None, security_groups=None):
+    def __init__(self, description=None, security_groups=None, allowed_address_pairs=None):
         """UpdateSubNetworkInterfaceOption
 
         The model defined in huaweicloud sdk
@@ -35,18 +37,23 @@ class UpdateSubNetworkInterfaceOption:
         :type description: str
         :param security_groups: 功能说明：安全组的ID列表；例如：\&quot;security_groups\&quot;: [\&quot;a0608cbf-d047-4f54-8b28-cd7b59853fff\&quot;]
         :type security_groups: list[str]
+        :param allowed_address_pairs: 1. 扩展属性：IP/Mac对列表，allowed_address_pair参见“allowed_address_pair对象” 2. 使用说明: IP地址不允许为 “0.0.0.0”如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组硬件SDN环境不支持ip_address属性配置为CIDR格式。
+        :type allowed_address_pairs: list[:class:`huaweicloudsdkvpc.v3.AllowedAddressPair`]
         """
         
         
 
         self._description = None
         self._security_groups = None
+        self._allowed_address_pairs = None
         self.discriminator = None
 
         if description is not None:
             self.description = description
         if security_groups is not None:
             self.security_groups = security_groups
+        if allowed_address_pairs is not None:
+            self.allowed_address_pairs = allowed_address_pairs
 
     @property
     def description(self):
@@ -91,6 +98,28 @@ class UpdateSubNetworkInterfaceOption:
         :type security_groups: list[str]
         """
         self._security_groups = security_groups
+
+    @property
+    def allowed_address_pairs(self):
+        """Gets the allowed_address_pairs of this UpdateSubNetworkInterfaceOption.
+
+        1. 扩展属性：IP/Mac对列表，allowed_address_pair参见“allowed_address_pair对象” 2. 使用说明: IP地址不允许为 “0.0.0.0”如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组硬件SDN环境不支持ip_address属性配置为CIDR格式。
+
+        :return: The allowed_address_pairs of this UpdateSubNetworkInterfaceOption.
+        :rtype: list[:class:`huaweicloudsdkvpc.v3.AllowedAddressPair`]
+        """
+        return self._allowed_address_pairs
+
+    @allowed_address_pairs.setter
+    def allowed_address_pairs(self, allowed_address_pairs):
+        """Sets the allowed_address_pairs of this UpdateSubNetworkInterfaceOption.
+
+        1. 扩展属性：IP/Mac对列表，allowed_address_pair参见“allowed_address_pair对象” 2. 使用说明: IP地址不允许为 “0.0.0.0”如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组硬件SDN环境不支持ip_address属性配置为CIDR格式。
+
+        :param allowed_address_pairs: The allowed_address_pairs of this UpdateSubNetworkInterfaceOption.
+        :type allowed_address_pairs: list[:class:`huaweicloudsdkvpc.v3.AllowedAddressPair`]
+        """
+        self._allowed_address_pairs = allowed_address_pairs
 
     def to_dict(self):
         """Returns the model properties as a dict"""

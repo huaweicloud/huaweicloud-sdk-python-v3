@@ -19,6 +19,8 @@ from huaweicloudsdkeihealth.v1.model.asset_action import AssetAction
 from huaweicloudsdkeihealth.v1.model.async_task_status import AsyncTaskStatus
 from huaweicloudsdkeihealth.v1.model.auto_job_list_dto import AutoJobListDto
 from huaweicloudsdkeihealth.v1.model.backup_dto import BackupDto
+from huaweicloudsdkeihealth.v1.model.base_model import BaseModel
+from huaweicloudsdkeihealth.v1.model.base_model_dto import BaseModelDto
 from huaweicloudsdkeihealth.v1.model.basic_drug_model import BasicDrugModel
 from huaweicloudsdkeihealth.v1.model.batch_cancel_job_request import BatchCancelJobRequest
 from huaweicloudsdkeihealth.v1.model.batch_cancel_job_response import BatchCancelJobResponse
@@ -95,6 +97,7 @@ from huaweicloudsdkeihealth.v1.model.computing_resource_rsp import ComputingReso
 from huaweicloudsdkeihealth.v1.model.computing_spec_dto import ComputingSpecDto
 from huaweicloudsdkeihealth.v1.model.copy_data_request import CopyDataRequest
 from huaweicloudsdkeihealth.v1.model.copy_data_response import CopyDataResponse
+from huaweicloudsdkeihealth.v1.model.cpi_receptor import CpiReceptor
 from huaweicloudsdkeihealth.v1.model.cpi_result import CpiResult
 from huaweicloudsdkeihealth.v1.model.cpi_result_item import CpiResultItem
 from huaweicloudsdkeihealth.v1.model.cpi_task_data import CpiTaskData
@@ -117,6 +120,9 @@ from huaweicloudsdkeihealth.v1.model.create_code_response import CreateCodeRespo
 from huaweicloudsdkeihealth.v1.model.create_computing_resource_req import CreateComputingResourceReq
 from huaweicloudsdkeihealth.v1.model.create_computing_resource_request import CreateComputingResourceRequest
 from huaweicloudsdkeihealth.v1.model.create_computing_resource_response import CreateComputingResourceResponse
+from huaweicloudsdkeihealth.v1.model.create_cpi_job_req import CreateCpiJobReq
+from huaweicloudsdkeihealth.v1.model.create_cpi_job_request import CreateCpiJobRequest
+from huaweicloudsdkeihealth.v1.model.create_cpi_job_response import CreateCpiJobResponse
 from huaweicloudsdkeihealth.v1.model.create_cpi_task_request import CreateCpiTaskRequest
 from huaweicloudsdkeihealth.v1.model.create_cpi_task_response import CreateCpiTaskResponse
 from huaweicloudsdkeihealth.v1.model.create_css_cluster_req import CreateCssClusterReq
@@ -156,6 +162,9 @@ from huaweicloudsdkeihealth.v1.model.create_drug_model_response import CreateDru
 from huaweicloudsdkeihealth.v1.model.create_fep_job_req import CreateFepJobReq
 from huaweicloudsdkeihealth.v1.model.create_fep_job_request import CreateFepJobRequest
 from huaweicloudsdkeihealth.v1.model.create_fep_job_response import CreateFepJobResponse
+from huaweicloudsdkeihealth.v1.model.create_gen_job_req import CreateGenJobReq
+from huaweicloudsdkeihealth.v1.model.create_gen_job_request import CreateGenJobRequest
+from huaweicloudsdkeihealth.v1.model.create_gen_job_response import CreateGenJobResponse
 from huaweicloudsdkeihealth.v1.model.create_generation_task_request import CreateGenerationTaskRequest
 from huaweicloudsdkeihealth.v1.model.create_generation_task_response import CreateGenerationTaskResponse
 from huaweicloudsdkeihealth.v1.model.create_image_req import CreateImageReq
@@ -223,6 +232,9 @@ from huaweicloudsdkeihealth.v1.model.create_synthesis_job_request import CreateS
 from huaweicloudsdkeihealth.v1.model.create_synthesis_job_response import CreateSynthesisJobResponse
 from huaweicloudsdkeihealth.v1.model.create_synthesis_task_request import CreateSynthesisTaskRequest
 from huaweicloudsdkeihealth.v1.model.create_synthesis_task_response import CreateSynthesisTaskResponse
+from huaweicloudsdkeihealth.v1.model.create_target_opt_job_req import CreateTargetOptJobReq
+from huaweicloudsdkeihealth.v1.model.create_target_opt_job_request import CreateTargetOptJobRequest
+from huaweicloudsdkeihealth.v1.model.create_target_opt_job_response import CreateTargetOptJobResponse
 from huaweicloudsdkeihealth.v1.model.create_template_req import CreateTemplateReq
 from huaweicloudsdkeihealth.v1.model.create_template_request import CreateTemplateRequest
 from huaweicloudsdkeihealth.v1.model.create_template_response import CreateTemplateResponse
@@ -345,6 +357,7 @@ from huaweicloudsdkeihealth.v1.model.execute_job_request import ExecuteJobReques
 from huaweicloudsdkeihealth.v1.model.execute_job_response import ExecuteJobResponse
 from huaweicloudsdkeihealth.v1.model.extremum_dto import ExtremumDto
 from huaweicloudsdkeihealth.v1.model.failed_reason_record import FailedReasonRecord
+from huaweicloudsdkeihealth.v1.model.fasta_receptor import FastaReceptor
 from huaweicloudsdkeihealth.v1.model.feature_enum import FeatureEnum
 from huaweicloudsdkeihealth.v1.model.fep_graph_dto import FepGraphDto
 from huaweicloudsdkeihealth.v1.model.fep_param_dto import FepParamDto
@@ -396,6 +409,9 @@ from huaweicloudsdkeihealth.v1.model.import_workflow_response import ImportWorkf
 from huaweicloudsdkeihealth.v1.model.install_nextflow_request import InstallNextflowRequest
 from huaweicloudsdkeihealth.v1.model.install_nextflow_request_body import InstallNextflowRequestBody
 from huaweicloudsdkeihealth.v1.model.install_nextflow_response import InstallNextflowResponse
+from huaweicloudsdkeihealth.v1.model.interaction import Interaction
+from huaweicloudsdkeihealth.v1.model.interaction_constraint_dto import InteractionConstraintDto
+from huaweicloudsdkeihealth.v1.model.interaction_type import InteractionType
 from huaweicloudsdkeihealth.v1.model.io_acc_info_dto import IoAccInfoDto
 from huaweicloudsdkeihealth.v1.model.job_dto import JobDto
 from huaweicloudsdkeihealth.v1.model.job_event_rsp import JobEventRsp
@@ -426,6 +442,8 @@ from huaweicloudsdkeihealth.v1.model.list_auto_job_request import ListAutoJobReq
 from huaweicloudsdkeihealth.v1.model.list_auto_job_response import ListAutoJobResponse
 from huaweicloudsdkeihealth.v1.model.list_backup_request import ListBackupRequest
 from huaweicloudsdkeihealth.v1.model.list_backup_response import ListBackupResponse
+from huaweicloudsdkeihealth.v1.model.list_base_model_request import ListBaseModelRequest
+from huaweicloudsdkeihealth.v1.model.list_base_model_response import ListBaseModelResponse
 from huaweicloudsdkeihealth.v1.model.list_bucket_request import ListBucketRequest
 from huaweicloudsdkeihealth.v1.model.list_bucket_response import ListBucketResponse
 from huaweicloudsdkeihealth.v1.model.list_checkpoint_request import ListCheckpointRequest
@@ -542,6 +560,8 @@ from huaweicloudsdkeihealth.v1.model.list_workflow_statistic_request import List
 from huaweicloudsdkeihealth.v1.model.list_workflow_statistic_response import ListWorkflowStatisticResponse
 from huaweicloudsdkeihealth.v1.model.log_content_dto import LogContentDto
 from huaweicloudsdkeihealth.v1.model.manage_asset_req import ManageAssetReq
+from huaweicloudsdkeihealth.v1.model.md_param import MdParam
+from huaweicloudsdkeihealth.v1.model.md_step_param import MdStepParam
 from huaweicloudsdkeihealth.v1.model.member_dto import MemberDto
 from huaweicloudsdkeihealth.v1.model.message_rsp import MessageRsp
 from huaweicloudsdkeihealth.v1.model.mfa_rsp import MfaRsp
@@ -652,6 +672,9 @@ from huaweicloudsdkeihealth.v1.model.run_drug_ligand_to_smiles_conversion_reques
 from huaweicloudsdkeihealth.v1.model.run_drug_ligand_to_smiles_conversion_response import RunDrugLigandToSmilesConversionResponse
 from huaweicloudsdkeihealth.v1.model.run_drug_receptor_preprocess_request import RunDrugReceptorPreprocessRequest
 from huaweicloudsdkeihealth.v1.model.run_drug_receptor_preprocess_response import RunDrugReceptorPreprocessResponse
+from huaweicloudsdkeihealth.v1.model.run_fasta_preprocess_req import RunFastaPreprocessReq
+from huaweicloudsdkeihealth.v1.model.run_fasta_preprocess_request import RunFastaPreprocessRequest
+from huaweicloudsdkeihealth.v1.model.run_fasta_preprocess_response import RunFastaPreprocessResponse
 from huaweicloudsdkeihealth.v1.model.run_pocket_req import RunPocketReq
 from huaweicloudsdkeihealth.v1.model.run_receptor_preprocess_req import RunReceptorPreprocessReq
 from huaweicloudsdkeihealth.v1.model.run_surface_points_req import RunSurfacePointsReq
@@ -685,6 +708,8 @@ from huaweicloudsdkeihealth.v1.model.show_bms_devices_request import ShowBmsDevi
 from huaweicloudsdkeihealth.v1.model.show_bms_devices_response import ShowBmsDevicesResponse
 from huaweicloudsdkeihealth.v1.model.show_bucket_storage_request import ShowBucketStorageRequest
 from huaweicloudsdkeihealth.v1.model.show_bucket_storage_response import ShowBucketStorageResponse
+from huaweicloudsdkeihealth.v1.model.show_cpi_job_request import ShowCpiJobRequest
+from huaweicloudsdkeihealth.v1.model.show_cpi_job_response import ShowCpiJobResponse
 from huaweicloudsdkeihealth.v1.model.show_cpi_task_result_request import ShowCpiTaskResultRequest
 from huaweicloudsdkeihealth.v1.model.show_cpi_task_result_response import ShowCpiTaskResultResponse
 from huaweicloudsdkeihealth.v1.model.show_custom_props_task_result_request import ShowCustomPropsTaskResultRequest
@@ -711,6 +736,8 @@ from huaweicloudsdkeihealth.v1.model.show_extremum_info_request import ShowExtre
 from huaweicloudsdkeihealth.v1.model.show_extremum_info_response import ShowExtremumInfoResponse
 from huaweicloudsdkeihealth.v1.model.show_fep_job_request import ShowFepJobRequest
 from huaweicloudsdkeihealth.v1.model.show_fep_job_response import ShowFepJobResponse
+from huaweicloudsdkeihealth.v1.model.show_gen_job_request import ShowGenJobRequest
+from huaweicloudsdkeihealth.v1.model.show_gen_job_response import ShowGenJobResponse
 from huaweicloudsdkeihealth.v1.model.show_generation_task_result_request import ShowGenerationTaskResultRequest
 from huaweicloudsdkeihealth.v1.model.show_generation_task_result_response import ShowGenerationTaskResultResponse
 from huaweicloudsdkeihealth.v1.model.show_instance_request import ShowInstanceRequest
@@ -785,6 +812,8 @@ from huaweicloudsdkeihealth.v1.model.show_synthesis_job_request import ShowSynth
 from huaweicloudsdkeihealth.v1.model.show_synthesis_job_response import ShowSynthesisJobResponse
 from huaweicloudsdkeihealth.v1.model.show_synthesis_task_result_request import ShowSynthesisTaskResultRequest
 from huaweicloudsdkeihealth.v1.model.show_synthesis_task_result_response import ShowSynthesisTaskResultResponse
+from huaweicloudsdkeihealth.v1.model.show_target_opt_job_request import ShowTargetOptJobRequest
+from huaweicloudsdkeihealth.v1.model.show_target_opt_job_response import ShowTargetOptJobResponse
 from huaweicloudsdkeihealth.v1.model.show_task_events_request import ShowTaskEventsRequest
 from huaweicloudsdkeihealth.v1.model.show_task_events_response import ShowTaskEventsResponse
 from huaweicloudsdkeihealth.v1.model.show_task_instance_events_request import ShowTaskInstanceEventsRequest
@@ -852,6 +881,8 @@ from huaweicloudsdkeihealth.v1.model.synthesis_result_result import SynthesisRes
 from huaweicloudsdkeihealth.v1.model.synthesis_result_result_molecules import SynthesisResultResultMolecules
 from huaweicloudsdkeihealth.v1.model.synthesis_result_result_reactions import SynthesisResultResultReactions
 from huaweicloudsdkeihealth.v1.model.synthesis_task_data import SynthesisTaskData
+from huaweicloudsdkeihealth.v1.model.target_opt_ligand import TargetOptLigand
+from huaweicloudsdkeihealth.v1.model.target_opt_receptor import TargetOptReceptor
 from huaweicloudsdkeihealth.v1.model.task_definition_dto import TaskDefinitionDto
 from huaweicloudsdkeihealth.v1.model.task_dto import TaskDto
 from huaweicloudsdkeihealth.v1.model.task_event_rsp import TaskEventRsp

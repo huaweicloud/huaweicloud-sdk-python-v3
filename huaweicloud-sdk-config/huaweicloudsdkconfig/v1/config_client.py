@@ -3750,8 +3750,6 @@ class ConfigClient(Client):
             query_params.append(('marker', local_var_params['marker']))
         if 'resource_id' in local_var_params:
             query_params.append(('resource_id', local_var_params['resource_id']))
-        if 'resource_name' in local_var_params:
-            query_params.append(('resource_name', local_var_params['resource_name']))
 
         header_params = {}
 

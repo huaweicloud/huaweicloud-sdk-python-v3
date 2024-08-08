@@ -51,7 +51,9 @@ class AppServer:
         'vm_status': 'AppServerStatus',
         'task_status': 'AppServerTaskStatus',
         'freeze': 'list[CbcFreezeInfo]',
-        'host_address': 'list[EcsNetWork]'
+        'host_address': 'list[EcsNetWork]',
+        'enterprise_project_id': 'str',
+        'tags': 'list[TmsTag]'
     }
 
     attribute_map = {
@@ -89,10 +91,12 @@ class AppServer:
         'vm_status': 'vm_status',
         'task_status': 'task_status',
         'freeze': 'freeze',
-        'host_address': 'host_address'
+        'host_address': 'host_address',
+        'enterprise_project_id': 'enterprise_project_id',
+        'tags': 'tags'
     }
 
-    def __init__(self, id=None, name=None, machine_name=None, description=None, server_group_id=None, flavor=None, status=None, create_time=None, update_time=None, image_id=None, availability_zone=None, domain=None, ou_name=None, sid=None, instance_id=None, os_version=None, os_type=None, order_id=None, maintain_status=None, scaling_auto_create=None, job_id=None, job_type=None, job_status=None, job_time=None, resource_pool_id=None, resource_pool_type=None, host_id=None, server_group_name=None, product_info=None, metadata=None, session_count=None, vm_status=None, task_status=None, freeze=None, host_address=None):
+    def __init__(self, id=None, name=None, machine_name=None, description=None, server_group_id=None, flavor=None, status=None, create_time=None, update_time=None, image_id=None, availability_zone=None, domain=None, ou_name=None, sid=None, instance_id=None, os_version=None, os_type=None, order_id=None, maintain_status=None, scaling_auto_create=None, job_id=None, job_type=None, job_status=None, job_time=None, resource_pool_id=None, resource_pool_type=None, host_id=None, server_group_name=None, product_info=None, metadata=None, session_count=None, vm_status=None, task_status=None, freeze=None, host_address=None, enterprise_project_id=None, tags=None):
         """AppServer
 
         The model defined in huaweicloud sdk
@@ -167,6 +171,10 @@ class AppServer:
         :type freeze: list[:class:`huaweicloudsdkworkspaceapp.v1.CbcFreezeInfo`]
         :param host_address: vpc和子网信息。
         :type host_address: list[:class:`huaweicloudsdkworkspaceapp.v1.EcsNetWork`]
+        :param enterprise_project_id: 企业项目ID,仅企业项目会返回
+        :type enterprise_project_id: str
+        :param tags: 标签信息
+        :type tags: list[:class:`huaweicloudsdkworkspaceapp.v1.TmsTag`]
         """
         
         
@@ -206,6 +214,8 @@ class AppServer:
         self._task_status = None
         self._freeze = None
         self._host_address = None
+        self._enterprise_project_id = None
+        self._tags = None
         self.discriminator = None
 
         if id is not None:
@@ -278,6 +288,10 @@ class AppServer:
             self.freeze = freeze
         if host_address is not None:
             self.host_address = host_address
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
+        if tags is not None:
+            self.tags = tags
 
     @property
     def id(self):
@@ -1020,6 +1034,50 @@ class AppServer:
         :type host_address: list[:class:`huaweicloudsdkworkspaceapp.v1.EcsNetWork`]
         """
         self._host_address = host_address
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this AppServer.
+
+        企业项目ID,仅企业项目会返回
+
+        :return: The enterprise_project_id of this AppServer.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this AppServer.
+
+        企业项目ID,仅企业项目会返回
+
+        :param enterprise_project_id: The enterprise_project_id of this AppServer.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def tags(self):
+        """Gets the tags of this AppServer.
+
+        标签信息
+
+        :return: The tags of this AppServer.
+        :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.TmsTag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this AppServer.
+
+        标签信息
+
+        :param tags: The tags of this AppServer.
+        :type tags: list[:class:`huaweicloudsdkworkspaceapp.v1.TmsTag`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

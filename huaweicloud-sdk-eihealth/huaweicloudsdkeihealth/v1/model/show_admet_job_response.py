@@ -22,8 +22,10 @@ class ShowAdmetJobResponse(SdkResponse):
         'molecule_file': 'MoleculeFileDto',
         'job_result': 'JobResult',
         'part_failed_reason': 'list[FailedReasonRecord]',
+        'base_model': 'BaseModel',
         'models': 'list[BasicDrugModel]',
-        'cluster_result': 'ClusterJobRsp'
+        'cluster_result': 'ClusterJobRsp',
+        'save_fingerprint': 'bool'
     }
 
     attribute_map = {
@@ -31,11 +33,13 @@ class ShowAdmetJobResponse(SdkResponse):
         'molecule_file': 'molecule_file',
         'job_result': 'job_result',
         'part_failed_reason': 'part_failed_reason',
+        'base_model': 'base_model',
         'models': 'models',
-        'cluster_result': 'cluster_result'
+        'cluster_result': 'cluster_result',
+        'save_fingerprint': 'save_fingerprint'
     }
 
-    def __init__(self, basic_info=None, molecule_file=None, job_result=None, part_failed_reason=None, models=None, cluster_result=None):
+    def __init__(self, basic_info=None, molecule_file=None, job_result=None, part_failed_reason=None, base_model=None, models=None, cluster_result=None, save_fingerprint=None):
         """ShowAdmetJobResponse
 
         The model defined in huaweicloud sdk
@@ -48,10 +52,14 @@ class ShowAdmetJobResponse(SdkResponse):
         :type job_result: :class:`huaweicloudsdkeihealth.v1.JobResult`
         :param part_failed_reason: 作业结果信息
         :type part_failed_reason: list[:class:`huaweicloudsdkeihealth.v1.FailedReasonRecord`]
+        :param base_model: 
+        :type base_model: :class:`huaweicloudsdkeihealth.v1.BaseModel`
         :param models: 模型信息
         :type models: list[:class:`huaweicloudsdkeihealth.v1.BasicDrugModel`]
         :param cluster_result: 
         :type cluster_result: :class:`huaweicloudsdkeihealth.v1.ClusterJobRsp`
+        :param save_fingerprint: 是否输出表征
+        :type save_fingerprint: bool
         """
         
         super(ShowAdmetJobResponse, self).__init__()
@@ -60,8 +68,10 @@ class ShowAdmetJobResponse(SdkResponse):
         self._molecule_file = None
         self._job_result = None
         self._part_failed_reason = None
+        self._base_model = None
         self._models = None
         self._cluster_result = None
+        self._save_fingerprint = None
         self.discriminator = None
 
         if basic_info is not None:
@@ -72,10 +82,14 @@ class ShowAdmetJobResponse(SdkResponse):
             self.job_result = job_result
         if part_failed_reason is not None:
             self.part_failed_reason = part_failed_reason
+        if base_model is not None:
+            self.base_model = base_model
         if models is not None:
             self.models = models
         if cluster_result is not None:
             self.cluster_result = cluster_result
+        if save_fingerprint is not None:
+            self.save_fingerprint = save_fingerprint
 
     @property
     def basic_info(self):
@@ -154,6 +168,24 @@ class ShowAdmetJobResponse(SdkResponse):
         self._part_failed_reason = part_failed_reason
 
     @property
+    def base_model(self):
+        """Gets the base_model of this ShowAdmetJobResponse.
+
+        :return: The base_model of this ShowAdmetJobResponse.
+        :rtype: :class:`huaweicloudsdkeihealth.v1.BaseModel`
+        """
+        return self._base_model
+
+    @base_model.setter
+    def base_model(self, base_model):
+        """Sets the base_model of this ShowAdmetJobResponse.
+
+        :param base_model: The base_model of this ShowAdmetJobResponse.
+        :type base_model: :class:`huaweicloudsdkeihealth.v1.BaseModel`
+        """
+        self._base_model = base_model
+
+    @property
     def models(self):
         """Gets the models of this ShowAdmetJobResponse.
 
@@ -192,6 +224,28 @@ class ShowAdmetJobResponse(SdkResponse):
         :type cluster_result: :class:`huaweicloudsdkeihealth.v1.ClusterJobRsp`
         """
         self._cluster_result = cluster_result
+
+    @property
+    def save_fingerprint(self):
+        """Gets the save_fingerprint of this ShowAdmetJobResponse.
+
+        是否输出表征
+
+        :return: The save_fingerprint of this ShowAdmetJobResponse.
+        :rtype: bool
+        """
+        return self._save_fingerprint
+
+    @save_fingerprint.setter
+    def save_fingerprint(self, save_fingerprint):
+        """Sets the save_fingerprint of this ShowAdmetJobResponse.
+
+        是否输出表征
+
+        :param save_fingerprint: The save_fingerprint of this ShowAdmetJobResponse.
+        :type save_fingerprint: bool
+        """
+        self._save_fingerprint = save_fingerprint
 
     def to_dict(self):
         """Returns the model properties as a dict"""

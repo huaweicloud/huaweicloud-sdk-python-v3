@@ -28,7 +28,8 @@ class ListDrugModelRequest:
         'finish_start_time': 'int',
         'finish_end_time': 'int',
         'limit': 'int',
-        'offset': 'int'
+        'offset': 'int',
+        'base_model_list': 'list[str]'
     }
 
     attribute_map = {
@@ -43,10 +44,11 @@ class ListDrugModelRequest:
         'finish_start_time': 'finish_start_time',
         'finish_end_time': 'finish_end_time',
         'limit': 'limit',
-        'offset': 'offset'
+        'offset': 'offset',
+        'base_model_list': 'base_model_list'
     }
 
-    def __init__(self, search_key=None, creator_list=None, type_list=None, status_list=None, sort_key=None, sort_dir=None, create_start_time=None, create_end_time=None, finish_start_time=None, finish_end_time=None, limit=None, offset=None):
+    def __init__(self, search_key=None, creator_list=None, type_list=None, status_list=None, sort_key=None, sort_dir=None, create_start_time=None, create_end_time=None, finish_start_time=None, finish_end_time=None, limit=None, offset=None, base_model_list=None):
         """ListDrugModelRequest
 
         The model defined in huaweicloud sdk
@@ -59,7 +61,7 @@ class ListDrugModelRequest:
         :type type_list: list[str]
         :param status_list: 模型状态列表
         :type status_list: list[str]
-        :param sort_key: 排序规则 目前默认时间降序，支持根据create_time|finish_time
+        :param sort_key: 排序规则 目前默认时间降序，支持根据create_time|finish_time|base_model_name
         :type sort_key: str
         :param sort_dir: 排序规则 目前默认时间降序
         :type sort_dir: str
@@ -75,6 +77,8 @@ class ListDrugModelRequest:
         :type limit: int
         :param offset: 偏移量，查询起始偏移，必须由数字组成，默认为0，取值范围[0,100000000]
         :type offset: int
+        :param base_model_list: 基模型id列表
+        :type base_model_list: list[str]
         """
         
         
@@ -91,6 +95,7 @@ class ListDrugModelRequest:
         self._finish_end_time = None
         self._limit = None
         self._offset = None
+        self._base_model_list = None
         self.discriminator = None
 
         if search_key is not None:
@@ -117,6 +122,8 @@ class ListDrugModelRequest:
             self.limit = limit
         if offset is not None:
             self.offset = offset
+        if base_model_list is not None:
+            self.base_model_list = base_model_list
 
     @property
     def search_key(self):
@@ -210,7 +217,7 @@ class ListDrugModelRequest:
     def sort_key(self):
         """Gets the sort_key of this ListDrugModelRequest.
 
-        排序规则 目前默认时间降序，支持根据create_time|finish_time
+        排序规则 目前默认时间降序，支持根据create_time|finish_time|base_model_name
 
         :return: The sort_key of this ListDrugModelRequest.
         :rtype: str
@@ -221,7 +228,7 @@ class ListDrugModelRequest:
     def sort_key(self, sort_key):
         """Sets the sort_key of this ListDrugModelRequest.
 
-        排序规则 目前默认时间降序，支持根据create_time|finish_time
+        排序规则 目前默认时间降序，支持根据create_time|finish_time|base_model_name
 
         :param sort_key: The sort_key of this ListDrugModelRequest.
         :type sort_key: str
@@ -381,6 +388,28 @@ class ListDrugModelRequest:
         :type offset: int
         """
         self._offset = offset
+
+    @property
+    def base_model_list(self):
+        """Gets the base_model_list of this ListDrugModelRequest.
+
+        基模型id列表
+
+        :return: The base_model_list of this ListDrugModelRequest.
+        :rtype: list[str]
+        """
+        return self._base_model_list
+
+    @base_model_list.setter
+    def base_model_list(self, base_model_list):
+        """Sets the base_model_list of this ListDrugModelRequest.
+
+        基模型id列表
+
+        :param base_model_list: The base_model_list of this ListDrugModelRequest.
+        :type base_model_list: list[str]
+        """
+        self._base_model_list = base_model_list
 
     def to_dict(self):
         """Returns the model properties as a dict"""

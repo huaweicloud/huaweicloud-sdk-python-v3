@@ -19,16 +19,18 @@ class CreateLigandPreviewTaskReq:
     openapi_types = {
         'ligand_file': 'DrugFile',
         'preview_count': 'int',
-        'count_limit': 'int'
+        'count_limit': 'int',
+        'generate_3d': 'bool'
     }
 
     attribute_map = {
         'ligand_file': 'ligand_file',
         'preview_count': 'preview_count',
-        'count_limit': 'count_limit'
+        'count_limit': 'count_limit',
+        'generate_3d': 'generate_3d'
     }
 
-    def __init__(self, ligand_file=None, preview_count=None, count_limit=None):
+    def __init__(self, ligand_file=None, preview_count=None, count_limit=None, generate_3d=None):
         """CreateLigandPreviewTaskReq
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class CreateLigandPreviewTaskReq:
         :type preview_count: int
         :param count_limit: 计数上限，若分子数量大于计数上限，则终止计数并在结果中标明计数不完整（has_more&#x3D;true），计数数量应不小于preview_count
         :type count_limit: int
+        :param generate_3d: 是否生成3D构象，默认为true
+        :type generate_3d: bool
         """
         
         
@@ -46,6 +50,7 @@ class CreateLigandPreviewTaskReq:
         self._ligand_file = None
         self._preview_count = None
         self._count_limit = None
+        self._generate_3d = None
         self.discriminator = None
 
         self.ligand_file = ligand_file
@@ -53,6 +58,8 @@ class CreateLigandPreviewTaskReq:
             self.preview_count = preview_count
         if count_limit is not None:
             self.count_limit = count_limit
+        if generate_3d is not None:
+            self.generate_3d = generate_3d
 
     @property
     def ligand_file(self):
@@ -115,6 +122,28 @@ class CreateLigandPreviewTaskReq:
         :type count_limit: int
         """
         self._count_limit = count_limit
+
+    @property
+    def generate_3d(self):
+        """Gets the generate_3d of this CreateLigandPreviewTaskReq.
+
+        是否生成3D构象，默认为true
+
+        :return: The generate_3d of this CreateLigandPreviewTaskReq.
+        :rtype: bool
+        """
+        return self._generate_3d
+
+    @generate_3d.setter
+    def generate_3d(self, generate_3d):
+        """Sets the generate_3d of this CreateLigandPreviewTaskReq.
+
+        是否生成3D构象，默认为true
+
+        :param generate_3d: The generate_3d of this CreateLigandPreviewTaskReq.
+        :type generate_3d: bool
+        """
+        self._generate_3d = generate_3d
 
     def to_dict(self):
         """Returns the model properties as a dict"""

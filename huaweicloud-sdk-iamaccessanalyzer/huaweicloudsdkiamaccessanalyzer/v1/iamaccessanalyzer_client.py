@@ -22,11 +22,11 @@ class IAMAccessAnalyzerClient(Client):
     @classmethod
     def new_builder(cls, clazz=None):
         if not clazz:
-            client_builder = ClientBuilder(cls, "GlobalCredentials")
+            client_builder = ClientBuilder(cls)
         else:
             if clazz.__name__ != "IAMAccessAnalyzerClient":
                 raise TypeError("client type error, support client type is IAMAccessAnalyzerClient")
-            client_builder = ClientBuilder(clazz, "GlobalCredentials")
+            client_builder = ClientBuilder(clazz)
 
         
 

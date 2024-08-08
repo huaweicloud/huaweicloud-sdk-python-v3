@@ -246,7 +246,7 @@ class IamAsyncClient(Client):
         return http_info
 
     def associate_role_to_agency_on_enterprise_project_async(self, request):
-        """application/json
+        """基于委托为企业项目授权
 
         该接口可以基于委托为企业项目授权
         
@@ -3683,73 +3683,6 @@ class IamAsyncClient(Client):
 
         return http_info
 
-    def keystone_list_users_for_group_by_admin_async(self, request):
-        """管理员查询用户组所包含的IAM用户
-
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询用户组中所包含的IAM用户。
-        
-        该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for KeystoneListUsersForGroupByAdmin
-        :type request: :class:`huaweicloudsdkiam.v3.KeystoneListUsersForGroupByAdminRequest`
-        :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListUsersForGroupByAdminResponse`
-        """
-        http_info = self._keystone_list_users_for_group_by_admin_http_info(request)
-        return self._call_api(**http_info)
-
-    def keystone_list_users_for_group_by_admin_async_invoker(self, request):
-        http_info = self._keystone_list_users_for_group_by_admin_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _keystone_list_users_for_group_by_admin_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v3/groups/{group_id}/users",
-            "request_type": request.__class__.__name__,
-            "response_type": "KeystoneListUsersForGroupByAdminResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'group_id' in local_var_params:
-            path_params['group_id'] = local_var_params['group_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def keystone_list_versions_async(self, request):
         """查询版本信息列表
 
@@ -6209,7 +6142,7 @@ class IamAsyncClient(Client):
         return http_info
 
     def revoke_role_from_agency_on_enterprise_project_async(self, request):
-        """revoke_role_from_agency_on_enterprise_project
+        """删除企业项目关联委托的权限
 
         该接口可以删除企业项目委托上的授权
         
@@ -9132,6 +9065,73 @@ class IamAsyncClient(Client):
             query_params.append(('name', local_var_params['name']))
         if 'password_expires_at' in local_var_params:
             query_params.append(('password_expires_at', local_var_params['password_expires_at']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def keystone_list_users_for_group_by_admin_async(self, request):
+        """管理员查询用户组所包含的IAM用户
+
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询用户组中所包含的IAM用户。
+        
+        该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for KeystoneListUsersForGroupByAdmin
+        :type request: :class:`huaweicloudsdkiam.v3.KeystoneListUsersForGroupByAdminRequest`
+        :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListUsersForGroupByAdminResponse`
+        """
+        http_info = self._keystone_list_users_for_group_by_admin_http_info(request)
+        return self._call_api(**http_info)
+
+    def keystone_list_users_for_group_by_admin_async_invoker(self, request):
+        http_info = self._keystone_list_users_for_group_by_admin_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _keystone_list_users_for_group_by_admin_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/groups/{group_id}/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneListUsersForGroupByAdminResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
 
         header_params = {}
 

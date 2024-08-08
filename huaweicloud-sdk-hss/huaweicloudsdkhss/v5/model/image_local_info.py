@@ -32,7 +32,11 @@ class ImageLocalInfo:
         'host_num': 'int',
         'container_num': 'int',
         'component_num': 'int',
-        'scan_failed_desc': 'str'
+        'scan_failed_desc': 'str',
+        'severity_level': 'str',
+        'host_name': 'str',
+        'host_id': 'str',
+        'agent_id': 'str'
     }
 
     attribute_map = {
@@ -51,10 +55,14 @@ class ImageLocalInfo:
         'host_num': 'host_num',
         'container_num': 'container_num',
         'component_num': 'component_num',
-        'scan_failed_desc': 'scan_failed_desc'
+        'scan_failed_desc': 'scan_failed_desc',
+        'severity_level': 'severity_level',
+        'host_name': 'host_name',
+        'host_id': 'host_id',
+        'agent_id': 'agent_id'
     }
 
-    def __init__(self, image_name=None, image_id=None, image_digest=None, image_version=None, local_image_type=None, scan_status=None, image_size=None, latest_update_time=None, latest_scan_time=None, vul_num=None, unsafe_setting_num=None, malicious_file_num=None, host_num=None, container_num=None, component_num=None, scan_failed_desc=None):
+    def __init__(self, image_name=None, image_id=None, image_digest=None, image_version=None, local_image_type=None, scan_status=None, image_size=None, latest_update_time=None, latest_scan_time=None, vul_num=None, unsafe_setting_num=None, malicious_file_num=None, host_num=None, container_num=None, component_num=None, scan_failed_desc=None, severity_level=None, host_name=None, host_id=None, agent_id=None):
         """ImageLocalInfo
 
         The model defined in huaweicloud sdk
@@ -91,6 +99,14 @@ class ImageLocalInfo:
         :type component_num: int
         :param scan_failed_desc: 扫描失败原因，包含如下10种。   - \&quot;unknown_error\&quot;:未知错误   - \&quot;failed_to_match_agent\&quot;:对应主机未开启容器版防护或agent离线   - \&quot;create_container_failed\&quot;:创建容器失败        - \&quot;get_container_info_failed\&quot;:获取容器信息失败   - \&quot;docker_offline\&quot;:docker引擎不在线   - \&quot;get_docker_root_failed\&quot;:获取容器根文件系统失败   - \&quot;image_not_exist_or_docker_api_fault\&quot;:镜像不存在或docker接口错误   - \&quot;huge_image\&quot;:超大镜像   - \&quot;docker_root_in_nfs\&quot;:容器根目录位于网络挂载   - \&quot;response_timed_out\&quot;:响应超时
         :type scan_failed_desc: str
+        :param severity_level: 镜像风险程度，在镜像扫描完成后展示，包含如下：   - Security：安全   - Low：低危   - Medium：中危   - High：高危
+        :type severity_level: str
+        :param host_name: 服务器名称
+        :type host_name: str
+        :param host_id: 主机ID
+        :type host_id: str
+        :param agent_id: Agent ID
+        :type agent_id: str
         """
         
         
@@ -111,6 +127,10 @@ class ImageLocalInfo:
         self._container_num = None
         self._component_num = None
         self._scan_failed_desc = None
+        self._severity_level = None
+        self._host_name = None
+        self._host_id = None
+        self._agent_id = None
         self.discriminator = None
 
         if image_name is not None:
@@ -145,6 +165,14 @@ class ImageLocalInfo:
             self.component_num = component_num
         if scan_failed_desc is not None:
             self.scan_failed_desc = scan_failed_desc
+        if severity_level is not None:
+            self.severity_level = severity_level
+        if host_name is not None:
+            self.host_name = host_name
+        if host_id is not None:
+            self.host_id = host_id
+        if agent_id is not None:
+            self.agent_id = agent_id
 
     @property
     def image_name(self):
@@ -497,6 +525,94 @@ class ImageLocalInfo:
         :type scan_failed_desc: str
         """
         self._scan_failed_desc = scan_failed_desc
+
+    @property
+    def severity_level(self):
+        """Gets the severity_level of this ImageLocalInfo.
+
+        镜像风险程度，在镜像扫描完成后展示，包含如下：   - Security：安全   - Low：低危   - Medium：中危   - High：高危
+
+        :return: The severity_level of this ImageLocalInfo.
+        :rtype: str
+        """
+        return self._severity_level
+
+    @severity_level.setter
+    def severity_level(self, severity_level):
+        """Sets the severity_level of this ImageLocalInfo.
+
+        镜像风险程度，在镜像扫描完成后展示，包含如下：   - Security：安全   - Low：低危   - Medium：中危   - High：高危
+
+        :param severity_level: The severity_level of this ImageLocalInfo.
+        :type severity_level: str
+        """
+        self._severity_level = severity_level
+
+    @property
+    def host_name(self):
+        """Gets the host_name of this ImageLocalInfo.
+
+        服务器名称
+
+        :return: The host_name of this ImageLocalInfo.
+        :rtype: str
+        """
+        return self._host_name
+
+    @host_name.setter
+    def host_name(self, host_name):
+        """Sets the host_name of this ImageLocalInfo.
+
+        服务器名称
+
+        :param host_name: The host_name of this ImageLocalInfo.
+        :type host_name: str
+        """
+        self._host_name = host_name
+
+    @property
+    def host_id(self):
+        """Gets the host_id of this ImageLocalInfo.
+
+        主机ID
+
+        :return: The host_id of this ImageLocalInfo.
+        :rtype: str
+        """
+        return self._host_id
+
+    @host_id.setter
+    def host_id(self, host_id):
+        """Sets the host_id of this ImageLocalInfo.
+
+        主机ID
+
+        :param host_id: The host_id of this ImageLocalInfo.
+        :type host_id: str
+        """
+        self._host_id = host_id
+
+    @property
+    def agent_id(self):
+        """Gets the agent_id of this ImageLocalInfo.
+
+        Agent ID
+
+        :return: The agent_id of this ImageLocalInfo.
+        :rtype: str
+        """
+        return self._agent_id
+
+    @agent_id.setter
+    def agent_id(self, agent_id):
+        """Sets the agent_id of this ImageLocalInfo.
+
+        Agent ID
+
+        :param agent_id: The agent_id of this ImageLocalInfo.
+        :type agent_id: str
+        """
+        self._agent_id = agent_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

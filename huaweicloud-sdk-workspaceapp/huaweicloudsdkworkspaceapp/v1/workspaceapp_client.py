@@ -32,6 +32,410 @@ class WorkspaceAppClient(Client):
 
         return client_builder
 
+    def authorize_obs(self, request):
+        """获取上传至OBS桶的临时ak/sk
+
+        获取上传至OBS桶的临时ak/sk。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AuthorizeObs
+        :type request: :class:`huaweicloudsdkworkspaceapp.v1.AuthorizeObsRequest`
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AuthorizeObsResponse`
+        """
+        http_info = self._authorize_obs_http_info(request)
+        return self._call_api(**http_info)
+
+    def authorize_obs_invoker(self, request):
+        http_info = self._authorize_obs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _authorize_obs_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/app-warehouse/action/authorize",
+            "request_type": request.__class__.__name__,
+            "response_type": "AuthorizeObsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam-used-authn5']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_warehouse_app(self, request):
+        """批量删除应用仓库中的指定应用
+
+        批量删除应用仓库中的指定应用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteWarehouseApp
+        :type request: :class:`huaweicloudsdkworkspaceapp.v1.BatchDeleteWarehouseAppRequest`
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.BatchDeleteWarehouseAppResponse`
+        """
+        http_info = self._batch_delete_warehouse_app_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_warehouse_app_invoker(self, request):
+        http_info = self._batch_delete_warehouse_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_warehouse_app_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/app-warehouse/actions/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteWarehouseAppResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam-used-authn5']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_warehouse_app(self, request):
+        """在应用仓库中新增应用
+
+        在应用仓库中新增应用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateWarehouseApp
+        :type request: :class:`huaweicloudsdkworkspaceapp.v1.CreateWarehouseAppRequest`
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.CreateWarehouseAppResponse`
+        """
+        http_info = self._create_warehouse_app_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_warehouse_app_invoker(self, request):
+        http_info = self._create_warehouse_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_warehouse_app_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/app-warehouse/apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateWarehouseAppResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam-used-authn5']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_warehouse_apps(self, request):
+        """查询租户应用仓库中的应用列表
+
+        查询租户应用仓库中的应用列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListWarehouseApps
+        :type request: :class:`huaweicloudsdkworkspaceapp.v1.ListWarehouseAppsRequest`
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ListWarehouseAppsResponse`
+        """
+        http_info = self._list_warehouse_apps_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_warehouse_apps_invoker(self, request):
+        http_info = self._list_warehouse_apps_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_warehouse_apps_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/app-warehouse/apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListWarehouseAppsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'verify_status' in local_var_params:
+            query_params.append(('verify_status', local_var_params['verify_status']))
+        if 'app_id' in local_var_params:
+            query_params.append(('app_id', local_var_params['app_id']))
+        if 'app_name' in local_var_params:
+            query_params.append(('app_name', local_var_params['app_name']))
+        if 'app_category' in local_var_params:
+            query_params.append(('app_category', local_var_params['app_category']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam-used-authn5']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_warehouse_app(self, request):
+        """修改应用仓库中的指定应用信息
+
+        修改应用仓库中的指定应用信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateWarehouseApp
+        :type request: :class:`huaweicloudsdkworkspaceapp.v1.UpdateWarehouseAppRequest`
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.UpdateWarehouseAppResponse`
+        """
+        http_info = self._update_warehouse_app_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_warehouse_app_invoker(self, request):
+        http_info = self._update_warehouse_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_warehouse_app_http_info(cls, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v1/{project_id}/app-warehouse/apps/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateWarehouseAppResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam-used-authn5']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def upload_warehouse_app_icon(self, request):
+        """在应用仓库中上传图标文件
+
+        在应用仓库中上传图标文件。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UploadWarehouseAppIcon
+        :type request: :class:`huaweicloudsdkworkspaceapp.v1.UploadWarehouseAppIconRequest`
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.UploadWarehouseAppIconResponse`
+        """
+        http_info = self._upload_warehouse_app_icon_http_info(request)
+        return self._call_api(**http_info)
+
+    def upload_warehouse_app_icon_invoker(self, request):
+        http_info = self._upload_warehouse_app_icon_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _upload_warehouse_app_icon_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/app-warehouse/apps/icon",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadWarehouseAppIconResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+        if 'data' in local_var_params:
+            form_params['data'] = local_var_params['data']
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = ['apig-auth-iam-used-authn5']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_published_app(self, request):
         """查询已发布应用
 
@@ -94,7 +498,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -161,7 +565,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -226,7 +630,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -294,7 +698,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -363,7 +767,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -434,7 +838,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['multipart/form-data'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -499,7 +903,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -565,7 +969,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -642,7 +1046,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -709,7 +1113,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -760,6 +1164,8 @@ class WorkspaceAppClient(Client):
         query_params = []
         if 'product_id' in local_var_params:
             query_params.append(('product_id', local_var_params['product_id']))
+        if 'flavor_id' in local_var_params:
+            query_params.append(('flavor_id', local_var_params['flavor_id']))
         if 'availability_zone' in local_var_params:
             query_params.append(('availability_zone', local_var_params['availability_zone']))
         if 'os_type' in local_var_params:
@@ -784,7 +1190,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -847,7 +1253,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -914,7 +1320,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -981,7 +1387,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -1054,7 +1460,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -1117,7 +1523,549 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def attach_image_server_app(self, request):
+        """分发软件信息至镜像实例
+
+        分发应用软件信息至镜像实例，管理员可以按需下载并安装应用软件。
+        * 目前只支持来自云应用仓库的软件信息。
+        * 只允许对状态为 &#x60;实例正常运行&#x60;、&#x60;镜像任务结束&#x60; 的实例分发软件信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AttachImageServerApp
+        :type request: :class:`huaweicloudsdkworkspaceapp.v1.AttachImageServerAppRequest`
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AttachImageServerAppResponse`
+        """
+        http_info = self._attach_image_server_app_http_info(request)
+        return self._call_api(**http_info)
+
+    def attach_image_server_app_invoker(self, request):
+        http_info = self._attach_image_server_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _attach_image_server_app_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/image-servers/{server_id}/actions/attach-app",
+            "request_type": request.__class__.__name__,
+            "response_type": "AttachImageServerAppResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam-used-authn5']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_image_server(self, request):
+        """批量删除镜像实例
+
+        批量删除镜像实例。
+        * 忽略不存在的镜像实例，响应正常。
+        * 不允许操作状态为 &#x60;创建中&#x60;、&#x60;镜像创建中&#x60;的实例，响应异常。
+        * 不支持资源关联发生变化后，请求删除镜像实例关联资源，任务响应异常。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteImageServer
+        :type request: :class:`huaweicloudsdkworkspaceapp.v1.BatchDeleteImageServerRequest`
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.BatchDeleteImageServerResponse`
+        """
+        http_info = self._batch_delete_image_server_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_image_server_invoker(self, request):
+        http_info = self._batch_delete_image_server_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_image_server_http_info(cls, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v1/{project_id}/image-servers/actions/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteImageServerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam-used-authn5']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_image_server(self, request):
+        """创建镜像实例
+
+        创建镜像实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateImageServer
+        :type request: :class:`huaweicloudsdkworkspaceapp.v1.CreateImageServerRequest`
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.CreateImageServerResponse`
+        """
+        http_info = self._create_image_server_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_image_server_invoker(self, request):
+        http_info = self._create_image_server_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_image_server_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/image-servers",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateImageServerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'service_transaction_id' in local_var_params:
+            header_params['Service-Transaction-Id'] = local_var_params['service_transaction_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam-used-authn5']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_image_servers(self, request):
+        """查询镜像实例列表
+
+        查询镜像实例列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListImageServers
+        :type request: :class:`huaweicloudsdkworkspaceapp.v1.ListImageServersRequest`
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ListImageServersResponse`
+        """
+        http_info = self._list_image_servers_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_image_servers_invoker(self, request):
+        http_info = self._list_image_servers_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_image_servers_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/image-servers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListImageServersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'server_name' in local_var_params:
+            query_params.append(('server_name', local_var_params['server_name']))
+        if 'server_id' in local_var_params:
+            query_params.append(('server_id', local_var_params['server_id']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam-used-authn5']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_latest_attached_server_app(self, request):
+        """查询最近一次分发软件信息列表
+
+        查询最近一次分发软件信息列表，返回ID列表，不包含具体信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListLatestAttachedServerApp
+        :type request: :class:`huaweicloudsdkworkspaceapp.v1.ListLatestAttachedServerAppRequest`
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ListLatestAttachedServerAppResponse`
+        """
+        http_info = self._list_latest_attached_server_app_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_latest_attached_server_app_invoker(self, request):
+        http_info = self._list_latest_attached_server_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_latest_attached_server_app_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/image-servers/{server_id}/actions/latest-attached-app",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLatestAttachedServerAppResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam-used-authn5']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def recreate_server_image(self, request):
+        """构建云应用镜像
+
+        构建云应用镜像。
+        * 只允许对状态为 &#x60;实例正常运行&#x60;、&#x60;镜像任务结束&#x60; 的实例构建云应用镜像。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RecreateServerImage
+        :type request: :class:`huaweicloudsdkworkspaceapp.v1.RecreateServerImageRequest`
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.RecreateServerImageResponse`
+        """
+        http_info = self._recreate_server_image_http_info(request)
+        return self._call_api(**http_info)
+
+    def recreate_server_image_invoker(self, request):
+        http_info = self._recreate_server_image_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _recreate_server_image_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/image-servers/{server_id}/actions/recreate-image",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecreateServerImageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam-used-authn5']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_image_server(self, request):
+        """修改镜像实例
+
+        修改镜像实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateImageServer
+        :type request: :class:`huaweicloudsdkworkspaceapp.v1.UpdateImageServerRequest`
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.UpdateImageServerResponse`
+        """
+        http_info = self._update_image_server_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_image_server_invoker(self, request):
+        http_info = self._update_image_server_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_image_server_http_info(cls, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v1/{project_id}/image-servers/{server_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateImageServerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam-used-authn5']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_image_job(self, request):
+        """查询镜像任务详情
+
+        该接口用于查询异步任务的执行情况，比如查询创建镜像实例任务的执行状态。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowImageJob
+        :type request: :class:`huaweicloudsdkworkspaceapp.v1.ShowImageJobRequest`
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ShowImageJobResponse`
+        """
+        http_info = self._show_image_job_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_image_job_invoker(self, request):
+        http_info = self._show_image_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_image_job_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/image-server-jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowImageJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -1184,7 +2132,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -1251,7 +2199,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -1316,7 +2264,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -1381,7 +2329,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -1448,7 +2396,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -1513,7 +2461,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -1581,7 +2529,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -1648,7 +2596,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -1719,7 +2667,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -1792,7 +2740,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -1869,7 +2817,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -1936,7 +2884,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -2003,7 +2951,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -2070,7 +3018,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -2135,7 +3083,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -2200,7 +3148,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -2265,7 +3213,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -2330,7 +3278,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -2401,7 +3349,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -2470,7 +3418,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -2537,7 +3485,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -2600,7 +3548,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -2667,7 +3615,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -2734,7 +3682,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -2785,6 +3733,8 @@ class WorkspaceAppClient(Client):
         query_params = []
         if 'product_id' in local_var_params:
             query_params.append(('product_id', local_var_params['product_id']))
+        if 'flavor_id' in local_var_params:
+            query_params.append(('flavor_id', local_var_params['flavor_id']))
         if 'subscription_num' in local_var_params:
             query_params.append(('subscription_num', local_var_params['subscription_num']))
         if 'disk_size' in local_var_params:
@@ -2811,7 +3761,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -2877,7 +3827,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -2942,7 +3892,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -3007,7 +3957,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -3072,7 +4022,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -3137,7 +4087,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -3202,7 +4152,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -3267,7 +4217,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -3335,7 +4285,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -3400,7 +4350,84 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_server_metric_data(self, request):
+        """查询指定时间范围指定指标的指定粒度的监控数据
+
+        查询指定时间范围指定指标的指定粒度的监控数据，可以通过参数指定需要查询的数据维度。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListServerMetricData
+        :type request: :class:`huaweicloudsdkworkspaceapp.v1.ListServerMetricDataRequest`
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ListServerMetricDataResponse`
+        """
+        http_info = self._list_server_metric_data_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_server_metric_data_invoker(self, request):
+        http_info = self._list_server_metric_data_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_server_metric_data_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/app-servers/server-metric-data/{server_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListServerMetricDataResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+        if 'namespace' in local_var_params:
+            query_params.append(('namespace', local_var_params['namespace']))
+        if 'metric_name' in local_var_params:
+            query_params.append(('metric_name', local_var_params['metric_name']))
+        if '_from' in local_var_params:
+            query_params.append(('from', local_var_params['_from']))
+        if 'to' in local_var_params:
+            query_params.append(('to', local_var_params['to']))
+        if 'period' in local_var_params:
+            query_params.append(('period', local_var_params['period']))
+        if 'filter' in local_var_params:
+            query_params.append(('filter', local_var_params['filter']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -3477,7 +4504,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -3545,7 +4572,72 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_server_vnc(self, request):
+        """获取VNC远程登录地址
+
+        获取VNC远程登录地址。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowServerVnc
+        :type request: :class:`huaweicloudsdkworkspaceapp.v1.ShowServerVncRequest`
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ShowServerVncResponse`
+        """
+        http_info = self._show_server_vnc_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_server_vnc_invoker(self, request):
+        http_info = self._show_server_vnc_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_server_vnc_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/app-servers/{server_id}/actions/vnc",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowServerVncResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -3613,7 +4705,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -3679,7 +4771,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -3745,7 +4837,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -3804,6 +4896,12 @@ class WorkspaceAppClient(Client):
             query_params.append(('server_group_id', local_var_params['server_group_id']))
         if 'app_type' in local_var_params:
             query_params.append(('app_type', local_var_params['app_type']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'is_secondary_server_group' in local_var_params:
+            query_params.append(('is_secondary_server_group', local_var_params['is_secondary_server_group']))
 
         header_params = {}
 
@@ -3818,7 +4916,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -3886,7 +4984,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -3955,7 +5053,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -4020,7 +5118,90 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_sessions(self, request):
+        """查询用户会话列表
+
+        查询用户会话列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSessions
+        :type request: :class:`huaweicloudsdkworkspaceapp.v1.ListSessionsRequest`
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ListSessionsResponse`
+        """
+        http_info = self._list_sessions_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_sessions_invoker(self, request):
+        http_info = self._list_sessions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_sessions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/session/list-sessions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSessionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'user_name' in local_var_params:
+            query_params.append(('user_name', local_var_params['user_name']))
+        if 'query_begin_time' in local_var_params:
+            query_params.append(('query_begin_time', local_var_params['query_begin_time']))
+        if 'query_end_time' in local_var_params:
+            query_params.append(('query_end_time', local_var_params['query_end_time']))
+        if 'app_server_group_id' in local_var_params:
+            query_params.append(('app_server_group_id', local_var_params['app_server_group_id']))
+        if 'vm_ip' in local_var_params:
+            query_params.append(('vm_ip', local_var_params['vm_ip']))
+        if 'machine_name' in local_var_params:
+            query_params.append(('machine_name', local_var_params['machine_name']))
+        if 'session_state' in local_var_params:
+            query_params.append(('session_state', local_var_params['session_state']))
+        if 'is_success' in local_var_params:
+            query_params.append(('is_success', local_var_params['is_success']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -4089,7 +5270,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -4154,7 +5335,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -4217,7 +5398,7 @@ class WorkspaceAppClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = ['apig-auth-iam-used-authn5']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats

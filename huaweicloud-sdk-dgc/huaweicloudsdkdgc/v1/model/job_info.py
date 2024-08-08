@@ -22,6 +22,9 @@ class JobInfo:
         'schedule': 'Schedule',
         'params': 'list[JobParam]',
         'directory': 'str',
+        'clean_overdue_days': 'int',
+        'clean_waiting_job': 'str',
+        'empty_running_job': 'str',
         'process_type': 'str',
         'single_node_job_flag': 'bool',
         'single_node_job_type': 'str',
@@ -38,6 +41,9 @@ class JobInfo:
         'schedule': 'schedule',
         'params': 'params',
         'directory': 'directory',
+        'clean_overdue_days': 'cleanOverdueDays',
+        'clean_waiting_job': 'cleanWaitingJob',
+        'empty_running_job': 'emptyRunningJob',
         'process_type': 'processType',
         'single_node_job_flag': 'singleNodeJobFlag',
         'single_node_job_type': 'singleNodeJobType',
@@ -48,7 +54,7 @@ class JobInfo:
         'approvers': 'approvers'
     }
 
-    def __init__(self, name=None, nodes=None, schedule=None, params=None, directory=None, process_type=None, single_node_job_flag=None, single_node_job_type=None, last_update_user=None, log_path=None, basic_config=None, target_status=None, approvers=None):
+    def __init__(self, name=None, nodes=None, schedule=None, params=None, directory=None, clean_overdue_days=None, clean_waiting_job=None, empty_running_job=None, process_type=None, single_node_job_flag=None, single_node_job_type=None, last_update_user=None, log_path=None, basic_config=None, target_status=None, approvers=None):
         """JobInfo
 
         The model defined in huaweicloud sdk
@@ -63,6 +69,12 @@ class JobInfo:
         :type params: list[:class:`huaweicloudsdkdgc.v1.JobParam`]
         :param directory: 作业在目录树上的路径。创建作业时如果路径目录不存在，会自动创建目录，如/dir/a/，默认在根目录/。
         :type directory: str
+        :param clean_overdue_days: 设置作业的最大超时时间。
+        :type clean_overdue_days: int
+        :param clean_waiting_job: 清除等待的作业。
+        :type clean_waiting_job: str
+        :param empty_running_job: 取值为0和1，1表示空跑，0表示：取消空跑，不设置该参数时，默认为0。
+        :type empty_running_job: str
         :param process_type: 作业类型，REAL_TIME： 实时处理，BATCH：批处理
         :type process_type: str
         :param single_node_job_flag: 是否选择单任务，默认为false
@@ -88,6 +100,9 @@ class JobInfo:
         self._schedule = None
         self._params = None
         self._directory = None
+        self._clean_overdue_days = None
+        self._clean_waiting_job = None
+        self._empty_running_job = None
         self._process_type = None
         self._single_node_job_flag = None
         self._single_node_job_type = None
@@ -105,6 +120,12 @@ class JobInfo:
             self.params = params
         if directory is not None:
             self.directory = directory
+        if clean_overdue_days is not None:
+            self.clean_overdue_days = clean_overdue_days
+        if clean_waiting_job is not None:
+            self.clean_waiting_job = clean_waiting_job
+        if empty_running_job is not None:
+            self.empty_running_job = empty_running_job
         self.process_type = process_type
         if single_node_job_flag is not None:
             self.single_node_job_flag = single_node_job_flag
@@ -226,6 +247,72 @@ class JobInfo:
         :type directory: str
         """
         self._directory = directory
+
+    @property
+    def clean_overdue_days(self):
+        """Gets the clean_overdue_days of this JobInfo.
+
+        设置作业的最大超时时间。
+
+        :return: The clean_overdue_days of this JobInfo.
+        :rtype: int
+        """
+        return self._clean_overdue_days
+
+    @clean_overdue_days.setter
+    def clean_overdue_days(self, clean_overdue_days):
+        """Sets the clean_overdue_days of this JobInfo.
+
+        设置作业的最大超时时间。
+
+        :param clean_overdue_days: The clean_overdue_days of this JobInfo.
+        :type clean_overdue_days: int
+        """
+        self._clean_overdue_days = clean_overdue_days
+
+    @property
+    def clean_waiting_job(self):
+        """Gets the clean_waiting_job of this JobInfo.
+
+        清除等待的作业。
+
+        :return: The clean_waiting_job of this JobInfo.
+        :rtype: str
+        """
+        return self._clean_waiting_job
+
+    @clean_waiting_job.setter
+    def clean_waiting_job(self, clean_waiting_job):
+        """Sets the clean_waiting_job of this JobInfo.
+
+        清除等待的作业。
+
+        :param clean_waiting_job: The clean_waiting_job of this JobInfo.
+        :type clean_waiting_job: str
+        """
+        self._clean_waiting_job = clean_waiting_job
+
+    @property
+    def empty_running_job(self):
+        """Gets the empty_running_job of this JobInfo.
+
+        取值为0和1，1表示空跑，0表示：取消空跑，不设置该参数时，默认为0。
+
+        :return: The empty_running_job of this JobInfo.
+        :rtype: str
+        """
+        return self._empty_running_job
+
+    @empty_running_job.setter
+    def empty_running_job(self, empty_running_job):
+        """Sets the empty_running_job of this JobInfo.
+
+        取值为0和1，1表示空跑，0表示：取消空跑，不设置该参数时，默认为0。
+
+        :param empty_running_job: The empty_running_job of this JobInfo.
+        :type empty_running_job: str
+        """
+        self._empty_running_job = empty_running_job
 
     @property
     def process_type(self):

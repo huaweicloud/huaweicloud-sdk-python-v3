@@ -25,6 +25,8 @@ class AppServerStatus:
     DELETING = "DELETING"
     FREEZE = "FREEZE"
     BUILD_IMAGE = "BUILD_IMAGE"
+    BUILD_SNAPSHOT = "BUILD_SNAPSHOT"
+    RESTORE_SNAPSHOT = "RESTORE_SNAPSHOT"
     NULL = "null"
     """
     Attributes:

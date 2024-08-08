@@ -23,7 +23,8 @@ class WeakConstraintDto:
         'bool': 'bool',
         'range': 'list[float]',
         'struct': 'StructureConstraintParamsDto',
-        'quantiles': 'list[float]'
+        'quantiles': 'list[float]',
+        'interaction': 'InteractionConstraintDto'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class WeakConstraintDto:
         'bool': 'bool',
         'range': 'range',
         'struct': 'struct',
-        'quantiles': 'quantiles'
+        'quantiles': 'quantiles',
+        'interaction': 'interaction'
     }
 
-    def __init__(self, id=None, name=None, type=None, bool=None, range=None, struct=None, quantiles=None):
+    def __init__(self, id=None, name=None, type=None, bool=None, range=None, struct=None, quantiles=None, interaction=None):
         """WeakConstraintDto
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class WeakConstraintDto:
         :type struct: :class:`huaweicloudsdkeihealth.v1.StructureConstraintParamsDto`
         :param quantiles: 属性约束类型minimize和maximize的参数
         :type quantiles: list[float]
+        :param interaction: 
+        :type interaction: :class:`huaweicloudsdkeihealth.v1.InteractionConstraintDto`
         """
         
         
@@ -66,6 +70,7 @@ class WeakConstraintDto:
         self._range = None
         self._struct = None
         self._quantiles = None
+        self._interaction = None
         self.discriminator = None
 
         if id is not None:
@@ -81,6 +86,8 @@ class WeakConstraintDto:
             self.struct = struct
         if quantiles is not None:
             self.quantiles = quantiles
+        if interaction is not None:
+            self.interaction = interaction
 
     @property
     def id(self):
@@ -227,6 +234,24 @@ class WeakConstraintDto:
         :type quantiles: list[float]
         """
         self._quantiles = quantiles
+
+    @property
+    def interaction(self):
+        """Gets the interaction of this WeakConstraintDto.
+
+        :return: The interaction of this WeakConstraintDto.
+        :rtype: :class:`huaweicloudsdkeihealth.v1.InteractionConstraintDto`
+        """
+        return self._interaction
+
+    @interaction.setter
+    def interaction(self, interaction):
+        """Sets the interaction of this WeakConstraintDto.
+
+        :param interaction: The interaction of this WeakConstraintDto.
+        :type interaction: :class:`huaweicloudsdkeihealth.v1.InteractionConstraintDto`
+        """
+        self._interaction = interaction
 
     def to_dict(self):
         """Returns the model properties as a dict"""

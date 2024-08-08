@@ -21,6 +21,7 @@ class ShowDockingJobResponse(SdkResponse):
         'basic_info': 'DrugJobDto',
         'receptors': 'list[DockingReceptorDto]',
         'ligands': 'list[LigandDto]',
+        'engine': 'str',
         'job_result': 'JobResult',
         'part_failed_reason': 'list[FailedReasonRecord]',
         'cluster_result': 'ClusterJobRsp'
@@ -30,12 +31,13 @@ class ShowDockingJobResponse(SdkResponse):
         'basic_info': 'basic_info',
         'receptors': 'receptors',
         'ligands': 'ligands',
+        'engine': 'engine',
         'job_result': 'job_result',
         'part_failed_reason': 'part_failed_reason',
         'cluster_result': 'cluster_result'
     }
 
-    def __init__(self, basic_info=None, receptors=None, ligands=None, job_result=None, part_failed_reason=None, cluster_result=None):
+    def __init__(self, basic_info=None, receptors=None, ligands=None, engine=None, job_result=None, part_failed_reason=None, cluster_result=None):
         """ShowDockingJobResponse
 
         The model defined in huaweicloud sdk
@@ -46,6 +48,8 @@ class ShowDockingJobResponse(SdkResponse):
         :type receptors: list[:class:`huaweicloudsdkeihealth.v1.DockingReceptorDto`]
         :param ligands: 配体文件列表，当前仅支持1个
         :type ligands: list[:class:`huaweicloudsdkeihealth.v1.LigandDto`]
+        :param engine: 引擎
+        :type engine: str
         :param job_result: 
         :type job_result: :class:`huaweicloudsdkeihealth.v1.JobResult`
         :param part_failed_reason: 部分失败原因和数量
@@ -59,6 +63,7 @@ class ShowDockingJobResponse(SdkResponse):
         self._basic_info = None
         self._receptors = None
         self._ligands = None
+        self._engine = None
         self._job_result = None
         self._part_failed_reason = None
         self._cluster_result = None
@@ -70,6 +75,8 @@ class ShowDockingJobResponse(SdkResponse):
             self.receptors = receptors
         if ligands is not None:
             self.ligands = ligands
+        if engine is not None:
+            self.engine = engine
         if job_result is not None:
             self.job_result = job_result
         if part_failed_reason is not None:
@@ -138,6 +145,28 @@ class ShowDockingJobResponse(SdkResponse):
         :type ligands: list[:class:`huaweicloudsdkeihealth.v1.LigandDto`]
         """
         self._ligands = ligands
+
+    @property
+    def engine(self):
+        """Gets the engine of this ShowDockingJobResponse.
+
+        引擎
+
+        :return: The engine of this ShowDockingJobResponse.
+        :rtype: str
+        """
+        return self._engine
+
+    @engine.setter
+    def engine(self, engine):
+        """Sets the engine of this ShowDockingJobResponse.
+
+        引擎
+
+        :param engine: The engine of this ShowDockingJobResponse.
+        :type engine: str
+        """
+        self._engine = engine
 
     @property
     def job_result(self):

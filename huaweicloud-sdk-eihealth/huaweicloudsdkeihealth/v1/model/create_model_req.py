@@ -21,7 +21,8 @@ class CreateModelReq:
         'description': 'str',
         'type': 'ModelType',
         'file': 'ModelFile',
-        'shareable': 'bool'
+        'shareable': 'bool',
+        'base_model_id': 'str'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class CreateModelReq:
         'description': 'description',
         'type': 'type',
         'file': 'file',
-        'shareable': 'shareable'
+        'shareable': 'shareable',
+        'base_model_id': 'base_model_id'
     }
 
-    def __init__(self, name=None, description=None, type=None, file=None, shareable=None):
+    def __init__(self, name=None, description=None, type=None, file=None, shareable=None, base_model_id=None):
         """CreateModelReq
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class CreateModelReq:
         :type file: :class:`huaweicloudsdkeihealth.v1.ModelFile`
         :param shareable: 是否打开组织共享
         :type shareable: bool
+        :param base_model_id: 基模型id
+        :type base_model_id: str
         """
         
         
@@ -56,6 +60,7 @@ class CreateModelReq:
         self._type = None
         self._file = None
         self._shareable = None
+        self._base_model_id = None
         self.discriminator = None
 
         self.name = name
@@ -65,6 +70,8 @@ class CreateModelReq:
         self.file = file
         if shareable is not None:
             self.shareable = shareable
+        if base_model_id is not None:
+            self.base_model_id = base_model_id
 
     @property
     def name(self):
@@ -167,6 +174,28 @@ class CreateModelReq:
         :type shareable: bool
         """
         self._shareable = shareable
+
+    @property
+    def base_model_id(self):
+        """Gets the base_model_id of this CreateModelReq.
+
+        基模型id
+
+        :return: The base_model_id of this CreateModelReq.
+        :rtype: str
+        """
+        return self._base_model_id
+
+    @base_model_id.setter
+    def base_model_id(self, base_model_id):
+        """Sets the base_model_id of this CreateModelReq.
+
+        基模型id
+
+        :param base_model_id: The base_model_id of this CreateModelReq.
+        :type base_model_id: str
+        """
+        self._base_model_id = base_model_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

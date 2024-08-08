@@ -18,7 +18,7 @@ class UpdateEndpointPolicyRequestBody:
 
     openapi_types = {
         'policy_statement': 'list[PolicyStatement]',
-        'policy_document': 'object'
+        'policy_document': 'str'
     }
 
     attribute_map = {
@@ -31,10 +31,10 @@ class UpdateEndpointPolicyRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param policy_statement: 终端节点策略信息
+        :param policy_statement: Gateway类型终端节点策略信息，仅限OBS、SFS的终端节点服务的enable_policy值为true时支持该参数。
         :type policy_statement: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]
-        :param policy_document: iam 5.0 策略
-        :type policy_document: object
+        :param policy_document: 终端节点策略信息，仅当终端节点服务的enable_policy值为true时支持该参数，默认值为完全访问权限。（OBS、SFS的终端节点服务暂不支持该参数）
+        :type policy_document: str
         """
         
         
@@ -52,7 +52,7 @@ class UpdateEndpointPolicyRequestBody:
     def policy_statement(self):
         """Gets the policy_statement of this UpdateEndpointPolicyRequestBody.
 
-        终端节点策略信息
+        Gateway类型终端节点策略信息，仅限OBS、SFS的终端节点服务的enable_policy值为true时支持该参数。
 
         :return: The policy_statement of this UpdateEndpointPolicyRequestBody.
         :rtype: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]
@@ -63,7 +63,7 @@ class UpdateEndpointPolicyRequestBody:
     def policy_statement(self, policy_statement):
         """Sets the policy_statement of this UpdateEndpointPolicyRequestBody.
 
-        终端节点策略信息
+        Gateway类型终端节点策略信息，仅限OBS、SFS的终端节点服务的enable_policy值为true时支持该参数。
 
         :param policy_statement: The policy_statement of this UpdateEndpointPolicyRequestBody.
         :type policy_statement: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]
@@ -74,10 +74,10 @@ class UpdateEndpointPolicyRequestBody:
     def policy_document(self):
         """Gets the policy_document of this UpdateEndpointPolicyRequestBody.
 
-        iam 5.0 策略
+        终端节点策略信息，仅当终端节点服务的enable_policy值为true时支持该参数，默认值为完全访问权限。（OBS、SFS的终端节点服务暂不支持该参数）
 
         :return: The policy_document of this UpdateEndpointPolicyRequestBody.
-        :rtype: object
+        :rtype: str
         """
         return self._policy_document
 
@@ -85,10 +85,10 @@ class UpdateEndpointPolicyRequestBody:
     def policy_document(self, policy_document):
         """Sets the policy_document of this UpdateEndpointPolicyRequestBody.
 
-        iam 5.0 策略
+        终端节点策略信息，仅当终端节点服务的enable_policy值为true时支持该参数，默认值为完全访问权限。（OBS、SFS的终端节点服务暂不支持该参数）
 
         :param policy_document: The policy_document of this UpdateEndpointPolicyRequestBody.
-        :type policy_document: object
+        :type policy_document: str
         """
         self._policy_document = policy_document
 

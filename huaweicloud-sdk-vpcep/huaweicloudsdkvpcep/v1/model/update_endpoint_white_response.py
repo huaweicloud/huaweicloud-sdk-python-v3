@@ -36,7 +36,8 @@ class UpdateEndpointWhiteResponse(SdkResponse):
         'tags': 'list[TagList]',
         'whitelist': 'list[str]',
         'enable_whitelist': 'bool',
-        'policy_document': 'object'
+        'policy_statement': 'list[PolicyStatement]',
+        'policy_document': 'str'
     }
 
     attribute_map = {
@@ -58,10 +59,11 @@ class UpdateEndpointWhiteResponse(SdkResponse):
         'tags': 'tags',
         'whitelist': 'whitelist',
         'enable_whitelist': 'enable_whitelist',
+        'policy_statement': 'policy_statement',
         'policy_document': 'policy_document'
     }
 
-    def __init__(self, id=None, service_type=None, status=None, ip=None, active_status=None, endpoint_service_name=None, marker_id=None, endpoint_service_id=None, enable_dns=None, dns_names=None, subnet_id=None, vpc_id=None, created_at=None, updated_at=None, project_id=None, tags=None, whitelist=None, enable_whitelist=None, policy_document=None):
+    def __init__(self, id=None, service_type=None, status=None, ip=None, active_status=None, endpoint_service_name=None, marker_id=None, endpoint_service_id=None, enable_dns=None, dns_names=None, subnet_id=None, vpc_id=None, created_at=None, updated_at=None, project_id=None, tags=None, whitelist=None, enable_whitelist=None, policy_statement=None, policy_document=None):
         """UpdateEndpointWhiteResponse
 
         The model defined in huaweicloud sdk
@@ -102,8 +104,10 @@ class UpdateEndpointWhiteResponse(SdkResponse):
         :type whitelist: list[str]
         :param enable_whitelist: 是否开启网络ACL隔离。  - true：开启网络ACL隔离  - false：不开启网络ACL隔离 若未指定，则返回false。 创建连接Interface类型终端节点服务的终端节点时，显示此参数。
         :type enable_whitelist: bool
-        :param policy_document: iam 5.0 策略
-        :type policy_document: object
+        :param policy_statement: Gateway类型终端节点策略信息，仅限OBS、SFS的终端节点服务的enable_policy值为true时支持该参数。
+        :type policy_statement: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]
+        :param policy_document: 终端节点策略信息，仅当终端节点服务的enable_policy值为true时支持该参数，默认值为完全访问权限。（OBS、SFS的终端节点服务暂不支持该参数）
+        :type policy_document: str
         """
         
         super(UpdateEndpointWhiteResponse, self).__init__()
@@ -126,6 +130,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
         self._tags = None
         self._whitelist = None
         self._enable_whitelist = None
+        self._policy_statement = None
         self._policy_document = None
         self.discriminator = None
 
@@ -165,6 +170,8 @@ class UpdateEndpointWhiteResponse(SdkResponse):
             self.whitelist = whitelist
         if enable_whitelist is not None:
             self.enable_whitelist = enable_whitelist
+        if policy_statement is not None:
+            self.policy_statement = policy_statement
         if policy_document is not None:
             self.policy_document = policy_document
 
@@ -565,13 +572,35 @@ class UpdateEndpointWhiteResponse(SdkResponse):
         self._enable_whitelist = enable_whitelist
 
     @property
+    def policy_statement(self):
+        """Gets the policy_statement of this UpdateEndpointWhiteResponse.
+
+        Gateway类型终端节点策略信息，仅限OBS、SFS的终端节点服务的enable_policy值为true时支持该参数。
+
+        :return: The policy_statement of this UpdateEndpointWhiteResponse.
+        :rtype: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]
+        """
+        return self._policy_statement
+
+    @policy_statement.setter
+    def policy_statement(self, policy_statement):
+        """Sets the policy_statement of this UpdateEndpointWhiteResponse.
+
+        Gateway类型终端节点策略信息，仅限OBS、SFS的终端节点服务的enable_policy值为true时支持该参数。
+
+        :param policy_statement: The policy_statement of this UpdateEndpointWhiteResponse.
+        :type policy_statement: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]
+        """
+        self._policy_statement = policy_statement
+
+    @property
     def policy_document(self):
         """Gets the policy_document of this UpdateEndpointWhiteResponse.
 
-        iam 5.0 策略
+        终端节点策略信息，仅当终端节点服务的enable_policy值为true时支持该参数，默认值为完全访问权限。（OBS、SFS的终端节点服务暂不支持该参数）
 
         :return: The policy_document of this UpdateEndpointWhiteResponse.
-        :rtype: object
+        :rtype: str
         """
         return self._policy_document
 
@@ -579,10 +608,10 @@ class UpdateEndpointWhiteResponse(SdkResponse):
     def policy_document(self, policy_document):
         """Sets the policy_document of this UpdateEndpointWhiteResponse.
 
-        iam 5.0 策略
+        终端节点策略信息，仅当终端节点服务的enable_policy值为true时支持该参数，默认值为完全访问权限。（OBS、SFS的终端节点服务暂不支持该参数）
 
         :param policy_document: The policy_document of this UpdateEndpointWhiteResponse.
-        :type policy_document: object
+        :type policy_document: str
         """
         self._policy_document = policy_document
 

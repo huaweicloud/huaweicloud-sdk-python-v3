@@ -32,7 +32,7 @@ class ListServersResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: 总数。
+        :param count: 总数
         :type count: int
         :param items: 服务器列表返回列表条目数量上限为分页的最大上限值。
         :type items: list[:class:`huaweicloudsdkworkspaceapp.v1.AppServer`]
@@ -53,7 +53,7 @@ class ListServersResponse(SdkResponse):
     def count(self):
         """Gets the count of this ListServersResponse.
 
-        总数。
+        总数
 
         :return: The count of this ListServersResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListServersResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this ListServersResponse.
 
-        总数。
+        总数
 
         :param count: The count of this ListServersResponse.
         :type count: int

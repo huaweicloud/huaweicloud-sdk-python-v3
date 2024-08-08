@@ -1,3 +1,373 @@
+# 3.1.109 2024-08-08
+
+### HuaweiCloud SDK Config
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListRemediationExceptions**
+    - 请求参数变更
+      - `- resource_name`
+
+### HuaweiCloud SDK DGC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateJob**
+    - 请求参数变更
+      - `+ cleanOverdueDays`
+      - `+ cleanWaitingJob`
+      - `+ emptyRunningJob`
+  - **UpdateJob**
+    - 请求参数变更
+      - `+ cleanOverdueDays`
+      - `+ cleanWaitingJob`
+      - `+ emptyRunningJob`
+  - **CreateSupplementdata**
+    - 请求参数变更
+      - `+ dependJobs.cleanOverdueDays`
+      - `+ dependJobs.cleanWaitingJob`
+      - `+ dependJobs.emptyRunningJob`
+
+### HuaweiCloud SDK eiHealth
+
+- _新增特性_
+  - 支持以下接口：
+    - `CreateCpiJob`
+    - `ShowCpiJob`
+    - `CreateTargetOptJob`
+    - `ShowTargetOptJob`
+    - `CreateGenJob`
+    - `ShowGenJob`
+    - `RunFastaPreprocess`
+    - `ListBaseModel`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateAdmetJob**
+    - 请求参数变更
+      - `+ base_model_id`
+      - `+ save_fingerprint`
+  - **ShowAdmetJob**
+    - 响应参数变更
+      - `+ base_model`
+      - `+ save_fingerprint`
+  - **CreatePocketMolDesignJob**
+    - 请求参数变更
+      - `+ ligands.name`
+  - **ShowPocketMolDesignJob**
+    - 响应参数变更
+      - `+ ligands.name`
+  - **CreateDrugLigandInteraction2dSvg**
+    - 请求参数变更
+      - `+ name`
+  - **CreateDrugLigandPreviewTask**
+    - 请求参数变更
+      - `+ generate_3d`
+  - **CreateOptmJob**
+    - 请求参数变更
+      - `+ base_model_id`
+      - `+ strong_constraints.interaction`
+      - `+ strong_constraints.type: enum value [interaction]`
+      - `+ weak_constraints.interaction`
+      - `+ weak_constraints.type: enum value [interaction]`
+  - **ShowOptmJob**
+    - 响应参数变更
+      - `+ base_model`
+      - `+ strong_constraints.interaction`
+      - `+ strong_constraints.type: enum value [interaction]`
+      - `+ weak_constraints.interaction`
+      - `+ weak_constraints.type: enum value [interaction]`
+  - **CreateDockingJob**
+    - 请求参数变更
+      - `+ engine`
+  - **ShowDockingJob**
+    - 响应参数变更
+      - `+ engine`
+  - **CreateDrugModel**
+    - 请求参数变更
+      - `+ base_model_id`
+  - **ListDrugModel**
+    - 请求参数变更
+      - `+ base_model_list`
+    - 响应参数变更
+      - `+ models.base_model_id`
+      - `+ models.base_model_name`
+
+### HuaweiCloud SDK HSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListImageLocal**
+    - 响应参数变更
+      - `+ data_list.severity_level`
+      - `+ data_list.host_name`
+      - `+ data_list.host_id`
+      - `+ data_list.agent_id`
+
+### HuaweiCloud SDK OCR
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RecognizeSmartDocumentRecognizer**
+    - 请求参数变更
+      - `+ single_orientation_mode`
+
+### HuaweiCloud SDK VPC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListSubNetworkInterfaces**
+    - 响应参数变更
+      - `+ sub_network_interfaces.allowed_address_pairs`
+      - `+ sub_network_interfaces.state`
+      - `+ sub_network_interfaces.instance_id`
+      - `+ sub_network_interfaces.instance_type`
+      - `+ sub_network_interfaces.scope`
+      - `* sub_network_interfaces.tags: list<string> -> list<ResourceTag>`
+  - **CreateSubNetworkInterface**
+    - 请求参数变更
+      - `+ sub_network_interface.allowed_address_pairs`
+      - `+ sub_network_interface.instance_id`
+      - `+ sub_network_interface.instance_type`
+      - `+ sub_network_interface.tags`
+    - 响应参数变更
+      - `+ sub_network_interface.allowed_address_pairs`
+      - `+ sub_network_interface.state`
+      - `+ sub_network_interface.instance_id`
+      - `+ sub_network_interface.instance_type`
+      - `+ sub_network_interface.scope`
+      - `* sub_network_interface.tags: list<string> -> list<ResourceTag>`
+  - **BatchCreateSubNetworkInterface**
+    - 请求参数变更
+      - `+ sub_network_interface.allowed_address_pairs`
+      - `+ sub_network_interface.instance_id`
+      - `+ sub_network_interface.instance_type`
+      - `+ sub_network_interface.tags`
+    - 响应参数变更
+      - `+ sub_network_interfaces.allowed_address_pairs`
+      - `+ sub_network_interfaces.state`
+      - `+ sub_network_interfaces.instance_id`
+      - `+ sub_network_interfaces.instance_type`
+      - `+ sub_network_interfaces.scope`
+      - `* sub_network_interfaces.tags: list<string> -> list<ResourceTag>`
+  - **ShowSubNetworkInterface**
+    - 响应参数变更
+      - `+ sub_network_interface.allowed_address_pairs`
+      - `+ sub_network_interface.state`
+      - `+ sub_network_interface.instance_id`
+      - `+ sub_network_interface.instance_type`
+      - `+ sub_network_interface.scope`
+      - `* sub_network_interface.tags: list<string> -> list<ResourceTag>`
+  - **UpdateSubNetworkInterface**
+    - 请求参数变更
+      - `+ sub_network_interface.allowed_address_pairs`
+    - 响应参数变更
+      - `+ sub_network_interface.allowed_address_pairs`
+      - `+ sub_network_interface.state`
+      - `+ sub_network_interface.instance_id`
+      - `+ sub_network_interface.instance_type`
+      - `+ sub_network_interface.scope`
+      - `* sub_network_interface.tags: list<string> -> list<ResourceTag>`
+  - **MigrateSubNetworkInterface**
+    - 响应参数变更
+      - `+ sub_network_interfaces.allowed_address_pairs`
+      - `+ sub_network_interfaces.state`
+      - `+ sub_network_interfaces.instance_id`
+      - `+ sub_network_interfaces.instance_type`
+      - `+ sub_network_interfaces.scope`
+      - `* sub_network_interfaces.tags: list<string> -> list<ResourceTag>`
+  - **UpdateTrafficMirrorSession**
+    - 请求参数变更
+      - `- traffic_mirror_session.type`
+
+### HuaweiCloud SDK WAF
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreatePremiumHost**
+    - 请求参数变更
+      - `+ mode`
+      - `+ loadbalancer_id`
+      - `+ listener_id`
+      - `+ protocol_port`
+
+### HuaweiCloud SDK WorkspaceApp
+
+- _新增特性_
+  - 支持以下接口：
+    - `AuthorizeObs`
+    - `UploadWarehouseAppIcon`
+    - `ListWarehouseApps`
+    - `CreateWarehouseApp`
+    - `UpdateWarehouseApp`
+    - `BatchDeleteWarehouseApp`
+    - `ListSessions`
+    - `ShowServerVnc`
+    - `ListServerMetricData`
+    - `ShowImageJob`
+    - `ListImageServers`
+    - `CreateImageServer`
+    - `UpdateImageServer`
+    - `BatchDeleteImageServer`
+    - `AttachImageServerApp`
+    - `ListLatestAttachedServerApp`
+    - `RecreateServerImage`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateServer**
+    - 请求参数变更
+      - `* X-Auth-Token: required -> optional`
+  - **BatchStartServer**
+    - 请求参数变更
+      - `* X-Auth-Token: required -> optional`
+  - **BatchRejoinDomain**
+    - 请求参数变更
+      - `* X-Auth-Token: required -> optional`
+  - **BatchMigrateHostsServer**
+    - 请求参数变更
+      - `* X-Auth-Token: required -> optional`
+  - **BatchUpdateTsvi**
+    - 请求参数变更
+      - `* X-Auth-Token: required -> optional`
+  - **UpdateAppGroup**
+    - 请求参数变更
+      - `* X-Auth-Token: required -> optional`
+  - **UpdateApp**
+    - 请求参数变更
+      - `* X-Auth-Token: required -> optional`
+  - **BatchRebootServer**
+    - 请求参数变更
+      - `* X-Auth-Token: required -> optional`
+  - **BatchStopServer**
+    - 请求参数变更
+      - `* X-Auth-Token: required -> optional`
+  - **UpdateServerGroup**
+    - 请求参数变更
+      - `* X-Auth-Token: required -> optional`
+      - `+ server_group_status`
+  - **ListProduct**
+    - 请求参数变更
+      - `+ flavor_id`
+    - 响应参数变更
+      - `+ products.series_type`
+  - **CreateAppServers**
+    - 请求参数变更
+      - `+ flavor_id`
+  - **CheckQuota**
+    - 请求参数变更
+      - `+ flavor_id`
+  - **ListServers**
+    - 响应参数变更
+      - `+ items.enterprise_project_id`
+      - `+ items.tags`
+      - `+ items.job_type: enum value [CREATE_SERVER_SNAPSHOT,DELETE_SERVER_SNAPSHOT,RESTORE_SERVER_SNAPSHOT]`
+      - `+ items.product_info.series_type`
+      - `+ items.vm_status: enum value [BUILD_SNAPSHOT,RESTORE_SNAPSHOT]`
+      - `+ items.task_status: enum value [build_snapshot,restore_snapshot]`
+  - **CreateServerGroup**
+    - 请求参数变更
+      - `+ flavor_id`
+      - `+ tags`
+      - `+ enterprise_project_id`
+      - `+ primary_server_group_id`
+      - `+ server_group_status`
+    - 响应参数变更
+      - `+ site_type`
+      - `+ secondary_server_group_ids`
+      - `+ primary_server_group_ids`
+      - `+ tags`
+      - `+ server_group_status`
+      - `+ enterprise_project_id`
+      - `+ site_id`
+      - `+ product_info.series_type`
+  - **ListServerGroups**
+    - 请求参数变更
+      - `+ tags`
+      - `+ enterprise_project_id`
+      - `+ is_secondary_server_group`
+    - 响应参数变更
+      - `+ site_type`
+      - `+ secondary_server_group_ids`
+      - `+ primary_server_group_ids`
+      - `+ tags`
+      - `+ server_group_status`
+      - `+ enterprise_project_id`
+      - `+ site_id`
+      - `+ items.enterprise_project_id`
+      - `+ items.primary_server_group_ids`
+      - `+ items.secondary_server_group_ids`
+      - `+ items.server_group_status`
+      - `+ items.site_type`
+      - `+ items.site_id`
+      - `+ items.tags`
+      - `+ items.product_info.series_type`
+  - **ShowJobDetail**
+    - 响应参数变更
+      - `+ job_type: enum value [CREATE_SERVER_SNAPSHOT,DELETE_SERVER_SNAPSHOT,RESTORE_SERVER_SNAPSHOT]`
+  - **ShowOriginalPolicyInfo**
+    - 响应参数变更
+      - `+ policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_cts_enable`
+      - `+ policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_cts`
+      - `+ policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_stc_enable`
+      - `+ policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_stc`
+  - **ListPolicyGroup**
+    - 响应参数变更
+      - `+ items.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_cts_enable`
+      - `+ items.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_cts`
+      - `+ items.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_stc_enable`
+      - `+ items.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_stc`
+  - **CreatePolicyGroup**
+    - 请求参数变更
+      - `+ policy_group.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_cts_enable`
+      - `+ policy_group.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_cts`
+      - `+ policy_group.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_stc_enable`
+      - `+ policy_group.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_stc`
+  - **UpdatePolicyGroup**
+    - 请求参数变更
+      - `* X-Auth-Token: required -> optional`
+      - `+ policy_group.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_cts_enable`
+      - `+ policy_group.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_cts`
+      - `+ policy_group.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_stc_enable`
+      - `+ policy_group.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_stc`
+  - **ListPolicyTemplate**
+    - 响应参数变更
+      - `+ items.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_cts_enable`
+      - `+ items.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_cts`
+      - `+ items.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_stc_enable`
+      - `+ items.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_stc`
+  - **CreatePolicyTemplate**
+    - 请求参数变更
+      - `+ policy_group.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_cts_enable`
+      - `+ policy_group.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_cts`
+      - `+ policy_group.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_stc_enable`
+      - `+ policy_group.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_stc`
+  - **UpdatePolicyTemplate**
+    - 请求参数变更
+      - `* X-Auth-Token: required -> optional`
+      - `+ policy_group.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_cts_enable`
+      - `+ policy_group.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_cts`
+      - `+ policy_group.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_stc_enable`
+      - `+ policy_group.policies.file_and_clipboard.clipboard_redirection_options.clipboard_length_limit_stc`
+
 # 3.1.108 2024-08-01
 
 ### HuaweiCloud SDK BSSINTL

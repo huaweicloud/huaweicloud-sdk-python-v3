@@ -12,6 +12,7 @@ class StrongConstraintType:
     BOOL = "bool"
     RANGE = "range"
     STRUCT = "struct"
+    INTERACTION = "interaction"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

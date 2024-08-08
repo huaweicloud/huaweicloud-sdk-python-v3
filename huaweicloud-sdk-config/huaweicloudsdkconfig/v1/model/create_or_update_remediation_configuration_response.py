@@ -62,7 +62,7 @@ class CreateOrUpdateRemediationConfigurationResponse(SdkResponse):
         :type static_parameter: list[:class:`huaweicloudsdkconfig.v1.RemediationStaticParameter`]
         :param resource_parameter: 
         :type resource_parameter: :class:`huaweicloudsdkconfig.v1.RemediationResourceParameter`
-        :param maximum_attempts: 指定时间内自动修正的最大尝试次数。
+        :param maximum_attempts: 指定时间内修正的最大尝试次数。
         :type maximum_attempts: int
         :param retry_attempt_seconds: 用于防止循环修正的时间窗口，如果在指定时间内进行了自动修正的最大尝试次数，则将资源添加至修正例外。
         :type retry_attempt_seconds: int
@@ -229,7 +229,7 @@ class CreateOrUpdateRemediationConfigurationResponse(SdkResponse):
     def maximum_attempts(self):
         """Gets the maximum_attempts of this CreateOrUpdateRemediationConfigurationResponse.
 
-        指定时间内自动修正的最大尝试次数。
+        指定时间内修正的最大尝试次数。
 
         :return: The maximum_attempts of this CreateOrUpdateRemediationConfigurationResponse.
         :rtype: int
@@ -240,7 +240,7 @@ class CreateOrUpdateRemediationConfigurationResponse(SdkResponse):
     def maximum_attempts(self, maximum_attempts):
         """Sets the maximum_attempts of this CreateOrUpdateRemediationConfigurationResponse.
 
-        指定时间内自动修正的最大尝试次数。
+        指定时间内修正的最大尝试次数。
 
         :param maximum_attempts: The maximum_attempts of this CreateOrUpdateRemediationConfigurationResponse.
         :type maximum_attempts: int

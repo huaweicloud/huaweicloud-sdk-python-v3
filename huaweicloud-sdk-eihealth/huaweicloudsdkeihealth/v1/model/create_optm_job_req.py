@@ -25,6 +25,7 @@ class CreateOptmJobReq:
         'weak_constraints': 'list[WeakConstraintDto]',
         'strong_constraints': 'list[StrongConstraintDto]',
         'sampler_mixin_weight': 'float',
+        'base_model_id': 'str',
         'model_ids': 'list[str]',
         'num_trials': 'int'
     }
@@ -38,11 +39,12 @@ class CreateOptmJobReq:
         'weak_constraints': 'weak_constraints',
         'strong_constraints': 'strong_constraints',
         'sampler_mixin_weight': 'sampler_mixin_weight',
+        'base_model_id': 'base_model_id',
         'model_ids': 'model_ids',
         'num_trials': 'num_trials'
     }
 
-    def __init__(self, basic_info=None, smiles=None, molecule_file=None, binding_site=None, binding_sites=None, weak_constraints=None, strong_constraints=None, sampler_mixin_weight=None, model_ids=None, num_trials=None):
+    def __init__(self, basic_info=None, smiles=None, molecule_file=None, binding_site=None, binding_sites=None, weak_constraints=None, strong_constraints=None, sampler_mixin_weight=None, base_model_id=None, model_ids=None, num_trials=None):
         """CreateOptmJobReq
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class CreateOptmJobReq:
         :type strong_constraints: list[:class:`huaweicloudsdkeihealth.v1.StrongConstraintDto`]
         :param sampler_mixin_weight: 初始化采样权重，参数范围(0.5, 1)，不包含0.5和1，默认为0.6
         :type sampler_mixin_weight: float
+        :param base_model_id: 基模型id
+        :type base_model_id: str
         :param model_ids: 模型id列表
         :type model_ids: list[str]
         :param num_trials: 生成分子数量
@@ -79,6 +83,7 @@ class CreateOptmJobReq:
         self._weak_constraints = None
         self._strong_constraints = None
         self._sampler_mixin_weight = None
+        self._base_model_id = None
         self._model_ids = None
         self._num_trials = None
         self.discriminator = None
@@ -98,6 +103,8 @@ class CreateOptmJobReq:
             self.strong_constraints = strong_constraints
         if sampler_mixin_weight is not None:
             self.sampler_mixin_weight = sampler_mixin_weight
+        if base_model_id is not None:
+            self.base_model_id = base_model_id
         if model_ids is not None:
             self.model_ids = model_ids
         if num_trials is not None:
@@ -266,6 +273,28 @@ class CreateOptmJobReq:
         :type sampler_mixin_weight: float
         """
         self._sampler_mixin_weight = sampler_mixin_weight
+
+    @property
+    def base_model_id(self):
+        """Gets the base_model_id of this CreateOptmJobReq.
+
+        基模型id
+
+        :return: The base_model_id of this CreateOptmJobReq.
+        :rtype: str
+        """
+        return self._base_model_id
+
+    @base_model_id.setter
+    def base_model_id(self, base_model_id):
+        """Sets the base_model_id of this CreateOptmJobReq.
+
+        基模型id
+
+        :param base_model_id: The base_model_id of this CreateOptmJobReq.
+        :type base_model_id: str
+        """
+        self._base_model_id = base_model_id
 
     @property
     def model_ids(self):

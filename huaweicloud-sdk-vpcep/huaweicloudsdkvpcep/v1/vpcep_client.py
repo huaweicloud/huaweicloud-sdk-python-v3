@@ -504,9 +504,9 @@ class VpcepClient(Client):
         return http_info
 
     def delete_endpoint_policy(self, request):
-        """删除网关型终端节点policy
+        """删除网关型终端节点策略（待下线）
 
-        删除网关型终端节点policy。
+        删除网关型终端节点策略，该接口待下线，不建议使用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1479,9 +1479,9 @@ class VpcepClient(Client):
         return http_info
 
     def update_endpoint_policy(self, request):
-        """修改网关型终端节点policy
+        """修改终端节点策略
 
-        修改网关型终端节点policy。
+        修改终端节点策略。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

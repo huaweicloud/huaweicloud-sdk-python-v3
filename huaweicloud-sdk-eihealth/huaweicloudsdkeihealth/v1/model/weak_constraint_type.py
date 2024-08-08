@@ -14,6 +14,7 @@ class WeakConstraintType:
     STRUCT = "struct"
     MINIMIZE = "minimize"
     MAXIMIZE = "maximize"
+    INTERACTION = "interaction"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

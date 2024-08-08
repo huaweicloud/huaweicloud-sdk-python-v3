@@ -24,6 +24,7 @@ class CreateAppServerReq:
         'nics': 'list[Nic]',
         'ou_name': 'str',
         'product_id': 'str',
+        'flavor_id': 'str',
         'os_type': 'str',
         'root_volume': 'Volume',
         'scheduler_hints': 'WdhParam',
@@ -41,6 +42,7 @@ class CreateAppServerReq:
         'nics': 'nics',
         'ou_name': 'ou_name',
         'product_id': 'product_id',
+        'flavor_id': 'flavor_id',
         'os_type': 'os_type',
         'root_volume': 'root_volume',
         'scheduler_hints': 'scheduler_hints',
@@ -50,7 +52,7 @@ class CreateAppServerReq:
         'create_server_extend_param': 'create_server_extend_param'
     }
 
-    def __init__(self, type=None, server_group_id=None, availability_zone=None, subscription_num=None, nics=None, ou_name=None, product_id=None, os_type=None, root_volume=None, scheduler_hints=None, subnet_id=None, vpc_id=None, update_access_agent=None, create_server_extend_param=None):
+    def __init__(self, type=None, server_group_id=None, availability_zone=None, subscription_num=None, nics=None, ou_name=None, product_id=None, flavor_id=None, os_type=None, root_volume=None, scheduler_hints=None, subnet_id=None, vpc_id=None, update_access_agent=None, create_server_extend_param=None):
         """CreateAppServerReq
 
         The model defined in huaweicloud sdk
@@ -69,6 +71,8 @@ class CreateAppServerReq:
         :type ou_name: str
         :param product_id: 产品ID。 &gt; - 获取方式详见产品套餐管理ListProduct：\&quot;GET /v1/{project_id}/product\&quot;。
         :type product_id: str
+        :param flavor_id: 规格ID。
+        :type flavor_id: str
         :param os_type: 操作系统类型，当前仅支持Windows。
         :type os_type: str
         :param root_volume: 
@@ -94,6 +98,7 @@ class CreateAppServerReq:
         self._nics = None
         self._ou_name = None
         self._product_id = None
+        self._flavor_id = None
         self._os_type = None
         self._root_volume = None
         self._scheduler_hints = None
@@ -113,6 +118,8 @@ class CreateAppServerReq:
         if ou_name is not None:
             self.ou_name = ou_name
         self.product_id = product_id
+        if flavor_id is not None:
+            self.flavor_id = flavor_id
         if os_type is not None:
             self.os_type = os_type
         self.root_volume = root_volume
@@ -278,6 +285,28 @@ class CreateAppServerReq:
         :type product_id: str
         """
         self._product_id = product_id
+
+    @property
+    def flavor_id(self):
+        """Gets the flavor_id of this CreateAppServerReq.
+
+        规格ID。
+
+        :return: The flavor_id of this CreateAppServerReq.
+        :rtype: str
+        """
+        return self._flavor_id
+
+    @flavor_id.setter
+    def flavor_id(self, flavor_id):
+        """Sets the flavor_id of this CreateAppServerReq.
+
+        规格ID。
+
+        :param flavor_id: The flavor_id of this CreateAppServerReq.
+        :type flavor_id: str
+        """
+        self._flavor_id = flavor_id
 
     @property
     def os_type(self):

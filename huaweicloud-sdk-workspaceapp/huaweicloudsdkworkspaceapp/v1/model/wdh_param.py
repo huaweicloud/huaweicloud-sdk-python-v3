@@ -31,9 +31,9 @@ class WdhParam:
 
         The model defined in huaweicloud sdk
 
-        :param dedicated_host_id: 云办公主机id。
+        :param dedicated_host_id:  云办公主机id
         :type dedicated_host_id: str
-        :param tenancy: 专属主机类型，目前只支持dedicated。 - dedicated：专属型 - shared： 共享型
+        :param tenancy:  类型
         :type tenancy: str
         """
         
@@ -52,7 +52,7 @@ class WdhParam:
     def dedicated_host_id(self):
         """Gets the dedicated_host_id of this WdhParam.
 
-        云办公主机id。
+         云办公主机id
 
         :return: The dedicated_host_id of this WdhParam.
         :rtype: str
@@ -63,7 +63,7 @@ class WdhParam:
     def dedicated_host_id(self, dedicated_host_id):
         """Sets the dedicated_host_id of this WdhParam.
 
-        云办公主机id。
+         云办公主机id
 
         :param dedicated_host_id: The dedicated_host_id of this WdhParam.
         :type dedicated_host_id: str
@@ -74,7 +74,7 @@ class WdhParam:
     def tenancy(self):
         """Gets the tenancy of this WdhParam.
 
-        专属主机类型，目前只支持dedicated。 - dedicated：专属型 - shared： 共享型
+         类型
 
         :return: The tenancy of this WdhParam.
         :rtype: str
@@ -85,7 +85,7 @@ class WdhParam:
     def tenancy(self, tenancy):
         """Sets the tenancy of this WdhParam.
 
-        专属主机类型，目前只支持dedicated。 - dedicated：专属型 - shared： 共享型
+         类型
 
         :param tenancy: The tenancy of this WdhParam.
         :type tenancy: str

@@ -18,6 +18,7 @@ class ListProductRequest:
 
     openapi_types = {
         'product_id': 'str',
+        'flavor_id': 'str',
         'availability_zone': 'str',
         'os_type': 'str',
         'charge_mode': 'str',
@@ -27,6 +28,7 @@ class ListProductRequest:
 
     attribute_map = {
         'product_id': 'product_id',
+        'flavor_id': 'flavor_id',
         'availability_zone': 'availability_zone',
         'os_type': 'os_type',
         'charge_mode': 'charge_mode',
@@ -34,13 +36,15 @@ class ListProductRequest:
         'package_type': 'package_type'
     }
 
-    def __init__(self, product_id=None, availability_zone=None, os_type=None, charge_mode=None, architecture=None, package_type=None):
+    def __init__(self, product_id=None, flavor_id=None, availability_zone=None, os_type=None, charge_mode=None, architecture=None, package_type=None):
         """ListProductRequest
 
         The model defined in huaweicloud sdk
 
         :param product_id: 如果不为空，将按产品ID进行过滤后返回。
         :type product_id: str
+        :param flavor_id: 如果不为空，将按规格ID进行过滤后返回。
+        :type flavor_id: str
         :param availability_zone: 可用分区，如果不为空，将按可用分区进行过滤后返回。 - 获取方式详见可用区管理ListAvailabilityZone：\&quot;GET  /v1/{project_id}/availability-zone\&quot;。
         :type availability_zone: str
         :param os_type: 产品套餐的操作系统类型，当前支持：Windows。 - Linux - Windows - Other
@@ -56,6 +60,7 @@ class ListProductRequest:
         
 
         self._product_id = None
+        self._flavor_id = None
         self._availability_zone = None
         self._os_type = None
         self._charge_mode = None
@@ -65,6 +70,8 @@ class ListProductRequest:
 
         if product_id is not None:
             self.product_id = product_id
+        if flavor_id is not None:
+            self.flavor_id = flavor_id
         if availability_zone is not None:
             self.availability_zone = availability_zone
         if os_type is not None:
@@ -97,6 +104,28 @@ class ListProductRequest:
         :type product_id: str
         """
         self._product_id = product_id
+
+    @property
+    def flavor_id(self):
+        """Gets the flavor_id of this ListProductRequest.
+
+        如果不为空，将按规格ID进行过滤后返回。
+
+        :return: The flavor_id of this ListProductRequest.
+        :rtype: str
+        """
+        return self._flavor_id
+
+    @flavor_id.setter
+    def flavor_id(self, flavor_id):
+        """Sets the flavor_id of this ListProductRequest.
+
+        如果不为空，将按规格ID进行过滤后返回。
+
+        :param flavor_id: The flavor_id of this ListProductRequest.
+        :type flavor_id: str
+        """
+        self._flavor_id = flavor_id
 
     @property
     def availability_zone(self):

@@ -25,6 +25,7 @@ class CreateServerGroupReq:
         'description': 'str',
         'route_policy': 'RoutePolicy',
         'product_id': 'str',
+        'flavor_id': 'str',
         'vpc_id': 'str',
         'subnet_id': 'str',
         'system_disk_type': 'VolumeType',
@@ -36,7 +37,11 @@ class CreateServerGroupReq:
         'is_vdi': 'bool',
         'app_type': 'AppTypeEnum',
         'extra_session_type': 'ExtraSessionTypeEnum',
-        'extra_session_size': 'int'
+        'extra_session_size': 'int',
+        'tags': 'list[TmsTag]',
+        'enterprise_project_id': 'str',
+        'primary_server_group_id': 'str',
+        'server_group_status': 'bool'
     }
 
     attribute_map = {
@@ -48,6 +53,7 @@ class CreateServerGroupReq:
         'description': 'description',
         'route_policy': 'route_policy',
         'product_id': 'product_id',
+        'flavor_id': 'flavor_id',
         'vpc_id': 'vpc_id',
         'subnet_id': 'subnet_id',
         'system_disk_type': 'system_disk_type',
@@ -59,10 +65,14 @@ class CreateServerGroupReq:
         'is_vdi': 'is_vdi',
         'app_type': 'app_type',
         'extra_session_type': 'extra_session_type',
-        'extra_session_size': 'extra_session_size'
+        'extra_session_size': 'extra_session_size',
+        'tags': 'tags',
+        'enterprise_project_id': 'enterprise_project_id',
+        'primary_server_group_id': 'primary_server_group_id',
+        'server_group_status': 'server_group_status'
     }
 
-    def __init__(self, name=None, image_id=None, image_product_id=None, image_type=None, os_type=None, description=None, route_policy=None, product_id=None, vpc_id=None, subnet_id=None, system_disk_type=None, system_disk_size=None, ou_name=None, cluster_id=None, availability_zone=None, ip_virtual=None, is_vdi=None, app_type=None, extra_session_type=None, extra_session_size=None):
+    def __init__(self, name=None, image_id=None, image_product_id=None, image_type=None, os_type=None, description=None, route_policy=None, product_id=None, flavor_id=None, vpc_id=None, subnet_id=None, system_disk_type=None, system_disk_size=None, ou_name=None, cluster_id=None, availability_zone=None, ip_virtual=None, is_vdi=None, app_type=None, extra_session_type=None, extra_session_size=None, tags=None, enterprise_project_id=None, primary_server_group_id=None, server_group_status=None):
         """CreateServerGroupReq
 
         The model defined in huaweicloud sdk
@@ -83,6 +93,8 @@ class CreateServerGroupReq:
         :type route_policy: :class:`huaweicloudsdkworkspaceapp.v1.RoutePolicy`
         :param product_id: 产品ID。 &gt; - 获取方式详见产品套餐管理ListProduct：\&quot;GET  /v1/{project_id}/product\&quot;。
         :type product_id: str
+        :param flavor_id: 规格ID。
+        :type flavor_id: str
         :param vpc_id: 虚拟私有云ID。
         :type vpc_id: str
         :param subnet_id: 网卡对应的子网ID。
@@ -107,6 +119,14 @@ class CreateServerGroupReq:
         :type extra_session_type: :class:`huaweicloudsdkworkspaceapp.v1.ExtraSessionTypeEnum`
         :param extra_session_size: 付费会话数，单位/个。
         :type extra_session_size: int
+        :param tags: 标签信息，最多包含20个key,不允许重复
+        :type tags: list[:class:`huaweicloudsdkworkspaceapp.v1.TmsTag`]
+        :param enterprise_project_id: 企业项目ID,仅企业项目需配置(字段为空或者0表示使用默认default企业项目)
+        :type enterprise_project_id: str
+        :param primary_server_group_id: 主服务器组id,绑定主服务器组，则创建的是备服务器。
+        :type primary_server_group_id: str
+        :param server_group_status: 是否启用服务器组。
+        :type server_group_status: bool
         """
         
         
@@ -119,6 +139,7 @@ class CreateServerGroupReq:
         self._description = None
         self._route_policy = None
         self._product_id = None
+        self._flavor_id = None
         self._vpc_id = None
         self._subnet_id = None
         self._system_disk_type = None
@@ -131,6 +152,10 @@ class CreateServerGroupReq:
         self._app_type = None
         self._extra_session_type = None
         self._extra_session_size = None
+        self._tags = None
+        self._enterprise_project_id = None
+        self._primary_server_group_id = None
+        self._server_group_status = None
         self.discriminator = None
 
         self.name = name
@@ -144,6 +169,8 @@ class CreateServerGroupReq:
         if route_policy is not None:
             self.route_policy = route_policy
         self.product_id = product_id
+        if flavor_id is not None:
+            self.flavor_id = flavor_id
         self.vpc_id = vpc_id
         self.subnet_id = subnet_id
         self.system_disk_type = system_disk_type
@@ -164,6 +191,14 @@ class CreateServerGroupReq:
             self.extra_session_type = extra_session_type
         if extra_session_size is not None:
             self.extra_session_size = extra_session_size
+        if tags is not None:
+            self.tags = tags
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
+        if primary_server_group_id is not None:
+            self.primary_server_group_id = primary_server_group_id
+        if server_group_status is not None:
+            self.server_group_status = server_group_status
 
     @property
     def name(self):
@@ -328,6 +363,28 @@ class CreateServerGroupReq:
         :type product_id: str
         """
         self._product_id = product_id
+
+    @property
+    def flavor_id(self):
+        """Gets the flavor_id of this CreateServerGroupReq.
+
+        规格ID。
+
+        :return: The flavor_id of this CreateServerGroupReq.
+        :rtype: str
+        """
+        return self._flavor_id
+
+    @flavor_id.setter
+    def flavor_id(self, flavor_id):
+        """Sets the flavor_id of this CreateServerGroupReq.
+
+        规格ID。
+
+        :param flavor_id: The flavor_id of this CreateServerGroupReq.
+        :type flavor_id: str
+        """
+        self._flavor_id = flavor_id
 
     @property
     def vpc_id(self):
@@ -576,6 +633,94 @@ class CreateServerGroupReq:
         :type extra_session_size: int
         """
         self._extra_session_size = extra_session_size
+
+    @property
+    def tags(self):
+        """Gets the tags of this CreateServerGroupReq.
+
+        标签信息，最多包含20个key,不允许重复
+
+        :return: The tags of this CreateServerGroupReq.
+        :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.TmsTag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this CreateServerGroupReq.
+
+        标签信息，最多包含20个key,不允许重复
+
+        :param tags: The tags of this CreateServerGroupReq.
+        :type tags: list[:class:`huaweicloudsdkworkspaceapp.v1.TmsTag`]
+        """
+        self._tags = tags
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this CreateServerGroupReq.
+
+        企业项目ID,仅企业项目需配置(字段为空或者0表示使用默认default企业项目)
+
+        :return: The enterprise_project_id of this CreateServerGroupReq.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this CreateServerGroupReq.
+
+        企业项目ID,仅企业项目需配置(字段为空或者0表示使用默认default企业项目)
+
+        :param enterprise_project_id: The enterprise_project_id of this CreateServerGroupReq.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def primary_server_group_id(self):
+        """Gets the primary_server_group_id of this CreateServerGroupReq.
+
+        主服务器组id,绑定主服务器组，则创建的是备服务器。
+
+        :return: The primary_server_group_id of this CreateServerGroupReq.
+        :rtype: str
+        """
+        return self._primary_server_group_id
+
+    @primary_server_group_id.setter
+    def primary_server_group_id(self, primary_server_group_id):
+        """Sets the primary_server_group_id of this CreateServerGroupReq.
+
+        主服务器组id,绑定主服务器组，则创建的是备服务器。
+
+        :param primary_server_group_id: The primary_server_group_id of this CreateServerGroupReq.
+        :type primary_server_group_id: str
+        """
+        self._primary_server_group_id = primary_server_group_id
+
+    @property
+    def server_group_status(self):
+        """Gets the server_group_status of this CreateServerGroupReq.
+
+        是否启用服务器组。
+
+        :return: The server_group_status of this CreateServerGroupReq.
+        :rtype: bool
+        """
+        return self._server_group_status
+
+    @server_group_status.setter
+    def server_group_status(self, server_group_status):
+        """Sets the server_group_status of this CreateServerGroupReq.
+
+        是否启用服务器组。
+
+        :param server_group_status: The server_group_status of this CreateServerGroupReq.
+        :type server_group_status: bool
+        """
+        self._server_group_status = server_group_status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

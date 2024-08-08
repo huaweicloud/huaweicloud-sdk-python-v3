@@ -42,6 +42,8 @@ class AppServerTaskStatus:
     UPGRAD_ACCESS_AGENT_SUCCESS = "upgrad_access_agent_success"
     MIGRATE_FAILED = "migrate_failed"
     BUILD_IMAGE = "build_image"
+    BUILD_SNAPSHOT = "build_snapshot"
+    RESTORE_SNAPSHOT = "restore_snapshot"
     NULL = "null"
     """
     Attributes:

@@ -21,7 +21,10 @@ class ListServerGroupsRequest:
         'limit': 'int',
         'server_group_name': 'str',
         'server_group_id': 'str',
-        'app_type': 'str'
+        'app_type': 'str',
+        'tags': 'str',
+        'enterprise_project_id': 'str',
+        'is_secondary_server_group': 'str'
     }
 
     attribute_map = {
@@ -29,10 +32,13 @@ class ListServerGroupsRequest:
         'limit': 'limit',
         'server_group_name': 'server_group_name',
         'server_group_id': 'server_group_id',
-        'app_type': 'app_type'
+        'app_type': 'app_type',
+        'tags': 'tags',
+        'enterprise_project_id': 'enterprise_project_id',
+        'is_secondary_server_group': 'is_secondary_server_group'
     }
 
-    def __init__(self, offset=None, limit=None, server_group_name=None, server_group_id=None, app_type=None):
+    def __init__(self, offset=None, limit=None, server_group_name=None, server_group_id=None, app_type=None, tags=None, enterprise_project_id=None, is_secondary_server_group=None):
         """ListServerGroupsRequest
 
         The model defined in huaweicloud sdk
@@ -47,6 +53,12 @@ class ListServerGroupsRequest:
         :type server_group_id: str
         :param app_type: 应用组类型： * &#x60;SESSION_DESKTOP_APP&#x60; - 会话桌面app * &#x60;COMMON_APP&#x60; - 普通app
         :type app_type: str
+        :param tags: 查询tag字段中包含该值的服务器组。
+        :type tags: str
+        :param enterprise_project_id: 企业项目ID(字段为空或者0表示使用默认default企业项目)
+        :type enterprise_project_id: str
+        :param is_secondary_server_group: 是否为备服务器组，不传默认查所有： true : 是备服务器组。 false: 主服务器组，默认。
+        :type is_secondary_server_group: str
         """
         
         
@@ -56,6 +68,9 @@ class ListServerGroupsRequest:
         self._server_group_name = None
         self._server_group_id = None
         self._app_type = None
+        self._tags = None
+        self._enterprise_project_id = None
+        self._is_secondary_server_group = None
         self.discriminator = None
 
         if offset is not None:
@@ -68,6 +83,12 @@ class ListServerGroupsRequest:
             self.server_group_id = server_group_id
         if app_type is not None:
             self.app_type = app_type
+        if tags is not None:
+            self.tags = tags
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
+        if is_secondary_server_group is not None:
+            self.is_secondary_server_group = is_secondary_server_group
 
     @property
     def offset(self):
@@ -178,6 +199,72 @@ class ListServerGroupsRequest:
         :type app_type: str
         """
         self._app_type = app_type
+
+    @property
+    def tags(self):
+        """Gets the tags of this ListServerGroupsRequest.
+
+        查询tag字段中包含该值的服务器组。
+
+        :return: The tags of this ListServerGroupsRequest.
+        :rtype: str
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this ListServerGroupsRequest.
+
+        查询tag字段中包含该值的服务器组。
+
+        :param tags: The tags of this ListServerGroupsRequest.
+        :type tags: str
+        """
+        self._tags = tags
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListServerGroupsRequest.
+
+        企业项目ID(字段为空或者0表示使用默认default企业项目)
+
+        :return: The enterprise_project_id of this ListServerGroupsRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListServerGroupsRequest.
+
+        企业项目ID(字段为空或者0表示使用默认default企业项目)
+
+        :param enterprise_project_id: The enterprise_project_id of this ListServerGroupsRequest.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def is_secondary_server_group(self):
+        """Gets the is_secondary_server_group of this ListServerGroupsRequest.
+
+        是否为备服务器组，不传默认查所有： true : 是备服务器组。 false: 主服务器组，默认。
+
+        :return: The is_secondary_server_group of this ListServerGroupsRequest.
+        :rtype: str
+        """
+        return self._is_secondary_server_group
+
+    @is_secondary_server_group.setter
+    def is_secondary_server_group(self, is_secondary_server_group):
+        """Sets the is_secondary_server_group of this ListServerGroupsRequest.
+
+        是否为备服务器组，不传默认查所有： true : 是备服务器组。 false: 主服务器组，默认。
+
+        :param is_secondary_server_group: The is_secondary_server_group of this ListServerGroupsRequest.
+        :type is_secondary_server_group: str
+        """
+        self._is_secondary_server_group = is_secondary_server_group
 
     def to_dict(self):
         """Returns the model properties as a dict"""

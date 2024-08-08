@@ -19,6 +19,7 @@ class SmartDocumentRecognizerRequestBody:
     openapi_types = {
         'data': 'str',
         'url': 'str',
+        'single_orientation_mode': 'bool',
         'kv': 'bool',
         'table': 'bool',
         'layout': 'bool',
@@ -32,6 +33,7 @@ class SmartDocumentRecognizerRequestBody:
     attribute_map = {
         'data': 'data',
         'url': 'url',
+        'single_orientation_mode': 'single_orientation_mode',
         'kv': 'kv',
         'table': 'table',
         'layout': 'layout',
@@ -42,7 +44,7 @@ class SmartDocumentRecognizerRequestBody:
         'pdf_page_number': 'pdf_page_number'
     }
 
-    def __init__(self, data=None, url=None, kv=None, table=None, layout=None, return_excel=None, form=None, formula=None, kv_map=None, pdf_page_number=None):
+    def __init__(self, data=None, url=None, single_orientation_mode=None, kv=None, table=None, layout=None, return_excel=None, form=None, formula=None, kv_map=None, pdf_page_number=None):
         """SmartDocumentRecognizerRequestBody
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class SmartDocumentRecognizerRequestBody:
         :type data: str
         :param url: 与data二选一。 图片或PDF的URL路径，目前支持： - 公网http/https url - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/api-ocr/ocr_03_0132.html)。 &gt; 说明： - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 - url中不能存在中文字符，若存在，中文需要进行utf8编码。 
         :type url: str
+        :param single_orientation_mode: 单朝向模式开关。可选值包括： - true：打开单朝向模式 - false：关闭单朝向模式  未传入该参数时默认为false，既默认图片中的字段为多朝向 
+        :type single_orientation_mode: bool
         :param kv: 是否进行键值对（key-value）提取。若是，结果会以“kv_result”这一关键字返回。 
         :type kv: bool
         :param table: 是否进行表格识别。此处表格特指逻辑表格，通常具有M行N列的形式，且第一行或第一列为表头。若是，结果会以“table_result”这一关键字返回。 
@@ -73,6 +77,7 @@ class SmartDocumentRecognizerRequestBody:
 
         self._data = None
         self._url = None
+        self._single_orientation_mode = None
         self._kv = None
         self._table = None
         self._layout = None
@@ -87,6 +92,8 @@ class SmartDocumentRecognizerRequestBody:
             self.data = data
         if url is not None:
             self.url = url
+        if single_orientation_mode is not None:
+            self.single_orientation_mode = single_orientation_mode
         if kv is not None:
             self.kv = kv
         if table is not None:
@@ -147,6 +154,28 @@ class SmartDocumentRecognizerRequestBody:
         :type url: str
         """
         self._url = url
+
+    @property
+    def single_orientation_mode(self):
+        """Gets the single_orientation_mode of this SmartDocumentRecognizerRequestBody.
+
+        单朝向模式开关。可选值包括： - true：打开单朝向模式 - false：关闭单朝向模式  未传入该参数时默认为false，既默认图片中的字段为多朝向 
+
+        :return: The single_orientation_mode of this SmartDocumentRecognizerRequestBody.
+        :rtype: bool
+        """
+        return self._single_orientation_mode
+
+    @single_orientation_mode.setter
+    def single_orientation_mode(self, single_orientation_mode):
+        """Sets the single_orientation_mode of this SmartDocumentRecognizerRequestBody.
+
+        单朝向模式开关。可选值包括： - true：打开单朝向模式 - false：关闭单朝向模式  未传入该参数时默认为false，既默认图片中的字段为多朝向 
+
+        :param single_orientation_mode: The single_orientation_mode of this SmartDocumentRecognizerRequestBody.
+        :type single_orientation_mode: bool
+        """
+        self._single_orientation_mode = single_orientation_mode
 
     @property
     def kv(self):

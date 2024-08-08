@@ -19,16 +19,20 @@ class CreateAdmetJobReq:
     openapi_types = {
         'basic_info': 'CreateDrugJobBasicInfo',
         'molecule_file': 'MoleculeFileDto',
-        'model_ids': 'list[str]'
+        'base_model_id': 'str',
+        'model_ids': 'list[str]',
+        'save_fingerprint': 'bool'
     }
 
     attribute_map = {
         'basic_info': 'basic_info',
         'molecule_file': 'molecule_file',
-        'model_ids': 'model_ids'
+        'base_model_id': 'base_model_id',
+        'model_ids': 'model_ids',
+        'save_fingerprint': 'save_fingerprint'
     }
 
-    def __init__(self, basic_info=None, molecule_file=None, model_ids=None):
+    def __init__(self, basic_info=None, molecule_file=None, base_model_id=None, model_ids=None, save_fingerprint=None):
         """CreateAdmetJobReq
 
         The model defined in huaweicloud sdk
@@ -37,21 +41,31 @@ class CreateAdmetJobReq:
         :type basic_info: :class:`huaweicloudsdkeihealth.v1.CreateDrugJobBasicInfo`
         :param molecule_file: 
         :type molecule_file: :class:`huaweicloudsdkeihealth.v1.MoleculeFileDto`
+        :param base_model_id: 基模型id
+        :type base_model_id: str
         :param model_ids: 模型id列表
         :type model_ids: list[str]
+        :param save_fingerprint: 是否输出表征，仅专业版平台支持
+        :type save_fingerprint: bool
         """
         
         
 
         self._basic_info = None
         self._molecule_file = None
+        self._base_model_id = None
         self._model_ids = None
+        self._save_fingerprint = None
         self.discriminator = None
 
         self.basic_info = basic_info
         self.molecule_file = molecule_file
+        if base_model_id is not None:
+            self.base_model_id = base_model_id
         if model_ids is not None:
             self.model_ids = model_ids
+        if save_fingerprint is not None:
+            self.save_fingerprint = save_fingerprint
 
     @property
     def basic_info(self):
@@ -90,6 +104,28 @@ class CreateAdmetJobReq:
         self._molecule_file = molecule_file
 
     @property
+    def base_model_id(self):
+        """Gets the base_model_id of this CreateAdmetJobReq.
+
+        基模型id
+
+        :return: The base_model_id of this CreateAdmetJobReq.
+        :rtype: str
+        """
+        return self._base_model_id
+
+    @base_model_id.setter
+    def base_model_id(self, base_model_id):
+        """Sets the base_model_id of this CreateAdmetJobReq.
+
+        基模型id
+
+        :param base_model_id: The base_model_id of this CreateAdmetJobReq.
+        :type base_model_id: str
+        """
+        self._base_model_id = base_model_id
+
+    @property
     def model_ids(self):
         """Gets the model_ids of this CreateAdmetJobReq.
 
@@ -110,6 +146,28 @@ class CreateAdmetJobReq:
         :type model_ids: list[str]
         """
         self._model_ids = model_ids
+
+    @property
+    def save_fingerprint(self):
+        """Gets the save_fingerprint of this CreateAdmetJobReq.
+
+        是否输出表征，仅专业版平台支持
+
+        :return: The save_fingerprint of this CreateAdmetJobReq.
+        :rtype: bool
+        """
+        return self._save_fingerprint
+
+    @save_fingerprint.setter
+    def save_fingerprint(self, save_fingerprint):
+        """Sets the save_fingerprint of this CreateAdmetJobReq.
+
+        是否输出表征，仅专业版平台支持
+
+        :param save_fingerprint: The save_fingerprint of this CreateAdmetJobReq.
+        :type save_fingerprint: bool
+        """
+        self._save_fingerprint = save_fingerprint
 
     def to_dict(self):
         """Returns the model properties as a dict"""

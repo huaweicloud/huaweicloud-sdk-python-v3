@@ -32,7 +32,7 @@ class ListAppGroupAuthorizationResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: 总数。
+        :param count: 总数
         :type count: int
         :param authorizations: 授权信息。
         :type authorizations: list[:class:`huaweicloudsdkworkspaceapp.v1.Authorization`]
@@ -53,7 +53,7 @@ class ListAppGroupAuthorizationResponse(SdkResponse):
     def count(self):
         """Gets the count of this ListAppGroupAuthorizationResponse.
 
-        总数。
+        总数
 
         :return: The count of this ListAppGroupAuthorizationResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListAppGroupAuthorizationResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this ListAppGroupAuthorizationResponse.
 
-        总数。
+        总数
 
         :param count: The count of this ListAppGroupAuthorizationResponse.
         :type count: int

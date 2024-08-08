@@ -20,19 +20,17 @@ class ListRemediationExceptionsRequest:
         'policy_assignment_id': 'str',
         'limit': 'int',
         'marker': 'str',
-        'resource_id': 'str',
-        'resource_name': 'str'
+        'resource_id': 'str'
     }
 
     attribute_map = {
         'policy_assignment_id': 'policy_assignment_id',
         'limit': 'limit',
         'marker': 'marker',
-        'resource_id': 'resource_id',
-        'resource_name': 'resource_name'
+        'resource_id': 'resource_id'
     }
 
-    def __init__(self, policy_assignment_id=None, limit=None, marker=None, resource_id=None, resource_name=None):
+    def __init__(self, policy_assignment_id=None, limit=None, marker=None, resource_id=None):
         """ListRemediationExceptionsRequest
 
         The model defined in huaweicloud sdk
@@ -45,8 +43,6 @@ class ListRemediationExceptionsRequest:
         :type marker: str
         :param resource_id: 资源ID
         :type resource_id: str
-        :param resource_name: 资源名称
-        :type resource_name: str
         """
         
         
@@ -55,7 +51,6 @@ class ListRemediationExceptionsRequest:
         self._limit = None
         self._marker = None
         self._resource_id = None
-        self._resource_name = None
         self.discriminator = None
 
         self.policy_assignment_id = policy_assignment_id
@@ -65,8 +60,6 @@ class ListRemediationExceptionsRequest:
             self.marker = marker
         if resource_id is not None:
             self.resource_id = resource_id
-        if resource_name is not None:
-            self.resource_name = resource_name
 
     @property
     def policy_assignment_id(self):
@@ -155,28 +148,6 @@ class ListRemediationExceptionsRequest:
         :type resource_id: str
         """
         self._resource_id = resource_id
-
-    @property
-    def resource_name(self):
-        """Gets the resource_name of this ListRemediationExceptionsRequest.
-
-        资源名称
-
-        :return: The resource_name of this ListRemediationExceptionsRequest.
-        :rtype: str
-        """
-        return self._resource_name
-
-    @resource_name.setter
-    def resource_name(self, resource_name):
-        """Sets the resource_name of this ListRemediationExceptionsRequest.
-
-        资源名称
-
-        :param resource_name: The resource_name of this ListRemediationExceptionsRequest.
-        :type resource_name: str
-        """
-        self._resource_name = resource_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

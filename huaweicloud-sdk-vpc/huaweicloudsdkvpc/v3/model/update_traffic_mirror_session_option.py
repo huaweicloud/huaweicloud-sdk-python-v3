@@ -25,8 +25,7 @@ class UpdateTrafficMirrorSessionOption:
         'virtual_network_id': 'int',
         'packet_length': 'int',
         'priority': 'int',
-        'enabled': 'str',
-        'type': 'str'
+        'enabled': 'str'
     }
 
     attribute_map = {
@@ -38,11 +37,10 @@ class UpdateTrafficMirrorSessionOption:
         'virtual_network_id': 'virtual_network_id',
         'packet_length': 'packet_length',
         'priority': 'priority',
-        'enabled': 'enabled',
-        'type': 'type'
+        'enabled': 'enabled'
     }
 
-    def __init__(self, name=None, description=None, traffic_mirror_filter_id=None, traffic_mirror_target_id=None, traffic_mirror_target_type=None, virtual_network_id=None, packet_length=None, priority=None, enabled=None, type=None):
+    def __init__(self, name=None, description=None, traffic_mirror_filter_id=None, traffic_mirror_target_id=None, traffic_mirror_target_type=None, virtual_network_id=None, packet_length=None, priority=None, enabled=None):
         """UpdateTrafficMirrorSessionOption
 
         The model defined in huaweicloud sdk
@@ -65,8 +63,6 @@ class UpdateTrafficMirrorSessionOption:
         :type priority: int
         :param enabled: 功能说明：是否开启会话 取值范围：true、false
         :type enabled: str
-        :param type: 功能说明：支持的镜像源类型 取值范围：     eni：弹性网卡
-        :type type: str
         """
         
         
@@ -80,7 +76,6 @@ class UpdateTrafficMirrorSessionOption:
         self._packet_length = None
         self._priority = None
         self._enabled = None
-        self._type = None
         self.discriminator = None
 
         if name is not None:
@@ -101,8 +96,6 @@ class UpdateTrafficMirrorSessionOption:
             self.priority = priority
         if enabled is not None:
             self.enabled = enabled
-        if type is not None:
-            self.type = type
 
     @property
     def name(self):
@@ -301,28 +294,6 @@ class UpdateTrafficMirrorSessionOption:
         :type enabled: str
         """
         self._enabled = enabled
-
-    @property
-    def type(self):
-        """Gets the type of this UpdateTrafficMirrorSessionOption.
-
-        功能说明：支持的镜像源类型 取值范围：     eni：弹性网卡
-
-        :return: The type of this UpdateTrafficMirrorSessionOption.
-        :rtype: str
-        """
-        return self._type
-
-    @type.setter
-    def type(self, type):
-        """Sets the type of this UpdateTrafficMirrorSessionOption.
-
-        功能说明：支持的镜像源类型 取值范围：     eni：弹性网卡
-
-        :param type: The type of this UpdateTrafficMirrorSessionOption.
-        :type type: str
-        """
-        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

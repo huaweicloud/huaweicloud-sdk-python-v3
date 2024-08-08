@@ -20,6 +20,7 @@ class PocketFragment:
         'source': 'DrugFileSource',
         'url': 'str',
         'format': 'str',
+        'name': 'str',
         'data': 'str',
         'edited': 'EditedLigand',
         'label_sites': 'LabelSite'
@@ -29,12 +30,13 @@ class PocketFragment:
         'source': 'source',
         'url': 'url',
         'format': 'format',
+        'name': 'name',
         'data': 'data',
         'edited': 'edited',
         'label_sites': 'label_sites'
     }
 
-    def __init__(self, source=None, url=None, format=None, data=None, edited=None, label_sites=None):
+    def __init__(self, source=None, url=None, format=None, name=None, data=None, edited=None, label_sites=None):
         """PocketFragment
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class PocketFragment:
         :type url: str
         :param format: 文件格式，支持PDB、SDF、MOL2、SMI，仅数据源为RAW时提供
         :type format: str
+        :param name: 原始配体名称，仅RAW类型时用于配体名称标识
+        :type name: str
         :param data: 文件原始数据，仅数据源为RAW时提供
         :type data: str
         :param edited: 
@@ -58,6 +62,7 @@ class PocketFragment:
         self._source = None
         self._url = None
         self._format = None
+        self._name = None
         self._data = None
         self._edited = None
         self._label_sites = None
@@ -69,6 +74,8 @@ class PocketFragment:
             self.url = url
         if format is not None:
             self.format = format
+        if name is not None:
+            self.name = name
         if data is not None:
             self.data = data
         if edited is not None:
@@ -137,6 +144,28 @@ class PocketFragment:
         :type format: str
         """
         self._format = format
+
+    @property
+    def name(self):
+        """Gets the name of this PocketFragment.
+
+        原始配体名称，仅RAW类型时用于配体名称标识
+
+        :return: The name of this PocketFragment.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this PocketFragment.
+
+        原始配体名称，仅RAW类型时用于配体名称标识
+
+        :param name: The name of this PocketFragment.
+        :type name: str
+        """
+        self._name = name
 
     @property
     def data(self):

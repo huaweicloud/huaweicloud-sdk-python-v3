@@ -27,7 +27,8 @@ class UpdateServerGroupReq:
         'system_disk_type': 'VolumeType',
         'system_disk_size': 'int',
         'ou_name': 'str',
-        'app_type': 'AppTypeEnum'
+        'app_type': 'AppTypeEnum',
+        'server_group_status': 'bool'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class UpdateServerGroupReq:
         'system_disk_type': 'system_disk_type',
         'system_disk_size': 'system_disk_size',
         'ou_name': 'ou_name',
-        'app_type': 'app_type'
+        'app_type': 'app_type',
+        'server_group_status': 'server_group_status'
     }
 
-    def __init__(self, name=None, description=None, route_policy=None, storage_mount_policy=None, image_id=None, image_product_id=None, image_type=None, system_disk_type=None, system_disk_size=None, ou_name=None, app_type=None):
+    def __init__(self, name=None, description=None, route_policy=None, storage_mount_policy=None, image_id=None, image_product_id=None, image_type=None, system_disk_type=None, system_disk_size=None, ou_name=None, app_type=None, server_group_status=None):
         """UpdateServerGroupReq
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class UpdateServerGroupReq:
         :type ou_name: str
         :param app_type: 
         :type app_type: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
+        :param server_group_status: 服务器是否处于禁用状态： * &#x60;true&#x60; - 启用状态 * &#x60;false&#x60; - 禁用状态
+        :type server_group_status: bool
         """
         
         
@@ -86,6 +90,7 @@ class UpdateServerGroupReq:
         self._system_disk_size = None
         self._ou_name = None
         self._app_type = None
+        self._server_group_status = None
         self.discriminator = None
 
         if name is not None:
@@ -110,6 +115,8 @@ class UpdateServerGroupReq:
             self.ou_name = ou_name
         if app_type is not None:
             self.app_type = app_type
+        if server_group_status is not None:
+            self.server_group_status = server_group_status
 
     @property
     def name(self):
@@ -332,6 +339,28 @@ class UpdateServerGroupReq:
         :type app_type: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
         """
         self._app_type = app_type
+
+    @property
+    def server_group_status(self):
+        """Gets the server_group_status of this UpdateServerGroupReq.
+
+        服务器是否处于禁用状态： * `true` - 启用状态 * `false` - 禁用状态
+
+        :return: The server_group_status of this UpdateServerGroupReq.
+        :rtype: bool
+        """
+        return self._server_group_status
+
+    @server_group_status.setter
+    def server_group_status(self, server_group_status):
+        """Sets the server_group_status of this UpdateServerGroupReq.
+
+        服务器是否处于禁用状态： * `true` - 启用状态 * `false` - 禁用状态
+
+        :param server_group_status: The server_group_status of this UpdateServerGroupReq.
+        :type server_group_status: bool
+        """
+        self._server_group_status = server_group_status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

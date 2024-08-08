@@ -22,7 +22,8 @@ class StrongConstraintDto:
         'type': 'StrongConstraintType',
         'bool': 'bool',
         'range': 'list[float]',
-        'struct': 'StructureConstraintParamsDto'
+        'struct': 'StructureConstraintParamsDto',
+        'interaction': 'InteractionConstraintDto'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class StrongConstraintDto:
         'type': 'type',
         'bool': 'bool',
         'range': 'range',
-        'struct': 'struct'
+        'struct': 'struct',
+        'interaction': 'interaction'
     }
 
-    def __init__(self, id=None, name=None, type=None, bool=None, range=None, struct=None):
+    def __init__(self, id=None, name=None, type=None, bool=None, range=None, struct=None, interaction=None):
         """StrongConstraintDto
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class StrongConstraintDto:
         :type range: list[float]
         :param struct: 
         :type struct: :class:`huaweicloudsdkeihealth.v1.StructureConstraintParamsDto`
+        :param interaction: 
+        :type interaction: :class:`huaweicloudsdkeihealth.v1.InteractionConstraintDto`
         """
         
         
@@ -61,6 +65,7 @@ class StrongConstraintDto:
         self._bool = None
         self._range = None
         self._struct = None
+        self._interaction = None
         self.discriminator = None
 
         if id is not None:
@@ -74,6 +79,8 @@ class StrongConstraintDto:
             self.range = range
         if struct is not None:
             self.struct = struct
+        if interaction is not None:
+            self.interaction = interaction
 
     @property
     def id(self):
@@ -198,6 +205,24 @@ class StrongConstraintDto:
         :type struct: :class:`huaweicloudsdkeihealth.v1.StructureConstraintParamsDto`
         """
         self._struct = struct
+
+    @property
+    def interaction(self):
+        """Gets the interaction of this StrongConstraintDto.
+
+        :return: The interaction of this StrongConstraintDto.
+        :rtype: :class:`huaweicloudsdkeihealth.v1.InteractionConstraintDto`
+        """
+        return self._interaction
+
+    @interaction.setter
+    def interaction(self, interaction):
+        """Sets the interaction of this StrongConstraintDto.
+
+        :param interaction: The interaction of this StrongConstraintDto.
+        :type interaction: :class:`huaweicloudsdkeihealth.v1.InteractionConstraintDto`
+        """
+        self._interaction = interaction
 
     def to_dict(self):
         """Returns the model properties as a dict"""

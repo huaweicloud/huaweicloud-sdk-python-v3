@@ -18,15 +18,17 @@ class CreateDrugLigandInteraction2dSvgReq:
 
     openapi_types = {
         'receptor_file': 'ReceptorDrugFileReq',
-        'ligand_file': 'DrugFile'
+        'ligand_file': 'DrugFile',
+        'name': 'str'
     }
 
     attribute_map = {
         'receptor_file': 'receptor_file',
-        'ligand_file': 'ligand_file'
+        'ligand_file': 'ligand_file',
+        'name': 'name'
     }
 
-    def __init__(self, receptor_file=None, ligand_file=None):
+    def __init__(self, receptor_file=None, ligand_file=None, name=None):
         """CreateDrugLigandInteraction2dSvgReq
 
         The model defined in huaweicloud sdk
@@ -35,17 +37,22 @@ class CreateDrugLigandInteraction2dSvgReq:
         :type receptor_file: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFileReq`
         :param ligand_file: 
         :type ligand_file: :class:`huaweicloudsdkeihealth.v1.DrugFile`
+        :param name: 小分子名称
+        :type name: str
         """
         
         
 
         self._receptor_file = None
         self._ligand_file = None
+        self._name = None
         self.discriminator = None
 
         self.receptor_file = receptor_file
         if ligand_file is not None:
             self.ligand_file = ligand_file
+        if name is not None:
+            self.name = name
 
     @property
     def receptor_file(self):
@@ -82,6 +89,28 @@ class CreateDrugLigandInteraction2dSvgReq:
         :type ligand_file: :class:`huaweicloudsdkeihealth.v1.DrugFile`
         """
         self._ligand_file = ligand_file
+
+    @property
+    def name(self):
+        """Gets the name of this CreateDrugLigandInteraction2dSvgReq.
+
+        小分子名称
+
+        :return: The name of this CreateDrugLigandInteraction2dSvgReq.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this CreateDrugLigandInteraction2dSvgReq.
+
+        小分子名称
+
+        :param name: The name of this CreateDrugLigandInteraction2dSvgReq.
+        :type name: str
+        """
+        self._name = name
 
     def to_dict(self):
         """Returns the model properties as a dict"""
