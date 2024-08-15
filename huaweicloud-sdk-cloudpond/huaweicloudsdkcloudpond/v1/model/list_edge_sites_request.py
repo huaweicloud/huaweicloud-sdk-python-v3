@@ -21,6 +21,7 @@ class ListEdgeSitesRequest:
         'marker': 'str',
         'sort_key': 'list[str]',
         'sort_dir': 'list[str]',
+        'enterprise_project_id': 'list[str]',
         'id': 'list[str]',
         'name': 'list[str]',
         'availability_zone_id': 'list[str]',
@@ -32,13 +33,14 @@ class ListEdgeSitesRequest:
         'marker': 'marker',
         'sort_key': 'sort_key',
         'sort_dir': 'sort_dir',
+        'enterprise_project_id': 'enterprise_project_id',
         'id': 'id',
         'name': 'name',
         'availability_zone_id': 'availability_zone_id',
         'status': 'status'
     }
 
-    def __init__(self, limit=None, marker=None, sort_key=None, sort_dir=None, id=None, name=None, availability_zone_id=None, status=None):
+    def __init__(self, limit=None, marker=None, sort_key=None, sort_dir=None, enterprise_project_id=None, id=None, name=None, availability_zone_id=None, status=None):
         """ListEdgeSitesRequest
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class ListEdgeSitesRequest:
         :type sort_key: list[str]
         :param sort_dir: 排序方向，取值范围： - desc：降序 - acs：升序
         :type sort_dir: list[str]
+        :param enterprise_project_id: 企业项目ID。可以使用该字段过滤某个企业项目下的边缘小站。 最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。 若需要查询当前用户所有企业项目绑定的边缘小站，请传参all_granted_eps。 不传则查询全部。
+        :type enterprise_project_id: list[str]
         :param id: 根据边缘小站ID查询，支持排序
         :type id: list[str]
         :param name: 根据边缘小站名称查询（精确），支持排序
@@ -67,6 +71,7 @@ class ListEdgeSitesRequest:
         self._marker = None
         self._sort_key = None
         self._sort_dir = None
+        self._enterprise_project_id = None
         self._id = None
         self._name = None
         self._availability_zone_id = None
@@ -81,6 +86,8 @@ class ListEdgeSitesRequest:
             self.sort_key = sort_key
         if sort_dir is not None:
             self.sort_dir = sort_dir
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if id is not None:
             self.id = id
         if name is not None:
@@ -177,6 +184,28 @@ class ListEdgeSitesRequest:
         :type sort_dir: list[str]
         """
         self._sort_dir = sort_dir
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListEdgeSitesRequest.
+
+        企业项目ID。可以使用该字段过滤某个企业项目下的边缘小站。 最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。 若需要查询当前用户所有企业项目绑定的边缘小站，请传参all_granted_eps。 不传则查询全部。
+
+        :return: The enterprise_project_id of this ListEdgeSitesRequest.
+        :rtype: list[str]
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListEdgeSitesRequest.
+
+        企业项目ID。可以使用该字段过滤某个企业项目下的边缘小站。 最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。 若需要查询当前用户所有企业项目绑定的边缘小站，请传参all_granted_eps。 不传则查询全部。
+
+        :param enterprise_project_id: The enterprise_project_id of this ListEdgeSitesRequest.
+        :type enterprise_project_id: list[str]
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def id(self):

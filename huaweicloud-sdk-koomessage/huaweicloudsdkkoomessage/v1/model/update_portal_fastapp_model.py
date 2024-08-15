@@ -58,16 +58,11 @@ class UpdatePortalFastappModel:
         self._depend_engine_version = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
-        if logo_img is not None:
-            self.logo_img = logo_img
-        if description is not None:
-            self.description = description
-        if deeplink is not None:
-            self.deeplink = deeplink
-        if depend_engine_version is not None:
-            self.depend_engine_version = depend_engine_version
+        self.name = name
+        self.logo_img = logo_img
+        self.description = description
+        self.deeplink = deeplink
+        self.depend_engine_version = depend_engine_version
 
     @property
     def name(self):

@@ -39,7 +39,7 @@ class Logtank:
 
         :param id: 云日志ID。
         :type id: str
-        :param project_id: 项目ID。
+        :param project_id: 参数解释：项目ID。
         :type project_id: str
         :param loadbalancer_id: 负载均衡器ID。
         :type loadbalancer_id: str
@@ -90,7 +90,7 @@ class Logtank:
     def project_id(self):
         """Gets the project_id of this Logtank.
 
-        项目ID。
+        参数解释：项目ID。
 
         :return: The project_id of this Logtank.
         :rtype: str
@@ -101,7 +101,7 @@ class Logtank:
     def project_id(self, project_id):
         """Sets the project_id of this Logtank.
 
-        项目ID。
+        参数解释：项目ID。
 
         :param project_id: The project_id of this Logtank.
         :type project_id: str

@@ -25,6 +25,7 @@ class PutTaskReq:
         'region_id': 'str',
         'start_target_server': 'bool',
         'enterprise_project_id': 'str',
+        'exist_server': 'bool',
         'migration_ip': 'str',
         'region_name': 'str',
         'speed_limit': 'int',
@@ -58,6 +59,7 @@ class PutTaskReq:
         'region_id': 'region_id',
         'start_target_server': 'start_target_server',
         'enterprise_project_id': 'enterprise_project_id',
+        'exist_server': 'exist_server',
         'migration_ip': 'migration_ip',
         'region_name': 'region_name',
         'speed_limit': 'speed_limit',
@@ -82,7 +84,7 @@ class PutTaskReq:
         'sub_tasks': 'sub_tasks'
     }
 
-    def __init__(self, name=None, type=None, os_type=None, id=None, priority=None, region_id=None, start_target_server=None, enterprise_project_id=None, migration_ip=None, region_name=None, speed_limit=None, project_name=None, project_id=None, vm_template_id=None, source_server=None, target_server=None, state=None, estimate_complete_time=None, connected=None, create_date=None, start_date=None, finish_date=None, migrate_speed=None, error_json=None, total_time=None, float_ip=None, remain_seconds=None, target_snapshot_id=None, clone_server=None, sub_tasks=None):
+    def __init__(self, name=None, type=None, os_type=None, id=None, priority=None, region_id=None, start_target_server=None, enterprise_project_id=None, exist_server=None, migration_ip=None, region_name=None, speed_limit=None, project_name=None, project_id=None, vm_template_id=None, source_server=None, target_server=None, state=None, estimate_complete_time=None, connected=None, create_date=None, start_date=None, finish_date=None, migrate_speed=None, error_json=None, total_time=None, float_ip=None, remain_seconds=None, target_snapshot_id=None, clone_server=None, sub_tasks=None):
         """PutTaskReq
 
         The model defined in huaweicloud sdk
@@ -103,6 +105,8 @@ class PutTaskReq:
         :type start_target_server: bool
         :param enterprise_project_id: 企业项目ID
         :type enterprise_project_id: str
+        :param exist_server: 目的端服务器是否存在。true代表已有目的端服务器，false代表需要新建目的端服务器
+        :type exist_server: bool
         :param migration_ip: 目的端服务器的IP地址。  公网迁移时请填写弹性IP地址  专线迁移时请填写私有IP地址 
         :type migration_ip: str
         :param region_name: 目的端服务器的区域名称
@@ -159,6 +163,7 @@ class PutTaskReq:
         self._region_id = None
         self._start_target_server = None
         self._enterprise_project_id = None
+        self._exist_server = None
         self._migration_ip = None
         self._region_name = None
         self._speed_limit = None
@@ -199,6 +204,8 @@ class PutTaskReq:
             self.start_target_server = start_target_server
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if exist_server is not None:
+            self.exist_server = exist_server
         if migration_ip is not None:
             self.migration_ip = migration_ip
         if region_name is not None:
@@ -419,6 +426,28 @@ class PutTaskReq:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def exist_server(self):
+        """Gets the exist_server of this PutTaskReq.
+
+        目的端服务器是否存在。true代表已有目的端服务器，false代表需要新建目的端服务器
+
+        :return: The exist_server of this PutTaskReq.
+        :rtype: bool
+        """
+        return self._exist_server
+
+    @exist_server.setter
+    def exist_server(self, exist_server):
+        """Sets the exist_server of this PutTaskReq.
+
+        目的端服务器是否存在。true代表已有目的端服务器，false代表需要新建目的端服务器
+
+        :param exist_server: The exist_server of this PutTaskReq.
+        :type exist_server: bool
+        """
+        self._exist_server = exist_server
 
     @property
     def migration_ip(self):

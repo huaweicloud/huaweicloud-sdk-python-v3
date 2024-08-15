@@ -875,7 +875,7 @@ class AosClient(Client):
 
         创建私有hook（CreatePrivateHook）
         
-        创建一个带有初始默认版本的私有hook，创建私有hook的时候需要同时创建一个初始化默认版本，不允许空私有hook的创建。
+        创建一个带有初始默认版本的私有hook，创建私有hook的时候需要同时创建一个初始化的默认版本，不允许空私有hook的创建。
         设置配置(Configuration)后的私有hook才会在触发资源栈部署时生效，资源栈使用私有hook的默认版本。若创建私有hook时未指定配置项，则该私有hook在资源栈部署时不生效，后续可通过UpdatePrivateHook API更新配置。
           * 支持hook策略模板检验的资源栈服务API：
               DeployStack 
@@ -883,9 +883,9 @@ class AosClient(Client):
           * 创建私有hook时指定的版本为初始默认版本。
           * 如果同名的私有hook在当前domain_id+region下已经存在，则会返回409。
           * 私有hook版本号遵循语义化版本号（Semantic Version），为用户自定义。
-          * 资源编排服务只会对私有hook进行浅校验，如文件大小。不进行策略文件语法类校验。若语法类存在错误，则会在hook策略校验生效时报错。
+          * 资源编排服务会对私有hook进行校验，如文件大小，策略文件语法校验等。若存在错误，则会创建失败。
           * 当前仅支持部署资源前的检测，不支持部署资源过程中的检测。如果通过了部署资源前的检测，资源栈则会继续部署资源。反之会停止部署资源，并记录资源栈事件（stack events）。
-          * 仅支持OPA开源引擎识别的，以rego（https://www.openpolicyagent.org/docs/latest/policy-language/）语言编写的策略模板(用户可以通过policy_uri或policy_body给与策略文件内容)。
+          * 仅支持OPA开源引擎识别的，以Rego（https://www.openpolicyagent.org/docs/latest/policy-language/）语言编写的策略模板(用户可以通过policy_uri或policy_body给与策略文件内容)。
           * 策略模板中的决策结果使用object类型的hook_result，hook_result所在包的包名必须使用policy。hook_result格式如下：
               &#x60;&#x60;&#x60;
               hook_result :&#x3D; {
@@ -981,7 +981,7 @@ class AosClient(Client):
         创建私有hook版本，创建私有hook版本后需要调用UpdatePrivateHook API设置为默认版本才能生效。
           * 版本号遵循语义化版本号（Semantic Version），为用户自定义。
           * 若hook_name和hook_id同时存在，则资源编排服务会检查是否两个匹配，如果不匹配则会返回400。
-          * 资源编排服务只会对私有hook进行浅校验，如文件大小。不进行策略文件语法类校验。若语法类存在错误，则会在hook策略校验生效时报错。
+          * 资源编排服务会对私有hook进行校验，如文件大小，策略文件语法校验等。若存在错误，则会创建失败。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1274,11 +1274,11 @@ class AosClient(Client):
         return http_info
 
     def show_private_hook_version_metadata(self, request):
-        """获取私有hook版本元数据
+        """获取私有hook版本的元数据
 
-        获取私有hook版本元数据（ShowPrivateHookVersionMetadata）
+        获取私有hook版本的元数据（ShowPrivateHookVersionMetadata）
         
-        获取当前私有hook对应的版本的元数据信息
+        获取当前私有hook对应版本的元数据信息
         
           * 具体返回的信息见ShowPrivateHookVersionMetadataResponseBody。
           * 如果hook_name和hook_id同时存在，则资源编排服务会检查是否两个匹配，如果不匹配则会返回400。

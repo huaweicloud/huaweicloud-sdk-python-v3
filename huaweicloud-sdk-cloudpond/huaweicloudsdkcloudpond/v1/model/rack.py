@@ -33,7 +33,8 @@ class Rack:
         'market_options': 'MarketOptions',
         'compute_unit': 'list[ComputeSpec]',
         'storage_unit': 'StorageUnit',
-        'rack_info': 'RackInfo'
+        'rack_info': 'RackInfo',
+        'product_info': 'ProductInfo'
     }
 
     attribute_map = {
@@ -53,10 +54,11 @@ class Rack:
         'market_options': 'market_options',
         'compute_unit': 'compute_unit',
         'storage_unit': 'storage_unit',
-        'rack_info': 'rack_info'
+        'rack_info': 'rack_info',
+        'product_info': 'product_info'
     }
 
-    def __init__(self, id=None, name=None, edge_site_id=None, rack_category_id=None, rack_type=None, status=None, storage_assigned_size=None, description=None, rack_sn_no=None, rack_location_no=None, created_at=None, updated_at=None, effected_at=None, market_options=None, compute_unit=None, storage_unit=None, rack_info=None):
+    def __init__(self, id=None, name=None, edge_site_id=None, rack_category_id=None, rack_type=None, status=None, storage_assigned_size=None, description=None, rack_sn_no=None, rack_location_no=None, created_at=None, updated_at=None, effected_at=None, market_options=None, compute_unit=None, storage_unit=None, rack_info=None, product_info=None):
         """Rack
 
         The model defined in huaweicloud sdk
@@ -95,6 +97,8 @@ class Rack:
         :type storage_unit: :class:`huaweicloudsdkcloudpond.v1.StorageUnit`
         :param rack_info: 
         :type rack_info: :class:`huaweicloudsdkcloudpond.v1.RackInfo`
+        :param product_info: 
+        :type product_info: :class:`huaweicloudsdkcloudpond.v1.ProductInfo`
         """
         
         
@@ -116,6 +120,7 @@ class Rack:
         self._compute_unit = None
         self._storage_unit = None
         self._rack_info = None
+        self._product_info = None
         self.discriminator = None
 
         if id is not None:
@@ -152,6 +157,8 @@ class Rack:
             self.storage_unit = storage_unit
         if rack_info is not None:
             self.rack_info = rack_info
+        if product_info is not None:
+            self.product_info = product_info
 
     @property
     def id(self):
@@ -510,6 +517,24 @@ class Rack:
         :type rack_info: :class:`huaweicloudsdkcloudpond.v1.RackInfo`
         """
         self._rack_info = rack_info
+
+    @property
+    def product_info(self):
+        """Gets the product_info of this Rack.
+
+        :return: The product_info of this Rack.
+        :rtype: :class:`huaweicloudsdkcloudpond.v1.ProductInfo`
+        """
+        return self._product_info
+
+    @product_info.setter
+    def product_info(self, product_info):
+        """Sets the product_info of this Rack.
+
+        :param product_info: The product_info of this Rack.
+        :type product_info: :class:`huaweicloudsdkcloudpond.v1.ProductInfo`
+        """
+        self._product_info = product_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

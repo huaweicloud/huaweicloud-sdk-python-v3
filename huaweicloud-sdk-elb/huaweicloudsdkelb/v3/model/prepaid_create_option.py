@@ -37,7 +37,7 @@ class PrepaidCreateOption:
 
         :param period_type: 参数解释：预付费实例的订购周期类型，当前支持月和年。  取值范围：  - month：月。  - year：年。
         :type period_type: str
-        :param period_num: 参数解释：预付费实例的订购周期数，取值会随运营策略变化。  约束限制： - period_type为month时，为[1,9]。 - period_type为year时，为[1,3]。
+        :param period_num: 参数解释：预付费实例的订购周期数。  取值范围： - period_type为month时，为[1,9]。 - period_type为year时，为[1,3]。
         :type period_num: int
         :param auto_renew: 参数解释：自动续订开关。  取值范围： - true：开启自动续订。 - false：关闭自动续订。
         :type auto_renew: bool
@@ -87,7 +87,7 @@ class PrepaidCreateOption:
     def period_num(self):
         """Gets the period_num of this PrepaidCreateOption.
 
-        参数解释：预付费实例的订购周期数，取值会随运营策略变化。  约束限制： - period_type为month时，为[1,9]。 - period_type为year时，为[1,3]。
+        参数解释：预付费实例的订购周期数。  取值范围： - period_type为month时，为[1,9]。 - period_type为year时，为[1,3]。
 
         :return: The period_num of this PrepaidCreateOption.
         :rtype: int
@@ -98,7 +98,7 @@ class PrepaidCreateOption:
     def period_num(self, period_num):
         """Sets the period_num of this PrepaidCreateOption.
 
-        参数解释：预付费实例的订购周期数，取值会随运营策略变化。  约束限制： - period_type为month时，为[1,9]。 - period_type为year时，为[1,3]。
+        参数解释：预付费实例的订购周期数。  取值范围： - period_type为month时，为[1,9]。 - period_type为year时，为[1,3]。
 
         :param period_num: The period_num of this PrepaidCreateOption.
         :type period_num: int

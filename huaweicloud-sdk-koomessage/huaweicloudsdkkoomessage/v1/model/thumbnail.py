@@ -24,9 +24,11 @@ class Thumbnail:
         'file_name': 'str',
         'aim_resource_id': 'str',
         'obs_object_key': 'str',
+        'obs_file_url': 'str',
         'image_rate': 'str',
         'is_auto_gen': 'int',
-        'description': 'str'
+        'description': 'str',
+        'size': 'int'
     }
 
     attribute_map = {
@@ -37,12 +39,14 @@ class Thumbnail:
         'file_name': 'file_name',
         'aim_resource_id': 'aim_resource_id',
         'obs_object_key': 'obs_object_key',
+        'obs_file_url': 'obs_file_url',
         'image_rate': 'image_rate',
         'is_auto_gen': 'is_auto_gen',
-        'description': 'description'
+        'description': 'description',
+        'size': 'size'
     }
 
-    def __init__(self, id=None, created_at=None, is_primary=None, resource_type=None, file_name=None, aim_resource_id=None, obs_object_key=None, image_rate=None, is_auto_gen=None, description=None):
+    def __init__(self, id=None, created_at=None, is_primary=None, resource_type=None, file_name=None, aim_resource_id=None, obs_object_key=None, obs_file_url=None, image_rate=None, is_auto_gen=None, description=None, size=None):
         """Thumbnail
 
         The model defined in huaweicloud sdk
@@ -61,12 +65,16 @@ class Thumbnail:
         :type aim_resource_id: str
         :param obs_object_key: 从OBS返回的文件Key。
         :type obs_object_key: str
-        :param image_rate: 图像比例。 - oneToOne：指1:1比例 - sixteenToNine：指16:9比例 - threeToOne：指3:1比例 - fortyEightToSixtyFive：指48:65比例 - twentyOneToNine：指21:9比例 
+        :param obs_file_url: 文件访问路径。
+        :type obs_file_url: str
+        :param image_rate: 图像比例。 - oneToOne：指1:1比例 - sixteenToNine：指16:9比例 - threeToOne：指3:1比例 - fortyEightToSixtyFive：指48:65比例 - twentyOneToNine：指21:9比例 - threeToFour：指3:4比例 
         :type image_rate: str
         :param is_auto_gen: 缩略图是否自动从系统生成。
         :type is_auto_gen: int
         :param description: 缩略图的详细描述。
         :type description: str
+        :param size: 缩略图所占空间大小。
+        :type size: int
         """
         
         
@@ -78,9 +86,11 @@ class Thumbnail:
         self._file_name = None
         self._aim_resource_id = None
         self._obs_object_key = None
+        self._obs_file_url = None
         self._image_rate = None
         self._is_auto_gen = None
         self._description = None
+        self._size = None
         self.discriminator = None
 
         self.id = id
@@ -90,12 +100,16 @@ class Thumbnail:
         self.file_name = file_name
         self.aim_resource_id = aim_resource_id
         self.obs_object_key = obs_object_key
+        if obs_file_url is not None:
+            self.obs_file_url = obs_file_url
         if image_rate is not None:
             self.image_rate = image_rate
         if is_auto_gen is not None:
             self.is_auto_gen = is_auto_gen
         if description is not None:
             self.description = description
+        if size is not None:
+            self.size = size
 
     @property
     def id(self):
@@ -252,10 +266,32 @@ class Thumbnail:
         self._obs_object_key = obs_object_key
 
     @property
+    def obs_file_url(self):
+        """Gets the obs_file_url of this Thumbnail.
+
+        文件访问路径。
+
+        :return: The obs_file_url of this Thumbnail.
+        :rtype: str
+        """
+        return self._obs_file_url
+
+    @obs_file_url.setter
+    def obs_file_url(self, obs_file_url):
+        """Sets the obs_file_url of this Thumbnail.
+
+        文件访问路径。
+
+        :param obs_file_url: The obs_file_url of this Thumbnail.
+        :type obs_file_url: str
+        """
+        self._obs_file_url = obs_file_url
+
+    @property
     def image_rate(self):
         """Gets the image_rate of this Thumbnail.
 
-        图像比例。 - oneToOne：指1:1比例 - sixteenToNine：指16:9比例 - threeToOne：指3:1比例 - fortyEightToSixtyFive：指48:65比例 - twentyOneToNine：指21:9比例 
+        图像比例。 - oneToOne：指1:1比例 - sixteenToNine：指16:9比例 - threeToOne：指3:1比例 - fortyEightToSixtyFive：指48:65比例 - twentyOneToNine：指21:9比例 - threeToFour：指3:4比例 
 
         :return: The image_rate of this Thumbnail.
         :rtype: str
@@ -266,7 +302,7 @@ class Thumbnail:
     def image_rate(self, image_rate):
         """Sets the image_rate of this Thumbnail.
 
-        图像比例。 - oneToOne：指1:1比例 - sixteenToNine：指16:9比例 - threeToOne：指3:1比例 - fortyEightToSixtyFive：指48:65比例 - twentyOneToNine：指21:9比例 
+        图像比例。 - oneToOne：指1:1比例 - sixteenToNine：指16:9比例 - threeToOne：指3:1比例 - fortyEightToSixtyFive：指48:65比例 - twentyOneToNine：指21:9比例 - threeToFour：指3:4比例 
 
         :param image_rate: The image_rate of this Thumbnail.
         :type image_rate: str
@@ -316,6 +352,28 @@ class Thumbnail:
         :type description: str
         """
         self._description = description
+
+    @property
+    def size(self):
+        """Gets the size of this Thumbnail.
+
+        缩略图所占空间大小。
+
+        :return: The size of this Thumbnail.
+        :rtype: int
+        """
+        return self._size
+
+    @size.setter
+    def size(self, size):
+        """Sets the size of this Thumbnail.
+
+        缩略图所占空间大小。
+
+        :param size: The size of this Thumbnail.
+        :type size: int
+        """
+        self._size = size
 
     def to_dict(self):
         """Returns the model properties as a dict"""

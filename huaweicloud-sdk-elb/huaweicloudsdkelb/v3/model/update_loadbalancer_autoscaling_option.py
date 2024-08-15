@@ -31,9 +31,9 @@ class UpdateLoadbalancerAutoscalingOption:
 
         The model defined in huaweicloud sdk
 
-        :param enable: 当前负载均衡器是否开启弹性扩缩容。  取值： - true：开启。 - false：不开启。
+        :param enable: 参数解释：当前负载均衡器是否开启弹性扩缩容。  取值范围： - true：开启。 - false：不开启。
         :type enable: bool
-        :param min_l7_flavor_id: 弹性扩缩容的最小七层规格ID（规格类型L7_elastic），有七层监听器时，该字段不能为空。  该字段已经废弃，但仍然保留兼容性支持，建议不要使用该字段。如果传入该字段，创建的弹性实例将会有保底规格并产生对应保底规格的费用。
+        :param min_l7_flavor_id: 参数解释：弹性扩缩容的最小七层规格ID（规格类型L7_elastic）。  约束限制：有七层监听器时，该字段不能为空。   该字段已经废弃，但仍然保留兼容性支持，建议不要使用该字段。如果传入该字段，创建的弹性实例将会有保底规格并产生对应保底规格的费用。
         :type min_l7_flavor_id: str
         """
         
@@ -51,7 +51,7 @@ class UpdateLoadbalancerAutoscalingOption:
     def enable(self):
         """Gets the enable of this UpdateLoadbalancerAutoscalingOption.
 
-        当前负载均衡器是否开启弹性扩缩容。  取值： - true：开启。 - false：不开启。
+        参数解释：当前负载均衡器是否开启弹性扩缩容。  取值范围： - true：开启。 - false：不开启。
 
         :return: The enable of this UpdateLoadbalancerAutoscalingOption.
         :rtype: bool
@@ -62,7 +62,7 @@ class UpdateLoadbalancerAutoscalingOption:
     def enable(self, enable):
         """Sets the enable of this UpdateLoadbalancerAutoscalingOption.
 
-        当前负载均衡器是否开启弹性扩缩容。  取值： - true：开启。 - false：不开启。
+        参数解释：当前负载均衡器是否开启弹性扩缩容。  取值范围： - true：开启。 - false：不开启。
 
         :param enable: The enable of this UpdateLoadbalancerAutoscalingOption.
         :type enable: bool
@@ -73,7 +73,7 @@ class UpdateLoadbalancerAutoscalingOption:
     def min_l7_flavor_id(self):
         """Gets the min_l7_flavor_id of this UpdateLoadbalancerAutoscalingOption.
 
-        弹性扩缩容的最小七层规格ID（规格类型L7_elastic），有七层监听器时，该字段不能为空。  该字段已经废弃，但仍然保留兼容性支持，建议不要使用该字段。如果传入该字段，创建的弹性实例将会有保底规格并产生对应保底规格的费用。
+        参数解释：弹性扩缩容的最小七层规格ID（规格类型L7_elastic）。  约束限制：有七层监听器时，该字段不能为空。   该字段已经废弃，但仍然保留兼容性支持，建议不要使用该字段。如果传入该字段，创建的弹性实例将会有保底规格并产生对应保底规格的费用。
 
         :return: The min_l7_flavor_id of this UpdateLoadbalancerAutoscalingOption.
         :rtype: str
@@ -84,7 +84,7 @@ class UpdateLoadbalancerAutoscalingOption:
     def min_l7_flavor_id(self, min_l7_flavor_id):
         """Sets the min_l7_flavor_id of this UpdateLoadbalancerAutoscalingOption.
 
-        弹性扩缩容的最小七层规格ID（规格类型L7_elastic），有七层监听器时，该字段不能为空。  该字段已经废弃，但仍然保留兼容性支持，建议不要使用该字段。如果传入该字段，创建的弹性实例将会有保底规格并产生对应保底规格的费用。
+        参数解释：弹性扩缩容的最小七层规格ID（规格类型L7_elastic）。  约束限制：有七层监听器时，该字段不能为空。   该字段已经废弃，但仍然保留兼容性支持，建议不要使用该字段。如果传入该字段，创建的弹性实例将会有保底规格并产生对应保底规格的费用。
 
         :param min_l7_flavor_id: The min_l7_flavor_id of this UpdateLoadbalancerAutoscalingOption.
         :type min_l7_flavor_id: str

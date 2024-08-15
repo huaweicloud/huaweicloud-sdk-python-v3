@@ -24,7 +24,7 @@ class InstanceVnicResp:
         'port_id': 'str',
         'mac': 'str',
         'vtep': 'str',
-        'vni': 'int',
+        'vni': 'str',
         'instance_id': 'str',
         'instance_type': 'str',
         'port_profile': 'str'
@@ -64,7 +64,7 @@ class InstanceVnicResp:
         :param vtep: port的vtep地址
         :type vtep: str
         :param vni: port的vni
-        :type vni: int
+        :type vni: str
         :param instance_id: port的实例id
         :type instance_id: str
         :param instance_type: port的实例类型
@@ -272,7 +272,7 @@ class InstanceVnicResp:
         port的vni
 
         :return: The vni of this InstanceVnicResp.
-        :rtype: int
+        :rtype: str
         """
         return self._vni
 
@@ -283,7 +283,7 @@ class InstanceVnicResp:
         port的vni
 
         :param vni: The vni of this InstanceVnicResp.
-        :type vni: int
+        :type vni: str
         """
         self._vni = vni
 

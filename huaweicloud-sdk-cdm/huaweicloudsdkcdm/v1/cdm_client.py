@@ -566,6 +566,77 @@ class CdmClient(Client):
 
         return http_info
 
+    def modify_cluster(self, request):
+        """修改集群
+
+        修改CDM集群配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ModifyCluster
+        :type request: :class:`huaweicloudsdkcdm.v1.ModifyClusterRequest`
+        :rtype: :class:`huaweicloudsdkcdm.v1.ModifyClusterResponse`
+        """
+        http_info = self._modify_cluster_http_info(request)
+        return self._call_api(**http_info)
+
+    def modify_cluster_invoker(self, request):
+        http_info = self._modify_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _modify_cluster_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.1/{project_id}/cluster/modify/{cluster_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyClusterResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'content_type' in local_var_params:
+            header_params['Content-Type'] = local_var_params['content_type']
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def restart_cluster(self, request):
         """重启集群
 
@@ -633,6 +704,71 @@ class CdmClient(Client):
 
         return http_info
 
+    def show_availability_zones(self, request):
+        """查询所有可用区
+
+        查询CDM集群的所有可用区。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAvailabilityZones
+        :type request: :class:`huaweicloudsdkcdm.v1.ShowAvailabilityZonesRequest`
+        :rtype: :class:`huaweicloudsdkcdm.v1.ShowAvailabilityZonesResponse`
+        """
+        http_info = self._show_availability_zones_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_availability_zones_invoker(self, request):
+        http_info = self._show_availability_zones_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_availability_zones_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.1/{project_id}/regions/{region_id}/availability_zones",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAvailabilityZonesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'region_id' in local_var_params:
+            path_params['region_id'] = local_var_params['region_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_cluster_detail(self, request):
         """查询集群详情
 
@@ -669,6 +805,392 @@ class CdmClient(Client):
         path_params = {}
         if 'cluster_id' in local_var_params:
             path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_cluster_enterprise_projects(self, request):
+        """查询集群的企业项目ID
+
+        查询指定集群的企业项目ID。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowClusterEnterpriseProjects
+        :type request: :class:`huaweicloudsdkcdm.v1.ShowClusterEnterpriseProjectsRequest`
+        :rtype: :class:`huaweicloudsdkcdm.v1.ShowClusterEnterpriseProjectsResponse`
+        """
+        http_info = self._show_cluster_enterprise_projects_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_cluster_enterprise_projects_invoker(self, request):
+        http_info = self._show_cluster_enterprise_projects_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_cluster_enterprise_projects_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.1/{project_id}/clusters/{cluster_id}/enterprise-projects",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowClusterEnterpriseProjectsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_datastores(self, request):
+        """查询支持的版本
+
+        查询CDM集群支持的版本。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowDatastores
+        :type request: :class:`huaweicloudsdkcdm.v1.ShowDatastoresRequest`
+        :rtype: :class:`huaweicloudsdkcdm.v1.ShowDatastoresResponse`
+        """
+        http_info = self._show_datastores_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_datastores_invoker(self, request):
+        http_info = self._show_datastores_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_datastores_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.1/{project_id}/datastores",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDatastoresResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_enterprise_projects(self, request):
+        """查询所有集群的企业项目ID
+
+        查询当前项目下的所有集群的企业项目ID。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowEnterpriseProjects
+        :type request: :class:`huaweicloudsdkcdm.v1.ShowEnterpriseProjectsRequest`
+        :rtype: :class:`huaweicloudsdkcdm.v1.ShowEnterpriseProjectsResponse`
+        """
+        http_info = self._show_enterprise_projects_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_enterprise_projects_invoker(self, request):
+        http_info = self._show_enterprise_projects_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_enterprise_projects_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.1/{project_id}/enterprise-projects",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEnterpriseProjectsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_flavor_detail(self, request):
+        """查询规格详情
+
+        查询指定规格ID的规格详请。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowFlavorDetail
+        :type request: :class:`huaweicloudsdkcdm.v1.ShowFlavorDetailRequest`
+        :rtype: :class:`huaweicloudsdkcdm.v1.ShowFlavorDetailResponse`
+        """
+        http_info = self._show_flavor_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_flavor_detail_invoker(self, request):
+        http_info = self._show_flavor_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_flavor_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.1/{project_id}/flavors/{flavor_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFlavorDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'flavor_id' in local_var_params:
+            path_params['flavor_id'] = local_var_params['flavor_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_flavors(self, request):
+        """查询版本规格
+
+        按版本ID查询所有兼容规格。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowFlavors
+        :type request: :class:`huaweicloudsdkcdm.v1.ShowFlavorsRequest`
+        :rtype: :class:`huaweicloudsdkcdm.v1.ShowFlavorsResponse`
+        """
+        http_info = self._show_flavors_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_flavors_invoker(self, request):
+        http_info = self._show_flavors_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_flavors_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.1/{project_id}/datastores/{datastore_id}/flavors",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFlavorsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'datastore_id' in local_var_params:
+            path_params['datastore_id'] = local_var_params['datastore_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_instance_detail(self, request):
+        """查询集群实例信息
+
+        查询集群实例信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowInstanceDetail
+        :type request: :class:`huaweicloudsdkcdm.v1.ShowInstanceDetailRequest`
+        :rtype: :class:`huaweicloudsdkcdm.v1.ShowInstanceDetailResponse`
+        """
+        http_info = self._show_instance_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_instance_detail_invoker(self, request):
+        http_info = self._show_instance_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_instance_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.1/{project_id}/instances/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInstanceDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
 

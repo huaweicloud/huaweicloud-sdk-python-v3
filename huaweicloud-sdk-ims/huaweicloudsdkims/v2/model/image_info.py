@@ -233,7 +233,7 @@ class ImageInfo:
         :type virtual_env_type: str
         :param virtual_size: 目前暂时不使用
         :type virtual_size: int
-        :param visibility: 是否被其他租户可见，取值为private或public
+        :param visibility: 是否被其他租户可见，取值为private、public或shared
         :type visibility: str
         :param support_fc_inject: 表示当前镜像支持CloudInit密码/密钥注入方式，建议设置为\&quot;true\&quot;或者\&quot;false\&quot;。 如果取值为\&quot;true\&quot;，表示该镜像不支持CloudInit注入密码/密钥，其他取值时表示支持CloudInit注入密钥/密码。
         :type support_fc_inject: str
@@ -1384,7 +1384,7 @@ class ImageInfo:
     def visibility(self):
         """Gets the visibility of this ImageInfo.
 
-        是否被其他租户可见，取值为private或public
+        是否被其他租户可见，取值为private、public或shared
 
         :return: The visibility of this ImageInfo.
         :rtype: str
@@ -1395,7 +1395,7 @@ class ImageInfo:
     def visibility(self, visibility):
         """Sets the visibility of this ImageInfo.
 
-        是否被其他租户可见，取值为private或public
+        是否被其他租户可见，取值为private、public或shared
 
         :param visibility: The visibility of this ImageInfo.
         :type visibility: str

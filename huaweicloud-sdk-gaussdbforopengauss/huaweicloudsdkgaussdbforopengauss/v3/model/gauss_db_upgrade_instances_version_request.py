@@ -35,9 +35,9 @@ class GaussDBUpgradeInstancesVersionRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_ids: 批量实例ID
+        :param instance_ids: 批量实例ID。
         :type instance_ids: list[str]
-        :param upgrade_type: 实例升级类型，包括就地升级，灰度升级、热补丁升级三种
+        :param upgrade_type: 实例升级类型，包括就地升级，灰度升级、热补丁升级三种。
         :type upgrade_type: str
         :param upgrade_action: 实例升级操作，就地升级无需传值。灰度升级包括升级自动提交，升级待观察，提交升级，升级回退四种。
         :type upgrade_action: str
@@ -65,7 +65,7 @@ class GaussDBUpgradeInstancesVersionRequest:
     def instance_ids(self):
         """Gets the instance_ids of this GaussDBUpgradeInstancesVersionRequest.
 
-        批量实例ID
+        批量实例ID。
 
         :return: The instance_ids of this GaussDBUpgradeInstancesVersionRequest.
         :rtype: list[str]
@@ -76,7 +76,7 @@ class GaussDBUpgradeInstancesVersionRequest:
     def instance_ids(self, instance_ids):
         """Sets the instance_ids of this GaussDBUpgradeInstancesVersionRequest.
 
-        批量实例ID
+        批量实例ID。
 
         :param instance_ids: The instance_ids of this GaussDBUpgradeInstancesVersionRequest.
         :type instance_ids: list[str]
@@ -87,7 +87,7 @@ class GaussDBUpgradeInstancesVersionRequest:
     def upgrade_type(self):
         """Gets the upgrade_type of this GaussDBUpgradeInstancesVersionRequest.
 
-        实例升级类型，包括就地升级，灰度升级、热补丁升级三种
+        实例升级类型，包括就地升级，灰度升级、热补丁升级三种。
 
         :return: The upgrade_type of this GaussDBUpgradeInstancesVersionRequest.
         :rtype: str
@@ -98,7 +98,7 @@ class GaussDBUpgradeInstancesVersionRequest:
     def upgrade_type(self, upgrade_type):
         """Sets the upgrade_type of this GaussDBUpgradeInstancesVersionRequest.
 
-        实例升级类型，包括就地升级，灰度升级、热补丁升级三种
+        实例升级类型，包括就地升级，灰度升级、热补丁升级三种。
 
         :param upgrade_type: The upgrade_type of this GaussDBUpgradeInstancesVersionRequest.
         :type upgrade_type: str

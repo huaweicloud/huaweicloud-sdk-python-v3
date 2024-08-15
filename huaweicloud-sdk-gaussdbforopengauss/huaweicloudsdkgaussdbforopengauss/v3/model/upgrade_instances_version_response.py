@@ -40,13 +40,13 @@ class UpgradeInstancesVersionResponse(SdkResponse):
 
         :param job_ids: 任务id。
         :type job_ids: list[str]
-        :param succeeded_num: 下发成功的实例数量
+        :param succeeded_num: 下发成功的实例数量。
         :type succeeded_num: int
-        :param failed_num: 下发失败的实例数量
+        :param failed_num: 下发失败的实例数量。
         :type failed_num: int
-        :param failed_instance_ids: 下发失败的实例ID列表
+        :param failed_instance_ids: 下发失败的实例ID列表。
         :type failed_instance_ids: list[str]
-        :param error_messages: 下发失败错误信息列表
+        :param error_messages: 下发失败错误信息列表。
         :type error_messages: list[str]
         """
         
@@ -96,7 +96,7 @@ class UpgradeInstancesVersionResponse(SdkResponse):
     def succeeded_num(self):
         """Gets the succeeded_num of this UpgradeInstancesVersionResponse.
 
-        下发成功的实例数量
+        下发成功的实例数量。
 
         :return: The succeeded_num of this UpgradeInstancesVersionResponse.
         :rtype: int
@@ -107,7 +107,7 @@ class UpgradeInstancesVersionResponse(SdkResponse):
     def succeeded_num(self, succeeded_num):
         """Sets the succeeded_num of this UpgradeInstancesVersionResponse.
 
-        下发成功的实例数量
+        下发成功的实例数量。
 
         :param succeeded_num: The succeeded_num of this UpgradeInstancesVersionResponse.
         :type succeeded_num: int
@@ -118,7 +118,7 @@ class UpgradeInstancesVersionResponse(SdkResponse):
     def failed_num(self):
         """Gets the failed_num of this UpgradeInstancesVersionResponse.
 
-        下发失败的实例数量
+        下发失败的实例数量。
 
         :return: The failed_num of this UpgradeInstancesVersionResponse.
         :rtype: int
@@ -129,7 +129,7 @@ class UpgradeInstancesVersionResponse(SdkResponse):
     def failed_num(self, failed_num):
         """Sets the failed_num of this UpgradeInstancesVersionResponse.
 
-        下发失败的实例数量
+        下发失败的实例数量。
 
         :param failed_num: The failed_num of this UpgradeInstancesVersionResponse.
         :type failed_num: int
@@ -140,7 +140,7 @@ class UpgradeInstancesVersionResponse(SdkResponse):
     def failed_instance_ids(self):
         """Gets the failed_instance_ids of this UpgradeInstancesVersionResponse.
 
-        下发失败的实例ID列表
+        下发失败的实例ID列表。
 
         :return: The failed_instance_ids of this UpgradeInstancesVersionResponse.
         :rtype: list[str]
@@ -151,7 +151,7 @@ class UpgradeInstancesVersionResponse(SdkResponse):
     def failed_instance_ids(self, failed_instance_ids):
         """Sets the failed_instance_ids of this UpgradeInstancesVersionResponse.
 
-        下发失败的实例ID列表
+        下发失败的实例ID列表。
 
         :param failed_instance_ids: The failed_instance_ids of this UpgradeInstancesVersionResponse.
         :type failed_instance_ids: list[str]
@@ -162,7 +162,7 @@ class UpgradeInstancesVersionResponse(SdkResponse):
     def error_messages(self):
         """Gets the error_messages of this UpgradeInstancesVersionResponse.
 
-        下发失败错误信息列表
+        下发失败错误信息列表。
 
         :return: The error_messages of this UpgradeInstancesVersionResponse.
         :rtype: list[str]
@@ -173,7 +173,7 @@ class UpgradeInstancesVersionResponse(SdkResponse):
     def error_messages(self, error_messages):
         """Sets the error_messages of this UpgradeInstancesVersionResponse.
 
-        下发失败错误信息列表
+        下发失败错误信息列表。
 
         :param error_messages: The error_messages of this UpgradeInstancesVersionResponse.
         :type error_messages: list[str]

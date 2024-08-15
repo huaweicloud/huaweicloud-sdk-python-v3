@@ -37,15 +37,15 @@ class AvailabilityZone:
 
         The model defined in huaweicloud sdk
 
-        :param code: 可用区唯一编码。
+        :param code: 参数解释：可用区唯一编码。
         :type code: str
-        :param state: 可用区状态。  取值：ACTIVE。
+        :param state: 参数解释：可用区状态。  取值范围：ACTIVE。
         :type state: str
-        :param protocol: [未售罄的LB规格类别。  取值：L4 表示网络型LB未售罄；L7 表示应用型LB未售罄。](tag:hws,hk,hws_eu,otc,tlf,ctc,sbc,g42,cmcc,hk_g42,dt_test,mix,hk_sbc,hws_ocb,dt) [LB规格类别。取值：L4 表示网络型LB；L7 表示应用型LB。](tag:ocb,tm,fcs,fcs_dt,hcso,hcso_dt,hk_vdf)
+        :param protocol: [参数解释：未售罄的LB规格类别。  取值范围：L4 表示网络型LB未售罄；L7 表示应用型LB未售罄。](tag:hws,hk,hws_eu,otc,tlf,ctc,sbc,g42,cmcc,hk_g42,dt_test,mix,hk_sbc,hws_ocb,dt) [参数解释：LB规格类别。  取值范围：L4 表示网络型LB；L7 表示应用型LB。](tag:ocb,tm,fcs,fcs_dt,hcso,hcso_dt,hk_vdf)
         :type protocol: list[str]
-        :param public_border_group: 可用区组，如：center
+        :param public_border_group: 参数解释：可用区组，如：center
         :type public_border_group: str
-        :param category: 范围编码，0表示center，21表示homezone
+        :param category: 参数解释：范围编码。  取值范围：0表示center，21表示homezone。
         :type category: int
         """
         
@@ -68,7 +68,7 @@ class AvailabilityZone:
     def code(self):
         """Gets the code of this AvailabilityZone.
 
-        可用区唯一编码。
+        参数解释：可用区唯一编码。
 
         :return: The code of this AvailabilityZone.
         :rtype: str
@@ -79,7 +79,7 @@ class AvailabilityZone:
     def code(self, code):
         """Sets the code of this AvailabilityZone.
 
-        可用区唯一编码。
+        参数解释：可用区唯一编码。
 
         :param code: The code of this AvailabilityZone.
         :type code: str
@@ -90,7 +90,7 @@ class AvailabilityZone:
     def state(self):
         """Gets the state of this AvailabilityZone.
 
-        可用区状态。  取值：ACTIVE。
+        参数解释：可用区状态。  取值范围：ACTIVE。
 
         :return: The state of this AvailabilityZone.
         :rtype: str
@@ -101,7 +101,7 @@ class AvailabilityZone:
     def state(self, state):
         """Sets the state of this AvailabilityZone.
 
-        可用区状态。  取值：ACTIVE。
+        参数解释：可用区状态。  取值范围：ACTIVE。
 
         :param state: The state of this AvailabilityZone.
         :type state: str
@@ -112,7 +112,7 @@ class AvailabilityZone:
     def protocol(self):
         """Gets the protocol of this AvailabilityZone.
 
-        [未售罄的LB规格类别。  取值：L4 表示网络型LB未售罄；L7 表示应用型LB未售罄。](tag:hws,hk,hws_eu,otc,tlf,ctc,sbc,g42,cmcc,hk_g42,dt_test,mix,hk_sbc,hws_ocb,dt) [LB规格类别。取值：L4 表示网络型LB；L7 表示应用型LB。](tag:ocb,tm,fcs,fcs_dt,hcso,hcso_dt,hk_vdf)
+        [参数解释：未售罄的LB规格类别。  取值范围：L4 表示网络型LB未售罄；L7 表示应用型LB未售罄。](tag:hws,hk,hws_eu,otc,tlf,ctc,sbc,g42,cmcc,hk_g42,dt_test,mix,hk_sbc,hws_ocb,dt) [参数解释：LB规格类别。  取值范围：L4 表示网络型LB；L7 表示应用型LB。](tag:ocb,tm,fcs,fcs_dt,hcso,hcso_dt,hk_vdf)
 
         :return: The protocol of this AvailabilityZone.
         :rtype: list[str]
@@ -123,7 +123,7 @@ class AvailabilityZone:
     def protocol(self, protocol):
         """Sets the protocol of this AvailabilityZone.
 
-        [未售罄的LB规格类别。  取值：L4 表示网络型LB未售罄；L7 表示应用型LB未售罄。](tag:hws,hk,hws_eu,otc,tlf,ctc,sbc,g42,cmcc,hk_g42,dt_test,mix,hk_sbc,hws_ocb,dt) [LB规格类别。取值：L4 表示网络型LB；L7 表示应用型LB。](tag:ocb,tm,fcs,fcs_dt,hcso,hcso_dt,hk_vdf)
+        [参数解释：未售罄的LB规格类别。  取值范围：L4 表示网络型LB未售罄；L7 表示应用型LB未售罄。](tag:hws,hk,hws_eu,otc,tlf,ctc,sbc,g42,cmcc,hk_g42,dt_test,mix,hk_sbc,hws_ocb,dt) [参数解释：LB规格类别。  取值范围：L4 表示网络型LB；L7 表示应用型LB。](tag:ocb,tm,fcs,fcs_dt,hcso,hcso_dt,hk_vdf)
 
         :param protocol: The protocol of this AvailabilityZone.
         :type protocol: list[str]
@@ -134,7 +134,7 @@ class AvailabilityZone:
     def public_border_group(self):
         """Gets the public_border_group of this AvailabilityZone.
 
-        可用区组，如：center
+        参数解释：可用区组，如：center
 
         :return: The public_border_group of this AvailabilityZone.
         :rtype: str
@@ -145,7 +145,7 @@ class AvailabilityZone:
     def public_border_group(self, public_border_group):
         """Sets the public_border_group of this AvailabilityZone.
 
-        可用区组，如：center
+        参数解释：可用区组，如：center
 
         :param public_border_group: The public_border_group of this AvailabilityZone.
         :type public_border_group: str
@@ -156,7 +156,7 @@ class AvailabilityZone:
     def category(self):
         """Gets the category of this AvailabilityZone.
 
-        范围编码，0表示center，21表示homezone
+        参数解释：范围编码。  取值范围：0表示center，21表示homezone。
 
         :return: The category of this AvailabilityZone.
         :rtype: int
@@ -167,7 +167,7 @@ class AvailabilityZone:
     def category(self, category):
         """Sets the category of this AvailabilityZone.
 
-        范围编码，0表示center，21表示homezone
+        参数解释：范围编码。  取值范围：0表示center，21表示homezone。
 
         :param category: The category of this AvailabilityZone.
         :type category: int

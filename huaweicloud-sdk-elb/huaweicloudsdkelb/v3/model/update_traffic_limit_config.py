@@ -33,11 +33,11 @@ class UpdateTrafficLimitConfig:
 
         The model defined in huaweicloud sdk
 
-        :param qps: 转发策略整体限速。取值： 0-100000s。0表示不限速
+        :param qps: 参数解释：转发策略qps限速。  取值范围：0-100000，单位：个/秒。0表示不限速。
         :type qps: int
-        :param per_source_ip_qps: 对转发策略单源进行限速。 quic监听器下转发策略不支持配置单源限速，指定该字段时，赋值可以为0或者为null 取值： 0-100000s。0表示不限速，如果qps不为0，per_ip_qps需要小于qps。
+        :param per_source_ip_qps: 参数解释：对转发策略单源(单个客户端IP)进行限速。  约束限制： - quic监听器下转发策略不支持配置单源限速。 - 指定该字段时，赋值可以为0或者为null。 - 如果qps不为0，per_source_ip_qps需要小于qps。  取值范围：0-100000，单位：个/秒。0表示不限速。
         :type per_source_ip_qps: int
-        :param burst: 对转发策略单源进行限速。取值： 0-100000s。当qps超限的时候，不返回503，支持允许局部突增burst大小的请求。
+        :param burst: 参数解释：设置当单源qps超限时，允许的局部突增请求数量。超出该限制的请求将返回503。  取值范围：0-100000，单位：个/秒。
         :type burst: int
         """
         
@@ -59,7 +59,7 @@ class UpdateTrafficLimitConfig:
     def qps(self):
         """Gets the qps of this UpdateTrafficLimitConfig.
 
-        转发策略整体限速。取值： 0-100000s。0表示不限速
+        参数解释：转发策略qps限速。  取值范围：0-100000，单位：个/秒。0表示不限速。
 
         :return: The qps of this UpdateTrafficLimitConfig.
         :rtype: int
@@ -70,7 +70,7 @@ class UpdateTrafficLimitConfig:
     def qps(self, qps):
         """Sets the qps of this UpdateTrafficLimitConfig.
 
-        转发策略整体限速。取值： 0-100000s。0表示不限速
+        参数解释：转发策略qps限速。  取值范围：0-100000，单位：个/秒。0表示不限速。
 
         :param qps: The qps of this UpdateTrafficLimitConfig.
         :type qps: int
@@ -81,7 +81,7 @@ class UpdateTrafficLimitConfig:
     def per_source_ip_qps(self):
         """Gets the per_source_ip_qps of this UpdateTrafficLimitConfig.
 
-        对转发策略单源进行限速。 quic监听器下转发策略不支持配置单源限速，指定该字段时，赋值可以为0或者为null 取值： 0-100000s。0表示不限速，如果qps不为0，per_ip_qps需要小于qps。
+        参数解释：对转发策略单源(单个客户端IP)进行限速。  约束限制： - quic监听器下转发策略不支持配置单源限速。 - 指定该字段时，赋值可以为0或者为null。 - 如果qps不为0，per_source_ip_qps需要小于qps。  取值范围：0-100000，单位：个/秒。0表示不限速。
 
         :return: The per_source_ip_qps of this UpdateTrafficLimitConfig.
         :rtype: int
@@ -92,7 +92,7 @@ class UpdateTrafficLimitConfig:
     def per_source_ip_qps(self, per_source_ip_qps):
         """Sets the per_source_ip_qps of this UpdateTrafficLimitConfig.
 
-        对转发策略单源进行限速。 quic监听器下转发策略不支持配置单源限速，指定该字段时，赋值可以为0或者为null 取值： 0-100000s。0表示不限速，如果qps不为0，per_ip_qps需要小于qps。
+        参数解释：对转发策略单源(单个客户端IP)进行限速。  约束限制： - quic监听器下转发策略不支持配置单源限速。 - 指定该字段时，赋值可以为0或者为null。 - 如果qps不为0，per_source_ip_qps需要小于qps。  取值范围：0-100000，单位：个/秒。0表示不限速。
 
         :param per_source_ip_qps: The per_source_ip_qps of this UpdateTrafficLimitConfig.
         :type per_source_ip_qps: int
@@ -103,7 +103,7 @@ class UpdateTrafficLimitConfig:
     def burst(self):
         """Gets the burst of this UpdateTrafficLimitConfig.
 
-        对转发策略单源进行限速。取值： 0-100000s。当qps超限的时候，不返回503，支持允许局部突增burst大小的请求。
+        参数解释：设置当单源qps超限时，允许的局部突增请求数量。超出该限制的请求将返回503。  取值范围：0-100000，单位：个/秒。
 
         :return: The burst of this UpdateTrafficLimitConfig.
         :rtype: int
@@ -114,7 +114,7 @@ class UpdateTrafficLimitConfig:
     def burst(self, burst):
         """Sets the burst of this UpdateTrafficLimitConfig.
 
-        对转发策略单源进行限速。取值： 0-100000s。当qps超限的时候，不返回503，支持允许局部突增burst大小的请求。
+        参数解释：设置当单源qps超限时，允许的局部突增请求数量。超出该限制的请求将返回503。  取值范围：0-100000，单位：个/秒。
 
         :param burst: The burst of this UpdateTrafficLimitConfig.
         :type burst: int

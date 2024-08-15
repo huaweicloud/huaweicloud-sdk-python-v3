@@ -111,7 +111,7 @@ class ListLoadBalancersRequest:
         :type name: list[str]
         :param description: 负载均衡器的描述信息。  支持多值查询，查询条件格式：*description&#x3D;xxx&amp;description&#x3D;xxx*。
         :type description: list[str]
-        :param admin_state_up: 参数解释：负载均衡器的启用状态。  取值范围：布尔类型。 - true ：启用。 - false：停用。  [不支持该字段，请勿使用。](tag:dt,dt_test)
+        :param admin_state_up: 参数解释：负载均衡器的启用状态。  取值范围： - true ：启用。 - false：停用。  [不支持该字段，请勿使用。](tag:dt,dt_test)
         :type admin_state_up: bool
         :param provisioning_status: 负载均衡器的配置状态。  取值： - ACTIVE：使用中。 - PENDING_DELETE：删除中。  支持多值查询，查询条件格式：*provisioning_status&#x3D;xxx&amp;provisioning_status&#x3D;xxx*。
         :type provisioning_status: list[str]
@@ -125,7 +125,7 @@ class ListLoadBalancersRequest:
         :type vip_port_id: list[str]
         :param vip_address: 负载均衡器的IPv4虚拟IP地址。  支持多值查询，查询条件格式：*vip_address&#x3D;xxx&amp;vip_address&#x3D;xxx*。
         :type vip_address: list[str]
-        :param vip_subnet_cidr_id: 负载均衡器所在子网的IPv4子网ID，也称为该负载均衡器实例的前端子网。  支持多值查询，查询条件格式：*vip_subnet_cidr_id&#x3D;xxx&amp;vip_subnet_cidr_id&#x3D;xxx*。
+        :param vip_subnet_cidr_id: 负载均衡器所在子网的IPv4子网ID，也称为该负载均衡器实例的前端子网。   支持多值查询，查询条件格式：*vip_subnet_cidr_id&#x3D;xxx&amp;vip_subnet_cidr_id&#x3D;xxx*。
         :type vip_subnet_cidr_id: list[str]
         :param ipv6_vip_port_id: 双栈类型负载均衡器的IPv6对应的port ID。  支持多值查询，查询条件格式：*ipv6_vip_port_id&#x3D;xxx&amp;ipv6_vip_port_id&#x3D;xxx*。  [不支持IPv6，请勿使用。](tag:dt,dt_test)
         :type ipv6_vip_port_id: list[str]
@@ -422,7 +422,7 @@ class ListLoadBalancersRequest:
     def admin_state_up(self):
         """Gets the admin_state_up of this ListLoadBalancersRequest.
 
-        参数解释：负载均衡器的启用状态。  取值范围：布尔类型。 - true ：启用。 - false：停用。  [不支持该字段，请勿使用。](tag:dt,dt_test)
+        参数解释：负载均衡器的启用状态。  取值范围： - true ：启用。 - false：停用。  [不支持该字段，请勿使用。](tag:dt,dt_test)
 
         :return: The admin_state_up of this ListLoadBalancersRequest.
         :rtype: bool
@@ -433,7 +433,7 @@ class ListLoadBalancersRequest:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this ListLoadBalancersRequest.
 
-        参数解释：负载均衡器的启用状态。  取值范围：布尔类型。 - true ：启用。 - false：停用。  [不支持该字段，请勿使用。](tag:dt,dt_test)
+        参数解释：负载均衡器的启用状态。  取值范围： - true ：启用。 - false：停用。  [不支持该字段，请勿使用。](tag:dt,dt_test)
 
         :param admin_state_up: The admin_state_up of this ListLoadBalancersRequest.
         :type admin_state_up: bool
@@ -576,7 +576,7 @@ class ListLoadBalancersRequest:
     def vip_subnet_cidr_id(self):
         """Gets the vip_subnet_cidr_id of this ListLoadBalancersRequest.
 
-        负载均衡器所在子网的IPv4子网ID，也称为该负载均衡器实例的前端子网。  支持多值查询，查询条件格式：*vip_subnet_cidr_id=xxx&vip_subnet_cidr_id=xxx*。
+        负载均衡器所在子网的IPv4子网ID，也称为该负载均衡器实例的前端子网。   支持多值查询，查询条件格式：*vip_subnet_cidr_id=xxx&vip_subnet_cidr_id=xxx*。
 
         :return: The vip_subnet_cidr_id of this ListLoadBalancersRequest.
         :rtype: list[str]
@@ -587,7 +587,7 @@ class ListLoadBalancersRequest:
     def vip_subnet_cidr_id(self, vip_subnet_cidr_id):
         """Sets the vip_subnet_cidr_id of this ListLoadBalancersRequest.
 
-        负载均衡器所在子网的IPv4子网ID，也称为该负载均衡器实例的前端子网。  支持多值查询，查询条件格式：*vip_subnet_cidr_id=xxx&vip_subnet_cidr_id=xxx*。
+        负载均衡器所在子网的IPv4子网ID，也称为该负载均衡器实例的前端子网。   支持多值查询，查询条件格式：*vip_subnet_cidr_id=xxx&vip_subnet_cidr_id=xxx*。
 
         :param vip_subnet_cidr_id: The vip_subnet_cidr_id of this ListLoadBalancersRequest.
         :type vip_subnet_cidr_id: list[str]

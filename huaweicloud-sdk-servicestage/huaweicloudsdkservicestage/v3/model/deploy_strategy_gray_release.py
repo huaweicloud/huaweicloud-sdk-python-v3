@@ -18,49 +18,80 @@ class DeployStrategyGrayRelease:
 
     openapi_types = {
         'type': 'str',
+        'replica_surge_mode': 'str',
+        'deployment_mode': 'int',
         'first_batch_weight': 'int',
+        'rule_match_mode': 'str',
+        'rules': 'list[DeployStrategyGrayReleaseRules]',
         'first_batch_replica': 'int',
         'remaining_batch': 'int'
     }
 
     attribute_map = {
         'type': 'type',
+        'replica_surge_mode': 'replica_surge_mode',
+        'deployment_mode': 'deployment_mode',
         'first_batch_weight': 'first_batch_weight',
+        'rule_match_mode': 'rule_match_mode',
+        'rules': 'rules',
         'first_batch_replica': 'first_batch_replica',
         'remaining_batch': 'remaining_batch'
     }
 
-    def __init__(self, type=None, first_batch_weight=None, first_batch_replica=None, remaining_batch=None):
+    def __init__(self, type=None, replica_surge_mode=None, deployment_mode=None, first_batch_weight=None, rule_match_mode=None, rules=None, first_batch_replica=None, remaining_batch=None):
         """DeployStrategyGrayRelease
 
         The model defined in huaweicloud sdk
 
-        :param type: 
+        :param type: 灰度策略:WEIGHT为基于流量比例，CONTENT为基于内容
         :type type: str
-        :param first_batch_weight: only used for weight type
+        :param replica_surge_mode: 灰度实例新增模式:MIRROR为蓝绿，EXTRA为金丝雀（先增后减），NOSURGE为金丝雀（先减后增）
+        :type replica_surge_mode: str
+        :param deployment_mode: 类型1（使用应用网关、微服务引擎）、类型3（注册到微服务中心）、类型4（对接ELB独享型）、类型6（对接ELB共享型）
+        :type deployment_mode: int
+        :param first_batch_weight: 灰度流量比例(type为WEIGHT时配置)
         :type first_batch_weight: int
-        :param first_batch_replica: 
+        :param rule_match_mode: all满足所有条件，any满足任意条件(type为CONTENT时配置)
+        :type rule_match_mode: str
+        :param rules: 灰度匹配规则(type为CONTENT时配置)
+        :type rules: list[:class:`huaweicloudsdkservicestage.v3.DeployStrategyGrayReleaseRules`]
+        :param first_batch_replica: 首批灰度实例数量(replica_surge_mode为金丝雀类型时需要配置)
         :type first_batch_replica: int
-        :param remaining_batch: 
+        :param remaining_batch: 剩余实例部署批次(replica_surge_mode为金丝雀类型时需要配置)
         :type remaining_batch: int
         """
         
         
 
         self._type = None
+        self._replica_surge_mode = None
+        self._deployment_mode = None
         self._first_batch_weight = None
+        self._rule_match_mode = None
+        self._rules = None
         self._first_batch_replica = None
         self._remaining_batch = None
         self.discriminator = None
 
         self.type = type
-        self.first_batch_weight = first_batch_weight
-        self.first_batch_replica = first_batch_replica
-        self.remaining_batch = remaining_batch
+        self.replica_surge_mode = replica_surge_mode
+        self.deployment_mode = deployment_mode
+        if first_batch_weight is not None:
+            self.first_batch_weight = first_batch_weight
+        if rule_match_mode is not None:
+            self.rule_match_mode = rule_match_mode
+        if rules is not None:
+            self.rules = rules
+        if first_batch_replica is not None:
+            self.first_batch_replica = first_batch_replica
+        if remaining_batch is not None:
+            self.remaining_batch = remaining_batch
 
     @property
     def type(self):
         """Gets the type of this DeployStrategyGrayRelease.
+
+        灰度策略:WEIGHT为基于流量比例，CONTENT为基于内容
 
         :return: The type of this DeployStrategyGrayRelease.
         :rtype: str
@@ -71,16 +102,62 @@ class DeployStrategyGrayRelease:
     def type(self, type):
         """Sets the type of this DeployStrategyGrayRelease.
 
+        灰度策略:WEIGHT为基于流量比例，CONTENT为基于内容
+
         :param type: The type of this DeployStrategyGrayRelease.
         :type type: str
         """
         self._type = type
 
     @property
+    def replica_surge_mode(self):
+        """Gets the replica_surge_mode of this DeployStrategyGrayRelease.
+
+        灰度实例新增模式:MIRROR为蓝绿，EXTRA为金丝雀（先增后减），NOSURGE为金丝雀（先减后增）
+
+        :return: The replica_surge_mode of this DeployStrategyGrayRelease.
+        :rtype: str
+        """
+        return self._replica_surge_mode
+
+    @replica_surge_mode.setter
+    def replica_surge_mode(self, replica_surge_mode):
+        """Sets the replica_surge_mode of this DeployStrategyGrayRelease.
+
+        灰度实例新增模式:MIRROR为蓝绿，EXTRA为金丝雀（先增后减），NOSURGE为金丝雀（先减后增）
+
+        :param replica_surge_mode: The replica_surge_mode of this DeployStrategyGrayRelease.
+        :type replica_surge_mode: str
+        """
+        self._replica_surge_mode = replica_surge_mode
+
+    @property
+    def deployment_mode(self):
+        """Gets the deployment_mode of this DeployStrategyGrayRelease.
+
+        类型1（使用应用网关、微服务引擎）、类型3（注册到微服务中心）、类型4（对接ELB独享型）、类型6（对接ELB共享型）
+
+        :return: The deployment_mode of this DeployStrategyGrayRelease.
+        :rtype: int
+        """
+        return self._deployment_mode
+
+    @deployment_mode.setter
+    def deployment_mode(self, deployment_mode):
+        """Sets the deployment_mode of this DeployStrategyGrayRelease.
+
+        类型1（使用应用网关、微服务引擎）、类型3（注册到微服务中心）、类型4（对接ELB独享型）、类型6（对接ELB共享型）
+
+        :param deployment_mode: The deployment_mode of this DeployStrategyGrayRelease.
+        :type deployment_mode: int
+        """
+        self._deployment_mode = deployment_mode
+
+    @property
     def first_batch_weight(self):
         """Gets the first_batch_weight of this DeployStrategyGrayRelease.
 
-        only used for weight type
+        灰度流量比例(type为WEIGHT时配置)
 
         :return: The first_batch_weight of this DeployStrategyGrayRelease.
         :rtype: int
@@ -91,7 +168,7 @@ class DeployStrategyGrayRelease:
     def first_batch_weight(self, first_batch_weight):
         """Sets the first_batch_weight of this DeployStrategyGrayRelease.
 
-        only used for weight type
+        灰度流量比例(type为WEIGHT时配置)
 
         :param first_batch_weight: The first_batch_weight of this DeployStrategyGrayRelease.
         :type first_batch_weight: int
@@ -99,8 +176,54 @@ class DeployStrategyGrayRelease:
         self._first_batch_weight = first_batch_weight
 
     @property
+    def rule_match_mode(self):
+        """Gets the rule_match_mode of this DeployStrategyGrayRelease.
+
+        all满足所有条件，any满足任意条件(type为CONTENT时配置)
+
+        :return: The rule_match_mode of this DeployStrategyGrayRelease.
+        :rtype: str
+        """
+        return self._rule_match_mode
+
+    @rule_match_mode.setter
+    def rule_match_mode(self, rule_match_mode):
+        """Sets the rule_match_mode of this DeployStrategyGrayRelease.
+
+        all满足所有条件，any满足任意条件(type为CONTENT时配置)
+
+        :param rule_match_mode: The rule_match_mode of this DeployStrategyGrayRelease.
+        :type rule_match_mode: str
+        """
+        self._rule_match_mode = rule_match_mode
+
+    @property
+    def rules(self):
+        """Gets the rules of this DeployStrategyGrayRelease.
+
+        灰度匹配规则(type为CONTENT时配置)
+
+        :return: The rules of this DeployStrategyGrayRelease.
+        :rtype: list[:class:`huaweicloudsdkservicestage.v3.DeployStrategyGrayReleaseRules`]
+        """
+        return self._rules
+
+    @rules.setter
+    def rules(self, rules):
+        """Sets the rules of this DeployStrategyGrayRelease.
+
+        灰度匹配规则(type为CONTENT时配置)
+
+        :param rules: The rules of this DeployStrategyGrayRelease.
+        :type rules: list[:class:`huaweicloudsdkservicestage.v3.DeployStrategyGrayReleaseRules`]
+        """
+        self._rules = rules
+
+    @property
     def first_batch_replica(self):
         """Gets the first_batch_replica of this DeployStrategyGrayRelease.
+
+        首批灰度实例数量(replica_surge_mode为金丝雀类型时需要配置)
 
         :return: The first_batch_replica of this DeployStrategyGrayRelease.
         :rtype: int
@@ -111,6 +234,8 @@ class DeployStrategyGrayRelease:
     def first_batch_replica(self, first_batch_replica):
         """Sets the first_batch_replica of this DeployStrategyGrayRelease.
 
+        首批灰度实例数量(replica_surge_mode为金丝雀类型时需要配置)
+
         :param first_batch_replica: The first_batch_replica of this DeployStrategyGrayRelease.
         :type first_batch_replica: int
         """
@@ -120,6 +245,8 @@ class DeployStrategyGrayRelease:
     def remaining_batch(self):
         """Gets the remaining_batch of this DeployStrategyGrayRelease.
 
+        剩余实例部署批次(replica_surge_mode为金丝雀类型时需要配置)
+
         :return: The remaining_batch of this DeployStrategyGrayRelease.
         :rtype: int
         """
@@ -128,6 +255,8 @@ class DeployStrategyGrayRelease:
     @remaining_batch.setter
     def remaining_batch(self, remaining_batch):
         """Sets the remaining_batch of this DeployStrategyGrayRelease.
+
+        剩余实例部署批次(replica_surge_mode为金丝雀类型时需要配置)
 
         :param remaining_batch: The remaining_batch of this DeployStrategyGrayRelease.
         :type remaining_batch: int

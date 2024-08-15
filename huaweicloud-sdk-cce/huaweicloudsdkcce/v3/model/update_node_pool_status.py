@@ -21,7 +21,8 @@ class UpdateNodePoolStatus:
         'creating_node': 'int',
         'deleting_node': 'int',
         'phase': 'str',
-        'conditions': 'list[NodePoolCondition]'
+        'conditions': 'list[NodePoolCondition]',
+        'scale_group_statuses': 'list[ScaleGroupStatus]'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class UpdateNodePoolStatus:
         'creating_node': 'creatingNode',
         'deleting_node': 'deletingNode',
         'phase': 'phase',
-        'conditions': 'conditions'
+        'conditions': 'conditions',
+        'scale_group_statuses': 'scaleGroupStatuses'
     }
 
-    def __init__(self, current_node=None, creating_node=None, deleting_node=None, phase=None, conditions=None):
+    def __init__(self, current_node=None, creating_node=None, deleting_node=None, phase=None, conditions=None, scale_group_statuses=None):
         """UpdateNodePoolStatus
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class UpdateNodePoolStatus:
         :type phase: str
         :param conditions: 节点池当前详细状态列表，详情参见Condition类型定义。 
         :type conditions: list[:class:`huaweicloudsdkcce.v3.NodePoolCondition`]
+        :param scale_group_statuses: 伸缩组当前详细状态信息，详情参见ScaleGroupStatus类型定义
+        :type scale_group_statuses: list[:class:`huaweicloudsdkcce.v3.ScaleGroupStatus`]
         """
         
         
@@ -56,6 +60,7 @@ class UpdateNodePoolStatus:
         self._deleting_node = None
         self._phase = None
         self._conditions = None
+        self._scale_group_statuses = None
         self.discriminator = None
 
         if current_node is not None:
@@ -68,6 +73,8 @@ class UpdateNodePoolStatus:
             self.phase = phase
         if conditions is not None:
             self.conditions = conditions
+        if scale_group_statuses is not None:
+            self.scale_group_statuses = scale_group_statuses
 
     @property
     def current_node(self):
@@ -178,6 +185,28 @@ class UpdateNodePoolStatus:
         :type conditions: list[:class:`huaweicloudsdkcce.v3.NodePoolCondition`]
         """
         self._conditions = conditions
+
+    @property
+    def scale_group_statuses(self):
+        """Gets the scale_group_statuses of this UpdateNodePoolStatus.
+
+        伸缩组当前详细状态信息，详情参见ScaleGroupStatus类型定义
+
+        :return: The scale_group_statuses of this UpdateNodePoolStatus.
+        :rtype: list[:class:`huaweicloudsdkcce.v3.ScaleGroupStatus`]
+        """
+        return self._scale_group_statuses
+
+    @scale_group_statuses.setter
+    def scale_group_statuses(self, scale_group_statuses):
+        """Sets the scale_group_statuses of this UpdateNodePoolStatus.
+
+        伸缩组当前详细状态信息，详情参见ScaleGroupStatus类型定义
+
+        :param scale_group_statuses: The scale_group_statuses of this UpdateNodePoolStatus.
+        :type scale_group_statuses: list[:class:`huaweicloudsdkcce.v3.ScaleGroupStatus`]
+        """
+        self._scale_group_statuses = scale_group_statuses
 
     def to_dict(self):
         """Returns the model properties as a dict"""

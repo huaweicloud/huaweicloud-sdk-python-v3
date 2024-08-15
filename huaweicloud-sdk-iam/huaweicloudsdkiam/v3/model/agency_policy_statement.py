@@ -50,7 +50,8 @@ class AgencyPolicyStatement:
 
         self.action = action
         self.effect = effect
-        self.resource = resource
+        if resource is not None:
+            self.resource = resource
 
     @property
     def action(self):

@@ -33,11 +33,11 @@ class PublicIpInfo:
 
         The model defined in huaweicloud sdk
 
-        :param publicip_id: 弹性公网ip配置id
+        :param publicip_id: 参数解释：弹性公网ip配置id
         :type publicip_id: str
-        :param publicip_address: IP地址
+        :param publicip_address: 参数解释：IP地址
         :type publicip_address: str
-        :param ip_version: IP版本信息。 取值范围：4和6 4：IPv4 6：IPv6  [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
+        :param ip_version: 参数解释：IP版本信息。  取值范围：4和6 4：IPv4 6：IPv6  [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
         :type ip_version: int
         """
         
@@ -56,7 +56,7 @@ class PublicIpInfo:
     def publicip_id(self):
         """Gets the publicip_id of this PublicIpInfo.
 
-        弹性公网ip配置id
+        参数解释：弹性公网ip配置id
 
         :return: The publicip_id of this PublicIpInfo.
         :rtype: str
@@ -67,7 +67,7 @@ class PublicIpInfo:
     def publicip_id(self, publicip_id):
         """Sets the publicip_id of this PublicIpInfo.
 
-        弹性公网ip配置id
+        参数解释：弹性公网ip配置id
 
         :param publicip_id: The publicip_id of this PublicIpInfo.
         :type publicip_id: str
@@ -78,7 +78,7 @@ class PublicIpInfo:
     def publicip_address(self):
         """Gets the publicip_address of this PublicIpInfo.
 
-        IP地址
+        参数解释：IP地址
 
         :return: The publicip_address of this PublicIpInfo.
         :rtype: str
@@ -89,7 +89,7 @@ class PublicIpInfo:
     def publicip_address(self, publicip_address):
         """Sets the publicip_address of this PublicIpInfo.
 
-        IP地址
+        参数解释：IP地址
 
         :param publicip_address: The publicip_address of this PublicIpInfo.
         :type publicip_address: str
@@ -100,7 +100,7 @@ class PublicIpInfo:
     def ip_version(self):
         """Gets the ip_version of this PublicIpInfo.
 
-        IP版本信息。 取值范围：4和6 4：IPv4 6：IPv6  [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
+        参数解释：IP版本信息。  取值范围：4和6 4：IPv4 6：IPv6  [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
 
         :return: The ip_version of this PublicIpInfo.
         :rtype: int
@@ -111,7 +111,7 @@ class PublicIpInfo:
     def ip_version(self, ip_version):
         """Sets the ip_version of this PublicIpInfo.
 
-        IP版本信息。 取值范围：4和6 4：IPv4 6：IPv6  [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
+        参数解释：IP版本信息。  取值范围：4和6 4：IPv4 6：IPv6  [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
 
         :param ip_version: The ip_version of this PublicIpInfo.
         :type ip_version: int

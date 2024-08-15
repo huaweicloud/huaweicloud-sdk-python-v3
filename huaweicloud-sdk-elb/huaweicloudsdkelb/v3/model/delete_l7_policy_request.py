@@ -29,7 +29,7 @@ class DeleteL7PolicyRequest:
 
         The model defined in huaweicloud sdk
 
-        :param l7policy_id: 转发策略ID。
+        :param l7policy_id: 参数解释：转发策略ID。
         :type l7policy_id: str
         """
         
@@ -44,7 +44,7 @@ class DeleteL7PolicyRequest:
     def l7policy_id(self):
         """Gets the l7policy_id of this DeleteL7PolicyRequest.
 
-        转发策略ID。
+        参数解释：转发策略ID。
 
         :return: The l7policy_id of this DeleteL7PolicyRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class DeleteL7PolicyRequest:
     def l7policy_id(self, l7policy_id):
         """Sets the l7policy_id of this DeleteL7PolicyRequest.
 
-        转发策略ID。
+        参数解释：转发策略ID。
 
         :param l7policy_id: The l7policy_id of this DeleteL7PolicyRequest.
         :type l7policy_id: str

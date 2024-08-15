@@ -61,39 +61,39 @@ class ListL7PoliciesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param marker: 上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        :param marker: 参数解释：上一页最后一条记录的ID。  约束限制： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
         :type marker: str
         :param limit: 参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
         :type limit: int
-        :param page_reverse: 是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse&#x3D;true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
+        :param page_reverse: 参数解释：是否反向查询。  约束限制： - 必须与limit一起使用。 - 当page_reverse&#x3D;true时，若要查询上一页，marker取值为当前页返回值的previous_marker。  取值范围： - true：查询上一页。 - false：查询下一页。  默认取值：false
         :type page_reverse: bool
-        :param enterprise_project_id: 企业项目ID。不传时查询default企业项目\&quot;0\&quot;下的资源，鉴权按照default企业项目鉴权； 如果传值，则传已存在的企业项目ID或all_granted_eps（表示查询所有企业项目）进行查询。  支持多值查询，查询条件格式： *enterprise_project_id&#x3D;xxx&amp;enterprise_project_id&#x3D;xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        :param enterprise_project_id: 参数解释：企业项目ID。不传时查询default企业项目\&quot;0\&quot;下的资源，鉴权按照default企业项目鉴权。 如果传值，则传已存在的企业项目ID或all_granted_eps（表示查询所有企业项目）进行查询。  支持多值查询，查询条件格式： *enterprise_project_id&#x3D;xxx&amp;enterprise_project_id&#x3D;xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
         :type enterprise_project_id: list[str]
-        :param id: 转发策略ID。  支持多值查询，查询条件格式：*id&#x3D;xxx&amp;id&#x3D;xxx*。
+        :param id: 参数解释：转发策略ID。  支持多值查询，查询条件格式：*id&#x3D;xxx&amp;id&#x3D;xxx*。
         :type id: list[str]
-        :param name: 转发策略名称。  支持多值查询，查询条件格式：**name&#x3D;xxx&amp;name&#x3D;xxx**。
+        :param name: 参数解释：转发策略名称。  支持多值查询，查询条件格式：**name&#x3D;xxx&amp;name&#x3D;xxx**。
         :type name: list[str]
-        :param description: 转发策略额描述信息。  支持多值查询，查询条件格式：*description&#x3D;xxx&amp;description&#x3D;xxx*。
+        :param description: 参数解释：转发策略额描述信息。  支持多值查询，查询条件格式：*description&#x3D;xxx&amp;description&#x3D;xxx*。
         :type description: list[str]
-        :param admin_state_up: 转发策略的管理状态，默认为true。  不支持该字段，请勿使用。
+        :param admin_state_up: 参数解释：转发策略的管理状态。
         :type admin_state_up: bool
-        :param listener_id: 转发策略所属的监听器ID。  支持多值查询，查询条件格式：*******listener_id&#x3D;xxx&amp;listener_id&#x3D;xxx*******。
+        :param listener_id: 参数解释：转发策略所属的监听器ID。  支持多值查询，查询条件格式：*******listener_id&#x3D;xxx&amp;listener_id&#x3D;xxx*******。
         :type listener_id: list[str]
-        :param position: 转发策略的优先级。  支持多值查询，查询条件格式：****position&#x3D;xxx&amp;position&#x3D;xxx****。  不支持该字段，请勿使用。
+        :param position: 参数解释：转发策略的优先级。  支持多值查询，查询条件格式：****position&#x3D;xxx&amp;position&#x3D;xxx****。  不支持该字段，请勿使用。
         :type position: list[int]
-        :param action: 转发策略的转发动作。  取值： - REDIRECT_TO_POOL：转发到后端云服务器组。 - REDIRECT_TO_LISTENER：重定向到监听器。 - REDIRECT_TO_URL：重定向到URL。 - FIXED_RESPONSE：返回固定响应体。  支持多值查询，查询条件格式：*****action&#x3D;xxx&amp;action&#x3D;xxx*****。  [不支持REDIRECT_TO_URL和FIXED_RESPONSE](tag:hcso_dt)
+        :param action: 参数解释：转发策略的转发动作。  取值范围： - REDIRECT_TO_POOL：转发到后端云服务器组。 - REDIRECT_TO_LISTENER：重定向到监听器。 - REDIRECT_TO_URL：重定向到URL。 - FIXED_RESPONSE：返回固定响应体。  支持多值查询，查询条件格式：*****action&#x3D;xxx&amp;action&#x3D;xxx*****。  [不支持REDIRECT_TO_URL和FIXED_RESPONSE](tag:hcso_dt)
         :type action: list[str]
-        :param redirect_url: 转发到的url。必须满足格式: protocol://host:port/path?query。  支持多值查询，查询条件格式：****redirect_url&#x3D;xxx&amp;redirect_url&#x3D;xxx****。  不支持该字段，请勿使用。
+        :param redirect_url: 参数解释：转发到的url。  支持多值查询，查询条件格式：****redirect_url&#x3D;xxx&amp;redirect_url&#x3D;xxx****。  不支持该字段，请勿使用。
         :type redirect_url: list[str]
-        :param redirect_pool_id: 转发到pool的ID。  支持多值查询，查询条件格式：***redirect_pool_id&#x3D;xxx&amp;redirect_pool_id&#x3D;xxx***。
+        :param redirect_pool_id: 参数解释：转发到pool的ID。  支持多值查询，查询条件格式：***redirect_pool_id&#x3D;xxx&amp;redirect_pool_id&#x3D;xxx***。
         :type redirect_pool_id: list[str]
-        :param redirect_listener_id: 转发到的listener的ID。  支持多值查询，查询条件格式：**redirect_listener_id&#x3D;xxx&amp;redirect_listener_id&#x3D;xxx**。
+        :param redirect_listener_id: 参数解释：转发到的listener的ID。  支持多值查询，查询条件格式：**redirect_listener_id&#x3D;xxx&amp;redirect_listener_id&#x3D;xxx**。
         :type redirect_listener_id: list[str]
-        :param provisioning_status: 转发策略的配置状态。  取值范围： - ACTIVE: 默认值，表示正常。 - ERROR: 表示当前策略与同一监听器下的其他策略存在相同的规则配置。  支持多值查询，查询条件格式：*provisioning_status&#x3D;xxx&amp;provisioning_status&#x3D;xxx*。
+        :param provisioning_status: 参数解释：转发策略的配置状态。  取值范围： - ACTIVE: 表示正常。 - ERROR: 表示当前策略与同一监听器下的其他策略存在相同的规则配置。  支持多值查询，查询条件格式：*provisioning_status&#x3D;xxx&amp;provisioning_status&#x3D;xxx*。
         :type provisioning_status: list[str]
-        :param display_all_rules: 是否显示转发策略下的rule详细信息。  取值： - true：显示policy下面的rule的详细信息。 - false：只显示policy下面的rule的id信息
+        :param display_all_rules: 参数解释：是否显示转发策略下的rule详细信息。  取值范围： - true：显示policy下面的rule的详细信息。 - false：只显示policy下面的rule的id信息
         :type display_all_rules: bool
-        :param priority: 转发策略的优先级。数值越小，优先级越高。  支持多值查询，查询条件格式：*priority&#x3D;xxx&amp;priority&#x3D;xxx*。  [不支持该字段，请勿使用。](tag:hcso_dt)
+        :param priority: 参数解释：转发策略的优先级。数值越小，优先级越高。  支持多值查询，查询条件格式：*priority&#x3D;xxx&amp;priority&#x3D;xxx*。  [不支持该字段，请勿使用。](tag:hcso_dt)
         :type priority: list[int]
         """
         
@@ -157,7 +157,7 @@ class ListL7PoliciesRequest:
     def marker(self):
         """Gets the marker of this ListL7PoliciesRequest.
 
-        上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        参数解释：上一页最后一条记录的ID。  约束限制： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
         :return: The marker of this ListL7PoliciesRequest.
         :rtype: str
@@ -168,7 +168,7 @@ class ListL7PoliciesRequest:
     def marker(self, marker):
         """Sets the marker of this ListL7PoliciesRequest.
 
-        上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        参数解释：上一页最后一条记录的ID。  约束限制： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
         :param marker: The marker of this ListL7PoliciesRequest.
         :type marker: str
@@ -201,7 +201,7 @@ class ListL7PoliciesRequest:
     def page_reverse(self):
         """Gets the page_reverse of this ListL7PoliciesRequest.
 
-        是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
+        参数解释：是否反向查询。  约束限制： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。  取值范围： - true：查询上一页。 - false：查询下一页。  默认取值：false
 
         :return: The page_reverse of this ListL7PoliciesRequest.
         :rtype: bool
@@ -212,7 +212,7 @@ class ListL7PoliciesRequest:
     def page_reverse(self, page_reverse):
         """Sets the page_reverse of this ListL7PoliciesRequest.
 
-        是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
+        参数解释：是否反向查询。  约束限制： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。  取值范围： - true：查询上一页。 - false：查询下一页。  默认取值：false
 
         :param page_reverse: The page_reverse of this ListL7PoliciesRequest.
         :type page_reverse: bool
@@ -223,7 +223,7 @@ class ListL7PoliciesRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListL7PoliciesRequest.
 
-        企业项目ID。不传时查询default企业项目\"0\"下的资源，鉴权按照default企业项目鉴权； 如果传值，则传已存在的企业项目ID或all_granted_eps（表示查询所有企业项目）进行查询。  支持多值查询，查询条件格式： *enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        参数解释：企业项目ID。不传时查询default企业项目\"0\"下的资源，鉴权按照default企业项目鉴权。 如果传值，则传已存在的企业项目ID或all_granted_eps（表示查询所有企业项目）进行查询。  支持多值查询，查询条件格式： *enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
 
         :return: The enterprise_project_id of this ListL7PoliciesRequest.
         :rtype: list[str]
@@ -234,7 +234,7 @@ class ListL7PoliciesRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListL7PoliciesRequest.
 
-        企业项目ID。不传时查询default企业项目\"0\"下的资源，鉴权按照default企业项目鉴权； 如果传值，则传已存在的企业项目ID或all_granted_eps（表示查询所有企业项目）进行查询。  支持多值查询，查询条件格式： *enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        参数解释：企业项目ID。不传时查询default企业项目\"0\"下的资源，鉴权按照default企业项目鉴权。 如果传值，则传已存在的企业项目ID或all_granted_eps（表示查询所有企业项目）进行查询。  支持多值查询，查询条件格式： *enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
 
         :param enterprise_project_id: The enterprise_project_id of this ListL7PoliciesRequest.
         :type enterprise_project_id: list[str]
@@ -245,7 +245,7 @@ class ListL7PoliciesRequest:
     def id(self):
         """Gets the id of this ListL7PoliciesRequest.
 
-        转发策略ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx*。
+        参数解释：转发策略ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx*。
 
         :return: The id of this ListL7PoliciesRequest.
         :rtype: list[str]
@@ -256,7 +256,7 @@ class ListL7PoliciesRequest:
     def id(self, id):
         """Sets the id of this ListL7PoliciesRequest.
 
-        转发策略ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx*。
+        参数解释：转发策略ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx*。
 
         :param id: The id of this ListL7PoliciesRequest.
         :type id: list[str]
@@ -267,7 +267,7 @@ class ListL7PoliciesRequest:
     def name(self):
         """Gets the name of this ListL7PoliciesRequest.
 
-        转发策略名称。  支持多值查询，查询条件格式：**name=xxx&name=xxx**。
+        参数解释：转发策略名称。  支持多值查询，查询条件格式：**name=xxx&name=xxx**。
 
         :return: The name of this ListL7PoliciesRequest.
         :rtype: list[str]
@@ -278,7 +278,7 @@ class ListL7PoliciesRequest:
     def name(self, name):
         """Sets the name of this ListL7PoliciesRequest.
 
-        转发策略名称。  支持多值查询，查询条件格式：**name=xxx&name=xxx**。
+        参数解释：转发策略名称。  支持多值查询，查询条件格式：**name=xxx&name=xxx**。
 
         :param name: The name of this ListL7PoliciesRequest.
         :type name: list[str]
@@ -289,7 +289,7 @@ class ListL7PoliciesRequest:
     def description(self):
         """Gets the description of this ListL7PoliciesRequest.
 
-        转发策略额描述信息。  支持多值查询，查询条件格式：*description=xxx&description=xxx*。
+        参数解释：转发策略额描述信息。  支持多值查询，查询条件格式：*description=xxx&description=xxx*。
 
         :return: The description of this ListL7PoliciesRequest.
         :rtype: list[str]
@@ -300,7 +300,7 @@ class ListL7PoliciesRequest:
     def description(self, description):
         """Sets the description of this ListL7PoliciesRequest.
 
-        转发策略额描述信息。  支持多值查询，查询条件格式：*description=xxx&description=xxx*。
+        参数解释：转发策略额描述信息。  支持多值查询，查询条件格式：*description=xxx&description=xxx*。
 
         :param description: The description of this ListL7PoliciesRequest.
         :type description: list[str]
@@ -311,7 +311,7 @@ class ListL7PoliciesRequest:
     def admin_state_up(self):
         """Gets the admin_state_up of this ListL7PoliciesRequest.
 
-        转发策略的管理状态，默认为true。  不支持该字段，请勿使用。
+        参数解释：转发策略的管理状态。
 
         :return: The admin_state_up of this ListL7PoliciesRequest.
         :rtype: bool
@@ -322,7 +322,7 @@ class ListL7PoliciesRequest:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this ListL7PoliciesRequest.
 
-        转发策略的管理状态，默认为true。  不支持该字段，请勿使用。
+        参数解释：转发策略的管理状态。
 
         :param admin_state_up: The admin_state_up of this ListL7PoliciesRequest.
         :type admin_state_up: bool
@@ -333,7 +333,7 @@ class ListL7PoliciesRequest:
     def listener_id(self):
         """Gets the listener_id of this ListL7PoliciesRequest.
 
-        转发策略所属的监听器ID。  支持多值查询，查询条件格式：*******listener_id=xxx&listener_id=xxx*******。
+        参数解释：转发策略所属的监听器ID。  支持多值查询，查询条件格式：*******listener_id=xxx&listener_id=xxx*******。
 
         :return: The listener_id of this ListL7PoliciesRequest.
         :rtype: list[str]
@@ -344,7 +344,7 @@ class ListL7PoliciesRequest:
     def listener_id(self, listener_id):
         """Sets the listener_id of this ListL7PoliciesRequest.
 
-        转发策略所属的监听器ID。  支持多值查询，查询条件格式：*******listener_id=xxx&listener_id=xxx*******。
+        参数解释：转发策略所属的监听器ID。  支持多值查询，查询条件格式：*******listener_id=xxx&listener_id=xxx*******。
 
         :param listener_id: The listener_id of this ListL7PoliciesRequest.
         :type listener_id: list[str]
@@ -355,7 +355,7 @@ class ListL7PoliciesRequest:
     def position(self):
         """Gets the position of this ListL7PoliciesRequest.
 
-        转发策略的优先级。  支持多值查询，查询条件格式：****position=xxx&position=xxx****。  不支持该字段，请勿使用。
+        参数解释：转发策略的优先级。  支持多值查询，查询条件格式：****position=xxx&position=xxx****。  不支持该字段，请勿使用。
 
         :return: The position of this ListL7PoliciesRequest.
         :rtype: list[int]
@@ -366,7 +366,7 @@ class ListL7PoliciesRequest:
     def position(self, position):
         """Sets the position of this ListL7PoliciesRequest.
 
-        转发策略的优先级。  支持多值查询，查询条件格式：****position=xxx&position=xxx****。  不支持该字段，请勿使用。
+        参数解释：转发策略的优先级。  支持多值查询，查询条件格式：****position=xxx&position=xxx****。  不支持该字段，请勿使用。
 
         :param position: The position of this ListL7PoliciesRequest.
         :type position: list[int]
@@ -377,7 +377,7 @@ class ListL7PoliciesRequest:
     def action(self):
         """Gets the action of this ListL7PoliciesRequest.
 
-        转发策略的转发动作。  取值： - REDIRECT_TO_POOL：转发到后端云服务器组。 - REDIRECT_TO_LISTENER：重定向到监听器。 - REDIRECT_TO_URL：重定向到URL。 - FIXED_RESPONSE：返回固定响应体。  支持多值查询，查询条件格式：*****action=xxx&action=xxx*****。  [不支持REDIRECT_TO_URL和FIXED_RESPONSE](tag:hcso_dt)
+        参数解释：转发策略的转发动作。  取值范围： - REDIRECT_TO_POOL：转发到后端云服务器组。 - REDIRECT_TO_LISTENER：重定向到监听器。 - REDIRECT_TO_URL：重定向到URL。 - FIXED_RESPONSE：返回固定响应体。  支持多值查询，查询条件格式：*****action=xxx&action=xxx*****。  [不支持REDIRECT_TO_URL和FIXED_RESPONSE](tag:hcso_dt)
 
         :return: The action of this ListL7PoliciesRequest.
         :rtype: list[str]
@@ -388,7 +388,7 @@ class ListL7PoliciesRequest:
     def action(self, action):
         """Sets the action of this ListL7PoliciesRequest.
 
-        转发策略的转发动作。  取值： - REDIRECT_TO_POOL：转发到后端云服务器组。 - REDIRECT_TO_LISTENER：重定向到监听器。 - REDIRECT_TO_URL：重定向到URL。 - FIXED_RESPONSE：返回固定响应体。  支持多值查询，查询条件格式：*****action=xxx&action=xxx*****。  [不支持REDIRECT_TO_URL和FIXED_RESPONSE](tag:hcso_dt)
+        参数解释：转发策略的转发动作。  取值范围： - REDIRECT_TO_POOL：转发到后端云服务器组。 - REDIRECT_TO_LISTENER：重定向到监听器。 - REDIRECT_TO_URL：重定向到URL。 - FIXED_RESPONSE：返回固定响应体。  支持多值查询，查询条件格式：*****action=xxx&action=xxx*****。  [不支持REDIRECT_TO_URL和FIXED_RESPONSE](tag:hcso_dt)
 
         :param action: The action of this ListL7PoliciesRequest.
         :type action: list[str]
@@ -399,7 +399,7 @@ class ListL7PoliciesRequest:
     def redirect_url(self):
         """Gets the redirect_url of this ListL7PoliciesRequest.
 
-        转发到的url。必须满足格式: protocol://host:port/path?query。  支持多值查询，查询条件格式：****redirect_url=xxx&redirect_url=xxx****。  不支持该字段，请勿使用。
+        参数解释：转发到的url。  支持多值查询，查询条件格式：****redirect_url=xxx&redirect_url=xxx****。  不支持该字段，请勿使用。
 
         :return: The redirect_url of this ListL7PoliciesRequest.
         :rtype: list[str]
@@ -410,7 +410,7 @@ class ListL7PoliciesRequest:
     def redirect_url(self, redirect_url):
         """Sets the redirect_url of this ListL7PoliciesRequest.
 
-        转发到的url。必须满足格式: protocol://host:port/path?query。  支持多值查询，查询条件格式：****redirect_url=xxx&redirect_url=xxx****。  不支持该字段，请勿使用。
+        参数解释：转发到的url。  支持多值查询，查询条件格式：****redirect_url=xxx&redirect_url=xxx****。  不支持该字段，请勿使用。
 
         :param redirect_url: The redirect_url of this ListL7PoliciesRequest.
         :type redirect_url: list[str]
@@ -421,7 +421,7 @@ class ListL7PoliciesRequest:
     def redirect_pool_id(self):
         """Gets the redirect_pool_id of this ListL7PoliciesRequest.
 
-        转发到pool的ID。  支持多值查询，查询条件格式：***redirect_pool_id=xxx&redirect_pool_id=xxx***。
+        参数解释：转发到pool的ID。  支持多值查询，查询条件格式：***redirect_pool_id=xxx&redirect_pool_id=xxx***。
 
         :return: The redirect_pool_id of this ListL7PoliciesRequest.
         :rtype: list[str]
@@ -432,7 +432,7 @@ class ListL7PoliciesRequest:
     def redirect_pool_id(self, redirect_pool_id):
         """Sets the redirect_pool_id of this ListL7PoliciesRequest.
 
-        转发到pool的ID。  支持多值查询，查询条件格式：***redirect_pool_id=xxx&redirect_pool_id=xxx***。
+        参数解释：转发到pool的ID。  支持多值查询，查询条件格式：***redirect_pool_id=xxx&redirect_pool_id=xxx***。
 
         :param redirect_pool_id: The redirect_pool_id of this ListL7PoliciesRequest.
         :type redirect_pool_id: list[str]
@@ -443,7 +443,7 @@ class ListL7PoliciesRequest:
     def redirect_listener_id(self):
         """Gets the redirect_listener_id of this ListL7PoliciesRequest.
 
-        转发到的listener的ID。  支持多值查询，查询条件格式：**redirect_listener_id=xxx&redirect_listener_id=xxx**。
+        参数解释：转发到的listener的ID。  支持多值查询，查询条件格式：**redirect_listener_id=xxx&redirect_listener_id=xxx**。
 
         :return: The redirect_listener_id of this ListL7PoliciesRequest.
         :rtype: list[str]
@@ -454,7 +454,7 @@ class ListL7PoliciesRequest:
     def redirect_listener_id(self, redirect_listener_id):
         """Sets the redirect_listener_id of this ListL7PoliciesRequest.
 
-        转发到的listener的ID。  支持多值查询，查询条件格式：**redirect_listener_id=xxx&redirect_listener_id=xxx**。
+        参数解释：转发到的listener的ID。  支持多值查询，查询条件格式：**redirect_listener_id=xxx&redirect_listener_id=xxx**。
 
         :param redirect_listener_id: The redirect_listener_id of this ListL7PoliciesRequest.
         :type redirect_listener_id: list[str]
@@ -465,7 +465,7 @@ class ListL7PoliciesRequest:
     def provisioning_status(self):
         """Gets the provisioning_status of this ListL7PoliciesRequest.
 
-        转发策略的配置状态。  取值范围： - ACTIVE: 默认值，表示正常。 - ERROR: 表示当前策略与同一监听器下的其他策略存在相同的规则配置。  支持多值查询，查询条件格式：*provisioning_status=xxx&provisioning_status=xxx*。
+        参数解释：转发策略的配置状态。  取值范围： - ACTIVE: 表示正常。 - ERROR: 表示当前策略与同一监听器下的其他策略存在相同的规则配置。  支持多值查询，查询条件格式：*provisioning_status=xxx&provisioning_status=xxx*。
 
         :return: The provisioning_status of this ListL7PoliciesRequest.
         :rtype: list[str]
@@ -476,7 +476,7 @@ class ListL7PoliciesRequest:
     def provisioning_status(self, provisioning_status):
         """Sets the provisioning_status of this ListL7PoliciesRequest.
 
-        转发策略的配置状态。  取值范围： - ACTIVE: 默认值，表示正常。 - ERROR: 表示当前策略与同一监听器下的其他策略存在相同的规则配置。  支持多值查询，查询条件格式：*provisioning_status=xxx&provisioning_status=xxx*。
+        参数解释：转发策略的配置状态。  取值范围： - ACTIVE: 表示正常。 - ERROR: 表示当前策略与同一监听器下的其他策略存在相同的规则配置。  支持多值查询，查询条件格式：*provisioning_status=xxx&provisioning_status=xxx*。
 
         :param provisioning_status: The provisioning_status of this ListL7PoliciesRequest.
         :type provisioning_status: list[str]
@@ -487,7 +487,7 @@ class ListL7PoliciesRequest:
     def display_all_rules(self):
         """Gets the display_all_rules of this ListL7PoliciesRequest.
 
-        是否显示转发策略下的rule详细信息。  取值： - true：显示policy下面的rule的详细信息。 - false：只显示policy下面的rule的id信息
+        参数解释：是否显示转发策略下的rule详细信息。  取值范围： - true：显示policy下面的rule的详细信息。 - false：只显示policy下面的rule的id信息
 
         :return: The display_all_rules of this ListL7PoliciesRequest.
         :rtype: bool
@@ -498,7 +498,7 @@ class ListL7PoliciesRequest:
     def display_all_rules(self, display_all_rules):
         """Sets the display_all_rules of this ListL7PoliciesRequest.
 
-        是否显示转发策略下的rule详细信息。  取值： - true：显示policy下面的rule的详细信息。 - false：只显示policy下面的rule的id信息
+        参数解释：是否显示转发策略下的rule详细信息。  取值范围： - true：显示policy下面的rule的详细信息。 - false：只显示policy下面的rule的id信息
 
         :param display_all_rules: The display_all_rules of this ListL7PoliciesRequest.
         :type display_all_rules: bool
@@ -509,7 +509,7 @@ class ListL7PoliciesRequest:
     def priority(self):
         """Gets the priority of this ListL7PoliciesRequest.
 
-        转发策略的优先级。数值越小，优先级越高。  支持多值查询，查询条件格式：*priority=xxx&priority=xxx*。  [不支持该字段，请勿使用。](tag:hcso_dt)
+        参数解释：转发策略的优先级。数值越小，优先级越高。  支持多值查询，查询条件格式：*priority=xxx&priority=xxx*。  [不支持该字段，请勿使用。](tag:hcso_dt)
 
         :return: The priority of this ListL7PoliciesRequest.
         :rtype: list[int]
@@ -520,7 +520,7 @@ class ListL7PoliciesRequest:
     def priority(self, priority):
         """Sets the priority of this ListL7PoliciesRequest.
 
-        转发策略的优先级。数值越小，优先级越高。  支持多值查询，查询条件格式：*priority=xxx&priority=xxx*。  [不支持该字段，请勿使用。](tag:hcso_dt)
+        参数解释：转发策略的优先级。数值越小，优先级越高。  支持多值查询，查询条件格式：*priority=xxx&priority=xxx*。  [不支持该字段，请勿使用。](tag:hcso_dt)
 
         :param priority: The priority of this ListL7PoliciesRequest.
         :type priority: list[int]

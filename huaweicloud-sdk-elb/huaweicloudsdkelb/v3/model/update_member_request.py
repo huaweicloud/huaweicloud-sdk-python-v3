@@ -35,7 +35,7 @@ class UpdateMemberRequest:
 
         :param member_id: 后端服务器ID。 &gt;说明： 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
         :type member_id: str
-        :param pool_id: 后端服务器组ID。
+        :param pool_id: 参数解释：后端服务器组ID。
         :type pool_id: str
         :param body: Body of the UpdateMemberRequest
         :type body: :class:`huaweicloudsdkelb.v3.UpdateMemberRequestBody`
@@ -79,7 +79,7 @@ class UpdateMemberRequest:
     def pool_id(self):
         """Gets the pool_id of this UpdateMemberRequest.
 
-        后端服务器组ID。
+        参数解释：后端服务器组ID。
 
         :return: The pool_id of this UpdateMemberRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class UpdateMemberRequest:
     def pool_id(self, pool_id):
         """Sets the pool_id of this UpdateMemberRequest.
 
-        后端服务器组ID。
+        参数解释：后端服务器组ID。
 
         :param pool_id: The pool_id of this UpdateMemberRequest.
         :type pool_id: str

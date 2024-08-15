@@ -31,7 +31,7 @@ class BatchCreateMembersRequest:
 
         The model defined in huaweicloud sdk
 
-        :param pool_id: 后端服务器组ID。
+        :param pool_id: 参数解释：后端服务器组ID。
         :type pool_id: str
         :param body: Body of the BatchCreateMembersRequest
         :type body: :class:`huaweicloudsdkelb.v3.BatchCreateMembersRequestBody`
@@ -51,7 +51,7 @@ class BatchCreateMembersRequest:
     def pool_id(self):
         """Gets the pool_id of this BatchCreateMembersRequest.
 
-        后端服务器组ID。
+        参数解释：后端服务器组ID。
 
         :return: The pool_id of this BatchCreateMembersRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class BatchCreateMembersRequest:
     def pool_id(self, pool_id):
         """Sets the pool_id of this BatchCreateMembersRequest.
 
-        后端服务器组ID。
+        参数解释：后端服务器组ID。
 
         :param pool_id: The pool_id of this BatchCreateMembersRequest.
         :type pool_id: str

@@ -31,7 +31,9 @@ class PubDetail:
         'pub_abstract': 'str',
         'signs_for_auto_get_port': 'list[str]',
         'company_id': 'str',
-        'pub_remark': 'str'
+        'pub_remark': 'str',
+        'approve_state': 'int',
+        'areas_for_auto_get_port': 'list[str]'
     }
 
     attribute_map = {
@@ -49,10 +51,12 @@ class PubDetail:
         'pub_abstract': 'pub_abstract',
         'signs_for_auto_get_port': 'signs_for_auto_get_port',
         'company_id': 'company_id',
-        'pub_remark': 'pub_remark'
+        'pub_remark': 'pub_remark',
+        'approve_state': 'approve_state',
+        'areas_for_auto_get_port': 'areas_for_auto_get_port'
     }
 
-    def __init__(self, pub_id=None, oper_time=None, state=None, online_time=None, company_name=None, pub_name=None, logo_img=None, logo_url=None, authorization_files=None, auto_get_port=None, industry=None, pub_abstract=None, signs_for_auto_get_port=None, company_id=None, pub_remark=None):
+    def __init__(self, pub_id=None, oper_time=None, state=None, online_time=None, company_name=None, pub_name=None, logo_img=None, logo_url=None, authorization_files=None, auto_get_port=None, industry=None, pub_abstract=None, signs_for_auto_get_port=None, company_id=None, pub_remark=None, approve_state=None, areas_for_auto_get_port=None):
         """PubDetail
 
         The model defined in huaweicloud sdk
@@ -87,6 +91,10 @@ class PubDetail:
         :type company_id: str
         :param pub_remark: 服务号备注。
         :type pub_remark: str
+        :param approve_state: 审核状态。 - 1：审核中 - 2：审核通过 - 3：驳回 
+        :type approve_state: int
+        :param areas_for_auto_get_port: 自动收集端口生效的地区列表。地区取值见《地区名称列表》。 
+        :type areas_for_auto_get_port: list[str]
         """
         
         
@@ -106,6 +114,8 @@ class PubDetail:
         self._signs_for_auto_get_port = None
         self._company_id = None
         self._pub_remark = None
+        self._approve_state = None
+        self._areas_for_auto_get_port = None
         self.discriminator = None
 
         if pub_id is not None:
@@ -138,6 +148,10 @@ class PubDetail:
             self.company_id = company_id
         if pub_remark is not None:
             self.pub_remark = pub_remark
+        if approve_state is not None:
+            self.approve_state = approve_state
+        if areas_for_auto_get_port is not None:
+            self.areas_for_auto_get_port = areas_for_auto_get_port
 
     @property
     def pub_id(self):
@@ -468,6 +482,50 @@ class PubDetail:
         :type pub_remark: str
         """
         self._pub_remark = pub_remark
+
+    @property
+    def approve_state(self):
+        """Gets the approve_state of this PubDetail.
+
+        审核状态。 - 1：审核中 - 2：审核通过 - 3：驳回 
+
+        :return: The approve_state of this PubDetail.
+        :rtype: int
+        """
+        return self._approve_state
+
+    @approve_state.setter
+    def approve_state(self, approve_state):
+        """Sets the approve_state of this PubDetail.
+
+        审核状态。 - 1：审核中 - 2：审核通过 - 3：驳回 
+
+        :param approve_state: The approve_state of this PubDetail.
+        :type approve_state: int
+        """
+        self._approve_state = approve_state
+
+    @property
+    def areas_for_auto_get_port(self):
+        """Gets the areas_for_auto_get_port of this PubDetail.
+
+        自动收集端口生效的地区列表。地区取值见《地区名称列表》。 
+
+        :return: The areas_for_auto_get_port of this PubDetail.
+        :rtype: list[str]
+        """
+        return self._areas_for_auto_get_port
+
+    @areas_for_auto_get_port.setter
+    def areas_for_auto_get_port(self, areas_for_auto_get_port):
+        """Sets the areas_for_auto_get_port of this PubDetail.
+
+        自动收集端口生效的地区列表。地区取值见《地区名称列表》。 
+
+        :param areas_for_auto_get_port: The areas_for_auto_get_port of this PubDetail.
+        :type areas_for_auto_get_port: list[str]
+        """
+        self._areas_for_auto_get_port = areas_for_auto_get_port
 
     def to_dict(self):
         """Returns the model properties as a dict"""

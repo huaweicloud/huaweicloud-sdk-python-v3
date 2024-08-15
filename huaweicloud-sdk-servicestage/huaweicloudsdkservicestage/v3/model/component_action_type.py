@@ -17,6 +17,7 @@ class ComponentActionType:
     CONTINUE_DEPLOY = "continue_deploy"
     CHECK_GRAY_RELEASE = "check_gray_release"
     MODIFY_GRAY_RULE = "modify_gray_rule"
+    ROLLBACK_CURRENT = "rollback_current"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

@@ -60,8 +60,7 @@ class CreatePubFastappModel:
 
         self.name = name
         self.logo_img = logo_img
-        if description is not None:
-            self.description = description
+        self.description = description
         self.deeplink = deeplink
         self.depend_engine_version = depend_engine_version
 

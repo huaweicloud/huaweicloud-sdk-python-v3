@@ -33,7 +33,7 @@ class UploadMediaRequestBody:
 
         :param file: 图片资源。  &gt; 文件格式与文件名后缀需保持一致，请勿修改原始文件后缀，否则导致资源上传失败。 
         :type file: :class:`huaweicloudsdkcore.http.formdata.FormFile`
-        :param file_type: 文件类型。 - PUB_LOGO：上传服务号LOGO。支持jpg、bmp、png和jpeg格式，分辨率大于等于240*240且比例为1:1，大小不超过100K。 - BG_IMAGE：上传服务号主页背景图。分辨率大于等于1440*810。 - FASTAPP_LOGO：上传快应用LOGO。上传快应用LOGO。支持jpg、bmp和jpeg格式，分辨率大于等于192*192，大小不超过4M。 - OTHER：上传授权证明和营业执照等 
+        :param file_type: 文件类型。 - PUB_LOGO：上传服务号LOGO。支持jpg、bmp、png和jpeg格式，分辨率大于等于240*240且比例为1:1，大小不超过100K。 - BG_IMAGE：上传服务号主页背景图。支持jpg、bmp、png和jpeg格式，分辨率大于等于1440*810且比例为16:9，大小不超过4M。 - FASTAPP_LOGO：上传快应用LOGO。支持jpg、bmp、png和jpeg格式，分辨率大于等于192*192且比例为1:1，大小不超过4M。 - OTHER：上传授权证明和营业执照等 
         :type file_type: str
         """
         
@@ -72,7 +72,7 @@ class UploadMediaRequestBody:
     def file_type(self):
         """Gets the file_type of this UploadMediaRequestBody.
 
-        文件类型。 - PUB_LOGO：上传服务号LOGO。支持jpg、bmp、png和jpeg格式，分辨率大于等于240*240且比例为1:1，大小不超过100K。 - BG_IMAGE：上传服务号主页背景图。分辨率大于等于1440*810。 - FASTAPP_LOGO：上传快应用LOGO。上传快应用LOGO。支持jpg、bmp和jpeg格式，分辨率大于等于192*192，大小不超过4M。 - OTHER：上传授权证明和营业执照等 
+        文件类型。 - PUB_LOGO：上传服务号LOGO。支持jpg、bmp、png和jpeg格式，分辨率大于等于240*240且比例为1:1，大小不超过100K。 - BG_IMAGE：上传服务号主页背景图。支持jpg、bmp、png和jpeg格式，分辨率大于等于1440*810且比例为16:9，大小不超过4M。 - FASTAPP_LOGO：上传快应用LOGO。支持jpg、bmp、png和jpeg格式，分辨率大于等于192*192且比例为1:1，大小不超过4M。 - OTHER：上传授权证明和营业执照等 
 
         :return: The file_type of this UploadMediaRequestBody.
         :rtype: str
@@ -83,7 +83,7 @@ class UploadMediaRequestBody:
     def file_type(self, file_type):
         """Sets the file_type of this UploadMediaRequestBody.
 
-        文件类型。 - PUB_LOGO：上传服务号LOGO。支持jpg、bmp、png和jpeg格式，分辨率大于等于240*240且比例为1:1，大小不超过100K。 - BG_IMAGE：上传服务号主页背景图。分辨率大于等于1440*810。 - FASTAPP_LOGO：上传快应用LOGO。上传快应用LOGO。支持jpg、bmp和jpeg格式，分辨率大于等于192*192，大小不超过4M。 - OTHER：上传授权证明和营业执照等 
+        文件类型。 - PUB_LOGO：上传服务号LOGO。支持jpg、bmp、png和jpeg格式，分辨率大于等于240*240且比例为1:1，大小不超过100K。 - BG_IMAGE：上传服务号主页背景图。支持jpg、bmp、png和jpeg格式，分辨率大于等于1440*810且比例为16:9，大小不超过4M。 - FASTAPP_LOGO：上传快应用LOGO。支持jpg、bmp、png和jpeg格式，分辨率大于等于192*192且比例为1:1，大小不超过4M。 - OTHER：上传授权证明和营业执照等 
 
         :param file_type: The file_type of this UploadMediaRequestBody.
         :type file_type: str

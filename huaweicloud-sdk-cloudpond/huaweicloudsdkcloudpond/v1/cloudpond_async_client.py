@@ -209,6 +209,9 @@ class CloudPondAsyncClient(Client):
         if 'sort_dir' in local_var_params:
             query_params.append(('sort_dir', local_var_params['sort_dir']))
             collection_formats['sort_dir'] = 'multi'
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+            collection_formats['enterprise_project_id'] = 'multi'
         if 'id' in local_var_params:
             query_params.append(('id', local_var_params['id']))
             collection_formats['id'] = 'multi'

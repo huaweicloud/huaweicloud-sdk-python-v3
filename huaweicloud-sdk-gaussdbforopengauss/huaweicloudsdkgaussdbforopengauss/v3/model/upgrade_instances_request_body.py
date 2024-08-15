@@ -29,7 +29,7 @@ class UpgradeInstancesRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param instance_ids: 批量实例ID
+        :param instance_ids: 批量实例ID。
         :type instance_ids: list[str]
         """
         
@@ -45,7 +45,7 @@ class UpgradeInstancesRequestBody:
     def instance_ids(self):
         """Gets the instance_ids of this UpgradeInstancesRequestBody.
 
-        批量实例ID
+        批量实例ID。
 
         :return: The instance_ids of this UpgradeInstancesRequestBody.
         :rtype: list[str]
@@ -56,7 +56,7 @@ class UpgradeInstancesRequestBody:
     def instance_ids(self, instance_ids):
         """Sets the instance_ids of this UpgradeInstancesRequestBody.
 
-        批量实例ID
+        批量实例ID。
 
         :param instance_ids: The instance_ids of this UpgradeInstancesRequestBody.
         :type instance_ids: list[str]

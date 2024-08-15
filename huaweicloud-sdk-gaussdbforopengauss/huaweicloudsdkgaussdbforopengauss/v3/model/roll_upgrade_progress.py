@@ -37,15 +37,15 @@ class RollUpgradeProgress:
 
         The model defined in huaweicloud sdk
 
-        :param upgraded_dn_group_numbers: 已升级分片数，非独立部署返回null
+        :param upgraded_dn_group_numbers: 已升级分片数，非独立部署返回null。
         :type upgraded_dn_group_numbers: str
-        :param total_dn_group_numbers: 总分片数，非独立部署返回null
+        :param total_dn_group_numbers: 总分片数，非独立部署返回null。
         :type total_dn_group_numbers: str
-        :param not_fully_upgraded_az: 未完成升级的az，以“,”隔开，独立部署返回null
+        :param not_fully_upgraded_az: 未完成升级的az，以“,”隔开，独立部署返回null。
         :type not_fully_upgraded_az: str
-        :param already_upgraded_az: 已升级az，以“,”隔开，独立部署返回null
+        :param already_upgraded_az: 已升级az，以“,”隔开，独立部署返回null。
         :type already_upgraded_az: str
-        :param az_description_map: az描述键值对Map&lt;String,String&gt;
+        :param az_description_map: az描述键值对Map&lt;String,String&gt;。
         :type az_description_map: dict(str, str)
         """
         
@@ -73,7 +73,7 @@ class RollUpgradeProgress:
     def upgraded_dn_group_numbers(self):
         """Gets the upgraded_dn_group_numbers of this RollUpgradeProgress.
 
-        已升级分片数，非独立部署返回null
+        已升级分片数，非独立部署返回null。
 
         :return: The upgraded_dn_group_numbers of this RollUpgradeProgress.
         :rtype: str
@@ -84,7 +84,7 @@ class RollUpgradeProgress:
     def upgraded_dn_group_numbers(self, upgraded_dn_group_numbers):
         """Sets the upgraded_dn_group_numbers of this RollUpgradeProgress.
 
-        已升级分片数，非独立部署返回null
+        已升级分片数，非独立部署返回null。
 
         :param upgraded_dn_group_numbers: The upgraded_dn_group_numbers of this RollUpgradeProgress.
         :type upgraded_dn_group_numbers: str
@@ -95,7 +95,7 @@ class RollUpgradeProgress:
     def total_dn_group_numbers(self):
         """Gets the total_dn_group_numbers of this RollUpgradeProgress.
 
-        总分片数，非独立部署返回null
+        总分片数，非独立部署返回null。
 
         :return: The total_dn_group_numbers of this RollUpgradeProgress.
         :rtype: str
@@ -106,7 +106,7 @@ class RollUpgradeProgress:
     def total_dn_group_numbers(self, total_dn_group_numbers):
         """Sets the total_dn_group_numbers of this RollUpgradeProgress.
 
-        总分片数，非独立部署返回null
+        总分片数，非独立部署返回null。
 
         :param total_dn_group_numbers: The total_dn_group_numbers of this RollUpgradeProgress.
         :type total_dn_group_numbers: str
@@ -117,7 +117,7 @@ class RollUpgradeProgress:
     def not_fully_upgraded_az(self):
         """Gets the not_fully_upgraded_az of this RollUpgradeProgress.
 
-        未完成升级的az，以“,”隔开，独立部署返回null
+        未完成升级的az，以“,”隔开，独立部署返回null。
 
         :return: The not_fully_upgraded_az of this RollUpgradeProgress.
         :rtype: str
@@ -128,7 +128,7 @@ class RollUpgradeProgress:
     def not_fully_upgraded_az(self, not_fully_upgraded_az):
         """Sets the not_fully_upgraded_az of this RollUpgradeProgress.
 
-        未完成升级的az，以“,”隔开，独立部署返回null
+        未完成升级的az，以“,”隔开，独立部署返回null。
 
         :param not_fully_upgraded_az: The not_fully_upgraded_az of this RollUpgradeProgress.
         :type not_fully_upgraded_az: str
@@ -139,7 +139,7 @@ class RollUpgradeProgress:
     def already_upgraded_az(self):
         """Gets the already_upgraded_az of this RollUpgradeProgress.
 
-        已升级az，以“,”隔开，独立部署返回null
+        已升级az，以“,”隔开，独立部署返回null。
 
         :return: The already_upgraded_az of this RollUpgradeProgress.
         :rtype: str
@@ -150,7 +150,7 @@ class RollUpgradeProgress:
     def already_upgraded_az(self, already_upgraded_az):
         """Sets the already_upgraded_az of this RollUpgradeProgress.
 
-        已升级az，以“,”隔开，独立部署返回null
+        已升级az，以“,”隔开，独立部署返回null。
 
         :param already_upgraded_az: The already_upgraded_az of this RollUpgradeProgress.
         :type already_upgraded_az: str
@@ -161,7 +161,7 @@ class RollUpgradeProgress:
     def az_description_map(self):
         """Gets the az_description_map of this RollUpgradeProgress.
 
-        az描述键值对Map<String,String>
+        az描述键值对Map<String,String>。
 
         :return: The az_description_map of this RollUpgradeProgress.
         :rtype: dict(str, str)
@@ -172,7 +172,7 @@ class RollUpgradeProgress:
     def az_description_map(self, az_description_map):
         """Sets the az_description_map of this RollUpgradeProgress.
 
-        az描述键值对Map<String,String>
+        az描述键值对Map<String,String>。
 
         :param az_description_map: The az_description_map of this RollUpgradeProgress.
         :type az_description_map: dict(str, str)

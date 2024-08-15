@@ -35,11 +35,11 @@ class UpgradeTypeInfo:
 
         The model defined in huaweicloud sdk
 
-        :param upgrade_type: 升级类型,grey&#x3D;灰度升级,inplace&#x3D;就地升级,hotfix&#x3D;热补丁升级
+        :param upgrade_type: 升级类型,grey&#x3D;灰度升级,inplace&#x3D;就地升级,hotfix&#x3D;热补丁升级。
         :type upgrade_type: str
-        :param enable: 可用，不可用
+        :param enable: 可用，不可用。
         :type enable: bool
-        :param upgrade_action_list: 升级操作列表
+        :param upgrade_action_list: 升级操作列表。
         :type upgrade_action_list: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.UpgradeActionInfo`]
         :param is_parallel_upgrade: 是否正在进行AZ内并行升级。 -true：当前实例处于灰度升级的升级待观察升级方式中，已选择了AZ内并行升级方式，后续无法更改。 -false：当前实例处于升级流程中，未选择AZ内并行升级的方式，后续无法更改。null：当前实例尚未处于升级流程中。
         :type is_parallel_upgrade: bool
@@ -66,7 +66,7 @@ class UpgradeTypeInfo:
     def upgrade_type(self):
         """Gets the upgrade_type of this UpgradeTypeInfo.
 
-        升级类型,grey=灰度升级,inplace=就地升级,hotfix=热补丁升级
+        升级类型,grey=灰度升级,inplace=就地升级,hotfix=热补丁升级。
 
         :return: The upgrade_type of this UpgradeTypeInfo.
         :rtype: str
@@ -77,7 +77,7 @@ class UpgradeTypeInfo:
     def upgrade_type(self, upgrade_type):
         """Sets the upgrade_type of this UpgradeTypeInfo.
 
-        升级类型,grey=灰度升级,inplace=就地升级,hotfix=热补丁升级
+        升级类型,grey=灰度升级,inplace=就地升级,hotfix=热补丁升级。
 
         :param upgrade_type: The upgrade_type of this UpgradeTypeInfo.
         :type upgrade_type: str
@@ -88,7 +88,7 @@ class UpgradeTypeInfo:
     def enable(self):
         """Gets the enable of this UpgradeTypeInfo.
 
-        可用，不可用
+        可用，不可用。
 
         :return: The enable of this UpgradeTypeInfo.
         :rtype: bool
@@ -99,7 +99,7 @@ class UpgradeTypeInfo:
     def enable(self, enable):
         """Sets the enable of this UpgradeTypeInfo.
 
-        可用，不可用
+        可用，不可用。
 
         :param enable: The enable of this UpgradeTypeInfo.
         :type enable: bool
@@ -110,7 +110,7 @@ class UpgradeTypeInfo:
     def upgrade_action_list(self):
         """Gets the upgrade_action_list of this UpgradeTypeInfo.
 
-        升级操作列表
+        升级操作列表。
 
         :return: The upgrade_action_list of this UpgradeTypeInfo.
         :rtype: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.UpgradeActionInfo`]
@@ -121,7 +121,7 @@ class UpgradeTypeInfo:
     def upgrade_action_list(self, upgrade_action_list):
         """Sets the upgrade_action_list of this UpgradeTypeInfo.
 
-        升级操作列表
+        升级操作列表。
 
         :param upgrade_action_list: The upgrade_action_list of this UpgradeTypeInfo.
         :type upgrade_action_list: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.UpgradeActionInfo`]

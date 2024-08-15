@@ -28,7 +28,9 @@ class QueryLtsLogParams:
         'search_type': 'str',
         'limit': 'int',
         'highlight': 'bool',
-        'is_iterative': 'bool'
+        'is_iterative': 'bool',
+        'query': 'str',
+        'is_analysis_query': 'bool'
     }
 
     attribute_map = {
@@ -43,10 +45,12 @@ class QueryLtsLogParams:
         'search_type': 'search_type',
         'limit': 'limit',
         'highlight': 'highlight',
-        'is_iterative': 'is_iterative'
+        'is_iterative': 'is_iterative',
+        'query': 'query',
+        'is_analysis_query': 'is_analysis_query'
     }
 
-    def __init__(self, start_time=None, end_time=None, labels=None, is_count=None, keywords=None, line_num=None, time__=None, is_desc=None, search_type=None, limit=None, highlight=None, is_iterative=None):
+    def __init__(self, start_time=None, end_time=None, labels=None, is_count=None, keywords=None, line_num=None, time__=None, is_desc=None, search_type=None, limit=None, highlight=None, is_iterative=None, query=None, is_analysis_query=None):
         """QueryLtsLogParams
 
         The model defined in huaweicloud sdk
@@ -75,6 +79,10 @@ class QueryLtsLogParams:
         :type highlight: bool
         :param is_iterative: 日志迭代查询，默认为false（不开启迭代），true为开启迭代。
         :type is_iterative: bool
+        :param query: 使用带管道符的sql分析语句进行查询，需要query参数is_analysis_query为true时生效。
+        :type query: str
+        :param is_analysis_query: 是否为带管道符的sql分析语句。当该参数为true时，将依照body体中的query参数内容进行查询，且body体中除start_time与end_time以外的参数失效，分页、排序、查询结果条数等功能请依照sql语法规则实现。查询结果的响应体不同于未启用时的查询方式，将以默认列存的形式返回查询结果。当前仅对内测用户开放。响应示例：{\&quot;analysisLogs\&quot;:[{\&quot;field1\&quot;:\&quot;1\&quot;,\&quot;field2\&quot;:\&quot;2\&quot;,\&quot;field3\&quot;:\&quot;3\&quot;},{\&quot;field1\&quot;:\&quot;1\&quot;,\&quot;field2\&quot;:\&quot;2\&quot;,\&quot;field3\&quot;:\&quot;3\&quot;},{\&quot;field1\&quot;:\&quot;1\&quot;,\&quot;field2\&quot;:\&quot;2\&quot;,\&quot;field3\&quot;:\&quot;3\&quot;}]}
+        :type is_analysis_query: bool
         """
         
         
@@ -91,6 +99,8 @@ class QueryLtsLogParams:
         self._limit = None
         self._highlight = None
         self._is_iterative = None
+        self._query = None
+        self._is_analysis_query = None
         self.discriminator = None
 
         self.start_time = start_time
@@ -115,6 +125,10 @@ class QueryLtsLogParams:
             self.highlight = highlight
         if is_iterative is not None:
             self.is_iterative = is_iterative
+        if query is not None:
+            self.query = query
+        if is_analysis_query is not None:
+            self.is_analysis_query = is_analysis_query
 
     @property
     def start_time(self):
@@ -379,6 +393,50 @@ class QueryLtsLogParams:
         :type is_iterative: bool
         """
         self._is_iterative = is_iterative
+
+    @property
+    def query(self):
+        """Gets the query of this QueryLtsLogParams.
+
+        使用带管道符的sql分析语句进行查询，需要query参数is_analysis_query为true时生效。
+
+        :return: The query of this QueryLtsLogParams.
+        :rtype: str
+        """
+        return self._query
+
+    @query.setter
+    def query(self, query):
+        """Sets the query of this QueryLtsLogParams.
+
+        使用带管道符的sql分析语句进行查询，需要query参数is_analysis_query为true时生效。
+
+        :param query: The query of this QueryLtsLogParams.
+        :type query: str
+        """
+        self._query = query
+
+    @property
+    def is_analysis_query(self):
+        """Gets the is_analysis_query of this QueryLtsLogParams.
+
+        是否为带管道符的sql分析语句。当该参数为true时，将依照body体中的query参数内容进行查询，且body体中除start_time与end_time以外的参数失效，分页、排序、查询结果条数等功能请依照sql语法规则实现。查询结果的响应体不同于未启用时的查询方式，将以默认列存的形式返回查询结果。当前仅对内测用户开放。响应示例：{\"analysisLogs\":[{\"field1\":\"1\",\"field2\":\"2\",\"field3\":\"3\"},{\"field1\":\"1\",\"field2\":\"2\",\"field3\":\"3\"},{\"field1\":\"1\",\"field2\":\"2\",\"field3\":\"3\"}]}
+
+        :return: The is_analysis_query of this QueryLtsLogParams.
+        :rtype: bool
+        """
+        return self._is_analysis_query
+
+    @is_analysis_query.setter
+    def is_analysis_query(self, is_analysis_query):
+        """Sets the is_analysis_query of this QueryLtsLogParams.
+
+        是否为带管道符的sql分析语句。当该参数为true时，将依照body体中的query参数内容进行查询，且body体中除start_time与end_time以外的参数失效，分页、排序、查询结果条数等功能请依照sql语法规则实现。查询结果的响应体不同于未启用时的查询方式，将以默认列存的形式返回查询结果。当前仅对内测用户开放。响应示例：{\"analysisLogs\":[{\"field1\":\"1\",\"field2\":\"2\",\"field3\":\"3\"},{\"field1\":\"1\",\"field2\":\"2\",\"field3\":\"3\"},{\"field1\":\"1\",\"field2\":\"2\",\"field3\":\"3\"}]}
+
+        :param is_analysis_query: The is_analysis_query of this QueryLtsLogParams.
+        :type is_analysis_query: bool
+        """
+        self._is_analysis_query = is_analysis_query
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -53,13 +53,13 @@ class MasterSlaveHealthMonitor:
 
         The model defined in huaweicloud sdk
 
-        :param admin_state_up: 健康检查的管理状态。  取值： - true：表示开启健康检查，默认为true。 - false表示关闭健康检查。
+        :param admin_state_up: 参数解释：健康检查的管理状态。  取值范围： - true：表示开启健康检查。 - false表示关闭健康检查。  默认取值：true。
         :type admin_state_up: bool
         :param delay: 健康检查间隔。取值：1-50s。
         :type delay: int
         :param domain_name: 发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、’-’、’.’。 默认为空，表示使用负载均衡器的vip作为http请求的目的地址。  使用说明：当type为HTTP/HTTPS时生效。
         :type domain_name: str
-        :param expected_codes: 期望响应状态码。  取值： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。   默认值：200。  仅支持HTTP/HTTPS/GRPC设置该字段，其他协议设置不会生效。
+        :param expected_codes: 期望响应状态码。  取值： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。   默认值：200。  仅支持HTTP/HTTPS/gRPC设置该字段，其他协议设置不会生效。
         :type expected_codes: str
         :param http_method: HTTP请求方法。  取值：GET、HEAD、POST，默认GET。  使用说明：当type为HTTP/HTTPS时生效。
         :type http_method: str
@@ -116,7 +116,7 @@ class MasterSlaveHealthMonitor:
     def admin_state_up(self):
         """Gets the admin_state_up of this MasterSlaveHealthMonitor.
 
-        健康检查的管理状态。  取值： - true：表示开启健康检查，默认为true。 - false表示关闭健康检查。
+        参数解释：健康检查的管理状态。  取值范围： - true：表示开启健康检查。 - false表示关闭健康检查。  默认取值：true。
 
         :return: The admin_state_up of this MasterSlaveHealthMonitor.
         :rtype: bool
@@ -127,7 +127,7 @@ class MasterSlaveHealthMonitor:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this MasterSlaveHealthMonitor.
 
-        健康检查的管理状态。  取值： - true：表示开启健康检查，默认为true。 - false表示关闭健康检查。
+        参数解释：健康检查的管理状态。  取值范围： - true：表示开启健康检查。 - false表示关闭健康检查。  默认取值：true。
 
         :param admin_state_up: The admin_state_up of this MasterSlaveHealthMonitor.
         :type admin_state_up: bool
@@ -182,7 +182,7 @@ class MasterSlaveHealthMonitor:
     def expected_codes(self):
         """Gets the expected_codes of this MasterSlaveHealthMonitor.
 
-        期望响应状态码。  取值： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。   默认值：200。  仅支持HTTP/HTTPS/GRPC设置该字段，其他协议设置不会生效。
+        期望响应状态码。  取值： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。   默认值：200。  仅支持HTTP/HTTPS/gRPC设置该字段，其他协议设置不会生效。
 
         :return: The expected_codes of this MasterSlaveHealthMonitor.
         :rtype: str
@@ -193,7 +193,7 @@ class MasterSlaveHealthMonitor:
     def expected_codes(self, expected_codes):
         """Sets the expected_codes of this MasterSlaveHealthMonitor.
 
-        期望响应状态码。  取值： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。   默认值：200。  仅支持HTTP/HTTPS/GRPC设置该字段，其他协议设置不会生效。
+        期望响应状态码。  取值： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。   默认值：200。  仅支持HTTP/HTTPS/gRPC设置该字段，其他协议设置不会生效。
 
         :param expected_codes: The expected_codes of this MasterSlaveHealthMonitor.
         :type expected_codes: str

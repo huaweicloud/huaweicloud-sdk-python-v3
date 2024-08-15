@@ -33,7 +33,7 @@ class ShowUpgradeCandidateVersionsRequest:
 
         :param instance_id: 实例ID。
         :type instance_id: str
-        :param x_language: 语言[zh-cn, en-us]
+        :param x_language: 语言[zh-cn, en-us]。
         :type x_language: str
         """
         
@@ -73,7 +73,7 @@ class ShowUpgradeCandidateVersionsRequest:
     def x_language(self):
         """Gets the x_language of this ShowUpgradeCandidateVersionsRequest.
 
-        语言[zh-cn, en-us]
+        语言[zh-cn, en-us]。
 
         :return: The x_language of this ShowUpgradeCandidateVersionsRequest.
         :rtype: str
@@ -84,7 +84,7 @@ class ShowUpgradeCandidateVersionsRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ShowUpgradeCandidateVersionsRequest.
 
-        语言[zh-cn, en-us]
+        语言[zh-cn, en-us]。
 
         :param x_language: The x_language of this ShowUpgradeCandidateVersionsRequest.
         :type x_language: str

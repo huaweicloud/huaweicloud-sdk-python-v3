@@ -31,7 +31,7 @@ class DeleteMemberRequest:
 
         The model defined in huaweicloud sdk
 
-        :param pool_id: 后端服务器组ID。
+        :param pool_id: 参数解释：后端服务器组ID。
         :type pool_id: str
         :param member_id: 后端服务器ID。 &gt;说明： 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。  member ID可以通过[查询后端云服务器列表](ListMembers.xml)获取。
         :type member_id: str
@@ -50,7 +50,7 @@ class DeleteMemberRequest:
     def pool_id(self):
         """Gets the pool_id of this DeleteMemberRequest.
 
-        后端服务器组ID。
+        参数解释：后端服务器组ID。
 
         :return: The pool_id of this DeleteMemberRequest.
         :rtype: str
@@ -61,7 +61,7 @@ class DeleteMemberRequest:
     def pool_id(self, pool_id):
         """Sets the pool_id of this DeleteMemberRequest.
 
-        后端服务器组ID。
+        参数解释：后端服务器组ID。
 
         :param pool_id: The pool_id of this DeleteMemberRequest.
         :type pool_id: str

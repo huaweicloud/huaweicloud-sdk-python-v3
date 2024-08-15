@@ -32,6 +32,7 @@ class ShowComponentInfoResponse(SdkResponse):
         'request_memory': 'float',
         'replica': 'int',
         'version': 'str',
+        'swimlane_id': 'str',
         'envs': 'list[ComponentEnvironment]',
         'storages': 'list[ComponentStorage]',
         'command': 'ComponentCommand',
@@ -67,6 +68,7 @@ class ShowComponentInfoResponse(SdkResponse):
         'request_memory': 'request_memory',
         'replica': 'replica',
         'version': 'version',
+        'swimlane_id': 'swimlane_id',
         'envs': 'envs',
         'storages': 'storages',
         'command': 'command',
@@ -87,7 +89,7 @@ class ShowComponentInfoResponse(SdkResponse):
         'status': 'status'
     }
 
-    def __init__(self, name=None, description=None, labels=None, runtime_stack=None, source=None, build=None, environment_id=None, application_id=None, limit_cpu=None, limit_memory=None, request_cpu=None, request_memory=None, replica=None, version=None, envs=None, storages=None, command=None, post_start=None, pre_stop=None, timezone=None, mesher=None, deploy_strategy=None, jvm_opts=None, tomcat_opts=None, logs=None, custom_metric=None, affinity=None, anti_affinity=None, liveness_probe=None, readiness_probe=None, refer_resources=None, status=None):
+    def __init__(self, name=None, description=None, labels=None, runtime_stack=None, source=None, build=None, environment_id=None, application_id=None, limit_cpu=None, limit_memory=None, request_cpu=None, request_memory=None, replica=None, version=None, swimlane_id=None, envs=None, storages=None, command=None, post_start=None, pre_stop=None, timezone=None, mesher=None, deploy_strategy=None, jvm_opts=None, tomcat_opts=None, logs=None, custom_metric=None, affinity=None, anti_affinity=None, liveness_probe=None, readiness_probe=None, refer_resources=None, status=None):
         """ShowComponentInfoResponse
 
         The model defined in huaweicloud sdk
@@ -120,6 +122,8 @@ class ShowComponentInfoResponse(SdkResponse):
         :type replica: int
         :param version: 
         :type version: str
+        :param swimlane_id: 泳道id
+        :type swimlane_id: str
         :param envs: 
         :type envs: list[:class:`huaweicloudsdkservicestage.v3.ComponentEnvironment`]
         :param storages: 
@@ -174,6 +178,7 @@ class ShowComponentInfoResponse(SdkResponse):
         self._request_memory = None
         self._replica = None
         self._version = None
+        self._swimlane_id = None
         self._envs = None
         self._storages = None
         self._command = None
@@ -222,6 +227,8 @@ class ShowComponentInfoResponse(SdkResponse):
             self.replica = replica
         if version is not None:
             self.version = version
+        if swimlane_id is not None:
+            self.swimlane_id = swimlane_id
         if envs is not None:
             self.envs = envs
         if storages is not None:
@@ -526,6 +533,28 @@ class ShowComponentInfoResponse(SdkResponse):
         :type version: str
         """
         self._version = version
+
+    @property
+    def swimlane_id(self):
+        """Gets the swimlane_id of this ShowComponentInfoResponse.
+
+        泳道id
+
+        :return: The swimlane_id of this ShowComponentInfoResponse.
+        :rtype: str
+        """
+        return self._swimlane_id
+
+    @swimlane_id.setter
+    def swimlane_id(self, swimlane_id):
+        """Sets the swimlane_id of this ShowComponentInfoResponse.
+
+        泳道id
+
+        :param swimlane_id: The swimlane_id of this ShowComponentInfoResponse.
+        :type swimlane_id: str
+        """
+        self._swimlane_id = swimlane_id
 
     @property
     def envs(self):

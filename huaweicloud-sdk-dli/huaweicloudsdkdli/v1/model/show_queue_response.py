@@ -35,7 +35,15 @@ class ShowQueueResponse(SdkResponse):
         'cu_spec': 'int',
         'cu_scale_out_limit': 'int',
         'cu_scale_in_limit': 'int',
-        'elastic_resource_pool_name': 'str'
+        'elastic_resource_pool_name': 'str',
+        'support_spark_versions': 'list[str]',
+        'default_spark_version': 'str',
+        'support_hetu_engine_versions': 'list[str]',
+        'default_hetu_engine_version': 'str',
+        'support_flink_sql_versions': 'list[str]',
+        'default_flink_sql_version': 'str',
+        'support_flink_jar_versions': 'list[str]',
+        'default_flink_jar_version': 'str'
     }
 
     attribute_map = {
@@ -56,10 +64,18 @@ class ShowQueueResponse(SdkResponse):
         'cu_spec': 'cu_spec',
         'cu_scale_out_limit': 'cu_scale_out_limit',
         'cu_scale_in_limit': 'cu_scale_in_limit',
-        'elastic_resource_pool_name': 'elastic_resource_pool_name'
+        'elastic_resource_pool_name': 'elastic_resource_pool_name',
+        'support_spark_versions': 'support_spark_versions',
+        'default_spark_version': 'default_spark_version',
+        'support_hetu_engine_versions': 'support_hetu_engine_versions',
+        'default_hetu_engine_version': 'default_hetu_engine_version',
+        'support_flink_sql_versions': 'support_flink_sql_versions',
+        'default_flink_sql_version': 'default_flink_sql_version',
+        'support_flink_jar_versions': 'support_flink_jar_versions',
+        'default_flink_jar_version': 'default_flink_jar_version'
     }
 
-    def __init__(self, is_success=None, message=None, queue_id=None, queue_name=None, description=None, owner=None, create_time=None, queue_type=None, cu_count=None, charging_mode=None, resource_id=None, resource_mode=None, enterprise_project_id=None, resource_type=None, cu_spec=None, cu_scale_out_limit=None, cu_scale_in_limit=None, elastic_resource_pool_name=None):
+    def __init__(self, is_success=None, message=None, queue_id=None, queue_name=None, description=None, owner=None, create_time=None, queue_type=None, cu_count=None, charging_mode=None, resource_id=None, resource_mode=None, enterprise_project_id=None, resource_type=None, cu_spec=None, cu_scale_out_limit=None, cu_scale_in_limit=None, elastic_resource_pool_name=None, support_spark_versions=None, default_spark_version=None, support_hetu_engine_versions=None, default_hetu_engine_version=None, support_flink_sql_versions=None, default_flink_sql_version=None, support_flink_jar_versions=None, default_flink_jar_version=None):
         """ShowQueueResponse
 
         The model defined in huaweicloud sdk
@@ -100,6 +116,22 @@ class ShowQueueResponse(SdkResponse):
         :type cu_scale_in_limit: int
         :param elastic_resource_pool_name: 弹性资源池名称。
         :type elastic_resource_pool_name: str
+        :param support_spark_versions: 队列支持的Spark版本。
+        :type support_spark_versions: list[str]
+        :param default_spark_version: 队列默认的Spark版本。
+        :type default_spark_version: str
+        :param support_hetu_engine_versions: 队列支持的HetuEngine版本。
+        :type support_hetu_engine_versions: list[str]
+        :param default_hetu_engine_version: 队列默认的HetuEngine版本。
+        :type default_hetu_engine_version: str
+        :param support_flink_sql_versions: 队列支持的Flink SQL版本。
+        :type support_flink_sql_versions: list[str]
+        :param default_flink_sql_version: 队列默认的Flink SQL版本。
+        :type default_flink_sql_version: str
+        :param support_flink_jar_versions: 队列支持的Flink JAR版本。
+        :type support_flink_jar_versions: list[str]
+        :param default_flink_jar_version: 队列默认的Flink JAR版本。
+        :type default_flink_jar_version: str
         """
         
         super(ShowQueueResponse, self).__init__()
@@ -122,6 +154,14 @@ class ShowQueueResponse(SdkResponse):
         self._cu_scale_out_limit = None
         self._cu_scale_in_limit = None
         self._elastic_resource_pool_name = None
+        self._support_spark_versions = None
+        self._default_spark_version = None
+        self._support_hetu_engine_versions = None
+        self._default_hetu_engine_version = None
+        self._support_flink_sql_versions = None
+        self._default_flink_sql_version = None
+        self._support_flink_jar_versions = None
+        self._default_flink_jar_version = None
         self.discriminator = None
 
         if is_success is not None:
@@ -160,6 +200,22 @@ class ShowQueueResponse(SdkResponse):
             self.cu_scale_in_limit = cu_scale_in_limit
         if elastic_resource_pool_name is not None:
             self.elastic_resource_pool_name = elastic_resource_pool_name
+        if support_spark_versions is not None:
+            self.support_spark_versions = support_spark_versions
+        if default_spark_version is not None:
+            self.default_spark_version = default_spark_version
+        if support_hetu_engine_versions is not None:
+            self.support_hetu_engine_versions = support_hetu_engine_versions
+        if default_hetu_engine_version is not None:
+            self.default_hetu_engine_version = default_hetu_engine_version
+        if support_flink_sql_versions is not None:
+            self.support_flink_sql_versions = support_flink_sql_versions
+        if default_flink_sql_version is not None:
+            self.default_flink_sql_version = default_flink_sql_version
+        if support_flink_jar_versions is not None:
+            self.support_flink_jar_versions = support_flink_jar_versions
+        if default_flink_jar_version is not None:
+            self.default_flink_jar_version = default_flink_jar_version
 
     @property
     def is_success(self):
@@ -556,6 +612,182 @@ class ShowQueueResponse(SdkResponse):
         :type elastic_resource_pool_name: str
         """
         self._elastic_resource_pool_name = elastic_resource_pool_name
+
+    @property
+    def support_spark_versions(self):
+        """Gets the support_spark_versions of this ShowQueueResponse.
+
+        队列支持的Spark版本。
+
+        :return: The support_spark_versions of this ShowQueueResponse.
+        :rtype: list[str]
+        """
+        return self._support_spark_versions
+
+    @support_spark_versions.setter
+    def support_spark_versions(self, support_spark_versions):
+        """Sets the support_spark_versions of this ShowQueueResponse.
+
+        队列支持的Spark版本。
+
+        :param support_spark_versions: The support_spark_versions of this ShowQueueResponse.
+        :type support_spark_versions: list[str]
+        """
+        self._support_spark_versions = support_spark_versions
+
+    @property
+    def default_spark_version(self):
+        """Gets the default_spark_version of this ShowQueueResponse.
+
+        队列默认的Spark版本。
+
+        :return: The default_spark_version of this ShowQueueResponse.
+        :rtype: str
+        """
+        return self._default_spark_version
+
+    @default_spark_version.setter
+    def default_spark_version(self, default_spark_version):
+        """Sets the default_spark_version of this ShowQueueResponse.
+
+        队列默认的Spark版本。
+
+        :param default_spark_version: The default_spark_version of this ShowQueueResponse.
+        :type default_spark_version: str
+        """
+        self._default_spark_version = default_spark_version
+
+    @property
+    def support_hetu_engine_versions(self):
+        """Gets the support_hetu_engine_versions of this ShowQueueResponse.
+
+        队列支持的HetuEngine版本。
+
+        :return: The support_hetu_engine_versions of this ShowQueueResponse.
+        :rtype: list[str]
+        """
+        return self._support_hetu_engine_versions
+
+    @support_hetu_engine_versions.setter
+    def support_hetu_engine_versions(self, support_hetu_engine_versions):
+        """Sets the support_hetu_engine_versions of this ShowQueueResponse.
+
+        队列支持的HetuEngine版本。
+
+        :param support_hetu_engine_versions: The support_hetu_engine_versions of this ShowQueueResponse.
+        :type support_hetu_engine_versions: list[str]
+        """
+        self._support_hetu_engine_versions = support_hetu_engine_versions
+
+    @property
+    def default_hetu_engine_version(self):
+        """Gets the default_hetu_engine_version of this ShowQueueResponse.
+
+        队列默认的HetuEngine版本。
+
+        :return: The default_hetu_engine_version of this ShowQueueResponse.
+        :rtype: str
+        """
+        return self._default_hetu_engine_version
+
+    @default_hetu_engine_version.setter
+    def default_hetu_engine_version(self, default_hetu_engine_version):
+        """Sets the default_hetu_engine_version of this ShowQueueResponse.
+
+        队列默认的HetuEngine版本。
+
+        :param default_hetu_engine_version: The default_hetu_engine_version of this ShowQueueResponse.
+        :type default_hetu_engine_version: str
+        """
+        self._default_hetu_engine_version = default_hetu_engine_version
+
+    @property
+    def support_flink_sql_versions(self):
+        """Gets the support_flink_sql_versions of this ShowQueueResponse.
+
+        队列支持的Flink SQL版本。
+
+        :return: The support_flink_sql_versions of this ShowQueueResponse.
+        :rtype: list[str]
+        """
+        return self._support_flink_sql_versions
+
+    @support_flink_sql_versions.setter
+    def support_flink_sql_versions(self, support_flink_sql_versions):
+        """Sets the support_flink_sql_versions of this ShowQueueResponse.
+
+        队列支持的Flink SQL版本。
+
+        :param support_flink_sql_versions: The support_flink_sql_versions of this ShowQueueResponse.
+        :type support_flink_sql_versions: list[str]
+        """
+        self._support_flink_sql_versions = support_flink_sql_versions
+
+    @property
+    def default_flink_sql_version(self):
+        """Gets the default_flink_sql_version of this ShowQueueResponse.
+
+        队列默认的Flink SQL版本。
+
+        :return: The default_flink_sql_version of this ShowQueueResponse.
+        :rtype: str
+        """
+        return self._default_flink_sql_version
+
+    @default_flink_sql_version.setter
+    def default_flink_sql_version(self, default_flink_sql_version):
+        """Sets the default_flink_sql_version of this ShowQueueResponse.
+
+        队列默认的Flink SQL版本。
+
+        :param default_flink_sql_version: The default_flink_sql_version of this ShowQueueResponse.
+        :type default_flink_sql_version: str
+        """
+        self._default_flink_sql_version = default_flink_sql_version
+
+    @property
+    def support_flink_jar_versions(self):
+        """Gets the support_flink_jar_versions of this ShowQueueResponse.
+
+        队列支持的Flink JAR版本。
+
+        :return: The support_flink_jar_versions of this ShowQueueResponse.
+        :rtype: list[str]
+        """
+        return self._support_flink_jar_versions
+
+    @support_flink_jar_versions.setter
+    def support_flink_jar_versions(self, support_flink_jar_versions):
+        """Sets the support_flink_jar_versions of this ShowQueueResponse.
+
+        队列支持的Flink JAR版本。
+
+        :param support_flink_jar_versions: The support_flink_jar_versions of this ShowQueueResponse.
+        :type support_flink_jar_versions: list[str]
+        """
+        self._support_flink_jar_versions = support_flink_jar_versions
+
+    @property
+    def default_flink_jar_version(self):
+        """Gets the default_flink_jar_version of this ShowQueueResponse.
+
+        队列默认的Flink JAR版本。
+
+        :return: The default_flink_jar_version of this ShowQueueResponse.
+        :rtype: str
+        """
+        return self._default_flink_jar_version
+
+    @default_flink_jar_version.setter
+    def default_flink_jar_version(self, default_flink_jar_version):
+        """Sets the default_flink_jar_version of this ShowQueueResponse.
+
+        队列默认的Flink JAR版本。
+
+        :param default_flink_jar_version: The default_flink_jar_version of this ShowQueueResponse.
+        :type default_flink_jar_version: str
+        """
+        self._default_flink_jar_version = default_flink_jar_version
 
     def to_dict(self):
         """Returns the model properties as a dict"""

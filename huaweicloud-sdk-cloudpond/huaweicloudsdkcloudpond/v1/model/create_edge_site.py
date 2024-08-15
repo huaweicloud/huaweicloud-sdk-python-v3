@@ -20,17 +20,19 @@ class CreateEdgeSite:
         'name': 'str',
         'region_id': 'str',
         'description': 'str',
-        'location': 'CreateLocation'
+        'location': 'CreateLocation',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
         'name': 'name',
         'region_id': 'region_id',
         'description': 'description',
-        'location': 'location'
+        'location': 'location',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, name=None, region_id=None, description=None, location=None):
+    def __init__(self, name=None, region_id=None, description=None, location=None, enterprise_project_id=None):
         """CreateEdgeSite
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class CreateEdgeSite:
         :type description: str
         :param location: 
         :type location: :class:`huaweicloudsdkcloudpond.v1.CreateLocation`
+        :param enterprise_project_id: 企业项目Id
+        :type enterprise_project_id: str
         """
         
         
@@ -51,6 +55,7 @@ class CreateEdgeSite:
         self._region_id = None
         self._description = None
         self._location = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         self.name = name
@@ -58,6 +63,8 @@ class CreateEdgeSite:
         if description is not None:
             self.description = description
         self.location = location
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def name(self):
@@ -142,6 +149,28 @@ class CreateEdgeSite:
         :type location: :class:`huaweicloudsdkcloudpond.v1.CreateLocation`
         """
         self._location = location
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this CreateEdgeSite.
+
+        企业项目Id
+
+        :return: The enterprise_project_id of this CreateEdgeSite.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this CreateEdgeSite.
+
+        企业项目Id
+
+        :param enterprise_project_id: The enterprise_project_id of this CreateEdgeSite.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

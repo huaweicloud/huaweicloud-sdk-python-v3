@@ -31,7 +31,7 @@ class ShowMemberRequest:
 
         The model defined in huaweicloud sdk
 
-        :param pool_id: 后端服务器组ID。
+        :param pool_id: 参数解释：后端服务器组ID。
         :type pool_id: str
         :param member_id: 后端服务器ID。 &gt;说明： 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
         :type member_id: str
@@ -50,7 +50,7 @@ class ShowMemberRequest:
     def pool_id(self):
         """Gets the pool_id of this ShowMemberRequest.
 
-        后端服务器组ID。
+        参数解释：后端服务器组ID。
 
         :return: The pool_id of this ShowMemberRequest.
         :rtype: str
@@ -61,7 +61,7 @@ class ShowMemberRequest:
     def pool_id(self, pool_id):
         """Sets the pool_id of this ShowMemberRequest.
 
-        后端服务器组ID。
+        参数解释：后端服务器组ID。
 
         :param pool_id: The pool_id of this ShowMemberRequest.
         :type pool_id: str

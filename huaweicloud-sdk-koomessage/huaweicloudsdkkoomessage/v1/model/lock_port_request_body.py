@@ -41,7 +41,7 @@ class LockPortRequestBody:
         :type pub_id: str
         :param port: 通道号。 - port_type&#x3D;5时，长度必须为5 - port_type&#x3D;1或3，长度在21位内 
         :type port: str
-        :param province: 通道号绑定/解绑的province字段取值范围如下： 全国、河北省、山西省、辽宁省、吉林省、黑龙江省、江苏省、浙江省、安徽省、福建省、江西省、山东省、河南省、湖北省、湖南省、广东省、海南省、四川省、贵州省、云南省、陕西省、甘肃省、青海省、台湾省、内蒙古自治区、广西壮族自治区、西藏自治区、宁夏回族自治区、新疆维吾尔自治区、北京市、天津市、上海市、重庆市、香港特别行政区、澳门特别行政区。
+        :param province: 绑定的地区，不允许传入重叠地区。地区取值见《地区名称列表》。
         :type province: str
         :param sign: 绑定签名，必须是该端口号签名的子集。单个签名长度为2-18。
         :type sign: list[str]
@@ -112,7 +112,7 @@ class LockPortRequestBody:
     def province(self):
         """Gets the province of this LockPortRequestBody.
 
-        通道号绑定/解绑的province字段取值范围如下： 全国、河北省、山西省、辽宁省、吉林省、黑龙江省、江苏省、浙江省、安徽省、福建省、江西省、山东省、河南省、湖北省、湖南省、广东省、海南省、四川省、贵州省、云南省、陕西省、甘肃省、青海省、台湾省、内蒙古自治区、广西壮族自治区、西藏自治区、宁夏回族自治区、新疆维吾尔自治区、北京市、天津市、上海市、重庆市、香港特别行政区、澳门特别行政区。
+        绑定的地区，不允许传入重叠地区。地区取值见《地区名称列表》。
 
         :return: The province of this LockPortRequestBody.
         :rtype: str
@@ -123,7 +123,7 @@ class LockPortRequestBody:
     def province(self, province):
         """Sets the province of this LockPortRequestBody.
 
-        通道号绑定/解绑的province字段取值范围如下： 全国、河北省、山西省、辽宁省、吉林省、黑龙江省、江苏省、浙江省、安徽省、福建省、江西省、山东省、河南省、湖北省、湖南省、广东省、海南省、四川省、贵州省、云南省、陕西省、甘肃省、青海省、台湾省、内蒙古自治区、广西壮族自治区、西藏自治区、宁夏回族自治区、新疆维吾尔自治区、北京市、天津市、上海市、重庆市、香港特别行政区、澳门特别行政区。
+        绑定的地区，不允许传入重叠地区。地区取值见《地区名称列表》。
 
         :param province: The province of this LockPortRequestBody.
         :type province: str

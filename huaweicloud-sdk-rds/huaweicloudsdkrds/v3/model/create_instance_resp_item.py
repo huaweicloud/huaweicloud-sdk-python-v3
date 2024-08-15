@@ -91,9 +91,9 @@ class CreateInstanceRespItem:
         :type flavor_ref: str
         :param volume: 
         :type volume: :class:`huaweicloudsdkrds.v3.Volume`
-        :param region: 区域ID。创建主实例时必选，其它场景不可选。 取值参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
+        :param region: 区域ID。创建主实例时必选，其它场景不可选。 取值参见OpenAPI查询数据库规格(https://console.huaweicloud.com/apiexplorer/#/openapi/RDS/doc?api&#x3D;ListFlavors)响应体的az_desc字段。
         :type region: str
-        :param availability_zone: 可用区ID。对于数据库实例类型不是单机的实例，需要分别为实例所有节点指定可用区，并用逗号隔开。 取值参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
+        :param availability_zone: 可用区ID。对于数据库实例类型不是单机的实例，需要分别为实例所有节点指定可用区，并用逗号隔开。 取值参见OpenAPI查询数据库规格(https://console.huaweicloud.com/apiexplorer/#/openapi/RDS/doc?api&#x3D;ListFlavors)响应体的az_desc字段。
         :type availability_zone: str
         :param vpc_id: 虚拟私有云ID。创建只读实例时不可选（只读实例的网络属性默认和主实例相同），其它场景必选。
         :type vpc_id: str
@@ -417,7 +417,7 @@ class CreateInstanceRespItem:
     def region(self):
         """Gets the region of this CreateInstanceRespItem.
 
-        区域ID。创建主实例时必选，其它场景不可选。 取值参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
+        区域ID。创建主实例时必选，其它场景不可选。 取值参见OpenAPI查询数据库规格(https://console.huaweicloud.com/apiexplorer/#/openapi/RDS/doc?api=ListFlavors)响应体的az_desc字段。
 
         :return: The region of this CreateInstanceRespItem.
         :rtype: str
@@ -428,7 +428,7 @@ class CreateInstanceRespItem:
     def region(self, region):
         """Sets the region of this CreateInstanceRespItem.
 
-        区域ID。创建主实例时必选，其它场景不可选。 取值参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
+        区域ID。创建主实例时必选，其它场景不可选。 取值参见OpenAPI查询数据库规格(https://console.huaweicloud.com/apiexplorer/#/openapi/RDS/doc?api=ListFlavors)响应体的az_desc字段。
 
         :param region: The region of this CreateInstanceRespItem.
         :type region: str
@@ -439,7 +439,7 @@ class CreateInstanceRespItem:
     def availability_zone(self):
         """Gets the availability_zone of this CreateInstanceRespItem.
 
-        可用区ID。对于数据库实例类型不是单机的实例，需要分别为实例所有节点指定可用区，并用逗号隔开。 取值参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
+        可用区ID。对于数据库实例类型不是单机的实例，需要分别为实例所有节点指定可用区，并用逗号隔开。 取值参见OpenAPI查询数据库规格(https://console.huaweicloud.com/apiexplorer/#/openapi/RDS/doc?api=ListFlavors)响应体的az_desc字段。
 
         :return: The availability_zone of this CreateInstanceRespItem.
         :rtype: str
@@ -450,7 +450,7 @@ class CreateInstanceRespItem:
     def availability_zone(self, availability_zone):
         """Sets the availability_zone of this CreateInstanceRespItem.
 
-        可用区ID。对于数据库实例类型不是单机的实例，需要分别为实例所有节点指定可用区，并用逗号隔开。 取值参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
+        可用区ID。对于数据库实例类型不是单机的实例，需要分别为实例所有节点指定可用区，并用逗号隔开。 取值参见OpenAPI查询数据库规格(https://console.huaweicloud.com/apiexplorer/#/openapi/RDS/doc?api=ListFlavors)响应体的az_desc字段。
 
         :param availability_zone: The availability_zone of this CreateInstanceRespItem.
         :type availability_zone: str

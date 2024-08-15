@@ -39,11 +39,11 @@ class CreateFixtedResponseConfig:
 
         The model defined in huaweicloud sdk
 
-        :param status_code: 返回码。支持200~299,400~499,500~599。
+        :param status_code: 参数解释：返回码。  取值范围：200-299，400-499，500-599。
         :type status_code: str
-        :param content_type: 返回body的格式。  取值范围： - text/plain，默认值 - text/css - text/html - application/javascript - application/json
+        :param content_type: 参数解释：返回body的格式。  取值范围： - text/plain - text/css - text/html - application/javascript - application/json  默认取值：text/plain
         :type content_type: str
-        :param message_body: 返回消息内容。
+        :param message_body: 参数解释：返回消息内容。
         :type message_body: str
         :param insert_headers_config: 
         :type insert_headers_config: :class:`huaweicloudsdkelb.v3.CreateInsertHeadersConfig`
@@ -79,7 +79,7 @@ class CreateFixtedResponseConfig:
     def status_code(self):
         """Gets the status_code of this CreateFixtedResponseConfig.
 
-        返回码。支持200~299,400~499,500~599。
+        参数解释：返回码。  取值范围：200-299，400-499，500-599。
 
         :return: The status_code of this CreateFixtedResponseConfig.
         :rtype: str
@@ -90,7 +90,7 @@ class CreateFixtedResponseConfig:
     def status_code(self, status_code):
         """Sets the status_code of this CreateFixtedResponseConfig.
 
-        返回码。支持200~299,400~499,500~599。
+        参数解释：返回码。  取值范围：200-299，400-499，500-599。
 
         :param status_code: The status_code of this CreateFixtedResponseConfig.
         :type status_code: str
@@ -101,7 +101,7 @@ class CreateFixtedResponseConfig:
     def content_type(self):
         """Gets the content_type of this CreateFixtedResponseConfig.
 
-        返回body的格式。  取值范围： - text/plain，默认值 - text/css - text/html - application/javascript - application/json
+        参数解释：返回body的格式。  取值范围： - text/plain - text/css - text/html - application/javascript - application/json  默认取值：text/plain
 
         :return: The content_type of this CreateFixtedResponseConfig.
         :rtype: str
@@ -112,7 +112,7 @@ class CreateFixtedResponseConfig:
     def content_type(self, content_type):
         """Sets the content_type of this CreateFixtedResponseConfig.
 
-        返回body的格式。  取值范围： - text/plain，默认值 - text/css - text/html - application/javascript - application/json
+        参数解释：返回body的格式。  取值范围： - text/plain - text/css - text/html - application/javascript - application/json  默认取值：text/plain
 
         :param content_type: The content_type of this CreateFixtedResponseConfig.
         :type content_type: str
@@ -123,7 +123,7 @@ class CreateFixtedResponseConfig:
     def message_body(self):
         """Gets the message_body of this CreateFixtedResponseConfig.
 
-        返回消息内容。
+        参数解释：返回消息内容。
 
         :return: The message_body of this CreateFixtedResponseConfig.
         :rtype: str
@@ -134,7 +134,7 @@ class CreateFixtedResponseConfig:
     def message_body(self, message_body):
         """Sets the message_body of this CreateFixtedResponseConfig.
 
-        返回消息内容。
+        参数解释：返回消息内容。
 
         :param message_body: The message_body of this CreateFixtedResponseConfig.
         :type message_body: str

@@ -30,7 +30,11 @@ class AIMTemplate:
         'update_time': 'str',
         'pages': 'str',
         'params': 'list[AIMTemplateParams]',
-        'factory_info': 'list[FactoryInfo]'
+        'factory_info': 'list[FactoryInfo]',
+        'match_type': 'int',
+        'card_id': 'str',
+        'sub_type': 'int',
+        'preview_url': 'str'
     }
 
     attribute_map = {
@@ -47,10 +51,14 @@ class AIMTemplate:
         'update_time': 'update_time',
         'pages': 'pages',
         'params': 'params',
-        'factory_info': 'factory_info'
+        'factory_info': 'factory_info',
+        'match_type': 'match_type',
+        'card_id': 'card_id',
+        'sub_type': 'sub_type',
+        'preview_url': 'preview_url'
     }
 
-    def __init__(self, tpl_id=None, tpl_name=None, scene=None, tpl_state=None, disable_desc=None, disable_time=None, audit_state=None, audit_desc=None, description=None, creation_time=None, update_time=None, pages=None, params=None, factory_info=None):
+    def __init__(self, tpl_id=None, tpl_name=None, scene=None, tpl_state=None, disable_desc=None, disable_time=None, audit_state=None, audit_desc=None, description=None, creation_time=None, update_time=None, pages=None, params=None, factory_info=None, match_type=None, card_id=None, sub_type=None, preview_url=None):
         """AIMTemplate
 
         The model defined in huaweicloud sdk
@@ -83,6 +91,14 @@ class AIMTemplate:
         :type params: list[:class:`huaweicloudsdkkoomessage.v1.AIMTemplateParams`]
         :param factory_info: 支持厂商列表。
         :type factory_info: list[:class:`huaweicloudsdkkoomessage.v1.FactoryInfo`]
+        :param match_type: 审核状态。 - 1：短链解析模板 - 2：文本识别模板 - 4：一体化模板 
+        :type match_type: int
+        :param card_id: 布局类型。
+        :type card_id: str
+        :param sub_type: sub_type。
+        :type sub_type: int
+        :param preview_url: 模板二维码预览地址。
+        :type preview_url: str
         """
         
         
@@ -101,6 +117,10 @@ class AIMTemplate:
         self._pages = None
         self._params = None
         self._factory_info = None
+        self._match_type = None
+        self._card_id = None
+        self._sub_type = None
+        self._preview_url = None
         self.discriminator = None
 
         if tpl_id is not None:
@@ -131,6 +151,14 @@ class AIMTemplate:
             self.params = params
         if factory_info is not None:
             self.factory_info = factory_info
+        if match_type is not None:
+            self.match_type = match_type
+        if card_id is not None:
+            self.card_id = card_id
+        if sub_type is not None:
+            self.sub_type = sub_type
+        if preview_url is not None:
+            self.preview_url = preview_url
 
     @property
     def tpl_id(self):
@@ -439,6 +467,94 @@ class AIMTemplate:
         :type factory_info: list[:class:`huaweicloudsdkkoomessage.v1.FactoryInfo`]
         """
         self._factory_info = factory_info
+
+    @property
+    def match_type(self):
+        """Gets the match_type of this AIMTemplate.
+
+        审核状态。 - 1：短链解析模板 - 2：文本识别模板 - 4：一体化模板 
+
+        :return: The match_type of this AIMTemplate.
+        :rtype: int
+        """
+        return self._match_type
+
+    @match_type.setter
+    def match_type(self, match_type):
+        """Sets the match_type of this AIMTemplate.
+
+        审核状态。 - 1：短链解析模板 - 2：文本识别模板 - 4：一体化模板 
+
+        :param match_type: The match_type of this AIMTemplate.
+        :type match_type: int
+        """
+        self._match_type = match_type
+
+    @property
+    def card_id(self):
+        """Gets the card_id of this AIMTemplate.
+
+        布局类型。
+
+        :return: The card_id of this AIMTemplate.
+        :rtype: str
+        """
+        return self._card_id
+
+    @card_id.setter
+    def card_id(self, card_id):
+        """Sets the card_id of this AIMTemplate.
+
+        布局类型。
+
+        :param card_id: The card_id of this AIMTemplate.
+        :type card_id: str
+        """
+        self._card_id = card_id
+
+    @property
+    def sub_type(self):
+        """Gets the sub_type of this AIMTemplate.
+
+        sub_type。
+
+        :return: The sub_type of this AIMTemplate.
+        :rtype: int
+        """
+        return self._sub_type
+
+    @sub_type.setter
+    def sub_type(self, sub_type):
+        """Sets the sub_type of this AIMTemplate.
+
+        sub_type。
+
+        :param sub_type: The sub_type of this AIMTemplate.
+        :type sub_type: int
+        """
+        self._sub_type = sub_type
+
+    @property
+    def preview_url(self):
+        """Gets the preview_url of this AIMTemplate.
+
+        模板二维码预览地址。
+
+        :return: The preview_url of this AIMTemplate.
+        :rtype: str
+        """
+        return self._preview_url
+
+    @preview_url.setter
+    def preview_url(self, preview_url):
+        """Sets the preview_url of this AIMTemplate.
+
+        模板二维码预览地址。
+
+        :param preview_url: The preview_url of this AIMTemplate.
+        :type preview_url: str
+        """
+        self._preview_url = preview_url
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -29,7 +29,7 @@ class BatchUpdatePoliciesPriorityRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param l7policies: 转发策略的结构体
+        :param l7policies: 参数解释：转发策略的结构体。
         :type l7policies: list[:class:`huaweicloudsdkelb.v3.BatchUpdatePriorityRequestBody`]
         """
         
@@ -45,7 +45,7 @@ class BatchUpdatePoliciesPriorityRequestBody:
     def l7policies(self):
         """Gets the l7policies of this BatchUpdatePoliciesPriorityRequestBody.
 
-        转发策略的结构体
+        参数解释：转发策略的结构体。
 
         :return: The l7policies of this BatchUpdatePoliciesPriorityRequestBody.
         :rtype: list[:class:`huaweicloudsdkelb.v3.BatchUpdatePriorityRequestBody`]
@@ -56,7 +56,7 @@ class BatchUpdatePoliciesPriorityRequestBody:
     def l7policies(self, l7policies):
         """Sets the l7policies of this BatchUpdatePoliciesPriorityRequestBody.
 
-        转发策略的结构体
+        参数解释：转发策略的结构体。
 
         :param l7policies: The l7policies of this BatchUpdatePoliciesPriorityRequestBody.
         :type l7policies: list[:class:`huaweicloudsdkelb.v3.BatchUpdatePriorityRequestBody`]

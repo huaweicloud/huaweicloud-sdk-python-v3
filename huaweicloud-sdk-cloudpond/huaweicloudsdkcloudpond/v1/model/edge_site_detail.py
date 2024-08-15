@@ -26,6 +26,7 @@ class EdgeSiteDetail:
         'availability_zone_id': 'str',
         'status': 'str',
         'location': 'LocationDetail',
+        'enterprise_project_id': 'str',
         'created_at': 'datetime',
         'updated_at': 'datetime'
     }
@@ -40,11 +41,12 @@ class EdgeSiteDetail:
         'availability_zone_id': 'availability_zone_id',
         'status': 'status',
         'location': 'location',
+        'enterprise_project_id': 'enterprise_project_id',
         'created_at': 'created_at',
         'updated_at': 'updated_at'
     }
 
-    def __init__(self, id=None, domain_id=None, name=None, description=None, region_id=None, project_id=None, availability_zone_id=None, status=None, location=None, created_at=None, updated_at=None):
+    def __init__(self, id=None, domain_id=None, name=None, description=None, region_id=None, project_id=None, availability_zone_id=None, status=None, location=None, enterprise_project_id=None, created_at=None, updated_at=None):
         """EdgeSiteDetail
 
         The model defined in huaweicloud sdk
@@ -67,6 +69,8 @@ class EdgeSiteDetail:
         :type status: str
         :param location: 
         :type location: :class:`huaweicloudsdkcloudpond.v1.LocationDetail`
+        :param enterprise_project_id: [边缘小站](tag:hws)[分布式微型专属小站](tag:cmcc)所属企业项目ID
+        :type enterprise_project_id: str
         :param created_at: 边缘小站创建时间
         :type created_at: datetime
         :param updated_at: 边缘小站更新时间
@@ -84,6 +88,7 @@ class EdgeSiteDetail:
         self._availability_zone_id = None
         self._status = None
         self._location = None
+        self._enterprise_project_id = None
         self._created_at = None
         self._updated_at = None
         self.discriminator = None
@@ -106,6 +111,8 @@ class EdgeSiteDetail:
             self.status = status
         if location is not None:
             self.location = location
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if created_at is not None:
             self.created_at = created_at
         if updated_at is not None:
@@ -304,6 +311,28 @@ class EdgeSiteDetail:
         :type location: :class:`huaweicloudsdkcloudpond.v1.LocationDetail`
         """
         self._location = location
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this EdgeSiteDetail.
+
+        [边缘小站](tag:hws)[分布式微型专属小站](tag:cmcc)所属企业项目ID
+
+        :return: The enterprise_project_id of this EdgeSiteDetail.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this EdgeSiteDetail.
+
+        [边缘小站](tag:hws)[分布式微型专属小站](tag:cmcc)所属企业项目ID
+
+        :param enterprise_project_id: The enterprise_project_id of this EdgeSiteDetail.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def created_at(self):

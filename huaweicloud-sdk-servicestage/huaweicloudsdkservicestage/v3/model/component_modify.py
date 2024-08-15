@@ -29,6 +29,7 @@ class ComponentModify:
         'request_memory': 'float',
         'replica': 'int',
         'version': 'str',
+        'swimlane_id': 'str',
         'envs': 'list[ComponentEnvironment]',
         'storages': 'list[ComponentStorage]',
         'deploy_strategy': 'DeployStrategy',
@@ -62,6 +63,7 @@ class ComponentModify:
         'request_memory': 'request_memory',
         'replica': 'replica',
         'version': 'version',
+        'swimlane_id': 'swimlane_id',
         'envs': 'envs',
         'storages': 'storages',
         'deploy_strategy': 'deploy_strategy',
@@ -82,7 +84,7 @@ class ComponentModify:
         'refer_resources': 'refer_resources'
     }
 
-    def __init__(self, name=None, description=None, labels=None, runtime_stack=None, source=None, build=None, limit_cpu=None, limit_memory=None, request_cpu=None, request_memory=None, replica=None, version=None, envs=None, storages=None, deploy_strategy=None, command=None, post_start=None, pre_stop=None, timezone=None, mesher=None, jvm_opts=None, tomcat_opts=None, logs=None, custom_metric=None, affinity=None, anti_affinity=None, liveness_probe=None, readiness_probe=None, external_accesses=None, refer_resources=None):
+    def __init__(self, name=None, description=None, labels=None, runtime_stack=None, source=None, build=None, limit_cpu=None, limit_memory=None, request_cpu=None, request_memory=None, replica=None, version=None, swimlane_id=None, envs=None, storages=None, deploy_strategy=None, command=None, post_start=None, pre_stop=None, timezone=None, mesher=None, jvm_opts=None, tomcat_opts=None, logs=None, custom_metric=None, affinity=None, anti_affinity=None, liveness_probe=None, readiness_probe=None, external_accesses=None, refer_resources=None):
         """ComponentModify
 
         The model defined in huaweicloud sdk
@@ -111,6 +113,8 @@ class ComponentModify:
         :type replica: int
         :param version: 
         :type version: str
+        :param swimlane_id: 泳道id
+        :type swimlane_id: str
         :param envs: 
         :type envs: list[:class:`huaweicloudsdkservicestage.v3.ComponentEnvironment`]
         :param storages: 
@@ -163,6 +167,7 @@ class ComponentModify:
         self._request_memory = None
         self._replica = None
         self._version = None
+        self._swimlane_id = None
         self._envs = None
         self._storages = None
         self._deploy_strategy = None
@@ -202,6 +207,8 @@ class ComponentModify:
             self.request_memory = request_memory
         self.replica = replica
         self.version = version
+        if swimlane_id is not None:
+            self.swimlane_id = swimlane_id
         if envs is not None:
             self.envs = envs
         if storages is not None:
@@ -470,6 +477,28 @@ class ComponentModify:
         :type version: str
         """
         self._version = version
+
+    @property
+    def swimlane_id(self):
+        """Gets the swimlane_id of this ComponentModify.
+
+        泳道id
+
+        :return: The swimlane_id of this ComponentModify.
+        :rtype: str
+        """
+        return self._swimlane_id
+
+    @swimlane_id.setter
+    def swimlane_id(self, swimlane_id):
+        """Sets the swimlane_id of this ComponentModify.
+
+        泳道id
+
+        :param swimlane_id: The swimlane_id of this ComponentModify.
+        :type swimlane_id: str
+        """
+        self._swimlane_id = swimlane_id
 
     @property
     def envs(self):

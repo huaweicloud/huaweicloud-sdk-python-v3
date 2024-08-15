@@ -43,7 +43,7 @@ class BatchUpdateMembersOption:
         :type admin_state_up: bool
         :param name: 后端服务器名称。
         :type name: str
-        :param protocol_port: 后端服务器端口号。
+        :param protocol_port: 后端服务器端口。  在开启端口透传的pool下的member，该字段无法更新。  [网关型LB，即pool协议为IP时，protocol_port必须设置为0。](tag:hws_eu)
         :type protocol_port: int
         :param weight: 后端云服务器的权重，请求按权重在同一后端云服务器组下的后端云服务器间分发。权重为0的后端不再接受新的请求。当后端云服务器所在的后端云服务器组的lb_algorithm的取值为SOURCE_IP时，该字段无效。
         :type weight: int
@@ -138,7 +138,7 @@ class BatchUpdateMembersOption:
     def protocol_port(self):
         """Gets the protocol_port of this BatchUpdateMembersOption.
 
-        后端服务器端口号。
+        后端服务器端口。  在开启端口透传的pool下的member，该字段无法更新。  [网关型LB，即pool协议为IP时，protocol_port必须设置为0。](tag:hws_eu)
 
         :return: The protocol_port of this BatchUpdateMembersOption.
         :rtype: int
@@ -149,7 +149,7 @@ class BatchUpdateMembersOption:
     def protocol_port(self, protocol_port):
         """Sets the protocol_port of this BatchUpdateMembersOption.
 
-        后端服务器端口号。
+        后端服务器端口。  在开启端口透传的pool下的member，该字段无法更新。  [网关型LB，即pool协议为IP时，protocol_port必须设置为0。](tag:hws_eu)
 
         :param protocol_port: The protocol_port of this BatchUpdateMembersOption.
         :type protocol_port: int

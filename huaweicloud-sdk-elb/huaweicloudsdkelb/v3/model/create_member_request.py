@@ -31,7 +31,7 @@ class CreateMemberRequest:
 
         The model defined in huaweicloud sdk
 
-        :param pool_id: 后端服务器组ID。
+        :param pool_id: 参数解释：后端服务器组ID。
         :type pool_id: str
         :param body: Body of the CreateMemberRequest
         :type body: :class:`huaweicloudsdkelb.v3.CreateMemberRequestBody`
@@ -51,7 +51,7 @@ class CreateMemberRequest:
     def pool_id(self):
         """Gets the pool_id of this CreateMemberRequest.
 
-        后端服务器组ID。
+        参数解释：后端服务器组ID。
 
         :return: The pool_id of this CreateMemberRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class CreateMemberRequest:
     def pool_id(self, pool_id):
         """Sets the pool_id of this CreateMemberRequest.
 
-        后端服务器组ID。
+        参数解释：后端服务器组ID。
 
         :param pool_id: The pool_id of this CreateMemberRequest.
         :type pool_id: str

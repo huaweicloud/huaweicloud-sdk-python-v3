@@ -29,7 +29,7 @@ class PoolRef:
 
         The model defined in huaweicloud sdk
 
-        :param id: 后端服务器组ID。
+        :param id: 参数解释：后端服务器组ID。
         :type id: str
         """
         
@@ -44,7 +44,7 @@ class PoolRef:
     def id(self):
         """Gets the id of this PoolRef.
 
-        后端服务器组ID。
+        参数解释：后端服务器组ID。
 
         :return: The id of this PoolRef.
         :rtype: str
@@ -55,7 +55,7 @@ class PoolRef:
     def id(self, id):
         """Sets the id of this PoolRef.
 
-        后端服务器组ID。
+        参数解释：后端服务器组ID。
 
         :param id: The id of this PoolRef.
         :type id: str

@@ -31,9 +31,9 @@ class RedirectPoolsConfig:
 
         The model defined in huaweicloud sdk
 
-        :param pool_id: 所在后端服务器组ID。
+        :param pool_id: 参数解释：所在后端服务器组ID。
         :type pool_id: str
-        :param weight: 转发策略主机组的权重，范围为[0,100], 请求将根据该权重进行负载分发到不同的主机组。 权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。
+        :param weight: 参数解释：转发策略主机组的权重。请求将根据该权重进行负载分发到不同的主机组。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  取值范围：0-100
         :type weight: int
         """
         
@@ -52,7 +52,7 @@ class RedirectPoolsConfig:
     def pool_id(self):
         """Gets the pool_id of this RedirectPoolsConfig.
 
-        所在后端服务器组ID。
+        参数解释：所在后端服务器组ID。
 
         :return: The pool_id of this RedirectPoolsConfig.
         :rtype: str
@@ -63,7 +63,7 @@ class RedirectPoolsConfig:
     def pool_id(self, pool_id):
         """Sets the pool_id of this RedirectPoolsConfig.
 
-        所在后端服务器组ID。
+        参数解释：所在后端服务器组ID。
 
         :param pool_id: The pool_id of this RedirectPoolsConfig.
         :type pool_id: str
@@ -74,7 +74,7 @@ class RedirectPoolsConfig:
     def weight(self):
         """Gets the weight of this RedirectPoolsConfig.
 
-        转发策略主机组的权重，范围为[0,100], 请求将根据该权重进行负载分发到不同的主机组。 权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。
+        参数解释：转发策略主机组的权重。请求将根据该权重进行负载分发到不同的主机组。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  取值范围：0-100
 
         :return: The weight of this RedirectPoolsConfig.
         :rtype: int
@@ -85,7 +85,7 @@ class RedirectPoolsConfig:
     def weight(self, weight):
         """Sets the weight of this RedirectPoolsConfig.
 
-        转发策略主机组的权重，范围为[0,100], 请求将根据该权重进行负载分发到不同的主机组。 权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。
+        参数解释：转发策略主机组的权重。请求将根据该权重进行负载分发到不同的主机组。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  取值范围：0-100
 
         :param weight: The weight of this RedirectPoolsConfig.
         :type weight: int

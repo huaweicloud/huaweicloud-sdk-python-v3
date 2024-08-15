@@ -19,16 +19,18 @@ class FactoryInfo:
     openapi_types = {
         'factory_type': 'str',
         'state': 'int',
-        'version': 'str'
+        'version': 'str',
+        'tpl_id': 'str'
     }
 
     attribute_map = {
         'factory_type': 'factory_type',
         'state': 'state',
-        'version': 'version'
+        'version': 'version',
+        'tpl_id': 'tpl_id'
     }
 
-    def __init__(self, factory_type=None, state=None, version=None):
+    def __init__(self, factory_type=None, state=None, version=None, tpl_id=None):
         """FactoryInfo
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class FactoryInfo:
         :type state: int
         :param version: 厂商版本
         :type version: str
+        :param tpl_id: 智能信息模板ID
+        :type tpl_id: str
         """
         
         
@@ -46,12 +50,15 @@ class FactoryInfo:
         self._factory_type = None
         self._state = None
         self._version = None
+        self._tpl_id = None
         self.discriminator = None
 
         self.factory_type = factory_type
         self.state = state
         if version is not None:
             self.version = version
+        if tpl_id is not None:
+            self.tpl_id = tpl_id
 
     @property
     def factory_type(self):
@@ -118,6 +125,28 @@ class FactoryInfo:
         :type version: str
         """
         self._version = version
+
+    @property
+    def tpl_id(self):
+        """Gets the tpl_id of this FactoryInfo.
+
+        智能信息模板ID
+
+        :return: The tpl_id of this FactoryInfo.
+        :rtype: str
+        """
+        return self._tpl_id
+
+    @tpl_id.setter
+    def tpl_id(self, tpl_id):
+        """Sets the tpl_id of this FactoryInfo.
+
+        智能信息模板ID
+
+        :param tpl_id: The tpl_id of this FactoryInfo.
+        :type tpl_id: str
+        """
+        self._tpl_id = tpl_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

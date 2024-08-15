@@ -20,6 +20,7 @@ class ItemsResponse:
         'resource_type': 'str',
         'resource_name': 'str',
         'index': 'str',
+        'module_address': 'str',
         'supported': 'bool',
         'unsupported_message': 'str',
         'resource_price': 'list[ResourcePriceResponse]'
@@ -29,12 +30,13 @@ class ItemsResponse:
         'resource_type': 'resource_type',
         'resource_name': 'resource_name',
         'index': 'index',
+        'module_address': 'module_address',
         'supported': 'supported',
         'unsupported_message': 'unsupported_message',
         'resource_price': 'resource_price'
     }
 
-    def __init__(self, resource_type=None, resource_name=None, index=None, supported=None, unsupported_message=None, resource_price=None):
+    def __init__(self, resource_type=None, resource_name=None, index=None, module_address=None, supported=None, unsupported_message=None, resource_price=None):
         """ItemsResponse
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class ItemsResponse:
         :type resource_name: str
         :param index: 资源的索引，如果用户在模板中使用了count或for_each则会返回index。如果index出现，则resource_name + index可以作为该资源的一种标识  如果用户在模板中使用count，则index为从0开始的数字  以HCL格式的模板为例，用户在模板中可以通过&#x60;huaweicloud_vpc.my_hello_world_vpc[0]&#x60;和&#x60;huaweicloud_vpc.my_hello_world_vpc[1]&#x60;标识两个资源  &#x60;&#x60;&#x60;hcl resource \&quot;huaweicloud_vpc\&quot; \&quot;my_hello_world_vpc\&quot; {   count &#x3D; 2   name &#x3D; \&quot;test_vpc\&quot; } &#x60;&#x60;&#x60;  以json格式的模板为例，用户在模板中可以通过&#x60;huaweicloud_vpc.my_hello_world_vpc[0]&#x60;和&#x60;huaweicloud_vpc.my_hello_world_vpc[1]&#x60;标识两个资源  &#x60;&#x60;&#x60;json {   \&quot;resource\&quot;: {     \&quot;huaweicloud_vpc\&quot;: {       \&quot;my_hello_world_vpc\&quot;: {         \&quot;name\&quot;: \&quot;test_vpc\&quot;,         \&quot;count\&quot;: 2       }     }   } } &#x60;&#x60;&#x60;  如果用户在模板中使用for_each，则index为用户自定义的字符串  以HCL格式的模板为例，用户在模板中可以通过&#x60;huaweicloud_vpc.my_hello_world_vpc[\&quot;vpc1\&quot;]&#x60;和&#x60;huaweicloud_vpc.my_hello_world_vpc[\&quot;vpc2\&quot;]&#x60;标识两个资源  &#x60;&#x60;&#x60;hcl resource \&quot;huaweicloud_vpc\&quot; \&quot;my_hello_world_vpc\&quot; {   for_each &#x3D; {     \&quot;vpc1\&quot; &#x3D; \&quot;test_vpc\&quot;     \&quot;vpc2\&quot; &#x3D; \&quot;test_vpc\&quot;   }   name &#x3D; each.value } &#x60;&#x60;&#x60;  以json格式的模板为例，用户在模板中可以通过&#x60;huaweicloud_vpc.my_hello_world_vpc[\&quot;vpc1\&quot;]&#x60;和&#x60;huaweicloud_vpc.my_hello_world_vpc[\&quot;vpc2\&quot;]&#x60;标识两个资源  &#x60;&#x60;&#x60;json {   \&quot;resource\&quot;: {     \&quot;huaweicloud_vpc\&quot;: {       \&quot;my_hello_world_vpc\&quot;: {         \&quot;for_each\&quot;: {           \&quot;vpc1\&quot;: \&quot;test_vpc\&quot;,           \&quot;vpc2\&quot;: \&quot;test_vpc\&quot;         }         \&quot;name\&quot;: \&quot;${each.value}\&quot;       }     }   } } &#x60;&#x60;&#x60;
         :type index: str
+        :param module_address: 该资源的模块地址
+        :type module_address: str
         :param supported: 该资源或该资源当前所给予的参数是否支持进行询价
         :type supported: bool
         :param unsupported_message: 该资源不支持询价的具体原因
@@ -58,6 +62,7 @@ class ItemsResponse:
         self._resource_type = None
         self._resource_name = None
         self._index = None
+        self._module_address = None
         self._supported = None
         self._unsupported_message = None
         self._resource_price = None
@@ -69,6 +74,8 @@ class ItemsResponse:
             self.resource_name = resource_name
         if index is not None:
             self.index = index
+        if module_address is not None:
+            self.module_address = module_address
         if supported is not None:
             self.supported = supported
         if unsupported_message is not None:
@@ -141,6 +148,28 @@ class ItemsResponse:
         :type index: str
         """
         self._index = index
+
+    @property
+    def module_address(self):
+        """Gets the module_address of this ItemsResponse.
+
+        该资源的模块地址
+
+        :return: The module_address of this ItemsResponse.
+        :rtype: str
+        """
+        return self._module_address
+
+    @module_address.setter
+    def module_address(self, module_address):
+        """Sets the module_address of this ItemsResponse.
+
+        该资源的模块地址
+
+        :param module_address: The module_address of this ItemsResponse.
+        :type module_address: str
+        """
+        self._module_address = module_address
 
     @property
     def supported(self):

@@ -31,7 +31,7 @@ class ShowBatchUpgradeCandidateVersionsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 语言[zh-cn, en-us]
+        :param x_language: 语言[zh-cn, en-us]。
         :type x_language: str
         :param body: Body of the ShowBatchUpgradeCandidateVersionsRequest
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.UpgradeInstancesRequestBody`
@@ -52,7 +52,7 @@ class ShowBatchUpgradeCandidateVersionsRequest:
     def x_language(self):
         """Gets the x_language of this ShowBatchUpgradeCandidateVersionsRequest.
 
-        语言[zh-cn, en-us]
+        语言[zh-cn, en-us]。
 
         :return: The x_language of this ShowBatchUpgradeCandidateVersionsRequest.
         :rtype: str
@@ -63,7 +63,7 @@ class ShowBatchUpgradeCandidateVersionsRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ShowBatchUpgradeCandidateVersionsRequest.
 
-        语言[zh-cn, en-us]
+        语言[zh-cn, en-us]。
 
         :param x_language: The x_language of this ShowBatchUpgradeCandidateVersionsRequest.
         :type x_language: str

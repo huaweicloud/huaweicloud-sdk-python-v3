@@ -37,6 +37,7 @@ from huaweicloudsdkcloudpond.v1.model.metric_data_detail_dimension import Metric
 from huaweicloudsdkcloudpond.v1.model.page_info import PageInfo
 from huaweicloudsdkcloudpond.v1.model.pay_mode import PayMode
 from huaweicloudsdkcloudpond.v1.model.prepaid_options import PrepaidOptions
+from huaweicloudsdkcloudpond.v1.model.product_info import ProductInfo
 from huaweicloudsdkcloudpond.v1.model.quota_detail import QuotaDetail
 from huaweicloudsdkcloudpond.v1.model.quota_resources import QuotaResources
 from huaweicloudsdkcloudpond.v1.model.rack import Rack

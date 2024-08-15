@@ -33,11 +33,11 @@ class EipInfo:
 
         The model defined in huaweicloud sdk
 
-        :param eip_id: eip_id
+        :param eip_id: 参数解释：弹性IP的ID。
         :type eip_id: str
-        :param eip_address: eip_address
+        :param eip_address: 参数解释：弹性IP的IP地址。
         :type eip_address: str
-        :param ip_version: IP版本号。  取值：4表示IPv4,6表示IPv6。  [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
+        :param ip_version: 参数解释：IP版本号。  取值范围： - 4表示IPv4。 - 6表示IPv6。  [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
         :type ip_version: int
         """
         
@@ -59,7 +59,7 @@ class EipInfo:
     def eip_id(self):
         """Gets the eip_id of this EipInfo.
 
-        eip_id
+        参数解释：弹性IP的ID。
 
         :return: The eip_id of this EipInfo.
         :rtype: str
@@ -70,7 +70,7 @@ class EipInfo:
     def eip_id(self, eip_id):
         """Sets the eip_id of this EipInfo.
 
-        eip_id
+        参数解释：弹性IP的ID。
 
         :param eip_id: The eip_id of this EipInfo.
         :type eip_id: str
@@ -81,7 +81,7 @@ class EipInfo:
     def eip_address(self):
         """Gets the eip_address of this EipInfo.
 
-        eip_address
+        参数解释：弹性IP的IP地址。
 
         :return: The eip_address of this EipInfo.
         :rtype: str
@@ -92,7 +92,7 @@ class EipInfo:
     def eip_address(self, eip_address):
         """Sets the eip_address of this EipInfo.
 
-        eip_address
+        参数解释：弹性IP的IP地址。
 
         :param eip_address: The eip_address of this EipInfo.
         :type eip_address: str
@@ -103,7 +103,7 @@ class EipInfo:
     def ip_version(self):
         """Gets the ip_version of this EipInfo.
 
-        IP版本号。  取值：4表示IPv4,6表示IPv6。  [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
+        参数解释：IP版本号。  取值范围： - 4表示IPv4。 - 6表示IPv6。  [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
 
         :return: The ip_version of this EipInfo.
         :rtype: int
@@ -114,7 +114,7 @@ class EipInfo:
     def ip_version(self, ip_version):
         """Sets the ip_version of this EipInfo.
 
-        IP版本号。  取值：4表示IPv4,6表示IPv6。  [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
+        参数解释：IP版本号。  取值范围： - 4表示IPv4。 - 6表示IPv6。  [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
 
         :param ip_version: The ip_version of this EipInfo.
         :type ip_version: int

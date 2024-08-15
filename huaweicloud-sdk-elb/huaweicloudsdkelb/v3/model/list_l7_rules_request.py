@@ -69,7 +69,7 @@ class ListL7RulesRequest:
         :type provisioning_status: list[str]
         :param invert: 是否反向匹配。使用说明：固定为false。该字段能更新但不会生效。
         :type invert: bool
-        :param admin_state_up: 转发规则的管理状态，默认为true。  不支持该字段，请勿使用。
+        :param admin_state_up: 转发规则的管理状态。  不支持该字段，请勿使用。
         :type admin_state_up: bool
         :param value: 匹配内容的值。  支持多值查询，查询条件格式：*value&#x3D;xxx&amp;value&#x3D;xxx*。
         :type value: list[str]
@@ -304,7 +304,7 @@ class ListL7RulesRequest:
     def admin_state_up(self):
         """Gets the admin_state_up of this ListL7RulesRequest.
 
-        转发规则的管理状态，默认为true。  不支持该字段，请勿使用。
+        转发规则的管理状态。  不支持该字段，请勿使用。
 
         :return: The admin_state_up of this ListL7RulesRequest.
         :rtype: bool
@@ -315,7 +315,7 @@ class ListL7RulesRequest:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this ListL7RulesRequest.
 
-        转发规则的管理状态，默认为true。  不支持该字段，请勿使用。
+        转发规则的管理状态。  不支持该字段，请勿使用。
 
         :param admin_state_up: The admin_state_up of this ListL7RulesRequest.
         :type admin_state_up: bool

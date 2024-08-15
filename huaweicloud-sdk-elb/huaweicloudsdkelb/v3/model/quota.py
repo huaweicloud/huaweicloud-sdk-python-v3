@@ -59,7 +59,7 @@ class Quota:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: 项目ID。
+        :param project_id: 参数解释：项目ID。
         :type project_id: str
         :param loadbalancer: 负载均衡器配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
         :type loadbalancer: int
@@ -134,7 +134,7 @@ class Quota:
     def project_id(self):
         """Gets the project_id of this Quota.
 
-        项目ID。
+        参数解释：项目ID。
 
         :return: The project_id of this Quota.
         :rtype: str
@@ -145,7 +145,7 @@ class Quota:
     def project_id(self, project_id):
         """Sets the project_id of this Quota.
 
-        项目ID。
+        参数解释：项目ID。
 
         :param project_id: The project_id of this Quota.
         :type project_id: str

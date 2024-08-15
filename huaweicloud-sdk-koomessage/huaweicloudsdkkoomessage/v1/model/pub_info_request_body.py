@@ -23,6 +23,7 @@ class PubInfoRequestBody:
         'pub_remark': 'str',
         'auto_get_port': 'int',
         'signs_for_auto_get_port': 'list[str]',
+        'areas_for_auto_get_port': 'list[str]',
         'industry': 'int',
         'authorization_files': 'list[str]'
     }
@@ -34,11 +35,12 @@ class PubInfoRequestBody:
         'pub_remark': 'pub_remark',
         'auto_get_port': 'auto_get_port',
         'signs_for_auto_get_port': 'signs_for_auto_get_port',
+        'areas_for_auto_get_port': 'areas_for_auto_get_port',
         'industry': 'industry',
         'authorization_files': 'authorization_files'
     }
 
-    def __init__(self, logo_img=None, pub_name=None, pub_abstract=None, pub_remark=None, auto_get_port=None, signs_for_auto_get_port=None, industry=None, authorization_files=None):
+    def __init__(self, logo_img=None, pub_name=None, pub_abstract=None, pub_remark=None, auto_get_port=None, signs_for_auto_get_port=None, areas_for_auto_get_port=None, industry=None, authorization_files=None):
         """PubInfoRequestBody
 
         The model defined in huaweicloud sdk
@@ -55,9 +57,11 @@ class PubInfoRequestBody:
         :type auto_get_port: int
         :param signs_for_auto_get_port: 自动收集端口使用的签名列表。  &gt; auto_get_port为1时，该字段为必填，每个签名长度为2-18个字符，每个服务号签名不可以重复。 
         :type signs_for_auto_get_port: list[str]
+        :param areas_for_auto_get_port: 自动收集端口生效的地区列表。地区取值见《地区名称列表》。  &gt; auto_get_port为1时，该字段有效。不填则默认全国，不允许传入重叠地区。 
+        :type areas_for_auto_get_port: list[str]
         :param industry: 从事行业，默认取服务号所属商家的行业分类。  - 1：金融理财  - 2：社交通讯  - 3：影音娱乐  - 4：旅游出行  - 5：购物  - 6：本地生活  - 7：运动健康  - 8：教育培训  - 9：新闻阅读  - 10：运营商  - 11：其他 
         :type industry: int
-        :param authorization_files: 授权证明图片ID，最多支持6张。  &gt; 参数值为上传智能信息服务号图片资源API返回的resource_id。 
+        :param authorization_files: 授权证明图片ID，支持jpg、bmp、png和jpeg格式，全部图片总大小不超过4M，最多支持6张。  &gt; 参数值为上传智能信息服务号图片资源API返回的resource_id。 
         :type authorization_files: list[str]
         """
         
@@ -69,6 +73,7 @@ class PubInfoRequestBody:
         self._pub_remark = None
         self._auto_get_port = None
         self._signs_for_auto_get_port = None
+        self._areas_for_auto_get_port = None
         self._industry = None
         self._authorization_files = None
         self.discriminator = None
@@ -82,6 +87,8 @@ class PubInfoRequestBody:
             self.auto_get_port = auto_get_port
         if signs_for_auto_get_port is not None:
             self.signs_for_auto_get_port = signs_for_auto_get_port
+        if areas_for_auto_get_port is not None:
+            self.areas_for_auto_get_port = areas_for_auto_get_port
         if industry is not None:
             self.industry = industry
         self.authorization_files = authorization_files
@@ -219,6 +226,28 @@ class PubInfoRequestBody:
         self._signs_for_auto_get_port = signs_for_auto_get_port
 
     @property
+    def areas_for_auto_get_port(self):
+        """Gets the areas_for_auto_get_port of this PubInfoRequestBody.
+
+        自动收集端口生效的地区列表。地区取值见《地区名称列表》。  > auto_get_port为1时，该字段有效。不填则默认全国，不允许传入重叠地区。 
+
+        :return: The areas_for_auto_get_port of this PubInfoRequestBody.
+        :rtype: list[str]
+        """
+        return self._areas_for_auto_get_port
+
+    @areas_for_auto_get_port.setter
+    def areas_for_auto_get_port(self, areas_for_auto_get_port):
+        """Sets the areas_for_auto_get_port of this PubInfoRequestBody.
+
+        自动收集端口生效的地区列表。地区取值见《地区名称列表》。  > auto_get_port为1时，该字段有效。不填则默认全国，不允许传入重叠地区。 
+
+        :param areas_for_auto_get_port: The areas_for_auto_get_port of this PubInfoRequestBody.
+        :type areas_for_auto_get_port: list[str]
+        """
+        self._areas_for_auto_get_port = areas_for_auto_get_port
+
+    @property
     def industry(self):
         """Gets the industry of this PubInfoRequestBody.
 
@@ -244,7 +273,7 @@ class PubInfoRequestBody:
     def authorization_files(self):
         """Gets the authorization_files of this PubInfoRequestBody.
 
-        授权证明图片ID，最多支持6张。  > 参数值为上传智能信息服务号图片资源API返回的resource_id。 
+        授权证明图片ID，支持jpg、bmp、png和jpeg格式，全部图片总大小不超过4M，最多支持6张。  > 参数值为上传智能信息服务号图片资源API返回的resource_id。 
 
         :return: The authorization_files of this PubInfoRequestBody.
         :rtype: list[str]
@@ -255,7 +284,7 @@ class PubInfoRequestBody:
     def authorization_files(self, authorization_files):
         """Sets the authorization_files of this PubInfoRequestBody.
 
-        授权证明图片ID，最多支持6张。  > 参数值为上传智能信息服务号图片资源API返回的resource_id。 
+        授权证明图片ID，支持jpg、bmp、png和jpeg格式，全部图片总大小不超过4M，最多支持6张。  > 参数值为上传智能信息服务号图片资源API返回的resource_id。 
 
         :param authorization_files: The authorization_files of this PubInfoRequestBody.
         :type authorization_files: list[str]

@@ -20,16 +20,18 @@ class ListLogsResponse(SdkResponse):
     openapi_types = {
         'count': 'int',
         'logs': 'list[LogContents]',
-        'is_query_complete': 'bool'
+        'is_query_complete': 'bool',
+        'analysis_logs': 'list[dict(str, str)]'
     }
 
     attribute_map = {
         'count': 'count',
         'logs': 'logs',
-        'is_query_complete': 'isQueryComplete'
+        'is_query_complete': 'isQueryComplete',
+        'analysis_logs': 'analysisLogs'
     }
 
-    def __init__(self, count=None, logs=None, is_query_complete=None):
+    def __init__(self, count=None, logs=None, is_query_complete=None, analysis_logs=None):
         """ListLogsResponse
 
         The model defined in huaweicloud sdk
@@ -40,6 +42,8 @@ class ListLogsResponse(SdkResponse):
         :type logs: list[:class:`huaweicloudsdklts.v2.LogContents`]
         :param is_query_complete: 是否查询完成。
         :type is_query_complete: bool
+        :param analysis_logs: 分析日志返回响应体
+        :type analysis_logs: list[dict(str, str)]
         """
         
         super(ListLogsResponse, self).__init__()
@@ -47,6 +51,7 @@ class ListLogsResponse(SdkResponse):
         self._count = None
         self._logs = None
         self._is_query_complete = None
+        self._analysis_logs = None
         self.discriminator = None
 
         if count is not None:
@@ -55,6 +60,8 @@ class ListLogsResponse(SdkResponse):
             self.logs = logs
         if is_query_complete is not None:
             self.is_query_complete = is_query_complete
+        if analysis_logs is not None:
+            self.analysis_logs = analysis_logs
 
     @property
     def count(self):
@@ -121,6 +128,28 @@ class ListLogsResponse(SdkResponse):
         :type is_query_complete: bool
         """
         self._is_query_complete = is_query_complete
+
+    @property
+    def analysis_logs(self):
+        """Gets the analysis_logs of this ListLogsResponse.
+
+        分析日志返回响应体
+
+        :return: The analysis_logs of this ListLogsResponse.
+        :rtype: list[dict(str, str)]
+        """
+        return self._analysis_logs
+
+    @analysis_logs.setter
+    def analysis_logs(self, analysis_logs):
+        """Sets the analysis_logs of this ListLogsResponse.
+
+        分析日志返回响应体
+
+        :param analysis_logs: The analysis_logs of this ListLogsResponse.
+        :type analysis_logs: list[dict(str, str)]
+        """
+        self._analysis_logs = analysis_logs
 
     def to_dict(self):
         """Returns the model properties as a dict"""

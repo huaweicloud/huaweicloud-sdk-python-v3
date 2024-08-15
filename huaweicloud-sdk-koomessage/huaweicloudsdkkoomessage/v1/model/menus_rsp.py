@@ -26,7 +26,9 @@ class MenusRsp:
         'menu_state': 'int',
         'approve_state': 'int',
         'online_time': 'str',
-        'oper_time': 'str'
+        'oper_time': 'str',
+        'company_id': 'str',
+        'company_name': 'str'
     }
 
     attribute_map = {
@@ -39,10 +41,12 @@ class MenusRsp:
         'menu_state': 'menu_state',
         'approve_state': 'approve_state',
         'online_time': 'online_time',
-        'oper_time': 'oper_time'
+        'oper_time': 'oper_time',
+        'company_id': 'company_id',
+        'company_name': 'company_name'
     }
 
-    def __init__(self, menu_id=None, pub_id=None, pub_name=None, logo_img=None, logo_url=None, menu=None, menu_state=None, approve_state=None, online_time=None, oper_time=None):
+    def __init__(self, menu_id=None, pub_id=None, pub_name=None, logo_img=None, logo_url=None, menu=None, menu_state=None, approve_state=None, online_time=None, oper_time=None, company_id=None, company_name=None):
         """MenusRsp
 
         The model defined in huaweicloud sdk
@@ -67,6 +71,10 @@ class MenusRsp:
         :type online_time: str
         :param oper_time: 最新操作时间。格式为：2020-12-12T12:00:00Z。
         :type oper_time: str
+        :param company_id: 企业ID。
+        :type company_id: str
+        :param company_name: 企业名称。
+        :type company_name: str
         """
         
         
@@ -81,6 +89,8 @@ class MenusRsp:
         self._approve_state = None
         self._online_time = None
         self._oper_time = None
+        self._company_id = None
+        self._company_name = None
         self.discriminator = None
 
         if menu_id is not None:
@@ -103,6 +113,10 @@ class MenusRsp:
             self.online_time = online_time
         if oper_time is not None:
             self.oper_time = oper_time
+        if company_id is not None:
+            self.company_id = company_id
+        if company_name is not None:
+            self.company_name = company_name
 
     @property
     def menu_id(self):
@@ -319,6 +333,50 @@ class MenusRsp:
         :type oper_time: str
         """
         self._oper_time = oper_time
+
+    @property
+    def company_id(self):
+        """Gets the company_id of this MenusRsp.
+
+        企业ID。
+
+        :return: The company_id of this MenusRsp.
+        :rtype: str
+        """
+        return self._company_id
+
+    @company_id.setter
+    def company_id(self, company_id):
+        """Sets the company_id of this MenusRsp.
+
+        企业ID。
+
+        :param company_id: The company_id of this MenusRsp.
+        :type company_id: str
+        """
+        self._company_id = company_id
+
+    @property
+    def company_name(self):
+        """Gets the company_name of this MenusRsp.
+
+        企业名称。
+
+        :return: The company_name of this MenusRsp.
+        :rtype: str
+        """
+        return self._company_name
+
+    @company_name.setter
+    def company_name(self, company_name):
+        """Sets the company_name of this MenusRsp.
+
+        企业名称。
+
+        :param company_name: The company_name of this MenusRsp.
+        :type company_name: str
+        """
+        self._company_name = company_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

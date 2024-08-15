@@ -33,7 +33,7 @@ class GeneralTableResult:
 
         The model defined in huaweicloud sdk
 
-        :param words_region_count: 文字区域数目。          
+        :param words_region_count: 文字区域数目。 
         :type words_region_count: int
         :param words_region_list: 文字区域识别结果列表，输出顺序从左到右，先上后下。 
         :type words_region_list: list[:class:`huaweicloudsdkocr.v1.WordsRegionList`]
@@ -57,7 +57,7 @@ class GeneralTableResult:
     def words_region_count(self):
         """Gets the words_region_count of this GeneralTableResult.
 
-        文字区域数目。          
+        文字区域数目。 
 
         :return: The words_region_count of this GeneralTableResult.
         :rtype: int
@@ -68,7 +68,7 @@ class GeneralTableResult:
     def words_region_count(self, words_region_count):
         """Sets the words_region_count of this GeneralTableResult.
 
-        文字区域数目。          
+        文字区域数目。 
 
         :param words_region_count: The words_region_count of this GeneralTableResult.
         :type words_region_count: int

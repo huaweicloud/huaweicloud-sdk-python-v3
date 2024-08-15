@@ -29,6 +29,9 @@ class TransportationLicenseResult:
         'economic_type': 'str',
         'business_certificate': 'str',
         'business_scope': 'str',
+        'expiry_date': 'str',
+        'review_expiry_date': 'str',
+        'assessed_technical_level': 'str',
         'confidence': 'object'
     }
 
@@ -45,10 +48,13 @@ class TransportationLicenseResult:
         'economic_type': 'economic_type',
         'business_certificate': 'business_certificate',
         'business_scope': 'business_scope',
+        'expiry_date': 'expiry_date',
+        'review_expiry_date': 'review_expiry_date',
+        'assessed_technical_level': 'assessed_technical_level',
         'confidence': 'confidence'
     }
 
-    def __init__(self, owner_name=None, license_number=None, vehicle_number=None, vehicle_type=None, maximum_capacity=None, vehicle_size=None, issuing_authority=None, issue_date=None, owner_address=None, economic_type=None, business_certificate=None, business_scope=None, confidence=None):
+    def __init__(self, owner_name=None, license_number=None, vehicle_number=None, vehicle_type=None, maximum_capacity=None, vehicle_size=None, issuing_authority=None, issue_date=None, owner_address=None, economic_type=None, business_certificate=None, business_scope=None, expiry_date=None, review_expiry_date=None, assessed_technical_level=None, confidence=None):
         """TransportationLicenseResult
 
         The model defined in huaweicloud sdk
@@ -65,18 +71,24 @@ class TransportationLicenseResult:
         :type maximum_capacity: str
         :param vehicle_size: 车辆尺寸。 
         :type vehicle_size: str
-        :param issuing_authority: 核发机关（非必有，依赖对应运输证板式）。 
+        :param issuing_authority: 核发机关。 
         :type issuing_authority: str
-        :param issue_date: 发证日期（非必有，依赖对应运输证板式）。 
+        :param issue_date: 发证日期。 
         :type issue_date: str
-        :param owner_address: 业户地址（非必有，依赖对应运输证板式）。 
+        :param owner_address: 业户地址。 
         :type owner_address: str
-        :param economic_type: 经济类型（非必有，依赖对应运输证板式）。 
+        :param economic_type: 经济类型。 
         :type economic_type: str
-        :param business_certificate: 经营许可证号（非必有，依赖对应运输证板式）。 
+        :param business_certificate: 经营许可证号。 
         :type business_certificate: str
-        :param business_scope: 经营范围（非必有，依赖对应运输证板式）。 
+        :param business_scope: 经营范围。 
         :type business_scope: str
+        :param expiry_date: 有效期。 
+        :type expiry_date: str
+        :param review_expiry_date: 审验有效期。 
+        :type review_expiry_date: str
+        :param assessed_technical_level: 技术等级评定。 
+        :type assessed_technical_level: str
         :param confidence: 相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。 
         :type confidence: object
         """
@@ -95,6 +107,9 @@ class TransportationLicenseResult:
         self._economic_type = None
         self._business_certificate = None
         self._business_scope = None
+        self._expiry_date = None
+        self._review_expiry_date = None
+        self._assessed_technical_level = None
         self._confidence = None
         self.discriminator = None
 
@@ -122,6 +137,12 @@ class TransportationLicenseResult:
             self.business_certificate = business_certificate
         if business_scope is not None:
             self.business_scope = business_scope
+        if expiry_date is not None:
+            self.expiry_date = expiry_date
+        if review_expiry_date is not None:
+            self.review_expiry_date = review_expiry_date
+        if assessed_technical_level is not None:
+            self.assessed_technical_level = assessed_technical_level
         if confidence is not None:
             self.confidence = confidence
 
@@ -261,7 +282,7 @@ class TransportationLicenseResult:
     def issuing_authority(self):
         """Gets the issuing_authority of this TransportationLicenseResult.
 
-        核发机关（非必有，依赖对应运输证板式）。 
+        核发机关。 
 
         :return: The issuing_authority of this TransportationLicenseResult.
         :rtype: str
@@ -272,7 +293,7 @@ class TransportationLicenseResult:
     def issuing_authority(self, issuing_authority):
         """Sets the issuing_authority of this TransportationLicenseResult.
 
-        核发机关（非必有，依赖对应运输证板式）。 
+        核发机关。 
 
         :param issuing_authority: The issuing_authority of this TransportationLicenseResult.
         :type issuing_authority: str
@@ -283,7 +304,7 @@ class TransportationLicenseResult:
     def issue_date(self):
         """Gets the issue_date of this TransportationLicenseResult.
 
-        发证日期（非必有，依赖对应运输证板式）。 
+        发证日期。 
 
         :return: The issue_date of this TransportationLicenseResult.
         :rtype: str
@@ -294,7 +315,7 @@ class TransportationLicenseResult:
     def issue_date(self, issue_date):
         """Sets the issue_date of this TransportationLicenseResult.
 
-        发证日期（非必有，依赖对应运输证板式）。 
+        发证日期。 
 
         :param issue_date: The issue_date of this TransportationLicenseResult.
         :type issue_date: str
@@ -305,7 +326,7 @@ class TransportationLicenseResult:
     def owner_address(self):
         """Gets the owner_address of this TransportationLicenseResult.
 
-        业户地址（非必有，依赖对应运输证板式）。 
+        业户地址。 
 
         :return: The owner_address of this TransportationLicenseResult.
         :rtype: str
@@ -316,7 +337,7 @@ class TransportationLicenseResult:
     def owner_address(self, owner_address):
         """Sets the owner_address of this TransportationLicenseResult.
 
-        业户地址（非必有，依赖对应运输证板式）。 
+        业户地址。 
 
         :param owner_address: The owner_address of this TransportationLicenseResult.
         :type owner_address: str
@@ -327,7 +348,7 @@ class TransportationLicenseResult:
     def economic_type(self):
         """Gets the economic_type of this TransportationLicenseResult.
 
-        经济类型（非必有，依赖对应运输证板式）。 
+        经济类型。 
 
         :return: The economic_type of this TransportationLicenseResult.
         :rtype: str
@@ -338,7 +359,7 @@ class TransportationLicenseResult:
     def economic_type(self, economic_type):
         """Sets the economic_type of this TransportationLicenseResult.
 
-        经济类型（非必有，依赖对应运输证板式）。 
+        经济类型。 
 
         :param economic_type: The economic_type of this TransportationLicenseResult.
         :type economic_type: str
@@ -349,7 +370,7 @@ class TransportationLicenseResult:
     def business_certificate(self):
         """Gets the business_certificate of this TransportationLicenseResult.
 
-        经营许可证号（非必有，依赖对应运输证板式）。 
+        经营许可证号。 
 
         :return: The business_certificate of this TransportationLicenseResult.
         :rtype: str
@@ -360,7 +381,7 @@ class TransportationLicenseResult:
     def business_certificate(self, business_certificate):
         """Sets the business_certificate of this TransportationLicenseResult.
 
-        经营许可证号（非必有，依赖对应运输证板式）。 
+        经营许可证号。 
 
         :param business_certificate: The business_certificate of this TransportationLicenseResult.
         :type business_certificate: str
@@ -371,7 +392,7 @@ class TransportationLicenseResult:
     def business_scope(self):
         """Gets the business_scope of this TransportationLicenseResult.
 
-        经营范围（非必有，依赖对应运输证板式）。 
+        经营范围。 
 
         :return: The business_scope of this TransportationLicenseResult.
         :rtype: str
@@ -382,12 +403,78 @@ class TransportationLicenseResult:
     def business_scope(self, business_scope):
         """Sets the business_scope of this TransportationLicenseResult.
 
-        经营范围（非必有，依赖对应运输证板式）。 
+        经营范围。 
 
         :param business_scope: The business_scope of this TransportationLicenseResult.
         :type business_scope: str
         """
         self._business_scope = business_scope
+
+    @property
+    def expiry_date(self):
+        """Gets the expiry_date of this TransportationLicenseResult.
+
+        有效期。 
+
+        :return: The expiry_date of this TransportationLicenseResult.
+        :rtype: str
+        """
+        return self._expiry_date
+
+    @expiry_date.setter
+    def expiry_date(self, expiry_date):
+        """Sets the expiry_date of this TransportationLicenseResult.
+
+        有效期。 
+
+        :param expiry_date: The expiry_date of this TransportationLicenseResult.
+        :type expiry_date: str
+        """
+        self._expiry_date = expiry_date
+
+    @property
+    def review_expiry_date(self):
+        """Gets the review_expiry_date of this TransportationLicenseResult.
+
+        审验有效期。 
+
+        :return: The review_expiry_date of this TransportationLicenseResult.
+        :rtype: str
+        """
+        return self._review_expiry_date
+
+    @review_expiry_date.setter
+    def review_expiry_date(self, review_expiry_date):
+        """Sets the review_expiry_date of this TransportationLicenseResult.
+
+        审验有效期。 
+
+        :param review_expiry_date: The review_expiry_date of this TransportationLicenseResult.
+        :type review_expiry_date: str
+        """
+        self._review_expiry_date = review_expiry_date
+
+    @property
+    def assessed_technical_level(self):
+        """Gets the assessed_technical_level of this TransportationLicenseResult.
+
+        技术等级评定。 
+
+        :return: The assessed_technical_level of this TransportationLicenseResult.
+        :rtype: str
+        """
+        return self._assessed_technical_level
+
+    @assessed_technical_level.setter
+    def assessed_technical_level(self, assessed_technical_level):
+        """Sets the assessed_technical_level of this TransportationLicenseResult.
+
+        技术等级评定。 
+
+        :param assessed_technical_level: The assessed_technical_level of this TransportationLicenseResult.
+        :type assessed_technical_level: str
+        """
+        self._assessed_technical_level = assessed_technical_level
 
     @property
     def confidence(self):

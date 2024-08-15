@@ -59,7 +59,7 @@ class ListMembersRequest:
 
         The model defined in huaweicloud sdk
 
-        :param pool_id: 后端服务器组ID。
+        :param pool_id: 参数解释：后端服务器组ID。
         :type pool_id: str
         :param marker: 上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
         :type marker: str
@@ -149,7 +149,7 @@ class ListMembersRequest:
     def pool_id(self):
         """Gets the pool_id of this ListMembersRequest.
 
-        后端服务器组ID。
+        参数解释：后端服务器组ID。
 
         :return: The pool_id of this ListMembersRequest.
         :rtype: str
@@ -160,7 +160,7 @@ class ListMembersRequest:
     def pool_id(self, pool_id):
         """Sets the pool_id of this ListMembersRequest.
 
-        后端服务器组ID。
+        参数解释：后端服务器组ID。
 
         :param pool_id: The pool_id of this ListMembersRequest.
         :type pool_id: str

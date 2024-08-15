@@ -41,7 +41,7 @@ class AutoClassificationResult:
         :type status: :class:`huaweicloudsdkocr.v1.AutoClassificationResultStatus`
         :param content: 对应票证具体结构化识别的结果。 
         :type content: object
-        :param type: 对应票证的类别。         
+        :param type: 对应票证的类别。 
         :type type: str
         :param location: 文字块的区域位置信息，列表形式，包含文字区域四个顶点的二维坐标（x,y）;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
         :type location: list[list[int]]
@@ -109,7 +109,7 @@ class AutoClassificationResult:
     def type(self):
         """Gets the type of this AutoClassificationResult.
 
-        对应票证的类别。         
+        对应票证的类别。 
 
         :return: The type of this AutoClassificationResult.
         :rtype: str
@@ -120,7 +120,7 @@ class AutoClassificationResult:
     def type(self, type):
         """Sets the type of this AutoClassificationResult.
 
-        对应票证的类别。         
+        对应票证的类别。 
 
         :param type: The type of this AutoClassificationResult.
         :type type: str

@@ -85,7 +85,7 @@ class ListDesktopsDetailRequest:
         :type limit: int
         :param desktop_id: 桌面ID。
         :type desktop_id: list[str]
-        :param desktop_type: 桌面类型，为空时查所有桌面。 - DEDICATED：普通桌面，包括专享桌面、专属桌面等 - POOLED：池桌面，即桌面池里的桌面
+        :param desktop_type: 桌面类型，为空时查所有桌面。 - DEDICATED：普通桌面，包括专享桌面、专属桌面等 - POOLED：池桌面，即桌面池里的桌面 - SHARED: 多用户共享桌面。
         :type desktop_type: str
         :param tag: 桌面的标签。样例：  - key1&#x3D;value1。 - key1&#x3D;value1，key2&#x3D;value2。
         :type tag: str
@@ -391,7 +391,7 @@ class ListDesktopsDetailRequest:
     def desktop_type(self):
         """Gets the desktop_type of this ListDesktopsDetailRequest.
 
-        桌面类型，为空时查所有桌面。 - DEDICATED：普通桌面，包括专享桌面、专属桌面等 - POOLED：池桌面，即桌面池里的桌面
+        桌面类型，为空时查所有桌面。 - DEDICATED：普通桌面，包括专享桌面、专属桌面等 - POOLED：池桌面，即桌面池里的桌面 - SHARED: 多用户共享桌面。
 
         :return: The desktop_type of this ListDesktopsDetailRequest.
         :rtype: str
@@ -402,7 +402,7 @@ class ListDesktopsDetailRequest:
     def desktop_type(self, desktop_type):
         """Sets the desktop_type of this ListDesktopsDetailRequest.
 
-        桌面类型，为空时查所有桌面。 - DEDICATED：普通桌面，包括专享桌面、专属桌面等 - POOLED：池桌面，即桌面池里的桌面
+        桌面类型，为空时查所有桌面。 - DEDICATED：普通桌面，包括专享桌面、专属桌面等 - POOLED：池桌面，即桌面池里的桌面 - SHARED: 多用户共享桌面。
 
         :param desktop_type: The desktop_type of this ListDesktopsDetailRequest.
         :type desktop_type: str

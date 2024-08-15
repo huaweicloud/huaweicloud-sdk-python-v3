@@ -20,7 +20,7 @@ class NodePoolSpecUpdate:
         'node_template': 'NodeSpecUpdate',
         'initial_node_count': 'int',
         'autoscaling': 'NodePoolNodeAutoscaling',
-        'extension_scale_groups': 'ExtensionScaleGroup'
+        'extension_scale_groups': 'list[ExtensionScaleGroup]'
     }
 
     attribute_map = {
@@ -41,8 +41,8 @@ class NodePoolSpecUpdate:
         :type initial_node_count: int
         :param autoscaling: 
         :type autoscaling: :class:`huaweicloudsdkcce.v3.NodePoolNodeAutoscaling`
-        :param extension_scale_groups: 
-        :type extension_scale_groups: :class:`huaweicloudsdkcce.v3.ExtensionScaleGroup`
+        :param extension_scale_groups: 节点池扩展伸缩组配置列表，详情参见ExtensionScaleGroup类型定义
+        :type extension_scale_groups: list[:class:`huaweicloudsdkcce.v3.ExtensionScaleGroup`]
         """
         
         
@@ -121,8 +121,10 @@ class NodePoolSpecUpdate:
     def extension_scale_groups(self):
         """Gets the extension_scale_groups of this NodePoolSpecUpdate.
 
+        节点池扩展伸缩组配置列表，详情参见ExtensionScaleGroup类型定义
+
         :return: The extension_scale_groups of this NodePoolSpecUpdate.
-        :rtype: :class:`huaweicloudsdkcce.v3.ExtensionScaleGroup`
+        :rtype: list[:class:`huaweicloudsdkcce.v3.ExtensionScaleGroup`]
         """
         return self._extension_scale_groups
 
@@ -130,8 +132,10 @@ class NodePoolSpecUpdate:
     def extension_scale_groups(self, extension_scale_groups):
         """Sets the extension_scale_groups of this NodePoolSpecUpdate.
 
+        节点池扩展伸缩组配置列表，详情参见ExtensionScaleGroup类型定义
+
         :param extension_scale_groups: The extension_scale_groups of this NodePoolSpecUpdate.
-        :type extension_scale_groups: :class:`huaweicloudsdkcce.v3.ExtensionScaleGroup`
+        :type extension_scale_groups: list[:class:`huaweicloudsdkcce.v3.ExtensionScaleGroup`]
         """
         self._extension_scale_groups = extension_scale_groups
 

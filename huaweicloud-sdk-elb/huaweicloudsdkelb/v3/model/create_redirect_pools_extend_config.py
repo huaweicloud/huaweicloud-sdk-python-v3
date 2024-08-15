@@ -37,7 +37,7 @@ class CreateRedirectPoolsExtendConfig:
 
         The model defined in huaweicloud sdk
 
-        :param rewrite_url_enable: 是否开启url重定向。
+        :param rewrite_url_enable: 参数解释：是否开启url重定向。
         :type rewrite_url_enable: bool
         :param rewrite_url_config: 
         :type rewrite_url_config: :class:`huaweicloudsdkelb.v3.CreateRewriteUrlConfig`
@@ -73,7 +73,7 @@ class CreateRedirectPoolsExtendConfig:
     def rewrite_url_enable(self):
         """Gets the rewrite_url_enable of this CreateRedirectPoolsExtendConfig.
 
-        是否开启url重定向。
+        参数解释：是否开启url重定向。
 
         :return: The rewrite_url_enable of this CreateRedirectPoolsExtendConfig.
         :rtype: bool
@@ -84,7 +84,7 @@ class CreateRedirectPoolsExtendConfig:
     def rewrite_url_enable(self, rewrite_url_enable):
         """Sets the rewrite_url_enable of this CreateRedirectPoolsExtendConfig.
 
-        是否开启url重定向。
+        参数解释：是否开启url重定向。
 
         :param rewrite_url_enable: The rewrite_url_enable of this CreateRedirectPoolsExtendConfig.
         :type rewrite_url_enable: bool

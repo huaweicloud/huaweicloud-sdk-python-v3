@@ -29,7 +29,7 @@ class PrivatePolicyBodyPrimitiveTypeHolder:
 
         The model defined in huaweicloud sdk
 
-        :param policy_body: 策略内容。仅支持OPA开源引擎识别的，以rego（https://www.openpolicyagent.org/docs/latest/policy-language/）语言编写的策略模板。  policy_body和policy_uri 必须有且只有一个存在
+        :param policy_body: 策略内容。仅支持OPA开源引擎识别的，以Rego（https://www.openpolicyagent.org/docs/latest/policy-language/）语言编写的策略模板。  policy_body和policy_uri 必须有且只有一个存在
         :type policy_body: str
         """
         
@@ -45,7 +45,7 @@ class PrivatePolicyBodyPrimitiveTypeHolder:
     def policy_body(self):
         """Gets the policy_body of this PrivatePolicyBodyPrimitiveTypeHolder.
 
-        策略内容。仅支持OPA开源引擎识别的，以rego（https://www.openpolicyagent.org/docs/latest/policy-language/）语言编写的策略模板。  policy_body和policy_uri 必须有且只有一个存在
+        策略内容。仅支持OPA开源引擎识别的，以Rego（https://www.openpolicyagent.org/docs/latest/policy-language/）语言编写的策略模板。  policy_body和policy_uri 必须有且只有一个存在
 
         :return: The policy_body of this PrivatePolicyBodyPrimitiveTypeHolder.
         :rtype: str
@@ -56,7 +56,7 @@ class PrivatePolicyBodyPrimitiveTypeHolder:
     def policy_body(self, policy_body):
         """Sets the policy_body of this PrivatePolicyBodyPrimitiveTypeHolder.
 
-        策略内容。仅支持OPA开源引擎识别的，以rego（https://www.openpolicyagent.org/docs/latest/policy-language/）语言编写的策略模板。  policy_body和policy_uri 必须有且只有一个存在
+        策略内容。仅支持OPA开源引擎识别的，以Rego（https://www.openpolicyagent.org/docs/latest/policy-language/）语言编写的策略模板。  policy_body和policy_uri 必须有且只有一个存在
 
         :param policy_body: The policy_body of this PrivatePolicyBodyPrimitiveTypeHolder.
         :type policy_body: str

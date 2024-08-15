@@ -29,7 +29,7 @@ class RemoveHeadersConfig:
 
         The model defined in huaweicloud sdk
 
-        :param configs: 要移除的请求头参数列表。
+        :param configs: 参数解释：要移除的请求头参数列表。
         :type configs: list[:class:`huaweicloudsdkelb.v3.RemoveHeaderConfig`]
         """
         
@@ -44,7 +44,7 @@ class RemoveHeadersConfig:
     def configs(self):
         """Gets the configs of this RemoveHeadersConfig.
 
-        要移除的请求头参数列表。
+        参数解释：要移除的请求头参数列表。
 
         :return: The configs of this RemoveHeadersConfig.
         :rtype: list[:class:`huaweicloudsdkelb.v3.RemoveHeaderConfig`]
@@ -55,7 +55,7 @@ class RemoveHeadersConfig:
     def configs(self, configs):
         """Sets the configs of this RemoveHeadersConfig.
 
-        要移除的请求头参数列表。
+        参数解释：要移除的请求头参数列表。
 
         :param configs: The configs of this RemoveHeadersConfig.
         :type configs: list[:class:`huaweicloudsdkelb.v3.RemoveHeaderConfig`]

@@ -29,7 +29,7 @@ class ListAvailabilityZonesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param public_border_group: AZ组。
+        :param public_border_group: 参数解释：AZ组。
         :type public_border_group: str
         """
         
@@ -45,7 +45,7 @@ class ListAvailabilityZonesRequest:
     def public_border_group(self):
         """Gets the public_border_group of this ListAvailabilityZonesRequest.
 
-        AZ组。
+        参数解释：AZ组。
 
         :return: The public_border_group of this ListAvailabilityZonesRequest.
         :rtype: str
@@ -56,7 +56,7 @@ class ListAvailabilityZonesRequest:
     def public_border_group(self, public_border_group):
         """Sets the public_border_group of this ListAvailabilityZonesRequest.
 
-        AZ组。
+        参数解释：AZ组。
 
         :param public_border_group: The public_border_group of this ListAvailabilityZonesRequest.
         :type public_border_group: str

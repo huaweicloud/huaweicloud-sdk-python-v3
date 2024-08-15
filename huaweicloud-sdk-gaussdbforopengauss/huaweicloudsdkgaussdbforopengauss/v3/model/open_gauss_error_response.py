@@ -31,7 +31,7 @@ class OpenGaussErrorResponse:
 
         The model defined in huaweicloud sdk
 
-        :param error_code: 错误码
+        :param error_code: 错误码。
         :type error_code: str
         :param error_msg: 错误消息。
         :type error_msg: str
@@ -50,7 +50,7 @@ class OpenGaussErrorResponse:
     def error_code(self):
         """Gets the error_code of this OpenGaussErrorResponse.
 
-        错误码
+        错误码。
 
         :return: The error_code of this OpenGaussErrorResponse.
         :rtype: str
@@ -61,7 +61,7 @@ class OpenGaussErrorResponse:
     def error_code(self, error_code):
         """Sets the error_code of this OpenGaussErrorResponse.
 
-        错误码
+        错误码。
 
         :param error_code: The error_code of this OpenGaussErrorResponse.
         :type error_code: str

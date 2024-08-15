@@ -29,7 +29,7 @@ class DeletePoolRequest:
 
         The model defined in huaweicloud sdk
 
-        :param pool_id: 后端服务器组ID。
+        :param pool_id: 参数解释：后端服务器组ID。
         :type pool_id: str
         """
         
@@ -44,7 +44,7 @@ class DeletePoolRequest:
     def pool_id(self):
         """Gets the pool_id of this DeletePoolRequest.
 
-        后端服务器组ID。
+        参数解释：后端服务器组ID。
 
         :return: The pool_id of this DeletePoolRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class DeletePoolRequest:
     def pool_id(self, pool_id):
         """Sets the pool_id of this DeletePoolRequest.
 
-        后端服务器组ID。
+        参数解释：后端服务器组ID。
 
         :param pool_id: The pool_id of this DeletePoolRequest.
         :type pool_id: str

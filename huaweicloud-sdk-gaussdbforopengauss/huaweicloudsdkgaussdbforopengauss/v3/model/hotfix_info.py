@@ -35,13 +35,13 @@ class HotfixInfo:
 
         The model defined in huaweicloud sdk
 
-        :param version: 热补丁版本
+        :param version: 热补丁版本。
         :type version: str
-        :param common_patch: 通用非通用信息,common&#x3D;通用补丁,certain&#x3D;定制补丁
+        :param common_patch: 通用非通用信息,common&#x3D;通用补丁,certain&#x3D;定制补丁。
         :type common_patch: str
-        :param backup_sensitive: 是否和备份相关
+        :param backup_sensitive: 是否和备份相关。
         :type backup_sensitive: bool
-        :param descripition: 补丁的描述信息
+        :param descripition: 补丁的描述信息。
         :type descripition: str
         """
         
@@ -66,7 +66,7 @@ class HotfixInfo:
     def version(self):
         """Gets the version of this HotfixInfo.
 
-        热补丁版本
+        热补丁版本。
 
         :return: The version of this HotfixInfo.
         :rtype: str
@@ -77,7 +77,7 @@ class HotfixInfo:
     def version(self, version):
         """Sets the version of this HotfixInfo.
 
-        热补丁版本
+        热补丁版本。
 
         :param version: The version of this HotfixInfo.
         :type version: str
@@ -88,7 +88,7 @@ class HotfixInfo:
     def common_patch(self):
         """Gets the common_patch of this HotfixInfo.
 
-        通用非通用信息,common=通用补丁,certain=定制补丁
+        通用非通用信息,common=通用补丁,certain=定制补丁。
 
         :return: The common_patch of this HotfixInfo.
         :rtype: str
@@ -99,7 +99,7 @@ class HotfixInfo:
     def common_patch(self, common_patch):
         """Sets the common_patch of this HotfixInfo.
 
-        通用非通用信息,common=通用补丁,certain=定制补丁
+        通用非通用信息,common=通用补丁,certain=定制补丁。
 
         :param common_patch: The common_patch of this HotfixInfo.
         :type common_patch: str
@@ -110,7 +110,7 @@ class HotfixInfo:
     def backup_sensitive(self):
         """Gets the backup_sensitive of this HotfixInfo.
 
-        是否和备份相关
+        是否和备份相关。
 
         :return: The backup_sensitive of this HotfixInfo.
         :rtype: bool
@@ -121,7 +121,7 @@ class HotfixInfo:
     def backup_sensitive(self, backup_sensitive):
         """Sets the backup_sensitive of this HotfixInfo.
 
-        是否和备份相关
+        是否和备份相关。
 
         :param backup_sensitive: The backup_sensitive of this HotfixInfo.
         :type backup_sensitive: bool
@@ -132,7 +132,7 @@ class HotfixInfo:
     def descripition(self):
         """Gets the descripition of this HotfixInfo.
 
-        补丁的描述信息
+        补丁的描述信息。
 
         :return: The descripition of this HotfixInfo.
         :rtype: str
@@ -143,7 +143,7 @@ class HotfixInfo:
     def descripition(self, descripition):
         """Sets the descripition of this HotfixInfo.
 
-        补丁的描述信息
+        补丁的描述信息。
 
         :param descripition: The descripition of this HotfixInfo.
         :type descripition: str

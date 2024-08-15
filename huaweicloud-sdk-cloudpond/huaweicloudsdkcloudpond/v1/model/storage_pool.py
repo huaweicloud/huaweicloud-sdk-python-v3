@@ -24,6 +24,7 @@ class StoragePool:
         'status': 'StoragePoolStatus',
         'assigned_size': 'int',
         'resource_spec_code': 'str',
+        'product_info': 'ProductInfo',
         'capacity': 'int',
         'market_options': 'MarketOptions',
         'created_at': 'datetime',
@@ -39,6 +40,7 @@ class StoragePool:
         'status': 'status',
         'assigned_size': 'assigned_size',
         'resource_spec_code': 'resource_spec_code',
+        'product_info': 'product_info',
         'capacity': 'capacity',
         'market_options': 'market_options',
         'created_at': 'created_at',
@@ -46,7 +48,7 @@ class StoragePool:
         'effected_at': 'effected_at'
     }
 
-    def __init__(self, id=None, name=None, edge_site_id=None, storage_type=None, status=None, assigned_size=None, resource_spec_code=None, capacity=None, market_options=None, created_at=None, updated_at=None, effected_at=None):
+    def __init__(self, id=None, name=None, edge_site_id=None, storage_type=None, status=None, assigned_size=None, resource_spec_code=None, product_info=None, capacity=None, market_options=None, created_at=None, updated_at=None, effected_at=None):
         """StoragePool
 
         The model defined in huaweicloud sdk
@@ -65,6 +67,8 @@ class StoragePool:
         :type assigned_size: int
         :param resource_spec_code: 资源规格编码
         :type resource_spec_code: str
+        :param product_info: 
+        :type product_info: :class:`huaweicloudsdkcloudpond.v1.ProductInfo`
         :param capacity: 总容量
         :type capacity: int
         :param market_options: 
@@ -86,6 +90,7 @@ class StoragePool:
         self._status = None
         self._assigned_size = None
         self._resource_spec_code = None
+        self._product_info = None
         self._capacity = None
         self._market_options = None
         self._created_at = None
@@ -107,6 +112,8 @@ class StoragePool:
             self.assigned_size = assigned_size
         if resource_spec_code is not None:
             self.resource_spec_code = resource_spec_code
+        if product_info is not None:
+            self.product_info = product_info
         if capacity is not None:
             self.capacity = capacity
         if market_options is not None:
@@ -263,6 +270,24 @@ class StoragePool:
         :type resource_spec_code: str
         """
         self._resource_spec_code = resource_spec_code
+
+    @property
+    def product_info(self):
+        """Gets the product_info of this StoragePool.
+
+        :return: The product_info of this StoragePool.
+        :rtype: :class:`huaweicloudsdkcloudpond.v1.ProductInfo`
+        """
+        return self._product_info
+
+    @product_info.setter
+    def product_info(self, product_info):
+        """Sets the product_info of this StoragePool.
+
+        :param product_info: The product_info of this StoragePool.
+        :type product_info: :class:`huaweicloudsdkcloudpond.v1.ProductInfo`
+        """
+        self._product_info = product_info
 
     @property
     def capacity(self):

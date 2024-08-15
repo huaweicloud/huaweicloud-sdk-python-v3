@@ -798,6 +798,73 @@ class IamAsyncClient(Client):
 
         return http_info
 
+    def create_binding_device_async(self, request):
+        """绑定MFA设备
+
+        该接口可以用于绑定MFA设备。
+        
+        该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateBindingDevice
+        :type request: :class:`huaweicloudsdkiam.v3.CreateBindingDeviceRequest`
+        :rtype: :class:`huaweicloudsdkiam.v3.CreateBindingDeviceResponse`
+        """
+        http_info = self._create_binding_device_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_binding_device_async_invoker(self, request):
+        http_info = self._create_binding_device_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_binding_device_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3.0/OS-MFA/mfa-devices/bind",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateBindingDeviceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_cloud_service_custom_policy_async(self, request):
         """创建云服务自定义策略
 
@@ -976,6 +1043,73 @@ class IamAsyncClient(Client):
             path_params['idp_id'] = local_var_params['idp_id']
         if 'protocol_id' in local_var_params:
             path_params['protocol_id'] = local_var_params['protocol_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_mfa_device_async(self, request):
+        """创建MFA设备
+
+        该接口可以用于创建MFA设备。
+        
+        该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateMfaDevice
+        :type request: :class:`huaweicloudsdkiam.v3.CreateMfaDeviceRequest`
+        :rtype: :class:`huaweicloudsdkiam.v3.CreateMfaDeviceResponse`
+        """
+        http_info = self._create_mfa_device_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_mfa_device_async_invoker(self, request):
+        http_info = self._create_mfa_device_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_mfa_device_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3.0/OS-MFA/virtual-mfa-devices",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateMfaDeviceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
 
         query_params = []
 
@@ -1277,6 +1411,73 @@ class IamAsyncClient(Client):
 
         return http_info
 
+    def delete_binding_device_async(self, request):
+        """解绑MFA设备
+
+        该接口可以用于解绑MFA设备
+        
+        该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteBindingDevice
+        :type request: :class:`huaweicloudsdkiam.v3.DeleteBindingDeviceRequest`
+        :rtype: :class:`huaweicloudsdkiam.v3.DeleteBindingDeviceResponse`
+        """
+        http_info = self._delete_binding_device_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_binding_device_async_invoker(self, request):
+        http_info = self._delete_binding_device_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_binding_device_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3.0/OS-MFA/mfa-devices/unbind",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteBindingDeviceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_custom_policy_async(self, request):
         """删除自定义策略
 
@@ -1388,6 +1589,75 @@ class IamAsyncClient(Client):
             path_params['role_id'] = local_var_params['role_id']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_mfa_device_async(self, request):
+        """删除MFA设备
+
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除MFA设备。
+        
+        该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteMfaDevice
+        :type request: :class:`huaweicloudsdkiam.v3.DeleteMfaDeviceRequest`
+        :rtype: :class:`huaweicloudsdkiam.v3.DeleteMfaDeviceResponse`
+        """
+        http_info = self._delete_mfa_device_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_mfa_device_async_invoker(self, request):
+        http_info = self._delete_mfa_device_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_mfa_device_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3.0/OS-MFA/virtual-mfa-devices",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteMfaDeviceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'user_id' in local_var_params:
+            query_params.append(('user_id', local_var_params['user_id']))
+        if 'serial_number' in local_var_params:
+            query_params.append(('serial_number', local_var_params['serial_number']))
 
         header_params = {}
 
@@ -5523,7 +5793,7 @@ class IamAsyncClient(Client):
         return http_info
 
     def list_enterprise_projects_for_user_async(self, request):
-        """查询用户关联的企业项目
+        """查询用户直接关联的企业项目
 
         该接口可用于查询用户所关联的企业项目。
         
@@ -5726,7 +5996,7 @@ class IamAsyncClient(Client):
         return http_info
 
     def list_roles_for_group_on_enterprise_project_async(self, request):
-        """查询企业项目已关联用户组的权限
+        """查询企业项目关联用户组的权限
 
         该接口可用于查询企业项目已关联用户组的权限。
         
@@ -8481,140 +8751,6 @@ class IamAsyncClient(Client):
 
         return http_info
 
-    def create_binding_device_async(self, request):
-        """绑定MFA设备
-
-        该接口可以用于绑定MFA设备。
-        
-        该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateBindingDevice
-        :type request: :class:`huaweicloudsdkiam.v3.CreateBindingDeviceRequest`
-        :rtype: :class:`huaweicloudsdkiam.v3.CreateBindingDeviceResponse`
-        """
-        http_info = self._create_binding_device_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_binding_device_async_invoker(self, request):
-        http_info = self._create_binding_device_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _create_binding_device_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v3.0/OS-MFA/mfa-devices/bind",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateBindingDeviceResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def create_mfa_device_async(self, request):
-        """创建MFA设备
-
-        该接口可以用于创建MFA设备。
-        
-        该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateMfaDevice
-        :type request: :class:`huaweicloudsdkiam.v3.CreateMfaDeviceRequest`
-        :rtype: :class:`huaweicloudsdkiam.v3.CreateMfaDeviceResponse`
-        """
-        http_info = self._create_mfa_device_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_mfa_device_async_invoker(self, request):
-        http_info = self._create_mfa_device_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _create_mfa_device_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v3.0/OS-MFA/virtual-mfa-devices",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateMfaDeviceResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def create_user_async(self, request):
         """管理员创建IAM用户（推荐）
 
@@ -8668,142 +8804,6 @@ class IamAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def delete_binding_device_async(self, request):
-        """解绑MFA设备
-
-        该接口可以用于解绑MFA设备
-        
-        该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DeleteBindingDevice
-        :type request: :class:`huaweicloudsdkiam.v3.DeleteBindingDeviceRequest`
-        :rtype: :class:`huaweicloudsdkiam.v3.DeleteBindingDeviceResponse`
-        """
-        http_info = self._delete_binding_device_http_info(request)
-        return self._call_api(**http_info)
-
-    def delete_binding_device_async_invoker(self, request):
-        http_info = self._delete_binding_device_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _delete_binding_device_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v3.0/OS-MFA/mfa-devices/unbind",
-            "request_type": request.__class__.__name__,
-            "response_type": "DeleteBindingDeviceResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def delete_mfa_device_async(self, request):
-        """删除MFA设备
-
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除MFA设备。
-        
-        该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DeleteMfaDevice
-        :type request: :class:`huaweicloudsdkiam.v3.DeleteMfaDeviceRequest`
-        :rtype: :class:`huaweicloudsdkiam.v3.DeleteMfaDeviceResponse`
-        """
-        http_info = self._delete_mfa_device_http_info(request)
-        return self._call_api(**http_info)
-
-    def delete_mfa_device_async_invoker(self, request):
-        http_info = self._delete_mfa_device_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _delete_mfa_device_http_info(self, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/v3.0/OS-MFA/virtual-mfa-devices",
-            "request_type": request.__class__.__name__,
-            "response_type": "DeleteMfaDeviceResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'user_id' in local_var_params:
-            query_params.append(('user_id', local_var_params['user_id']))
-        if 'serial_number' in local_var_params:
-            query_params.append(('serial_number', local_var_params['serial_number']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
 
         auth_settings = []
 
@@ -9430,7 +9430,7 @@ class IamAsyncClient(Client):
         return http_info
 
     def list_user_mfa_devices_async(self, request):
-        """该接口可以用于获取MFA设备。
+        """查询IAM用户的MFA绑定信息列表
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户的MFA绑定信息列表。
         

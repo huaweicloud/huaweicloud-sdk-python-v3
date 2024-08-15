@@ -53,7 +53,7 @@ class UploadAimTemplateMaterialRequestBody:
         :type file_url: str
         :param file_stream: 文件资源码流。  &gt; file_type&#x3D;stream时，file_stream为必填。 
         :type file_stream: str
-        :param image_rate: 图像比例。 - oneToOne：指1:1比例 - sixteenToNine：指16:9比例 - threeToOne：指3:1比例 - fortyEightToSixtyFive：指48:65比例 - twentyOneToNine：指21:9比例  &gt; resource type&#x3D;image时，image_rate必填。 
+        :param image_rate: 图像比例。 - oneToOne：指1:1比例 - sixteenToNine：指16:9比例 - threeToOne：指3:1比例 - fortyEightToSixtyFive：指48:65比例 - twentyOneToNine：指21:9比例 - threeToFour：指3:4比例  &gt; resource type&#x3D;image时，image_rate必填。 
         :type image_rate: str
         :param file_name: 文件名称。  &gt; file_type&#x3D;stream时，file_name必填。 
         :type file_name: str
@@ -202,7 +202,7 @@ class UploadAimTemplateMaterialRequestBody:
     def image_rate(self):
         """Gets the image_rate of this UploadAimTemplateMaterialRequestBody.
 
-        图像比例。 - oneToOne：指1:1比例 - sixteenToNine：指16:9比例 - threeToOne：指3:1比例 - fortyEightToSixtyFive：指48:65比例 - twentyOneToNine：指21:9比例  > resource type=image时，image_rate必填。 
+        图像比例。 - oneToOne：指1:1比例 - sixteenToNine：指16:9比例 - threeToOne：指3:1比例 - fortyEightToSixtyFive：指48:65比例 - twentyOneToNine：指21:9比例 - threeToFour：指3:4比例  > resource type=image时，image_rate必填。 
 
         :return: The image_rate of this UploadAimTemplateMaterialRequestBody.
         :rtype: str
@@ -213,7 +213,7 @@ class UploadAimTemplateMaterialRequestBody:
     def image_rate(self, image_rate):
         """Sets the image_rate of this UploadAimTemplateMaterialRequestBody.
 
-        图像比例。 - oneToOne：指1:1比例 - sixteenToNine：指16:9比例 - threeToOne：指3:1比例 - fortyEightToSixtyFive：指48:65比例 - twentyOneToNine：指21:9比例  > resource type=image时，image_rate必填。 
+        图像比例。 - oneToOne：指1:1比例 - sixteenToNine：指16:9比例 - threeToOne：指3:1比例 - fortyEightToSixtyFive：指48:65比例 - twentyOneToNine：指21:9比例 - threeToFour：指3:4比例  > resource type=image时，image_rate必填。 
 
         :param image_rate: The image_rate of this UploadAimTemplateMaterialRequestBody.
         :type image_rate: str

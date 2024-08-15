@@ -18,15 +18,19 @@ class StopMigrationTaskResult:
 
     openapi_types = {
         'result': 'str',
-        'task_id': 'str'
+        'task_id': 'str',
+        'error_msg': 'str',
+        'error_code': 'str'
     }
 
     attribute_map = {
         'result': 'result',
-        'task_id': 'task_id'
+        'task_id': 'task_id',
+        'error_msg': 'error_msg',
+        'error_code': 'error_code'
     }
 
-    def __init__(self, result=None, task_id=None):
+    def __init__(self, result=None, task_id=None, error_msg=None, error_code=None):
         """StopMigrationTaskResult
 
         The model defined in huaweicloud sdk
@@ -35,18 +39,28 @@ class StopMigrationTaskResult:
         :type result: str
         :param task_id: 数据迁移任务ID。
         :type task_id: str
+        :param error_msg: 错误信息
+        :type error_msg: str
+        :param error_code: 错误码
+        :type error_code: str
         """
         
         
 
         self._result = None
         self._task_id = None
+        self._error_msg = None
+        self._error_code = None
         self.discriminator = None
 
         if result is not None:
             self.result = result
         if task_id is not None:
             self.task_id = task_id
+        if error_msg is not None:
+            self.error_msg = error_msg
+        if error_code is not None:
+            self.error_code = error_code
 
     @property
     def result(self):
@@ -91,6 +105,50 @@ class StopMigrationTaskResult:
         :type task_id: str
         """
         self._task_id = task_id
+
+    @property
+    def error_msg(self):
+        """Gets the error_msg of this StopMigrationTaskResult.
+
+        错误信息
+
+        :return: The error_msg of this StopMigrationTaskResult.
+        :rtype: str
+        """
+        return self._error_msg
+
+    @error_msg.setter
+    def error_msg(self, error_msg):
+        """Sets the error_msg of this StopMigrationTaskResult.
+
+        错误信息
+
+        :param error_msg: The error_msg of this StopMigrationTaskResult.
+        :type error_msg: str
+        """
+        self._error_msg = error_msg
+
+    @property
+    def error_code(self):
+        """Gets the error_code of this StopMigrationTaskResult.
+
+        错误码
+
+        :return: The error_code of this StopMigrationTaskResult.
+        :rtype: str
+        """
+        return self._error_code
+
+    @error_code.setter
+    def error_code(self, error_code):
+        """Sets the error_code of this StopMigrationTaskResult.
+
+        错误码
+
+        :param error_code: The error_code of this StopMigrationTaskResult.
+        :type error_code: str
+        """
+        self._error_code = error_code
 
     def to_dict(self):
         """Returns the model properties as a dict"""

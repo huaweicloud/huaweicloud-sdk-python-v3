@@ -45,13 +45,13 @@ class ListFlavorsRequest:
         :type marker: str
         :param limit: 参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
         :type limit: int
-        :param page_reverse: 参数解释：是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse&#x3D;true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
+        :param page_reverse: 参数解释：是否反向查询。  约束限制： - 必须与limit一起使用。 - 当page_reverse&#x3D;true时，若要查询上一页，marker取值为当前页返回值的previous_marker。  取值范围： - true：查询上一页。 - false：查询下一页，默认。
         :type page_reverse: bool
         :param id: 参数解释：规格ID。  支持多值查询，查询条件格式：*id&#x3D;xxx&amp;id&#x3D;xxx*。
         :type id: list[str]
-        :param name: 参数解释：规格名称。   支持多值查询，查询条件格式：*name&#x3D;xxx&amp;name&#x3D;xxx*。
+        :param name: 参数解释：规格名称。  支持多值查询，查询条件格式：*name&#x3D;xxx&amp;name&#x3D;xxx*。
         :type name: list[str]
-        :param type: 参数解释：规格类别。  取值： - L4和L7 表示四层网络型和七层应用型flavor。 [- gateway 表示网关型LB的flavor，目前只支持弹性计费类型。当前仅支持欧洲局点。](tag:hws_eu) - L4_elastic和L7_elastic 表示弹性扩缩容实例的下限规格。 - L4_elastic_max、L7_elastic_max[和gateway_elastic_max](tag:hws_eu) 表示弹性扩缩容实例的上限规格。  支持多值查询，查询条件格式：*type&#x3D;xxx&amp;type&#x3D;xxx*。
+        :param type: 参数解释：规格类别。  取值范围： - L4和L7 表示四层网络型和七层应用型flavor。 [- gateway 表示网关型LB的flavor，目前只支持弹性计费类型。当前仅支持欧洲局点。](tag:hws_eu) - L4_elastic和L7_elastic 表示弹性扩缩容实例的下限规格。 - L4_elastic_max、L7_elastic_max[和gateway_elastic_max](tag:hws_eu) 表示弹性扩缩容实例的上限规格。  支持多值查询，查询条件格式：*type&#x3D;xxx&amp;type&#x3D;xxx*。
         :type type: list[str]
         :param shared: 参数解释：是否查询公共规格。  取值范围：true表示公共规格，所有租户可见。false表示私有规格，为当前租户所有。
         :type shared: bool
@@ -131,7 +131,7 @@ class ListFlavorsRequest:
     def page_reverse(self):
         """Gets the page_reverse of this ListFlavorsRequest.
 
-        参数解释：是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
+        参数解释：是否反向查询。  约束限制： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。  取值范围： - true：查询上一页。 - false：查询下一页，默认。
 
         :return: The page_reverse of this ListFlavorsRequest.
         :rtype: bool
@@ -142,7 +142,7 @@ class ListFlavorsRequest:
     def page_reverse(self, page_reverse):
         """Sets the page_reverse of this ListFlavorsRequest.
 
-        参数解释：是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
+        参数解释：是否反向查询。  约束限制： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。  取值范围： - true：查询上一页。 - false：查询下一页，默认。
 
         :param page_reverse: The page_reverse of this ListFlavorsRequest.
         :type page_reverse: bool
@@ -175,7 +175,7 @@ class ListFlavorsRequest:
     def name(self):
         """Gets the name of this ListFlavorsRequest.
 
-        参数解释：规格名称。   支持多值查询，查询条件格式：*name=xxx&name=xxx*。
+        参数解释：规格名称。  支持多值查询，查询条件格式：*name=xxx&name=xxx*。
 
         :return: The name of this ListFlavorsRequest.
         :rtype: list[str]
@@ -186,7 +186,7 @@ class ListFlavorsRequest:
     def name(self, name):
         """Sets the name of this ListFlavorsRequest.
 
-        参数解释：规格名称。   支持多值查询，查询条件格式：*name=xxx&name=xxx*。
+        参数解释：规格名称。  支持多值查询，查询条件格式：*name=xxx&name=xxx*。
 
         :param name: The name of this ListFlavorsRequest.
         :type name: list[str]
@@ -197,7 +197,7 @@ class ListFlavorsRequest:
     def type(self):
         """Gets the type of this ListFlavorsRequest.
 
-        参数解释：规格类别。  取值： - L4和L7 表示四层网络型和七层应用型flavor。 [- gateway 表示网关型LB的flavor，目前只支持弹性计费类型。当前仅支持欧洲局点。](tag:hws_eu) - L4_elastic和L7_elastic 表示弹性扩缩容实例的下限规格。 - L4_elastic_max、L7_elastic_max[和gateway_elastic_max](tag:hws_eu) 表示弹性扩缩容实例的上限规格。  支持多值查询，查询条件格式：*type=xxx&type=xxx*。
+        参数解释：规格类别。  取值范围： - L4和L7 表示四层网络型和七层应用型flavor。 [- gateway 表示网关型LB的flavor，目前只支持弹性计费类型。当前仅支持欧洲局点。](tag:hws_eu) - L4_elastic和L7_elastic 表示弹性扩缩容实例的下限规格。 - L4_elastic_max、L7_elastic_max[和gateway_elastic_max](tag:hws_eu) 表示弹性扩缩容实例的上限规格。  支持多值查询，查询条件格式：*type=xxx&type=xxx*。
 
         :return: The type of this ListFlavorsRequest.
         :rtype: list[str]
@@ -208,7 +208,7 @@ class ListFlavorsRequest:
     def type(self, type):
         """Sets the type of this ListFlavorsRequest.
 
-        参数解释：规格类别。  取值： - L4和L7 表示四层网络型和七层应用型flavor。 [- gateway 表示网关型LB的flavor，目前只支持弹性计费类型。当前仅支持欧洲局点。](tag:hws_eu) - L4_elastic和L7_elastic 表示弹性扩缩容实例的下限规格。 - L4_elastic_max、L7_elastic_max[和gateway_elastic_max](tag:hws_eu) 表示弹性扩缩容实例的上限规格。  支持多值查询，查询条件格式：*type=xxx&type=xxx*。
+        参数解释：规格类别。  取值范围： - L4和L7 表示四层网络型和七层应用型flavor。 [- gateway 表示网关型LB的flavor，目前只支持弹性计费类型。当前仅支持欧洲局点。](tag:hws_eu) - L4_elastic和L7_elastic 表示弹性扩缩容实例的下限规格。 - L4_elastic_max、L7_elastic_max[和gateway_elastic_max](tag:hws_eu) 表示弹性扩缩容实例的上限规格。  支持多值查询，查询条件格式：*type=xxx&type=xxx*。
 
         :param type: The type of this ListFlavorsRequest.
         :type type: list[str]

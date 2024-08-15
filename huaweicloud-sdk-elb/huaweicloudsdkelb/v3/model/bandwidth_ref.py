@@ -29,7 +29,7 @@ class BandwidthRef:
 
         The model defined in huaweicloud sdk
 
-        :param id: 共享带宽的id
+        :param id: 参数解释：共享带宽的ID。
         :type id: str
         """
         
@@ -44,7 +44,7 @@ class BandwidthRef:
     def id(self):
         """Gets the id of this BandwidthRef.
 
-        共享带宽的id
+        参数解释：共享带宽的ID。
 
         :return: The id of this BandwidthRef.
         :rtype: str
@@ -55,7 +55,7 @@ class BandwidthRef:
     def id(self, id):
         """Sets the id of this BandwidthRef.
 
-        共享带宽的id
+        参数解释：共享带宽的ID。
 
         :param id: The id of this BandwidthRef.
         :type id: str

@@ -360,6 +360,9 @@ from huaweicloudsdkcce.v3.model.rollback_autopilot_addon_instance_response impor
 from huaweicloudsdkcce.v3.model.runtime import Runtime
 from huaweicloudsdkcce.v3.model.runtime_config import RuntimeConfig
 from huaweicloudsdkcce.v3.model.scale_group_autoscaling import ScaleGroupAutoscaling
+from huaweicloudsdkcce.v3.model.scale_group_status import ScaleGroupStatus
+from huaweicloudsdkcce.v3.model.scale_group_status_existing_node_count import ScaleGroupStatusExistingNodeCount
+from huaweicloudsdkcce.v3.model.scale_group_status_upcoming_node_count import ScaleGroupStatusUpcomingNodeCount
 from huaweicloudsdkcce.v3.model.scale_node_pool_options import ScaleNodePoolOptions
 from huaweicloudsdkcce.v3.model.scale_node_pool_request import ScaleNodePoolRequest
 from huaweicloudsdkcce.v3.model.scale_node_pool_request_body import ScaleNodePoolRequestBody

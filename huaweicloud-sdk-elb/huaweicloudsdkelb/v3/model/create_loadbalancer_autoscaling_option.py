@@ -31,7 +31,7 @@ class CreateLoadbalancerAutoscalingOption:
 
         The model defined in huaweicloud sdk
 
-        :param enable: 参数解释：负载均衡器实例弹性扩缩容开关。  取值范围：  - true：开启。  - false：关闭。
+        :param enable: 参数解释：负载均衡器实例弹性扩缩容开关。 [网关型LB不支持该字段。](tag:hws_eu)  取值范围：  - true：开启。  - false：关闭。
         :type enable: bool
         :param min_l7_flavor_id: 参数解释：实例弹性扩缩容的最小七层规格ID。  约束限制： 该字段已经废弃，建议不要使用该字段。
         :type min_l7_flavor_id: str
@@ -51,7 +51,7 @@ class CreateLoadbalancerAutoscalingOption:
     def enable(self):
         """Gets the enable of this CreateLoadbalancerAutoscalingOption.
 
-        参数解释：负载均衡器实例弹性扩缩容开关。  取值范围：  - true：开启。  - false：关闭。
+        参数解释：负载均衡器实例弹性扩缩容开关。 [网关型LB不支持该字段。](tag:hws_eu)  取值范围：  - true：开启。  - false：关闭。
 
         :return: The enable of this CreateLoadbalancerAutoscalingOption.
         :rtype: bool
@@ -62,7 +62,7 @@ class CreateLoadbalancerAutoscalingOption:
     def enable(self, enable):
         """Sets the enable of this CreateLoadbalancerAutoscalingOption.
 
-        参数解释：负载均衡器实例弹性扩缩容开关。  取值范围：  - true：开启。  - false：关闭。
+        参数解释：负载均衡器实例弹性扩缩容开关。 [网关型LB不支持该字段。](tag:hws_eu)  取值范围：  - true：开启。  - false：关闭。
 
         :param enable: The enable of this CreateLoadbalancerAutoscalingOption.
         :type enable: bool

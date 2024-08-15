@@ -50,19 +50,19 @@ class ShowUpgradeCandidateVersionsResponse(SdkResponse):
 
         :param upgrade_type_list: 升级类型信息列表
         :type upgrade_type_list: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.UpgradeTypeInfo`]
-        :param rollback_enabled: 是否可以回滚，true可以回滚，false不可以回滚
+        :param rollback_enabled: 是否可以回滚，true可以回滚，false不可以回滚。
         :type rollback_enabled: bool
         :param source_version: 原版本
         :type source_version: str
-        :param target_version: 升级目标版本，没有在滚动升级中返回null
+        :param target_version: 升级目标版本，没有在滚动升级中返回null。
         :type target_version: str
         :param roll_upgrade_progress: 
         :type roll_upgrade_progress: :class:`huaweicloudsdkgaussdbforopengauss.v3.RollUpgradeProgress`
-        :param upgrade_candidate_versions: 可以升级的版本，包括大小版本，滚动升级中返回空数组
+        :param upgrade_candidate_versions: 可以升级的版本，包括大小版本，滚动升级中返回空数组。
         :type upgrade_candidate_versions: list[str]
-        :param hotfix_upgrade_candidate_versions: 可以升级的热补丁版本，滚动升级中返回空数组
+        :param hotfix_upgrade_candidate_versions: 可以升级的热补丁版本，滚动升级中返回空数组。
         :type hotfix_upgrade_candidate_versions: list[str]
-        :param hotfix_rollback_candidate_versions: 可以回滚的热补丁版本，滚动升级中返回空数组
+        :param hotfix_rollback_candidate_versions: 可以回滚的热补丁版本，滚动升级中返回空数组。
         :type hotfix_rollback_candidate_versions: list[str]
         :param hotfix_upgrade_infos: 
         :type hotfix_upgrade_infos: :class:`huaweicloudsdkgaussdbforopengauss.v3.HotfixUpgradeInfos`
@@ -131,7 +131,7 @@ class ShowUpgradeCandidateVersionsResponse(SdkResponse):
     def rollback_enabled(self):
         """Gets the rollback_enabled of this ShowUpgradeCandidateVersionsResponse.
 
-        是否可以回滚，true可以回滚，false不可以回滚
+        是否可以回滚，true可以回滚，false不可以回滚。
 
         :return: The rollback_enabled of this ShowUpgradeCandidateVersionsResponse.
         :rtype: bool
@@ -142,7 +142,7 @@ class ShowUpgradeCandidateVersionsResponse(SdkResponse):
     def rollback_enabled(self, rollback_enabled):
         """Sets the rollback_enabled of this ShowUpgradeCandidateVersionsResponse.
 
-        是否可以回滚，true可以回滚，false不可以回滚
+        是否可以回滚，true可以回滚，false不可以回滚。
 
         :param rollback_enabled: The rollback_enabled of this ShowUpgradeCandidateVersionsResponse.
         :type rollback_enabled: bool
@@ -175,7 +175,7 @@ class ShowUpgradeCandidateVersionsResponse(SdkResponse):
     def target_version(self):
         """Gets the target_version of this ShowUpgradeCandidateVersionsResponse.
 
-        升级目标版本，没有在滚动升级中返回null
+        升级目标版本，没有在滚动升级中返回null。
 
         :return: The target_version of this ShowUpgradeCandidateVersionsResponse.
         :rtype: str
@@ -186,7 +186,7 @@ class ShowUpgradeCandidateVersionsResponse(SdkResponse):
     def target_version(self, target_version):
         """Sets the target_version of this ShowUpgradeCandidateVersionsResponse.
 
-        升级目标版本，没有在滚动升级中返回null
+        升级目标版本，没有在滚动升级中返回null。
 
         :param target_version: The target_version of this ShowUpgradeCandidateVersionsResponse.
         :type target_version: str
@@ -215,7 +215,7 @@ class ShowUpgradeCandidateVersionsResponse(SdkResponse):
     def upgrade_candidate_versions(self):
         """Gets the upgrade_candidate_versions of this ShowUpgradeCandidateVersionsResponse.
 
-        可以升级的版本，包括大小版本，滚动升级中返回空数组
+        可以升级的版本，包括大小版本，滚动升级中返回空数组。
 
         :return: The upgrade_candidate_versions of this ShowUpgradeCandidateVersionsResponse.
         :rtype: list[str]
@@ -226,7 +226,7 @@ class ShowUpgradeCandidateVersionsResponse(SdkResponse):
     def upgrade_candidate_versions(self, upgrade_candidate_versions):
         """Sets the upgrade_candidate_versions of this ShowUpgradeCandidateVersionsResponse.
 
-        可以升级的版本，包括大小版本，滚动升级中返回空数组
+        可以升级的版本，包括大小版本，滚动升级中返回空数组。
 
         :param upgrade_candidate_versions: The upgrade_candidate_versions of this ShowUpgradeCandidateVersionsResponse.
         :type upgrade_candidate_versions: list[str]
@@ -237,7 +237,7 @@ class ShowUpgradeCandidateVersionsResponse(SdkResponse):
     def hotfix_upgrade_candidate_versions(self):
         """Gets the hotfix_upgrade_candidate_versions of this ShowUpgradeCandidateVersionsResponse.
 
-        可以升级的热补丁版本，滚动升级中返回空数组
+        可以升级的热补丁版本，滚动升级中返回空数组。
 
         :return: The hotfix_upgrade_candidate_versions of this ShowUpgradeCandidateVersionsResponse.
         :rtype: list[str]
@@ -248,7 +248,7 @@ class ShowUpgradeCandidateVersionsResponse(SdkResponse):
     def hotfix_upgrade_candidate_versions(self, hotfix_upgrade_candidate_versions):
         """Sets the hotfix_upgrade_candidate_versions of this ShowUpgradeCandidateVersionsResponse.
 
-        可以升级的热补丁版本，滚动升级中返回空数组
+        可以升级的热补丁版本，滚动升级中返回空数组。
 
         :param hotfix_upgrade_candidate_versions: The hotfix_upgrade_candidate_versions of this ShowUpgradeCandidateVersionsResponse.
         :type hotfix_upgrade_candidate_versions: list[str]
@@ -259,7 +259,7 @@ class ShowUpgradeCandidateVersionsResponse(SdkResponse):
     def hotfix_rollback_candidate_versions(self):
         """Gets the hotfix_rollback_candidate_versions of this ShowUpgradeCandidateVersionsResponse.
 
-        可以回滚的热补丁版本，滚动升级中返回空数组
+        可以回滚的热补丁版本，滚动升级中返回空数组。
 
         :return: The hotfix_rollback_candidate_versions of this ShowUpgradeCandidateVersionsResponse.
         :rtype: list[str]
@@ -270,7 +270,7 @@ class ShowUpgradeCandidateVersionsResponse(SdkResponse):
     def hotfix_rollback_candidate_versions(self, hotfix_rollback_candidate_versions):
         """Sets the hotfix_rollback_candidate_versions of this ShowUpgradeCandidateVersionsResponse.
 
-        可以回滚的热补丁版本，滚动升级中返回空数组
+        可以回滚的热补丁版本，滚动升级中返回空数组。
 
         :param hotfix_rollback_candidate_versions: The hotfix_rollback_candidate_versions of this ShowUpgradeCandidateVersionsResponse.
         :type hotfix_rollback_candidate_versions: list[str]

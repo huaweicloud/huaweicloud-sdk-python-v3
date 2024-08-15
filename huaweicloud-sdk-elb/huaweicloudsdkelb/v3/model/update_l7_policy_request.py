@@ -31,7 +31,7 @@ class UpdateL7PolicyRequest:
 
         The model defined in huaweicloud sdk
 
-        :param l7policy_id: 转发策略ID。
+        :param l7policy_id: 参数解释：转发策略ID。
         :type l7policy_id: str
         :param body: Body of the UpdateL7PolicyRequest
         :type body: :class:`huaweicloudsdkelb.v3.UpdateL7PolicyRequestBody`
@@ -51,7 +51,7 @@ class UpdateL7PolicyRequest:
     def l7policy_id(self):
         """Gets the l7policy_id of this UpdateL7PolicyRequest.
 
-        转发策略ID。
+        参数解释：转发策略ID。
 
         :return: The l7policy_id of this UpdateL7PolicyRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class UpdateL7PolicyRequest:
     def l7policy_id(self, l7policy_id):
         """Sets the l7policy_id of this UpdateL7PolicyRequest.
 
-        转发策略ID。
+        参数解释：转发策略ID。
 
         :param l7policy_id: The l7policy_id of this UpdateL7PolicyRequest.
         :type l7policy_id: str

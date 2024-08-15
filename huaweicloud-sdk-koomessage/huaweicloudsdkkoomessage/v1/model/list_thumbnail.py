@@ -25,7 +25,11 @@ class ListThumbnail:
         'obs_object_key': 'str',
         'image_rate': 'str',
         'is_auto_gen': 'int',
-        'description': 'str'
+        'description': 'str',
+        'obs_bucket_name': 'str',
+        'domain_id': 'str',
+        'size': 'int',
+        'obs_file_url': 'str'
     }
 
     attribute_map = {
@@ -37,10 +41,14 @@ class ListThumbnail:
         'obs_object_key': 'obs_object_key',
         'image_rate': 'image_rate',
         'is_auto_gen': 'is_auto_gen',
-        'description': 'description'
+        'description': 'description',
+        'obs_bucket_name': 'obs_bucket_name',
+        'domain_id': 'domain_id',
+        'size': 'size',
+        'obs_file_url': 'obs_file_url'
     }
 
-    def __init__(self, id=None, created_at=None, is_primary=None, file_name=None, aim_resource_id=None, obs_object_key=None, image_rate=None, is_auto_gen=None, description=None):
+    def __init__(self, id=None, created_at=None, is_primary=None, file_name=None, aim_resource_id=None, obs_object_key=None, image_rate=None, is_auto_gen=None, description=None, obs_bucket_name=None, domain_id=None, size=None, obs_file_url=None):
         """ListThumbnail
 
         The model defined in huaweicloud sdk
@@ -57,12 +65,20 @@ class ListThumbnail:
         :type aim_resource_id: str
         :param obs_object_key: 从OBS返回的文件Key。
         :type obs_object_key: str
-        :param image_rate: 图像比例。 - oneToOne：指1:1比例 - sixteenToNine：指16:9比例 - threeToOne：指3:1比例 - fortyEightToSixtyFive：指48:65比例 - twentyOneToNine：指21:9比例 
+        :param image_rate: 图像比例。 - oneToOne：指1:1比例 - sixteenToNine：指16:9比例 - threeToOne：指3:1比例 - fortyEightToSixtyFive：指48:65比例 - twentyOneToNine：指21:9比例 - threeToFour：指3:4比例 
         :type image_rate: str
         :param is_auto_gen: 视频封面图是否自动从系统生成。 - 0：系统自动生成 - 1：上传自定义 
         :type is_auto_gen: int
         :param description: 视频封面图的详细描述。
         :type description: str
+        :param obs_bucket_name: OBS桶名称。
+        :type obs_bucket_name: str
+        :param domain_id: 租户ID。
+        :type domain_id: str
+        :param size: 素材所占空间大小。
+        :type size: int
+        :param obs_file_url: 文件访问路径。
+        :type obs_file_url: str
         """
         
         
@@ -76,6 +92,10 @@ class ListThumbnail:
         self._image_rate = None
         self._is_auto_gen = None
         self._description = None
+        self._obs_bucket_name = None
+        self._domain_id = None
+        self._size = None
+        self._obs_file_url = None
         self.discriminator = None
 
         self.id = id
@@ -90,6 +110,14 @@ class ListThumbnail:
             self.is_auto_gen = is_auto_gen
         if description is not None:
             self.description = description
+        if obs_bucket_name is not None:
+            self.obs_bucket_name = obs_bucket_name
+        if domain_id is not None:
+            self.domain_id = domain_id
+        if size is not None:
+            self.size = size
+        if obs_file_url is not None:
+            self.obs_file_url = obs_file_url
 
     @property
     def id(self):
@@ -227,7 +255,7 @@ class ListThumbnail:
     def image_rate(self):
         """Gets the image_rate of this ListThumbnail.
 
-        图像比例。 - oneToOne：指1:1比例 - sixteenToNine：指16:9比例 - threeToOne：指3:1比例 - fortyEightToSixtyFive：指48:65比例 - twentyOneToNine：指21:9比例 
+        图像比例。 - oneToOne：指1:1比例 - sixteenToNine：指16:9比例 - threeToOne：指3:1比例 - fortyEightToSixtyFive：指48:65比例 - twentyOneToNine：指21:9比例 - threeToFour：指3:4比例 
 
         :return: The image_rate of this ListThumbnail.
         :rtype: str
@@ -238,7 +266,7 @@ class ListThumbnail:
     def image_rate(self, image_rate):
         """Sets the image_rate of this ListThumbnail.
 
-        图像比例。 - oneToOne：指1:1比例 - sixteenToNine：指16:9比例 - threeToOne：指3:1比例 - fortyEightToSixtyFive：指48:65比例 - twentyOneToNine：指21:9比例 
+        图像比例。 - oneToOne：指1:1比例 - sixteenToNine：指16:9比例 - threeToOne：指3:1比例 - fortyEightToSixtyFive：指48:65比例 - twentyOneToNine：指21:9比例 - threeToFour：指3:4比例 
 
         :param image_rate: The image_rate of this ListThumbnail.
         :type image_rate: str
@@ -288,6 +316,94 @@ class ListThumbnail:
         :type description: str
         """
         self._description = description
+
+    @property
+    def obs_bucket_name(self):
+        """Gets the obs_bucket_name of this ListThumbnail.
+
+        OBS桶名称。
+
+        :return: The obs_bucket_name of this ListThumbnail.
+        :rtype: str
+        """
+        return self._obs_bucket_name
+
+    @obs_bucket_name.setter
+    def obs_bucket_name(self, obs_bucket_name):
+        """Sets the obs_bucket_name of this ListThumbnail.
+
+        OBS桶名称。
+
+        :param obs_bucket_name: The obs_bucket_name of this ListThumbnail.
+        :type obs_bucket_name: str
+        """
+        self._obs_bucket_name = obs_bucket_name
+
+    @property
+    def domain_id(self):
+        """Gets the domain_id of this ListThumbnail.
+
+        租户ID。
+
+        :return: The domain_id of this ListThumbnail.
+        :rtype: str
+        """
+        return self._domain_id
+
+    @domain_id.setter
+    def domain_id(self, domain_id):
+        """Sets the domain_id of this ListThumbnail.
+
+        租户ID。
+
+        :param domain_id: The domain_id of this ListThumbnail.
+        :type domain_id: str
+        """
+        self._domain_id = domain_id
+
+    @property
+    def size(self):
+        """Gets the size of this ListThumbnail.
+
+        素材所占空间大小。
+
+        :return: The size of this ListThumbnail.
+        :rtype: int
+        """
+        return self._size
+
+    @size.setter
+    def size(self, size):
+        """Sets the size of this ListThumbnail.
+
+        素材所占空间大小。
+
+        :param size: The size of this ListThumbnail.
+        :type size: int
+        """
+        self._size = size
+
+    @property
+    def obs_file_url(self):
+        """Gets the obs_file_url of this ListThumbnail.
+
+        文件访问路径。
+
+        :return: The obs_file_url of this ListThumbnail.
+        :rtype: str
+        """
+        return self._obs_file_url
+
+    @obs_file_url.setter
+    def obs_file_url(self, obs_file_url):
+        """Sets the obs_file_url of this ListThumbnail.
+
+        文件访问路径。
+
+        :param obs_file_url: The obs_file_url of this ListThumbnail.
+        :type obs_file_url: str
+        """
+        self._obs_file_url = obs_file_url
 
     def to_dict(self):
         """Returns the model properties as a dict"""

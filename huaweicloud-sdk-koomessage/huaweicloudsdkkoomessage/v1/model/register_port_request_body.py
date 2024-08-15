@@ -45,7 +45,7 @@ class RegisterPortRequestBody:
         :type sign: list[str]
         :param sign_check: 是否需要校验。  - 0：不校验  - 1：校验签名  &gt; 当port_type为3或者5时，sign_check必须为1。 
         :type sign_check: int
-        :param authorization_files: 授权证明图片资源，最多支持5张。参数格式为：*资源ID:资源URL*，样例：3d214a61672846f88ad77597f935cccc:AimSauploadService/272957b708ac4891a6d5282ccd2175cccc.png。 &gt; 资源ID与资源URL对应上传智能信息服务号图片资源API返回的resource_id和resource_url。
+        :param authorization_files: 授权证明图片资源，支持jpg、bmp、png和jpeg格式，全部图片总大小不超过4M，最多支持5张。参数格式为：*资源ID:资源URL*，样例：3d214a61672846f88ad77597f935cccc:AimSauploadService/272957b708ac4891a6d5282ccd2175cccc.png。 &gt; 资源ID与资源URL对应上传智能信息服务号图片资源API返回的resource_id和resource_url。
         :type authorization_files: list[str]
         """
         
@@ -156,7 +156,7 @@ class RegisterPortRequestBody:
     def authorization_files(self):
         """Gets the authorization_files of this RegisterPortRequestBody.
 
-        授权证明图片资源，最多支持5张。参数格式为：*资源ID:资源URL*，样例：3d214a61672846f88ad77597f935cccc:AimSauploadService/272957b708ac4891a6d5282ccd2175cccc.png。 > 资源ID与资源URL对应上传智能信息服务号图片资源API返回的resource_id和resource_url。
+        授权证明图片资源，支持jpg、bmp、png和jpeg格式，全部图片总大小不超过4M，最多支持5张。参数格式为：*资源ID:资源URL*，样例：3d214a61672846f88ad77597f935cccc:AimSauploadService/272957b708ac4891a6d5282ccd2175cccc.png。 > 资源ID与资源URL对应上传智能信息服务号图片资源API返回的resource_id和resource_url。
 
         :return: The authorization_files of this RegisterPortRequestBody.
         :rtype: list[str]
@@ -167,7 +167,7 @@ class RegisterPortRequestBody:
     def authorization_files(self, authorization_files):
         """Sets the authorization_files of this RegisterPortRequestBody.
 
-        授权证明图片资源，最多支持5张。参数格式为：*资源ID:资源URL*，样例：3d214a61672846f88ad77597f935cccc:AimSauploadService/272957b708ac4891a6d5282ccd2175cccc.png。 > 资源ID与资源URL对应上传智能信息服务号图片资源API返回的resource_id和resource_url。
+        授权证明图片资源，支持jpg、bmp、png和jpeg格式，全部图片总大小不超过4M，最多支持5张。参数格式为：*资源ID:资源URL*，样例：3d214a61672846f88ad77597f935cccc:AimSauploadService/272957b708ac4891a6d5282ccd2175cccc.png。 > 资源ID与资源URL对应上传智能信息服务号图片资源API返回的resource_id和resource_url。
 
         :param authorization_files: The authorization_files of this RegisterPortRequestBody.
         :type authorization_files: list[str]

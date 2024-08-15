@@ -34,11 +34,11 @@ class ListL7RulesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param request_id: 请求ID。  注：自动生成 。
+        :param request_id: 参数解释：请求ID。  注：自动生成 。
         :type request_id: str
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
-        :param rules: 规则对象列表。
+        :param rules: 参数解释：规则对象列表。
         :type rules: list[:class:`huaweicloudsdkelb.v3.L7Rule`]
         """
         
@@ -60,7 +60,7 @@ class ListL7RulesResponse(SdkResponse):
     def request_id(self):
         """Gets the request_id of this ListL7RulesResponse.
 
-        请求ID。  注：自动生成 。
+        参数解释：请求ID。  注：自动生成 。
 
         :return: The request_id of this ListL7RulesResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class ListL7RulesResponse(SdkResponse):
     def request_id(self, request_id):
         """Sets the request_id of this ListL7RulesResponse.
 
-        请求ID。  注：自动生成 。
+        参数解释：请求ID。  注：自动生成 。
 
         :param request_id: The request_id of this ListL7RulesResponse.
         :type request_id: str
@@ -100,7 +100,7 @@ class ListL7RulesResponse(SdkResponse):
     def rules(self):
         """Gets the rules of this ListL7RulesResponse.
 
-        规则对象列表。
+        参数解释：规则对象列表。
 
         :return: The rules of this ListL7RulesResponse.
         :rtype: list[:class:`huaweicloudsdkelb.v3.L7Rule`]
@@ -111,7 +111,7 @@ class ListL7RulesResponse(SdkResponse):
     def rules(self, rules):
         """Sets the rules of this ListL7RulesResponse.
 
-        规则对象列表。
+        参数解释：规则对象列表。
 
         :param rules: The rules of this ListL7RulesResponse.
         :type rules: list[:class:`huaweicloudsdkelb.v3.L7Rule`]

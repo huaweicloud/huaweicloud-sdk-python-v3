@@ -31,9 +31,9 @@ class UpgradeActionInfo:
 
         The model defined in huaweicloud sdk
 
-        :param upgrade_action: 升级操作,upgrade&#x3D;升级,upgradeAutoCommit&#x3D;升级自动提交,commit&#x3D;提交,rollback&#x3D;回滚
+        :param upgrade_action: 升级操作,upgrade&#x3D;升级,upgradeAutoCommit&#x3D;升级自动提交,commit&#x3D;提交,rollback&#x3D;回滚。
         :type upgrade_action: str
-        :param enable: 可用，不可用
+        :param enable: 可用，不可用。
         :type enable: bool
         """
         
@@ -52,7 +52,7 @@ class UpgradeActionInfo:
     def upgrade_action(self):
         """Gets the upgrade_action of this UpgradeActionInfo.
 
-        升级操作,upgrade=升级,upgradeAutoCommit=升级自动提交,commit=提交,rollback=回滚
+        升级操作,upgrade=升级,upgradeAutoCommit=升级自动提交,commit=提交,rollback=回滚。
 
         :return: The upgrade_action of this UpgradeActionInfo.
         :rtype: str
@@ -63,7 +63,7 @@ class UpgradeActionInfo:
     def upgrade_action(self, upgrade_action):
         """Sets the upgrade_action of this UpgradeActionInfo.
 
-        升级操作,upgrade=升级,upgradeAutoCommit=升级自动提交,commit=提交,rollback=回滚
+        升级操作,upgrade=升级,upgradeAutoCommit=升级自动提交,commit=提交,rollback=回滚。
 
         :param upgrade_action: The upgrade_action of this UpgradeActionInfo.
         :type upgrade_action: str
@@ -74,7 +74,7 @@ class UpgradeActionInfo:
     def enable(self):
         """Gets the enable of this UpgradeActionInfo.
 
-        可用，不可用
+        可用，不可用。
 
         :return: The enable of this UpgradeActionInfo.
         :rtype: bool
@@ -85,7 +85,7 @@ class UpgradeActionInfo:
     def enable(self, enable):
         """Sets the enable of this UpgradeActionInfo.
 
-        可用，不可用
+        可用，不可用。
 
         :param enable: The enable of this UpgradeActionInfo.
         :type enable: bool

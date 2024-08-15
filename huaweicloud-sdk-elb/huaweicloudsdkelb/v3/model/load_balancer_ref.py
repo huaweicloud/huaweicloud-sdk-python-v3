@@ -29,7 +29,7 @@ class LoadBalancerRef:
 
         The model defined in huaweicloud sdk
 
-        :param id: 负载均衡器ID。
+        :param id: 参数解释：负载均衡器ID。
         :type id: str
         """
         
@@ -45,7 +45,7 @@ class LoadBalancerRef:
     def id(self):
         """Gets the id of this LoadBalancerRef.
 
-        负载均衡器ID。
+        参数解释：负载均衡器ID。
 
         :return: The id of this LoadBalancerRef.
         :rtype: str
@@ -56,7 +56,7 @@ class LoadBalancerRef:
     def id(self, id):
         """Sets the id of this LoadBalancerRef.
 
-        负载均衡器ID。
+        参数解释：负载均衡器ID。
 
         :param id: The id of this LoadBalancerRef.
         :type id: str
