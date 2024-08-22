@@ -6,7 +6,7 @@ from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ListComponentEventsResponse(SdkResponse):
+class ListUserJdbcDriversResponse(SdkResponse):
 
     """
     Attributes:
@@ -18,99 +18,78 @@ class ListComponentEventsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'api_version': 'ApiVersionObj',
-        'kind': 'ComponentEventKindObj',
-        'items': 'list[EventItem]'
+        'count': 'int',
+        'items': 'list[DriverInfo]'
     }
 
     attribute_map = {
-        'api_version': 'api_version',
-        'kind': 'kind',
+        'count': 'count',
         'items': 'items'
     }
 
-    def __init__(self, api_version=None, kind=None, items=None):
-        """ListComponentEventsResponse
+    def __init__(self, count=None, items=None):
+        """ListUserJdbcDriversResponse
 
         The model defined in huaweicloud sdk
 
-        :param api_version: 
-        :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
-        :param kind: 
-        :type kind: :class:`huaweicloudsdkcae.v1.ComponentEventKindObj`
-        :param items: 事件项。
-        :type items: list[:class:`huaweicloudsdkcae.v1.EventItem`]
+        :param count: 驱动文件总数。
+        :type count: int
+        :param items: 驱动文件列表。
+        :type items: list[:class:`huaweicloudsdkdrs.v5.DriverInfo`]
         """
         
-        super(ListComponentEventsResponse, self).__init__()
+        super(ListUserJdbcDriversResponse, self).__init__()
 
-        self._api_version = None
-        self._kind = None
+        self._count = None
         self._items = None
         self.discriminator = None
 
-        if api_version is not None:
-            self.api_version = api_version
-        if kind is not None:
-            self.kind = kind
+        if count is not None:
+            self.count = count
         if items is not None:
             self.items = items
 
     @property
-    def api_version(self):
-        """Gets the api_version of this ListComponentEventsResponse.
+    def count(self):
+        """Gets the count of this ListUserJdbcDriversResponse.
 
-        :return: The api_version of this ListComponentEventsResponse.
-        :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
+        驱动文件总数。
+
+        :return: The count of this ListUserJdbcDriversResponse.
+        :rtype: int
         """
-        return self._api_version
+        return self._count
 
-    @api_version.setter
-    def api_version(self, api_version):
-        """Sets the api_version of this ListComponentEventsResponse.
+    @count.setter
+    def count(self, count):
+        """Sets the count of this ListUserJdbcDriversResponse.
 
-        :param api_version: The api_version of this ListComponentEventsResponse.
-        :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
+        驱动文件总数。
+
+        :param count: The count of this ListUserJdbcDriversResponse.
+        :type count: int
         """
-        self._api_version = api_version
-
-    @property
-    def kind(self):
-        """Gets the kind of this ListComponentEventsResponse.
-
-        :return: The kind of this ListComponentEventsResponse.
-        :rtype: :class:`huaweicloudsdkcae.v1.ComponentEventKindObj`
-        """
-        return self._kind
-
-    @kind.setter
-    def kind(self, kind):
-        """Sets the kind of this ListComponentEventsResponse.
-
-        :param kind: The kind of this ListComponentEventsResponse.
-        :type kind: :class:`huaweicloudsdkcae.v1.ComponentEventKindObj`
-        """
-        self._kind = kind
+        self._count = count
 
     @property
     def items(self):
-        """Gets the items of this ListComponentEventsResponse.
+        """Gets the items of this ListUserJdbcDriversResponse.
 
-        事件项。
+        驱动文件列表。
 
-        :return: The items of this ListComponentEventsResponse.
-        :rtype: list[:class:`huaweicloudsdkcae.v1.EventItem`]
+        :return: The items of this ListUserJdbcDriversResponse.
+        :rtype: list[:class:`huaweicloudsdkdrs.v5.DriverInfo`]
         """
         return self._items
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListComponentEventsResponse.
+        """Sets the items of this ListUserJdbcDriversResponse.
 
-        事件项。
+        驱动文件列表。
 
-        :param items: The items of this ListComponentEventsResponse.
-        :type items: list[:class:`huaweicloudsdkcae.v1.EventItem`]
+        :param items: The items of this ListUserJdbcDriversResponse.
+        :type items: list[:class:`huaweicloudsdkdrs.v5.DriverInfo`]
         """
         self._items = items
 
@@ -156,7 +135,7 @@ class ListComponentEventsResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ListComponentEventsResponse):
+        if not isinstance(other, ListUserJdbcDriversResponse):
             return False
 
         return self.__dict__ == other.__dict__

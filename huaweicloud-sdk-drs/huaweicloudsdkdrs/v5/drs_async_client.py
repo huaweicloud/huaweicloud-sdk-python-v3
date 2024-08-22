@@ -1277,6 +1277,73 @@ class DrsAsyncClient(Client):
 
         return http_info
 
+    def delete_user_jdbc_driver_async(self, request):
+        """删除驱动文件
+
+        删除驱动文件。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteUserJdbcDriver
+        :type request: :class:`huaweicloudsdkdrs.v5.DeleteUserJdbcDriverRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v5.DeleteUserJdbcDriverResponse`
+        """
+        http_info = self._delete_user_jdbc_driver_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_user_jdbc_driver_async_invoker(self, request):
+        http_info = self._delete_user_jdbc_driver_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_user_jdbc_driver_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/{project_id}/drivers",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteUserJdbcDriverResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def download_batch_create_template_async(self, request):
         """下载批量导入任务模板
 
@@ -2473,6 +2540,77 @@ class DrsAsyncClient(Client):
             path_params['resource_type'] = local_var_params['resource_type']
 
         query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_user_jdbc_drivers_async(self, request):
+        """查询驱动文件列表
+
+        查询驱动文件列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListUserJdbcDrivers
+        :type request: :class:`huaweicloudsdkdrs.v5.ListUserJdbcDriversRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v5.ListUserJdbcDriversResponse`
+        """
+        http_info = self._list_user_jdbc_drivers_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_user_jdbc_drivers_async_invoker(self, request):
+        http_info = self._list_user_jdbc_drivers_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_user_jdbc_drivers_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/drivers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUserJdbcDriversResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'driver_type' in local_var_params:
+            query_params.append(('driver_type', local_var_params['driver_type']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -4569,6 +4707,75 @@ class DrsAsyncClient(Client):
 
         return http_info
 
+    def sync_user_jdbc_driver_async(self, request):
+        """同步驱动文件
+
+        同步驱动文件。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SyncUserJdbcDriver
+        :type request: :class:`huaweicloudsdkdrs.v5.SyncUserJdbcDriverRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v5.SyncUserJdbcDriverResponse`
+        """
+        http_info = self._sync_user_jdbc_driver_http_info(request)
+        return self._call_api(**http_info)
+
+    def sync_user_jdbc_driver_async_invoker(self, request):
+        http_info = self._sync_user_jdbc_driver_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _sync_user_jdbc_driver_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}/update-driver",
+            "request_type": request.__class__.__name__,
+            "response_type": "SyncUserJdbcDriverResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_batch_async_jobs_async(self, request):
         """更新指定ID批量异步任务详情
 
@@ -5095,6 +5302,77 @@ class DrsAsyncClient(Client):
         path_params = {}
 
         query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+        if 'file' in local_var_params:
+            form_params['file'] = local_var_params['file']
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def upload_user_jdbc_driver_async(self, request):
+        """上传驱动文件
+
+        上传驱动文件。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UploadUserJdbcDriver
+        :type request: :class:`huaweicloudsdkdrs.v5.UploadUserJdbcDriverRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v5.UploadUserJdbcDriverResponse`
+        """
+        http_info = self._upload_user_jdbc_driver_http_info(request)
+        return self._call_api(**http_info)
+
+    def upload_user_jdbc_driver_async_invoker(self, request):
+        http_info = self._upload_user_jdbc_driver_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _upload_user_jdbc_driver_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/driver",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadUserJdbcDriverResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'driver_type' in local_var_params:
+            query_params.append(('driver_type', local_var_params['driver_type']))
 
         header_params = {}
         if 'x_language' in local_var_params:

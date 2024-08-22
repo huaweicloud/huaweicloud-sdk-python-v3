@@ -24,6 +24,7 @@ class ActionParams:
         'start_time': 'str',
         'compare_task_param': 'CompareTaskParams',
         'is_sync_re_edit': 'bool',
+        'is_only_init_task': 'bool',
         'force_delete': 'bool',
         'public_ip_config': 'PublicIpConfig',
         'replay_config': 'ReplayConfigInfo'
@@ -37,12 +38,13 @@ class ActionParams:
         'start_time': 'start_time',
         'compare_task_param': 'compare_task_param',
         'is_sync_re_edit': 'is_sync_re_edit',
+        'is_only_init_task': 'is_only_init_task',
         'force_delete': 'force_delete',
         'public_ip_config': 'public_ip_config',
         'replay_config': 'replay_config'
     }
 
-    def __init__(self, endpoints=None, precheck_mode=None, skip_precheck_info=None, pause_mode=None, start_time=None, compare_task_param=None, is_sync_re_edit=None, force_delete=None, public_ip_config=None, replay_config=None):
+    def __init__(self, endpoints=None, precheck_mode=None, skip_precheck_info=None, pause_mode=None, start_time=None, compare_task_param=None, is_sync_re_edit=None, is_only_init_task=None, force_delete=None, public_ip_config=None, replay_config=None):
         """ActionParams
 
         The model defined in huaweicloud sdk
@@ -61,6 +63,8 @@ class ActionParams:
         :type compare_task_param: :class:`huaweicloudsdkdrs.v5.CompareTaskParams`
         :param is_sync_re_edit: 再编辑任务启动时取值true。
         :type is_sync_re_edit: bool
+        :param is_only_init_task: 是否支持只初始化任务。仅支持白名单用户使用，需要提交工单申请才能使用。
+        :type is_only_init_task: bool
         :param force_delete: 强制结束时取值为true。
         :type force_delete: bool
         :param public_ip_config: 
@@ -78,6 +82,7 @@ class ActionParams:
         self._start_time = None
         self._compare_task_param = None
         self._is_sync_re_edit = None
+        self._is_only_init_task = None
         self._force_delete = None
         self._public_ip_config = None
         self._replay_config = None
@@ -97,6 +102,8 @@ class ActionParams:
             self.compare_task_param = compare_task_param
         if is_sync_re_edit is not None:
             self.is_sync_re_edit = is_sync_re_edit
+        if is_only_init_task is not None:
+            self.is_only_init_task = is_only_init_task
         if force_delete is not None:
             self.force_delete = force_delete
         if public_ip_config is not None:
@@ -249,6 +256,28 @@ class ActionParams:
         :type is_sync_re_edit: bool
         """
         self._is_sync_re_edit = is_sync_re_edit
+
+    @property
+    def is_only_init_task(self):
+        """Gets the is_only_init_task of this ActionParams.
+
+        是否支持只初始化任务。仅支持白名单用户使用，需要提交工单申请才能使用。
+
+        :return: The is_only_init_task of this ActionParams.
+        :rtype: bool
+        """
+        return self._is_only_init_task
+
+    @is_only_init_task.setter
+    def is_only_init_task(self, is_only_init_task):
+        """Sets the is_only_init_task of this ActionParams.
+
+        是否支持只初始化任务。仅支持白名单用户使用，需要提交工单申请才能使用。
+
+        :param is_only_init_task: The is_only_init_task of this ActionParams.
+        :type is_only_init_task: bool
+        """
+        self._is_only_init_task = is_only_init_task
 
     @property
     def force_delete(self):

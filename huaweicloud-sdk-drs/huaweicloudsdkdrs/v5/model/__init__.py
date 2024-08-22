@@ -74,7 +74,6 @@ from huaweicloudsdkdrs.v5.model.count_instance_by_tags_request import CountInsta
 from huaweicloudsdkdrs.v5.model.count_instance_by_tags_response import CountInstanceByTagsResponse
 from huaweicloudsdkdrs.v5.model.create_job_req import CreateJobReq
 from huaweicloudsdkdrs.v5.model.create_job_request import CreateJobRequest
-from huaweicloudsdkdrs.v5.model.create_job_resp import CreateJobResp
 from huaweicloudsdkdrs.v5.model.create_job_response import CreateJobResponse
 from huaweicloudsdkdrs.v5.model.customized_dns import CustomizedDns
 from huaweicloudsdkdrs.v5.model.data_filtering_condition import DataFilteringCondition
@@ -94,6 +93,9 @@ from huaweicloudsdkdrs.v5.model.delete_jdbc_driver_response import DeleteJdbcDri
 from huaweicloudsdkdrs.v5.model.delete_job_request import DeleteJobRequest
 from huaweicloudsdkdrs.v5.model.delete_job_resp import DeleteJobResp
 from huaweicloudsdkdrs.v5.model.delete_job_response import DeleteJobResponse
+from huaweicloudsdkdrs.v5.model.delete_user_driver_req import DeleteUserDriverReq
+from huaweicloudsdkdrs.v5.model.delete_user_jdbc_driver_request import DeleteUserJdbcDriverRequest
+from huaweicloudsdkdrs.v5.model.delete_user_jdbc_driver_response import DeleteUserJdbcDriverResponse
 from huaweicloudsdkdrs.v5.model.dirty_data import DirtyData
 from huaweicloudsdkdrs.v5.model.download_batch_create_template_request import DownloadBatchCreateTemplateRequest
 from huaweicloudsdkdrs.v5.model.download_batch_create_template_response import DownloadBatchCreateTemplateResponse
@@ -154,6 +156,8 @@ from huaweicloudsdkdrs.v5.model.list_project_tags_request import ListProjectTags
 from huaweicloudsdkdrs.v5.model.list_project_tags_response import ListProjectTagsResponse
 from huaweicloudsdkdrs.v5.model.list_tags_request import ListTagsRequest
 from huaweicloudsdkdrs.v5.model.list_tags_response import ListTagsResponse
+from huaweicloudsdkdrs.v5.model.list_user_jdbc_drivers_request import ListUserJdbcDriversRequest
+from huaweicloudsdkdrs.v5.model.list_user_jdbc_drivers_response import ListUserJdbcDriversResponse
 from huaweicloudsdkdrs.v5.model.lists_agency_permissions_request import ListsAgencyPermissionsRequest
 from huaweicloudsdkdrs.v5.model.lists_agency_permissions_response import ListsAgencyPermissionsResponse
 from huaweicloudsdkdrs.v5.model.migration_object_overview_info import MigrationObjectOverviewInfo
@@ -261,6 +265,8 @@ from huaweicloudsdkdrs.v5.model.stop_job_action_response import StopJobActionRes
 from huaweicloudsdkdrs.v5.model.support_import_file_result import SupportImportFileResult
 from huaweicloudsdkdrs.v5.model.sync_jdbc_driver_request import SyncJdbcDriverRequest
 from huaweicloudsdkdrs.v5.model.sync_jdbc_driver_response import SyncJdbcDriverResponse
+from huaweicloudsdkdrs.v5.model.sync_user_jdbc_driver_request import SyncUserJdbcDriverRequest
+from huaweicloudsdkdrs.v5.model.sync_user_jdbc_driver_response import SyncUserJdbcDriverResponse
 from huaweicloudsdkdrs.v5.model.table_line_compare_detail_info import TableLineCompareDetailInfo
 from huaweicloudsdkdrs.v5.model.table_object import TableObject
 from huaweicloudsdkdrs.v5.model.tag import Tag
@@ -284,12 +290,16 @@ from huaweicloudsdkdrs.v5.model.update_job_request import UpdateJobRequest
 from huaweicloudsdkdrs.v5.model.update_job_response import UpdateJobResponse
 from huaweicloudsdkdrs.v5.model.update_start_position_request import UpdateStartPositionRequest
 from huaweicloudsdkdrs.v5.model.update_start_position_response import UpdateStartPositionResponse
+from huaweicloudsdkdrs.v5.model.update_user_driver_req import UpdateUserDriverReq
 from huaweicloudsdkdrs.v5.model.upload_db_object_template_request import UploadDbObjectTemplateRequest
 from huaweicloudsdkdrs.v5.model.upload_db_object_template_request_body import UploadDbObjectTemplateRequestBody
 from huaweicloudsdkdrs.v5.model.upload_db_object_template_response import UploadDbObjectTemplateResponse
 from huaweicloudsdkdrs.v5.model.upload_jdbc_driver_request import UploadJdbcDriverRequest
 from huaweicloudsdkdrs.v5.model.upload_jdbc_driver_request_body import UploadJdbcDriverRequestBody
 from huaweicloudsdkdrs.v5.model.upload_jdbc_driver_response import UploadJdbcDriverResponse
+from huaweicloudsdkdrs.v5.model.upload_user_jdbc_driver_request import UploadUserJdbcDriverRequest
+from huaweicloudsdkdrs.v5.model.upload_user_jdbc_driver_request_body import UploadUserJdbcDriverRequestBody
+from huaweicloudsdkdrs.v5.model.upload_user_jdbc_driver_response import UploadUserJdbcDriverResponse
 from huaweicloudsdkdrs.v5.model.user_migration_info import UserMigrationInfo
 from huaweicloudsdkdrs.v5.model.user_migration_list import UserMigrationList
 from huaweicloudsdkdrs.v5.model.user_migration_role import UserMigrationRole

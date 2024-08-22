@@ -20,16 +20,18 @@ class ShowMolBatchDownloadTaskResponse(SdkResponse):
     openapi_types = {
         'status': 'str',
         'filename': 'str',
-        'out_dir': 'str'
+        'out_dir': 'str',
+        'progress': 'TaskProgress'
     }
 
     attribute_map = {
         'status': 'status',
         'filename': 'filename',
-        'out_dir': 'out_dir'
+        'out_dir': 'out_dir',
+        'progress': 'progress'
     }
 
-    def __init__(self, status=None, filename=None, out_dir=None):
+    def __init__(self, status=None, filename=None, out_dir=None, progress=None):
         """ShowMolBatchDownloadTaskResponse
 
         The model defined in huaweicloud sdk
@@ -40,6 +42,8 @@ class ShowMolBatchDownloadTaskResponse(SdkResponse):
         :type filename: str
         :param out_dir: 下载路径
         :type out_dir: str
+        :param progress: 
+        :type progress: :class:`huaweicloudsdkeihealth.v1.TaskProgress`
         """
         
         super(ShowMolBatchDownloadTaskResponse, self).__init__()
@@ -47,6 +51,7 @@ class ShowMolBatchDownloadTaskResponse(SdkResponse):
         self._status = None
         self._filename = None
         self._out_dir = None
+        self._progress = None
         self.discriminator = None
 
         if status is not None:
@@ -55,6 +60,8 @@ class ShowMolBatchDownloadTaskResponse(SdkResponse):
             self.filename = filename
         if out_dir is not None:
             self.out_dir = out_dir
+        if progress is not None:
+            self.progress = progress
 
     @property
     def status(self):
@@ -121,6 +128,24 @@ class ShowMolBatchDownloadTaskResponse(SdkResponse):
         :type out_dir: str
         """
         self._out_dir = out_dir
+
+    @property
+    def progress(self):
+        """Gets the progress of this ShowMolBatchDownloadTaskResponse.
+
+        :return: The progress of this ShowMolBatchDownloadTaskResponse.
+        :rtype: :class:`huaweicloudsdkeihealth.v1.TaskProgress`
+        """
+        return self._progress
+
+    @progress.setter
+    def progress(self, progress):
+        """Sets the progress of this ShowMolBatchDownloadTaskResponse.
+
+        :param progress: The progress of this ShowMolBatchDownloadTaskResponse.
+        :type progress: :class:`huaweicloudsdkeihealth.v1.TaskProgress`
+        """
+        self._progress = progress
 
     def to_dict(self):
         """Returns the model properties as a dict"""

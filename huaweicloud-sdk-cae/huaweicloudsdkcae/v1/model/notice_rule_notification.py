@@ -18,15 +18,17 @@ class NoticeRuleNotification:
 
     openapi_types = {
         'protocol': 'str',
-        'endpoint': 'str'
+        'endpoint': 'str',
+        'template': 'str'
     }
 
     attribute_map = {
         'protocol': 'protocol',
-        'endpoint': 'endpoint'
+        'endpoint': 'endpoint',
+        'template': 'template'
     }
 
-    def __init__(self, protocol=None, endpoint=None):
+    def __init__(self, protocol=None, endpoint=None, template=None):
         """NoticeRuleNotification
 
         The model defined in huaweicloud sdk
@@ -35,16 +37,21 @@ class NoticeRuleNotification:
         :type protocol: str
         :param endpoint: 通知的终端地址。 email协议，接入点必须是邮件地址。 sms协议，接入点必须是一个电话号码。 wechat协议，参考https://support.huaweicloud.com/smn_faq/smn_faq_0027.html获取订阅终端， 企业微信群消息为SMN服务公测功能，需提交工单申请开通。
         :type endpoint: str
+        :param template: 通知的模板语言。 ZH，中文。 EN，英文。
+        :type template: str
         """
         
         
 
         self._protocol = None
         self._endpoint = None
+        self._template = None
         self.discriminator = None
 
         self.protocol = protocol
         self.endpoint = endpoint
+        if template is not None:
+            self.template = template
 
     @property
     def protocol(self):
@@ -89,6 +96,28 @@ class NoticeRuleNotification:
         :type endpoint: str
         """
         self._endpoint = endpoint
+
+    @property
+    def template(self):
+        """Gets the template of this NoticeRuleNotification.
+
+        通知的模板语言。 ZH，中文。 EN，英文。
+
+        :return: The template of this NoticeRuleNotification.
+        :rtype: str
+        """
+        return self._template
+
+    @template.setter
+    def template(self, template):
+        """Sets the template of this NoticeRuleNotification.
+
+        通知的模板语言。 ZH，中文。 EN，英文。
+
+        :param template: The template of this NoticeRuleNotification.
+        :type template: str
+        """
+        self._template = template
 
     def to_dict(self):
         """Returns the model properties as a dict"""

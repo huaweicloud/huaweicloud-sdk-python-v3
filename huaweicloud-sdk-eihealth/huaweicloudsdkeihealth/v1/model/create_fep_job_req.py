@@ -19,6 +19,7 @@ class CreateFepJobReq:
     openapi_types = {
         'basic_info': 'CreateDrugJobBasicInfo',
         'receptor': 'ReceptorDrugFile',
+        'add_membrane': 'bool',
         'ligands': 'list[LigandPreviewDto]',
         'graph': 'FepGraphDto',
         'params': 'FepParamDto'
@@ -27,12 +28,13 @@ class CreateFepJobReq:
     attribute_map = {
         'basic_info': 'basic_info',
         'receptor': 'receptor',
+        'add_membrane': 'add_membrane',
         'ligands': 'ligands',
         'graph': 'graph',
         'params': 'params'
     }
 
-    def __init__(self, basic_info=None, receptor=None, ligands=None, graph=None, params=None):
+    def __init__(self, basic_info=None, receptor=None, add_membrane=None, ligands=None, graph=None, params=None):
         """CreateFepJobReq
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class CreateFepJobReq:
         :type basic_info: :class:`huaweicloudsdkeihealth.v1.CreateDrugJobBasicInfo`
         :param receptor: 
         :type receptor: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFile`
+        :param add_membrane: 是否加膜处理
+        :type add_membrane: bool
         :param ligands: 配体列表
         :type ligands: list[:class:`huaweicloudsdkeihealth.v1.LigandPreviewDto`]
         :param graph: 
@@ -53,6 +57,7 @@ class CreateFepJobReq:
 
         self._basic_info = None
         self._receptor = None
+        self._add_membrane = None
         self._ligands = None
         self._graph = None
         self._params = None
@@ -60,6 +65,8 @@ class CreateFepJobReq:
 
         self.basic_info = basic_info
         self.receptor = receptor
+        if add_membrane is not None:
+            self.add_membrane = add_membrane
         self.ligands = ligands
         self.graph = graph
         self.params = params
@@ -99,6 +106,28 @@ class CreateFepJobReq:
         :type receptor: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFile`
         """
         self._receptor = receptor
+
+    @property
+    def add_membrane(self):
+        """Gets the add_membrane of this CreateFepJobReq.
+
+        是否加膜处理
+
+        :return: The add_membrane of this CreateFepJobReq.
+        :rtype: bool
+        """
+        return self._add_membrane
+
+    @add_membrane.setter
+    def add_membrane(self, add_membrane):
+        """Sets the add_membrane of this CreateFepJobReq.
+
+        是否加膜处理
+
+        :param add_membrane: The add_membrane of this CreateFepJobReq.
+        :type add_membrane: bool
+        """
+        self._add_membrane = add_membrane
 
     @property
     def ligands(self):

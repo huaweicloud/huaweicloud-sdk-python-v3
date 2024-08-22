@@ -28,7 +28,7 @@ class CreateEndpointRequestBody:
         'enable_whitelist': 'bool',
         'description': 'str',
         'policy_statement': 'list[PolicyStatement]',
-        'policy_document': 'str',
+        'policy_document': 'object',
         'ip_version': 'str',
         'ipv6_address': 'str'
     }
@@ -78,7 +78,7 @@ class CreateEndpointRequestBody:
         :param policy_statement: Gateway类型终端节点策略信息，仅限OBS、SFS的终端节点服务的enable_policy值为true时支持该参数。
         :type policy_statement: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]
         :param policy_document: 终端节点策略信息，仅当终端节点服务的enable_policy值为true时支持该参数，默认值为完全访问权限。（OBS、SFS的终端节点服务暂不支持该参数）
-        :type policy_document: str
+        :type policy_document: object
         :param ip_version: 指定终端节点的IP版本，仅专业型终端节点支持此参数。  - ipv4,  IPv4 - dualstack, 双栈
         :type ip_version: str
         :param ipv6_address: 访问所连接的终端节点服务的IPv6的地址。  创建终端节点时，可以指定访问所连接的终端节点服务的IP，不指定的情况下，会使用系统生成的一个地址。  仅专业型终端节点支持此参数。
@@ -379,7 +379,7 @@ class CreateEndpointRequestBody:
         终端节点策略信息，仅当终端节点服务的enable_policy值为true时支持该参数，默认值为完全访问权限。（OBS、SFS的终端节点服务暂不支持该参数）
 
         :return: The policy_document of this CreateEndpointRequestBody.
-        :rtype: str
+        :rtype: object
         """
         return self._policy_document
 
@@ -390,7 +390,7 @@ class CreateEndpointRequestBody:
         终端节点策略信息，仅当终端节点服务的enable_policy值为true时支持该参数，默认值为完全访问权限。（OBS、SFS的终端节点服务暂不支持该参数）
 
         :param policy_document: The policy_document of this CreateEndpointRequestBody.
-        :type policy_document: str
+        :type policy_document: object
         """
         self._policy_document = policy_document
 

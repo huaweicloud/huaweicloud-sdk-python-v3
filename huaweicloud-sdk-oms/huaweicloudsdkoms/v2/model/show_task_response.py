@@ -55,7 +55,8 @@ class ShowTaskResponse(SdkResponse):
         'object_overwrite_mode': 'str',
         'dst_storage_policy': 'str',
         'consistency_check': 'str',
-        'enable_requester_pays': 'bool'
+        'enable_requester_pays': 'bool',
+        'task_priority': 'str'
     }
 
     attribute_map = {
@@ -96,10 +97,11 @@ class ShowTaskResponse(SdkResponse):
         'object_overwrite_mode': 'object_overwrite_mode',
         'dst_storage_policy': 'dst_storage_policy',
         'consistency_check': 'consistency_check',
-        'enable_requester_pays': 'enable_requester_pays'
+        'enable_requester_pays': 'enable_requester_pays',
+        'task_priority': 'task_priority'
     }
 
-    def __init__(self, bandwidth_policy=None, complete_size=None, description=None, dst_node=None, enable_failed_object_recording=None, enable_kms=None, enable_metadata_migration=None, enable_restore=None, error_reason=None, failed_num=None, failed_object_record=None, group_id=None, id=None, is_query_over=None, left_time=None, migrate_since=None, migrate_speed=None, name=None, progress=None, real_size=None, skipped_num=None, src_node=None, start_time=None, status=None, successful_num=None, task_type=None, group_type=None, total_num=None, total_size=None, total_time=None, smn_info=None, source_cdn=None, success_record_error_reason=None, skip_record_error_reason=None, object_overwrite_mode=None, dst_storage_policy=None, consistency_check=None, enable_requester_pays=None):
+    def __init__(self, bandwidth_policy=None, complete_size=None, description=None, dst_node=None, enable_failed_object_recording=None, enable_kms=None, enable_metadata_migration=None, enable_restore=None, error_reason=None, failed_num=None, failed_object_record=None, group_id=None, id=None, is_query_over=None, left_time=None, migrate_since=None, migrate_speed=None, name=None, progress=None, real_size=None, skipped_num=None, src_node=None, start_time=None, status=None, successful_num=None, task_type=None, group_type=None, total_num=None, total_size=None, total_time=None, smn_info=None, source_cdn=None, success_record_error_reason=None, skip_record_error_reason=None, object_overwrite_mode=None, dst_storage_policy=None, consistency_check=None, enable_requester_pays=None, task_priority=None):
         """ShowTaskResponse
 
         The model defined in huaweicloud sdk
@@ -180,6 +182,8 @@ class ShowTaskResponse(SdkResponse):
         :type consistency_check: str
         :param enable_requester_pays: 是否开启请求者付款，在启用后，请求者支付请求和数据传输费用。
         :type enable_requester_pays: bool
+        :param task_priority: HIGH：高优先级 MEDIUM：中优先级 LOW：低优先级
+        :type task_priority: str
         """
         
         super(ShowTaskResponse, self).__init__()
@@ -222,6 +226,7 @@ class ShowTaskResponse(SdkResponse):
         self._dst_storage_policy = None
         self._consistency_check = None
         self._enable_requester_pays = None
+        self._task_priority = None
         self.discriminator = None
 
         if bandwidth_policy is not None:
@@ -300,6 +305,8 @@ class ShowTaskResponse(SdkResponse):
             self.consistency_check = consistency_check
         if enable_requester_pays is not None:
             self.enable_requester_pays = enable_requester_pays
+        if task_priority is not None:
+            self.task_priority = task_priority
 
     @property
     def bandwidth_policy(self):
@@ -1112,6 +1119,28 @@ class ShowTaskResponse(SdkResponse):
         :type enable_requester_pays: bool
         """
         self._enable_requester_pays = enable_requester_pays
+
+    @property
+    def task_priority(self):
+        """Gets the task_priority of this ShowTaskResponse.
+
+        HIGH：高优先级 MEDIUM：中优先级 LOW：低优先级
+
+        :return: The task_priority of this ShowTaskResponse.
+        :rtype: str
+        """
+        return self._task_priority
+
+    @task_priority.setter
+    def task_priority(self, task_priority):
+        """Sets the task_priority of this ShowTaskResponse.
+
+        HIGH：高优先级 MEDIUM：中优先级 LOW：低优先级
+
+        :param task_priority: The task_priority of this ShowTaskResponse.
+        :type task_priority: str
+        """
+        self._task_priority = task_priority
 
     def to_dict(self):
         """Returns the model properties as a dict"""

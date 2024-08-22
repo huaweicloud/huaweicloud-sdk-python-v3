@@ -32,7 +32,8 @@ class CreateTaskReq:
         'object_overwrite_mode': 'str',
         'dst_storage_policy': 'str',
         'consistency_check': 'str',
-        'enable_requester_pays': 'bool'
+        'enable_requester_pays': 'bool',
+        'task_priority': 'str'
     }
 
     attribute_map = {
@@ -51,10 +52,11 @@ class CreateTaskReq:
         'object_overwrite_mode': 'object_overwrite_mode',
         'dst_storage_policy': 'dst_storage_policy',
         'consistency_check': 'consistency_check',
-        'enable_requester_pays': 'enable_requester_pays'
+        'enable_requester_pays': 'enable_requester_pays',
+        'task_priority': 'task_priority'
     }
 
-    def __init__(self, task_type=None, src_node=None, dst_node=None, enable_kms=None, description=None, migrate_since=None, bandwidth_policy=None, source_cdn=None, smn_config=None, enable_metadata_migration=None, enable_restore=None, enable_failed_object_recording=None, object_overwrite_mode=None, dst_storage_policy=None, consistency_check=None, enable_requester_pays=None):
+    def __init__(self, task_type=None, src_node=None, dst_node=None, enable_kms=None, description=None, migrate_since=None, bandwidth_policy=None, source_cdn=None, smn_config=None, enable_metadata_migration=None, enable_restore=None, enable_failed_object_recording=None, object_overwrite_mode=None, dst_storage_policy=None, consistency_check=None, enable_requester_pays=None, task_priority=None):
         """CreateTaskReq
 
         The model defined in huaweicloud sdk
@@ -91,6 +93,8 @@ class CreateTaskReq:
         :type consistency_check: str
         :param enable_requester_pays: 是否开启请求者付款，在启用后，请求者支付请求和数据传输费用。
         :type enable_requester_pays: bool
+        :param task_priority: HIGH：高优先级 MEDIUM：中优先级 LOW：低优先级
+        :type task_priority: str
         """
         
         
@@ -111,6 +115,7 @@ class CreateTaskReq:
         self._dst_storage_policy = None
         self._consistency_check = None
         self._enable_requester_pays = None
+        self._task_priority = None
         self.discriminator = None
 
         if task_type is not None:
@@ -143,6 +148,8 @@ class CreateTaskReq:
             self.consistency_check = consistency_check
         if enable_requester_pays is not None:
             self.enable_requester_pays = enable_requester_pays
+        if task_priority is not None:
+            self.task_priority = task_priority
 
     @property
     def task_type(self):
@@ -479,6 +486,28 @@ class CreateTaskReq:
         :type enable_requester_pays: bool
         """
         self._enable_requester_pays = enable_requester_pays
+
+    @property
+    def task_priority(self):
+        """Gets the task_priority of this CreateTaskReq.
+
+        HIGH：高优先级 MEDIUM：中优先级 LOW：低优先级
+
+        :return: The task_priority of this CreateTaskReq.
+        :rtype: str
+        """
+        return self._task_priority
+
+    @task_priority.setter
+    def task_priority(self, task_priority):
+        """Sets the task_priority of this CreateTaskReq.
+
+        HIGH：高优先级 MEDIUM：中优先级 LOW：低优先级
+
+        :param task_priority: The task_priority of this CreateTaskReq.
+        :type task_priority: str
+        """
+        self._task_priority = task_priority
 
     def to_dict(self):
         """Returns the model properties as a dict"""

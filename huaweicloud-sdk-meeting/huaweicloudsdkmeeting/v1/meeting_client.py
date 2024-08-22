@@ -32,6 +32,73 @@ class MeetingClient(Client):
 
         return client_builder
 
+    def add_app_id(self, request):
+        """添加企业应用
+
+        企业默认管理员添加应用，添加应用后，记录返回信息，后续可通过[[执行App ID鉴权](https://support.huaweicloud.com/api-meeting/meeting_21_0311.html)](tag:hws) [[执行App ID鉴权](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0311.html)](tag:hk)获取accessToken
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AddAppId
+        :type request: :class:`huaweicloudsdkmeeting.v1.AddAppIdRequest`
+        :rtype: :class:`huaweicloudsdkmeeting.v1.AddAppIdResponse`
+        """
+        http_info = self._add_app_id_http_info(request)
+        return self._call_api(**http_info)
+
+    def add_app_id_invoker(self, request):
+        http_info = self._add_app_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_app_id_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/usg/acs/corp/app",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddAppIdResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=utf-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def add_corp(self, request):
         """SP管理员创建企业
 
@@ -1499,6 +1566,77 @@ class MeetingClient(Client):
 
         return http_info
 
+    def batch_search_app_id(self, request):
+        """分页查询企业应用
+
+        企业默认管理员分页查询企业应用
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchSearchAppId
+        :type request: :class:`huaweicloudsdkmeeting.v1.BatchSearchAppIdRequest`
+        :rtype: :class:`huaweicloudsdkmeeting.v1.BatchSearchAppIdResponse`
+        """
+        http_info = self._batch_search_app_id_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_search_app_id_invoker(self, request):
+        http_info = self._batch_search_app_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_search_app_id_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/usg/acs/corp/apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchSearchAppIdResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_show_user_details(self, request):
         """批量查询用户详情
 
@@ -2880,6 +3018,75 @@ class MeetingClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_app_id(self, request):
+        """删除企业应用
+
+        企业管理员删除企业应用
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteAppId
+        :type request: :class:`huaweicloudsdkmeeting.v1.DeleteAppIdRequest`
+        :rtype: :class:`huaweicloudsdkmeeting.v1.DeleteAppIdResponse`
+        """
+        http_info = self._delete_app_id_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_app_id_invoker(self, request):
+        http_info = self._delete_app_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_app_id_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/usg/acs/corp/app/{app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAppIdResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'app_id' in local_var_params:
+            path_params['app_id'] = local_var_params['app_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -5200,6 +5407,75 @@ class MeetingClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def reset_app_key(self, request):
+        """重置企业应用appkey
+
+        企业默认管理员重置企业应用appkey
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ResetAppKey
+        :type request: :class:`huaweicloudsdkmeeting.v1.ResetAppKeyRequest`
+        :rtype: :class:`huaweicloudsdkmeeting.v1.ResetAppKeyResponse`
+        """
+        http_info = self._reset_app_key_http_info(request)
+        return self._call_api(**http_info)
+
+    def reset_app_key_invoker(self, request):
+        http_info = self._reset_app_key_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _reset_app_key_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/usg/acs/corp/app/{app_id}/reset",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetAppKeyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'app_id' in local_var_params:
+            path_params['app_id'] = local_var_params['app_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -10827,6 +11103,77 @@ class MeetingClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_app_id(self, request):
+        """修改企业应用
+
+        企业默认管理员修改企业应用
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateAppId
+        :type request: :class:`huaweicloudsdkmeeting.v1.UpdateAppIdRequest`
+        :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateAppIdResponse`
+        """
+        http_info = self._update_app_id_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_app_id_invoker(self, request):
+        http_info = self._update_app_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_app_id_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/usg/acs/corp/app/{app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAppIdResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'app_id' in local_var_params:
+            path_params['app_id'] = local_var_params['app_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=utf-8'])
 
         auth_settings = []
 

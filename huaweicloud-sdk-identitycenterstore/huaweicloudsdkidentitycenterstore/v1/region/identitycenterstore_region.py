@@ -16,6 +16,26 @@ class IdentityCenterStoreRegion:
                         "https://identitystore.ap-southeast-3.myhuaweicloud.com")
     AP_SOUTHEAST_2 = Region("ap-southeast-2",
                         "https://identitystore.ap-southeast-2.myhuaweicloud.com")
+    LA_SOUTH_2 = Region("la-south-2",
+                        "https://identitystore.la-south-2.myhuaweicloud.com")
+    AF_SOUTH_1 = Region("af-south-1",
+                        "https://identitystore.af-south-1.myhuaweicloud.com")
+    AP_SOUTHEAST_1 = Region("ap-southeast-1",
+                        "https://identitystore.ap-southeast-1.myhuaweicloud.com")
+    CN_SOUTH_4 = Region("cn-south-4",
+                        "https://identitystore.cn-south-4.myhuaweicloud.com")
+    ME_EAST_1 = Region("me-east-1",
+                        "https://identitystore.me-east-1.myhuaweicloud.com")
+    TR_WEST_1 = Region("tr-west-1",
+                        "https://identitystore.tr-west-1.myhuaweicloud.com")
+    LA_NORTH_2 = Region("la-north-2",
+                        "https://identitystore.la-north-2.myhuaweicloud.com")
+    SA_BRAZIL_1 = Region("sa-brazil-1",
+                        "https://identitystore.sa-brazil-1.myhuaweicloud.com")
+    CN_SOUTH_1 = Region("cn-south-1",
+                        "https://identitystore.cn-south-1.myhuaweicloud.com")
+    CN_SOUTHWEST_2 = Region("cn-southwest-2",
+                        "https://identitystore.cn-southwest-2.myhuaweicloud.com")
 
     static_fields = {
         "cn-east-3": CN_EAST_3,
@@ -23,6 +43,16 @@ class IdentityCenterStoreRegion:
         "ap-southeast-4": AP_SOUTHEAST_4,
         "ap-southeast-3": AP_SOUTHEAST_3,
         "ap-southeast-2": AP_SOUTHEAST_2,
+        "la-south-2": LA_SOUTH_2,
+        "af-south-1": AF_SOUTH_1,
+        "ap-southeast-1": AP_SOUTHEAST_1,
+        "cn-south-4": CN_SOUTH_4,
+        "me-east-1": ME_EAST_1,
+        "tr-west-1": TR_WEST_1,
+        "la-north-2": LA_NORTH_2,
+        "sa-brazil-1": SA_BRAZIL_1,
+        "cn-south-1": CN_SOUTH_1,
+        "cn-southwest-2": CN_SOUTHWEST_2,
     }
 
     @classmethod

@@ -28,7 +28,6 @@ from huaweicloudsdkcae.v1.model.cert_item import CertItem
 from huaweicloudsdkcae.v1.model.cert_req import CertReq
 from huaweicloudsdkcae.v1.model.certificate_kind_obj import CertificateKindObj
 from huaweicloudsdkcae.v1.model.component_configuration_kind_obj import ComponentConfigurationKindObj
-from huaweicloudsdkcae.v1.model.component_event_kind_obj import ComponentEventKindObj
 from huaweicloudsdkcae.v1.model.component_execution_result import ComponentExecutionResult
 from huaweicloudsdkcae.v1.model.component_info import ComponentInfo
 from huaweicloudsdkcae.v1.model.component_item import ComponentItem
@@ -120,7 +119,6 @@ from huaweicloudsdkcae.v1.model.egress_cidr import EgressCidr
 from huaweicloudsdkcae.v1.model.eip_kind_obj import EipKindObj
 from huaweicloudsdkcae.v1.model.environment_item import EnvironmentItem
 from huaweicloudsdkcae.v1.model.environment_kind_obj import EnvironmentKindObj
-from huaweicloudsdkcae.v1.model.event_item import EventItem
 from huaweicloudsdkcae.v1.model.execute_action_request import ExecuteActionRequest
 from huaweicloudsdkcae.v1.model.execute_action_request_body import ExecuteActionRequestBody
 from huaweicloudsdkcae.v1.model.execute_action_request_body_metadata import ExecuteActionRequestBodyMetadata
@@ -145,8 +143,6 @@ from huaweicloudsdkcae.v1.model.list_certificates_response import ListCertificat
 from huaweicloudsdkcae.v1.model.list_component_configurations_request import ListComponentConfigurationsRequest
 from huaweicloudsdkcae.v1.model.list_component_configurations_response import ListComponentConfigurationsResponse
 from huaweicloudsdkcae.v1.model.list_component_configurations_response_data import ListComponentConfigurationsResponseData
-from huaweicloudsdkcae.v1.model.list_component_events_request import ListComponentEventsRequest
-from huaweicloudsdkcae.v1.model.list_component_events_response import ListComponentEventsResponse
 from huaweicloudsdkcae.v1.model.list_component_instances_request import ListComponentInstancesRequest
 from huaweicloudsdkcae.v1.model.list_component_instances_response import ListComponentInstancesResponse
 from huaweicloudsdkcae.v1.model.list_component_snapshots_request import ListComponentSnapshotsRequest

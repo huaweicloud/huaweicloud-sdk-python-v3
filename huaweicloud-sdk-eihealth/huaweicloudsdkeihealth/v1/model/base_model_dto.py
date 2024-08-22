@@ -20,7 +20,6 @@ class BaseModelDto:
         'name': 'str',
         'id': 'str',
         'create_time': 'str',
-        'creator': 'str',
         'description': 'str'
     }
 
@@ -28,11 +27,10 @@ class BaseModelDto:
         'name': 'name',
         'id': 'id',
         'create_time': 'create_time',
-        'creator': 'creator',
         'description': 'description'
     }
 
-    def __init__(self, name=None, id=None, create_time=None, creator=None, description=None):
+    def __init__(self, name=None, id=None, create_time=None, description=None):
         """BaseModelDto
 
         The model defined in huaweicloud sdk
@@ -43,8 +41,6 @@ class BaseModelDto:
         :type id: str
         :param create_time: 模型创建时间
         :type create_time: str
-        :param creator: 创建模型的用户名称
-        :type creator: str
         :param description: 模型描述信息
         :type description: str
         """
@@ -54,7 +50,6 @@ class BaseModelDto:
         self._name = None
         self._id = None
         self._create_time = None
-        self._creator = None
         self._description = None
         self.discriminator = None
 
@@ -64,8 +59,6 @@ class BaseModelDto:
             self.id = id
         if create_time is not None:
             self.create_time = create_time
-        if creator is not None:
-            self.creator = creator
         if description is not None:
             self.description = description
 
@@ -134,28 +127,6 @@ class BaseModelDto:
         :type create_time: str
         """
         self._create_time = create_time
-
-    @property
-    def creator(self):
-        """Gets the creator of this BaseModelDto.
-
-        创建模型的用户名称
-
-        :return: The creator of this BaseModelDto.
-        :rtype: str
-        """
-        return self._creator
-
-    @creator.setter
-    def creator(self, creator):
-        """Sets the creator of this BaseModelDto.
-
-        创建模型的用户名称
-
-        :param creator: The creator of this BaseModelDto.
-        :type creator: str
-        """
-        self._creator = creator
 
     @property
     def description(self):

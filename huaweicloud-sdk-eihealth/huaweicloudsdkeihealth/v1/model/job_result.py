@@ -18,15 +18,17 @@ class JobResult:
 
     openapi_types = {
         'total_count': 'int',
-        'failed_count': 'int'
+        'failed_count': 'int',
+        'sub_tasks_duration': 'list[float]'
     }
 
     attribute_map = {
         'total_count': 'total_count',
-        'failed_count': 'failed_count'
+        'failed_count': 'failed_count',
+        'sub_tasks_duration': 'sub_tasks_duration'
     }
 
-    def __init__(self, total_count=None, failed_count=None):
+    def __init__(self, total_count=None, failed_count=None, sub_tasks_duration=None):
         """JobResult
 
         The model defined in huaweicloud sdk
@@ -35,18 +37,23 @@ class JobResult:
         :type total_count: int
         :param failed_count: 失败个数
         :type failed_count: int
+        :param sub_tasks_duration: 子任务运行时长（秒）。
+        :type sub_tasks_duration: list[float]
         """
         
         
 
         self._total_count = None
         self._failed_count = None
+        self._sub_tasks_duration = None
         self.discriminator = None
 
         if total_count is not None:
             self.total_count = total_count
         if failed_count is not None:
             self.failed_count = failed_count
+        if sub_tasks_duration is not None:
+            self.sub_tasks_duration = sub_tasks_duration
 
     @property
     def total_count(self):
@@ -91,6 +98,28 @@ class JobResult:
         :type failed_count: int
         """
         self._failed_count = failed_count
+
+    @property
+    def sub_tasks_duration(self):
+        """Gets the sub_tasks_duration of this JobResult.
+
+        子任务运行时长（秒）。
+
+        :return: The sub_tasks_duration of this JobResult.
+        :rtype: list[float]
+        """
+        return self._sub_tasks_duration
+
+    @sub_tasks_duration.setter
+    def sub_tasks_duration(self, sub_tasks_duration):
+        """Sets the sub_tasks_duration of this JobResult.
+
+        子任务运行时长（秒）。
+
+        :param sub_tasks_duration: The sub_tasks_duration of this JobResult.
+        :type sub_tasks_duration: list[float]
+        """
+        self._sub_tasks_duration = sub_tasks_duration
 
     def to_dict(self):
         """Returns the model properties as a dict"""

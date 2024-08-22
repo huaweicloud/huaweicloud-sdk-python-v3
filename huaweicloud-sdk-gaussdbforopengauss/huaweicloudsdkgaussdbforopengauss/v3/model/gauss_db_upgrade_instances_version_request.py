@@ -53,8 +53,7 @@ class GaussDBUpgradeInstancesVersionRequest:
         self._target_version = None
         self.discriminator = None
 
-        if instance_ids is not None:
-            self.instance_ids = instance_ids
+        self.instance_ids = instance_ids
         self.upgrade_type = upgrade_type
         if upgrade_action is not None:
             self.upgrade_action = upgrade_action

@@ -18,7 +18,7 @@ class UpdateEndpointPolicyRequestBody:
 
     openapi_types = {
         'policy_statement': 'list[PolicyStatement]',
-        'policy_document': 'str'
+        'policy_document': 'object'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class UpdateEndpointPolicyRequestBody:
         :param policy_statement: Gateway类型终端节点策略信息，仅限OBS、SFS的终端节点服务的enable_policy值为true时支持该参数。
         :type policy_statement: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]
         :param policy_document: 终端节点策略信息，仅当终端节点服务的enable_policy值为true时支持该参数，默认值为完全访问权限。（OBS、SFS的终端节点服务暂不支持该参数）
-        :type policy_document: str
+        :type policy_document: object
         """
         
         
@@ -77,7 +77,7 @@ class UpdateEndpointPolicyRequestBody:
         终端节点策略信息，仅当终端节点服务的enable_policy值为true时支持该参数，默认值为完全访问权限。（OBS、SFS的终端节点服务暂不支持该参数）
 
         :return: The policy_document of this UpdateEndpointPolicyRequestBody.
-        :rtype: str
+        :rtype: object
         """
         return self._policy_document
 
@@ -88,7 +88,7 @@ class UpdateEndpointPolicyRequestBody:
         终端节点策略信息，仅当终端节点服务的enable_policy值为true时支持该参数，默认值为完全访问权限。（OBS、SFS的终端节点服务暂不支持该参数）
 
         :param policy_document: The policy_document of this UpdateEndpointPolicyRequestBody.
-        :type policy_document: str
+        :type policy_document: object
         """
         self._policy_document = policy_document
 

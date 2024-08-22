@@ -376,6 +376,71 @@ class CceAsyncClient(Client):
 
         return http_info
 
+    def batch_sync_nodes_async(self, request):
+        """批量同步节点
+
+        该API用于批量同步节点。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchSyncNodes
+        :type request: :class:`huaweicloudsdkcce.v3.BatchSyncNodesRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.BatchSyncNodesResponse`
+        """
+        http_info = self._batch_sync_nodes_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_sync_nodes_async_invoker(self, request):
+        http_info = self._batch_sync_nodes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_sync_nodes_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/nodes/sync",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchSyncNodesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def continue_upgrade_cluster_task_async(self, request):
         """继续执行集群升级任务
 
@@ -5003,6 +5068,73 @@ class CceAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def sync_node_async(self, request):
+        """同步节点
+
+        该API用于同步节点。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SyncNode
+        :type request: :class:`huaweicloudsdkcce.v3.SyncNodeRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.SyncNodeResponse`
+        """
+        http_info = self._sync_node_http_info(request)
+        return self._call_api(**http_info)
+
+    def sync_node_async_invoker(self, request):
+        http_info = self._sync_node_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _sync_node_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/api/v2/projects/{project_id}/clusters/{cluster_id}/nodes/{node_id}/sync",
+            "request_type": request.__class__.__name__,
+            "response_type": "SyncNodeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'node_id' in local_var_params:
+            path_params['node_id'] = local_var_params['node_id']
 
         query_params = []
 

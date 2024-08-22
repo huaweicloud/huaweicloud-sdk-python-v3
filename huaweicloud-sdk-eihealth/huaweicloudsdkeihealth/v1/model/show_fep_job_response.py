@@ -20,6 +20,7 @@ class ShowFepJobResponse(SdkResponse):
     openapi_types = {
         'basic_info': 'DrugJobDto',
         'receptor': 'ReceptorDrugFile',
+        'add_membrane': 'bool',
         'ligands': 'list[LigandPreviewDto]',
         'graph': 'FepGraphDto',
         'params': 'FepParamDto',
@@ -30,6 +31,7 @@ class ShowFepJobResponse(SdkResponse):
     attribute_map = {
         'basic_info': 'basic_info',
         'receptor': 'receptor',
+        'add_membrane': 'add_membrane',
         'ligands': 'ligands',
         'graph': 'graph',
         'params': 'params',
@@ -37,7 +39,7 @@ class ShowFepJobResponse(SdkResponse):
         'part_failed_reason': 'part_failed_reason'
     }
 
-    def __init__(self, basic_info=None, receptor=None, ligands=None, graph=None, params=None, job_result=None, part_failed_reason=None):
+    def __init__(self, basic_info=None, receptor=None, add_membrane=None, ligands=None, graph=None, params=None, job_result=None, part_failed_reason=None):
         """ShowFepJobResponse
 
         The model defined in huaweicloud sdk
@@ -46,6 +48,8 @@ class ShowFepJobResponse(SdkResponse):
         :type basic_info: :class:`huaweicloudsdkeihealth.v1.DrugJobDto`
         :param receptor: 
         :type receptor: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFile`
+        :param add_membrane: 是否加膜处理
+        :type add_membrane: bool
         :param ligands: 配体列表
         :type ligands: list[:class:`huaweicloudsdkeihealth.v1.LigandPreviewDto`]
         :param graph: 
@@ -62,6 +66,7 @@ class ShowFepJobResponse(SdkResponse):
 
         self._basic_info = None
         self._receptor = None
+        self._add_membrane = None
         self._ligands = None
         self._graph = None
         self._params = None
@@ -73,6 +78,8 @@ class ShowFepJobResponse(SdkResponse):
             self.basic_info = basic_info
         if receptor is not None:
             self.receptor = receptor
+        if add_membrane is not None:
+            self.add_membrane = add_membrane
         if ligands is not None:
             self.ligands = ligands
         if graph is not None:
@@ -119,6 +126,28 @@ class ShowFepJobResponse(SdkResponse):
         :type receptor: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFile`
         """
         self._receptor = receptor
+
+    @property
+    def add_membrane(self):
+        """Gets the add_membrane of this ShowFepJobResponse.
+
+        是否加膜处理
+
+        :return: The add_membrane of this ShowFepJobResponse.
+        :rtype: bool
+        """
+        return self._add_membrane
+
+    @add_membrane.setter
+    def add_membrane(self, add_membrane):
+        """Sets the add_membrane of this ShowFepJobResponse.
+
+        是否加膜处理
+
+        :param add_membrane: The add_membrane of this ShowFepJobResponse.
+        :type add_membrane: bool
+        """
+        self._add_membrane = add_membrane
 
     @property
     def ligands(self):

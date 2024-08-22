@@ -29,7 +29,7 @@ class UploadJdbcDriverRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param file: 驱动文件，驱动文件名称长度5-64，以jar结尾，name相同会替换远程驱动文件
+        :param file: 驱动文件，驱动文件名称长度5-64，以jar结尾，文件名相同会替换远程驱动文件
         :type file: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         
@@ -44,7 +44,7 @@ class UploadJdbcDriverRequestBody:
     def file(self):
         """Gets the file of this UploadJdbcDriverRequestBody.
 
-        驱动文件，驱动文件名称长度5-64，以jar结尾，name相同会替换远程驱动文件
+        驱动文件，驱动文件名称长度5-64，以jar结尾，文件名相同会替换远程驱动文件
 
         :return: The file of this UploadJdbcDriverRequestBody.
         :rtype: :class:`huaweicloudsdkcore.http.formdata.FormFile`
@@ -55,7 +55,7 @@ class UploadJdbcDriverRequestBody:
     def file(self, file):
         """Sets the file of this UploadJdbcDriverRequestBody.
 
-        驱动文件，驱动文件名称长度5-64，以jar结尾，name相同会替换远程驱动文件
+        驱动文件，驱动文件名称长度5-64，以jar结尾，文件名相同会替换远程驱动文件
 
         :param file: The file of this UploadJdbcDriverRequestBody.
         :type file: :class:`huaweicloudsdkcore.http.formdata.FormFile`

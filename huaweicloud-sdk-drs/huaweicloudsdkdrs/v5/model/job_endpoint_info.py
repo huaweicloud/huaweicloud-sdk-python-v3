@@ -45,7 +45,7 @@ class JobEndpointInfo:
 
         The model defined in huaweicloud sdk
 
-        :param db_type: 数据库类型。取值：  - oracle：Oracle。 - gaussdbv5：GaussDB分布式版。 - redis：Redis。 - rediscluster：Redis集群版。 - gaussredis: GeminiDB Redis。
+        :param db_type: 数据库类型。取值：  - oracle：Oracle。 - gaussdbv5：GaussDB分布式版。 - redis：Redis。 - rediscluster：Redis集群版。 - gaussredis: GeminiDB Redis。 - mysql：MySQL。
         :type db_type: str
         :param endpoint_type: 数据库实例类型。取值：  - offline：自建数据库。 - ecs：华为云ECS自建数据库。 - cloud：华为云数据库。
         :type endpoint_type: str
@@ -97,7 +97,7 @@ class JobEndpointInfo:
     def db_type(self):
         """Gets the db_type of this JobEndpointInfo.
 
-        数据库类型。取值：  - oracle：Oracle。 - gaussdbv5：GaussDB分布式版。 - redis：Redis。 - rediscluster：Redis集群版。 - gaussredis: GeminiDB Redis。
+        数据库类型。取值：  - oracle：Oracle。 - gaussdbv5：GaussDB分布式版。 - redis：Redis。 - rediscluster：Redis集群版。 - gaussredis: GeminiDB Redis。 - mysql：MySQL。
 
         :return: The db_type of this JobEndpointInfo.
         :rtype: str
@@ -108,7 +108,7 @@ class JobEndpointInfo:
     def db_type(self, db_type):
         """Sets the db_type of this JobEndpointInfo.
 
-        数据库类型。取值：  - oracle：Oracle。 - gaussdbv5：GaussDB分布式版。 - redis：Redis。 - rediscluster：Redis集群版。 - gaussredis: GeminiDB Redis。
+        数据库类型。取值：  - oracle：Oracle。 - gaussdbv5：GaussDB分布式版。 - redis：Redis。 - rediscluster：Redis集群版。 - gaussredis: GeminiDB Redis。 - mysql：MySQL。
 
         :param db_type: The db_type of this JobEndpointInfo.
         :type db_type: str

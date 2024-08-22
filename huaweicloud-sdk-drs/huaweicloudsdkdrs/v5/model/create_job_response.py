@@ -18,47 +18,167 @@ class CreateJobResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'job': 'CreateJobResp'
+        'id': 'str',
+        'name': 'str',
+        'status': 'str',
+        'create_time': 'str',
+        'is_clone_job': 'str'
     }
 
     attribute_map = {
-        'job': 'job'
+        'id': 'id',
+        'name': 'name',
+        'status': 'status',
+        'create_time': 'create_time',
+        'is_clone_job': 'is_clone_job'
     }
 
-    def __init__(self, job=None):
+    def __init__(self, id=None, name=None, status=None, create_time=None, is_clone_job=None):
         """CreateJobResponse
 
         The model defined in huaweicloud sdk
 
-        :param job: 
-        :type job: :class:`huaweicloudsdkdrs.v5.CreateJobResp`
+        :param id: 任务ID。
+        :type id: str
+        :param name: 任务名称。
+        :type name: str
+        :param status: 任务状态。
+        :type status: str
+        :param create_time: 任务创建时间。
+        :type create_time: str
+        :param is_clone_job: 是否为克隆任务。
+        :type is_clone_job: str
         """
         
         super(CreateJobResponse, self).__init__()
 
-        self._job = None
+        self._id = None
+        self._name = None
+        self._status = None
+        self._create_time = None
+        self._is_clone_job = None
         self.discriminator = None
 
-        if job is not None:
-            self.job = job
+        if id is not None:
+            self.id = id
+        if name is not None:
+            self.name = name
+        if status is not None:
+            self.status = status
+        if create_time is not None:
+            self.create_time = create_time
+        if is_clone_job is not None:
+            self.is_clone_job = is_clone_job
 
     @property
-    def job(self):
-        """Gets the job of this CreateJobResponse.
+    def id(self):
+        """Gets the id of this CreateJobResponse.
 
-        :return: The job of this CreateJobResponse.
-        :rtype: :class:`huaweicloudsdkdrs.v5.CreateJobResp`
+        任务ID。
+
+        :return: The id of this CreateJobResponse.
+        :rtype: str
         """
-        return self._job
+        return self._id
 
-    @job.setter
-    def job(self, job):
-        """Sets the job of this CreateJobResponse.
+    @id.setter
+    def id(self, id):
+        """Sets the id of this CreateJobResponse.
 
-        :param job: The job of this CreateJobResponse.
-        :type job: :class:`huaweicloudsdkdrs.v5.CreateJobResp`
+        任务ID。
+
+        :param id: The id of this CreateJobResponse.
+        :type id: str
         """
-        self._job = job
+        self._id = id
+
+    @property
+    def name(self):
+        """Gets the name of this CreateJobResponse.
+
+        任务名称。
+
+        :return: The name of this CreateJobResponse.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this CreateJobResponse.
+
+        任务名称。
+
+        :param name: The name of this CreateJobResponse.
+        :type name: str
+        """
+        self._name = name
+
+    @property
+    def status(self):
+        """Gets the status of this CreateJobResponse.
+
+        任务状态。
+
+        :return: The status of this CreateJobResponse.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this CreateJobResponse.
+
+        任务状态。
+
+        :param status: The status of this CreateJobResponse.
+        :type status: str
+        """
+        self._status = status
+
+    @property
+    def create_time(self):
+        """Gets the create_time of this CreateJobResponse.
+
+        任务创建时间。
+
+        :return: The create_time of this CreateJobResponse.
+        :rtype: str
+        """
+        return self._create_time
+
+    @create_time.setter
+    def create_time(self, create_time):
+        """Sets the create_time of this CreateJobResponse.
+
+        任务创建时间。
+
+        :param create_time: The create_time of this CreateJobResponse.
+        :type create_time: str
+        """
+        self._create_time = create_time
+
+    @property
+    def is_clone_job(self):
+        """Gets the is_clone_job of this CreateJobResponse.
+
+        是否为克隆任务。
+
+        :return: The is_clone_job of this CreateJobResponse.
+        :rtype: str
+        """
+        return self._is_clone_job
+
+    @is_clone_job.setter
+    def is_clone_job(self, is_clone_job):
+        """Sets the is_clone_job of this CreateJobResponse.
+
+        是否为克隆任务。
+
+        :param is_clone_job: The is_clone_job of this CreateJobResponse.
+        :type is_clone_job: str
+        """
+        self._is_clone_job = is_clone_job
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -116,13 +116,13 @@ class ShowSimCardResponse(SdkResponse):
         :type imei: str
         :param sim_status: sim卡状态：  10.可测试  11.未激活  13.可激活  14.已停用  20.在用  30.已拆机
         :type sim_status: int
-        :param device_status: 设备状态
+        :param device_status: 设备状态：1.注册 2.重启 3.在线 4.离线 (该参数只有ESIM、VSIM返回, 实体卡返回null)
         :type device_status: int
-        :param device_model: 设备模组
+        :param device_model: 设备模组 (该参数只有ESIM、VSIM返回, 实体卡返回null)
         :type device_model: str
         :param act_date: 激活日期 例如2020-01-31T16:00:00.000Z
         :type act_date: datetime
-        :param device_status_date: 设备状态变更时间 例如2020-01-31T16:00:00.000Z
+        :param device_status_date: 设备状态变更时间 例如2020-01-31T16:00:00.000Z (该参数只有ESIM、VSIM返回, 实体卡返回null)
         :type device_status_date: datetime
         :param node_id: 设备标识
         :type node_id: str
@@ -130,9 +130,9 @@ class ShowSimCardResponse(SdkResponse):
         :type iccid: str
         :param network_type: 网络类型
         :type network_type: str
-        :param dbm: 信号强度
+        :param dbm: 信号强度 (该参数只有ESIM、VSIM返回, 实体卡返回null)
         :type dbm: str
-        :param signal_level: 信号等级:1.差  2.良  3.良 4.优（该参数只有eSIM,vSIM返回，实体卡不返回）
+        :param signal_level: 信号等级:1.差  2.良  3.良  4.优 (该参数只有ESIM、VSIM返回, 实体卡返回null)
         :type signal_level: str
         :param sim_type: sim卡类型 1.vSIM  2.eSIM  3.实体卡
         :type sim_type: int
@@ -437,7 +437,7 @@ class ShowSimCardResponse(SdkResponse):
     def device_status(self):
         """Gets the device_status of this ShowSimCardResponse.
 
-        设备状态
+        设备状态：1.注册 2.重启 3.在线 4.离线 (该参数只有ESIM、VSIM返回, 实体卡返回null)
 
         :return: The device_status of this ShowSimCardResponse.
         :rtype: int
@@ -448,7 +448,7 @@ class ShowSimCardResponse(SdkResponse):
     def device_status(self, device_status):
         """Sets the device_status of this ShowSimCardResponse.
 
-        设备状态
+        设备状态：1.注册 2.重启 3.在线 4.离线 (该参数只有ESIM、VSIM返回, 实体卡返回null)
 
         :param device_status: The device_status of this ShowSimCardResponse.
         :type device_status: int
@@ -459,7 +459,7 @@ class ShowSimCardResponse(SdkResponse):
     def device_model(self):
         """Gets the device_model of this ShowSimCardResponse.
 
-        设备模组
+        设备模组 (该参数只有ESIM、VSIM返回, 实体卡返回null)
 
         :return: The device_model of this ShowSimCardResponse.
         :rtype: str
@@ -470,7 +470,7 @@ class ShowSimCardResponse(SdkResponse):
     def device_model(self, device_model):
         """Sets the device_model of this ShowSimCardResponse.
 
-        设备模组
+        设备模组 (该参数只有ESIM、VSIM返回, 实体卡返回null)
 
         :param device_model: The device_model of this ShowSimCardResponse.
         :type device_model: str
@@ -503,7 +503,7 @@ class ShowSimCardResponse(SdkResponse):
     def device_status_date(self):
         """Gets the device_status_date of this ShowSimCardResponse.
 
-        设备状态变更时间 例如2020-01-31T16:00:00.000Z
+        设备状态变更时间 例如2020-01-31T16:00:00.000Z (该参数只有ESIM、VSIM返回, 实体卡返回null)
 
         :return: The device_status_date of this ShowSimCardResponse.
         :rtype: datetime
@@ -514,7 +514,7 @@ class ShowSimCardResponse(SdkResponse):
     def device_status_date(self, device_status_date):
         """Sets the device_status_date of this ShowSimCardResponse.
 
-        设备状态变更时间 例如2020-01-31T16:00:00.000Z
+        设备状态变更时间 例如2020-01-31T16:00:00.000Z (该参数只有ESIM、VSIM返回, 实体卡返回null)
 
         :param device_status_date: The device_status_date of this ShowSimCardResponse.
         :type device_status_date: datetime
@@ -591,7 +591,7 @@ class ShowSimCardResponse(SdkResponse):
     def dbm(self):
         """Gets the dbm of this ShowSimCardResponse.
 
-        信号强度
+        信号强度 (该参数只有ESIM、VSIM返回, 实体卡返回null)
 
         :return: The dbm of this ShowSimCardResponse.
         :rtype: str
@@ -602,7 +602,7 @@ class ShowSimCardResponse(SdkResponse):
     def dbm(self, dbm):
         """Sets the dbm of this ShowSimCardResponse.
 
-        信号强度
+        信号强度 (该参数只有ESIM、VSIM返回, 实体卡返回null)
 
         :param dbm: The dbm of this ShowSimCardResponse.
         :type dbm: str
@@ -613,7 +613,7 @@ class ShowSimCardResponse(SdkResponse):
     def signal_level(self):
         """Gets the signal_level of this ShowSimCardResponse.
 
-        信号等级:1.差  2.良  3.良 4.优（该参数只有eSIM,vSIM返回，实体卡不返回）
+        信号等级:1.差  2.良  3.良  4.优 (该参数只有ESIM、VSIM返回, 实体卡返回null)
 
         :return: The signal_level of this ShowSimCardResponse.
         :rtype: str
@@ -624,7 +624,7 @@ class ShowSimCardResponse(SdkResponse):
     def signal_level(self, signal_level):
         """Sets the signal_level of this ShowSimCardResponse.
 
-        信号等级:1.差  2.良  3.良 4.优（该参数只有eSIM,vSIM返回，实体卡不返回）
+        信号等级:1.差  2.良  3.良  4.优 (该参数只有ESIM、VSIM返回, 实体卡返回null)
 
         :param signal_level: The signal_level of this ShowSimCardResponse.
         :type signal_level: str

@@ -20,6 +20,7 @@ class EncryptDatakeyRequestBody:
         'key_id': 'str',
         'plain_text': 'str',
         'datakey_plain_length': 'str',
+        'additional_authenticated_data': 'str',
         'sequence': 'str'
     }
 
@@ -27,10 +28,11 @@ class EncryptDatakeyRequestBody:
         'key_id': 'key_id',
         'plain_text': 'plain_text',
         'datakey_plain_length': 'datakey_plain_length',
+        'additional_authenticated_data': 'additional_authenticated_data',
         'sequence': 'sequence'
     }
 
-    def __init__(self, key_id=None, plain_text=None, datakey_plain_length=None, sequence=None):
+    def __init__(self, key_id=None, plain_text=None, datakey_plain_length=None, additional_authenticated_data=None, sequence=None):
         """EncryptDatakeyRequestBody
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class EncryptDatakeyRequestBody:
         :type plain_text: str
         :param datakey_plain_length: DEK明文字节长度，取值范围为1~1024。 DEK明文字节长度，取值为“64”。
         :type datakey_plain_length: str
+        :param additional_authenticated_data: 身份验证的非敏感额外数据。任意字符串，长度不超过128字节。
+        :type additional_authenticated_data: str
         :param sequence: 请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
         :type sequence: str
         """
@@ -50,12 +54,15 @@ class EncryptDatakeyRequestBody:
         self._key_id = None
         self._plain_text = None
         self._datakey_plain_length = None
+        self._additional_authenticated_data = None
         self._sequence = None
         self.discriminator = None
 
         self.key_id = key_id
         self.plain_text = plain_text
         self.datakey_plain_length = datakey_plain_length
+        if additional_authenticated_data is not None:
+            self.additional_authenticated_data = additional_authenticated_data
         if sequence is not None:
             self.sequence = sequence
 
@@ -124,6 +131,28 @@ class EncryptDatakeyRequestBody:
         :type datakey_plain_length: str
         """
         self._datakey_plain_length = datakey_plain_length
+
+    @property
+    def additional_authenticated_data(self):
+        """Gets the additional_authenticated_data of this EncryptDatakeyRequestBody.
+
+        身份验证的非敏感额外数据。任意字符串，长度不超过128字节。
+
+        :return: The additional_authenticated_data of this EncryptDatakeyRequestBody.
+        :rtype: str
+        """
+        return self._additional_authenticated_data
+
+    @additional_authenticated_data.setter
+    def additional_authenticated_data(self, additional_authenticated_data):
+        """Sets the additional_authenticated_data of this EncryptDatakeyRequestBody.
+
+        身份验证的非敏感额外数据。任意字符串，长度不超过128字节。
+
+        :param additional_authenticated_data: The additional_authenticated_data of this EncryptDatakeyRequestBody.
+        :type additional_authenticated_data: str
+        """
+        self._additional_authenticated_data = additional_authenticated_data
 
     @property
     def sequence(self):

@@ -896,6 +896,7 @@ from huaweicloudsdkeihealth.v1.model.task_instance_spec_containers_rsp import Ta
 from huaweicloudsdkeihealth.v1.model.task_instance_spec_rsp import TaskInstanceSpecRsp
 from huaweicloudsdkeihealth.v1.model.task_instance_status_rsp import TaskInstanceStatusRsp
 from huaweicloudsdkeihealth.v1.model.task_parameter_dto import TaskParameterDto
+from huaweicloudsdkeihealth.v1.model.task_progress import TaskProgress
 from huaweicloudsdkeihealth.v1.model.task_resource_dto import TaskResourceDto
 from huaweicloudsdkeihealth.v1.model.task_runtime_dto import TaskRuntimeDto
 from huaweicloudsdkeihealth.v1.model.template_rsp import TemplateRsp

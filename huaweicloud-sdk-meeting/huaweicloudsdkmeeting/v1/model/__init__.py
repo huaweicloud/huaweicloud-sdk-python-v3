@@ -4,6 +4,9 @@ from __future__ import absolute_import
 
 # import models into model package
 from huaweicloudsdkmeeting.v1.model.active_dto import ActiveDTO
+from huaweicloudsdkmeeting.v1.model.add_app_id_request import AddAppIdRequest
+from huaweicloudsdkmeeting.v1.model.add_app_id_request_body import AddAppIdRequestBody
+from huaweicloudsdkmeeting.v1.model.add_app_id_response import AddAppIdResponse
 from huaweicloudsdkmeeting.v1.model.add_corp_admin_request import AddCorpAdminRequest
 from huaweicloudsdkmeeting.v1.model.add_corp_admin_response import AddCorpAdminResponse
 from huaweicloudsdkmeeting.v1.model.add_corp_dto import AddCorpDTO
@@ -38,6 +41,7 @@ from huaweicloudsdkmeeting.v1.model.allow_guest_unmute_request import AllowGuest
 from huaweicloudsdkmeeting.v1.model.allow_guest_unmute_response import AllowGuestUnmuteResponse
 from huaweicloudsdkmeeting.v1.model.allow_waiting_participant_request import AllowWaitingParticipantRequest
 from huaweicloudsdkmeeting.v1.model.allow_waiting_participant_response import AllowWaitingParticipantResponse
+from huaweicloudsdkmeeting.v1.model.app_id_info_dto import AppIdInfoDTO
 from huaweicloudsdkmeeting.v1.model.associate_vmr_request import AssociateVmrRequest
 from huaweicloudsdkmeeting.v1.model.associate_vmr_response import AssociateVmrResponse
 from huaweicloudsdkmeeting.v1.model.attendee import Attendee
@@ -57,6 +61,8 @@ from huaweicloudsdkmeeting.v1.model.batch_delete_users_request import BatchDelet
 from huaweicloudsdkmeeting.v1.model.batch_delete_users_response import BatchDeleteUsersResponse
 from huaweicloudsdkmeeting.v1.model.batch_hand_request import BatchHandRequest
 from huaweicloudsdkmeeting.v1.model.batch_hand_response import BatchHandResponse
+from huaweicloudsdkmeeting.v1.model.batch_search_app_id_request import BatchSearchAppIdRequest
+from huaweicloudsdkmeeting.v1.model.batch_search_app_id_response import BatchSearchAppIdResponse
 from huaweicloudsdkmeeting.v1.model.batch_show_user_details_request import BatchShowUserDetailsRequest
 from huaweicloudsdkmeeting.v1.model.batch_show_user_details_response import BatchShowUserDetailsResponse
 from huaweicloudsdkmeeting.v1.model.batch_update_devices_status_request import BatchUpdateDevicesStatusRequest
@@ -112,6 +118,8 @@ from huaweicloudsdkmeeting.v1.model.cycle_params import CycleParams
 from huaweicloudsdkmeeting.v1.model.cycle_sub_conf import CycleSubConf
 from huaweicloudsdkmeeting.v1.model.cycle_sub_conf_config_dto import CycleSubConfConfigDTO
 from huaweicloudsdkmeeting.v1.model.del_attend_info import DelAttendInfo
+from huaweicloudsdkmeeting.v1.model.delete_app_id_request import DeleteAppIdRequest
+from huaweicloudsdkmeeting.v1.model.delete_app_id_response import DeleteAppIdResponse
 from huaweicloudsdkmeeting.v1.model.delete_attendees_request import DeleteAttendeesRequest
 from huaweicloudsdkmeeting.v1.model.delete_attendees_response import DeleteAttendeesResponse
 from huaweicloudsdkmeeting.v1.model.delete_corp_request import DeleteCorpRequest
@@ -266,6 +274,8 @@ from huaweicloudsdkmeeting.v1.model.rename_participant_response import RenamePar
 from huaweicloudsdkmeeting.v1.model.res_detail_dto import ResDetailDTO
 from huaweicloudsdkmeeting.v1.model.reset_activecode_request import ResetActivecodeRequest
 from huaweicloudsdkmeeting.v1.model.reset_activecode_response import ResetActivecodeResponse
+from huaweicloudsdkmeeting.v1.model.reset_app_key_request import ResetAppKeyRequest
+from huaweicloudsdkmeeting.v1.model.reset_app_key_response import ResetAppKeyResponse
 from huaweicloudsdkmeeting.v1.model.reset_pwd_by_admin_request import ResetPwdByAdminRequest
 from huaweicloudsdkmeeting.v1.model.reset_pwd_by_admin_response import ResetPwdByAdminResponse
 from huaweicloudsdkmeeting.v1.model.reset_pwd_req_dtov1 import ResetPwdReqDTOV1
@@ -503,6 +513,9 @@ from huaweicloudsdkmeeting.v1.model.switch_mode_request import SwitchModeRequest
 from huaweicloudsdkmeeting.v1.model.switch_mode_response import SwitchModeResponse
 from huaweicloudsdkmeeting.v1.model.threshold_data import ThresholdData
 from huaweicloudsdkmeeting.v1.model.token_info import TokenInfo
+from huaweicloudsdkmeeting.v1.model.update_app_id_request import UpdateAppIdRequest
+from huaweicloudsdkmeeting.v1.model.update_app_id_request_body import UpdateAppIdRequestBody
+from huaweicloudsdkmeeting.v1.model.update_app_id_response import UpdateAppIdResponse
 from huaweicloudsdkmeeting.v1.model.update_contact_request import UpdateContactRequest
 from huaweicloudsdkmeeting.v1.model.update_contact_response import UpdateContactResponse
 from huaweicloudsdkmeeting.v1.model.update_corp_basic_info_request import UpdateCorpBasicInfoRequest

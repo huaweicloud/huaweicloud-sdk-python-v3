@@ -2,14 +2,12 @@
 
 import six
 
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ComponentEventKindObj:
-    """
-    allowed enum values
-    """
-    COMPONENTEVENT = "ComponentEvent"
+class SyncUserJdbcDriverResponse(SdkResponse):
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -20,20 +18,51 @@ class ComponentEventKindObj:
     sensitive_list = []
 
     openapi_types = {
+        'body': 'object'
     }
 
     attribute_map = {
+        'body': 'body'
     }
 
-    def __init__(self):
-        """ComponentEventKindObj
+    def __init__(self, body=None):
+        """SyncUserJdbcDriverResponse
 
         The model defined in huaweicloud sdk
 
+        :param body: 空响应体。
+        :type body: object
         """
         
-        
+        super(SyncUserJdbcDriverResponse, self).__init__()
+
+        self._body = None
         self.discriminator = None
+
+        if body is not None:
+            self.body = body
+
+    @property
+    def body(self):
+        """Gets the body of this SyncUserJdbcDriverResponse.
+
+        空响应体。
+
+        :return: The body of this SyncUserJdbcDriverResponse.
+        :rtype: object
+        """
+        return self._body
+
+    @body.setter
+    def body(self, body):
+        """Sets the body of this SyncUserJdbcDriverResponse.
+
+        空响应体。
+
+        :param body: The body of this SyncUserJdbcDriverResponse.
+        :type body: object
+        """
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -77,7 +106,7 @@ class ComponentEventKindObj:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ComponentEventKindObj):
+        if not isinstance(other, SyncUserJdbcDriverResponse):
             return False
 
         return self.__dict__ == other.__dict__

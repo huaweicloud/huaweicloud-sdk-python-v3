@@ -20,6 +20,7 @@ class DecryptDataRequestBody:
         'cipher_text': 'str',
         'encryption_algorithm': 'str',
         'key_id': 'str',
+        'additional_authenticated_data': 'str',
         'sequence': 'str'
     }
 
@@ -27,10 +28,11 @@ class DecryptDataRequestBody:
         'cipher_text': 'cipher_text',
         'encryption_algorithm': 'encryption_algorithm',
         'key_id': 'key_id',
+        'additional_authenticated_data': 'additional_authenticated_data',
         'sequence': 'sequence'
     }
 
-    def __init__(self, cipher_text=None, encryption_algorithm=None, key_id=None, sequence=None):
+    def __init__(self, cipher_text=None, encryption_algorithm=None, key_id=None, additional_authenticated_data=None, sequence=None):
         """DecryptDataRequestBody
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class DecryptDataRequestBody:
         :type encryption_algorithm: str
         :param key_id: 密钥ID，36字节，满足正则匹配“^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$”。仅当密文使用非对称密钥加密时才需要此参数。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
         :type key_id: str
+        :param additional_authenticated_data: 身份验证的非敏感额外数据。任意字符串，长度不超过128字节。
+        :type additional_authenticated_data: str
         :param sequence: 请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
         :type sequence: str
         """
@@ -50,6 +54,7 @@ class DecryptDataRequestBody:
         self._cipher_text = None
         self._encryption_algorithm = None
         self._key_id = None
+        self._additional_authenticated_data = None
         self._sequence = None
         self.discriminator = None
 
@@ -58,6 +63,8 @@ class DecryptDataRequestBody:
             self.encryption_algorithm = encryption_algorithm
         if key_id is not None:
             self.key_id = key_id
+        if additional_authenticated_data is not None:
+            self.additional_authenticated_data = additional_authenticated_data
         if sequence is not None:
             self.sequence = sequence
 
@@ -126,6 +133,28 @@ class DecryptDataRequestBody:
         :type key_id: str
         """
         self._key_id = key_id
+
+    @property
+    def additional_authenticated_data(self):
+        """Gets the additional_authenticated_data of this DecryptDataRequestBody.
+
+        身份验证的非敏感额外数据。任意字符串，长度不超过128字节。
+
+        :return: The additional_authenticated_data of this DecryptDataRequestBody.
+        :rtype: str
+        """
+        return self._additional_authenticated_data
+
+    @additional_authenticated_data.setter
+    def additional_authenticated_data(self, additional_authenticated_data):
+        """Sets the additional_authenticated_data of this DecryptDataRequestBody.
+
+        身份验证的非敏感额外数据。任意字符串，长度不超过128字节。
+
+        :param additional_authenticated_data: The additional_authenticated_data of this DecryptDataRequestBody.
+        :type additional_authenticated_data: str
+        """
+        self._additional_authenticated_data = additional_authenticated_data
 
     @property
     def sequence(self):

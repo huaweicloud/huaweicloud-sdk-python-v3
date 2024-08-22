@@ -55,10 +55,8 @@ class UpdateComponentRequestBody:
 
         self.api_version = api_version
         self.kind = kind
-        if metadata is not None:
-            self.metadata = metadata
-        if spec is not None:
-            self.spec = spec
+        self.metadata = metadata
+        self.spec = spec
 
     @property
     def api_version(self):

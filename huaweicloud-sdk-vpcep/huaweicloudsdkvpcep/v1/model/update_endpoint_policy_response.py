@@ -37,7 +37,7 @@ class UpdateEndpointPolicyResponse(SdkResponse):
         'routetables': 'list[str]',
         'description': 'str',
         'policy_statement': 'list[PolicyStatement]',
-        'policy_document': 'str',
+        'policy_document': 'object',
         'endpoint_pool_id': 'str',
         'public_border_group': 'str'
     }
@@ -111,7 +111,7 @@ class UpdateEndpointPolicyResponse(SdkResponse):
         :param policy_statement: Gateway类型终端节点策略信息，仅限OBS、SFS的终端节点服务的enable_policy值为true时支持该参数。
         :type policy_statement: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]
         :param policy_document: 终端节点策略信息，仅当终端节点服务的enable_policy值为true时支持该参数，默认值为完全访问权限。（OBS、SFS的终端节点服务暂不支持该参数）
-        :type policy_document: str
+        :type policy_document: object
         :param endpoint_pool_id: 待废弃，实例相关联的集群ID
         :type endpoint_pool_id: str
         :param public_border_group: 终端节点关联的Public Border Group信息，只有当终端节点和边缘Pool相关联时才会返回该字段
@@ -614,7 +614,7 @@ class UpdateEndpointPolicyResponse(SdkResponse):
         终端节点策略信息，仅当终端节点服务的enable_policy值为true时支持该参数，默认值为完全访问权限。（OBS、SFS的终端节点服务暂不支持该参数）
 
         :return: The policy_document of this UpdateEndpointPolicyResponse.
-        :rtype: str
+        :rtype: object
         """
         return self._policy_document
 
@@ -625,7 +625,7 @@ class UpdateEndpointPolicyResponse(SdkResponse):
         终端节点策略信息，仅当终端节点服务的enable_policy值为true时支持该参数，默认值为完全访问权限。（OBS、SFS的终端节点服务暂不支持该参数）
 
         :param policy_document: The policy_document of this UpdateEndpointPolicyResponse.
-        :type policy_document: str
+        :type policy_document: object
         """
         self._policy_document = policy_document
 

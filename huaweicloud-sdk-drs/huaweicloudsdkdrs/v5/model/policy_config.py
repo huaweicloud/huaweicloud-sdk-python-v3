@@ -25,7 +25,8 @@ class PolicyConfig:
         'support_ddl_info': 'str',
         'sync_type_policy': 'str',
         'increment_read_mode': 'str',
-        'dml_types': 'str'
+        'dml_types': 'str',
+        'is_create_table_with_index': 'bool'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class PolicyConfig:
         'support_ddl_info': 'support_ddl_info',
         'sync_type_policy': 'sync_type_policy',
         'increment_read_mode': 'increment_read_mode',
-        'dml_types': 'dml_types'
+        'dml_types': 'dml_types',
+        'is_create_table_with_index': 'is_create_table_with_index'
     }
 
-    def __init__(self, filter_ddl_policy=None, conflict_policy=None, index_trans=None, ddl_trans=None, data_sync_topology_type=None, support_ddl_info=None, sync_type_policy=None, increment_read_mode=None, dml_types=None):
+    def __init__(self, filter_ddl_policy=None, conflict_policy=None, index_trans=None, ddl_trans=None, data_sync_topology_type=None, support_ddl_info=None, sync_type_policy=None, increment_read_mode=None, dml_types=None, is_create_table_with_index=None):
         """PolicyConfig
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class PolicyConfig:
         :type increment_read_mode: str
         :param dml_types: DML同步类型。
         :type dml_types: str
+        :param is_create_table_with_index: 索引与表结构是否同时建立。
+        :type is_create_table_with_index: bool
         """
         
         
@@ -76,6 +80,7 @@ class PolicyConfig:
         self._sync_type_policy = None
         self._increment_read_mode = None
         self._dml_types = None
+        self._is_create_table_with_index = None
         self.discriminator = None
 
         if filter_ddl_policy is not None:
@@ -96,6 +101,8 @@ class PolicyConfig:
             self.increment_read_mode = increment_read_mode
         if dml_types is not None:
             self.dml_types = dml_types
+        if is_create_table_with_index is not None:
+            self.is_create_table_with_index = is_create_table_with_index
 
     @property
     def filter_ddl_policy(self):
@@ -294,6 +301,28 @@ class PolicyConfig:
         :type dml_types: str
         """
         self._dml_types = dml_types
+
+    @property
+    def is_create_table_with_index(self):
+        """Gets the is_create_table_with_index of this PolicyConfig.
+
+        索引与表结构是否同时建立。
+
+        :return: The is_create_table_with_index of this PolicyConfig.
+        :rtype: bool
+        """
+        return self._is_create_table_with_index
+
+    @is_create_table_with_index.setter
+    def is_create_table_with_index(self, is_create_table_with_index):
+        """Sets the is_create_table_with_index of this PolicyConfig.
+
+        索引与表结构是否同时建立。
+
+        :param is_create_table_with_index: The is_create_table_with_index of this PolicyConfig.
+        :type is_create_table_with_index: bool
+        """
+        self._is_create_table_with_index = is_create_table_with_index
 
     def to_dict(self):
         """Returns the model properties as a dict"""

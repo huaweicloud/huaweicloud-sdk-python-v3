@@ -20,6 +20,7 @@ class DecryptDatakeyRequestBody:
         'key_id': 'str',
         'cipher_text': 'str',
         'datakey_cipher_length': 'str',
+        'additional_authenticated_data': 'str',
         'sequence': 'str'
     }
 
@@ -27,10 +28,11 @@ class DecryptDatakeyRequestBody:
         'key_id': 'key_id',
         'cipher_text': 'cipher_text',
         'datakey_cipher_length': 'datakey_cipher_length',
+        'additional_authenticated_data': 'additional_authenticated_data',
         'sequence': 'sequence'
     }
 
-    def __init__(self, key_id=None, cipher_text=None, datakey_cipher_length=None, sequence=None):
+    def __init__(self, key_id=None, cipher_text=None, datakey_cipher_length=None, additional_authenticated_data=None, sequence=None):
         """DecryptDatakeyRequestBody
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class DecryptDatakeyRequestBody:
         :type cipher_text: str
         :param datakey_cipher_length: 密钥字节长度，取值范围为1~1024。 密钥字节长度，取值为“64”。
         :type datakey_cipher_length: str
+        :param additional_authenticated_data: 身份验证的非敏感额外数据。任意字符串，长度不超过128字节。
+        :type additional_authenticated_data: str
         :param sequence: 请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
         :type sequence: str
         """
@@ -50,12 +54,15 @@ class DecryptDatakeyRequestBody:
         self._key_id = None
         self._cipher_text = None
         self._datakey_cipher_length = None
+        self._additional_authenticated_data = None
         self._sequence = None
         self.discriminator = None
 
         self.key_id = key_id
         self.cipher_text = cipher_text
         self.datakey_cipher_length = datakey_cipher_length
+        if additional_authenticated_data is not None:
+            self.additional_authenticated_data = additional_authenticated_data
         if sequence is not None:
             self.sequence = sequence
 
@@ -124,6 +131,28 @@ class DecryptDatakeyRequestBody:
         :type datakey_cipher_length: str
         """
         self._datakey_cipher_length = datakey_cipher_length
+
+    @property
+    def additional_authenticated_data(self):
+        """Gets the additional_authenticated_data of this DecryptDatakeyRequestBody.
+
+        身份验证的非敏感额外数据。任意字符串，长度不超过128字节。
+
+        :return: The additional_authenticated_data of this DecryptDatakeyRequestBody.
+        :rtype: str
+        """
+        return self._additional_authenticated_data
+
+    @additional_authenticated_data.setter
+    def additional_authenticated_data(self, additional_authenticated_data):
+        """Sets the additional_authenticated_data of this DecryptDatakeyRequestBody.
+
+        身份验证的非敏感额外数据。任意字符串，长度不超过128字节。
+
+        :param additional_authenticated_data: The additional_authenticated_data of this DecryptDatakeyRequestBody.
+        :type additional_authenticated_data: str
+        """
+        self._additional_authenticated_data = additional_authenticated_data
 
     @property
     def sequence(self):

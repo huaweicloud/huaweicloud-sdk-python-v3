@@ -19,16 +19,18 @@ class OpenGaussHaOption:
     openapi_types = {
         'mode': 'str',
         'consistency': 'str',
-        'replication_mode': 'str'
+        'replication_mode': 'str',
+        'instance_mode': 'str'
     }
 
     attribute_map = {
         'mode': 'mode',
         'consistency': 'consistency',
-        'replication_mode': 'replication_mode'
+        'replication_mode': 'replication_mode',
+        'instance_mode': 'instance_mode'
     }
 
-    def __init__(self, mode=None, consistency=None, replication_mode=None):
+    def __init__(self, mode=None, consistency=None, replication_mode=None, instance_mode=None):
         """OpenGaussHaOption
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class OpenGaussHaOption:
         :type consistency: str
         :param replication_mode: 备机同步参数。  取值：  GaussDB为“sync\&quot;  说明： - “sync”为同步模式。
         :type replication_mode: str
+        :param instance_mode: 指定创建实例的产品类型，创建企业版实例时传空值或者enterprise，创建基础版实例时需要指定instance_mode的值为basic，创建生态版实例时需要指定instance_mode的值为ecology。
+        :type instance_mode: str
         """
         
         
@@ -46,11 +50,14 @@ class OpenGaussHaOption:
         self._mode = None
         self._consistency = None
         self._replication_mode = None
+        self._instance_mode = None
         self.discriminator = None
 
         self.mode = mode
         self.consistency = consistency
         self.replication_mode = replication_mode
+        if instance_mode is not None:
+            self.instance_mode = instance_mode
 
     @property
     def mode(self):
@@ -117,6 +124,28 @@ class OpenGaussHaOption:
         :type replication_mode: str
         """
         self._replication_mode = replication_mode
+
+    @property
+    def instance_mode(self):
+        """Gets the instance_mode of this OpenGaussHaOption.
+
+        指定创建实例的产品类型，创建企业版实例时传空值或者enterprise，创建基础版实例时需要指定instance_mode的值为basic，创建生态版实例时需要指定instance_mode的值为ecology。
+
+        :return: The instance_mode of this OpenGaussHaOption.
+        :rtype: str
+        """
+        return self._instance_mode
+
+    @instance_mode.setter
+    def instance_mode(self, instance_mode):
+        """Sets the instance_mode of this OpenGaussHaOption.
+
+        指定创建实例的产品类型，创建企业版实例时传空值或者enterprise，创建基础版实例时需要指定instance_mode的值为basic，创建生态版实例时需要指定instance_mode的值为ecology。
+
+        :param instance_mode: The instance_mode of this OpenGaussHaOption.
+        :type instance_mode: str
+        """
+        self._instance_mode = instance_mode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

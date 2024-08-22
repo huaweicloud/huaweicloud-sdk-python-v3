@@ -1,3 +1,246 @@
+# 3.1.111 2024-08-22
+
+### HuaweiCloud SDK CAE
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the API `ListComponentEvents`
+  - **ListNoticeRules**
+    - changes of response param
+      - `+ items.notification.template`
+  - **CreateNoticeRule**
+    - changes of request param
+      - `+ spec.notification.template`
+    - changes of response param
+      - `+ spec.notification.template`
+  - **ShowNoticeRule**
+    - changes of response param
+      - `+ spec.notification.template`
+  - **UpdateNoticeRule**
+    - changes of response param
+      - `+ spec.notification.template`
+
+### HuaweiCloud SDK CCE
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the APIs `SyncNode`, `BatchSyncNodes`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DRS
+
+- _API Version_
+  - V5
+- _Features_
+  - Support the APIs `UploadUserJdbcDriver`, `SyncUserJdbcDriver`, `ListUserJdbcDrivers`, `DeleteUserJdbcDriver`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateJob**
+    - changes of request param
+      - `+ job.base_info.engine_type: enum value [mysql-to-mysql]`
+      - `+ job.source_endpoint.db_type: enum value [mysql]`
+    - changes of response param
+      - `+ is_clone_job`
+      - `+ create_time`
+      - `+ name`
+      - `+ id`
+      - `+ status`
+      - `- job`
+  - **BatchCreateJobsAsync**
+    - changes of request param
+      - `+ jobs.policy_config.is_create_table_with_index`
+      - `+ jobs.base_info.engine_type: enum value [mysql-to-mysql]`
+      - `+ jobs.source_endpoint.db_type: enum value [mysql]`
+  - **ListAsyncJobDetail**
+    - changes of response param
+      - `+ jobs.status: enum value [CREATING,CREATE_FAILED,CONFIGURATION,STARTJOBING,WAITING_FOR_START,START_JOB_FAILED,PAUSING,FULL_TRANSFER_STARTED,FULL_TRANSFER_FAILED,FULL_TRANSFER_COMPLETE,INCRE_TRANSFER_STARTED,INCRE_TRANSFER_FAILED,RELEASE_RESOURCE_STARTED,RELEASE_RESOURCE_FAILED,RELEASE_RESOURCE_COMPLETE,REBUILD_NODE_STARTED,REBUILD_NODE_FAILED,CHANGE_JOB_STARTED,CHANGE_JOB_FAILED,DELETED,CHILD_TRANSFER_STARTING,CHILD_TRANSFER_STARTED,CHILD_TRANSFER_COMPLETE,CHILD_TRANSFER_FAILED,RELEASE_CHILD_TRANSFER_STARTED,RELEASE_CHILD_TRANSFER_COMPLETE,NODE_UPGRADE_START,NODE_UPGRADE_COMPLETE,NODE_UPGRADE_FAILED]`
+      - `+ jobs.policy_config.is_create_table_with_index`
+      - `+ jobs.base_info.engine_type: enum value [mysql-to-mysql]`
+      - `+ jobs.source_endpoint.db_type: enum value [mysql]`
+  - **UpdateBatchAsyncJobs**
+    - changes of request param
+      - `+ jobs.params.policy_config.is_create_table_with_index`
+      - `+ jobs.params.base_info.engine_type: enum value [mysql-to-mysql]`
+      - `+ jobs.params.source_endpoint.db_type: enum value [mysql]`
+  - **ShowJobDetail**
+    - changes of response param
+      - `+ job.status: enum value [CREATING,CREATE_FAILED,CONFIGURATION,STARTJOBING,WAITING_FOR_START,START_JOB_FAILED,PAUSING,FULL_TRANSFER_STARTED,FULL_TRANSFER_FAILED,FULL_TRANSFER_COMPLETE,INCRE_TRANSFER_STARTED,INCRE_TRANSFER_FAILED,RELEASE_RESOURCE_STARTED,RELEASE_RESOURCE_FAILED,RELEASE_RESOURCE_COMPLETE,REBUILD_NODE_STARTED,REBUILD_NODE_FAILED,CHANGE_JOB_STARTED,CHANGE_JOB_FAILED,DELETED,CHILD_TRANSFER_STARTING,CHILD_TRANSFER_STARTED,CHILD_TRANSFER_COMPLETE,CHILD_TRANSFER_FAILED,RELEASE_CHILD_TRANSFER_STARTED,RELEASE_CHILD_TRANSFER_COMPLETE,NODE_UPGRADE_START,NODE_UPGRADE_COMPLETE,NODE_UPGRADE_FAILED]`
+      - `+ job.policy_config.is_create_table_with_index`
+      - `+ job.base_info.engine_type: enum value [mysql-to-mysql]`
+      - `+ job.source_endpoint.db_type: enum value [mysql]`
+  - **UpdateJob**
+    - changes of request param
+      - `+ job.params.policy_config.is_create_table_with_index`
+      - `+ job.params.base_info.engine_type: enum value [mysql-to-mysql]`
+      - `+ job.params.source_endpoint.db_type: enum value [mysql]`
+  - **ExecuteJobAction**
+    - changes of request param
+      - `+ job.action_params.is_only_init_task`
+      - `+ job.action_params.endpoints.db_type: enum value [mysql]`
+  - **BatchExecuteJobActions**
+    - changes of request param
+      - `+ jobs.action_params.is_only_init_task`
+      - `+ jobs.action_params.endpoints.db_type: enum value [mysql]`
+
+### HuaweiCloud SDK eiHealth
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowMolBatchDownloadTask**
+    - changes of response param
+      - `+ progress`
+  - **ListBaseModel**
+    - changes of response param
+      - `- models.creator`
+  - **CreateFepJob**
+    - changes of request param
+      - `+ add_membrane`
+  - **ShowFepJob**
+    - changes of response param
+      - `+ add_membrane`
+      - `+ job_result.sub_tasks_duration`
+  - **ShowAdmetJob**
+    - changes of response param
+      - `+ job_result.sub_tasks_duration`
+  - **ShowDockingJob**
+    - changes of response param
+      - `+ job_result.sub_tasks_duration`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateDbInstance**
+    - changes of request param
+      - `+ ha.instance_mode`
+
+### HuaweiCloud SDK KMS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateDatakey**
+    - changes of request param
+      - `+ additional_authenticated_data`
+  - **CreateDatakeyWithoutPlaintext**
+    - changes of request param
+      - `+ additional_authenticated_data`
+  - **EncryptDatakey**
+    - changes of request param
+      - `+ additional_authenticated_data`
+  - **DecryptDatakey**
+    - changes of request param
+      - `+ additional_authenticated_data`
+  - **EncryptData**
+    - changes of request param
+      - `+ additional_authenticated_data`
+  - **DecryptData**
+    - changes of request param
+      - `+ additional_authenticated_data`
+
+### HuaweiCloud SDK Meeting
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `AddAppId`
+    - `BatchSearchAppId`
+    - `UpdateAppId`
+    - `DeleteAppId`
+    - `ResetAppKey`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK OMS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowTask**
+    - changes of response param
+      - `+ task_priority`
+  - **CreateTask**
+    - changes of request param
+      - `+ task_priority`
+  - **ListTasks**
+    - changes of response param
+      - `+ task_priority`
+      - `+ tasks.task_priority`
+
+### HuaweiCloud SDK VPCEP
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListEndpointInfoDetails**
+    - changes of response param
+      - `* policy_document: string -> object`
+  - **UpdateEndpointWhite**
+    - changes of response param
+      - `* policy_document: string -> object`
+  - **UpdateEndpointPolicy**
+    - changes of request param
+      - `* policy_document: string -> object`
+    - changes of response param
+      - `* policy_document: string -> object`
+  - **DeleteEndpointPolicy**
+    - changes of response param
+      - `* policy_document: string -> object`
+  - **CreateEndpoint**
+    - changes of request param
+      - `* policy_document: string -> object`
+    - changes of response param
+      - `* policy_document: string -> object`
+  - **ListEndpoints**
+    - changes of response param
+      - `* endpoints.policy_document: string -> object`
+
+### HuaweiCloud SDK Workspace
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the API `ListDesktopsConnectStatus`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.1.110 2024-08-15
 
 ### HuaweiCloud SDK AOS

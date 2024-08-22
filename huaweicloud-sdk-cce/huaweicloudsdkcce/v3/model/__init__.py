@@ -52,6 +52,8 @@ from huaweicloudsdkcce.v3.model.batch_delete_autopilot_cluster_tags_response imp
 from huaweicloudsdkcce.v3.model.batch_delete_cluster_tags_request import BatchDeleteClusterTagsRequest
 from huaweicloudsdkcce.v3.model.batch_delete_cluster_tags_request_body import BatchDeleteClusterTagsRequestBody
 from huaweicloudsdkcce.v3.model.batch_delete_cluster_tags_response import BatchDeleteClusterTagsResponse
+from huaweicloudsdkcce.v3.model.batch_sync_nodes_request import BatchSyncNodesRequest
+from huaweicloudsdkcce.v3.model.batch_sync_nodes_response import BatchSyncNodesResponse
 from huaweicloudsdkcce.v3.model.capacity_reservation_specification import CapacityReservationSpecification
 from huaweicloudsdkcce.v3.model.cert_duration import CertDuration
 from huaweicloudsdkcce.v3.model.chart_resp import ChartResp
@@ -467,6 +469,10 @@ from huaweicloudsdkcce.v3.model.support_versions import SupportVersions
 from huaweicloudsdkcce.v3.model.sync_node_pool_request import SyncNodePoolRequest
 from huaweicloudsdkcce.v3.model.sync_node_pool_resp import SyncNodePoolResp
 from huaweicloudsdkcce.v3.model.sync_node_pool_response import SyncNodePoolResponse
+from huaweicloudsdkcce.v3.model.sync_node_request import SyncNodeRequest
+from huaweicloudsdkcce.v3.model.sync_node_resp import SyncNodeResp
+from huaweicloudsdkcce.v3.model.sync_node_response import SyncNodeResponse
+from huaweicloudsdkcce.v3.model.sync_nodes_resp import SyncNodesResp
 from huaweicloudsdkcce.v3.model.tag_filter import TagFilter
 from huaweicloudsdkcce.v3.model.taint import Taint
 from huaweicloudsdkcce.v3.model.task_status import TaskStatus

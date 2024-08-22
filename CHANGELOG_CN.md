@@ -1,3 +1,246 @@
+# 3.1.111 2024-08-22
+
+### HuaweiCloud SDK CAE
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`ListComponentEvents`
+  - **ListNoticeRules**
+    - 响应参数变更
+      - `+ items.notification.template`
+  - **CreateNoticeRule**
+    - 请求参数变更
+      - `+ spec.notification.template`
+    - 响应参数变更
+      - `+ spec.notification.template`
+  - **ShowNoticeRule**
+    - 响应参数变更
+      - `+ spec.notification.template`
+  - **UpdateNoticeRule**
+    - 响应参数变更
+      - `+ spec.notification.template`
+
+### HuaweiCloud SDK CCE
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`SyncNode`、`BatchSyncNodes`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DRS
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 支持接口`UploadUserJdbcDriver`、`SyncUserJdbcDriver`、`ListUserJdbcDrivers`、`DeleteUserJdbcDriver`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateJob**
+    - 请求参数变更
+      - `+ job.base_info.engine_type: enum value [mysql-to-mysql]`
+      - `+ job.source_endpoint.db_type: enum value [mysql]`
+    - 响应参数变更
+      - `+ is_clone_job`
+      - `+ create_time`
+      - `+ name`
+      - `+ id`
+      - `+ status`
+      - `- job`
+  - **BatchCreateJobsAsync**
+    - 请求参数变更
+      - `+ jobs.policy_config.is_create_table_with_index`
+      - `+ jobs.base_info.engine_type: enum value [mysql-to-mysql]`
+      - `+ jobs.source_endpoint.db_type: enum value [mysql]`
+  - **ListAsyncJobDetail**
+    - 响应参数变更
+      - `+ jobs.status: enum value [CREATING,CREATE_FAILED,CONFIGURATION,STARTJOBING,WAITING_FOR_START,START_JOB_FAILED,PAUSING,FULL_TRANSFER_STARTED,FULL_TRANSFER_FAILED,FULL_TRANSFER_COMPLETE,INCRE_TRANSFER_STARTED,INCRE_TRANSFER_FAILED,RELEASE_RESOURCE_STARTED,RELEASE_RESOURCE_FAILED,RELEASE_RESOURCE_COMPLETE,REBUILD_NODE_STARTED,REBUILD_NODE_FAILED,CHANGE_JOB_STARTED,CHANGE_JOB_FAILED,DELETED,CHILD_TRANSFER_STARTING,CHILD_TRANSFER_STARTED,CHILD_TRANSFER_COMPLETE,CHILD_TRANSFER_FAILED,RELEASE_CHILD_TRANSFER_STARTED,RELEASE_CHILD_TRANSFER_COMPLETE,NODE_UPGRADE_START,NODE_UPGRADE_COMPLETE,NODE_UPGRADE_FAILED]`
+      - `+ jobs.policy_config.is_create_table_with_index`
+      - `+ jobs.base_info.engine_type: enum value [mysql-to-mysql]`
+      - `+ jobs.source_endpoint.db_type: enum value [mysql]`
+  - **UpdateBatchAsyncJobs**
+    - 请求参数变更
+      - `+ jobs.params.policy_config.is_create_table_with_index`
+      - `+ jobs.params.base_info.engine_type: enum value [mysql-to-mysql]`
+      - `+ jobs.params.source_endpoint.db_type: enum value [mysql]`
+  - **ShowJobDetail**
+    - 响应参数变更
+      - `+ job.status: enum value [CREATING,CREATE_FAILED,CONFIGURATION,STARTJOBING,WAITING_FOR_START,START_JOB_FAILED,PAUSING,FULL_TRANSFER_STARTED,FULL_TRANSFER_FAILED,FULL_TRANSFER_COMPLETE,INCRE_TRANSFER_STARTED,INCRE_TRANSFER_FAILED,RELEASE_RESOURCE_STARTED,RELEASE_RESOURCE_FAILED,RELEASE_RESOURCE_COMPLETE,REBUILD_NODE_STARTED,REBUILD_NODE_FAILED,CHANGE_JOB_STARTED,CHANGE_JOB_FAILED,DELETED,CHILD_TRANSFER_STARTING,CHILD_TRANSFER_STARTED,CHILD_TRANSFER_COMPLETE,CHILD_TRANSFER_FAILED,RELEASE_CHILD_TRANSFER_STARTED,RELEASE_CHILD_TRANSFER_COMPLETE,NODE_UPGRADE_START,NODE_UPGRADE_COMPLETE,NODE_UPGRADE_FAILED]`
+      - `+ job.policy_config.is_create_table_with_index`
+      - `+ job.base_info.engine_type: enum value [mysql-to-mysql]`
+      - `+ job.source_endpoint.db_type: enum value [mysql]`
+  - **UpdateJob**
+    - 请求参数变更
+      - `+ job.params.policy_config.is_create_table_with_index`
+      - `+ job.params.base_info.engine_type: enum value [mysql-to-mysql]`
+      - `+ job.params.source_endpoint.db_type: enum value [mysql]`
+  - **ExecuteJobAction**
+    - 请求参数变更
+      - `+ job.action_params.is_only_init_task`
+      - `+ job.action_params.endpoints.db_type: enum value [mysql]`
+  - **BatchExecuteJobActions**
+    - 请求参数变更
+      - `+ jobs.action_params.is_only_init_task`
+      - `+ jobs.action_params.endpoints.db_type: enum value [mysql]`
+
+### HuaweiCloud SDK eiHealth
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowMolBatchDownloadTask**
+    - 响应参数变更
+      - `+ progress`
+  - **ListBaseModel**
+    - 响应参数变更
+      - `- models.creator`
+  - **CreateFepJob**
+    - 请求参数变更
+      - `+ add_membrane`
+  - **ShowFepJob**
+    - 响应参数变更
+      - `+ add_membrane`
+      - `+ job_result.sub_tasks_duration`
+  - **ShowAdmetJob**
+    - 响应参数变更
+      - `+ job_result.sub_tasks_duration`
+  - **ShowDockingJob**
+    - 响应参数变更
+      - `+ job_result.sub_tasks_duration`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateDbInstance**
+    - 请求参数变更
+      - `+ ha.instance_mode`
+
+### HuaweiCloud SDK KMS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateDatakey**
+    - 请求参数变更
+      - `+ additional_authenticated_data`
+  - **CreateDatakeyWithoutPlaintext**
+    - 请求参数变更
+      - `+ additional_authenticated_data`
+  - **EncryptDatakey**
+    - 请求参数变更
+      - `+ additional_authenticated_data`
+  - **DecryptDatakey**
+    - 请求参数变更
+      - `+ additional_authenticated_data`
+  - **EncryptData**
+    - 请求参数变更
+      - `+ additional_authenticated_data`
+  - **DecryptData**
+    - 请求参数变更
+      - `+ additional_authenticated_data`
+
+### HuaweiCloud SDK Meeting
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `AddAppId`
+    - `BatchSearchAppId`
+    - `UpdateAppId`
+    - `DeleteAppId`
+    - `ResetAppKey`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK OMS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowTask**
+    - 响应参数变更
+      - `+ task_priority`
+  - **CreateTask**
+    - 请求参数变更
+      - `+ task_priority`
+  - **ListTasks**
+    - 响应参数变更
+      - `+ task_priority`
+      - `+ tasks.task_priority`
+
+### HuaweiCloud SDK VPCEP
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListEndpointInfoDetails**
+    - 响应参数变更
+      - `* policy_document: string -> object`
+  - **UpdateEndpointWhite**
+    - 响应参数变更
+      - `* policy_document: string -> object`
+  - **UpdateEndpointPolicy**
+    - 请求参数变更
+      - `* policy_document: string -> object`
+    - 响应参数变更
+      - `* policy_document: string -> object`
+  - **DeleteEndpointPolicy**
+    - 响应参数变更
+      - `* policy_document: string -> object`
+  - **CreateEndpoint**
+    - 请求参数变更
+      - `* policy_document: string -> object`
+    - 响应参数变更
+      - `* policy_document: string -> object`
+  - **ListEndpoints**
+    - 响应参数变更
+      - `* endpoints.policy_document: string -> object`
+
+### HuaweiCloud SDK Workspace
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`ListDesktopsConnectStatus`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
 # 3.1.110 2024-08-15
 
 ### HuaweiCloud SDK AOS
