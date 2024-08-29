@@ -18,7 +18,7 @@ class ShowPublicipPoolRequest:
 
     openapi_types = {
         'publicip_pool_id': 'str',
-        'fields': 'str'
+        'fields': 'list[str]'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class ShowPublicipPoolRequest:
         :param publicip_pool_id: 公网IP池ID唯一标识
         :type publicip_pool_id: str
         :param fields: 显示，形式为\&quot;fields&#x3D;id&amp;fields&#x3D;name&amp;...\&quot;  支持字段：id/name/size/used/project_id/status/billing_info/created_at/updated_at/type/shared/is_common/description/tags/enterprise_project_id/allow_share_bandwidth_types/public_border_group
-        :type fields: str
+        :type fields: list[str]
         """
         
         
@@ -76,7 +76,7 @@ class ShowPublicipPoolRequest:
         显示，形式为\"fields=id&fields=name&...\"  支持字段：id/name/size/used/project_id/status/billing_info/created_at/updated_at/type/shared/is_common/description/tags/enterprise_project_id/allow_share_bandwidth_types/public_border_group
 
         :return: The fields of this ShowPublicipPoolRequest.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._fields
 
@@ -87,7 +87,7 @@ class ShowPublicipPoolRequest:
         显示，形式为\"fields=id&fields=name&...\"  支持字段：id/name/size/used/project_id/status/billing_info/created_at/updated_at/type/shared/is_common/description/tags/enterprise_project_id/allow_share_bandwidth_types/public_border_group
 
         :param fields: The fields of this ShowPublicipPoolRequest.
-        :type fields: str
+        :type fields: list[str]
         """
         self._fields = fields
 

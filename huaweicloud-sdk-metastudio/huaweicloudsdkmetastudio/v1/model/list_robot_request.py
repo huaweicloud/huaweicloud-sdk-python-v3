@@ -20,17 +20,19 @@ class ListRobotRequest:
         'x_app_user_id': 'str',
         'offset': 'int',
         'limit': 'int',
-        'room_id': 'str'
+        'room_id': 'str',
+        'robot_type': 'str'
     }
 
     attribute_map = {
         'x_app_user_id': 'X-App-UserId',
         'offset': 'offset',
         'limit': 'limit',
-        'room_id': 'room_id'
+        'room_id': 'room_id',
+        'robot_type': 'robot_type'
     }
 
-    def __init__(self, x_app_user_id=None, offset=None, limit=None, room_id=None):
+    def __init__(self, x_app_user_id=None, offset=None, limit=None, room_id=None, robot_type=None):
         """ListRobotRequest
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class ListRobotRequest:
         :type limit: int
         :param room_id: 智能交互对话房间ID。
         :type room_id: str
+        :param robot_type: 交互对接类型  * LIVE:直播交互  * CHAT:智能交互
+        :type robot_type: str
         """
         
         
@@ -51,6 +55,7 @@ class ListRobotRequest:
         self._offset = None
         self._limit = None
         self._room_id = None
+        self._robot_type = None
         self.discriminator = None
 
         if x_app_user_id is not None:
@@ -61,6 +66,8 @@ class ListRobotRequest:
             self.limit = limit
         if room_id is not None:
             self.room_id = room_id
+        if robot_type is not None:
+            self.robot_type = robot_type
 
     @property
     def x_app_user_id(self):
@@ -149,6 +156,28 @@ class ListRobotRequest:
         :type room_id: str
         """
         self._room_id = room_id
+
+    @property
+    def robot_type(self):
+        """Gets the robot_type of this ListRobotRequest.
+
+        交互对接类型  * LIVE:直播交互  * CHAT:智能交互
+
+        :return: The robot_type of this ListRobotRequest.
+        :rtype: str
+        """
+        return self._robot_type
+
+    @robot_type.setter
+    def robot_type(self, robot_type):
+        """Sets the robot_type of this ListRobotRequest.
+
+        交互对接类型  * LIVE:直播交互  * CHAT:智能交互
+
+        :param robot_type: The robot_type of this ListRobotRequest.
+        :type robot_type: str
+        """
+        self._robot_type = robot_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

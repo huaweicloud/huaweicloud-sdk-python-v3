@@ -26,6 +26,8 @@
 
 您可以使用 pip 安装 SDK 依赖包，也可以使用源码安装 SDK 依赖包。
 
+您可以通过 [SDK中心](https://console.huaweicloud.com/apiexplorer/#/sdkcenter?language=Python) 或 [PYPI](https://pypi.org/search/?q=huaweicloudsdk) 查询SDK版本信息。
+
 ### 独立云服务包
 
 以使用虚拟私有云 VPC SDK 为例，您需要安装 `huaweicloudsdkvpc`：
@@ -191,7 +193,7 @@ if __name__ == "__main__":
 ## 在线调试
 
 [API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/overview)
-提供API检索及平台调试，支持全量快速检索、可视化调试、帮助文档查看、在线咨询。
+提供API检索、SDK示例及平台调试，支持全量快速检索、可视化调试、帮助文档查看、在线咨询。
 
 ## 变更日志
 

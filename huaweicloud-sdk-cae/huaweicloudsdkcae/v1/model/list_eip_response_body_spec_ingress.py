@@ -18,21 +18,25 @@ class ListEipResponseBodySpecIngress:
 
     openapi_types = {
         'bandwidth_size': 'int',
+        'enabled': 'bool',
         'ip_list': 'list[str]'
     }
 
     attribute_map = {
         'bandwidth_size': 'bandwidth_size',
+        'enabled': 'enabled',
         'ip_list': 'ip_list'
     }
 
-    def __init__(self, bandwidth_size=None, ip_list=None):
+    def __init__(self, bandwidth_size=None, enabled=None, ip_list=None):
         """ListEipResponseBodySpecIngress
 
         The model defined in huaweicloud sdk
 
         :param bandwidth_size: 入网IP带宽
         :type bandwidth_size: int
+        :param enabled: 是否关闭入网IP。
+        :type enabled: bool
         :param ip_list: 入网IP列表
         :type ip_list: list[str]
         """
@@ -40,11 +44,14 @@ class ListEipResponseBodySpecIngress:
         
 
         self._bandwidth_size = None
+        self._enabled = None
         self._ip_list = None
         self.discriminator = None
 
         if bandwidth_size is not None:
             self.bandwidth_size = bandwidth_size
+        if enabled is not None:
+            self.enabled = enabled
         if ip_list is not None:
             self.ip_list = ip_list
 
@@ -69,6 +76,28 @@ class ListEipResponseBodySpecIngress:
         :type bandwidth_size: int
         """
         self._bandwidth_size = bandwidth_size
+
+    @property
+    def enabled(self):
+        """Gets the enabled of this ListEipResponseBodySpecIngress.
+
+        是否关闭入网IP。
+
+        :return: The enabled of this ListEipResponseBodySpecIngress.
+        :rtype: bool
+        """
+        return self._enabled
+
+    @enabled.setter
+    def enabled(self, enabled):
+        """Sets the enabled of this ListEipResponseBodySpecIngress.
+
+        是否关闭入网IP。
+
+        :param enabled: The enabled of this ListEipResponseBodySpecIngress.
+        :type enabled: bool
+        """
+        self._enabled = enabled
 
     @property
     def ip_list(self):

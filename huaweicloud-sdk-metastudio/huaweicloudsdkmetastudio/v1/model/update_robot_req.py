@@ -20,6 +20,7 @@ class UpdateRobotReq:
         'name': 'str',
         'app_type': 'int',
         'room_id': 'str',
+        'robot_type': 'RobotTypeEnum',
         'language': 'LanguageEnum',
         'tail_silence_time': 'int',
         'enable_question_audit': 'bool',
@@ -34,6 +35,7 @@ class UpdateRobotReq:
         'name': 'name',
         'app_type': 'app_type',
         'room_id': 'room_id',
+        'robot_type': 'robot_type',
         'language': 'language',
         'tail_silence_time': 'tail_silence_time',
         'enable_question_audit': 'enable_question_audit',
@@ -44,7 +46,7 @@ class UpdateRobotReq:
         'mobvoi_config': 'mobvoi_config'
     }
 
-    def __init__(self, name=None, app_type=None, room_id=None, language=None, tail_silence_time=None, enable_question_audit=None, huawei_ei_cbs=None, iflytek_aiui_config=None, iflytek_spark=None, third_party_model_config=None, mobvoi_config=None):
+    def __init__(self, name=None, app_type=None, room_id=None, robot_type=None, language=None, tail_silence_time=None, enable_question_audit=None, huawei_ei_cbs=None, iflytek_aiui_config=None, iflytek_spark=None, third_party_model_config=None, mobvoi_config=None):
         """UpdateRobotReq
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class UpdateRobotReq:
         :type app_type: int
         :param room_id: 智能交互对话房间ID。
         :type room_id: str
+        :param robot_type: 
+        :type robot_type: :class:`huaweicloudsdkmetastudio.v1.RobotTypeEnum`
         :param language: 
         :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
         :param tail_silence_time: 语音识别后端点静音时长默认500ms
@@ -78,6 +82,7 @@ class UpdateRobotReq:
         self._name = None
         self._app_type = None
         self._room_id = None
+        self._robot_type = None
         self._language = None
         self._tail_silence_time = None
         self._enable_question_audit = None
@@ -94,6 +99,8 @@ class UpdateRobotReq:
             self.app_type = app_type
         if room_id is not None:
             self.room_id = room_id
+        if robot_type is not None:
+            self.robot_type = robot_type
         if language is not None:
             self.language = language
         if tail_silence_time is not None:
@@ -176,6 +183,24 @@ class UpdateRobotReq:
         :type room_id: str
         """
         self._room_id = room_id
+
+    @property
+    def robot_type(self):
+        """Gets the robot_type of this UpdateRobotReq.
+
+        :return: The robot_type of this UpdateRobotReq.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.RobotTypeEnum`
+        """
+        return self._robot_type
+
+    @robot_type.setter
+    def robot_type(self, robot_type):
+        """Sets the robot_type of this UpdateRobotReq.
+
+        :param robot_type: The robot_type of this UpdateRobotReq.
+        :type robot_type: :class:`huaweicloudsdkmetastudio.v1.RobotTypeEnum`
+        """
+        self._robot_type = robot_type
 
     @property
     def language(self):

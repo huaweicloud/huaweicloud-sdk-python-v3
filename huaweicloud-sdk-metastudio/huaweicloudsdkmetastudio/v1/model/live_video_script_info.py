@@ -53,7 +53,7 @@ class LiveVideoScriptInfo:
         :type script_description: str
         :param dh_id: 数字人ID。对应形象和音色组合。
         :type dh_id: str
-        :param model_asset_id: 数字人模型资产ID。
+        :param model_asset_id: 数字人模型资产ID，可以从资产库中查询。
         :type model_asset_id: str
         :param voice_config: 
         :type voice_config: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
@@ -187,7 +187,7 @@ class LiveVideoScriptInfo:
     def model_asset_id(self):
         """Gets the model_asset_id of this LiveVideoScriptInfo.
 
-        数字人模型资产ID。
+        数字人模型资产ID，可以从资产库中查询。
 
         :return: The model_asset_id of this LiveVideoScriptInfo.
         :rtype: str
@@ -198,7 +198,7 @@ class LiveVideoScriptInfo:
     def model_asset_id(self, model_asset_id):
         """Sets the model_asset_id of this LiveVideoScriptInfo.
 
-        数字人模型资产ID。
+        数字人模型资产ID，可以从资产库中查询。
 
         :param model_asset_id: The model_asset_id of this LiveVideoScriptInfo.
         :type model_asset_id: str

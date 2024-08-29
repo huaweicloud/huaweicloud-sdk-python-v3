@@ -31,7 +31,7 @@ class InstallInstanceEipRequest:
 
         The model defined in huaweicloud sdk
 
-        :param server_id: 云堡垒机实例ID，使用UUID格式表示。  [实例ID获取方式](https://support.huaweicloud.com/usermanual-cbh/cbh_02_1003.html)。
+        :param server_id: 云堡垒机实例ID，使用UUID格式表示。  获取方法详见用户指南里面的实例\&quot;查看实例详情\&quot;
         :type server_id: str
         :param body: Body of the InstallInstanceEipRequest
         :type body: :class:`huaweicloudsdkcbh.v2.OperateEipRequestBody`
@@ -51,7 +51,7 @@ class InstallInstanceEipRequest:
     def server_id(self):
         """Gets the server_id of this InstallInstanceEipRequest.
 
-        云堡垒机实例ID，使用UUID格式表示。  [实例ID获取方式](https://support.huaweicloud.com/usermanual-cbh/cbh_02_1003.html)。
+        云堡垒机实例ID，使用UUID格式表示。  获取方法详见用户指南里面的实例\"查看实例详情\"
 
         :return: The server_id of this InstallInstanceEipRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class InstallInstanceEipRequest:
     def server_id(self, server_id):
         """Sets the server_id of this InstallInstanceEipRequest.
 
-        云堡垒机实例ID，使用UUID格式表示。  [实例ID获取方式](https://support.huaweicloud.com/usermanual-cbh/cbh_02_1003.html)。
+        云堡垒机实例ID，使用UUID格式表示。  获取方法详见用户指南里面的实例\"查看实例详情\"
 
         :param server_id: The server_id of this InstallInstanceEipRequest.
         :type server_id: str

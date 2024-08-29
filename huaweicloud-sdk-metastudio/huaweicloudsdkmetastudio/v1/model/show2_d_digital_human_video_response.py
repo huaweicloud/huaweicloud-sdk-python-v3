@@ -92,7 +92,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
         :type video_making_type: str
         :param human_image: 人物照片，需要Base64编码。 &gt; * 该参数已废弃，照片数字人视频制作使用“创建照片分身数字人视频制作任务”接口。
         :type human_image: str
-        :param model_asset_id: 分身数字人模型资产ID。
+        :param model_asset_id: 分身数字人模型资产ID，可以从资产库中查询。
         :type model_asset_id: str
         :param voice_config: 
         :type voice_config: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
@@ -448,7 +448,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
     def model_asset_id(self):
         """Gets the model_asset_id of this Show2DDigitalHumanVideoResponse.
 
-        分身数字人模型资产ID。
+        分身数字人模型资产ID，可以从资产库中查询。
 
         :return: The model_asset_id of this Show2DDigitalHumanVideoResponse.
         :rtype: str
@@ -459,7 +459,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
     def model_asset_id(self, model_asset_id):
         """Sets the model_asset_id of this Show2DDigitalHumanVideoResponse.
 
-        分身数字人模型资产ID。
+        分身数字人模型资产ID，可以从资产库中查询。
 
         :param model_asset_id: The model_asset_id of this Show2DDigitalHumanVideoResponse.
         :type model_asset_id: str

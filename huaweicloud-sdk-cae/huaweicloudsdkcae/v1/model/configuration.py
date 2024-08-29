@@ -21,7 +21,8 @@ class Configuration:
         'operated_at': 'datetime',
         'operation_id': 'str',
         'type': 'str',
-        'is_activated': 'bool'
+        'is_activated': 'bool',
+        'is_using': 'bool'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class Configuration:
         'operated_at': 'operated_at',
         'operation_id': 'operation_id',
         'type': 'type',
-        'is_activated': 'is_activated'
+        'is_activated': 'is_activated',
+        'is_using': 'is_using'
     }
 
-    def __init__(self, data=None, operated_at=None, operation_id=None, type=None, is_activated=None):
+    def __init__(self, data=None, operated_at=None, operation_id=None, type=None, is_activated=None, is_using=None):
         """Configuration
 
         The model defined in huaweicloud sdk
@@ -45,8 +47,10 @@ class Configuration:
         :type operation_id: str
         :param type: 组件配置类型。
         :type type: str
-        :param is_activated: 配置是否生效。
+        :param is_activated: 配置是否生效过。
         :type is_activated: bool
+        :param is_using: 配置是否正在使用。
+        :type is_using: bool
         """
         
         
@@ -56,6 +60,7 @@ class Configuration:
         self._operation_id = None
         self._type = None
         self._is_activated = None
+        self._is_using = None
         self.discriminator = None
 
         if data is not None:
@@ -68,6 +73,8 @@ class Configuration:
             self.type = type
         if is_activated is not None:
             self.is_activated = is_activated
+        if is_using is not None:
+            self.is_using = is_using
 
     @property
     def data(self):
@@ -157,7 +164,7 @@ class Configuration:
     def is_activated(self):
         """Gets the is_activated of this Configuration.
 
-        配置是否生效。
+        配置是否生效过。
 
         :return: The is_activated of this Configuration.
         :rtype: bool
@@ -168,12 +175,34 @@ class Configuration:
     def is_activated(self, is_activated):
         """Sets the is_activated of this Configuration.
 
-        配置是否生效。
+        配置是否生效过。
 
         :param is_activated: The is_activated of this Configuration.
         :type is_activated: bool
         """
         self._is_activated = is_activated
+
+    @property
+    def is_using(self):
+        """Gets the is_using of this Configuration.
+
+        配置是否正在使用。
+
+        :return: The is_using of this Configuration.
+        :rtype: bool
+        """
+        return self._is_using
+
+    @is_using.setter
+    def is_using(self, is_using):
+        """Sets the is_using of this Configuration.
+
+        配置是否正在使用。
+
+        :param is_using: The is_using of this Configuration.
+        :type is_using: bool
+        """
+        self._is_using = is_using
 
     def to_dict(self):
         """Returns the model properties as a dict"""

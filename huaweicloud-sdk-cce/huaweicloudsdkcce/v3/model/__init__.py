@@ -279,6 +279,8 @@ from huaweicloudsdkcce.v3.model.node_risks import NodeRisks
 from huaweicloudsdkcce.v3.model.node_selector import NodeSelector
 from huaweicloudsdkcce.v3.model.node_spec import NodeSpec
 from huaweicloudsdkcce.v3.model.node_spec_update import NodeSpecUpdate
+from huaweicloudsdkcce.v3.model.node_spec_update_node_nic_spec_update import NodeSpecUpdateNodeNicSpecUpdate
+from huaweicloudsdkcce.v3.model.node_spec_update_node_nic_spec_update_primary_nic import NodeSpecUpdateNodeNicSpecUpdatePrimaryNic
 from huaweicloudsdkcce.v3.model.node_stage_status import NodeStageStatus
 from huaweicloudsdkcce.v3.model.node_status import NodeStatus
 from huaweicloudsdkcce.v3.model.node_template import NodeTemplate

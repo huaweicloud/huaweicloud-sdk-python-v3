@@ -33,7 +33,8 @@ class SmartLiveRoomBaseInfo:
         'update_time': 'str',
         'last_job_start_time': 'str',
         'last_job_end_time': 'str',
-        'last_job_status': 'str'
+        'last_job_status': 'str',
+        'priv_data': 'str'
     }
 
     attribute_map = {
@@ -53,10 +54,11 @@ class SmartLiveRoomBaseInfo:
         'update_time': 'update_time',
         'last_job_start_time': 'last_job_start_time',
         'last_job_end_time': 'last_job_end_time',
-        'last_job_status': 'last_job_status'
+        'last_job_status': 'last_job_status',
+        'priv_data': 'priv_data'
     }
 
-    def __init__(self, room_id=None, project_id=None, room_name=None, room_type=None, room_state=None, view_mode=None, error_info=None, shared_config=None, room_description=None, cover_url=None, thumbnail=None, model_infos=None, create_time=None, update_time=None, last_job_start_time=None, last_job_end_time=None, last_job_status=None):
+    def __init__(self, room_id=None, project_id=None, room_name=None, room_type=None, room_state=None, view_mode=None, error_info=None, shared_config=None, room_description=None, cover_url=None, thumbnail=None, model_infos=None, create_time=None, update_time=None, last_job_start_time=None, last_job_end_time=None, last_job_status=None, priv_data=None):
         """SmartLiveRoomBaseInfo
 
         The model defined in huaweicloud sdk
@@ -95,6 +97,8 @@ class SmartLiveRoomBaseInfo:
         :type last_job_end_time: str
         :param last_job_status: 当前直播状态 - WAITING：任务等待执行 - PROCESSING：任务执行中 - SUCCEED：任务处理成功 - FAILED：任务处理时变 - CANCELED：任务取消 - BLOCKED：任务被冻结
         :type last_job_status: str
+        :param priv_data: 私有数据，用户填写，原样带回。
+        :type priv_data: str
         """
         
         
@@ -116,6 +120,7 @@ class SmartLiveRoomBaseInfo:
         self._last_job_start_time = None
         self._last_job_end_time = None
         self._last_job_status = None
+        self._priv_data = None
         self.discriminator = None
 
         if room_id is not None:
@@ -152,6 +157,8 @@ class SmartLiveRoomBaseInfo:
             self.last_job_end_time = last_job_end_time
         if last_job_status is not None:
             self.last_job_status = last_job_status
+        if priv_data is not None:
+            self.priv_data = priv_data
 
     @property
     def room_id(self):
@@ -518,6 +525,28 @@ class SmartLiveRoomBaseInfo:
         :type last_job_status: str
         """
         self._last_job_status = last_job_status
+
+    @property
+    def priv_data(self):
+        """Gets the priv_data of this SmartLiveRoomBaseInfo.
+
+        私有数据，用户填写，原样带回。
+
+        :return: The priv_data of this SmartLiveRoomBaseInfo.
+        :rtype: str
+        """
+        return self._priv_data
+
+    @priv_data.setter
+    def priv_data(self, priv_data):
+        """Sets the priv_data of this SmartLiveRoomBaseInfo.
+
+        私有数据，用户填写，原样带回。
+
+        :param priv_data: The priv_data of this SmartLiveRoomBaseInfo.
+        :type priv_data: str
+        """
+        self._priv_data = priv_data
 
     def to_dict(self):
         """Returns the model properties as a dict"""

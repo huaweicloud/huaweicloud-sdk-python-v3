@@ -17,7 +17,7 @@ class ListCommonPoolsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'fields': 'str',
+        'fields': 'list[str]',
         'limit': 'int',
         'offset': 'int',
         'name': 'str',
@@ -37,8 +37,8 @@ class ListCommonPoolsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param fields: 显示，形式为\&quot;fields&#x3D;id&amp;fields&#x3D;name&amp;...\&quot;  支持字段：id/name/status/type/used/allow_share_bandwidth_types/public_border_group
-        :type fields: str
+        :param fields: 显示，形式为\&quot;fields&#x3D;id&amp;fields&#x3D;name&amp;...\&quot;  支持字段：id/name/status/type/used/allow_share_bandwidth_types/public_border_group/description
+        :type fields: list[str]
         :param limit: 每页返回的个数取值范围：0~[2000]，其中2000为局点差异项，具体取值由局点决定
         :type limit: int
         :param offset: 分页查询起始的资源序号
@@ -73,10 +73,10 @@ class ListCommonPoolsRequest:
     def fields(self):
         """Gets the fields of this ListCommonPoolsRequest.
 
-        显示，形式为\"fields=id&fields=name&...\"  支持字段：id/name/status/type/used/allow_share_bandwidth_types/public_border_group
+        显示，形式为\"fields=id&fields=name&...\"  支持字段：id/name/status/type/used/allow_share_bandwidth_types/public_border_group/description
 
         :return: The fields of this ListCommonPoolsRequest.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._fields
 
@@ -84,10 +84,10 @@ class ListCommonPoolsRequest:
     def fields(self, fields):
         """Sets the fields of this ListCommonPoolsRequest.
 
-        显示，形式为\"fields=id&fields=name&...\"  支持字段：id/name/status/type/used/allow_share_bandwidth_types/public_border_group
+        显示，形式为\"fields=id&fields=name&...\"  支持字段：id/name/status/type/used/allow_share_bandwidth_types/public_border_group/description
 
         :param fields: The fields of this ListCommonPoolsRequest.
-        :type fields: str
+        :type fields: list[str]
         """
         self._fields = fields
 

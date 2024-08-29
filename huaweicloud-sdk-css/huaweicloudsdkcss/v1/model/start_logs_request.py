@@ -18,21 +18,25 @@ class StartLogsRequest:
 
     openapi_types = {
         'cluster_id': 'str',
+        'action': 'str',
         'body': 'StartLogsReq'
     }
 
     attribute_map = {
         'cluster_id': 'cluster_id',
+        'action': 'action',
         'body': 'body'
     }
 
-    def __init__(self, cluster_id=None, body=None):
+    def __init__(self, cluster_id=None, action=None, body=None):
         """StartLogsRequest
 
         The model defined in huaweicloud sdk
 
         :param cluster_id: 指定开启日志的集群ID。
         :type cluster_id: str
+        :param action: action支持base_log_collect和real_time_log_collect两种，base就是之前历史的能力，real_time为实时采集能力，默认不传就是base，兼容之前的逻辑
+        :type action: str
         :param body: Body of the StartLogsRequest
         :type body: :class:`huaweicloudsdkcss.v1.StartLogsReq`
         """
@@ -40,10 +44,13 @@ class StartLogsRequest:
         
 
         self._cluster_id = None
+        self._action = None
         self._body = None
         self.discriminator = None
 
         self.cluster_id = cluster_id
+        if action is not None:
+            self.action = action
         if body is not None:
             self.body = body
 
@@ -68,6 +75,28 @@ class StartLogsRequest:
         :type cluster_id: str
         """
         self._cluster_id = cluster_id
+
+    @property
+    def action(self):
+        """Gets the action of this StartLogsRequest.
+
+        action支持base_log_collect和real_time_log_collect两种，base就是之前历史的能力，real_time为实时采集能力，默认不传就是base，兼容之前的逻辑
+
+        :return: The action of this StartLogsRequest.
+        :rtype: str
+        """
+        return self._action
+
+    @action.setter
+    def action(self, action):
+        """Sets the action of this StartLogsRequest.
+
+        action支持base_log_collect和real_time_log_collect两种，base就是之前历史的能力，real_time为实时采集能力，默认不传就是base，兼容之前的逻辑
+
+        :param action: The action of this StartLogsRequest.
+        :type action: str
+        """
+        self._action = action
 
     @property
     def body(self):

@@ -22,7 +22,10 @@ class HumanModel2DAssetMeta:
         'support_live': 'bool',
         'model_version': 'str',
         'model_resolution': 'str',
-        'device_names': 'list[str]'
+        'device_names': 'list[str]',
+        'is_with_action_library': 'bool',
+        'action_tag_map': 'list[ActionTagInfo]',
+        'is_flexus': 'bool'
     }
 
     attribute_map = {
@@ -31,10 +34,13 @@ class HumanModel2DAssetMeta:
         'support_live': 'support_live',
         'model_version': 'model_version',
         'model_resolution': 'model_resolution',
-        'device_names': 'device_names'
+        'device_names': 'device_names',
+        'is_with_action_library': 'is_with_action_library',
+        'action_tag_map': 'action_tag_map',
+        'is_flexus': 'is_flexus'
     }
 
-    def __init__(self, is_action_editable=None, is_real_background=None, support_live=None, model_version=None, model_resolution=None, device_names=None):
+    def __init__(self, is_action_editable=None, is_real_background=None, support_live=None, model_version=None, model_resolution=None, device_names=None, is_with_action_library=None, action_tag_map=None, is_flexus=None):
         """HumanModel2DAssetMeta
 
         The model defined in huaweicloud sdk
@@ -51,6 +57,12 @@ class HumanModel2DAssetMeta:
         :type model_resolution: str
         :param device_names: 已执行编译任务
         :type device_names: list[str]
+        :param is_with_action_library: 分身数字人是否带原子动作库。 &gt; * 带原子动作库的分身数字人可做动作编排。
+        :type is_with_action_library: bool
+        :param action_tag_map: 动作标签映射。
+        :type action_tag_map: list[:class:`huaweicloudsdkmetastudio.v1.ActionTagInfo`]
+        :param is_flexus: 是否是Flexus版本分身数字人。
+        :type is_flexus: bool
         """
         
         
@@ -61,6 +73,9 @@ class HumanModel2DAssetMeta:
         self._model_version = None
         self._model_resolution = None
         self._device_names = None
+        self._is_with_action_library = None
+        self._action_tag_map = None
+        self._is_flexus = None
         self.discriminator = None
 
         if is_action_editable is not None:
@@ -75,6 +90,12 @@ class HumanModel2DAssetMeta:
             self.model_resolution = model_resolution
         if device_names is not None:
             self.device_names = device_names
+        if is_with_action_library is not None:
+            self.is_with_action_library = is_with_action_library
+        if action_tag_map is not None:
+            self.action_tag_map = action_tag_map
+        if is_flexus is not None:
+            self.is_flexus = is_flexus
 
     @property
     def is_action_editable(self):
@@ -207,6 +228,72 @@ class HumanModel2DAssetMeta:
         :type device_names: list[str]
         """
         self._device_names = device_names
+
+    @property
+    def is_with_action_library(self):
+        """Gets the is_with_action_library of this HumanModel2DAssetMeta.
+
+        分身数字人是否带原子动作库。 > * 带原子动作库的分身数字人可做动作编排。
+
+        :return: The is_with_action_library of this HumanModel2DAssetMeta.
+        :rtype: bool
+        """
+        return self._is_with_action_library
+
+    @is_with_action_library.setter
+    def is_with_action_library(self, is_with_action_library):
+        """Sets the is_with_action_library of this HumanModel2DAssetMeta.
+
+        分身数字人是否带原子动作库。 > * 带原子动作库的分身数字人可做动作编排。
+
+        :param is_with_action_library: The is_with_action_library of this HumanModel2DAssetMeta.
+        :type is_with_action_library: bool
+        """
+        self._is_with_action_library = is_with_action_library
+
+    @property
+    def action_tag_map(self):
+        """Gets the action_tag_map of this HumanModel2DAssetMeta.
+
+        动作标签映射。
+
+        :return: The action_tag_map of this HumanModel2DAssetMeta.
+        :rtype: list[:class:`huaweicloudsdkmetastudio.v1.ActionTagInfo`]
+        """
+        return self._action_tag_map
+
+    @action_tag_map.setter
+    def action_tag_map(self, action_tag_map):
+        """Sets the action_tag_map of this HumanModel2DAssetMeta.
+
+        动作标签映射。
+
+        :param action_tag_map: The action_tag_map of this HumanModel2DAssetMeta.
+        :type action_tag_map: list[:class:`huaweicloudsdkmetastudio.v1.ActionTagInfo`]
+        """
+        self._action_tag_map = action_tag_map
+
+    @property
+    def is_flexus(self):
+        """Gets the is_flexus of this HumanModel2DAssetMeta.
+
+        是否是Flexus版本分身数字人。
+
+        :return: The is_flexus of this HumanModel2DAssetMeta.
+        :rtype: bool
+        """
+        return self._is_flexus
+
+    @is_flexus.setter
+    def is_flexus(self, is_flexus):
+        """Sets the is_flexus of this HumanModel2DAssetMeta.
+
+        是否是Flexus版本分身数字人。
+
+        :param is_flexus: The is_flexus of this HumanModel2DAssetMeta.
+        :type is_flexus: bool
+        """
+        self._is_flexus = is_flexus
 
     def to_dict(self):
         """Returns the model properties as a dict"""

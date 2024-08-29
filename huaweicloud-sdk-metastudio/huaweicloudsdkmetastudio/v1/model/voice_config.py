@@ -35,7 +35,7 @@ class VoiceConfig:
 
         The model defined in huaweicloud sdk
 
-        :param voice_asset_id: 音色资产ID。
+        :param voice_asset_id: 音色资产ID，可以从资产库中查询。
         :type voice_asset_id: str
         :param speed: 语速。  默认值100，最小值50，最大值200。 &gt; * 当取值为“100”时，表示一个成年人正常的语速，约为250字/分钟。 &gt; * 50表示0.5倍语速，100表示正常语速，200表示2倍语速。
         :type speed: int
@@ -65,7 +65,7 @@ class VoiceConfig:
     def voice_asset_id(self):
         """Gets the voice_asset_id of this VoiceConfig.
 
-        音色资产ID。
+        音色资产ID，可以从资产库中查询。
 
         :return: The voice_asset_id of this VoiceConfig.
         :rtype: str
@@ -76,7 +76,7 @@ class VoiceConfig:
     def voice_asset_id(self, voice_asset_id):
         """Sets the voice_asset_id of this VoiceConfig.
 
-        音色资产ID。
+        音色资产ID，可以从资产库中查询。
 
         :param voice_asset_id: The voice_asset_id of this VoiceConfig.
         :type voice_asset_id: str

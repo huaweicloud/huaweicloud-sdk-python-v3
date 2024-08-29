@@ -62,6 +62,8 @@ class ElbRegion:
                         "https://elb.af-north-1.myhuaweicloud.com")
     CN_EAST_5 = Region("cn-east-5",
                         "https://elb.cn-east-5.myhuaweicloud.com")
+    RU_NORTHWEST_2 = Region("ru-northwest-2",
+                        "https://elb.ru-northwest-2.myhuaweicloud.com")
 
     static_fields = {
         "eu-west-101": EU_WEST_101,
@@ -92,6 +94,7 @@ class ElbRegion:
         "cn-east-4": CN_EAST_4,
         "af-north-1": AF_NORTH_1,
         "cn-east-5": CN_EAST_5,
+        "ru-northwest-2": RU_NORTHWEST_2,
     }
 
     @classmethod

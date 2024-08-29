@@ -37,7 +37,7 @@ class ChangeInstanceRequestBody:
 
         :param server_id: 
         :type server_id: object
-        :param new_resource_spec_code: 待变更云堡垒机规格ID，例如： - cbh.basic.50 - cbh.enhance.50  已上线的规格请参见《云堡垒机产品介绍》的[服务版本差异](https://support.huaweicloud.com/productdesc-cbh/cbh_01_0010.html)章节。
+        :param new_resource_spec_code: 待变更云堡垒机规格ID，例如： - cbh.basic.50 - cbh.enhance.50  可参考接口\&quot;查询云堡垒机规格信息\&quot;获取
         :type new_resource_spec_code: str
         :param attach_disk_size: 附加磁盘大小。单位TB  &gt; 说明： 附加磁盘和规格自带磁盘大小不能超过300TB。
         :type attach_disk_size: int
@@ -83,7 +83,7 @@ class ChangeInstanceRequestBody:
     def new_resource_spec_code(self):
         """Gets the new_resource_spec_code of this ChangeInstanceRequestBody.
 
-        待变更云堡垒机规格ID，例如： - cbh.basic.50 - cbh.enhance.50  已上线的规格请参见《云堡垒机产品介绍》的[服务版本差异](https://support.huaweicloud.com/productdesc-cbh/cbh_01_0010.html)章节。
+        待变更云堡垒机规格ID，例如： - cbh.basic.50 - cbh.enhance.50  可参考接口\"查询云堡垒机规格信息\"获取
 
         :return: The new_resource_spec_code of this ChangeInstanceRequestBody.
         :rtype: str
@@ -94,7 +94,7 @@ class ChangeInstanceRequestBody:
     def new_resource_spec_code(self, new_resource_spec_code):
         """Sets the new_resource_spec_code of this ChangeInstanceRequestBody.
 
-        待变更云堡垒机规格ID，例如： - cbh.basic.50 - cbh.enhance.50  已上线的规格请参见《云堡垒机产品介绍》的[服务版本差异](https://support.huaweicloud.com/productdesc-cbh/cbh_01_0010.html)章节。
+        待变更云堡垒机规格ID，例如： - cbh.basic.50 - cbh.enhance.50  可参考接口\"查询云堡垒机规格信息\"获取
 
         :param new_resource_spec_code: The new_resource_spec_code of this ChangeInstanceRequestBody.
         :type new_resource_spec_code: str

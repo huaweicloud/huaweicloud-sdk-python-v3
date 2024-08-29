@@ -22,7 +22,8 @@ class NodeSpecUpdate:
         'user_tags': 'list[UserTag]',
         'initialized_conditions': 'list[str]',
         'login': 'Login',
-        'server_enterprise_project_id': 'str'
+        'server_enterprise_project_id': 'str',
+        'node_nic_spec_update': 'NodeSpecUpdateNodeNicSpecUpdate'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class NodeSpecUpdate:
         'user_tags': 'userTags',
         'initialized_conditions': 'initializedConditions',
         'login': 'login',
-        'server_enterprise_project_id': 'serverEnterpriseProjectID'
+        'server_enterprise_project_id': 'serverEnterpriseProjectID',
+        'node_nic_spec_update': 'nodeNicSpecUpdate'
     }
 
-    def __init__(self, taints=None, k8s_tags=None, user_tags=None, initialized_conditions=None, login=None, server_enterprise_project_id=None):
+    def __init__(self, taints=None, k8s_tags=None, user_tags=None, initialized_conditions=None, login=None, server_enterprise_project_id=None, node_nic_spec_update=None):
         """NodeSpecUpdate
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class NodeSpecUpdate:
         :type login: :class:`huaweicloudsdkcce.v3.Login`
         :param server_enterprise_project_id: 服务器企业项目ID。CCE服务不实现EPS相关特性，该字段仅用于同步服务器企业项目ID。 创建节点/节点池场景：可指定已存在企业项目，当取值为空时，该字段继承集群企业项目属性。 更新节点池场景：配置修改后仅会对新增节点的服务器生效，存量节点需前往EPS界面迁移。 如果更新时不指定值，不会更新该字段。 当该字段为空时，返回集群企业项目。
         :type server_enterprise_project_id: str
+        :param node_nic_spec_update: 
+        :type node_nic_spec_update: :class:`huaweicloudsdkcce.v3.NodeSpecUpdateNodeNicSpecUpdate`
         """
         
         
@@ -61,6 +65,7 @@ class NodeSpecUpdate:
         self._initialized_conditions = None
         self._login = None
         self._server_enterprise_project_id = None
+        self._node_nic_spec_update = None
         self.discriminator = None
 
         self.taints = taints
@@ -72,6 +77,8 @@ class NodeSpecUpdate:
             self.login = login
         if server_enterprise_project_id is not None:
             self.server_enterprise_project_id = server_enterprise_project_id
+        if node_nic_spec_update is not None:
+            self.node_nic_spec_update = node_nic_spec_update
 
     @property
     def taints(self):
@@ -200,6 +207,24 @@ class NodeSpecUpdate:
         :type server_enterprise_project_id: str
         """
         self._server_enterprise_project_id = server_enterprise_project_id
+
+    @property
+    def node_nic_spec_update(self):
+        """Gets the node_nic_spec_update of this NodeSpecUpdate.
+
+        :return: The node_nic_spec_update of this NodeSpecUpdate.
+        :rtype: :class:`huaweicloudsdkcce.v3.NodeSpecUpdateNodeNicSpecUpdate`
+        """
+        return self._node_nic_spec_update
+
+    @node_nic_spec_update.setter
+    def node_nic_spec_update(self, node_nic_spec_update):
+        """Sets the node_nic_spec_update of this NodeSpecUpdate.
+
+        :param node_nic_spec_update: The node_nic_spec_update of this NodeSpecUpdate.
+        :type node_nic_spec_update: :class:`huaweicloudsdkcce.v3.NodeSpecUpdateNodeNicSpecUpdate`
+        """
+        self._node_nic_spec_update = node_nic_spec_update
 
     def to_dict(self):
         """Returns the model properties as a dict"""

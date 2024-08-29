@@ -34,7 +34,7 @@ class ListDigitalHumanBusinessCardResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: 数字人名片制作任总数。
+        :param count: 数字人名片制作任务总数。
         :type count: int
         :param jobs: 数字人名片制作任务列表。
         :type jobs: list[:class:`huaweicloudsdkmetastudio.v1.DigitalHumanBusinessCardJobInfo`]
@@ -60,7 +60,7 @@ class ListDigitalHumanBusinessCardResponse(SdkResponse):
     def count(self):
         """Gets the count of this ListDigitalHumanBusinessCardResponse.
 
-        数字人名片制作任总数。
+        数字人名片制作任务总数。
 
         :return: The count of this ListDigitalHumanBusinessCardResponse.
         :rtype: int
@@ -71,7 +71,7 @@ class ListDigitalHumanBusinessCardResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this ListDigitalHumanBusinessCardResponse.
 
-        数字人名片制作任总数。
+        数字人名片制作任务总数。
 
         :param count: The count of this ListDigitalHumanBusinessCardResponse.
         :type count: int

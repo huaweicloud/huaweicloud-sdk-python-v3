@@ -51,7 +51,7 @@ class ListStylesRequest:
         :type limit: int
         :param state: 任务状态，默认所有状态。  可多个状态查询，使用英文逗号分隔。  如state&#x3D;CREATING,PUBLISHED
         :type state: str
-        :param sort_key: 排序字段，目前只支持create_time。
+        :param sort_key: 排序字段，支持的排序方式有： - 按创建时间排序：create_time - 按更新时间排序：update_time - 按资产排序：asset_order
         :type sort_key: str
         :param sort_dir: 排序方式。 * asc：升序 * desc：降序  默认asc升序。
         :type sort_dir: str
@@ -182,7 +182,7 @@ class ListStylesRequest:
     def sort_key(self):
         """Gets the sort_key of this ListStylesRequest.
 
-        排序字段，目前只支持create_time。
+        排序字段，支持的排序方式有： - 按创建时间排序：create_time - 按更新时间排序：update_time - 按资产排序：asset_order
 
         :return: The sort_key of this ListStylesRequest.
         :rtype: str
@@ -193,7 +193,7 @@ class ListStylesRequest:
     def sort_key(self, sort_key):
         """Sets the sort_key of this ListStylesRequest.
 
-        排序字段，目前只支持create_time。
+        排序字段，支持的排序方式有： - 按创建时间排序：create_time - 按更新时间排序：update_time - 按资产排序：asset_order
 
         :param sort_key: The sort_key of this ListStylesRequest.
         :type sort_key: str

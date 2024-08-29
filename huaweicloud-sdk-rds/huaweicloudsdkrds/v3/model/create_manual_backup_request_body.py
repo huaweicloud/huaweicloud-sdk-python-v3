@@ -20,17 +20,19 @@ class CreateManualBackupRequestBody:
         'instance_id': 'str',
         'name': 'str',
         'description': 'str',
-        'databases': 'list[BackupDatabase]'
+        'databases': 'list[BackupDatabase]',
+        'backup_database_individually': 'bool'
     }
 
     attribute_map = {
         'instance_id': 'instance_id',
         'name': 'name',
         'description': 'description',
-        'databases': 'databases'
+        'databases': 'databases',
+        'backup_database_individually': 'backup_database_individually'
     }
 
-    def __init__(self, instance_id=None, name=None, description=None, databases=None):
+    def __init__(self, instance_id=None, name=None, description=None, databases=None, backup_database_individually=None):
         """CreateManualBackupRequestBody
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class CreateManualBackupRequestBody:
         :type description: str
         :param databases: 只支持Microsoft SQL Server，局部备份的用户自建数据库名列表，当有此参数时以局部备份为准。
         :type databases: list[:class:`huaweicloudsdkrds.v3.BackupDatabase`]
+        :param backup_database_individually: 是否分库备份，只适用于SQLServer，默认为false
+        :type backup_database_individually: bool
         """
         
         
@@ -51,6 +55,7 @@ class CreateManualBackupRequestBody:
         self._name = None
         self._description = None
         self._databases = None
+        self._backup_database_individually = None
         self.discriminator = None
 
         self.instance_id = instance_id
@@ -59,6 +64,8 @@ class CreateManualBackupRequestBody:
             self.description = description
         if databases is not None:
             self.databases = databases
+        if backup_database_individually is not None:
+            self.backup_database_individually = backup_database_individually
 
     @property
     def instance_id(self):
@@ -147,6 +154,28 @@ class CreateManualBackupRequestBody:
         :type databases: list[:class:`huaweicloudsdkrds.v3.BackupDatabase`]
         """
         self._databases = databases
+
+    @property
+    def backup_database_individually(self):
+        """Gets the backup_database_individually of this CreateManualBackupRequestBody.
+
+        是否分库备份，只适用于SQLServer，默认为false
+
+        :return: The backup_database_individually of this CreateManualBackupRequestBody.
+        :rtype: bool
+        """
+        return self._backup_database_individually
+
+    @backup_database_individually.setter
+    def backup_database_individually(self, backup_database_individually):
+        """Sets the backup_database_individually of this CreateManualBackupRequestBody.
+
+        是否分库备份，只适用于SQLServer，默认为false
+
+        :param backup_database_individually: The backup_database_individually of this CreateManualBackupRequestBody.
+        :type backup_database_individually: bool
+        """
+        self._backup_database_individually = backup_database_individually
 
     def to_dict(self):
         """Returns the model properties as a dict"""

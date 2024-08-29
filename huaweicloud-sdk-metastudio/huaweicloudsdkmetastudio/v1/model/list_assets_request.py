@@ -22,6 +22,7 @@ class ListAssetsRequest:
         'offset': 'int',
         'name': 'str',
         'tag': 'str',
+        'tag_combination_type': 'str',
         'start_time': 'str',
         'end_time': 'str',
         'asset_type': 'str',
@@ -30,19 +31,22 @@ class ListAssetsRequest:
         'asset_source': 'str',
         'asset_state': 'str',
         'style_id': 'str',
+        'accurate_query_field': 'list[str]',
         'render_engine': 'str',
         'asset_id': 'list[str]',
         'sex': 'str',
         'language': 'str',
         'system_property': 'str',
         'action_editable': 'bool',
+        'is_with_action_library': 'bool',
         'is_movable': 'bool',
         'voice_provider': 'str',
         'role': 'str',
         'is_realtime_voice': 'bool',
         'human_model_2d_version': 'str',
         'include_device_name': 'str',
-        'exclude_device_name': 'str'
+        'exclude_device_name': 'str',
+        'supported_service': 'str'
     }
 
     attribute_map = {
@@ -51,6 +55,7 @@ class ListAssetsRequest:
         'offset': 'offset',
         'name': 'name',
         'tag': 'tag',
+        'tag_combination_type': 'tag_combination_type',
         'start_time': 'start_time',
         'end_time': 'end_time',
         'asset_type': 'asset_type',
@@ -59,22 +64,25 @@ class ListAssetsRequest:
         'asset_source': 'asset_source',
         'asset_state': 'asset_state',
         'style_id': 'style_id',
+        'accurate_query_field': 'accurate_query_field',
         'render_engine': 'render_engine',
         'asset_id': 'asset_id',
         'sex': 'sex',
         'language': 'language',
         'system_property': 'system_property',
         'action_editable': 'action_editable',
+        'is_with_action_library': 'is_with_action_library',
         'is_movable': 'is_movable',
         'voice_provider': 'voice_provider',
         'role': 'role',
         'is_realtime_voice': 'is_realtime_voice',
         'human_model_2d_version': 'human_model_2d_version',
         'include_device_name': 'include_device_name',
-        'exclude_device_name': 'exclude_device_name'
+        'exclude_device_name': 'exclude_device_name',
+        'supported_service': 'supported_service'
     }
 
-    def __init__(self, x_app_user_id=None, limit=None, offset=None, name=None, tag=None, start_time=None, end_time=None, asset_type=None, sort_key=None, sort_dir=None, asset_source=None, asset_state=None, style_id=None, render_engine=None, asset_id=None, sex=None, language=None, system_property=None, action_editable=None, is_movable=None, voice_provider=None, role=None, is_realtime_voice=None, human_model_2d_version=None, include_device_name=None, exclude_device_name=None):
+    def __init__(self, x_app_user_id=None, limit=None, offset=None, name=None, tag=None, tag_combination_type=None, start_time=None, end_time=None, asset_type=None, sort_key=None, sort_dir=None, asset_source=None, asset_state=None, style_id=None, accurate_query_field=None, render_engine=None, asset_id=None, sex=None, language=None, system_property=None, action_editable=None, is_with_action_library=None, is_movable=None, voice_provider=None, role=None, is_realtime_voice=None, human_model_2d_version=None, include_device_name=None, exclude_device_name=None, supported_service=None):
         """ListAssetsRequest
 
         The model defined in huaweicloud sdk
@@ -89,13 +97,15 @@ class ListAssetsRequest:
         :type name: str
         :param tag: 按标签模糊查询。
         :type tag: str
-        :param start_time: 起始时间。格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
+        :param tag_combination_type: 标签查询组合方式 INTERSECTION：交集 UNION_SET：并集
+        :type tag_combination_type: str
+        :param start_time: 最近直播任务起始时间。格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
         :type start_time: str
-        :param end_time: 结束时间。格式遵循：RFC 3339 如\&quot;2021-01-10T10:43:17Z\&quot;。
+        :param end_time: 最近直播任务结束时间。格式遵循：RFC 3339 如\&quot;2021-01-10T10:43:17Z\&quot;。
         :type end_time: str
         :param asset_type: 资产类型。多个类型使用英文逗号分割。 * HUMAN_MODEL：数字人模型 * VOICE_MODEL：音色模型（仅系统管理员可上传） * SCENE：场景模型 * ANIMATION：动作动画 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MATERIAL：风格化素材 * HUMAN_MODEL_2D: 2D数字人网络模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板 * MUSIC: 音乐 * AUDIO: 音频
         :type asset_type: str
-        :param sort_key: 排序字段，目前只支持create_time。
+        :param sort_key: 排序字段，支持的排序方式有： - 按创建时间排序：create_time - 按更新时间排序：update_time - 按资产排序：asset_order
         :type sort_key: str
         :param sort_dir: 排序方式。 * asc：升序 * desc：降序  默认asc升序。
         :type sort_dir: str
@@ -105,6 +115,8 @@ class ListAssetsRequest:
         :type asset_state: str
         :param style_id: 基于风格化ID查询关联资产。 * system_male_001：男性风格01 * system_female_001：女性风格01 * system_male_002：男性风格02  * system_female_002：女性风格02
         :type style_id: str
+        :param accurate_query_field: 使用精确查询的字段
+        :type accurate_query_field: list[str]
         :param render_engine: 可用引擎。 * UE：UE引擎 * MetaEngine：MetaEngine引擎 &gt; 该字段当前只对MetaEngine白名单用户生效
         :type render_engine: str
         :param asset_id: 资产id
@@ -117,6 +129,8 @@ class ListAssetsRequest:
         :type system_property: str
         :param action_editable: 动作是否可编辑。仅在分身数字人模型查询时有效。
         :type action_editable: bool
+        :param is_with_action_library: 分身数字人是否带原子动作库。 &gt; * 带原子动作库的分身数字人可做动作编排。
+        :type is_with_action_library: bool
         :param is_movable: 分身数字人是否支持走动。仅在分身数字人模型查询时有效。
         :type is_movable: bool
         :param voice_provider: 取值：HUAWEI_METASTUDIO、MOBVOI。 HUAWEI_METASTUDIO：MetaStudio自研音色 MOBVOI：出门问问音色
@@ -131,6 +145,8 @@ class ListAssetsRequest:
         :type include_device_name: str
         :param exclude_device_name: 资产已执行的任务名称
         :type exclude_device_name: str
+        :param supported_service: 资产支持的业务类型。默认查询所有资产。 * VIDEO_2D：分身数字人视频制作 * LIVE_2D：分身数字人直播 * CHAT_2D：分身数字人智能交互
+        :type supported_service: str
         """
         
         
@@ -140,6 +156,7 @@ class ListAssetsRequest:
         self._offset = None
         self._name = None
         self._tag = None
+        self._tag_combination_type = None
         self._start_time = None
         self._end_time = None
         self._asset_type = None
@@ -148,12 +165,14 @@ class ListAssetsRequest:
         self._asset_source = None
         self._asset_state = None
         self._style_id = None
+        self._accurate_query_field = None
         self._render_engine = None
         self._asset_id = None
         self._sex = None
         self._language = None
         self._system_property = None
         self._action_editable = None
+        self._is_with_action_library = None
         self._is_movable = None
         self._voice_provider = None
         self._role = None
@@ -161,6 +180,7 @@ class ListAssetsRequest:
         self._human_model_2d_version = None
         self._include_device_name = None
         self._exclude_device_name = None
+        self._supported_service = None
         self.discriminator = None
 
         if x_app_user_id is not None:
@@ -173,6 +193,8 @@ class ListAssetsRequest:
             self.name = name
         if tag is not None:
             self.tag = tag
+        if tag_combination_type is not None:
+            self.tag_combination_type = tag_combination_type
         if start_time is not None:
             self.start_time = start_time
         if end_time is not None:
@@ -189,6 +211,8 @@ class ListAssetsRequest:
             self.asset_state = asset_state
         if style_id is not None:
             self.style_id = style_id
+        if accurate_query_field is not None:
+            self.accurate_query_field = accurate_query_field
         if render_engine is not None:
             self.render_engine = render_engine
         if asset_id is not None:
@@ -201,6 +225,8 @@ class ListAssetsRequest:
             self.system_property = system_property
         if action_editable is not None:
             self.action_editable = action_editable
+        if is_with_action_library is not None:
+            self.is_with_action_library = is_with_action_library
         if is_movable is not None:
             self.is_movable = is_movable
         if voice_provider is not None:
@@ -215,6 +241,8 @@ class ListAssetsRequest:
             self.include_device_name = include_device_name
         if exclude_device_name is not None:
             self.exclude_device_name = exclude_device_name
+        if supported_service is not None:
+            self.supported_service = supported_service
 
     @property
     def x_app_user_id(self):
@@ -327,10 +355,32 @@ class ListAssetsRequest:
         self._tag = tag
 
     @property
+    def tag_combination_type(self):
+        """Gets the tag_combination_type of this ListAssetsRequest.
+
+        标签查询组合方式 INTERSECTION：交集 UNION_SET：并集
+
+        :return: The tag_combination_type of this ListAssetsRequest.
+        :rtype: str
+        """
+        return self._tag_combination_type
+
+    @tag_combination_type.setter
+    def tag_combination_type(self, tag_combination_type):
+        """Sets the tag_combination_type of this ListAssetsRequest.
+
+        标签查询组合方式 INTERSECTION：交集 UNION_SET：并集
+
+        :param tag_combination_type: The tag_combination_type of this ListAssetsRequest.
+        :type tag_combination_type: str
+        """
+        self._tag_combination_type = tag_combination_type
+
+    @property
     def start_time(self):
         """Gets the start_time of this ListAssetsRequest.
 
-        起始时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        最近直播任务起始时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
         :return: The start_time of this ListAssetsRequest.
         :rtype: str
@@ -341,7 +391,7 @@ class ListAssetsRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ListAssetsRequest.
 
-        起始时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        最近直播任务起始时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
         :param start_time: The start_time of this ListAssetsRequest.
         :type start_time: str
@@ -352,7 +402,7 @@ class ListAssetsRequest:
     def end_time(self):
         """Gets the end_time of this ListAssetsRequest.
 
-        结束时间。格式遵循：RFC 3339 如\"2021-01-10T10:43:17Z\"。
+        最近直播任务结束时间。格式遵循：RFC 3339 如\"2021-01-10T10:43:17Z\"。
 
         :return: The end_time of this ListAssetsRequest.
         :rtype: str
@@ -363,7 +413,7 @@ class ListAssetsRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ListAssetsRequest.
 
-        结束时间。格式遵循：RFC 3339 如\"2021-01-10T10:43:17Z\"。
+        最近直播任务结束时间。格式遵循：RFC 3339 如\"2021-01-10T10:43:17Z\"。
 
         :param end_time: The end_time of this ListAssetsRequest.
         :type end_time: str
@@ -396,7 +446,7 @@ class ListAssetsRequest:
     def sort_key(self):
         """Gets the sort_key of this ListAssetsRequest.
 
-        排序字段，目前只支持create_time。
+        排序字段，支持的排序方式有： - 按创建时间排序：create_time - 按更新时间排序：update_time - 按资产排序：asset_order
 
         :return: The sort_key of this ListAssetsRequest.
         :rtype: str
@@ -407,7 +457,7 @@ class ListAssetsRequest:
     def sort_key(self, sort_key):
         """Sets the sort_key of this ListAssetsRequest.
 
-        排序字段，目前只支持create_time。
+        排序字段，支持的排序方式有： - 按创建时间排序：create_time - 按更新时间排序：update_time - 按资产排序：asset_order
 
         :param sort_key: The sort_key of this ListAssetsRequest.
         :type sort_key: str
@@ -501,6 +551,28 @@ class ListAssetsRequest:
         :type style_id: str
         """
         self._style_id = style_id
+
+    @property
+    def accurate_query_field(self):
+        """Gets the accurate_query_field of this ListAssetsRequest.
+
+        使用精确查询的字段
+
+        :return: The accurate_query_field of this ListAssetsRequest.
+        :rtype: list[str]
+        """
+        return self._accurate_query_field
+
+    @accurate_query_field.setter
+    def accurate_query_field(self, accurate_query_field):
+        """Sets the accurate_query_field of this ListAssetsRequest.
+
+        使用精确查询的字段
+
+        :param accurate_query_field: The accurate_query_field of this ListAssetsRequest.
+        :type accurate_query_field: list[str]
+        """
+        self._accurate_query_field = accurate_query_field
 
     @property
     def render_engine(self):
@@ -633,6 +705,28 @@ class ListAssetsRequest:
         :type action_editable: bool
         """
         self._action_editable = action_editable
+
+    @property
+    def is_with_action_library(self):
+        """Gets the is_with_action_library of this ListAssetsRequest.
+
+        分身数字人是否带原子动作库。 > * 带原子动作库的分身数字人可做动作编排。
+
+        :return: The is_with_action_library of this ListAssetsRequest.
+        :rtype: bool
+        """
+        return self._is_with_action_library
+
+    @is_with_action_library.setter
+    def is_with_action_library(self, is_with_action_library):
+        """Sets the is_with_action_library of this ListAssetsRequest.
+
+        分身数字人是否带原子动作库。 > * 带原子动作库的分身数字人可做动作编排。
+
+        :param is_with_action_library: The is_with_action_library of this ListAssetsRequest.
+        :type is_with_action_library: bool
+        """
+        self._is_with_action_library = is_with_action_library
 
     @property
     def is_movable(self):
@@ -787,6 +881,28 @@ class ListAssetsRequest:
         :type exclude_device_name: str
         """
         self._exclude_device_name = exclude_device_name
+
+    @property
+    def supported_service(self):
+        """Gets the supported_service of this ListAssetsRequest.
+
+        资产支持的业务类型。默认查询所有资产。 * VIDEO_2D：分身数字人视频制作 * LIVE_2D：分身数字人直播 * CHAT_2D：分身数字人智能交互
+
+        :return: The supported_service of this ListAssetsRequest.
+        :rtype: str
+        """
+        return self._supported_service
+
+    @supported_service.setter
+    def supported_service(self, supported_service):
+        """Sets the supported_service of this ListAssetsRequest.
+
+        资产支持的业务类型。默认查询所有资产。 * VIDEO_2D：分身数字人视频制作 * LIVE_2D：分身数字人直播 * CHAT_2D：分身数字人智能交互
+
+        :param supported_service: The supported_service of this ListAssetsRequest.
+        :type supported_service: str
+        """
+        self._supported_service = supported_service
 
     def to_dict(self):
         """Returns the model properties as a dict"""

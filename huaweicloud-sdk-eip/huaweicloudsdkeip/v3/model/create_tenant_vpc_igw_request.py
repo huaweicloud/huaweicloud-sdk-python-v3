@@ -17,7 +17,7 @@ class CreateTenantVpcIgwRequest:
     sensitive_list = []
 
     openapi_types = {
-        'fields': 'str',
+        'fields': 'list[str]',
         'body': 'CreateTenantVpcIgwRequestBody'
     }
 
@@ -32,7 +32,7 @@ class CreateTenantVpcIgwRequest:
         The model defined in huaweicloud sdk
 
         :param fields: 形式为\\\&quot;fields&#x3D;id&amp;fields&#x3D;project_id&amp;...\\\&quot;，支持字段：id/project_id/vpc_id/created_at/updated_at/name
-        :type fields: str
+        :type fields: list[str]
         :param body: Body of the CreateTenantVpcIgwRequest
         :type body: :class:`huaweicloudsdkeip.v3.CreateTenantVpcIgwRequestBody`
         """
@@ -55,7 +55,7 @@ class CreateTenantVpcIgwRequest:
         形式为\\\"fields=id&fields=project_id&...\\\"，支持字段：id/project_id/vpc_id/created_at/updated_at/name
 
         :return: The fields of this CreateTenantVpcIgwRequest.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._fields
 
@@ -66,7 +66,7 @@ class CreateTenantVpcIgwRequest:
         形式为\\\"fields=id&fields=project_id&...\\\"，支持字段：id/project_id/vpc_id/created_at/updated_at/name
 
         :param fields: The fields of this CreateTenantVpcIgwRequest.
-        :type fields: str
+        :type fields: list[str]
         """
         self._fields = fields
 

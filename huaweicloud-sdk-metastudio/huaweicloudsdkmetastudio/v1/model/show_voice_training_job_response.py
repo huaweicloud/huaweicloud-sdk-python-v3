@@ -34,7 +34,8 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
         'voice_authorization_url': 'str',
         'create_type': 'CreateType',
         'tag': 'JobTag',
-        'phone': 'str'
+        'phone': 'str',
+        'dhtms_job_id': 'str'
     }
 
     attribute_map = {
@@ -54,10 +55,11 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
         'voice_authorization_url': 'voice_authorization_url',
         'create_type': 'create_type',
         'tag': 'tag',
-        'phone': 'phone'
+        'phone': 'phone',
+        'dhtms_job_id': 'dhtms_job_id'
     }
 
-    def __init__(self, job_type=None, job_id=None, app_user_id=None, voice_name=None, sex=None, language=None, state=None, reject_times=None, asset_id=None, job_failed_code=None, job_failed_reason=None, create_time=None, lastupdate_time=None, voice_authorization_url=None, create_type=None, tag=None, phone=None):
+    def __init__(self, job_type=None, job_id=None, app_user_id=None, voice_name=None, sex=None, language=None, state=None, reject_times=None, asset_id=None, job_failed_code=None, job_failed_reason=None, create_time=None, lastupdate_time=None, voice_authorization_url=None, create_type=None, tag=None, phone=None, dhtms_job_id=None):
         """ShowVoiceTrainingJobResponse
 
         The model defined in huaweicloud sdk
@@ -96,6 +98,8 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
         :type tag: :class:`huaweicloudsdkmetastudio.v1.JobTag`
         :param phone: 手机号
         :type phone: str
+        :param dhtms_job_id: 形象制作任务id
+        :type dhtms_job_id: str
         """
         
         super(ShowVoiceTrainingJobResponse, self).__init__()
@@ -117,6 +121,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
         self._create_type = None
         self._tag = None
         self._phone = None
+        self._dhtms_job_id = None
         self.discriminator = None
 
         if job_type is not None:
@@ -153,6 +158,8 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
             self.tag = tag
         if phone is not None:
             self.phone = phone
+        if dhtms_job_id is not None:
+            self.dhtms_job_id = dhtms_job_id
 
     @property
     def job_type(self):
@@ -511,6 +518,28 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
         :type phone: str
         """
         self._phone = phone
+
+    @property
+    def dhtms_job_id(self):
+        """Gets the dhtms_job_id of this ShowVoiceTrainingJobResponse.
+
+        形象制作任务id
+
+        :return: The dhtms_job_id of this ShowVoiceTrainingJobResponse.
+        :rtype: str
+        """
+        return self._dhtms_job_id
+
+    @dhtms_job_id.setter
+    def dhtms_job_id(self, dhtms_job_id):
+        """Sets the dhtms_job_id of this ShowVoiceTrainingJobResponse.
+
+        形象制作任务id
+
+        :param dhtms_job_id: The dhtms_job_id of this ShowVoiceTrainingJobResponse.
+        :type dhtms_job_id: str
+        """
+        self._dhtms_job_id = dhtms_job_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

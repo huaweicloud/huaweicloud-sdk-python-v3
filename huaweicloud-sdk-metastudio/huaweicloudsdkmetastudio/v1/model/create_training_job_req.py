@@ -23,7 +23,8 @@ class CreateTrainingJobReq:
         'voice_name': 'str',
         'language': 'str',
         'create_type': 'CreateType',
-        'phone': 'str'
+        'phone': 'str',
+        'dhtms_job_id': 'str'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class CreateTrainingJobReq:
         'voice_name': 'voice_name',
         'language': 'language',
         'create_type': 'create_type',
-        'phone': 'phone'
+        'phone': 'phone',
+        'dhtms_job_id': 'dhtms_job_id'
     }
 
-    def __init__(self, tag=None, description=None, sex=None, voice_name=None, language=None, create_type=None, phone=None):
+    def __init__(self, tag=None, description=None, sex=None, voice_name=None, language=None, create_type=None, phone=None, dhtms_job_id=None):
         """CreateTrainingJobReq
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class CreateTrainingJobReq:
         :type create_type: :class:`huaweicloudsdkmetastudio.v1.CreateType`
         :param phone: 手机号
         :type phone: str
+        :param dhtms_job_id: 形象制作任务id
+        :type dhtms_job_id: str
         """
         
         
@@ -66,6 +70,7 @@ class CreateTrainingJobReq:
         self._language = None
         self._create_type = None
         self._phone = None
+        self._dhtms_job_id = None
         self.discriminator = None
 
         if tag is not None:
@@ -81,6 +86,8 @@ class CreateTrainingJobReq:
             self.create_type = create_type
         if phone is not None:
             self.phone = phone
+        if dhtms_job_id is not None:
+            self.dhtms_job_id = dhtms_job_id
 
     @property
     def tag(self):
@@ -227,6 +234,28 @@ class CreateTrainingJobReq:
         :type phone: str
         """
         self._phone = phone
+
+    @property
+    def dhtms_job_id(self):
+        """Gets the dhtms_job_id of this CreateTrainingJobReq.
+
+        形象制作任务id
+
+        :return: The dhtms_job_id of this CreateTrainingJobReq.
+        :rtype: str
+        """
+        return self._dhtms_job_id
+
+    @dhtms_job_id.setter
+    def dhtms_job_id(self, dhtms_job_id):
+        """Sets the dhtms_job_id of this CreateTrainingJobReq.
+
+        形象制作任务id
+
+        :param dhtms_job_id: The dhtms_job_id of this CreateTrainingJobReq.
+        :type dhtms_job_id: str
+        """
+        self._dhtms_job_id = dhtms_job_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

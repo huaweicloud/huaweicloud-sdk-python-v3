@@ -19,6 +19,7 @@ class ListEipBandwidthsRequest:
     openapi_types = {
         'limit': 'str',
         'marker': 'str',
+        'fields': 'list[str]',
         'id': 'str',
         'bandwidth_type': 'str',
         'name': 'str',
@@ -39,6 +40,7 @@ class ListEipBandwidthsRequest:
     attribute_map = {
         'limit': 'limit',
         'marker': 'marker',
+        'fields': 'fields',
         'id': 'id',
         'bandwidth_type': 'bandwidth_type',
         'name': 'name',
@@ -56,7 +58,7 @@ class ListEipBandwidthsRequest:
         'type': 'type'
     }
 
-    def __init__(self, limit=None, marker=None, id=None, bandwidth_type=None, name=None, name_like=None, tenant_id=None, ingress_size=None, admin_state=None, billing_info=None, tags=None, enable_bandwidth_rules=None, rule_quota=None, public_border_group=None, charge_mode=None, size=None, type=None):
+    def __init__(self, limit=None, marker=None, fields=None, id=None, bandwidth_type=None, name=None, name_like=None, tenant_id=None, ingress_size=None, admin_state=None, billing_info=None, tags=None, enable_bandwidth_rules=None, rule_quota=None, public_border_group=None, charge_mode=None, size=None, type=None):
         """ListEipBandwidthsRequest
 
         The model defined in huaweicloud sdk
@@ -65,6 +67,8 @@ class ListEipBandwidthsRequest:
         :type limit: str
         :param marker: - 功能说明：分页查询起始的资源ID，为空时为查询第一页
         :type marker: str
+        :param fields: display in the form \&quot;fields&#x3D;id&amp;fields&#x3D;name&amp;...\&quot;  Supported fields：id/name/tenant_id/size/ratio_95peak_plus/ingress_size/bandwidth_type/admin_state/billing_info/charge_mode/type/publicip_info/enable_bandwidth_rules/rule_quota/bandwidth_rules/public_border_group/created_at/updated_at/lock_infos
+        :type fields: list[str]
         :param id: - 功能说明：带宽唯一标识
         :type id: str
         :param bandwidth_type: - 功能说明：带宽类型，共享带宽默认为share。 - 取值范围：share，bgp，telcom，sbgp等。   - share：共享带宽   - bgp：动态bgp   - telcom ：联通   - sbgp：静态bgp
@@ -101,6 +105,7 @@ class ListEipBandwidthsRequest:
 
         self._limit = None
         self._marker = None
+        self._fields = None
         self._id = None
         self._bandwidth_type = None
         self._name = None
@@ -122,6 +127,8 @@ class ListEipBandwidthsRequest:
             self.limit = limit
         if marker is not None:
             self.marker = marker
+        if fields is not None:
+            self.fields = fields
         if id is not None:
             self.id = id
         if bandwidth_type is not None:
@@ -196,6 +203,28 @@ class ListEipBandwidthsRequest:
         :type marker: str
         """
         self._marker = marker
+
+    @property
+    def fields(self):
+        """Gets the fields of this ListEipBandwidthsRequest.
+
+        display in the form \"fields=id&fields=name&...\"  Supported fields：id/name/tenant_id/size/ratio_95peak_plus/ingress_size/bandwidth_type/admin_state/billing_info/charge_mode/type/publicip_info/enable_bandwidth_rules/rule_quota/bandwidth_rules/public_border_group/created_at/updated_at/lock_infos
+
+        :return: The fields of this ListEipBandwidthsRequest.
+        :rtype: list[str]
+        """
+        return self._fields
+
+    @fields.setter
+    def fields(self, fields):
+        """Sets the fields of this ListEipBandwidthsRequest.
+
+        display in the form \"fields=id&fields=name&...\"  Supported fields：id/name/tenant_id/size/ratio_95peak_plus/ingress_size/bandwidth_type/admin_state/billing_info/charge_mode/type/publicip_info/enable_bandwidth_rules/rule_quota/bandwidth_rules/public_border_group/created_at/updated_at/lock_infos
+
+        :param fields: The fields of this ListEipBandwidthsRequest.
+        :type fields: list[str]
+        """
+        self._fields = fields
 
     @property
     def id(self):

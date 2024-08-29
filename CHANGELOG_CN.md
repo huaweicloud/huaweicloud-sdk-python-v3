@@ -1,3 +1,524 @@
+# 3.1.112 2024-08-29
+
+### HuaweiCloud SDK BSS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListCustomerselfResourceRecordDetails**
+    - 请求参数变更
+      - `+ payer_account_id`
+    - 响应参数变更
+      - `+ monthly_records.payer_account_id`
+
+### HuaweiCloud SDK BSSINTL
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListCustomerselfResourceRecordDetails**
+    - 请求参数变更
+      - `+ payer_account_id`
+    - 响应参数变更
+      - `+ monthly_records.payer_account_id`
+
+### HuaweiCloud SDK CAE
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListEips**
+    - 响应参数变更
+      - `+ spec.egress.enabled`
+      - `+ spec.ingress.enabled`
+  - **UpdateEip**
+    - 请求参数变更
+      - `+ spec.egress.enabled`
+      - `+ spec.ingress.enabled`
+  - **ListComponentSnapshots**
+    - 响应参数变更
+      - `+ items.context.runtime: enum value [Php8]`
+  - **ShowComponent**
+    - 响应参数变更
+      - `+ spec.runtime: enum value [Php8]`
+  - **UpdateComponent**
+    - 请求参数变更
+      - `+ spec.runtime: enum value [Php8]`
+  - **CreateComponent**
+    - 请求参数变更
+      - `+ spec.runtime: enum value [Php8]`
+    - 响应参数变更
+      - `+ spec.runtime: enum value [Php8]`
+  - **ListComponents**
+    - 响应参数变更
+      - `+ items.spec.runtime: enum value [Php8]`
+  - **CreateComponentWithConfiguration**
+    - 请求参数变更
+      - `+ spec.runtime: enum value [Php8]`
+      - `+ configurations.data.spec.cloud_storage_log_paths`
+    - 响应参数变更
+      - `+ spec.runtime: enum value [Php8]`
+      - `+ configurations.data.spec.cloud_storage_log_paths`
+  - **ListComponentConfigurations**
+    - 响应参数变更
+      - `+ items.is_using`
+      - `+ items.data.spec.cloud_storage_log_paths`
+  - **CreateComponentConfiguration**
+    - 请求参数变更
+      - `+ items.data.spec.cloud_storage_log_paths`
+
+### HuaweiCloud SDK CCE
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowNode**
+    - 响应参数变更
+      - `+ spec.nodeNicSpec.primaryNic.subnetList`
+  - **UpdateNode**
+    - 响应参数变更
+      - `+ spec.nodeNicSpec.primaryNic.subnetList`
+  - **DeleteNode**
+    - 响应参数变更
+      - `+ spec.nodeNicSpec.primaryNic.subnetList`
+  - **CreateNode**
+    - 请求参数变更
+      - `+ spec.nodeNicSpec.primaryNic.subnetList`
+    - 响应参数变更
+      - `+ spec.nodeNicSpec.primaryNic.subnetList`
+  - **ListNodes**
+    - 响应参数变更
+      - `+ items.spec.nodeNicSpec.primaryNic.subnetList`
+  - **ShowNodePool**
+    - 响应参数变更
+      - `+ spec.nodeTemplate.nodeNicSpec.primaryNic.subnetList`
+  - **UpdateNodePool**
+    - 请求参数变更
+      - `+ spec.nodeTemplate.nodeNicSpecUpdate`
+    - 响应参数变更
+      - `+ spec.nodeTemplate.nodeNicSpec.primaryNic.subnetList`
+  - **DeleteNodePool**
+    - 响应参数变更
+      - `+ spec.nodeTemplate.nodeNicSpec.primaryNic.subnetList`
+  - **CreateNodePool**
+    - 请求参数变更
+      - `+ spec.nodeTemplate.nodeNicSpec.primaryNic.subnetList`
+    - 响应参数变更
+      - `+ spec.nodeTemplate.nodeNicSpec.primaryNic.subnetList`
+  - **ListNodePools**
+    - 响应参数变更
+      - `+ items.spec.nodeTemplate.nodeNicSpec.primaryNic.subnetList`
+
+### HuaweiCloud SDK DGC
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ImportJob**
+    - 请求参数变更
+      - `+ targetStatus`
+      - `+ approvers`
+      - `+ resources`
+
+### HuaweiCloud SDK ECS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`ListCloudServers`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK EIP
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListCommonPools**
+    - 请求参数变更
+      - `* fields: string -> list<string>`
+  - **ListShareBandwidthTypes**
+    - 请求参数变更
+      - `* fields: string -> list<string>`
+  - **ListTenantVpcIgws**
+    - 请求参数变更
+      - `* fields: string -> list<string>`
+  - **CreateTenantVpcIgw**
+    - 请求参数变更
+      - `* fields: string -> list<string>`
+  - **ShowInternalVpcIgw**
+    - 请求参数变更
+      - `* fields: string -> list<string>`
+  - **UpdateTenantVpcIgw**
+    - 请求参数变更
+      - `* fields: string -> list<string>`
+  - **ListEipBandwidths**
+    - 请求参数变更
+      - `+ fields`
+  - **ListBandwidth**
+    - 请求参数变更
+      - `+ fields`
+  - **ListPublicipPool**
+    - 请求参数变更
+      - `* fields: string -> list<string>`
+  - **ShowPublicipPool**
+    - 请求参数变更
+      - `* fields: string -> list<string>`
+  - **ListProjectGeipBindings**
+    - 请求参数变更
+      - `* fields: string -> list<string>`
+
+### HuaweiCloud SDK EVS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`RetypeVolume`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK FunctionGraph
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowFunctionCode**
+    - 响应参数变更
+      - `* dependencies.last_modified: date-time -> int64`
+  - **UpdateFunctionCode**
+    - 响应参数变更
+      - `* dependencies.last_modified: date-time -> int64`
+  - **CreateFunction**
+    - 响应参数变更
+      - `* dependencies.last_modified: date-time -> int64`
+  - **ShowFunctionConfig**
+    - 响应参数变更
+      - `* dependencies.last_modified: date-time -> int64`
+  - **UpdateFunctionConfig**
+    - 响应参数变更
+      - `* dependencies.last_modified: date-time -> int64`
+  - **UpdateFunctionMaxInstanceConfig**
+    - 响应参数变更
+      - `* dependencies.last_modified: date-time -> int64`
+  - **CreateFunctionTrigger**
+    - 请求参数变更
+      - `+ event_data.Key_encode`
+      - `+ event_data.agency`
+      - `+ event_data.channel_name`
+      - `+ event_data.source_name`
+      - `+ event_data.created_time`
+      - `+ event_data.status`
+      - `+ event_data.trigger_name`
+  - **CreateFunctionVersion**
+    - 响应参数变更
+      - `* dependencies.last_modified: date-time -> int64`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`CreateGaussDbInstance`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK GSL
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `ListSimDeviceMultiply`
+    - `SwitchNetwork`
+    - `SetNetworkSwitchPolicy`
+    - `ListNetworkSwitchPolicies`
+    - `AddNetworkSwitchPolicy`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK HSS
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 支持以下接口：
+    - `ListQueryExportTask`
+    - `ListDownloadExportedFile`
+    - `ExportVuls`
+    - `ListAccounts`
+    - `BatchAddAccounts`
+    - `DeleteAccount`
+    - `ListOrganizationTree`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK MetaStudio
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`ListJobOperationLog`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ConfirmFileUpload**
+    - 请求参数变更
+      - `+ auto_meta_analysis`
+  - **ShowAssetReplicationInfo**
+    - 响应参数变更
+      - `+ expire_time`
+  - **CreateAssetByReplicationInfo**
+    - 请求参数变更
+      - `+ expire_time`
+  - **ShowRobot**
+    - 响应参数变更
+      - `+ robot_type`
+  - **UpdateRobot**
+    - 请求参数变更
+      - `+ robot_type`
+  - **CreateTrainingBasicJob**
+    - 请求参数变更
+      - `+ dhtms_job_id`
+  - **CreateTrainingMiddleJob**
+    - 请求参数变更
+      - `+ dhtms_job_id`
+  - **CreateTrainingAdvanceJob**
+    - 请求参数变更
+      - `+ dhtms_job_id`
+  - **ShowVoiceTrainingJob**
+    - 响应参数变更
+      - `+ dhtms_job_id`
+      - `+ job_type: enum value [THIRD_PARTY_LJZN,FLEXUS]`
+      - `- job_type: enum value [LLM_MAJOR,LLM_MINOR]`
+      - `+ state: enum value [WAITING_SPLIT,SPLITTING,SPLIT_FAILED,ANNOTATING]`
+  - **StartSmartChatJob**
+    - 响应参数变更
+      - `+ is_transparent`
+      - `+ language`
+      - `+ region`
+      - `+ chat_access_address`
+      - `* video_config: object<ChatVideoConfigRsp> -> object<SmartChatVideoConfig>`
+  - **ShowSmartChatJob**
+    - 响应参数变更
+      - `+ is_transparent`
+      - `+ language`
+      - `+ chat_access_address`
+      - `+ chat_state`
+      - `* video_config: object<ChatVideoConfigRsp> -> object<SmartChatVideoConfig>`
+  - **CreateRobot**
+    - 请求参数变更
+      - `+ robot_type`
+  - **ListRobot**
+    - 请求参数变更
+      - `+ robot_type`
+    - 响应参数变更
+      - `+ robot_type`
+      - `+ data.robot_type`
+  - **ListDigitalHumanVideo**
+    - 请求参数变更
+      - `+ fuzzy_query_field`
+  - **ListVoiceTrainingJob**
+    - 请求参数变更
+      - `+ job_type`
+    - 响应参数变更
+      - `+ dhtms_job_id`
+      - `+ jobs.dhtms_job_id`
+      - `+ jobs.job_type: enum value [THIRD_PARTY_LJZN,FLEXUS]`
+      - `- jobs.job_type: enum value [LLM_MAJOR,LLM_MINOR]`
+      - `+ jobs.state: enum value [WAITING_SPLIT,SPLITTING,SPLIT_FAILED,ANNOTATING]`
+  - **ShowAsset**
+    - 响应参数变更
+      - `+ asset_order`
+      - `+ supported_service`
+      - `+ system_properties.key: enum value [BUSINESS_CARD_VIDEO]`
+      - `+ asset_extra_meta.human_model_2d_meta.is_with_action_library`
+      - `+ asset_extra_meta.human_model_2d_meta.action_tag_map`
+      - `+ asset_extra_meta.human_model_2d_meta.is_flexus`
+      - `+ asset_extra_meta.video_meta.video_transcoding_status`
+      - `+ asset_extra_meta.voice_model_meta.is_support_vc_process`
+      - `+ asset_extra_meta.voice_model_meta.is_flexus`
+      - `+ asset_extra_meta.voice_model_meta.voice_capability.is_support_phoneme_en`
+      - `+ asset_extra_meta.voice_model_meta.external_voice_meta.provider: enum value [DATABAKER]`
+      - `- asset_extra_meta.voice_model_meta.external_voice_meta.provider: enum value [DATABACK]`
+  - **UpdateDigitalAsset**
+    - 请求参数变更
+      - `+ asset_order`
+      - `+ supported_service`
+      - `+ system_properties.key: enum value [BUSINESS_CARD_VIDEO]`
+      - `+ asset_extra_meta.human_model_2d_meta.is_with_action_library`
+      - `+ asset_extra_meta.human_model_2d_meta.action_tag_map`
+      - `+ asset_extra_meta.human_model_2d_meta.is_flexus`
+      - `+ asset_extra_meta.video_meta.video_transcoding_status`
+      - `+ asset_extra_meta.voice_model_meta.is_support_vc_process`
+      - `+ asset_extra_meta.voice_model_meta.is_flexus`
+      - `+ asset_extra_meta.voice_model_meta.voice_capability.is_support_phoneme_en`
+      - `+ asset_extra_meta.voice_model_meta.external_voice_meta.provider: enum value [DATABAKER]`
+      - `- asset_extra_meta.voice_model_meta.external_voice_meta.provider: enum value [DATABACK]`
+    - 响应参数变更
+      - `+ asset_order`
+      - `+ supported_service`
+      - `+ system_properties.key: enum value [BUSINESS_CARD_VIDEO]`
+      - `+ asset_extra_meta.human_model_2d_meta.is_with_action_library`
+      - `+ asset_extra_meta.human_model_2d_meta.action_tag_map`
+      - `+ asset_extra_meta.human_model_2d_meta.is_flexus`
+      - `+ asset_extra_meta.video_meta.video_transcoding_status`
+      - `+ asset_extra_meta.voice_model_meta.is_support_vc_process`
+      - `+ asset_extra_meta.voice_model_meta.is_flexus`
+      - `+ asset_extra_meta.voice_model_meta.voice_capability.is_support_phoneme_en`
+      - `+ asset_extra_meta.voice_model_meta.external_voice_meta.provider: enum value [DATABAKER]`
+      - `- asset_extra_meta.voice_model_meta.external_voice_meta.provider: enum value [DATABACK]`
+  - **CreateDigitalAsset**
+    - 请求参数变更
+      - `+ asset_order`
+      - `+ supported_service`
+      - `+ system_properties.key: enum value [BUSINESS_CARD_VIDEO]`
+      - `+ asset_extra_meta.human_model_2d_meta.is_with_action_library`
+      - `+ asset_extra_meta.human_model_2d_meta.action_tag_map`
+      - `+ asset_extra_meta.human_model_2d_meta.is_flexus`
+      - `+ asset_extra_meta.video_meta.video_transcoding_status`
+      - `+ asset_extra_meta.voice_model_meta.is_support_vc_process`
+      - `+ asset_extra_meta.voice_model_meta.is_flexus`
+      - `+ asset_extra_meta.voice_model_meta.voice_capability.is_support_phoneme_en`
+      - `+ asset_extra_meta.voice_model_meta.external_voice_meta.provider: enum value [DATABAKER]`
+      - `- asset_extra_meta.voice_model_meta.external_voice_meta.provider: enum value [DATABACK]`
+  - **ListAssets**
+    - 请求参数变更
+      - `+ tag_combination_type`
+      - `+ accurate_query_field`
+      - `+ is_with_action_library`
+      - `+ supported_service`
+    - 响应参数变更
+      - `+ asset_order`
+      - `+ supported_service`
+      - `+ assets.asset_order`
+      - `+ assets.supported_service`
+      - `+ assets.system_properties.key: enum value [BUSINESS_CARD_VIDEO]`
+      - `+ assets.asset_extra_meta.human_model_2d_meta.is_with_action_library`
+      - `+ assets.asset_extra_meta.human_model_2d_meta.action_tag_map`
+      - `+ assets.asset_extra_meta.human_model_2d_meta.is_flexus`
+      - `+ assets.asset_extra_meta.video_meta.video_transcoding_status`
+      - `+ assets.asset_extra_meta.voice_model_meta.is_support_vc_process`
+      - `+ assets.asset_extra_meta.voice_model_meta.is_flexus`
+      - `+ assets.asset_extra_meta.voice_model_meta.voice_capability.is_support_phoneme_en`
+      - `+ assets.asset_extra_meta.voice_model_meta.external_voice_meta.provider: enum value [DATABAKER]`
+      - `- assets.asset_extra_meta.voice_model_meta.external_voice_meta.provider: enum value [DATABACK]`
+  - **ListSmartLiveRooms**
+    - 响应参数变更
+      - `+ smart_live_rooms.priv_data`
+  - **CreateSmartLiveRoom**
+    - 请求参数变更
+      - `+ priv_data`
+  - **ShowSmartLiveRoom**
+    - 响应参数变更
+      - `+ priv_data`
+  - **UpdateSmartLiveRoom**
+    - 请求参数变更
+      - `+ priv_data`
+    - 响应参数变更
+      - `+ priv_data`
+  - **ShowVideoScript**
+    - 响应参数变更
+      - `+ shoot_scripts.subtitle_file_info`
+
+### HuaweiCloud SDK RDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateManualBackup**
+    - 请求参数变更
+      - `+ backup_database_individually`
+
+### HuaweiCloud SDK VPC
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **AddSecurityGroups**
+    - 响应参数变更
+      - `+ port.extra_dhcp_opts.opt_name`
+      - `+ port.extra_dhcp_opts.opt_value`
+      - `* port.extra_dhcp_opts: list<object> -> list<ExtraDhcpOpt>`
+  - **RemoveSecurityGroups**
+    - 响应参数变更
+      - `+ port.extra_dhcp_opts.opt_name`
+      - `+ port.extra_dhcp_opts.opt_value`
+      - `* port.extra_dhcp_opts: list<object> -> list<ExtraDhcpOpt>`
+
+### HuaweiCloud SDK WAF
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowWhiteBlackIpRule**
+    - 响应参数变更
+      - `+ time_mode`
+  - **UpdateWhiteblackipRule**
+    - 响应参数变更
+      - `+ time_mode`
+  - **DeleteWhiteBlackIpRule**
+    - 响应参数变更
+      - `+ time_mode`
+  - **UpdateIpGroup**
+    - 请求参数变更
+      - `+ action`
+  - **CreateWhiteblackipRule**
+    - 响应参数变更
+      - `+ time_mode`
+  - **ListWhiteblackipRule**
+    - 响应参数变更
+      - `+ items.time_mode`
+
 # 3.1.111 2024-08-22
 
 ### HuaweiCloud SDK CAE

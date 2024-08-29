@@ -4,6 +4,7 @@ from __future__ import absolute_import
 
 # import models into model package
 from huaweicloudsdkmetastudio.v1.model.action_mark_item import ActionMarkItem
+from huaweicloudsdkmetastudio.v1.model.action_tag_info import ActionTagInfo
 from huaweicloudsdkmetastudio.v1.model.active_code_info import ActiveCodeInfo
 from huaweicloudsdkmetastudio.v1.model.animation_asset_meta import AnimationAssetMeta
 from huaweicloudsdkmetastudio.v1.model.animation_item import AnimationItem
@@ -30,7 +31,6 @@ from huaweicloudsdkmetastudio.v1.model.cancel2_d_digital_human_video_response im
 from huaweicloudsdkmetastudio.v1.model.cancel_photo_digital_human_video_request import CancelPhotoDigitalHumanVideoRequest
 from huaweicloudsdkmetastudio.v1.model.cancel_photo_digital_human_video_response import CancelPhotoDigitalHumanVideoResponse
 from huaweicloudsdkmetastudio.v1.model.chat_subtitle_config import ChatSubtitleConfig
-from huaweicloudsdkmetastudio.v1.model.chat_video_config_rsp import ChatVideoConfigRsp
 from huaweicloudsdkmetastudio.v1.model.co_streamer_config import CoStreamerConfig
 from huaweicloudsdkmetastudio.v1.model.comment_data import CommentData
 from huaweicloudsdkmetastudio.v1.model.comment_log_info import CommentLogInfo
@@ -260,6 +260,8 @@ from huaweicloudsdkmetastudio.v1.model.list_hot_words_request import ListHotWord
 from huaweicloudsdkmetastudio.v1.model.list_hot_words_response import ListHotWordsResponse
 from huaweicloudsdkmetastudio.v1.model.list_interaction_rule_groups_request import ListInteractionRuleGroupsRequest
 from huaweicloudsdkmetastudio.v1.model.list_interaction_rule_groups_response import ListInteractionRuleGroupsResponse
+from huaweicloudsdkmetastudio.v1.model.list_job_operation_log_request import ListJobOperationLogRequest
+from huaweicloudsdkmetastudio.v1.model.list_job_operation_log_response import ListJobOperationLogResponse
 from huaweicloudsdkmetastudio.v1.model.list_knowledge_intent_request import ListKnowledgeIntentRequest
 from huaweicloudsdkmetastudio.v1.model.list_knowledge_intent_response import ListKnowledgeIntentResponse
 from huaweicloudsdkmetastudio.v1.model.list_knowledge_question_request import ListKnowledgeQuestionRequest
@@ -310,6 +312,7 @@ from huaweicloudsdkmetastudio.v1.model.mobvoi_config import MobvoiConfig
 from huaweicloudsdkmetastudio.v1.model.model_info import ModelInfo
 from huaweicloudsdkmetastudio.v1.model.motion_item import MotionItem
 from huaweicloudsdkmetastudio.v1.model.multipart_upload_info import MultipartUploadInfo
+from huaweicloudsdkmetastudio.v1.model.op_external_info import OpExternalInfo
 from huaweicloudsdkmetastudio.v1.model.operation_log_info import OperationLogInfo
 from huaweicloudsdkmetastudio.v1.model.output_asset_config import OutputAssetConfig
 from huaweicloudsdkmetastudio.v1.model.output_asset_info import OutputAssetInfo
@@ -336,12 +339,14 @@ from huaweicloudsdkmetastudio.v1.model.replication_asset_info import Replication
 from huaweicloudsdkmetastudio.v1.model.replication_enc_info import ReplicationEncInfo
 from huaweicloudsdkmetastudio.v1.model.reply_audio_info import ReplyAudioInfo
 from huaweicloudsdkmetastudio.v1.model.report_live_event_req import ReportLiveEventReq
+from huaweicloudsdkmetastudio.v1.model.reset_active_code_req import ResetActiveCodeReq
 from huaweicloudsdkmetastudio.v1.model.reset_active_code_request import ResetActiveCodeRequest
 from huaweicloudsdkmetastudio.v1.model.reset_active_code_response import ResetActiveCodeResponse
 from huaweicloudsdkmetastudio.v1.model.restore_asset_request import RestoreAssetRequest
 from huaweicloudsdkmetastudio.v1.model.restore_asset_response import RestoreAssetResponse
 from huaweicloudsdkmetastudio.v1.model.review_config import ReviewConfig
 from huaweicloudsdkmetastudio.v1.model.robot_info import RobotInfo
+from huaweicloudsdkmetastudio.v1.model.robot_type_enum import RobotTypeEnum
 from huaweicloudsdkmetastudio.v1.model.scene_asset_meta import SceneAssetMeta
 from huaweicloudsdkmetastudio.v1.model.scene_component_info import SceneComponentInfo
 from huaweicloudsdkmetastudio.v1.model.set_product_asset_request import SetProductAssetRequest
@@ -418,7 +423,10 @@ from huaweicloudsdkmetastudio.v1.model.show_welcome_speech_request import ShowWe
 from huaweicloudsdkmetastudio.v1.model.show_welcome_speech_response import ShowWelcomeSpeechResponse
 from huaweicloudsdkmetastudio.v1.model.show_welcome_speech_switch_request import ShowWelcomeSpeechSwitchRequest
 from huaweicloudsdkmetastudio.v1.model.show_welcome_speech_switch_response import ShowWelcomeSpeechSwitchResponse
+from huaweicloudsdkmetastudio.v1.model.smart_chat_jobs_req import SmartChatJobsReq
 from huaweicloudsdkmetastudio.v1.model.smart_chat_room_base_info import SmartChatRoomBaseInfo
+from huaweicloudsdkmetastudio.v1.model.smart_chat_subtitle_config import SmartChatSubtitleConfig
+from huaweicloudsdkmetastudio.v1.model.smart_chat_video_config import SmartChatVideoConfig
 from huaweicloudsdkmetastudio.v1.model.smart_image_layer_config import SmartImageLayerConfig
 from huaweicloudsdkmetastudio.v1.model.smart_layer_config import SmartLayerConfig
 from huaweicloudsdkmetastudio.v1.model.smart_live_job import SmartLiveJob
@@ -440,6 +448,8 @@ from huaweicloudsdkmetastudio.v1.model.style_asset_item import StyleAssetItem
 from huaweicloudsdkmetastudio.v1.model.style_extra_meta import StyleExtraMeta
 from huaweicloudsdkmetastudio.v1.model.style_info import StyleInfo
 from huaweicloudsdkmetastudio.v1.model.subtitle_config import SubtitleConfig
+from huaweicloudsdkmetastudio.v1.model.subtitle_file_info import SubtitleFileInfo
+from huaweicloudsdkmetastudio.v1.model.supported_service_enum import SupportedServiceEnum
 from huaweicloudsdkmetastudio.v1.model.system_property import SystemProperty
 from huaweicloudsdkmetastudio.v1.model.ttsa_job import TTSAJob
 from huaweicloudsdkmetastudio.v1.model.text_config import TextConfig

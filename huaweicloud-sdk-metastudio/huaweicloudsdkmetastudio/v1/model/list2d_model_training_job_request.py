@@ -61,7 +61,7 @@ class List2dModelTrainingJobRequest:
         :type offset: int
         :param limit: 每页显示的条目数量。
         :type limit: int
-        :param sort_key: 排序字段，目前只支持create_time。
+        :param sort_key: 排序字段，支持的排序方式有： - 按创建时间排序：create_time - 按更新时间排序：update_time - 按资产排序：asset_order
         :type sort_key: str
         :param sort_dir: 排序方式。 * asc：升序 * desc：降序  默认asc升序。
         :type sort_dir: str
@@ -202,7 +202,7 @@ class List2dModelTrainingJobRequest:
     def sort_key(self):
         """Gets the sort_key of this List2dModelTrainingJobRequest.
 
-        排序字段，目前只支持create_time。
+        排序字段，支持的排序方式有： - 按创建时间排序：create_time - 按更新时间排序：update_time - 按资产排序：asset_order
 
         :return: The sort_key of this List2dModelTrainingJobRequest.
         :rtype: str
@@ -213,7 +213,7 @@ class List2dModelTrainingJobRequest:
     def sort_key(self, sort_key):
         """Sets the sort_key of this List2dModelTrainingJobRequest.
 
-        排序字段，目前只支持create_time。
+        排序字段，支持的排序方式有： - 按创建时间排序：create_time - 按更新时间排序：update_time - 按资产排序：asset_order
 
         :param sort_key: The sort_key of this List2dModelTrainingJobRequest.
         :type sort_key: str

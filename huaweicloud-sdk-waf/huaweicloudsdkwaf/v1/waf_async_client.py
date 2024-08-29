@@ -7230,6 +7230,8 @@ class WafAsyncClient(Client):
         query_params = []
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'action' in local_var_params:
+            query_params.append(('action', local_var_params['action']))
 
         header_params = {}
 

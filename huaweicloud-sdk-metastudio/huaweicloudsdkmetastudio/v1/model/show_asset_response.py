@@ -33,6 +33,8 @@ class ShowAssetResponse(SdkResponse):
         'asset_extra_meta': 'AssetExtraMeta',
         'system_properties': 'list[SystemProperty]',
         'files': 'list[AssetFileInfo]',
+        'asset_order': 'int',
+        'supported_service': 'list[SupportedServiceEnum]',
         'x_request_id': 'str'
     }
 
@@ -52,10 +54,12 @@ class ShowAssetResponse(SdkResponse):
         'asset_extra_meta': 'asset_extra_meta',
         'system_properties': 'system_properties',
         'files': 'files',
+        'asset_order': 'asset_order',
+        'supported_service': 'supported_service',
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, project_id=None, asset_id=None, asset_name=None, asset_description=None, app_user_id=None, create_time=None, update_time=None, asset_type=None, asset_state=None, fail_type=None, reason=None, tags=None, asset_extra_meta=None, system_properties=None, files=None, x_request_id=None):
+    def __init__(self, project_id=None, asset_id=None, asset_name=None, asset_description=None, app_user_id=None, create_time=None, update_time=None, asset_type=None, asset_state=None, fail_type=None, reason=None, tags=None, asset_extra_meta=None, system_properties=None, files=None, asset_order=None, supported_service=None, x_request_id=None):
         """ShowAssetResponse
 
         The model defined in huaweicloud sdk
@@ -82,7 +86,7 @@ class ShowAssetResponse(SdkResponse):
         :type fail_type: str
         :param reason: 冻结/解冻/失败 原因。
         :type reason: str
-        :param tags: 标签列表。
+        :param tags: 标签列表。 &gt; 分身形象系统资产的tag定义如下： &gt; - 行业：NEWS,BUSINESS,E-COMMERCE,MARKETING,KNOWLEDGE,EDUCATION,SPORTS &gt; - 性别：MALE,FEMALE &gt; - 姿势：FULL-BODY,HALF-BODY,STANDING,SITTING,WALKING &gt; - 区域：ASIAN,WESTERN,MIDDLE-EASTERNER,AFRICAN,LATINO
         :type tags: list[str]
         :param asset_extra_meta: 
         :type asset_extra_meta: :class:`huaweicloudsdkmetastudio.v1.AssetExtraMeta`
@@ -90,6 +94,10 @@ class ShowAssetResponse(SdkResponse):
         :type system_properties: list[:class:`huaweicloudsdkmetastudio.v1.SystemProperty`]
         :param files: 资产下的文件。
         :type files: list[:class:`huaweicloudsdkmetastudio.v1.AssetFileInfo`]
+        :param asset_order: 展示顺序
+        :type asset_order: int
+        :param supported_service: 支持的业务类型。： * VIDEO_2D：分身数字人视频制作 * LIVE_2D：分身数字人直播 * CHAT_2D：分身数字人智能交互
+        :type supported_service: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
         :param x_request_id: 
         :type x_request_id: str
         """
@@ -111,6 +119,8 @@ class ShowAssetResponse(SdkResponse):
         self._asset_extra_meta = None
         self._system_properties = None
         self._files = None
+        self._asset_order = None
+        self._supported_service = None
         self._x_request_id = None
         self.discriminator = None
 
@@ -144,6 +154,10 @@ class ShowAssetResponse(SdkResponse):
             self.system_properties = system_properties
         if files is not None:
             self.files = files
+        if asset_order is not None:
+            self.asset_order = asset_order
+        if supported_service is not None:
+            self.supported_service = supported_service
         if x_request_id is not None:
             self.x_request_id = x_request_id
 
@@ -393,7 +407,7 @@ class ShowAssetResponse(SdkResponse):
     def tags(self):
         """Gets the tags of this ShowAssetResponse.
 
-        标签列表。
+        标签列表。 > 分身形象系统资产的tag定义如下： > - 行业：NEWS,BUSINESS,E-COMMERCE,MARKETING,KNOWLEDGE,EDUCATION,SPORTS > - 性别：MALE,FEMALE > - 姿势：FULL-BODY,HALF-BODY,STANDING,SITTING,WALKING > - 区域：ASIAN,WESTERN,MIDDLE-EASTERNER,AFRICAN,LATINO
 
         :return: The tags of this ShowAssetResponse.
         :rtype: list[str]
@@ -404,7 +418,7 @@ class ShowAssetResponse(SdkResponse):
     def tags(self, tags):
         """Sets the tags of this ShowAssetResponse.
 
-        标签列表。
+        标签列表。 > 分身形象系统资产的tag定义如下： > - 行业：NEWS,BUSINESS,E-COMMERCE,MARKETING,KNOWLEDGE,EDUCATION,SPORTS > - 性别：MALE,FEMALE > - 姿势：FULL-BODY,HALF-BODY,STANDING,SITTING,WALKING > - 区域：ASIAN,WESTERN,MIDDLE-EASTERNER,AFRICAN,LATINO
 
         :param tags: The tags of this ShowAssetResponse.
         :type tags: list[str]
@@ -472,6 +486,50 @@ class ShowAssetResponse(SdkResponse):
         :type files: list[:class:`huaweicloudsdkmetastudio.v1.AssetFileInfo`]
         """
         self._files = files
+
+    @property
+    def asset_order(self):
+        """Gets the asset_order of this ShowAssetResponse.
+
+        展示顺序
+
+        :return: The asset_order of this ShowAssetResponse.
+        :rtype: int
+        """
+        return self._asset_order
+
+    @asset_order.setter
+    def asset_order(self, asset_order):
+        """Sets the asset_order of this ShowAssetResponse.
+
+        展示顺序
+
+        :param asset_order: The asset_order of this ShowAssetResponse.
+        :type asset_order: int
+        """
+        self._asset_order = asset_order
+
+    @property
+    def supported_service(self):
+        """Gets the supported_service of this ShowAssetResponse.
+
+        支持的业务类型。： * VIDEO_2D：分身数字人视频制作 * LIVE_2D：分身数字人直播 * CHAT_2D：分身数字人智能交互
+
+        :return: The supported_service of this ShowAssetResponse.
+        :rtype: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
+        """
+        return self._supported_service
+
+    @supported_service.setter
+    def supported_service(self, supported_service):
+        """Sets the supported_service of this ShowAssetResponse.
+
+        支持的业务类型。： * VIDEO_2D：分身数字人视频制作 * LIVE_2D：分身数字人直播 * CHAT_2D：分身数字人智能交互
+
+        :param supported_service: The supported_service of this ShowAssetResponse.
+        :type supported_service: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
+        """
+        self._supported_service = supported_service
 
     @property
     def x_request_id(self):

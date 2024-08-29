@@ -24,6 +24,7 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
         'addr': 'str',
         'description': 'str',
         'white': 'int',
+        'time_mode': 'str',
         'ip_group': 'IpGroup'
     }
 
@@ -34,10 +35,11 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
         'addr': 'addr',
         'description': 'description',
         'white': 'white',
+        'time_mode': 'time_mode',
         'ip_group': 'ip_group'
     }
 
-    def __init__(self, id=None, name=None, policyid=None, addr=None, description=None, white=None, ip_group=None):
+    def __init__(self, id=None, name=None, policyid=None, addr=None, description=None, white=None, time_mode=None, ip_group=None):
         """UpdateWhiteblackipRuleResponse
 
         The model defined in huaweicloud sdk
@@ -54,6 +56,8 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
         :type description: str
         :param white: 防护动作：  - 0 拦截  - 1 放行  - 2 仅记录
         :type white: int
+        :param time_mode: 生效模式，默认为permanent（立即生效）
+        :type time_mode: str
         :param ip_group: 
         :type ip_group: :class:`huaweicloudsdkwaf.v1.IpGroup`
         """
@@ -66,6 +70,7 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
         self._addr = None
         self._description = None
         self._white = None
+        self._time_mode = None
         self._ip_group = None
         self.discriminator = None
 
@@ -81,6 +86,8 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
             self.description = description
         if white is not None:
             self.white = white
+        if time_mode is not None:
+            self.time_mode = time_mode
         if ip_group is not None:
             self.ip_group = ip_group
 
@@ -215,6 +222,28 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
         :type white: int
         """
         self._white = white
+
+    @property
+    def time_mode(self):
+        """Gets the time_mode of this UpdateWhiteblackipRuleResponse.
+
+        生效模式，默认为permanent（立即生效）
+
+        :return: The time_mode of this UpdateWhiteblackipRuleResponse.
+        :rtype: str
+        """
+        return self._time_mode
+
+    @time_mode.setter
+    def time_mode(self, time_mode):
+        """Sets the time_mode of this UpdateWhiteblackipRuleResponse.
+
+        生效模式，默认为permanent（立即生效）
+
+        :param time_mode: The time_mode of this UpdateWhiteblackipRuleResponse.
+        :type time_mode: str
+        """
+        self._time_mode = time_mode
 
     @property
     def ip_group(self):

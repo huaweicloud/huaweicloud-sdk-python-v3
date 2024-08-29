@@ -5,6 +5,8 @@ from __future__ import absolute_import
 from huaweicloudsdkgsl.v3.gsl_client import GslClient
 from huaweicloudsdkgsl.v3.gsl_async_client import GslAsyncClient
 
+from huaweicloudsdkgsl.v3.model.add_network_switch_policy_request import AddNetworkSwitchPolicyRequest
+from huaweicloudsdkgsl.v3.model.add_network_switch_policy_response import AddNetworkSwitchPolicyResponse
 from huaweicloudsdkgsl.v3.model.add_or_modify_attribute_req import AddOrModifyAttributeReq
 from huaweicloudsdkgsl.v3.model.add_or_modify_tag_req import AddOrModifyTagReq
 from huaweicloudsdkgsl.v3.model.attribute_req import AttributeReq
@@ -46,10 +48,14 @@ from huaweicloudsdkgsl.v3.model.list_back_pools_response import ListBackPoolsRes
 from huaweicloudsdkgsl.v3.model.list_flow_by_sim_cards_req import ListFlowBySimCardsReq
 from huaweicloudsdkgsl.v3.model.list_flow_by_sim_cards_request import ListFlowBySimCardsRequest
 from huaweicloudsdkgsl.v3.model.list_flow_by_sim_cards_response import ListFlowBySimCardsResponse
+from huaweicloudsdkgsl.v3.model.list_network_switch_policies_request import ListNetworkSwitchPoliciesRequest
+from huaweicloudsdkgsl.v3.model.list_network_switch_policies_response import ListNetworkSwitchPoliciesResponse
 from huaweicloudsdkgsl.v3.model.list_pro_price_plans_request import ListProPricePlansRequest
 from huaweicloudsdkgsl.v3.model.list_pro_price_plans_response import ListProPricePlansResponse
 from huaweicloudsdkgsl.v3.model.list_sim_cards_request import ListSimCardsRequest
 from huaweicloudsdkgsl.v3.model.list_sim_cards_response import ListSimCardsResponse
+from huaweicloudsdkgsl.v3.model.list_sim_device_multiply_request import ListSimDeviceMultiplyRequest
+from huaweicloudsdkgsl.v3.model.list_sim_device_multiply_response import ListSimDeviceMultiplyResponse
 from huaweicloudsdkgsl.v3.model.list_sim_pool_members_request import ListSimPoolMembersRequest
 from huaweicloudsdkgsl.v3.model.list_sim_pool_members_response import ListSimPoolMembersResponse
 from huaweicloudsdkgsl.v3.model.list_sim_pools_request import ListSimPoolsRequest
@@ -65,6 +71,10 @@ from huaweicloudsdkgsl.v3.model.list_work_order_details_response import ListWork
 from huaweicloudsdkgsl.v3.model.list_work_orders_request import ListWorkOrdersRequest
 from huaweicloudsdkgsl.v3.model.list_work_orders_response import ListWorkOrdersResponse
 from huaweicloudsdkgsl.v3.model.month_usage_vo import MonthUsageVo
+from huaweicloudsdkgsl.v3.model.network_switch_policy_dto import NetworkSwitchPolicyDTO
+from huaweicloudsdkgsl.v3.model.network_switch_policy_req import NetworkSwitchPolicyReq
+from huaweicloudsdkgsl.v3.model.network_switch_policy_vo import NetworkSwitchPolicyVO
+from huaweicloudsdkgsl.v3.model.network_switch_req import NetworkSwitchReq
 from huaweicloudsdkgsl.v3.model.pool_mem_vo import PoolMemVO
 from huaweicloudsdkgsl.v3.model.pro_price_plan_vo import ProPricePlanVo
 from huaweicloudsdkgsl.v3.model.register_imei_req import RegisterImeiReq
@@ -76,6 +86,8 @@ from huaweicloudsdkgsl.v3.model.send_sms_request import SendSmsRequest
 from huaweicloudsdkgsl.v3.model.send_sms_response import SendSmsResponse
 from huaweicloudsdkgsl.v3.model.set_exceed_cut_net_request import SetExceedCutNetRequest
 from huaweicloudsdkgsl.v3.model.set_exceed_cut_net_response import SetExceedCutNetResponse
+from huaweicloudsdkgsl.v3.model.set_network_switch_policy_request import SetNetworkSwitchPolicyRequest
+from huaweicloudsdkgsl.v3.model.set_network_switch_policy_response import SetNetworkSwitchPolicyResponse
 from huaweicloudsdkgsl.v3.model.set_speed_value_req import SetSpeedValueReq
 from huaweicloudsdkgsl.v3.model.set_speed_value_request import SetSpeedValueRequest
 from huaweicloudsdkgsl.v3.model.set_speed_value_response import SetSpeedValueResponse
@@ -87,6 +99,7 @@ from huaweicloudsdkgsl.v3.model.show_real_named_response import ShowRealNamedRes
 from huaweicloudsdkgsl.v3.model.show_sim_card_request import ShowSimCardRequest
 from huaweicloudsdkgsl.v3.model.show_sim_card_response import ShowSimCardResponse
 from huaweicloudsdkgsl.v3.model.sim_cards_flow_vo import SimCardsFlowVO
+from huaweicloudsdkgsl.v3.model.sim_device_multiply_vo import SimDeviceMultiplyVO
 from huaweicloudsdkgsl.v3.model.sim_device_vo import SimDeviceVO
 from huaweicloudsdkgsl.v3.model.sim_pool_vo import SimPoolVO
 from huaweicloudsdkgsl.v3.model.sim_price_plan_vo import SimPricePlanVO
@@ -95,6 +108,8 @@ from huaweicloudsdkgsl.v3.model.start_stop_net_request import StartStopNetReques
 from huaweicloudsdkgsl.v3.model.start_stop_net_response import StartStopNetResponse
 from huaweicloudsdkgsl.v3.model.stop_sim_card_request import StopSimCardRequest
 from huaweicloudsdkgsl.v3.model.stop_sim_card_response import StopSimCardResponse
+from huaweicloudsdkgsl.v3.model.switch_network_request import SwitchNetworkRequest
+from huaweicloudsdkgsl.v3.model.switch_network_response import SwitchNetworkResponse
 from huaweicloudsdkgsl.v3.model.update_attribute_request import UpdateAttributeRequest
 from huaweicloudsdkgsl.v3.model.update_attribute_response import UpdateAttributeResponse
 from huaweicloudsdkgsl.v3.model.work_order_detail_vo import WorkOrderDetailVo

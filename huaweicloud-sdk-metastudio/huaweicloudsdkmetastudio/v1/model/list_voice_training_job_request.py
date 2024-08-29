@@ -25,7 +25,8 @@ class ListVoiceTrainingJobRequest:
         'state': 'str',
         'job_id': 'str',
         'voice_name': 'str',
-        'tag': 'str'
+        'tag': 'str',
+        'job_type': 'str'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class ListVoiceTrainingJobRequest:
         'state': 'state',
         'job_id': 'job_id',
         'voice_name': 'voice_name',
-        'tag': 'tag'
+        'tag': 'tag',
+        'job_type': 'job_type'
     }
 
-    def __init__(self, offset=None, limit=None, create_until=None, create_since=None, x_app_user_id=None, state=None, job_id=None, voice_name=None, tag=None):
+    def __init__(self, offset=None, limit=None, create_until=None, create_since=None, x_app_user_id=None, state=None, job_id=None, voice_name=None, tag=None, job_type=None):
         """ListVoiceTrainingJobRequest
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class ListVoiceTrainingJobRequest:
         :type voice_name: str
         :param tag: 任务标签。
         :type tag: str
+        :param job_type: 训练类型。 * BASIC: 基础版(20句话) * MIDDLE: 进阶版(100句话) * ADVANCE: 高级版 * THIRD_PARTY: 第三方出门问问训练版 * THIRD_PARTY_LJZN: 第三方逻辑智能训练版 * FLEXUS: Flexus版---用的是大模型特征提取
+        :type job_type: str
         """
         
         
@@ -76,6 +80,7 @@ class ListVoiceTrainingJobRequest:
         self._job_id = None
         self._voice_name = None
         self._tag = None
+        self._job_type = None
         self.discriminator = None
 
         if offset is not None:
@@ -96,6 +101,8 @@ class ListVoiceTrainingJobRequest:
             self.voice_name = voice_name
         if tag is not None:
             self.tag = tag
+        if job_type is not None:
+            self.job_type = job_type
 
     @property
     def offset(self):
@@ -294,6 +301,28 @@ class ListVoiceTrainingJobRequest:
         :type tag: str
         """
         self._tag = tag
+
+    @property
+    def job_type(self):
+        """Gets the job_type of this ListVoiceTrainingJobRequest.
+
+        训练类型。 * BASIC: 基础版(20句话) * MIDDLE: 进阶版(100句话) * ADVANCE: 高级版 * THIRD_PARTY: 第三方出门问问训练版 * THIRD_PARTY_LJZN: 第三方逻辑智能训练版 * FLEXUS: Flexus版---用的是大模型特征提取
+
+        :return: The job_type of this ListVoiceTrainingJobRequest.
+        :rtype: str
+        """
+        return self._job_type
+
+    @job_type.setter
+    def job_type(self, job_type):
+        """Sets the job_type of this ListVoiceTrainingJobRequest.
+
+        训练类型。 * BASIC: 基础版(20句话) * MIDDLE: 进阶版(100句话) * ADVANCE: 高级版 * THIRD_PARTY: 第三方出门问问训练版 * THIRD_PARTY_LJZN: 第三方逻辑智能训练版 * FLEXUS: Flexus版---用的是大模型特征提取
+
+        :param job_type: The job_type of this ListVoiceTrainingJobRequest.
+        :type job_type: str
+        """
+        self._job_type = job_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

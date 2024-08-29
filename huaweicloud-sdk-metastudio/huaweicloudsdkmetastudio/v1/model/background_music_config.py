@@ -31,7 +31,7 @@ class BackgroundMusicConfig:
 
         The model defined in huaweicloud sdk
 
-        :param music_asset_id: 音乐资产ID。
+        :param music_asset_id: 音乐资产ID，可以从资产库中查询。
         :type music_asset_id: str
         :param volume: 音乐音量。如100，表示音量100%，50表示音量50%。  默认值100，最小值0，最大值100。
         :type volume: int
@@ -52,7 +52,7 @@ class BackgroundMusicConfig:
     def music_asset_id(self):
         """Gets the music_asset_id of this BackgroundMusicConfig.
 
-        音乐资产ID。
+        音乐资产ID，可以从资产库中查询。
 
         :return: The music_asset_id of this BackgroundMusicConfig.
         :rtype: str
@@ -63,7 +63,7 @@ class BackgroundMusicConfig:
     def music_asset_id(self, music_asset_id):
         """Sets the music_asset_id of this BackgroundMusicConfig.
 
-        音乐资产ID。
+        音乐资产ID，可以从资产库中查询。
 
         :param music_asset_id: The music_asset_id of this BackgroundMusicConfig.
         :type music_asset_id: str

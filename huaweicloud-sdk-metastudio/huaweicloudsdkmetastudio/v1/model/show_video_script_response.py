@@ -70,7 +70,7 @@ class ShowVideoScriptResponse(SdkResponse):
         :type script_description: str
         :param view_mode: 横竖屏类型。默认值是LANDSCAPE。 * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
         :type view_mode: str
-        :param model_asset_id: 数字人模型资产ID。
+        :param model_asset_id: 数字人模型资产ID，可以从资产库中查询。
         :type model_asset_id: str
         :param model_asset_type: 数字人模型类型。  * HUMAN_MODEL_2D：分身数字人 * HUMAN_MODEL_3D：3D数字人
         :type model_asset_type: str
@@ -78,7 +78,7 @@ class ShowVideoScriptResponse(SdkResponse):
         :type voice_config: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
         :param video_config: 
         :type video_config: :class:`huaweicloudsdkmetastudio.v1.VideoConfig`
-        :param scene_asset_id: 场景资产ID。 &gt; * 分身数字人视频制作不需要填写该参数。
+        :param scene_asset_id: 场景资产ID。 &gt; * 分身数字人视频制作不需要填写该参数。 &gt; * 若填写，可以从资产库中查询。
         :type scene_asset_id: str
         :param priv_data: 私有数据，用户填写，原样带回。
         :type priv_data: str
@@ -231,7 +231,7 @@ class ShowVideoScriptResponse(SdkResponse):
     def model_asset_id(self):
         """Gets the model_asset_id of this ShowVideoScriptResponse.
 
-        数字人模型资产ID。
+        数字人模型资产ID，可以从资产库中查询。
 
         :return: The model_asset_id of this ShowVideoScriptResponse.
         :rtype: str
@@ -242,7 +242,7 @@ class ShowVideoScriptResponse(SdkResponse):
     def model_asset_id(self, model_asset_id):
         """Sets the model_asset_id of this ShowVideoScriptResponse.
 
-        数字人模型资产ID。
+        数字人模型资产ID，可以从资产库中查询。
 
         :param model_asset_id: The model_asset_id of this ShowVideoScriptResponse.
         :type model_asset_id: str
@@ -311,7 +311,7 @@ class ShowVideoScriptResponse(SdkResponse):
     def scene_asset_id(self):
         """Gets the scene_asset_id of this ShowVideoScriptResponse.
 
-        场景资产ID。 > * 分身数字人视频制作不需要填写该参数。
+        场景资产ID。 > * 分身数字人视频制作不需要填写该参数。 > * 若填写，可以从资产库中查询。
 
         :return: The scene_asset_id of this ShowVideoScriptResponse.
         :rtype: str
@@ -322,7 +322,7 @@ class ShowVideoScriptResponse(SdkResponse):
     def scene_asset_id(self, scene_asset_id):
         """Sets the scene_asset_id of this ShowVideoScriptResponse.
 
-        场景资产ID。 > * 分身数字人视频制作不需要填写该参数。
+        场景资产ID。 > * 分身数字人视频制作不需要填写该参数。 > * 若填写，可以从资产库中查询。
 
         :param scene_asset_id: The scene_asset_id of this ShowVideoScriptResponse.
         :type scene_asset_id: str

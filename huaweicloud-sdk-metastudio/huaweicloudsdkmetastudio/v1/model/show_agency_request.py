@@ -29,7 +29,7 @@ class ShowAgencyRequest:
 
         The model defined in huaweicloud sdk
 
-        :param role_type: 委托授权类型 * CBS:对话机器人服务（CBS）访客 * SIS:语音交互服务(SIS)调用
+        :param role_type: 委托授权类型 * CBS:对话机器人服务(CBS)访客 * SIS:语音交互服务(SIS)调用
         :type role_type: str
         """
         
@@ -45,7 +45,7 @@ class ShowAgencyRequest:
     def role_type(self):
         """Gets the role_type of this ShowAgencyRequest.
 
-        委托授权类型 * CBS:对话机器人服务（CBS）访客 * SIS:语音交互服务(SIS)调用
+        委托授权类型 * CBS:对话机器人服务(CBS)访客 * SIS:语音交互服务(SIS)调用
 
         :return: The role_type of this ShowAgencyRequest.
         :rtype: str
@@ -56,7 +56,7 @@ class ShowAgencyRequest:
     def role_type(self, role_type):
         """Sets the role_type of this ShowAgencyRequest.
 
-        委托授权类型 * CBS:对话机器人服务（CBS）访客 * SIS:语音交互服务(SIS)调用
+        委托授权类型 * CBS:对话机器人服务(CBS)访客 * SIS:语音交互服务(SIS)调用
 
         :param role_type: The role_type of this ShowAgencyRequest.
         :type role_type: str

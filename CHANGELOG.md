@@ -1,3 +1,524 @@
+# 3.1.112 2024-08-29
+
+### HuaweiCloud SDK BSS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListCustomerselfResourceRecordDetails**
+    - changes of request param
+      - `+ payer_account_id`
+    - changes of response param
+      - `+ monthly_records.payer_account_id`
+
+### HuaweiCloud SDK BSSINTL
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListCustomerselfResourceRecordDetails**
+    - changes of request param
+      - `+ payer_account_id`
+    - changes of response param
+      - `+ monthly_records.payer_account_id`
+
+### HuaweiCloud SDK CAE
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListEips**
+    - changes of response param
+      - `+ spec.egress.enabled`
+      - `+ spec.ingress.enabled`
+  - **UpdateEip**
+    - changes of request param
+      - `+ spec.egress.enabled`
+      - `+ spec.ingress.enabled`
+  - **ListComponentSnapshots**
+    - changes of response param
+      - `+ items.context.runtime: enum value [Php8]`
+  - **ShowComponent**
+    - changes of response param
+      - `+ spec.runtime: enum value [Php8]`
+  - **UpdateComponent**
+    - changes of request param
+      - `+ spec.runtime: enum value [Php8]`
+  - **CreateComponent**
+    - changes of request param
+      - `+ spec.runtime: enum value [Php8]`
+    - changes of response param
+      - `+ spec.runtime: enum value [Php8]`
+  - **ListComponents**
+    - changes of response param
+      - `+ items.spec.runtime: enum value [Php8]`
+  - **CreateComponentWithConfiguration**
+    - changes of request param
+      - `+ spec.runtime: enum value [Php8]`
+      - `+ configurations.data.spec.cloud_storage_log_paths`
+    - changes of response param
+      - `+ spec.runtime: enum value [Php8]`
+      - `+ configurations.data.spec.cloud_storage_log_paths`
+  - **ListComponentConfigurations**
+    - changes of response param
+      - `+ items.is_using`
+      - `+ items.data.spec.cloud_storage_log_paths`
+  - **CreateComponentConfiguration**
+    - changes of request param
+      - `+ items.data.spec.cloud_storage_log_paths`
+
+### HuaweiCloud SDK CCE
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowNode**
+    - changes of response param
+      - `+ spec.nodeNicSpec.primaryNic.subnetList`
+  - **UpdateNode**
+    - changes of response param
+      - `+ spec.nodeNicSpec.primaryNic.subnetList`
+  - **DeleteNode**
+    - changes of response param
+      - `+ spec.nodeNicSpec.primaryNic.subnetList`
+  - **CreateNode**
+    - changes of request param
+      - `+ spec.nodeNicSpec.primaryNic.subnetList`
+    - changes of response param
+      - `+ spec.nodeNicSpec.primaryNic.subnetList`
+  - **ListNodes**
+    - changes of response param
+      - `+ items.spec.nodeNicSpec.primaryNic.subnetList`
+  - **ShowNodePool**
+    - changes of response param
+      - `+ spec.nodeTemplate.nodeNicSpec.primaryNic.subnetList`
+  - **UpdateNodePool**
+    - changes of request param
+      - `+ spec.nodeTemplate.nodeNicSpecUpdate`
+    - changes of response param
+      - `+ spec.nodeTemplate.nodeNicSpec.primaryNic.subnetList`
+  - **DeleteNodePool**
+    - changes of response param
+      - `+ spec.nodeTemplate.nodeNicSpec.primaryNic.subnetList`
+  - **CreateNodePool**
+    - changes of request param
+      - `+ spec.nodeTemplate.nodeNicSpec.primaryNic.subnetList`
+    - changes of response param
+      - `+ spec.nodeTemplate.nodeNicSpec.primaryNic.subnetList`
+  - **ListNodePools**
+    - changes of response param
+      - `+ items.spec.nodeTemplate.nodeNicSpec.primaryNic.subnetList`
+
+### HuaweiCloud SDK DGC
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ImportJob**
+    - changes of request param
+      - `+ targetStatus`
+      - `+ approvers`
+      - `+ resources`
+
+### HuaweiCloud SDK ECS
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the API `ListCloudServers`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK EIP
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListCommonPools**
+    - changes of request param
+      - `* fields: string -> list<string>`
+  - **ListShareBandwidthTypes**
+    - changes of request param
+      - `* fields: string -> list<string>`
+  - **ListTenantVpcIgws**
+    - changes of request param
+      - `* fields: string -> list<string>`
+  - **CreateTenantVpcIgw**
+    - changes of request param
+      - `* fields: string -> list<string>`
+  - **ShowInternalVpcIgw**
+    - changes of request param
+      - `* fields: string -> list<string>`
+  - **UpdateTenantVpcIgw**
+    - changes of request param
+      - `* fields: string -> list<string>`
+  - **ListEipBandwidths**
+    - changes of request param
+      - `+ fields`
+  - **ListBandwidth**
+    - changes of request param
+      - `+ fields`
+  - **ListPublicipPool**
+    - changes of request param
+      - `* fields: string -> list<string>`
+  - **ShowPublicipPool**
+    - changes of request param
+      - `* fields: string -> list<string>`
+  - **ListProjectGeipBindings**
+    - changes of request param
+      - `* fields: string -> list<string>`
+
+### HuaweiCloud SDK EVS
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the API `RetypeVolume`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK FunctionGraph
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowFunctionCode**
+    - changes of response param
+      - `* dependencies.last_modified: date-time -> int64`
+  - **UpdateFunctionCode**
+    - changes of response param
+      - `* dependencies.last_modified: date-time -> int64`
+  - **CreateFunction**
+    - changes of response param
+      - `* dependencies.last_modified: date-time -> int64`
+  - **ShowFunctionConfig**
+    - changes of response param
+      - `* dependencies.last_modified: date-time -> int64`
+  - **UpdateFunctionConfig**
+    - changes of response param
+      - `* dependencies.last_modified: date-time -> int64`
+  - **UpdateFunctionMaxInstanceConfig**
+    - changes of response param
+      - `* dependencies.last_modified: date-time -> int64`
+  - **CreateFunctionTrigger**
+    - changes of request param
+      - `+ event_data.Key_encode`
+      - `+ event_data.agency`
+      - `+ event_data.channel_name`
+      - `+ event_data.source_name`
+      - `+ event_data.created_time`
+      - `+ event_data.status`
+      - `+ event_data.trigger_name`
+  - **CreateFunctionVersion**
+    - changes of response param
+      - `* dependencies.last_modified: date-time -> int64`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the API `CreateGaussDbInstance`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK GSL
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `ListSimDeviceMultiply`
+    - `SwitchNetwork`
+    - `SetNetworkSwitchPolicy`
+    - `ListNetworkSwitchPolicies`
+    - `AddNetworkSwitchPolicy`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK HSS
+
+- _API Version_
+  - V5
+- _Features_
+  - Support the following APIs:
+    - `ListQueryExportTask`
+    - `ListDownloadExportedFile`
+    - `ExportVuls`
+    - `ListAccounts`
+    - `BatchAddAccounts`
+    - `DeleteAccount`
+    - `ListOrganizationTree`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK MetaStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `ListJobOperationLog`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ConfirmFileUpload**
+    - changes of request param
+      - `+ auto_meta_analysis`
+  - **ShowAssetReplicationInfo**
+    - changes of response param
+      - `+ expire_time`
+  - **CreateAssetByReplicationInfo**
+    - changes of request param
+      - `+ expire_time`
+  - **ShowRobot**
+    - changes of response param
+      - `+ robot_type`
+  - **UpdateRobot**
+    - changes of request param
+      - `+ robot_type`
+  - **CreateTrainingBasicJob**
+    - changes of request param
+      - `+ dhtms_job_id`
+  - **CreateTrainingMiddleJob**
+    - changes of request param
+      - `+ dhtms_job_id`
+  - **CreateTrainingAdvanceJob**
+    - changes of request param
+      - `+ dhtms_job_id`
+  - **ShowVoiceTrainingJob**
+    - changes of response param
+      - `+ dhtms_job_id`
+      - `+ job_type: enum value [THIRD_PARTY_LJZN,FLEXUS]`
+      - `- job_type: enum value [LLM_MAJOR,LLM_MINOR]`
+      - `+ state: enum value [WAITING_SPLIT,SPLITTING,SPLIT_FAILED,ANNOTATING]`
+  - **StartSmartChatJob**
+    - changes of response param
+      - `+ is_transparent`
+      - `+ language`
+      - `+ region`
+      - `+ chat_access_address`
+      - `* video_config: object<ChatVideoConfigRsp> -> object<SmartChatVideoConfig>`
+  - **ShowSmartChatJob**
+    - changes of response param
+      - `+ is_transparent`
+      - `+ language`
+      - `+ chat_access_address`
+      - `+ chat_state`
+      - `* video_config: object<ChatVideoConfigRsp> -> object<SmartChatVideoConfig>`
+  - **CreateRobot**
+    - changes of request param
+      - `+ robot_type`
+  - **ListRobot**
+    - changes of request param
+      - `+ robot_type`
+    - changes of response param
+      - `+ robot_type`
+      - `+ data.robot_type`
+  - **ListDigitalHumanVideo**
+    - changes of request param
+      - `+ fuzzy_query_field`
+  - **ListVoiceTrainingJob**
+    - changes of request param
+      - `+ job_type`
+    - changes of response param
+      - `+ dhtms_job_id`
+      - `+ jobs.dhtms_job_id`
+      - `+ jobs.job_type: enum value [THIRD_PARTY_LJZN,FLEXUS]`
+      - `- jobs.job_type: enum value [LLM_MAJOR,LLM_MINOR]`
+      - `+ jobs.state: enum value [WAITING_SPLIT,SPLITTING,SPLIT_FAILED,ANNOTATING]`
+  - **ShowAsset**
+    - changes of response param
+      - `+ asset_order`
+      - `+ supported_service`
+      - `+ system_properties.key: enum value [BUSINESS_CARD_VIDEO]`
+      - `+ asset_extra_meta.human_model_2d_meta.is_with_action_library`
+      - `+ asset_extra_meta.human_model_2d_meta.action_tag_map`
+      - `+ asset_extra_meta.human_model_2d_meta.is_flexus`
+      - `+ asset_extra_meta.video_meta.video_transcoding_status`
+      - `+ asset_extra_meta.voice_model_meta.is_support_vc_process`
+      - `+ asset_extra_meta.voice_model_meta.is_flexus`
+      - `+ asset_extra_meta.voice_model_meta.voice_capability.is_support_phoneme_en`
+      - `+ asset_extra_meta.voice_model_meta.external_voice_meta.provider: enum value [DATABAKER]`
+      - `- asset_extra_meta.voice_model_meta.external_voice_meta.provider: enum value [DATABACK]`
+  - **UpdateDigitalAsset**
+    - changes of request param
+      - `+ asset_order`
+      - `+ supported_service`
+      - `+ system_properties.key: enum value [BUSINESS_CARD_VIDEO]`
+      - `+ asset_extra_meta.human_model_2d_meta.is_with_action_library`
+      - `+ asset_extra_meta.human_model_2d_meta.action_tag_map`
+      - `+ asset_extra_meta.human_model_2d_meta.is_flexus`
+      - `+ asset_extra_meta.video_meta.video_transcoding_status`
+      - `+ asset_extra_meta.voice_model_meta.is_support_vc_process`
+      - `+ asset_extra_meta.voice_model_meta.is_flexus`
+      - `+ asset_extra_meta.voice_model_meta.voice_capability.is_support_phoneme_en`
+      - `+ asset_extra_meta.voice_model_meta.external_voice_meta.provider: enum value [DATABAKER]`
+      - `- asset_extra_meta.voice_model_meta.external_voice_meta.provider: enum value [DATABACK]`
+    - changes of response param
+      - `+ asset_order`
+      - `+ supported_service`
+      - `+ system_properties.key: enum value [BUSINESS_CARD_VIDEO]`
+      - `+ asset_extra_meta.human_model_2d_meta.is_with_action_library`
+      - `+ asset_extra_meta.human_model_2d_meta.action_tag_map`
+      - `+ asset_extra_meta.human_model_2d_meta.is_flexus`
+      - `+ asset_extra_meta.video_meta.video_transcoding_status`
+      - `+ asset_extra_meta.voice_model_meta.is_support_vc_process`
+      - `+ asset_extra_meta.voice_model_meta.is_flexus`
+      - `+ asset_extra_meta.voice_model_meta.voice_capability.is_support_phoneme_en`
+      - `+ asset_extra_meta.voice_model_meta.external_voice_meta.provider: enum value [DATABAKER]`
+      - `- asset_extra_meta.voice_model_meta.external_voice_meta.provider: enum value [DATABACK]`
+  - **CreateDigitalAsset**
+    - changes of request param
+      - `+ asset_order`
+      - `+ supported_service`
+      - `+ system_properties.key: enum value [BUSINESS_CARD_VIDEO]`
+      - `+ asset_extra_meta.human_model_2d_meta.is_with_action_library`
+      - `+ asset_extra_meta.human_model_2d_meta.action_tag_map`
+      - `+ asset_extra_meta.human_model_2d_meta.is_flexus`
+      - `+ asset_extra_meta.video_meta.video_transcoding_status`
+      - `+ asset_extra_meta.voice_model_meta.is_support_vc_process`
+      - `+ asset_extra_meta.voice_model_meta.is_flexus`
+      - `+ asset_extra_meta.voice_model_meta.voice_capability.is_support_phoneme_en`
+      - `+ asset_extra_meta.voice_model_meta.external_voice_meta.provider: enum value [DATABAKER]`
+      - `- asset_extra_meta.voice_model_meta.external_voice_meta.provider: enum value [DATABACK]`
+  - **ListAssets**
+    - changes of request param
+      - `+ tag_combination_type`
+      - `+ accurate_query_field`
+      - `+ is_with_action_library`
+      - `+ supported_service`
+    - changes of response param
+      - `+ asset_order`
+      - `+ supported_service`
+      - `+ assets.asset_order`
+      - `+ assets.supported_service`
+      - `+ assets.system_properties.key: enum value [BUSINESS_CARD_VIDEO]`
+      - `+ assets.asset_extra_meta.human_model_2d_meta.is_with_action_library`
+      - `+ assets.asset_extra_meta.human_model_2d_meta.action_tag_map`
+      - `+ assets.asset_extra_meta.human_model_2d_meta.is_flexus`
+      - `+ assets.asset_extra_meta.video_meta.video_transcoding_status`
+      - `+ assets.asset_extra_meta.voice_model_meta.is_support_vc_process`
+      - `+ assets.asset_extra_meta.voice_model_meta.is_flexus`
+      - `+ assets.asset_extra_meta.voice_model_meta.voice_capability.is_support_phoneme_en`
+      - `+ assets.asset_extra_meta.voice_model_meta.external_voice_meta.provider: enum value [DATABAKER]`
+      - `- assets.asset_extra_meta.voice_model_meta.external_voice_meta.provider: enum value [DATABACK]`
+  - **ListSmartLiveRooms**
+    - changes of response param
+      - `+ smart_live_rooms.priv_data`
+  - **CreateSmartLiveRoom**
+    - changes of request param
+      - `+ priv_data`
+  - **ShowSmartLiveRoom**
+    - changes of response param
+      - `+ priv_data`
+  - **UpdateSmartLiveRoom**
+    - changes of request param
+      - `+ priv_data`
+    - changes of response param
+      - `+ priv_data`
+  - **ShowVideoScript**
+    - changes of response param
+      - `+ shoot_scripts.subtitle_file_info`
+
+### HuaweiCloud SDK RDS
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateManualBackup**
+    - changes of request param
+      - `+ backup_database_individually`
+
+### HuaweiCloud SDK VPC
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **AddSecurityGroups**
+    - changes of response param
+      - `+ port.extra_dhcp_opts.opt_name`
+      - `+ port.extra_dhcp_opts.opt_value`
+      - `* port.extra_dhcp_opts: list<object> -> list<ExtraDhcpOpt>`
+  - **RemoveSecurityGroups**
+    - changes of response param
+      - `+ port.extra_dhcp_opts.opt_name`
+      - `+ port.extra_dhcp_opts.opt_value`
+      - `* port.extra_dhcp_opts: list<object> -> list<ExtraDhcpOpt>`
+
+### HuaweiCloud SDK WAF
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowWhiteBlackIpRule**
+    - changes of response param
+      - `+ time_mode`
+  - **UpdateWhiteblackipRule**
+    - changes of response param
+      - `+ time_mode`
+  - **DeleteWhiteBlackIpRule**
+    - changes of response param
+      - `+ time_mode`
+  - **UpdateIpGroup**
+    - changes of request param
+      - `+ action`
+  - **CreateWhiteblackipRule**
+    - changes of response param
+      - `+ time_mode`
+  - **ListWhiteblackipRule**
+    - changes of response param
+      - `+ items.time_mode`
+
 # 3.1.111 2024-08-22
 
 ### HuaweiCloud SDK CAE

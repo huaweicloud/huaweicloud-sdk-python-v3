@@ -53,7 +53,7 @@ class CreateDigitalHumanBusinessCardReq:
 
         :param business_card_type: 数字人名片类型。 * 2D_DIGITAL_HUMAN_CARD：分身数字人名片。
         :type business_card_type: str
-        :param card_templet_asset_id: 数字人名片模板资产ID。
+        :param card_templet_asset_id: 数字人名片模板资产ID，可以从资产库中查询。
         :type card_templet_asset_id: str
         :param card_text_config: 
         :type card_text_config: :class:`huaweicloudsdkmetastudio.v1.BusinessCardTextConfig`
@@ -63,9 +63,9 @@ class CreateDigitalHumanBusinessCardReq:
         :type introduction_type: str
         :param introduction_text: 自我介绍文本，用于驱动数字人口型。
         :type introduction_text: str
-        :param voice_asset_id: 音色资产ID。
+        :param voice_asset_id: 音色资产ID，可以从资产库中查询。
         :type voice_asset_id: str
-        :param introduction_audio_asset_id: 自我介绍语音资产ID，用于驱动数字人口型。 &gt; * 介绍语音需要作为asset_type&#x3D;AUDIO资产先上传至资产库。
+        :param introduction_audio_asset_id: 自我介绍语音资产ID，用于驱动数字人口型。 &gt; * 介绍语音需要作为asset_type&#x3D;AUDIO资产先上传至资产库。 &gt; * 使用时从资产库中查询。
         :type introduction_audio_asset_id: str
         :param video_asset_name: 输出名片视频资产名称。默认取card_name的值
         :type video_asset_name: str
@@ -140,7 +140,7 @@ class CreateDigitalHumanBusinessCardReq:
     def card_templet_asset_id(self):
         """Gets the card_templet_asset_id of this CreateDigitalHumanBusinessCardReq.
 
-        数字人名片模板资产ID。
+        数字人名片模板资产ID，可以从资产库中查询。
 
         :return: The card_templet_asset_id of this CreateDigitalHumanBusinessCardReq.
         :rtype: str
@@ -151,7 +151,7 @@ class CreateDigitalHumanBusinessCardReq:
     def card_templet_asset_id(self, card_templet_asset_id):
         """Sets the card_templet_asset_id of this CreateDigitalHumanBusinessCardReq.
 
-        数字人名片模板资产ID。
+        数字人名片模板资产ID，可以从资产库中查询。
 
         :param card_templet_asset_id: The card_templet_asset_id of this CreateDigitalHumanBusinessCardReq.
         :type card_templet_asset_id: str
@@ -242,7 +242,7 @@ class CreateDigitalHumanBusinessCardReq:
     def voice_asset_id(self):
         """Gets the voice_asset_id of this CreateDigitalHumanBusinessCardReq.
 
-        音色资产ID。
+        音色资产ID，可以从资产库中查询。
 
         :return: The voice_asset_id of this CreateDigitalHumanBusinessCardReq.
         :rtype: str
@@ -253,7 +253,7 @@ class CreateDigitalHumanBusinessCardReq:
     def voice_asset_id(self, voice_asset_id):
         """Sets the voice_asset_id of this CreateDigitalHumanBusinessCardReq.
 
-        音色资产ID。
+        音色资产ID，可以从资产库中查询。
 
         :param voice_asset_id: The voice_asset_id of this CreateDigitalHumanBusinessCardReq.
         :type voice_asset_id: str
@@ -264,7 +264,7 @@ class CreateDigitalHumanBusinessCardReq:
     def introduction_audio_asset_id(self):
         """Gets the introduction_audio_asset_id of this CreateDigitalHumanBusinessCardReq.
 
-        自我介绍语音资产ID，用于驱动数字人口型。 > * 介绍语音需要作为asset_type=AUDIO资产先上传至资产库。
+        自我介绍语音资产ID，用于驱动数字人口型。 > * 介绍语音需要作为asset_type=AUDIO资产先上传至资产库。 > * 使用时从资产库中查询。
 
         :return: The introduction_audio_asset_id of this CreateDigitalHumanBusinessCardReq.
         :rtype: str
@@ -275,7 +275,7 @@ class CreateDigitalHumanBusinessCardReq:
     def introduction_audio_asset_id(self, introduction_audio_asset_id):
         """Sets the introduction_audio_asset_id of this CreateDigitalHumanBusinessCardReq.
 
-        自我介绍语音资产ID，用于驱动数字人口型。 > * 介绍语音需要作为asset_type=AUDIO资产先上传至资产库。
+        自我介绍语音资产ID，用于驱动数字人口型。 > * 介绍语音需要作为asset_type=AUDIO资产先上传至资产库。 > * 使用时从资产库中查询。
 
         :param introduction_audio_asset_id: The introduction_audio_asset_id of this CreateDigitalHumanBusinessCardReq.
         :type introduction_audio_asset_id: str

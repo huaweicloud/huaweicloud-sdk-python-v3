@@ -12,6 +12,8 @@ class AosRegion:
                         "https://rfs.cn-south-1.myhuaweicloud.com")
     CN_EAST_3 = Region("cn-east-3",
                         "https://rfs.cn-east-3.myhuaweicloud.com")
+    CN_EAST_4 = Region("cn-east-4",
+                        "https://rfs.cn-east-4.myhuaweicloud.com")
     CN_NORTH_9 = Region("cn-north-9",
                         "https://rfs.cn-north-9.myhuaweicloud.com")
     CN_SOUTHWEST_2 = Region("cn-southwest-2",
@@ -51,6 +53,7 @@ class AosRegion:
         "cn-north-4": CN_NORTH_4,
         "cn-south-1": CN_SOUTH_1,
         "cn-east-3": CN_EAST_3,
+        "cn-east-4": CN_EAST_4,
         "cn-north-9": CN_NORTH_9,
         "cn-southwest-2": CN_SOUTHWEST_2,
         "ap-southeast-3": AP_SOUTHEAST_3,

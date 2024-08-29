@@ -17,6 +17,7 @@ class VoiceCapability:
     sensitive_list = []
 
     openapi_types = {
+        'is_support_phoneme_en': 'bool',
         'is_support_phoneme': 'bool',
         'is_support_break_time': 'bool',
         'is_support_break_strength': 'bool',
@@ -28,6 +29,7 @@ class VoiceCapability:
     }
 
     attribute_map = {
+        'is_support_phoneme_en': 'is_support_phoneme_en',
         'is_support_phoneme': 'is_support_phoneme',
         'is_support_break_time': 'is_support_break_time',
         'is_support_break_strength': 'is_support_break_strength',
@@ -38,11 +40,13 @@ class VoiceCapability:
         'is_support_word': 'is_support_word'
     }
 
-    def __init__(self, is_support_phoneme=None, is_support_break_time=None, is_support_break_strength=None, is_support_speed=None, is_support_prosody=None, is_support_ssml_say_as=None, is_support_ssml_sub=None, is_support_word=None):
+    def __init__(self, is_support_phoneme_en=None, is_support_phoneme=None, is_support_break_time=None, is_support_break_strength=None, is_support_speed=None, is_support_prosody=None, is_support_ssml_say_as=None, is_support_ssml_sub=None, is_support_word=None):
         """VoiceCapability
 
         The model defined in huaweicloud sdk
 
+        :param is_support_phoneme_en: 支持英文音标。
+        :type is_support_phoneme_en: bool
         :param is_support_phoneme: 是否支持多音字。
         :type is_support_phoneme: bool
         :param is_support_break_time: 是否支持停顿。
@@ -63,6 +67,7 @@ class VoiceCapability:
         
         
 
+        self._is_support_phoneme_en = None
         self._is_support_phoneme = None
         self._is_support_break_time = None
         self._is_support_break_strength = None
@@ -73,6 +78,8 @@ class VoiceCapability:
         self._is_support_word = None
         self.discriminator = None
 
+        if is_support_phoneme_en is not None:
+            self.is_support_phoneme_en = is_support_phoneme_en
         if is_support_phoneme is not None:
             self.is_support_phoneme = is_support_phoneme
         if is_support_break_time is not None:
@@ -89,6 +96,28 @@ class VoiceCapability:
             self.is_support_ssml_sub = is_support_ssml_sub
         if is_support_word is not None:
             self.is_support_word = is_support_word
+
+    @property
+    def is_support_phoneme_en(self):
+        """Gets the is_support_phoneme_en of this VoiceCapability.
+
+        支持英文音标。
+
+        :return: The is_support_phoneme_en of this VoiceCapability.
+        :rtype: bool
+        """
+        return self._is_support_phoneme_en
+
+    @is_support_phoneme_en.setter
+    def is_support_phoneme_en(self, is_support_phoneme_en):
+        """Sets the is_support_phoneme_en of this VoiceCapability.
+
+        支持英文音标。
+
+        :param is_support_phoneme_en: The is_support_phoneme_en of this VoiceCapability.
+        :type is_support_phoneme_en: bool
+        """
+        self._is_support_phoneme_en = is_support_phoneme_en
 
     @property
     def is_support_phoneme(self):

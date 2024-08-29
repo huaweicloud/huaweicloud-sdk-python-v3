@@ -60,6 +60,8 @@ class ImsRegion:
                         "https://ims.eu-west-0.myhuaweicloud.com")
     MY_KUALALUMPUR_1 = Region("my-kualalumpur-1",
                         "https://ims.my-kualalumpur-1.myhuaweicloud.com")
+    AF_NORTH_1 = Region("af-north-1",
+                        "https://ims.af-north-1.myhuaweicloud.com")
     RU_MOSCOW_1 = Region("ru-moscow-1",
                         "https://ims.ru-moscow-1.myhuaweicloud.com")
 
@@ -91,6 +93,7 @@ class ImsRegion:
         "cn-east-5": CN_EAST_5,
         "eu-west-0": EU_WEST_0,
         "my-kualalumpur-1": MY_KUALALUMPUR_1,
+        "af-north-1": AF_NORTH_1,
         "ru-moscow-1": RU_MOSCOW_1,
     }
 

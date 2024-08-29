@@ -19,16 +19,18 @@ class ReplicationAssetInfo:
     openapi_types = {
         'asset_id': 'str',
         'asset_info': 'str',
-        'encryption_info': 'ReplicationEncInfo'
+        'encryption_info': 'ReplicationEncInfo',
+        'expire_time': 'int'
     }
 
     attribute_map = {
         'asset_id': 'asset_id',
         'asset_info': 'asset_info',
-        'encryption_info': 'encryption_info'
+        'encryption_info': 'encryption_info',
+        'expire_time': 'expire_time'
     }
 
-    def __init__(self, asset_id=None, asset_info=None, encryption_info=None):
+    def __init__(self, asset_id=None, asset_info=None, encryption_info=None, expire_time=None):
         """ReplicationAssetInfo
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class ReplicationAssetInfo:
         :type asset_info: str
         :param encryption_info: 
         :type encryption_info: :class:`huaweicloudsdkmetastudio.v1.ReplicationEncInfo`
+        :param expire_time: 过期时间
+        :type expire_time: int
         """
         
         
@@ -46,6 +50,7 @@ class ReplicationAssetInfo:
         self._asset_id = None
         self._asset_info = None
         self._encryption_info = None
+        self._expire_time = None
         self.discriminator = None
 
         if asset_id is not None:
@@ -54,6 +59,8 @@ class ReplicationAssetInfo:
             self.asset_info = asset_info
         if encryption_info is not None:
             self.encryption_info = encryption_info
+        if expire_time is not None:
+            self.expire_time = expire_time
 
     @property
     def asset_id(self):
@@ -116,6 +123,28 @@ class ReplicationAssetInfo:
         :type encryption_info: :class:`huaweicloudsdkmetastudio.v1.ReplicationEncInfo`
         """
         self._encryption_info = encryption_info
+
+    @property
+    def expire_time(self):
+        """Gets the expire_time of this ReplicationAssetInfo.
+
+        过期时间
+
+        :return: The expire_time of this ReplicationAssetInfo.
+        :rtype: int
+        """
+        return self._expire_time
+
+    @expire_time.setter
+    def expire_time(self, expire_time):
+        """Sets the expire_time of this ReplicationAssetInfo.
+
+        过期时间
+
+        :param expire_time: The expire_time of this ReplicationAssetInfo.
+        :type expire_time: int
+        """
+        self._expire_time = expire_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

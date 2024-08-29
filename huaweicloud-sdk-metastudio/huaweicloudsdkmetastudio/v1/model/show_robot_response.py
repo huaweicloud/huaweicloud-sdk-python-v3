@@ -24,6 +24,7 @@ class ShowRobotResponse(SdkResponse):
         'app_id': 'str',
         'app_type': 'int',
         'app_key': 'str',
+        'robot_type': 'RobotTypeEnum',
         'language': 'LanguageEnum',
         'create_time': 'str',
         'update_time': 'str',
@@ -49,6 +50,7 @@ class ShowRobotResponse(SdkResponse):
         'app_id': 'app_id',
         'app_type': 'app_type',
         'app_key': 'app_key',
+        'robot_type': 'robot_type',
         'language': 'language',
         'create_time': 'create_time',
         'update_time': 'update_time',
@@ -67,7 +69,7 @@ class ShowRobotResponse(SdkResponse):
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, robot_id=None, name=None, room_id=None, app_id=None, app_type=None, app_key=None, language=None, create_time=None, update_time=None, region=None, cbs_project_id=None, llm_url=None, is_stream=None, chat_rounds=None, is_ifly_production=None, tail_silence_time=None, role_id=None, sis_region=None, sis_project_id=None, enable_hot_words=None, enable_question_audit=None, x_request_id=None):
+    def __init__(self, robot_id=None, name=None, room_id=None, app_id=None, app_type=None, app_key=None, robot_type=None, language=None, create_time=None, update_time=None, region=None, cbs_project_id=None, llm_url=None, is_stream=None, chat_rounds=None, is_ifly_production=None, tail_silence_time=None, role_id=None, sis_region=None, sis_project_id=None, enable_hot_words=None, enable_question_audit=None, x_request_id=None):
         """ShowRobotResponse
 
         The model defined in huaweicloud sdk
@@ -84,6 +86,8 @@ class ShowRobotResponse(SdkResponse):
         :type app_type: int
         :param app_key: 应用的AccessKey或帐号。
         :type app_key: str
+        :param robot_type: 
+        :type robot_type: :class:`huaweicloudsdkmetastudio.v1.RobotTypeEnum`
         :param language: 
         :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
         :param create_time: 创建时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
@@ -126,6 +130,7 @@ class ShowRobotResponse(SdkResponse):
         self._app_id = None
         self._app_type = None
         self._app_key = None
+        self._robot_type = None
         self._language = None
         self._create_time = None
         self._update_time = None
@@ -156,6 +161,8 @@ class ShowRobotResponse(SdkResponse):
             self.app_type = app_type
         if app_key is not None:
             self.app_key = app_key
+        if robot_type is not None:
+            self.robot_type = robot_type
         if language is not None:
             self.language = language
         if create_time is not None:
@@ -320,6 +327,24 @@ class ShowRobotResponse(SdkResponse):
         :type app_key: str
         """
         self._app_key = app_key
+
+    @property
+    def robot_type(self):
+        """Gets the robot_type of this ShowRobotResponse.
+
+        :return: The robot_type of this ShowRobotResponse.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.RobotTypeEnum`
+        """
+        return self._robot_type
+
+    @robot_type.setter
+    def robot_type(self, robot_type):
+        """Sets the robot_type of this ShowRobotResponse.
+
+        :param robot_type: The robot_type of this ShowRobotResponse.
+        :type robot_type: :class:`huaweicloudsdkmetastudio.v1.RobotTypeEnum`
+        """
+        self._robot_type = robot_type
 
     @property
     def language(self):

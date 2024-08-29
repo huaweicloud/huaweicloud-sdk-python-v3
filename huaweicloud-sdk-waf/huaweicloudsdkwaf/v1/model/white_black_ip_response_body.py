@@ -25,7 +25,8 @@ class WhiteBlackIpResponseBody:
         'status': 'int',
         'addr': 'str',
         'white': 'int',
-        'ip_group': 'IpGroup'
+        'ip_group': 'IpGroup',
+        'time_mode': 'str'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class WhiteBlackIpResponseBody:
         'status': 'status',
         'addr': 'addr',
         'white': 'white',
-        'ip_group': 'ip_group'
+        'ip_group': 'ip_group',
+        'time_mode': 'time_mode'
     }
 
-    def __init__(self, id=None, name=None, policyid=None, timestamp=None, description=None, status=None, addr=None, white=None, ip_group=None):
+    def __init__(self, id=None, name=None, policyid=None, timestamp=None, description=None, status=None, addr=None, white=None, ip_group=None, time_mode=None):
         """WhiteBlackIpResponseBody
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class WhiteBlackIpResponseBody:
         :type white: int
         :param ip_group: 
         :type ip_group: :class:`huaweicloudsdkwaf.v1.IpGroup`
+        :param time_mode: 生效模式，默认为permanent（立即生效）
+        :type time_mode: str
         """
         
         
@@ -76,6 +80,7 @@ class WhiteBlackIpResponseBody:
         self._addr = None
         self._white = None
         self._ip_group = None
+        self._time_mode = None
         self.discriminator = None
 
         if id is not None:
@@ -96,6 +101,8 @@ class WhiteBlackIpResponseBody:
             self.white = white
         if ip_group is not None:
             self.ip_group = ip_group
+        if time_mode is not None:
+            self.time_mode = time_mode
 
     @property
     def id(self):
@@ -290,6 +297,28 @@ class WhiteBlackIpResponseBody:
         :type ip_group: :class:`huaweicloudsdkwaf.v1.IpGroup`
         """
         self._ip_group = ip_group
+
+    @property
+    def time_mode(self):
+        """Gets the time_mode of this WhiteBlackIpResponseBody.
+
+        生效模式，默认为permanent（立即生效）
+
+        :return: The time_mode of this WhiteBlackIpResponseBody.
+        :rtype: str
+        """
+        return self._time_mode
+
+    @time_mode.setter
+    def time_mode(self, time_mode):
+        """Sets the time_mode of this WhiteBlackIpResponseBody.
+
+        生效模式，默认为permanent（立即生效）
+
+        :param time_mode: The time_mode of this WhiteBlackIpResponseBody.
+        :type time_mode: str
+        """
+        self._time_mode = time_mode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

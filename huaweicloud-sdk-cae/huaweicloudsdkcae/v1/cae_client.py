@@ -1180,6 +1180,10 @@ class CaeClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort' in local_var_params:
+            query_params.append(('sort', local_var_params['sort']))
 
         header_params = {}
         if 'x_enterprise_project_id' in local_var_params:

@@ -17,7 +17,7 @@ class ListTenantVpcIgwsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'fields': 'str',
+        'fields': 'list[str]',
         'id': 'str',
         'vpc_id': 'str',
         'name': 'str',
@@ -46,7 +46,7 @@ class ListTenantVpcIgwsRequest:
         The model defined in huaweicloud sdk
 
         :param fields: 形式为\\\&quot;fields&#x3D;id&amp;fields&#x3D;project_id&amp;...\\\&quot;，支持字段：id/project_id/vpc_id/created_at/updated_at/name
-        :type fields: str
+        :type fields: list[str]
         :param id: 虚拟IGW的uuid
         :type id: str
         :param vpc_id: 虚拟igw所在的vpcid
@@ -104,7 +104,7 @@ class ListTenantVpcIgwsRequest:
         形式为\\\"fields=id&fields=project_id&...\\\"，支持字段：id/project_id/vpc_id/created_at/updated_at/name
 
         :return: The fields of this ListTenantVpcIgwsRequest.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._fields
 
@@ -115,7 +115,7 @@ class ListTenantVpcIgwsRequest:
         形式为\\\"fields=id&fields=project_id&...\\\"，支持字段：id/project_id/vpc_id/created_at/updated_at/name
 
         :param fields: The fields of this ListTenantVpcIgwsRequest.
-        :type fields: str
+        :type fields: list[str]
         """
         self._fields = fields
 

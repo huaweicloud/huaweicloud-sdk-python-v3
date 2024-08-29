@@ -17,28 +17,35 @@ class ConfirmFileUploadRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'state': 'str'
+        'state': 'str',
+        'auto_meta_analysis': 'bool'
     }
 
     attribute_map = {
-        'state': 'state'
+        'state': 'state',
+        'auto_meta_analysis': 'auto_meta_analysis'
     }
 
-    def __init__(self, state=None):
+    def __init__(self, state=None, auto_meta_analysis=None):
         """ConfirmFileUploadRequestBody
 
         The model defined in huaweicloud sdk
 
         :param state: 文件上传状态。 - CREATED：上传完成 - FAILED：上传失败 - CANCELLED：取消上传
         :type state: str
+        :param auto_meta_analysis: 元数据自动解析,仅支持图片，视频，音频主文件
+        :type auto_meta_analysis: bool
         """
         
         
 
         self._state = None
+        self._auto_meta_analysis = None
         self.discriminator = None
 
         self.state = state
+        if auto_meta_analysis is not None:
+            self.auto_meta_analysis = auto_meta_analysis
 
     @property
     def state(self):
@@ -61,6 +68,28 @@ class ConfirmFileUploadRequestBody:
         :type state: str
         """
         self._state = state
+
+    @property
+    def auto_meta_analysis(self):
+        """Gets the auto_meta_analysis of this ConfirmFileUploadRequestBody.
+
+        元数据自动解析,仅支持图片，视频，音频主文件
+
+        :return: The auto_meta_analysis of this ConfirmFileUploadRequestBody.
+        :rtype: bool
+        """
+        return self._auto_meta_analysis
+
+    @auto_meta_analysis.setter
+    def auto_meta_analysis(self, auto_meta_analysis):
+        """Sets the auto_meta_analysis of this ConfirmFileUploadRequestBody.
+
+        元数据自动解析,仅支持图片，视频，音频主文件
+
+        :param auto_meta_analysis: The auto_meta_analysis of this ConfirmFileUploadRequestBody.
+        :type auto_meta_analysis: bool
+        """
+        self._auto_meta_analysis = auto_meta_analysis
 
     def to_dict(self):
         """Returns the model properties as a dict"""

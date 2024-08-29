@@ -23,6 +23,7 @@ class ShowWhiteBlackIpRuleResponse(SdkResponse):
         'policyid': 'str',
         'addr': 'str',
         'white': 'int',
+        'time_mode': 'str',
         'ip_group': 'IpGroup',
         'status': 'int',
         'description': 'str',
@@ -35,13 +36,14 @@ class ShowWhiteBlackIpRuleResponse(SdkResponse):
         'policyid': 'policyid',
         'addr': 'addr',
         'white': 'white',
+        'time_mode': 'time_mode',
         'ip_group': 'ip_group',
         'status': 'status',
         'description': 'description',
         'timestamp': 'timestamp'
     }
 
-    def __init__(self, id=None, name=None, policyid=None, addr=None, white=None, ip_group=None, status=None, description=None, timestamp=None):
+    def __init__(self, id=None, name=None, policyid=None, addr=None, white=None, time_mode=None, ip_group=None, status=None, description=None, timestamp=None):
         """ShowWhiteBlackIpRuleResponse
 
         The model defined in huaweicloud sdk
@@ -56,6 +58,8 @@ class ShowWhiteBlackIpRuleResponse(SdkResponse):
         :type addr: str
         :param white: 防护动作：  - 0 拦截  - 1 放行  - 2 仅记录
         :type white: int
+        :param time_mode: 生效模式，默认为permanent（立即生效）
+        :type time_mode: str
         :param ip_group: 
         :type ip_group: :class:`huaweicloudsdkwaf.v1.IpGroup`
         :param status: 规则状态，0：关闭，1：开启
@@ -73,6 +77,7 @@ class ShowWhiteBlackIpRuleResponse(SdkResponse):
         self._policyid = None
         self._addr = None
         self._white = None
+        self._time_mode = None
         self._ip_group = None
         self._status = None
         self._description = None
@@ -89,6 +94,8 @@ class ShowWhiteBlackIpRuleResponse(SdkResponse):
             self.addr = addr
         if white is not None:
             self.white = white
+        if time_mode is not None:
+            self.time_mode = time_mode
         if ip_group is not None:
             self.ip_group = ip_group
         if status is not None:
@@ -207,6 +214,28 @@ class ShowWhiteBlackIpRuleResponse(SdkResponse):
         :type white: int
         """
         self._white = white
+
+    @property
+    def time_mode(self):
+        """Gets the time_mode of this ShowWhiteBlackIpRuleResponse.
+
+        生效模式，默认为permanent（立即生效）
+
+        :return: The time_mode of this ShowWhiteBlackIpRuleResponse.
+        :rtype: str
+        """
+        return self._time_mode
+
+    @time_mode.setter
+    def time_mode(self, time_mode):
+        """Sets the time_mode of this ShowWhiteBlackIpRuleResponse.
+
+        生效模式，默认为permanent（立即生效）
+
+        :param time_mode: The time_mode of this ShowWhiteBlackIpRuleResponse.
+        :type time_mode: str
+        """
+        self._time_mode = time_mode
 
     @property
     def ip_group(self):

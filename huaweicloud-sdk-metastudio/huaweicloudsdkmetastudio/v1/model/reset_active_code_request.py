@@ -18,15 +18,17 @@ class ResetActiveCodeRequest:
 
     openapi_types = {
         'x_app_user_id': 'str',
-        'active_code_id': 'str'
+        'active_code_id': 'str',
+        'body': 'ResetActiveCodeReq'
     }
 
     attribute_map = {
         'x_app_user_id': 'X-App-UserId',
-        'active_code_id': 'active_code_id'
+        'active_code_id': 'active_code_id',
+        'body': 'body'
     }
 
-    def __init__(self, x_app_user_id=None, active_code_id=None):
+    def __init__(self, x_app_user_id=None, active_code_id=None, body=None):
         """ResetActiveCodeRequest
 
         The model defined in huaweicloud sdk
@@ -35,17 +37,22 @@ class ResetActiveCodeRequest:
         :type x_app_user_id: str
         :param active_code_id: 激活码ID。
         :type active_code_id: str
+        :param body: Body of the ResetActiveCodeRequest
+        :type body: :class:`huaweicloudsdkmetastudio.v1.ResetActiveCodeReq`
         """
         
         
 
         self._x_app_user_id = None
         self._active_code_id = None
+        self._body = None
         self.discriminator = None
 
         if x_app_user_id is not None:
             self.x_app_user_id = x_app_user_id
         self.active_code_id = active_code_id
+        if body is not None:
+            self.body = body
 
     @property
     def x_app_user_id(self):
@@ -90,6 +97,24 @@ class ResetActiveCodeRequest:
         :type active_code_id: str
         """
         self._active_code_id = active_code_id
+
+    @property
+    def body(self):
+        """Gets the body of this ResetActiveCodeRequest.
+
+        :return: The body of this ResetActiveCodeRequest.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ResetActiveCodeReq`
+        """
+        return self._body
+
+    @body.setter
+    def body(self, body):
+        """Sets the body of this ResetActiveCodeRequest.
+
+        :param body: The body of this ResetActiveCodeRequest.
+        :type body: :class:`huaweicloudsdkmetastudio.v1.ResetActiveCodeReq`
+        """
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

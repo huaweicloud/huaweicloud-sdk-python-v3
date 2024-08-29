@@ -33,11 +33,11 @@ class ModelInfo:
 
         The model defined in huaweicloud sdk
 
-        :param model_asset_id: 模型资产ID
+        :param model_asset_id: 模型资产ID，可以从资产库中查询。
         :type model_asset_id: str
         :param asset_name: 资产名称
         :type asset_name: str
-        :param backup_model_asset_ids: 主播轮换时备选主播数字人资产ID（仅形象资产，不包含音色）。
+        :param backup_model_asset_ids: 主播轮换时备选主播数字人资产ID（仅形象资产，不包含音色），可以从资产库中查询。
         :type backup_model_asset_ids: list[str]
         """
         
@@ -59,7 +59,7 @@ class ModelInfo:
     def model_asset_id(self):
         """Gets the model_asset_id of this ModelInfo.
 
-        模型资产ID
+        模型资产ID，可以从资产库中查询。
 
         :return: The model_asset_id of this ModelInfo.
         :rtype: str
@@ -70,7 +70,7 @@ class ModelInfo:
     def model_asset_id(self, model_asset_id):
         """Sets the model_asset_id of this ModelInfo.
 
-        模型资产ID
+        模型资产ID，可以从资产库中查询。
 
         :param model_asset_id: The model_asset_id of this ModelInfo.
         :type model_asset_id: str
@@ -103,7 +103,7 @@ class ModelInfo:
     def backup_model_asset_ids(self):
         """Gets the backup_model_asset_ids of this ModelInfo.
 
-        主播轮换时备选主播数字人资产ID（仅形象资产，不包含音色）。
+        主播轮换时备选主播数字人资产ID（仅形象资产，不包含音色），可以从资产库中查询。
 
         :return: The backup_model_asset_ids of this ModelInfo.
         :rtype: list[str]
@@ -114,7 +114,7 @@ class ModelInfo:
     def backup_model_asset_ids(self, backup_model_asset_ids):
         """Sets the backup_model_asset_ids of this ModelInfo.
 
-        主播轮换时备选主播数字人资产ID（仅形象资产，不包含音色）。
+        主播轮换时备选主播数字人资产ID（仅形象资产，不包含音色），可以从资产库中查询。
 
         :param backup_model_asset_ids: The backup_model_asset_ids of this ModelInfo.
         :type backup_model_asset_ids: list[str]

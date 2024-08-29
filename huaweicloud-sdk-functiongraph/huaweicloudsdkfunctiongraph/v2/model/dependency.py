@@ -28,7 +28,7 @@ class Dependency:
         'file_name': 'str',
         'version': 'int',
         'dep_id': 'str',
-        'last_modified': 'datetime'
+        'last_modified': 'int'
     }
 
     attribute_map = {
@@ -73,8 +73,8 @@ class Dependency:
         :type version: int
         :param dep_id: 依赖包ID
         :type dep_id: str
-        :param last_modified: 函数最后一次更新时间。
-        :type last_modified: datetime
+        :param last_modified: 依赖包最后一次更新时间。
+        :type last_modified: int
         """
         
         
@@ -357,10 +357,10 @@ class Dependency:
     def last_modified(self):
         """Gets the last_modified of this Dependency.
 
-        函数最后一次更新时间。
+        依赖包最后一次更新时间。
 
         :return: The last_modified of this Dependency.
-        :rtype: datetime
+        :rtype: int
         """
         return self._last_modified
 
@@ -368,10 +368,10 @@ class Dependency:
     def last_modified(self, last_modified):
         """Sets the last_modified of this Dependency.
 
-        函数最后一次更新时间。
+        依赖包最后一次更新时间。
 
         :param last_modified: The last_modified of this Dependency.
-        :type last_modified: datetime
+        :type last_modified: int
         """
         self._last_modified = last_modified
 

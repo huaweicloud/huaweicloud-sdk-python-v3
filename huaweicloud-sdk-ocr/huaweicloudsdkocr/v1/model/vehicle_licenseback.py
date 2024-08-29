@@ -73,7 +73,7 @@ class VehicleLicenseback:
         :type remarks: str
         :param inspection_record: 检验记录。 
         :type inspection_record: str
-        :param code_number: 条码号。 
+        :param code_number: 条码号。           
         :type code_number: str
         :param energy_type: 能源类型。 
         :type energy_type: str
@@ -349,7 +349,7 @@ class VehicleLicenseback:
     def code_number(self):
         """Gets the code_number of this VehicleLicenseback.
 
-        条码号。 
+        条码号。           
 
         :return: The code_number of this VehicleLicenseback.
         :rtype: str
@@ -360,7 +360,7 @@ class VehicleLicenseback:
     def code_number(self, code_number):
         """Sets the code_number of this VehicleLicenseback.
 
-        条码号。 
+        条码号。           
 
         :param code_number: The code_number of this VehicleLicenseback.
         :type code_number: str

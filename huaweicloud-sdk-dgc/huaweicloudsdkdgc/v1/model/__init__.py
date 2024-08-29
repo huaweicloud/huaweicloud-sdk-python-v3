@@ -57,6 +57,7 @@ from huaweicloudsdkdgc.v1.model.job_approver import JobApprover
 from huaweicloudsdkdgc.v1.model.job_info import JobInfo
 from huaweicloudsdkdgc.v1.model.job_instance import JobInstance
 from huaweicloudsdkdgc.v1.model.job_param import JobParam
+from huaweicloudsdkdgc.v1.model.job_resource_info import JobResourceInfo
 from huaweicloudsdkdgc.v1.model.job_result import JobResult
 from huaweicloudsdkdgc.v1.model.list_connections_request import ListConnectionsRequest
 from huaweicloudsdkdgc.v1.model.list_connections_response import ListConnectionsResponse

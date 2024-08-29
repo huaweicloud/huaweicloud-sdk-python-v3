@@ -17,7 +17,7 @@ class ListProjectGeipBindingsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'fields': 'str',
+        'fields': 'list[str]',
         'geip_id': 'str',
         'geip_ip_address': 'str',
         'public_border_group': 'str',
@@ -78,7 +78,7 @@ class ListProjectGeipBindingsRequest:
         The model defined in huaweicloud sdk
 
         :param fields: 形式为\\\&quot;fields&#x3D;geip_id&amp;fields&#x3D;geip_ip_address&amp;...\\\&quot;，支持字段：geip_id/geip_ip_address/instance_type/instance_id/vnic/vn_list/public_border_group/gcbandwidth/version/created_at/updated_at/instance_vpc_id
-        :type fields: str
+        :type fields: list[str]
         :param geip_id: GEIP的uuid
         :type geip_id: str
         :param geip_ip_address: GEIP的ip地址
@@ -216,7 +216,7 @@ class ListProjectGeipBindingsRequest:
         形式为\\\"fields=geip_id&fields=geip_ip_address&...\\\"，支持字段：geip_id/geip_ip_address/instance_type/instance_id/vnic/vn_list/public_border_group/gcbandwidth/version/created_at/updated_at/instance_vpc_id
 
         :return: The fields of this ListProjectGeipBindingsRequest.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._fields
 
@@ -227,7 +227,7 @@ class ListProjectGeipBindingsRequest:
         形式为\\\"fields=geip_id&fields=geip_ip_address&...\\\"，支持字段：geip_id/geip_ip_address/instance_type/instance_id/vnic/vn_list/public_border_group/gcbandwidth/version/created_at/updated_at/instance_vpc_id
 
         :param fields: The fields of this ListProjectGeipBindingsRequest.
-        :type fields: str
+        :type fields: list[str]
         """
         self._fields = fields
 

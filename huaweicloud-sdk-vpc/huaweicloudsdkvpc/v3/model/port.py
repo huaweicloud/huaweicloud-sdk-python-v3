@@ -48,7 +48,7 @@ class Port:
         'scope': 'str',
         'zone_id': 'str',
         'bindingmigration_info': 'object',
-        'extra_dhcp_opts': 'list[object]',
+        'extra_dhcp_opts': 'list[ExtraDhcpOpt]',
         'position_type': 'str',
         'instance_info': 'object',
         'tags': 'list[str]',
@@ -161,8 +161,8 @@ class Port:
         :type zone_id: str
         :param bindingmigration_info: 1、功能描述：迁移目的节点信息，包括目的节点的binding:vif_details和binding:vif_type 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
         :type bindingmigration_info: object
-        :param extra_dhcp_opts: 1、功能描述：DHCP的扩展属性 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
-        :type extra_dhcp_opts: list[object]
+        :param extra_dhcp_opts: 功能说明：DHCP的扩展属性
+        :type extra_dhcp_opts: list[:class:`huaweicloudsdkvpc.v3.ExtraDhcpOpt`]
         :param position_type: 1、功能描述：边缘场景位置类型 2、取值范围：N/A 3、约束：N/A 4、默认值：center 5、权限：N/A
         :type position_type: str
         :param instance_info: 1、功能描述：端口绑定实例信息 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
@@ -936,10 +936,10 @@ class Port:
     def extra_dhcp_opts(self):
         """Gets the extra_dhcp_opts of this Port.
 
-        1、功能描述：DHCP的扩展属性 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
+        功能说明：DHCP的扩展属性
 
         :return: The extra_dhcp_opts of this Port.
-        :rtype: list[object]
+        :rtype: list[:class:`huaweicloudsdkvpc.v3.ExtraDhcpOpt`]
         """
         return self._extra_dhcp_opts
 
@@ -947,10 +947,10 @@ class Port:
     def extra_dhcp_opts(self, extra_dhcp_opts):
         """Sets the extra_dhcp_opts of this Port.
 
-        1、功能描述：DHCP的扩展属性 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
+        功能说明：DHCP的扩展属性
 
         :param extra_dhcp_opts: The extra_dhcp_opts of this Port.
-        :type extra_dhcp_opts: list[object]
+        :type extra_dhcp_opts: list[:class:`huaweicloudsdkvpc.v3.ExtraDhcpOpt`]
         """
         self._extra_dhcp_opts = extra_dhcp_opts
 

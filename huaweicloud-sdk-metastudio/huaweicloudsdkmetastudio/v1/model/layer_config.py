@@ -45,7 +45,7 @@ class LayerConfig:
 
         :param layer_type: 图层类型。 - HUMAN:  人物图层 - IMAGE： 素材图片图层 - VIDEO： 素材视频图层 - TEXT: 素材文字图层
         :type layer_type: str
-        :param asset_id: 图层所需资产的资产id，外部资产信息无需填写
+        :param asset_id: 图层所需资产的资产id，外部资产信息无需填写。 若填写，可以从资产库中查询。
         :type asset_id: str
         :param group_id: 多场景素材编组。同一group_id的素材，在应用全局时共享位置信息。
         :type group_id: str
@@ -115,7 +115,7 @@ class LayerConfig:
     def asset_id(self):
         """Gets the asset_id of this LayerConfig.
 
-        图层所需资产的资产id，外部资产信息无需填写
+        图层所需资产的资产id，外部资产信息无需填写。 若填写，可以从资产库中查询。
 
         :return: The asset_id of this LayerConfig.
         :rtype: str
@@ -126,7 +126,7 @@ class LayerConfig:
     def asset_id(self, asset_id):
         """Sets the asset_id of this LayerConfig.
 
-        图层所需资产的资产id，外部资产信息无需填写
+        图层所需资产的资产id，外部资产信息无需填写。 若填写，可以从资产库中查询。
 
         :param asset_id: The asset_id of this LayerConfig.
         :type asset_id: str

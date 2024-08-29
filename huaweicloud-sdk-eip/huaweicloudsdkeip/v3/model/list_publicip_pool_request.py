@@ -19,7 +19,7 @@ class ListPublicipPoolRequest:
     openapi_types = {
         'marker': 'str',
         'limit': 'int',
-        'fields': 'str',
+        'fields': 'list[str]',
         'sort_key': 'str',
         'sort_dir': 'str',
         'id': 'str',
@@ -56,7 +56,7 @@ class ListPublicipPoolRequest:
         :param limit: 每页返回的个数取值范围：0~[2000]，其中2000为局点差异项，具体取值由局点决定
         :type limit: int
         :param fields: 显示，形式为\&quot;fields&#x3D;id&amp;fields&#x3D;name&amp;...\&quot;  支持字段：id/name/size/used/project_id/status/billing_info/created_at/updated_at/type/shared/is_common/description/tags/enterprise_project_id/allow_share_bandwidth_types/public_border_group
-        :type fields: str
+        :type fields: list[str]
         :param sort_key: 排序，形式为\&quot;sort_key&#x3D;id&amp;sort_dir&#x3D;asc\&quot;  支持字段：id/name/created_at/updated_at/public_border_group
         :type sort_key: str
         :param sort_dir: 排序方向  取值范围：asc、desc
@@ -169,7 +169,7 @@ class ListPublicipPoolRequest:
         显示，形式为\"fields=id&fields=name&...\"  支持字段：id/name/size/used/project_id/status/billing_info/created_at/updated_at/type/shared/is_common/description/tags/enterprise_project_id/allow_share_bandwidth_types/public_border_group
 
         :return: The fields of this ListPublicipPoolRequest.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._fields
 
@@ -180,7 +180,7 @@ class ListPublicipPoolRequest:
         显示，形式为\"fields=id&fields=name&...\"  支持字段：id/name/size/used/project_id/status/billing_info/created_at/updated_at/type/shared/is_common/description/tags/enterprise_project_id/allow_share_bandwidth_types/public_border_group
 
         :param fields: The fields of this ListPublicipPoolRequest.
-        :type fields: str
+        :type fields: list[str]
         """
         self._fields = fields
 

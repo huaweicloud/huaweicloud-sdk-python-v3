@@ -18,15 +18,17 @@ class ClusterListDatastore:
 
     openapi_types = {
         'type': 'str',
-        'version': 'str'
+        'version': 'str',
+        'support_securitymode': 'bool'
     }
 
     attribute_map = {
         'type': 'type',
-        'version': 'version'
+        'version': 'version',
+        'support_securitymode': 'supportSecuritymode'
     }
 
-    def __init__(self, type=None, version=None):
+    def __init__(self, type=None, version=None, support_securitymode=None):
         """ClusterListDatastore
 
         The model defined in huaweicloud sdk
@@ -35,18 +37,23 @@ class ClusterListDatastore:
         :type type: str
         :param version: CSS集群引擎版本号。详细请参考CSS[支持的集群版本](css_03_0056.xml)。
         :type version: str
+        :param support_securitymode: 是否支持安全模式
+        :type support_securitymode: bool
         """
         
         
 
         self._type = None
         self._version = None
+        self._support_securitymode = None
         self.discriminator = None
 
         if type is not None:
             self.type = type
         if version is not None:
             self.version = version
+        if support_securitymode is not None:
+            self.support_securitymode = support_securitymode
 
     @property
     def type(self):
@@ -91,6 +98,28 @@ class ClusterListDatastore:
         :type version: str
         """
         self._version = version
+
+    @property
+    def support_securitymode(self):
+        """Gets the support_securitymode of this ClusterListDatastore.
+
+        是否支持安全模式
+
+        :return: The support_securitymode of this ClusterListDatastore.
+        :rtype: bool
+        """
+        return self._support_securitymode
+
+    @support_securitymode.setter
+    def support_securitymode(self, support_securitymode):
+        """Sets the support_securitymode of this ClusterListDatastore.
+
+        是否支持安全模式
+
+        :param support_securitymode: The support_securitymode of this ClusterListDatastore.
+        :type support_securitymode: bool
+        """
+        self._support_securitymode = support_securitymode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -34,6 +34,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         'shared_config': 'SharedConfig',
         'view_mode': 'str',
         'co_streamer_config': 'CoStreamerConfig',
+        'priv_data': 'str',
         'room_id': 'str',
         'create_time': 'str',
         'update_time': 'str',
@@ -61,6 +62,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         'shared_config': 'shared_config',
         'view_mode': 'view_mode',
         'co_streamer_config': 'co_streamer_config',
+        'priv_data': 'priv_data',
         'room_id': 'room_id',
         'create_time': 'create_time',
         'update_time': 'update_time',
@@ -71,7 +73,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, room_name=None, room_description=None, room_type=None, scene_scripts=None, interaction_rules=None, play_policy=None, video_config=None, output_urls=None, stream_keys=None, backup_model_asset_ids=None, live_event_callback_config=None, rtc_callback_config=None, review_config=None, shared_config=None, view_mode=None, co_streamer_config=None, room_id=None, create_time=None, update_time=None, cover_url=None, thumbnail=None, room_state=None, error_info=None, x_request_id=None):
+    def __init__(self, room_name=None, room_description=None, room_type=None, scene_scripts=None, interaction_rules=None, play_policy=None, video_config=None, output_urls=None, stream_keys=None, backup_model_asset_ids=None, live_event_callback_config=None, rtc_callback_config=None, review_config=None, shared_config=None, view_mode=None, co_streamer_config=None, priv_data=None, room_id=None, create_time=None, update_time=None, cover_url=None, thumbnail=None, room_state=None, error_info=None, x_request_id=None):
         """ShowSmartLiveRoomResponse
 
         The model defined in huaweicloud sdk
@@ -94,7 +96,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         :type output_urls: list[str]
         :param stream_keys: RTMP视频推流第三方直播平台流秘钥，与推流地址对应。
         :type stream_keys: list[str]
-        :param backup_model_asset_ids: 主播轮换时备选主播数字人资产ID（仅形象资产，不包含音色）。
+        :param backup_model_asset_ids: 主播轮换时备选主播数字人资产ID（仅形象资产，不包含音色），可以从资产库中查询。
         :type backup_model_asset_ids: list[str]
         :param live_event_callback_config: 
         :type live_event_callback_config: :class:`huaweicloudsdkmetastudio.v1.LiveEventCallBackConfig`
@@ -108,6 +110,8 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         :type view_mode: str
         :param co_streamer_config: 
         :type co_streamer_config: :class:`huaweicloudsdkmetastudio.v1.CoStreamerConfig`
+        :param priv_data: 私有数据，用户填写，原样带回。
+        :type priv_data: str
         :param room_id: 直播间ID
         :type room_id: str
         :param create_time: 直播间创建时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
@@ -144,6 +148,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         self._shared_config = None
         self._view_mode = None
         self._co_streamer_config = None
+        self._priv_data = None
         self._room_id = None
         self._create_time = None
         self._update_time = None
@@ -185,6 +190,8 @@ class ShowSmartLiveRoomResponse(SdkResponse):
             self.view_mode = view_mode
         if co_streamer_config is not None:
             self.co_streamer_config = co_streamer_config
+        if priv_data is not None:
+            self.priv_data = priv_data
         if room_id is not None:
             self.room_id = room_id
         if create_time is not None:
@@ -396,7 +403,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
     def backup_model_asset_ids(self):
         """Gets the backup_model_asset_ids of this ShowSmartLiveRoomResponse.
 
-        主播轮换时备选主播数字人资产ID（仅形象资产，不包含音色）。
+        主播轮换时备选主播数字人资产ID（仅形象资产，不包含音色），可以从资产库中查询。
 
         :return: The backup_model_asset_ids of this ShowSmartLiveRoomResponse.
         :rtype: list[str]
@@ -407,7 +414,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
     def backup_model_asset_ids(self, backup_model_asset_ids):
         """Sets the backup_model_asset_ids of this ShowSmartLiveRoomResponse.
 
-        主播轮换时备选主播数字人资产ID（仅形象资产，不包含音色）。
+        主播轮换时备选主播数字人资产ID（仅形象资产，不包含音色），可以从资产库中查询。
 
         :param backup_model_asset_ids: The backup_model_asset_ids of this ShowSmartLiveRoomResponse.
         :type backup_model_asset_ids: list[str]
@@ -525,6 +532,28 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         :type co_streamer_config: :class:`huaweicloudsdkmetastudio.v1.CoStreamerConfig`
         """
         self._co_streamer_config = co_streamer_config
+
+    @property
+    def priv_data(self):
+        """Gets the priv_data of this ShowSmartLiveRoomResponse.
+
+        私有数据，用户填写，原样带回。
+
+        :return: The priv_data of this ShowSmartLiveRoomResponse.
+        :rtype: str
+        """
+        return self._priv_data
+
+    @priv_data.setter
+    def priv_data(self, priv_data):
+        """Sets the priv_data of this ShowSmartLiveRoomResponse.
+
+        私有数据，用户填写，原样带回。
+
+        :param priv_data: The priv_data of this ShowSmartLiveRoomResponse.
+        :type priv_data: str
+        """
+        self._priv_data = priv_data
 
     @property
     def room_id(self):

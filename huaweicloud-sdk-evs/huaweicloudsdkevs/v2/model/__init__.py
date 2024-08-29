@@ -14,6 +14,7 @@ from huaweicloudsdkevs.v2.model.batch_delete_volume_tags_response import BatchDe
 from huaweicloudsdkevs.v2.model.bss_param2 import BssParam2
 from huaweicloudsdkevs.v2.model.bss_param_for_create_volume import BssParamForCreateVolume
 from huaweicloudsdkevs.v2.model.bss_param_for_resize_volume import BssParamForResizeVolume
+from huaweicloudsdkevs.v2.model.bss_param_for_retype_volume import BssParamForRetypeVolume
 from huaweicloudsdkevs.v2.model.change_volume_charge_mode_request import ChangeVolumeChargeModeRequest
 from huaweicloudsdkevs.v2.model.change_volume_charge_mode_request_body import ChangeVolumeChargeModeRequestBody
 from huaweicloudsdkevs.v2.model.change_volume_charge_mode_response import ChangeVolumeChargeModeResponse
@@ -97,6 +98,10 @@ from huaweicloudsdkevs.v2.model.resize_volume_request import ResizeVolumeRequest
 from huaweicloudsdkevs.v2.model.resize_volume_request_body import ResizeVolumeRequestBody
 from huaweicloudsdkevs.v2.model.resize_volume_response import ResizeVolumeResponse
 from huaweicloudsdkevs.v2.model.resource import Resource
+from huaweicloudsdkevs.v2.model.retype_volume import RetypeVolume
+from huaweicloudsdkevs.v2.model.retype_volume_request import RetypeVolumeRequest
+from huaweicloudsdkevs.v2.model.retype_volume_request_body import RetypeVolumeRequestBody
+from huaweicloudsdkevs.v2.model.retype_volume_response import RetypeVolumeResponse
 from huaweicloudsdkevs.v2.model.rollback_info import RollbackInfo
 from huaweicloudsdkevs.v2.model.rollback_snapshot_option import RollbackSnapshotOption
 from huaweicloudsdkevs.v2.model.rollback_snapshot_request import RollbackSnapshotRequest

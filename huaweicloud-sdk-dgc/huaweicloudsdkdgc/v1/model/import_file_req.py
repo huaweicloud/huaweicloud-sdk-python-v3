@@ -21,7 +21,10 @@ class ImportFileReq:
         'params': 'object',
         'same_name_policy': 'str',
         'jobs_param': 'object',
-        'execute_user': 'str'
+        'execute_user': 'str',
+        'target_status': 'str',
+        'approvers': 'list[JobApprover]',
+        'resources': 'list[JobResourceInfo]'
     }
 
     attribute_map = {
@@ -29,10 +32,13 @@ class ImportFileReq:
         'params': 'params',
         'same_name_policy': 'sameNamePolicy',
         'jobs_param': 'jobsParam',
-        'execute_user': 'executeUser'
+        'execute_user': 'executeUser',
+        'target_status': 'targetStatus',
+        'approvers': 'approvers',
+        'resources': 'resources'
     }
 
-    def __init__(self, path=None, params=None, same_name_policy=None, jobs_param=None, execute_user=None):
+    def __init__(self, path=None, params=None, same_name_policy=None, jobs_param=None, execute_user=None, target_status=None, approvers=None, resources=None):
         """ImportFileReq
 
         The model defined in huaweicloud sdk
@@ -47,6 +53,12 @@ class ImportFileReq:
         :type jobs_param: object
         :param execute_user: 
         :type execute_user: str
+        :param target_status: 在开启审批开关后，需要填写该字段。表示创建作业的目标状态，有三种状态：SAVED、SUBMITTED和PRODUCTION，分别表示作业创建后是保存态，提交态，生产态
+        :type target_status: str
+        :param approvers: 在开启审批开关后，需要填写该字段，表示作业审批人
+        :type approvers: list[:class:`huaweicloudsdkdgc.v1.JobApprover`]
+        :param resources: 如需替换资源，需要填写该字段，包含替换的资源名和资源类型和替换后的资源名
+        :type resources: list[:class:`huaweicloudsdkdgc.v1.JobResourceInfo`]
         """
         
         
@@ -56,6 +68,9 @@ class ImportFileReq:
         self._same_name_policy = None
         self._jobs_param = None
         self._execute_user = None
+        self._target_status = None
+        self._approvers = None
+        self._resources = None
         self.discriminator = None
 
         if path is not None:
@@ -68,6 +83,12 @@ class ImportFileReq:
             self.jobs_param = jobs_param
         if execute_user is not None:
             self.execute_user = execute_user
+        if target_status is not None:
+            self.target_status = target_status
+        if approvers is not None:
+            self.approvers = approvers
+        if resources is not None:
+            self.resources = resources
 
     @property
     def path(self):
@@ -166,6 +187,72 @@ class ImportFileReq:
         :type execute_user: str
         """
         self._execute_user = execute_user
+
+    @property
+    def target_status(self):
+        """Gets the target_status of this ImportFileReq.
+
+        在开启审批开关后，需要填写该字段。表示创建作业的目标状态，有三种状态：SAVED、SUBMITTED和PRODUCTION，分别表示作业创建后是保存态，提交态，生产态
+
+        :return: The target_status of this ImportFileReq.
+        :rtype: str
+        """
+        return self._target_status
+
+    @target_status.setter
+    def target_status(self, target_status):
+        """Sets the target_status of this ImportFileReq.
+
+        在开启审批开关后，需要填写该字段。表示创建作业的目标状态，有三种状态：SAVED、SUBMITTED和PRODUCTION，分别表示作业创建后是保存态，提交态，生产态
+
+        :param target_status: The target_status of this ImportFileReq.
+        :type target_status: str
+        """
+        self._target_status = target_status
+
+    @property
+    def approvers(self):
+        """Gets the approvers of this ImportFileReq.
+
+        在开启审批开关后，需要填写该字段，表示作业审批人
+
+        :return: The approvers of this ImportFileReq.
+        :rtype: list[:class:`huaweicloudsdkdgc.v1.JobApprover`]
+        """
+        return self._approvers
+
+    @approvers.setter
+    def approvers(self, approvers):
+        """Sets the approvers of this ImportFileReq.
+
+        在开启审批开关后，需要填写该字段，表示作业审批人
+
+        :param approvers: The approvers of this ImportFileReq.
+        :type approvers: list[:class:`huaweicloudsdkdgc.v1.JobApprover`]
+        """
+        self._approvers = approvers
+
+    @property
+    def resources(self):
+        """Gets the resources of this ImportFileReq.
+
+        如需替换资源，需要填写该字段，包含替换的资源名和资源类型和替换后的资源名
+
+        :return: The resources of this ImportFileReq.
+        :rtype: list[:class:`huaweicloudsdkdgc.v1.JobResourceInfo`]
+        """
+        return self._resources
+
+    @resources.setter
+    def resources(self, resources):
+        """Sets the resources of this ImportFileReq.
+
+        如需替换资源，需要填写该字段，包含替换的资源名和资源类型和替换后的资源名
+
+        :param resources: The resources of this ImportFileReq.
+        :type resources: list[:class:`huaweicloudsdkdgc.v1.JobResourceInfo`]
+        """
+        self._resources = resources
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -26,6 +26,7 @@ class DeleteWhiteBlackIpRuleResponse(SdkResponse):
         'status': 'int',
         'addr': 'str',
         'white': 'int',
+        'time_mode': 'str',
         'ip_group': 'IpGroup'
     }
 
@@ -38,10 +39,11 @@ class DeleteWhiteBlackIpRuleResponse(SdkResponse):
         'status': 'status',
         'addr': 'addr',
         'white': 'white',
+        'time_mode': 'time_mode',
         'ip_group': 'ip_group'
     }
 
-    def __init__(self, id=None, policyid=None, name=None, timestamp=None, description=None, status=None, addr=None, white=None, ip_group=None):
+    def __init__(self, id=None, policyid=None, name=None, timestamp=None, description=None, status=None, addr=None, white=None, time_mode=None, ip_group=None):
         """DeleteWhiteBlackIpRuleResponse
 
         The model defined in huaweicloud sdk
@@ -62,6 +64,8 @@ class DeleteWhiteBlackIpRuleResponse(SdkResponse):
         :type addr: str
         :param white: 防护动作：  - 0 拦截  - 1 放行  - 2 仅记录
         :type white: int
+        :param time_mode: 生效模式，默认为permanent（立即生效）
+        :type time_mode: str
         :param ip_group: 
         :type ip_group: :class:`huaweicloudsdkwaf.v1.IpGroup`
         """
@@ -76,6 +80,7 @@ class DeleteWhiteBlackIpRuleResponse(SdkResponse):
         self._status = None
         self._addr = None
         self._white = None
+        self._time_mode = None
         self._ip_group = None
         self.discriminator = None
 
@@ -95,6 +100,8 @@ class DeleteWhiteBlackIpRuleResponse(SdkResponse):
             self.addr = addr
         if white is not None:
             self.white = white
+        if time_mode is not None:
+            self.time_mode = time_mode
         if ip_group is not None:
             self.ip_group = ip_group
 
@@ -273,6 +280,28 @@ class DeleteWhiteBlackIpRuleResponse(SdkResponse):
         :type white: int
         """
         self._white = white
+
+    @property
+    def time_mode(self):
+        """Gets the time_mode of this DeleteWhiteBlackIpRuleResponse.
+
+        生效模式，默认为permanent（立即生效）
+
+        :return: The time_mode of this DeleteWhiteBlackIpRuleResponse.
+        :rtype: str
+        """
+        return self._time_mode
+
+    @time_mode.setter
+    def time_mode(self, time_mode):
+        """Sets the time_mode of this DeleteWhiteBlackIpRuleResponse.
+
+        生效模式，默认为permanent（立即生效）
+
+        :param time_mode: The time_mode of this DeleteWhiteBlackIpRuleResponse.
+        :type time_mode: str
+        """
+        self._time_mode = time_mode
 
     @property
     def ip_group(self):

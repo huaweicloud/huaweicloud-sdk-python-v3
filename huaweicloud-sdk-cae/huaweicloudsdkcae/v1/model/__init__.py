@@ -27,6 +27,7 @@ from huaweicloudsdkcae.v1.model.build import Build
 from huaweicloudsdkcae.v1.model.cert_item import CertItem
 from huaweicloudsdkcae.v1.model.cert_req import CertReq
 from huaweicloudsdkcae.v1.model.certificate_kind_obj import CertificateKindObj
+from huaweicloudsdkcae.v1.model.cloud_storage_log_path_info import CloudStorageLogPathInfo
 from huaweicloudsdkcae.v1.model.component_configuration_kind_obj import ComponentConfigurationKindObj
 from huaweicloudsdkcae.v1.model.component_execution_result import ComponentExecutionResult
 from huaweicloudsdkcae.v1.model.component_info import ComponentInfo

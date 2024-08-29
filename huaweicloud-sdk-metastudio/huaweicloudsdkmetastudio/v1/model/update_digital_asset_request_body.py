@@ -26,7 +26,9 @@ class UpdateDigitalAssetRequestBody:
         'tags': 'list[str]',
         'asset_extra_meta': 'AssetExtraMeta',
         'system_properties': 'list[SystemProperty]',
-        'shared_config': 'AssetSharedConfig'
+        'shared_config': 'AssetSharedConfig',
+        'asset_order': 'int',
+        'supported_service': 'list[SupportedServiceEnum]'
     }
 
     attribute_map = {
@@ -39,10 +41,12 @@ class UpdateDigitalAssetRequestBody:
         'tags': 'tags',
         'asset_extra_meta': 'asset_extra_meta',
         'system_properties': 'system_properties',
-        'shared_config': 'shared_config'
+        'shared_config': 'shared_config',
+        'asset_order': 'asset_order',
+        'supported_service': 'supported_service'
     }
 
-    def __init__(self, asset_name=None, asset_description=None, asset_type=None, asset_state=None, asset_owner=None, review_config=None, tags=None, asset_extra_meta=None, system_properties=None, shared_config=None):
+    def __init__(self, asset_name=None, asset_description=None, asset_type=None, asset_state=None, asset_owner=None, review_config=None, tags=None, asset_extra_meta=None, system_properties=None, shared_config=None, asset_order=None, supported_service=None):
         """UpdateDigitalAssetRequestBody
 
         The model defined in huaweicloud sdk
@@ -59,7 +63,7 @@ class UpdateDigitalAssetRequestBody:
         :type asset_owner: str
         :param review_config: 
         :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
-        :param tags: 标签列表。
+        :param tags: 标签列表。 &gt; 分身形象系统资产的tag定义如下： &gt; - 行业：NEWS,BUSINESS,E-COMMERCE,MARKETING,KNOWLEDGE,EDUCATION,SPORTS &gt; - 性别：MALE,FEMALE &gt; - 姿势：FULL-BODY,HALF-BODY,STANDING,SITTING,WALKING &gt; - 区域：ASIAN,WESTERN,MIDDLE-EASTERNER,AFRICAN,LATINO
         :type tags: list[str]
         :param asset_extra_meta: 
         :type asset_extra_meta: :class:`huaweicloudsdkmetastudio.v1.AssetExtraMeta`
@@ -67,6 +71,10 @@ class UpdateDigitalAssetRequestBody:
         :type system_properties: list[:class:`huaweicloudsdkmetastudio.v1.SystemProperty`]
         :param shared_config: 
         :type shared_config: :class:`huaweicloudsdkmetastudio.v1.AssetSharedConfig`
+        :param asset_order: 展示顺序
+        :type asset_order: int
+        :param supported_service: 支持的业务类型。： * VIDEO_2D：分身数字人视频制作 * LIVE_2D：分身数字人直播 * CHAT_2D：分身数字人智能交互
+        :type supported_service: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
         """
         
         
@@ -81,6 +89,8 @@ class UpdateDigitalAssetRequestBody:
         self._asset_extra_meta = None
         self._system_properties = None
         self._shared_config = None
+        self._asset_order = None
+        self._supported_service = None
         self.discriminator = None
 
         if asset_name is not None:
@@ -103,6 +113,10 @@ class UpdateDigitalAssetRequestBody:
             self.system_properties = system_properties
         if shared_config is not None:
             self.shared_config = shared_config
+        if asset_order is not None:
+            self.asset_order = asset_order
+        if supported_service is not None:
+            self.supported_service = supported_service
 
     @property
     def asset_name(self):
@@ -236,7 +250,7 @@ class UpdateDigitalAssetRequestBody:
     def tags(self):
         """Gets the tags of this UpdateDigitalAssetRequestBody.
 
-        标签列表。
+        标签列表。 > 分身形象系统资产的tag定义如下： > - 行业：NEWS,BUSINESS,E-COMMERCE,MARKETING,KNOWLEDGE,EDUCATION,SPORTS > - 性别：MALE,FEMALE > - 姿势：FULL-BODY,HALF-BODY,STANDING,SITTING,WALKING > - 区域：ASIAN,WESTERN,MIDDLE-EASTERNER,AFRICAN,LATINO
 
         :return: The tags of this UpdateDigitalAssetRequestBody.
         :rtype: list[str]
@@ -247,7 +261,7 @@ class UpdateDigitalAssetRequestBody:
     def tags(self, tags):
         """Sets the tags of this UpdateDigitalAssetRequestBody.
 
-        标签列表。
+        标签列表。 > 分身形象系统资产的tag定义如下： > - 行业：NEWS,BUSINESS,E-COMMERCE,MARKETING,KNOWLEDGE,EDUCATION,SPORTS > - 性别：MALE,FEMALE > - 姿势：FULL-BODY,HALF-BODY,STANDING,SITTING,WALKING > - 区域：ASIAN,WESTERN,MIDDLE-EASTERNER,AFRICAN,LATINO
 
         :param tags: The tags of this UpdateDigitalAssetRequestBody.
         :type tags: list[str]
@@ -311,6 +325,50 @@ class UpdateDigitalAssetRequestBody:
         :type shared_config: :class:`huaweicloudsdkmetastudio.v1.AssetSharedConfig`
         """
         self._shared_config = shared_config
+
+    @property
+    def asset_order(self):
+        """Gets the asset_order of this UpdateDigitalAssetRequestBody.
+
+        展示顺序
+
+        :return: The asset_order of this UpdateDigitalAssetRequestBody.
+        :rtype: int
+        """
+        return self._asset_order
+
+    @asset_order.setter
+    def asset_order(self, asset_order):
+        """Sets the asset_order of this UpdateDigitalAssetRequestBody.
+
+        展示顺序
+
+        :param asset_order: The asset_order of this UpdateDigitalAssetRequestBody.
+        :type asset_order: int
+        """
+        self._asset_order = asset_order
+
+    @property
+    def supported_service(self):
+        """Gets the supported_service of this UpdateDigitalAssetRequestBody.
+
+        支持的业务类型。： * VIDEO_2D：分身数字人视频制作 * LIVE_2D：分身数字人直播 * CHAT_2D：分身数字人智能交互
+
+        :return: The supported_service of this UpdateDigitalAssetRequestBody.
+        :rtype: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
+        """
+        return self._supported_service
+
+    @supported_service.setter
+    def supported_service(self, supported_service):
+        """Sets the supported_service of this UpdateDigitalAssetRequestBody.
+
+        支持的业务类型。： * VIDEO_2D：分身数字人视频制作 * LIVE_2D：分身数字人直播 * CHAT_2D：分身数字人智能交互
+
+        :param supported_service: The supported_service of this UpdateDigitalAssetRequestBody.
+        :type supported_service: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
+        """
+        self._supported_service = supported_service
 
     def to_dict(self):
         """Returns the model properties as a dict"""

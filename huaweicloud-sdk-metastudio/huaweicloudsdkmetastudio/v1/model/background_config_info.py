@@ -41,7 +41,7 @@ class BackgroundConfigInfo:
         :type background_config: str
         :param background_color_config: 纯色背景的RGB颜色值。 &gt; * background_type&#x3D;COLOR时需要填写。
         :type background_color_config: str
-        :param background_asset_id: 背景资产ID。 &gt; * 背景是背景图片时，填图片资产ID。
+        :param background_asset_id: 背景资产ID。 &gt; * 背景是背景图片时，填图片资产ID，可以从资产库中查询。
         :type background_asset_id: str
         """
         
@@ -131,7 +131,7 @@ class BackgroundConfigInfo:
     def background_asset_id(self):
         """Gets the background_asset_id of this BackgroundConfigInfo.
 
-        背景资产ID。 > * 背景是背景图片时，填图片资产ID。
+        背景资产ID。 > * 背景是背景图片时，填图片资产ID，可以从资产库中查询。
 
         :return: The background_asset_id of this BackgroundConfigInfo.
         :rtype: str
@@ -142,7 +142,7 @@ class BackgroundConfigInfo:
     def background_asset_id(self, background_asset_id):
         """Sets the background_asset_id of this BackgroundConfigInfo.
 
-        背景资产ID。 > * 背景是背景图片时，填图片资产ID。
+        背景资产ID。 > * 背景是背景图片时，填图片资产ID，可以从资产库中查询。
 
         :param background_asset_id: The background_asset_id of this BackgroundConfigInfo.
         :type background_asset_id: str

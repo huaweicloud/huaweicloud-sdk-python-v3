@@ -283,6 +283,8 @@ class MetaStudioClient(Client):
         form_params = {}
 
         body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -819,6 +821,8 @@ class MetaStudioClient(Client):
         form_params = {}
 
         body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -1293,6 +1297,8 @@ class MetaStudioClient(Client):
             query_params.append(('name', local_var_params['name']))
         if 'tag' in local_var_params:
             query_params.append(('tag', local_var_params['tag']))
+        if 'tag_combination_type' in local_var_params:
+            query_params.append(('tag_combination_type', local_var_params['tag_combination_type']))
         if 'start_time' in local_var_params:
             query_params.append(('start_time', local_var_params['start_time']))
         if 'end_time' in local_var_params:
@@ -1309,6 +1315,9 @@ class MetaStudioClient(Client):
             query_params.append(('asset_state', local_var_params['asset_state']))
         if 'style_id' in local_var_params:
             query_params.append(('style_id', local_var_params['style_id']))
+        if 'accurate_query_field' in local_var_params:
+            query_params.append(('accurate_query_field', local_var_params['accurate_query_field']))
+            collection_formats['accurate_query_field'] = 'csv'
         if 'render_engine' in local_var_params:
             query_params.append(('render_engine', local_var_params['render_engine']))
         if 'asset_id' in local_var_params:
@@ -1322,6 +1331,8 @@ class MetaStudioClient(Client):
             query_params.append(('system_property', local_var_params['system_property']))
         if 'action_editable' in local_var_params:
             query_params.append(('action_editable', local_var_params['action_editable']))
+        if 'is_with_action_library' in local_var_params:
+            query_params.append(('is_with_action_library', local_var_params['is_with_action_library']))
         if 'is_movable' in local_var_params:
             query_params.append(('is_movable', local_var_params['is_movable']))
         if 'voice_provider' in local_var_params:
@@ -1336,6 +1347,8 @@ class MetaStudioClient(Client):
             query_params.append(('include_device_name', local_var_params['include_device_name']))
         if 'exclude_device_name' in local_var_params:
             query_params.append(('exclude_device_name', local_var_params['exclude_device_name']))
+        if 'supported_service' in local_var_params:
+            query_params.append(('supported_service', local_var_params['supported_service']))
 
         header_params = {}
         if 'x_app_user_id' in local_var_params:
@@ -2036,6 +2049,9 @@ class MetaStudioClient(Client):
             query_params.append(('create_until', local_var_params['create_until']))
         if 'create_since' in local_var_params:
             query_params.append(('create_since', local_var_params['create_since']))
+        if 'fuzzy_query_field' in local_var_params:
+            query_params.append(('fuzzy_query_field', local_var_params['fuzzy_query_field']))
+            collection_formats['fuzzy_query_field'] = 'csv'
         if 'script_id' in local_var_params:
             query_params.append(('script_id', local_var_params['script_id']))
         if 'asset_name' in local_var_params:
@@ -5948,6 +5964,8 @@ class MetaStudioClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'room_id' in local_var_params:
             query_params.append(('room_id', local_var_params['room_id']))
+        if 'robot_type' in local_var_params:
+            query_params.append(('robot_type', local_var_params['robot_type']))
 
         header_params = {}
         if 'x_app_user_id' in local_var_params:
@@ -8442,6 +8460,75 @@ class MetaStudioClient(Client):
 
         return http_info
 
+    def list_job_operation_log(self, request):
+        """查询任务操作日志
+
+        查询任务操作日志
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListJobOperationLog
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ListJobOperationLogRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListJobOperationLogResponse`
+        """
+        http_info = self._list_job_operation_log_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_job_operation_log_invoker(self, request):
+        http_info = self._list_job_operation_log_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_job_operation_log_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/voice-training-manage/user/jobs/{job_id}/op-logs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListJobOperationLogResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_voice_training_job(self, request):
         """查询语音训练任务列表
 
@@ -8494,6 +8581,8 @@ class MetaStudioClient(Client):
             query_params.append(('voice_name', local_var_params['voice_name']))
         if 'tag' in local_var_params:
             query_params.append(('tag', local_var_params['tag']))
+        if 'job_type' in local_var_params:
+            query_params.append(('job_type', local_var_params['job_type']))
 
         header_params = {}
         if 'x_app_user_id' in local_var_params:

@@ -50,7 +50,7 @@ class ShowDigitalHumanBusinessCardResponse(SdkResponse):
 
         :param job_info: 
         :type job_info: :class:`huaweicloudsdkmetastudio.v1.DigitalHumanBusinessCardJobInfo`
-        :param card_templet_asset_id: 数字人名片模板资产ID。
+        :param card_templet_asset_id: 数字人名片模板资产ID，可以从资产库中查询。
         :type card_templet_asset_id: str
         :param card_text_config: 
         :type card_text_config: :class:`huaweicloudsdkmetastudio.v1.BusinessCardTextConfig`
@@ -60,9 +60,9 @@ class ShowDigitalHumanBusinessCardResponse(SdkResponse):
         :type introduction_type: str
         :param introduction_text: 自我介绍文本，用于驱动数字人口型。
         :type introduction_text: str
-        :param voice_asset_id: 音色资产ID。
+        :param voice_asset_id: 音色资产ID，可以从资产库中查询。
         :type voice_asset_id: str
-        :param introduction_audio_asset_id: 自我介绍语音资产ID，用于驱动数字人口型。 &gt; * 介绍语音需要作为asset_type&#x3D;AUDIO资产先上传至资产库。
+        :param introduction_audio_asset_id: 自我介绍语音资产ID，用于驱动数字人口型。 &gt; * 介绍语音需要作为asset_type&#x3D;AUDIO资产先上传至资产库。 &gt; * 使用时从资产库中查询。
         :type introduction_audio_asset_id: str
         :param gender: 性别。 * MALE：男性 * FEMALE：女性
         :type gender: str
@@ -127,7 +127,7 @@ class ShowDigitalHumanBusinessCardResponse(SdkResponse):
     def card_templet_asset_id(self):
         """Gets the card_templet_asset_id of this ShowDigitalHumanBusinessCardResponse.
 
-        数字人名片模板资产ID。
+        数字人名片模板资产ID，可以从资产库中查询。
 
         :return: The card_templet_asset_id of this ShowDigitalHumanBusinessCardResponse.
         :rtype: str
@@ -138,7 +138,7 @@ class ShowDigitalHumanBusinessCardResponse(SdkResponse):
     def card_templet_asset_id(self, card_templet_asset_id):
         """Sets the card_templet_asset_id of this ShowDigitalHumanBusinessCardResponse.
 
-        数字人名片模板资产ID。
+        数字人名片模板资产ID，可以从资产库中查询。
 
         :param card_templet_asset_id: The card_templet_asset_id of this ShowDigitalHumanBusinessCardResponse.
         :type card_templet_asset_id: str
@@ -229,7 +229,7 @@ class ShowDigitalHumanBusinessCardResponse(SdkResponse):
     def voice_asset_id(self):
         """Gets the voice_asset_id of this ShowDigitalHumanBusinessCardResponse.
 
-        音色资产ID。
+        音色资产ID，可以从资产库中查询。
 
         :return: The voice_asset_id of this ShowDigitalHumanBusinessCardResponse.
         :rtype: str
@@ -240,7 +240,7 @@ class ShowDigitalHumanBusinessCardResponse(SdkResponse):
     def voice_asset_id(self, voice_asset_id):
         """Sets the voice_asset_id of this ShowDigitalHumanBusinessCardResponse.
 
-        音色资产ID。
+        音色资产ID，可以从资产库中查询。
 
         :param voice_asset_id: The voice_asset_id of this ShowDigitalHumanBusinessCardResponse.
         :type voice_asset_id: str
@@ -251,7 +251,7 @@ class ShowDigitalHumanBusinessCardResponse(SdkResponse):
     def introduction_audio_asset_id(self):
         """Gets the introduction_audio_asset_id of this ShowDigitalHumanBusinessCardResponse.
 
-        自我介绍语音资产ID，用于驱动数字人口型。 > * 介绍语音需要作为asset_type=AUDIO资产先上传至资产库。
+        自我介绍语音资产ID，用于驱动数字人口型。 > * 介绍语音需要作为asset_type=AUDIO资产先上传至资产库。 > * 使用时从资产库中查询。
 
         :return: The introduction_audio_asset_id of this ShowDigitalHumanBusinessCardResponse.
         :rtype: str
@@ -262,7 +262,7 @@ class ShowDigitalHumanBusinessCardResponse(SdkResponse):
     def introduction_audio_asset_id(self, introduction_audio_asset_id):
         """Sets the introduction_audio_asset_id of this ShowDigitalHumanBusinessCardResponse.
 
-        自我介绍语音资产ID，用于驱动数字人口型。 > * 介绍语音需要作为asset_type=AUDIO资产先上传至资产库。
+        自我介绍语音资产ID，用于驱动数字人口型。 > * 介绍语音需要作为asset_type=AUDIO资产先上传至资产库。 > * 使用时从资产库中查询。
 
         :param introduction_audio_asset_id: The introduction_audio_asset_id of this ShowDigitalHumanBusinessCardResponse.
         :type introduction_audio_asset_id: str

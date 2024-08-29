@@ -17,7 +17,7 @@ class ListShareBandwidthTypesRequest:
     sensitive_list = []
 
     openapi_types = {
-        'fields': 'str',
+        'fields': 'list[str]',
         'id': 'str',
         'bandwidth_type': 'str',
         'name_en': 'str',
@@ -50,7 +50,7 @@ class ListShareBandwidthTypesRequest:
         The model defined in huaweicloud sdk
 
         :param fields: 形式为\\\&quot;fields&#x3D;id&amp;fields&#x3D;bandwidth_type&amp;...\\\&quot;，支持字段：id/bandwidth_type/name_en/name_zh/created_at/update_at/public_border_group/description
-        :type fields: str
+        :type fields: list[str]
         :param id: 支持带宽类型的id
         :type id: str
         :param bandwidth_type: 带宽支持类型
@@ -118,7 +118,7 @@ class ListShareBandwidthTypesRequest:
         形式为\\\"fields=id&fields=bandwidth_type&...\\\"，支持字段：id/bandwidth_type/name_en/name_zh/created_at/update_at/public_border_group/description
 
         :return: The fields of this ListShareBandwidthTypesRequest.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._fields
 
@@ -129,7 +129,7 @@ class ListShareBandwidthTypesRequest:
         形式为\\\"fields=id&fields=bandwidth_type&...\\\"，支持字段：id/bandwidth_type/name_en/name_zh/created_at/update_at/public_border_group/description
 
         :param fields: The fields of this ListShareBandwidthTypesRequest.
-        :type fields: str
+        :type fields: list[str]
         """
         self._fields = fields
 

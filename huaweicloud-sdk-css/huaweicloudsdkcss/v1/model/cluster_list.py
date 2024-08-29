@@ -42,7 +42,8 @@ class ClusterList:
         'tags': 'list[ClusterListTags]',
         'failed_reason': 'ClusterListFailedReasons',
         'period': 'bool',
-        'bandwidth_resource_id': 'str'
+        'bandwidth_resource_id': 'str',
+        'ipv6_endpoint': 'str'
     }
 
     attribute_map = {
@@ -71,10 +72,11 @@ class ClusterList:
         'tags': 'tags',
         'failed_reason': 'failedReason',
         'period': 'period',
-        'bandwidth_resource_id': 'bandwidthResourceId'
+        'bandwidth_resource_id': 'bandwidthResourceId',
+        'ipv6_endpoint': 'ipv6Endpoint'
     }
 
-    def __init__(self, datastore=None, instances=None, public_kibana_resp=None, elb_white_list=None, updated=None, name=None, public_ip=None, created=None, id=None, status=None, endpoint=None, vpc_id=None, subnet_id=None, security_group_id=None, bandwidth_size=None, https_enable=None, authority_enable=None, disk_encrypted=None, backup_available=None, action_progress=None, actions=None, enterprise_project_id=None, tags=None, failed_reason=None, period=None, bandwidth_resource_id=None):
+    def __init__(self, datastore=None, instances=None, public_kibana_resp=None, elb_white_list=None, updated=None, name=None, public_ip=None, created=None, id=None, status=None, endpoint=None, vpc_id=None, subnet_id=None, security_group_id=None, bandwidth_size=None, https_enable=None, authority_enable=None, disk_encrypted=None, backup_available=None, action_progress=None, actions=None, enterprise_project_id=None, tags=None, failed_reason=None, period=None, bandwidth_resource_id=None, ipv6_endpoint=None):
         """ClusterList
 
         The model defined in huaweicloud sdk
@@ -131,6 +133,8 @@ class ClusterList:
         :type period: bool
         :param bandwidth_resource_id: es公网访问的资源id。
         :type bandwidth_resource_id: str
+        :param ipv6_endpoint: 集群内网访问IPv6地址和端口号。
+        :type ipv6_endpoint: str
         """
         
         
@@ -161,6 +165,7 @@ class ClusterList:
         self._failed_reason = None
         self._period = None
         self._bandwidth_resource_id = None
+        self._ipv6_endpoint = None
         self.discriminator = None
 
         if datastore is not None:
@@ -215,6 +220,8 @@ class ClusterList:
             self.period = period
         if bandwidth_resource_id is not None:
             self.bandwidth_resource_id = bandwidth_resource_id
+        if ipv6_endpoint is not None:
+            self.ipv6_endpoint = ipv6_endpoint
 
     @property
     def datastore(self):
@@ -771,6 +778,28 @@ class ClusterList:
         :type bandwidth_resource_id: str
         """
         self._bandwidth_resource_id = bandwidth_resource_id
+
+    @property
+    def ipv6_endpoint(self):
+        """Gets the ipv6_endpoint of this ClusterList.
+
+        集群内网访问IPv6地址和端口号。
+
+        :return: The ipv6_endpoint of this ClusterList.
+        :rtype: str
+        """
+        return self._ipv6_endpoint
+
+    @ipv6_endpoint.setter
+    def ipv6_endpoint(self, ipv6_endpoint):
+        """Sets the ipv6_endpoint of this ClusterList.
+
+        集群内网访问IPv6地址和端口号。
+
+        :param ipv6_endpoint: The ipv6_endpoint of this ClusterList.
+        :type ipv6_endpoint: str
+        """
+        self._ipv6_endpoint = ipv6_endpoint
 
     def to_dict(self):
         """Returns the model properties as a dict"""

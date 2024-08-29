@@ -25,6 +25,7 @@ class ListDigitalHumanVideoRequest:
         'sort_dir': 'str',
         'create_until': 'str',
         'create_since': 'str',
+        'fuzzy_query_field': 'list[str]',
         'script_id': 'str',
         'asset_name': 'str',
         'job_type': 'str',
@@ -40,13 +41,14 @@ class ListDigitalHumanVideoRequest:
         'sort_dir': 'sort_dir',
         'create_until': 'create_until',
         'create_since': 'create_since',
+        'fuzzy_query_field': 'fuzzy_query_field',
         'script_id': 'script_id',
         'asset_name': 'asset_name',
         'job_type': 'job_type',
         'job_id': 'job_id'
     }
 
-    def __init__(self, x_app_user_id=None, offset=None, limit=None, state=None, sort_key=None, sort_dir=None, create_until=None, create_since=None, script_id=None, asset_name=None, job_type=None, job_id=None):
+    def __init__(self, x_app_user_id=None, offset=None, limit=None, state=None, sort_key=None, sort_dir=None, create_until=None, create_since=None, fuzzy_query_field=None, script_id=None, asset_name=None, job_type=None, job_id=None):
         """ListDigitalHumanVideoRequest
 
         The model defined in huaweicloud sdk
@@ -59,7 +61,7 @@ class ListDigitalHumanVideoRequest:
         :type limit: int
         :param state: 任务状态，默认所有状态。  可多个状态查询，使用英文逗号分隔。  如state&#x3D;CREATING,PUBLISHED
         :type state: str
-        :param sort_key: 排序字段，目前只支持create_time。
+        :param sort_key: 排序字段，支持的排序方式有： - 按创建时间排序：create_time - 按更新时间排序：update_time - 按资产排序：asset_order
         :type sort_key: str
         :param sort_dir: 排序方式。 * asc：升序 * desc：降序  默认asc升序。
         :type sort_dir: str
@@ -67,6 +69,8 @@ class ListDigitalHumanVideoRequest:
         :type create_until: str
         :param create_since: 过滤创建时间&gt;&#x3D;输入时间的记录。
         :type create_since: str
+        :param fuzzy_query_field: 使用模糊查询的字段
+        :type fuzzy_query_field: list[str]
         :param script_id: 剧本ID。
         :type script_id: str
         :param asset_name: 输出视频资产名称。
@@ -87,6 +91,7 @@ class ListDigitalHumanVideoRequest:
         self._sort_dir = None
         self._create_until = None
         self._create_since = None
+        self._fuzzy_query_field = None
         self._script_id = None
         self._asset_name = None
         self._job_type = None
@@ -109,6 +114,8 @@ class ListDigitalHumanVideoRequest:
             self.create_until = create_until
         if create_since is not None:
             self.create_since = create_since
+        if fuzzy_query_field is not None:
+            self.fuzzy_query_field = fuzzy_query_field
         if script_id is not None:
             self.script_id = script_id
         if asset_name is not None:
@@ -210,7 +217,7 @@ class ListDigitalHumanVideoRequest:
     def sort_key(self):
         """Gets the sort_key of this ListDigitalHumanVideoRequest.
 
-        排序字段，目前只支持create_time。
+        排序字段，支持的排序方式有： - 按创建时间排序：create_time - 按更新时间排序：update_time - 按资产排序：asset_order
 
         :return: The sort_key of this ListDigitalHumanVideoRequest.
         :rtype: str
@@ -221,7 +228,7 @@ class ListDigitalHumanVideoRequest:
     def sort_key(self, sort_key):
         """Sets the sort_key of this ListDigitalHumanVideoRequest.
 
-        排序字段，目前只支持create_time。
+        排序字段，支持的排序方式有： - 按创建时间排序：create_time - 按更新时间排序：update_time - 按资产排序：asset_order
 
         :param sort_key: The sort_key of this ListDigitalHumanVideoRequest.
         :type sort_key: str
@@ -293,6 +300,28 @@ class ListDigitalHumanVideoRequest:
         :type create_since: str
         """
         self._create_since = create_since
+
+    @property
+    def fuzzy_query_field(self):
+        """Gets the fuzzy_query_field of this ListDigitalHumanVideoRequest.
+
+        使用模糊查询的字段
+
+        :return: The fuzzy_query_field of this ListDigitalHumanVideoRequest.
+        :rtype: list[str]
+        """
+        return self._fuzzy_query_field
+
+    @fuzzy_query_field.setter
+    def fuzzy_query_field(self, fuzzy_query_field):
+        """Sets the fuzzy_query_field of this ListDigitalHumanVideoRequest.
+
+        使用模糊查询的字段
+
+        :param fuzzy_query_field: The fuzzy_query_field of this ListDigitalHumanVideoRequest.
+        :type fuzzy_query_field: list[str]
+        """
+        self._fuzzy_query_field = fuzzy_query_field
 
     @property
     def script_id(self):

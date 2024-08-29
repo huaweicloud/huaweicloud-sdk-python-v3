@@ -33,7 +33,8 @@ class QueryResRecordsDetailReq:
         'statistic_type': 'int',
         'query_type': 'str',
         'bill_cycle_begin': 'str',
-        'bill_cycle_end': 'str'
+        'bill_cycle_end': 'str',
+        'payer_account_id': 'str'
     }
 
     attribute_map = {
@@ -53,10 +54,11 @@ class QueryResRecordsDetailReq:
         'statistic_type': 'statistic_type',
         'query_type': 'query_type',
         'bill_cycle_begin': 'bill_cycle_begin',
-        'bill_cycle_end': 'bill_cycle_end'
+        'bill_cycle_end': 'bill_cycle_end',
+        'payer_account_id': 'payer_account_id'
     }
 
-    def __init__(self, cycle=None, cloud_service_type=None, resource_type=None, region=None, res_instance_id=None, charge_mode=None, bill_type=None, enterprise_project_id=None, include_zero_record=None, offset=None, limit=None, method=None, sub_customer_id=None, statistic_type=None, query_type=None, bill_cycle_begin=None, bill_cycle_end=None):
+    def __init__(self, cycle=None, cloud_service_type=None, resource_type=None, region=None, res_instance_id=None, charge_mode=None, bill_type=None, enterprise_project_id=None, include_zero_record=None, offset=None, limit=None, method=None, sub_customer_id=None, statistic_type=None, query_type=None, bill_cycle_begin=None, bill_cycle_end=None, payer_account_id=None):
         """QueryResRecordsDetailReq
 
         The model defined in huaweicloud sdk
@@ -95,6 +97,8 @@ class QueryResRecordsDetailReq:
         :type bill_cycle_begin: str
         :param bill_cycle_end: |参数名称：账期结束时间。格式为YYYY-MM-DD。| |参数的约束及描述：仅当query_type&#x3D;DAILY时，必须传递账期结束时间。该参数不携带或携带值为null或携带为空串时，不作为筛选条件。|
         :type bill_cycle_end: str
+        :param payer_account_id: |参数名称：支付账号ID。| |参数的约束及描述：普通客户、财务独立企业子客户查询消费记录，只能查询到客户自己的消费记录，该参数不携带或携带为自身ID时，查询的都只是自身的消费记录； 企业主客户查询消费记录，不携带时，查询的是自身的、财务托管企业子、财务独立企业子的消费记录；入参自身ID时，查询的是自身的、财务托管企业子的消费记录；也可入参其名下财务独立企业子的客户ID，只查询该财务独立企业子的消费记录； 财务托管企业子查询消费记录，入参自身ID时，查询的是未与企业主关联时的消费记录；入参企业主客户ID时，查询的是与企业主关联后的消费记录；不携带时查询以上全部消费记录|
+        :type payer_account_id: str
         """
         
         
@@ -116,6 +120,7 @@ class QueryResRecordsDetailReq:
         self._query_type = None
         self._bill_cycle_begin = None
         self._bill_cycle_end = None
+        self._payer_account_id = None
         self.discriminator = None
 
         self.cycle = cycle
@@ -151,6 +156,8 @@ class QueryResRecordsDetailReq:
             self.bill_cycle_begin = bill_cycle_begin
         if bill_cycle_end is not None:
             self.bill_cycle_end = bill_cycle_end
+        if payer_account_id is not None:
+            self.payer_account_id = payer_account_id
 
     @property
     def cycle(self):
@@ -525,6 +532,28 @@ class QueryResRecordsDetailReq:
         :type bill_cycle_end: str
         """
         self._bill_cycle_end = bill_cycle_end
+
+    @property
+    def payer_account_id(self):
+        """Gets the payer_account_id of this QueryResRecordsDetailReq.
+
+        |参数名称：支付账号ID。| |参数的约束及描述：普通客户、财务独立企业子客户查询消费记录，只能查询到客户自己的消费记录，该参数不携带或携带为自身ID时，查询的都只是自身的消费记录； 企业主客户查询消费记录，不携带时，查询的是自身的、财务托管企业子、财务独立企业子的消费记录；入参自身ID时，查询的是自身的、财务托管企业子的消费记录；也可入参其名下财务独立企业子的客户ID，只查询该财务独立企业子的消费记录； 财务托管企业子查询消费记录，入参自身ID时，查询的是未与企业主关联时的消费记录；入参企业主客户ID时，查询的是与企业主关联后的消费记录；不携带时查询以上全部消费记录|
+
+        :return: The payer_account_id of this QueryResRecordsDetailReq.
+        :rtype: str
+        """
+        return self._payer_account_id
+
+    @payer_account_id.setter
+    def payer_account_id(self, payer_account_id):
+        """Sets the payer_account_id of this QueryResRecordsDetailReq.
+
+        |参数名称：支付账号ID。| |参数的约束及描述：普通客户、财务独立企业子客户查询消费记录，只能查询到客户自己的消费记录，该参数不携带或携带为自身ID时，查询的都只是自身的消费记录； 企业主客户查询消费记录，不携带时，查询的是自身的、财务托管企业子、财务独立企业子的消费记录；入参自身ID时，查询的是自身的、财务托管企业子的消费记录；也可入参其名下财务独立企业子的客户ID，只查询该财务独立企业子的消费记录； 财务托管企业子查询消费记录，入参自身ID时，查询的是未与企业主关联时的消费记录；入参企业主客户ID时，查询的是与企业主关联后的消费记录；不携带时查询以上全部消费记录|
+
+        :param payer_account_id: The payer_account_id of this QueryResRecordsDetailReq.
+        :type payer_account_id: str
+        """
+        self._payer_account_id = payer_account_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -26,6 +26,8 @@ This document introduces how to obtain and use Huawei Cloud Python SDK.
 
 You could use **pip** or **source code** to install dependencies.
 
+You can get the SDK version information through [SDK center](https://console-intl.huaweicloud.com/apiexplorer/#/sdkcenter?language=Python) or [PYPI](https://pypi.org/search/?q=huaweicloudsdk).
+
 ### Individual Cloud Service
 
 Take using VPC SDK for example, you need to install `huaweicloudsdkvpc` library:
@@ -191,7 +193,7 @@ if __name__ == "__main__":
 
 ## Online Debugging
 
-[API Explorer](https://apiexplorer.developer.intl.huaweicloud.com/apiexplorer/overview) provides api retrieval and online debugging, supports full fast retrieval, visual debugging, help document viewing, and online consultation.
+[API Explorer](https://apiexplorer.developer.intl.huaweicloud.com/apiexplorer/overview) provides api retrieval, SDK samples and online debugging, supports full fast retrieval, visual debugging, help document viewing, and online consultation.
 
 ## Changelog
 

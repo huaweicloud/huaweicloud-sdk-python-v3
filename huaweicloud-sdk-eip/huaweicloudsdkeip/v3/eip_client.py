@@ -74,6 +74,9 @@ class EipClient(Client):
             query_params.append(('marker', local_var_params['marker']))
         if 'id' in local_var_params:
             query_params.append(('id', local_var_params['id']))
+        if 'fields' in local_var_params:
+            query_params.append(('fields', local_var_params['fields']))
+            collection_formats['fields'] = 'multi'
         if 'bandwidth_type' in local_var_params:
             query_params.append(('bandwidth_type', local_var_params['bandwidth_type']))
         if 'name' in local_var_params:
@@ -241,6 +244,7 @@ class EipClient(Client):
         query_params = []
         if 'fields' in local_var_params:
             query_params.append(('fields', local_var_params['fields']))
+            collection_formats['fields'] = 'multi'
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
@@ -316,6 +320,9 @@ class EipClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'marker' in local_var_params:
             query_params.append(('marker', local_var_params['marker']))
+        if 'fields' in local_var_params:
+            query_params.append(('fields', local_var_params['fields']))
+            collection_formats['fields'] = 'multi'
         if 'id' in local_var_params:
             query_params.append(('id', local_var_params['id']))
         if 'bandwidth_type' in local_var_params:
@@ -480,6 +487,7 @@ class EipClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'fields' in local_var_params:
             query_params.append(('fields', local_var_params['fields']))
+            collection_formats['fields'] = 'multi'
         if 'sort_key' in local_var_params:
             query_params.append(('sort_key', local_var_params['sort_key']))
         if 'sort_dir' in local_var_params:
@@ -563,6 +571,7 @@ class EipClient(Client):
         query_params = []
         if 'fields' in local_var_params:
             query_params.append(('fields', local_var_params['fields']))
+            collection_formats['fields'] = 'multi'
         if 'id' in local_var_params:
             query_params.append(('id', local_var_params['id']))
         if 'bandwidth_type' in local_var_params:
@@ -650,6 +659,7 @@ class EipClient(Client):
         query_params = []
         if 'fields' in local_var_params:
             query_params.append(('fields', local_var_params['fields']))
+            collection_formats['fields'] = 'multi'
 
         header_params = {}
 
@@ -715,6 +725,7 @@ class EipClient(Client):
         query_params = []
         if 'fields' in local_var_params:
             query_params.append(('fields', local_var_params['fields']))
+            collection_formats['fields'] = 'multi'
         if 'geip_id' in local_var_params:
             query_params.append(('geip_id', local_var_params['geip_id']))
         if 'geip_ip_address' in local_var_params:
@@ -1729,6 +1740,7 @@ class EipClient(Client):
         query_params = []
         if 'fields' in local_var_params:
             query_params.append(('fields', local_var_params['fields']))
+            collection_formats['fields'] = 'multi'
 
         header_params = {}
 
@@ -1861,6 +1873,7 @@ class EipClient(Client):
         query_params = []
         if 'fields' in local_var_params:
             query_params.append(('fields', local_var_params['fields']))
+            collection_formats['fields'] = 'multi'
         if 'id' in local_var_params:
             query_params.append(('id', local_var_params['id']))
         if 'vpc_id' in local_var_params:
@@ -1944,6 +1957,7 @@ class EipClient(Client):
         query_params = []
         if 'fields' in local_var_params:
             query_params.append(('fields', local_var_params['fields']))
+            collection_formats['fields'] = 'multi'
 
         header_params = {}
 
@@ -2011,6 +2025,7 @@ class EipClient(Client):
         query_params = []
         if 'fields' in local_var_params:
             query_params.append(('fields', local_var_params['fields']))
+            collection_formats['fields'] = 'multi'
 
         header_params = {}
 

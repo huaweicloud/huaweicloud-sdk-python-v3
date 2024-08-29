@@ -65,7 +65,14 @@ class TriggerEventDataRequestBody:
         'connect_address': 'str',
         'exchange_name': 'str',
         'vhost': 'str',
-        'ssl_enable': 'bool'
+        'ssl_enable': 'bool',
+        'key_encode': 'bool',
+        'agency': 'str',
+        'channel_name': 'str',
+        'source_name': 'str',
+        'created_time': 'datetime',
+        'status': 'str',
+        'trigger_name': 'str'
     }
 
     attribute_map = {
@@ -117,10 +124,17 @@ class TriggerEventDataRequestBody:
         'connect_address': 'connect_address',
         'exchange_name': 'exchange_name',
         'vhost': 'vhost',
-        'ssl_enable': 'ssl_enable'
+        'ssl_enable': 'ssl_enable',
+        'key_encode': 'Key_encode',
+        'agency': 'agency',
+        'channel_name': 'channel_name',
+        'source_name': 'source_name',
+        'created_time': 'created_time',
+        'status': 'status',
+        'trigger_name': 'trigger_name'
     }
 
-    def __init__(self, name=None, schedule_type=None, schedule=None, user_event=None, type=None, path=None, protocol=None, req_method=None, group_id=None, group_name=None, match_mode=None, env_name=None, env_id=None, auth=None, func_info=None, sl_domain=None, backend_type=None, operations=None, instance_id=None, collection_name=None, db_name=None, db_password=None, batch_size=None, queue_id=None, consumer_group_id=None, polling_interval=None, stream_name=None, sharditerator_type=None, polling_unit=None, max_fetch_bytes=None, is_serial=None, log_group_id=None, log_topic_id=None, bucket=None, prefix=None, suffix=None, events=None, topic_urn=None, topic_ids=None, kafka_user=None, kafka_password=None, kafka_connect_address=None, kafka_ssl_enable=None, access_password=None, access_user=None, connect_address=None, exchange_name=None, vhost=None, ssl_enable=None):
+    def __init__(self, name=None, schedule_type=None, schedule=None, user_event=None, type=None, path=None, protocol=None, req_method=None, group_id=None, group_name=None, match_mode=None, env_name=None, env_id=None, auth=None, func_info=None, sl_domain=None, backend_type=None, operations=None, instance_id=None, collection_name=None, db_name=None, db_password=None, batch_size=None, queue_id=None, consumer_group_id=None, polling_interval=None, stream_name=None, sharditerator_type=None, polling_unit=None, max_fetch_bytes=None, is_serial=None, log_group_id=None, log_topic_id=None, bucket=None, prefix=None, suffix=None, events=None, topic_urn=None, topic_ids=None, kafka_user=None, kafka_password=None, kafka_connect_address=None, kafka_ssl_enable=None, access_password=None, access_user=None, connect_address=None, exchange_name=None, vhost=None, ssl_enable=None, key_encode=None, agency=None, channel_name=None, source_name=None, created_time=None, status=None, trigger_name=None):
         """TriggerEventDataRequestBody
 
         The model defined in huaweicloud sdk
@@ -223,6 +237,20 @@ class TriggerEventDataRequestBody:
         :type vhost: str
         :param ssl_enable: RABBITMQ连接是否开启安全认证（RABBITMQ触发器参数）。
         :type ssl_enable: bool
+        :param key_encode: EG obs触发器是否对对象加密。
+        :type key_encode: bool
+        :param agency: 使用的代理
+        :type agency: str
+        :param channel_name: 通道名称
+        :type channel_name: str
+        :param source_name: 事件源名称
+        :type source_name: str
+        :param created_time: 创建时间
+        :type created_time: datetime
+        :param status: 触发器状态
+        :type status: str
+        :param trigger_name: 触发器名称
+        :type trigger_name: str
         """
         
         
@@ -276,6 +304,13 @@ class TriggerEventDataRequestBody:
         self._exchange_name = None
         self._vhost = None
         self._ssl_enable = None
+        self._key_encode = None
+        self._agency = None
+        self._channel_name = None
+        self._source_name = None
+        self._created_time = None
+        self._status = None
+        self._trigger_name = None
         self.discriminator = None
 
         if name is not None:
@@ -376,6 +411,20 @@ class TriggerEventDataRequestBody:
             self.vhost = vhost
         if ssl_enable is not None:
             self.ssl_enable = ssl_enable
+        if key_encode is not None:
+            self.key_encode = key_encode
+        if agency is not None:
+            self.agency = agency
+        if channel_name is not None:
+            self.channel_name = channel_name
+        if source_name is not None:
+            self.source_name = source_name
+        if created_time is not None:
+            self.created_time = created_time
+        if status is not None:
+            self.status = status
+        if trigger_name is not None:
+            self.trigger_name = trigger_name
 
     @property
     def name(self):
@@ -1450,6 +1499,160 @@ class TriggerEventDataRequestBody:
         :type ssl_enable: bool
         """
         self._ssl_enable = ssl_enable
+
+    @property
+    def key_encode(self):
+        """Gets the key_encode of this TriggerEventDataRequestBody.
+
+        EG obs触发器是否对对象加密。
+
+        :return: The key_encode of this TriggerEventDataRequestBody.
+        :rtype: bool
+        """
+        return self._key_encode
+
+    @key_encode.setter
+    def key_encode(self, key_encode):
+        """Sets the key_encode of this TriggerEventDataRequestBody.
+
+        EG obs触发器是否对对象加密。
+
+        :param key_encode: The key_encode of this TriggerEventDataRequestBody.
+        :type key_encode: bool
+        """
+        self._key_encode = key_encode
+
+    @property
+    def agency(self):
+        """Gets the agency of this TriggerEventDataRequestBody.
+
+        使用的代理
+
+        :return: The agency of this TriggerEventDataRequestBody.
+        :rtype: str
+        """
+        return self._agency
+
+    @agency.setter
+    def agency(self, agency):
+        """Sets the agency of this TriggerEventDataRequestBody.
+
+        使用的代理
+
+        :param agency: The agency of this TriggerEventDataRequestBody.
+        :type agency: str
+        """
+        self._agency = agency
+
+    @property
+    def channel_name(self):
+        """Gets the channel_name of this TriggerEventDataRequestBody.
+
+        通道名称
+
+        :return: The channel_name of this TriggerEventDataRequestBody.
+        :rtype: str
+        """
+        return self._channel_name
+
+    @channel_name.setter
+    def channel_name(self, channel_name):
+        """Sets the channel_name of this TriggerEventDataRequestBody.
+
+        通道名称
+
+        :param channel_name: The channel_name of this TriggerEventDataRequestBody.
+        :type channel_name: str
+        """
+        self._channel_name = channel_name
+
+    @property
+    def source_name(self):
+        """Gets the source_name of this TriggerEventDataRequestBody.
+
+        事件源名称
+
+        :return: The source_name of this TriggerEventDataRequestBody.
+        :rtype: str
+        """
+        return self._source_name
+
+    @source_name.setter
+    def source_name(self, source_name):
+        """Sets the source_name of this TriggerEventDataRequestBody.
+
+        事件源名称
+
+        :param source_name: The source_name of this TriggerEventDataRequestBody.
+        :type source_name: str
+        """
+        self._source_name = source_name
+
+    @property
+    def created_time(self):
+        """Gets the created_time of this TriggerEventDataRequestBody.
+
+        创建时间
+
+        :return: The created_time of this TriggerEventDataRequestBody.
+        :rtype: datetime
+        """
+        return self._created_time
+
+    @created_time.setter
+    def created_time(self, created_time):
+        """Sets the created_time of this TriggerEventDataRequestBody.
+
+        创建时间
+
+        :param created_time: The created_time of this TriggerEventDataRequestBody.
+        :type created_time: datetime
+        """
+        self._created_time = created_time
+
+    @property
+    def status(self):
+        """Gets the status of this TriggerEventDataRequestBody.
+
+        触发器状态
+
+        :return: The status of this TriggerEventDataRequestBody.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this TriggerEventDataRequestBody.
+
+        触发器状态
+
+        :param status: The status of this TriggerEventDataRequestBody.
+        :type status: str
+        """
+        self._status = status
+
+    @property
+    def trigger_name(self):
+        """Gets the trigger_name of this TriggerEventDataRequestBody.
+
+        触发器名称
+
+        :return: The trigger_name of this TriggerEventDataRequestBody.
+        :rtype: str
+        """
+        return self._trigger_name
+
+    @trigger_name.setter
+    def trigger_name(self, trigger_name):
+        """Sets the trigger_name of this TriggerEventDataRequestBody.
+
+        触发器名称
+
+        :param trigger_name: The trigger_name of this TriggerEventDataRequestBody.
+        :type trigger_name: str
+        """
+        self._trigger_name = trigger_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

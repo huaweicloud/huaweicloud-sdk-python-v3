@@ -59,7 +59,8 @@ class MonthlyBillRes:
         'sub_resource_id': 'str',
         'sub_resource_name': 'str',
         'pre_order_id': 'str',
-        'az_code_infos': 'list[AzCodeInfo]'
+        'az_code_infos': 'list[AzCodeInfo]',
+        'payer_account_id': 'str'
     }
 
     attribute_map = {
@@ -105,10 +106,11 @@ class MonthlyBillRes:
         'sub_resource_id': 'sub_resource_id',
         'sub_resource_name': 'sub_resource_name',
         'pre_order_id': 'pre_order_id',
-        'az_code_infos': 'az_code_infos'
+        'az_code_infos': 'az_code_infos',
+        'payer_account_id': 'payer_account_id'
     }
 
-    def __init__(self, cycle=None, bill_date=None, bill_type=None, customer_id=None, region=None, region_name=None, cloud_service_type=None, resource_type_code=None, cloud_service_type_name=None, resource_type_name=None, res_instance_id=None, resource_name=None, resource_tag=None, sku_code=None, enterprise_project_id=None, enterprise_project_name=None, charge_mode=None, consume_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, official_amount=None, discount_amount=None, measure_id=None, period_type=None, root_resource_id=None, parent_resource_id=None, trade_id=None, id=None, product_spec_desc=None, sub_service_type_code=None, sub_service_type_name=None, sub_resource_type_code=None, sub_resource_type_name=None, sub_resource_id=None, sub_resource_name=None, pre_order_id=None, az_code_infos=None):
+    def __init__(self, cycle=None, bill_date=None, bill_type=None, customer_id=None, region=None, region_name=None, cloud_service_type=None, resource_type_code=None, cloud_service_type_name=None, resource_type_name=None, res_instance_id=None, resource_name=None, resource_tag=None, sku_code=None, enterprise_project_id=None, enterprise_project_name=None, charge_mode=None, consume_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, official_amount=None, discount_amount=None, measure_id=None, period_type=None, root_resource_id=None, parent_resource_id=None, trade_id=None, id=None, product_spec_desc=None, sub_service_type_code=None, sub_service_type_name=None, sub_resource_type_code=None, sub_resource_type_name=None, sub_resource_id=None, sub_resource_name=None, pre_order_id=None, az_code_infos=None, payer_account_id=None):
         """MonthlyBillRes
 
         The model defined in huaweicloud sdk
@@ -199,6 +201,8 @@ class MonthlyBillRes:
         :type pre_order_id: str
         :param az_code_infos: 可用区信息列表。具体请参见表 AzCodeInfo。
         :type az_code_infos: list[:class:`huaweicloudsdkbss.v2.AzCodeInfo`]
+        :param payer_account_id: |参数名称：支付账号ID。| |参数的约束及描述：如果是普通客户或者财务独立企业子客户或者企业主客户查询消费记录，此处为客户自己的客户ID。如果是财务托管企业子查询消费记录，此处为企业主客户ID或自己的客户ID。|
+        :type payer_account_id: str
         """
         
         
@@ -246,6 +250,7 @@ class MonthlyBillRes:
         self._sub_resource_name = None
         self._pre_order_id = None
         self._az_code_infos = None
+        self._payer_account_id = None
         self.discriminator = None
 
         if cycle is not None:
@@ -334,6 +339,8 @@ class MonthlyBillRes:
             self.pre_order_id = pre_order_id
         if az_code_infos is not None:
             self.az_code_infos = az_code_infos
+        if payer_account_id is not None:
+            self.payer_account_id = payer_account_id
 
     @property
     def cycle(self):
@@ -1280,6 +1287,28 @@ class MonthlyBillRes:
         :type az_code_infos: list[:class:`huaweicloudsdkbss.v2.AzCodeInfo`]
         """
         self._az_code_infos = az_code_infos
+
+    @property
+    def payer_account_id(self):
+        """Gets the payer_account_id of this MonthlyBillRes.
+
+        |参数名称：支付账号ID。| |参数的约束及描述：如果是普通客户或者财务独立企业子客户或者企业主客户查询消费记录，此处为客户自己的客户ID。如果是财务托管企业子查询消费记录，此处为企业主客户ID或自己的客户ID。|
+
+        :return: The payer_account_id of this MonthlyBillRes.
+        :rtype: str
+        """
+        return self._payer_account_id
+
+    @payer_account_id.setter
+    def payer_account_id(self, payer_account_id):
+        """Sets the payer_account_id of this MonthlyBillRes.
+
+        |参数名称：支付账号ID。| |参数的约束及描述：如果是普通客户或者财务独立企业子客户或者企业主客户查询消费记录，此处为客户自己的客户ID。如果是财务托管企业子查询消费记录，此处为企业主客户ID或自己的客户ID。|
+
+        :param payer_account_id: The payer_account_id of this MonthlyBillRes.
+        :type payer_account_id: str
+        """
+        self._payer_account_id = payer_account_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

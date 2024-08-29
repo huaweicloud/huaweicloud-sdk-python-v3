@@ -35,7 +35,7 @@ class ChangeInstanceTypeRequest:
 
         :param server_id: 实例id
         :type server_id: str
-        :param availability_zone: 可用分区名称。  可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取
+        :param availability_zone: 可用分区名称。  可参考接口\&quot;获取服务可用区\&quot;获取
         :type availability_zone: str
         :param is_auto_pay: 是否自动支付，下单订购后，是否自动从客户的华为云账户中支付，而不需要客户手动去进行支付。 - 1：是（会自动选择折扣和优惠券进行优惠，然后自动从客户华为云账户中支付），自动支付失败后会生成订单成功(该订单应付金额是优惠后金额)、但订单状态为“待支付”，等待客户手动支付(手动支付时，客户还可以修改系统自动选择的折扣和优惠券) - 0：否（需要客户手动去支付，客户可以选择折扣和优惠券。）  默认值为“0”
         :type is_auto_pay: int
@@ -80,7 +80,7 @@ class ChangeInstanceTypeRequest:
     def availability_zone(self):
         """Gets the availability_zone of this ChangeInstanceTypeRequest.
 
-        可用分区名称。  可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取
+        可用分区名称。  可参考接口\"获取服务可用区\"获取
 
         :return: The availability_zone of this ChangeInstanceTypeRequest.
         :rtype: str
@@ -91,7 +91,7 @@ class ChangeInstanceTypeRequest:
     def availability_zone(self, availability_zone):
         """Sets the availability_zone of this ChangeInstanceTypeRequest.
 
-        可用分区名称。  可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取
+        可用分区名称。  可参考接口\"获取服务可用区\"获取
 
         :param availability_zone: The availability_zone of this ChangeInstanceTypeRequest.
         :type availability_zone: str

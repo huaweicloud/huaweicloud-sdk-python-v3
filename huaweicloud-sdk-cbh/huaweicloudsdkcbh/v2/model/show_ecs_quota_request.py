@@ -31,9 +31,9 @@ class ShowEcsQuotaRequest:
 
         The model defined in huaweicloud sdk
 
-        :param availability_zone: 可用分区名称。  可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取
+        :param availability_zone: 可用分区名称。  可参考接口\&quot;获取服务可用区\&quot;获取
         :type availability_zone: str
-        :param resource_spec_code: 待创建云堡垒机规格ID，例如： - cbh.basic.10  10资产标准版 - cbh.enhance.10  10资产专业版  已上线的规格详情请参见《云堡垒机常见问题》的购买，[云堡垒机实例有哪些规格](https://support.huaweicloud.com/cbh_faq/cbh_03_0025.html)章节或调用接口[查询云堡垒机规格信息](https://support.huaweicloud.com/api-cbh/ShowSpecInfo.html)获取。
+        :param resource_spec_code: 待创建云堡垒机规格ID，例如： - cbh.basic.10  10资产标准版 - cbh.enhance.10  10资产专业版  可参考接口\&quot;查询云堡垒机规格信息\&quot;获取
         :type resource_spec_code: str
         """
         
@@ -50,7 +50,7 @@ class ShowEcsQuotaRequest:
     def availability_zone(self):
         """Gets the availability_zone of this ShowEcsQuotaRequest.
 
-        可用分区名称。  可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取
+        可用分区名称。  可参考接口\"获取服务可用区\"获取
 
         :return: The availability_zone of this ShowEcsQuotaRequest.
         :rtype: str
@@ -61,7 +61,7 @@ class ShowEcsQuotaRequest:
     def availability_zone(self, availability_zone):
         """Sets the availability_zone of this ShowEcsQuotaRequest.
 
-        可用分区名称。  可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取
+        可用分区名称。  可参考接口\"获取服务可用区\"获取
 
         :param availability_zone: The availability_zone of this ShowEcsQuotaRequest.
         :type availability_zone: str
@@ -72,7 +72,7 @@ class ShowEcsQuotaRequest:
     def resource_spec_code(self):
         """Gets the resource_spec_code of this ShowEcsQuotaRequest.
 
-        待创建云堡垒机规格ID，例如： - cbh.basic.10  10资产标准版 - cbh.enhance.10  10资产专业版  已上线的规格详情请参见《云堡垒机常见问题》的购买，[云堡垒机实例有哪些规格](https://support.huaweicloud.com/cbh_faq/cbh_03_0025.html)章节或调用接口[查询云堡垒机规格信息](https://support.huaweicloud.com/api-cbh/ShowSpecInfo.html)获取。
+        待创建云堡垒机规格ID，例如： - cbh.basic.10  10资产标准版 - cbh.enhance.10  10资产专业版  可参考接口\"查询云堡垒机规格信息\"获取
 
         :return: The resource_spec_code of this ShowEcsQuotaRequest.
         :rtype: str
@@ -83,7 +83,7 @@ class ShowEcsQuotaRequest:
     def resource_spec_code(self, resource_spec_code):
         """Sets the resource_spec_code of this ShowEcsQuotaRequest.
 
-        待创建云堡垒机规格ID，例如： - cbh.basic.10  10资产标准版 - cbh.enhance.10  10资产专业版  已上线的规格详情请参见《云堡垒机常见问题》的购买，[云堡垒机实例有哪些规格](https://support.huaweicloud.com/cbh_faq/cbh_03_0025.html)章节或调用接口[查询云堡垒机规格信息](https://support.huaweicloud.com/api-cbh/ShowSpecInfo.html)获取。
+        待创建云堡垒机规格ID，例如： - cbh.basic.10  10资产标准版 - cbh.enhance.10  10资产专业版  可参考接口\"查询云堡垒机规格信息\"获取
 
         :param resource_spec_code: The resource_spec_code of this ShowEcsQuotaRequest.
         :type resource_spec_code: str

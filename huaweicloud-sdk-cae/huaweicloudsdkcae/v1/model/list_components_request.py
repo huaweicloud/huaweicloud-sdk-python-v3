@@ -21,7 +21,9 @@ class ListComponentsRequest:
         'x_enterprise_project_id': 'str',
         'x_environment_id': 'str',
         'limit': 'str',
-        'offset': 'str'
+        'offset': 'str',
+        'sort_key': 'str',
+        'sort': 'str'
     }
 
     attribute_map = {
@@ -29,10 +31,12 @@ class ListComponentsRequest:
         'x_enterprise_project_id': 'X-Enterprise-Project-ID',
         'x_environment_id': 'X-Environment-ID',
         'limit': 'limit',
-        'offset': 'offset'
+        'offset': 'offset',
+        'sort_key': 'sort_key',
+        'sort': 'sort'
     }
 
-    def __init__(self, application_id=None, x_enterprise_project_id=None, x_environment_id=None, limit=None, offset=None):
+    def __init__(self, application_id=None, x_enterprise_project_id=None, x_environment_id=None, limit=None, offset=None, sort_key=None, sort=None):
         """ListComponentsRequest
 
         The model defined in huaweicloud sdk
@@ -47,6 +51,10 @@ class ListComponentsRequest:
         :type limit: str
         :param offset: 分页偏移位，查询起始位置。
         :type offset: str
+        :param sort_key: 排序字段。
+        :type sort_key: str
+        :param sort: 升降序规则。
+        :type sort: str
         """
         
         
@@ -56,6 +64,8 @@ class ListComponentsRequest:
         self._x_environment_id = None
         self._limit = None
         self._offset = None
+        self._sort_key = None
+        self._sort = None
         self.discriminator = None
 
         self.application_id = application_id
@@ -66,6 +76,10 @@ class ListComponentsRequest:
             self.limit = limit
         if offset is not None:
             self.offset = offset
+        if sort_key is not None:
+            self.sort_key = sort_key
+        if sort is not None:
+            self.sort = sort
 
     @property
     def application_id(self):
@@ -176,6 +190,50 @@ class ListComponentsRequest:
         :type offset: str
         """
         self._offset = offset
+
+    @property
+    def sort_key(self):
+        """Gets the sort_key of this ListComponentsRequest.
+
+        排序字段。
+
+        :return: The sort_key of this ListComponentsRequest.
+        :rtype: str
+        """
+        return self._sort_key
+
+    @sort_key.setter
+    def sort_key(self, sort_key):
+        """Sets the sort_key of this ListComponentsRequest.
+
+        排序字段。
+
+        :param sort_key: The sort_key of this ListComponentsRequest.
+        :type sort_key: str
+        """
+        self._sort_key = sort_key
+
+    @property
+    def sort(self):
+        """Gets the sort of this ListComponentsRequest.
+
+        升降序规则。
+
+        :return: The sort of this ListComponentsRequest.
+        :rtype: str
+        """
+        return self._sort
+
+    @sort.setter
+    def sort(self, sort):
+        """Sets the sort of this ListComponentsRequest.
+
+        升降序规则。
+
+        :param sort: The sort of this ListComponentsRequest.
+        :type sort: str
+        """
+        self._sort = sort
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -41,6 +41,7 @@ class ConfigurationRequestDataSpec:
         'post_start': 'ConfigurationRequestDataSpecPostStart',
         'pre_stop': 'ConfigurationRequestDataSpecPreStop',
         'log_paths': 'list[str]',
+        'cloud_storage_log_paths': 'list[CloudStorageLogPathInfo]',
         'instrumentation': 'str',
         'path': 'str',
         'port': 'int',
@@ -72,13 +73,14 @@ class ConfigurationRequestDataSpec:
         'post_start': 'postStart',
         'pre_stop': 'preStop',
         'log_paths': 'log_paths',
+        'cloud_storage_log_paths': 'cloud_storage_log_paths',
         'instrumentation': 'instrumentation',
         'path': 'path',
         'port': 'port',
         'metrics': 'metrics'
     }
 
-    def __init__(self, rds_id=None, rds_db_name=None, rds_address=None, rds_username=None, rds_password=None, rds_port=None, config_center_addr=None, service_center_addr=None, cse_id=None, envs=None, ip=None, items=None, scale_strategy=None, max_replica_count=None, min_replica_count=None, advanced=None, triggers=None, volumes=None, liveness_probe=None, startup_probe=None, readiness_probe=None, post_start=None, pre_stop=None, log_paths=None, instrumentation=None, path=None, port=None, metrics=None):
+    def __init__(self, rds_id=None, rds_db_name=None, rds_address=None, rds_username=None, rds_password=None, rds_port=None, config_center_addr=None, service_center_addr=None, cse_id=None, envs=None, ip=None, items=None, scale_strategy=None, max_replica_count=None, min_replica_count=None, advanced=None, triggers=None, volumes=None, liveness_probe=None, startup_probe=None, readiness_probe=None, post_start=None, pre_stop=None, log_paths=None, cloud_storage_log_paths=None, instrumentation=None, path=None, port=None, metrics=None):
         """ConfigurationRequestDataSpec
 
         The model defined in huaweicloud sdk
@@ -129,8 +131,10 @@ class ConfigurationRequestDataSpec:
         :type post_start: :class:`huaweicloudsdkcae.v1.ConfigurationRequestDataSpecPostStart`
         :param pre_stop: 
         :type pre_stop: :class:`huaweicloudsdkcae.v1.ConfigurationRequestDataSpecPreStop`
-        :param log_paths: 自定义日志路径数组。  ConfigurationItem.type为\&quot;log\&quot;时，配置此参数。 
+        :param log_paths: 自定义本地磁盘日志路径数组。  ConfigurationItem.type为\&quot;log\&quot;时，配置此参数。 
         :type log_paths: list[str]
+        :param cloud_storage_log_paths: 自定义云存储日志路径数组。  ConfigurationItem.type为\&quot;log\&quot;时，配置此参数。 
+        :type cloud_storage_log_paths: list[:class:`huaweicloudsdkcae.v1.CloudStorageLogPathInfo`]
         :param instrumentation: 探针注入方式。  ConfigurationItem.type为\&quot;apm2\&quot;时，配置此参数。 
         :type instrumentation: str
         :param path: 自定义监控指标配置采集路径。  ConfigurationItem.type为\&quot;customMetric\&quot;时，配置此参数。 
@@ -167,6 +171,7 @@ class ConfigurationRequestDataSpec:
         self._post_start = None
         self._pre_stop = None
         self._log_paths = None
+        self._cloud_storage_log_paths = None
         self._instrumentation = None
         self._path = None
         self._port = None
@@ -221,6 +226,8 @@ class ConfigurationRequestDataSpec:
             self.pre_stop = pre_stop
         if log_paths is not None:
             self.log_paths = log_paths
+        if cloud_storage_log_paths is not None:
+            self.cloud_storage_log_paths = cloud_storage_log_paths
         if instrumentation is not None:
             self.instrumentation = instrumentation
         if path is not None:
@@ -716,7 +723,7 @@ class ConfigurationRequestDataSpec:
     def log_paths(self):
         """Gets the log_paths of this ConfigurationRequestDataSpec.
 
-        自定义日志路径数组。  ConfigurationItem.type为\"log\"时，配置此参数。 
+        自定义本地磁盘日志路径数组。  ConfigurationItem.type为\"log\"时，配置此参数。 
 
         :return: The log_paths of this ConfigurationRequestDataSpec.
         :rtype: list[str]
@@ -727,12 +734,34 @@ class ConfigurationRequestDataSpec:
     def log_paths(self, log_paths):
         """Sets the log_paths of this ConfigurationRequestDataSpec.
 
-        自定义日志路径数组。  ConfigurationItem.type为\"log\"时，配置此参数。 
+        自定义本地磁盘日志路径数组。  ConfigurationItem.type为\"log\"时，配置此参数。 
 
         :param log_paths: The log_paths of this ConfigurationRequestDataSpec.
         :type log_paths: list[str]
         """
         self._log_paths = log_paths
+
+    @property
+    def cloud_storage_log_paths(self):
+        """Gets the cloud_storage_log_paths of this ConfigurationRequestDataSpec.
+
+        自定义云存储日志路径数组。  ConfigurationItem.type为\"log\"时，配置此参数。 
+
+        :return: The cloud_storage_log_paths of this ConfigurationRequestDataSpec.
+        :rtype: list[:class:`huaweicloudsdkcae.v1.CloudStorageLogPathInfo`]
+        """
+        return self._cloud_storage_log_paths
+
+    @cloud_storage_log_paths.setter
+    def cloud_storage_log_paths(self, cloud_storage_log_paths):
+        """Sets the cloud_storage_log_paths of this ConfigurationRequestDataSpec.
+
+        自定义云存储日志路径数组。  ConfigurationItem.type为\"log\"时，配置此参数。 
+
+        :param cloud_storage_log_paths: The cloud_storage_log_paths of this ConfigurationRequestDataSpec.
+        :type cloud_storage_log_paths: list[:class:`huaweicloudsdkcae.v1.CloudStorageLogPathInfo`]
+        """
+        self._cloud_storage_log_paths = cloud_storage_log_paths
 
     @property
     def instrumentation(self):

@@ -25,7 +25,9 @@ class VoiceModelAssetMeta:
         'volume_ratio': 'float',
         'is_realtime_voice': 'bool',
         'voice_capability': 'VoiceCapability',
-        'external_voice_meta': 'ExternalVoiceAssetMeta'
+        'external_voice_meta': 'ExternalVoiceAssetMeta',
+        'is_support_vc_process': 'bool',
+        'is_flexus': 'bool'
     }
 
     attribute_map = {
@@ -37,10 +39,12 @@ class VoiceModelAssetMeta:
         'volume_ratio': 'volume_ratio',
         'is_realtime_voice': 'is_realtime_voice',
         'voice_capability': 'voice_capability',
-        'external_voice_meta': 'external_voice_meta'
+        'external_voice_meta': 'external_voice_meta',
+        'is_support_vc_process': 'is_support_vc_process',
+        'is_flexus': 'is_flexus'
     }
 
-    def __init__(self, order=None, model_type=None, sex=None, language=None, speed_ratio=None, volume_ratio=None, is_realtime_voice=None, voice_capability=None, external_voice_meta=None):
+    def __init__(self, order=None, model_type=None, sex=None, language=None, speed_ratio=None, volume_ratio=None, is_realtime_voice=None, voice_capability=None, external_voice_meta=None, is_support_vc_process=None, is_flexus=None):
         """VoiceModelAssetMeta
 
         The model defined in huaweicloud sdk
@@ -63,6 +67,10 @@ class VoiceModelAssetMeta:
         :type voice_capability: :class:`huaweicloudsdkmetastudio.v1.VoiceCapability`
         :param external_voice_meta: 
         :type external_voice_meta: :class:`huaweicloudsdkmetastudio.v1.ExternalVoiceAssetMeta`
+        :param is_support_vc_process: 是否支持vc。
+        :type is_support_vc_process: bool
+        :param is_flexus: 是否是Flexus版本声音。
+        :type is_flexus: bool
         """
         
         
@@ -76,6 +84,8 @@ class VoiceModelAssetMeta:
         self._is_realtime_voice = None
         self._voice_capability = None
         self._external_voice_meta = None
+        self._is_support_vc_process = None
+        self._is_flexus = None
         self.discriminator = None
 
         if order is not None:
@@ -96,6 +106,10 @@ class VoiceModelAssetMeta:
             self.voice_capability = voice_capability
         if external_voice_meta is not None:
             self.external_voice_meta = external_voice_meta
+        if is_support_vc_process is not None:
+            self.is_support_vc_process = is_support_vc_process
+        if is_flexus is not None:
+            self.is_flexus = is_flexus
 
     @property
     def order(self):
@@ -286,6 +300,50 @@ class VoiceModelAssetMeta:
         :type external_voice_meta: :class:`huaweicloudsdkmetastudio.v1.ExternalVoiceAssetMeta`
         """
         self._external_voice_meta = external_voice_meta
+
+    @property
+    def is_support_vc_process(self):
+        """Gets the is_support_vc_process of this VoiceModelAssetMeta.
+
+        是否支持vc。
+
+        :return: The is_support_vc_process of this VoiceModelAssetMeta.
+        :rtype: bool
+        """
+        return self._is_support_vc_process
+
+    @is_support_vc_process.setter
+    def is_support_vc_process(self, is_support_vc_process):
+        """Sets the is_support_vc_process of this VoiceModelAssetMeta.
+
+        是否支持vc。
+
+        :param is_support_vc_process: The is_support_vc_process of this VoiceModelAssetMeta.
+        :type is_support_vc_process: bool
+        """
+        self._is_support_vc_process = is_support_vc_process
+
+    @property
+    def is_flexus(self):
+        """Gets the is_flexus of this VoiceModelAssetMeta.
+
+        是否是Flexus版本声音。
+
+        :return: The is_flexus of this VoiceModelAssetMeta.
+        :rtype: bool
+        """
+        return self._is_flexus
+
+    @is_flexus.setter
+    def is_flexus(self, is_flexus):
+        """Sets the is_flexus of this VoiceModelAssetMeta.
+
+        是否是Flexus版本声音。
+
+        :param is_flexus: The is_flexus of this VoiceModelAssetMeta.
+        :type is_flexus: bool
+        """
+        self._is_flexus = is_flexus
 
     def to_dict(self):
         """Returns the model properties as a dict"""

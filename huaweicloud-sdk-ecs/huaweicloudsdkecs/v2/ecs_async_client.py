@@ -1950,6 +1950,108 @@ class EcsAsyncClient(Client):
 
         return http_info
 
+    def list_cloud_servers_async(self, request):
+        """查询云服务器列表接口
+
+        查询云服务器列表接口。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListCloudServers
+        :type request: :class:`huaweicloudsdkecs.v2.ListCloudServersRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ListCloudServersResponse`
+        """
+        http_info = self._list_cloud_servers_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_cloud_servers_async_invoker(self, request):
+        http_info = self._list_cloud_servers_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_cloud_servers_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.1/{project_id}/cloudservers/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCloudServersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'in_recycle_bin' in local_var_params:
+            query_params.append(('in_recycle_bin', local_var_params['in_recycle_bin']))
+        if 'spod_id' in local_var_params:
+            query_params.append(('spod_id', local_var_params['spod_id']))
+        if 'flavor_name' in local_var_params:
+            query_params.append(('flavor_name', local_var_params['flavor_name']))
+        if 'image_id' in local_var_params:
+            query_params.append(('image_id', local_var_params['image_id']))
+        if 'metadata' in local_var_params:
+            query_params.append(('metadata', local_var_params['metadata']))
+        if 'metadata_key' in local_var_params:
+            query_params.append(('metadata-key', local_var_params['metadata_key']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
+        if 'not_tags' in local_var_params:
+            query_params.append(('not-tags', local_var_params['not_tags']))
+        if 'availability_zone' in local_var_params:
+            query_params.append(('availability_zone', local_var_params['availability_zone']))
+        if 'availability_zone_eq' in local_var_params:
+            query_params.append(('availability_zone_eq', local_var_params['availability_zone_eq']))
+        if 'charging_mode' in local_var_params:
+            query_params.append(('charging_mode', local_var_params['charging_mode']))
+        if 'key_name' in local_var_params:
+            query_params.append(('key_name', local_var_params['key_name']))
+        if 'launched_since' in local_var_params:
+            query_params.append(('launched_since', local_var_params['launched_since']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'expect_fields' in local_var_params:
+            query_params.append(('expect-fields', local_var_params['expect_fields']))
+            collection_formats['expect-fields'] = 'csv'
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_flavor_sell_policies_async(self, request):
         """查询规格销售策略
 

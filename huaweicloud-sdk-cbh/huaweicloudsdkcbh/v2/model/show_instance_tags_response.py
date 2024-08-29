@@ -18,7 +18,7 @@ class ShowInstanceTagsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'tags': 'list[Tags]'
+        'tags': 'list[ResourceTag]'
     }
 
     attribute_map = {
@@ -31,7 +31,7 @@ class ShowInstanceTagsResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param tags: 标签列表。
-        :type tags: list[:class:`huaweicloudsdkcbh.v2.Tags`]
+        :type tags: list[:class:`huaweicloudsdkcbh.v2.ResourceTag`]
         """
         
         super(ShowInstanceTagsResponse, self).__init__()
@@ -49,7 +49,7 @@ class ShowInstanceTagsResponse(SdkResponse):
         标签列表。
 
         :return: The tags of this ShowInstanceTagsResponse.
-        :rtype: list[:class:`huaweicloudsdkcbh.v2.Tags`]
+        :rtype: list[:class:`huaweicloudsdkcbh.v2.ResourceTag`]
         """
         return self._tags
 
@@ -60,7 +60,7 @@ class ShowInstanceTagsResponse(SdkResponse):
         标签列表。
 
         :param tags: The tags of this ShowInstanceTagsResponse.
-        :type tags: list[:class:`huaweicloudsdkcbh.v2.Tags`]
+        :type tags: list[:class:`huaweicloudsdkcbh.v2.ResourceTag`]
         """
         self._tags = tags
 

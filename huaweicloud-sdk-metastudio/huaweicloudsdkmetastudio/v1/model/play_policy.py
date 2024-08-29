@@ -39,7 +39,7 @@ class PlayPolicy:
 
         :param repeat_count: 剧本重复播放次数。 -1表示持续重复，直至人工停止 0 表示不重复，仅执行一次 其他值n，实际运行次数为n+1次
         :type repeat_count: int
-        :param auto_play_script: 是否自动播放剧本。 true: 服务完成任务初始化后，自动播放剧本 false: 服务完成任务初始化后，等待信号后再开始播放剧本
+        :param auto_play_script: 是否启动推理，自动播放剧本。 如果不启动推理，数字人为静默状态。 true: 服务完成任务初始化后，自动播放剧本 false: 服务完成任务初始化后，等待信号后再开始播放剧本
         :type auto_play_script: bool
         :param play_mode: 驱动方式。默认TEXT * TEXT: 文本驱动，即通过TTS合成语音 * AUDIO: 语音驱动 * NO_PRESET: 无预置剧本。人工控制模式。
         :type play_mode: str
@@ -95,7 +95,7 @@ class PlayPolicy:
     def auto_play_script(self):
         """Gets the auto_play_script of this PlayPolicy.
 
-        是否自动播放剧本。 true: 服务完成任务初始化后，自动播放剧本 false: 服务完成任务初始化后，等待信号后再开始播放剧本
+        是否启动推理，自动播放剧本。 如果不启动推理，数字人为静默状态。 true: 服务完成任务初始化后，自动播放剧本 false: 服务完成任务初始化后，等待信号后再开始播放剧本
 
         :return: The auto_play_script of this PlayPolicy.
         :rtype: bool
@@ -106,7 +106,7 @@ class PlayPolicy:
     def auto_play_script(self, auto_play_script):
         """Sets the auto_play_script of this PlayPolicy.
 
-        是否自动播放剧本。 true: 服务完成任务初始化后，自动播放剧本 false: 服务完成任务初始化后，等待信号后再开始播放剧本
+        是否启动推理，自动播放剧本。 如果不启动推理，数字人为静默状态。 true: 服务完成任务初始化后，自动播放剧本 false: 服务完成任务初始化后，等待信号后再开始播放剧本
 
         :param auto_play_script: The auto_play_script of this PlayPolicy.
         :type auto_play_script: bool

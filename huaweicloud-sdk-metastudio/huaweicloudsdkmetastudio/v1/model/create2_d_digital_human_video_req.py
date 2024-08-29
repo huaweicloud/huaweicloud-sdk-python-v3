@@ -47,7 +47,7 @@ class Create2DDigitalHumanVideoReq:
 
         :param script_id: 剧本ID。 &gt; * 如果填写了script_id，model_asset_id、voice_config、scene_asset_id、video_config、shoot_scripts可以不填，以脚本中的配置为准。 &gt; * 如果填写了script_id，并且同时也填写了model_asset_id、voice_config、scene_asset_id、video_config、shoot_scripts则以本接口中的配置为准。
         :type script_id: str
-        :param model_asset_id: 分身数字人模型资产ID。
+        :param model_asset_id: 分身数字人模型资产ID，可以从资产库中查询。
         :type model_asset_id: str
         :param voice_config: 
         :type voice_config: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
@@ -123,7 +123,7 @@ class Create2DDigitalHumanVideoReq:
     def model_asset_id(self):
         """Gets the model_asset_id of this Create2DDigitalHumanVideoReq.
 
-        分身数字人模型资产ID。
+        分身数字人模型资产ID，可以从资产库中查询。
 
         :return: The model_asset_id of this Create2DDigitalHumanVideoReq.
         :rtype: str
@@ -134,7 +134,7 @@ class Create2DDigitalHumanVideoReq:
     def model_asset_id(self, model_asset_id):
         """Sets the model_asset_id of this Create2DDigitalHumanVideoReq.
 
-        分身数字人模型资产ID。
+        分身数字人模型资产ID，可以从资产库中查询。
 
         :param model_asset_id: The model_asset_id of this Create2DDigitalHumanVideoReq.
         :type model_asset_id: str

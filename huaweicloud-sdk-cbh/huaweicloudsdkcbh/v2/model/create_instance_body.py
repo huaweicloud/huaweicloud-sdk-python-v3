@@ -59,17 +59,17 @@ class CreateInstanceBody:
 
         The model defined in huaweicloud sdk
 
-        :param specification: 待创建云堡垒机规格ID，例如： - cbh.basic.50 - cbh.enhance.50  已上线的规格请参见《云堡垒机产品介绍》的[服务版本差异](https://support.huaweicloud.com/productdesc-cbh/cbh_01_0010.html)章节。
+        :param specification: 待创建云堡垒机规格ID，例如： - cbh.basic.50 - cbh.enhance.50  可参考接口\&quot;查询云堡垒机规格信息\&quot;获取。
         :type specification: str
         :param instance_name: 云堡垒机实例名称，取值范围：  只能由中文字符、英文字母、数字及“_”、“-”组成，且长度为[1-64]个字符。  例如：CBH-6b8e
         :type instance_name: str
-        :param password: 堡垒机实例前端登录密码。  密码规则：8-32位,不能包含amdin或nidma及其大写形式,必须包含大小写数字特殊字符四种类型中的三种。
+        :param password: 堡垒机实例前端登录密码。  密码规则：8-32位、不能包含amdin或nidma及其大写形式、必须包含大小写数字特殊字符（!@$%^-_&#x3D;+[{}]:,./?~#*）四种类型中的三种、不能包含超过2个连续的相同字符（区分大小写）。
         :type password: str
-        :param region: 创建云堡垒机实例所在局点ID。   可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取。
+        :param region: 创建云堡垒机实例所在局点ID。   可参考接口\&quot;查询云堡垒机规格信息\&quot;获取
         :type region: str
-        :param availability_zone: 创建云堡垒机所在的可用分区，需要指定可用分区名称。(主备模式是作为主机可用区)  可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取。
+        :param availability_zone: 创建云堡垒机所在的可用分区，需要指定可用分区名称。(主备模式是作为主机可用区)  可参考接口\&quot;获取服务可用区\&quot;获取
         :type availability_zone: str
-        :param slave_availability_zone: 创建云堡垒机备机所在的可用分区，需要指定可用分区名称。(只创建单机时不传此字段)。  可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取。
+        :param slave_availability_zone: 创建云堡垒机备机所在的可用分区，需要指定可用分区名称。(只创建单机时不传此字段)。  可参考接口\&quot;获取服务可用区\&quot;获取
         :type slave_availability_zone: str
         :param charging_mode: 计费模式。 - 0 包周期计费。
         :type charging_mode: int
@@ -143,7 +143,7 @@ class CreateInstanceBody:
     def specification(self):
         """Gets the specification of this CreateInstanceBody.
 
-        待创建云堡垒机规格ID，例如： - cbh.basic.50 - cbh.enhance.50  已上线的规格请参见《云堡垒机产品介绍》的[服务版本差异](https://support.huaweicloud.com/productdesc-cbh/cbh_01_0010.html)章节。
+        待创建云堡垒机规格ID，例如： - cbh.basic.50 - cbh.enhance.50  可参考接口\"查询云堡垒机规格信息\"获取。
 
         :return: The specification of this CreateInstanceBody.
         :rtype: str
@@ -154,7 +154,7 @@ class CreateInstanceBody:
     def specification(self, specification):
         """Sets the specification of this CreateInstanceBody.
 
-        待创建云堡垒机规格ID，例如： - cbh.basic.50 - cbh.enhance.50  已上线的规格请参见《云堡垒机产品介绍》的[服务版本差异](https://support.huaweicloud.com/productdesc-cbh/cbh_01_0010.html)章节。
+        待创建云堡垒机规格ID，例如： - cbh.basic.50 - cbh.enhance.50  可参考接口\"查询云堡垒机规格信息\"获取。
 
         :param specification: The specification of this CreateInstanceBody.
         :type specification: str
@@ -187,7 +187,7 @@ class CreateInstanceBody:
     def password(self):
         """Gets the password of this CreateInstanceBody.
 
-        堡垒机实例前端登录密码。  密码规则：8-32位,不能包含amdin或nidma及其大写形式,必须包含大小写数字特殊字符四种类型中的三种。
+        堡垒机实例前端登录密码。  密码规则：8-32位、不能包含amdin或nidma及其大写形式、必须包含大小写数字特殊字符（!@$%^-_=+[{}]:,./?~#*）四种类型中的三种、不能包含超过2个连续的相同字符（区分大小写）。
 
         :return: The password of this CreateInstanceBody.
         :rtype: str
@@ -198,7 +198,7 @@ class CreateInstanceBody:
     def password(self, password):
         """Sets the password of this CreateInstanceBody.
 
-        堡垒机实例前端登录密码。  密码规则：8-32位,不能包含amdin或nidma及其大写形式,必须包含大小写数字特殊字符四种类型中的三种。
+        堡垒机实例前端登录密码。  密码规则：8-32位、不能包含amdin或nidma及其大写形式、必须包含大小写数字特殊字符（!@$%^-_=+[{}]:,./?~#*）四种类型中的三种、不能包含超过2个连续的相同字符（区分大小写）。
 
         :param password: The password of this CreateInstanceBody.
         :type password: str
@@ -209,7 +209,7 @@ class CreateInstanceBody:
     def region(self):
         """Gets the region of this CreateInstanceBody.
 
-        创建云堡垒机实例所在局点ID。   可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取。
+        创建云堡垒机实例所在局点ID。   可参考接口\"查询云堡垒机规格信息\"获取
 
         :return: The region of this CreateInstanceBody.
         :rtype: str
@@ -220,7 +220,7 @@ class CreateInstanceBody:
     def region(self, region):
         """Sets the region of this CreateInstanceBody.
 
-        创建云堡垒机实例所在局点ID。   可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取。
+        创建云堡垒机实例所在局点ID。   可参考接口\"查询云堡垒机规格信息\"获取
 
         :param region: The region of this CreateInstanceBody.
         :type region: str
@@ -231,7 +231,7 @@ class CreateInstanceBody:
     def availability_zone(self):
         """Gets the availability_zone of this CreateInstanceBody.
 
-        创建云堡垒机所在的可用分区，需要指定可用分区名称。(主备模式是作为主机可用区)  可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取。
+        创建云堡垒机所在的可用分区，需要指定可用分区名称。(主备模式是作为主机可用区)  可参考接口\"获取服务可用区\"获取
 
         :return: The availability_zone of this CreateInstanceBody.
         :rtype: str
@@ -242,7 +242,7 @@ class CreateInstanceBody:
     def availability_zone(self, availability_zone):
         """Sets the availability_zone of this CreateInstanceBody.
 
-        创建云堡垒机所在的可用分区，需要指定可用分区名称。(主备模式是作为主机可用区)  可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取。
+        创建云堡垒机所在的可用分区，需要指定可用分区名称。(主备模式是作为主机可用区)  可参考接口\"获取服务可用区\"获取
 
         :param availability_zone: The availability_zone of this CreateInstanceBody.
         :type availability_zone: str
@@ -253,7 +253,7 @@ class CreateInstanceBody:
     def slave_availability_zone(self):
         """Gets the slave_availability_zone of this CreateInstanceBody.
 
-        创建云堡垒机备机所在的可用分区，需要指定可用分区名称。(只创建单机时不传此字段)。  可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取。
+        创建云堡垒机备机所在的可用分区，需要指定可用分区名称。(只创建单机时不传此字段)。  可参考接口\"获取服务可用区\"获取
 
         :return: The slave_availability_zone of this CreateInstanceBody.
         :rtype: str
@@ -264,7 +264,7 @@ class CreateInstanceBody:
     def slave_availability_zone(self, slave_availability_zone):
         """Sets the slave_availability_zone of this CreateInstanceBody.
 
-        创建云堡垒机备机所在的可用分区，需要指定可用分区名称。(只创建单机时不传此字段)。  可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取。
+        创建云堡垒机备机所在的可用分区，需要指定可用分区名称。(只创建单机时不传此字段)。  可参考接口\"获取服务可用区\"获取
 
         :param slave_availability_zone: The slave_availability_zone of this CreateInstanceBody.
         :type slave_availability_zone: str

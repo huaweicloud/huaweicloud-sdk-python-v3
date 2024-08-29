@@ -26,7 +26,9 @@ class CreateDigitalAssetRequestBody:
         'asset_extra_meta': 'AssetExtraMeta',
         'system_properties': 'list[SystemProperty]',
         'shared_config': 'AssetSharedConfig',
-        'is_need_generate_cover': 'bool'
+        'is_need_generate_cover': 'bool',
+        'asset_order': 'int',
+        'supported_service': 'list[SupportedServiceEnum]'
     }
 
     attribute_map = {
@@ -39,10 +41,12 @@ class CreateDigitalAssetRequestBody:
         'asset_extra_meta': 'asset_extra_meta',
         'system_properties': 'system_properties',
         'shared_config': 'shared_config',
-        'is_need_generate_cover': 'is_need_generate_cover'
+        'is_need_generate_cover': 'is_need_generate_cover',
+        'asset_order': 'asset_order',
+        'supported_service': 'supported_service'
     }
 
-    def __init__(self, asset_name=None, asset_description=None, asset_type=None, asset_owner=None, review_config=None, tags=None, asset_extra_meta=None, system_properties=None, shared_config=None, is_need_generate_cover=None):
+    def __init__(self, asset_name=None, asset_description=None, asset_type=None, asset_owner=None, review_config=None, tags=None, asset_extra_meta=None, system_properties=None, shared_config=None, is_need_generate_cover=None, asset_order=None, supported_service=None):
         """CreateDigitalAssetRequestBody
 
         The model defined in huaweicloud sdk
@@ -57,7 +61,7 @@ class CreateDigitalAssetRequestBody:
         :type asset_owner: str
         :param review_config: 
         :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
-        :param tags: 标签列表。
+        :param tags: 标签列表。 &gt; 分身形象系统资产的tag定义如下： &gt; - 行业：NEWS,BUSINESS,E-COMMERCE,MARKETING,KNOWLEDGE,EDUCATION,SPORTS &gt; - 性别：MALE,FEMALE &gt; - 姿势：FULL-BODY,HALF-BODY,STANDING,SITTING,WALKING &gt; - 区域：ASIAN,WESTERN,MIDDLE-EASTERNER,AFRICAN,LATINO
         :type tags: list[str]
         :param asset_extra_meta: 
         :type asset_extra_meta: :class:`huaweicloudsdkmetastudio.v1.AssetExtraMeta`
@@ -67,6 +71,10 @@ class CreateDigitalAssetRequestBody:
         :type shared_config: :class:`huaweicloudsdkmetastudio.v1.AssetSharedConfig`
         :param is_need_generate_cover: 是否需要生成封面。
         :type is_need_generate_cover: bool
+        :param asset_order: 展示顺序
+        :type asset_order: int
+        :param supported_service: 支持的业务类型。： * VIDEO_2D：分身数字人视频制作 * LIVE_2D：分身数字人直播 * CHAT_2D：分身数字人智能交互
+        :type supported_service: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
         """
         
         
@@ -81,6 +89,8 @@ class CreateDigitalAssetRequestBody:
         self._system_properties = None
         self._shared_config = None
         self._is_need_generate_cover = None
+        self._asset_order = None
+        self._supported_service = None
         self.discriminator = None
 
         self.asset_name = asset_name
@@ -101,6 +111,10 @@ class CreateDigitalAssetRequestBody:
             self.shared_config = shared_config
         if is_need_generate_cover is not None:
             self.is_need_generate_cover = is_need_generate_cover
+        if asset_order is not None:
+            self.asset_order = asset_order
+        if supported_service is not None:
+            self.supported_service = supported_service
 
     @property
     def asset_name(self):
@@ -212,7 +226,7 @@ class CreateDigitalAssetRequestBody:
     def tags(self):
         """Gets the tags of this CreateDigitalAssetRequestBody.
 
-        标签列表。
+        标签列表。 > 分身形象系统资产的tag定义如下： > - 行业：NEWS,BUSINESS,E-COMMERCE,MARKETING,KNOWLEDGE,EDUCATION,SPORTS > - 性别：MALE,FEMALE > - 姿势：FULL-BODY,HALF-BODY,STANDING,SITTING,WALKING > - 区域：ASIAN,WESTERN,MIDDLE-EASTERNER,AFRICAN,LATINO
 
         :return: The tags of this CreateDigitalAssetRequestBody.
         :rtype: list[str]
@@ -223,7 +237,7 @@ class CreateDigitalAssetRequestBody:
     def tags(self, tags):
         """Sets the tags of this CreateDigitalAssetRequestBody.
 
-        标签列表。
+        标签列表。 > 分身形象系统资产的tag定义如下： > - 行业：NEWS,BUSINESS,E-COMMERCE,MARKETING,KNOWLEDGE,EDUCATION,SPORTS > - 性别：MALE,FEMALE > - 姿势：FULL-BODY,HALF-BODY,STANDING,SITTING,WALKING > - 区域：ASIAN,WESTERN,MIDDLE-EASTERNER,AFRICAN,LATINO
 
         :param tags: The tags of this CreateDigitalAssetRequestBody.
         :type tags: list[str]
@@ -309,6 +323,50 @@ class CreateDigitalAssetRequestBody:
         :type is_need_generate_cover: bool
         """
         self._is_need_generate_cover = is_need_generate_cover
+
+    @property
+    def asset_order(self):
+        """Gets the asset_order of this CreateDigitalAssetRequestBody.
+
+        展示顺序
+
+        :return: The asset_order of this CreateDigitalAssetRequestBody.
+        :rtype: int
+        """
+        return self._asset_order
+
+    @asset_order.setter
+    def asset_order(self, asset_order):
+        """Sets the asset_order of this CreateDigitalAssetRequestBody.
+
+        展示顺序
+
+        :param asset_order: The asset_order of this CreateDigitalAssetRequestBody.
+        :type asset_order: int
+        """
+        self._asset_order = asset_order
+
+    @property
+    def supported_service(self):
+        """Gets the supported_service of this CreateDigitalAssetRequestBody.
+
+        支持的业务类型。： * VIDEO_2D：分身数字人视频制作 * LIVE_2D：分身数字人直播 * CHAT_2D：分身数字人智能交互
+
+        :return: The supported_service of this CreateDigitalAssetRequestBody.
+        :rtype: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
+        """
+        return self._supported_service
+
+    @supported_service.setter
+    def supported_service(self, supported_service):
+        """Sets the supported_service of this CreateDigitalAssetRequestBody.
+
+        支持的业务类型。： * VIDEO_2D：分身数字人视频制作 * LIVE_2D：分身数字人直播 * CHAT_2D：分身数字人智能交互
+
+        :param supported_service: The supported_service of this CreateDigitalAssetRequestBody.
+        :type supported_service: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
+        """
+        self._supported_service = supported_service
 
     def to_dict(self):
         """Returns the model properties as a dict"""

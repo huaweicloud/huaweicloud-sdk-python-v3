@@ -41,7 +41,7 @@ class LargeFilesCreateReq:
 
         :param file_name: 文件名，不区分大小写，最大长度256，最小长度1。
         :type file_name: str
-        :param file_size: 文件总的大小，最小1，最大5368709120。
+        :param file_size: 文件总的大小，最小1，最大536870912000。
         :type file_size: int
         :param file_type: 文件类型（默认提取文件后缀）。
         :type file_type: str
@@ -98,7 +98,7 @@ class LargeFilesCreateReq:
     def file_size(self):
         """Gets the file_size of this LargeFilesCreateReq.
 
-        文件总的大小，最小1，最大5368709120。
+        文件总的大小，最小1，最大536870912000。
 
         :return: The file_size of this LargeFilesCreateReq.
         :rtype: int
@@ -109,7 +109,7 @@ class LargeFilesCreateReq:
     def file_size(self, file_size):
         """Sets the file_size of this LargeFilesCreateReq.
 
-        文件总的大小，最小1，最大5368709120。
+        文件总的大小，最小1，最大536870912000。
 
         :param file_size: The file_size of this LargeFilesCreateReq.
         :type file_size: int

@@ -31,7 +31,7 @@ class HandwritingResult:
 
         The model defined in huaweicloud sdk
 
-        :param words_block_count: 代表检测识别出来的文字块数目。 \&quot;segment_digit\&quot; 和\&quot;segment\&quot;默认为1。 
+        :param words_block_count: 代表检测识别出来的文字块数目。 \&quot;segment_digit\&quot; 和\&quot;segment\&quot;默认为1。       
         :type words_block_count: int
         :param words_block_list: 识别文字块列表，输出顺序从左到右，从上到下。 
         :type words_block_list: list[:class:`huaweicloudsdkocr.v1.HandwritingWordsBlockList`]
@@ -50,7 +50,7 @@ class HandwritingResult:
     def words_block_count(self):
         """Gets the words_block_count of this HandwritingResult.
 
-        代表检测识别出来的文字块数目。 \"segment_digit\" 和\"segment\"默认为1。 
+        代表检测识别出来的文字块数目。 \"segment_digit\" 和\"segment\"默认为1。       
 
         :return: The words_block_count of this HandwritingResult.
         :rtype: int
@@ -61,7 +61,7 @@ class HandwritingResult:
     def words_block_count(self, words_block_count):
         """Sets the words_block_count of this HandwritingResult.
 
-        代表检测识别出来的文字块数目。 \"segment_digit\" 和\"segment\"默认为1。 
+        代表检测识别出来的文字块数目。 \"segment_digit\" 和\"segment\"默认为1。       
 
         :param words_block_count: The words_block_count of this HandwritingResult.
         :type words_block_count: int

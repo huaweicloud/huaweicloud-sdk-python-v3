@@ -27,9 +27,13 @@ class ShowSmartChatJobResponse(SdkResponse):
         'create_time': 'str',
         'lastupdate_time': 'str',
         'rtc_room_info': 'RTCRoomInfoList',
-        'chat_subtitle_config': 'ChatSubtitleConfig',
-        'video_config': 'ChatVideoConfigRsp',
+        'chat_subtitle_config': 'SmartChatSubtitleConfig',
+        'video_config': 'SmartChatVideoConfig',
+        'chat_state': 'int',
+        'language': 'LanguageEnum',
         'chat_video_type': 'str',
+        'chat_access_address': 'str',
+        'is_transparent': 'bool',
         'x_request_id': 'str'
     }
 
@@ -45,11 +49,15 @@ class ShowSmartChatJobResponse(SdkResponse):
         'rtc_room_info': 'rtc_room_info',
         'chat_subtitle_config': 'chat_subtitle_config',
         'video_config': 'video_config',
+        'chat_state': 'chat_state',
+        'language': 'language',
         'chat_video_type': 'chat_video_type',
+        'chat_access_address': 'chat_access_address',
+        'is_transparent': 'is_transparent',
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, job_id=None, state=None, duration=None, start_time=None, end_time=None, error_info=None, create_time=None, lastupdate_time=None, rtc_room_info=None, chat_subtitle_config=None, video_config=None, chat_video_type=None, x_request_id=None):
+    def __init__(self, job_id=None, state=None, duration=None, start_time=None, end_time=None, error_info=None, create_time=None, lastupdate_time=None, rtc_room_info=None, chat_subtitle_config=None, video_config=None, chat_state=None, language=None, chat_video_type=None, chat_access_address=None, is_transparent=None, x_request_id=None):
         """ShowSmartChatJobResponse
 
         The model defined in huaweicloud sdk
@@ -73,11 +81,19 @@ class ShowSmartChatJobResponse(SdkResponse):
         :param rtc_room_info: 
         :type rtc_room_info: :class:`huaweicloudsdkmetastudio.v1.RTCRoomInfoList`
         :param chat_subtitle_config: 
-        :type chat_subtitle_config: :class:`huaweicloudsdkmetastudio.v1.ChatSubtitleConfig`
+        :type chat_subtitle_config: :class:`huaweicloudsdkmetastudio.v1.SmartChatSubtitleConfig`
         :param video_config: 
-        :type video_config: :class:`huaweicloudsdkmetastudio.v1.ChatVideoConfigRsp`
+        :type video_config: :class:`huaweicloudsdkmetastudio.v1.SmartChatVideoConfig`
+        :param chat_state: 数字人智能交互对话的状态。 0: 等待建链 1: 等待关闭链路 2: 建链成功 3: 进入休眠 4: 等待休眠
+        :type chat_state: int
+        :param language: 
+        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
         :param chat_video_type: 智能交互对话端配置。 * COMPUTER: 电脑端 * MOBILE: 手机端 * HUB: 大屏
         :type chat_video_type: str
+        :param chat_access_address: 智能交互接入地址。
+        :type chat_access_address: str
+        :param is_transparent: 是否透明背景
+        :type is_transparent: bool
         :param x_request_id: 
         :type x_request_id: str
         """
@@ -95,7 +111,11 @@ class ShowSmartChatJobResponse(SdkResponse):
         self._rtc_room_info = None
         self._chat_subtitle_config = None
         self._video_config = None
+        self._chat_state = None
+        self._language = None
         self._chat_video_type = None
+        self._chat_access_address = None
+        self._is_transparent = None
         self._x_request_id = None
         self.discriminator = None
 
@@ -121,8 +141,16 @@ class ShowSmartChatJobResponse(SdkResponse):
             self.chat_subtitle_config = chat_subtitle_config
         if video_config is not None:
             self.video_config = video_config
+        if chat_state is not None:
+            self.chat_state = chat_state
+        if language is not None:
+            self.language = language
         if chat_video_type is not None:
             self.chat_video_type = chat_video_type
+        if chat_access_address is not None:
+            self.chat_access_address = chat_access_address
+        if is_transparent is not None:
+            self.is_transparent = is_transparent
         if x_request_id is not None:
             self.x_request_id = x_request_id
 
@@ -321,7 +349,7 @@ class ShowSmartChatJobResponse(SdkResponse):
         """Gets the chat_subtitle_config of this ShowSmartChatJobResponse.
 
         :return: The chat_subtitle_config of this ShowSmartChatJobResponse.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.ChatSubtitleConfig`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.SmartChatSubtitleConfig`
         """
         return self._chat_subtitle_config
 
@@ -330,7 +358,7 @@ class ShowSmartChatJobResponse(SdkResponse):
         """Sets the chat_subtitle_config of this ShowSmartChatJobResponse.
 
         :param chat_subtitle_config: The chat_subtitle_config of this ShowSmartChatJobResponse.
-        :type chat_subtitle_config: :class:`huaweicloudsdkmetastudio.v1.ChatSubtitleConfig`
+        :type chat_subtitle_config: :class:`huaweicloudsdkmetastudio.v1.SmartChatSubtitleConfig`
         """
         self._chat_subtitle_config = chat_subtitle_config
 
@@ -339,7 +367,7 @@ class ShowSmartChatJobResponse(SdkResponse):
         """Gets the video_config of this ShowSmartChatJobResponse.
 
         :return: The video_config of this ShowSmartChatJobResponse.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.ChatVideoConfigRsp`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.SmartChatVideoConfig`
         """
         return self._video_config
 
@@ -348,9 +376,49 @@ class ShowSmartChatJobResponse(SdkResponse):
         """Sets the video_config of this ShowSmartChatJobResponse.
 
         :param video_config: The video_config of this ShowSmartChatJobResponse.
-        :type video_config: :class:`huaweicloudsdkmetastudio.v1.ChatVideoConfigRsp`
+        :type video_config: :class:`huaweicloudsdkmetastudio.v1.SmartChatVideoConfig`
         """
         self._video_config = video_config
+
+    @property
+    def chat_state(self):
+        """Gets the chat_state of this ShowSmartChatJobResponse.
+
+        数字人智能交互对话的状态。 0: 等待建链 1: 等待关闭链路 2: 建链成功 3: 进入休眠 4: 等待休眠
+
+        :return: The chat_state of this ShowSmartChatJobResponse.
+        :rtype: int
+        """
+        return self._chat_state
+
+    @chat_state.setter
+    def chat_state(self, chat_state):
+        """Sets the chat_state of this ShowSmartChatJobResponse.
+
+        数字人智能交互对话的状态。 0: 等待建链 1: 等待关闭链路 2: 建链成功 3: 进入休眠 4: 等待休眠
+
+        :param chat_state: The chat_state of this ShowSmartChatJobResponse.
+        :type chat_state: int
+        """
+        self._chat_state = chat_state
+
+    @property
+    def language(self):
+        """Gets the language of this ShowSmartChatJobResponse.
+
+        :return: The language of this ShowSmartChatJobResponse.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        """
+        return self._language
+
+    @language.setter
+    def language(self, language):
+        """Sets the language of this ShowSmartChatJobResponse.
+
+        :param language: The language of this ShowSmartChatJobResponse.
+        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        """
+        self._language = language
 
     @property
     def chat_video_type(self):
@@ -373,6 +441,50 @@ class ShowSmartChatJobResponse(SdkResponse):
         :type chat_video_type: str
         """
         self._chat_video_type = chat_video_type
+
+    @property
+    def chat_access_address(self):
+        """Gets the chat_access_address of this ShowSmartChatJobResponse.
+
+        智能交互接入地址。
+
+        :return: The chat_access_address of this ShowSmartChatJobResponse.
+        :rtype: str
+        """
+        return self._chat_access_address
+
+    @chat_access_address.setter
+    def chat_access_address(self, chat_access_address):
+        """Sets the chat_access_address of this ShowSmartChatJobResponse.
+
+        智能交互接入地址。
+
+        :param chat_access_address: The chat_access_address of this ShowSmartChatJobResponse.
+        :type chat_access_address: str
+        """
+        self._chat_access_address = chat_access_address
+
+    @property
+    def is_transparent(self):
+        """Gets the is_transparent of this ShowSmartChatJobResponse.
+
+        是否透明背景
+
+        :return: The is_transparent of this ShowSmartChatJobResponse.
+        :rtype: bool
+        """
+        return self._is_transparent
+
+    @is_transparent.setter
+    def is_transparent(self, is_transparent):
+        """Sets the is_transparent of this ShowSmartChatJobResponse.
+
+        是否透明背景
+
+        :param is_transparent: The is_transparent of this ShowSmartChatJobResponse.
+        :type is_transparent: bool
+        """
+        self._is_transparent = is_transparent
 
     @property
     def x_request_id(self):

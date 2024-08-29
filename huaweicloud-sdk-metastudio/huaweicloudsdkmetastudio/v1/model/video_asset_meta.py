@@ -28,6 +28,7 @@ class VideoAssetMeta:
         'audio_channels': 'int',
         'sample': 'int',
         'mode': 'str',
+        'video_transcoding_status': 'str',
         'error_info': 'ErrorResponse'
     }
 
@@ -43,10 +44,11 @@ class VideoAssetMeta:
         'audio_channels': 'audio_channels',
         'sample': 'sample',
         'mode': 'mode',
+        'video_transcoding_status': 'video_transcoding_status',
         'error_info': 'error_info'
     }
 
-    def __init__(self, video_codec=None, width=None, height=None, frame_rate=None, video_bit_rate=None, duration=None, audio_codec=None, audio_bit_rate=None, audio_channels=None, sample=None, mode=None, error_info=None):
+    def __init__(self, video_codec=None, width=None, height=None, frame_rate=None, video_bit_rate=None, duration=None, audio_codec=None, audio_bit_rate=None, audio_channels=None, sample=None, mode=None, video_transcoding_status=None, error_info=None):
         """VideoAssetMeta
 
         The model defined in huaweicloud sdk
@@ -73,6 +75,8 @@ class VideoAssetMeta:
         :type sample: int
         :param mode: Horizontal&#x3D;横向；Vertical&#x3D;纵向
         :type mode: str
+        :param video_transcoding_status: 视频转码状态。 * WAITING：等待 * TRANSCODING：转码中 * FAILED：失败 * SUCCEEDED：成功
+        :type video_transcoding_status: str
         :param error_info: 
         :type error_info: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
         """
@@ -90,6 +94,7 @@ class VideoAssetMeta:
         self._audio_channels = None
         self._sample = None
         self._mode = None
+        self._video_transcoding_status = None
         self._error_info = None
         self.discriminator = None
 
@@ -115,6 +120,8 @@ class VideoAssetMeta:
             self.sample = sample
         if mode is not None:
             self.mode = mode
+        if video_transcoding_status is not None:
+            self.video_transcoding_status = video_transcoding_status
         if error_info is not None:
             self.error_info = error_info
 
@@ -359,6 +366,28 @@ class VideoAssetMeta:
         :type mode: str
         """
         self._mode = mode
+
+    @property
+    def video_transcoding_status(self):
+        """Gets the video_transcoding_status of this VideoAssetMeta.
+
+        视频转码状态。 * WAITING：等待 * TRANSCODING：转码中 * FAILED：失败 * SUCCEEDED：成功
+
+        :return: The video_transcoding_status of this VideoAssetMeta.
+        :rtype: str
+        """
+        return self._video_transcoding_status
+
+    @video_transcoding_status.setter
+    def video_transcoding_status(self, video_transcoding_status):
+        """Sets the video_transcoding_status of this VideoAssetMeta.
+
+        视频转码状态。 * WAITING：等待 * TRANSCODING：转码中 * FAILED：失败 * SUCCEEDED：成功
+
+        :param video_transcoding_status: The video_transcoding_status of this VideoAssetMeta.
+        :type video_transcoding_status: str
+        """
+        self._video_transcoding_status = video_transcoding_status
 
     @property
     def error_info(self):

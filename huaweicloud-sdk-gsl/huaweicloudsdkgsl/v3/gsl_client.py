@@ -576,6 +576,142 @@ class GslClient(Client):
 
         return http_info
 
+    def add_network_switch_policy(self, request):
+        """新增网络切换策略
+
+        新增网络切换策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AddNetworkSwitchPolicy
+        :type request: :class:`huaweicloudsdkgsl.v3.AddNetworkSwitchPolicyRequest`
+        :rtype: :class:`huaweicloudsdkgsl.v3.AddNetworkSwitchPolicyResponse`
+        """
+        http_info = self._add_network_switch_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def add_network_switch_policy_invoker(self, request):
+        http_info = self._add_network_switch_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_network_switch_policy_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/network-switch-policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddNetworkSwitchPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_network_switch_policies(self, request):
+        """查询策略列表
+
+        查询策略列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListNetworkSwitchPolicies
+        :type request: :class:`huaweicloudsdkgsl.v3.ListNetworkSwitchPoliciesRequest`
+        :rtype: :class:`huaweicloudsdkgsl.v3.ListNetworkSwitchPoliciesResponse`
+        """
+        http_info = self._list_network_switch_policies_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_network_switch_policies_invoker(self, request):
+        http_info = self._list_network_switch_policies_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_network_switch_policies_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/network-switch-policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNetworkSwitchPoliciesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'policy_name' in local_var_params:
+            query_params.append(('policy_name', local_var_params['policy_name']))
+        if 'version' in local_var_params:
+            query_params.append(('version', local_var_params['version']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_pro_price_plans(self, request):
         """查询套餐列表信息
 
@@ -1466,6 +1602,215 @@ class GslClient(Client):
             "resource_path": "/v1/sim-cards/{sim_card_id}/stop",
             "request_type": request.__class__.__name__,
             "response_type": "StopSimCardResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'sim_card_id' in local_var_params:
+            path_params['sim_card_id'] = local_var_params['sim_card_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_sim_device_multiply(self, request):
+        """查询三网卡列表
+
+        通过cid或全量查询三网卡列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSimDeviceMultiply
+        :type request: :class:`huaweicloudsdkgsl.v3.ListSimDeviceMultiplyRequest`
+        :rtype: :class:`huaweicloudsdkgsl.v3.ListSimDeviceMultiplyResponse`
+        """
+        http_info = self._list_sim_device_multiply_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_sim_device_multiply_invoker(self, request):
+        http_info = self._list_sim_device_multiply_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_sim_device_multiply_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/sim-cards-multiply",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSimDeviceMultiplyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'cid' in local_var_params:
+            query_params.append(('cid', local_var_params['cid']))
+        if 'online_carrier' in local_var_params:
+            query_params.append(('online_carrier', local_var_params['online_carrier']))
+        if 'sim_card_id' in local_var_params:
+            query_params.append(('sim_card_id', local_var_params['sim_card_id']))
+        if 'version' in local_var_params:
+            query_params.append(('version', local_var_params['version']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def set_network_switch_policy(self, request):
+        """SIM卡设置网络切换策略
+
+        SIM卡设置网络切换策略，接口仅支持三网卡调用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SetNetworkSwitchPolicy
+        :type request: :class:`huaweicloudsdkgsl.v3.SetNetworkSwitchPolicyRequest`
+        :rtype: :class:`huaweicloudsdkgsl.v3.SetNetworkSwitchPolicyResponse`
+        """
+        http_info = self._set_network_switch_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_network_switch_policy_invoker(self, request):
+        http_info = self._set_network_switch_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _set_network_switch_policy_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/sim-cards/{sim_card_id}/network-switch-policy/set",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetNetworkSwitchPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'sim_card_id' in local_var_params:
+            path_params['sim_card_id'] = local_var_params['sim_card_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def switch_network(self, request):
+        """切换网络
+
+        切换网络
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SwitchNetwork
+        :type request: :class:`huaweicloudsdkgsl.v3.SwitchNetworkRequest`
+        :rtype: :class:`huaweicloudsdkgsl.v3.SwitchNetworkResponse`
+        """
+        http_info = self._switch_network_http_info(request)
+        return self._call_api(**http_info)
+
+    def switch_network_invoker(self, request):
+        http_info = self._switch_network_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _switch_network_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/sim-cards-multiply/{sim_card_id}/switch-network",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchNetworkResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

@@ -17,7 +17,7 @@ class ShowInternalVpcIgwRequest:
     sensitive_list = []
 
     openapi_types = {
-        'fields': 'str',
+        'fields': 'list[str]',
         'vpc_igw_id': 'str'
     }
 
@@ -32,7 +32,7 @@ class ShowInternalVpcIgwRequest:
         The model defined in huaweicloud sdk
 
         :param fields: 形式为\\\&quot;fields&#x3D;id&amp;fields&#x3D;project_id&amp;...\\\&quot;，支持字段：id/project_id/vpc_id/created_at/updated_at/igw_cluster
-        :type fields: str
+        :type fields: list[str]
         :param vpc_igw_id: 虚拟igw的uuid
         :type vpc_igw_id: str
         """
@@ -54,7 +54,7 @@ class ShowInternalVpcIgwRequest:
         形式为\\\"fields=id&fields=project_id&...\\\"，支持字段：id/project_id/vpc_id/created_at/updated_at/igw_cluster
 
         :return: The fields of this ShowInternalVpcIgwRequest.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._fields
 
@@ -65,7 +65,7 @@ class ShowInternalVpcIgwRequest:
         形式为\\\"fields=id&fields=project_id&...\\\"，支持字段：id/project_id/vpc_id/created_at/updated_at/igw_cluster
 
         :param fields: The fields of this ShowInternalVpcIgwRequest.
-        :type fields: str
+        :type fields: list[str]
         """
         self._fields = fields
 

@@ -33,7 +33,7 @@ class LiveAudioConfig:
 
         The model defined in huaweicloud sdk
 
-        :param asset_id: 插入音频资产的资产id，外部资产信息无需填写
+        :param asset_id: 插入音频资产的资产id，外部资产信息无需填写。若填写，可以从资产库中查询。
         :type asset_id: str
         :param audio_url: 音频URL。仅支持MP3格式，大小&lt;100MB。输出会自动转化为单声道16KHZ采样。
         :type audio_url: str
@@ -59,7 +59,7 @@ class LiveAudioConfig:
     def asset_id(self):
         """Gets the asset_id of this LiveAudioConfig.
 
-        插入音频资产的资产id，外部资产信息无需填写
+        插入音频资产的资产id，外部资产信息无需填写。若填写，可以从资产库中查询。
 
         :return: The asset_id of this LiveAudioConfig.
         :rtype: str
@@ -70,7 +70,7 @@ class LiveAudioConfig:
     def asset_id(self, asset_id):
         """Sets the asset_id of this LiveAudioConfig.
 
-        插入音频资产的资产id，外部资产信息无需填写
+        插入音频资产的资产id，外部资产信息无需填写。若填写，可以从资产库中查询。
 
         :param asset_id: The asset_id of this LiveAudioConfig.
         :type asset_id: str

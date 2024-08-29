@@ -53,7 +53,7 @@ class VideoScriptBaseInfo:
         :type script_name: str
         :param script_description: 剧本描述。
         :type script_description: str
-        :param model_asset_id: 数字人模型资产ID。
+        :param model_asset_id: 数字人模型资产ID，可以从资产库中查询。
         :type model_asset_id: str
         :param model_asset_type: 数字人模型类型。  * HUMAN_MODEL_2D：分身数字人 * HUMAN_MODEL_3D：3D数字人
         :type model_asset_type: str
@@ -172,7 +172,7 @@ class VideoScriptBaseInfo:
     def model_asset_id(self):
         """Gets the model_asset_id of this VideoScriptBaseInfo.
 
-        数字人模型资产ID。
+        数字人模型资产ID，可以从资产库中查询。
 
         :return: The model_asset_id of this VideoScriptBaseInfo.
         :rtype: str
@@ -183,7 +183,7 @@ class VideoScriptBaseInfo:
     def model_asset_id(self, model_asset_id):
         """Sets the model_asset_id of this VideoScriptBaseInfo.
 
-        数字人模型资产ID。
+        数字人模型资产ID，可以从资产库中查询。
 
         :param model_asset_id: The model_asset_id of this VideoScriptBaseInfo.
         :type model_asset_id: str

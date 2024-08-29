@@ -32,7 +32,8 @@ class CreateSmartLiveRoomReq:
         'review_config': 'ReviewConfig',
         'shared_config': 'SharedConfig',
         'view_mode': 'str',
-        'co_streamer_config': 'CoStreamerConfig'
+        'co_streamer_config': 'CoStreamerConfig',
+        'priv_data': 'str'
     }
 
     attribute_map = {
@@ -51,10 +52,11 @@ class CreateSmartLiveRoomReq:
         'review_config': 'review_config',
         'shared_config': 'shared_config',
         'view_mode': 'view_mode',
-        'co_streamer_config': 'co_streamer_config'
+        'co_streamer_config': 'co_streamer_config',
+        'priv_data': 'priv_data'
     }
 
-    def __init__(self, room_name=None, room_description=None, room_type=None, scene_scripts=None, interaction_rules=None, play_policy=None, video_config=None, output_urls=None, stream_keys=None, backup_model_asset_ids=None, live_event_callback_config=None, rtc_callback_config=None, review_config=None, shared_config=None, view_mode=None, co_streamer_config=None):
+    def __init__(self, room_name=None, room_description=None, room_type=None, scene_scripts=None, interaction_rules=None, play_policy=None, video_config=None, output_urls=None, stream_keys=None, backup_model_asset_ids=None, live_event_callback_config=None, rtc_callback_config=None, review_config=None, shared_config=None, view_mode=None, co_streamer_config=None, priv_data=None):
         """CreateSmartLiveRoomReq
 
         The model defined in huaweicloud sdk
@@ -77,7 +79,7 @@ class CreateSmartLiveRoomReq:
         :type output_urls: list[str]
         :param stream_keys: RTMP视频推流第三方直播平台流秘钥，与推流地址对应。
         :type stream_keys: list[str]
-        :param backup_model_asset_ids: 主播轮换时备选主播数字人资产ID（仅形象资产，不包含音色）。
+        :param backup_model_asset_ids: 主播轮换时备选主播数字人资产ID（仅形象资产，不包含音色），可以从资产库中查询。
         :type backup_model_asset_ids: list[str]
         :param live_event_callback_config: 
         :type live_event_callback_config: :class:`huaweicloudsdkmetastudio.v1.LiveEventCallBackConfig`
@@ -91,6 +93,8 @@ class CreateSmartLiveRoomReq:
         :type view_mode: str
         :param co_streamer_config: 
         :type co_streamer_config: :class:`huaweicloudsdkmetastudio.v1.CoStreamerConfig`
+        :param priv_data: 私有数据，用户填写，原样带回。
+        :type priv_data: str
         """
         
         
@@ -111,6 +115,7 @@ class CreateSmartLiveRoomReq:
         self._shared_config = None
         self._view_mode = None
         self._co_streamer_config = None
+        self._priv_data = None
         self.discriminator = None
 
         self.room_name = room_name
@@ -144,6 +149,8 @@ class CreateSmartLiveRoomReq:
             self.view_mode = view_mode
         if co_streamer_config is not None:
             self.co_streamer_config = co_streamer_config
+        if priv_data is not None:
+            self.priv_data = priv_data
 
     @property
     def room_name(self):
@@ -339,7 +346,7 @@ class CreateSmartLiveRoomReq:
     def backup_model_asset_ids(self):
         """Gets the backup_model_asset_ids of this CreateSmartLiveRoomReq.
 
-        主播轮换时备选主播数字人资产ID（仅形象资产，不包含音色）。
+        主播轮换时备选主播数字人资产ID（仅形象资产，不包含音色），可以从资产库中查询。
 
         :return: The backup_model_asset_ids of this CreateSmartLiveRoomReq.
         :rtype: list[str]
@@ -350,7 +357,7 @@ class CreateSmartLiveRoomReq:
     def backup_model_asset_ids(self, backup_model_asset_ids):
         """Sets the backup_model_asset_ids of this CreateSmartLiveRoomReq.
 
-        主播轮换时备选主播数字人资产ID（仅形象资产，不包含音色）。
+        主播轮换时备选主播数字人资产ID（仅形象资产，不包含音色），可以从资产库中查询。
 
         :param backup_model_asset_ids: The backup_model_asset_ids of this CreateSmartLiveRoomReq.
         :type backup_model_asset_ids: list[str]
@@ -468,6 +475,28 @@ class CreateSmartLiveRoomReq:
         :type co_streamer_config: :class:`huaweicloudsdkmetastudio.v1.CoStreamerConfig`
         """
         self._co_streamer_config = co_streamer_config
+
+    @property
+    def priv_data(self):
+        """Gets the priv_data of this CreateSmartLiveRoomReq.
+
+        私有数据，用户填写，原样带回。
+
+        :return: The priv_data of this CreateSmartLiveRoomReq.
+        :rtype: str
+        """
+        return self._priv_data
+
+    @priv_data.setter
+    def priv_data(self, priv_data):
+        """Sets the priv_data of this CreateSmartLiveRoomReq.
+
+        私有数据，用户填写，原样带回。
+
+        :param priv_data: The priv_data of this CreateSmartLiveRoomReq.
+        :type priv_data: str
+        """
+        self._priv_data = priv_data
 
     def to_dict(self):
         """Returns the model properties as a dict"""

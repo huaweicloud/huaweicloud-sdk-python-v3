@@ -19,16 +19,18 @@ class StartSmartChatJobRequest:
     openapi_types = {
         'x_app_user_id': 'str',
         'room_id': 'str',
-        'robot_id': 'str'
+        'robot_id': 'str',
+        'body': 'SmartChatJobsReq'
     }
 
     attribute_map = {
         'x_app_user_id': 'X-App-UserId',
         'room_id': 'room_id',
-        'robot_id': 'robot_id'
+        'robot_id': 'robot_id',
+        'body': 'body'
     }
 
-    def __init__(self, x_app_user_id=None, room_id=None, robot_id=None):
+    def __init__(self, x_app_user_id=None, room_id=None, robot_id=None, body=None):
         """StartSmartChatJobRequest
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class StartSmartChatJobRequest:
         :type room_id: str
         :param robot_id: 应用ID，获取方法请参考[[创建应用](https://support.huaweicloud.com/api-metastudio/CreateRobot.html)](tag:hc,hk)[“创建应用”](tag:cmcc)。
         :type robot_id: str
+        :param body: Body of the StartSmartChatJobRequest
+        :type body: :class:`huaweicloudsdkmetastudio.v1.SmartChatJobsReq`
         """
         
         
@@ -46,12 +50,15 @@ class StartSmartChatJobRequest:
         self._x_app_user_id = None
         self._room_id = None
         self._robot_id = None
+        self._body = None
         self.discriminator = None
 
         if x_app_user_id is not None:
             self.x_app_user_id = x_app_user_id
         self.room_id = room_id
         self.robot_id = robot_id
+        if body is not None:
+            self.body = body
 
     @property
     def x_app_user_id(self):
@@ -118,6 +125,24 @@ class StartSmartChatJobRequest:
         :type robot_id: str
         """
         self._robot_id = robot_id
+
+    @property
+    def body(self):
+        """Gets the body of this StartSmartChatJobRequest.
+
+        :return: The body of this StartSmartChatJobRequest.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.SmartChatJobsReq`
+        """
+        return self._body
+
+    @body.setter
+    def body(self, body):
+        """Sets the body of this StartSmartChatJobRequest.
+
+        :param body: The body of this StartSmartChatJobRequest.
+        :type body: :class:`huaweicloudsdkmetastudio.v1.SmartChatJobsReq`
+        """
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -21,6 +21,7 @@ class ShowAssetReplicationInfoResponse(SdkResponse):
         'asset_id': 'str',
         'asset_info': 'str',
         'encryption_info': 'ReplicationEncInfo',
+        'expire_time': 'int',
         'x_request_id': 'str'
     }
 
@@ -28,10 +29,11 @@ class ShowAssetReplicationInfoResponse(SdkResponse):
         'asset_id': 'asset_id',
         'asset_info': 'asset_info',
         'encryption_info': 'encryption_info',
+        'expire_time': 'expire_time',
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, asset_id=None, asset_info=None, encryption_info=None, x_request_id=None):
+    def __init__(self, asset_id=None, asset_info=None, encryption_info=None, expire_time=None, x_request_id=None):
         """ShowAssetReplicationInfoResponse
 
         The model defined in huaweicloud sdk
@@ -42,6 +44,8 @@ class ShowAssetReplicationInfoResponse(SdkResponse):
         :type asset_info: str
         :param encryption_info: 
         :type encryption_info: :class:`huaweicloudsdkmetastudio.v1.ReplicationEncInfo`
+        :param expire_time: 过期时间
+        :type expire_time: int
         :param x_request_id: 
         :type x_request_id: str
         """
@@ -51,6 +55,7 @@ class ShowAssetReplicationInfoResponse(SdkResponse):
         self._asset_id = None
         self._asset_info = None
         self._encryption_info = None
+        self._expire_time = None
         self._x_request_id = None
         self.discriminator = None
 
@@ -60,6 +65,8 @@ class ShowAssetReplicationInfoResponse(SdkResponse):
             self.asset_info = asset_info
         if encryption_info is not None:
             self.encryption_info = encryption_info
+        if expire_time is not None:
+            self.expire_time = expire_time
         if x_request_id is not None:
             self.x_request_id = x_request_id
 
@@ -124,6 +131,28 @@ class ShowAssetReplicationInfoResponse(SdkResponse):
         :type encryption_info: :class:`huaweicloudsdkmetastudio.v1.ReplicationEncInfo`
         """
         self._encryption_info = encryption_info
+
+    @property
+    def expire_time(self):
+        """Gets the expire_time of this ShowAssetReplicationInfoResponse.
+
+        过期时间
+
+        :return: The expire_time of this ShowAssetReplicationInfoResponse.
+        :rtype: int
+        """
+        return self._expire_time
+
+    @expire_time.setter
+    def expire_time(self, expire_time):
+        """Sets the expire_time of this ShowAssetReplicationInfoResponse.
+
+        过期时间
+
+        :param expire_time: The expire_time of this ShowAssetReplicationInfoResponse.
+        :type expire_time: int
+        """
+        self._expire_time = expire_time
 
     @property
     def x_request_id(self):

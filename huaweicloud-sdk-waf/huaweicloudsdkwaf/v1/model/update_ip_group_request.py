@@ -19,16 +19,18 @@ class UpdateIpGroupRequest:
     openapi_types = {
         'enterprise_project_id': 'str',
         'id': 'str',
+        'action': 'str',
         'body': 'UpdateIpGroupRequestBody'
     }
 
     attribute_map = {
         'enterprise_project_id': 'enterprise_project_id',
         'id': 'id',
+        'action': 'action',
         'body': 'body'
     }
 
-    def __init__(self, enterprise_project_id=None, id=None, body=None):
+    def __init__(self, enterprise_project_id=None, id=None, action=None, body=None):
         """UpdateIpGroupRequest
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class UpdateIpGroupRequest:
         :type enterprise_project_id: str
         :param id: ip地址组id
         :type id: str
+        :param action: 增量修改ip地址组时，此为必传字段，传入“add”;删除一个或者多个ip时传入“delete”
+        :type action: str
         :param body: Body of the UpdateIpGroupRequest
         :type body: :class:`huaweicloudsdkwaf.v1.UpdateIpGroupRequestBody`
         """
@@ -45,12 +49,15 @@ class UpdateIpGroupRequest:
 
         self._enterprise_project_id = None
         self._id = None
+        self._action = None
         self._body = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         self.id = id
+        if action is not None:
+            self.action = action
         if body is not None:
             self.body = body
 
@@ -97,6 +104,28 @@ class UpdateIpGroupRequest:
         :type id: str
         """
         self._id = id
+
+    @property
+    def action(self):
+        """Gets the action of this UpdateIpGroupRequest.
+
+        增量修改ip地址组时，此为必传字段，传入“add”;删除一个或者多个ip时传入“delete”
+
+        :return: The action of this UpdateIpGroupRequest.
+        :rtype: str
+        """
+        return self._action
+
+    @action.setter
+    def action(self, action):
+        """Sets the action of this UpdateIpGroupRequest.
+
+        增量修改ip地址组时，此为必传字段，传入“add”;删除一个或者多个ip时传入“delete”
+
+        :param action: The action of this UpdateIpGroupRequest.
+        :type action: str
+        """
+        self._action = action
 
     @property
     def body(self):
