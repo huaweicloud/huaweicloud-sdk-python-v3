@@ -17,11 +17,12 @@
  specific language governing permissions and limitations
  under the LICENSE.
 """
+import random
 import pytest
 import responses
 from responses import matchers
 
-from huaweicloudsdkcore.auth.credentials import BasicCredentials
+from huaweicloudsdkcore.auth.credentials import BasicCredentials, GlobalCredentials
 from huaweicloudsdkcore.client import Client
 from huaweicloudsdkcore.http.http_config import HttpConfig
 from huaweicloudsdkcore.sdk_response import SdkResponse
@@ -42,8 +43,12 @@ def mocked_responses():
 
 @pytest.fixture
 def mocked_client():
+    credentials = random.choice([
+        BasicCredentials("ak", "sk", "project_id"),
+        GlobalCredentials("ak", "sk", "domain_id"),
+    ])
     client = (Client()
-              .with_credentials(BasicCredentials("ak", "sk", "project_id"))
+              .with_credentials(credentials)
               .with_config(HttpConfig.get_default_config())
               .with_endpoints(["https://example.com"]))
     client.init_http_client()
@@ -96,6 +101,56 @@ def test_form_urlencoded(mocked_responses, mocked_client):
                                   resource_path="/test-content-type/x-www-form-urlencoded",
                                   response_type=MockSdkResponse,
                                   body={"str": "val", "int": 1, "bool": True})
+
+
+def test_build_request_without_authorization(mocked_client):
+    request = mocked_client.build_future_request(
+        method="GET",
+        resource_path="/resources",
+        path_params={},
+        query_params=[("size", "1")],
+        header_params={},
+        request_body=None,
+        post_params={},
+        cname=None,
+        response_type=None,
+        collection_formats={},
+        progress_callback=None
+    ).result()
+
+    assert request.method == "GET"
+    assert request.host == "example.com"
+    assert request.query_params == [("size", "1")]
+    assert request.resource_path == "/resources"
+    assert request.schema == "https"
+    assert request.uri == "/resources?size=1"
+    assert request.url == "https://example.com/resources?size=1"
+    assert "Authorization" in request.header_params
+
+
+def test_build_request_with_authorization(mocked_client):
+    request = mocked_client.build_future_request(
+        method="GET",
+        resource_path="/resources",
+        path_params={},
+        query_params=[("size", "1")],
+        header_params={"Authorization": "test"},
+        request_body=None,
+        post_params={},
+        cname=None,
+        response_type=None,
+        collection_formats={},
+        progress_callback=None
+    ).result()
+
+    assert request.method == "GET"
+    assert request.host == "example.com"
+    assert request.query_params == [("size", "1")]
+    assert request.resource_path == "/resources"
+    assert request.schema == "https"
+    assert request.uri == "/resources?size=1"
+    assert request.url == "https://example.com/resources?size=1"
+    assert "Authorization" in request.header_params
 
 
 if __name__ == '__main__':

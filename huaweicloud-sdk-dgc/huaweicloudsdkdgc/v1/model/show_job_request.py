@@ -19,16 +19,18 @@ class ShowJobRequest:
     openapi_types = {
         'workspace': 'str',
         'job_name': 'str',
-        'version': 'int'
+        'version': 'int',
+        'dependencies': 'bool'
     }
 
     attribute_map = {
         'workspace': 'workspace',
         'job_name': 'job_name',
-        'version': 'version'
+        'version': 'version',
+        'dependencies': 'dependencies'
     }
 
-    def __init__(self, workspace=None, job_name=None, version=None):
+    def __init__(self, workspace=None, job_name=None, version=None, dependencies=None):
         """ShowJobRequest
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class ShowJobRequest:
         :type job_name: str
         :param version: 作业版本号，若传入版本号，则查询指定版本号的作业；若不传入，则查询最新的版本作业.
         :type version: int
+        :param dependencies: 返回下游依赖当前作业的作业，只返回第一层。
+        :type dependencies: bool
         """
         
         
@@ -46,6 +50,7 @@ class ShowJobRequest:
         self._workspace = None
         self._job_name = None
         self._version = None
+        self._dependencies = None
         self.discriminator = None
 
         if workspace is not None:
@@ -53,6 +58,8 @@ class ShowJobRequest:
         self.job_name = job_name
         if version is not None:
             self.version = version
+        if dependencies is not None:
+            self.dependencies = dependencies
 
     @property
     def workspace(self):
@@ -119,6 +126,28 @@ class ShowJobRequest:
         :type version: int
         """
         self._version = version
+
+    @property
+    def dependencies(self):
+        """Gets the dependencies of this ShowJobRequest.
+
+        返回下游依赖当前作业的作业，只返回第一层。
+
+        :return: The dependencies of this ShowJobRequest.
+        :rtype: bool
+        """
+        return self._dependencies
+
+    @dependencies.setter
+    def dependencies(self, dependencies):
+        """Sets the dependencies of this ShowJobRequest.
+
+        返回下游依赖当前作业的作业，只返回第一层。
+
+        :param dependencies: The dependencies of this ShowJobRequest.
+        :type dependencies: bool
+        """
+        self._dependencies = dependencies
 
     def to_dict(self):
         """Returns the model properties as a dict"""

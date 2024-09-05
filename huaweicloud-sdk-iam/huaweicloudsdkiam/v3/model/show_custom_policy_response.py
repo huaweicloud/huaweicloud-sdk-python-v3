@@ -18,7 +18,7 @@ class ShowCustomPolicyResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'role': 'PolicyRoleResult'
+        'role': 'ShowPolicyRoleResult'
     }
 
     attribute_map = {
@@ -31,7 +31,7 @@ class ShowCustomPolicyResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param role: 
-        :type role: :class:`huaweicloudsdkiam.v3.PolicyRoleResult`
+        :type role: :class:`huaweicloudsdkiam.v3.ShowPolicyRoleResult`
         """
         
         super(ShowCustomPolicyResponse, self).__init__()
@@ -47,7 +47,7 @@ class ShowCustomPolicyResponse(SdkResponse):
         """Gets the role of this ShowCustomPolicyResponse.
 
         :return: The role of this ShowCustomPolicyResponse.
-        :rtype: :class:`huaweicloudsdkiam.v3.PolicyRoleResult`
+        :rtype: :class:`huaweicloudsdkiam.v3.ShowPolicyRoleResult`
         """
         return self._role
 
@@ -56,7 +56,7 @@ class ShowCustomPolicyResponse(SdkResponse):
         """Sets the role of this ShowCustomPolicyResponse.
 
         :param role: The role of this ShowCustomPolicyResponse.
-        :type role: :class:`huaweicloudsdkiam.v3.PolicyRoleResult`
+        :type role: :class:`huaweicloudsdkiam.v3.ShowPolicyRoleResult`
         """
         self._role = role
 

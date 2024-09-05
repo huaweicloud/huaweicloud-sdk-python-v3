@@ -29,6 +29,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
         'content_expression': 'str',
         'column_expression': 'str',
         'commit_expression': 'str',
+        'combine_expression': 'str',
         'project_id': 'str',
         'description': 'str',
         'created_by': 'str',
@@ -53,6 +54,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
         'content_expression': 'content_expression',
         'column_expression': 'column_expression',
         'commit_expression': 'commit_expression',
+        'combine_expression': 'combine_expression',
         'project_id': 'project_id',
         'description': 'description',
         'created_by': 'created_by',
@@ -65,7 +67,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
         'match_type': 'match_type'
     }
 
-    def __init__(self, uuid=None, rule_type=None, secrecy_level=None, secrecy_level_num=None, name=None, guid=None, enable=None, method=None, content_expression=None, column_expression=None, commit_expression=None, project_id=None, description=None, created_by=None, created_at=None, updated_by=None, updated_at=None, builtin_rule_id=None, category_id=None, instance_id=None, match_type=None):
+    def __init__(self, uuid=None, rule_type=None, secrecy_level=None, secrecy_level_num=None, name=None, guid=None, enable=None, method=None, content_expression=None, column_expression=None, commit_expression=None, combine_expression=None, project_id=None, description=None, created_by=None, created_at=None, updated_by=None, updated_at=None, builtin_rule_id=None, category_id=None, instance_id=None, match_type=None):
         """ShowSecurityDataClassificationRuleResponse
 
         The model defined in huaweicloud sdk
@@ -84,7 +86,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
         :type guid: str
         :param enable: 规则是否开启
         :type enable: bool
-        :param method: 规则方式, REGULAR, NONE, DEFAULT
+        :param method: 规则方式, REGULAR, NONE, DEFAULT, COMBINE
         :type method: str
         :param content_expression: 内容表达式
         :type content_expression: str
@@ -92,6 +94,8 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
         :type column_expression: str
         :param commit_expression: 备注表达式
         :type commit_expression: str
+        :param combine_expression: 条件表达式
+        :type combine_expression: str
         :param project_id: 项目ID
         :type project_id: str
         :param description: 规则描述
@@ -127,6 +131,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
         self._content_expression = None
         self._column_expression = None
         self._commit_expression = None
+        self._combine_expression = None
         self._project_id = None
         self._description = None
         self._created_by = None
@@ -161,6 +166,8 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
             self.column_expression = column_expression
         if commit_expression is not None:
             self.commit_expression = commit_expression
+        if combine_expression is not None:
+            self.combine_expression = combine_expression
         if project_id is not None:
             self.project_id = project_id
         if description is not None:
@@ -340,7 +347,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
     def method(self):
         """Gets the method of this ShowSecurityDataClassificationRuleResponse.
 
-        规则方式, REGULAR, NONE, DEFAULT
+        规则方式, REGULAR, NONE, DEFAULT, COMBINE
 
         :return: The method of this ShowSecurityDataClassificationRuleResponse.
         :rtype: str
@@ -351,7 +358,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
     def method(self, method):
         """Sets the method of this ShowSecurityDataClassificationRuleResponse.
 
-        规则方式, REGULAR, NONE, DEFAULT
+        规则方式, REGULAR, NONE, DEFAULT, COMBINE
 
         :param method: The method of this ShowSecurityDataClassificationRuleResponse.
         :type method: str
@@ -423,6 +430,28 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
         :type commit_expression: str
         """
         self._commit_expression = commit_expression
+
+    @property
+    def combine_expression(self):
+        """Gets the combine_expression of this ShowSecurityDataClassificationRuleResponse.
+
+        条件表达式
+
+        :return: The combine_expression of this ShowSecurityDataClassificationRuleResponse.
+        :rtype: str
+        """
+        return self._combine_expression
+
+    @combine_expression.setter
+    def combine_expression(self, combine_expression):
+        """Sets the combine_expression of this ShowSecurityDataClassificationRuleResponse.
+
+        条件表达式
+
+        :param combine_expression: The combine_expression of this ShowSecurityDataClassificationRuleResponse.
+        :type combine_expression: str
+        """
+        self._combine_expression = combine_expression
 
     @property
     def project_id(self):

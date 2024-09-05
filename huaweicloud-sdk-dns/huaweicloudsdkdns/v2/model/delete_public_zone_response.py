@@ -84,7 +84,7 @@ class DeletePublicZoneResponse(SdkResponse):
         :type created_at: str
         :param updated_at: 更新时间
         :type updated_at: str
-        :param masters: 主从模式中，从DNS服务器用以获取DNS信息
+        :param masters: 主从模式中，从DNS服务器获取DNS信息
         :type masters: list[str]
         :param links: 
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -430,7 +430,7 @@ class DeletePublicZoneResponse(SdkResponse):
     def masters(self):
         """Gets the masters of this DeletePublicZoneResponse.
 
-        主从模式中，从DNS服务器用以获取DNS信息
+        主从模式中，从DNS服务器获取DNS信息
 
         :return: The masters of this DeletePublicZoneResponse.
         :rtype: list[str]
@@ -441,7 +441,7 @@ class DeletePublicZoneResponse(SdkResponse):
     def masters(self, masters):
         """Sets the masters of this DeletePublicZoneResponse.
 
-        主从模式中，从DNS服务器用以获取DNS信息
+        主从模式中，从DNS服务器获取DNS信息
 
         :param masters: The masters of this DeletePublicZoneResponse.
         :type masters: list[str]

@@ -23,10 +23,7 @@ class BatchCreateSubNetworkInterfaceOption:
         'description': 'str',
         'ipv6_enable': 'bool',
         'project_id': 'str',
-        'allowed_address_pairs': 'list[AllowedAddressPair]',
-        'instance_id': 'str',
-        'instance_type': 'str',
-        'tags': 'list[ResourceTag]'
+        'allowed_address_pairs': 'list[AllowedAddressPair]'
     }
 
     attribute_map = {
@@ -36,13 +33,10 @@ class BatchCreateSubNetworkInterfaceOption:
         'description': 'description',
         'ipv6_enable': 'ipv6_enable',
         'project_id': 'project_id',
-        'allowed_address_pairs': 'allowed_address_pairs',
-        'instance_id': 'instance_id',
-        'instance_type': 'instance_type',
-        'tags': 'tags'
+        'allowed_address_pairs': 'allowed_address_pairs'
     }
 
-    def __init__(self, virsubnet_id=None, parent_id=None, security_groups=None, description=None, ipv6_enable=None, project_id=None, allowed_address_pairs=None, instance_id=None, instance_type=None, tags=None):
+    def __init__(self, virsubnet_id=None, parent_id=None, security_groups=None, description=None, ipv6_enable=None, project_id=None, allowed_address_pairs=None):
         """BatchCreateSubNetworkInterfaceOption
 
         The model defined in huaweicloud sdk
@@ -61,12 +55,6 @@ class BatchCreateSubNetworkInterfaceOption:
         :type project_id: str
         :param allowed_address_pairs: 1. 扩展属性：IP/Mac对列表，allowed_address_pair参见“allowed_address_pair对象” 2. 使用说明: IP地址不允许为 “0.0.0.0”如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组硬件SDN环境不支持ip_address属性配置为CIDR格式。
         :type allowed_address_pairs: list[:class:`huaweicloudsdkvpc.v3.AllowedAddressPair`]
-        :param instance_id: 功能说明：辅助弹性网卡所属实例ID，例如RDS实例ID 约束： 1-64个字符
-        :type instance_id: str
-        :param instance_type: 功能说明：辅助弹性网卡所属实例类型，例如“RDS” 约束：1-64个字符
-        :type instance_type: str
-        :param tags: 辅助弹性网卡资源标签
-        :type tags: list[:class:`huaweicloudsdkvpc.v3.ResourceTag`]
         """
         
         
@@ -78,9 +66,6 @@ class BatchCreateSubNetworkInterfaceOption:
         self._ipv6_enable = None
         self._project_id = None
         self._allowed_address_pairs = None
-        self._instance_id = None
-        self._instance_type = None
-        self._tags = None
         self.discriminator = None
 
         self.virsubnet_id = virsubnet_id
@@ -95,12 +80,6 @@ class BatchCreateSubNetworkInterfaceOption:
             self.project_id = project_id
         if allowed_address_pairs is not None:
             self.allowed_address_pairs = allowed_address_pairs
-        if instance_id is not None:
-            self.instance_id = instance_id
-        if instance_type is not None:
-            self.instance_type = instance_type
-        if tags is not None:
-            self.tags = tags
 
     @property
     def virsubnet_id(self):
@@ -255,72 +234,6 @@ class BatchCreateSubNetworkInterfaceOption:
         :type allowed_address_pairs: list[:class:`huaweicloudsdkvpc.v3.AllowedAddressPair`]
         """
         self._allowed_address_pairs = allowed_address_pairs
-
-    @property
-    def instance_id(self):
-        """Gets the instance_id of this BatchCreateSubNetworkInterfaceOption.
-
-        功能说明：辅助弹性网卡所属实例ID，例如RDS实例ID 约束： 1-64个字符
-
-        :return: The instance_id of this BatchCreateSubNetworkInterfaceOption.
-        :rtype: str
-        """
-        return self._instance_id
-
-    @instance_id.setter
-    def instance_id(self, instance_id):
-        """Sets the instance_id of this BatchCreateSubNetworkInterfaceOption.
-
-        功能说明：辅助弹性网卡所属实例ID，例如RDS实例ID 约束： 1-64个字符
-
-        :param instance_id: The instance_id of this BatchCreateSubNetworkInterfaceOption.
-        :type instance_id: str
-        """
-        self._instance_id = instance_id
-
-    @property
-    def instance_type(self):
-        """Gets the instance_type of this BatchCreateSubNetworkInterfaceOption.
-
-        功能说明：辅助弹性网卡所属实例类型，例如“RDS” 约束：1-64个字符
-
-        :return: The instance_type of this BatchCreateSubNetworkInterfaceOption.
-        :rtype: str
-        """
-        return self._instance_type
-
-    @instance_type.setter
-    def instance_type(self, instance_type):
-        """Sets the instance_type of this BatchCreateSubNetworkInterfaceOption.
-
-        功能说明：辅助弹性网卡所属实例类型，例如“RDS” 约束：1-64个字符
-
-        :param instance_type: The instance_type of this BatchCreateSubNetworkInterfaceOption.
-        :type instance_type: str
-        """
-        self._instance_type = instance_type
-
-    @property
-    def tags(self):
-        """Gets the tags of this BatchCreateSubNetworkInterfaceOption.
-
-        辅助弹性网卡资源标签
-
-        :return: The tags of this BatchCreateSubNetworkInterfaceOption.
-        :rtype: list[:class:`huaweicloudsdkvpc.v3.ResourceTag`]
-        """
-        return self._tags
-
-    @tags.setter
-    def tags(self, tags):
-        """Sets the tags of this BatchCreateSubNetworkInterfaceOption.
-
-        辅助弹性网卡资源标签
-
-        :param tags: The tags of this BatchCreateSubNetworkInterfaceOption.
-        :type tags: list[:class:`huaweicloudsdkvpc.v3.ResourceTag`]
-        """
-        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -2025,6 +2025,8 @@ class EcsClient(Client):
             collection_formats['expect-fields'] = 'csv'
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
 

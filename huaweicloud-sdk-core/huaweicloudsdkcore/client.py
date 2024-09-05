@@ -513,10 +513,7 @@ class Client(object):
         sdk_request = SdkRequest(method=method, schema=schema, host=host, resource_path=resource_path,
                                  query_params=query_params, header_params=header_params, body=body, stream=stream,
                                  signing_algorithm=self._config.signing_algorithm)
-        if self._AUTHORIZATION not in header_params:
-            return self._credentials.process_auth_request(sdk_request, self._http_client)
-        else:
-            return self._http_client.executor.submit(lambda: sdk_request)
+        return self._credentials.process_auth_request(sdk_request, self._http_client)
 
     def _do_http_request_sync(self, request):
         response = self._http_client.do_request_sync(request)

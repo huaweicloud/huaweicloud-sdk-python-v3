@@ -35,7 +35,7 @@ class RestorePtrRecordRequest:
 
         :param region: 域名所属的区域。
         :type region: str
-        :param floatingip_id: 待删除PTR ID。
+        :param floatingip_id: 弹性公网IP（EIP）的ID。
         :type floatingip_id: str
         :param body: Body of the RestorePtrRecordRequest
         :type body: :class:`huaweicloudsdkdns.v2.RestorePtrReq`
@@ -79,7 +79,7 @@ class RestorePtrRecordRequest:
     def floatingip_id(self):
         """Gets the floatingip_id of this RestorePtrRecordRequest.
 
-        待删除PTR ID。
+        弹性公网IP（EIP）的ID。
 
         :return: The floatingip_id of this RestorePtrRecordRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class RestorePtrRecordRequest:
     def floatingip_id(self, floatingip_id):
         """Sets the floatingip_id of this RestorePtrRecordRequest.
 
-        待删除PTR ID。
+        弹性公网IP（EIP）的ID。
 
         :param floatingip_id: The floatingip_id of this RestorePtrRecordRequest.
         :type floatingip_id: str

@@ -18,26 +18,22 @@ class ListCloudServersResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'count': 'int',
         'servers': 'list[CloudServer]',
         'servers_links': 'list[PageLink]',
         'request_id': 'str'
     }
 
     attribute_map = {
-        'count': 'count',
         'servers': 'servers',
         'servers_links': 'servers_links',
         'request_id': 'request_id'
     }
 
-    def __init__(self, count=None, servers=None, servers_links=None, request_id=None):
+    def __init__(self, servers=None, servers_links=None, request_id=None):
         """ListCloudServersResponse
 
         The model defined in huaweicloud sdk
 
-        :param count: 查询云服务器个数。
-        :type count: int
         :param servers: 查询云服务器信息列表。
         :type servers: list[:class:`huaweicloudsdkecs.v2.CloudServer`]
         :param servers_links: 分页查询时，查询下一页数据链接。
@@ -48,42 +44,17 @@ class ListCloudServersResponse(SdkResponse):
         
         super(ListCloudServersResponse, self).__init__()
 
-        self._count = None
         self._servers = None
         self._servers_links = None
         self._request_id = None
         self.discriminator = None
 
-        if count is not None:
-            self.count = count
         if servers is not None:
             self.servers = servers
         if servers_links is not None:
             self.servers_links = servers_links
         if request_id is not None:
             self.request_id = request_id
-
-    @property
-    def count(self):
-        """Gets the count of this ListCloudServersResponse.
-
-        查询云服务器个数。
-
-        :return: The count of this ListCloudServersResponse.
-        :rtype: int
-        """
-        return self._count
-
-    @count.setter
-    def count(self, count):
-        """Sets the count of this ListCloudServersResponse.
-
-        查询云服务器个数。
-
-        :param count: The count of this ListCloudServersResponse.
-        :type count: int
-        """
-        self._count = count
 
     @property
     def servers(self):

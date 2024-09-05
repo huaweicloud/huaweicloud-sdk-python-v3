@@ -19,16 +19,20 @@ class ListAgenciesRequest:
     openapi_types = {
         'domain_id': 'str',
         'trust_domain_id': 'str',
-        'name': 'str'
+        'name': 'str',
+        'page': 'int',
+        'per_page': 'int'
     }
 
     attribute_map = {
         'domain_id': 'domain_id',
         'trust_domain_id': 'trust_domain_id',
-        'name': 'name'
+        'name': 'name',
+        'page': 'page',
+        'per_page': 'per_page'
     }
 
-    def __init__(self, domain_id=None, trust_domain_id=None, name=None):
+    def __init__(self, domain_id=None, trust_domain_id=None, name=None, page=None, per_page=None):
         """ListAgenciesRequest
 
         The model defined in huaweicloud sdk
@@ -39,6 +43,10 @@ class ListAgenciesRequest:
         :type trust_domain_id: str
         :param name: 委托名，获取方式请参见：[获取委托名、委托ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
         :type name: str
+        :param page: 分页查询时数据的页数，查询值最小为1。需要与per_page同时存在。
+        :type page: int
+        :param per_page: 分页查询时每页的数据个数，取值范围为[1,500]。需要与page同时存在。
+        :type per_page: int
         """
         
         
@@ -46,6 +54,8 @@ class ListAgenciesRequest:
         self._domain_id = None
         self._trust_domain_id = None
         self._name = None
+        self._page = None
+        self._per_page = None
         self.discriminator = None
 
         self.domain_id = domain_id
@@ -53,6 +63,10 @@ class ListAgenciesRequest:
             self.trust_domain_id = trust_domain_id
         if name is not None:
             self.name = name
+        if page is not None:
+            self.page = page
+        if per_page is not None:
+            self.per_page = per_page
 
     @property
     def domain_id(self):
@@ -119,6 +133,50 @@ class ListAgenciesRequest:
         :type name: str
         """
         self._name = name
+
+    @property
+    def page(self):
+        """Gets the page of this ListAgenciesRequest.
+
+        分页查询时数据的页数，查询值最小为1。需要与per_page同时存在。
+
+        :return: The page of this ListAgenciesRequest.
+        :rtype: int
+        """
+        return self._page
+
+    @page.setter
+    def page(self, page):
+        """Sets the page of this ListAgenciesRequest.
+
+        分页查询时数据的页数，查询值最小为1。需要与per_page同时存在。
+
+        :param page: The page of this ListAgenciesRequest.
+        :type page: int
+        """
+        self._page = page
+
+    @property
+    def per_page(self):
+        """Gets the per_page of this ListAgenciesRequest.
+
+        分页查询时每页的数据个数，取值范围为[1,500]。需要与page同时存在。
+
+        :return: The per_page of this ListAgenciesRequest.
+        :rtype: int
+        """
+        return self._per_page
+
+    @per_page.setter
+    def per_page(self, per_page):
+        """Sets the per_page of this ListAgenciesRequest.
+
+        分页查询时每页的数据个数，取值范围为[1,500]。需要与page同时存在。
+
+        :param per_page: The per_page of this ListAgenciesRequest.
+        :type per_page: int
+        """
+        self._per_page = per_page
 
     def to_dict(self):
         """Returns the model properties as a dict"""

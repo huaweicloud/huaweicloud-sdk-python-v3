@@ -17,29 +17,36 @@ class SecurityGroup:
     sensitive_list = []
 
     openapi_types = {
-        'name': 'str'
+        'name': 'str',
+        'id': 'str'
     }
 
     attribute_map = {
-        'name': 'name'
+        'name': 'name',
+        'id': 'id'
     }
 
-    def __init__(self, name=None):
+    def __init__(self, name=None, id=None):
         """SecurityGroup
 
         The model defined in huaweicloud sdk
 
         :param name: 安全组名称。
         :type name: str
+        :param id: 安全组ID。
+        :type id: str
         """
         
         
 
         self._name = None
+        self._id = None
         self.discriminator = None
 
         if name is not None:
             self.name = name
+        if id is not None:
+            self.id = id
 
     @property
     def name(self):
@@ -62,6 +69,28 @@ class SecurityGroup:
         :type name: str
         """
         self._name = name
+
+    @property
+    def id(self):
+        """Gets the id of this SecurityGroup.
+
+        安全组ID。
+
+        :return: The id of this SecurityGroup.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this SecurityGroup.
+
+        安全组ID。
+
+        :param id: The id of this SecurityGroup.
+        :type id: str
+        """
+        self._id = id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

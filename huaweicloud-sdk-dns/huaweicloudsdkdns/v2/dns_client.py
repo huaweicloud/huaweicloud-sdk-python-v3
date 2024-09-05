@@ -1584,7 +1584,7 @@ class DnsClient(Client):
     def delete_record_set(self, request):
         """删除单个Record Set
 
-        删除单个Record Set. 删除有添加智能解析的记录集时、需要用Record Set多线路管理模块中删除接口进行删除.
+        删除单个Record Set。删除有添加智能解析的记录集时，需要用Record Set多线路管理模块中删除接口进行删除。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

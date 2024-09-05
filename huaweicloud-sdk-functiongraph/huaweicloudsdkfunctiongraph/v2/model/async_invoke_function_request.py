@@ -18,21 +18,25 @@ class AsyncInvokeFunctionRequest:
 
     openapi_types = {
         'function_urn': 'str',
+        'x_cff_instance_memory': 'str',
         'body': 'dict(str, object)'
     }
 
     attribute_map = {
         'function_urn': 'function_urn',
+        'x_cff_instance_memory': 'X-Cff-Instance-Memory',
         'body': 'body'
     }
 
-    def __init__(self, function_urn=None, body=None):
+    def __init__(self, function_urn=None, x_cff_instance_memory=None, body=None):
         """AsyncInvokeFunctionRequest
 
         The model defined in huaweicloud sdk
 
         :param function_urn: 函数的URN，详细解释见FunctionGraph函数模型的描述。
         :type function_urn: str
+        :param x_cff_instance_memory: 设置本次执行函数使用的内存规格,取值： 128、256、512、768、1024、1280、1536、1792、2048、2560、3072、3584、4096、8192、10240
+        :type x_cff_instance_memory: str
         :param body: 执行函数请求体，为json格式。
         :type body: dict(str, object)
         """
@@ -40,10 +44,13 @@ class AsyncInvokeFunctionRequest:
         
 
         self._function_urn = None
+        self._x_cff_instance_memory = None
         self._body = None
         self.discriminator = None
 
         self.function_urn = function_urn
+        if x_cff_instance_memory is not None:
+            self.x_cff_instance_memory = x_cff_instance_memory
         if body is not None:
             self.body = body
 
@@ -68,6 +75,28 @@ class AsyncInvokeFunctionRequest:
         :type function_urn: str
         """
         self._function_urn = function_urn
+
+    @property
+    def x_cff_instance_memory(self):
+        """Gets the x_cff_instance_memory of this AsyncInvokeFunctionRequest.
+
+        设置本次执行函数使用的内存规格,取值： 128、256、512、768、1024、1280、1536、1792、2048、2560、3072、3584、4096、8192、10240
+
+        :return: The x_cff_instance_memory of this AsyncInvokeFunctionRequest.
+        :rtype: str
+        """
+        return self._x_cff_instance_memory
+
+    @x_cff_instance_memory.setter
+    def x_cff_instance_memory(self, x_cff_instance_memory):
+        """Sets the x_cff_instance_memory of this AsyncInvokeFunctionRequest.
+
+        设置本次执行函数使用的内存规格,取值： 128、256、512、768、1024、1280、1536、1792、2048、2560、3072、3584、4096、8192、10240
+
+        :param x_cff_instance_memory: The x_cff_instance_memory of this AsyncInvokeFunctionRequest.
+        :type x_cff_instance_memory: str
+        """
+        self._x_cff_instance_memory = x_cff_instance_memory
 
     @property
     def body(self):

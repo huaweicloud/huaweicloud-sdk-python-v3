@@ -34,9 +34,9 @@ class AssociateRouterResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param router_id: Router(VPC)的ID。
+        :param router_id: 关联VPC的ID。
         :type router_id: str
-        :param router_region: Router(VPC)所在的region。
+        :param router_region: 关联VPC所在的region。
         :type router_region: str
         :param status: 资源状态。
         :type status: str
@@ -60,7 +60,7 @@ class AssociateRouterResponse(SdkResponse):
     def router_id(self):
         """Gets the router_id of this AssociateRouterResponse.
 
-        Router(VPC)的ID。
+        关联VPC的ID。
 
         :return: The router_id of this AssociateRouterResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class AssociateRouterResponse(SdkResponse):
     def router_id(self, router_id):
         """Sets the router_id of this AssociateRouterResponse.
 
-        Router(VPC)的ID。
+        关联VPC的ID。
 
         :param router_id: The router_id of this AssociateRouterResponse.
         :type router_id: str
@@ -82,7 +82,7 @@ class AssociateRouterResponse(SdkResponse):
     def router_region(self):
         """Gets the router_region of this AssociateRouterResponse.
 
-        Router(VPC)所在的region。
+        关联VPC所在的region。
 
         :return: The router_region of this AssociateRouterResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class AssociateRouterResponse(SdkResponse):
     def router_region(self, router_region):
         """Sets the router_region of this AssociateRouterResponse.
 
-        Router(VPC)所在的region。
+        关联VPC所在的region。
 
         :param router_region: The router_region of this AssociateRouterResponse.
         :type router_region: str

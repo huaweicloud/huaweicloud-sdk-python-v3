@@ -18,23 +18,27 @@ class StoredQueryRequestBody:
 
     openapi_types = {
         'name': 'str',
+        'type': 'str',
         'description': 'str',
         'expression': 'str'
     }
 
     attribute_map = {
         'name': 'name',
+        'type': 'type',
         'description': 'description',
         'expression': 'expression'
     }
 
-    def __init__(self, name=None, description=None, expression=None):
+    def __init__(self, name=None, type=None, description=None, expression=None):
         """StoredQueryRequestBody
 
         The model defined in huaweicloud sdk
 
         :param name: ResourceQL 名字
         :type name: str
+        :param type: 自定义查询类型，枚举值为“account”和“aggregator”。若取值为“account”，表示单帐号的自定义查询语句；若取值为“aggregator”，表示聚合器的自定义查询语句。默认值为“account”。
+        :type type: str
         :param description: ResourceQL 描述
         :type description: str
         :param expression: ResourceQL 表达式
@@ -44,11 +48,14 @@ class StoredQueryRequestBody:
         
 
         self._name = None
+        self._type = None
         self._description = None
         self._expression = None
         self.discriminator = None
 
         self.name = name
+        if type is not None:
+            self.type = type
         if description is not None:
             self.description = description
         self.expression = expression
@@ -74,6 +81,28 @@ class StoredQueryRequestBody:
         :type name: str
         """
         self._name = name
+
+    @property
+    def type(self):
+        """Gets the type of this StoredQueryRequestBody.
+
+        自定义查询类型，枚举值为“account”和“aggregator”。若取值为“account”，表示单帐号的自定义查询语句；若取值为“aggregator”，表示聚合器的自定义查询语句。默认值为“account”。
+
+        :return: The type of this StoredQueryRequestBody.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this StoredQueryRequestBody.
+
+        自定义查询类型，枚举值为“account”和“aggregator”。若取值为“account”，表示单帐号的自定义查询语句；若取值为“aggregator”，表示聚合器的自定义查询语句。默认值为“account”。
+
+        :param type: The type of this StoredQueryRequestBody.
+        :type type: str
+        """
+        self._type = type
 
     @property
     def description(self):

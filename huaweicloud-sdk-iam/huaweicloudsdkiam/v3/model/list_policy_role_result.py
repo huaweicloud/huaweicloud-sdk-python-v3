@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class PolicyRoleResult:
+class ListPolicyRoleResult:
 
     """
     Attributes:
@@ -18,7 +18,6 @@ class PolicyRoleResult:
 
     openapi_types = {
         'domain_id': 'str',
-        'references': 'int',
         'updated_time': 'str',
         'created_time': 'str',
         'description_cn': 'str',
@@ -34,7 +33,6 @@ class PolicyRoleResult:
 
     attribute_map = {
         'domain_id': 'domain_id',
-        'references': 'references',
         'updated_time': 'updated_time',
         'created_time': 'created_time',
         'description_cn': 'description_cn',
@@ -48,15 +46,13 @@ class PolicyRoleResult:
         'policy': 'policy'
     }
 
-    def __init__(self, domain_id=None, references=None, updated_time=None, created_time=None, description_cn=None, catalog=None, name=None, description=None, links=None, id=None, display_name=None, type=None, policy=None):
-        """PolicyRoleResult
+    def __init__(self, domain_id=None, updated_time=None, created_time=None, description_cn=None, catalog=None, name=None, description=None, links=None, id=None, display_name=None, type=None, policy=None):
+        """ListPolicyRoleResult
 
         The model defined in huaweicloud sdk
 
         :param domain_id: 自定义策略所属账号ID。
         :type domain_id: str
-        :param references: 自定义策略的引用次数。
-        :type references: int
         :param updated_time: 自定义策略更新时间。
         :type updated_time: str
         :param created_time: 自定义策略创建时间。
@@ -84,7 +80,6 @@ class PolicyRoleResult:
         
 
         self._domain_id = None
-        self._references = None
         self._updated_time = None
         self._created_time = None
         self._description_cn = None
@@ -99,8 +94,6 @@ class PolicyRoleResult:
         self.discriminator = None
 
         self.domain_id = domain_id
-        if references is not None:
-            self.references = references
         if updated_time is not None:
             self.updated_time = updated_time
         if created_time is not None:
@@ -118,278 +111,256 @@ class PolicyRoleResult:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this PolicyRoleResult.
+        """Gets the domain_id of this ListPolicyRoleResult.
 
         自定义策略所属账号ID。
 
-        :return: The domain_id of this PolicyRoleResult.
+        :return: The domain_id of this ListPolicyRoleResult.
         :rtype: str
         """
         return self._domain_id
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this PolicyRoleResult.
+        """Sets the domain_id of this ListPolicyRoleResult.
 
         自定义策略所属账号ID。
 
-        :param domain_id: The domain_id of this PolicyRoleResult.
+        :param domain_id: The domain_id of this ListPolicyRoleResult.
         :type domain_id: str
         """
         self._domain_id = domain_id
 
     @property
-    def references(self):
-        """Gets the references of this PolicyRoleResult.
-
-        自定义策略的引用次数。
-
-        :return: The references of this PolicyRoleResult.
-        :rtype: int
-        """
-        return self._references
-
-    @references.setter
-    def references(self, references):
-        """Sets the references of this PolicyRoleResult.
-
-        自定义策略的引用次数。
-
-        :param references: The references of this PolicyRoleResult.
-        :type references: int
-        """
-        self._references = references
-
-    @property
     def updated_time(self):
-        """Gets the updated_time of this PolicyRoleResult.
+        """Gets the updated_time of this ListPolicyRoleResult.
 
         自定义策略更新时间。
 
-        :return: The updated_time of this PolicyRoleResult.
+        :return: The updated_time of this ListPolicyRoleResult.
         :rtype: str
         """
         return self._updated_time
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this PolicyRoleResult.
+        """Sets the updated_time of this ListPolicyRoleResult.
 
         自定义策略更新时间。
 
-        :param updated_time: The updated_time of this PolicyRoleResult.
+        :param updated_time: The updated_time of this ListPolicyRoleResult.
         :type updated_time: str
         """
         self._updated_time = updated_time
 
     @property
     def created_time(self):
-        """Gets the created_time of this PolicyRoleResult.
+        """Gets the created_time of this ListPolicyRoleResult.
 
         自定义策略创建时间。
 
-        :return: The created_time of this PolicyRoleResult.
+        :return: The created_time of this ListPolicyRoleResult.
         :rtype: str
         """
         return self._created_time
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this PolicyRoleResult.
+        """Sets the created_time of this ListPolicyRoleResult.
 
         自定义策略创建时间。
 
-        :param created_time: The created_time of this PolicyRoleResult.
+        :param created_time: The created_time of this ListPolicyRoleResult.
         :type created_time: str
         """
         self._created_time = created_time
 
     @property
     def description_cn(self):
-        """Gets the description_cn of this PolicyRoleResult.
+        """Gets the description_cn of this ListPolicyRoleResult.
 
         自定义策略的中文描述信息。
 
-        :return: The description_cn of this PolicyRoleResult.
+        :return: The description_cn of this ListPolicyRoleResult.
         :rtype: str
         """
         return self._description_cn
 
     @description_cn.setter
     def description_cn(self, description_cn):
-        """Sets the description_cn of this PolicyRoleResult.
+        """Sets the description_cn of this ListPolicyRoleResult.
 
         自定义策略的中文描述信息。
 
-        :param description_cn: The description_cn of this PolicyRoleResult.
+        :param description_cn: The description_cn of this ListPolicyRoleResult.
         :type description_cn: str
         """
         self._description_cn = description_cn
 
     @property
     def catalog(self):
-        """Gets the catalog of this PolicyRoleResult.
+        """Gets the catalog of this ListPolicyRoleResult.
 
         自定义策略所在目录。
 
-        :return: The catalog of this PolicyRoleResult.
+        :return: The catalog of this ListPolicyRoleResult.
         :rtype: str
         """
         return self._catalog
 
     @catalog.setter
     def catalog(self, catalog):
-        """Sets the catalog of this PolicyRoleResult.
+        """Sets the catalog of this ListPolicyRoleResult.
 
         自定义策略所在目录。
 
-        :param catalog: The catalog of this PolicyRoleResult.
+        :param catalog: The catalog of this ListPolicyRoleResult.
         :type catalog: str
         """
         self._catalog = catalog
 
     @property
     def name(self):
-        """Gets the name of this PolicyRoleResult.
+        """Gets the name of this ListPolicyRoleResult.
 
         自定义策略名。
 
-        :return: The name of this PolicyRoleResult.
+        :return: The name of this ListPolicyRoleResult.
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PolicyRoleResult.
+        """Sets the name of this ListPolicyRoleResult.
 
         自定义策略名。
 
-        :param name: The name of this PolicyRoleResult.
+        :param name: The name of this ListPolicyRoleResult.
         :type name: str
         """
         self._name = name
 
     @property
     def description(self):
-        """Gets the description of this PolicyRoleResult.
+        """Gets the description of this ListPolicyRoleResult.
 
         自定义策略的描述信息。
 
-        :return: The description of this PolicyRoleResult.
+        :return: The description of this ListPolicyRoleResult.
         :rtype: str
         """
         return self._description
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PolicyRoleResult.
+        """Sets the description of this ListPolicyRoleResult.
 
         自定义策略的描述信息。
 
-        :param description: The description of this PolicyRoleResult.
+        :param description: The description of this ListPolicyRoleResult.
         :type description: str
         """
         self._description = description
 
     @property
     def links(self):
-        """Gets the links of this PolicyRoleResult.
+        """Gets the links of this ListPolicyRoleResult.
 
-        :return: The links of this PolicyRoleResult.
+        :return: The links of this ListPolicyRoleResult.
         :rtype: :class:`huaweicloudsdkiam.v3.LinksSelf`
         """
         return self._links
 
     @links.setter
     def links(self, links):
-        """Sets the links of this PolicyRoleResult.
+        """Sets the links of this ListPolicyRoleResult.
 
-        :param links: The links of this PolicyRoleResult.
+        :param links: The links of this ListPolicyRoleResult.
         :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
         """
         self._links = links
 
     @property
     def id(self):
-        """Gets the id of this PolicyRoleResult.
+        """Gets the id of this ListPolicyRoleResult.
 
         自定义策略ID。
 
-        :return: The id of this PolicyRoleResult.
+        :return: The id of this ListPolicyRoleResult.
         :rtype: str
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PolicyRoleResult.
+        """Sets the id of this ListPolicyRoleResult.
 
         自定义策略ID。
 
-        :param id: The id of this PolicyRoleResult.
+        :param id: The id of this ListPolicyRoleResult.
         :type id: str
         """
         self._id = id
 
     @property
     def display_name(self):
-        """Gets the display_name of this PolicyRoleResult.
+        """Gets the display_name of this ListPolicyRoleResult.
 
         自定义策略展示名。
 
-        :return: The display_name of this PolicyRoleResult.
+        :return: The display_name of this ListPolicyRoleResult.
         :rtype: str
         """
         return self._display_name
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this PolicyRoleResult.
+        """Sets the display_name of this ListPolicyRoleResult.
 
         自定义策略展示名。
 
-        :param display_name: The display_name of this PolicyRoleResult.
+        :param display_name: The display_name of this ListPolicyRoleResult.
         :type display_name: str
         """
         self._display_name = display_name
 
     @property
     def type(self):
-        """Gets the type of this PolicyRoleResult.
+        """Gets the type of this ListPolicyRoleResult.
 
         自定义策略的显示模式。 > - AX表示在domain层显示。 > - XA表示在project层显示。 > - 自定义策略的显示模式只能为AX或者XA，不能在domain层和project层都显示（AA），或者在domain层和project层都不显示（XX）。
 
-        :return: The type of this PolicyRoleResult.
+        :return: The type of this ListPolicyRoleResult.
         :rtype: str
         """
         return self._type
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PolicyRoleResult.
+        """Sets the type of this ListPolicyRoleResult.
 
         自定义策略的显示模式。 > - AX表示在domain层显示。 > - XA表示在project层显示。 > - 自定义策略的显示模式只能为AX或者XA，不能在domain层和project层都显示（AA），或者在domain层和project层都不显示（XX）。
 
-        :param type: The type of this PolicyRoleResult.
+        :param type: The type of this ListPolicyRoleResult.
         :type type: str
         """
         self._type = type
 
     @property
     def policy(self):
-        """Gets the policy of this PolicyRoleResult.
+        """Gets the policy of this ListPolicyRoleResult.
 
-        :return: The policy of this PolicyRoleResult.
+        :return: The policy of this ListPolicyRoleResult.
         :rtype: :class:`huaweicloudsdkiam.v3.CustomPolicy`
         """
         return self._policy
 
     @policy.setter
     def policy(self, policy):
-        """Sets the policy of this PolicyRoleResult.
+        """Sets the policy of this ListPolicyRoleResult.
 
-        :param policy: The policy of this PolicyRoleResult.
+        :param policy: The policy of this ListPolicyRoleResult.
         :type policy: :class:`huaweicloudsdkiam.v3.CustomPolicy`
         """
         self._policy = policy
@@ -436,7 +407,7 @@ class PolicyRoleResult:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PolicyRoleResult):
+        if not isinstance(other, ListPolicyRoleResult):
             return False
 
         return self.__dict__ == other.__dict__

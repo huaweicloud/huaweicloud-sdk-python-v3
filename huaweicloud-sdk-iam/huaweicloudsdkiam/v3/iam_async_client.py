@@ -5491,6 +5491,10 @@ class IamAsyncClient(Client):
             query_params.append(('trust_domain_id', local_var_params['trust_domain_id']))
         if 'name' in local_var_params:
             query_params.append(('name', local_var_params['name']))
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'per_page' in local_var_params:
+            query_params.append(('per_page', local_var_params['per_page']))
 
         header_params = {}
 

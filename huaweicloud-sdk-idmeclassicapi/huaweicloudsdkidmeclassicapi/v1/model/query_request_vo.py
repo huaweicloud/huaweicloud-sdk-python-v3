@@ -55,7 +55,7 @@ class QueryRequestVo:
 
         :param character_set: 
         :type character_set: :class:`huaweicloudsdkidmeclassicapi.v1.CharacterSetEnum`
-        :param conditions: **参数解释：**  查询条件。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param conditions: **参数解释：**  查询条件。  此参数已废弃，不建议继续使用，建议使用替代参数filter。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type conditions: list[:class:`huaweicloudsdkidmeclassicapi.v1.QueryCondition`]
         :param decrypt: **参数解释：**  是否加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  不涉及。 
         :type decrypt: bool
@@ -147,7 +147,7 @@ class QueryRequestVo:
     def conditions(self):
         """Gets the conditions of this QueryRequestVo.
 
-        **参数解释：**  查询条件。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  查询条件。  此参数已废弃，不建议继续使用，建议使用替代参数filter。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The conditions of this QueryRequestVo.
         :rtype: list[:class:`huaweicloudsdkidmeclassicapi.v1.QueryCondition`]
@@ -158,7 +158,7 @@ class QueryRequestVo:
     def conditions(self, conditions):
         """Sets the conditions of this QueryRequestVo.
 
-        **参数解释：**  查询条件。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  查询条件。  此参数已废弃，不建议继续使用，建议使用替代参数filter。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param conditions: The conditions of this QueryRequestVo.
         :type conditions: list[:class:`huaweicloudsdkidmeclassicapi.v1.QueryCondition`]

@@ -21,17 +21,21 @@ class ShowTrackerConfigResponse(SdkResponse):
         'channel': 'ChannelConfigBody',
         'selector': 'SelectorConfigBody',
         'retention_period_in_days': 'int',
-        'agency_name': 'str'
+        'agency_name': 'str',
+        'domain_id': 'str',
+        'frozen_status': 'FrozenStatus'
     }
 
     attribute_map = {
         'channel': 'channel',
         'selector': 'selector',
         'retention_period_in_days': 'retention_period_in_days',
-        'agency_name': 'agency_name'
+        'agency_name': 'agency_name',
+        'domain_id': 'domain_id',
+        'frozen_status': 'frozen_status'
     }
 
-    def __init__(self, channel=None, selector=None, retention_period_in_days=None, agency_name=None):
+    def __init__(self, channel=None, selector=None, retention_period_in_days=None, agency_name=None, domain_id=None, frozen_status=None):
         """ShowTrackerConfigResponse
 
         The model defined in huaweicloud sdk
@@ -44,6 +48,10 @@ class ShowTrackerConfigResponse(SdkResponse):
         :type retention_period_in_days: int
         :param agency_name: IAM委托名称
         :type agency_name: str
+        :param domain_id: 账号ID
+        :type domain_id: str
+        :param frozen_status: 
+        :type frozen_status: :class:`huaweicloudsdkconfig.v1.FrozenStatus`
         """
         
         super(ShowTrackerConfigResponse, self).__init__()
@@ -52,6 +60,8 @@ class ShowTrackerConfigResponse(SdkResponse):
         self._selector = None
         self._retention_period_in_days = None
         self._agency_name = None
+        self._domain_id = None
+        self._frozen_status = None
         self.discriminator = None
 
         if channel is not None:
@@ -62,6 +72,10 @@ class ShowTrackerConfigResponse(SdkResponse):
             self.retention_period_in_days = retention_period_in_days
         if agency_name is not None:
             self.agency_name = agency_name
+        if domain_id is not None:
+            self.domain_id = domain_id
+        if frozen_status is not None:
+            self.frozen_status = frozen_status
 
     @property
     def channel(self):
@@ -142,6 +156,46 @@ class ShowTrackerConfigResponse(SdkResponse):
         :type agency_name: str
         """
         self._agency_name = agency_name
+
+    @property
+    def domain_id(self):
+        """Gets the domain_id of this ShowTrackerConfigResponse.
+
+        账号ID
+
+        :return: The domain_id of this ShowTrackerConfigResponse.
+        :rtype: str
+        """
+        return self._domain_id
+
+    @domain_id.setter
+    def domain_id(self, domain_id):
+        """Sets the domain_id of this ShowTrackerConfigResponse.
+
+        账号ID
+
+        :param domain_id: The domain_id of this ShowTrackerConfigResponse.
+        :type domain_id: str
+        """
+        self._domain_id = domain_id
+
+    @property
+    def frozen_status(self):
+        """Gets the frozen_status of this ShowTrackerConfigResponse.
+
+        :return: The frozen_status of this ShowTrackerConfigResponse.
+        :rtype: :class:`huaweicloudsdkconfig.v1.FrozenStatus`
+        """
+        return self._frozen_status
+
+    @frozen_status.setter
+    def frozen_status(self, frozen_status):
+        """Sets the frozen_status of this ShowTrackerConfigResponse.
+
+        :param frozen_status: The frozen_status of this ShowTrackerConfigResponse.
+        :type frozen_status: :class:`huaweicloudsdkconfig.v1.FrozenStatus`
+        """
+        self._frozen_status = frozen_status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

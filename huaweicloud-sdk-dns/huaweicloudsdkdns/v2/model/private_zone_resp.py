@@ -83,7 +83,7 @@ class PrivateZoneResp:
         :type status: str
         :param record_num: 该zone下的recordset个数。
         :type record_num: int
-        :param proxy_pattern: 内网Zone的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前Zone不进行递归解析 RECURSIVE：开启递归解析代理
+        :param proxy_pattern: 内网Zone的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前Zone未开启递归解析代理 RECURSIVE：当前Zone已开启递归解析代理
         :type proxy_pattern: str
         :param pool_id: 托管该zone的pool，由系统分配。
         :type pool_id: str
@@ -97,7 +97,7 @@ class PrivateZoneResp:
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
         :param tags: 资源标签。
         :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]
-        :param masters: 主从模式中，从DNS服务器用以获取DNS信息。
+        :param masters: 主从模式中，从DNS服务器获取DNS信息。
         :type masters: list[str]
         :param routers: 与该zone关联的Router(VPC)列表。
         :type routers: list[:class:`huaweicloudsdkdns.v2.RouterWithStatus`]
@@ -369,7 +369,7 @@ class PrivateZoneResp:
     def proxy_pattern(self):
         """Gets the proxy_pattern of this PrivateZoneResp.
 
-        内网Zone的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前Zone不进行递归解析 RECURSIVE：开启递归解析代理
+        内网Zone的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前Zone未开启递归解析代理 RECURSIVE：当前Zone已开启递归解析代理
 
         :return: The proxy_pattern of this PrivateZoneResp.
         :rtype: str
@@ -380,7 +380,7 @@ class PrivateZoneResp:
     def proxy_pattern(self, proxy_pattern):
         """Sets the proxy_pattern of this PrivateZoneResp.
 
-        内网Zone的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前Zone不进行递归解析 RECURSIVE：开启递归解析代理
+        内网Zone的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前Zone未开启递归解析代理 RECURSIVE：当前Zone已开启递归解析代理
 
         :param proxy_pattern: The proxy_pattern of this PrivateZoneResp.
         :type proxy_pattern: str
@@ -519,7 +519,7 @@ class PrivateZoneResp:
     def masters(self):
         """Gets the masters of this PrivateZoneResp.
 
-        主从模式中，从DNS服务器用以获取DNS信息。
+        主从模式中，从DNS服务器获取DNS信息。
 
         :return: The masters of this PrivateZoneResp.
         :rtype: list[str]
@@ -530,7 +530,7 @@ class PrivateZoneResp:
     def masters(self, masters):
         """Sets the masters of this PrivateZoneResp.
 
-        主从模式中，从DNS服务器用以获取DNS信息。
+        主从模式中，从DNS服务器获取DNS信息。
 
         :param masters: The masters of this PrivateZoneResp.
         :type masters: list[str]

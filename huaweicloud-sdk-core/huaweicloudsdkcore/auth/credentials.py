@@ -82,6 +82,7 @@ class Credentials(DerivedCredentials, TempCredentials, FederalCredentials):
     _TIME_FORMAT = "%Y-%m-%dT%H:%M:%S.%fZ"
     _X_SECURITY_TOKEN = "X-Security-Token"
     _X_AUTH_TOKEN = "X-Auth-Token"
+    _AUTHORIZATION = "Authorization"
     _SIGNER_CASE = {
         SigningAlgorithm.HMAC_SHA256: Signer,
         SigningAlgorithm.HMAC_SM3: SM3Signer,
@@ -149,8 +150,13 @@ class Credentials(DerivedCredentials, TempCredentials, FederalCredentials):
             request.header_params[self._X_AUTH_TOKEN] = self._auth_token
             Signer.process_request_uri(request)
             return request
+
         if self.security_token is not None:
             request.header_params["X-Security-Token"] = self.security_token
+
+        if self._AUTHORIZATION in request.header_params:
+            Signer.process_request_uri(request)
+            return request
 
         if self._is_derived_auth(request):
             return DerivationAKSKSigner(self).sign(request, self._derived_auth_service_name, self._region_id)

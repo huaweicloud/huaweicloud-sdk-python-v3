@@ -1,3 +1,312 @@
+# 3.1.113 2024-09-05
+
+### HuaweiCloud SDK BMS
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ChangeBaremetalServerName**
+    - changes of response param
+      - `* server.hostId: uuid -> string`
+
+### HuaweiCloud SDK CCE
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the API `RevokeKubernetesClusterCert`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Config
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowStoredQuery**
+    - changes of response param
+      - `+ type`
+  - **UpdateStoredQuery**
+    - changes of request param
+      - `+ type`
+    - changes of response param
+      - `+ type`
+  - **ShowPolicyAssignment**
+    - changes of response param
+      - `+ target_type`
+      - `+ target_id`
+  - **UpdatePolicyAssignment**
+    - changes of response param
+      - `+ target_type`
+      - `+ target_id`
+  - **CreateStoredQuery**
+    - changes of request param
+      - `+ type`
+    - changes of response param
+      - `+ type`
+  - **ListStoredQueries**
+    - changes of response param
+      - `+ type`
+      - `+ value.type`
+  - **ShowAggregatePolicyAssignmentDetail**
+    - changes of response param
+      - `+ target_type`
+      - `+ target_id`
+  - **ShowTrackerConfig**
+    - changes of response param
+      - `+ domain_id`
+      - `+ frozen_status`
+  - **CreateTrackerConfig**
+    - changes of request param
+      - `+ domain_id`
+      - `+ frozen_status`
+  - **CreatePolicyAssignments**
+    - changes of response param
+      - `+ target_type`
+      - `+ target_id`
+  - **ListPolicyAssignments**
+    - changes of response param
+      - `+ target_type`
+      - `+ target_id`
+      - `+ value.target_type`
+      - `+ value.target_id`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowSecurityDataClassificationRule**
+    - changes of response param
+      - `+ combine_expression`
+      - `+ method: enum value [COMBINE]`
+  - **UpdateSecurityDataClassificationRule**
+    - changes of response param
+      - `+ combine_expression`
+      - `+ method: enum value [COMBINE]`
+  - **CreateSecurityDataClassificationRule**
+    - changes of response param
+      - `+ combine_expression`
+      - `+ method: enum value [COMBINE]`
+  - **ListSecurityDataClassificationRules**
+    - changes of response param
+      - `+ combine_expression`
+      - `+ content.combine_expression`
+      - `+ content.method: enum value [COMBINE]`
+  - **ShowSecurityDataClassificationRuleGroup**
+    - changes of response param
+      - `+ combine_expression`
+      - `+ rules.combine_expression`
+      - `+ rules.method: enum value [COMBINE]`
+  - **ListSecurityDataClassificationRuleGroups**
+    - changes of response param
+      - `+ combine_expression`
+      - `+ rule_groups.rules.combine_expression`
+      - `+ rule_groups.rules.method: enum value [COMBINE]`
+
+### HuaweiCloud SDK DGC
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateJob**
+    - changes of request param
+      - `+ schedule.cron.intervalType`
+      - `+ nodes.type: enum value [Dummy]`
+      - `+ nodes.cronTrigger.dependJobs.sameWorkSpaceJobs.workSpaceId`
+      - `+ nodes.cronTrigger.dependJobs.sameWorkSpaceJobs.dependType`
+      - `+ nodes.cronTrigger.dependJobs.sameWorkSpaceJobs.dependOnLastNPeriodValue`
+  - **ShowJob**
+    - changes of request param
+      - `+ dependencies`
+    - changes of response param
+      - `+ schedule.cron.intervalType`
+      - `+ nodes.type: enum value [Dummy]`
+      - `+ nodes.cronTrigger.dependJobs.sameWorkSpaceJobs.workSpaceId`
+      - `+ nodes.cronTrigger.dependJobs.sameWorkSpaceJobs.dependType`
+      - `+ nodes.cronTrigger.dependJobs.sameWorkSpaceJobs.dependOnLastNPeriodValue`
+  - **UpdateJob**
+    - changes of request param
+      - `+ schedule.cron.intervalType`
+      - `+ nodes.type: enum value [Dummy]`
+      - `+ nodes.cronTrigger.dependJobs.sameWorkSpaceJobs.workSpaceId`
+      - `+ nodes.cronTrigger.dependJobs.sameWorkSpaceJobs.dependType`
+      - `+ nodes.cronTrigger.dependJobs.sameWorkSpaceJobs.dependOnLastNPeriodValue`
+  - **CreateSupplementdata**
+    - changes of request param
+      - `+ dependJobs.schedule.cron.intervalType`
+      - `+ dependJobs.nodes.type: enum value [Dummy]`
+      - `+ dependJobs.nodes.cronTrigger.dependJobs.sameWorkSpaceJobs.workSpaceId`
+      - `+ dependJobs.nodes.cronTrigger.dependJobs.sameWorkSpaceJobs.dependType`
+      - `+ dependJobs.nodes.cronTrigger.dependJobs.sameWorkSpaceJobs.dependOnLastNPeriodValue`
+
+### HuaweiCloud SDK DLI
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowSqlJobStatus**
+    - changes of response param
+      - `+ execution_details_path`
+
+### HuaweiCloud SDK DNS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowResourceTag**
+    - changes of response param
+      - `- enterpriseProjectOrDefault`
+
+### HuaweiCloud SDK ECS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListCloudServers**
+    - changes of request param
+      - `+ marker`
+    - changes of response param
+      - `- count`
+      - `+ servers.launched_at`
+      - `- servers.launched`
+      - `+ servers.security_groups.id`
+      - `+ servers.volumes_attached.size`
+      - `+ servers.flavor.gpus`
+      - `+ servers.flavor.asic_accelerators`
+      - `- servers.flavor.root_gb`
+      - `- servers.flavor.ephemeral_gb`
+      - `- servers.flavor.extra_specs`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **InvokeFunction**
+    - changes of request param
+      - `+ X-Cff-Instance-Memory`
+  - **AsyncInvokeFunction**
+    - changes of request param
+      - `+ X-Cff-Instance-Memory`
+
+### HuaweiCloud SDK IAM
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListAgencies**
+    - changes of request param
+      - `+ page`
+      - `+ per_page`
+  - **ShowDomainRoleAssignments**
+    - changes of request param
+      - `* page: string -> int32`
+      - `* per_page: string -> int32`
+  - **ListCustomPolicies**
+    - changes of response param
+      - `- roles.references`
+      - `* roles: list<PolicyRoleResult> -> list<ListPolicyRoleResult>`
+  - **CreateCloudServiceCustomPolicy**
+    - changes of response param
+      - `- role.references`
+  - **UpdateCloudServiceCustomPolicy**
+    - changes of response param
+      - `- role.references`
+  - **CreateAgencyCustomPolicy**
+    - changes of response param
+      - `- role.references`
+  - **UpdateAgencyCustomPolicy**
+    - changes of response param
+      - `- role.references`
+
+### HuaweiCloud SDK Live
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowDomainHttpsCert**
+    - changes of response param
+      - `+ tls_certificate`
+      - `+ gm_certificate`
+  - **UpdateDomainHttpsCert**
+    - changes of request param
+      - `+ tls_certificate`
+      - `+ gm_certificate`
+
+### HuaweiCloud SDK Meeting
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `CreateAuthRandom`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK VPC
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateSubNetworkInterface**
+    - changes of request param
+      - `- sub_network_interface.instance_id`
+      - `- sub_network_interface.instance_type`
+      - `- sub_network_interface.tags`
+  - **BatchCreateSubNetworkInterface**
+    - changes of request param
+      - `- sub_network_interface.instance_id`
+      - `- sub_network_interface.instance_type`
+      - `- sub_network_interface.tags`
+
 # 3.1.112 2024-08-29
 
 ### HuaweiCloud SDK BSS

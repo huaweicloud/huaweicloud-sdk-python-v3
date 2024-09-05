@@ -22,9 +22,8 @@ class FlavorQuasar:
         'vcpus': 'int',
         'ram': 'int',
         'disk': 'int',
-        'root_gb': 'int',
-        'ephemeral_gb': 'int',
-        'extra_specs': 'dict(str, str)'
+        'gpus': 'list[GpuInfo]',
+        'asic_accelerators': 'list[ASICAcceleratorInfo]'
     }
 
     attribute_map = {
@@ -33,12 +32,11 @@ class FlavorQuasar:
         'vcpus': 'vcpus',
         'ram': 'ram',
         'disk': 'disk',
-        'root_gb': 'root_gb',
-        'ephemeral_gb': 'ephemeral_gb',
-        'extra_specs': 'extra_specs'
+        'gpus': 'gpus',
+        'asic_accelerators': 'asic_accelerators'
     }
 
-    def __init__(self, id=None, name=None, vcpus=None, ram=None, disk=None, root_gb=None, ephemeral_gb=None, extra_specs=None):
+    def __init__(self, id=None, name=None, vcpus=None, ram=None, disk=None, gpus=None, asic_accelerators=None):
         """FlavorQuasar
 
         The model defined in huaweicloud sdk
@@ -53,12 +51,10 @@ class FlavorQuasar:
         :type ram: int
         :param disk: 该云服务器规格对应要求系统盘大小，0为不限制。
         :type disk: int
-        :param root_gb: 
-        :type root_gb: int
-        :param ephemeral_gb: 
-        :type ephemeral_gb: int
-        :param extra_specs: flavor扩展字段。
-        :type extra_specs: dict(str, str)
+        :param gpus: 
+        :type gpus: list[:class:`huaweicloudsdkecs.v2.GpuInfo`]
+        :param asic_accelerators: 
+        :type asic_accelerators: list[:class:`huaweicloudsdkecs.v2.ASICAcceleratorInfo`]
         """
         
         
@@ -68,9 +64,8 @@ class FlavorQuasar:
         self._vcpus = None
         self._ram = None
         self._disk = None
-        self._root_gb = None
-        self._ephemeral_gb = None
-        self._extra_specs = None
+        self._gpus = None
+        self._asic_accelerators = None
         self.discriminator = None
 
         if id is not None:
@@ -83,12 +78,10 @@ class FlavorQuasar:
             self.ram = ram
         if disk is not None:
             self.disk = disk
-        if root_gb is not None:
-            self.root_gb = root_gb
-        if ephemeral_gb is not None:
-            self.ephemeral_gb = ephemeral_gb
-        if extra_specs is not None:
-            self.extra_specs = extra_specs
+        if gpus is not None:
+            self.gpus = gpus
+        if asic_accelerators is not None:
+            self.asic_accelerators = asic_accelerators
 
     @property
     def id(self):
@@ -201,62 +194,40 @@ class FlavorQuasar:
         self._disk = disk
 
     @property
-    def root_gb(self):
-        """Gets the root_gb of this FlavorQuasar.
+    def gpus(self):
+        """Gets the gpus of this FlavorQuasar.
 
-        :return: The root_gb of this FlavorQuasar.
-        :rtype: int
+        :return: The gpus of this FlavorQuasar.
+        :rtype: list[:class:`huaweicloudsdkecs.v2.GpuInfo`]
         """
-        return self._root_gb
+        return self._gpus
 
-    @root_gb.setter
-    def root_gb(self, root_gb):
-        """Sets the root_gb of this FlavorQuasar.
+    @gpus.setter
+    def gpus(self, gpus):
+        """Sets the gpus of this FlavorQuasar.
 
-        :param root_gb: The root_gb of this FlavorQuasar.
-        :type root_gb: int
+        :param gpus: The gpus of this FlavorQuasar.
+        :type gpus: list[:class:`huaweicloudsdkecs.v2.GpuInfo`]
         """
-        self._root_gb = root_gb
+        self._gpus = gpus
 
     @property
-    def ephemeral_gb(self):
-        """Gets the ephemeral_gb of this FlavorQuasar.
+    def asic_accelerators(self):
+        """Gets the asic_accelerators of this FlavorQuasar.
 
-        :return: The ephemeral_gb of this FlavorQuasar.
-        :rtype: int
+        :return: The asic_accelerators of this FlavorQuasar.
+        :rtype: list[:class:`huaweicloudsdkecs.v2.ASICAcceleratorInfo`]
         """
-        return self._ephemeral_gb
+        return self._asic_accelerators
 
-    @ephemeral_gb.setter
-    def ephemeral_gb(self, ephemeral_gb):
-        """Sets the ephemeral_gb of this FlavorQuasar.
+    @asic_accelerators.setter
+    def asic_accelerators(self, asic_accelerators):
+        """Sets the asic_accelerators of this FlavorQuasar.
 
-        :param ephemeral_gb: The ephemeral_gb of this FlavorQuasar.
-        :type ephemeral_gb: int
+        :param asic_accelerators: The asic_accelerators of this FlavorQuasar.
+        :type asic_accelerators: list[:class:`huaweicloudsdkecs.v2.ASICAcceleratorInfo`]
         """
-        self._ephemeral_gb = ephemeral_gb
-
-    @property
-    def extra_specs(self):
-        """Gets the extra_specs of this FlavorQuasar.
-
-        flavor扩展字段。
-
-        :return: The extra_specs of this FlavorQuasar.
-        :rtype: dict(str, str)
-        """
-        return self._extra_specs
-
-    @extra_specs.setter
-    def extra_specs(self, extra_specs):
-        """Sets the extra_specs of this FlavorQuasar.
-
-        flavor扩展字段。
-
-        :param extra_specs: The extra_specs of this FlavorQuasar.
-        :type extra_specs: dict(str, str)
-        """
-        self._extra_specs = extra_specs
+        self._asic_accelerators = asic_accelerators
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -31,7 +31,9 @@ class ShowAggregatePolicyAssignmentDetailResponse(SdkResponse):
         'custom_policy': 'CustomPolicy',
         'parameters': 'dict(str, PolicyParameterValue)',
         'tags': 'list[ResourceTag]',
-        'created_by': 'str'
+        'created_by': 'str',
+        'target_type': 'str',
+        'target_id': 'str'
     }
 
     attribute_map = {
@@ -48,10 +50,12 @@ class ShowAggregatePolicyAssignmentDetailResponse(SdkResponse):
         'custom_policy': 'custom_policy',
         'parameters': 'parameters',
         'tags': 'tags',
-        'created_by': 'created_by'
+        'created_by': 'created_by',
+        'target_type': 'target_type',
+        'target_id': 'target_id'
     }
 
-    def __init__(self, policy_assignment_type=None, id=None, name=None, description=None, policy_filter=None, period=None, state=None, created=None, updated=None, policy_definition_id=None, custom_policy=None, parameters=None, tags=None, created_by=None):
+    def __init__(self, policy_assignment_type=None, id=None, name=None, description=None, policy_filter=None, period=None, state=None, created=None, updated=None, policy_definition_id=None, custom_policy=None, parameters=None, tags=None, created_by=None, target_type=None, target_id=None):
         """ShowAggregatePolicyAssignmentDetailResponse
 
         The model defined in huaweicloud sdk
@@ -84,6 +88,10 @@ class ShowAggregatePolicyAssignmentDetailResponse(SdkResponse):
         :type tags: list[:class:`huaweicloudsdkconfig.v1.ResourceTag`]
         :param created_by: 规则的创建者
         :type created_by: str
+        :param target_type: 合规规则修正方式。
+        :type target_type: str
+        :param target_id: 修正执行的目标id。
+        :type target_id: str
         """
         
         super(ShowAggregatePolicyAssignmentDetailResponse, self).__init__()
@@ -102,6 +110,8 @@ class ShowAggregatePolicyAssignmentDetailResponse(SdkResponse):
         self._parameters = None
         self._tags = None
         self._created_by = None
+        self._target_type = None
+        self._target_id = None
         self.discriminator = None
 
         if policy_assignment_type is not None:
@@ -132,6 +142,10 @@ class ShowAggregatePolicyAssignmentDetailResponse(SdkResponse):
             self.tags = tags
         if created_by is not None:
             self.created_by = created_by
+        if target_type is not None:
+            self.target_type = target_type
+        if target_id is not None:
+            self.target_id = target_id
 
     @property
     def policy_assignment_type(self):
@@ -428,6 +442,50 @@ class ShowAggregatePolicyAssignmentDetailResponse(SdkResponse):
         :type created_by: str
         """
         self._created_by = created_by
+
+    @property
+    def target_type(self):
+        """Gets the target_type of this ShowAggregatePolicyAssignmentDetailResponse.
+
+        合规规则修正方式。
+
+        :return: The target_type of this ShowAggregatePolicyAssignmentDetailResponse.
+        :rtype: str
+        """
+        return self._target_type
+
+    @target_type.setter
+    def target_type(self, target_type):
+        """Sets the target_type of this ShowAggregatePolicyAssignmentDetailResponse.
+
+        合规规则修正方式。
+
+        :param target_type: The target_type of this ShowAggregatePolicyAssignmentDetailResponse.
+        :type target_type: str
+        """
+        self._target_type = target_type
+
+    @property
+    def target_id(self):
+        """Gets the target_id of this ShowAggregatePolicyAssignmentDetailResponse.
+
+        修正执行的目标id。
+
+        :return: The target_id of this ShowAggregatePolicyAssignmentDetailResponse.
+        :rtype: str
+        """
+        return self._target_id
+
+    @target_id.setter
+    def target_id(self, target_id):
+        """Sets the target_id of this ShowAggregatePolicyAssignmentDetailResponse.
+
+        修正执行的目标id。
+
+        :param target_id: The target_id of this ShowAggregatePolicyAssignmentDetailResponse.
+        :type target_id: str
+        """
+        self._target_id = target_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

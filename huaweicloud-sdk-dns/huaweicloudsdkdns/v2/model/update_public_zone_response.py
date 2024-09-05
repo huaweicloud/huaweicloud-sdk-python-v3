@@ -86,7 +86,7 @@ class UpdatePublicZoneResponse(SdkResponse):
         :type updated_at: str
         :param links: 
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
-        :param masters: 主从模式中，从DNS服务器用以获取DNS信息。  目前暂未使用。
+        :param masters: 主从模式中，从DNS服务器获取DNS信息。  目前暂未使用。
         :type masters: list[str]
         """
         
@@ -448,7 +448,7 @@ class UpdatePublicZoneResponse(SdkResponse):
     def masters(self):
         """Gets the masters of this UpdatePublicZoneResponse.
 
-        主从模式中，从DNS服务器用以获取DNS信息。  目前暂未使用。
+        主从模式中，从DNS服务器获取DNS信息。  目前暂未使用。
 
         :return: The masters of this UpdatePublicZoneResponse.
         :rtype: list[str]
@@ -459,7 +459,7 @@ class UpdatePublicZoneResponse(SdkResponse):
     def masters(self, masters):
         """Sets the masters of this UpdatePublicZoneResponse.
 
-        主从模式中，从DNS服务器用以获取DNS信息。  目前暂未使用。
+        主从模式中，从DNS服务器获取DNS信息。  目前暂未使用。
 
         :param masters: The masters of this UpdatePublicZoneResponse.
         :type masters: list[str]

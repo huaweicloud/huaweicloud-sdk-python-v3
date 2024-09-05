@@ -88,7 +88,7 @@ class DeletePrivateZoneResponse(SdkResponse):
         :type updated_at: str
         :param links: 
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
-        :param masters: 主从模式中，从DNS服务器用以获取DNS信息。
+        :param masters: 主从模式中，从DNS服务器获取DNS信息。
         :type masters: list[str]
         :param routers: 与该zone关联的Router(VPC)列表。
         :type routers: list[:class:`huaweicloudsdkdns.v2.RouterWithStatus`]
@@ -455,7 +455,7 @@ class DeletePrivateZoneResponse(SdkResponse):
     def masters(self):
         """Gets the masters of this DeletePrivateZoneResponse.
 
-        主从模式中，从DNS服务器用以获取DNS信息。
+        主从模式中，从DNS服务器获取DNS信息。
 
         :return: The masters of this DeletePrivateZoneResponse.
         :rtype: list[str]
@@ -466,7 +466,7 @@ class DeletePrivateZoneResponse(SdkResponse):
     def masters(self, masters):
         """Sets the masters of this DeletePrivateZoneResponse.
 
-        主从模式中，从DNS服务器用以获取DNS信息。
+        主从模式中，从DNS服务器获取DNS信息。
 
         :param masters: The masters of this DeletePrivateZoneResponse.
         :type masters: list[str]

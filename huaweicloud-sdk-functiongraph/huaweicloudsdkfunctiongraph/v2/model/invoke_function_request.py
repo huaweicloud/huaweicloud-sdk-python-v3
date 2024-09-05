@@ -20,6 +20,7 @@ class InvokeFunctionRequest:
         'function_urn': 'str',
         'x_cff_log_type': 'str',
         'x_cff_request_version': 'str',
+        'x_cff_instance_memory': 'str',
         'body': 'dict(str, object)'
     }
 
@@ -27,10 +28,11 @@ class InvokeFunctionRequest:
         'function_urn': 'function_urn',
         'x_cff_log_type': 'X-Cff-Log-Type',
         'x_cff_request_version': 'X-CFF-Request-Version',
+        'x_cff_instance_memory': 'X-Cff-Instance-Memory',
         'body': 'body'
     }
 
-    def __init__(self, function_urn=None, x_cff_log_type=None, x_cff_request_version=None, body=None):
+    def __init__(self, function_urn=None, x_cff_log_type=None, x_cff_request_version=None, x_cff_instance_memory=None, body=None):
         """InvokeFunctionRequest
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class InvokeFunctionRequest:
         :type x_cff_log_type: str
         :param x_cff_request_version: 返回体格式，取值v0,v1。 v0:默认返回文本格式 v1:默认返回json格式，sdk需要使用此值。
         :type x_cff_request_version: str
+        :param x_cff_instance_memory: 设置本次执行函数使用的内存规格,取值： 128、256、512、768、1024、1280、1536、1792、2048、2560、3072、3584、4096、8192、10240
+        :type x_cff_instance_memory: str
         :param body: 执行函数请求体，为json格式。
         :type body: dict(str, object)
         """
@@ -50,6 +54,7 @@ class InvokeFunctionRequest:
         self._function_urn = None
         self._x_cff_log_type = None
         self._x_cff_request_version = None
+        self._x_cff_instance_memory = None
         self._body = None
         self.discriminator = None
 
@@ -58,6 +63,8 @@ class InvokeFunctionRequest:
             self.x_cff_log_type = x_cff_log_type
         if x_cff_request_version is not None:
             self.x_cff_request_version = x_cff_request_version
+        if x_cff_instance_memory is not None:
+            self.x_cff_instance_memory = x_cff_instance_memory
         if body is not None:
             self.body = body
 
@@ -126,6 +133,28 @@ class InvokeFunctionRequest:
         :type x_cff_request_version: str
         """
         self._x_cff_request_version = x_cff_request_version
+
+    @property
+    def x_cff_instance_memory(self):
+        """Gets the x_cff_instance_memory of this InvokeFunctionRequest.
+
+        设置本次执行函数使用的内存规格,取值： 128、256、512、768、1024、1280、1536、1792、2048、2560、3072、3584、4096、8192、10240
+
+        :return: The x_cff_instance_memory of this InvokeFunctionRequest.
+        :rtype: str
+        """
+        return self._x_cff_instance_memory
+
+    @x_cff_instance_memory.setter
+    def x_cff_instance_memory(self, x_cff_instance_memory):
+        """Sets the x_cff_instance_memory of this InvokeFunctionRequest.
+
+        设置本次执行函数使用的内存规格,取值： 128、256、512、768、1024、1280、1536、1792、2048、2560、3072、3584、4096、8192、10240
+
+        :param x_cff_instance_memory: The x_cff_instance_memory of this InvokeFunctionRequest.
+        :type x_cff_instance_memory: str
+        """
+        self._x_cff_instance_memory = x_cff_instance_memory
 
     @property
     def body(self):

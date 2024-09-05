@@ -35,9 +35,9 @@ class RemediationResourceKey:
 
         :param resource_id: 资源ID。
         :type resource_id: str
-        :param resource_provider: 云服务名称。
+        :param resource_provider: 云服务名称，为兼容部分合规结果中云服务名称为空的场景，可为空字符串。
         :type resource_provider: str
-        :param resource_type: 资源类型。
+        :param resource_type: 资源类型，为兼容部分合规结果中资源类型为空的场景，可为空字符串。
         :type resource_type: str
         """
         
@@ -78,7 +78,7 @@ class RemediationResourceKey:
     def resource_provider(self):
         """Gets the resource_provider of this RemediationResourceKey.
 
-        云服务名称。
+        云服务名称，为兼容部分合规结果中云服务名称为空的场景，可为空字符串。
 
         :return: The resource_provider of this RemediationResourceKey.
         :rtype: str
@@ -89,7 +89,7 @@ class RemediationResourceKey:
     def resource_provider(self, resource_provider):
         """Sets the resource_provider of this RemediationResourceKey.
 
-        云服务名称。
+        云服务名称，为兼容部分合规结果中云服务名称为空的场景，可为空字符串。
 
         :param resource_provider: The resource_provider of this RemediationResourceKey.
         :type resource_provider: str
@@ -100,7 +100,7 @@ class RemediationResourceKey:
     def resource_type(self):
         """Gets the resource_type of this RemediationResourceKey.
 
-        资源类型。
+        资源类型，为兼容部分合规结果中资源类型为空的场景，可为空字符串。
 
         :return: The resource_type of this RemediationResourceKey.
         :rtype: str
@@ -111,7 +111,7 @@ class RemediationResourceKey:
     def resource_type(self, resource_type):
         """Sets the resource_type of this RemediationResourceKey.
 
-        资源类型。
+        资源类型，为兼容部分合规结果中资源类型为空的场景，可为空字符串。
 
         :param resource_type: The resource_type of this RemediationResourceKey.
         :type resource_type: str

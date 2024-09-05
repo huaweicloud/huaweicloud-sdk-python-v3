@@ -57,7 +57,7 @@ class CreatePrivateZoneReq:
         :type ttl: int
         :param router: 
         :type router: :class:`huaweicloudsdkdns.v2.Router`
-        :param proxy_pattern: 内网Zone的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前Zone不进行递归解析 RECURSIVE：开启递归解析代理
+        :param proxy_pattern: 内网Zone的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前Zone未开启递归解析代理 RECURSIVE：当前Zone已开启递归解析代理
         :type proxy_pattern: str
         :param tags: 资源标签。
         :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]
@@ -226,7 +226,7 @@ class CreatePrivateZoneReq:
     def proxy_pattern(self):
         """Gets the proxy_pattern of this CreatePrivateZoneReq.
 
-        内网Zone的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前Zone不进行递归解析 RECURSIVE：开启递归解析代理
+        内网Zone的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前Zone未开启递归解析代理 RECURSIVE：当前Zone已开启递归解析代理
 
         :return: The proxy_pattern of this CreatePrivateZoneReq.
         :rtype: str
@@ -237,7 +237,7 @@ class CreatePrivateZoneReq:
     def proxy_pattern(self, proxy_pattern):
         """Sets the proxy_pattern of this CreatePrivateZoneReq.
 
-        内网Zone的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前Zone不进行递归解析 RECURSIVE：开启递归解析代理
+        内网Zone的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前Zone未开启递归解析代理 RECURSIVE：当前Zone已开启递归解析代理
 
         :param proxy_pattern: The proxy_pattern of this CreatePrivateZoneReq.
         :type proxy_pattern: str

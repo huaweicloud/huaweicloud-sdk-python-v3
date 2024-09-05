@@ -67,7 +67,7 @@ class ListFlinkJobsRequest:
         :type root_job_id: int
         :param show_detail: 是否返回作业详情信息。默认为false。
         :type show_detail: bool
-        :param status: 作业状态码。
+        :param status: 作业状态。 作业的状态如下： job_init：草稿 job_submitting：提交中 job_submit_fail：提交失败 job_running：运行中（开始计费，提交作业后，返回正常结果） job_running_exception：运行异常（停止计费。作业发生运行时异常，停止运行作业） job_downloading：下载中 job_idle：空闲 job_canceling：停止中 job_cancel_success：已停止 job_cancel_fail：停止失败 job_savepointing：保存点创建中 job_arrearage_stopped：因欠费被停止（结束计费。用户账户欠费，作业停止） job_arrearage_recovering：欠费作业恢复中（用户账户欠费，账户充值，作业恢复中） job_finish：已完成
         :type status: str
         :param sys_enterprise_project_name: 
         :type sys_enterprise_project_name: str
@@ -298,7 +298,7 @@ class ListFlinkJobsRequest:
     def status(self):
         """Gets the status of this ListFlinkJobsRequest.
 
-        作业状态码。
+        作业状态。 作业的状态如下： job_init：草稿 job_submitting：提交中 job_submit_fail：提交失败 job_running：运行中（开始计费，提交作业后，返回正常结果） job_running_exception：运行异常（停止计费。作业发生运行时异常，停止运行作业） job_downloading：下载中 job_idle：空闲 job_canceling：停止中 job_cancel_success：已停止 job_cancel_fail：停止失败 job_savepointing：保存点创建中 job_arrearage_stopped：因欠费被停止（结束计费。用户账户欠费，作业停止） job_arrearage_recovering：欠费作业恢复中（用户账户欠费，账户充值，作业恢复中） job_finish：已完成
 
         :return: The status of this ListFlinkJobsRequest.
         :rtype: str
@@ -309,7 +309,7 @@ class ListFlinkJobsRequest:
     def status(self, status):
         """Sets the status of this ListFlinkJobsRequest.
 
-        作业状态码。
+        作业状态。 作业的状态如下： job_init：草稿 job_submitting：提交中 job_submit_fail：提交失败 job_running：运行中（开始计费，提交作业后，返回正常结果） job_running_exception：运行异常（停止计费。作业发生运行时异常，停止运行作业） job_downloading：下载中 job_idle：空闲 job_canceling：停止中 job_cancel_success：已停止 job_cancel_fail：停止失败 job_savepointing：保存点创建中 job_arrearage_stopped：因欠费被停止（结束计费。用户账户欠费，作业停止） job_arrearage_recovering：欠费作业恢复中（用户账户欠费，账户充值，作业恢复中） job_finish：已完成
 
         :param status: The status of this ListFlinkJobsRequest.
         :type status: str

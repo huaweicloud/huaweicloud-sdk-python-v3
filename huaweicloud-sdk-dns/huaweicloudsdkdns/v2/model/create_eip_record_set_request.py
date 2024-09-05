@@ -35,7 +35,7 @@ class CreateEipRecordSetRequest:
 
         :param region: 租户的区域信息。
         :type region: str
-        :param floatingip_id: 弹性IP的ID。
+        :param floatingip_id: 弹性公网IP（EIP）的ID。
         :type floatingip_id: str
         :param body: Body of the CreateEipRecordSetRequest
         :type body: :class:`huaweicloudsdkdns.v2.CreatePtrReq`
@@ -79,7 +79,7 @@ class CreateEipRecordSetRequest:
     def floatingip_id(self):
         """Gets the floatingip_id of this CreateEipRecordSetRequest.
 
-        弹性IP的ID。
+        弹性公网IP（EIP）的ID。
 
         :return: The floatingip_id of this CreateEipRecordSetRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class CreateEipRecordSetRequest:
     def floatingip_id(self, floatingip_id):
         """Sets the floatingip_id of this CreateEipRecordSetRequest.
 
-        弹性IP的ID。
+        弹性公网IP（EIP）的ID。
 
         :param floatingip_id: The floatingip_id of this CreateEipRecordSetRequest.
         :type floatingip_id: str

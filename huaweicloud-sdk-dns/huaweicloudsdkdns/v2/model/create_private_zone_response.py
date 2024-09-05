@@ -80,7 +80,7 @@ class CreatePrivateZoneResponse(SdkResponse):
         :type status: str
         :param record_num: 该zone下的recordset个数。
         :type record_num: int
-        :param proxy_pattern: 内网Zone的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前Zone不进行递归解析 RECURSIVE：开启递归解析代理
+        :param proxy_pattern: 内网Zone的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前Zone未开启递归解析代理 RECURSIVE：当前Zone已开启递归解析代理
         :type proxy_pattern: str
         :param pool_id: 托管该zone的pool，由系统分配。
         :type pool_id: str
@@ -92,7 +92,7 @@ class CreatePrivateZoneResponse(SdkResponse):
         :type updated_at: str
         :param links: 
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
-        :param masters: 主从模式中，从DNS服务器用以获取DNS信息。
+        :param masters: 主从模式中，从DNS服务器获取DNS信息。
         :type masters: list[str]
         :param router: 
         :type router: :class:`huaweicloudsdkdns.v2.RouterWithStatus`
@@ -356,7 +356,7 @@ class CreatePrivateZoneResponse(SdkResponse):
     def proxy_pattern(self):
         """Gets the proxy_pattern of this CreatePrivateZoneResponse.
 
-        内网Zone的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前Zone不进行递归解析 RECURSIVE：开启递归解析代理
+        内网Zone的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前Zone未开启递归解析代理 RECURSIVE：当前Zone已开启递归解析代理
 
         :return: The proxy_pattern of this CreatePrivateZoneResponse.
         :rtype: str
@@ -367,7 +367,7 @@ class CreatePrivateZoneResponse(SdkResponse):
     def proxy_pattern(self, proxy_pattern):
         """Sets the proxy_pattern of this CreatePrivateZoneResponse.
 
-        内网Zone的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前Zone不进行递归解析 RECURSIVE：开启递归解析代理
+        内网Zone的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前Zone未开启递归解析代理 RECURSIVE：当前Zone已开启递归解析代理
 
         :param proxy_pattern: The proxy_pattern of this CreatePrivateZoneResponse.
         :type proxy_pattern: str
@@ -484,7 +484,7 @@ class CreatePrivateZoneResponse(SdkResponse):
     def masters(self):
         """Gets the masters of this CreatePrivateZoneResponse.
 
-        主从模式中，从DNS服务器用以获取DNS信息。
+        主从模式中，从DNS服务器获取DNS信息。
 
         :return: The masters of this CreatePrivateZoneResponse.
         :rtype: list[str]
@@ -495,7 +495,7 @@ class CreatePrivateZoneResponse(SdkResponse):
     def masters(self, masters):
         """Sets the masters of this CreatePrivateZoneResponse.
 
-        主从模式中，从DNS服务器用以获取DNS信息。
+        主从模式中，从DNS服务器获取DNS信息。
 
         :param masters: The masters of this CreatePrivateZoneResponse.
         :type masters: list[str]

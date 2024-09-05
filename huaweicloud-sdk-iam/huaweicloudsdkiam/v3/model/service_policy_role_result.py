@@ -28,8 +28,7 @@ class ServicePolicyRoleResult:
         'id': 'str',
         'name': 'str',
         'updated_time': 'str',
-        'created_time': 'str',
-        'references': 'str'
+        'created_time': 'str'
     }
 
     attribute_map = {
@@ -44,11 +43,10 @@ class ServicePolicyRoleResult:
         'id': 'id',
         'name': 'name',
         'updated_time': 'updated_time',
-        'created_time': 'created_time',
-        'references': 'references'
+        'created_time': 'created_time'
     }
 
-    def __init__(self, catalog=None, display_name=None, description=None, links=None, policy=None, description_cn=None, domain_id=None, type=None, id=None, name=None, updated_time=None, created_time=None, references=None):
+    def __init__(self, catalog=None, display_name=None, description=None, links=None, policy=None, description_cn=None, domain_id=None, type=None, id=None, name=None, updated_time=None, created_time=None):
         """ServicePolicyRoleResult
 
         The model defined in huaweicloud sdk
@@ -77,8 +75,6 @@ class ServicePolicyRoleResult:
         :type updated_time: str
         :param created_time: 自定义策略创建时间。
         :type created_time: str
-        :param references: 自定义策略的引用次数。
-        :type references: str
         """
         
         
@@ -95,7 +91,6 @@ class ServicePolicyRoleResult:
         self._name = None
         self._updated_time = None
         self._created_time = None
-        self._references = None
         self.discriminator = None
 
         self.catalog = catalog
@@ -113,8 +108,6 @@ class ServicePolicyRoleResult:
             self.updated_time = updated_time
         if created_time is not None:
             self.created_time = created_time
-        if references is not None:
-            self.references = references
 
     @property
     def catalog(self):
@@ -371,28 +364,6 @@ class ServicePolicyRoleResult:
         :type created_time: str
         """
         self._created_time = created_time
-
-    @property
-    def references(self):
-        """Gets the references of this ServicePolicyRoleResult.
-
-        自定义策略的引用次数。
-
-        :return: The references of this ServicePolicyRoleResult.
-        :rtype: str
-        """
-        return self._references
-
-    @references.setter
-    def references(self, references):
-        """Sets the references of this ServicePolicyRoleResult.
-
-        自定义策略的引用次数。
-
-        :param references: The references of this ServicePolicyRoleResult.
-        :type references: str
-        """
-        self._references = references
 
     def to_dict(self):
         """Returns the model properties as a dict"""

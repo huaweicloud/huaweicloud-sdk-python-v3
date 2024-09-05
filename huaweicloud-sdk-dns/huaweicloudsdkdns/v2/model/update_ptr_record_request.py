@@ -35,7 +35,7 @@ class UpdatePtrRecordRequest:
 
         :param region: 域名所属的区域。
         :type region: str
-        :param floatingip_id: 待修改弹性IP的PTR记录ID信息。
+        :param floatingip_id: 弹性公网IP（EIP）的ID。
         :type floatingip_id: str
         :param body: Body of the UpdatePtrRecordRequest
         :type body: :class:`huaweicloudsdkdns.v2.UpdatePtrReq`
@@ -79,7 +79,7 @@ class UpdatePtrRecordRequest:
     def floatingip_id(self):
         """Gets the floatingip_id of this UpdatePtrRecordRequest.
 
-        待修改弹性IP的PTR记录ID信息。
+        弹性公网IP（EIP）的ID。
 
         :return: The floatingip_id of this UpdatePtrRecordRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class UpdatePtrRecordRequest:
     def floatingip_id(self, floatingip_id):
         """Sets the floatingip_id of this UpdatePtrRecordRequest.
 
-        待修改弹性IP的PTR记录ID信息。
+        弹性公网IP（EIP）的ID。
 
         :param floatingip_id: The floatingip_id of this UpdatePtrRecordRequest.
         :type floatingip_id: str

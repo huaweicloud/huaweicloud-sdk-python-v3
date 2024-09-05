@@ -18,80 +18,51 @@ class ExecuteScriptResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'error_code': 'str',
-        'error_msg': 'str'
+        'data': 'str'
     }
 
     attribute_map = {
-        'error_code': 'error_code',
-        'error_msg': 'error_msg'
+        'data': 'data'
     }
 
-    def __init__(self, error_code=None, error_msg=None):
+    def __init__(self, data=None):
         """ExecuteScriptResponse
 
         The model defined in huaweicloud sdk
 
-        :param error_code: 错误码
-        :type error_code: str
-        :param error_msg: 错误描述
-        :type error_msg: str
+        :param data: execute_uuid
+        :type data: str
         """
         
         super(ExecuteScriptResponse, self).__init__()
 
-        self._error_code = None
-        self._error_msg = None
+        self._data = None
         self.discriminator = None
 
-        if error_code is not None:
-            self.error_code = error_code
-        if error_msg is not None:
-            self.error_msg = error_msg
+        if data is not None:
+            self.data = data
 
     @property
-    def error_code(self):
-        """Gets the error_code of this ExecuteScriptResponse.
+    def data(self):
+        """Gets the data of this ExecuteScriptResponse.
 
-        错误码
+        execute_uuid
 
-        :return: The error_code of this ExecuteScriptResponse.
+        :return: The data of this ExecuteScriptResponse.
         :rtype: str
         """
-        return self._error_code
+        return self._data
 
-    @error_code.setter
-    def error_code(self, error_code):
-        """Sets the error_code of this ExecuteScriptResponse.
+    @data.setter
+    def data(self, data):
+        """Sets the data of this ExecuteScriptResponse.
 
-        错误码
+        execute_uuid
 
-        :param error_code: The error_code of this ExecuteScriptResponse.
-        :type error_code: str
+        :param data: The data of this ExecuteScriptResponse.
+        :type data: str
         """
-        self._error_code = error_code
-
-    @property
-    def error_msg(self):
-        """Gets the error_msg of this ExecuteScriptResponse.
-
-        错误描述
-
-        :return: The error_msg of this ExecuteScriptResponse.
-        :rtype: str
-        """
-        return self._error_msg
-
-    @error_msg.setter
-    def error_msg(self, error_msg):
-        """Sets the error_msg of this ExecuteScriptResponse.
-
-        错误描述
-
-        :param error_msg: The error_msg of this ExecuteScriptResponse.
-        :type error_msg: str
-        """
-        self._error_msg = error_msg
+        self._data = data
 
     def to_dict(self):
         """Returns the model properties as a dict"""

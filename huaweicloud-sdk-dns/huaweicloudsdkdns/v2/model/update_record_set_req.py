@@ -58,10 +58,12 @@ class UpdateRecordSetReq:
         self._records = None
         self.discriminator = None
 
-        self.name = name
+        if name is not None:
+            self.name = name
         if description is not None:
             self.description = description
-        self.type = type
+        if type is not None:
+            self.type = type
         if ttl is not None:
             self.ttl = ttl
         if records is not None:

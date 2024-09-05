@@ -21,17 +21,21 @@ class ShowDomainHttpsCertResponse(SdkResponse):
         'certificate_format': 'str',
         'certificate': 'str',
         'certificate_key': 'str',
-        'force_redirect': 'bool'
+        'force_redirect': 'bool',
+        'gm_certificate': 'GmCertificateInfo',
+        'tls_certificate': 'TlsCertificateInfo'
     }
 
     attribute_map = {
         'certificate_format': 'certificate_format',
         'certificate': 'certificate',
         'certificate_key': 'certificate_key',
-        'force_redirect': 'force_redirect'
+        'force_redirect': 'force_redirect',
+        'gm_certificate': 'gm_certificate',
+        'tls_certificate': 'tls_certificate'
     }
 
-    def __init__(self, certificate_format=None, certificate=None, certificate_key=None, force_redirect=None):
+    def __init__(self, certificate_format=None, certificate=None, certificate_key=None, force_redirect=None, gm_certificate=None, tls_certificate=None):
         """ShowDomainHttpsCertResponse
 
         The model defined in huaweicloud sdk
@@ -44,6 +48,10 @@ class ShowDomainHttpsCertResponse(SdkResponse):
         :type certificate_key: str
         :param force_redirect: 是否开启重定向，默认false
         :type force_redirect: bool
+        :param gm_certificate: 
+        :type gm_certificate: :class:`huaweicloudsdklive.v1.GmCertificateInfo`
+        :param tls_certificate: 
+        :type tls_certificate: :class:`huaweicloudsdklive.v1.TlsCertificateInfo`
         """
         
         super(ShowDomainHttpsCertResponse, self).__init__()
@@ -52,6 +60,8 @@ class ShowDomainHttpsCertResponse(SdkResponse):
         self._certificate = None
         self._certificate_key = None
         self._force_redirect = None
+        self._gm_certificate = None
+        self._tls_certificate = None
         self.discriminator = None
 
         if certificate_format is not None:
@@ -62,6 +72,10 @@ class ShowDomainHttpsCertResponse(SdkResponse):
             self.certificate_key = certificate_key
         if force_redirect is not None:
             self.force_redirect = force_redirect
+        if gm_certificate is not None:
+            self.gm_certificate = gm_certificate
+        if tls_certificate is not None:
+            self.tls_certificate = tls_certificate
 
     @property
     def certificate_format(self):
@@ -150,6 +164,42 @@ class ShowDomainHttpsCertResponse(SdkResponse):
         :type force_redirect: bool
         """
         self._force_redirect = force_redirect
+
+    @property
+    def gm_certificate(self):
+        """Gets the gm_certificate of this ShowDomainHttpsCertResponse.
+
+        :return: The gm_certificate of this ShowDomainHttpsCertResponse.
+        :rtype: :class:`huaweicloudsdklive.v1.GmCertificateInfo`
+        """
+        return self._gm_certificate
+
+    @gm_certificate.setter
+    def gm_certificate(self, gm_certificate):
+        """Sets the gm_certificate of this ShowDomainHttpsCertResponse.
+
+        :param gm_certificate: The gm_certificate of this ShowDomainHttpsCertResponse.
+        :type gm_certificate: :class:`huaweicloudsdklive.v1.GmCertificateInfo`
+        """
+        self._gm_certificate = gm_certificate
+
+    @property
+    def tls_certificate(self):
+        """Gets the tls_certificate of this ShowDomainHttpsCertResponse.
+
+        :return: The tls_certificate of this ShowDomainHttpsCertResponse.
+        :rtype: :class:`huaweicloudsdklive.v1.TlsCertificateInfo`
+        """
+        return self._tls_certificate
+
+    @tls_certificate.setter
+    def tls_certificate(self, tls_certificate):
+        """Sets the tls_certificate of this ShowDomainHttpsCertResponse.
+
+        :param tls_certificate: The tls_certificate of this ShowDomainHttpsCertResponse.
+        :type tls_certificate: :class:`huaweicloudsdklive.v1.TlsCertificateInfo`
+        """
+        self._tls_certificate = tls_certificate
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -21,7 +21,8 @@ class NetworkAddresses:
         'version': 'int',
         'os_ext_ip_sport_id': 'str',
         'os_ext_ips_ma_cmac_addr': 'str',
-        'os_ext_ip_stype': 'str'
+        'os_ext_ip_stype': 'str',
+        'primary': 'bool'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class NetworkAddresses:
         'version': 'version',
         'os_ext_ip_sport_id': 'OS-EXT-IPS:port_id',
         'os_ext_ips_ma_cmac_addr': 'OS-EXT-IPS-MAC:mac_addr',
-        'os_ext_ip_stype': 'OS-EXT-IPS:type'
+        'os_ext_ip_stype': 'OS-EXT-IPS:type',
+        'primary': 'primary'
     }
 
-    def __init__(self, addr=None, version=None, os_ext_ip_sport_id=None, os_ext_ips_ma_cmac_addr=None, os_ext_ip_stype=None):
+    def __init__(self, addr=None, version=None, os_ext_ip_sport_id=None, os_ext_ips_ma_cmac_addr=None, os_ext_ip_stype=None, primary=None):
         """NetworkAddresses
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class NetworkAddresses:
         :type os_ext_ips_ma_cmac_addr: str
         :param os_ext_ip_stype: 扩展属性，分配IP地址方式。  fixed：代表私有IP地址。 floating：代表浮动IP地址。
         :type os_ext_ip_stype: str
+        :param primary: 是否是主网卡。  true：主网卡。 false：辅助网卡。
+        :type primary: bool
         """
         
         
@@ -56,6 +60,7 @@ class NetworkAddresses:
         self._os_ext_ip_sport_id = None
         self._os_ext_ips_ma_cmac_addr = None
         self._os_ext_ip_stype = None
+        self._primary = None
         self.discriminator = None
 
         self.addr = addr
@@ -63,6 +68,8 @@ class NetworkAddresses:
         self.os_ext_ip_sport_id = os_ext_ip_sport_id
         self.os_ext_ips_ma_cmac_addr = os_ext_ips_ma_cmac_addr
         self.os_ext_ip_stype = os_ext_ip_stype
+        if primary is not None:
+            self.primary = primary
 
     @property
     def addr(self):
@@ -173,6 +180,28 @@ class NetworkAddresses:
         :type os_ext_ip_stype: str
         """
         self._os_ext_ip_stype = os_ext_ip_stype
+
+    @property
+    def primary(self):
+        """Gets the primary of this NetworkAddresses.
+
+        是否是主网卡。  true：主网卡。 false：辅助网卡。
+
+        :return: The primary of this NetworkAddresses.
+        :rtype: bool
+        """
+        return self._primary
+
+    @primary.setter
+    def primary(self, primary):
+        """Sets the primary of this NetworkAddresses.
+
+        是否是主网卡。  true：主网卡。 false：辅助网卡。
+
+        :param primary: The primary of this NetworkAddresses.
+        :type primary: bool
+        """
+        self._primary = primary
 
     def to_dict(self):
         """Returns the model properties as a dict"""

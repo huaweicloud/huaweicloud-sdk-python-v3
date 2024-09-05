@@ -88,9 +88,9 @@ class UpdatePrivateZoneResponse(SdkResponse):
         :type updated_at: str
         :param links: 
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
-        :param masters: 主从模式中，从DNS服务器用以获取DNS信息。
+        :param masters: 主从模式中，从DNS服务器获取DNS信息。
         :type masters: list[str]
-        :param routers: 内网Zone关联的Router(VPC)信息
+        :param routers: 与该zone关联的Router(VPC)列表。
         :type routers: list[:class:`huaweicloudsdkdns.v2.RouterWithStatus`]
         """
         
@@ -455,7 +455,7 @@ class UpdatePrivateZoneResponse(SdkResponse):
     def masters(self):
         """Gets the masters of this UpdatePrivateZoneResponse.
 
-        主从模式中，从DNS服务器用以获取DNS信息。
+        主从模式中，从DNS服务器获取DNS信息。
 
         :return: The masters of this UpdatePrivateZoneResponse.
         :rtype: list[str]
@@ -466,7 +466,7 @@ class UpdatePrivateZoneResponse(SdkResponse):
     def masters(self, masters):
         """Sets the masters of this UpdatePrivateZoneResponse.
 
-        主从模式中，从DNS服务器用以获取DNS信息。
+        主从模式中，从DNS服务器获取DNS信息。
 
         :param masters: The masters of this UpdatePrivateZoneResponse.
         :type masters: list[str]
@@ -477,7 +477,7 @@ class UpdatePrivateZoneResponse(SdkResponse):
     def routers(self):
         """Gets the routers of this UpdatePrivateZoneResponse.
 
-        内网Zone关联的Router(VPC)信息
+        与该zone关联的Router(VPC)列表。
 
         :return: The routers of this UpdatePrivateZoneResponse.
         :rtype: list[:class:`huaweicloudsdkdns.v2.RouterWithStatus`]
@@ -488,7 +488,7 @@ class UpdatePrivateZoneResponse(SdkResponse):
     def routers(self, routers):
         """Sets the routers of this UpdatePrivateZoneResponse.
 
-        内网Zone关联的Router(VPC)信息
+        与该zone关联的Router(VPC)列表。
 
         :param routers: The routers of this UpdatePrivateZoneResponse.
         :type routers: list[:class:`huaweicloudsdkdns.v2.RouterWithStatus`]

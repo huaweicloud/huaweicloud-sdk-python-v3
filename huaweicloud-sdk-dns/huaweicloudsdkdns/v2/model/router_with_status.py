@@ -35,9 +35,9 @@ class RouterWithStatus:
 
         :param status: 资源状态。
         :type status: str
-        :param router_id: Router(VPC)所属VPC的ID。
+        :param router_id: 关联VPC的ID。
         :type router_id: str
-        :param router_region: Router(VPC)所在的region。
+        :param router_region: 关联VPC所在的region。
         :type router_region: str
         """
         
@@ -81,7 +81,7 @@ class RouterWithStatus:
     def router_id(self):
         """Gets the router_id of this RouterWithStatus.
 
-        Router(VPC)所属VPC的ID。
+        关联VPC的ID。
 
         :return: The router_id of this RouterWithStatus.
         :rtype: str
@@ -92,7 +92,7 @@ class RouterWithStatus:
     def router_id(self, router_id):
         """Sets the router_id of this RouterWithStatus.
 
-        Router(VPC)所属VPC的ID。
+        关联VPC的ID。
 
         :param router_id: The router_id of this RouterWithStatus.
         :type router_id: str
@@ -103,7 +103,7 @@ class RouterWithStatus:
     def router_region(self):
         """Gets the router_region of this RouterWithStatus.
 
-        Router(VPC)所在的region。
+        关联VPC所在的region。
 
         :return: The router_region of this RouterWithStatus.
         :rtype: str
@@ -114,7 +114,7 @@ class RouterWithStatus:
     def router_region(self, router_region):
         """Sets the router_region of this RouterWithStatus.
 
-        Router(VPC)所在的region。
+        关联VPC所在的region。
 
         :param router_region: The router_region of this RouterWithStatus.
         :type router_region: str

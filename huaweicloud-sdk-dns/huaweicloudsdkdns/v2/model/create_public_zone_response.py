@@ -90,7 +90,7 @@ class CreatePublicZoneResponse(SdkResponse):
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
         :param enterprise_project_id: 域名关联的企业项目ID，长度不超过36个字符。
         :type enterprise_project_id: str
-        :param masters: 主从模式中，从DNS服务器用以获取DNS信息。  目前暂未使用。
+        :param masters: 主从模式中，从DNS服务器获取DNS信息。  目前暂未使用。
         :type masters: list[str]
         """
         
@@ -477,7 +477,7 @@ class CreatePublicZoneResponse(SdkResponse):
     def masters(self):
         """Gets the masters of this CreatePublicZoneResponse.
 
-        主从模式中，从DNS服务器用以获取DNS信息。  目前暂未使用。
+        主从模式中，从DNS服务器获取DNS信息。  目前暂未使用。
 
         :return: The masters of this CreatePublicZoneResponse.
         :rtype: list[str]
@@ -488,7 +488,7 @@ class CreatePublicZoneResponse(SdkResponse):
     def masters(self, masters):
         """Sets the masters of this CreatePublicZoneResponse.
 
-        主从模式中，从DNS服务器用以获取DNS信息。  目前暂未使用。
+        主从模式中，从DNS服务器获取DNS信息。  目前暂未使用。
 
         :param masters: The masters of this CreatePublicZoneResponse.
         :type masters: list[str]

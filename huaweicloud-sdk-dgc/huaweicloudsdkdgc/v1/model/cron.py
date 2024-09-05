@@ -22,6 +22,7 @@ class Cron:
         'expression': 'str',
         'expression_time_zone': 'str',
         'depend_pre_period': 'bool',
+        'interval_type': 'str',
         'depend_jobs': 'DependJob'
     }
 
@@ -31,10 +32,11 @@ class Cron:
         'expression': 'expression',
         'expression_time_zone': 'expressionTimeZone',
         'depend_pre_period': 'dependPrePeriod',
+        'interval_type': 'intervalType',
         'depend_jobs': 'dependJobs'
     }
 
-    def __init__(self, start_time=None, end_time=None, expression=None, expression_time_zone=None, depend_pre_period=None, depend_jobs=None):
+    def __init__(self, start_time=None, end_time=None, expression=None, expression_time_zone=None, depend_pre_period=None, interval_type=None, depend_jobs=None):
         """Cron
 
         The model defined in huaweicloud sdk
@@ -49,6 +51,8 @@ class Cron:
         :type expression_time_zone: str
         :param depend_pre_period: 是否依赖本作业上一个运行周期任务的执行结果
         :type depend_pre_period: bool
+        :param interval_type: 调度间隔类型： - minutes：分钟 - hours：小时 - days：天 - weeks： 周 - months：月 - seasons： 季 - years：年
+        :type interval_type: str
         :param depend_jobs: 
         :type depend_jobs: :class:`huaweicloudsdkdgc.v1.DependJob`
         """
@@ -60,6 +64,7 @@ class Cron:
         self._expression = None
         self._expression_time_zone = None
         self._depend_pre_period = None
+        self._interval_type = None
         self._depend_jobs = None
         self.discriminator = None
 
@@ -71,6 +76,8 @@ class Cron:
             self.expression_time_zone = expression_time_zone
         if depend_pre_period is not None:
             self.depend_pre_period = depend_pre_period
+        if interval_type is not None:
+            self.interval_type = interval_type
         if depend_jobs is not None:
             self.depend_jobs = depend_jobs
 
@@ -183,6 +190,28 @@ class Cron:
         :type depend_pre_period: bool
         """
         self._depend_pre_period = depend_pre_period
+
+    @property
+    def interval_type(self):
+        """Gets the interval_type of this Cron.
+
+        调度间隔类型： - minutes：分钟 - hours：小时 - days：天 - weeks： 周 - months：月 - seasons： 季 - years：年
+
+        :return: The interval_type of this Cron.
+        :rtype: str
+        """
+        return self._interval_type
+
+    @interval_type.setter
+    def interval_type(self, interval_type):
+        """Sets the interval_type of this Cron.
+
+        调度间隔类型： - minutes：分钟 - hours：小时 - days：天 - weeks： 周 - months：月 - seasons： 季 - years：年
+
+        :param interval_type: The interval_type of this Cron.
+        :type interval_type: str
+        """
+        self._interval_type = interval_type
 
     @property
     def depend_jobs(self):

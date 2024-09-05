@@ -34,6 +34,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
         'detail': 'str',
         'user_conf': 'str',
         'result_path': 'str',
+        'execution_details_path': 'str',
         'result_format': 'str',
         'statement': 'str',
         'is_success': 'bool',
@@ -59,6 +60,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
         'detail': 'detail',
         'user_conf': 'user_conf',
         'result_path': 'result_path',
+        'execution_details_path': 'execution_details_path',
         'result_format': 'result_format',
         'statement': 'statement',
         'is_success': 'is_success',
@@ -67,7 +69,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
         'tags': 'tags'
     }
 
-    def __init__(self, job_id=None, job_type=None, queue_name=None, owner=None, start_time=None, duration=None, status=None, input_row_count=None, bad_row_count=None, input_size=None, result_count=None, database_name=None, table_name=None, detail=None, user_conf=None, result_path=None, result_format=None, statement=None, is_success=None, message=None, job_mode=None, tags=None):
+    def __init__(self, job_id=None, job_type=None, queue_name=None, owner=None, start_time=None, duration=None, status=None, input_row_count=None, bad_row_count=None, input_size=None, result_count=None, database_name=None, table_name=None, detail=None, user_conf=None, result_path=None, execution_details_path=None, result_format=None, statement=None, is_success=None, message=None, job_mode=None, tags=None):
         """ShowSqlJobStatusResponse
 
         The model defined in huaweicloud sdk
@@ -104,6 +106,8 @@ class ShowSqlJobStatusResponse(SdkResponse):
         :type user_conf: str
         :param result_path: 查询结果OBS路径
         :type result_path: str
+        :param execution_details_path: 查询作业执行计划OBS路径
+        :type execution_details_path: str
         :param result_format: 查询结果格式
         :type result_format: str
         :param statement: 作业执行的SQL语句。
@@ -136,6 +140,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
         self._detail = None
         self._user_conf = None
         self._result_path = None
+        self._execution_details_path = None
         self._result_format = None
         self._statement = None
         self._is_success = None
@@ -176,6 +181,8 @@ class ShowSqlJobStatusResponse(SdkResponse):
             self.user_conf = user_conf
         if result_path is not None:
             self.result_path = result_path
+        if execution_details_path is not None:
+            self.execution_details_path = execution_details_path
         if result_format is not None:
             self.result_format = result_format
         if statement is not None:
@@ -540,6 +547,28 @@ class ShowSqlJobStatusResponse(SdkResponse):
         :type result_path: str
         """
         self._result_path = result_path
+
+    @property
+    def execution_details_path(self):
+        """Gets the execution_details_path of this ShowSqlJobStatusResponse.
+
+        查询作业执行计划OBS路径
+
+        :return: The execution_details_path of this ShowSqlJobStatusResponse.
+        :rtype: str
+        """
+        return self._execution_details_path
+
+    @execution_details_path.setter
+    def execution_details_path(self, execution_details_path):
+        """Sets the execution_details_path of this ShowSqlJobStatusResponse.
+
+        查询作业执行计划OBS路径
+
+        :param execution_details_path: The execution_details_path of this ShowSqlJobStatusResponse.
+        :type execution_details_path: str
+        """
+        self._execution_details_path = execution_details_path
 
     @property
     def result_format(self):

@@ -19,16 +19,22 @@ class DependWorkSpaceJob:
     openapi_types = {
         'depend_on_last_period': 'bool',
         'job_name': 'str',
-        'work_space': 'str'
+        'work_space_id': 'str',
+        'work_space': 'str',
+        'depend_type': 'str',
+        'depend_on_last_n_period_value': 'int'
     }
 
     attribute_map = {
         'depend_on_last_period': 'dependOnLastPeriod',
         'job_name': 'jobName',
-        'work_space': 'workSpace'
+        'work_space_id': 'workSpaceId',
+        'work_space': 'workSpace',
+        'depend_type': 'dependType',
+        'depend_on_last_n_period_value': 'dependOnLastNPeriodValue'
     }
 
-    def __init__(self, depend_on_last_period=None, job_name=None, work_space=None):
+    def __init__(self, depend_on_last_period=None, job_name=None, work_space_id=None, work_space=None, depend_type=None, depend_on_last_n_period_value=None):
         """DependWorkSpaceJob
 
         The model defined in huaweicloud sdk
@@ -37,23 +43,38 @@ class DependWorkSpaceJob:
         :type depend_on_last_period: bool
         :param job_name: 作业名
         :type job_name: str
+        :param work_space_id: 工作空间名ID
+        :type work_space_id: str
         :param work_space: 工作空间名
         :type work_space: str
+        :param depend_type: 依赖的规则
+        :type depend_type: str
+        :param depend_on_last_n_period_value: 依赖上N个周期
+        :type depend_on_last_n_period_value: int
         """
         
         
 
         self._depend_on_last_period = None
         self._job_name = None
+        self._work_space_id = None
         self._work_space = None
+        self._depend_type = None
+        self._depend_on_last_n_period_value = None
         self.discriminator = None
 
         if depend_on_last_period is not None:
             self.depend_on_last_period = depend_on_last_period
         if job_name is not None:
             self.job_name = job_name
+        if work_space_id is not None:
+            self.work_space_id = work_space_id
         if work_space is not None:
             self.work_space = work_space
+        if depend_type is not None:
+            self.depend_type = depend_type
+        if depend_on_last_n_period_value is not None:
+            self.depend_on_last_n_period_value = depend_on_last_n_period_value
 
     @property
     def depend_on_last_period(self):
@@ -100,6 +121,28 @@ class DependWorkSpaceJob:
         self._job_name = job_name
 
     @property
+    def work_space_id(self):
+        """Gets the work_space_id of this DependWorkSpaceJob.
+
+        工作空间名ID
+
+        :return: The work_space_id of this DependWorkSpaceJob.
+        :rtype: str
+        """
+        return self._work_space_id
+
+    @work_space_id.setter
+    def work_space_id(self, work_space_id):
+        """Sets the work_space_id of this DependWorkSpaceJob.
+
+        工作空间名ID
+
+        :param work_space_id: The work_space_id of this DependWorkSpaceJob.
+        :type work_space_id: str
+        """
+        self._work_space_id = work_space_id
+
+    @property
     def work_space(self):
         """Gets the work_space of this DependWorkSpaceJob.
 
@@ -120,6 +163,50 @@ class DependWorkSpaceJob:
         :type work_space: str
         """
         self._work_space = work_space
+
+    @property
+    def depend_type(self):
+        """Gets the depend_type of this DependWorkSpaceJob.
+
+        依赖的规则
+
+        :return: The depend_type of this DependWorkSpaceJob.
+        :rtype: str
+        """
+        return self._depend_type
+
+    @depend_type.setter
+    def depend_type(self, depend_type):
+        """Sets the depend_type of this DependWorkSpaceJob.
+
+        依赖的规则
+
+        :param depend_type: The depend_type of this DependWorkSpaceJob.
+        :type depend_type: str
+        """
+        self._depend_type = depend_type
+
+    @property
+    def depend_on_last_n_period_value(self):
+        """Gets the depend_on_last_n_period_value of this DependWorkSpaceJob.
+
+        依赖上N个周期
+
+        :return: The depend_on_last_n_period_value of this DependWorkSpaceJob.
+        :rtype: int
+        """
+        return self._depend_on_last_n_period_value
+
+    @depend_on_last_n_period_value.setter
+    def depend_on_last_n_period_value(self, depend_on_last_n_period_value):
+        """Sets the depend_on_last_n_period_value of this DependWorkSpaceJob.
+
+        依赖上N个周期
+
+        :param depend_on_last_n_period_value: The depend_on_last_n_period_value of this DependWorkSpaceJob.
+        :type depend_on_last_n_period_value: int
+        """
+        self._depend_on_last_n_period_value = depend_on_last_n_period_value
 
     def to_dict(self):
         """Returns the model properties as a dict"""

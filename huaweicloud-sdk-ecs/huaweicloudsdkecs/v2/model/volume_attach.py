@@ -20,17 +20,19 @@ class VolumeAttach:
         'id': 'str',
         'delete_on_termination': 'bool',
         'device': 'str',
-        'boot_index': 'str'
+        'boot_index': 'str',
+        'size': 'int'
     }
 
     attribute_map = {
         'id': 'id',
         'delete_on_termination': 'delete_on_termination',
         'device': 'device',
-        'boot_index': 'bootIndex'
+        'boot_index': 'bootIndex',
+        'size': 'size'
     }
 
-    def __init__(self, id=None, delete_on_termination=None, device=None, boot_index=None):
+    def __init__(self, id=None, delete_on_termination=None, device=None, boot_index=None, size=None):
         """VolumeAttach
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class VolumeAttach:
         :type device: str
         :param boot_index: 盘在云服务器上的挂载顺序，0表示启动盘。
         :type boot_index: str
+        :param size: 云盘大小（单位：GB）。
+        :type size: int
         """
         
         
@@ -51,6 +55,7 @@ class VolumeAttach:
         self._delete_on_termination = None
         self._device = None
         self._boot_index = None
+        self._size = None
         self.discriminator = None
 
         self.id = id
@@ -60,6 +65,8 @@ class VolumeAttach:
             self.device = device
         if boot_index is not None:
             self.boot_index = boot_index
+        if size is not None:
+            self.size = size
 
     @property
     def id(self):
@@ -148,6 +155,28 @@ class VolumeAttach:
         :type boot_index: str
         """
         self._boot_index = boot_index
+
+    @property
+    def size(self):
+        """Gets the size of this VolumeAttach.
+
+        云盘大小（单位：GB）。
+
+        :return: The size of this VolumeAttach.
+        :rtype: int
+        """
+        return self._size
+
+    @size.setter
+    def size(self, size):
+        """Sets the size of this VolumeAttach.
+
+        云盘大小（单位：GB）。
+
+        :param size: The size of this VolumeAttach.
+        :type size: int
+        """
+        self._size = size
 
     def to_dict(self):
         """Returns the model properties as a dict"""

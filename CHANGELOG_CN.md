@@ -1,3 +1,312 @@
+# 3.1.113 2024-09-05
+
+### HuaweiCloud SDK BMS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ChangeBaremetalServerName**
+    - 响应参数变更
+      - `* server.hostId: uuid -> string`
+
+### HuaweiCloud SDK CCE
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`RevokeKubernetesClusterCert`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK Config
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowStoredQuery**
+    - 响应参数变更
+      - `+ type`
+  - **UpdateStoredQuery**
+    - 请求参数变更
+      - `+ type`
+    - 响应参数变更
+      - `+ type`
+  - **ShowPolicyAssignment**
+    - 响应参数变更
+      - `+ target_type`
+      - `+ target_id`
+  - **UpdatePolicyAssignment**
+    - 响应参数变更
+      - `+ target_type`
+      - `+ target_id`
+  - **CreateStoredQuery**
+    - 请求参数变更
+      - `+ type`
+    - 响应参数变更
+      - `+ type`
+  - **ListStoredQueries**
+    - 响应参数变更
+      - `+ type`
+      - `+ value.type`
+  - **ShowAggregatePolicyAssignmentDetail**
+    - 响应参数变更
+      - `+ target_type`
+      - `+ target_id`
+  - **ShowTrackerConfig**
+    - 响应参数变更
+      - `+ domain_id`
+      - `+ frozen_status`
+  - **CreateTrackerConfig**
+    - 请求参数变更
+      - `+ domain_id`
+      - `+ frozen_status`
+  - **CreatePolicyAssignments**
+    - 响应参数变更
+      - `+ target_type`
+      - `+ target_id`
+  - **ListPolicyAssignments**
+    - 响应参数变更
+      - `+ target_type`
+      - `+ target_id`
+      - `+ value.target_type`
+      - `+ value.target_id`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowSecurityDataClassificationRule**
+    - 响应参数变更
+      - `+ combine_expression`
+      - `+ method: enum value [COMBINE]`
+  - **UpdateSecurityDataClassificationRule**
+    - 响应参数变更
+      - `+ combine_expression`
+      - `+ method: enum value [COMBINE]`
+  - **CreateSecurityDataClassificationRule**
+    - 响应参数变更
+      - `+ combine_expression`
+      - `+ method: enum value [COMBINE]`
+  - **ListSecurityDataClassificationRules**
+    - 响应参数变更
+      - `+ combine_expression`
+      - `+ content.combine_expression`
+      - `+ content.method: enum value [COMBINE]`
+  - **ShowSecurityDataClassificationRuleGroup**
+    - 响应参数变更
+      - `+ combine_expression`
+      - `+ rules.combine_expression`
+      - `+ rules.method: enum value [COMBINE]`
+  - **ListSecurityDataClassificationRuleGroups**
+    - 响应参数变更
+      - `+ combine_expression`
+      - `+ rule_groups.rules.combine_expression`
+      - `+ rule_groups.rules.method: enum value [COMBINE]`
+
+### HuaweiCloud SDK DGC
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateJob**
+    - 请求参数变更
+      - `+ schedule.cron.intervalType`
+      - `+ nodes.type: enum value [Dummy]`
+      - `+ nodes.cronTrigger.dependJobs.sameWorkSpaceJobs.workSpaceId`
+      - `+ nodes.cronTrigger.dependJobs.sameWorkSpaceJobs.dependType`
+      - `+ nodes.cronTrigger.dependJobs.sameWorkSpaceJobs.dependOnLastNPeriodValue`
+  - **ShowJob**
+    - 请求参数变更
+      - `+ dependencies`
+    - 响应参数变更
+      - `+ schedule.cron.intervalType`
+      - `+ nodes.type: enum value [Dummy]`
+      - `+ nodes.cronTrigger.dependJobs.sameWorkSpaceJobs.workSpaceId`
+      - `+ nodes.cronTrigger.dependJobs.sameWorkSpaceJobs.dependType`
+      - `+ nodes.cronTrigger.dependJobs.sameWorkSpaceJobs.dependOnLastNPeriodValue`
+  - **UpdateJob**
+    - 请求参数变更
+      - `+ schedule.cron.intervalType`
+      - `+ nodes.type: enum value [Dummy]`
+      - `+ nodes.cronTrigger.dependJobs.sameWorkSpaceJobs.workSpaceId`
+      - `+ nodes.cronTrigger.dependJobs.sameWorkSpaceJobs.dependType`
+      - `+ nodes.cronTrigger.dependJobs.sameWorkSpaceJobs.dependOnLastNPeriodValue`
+  - **CreateSupplementdata**
+    - 请求参数变更
+      - `+ dependJobs.schedule.cron.intervalType`
+      - `+ dependJobs.nodes.type: enum value [Dummy]`
+      - `+ dependJobs.nodes.cronTrigger.dependJobs.sameWorkSpaceJobs.workSpaceId`
+      - `+ dependJobs.nodes.cronTrigger.dependJobs.sameWorkSpaceJobs.dependType`
+      - `+ dependJobs.nodes.cronTrigger.dependJobs.sameWorkSpaceJobs.dependOnLastNPeriodValue`
+
+### HuaweiCloud SDK DLI
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowSqlJobStatus**
+    - 响应参数变更
+      - `+ execution_details_path`
+
+### HuaweiCloud SDK DNS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowResourceTag**
+    - 响应参数变更
+      - `- enterpriseProjectOrDefault`
+
+### HuaweiCloud SDK ECS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListCloudServers**
+    - 请求参数变更
+      - `+ marker`
+    - 响应参数变更
+      - `- count`
+      - `+ servers.launched_at`
+      - `- servers.launched`
+      - `+ servers.security_groups.id`
+      - `+ servers.volumes_attached.size`
+      - `+ servers.flavor.gpus`
+      - `+ servers.flavor.asic_accelerators`
+      - `- servers.flavor.root_gb`
+      - `- servers.flavor.ephemeral_gb`
+      - `- servers.flavor.extra_specs`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **InvokeFunction**
+    - 请求参数变更
+      - `+ X-Cff-Instance-Memory`
+  - **AsyncInvokeFunction**
+    - 请求参数变更
+      - `+ X-Cff-Instance-Memory`
+
+### HuaweiCloud SDK IAM
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListAgencies**
+    - 请求参数变更
+      - `+ page`
+      - `+ per_page`
+  - **ShowDomainRoleAssignments**
+    - 请求参数变更
+      - `* page: string -> int32`
+      - `* per_page: string -> int32`
+  - **ListCustomPolicies**
+    - 响应参数变更
+      - `- roles.references`
+      - `* roles: list<PolicyRoleResult> -> list<ListPolicyRoleResult>`
+  - **CreateCloudServiceCustomPolicy**
+    - 响应参数变更
+      - `- role.references`
+  - **UpdateCloudServiceCustomPolicy**
+    - 响应参数变更
+      - `- role.references`
+  - **CreateAgencyCustomPolicy**
+    - 响应参数变更
+      - `- role.references`
+  - **UpdateAgencyCustomPolicy**
+    - 响应参数变更
+      - `- role.references`
+
+### HuaweiCloud SDK Live
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowDomainHttpsCert**
+    - 响应参数变更
+      - `+ tls_certificate`
+      - `+ gm_certificate`
+  - **UpdateDomainHttpsCert**
+    - 请求参数变更
+      - `+ tls_certificate`
+      - `+ gm_certificate`
+
+### HuaweiCloud SDK Meeting
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`CreateAuthRandom`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK VPC
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateSubNetworkInterface**
+    - 请求参数变更
+      - `- sub_network_interface.instance_id`
+      - `- sub_network_interface.instance_type`
+      - `- sub_network_interface.tags`
+  - **BatchCreateSubNetworkInterface**
+    - 请求参数变更
+      - `- sub_network_interface.instance_id`
+      - `- sub_network_interface.instance_type`
+      - `- sub_network_interface.tags`
+
 # 3.1.112 2024-08-29
 
 ### HuaweiCloud SDK BSS

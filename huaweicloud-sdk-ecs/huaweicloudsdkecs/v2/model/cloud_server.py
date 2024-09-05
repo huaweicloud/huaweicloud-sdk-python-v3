@@ -31,7 +31,7 @@ class CloudServer:
         'in_recycle_bin': 'bool',
         'spod_id': 'str',
         'updated': 'str',
-        'launched': 'str',
+        'launched_at': 'str',
         'description': 'str',
         'key_name': 'str',
         'locked': 'bool',
@@ -65,7 +65,7 @@ class CloudServer:
         'in_recycle_bin': 'in_recycle_bin',
         'spod_id': 'spod_id',
         'updated': 'updated',
-        'launched': 'launched',
+        'launched_at': 'launched_at',
         'description': 'description',
         'key_name': 'key_name',
         'locked': 'locked',
@@ -84,7 +84,7 @@ class CloudServer:
         'cpu_options': 'cpu_options'
     }
 
-    def __init__(self, id=None, name=None, status=None, tenant_id=None, user_id=None, market_info=None, availability_zone=None, vm_state=None, task_state=None, power_state=None, created=None, in_recycle_bin=None, spod_id=None, updated=None, launched=None, description=None, key_name=None, locked=None, root_device_name=None, tenancy=None, dedicated_host_id=None, enterprise_project_id=None, metadata=None, tags=None, addresses=None, security_groups=None, volumes_attached=None, image=None, flavor=None, fault=None, cpu_options=None):
+    def __init__(self, id=None, name=None, status=None, tenant_id=None, user_id=None, market_info=None, availability_zone=None, vm_state=None, task_state=None, power_state=None, created=None, in_recycle_bin=None, spod_id=None, updated=None, launched_at=None, description=None, key_name=None, locked=None, root_device_name=None, tenancy=None, dedicated_host_id=None, enterprise_project_id=None, metadata=None, tags=None, addresses=None, security_groups=None, volumes_attached=None, image=None, flavor=None, fault=None, cpu_options=None):
         """CloudServer
 
         The model defined in huaweicloud sdk
@@ -117,8 +117,8 @@ class CloudServer:
         :type spod_id: str
         :param updated: 云服务器上一次更新时间。时间格式例如：2020-05-22T07:48:53Z
         :type updated: str
-        :param launched: 云服务器启动时间。时间格式例如：2020-05-22T07:48:53Z。
-        :type launched: str
+        :param launched_at: 云服务器启动时间。时间格式例如：2020-05-22T07:48:53.000000。
+        :type launched_at: str
         :param description: 云服务器的描述信息。
         :type description: str
         :param key_name: 云服务器使用的密钥对名称。
@@ -169,7 +169,7 @@ class CloudServer:
         self._in_recycle_bin = None
         self._spod_id = None
         self._updated = None
-        self._launched = None
+        self._launched_at = None
         self._description = None
         self._key_name = None
         self._locked = None
@@ -204,8 +204,8 @@ class CloudServer:
         self.in_recycle_bin = in_recycle_bin
         self.spod_id = spod_id
         self.updated = updated
-        if launched is not None:
-            self.launched = launched
+        if launched_at is not None:
+            self.launched_at = launched_at
         if description is not None:
             self.description = description
         if key_name is not None:
@@ -542,26 +542,26 @@ class CloudServer:
         self._updated = updated
 
     @property
-    def launched(self):
-        """Gets the launched of this CloudServer.
+    def launched_at(self):
+        """Gets the launched_at of this CloudServer.
 
-        云服务器启动时间。时间格式例如：2020-05-22T07:48:53Z。
+        云服务器启动时间。时间格式例如：2020-05-22T07:48:53.000000。
 
-        :return: The launched of this CloudServer.
+        :return: The launched_at of this CloudServer.
         :rtype: str
         """
-        return self._launched
+        return self._launched_at
 
-    @launched.setter
-    def launched(self, launched):
-        """Sets the launched of this CloudServer.
+    @launched_at.setter
+    def launched_at(self, launched_at):
+        """Sets the launched_at of this CloudServer.
 
-        云服务器启动时间。时间格式例如：2020-05-22T07:48:53Z。
+        云服务器启动时间。时间格式例如：2020-05-22T07:48:53.000000。
 
-        :param launched: The launched of this CloudServer.
-        :type launched: str
+        :param launched_at: The launched_at of this CloudServer.
+        :type launched_at: str
         """
-        self._launched = launched
+        self._launched_at = launched_at
 
     @property
     def description(self):

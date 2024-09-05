@@ -33,7 +33,7 @@ class ShowPtrRecordSetRequest:
 
         :param region: 租户的区域信息。 
         :type region: str
-        :param floatingip_id: 弹性IP的ID。
+        :param floatingip_id: 弹性公网IP（EIP）的ID。
         :type floatingip_id: str
         """
         
@@ -72,7 +72,7 @@ class ShowPtrRecordSetRequest:
     def floatingip_id(self):
         """Gets the floatingip_id of this ShowPtrRecordSetRequest.
 
-        弹性IP的ID。
+        弹性公网IP（EIP）的ID。
 
         :return: The floatingip_id of this ShowPtrRecordSetRequest.
         :rtype: str
@@ -83,7 +83,7 @@ class ShowPtrRecordSetRequest:
     def floatingip_id(self, floatingip_id):
         """Sets the floatingip_id of this ShowPtrRecordSetRequest.
 
-        弹性IP的ID。
+        弹性公网IP（EIP）的ID。
 
         :param floatingip_id: The floatingip_id of this ShowPtrRecordSetRequest.
         :type floatingip_id: str

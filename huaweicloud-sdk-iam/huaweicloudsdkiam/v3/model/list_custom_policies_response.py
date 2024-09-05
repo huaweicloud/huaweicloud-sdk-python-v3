@@ -19,7 +19,7 @@ class ListCustomPoliciesResponse(SdkResponse):
 
     openapi_types = {
         'links': 'Links',
-        'roles': 'list[PolicyRoleResult]',
+        'roles': 'list[ListPolicyRoleResult]',
         'total_number': 'int'
     }
 
@@ -37,7 +37,7 @@ class ListCustomPoliciesResponse(SdkResponse):
         :param links: 
         :type links: :class:`huaweicloudsdkiam.v3.Links`
         :param roles: 自定义策略信息列表。
-        :type roles: list[:class:`huaweicloudsdkiam.v3.PolicyRoleResult`]
+        :type roles: list[:class:`huaweicloudsdkiam.v3.ListPolicyRoleResult`]
         :param total_number: 返回自定义策略的总条数
         :type total_number: int
         """
@@ -81,7 +81,7 @@ class ListCustomPoliciesResponse(SdkResponse):
         自定义策略信息列表。
 
         :return: The roles of this ListCustomPoliciesResponse.
-        :rtype: list[:class:`huaweicloudsdkiam.v3.PolicyRoleResult`]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.ListPolicyRoleResult`]
         """
         return self._roles
 
@@ -92,7 +92,7 @@ class ListCustomPoliciesResponse(SdkResponse):
         自定义策略信息列表。
 
         :param roles: The roles of this ListCustomPoliciesResponse.
-        :type roles: list[:class:`huaweicloudsdkiam.v3.PolicyRoleResult`]
+        :type roles: list[:class:`huaweicloudsdkiam.v3.ListPolicyRoleResult`]
         """
         self._roles = roles
 

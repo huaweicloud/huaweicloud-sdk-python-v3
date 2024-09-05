@@ -72,6 +72,8 @@ class FunctionGraphAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_cff_instance_memory' in local_var_params:
+            header_params['X-Cff-Instance-Memory'] = local_var_params['x_cff_instance_memory']
 
         form_params = {}
 
@@ -1947,6 +1949,8 @@ class FunctionGraphAsyncClient(Client):
             header_params['X-Cff-Log-Type'] = local_var_params['x_cff_log_type']
         if 'x_cff_request_version' in local_var_params:
             header_params['X-CFF-Request-Version'] = local_var_params['x_cff_request_version']
+        if 'x_cff_instance_memory' in local_var_params:
+            header_params['X-Cff-Instance-Memory'] = local_var_params['x_cff_instance_memory']
 
         form_params = {}
 

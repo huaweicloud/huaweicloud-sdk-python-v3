@@ -19,6 +19,7 @@ class StoredQuery:
     openapi_types = {
         'id': 'str',
         'name': 'str',
+        'type': 'str',
         'description': 'str',
         'expression': 'str',
         'created': 'str',
@@ -28,13 +29,14 @@ class StoredQuery:
     attribute_map = {
         'id': 'id',
         'name': 'name',
+        'type': 'type',
         'description': 'description',
         'expression': 'expression',
         'created': 'created',
         'updated': 'updated'
     }
 
-    def __init__(self, id=None, name=None, description=None, expression=None, created=None, updated=None):
+    def __init__(self, id=None, name=None, type=None, description=None, expression=None, created=None, updated=None):
         """StoredQuery
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class StoredQuery:
         :type id: str
         :param name: ResourceQL 名字
         :type name: str
+        :param type: 自定义查询类型，枚举值为“account”和“aggregator”。若取值为“account”，表示单帐号的自定义查询语句；若取值为“aggregator”，表示聚合器的自定义查询语句。默认值为“account”。
+        :type type: str
         :param description: ResourceQL 描述
         :type description: str
         :param expression: ResourceQL 表达式
@@ -57,6 +61,7 @@ class StoredQuery:
 
         self._id = None
         self._name = None
+        self._type = None
         self._description = None
         self._expression = None
         self._created = None
@@ -67,6 +72,8 @@ class StoredQuery:
             self.id = id
         if name is not None:
             self.name = name
+        if type is not None:
+            self.type = type
         if description is not None:
             self.description = description
         if expression is not None:
@@ -119,6 +126,28 @@ class StoredQuery:
         :type name: str
         """
         self._name = name
+
+    @property
+    def type(self):
+        """Gets the type of this StoredQuery.
+
+        自定义查询类型，枚举值为“account”和“aggregator”。若取值为“account”，表示单帐号的自定义查询语句；若取值为“aggregator”，表示聚合器的自定义查询语句。默认值为“account”。
+
+        :return: The type of this StoredQuery.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this StoredQuery.
+
+        自定义查询类型，枚举值为“account”和“aggregator”。若取值为“account”，表示单帐号的自定义查询语句；若取值为“aggregator”，表示聚合器的自定义查询语句。默认值为“account”。
+
+        :param type: The type of this StoredQuery.
+        :type type: str
+        """
+        self._type = type
 
     @property
     def description(self):

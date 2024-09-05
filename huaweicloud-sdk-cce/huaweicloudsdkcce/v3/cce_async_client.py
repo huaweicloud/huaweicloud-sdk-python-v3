@@ -3289,6 +3289,75 @@ class CceAsyncClient(Client):
 
         return http_info
 
+    def revoke_kubernetes_cluster_cert_async(self, request):
+        """吊销用户的集群证书
+
+        该API用于吊销指定集群的用户证书
+        
+        &gt; 吊销操作完成后，此证书申请人之前下载的证书和 kubectl 配置文件无法再用于连接集群。此证书申请人可以重新下载证书或 kubectl 配置文件，并使用新下载的文件连接集群
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RevokeKubernetesClusterCert
+        :type request: :class:`huaweicloudsdkcce.v3.RevokeKubernetesClusterCertRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.RevokeKubernetesClusterCertResponse`
+        """
+        http_info = self._revoke_kubernetes_cluster_cert_http_info(request)
+        return self._call_api(**http_info)
+
+    def revoke_kubernetes_cluster_cert_async_invoker(self, request):
+        http_info = self._revoke_kubernetes_cluster_cert_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _revoke_kubernetes_cluster_cert_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/clustercertrevoke",
+            "request_type": request.__class__.__name__,
+            "response_type": "RevokeKubernetesClusterCertResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def rollback_addon_instance_async(self, request):
         """回滚AddonInstance
 

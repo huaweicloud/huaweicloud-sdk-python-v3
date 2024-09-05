@@ -29,8 +29,8 @@ class ShowDomainRoleAssignmentsRequest:
         'scope_enterprise_projects_id': 'str',
         'is_inherited': 'bool',
         'include_group': 'bool',
-        'page': 'str',
-        'per_page': 'str'
+        'page': 'int',
+        'per_page': 'int'
     }
 
     attribute_map = {
@@ -80,9 +80,9 @@ class ShowDomainRoleAssignmentsRequest:
         :param include_group: 是否包含基于IAM用户所属用户组授权的记录，默认为true。当参数subject&#x3D;user或者subject.user_id存在时生效。true：查询基于IAM用户授权、IAM用户所属用户组授权的记录。 false：仅查询基于IAM用户授权的记录。
         :type include_group: bool
         :param page: 分页查询时数据的页数，查询值最小为1。需要与per_page同时存在。
-        :type page: str
+        :type page: int
         :param per_page: 分页查询时每页的数据个数，取值范围为[1,50]。需要与page同时存在。
-        :type per_page: str
+        :type per_page: int
         """
         
         
@@ -402,7 +402,7 @@ class ShowDomainRoleAssignmentsRequest:
         分页查询时数据的页数，查询值最小为1。需要与per_page同时存在。
 
         :return: The page of this ShowDomainRoleAssignmentsRequest.
-        :rtype: str
+        :rtype: int
         """
         return self._page
 
@@ -413,7 +413,7 @@ class ShowDomainRoleAssignmentsRequest:
         分页查询时数据的页数，查询值最小为1。需要与per_page同时存在。
 
         :param page: The page of this ShowDomainRoleAssignmentsRequest.
-        :type page: str
+        :type page: int
         """
         self._page = page
 
@@ -424,7 +424,7 @@ class ShowDomainRoleAssignmentsRequest:
         分页查询时每页的数据个数，取值范围为[1,50]。需要与page同时存在。
 
         :return: The per_page of this ShowDomainRoleAssignmentsRequest.
-        :rtype: str
+        :rtype: int
         """
         return self._per_page
 
@@ -435,7 +435,7 @@ class ShowDomainRoleAssignmentsRequest:
         分页查询时每页的数据个数，取值范围为[1,50]。需要与page同时存在。
 
         :param per_page: The per_page of this ShowDomainRoleAssignmentsRequest.
-        :type per_page: str
+        :type per_page: int
         """
         self._per_page = per_page
 

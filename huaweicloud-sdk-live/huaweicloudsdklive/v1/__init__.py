@@ -69,6 +69,7 @@ from huaweicloudsdklive.v1.model.endpoint_item import EndpointItem
 from huaweicloudsdklive.v1.model.flv_record_config import FLVRecordConfig
 from huaweicloudsdklive.v1.model.failover_conditions import FailoverConditions
 from huaweicloudsdklive.v1.model.geo_blocking_config_info import GeoBlockingConfigInfo
+from huaweicloudsdklive.v1.model.gm_certificate_info import GmCertificateInfo
 from huaweicloudsdklive.v1.model.hls_record_config import HLSRecordConfig
 from huaweicloudsdklive.v1.model.hls_package_item import HlsPackageItem
 from huaweicloudsdklive.v1.model.ip_auth_info import IPAuthInfo
@@ -174,6 +175,7 @@ from huaweicloudsdklive.v1.model.stream_forbidden_setting import StreamForbidden
 from huaweicloudsdklive.v1.model.stream_selection_item import StreamSelectionItem
 from huaweicloudsdklive.v1.model.stream_transcoding_template import StreamTranscodingTemplate
 from huaweicloudsdklive.v1.model.timeshift_request_args import TimeshiftRequestArgs
+from huaweicloudsdklive.v1.model.tls_certificate_info import TlsCertificateInfo
 from huaweicloudsdklive.v1.model.update_delay_config_request import UpdateDelayConfigRequest
 from huaweicloudsdklive.v1.model.update_delay_config_response import UpdateDelayConfigResponse
 from huaweicloudsdklive.v1.model.update_domain_https_cert_request import UpdateDomainHttpsCertRequest

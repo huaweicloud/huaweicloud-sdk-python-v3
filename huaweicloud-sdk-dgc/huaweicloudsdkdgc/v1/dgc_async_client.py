@@ -1978,6 +1978,8 @@ class DgcAsyncClient(Client):
         query_params = []
         if 'version' in local_var_params:
             query_params.append(('version', local_var_params['version']))
+        if 'dependencies' in local_var_params:
+            query_params.append(('dependencies', local_var_params['dependencies']))
 
         header_params = {}
         if 'workspace' in local_var_params:

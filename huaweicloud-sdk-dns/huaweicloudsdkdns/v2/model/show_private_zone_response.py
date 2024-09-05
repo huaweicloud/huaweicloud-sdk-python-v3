@@ -92,11 +92,11 @@ class ShowPrivateZoneResponse(SdkResponse):
         :type updated_at: str
         :param links: 
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
-        :param masters: 主从模式中，从DNS服务器用以获取DNS信息。
+        :param masters: 主从模式中，从DNS服务器获取DNS信息。
         :type masters: list[str]
         :param routers: 与该zone关联的Router(VPC)列表。
         :type routers: list[:class:`huaweicloudsdkdns.v2.Router`]
-        :param proxy_pattern: 内网Zone的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前Zone不进行递归解析 RECURSIVE：开启递归解析代理
+        :param proxy_pattern: 内网Zone的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前Zone未开启递归解析代理 RECURSIVE：当前Zone已开启递归解析代理
         :type proxy_pattern: str
         :param enterprise_project_id: 域名关联的企业项目ID，长度不超过36个字符。
         :type enterprise_project_id: str
@@ -469,7 +469,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     def masters(self):
         """Gets the masters of this ShowPrivateZoneResponse.
 
-        主从模式中，从DNS服务器用以获取DNS信息。
+        主从模式中，从DNS服务器获取DNS信息。
 
         :return: The masters of this ShowPrivateZoneResponse.
         :rtype: list[str]
@@ -480,7 +480,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     def masters(self, masters):
         """Sets the masters of this ShowPrivateZoneResponse.
 
-        主从模式中，从DNS服务器用以获取DNS信息。
+        主从模式中，从DNS服务器获取DNS信息。
 
         :param masters: The masters of this ShowPrivateZoneResponse.
         :type masters: list[str]
@@ -513,7 +513,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     def proxy_pattern(self):
         """Gets the proxy_pattern of this ShowPrivateZoneResponse.
 
-        内网Zone的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前Zone不进行递归解析 RECURSIVE：开启递归解析代理
+        内网Zone的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前Zone未开启递归解析代理 RECURSIVE：当前Zone已开启递归解析代理
 
         :return: The proxy_pattern of this ShowPrivateZoneResponse.
         :rtype: str
@@ -524,7 +524,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     def proxy_pattern(self, proxy_pattern):
         """Sets the proxy_pattern of this ShowPrivateZoneResponse.
 
-        内网Zone的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前Zone不进行递归解析 RECURSIVE：开启递归解析代理
+        内网Zone的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前Zone未开启递归解析代理 RECURSIVE：当前Zone已开启递归解析代理
 
         :param proxy_pattern: The proxy_pattern of this ShowPrivateZoneResponse.
         :type proxy_pattern: str

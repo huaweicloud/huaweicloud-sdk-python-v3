@@ -18,36 +18,29 @@ class ShowResourceTagResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'tags': 'list[Tag]',
-        'enterprise_project_or_default': 'str'
+        'tags': 'list[Tag]'
     }
 
     attribute_map = {
-        'tags': 'tags',
-        'enterprise_project_or_default': 'enterpriseProjectOrDefault'
+        'tags': 'tags'
     }
 
-    def __init__(self, tags=None, enterprise_project_or_default=None):
+    def __init__(self, tags=None):
         """ShowResourceTagResponse
 
         The model defined in huaweicloud sdk
 
         :param tags: 指定实例的标签列表。
         :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]
-        :param enterprise_project_or_default: 企业项目或默认项目
-        :type enterprise_project_or_default: str
         """
         
         super(ShowResourceTagResponse, self).__init__()
 
         self._tags = None
-        self._enterprise_project_or_default = None
         self.discriminator = None
 
         if tags is not None:
             self.tags = tags
-        if enterprise_project_or_default is not None:
-            self.enterprise_project_or_default = enterprise_project_or_default
 
     @property
     def tags(self):
@@ -70,28 +63,6 @@ class ShowResourceTagResponse(SdkResponse):
         :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]
         """
         self._tags = tags
-
-    @property
-    def enterprise_project_or_default(self):
-        """Gets the enterprise_project_or_default of this ShowResourceTagResponse.
-
-        企业项目或默认项目
-
-        :return: The enterprise_project_or_default of this ShowResourceTagResponse.
-        :rtype: str
-        """
-        return self._enterprise_project_or_default
-
-    @enterprise_project_or_default.setter
-    def enterprise_project_or_default(self, enterprise_project_or_default):
-        """Sets the enterprise_project_or_default of this ShowResourceTagResponse.
-
-        企业项目或默认项目
-
-        :param enterprise_project_or_default: The enterprise_project_or_default of this ShowResourceTagResponse.
-        :type enterprise_project_or_default: str
-        """
-        self._enterprise_project_or_default = enterprise_project_or_default
 
     def to_dict(self):
         """Returns the model properties as a dict"""

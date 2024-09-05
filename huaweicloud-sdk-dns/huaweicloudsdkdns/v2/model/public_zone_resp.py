@@ -91,7 +91,7 @@ class PublicZoneResp:
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
         :param tags: 资源标签。
         :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]
-        :param masters: 主从模式中，从DNS服务器用以获取DNS信息。
+        :param masters: 主从模式中，从DNS服务器获取DNS信息。
         :type masters: list[str]
         :param enterprise_project_id: 域名关联的企业项目ID，长度不超过36个字符。
         :type enterprise_project_id: str
@@ -483,7 +483,7 @@ class PublicZoneResp:
     def masters(self):
         """Gets the masters of this PublicZoneResp.
 
-        主从模式中，从DNS服务器用以获取DNS信息。
+        主从模式中，从DNS服务器获取DNS信息。
 
         :return: The masters of this PublicZoneResp.
         :rtype: list[str]
@@ -494,7 +494,7 @@ class PublicZoneResp:
     def masters(self, masters):
         """Sets the masters of this PublicZoneResp.
 
-        主从模式中，从DNS服务器用以获取DNS信息。
+        主从模式中，从DNS服务器获取DNS信息。
 
         :param masters: The masters of this PublicZoneResp.
         :type masters: list[str]
