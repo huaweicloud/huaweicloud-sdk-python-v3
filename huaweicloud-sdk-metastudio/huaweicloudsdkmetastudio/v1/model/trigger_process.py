@@ -45,23 +45,23 @@ class TriggerProcess:
 
         The model defined in huaweicloud sdk
 
-        :param time_window: 处理抑制时长。单位秒。 -1 表示整场直播 0 表示无抑制，每次都触发
+        :param time_window: **参数解释**： 处理抑制时长。单位秒。 - -1：表示整场直播仅触发一次。 - 0：表示无抑制，每次都触发。 - 其他值n：表示n秒内仅触发一次。  **约束限制**： 不涉及 **默认取值**： 不涉及
         :type time_window: int
-        :param reply_mode: 回复类型。 * SYSTEM_REPLY：系统自动回复设置的话术。 * CALLBACK：回调给其他服务，携带设置的话术。 * SHOW_LAYER: 显示叠加图层，不影响话术。 * INTELLIGENT_REPLY: 智能交互回复话术。
+        :param reply_mode: **参数解释**： 回复类型。 **约束限制**： 不涉及 **取值范围**： * SYSTEM_REPLY：系统自动回复预先设置的话术。 * CALLBACK：回调给其他服务，携带设置的话术。 * SHOW_LAYER：仅显示叠加图层，不影响话术。 * INTELLIGENT_REPLY：使用配置的大模型生成回复话术。  **默认取值**： 不涉及
         :type reply_mode: str
         :param layer_config: 
         :type layer_config: :class:`huaweicloudsdkmetastudio.v1.SmartLayerConfig`
         :param extra_layer_config: 
         :type extra_layer_config: :class:`huaweicloudsdkmetastudio.v1.SmartLayerConfig`
-        :param reply_texts: 回复话术集
+        :param reply_texts: **参数解释**： 回复话术集。 **约束限制**： 不涉及 **取值范围**： 最大支持5条预置话术。 单条话术字符长度0-1024位。 **默认取值**： 不涉及
         :type reply_texts: list[str]
-        :param reply_audios: 回复音频集。填写audio_url。
+        :param reply_audios: **参数解释**： 回复音频集。填写audio_url。 **约束限制**： 不涉及 **取值范围**： 最大支持5条预置音频。 **默认取值**： 不涉及
         :type reply_audios: list[:class:`huaweicloudsdkmetastudio.v1.ReplyAudioInfo`]
-        :param reply_order: 回复次序 - RANDOM：随机 - ORDER：顺序循环
+        :param reply_order: **参数解释**： 回复话术选择次序。 **约束限制**： 不涉及 **取值范围**： * RANDOM：随机 * ORDER：顺序循环  **默认取值**： 不涉及
         :type reply_order: str
-        :param reply_role: 回复角色。默认为主播 * STREAMER：主播 * CO_STREAMER：助播
+        :param reply_role: **参数解释**： 回复角色。 **约束限制**： 不涉及 **取值范围**： * STREAMER：主播 * CO_STREAMER：助播，仅声音。
         :type reply_role: str
-        :param robot_id: 机器人ID。
+        :param robot_id: **参数解释**： 机器人ID。 **约束限制**： reply_mode为INTELLIGENT_REPLY时必填，智能交互配置的大模型机器人ID。 获取方法请参考[创建应用](CreateRobot.xml)。 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及
         :type robot_id: str
         """
         
@@ -101,7 +101,7 @@ class TriggerProcess:
     def time_window(self):
         """Gets the time_window of this TriggerProcess.
 
-        处理抑制时长。单位秒。 -1 表示整场直播 0 表示无抑制，每次都触发
+        **参数解释**： 处理抑制时长。单位秒。 - -1：表示整场直播仅触发一次。 - 0：表示无抑制，每次都触发。 - 其他值n：表示n秒内仅触发一次。  **约束限制**： 不涉及 **默认取值**： 不涉及
 
         :return: The time_window of this TriggerProcess.
         :rtype: int
@@ -112,7 +112,7 @@ class TriggerProcess:
     def time_window(self, time_window):
         """Sets the time_window of this TriggerProcess.
 
-        处理抑制时长。单位秒。 -1 表示整场直播 0 表示无抑制，每次都触发
+        **参数解释**： 处理抑制时长。单位秒。 - -1：表示整场直播仅触发一次。 - 0：表示无抑制，每次都触发。 - 其他值n：表示n秒内仅触发一次。  **约束限制**： 不涉及 **默认取值**： 不涉及
 
         :param time_window: The time_window of this TriggerProcess.
         :type time_window: int
@@ -123,7 +123,7 @@ class TriggerProcess:
     def reply_mode(self):
         """Gets the reply_mode of this TriggerProcess.
 
-        回复类型。 * SYSTEM_REPLY：系统自动回复设置的话术。 * CALLBACK：回调给其他服务，携带设置的话术。 * SHOW_LAYER: 显示叠加图层，不影响话术。 * INTELLIGENT_REPLY: 智能交互回复话术。
+        **参数解释**： 回复类型。 **约束限制**： 不涉及 **取值范围**： * SYSTEM_REPLY：系统自动回复预先设置的话术。 * CALLBACK：回调给其他服务，携带设置的话术。 * SHOW_LAYER：仅显示叠加图层，不影响话术。 * INTELLIGENT_REPLY：使用配置的大模型生成回复话术。  **默认取值**： 不涉及
 
         :return: The reply_mode of this TriggerProcess.
         :rtype: str
@@ -134,7 +134,7 @@ class TriggerProcess:
     def reply_mode(self, reply_mode):
         """Sets the reply_mode of this TriggerProcess.
 
-        回复类型。 * SYSTEM_REPLY：系统自动回复设置的话术。 * CALLBACK：回调给其他服务，携带设置的话术。 * SHOW_LAYER: 显示叠加图层，不影响话术。 * INTELLIGENT_REPLY: 智能交互回复话术。
+        **参数解释**： 回复类型。 **约束限制**： 不涉及 **取值范围**： * SYSTEM_REPLY：系统自动回复预先设置的话术。 * CALLBACK：回调给其他服务，携带设置的话术。 * SHOW_LAYER：仅显示叠加图层，不影响话术。 * INTELLIGENT_REPLY：使用配置的大模型生成回复话术。  **默认取值**： 不涉及
 
         :param reply_mode: The reply_mode of this TriggerProcess.
         :type reply_mode: str
@@ -181,7 +181,7 @@ class TriggerProcess:
     def reply_texts(self):
         """Gets the reply_texts of this TriggerProcess.
 
-        回复话术集
+        **参数解释**： 回复话术集。 **约束限制**： 不涉及 **取值范围**： 最大支持5条预置话术。 单条话术字符长度0-1024位。 **默认取值**： 不涉及
 
         :return: The reply_texts of this TriggerProcess.
         :rtype: list[str]
@@ -192,7 +192,7 @@ class TriggerProcess:
     def reply_texts(self, reply_texts):
         """Sets the reply_texts of this TriggerProcess.
 
-        回复话术集
+        **参数解释**： 回复话术集。 **约束限制**： 不涉及 **取值范围**： 最大支持5条预置话术。 单条话术字符长度0-1024位。 **默认取值**： 不涉及
 
         :param reply_texts: The reply_texts of this TriggerProcess.
         :type reply_texts: list[str]
@@ -203,7 +203,7 @@ class TriggerProcess:
     def reply_audios(self):
         """Gets the reply_audios of this TriggerProcess.
 
-        回复音频集。填写audio_url。
+        **参数解释**： 回复音频集。填写audio_url。 **约束限制**： 不涉及 **取值范围**： 最大支持5条预置音频。 **默认取值**： 不涉及
 
         :return: The reply_audios of this TriggerProcess.
         :rtype: list[:class:`huaweicloudsdkmetastudio.v1.ReplyAudioInfo`]
@@ -214,7 +214,7 @@ class TriggerProcess:
     def reply_audios(self, reply_audios):
         """Sets the reply_audios of this TriggerProcess.
 
-        回复音频集。填写audio_url。
+        **参数解释**： 回复音频集。填写audio_url。 **约束限制**： 不涉及 **取值范围**： 最大支持5条预置音频。 **默认取值**： 不涉及
 
         :param reply_audios: The reply_audios of this TriggerProcess.
         :type reply_audios: list[:class:`huaweicloudsdkmetastudio.v1.ReplyAudioInfo`]
@@ -225,7 +225,7 @@ class TriggerProcess:
     def reply_order(self):
         """Gets the reply_order of this TriggerProcess.
 
-        回复次序 - RANDOM：随机 - ORDER：顺序循环
+        **参数解释**： 回复话术选择次序。 **约束限制**： 不涉及 **取值范围**： * RANDOM：随机 * ORDER：顺序循环  **默认取值**： 不涉及
 
         :return: The reply_order of this TriggerProcess.
         :rtype: str
@@ -236,7 +236,7 @@ class TriggerProcess:
     def reply_order(self, reply_order):
         """Sets the reply_order of this TriggerProcess.
 
-        回复次序 - RANDOM：随机 - ORDER：顺序循环
+        **参数解释**： 回复话术选择次序。 **约束限制**： 不涉及 **取值范围**： * RANDOM：随机 * ORDER：顺序循环  **默认取值**： 不涉及
 
         :param reply_order: The reply_order of this TriggerProcess.
         :type reply_order: str
@@ -247,7 +247,7 @@ class TriggerProcess:
     def reply_role(self):
         """Gets the reply_role of this TriggerProcess.
 
-        回复角色。默认为主播 * STREAMER：主播 * CO_STREAMER：助播
+        **参数解释**： 回复角色。 **约束限制**： 不涉及 **取值范围**： * STREAMER：主播 * CO_STREAMER：助播，仅声音。
 
         :return: The reply_role of this TriggerProcess.
         :rtype: str
@@ -258,7 +258,7 @@ class TriggerProcess:
     def reply_role(self, reply_role):
         """Sets the reply_role of this TriggerProcess.
 
-        回复角色。默认为主播 * STREAMER：主播 * CO_STREAMER：助播
+        **参数解释**： 回复角色。 **约束限制**： 不涉及 **取值范围**： * STREAMER：主播 * CO_STREAMER：助播，仅声音。
 
         :param reply_role: The reply_role of this TriggerProcess.
         :type reply_role: str
@@ -269,7 +269,7 @@ class TriggerProcess:
     def robot_id(self):
         """Gets the robot_id of this TriggerProcess.
 
-        机器人ID。
+        **参数解释**： 机器人ID。 **约束限制**： reply_mode为INTELLIGENT_REPLY时必填，智能交互配置的大模型机器人ID。 获取方法请参考[创建应用](CreateRobot.xml)。 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及
 
         :return: The robot_id of this TriggerProcess.
         :rtype: str
@@ -280,7 +280,7 @@ class TriggerProcess:
     def robot_id(self, robot_id):
         """Sets the robot_id of this TriggerProcess.
 
-        机器人ID。
+        **参数解释**： 机器人ID。 **约束限制**： reply_mode为INTELLIGENT_REPLY时必填，智能交互配置的大模型机器人ID。 获取方法请参考[创建应用](CreateRobot.xml)。 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及
 
         :param robot_id: The robot_id of this TriggerProcess.
         :type robot_id: str

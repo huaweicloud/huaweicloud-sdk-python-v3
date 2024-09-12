@@ -30,6 +30,7 @@ class ServiceList:
         'project_id': 'str',
         'domain_id': 'str',
         'ports': 'list[PortList]',
+        'ip': 'str',
         'tags': 'list[TagList]',
         'connection_count': 'int',
         'tcp_proxy': 'str',
@@ -53,6 +54,7 @@ class ServiceList:
         'project_id': 'project_id',
         'domain_id': 'domain_id',
         'ports': 'ports',
+        'ip': 'ip',
         'tags': 'tags',
         'connection_count': 'connection_count',
         'tcp_proxy': 'tcp_proxy',
@@ -62,7 +64,7 @@ class ServiceList:
         'enable_policy': 'enable_policy'
     }
 
-    def __init__(self, id=None, port_id=None, service_name=None, server_type=None, vpc_id=None, approval_enabled=None, status=None, service_type=None, created_at=None, updated_at=None, project_id=None, domain_id=None, ports=None, tags=None, connection_count=None, tcp_proxy=None, error=None, description=None, public_border_group=None, enable_policy=None):
+    def __init__(self, id=None, port_id=None, service_name=None, server_type=None, vpc_id=None, approval_enabled=None, status=None, service_type=None, created_at=None, updated_at=None, project_id=None, domain_id=None, ports=None, ip=None, tags=None, connection_count=None, tcp_proxy=None, error=None, description=None, public_border_group=None, enable_policy=None):
         """ServiceList
 
         The model defined in huaweicloud sdk
@@ -93,6 +95,8 @@ class ServiceList:
         :type domain_id: str
         :param ports: 服务开放的端口映射列表 同一个终端节点服务下，不允许重复的端口映射。 若多个终端节点服务共用一个port_id， 则终端节点服务之间的所有端口映射的server_port和protocol的组合不能重复。
         :type ports: list[:class:`huaweicloudsdkvpcep.v1.PortList`]
+        :param ip: 接口型VLAN场景服务端IPv4地址或域名
+        :type ip: str
         :param tags: 资源标签列表
         :type tags: list[:class:`huaweicloudsdkvpcep.v1.TagList`]
         :param connection_count: 终端节点服务下连接的状态为“创建中”或“已接受”的终端节点的个数。
@@ -124,6 +128,7 @@ class ServiceList:
         self._project_id = None
         self._domain_id = None
         self._ports = None
+        self._ip = None
         self._tags = None
         self._connection_count = None
         self._tcp_proxy = None
@@ -159,6 +164,8 @@ class ServiceList:
             self.domain_id = domain_id
         if ports is not None:
             self.ports = ports
+        if ip is not None:
+            self.ip = ip
         if tags is not None:
             self.tags = tags
         if connection_count is not None:
@@ -459,6 +466,28 @@ class ServiceList:
         :type ports: list[:class:`huaweicloudsdkvpcep.v1.PortList`]
         """
         self._ports = ports
+
+    @property
+    def ip(self):
+        """Gets the ip of this ServiceList.
+
+        接口型VLAN场景服务端IPv4地址或域名
+
+        :return: The ip of this ServiceList.
+        :rtype: str
+        """
+        return self._ip
+
+    @ip.setter
+    def ip(self, ip):
+        """Sets the ip of this ServiceList.
+
+        接口型VLAN场景服务端IPv4地址或域名
+
+        :param ip: The ip of this ServiceList.
+        :type ip: str
+        """
+        self._ip = ip
 
     @property
     def tags(self):

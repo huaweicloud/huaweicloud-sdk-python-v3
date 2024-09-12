@@ -45,15 +45,15 @@ class LiveVideoScriptInfo:
 
         The model defined in huaweicloud sdk
 
-        :param script_id: 剧本ID。
+        :param script_id: **参数解释**： 剧本ID。 **约束限制**： 该字段无需填写。 **取值范围**： 字符长度1-64位。 **默认取值**： 不涉及。
         :type script_id: str
-        :param script_name: 剧本名称
+        :param script_name: **参数解释**： 剧本名称。 **约束限制**： 该字段必须填写。 **取值范围**： 字符长度1-256位。 **默认取值**： 不涉及。
         :type script_name: str
-        :param script_description: 剧本描述。
+        :param script_description: **参数解释**： 剧本描述。 **约束限制**： 该字段无需填写。 **取值范围**： 字符长度0-1024位。 **默认取值**： 不涉及。
         :type script_description: str
-        :param dh_id: 数字人ID。对应形象和音色组合。
+        :param dh_id: **参数解释**： 数字人ID。对应形象和音色组合。 **约束限制**： 该字段暂未启用，无需填写。 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及。
         :type dh_id: str
-        :param model_asset_id: 数字人模型资产ID，可以从资产库中查询。
+        :param model_asset_id: **参数解释**： 数字人模型资产ID，可以从资产库中查询。 **约束限制**： 不涉及 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及
         :type model_asset_id: str
         :param voice_config: 
         :type voice_config: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
@@ -99,7 +99,7 @@ class LiveVideoScriptInfo:
     def script_id(self):
         """Gets the script_id of this LiveVideoScriptInfo.
 
-        剧本ID。
+        **参数解释**： 剧本ID。 **约束限制**： 该字段无需填写。 **取值范围**： 字符长度1-64位。 **默认取值**： 不涉及。
 
         :return: The script_id of this LiveVideoScriptInfo.
         :rtype: str
@@ -110,7 +110,7 @@ class LiveVideoScriptInfo:
     def script_id(self, script_id):
         """Sets the script_id of this LiveVideoScriptInfo.
 
-        剧本ID。
+        **参数解释**： 剧本ID。 **约束限制**： 该字段无需填写。 **取值范围**： 字符长度1-64位。 **默认取值**： 不涉及。
 
         :param script_id: The script_id of this LiveVideoScriptInfo.
         :type script_id: str
@@ -121,7 +121,7 @@ class LiveVideoScriptInfo:
     def script_name(self):
         """Gets the script_name of this LiveVideoScriptInfo.
 
-        剧本名称
+        **参数解释**： 剧本名称。 **约束限制**： 该字段必须填写。 **取值范围**： 字符长度1-256位。 **默认取值**： 不涉及。
 
         :return: The script_name of this LiveVideoScriptInfo.
         :rtype: str
@@ -132,7 +132,7 @@ class LiveVideoScriptInfo:
     def script_name(self, script_name):
         """Sets the script_name of this LiveVideoScriptInfo.
 
-        剧本名称
+        **参数解释**： 剧本名称。 **约束限制**： 该字段必须填写。 **取值范围**： 字符长度1-256位。 **默认取值**： 不涉及。
 
         :param script_name: The script_name of this LiveVideoScriptInfo.
         :type script_name: str
@@ -143,7 +143,7 @@ class LiveVideoScriptInfo:
     def script_description(self):
         """Gets the script_description of this LiveVideoScriptInfo.
 
-        剧本描述。
+        **参数解释**： 剧本描述。 **约束限制**： 该字段无需填写。 **取值范围**： 字符长度0-1024位。 **默认取值**： 不涉及。
 
         :return: The script_description of this LiveVideoScriptInfo.
         :rtype: str
@@ -154,7 +154,7 @@ class LiveVideoScriptInfo:
     def script_description(self, script_description):
         """Sets the script_description of this LiveVideoScriptInfo.
 
-        剧本描述。
+        **参数解释**： 剧本描述。 **约束限制**： 该字段无需填写。 **取值范围**： 字符长度0-1024位。 **默认取值**： 不涉及。
 
         :param script_description: The script_description of this LiveVideoScriptInfo.
         :type script_description: str
@@ -165,7 +165,7 @@ class LiveVideoScriptInfo:
     def dh_id(self):
         """Gets the dh_id of this LiveVideoScriptInfo.
 
-        数字人ID。对应形象和音色组合。
+        **参数解释**： 数字人ID。对应形象和音色组合。 **约束限制**： 该字段暂未启用，无需填写。 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及。
 
         :return: The dh_id of this LiveVideoScriptInfo.
         :rtype: str
@@ -176,7 +176,7 @@ class LiveVideoScriptInfo:
     def dh_id(self, dh_id):
         """Sets the dh_id of this LiveVideoScriptInfo.
 
-        数字人ID。对应形象和音色组合。
+        **参数解释**： 数字人ID。对应形象和音色组合。 **约束限制**： 该字段暂未启用，无需填写。 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及。
 
         :param dh_id: The dh_id of this LiveVideoScriptInfo.
         :type dh_id: str
@@ -187,7 +187,7 @@ class LiveVideoScriptInfo:
     def model_asset_id(self):
         """Gets the model_asset_id of this LiveVideoScriptInfo.
 
-        数字人模型资产ID，可以从资产库中查询。
+        **参数解释**： 数字人模型资产ID，可以从资产库中查询。 **约束限制**： 不涉及 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及
 
         :return: The model_asset_id of this LiveVideoScriptInfo.
         :rtype: str
@@ -198,7 +198,7 @@ class LiveVideoScriptInfo:
     def model_asset_id(self, model_asset_id):
         """Sets the model_asset_id of this LiveVideoScriptInfo.
 
-        数字人模型资产ID，可以从资产库中查询。
+        **参数解释**： 数字人模型资产ID，可以从资产库中查询。 **约束限制**： 不涉及 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及
 
         :param model_asset_id: The model_asset_id of this LiveVideoScriptInfo.
         :type model_asset_id: str

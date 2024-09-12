@@ -21,10 +21,15 @@ class Create2dModelTrainingJobReq:
         'contact': 'str',
         'command_message': 'str',
         'video_multipart_count': 'int',
+        'action_video_multipart_count': 'int',
         'is_background_replacement': 'bool',
         'batch_name': 'str',
         'tags': 'list[str]',
-        'model_version': 'str'
+        'model_version': 'str',
+        'is_flexus': 'bool',
+        'audio_source_type': 'str',
+        'voice_properties': 'VoiceProperties',
+        'supported_service': 'list[SupportedServiceEnum]'
     }
 
     attribute_map = {
@@ -32,13 +37,18 @@ class Create2dModelTrainingJobReq:
         'contact': 'contact',
         'command_message': 'command_message',
         'video_multipart_count': 'video_multipart_count',
+        'action_video_multipart_count': 'action_video_multipart_count',
         'is_background_replacement': 'is_background_replacement',
         'batch_name': 'batch_name',
         'tags': 'tags',
-        'model_version': 'model_version'
+        'model_version': 'model_version',
+        'is_flexus': 'is_flexus',
+        'audio_source_type': 'audio_source_type',
+        'voice_properties': 'voice_properties',
+        'supported_service': 'supported_service'
     }
 
-    def __init__(self, name=None, contact=None, command_message=None, video_multipart_count=None, is_background_replacement=None, batch_name=None, tags=None, model_version=None):
+    def __init__(self, name=None, contact=None, command_message=None, video_multipart_count=None, action_video_multipart_count=None, is_background_replacement=None, batch_name=None, tags=None, model_version=None, is_flexus=None, audio_source_type=None, voice_properties=None, supported_service=None):
         """Create2dModelTrainingJobReq
 
         The model defined in huaweicloud sdk
@@ -47,10 +57,12 @@ class Create2dModelTrainingJobReq:
         :type name: str
         :param contact: 分身数字人训练任务创建者联系方式，如手机或邮箱等。
         :type contact: str
-        :param command_message: 命令类型： * UPDATE_VIDEO: 更新视频 * UPLOAD_VIDEO：上传视频
+        :param command_message: 命令类型： * UPDATE_VIDEO: 更新视频 * UPLOAD_VIDEO：上传视频 * CONFIRM_ACTION_VIDEO: 确认动作编排视频 * GET_ACTION_VIDEO_MULTIPART: 获取动作编排视频分片
         :type command_message: str
-        :param video_multipart_count: 训练视频上传分片数。
+        :param video_multipart_count: 训练视频上传分片数（上传时对唯一训练视频文件的数据分片，用于对该文件的并发上传，不是分多个视频文件上传）。
         :type video_multipart_count: int
+        :param action_video_multipart_count: 动作视频上传分片数。
+        :type action_video_multipart_count: int
         :param is_background_replacement: 分身数字人是否需要背景替换。需要背景替换的分身数字人训练视频需要绿幕拍摄。
         :type is_background_replacement: bool
         :param batch_name: 分身数字人训练任务的批次名称。
@@ -59,6 +71,14 @@ class Create2dModelTrainingJobReq:
         :type tags: list[str]
         :param model_version: 分身数字人模型版本。默认是V3版本模型。 * V2: V2版本模型 * V3：V3版本模型 * V3.2：V3.2版本模型 &gt; * V2版本已废弃不用
         :type model_version: str
+        :param is_flexus: 是否是基础版的形象训练
+        :type is_flexus: bool
+        :param audio_source_type: 声音来源类型 * VIDEO：视频中抽取音频 * AUDIO：单独上传的音频
+        :type audio_source_type: str
+        :param voice_properties: 
+        :type voice_properties: :class:`huaweicloudsdkmetastudio.v1.VoiceProperties`
+        :param supported_service: 该任务所生成的模型支持的业务类型，可多选
+        :type supported_service: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
         """
         
         
@@ -67,10 +87,15 @@ class Create2dModelTrainingJobReq:
         self._contact = None
         self._command_message = None
         self._video_multipart_count = None
+        self._action_video_multipart_count = None
         self._is_background_replacement = None
         self._batch_name = None
         self._tags = None
         self._model_version = None
+        self._is_flexus = None
+        self._audio_source_type = None
+        self._voice_properties = None
+        self._supported_service = None
         self.discriminator = None
 
         self.name = name
@@ -80,6 +105,8 @@ class Create2dModelTrainingJobReq:
             self.command_message = command_message
         if video_multipart_count is not None:
             self.video_multipart_count = video_multipart_count
+        if action_video_multipart_count is not None:
+            self.action_video_multipart_count = action_video_multipart_count
         if is_background_replacement is not None:
             self.is_background_replacement = is_background_replacement
         if batch_name is not None:
@@ -88,6 +115,14 @@ class Create2dModelTrainingJobReq:
             self.tags = tags
         if model_version is not None:
             self.model_version = model_version
+        if is_flexus is not None:
+            self.is_flexus = is_flexus
+        if audio_source_type is not None:
+            self.audio_source_type = audio_source_type
+        if voice_properties is not None:
+            self.voice_properties = voice_properties
+        if supported_service is not None:
+            self.supported_service = supported_service
 
     @property
     def name(self):
@@ -137,7 +172,7 @@ class Create2dModelTrainingJobReq:
     def command_message(self):
         """Gets the command_message of this Create2dModelTrainingJobReq.
 
-        命令类型： * UPDATE_VIDEO: 更新视频 * UPLOAD_VIDEO：上传视频
+        命令类型： * UPDATE_VIDEO: 更新视频 * UPLOAD_VIDEO：上传视频 * CONFIRM_ACTION_VIDEO: 确认动作编排视频 * GET_ACTION_VIDEO_MULTIPART: 获取动作编排视频分片
 
         :return: The command_message of this Create2dModelTrainingJobReq.
         :rtype: str
@@ -148,7 +183,7 @@ class Create2dModelTrainingJobReq:
     def command_message(self, command_message):
         """Sets the command_message of this Create2dModelTrainingJobReq.
 
-        命令类型： * UPDATE_VIDEO: 更新视频 * UPLOAD_VIDEO：上传视频
+        命令类型： * UPDATE_VIDEO: 更新视频 * UPLOAD_VIDEO：上传视频 * CONFIRM_ACTION_VIDEO: 确认动作编排视频 * GET_ACTION_VIDEO_MULTIPART: 获取动作编排视频分片
 
         :param command_message: The command_message of this Create2dModelTrainingJobReq.
         :type command_message: str
@@ -159,7 +194,7 @@ class Create2dModelTrainingJobReq:
     def video_multipart_count(self):
         """Gets the video_multipart_count of this Create2dModelTrainingJobReq.
 
-        训练视频上传分片数。
+        训练视频上传分片数（上传时对唯一训练视频文件的数据分片，用于对该文件的并发上传，不是分多个视频文件上传）。
 
         :return: The video_multipart_count of this Create2dModelTrainingJobReq.
         :rtype: int
@@ -170,12 +205,34 @@ class Create2dModelTrainingJobReq:
     def video_multipart_count(self, video_multipart_count):
         """Sets the video_multipart_count of this Create2dModelTrainingJobReq.
 
-        训练视频上传分片数。
+        训练视频上传分片数（上传时对唯一训练视频文件的数据分片，用于对该文件的并发上传，不是分多个视频文件上传）。
 
         :param video_multipart_count: The video_multipart_count of this Create2dModelTrainingJobReq.
         :type video_multipart_count: int
         """
         self._video_multipart_count = video_multipart_count
+
+    @property
+    def action_video_multipart_count(self):
+        """Gets the action_video_multipart_count of this Create2dModelTrainingJobReq.
+
+        动作视频上传分片数。
+
+        :return: The action_video_multipart_count of this Create2dModelTrainingJobReq.
+        :rtype: int
+        """
+        return self._action_video_multipart_count
+
+    @action_video_multipart_count.setter
+    def action_video_multipart_count(self, action_video_multipart_count):
+        """Sets the action_video_multipart_count of this Create2dModelTrainingJobReq.
+
+        动作视频上传分片数。
+
+        :param action_video_multipart_count: The action_video_multipart_count of this Create2dModelTrainingJobReq.
+        :type action_video_multipart_count: int
+        """
+        self._action_video_multipart_count = action_video_multipart_count
 
     @property
     def is_background_replacement(self):
@@ -264,6 +321,90 @@ class Create2dModelTrainingJobReq:
         :type model_version: str
         """
         self._model_version = model_version
+
+    @property
+    def is_flexus(self):
+        """Gets the is_flexus of this Create2dModelTrainingJobReq.
+
+        是否是基础版的形象训练
+
+        :return: The is_flexus of this Create2dModelTrainingJobReq.
+        :rtype: bool
+        """
+        return self._is_flexus
+
+    @is_flexus.setter
+    def is_flexus(self, is_flexus):
+        """Sets the is_flexus of this Create2dModelTrainingJobReq.
+
+        是否是基础版的形象训练
+
+        :param is_flexus: The is_flexus of this Create2dModelTrainingJobReq.
+        :type is_flexus: bool
+        """
+        self._is_flexus = is_flexus
+
+    @property
+    def audio_source_type(self):
+        """Gets the audio_source_type of this Create2dModelTrainingJobReq.
+
+        声音来源类型 * VIDEO：视频中抽取音频 * AUDIO：单独上传的音频
+
+        :return: The audio_source_type of this Create2dModelTrainingJobReq.
+        :rtype: str
+        """
+        return self._audio_source_type
+
+    @audio_source_type.setter
+    def audio_source_type(self, audio_source_type):
+        """Sets the audio_source_type of this Create2dModelTrainingJobReq.
+
+        声音来源类型 * VIDEO：视频中抽取音频 * AUDIO：单独上传的音频
+
+        :param audio_source_type: The audio_source_type of this Create2dModelTrainingJobReq.
+        :type audio_source_type: str
+        """
+        self._audio_source_type = audio_source_type
+
+    @property
+    def voice_properties(self):
+        """Gets the voice_properties of this Create2dModelTrainingJobReq.
+
+        :return: The voice_properties of this Create2dModelTrainingJobReq.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.VoiceProperties`
+        """
+        return self._voice_properties
+
+    @voice_properties.setter
+    def voice_properties(self, voice_properties):
+        """Sets the voice_properties of this Create2dModelTrainingJobReq.
+
+        :param voice_properties: The voice_properties of this Create2dModelTrainingJobReq.
+        :type voice_properties: :class:`huaweicloudsdkmetastudio.v1.VoiceProperties`
+        """
+        self._voice_properties = voice_properties
+
+    @property
+    def supported_service(self):
+        """Gets the supported_service of this Create2dModelTrainingJobReq.
+
+        该任务所生成的模型支持的业务类型，可多选
+
+        :return: The supported_service of this Create2dModelTrainingJobReq.
+        :rtype: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
+        """
+        return self._supported_service
+
+    @supported_service.setter
+    def supported_service(self, supported_service):
+        """Sets the supported_service of this Create2dModelTrainingJobReq.
+
+        该任务所生成的模型支持的业务类型，可多选
+
+        :param supported_service: The supported_service of this Create2dModelTrainingJobReq.
+        :type supported_service: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
+        """
+        self._supported_service = supported_service
 
     def to_dict(self):
         """Returns the model properties as a dict"""

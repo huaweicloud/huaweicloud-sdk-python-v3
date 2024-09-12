@@ -43,9 +43,9 @@ class InteractionRuleGroupDetail:
         :type group_name: str
         :param interaction_rules: 互动规则列表
         :type interaction_rules: list[:class:`huaweicloudsdkmetastudio.v1.InteractionRuleDetailInfo`]
-        :param create_time: 创建时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
+        :param create_time: 创建时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
         :type create_time: str
-        :param update_time: 更新时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
+        :param update_time: 更新时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
         :type update_time: str
         """
         
@@ -138,7 +138,7 @@ class InteractionRuleGroupDetail:
     def create_time(self):
         """Gets the create_time of this InteractionRuleGroupDetail.
 
-        创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        创建时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
         :return: The create_time of this InteractionRuleGroupDetail.
         :rtype: str
@@ -149,7 +149,7 @@ class InteractionRuleGroupDetail:
     def create_time(self, create_time):
         """Sets the create_time of this InteractionRuleGroupDetail.
 
-        创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        创建时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
         :param create_time: The create_time of this InteractionRuleGroupDetail.
         :type create_time: str
@@ -160,7 +160,7 @@ class InteractionRuleGroupDetail:
     def update_time(self):
         """Gets the update_time of this InteractionRuleGroupDetail.
 
-        更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        更新时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
         :return: The update_time of this InteractionRuleGroupDetail.
         :rtype: str
@@ -171,7 +171,7 @@ class InteractionRuleGroupDetail:
     def update_time(self, update_time):
         """Sets the update_time of this InteractionRuleGroupDetail.
 
-        更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        更新时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
         :param update_time: The update_time of this InteractionRuleGroupDetail.
         :type update_time: str

@@ -49,7 +49,7 @@ class ListVideoScriptsRequest:
         :type name: str
         :param script_catalog: 剧本类型。默认查询VIDEO_DRAFT。 * VIDEO_DRAFT：视频草稿。 * SYSTEM_VIDEO_TEMPLET： 系统视频模板。
         :type script_catalog: str
-        :param view_mode: 横竖屏类型（内部参数，不对外开放）。默认值是LANDSCAPE。 * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
+        :param view_mode: 横竖屏类型（内部参数，不对外开放）。默认值是LANDSCAPE。 * LANDSCAPE：横屏。 * VERTICAL：竖屏。
         :type view_mode: str
         """
         
@@ -190,7 +190,7 @@ class ListVideoScriptsRequest:
     def view_mode(self):
         """Gets the view_mode of this ListVideoScriptsRequest.
 
-        横竖屏类型（内部参数，不对外开放）。默认值是LANDSCAPE。 * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
+        横竖屏类型（内部参数，不对外开放）。默认值是LANDSCAPE。 * LANDSCAPE：横屏。 * VERTICAL：竖屏。
 
         :return: The view_mode of this ListVideoScriptsRequest.
         :rtype: str
@@ -201,7 +201,7 @@ class ListVideoScriptsRequest:
     def view_mode(self, view_mode):
         """Sets the view_mode of this ListVideoScriptsRequest.
 
-        横竖屏类型（内部参数，不对外开放）。默认值是LANDSCAPE。 * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
+        横竖屏类型（内部参数，不对外开放）。默认值是LANDSCAPE。 * LANDSCAPE：横屏。 * VERTICAL：竖屏。
 
         :param view_mode: The view_mode of this ListVideoScriptsRequest.
         :type view_mode: str

@@ -2552,6 +2552,75 @@ class MeetingAsyncClient(Client):
 
         return http_info
 
+    def create_auth_random_async(self, request):
+        """获取会议鉴权随机数
+
+        根据会议ID + 密码鉴权返回鉴权随机数，如果是小程序调用时，需要企业支持小程序功能
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateAuthRandom
+        :type request: :class:`huaweicloudsdkmeeting.v1.CreateAuthRandomRequest`
+        :rtype: :class:`huaweicloudsdkmeeting.v1.CreateAuthRandomResponse`
+        """
+        http_info = self._create_auth_random_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_auth_random_async_invoker(self, request):
+        http_info = self._create_auth_random_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_auth_random_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/mms/ncms/conferences/auth/random",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAuthRandomResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conf_id' in local_var_params:
+            query_params.append(('conf_id', local_var_params['conf_id']))
+        if 'guest_waiting' in local_var_params:
+            query_params.append(('guest_waiting', local_var_params['guest_waiting']))
+
+        header_params = {}
+        if 'x_password' in local_var_params:
+            header_params['X-Password'] = local_var_params['x_password']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_conf_token_async(self, request):
         """获取会控Token
 
@@ -10227,6 +10296,71 @@ class MeetingAsyncClient(Client):
 
         return http_info
 
+    def show_record_info_async(self, request):
+        """查询单会议录制文件信息
+
+        查询单会议录制文件信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowRecordInfo
+        :type request: :class:`huaweicloudsdkmeeting.v1.ShowRecordInfoRequest`
+        :rtype: :class:`huaweicloudsdkmeeting.v1.ShowRecordInfoResponse`
+        """
+        http_info = self._show_record_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_record_info_async_invoker(self, request):
+        http_info = self._show_record_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_record_info_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/mmc/rlm/record/info",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRecordInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_recording_detail_async(self, request):
         """查询录制详情
 
@@ -13451,75 +13585,6 @@ class MeetingAsyncClient(Client):
             query_params.append(('category', local_var_params['category']))
 
         header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def create_auth_random_async(self, request):
-        """获取会议鉴权随机数
-
-        根据会议ID + 密码鉴权返回鉴权随机数，如果是小程序调用时，需要企业支持小程序功能
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateAuthRandom
-        :type request: :class:`huaweicloudsdkmeeting.v1.CreateAuthRandomRequest`
-        :rtype: :class:`huaweicloudsdkmeeting.v1.CreateAuthRandomResponse`
-        """
-        http_info = self._create_auth_random_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_auth_random_async_invoker(self, request):
-        http_info = self._create_auth_random_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _create_auth_random_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v2/mms/ncms/conferences/auth/random",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateAuthRandomResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'conf_id' in local_var_params:
-            query_params.append(('conf_id', local_var_params['conf_id']))
-        if 'guest_waiting' in local_var_params:
-            query_params.append(('guest_waiting', local_var_params['guest_waiting']))
-
-        header_params = {}
-        if 'x_password' in local_var_params:
-            header_params['X-Password'] = local_var_params['x_password']
 
         form_params = {}
 

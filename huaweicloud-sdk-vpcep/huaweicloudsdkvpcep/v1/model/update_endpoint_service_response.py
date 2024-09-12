@@ -30,6 +30,7 @@ class UpdateEndpointServiceResponse(SdkResponse):
         'created_at': 'datetime',
         'updated_at': 'datetime',
         'project_id': 'str',
+        'ip': 'str',
         'ports': 'list[PortList]',
         'tcp_proxy': 'str',
         'tags': 'list[TagList]',
@@ -51,6 +52,7 @@ class UpdateEndpointServiceResponse(SdkResponse):
         'created_at': 'created_at',
         'updated_at': 'updated_at',
         'project_id': 'project_id',
+        'ip': 'ip',
         'ports': 'ports',
         'tcp_proxy': 'tcp_proxy',
         'tags': 'tags',
@@ -59,7 +61,7 @@ class UpdateEndpointServiceResponse(SdkResponse):
         'ip_version': 'ip_version'
     }
 
-    def __init__(self, id=None, port_id=None, service_name=None, server_type=None, vpc_id=None, pool_id=None, approval_enabled=None, status=None, service_type=None, created_at=None, updated_at=None, project_id=None, ports=None, tcp_proxy=None, tags=None, description=None, enable_policy=None, ip_version=None):
+    def __init__(self, id=None, port_id=None, service_name=None, server_type=None, vpc_id=None, pool_id=None, approval_enabled=None, status=None, service_type=None, created_at=None, updated_at=None, project_id=None, ip=None, ports=None, tcp_proxy=None, tags=None, description=None, enable_policy=None, ip_version=None):
         """UpdateEndpointServiceResponse
 
         The model defined in huaweicloud sdk
@@ -88,6 +90,8 @@ class UpdateEndpointServiceResponse(SdkResponse):
         :type updated_at: datetime
         :param project_id: 项目ID
         :type project_id: str
+        :param ip: 接口型VLAN场景服务端IPv4地址或域名
+        :type ip: str
         :param ports: 服务开放的端口映射列表 同一个终端节点服务下，不允许重复的端口映射。 若多个终端节点服务共用一个port_id， 则终端节点服务之间的所有端口映射的server_port和protocol的组合不能重复。
         :type ports: list[:class:`huaweicloudsdkvpcep.v1.PortList`]
         :param tcp_proxy: 用于控制将哪些信息（如客户端的源IP、源端口、marker_id等）携带到服务端。 支持携带的客户端信息包括如下两种类型：  - TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明：仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。  - Proxy Protocol：表示将客户端信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 该参数的取值包括：  - close：表示关闭代理协议。  - toa_open：表示开启代理协议“tcp_toa”。  - proxy_open：表示开启代理协议“proxy_protocol”。  - open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 默认值为“close”。
@@ -116,6 +120,7 @@ class UpdateEndpointServiceResponse(SdkResponse):
         self._created_at = None
         self._updated_at = None
         self._project_id = None
+        self._ip = None
         self._ports = None
         self._tcp_proxy = None
         self._tags = None
@@ -148,6 +153,8 @@ class UpdateEndpointServiceResponse(SdkResponse):
             self.updated_at = updated_at
         if project_id is not None:
             self.project_id = project_id
+        if ip is not None:
+            self.ip = ip
         if ports is not None:
             self.ports = ports
         if tcp_proxy is not None:
@@ -424,6 +431,28 @@ class UpdateEndpointServiceResponse(SdkResponse):
         :type project_id: str
         """
         self._project_id = project_id
+
+    @property
+    def ip(self):
+        """Gets the ip of this UpdateEndpointServiceResponse.
+
+        接口型VLAN场景服务端IPv4地址或域名
+
+        :return: The ip of this UpdateEndpointServiceResponse.
+        :rtype: str
+        """
+        return self._ip
+
+    @ip.setter
+    def ip(self, ip):
+        """Sets the ip of this UpdateEndpointServiceResponse.
+
+        接口型VLAN场景服务端IPv4地址或域名
+
+        :param ip: The ip of this UpdateEndpointServiceResponse.
+        :type ip: str
+        """
+        self._ip = ip
 
     @property
     def ports(self):

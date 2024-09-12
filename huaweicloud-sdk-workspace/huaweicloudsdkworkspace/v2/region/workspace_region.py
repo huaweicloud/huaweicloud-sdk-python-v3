@@ -26,6 +26,16 @@ class WorkspaceRegion:
                         "https://workspace.cn-north-9.myhuaweicloud.com")
     AP_SOUTHEAST_1 = Region("ap-southeast-1",
                         "https://workspace.ap-southeast-1.myhuaweicloud.com")
+    CN_EAST_5 = Region("cn-east-5",
+                        "https://workspace.cn-east-5.myhuaweicloud.com")
+    ME_EAST_1 = Region("me-east-1",
+                        "https://workspace.me-east-1.myhuaweicloud.com")
+    AF_SOUTH_1 = Region("af-south-1",
+                        "https://workspace.af-south-1.myhuaweicloud.com")
+    TR_WEST_1 = Region("tr-west-1",
+                        "https://workspace.tr-west-1.myhuaweicloud.com")
+    CN_NORTH_11 = Region("cn-north-11",
+                        "https://workspace.cn-north-11.myhuaweicloud.com")
 
     static_fields = {
         "cn-east-3": CN_EAST_3,
@@ -38,6 +48,11 @@ class WorkspaceRegion:
         "ap-southeast-3": AP_SOUTHEAST_3,
         "cn-north-9": CN_NORTH_9,
         "ap-southeast-1": AP_SOUTHEAST_1,
+        "cn-east-5": CN_EAST_5,
+        "me-east-1": ME_EAST_1,
+        "af-south-1": AF_SOUTH_1,
+        "tr-west-1": TR_WEST_1,
+        "cn-north-11": CN_NORTH_11,
     }
 
     @classmethod

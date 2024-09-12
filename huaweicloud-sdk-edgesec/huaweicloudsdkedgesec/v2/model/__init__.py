@@ -1,0 +1,18 @@
+# coding: utf-8
+
+from __future__ import absolute_import
+
+# import models into model package
+from huaweicloudsdkedgesec.v2.model.create_domain_request_body import CreateDomainRequestBody
+from huaweicloudsdkedgesec.v2.model.create_domains_request import CreateDomainsRequest
+from huaweicloudsdkedgesec.v2.model.create_domains_response import CreateDomainsResponse
+from huaweicloudsdkedgesec.v2.model.delete_domains_request import DeleteDomainsRequest
+from huaweicloudsdkedgesec.v2.model.delete_domains_response import DeleteDomainsResponse
+from huaweicloudsdkedgesec.v2.model.domain_info import DomainInfo
+from huaweicloudsdkedgesec.v2.model.show_domain_detail_request import ShowDomainDetailRequest
+from huaweicloudsdkedgesec.v2.model.show_domain_detail_response import ShowDomainDetailResponse
+from huaweicloudsdkedgesec.v2.model.show_domains_request import ShowDomainsRequest
+from huaweicloudsdkedgesec.v2.model.show_domains_response import ShowDomainsResponse
+from huaweicloudsdkedgesec.v2.model.update_domain_request_body import UpdateDomainRequestBody
+from huaweicloudsdkedgesec.v2.model.update_domains_request import UpdateDomainsRequest
+from huaweicloudsdkedgesec.v2.model.update_domains_response import UpdateDomainsResponse

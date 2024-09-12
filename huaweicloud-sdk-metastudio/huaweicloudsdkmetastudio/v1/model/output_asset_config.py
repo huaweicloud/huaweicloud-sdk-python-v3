@@ -29,7 +29,7 @@ class OutputAssetConfig:
 
         The model defined in huaweicloud sdk
 
-        :param asset_name: 输出视频资产名称。
+        :param asset_name: **参数解释**： 输出视频资产名称。 **约束限制**： 不涉及。 **取值范围**： 字符长度0-256位。 **默认取值**： 不涉及。
         :type asset_name: str
         """
         
@@ -44,7 +44,7 @@ class OutputAssetConfig:
     def asset_name(self):
         """Gets the asset_name of this OutputAssetConfig.
 
-        输出视频资产名称。
+        **参数解释**： 输出视频资产名称。 **约束限制**： 不涉及。 **取值范围**： 字符长度0-256位。 **默认取值**： 不涉及。
 
         :return: The asset_name of this OutputAssetConfig.
         :rtype: str
@@ -55,7 +55,7 @@ class OutputAssetConfig:
     def asset_name(self, asset_name):
         """Sets the asset_name of this OutputAssetConfig.
 
-        输出视频资产名称。
+        **参数解释**： 输出视频资产名称。 **约束限制**： 不涉及。 **取值范围**： 字符长度0-256位。 **默认取值**： 不涉及。
 
         :param asset_name: The asset_name of this OutputAssetConfig.
         :type asset_name: str

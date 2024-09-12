@@ -39,17 +39,17 @@ class SubtitleConfig:
 
         The model defined in huaweicloud sdk
 
-        :param dx: 字幕框左下角像素点坐标。  &gt; *横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
+        :param dx: **参数解释**： 字幕框左下角像素点坐标。 **约束限制**： 不涉及。 **默认取值**： 不涉及。
         :type dx: int
-        :param dy: 字幕框左下角像素点坐标。  &gt; *横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
+        :param dy: **参数解释**： 字幕框左下角像素点坐标。 **约束限制**： 不涉及。 **默认取值**： 不涉及。
         :type dy: int
-        :param font_name: 字体。当前支持的字体： * HarmonyOS_Sans_SC_Black：鸿蒙粗体 * HarmonyOS_Sans_SC_Regular：鸿蒙常规 * HarmonyOS_Sans_SC_Thin：鸿蒙细体
+        :param font_name: **参数解释**： 字体。当前支持的字体： * HarmonyOS_Sans_SC_Black：鸿蒙粗体 * HarmonyOS_Sans_SC_Regular：鸿蒙常规 * HarmonyOS_Sans_SC_Thin：鸿蒙细体。  **约束限制**： 不涉及。 **取值范围**： 字符长度0-64位
         :type font_name: str
-        :param font_size: 字体大小。  取值范围：[4, 120]
+        :param font_size: **参数解释**： 字体大小。接口的取值范围为0-120，实际业务使用的取值范围要求为4-120，请以业务实际使用要求为准。 **约束限制**： 不涉及。
         :type font_size: int
-        :param h: 字幕框高度 &gt; * 参数h用于方便前端计算字幕框左上角坐标，后台不使用该参数
+        :param h: **参数解释**： 字幕框高度。 **约束限制**： 参数h用于方便前端计算字幕框左上角坐标，后台不使用该参数。
         :type h: int
-        :param w: 字幕框宽度 &gt; * 字幕框宽度固定为屏幕宽度的80% &gt; * 参数w用于方便前端计算字幕框左上角坐标，后台不使用该参数
+        :param w: **参数解释**： 字幕框宽度。 **约束限制**： * 字幕框宽度固定为屏幕宽度的80% * 参数w用于方便前端计算字幕框左上角坐标，后台不使用该参数
         :type w: int
         """
         
@@ -80,7 +80,7 @@ class SubtitleConfig:
     def dx(self):
         """Gets the dx of this SubtitleConfig.
 
-        字幕框左下角像素点坐标。  > *横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
+        **参数解释**： 字幕框左下角像素点坐标。 **约束限制**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The dx of this SubtitleConfig.
         :rtype: int
@@ -91,7 +91,7 @@ class SubtitleConfig:
     def dx(self, dx):
         """Sets the dx of this SubtitleConfig.
 
-        字幕框左下角像素点坐标。  > *横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
+        **参数解释**： 字幕框左下角像素点坐标。 **约束限制**： 不涉及。 **默认取值**： 不涉及。
 
         :param dx: The dx of this SubtitleConfig.
         :type dx: int
@@ -102,7 +102,7 @@ class SubtitleConfig:
     def dy(self):
         """Gets the dy of this SubtitleConfig.
 
-        字幕框左下角像素点坐标。  > *横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
+        **参数解释**： 字幕框左下角像素点坐标。 **约束限制**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The dy of this SubtitleConfig.
         :rtype: int
@@ -113,7 +113,7 @@ class SubtitleConfig:
     def dy(self, dy):
         """Sets the dy of this SubtitleConfig.
 
-        字幕框左下角像素点坐标。  > *横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
+        **参数解释**： 字幕框左下角像素点坐标。 **约束限制**： 不涉及。 **默认取值**： 不涉及。
 
         :param dy: The dy of this SubtitleConfig.
         :type dy: int
@@ -124,7 +124,7 @@ class SubtitleConfig:
     def font_name(self):
         """Gets the font_name of this SubtitleConfig.
 
-        字体。当前支持的字体： * HarmonyOS_Sans_SC_Black：鸿蒙粗体 * HarmonyOS_Sans_SC_Regular：鸿蒙常规 * HarmonyOS_Sans_SC_Thin：鸿蒙细体
+        **参数解释**： 字体。当前支持的字体： * HarmonyOS_Sans_SC_Black：鸿蒙粗体 * HarmonyOS_Sans_SC_Regular：鸿蒙常规 * HarmonyOS_Sans_SC_Thin：鸿蒙细体。  **约束限制**： 不涉及。 **取值范围**： 字符长度0-64位
 
         :return: The font_name of this SubtitleConfig.
         :rtype: str
@@ -135,7 +135,7 @@ class SubtitleConfig:
     def font_name(self, font_name):
         """Sets the font_name of this SubtitleConfig.
 
-        字体。当前支持的字体： * HarmonyOS_Sans_SC_Black：鸿蒙粗体 * HarmonyOS_Sans_SC_Regular：鸿蒙常规 * HarmonyOS_Sans_SC_Thin：鸿蒙细体
+        **参数解释**： 字体。当前支持的字体： * HarmonyOS_Sans_SC_Black：鸿蒙粗体 * HarmonyOS_Sans_SC_Regular：鸿蒙常规 * HarmonyOS_Sans_SC_Thin：鸿蒙细体。  **约束限制**： 不涉及。 **取值范围**： 字符长度0-64位
 
         :param font_name: The font_name of this SubtitleConfig.
         :type font_name: str
@@ -146,7 +146,7 @@ class SubtitleConfig:
     def font_size(self):
         """Gets the font_size of this SubtitleConfig.
 
-        字体大小。  取值范围：[4, 120]
+        **参数解释**： 字体大小。接口的取值范围为0-120，实际业务使用的取值范围要求为4-120，请以业务实际使用要求为准。 **约束限制**： 不涉及。
 
         :return: The font_size of this SubtitleConfig.
         :rtype: int
@@ -157,7 +157,7 @@ class SubtitleConfig:
     def font_size(self, font_size):
         """Sets the font_size of this SubtitleConfig.
 
-        字体大小。  取值范围：[4, 120]
+        **参数解释**： 字体大小。接口的取值范围为0-120，实际业务使用的取值范围要求为4-120，请以业务实际使用要求为准。 **约束限制**： 不涉及。
 
         :param font_size: The font_size of this SubtitleConfig.
         :type font_size: int
@@ -168,7 +168,7 @@ class SubtitleConfig:
     def h(self):
         """Gets the h of this SubtitleConfig.
 
-        字幕框高度 > * 参数h用于方便前端计算字幕框左上角坐标，后台不使用该参数
+        **参数解释**： 字幕框高度。 **约束限制**： 参数h用于方便前端计算字幕框左上角坐标，后台不使用该参数。
 
         :return: The h of this SubtitleConfig.
         :rtype: int
@@ -179,7 +179,7 @@ class SubtitleConfig:
     def h(self, h):
         """Sets the h of this SubtitleConfig.
 
-        字幕框高度 > * 参数h用于方便前端计算字幕框左上角坐标，后台不使用该参数
+        **参数解释**： 字幕框高度。 **约束限制**： 参数h用于方便前端计算字幕框左上角坐标，后台不使用该参数。
 
         :param h: The h of this SubtitleConfig.
         :type h: int
@@ -190,7 +190,7 @@ class SubtitleConfig:
     def w(self):
         """Gets the w of this SubtitleConfig.
 
-        字幕框宽度 > * 字幕框宽度固定为屏幕宽度的80% > * 参数w用于方便前端计算字幕框左上角坐标，后台不使用该参数
+        **参数解释**： 字幕框宽度。 **约束限制**： * 字幕框宽度固定为屏幕宽度的80% * 参数w用于方便前端计算字幕框左上角坐标，后台不使用该参数
 
         :return: The w of this SubtitleConfig.
         :rtype: int
@@ -201,7 +201,7 @@ class SubtitleConfig:
     def w(self, w):
         """Sets the w of this SubtitleConfig.
 
-        字幕框宽度 > * 字幕框宽度固定为屏幕宽度的80% > * 参数w用于方便前端计算字幕框左上角坐标，后台不使用该参数
+        **参数解释**： 字幕框宽度。 **约束限制**： * 字幕框宽度固定为屏幕宽度的80% * 参数w用于方便前端计算字幕框左上角坐标，后台不使用该参数
 
         :param w: The w of this SubtitleConfig.
         :type w: int

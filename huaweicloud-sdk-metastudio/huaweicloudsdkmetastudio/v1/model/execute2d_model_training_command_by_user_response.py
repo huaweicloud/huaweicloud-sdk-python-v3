@@ -21,6 +21,7 @@ class Execute2dModelTrainingCommandByUserResponse(SdkResponse):
         'commond_result': 'str',
         'attachment_upload_url': 'list[str]',
         'multipart_data': 'list[MultipartUploadInfo]',
+        'excute_failed_msg': 'str',
         'x_request_id': 'str'
     }
 
@@ -28,10 +29,11 @@ class Execute2dModelTrainingCommandByUserResponse(SdkResponse):
         'commond_result': 'commond_result',
         'attachment_upload_url': 'attachment_upload_url',
         'multipart_data': 'multipart_data',
+        'excute_failed_msg': 'excute_failed_msg',
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, commond_result=None, attachment_upload_url=None, multipart_data=None, x_request_id=None):
+    def __init__(self, commond_result=None, attachment_upload_url=None, multipart_data=None, excute_failed_msg=None, x_request_id=None):
         """Execute2dModelTrainingCommandByUserResponse
 
         The model defined in huaweicloud sdk
@@ -42,6 +44,8 @@ class Execute2dModelTrainingCommandByUserResponse(SdkResponse):
         :type attachment_upload_url: list[str]
         :param multipart_data: 训练视频已上传分片信息
         :type multipart_data: list[:class:`huaweicloudsdkmetastudio.v1.MultipartUploadInfo`]
+        :param excute_failed_msg: 命令执行失败原因描述
+        :type excute_failed_msg: str
         :param x_request_id: 
         :type x_request_id: str
         """
@@ -51,6 +55,7 @@ class Execute2dModelTrainingCommandByUserResponse(SdkResponse):
         self._commond_result = None
         self._attachment_upload_url = None
         self._multipart_data = None
+        self._excute_failed_msg = None
         self._x_request_id = None
         self.discriminator = None
 
@@ -60,6 +65,8 @@ class Execute2dModelTrainingCommandByUserResponse(SdkResponse):
             self.attachment_upload_url = attachment_upload_url
         if multipart_data is not None:
             self.multipart_data = multipart_data
+        if excute_failed_msg is not None:
+            self.excute_failed_msg = excute_failed_msg
         if x_request_id is not None:
             self.x_request_id = x_request_id
 
@@ -128,6 +135,28 @@ class Execute2dModelTrainingCommandByUserResponse(SdkResponse):
         :type multipart_data: list[:class:`huaweicloudsdkmetastudio.v1.MultipartUploadInfo`]
         """
         self._multipart_data = multipart_data
+
+    @property
+    def excute_failed_msg(self):
+        """Gets the excute_failed_msg of this Execute2dModelTrainingCommandByUserResponse.
+
+        命令执行失败原因描述
+
+        :return: The excute_failed_msg of this Execute2dModelTrainingCommandByUserResponse.
+        :rtype: str
+        """
+        return self._excute_failed_msg
+
+    @excute_failed_msg.setter
+    def excute_failed_msg(self, excute_failed_msg):
+        """Sets the excute_failed_msg of this Execute2dModelTrainingCommandByUserResponse.
+
+        命令执行失败原因描述
+
+        :param excute_failed_msg: The excute_failed_msg of this Execute2dModelTrainingCommandByUserResponse.
+        :type excute_failed_msg: str
+        """
+        self._excute_failed_msg = excute_failed_msg
 
     @property
     def x_request_id(self):

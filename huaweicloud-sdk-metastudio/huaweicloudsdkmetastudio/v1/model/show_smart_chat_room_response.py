@@ -74,7 +74,7 @@ class ShowSmartChatRoomResponse(SdkResponse):
         :type voice_config: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
         :param robot_id: 机器人ID。获取方法请参考[创建应用](CreateRobot.xml)。
         :type robot_id: str
-        :param concurrency: 并发路数。
+        :param concurrency: **参数解释**： 并发路数。
         :type concurrency: int
         :param background_config: 
         :type background_config: :class:`huaweicloudsdkmetastudio.v1.BackgroundConfigInfo`
@@ -88,9 +88,9 @@ class ShowSmartChatRoomResponse(SdkResponse):
         :type chat_video_type: str
         :param room_id: 对话ID。
         :type room_id: str
-        :param create_time: 智能交互对话创建时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
+        :param create_time: 智能交互对话创建时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
         :type create_time: str
-        :param update_time: 智能交互对话更新时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
+        :param update_time: 智能交互对话更新时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
         :type update_time: str
         :param cover_url: 对话封面图URL
         :type cover_url: str
@@ -281,7 +281,7 @@ class ShowSmartChatRoomResponse(SdkResponse):
     def concurrency(self):
         """Gets the concurrency of this ShowSmartChatRoomResponse.
 
-        并发路数。
+        **参数解释**： 并发路数。
 
         :return: The concurrency of this ShowSmartChatRoomResponse.
         :rtype: int
@@ -292,7 +292,7 @@ class ShowSmartChatRoomResponse(SdkResponse):
     def concurrency(self, concurrency):
         """Sets the concurrency of this ShowSmartChatRoomResponse.
 
-        并发路数。
+        **参数解释**： 并发路数。
 
         :param concurrency: The concurrency of this ShowSmartChatRoomResponse.
         :type concurrency: int
@@ -423,7 +423,7 @@ class ShowSmartChatRoomResponse(SdkResponse):
     def create_time(self):
         """Gets the create_time of this ShowSmartChatRoomResponse.
 
-        智能交互对话创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        智能交互对话创建时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
         :return: The create_time of this ShowSmartChatRoomResponse.
         :rtype: str
@@ -434,7 +434,7 @@ class ShowSmartChatRoomResponse(SdkResponse):
     def create_time(self, create_time):
         """Sets the create_time of this ShowSmartChatRoomResponse.
 
-        智能交互对话创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        智能交互对话创建时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
         :param create_time: The create_time of this ShowSmartChatRoomResponse.
         :type create_time: str
@@ -445,7 +445,7 @@ class ShowSmartChatRoomResponse(SdkResponse):
     def update_time(self):
         """Gets the update_time of this ShowSmartChatRoomResponse.
 
-        智能交互对话更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        智能交互对话更新时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
         :return: The update_time of this ShowSmartChatRoomResponse.
         :rtype: str
@@ -456,7 +456,7 @@ class ShowSmartChatRoomResponse(SdkResponse):
     def update_time(self, update_time):
         """Sets the update_time of this ShowSmartChatRoomResponse.
 
-        智能交互对话更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        智能交互对话更新时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
         :param update_time: The update_time of this ShowSmartChatRoomResponse.
         :type update_time: str

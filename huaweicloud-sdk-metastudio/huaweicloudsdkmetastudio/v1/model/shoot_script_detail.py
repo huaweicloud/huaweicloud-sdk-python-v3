@@ -19,6 +19,7 @@ class ShootScriptDetail:
     openapi_types = {
         'script_type': 'str',
         'text_config': 'TextConfig',
+        'audio_drive_action_config': 'list[AudioDriveActionConfig]',
         'background_config': 'list[BackgroundConfigInfo]',
         'layer_config': 'list[LayerConfig]',
         'thumbnail_url': 'str'
@@ -27,25 +28,28 @@ class ShootScriptDetail:
     attribute_map = {
         'script_type': 'script_type',
         'text_config': 'text_config',
+        'audio_drive_action_config': 'audio_drive_action_config',
         'background_config': 'background_config',
         'layer_config': 'layer_config',
         'thumbnail_url': 'thumbnail_url'
     }
 
-    def __init__(self, script_type=None, text_config=None, background_config=None, layer_config=None, thumbnail_url=None):
+    def __init__(self, script_type=None, text_config=None, audio_drive_action_config=None, background_config=None, layer_config=None, thumbnail_url=None):
         """ShootScriptDetail
 
         The model defined in huaweicloud sdk
 
-        :param script_type: 脚本类型，即视频制作的驱动方式。默认TEXT * TEXT: 文本驱动，即通过TTS合成语音 * AUDIO: 语音驱动
+        :param script_type: **参数解释**： 脚本类型，即视频制作的驱动方式 **约束限制**： 不涉及 **取值范围** * TEXT: 文本驱动，即通过TTS合成语音 * AUDIO: 语音驱动
         :type script_type: str
         :param text_config: 
         :type text_config: :class:`huaweicloudsdkmetastudio.v1.TextConfig`
+        :param audio_drive_action_config: 语音驱动时的动作配置。
+        :type audio_drive_action_config: list[:class:`huaweicloudsdkmetastudio.v1.AudioDriveActionConfig`]
         :param background_config: 背景配置。
         :type background_config: list[:class:`huaweicloudsdkmetastudio.v1.BackgroundConfigInfo`]
         :param layer_config: 图层配置。
         :type layer_config: list[:class:`huaweicloudsdkmetastudio.v1.LayerConfig`]
-        :param thumbnail_url: 剧本场景缩略图url。
+        :param thumbnail_url: **参数解释**： 剧本场景缩略图url。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-2048位。 **默认取值**： 不涉及。
         :type thumbnail_url: str
         """
         
@@ -53,6 +57,7 @@ class ShootScriptDetail:
 
         self._script_type = None
         self._text_config = None
+        self._audio_drive_action_config = None
         self._background_config = None
         self._layer_config = None
         self._thumbnail_url = None
@@ -62,6 +67,8 @@ class ShootScriptDetail:
             self.script_type = script_type
         if text_config is not None:
             self.text_config = text_config
+        if audio_drive_action_config is not None:
+            self.audio_drive_action_config = audio_drive_action_config
         if background_config is not None:
             self.background_config = background_config
         if layer_config is not None:
@@ -73,7 +80,7 @@ class ShootScriptDetail:
     def script_type(self):
         """Gets the script_type of this ShootScriptDetail.
 
-        脚本类型，即视频制作的驱动方式。默认TEXT * TEXT: 文本驱动，即通过TTS合成语音 * AUDIO: 语音驱动
+        **参数解释**： 脚本类型，即视频制作的驱动方式 **约束限制**： 不涉及 **取值范围** * TEXT: 文本驱动，即通过TTS合成语音 * AUDIO: 语音驱动
 
         :return: The script_type of this ShootScriptDetail.
         :rtype: str
@@ -84,7 +91,7 @@ class ShootScriptDetail:
     def script_type(self, script_type):
         """Sets the script_type of this ShootScriptDetail.
 
-        脚本类型，即视频制作的驱动方式。默认TEXT * TEXT: 文本驱动，即通过TTS合成语音 * AUDIO: 语音驱动
+        **参数解释**： 脚本类型，即视频制作的驱动方式 **约束限制**： 不涉及 **取值范围** * TEXT: 文本驱动，即通过TTS合成语音 * AUDIO: 语音驱动
 
         :param script_type: The script_type of this ShootScriptDetail.
         :type script_type: str
@@ -108,6 +115,28 @@ class ShootScriptDetail:
         :type text_config: :class:`huaweicloudsdkmetastudio.v1.TextConfig`
         """
         self._text_config = text_config
+
+    @property
+    def audio_drive_action_config(self):
+        """Gets the audio_drive_action_config of this ShootScriptDetail.
+
+        语音驱动时的动作配置。
+
+        :return: The audio_drive_action_config of this ShootScriptDetail.
+        :rtype: list[:class:`huaweicloudsdkmetastudio.v1.AudioDriveActionConfig`]
+        """
+        return self._audio_drive_action_config
+
+    @audio_drive_action_config.setter
+    def audio_drive_action_config(self, audio_drive_action_config):
+        """Sets the audio_drive_action_config of this ShootScriptDetail.
+
+        语音驱动时的动作配置。
+
+        :param audio_drive_action_config: The audio_drive_action_config of this ShootScriptDetail.
+        :type audio_drive_action_config: list[:class:`huaweicloudsdkmetastudio.v1.AudioDriveActionConfig`]
+        """
+        self._audio_drive_action_config = audio_drive_action_config
 
     @property
     def background_config(self):
@@ -157,7 +186,7 @@ class ShootScriptDetail:
     def thumbnail_url(self):
         """Gets the thumbnail_url of this ShootScriptDetail.
 
-        剧本场景缩略图url。
+        **参数解释**： 剧本场景缩略图url。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-2048位。 **默认取值**： 不涉及。
 
         :return: The thumbnail_url of this ShootScriptDetail.
         :rtype: str
@@ -168,7 +197,7 @@ class ShootScriptDetail:
     def thumbnail_url(self, thumbnail_url):
         """Sets the thumbnail_url of this ShootScriptDetail.
 
-        剧本场景缩略图url。
+        **参数解释**： 剧本场景缩略图url。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-2048位。 **默认取值**： 不涉及。
 
         :param thumbnail_url: The thumbnail_url of this ShootScriptDetail.
         :type thumbnail_url: str

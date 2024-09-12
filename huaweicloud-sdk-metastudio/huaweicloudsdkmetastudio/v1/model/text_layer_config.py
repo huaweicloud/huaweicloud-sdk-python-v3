@@ -35,13 +35,13 @@ class TextLayerConfig:
 
         The model defined in huaweicloud sdk
 
-        :param text_context: 文字图层的文本，内容需做Base64编码。  示例：若想添加文字水印“测试文字水印”，那么text_context的值为：5rWL6K+V5paH5a2X5rC05Y2w
+        :param text_context: **参数解释**： 文字图层的文本，内容需做Base64编码。  示例：若想添加文字水印“测试文字水印”，那么text_context的值为：5rWL6K+V5paH5a2X5rC05Y2w **约束限制**： 不涉及。 **取值范围**： 字符长度0-1024位。 **默认取值**： 不涉及。
         :type text_context: str
-        :param font_name: 字体。当前支持的字体请参考[服务支持的字体](metastudio_02_0041.xml)。
+        :param font_name: **参数解释**： 字体。当前支持的字体： **约束限制**： 不涉及。 **取值范围**： 支持的字体请参考[服务支持的字体](metastudio_02_0041.xml)
         :type font_name: str
-        :param font_size: 字体大小（像素）。  取值范围：[4, 120]
+        :param font_size: **参数解释**： 字体大小（像素）。接口的取值范围为0-120，实际业务使用的取值范围要求为4-120，请以业务实际使用要求为准。  **约束限制**： 不涉及。
         :type font_size: int
-        :param font_color: 字体颜色。RGB颜色值。
+        :param font_color: **参数解释**： 字体颜色。RGB颜色值。  **约束限制**： 不涉及。 **取值范围**： 字符长度0-16位
         :type font_color: str
         """
         
@@ -66,7 +66,7 @@ class TextLayerConfig:
     def text_context(self):
         """Gets the text_context of this TextLayerConfig.
 
-        文字图层的文本，内容需做Base64编码。  示例：若想添加文字水印“测试文字水印”，那么text_context的值为：5rWL6K+V5paH5a2X5rC05Y2w
+        **参数解释**： 文字图层的文本，内容需做Base64编码。  示例：若想添加文字水印“测试文字水印”，那么text_context的值为：5rWL6K+V5paH5a2X5rC05Y2w **约束限制**： 不涉及。 **取值范围**： 字符长度0-1024位。 **默认取值**： 不涉及。
 
         :return: The text_context of this TextLayerConfig.
         :rtype: str
@@ -77,7 +77,7 @@ class TextLayerConfig:
     def text_context(self, text_context):
         """Sets the text_context of this TextLayerConfig.
 
-        文字图层的文本，内容需做Base64编码。  示例：若想添加文字水印“测试文字水印”，那么text_context的值为：5rWL6K+V5paH5a2X5rC05Y2w
+        **参数解释**： 文字图层的文本，内容需做Base64编码。  示例：若想添加文字水印“测试文字水印”，那么text_context的值为：5rWL6K+V5paH5a2X5rC05Y2w **约束限制**： 不涉及。 **取值范围**： 字符长度0-1024位。 **默认取值**： 不涉及。
 
         :param text_context: The text_context of this TextLayerConfig.
         :type text_context: str
@@ -88,7 +88,7 @@ class TextLayerConfig:
     def font_name(self):
         """Gets the font_name of this TextLayerConfig.
 
-        字体。当前支持的字体请参考[服务支持的字体](metastudio_02_0041.xml)。
+        **参数解释**： 字体。当前支持的字体： **约束限制**： 不涉及。 **取值范围**： 支持的字体请参考[服务支持的字体](metastudio_02_0041.xml)
 
         :return: The font_name of this TextLayerConfig.
         :rtype: str
@@ -99,7 +99,7 @@ class TextLayerConfig:
     def font_name(self, font_name):
         """Sets the font_name of this TextLayerConfig.
 
-        字体。当前支持的字体请参考[服务支持的字体](metastudio_02_0041.xml)。
+        **参数解释**： 字体。当前支持的字体： **约束限制**： 不涉及。 **取值范围**： 支持的字体请参考[服务支持的字体](metastudio_02_0041.xml)
 
         :param font_name: The font_name of this TextLayerConfig.
         :type font_name: str
@@ -110,7 +110,7 @@ class TextLayerConfig:
     def font_size(self):
         """Gets the font_size of this TextLayerConfig.
 
-        字体大小（像素）。  取值范围：[4, 120]
+        **参数解释**： 字体大小（像素）。接口的取值范围为0-120，实际业务使用的取值范围要求为4-120，请以业务实际使用要求为准。  **约束限制**： 不涉及。
 
         :return: The font_size of this TextLayerConfig.
         :rtype: int
@@ -121,7 +121,7 @@ class TextLayerConfig:
     def font_size(self, font_size):
         """Sets the font_size of this TextLayerConfig.
 
-        字体大小（像素）。  取值范围：[4, 120]
+        **参数解释**： 字体大小（像素）。接口的取值范围为0-120，实际业务使用的取值范围要求为4-120，请以业务实际使用要求为准。  **约束限制**： 不涉及。
 
         :param font_size: The font_size of this TextLayerConfig.
         :type font_size: int
@@ -132,7 +132,7 @@ class TextLayerConfig:
     def font_color(self):
         """Gets the font_color of this TextLayerConfig.
 
-        字体颜色。RGB颜色值。
+        **参数解释**： 字体颜色。RGB颜色值。  **约束限制**： 不涉及。 **取值范围**： 字符长度0-16位
 
         :return: The font_color of this TextLayerConfig.
         :rtype: str
@@ -143,7 +143,7 @@ class TextLayerConfig:
     def font_color(self, font_color):
         """Sets the font_color of this TextLayerConfig.
 
-        字体颜色。RGB颜色值。
+        **参数解释**： 字体颜色。RGB颜色值。  **约束限制**： 不涉及。 **取值范围**： 字符长度0-16位
 
         :param font_color: The font_color of this TextLayerConfig.
         :type font_color: str

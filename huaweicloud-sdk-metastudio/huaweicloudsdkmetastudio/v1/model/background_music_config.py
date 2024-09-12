@@ -31,9 +31,9 @@ class BackgroundMusicConfig:
 
         The model defined in huaweicloud sdk
 
-        :param music_asset_id: 音乐资产ID，可以从资产库中查询。
+        :param music_asset_id: **参数解释**： 音乐资产ID。 **约束限制**： 不涉及。 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及。
         :type music_asset_id: str
-        :param volume: 音乐音量。如100，表示音量100%，50表示音量50%。  默认值100，最小值0，最大值100。
+        :param volume: **参数解释**： 音乐音量。如100，表示音量100%，50表示音量50%。 **约束限制**： 不涉及。
         :type volume: int
         """
         
@@ -52,7 +52,7 @@ class BackgroundMusicConfig:
     def music_asset_id(self):
         """Gets the music_asset_id of this BackgroundMusicConfig.
 
-        音乐资产ID，可以从资产库中查询。
+        **参数解释**： 音乐资产ID。 **约束限制**： 不涉及。 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及。
 
         :return: The music_asset_id of this BackgroundMusicConfig.
         :rtype: str
@@ -63,7 +63,7 @@ class BackgroundMusicConfig:
     def music_asset_id(self, music_asset_id):
         """Sets the music_asset_id of this BackgroundMusicConfig.
 
-        音乐资产ID，可以从资产库中查询。
+        **参数解释**： 音乐资产ID。 **约束限制**： 不涉及。 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及。
 
         :param music_asset_id: The music_asset_id of this BackgroundMusicConfig.
         :type music_asset_id: str
@@ -74,7 +74,7 @@ class BackgroundMusicConfig:
     def volume(self):
         """Gets the volume of this BackgroundMusicConfig.
 
-        音乐音量。如100，表示音量100%，50表示音量50%。  默认值100，最小值0，最大值100。
+        **参数解释**： 音乐音量。如100，表示音量100%，50表示音量50%。 **约束限制**： 不涉及。
 
         :return: The volume of this BackgroundMusicConfig.
         :rtype: int
@@ -85,7 +85,7 @@ class BackgroundMusicConfig:
     def volume(self, volume):
         """Sets the volume of this BackgroundMusicConfig.
 
-        音乐音量。如100，表示音量100%，50表示音量50%。  默认值100，最小值0，最大值100。
+        **参数解释**： 音乐音量。如100，表示音量100%，50表示音量50%。 **约束限制**： 不涉及。
 
         :param volume: The volume of this BackgroundMusicConfig.
         :type volume: int

@@ -34,7 +34,7 @@ class ListDigitalHumanVideoResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: 视频制作任务总数。
+        :param count: **参数解释**： 视频制作任务总数。
         :type count: int
         :param jobs: 视频制作任务列表。
         :type jobs: list[:class:`huaweicloudsdkmetastudio.v1.DigitalHumanVideo`]
@@ -60,7 +60,7 @@ class ListDigitalHumanVideoResponse(SdkResponse):
     def count(self):
         """Gets the count of this ListDigitalHumanVideoResponse.
 
-        视频制作任务总数。
+        **参数解释**： 视频制作任务总数。
 
         :return: The count of this ListDigitalHumanVideoResponse.
         :rtype: int
@@ -71,7 +71,7 @@ class ListDigitalHumanVideoResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this ListDigitalHumanVideoResponse.
 
-        视频制作任务总数。
+        **参数解释**： 视频制作任务总数。
 
         :param count: The count of this ListDigitalHumanVideoResponse.
         :type count: int

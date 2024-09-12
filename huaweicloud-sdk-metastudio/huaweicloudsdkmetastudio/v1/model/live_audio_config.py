@@ -33,11 +33,11 @@ class LiveAudioConfig:
 
         The model defined in huaweicloud sdk
 
-        :param asset_id: 插入音频资产的资产id，外部资产信息无需填写。若填写，可以从资产库中查询。
+        :param asset_id: **参数解释**： 插入音频资产的资产id，外部资产信息无需填写。若填写，可以从资产库中查询。 **约束限制**： 不涉及 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及。
         :type asset_id: str
-        :param audio_url: 音频URL。仅支持MP3格式，大小&lt;100MB。输出会自动转化为单声道16KHZ采样。
+        :param audio_url: **参数解释**： 音频URL。 **约束限制**： 仅支持MP3格式，大小&lt;100MB。输出会自动转化为单声道16KHZ采样。 **取值范围**： 字符长度0-2048位。 **默认取值**： 不涉及。
         :type audio_url: str
-        :param subtitle_url: 音频对应的字幕文件URL。仅SRT格式，大小&lt;1MB。
+        :param subtitle_url: **参数解释**： 音频对应的字幕文件URL。 **约束限制**： 仅SRT格式，大小&lt;1MB。 **取值范围**： 字符长度0-2048位。 **默认取值**： 不涉及。
         :type subtitle_url: str
         """
         
@@ -59,7 +59,7 @@ class LiveAudioConfig:
     def asset_id(self):
         """Gets the asset_id of this LiveAudioConfig.
 
-        插入音频资产的资产id，外部资产信息无需填写。若填写，可以从资产库中查询。
+        **参数解释**： 插入音频资产的资产id，外部资产信息无需填写。若填写，可以从资产库中查询。 **约束限制**： 不涉及 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及。
 
         :return: The asset_id of this LiveAudioConfig.
         :rtype: str
@@ -70,7 +70,7 @@ class LiveAudioConfig:
     def asset_id(self, asset_id):
         """Sets the asset_id of this LiveAudioConfig.
 
-        插入音频资产的资产id，外部资产信息无需填写。若填写，可以从资产库中查询。
+        **参数解释**： 插入音频资产的资产id，外部资产信息无需填写。若填写，可以从资产库中查询。 **约束限制**： 不涉及 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及。
 
         :param asset_id: The asset_id of this LiveAudioConfig.
         :type asset_id: str
@@ -81,7 +81,7 @@ class LiveAudioConfig:
     def audio_url(self):
         """Gets the audio_url of this LiveAudioConfig.
 
-        音频URL。仅支持MP3格式，大小<100MB。输出会自动转化为单声道16KHZ采样。
+        **参数解释**： 音频URL。 **约束限制**： 仅支持MP3格式，大小<100MB。输出会自动转化为单声道16KHZ采样。 **取值范围**： 字符长度0-2048位。 **默认取值**： 不涉及。
 
         :return: The audio_url of this LiveAudioConfig.
         :rtype: str
@@ -92,7 +92,7 @@ class LiveAudioConfig:
     def audio_url(self, audio_url):
         """Sets the audio_url of this LiveAudioConfig.
 
-        音频URL。仅支持MP3格式，大小<100MB。输出会自动转化为单声道16KHZ采样。
+        **参数解释**： 音频URL。 **约束限制**： 仅支持MP3格式，大小<100MB。输出会自动转化为单声道16KHZ采样。 **取值范围**： 字符长度0-2048位。 **默认取值**： 不涉及。
 
         :param audio_url: The audio_url of this LiveAudioConfig.
         :type audio_url: str
@@ -103,7 +103,7 @@ class LiveAudioConfig:
     def subtitle_url(self):
         """Gets the subtitle_url of this LiveAudioConfig.
 
-        音频对应的字幕文件URL。仅SRT格式，大小<1MB。
+        **参数解释**： 音频对应的字幕文件URL。 **约束限制**： 仅SRT格式，大小<1MB。 **取值范围**： 字符长度0-2048位。 **默认取值**： 不涉及。
 
         :return: The subtitle_url of this LiveAudioConfig.
         :rtype: str
@@ -114,7 +114,7 @@ class LiveAudioConfig:
     def subtitle_url(self, subtitle_url):
         """Sets the subtitle_url of this LiveAudioConfig.
 
-        音频对应的字幕文件URL。仅SRT格式，大小<1MB。
+        **参数解释**： 音频对应的字幕文件URL。 **约束限制**： 仅SRT格式，大小<1MB。 **取值范围**： 字符长度0-2048位。 **默认取值**： 不涉及。
 
         :param subtitle_url: The subtitle_url of this LiveAudioConfig.
         :type subtitle_url: str

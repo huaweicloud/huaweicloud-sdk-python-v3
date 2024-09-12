@@ -20,6 +20,8 @@ class Create2dModelTrainingJobResponse(SdkResponse):
     openapi_types = {
         'job_id': 'str',
         'training_video_upload_url': 'list[str]',
+        'action_video_upload_url': 'list[str]',
+        'audio_upload_url': 'str',
         'cover_upload_url': 'str',
         'id_card_image1_upload_url': 'str',
         'id_card_image2_upload_url': 'str',
@@ -30,6 +32,8 @@ class Create2dModelTrainingJobResponse(SdkResponse):
     attribute_map = {
         'job_id': 'job_id',
         'training_video_upload_url': 'training_video_upload_url',
+        'action_video_upload_url': 'action_video_upload_url',
+        'audio_upload_url': 'audio_upload_url',
         'cover_upload_url': 'cover_upload_url',
         'id_card_image1_upload_url': 'id_card_image1_upload_url',
         'id_card_image2_upload_url': 'id_card_image2_upload_url',
@@ -37,7 +41,7 @@ class Create2dModelTrainingJobResponse(SdkResponse):
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, job_id=None, training_video_upload_url=None, cover_upload_url=None, id_card_image1_upload_url=None, id_card_image2_upload_url=None, grant_file_upload_url=None, x_request_id=None):
+    def __init__(self, job_id=None, training_video_upload_url=None, action_video_upload_url=None, audio_upload_url=None, cover_upload_url=None, id_card_image1_upload_url=None, id_card_image2_upload_url=None, grant_file_upload_url=None, x_request_id=None):
         """Create2dModelTrainingJobResponse
 
         The model defined in huaweicloud sdk
@@ -46,6 +50,10 @@ class Create2dModelTrainingJobResponse(SdkResponse):
         :type job_id: str
         :param training_video_upload_url: 分身数字人训练视频上传URL。该url在文件上传成功后失效，只能上传一次。注意：视频必须是1080p或者4K分辨率（横、竖屏皆可）的mp4格式，视频长度须大于等于3分钟且小于等于10分钟，否则审核会不通过。
         :type training_video_upload_url: list[str]
+        :param action_video_upload_url: 分身数字人训练视频上传URL。该url在文件上传成功后失效，只能上传一次。注意：视频必须是1080p或者4K分辨率（横、竖屏皆可）的mp4格式，视频长度须大于等于3分钟且小于等于10分钟，否则审核会不通过。
+        :type action_video_upload_url: list[str]
+        :param audio_upload_url: 音频数据训练上传URL。该url在文件上传成功后失效，只能上传一次
+        :type audio_upload_url: str
         :param cover_upload_url: 模型封面上传URL。该URL在文件上传成功后失效，只能上传一次。
         :type cover_upload_url: str
         :param id_card_image1_upload_url: 身份证正面照片上传URL。该URL在文件上传成功后失效，只能上传一次。注意：非NA用户必须上传，否则审核会不通过。
@@ -62,6 +70,8 @@ class Create2dModelTrainingJobResponse(SdkResponse):
 
         self._job_id = None
         self._training_video_upload_url = None
+        self._action_video_upload_url = None
+        self._audio_upload_url = None
         self._cover_upload_url = None
         self._id_card_image1_upload_url = None
         self._id_card_image2_upload_url = None
@@ -73,6 +83,10 @@ class Create2dModelTrainingJobResponse(SdkResponse):
             self.job_id = job_id
         if training_video_upload_url is not None:
             self.training_video_upload_url = training_video_upload_url
+        if action_video_upload_url is not None:
+            self.action_video_upload_url = action_video_upload_url
+        if audio_upload_url is not None:
+            self.audio_upload_url = audio_upload_url
         if cover_upload_url is not None:
             self.cover_upload_url = cover_upload_url
         if id_card_image1_upload_url is not None:
@@ -127,6 +141,50 @@ class Create2dModelTrainingJobResponse(SdkResponse):
         :type training_video_upload_url: list[str]
         """
         self._training_video_upload_url = training_video_upload_url
+
+    @property
+    def action_video_upload_url(self):
+        """Gets the action_video_upload_url of this Create2dModelTrainingJobResponse.
+
+        分身数字人训练视频上传URL。该url在文件上传成功后失效，只能上传一次。注意：视频必须是1080p或者4K分辨率（横、竖屏皆可）的mp4格式，视频长度须大于等于3分钟且小于等于10分钟，否则审核会不通过。
+
+        :return: The action_video_upload_url of this Create2dModelTrainingJobResponse.
+        :rtype: list[str]
+        """
+        return self._action_video_upload_url
+
+    @action_video_upload_url.setter
+    def action_video_upload_url(self, action_video_upload_url):
+        """Sets the action_video_upload_url of this Create2dModelTrainingJobResponse.
+
+        分身数字人训练视频上传URL。该url在文件上传成功后失效，只能上传一次。注意：视频必须是1080p或者4K分辨率（横、竖屏皆可）的mp4格式，视频长度须大于等于3分钟且小于等于10分钟，否则审核会不通过。
+
+        :param action_video_upload_url: The action_video_upload_url of this Create2dModelTrainingJobResponse.
+        :type action_video_upload_url: list[str]
+        """
+        self._action_video_upload_url = action_video_upload_url
+
+    @property
+    def audio_upload_url(self):
+        """Gets the audio_upload_url of this Create2dModelTrainingJobResponse.
+
+        音频数据训练上传URL。该url在文件上传成功后失效，只能上传一次
+
+        :return: The audio_upload_url of this Create2dModelTrainingJobResponse.
+        :rtype: str
+        """
+        return self._audio_upload_url
+
+    @audio_upload_url.setter
+    def audio_upload_url(self, audio_upload_url):
+        """Sets the audio_upload_url of this Create2dModelTrainingJobResponse.
+
+        音频数据训练上传URL。该url在文件上传成功后失效，只能上传一次
+
+        :param audio_upload_url: The audio_upload_url of this Create2dModelTrainingJobResponse.
+        :type audio_upload_url: str
+        """
+        self._audio_upload_url = audio_upload_url
 
     @property
     def cover_upload_url(self):

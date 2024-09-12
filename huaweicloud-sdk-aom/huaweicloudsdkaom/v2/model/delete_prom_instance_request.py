@@ -33,7 +33,7 @@ class DeletePromInstanceRequest:
 
         :param prom_id: Prometheus实例id。
         :type prom_id: str
-        :param enterprise_project_id: 企业项目id。 - 查询单个企业项目下实例，填写企业项目id。 - 查询所有企业项目下实例，填写“all_granted_eps”。
+        :param enterprise_project_id: 企业项目id。 - 删除单个企业项目下实例，填写企业项目id。
         :type enterprise_project_id: str
         """
         
@@ -44,8 +44,7 @@ class DeletePromInstanceRequest:
         self.discriminator = None
 
         self.prom_id = prom_id
-        if enterprise_project_id is not None:
-            self.enterprise_project_id = enterprise_project_id
+        self.enterprise_project_id = enterprise_project_id
 
     @property
     def prom_id(self):
@@ -73,7 +72,7 @@ class DeletePromInstanceRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this DeletePromInstanceRequest.
 
-        企业项目id。 - 查询单个企业项目下实例，填写企业项目id。 - 查询所有企业项目下实例，填写“all_granted_eps”。
+        企业项目id。 - 删除单个企业项目下实例，填写企业项目id。
 
         :return: The enterprise_project_id of this DeletePromInstanceRequest.
         :rtype: str
@@ -84,7 +83,7 @@ class DeletePromInstanceRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this DeletePromInstanceRequest.
 
-        企业项目id。 - 查询单个企业项目下实例，填写企业项目id。 - 查询所有企业项目下实例，填写“all_granted_eps”。
+        企业项目id。 - 删除单个企业项目下实例，填写企业项目id。
 
         :param enterprise_project_id: The enterprise_project_id of this DeletePromInstanceRequest.
         :type enterprise_project_id: str

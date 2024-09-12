@@ -925,6 +925,71 @@ class GslClient(Client):
 
         return http_info
 
+    def list_sim_card_flow_per_day(self, request):
+        """批量查询SIM卡日用量
+
+        批量查询SIM卡日用量接口，支持按天或按月查询。SIM卡标识和容器ID只能选一个参数，天和月也只能选一个参数
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSimCardFlowPerDay
+        :type request: :class:`huaweicloudsdkgsl.v3.ListSimCardFlowPerDayRequest`
+        :rtype: :class:`huaweicloudsdkgsl.v3.ListSimCardFlowPerDayResponse`
+        """
+        http_info = self._list_sim_card_flow_per_day_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_sim_card_flow_per_day_invoker(self, request):
+        http_info = self._list_sim_card_flow_per_day_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_sim_card_flow_per_day_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/sim-cards/batch-daily-flow",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSimCardFlowPerDayResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_sim_cards(self, request):
         """查询SIM卡列表
 

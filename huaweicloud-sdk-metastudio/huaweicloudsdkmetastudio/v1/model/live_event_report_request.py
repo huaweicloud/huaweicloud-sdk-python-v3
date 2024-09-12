@@ -49,7 +49,7 @@ class LiveEventReportRequest:
         :type x_app_user_id: str
         :param auth_key: 鉴权Key。通过HmacSHA256生成的鉴权key
         :type auth_key: str
-        :param expires_time: 鉴权key过期时间。从1970年1月1日（UTC/GMT的午夜）开始所经过的豪秒数。
+        :param expires_time: **参数解释**： 鉴权key过期时间。从1970年1月1日（UTC/GMT的午夜）开始所经过的豪秒数。
         :type expires_time: int
         :param refresh_url: 是否刷新URL
         :type refresh_url: bool
@@ -173,7 +173,7 @@ class LiveEventReportRequest:
     def expires_time(self):
         """Gets the expires_time of this LiveEventReportRequest.
 
-        鉴权key过期时间。从1970年1月1日（UTC/GMT的午夜）开始所经过的豪秒数。
+        **参数解释**： 鉴权key过期时间。从1970年1月1日（UTC/GMT的午夜）开始所经过的豪秒数。
 
         :return: The expires_time of this LiveEventReportRequest.
         :rtype: int
@@ -184,7 +184,7 @@ class LiveEventReportRequest:
     def expires_time(self, expires_time):
         """Sets the expires_time of this LiveEventReportRequest.
 
-        鉴权key过期时间。从1970年1月1日（UTC/GMT的午夜）开始所经过的豪秒数。
+        **参数解释**： 鉴权key过期时间。从1970年1月1日（UTC/GMT的午夜）开始所经过的豪秒数。
 
         :param expires_time: The expires_time of this LiveEventReportRequest.
         :type expires_time: int

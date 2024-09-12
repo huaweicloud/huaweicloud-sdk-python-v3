@@ -35,13 +35,13 @@ class SharedConfig:
 
         The model defined in huaweicloud sdk
 
-        :param shared_type: 共享类型。 * PRIVATE: 私有，仅本租户可访问。 * PUBLIC: 公开，所有租户可访问。当前仅提供系统资产可公开访问。 * SHARED：共享，指定租户可访问。拥有者指定租户可访问。
+        :param shared_type: **参数解释**： 共享类型。 **约束限制**： 该配置仅用于模板 **取值范围**： * PRIVATE：私有，仅本租户可访问。 * PUBLIC：公开，所有租户可访问。当前仅提供系统资产可公开访问。 * SHARED：共享，指定租户可访问。拥有者指定租户可访问。  **默认取值**： 不涉及。
         :type shared_type: str
-        :param shared_state: 共享状态。 * PUBLISHED: 发布。模板可用。 - DRAFT： 草稿。编辑态，仅拥有者可访问。 - REVIEW：审核态。不可编辑，仅拥有者/审核人员可查看。
+        :param shared_state: **参数解释**： 共享状态。 **约束限制**： 该配置仅用于shared_type为SHARED的模板。 **取值范围**： * PUBLISHED：发布。模板可用。 * DRAFT：草稿。编辑态，仅拥有者可访问。 * REVIEW：审核态。不可编辑，仅拥有者/审核人员可查看。  **默认取值**： 不涉及。
         :type shared_state: str
-        :param expire_time: 共享过期时间。空表示永久不过期。
+        :param expire_time: **参数解释**： 共享过期时间。空表示永久不过期。 **约束限制**： 该配置仅用于shared_type为SHARED的模板。 格式遵循：RFC 3339，示例“2021*01*10T08:43:17Z”。 **取值范围**： 字符长度0-20位 **默认取值**： 不涉及。
         :type expire_time: str
-        :param allowed_project_ids: 允许访问本资产的租户列表
+        :param allowed_project_ids: **参数解释**： 允许访问本资产的租户列表。 **约束限制**： 该配置仅用于shared_type为SHARED的模板。 **取值范围**： 最大支持100个租户，重复的记录会被忽略。 租户ID填写project_id，字符长度1-64位。 **默认取值**： 不涉及。
         :type allowed_project_ids: list[str]
         """
         
@@ -66,7 +66,7 @@ class SharedConfig:
     def shared_type(self):
         """Gets the shared_type of this SharedConfig.
 
-        共享类型。 * PRIVATE: 私有，仅本租户可访问。 * PUBLIC: 公开，所有租户可访问。当前仅提供系统资产可公开访问。 * SHARED：共享，指定租户可访问。拥有者指定租户可访问。
+        **参数解释**： 共享类型。 **约束限制**： 该配置仅用于模板 **取值范围**： * PRIVATE：私有，仅本租户可访问。 * PUBLIC：公开，所有租户可访问。当前仅提供系统资产可公开访问。 * SHARED：共享，指定租户可访问。拥有者指定租户可访问。  **默认取值**： 不涉及。
 
         :return: The shared_type of this SharedConfig.
         :rtype: str
@@ -77,7 +77,7 @@ class SharedConfig:
     def shared_type(self, shared_type):
         """Sets the shared_type of this SharedConfig.
 
-        共享类型。 * PRIVATE: 私有，仅本租户可访问。 * PUBLIC: 公开，所有租户可访问。当前仅提供系统资产可公开访问。 * SHARED：共享，指定租户可访问。拥有者指定租户可访问。
+        **参数解释**： 共享类型。 **约束限制**： 该配置仅用于模板 **取值范围**： * PRIVATE：私有，仅本租户可访问。 * PUBLIC：公开，所有租户可访问。当前仅提供系统资产可公开访问。 * SHARED：共享，指定租户可访问。拥有者指定租户可访问。  **默认取值**： 不涉及。
 
         :param shared_type: The shared_type of this SharedConfig.
         :type shared_type: str
@@ -88,7 +88,7 @@ class SharedConfig:
     def shared_state(self):
         """Gets the shared_state of this SharedConfig.
 
-        共享状态。 * PUBLISHED: 发布。模板可用。 - DRAFT： 草稿。编辑态，仅拥有者可访问。 - REVIEW：审核态。不可编辑，仅拥有者/审核人员可查看。
+        **参数解释**： 共享状态。 **约束限制**： 该配置仅用于shared_type为SHARED的模板。 **取值范围**： * PUBLISHED：发布。模板可用。 * DRAFT：草稿。编辑态，仅拥有者可访问。 * REVIEW：审核态。不可编辑，仅拥有者/审核人员可查看。  **默认取值**： 不涉及。
 
         :return: The shared_state of this SharedConfig.
         :rtype: str
@@ -99,7 +99,7 @@ class SharedConfig:
     def shared_state(self, shared_state):
         """Sets the shared_state of this SharedConfig.
 
-        共享状态。 * PUBLISHED: 发布。模板可用。 - DRAFT： 草稿。编辑态，仅拥有者可访问。 - REVIEW：审核态。不可编辑，仅拥有者/审核人员可查看。
+        **参数解释**： 共享状态。 **约束限制**： 该配置仅用于shared_type为SHARED的模板。 **取值范围**： * PUBLISHED：发布。模板可用。 * DRAFT：草稿。编辑态，仅拥有者可访问。 * REVIEW：审核态。不可编辑，仅拥有者/审核人员可查看。  **默认取值**： 不涉及。
 
         :param shared_state: The shared_state of this SharedConfig.
         :type shared_state: str
@@ -110,7 +110,7 @@ class SharedConfig:
     def expire_time(self):
         """Gets the expire_time of this SharedConfig.
 
-        共享过期时间。空表示永久不过期。
+        **参数解释**： 共享过期时间。空表示永久不过期。 **约束限制**： 该配置仅用于shared_type为SHARED的模板。 格式遵循：RFC 3339，示例“2021*01*10T08:43:17Z”。 **取值范围**： 字符长度0-20位 **默认取值**： 不涉及。
 
         :return: The expire_time of this SharedConfig.
         :rtype: str
@@ -121,7 +121,7 @@ class SharedConfig:
     def expire_time(self, expire_time):
         """Sets the expire_time of this SharedConfig.
 
-        共享过期时间。空表示永久不过期。
+        **参数解释**： 共享过期时间。空表示永久不过期。 **约束限制**： 该配置仅用于shared_type为SHARED的模板。 格式遵循：RFC 3339，示例“2021*01*10T08:43:17Z”。 **取值范围**： 字符长度0-20位 **默认取值**： 不涉及。
 
         :param expire_time: The expire_time of this SharedConfig.
         :type expire_time: str
@@ -132,7 +132,7 @@ class SharedConfig:
     def allowed_project_ids(self):
         """Gets the allowed_project_ids of this SharedConfig.
 
-        允许访问本资产的租户列表
+        **参数解释**： 允许访问本资产的租户列表。 **约束限制**： 该配置仅用于shared_type为SHARED的模板。 **取值范围**： 最大支持100个租户，重复的记录会被忽略。 租户ID填写project_id，字符长度1-64位。 **默认取值**： 不涉及。
 
         :return: The allowed_project_ids of this SharedConfig.
         :rtype: list[str]
@@ -143,7 +143,7 @@ class SharedConfig:
     def allowed_project_ids(self, allowed_project_ids):
         """Sets the allowed_project_ids of this SharedConfig.
 
-        允许访问本资产的租户列表
+        **参数解释**： 允许访问本资产的租户列表。 **约束限制**： 该配置仅用于shared_type为SHARED的模板。 **取值范围**： 最大支持100个租户，重复的记录会被忽略。 租户ID填写project_id，字符长度1-64位。 **默认取值**： 不涉及。
 
         :param allowed_project_ids: The allowed_project_ids of this SharedConfig.
         :type allowed_project_ids: list[str]

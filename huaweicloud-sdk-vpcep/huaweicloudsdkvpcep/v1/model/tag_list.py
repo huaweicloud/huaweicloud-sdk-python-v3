@@ -31,9 +31,9 @@ class TagList:
 
         The model defined in huaweicloud sdk
 
-        :param key: 键。 最大长度36个unicode字符。  key不能为空。不能包含“&#x3D;”、“*”、“&lt;”、“&gt;”、“\\”、“,”、“|”和“/”，且首尾字符不能为空格。
+        :param key: 键。 key不能为空，长度1~128个字符（中文也可以输入128个字符）。  可用 UTF-8 格式表示的字母(包含中文、西班牙语、葡语等)、数字和空格，以及以下字符： _ . : &#x3D; + - @。 _sys_开头属于系统标签，租户不能输入。 key两头不能有空格字符。
         :type key: str
-        :param value: 值。 每个值最大长度43个unicode字符，可以为空字符串。  不能包含“&#x3D;”、“*”、“&lt;”、“&gt;”、“\\”、“,”、“|”和“/”，且首尾字符不能为空格。
+        :param value: 值。 长度0~255个字符（中文也可以输入255个字符）。  可用 UTF-8 格式表示的字母(包含中文、西班牙语、葡语等)、数字和空格，以及以下字符： _ . : / &#x3D; + - @。 资源标签值可以为空字符串。
         :type value: str
         """
         
@@ -52,7 +52,7 @@ class TagList:
     def key(self):
         """Gets the key of this TagList.
 
-        键。 最大长度36个unicode字符。  key不能为空。不能包含“=”、“*”、“<”、“>”、“\\”、“,”、“|”和“/”，且首尾字符不能为空格。
+        键。 key不能为空，长度1~128个字符（中文也可以输入128个字符）。  可用 UTF-8 格式表示的字母(包含中文、西班牙语、葡语等)、数字和空格，以及以下字符： _ . : = + - @。 _sys_开头属于系统标签，租户不能输入。 key两头不能有空格字符。
 
         :return: The key of this TagList.
         :rtype: str
@@ -63,7 +63,7 @@ class TagList:
     def key(self, key):
         """Sets the key of this TagList.
 
-        键。 最大长度36个unicode字符。  key不能为空。不能包含“=”、“*”、“<”、“>”、“\\”、“,”、“|”和“/”，且首尾字符不能为空格。
+        键。 key不能为空，长度1~128个字符（中文也可以输入128个字符）。  可用 UTF-8 格式表示的字母(包含中文、西班牙语、葡语等)、数字和空格，以及以下字符： _ . : = + - @。 _sys_开头属于系统标签，租户不能输入。 key两头不能有空格字符。
 
         :param key: The key of this TagList.
         :type key: str
@@ -74,7 +74,7 @@ class TagList:
     def value(self):
         """Gets the value of this TagList.
 
-        值。 每个值最大长度43个unicode字符，可以为空字符串。  不能包含“=”、“*”、“<”、“>”、“\\”、“,”、“|”和“/”，且首尾字符不能为空格。
+        值。 长度0~255个字符（中文也可以输入255个字符）。  可用 UTF-8 格式表示的字母(包含中文、西班牙语、葡语等)、数字和空格，以及以下字符： _ . : / = + - @。 资源标签值可以为空字符串。
 
         :return: The value of this TagList.
         :rtype: str
@@ -85,7 +85,7 @@ class TagList:
     def value(self, value):
         """Sets the value of this TagList.
 
-        值。 每个值最大长度43个unicode字符，可以为空字符串。  不能包含“=”、“*”、“<”、“>”、“\\”、“,”、“|”和“/”，且首尾字符不能为空格。
+        值。 长度0~255个字符（中文也可以输入255个字符）。  可用 UTF-8 格式表示的字母(包含中文、西班牙语、葡语等)、数字和空格，以及以下字符： _ . : / = + - @。 资源标签值可以为空字符串。
 
         :param value: The value of this TagList.
         :type value: str

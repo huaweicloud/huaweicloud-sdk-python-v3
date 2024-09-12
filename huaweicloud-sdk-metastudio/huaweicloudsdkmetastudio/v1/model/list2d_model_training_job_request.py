@@ -30,7 +30,8 @@ class List2dModelTrainingJobRequest:
         'tag': 'str',
         'job_id': 'str',
         'name': 'str',
-        'model_resolution': 'str'
+        'model_resolution': 'str',
+        'is_flexus': 'bool'
     }
 
     attribute_map = {
@@ -47,10 +48,11 @@ class List2dModelTrainingJobRequest:
         'tag': 'tag',
         'job_id': 'job_id',
         'name': 'name',
-        'model_resolution': 'model_resolution'
+        'model_resolution': 'model_resolution',
+        'is_flexus': 'is_flexus'
     }
 
-    def __init__(self, x_app_user_id=None, offset=None, limit=None, sort_key=None, sort_dir=None, create_until=None, create_since=None, state=None, query_project_id=None, batch_name=None, tag=None, job_id=None, name=None, model_resolution=None):
+    def __init__(self, x_app_user_id=None, offset=None, limit=None, sort_key=None, sort_dir=None, create_until=None, create_since=None, state=None, query_project_id=None, batch_name=None, tag=None, job_id=None, name=None, model_resolution=None, is_flexus=None):
         """List2dModelTrainingJobRequest
 
         The model defined in huaweicloud sdk
@@ -83,6 +85,8 @@ class List2dModelTrainingJobRequest:
         :type name: str
         :param model_resolution: 模型分辨率
         :type model_resolution: str
+        :param is_flexus: 是否是flexus任务
+        :type is_flexus: bool
         """
         
         
@@ -101,6 +105,7 @@ class List2dModelTrainingJobRequest:
         self._job_id = None
         self._name = None
         self._model_resolution = None
+        self._is_flexus = None
         self.discriminator = None
 
         if x_app_user_id is not None:
@@ -131,6 +136,8 @@ class List2dModelTrainingJobRequest:
             self.name = name
         if model_resolution is not None:
             self.model_resolution = model_resolution
+        if is_flexus is not None:
+            self.is_flexus = is_flexus
 
     @property
     def x_app_user_id(self):
@@ -439,6 +446,28 @@ class List2dModelTrainingJobRequest:
         :type model_resolution: str
         """
         self._model_resolution = model_resolution
+
+    @property
+    def is_flexus(self):
+        """Gets the is_flexus of this List2dModelTrainingJobRequest.
+
+        是否是flexus任务
+
+        :return: The is_flexus of this List2dModelTrainingJobRequest.
+        :rtype: bool
+        """
+        return self._is_flexus
+
+    @is_flexus.setter
+    def is_flexus(self, is_flexus):
+        """Sets the is_flexus of this List2dModelTrainingJobRequest.
+
+        是否是flexus任务
+
+        :param is_flexus: The is_flexus of this List2dModelTrainingJobRequest.
+        :type is_flexus: bool
+        """
+        self._is_flexus = is_flexus
 
     def to_dict(self):
         """Returns the model properties as a dict"""

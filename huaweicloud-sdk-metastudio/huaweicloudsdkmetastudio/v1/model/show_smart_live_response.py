@@ -76,17 +76,17 @@ class ShowSmartLiveResponse(SdkResponse):
         :type room_name: str
         :param state: 数字人直播任务的状态。 * WAITING: 等待 * PROCESSING: 处理中 * SUCCEED: 成功 * FAILED: 失败 * BLOCKED: 封禁
         :type state: str
-        :param duration: 数字人直播时长，单位秒。
+        :param duration: **参数解释**： 数字人直播时长，单位秒。
         :type duration: float
-        :param start_time: 数字人直播任务开始时间。格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
+        :param start_time: 数字人直播任务开始时间。格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
         :type start_time: str
-        :param end_time: 数字人直播任务结束时间。格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
+        :param end_time: 数字人直播任务结束时间。格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
         :type end_time: str
         :param error_info: 
         :type error_info: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
-        :param create_time: 数字人直播任务创建时间。格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
+        :param create_time: 数字人直播任务创建时间。格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
         :type create_time: str
-        :param lastupdate_time: 数字人直播任务最后更新时间。格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
+        :param lastupdate_time: 数字人直播任务最后更新时间。格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
         :type lastupdate_time: str
         :param rtc_room_info: 
         :type rtc_room_info: :class:`huaweicloudsdkmetastudio.v1.RTCRoomInfoList`
@@ -96,7 +96,7 @@ class ShowSmartLiveResponse(SdkResponse):
         :type live_event_callback_config: :class:`huaweicloudsdkmetastudio.v1.LiveEventCallBackConfig`
         :param rtc_callback_config: 
         :type rtc_callback_config: :class:`huaweicloudsdkmetastudio.v1.RTCLiveEventCallBackConfig`
-        :param stream_duration: 数字人直播推流时长，单位秒
+        :param stream_duration: **参数解释**： 数字人直播推流时长，单位秒。
         :type stream_duration: float
         :param block_reason: 封禁信息
         :type block_reason: str
@@ -267,7 +267,7 @@ class ShowSmartLiveResponse(SdkResponse):
     def duration(self):
         """Gets the duration of this ShowSmartLiveResponse.
 
-        数字人直播时长，单位秒。
+        **参数解释**： 数字人直播时长，单位秒。
 
         :return: The duration of this ShowSmartLiveResponse.
         :rtype: float
@@ -278,7 +278,7 @@ class ShowSmartLiveResponse(SdkResponse):
     def duration(self, duration):
         """Sets the duration of this ShowSmartLiveResponse.
 
-        数字人直播时长，单位秒。
+        **参数解释**： 数字人直播时长，单位秒。
 
         :param duration: The duration of this ShowSmartLiveResponse.
         :type duration: float
@@ -289,7 +289,7 @@ class ShowSmartLiveResponse(SdkResponse):
     def start_time(self):
         """Gets the start_time of this ShowSmartLiveResponse.
 
-        数字人直播任务开始时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        数字人直播任务开始时间。格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
         :return: The start_time of this ShowSmartLiveResponse.
         :rtype: str
@@ -300,7 +300,7 @@ class ShowSmartLiveResponse(SdkResponse):
     def start_time(self, start_time):
         """Sets the start_time of this ShowSmartLiveResponse.
 
-        数字人直播任务开始时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        数字人直播任务开始时间。格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
         :param start_time: The start_time of this ShowSmartLiveResponse.
         :type start_time: str
@@ -311,7 +311,7 @@ class ShowSmartLiveResponse(SdkResponse):
     def end_time(self):
         """Gets the end_time of this ShowSmartLiveResponse.
 
-        数字人直播任务结束时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        数字人直播任务结束时间。格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
         :return: The end_time of this ShowSmartLiveResponse.
         :rtype: str
@@ -322,7 +322,7 @@ class ShowSmartLiveResponse(SdkResponse):
     def end_time(self, end_time):
         """Sets the end_time of this ShowSmartLiveResponse.
 
-        数字人直播任务结束时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        数字人直播任务结束时间。格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
         :param end_time: The end_time of this ShowSmartLiveResponse.
         :type end_time: str
@@ -351,7 +351,7 @@ class ShowSmartLiveResponse(SdkResponse):
     def create_time(self):
         """Gets the create_time of this ShowSmartLiveResponse.
 
-        数字人直播任务创建时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        数字人直播任务创建时间。格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
         :return: The create_time of this ShowSmartLiveResponse.
         :rtype: str
@@ -362,7 +362,7 @@ class ShowSmartLiveResponse(SdkResponse):
     def create_time(self, create_time):
         """Sets the create_time of this ShowSmartLiveResponse.
 
-        数字人直播任务创建时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        数字人直播任务创建时间。格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
         :param create_time: The create_time of this ShowSmartLiveResponse.
         :type create_time: str
@@ -373,7 +373,7 @@ class ShowSmartLiveResponse(SdkResponse):
     def lastupdate_time(self):
         """Gets the lastupdate_time of this ShowSmartLiveResponse.
 
-        数字人直播任务最后更新时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        数字人直播任务最后更新时间。格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
         :return: The lastupdate_time of this ShowSmartLiveResponse.
         :rtype: str
@@ -384,7 +384,7 @@ class ShowSmartLiveResponse(SdkResponse):
     def lastupdate_time(self, lastupdate_time):
         """Sets the lastupdate_time of this ShowSmartLiveResponse.
 
-        数字人直播任务最后更新时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        数字人直播任务最后更新时间。格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
         :param lastupdate_time: The lastupdate_time of this ShowSmartLiveResponse.
         :type lastupdate_time: str
@@ -471,7 +471,7 @@ class ShowSmartLiveResponse(SdkResponse):
     def stream_duration(self):
         """Gets the stream_duration of this ShowSmartLiveResponse.
 
-        数字人直播推流时长，单位秒
+        **参数解释**： 数字人直播推流时长，单位秒。
 
         :return: The stream_duration of this ShowSmartLiveResponse.
         :rtype: float
@@ -482,7 +482,7 @@ class ShowSmartLiveResponse(SdkResponse):
     def stream_duration(self, stream_duration):
         """Sets the stream_duration of this ShowSmartLiveResponse.
 
-        数字人直播推流时长，单位秒
+        **参数解释**： 数字人直播推流时长，单位秒。
 
         :param stream_duration: The stream_duration of this ShowSmartLiveResponse.
         :type stream_duration: float

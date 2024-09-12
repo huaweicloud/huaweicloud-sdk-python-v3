@@ -1,3 +1,202 @@
+# 3.1.114 2024-09-12
+
+### HuaweiCloud SDK AOM
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListEvents**
+    - changes of request param
+      - `+ limit`
+      - `+ marker`
+    - changes of response param
+      - `+ page_info`
+      - `+ events.event_sn`
+      - `+ events.arrives_at`
+      - `+ events.enterprise_project_id`
+      - `+ events.policy`
+  - **PushEvents**
+    - changes of request param
+      - `- events`
+      - `+ events.event_sn`
+      - `+ events.arrives_at`
+      - `+ events.enterprise_project_id`
+      - `+ events.policy`
+  - **DeletePromInstance**
+    - changes of request param
+      - `* Enterprise-Project-Id: optional -> required`
+
+### HuaweiCloud SDK CCE
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the API `AddNodesToNodePool`
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the APIs `ShowResourceInstances`, `BatchCreateDeleteResourceTags`, `ShowResourceTags`, `ShowCustomizeClusterTagsByProjectId`
+
+### HuaweiCloud SDK DLI
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateElasticResourcePool**
+    - changes of request param
+      - `+ label`
+
+### HuaweiCloud SDK GSL
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the API `ListSimCardFlowPerDay`
+- _Bug Fix_
+  - None
+- _Change_
+  - **SwitchNetwork**
+    - changes of request param
+      - `+ cid`
+  - **SetNetworkSwitchPolicy**
+    - changes of request param
+      - `+ cid`
+
+### HuaweiCloud SDK IoTEdge
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the API `DeleteDcPoints`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Meeting
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `ShowRecordInfo`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK MetaStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **Create2dModelTrainingJob**
+    - changes of request param
+      - `+ action_video_multipart_count`
+      - `+ is_flexus`
+      - `+ audio_source_type`
+      - `+ voice_properties`
+      - `+ supported_service`
+      - `+ command_message: enum value [CONFIRM_ACTION_VIDEO,GET_ACTION_VIDEO_MULTIPART]`
+    - changes of response param
+      - `+ audio_upload_url`
+      - `+ action_video_upload_url`
+  - **List2dModelTrainingJob**
+    - changes of request param
+      - `+ is_flexus`
+    - changes of response param
+      - `+ jobs.is_flexus`
+      - `+ jobs.state: enum value [WAIT_TRAINING_DATA_PREPROCESS,MANUAL_STOP_INFERENCE_DATA_PREPROCESS,MANUAL_STOP_TRAIN,MANUAL_STOP_TRAINING_DATA_PREPROCESS,MANUAL_STOP_BEAUTY_PREPROCESS,WAIT_ADMIN_CONFIRM,COMPILING,WAIT_COMPILE,COMPILE_FAILED,WAIT_BEAUTY,WAIT_GENERATE_ACTION,WAIT_ARRANGE,ACTION_GENERATE_DATA_PROCESSING,MANUAL_STOP_ACTION_GENERATE_DATA_PROCESSING,MANUAL_STOP_ACTION_GENERATE_ORI_PROCESSING,ACTION_GENERATE_ORI_PROCESSING,ACTION_GENERATE_DATA_FAILED,ACTION_GENERATE_ORI_FAILED,ACTION_GENERATE_ORI_SUCCESS,GENERATE_ACTION_PREPROCESS_FAILED,WAIT_ADMIN_CALIBRATION,BEAUTY_VIDEO_FILE_UPLOADED,BEAUTYFACE_SUCCESS,BEAUTYFACE_FAILED,WAIT_BEAUTY_VIDEO_FILE_UPLOAD,BEAUTYFACE_ROCESSING]`
+  - **Execute2dModelTrainingCommandByUser**
+    - changes of request param
+      - `+ command: enum value [CONFIRM_REPAIR,GET_ACTION_VIDEO_MULTIPART_UPLOADED,CONFIRM_ACTION_VIDEO_MULTIPART_UPLOADED]`
+      - `+ command_message: enum value [CONFIRM_ACTION_VIDEO,GET_ACTION_VIDEO_MULTIPART]`
+    - changes of response param
+      - `+ excute_failed_msg`
+  - **Update2dModelTrainingJob**
+    - changes of request param
+      - `+ action_video_multipart_count`
+      - `+ samples_basic_info`
+      - `+ supported_service`
+      - `+ audio_source_type`
+      - `+ command_message: enum value [CONFIRM_ACTION_VIDEO,GET_ACTION_VIDEO_MULTIPART]`
+    - changes of response param
+      - `+ audio_upload_url`
+      - `+ action_video_upload_url`
+  - **Show2dModelTrainingJob**
+    - changes of response param
+      - `+ verify_video_matting_info`
+      - `+ audio_source_type`
+      - `+ audio_file_download_url`
+      - `+ is_flexus`
+      - `+ action_video_download_url`
+      - `+ flexus_retry_count`
+      - `+ voice_train_job_id`
+      - `+ samples`
+      - `+ supported_service`
+      - `+ state: enum value [WAIT_TRAINING_DATA_PREPROCESS,MANUAL_STOP_INFERENCE_DATA_PREPROCESS,MANUAL_STOP_TRAIN,MANUAL_STOP_TRAINING_DATA_PREPROCESS,MANUAL_STOP_BEAUTY_PREPROCESS,WAIT_ADMIN_CONFIRM,COMPILING,WAIT_COMPILE,COMPILE_FAILED,WAIT_BEAUTY,WAIT_GENERATE_ACTION,WAIT_ARRANGE,ACTION_GENERATE_DATA_PROCESSING,MANUAL_STOP_ACTION_GENERATE_DATA_PROCESSING,MANUAL_STOP_ACTION_GENERATE_ORI_PROCESSING,ACTION_GENERATE_ORI_PROCESSING,ACTION_GENERATE_DATA_FAILED,ACTION_GENERATE_ORI_FAILED,ACTION_GENERATE_ORI_SUCCESS,GENERATE_ACTION_PREPROCESS_FAILED,WAIT_ADMIN_CALIBRATION,BEAUTY_VIDEO_FILE_UPLOADED,BEAUTYFACE_SUCCESS,BEAUTYFACE_FAILED,WAIT_BEAUTY_VIDEO_FILE_UPLOAD,BEAUTYFACE_ROCESSING]`
+      - `+ operation_logs.log_type: enum value [ADMIN_UPDATE_BEAUTY_LEVEL,SYSTEM_ACTION_GENERATE_DATA_PREPROCESSING,SYSTEM_ACTION_GENERATE_DATA_SUCCESS,SYSTEM_ACTION_GENERATE_ORI_SUCCESS,SYSTEM_ACTION_GENERATE_DATA_FAILED,SYSTEM_ACTION_GENERATE_ORI_FAILED,SYSTEM_ACTION_GENERATE_ORI_PREPROCESSING,ADMIN_STOP_TRAINING_DATA_PREPROCESS,ADMIN_STOP_BEAUTY_PREPROCESS,ADMIN_STOP_INFERENCE_DATA_PREPROCESS,ADMIN_UPDATE_ACTION_VIDEO,ADMIN_RESET,ADMIN_ACCEPT,USER_REPAIR,SYSTEM_UPDATE_COVER,ADMIN_SET_SILENCE_REPEAT_NUM,SYSTEM_BEAUTY_PREPROCESSING,SYSTEM_BEAUTY_PREPROCESS_FAILED,ADMIN_CONFIRM_ACTION,ADMIN_STOP_ACTION_GENERATE_DATA_PREPROCESS,ADMIN_STOP_ACTION_GENERATE_ORI_PREPROCESS,SYSTEM_BEAUTY_PREPROCESS_SUCCESS,ADMIN_UPDATE_COMPILE,ADMIN_UPDATE_INFERENCE_DATA_PROCESS_VIDEO,SYSTEM_EXECUTE_COMPILE,SYSTEM_EXECUTE_BEAUTY,ADMIN_UPDATE_GENERAL_CONFIG,STOP_COMPILE]`
+  - **Create2DDigitalHumanVideo**
+    - changes of request param
+      - `+ shoot_scripts.shoot_script.audio_drive_action_config`
+  - **Show2DDigitalHumanVideo**
+    - changes of response param
+      - `+ shoot_scripts.shoot_script.audio_drive_action_config`
+  - **CreatePhotoDigitalHumanVideo**
+    - changes of request param
+      - `+ shoot_scripts.shoot_script.audio_drive_action_config`
+  - **ShowPhotoDigitalHumanVideo**
+    - changes of response param
+      - `+ shoot_scripts.shoot_script.audio_drive_action_config`
+  - **CreateVideoScripts**
+    - changes of request param
+      - `+ shoot_scripts.shoot_script.audio_drive_action_config`
+  - **ShowVideoScript**
+    - changes of response param
+      - `+ shoot_scripts.shoot_script.audio_drive_action_config`
+  - **UpdateVideoScript**
+    - changes of request param
+      - `+ shoot_scripts.shoot_script.audio_drive_action_config`
+
+### HuaweiCloud SDK VPCEP
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListServiceDetails**
+    - changes of response param
+      - `+ ip`
+  - **UpdateEndpointService**
+    - changes of request param
+      - `+ ip`
+    - changes of response param
+      - `+ ip`
+  - **CreateEndpointService**
+    - changes of request param
+      - `+ ip`
+    - changes of response param
+      - `+ ip`
+  - **ListEndpointService**
+    - changes of request param
+      - `+ net_type`
+    - changes of response param
+      - `+ endpoint_services.ip`
+
 # 3.1.113 2024-09-05
 
 ### HuaweiCloud SDK BMS

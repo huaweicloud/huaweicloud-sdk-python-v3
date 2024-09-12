@@ -33,12 +33,17 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         'matting_type': 'str',
         'model_resolution': 'str',
         'app_user_id': 'str',
+        'is_flexus': 'bool',
         'training_video_download_url': 'str',
         'id_card_image1_download_url': 'str',
         'id_card_image2_download_url': 'str',
         'grant_file_download_url': 'str',
+        'action_video_download_url': 'str',
+        'audio_file_download_url': 'str',
         'operation_logs': 'list[OperationLogInfo]',
+        'verify_video_matting_info': 'list[VerifyVideoMattingInfo]',
         'comment_logs': 'list[CommentLogInfo]',
+        'samples': 'list[ActionSampleInfo]',
         'is_mask_file_uploaded': 'bool',
         'mask_file_download_url': 'str',
         'verify_video_download_url': 'str',
@@ -48,6 +53,10 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         'inference_data_process_eye_correction_mark_info': 'InferenceEyeCorrectionMarkInfo',
         'is_background_replacement': 'bool',
         'worker_type': 'list[str]',
+        'voice_train_job_id': 'str',
+        'flexus_retry_count': 'int',
+        'audio_source_type': 'str',
+        'supported_service': 'list[SupportedServiceEnum]',
         'x_request_id': 'str'
     }
 
@@ -67,12 +76,17 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         'matting_type': 'matting_type',
         'model_resolution': 'model_resolution',
         'app_user_id': 'app_user_id',
+        'is_flexus': 'is_flexus',
         'training_video_download_url': 'training_video_download_url',
         'id_card_image1_download_url': 'id_card_image1_download_url',
         'id_card_image2_download_url': 'id_card_image2_download_url',
         'grant_file_download_url': 'grant_file_download_url',
+        'action_video_download_url': 'action_video_download_url',
+        'audio_file_download_url': 'audio_file_download_url',
         'operation_logs': 'operation_logs',
+        'verify_video_matting_info': 'verify_video_matting_info',
         'comment_logs': 'comment_logs',
+        'samples': 'samples',
         'is_mask_file_uploaded': 'is_mask_file_uploaded',
         'mask_file_download_url': 'mask_file_download_url',
         'verify_video_download_url': 'verify_video_download_url',
@@ -82,10 +96,14 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         'inference_data_process_eye_correction_mark_info': 'inference_data_process_eye_correction_mark_info',
         'is_background_replacement': 'is_background_replacement',
         'worker_type': 'worker_type',
+        'voice_train_job_id': 'voice_train_job_id',
+        'flexus_retry_count': 'flexus_retry_count',
+        'audio_source_type': 'audio_source_type',
+        'supported_service': 'supported_service',
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, job_id=None, name=None, state=None, asset_id=None, project_id=None, cover_download_url=None, last_update_time=None, create_time=None, contact=None, batch_name=None, tags=None, model_version=None, matting_type=None, model_resolution=None, app_user_id=None, training_video_download_url=None, id_card_image1_download_url=None, id_card_image2_download_url=None, grant_file_download_url=None, operation_logs=None, comment_logs=None, is_mask_file_uploaded=None, mask_file_download_url=None, verify_video_download_url=None, markable_video_download_url=None, inference_data_process_video_mark_info=None, inference_data_process_action_mark_info=None, inference_data_process_eye_correction_mark_info=None, is_background_replacement=None, worker_type=None, x_request_id=None):
+    def __init__(self, job_id=None, name=None, state=None, asset_id=None, project_id=None, cover_download_url=None, last_update_time=None, create_time=None, contact=None, batch_name=None, tags=None, model_version=None, matting_type=None, model_resolution=None, app_user_id=None, is_flexus=None, training_video_download_url=None, id_card_image1_download_url=None, id_card_image2_download_url=None, grant_file_download_url=None, action_video_download_url=None, audio_file_download_url=None, operation_logs=None, verify_video_matting_info=None, comment_logs=None, samples=None, is_mask_file_uploaded=None, mask_file_download_url=None, verify_video_download_url=None, markable_video_download_url=None, inference_data_process_video_mark_info=None, inference_data_process_action_mark_info=None, inference_data_process_eye_correction_mark_info=None, is_background_replacement=None, worker_type=None, voice_train_job_id=None, flexus_retry_count=None, audio_source_type=None, supported_service=None, x_request_id=None):
         """Show2dModelTrainingJobResponse
 
         The model defined in huaweicloud sdk
@@ -94,7 +112,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         :type job_id: str
         :param name: 分身数字人模型名称。该名称会作为资产库中分身数字人模型资产名称。
         :type name: str
-        :param state: 任务的状态。 * WAIT_FILE_UPLOAD：待上传文件 * AUTO_VERIFYING：自动审核中 * AUTO_VERIFY_FAILED：自动审核失败 * MANUAL_VERIFYING：人工审核中 * MANUAL_VERIFY_FAILED：人工审核失败 * MANUAL_VERIFY_SUCCESS：审核通过，等待预处理资源 * TRAINING_DATA_PREPROCESSING：训练数据预处理中 * TRAINING_DATA_PREPROCESS_FAILED：训练数据预处理失败 * TRAINING_DATA_PREPROCESS_SUCCESS：训练数据预处理完成，等待训练资源中 * TRAINING：训练中 * TRAIN_FAILED：训练失败 * TRAIN_SUCCESS：训练完成，等待预处理资源 * INFERENCE_DATA_PREPROCESSING：推理数据预处理中 * INFERENCE_DATA_PREPROCESS_FAILED：推理数据预处理失败 * WAIT_MASK_UPLOAD：等待遮罩上传 * WAIT_MAIN_FILE_UPLOAD：等待主文件上传 * JOB_SUCCESS：训练任务完成 * WAIT_USER_CONFIRM：等待用户确认训练效果 * JOB_REJECT：驳回任务 * JOB_PENDING：挂起任务 * JOB_FINISH：任务结束，是最终状态，不支持修改此状态。
+        :param state: 任务的状态。 * WAIT_FILE_UPLOAD: 待上传文件 * AUTO_VERIFYING: 自动审核中 * AUTO_VERIFY_FAILED: 自动审核失败 * MANUAL_VERIFYING: 人工审核中 * WAIT_TRAINING_DATA_PREPROCESS: 人工审核中 * MANUAL_VERIFY_FAILED: 人工审核失败 * MANUAL_VERIFY_SUCCESS: 审核通过，等待预处理资源 * TRAINING_DATA_PREPROCESSING: 训练数据预处理中 * TRAINING_DATA_PREPROCESS_FAILED: 训练数据预处理失败 * TRAINING_DATA_PREPROCESS_SUCCESS: 训练数据预处理完成，等待训练资源中 * TRAINING: 训练中 * TRAIN_FAILED: 训练失败 * TRAIN_SUCCESS: 训练完成，等待预处理资源 * INFERENCE_DATA_PREPROCESSING: 推理数据预处理中 * INFERENCE_DATA_PREPROCESS_FAILED: 推理数据预处理失败 * WAIT_MASK_UPLOAD: 等待遮罩上传 * WAIT_MAIN_FILE_UPLOAD: 等待主文件上传 * JOB_SUCCESS: 训练任务完成 * MANUAL_STOP_INFERENCE_DATA_PREPROCESS: 人工中止推理预处理 * MANUAL_STOP_TRAIN: 人工中止训练 * MANUAL_STOP_TRAINING_DATA_PREPROCESS: 人工中止训练预处理 * WAIT_USER_CONFIRM: 等待用户确认训练效果 * JOB_REJECT: 驳回任务 * JOB_PENDING: 挂起任务 * WAIT_ADMIN_CONFIRM: 等待管理员审核 * JOB_FINISH: 任务结束，是最终状态，不支持修改此状态。 * COMPILING: 转编译中 * WAIT_COMPILE: 等待转编译 * COMPILE_FAILED: 转编译失败 * WAIT_GENERATE_ACTION: 等待原子动作生成 * WAIT_ARRANGE: 等待编排 * ACTION_GENERATE_DATA_PROCESSING: 原子动作生成中 * MANUAL_STOP_ACTION_GENERATE_DATA_PROCESSING: 人工中止动作生成 * MANUAL_STOP_ACTION_GENERATE_ORI_PROCESSING: 人工中止动作编排 * ACTION_GENERATE_ORI_PROCESSING: 动作编排中 * ACTION_GENERATE_DATA_FAILED: 动作生成失败 * ACTION_GENERATE_ORI_FAILED: 动作编排失败 * ACTION_GENERATE_ORI_SUCCESS: 动作编排成功 * GENERATE_ACTION_PREPROCESS_FAILED: 动作编排失败 * WAIT_ADMIN_CALIBRATION: 等待管理员确认动作信息
         :type state: str
         :param asset_id: 模型资产ID。
         :type asset_id: str
@@ -120,6 +138,8 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         :type model_resolution: str
         :param app_user_id: 自定义用户id（如创建任务时设置了X-App-UserId则会携带）。
         :type app_user_id: str
+        :param is_flexus: 是否是基础版的形象训练
+        :type is_flexus: bool
         :param training_video_download_url: 分身数字人训练视频下载URL。24小时内有效。
         :type training_video_download_url: str
         :param id_card_image1_download_url: 身份证正面照片下载URL。24小时内有效。
@@ -128,10 +148,18 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         :type id_card_image2_download_url: str
         :param grant_file_download_url: 授权书下载URL。24小时内有效。
         :type grant_file_download_url: str
+        :param action_video_download_url: 动作视频
+        :type action_video_download_url: str
+        :param audio_file_download_url: 音频文件下载url。
+        :type audio_file_download_url: str
         :param operation_logs: 操作日志列表。
         :type operation_logs: list[:class:`huaweicloudsdkmetastudio.v1.OperationLogInfo`]
+        :param verify_video_matting_info: 生成抠图验证视频时不抠图区域。
+        :type verify_video_matting_info: list[:class:`huaweicloudsdkmetastudio.v1.VerifyVideoMattingInfo`]
         :param comment_logs: 评论记录列表。
         :type comment_logs: list[:class:`huaweicloudsdkmetastudio.v1.CommentLogInfo`]
+        :param samples: 动作视频样例。
+        :type samples: list[:class:`huaweicloudsdkmetastudio.v1.ActionSampleInfo`]
         :param is_mask_file_uploaded: 遮罩文件是否已上传。
         :type is_mask_file_uploaded: bool
         :param mask_file_download_url: 遮罩下载URL。24小时内有效。
@@ -150,6 +178,14 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         :type is_background_replacement: bool
         :param worker_type: 转编译任务机型
         :type worker_type: list[str]
+        :param voice_train_job_id: 声音训练任务id。
+        :type voice_train_job_id: str
+        :param flexus_retry_count: flexus版本任务剩余可以重训的次数，每重训一次减1，减到0时不可再重训。
+        :type flexus_retry_count: int
+        :param audio_source_type: 声音来源类型 * VIDEO：视频中抽取音频 * AUDIO：单独上传的音频
+        :type audio_source_type: str
+        :param supported_service: 该任务所生成的模型支持的业务类型，可多选
+        :type supported_service: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
         :param x_request_id: 
         :type x_request_id: str
         """
@@ -171,12 +207,17 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         self._matting_type = None
         self._model_resolution = None
         self._app_user_id = None
+        self._is_flexus = None
         self._training_video_download_url = None
         self._id_card_image1_download_url = None
         self._id_card_image2_download_url = None
         self._grant_file_download_url = None
+        self._action_video_download_url = None
+        self._audio_file_download_url = None
         self._operation_logs = None
+        self._verify_video_matting_info = None
         self._comment_logs = None
+        self._samples = None
         self._is_mask_file_uploaded = None
         self._mask_file_download_url = None
         self._verify_video_download_url = None
@@ -186,6 +227,10 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         self._inference_data_process_eye_correction_mark_info = None
         self._is_background_replacement = None
         self._worker_type = None
+        self._voice_train_job_id = None
+        self._flexus_retry_count = None
+        self._audio_source_type = None
+        self._supported_service = None
         self._x_request_id = None
         self.discriminator = None
 
@@ -216,6 +261,8 @@ class Show2dModelTrainingJobResponse(SdkResponse):
             self.model_resolution = model_resolution
         if app_user_id is not None:
             self.app_user_id = app_user_id
+        if is_flexus is not None:
+            self.is_flexus = is_flexus
         if training_video_download_url is not None:
             self.training_video_download_url = training_video_download_url
         if id_card_image1_download_url is not None:
@@ -224,10 +271,18 @@ class Show2dModelTrainingJobResponse(SdkResponse):
             self.id_card_image2_download_url = id_card_image2_download_url
         if grant_file_download_url is not None:
             self.grant_file_download_url = grant_file_download_url
+        if action_video_download_url is not None:
+            self.action_video_download_url = action_video_download_url
+        if audio_file_download_url is not None:
+            self.audio_file_download_url = audio_file_download_url
         if operation_logs is not None:
             self.operation_logs = operation_logs
+        if verify_video_matting_info is not None:
+            self.verify_video_matting_info = verify_video_matting_info
         if comment_logs is not None:
             self.comment_logs = comment_logs
+        if samples is not None:
+            self.samples = samples
         if is_mask_file_uploaded is not None:
             self.is_mask_file_uploaded = is_mask_file_uploaded
         if mask_file_download_url is not None:
@@ -246,6 +301,14 @@ class Show2dModelTrainingJobResponse(SdkResponse):
             self.is_background_replacement = is_background_replacement
         if worker_type is not None:
             self.worker_type = worker_type
+        if voice_train_job_id is not None:
+            self.voice_train_job_id = voice_train_job_id
+        if flexus_retry_count is not None:
+            self.flexus_retry_count = flexus_retry_count
+        if audio_source_type is not None:
+            self.audio_source_type = audio_source_type
+        if supported_service is not None:
+            self.supported_service = supported_service
         if x_request_id is not None:
             self.x_request_id = x_request_id
 
@@ -297,7 +360,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
     def state(self):
         """Gets the state of this Show2dModelTrainingJobResponse.
 
-        任务的状态。 * WAIT_FILE_UPLOAD：待上传文件 * AUTO_VERIFYING：自动审核中 * AUTO_VERIFY_FAILED：自动审核失败 * MANUAL_VERIFYING：人工审核中 * MANUAL_VERIFY_FAILED：人工审核失败 * MANUAL_VERIFY_SUCCESS：审核通过，等待预处理资源 * TRAINING_DATA_PREPROCESSING：训练数据预处理中 * TRAINING_DATA_PREPROCESS_FAILED：训练数据预处理失败 * TRAINING_DATA_PREPROCESS_SUCCESS：训练数据预处理完成，等待训练资源中 * TRAINING：训练中 * TRAIN_FAILED：训练失败 * TRAIN_SUCCESS：训练完成，等待预处理资源 * INFERENCE_DATA_PREPROCESSING：推理数据预处理中 * INFERENCE_DATA_PREPROCESS_FAILED：推理数据预处理失败 * WAIT_MASK_UPLOAD：等待遮罩上传 * WAIT_MAIN_FILE_UPLOAD：等待主文件上传 * JOB_SUCCESS：训练任务完成 * WAIT_USER_CONFIRM：等待用户确认训练效果 * JOB_REJECT：驳回任务 * JOB_PENDING：挂起任务 * JOB_FINISH：任务结束，是最终状态，不支持修改此状态。
+        任务的状态。 * WAIT_FILE_UPLOAD: 待上传文件 * AUTO_VERIFYING: 自动审核中 * AUTO_VERIFY_FAILED: 自动审核失败 * MANUAL_VERIFYING: 人工审核中 * WAIT_TRAINING_DATA_PREPROCESS: 人工审核中 * MANUAL_VERIFY_FAILED: 人工审核失败 * MANUAL_VERIFY_SUCCESS: 审核通过，等待预处理资源 * TRAINING_DATA_PREPROCESSING: 训练数据预处理中 * TRAINING_DATA_PREPROCESS_FAILED: 训练数据预处理失败 * TRAINING_DATA_PREPROCESS_SUCCESS: 训练数据预处理完成，等待训练资源中 * TRAINING: 训练中 * TRAIN_FAILED: 训练失败 * TRAIN_SUCCESS: 训练完成，等待预处理资源 * INFERENCE_DATA_PREPROCESSING: 推理数据预处理中 * INFERENCE_DATA_PREPROCESS_FAILED: 推理数据预处理失败 * WAIT_MASK_UPLOAD: 等待遮罩上传 * WAIT_MAIN_FILE_UPLOAD: 等待主文件上传 * JOB_SUCCESS: 训练任务完成 * MANUAL_STOP_INFERENCE_DATA_PREPROCESS: 人工中止推理预处理 * MANUAL_STOP_TRAIN: 人工中止训练 * MANUAL_STOP_TRAINING_DATA_PREPROCESS: 人工中止训练预处理 * WAIT_USER_CONFIRM: 等待用户确认训练效果 * JOB_REJECT: 驳回任务 * JOB_PENDING: 挂起任务 * WAIT_ADMIN_CONFIRM: 等待管理员审核 * JOB_FINISH: 任务结束，是最终状态，不支持修改此状态。 * COMPILING: 转编译中 * WAIT_COMPILE: 等待转编译 * COMPILE_FAILED: 转编译失败 * WAIT_GENERATE_ACTION: 等待原子动作生成 * WAIT_ARRANGE: 等待编排 * ACTION_GENERATE_DATA_PROCESSING: 原子动作生成中 * MANUAL_STOP_ACTION_GENERATE_DATA_PROCESSING: 人工中止动作生成 * MANUAL_STOP_ACTION_GENERATE_ORI_PROCESSING: 人工中止动作编排 * ACTION_GENERATE_ORI_PROCESSING: 动作编排中 * ACTION_GENERATE_DATA_FAILED: 动作生成失败 * ACTION_GENERATE_ORI_FAILED: 动作编排失败 * ACTION_GENERATE_ORI_SUCCESS: 动作编排成功 * GENERATE_ACTION_PREPROCESS_FAILED: 动作编排失败 * WAIT_ADMIN_CALIBRATION: 等待管理员确认动作信息
 
         :return: The state of this Show2dModelTrainingJobResponse.
         :rtype: str
@@ -308,7 +371,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
     def state(self, state):
         """Sets the state of this Show2dModelTrainingJobResponse.
 
-        任务的状态。 * WAIT_FILE_UPLOAD：待上传文件 * AUTO_VERIFYING：自动审核中 * AUTO_VERIFY_FAILED：自动审核失败 * MANUAL_VERIFYING：人工审核中 * MANUAL_VERIFY_FAILED：人工审核失败 * MANUAL_VERIFY_SUCCESS：审核通过，等待预处理资源 * TRAINING_DATA_PREPROCESSING：训练数据预处理中 * TRAINING_DATA_PREPROCESS_FAILED：训练数据预处理失败 * TRAINING_DATA_PREPROCESS_SUCCESS：训练数据预处理完成，等待训练资源中 * TRAINING：训练中 * TRAIN_FAILED：训练失败 * TRAIN_SUCCESS：训练完成，等待预处理资源 * INFERENCE_DATA_PREPROCESSING：推理数据预处理中 * INFERENCE_DATA_PREPROCESS_FAILED：推理数据预处理失败 * WAIT_MASK_UPLOAD：等待遮罩上传 * WAIT_MAIN_FILE_UPLOAD：等待主文件上传 * JOB_SUCCESS：训练任务完成 * WAIT_USER_CONFIRM：等待用户确认训练效果 * JOB_REJECT：驳回任务 * JOB_PENDING：挂起任务 * JOB_FINISH：任务结束，是最终状态，不支持修改此状态。
+        任务的状态。 * WAIT_FILE_UPLOAD: 待上传文件 * AUTO_VERIFYING: 自动审核中 * AUTO_VERIFY_FAILED: 自动审核失败 * MANUAL_VERIFYING: 人工审核中 * WAIT_TRAINING_DATA_PREPROCESS: 人工审核中 * MANUAL_VERIFY_FAILED: 人工审核失败 * MANUAL_VERIFY_SUCCESS: 审核通过，等待预处理资源 * TRAINING_DATA_PREPROCESSING: 训练数据预处理中 * TRAINING_DATA_PREPROCESS_FAILED: 训练数据预处理失败 * TRAINING_DATA_PREPROCESS_SUCCESS: 训练数据预处理完成，等待训练资源中 * TRAINING: 训练中 * TRAIN_FAILED: 训练失败 * TRAIN_SUCCESS: 训练完成，等待预处理资源 * INFERENCE_DATA_PREPROCESSING: 推理数据预处理中 * INFERENCE_DATA_PREPROCESS_FAILED: 推理数据预处理失败 * WAIT_MASK_UPLOAD: 等待遮罩上传 * WAIT_MAIN_FILE_UPLOAD: 等待主文件上传 * JOB_SUCCESS: 训练任务完成 * MANUAL_STOP_INFERENCE_DATA_PREPROCESS: 人工中止推理预处理 * MANUAL_STOP_TRAIN: 人工中止训练 * MANUAL_STOP_TRAINING_DATA_PREPROCESS: 人工中止训练预处理 * WAIT_USER_CONFIRM: 等待用户确认训练效果 * JOB_REJECT: 驳回任务 * JOB_PENDING: 挂起任务 * WAIT_ADMIN_CONFIRM: 等待管理员审核 * JOB_FINISH: 任务结束，是最终状态，不支持修改此状态。 * COMPILING: 转编译中 * WAIT_COMPILE: 等待转编译 * COMPILE_FAILED: 转编译失败 * WAIT_GENERATE_ACTION: 等待原子动作生成 * WAIT_ARRANGE: 等待编排 * ACTION_GENERATE_DATA_PROCESSING: 原子动作生成中 * MANUAL_STOP_ACTION_GENERATE_DATA_PROCESSING: 人工中止动作生成 * MANUAL_STOP_ACTION_GENERATE_ORI_PROCESSING: 人工中止动作编排 * ACTION_GENERATE_ORI_PROCESSING: 动作编排中 * ACTION_GENERATE_DATA_FAILED: 动作生成失败 * ACTION_GENERATE_ORI_FAILED: 动作编排失败 * ACTION_GENERATE_ORI_SUCCESS: 动作编排成功 * GENERATE_ACTION_PREPROCESS_FAILED: 动作编排失败 * WAIT_ADMIN_CALIBRATION: 等待管理员确认动作信息
 
         :param state: The state of this Show2dModelTrainingJobResponse.
         :type state: str
@@ -580,6 +643,28 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         self._app_user_id = app_user_id
 
     @property
+    def is_flexus(self):
+        """Gets the is_flexus of this Show2dModelTrainingJobResponse.
+
+        是否是基础版的形象训练
+
+        :return: The is_flexus of this Show2dModelTrainingJobResponse.
+        :rtype: bool
+        """
+        return self._is_flexus
+
+    @is_flexus.setter
+    def is_flexus(self, is_flexus):
+        """Sets the is_flexus of this Show2dModelTrainingJobResponse.
+
+        是否是基础版的形象训练
+
+        :param is_flexus: The is_flexus of this Show2dModelTrainingJobResponse.
+        :type is_flexus: bool
+        """
+        self._is_flexus = is_flexus
+
+    @property
     def training_video_download_url(self):
         """Gets the training_video_download_url of this Show2dModelTrainingJobResponse.
 
@@ -668,6 +753,50 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         self._grant_file_download_url = grant_file_download_url
 
     @property
+    def action_video_download_url(self):
+        """Gets the action_video_download_url of this Show2dModelTrainingJobResponse.
+
+        动作视频
+
+        :return: The action_video_download_url of this Show2dModelTrainingJobResponse.
+        :rtype: str
+        """
+        return self._action_video_download_url
+
+    @action_video_download_url.setter
+    def action_video_download_url(self, action_video_download_url):
+        """Sets the action_video_download_url of this Show2dModelTrainingJobResponse.
+
+        动作视频
+
+        :param action_video_download_url: The action_video_download_url of this Show2dModelTrainingJobResponse.
+        :type action_video_download_url: str
+        """
+        self._action_video_download_url = action_video_download_url
+
+    @property
+    def audio_file_download_url(self):
+        """Gets the audio_file_download_url of this Show2dModelTrainingJobResponse.
+
+        音频文件下载url。
+
+        :return: The audio_file_download_url of this Show2dModelTrainingJobResponse.
+        :rtype: str
+        """
+        return self._audio_file_download_url
+
+    @audio_file_download_url.setter
+    def audio_file_download_url(self, audio_file_download_url):
+        """Sets the audio_file_download_url of this Show2dModelTrainingJobResponse.
+
+        音频文件下载url。
+
+        :param audio_file_download_url: The audio_file_download_url of this Show2dModelTrainingJobResponse.
+        :type audio_file_download_url: str
+        """
+        self._audio_file_download_url = audio_file_download_url
+
+    @property
     def operation_logs(self):
         """Gets the operation_logs of this Show2dModelTrainingJobResponse.
 
@@ -690,6 +819,28 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         self._operation_logs = operation_logs
 
     @property
+    def verify_video_matting_info(self):
+        """Gets the verify_video_matting_info of this Show2dModelTrainingJobResponse.
+
+        生成抠图验证视频时不抠图区域。
+
+        :return: The verify_video_matting_info of this Show2dModelTrainingJobResponse.
+        :rtype: list[:class:`huaweicloudsdkmetastudio.v1.VerifyVideoMattingInfo`]
+        """
+        return self._verify_video_matting_info
+
+    @verify_video_matting_info.setter
+    def verify_video_matting_info(self, verify_video_matting_info):
+        """Sets the verify_video_matting_info of this Show2dModelTrainingJobResponse.
+
+        生成抠图验证视频时不抠图区域。
+
+        :param verify_video_matting_info: The verify_video_matting_info of this Show2dModelTrainingJobResponse.
+        :type verify_video_matting_info: list[:class:`huaweicloudsdkmetastudio.v1.VerifyVideoMattingInfo`]
+        """
+        self._verify_video_matting_info = verify_video_matting_info
+
+    @property
     def comment_logs(self):
         """Gets the comment_logs of this Show2dModelTrainingJobResponse.
 
@@ -710,6 +861,28 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         :type comment_logs: list[:class:`huaweicloudsdkmetastudio.v1.CommentLogInfo`]
         """
         self._comment_logs = comment_logs
+
+    @property
+    def samples(self):
+        """Gets the samples of this Show2dModelTrainingJobResponse.
+
+        动作视频样例。
+
+        :return: The samples of this Show2dModelTrainingJobResponse.
+        :rtype: list[:class:`huaweicloudsdkmetastudio.v1.ActionSampleInfo`]
+        """
+        return self._samples
+
+    @samples.setter
+    def samples(self, samples):
+        """Sets the samples of this Show2dModelTrainingJobResponse.
+
+        动作视频样例。
+
+        :param samples: The samples of this Show2dModelTrainingJobResponse.
+        :type samples: list[:class:`huaweicloudsdkmetastudio.v1.ActionSampleInfo`]
+        """
+        self._samples = samples
 
     @property
     def is_mask_file_uploaded(self):
@@ -896,6 +1069,94 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         :type worker_type: list[str]
         """
         self._worker_type = worker_type
+
+    @property
+    def voice_train_job_id(self):
+        """Gets the voice_train_job_id of this Show2dModelTrainingJobResponse.
+
+        声音训练任务id。
+
+        :return: The voice_train_job_id of this Show2dModelTrainingJobResponse.
+        :rtype: str
+        """
+        return self._voice_train_job_id
+
+    @voice_train_job_id.setter
+    def voice_train_job_id(self, voice_train_job_id):
+        """Sets the voice_train_job_id of this Show2dModelTrainingJobResponse.
+
+        声音训练任务id。
+
+        :param voice_train_job_id: The voice_train_job_id of this Show2dModelTrainingJobResponse.
+        :type voice_train_job_id: str
+        """
+        self._voice_train_job_id = voice_train_job_id
+
+    @property
+    def flexus_retry_count(self):
+        """Gets the flexus_retry_count of this Show2dModelTrainingJobResponse.
+
+        flexus版本任务剩余可以重训的次数，每重训一次减1，减到0时不可再重训。
+
+        :return: The flexus_retry_count of this Show2dModelTrainingJobResponse.
+        :rtype: int
+        """
+        return self._flexus_retry_count
+
+    @flexus_retry_count.setter
+    def flexus_retry_count(self, flexus_retry_count):
+        """Sets the flexus_retry_count of this Show2dModelTrainingJobResponse.
+
+        flexus版本任务剩余可以重训的次数，每重训一次减1，减到0时不可再重训。
+
+        :param flexus_retry_count: The flexus_retry_count of this Show2dModelTrainingJobResponse.
+        :type flexus_retry_count: int
+        """
+        self._flexus_retry_count = flexus_retry_count
+
+    @property
+    def audio_source_type(self):
+        """Gets the audio_source_type of this Show2dModelTrainingJobResponse.
+
+        声音来源类型 * VIDEO：视频中抽取音频 * AUDIO：单独上传的音频
+
+        :return: The audio_source_type of this Show2dModelTrainingJobResponse.
+        :rtype: str
+        """
+        return self._audio_source_type
+
+    @audio_source_type.setter
+    def audio_source_type(self, audio_source_type):
+        """Sets the audio_source_type of this Show2dModelTrainingJobResponse.
+
+        声音来源类型 * VIDEO：视频中抽取音频 * AUDIO：单独上传的音频
+
+        :param audio_source_type: The audio_source_type of this Show2dModelTrainingJobResponse.
+        :type audio_source_type: str
+        """
+        self._audio_source_type = audio_source_type
+
+    @property
+    def supported_service(self):
+        """Gets the supported_service of this Show2dModelTrainingJobResponse.
+
+        该任务所生成的模型支持的业务类型，可多选
+
+        :return: The supported_service of this Show2dModelTrainingJobResponse.
+        :rtype: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
+        """
+        return self._supported_service
+
+    @supported_service.setter
+    def supported_service(self, supported_service):
+        """Sets the supported_service of this Show2dModelTrainingJobResponse.
+
+        该任务所生成的模型支持的业务类型，可多选
+
+        :param supported_service: The supported_service of this Show2dModelTrainingJobResponse.
+        :type supported_service: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
+        """
+        self._supported_service = supported_service
 
     @property
     def x_request_id(self):

@@ -57,7 +57,7 @@ class DigitalHumanVideo:
         :type start_time: str
         :param end_time: 数字人视频制作结束时间。
         :type end_time: str
-        :param duration: 数字人视频内容时长。
+        :param duration: **参数解释**： 数字人视频内容时长。
         :type duration: float
         :param output_asset_config: 
         :type output_asset_config: :class:`huaweicloudsdkmetastudio.v1.OutputAssetInfo`
@@ -216,7 +216,7 @@ class DigitalHumanVideo:
     def duration(self):
         """Gets the duration of this DigitalHumanVideo.
 
-        数字人视频内容时长。
+        **参数解释**： 数字人视频内容时长。
 
         :return: The duration of this DigitalHumanVideo.
         :rtype: float
@@ -227,7 +227,7 @@ class DigitalHumanVideo:
     def duration(self, duration):
         """Sets the duration of this DigitalHumanVideo.
 
-        数字人视频内容时长。
+        **参数解释**： 数字人视频内容时长。
 
         :param duration: The duration of this DigitalHumanVideo.
         :type duration: float

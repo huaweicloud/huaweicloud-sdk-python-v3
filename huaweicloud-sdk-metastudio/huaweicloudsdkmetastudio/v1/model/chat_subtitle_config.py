@@ -35,13 +35,13 @@ class ChatSubtitleConfig:
 
         The model defined in huaweicloud sdk
 
-        :param dx: 字幕左上角像素点坐标。  &gt; *横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
+        :param dx: **参数解释**： 字幕左上角像素点坐标。  横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
         :type dx: int
-        :param dy: 字幕左上角像素点坐标。  &gt; *横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
+        :param dy: **参数解释**： 字幕左上角像素点坐标。  横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
         :type dy: int
-        :param width: 图层图片宽度像素值（相对画布大小）。 &gt; 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。
+        :param width: **参数解释**： 图层图片宽度像素值（相对画布大小）。 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。
         :type width: int
-        :param height: 图层图片高度像素值（相对画布大小）。 &gt; 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。
+        :param height: **参数解释**： 图层图片高度像素值（相对画布大小）。 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。
         :type height: int
         """
         
@@ -66,7 +66,7 @@ class ChatSubtitleConfig:
     def dx(self):
         """Gets the dx of this ChatSubtitleConfig.
 
-        字幕左上角像素点坐标。  > *横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
+        **参数解释**： 字幕左上角像素点坐标。  横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
 
         :return: The dx of this ChatSubtitleConfig.
         :rtype: int
@@ -77,7 +77,7 @@ class ChatSubtitleConfig:
     def dx(self, dx):
         """Sets the dx of this ChatSubtitleConfig.
 
-        字幕左上角像素点坐标。  > *横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
+        **参数解释**： 字幕左上角像素点坐标。  横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
 
         :param dx: The dx of this ChatSubtitleConfig.
         :type dx: int
@@ -88,7 +88,7 @@ class ChatSubtitleConfig:
     def dy(self):
         """Gets the dy of this ChatSubtitleConfig.
 
-        字幕左上角像素点坐标。  > *横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
+        **参数解释**： 字幕左上角像素点坐标。  横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
 
         :return: The dy of this ChatSubtitleConfig.
         :rtype: int
@@ -99,7 +99,7 @@ class ChatSubtitleConfig:
     def dy(self, dy):
         """Sets the dy of this ChatSubtitleConfig.
 
-        字幕左上角像素点坐标。  > *横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
+        **参数解释**： 字幕左上角像素点坐标。  横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
 
         :param dy: The dy of this ChatSubtitleConfig.
         :type dy: int
@@ -110,7 +110,7 @@ class ChatSubtitleConfig:
     def width(self):
         """Gets the width of this ChatSubtitleConfig.
 
-        图层图片宽度像素值（相对画布大小）。 > 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。
+        **参数解释**： 图层图片宽度像素值（相对画布大小）。 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。
 
         :return: The width of this ChatSubtitleConfig.
         :rtype: int
@@ -121,7 +121,7 @@ class ChatSubtitleConfig:
     def width(self, width):
         """Sets the width of this ChatSubtitleConfig.
 
-        图层图片宽度像素值（相对画布大小）。 > 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。
+        **参数解释**： 图层图片宽度像素值（相对画布大小）。 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。
 
         :param width: The width of this ChatSubtitleConfig.
         :type width: int
@@ -132,7 +132,7 @@ class ChatSubtitleConfig:
     def height(self):
         """Gets the height of this ChatSubtitleConfig.
 
-        图层图片高度像素值（相对画布大小）。 > 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。
+        **参数解释**： 图层图片高度像素值（相对画布大小）。 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。
 
         :return: The height of this ChatSubtitleConfig.
         :rtype: int
@@ -143,7 +143,7 @@ class ChatSubtitleConfig:
     def height(self, height):
         """Sets the height of this ChatSubtitleConfig.
 
-        图层图片高度像素值（相对画布大小）。 > 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。
+        **参数解释**： 图层图片高度像素值（相对画布大小）。 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。
 
         :param height: The height of this ChatSubtitleConfig.
         :type height: int

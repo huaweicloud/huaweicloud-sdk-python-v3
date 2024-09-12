@@ -24,7 +24,8 @@ class ListEndpointServiceRequest:
         'sort_dir': 'str',
         'limit': 'int',
         'offset': 'int',
-        'public_border_group': 'str'
+        'public_border_group': 'str',
+        'net_type': 'str'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class ListEndpointServiceRequest:
         'sort_dir': 'sort_dir',
         'limit': 'limit',
         'offset': 'offset',
-        'public_border_group': 'public_border_group'
+        'public_border_group': 'public_border_group',
+        'net_type': 'net_type'
     }
 
-    def __init__(self, endpoint_service_name=None, id=None, status=None, sort_key=None, sort_dir=None, limit=None, offset=None, public_border_group=None):
+    def __init__(self, endpoint_service_name=None, id=None, status=None, sort_key=None, sort_dir=None, limit=None, offset=None, public_border_group=None, net_type=None):
         """ListEndpointServiceRequest
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class ListEndpointServiceRequest:
         :type offset: int
         :param public_border_group: 筛选结果中匹配边缘属性的EPS
         :type public_border_group: str
+        :param net_type: 后端类型
+        :type net_type: str
         """
         
         
@@ -71,6 +75,7 @@ class ListEndpointServiceRequest:
         self._limit = None
         self._offset = None
         self._public_border_group = None
+        self._net_type = None
         self.discriminator = None
 
         if endpoint_service_name is not None:
@@ -89,6 +94,8 @@ class ListEndpointServiceRequest:
             self.offset = offset
         if public_border_group is not None:
             self.public_border_group = public_border_group
+        if net_type is not None:
+            self.net_type = net_type
 
     @property
     def endpoint_service_name(self):
@@ -265,6 +272,28 @@ class ListEndpointServiceRequest:
         :type public_border_group: str
         """
         self._public_border_group = public_border_group
+
+    @property
+    def net_type(self):
+        """Gets the net_type of this ListEndpointServiceRequest.
+
+        后端类型
+
+        :return: The net_type of this ListEndpointServiceRequest.
+        :rtype: str
+        """
+        return self._net_type
+
+    @net_type.setter
+    def net_type(self, net_type):
+        """Sets the net_type of this ListEndpointServiceRequest.
+
+        后端类型
+
+        :param net_type: The net_type of this ListEndpointServiceRequest.
+        :type net_type: str
+        """
+        self._net_type = net_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

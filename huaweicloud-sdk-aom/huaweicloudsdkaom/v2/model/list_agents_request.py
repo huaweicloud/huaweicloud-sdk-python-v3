@@ -31,9 +31,9 @@ class ListAgentsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: - 查询集群主机时，填写集群id。 - 查询用户自定义主机时，填写“apm”。
+        :param cluster_id: - 查询集群主机时，填写集群id。 - 查询用户自定义主机时，填写“APM”。
         :type cluster_id: str
-        :param namespace: - 查询集群主机时，填写命名空间。 - 查询用户自定义主机时，填写“apm”。
+        :param namespace: - 查询集群主机时，填写命名空间。 - 查询用户自定义主机时，填写“APM”。
         :type namespace: str
         """
         
@@ -50,7 +50,7 @@ class ListAgentsRequest:
     def cluster_id(self):
         """Gets the cluster_id of this ListAgentsRequest.
 
-        - 查询集群主机时，填写集群id。 - 查询用户自定义主机时，填写“apm”。
+        - 查询集群主机时，填写集群id。 - 查询用户自定义主机时，填写“APM”。
 
         :return: The cluster_id of this ListAgentsRequest.
         :rtype: str
@@ -61,7 +61,7 @@ class ListAgentsRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this ListAgentsRequest.
 
-        - 查询集群主机时，填写集群id。 - 查询用户自定义主机时，填写“apm”。
+        - 查询集群主机时，填写集群id。 - 查询用户自定义主机时，填写“APM”。
 
         :param cluster_id: The cluster_id of this ListAgentsRequest.
         :type cluster_id: str
@@ -72,7 +72,7 @@ class ListAgentsRequest:
     def namespace(self):
         """Gets the namespace of this ListAgentsRequest.
 
-        - 查询集群主机时，填写命名空间。 - 查询用户自定义主机时，填写“apm”。
+        - 查询集群主机时，填写命名空间。 - 查询用户自定义主机时，填写“APM”。
 
         :return: The namespace of this ListAgentsRequest.
         :rtype: str
@@ -83,7 +83,7 @@ class ListAgentsRequest:
     def namespace(self, namespace):
         """Sets the namespace of this ListAgentsRequest.
 
-        - 查询集群主机时，填写命名空间。 - 查询用户自定义主机时，填写“apm”。
+        - 查询集群主机时，填写命名空间。 - 查询用户自定义主机时，填写“APM”。
 
         :param namespace: The namespace of this ListAgentsRequest.
         :type namespace: str

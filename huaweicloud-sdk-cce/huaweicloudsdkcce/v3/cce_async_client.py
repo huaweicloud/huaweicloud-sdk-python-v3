@@ -105,6 +105,76 @@ class CceAsyncClient(Client):
 
         return http_info
 
+    def add_nodes_to_node_pool_async(self, request):
+        """自定义节点池纳管节点
+
+        该API用于在指定集群自定义节点池下纳管节点。竞价实例不支持纳管。
+        &gt;集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AddNodesToNodePool
+        :type request: :class:`huaweicloudsdkcce.v3.AddNodesToNodePoolRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.AddNodesToNodePoolResponse`
+        """
+        http_info = self._add_nodes_to_node_pool_http_info(request)
+        return self._call_api(**http_info)
+
+    def add_nodes_to_node_pool_async_invoker(self, request):
+        http_info = self._add_nodes_to_node_pool_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_nodes_to_node_pool_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/nodepools/{nodepool_id}/nodes/add",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddNodesToNodePoolResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'nodepool_id' in local_var_params:
+            path_params['nodepool_id'] = local_var_params['nodepool_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def awake_cluster_async(self, request):
         """集群唤醒
 
@@ -208,75 +278,6 @@ class CceAsyncClient(Client):
         path_params = {}
         if 'cluster_id' in local_var_params:
             path_params['cluster_id'] = local_var_params['cluster_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def batch_create_delete_resource_tags_async(self, request):
-        """绑定、删除资源标签，创建集群时供EPS调用；EPS页面迁移集群企业项目时调用
-
-        该API用于绑定、删除资源标签，创建集群时供EPS调用；EPS页面迁移集群企业项目时调用
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for BatchCreateDeleteResourceTags
-        :type request: :class:`huaweicloudsdkcce.v3.BatchCreateDeleteResourceTagsRequest`
-        :rtype: :class:`huaweicloudsdkcce.v3.BatchCreateDeleteResourceTagsResponse`
-        """
-        http_info = self._batch_create_delete_resource_tags_http_info(request)
-        return self._call_api(**http_info)
-
-    def batch_create_delete_resource_tags_async_invoker(self, request):
-        http_info = self._batch_create_delete_resource_tags_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _batch_create_delete_resource_tags_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/cce/v1/{project_id}/{resource_type}/{resource_id}/tags/action",
-            "request_type": request.__class__.__name__,
-            "response_type": "BatchCreateDeleteResourceTagsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'resource_type' in local_var_params:
-            path_params['resource_type'] = local_var_params['resource_type']
-        if 'resource_id' in local_var_params:
-            path_params['resource_id'] = local_var_params['resource_id']
 
         query_params = []
 
@@ -4094,71 +4095,6 @@ class CceAsyncClient(Client):
 
         return http_info
 
-    def show_customize_cluster_tags_by_project_id_async(self, request):
-        """查询集群的标签
-
-        该API用于查询集群的标签
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowCustomizeClusterTagsByProjectId
-        :type request: :class:`huaweicloudsdkcce.v3.ShowCustomizeClusterTagsByProjectIdRequest`
-        :rtype: :class:`huaweicloudsdkcce.v3.ShowCustomizeClusterTagsByProjectIdResponse`
-        """
-        http_info = self._show_customize_cluster_tags_by_project_id_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_customize_cluster_tags_by_project_id_async_invoker(self, request):
-        http_info = self._show_customize_cluster_tags_by_project_id_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_customize_cluster_tags_by_project_id_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/cce/v1/{project_id}/{resource_type}/tags",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowCustomizeClusterTagsByProjectIdResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'resource_type' in local_var_params:
-            path_params['resource_type'] = local_var_params['resource_type']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def show_job_async(self, request):
         """获取任务信息
 
@@ -4804,140 +4740,6 @@ class CceAsyncClient(Client):
             path_params['namespace'] = local_var_params['namespace']
         if 'cluster_id' in local_var_params:
             path_params['cluster_id'] = local_var_params['cluster_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_resource_instances_async(self, request):
-        """查询资源实例，EPS页面查询CCE集群资源时调用
-
-        该API用于查询资源实例，EPS页面查询CCE集群资源时调用。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowResourceInstances
-        :type request: :class:`huaweicloudsdkcce.v3.ShowResourceInstancesRequest`
-        :rtype: :class:`huaweicloudsdkcce.v3.ShowResourceInstancesResponse`
-        """
-        http_info = self._show_resource_instances_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_resource_instances_async_invoker(self, request):
-        http_info = self._show_resource_instances_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_resource_instances_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/cce/v1/{project_id}/{resource_type}/resource_instances/action",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowResourceInstancesResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'resource_type' in local_var_params:
-            path_params['resource_type'] = local_var_params['resource_type']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_resource_tags_async(self, request):
-        """查询资源标签（用于企业项目场景，企业项目是一种系统标签）
-
-        该API用于查询资源标签（用于企业项目场景，企业项目是一种系统标签）
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowResourceTags
-        :type request: :class:`huaweicloudsdkcce.v3.ShowResourceTagsRequest`
-        :rtype: :class:`huaweicloudsdkcce.v3.ShowResourceTagsResponse`
-        """
-        http_info = self._show_resource_tags_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_resource_tags_async_invoker(self, request):
-        http_info = self._show_resource_tags_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_resource_tags_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/cce/v1/{project_id}/{resource_type}/{resource_id}/tags",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowResourceTagsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'resource_type' in local_var_params:
-            path_params['resource_type'] = local_var_params['resource_type']
-        if 'resource_id' in local_var_params:
-            path_params['resource_id'] = local_var_params['resource_id']
 
         query_params = []
 

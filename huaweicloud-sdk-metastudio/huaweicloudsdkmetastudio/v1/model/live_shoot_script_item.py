@@ -35,9 +35,9 @@ class LiveShootScriptItem:
 
         The model defined in huaweicloud sdk
 
-        :param sequence_no: 剧本序号。
+        :param sequence_no: **参数解释**： 剧本序号。 **约束限制**： 不涉及
         :type sequence_no: int
-        :param title: 段落标题。
+        :param title: **参数解释**： 段落标题。 **约束限制**： 不涉及 **取值范围**： 字符长度0-256位。 **默认取值**： 不涉及。
         :type title: str
         :param text_config: 
         :type text_config: :class:`huaweicloudsdkmetastudio.v1.TextConfig`
@@ -66,7 +66,7 @@ class LiveShootScriptItem:
     def sequence_no(self):
         """Gets the sequence_no of this LiveShootScriptItem.
 
-        剧本序号。
+        **参数解释**： 剧本序号。 **约束限制**： 不涉及
 
         :return: The sequence_no of this LiveShootScriptItem.
         :rtype: int
@@ -77,7 +77,7 @@ class LiveShootScriptItem:
     def sequence_no(self, sequence_no):
         """Sets the sequence_no of this LiveShootScriptItem.
 
-        剧本序号。
+        **参数解释**： 剧本序号。 **约束限制**： 不涉及
 
         :param sequence_no: The sequence_no of this LiveShootScriptItem.
         :type sequence_no: int
@@ -88,7 +88,7 @@ class LiveShootScriptItem:
     def title(self):
         """Gets the title of this LiveShootScriptItem.
 
-        段落标题。
+        **参数解释**： 段落标题。 **约束限制**： 不涉及 **取值范围**： 字符长度0-256位。 **默认取值**： 不涉及。
 
         :return: The title of this LiveShootScriptItem.
         :rtype: str
@@ -99,7 +99,7 @@ class LiveShootScriptItem:
     def title(self, title):
         """Sets the title of this LiveShootScriptItem.
 
-        段落标题。
+        **参数解释**： 段落标题。 **约束限制**： 不涉及 **取值范围**： 字符长度0-256位。 **默认取值**： 不涉及。
 
         :param title: The title of this LiveShootScriptItem.
         :type title: str

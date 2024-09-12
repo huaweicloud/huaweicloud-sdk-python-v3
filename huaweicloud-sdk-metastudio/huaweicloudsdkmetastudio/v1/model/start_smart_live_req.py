@@ -49,17 +49,17 @@ class StartSmartLiveReq:
         :type video_config: :class:`huaweicloudsdkmetastudio.v1.VideoConfig`
         :param play_policy: 
         :type play_policy: :class:`huaweicloudsdkmetastudio.v1.PlayPolicy`
-        :param output_urls: RTMP视频推流第三方直播平台地址。
+        :param output_urls: **参数解释**： RTMP视频推流第三方直播平台地址。 &gt; 直播过程中刷新地址，需要调用COMMAND命令REFRESH_OUTPUT_URL。  **约束限制**： 不涉及 **取值范围**： 当前仅支持一条RTMP出流地址。 **默认取值**： 不涉及。
         :type output_urls: list[str]
-        :param stream_keys: RTMP视频推流第三方直播平台流秘钥，与推流地址对应。
+        :param stream_keys: **参数解释**： RTMP视频推流第三方直播平台流密钥，与推流地址对应。 &gt; 直播过程中刷新地址，需要调用COMMAND命令REFRESH_OUTPUT_URL。  **约束限制**： 不涉及 **取值范围**： 当前仅支持一条RTMP出流地址。 **默认取值**： 不涉及。
         :type stream_keys: list[str]
-        :param interaction_callback_url: 互动回调URL，含鉴权信息。
+        :param interaction_callback_url: **参数解释**： 互动回调URL，含鉴权信息。 互动规则trigger.reply_mode配置为CALLBACK时填写 **约束限制**： 不涉及 **取值范围**： 字符长度0-2048位 **默认取值**： 不涉及。
         :type interaction_callback_url: str
         :param live_event_callback_config: 
         :type live_event_callback_config: :class:`huaweicloudsdkmetastudio.v1.LiveEventCallBackConfig`
         :param rtc_callback_config: 
         :type rtc_callback_config: :class:`huaweicloudsdkmetastudio.v1.RTCLiveEventCallBackConfig`
-        :param view_mode: 横竖屏类型。默认值为：VERTICAL。 * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
+        :param view_mode: **参数解释**： 横竖屏类型。 **约束限制**： 用户无需填写，通过video_config中分辨率判断 **取值范围**： * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
         :type view_mode: str
         :param co_streamer_config: 
         :type co_streamer_config: :class:`huaweicloudsdkmetastudio.v1.CoStreamerConfig`
@@ -137,7 +137,7 @@ class StartSmartLiveReq:
     def output_urls(self):
         """Gets the output_urls of this StartSmartLiveReq.
 
-        RTMP视频推流第三方直播平台地址。
+        **参数解释**： RTMP视频推流第三方直播平台地址。 > 直播过程中刷新地址，需要调用COMMAND命令REFRESH_OUTPUT_URL。  **约束限制**： 不涉及 **取值范围**： 当前仅支持一条RTMP出流地址。 **默认取值**： 不涉及。
 
         :return: The output_urls of this StartSmartLiveReq.
         :rtype: list[str]
@@ -148,7 +148,7 @@ class StartSmartLiveReq:
     def output_urls(self, output_urls):
         """Sets the output_urls of this StartSmartLiveReq.
 
-        RTMP视频推流第三方直播平台地址。
+        **参数解释**： RTMP视频推流第三方直播平台地址。 > 直播过程中刷新地址，需要调用COMMAND命令REFRESH_OUTPUT_URL。  **约束限制**： 不涉及 **取值范围**： 当前仅支持一条RTMP出流地址。 **默认取值**： 不涉及。
 
         :param output_urls: The output_urls of this StartSmartLiveReq.
         :type output_urls: list[str]
@@ -159,7 +159,7 @@ class StartSmartLiveReq:
     def stream_keys(self):
         """Gets the stream_keys of this StartSmartLiveReq.
 
-        RTMP视频推流第三方直播平台流秘钥，与推流地址对应。
+        **参数解释**： RTMP视频推流第三方直播平台流密钥，与推流地址对应。 > 直播过程中刷新地址，需要调用COMMAND命令REFRESH_OUTPUT_URL。  **约束限制**： 不涉及 **取值范围**： 当前仅支持一条RTMP出流地址。 **默认取值**： 不涉及。
 
         :return: The stream_keys of this StartSmartLiveReq.
         :rtype: list[str]
@@ -170,7 +170,7 @@ class StartSmartLiveReq:
     def stream_keys(self, stream_keys):
         """Sets the stream_keys of this StartSmartLiveReq.
 
-        RTMP视频推流第三方直播平台流秘钥，与推流地址对应。
+        **参数解释**： RTMP视频推流第三方直播平台流密钥，与推流地址对应。 > 直播过程中刷新地址，需要调用COMMAND命令REFRESH_OUTPUT_URL。  **约束限制**： 不涉及 **取值范围**： 当前仅支持一条RTMP出流地址。 **默认取值**： 不涉及。
 
         :param stream_keys: The stream_keys of this StartSmartLiveReq.
         :type stream_keys: list[str]
@@ -181,7 +181,7 @@ class StartSmartLiveReq:
     def interaction_callback_url(self):
         """Gets the interaction_callback_url of this StartSmartLiveReq.
 
-        互动回调URL，含鉴权信息。
+        **参数解释**： 互动回调URL，含鉴权信息。 互动规则trigger.reply_mode配置为CALLBACK时填写 **约束限制**： 不涉及 **取值范围**： 字符长度0-2048位 **默认取值**： 不涉及。
 
         :return: The interaction_callback_url of this StartSmartLiveReq.
         :rtype: str
@@ -192,7 +192,7 @@ class StartSmartLiveReq:
     def interaction_callback_url(self, interaction_callback_url):
         """Sets the interaction_callback_url of this StartSmartLiveReq.
 
-        互动回调URL，含鉴权信息。
+        **参数解释**： 互动回调URL，含鉴权信息。 互动规则trigger.reply_mode配置为CALLBACK时填写 **约束限制**： 不涉及 **取值范围**： 字符长度0-2048位 **默认取值**： 不涉及。
 
         :param interaction_callback_url: The interaction_callback_url of this StartSmartLiveReq.
         :type interaction_callback_url: str
@@ -239,7 +239,7 @@ class StartSmartLiveReq:
     def view_mode(self):
         """Gets the view_mode of this StartSmartLiveReq.
 
-        横竖屏类型。默认值为：VERTICAL。 * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
+        **参数解释**： 横竖屏类型。 **约束限制**： 用户无需填写，通过video_config中分辨率判断 **取值范围**： * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
 
         :return: The view_mode of this StartSmartLiveReq.
         :rtype: str
@@ -250,7 +250,7 @@ class StartSmartLiveReq:
     def view_mode(self, view_mode):
         """Sets the view_mode of this StartSmartLiveReq.
 
-        横竖屏类型。默认值为：VERTICAL。 * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
+        **参数解释**： 横竖屏类型。 **约束限制**： 用户无需填写，通过video_config中分辨率判断 **取值范围**： * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
 
         :param view_mode: The view_mode of this StartSmartLiveReq.
         :type view_mode: str

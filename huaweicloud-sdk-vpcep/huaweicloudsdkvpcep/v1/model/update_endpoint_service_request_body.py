@@ -22,7 +22,8 @@ class UpdateEndpointServiceRequestBody:
         'ports': 'list[PortList]',
         'port_id': 'str',
         'tcp_proxy': 'str',
-        'description': 'str'
+        'description': 'str',
+        'ip': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class UpdateEndpointServiceRequestBody:
         'ports': 'ports',
         'port_id': 'port_id',
         'tcp_proxy': 'tcp_proxy',
-        'description': 'description'
+        'description': 'description',
+        'ip': 'ip'
     }
 
-    def __init__(self, approval_enabled=None, service_name=None, ports=None, port_id=None, tcp_proxy=None, description=None):
+    def __init__(self, approval_enabled=None, service_name=None, ports=None, port_id=None, tcp_proxy=None, description=None, ip=None):
         """UpdateEndpointServiceRequestBody
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class UpdateEndpointServiceRequestBody:
         :type tcp_proxy: str
         :param description: 描述字段，支持中英文字母、数字等字符，不支持“&lt;”或“&gt;”字符。
         :type description: str
+        :param ip: 接口型VLAN场景服务端IPv4地址或域名
+        :type ip: str
         """
         
         
@@ -61,6 +65,7 @@ class UpdateEndpointServiceRequestBody:
         self._port_id = None
         self._tcp_proxy = None
         self._description = None
+        self._ip = None
         self.discriminator = None
 
         if approval_enabled is not None:
@@ -75,6 +80,8 @@ class UpdateEndpointServiceRequestBody:
             self.tcp_proxy = tcp_proxy
         if description is not None:
             self.description = description
+        if ip is not None:
+            self.ip = ip
 
     @property
     def approval_enabled(self):
@@ -207,6 +214,28 @@ class UpdateEndpointServiceRequestBody:
         :type description: str
         """
         self._description = description
+
+    @property
+    def ip(self):
+        """Gets the ip of this UpdateEndpointServiceRequestBody.
+
+        接口型VLAN场景服务端IPv4地址或域名
+
+        :return: The ip of this UpdateEndpointServiceRequestBody.
+        :rtype: str
+        """
+        return self._ip
+
+    @ip.setter
+    def ip(self, ip):
+        """Sets the ip of this UpdateEndpointServiceRequestBody.
+
+        接口型VLAN场景服务端IPv4地址或域名
+
+        :param ip: The ip of this UpdateEndpointServiceRequestBody.
+        :type ip: str
+        """
+        self._ip = ip
 
     def to_dict(self):
         """Returns the model properties as a dict"""

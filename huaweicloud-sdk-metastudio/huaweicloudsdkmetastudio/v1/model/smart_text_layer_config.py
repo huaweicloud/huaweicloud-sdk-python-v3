@@ -39,17 +39,17 @@ class SmartTextLayerConfig:
 
         The model defined in huaweicloud sdk
 
-        :param text_type: 文本类型。 * DYNAMIC: 动态文本，需要进行关键字替换。 * STATIC: 静态文本。
+        :param text_type: **参数解释**： 文本类型。 * DYNAMIC：动态文本，需要进行关键字替换。 * STATIC：静态文本。
         :type text_type: str
         :param text_context: 文本。
         :type text_context: str
-        :param font_name: 字体。当前支持的字体： * HarmonyOS_Sans_SC_Black：鸿蒙粗体 * HarmonyOS_Sans_SC_Regular：鸿蒙常规 * HarmonyOS_Sans_SC_Thin：鸿蒙细体 * fzyouh：方正瘦体
+        :param font_name: **参数解释**： 字体。当前支持的字体： * HarmonyOS_Sans_SC_Black：鸿蒙粗体 * HarmonyOS_Sans_SC_Regular：鸿蒙常规 * HarmonyOS_Sans_SC_Thin：鸿蒙细体 * fzyouh：方正瘦体
         :type font_name: str
-        :param font_size: 字体大小（像素）。  取值范围：[4, 120]
+        :param font_size: **参数解释**： 字体大小（像素）。  业务取值范围：[4, 120]，请以业务取值范围为准。
         :type font_size: int
-        :param font_color: 字体颜色。RGB颜色值。
+        :param font_color: **参数解释**： 字体颜色。RGB颜色值。
         :type font_color: str
-        :param display_duration: 文本显示时长。单位s * 0 显示时长规则：若携带reply_texts，reply_audios，与播放语音内容时长保持一致； 未携带场景，与匹配的关键词语音内容时长保持一致
+        :param display_duration: **参数解释**： 文本显示时长，单位s。 显示时长规则为，若携带reply_texts、reply_audios，则与播放语音内容时长保持一致；若未携带，则与匹配的关键词语音内容时长保持一致。
         :type display_duration: int
         """
         
@@ -80,7 +80,7 @@ class SmartTextLayerConfig:
     def text_type(self):
         """Gets the text_type of this SmartTextLayerConfig.
 
-        文本类型。 * DYNAMIC: 动态文本，需要进行关键字替换。 * STATIC: 静态文本。
+        **参数解释**： 文本类型。 * DYNAMIC：动态文本，需要进行关键字替换。 * STATIC：静态文本。
 
         :return: The text_type of this SmartTextLayerConfig.
         :rtype: str
@@ -91,7 +91,7 @@ class SmartTextLayerConfig:
     def text_type(self, text_type):
         """Sets the text_type of this SmartTextLayerConfig.
 
-        文本类型。 * DYNAMIC: 动态文本，需要进行关键字替换。 * STATIC: 静态文本。
+        **参数解释**： 文本类型。 * DYNAMIC：动态文本，需要进行关键字替换。 * STATIC：静态文本。
 
         :param text_type: The text_type of this SmartTextLayerConfig.
         :type text_type: str
@@ -124,7 +124,7 @@ class SmartTextLayerConfig:
     def font_name(self):
         """Gets the font_name of this SmartTextLayerConfig.
 
-        字体。当前支持的字体： * HarmonyOS_Sans_SC_Black：鸿蒙粗体 * HarmonyOS_Sans_SC_Regular：鸿蒙常规 * HarmonyOS_Sans_SC_Thin：鸿蒙细体 * fzyouh：方正瘦体
+        **参数解释**： 字体。当前支持的字体： * HarmonyOS_Sans_SC_Black：鸿蒙粗体 * HarmonyOS_Sans_SC_Regular：鸿蒙常规 * HarmonyOS_Sans_SC_Thin：鸿蒙细体 * fzyouh：方正瘦体
 
         :return: The font_name of this SmartTextLayerConfig.
         :rtype: str
@@ -135,7 +135,7 @@ class SmartTextLayerConfig:
     def font_name(self, font_name):
         """Sets the font_name of this SmartTextLayerConfig.
 
-        字体。当前支持的字体： * HarmonyOS_Sans_SC_Black：鸿蒙粗体 * HarmonyOS_Sans_SC_Regular：鸿蒙常规 * HarmonyOS_Sans_SC_Thin：鸿蒙细体 * fzyouh：方正瘦体
+        **参数解释**： 字体。当前支持的字体： * HarmonyOS_Sans_SC_Black：鸿蒙粗体 * HarmonyOS_Sans_SC_Regular：鸿蒙常规 * HarmonyOS_Sans_SC_Thin：鸿蒙细体 * fzyouh：方正瘦体
 
         :param font_name: The font_name of this SmartTextLayerConfig.
         :type font_name: str
@@ -146,7 +146,7 @@ class SmartTextLayerConfig:
     def font_size(self):
         """Gets the font_size of this SmartTextLayerConfig.
 
-        字体大小（像素）。  取值范围：[4, 120]
+        **参数解释**： 字体大小（像素）。  业务取值范围：[4, 120]，请以业务取值范围为准。
 
         :return: The font_size of this SmartTextLayerConfig.
         :rtype: int
@@ -157,7 +157,7 @@ class SmartTextLayerConfig:
     def font_size(self, font_size):
         """Sets the font_size of this SmartTextLayerConfig.
 
-        字体大小（像素）。  取值范围：[4, 120]
+        **参数解释**： 字体大小（像素）。  业务取值范围：[4, 120]，请以业务取值范围为准。
 
         :param font_size: The font_size of this SmartTextLayerConfig.
         :type font_size: int
@@ -168,7 +168,7 @@ class SmartTextLayerConfig:
     def font_color(self):
         """Gets the font_color of this SmartTextLayerConfig.
 
-        字体颜色。RGB颜色值。
+        **参数解释**： 字体颜色。RGB颜色值。
 
         :return: The font_color of this SmartTextLayerConfig.
         :rtype: str
@@ -179,7 +179,7 @@ class SmartTextLayerConfig:
     def font_color(self, font_color):
         """Sets the font_color of this SmartTextLayerConfig.
 
-        字体颜色。RGB颜色值。
+        **参数解释**： 字体颜色。RGB颜色值。
 
         :param font_color: The font_color of this SmartTextLayerConfig.
         :type font_color: str
@@ -190,7 +190,7 @@ class SmartTextLayerConfig:
     def display_duration(self):
         """Gets the display_duration of this SmartTextLayerConfig.
 
-        文本显示时长。单位s * 0 显示时长规则：若携带reply_texts，reply_audios，与播放语音内容时长保持一致； 未携带场景，与匹配的关键词语音内容时长保持一致
+        **参数解释**： 文本显示时长，单位s。 显示时长规则为，若携带reply_texts、reply_audios，则与播放语音内容时长保持一致；若未携带，则与匹配的关键词语音内容时长保持一致。
 
         :return: The display_duration of this SmartTextLayerConfig.
         :rtype: int
@@ -201,7 +201,7 @@ class SmartTextLayerConfig:
     def display_duration(self, display_duration):
         """Sets the display_duration of this SmartTextLayerConfig.
 
-        文本显示时长。单位s * 0 显示时长规则：若携带reply_texts，reply_audios，与播放语音内容时长保持一致； 未携带场景，与匹配的关键词语音内容时长保持一致
+        **参数解释**： 文本显示时长，单位s。 显示时长规则为，若携带reply_texts、reply_audios，则与播放语音内容时长保持一致；若未携带，则与匹配的关键词语音内容时长保持一致。
 
         :param display_duration: The display_duration of this SmartTextLayerConfig.
         :type display_duration: int

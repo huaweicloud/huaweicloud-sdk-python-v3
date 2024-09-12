@@ -750,6 +750,8 @@ class VpcepAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'public_border_group' in local_var_params:
             query_params.append(('public_border_group', local_var_params['public_border_group']))
+        if 'net_type' in local_var_params:
+            query_params.append(('net_type', local_var_params['net_type']))
 
         header_params = {}
 

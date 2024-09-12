@@ -63,7 +63,7 @@ class CreateSmartChatRoomReq:
         :type voice_config: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
         :param robot_id: 机器人ID。获取方法请参考[创建应用](CreateRobot.xml)。
         :type robot_id: str
-        :param concurrency: 并发路数。
+        :param concurrency: **参数解释**： 并发路数。
         :type concurrency: int
         :param background_config: 
         :type background_config: :class:`huaweicloudsdkmetastudio.v1.BackgroundConfigInfo`
@@ -245,7 +245,7 @@ class CreateSmartChatRoomReq:
     def concurrency(self):
         """Gets the concurrency of this CreateSmartChatRoomReq.
 
-        并发路数。
+        **参数解释**： 并发路数。
 
         :return: The concurrency of this CreateSmartChatRoomReq.
         :rtype: int
@@ -256,7 +256,7 @@ class CreateSmartChatRoomReq:
     def concurrency(self, concurrency):
         """Sets the concurrency of this CreateSmartChatRoomReq.
 
-        并发路数。
+        **参数解释**： 并发路数。
 
         :param concurrency: The concurrency of this CreateSmartChatRoomReq.
         :type concurrency: int

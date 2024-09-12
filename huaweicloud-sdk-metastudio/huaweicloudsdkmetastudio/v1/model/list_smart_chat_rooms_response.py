@@ -36,9 +36,9 @@ class ListSmartChatRoomsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: 智能交互对话总数。
+        :param count: **参数解释**： 智能交互对话总数。
         :type count: int
-        :param count_concurrency: 智能交互对话总并发路数。
+        :param count_concurrency: **参数解释**： 智能交互对话总并发路数。
         :type count_concurrency: int
         :param smart_chat_rooms: 智能交互对话列表。
         :type smart_chat_rooms: list[:class:`huaweicloudsdkmetastudio.v1.SmartChatRoomBaseInfo`]
@@ -67,7 +67,7 @@ class ListSmartChatRoomsResponse(SdkResponse):
     def count(self):
         """Gets the count of this ListSmartChatRoomsResponse.
 
-        智能交互对话总数。
+        **参数解释**： 智能交互对话总数。
 
         :return: The count of this ListSmartChatRoomsResponse.
         :rtype: int
@@ -78,7 +78,7 @@ class ListSmartChatRoomsResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this ListSmartChatRoomsResponse.
 
-        智能交互对话总数。
+        **参数解释**： 智能交互对话总数。
 
         :param count: The count of this ListSmartChatRoomsResponse.
         :type count: int
@@ -89,7 +89,7 @@ class ListSmartChatRoomsResponse(SdkResponse):
     def count_concurrency(self):
         """Gets the count_concurrency of this ListSmartChatRoomsResponse.
 
-        智能交互对话总并发路数。
+        **参数解释**： 智能交互对话总并发路数。
 
         :return: The count_concurrency of this ListSmartChatRoomsResponse.
         :rtype: int
@@ -100,7 +100,7 @@ class ListSmartChatRoomsResponse(SdkResponse):
     def count_concurrency(self, count_concurrency):
         """Sets the count_concurrency of this ListSmartChatRoomsResponse.
 
-        智能交互对话总并发路数。
+        **参数解释**： 智能交互对话总并发路数。
 
         :param count_concurrency: The count_concurrency of this ListSmartChatRoomsResponse.
         :type count_concurrency: int

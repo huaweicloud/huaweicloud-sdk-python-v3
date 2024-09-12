@@ -29,7 +29,7 @@ class ShootScriptItemBaseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param sequence_no: 剧本序号。
+        :param sequence_no: **参数解释**： 剧本序号。 **约束限制**： 同一个剧本序号不重复。 **默认取值**： 不涉及。
         :type sequence_no: int
         """
         
@@ -45,7 +45,7 @@ class ShootScriptItemBaseInfo:
     def sequence_no(self):
         """Gets the sequence_no of this ShootScriptItemBaseInfo.
 
-        剧本序号。
+        **参数解释**： 剧本序号。 **约束限制**： 同一个剧本序号不重复。 **默认取值**： 不涉及。
 
         :return: The sequence_no of this ShootScriptItemBaseInfo.
         :rtype: int
@@ -56,7 +56,7 @@ class ShootScriptItemBaseInfo:
     def sequence_no(self, sequence_no):
         """Sets the sequence_no of this ShootScriptItemBaseInfo.
 
-        剧本序号。
+        **参数解释**： 剧本序号。 **约束限制**： 同一个剧本序号不重复。 **默认取值**： 不涉及。
 
         :param sequence_no: The sequence_no of this ShootScriptItemBaseInfo.
         :type sequence_no: int

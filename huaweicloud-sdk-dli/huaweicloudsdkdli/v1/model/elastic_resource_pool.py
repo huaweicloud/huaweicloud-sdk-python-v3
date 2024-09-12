@@ -105,7 +105,7 @@ class ElasticResourcePool:
         :type charging_mode: int
         :param manager: 弹性资源池类型
         :type manager: str
-        :param label: 标识弹性资源池，目前只支持 开发者标签，\&quot;label\&quot;: {\&quot;billing_spec_code\&quot;:\&quot;developer\&quot;}
+        :param label: 弹性资源池属性字段。默认为标准版弹性资源池；{\&quot;spec\&quot;:\&quot;basic\&quot;}标识基础版弹性资源池；{\&quot;billing_spec_code\&quot;:\&quot;developer\&quot;}标识开发者弹性资源池。目前不支持其它属性设置。
         :type label: dict(str, str)
         """
         
@@ -592,7 +592,7 @@ class ElasticResourcePool:
     def label(self):
         """Gets the label of this ElasticResourcePool.
 
-        标识弹性资源池，目前只支持 开发者标签，\"label\": {\"billing_spec_code\":\"developer\"}
+        弹性资源池属性字段。默认为标准版弹性资源池；{\"spec\":\"basic\"}标识基础版弹性资源池；{\"billing_spec_code\":\"developer\"}标识开发者弹性资源池。目前不支持其它属性设置。
 
         :return: The label of this ElasticResourcePool.
         :rtype: dict(str, str)
@@ -603,7 +603,7 @@ class ElasticResourcePool:
     def label(self, label):
         """Sets the label of this ElasticResourcePool.
 
-        标识弹性资源池，目前只支持 开发者标签，\"label\": {\"billing_spec_code\":\"developer\"}
+        弹性资源池属性字段。默认为标准版弹性资源池；{\"spec\":\"basic\"}标识基础版弹性资源池；{\"billing_spec_code\":\"developer\"}标识开发者弹性资源池。目前不支持其它属性设置。
 
         :param label: The label of this ElasticResourcePool.
         :type label: dict(str, str)

@@ -47,13 +47,13 @@ class InteractionRuleDetailInfo:
 
         The model defined in huaweicloud sdk
 
-        :param rule_index: 规则索引
+        :param rule_index: **参数解释**： 规则索引。用于触发规则时索引具体规则。 **约束限制**： 无需用户填写。 **取值范围**： 字符0-64位 **默认取值**： 不涉及。
         :type rule_index: str
-        :param rule_name: 规则名称
+        :param rule_name: **参数解释**： 规则名称。 **约束限制**： 不涉及。 **取值范围**： 字符0-256位 **默认取值**： 不涉及。
         :type rule_name: str
-        :param enabled: 是否启用
+        :param enabled: **参数解释**： 是否启用。 **约束限制**： 不涉及。 **取值范围**： * true：启用 * fasle：不启用  **默认取值**： true
         :type enabled: bool
-        :param event_type: 事件类型。 * 1：弹幕事件 * 2：用户入场事件 * 3：用户点赞事件 * 4：用户送礼事件 * 10: 预置话术事件
+        :param event_type: **参数解释**： 规则匹配直播事件类型。接口的取值范围[0,100]，实际业务取值如下所示： * 1：弹幕事件  * 2：用户入场事件  * 3：用户点赞事件 * 4：用户送礼事件  * 10: 预置话术事件  请以实际业务取值为准。 &gt; * 1,2,3,4：与LiveEventReport中的event.type对应。 &gt; * 10：匹配预置剧本  **约束限制**： 不涉及。 **默认取值**： 不涉及
         :type event_type: int
         :param hit_condition: 
         :type hit_condition: :class:`huaweicloudsdkmetastudio.v1.HitCondition`
@@ -63,9 +63,9 @@ class InteractionRuleDetailInfo:
         :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
         :param rule_id: 互动规则ID
         :type rule_id: str
-        :param create_time: 创建时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
+        :param create_time: 创建时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
         :type create_time: str
-        :param update_time: 更新时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
+        :param update_time: 更新时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
         :type update_time: str
         """
         
@@ -108,7 +108,7 @@ class InteractionRuleDetailInfo:
     def rule_index(self):
         """Gets the rule_index of this InteractionRuleDetailInfo.
 
-        规则索引
+        **参数解释**： 规则索引。用于触发规则时索引具体规则。 **约束限制**： 无需用户填写。 **取值范围**： 字符0-64位 **默认取值**： 不涉及。
 
         :return: The rule_index of this InteractionRuleDetailInfo.
         :rtype: str
@@ -119,7 +119,7 @@ class InteractionRuleDetailInfo:
     def rule_index(self, rule_index):
         """Sets the rule_index of this InteractionRuleDetailInfo.
 
-        规则索引
+        **参数解释**： 规则索引。用于触发规则时索引具体规则。 **约束限制**： 无需用户填写。 **取值范围**： 字符0-64位 **默认取值**： 不涉及。
 
         :param rule_index: The rule_index of this InteractionRuleDetailInfo.
         :type rule_index: str
@@ -130,7 +130,7 @@ class InteractionRuleDetailInfo:
     def rule_name(self):
         """Gets the rule_name of this InteractionRuleDetailInfo.
 
-        规则名称
+        **参数解释**： 规则名称。 **约束限制**： 不涉及。 **取值范围**： 字符0-256位 **默认取值**： 不涉及。
 
         :return: The rule_name of this InteractionRuleDetailInfo.
         :rtype: str
@@ -141,7 +141,7 @@ class InteractionRuleDetailInfo:
     def rule_name(self, rule_name):
         """Sets the rule_name of this InteractionRuleDetailInfo.
 
-        规则名称
+        **参数解释**： 规则名称。 **约束限制**： 不涉及。 **取值范围**： 字符0-256位 **默认取值**： 不涉及。
 
         :param rule_name: The rule_name of this InteractionRuleDetailInfo.
         :type rule_name: str
@@ -152,7 +152,7 @@ class InteractionRuleDetailInfo:
     def enabled(self):
         """Gets the enabled of this InteractionRuleDetailInfo.
 
-        是否启用
+        **参数解释**： 是否启用。 **约束限制**： 不涉及。 **取值范围**： * true：启用 * fasle：不启用  **默认取值**： true
 
         :return: The enabled of this InteractionRuleDetailInfo.
         :rtype: bool
@@ -163,7 +163,7 @@ class InteractionRuleDetailInfo:
     def enabled(self, enabled):
         """Sets the enabled of this InteractionRuleDetailInfo.
 
-        是否启用
+        **参数解释**： 是否启用。 **约束限制**： 不涉及。 **取值范围**： * true：启用 * fasle：不启用  **默认取值**： true
 
         :param enabled: The enabled of this InteractionRuleDetailInfo.
         :type enabled: bool
@@ -174,7 +174,7 @@ class InteractionRuleDetailInfo:
     def event_type(self):
         """Gets the event_type of this InteractionRuleDetailInfo.
 
-        事件类型。 * 1：弹幕事件 * 2：用户入场事件 * 3：用户点赞事件 * 4：用户送礼事件 * 10: 预置话术事件
+        **参数解释**： 规则匹配直播事件类型。接口的取值范围[0,100]，实际业务取值如下所示： * 1：弹幕事件  * 2：用户入场事件  * 3：用户点赞事件 * 4：用户送礼事件  * 10: 预置话术事件  请以实际业务取值为准。 > * 1,2,3,4：与LiveEventReport中的event.type对应。 > * 10：匹配预置剧本  **约束限制**： 不涉及。 **默认取值**： 不涉及
 
         :return: The event_type of this InteractionRuleDetailInfo.
         :rtype: int
@@ -185,7 +185,7 @@ class InteractionRuleDetailInfo:
     def event_type(self, event_type):
         """Sets the event_type of this InteractionRuleDetailInfo.
 
-        事件类型。 * 1：弹幕事件 * 2：用户入场事件 * 3：用户点赞事件 * 4：用户送礼事件 * 10: 预置话术事件
+        **参数解释**： 规则匹配直播事件类型。接口的取值范围[0,100]，实际业务取值如下所示： * 1：弹幕事件  * 2：用户入场事件  * 3：用户点赞事件 * 4：用户送礼事件  * 10: 预置话术事件  请以实际业务取值为准。 > * 1,2,3,4：与LiveEventReport中的event.type对应。 > * 10：匹配预置剧本  **约束限制**： 不涉及。 **默认取值**： 不涉及
 
         :param event_type: The event_type of this InteractionRuleDetailInfo.
         :type event_type: int
@@ -272,7 +272,7 @@ class InteractionRuleDetailInfo:
     def create_time(self):
         """Gets the create_time of this InteractionRuleDetailInfo.
 
-        创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        创建时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
         :return: The create_time of this InteractionRuleDetailInfo.
         :rtype: str
@@ -283,7 +283,7 @@ class InteractionRuleDetailInfo:
     def create_time(self, create_time):
         """Sets the create_time of this InteractionRuleDetailInfo.
 
-        创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        创建时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
         :param create_time: The create_time of this InteractionRuleDetailInfo.
         :type create_time: str
@@ -294,7 +294,7 @@ class InteractionRuleDetailInfo:
     def update_time(self):
         """Gets the update_time of this InteractionRuleDetailInfo.
 
-        更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        更新时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
         :return: The update_time of this InteractionRuleDetailInfo.
         :rtype: str
@@ -305,7 +305,7 @@ class InteractionRuleDetailInfo:
     def update_time(self, update_time):
         """Sets the update_time of this InteractionRuleDetailInfo.
 
-        更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        更新时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
         :param update_time: The update_time of this InteractionRuleDetailInfo.
         :type update_time: str

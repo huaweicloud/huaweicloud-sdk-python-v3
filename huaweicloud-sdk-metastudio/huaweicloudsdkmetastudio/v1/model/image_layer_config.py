@@ -29,7 +29,7 @@ class ImageLayerConfig:
 
         The model defined in huaweicloud sdk
 
-        :param image_url: 图片文件的URL。
+        :param image_url: **参数解释**： 图片文件的URL。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-2048位。 **默认取值**： 不涉及
         :type image_url: str
         """
         
@@ -45,7 +45,7 @@ class ImageLayerConfig:
     def image_url(self):
         """Gets the image_url of this ImageLayerConfig.
 
-        图片文件的URL。
+        **参数解释**： 图片文件的URL。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-2048位。 **默认取值**： 不涉及
 
         :return: The image_url of this ImageLayerConfig.
         :rtype: str
@@ -56,7 +56,7 @@ class ImageLayerConfig:
     def image_url(self, image_url):
         """Sets the image_url of this ImageLayerConfig.
 
-        图片文件的URL。
+        **参数解释**： 图片文件的URL。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-2048位。 **默认取值**： 不涉及
 
         :param image_url: The image_url of this ImageLayerConfig.
         :type image_url: str

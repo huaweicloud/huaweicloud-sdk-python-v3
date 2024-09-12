@@ -24,7 +24,8 @@ class CreateElasticResourcePoolRequestBody:
         'charging_mode': 'int',
         'min_cu': 'int',
         'enterprise_project_id': 'str',
-        'tags': 'list[Tag]'
+        'tags': 'list[Tag]',
+        'label': 'dict(str, str)'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class CreateElasticResourcePoolRequestBody:
         'charging_mode': 'charging_mode',
         'min_cu': 'min_cu',
         'enterprise_project_id': 'enterprise_project_id',
-        'tags': 'tags'
+        'tags': 'tags',
+        'label': 'label'
     }
 
-    def __init__(self, elastic_resource_pool_name=None, description=None, cidr_in_vpc=None, max_cu=None, charging_mode=None, min_cu=None, enterprise_project_id=None, tags=None):
+    def __init__(self, elastic_resource_pool_name=None, description=None, cidr_in_vpc=None, max_cu=None, charging_mode=None, min_cu=None, enterprise_project_id=None, tags=None, label=None):
         """CreateElasticResourcePoolRequestBody
 
         The model defined in huaweicloud sdk
@@ -49,16 +51,18 @@ class CreateElasticResourcePoolRequestBody:
         :type description: str
         :param cidr_in_vpc: 虚拟集群关联的vpc cidr.如果不填，默认值为172.16.0.0//12
         :type cidr_in_vpc: str
-        :param max_cu: 最大CU大于等于该资源池下任意一个队列的最大CU之和且大于min_cu。最小值为64
+        :param max_cu: max_cu大于等于该弹性资源池下任意一个队列的最大CU。标准版弹性资源池最小值为64，最大值为32000；基础版弹性资源池最小值为16，最大值为64。
         :type max_cu: int
         :param charging_mode: 计费类型 1、按需计费
         :type charging_mode: int
-        :param min_cu: 最小CU大于等于该资源池下所有队列最小CU之和,最小值为64
+        :param min_cu: min_cu大于等于该弹性资源池下所有队列最小CU之和，且小于等于max_cu。标准版弹性资源池最小值为64，最大值为32000；基础版弹性资源池最小值为16，最大值为64。
         :type min_cu: int
         :param enterprise_project_id: 企业ID，不填默认为“0”
         :type enterprise_project_id: str
         :param tags: 标签
         :type tags: list[:class:`huaweicloudsdkdli.v1.Tag`]
+        :param label: 弹性资源池属性字段。默认为标准版弹性资源池；{\&quot;spec\&quot;:\&quot;basic\&quot;}标识基础版弹性资源池；{\&quot;billing_spec_code\&quot;:\&quot;developer\&quot;}标识开发者弹性资源池。目前不支持其它属性设置。
+        :type label: dict(str, str)
         """
         
         
@@ -71,6 +75,7 @@ class CreateElasticResourcePoolRequestBody:
         self._min_cu = None
         self._enterprise_project_id = None
         self._tags = None
+        self._label = None
         self.discriminator = None
 
         self.elastic_resource_pool_name = elastic_resource_pool_name
@@ -86,6 +91,8 @@ class CreateElasticResourcePoolRequestBody:
             self.enterprise_project_id = enterprise_project_id
         if tags is not None:
             self.tags = tags
+        if label is not None:
+            self.label = label
 
     @property
     def elastic_resource_pool_name(self):
@@ -157,7 +164,7 @@ class CreateElasticResourcePoolRequestBody:
     def max_cu(self):
         """Gets the max_cu of this CreateElasticResourcePoolRequestBody.
 
-        最大CU大于等于该资源池下任意一个队列的最大CU之和且大于min_cu。最小值为64
+        max_cu大于等于该弹性资源池下任意一个队列的最大CU。标准版弹性资源池最小值为64，最大值为32000；基础版弹性资源池最小值为16，最大值为64。
 
         :return: The max_cu of this CreateElasticResourcePoolRequestBody.
         :rtype: int
@@ -168,7 +175,7 @@ class CreateElasticResourcePoolRequestBody:
     def max_cu(self, max_cu):
         """Sets the max_cu of this CreateElasticResourcePoolRequestBody.
 
-        最大CU大于等于该资源池下任意一个队列的最大CU之和且大于min_cu。最小值为64
+        max_cu大于等于该弹性资源池下任意一个队列的最大CU。标准版弹性资源池最小值为64，最大值为32000；基础版弹性资源池最小值为16，最大值为64。
 
         :param max_cu: The max_cu of this CreateElasticResourcePoolRequestBody.
         :type max_cu: int
@@ -201,7 +208,7 @@ class CreateElasticResourcePoolRequestBody:
     def min_cu(self):
         """Gets the min_cu of this CreateElasticResourcePoolRequestBody.
 
-        最小CU大于等于该资源池下所有队列最小CU之和,最小值为64
+        min_cu大于等于该弹性资源池下所有队列最小CU之和，且小于等于max_cu。标准版弹性资源池最小值为64，最大值为32000；基础版弹性资源池最小值为16，最大值为64。
 
         :return: The min_cu of this CreateElasticResourcePoolRequestBody.
         :rtype: int
@@ -212,7 +219,7 @@ class CreateElasticResourcePoolRequestBody:
     def min_cu(self, min_cu):
         """Sets the min_cu of this CreateElasticResourcePoolRequestBody.
 
-        最小CU大于等于该资源池下所有队列最小CU之和,最小值为64
+        min_cu大于等于该弹性资源池下所有队列最小CU之和，且小于等于max_cu。标准版弹性资源池最小值为64，最大值为32000；基础版弹性资源池最小值为16，最大值为64。
 
         :param min_cu: The min_cu of this CreateElasticResourcePoolRequestBody.
         :type min_cu: int
@@ -262,6 +269,28 @@ class CreateElasticResourcePoolRequestBody:
         :type tags: list[:class:`huaweicloudsdkdli.v1.Tag`]
         """
         self._tags = tags
+
+    @property
+    def label(self):
+        """Gets the label of this CreateElasticResourcePoolRequestBody.
+
+        弹性资源池属性字段。默认为标准版弹性资源池；{\"spec\":\"basic\"}标识基础版弹性资源池；{\"billing_spec_code\":\"developer\"}标识开发者弹性资源池。目前不支持其它属性设置。
+
+        :return: The label of this CreateElasticResourcePoolRequestBody.
+        :rtype: dict(str, str)
+        """
+        return self._label
+
+    @label.setter
+    def label(self, label):
+        """Sets the label of this CreateElasticResourcePoolRequestBody.
+
+        弹性资源池属性字段。默认为标准版弹性资源池；{\"spec\":\"basic\"}标识基础版弹性资源池；{\"billing_spec_code\":\"developer\"}标识开发者弹性资源池。目前不支持其它属性设置。
+
+        :param label: The label of this CreateElasticResourcePoolRequestBody.
+        :type label: dict(str, str)
+        """
+        self._label = label
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -3,7 +3,9 @@
 from __future__ import absolute_import
 
 # import models into model package
+from huaweicloudsdkmetastudio.v1.model.action_basic_sample_info import ActionBasicSampleInfo
 from huaweicloudsdkmetastudio.v1.model.action_mark_item import ActionMarkItem
+from huaweicloudsdkmetastudio.v1.model.action_sample_info import ActionSampleInfo
 from huaweicloudsdkmetastudio.v1.model.action_tag_info import ActionTagInfo
 from huaweicloudsdkmetastudio.v1.model.active_code_info import ActiveCodeInfo
 from huaweicloudsdkmetastudio.v1.model.animation_asset_meta import AnimationAssetMeta
@@ -13,6 +15,7 @@ from huaweicloudsdkmetastudio.v1.model.asset_extra_meta import AssetExtraMeta
 from huaweicloudsdkmetastudio.v1.model.asset_file_info import AssetFileInfo
 from huaweicloudsdkmetastudio.v1.model.asset_shared_config import AssetSharedConfig
 from huaweicloudsdkmetastudio.v1.model.audio_asset_meta import AudioAssetMeta
+from huaweicloudsdkmetastudio.v1.model.audio_drive_action_config import AudioDriveActionConfig
 from huaweicloudsdkmetastudio.v1.model.audit_result_admin_audit_result import AuditResultAdminAuditResult
 from huaweicloudsdkmetastudio.v1.model.audit_result_system_audit_result import AuditResultSystemAuditResult
 from huaweicloudsdkmetastudio.v1.model.audit_result_system_audit_result_errors import AuditResultSystemAuditResultErrors
@@ -512,6 +515,7 @@ from huaweicloudsdkmetastudio.v1.model.update_welcome_speech_response import Upd
 from huaweicloudsdkmetastudio.v1.model.update_welcome_speech_switch_req import UpdateWelcomeSpeechSwitchReq
 from huaweicloudsdkmetastudio.v1.model.update_welcome_speech_switch_request import UpdateWelcomeSpeechSwitchRequest
 from huaweicloudsdkmetastudio.v1.model.update_welcome_speech_switch_response import UpdateWelcomeSpeechSwitchResponse
+from huaweicloudsdkmetastudio.v1.model.verify_video_matting_info import VerifyVideoMattingInfo
 from huaweicloudsdkmetastudio.v1.model.video_asset_meta import VideoAssetMeta
 from huaweicloudsdkmetastudio.v1.model.video_config import VideoConfig
 from huaweicloudsdkmetastudio.v1.model.video_layer_config import VideoLayerConfig
@@ -524,4 +528,5 @@ from huaweicloudsdkmetastudio.v1.model.video_scripts_simple_info import VideoScr
 from huaweicloudsdkmetastudio.v1.model.voice_capability import VoiceCapability
 from huaweicloudsdkmetastudio.v1.model.voice_config import VoiceConfig
 from huaweicloudsdkmetastudio.v1.model.voice_model_asset_meta import VoiceModelAssetMeta
+from huaweicloudsdkmetastudio.v1.model.voice_properties import VoiceProperties
 from huaweicloudsdkmetastudio.v1.model.welcome_speech_info import WelcomeSpeechInfo

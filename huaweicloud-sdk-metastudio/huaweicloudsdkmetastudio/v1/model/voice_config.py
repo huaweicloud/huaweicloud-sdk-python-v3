@@ -35,13 +35,13 @@ class VoiceConfig:
 
         The model defined in huaweicloud sdk
 
-        :param voice_asset_id: 音色资产ID，可以从资产库中查询。
+        :param voice_asset_id: **参数解释**： 音色资产ID，可以从资产库中查询。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-256位。 **默认取值**： 不涉及。
         :type voice_asset_id: str
-        :param speed: 语速。  默认值100，最小值50，最大值200。 &gt; * 当取值为“100”时，表示一个成年人正常的语速，约为250字/分钟。 &gt; * 50表示0.5倍语速，100表示正常语速，200表示2倍语速。
+        :param speed: **参数解释**： 语速。50表示0.5倍语速，100表示正常语速，200表示2倍语速。 当取值为“100”时，表示一个成年人的正常语速，约为250字/分钟。  **约束限制**： 不涉及。
         :type speed: int
-        :param pitch: 音高。  默认值100，最小值50，最大值200。
+        :param pitch: **参数解释**： 音高。 **约束限制**： 不涉及。
         :type pitch: int
-        :param volume: 音量。  默认值140，最小值90，最大值240。
+        :param volume: **参数解释**： 音量。 **约束限制**： 不涉及。
         :type volume: int
         """
         
@@ -65,7 +65,7 @@ class VoiceConfig:
     def voice_asset_id(self):
         """Gets the voice_asset_id of this VoiceConfig.
 
-        音色资产ID，可以从资产库中查询。
+        **参数解释**： 音色资产ID，可以从资产库中查询。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-256位。 **默认取值**： 不涉及。
 
         :return: The voice_asset_id of this VoiceConfig.
         :rtype: str
@@ -76,7 +76,7 @@ class VoiceConfig:
     def voice_asset_id(self, voice_asset_id):
         """Sets the voice_asset_id of this VoiceConfig.
 
-        音色资产ID，可以从资产库中查询。
+        **参数解释**： 音色资产ID，可以从资产库中查询。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-256位。 **默认取值**： 不涉及。
 
         :param voice_asset_id: The voice_asset_id of this VoiceConfig.
         :type voice_asset_id: str
@@ -87,7 +87,7 @@ class VoiceConfig:
     def speed(self):
         """Gets the speed of this VoiceConfig.
 
-        语速。  默认值100，最小值50，最大值200。 > * 当取值为“100”时，表示一个成年人正常的语速，约为250字/分钟。 > * 50表示0.5倍语速，100表示正常语速，200表示2倍语速。
+        **参数解释**： 语速。50表示0.5倍语速，100表示正常语速，200表示2倍语速。 当取值为“100”时，表示一个成年人的正常语速，约为250字/分钟。  **约束限制**： 不涉及。
 
         :return: The speed of this VoiceConfig.
         :rtype: int
@@ -98,7 +98,7 @@ class VoiceConfig:
     def speed(self, speed):
         """Sets the speed of this VoiceConfig.
 
-        语速。  默认值100，最小值50，最大值200。 > * 当取值为“100”时，表示一个成年人正常的语速，约为250字/分钟。 > * 50表示0.5倍语速，100表示正常语速，200表示2倍语速。
+        **参数解释**： 语速。50表示0.5倍语速，100表示正常语速，200表示2倍语速。 当取值为“100”时，表示一个成年人的正常语速，约为250字/分钟。  **约束限制**： 不涉及。
 
         :param speed: The speed of this VoiceConfig.
         :type speed: int
@@ -109,7 +109,7 @@ class VoiceConfig:
     def pitch(self):
         """Gets the pitch of this VoiceConfig.
 
-        音高。  默认值100，最小值50，最大值200。
+        **参数解释**： 音高。 **约束限制**： 不涉及。
 
         :return: The pitch of this VoiceConfig.
         :rtype: int
@@ -120,7 +120,7 @@ class VoiceConfig:
     def pitch(self, pitch):
         """Sets the pitch of this VoiceConfig.
 
-        音高。  默认值100，最小值50，最大值200。
+        **参数解释**： 音高。 **约束限制**： 不涉及。
 
         :param pitch: The pitch of this VoiceConfig.
         :type pitch: int
@@ -131,7 +131,7 @@ class VoiceConfig:
     def volume(self):
         """Gets the volume of this VoiceConfig.
 
-        音量。  默认值140，最小值90，最大值240。
+        **参数解释**： 音量。 **约束限制**： 不涉及。
 
         :return: The volume of this VoiceConfig.
         :rtype: int
@@ -142,7 +142,7 @@ class VoiceConfig:
     def volume(self, volume):
         """Sets the volume of this VoiceConfig.
 
-        音量。  默认值140，最小值90，最大值240。
+        **参数解释**： 音量。 **约束限制**： 不涉及。
 
         :param volume: The volume of this VoiceConfig.
         :type volume: int

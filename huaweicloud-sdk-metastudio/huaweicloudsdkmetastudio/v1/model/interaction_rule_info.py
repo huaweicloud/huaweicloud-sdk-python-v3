@@ -41,13 +41,13 @@ class InteractionRuleInfo:
 
         The model defined in huaweicloud sdk
 
-        :param rule_index: 规则索引
+        :param rule_index: **参数解释**： 规则索引。用于触发规则时索引具体规则。 **约束限制**： 无需用户填写。 **取值范围**： 字符0-64位 **默认取值**： 不涉及。
         :type rule_index: str
-        :param rule_name: 规则名称
+        :param rule_name: **参数解释**： 规则名称。 **约束限制**： 不涉及。 **取值范围**： 字符0-256位 **默认取值**： 不涉及。
         :type rule_name: str
-        :param enabled: 是否启用
+        :param enabled: **参数解释**： 是否启用。 **约束限制**： 不涉及。 **取值范围**： * true：启用 * fasle：不启用  **默认取值**： true
         :type enabled: bool
-        :param event_type: 事件类型。 * 1：弹幕事件 * 2：用户入场事件 * 3：用户点赞事件 * 4：用户送礼事件 * 10: 预置话术事件
+        :param event_type: **参数解释**： 规则匹配直播事件类型。接口的取值范围[0,100]，实际业务取值如下所示： * 1：弹幕事件  * 2：用户入场事件  * 3：用户点赞事件 * 4：用户送礼事件  * 10: 预置话术事件  请以实际业务取值为准。 &gt; * 1,2,3,4：与LiveEventReport中的event.type对应。 &gt; * 10：匹配预置剧本  **约束限制**： 不涉及。 **默认取值**： 不涉及
         :type event_type: int
         :param hit_condition: 
         :type hit_condition: :class:`huaweicloudsdkmetastudio.v1.HitCondition`
@@ -87,7 +87,7 @@ class InteractionRuleInfo:
     def rule_index(self):
         """Gets the rule_index of this InteractionRuleInfo.
 
-        规则索引
+        **参数解释**： 规则索引。用于触发规则时索引具体规则。 **约束限制**： 无需用户填写。 **取值范围**： 字符0-64位 **默认取值**： 不涉及。
 
         :return: The rule_index of this InteractionRuleInfo.
         :rtype: str
@@ -98,7 +98,7 @@ class InteractionRuleInfo:
     def rule_index(self, rule_index):
         """Sets the rule_index of this InteractionRuleInfo.
 
-        规则索引
+        **参数解释**： 规则索引。用于触发规则时索引具体规则。 **约束限制**： 无需用户填写。 **取值范围**： 字符0-64位 **默认取值**： 不涉及。
 
         :param rule_index: The rule_index of this InteractionRuleInfo.
         :type rule_index: str
@@ -109,7 +109,7 @@ class InteractionRuleInfo:
     def rule_name(self):
         """Gets the rule_name of this InteractionRuleInfo.
 
-        规则名称
+        **参数解释**： 规则名称。 **约束限制**： 不涉及。 **取值范围**： 字符0-256位 **默认取值**： 不涉及。
 
         :return: The rule_name of this InteractionRuleInfo.
         :rtype: str
@@ -120,7 +120,7 @@ class InteractionRuleInfo:
     def rule_name(self, rule_name):
         """Sets the rule_name of this InteractionRuleInfo.
 
-        规则名称
+        **参数解释**： 规则名称。 **约束限制**： 不涉及。 **取值范围**： 字符0-256位 **默认取值**： 不涉及。
 
         :param rule_name: The rule_name of this InteractionRuleInfo.
         :type rule_name: str
@@ -131,7 +131,7 @@ class InteractionRuleInfo:
     def enabled(self):
         """Gets the enabled of this InteractionRuleInfo.
 
-        是否启用
+        **参数解释**： 是否启用。 **约束限制**： 不涉及。 **取值范围**： * true：启用 * fasle：不启用  **默认取值**： true
 
         :return: The enabled of this InteractionRuleInfo.
         :rtype: bool
@@ -142,7 +142,7 @@ class InteractionRuleInfo:
     def enabled(self, enabled):
         """Sets the enabled of this InteractionRuleInfo.
 
-        是否启用
+        **参数解释**： 是否启用。 **约束限制**： 不涉及。 **取值范围**： * true：启用 * fasle：不启用  **默认取值**： true
 
         :param enabled: The enabled of this InteractionRuleInfo.
         :type enabled: bool
@@ -153,7 +153,7 @@ class InteractionRuleInfo:
     def event_type(self):
         """Gets the event_type of this InteractionRuleInfo.
 
-        事件类型。 * 1：弹幕事件 * 2：用户入场事件 * 3：用户点赞事件 * 4：用户送礼事件 * 10: 预置话术事件
+        **参数解释**： 规则匹配直播事件类型。接口的取值范围[0,100]，实际业务取值如下所示： * 1：弹幕事件  * 2：用户入场事件  * 3：用户点赞事件 * 4：用户送礼事件  * 10: 预置话术事件  请以实际业务取值为准。 > * 1,2,3,4：与LiveEventReport中的event.type对应。 > * 10：匹配预置剧本  **约束限制**： 不涉及。 **默认取值**： 不涉及
 
         :return: The event_type of this InteractionRuleInfo.
         :rtype: int
@@ -164,7 +164,7 @@ class InteractionRuleInfo:
     def event_type(self, event_type):
         """Sets the event_type of this InteractionRuleInfo.
 
-        事件类型。 * 1：弹幕事件 * 2：用户入场事件 * 3：用户点赞事件 * 4：用户送礼事件 * 10: 预置话术事件
+        **参数解释**： 规则匹配直播事件类型。接口的取值范围[0,100]，实际业务取值如下所示： * 1：弹幕事件  * 2：用户入场事件  * 3：用户点赞事件 * 4：用户送礼事件  * 10: 预置话术事件  请以实际业务取值为准。 > * 1,2,3,4：与LiveEventReport中的event.type对应。 > * 10：匹配预置剧本  **约束限制**： 不涉及。 **默认取值**： 不涉及
 
         :param event_type: The event_type of this InteractionRuleInfo.
         :type event_type: int

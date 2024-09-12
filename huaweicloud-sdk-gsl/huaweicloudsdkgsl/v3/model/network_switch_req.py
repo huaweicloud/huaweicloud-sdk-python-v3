@@ -17,28 +17,57 @@ class NetworkSwitchReq:
     sensitive_list = []
 
     openapi_types = {
+        'cid': 'str',
         'carrier_type': 'int'
     }
 
     attribute_map = {
+        'cid': 'cid',
         'carrier_type': 'carrier_type'
     }
 
-    def __init__(self, carrier_type=None):
+    def __init__(self, cid=None, carrier_type=None):
         """NetworkSwitchReq
 
         The model defined in huaweicloud sdk
 
+        :param cid: 容器ID
+        :type cid: str
         :param carrier_type: 切换的目标网络
         :type carrier_type: int
         """
         
         
 
+        self._cid = None
         self._carrier_type = None
         self.discriminator = None
 
+        if cid is not None:
+            self.cid = cid
         self.carrier_type = carrier_type
+
+    @property
+    def cid(self):
+        """Gets the cid of this NetworkSwitchReq.
+
+        容器ID
+
+        :return: The cid of this NetworkSwitchReq.
+        :rtype: str
+        """
+        return self._cid
+
+    @cid.setter
+    def cid(self, cid):
+        """Sets the cid of this NetworkSwitchReq.
+
+        容器ID
+
+        :param cid: The cid of this NetworkSwitchReq.
+        :type cid: str
+        """
+        self._cid = cid
 
     @property
     def carrier_type(self):

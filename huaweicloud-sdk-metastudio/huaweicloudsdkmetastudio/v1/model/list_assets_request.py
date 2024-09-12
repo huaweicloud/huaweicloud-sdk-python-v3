@@ -99,9 +99,9 @@ class ListAssetsRequest:
         :type tag: str
         :param tag_combination_type: 标签查询组合方式 INTERSECTION：交集 UNION_SET：并集
         :type tag_combination_type: str
-        :param start_time: 最近直播任务起始时间。格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
+        :param start_time: 最近直播任务起始时间。格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
         :type start_time: str
-        :param end_time: 最近直播任务结束时间。格式遵循：RFC 3339 如\&quot;2021-01-10T10:43:17Z\&quot;。
+        :param end_time: 最近直播任务结束时间。格式遵循：RFC 3339 如“2021-01-10T10:43:17Z”。
         :type end_time: str
         :param asset_type: 资产类型。多个类型使用英文逗号分割。 * HUMAN_MODEL：数字人模型 * VOICE_MODEL：音色模型（仅系统管理员可上传） * SCENE：场景模型 * ANIMATION：动作动画 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MATERIAL：风格化素材 * HUMAN_MODEL_2D: 2D数字人网络模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板 * MUSIC: 音乐 * AUDIO: 音频
         :type asset_type: str
@@ -380,7 +380,7 @@ class ListAssetsRequest:
     def start_time(self):
         """Gets the start_time of this ListAssetsRequest.
 
-        最近直播任务起始时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        最近直播任务起始时间。格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
         :return: The start_time of this ListAssetsRequest.
         :rtype: str
@@ -391,7 +391,7 @@ class ListAssetsRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ListAssetsRequest.
 
-        最近直播任务起始时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        最近直播任务起始时间。格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
         :param start_time: The start_time of this ListAssetsRequest.
         :type start_time: str
@@ -402,7 +402,7 @@ class ListAssetsRequest:
     def end_time(self):
         """Gets the end_time of this ListAssetsRequest.
 
-        最近直播任务结束时间。格式遵循：RFC 3339 如\"2021-01-10T10:43:17Z\"。
+        最近直播任务结束时间。格式遵循：RFC 3339 如“2021-01-10T10:43:17Z”。
 
         :return: The end_time of this ListAssetsRequest.
         :rtype: str
@@ -413,7 +413,7 @@ class ListAssetsRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ListAssetsRequest.
 
-        最近直播任务结束时间。格式遵循：RFC 3339 如\"2021-01-10T10:43:17Z\"。
+        最近直播任务结束时间。格式遵循：RFC 3339 如“2021-01-10T10:43:17Z”。
 
         :param end_time: The end_time of this ListAssetsRequest.
         :type end_time: str

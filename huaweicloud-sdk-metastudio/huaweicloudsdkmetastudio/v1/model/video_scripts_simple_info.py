@@ -49,23 +49,23 @@ class VideoScriptsSimpleInfo:
 
         The model defined in huaweicloud sdk
 
-        :param script_name: 剧本名称
+        :param script_name: **参数解释**： 剧本名称。 **约束限制**： 不涉及。 **取值范围**： 只能使用中英文字符，字符长度1-256位。 **默认取值**： 不涉及。
         :type script_name: str
-        :param script_description: 剧本描述。
+        :param script_description: **参数解释**： 剧本描述。 **约束限制**： 不涉及。 **取值范围**： 字符长度0-1024位。 **默认取值**： 不涉及。
         :type script_description: str
-        :param view_mode: 横竖屏类型。默认值是LANDSCAPE。 * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
+        :param view_mode: **参数解释**： 横竖屏类型。 **约束限制**： 不涉及。 **取值范围**： * LANDSCAPE：横屏。 * VERTICAL：竖屏。
         :type view_mode: str
-        :param model_asset_id: 数字人模型资产ID，可以从资产库中查询。
+        :param model_asset_id: **参数解释**： 数字人模型资产ID。 **约束限制**： 不涉及 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及
         :type model_asset_id: str
-        :param model_asset_type: 数字人模型类型。  * HUMAN_MODEL_2D：分身数字人 * HUMAN_MODEL_3D：3D数字人
+        :param model_asset_type: **参数解释**： 数字人模型类型。 **约束限制**： 不涉及 **取值范围**： * HUMAN_MODEL_2D：分身数字人 * HUMAN_MODEL_3D：3D数字人  **默认取值**： 不涉及
         :type model_asset_type: str
         :param voice_config: 
         :type voice_config: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
         :param video_config: 
         :type video_config: :class:`huaweicloudsdkmetastudio.v1.VideoConfig`
-        :param scene_asset_id: 场景资产ID。 &gt; * 分身数字人视频制作不需要填写该参数。 &gt; * 若填写，可以从资产库中查询。
+        :param scene_asset_id: **参数解释**： 场景资产ID。 **约束限制**： 分身数字人视频制作不需要填写该参数。 **取值范围**： 字符长度0-64位 **默认取值**： 不涉及
         :type scene_asset_id: str
-        :param priv_data: 私有数据，用户填写，原样带回。
+        :param priv_data: **参数解释**： 私有数据，用户填写，原样带回。 **约束限制**： 不涉及 **取值范围**： 字符长度0-8192位 **默认取值**： 不涉及
         :type priv_data: str
         :param background_music_config: 
         :type background_music_config: :class:`huaweicloudsdkmetastudio.v1.BackgroundMusicConfig`
@@ -115,7 +115,7 @@ class VideoScriptsSimpleInfo:
     def script_name(self):
         """Gets the script_name of this VideoScriptsSimpleInfo.
 
-        剧本名称
+        **参数解释**： 剧本名称。 **约束限制**： 不涉及。 **取值范围**： 只能使用中英文字符，字符长度1-256位。 **默认取值**： 不涉及。
 
         :return: The script_name of this VideoScriptsSimpleInfo.
         :rtype: str
@@ -126,7 +126,7 @@ class VideoScriptsSimpleInfo:
     def script_name(self, script_name):
         """Sets the script_name of this VideoScriptsSimpleInfo.
 
-        剧本名称
+        **参数解释**： 剧本名称。 **约束限制**： 不涉及。 **取值范围**： 只能使用中英文字符，字符长度1-256位。 **默认取值**： 不涉及。
 
         :param script_name: The script_name of this VideoScriptsSimpleInfo.
         :type script_name: str
@@ -137,7 +137,7 @@ class VideoScriptsSimpleInfo:
     def script_description(self):
         """Gets the script_description of this VideoScriptsSimpleInfo.
 
-        剧本描述。
+        **参数解释**： 剧本描述。 **约束限制**： 不涉及。 **取值范围**： 字符长度0-1024位。 **默认取值**： 不涉及。
 
         :return: The script_description of this VideoScriptsSimpleInfo.
         :rtype: str
@@ -148,7 +148,7 @@ class VideoScriptsSimpleInfo:
     def script_description(self, script_description):
         """Sets the script_description of this VideoScriptsSimpleInfo.
 
-        剧本描述。
+        **参数解释**： 剧本描述。 **约束限制**： 不涉及。 **取值范围**： 字符长度0-1024位。 **默认取值**： 不涉及。
 
         :param script_description: The script_description of this VideoScriptsSimpleInfo.
         :type script_description: str
@@ -159,7 +159,7 @@ class VideoScriptsSimpleInfo:
     def view_mode(self):
         """Gets the view_mode of this VideoScriptsSimpleInfo.
 
-        横竖屏类型。默认值是LANDSCAPE。 * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
+        **参数解释**： 横竖屏类型。 **约束限制**： 不涉及。 **取值范围**： * LANDSCAPE：横屏。 * VERTICAL：竖屏。
 
         :return: The view_mode of this VideoScriptsSimpleInfo.
         :rtype: str
@@ -170,7 +170,7 @@ class VideoScriptsSimpleInfo:
     def view_mode(self, view_mode):
         """Sets the view_mode of this VideoScriptsSimpleInfo.
 
-        横竖屏类型。默认值是LANDSCAPE。 * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
+        **参数解释**： 横竖屏类型。 **约束限制**： 不涉及。 **取值范围**： * LANDSCAPE：横屏。 * VERTICAL：竖屏。
 
         :param view_mode: The view_mode of this VideoScriptsSimpleInfo.
         :type view_mode: str
@@ -181,7 +181,7 @@ class VideoScriptsSimpleInfo:
     def model_asset_id(self):
         """Gets the model_asset_id of this VideoScriptsSimpleInfo.
 
-        数字人模型资产ID，可以从资产库中查询。
+        **参数解释**： 数字人模型资产ID。 **约束限制**： 不涉及 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及
 
         :return: The model_asset_id of this VideoScriptsSimpleInfo.
         :rtype: str
@@ -192,7 +192,7 @@ class VideoScriptsSimpleInfo:
     def model_asset_id(self, model_asset_id):
         """Sets the model_asset_id of this VideoScriptsSimpleInfo.
 
-        数字人模型资产ID，可以从资产库中查询。
+        **参数解释**： 数字人模型资产ID。 **约束限制**： 不涉及 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及
 
         :param model_asset_id: The model_asset_id of this VideoScriptsSimpleInfo.
         :type model_asset_id: str
@@ -203,7 +203,7 @@ class VideoScriptsSimpleInfo:
     def model_asset_type(self):
         """Gets the model_asset_type of this VideoScriptsSimpleInfo.
 
-        数字人模型类型。  * HUMAN_MODEL_2D：分身数字人 * HUMAN_MODEL_3D：3D数字人
+        **参数解释**： 数字人模型类型。 **约束限制**： 不涉及 **取值范围**： * HUMAN_MODEL_2D：分身数字人 * HUMAN_MODEL_3D：3D数字人  **默认取值**： 不涉及
 
         :return: The model_asset_type of this VideoScriptsSimpleInfo.
         :rtype: str
@@ -214,7 +214,7 @@ class VideoScriptsSimpleInfo:
     def model_asset_type(self, model_asset_type):
         """Sets the model_asset_type of this VideoScriptsSimpleInfo.
 
-        数字人模型类型。  * HUMAN_MODEL_2D：分身数字人 * HUMAN_MODEL_3D：3D数字人
+        **参数解释**： 数字人模型类型。 **约束限制**： 不涉及 **取值范围**： * HUMAN_MODEL_2D：分身数字人 * HUMAN_MODEL_3D：3D数字人  **默认取值**： 不涉及
 
         :param model_asset_type: The model_asset_type of this VideoScriptsSimpleInfo.
         :type model_asset_type: str
@@ -261,7 +261,7 @@ class VideoScriptsSimpleInfo:
     def scene_asset_id(self):
         """Gets the scene_asset_id of this VideoScriptsSimpleInfo.
 
-        场景资产ID。 > * 分身数字人视频制作不需要填写该参数。 > * 若填写，可以从资产库中查询。
+        **参数解释**： 场景资产ID。 **约束限制**： 分身数字人视频制作不需要填写该参数。 **取值范围**： 字符长度0-64位 **默认取值**： 不涉及
 
         :return: The scene_asset_id of this VideoScriptsSimpleInfo.
         :rtype: str
@@ -272,7 +272,7 @@ class VideoScriptsSimpleInfo:
     def scene_asset_id(self, scene_asset_id):
         """Sets the scene_asset_id of this VideoScriptsSimpleInfo.
 
-        场景资产ID。 > * 分身数字人视频制作不需要填写该参数。 > * 若填写，可以从资产库中查询。
+        **参数解释**： 场景资产ID。 **约束限制**： 分身数字人视频制作不需要填写该参数。 **取值范围**： 字符长度0-64位 **默认取值**： 不涉及
 
         :param scene_asset_id: The scene_asset_id of this VideoScriptsSimpleInfo.
         :type scene_asset_id: str
@@ -283,7 +283,7 @@ class VideoScriptsSimpleInfo:
     def priv_data(self):
         """Gets the priv_data of this VideoScriptsSimpleInfo.
 
-        私有数据，用户填写，原样带回。
+        **参数解释**： 私有数据，用户填写，原样带回。 **约束限制**： 不涉及 **取值范围**： 字符长度0-8192位 **默认取值**： 不涉及
 
         :return: The priv_data of this VideoScriptsSimpleInfo.
         :rtype: str
@@ -294,7 +294,7 @@ class VideoScriptsSimpleInfo:
     def priv_data(self, priv_data):
         """Sets the priv_data of this VideoScriptsSimpleInfo.
 
-        私有数据，用户填写，原样带回。
+        **参数解释**： 私有数据，用户填写，原样带回。 **约束限制**： 不涉及 **取值范围**： 字符长度0-8192位 **默认取值**： 不涉及
 
         :param priv_data: The priv_data of this VideoScriptsSimpleInfo.
         :type priv_data: str

@@ -33,7 +33,7 @@ class ReportLiveEventReq:
 
         The model defined in huaweicloud sdk
 
-        :param total: 事件条目数。
+        :param total: **参数解释**： 事件条目数。
         :type total: int
         :param events: 事件内容。
         :type events: list[:class:`huaweicloudsdkmetastudio.v1.LiveEvent`]
@@ -58,7 +58,7 @@ class ReportLiveEventReq:
     def total(self):
         """Gets the total of this ReportLiveEventReq.
 
-        事件条目数。
+        **参数解释**： 事件条目数。
 
         :return: The total of this ReportLiveEventReq.
         :rtype: int
@@ -69,7 +69,7 @@ class ReportLiveEventReq:
     def total(self, total):
         """Sets the total of this ReportLiveEventReq.
 
-        事件条目数。
+        **参数解释**： 事件条目数。
 
         :param total: The total of this ReportLiveEventReq.
         :type total: int

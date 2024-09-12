@@ -34,7 +34,7 @@ class ListInteractionRuleGroupsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: 互动规则总数。
+        :param count: **参数解释**： 互动规则总数。
         :type count: int
         :param interaction_rule_groups: 互动规则库列表。
         :type interaction_rule_groups: list[:class:`huaweicloudsdkmetastudio.v1.InteractionRuleGroupDetail`]
@@ -60,7 +60,7 @@ class ListInteractionRuleGroupsResponse(SdkResponse):
     def count(self):
         """Gets the count of this ListInteractionRuleGroupsResponse.
 
-        互动规则总数。
+        **参数解释**： 互动规则总数。
 
         :return: The count of this ListInteractionRuleGroupsResponse.
         :rtype: int
@@ -71,7 +71,7 @@ class ListInteractionRuleGroupsResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this ListInteractionRuleGroupsResponse.
 
-        互动规则总数。
+        **参数解释**： 互动规则总数。
 
         :param count: The count of this ListInteractionRuleGroupsResponse.
         :type count: int

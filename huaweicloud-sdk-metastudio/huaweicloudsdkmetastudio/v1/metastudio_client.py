@@ -9140,6 +9140,8 @@ class MetaStudioClient(Client):
             query_params.append(('name', local_var_params['name']))
         if 'model_resolution' in local_var_params:
             query_params.append(('model_resolution', local_var_params['model_resolution']))
+        if 'is_flexus' in local_var_params:
+            query_params.append(('is_flexus', local_var_params['is_flexus']))
 
         header_params = {}
         if 'x_app_user_id' in local_var_params:

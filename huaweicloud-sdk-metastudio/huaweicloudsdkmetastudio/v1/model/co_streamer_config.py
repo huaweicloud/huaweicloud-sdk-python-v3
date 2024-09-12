@@ -33,7 +33,7 @@ class CoStreamerConfig:
 
         :param voice_config: 
         :type voice_config: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
-        :param streamer_action: 助播出声时主播行为。 * SILENCE：静默 * VOLUME_DOWN：音量降低
+        :param streamer_action: **参数解释**： 助播出声时主播行为设置。 **约束限制**： 不涉及 **取值范围**： * SILENCE：静默 * VOLUME_DOWN：音量降低  **默认取值**： 不涉及。
         :type streamer_action: str
         """
         
@@ -70,7 +70,7 @@ class CoStreamerConfig:
     def streamer_action(self):
         """Gets the streamer_action of this CoStreamerConfig.
 
-        助播出声时主播行为。 * SILENCE：静默 * VOLUME_DOWN：音量降低
+        **参数解释**： 助播出声时主播行为设置。 **约束限制**： 不涉及 **取值范围**： * SILENCE：静默 * VOLUME_DOWN：音量降低  **默认取值**： 不涉及。
 
         :return: The streamer_action of this CoStreamerConfig.
         :rtype: str
@@ -81,7 +81,7 @@ class CoStreamerConfig:
     def streamer_action(self, streamer_action):
         """Sets the streamer_action of this CoStreamerConfig.
 
-        助播出声时主播行为。 * SILENCE：静默 * VOLUME_DOWN：音量降低
+        **参数解释**： 助播出声时主播行为设置。 **约束限制**： 不涉及 **取值范围**： * SILENCE：静默 * VOLUME_DOWN：音量降低  **默认取值**： 不涉及。
 
         :param streamer_action: The streamer_action of this CoStreamerConfig.
         :type streamer_action: str

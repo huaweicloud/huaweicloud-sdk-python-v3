@@ -17,28 +17,57 @@ class NetworkSwitchPolicyReq:
     sensitive_list = []
 
     openapi_types = {
+        'cid': 'str',
         'network_switch_policy_id': 'int'
     }
 
     attribute_map = {
+        'cid': 'cid',
         'network_switch_policy_id': 'network_switch_policy_id'
     }
 
-    def __init__(self, network_switch_policy_id=None):
+    def __init__(self, cid=None, network_switch_policy_id=None):
         """NetworkSwitchPolicyReq
 
         The model defined in huaweicloud sdk
 
+        :param cid: 容器ID
+        :type cid: str
         :param network_switch_policy_id: 网络切换策略标识
         :type network_switch_policy_id: int
         """
         
         
 
+        self._cid = None
         self._network_switch_policy_id = None
         self.discriminator = None
 
+        if cid is not None:
+            self.cid = cid
         self.network_switch_policy_id = network_switch_policy_id
+
+    @property
+    def cid(self):
+        """Gets the cid of this NetworkSwitchPolicyReq.
+
+        容器ID
+
+        :return: The cid of this NetworkSwitchPolicyReq.
+        :rtype: str
+        """
+        return self._cid
+
+    @cid.setter
+    def cid(self, cid):
+        """Sets the cid of this NetworkSwitchPolicyReq.
+
+        容器ID
+
+        :param cid: The cid of this NetworkSwitchPolicyReq.
+        :type cid: str
+        """
+        self._cid = cid
 
     @property
     def network_switch_policy_id(self):

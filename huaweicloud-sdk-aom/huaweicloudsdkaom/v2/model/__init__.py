@@ -140,6 +140,7 @@ from huaweicloudsdkaom.v2.model.no_data_condition import NoDataCondition
 from huaweicloudsdkaom.v2.model.node_info import NodeInfo
 from huaweicloudsdkaom.v2.model.notifications import Notifications
 from huaweicloudsdkaom.v2.model.notified_histories_result import NotifiedHistoriesResult
+from huaweicloudsdkaom.v2.model.page_info import PageInfo
 from huaweicloudsdkaom.v2.model.prom_config_model import PromConfigModel
 from huaweicloudsdkaom.v2.model.prom_instance_eps_create_model import PromInstanceEpsCreateModel
 from huaweicloudsdkaom.v2.model.prom_instance_eps_model import PromInstanceEpsModel

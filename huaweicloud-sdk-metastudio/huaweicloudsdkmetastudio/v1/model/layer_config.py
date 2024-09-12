@@ -43,11 +43,11 @@ class LayerConfig:
 
         The model defined in huaweicloud sdk
 
-        :param layer_type: 图层类型。 - HUMAN:  人物图层 - IMAGE： 素材图片图层 - VIDEO： 素材视频图层 - TEXT: 素材文字图层
+        :param layer_type: **参数解释**： 图层类型。 **约束限制**： 不涉及。 **取值范围**： * HUMAN:  人物图层 * IMAGE： 素材图片图层 * VIDEO： 素材视频图层 * TEXT: 素材文字图层  **默认取值**： 不涉及
         :type layer_type: str
-        :param asset_id: 图层所需资产的资产id，外部资产信息无需填写。 若填写，可以从资产库中查询。
+        :param asset_id: **参数解释**： 图层所需资产的资产id，外部资产信息无需填写。 **约束限制**： 不涉及。 **取值范围**： 字符长度0-64位 **默认取值**： 不涉及
         :type asset_id: str
-        :param group_id: 多场景素材编组。同一group_id的素材，在应用全局时共享位置信息。
+        :param group_id: **参数解释**： 多场景素材编组。同一group_id的素材，在应用全局时共享位置信息。 **约束限制**： 不涉及。 **取值范围**： 字符长度0-64位 **默认取值**： 不涉及
         :type group_id: str
         :param position: 
         :type position: :class:`huaweicloudsdkmetastudio.v1.LayerPositionConfig`
@@ -93,7 +93,7 @@ class LayerConfig:
     def layer_type(self):
         """Gets the layer_type of this LayerConfig.
 
-        图层类型。 - HUMAN:  人物图层 - IMAGE： 素材图片图层 - VIDEO： 素材视频图层 - TEXT: 素材文字图层
+        **参数解释**： 图层类型。 **约束限制**： 不涉及。 **取值范围**： * HUMAN:  人物图层 * IMAGE： 素材图片图层 * VIDEO： 素材视频图层 * TEXT: 素材文字图层  **默认取值**： 不涉及
 
         :return: The layer_type of this LayerConfig.
         :rtype: str
@@ -104,7 +104,7 @@ class LayerConfig:
     def layer_type(self, layer_type):
         """Sets the layer_type of this LayerConfig.
 
-        图层类型。 - HUMAN:  人物图层 - IMAGE： 素材图片图层 - VIDEO： 素材视频图层 - TEXT: 素材文字图层
+        **参数解释**： 图层类型。 **约束限制**： 不涉及。 **取值范围**： * HUMAN:  人物图层 * IMAGE： 素材图片图层 * VIDEO： 素材视频图层 * TEXT: 素材文字图层  **默认取值**： 不涉及
 
         :param layer_type: The layer_type of this LayerConfig.
         :type layer_type: str
@@ -115,7 +115,7 @@ class LayerConfig:
     def asset_id(self):
         """Gets the asset_id of this LayerConfig.
 
-        图层所需资产的资产id，外部资产信息无需填写。 若填写，可以从资产库中查询。
+        **参数解释**： 图层所需资产的资产id，外部资产信息无需填写。 **约束限制**： 不涉及。 **取值范围**： 字符长度0-64位 **默认取值**： 不涉及
 
         :return: The asset_id of this LayerConfig.
         :rtype: str
@@ -126,7 +126,7 @@ class LayerConfig:
     def asset_id(self, asset_id):
         """Sets the asset_id of this LayerConfig.
 
-        图层所需资产的资产id，外部资产信息无需填写。 若填写，可以从资产库中查询。
+        **参数解释**： 图层所需资产的资产id，外部资产信息无需填写。 **约束限制**： 不涉及。 **取值范围**： 字符长度0-64位 **默认取值**： 不涉及
 
         :param asset_id: The asset_id of this LayerConfig.
         :type asset_id: str
@@ -137,7 +137,7 @@ class LayerConfig:
     def group_id(self):
         """Gets the group_id of this LayerConfig.
 
-        多场景素材编组。同一group_id的素材，在应用全局时共享位置信息。
+        **参数解释**： 多场景素材编组。同一group_id的素材，在应用全局时共享位置信息。 **约束限制**： 不涉及。 **取值范围**： 字符长度0-64位 **默认取值**： 不涉及
 
         :return: The group_id of this LayerConfig.
         :rtype: str
@@ -148,7 +148,7 @@ class LayerConfig:
     def group_id(self, group_id):
         """Sets the group_id of this LayerConfig.
 
-        多场景素材编组。同一group_id的素材，在应用全局时共享位置信息。
+        **参数解释**： 多场景素材编组。同一group_id的素材，在应用全局时共享位置信息。 **约束限制**： 不涉及。 **取值范围**： 字符长度0-64位 **默认取值**： 不涉及
 
         :param group_id: The group_id of this LayerConfig.
         :type group_id: str

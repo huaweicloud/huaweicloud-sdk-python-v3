@@ -33,9 +33,9 @@ class HitCondition:
 
         The model defined in huaweicloud sdk
 
-        :param relation: 条件关系 * AND ：表示多个条件同时满足 * OR：表示多个条件满足其一即可 * RESERVED: 兜底回复不会去判断其他命中条件
+        :param relation: **参数解释**： 条件关系。对于多个条件的逻辑运算关系。 **约束限制**： 不涉及。 **取值范围**： * AND：表示多个条件同时满足。 * OR：表示多个条件满足其一即可。 * RESERVED：兜底回复不会去判断其他命中条件。  **默认取值**： 不涉及。
         :type relation: str
-        :param priority: 优先级，数值越低优先级越高；取值0-999，默认值为500，为可选值
+        :param priority: **参数解释**： 优先级，数值越低优先级越高；取值0-999，默认值为500，为可选值 **约束限制**： 不涉及
         :type priority: int
         :param tags: 匹配关系配置
         :type tags: list[:class:`huaweicloudsdkmetastudio.v1.HitConditionTag`]
@@ -59,7 +59,7 @@ class HitCondition:
     def relation(self):
         """Gets the relation of this HitCondition.
 
-        条件关系 * AND ：表示多个条件同时满足 * OR：表示多个条件满足其一即可 * RESERVED: 兜底回复不会去判断其他命中条件
+        **参数解释**： 条件关系。对于多个条件的逻辑运算关系。 **约束限制**： 不涉及。 **取值范围**： * AND：表示多个条件同时满足。 * OR：表示多个条件满足其一即可。 * RESERVED：兜底回复不会去判断其他命中条件。  **默认取值**： 不涉及。
 
         :return: The relation of this HitCondition.
         :rtype: str
@@ -70,7 +70,7 @@ class HitCondition:
     def relation(self, relation):
         """Sets the relation of this HitCondition.
 
-        条件关系 * AND ：表示多个条件同时满足 * OR：表示多个条件满足其一即可 * RESERVED: 兜底回复不会去判断其他命中条件
+        **参数解释**： 条件关系。对于多个条件的逻辑运算关系。 **约束限制**： 不涉及。 **取值范围**： * AND：表示多个条件同时满足。 * OR：表示多个条件满足其一即可。 * RESERVED：兜底回复不会去判断其他命中条件。  **默认取值**： 不涉及。
 
         :param relation: The relation of this HitCondition.
         :type relation: str
@@ -81,7 +81,7 @@ class HitCondition:
     def priority(self):
         """Gets the priority of this HitCondition.
 
-        优先级，数值越低优先级越高；取值0-999，默认值为500，为可选值
+        **参数解释**： 优先级，数值越低优先级越高；取值0-999，默认值为500，为可选值 **约束限制**： 不涉及
 
         :return: The priority of this HitCondition.
         :rtype: int
@@ -92,7 +92,7 @@ class HitCondition:
     def priority(self, priority):
         """Sets the priority of this HitCondition.
 
-        优先级，数值越低优先级越高；取值0-999，默认值为500，为可选值
+        **参数解释**： 优先级，数值越低优先级越高；取值0-999，默认值为500，为可选值 **约束限制**： 不涉及
 
         :param priority: The priority of this HitCondition.
         :type priority: int

@@ -1312,6 +1312,10 @@ class AomAsyncClient(Client):
         query_params = []
         if 'type' in local_var_params:
             query_params.append(('type', local_var_params['type']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
         if 'enterprise_project_id' in local_var_params:

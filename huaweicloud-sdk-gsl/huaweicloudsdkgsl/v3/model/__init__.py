@@ -50,6 +50,8 @@ from huaweicloudsdkgsl.v3.model.list_network_switch_policies_request import List
 from huaweicloudsdkgsl.v3.model.list_network_switch_policies_response import ListNetworkSwitchPoliciesResponse
 from huaweicloudsdkgsl.v3.model.list_pro_price_plans_request import ListProPricePlansRequest
 from huaweicloudsdkgsl.v3.model.list_pro_price_plans_response import ListProPricePlansResponse
+from huaweicloudsdkgsl.v3.model.list_sim_card_flow_per_day_request import ListSimCardFlowPerDayRequest
+from huaweicloudsdkgsl.v3.model.list_sim_card_flow_per_day_response import ListSimCardFlowPerDayResponse
 from huaweicloudsdkgsl.v3.model.list_sim_cards_request import ListSimCardsRequest
 from huaweicloudsdkgsl.v3.model.list_sim_cards_response import ListSimCardsResponse
 from huaweicloudsdkgsl.v3.model.list_sim_device_multiply_request import ListSimDeviceMultiplyRequest
@@ -96,6 +98,9 @@ from huaweicloudsdkgsl.v3.model.show_real_named_request import ShowRealNamedRequ
 from huaweicloudsdkgsl.v3.model.show_real_named_response import ShowRealNamedResponse
 from huaweicloudsdkgsl.v3.model.show_sim_card_request import ShowSimCardRequest
 from huaweicloudsdkgsl.v3.model.show_sim_card_response import ShowSimCardResponse
+from huaweicloudsdkgsl.v3.model.sim_card_flow_item import SimCardFlowItem
+from huaweicloudsdkgsl.v3.model.sim_card_flow_per_day_req import SimCardFlowPerDayReq
+from huaweicloudsdkgsl.v3.model.sim_card_flow_per_day_rsp import SimCardFlowPerDayRsp
 from huaweicloudsdkgsl.v3.model.sim_cards_flow_vo import SimCardsFlowVO
 from huaweicloudsdkgsl.v3.model.sim_device_multiply_vo import SimDeviceMultiplyVO
 from huaweicloudsdkgsl.v3.model.sim_device_vo import SimDeviceVO

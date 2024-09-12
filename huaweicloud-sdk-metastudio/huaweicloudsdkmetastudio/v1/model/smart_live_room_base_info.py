@@ -69,7 +69,7 @@ class SmartLiveRoomBaseInfo:
         :type project_id: str
         :param room_name: 直播间名称
         :type room_name: str
-        :param room_type: 直播间类型。 * NORMAL: 普通直播间，直播间一直存在，可以反复开播 * TEMP: 临时直播间,直播任务结束后自动清理直播间。 * TEMPLATE: 直播间模板。
+        :param room_type: 直播间类型。 * NORMAL：普通直播间，直播间一直存在，可以反复开播 * TEMP：临时直播间，直播任务结束后自动清理直播间。 * TEMPLATE：直播间模板。
         :type room_type: str
         :param room_state: 直播间配置状态。 - ENABLE: 直播间正常可用。 - DISABLE： 直播间不可用。不可用原因在error_info中说明。 - BLOCKED：直播间被冻结。冻结原因在error_info中说明。
         :type room_state: str
@@ -87,13 +87,13 @@ class SmartLiveRoomBaseInfo:
         :type thumbnail: str
         :param model_infos: 数字人模型信息
         :type model_infos: list[:class:`huaweicloudsdkmetastudio.v1.ModelInfo`]
-        :param create_time: 创建时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
+        :param create_time: 创建时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
         :type create_time: str
-        :param update_time: 更新时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
+        :param update_time: 更新时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
         :type update_time: str
-        :param last_job_start_time: 开始直播时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
+        :param last_job_start_time: 开始直播时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
         :type last_job_start_time: str
-        :param last_job_end_time: 结束直播时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
+        :param last_job_end_time: 结束直播时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
         :type last_job_end_time: str
         :param last_job_status: 当前直播状态 - WAITING：任务等待执行 - PROCESSING：任务执行中 - SUCCEED：任务处理成功 - FAILED：任务处理时变 - CANCELED：任务取消 - BLOCKED：任务被冻结
         :type last_job_status: str
@@ -230,7 +230,7 @@ class SmartLiveRoomBaseInfo:
     def room_type(self):
         """Gets the room_type of this SmartLiveRoomBaseInfo.
 
-        直播间类型。 * NORMAL: 普通直播间，直播间一直存在，可以反复开播 * TEMP: 临时直播间,直播任务结束后自动清理直播间。 * TEMPLATE: 直播间模板。
+        直播间类型。 * NORMAL：普通直播间，直播间一直存在，可以反复开播 * TEMP：临时直播间，直播任务结束后自动清理直播间。 * TEMPLATE：直播间模板。
 
         :return: The room_type of this SmartLiveRoomBaseInfo.
         :rtype: str
@@ -241,7 +241,7 @@ class SmartLiveRoomBaseInfo:
     def room_type(self, room_type):
         """Sets the room_type of this SmartLiveRoomBaseInfo.
 
-        直播间类型。 * NORMAL: 普通直播间，直播间一直存在，可以反复开播 * TEMP: 临时直播间,直播任务结束后自动清理直播间。 * TEMPLATE: 直播间模板。
+        直播间类型。 * NORMAL：普通直播间，直播间一直存在，可以反复开播 * TEMP：临时直播间，直播任务结束后自动清理直播间。 * TEMPLATE：直播间模板。
 
         :param room_type: The room_type of this SmartLiveRoomBaseInfo.
         :type room_type: str
@@ -420,7 +420,7 @@ class SmartLiveRoomBaseInfo:
     def create_time(self):
         """Gets the create_time of this SmartLiveRoomBaseInfo.
 
-        创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        创建时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
         :return: The create_time of this SmartLiveRoomBaseInfo.
         :rtype: str
@@ -431,7 +431,7 @@ class SmartLiveRoomBaseInfo:
     def create_time(self, create_time):
         """Sets the create_time of this SmartLiveRoomBaseInfo.
 
-        创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        创建时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
         :param create_time: The create_time of this SmartLiveRoomBaseInfo.
         :type create_time: str
@@ -442,7 +442,7 @@ class SmartLiveRoomBaseInfo:
     def update_time(self):
         """Gets the update_time of this SmartLiveRoomBaseInfo.
 
-        更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        更新时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
         :return: The update_time of this SmartLiveRoomBaseInfo.
         :rtype: str
@@ -453,7 +453,7 @@ class SmartLiveRoomBaseInfo:
     def update_time(self, update_time):
         """Sets the update_time of this SmartLiveRoomBaseInfo.
 
-        更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        更新时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
         :param update_time: The update_time of this SmartLiveRoomBaseInfo.
         :type update_time: str
@@ -464,7 +464,7 @@ class SmartLiveRoomBaseInfo:
     def last_job_start_time(self):
         """Gets the last_job_start_time of this SmartLiveRoomBaseInfo.
 
-        开始直播时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        开始直播时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
         :return: The last_job_start_time of this SmartLiveRoomBaseInfo.
         :rtype: str
@@ -475,7 +475,7 @@ class SmartLiveRoomBaseInfo:
     def last_job_start_time(self, last_job_start_time):
         """Sets the last_job_start_time of this SmartLiveRoomBaseInfo.
 
-        开始直播时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        开始直播时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
         :param last_job_start_time: The last_job_start_time of this SmartLiveRoomBaseInfo.
         :type last_job_start_time: str
@@ -486,7 +486,7 @@ class SmartLiveRoomBaseInfo:
     def last_job_end_time(self):
         """Gets the last_job_end_time of this SmartLiveRoomBaseInfo.
 
-        结束直播时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        结束直播时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
         :return: The last_job_end_time of this SmartLiveRoomBaseInfo.
         :rtype: str
@@ -497,7 +497,7 @@ class SmartLiveRoomBaseInfo:
     def last_job_end_time(self, last_job_end_time):
         """Sets the last_job_end_time of this SmartLiveRoomBaseInfo.
 
-        结束直播时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        结束直播时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
         :param last_job_end_time: The last_job_end_time of this SmartLiveRoomBaseInfo.
         :type last_job_end_time: str

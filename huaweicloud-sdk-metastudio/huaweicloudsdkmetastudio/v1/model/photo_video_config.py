@@ -33,9 +33,9 @@ class PhotoVideoConfig:
 
         The model defined in huaweicloud sdk
 
-        :param codec: 视频编码格式及视频文件格式。 * H264: h264编码，输出mp4文件
+        :param codec: 视频编码格式及视频文件格式。 * H264：h264编码，输出mp4文件
         :type codec: str
-        :param bitrate: 输出平均码率。  单位：kbps。  最小值40，最大值30000。
+        :param bitrate: **参数解释**： 输出平均码率。  单位：kbps。  最小值40，最大值30000。
         :type bitrate: int
         :param frame_rate: 帧率。  单位：FPS。
         :type frame_rate: str
@@ -58,7 +58,7 @@ class PhotoVideoConfig:
     def codec(self):
         """Gets the codec of this PhotoVideoConfig.
 
-        视频编码格式及视频文件格式。 * H264: h264编码，输出mp4文件
+        视频编码格式及视频文件格式。 * H264：h264编码，输出mp4文件
 
         :return: The codec of this PhotoVideoConfig.
         :rtype: str
@@ -69,7 +69,7 @@ class PhotoVideoConfig:
     def codec(self, codec):
         """Sets the codec of this PhotoVideoConfig.
 
-        视频编码格式及视频文件格式。 * H264: h264编码，输出mp4文件
+        视频编码格式及视频文件格式。 * H264：h264编码，输出mp4文件
 
         :param codec: The codec of this PhotoVideoConfig.
         :type codec: str
@@ -80,7 +80,7 @@ class PhotoVideoConfig:
     def bitrate(self):
         """Gets the bitrate of this PhotoVideoConfig.
 
-        输出平均码率。  单位：kbps。  最小值40，最大值30000。
+        **参数解释**： 输出平均码率。  单位：kbps。  最小值40，最大值30000。
 
         :return: The bitrate of this PhotoVideoConfig.
         :rtype: int
@@ -91,7 +91,7 @@ class PhotoVideoConfig:
     def bitrate(self, bitrate):
         """Sets the bitrate of this PhotoVideoConfig.
 
-        输出平均码率。  单位：kbps。  最小值40，最大值30000。
+        **参数解释**： 输出平均码率。  单位：kbps。  最小值40，最大值30000。
 
         :param bitrate: The bitrate of this PhotoVideoConfig.
         :type bitrate: int

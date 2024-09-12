@@ -61,11 +61,11 @@ class SmartChatRoomBaseInfo:
         :type model_infos: :class:`huaweicloudsdkmetastudio.v1.ModelInfo`
         :param voice_config: 
         :type voice_config: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
-        :param concurrency: 并发路数。
+        :param concurrency: **参数解释**： 并发路数。
         :type concurrency: int
-        :param create_time: 创建时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
+        :param create_time: 创建时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
         :type create_time: str
-        :param update_time: 更新时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
+        :param update_time: 更新时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
         :type update_time: str
         """
         
@@ -254,7 +254,7 @@ class SmartChatRoomBaseInfo:
     def concurrency(self):
         """Gets the concurrency of this SmartChatRoomBaseInfo.
 
-        并发路数。
+        **参数解释**： 并发路数。
 
         :return: The concurrency of this SmartChatRoomBaseInfo.
         :rtype: int
@@ -265,7 +265,7 @@ class SmartChatRoomBaseInfo:
     def concurrency(self, concurrency):
         """Sets the concurrency of this SmartChatRoomBaseInfo.
 
-        并发路数。
+        **参数解释**： 并发路数。
 
         :param concurrency: The concurrency of this SmartChatRoomBaseInfo.
         :type concurrency: int
@@ -276,7 +276,7 @@ class SmartChatRoomBaseInfo:
     def create_time(self):
         """Gets the create_time of this SmartChatRoomBaseInfo.
 
-        创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        创建时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
         :return: The create_time of this SmartChatRoomBaseInfo.
         :rtype: str
@@ -287,7 +287,7 @@ class SmartChatRoomBaseInfo:
     def create_time(self, create_time):
         """Sets the create_time of this SmartChatRoomBaseInfo.
 
-        创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        创建时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
         :param create_time: The create_time of this SmartChatRoomBaseInfo.
         :type create_time: str
@@ -298,7 +298,7 @@ class SmartChatRoomBaseInfo:
     def update_time(self):
         """Gets the update_time of this SmartChatRoomBaseInfo.
 
-        更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        更新时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
         :return: The update_time of this SmartChatRoomBaseInfo.
         :rtype: str
@@ -309,7 +309,7 @@ class SmartChatRoomBaseInfo:
     def update_time(self, update_time):
         """Sets the update_time of this SmartChatRoomBaseInfo.
 
-        更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        更新时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
         :param update_time: The update_time of this SmartChatRoomBaseInfo.
         :type update_time: str

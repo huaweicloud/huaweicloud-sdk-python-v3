@@ -34,7 +34,7 @@ class ListSmartLiveJobsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: 数字人直播任务总数。
+        :param count: **参数解释**： 数字人直播任务总数。
         :type count: int
         :param smart_live_jobs: 数字人直播任务列表。
         :type smart_live_jobs: list[:class:`huaweicloudsdkmetastudio.v1.SmartLiveJob`]
@@ -60,7 +60,7 @@ class ListSmartLiveJobsResponse(SdkResponse):
     def count(self):
         """Gets the count of this ListSmartLiveJobsResponse.
 
-        数字人直播任务总数。
+        **参数解释**： 数字人直播任务总数。
 
         :return: The count of this ListSmartLiveJobsResponse.
         :rtype: int
@@ -71,7 +71,7 @@ class ListSmartLiveJobsResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this ListSmartLiveJobsResponse.
 
-        数字人直播任务总数。
+        **参数解释**： 数字人直播任务总数。
 
         :param count: The count of this ListSmartLiveJobsResponse.
         :type count: int

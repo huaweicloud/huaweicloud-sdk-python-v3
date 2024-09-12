@@ -31,7 +31,7 @@ class ShootScriptItem:
 
         The model defined in huaweicloud sdk
 
-        :param sequence_no: 剧本序号。
+        :param sequence_no: **参数解释**： 剧本序号。 **约束限制**： 同一个剧本序号不重复。 **默认取值**： 不涉及。
         :type sequence_no: int
         :param shoot_script: 
         :type shoot_script: :class:`huaweicloudsdkmetastudio.v1.ShootScript`
@@ -52,7 +52,7 @@ class ShootScriptItem:
     def sequence_no(self):
         """Gets the sequence_no of this ShootScriptItem.
 
-        剧本序号。
+        **参数解释**： 剧本序号。 **约束限制**： 同一个剧本序号不重复。 **默认取值**： 不涉及。
 
         :return: The sequence_no of this ShootScriptItem.
         :rtype: int
@@ -63,7 +63,7 @@ class ShootScriptItem:
     def sequence_no(self, sequence_no):
         """Sets the sequence_no of this ShootScriptItem.
 
-        剧本序号。
+        **参数解释**： 剧本序号。 **约束限制**： 同一个剧本序号不重复。 **默认取值**： 不涉及。
 
         :param sequence_no: The sequence_no of this ShootScriptItem.
         :type sequence_no: int

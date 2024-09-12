@@ -78,11 +78,11 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param room_name: 直播间名称
+        :param room_name: **参数解释**： 直播间名称。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-256位。 **默认取值**： 不涉及。
         :type room_name: str
-        :param room_description: 直播间描述。
+        :param room_description: **参数解释**： 直播间描述。 **约束限制**： 不涉及。 **取值范围**： 字符长度0-1024位。 **默认取值**： 不涉及。
         :type room_description: str
-        :param room_type: 直播间类型。 * NORMAL: 普通直播间，直播间一直存在，可以反复开播 * TEMP: 临时直播间,直播任务结束后自动清理直播间。 * TEMPLATE: 直播间模板。
+        :param room_type: **参数解释**： 直播间类型。 **约束限制**： 不涉及。 **取值范围**： * NORMAL：普通直播间，直播间一直存在，可以反复开播 * TEMP：临时直播间，直播任务结束后自动清理直播间。 * TEMPLATE：直播间模板。
         :type room_type: str
         :param scene_scripts: 默认直播剧本列表。
         :type scene_scripts: list[:class:`huaweicloudsdkmetastudio.v1.LiveVideoScriptInfo`]
@@ -92,11 +92,11 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         :type play_policy: :class:`huaweicloudsdkmetastudio.v1.PlayPolicy`
         :param video_config: 
         :type video_config: :class:`huaweicloudsdkmetastudio.v1.VideoConfig`
-        :param output_urls: RTMP视频推流第三方直播平台地址。
+        :param output_urls: **参数解释**： RTMP视频推流第三方直播平台地址。 &gt; 直播过程中刷新地址，需要调用COMMAND命令REFRESH_OUTPUT_URL。  **约束限制**： 不涉及 **取值范围**： 当前仅支持一条RTMP出流地址。 **默认取值**： 不涉及。
         :type output_urls: list[str]
-        :param stream_keys: RTMP视频推流第三方直播平台流秘钥，与推流地址对应。
+        :param stream_keys: **参数解释**： RTMP视频推流第三方直播平台流密钥，与推流地址对应。 &gt; 直播过程中刷新地址，需要调用COMMAND命令REFRESH_OUTPUT_URL。  **约束限制**： 不涉及 **取值范围**： 当前仅支持一条RTMP出流地址。 **默认取值**： 不涉及。
         :type stream_keys: list[str]
-        :param backup_model_asset_ids: 主播轮换时备选主播数字人资产ID（仅形象资产，不包含音色），可以从资产库中查询。
+        :param backup_model_asset_ids: **参数解释**： 主播轮换时备选主播数字人资产ID（仅形象资产，不包含声音）。  **约束限制**： 不涉及 **取值范围**： 当前最大支持5个备选主播。 数字人资产ID，字符长度0-64位。 **默认取值**： 不涉及
         :type backup_model_asset_ids: list[str]
         :param live_event_callback_config: 
         :type live_event_callback_config: :class:`huaweicloudsdkmetastudio.v1.LiveEventCallBackConfig`
@@ -106,17 +106,17 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
         :param shared_config: 
         :type shared_config: :class:`huaweicloudsdkmetastudio.v1.SharedConfig`
-        :param view_mode: 横竖屏类型。默认值为：VERTICAL。 * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
+        :param view_mode: **参数解释**： 横竖屏类型。 **约束限制**： 用户无需填写，通过video_config中分辨率判断 **取值范围**： * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
         :type view_mode: str
         :param co_streamer_config: 
         :type co_streamer_config: :class:`huaweicloudsdkmetastudio.v1.CoStreamerConfig`
-        :param priv_data: 私有数据，用户填写，原样带回。
+        :param priv_data: **参数解释**： 匹配值私有数据，用户填写，原样带回。 **约束限制**： 不涉及 **取值范围**： 字符长度0-8192 **默认取值**： 不涉及。
         :type priv_data: str
         :param room_id: 直播间ID
         :type room_id: str
-        :param create_time: 直播间创建时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
+        :param create_time: 直播间创建时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
         :type create_time: str
-        :param update_time: 直播间更新时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
+        :param update_time: 直播间更新时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
         :type update_time: str
         :param cover_url: 直播间封面图URL
         :type cover_url: str
@@ -213,7 +213,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
     def room_name(self):
         """Gets the room_name of this ShowSmartLiveRoomResponse.
 
-        直播间名称
+        **参数解释**： 直播间名称。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-256位。 **默认取值**： 不涉及。
 
         :return: The room_name of this ShowSmartLiveRoomResponse.
         :rtype: str
@@ -224,7 +224,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
     def room_name(self, room_name):
         """Sets the room_name of this ShowSmartLiveRoomResponse.
 
-        直播间名称
+        **参数解释**： 直播间名称。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-256位。 **默认取值**： 不涉及。
 
         :param room_name: The room_name of this ShowSmartLiveRoomResponse.
         :type room_name: str
@@ -235,7 +235,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
     def room_description(self):
         """Gets the room_description of this ShowSmartLiveRoomResponse.
 
-        直播间描述。
+        **参数解释**： 直播间描述。 **约束限制**： 不涉及。 **取值范围**： 字符长度0-1024位。 **默认取值**： 不涉及。
 
         :return: The room_description of this ShowSmartLiveRoomResponse.
         :rtype: str
@@ -246,7 +246,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
     def room_description(self, room_description):
         """Sets the room_description of this ShowSmartLiveRoomResponse.
 
-        直播间描述。
+        **参数解释**： 直播间描述。 **约束限制**： 不涉及。 **取值范围**： 字符长度0-1024位。 **默认取值**： 不涉及。
 
         :param room_description: The room_description of this ShowSmartLiveRoomResponse.
         :type room_description: str
@@ -257,7 +257,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
     def room_type(self):
         """Gets the room_type of this ShowSmartLiveRoomResponse.
 
-        直播间类型。 * NORMAL: 普通直播间，直播间一直存在，可以反复开播 * TEMP: 临时直播间,直播任务结束后自动清理直播间。 * TEMPLATE: 直播间模板。
+        **参数解释**： 直播间类型。 **约束限制**： 不涉及。 **取值范围**： * NORMAL：普通直播间，直播间一直存在，可以反复开播 * TEMP：临时直播间，直播任务结束后自动清理直播间。 * TEMPLATE：直播间模板。
 
         :return: The room_type of this ShowSmartLiveRoomResponse.
         :rtype: str
@@ -268,7 +268,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
     def room_type(self, room_type):
         """Sets the room_type of this ShowSmartLiveRoomResponse.
 
-        直播间类型。 * NORMAL: 普通直播间，直播间一直存在，可以反复开播 * TEMP: 临时直播间,直播任务结束后自动清理直播间。 * TEMPLATE: 直播间模板。
+        **参数解释**： 直播间类型。 **约束限制**： 不涉及。 **取值范围**： * NORMAL：普通直播间，直播间一直存在，可以反复开播 * TEMP：临时直播间，直播任务结束后自动清理直播间。 * TEMPLATE：直播间模板。
 
         :param room_type: The room_type of this ShowSmartLiveRoomResponse.
         :type room_type: str
@@ -359,7 +359,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
     def output_urls(self):
         """Gets the output_urls of this ShowSmartLiveRoomResponse.
 
-        RTMP视频推流第三方直播平台地址。
+        **参数解释**： RTMP视频推流第三方直播平台地址。 > 直播过程中刷新地址，需要调用COMMAND命令REFRESH_OUTPUT_URL。  **约束限制**： 不涉及 **取值范围**： 当前仅支持一条RTMP出流地址。 **默认取值**： 不涉及。
 
         :return: The output_urls of this ShowSmartLiveRoomResponse.
         :rtype: list[str]
@@ -370,7 +370,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
     def output_urls(self, output_urls):
         """Sets the output_urls of this ShowSmartLiveRoomResponse.
 
-        RTMP视频推流第三方直播平台地址。
+        **参数解释**： RTMP视频推流第三方直播平台地址。 > 直播过程中刷新地址，需要调用COMMAND命令REFRESH_OUTPUT_URL。  **约束限制**： 不涉及 **取值范围**： 当前仅支持一条RTMP出流地址。 **默认取值**： 不涉及。
 
         :param output_urls: The output_urls of this ShowSmartLiveRoomResponse.
         :type output_urls: list[str]
@@ -381,7 +381,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
     def stream_keys(self):
         """Gets the stream_keys of this ShowSmartLiveRoomResponse.
 
-        RTMP视频推流第三方直播平台流秘钥，与推流地址对应。
+        **参数解释**： RTMP视频推流第三方直播平台流密钥，与推流地址对应。 > 直播过程中刷新地址，需要调用COMMAND命令REFRESH_OUTPUT_URL。  **约束限制**： 不涉及 **取值范围**： 当前仅支持一条RTMP出流地址。 **默认取值**： 不涉及。
 
         :return: The stream_keys of this ShowSmartLiveRoomResponse.
         :rtype: list[str]
@@ -392,7 +392,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
     def stream_keys(self, stream_keys):
         """Sets the stream_keys of this ShowSmartLiveRoomResponse.
 
-        RTMP视频推流第三方直播平台流秘钥，与推流地址对应。
+        **参数解释**： RTMP视频推流第三方直播平台流密钥，与推流地址对应。 > 直播过程中刷新地址，需要调用COMMAND命令REFRESH_OUTPUT_URL。  **约束限制**： 不涉及 **取值范围**： 当前仅支持一条RTMP出流地址。 **默认取值**： 不涉及。
 
         :param stream_keys: The stream_keys of this ShowSmartLiveRoomResponse.
         :type stream_keys: list[str]
@@ -403,7 +403,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
     def backup_model_asset_ids(self):
         """Gets the backup_model_asset_ids of this ShowSmartLiveRoomResponse.
 
-        主播轮换时备选主播数字人资产ID（仅形象资产，不包含音色），可以从资产库中查询。
+        **参数解释**： 主播轮换时备选主播数字人资产ID（仅形象资产，不包含声音）。  **约束限制**： 不涉及 **取值范围**： 当前最大支持5个备选主播。 数字人资产ID，字符长度0-64位。 **默认取值**： 不涉及
 
         :return: The backup_model_asset_ids of this ShowSmartLiveRoomResponse.
         :rtype: list[str]
@@ -414,7 +414,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
     def backup_model_asset_ids(self, backup_model_asset_ids):
         """Sets the backup_model_asset_ids of this ShowSmartLiveRoomResponse.
 
-        主播轮换时备选主播数字人资产ID（仅形象资产，不包含音色），可以从资产库中查询。
+        **参数解释**： 主播轮换时备选主播数字人资产ID（仅形象资产，不包含声音）。  **约束限制**： 不涉及 **取值范围**： 当前最大支持5个备选主播。 数字人资产ID，字符长度0-64位。 **默认取值**： 不涉及
 
         :param backup_model_asset_ids: The backup_model_asset_ids of this ShowSmartLiveRoomResponse.
         :type backup_model_asset_ids: list[str]
@@ -497,7 +497,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
     def view_mode(self):
         """Gets the view_mode of this ShowSmartLiveRoomResponse.
 
-        横竖屏类型。默认值为：VERTICAL。 * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
+        **参数解释**： 横竖屏类型。 **约束限制**： 用户无需填写，通过video_config中分辨率判断 **取值范围**： * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
 
         :return: The view_mode of this ShowSmartLiveRoomResponse.
         :rtype: str
@@ -508,7 +508,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
     def view_mode(self, view_mode):
         """Sets the view_mode of this ShowSmartLiveRoomResponse.
 
-        横竖屏类型。默认值为：VERTICAL。 * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
+        **参数解释**： 横竖屏类型。 **约束限制**： 用户无需填写，通过video_config中分辨率判断 **取值范围**： * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
 
         :param view_mode: The view_mode of this ShowSmartLiveRoomResponse.
         :type view_mode: str
@@ -537,7 +537,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
     def priv_data(self):
         """Gets the priv_data of this ShowSmartLiveRoomResponse.
 
-        私有数据，用户填写，原样带回。
+        **参数解释**： 匹配值私有数据，用户填写，原样带回。 **约束限制**： 不涉及 **取值范围**： 字符长度0-8192 **默认取值**： 不涉及。
 
         :return: The priv_data of this ShowSmartLiveRoomResponse.
         :rtype: str
@@ -548,7 +548,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
     def priv_data(self, priv_data):
         """Sets the priv_data of this ShowSmartLiveRoomResponse.
 
-        私有数据，用户填写，原样带回。
+        **参数解释**： 匹配值私有数据，用户填写，原样带回。 **约束限制**： 不涉及 **取值范围**： 字符长度0-8192 **默认取值**： 不涉及。
 
         :param priv_data: The priv_data of this ShowSmartLiveRoomResponse.
         :type priv_data: str
@@ -581,7 +581,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
     def create_time(self):
         """Gets the create_time of this ShowSmartLiveRoomResponse.
 
-        直播间创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        直播间创建时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
         :return: The create_time of this ShowSmartLiveRoomResponse.
         :rtype: str
@@ -592,7 +592,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
     def create_time(self, create_time):
         """Sets the create_time of this ShowSmartLiveRoomResponse.
 
-        直播间创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        直播间创建时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
         :param create_time: The create_time of this ShowSmartLiveRoomResponse.
         :type create_time: str
@@ -603,7 +603,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
     def update_time(self):
         """Gets the update_time of this ShowSmartLiveRoomResponse.
 
-        直播间更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        直播间更新时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
         :return: The update_time of this ShowSmartLiveRoomResponse.
         :rtype: str
@@ -614,7 +614,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
     def update_time(self, update_time):
         """Sets the update_time of this ShowSmartLiveRoomResponse.
 
-        直播间更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        直播间更新时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
         :param update_time: The update_time of this ShowSmartLiveRoomResponse.
         :type update_time: str

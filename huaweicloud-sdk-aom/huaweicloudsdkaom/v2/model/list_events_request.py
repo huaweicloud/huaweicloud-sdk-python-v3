@@ -19,16 +19,20 @@ class ListEventsRequest:
     openapi_types = {
         'type': 'str',
         'enterprise_project_id': 'str',
+        'limit': 'int',
+        'marker': 'str',
         'body': 'EventQueryParam2'
     }
 
     attribute_map = {
         'type': 'type',
         'enterprise_project_id': 'Enterprise-Project-Id',
+        'limit': 'limit',
+        'marker': 'marker',
         'body': 'body'
     }
 
-    def __init__(self, type=None, enterprise_project_id=None, body=None):
+    def __init__(self, type=None, enterprise_project_id=None, limit=None, marker=None, body=None):
         """ListEventsRequest
 
         The model defined in huaweicloud sdk
@@ -37,6 +41,10 @@ class ListEventsRequest:
         :type type: str
         :param enterprise_project_id: 企业项目id。 - 查询单个企业项目下实例，填写企业项目id。 - 查询所有企业项目下实例，填写“all_granted_eps”。
         :type enterprise_project_id: str
+        :param limit: 不填默认值为1000
+        :type limit: int
+        :param marker: 分页标记，初始为0，后续值为返回体中的next_marker
+        :type marker: str
         :param body: Body of the ListEventsRequest
         :type body: :class:`huaweicloudsdkaom.v2.EventQueryParam2`
         """
@@ -45,6 +53,8 @@ class ListEventsRequest:
 
         self._type = None
         self._enterprise_project_id = None
+        self._limit = None
+        self._marker = None
         self._body = None
         self.discriminator = None
 
@@ -52,6 +62,10 @@ class ListEventsRequest:
             self.type = type
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if limit is not None:
+            self.limit = limit
+        if marker is not None:
+            self.marker = marker
         if body is not None:
             self.body = body
 
@@ -98,6 +112,50 @@ class ListEventsRequest:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def limit(self):
+        """Gets the limit of this ListEventsRequest.
+
+        不填默认值为1000
+
+        :return: The limit of this ListEventsRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListEventsRequest.
+
+        不填默认值为1000
+
+        :param limit: The limit of this ListEventsRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def marker(self):
+        """Gets the marker of this ListEventsRequest.
+
+        分页标记，初始为0，后续值为返回体中的next_marker
+
+        :return: The marker of this ListEventsRequest.
+        :rtype: str
+        """
+        return self._marker
+
+    @marker.setter
+    def marker(self, marker):
+        """Sets the marker of this ListEventsRequest.
+
+        分页标记，初始为0，后续值为返回体中的next_marker
+
+        :param marker: The marker of this ListEventsRequest.
+        :type marker: str
+        """
+        self._marker = marker
 
     @property
     def body(self):
