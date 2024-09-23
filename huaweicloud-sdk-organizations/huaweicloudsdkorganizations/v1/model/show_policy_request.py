@@ -15,22 +15,27 @@ class ShowPolicyRequest:
                             and the value is json key in definition.
     """
     sensitive_list = []
+    sensitive_list.append('x_security_token')
 
     openapi_types = {
+        'x_security_token': 'str',
         'policy_id': 'str',
         'x_language': 'str'
     }
 
     attribute_map = {
+        'x_security_token': 'X-Security-Token',
         'policy_id': 'policy_id',
         'x_language': 'X-Language'
     }
 
-    def __init__(self, policy_id=None, x_language=None):
+    def __init__(self, x_security_token=None, policy_id=None, x_language=None):
         """ShowPolicyRequest
 
         The model defined in huaweicloud sdk
 
+        :param x_security_token: 如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+        :type x_security_token: str
         :param policy_id: 策略的唯一标识符（ID）。
         :type policy_id: str
         :param x_language: 选择接口返回的信息的语言
@@ -39,13 +44,38 @@ class ShowPolicyRequest:
         
         
 
+        self._x_security_token = None
         self._policy_id = None
         self._x_language = None
         self.discriminator = None
 
+        if x_security_token is not None:
+            self.x_security_token = x_security_token
         self.policy_id = policy_id
         if x_language is not None:
             self.x_language = x_language
+
+    @property
+    def x_security_token(self):
+        """Gets the x_security_token of this ShowPolicyRequest.
+
+        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+
+        :return: The x_security_token of this ShowPolicyRequest.
+        :rtype: str
+        """
+        return self._x_security_token
+
+    @x_security_token.setter
+    def x_security_token(self, x_security_token):
+        """Sets the x_security_token of this ShowPolicyRequest.
+
+        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+
+        :param x_security_token: The x_security_token of this ShowPolicyRequest.
+        :type x_security_token: str
+        """
+        self._x_security_token = x_security_token
 
     @property
     def policy_id(self):

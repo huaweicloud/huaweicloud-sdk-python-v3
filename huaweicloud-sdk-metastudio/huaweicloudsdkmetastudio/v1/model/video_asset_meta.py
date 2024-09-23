@@ -53,29 +53,29 @@ class VideoAssetMeta:
 
         The model defined in huaweicloud sdk
 
-        :param video_codec: 视频编码格式
+        :param video_codec: **参数解释**： 视频编码格式。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： 字符长度0-32位。 **默认取值**： 不涉及
         :type video_codec: str
-        :param width: 视频宽度
+        :param width: **参数解释**： 视频画面宽度。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
         :type width: int
-        :param height: 视频高度
+        :param height: **参数解释**： 视频画面高度。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
         :type height: int
-        :param frame_rate: 帧率
+        :param frame_rate: **参数解释**： 视频帧率。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： 字符长度0-32位。 **默认取值**： 不涉及
         :type frame_rate: str
-        :param video_bit_rate: 视频平均码率,单位kbps
+        :param video_bit_rate: **参数解释**： 视频平均码率,单位kbps。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
         :type video_bit_rate: int
-        :param duration: 时长,单位秒
+        :param duration: **参数解释**： 时长,单位秒。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
         :type duration: int
-        :param audio_codec: 音频编码格式
+        :param audio_codec: **参数解释**： 音频编码格式。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： 字符长度0-32位。 **默认取值**： 不涉及
         :type audio_codec: str
-        :param audio_bit_rate: 音频平均码率,单位kbps
+        :param audio_bit_rate: **参数解释**： 音频平均码率,单位kbps。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
         :type audio_bit_rate: int
-        :param audio_channels: 音频声道数
+        :param audio_channels: **参数解释**： 音频声道数。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
         :type audio_channels: int
-        :param sample: 采样率,HZ
+        :param sample: **参数解释**： 采样率,HZ。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
         :type sample: int
-        :param mode: Horizontal&#x3D;横向；Vertical&#x3D;纵向
+        :param mode: **参数解释**： 横向画面或纵向画面。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： * Horizontal：横向 * Vertical：纵向  **默认取值**： 不涉及
         :type mode: str
-        :param video_transcoding_status: 视频转码状态。 * WAITING：等待 * TRANSCODING：转码中 * FAILED：失败 * SUCCEEDED：成功
+        :param video_transcoding_status: **参数解释**： 视频转码状态。 **约束限制**： 用户无需填写，系统自行填写。 **取值范围**： * WAITING：等待 * TRANSCODING：转码中 * FAILED：失败 * SUCCEEDED：成功  **默认取值**： 不涉及
         :type video_transcoding_status: str
         :param error_info: 
         :type error_info: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
@@ -129,7 +129,7 @@ class VideoAssetMeta:
     def video_codec(self):
         """Gets the video_codec of this VideoAssetMeta.
 
-        视频编码格式
+        **参数解释**： 视频编码格式。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： 字符长度0-32位。 **默认取值**： 不涉及
 
         :return: The video_codec of this VideoAssetMeta.
         :rtype: str
@@ -140,7 +140,7 @@ class VideoAssetMeta:
     def video_codec(self, video_codec):
         """Sets the video_codec of this VideoAssetMeta.
 
-        视频编码格式
+        **参数解释**： 视频编码格式。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： 字符长度0-32位。 **默认取值**： 不涉及
 
         :param video_codec: The video_codec of this VideoAssetMeta.
         :type video_codec: str
@@ -151,7 +151,7 @@ class VideoAssetMeta:
     def width(self):
         """Gets the width of this VideoAssetMeta.
 
-        视频宽度
+        **参数解释**： 视频画面宽度。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
         :return: The width of this VideoAssetMeta.
         :rtype: int
@@ -162,7 +162,7 @@ class VideoAssetMeta:
     def width(self, width):
         """Sets the width of this VideoAssetMeta.
 
-        视频宽度
+        **参数解释**： 视频画面宽度。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
         :param width: The width of this VideoAssetMeta.
         :type width: int
@@ -173,7 +173,7 @@ class VideoAssetMeta:
     def height(self):
         """Gets the height of this VideoAssetMeta.
 
-        视频高度
+        **参数解释**： 视频画面高度。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
         :return: The height of this VideoAssetMeta.
         :rtype: int
@@ -184,7 +184,7 @@ class VideoAssetMeta:
     def height(self, height):
         """Sets the height of this VideoAssetMeta.
 
-        视频高度
+        **参数解释**： 视频画面高度。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
         :param height: The height of this VideoAssetMeta.
         :type height: int
@@ -195,7 +195,7 @@ class VideoAssetMeta:
     def frame_rate(self):
         """Gets the frame_rate of this VideoAssetMeta.
 
-        帧率
+        **参数解释**： 视频帧率。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： 字符长度0-32位。 **默认取值**： 不涉及
 
         :return: The frame_rate of this VideoAssetMeta.
         :rtype: str
@@ -206,7 +206,7 @@ class VideoAssetMeta:
     def frame_rate(self, frame_rate):
         """Sets the frame_rate of this VideoAssetMeta.
 
-        帧率
+        **参数解释**： 视频帧率。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： 字符长度0-32位。 **默认取值**： 不涉及
 
         :param frame_rate: The frame_rate of this VideoAssetMeta.
         :type frame_rate: str
@@ -217,7 +217,7 @@ class VideoAssetMeta:
     def video_bit_rate(self):
         """Gets the video_bit_rate of this VideoAssetMeta.
 
-        视频平均码率,单位kbps
+        **参数解释**： 视频平均码率,单位kbps。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
         :return: The video_bit_rate of this VideoAssetMeta.
         :rtype: int
@@ -228,7 +228,7 @@ class VideoAssetMeta:
     def video_bit_rate(self, video_bit_rate):
         """Sets the video_bit_rate of this VideoAssetMeta.
 
-        视频平均码率,单位kbps
+        **参数解释**： 视频平均码率,单位kbps。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
         :param video_bit_rate: The video_bit_rate of this VideoAssetMeta.
         :type video_bit_rate: int
@@ -239,7 +239,7 @@ class VideoAssetMeta:
     def duration(self):
         """Gets the duration of this VideoAssetMeta.
 
-        时长,单位秒
+        **参数解释**： 时长,单位秒。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
         :return: The duration of this VideoAssetMeta.
         :rtype: int
@@ -250,7 +250,7 @@ class VideoAssetMeta:
     def duration(self, duration):
         """Sets the duration of this VideoAssetMeta.
 
-        时长,单位秒
+        **参数解释**： 时长,单位秒。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
         :param duration: The duration of this VideoAssetMeta.
         :type duration: int
@@ -261,7 +261,7 @@ class VideoAssetMeta:
     def audio_codec(self):
         """Gets the audio_codec of this VideoAssetMeta.
 
-        音频编码格式
+        **参数解释**： 音频编码格式。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： 字符长度0-32位。 **默认取值**： 不涉及
 
         :return: The audio_codec of this VideoAssetMeta.
         :rtype: str
@@ -272,7 +272,7 @@ class VideoAssetMeta:
     def audio_codec(self, audio_codec):
         """Sets the audio_codec of this VideoAssetMeta.
 
-        音频编码格式
+        **参数解释**： 音频编码格式。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： 字符长度0-32位。 **默认取值**： 不涉及
 
         :param audio_codec: The audio_codec of this VideoAssetMeta.
         :type audio_codec: str
@@ -283,7 +283,7 @@ class VideoAssetMeta:
     def audio_bit_rate(self):
         """Gets the audio_bit_rate of this VideoAssetMeta.
 
-        音频平均码率,单位kbps
+        **参数解释**： 音频平均码率,单位kbps。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
         :return: The audio_bit_rate of this VideoAssetMeta.
         :rtype: int
@@ -294,7 +294,7 @@ class VideoAssetMeta:
     def audio_bit_rate(self, audio_bit_rate):
         """Sets the audio_bit_rate of this VideoAssetMeta.
 
-        音频平均码率,单位kbps
+        **参数解释**： 音频平均码率,单位kbps。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
         :param audio_bit_rate: The audio_bit_rate of this VideoAssetMeta.
         :type audio_bit_rate: int
@@ -305,7 +305,7 @@ class VideoAssetMeta:
     def audio_channels(self):
         """Gets the audio_channels of this VideoAssetMeta.
 
-        音频声道数
+        **参数解释**： 音频声道数。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
         :return: The audio_channels of this VideoAssetMeta.
         :rtype: int
@@ -316,7 +316,7 @@ class VideoAssetMeta:
     def audio_channels(self, audio_channels):
         """Sets the audio_channels of this VideoAssetMeta.
 
-        音频声道数
+        **参数解释**： 音频声道数。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
         :param audio_channels: The audio_channels of this VideoAssetMeta.
         :type audio_channels: int
@@ -327,7 +327,7 @@ class VideoAssetMeta:
     def sample(self):
         """Gets the sample of this VideoAssetMeta.
 
-        采样率,HZ
+        **参数解释**： 采样率,HZ。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
         :return: The sample of this VideoAssetMeta.
         :rtype: int
@@ -338,7 +338,7 @@ class VideoAssetMeta:
     def sample(self, sample):
         """Sets the sample of this VideoAssetMeta.
 
-        采样率,HZ
+        **参数解释**： 采样率,HZ。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
         :param sample: The sample of this VideoAssetMeta.
         :type sample: int
@@ -349,7 +349,7 @@ class VideoAssetMeta:
     def mode(self):
         """Gets the mode of this VideoAssetMeta.
 
-        Horizontal=横向；Vertical=纵向
+        **参数解释**： 横向画面或纵向画面。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： * Horizontal：横向 * Vertical：纵向  **默认取值**： 不涉及
 
         :return: The mode of this VideoAssetMeta.
         :rtype: str
@@ -360,7 +360,7 @@ class VideoAssetMeta:
     def mode(self, mode):
         """Sets the mode of this VideoAssetMeta.
 
-        Horizontal=横向；Vertical=纵向
+        **参数解释**： 横向画面或纵向画面。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： * Horizontal：横向 * Vertical：纵向  **默认取值**： 不涉及
 
         :param mode: The mode of this VideoAssetMeta.
         :type mode: str
@@ -371,7 +371,7 @@ class VideoAssetMeta:
     def video_transcoding_status(self):
         """Gets the video_transcoding_status of this VideoAssetMeta.
 
-        视频转码状态。 * WAITING：等待 * TRANSCODING：转码中 * FAILED：失败 * SUCCEEDED：成功
+        **参数解释**： 视频转码状态。 **约束限制**： 用户无需填写，系统自行填写。 **取值范围**： * WAITING：等待 * TRANSCODING：转码中 * FAILED：失败 * SUCCEEDED：成功  **默认取值**： 不涉及
 
         :return: The video_transcoding_status of this VideoAssetMeta.
         :rtype: str
@@ -382,7 +382,7 @@ class VideoAssetMeta:
     def video_transcoding_status(self, video_transcoding_status):
         """Sets the video_transcoding_status of this VideoAssetMeta.
 
-        视频转码状态。 * WAITING：等待 * TRANSCODING：转码中 * FAILED：失败 * SUCCEEDED：成功
+        **参数解释**： 视频转码状态。 **约束限制**： 用户无需填写，系统自行填写。 **取值范围**： * WAITING：等待 * TRANSCODING：转码中 * FAILED：失败 * SUCCEEDED：成功  **默认取值**： 不涉及
 
         :param video_transcoding_status: The video_transcoding_status of this VideoAssetMeta.
         :type video_transcoding_status: str

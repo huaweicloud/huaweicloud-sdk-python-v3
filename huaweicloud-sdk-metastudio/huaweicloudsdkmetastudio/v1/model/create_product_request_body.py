@@ -53,7 +53,7 @@ class CreateProductRequestBody:
         :type text_list: list[:class:`huaweicloudsdkmetastudio.v1.ProductTextInfo`]
         :param asset_list: 素材资产列表
         :type asset_list: list[:class:`huaweicloudsdkmetastudio.v1.ProductMediaInfo`]
-        :param auto_active: 自动激活商品
+        :param auto_active: **参数解释**： 自动激活商品
         :type auto_active: bool
         """
         
@@ -214,7 +214,7 @@ class CreateProductRequestBody:
     def auto_active(self):
         """Gets the auto_active of this CreateProductRequestBody.
 
-        自动激活商品
+        **参数解释**： 自动激活商品
 
         :return: The auto_active of this CreateProductRequestBody.
         :rtype: bool
@@ -225,7 +225,7 @@ class CreateProductRequestBody:
     def auto_active(self, auto_active):
         """Sets the auto_active of this CreateProductRequestBody.
 
-        自动激活商品
+        **参数解释**： 自动激活商品
 
         :param auto_active: The auto_active of this CreateProductRequestBody.
         :type auto_active: bool

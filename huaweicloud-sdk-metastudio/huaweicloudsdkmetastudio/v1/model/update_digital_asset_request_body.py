@@ -21,7 +21,6 @@ class UpdateDigitalAssetRequestBody:
         'asset_description': 'str',
         'asset_type': 'str',
         'asset_state': 'str',
-        'asset_owner': 'str',
         'review_config': 'ReviewConfig',
         'tags': 'list[str]',
         'asset_extra_meta': 'AssetExtraMeta',
@@ -36,7 +35,6 @@ class UpdateDigitalAssetRequestBody:
         'asset_description': 'asset_description',
         'asset_type': 'asset_type',
         'asset_state': 'asset_state',
-        'asset_owner': 'asset_owner',
         'review_config': 'review_config',
         'tags': 'tags',
         'asset_extra_meta': 'asset_extra_meta',
@@ -46,24 +44,22 @@ class UpdateDigitalAssetRequestBody:
         'supported_service': 'supported_service'
     }
 
-    def __init__(self, asset_name=None, asset_description=None, asset_type=None, asset_state=None, asset_owner=None, review_config=None, tags=None, asset_extra_meta=None, system_properties=None, shared_config=None, asset_order=None, supported_service=None):
+    def __init__(self, asset_name=None, asset_description=None, asset_type=None, asset_state=None, review_config=None, tags=None, asset_extra_meta=None, system_properties=None, shared_config=None, asset_order=None, supported_service=None):
         """UpdateDigitalAssetRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param asset_name: 资产名称。
+        :param asset_name: **参数解释**： 资产名称。 **约束限制**： 不涉及。 **取值范围**： 只能使用中英文字符，字符长度0-256位。 **默认取值**： 不涉及。
         :type asset_name: str
-        :param asset_description: 资产描述。
+        :param asset_description: **参数解释**： 资产描述。 **约束限制**： 不涉及。 **取值范围**： 只能使用中英文字符，字符长度0-4096位。 **默认取值**： 不涉及。
         :type asset_description: str
-        :param asset_type: 资产类型。  公共资产类型： * VOICE_MODEL：音色模型（仅系统管理员可上传，普通租户仅可查询） * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MUSIC: 音乐 * AUDIO: 音频 * COMMON_FILE：通用文件  分身数字人资产： * HUMAN_MODEL_2D: 分身数字人模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板  3D数字人资产： * HUMAN_MODEL：3D数字人模型 * SCENE：场景模型 * ANIMATION：动作动画 * MATERIAL：风格化素材 * NORMAL_MODEL: 普通模型
+        :param asset_type: **参数解释**： 资产类型。 **约束限制**： VOICE_MODEL，HUMAN_MODEL_2D 普通用户均无法上传。 **取值范围**： 公共资产类型： * VOICE_MODEL：音色模型 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MUSIC: 音乐 * AUDIO: 音频 * COMMON_FILE：通用文件  分身数字人资产： * HUMAN_MODEL_2D: 分身数字人模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板  3D数字人资产： * HUMAN_MODEL：3D数字人模型 * SCENE：场景模型 * ANIMATION：动作动画 * MATERIAL：风格化素材 * NORMAL_MODEL: 普通模型。  **默认取值**： 不涉及。
         :type asset_type: str
-        :param asset_state: 资产状态。 * UNACTIVED：取消激活。未激活的资产不可用于其他业务 * ACTIVED：激活。激活后的资产可用于其他业务
+        :param asset_state: **参数解释**： 资产状态。 **约束限制**： 租户仅能激活或取消激活资产，其他状态由系统自动更新。 **取值范围**： * UNACTIVED：取消激活。未激活的资产不可用于其他业务 * ACTIVED：激活。激活后的资产可用于其他业务 * WAITING_DELETE：资产将被下线(激活状态资产可用、管理员可用)  **默认取值**： 不涉及。
         :type asset_state: str
-        :param asset_owner: 项目ID。 &gt; * 仅管理员账号可设置此参数。
-        :type asset_owner: str
         :param review_config: 
         :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
-        :param tags: 标签列表。 &gt; 分身形象系统资产的tag定义如下： &gt; - 行业：NEWS,BUSINESS,E-COMMERCE,MARKETING,KNOWLEDGE,EDUCATION,SPORTS &gt; - 性别：MALE,FEMALE &gt; - 姿势：FULL-BODY,HALF-BODY,STANDING,SITTING,WALKING &gt; - 区域：ASIAN,WESTERN,MIDDLE-EASTERNER,AFRICAN,LATINO
+        :param tags: **参数解释**： 标签列表。 &gt; 分身形象系统资产的tag定义如下： &gt; - 行业：NEWS,BUSINESS,E-COMMERCE,MARKETING,KNOWLEDGE,EDUCATION,SPORTS &gt; - 性别：MALE,FEMALE &gt; - 姿势：FULL-BODY,HALF-BODY,STANDING,SITTING,WALKING &gt; - 区域：ASIAN,WESTERN,MIDDLE-EASTERNER,AFRICAN,LATINO  **约束限制**： 不涉及 **取值范围**： 标签个数最大为50个。 标签内容为中英文，字符长度0-128位。 **默认取值**： 不涉及
         :type tags: list[str]
         :param asset_extra_meta: 
         :type asset_extra_meta: :class:`huaweicloudsdkmetastudio.v1.AssetExtraMeta`
@@ -71,7 +67,7 @@ class UpdateDigitalAssetRequestBody:
         :type system_properties: list[:class:`huaweicloudsdkmetastudio.v1.SystemProperty`]
         :param shared_config: 
         :type shared_config: :class:`huaweicloudsdkmetastudio.v1.AssetSharedConfig`
-        :param asset_order: 展示顺序
+        :param asset_order: **参数解释**： 用于console控制台展示顺序。 如果取值相同，则默认最新的排在前面。 **约束限制**： 不涉及 **默认取值**： 不涉及
         :type asset_order: int
         :param supported_service: 支持的业务类型。： * VIDEO_2D：分身数字人视频制作 * LIVE_2D：分身数字人直播 * CHAT_2D：分身数字人智能交互
         :type supported_service: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
@@ -83,7 +79,6 @@ class UpdateDigitalAssetRequestBody:
         self._asset_description = None
         self._asset_type = None
         self._asset_state = None
-        self._asset_owner = None
         self._review_config = None
         self._tags = None
         self._asset_extra_meta = None
@@ -101,8 +96,6 @@ class UpdateDigitalAssetRequestBody:
             self.asset_type = asset_type
         if asset_state is not None:
             self.asset_state = asset_state
-        if asset_owner is not None:
-            self.asset_owner = asset_owner
         if review_config is not None:
             self.review_config = review_config
         if tags is not None:
@@ -122,7 +115,7 @@ class UpdateDigitalAssetRequestBody:
     def asset_name(self):
         """Gets the asset_name of this UpdateDigitalAssetRequestBody.
 
-        资产名称。
+        **参数解释**： 资产名称。 **约束限制**： 不涉及。 **取值范围**： 只能使用中英文字符，字符长度0-256位。 **默认取值**： 不涉及。
 
         :return: The asset_name of this UpdateDigitalAssetRequestBody.
         :rtype: str
@@ -133,7 +126,7 @@ class UpdateDigitalAssetRequestBody:
     def asset_name(self, asset_name):
         """Sets the asset_name of this UpdateDigitalAssetRequestBody.
 
-        资产名称。
+        **参数解释**： 资产名称。 **约束限制**： 不涉及。 **取值范围**： 只能使用中英文字符，字符长度0-256位。 **默认取值**： 不涉及。
 
         :param asset_name: The asset_name of this UpdateDigitalAssetRequestBody.
         :type asset_name: str
@@ -144,7 +137,7 @@ class UpdateDigitalAssetRequestBody:
     def asset_description(self):
         """Gets the asset_description of this UpdateDigitalAssetRequestBody.
 
-        资产描述。
+        **参数解释**： 资产描述。 **约束限制**： 不涉及。 **取值范围**： 只能使用中英文字符，字符长度0-4096位。 **默认取值**： 不涉及。
 
         :return: The asset_description of this UpdateDigitalAssetRequestBody.
         :rtype: str
@@ -155,7 +148,7 @@ class UpdateDigitalAssetRequestBody:
     def asset_description(self, asset_description):
         """Sets the asset_description of this UpdateDigitalAssetRequestBody.
 
-        资产描述。
+        **参数解释**： 资产描述。 **约束限制**： 不涉及。 **取值范围**： 只能使用中英文字符，字符长度0-4096位。 **默认取值**： 不涉及。
 
         :param asset_description: The asset_description of this UpdateDigitalAssetRequestBody.
         :type asset_description: str
@@ -166,7 +159,7 @@ class UpdateDigitalAssetRequestBody:
     def asset_type(self):
         """Gets the asset_type of this UpdateDigitalAssetRequestBody.
 
-        资产类型。  公共资产类型： * VOICE_MODEL：音色模型（仅系统管理员可上传，普通租户仅可查询） * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MUSIC: 音乐 * AUDIO: 音频 * COMMON_FILE：通用文件  分身数字人资产： * HUMAN_MODEL_2D: 分身数字人模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板  3D数字人资产： * HUMAN_MODEL：3D数字人模型 * SCENE：场景模型 * ANIMATION：动作动画 * MATERIAL：风格化素材 * NORMAL_MODEL: 普通模型
+        **参数解释**： 资产类型。 **约束限制**： VOICE_MODEL，HUMAN_MODEL_2D 普通用户均无法上传。 **取值范围**： 公共资产类型： * VOICE_MODEL：音色模型 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MUSIC: 音乐 * AUDIO: 音频 * COMMON_FILE：通用文件  分身数字人资产： * HUMAN_MODEL_2D: 分身数字人模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板  3D数字人资产： * HUMAN_MODEL：3D数字人模型 * SCENE：场景模型 * ANIMATION：动作动画 * MATERIAL：风格化素材 * NORMAL_MODEL: 普通模型。  **默认取值**： 不涉及。
 
         :return: The asset_type of this UpdateDigitalAssetRequestBody.
         :rtype: str
@@ -177,7 +170,7 @@ class UpdateDigitalAssetRequestBody:
     def asset_type(self, asset_type):
         """Sets the asset_type of this UpdateDigitalAssetRequestBody.
 
-        资产类型。  公共资产类型： * VOICE_MODEL：音色模型（仅系统管理员可上传，普通租户仅可查询） * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MUSIC: 音乐 * AUDIO: 音频 * COMMON_FILE：通用文件  分身数字人资产： * HUMAN_MODEL_2D: 分身数字人模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板  3D数字人资产： * HUMAN_MODEL：3D数字人模型 * SCENE：场景模型 * ANIMATION：动作动画 * MATERIAL：风格化素材 * NORMAL_MODEL: 普通模型
+        **参数解释**： 资产类型。 **约束限制**： VOICE_MODEL，HUMAN_MODEL_2D 普通用户均无法上传。 **取值范围**： 公共资产类型： * VOICE_MODEL：音色模型 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MUSIC: 音乐 * AUDIO: 音频 * COMMON_FILE：通用文件  分身数字人资产： * HUMAN_MODEL_2D: 分身数字人模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板  3D数字人资产： * HUMAN_MODEL：3D数字人模型 * SCENE：场景模型 * ANIMATION：动作动画 * MATERIAL：风格化素材 * NORMAL_MODEL: 普通模型。  **默认取值**： 不涉及。
 
         :param asset_type: The asset_type of this UpdateDigitalAssetRequestBody.
         :type asset_type: str
@@ -188,7 +181,7 @@ class UpdateDigitalAssetRequestBody:
     def asset_state(self):
         """Gets the asset_state of this UpdateDigitalAssetRequestBody.
 
-        资产状态。 * UNACTIVED：取消激活。未激活的资产不可用于其他业务 * ACTIVED：激活。激活后的资产可用于其他业务
+        **参数解释**： 资产状态。 **约束限制**： 租户仅能激活或取消激活资产，其他状态由系统自动更新。 **取值范围**： * UNACTIVED：取消激活。未激活的资产不可用于其他业务 * ACTIVED：激活。激活后的资产可用于其他业务 * WAITING_DELETE：资产将被下线(激活状态资产可用、管理员可用)  **默认取值**： 不涉及。
 
         :return: The asset_state of this UpdateDigitalAssetRequestBody.
         :rtype: str
@@ -199,34 +192,12 @@ class UpdateDigitalAssetRequestBody:
     def asset_state(self, asset_state):
         """Sets the asset_state of this UpdateDigitalAssetRequestBody.
 
-        资产状态。 * UNACTIVED：取消激活。未激活的资产不可用于其他业务 * ACTIVED：激活。激活后的资产可用于其他业务
+        **参数解释**： 资产状态。 **约束限制**： 租户仅能激活或取消激活资产，其他状态由系统自动更新。 **取值范围**： * UNACTIVED：取消激活。未激活的资产不可用于其他业务 * ACTIVED：激活。激活后的资产可用于其他业务 * WAITING_DELETE：资产将被下线(激活状态资产可用、管理员可用)  **默认取值**： 不涉及。
 
         :param asset_state: The asset_state of this UpdateDigitalAssetRequestBody.
         :type asset_state: str
         """
         self._asset_state = asset_state
-
-    @property
-    def asset_owner(self):
-        """Gets the asset_owner of this UpdateDigitalAssetRequestBody.
-
-        项目ID。 > * 仅管理员账号可设置此参数。
-
-        :return: The asset_owner of this UpdateDigitalAssetRequestBody.
-        :rtype: str
-        """
-        return self._asset_owner
-
-    @asset_owner.setter
-    def asset_owner(self, asset_owner):
-        """Sets the asset_owner of this UpdateDigitalAssetRequestBody.
-
-        项目ID。 > * 仅管理员账号可设置此参数。
-
-        :param asset_owner: The asset_owner of this UpdateDigitalAssetRequestBody.
-        :type asset_owner: str
-        """
-        self._asset_owner = asset_owner
 
     @property
     def review_config(self):
@@ -250,7 +221,7 @@ class UpdateDigitalAssetRequestBody:
     def tags(self):
         """Gets the tags of this UpdateDigitalAssetRequestBody.
 
-        标签列表。 > 分身形象系统资产的tag定义如下： > - 行业：NEWS,BUSINESS,E-COMMERCE,MARKETING,KNOWLEDGE,EDUCATION,SPORTS > - 性别：MALE,FEMALE > - 姿势：FULL-BODY,HALF-BODY,STANDING,SITTING,WALKING > - 区域：ASIAN,WESTERN,MIDDLE-EASTERNER,AFRICAN,LATINO
+        **参数解释**： 标签列表。 > 分身形象系统资产的tag定义如下： > - 行业：NEWS,BUSINESS,E-COMMERCE,MARKETING,KNOWLEDGE,EDUCATION,SPORTS > - 性别：MALE,FEMALE > - 姿势：FULL-BODY,HALF-BODY,STANDING,SITTING,WALKING > - 区域：ASIAN,WESTERN,MIDDLE-EASTERNER,AFRICAN,LATINO  **约束限制**： 不涉及 **取值范围**： 标签个数最大为50个。 标签内容为中英文，字符长度0-128位。 **默认取值**： 不涉及
 
         :return: The tags of this UpdateDigitalAssetRequestBody.
         :rtype: list[str]
@@ -261,7 +232,7 @@ class UpdateDigitalAssetRequestBody:
     def tags(self, tags):
         """Sets the tags of this UpdateDigitalAssetRequestBody.
 
-        标签列表。 > 分身形象系统资产的tag定义如下： > - 行业：NEWS,BUSINESS,E-COMMERCE,MARKETING,KNOWLEDGE,EDUCATION,SPORTS > - 性别：MALE,FEMALE > - 姿势：FULL-BODY,HALF-BODY,STANDING,SITTING,WALKING > - 区域：ASIAN,WESTERN,MIDDLE-EASTERNER,AFRICAN,LATINO
+        **参数解释**： 标签列表。 > 分身形象系统资产的tag定义如下： > - 行业：NEWS,BUSINESS,E-COMMERCE,MARKETING,KNOWLEDGE,EDUCATION,SPORTS > - 性别：MALE,FEMALE > - 姿势：FULL-BODY,HALF-BODY,STANDING,SITTING,WALKING > - 区域：ASIAN,WESTERN,MIDDLE-EASTERNER,AFRICAN,LATINO  **约束限制**： 不涉及 **取值范围**： 标签个数最大为50个。 标签内容为中英文，字符长度0-128位。 **默认取值**： 不涉及
 
         :param tags: The tags of this UpdateDigitalAssetRequestBody.
         :type tags: list[str]
@@ -330,7 +301,7 @@ class UpdateDigitalAssetRequestBody:
     def asset_order(self):
         """Gets the asset_order of this UpdateDigitalAssetRequestBody.
 
-        展示顺序
+        **参数解释**： 用于console控制台展示顺序。 如果取值相同，则默认最新的排在前面。 **约束限制**： 不涉及 **默认取值**： 不涉及
 
         :return: The asset_order of this UpdateDigitalAssetRequestBody.
         :rtype: int
@@ -341,7 +312,7 @@ class UpdateDigitalAssetRequestBody:
     def asset_order(self, asset_order):
         """Sets the asset_order of this UpdateDigitalAssetRequestBody.
 
-        展示顺序
+        **参数解释**： 用于console控制台展示顺序。 如果取值相同，则默认最新的排在前面。 **约束限制**： 不涉及 **默认取值**： 不涉及
 
         :param asset_order: The asset_order of this UpdateDigitalAssetRequestBody.
         :type asset_order: int

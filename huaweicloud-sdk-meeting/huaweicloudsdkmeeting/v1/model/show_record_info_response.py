@@ -18,78 +18,43 @@ class ShowRecordInfoResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'code': 'int',
+        'code': 'str',
         'message': 'str',
-        'subject': 'str',
-        'begin_time': 'str',
-        'segment_offset': 'int',
-        'segment_limit': 'int',
-        'segment_count': 'int',
-        'segment_list': 'list[SegmentDO]'
+        'data': 'object'
     }
 
     attribute_map = {
         'code': 'code',
         'message': 'message',
-        'subject': 'subject',
-        'begin_time': 'beginTime',
-        'segment_offset': 'segmentOffset',
-        'segment_limit': 'segmentLimit',
-        'segment_count': 'segmentCount',
-        'segment_list': 'segmentList'
+        'data': 'data'
     }
 
-    def __init__(self, code=None, message=None, subject=None, begin_time=None, segment_offset=None, segment_limit=None, segment_count=None, segment_list=None):
+    def __init__(self, code=None, message=None, data=None):
         """ShowRecordInfoResponse
 
         The model defined in huaweicloud sdk
 
         :param code: 结果码
-        :type code: int
+        :type code: str
         :param message: 结果描述
         :type message: str
-        :param subject: 会议主题
-        :type subject: str
-        :param begin_time: 会议录制开始时间
-        :type begin_time: str
-        :param segment_offset: 录制段落查询偏移量
-        :type segment_offset: int
-        :param segment_limit: 录制段落查询数量
-        :type segment_limit: int
-        :param segment_count: 录制段落总数
-        :type segment_count: int
-        :param segment_list: 录制人工启动/停止分段列表
-        :type segment_list: list[:class:`huaweicloudsdkmeeting.v1.SegmentDO`]
+        :param data: 响应体详情数据
+        :type data: object
         """
         
         super(ShowRecordInfoResponse, self).__init__()
 
         self._code = None
         self._message = None
-        self._subject = None
-        self._begin_time = None
-        self._segment_offset = None
-        self._segment_limit = None
-        self._segment_count = None
-        self._segment_list = None
+        self._data = None
         self.discriminator = None
 
         if code is not None:
             self.code = code
         if message is not None:
             self.message = message
-        if subject is not None:
-            self.subject = subject
-        if begin_time is not None:
-            self.begin_time = begin_time
-        if segment_offset is not None:
-            self.segment_offset = segment_offset
-        if segment_limit is not None:
-            self.segment_limit = segment_limit
-        if segment_count is not None:
-            self.segment_count = segment_count
-        if segment_list is not None:
-            self.segment_list = segment_list
+        if data is not None:
+            self.data = data
 
     @property
     def code(self):
@@ -98,7 +63,7 @@ class ShowRecordInfoResponse(SdkResponse):
         结果码
 
         :return: The code of this ShowRecordInfoResponse.
-        :rtype: int
+        :rtype: str
         """
         return self._code
 
@@ -109,7 +74,7 @@ class ShowRecordInfoResponse(SdkResponse):
         结果码
 
         :param code: The code of this ShowRecordInfoResponse.
-        :type code: int
+        :type code: str
         """
         self._code = code
 
@@ -136,136 +101,26 @@ class ShowRecordInfoResponse(SdkResponse):
         self._message = message
 
     @property
-    def subject(self):
-        """Gets the subject of this ShowRecordInfoResponse.
+    def data(self):
+        """Gets the data of this ShowRecordInfoResponse.
 
-        会议主题
+        响应体详情数据
 
-        :return: The subject of this ShowRecordInfoResponse.
-        :rtype: str
+        :return: The data of this ShowRecordInfoResponse.
+        :rtype: object
         """
-        return self._subject
+        return self._data
 
-    @subject.setter
-    def subject(self, subject):
-        """Sets the subject of this ShowRecordInfoResponse.
+    @data.setter
+    def data(self, data):
+        """Sets the data of this ShowRecordInfoResponse.
 
-        会议主题
+        响应体详情数据
 
-        :param subject: The subject of this ShowRecordInfoResponse.
-        :type subject: str
+        :param data: The data of this ShowRecordInfoResponse.
+        :type data: object
         """
-        self._subject = subject
-
-    @property
-    def begin_time(self):
-        """Gets the begin_time of this ShowRecordInfoResponse.
-
-        会议录制开始时间
-
-        :return: The begin_time of this ShowRecordInfoResponse.
-        :rtype: str
-        """
-        return self._begin_time
-
-    @begin_time.setter
-    def begin_time(self, begin_time):
-        """Sets the begin_time of this ShowRecordInfoResponse.
-
-        会议录制开始时间
-
-        :param begin_time: The begin_time of this ShowRecordInfoResponse.
-        :type begin_time: str
-        """
-        self._begin_time = begin_time
-
-    @property
-    def segment_offset(self):
-        """Gets the segment_offset of this ShowRecordInfoResponse.
-
-        录制段落查询偏移量
-
-        :return: The segment_offset of this ShowRecordInfoResponse.
-        :rtype: int
-        """
-        return self._segment_offset
-
-    @segment_offset.setter
-    def segment_offset(self, segment_offset):
-        """Sets the segment_offset of this ShowRecordInfoResponse.
-
-        录制段落查询偏移量
-
-        :param segment_offset: The segment_offset of this ShowRecordInfoResponse.
-        :type segment_offset: int
-        """
-        self._segment_offset = segment_offset
-
-    @property
-    def segment_limit(self):
-        """Gets the segment_limit of this ShowRecordInfoResponse.
-
-        录制段落查询数量
-
-        :return: The segment_limit of this ShowRecordInfoResponse.
-        :rtype: int
-        """
-        return self._segment_limit
-
-    @segment_limit.setter
-    def segment_limit(self, segment_limit):
-        """Sets the segment_limit of this ShowRecordInfoResponse.
-
-        录制段落查询数量
-
-        :param segment_limit: The segment_limit of this ShowRecordInfoResponse.
-        :type segment_limit: int
-        """
-        self._segment_limit = segment_limit
-
-    @property
-    def segment_count(self):
-        """Gets the segment_count of this ShowRecordInfoResponse.
-
-        录制段落总数
-
-        :return: The segment_count of this ShowRecordInfoResponse.
-        :rtype: int
-        """
-        return self._segment_count
-
-    @segment_count.setter
-    def segment_count(self, segment_count):
-        """Sets the segment_count of this ShowRecordInfoResponse.
-
-        录制段落总数
-
-        :param segment_count: The segment_count of this ShowRecordInfoResponse.
-        :type segment_count: int
-        """
-        self._segment_count = segment_count
-
-    @property
-    def segment_list(self):
-        """Gets the segment_list of this ShowRecordInfoResponse.
-
-        录制人工启动/停止分段列表
-
-        :return: The segment_list of this ShowRecordInfoResponse.
-        :rtype: list[:class:`huaweicloudsdkmeeting.v1.SegmentDO`]
-        """
-        return self._segment_list
-
-    @segment_list.setter
-    def segment_list(self, segment_list):
-        """Sets the segment_list of this ShowRecordInfoResponse.
-
-        录制人工启动/停止分段列表
-
-        :param segment_list: The segment_list of this ShowRecordInfoResponse.
-        :type segment_list: list[:class:`huaweicloudsdkmeeting.v1.SegmentDO`]
-        """
-        self._segment_list = segment_list
+        self._data = data
 
     def to_dict(self):
         """Returns the model properties as a dict"""

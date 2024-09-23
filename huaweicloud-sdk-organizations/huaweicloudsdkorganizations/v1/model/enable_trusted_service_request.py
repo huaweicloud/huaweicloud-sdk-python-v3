@@ -15,31 +15,61 @@ class EnableTrustedServiceRequest:
                             and the value is json key in definition.
     """
     sensitive_list = []
+    sensitive_list.append('x_security_token')
 
     openapi_types = {
+        'x_security_token': 'str',
         'body': 'TrustedServiceReqBody'
     }
 
     attribute_map = {
+        'x_security_token': 'X-Security-Token',
         'body': 'body'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, x_security_token=None, body=None):
         """EnableTrustedServiceRequest
 
         The model defined in huaweicloud sdk
 
+        :param x_security_token: 如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+        :type x_security_token: str
         :param body: Body of the EnableTrustedServiceRequest
         :type body: :class:`huaweicloudsdkorganizations.v1.TrustedServiceReqBody`
         """
         
         
 
+        self._x_security_token = None
         self._body = None
         self.discriminator = None
 
+        if x_security_token is not None:
+            self.x_security_token = x_security_token
         if body is not None:
             self.body = body
+
+    @property
+    def x_security_token(self):
+        """Gets the x_security_token of this EnableTrustedServiceRequest.
+
+        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+
+        :return: The x_security_token of this EnableTrustedServiceRequest.
+        :rtype: str
+        """
+        return self._x_security_token
+
+    @x_security_token.setter
+    def x_security_token(self, x_security_token):
+        """Sets the x_security_token of this EnableTrustedServiceRequest.
+
+        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+
+        :param x_security_token: The x_security_token of this EnableTrustedServiceRequest.
+        :type x_security_token: str
+        """
+        self._x_security_token = x_security_token
 
     @property
     def body(self):

@@ -18,7 +18,7 @@ class ListEventsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'events': 'list[EventModel]',
+        'events': 'list[ListEventModel]',
         'page_info': 'PageInfo'
     }
 
@@ -33,7 +33,7 @@ class ListEventsResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param events: 事件或者告警详情。
-        :type events: list[:class:`huaweicloudsdkaom.v2.EventModel`]
+        :type events: list[:class:`huaweicloudsdkaom.v2.ListEventModel`]
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkaom.v2.PageInfo`
         """
@@ -56,7 +56,7 @@ class ListEventsResponse(SdkResponse):
         事件或者告警详情。
 
         :return: The events of this ListEventsResponse.
-        :rtype: list[:class:`huaweicloudsdkaom.v2.EventModel`]
+        :rtype: list[:class:`huaweicloudsdkaom.v2.ListEventModel`]
         """
         return self._events
 
@@ -67,7 +67,7 @@ class ListEventsResponse(SdkResponse):
         事件或者告警详情。
 
         :param events: The events of this ListEventsResponse.
-        :type events: list[:class:`huaweicloudsdkaom.v2.EventModel`]
+        :type events: list[:class:`huaweicloudsdkaom.v2.ListEventModel`]
         """
         self._events = events
 

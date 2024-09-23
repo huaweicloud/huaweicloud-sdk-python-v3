@@ -33,7 +33,7 @@ class CreateCertificateRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param name: 证书名称，证书名称只能由数字、字母、中划线、下划线和英文句点组成，长度不能超过64位字符
+        :param name: 证书名称，证书名称只能由数字、字母、中划线、下划线和英文句点组成，长度不能超过256位字符
         :type name: str
         :param content: 证书文件，仅支持PEM格式的证书和私钥文件，且文件中的换行符应以\\n替换，如请求示例所示
         :type content: str
@@ -56,7 +56,7 @@ class CreateCertificateRequestBody:
     def name(self):
         """Gets the name of this CreateCertificateRequestBody.
 
-        证书名称，证书名称只能由数字、字母、中划线、下划线和英文句点组成，长度不能超过64位字符
+        证书名称，证书名称只能由数字、字母、中划线、下划线和英文句点组成，长度不能超过256位字符
 
         :return: The name of this CreateCertificateRequestBody.
         :rtype: str
@@ -67,7 +67,7 @@ class CreateCertificateRequestBody:
     def name(self, name):
         """Sets the name of this CreateCertificateRequestBody.
 
-        证书名称，证书名称只能由数字、字母、中划线、下划线和英文句点组成，长度不能超过64位字符
+        证书名称，证书名称只能由数字、字母、中划线、下划线和英文句点组成，长度不能超过256位字符
 
         :param name: The name of this CreateCertificateRequestBody.
         :type name: str

@@ -15,26 +15,35 @@ class ListAccountsRequest:
                             and the value is json key in definition.
     """
     sensitive_list = []
+    sensitive_list.append('x_security_token')
 
     openapi_types = {
+        'x_security_token': 'str',
         'parent_id': 'str',
+        'with_register_contact_info': 'bool',
         'limit': 'int',
         'marker': 'str'
     }
 
     attribute_map = {
+        'x_security_token': 'X-Security-Token',
         'parent_id': 'parent_id',
+        'with_register_contact_info': 'with_register_contact_info',
         'limit': 'limit',
         'marker': 'marker'
     }
 
-    def __init__(self, parent_id=None, limit=None, marker=None):
+    def __init__(self, x_security_token=None, parent_id=None, with_register_contact_info=None, limit=None, marker=None):
         """ListAccountsRequest
 
         The model defined in huaweicloud sdk
 
+        :param x_security_token: 如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+        :type x_security_token: str
         :param parent_id: 父节点（根或组织单元）的唯一标识符（ID）。
         :type parent_id: str
+        :param with_register_contact_info: 是否返回账号邮箱、手机号信息。若此参数为True，Limit最多200。
+        :type with_register_contact_info: bool
         :param limit: 页面中最大结果数量。
         :type limit: int
         :param marker: 分页标记。
@@ -43,17 +52,45 @@ class ListAccountsRequest:
         
         
 
+        self._x_security_token = None
         self._parent_id = None
+        self._with_register_contact_info = None
         self._limit = None
         self._marker = None
         self.discriminator = None
 
+        if x_security_token is not None:
+            self.x_security_token = x_security_token
         if parent_id is not None:
             self.parent_id = parent_id
+        if with_register_contact_info is not None:
+            self.with_register_contact_info = with_register_contact_info
         if limit is not None:
             self.limit = limit
         if marker is not None:
             self.marker = marker
+
+    @property
+    def x_security_token(self):
+        """Gets the x_security_token of this ListAccountsRequest.
+
+        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+
+        :return: The x_security_token of this ListAccountsRequest.
+        :rtype: str
+        """
+        return self._x_security_token
+
+    @x_security_token.setter
+    def x_security_token(self, x_security_token):
+        """Sets the x_security_token of this ListAccountsRequest.
+
+        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+
+        :param x_security_token: The x_security_token of this ListAccountsRequest.
+        :type x_security_token: str
+        """
+        self._x_security_token = x_security_token
 
     @property
     def parent_id(self):
@@ -76,6 +113,28 @@ class ListAccountsRequest:
         :type parent_id: str
         """
         self._parent_id = parent_id
+
+    @property
+    def with_register_contact_info(self):
+        """Gets the with_register_contact_info of this ListAccountsRequest.
+
+        是否返回账号邮箱、手机号信息。若此参数为True，Limit最多200。
+
+        :return: The with_register_contact_info of this ListAccountsRequest.
+        :rtype: bool
+        """
+        return self._with_register_contact_info
+
+    @with_register_contact_info.setter
+    def with_register_contact_info(self, with_register_contact_info):
+        """Sets the with_register_contact_info of this ListAccountsRequest.
+
+        是否返回账号邮箱、手机号信息。若此参数为True，Limit最多200。
+
+        :param with_register_contact_info: The with_register_contact_info of this ListAccountsRequest.
+        :type with_register_contact_info: bool
+        """
+        self._with_register_contact_info = with_register_contact_info
 
     @property
     def limit(self):

@@ -15,23 +15,28 @@ class ShowResourceInstancesCountRequest:
                             and the value is json key in definition.
     """
     sensitive_list = []
+    sensitive_list.append('x_security_token')
 
     openapi_types = {
+        'x_security_token': 'str',
         'resource_type': 'str',
         'body': 'ResourceInstanceReqBody'
     }
 
     attribute_map = {
+        'x_security_token': 'X-Security-Token',
         'resource_type': 'resource_type',
         'body': 'body'
     }
 
-    def __init__(self, resource_type=None, body=None):
+    def __init__(self, x_security_token=None, resource_type=None, body=None):
         """ShowResourceInstancesCountRequest
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: 资源类型 organizations:policies服务策略 organizations:ous组织OU organizations:accounts账号信息 organizations:roots根
+        :param x_security_token: 如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+        :type x_security_token: str
+        :param resource_type: 资源类型。枚举值：organizations:policies（服务策略）、organizations:ous（组织OU）、organizations:accounts（账号信息） 、organizations:roots：（根）。
         :type resource_type: str
         :param body: Body of the ShowResourceInstancesCountRequest
         :type body: :class:`huaweicloudsdkorganizations.v1.ResourceInstanceReqBody`
@@ -39,19 +44,44 @@ class ShowResourceInstancesCountRequest:
         
         
 
+        self._x_security_token = None
         self._resource_type = None
         self._body = None
         self.discriminator = None
 
+        if x_security_token is not None:
+            self.x_security_token = x_security_token
         self.resource_type = resource_type
         if body is not None:
             self.body = body
 
     @property
+    def x_security_token(self):
+        """Gets the x_security_token of this ShowResourceInstancesCountRequest.
+
+        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+
+        :return: The x_security_token of this ShowResourceInstancesCountRequest.
+        :rtype: str
+        """
+        return self._x_security_token
+
+    @x_security_token.setter
+    def x_security_token(self, x_security_token):
+        """Sets the x_security_token of this ShowResourceInstancesCountRequest.
+
+        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+
+        :param x_security_token: The x_security_token of this ShowResourceInstancesCountRequest.
+        :type x_security_token: str
+        """
+        self._x_security_token = x_security_token
+
+    @property
     def resource_type(self):
         """Gets the resource_type of this ShowResourceInstancesCountRequest.
 
-        资源类型 organizations:policies服务策略 organizations:ous组织OU organizations:accounts账号信息 organizations:roots根
+        资源类型。枚举值：organizations:policies（服务策略）、organizations:ous（组织OU）、organizations:accounts（账号信息） 、organizations:roots：（根）。
 
         :return: The resource_type of this ShowResourceInstancesCountRequest.
         :rtype: str
@@ -62,7 +92,7 @@ class ShowResourceInstancesCountRequest:
     def resource_type(self, resource_type):
         """Sets the resource_type of this ShowResourceInstancesCountRequest.
 
-        资源类型 organizations:policies服务策略 organizations:ous组织OU organizations:accounts账号信息 organizations:roots根
+        资源类型。枚举值：organizations:policies（服务策略）、organizations:ous（组织OU）、organizations:accounts（账号信息） 、organizations:roots：（根）。
 
         :param resource_type: The resource_type of this ShowResourceInstancesCountRequest.
         :type resource_type: str

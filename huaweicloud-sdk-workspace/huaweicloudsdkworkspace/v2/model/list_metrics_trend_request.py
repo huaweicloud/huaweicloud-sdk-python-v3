@@ -43,7 +43,7 @@ class ListMetricsTrendRequest:
         :type end_time: str
         :param dim: 指标维度 | 目前最大支持3个维度，必须从0开始；维度格式为dim.{i}&#x3D;key,value，key的最大长度32，value的最大长度为256。 单维度：dim.0&#x3D;instance_id,6f3c6f91-4b24-4e1b-b7d1-a94ac1cb011d 多维度：dim.0&#x3D;key,value&amp;dim.1&#x3D;key,value
         :type dim: str
-        :param metric_names: 指标名称列表
+        :param metric_names: 指标名称，支持的指标名称参考[Workspace运维监控指标](https://support.huaweicloud.com/usermanual-workspace/workspace_06_1032.html)
         :type metric_names: list[str]
         :param period: 数据周期 | DAY - 天级数据 HOUR - 小时级数据
         :type period: str
@@ -136,7 +136,7 @@ class ListMetricsTrendRequest:
     def metric_names(self):
         """Gets the metric_names of this ListMetricsTrendRequest.
 
-        指标名称列表
+        指标名称，支持的指标名称参考[Workspace运维监控指标](https://support.huaweicloud.com/usermanual-workspace/workspace_06_1032.html)
 
         :return: The metric_names of this ListMetricsTrendRequest.
         :rtype: list[str]
@@ -147,7 +147,7 @@ class ListMetricsTrendRequest:
     def metric_names(self, metric_names):
         """Sets the metric_names of this ListMetricsTrendRequest.
 
-        指标名称列表
+        指标名称，支持的指标名称参考[Workspace运维监控指标](https://support.huaweicloud.com/usermanual-workspace/workspace_06_1032.html)
 
         :param metric_names: The metric_names of this ListMetricsTrendRequest.
         :type metric_names: list[str]

@@ -26,7 +26,8 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
         'cert_name': 'str',
         'certificate': 'str',
         'private_key': 'str',
-        'certificate_type': 'int'
+        'certificate_type': 'int',
+        'scm_certificate_id': 'str'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
         'cert_name': 'cert_name',
         'certificate': 'certificate',
         'private_key': 'private_key',
-        'certificate_type': 'certificate_type'
+        'certificate_type': 'certificate_type',
+        'scm_certificate_id': 'scm_certificate_id'
     }
 
-    def __init__(self, domain_name=None, https_switch=None, access_origin_way=None, force_redirect_https=None, force_redirect_config=None, http2=None, cert_name=None, certificate=None, private_key=None, certificate_type=None):
+    def __init__(self, domain_name=None, https_switch=None, access_origin_way=None, force_redirect_https=None, force_redirect_config=None, http2=None, cert_name=None, certificate=None, private_key=None, certificate_type=None, scm_certificate_id=None):
         """UpdateDomainMultiCertificatesRequestBodyContent
 
         The model defined in huaweicloud sdk
@@ -65,8 +67,10 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
         :type certificate: str
         :param private_key: HTTPS协议使用的SSL证书私钥内容，仅支持PEM编码格式。不启用证书则无需输入。初次配置证书时必传。
         :type private_key: str
-        :param certificate_type: 证书类型（0为自有证书 ；1为托管证书，此时不必不传入证书内容和私钥，自动根据证书名称匹配；不传默认为自有证书）
+        :param certificate_type: 证书类型（0为自有证书；2为SCM证书；不传默认为自有证书）
         :type certificate_type: int
+        :param scm_certificate_id: SCM证书id
+        :type scm_certificate_id: str
         """
         
         
@@ -81,6 +85,7 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
         self._certificate = None
         self._private_key = None
         self._certificate_type = None
+        self._scm_certificate_id = None
         self.discriminator = None
 
         self.domain_name = domain_name
@@ -101,6 +106,8 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
             self.private_key = private_key
         if certificate_type is not None:
             self.certificate_type = certificate_type
+        if scm_certificate_id is not None:
+            self.scm_certificate_id = scm_certificate_id
 
     @property
     def domain_name(self):
@@ -300,7 +307,7 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
     def certificate_type(self):
         """Gets the certificate_type of this UpdateDomainMultiCertificatesRequestBodyContent.
 
-        证书类型（0为自有证书 ；1为托管证书，此时不必不传入证书内容和私钥，自动根据证书名称匹配；不传默认为自有证书）
+        证书类型（0为自有证书；2为SCM证书；不传默认为自有证书）
 
         :return: The certificate_type of this UpdateDomainMultiCertificatesRequestBodyContent.
         :rtype: int
@@ -311,12 +318,34 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
     def certificate_type(self, certificate_type):
         """Sets the certificate_type of this UpdateDomainMultiCertificatesRequestBodyContent.
 
-        证书类型（0为自有证书 ；1为托管证书，此时不必不传入证书内容和私钥，自动根据证书名称匹配；不传默认为自有证书）
+        证书类型（0为自有证书；2为SCM证书；不传默认为自有证书）
 
         :param certificate_type: The certificate_type of this UpdateDomainMultiCertificatesRequestBodyContent.
         :type certificate_type: int
         """
         self._certificate_type = certificate_type
+
+    @property
+    def scm_certificate_id(self):
+        """Gets the scm_certificate_id of this UpdateDomainMultiCertificatesRequestBodyContent.
+
+        SCM证书id
+
+        :return: The scm_certificate_id of this UpdateDomainMultiCertificatesRequestBodyContent.
+        :rtype: str
+        """
+        return self._scm_certificate_id
+
+    @scm_certificate_id.setter
+    def scm_certificate_id(self, scm_certificate_id):
+        """Sets the scm_certificate_id of this UpdateDomainMultiCertificatesRequestBodyContent.
+
+        SCM证书id
+
+        :param scm_certificate_id: The scm_certificate_id of this UpdateDomainMultiCertificatesRequestBodyContent.
+        :type scm_certificate_id: str
+        """
+        self._scm_certificate_id = scm_certificate_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

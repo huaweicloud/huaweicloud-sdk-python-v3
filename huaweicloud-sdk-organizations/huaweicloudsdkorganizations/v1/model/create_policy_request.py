@@ -15,22 +15,27 @@ class CreatePolicyRequest:
                             and the value is json key in definition.
     """
     sensitive_list = []
+    sensitive_list.append('x_security_token')
 
     openapi_types = {
+        'x_security_token': 'str',
         'x_language': 'str',
         'body': 'CreatePolicyReqBody'
     }
 
     attribute_map = {
+        'x_security_token': 'X-Security-Token',
         'x_language': 'X-Language',
         'body': 'body'
     }
 
-    def __init__(self, x_language=None, body=None):
+    def __init__(self, x_security_token=None, x_language=None, body=None):
         """CreatePolicyRequest
 
         The model defined in huaweicloud sdk
 
+        :param x_security_token: 如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+        :type x_security_token: str
         :param x_language: 选择接口返回的信息的语言
         :type x_language: str
         :param body: Body of the CreatePolicyRequest
@@ -39,14 +44,39 @@ class CreatePolicyRequest:
         
         
 
+        self._x_security_token = None
         self._x_language = None
         self._body = None
         self.discriminator = None
 
+        if x_security_token is not None:
+            self.x_security_token = x_security_token
         if x_language is not None:
             self.x_language = x_language
         if body is not None:
             self.body = body
+
+    @property
+    def x_security_token(self):
+        """Gets the x_security_token of this CreatePolicyRequest.
+
+        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+
+        :return: The x_security_token of this CreatePolicyRequest.
+        :rtype: str
+        """
+        return self._x_security_token
+
+    @x_security_token.setter
+    def x_security_token(self, x_security_token):
+        """Sets the x_security_token of this CreatePolicyRequest.
+
+        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+
+        :param x_security_token: The x_security_token of this CreatePolicyRequest.
+        :type x_security_token: str
+        """
+        self._x_security_token = x_security_token
 
     @property
     def x_language(self):

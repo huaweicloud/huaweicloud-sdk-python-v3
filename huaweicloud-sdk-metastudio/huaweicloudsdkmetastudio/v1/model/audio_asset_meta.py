@@ -39,15 +39,15 @@ class AudioAssetMeta:
 
         The model defined in huaweicloud sdk
 
-        :param duration: 时长,单位秒
+        :param duration: **参数解释**： 时长,单位秒。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
         :type duration: int
-        :param audio_codec: 音频编码格式
+        :param audio_codec: **参数解释**： 音频编码格式。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： 字符长度0-32位。 **默认取值**： 不涉及
         :type audio_codec: str
-        :param audio_bit_rate: 音频平均码率,单位kbps
+        :param audio_bit_rate: **参数解释**： 音频平均码率,单位kbps。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
         :type audio_bit_rate: int
-        :param audio_channels: 音频声道数
+        :param audio_channels: **参数解释**： 音频声道数。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
         :type audio_channels: int
-        :param sample: 采样率,HZ
+        :param sample: **参数解释**： 采样率,HZ。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
         :type sample: int
         :param error_info: 
         :type error_info: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
@@ -80,7 +80,7 @@ class AudioAssetMeta:
     def duration(self):
         """Gets the duration of this AudioAssetMeta.
 
-        时长,单位秒
+        **参数解释**： 时长,单位秒。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
         :return: The duration of this AudioAssetMeta.
         :rtype: int
@@ -91,7 +91,7 @@ class AudioAssetMeta:
     def duration(self, duration):
         """Sets the duration of this AudioAssetMeta.
 
-        时长,单位秒
+        **参数解释**： 时长,单位秒。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
         :param duration: The duration of this AudioAssetMeta.
         :type duration: int
@@ -102,7 +102,7 @@ class AudioAssetMeta:
     def audio_codec(self):
         """Gets the audio_codec of this AudioAssetMeta.
 
-        音频编码格式
+        **参数解释**： 音频编码格式。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： 字符长度0-32位。 **默认取值**： 不涉及
 
         :return: The audio_codec of this AudioAssetMeta.
         :rtype: str
@@ -113,7 +113,7 @@ class AudioAssetMeta:
     def audio_codec(self, audio_codec):
         """Sets the audio_codec of this AudioAssetMeta.
 
-        音频编码格式
+        **参数解释**： 音频编码格式。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： 字符长度0-32位。 **默认取值**： 不涉及
 
         :param audio_codec: The audio_codec of this AudioAssetMeta.
         :type audio_codec: str
@@ -124,7 +124,7 @@ class AudioAssetMeta:
     def audio_bit_rate(self):
         """Gets the audio_bit_rate of this AudioAssetMeta.
 
-        音频平均码率,单位kbps
+        **参数解释**： 音频平均码率,单位kbps。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
         :return: The audio_bit_rate of this AudioAssetMeta.
         :rtype: int
@@ -135,7 +135,7 @@ class AudioAssetMeta:
     def audio_bit_rate(self, audio_bit_rate):
         """Sets the audio_bit_rate of this AudioAssetMeta.
 
-        音频平均码率,单位kbps
+        **参数解释**： 音频平均码率,单位kbps。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
         :param audio_bit_rate: The audio_bit_rate of this AudioAssetMeta.
         :type audio_bit_rate: int
@@ -146,7 +146,7 @@ class AudioAssetMeta:
     def audio_channels(self):
         """Gets the audio_channels of this AudioAssetMeta.
 
-        音频声道数
+        **参数解释**： 音频声道数。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
         :return: The audio_channels of this AudioAssetMeta.
         :rtype: int
@@ -157,7 +157,7 @@ class AudioAssetMeta:
     def audio_channels(self, audio_channels):
         """Sets the audio_channels of this AudioAssetMeta.
 
-        音频声道数
+        **参数解释**： 音频声道数。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
         :param audio_channels: The audio_channels of this AudioAssetMeta.
         :type audio_channels: int
@@ -168,7 +168,7 @@ class AudioAssetMeta:
     def sample(self):
         """Gets the sample of this AudioAssetMeta.
 
-        采样率,HZ
+        **参数解释**： 采样率,HZ。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
         :return: The sample of this AudioAssetMeta.
         :rtype: int
@@ -179,7 +179,7 @@ class AudioAssetMeta:
     def sample(self, sample):
         """Sets the sample of this AudioAssetMeta.
 
-        采样率,HZ
+        **参数解释**： 采样率,HZ。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
         :param sample: The sample of this AudioAssetMeta.
         :type sample: int

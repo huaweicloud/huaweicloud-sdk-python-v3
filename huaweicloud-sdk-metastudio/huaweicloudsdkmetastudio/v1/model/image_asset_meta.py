@@ -39,15 +39,15 @@ class ImageAssetMeta:
 
         The model defined in huaweicloud sdk
 
-        :param codec: 图片编码格式，自动提取。
+        :param codec: **参数解释**： 图片编码格式。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： 字符长度0-32位。 **默认取值**： 不涉及。
         :type codec: str
-        :param width: 图片宽度，自动提取
+        :param width: **参数解释**： 图片宽度。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及。
         :type width: int
-        :param height: 图片高度，自动提取
+        :param height: **参数解释**： 图片高度。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及。
         :type height: int
-        :param size: 大小
+        :param size: **参数解释**： 图片大小。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及。
         :type size: float
-        :param mode: Horizontal&#x3D;横向；Vertical&#x3D;纵向
+        :param mode: **参数解释**： 图片形态。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： * Horizontal：横向 * Vertical：纵向  **默认取值**： 不涉及。
         :type mode: str
         :param error_info: 
         :type error_info: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
@@ -80,7 +80,7 @@ class ImageAssetMeta:
     def codec(self):
         """Gets the codec of this ImageAssetMeta.
 
-        图片编码格式，自动提取。
+        **参数解释**： 图片编码格式。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： 字符长度0-32位。 **默认取值**： 不涉及。
 
         :return: The codec of this ImageAssetMeta.
         :rtype: str
@@ -91,7 +91,7 @@ class ImageAssetMeta:
     def codec(self, codec):
         """Sets the codec of this ImageAssetMeta.
 
-        图片编码格式，自动提取。
+        **参数解释**： 图片编码格式。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： 字符长度0-32位。 **默认取值**： 不涉及。
 
         :param codec: The codec of this ImageAssetMeta.
         :type codec: str
@@ -102,7 +102,7 @@ class ImageAssetMeta:
     def width(self):
         """Gets the width of this ImageAssetMeta.
 
-        图片宽度，自动提取
+        **参数解释**： 图片宽度。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及。
 
         :return: The width of this ImageAssetMeta.
         :rtype: int
@@ -113,7 +113,7 @@ class ImageAssetMeta:
     def width(self, width):
         """Sets the width of this ImageAssetMeta.
 
-        图片宽度，自动提取
+        **参数解释**： 图片宽度。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及。
 
         :param width: The width of this ImageAssetMeta.
         :type width: int
@@ -124,7 +124,7 @@ class ImageAssetMeta:
     def height(self):
         """Gets the height of this ImageAssetMeta.
 
-        图片高度，自动提取
+        **参数解释**： 图片高度。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及。
 
         :return: The height of this ImageAssetMeta.
         :rtype: int
@@ -135,7 +135,7 @@ class ImageAssetMeta:
     def height(self, height):
         """Sets the height of this ImageAssetMeta.
 
-        图片高度，自动提取
+        **参数解释**： 图片高度。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及。
 
         :param height: The height of this ImageAssetMeta.
         :type height: int
@@ -146,7 +146,7 @@ class ImageAssetMeta:
     def size(self):
         """Gets the size of this ImageAssetMeta.
 
-        大小
+        **参数解释**： 图片大小。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及。
 
         :return: The size of this ImageAssetMeta.
         :rtype: float
@@ -157,7 +157,7 @@ class ImageAssetMeta:
     def size(self, size):
         """Sets the size of this ImageAssetMeta.
 
-        大小
+        **参数解释**： 图片大小。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及。
 
         :param size: The size of this ImageAssetMeta.
         :type size: float
@@ -168,7 +168,7 @@ class ImageAssetMeta:
     def mode(self):
         """Gets the mode of this ImageAssetMeta.
 
-        Horizontal=横向；Vertical=纵向
+        **参数解释**： 图片形态。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： * Horizontal：横向 * Vertical：纵向  **默认取值**： 不涉及。
 
         :return: The mode of this ImageAssetMeta.
         :rtype: str
@@ -179,7 +179,7 @@ class ImageAssetMeta:
     def mode(self, mode):
         """Sets the mode of this ImageAssetMeta.
 
-        Horizontal=横向；Vertical=纵向
+        **参数解释**： 图片形态。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： * Horizontal：横向 * Vertical：纵向  **默认取值**： 不涉及。
 
         :param mode: The mode of this ImageAssetMeta.
         :type mode: str

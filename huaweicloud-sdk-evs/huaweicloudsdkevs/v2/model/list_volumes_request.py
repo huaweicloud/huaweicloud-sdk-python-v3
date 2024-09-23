@@ -34,7 +34,8 @@ class ListVolumesRequest:
         'id': 'str',
         'ids': 'str',
         'enterprise_project_id': 'str',
-        'server_id': 'str'
+        'server_id': 'str',
+        'snapshot_policy_id': 'str'
     }
 
     attribute_map = {
@@ -55,10 +56,11 @@ class ListVolumesRequest:
         'id': 'id',
         'ids': 'ids',
         'enterprise_project_id': 'enterprise_project_id',
-        'server_id': 'server_id'
+        'server_id': 'server_id',
+        'snapshot_policy_id': 'snapshot_policy_id'
     }
 
-    def __init__(self, marker=None, name=None, limit=None, sort_key=None, offset=None, sort_dir=None, status=None, metadata=None, availability_zone=None, multiattach=None, service_type=None, dedicated_storage_id=None, dedicated_storage_name=None, volume_type_id=None, id=None, ids=None, enterprise_project_id=None, server_id=None):
+    def __init__(self, marker=None, name=None, limit=None, sort_key=None, offset=None, sort_dir=None, status=None, metadata=None, availability_zone=None, multiattach=None, service_type=None, dedicated_storage_id=None, dedicated_storage_name=None, volume_type_id=None, id=None, ids=None, enterprise_project_id=None, server_id=None, snapshot_policy_id=None):
         """ListVolumesRequest
 
         The model defined in huaweicloud sdk
@@ -99,6 +101,8 @@ class ListVolumesRequest:
         :type enterprise_project_id: str
         :param server_id: 云服务器id。
         :type server_id: str
+        :param snapshot_policy_id: 自动快照策略ID
+        :type snapshot_policy_id: str
         """
         
         
@@ -121,6 +125,7 @@ class ListVolumesRequest:
         self._ids = None
         self._enterprise_project_id = None
         self._server_id = None
+        self._snapshot_policy_id = None
         self.discriminator = None
 
         if marker is not None:
@@ -159,6 +164,8 @@ class ListVolumesRequest:
             self.enterprise_project_id = enterprise_project_id
         if server_id is not None:
             self.server_id = server_id
+        if snapshot_policy_id is not None:
+            self.snapshot_policy_id = snapshot_policy_id
 
     @property
     def marker(self):
@@ -555,6 +562,28 @@ class ListVolumesRequest:
         :type server_id: str
         """
         self._server_id = server_id
+
+    @property
+    def snapshot_policy_id(self):
+        """Gets the snapshot_policy_id of this ListVolumesRequest.
+
+        自动快照策略ID
+
+        :return: The snapshot_policy_id of this ListVolumesRequest.
+        :rtype: str
+        """
+        return self._snapshot_policy_id
+
+    @snapshot_policy_id.setter
+    def snapshot_policy_id(self, snapshot_policy_id):
+        """Sets the snapshot_policy_id of this ListVolumesRequest.
+
+        自动快照策略ID
+
+        :param snapshot_policy_id: The snapshot_policy_id of this ListVolumesRequest.
+        :type snapshot_policy_id: str
+        """
+        self._snapshot_policy_id = snapshot_policy_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

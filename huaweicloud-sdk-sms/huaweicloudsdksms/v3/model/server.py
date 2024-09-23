@@ -26,7 +26,6 @@ class Server:
         'firmware': 'str',
         'cpu_quantity': 'int',
         'memory': 'int',
-        'disks': 'list[Disk]',
         'btrfs_list': 'list[BtrfsFileSystem]',
         'networks': 'list[NetWork]',
         'domain_id': 'str',
@@ -51,7 +50,6 @@ class Server:
         'firmware': 'firmware',
         'cpu_quantity': 'cpu_quantity',
         'memory': 'memory',
-        'disks': 'disks',
         'btrfs_list': 'btrfs_list',
         'networks': 'networks',
         'domain_id': 'domain_id',
@@ -66,7 +64,7 @@ class Server:
         'volume_groups': 'volume_groups'
     }
 
-    def __init__(self, id=None, ip=None, name=None, hostname=None, os_type=None, os_version=None, firmware=None, cpu_quantity=None, memory=None, disks=None, btrfs_list=None, networks=None, domain_id=None, has_rsync=None, paravirtualization=None, raw_devices=None, driver_files=None, system_services=None, account_rights=None, boot_loader=None, system_dir=None, volume_groups=None):
+    def __init__(self, id=None, ip=None, name=None, hostname=None, os_type=None, os_version=None, firmware=None, cpu_quantity=None, memory=None, btrfs_list=None, networks=None, domain_id=None, has_rsync=None, paravirtualization=None, raw_devices=None, driver_files=None, system_services=None, account_rights=None, boot_loader=None, system_dir=None, volume_groups=None):
         """Server
 
         The model defined in huaweicloud sdk
@@ -89,8 +87,6 @@ class Server:
         :type cpu_quantity: int
         :param memory: 内存大小，单位MB
         :type memory: int
-        :param disks: 源端服务器的磁盘信息
-        :type disks: list[:class:`huaweicloudsdksms.v3.Disk`]
         :param btrfs_list: Linux 必选，源端的Btrfs信息。如果源端不存在Btrfs，则为[]
         :type btrfs_list: list[:class:`huaweicloudsdksms.v3.BtrfsFileSystem`]
         :param networks: 源端服务器的网卡信息
@@ -128,7 +124,6 @@ class Server:
         self._firmware = None
         self._cpu_quantity = None
         self._memory = None
-        self._disks = None
         self._btrfs_list = None
         self._networks = None
         self._domain_id = None
@@ -158,8 +153,6 @@ class Server:
             self.cpu_quantity = cpu_quantity
         if memory is not None:
             self.memory = memory
-        if disks is not None:
-            self.disks = disks
         if btrfs_list is not None:
             self.btrfs_list = btrfs_list
         if networks is not None:
@@ -382,28 +375,6 @@ class Server:
         :type memory: int
         """
         self._memory = memory
-
-    @property
-    def disks(self):
-        """Gets the disks of this Server.
-
-        源端服务器的磁盘信息
-
-        :return: The disks of this Server.
-        :rtype: list[:class:`huaweicloudsdksms.v3.Disk`]
-        """
-        return self._disks
-
-    @disks.setter
-    def disks(self, disks):
-        """Sets the disks of this Server.
-
-        源端服务器的磁盘信息
-
-        :param disks: The disks of this Server.
-        :type disks: list[:class:`huaweicloudsdksms.v3.Disk`]
-        """
-        self._disks = disks
 
     @property
     def btrfs_list(self):

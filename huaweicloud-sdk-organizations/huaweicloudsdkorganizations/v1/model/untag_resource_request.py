@@ -15,22 +15,27 @@ class UntagResourceRequest:
                             and the value is json key in definition.
     """
     sensitive_list = []
+    sensitive_list.append('x_security_token')
 
     openapi_types = {
+        'x_security_token': 'str',
         'resource_id': 'str',
         'body': 'UntagResourceReqBody'
     }
 
     attribute_map = {
+        'x_security_token': 'X-Security-Token',
         'resource_id': 'resource_id',
         'body': 'body'
     }
 
-    def __init__(self, resource_id=None, body=None):
+    def __init__(self, x_security_token=None, resource_id=None, body=None):
         """UntagResourceRequest
 
         The model defined in huaweicloud sdk
 
+        :param x_security_token: 如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+        :type x_security_token: str
         :param resource_id: 根、组织单元、账号或策略的唯一标识符（ID）。
         :type resource_id: str
         :param body: Body of the UntagResourceRequest
@@ -39,13 +44,38 @@ class UntagResourceRequest:
         
         
 
+        self._x_security_token = None
         self._resource_id = None
         self._body = None
         self.discriminator = None
 
+        if x_security_token is not None:
+            self.x_security_token = x_security_token
         self.resource_id = resource_id
         if body is not None:
             self.body = body
+
+    @property
+    def x_security_token(self):
+        """Gets the x_security_token of this UntagResourceRequest.
+
+        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+
+        :return: The x_security_token of this UntagResourceRequest.
+        :rtype: str
+        """
+        return self._x_security_token
+
+    @x_security_token.setter
+    def x_security_token(self, x_security_token):
+        """Sets the x_security_token of this UntagResourceRequest.
+
+        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+
+        :param x_security_token: The x_security_token of this UntagResourceRequest.
+        :type x_security_token: str
+        """
+        self._x_security_token = x_security_token
 
     @property
     def resource_id(self):

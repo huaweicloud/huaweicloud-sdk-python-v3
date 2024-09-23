@@ -37,11 +37,11 @@ class HumanModelAssetMeta:
 
         The model defined in huaweicloud sdk
 
-        :param style_id: 数字人模型风格ID。 * system_male_001：男性风格01 * system_female_001：女性风格01 * system_male_002：男性风格02  * system_female_002：女性风格02
+        :param style_id: **参数解释**： 数字人模型风格ID。 **约束限制**： 当前仅支持系统提供的几种风格。 **取值范围**： * system_male_001：男性风格01 * system_female_001：女性风格01 * system_male_002：男性风格02  * system_female_002：女性风格02  **默认取值**： 不涉及
         :type style_id: str
-        :param modeling_type: 数字人模型建模类型。 * UPLOADED：租户上传的模型 * PICTURE_MODELING：照片建模生成的模型 * CHARACTER_CUSTOMIZATION_MODELING：捏脸生成的模型
+        :param modeling_type: **参数解释**： 数字人模型建模类型。 **约束限制**： 不涉及 **取值范围**： * UPLOADED：租户上传的模型 * PICTURE_MODELING：照片建模生成的模型 * CHARACTER_CUSTOMIZATION_MODELING：捏脸生成的模型
         :type modeling_type: str
-        :param modeling_job_id: 建模任务ID。
+        :param modeling_job_id: **参数解释**： 建模任务ID。 **约束限制**： 仅由MetaStudio服务生成的模型系统自行填写 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及。
         :type modeling_job_id: str
         :param model_properties: 
         :type model_properties: :class:`huaweicloudsdkmetastudio.v1.HumanModelMetaProperties`
@@ -73,7 +73,7 @@ class HumanModelAssetMeta:
     def style_id(self):
         """Gets the style_id of this HumanModelAssetMeta.
 
-        数字人模型风格ID。 * system_male_001：男性风格01 * system_female_001：女性风格01 * system_male_002：男性风格02  * system_female_002：女性风格02
+        **参数解释**： 数字人模型风格ID。 **约束限制**： 当前仅支持系统提供的几种风格。 **取值范围**： * system_male_001：男性风格01 * system_female_001：女性风格01 * system_male_002：男性风格02  * system_female_002：女性风格02  **默认取值**： 不涉及
 
         :return: The style_id of this HumanModelAssetMeta.
         :rtype: str
@@ -84,7 +84,7 @@ class HumanModelAssetMeta:
     def style_id(self, style_id):
         """Sets the style_id of this HumanModelAssetMeta.
 
-        数字人模型风格ID。 * system_male_001：男性风格01 * system_female_001：女性风格01 * system_male_002：男性风格02  * system_female_002：女性风格02
+        **参数解释**： 数字人模型风格ID。 **约束限制**： 当前仅支持系统提供的几种风格。 **取值范围**： * system_male_001：男性风格01 * system_female_001：女性风格01 * system_male_002：男性风格02  * system_female_002：女性风格02  **默认取值**： 不涉及
 
         :param style_id: The style_id of this HumanModelAssetMeta.
         :type style_id: str
@@ -95,7 +95,7 @@ class HumanModelAssetMeta:
     def modeling_type(self):
         """Gets the modeling_type of this HumanModelAssetMeta.
 
-        数字人模型建模类型。 * UPLOADED：租户上传的模型 * PICTURE_MODELING：照片建模生成的模型 * CHARACTER_CUSTOMIZATION_MODELING：捏脸生成的模型
+        **参数解释**： 数字人模型建模类型。 **约束限制**： 不涉及 **取值范围**： * UPLOADED：租户上传的模型 * PICTURE_MODELING：照片建模生成的模型 * CHARACTER_CUSTOMIZATION_MODELING：捏脸生成的模型
 
         :return: The modeling_type of this HumanModelAssetMeta.
         :rtype: str
@@ -106,7 +106,7 @@ class HumanModelAssetMeta:
     def modeling_type(self, modeling_type):
         """Sets the modeling_type of this HumanModelAssetMeta.
 
-        数字人模型建模类型。 * UPLOADED：租户上传的模型 * PICTURE_MODELING：照片建模生成的模型 * CHARACTER_CUSTOMIZATION_MODELING：捏脸生成的模型
+        **参数解释**： 数字人模型建模类型。 **约束限制**： 不涉及 **取值范围**： * UPLOADED：租户上传的模型 * PICTURE_MODELING：照片建模生成的模型 * CHARACTER_CUSTOMIZATION_MODELING：捏脸生成的模型
 
         :param modeling_type: The modeling_type of this HumanModelAssetMeta.
         :type modeling_type: str
@@ -117,7 +117,7 @@ class HumanModelAssetMeta:
     def modeling_job_id(self):
         """Gets the modeling_job_id of this HumanModelAssetMeta.
 
-        建模任务ID。
+        **参数解释**： 建模任务ID。 **约束限制**： 仅由MetaStudio服务生成的模型系统自行填写 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及。
 
         :return: The modeling_job_id of this HumanModelAssetMeta.
         :rtype: str
@@ -128,7 +128,7 @@ class HumanModelAssetMeta:
     def modeling_job_id(self, modeling_job_id):
         """Sets the modeling_job_id of this HumanModelAssetMeta.
 
-        建模任务ID。
+        **参数解释**： 建模任务ID。 **约束限制**： 仅由MetaStudio服务生成的模型系统自行填写 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及。
 
         :param modeling_job_id: The modeling_job_id of this HumanModelAssetMeta.
         :type modeling_job_id: str

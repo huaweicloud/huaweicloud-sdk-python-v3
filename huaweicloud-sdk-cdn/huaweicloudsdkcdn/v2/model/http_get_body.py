@@ -20,6 +20,7 @@ class HttpGetBody:
         'https_status': 'str',
         'certificate_type': 'str',
         'certificate_source': 'int',
+        'scm_certificate_id': 'str',
         'certificate_name': 'str',
         'certificate_value': 'str',
         'expire_time': 'int',
@@ -34,6 +35,7 @@ class HttpGetBody:
         'https_status': 'https_status',
         'certificate_type': 'certificate_type',
         'certificate_source': 'certificate_source',
+        'scm_certificate_id': 'scm_certificate_id',
         'certificate_name': 'certificate_name',
         'certificate_value': 'certificate_value',
         'expire_time': 'expire_time',
@@ -44,7 +46,7 @@ class HttpGetBody:
         'ocsp_stapling_status': 'ocsp_stapling_status'
     }
 
-    def __init__(self, https_status=None, certificate_type=None, certificate_source=None, certificate_name=None, certificate_value=None, expire_time=None, enc_certificate_value=None, certificates=None, http2_status=None, tls_version=None, ocsp_stapling_status=None):
+    def __init__(self, https_status=None, certificate_type=None, certificate_source=None, scm_certificate_id=None, certificate_name=None, certificate_value=None, expire_time=None, enc_certificate_value=None, certificates=None, http2_status=None, tls_version=None, ocsp_stapling_status=None):
         """HttpGetBody
 
         The model defined in huaweicloud sdk
@@ -53,8 +55,10 @@ class HttpGetBody:
         :type https_status: str
         :param certificate_type: 证书类型。server：国际证书；server_sm：国密证书。
         :type certificate_type: str
-        :param certificate_source: 证书来源，1：华为云托管证书，0：自有证书。
+        :param certificate_source: 证书来源，1：华为云托管证书，0：自有证书。2：SCM证书。
         :type certificate_source: int
+        :param scm_certificate_id: SCM证书id
+        :type scm_certificate_id: str
         :param certificate_name: 证书名字。
         :type certificate_name: str
         :param certificate_value: HTTPS协议使用的证书内容，PEM编码格式。
@@ -78,6 +82,7 @@ class HttpGetBody:
         self._https_status = None
         self._certificate_type = None
         self._certificate_source = None
+        self._scm_certificate_id = None
         self._certificate_name = None
         self._certificate_value = None
         self._expire_time = None
@@ -94,6 +99,8 @@ class HttpGetBody:
             self.certificate_type = certificate_type
         if certificate_source is not None:
             self.certificate_source = certificate_source
+        if scm_certificate_id is not None:
+            self.scm_certificate_id = scm_certificate_id
         if certificate_name is not None:
             self.certificate_name = certificate_name
         if certificate_value is not None:
@@ -159,7 +166,7 @@ class HttpGetBody:
     def certificate_source(self):
         """Gets the certificate_source of this HttpGetBody.
 
-        证书来源，1：华为云托管证书，0：自有证书。
+        证书来源，1：华为云托管证书，0：自有证书。2：SCM证书。
 
         :return: The certificate_source of this HttpGetBody.
         :rtype: int
@@ -170,12 +177,34 @@ class HttpGetBody:
     def certificate_source(self, certificate_source):
         """Sets the certificate_source of this HttpGetBody.
 
-        证书来源，1：华为云托管证书，0：自有证书。
+        证书来源，1：华为云托管证书，0：自有证书。2：SCM证书。
 
         :param certificate_source: The certificate_source of this HttpGetBody.
         :type certificate_source: int
         """
         self._certificate_source = certificate_source
+
+    @property
+    def scm_certificate_id(self):
+        """Gets the scm_certificate_id of this HttpGetBody.
+
+        SCM证书id
+
+        :return: The scm_certificate_id of this HttpGetBody.
+        :rtype: str
+        """
+        return self._scm_certificate_id
+
+    @scm_certificate_id.setter
+    def scm_certificate_id(self, scm_certificate_id):
+        """Sets the scm_certificate_id of this HttpGetBody.
+
+        SCM证书id
+
+        :param scm_certificate_id: The scm_certificate_id of this HttpGetBody.
+        :type scm_certificate_id: str
+        """
+        self._scm_certificate_id = scm_certificate_id
 
     @property
     def certificate_name(self):

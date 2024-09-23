@@ -21,6 +21,7 @@ class CreateAccountReqBody:
         'email': 'str',
         'phone': 'str',
         'agency_name': 'str',
+        'description': 'str',
         'tags': 'list[TagDto]'
     }
 
@@ -29,10 +30,11 @@ class CreateAccountReqBody:
         'email': 'email',
         'phone': 'phone',
         'agency_name': 'agency_name',
+        'description': 'description',
         'tags': 'tags'
     }
 
-    def __init__(self, name=None, email=None, phone=None, agency_name=None, tags=None):
+    def __init__(self, name=None, email=None, phone=None, agency_name=None, description=None, tags=None):
         """CreateAccountReqBody
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class CreateAccountReqBody:
         :type phone: str
         :param agency_name: 委托名称
         :type agency_name: str
+        :param description: 描述信息。
+        :type description: str
         :param tags: 要绑定到新创建的账号的标签列表。
         :type tags: list[:class:`huaweicloudsdkorganizations.v1.TagDto`]
         """
@@ -55,6 +59,7 @@ class CreateAccountReqBody:
         self._email = None
         self._phone = None
         self._agency_name = None
+        self._description = None
         self._tags = None
         self.discriminator = None
 
@@ -65,6 +70,8 @@ class CreateAccountReqBody:
             self.phone = phone
         if agency_name is not None:
             self.agency_name = agency_name
+        if description is not None:
+            self.description = description
         if tags is not None:
             self.tags = tags
 
@@ -155,6 +162,28 @@ class CreateAccountReqBody:
         :type agency_name: str
         """
         self._agency_name = agency_name
+
+    @property
+    def description(self):
+        """Gets the description of this CreateAccountReqBody.
+
+        描述信息。
+
+        :return: The description of this CreateAccountReqBody.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this CreateAccountReqBody.
+
+        描述信息。
+
+        :param description: The description of this CreateAccountReqBody.
+        :type description: str
+        """
+        self._description = description
 
     @property
     def tags(self):

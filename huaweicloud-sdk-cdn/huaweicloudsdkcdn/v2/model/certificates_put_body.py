@@ -17,6 +17,8 @@ class CertificatesPutBody:
     sensitive_list = []
 
     openapi_types = {
+        'certificate_source': 'int',
+        'scm_certificate_id': 'str',
         'certificate_type': 'str',
         'certificate_name': 'str',
         'certificate_value': 'str',
@@ -26,6 +28,8 @@ class CertificatesPutBody:
     }
 
     attribute_map = {
+        'certificate_source': 'certificate_source',
+        'scm_certificate_id': 'scm_certificate_id',
         'certificate_type': 'certificate_type',
         'certificate_name': 'certificate_name',
         'certificate_value': 'certificate_value',
@@ -34,11 +38,15 @@ class CertificatesPutBody:
         'enc_private_key': 'enc_private_key'
     }
 
-    def __init__(self, certificate_type=None, certificate_name=None, certificate_value=None, private_key=None, enc_certificate_value=None, enc_private_key=None):
+    def __init__(self, certificate_source=None, scm_certificate_id=None, certificate_type=None, certificate_name=None, certificate_value=None, private_key=None, enc_certificate_value=None, enc_private_key=None):
         """CertificatesPutBody
 
         The model defined in huaweicloud sdk
 
+        :param certificate_source: 证书来源，0：自有证书。2：SCM证书。
+        :type certificate_source: int
+        :param scm_certificate_id: SCM证书id
+        :type scm_certificate_id: str
         :param certificate_type: 证书类型，server：国际证书；server_sm：国密证书。
         :type certificate_type: str
         :param certificate_name: 证书名字，长度限制为3-64字符。
@@ -55,6 +63,8 @@ class CertificatesPutBody:
         
         
 
+        self._certificate_source = None
+        self._scm_certificate_id = None
         self._certificate_type = None
         self._certificate_name = None
         self._certificate_value = None
@@ -63,6 +73,10 @@ class CertificatesPutBody:
         self._enc_private_key = None
         self.discriminator = None
 
+        if certificate_source is not None:
+            self.certificate_source = certificate_source
+        if scm_certificate_id is not None:
+            self.scm_certificate_id = scm_certificate_id
         self.certificate_type = certificate_type
         self.certificate_name = certificate_name
         self.certificate_value = certificate_value
@@ -71,6 +85,50 @@ class CertificatesPutBody:
             self.enc_certificate_value = enc_certificate_value
         if enc_private_key is not None:
             self.enc_private_key = enc_private_key
+
+    @property
+    def certificate_source(self):
+        """Gets the certificate_source of this CertificatesPutBody.
+
+        证书来源，0：自有证书。2：SCM证书。
+
+        :return: The certificate_source of this CertificatesPutBody.
+        :rtype: int
+        """
+        return self._certificate_source
+
+    @certificate_source.setter
+    def certificate_source(self, certificate_source):
+        """Sets the certificate_source of this CertificatesPutBody.
+
+        证书来源，0：自有证书。2：SCM证书。
+
+        :param certificate_source: The certificate_source of this CertificatesPutBody.
+        :type certificate_source: int
+        """
+        self._certificate_source = certificate_source
+
+    @property
+    def scm_certificate_id(self):
+        """Gets the scm_certificate_id of this CertificatesPutBody.
+
+        SCM证书id
+
+        :return: The scm_certificate_id of this CertificatesPutBody.
+        :rtype: str
+        """
+        return self._scm_certificate_id
+
+    @scm_certificate_id.setter
+    def scm_certificate_id(self, scm_certificate_id):
+        """Sets the scm_certificate_id of this CertificatesPutBody.
+
+        SCM证书id
+
+        :param scm_certificate_id: The scm_certificate_id of this CertificatesPutBody.
+        :type scm_certificate_id: str
+        """
+        self._scm_certificate_id = scm_certificate_id
 
     @property
     def certificate_type(self):

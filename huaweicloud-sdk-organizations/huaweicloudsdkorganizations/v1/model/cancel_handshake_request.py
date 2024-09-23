@@ -15,30 +15,60 @@ class CancelHandshakeRequest:
                             and the value is json key in definition.
     """
     sensitive_list = []
+    sensitive_list.append('x_security_token')
 
     openapi_types = {
+        'x_security_token': 'str',
         'handshake_id': 'str'
     }
 
     attribute_map = {
+        'x_security_token': 'X-Security-Token',
         'handshake_id': 'handshake_id'
     }
 
-    def __init__(self, handshake_id=None):
+    def __init__(self, x_security_token=None, handshake_id=None):
         """CancelHandshakeRequest
 
         The model defined in huaweicloud sdk
 
+        :param x_security_token: 如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+        :type x_security_token: str
         :param handshake_id: 邀请的唯一标识符（ID）。账号在发起邀请时创建ID。
         :type handshake_id: str
         """
         
         
 
+        self._x_security_token = None
         self._handshake_id = None
         self.discriminator = None
 
+        if x_security_token is not None:
+            self.x_security_token = x_security_token
         self.handshake_id = handshake_id
+
+    @property
+    def x_security_token(self):
+        """Gets the x_security_token of this CancelHandshakeRequest.
+
+        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+
+        :return: The x_security_token of this CancelHandshakeRequest.
+        :rtype: str
+        """
+        return self._x_security_token
+
+    @x_security_token.setter
+    def x_security_token(self, x_security_token):
+        """Sets the x_security_token of this CancelHandshakeRequest.
+
+        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+
+        :param x_security_token: The x_security_token of this CancelHandshakeRequest.
+        :type x_security_token: str
+        """
+        self._x_security_token = x_security_token
 
     @property
     def handshake_id(self):

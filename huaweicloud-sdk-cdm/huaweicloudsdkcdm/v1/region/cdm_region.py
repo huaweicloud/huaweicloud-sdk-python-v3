@@ -44,6 +44,8 @@ class CdmRegion:
                         "https://cdm.ap-southeast-4.myhuaweicloud.com")
     TR_WEST_1 = Region("tr-west-1",
                         "https://cdm.tr-west-1.myhuaweicloud.com")
+    AE_AD_1 = Region("ae-ad-1",
+                        "https://cdm.ae-ad-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
@@ -65,6 +67,7 @@ class CdmRegion:
         "ap-southeast-3": AP_SOUTHEAST_3,
         "ap-southeast-4": AP_SOUTHEAST_4,
         "tr-west-1": TR_WEST_1,
+        "ae-ad-1": AE_AD_1,
     }
 
     @classmethod

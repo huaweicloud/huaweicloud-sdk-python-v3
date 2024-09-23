@@ -24,7 +24,8 @@ class AgencyResult:
         'id': 'str',
         'name': 'str',
         'trust_domain_id': 'str',
-        'trust_domain_name': 'str'
+        'trust_domain_name': 'str',
+        'agency_urn': 'str'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class AgencyResult:
         'id': 'id',
         'name': 'name',
         'trust_domain_id': 'trust_domain_id',
-        'trust_domain_name': 'trust_domain_name'
+        'trust_domain_name': 'trust_domain_name',
+        'agency_urn': 'agency_urn'
     }
 
-    def __init__(self, create_time=None, description=None, domain_id=None, expire_time=None, id=None, name=None, trust_domain_id=None, trust_domain_name=None):
+    def __init__(self, create_time=None, description=None, domain_id=None, expire_time=None, id=None, name=None, trust_domain_id=None, trust_domain_name=None, agency_urn=None):
         """AgencyResult
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class AgencyResult:
         :type trust_domain_id: str
         :param trust_domain_name: 被委托方账号名。
         :type trust_domain_name: str
+        :param agency_urn: 委托URN。
+        :type agency_urn: str
         """
         
         
@@ -71,6 +75,7 @@ class AgencyResult:
         self._name = None
         self._trust_domain_id = None
         self._trust_domain_name = None
+        self._agency_urn = None
         self.discriminator = None
 
         self.create_time = create_time
@@ -84,6 +89,8 @@ class AgencyResult:
             self.trust_domain_id = trust_domain_id
         if trust_domain_name is not None:
             self.trust_domain_name = trust_domain_name
+        if agency_urn is not None:
+            self.agency_urn = agency_urn
 
     @property
     def create_time(self):
@@ -260,6 +267,28 @@ class AgencyResult:
         :type trust_domain_name: str
         """
         self._trust_domain_name = trust_domain_name
+
+    @property
+    def agency_urn(self):
+        """Gets the agency_urn of this AgencyResult.
+
+        委托URN。
+
+        :return: The agency_urn of this AgencyResult.
+        :rtype: str
+        """
+        return self._agency_urn
+
+    @agency_urn.setter
+    def agency_urn(self, agency_urn):
+        """Sets the agency_urn of this AgencyResult.
+
+        委托URN。
+
+        :param agency_urn: The agency_urn of this AgencyResult.
+        :type agency_urn: str
+        """
+        self._agency_urn = agency_urn
 
     def to_dict(self):
         """Returns the model properties as a dict"""

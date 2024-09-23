@@ -1242,6 +1242,8 @@ class EvsAsyncClient(Client):
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'server_id' in local_var_params:
             query_params.append(('server_id', local_var_params['server_id']))
+        if 'snapshot_policy_id' in local_var_params:
+            query_params.append(('snapshot_policy_id', local_var_params['snapshot_policy_id']))
 
         header_params = {}
 

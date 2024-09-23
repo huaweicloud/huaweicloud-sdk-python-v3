@@ -45,17 +45,17 @@ class HumanModel2DAssetMeta:
 
         The model defined in huaweicloud sdk
 
-        :param is_action_editable: 分身数字人的动作是否可编辑。默认不可编辑。
+        :param is_action_editable: **参数解释**： 分身数字人的动作是否可编辑 **约束限制**： 不涉及 **取值范围**： * true: 动作可编辑 * false: 动作不可编辑
         :type is_action_editable: bool
-        :param is_real_background: 是否是实景分身数字人。实景分身数字人不做背景替换。
+        :param is_real_background: **参数解释**： 是否是实景分身数字人 **约束限制**： 实景分身数字人不做背景替换。 **取值范围**： * true: 实景分身数字人 * false: 普通分身数字人，不带背景。
         :type is_real_background: bool
-        :param support_live: 是否支持直播
+        :param support_live: **参数解释**： 是否支持直播 **约束限制**： 不涉及 **取值范围**： * true: 支持直播 * false: 不支持直播。
         :type support_live: bool
-        :param model_version: 分身数字人模型版本。默认是V2版本模型。 * V2: V2版本模型 * V3：V3版本模型 * V3_2：V3.2版本模型
+        :param model_version: **参数解释**： 分身数字人模型版本 **约束限制**： 不涉及 **取值范围**： * V2: V2版本模型 * V3：V3版本模型 * V3_2：V3.2版本模型
         :type model_version: str
-        :param model_resolution: 分身数字人模型分辨率。默认是1080P。 * 1080P：1080P。支持1080P及720P的视频输出。 * 4K：4K。支持4K、1080P及720P的视频输出。
+        :param model_resolution: **参数解释**： 分身数字人模型分辨率。 **约束限制**： 不涉及 **取值范围**： * 1080P：1080P。支持1080P及720P的视频输出。 * 4K：4K。支持4K、1080P及720P的视频输出。
         :type model_resolution: str
-        :param device_names: 已执行编译任务
+        :param device_names: **参数解释**： 已执行编译任务设备类型列表。 **约束限制**： 支持走动的数字人，当前仅用于视频制作，不能用于直播和智能交互 **取值范围**： 设备名称列表最多16个。 设备名称字符长度1-64位。 **默认取值**： false
         :type device_names: list[str]
         :param is_with_action_library: 分身数字人是否带原子动作库。 &gt; * 带原子动作库的分身数字人可做动作编排。
         :type is_with_action_library: bool
@@ -101,7 +101,7 @@ class HumanModel2DAssetMeta:
     def is_action_editable(self):
         """Gets the is_action_editable of this HumanModel2DAssetMeta.
 
-        分身数字人的动作是否可编辑。默认不可编辑。
+        **参数解释**： 分身数字人的动作是否可编辑 **约束限制**： 不涉及 **取值范围**： * true: 动作可编辑 * false: 动作不可编辑
 
         :return: The is_action_editable of this HumanModel2DAssetMeta.
         :rtype: bool
@@ -112,7 +112,7 @@ class HumanModel2DAssetMeta:
     def is_action_editable(self, is_action_editable):
         """Sets the is_action_editable of this HumanModel2DAssetMeta.
 
-        分身数字人的动作是否可编辑。默认不可编辑。
+        **参数解释**： 分身数字人的动作是否可编辑 **约束限制**： 不涉及 **取值范围**： * true: 动作可编辑 * false: 动作不可编辑
 
         :param is_action_editable: The is_action_editable of this HumanModel2DAssetMeta.
         :type is_action_editable: bool
@@ -123,7 +123,7 @@ class HumanModel2DAssetMeta:
     def is_real_background(self):
         """Gets the is_real_background of this HumanModel2DAssetMeta.
 
-        是否是实景分身数字人。实景分身数字人不做背景替换。
+        **参数解释**： 是否是实景分身数字人 **约束限制**： 实景分身数字人不做背景替换。 **取值范围**： * true: 实景分身数字人 * false: 普通分身数字人，不带背景。
 
         :return: The is_real_background of this HumanModel2DAssetMeta.
         :rtype: bool
@@ -134,7 +134,7 @@ class HumanModel2DAssetMeta:
     def is_real_background(self, is_real_background):
         """Sets the is_real_background of this HumanModel2DAssetMeta.
 
-        是否是实景分身数字人。实景分身数字人不做背景替换。
+        **参数解释**： 是否是实景分身数字人 **约束限制**： 实景分身数字人不做背景替换。 **取值范围**： * true: 实景分身数字人 * false: 普通分身数字人，不带背景。
 
         :param is_real_background: The is_real_background of this HumanModel2DAssetMeta.
         :type is_real_background: bool
@@ -145,7 +145,7 @@ class HumanModel2DAssetMeta:
     def support_live(self):
         """Gets the support_live of this HumanModel2DAssetMeta.
 
-        是否支持直播
+        **参数解释**： 是否支持直播 **约束限制**： 不涉及 **取值范围**： * true: 支持直播 * false: 不支持直播。
 
         :return: The support_live of this HumanModel2DAssetMeta.
         :rtype: bool
@@ -156,7 +156,7 @@ class HumanModel2DAssetMeta:
     def support_live(self, support_live):
         """Sets the support_live of this HumanModel2DAssetMeta.
 
-        是否支持直播
+        **参数解释**： 是否支持直播 **约束限制**： 不涉及 **取值范围**： * true: 支持直播 * false: 不支持直播。
 
         :param support_live: The support_live of this HumanModel2DAssetMeta.
         :type support_live: bool
@@ -167,7 +167,7 @@ class HumanModel2DAssetMeta:
     def model_version(self):
         """Gets the model_version of this HumanModel2DAssetMeta.
 
-        分身数字人模型版本。默认是V2版本模型。 * V2: V2版本模型 * V3：V3版本模型 * V3_2：V3.2版本模型
+        **参数解释**： 分身数字人模型版本 **约束限制**： 不涉及 **取值范围**： * V2: V2版本模型 * V3：V3版本模型 * V3_2：V3.2版本模型
 
         :return: The model_version of this HumanModel2DAssetMeta.
         :rtype: str
@@ -178,7 +178,7 @@ class HumanModel2DAssetMeta:
     def model_version(self, model_version):
         """Sets the model_version of this HumanModel2DAssetMeta.
 
-        分身数字人模型版本。默认是V2版本模型。 * V2: V2版本模型 * V3：V3版本模型 * V3_2：V3.2版本模型
+        **参数解释**： 分身数字人模型版本 **约束限制**： 不涉及 **取值范围**： * V2: V2版本模型 * V3：V3版本模型 * V3_2：V3.2版本模型
 
         :param model_version: The model_version of this HumanModel2DAssetMeta.
         :type model_version: str
@@ -189,7 +189,7 @@ class HumanModel2DAssetMeta:
     def model_resolution(self):
         """Gets the model_resolution of this HumanModel2DAssetMeta.
 
-        分身数字人模型分辨率。默认是1080P。 * 1080P：1080P。支持1080P及720P的视频输出。 * 4K：4K。支持4K、1080P及720P的视频输出。
+        **参数解释**： 分身数字人模型分辨率。 **约束限制**： 不涉及 **取值范围**： * 1080P：1080P。支持1080P及720P的视频输出。 * 4K：4K。支持4K、1080P及720P的视频输出。
 
         :return: The model_resolution of this HumanModel2DAssetMeta.
         :rtype: str
@@ -200,7 +200,7 @@ class HumanModel2DAssetMeta:
     def model_resolution(self, model_resolution):
         """Sets the model_resolution of this HumanModel2DAssetMeta.
 
-        分身数字人模型分辨率。默认是1080P。 * 1080P：1080P。支持1080P及720P的视频输出。 * 4K：4K。支持4K、1080P及720P的视频输出。
+        **参数解释**： 分身数字人模型分辨率。 **约束限制**： 不涉及 **取值范围**： * 1080P：1080P。支持1080P及720P的视频输出。 * 4K：4K。支持4K、1080P及720P的视频输出。
 
         :param model_resolution: The model_resolution of this HumanModel2DAssetMeta.
         :type model_resolution: str
@@ -211,7 +211,7 @@ class HumanModel2DAssetMeta:
     def device_names(self):
         """Gets the device_names of this HumanModel2DAssetMeta.
 
-        已执行编译任务
+        **参数解释**： 已执行编译任务设备类型列表。 **约束限制**： 支持走动的数字人，当前仅用于视频制作，不能用于直播和智能交互 **取值范围**： 设备名称列表最多16个。 设备名称字符长度1-64位。 **默认取值**： false
 
         :return: The device_names of this HumanModel2DAssetMeta.
         :rtype: list[str]
@@ -222,7 +222,7 @@ class HumanModel2DAssetMeta:
     def device_names(self, device_names):
         """Sets the device_names of this HumanModel2DAssetMeta.
 
-        已执行编译任务
+        **参数解释**： 已执行编译任务设备类型列表。 **约束限制**： 支持走动的数字人，当前仅用于视频制作，不能用于直播和智能交互 **取值范围**： 设备名称列表最多16个。 设备名称字符长度1-64位。 **默认取值**： false
 
         :param device_names: The device_names of this HumanModel2DAssetMeta.
         :type device_names: list[str]

@@ -15,30 +15,60 @@ class ShowCreateAccountStatusRequest:
                             and the value is json key in definition.
     """
     sensitive_list = []
+    sensitive_list.append('x_security_token')
 
     openapi_types = {
+        'x_security_token': 'str',
         'create_account_status_id': 'str'
     }
 
     attribute_map = {
+        'x_security_token': 'X-Security-Token',
         'create_account_status_id': 'create_account_status_id'
     }
 
-    def __init__(self, create_account_status_id=None):
+    def __init__(self, x_security_token=None, create_account_status_id=None):
         """ShowCreateAccountStatusRequest
 
         The model defined in huaweicloud sdk
 
+        :param x_security_token: 如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+        :type x_security_token: str
         :param create_account_status_id: 指定唯一标识CreateAccount请求的ID值。
         :type create_account_status_id: str
         """
         
         
 
+        self._x_security_token = None
         self._create_account_status_id = None
         self.discriminator = None
 
+        if x_security_token is not None:
+            self.x_security_token = x_security_token
         self.create_account_status_id = create_account_status_id
+
+    @property
+    def x_security_token(self):
+        """Gets the x_security_token of this ShowCreateAccountStatusRequest.
+
+        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+
+        :return: The x_security_token of this ShowCreateAccountStatusRequest.
+        :rtype: str
+        """
+        return self._x_security_token
+
+    @x_security_token.setter
+    def x_security_token(self, x_security_token):
+        """Sets the x_security_token of this ShowCreateAccountStatusRequest.
+
+        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+
+        :param x_security_token: The x_security_token of this ShowCreateAccountStatusRequest.
+        :type x_security_token: str
+        """
+        self._x_security_token = x_security_token
 
     @property
     def create_account_status_id(self):

@@ -21,6 +21,7 @@ class HandshakeDto:
         'urn': 'str',
         'updated_at': 'datetime',
         'created_at': 'datetime',
+        'expired_at': 'datetime',
         'management_account_id': 'str',
         'management_account_name': 'str',
         'organization_id': 'str',
@@ -34,6 +35,7 @@ class HandshakeDto:
         'urn': 'urn',
         'updated_at': 'updated_at',
         'created_at': 'created_at',
+        'expired_at': 'expired_at',
         'management_account_id': 'management_account_id',
         'management_account_name': 'management_account_name',
         'organization_id': 'organization_id',
@@ -42,7 +44,7 @@ class HandshakeDto:
         'status': 'status'
     }
 
-    def __init__(self, id=None, urn=None, updated_at=None, created_at=None, management_account_id=None, management_account_name=None, organization_id=None, notes=None, target=None, status=None):
+    def __init__(self, id=None, urn=None, updated_at=None, created_at=None, expired_at=None, management_account_id=None, management_account_name=None, organization_id=None, notes=None, target=None, status=None):
         """HandshakeDto
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class HandshakeDto:
         :type updated_at: datetime
         :param created_at: 提出邀请（握手）请求的日期和时间。
         :type created_at: datetime
+        :param expired_at: 邀请（握手）过期的日期和时间。
+        :type expired_at: datetime
         :param management_account_id: 组织管理账号的唯一标识符（ID）。
         :type management_account_id: str
         :param management_account_name: 组织管理账号的名称。
@@ -75,6 +79,7 @@ class HandshakeDto:
         self._urn = None
         self._updated_at = None
         self._created_at = None
+        self._expired_at = None
         self._management_account_id = None
         self._management_account_name = None
         self._organization_id = None
@@ -87,6 +92,7 @@ class HandshakeDto:
         self.urn = urn
         self.updated_at = updated_at
         self.created_at = created_at
+        self.expired_at = expired_at
         self.management_account_id = management_account_id
         self.management_account_name = management_account_name
         self.organization_id = organization_id
@@ -181,6 +187,28 @@ class HandshakeDto:
         :type created_at: datetime
         """
         self._created_at = created_at
+
+    @property
+    def expired_at(self):
+        """Gets the expired_at of this HandshakeDto.
+
+        邀请（握手）过期的日期和时间。
+
+        :return: The expired_at of this HandshakeDto.
+        :rtype: datetime
+        """
+        return self._expired_at
+
+    @expired_at.setter
+    def expired_at(self, expired_at):
+        """Sets the expired_at of this HandshakeDto.
+
+        邀请（握手）过期的日期和时间。
+
+        :param expired_at: The expired_at of this HandshakeDto.
+        :type expired_at: datetime
+        """
+        self._expired_at = expired_at
 
     @property
     def management_account_id(self):

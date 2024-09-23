@@ -37,7 +37,7 @@ class EntityDto:
         :type name: str
         :param id: 实体的唯一标识符（ID）。
         :type id: str
-        :param type: 实体的类型，account:账户，organizational_unit:组织单元，root:根。
+        :param type: 实体的类型。account：账号；organizational_unit：组织单元；root：根。
         :type type: str
         """
         
@@ -100,7 +100,7 @@ class EntityDto:
     def type(self):
         """Gets the type of this EntityDto.
 
-        实体的类型，account:账户，organizational_unit:组织单元，root:根。
+        实体的类型。account：账号；organizational_unit：组织单元；root：根。
 
         :return: The type of this EntityDto.
         :rtype: str
@@ -111,7 +111,7 @@ class EntityDto:
     def type(self, type):
         """Sets the type of this EntityDto.
 
-        实体的类型，account:账户，organizational_unit:组织单元，root:根。
+        实体的类型。account：账号；organizational_unit：组织单元；root：根。
 
         :param type: The type of this EntityDto.
         :type type: str

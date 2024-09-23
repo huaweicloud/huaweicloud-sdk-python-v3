@@ -33,11 +33,11 @@ class ComponentInfo:
 
         The model defined in huaweicloud sdk
 
-        :param component_name: 组件名称。
+        :param component_name: **参数解释**： 组件名称。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-256位。 **默认取值**： 不涉及。
         :type component_name: str
-        :param component_type: 组件类型。
+        :param component_type: **参数解释**： 组件类型。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-256位。 **默认取值**： 不涉及。
         :type component_type: str
-        :param component_desc: 组件描述。
+        :param component_desc: **参数解释**： 组件描述。 **约束限制**： 不涉及。 **取值范围**： 字符长度0-512位。 **默认取值**： 不涉及。
         :type component_desc: str
         """
         
@@ -57,7 +57,7 @@ class ComponentInfo:
     def component_name(self):
         """Gets the component_name of this ComponentInfo.
 
-        组件名称。
+        **参数解释**： 组件名称。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-256位。 **默认取值**： 不涉及。
 
         :return: The component_name of this ComponentInfo.
         :rtype: str
@@ -68,7 +68,7 @@ class ComponentInfo:
     def component_name(self, component_name):
         """Sets the component_name of this ComponentInfo.
 
-        组件名称。
+        **参数解释**： 组件名称。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-256位。 **默认取值**： 不涉及。
 
         :param component_name: The component_name of this ComponentInfo.
         :type component_name: str
@@ -79,7 +79,7 @@ class ComponentInfo:
     def component_type(self):
         """Gets the component_type of this ComponentInfo.
 
-        组件类型。
+        **参数解释**： 组件类型。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-256位。 **默认取值**： 不涉及。
 
         :return: The component_type of this ComponentInfo.
         :rtype: str
@@ -90,7 +90,7 @@ class ComponentInfo:
     def component_type(self, component_type):
         """Sets the component_type of this ComponentInfo.
 
-        组件类型。
+        **参数解释**： 组件类型。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-256位。 **默认取值**： 不涉及。
 
         :param component_type: The component_type of this ComponentInfo.
         :type component_type: str
@@ -101,7 +101,7 @@ class ComponentInfo:
     def component_desc(self):
         """Gets the component_desc of this ComponentInfo.
 
-        组件描述。
+        **参数解释**： 组件描述。 **约束限制**： 不涉及。 **取值范围**： 字符长度0-512位。 **默认取值**： 不涉及。
 
         :return: The component_desc of this ComponentInfo.
         :rtype: str
@@ -112,7 +112,7 @@ class ComponentInfo:
     def component_desc(self, component_desc):
         """Sets the component_desc of this ComponentInfo.
 
-        组件描述。
+        **参数解释**： 组件描述。 **约束限制**： 不涉及。 **取值范围**： 字符长度0-512位。 **默认取值**： 不涉及。
 
         :param component_desc: The component_desc of this ComponentInfo.
         :type component_desc: str

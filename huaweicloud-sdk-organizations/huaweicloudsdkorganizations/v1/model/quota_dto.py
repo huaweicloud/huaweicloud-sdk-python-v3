@@ -37,7 +37,7 @@ class QuotaDto:
 
         The model defined in huaweicloud sdk
 
-        :param type: 配额类型，account账户，organizational_unit组织单元，policy策略。
+        :param type: 配额类型。account：账号；organizational_unit：组织单元；policy：策略。
         :type type: str
         :param quota: 配额数量。
         :type quota: int
@@ -68,7 +68,7 @@ class QuotaDto:
     def type(self):
         """Gets the type of this QuotaDto.
 
-        配额类型，account账户，organizational_unit组织单元，policy策略。
+        配额类型。account：账号；organizational_unit：组织单元；policy：策略。
 
         :return: The type of this QuotaDto.
         :rtype: str
@@ -79,7 +79,7 @@ class QuotaDto:
     def type(self, type):
         """Sets the type of this QuotaDto.
 
-        配额类型，account账户，organizational_unit组织单元，policy策略。
+        配额类型。account：账号；organizational_unit：组织单元；policy：策略。
 
         :param type: The type of this QuotaDto.
         :type type: str

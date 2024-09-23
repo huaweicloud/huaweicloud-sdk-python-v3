@@ -2674,6 +2674,8 @@ class EcsAsyncClient(Client):
             query_params.append(('ip_eq', local_var_params['ip_eq']))
         if 'server_id' in local_var_params:
             query_params.append(('server_id', local_var_params['server_id']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
 

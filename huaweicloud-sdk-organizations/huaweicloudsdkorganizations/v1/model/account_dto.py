@@ -22,7 +22,11 @@ class AccountDto:
         'join_method': 'str',
         'status': 'str',
         'joined_at': 'datetime',
-        'name': 'str'
+        'name': 'str',
+        'mobile_phone': 'str',
+        'intl_number_prefix': 'str',
+        'email': 'str',
+        'description': 'str'
     }
 
     attribute_map = {
@@ -31,10 +35,14 @@ class AccountDto:
         'join_method': 'join_method',
         'status': 'status',
         'joined_at': 'joined_at',
-        'name': 'name'
+        'name': 'name',
+        'mobile_phone': 'mobile_phone',
+        'intl_number_prefix': 'intl_number_prefix',
+        'email': 'email',
+        'description': 'description'
     }
 
-    def __init__(self, id=None, urn=None, join_method=None, status=None, joined_at=None, name=None):
+    def __init__(self, id=None, urn=None, join_method=None, status=None, joined_at=None, name=None, mobile_phone=None, intl_number_prefix=None, email=None, description=None):
         """AccountDto
 
         The model defined in huaweicloud sdk
@@ -43,14 +51,22 @@ class AccountDto:
         :type id: str
         :param urn: 账号的统一资源名称。
         :type urn: str
-        :param join_method: 账号加入组织的方式,invited：邀请加入，created：创建加入。
+        :param join_method: 账号加入组织的方式。invited：邀请加入，created：创建加入。
         :type join_method: str
-        :param status: 账号当前的状态,ACTIVE 有效| SUSPENDED 静默| PENDING_CLOSURE 关闭中
+        :param status: 账号当前的状态。active：有效； suspended：已关闭； pending_closure：关闭中。
         :type status: str
         :param joined_at: 账号加入组织的日期。
         :type joined_at: datetime
         :param name: 账号名称
         :type name: str
+        :param mobile_phone: 手机号码
+        :type mobile_phone: str
+        :param intl_number_prefix: 手机号前缀。
+        :type intl_number_prefix: str
+        :param email: 与此账号关联的电子邮件地址。
+        :type email: str
+        :param description: 描述信息。
+        :type description: str
         """
         
         
@@ -61,6 +77,10 @@ class AccountDto:
         self._status = None
         self._joined_at = None
         self._name = None
+        self._mobile_phone = None
+        self._intl_number_prefix = None
+        self._email = None
+        self._description = None
         self.discriminator = None
 
         self.id = id
@@ -69,6 +89,14 @@ class AccountDto:
         self.status = status
         self.joined_at = joined_at
         self.name = name
+        if mobile_phone is not None:
+            self.mobile_phone = mobile_phone
+        if intl_number_prefix is not None:
+            self.intl_number_prefix = intl_number_prefix
+        if email is not None:
+            self.email = email
+        if description is not None:
+            self.description = description
 
     @property
     def id(self):
@@ -118,7 +146,7 @@ class AccountDto:
     def join_method(self):
         """Gets the join_method of this AccountDto.
 
-        账号加入组织的方式,invited：邀请加入，created：创建加入。
+        账号加入组织的方式。invited：邀请加入，created：创建加入。
 
         :return: The join_method of this AccountDto.
         :rtype: str
@@ -129,7 +157,7 @@ class AccountDto:
     def join_method(self, join_method):
         """Sets the join_method of this AccountDto.
 
-        账号加入组织的方式,invited：邀请加入，created：创建加入。
+        账号加入组织的方式。invited：邀请加入，created：创建加入。
 
         :param join_method: The join_method of this AccountDto.
         :type join_method: str
@@ -140,7 +168,7 @@ class AccountDto:
     def status(self):
         """Gets the status of this AccountDto.
 
-        账号当前的状态,ACTIVE 有效| SUSPENDED 静默| PENDING_CLOSURE 关闭中
+        账号当前的状态。active：有效； suspended：已关闭； pending_closure：关闭中。
 
         :return: The status of this AccountDto.
         :rtype: str
@@ -151,7 +179,7 @@ class AccountDto:
     def status(self, status):
         """Sets the status of this AccountDto.
 
-        账号当前的状态,ACTIVE 有效| SUSPENDED 静默| PENDING_CLOSURE 关闭中
+        账号当前的状态。active：有效； suspended：已关闭； pending_closure：关闭中。
 
         :param status: The status of this AccountDto.
         :type status: str
@@ -201,6 +229,94 @@ class AccountDto:
         :type name: str
         """
         self._name = name
+
+    @property
+    def mobile_phone(self):
+        """Gets the mobile_phone of this AccountDto.
+
+        手机号码
+
+        :return: The mobile_phone of this AccountDto.
+        :rtype: str
+        """
+        return self._mobile_phone
+
+    @mobile_phone.setter
+    def mobile_phone(self, mobile_phone):
+        """Sets the mobile_phone of this AccountDto.
+
+        手机号码
+
+        :param mobile_phone: The mobile_phone of this AccountDto.
+        :type mobile_phone: str
+        """
+        self._mobile_phone = mobile_phone
+
+    @property
+    def intl_number_prefix(self):
+        """Gets the intl_number_prefix of this AccountDto.
+
+        手机号前缀。
+
+        :return: The intl_number_prefix of this AccountDto.
+        :rtype: str
+        """
+        return self._intl_number_prefix
+
+    @intl_number_prefix.setter
+    def intl_number_prefix(self, intl_number_prefix):
+        """Sets the intl_number_prefix of this AccountDto.
+
+        手机号前缀。
+
+        :param intl_number_prefix: The intl_number_prefix of this AccountDto.
+        :type intl_number_prefix: str
+        """
+        self._intl_number_prefix = intl_number_prefix
+
+    @property
+    def email(self):
+        """Gets the email of this AccountDto.
+
+        与此账号关联的电子邮件地址。
+
+        :return: The email of this AccountDto.
+        :rtype: str
+        """
+        return self._email
+
+    @email.setter
+    def email(self, email):
+        """Sets the email of this AccountDto.
+
+        与此账号关联的电子邮件地址。
+
+        :param email: The email of this AccountDto.
+        :type email: str
+        """
+        self._email = email
+
+    @property
+    def description(self):
+        """Gets the description of this AccountDto.
+
+        描述信息。
+
+        :return: The description of this AccountDto.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this AccountDto.
+
+        描述信息。
+
+        :param description: The description of this AccountDto.
+        :type description: str
+        """
+        self._description = description
 
     def to_dict(self):
         """Returns the model properties as a dict"""

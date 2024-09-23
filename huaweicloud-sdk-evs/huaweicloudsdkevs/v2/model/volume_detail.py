@@ -52,7 +52,8 @@ class VolumeDetail:
         'enterprise_project_id': 'str',
         'serial_number': 'str',
         'iops': 'Iops',
-        'throughput': 'Throughput'
+        'throughput': 'Throughput',
+        'snapshot_policy_id': 'str'
     }
 
     attribute_map = {
@@ -91,10 +92,11 @@ class VolumeDetail:
         'enterprise_project_id': 'enterprise_project_id',
         'serial_number': 'serial_number',
         'iops': 'iops',
-        'throughput': 'throughput'
+        'throughput': 'throughput',
+        'snapshot_policy_id': 'snapshot_policy_id'
     }
 
-    def __init__(self, id=None, links=None, name=None, status=None, attachments=None, availability_zone=None, os_vol_host_attrhost=None, source_volid=None, snapshot_id=None, description=None, created_at=None, os_vol_tenant_attrtenant_id=None, volume_image_metadata=None, volume_type=None, size=None, consistencygroup_id=None, bootable=None, metadata=None, updated_at=None, encrypted=None, replication_status=None, os_volume_replicationextended_status=None, os_vol_mig_status_attrmigstat=None, os_vol_mig_status_attrname_id=None, shareable=None, user_id=None, service_type=None, multiattach=None, dedicated_storage_id=None, dedicated_storage_name=None, tags=None, wwn=None, enterprise_project_id=None, serial_number=None, iops=None, throughput=None):
+    def __init__(self, id=None, links=None, name=None, status=None, attachments=None, availability_zone=None, os_vol_host_attrhost=None, source_volid=None, snapshot_id=None, description=None, created_at=None, os_vol_tenant_attrtenant_id=None, volume_image_metadata=None, volume_type=None, size=None, consistencygroup_id=None, bootable=None, metadata=None, updated_at=None, encrypted=None, replication_status=None, os_volume_replicationextended_status=None, os_vol_mig_status_attrmigstat=None, os_vol_mig_status_attrname_id=None, shareable=None, user_id=None, service_type=None, multiattach=None, dedicated_storage_id=None, dedicated_storage_name=None, tags=None, wwn=None, enterprise_project_id=None, serial_number=None, iops=None, throughput=None, snapshot_policy_id=None):
         """VolumeDetail
 
         The model defined in huaweicloud sdk
@@ -171,6 +173,8 @@ class VolumeDetail:
         :type iops: :class:`huaweicloudsdkevs.v2.Iops`
         :param throughput: 
         :type throughput: :class:`huaweicloudsdkevs.v2.Throughput`
+        :param snapshot_policy_id: 云硬盘关联的自动快照策略ID
+        :type snapshot_policy_id: str
         """
         
         
@@ -211,6 +215,7 @@ class VolumeDetail:
         self._serial_number = None
         self._iops = None
         self._throughput = None
+        self._snapshot_policy_id = None
         self.discriminator = None
 
         self.id = id
@@ -259,6 +264,8 @@ class VolumeDetail:
             self.iops = iops
         if throughput is not None:
             self.throughput = throughput
+        if snapshot_policy_id is not None:
+            self.snapshot_policy_id = snapshot_policy_id
 
     @property
     def id(self):
@@ -1043,6 +1050,28 @@ class VolumeDetail:
         :type throughput: :class:`huaweicloudsdkevs.v2.Throughput`
         """
         self._throughput = throughput
+
+    @property
+    def snapshot_policy_id(self):
+        """Gets the snapshot_policy_id of this VolumeDetail.
+
+        云硬盘关联的自动快照策略ID
+
+        :return: The snapshot_policy_id of this VolumeDetail.
+        :rtype: str
+        """
+        return self._snapshot_policy_id
+
+    @snapshot_policy_id.setter
+    def snapshot_policy_id(self, snapshot_policy_id):
+        """Sets the snapshot_policy_id of this VolumeDetail.
+
+        云硬盘关联的自动快照策略ID
+
+        :param snapshot_policy_id: The snapshot_policy_id of this VolumeDetail.
+        :type snapshot_policy_id: str
+        """
+        self._snapshot_policy_id = snapshot_policy_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -37,7 +37,7 @@ class ProductMediaInfo:
         :type asset_id: str
         :param asset_type: 资产类型 * IMAGE：图片 * VIDEO：视频 * AUDIO：音频
         :type asset_type: str
-        :param order: 资产次序。不设置或者0表示按照加入时间先后排序。业务上将次序最靠前的图片设置为商品封面。
+        :param order: **参数解释**： 资产次序。不设置或者0表示按照加入时间先后排序。业务上将次序最靠前的图片设置为商品封面。
         :type order: int
         """
         
@@ -103,7 +103,7 @@ class ProductMediaInfo:
     def order(self):
         """Gets the order of this ProductMediaInfo.
 
-        资产次序。不设置或者0表示按照加入时间先后排序。业务上将次序最靠前的图片设置为商品封面。
+        **参数解释**： 资产次序。不设置或者0表示按照加入时间先后排序。业务上将次序最靠前的图片设置为商品封面。
 
         :return: The order of this ProductMediaInfo.
         :rtype: int
@@ -114,7 +114,7 @@ class ProductMediaInfo:
     def order(self, order):
         """Sets the order of this ProductMediaInfo.
 
-        资产次序。不设置或者0表示按照加入时间先后排序。业务上将次序最靠前的图片设置为商品封面。
+        **参数解释**： 资产次序。不设置或者0表示按照加入时间先后排序。业务上将次序最靠前的图片设置为商品封面。
 
         :param order: The order of this ProductMediaInfo.
         :type order: int

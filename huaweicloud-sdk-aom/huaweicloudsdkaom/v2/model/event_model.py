@@ -23,11 +23,7 @@ class EventModel:
         'metadata': 'dict(str, str)',
         'annotations': 'dict(str, object)',
         'attach_rule': 'dict(str, object)',
-        'id': 'str',
-        'event_sn': 'str',
-        'arrives_at': 'int',
-        'enterprise_project_id': 'str',
-        'policy': 'dict(str, object)'
+        'id': 'str'
     }
 
     attribute_map = {
@@ -37,14 +33,10 @@ class EventModel:
         'metadata': 'metadata',
         'annotations': 'annotations',
         'attach_rule': 'attach_rule',
-        'id': 'id',
-        'event_sn': 'event_sn',
-        'arrives_at': 'arrives_at',
-        'enterprise_project_id': 'enterprise_project_id',
-        'policy': 'policy'
+        'id': 'id'
     }
 
-    def __init__(self, starts_at=None, ends_at=None, timeout=None, metadata=None, annotations=None, attach_rule=None, id=None, event_sn=None, arrives_at=None, enterprise_project_id=None, policy=None):
+    def __init__(self, starts_at=None, ends_at=None, timeout=None, metadata=None, annotations=None, attach_rule=None, id=None):
         """EventModel
 
         The model defined in huaweicloud sdk
@@ -63,14 +55,6 @@ class EventModel:
         :type attach_rule: dict(str, object)
         :param id: 事件或者告警id，系统会自动生成，上报无须填写该字段。
         :type id: str
-        :param event_sn: 告警流水号。
-        :type event_sn: str
-        :param arrives_at: 事件到达系统时间，CST毫秒级时间戳。
-        :type arrives_at: int
-        :param enterprise_project_id: 事件或告警所属企业项目id。
-        :type enterprise_project_id: str
-        :param policy: 开放告警策略
-        :type policy: dict(str, object)
         """
         
         
@@ -82,10 +66,6 @@ class EventModel:
         self._annotations = None
         self._attach_rule = None
         self._id = None
-        self._event_sn = None
-        self._arrives_at = None
-        self._enterprise_project_id = None
-        self._policy = None
         self.discriminator = None
 
         if starts_at is not None:
@@ -102,14 +82,6 @@ class EventModel:
             self.attach_rule = attach_rule
         if id is not None:
             self.id = id
-        if event_sn is not None:
-            self.event_sn = event_sn
-        if arrives_at is not None:
-            self.arrives_at = arrives_at
-        if enterprise_project_id is not None:
-            self.enterprise_project_id = enterprise_project_id
-        if policy is not None:
-            self.policy = policy
 
     @property
     def starts_at(self):
@@ -264,94 +236,6 @@ class EventModel:
         :type id: str
         """
         self._id = id
-
-    @property
-    def event_sn(self):
-        """Gets the event_sn of this EventModel.
-
-        告警流水号。
-
-        :return: The event_sn of this EventModel.
-        :rtype: str
-        """
-        return self._event_sn
-
-    @event_sn.setter
-    def event_sn(self, event_sn):
-        """Sets the event_sn of this EventModel.
-
-        告警流水号。
-
-        :param event_sn: The event_sn of this EventModel.
-        :type event_sn: str
-        """
-        self._event_sn = event_sn
-
-    @property
-    def arrives_at(self):
-        """Gets the arrives_at of this EventModel.
-
-        事件到达系统时间，CST毫秒级时间戳。
-
-        :return: The arrives_at of this EventModel.
-        :rtype: int
-        """
-        return self._arrives_at
-
-    @arrives_at.setter
-    def arrives_at(self, arrives_at):
-        """Sets the arrives_at of this EventModel.
-
-        事件到达系统时间，CST毫秒级时间戳。
-
-        :param arrives_at: The arrives_at of this EventModel.
-        :type arrives_at: int
-        """
-        self._arrives_at = arrives_at
-
-    @property
-    def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this EventModel.
-
-        事件或告警所属企业项目id。
-
-        :return: The enterprise_project_id of this EventModel.
-        :rtype: str
-        """
-        return self._enterprise_project_id
-
-    @enterprise_project_id.setter
-    def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this EventModel.
-
-        事件或告警所属企业项目id。
-
-        :param enterprise_project_id: The enterprise_project_id of this EventModel.
-        :type enterprise_project_id: str
-        """
-        self._enterprise_project_id = enterprise_project_id
-
-    @property
-    def policy(self):
-        """Gets the policy of this EventModel.
-
-        开放告警策略
-
-        :return: The policy of this EventModel.
-        :rtype: dict(str, object)
-        """
-        return self._policy
-
-    @policy.setter
-    def policy(self, policy):
-        """Sets the policy of this EventModel.
-
-        开放告警策略
-
-        :param policy: The policy of this EventModel.
-        :type policy: dict(str, object)
-        """
-        self._policy = policy
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -17,7 +17,7 @@ class PageInfo:
     sensitive_list = []
 
     openapi_types = {
-        'current_count': 'str',
+        'current_count': 'int',
         'previous_marker': 'str',
         'next_marker': 'str'
     }
@@ -34,7 +34,7 @@ class PageInfo:
         The model defined in huaweicloud sdk
 
         :param current_count: 当前页事件、告警总数
-        :type current_count: str
+        :type current_count: int
         :param previous_marker: 前一个marker
         :type previous_marker: str
         :param next_marker: 下一个marker
@@ -59,7 +59,7 @@ class PageInfo:
         当前页事件、告警总数
 
         :return: The current_count of this PageInfo.
-        :rtype: str
+        :rtype: int
         """
         return self._current_count
 
@@ -70,7 +70,7 @@ class PageInfo:
         当前页事件、告警总数
 
         :param current_count: The current_count of this PageInfo.
-        :type current_count: str
+        :type current_count: int
         """
         self._current_count = current_count
 

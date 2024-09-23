@@ -28,7 +28,8 @@ class ListServersDetailsRequest:
         'status': 'str',
         'tags': 'str',
         'ip_eq': 'str',
-        'server_id': 'str'
+        'server_id': 'str',
+        'marker': 'str'
     }
 
     attribute_map = {
@@ -43,10 +44,11 @@ class ListServersDetailsRequest:
         'status': 'status',
         'tags': 'tags',
         'ip_eq': 'ip_eq',
-        'server_id': 'server_id'
+        'server_id': 'server_id',
+        'marker': 'marker'
     }
 
-    def __init__(self, enterprise_project_id=None, flavor=None, ip=None, limit=None, name=None, not_tags=None, offset=None, reservation_id=None, status=None, tags=None, ip_eq=None, server_id=None):
+    def __init__(self, enterprise_project_id=None, flavor=None, ip=None, limit=None, name=None, not_tags=None, offset=None, reservation_id=None, status=None, tags=None, ip_eq=None, server_id=None, marker=None):
         """ListServersDetailsRequest
 
         The model defined in huaweicloud sdk
@@ -75,6 +77,8 @@ class ListServersDetailsRequest:
         :type ip_eq: str
         :param server_id: 云服务器ID，格式为UUID，匹配规则为精确匹配  示例: server_id&#x3D;{id1},{id2}  说明： 在使用server_id作为过滤条件时，不能同时使用其他过滤条件。如果同时指定server_id及其他过滤条件，则以server_id条件为准，其他过滤条件会被忽略 当server_id中含有不存在的云服务器ID时，返回的响应参数中该云服务器ID对应的servers结构体中除了id和fault其它字段均为null 为了避免API的URI过长，建议一次查询的server_id个数不超过100个
         :type server_id: str
+        :param marker: 以单页最后一条server的id作为分页标记。
+        :type marker: str
         """
         
         
@@ -91,6 +95,7 @@ class ListServersDetailsRequest:
         self._tags = None
         self._ip_eq = None
         self._server_id = None
+        self._marker = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
@@ -117,6 +122,8 @@ class ListServersDetailsRequest:
             self.ip_eq = ip_eq
         if server_id is not None:
             self.server_id = server_id
+        if marker is not None:
+            self.marker = marker
 
     @property
     def enterprise_project_id(self):
@@ -381,6 +388,28 @@ class ListServersDetailsRequest:
         :type server_id: str
         """
         self._server_id = server_id
+
+    @property
+    def marker(self):
+        """Gets the marker of this ListServersDetailsRequest.
+
+        以单页最后一条server的id作为分页标记。
+
+        :return: The marker of this ListServersDetailsRequest.
+        :rtype: str
+        """
+        return self._marker
+
+    @marker.setter
+    def marker(self, marker):
+        """Sets the marker of this ListServersDetailsRequest.
+
+        以单页最后一条server的id作为分页标记。
+
+        :param marker: The marker of this ListServersDetailsRequest.
+        :type marker: str
+        """
+        self._marker = marker
 
     def to_dict(self):
         """Returns the model properties as a dict"""

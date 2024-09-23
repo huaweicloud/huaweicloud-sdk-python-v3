@@ -45,7 +45,6 @@ from huaweicloudsdksms.v3.model.delete_template_response import DeleteTemplateRe
 from huaweicloudsdksms.v3.model.delete_templates_request import DeleteTemplatesRequest
 from huaweicloudsdksms.v3.model.delete_templates_response import DeleteTemplatesResponse
 from huaweicloudsdksms.v3.model.deletetemplates_req import DeletetemplatesReq
-from huaweicloudsdksms.v3.model.disk import Disk
 from huaweicloudsdksms.v3.model.disk_intarget_server import DiskIntargetServer
 from huaweicloudsdksms.v3.model.environment_check import EnvironmentCheck
 from huaweicloudsdksms.v3.model.init_target_server import InitTargetServer

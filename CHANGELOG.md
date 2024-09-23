@@ -1,3 +1,347 @@
+# 3.1.115 2024-09-23
+
+### HuaweiCloud SDK AOM
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListEvents**
+    - changes of response param
+      - `* page_info.current_count: string -> int32`
+  - **PushEvents**
+    - changes of request param
+      - `- events.event_sn`
+      - `- events.arrives_at`
+      - `- events.enterprise_project_id`
+      - `- events.policy`
+
+### HuaweiCloud SDK CDN
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateDomainMultiCertificates**
+    - changes of request param
+      - `+ https.scm_certificate_id`
+  - **ShowDomainFullConfig**
+    - changes of response param
+      - `+ configs.user_agent_filter.include_empty`
+      - `+ configs.https.scm_certificate_id`
+      - `+ configs.https.certificates.certificate_source`
+      - `+ configs.https.certificates.scm_certificate_id`
+  - **UpdateDomainFullConfig**
+    - changes of request param
+      - `+ configs.user_agent_filter.include_empty`
+      - `+ configs.https.scm_certificate_id`
+      - `+ configs.https.certificates.certificate_source`
+      - `+ configs.https.certificates.scm_certificate_id`
+
+### HuaweiCloud SDK DDS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the API `ListDatabases`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK ECS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListServersDetails**
+    - changes of request param
+      - `+ marker`
+
+### HuaweiCloud SDK EVS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowVolume**
+    - changes of response param
+      - `+ volume.snapshot_policy_id`
+  - **ListVolumes**
+    - changes of request param
+      - `+ snapshot_policy_id`
+    - changes of response param
+      - `+ volumes.snapshot_policy_id`
+
+### HuaweiCloud SDK IAM
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListAgencies**
+    - changes of response param
+      - `+ agencies.agency_urn`
+  - **CreateAgency**
+    - changes of request param
+      - `- agency.duration: enum value [FOREVER,ONEDAY]`
+    - changes of response param
+      - `+ agency.agency_urn`
+  - **ShowAgency**
+    - changes of response param
+      - `+ agency.agency_urn`
+  - **UpdateAgency**
+    - changes of request param
+      - `- agency.duration: enum value [FOREVER,ONEDAY]`
+    - changes of response param
+      - `+ agency.agency_urn`
+
+### HuaweiCloud SDK Meeting
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowRecordInfo**
+    - changes of response param
+      - `+ data`
+      - `- subject`
+      - `- segmentLimit`
+      - `- beginTime`
+      - `- segmentOffset`
+      - `- segmentCount`
+      - `- segmentList`
+      - `* code: int32 -> string`
+
+### HuaweiCloud SDK Organizations
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `UpdateAccount`
+- _Bug Fix_
+  - None
+- _Change_
+  - **LeaveOrganization**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **CloseAccount**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **RemoveAccount**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **MoveAccount**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **EnableTrustedService**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **DisableTrustedService**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **RegisterDelegatedAdministrator**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **DeregisterDelegatedAdministrator**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **AttachPolicy**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **DetachPolicy**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **ShowEffectivePolicies**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **UntagResource**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **ListServices**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **DeleteOrganization**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **ShowOrganization**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **CreateOrganization**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **ListOrganizationalUnits**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **CreateOrganizationalUnit**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **DeleteOrganizationalUnit**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **ShowOrganizationalUnit**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **UpdateOrganizationalUnit**
+    - changes of request param
+      - `+ X-Security-Token`
+      - `- X-Auth-Token`
+  - **ListAccounts**
+    - changes of request param
+      - `+ X-Security-Token`
+      - `+ with_register_contact_info`
+    - changes of response param
+      - `+ accounts.mobile_phone`
+      - `+ accounts.intl_number_prefix`
+      - `+ accounts.email`
+      - `+ accounts.description`
+  - **CreateAccount**
+    - changes of request param
+      - `+ X-Security-Token`
+      - `+ description`
+  - **ShowAccount**
+    - changes of request param
+      - `+ X-Security-Token`
+      - `+ with_register_contact_info`
+    - changes of response param
+      - `+ account.mobile_phone`
+      - `+ account.intl_number_prefix`
+      - `+ account.email`
+      - `+ account.description`
+  - **ListCreateAccountStatuses**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **ShowCreateAccountStatus**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **ListCloseAccountStatuses**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **ListTrustedServices**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **ListDelegatedServices**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **ListDelegatedAdministrators**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **ListEntitiesForPolicy**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **ListTagsForResource**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **TagResource**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **ListEntities**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **ListTagPolicyServices**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **ListTagResources**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **CreateTagResource**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **DeleteTagResource**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **ShowResourceInstancesCount**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **ListResourceTags**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **ListRoots**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **InviteAccount**
+    - changes of request param
+      - `+ X-Security-Token`
+    - changes of response param
+      - `+ handshake.expired_at`
+  - **ShowHandshake**
+    - changes of request param
+      - `+ X-Security-Token`
+    - changes of response param
+      - `+ handshake.expired_at`
+  - **AcceptHandshake**
+    - changes of request param
+      - `+ X-Security-Token`
+    - changes of response param
+      - `+ handshake.expired_at`
+  - **DeclineHandshake**
+    - changes of request param
+      - `+ X-Security-Token`
+    - changes of response param
+      - `+ handshake.expired_at`
+  - **CancelHandshake**
+    - changes of request param
+      - `+ X-Security-Token`
+    - changes of response param
+      - `+ handshake.expired_at`
+  - **ListReceivedHandshakes**
+    - changes of request param
+      - `+ X-Security-Token`
+    - changes of response param
+      - `+ handshakes.expired_at`
+  - **ListHandshakes**
+    - changes of request param
+      - `+ X-Security-Token`
+    - changes of response param
+      - `+ handshakes.expired_at`
+  - **ListPolicies**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **CreatePolicy**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **DeletePolicy**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **ShowPolicy**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **UpdatePolicy**
+    - changes of request param
+      - `+ X-Security-Token`
+      - `- X-Auth-Token`
+  - **EnablePolicyType**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **DisablePolicyType**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **ListResourceInstances**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **ListQuotas**
+    - changes of request param
+      - `+ X-Security-Token`
+
 # 3.1.114 2024-09-12
 
 ### HuaweiCloud SDK AOM

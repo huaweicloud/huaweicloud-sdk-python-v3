@@ -33,9 +33,9 @@ class TagPolicyServiceDto:
 
         The model defined in huaweicloud sdk
 
-        :param service_name: The service name of the service.
+        :param service_name: 服务名称。
         :type service_name: str
-        :param resource_types: 
+        :param resource_types: 资源类型。
         :type resource_types: list[str]
         :param support_all: resource_type是否支持全量选择，即*
         :type support_all: bool
@@ -56,7 +56,7 @@ class TagPolicyServiceDto:
     def service_name(self):
         """Gets the service_name of this TagPolicyServiceDto.
 
-        The service name of the service.
+        服务名称。
 
         :return: The service_name of this TagPolicyServiceDto.
         :rtype: str
@@ -67,7 +67,7 @@ class TagPolicyServiceDto:
     def service_name(self, service_name):
         """Sets the service_name of this TagPolicyServiceDto.
 
-        The service name of the service.
+        服务名称。
 
         :param service_name: The service_name of this TagPolicyServiceDto.
         :type service_name: str
@@ -78,6 +78,8 @@ class TagPolicyServiceDto:
     def resource_types(self):
         """Gets the resource_types of this TagPolicyServiceDto.
 
+        资源类型。
+
         :return: The resource_types of this TagPolicyServiceDto.
         :rtype: list[str]
         """
@@ -86,6 +88,8 @@ class TagPolicyServiceDto:
     @resource_types.setter
     def resource_types(self, resource_types):
         """Sets the resource_types of this TagPolicyServiceDto.
+
+        资源类型。
 
         :param resource_types: The resource_types of this TagPolicyServiceDto.
         :type resource_types: list[str]

@@ -19,16 +19,18 @@ class UserAgentFilter:
     openapi_types = {
         'type': 'str',
         'value': 'str',
+        'include_empty': 'bool',
         'ua_list': 'list[str]'
     }
 
     attribute_map = {
         'type': 'type',
         'value': 'value',
+        'include_empty': 'include_empty',
         'ua_list': 'ua_list'
     }
 
-    def __init__(self, type=None, value=None, ua_list=None):
+    def __init__(self, type=None, value=None, include_empty=None, ua_list=None):
         """UserAgentFilter
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class UserAgentFilter:
         :type type: str
         :param value: 配置UA黑白名单，当type&#x3D;off时，非必传。最多配置10条规则，单条规则不超过100个字符，多条规则用“,”分割。
         :type value: str
+        :param include_empty: 是否包含空User-Agent，true:包含，false：不包含。空User-Agent是指没有User-Agent字段或者该字段的值为空。如果黑名单且该字段值为true，则表示空User-Agent不允许访问，如果是白名单且该字段值为true，则表示空User-Agent允许访问。设置User-Agent黑名单时，默认值为false，设置User-Agent白名单时，默认值为true。
+        :type include_empty: bool
         :param ua_list: 配置UA黑白名单，当type&#x3D;off时，非必传。最多配置10条规则，单条规则不超过100个字符,同时配置value和ua_list时，ua_list生效。 
         :type ua_list: list[str]
         """
@@ -45,12 +49,15 @@ class UserAgentFilter:
 
         self._type = None
         self._value = None
+        self._include_empty = None
         self._ua_list = None
         self.discriminator = None
 
         self.type = type
         if value is not None:
             self.value = value
+        if include_empty is not None:
+            self.include_empty = include_empty
         if ua_list is not None:
             self.ua_list = ua_list
 
@@ -97,6 +104,28 @@ class UserAgentFilter:
         :type value: str
         """
         self._value = value
+
+    @property
+    def include_empty(self):
+        """Gets the include_empty of this UserAgentFilter.
+
+        是否包含空User-Agent，true:包含，false：不包含。空User-Agent是指没有User-Agent字段或者该字段的值为空。如果黑名单且该字段值为true，则表示空User-Agent不允许访问，如果是白名单且该字段值为true，则表示空User-Agent允许访问。设置User-Agent黑名单时，默认值为false，设置User-Agent白名单时，默认值为true。
+
+        :return: The include_empty of this UserAgentFilter.
+        :rtype: bool
+        """
+        return self._include_empty
+
+    @include_empty.setter
+    def include_empty(self, include_empty):
+        """Sets the include_empty of this UserAgentFilter.
+
+        是否包含空User-Agent，true:包含，false：不包含。空User-Agent是指没有User-Agent字段或者该字段的值为空。如果黑名单且该字段值为true，则表示空User-Agent不允许访问，如果是白名单且该字段值为true，则表示空User-Agent允许访问。设置User-Agent黑名单时，默认值为false，设置User-Agent白名单时，默认值为true。
+
+        :param include_empty: The include_empty of this UserAgentFilter.
+        :type include_empty: bool
+        """
+        self._include_empty = include_empty
 
     @property
     def ua_list(self):

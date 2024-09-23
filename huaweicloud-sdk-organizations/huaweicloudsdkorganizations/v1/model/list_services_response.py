@@ -30,7 +30,7 @@ class ListServicesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param services: 
+        :param services: 云服务名称。
         :type services: list[str]
         """
         
@@ -46,6 +46,8 @@ class ListServicesResponse(SdkResponse):
     def services(self):
         """Gets the services of this ListServicesResponse.
 
+        云服务名称。
+
         :return: The services of this ListServicesResponse.
         :rtype: list[str]
         """
@@ -54,6 +56,8 @@ class ListServicesResponse(SdkResponse):
     @services.setter
     def services(self, services):
         """Sets the services of this ListServicesResponse.
+
+        云服务名称。
 
         :param services: The services of this ListServicesResponse.
         :type services: list[str]

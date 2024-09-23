@@ -85,6 +85,7 @@ from huaweicloudsdkaom.v2.model.list_alarm_rule_request import ListAlarmRuleRequ
 from huaweicloudsdkaom.v2.model.list_alarm_rule_response import ListAlarmRuleResponse
 from huaweicloudsdkaom.v2.model.list_event2alarm_rule_request import ListEvent2alarmRuleRequest
 from huaweicloudsdkaom.v2.model.list_event2alarm_rule_response import ListEvent2alarmRuleResponse
+from huaweicloudsdkaom.v2.model.list_event_model import ListEventModel
 from huaweicloudsdkaom.v2.model.list_events_request import ListEventsRequest
 from huaweicloudsdkaom.v2.model.list_events_response import ListEventsResponse
 from huaweicloudsdkaom.v2.model.list_instant_query_aom_prom_get_request import ListInstantQueryAomPromGetRequest

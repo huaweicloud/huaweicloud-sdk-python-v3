@@ -26,7 +26,6 @@ class TargetServer:
         'firmware': 'str',
         'cpu_quantity': 'int',
         'memory': 'int',
-        'disks': 'list[TargetDisk]',
         'btrfs_list': 'list[str]',
         'networks': 'list[NetWork]',
         'domain_id': 'str',
@@ -41,6 +40,7 @@ class TargetServer:
         'volume_groups': 'list[VolumeGroups]',
         'vm_id': 'str',
         'flavor': 'str',
+        'disks': 'list[TargetDisk]',
         'image_disk_id': 'str',
         'snapshot_ids': 'str',
         'cutovered_snapshot_ids': 'str'
@@ -56,7 +56,6 @@ class TargetServer:
         'firmware': 'firmware',
         'cpu_quantity': 'cpu_quantity',
         'memory': 'memory',
-        'disks': 'disks',
         'btrfs_list': 'btrfs_list',
         'networks': 'networks',
         'domain_id': 'domain_id',
@@ -71,12 +70,13 @@ class TargetServer:
         'volume_groups': 'volume_groups',
         'vm_id': 'vm_id',
         'flavor': 'flavor',
+        'disks': 'disks',
         'image_disk_id': 'image_disk_id',
         'snapshot_ids': 'snapshot_ids',
         'cutovered_snapshot_ids': 'cutovered_snapshot_ids'
     }
 
-    def __init__(self, id=None, ip=None, name=None, hostname=None, os_type=None, os_version=None, firmware=None, cpu_quantity=None, memory=None, disks=None, btrfs_list=None, networks=None, domain_id=None, has_rsync=None, paravirtualization=None, raw_devices=None, driver_files=None, system_services=None, account_rights=None, boot_loader=None, system_dir=None, volume_groups=None, vm_id=None, flavor=None, image_disk_id=None, snapshot_ids=None, cutovered_snapshot_ids=None):
+    def __init__(self, id=None, ip=None, name=None, hostname=None, os_type=None, os_version=None, firmware=None, cpu_quantity=None, memory=None, btrfs_list=None, networks=None, domain_id=None, has_rsync=None, paravirtualization=None, raw_devices=None, driver_files=None, system_services=None, account_rights=None, boot_loader=None, system_dir=None, volume_groups=None, vm_id=None, flavor=None, disks=None, image_disk_id=None, snapshot_ids=None, cutovered_snapshot_ids=None):
         """TargetServer
 
         The model defined in huaweicloud sdk
@@ -85,7 +85,7 @@ class TargetServer:
         :type id: str
         :param ip: 源端服务器IP，注册源端时必选，更新非必选
         :type ip: str
-        :param name: 目的端服务器名称
+        :param name: 用来区分不同源端服务器的名称
         :type name: str
         :param hostname: 源端主机名，注册源端必选，更新非必选
         :type hostname: str
@@ -99,8 +99,6 @@ class TargetServer:
         :type cpu_quantity: int
         :param memory: 内存大小，单位MB
         :type memory: int
-        :param disks: 目的端磁盘信息，一般和源端保持一致
-        :type disks: list[:class:`huaweicloudsdksms.v3.TargetDisk`]
         :param btrfs_list: Linux 必选，源端的Btrfs信息。如果源端不存在Btrfs，则为[]
         :type btrfs_list: list[str]
         :param networks: 源端服务器的网卡信息
@@ -123,12 +121,14 @@ class TargetServer:
         :type boot_loader: str
         :param system_dir: Windows必选，系统目录
         :type system_dir: str
-        :param volume_groups: lvm信息，一般和源端保持一致
+        :param volume_groups: Linux必选，如果没有卷组，输入[]
         :type volume_groups: list[:class:`huaweicloudsdksms.v3.VolumeGroups`]
         :param vm_id: 目的端服务器ID，自动创建虚拟机不需要这个参数
         :type vm_id: str
         :param flavor: 目的端服务器的规格
         :type flavor: str
+        :param disks: 目的端磁盘信息，一般和源端保持一致
+        :type disks: list[:class:`huaweicloudsdksms.v3.TargetDisk`]
         :param image_disk_id: 目的端代理镜像磁盘ID
         :type image_disk_id: str
         :param snapshot_ids: 目的端快照ID
@@ -148,7 +148,6 @@ class TargetServer:
         self._firmware = None
         self._cpu_quantity = None
         self._memory = None
-        self._disks = None
         self._btrfs_list = None
         self._networks = None
         self._domain_id = None
@@ -163,6 +162,7 @@ class TargetServer:
         self._volume_groups = None
         self._vm_id = None
         self._flavor = None
+        self._disks = None
         self._image_disk_id = None
         self._snapshot_ids = None
         self._cutovered_snapshot_ids = None
@@ -183,7 +183,6 @@ class TargetServer:
             self.cpu_quantity = cpu_quantity
         if memory is not None:
             self.memory = memory
-        self.disks = disks
         if btrfs_list is not None:
             self.btrfs_list = btrfs_list
         if networks is not None:
@@ -212,6 +211,7 @@ class TargetServer:
             self.vm_id = vm_id
         if flavor is not None:
             self.flavor = flavor
+        self.disks = disks
         if image_disk_id is not None:
             self.image_disk_id = image_disk_id
         if snapshot_ids is not None:
@@ -267,7 +267,7 @@ class TargetServer:
     def name(self):
         """Gets the name of this TargetServer.
 
-        目的端服务器名称
+        用来区分不同源端服务器的名称
 
         :return: The name of this TargetServer.
         :rtype: str
@@ -278,7 +278,7 @@ class TargetServer:
     def name(self, name):
         """Sets the name of this TargetServer.
 
-        目的端服务器名称
+        用来区分不同源端服务器的名称
 
         :param name: The name of this TargetServer.
         :type name: str
@@ -416,28 +416,6 @@ class TargetServer:
         :type memory: int
         """
         self._memory = memory
-
-    @property
-    def disks(self):
-        """Gets the disks of this TargetServer.
-
-        目的端磁盘信息，一般和源端保持一致
-
-        :return: The disks of this TargetServer.
-        :rtype: list[:class:`huaweicloudsdksms.v3.TargetDisk`]
-        """
-        return self._disks
-
-    @disks.setter
-    def disks(self, disks):
-        """Sets the disks of this TargetServer.
-
-        目的端磁盘信息，一般和源端保持一致
-
-        :param disks: The disks of this TargetServer.
-        :type disks: list[:class:`huaweicloudsdksms.v3.TargetDisk`]
-        """
-        self._disks = disks
 
     @property
     def btrfs_list(self):
@@ -685,7 +663,7 @@ class TargetServer:
     def volume_groups(self):
         """Gets the volume_groups of this TargetServer.
 
-        lvm信息，一般和源端保持一致
+        Linux必选，如果没有卷组，输入[]
 
         :return: The volume_groups of this TargetServer.
         :rtype: list[:class:`huaweicloudsdksms.v3.VolumeGroups`]
@@ -696,7 +674,7 @@ class TargetServer:
     def volume_groups(self, volume_groups):
         """Sets the volume_groups of this TargetServer.
 
-        lvm信息，一般和源端保持一致
+        Linux必选，如果没有卷组，输入[]
 
         :param volume_groups: The volume_groups of this TargetServer.
         :type volume_groups: list[:class:`huaweicloudsdksms.v3.VolumeGroups`]
@@ -746,6 +724,28 @@ class TargetServer:
         :type flavor: str
         """
         self._flavor = flavor
+
+    @property
+    def disks(self):
+        """Gets the disks of this TargetServer.
+
+        目的端磁盘信息，一般和源端保持一致
+
+        :return: The disks of this TargetServer.
+        :rtype: list[:class:`huaweicloudsdksms.v3.TargetDisk`]
+        """
+        return self._disks
+
+    @disks.setter
+    def disks(self, disks):
+        """Sets the disks of this TargetServer.
+
+        目的端磁盘信息，一般和源端保持一致
+
+        :param disks: The disks of this TargetServer.
+        :type disks: list[:class:`huaweicloudsdksms.v3.TargetDisk`]
+        """
+        self._disks = disks
 
     @property
     def image_disk_id(self):

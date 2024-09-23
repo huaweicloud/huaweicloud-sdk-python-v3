@@ -49,7 +49,7 @@ class CreateAgencyOption:
         :type trust_domain_name: str
         :param description: 委托描述信息，长度不大于255位。
         :type description: str
-        :param duration: 委托的期限。取值为“FOREVER\&quot;表示委托的期限为永久，取值为\&quot;ONEDAY\&quot;表示委托的期限为一天。不填写该参数则默认为\&quot;null\&quot;也表示委托的期限为永久。
+        :param duration: description: 委托的期限，单位为“天”。默认为FOREVER。取值为“FOREVER\&quot;表示委托的期限为永久，取值为\&quot;ONEDAY\&quot;表示委托的期限为一天,取值为自定义天数表示委托的期限为有限天数，如20。四个参数至少填写一个。
         :type duration: str
         """
         
@@ -188,7 +188,7 @@ class CreateAgencyOption:
     def duration(self):
         """Gets the duration of this CreateAgencyOption.
 
-        委托的期限。取值为“FOREVER\"表示委托的期限为永久，取值为\"ONEDAY\"表示委托的期限为一天。不填写该参数则默认为\"null\"也表示委托的期限为永久。
+        description: 委托的期限，单位为“天”。默认为FOREVER。取值为“FOREVER\"表示委托的期限为永久，取值为\"ONEDAY\"表示委托的期限为一天,取值为自定义天数表示委托的期限为有限天数，如20。四个参数至少填写一个。
 
         :return: The duration of this CreateAgencyOption.
         :rtype: str
@@ -199,7 +199,7 @@ class CreateAgencyOption:
     def duration(self, duration):
         """Sets the duration of this CreateAgencyOption.
 
-        委托的期限。取值为“FOREVER\"表示委托的期限为永久，取值为\"ONEDAY\"表示委托的期限为一天。不填写该参数则默认为\"null\"也表示委托的期限为永久。
+        description: 委托的期限，单位为“天”。默认为FOREVER。取值为“FOREVER\"表示委托的期限为永久，取值为\"ONEDAY\"表示委托的期限为一天,取值为自定义天数表示委托的期限为有限天数，如20。四个参数至少填写一个。
 
         :param duration: The duration of this CreateAgencyOption.
         :type duration: str

@@ -25,7 +25,8 @@ class VoiceCapability:
         'is_support_prosody': 'bool',
         'is_support_ssml_say_as': 'bool',
         'is_support_ssml_sub': 'bool',
-        'is_support_word': 'bool'
+        'is_support_word': 'bool',
+        'is_support_voice_cache': 'bool'
     }
 
     attribute_map = {
@@ -37,32 +38,35 @@ class VoiceCapability:
         'is_support_prosody': 'is_support_prosody',
         'is_support_ssml_say_as': 'is_support_ssml_say_as',
         'is_support_ssml_sub': 'is_support_ssml_sub',
-        'is_support_word': 'is_support_word'
+        'is_support_word': 'is_support_word',
+        'is_support_voice_cache': 'is_support_voice_cache'
     }
 
-    def __init__(self, is_support_phoneme_en=None, is_support_phoneme=None, is_support_break_time=None, is_support_break_strength=None, is_support_speed=None, is_support_prosody=None, is_support_ssml_say_as=None, is_support_ssml_sub=None, is_support_word=None):
+    def __init__(self, is_support_phoneme_en=None, is_support_phoneme=None, is_support_break_time=None, is_support_break_strength=None, is_support_speed=None, is_support_prosody=None, is_support_ssml_say_as=None, is_support_ssml_sub=None, is_support_word=None, is_support_voice_cache=None):
         """VoiceCapability
 
         The model defined in huaweicloud sdk
 
-        :param is_support_phoneme_en: 支持英文音标。
+        :param is_support_phoneme_en: **参数解释**： 该声音是否支持英文音标。 **约束限制**： 不涉及 **取值范围**： * true: 支持英文音标 * false: 不支持英文音标
         :type is_support_phoneme_en: bool
-        :param is_support_phoneme: 是否支持多音字。
+        :param is_support_phoneme: **参数解释**： 该声音是否支持中文多音字。 **约束限制**： 不涉及 **取值范围**： * true: 支持中文多音字 * false: 不支持中文多音字
         :type is_support_phoneme: bool
-        :param is_support_break_time: 是否支持停顿。
+        :param is_support_break_time: **参数解释**： 该声音是否支持停顿。 **约束限制**： 不涉及 **取值范围**： * true: 支持停顿 * false: 不支持停顿
         :type is_support_break_time: bool
-        :param is_support_break_strength: 是否支持韵律。
+        :param is_support_break_strength: **参数解释**： 该声音是否支持韵律。 **约束限制**： 不涉及 **取值范围**： * true: 支持韵律 * false: 不支持韵律
         :type is_support_break_strength: bool
-        :param is_support_speed: 是否支持全局语速。
+        :param is_support_speed: **参数解释**： 该声音是否支持全局语速。 **约束限制**： 不涉及 **取值范围**： * true: 支持全局语速 * false: 不支持全局语速
         :type is_support_speed: bool
-        :param is_support_prosody: 是否支持局部语速。
+        :param is_support_prosody: **参数解释**： 该声音是否支持局部语速。 **约束限制**： 不涉及 **取值范围**： * true: 支持局部语速 * false: 不支持局部语速
         :type is_support_prosody: bool
-        :param is_support_ssml_say_as: 是否支持SSML的say-as标签。
+        :param is_support_ssml_say_as: **参数解释**： 该声音是否支持SSML的say-as标签。 **约束限制**： 不涉及 **取值范围**： * true: 支持SSML的say-as标签 * false: 不支持SSML的say-as标签
         :type is_support_ssml_say_as: bool
-        :param is_support_ssml_sub: 是否支持SSML的sub标签。
+        :param is_support_ssml_sub: **参数解释**： 该声音是否支持SSML的sub标签。 **约束限制**： 不涉及 **取值范围**： * true: 支持SSML的sub标签 * false: 不支持SSML的sub标签
         :type is_support_ssml_sub: bool
-        :param is_support_word: 是否支持连读。
+        :param is_support_word: **参数解释**： 该声音是否支持连读。 **约束限制**： 不涉及 **取值范围**： * true: 支持连读 * false: 不支持连读
         :type is_support_word: bool
+        :param is_support_voice_cache: 是否支持缓存。
+        :type is_support_voice_cache: bool
         """
         
         
@@ -76,6 +80,7 @@ class VoiceCapability:
         self._is_support_ssml_say_as = None
         self._is_support_ssml_sub = None
         self._is_support_word = None
+        self._is_support_voice_cache = None
         self.discriminator = None
 
         if is_support_phoneme_en is not None:
@@ -96,12 +101,14 @@ class VoiceCapability:
             self.is_support_ssml_sub = is_support_ssml_sub
         if is_support_word is not None:
             self.is_support_word = is_support_word
+        if is_support_voice_cache is not None:
+            self.is_support_voice_cache = is_support_voice_cache
 
     @property
     def is_support_phoneme_en(self):
         """Gets the is_support_phoneme_en of this VoiceCapability.
 
-        支持英文音标。
+        **参数解释**： 该声音是否支持英文音标。 **约束限制**： 不涉及 **取值范围**： * true: 支持英文音标 * false: 不支持英文音标
 
         :return: The is_support_phoneme_en of this VoiceCapability.
         :rtype: bool
@@ -112,7 +119,7 @@ class VoiceCapability:
     def is_support_phoneme_en(self, is_support_phoneme_en):
         """Sets the is_support_phoneme_en of this VoiceCapability.
 
-        支持英文音标。
+        **参数解释**： 该声音是否支持英文音标。 **约束限制**： 不涉及 **取值范围**： * true: 支持英文音标 * false: 不支持英文音标
 
         :param is_support_phoneme_en: The is_support_phoneme_en of this VoiceCapability.
         :type is_support_phoneme_en: bool
@@ -123,7 +130,7 @@ class VoiceCapability:
     def is_support_phoneme(self):
         """Gets the is_support_phoneme of this VoiceCapability.
 
-        是否支持多音字。
+        **参数解释**： 该声音是否支持中文多音字。 **约束限制**： 不涉及 **取值范围**： * true: 支持中文多音字 * false: 不支持中文多音字
 
         :return: The is_support_phoneme of this VoiceCapability.
         :rtype: bool
@@ -134,7 +141,7 @@ class VoiceCapability:
     def is_support_phoneme(self, is_support_phoneme):
         """Sets the is_support_phoneme of this VoiceCapability.
 
-        是否支持多音字。
+        **参数解释**： 该声音是否支持中文多音字。 **约束限制**： 不涉及 **取值范围**： * true: 支持中文多音字 * false: 不支持中文多音字
 
         :param is_support_phoneme: The is_support_phoneme of this VoiceCapability.
         :type is_support_phoneme: bool
@@ -145,7 +152,7 @@ class VoiceCapability:
     def is_support_break_time(self):
         """Gets the is_support_break_time of this VoiceCapability.
 
-        是否支持停顿。
+        **参数解释**： 该声音是否支持停顿。 **约束限制**： 不涉及 **取值范围**： * true: 支持停顿 * false: 不支持停顿
 
         :return: The is_support_break_time of this VoiceCapability.
         :rtype: bool
@@ -156,7 +163,7 @@ class VoiceCapability:
     def is_support_break_time(self, is_support_break_time):
         """Sets the is_support_break_time of this VoiceCapability.
 
-        是否支持停顿。
+        **参数解释**： 该声音是否支持停顿。 **约束限制**： 不涉及 **取值范围**： * true: 支持停顿 * false: 不支持停顿
 
         :param is_support_break_time: The is_support_break_time of this VoiceCapability.
         :type is_support_break_time: bool
@@ -167,7 +174,7 @@ class VoiceCapability:
     def is_support_break_strength(self):
         """Gets the is_support_break_strength of this VoiceCapability.
 
-        是否支持韵律。
+        **参数解释**： 该声音是否支持韵律。 **约束限制**： 不涉及 **取值范围**： * true: 支持韵律 * false: 不支持韵律
 
         :return: The is_support_break_strength of this VoiceCapability.
         :rtype: bool
@@ -178,7 +185,7 @@ class VoiceCapability:
     def is_support_break_strength(self, is_support_break_strength):
         """Sets the is_support_break_strength of this VoiceCapability.
 
-        是否支持韵律。
+        **参数解释**： 该声音是否支持韵律。 **约束限制**： 不涉及 **取值范围**： * true: 支持韵律 * false: 不支持韵律
 
         :param is_support_break_strength: The is_support_break_strength of this VoiceCapability.
         :type is_support_break_strength: bool
@@ -189,7 +196,7 @@ class VoiceCapability:
     def is_support_speed(self):
         """Gets the is_support_speed of this VoiceCapability.
 
-        是否支持全局语速。
+        **参数解释**： 该声音是否支持全局语速。 **约束限制**： 不涉及 **取值范围**： * true: 支持全局语速 * false: 不支持全局语速
 
         :return: The is_support_speed of this VoiceCapability.
         :rtype: bool
@@ -200,7 +207,7 @@ class VoiceCapability:
     def is_support_speed(self, is_support_speed):
         """Sets the is_support_speed of this VoiceCapability.
 
-        是否支持全局语速。
+        **参数解释**： 该声音是否支持全局语速。 **约束限制**： 不涉及 **取值范围**： * true: 支持全局语速 * false: 不支持全局语速
 
         :param is_support_speed: The is_support_speed of this VoiceCapability.
         :type is_support_speed: bool
@@ -211,7 +218,7 @@ class VoiceCapability:
     def is_support_prosody(self):
         """Gets the is_support_prosody of this VoiceCapability.
 
-        是否支持局部语速。
+        **参数解释**： 该声音是否支持局部语速。 **约束限制**： 不涉及 **取值范围**： * true: 支持局部语速 * false: 不支持局部语速
 
         :return: The is_support_prosody of this VoiceCapability.
         :rtype: bool
@@ -222,7 +229,7 @@ class VoiceCapability:
     def is_support_prosody(self, is_support_prosody):
         """Sets the is_support_prosody of this VoiceCapability.
 
-        是否支持局部语速。
+        **参数解释**： 该声音是否支持局部语速。 **约束限制**： 不涉及 **取值范围**： * true: 支持局部语速 * false: 不支持局部语速
 
         :param is_support_prosody: The is_support_prosody of this VoiceCapability.
         :type is_support_prosody: bool
@@ -233,7 +240,7 @@ class VoiceCapability:
     def is_support_ssml_say_as(self):
         """Gets the is_support_ssml_say_as of this VoiceCapability.
 
-        是否支持SSML的say-as标签。
+        **参数解释**： 该声音是否支持SSML的say-as标签。 **约束限制**： 不涉及 **取值范围**： * true: 支持SSML的say-as标签 * false: 不支持SSML的say-as标签
 
         :return: The is_support_ssml_say_as of this VoiceCapability.
         :rtype: bool
@@ -244,7 +251,7 @@ class VoiceCapability:
     def is_support_ssml_say_as(self, is_support_ssml_say_as):
         """Sets the is_support_ssml_say_as of this VoiceCapability.
 
-        是否支持SSML的say-as标签。
+        **参数解释**： 该声音是否支持SSML的say-as标签。 **约束限制**： 不涉及 **取值范围**： * true: 支持SSML的say-as标签 * false: 不支持SSML的say-as标签
 
         :param is_support_ssml_say_as: The is_support_ssml_say_as of this VoiceCapability.
         :type is_support_ssml_say_as: bool
@@ -255,7 +262,7 @@ class VoiceCapability:
     def is_support_ssml_sub(self):
         """Gets the is_support_ssml_sub of this VoiceCapability.
 
-        是否支持SSML的sub标签。
+        **参数解释**： 该声音是否支持SSML的sub标签。 **约束限制**： 不涉及 **取值范围**： * true: 支持SSML的sub标签 * false: 不支持SSML的sub标签
 
         :return: The is_support_ssml_sub of this VoiceCapability.
         :rtype: bool
@@ -266,7 +273,7 @@ class VoiceCapability:
     def is_support_ssml_sub(self, is_support_ssml_sub):
         """Sets the is_support_ssml_sub of this VoiceCapability.
 
-        是否支持SSML的sub标签。
+        **参数解释**： 该声音是否支持SSML的sub标签。 **约束限制**： 不涉及 **取值范围**： * true: 支持SSML的sub标签 * false: 不支持SSML的sub标签
 
         :param is_support_ssml_sub: The is_support_ssml_sub of this VoiceCapability.
         :type is_support_ssml_sub: bool
@@ -277,7 +284,7 @@ class VoiceCapability:
     def is_support_word(self):
         """Gets the is_support_word of this VoiceCapability.
 
-        是否支持连读。
+        **参数解释**： 该声音是否支持连读。 **约束限制**： 不涉及 **取值范围**： * true: 支持连读 * false: 不支持连读
 
         :return: The is_support_word of this VoiceCapability.
         :rtype: bool
@@ -288,12 +295,34 @@ class VoiceCapability:
     def is_support_word(self, is_support_word):
         """Sets the is_support_word of this VoiceCapability.
 
-        是否支持连读。
+        **参数解释**： 该声音是否支持连读。 **约束限制**： 不涉及 **取值范围**： * true: 支持连读 * false: 不支持连读
 
         :param is_support_word: The is_support_word of this VoiceCapability.
         :type is_support_word: bool
         """
         self._is_support_word = is_support_word
+
+    @property
+    def is_support_voice_cache(self):
+        """Gets the is_support_voice_cache of this VoiceCapability.
+
+        是否支持缓存。
+
+        :return: The is_support_voice_cache of this VoiceCapability.
+        :rtype: bool
+        """
+        return self._is_support_voice_cache
+
+    @is_support_voice_cache.setter
+    def is_support_voice_cache(self, is_support_voice_cache):
+        """Sets the is_support_voice_cache of this VoiceCapability.
+
+        是否支持缓存。
+
+        :param is_support_voice_cache: The is_support_voice_cache of this VoiceCapability.
+        :type is_support_voice_cache: bool
+        """
+        self._is_support_voice_cache = is_support_voice_cache
 
     def to_dict(self):
         """Returns the model properties as a dict"""

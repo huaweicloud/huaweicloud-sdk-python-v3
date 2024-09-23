@@ -688,9 +688,8 @@ client = IamClient.new_builder() \
 
 - Multiple ProjectId situation is **not supported**.
 
-- Supported region list: af-south-1, ap-southeast-1, ap-southeast-2, ap-southeast-3, cn-east-2, cn-east-3, cn-north-1,
-  cn-north-4, cn-south-1, cn-southwest-2, ru-northwest-2. You may get exception such as `Unsupported regionId` if your
-  region don't in the list above.
+- You can query the supported regions through [Regions and Endpoints](https://console-intl.huaweicloud.com/apiexplorer/#/endpoint
+). You may get exception such as `Unsupported regionId` if you specify an unsupported region.
 
 **Comparison of the two ways:**
 

@@ -72,6 +72,8 @@ class OrganizationsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -135,6 +137,8 @@ class OrganizationsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -200,6 +204,8 @@ class OrganizationsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -265,12 +271,16 @@ class OrganizationsAsyncClient(Client):
         query_params = []
         if 'parent_id' in local_var_params:
             query_params.append(('parent_id', local_var_params['parent_id']))
+        if 'with_register_contact_info' in local_var_params:
+            query_params.append(('with_register_contact_info', local_var_params['with_register_contact_info']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
         if 'marker' in local_var_params:
             query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -337,6 +347,8 @@ class OrganizationsAsyncClient(Client):
             collection_formats['states'] = 'multi'
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -407,6 +419,8 @@ class OrganizationsAsyncClient(Client):
             query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -472,6 +486,8 @@ class OrganizationsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -539,6 +555,8 @@ class OrganizationsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -602,8 +620,12 @@ class OrganizationsAsyncClient(Client):
             path_params['account_id'] = local_var_params['account_id']
 
         query_params = []
+        if 'with_register_contact_info' in local_var_params:
+            query_params.append(('with_register_contact_info', local_var_params['with_register_contact_info']))
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -669,10 +691,81 @@ class OrganizationsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_account_async(self, request):
+        """更新账号信息
+
+        更新指定的账号信息。此操作只能由组织的管理账号调用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateAccount
+        :type request: :class:`huaweicloudsdkorganizations.v1.UpdateAccountRequest`
+        :rtype: :class:`huaweicloudsdkorganizations.v1.UpdateAccountResponse`
+        """
+        http_info = self._update_account_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_account_async_invoker(self, request):
+        http_info = self._update_account_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_account_http_info(self, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v1/organizations/accounts/{account_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAccountResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'account_id' in local_var_params:
+            path_params['account_id'] = local_var_params['account_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -732,6 +825,8 @@ class OrganizationsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -803,6 +898,8 @@ class OrganizationsAsyncClient(Client):
             query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -872,6 +969,8 @@ class OrganizationsAsyncClient(Client):
             query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -935,6 +1034,8 @@ class OrganizationsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1002,6 +1103,8 @@ class OrganizationsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1067,6 +1170,8 @@ class OrganizationsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1132,6 +1237,8 @@ class OrganizationsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1199,6 +1306,8 @@ class OrganizationsAsyncClient(Client):
             query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1266,6 +1375,8 @@ class OrganizationsAsyncClient(Client):
             query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1331,6 +1442,8 @@ class OrganizationsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1402,6 +1515,8 @@ class OrganizationsAsyncClient(Client):
             query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1465,6 +1580,8 @@ class OrganizationsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1528,6 +1645,8 @@ class OrganizationsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1591,6 +1710,8 @@ class OrganizationsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1619,7 +1740,7 @@ class OrganizationsAsyncClient(Client):
     def show_effective_policies_async(self, request):
         """查询有效的策略
 
-        查询指定策略类型和账户的有效策略信息。当前此接口不支持查询服务控制策略（service_control_policy）。此操作只能由组织的管理账号或作为服务委托管理员的成员账号调用。
+        查询指定策略类型和账号的有效策略信息。当前此接口不支持查询服务控制策略（service_control_policy）。此操作只能由组织的管理账号或作为服务委托管理员的成员账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1658,6 +1779,8 @@ class OrganizationsAsyncClient(Client):
             query_params.append(('policy_type', local_var_params['policy_type']))
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1721,6 +1844,8 @@ class OrganizationsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1784,6 +1909,8 @@ class OrganizationsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1812,7 +1939,7 @@ class OrganizationsAsyncClient(Client):
     def leave_organization_async(self, request):
         """离开当前组织
 
-        此操作只能由组织的成员账号调用。只有当组织账号配置了作为独立账号运行所需的信息时，您才能作为成员账户离开组织。要离开的账号不能是组织启用的任何服务的委托管理员账号。
+        此操作只能由组织的成员账号调用。只有当组织账号配置了作为独立账号运行所需的信息时，您才能作为成员账号离开组织。要离开的账号不能是组织启用的任何服务的委托管理员账号。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1847,6 +1974,8 @@ class OrganizationsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1914,6 +2043,8 @@ class OrganizationsAsyncClient(Client):
             query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1977,6 +2108,8 @@ class OrganizationsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -2040,6 +2173,8 @@ class OrganizationsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -2107,6 +2242,8 @@ class OrganizationsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -2176,6 +2313,8 @@ class OrganizationsAsyncClient(Client):
             query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -2241,6 +2380,8 @@ class OrganizationsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -2306,6 +2447,8 @@ class OrganizationsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -2336,7 +2479,7 @@ class OrganizationsAsyncClient(Client):
     def attach_policy_async(self, request):
         """将策略跟实体绑定
 
-        绑定策略到根、组织单元或个人账户。此操作只能由组织的管理账号调用。
+        绑定策略到根、组织单元或个人账号。此操作只能由组织的管理账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2373,6 +2516,8 @@ class OrganizationsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -2438,6 +2583,8 @@ class OrganizationsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
         if 'x_language' in local_var_params:
             header_params['X-Language'] = local_var_params['x_language']
 
@@ -2507,6 +2654,8 @@ class OrganizationsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -2572,6 +2721,8 @@ class OrganizationsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -2637,6 +2788,8 @@ class OrganizationsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -2702,6 +2855,8 @@ class OrganizationsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -2773,6 +2928,8 @@ class OrganizationsAsyncClient(Client):
             query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -2842,6 +2999,8 @@ class OrganizationsAsyncClient(Client):
             query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
         if 'x_language' in local_var_params:
             header_params['X-Language'] = local_var_params['x_language']
 
@@ -2909,6 +3068,8 @@ class OrganizationsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
         if 'x_language' in local_var_params:
             header_params['X-Language'] = local_var_params['x_language']
 
@@ -2976,6 +3137,8 @@ class OrganizationsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
         if 'x_language' in local_var_params:
             header_params['X-Language'] = local_var_params['x_language']
 
@@ -3006,9 +3169,9 @@ class OrganizationsAsyncClient(Client):
         return http_info
 
     def create_tag_resource_async(self, request):
-        """为指定资源添加标签
+        """为指定资源类型添加标签
 
-        向指定的资源添加一个或多个标签。目前，您可以将标签附加到组织中的账号、组织单元、根和策略。此操作只能由组织的管理账号调用。
+        向指定的资源类型添加一个或多个标签。目前，您可以将标签附加到组织中的账号、组织单元、根和策略。此操作只能由组织的管理账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3047,6 +3210,8 @@ class OrganizationsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -3075,9 +3240,9 @@ class OrganizationsAsyncClient(Client):
         return http_info
 
     def delete_tag_resource_async(self, request):
-        """从指定资源中删除指定主键标签
+        """从指定资源类型中删除指定主键标签
 
-        从指定资源中删除具有指定主键的任何标签。您可以将标签绑定到组织中的账号、组织单元、根和策略。此操作只能由组织的管理账号调用。
+        从指定资源类型中删除具有指定主键的任何标签。您可以将标签绑定到组织中的账号、组织单元、根和策略。此操作只能由组织的管理账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3116,6 +3281,8 @@ class OrganizationsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -3187,6 +3354,8 @@ class OrganizationsAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -3254,6 +3423,8 @@ class OrganizationsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -3280,9 +3451,9 @@ class OrganizationsAsyncClient(Client):
         return http_info
 
     def list_tag_resources_async(self, request):
-        """列出绑定到指定资源的标签
+        """列出绑定到指定资源类型的标签
 
-        列出绑定到指定资源的标签。您可以将标签附加到组织中的账号、组织单元、根和策略。此操作只能由组织的管理账号或作为服务委托管理员的成员账号调用。
+        列出绑定到指定资源类型的标签。您可以将标签附加到组织中的账号、组织单元、根和策略。此操作只能由组织的管理账号或作为服务委托管理员的成员账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3325,6 +3496,8 @@ class OrganizationsAsyncClient(Client):
             query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -3394,6 +3567,8 @@ class OrganizationsAsyncClient(Client):
             query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -3459,6 +3634,8 @@ class OrganizationsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -3526,6 +3703,8 @@ class OrganizationsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -3593,6 +3772,8 @@ class OrganizationsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -3658,6 +3839,8 @@ class OrganizationsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -3723,6 +3906,8 @@ class OrganizationsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -3792,6 +3977,8 @@ class OrganizationsAsyncClient(Client):
             query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 

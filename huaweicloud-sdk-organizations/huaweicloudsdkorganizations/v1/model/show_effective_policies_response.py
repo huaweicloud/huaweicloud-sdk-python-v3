@@ -40,7 +40,7 @@ class ShowEffectivePoliciesResponse(SdkResponse):
         :type last_updated_at: datetime
         :param policy_content: 有效策略文本内容。
         :type policy_content: str
-        :param policy_type: 策略类型的名称，tag_policy标签策略。
+        :param policy_type: 策略类型的名称。tag_policy标签策略。
         :type policy_type: str
         :param entity_id: 根、组织单元或账号的唯一标识符（ID）。
         :type entity_id: str
@@ -111,7 +111,7 @@ class ShowEffectivePoliciesResponse(SdkResponse):
     def policy_type(self):
         """Gets the policy_type of this ShowEffectivePoliciesResponse.
 
-        策略类型的名称，tag_policy标签策略。
+        策略类型的名称。tag_policy标签策略。
 
         :return: The policy_type of this ShowEffectivePoliciesResponse.
         :rtype: str
@@ -122,7 +122,7 @@ class ShowEffectivePoliciesResponse(SdkResponse):
     def policy_type(self, policy_type):
         """Sets the policy_type of this ShowEffectivePoliciesResponse.
 
-        策略类型的名称，tag_policy标签策略。
+        策略类型的名称。tag_policy标签策略。
 
         :param policy_type: The policy_type of this ShowEffectivePoliciesResponse.
         :type policy_type: str

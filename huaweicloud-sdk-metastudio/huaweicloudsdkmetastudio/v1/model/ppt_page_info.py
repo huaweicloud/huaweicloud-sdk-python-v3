@@ -33,11 +33,11 @@ class PPTPageInfo:
 
         The model defined in huaweicloud sdk
 
-        :param page_no: 页面编号。
+        :param page_no: **参数解释**： 页面编号。 **约束限制**： 不涉及
         :type page_no: int
-        :param file_id: 页面对应图片文件ID。
+        :param file_id: **参数解释**： 页面对应图片文件ID。 **约束限制**： 不涉及 **取值范围**： 字符长度1-64位 **默认取值**： 不涉及
         :type file_id: str
-        :param page_content: 讲解词（从备注中提取）。
+        :param page_content: **参数解释**： 页面对应图片文件ID **约束限制**： 不涉及 **取值范围**： 字符长度0-2048位 **默认取值**： 不涉及。
         :type page_content: str
         """
         
@@ -59,7 +59,7 @@ class PPTPageInfo:
     def page_no(self):
         """Gets the page_no of this PPTPageInfo.
 
-        页面编号。
+        **参数解释**： 页面编号。 **约束限制**： 不涉及
 
         :return: The page_no of this PPTPageInfo.
         :rtype: int
@@ -70,7 +70,7 @@ class PPTPageInfo:
     def page_no(self, page_no):
         """Sets the page_no of this PPTPageInfo.
 
-        页面编号。
+        **参数解释**： 页面编号。 **约束限制**： 不涉及
 
         :param page_no: The page_no of this PPTPageInfo.
         :type page_no: int
@@ -81,7 +81,7 @@ class PPTPageInfo:
     def file_id(self):
         """Gets the file_id of this PPTPageInfo.
 
-        页面对应图片文件ID。
+        **参数解释**： 页面对应图片文件ID。 **约束限制**： 不涉及 **取值范围**： 字符长度1-64位 **默认取值**： 不涉及
 
         :return: The file_id of this PPTPageInfo.
         :rtype: str
@@ -92,7 +92,7 @@ class PPTPageInfo:
     def file_id(self, file_id):
         """Sets the file_id of this PPTPageInfo.
 
-        页面对应图片文件ID。
+        **参数解释**： 页面对应图片文件ID。 **约束限制**： 不涉及 **取值范围**： 字符长度1-64位 **默认取值**： 不涉及
 
         :param file_id: The file_id of this PPTPageInfo.
         :type file_id: str
@@ -103,7 +103,7 @@ class PPTPageInfo:
     def page_content(self):
         """Gets the page_content of this PPTPageInfo.
 
-        讲解词（从备注中提取）。
+        **参数解释**： 页面对应图片文件ID **约束限制**： 不涉及 **取值范围**： 字符长度0-2048位 **默认取值**： 不涉及。
 
         :return: The page_content of this PPTPageInfo.
         :rtype: str
@@ -114,7 +114,7 @@ class PPTPageInfo:
     def page_content(self, page_content):
         """Sets the page_content of this PPTPageInfo.
 
-        讲解词（从备注中提取）。
+        **参数解释**： 页面对应图片文件ID **约束限制**： 不涉及 **取值范围**： 字符长度0-2048位 **默认取值**： 不涉及。
 
         :param page_content: The page_content of this PPTPageInfo.
         :type page_content: str

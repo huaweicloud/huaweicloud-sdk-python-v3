@@ -75,6 +75,7 @@ from huaweicloudsdkdds.v3.model.create_manual_backup_option import CreateManualB
 from huaweicloudsdkdds.v3.model.create_manual_backup_request import CreateManualBackupRequest
 from huaweicloudsdkdds.v3.model.create_manual_backup_request_body import CreateManualBackupRequestBody
 from huaweicloudsdkdds.v3.model.create_manual_backup_response import CreateManualBackupResponse
+from huaweicloudsdkdds.v3.model.database_info_item import DatabaseInfoItem
 from huaweicloudsdkdds.v3.model.datastore import Datastore
 from huaweicloudsdkdds.v3.model.datastore_item import DatastoreItem
 from huaweicloudsdkdds.v3.model.datastore_result import DatastoreResult
@@ -159,6 +160,8 @@ from huaweicloudsdkdds.v3.model.list_database_roles_request import ListDatabaseR
 from huaweicloudsdkdds.v3.model.list_database_roles_response import ListDatabaseRolesResponse
 from huaweicloudsdkdds.v3.model.list_database_users_request import ListDatabaseUsersRequest
 from huaweicloudsdkdds.v3.model.list_database_users_response import ListDatabaseUsersResponse
+from huaweicloudsdkdds.v3.model.list_databases_request import ListDatabasesRequest
+from huaweicloudsdkdds.v3.model.list_databases_response import ListDatabasesResponse
 from huaweicloudsdkdds.v3.model.list_datastore_versions_request import ListDatastoreVersionsRequest
 from huaweicloudsdkdds.v3.model.list_datastore_versions_response import ListDatastoreVersionsResponse
 from huaweicloudsdkdds.v3.model.list_error_logs_request import ListErrorLogsRequest

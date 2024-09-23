@@ -53,7 +53,7 @@ class ListSmartChatRoomsRequest:
         :type model_name: str
         :param start_time: 最近智能交互对话任务起始时间。格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
         :type start_time: str
-        :param end_time: 最近智能交互对话任务结束时间。格式遵循：RFC 3339 如“2021-01-10T10:43:17Z”。
+        :param end_time: 结束时间。格式遵循：RFC 3339 如\&quot;2021-01-10T10:43:17Z\&quot;。
         :type end_time: str
         """
         
@@ -219,7 +219,7 @@ class ListSmartChatRoomsRequest:
     def end_time(self):
         """Gets the end_time of this ListSmartChatRoomsRequest.
 
-        最近智能交互对话任务结束时间。格式遵循：RFC 3339 如“2021-01-10T10:43:17Z”。
+        结束时间。格式遵循：RFC 3339 如\"2021-01-10T10:43:17Z\"。
 
         :return: The end_time of this ListSmartChatRoomsRequest.
         :rtype: str
@@ -230,7 +230,7 @@ class ListSmartChatRoomsRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ListSmartChatRoomsRequest.
 
-        最近智能交互对话任务结束时间。格式遵循：RFC 3339 如“2021-01-10T10:43:17Z”。
+        结束时间。格式遵循：RFC 3339 如\"2021-01-10T10:43:17Z\"。
 
         :param end_time: The end_time of this ListSmartChatRoomsRequest.
         :type end_time: str

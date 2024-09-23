@@ -2789,7 +2789,7 @@ class IoTEdgeAsyncClient(Client):
     def _delete_dc_points_http_info(self, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/v2/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}/points/batch-delete",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}/points/batch-delete",
             "request_type": request.__class__.__name__,
             "response_type": "DeleteDcPointsResponse"
             }

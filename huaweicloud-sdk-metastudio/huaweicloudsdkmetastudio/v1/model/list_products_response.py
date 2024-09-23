@@ -34,7 +34,7 @@ class ListProductsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: 商品信息总数
+        :param count: **参数解释**： 商品信息总数
         :type count: int
         :param products: 商品信息列表
         :type products: list[:class:`huaweicloudsdkmetastudio.v1.ProductDetailInfo`]
@@ -60,7 +60,7 @@ class ListProductsResponse(SdkResponse):
     def count(self):
         """Gets the count of this ListProductsResponse.
 
-        商品信息总数
+        **参数解释**： 商品信息总数
 
         :return: The count of this ListProductsResponse.
         :rtype: int
@@ -71,7 +71,7 @@ class ListProductsResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this ListProductsResponse.
 
-        商品信息总数
+        **参数解释**： 商品信息总数
 
         :param count: The count of this ListProductsResponse.
         :type count: int

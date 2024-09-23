@@ -37,13 +37,13 @@ class PPTAssetMeta:
 
         The model defined in huaweicloud sdk
 
-        :param auto_analysis: PPT是否需要自动解析。
+        :param auto_analysis: **参数解释**： PPT是否需要自动解析。 **约束限制**： 部分过于复杂的PPT或压缩比过高的PPT可能无法解析。 超过50页PPT仅转换50页 转换的图片无法保证完全还原，需要自行确认。 **取值范围**： * true: 自动解析 * false: 无需解析
         :type auto_analysis: bool
-        :param ppt_analysis_status: PPT解析状态。 * INITIALIZE：初始 * WAITING：等待 * CONVERTING：解析中 * FAILED：失败 * SUCCEEDED：成功 * CANCELED：取消
+        :param ppt_analysis_status: **参数解释**： PPT解析状态。 **约束限制**： 不涉及 **取值范围**： * INITIALIZE：初始 * WAITING：等待 * CONVERTING：解析中 * FAILED：失败 * SUCCEEDED：成功 * CANCELED：取消  **默认取值**： 不涉及
         :type ppt_analysis_status: str
         :param error_info: 
         :type error_info: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
-        :param page_count: PPT页面总数。
+        :param page_count: **参数解释**： PPT页面总数。 **约束限制**： 不涉及
         :type page_count: int
         :param pages: PPT页面图片。
         :type pages: list[:class:`huaweicloudsdkmetastudio.v1.PPTPageInfo`]
@@ -73,7 +73,7 @@ class PPTAssetMeta:
     def auto_analysis(self):
         """Gets the auto_analysis of this PPTAssetMeta.
 
-        PPT是否需要自动解析。
+        **参数解释**： PPT是否需要自动解析。 **约束限制**： 部分过于复杂的PPT或压缩比过高的PPT可能无法解析。 超过50页PPT仅转换50页 转换的图片无法保证完全还原，需要自行确认。 **取值范围**： * true: 自动解析 * false: 无需解析
 
         :return: The auto_analysis of this PPTAssetMeta.
         :rtype: bool
@@ -84,7 +84,7 @@ class PPTAssetMeta:
     def auto_analysis(self, auto_analysis):
         """Sets the auto_analysis of this PPTAssetMeta.
 
-        PPT是否需要自动解析。
+        **参数解释**： PPT是否需要自动解析。 **约束限制**： 部分过于复杂的PPT或压缩比过高的PPT可能无法解析。 超过50页PPT仅转换50页 转换的图片无法保证完全还原，需要自行确认。 **取值范围**： * true: 自动解析 * false: 无需解析
 
         :param auto_analysis: The auto_analysis of this PPTAssetMeta.
         :type auto_analysis: bool
@@ -95,7 +95,7 @@ class PPTAssetMeta:
     def ppt_analysis_status(self):
         """Gets the ppt_analysis_status of this PPTAssetMeta.
 
-        PPT解析状态。 * INITIALIZE：初始 * WAITING：等待 * CONVERTING：解析中 * FAILED：失败 * SUCCEEDED：成功 * CANCELED：取消
+        **参数解释**： PPT解析状态。 **约束限制**： 不涉及 **取值范围**： * INITIALIZE：初始 * WAITING：等待 * CONVERTING：解析中 * FAILED：失败 * SUCCEEDED：成功 * CANCELED：取消  **默认取值**： 不涉及
 
         :return: The ppt_analysis_status of this PPTAssetMeta.
         :rtype: str
@@ -106,7 +106,7 @@ class PPTAssetMeta:
     def ppt_analysis_status(self, ppt_analysis_status):
         """Sets the ppt_analysis_status of this PPTAssetMeta.
 
-        PPT解析状态。 * INITIALIZE：初始 * WAITING：等待 * CONVERTING：解析中 * FAILED：失败 * SUCCEEDED：成功 * CANCELED：取消
+        **参数解释**： PPT解析状态。 **约束限制**： 不涉及 **取值范围**： * INITIALIZE：初始 * WAITING：等待 * CONVERTING：解析中 * FAILED：失败 * SUCCEEDED：成功 * CANCELED：取消  **默认取值**： 不涉及
 
         :param ppt_analysis_status: The ppt_analysis_status of this PPTAssetMeta.
         :type ppt_analysis_status: str
@@ -135,7 +135,7 @@ class PPTAssetMeta:
     def page_count(self):
         """Gets the page_count of this PPTAssetMeta.
 
-        PPT页面总数。
+        **参数解释**： PPT页面总数。 **约束限制**： 不涉及
 
         :return: The page_count of this PPTAssetMeta.
         :rtype: int
@@ -146,7 +146,7 @@ class PPTAssetMeta:
     def page_count(self, page_count):
         """Sets the page_count of this PPTAssetMeta.
 
-        PPT页面总数。
+        **参数解释**： PPT页面总数。 **约束限制**： 不涉及
 
         :param page_count: The page_count of this PPTAssetMeta.
         :type page_count: int

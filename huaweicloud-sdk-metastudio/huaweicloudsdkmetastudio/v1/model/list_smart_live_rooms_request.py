@@ -65,7 +65,7 @@ class ListSmartLiveRoomsRequest:
         :type live_state: str
         :param start_time: 最近直播任务起始时间。格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
         :type start_time: str
-        :param end_time: 最近直播任务结束时间。格式遵循：RFC 3339 如“2021-01-10T10:43:17Z”。
+        :param end_time: 结束时间。格式遵循：RFC 3339 如\&quot;2021-01-10T10:43:17Z\&quot;。
         :type end_time: str
         :param room_type: 按直播间类型查询。直播间类型。 * NORMAL：普通直播间，直播间一直存在，可以反复开播 * TEMP：临时直播间，直播任务结束后自动清理直播间。 * TEMPLATE：直播间模板。
         :type room_type: str
@@ -291,7 +291,7 @@ class ListSmartLiveRoomsRequest:
     def end_time(self):
         """Gets the end_time of this ListSmartLiveRoomsRequest.
 
-        最近直播任务结束时间。格式遵循：RFC 3339 如“2021-01-10T10:43:17Z”。
+        结束时间。格式遵循：RFC 3339 如\"2021-01-10T10:43:17Z\"。
 
         :return: The end_time of this ListSmartLiveRoomsRequest.
         :rtype: str
@@ -302,7 +302,7 @@ class ListSmartLiveRoomsRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ListSmartLiveRoomsRequest.
 
-        最近直播任务结束时间。格式遵循：RFC 3339 如“2021-01-10T10:43:17Z”。
+        结束时间。格式遵循：RFC 3339 如\"2021-01-10T10:43:17Z\"。
 
         :param end_time: The end_time of this ListSmartLiveRoomsRequest.
         :type end_time: str

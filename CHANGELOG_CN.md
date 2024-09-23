@@ -1,3 +1,347 @@
+# 3.1.115 2024-09-23
+
+### HuaweiCloud SDK AOM
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListEvents**
+    - 响应参数变更
+      - `* page_info.current_count: string -> int32`
+  - **PushEvents**
+    - 请求参数变更
+      - `- events.event_sn`
+      - `- events.arrives_at`
+      - `- events.enterprise_project_id`
+      - `- events.policy`
+
+### HuaweiCloud SDK CDN
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateDomainMultiCertificates**
+    - 请求参数变更
+      - `+ https.scm_certificate_id`
+  - **ShowDomainFullConfig**
+    - 响应参数变更
+      - `+ configs.user_agent_filter.include_empty`
+      - `+ configs.https.scm_certificate_id`
+      - `+ configs.https.certificates.certificate_source`
+      - `+ configs.https.certificates.scm_certificate_id`
+  - **UpdateDomainFullConfig**
+    - 请求参数变更
+      - `+ configs.user_agent_filter.include_empty`
+      - `+ configs.https.scm_certificate_id`
+      - `+ configs.https.certificates.certificate_source`
+      - `+ configs.https.certificates.scm_certificate_id`
+
+### HuaweiCloud SDK DDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`ListDatabases`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK ECS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListServersDetails**
+    - 请求参数变更
+      - `+ marker`
+
+### HuaweiCloud SDK EVS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowVolume**
+    - 响应参数变更
+      - `+ volume.snapshot_policy_id`
+  - **ListVolumes**
+    - 请求参数变更
+      - `+ snapshot_policy_id`
+    - 响应参数变更
+      - `+ volumes.snapshot_policy_id`
+
+### HuaweiCloud SDK IAM
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListAgencies**
+    - 响应参数变更
+      - `+ agencies.agency_urn`
+  - **CreateAgency**
+    - 请求参数变更
+      - `- agency.duration: enum value [FOREVER,ONEDAY]`
+    - 响应参数变更
+      - `+ agency.agency_urn`
+  - **ShowAgency**
+    - 响应参数变更
+      - `+ agency.agency_urn`
+  - **UpdateAgency**
+    - 请求参数变更
+      - `- agency.duration: enum value [FOREVER,ONEDAY]`
+    - 响应参数变更
+      - `+ agency.agency_urn`
+
+### HuaweiCloud SDK Meeting
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowRecordInfo**
+    - 响应参数变更
+      - `+ data`
+      - `- subject`
+      - `- segmentLimit`
+      - `- beginTime`
+      - `- segmentOffset`
+      - `- segmentCount`
+      - `- segmentList`
+      - `* code: int32 -> string`
+
+### HuaweiCloud SDK Organizations
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`UpdateAccount`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **LeaveOrganization**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **CloseAccount**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **RemoveAccount**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **MoveAccount**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **EnableTrustedService**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **DisableTrustedService**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **RegisterDelegatedAdministrator**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **DeregisterDelegatedAdministrator**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **AttachPolicy**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **DetachPolicy**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **ShowEffectivePolicies**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **UntagResource**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **ListServices**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **DeleteOrganization**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **ShowOrganization**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **CreateOrganization**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **ListOrganizationalUnits**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **CreateOrganizationalUnit**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **DeleteOrganizationalUnit**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **ShowOrganizationalUnit**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **UpdateOrganizationalUnit**
+    - 请求参数变更
+      - `+ X-Security-Token`
+      - `- X-Auth-Token`
+  - **ListAccounts**
+    - 请求参数变更
+      - `+ X-Security-Token`
+      - `+ with_register_contact_info`
+    - 响应参数变更
+      - `+ accounts.mobile_phone`
+      - `+ accounts.intl_number_prefix`
+      - `+ accounts.email`
+      - `+ accounts.description`
+  - **CreateAccount**
+    - 请求参数变更
+      - `+ X-Security-Token`
+      - `+ description`
+  - **ShowAccount**
+    - 请求参数变更
+      - `+ X-Security-Token`
+      - `+ with_register_contact_info`
+    - 响应参数变更
+      - `+ account.mobile_phone`
+      - `+ account.intl_number_prefix`
+      - `+ account.email`
+      - `+ account.description`
+  - **ListCreateAccountStatuses**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **ShowCreateAccountStatus**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **ListCloseAccountStatuses**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **ListTrustedServices**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **ListDelegatedServices**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **ListDelegatedAdministrators**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **ListEntitiesForPolicy**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **ListTagsForResource**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **TagResource**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **ListEntities**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **ListTagPolicyServices**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **ListTagResources**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **CreateTagResource**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **DeleteTagResource**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **ShowResourceInstancesCount**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **ListResourceTags**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **ListRoots**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **InviteAccount**
+    - 请求参数变更
+      - `+ X-Security-Token`
+    - 响应参数变更
+      - `+ handshake.expired_at`
+  - **ShowHandshake**
+    - 请求参数变更
+      - `+ X-Security-Token`
+    - 响应参数变更
+      - `+ handshake.expired_at`
+  - **AcceptHandshake**
+    - 请求参数变更
+      - `+ X-Security-Token`
+    - 响应参数变更
+      - `+ handshake.expired_at`
+  - **DeclineHandshake**
+    - 请求参数变更
+      - `+ X-Security-Token`
+    - 响应参数变更
+      - `+ handshake.expired_at`
+  - **CancelHandshake**
+    - 请求参数变更
+      - `+ X-Security-Token`
+    - 响应参数变更
+      - `+ handshake.expired_at`
+  - **ListReceivedHandshakes**
+    - 请求参数变更
+      - `+ X-Security-Token`
+    - 响应参数变更
+      - `+ handshakes.expired_at`
+  - **ListHandshakes**
+    - 请求参数变更
+      - `+ X-Security-Token`
+    - 响应参数变更
+      - `+ handshakes.expired_at`
+  - **ListPolicies**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **CreatePolicy**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **DeletePolicy**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **ShowPolicy**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **UpdatePolicy**
+    - 请求参数变更
+      - `+ X-Security-Token`
+      - `- X-Auth-Token`
+  - **EnablePolicyType**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **DisablePolicyType**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **ListResourceInstances**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **ListQuotas**
+    - 请求参数变更
+      - `+ X-Security-Token`
+
 # 3.1.114 2024-09-12
 
 ### HuaweiCloud SDK AOM
