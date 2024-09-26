@@ -38,8 +38,7 @@ class GcbResourceType:
         self._resource_type = None
         self.discriminator = None
 
-        if resource_type is not None:
-            self.resource_type = resource_type
+        self.resource_type = resource_type
 
     @property
     def resource_type(self):

@@ -38,8 +38,7 @@ class GcbProjectId:
         self._project_id = None
         self.discriminator = None
 
-        if project_id is not None:
-            self.project_id = project_id
+        self.project_id = project_id
 
     @property
     def project_id(self):

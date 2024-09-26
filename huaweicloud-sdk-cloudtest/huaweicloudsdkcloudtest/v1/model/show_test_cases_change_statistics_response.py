@@ -18,167 +18,159 @@ class ShowTestCasesChangeStatisticsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'add_testcases_number': 'int',
-        'reuse_testcases_number': 'int',
-        'modifying_testcases_number': 'int',
-        'update_date_timestamp': 'int',
-        'update_date': 'datetime'
+        'status': 'str',
+        'result': 'ResultValueVersionTestCasesChangeStatisticsVo',
+        'error': 'ApiError',
+        'request_id': 'str',
+        'server_address': 'str'
     }
 
     attribute_map = {
-        'add_testcases_number': 'add_testcases_number',
-        'reuse_testcases_number': 'reuse_testcases_number',
-        'modifying_testcases_number': 'modifying_testcases_number',
-        'update_date_timestamp': 'update_date_timestamp',
-        'update_date': 'update_date'
+        'status': 'status',
+        'result': 'result',
+        'error': 'error',
+        'request_id': 'request_id',
+        'server_address': 'server_address'
     }
 
-    def __init__(self, add_testcases_number=None, reuse_testcases_number=None, modifying_testcases_number=None, update_date_timestamp=None, update_date=None):
+    def __init__(self, status=None, result=None, error=None, request_id=None, server_address=None):
         """ShowTestCasesChangeStatisticsResponse
 
         The model defined in huaweicloud sdk
 
-        :param add_testcases_number: 新增用例数
-        :type add_testcases_number: int
-        :param reuse_testcases_number: 复用用例数
-        :type reuse_testcases_number: int
-        :param modifying_testcases_number: 修改用例数
-        :type modifying_testcases_number: int
-        :param update_date_timestamp: 修改时间时间戳
-        :type update_date_timestamp: int
-        :param update_date: 修改时间
-        :type update_date: datetime
+        :param status: 对外时：success|error; 对内时：ok|failed
+        :type status: str
+        :param result: 
+        :type result: :class:`huaweicloudsdkcloudtest.v1.ResultValueVersionTestCasesChangeStatisticsVo`
+        :param error: 
+        :type error: :class:`huaweicloudsdkcloudtest.v1.ApiError`
+        :param request_id: 由接口调用方传入，建议使用UUID保证请求的唯一性。
+        :type request_id: str
+        :param server_address: 对内接口才有此属性
+        :type server_address: str
         """
         
         super(ShowTestCasesChangeStatisticsResponse, self).__init__()
 
-        self._add_testcases_number = None
-        self._reuse_testcases_number = None
-        self._modifying_testcases_number = None
-        self._update_date_timestamp = None
-        self._update_date = None
+        self._status = None
+        self._result = None
+        self._error = None
+        self._request_id = None
+        self._server_address = None
         self.discriminator = None
 
-        if add_testcases_number is not None:
-            self.add_testcases_number = add_testcases_number
-        if reuse_testcases_number is not None:
-            self.reuse_testcases_number = reuse_testcases_number
-        if modifying_testcases_number is not None:
-            self.modifying_testcases_number = modifying_testcases_number
-        if update_date_timestamp is not None:
-            self.update_date_timestamp = update_date_timestamp
-        if update_date is not None:
-            self.update_date = update_date
+        if status is not None:
+            self.status = status
+        if result is not None:
+            self.result = result
+        if error is not None:
+            self.error = error
+        if request_id is not None:
+            self.request_id = request_id
+        if server_address is not None:
+            self.server_address = server_address
 
     @property
-    def add_testcases_number(self):
-        """Gets the add_testcases_number of this ShowTestCasesChangeStatisticsResponse.
+    def status(self):
+        """Gets the status of this ShowTestCasesChangeStatisticsResponse.
 
-        新增用例数
+        对外时：success|error; 对内时：ok|failed
 
-        :return: The add_testcases_number of this ShowTestCasesChangeStatisticsResponse.
-        :rtype: int
+        :return: The status of this ShowTestCasesChangeStatisticsResponse.
+        :rtype: str
         """
-        return self._add_testcases_number
+        return self._status
 
-    @add_testcases_number.setter
-    def add_testcases_number(self, add_testcases_number):
-        """Sets the add_testcases_number of this ShowTestCasesChangeStatisticsResponse.
+    @status.setter
+    def status(self, status):
+        """Sets the status of this ShowTestCasesChangeStatisticsResponse.
 
-        新增用例数
+        对外时：success|error; 对内时：ok|failed
 
-        :param add_testcases_number: The add_testcases_number of this ShowTestCasesChangeStatisticsResponse.
-        :type add_testcases_number: int
+        :param status: The status of this ShowTestCasesChangeStatisticsResponse.
+        :type status: str
         """
-        self._add_testcases_number = add_testcases_number
+        self._status = status
 
     @property
-    def reuse_testcases_number(self):
-        """Gets the reuse_testcases_number of this ShowTestCasesChangeStatisticsResponse.
+    def result(self):
+        """Gets the result of this ShowTestCasesChangeStatisticsResponse.
 
-        复用用例数
-
-        :return: The reuse_testcases_number of this ShowTestCasesChangeStatisticsResponse.
-        :rtype: int
+        :return: The result of this ShowTestCasesChangeStatisticsResponse.
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ResultValueVersionTestCasesChangeStatisticsVo`
         """
-        return self._reuse_testcases_number
+        return self._result
 
-    @reuse_testcases_number.setter
-    def reuse_testcases_number(self, reuse_testcases_number):
-        """Sets the reuse_testcases_number of this ShowTestCasesChangeStatisticsResponse.
+    @result.setter
+    def result(self, result):
+        """Sets the result of this ShowTestCasesChangeStatisticsResponse.
 
-        复用用例数
-
-        :param reuse_testcases_number: The reuse_testcases_number of this ShowTestCasesChangeStatisticsResponse.
-        :type reuse_testcases_number: int
+        :param result: The result of this ShowTestCasesChangeStatisticsResponse.
+        :type result: :class:`huaweicloudsdkcloudtest.v1.ResultValueVersionTestCasesChangeStatisticsVo`
         """
-        self._reuse_testcases_number = reuse_testcases_number
+        self._result = result
 
     @property
-    def modifying_testcases_number(self):
-        """Gets the modifying_testcases_number of this ShowTestCasesChangeStatisticsResponse.
+    def error(self):
+        """Gets the error of this ShowTestCasesChangeStatisticsResponse.
 
-        修改用例数
-
-        :return: The modifying_testcases_number of this ShowTestCasesChangeStatisticsResponse.
-        :rtype: int
+        :return: The error of this ShowTestCasesChangeStatisticsResponse.
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ApiError`
         """
-        return self._modifying_testcases_number
+        return self._error
 
-    @modifying_testcases_number.setter
-    def modifying_testcases_number(self, modifying_testcases_number):
-        """Sets the modifying_testcases_number of this ShowTestCasesChangeStatisticsResponse.
+    @error.setter
+    def error(self, error):
+        """Sets the error of this ShowTestCasesChangeStatisticsResponse.
 
-        修改用例数
-
-        :param modifying_testcases_number: The modifying_testcases_number of this ShowTestCasesChangeStatisticsResponse.
-        :type modifying_testcases_number: int
+        :param error: The error of this ShowTestCasesChangeStatisticsResponse.
+        :type error: :class:`huaweicloudsdkcloudtest.v1.ApiError`
         """
-        self._modifying_testcases_number = modifying_testcases_number
+        self._error = error
 
     @property
-    def update_date_timestamp(self):
-        """Gets the update_date_timestamp of this ShowTestCasesChangeStatisticsResponse.
+    def request_id(self):
+        """Gets the request_id of this ShowTestCasesChangeStatisticsResponse.
 
-        修改时间时间戳
+        由接口调用方传入，建议使用UUID保证请求的唯一性。
 
-        :return: The update_date_timestamp of this ShowTestCasesChangeStatisticsResponse.
-        :rtype: int
+        :return: The request_id of this ShowTestCasesChangeStatisticsResponse.
+        :rtype: str
         """
-        return self._update_date_timestamp
+        return self._request_id
 
-    @update_date_timestamp.setter
-    def update_date_timestamp(self, update_date_timestamp):
-        """Sets the update_date_timestamp of this ShowTestCasesChangeStatisticsResponse.
+    @request_id.setter
+    def request_id(self, request_id):
+        """Sets the request_id of this ShowTestCasesChangeStatisticsResponse.
 
-        修改时间时间戳
+        由接口调用方传入，建议使用UUID保证请求的唯一性。
 
-        :param update_date_timestamp: The update_date_timestamp of this ShowTestCasesChangeStatisticsResponse.
-        :type update_date_timestamp: int
+        :param request_id: The request_id of this ShowTestCasesChangeStatisticsResponse.
+        :type request_id: str
         """
-        self._update_date_timestamp = update_date_timestamp
+        self._request_id = request_id
 
     @property
-    def update_date(self):
-        """Gets the update_date of this ShowTestCasesChangeStatisticsResponse.
+    def server_address(self):
+        """Gets the server_address of this ShowTestCasesChangeStatisticsResponse.
 
-        修改时间
+        对内接口才有此属性
 
-        :return: The update_date of this ShowTestCasesChangeStatisticsResponse.
-        :rtype: datetime
+        :return: The server_address of this ShowTestCasesChangeStatisticsResponse.
+        :rtype: str
         """
-        return self._update_date
+        return self._server_address
 
-    @update_date.setter
-    def update_date(self, update_date):
-        """Sets the update_date of this ShowTestCasesChangeStatisticsResponse.
+    @server_address.setter
+    def server_address(self, server_address):
+        """Sets the server_address of this ShowTestCasesChangeStatisticsResponse.
 
-        修改时间
+        对内接口才有此属性
 
-        :param update_date: The update_date of this ShowTestCasesChangeStatisticsResponse.
-        :type update_date: datetime
+        :param server_address: The server_address of this ShowTestCasesChangeStatisticsResponse.
+        :type server_address: str
         """
-        self._update_date = update_date
+        self._server_address = server_address
 
     def to_dict(self):
         """Returns the model properties as a dict"""

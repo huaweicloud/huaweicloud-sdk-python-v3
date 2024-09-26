@@ -29,7 +29,8 @@ class Authorisation:
         'cloud_connection_id': 'str',
         'status': 'str',
         'instance_type': 'str',
-        'cloud_connection_domain_id': 'str'
+        'cloud_connection_domain_id': 'str',
+        'is_loaded_by_cloud_connection': 'bool'
     }
 
     attribute_map = {
@@ -45,21 +46,22 @@ class Authorisation:
         'cloud_connection_id': 'cloud_connection_id',
         'status': 'status',
         'instance_type': 'instance_type',
-        'cloud_connection_domain_id': 'cloud_connection_domain_id'
+        'cloud_connection_domain_id': 'cloud_connection_domain_id',
+        'is_loaded_by_cloud_connection': 'is_loaded_by_cloud_connection'
     }
 
-    def __init__(self, id=None, name=None, description=None, instance_id=None, project_id=None, region_id=None, created_at=None, updated_at=None, domain_id=None, cloud_connection_id=None, status=None, instance_type=None, cloud_connection_domain_id=None):
+    def __init__(self, id=None, name=None, description=None, instance_id=None, project_id=None, region_id=None, created_at=None, updated_at=None, domain_id=None, cloud_connection_id=None, status=None, instance_type=None, cloud_connection_domain_id=None, is_loaded_by_cloud_connection=None):
         """Authorisation
 
         The model defined in huaweicloud sdk
 
-        :param id: 资源ID标识符。
+        :param id: 实例ID。
         :type id: str
         :param name: 实例名字。
         :type name: str
         :param description: 实例描述。不支持 &lt;&gt;。
         :type description: str
-        :param instance_id: 资源ID标识符。
+        :param instance_id: 网络实例（VPC，VGW）的ID。
         :type instance_id: str
         :param project_id: 实例所属项目ID。
         :type project_id: str
@@ -69,9 +71,9 @@ class Authorisation:
         :type created_at: datetime
         :param updated_at: 实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
         :type updated_at: datetime
-        :param domain_id: 实例所属帐号ID。
+        :param domain_id: 实例所属账号ID。
         :type domain_id: str
-        :param cloud_connection_id: 资源ID标识符。
+        :param cloud_connection_id: 云连接实例ID。
         :type cloud_connection_id: str
         :param status: 授权的状态。
         :type status: str
@@ -79,6 +81,8 @@ class Authorisation:
         :type instance_type: str
         :param cloud_connection_domain_id: 被授权云连接实例所属的账户ID。
         :type cloud_connection_domain_id: str
+        :param is_loaded_by_cloud_connection: 是否已经被云连接加载。
+        :type is_loaded_by_cloud_connection: bool
         """
         
         
@@ -96,6 +100,7 @@ class Authorisation:
         self._status = None
         self._instance_type = None
         self._cloud_connection_domain_id = None
+        self._is_loaded_by_cloud_connection = None
         self.discriminator = None
 
         self.id = id
@@ -115,12 +120,14 @@ class Authorisation:
             self.instance_type = instance_type
         if cloud_connection_domain_id is not None:
             self.cloud_connection_domain_id = cloud_connection_domain_id
+        if is_loaded_by_cloud_connection is not None:
+            self.is_loaded_by_cloud_connection = is_loaded_by_cloud_connection
 
     @property
     def id(self):
         """Gets the id of this Authorisation.
 
-        资源ID标识符。
+        实例ID。
 
         :return: The id of this Authorisation.
         :rtype: str
@@ -131,7 +138,7 @@ class Authorisation:
     def id(self, id):
         """Sets the id of this Authorisation.
 
-        资源ID标识符。
+        实例ID。
 
         :param id: The id of this Authorisation.
         :type id: str
@@ -186,7 +193,7 @@ class Authorisation:
     def instance_id(self):
         """Gets the instance_id of this Authorisation.
 
-        资源ID标识符。
+        网络实例（VPC，VGW）的ID。
 
         :return: The instance_id of this Authorisation.
         :rtype: str
@@ -197,7 +204,7 @@ class Authorisation:
     def instance_id(self, instance_id):
         """Sets the instance_id of this Authorisation.
 
-        资源ID标识符。
+        网络实例（VPC，VGW）的ID。
 
         :param instance_id: The instance_id of this Authorisation.
         :type instance_id: str
@@ -296,7 +303,7 @@ class Authorisation:
     def domain_id(self):
         """Gets the domain_id of this Authorisation.
 
-        实例所属帐号ID。
+        实例所属账号ID。
 
         :return: The domain_id of this Authorisation.
         :rtype: str
@@ -307,7 +314,7 @@ class Authorisation:
     def domain_id(self, domain_id):
         """Sets the domain_id of this Authorisation.
 
-        实例所属帐号ID。
+        实例所属账号ID。
 
         :param domain_id: The domain_id of this Authorisation.
         :type domain_id: str
@@ -318,7 +325,7 @@ class Authorisation:
     def cloud_connection_id(self):
         """Gets the cloud_connection_id of this Authorisation.
 
-        资源ID标识符。
+        云连接实例ID。
 
         :return: The cloud_connection_id of this Authorisation.
         :rtype: str
@@ -329,7 +336,7 @@ class Authorisation:
     def cloud_connection_id(self, cloud_connection_id):
         """Sets the cloud_connection_id of this Authorisation.
 
-        资源ID标识符。
+        云连接实例ID。
 
         :param cloud_connection_id: The cloud_connection_id of this Authorisation.
         :type cloud_connection_id: str
@@ -401,6 +408,28 @@ class Authorisation:
         :type cloud_connection_domain_id: str
         """
         self._cloud_connection_domain_id = cloud_connection_domain_id
+
+    @property
+    def is_loaded_by_cloud_connection(self):
+        """Gets the is_loaded_by_cloud_connection of this Authorisation.
+
+        是否已经被云连接加载。
+
+        :return: The is_loaded_by_cloud_connection of this Authorisation.
+        :rtype: bool
+        """
+        return self._is_loaded_by_cloud_connection
+
+    @is_loaded_by_cloud_connection.setter
+    def is_loaded_by_cloud_connection(self, is_loaded_by_cloud_connection):
+        """Sets the is_loaded_by_cloud_connection of this Authorisation.
+
+        是否已经被云连接加载。
+
+        :param is_loaded_by_cloud_connection: The is_loaded_by_cloud_connection of this Authorisation.
+        :type is_loaded_by_cloud_connection: bool
+        """
+        self._is_loaded_by_cloud_connection = is_loaded_by_cloud_connection
 
     def to_dict(self):
         """Returns the model properties as a dict"""

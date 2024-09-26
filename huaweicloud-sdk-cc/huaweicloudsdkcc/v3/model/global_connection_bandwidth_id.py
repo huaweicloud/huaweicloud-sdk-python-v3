@@ -29,7 +29,7 @@ class GlobalConnectionBandwidthId:
 
         The model defined in huaweicloud sdk
 
-        :param global_connection_bandwidth_id: 资源ID标识符。
+        :param global_connection_bandwidth_id: 全域互联带宽ID。
         :type global_connection_bandwidth_id: str
         """
         
@@ -45,7 +45,7 @@ class GlobalConnectionBandwidthId:
     def global_connection_bandwidth_id(self):
         """Gets the global_connection_bandwidth_id of this GlobalConnectionBandwidthId.
 
-        资源ID标识符。
+        全域互联带宽ID。
 
         :return: The global_connection_bandwidth_id of this GlobalConnectionBandwidthId.
         :rtype: str
@@ -56,7 +56,7 @@ class GlobalConnectionBandwidthId:
     def global_connection_bandwidth_id(self, global_connection_bandwidth_id):
         """Sets the global_connection_bandwidth_id of this GlobalConnectionBandwidthId.
 
-        资源ID标识符。
+        全域互联带宽ID。
 
         :param global_connection_bandwidth_id: The global_connection_bandwidth_id of this GlobalConnectionBandwidthId.
         :type global_connection_bandwidth_id: str

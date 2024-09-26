@@ -26,10 +26,10 @@ class CentralNetwork:
         'state': 'CentralNetworkStateEnum',
         'enterprise_project_id': 'str',
         'tags': 'list[Tag]',
+        'default_plane_id': 'str',
         'planes': 'list[CentralNetworkPlane]',
         'er_instances': 'list[CentralNetworkErInstance]',
-        'connections': 'list[CentralNetworkConnectionInfo]',
-        'default_plane_id': 'str'
+        'connections': 'list[CentralNetworkConnectionInfo]'
     }
 
     attribute_map = {
@@ -42,18 +42,18 @@ class CentralNetwork:
         'state': 'state',
         'enterprise_project_id': 'enterprise_project_id',
         'tags': 'tags',
+        'default_plane_id': 'default_plane_id',
         'planes': 'planes',
         'er_instances': 'er_instances',
-        'connections': 'connections',
-        'default_plane_id': 'default_plane_id'
+        'connections': 'connections'
     }
 
-    def __init__(self, id=None, name=None, description=None, created_at=None, updated_at=None, domain_id=None, state=None, enterprise_project_id=None, tags=None, planes=None, er_instances=None, connections=None, default_plane_id=None):
+    def __init__(self, id=None, name=None, description=None, created_at=None, updated_at=None, domain_id=None, state=None, enterprise_project_id=None, tags=None, default_plane_id=None, planes=None, er_instances=None, connections=None):
         """CentralNetwork
 
         The model defined in huaweicloud sdk
 
-        :param id: 资源ID标识符。
+        :param id: 实例ID。
         :type id: str
         :param name: 实例名字。
         :type name: str
@@ -63,7 +63,7 @@ class CentralNetwork:
         :type created_at: datetime
         :param updated_at: 实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
         :type updated_at: datetime
-        :param domain_id: 实例所属帐号ID。
+        :param domain_id: 实例所属账号ID。
         :type domain_id: str
         :param state: 
         :type state: :class:`huaweicloudsdkcc.v3.CentralNetworkStateEnum`
@@ -71,14 +71,14 @@ class CentralNetwork:
         :type enterprise_project_id: str
         :param tags: 实例标签。
         :type tags: list[:class:`huaweicloudsdkcc.v3.Tag`]
+        :param default_plane_id: 中心网络默认平面的ID。
+        :type default_plane_id: str
         :param planes: 中心网平面列表。
         :type planes: list[:class:`huaweicloudsdkcc.v3.CentralNetworkPlane`]
         :param er_instances: 中心网ER实例列表。
         :type er_instances: list[:class:`huaweicloudsdkcc.v3.CentralNetworkErInstance`]
         :param connections: 中心网ER连接列表。
         :type connections: list[:class:`huaweicloudsdkcc.v3.CentralNetworkConnectionInfo`]
-        :param default_plane_id: 资源ID标识符。
-        :type default_plane_id: str
         """
         
         
@@ -92,10 +92,10 @@ class CentralNetwork:
         self._state = None
         self._enterprise_project_id = None
         self._tags = None
+        self._default_plane_id = None
         self._planes = None
         self._er_instances = None
         self._connections = None
-        self._default_plane_id = None
         self.discriminator = None
 
         self.id = id
@@ -110,20 +110,19 @@ class CentralNetwork:
             self.enterprise_project_id = enterprise_project_id
         if tags is not None:
             self.tags = tags
+        self.default_plane_id = default_plane_id
         if planes is not None:
             self.planes = planes
         if er_instances is not None:
             self.er_instances = er_instances
         if connections is not None:
             self.connections = connections
-        if default_plane_id is not None:
-            self.default_plane_id = default_plane_id
 
     @property
     def id(self):
         """Gets the id of this CentralNetwork.
 
-        资源ID标识符。
+        实例ID。
 
         :return: The id of this CentralNetwork.
         :rtype: str
@@ -134,7 +133,7 @@ class CentralNetwork:
     def id(self, id):
         """Sets the id of this CentralNetwork.
 
-        资源ID标识符。
+        实例ID。
 
         :param id: The id of this CentralNetwork.
         :type id: str
@@ -233,7 +232,7 @@ class CentralNetwork:
     def domain_id(self):
         """Gets the domain_id of this CentralNetwork.
 
-        实例所属帐号ID。
+        实例所属账号ID。
 
         :return: The domain_id of this CentralNetwork.
         :rtype: str
@@ -244,7 +243,7 @@ class CentralNetwork:
     def domain_id(self, domain_id):
         """Sets the domain_id of this CentralNetwork.
 
-        实例所属帐号ID。
+        实例所属账号ID。
 
         :param domain_id: The domain_id of this CentralNetwork.
         :type domain_id: str
@@ -314,6 +313,28 @@ class CentralNetwork:
         self._tags = tags
 
     @property
+    def default_plane_id(self):
+        """Gets the default_plane_id of this CentralNetwork.
+
+        中心网络默认平面的ID。
+
+        :return: The default_plane_id of this CentralNetwork.
+        :rtype: str
+        """
+        return self._default_plane_id
+
+    @default_plane_id.setter
+    def default_plane_id(self, default_plane_id):
+        """Sets the default_plane_id of this CentralNetwork.
+
+        中心网络默认平面的ID。
+
+        :param default_plane_id: The default_plane_id of this CentralNetwork.
+        :type default_plane_id: str
+        """
+        self._default_plane_id = default_plane_id
+
+    @property
     def planes(self):
         """Gets the planes of this CentralNetwork.
 
@@ -378,28 +399,6 @@ class CentralNetwork:
         :type connections: list[:class:`huaweicloudsdkcc.v3.CentralNetworkConnectionInfo`]
         """
         self._connections = connections
-
-    @property
-    def default_plane_id(self):
-        """Gets the default_plane_id of this CentralNetwork.
-
-        资源ID标识符。
-
-        :return: The default_plane_id of this CentralNetwork.
-        :rtype: str
-        """
-        return self._default_plane_id
-
-    @default_plane_id.setter
-    def default_plane_id(self, default_plane_id):
-        """Sets the default_plane_id of this CentralNetwork.
-
-        资源ID标识符。
-
-        :param default_plane_id: The default_plane_id of this CentralNetwork.
-        :type default_plane_id: str
-        """
-        self._default_plane_id = default_plane_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

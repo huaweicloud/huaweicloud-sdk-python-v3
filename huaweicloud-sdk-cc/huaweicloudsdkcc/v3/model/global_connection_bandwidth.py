@@ -73,13 +73,13 @@ class GlobalConnectionBandwidth:
 
         The model defined in huaweicloud sdk
 
-        :param id: 资源ID标识符。
+        :param id: 实例ID。
         :type id: str
         :param name: 实例名字。
         :type name: str
         :param description: 实例描述。不支持 &lt;&gt;。
         :type description: str
-        :param domain_id: 实例所属帐号ID。
+        :param domain_id: 实例所属账号ID。
         :type domain_id: str
         :param bordercross: 功能说明：全域互联带宽是否跨境，判断依据：带宽是否涉及从中国大陆到其他国家。 取值范围：True：跨境；False：非跨境 
         :type bordercross: bool
@@ -89,7 +89,7 @@ class GlobalConnectionBandwidth:
         :type binding_service: str
         :param enterprise_project_id: 实例所属企业项目ID。
         :type enterprise_project_id: str
-        :param charge_mode: 功能说明：描述计费类型，描述可选计费类型。默认开放按带宽计费，传统95计费租户白名单控制。 取值范围：     bwd: 按带宽计费     95: 按传统型95计费
+        :param charge_mode: 功能说明：描述计费类型，描述可选计费类型。默认开放按带宽计费，传统95计费租户白名单控制。 取值范围：     bwd: 按带宽计费     95: 按传统型95计费     95avr: 按传统型日95计费
         :type charge_mode: str
         :param size: 功能说明：全域互联带宽实例中的带宽值大小，单位Mbit/s。 取值范围：2-300Mbit/s
         :type size: int
@@ -149,23 +149,18 @@ class GlobalConnectionBandwidth:
         self.discriminator = None
 
         self.id = id
-        if name is not None:
-            self.name = name
+        self.name = name
         if description is not None:
             self.description = description
         self.domain_id = domain_id
-        if bordercross is not None:
-            self.bordercross = bordercross
-        if type is not None:
-            self.type = type
+        self.bordercross = bordercross
+        self.type = type
         if binding_service is not None:
             self.binding_service = binding_service
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
-        if charge_mode is not None:
-            self.charge_mode = charge_mode
-        if size is not None:
-            self.size = size
+        self.charge_mode = charge_mode
+        self.size = size
         if sla_level is not None:
             self.sla_level = sla_level
         if local_area is not None:
@@ -195,7 +190,7 @@ class GlobalConnectionBandwidth:
     def id(self):
         """Gets the id of this GlobalConnectionBandwidth.
 
-        资源ID标识符。
+        实例ID。
 
         :return: The id of this GlobalConnectionBandwidth.
         :rtype: str
@@ -206,7 +201,7 @@ class GlobalConnectionBandwidth:
     def id(self, id):
         """Sets the id of this GlobalConnectionBandwidth.
 
-        资源ID标识符。
+        实例ID。
 
         :param id: The id of this GlobalConnectionBandwidth.
         :type id: str
@@ -261,7 +256,7 @@ class GlobalConnectionBandwidth:
     def domain_id(self):
         """Gets the domain_id of this GlobalConnectionBandwidth.
 
-        实例所属帐号ID。
+        实例所属账号ID。
 
         :return: The domain_id of this GlobalConnectionBandwidth.
         :rtype: str
@@ -272,7 +267,7 @@ class GlobalConnectionBandwidth:
     def domain_id(self, domain_id):
         """Sets the domain_id of this GlobalConnectionBandwidth.
 
-        实例所属帐号ID。
+        实例所属账号ID。
 
         :param domain_id: The domain_id of this GlobalConnectionBandwidth.
         :type domain_id: str
@@ -371,7 +366,7 @@ class GlobalConnectionBandwidth:
     def charge_mode(self):
         """Gets the charge_mode of this GlobalConnectionBandwidth.
 
-        功能说明：描述计费类型，描述可选计费类型。默认开放按带宽计费，传统95计费租户白名单控制。 取值范围：     bwd: 按带宽计费     95: 按传统型95计费
+        功能说明：描述计费类型，描述可选计费类型。默认开放按带宽计费，传统95计费租户白名单控制。 取值范围：     bwd: 按带宽计费     95: 按传统型95计费     95avr: 按传统型日95计费
 
         :return: The charge_mode of this GlobalConnectionBandwidth.
         :rtype: str
@@ -382,7 +377,7 @@ class GlobalConnectionBandwidth:
     def charge_mode(self, charge_mode):
         """Sets the charge_mode of this GlobalConnectionBandwidth.
 
-        功能说明：描述计费类型，描述可选计费类型。默认开放按带宽计费，传统95计费租户白名单控制。 取值范围：     bwd: 按带宽计费     95: 按传统型95计费
+        功能说明：描述计费类型，描述可选计费类型。默认开放按带宽计费，传统95计费租户白名单控制。 取值范围：     bwd: 按带宽计费     95: 按传统型95计费     95avr: 按传统型日95计费
 
         :param charge_mode: The charge_mode of this GlobalConnectionBandwidth.
         :type charge_mode: str

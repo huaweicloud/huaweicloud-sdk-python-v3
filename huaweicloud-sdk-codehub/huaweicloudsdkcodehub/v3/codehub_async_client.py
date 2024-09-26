@@ -2114,6 +2114,154 @@ class CodeHubAsyncClient(Client):
 
         return http_info
 
+    def list_merge_changes_async(self, request):
+        """获取变更文件
+
+        获取变更文件
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListMergeChanges
+        :type request: :class:`huaweicloudsdkcodehub.v3.ListMergeChangesRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ListMergeChangesResponse`
+        """
+        http_info = self._list_merge_changes_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_merge_changes_async_invoker(self, request):
+        http_info = self._list_merge_changes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_merge_changes_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/repositories/{repository_id}/merge-requests/{merge_request_iid}/changes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMergeChangesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+        if 'merge_request_iid' in local_var_params:
+            path_params['merge_request_iid'] = local_var_params['merge_request_iid']
+
+        query_params = []
+        if 'file_path' in local_var_params:
+            query_params.append(('file_path', local_var_params['file_path']))
+        if 'ignore_whitespace_change' in local_var_params:
+            query_params.append(('ignore_whitespace_change', local_var_params['ignore_whitespace_change']))
+        if 'force_encode' in local_var_params:
+            query_params.append(('force_encode', local_var_params['force_encode']))
+        if 'view' in local_var_params:
+            query_params.append(('view', local_var_params['view']))
+        if 'commit_id' in local_var_params:
+            query_params.append(('commit_id', local_var_params['commit_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_merge_changes_trees_async(self, request):
+        """获取变更文件列表
+
+        获取变更文件列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListMergeChangesTrees
+        :type request: :class:`huaweicloudsdkcodehub.v3.ListMergeChangesTreesRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ListMergeChangesTreesResponse`
+        """
+        http_info = self._list_merge_changes_trees_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_merge_changes_trees_async_invoker(self, request):
+        http_info = self._list_merge_changes_trees_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_merge_changes_trees_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/repositories/{repository_id}/merge-requests/{merge_request_iid}/changes-trees",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMergeChangesTreesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+        if 'merge_request_iid' in local_var_params:
+            path_params['merge_request_iid'] = local_var_params['merge_request_iid']
+
+        query_params = []
+        if 'view' in local_var_params:
+            query_params.append(('view', local_var_params['view']))
+        if 'commit_id' in local_var_params:
+            query_params.append(('commit_id', local_var_params['commit_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_merge_request_async(self, request):
         """获取仓库合并请求列表
 
@@ -2160,6 +2308,150 @@ class CodeHubAsyncClient(Client):
             query_params.append(('per_page', local_var_params['per_page']))
         if 'search' in local_var_params:
             query_params.append(('search', local_var_params['search']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_merge_request_reviewers_async(self, request):
+        """根据仓库短ID和合并请求短ID获取检视人信息
+
+        根据仓库短ID和合并请求短ID获取检视人信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListMergeRequestReviewers
+        :type request: :class:`huaweicloudsdkcodehub.v3.ListMergeRequestReviewersRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ListMergeRequestReviewersResponse`
+        """
+        http_info = self._list_merge_request_reviewers_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_merge_request_reviewers_async_invoker(self, request):
+        http_info = self._list_merge_request_reviewers_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_merge_request_reviewers_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/repositories/{repository_id}/merge-requests/{merge_request_iid}/approval-reviewers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMergeRequestReviewersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+        if 'merge_request_iid' in local_var_params:
+            path_params['merge_request_iid'] = local_var_params['merge_request_iid']
+
+        query_params = []
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'per_page' in local_var_params:
+            query_params.append(('per_page', local_var_params['per_page']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_related_commits_async(self, request):
+        """获取关联工作项信息
+
+        获取关联工作项信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListRelatedCommits
+        :type request: :class:`huaweicloudsdkcodehub.v3.ListRelatedCommitsRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ListRelatedCommitsResponse`
+        """
+        http_info = self._list_related_commits_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_related_commits_async_invoker(self, request):
+        http_info = self._list_related_commits_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_related_commits_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/repositories/{repository_uuid}/related-commits",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRelatedCommitsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_uuid' in local_var_params:
+            path_params['repository_uuid'] = local_var_params['repository_uuid']
+
+        query_params = []
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'search' in local_var_params:
+            query_params.append(('search', local_var_params['search']))
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'per_page' in local_var_params:
+            query_params.append(('per_page', local_var_params['per_page']))
 
         header_params = {}
 
@@ -3554,6 +3846,75 @@ class CodeHubAsyncClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_merge_request_approval_state_async(self, request):
+        """合并请求代码审核
+
+        合并请求代码审核
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateMergeRequestApprovalState
+        :type request: :class:`huaweicloudsdkcodehub.v3.UpdateMergeRequestApprovalStateRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.UpdateMergeRequestApprovalStateResponse`
+        """
+        http_info = self._update_merge_request_approval_state_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_merge_request_approval_state_async_invoker(self, request):
+        http_info = self._update_merge_request_approval_state_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_merge_request_approval_state_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/repositories/{repository_id}/merge-requests/{merge_request_iid}/approval",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateMergeRequestApprovalStateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+        if 'merge_request_iid' in local_var_params:
+            path_params['merge_request_iid'] = local_var_params['merge_request_iid']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

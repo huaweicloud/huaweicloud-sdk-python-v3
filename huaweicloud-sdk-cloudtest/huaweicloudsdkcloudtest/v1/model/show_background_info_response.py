@@ -18,138 +18,159 @@ class ShowBackgroundInfoResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'project_uuid': 'str',
-        'cover_file_name': 'str',
-        'background_file_name': 'str',
-        'logo_file_name': 'str'
+        'status': 'str',
+        'result': 'ResultValueBackgroundInfoVo',
+        'error': 'ApiError',
+        'request_id': 'str',
+        'server_address': 'str'
     }
 
     attribute_map = {
-        'project_uuid': 'project_uuid',
-        'cover_file_name': 'cover_file_name',
-        'background_file_name': 'background_file_name',
-        'logo_file_name': 'logo_file_name'
+        'status': 'status',
+        'result': 'result',
+        'error': 'error',
+        'request_id': 'request_id',
+        'server_address': 'server_address'
     }
 
-    def __init__(self, project_uuid=None, cover_file_name=None, background_file_name=None, logo_file_name=None):
+    def __init__(self, status=None, result=None, error=None, request_id=None, server_address=None):
         """ShowBackgroundInfoResponse
 
         The model defined in huaweicloud sdk
 
-        :param project_uuid: 项目id
-        :type project_uuid: str
-        :param cover_file_name: cover文件名称
-        :type cover_file_name: str
-        :param background_file_name: 背景文件名称
-        :type background_file_name: str
-        :param logo_file_name: logo文件名称
-        :type logo_file_name: str
+        :param status: 对外时：success|error; 对内时：ok|failed
+        :type status: str
+        :param result: 
+        :type result: :class:`huaweicloudsdkcloudtest.v1.ResultValueBackgroundInfoVo`
+        :param error: 
+        :type error: :class:`huaweicloudsdkcloudtest.v1.ApiError`
+        :param request_id: 由接口调用方传入，建议使用UUID保证请求的唯一性。
+        :type request_id: str
+        :param server_address: 对内接口才有此属性
+        :type server_address: str
         """
         
         super(ShowBackgroundInfoResponse, self).__init__()
 
-        self._project_uuid = None
-        self._cover_file_name = None
-        self._background_file_name = None
-        self._logo_file_name = None
+        self._status = None
+        self._result = None
+        self._error = None
+        self._request_id = None
+        self._server_address = None
         self.discriminator = None
 
-        if project_uuid is not None:
-            self.project_uuid = project_uuid
-        if cover_file_name is not None:
-            self.cover_file_name = cover_file_name
-        if background_file_name is not None:
-            self.background_file_name = background_file_name
-        if logo_file_name is not None:
-            self.logo_file_name = logo_file_name
+        if status is not None:
+            self.status = status
+        if result is not None:
+            self.result = result
+        if error is not None:
+            self.error = error
+        if request_id is not None:
+            self.request_id = request_id
+        if server_address is not None:
+            self.server_address = server_address
 
     @property
-    def project_uuid(self):
-        """Gets the project_uuid of this ShowBackgroundInfoResponse.
+    def status(self):
+        """Gets the status of this ShowBackgroundInfoResponse.
 
-        项目id
+        对外时：success|error; 对内时：ok|failed
 
-        :return: The project_uuid of this ShowBackgroundInfoResponse.
+        :return: The status of this ShowBackgroundInfoResponse.
         :rtype: str
         """
-        return self._project_uuid
+        return self._status
 
-    @project_uuid.setter
-    def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this ShowBackgroundInfoResponse.
+    @status.setter
+    def status(self, status):
+        """Sets the status of this ShowBackgroundInfoResponse.
 
-        项目id
+        对外时：success|error; 对内时：ok|failed
 
-        :param project_uuid: The project_uuid of this ShowBackgroundInfoResponse.
-        :type project_uuid: str
+        :param status: The status of this ShowBackgroundInfoResponse.
+        :type status: str
         """
-        self._project_uuid = project_uuid
+        self._status = status
 
     @property
-    def cover_file_name(self):
-        """Gets the cover_file_name of this ShowBackgroundInfoResponse.
+    def result(self):
+        """Gets the result of this ShowBackgroundInfoResponse.
 
-        cover文件名称
-
-        :return: The cover_file_name of this ShowBackgroundInfoResponse.
-        :rtype: str
+        :return: The result of this ShowBackgroundInfoResponse.
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ResultValueBackgroundInfoVo`
         """
-        return self._cover_file_name
+        return self._result
 
-    @cover_file_name.setter
-    def cover_file_name(self, cover_file_name):
-        """Sets the cover_file_name of this ShowBackgroundInfoResponse.
+    @result.setter
+    def result(self, result):
+        """Sets the result of this ShowBackgroundInfoResponse.
 
-        cover文件名称
-
-        :param cover_file_name: The cover_file_name of this ShowBackgroundInfoResponse.
-        :type cover_file_name: str
+        :param result: The result of this ShowBackgroundInfoResponse.
+        :type result: :class:`huaweicloudsdkcloudtest.v1.ResultValueBackgroundInfoVo`
         """
-        self._cover_file_name = cover_file_name
+        self._result = result
 
     @property
-    def background_file_name(self):
-        """Gets the background_file_name of this ShowBackgroundInfoResponse.
+    def error(self):
+        """Gets the error of this ShowBackgroundInfoResponse.
 
-        背景文件名称
-
-        :return: The background_file_name of this ShowBackgroundInfoResponse.
-        :rtype: str
+        :return: The error of this ShowBackgroundInfoResponse.
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ApiError`
         """
-        return self._background_file_name
+        return self._error
 
-    @background_file_name.setter
-    def background_file_name(self, background_file_name):
-        """Sets the background_file_name of this ShowBackgroundInfoResponse.
+    @error.setter
+    def error(self, error):
+        """Sets the error of this ShowBackgroundInfoResponse.
 
-        背景文件名称
-
-        :param background_file_name: The background_file_name of this ShowBackgroundInfoResponse.
-        :type background_file_name: str
+        :param error: The error of this ShowBackgroundInfoResponse.
+        :type error: :class:`huaweicloudsdkcloudtest.v1.ApiError`
         """
-        self._background_file_name = background_file_name
+        self._error = error
 
     @property
-    def logo_file_name(self):
-        """Gets the logo_file_name of this ShowBackgroundInfoResponse.
+    def request_id(self):
+        """Gets the request_id of this ShowBackgroundInfoResponse.
 
-        logo文件名称
+        由接口调用方传入，建议使用UUID保证请求的唯一性。
 
-        :return: The logo_file_name of this ShowBackgroundInfoResponse.
+        :return: The request_id of this ShowBackgroundInfoResponse.
         :rtype: str
         """
-        return self._logo_file_name
+        return self._request_id
 
-    @logo_file_name.setter
-    def logo_file_name(self, logo_file_name):
-        """Sets the logo_file_name of this ShowBackgroundInfoResponse.
+    @request_id.setter
+    def request_id(self, request_id):
+        """Sets the request_id of this ShowBackgroundInfoResponse.
 
-        logo文件名称
+        由接口调用方传入，建议使用UUID保证请求的唯一性。
 
-        :param logo_file_name: The logo_file_name of this ShowBackgroundInfoResponse.
-        :type logo_file_name: str
+        :param request_id: The request_id of this ShowBackgroundInfoResponse.
+        :type request_id: str
         """
-        self._logo_file_name = logo_file_name
+        self._request_id = request_id
+
+    @property
+    def server_address(self):
+        """Gets the server_address of this ShowBackgroundInfoResponse.
+
+        对内接口才有此属性
+
+        :return: The server_address of this ShowBackgroundInfoResponse.
+        :rtype: str
+        """
+        return self._server_address
+
+    @server_address.setter
+    def server_address(self, server_address):
+        """Sets the server_address of this ShowBackgroundInfoResponse.
+
+        对内接口才有此属性
+
+        :param server_address: The server_address of this ShowBackgroundInfoResponse.
+        :type server_address: str
+        """
+        self._server_address = server_address
 
     def to_dict(self):
         """Returns the model properties as a dict"""

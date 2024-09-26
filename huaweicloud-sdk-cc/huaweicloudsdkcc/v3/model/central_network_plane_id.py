@@ -29,7 +29,7 @@ class CentralNetworkPlaneId:
 
         The model defined in huaweicloud sdk
 
-        :param central_network_plane_id: 资源ID标识符。
+        :param central_network_plane_id: 中心网络平面ID。
         :type central_network_plane_id: str
         """
         
@@ -44,7 +44,7 @@ class CentralNetworkPlaneId:
     def central_network_plane_id(self):
         """Gets the central_network_plane_id of this CentralNetworkPlaneId.
 
-        资源ID标识符。
+        中心网络平面ID。
 
         :return: The central_network_plane_id of this CentralNetworkPlaneId.
         :rtype: str
@@ -55,7 +55,7 @@ class CentralNetworkPlaneId:
     def central_network_plane_id(self, central_network_plane_id):
         """Sets the central_network_plane_id of this CentralNetworkPlaneId.
 
-        资源ID标识符。
+        中心网络平面ID。
 
         :param central_network_plane_id: The central_network_plane_id of this CentralNetworkPlaneId.
         :type central_network_plane_id: str

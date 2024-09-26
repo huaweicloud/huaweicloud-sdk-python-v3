@@ -35,11 +35,11 @@ class ListSparkJobTemplatesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param type: 类型。
+        :param type: 类型，需要且必须传入spark作为值。
         :type type: str
         :param keyword: 模板名过滤关键字，模糊匹配，获取模板名含有该关键字的所有模板。
         :type keyword: str
-        :param page_size: 每页显示的最大结果行数，范围: [1, 100]。默认值为：50。
+        :param page_size: 每页显示的最大结果行数，范围: [1, 1000]。默认值为：50。
         :type page_size: int
         :param current_page: 当前页码，默认为第一页。
         :type current_page: int
@@ -66,7 +66,7 @@ class ListSparkJobTemplatesRequest:
     def type(self):
         """Gets the type of this ListSparkJobTemplatesRequest.
 
-        类型。
+        类型，需要且必须传入spark作为值。
 
         :return: The type of this ListSparkJobTemplatesRequest.
         :rtype: str
@@ -77,7 +77,7 @@ class ListSparkJobTemplatesRequest:
     def type(self, type):
         """Sets the type of this ListSparkJobTemplatesRequest.
 
-        类型。
+        类型，需要且必须传入spark作为值。
 
         :param type: The type of this ListSparkJobTemplatesRequest.
         :type type: str
@@ -110,7 +110,7 @@ class ListSparkJobTemplatesRequest:
     def page_size(self):
         """Gets the page_size of this ListSparkJobTemplatesRequest.
 
-        每页显示的最大结果行数，范围: [1, 100]。默认值为：50。
+        每页显示的最大结果行数，范围: [1, 1000]。默认值为：50。
 
         :return: The page_size of this ListSparkJobTemplatesRequest.
         :rtype: int
@@ -121,7 +121,7 @@ class ListSparkJobTemplatesRequest:
     def page_size(self, page_size):
         """Sets the page_size of this ListSparkJobTemplatesRequest.
 
-        每页显示的最大结果行数，范围: [1, 100]。默认值为：50。
+        每页显示的最大结果行数，范围: [1, 1000]。默认值为：50。
 
         :param page_size: The page_size of this ListSparkJobTemplatesRequest.
         :type page_size: int

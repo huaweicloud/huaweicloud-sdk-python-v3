@@ -38,8 +38,7 @@ class GcbBorderCross:
         self._bordercross = None
         self.discriminator = None
 
-        if bordercross is not None:
-            self.bordercross = bordercross
+        self.bordercross = bordercross
 
     @property
     def bordercross(self):

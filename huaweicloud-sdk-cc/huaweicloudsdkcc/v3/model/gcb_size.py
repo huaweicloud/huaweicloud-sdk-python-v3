@@ -38,8 +38,7 @@ class GcbSize:
         self._size = None
         self.discriminator = None
 
-        if size is not None:
-            self.size = size
+        self.size = size
 
     @property
     def size(self):

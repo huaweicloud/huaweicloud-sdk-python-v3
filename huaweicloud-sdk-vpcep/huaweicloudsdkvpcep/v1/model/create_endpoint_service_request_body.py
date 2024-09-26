@@ -28,7 +28,8 @@ class CreateEndpointServiceRequestBody:
         'tcp_proxy': 'str',
         'tags': 'list[TagList]',
         'description': 'str',
-        'ip_version': 'str'
+        'ip_version': 'str',
+        'snat_network_id': 'str'
     }
 
     attribute_map = {
@@ -43,10 +44,11 @@ class CreateEndpointServiceRequestBody:
         'tcp_proxy': 'tcp_proxy',
         'tags': 'tags',
         'description': 'description',
-        'ip_version': 'ip_version'
+        'ip_version': 'ip_version',
+        'snat_network_id': 'snat_network_id'
     }
 
-    def __init__(self, port_id=None, service_name=None, vpc_id=None, approval_enabled=None, service_type=None, server_type=None, ip=None, ports=None, tcp_proxy=None, tags=None, description=None, ip_version=None):
+    def __init__(self, port_id=None, service_name=None, vpc_id=None, approval_enabled=None, service_type=None, server_type=None, ip=None, ports=None, tcp_proxy=None, tags=None, description=None, ip_version=None, snat_network_id=None):
         """CreateEndpointServiceRequestBody
 
         The model defined in huaweicloud sdk
@@ -75,6 +77,8 @@ class CreateEndpointServiceRequestBody:
         :type description: str
         :param ip_version: 指定终端节点服务的IP版本，仅专业型终端节点服务支持此参数 ● ipv4,  IPv4 ● ipv6,  IPv6
         :type ip_version: str
+        :param snat_network_id: 接口型snat的地址段，ip_version为ipv6时必选。创建服务时使用的VPC内的任意一个网络ID。当服务类型为VIP、VM、ELBV2类型时使用
+        :type snat_network_id: str
         """
         
         
@@ -91,6 +95,7 @@ class CreateEndpointServiceRequestBody:
         self._tags = None
         self._description = None
         self._ip_version = None
+        self._snat_network_id = None
         self.discriminator = None
 
         self.port_id = port_id
@@ -113,6 +118,8 @@ class CreateEndpointServiceRequestBody:
             self.description = description
         if ip_version is not None:
             self.ip_version = ip_version
+        if snat_network_id is not None:
+            self.snat_network_id = snat_network_id
 
     @property
     def port_id(self):
@@ -377,6 +384,28 @@ class CreateEndpointServiceRequestBody:
         :type ip_version: str
         """
         self._ip_version = ip_version
+
+    @property
+    def snat_network_id(self):
+        """Gets the snat_network_id of this CreateEndpointServiceRequestBody.
+
+        接口型snat的地址段，ip_version为ipv6时必选。创建服务时使用的VPC内的任意一个网络ID。当服务类型为VIP、VM、ELBV2类型时使用
+
+        :return: The snat_network_id of this CreateEndpointServiceRequestBody.
+        :rtype: str
+        """
+        return self._snat_network_id
+
+    @snat_network_id.setter
+    def snat_network_id(self, snat_network_id):
+        """Sets the snat_network_id of this CreateEndpointServiceRequestBody.
+
+        接口型snat的地址段，ip_version为ipv6时必选。创建服务时使用的VPC内的任意一个网络ID。当服务类型为VIP、VM、ELBV2类型时使用
+
+        :param snat_network_id: The snat_network_id of this CreateEndpointServiceRequestBody.
+        :type snat_network_id: str
+        """
+        self._snat_network_id = snat_network_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

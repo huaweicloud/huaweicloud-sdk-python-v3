@@ -17,6 +17,8 @@ class AccessConfigurationPort:
     sensitive_list = []
 
     openapi_types = {
+        'operator': 'str',
+        'uid': 'str',
         'target_port': 'int',
         'port': 'int',
         'protocol': 'str',
@@ -28,6 +30,8 @@ class AccessConfigurationPort:
     }
 
     attribute_map = {
+        'operator': 'operator',
+        'uid': 'uid',
         'target_port': 'target_port',
         'port': 'port',
         'protocol': 'protocol',
@@ -38,11 +42,15 @@ class AccessConfigurationPort:
         'elb_id': 'elb_id'
     }
 
-    def __init__(self, target_port=None, port=None, protocol=None, default_certificate=None, certificate=None, policy=None, paths=None, elb_id=None):
+    def __init__(self, operator=None, uid=None, target_port=None, port=None, protocol=None, default_certificate=None, certificate=None, policy=None, paths=None, elb_id=None):
         """AccessConfigurationPort
 
         The model defined in huaweicloud sdk
 
+        :param operator: 配置模式。 - 如果operator值为空，则表示使用全量覆盖模式进行配置，否则表示使用增删改模式进行配置。且此级列表的所有元素的operator值必须同时全为空或者非空。 - 当使用增删改模式时，operator取值支持\&quot;add\&quot;,\&quot;copy\&quot;,\&quot;modify\&quot;,\&quot;delete\&quot;，分别表示新增，复制指定uid的元素修改后新增，修改指定uid的元素，删除指定uid的元素。 - 当operator取值为\&quot;copy\&quot;,\&quot;modify\&quot;,\&quot;delete\&quot;时，uid的值必须为非空，且存在于最后一次生效的配置中。 - 当operator取值为\&quot;copy\&quot;,\&quot;modify\&quot;时，与operator同级别的字段中除uid外的所有字段如不写，置空或者为空列表，则表示保留在最后一次生效配置中指定uid的元素的同一字段的值。 
+        :type operator: str
+        :param uid: 端口配置的uid。
+        :type uid: str
         :param target_port: 监听端口。
         :type target_port: int
         :param port: 访问端口。
@@ -63,6 +71,8 @@ class AccessConfigurationPort:
         
         
 
+        self._operator = None
+        self._uid = None
         self._target_port = None
         self._port = None
         self._protocol = None
@@ -73,6 +83,10 @@ class AccessConfigurationPort:
         self._elb_id = None
         self.discriminator = None
 
+        if operator is not None:
+            self.operator = operator
+        if uid is not None:
+            self.uid = uid
         if target_port is not None:
             self.target_port = target_port
         if port is not None:
@@ -89,6 +103,50 @@ class AccessConfigurationPort:
             self.paths = paths
         if elb_id is not None:
             self.elb_id = elb_id
+
+    @property
+    def operator(self):
+        """Gets the operator of this AccessConfigurationPort.
+
+        配置模式。 - 如果operator值为空，则表示使用全量覆盖模式进行配置，否则表示使用增删改模式进行配置。且此级列表的所有元素的operator值必须同时全为空或者非空。 - 当使用增删改模式时，operator取值支持\"add\",\"copy\",\"modify\",\"delete\"，分别表示新增，复制指定uid的元素修改后新增，修改指定uid的元素，删除指定uid的元素。 - 当operator取值为\"copy\",\"modify\",\"delete\"时，uid的值必须为非空，且存在于最后一次生效的配置中。 - 当operator取值为\"copy\",\"modify\"时，与operator同级别的字段中除uid外的所有字段如不写，置空或者为空列表，则表示保留在最后一次生效配置中指定uid的元素的同一字段的值。 
+
+        :return: The operator of this AccessConfigurationPort.
+        :rtype: str
+        """
+        return self._operator
+
+    @operator.setter
+    def operator(self, operator):
+        """Sets the operator of this AccessConfigurationPort.
+
+        配置模式。 - 如果operator值为空，则表示使用全量覆盖模式进行配置，否则表示使用增删改模式进行配置。且此级列表的所有元素的operator值必须同时全为空或者非空。 - 当使用增删改模式时，operator取值支持\"add\",\"copy\",\"modify\",\"delete\"，分别表示新增，复制指定uid的元素修改后新增，修改指定uid的元素，删除指定uid的元素。 - 当operator取值为\"copy\",\"modify\",\"delete\"时，uid的值必须为非空，且存在于最后一次生效的配置中。 - 当operator取值为\"copy\",\"modify\"时，与operator同级别的字段中除uid外的所有字段如不写，置空或者为空列表，则表示保留在最后一次生效配置中指定uid的元素的同一字段的值。 
+
+        :param operator: The operator of this AccessConfigurationPort.
+        :type operator: str
+        """
+        self._operator = operator
+
+    @property
+    def uid(self):
+        """Gets the uid of this AccessConfigurationPort.
+
+        端口配置的uid。
+
+        :return: The uid of this AccessConfigurationPort.
+        :rtype: str
+        """
+        return self._uid
+
+    @uid.setter
+    def uid(self, uid):
+        """Sets the uid of this AccessConfigurationPort.
+
+        端口配置的uid。
+
+        :param uid: The uid of this AccessConfigurationPort.
+        :type uid: str
+        """
+        self._uid = uid
 
     @property
     def target_port(self):

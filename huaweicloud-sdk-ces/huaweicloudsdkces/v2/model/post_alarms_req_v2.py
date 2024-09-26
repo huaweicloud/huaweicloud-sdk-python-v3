@@ -23,6 +23,7 @@ class PostAlarmsReqV2:
         'resource_group_id': 'str',
         'resources': 'list[list[Dimension]]',
         'alarm_template_id': 'str',
+        'tags': 'list[ResourceTag]',
         'policies': 'list[Policy]',
         'type': 'AlarmType',
         'alarm_notifications': 'list[Notification]',
@@ -41,6 +42,7 @@ class PostAlarmsReqV2:
         'resource_group_id': 'resource_group_id',
         'resources': 'resources',
         'alarm_template_id': 'alarm_template_id',
+        'tags': 'tags',
         'policies': 'policies',
         'type': 'type',
         'alarm_notifications': 'alarm_notifications',
@@ -52,7 +54,7 @@ class PostAlarmsReqV2:
         'notification_enabled': 'notification_enabled'
     }
 
-    def __init__(self, name=None, description=None, namespace=None, resource_group_id=None, resources=None, alarm_template_id=None, policies=None, type=None, alarm_notifications=None, ok_notifications=None, notification_begin_time=None, notification_end_time=None, enterprise_project_id=None, enabled=None, notification_enabled=None):
+    def __init__(self, name=None, description=None, namespace=None, resource_group_id=None, resources=None, alarm_template_id=None, tags=None, policies=None, type=None, alarm_notifications=None, ok_notifications=None, notification_begin_time=None, notification_end_time=None, enterprise_project_id=None, enabled=None, notification_enabled=None):
         """PostAlarmsReqV2
 
         The model defined in huaweicloud sdk
@@ -69,6 +71,8 @@ class PostAlarmsReqV2:
         :type resources: list[list[Dimension]]
         :param alarm_template_id: 告警规则关联告警模板ID
         :type alarm_template_id: str
+        :param tags: 租户标签列表
+        :type tags: list[:class:`huaweicloudsdkces.v2.ResourceTag`]
         :param policies: 告警策略，当alarm_template_id字段为空时必填，不为空时不填
         :type policies: list[:class:`huaweicloudsdkces.v2.Policy`]
         :param type: 
@@ -97,6 +101,7 @@ class PostAlarmsReqV2:
         self._resource_group_id = None
         self._resources = None
         self._alarm_template_id = None
+        self._tags = None
         self._policies = None
         self._type = None
         self._alarm_notifications = None
@@ -117,6 +122,8 @@ class PostAlarmsReqV2:
         self.resources = resources
         if alarm_template_id is not None:
             self.alarm_template_id = alarm_template_id
+        if tags is not None:
+            self.tags = tags
         if policies is not None:
             self.policies = policies
         self.type = type
@@ -264,6 +271,28 @@ class PostAlarmsReqV2:
         :type alarm_template_id: str
         """
         self._alarm_template_id = alarm_template_id
+
+    @property
+    def tags(self):
+        """Gets the tags of this PostAlarmsReqV2.
+
+        租户标签列表
+
+        :return: The tags of this PostAlarmsReqV2.
+        :rtype: list[:class:`huaweicloudsdkces.v2.ResourceTag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this PostAlarmsReqV2.
+
+        租户标签列表
+
+        :param tags: The tags of this PostAlarmsReqV2.
+        :type tags: list[:class:`huaweicloudsdkces.v2.ResourceTag`]
+        """
+        self._tags = tags
 
     @property
     def policies(self):

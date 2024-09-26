@@ -32,7 +32,7 @@ class CreateNetworkInstanceResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param request_id: 资源ID标识符。
+        :param request_id: 请求ID。
         :type request_id: str
         :param network_instance: 
         :type network_instance: :class:`huaweicloudsdkcc.v3.NetworkInstance`
@@ -51,7 +51,7 @@ class CreateNetworkInstanceResponse(SdkResponse):
     def request_id(self):
         """Gets the request_id of this CreateNetworkInstanceResponse.
 
-        资源ID标识符。
+        请求ID。
 
         :return: The request_id of this CreateNetworkInstanceResponse.
         :rtype: str
@@ -62,7 +62,7 @@ class CreateNetworkInstanceResponse(SdkResponse):
     def request_id(self, request_id):
         """Sets the request_id of this CreateNetworkInstanceResponse.
 
-        资源ID标识符。
+        请求ID。
 
         :param request_id: The request_id of this CreateNetworkInstanceResponse.
         :type request_id: str

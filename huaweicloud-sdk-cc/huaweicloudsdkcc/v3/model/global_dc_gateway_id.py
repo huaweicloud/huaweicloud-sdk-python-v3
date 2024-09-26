@@ -29,7 +29,7 @@ class GlobalDcGatewayId:
 
         The model defined in huaweicloud sdk
 
-        :param global_dc_gateway_id: 资源ID标识符。
+        :param global_dc_gateway_id: Gdgw的ID。
         :type global_dc_gateway_id: str
         """
         
@@ -44,7 +44,7 @@ class GlobalDcGatewayId:
     def global_dc_gateway_id(self):
         """Gets the global_dc_gateway_id of this GlobalDcGatewayId.
 
-        资源ID标识符。
+        Gdgw的ID。
 
         :return: The global_dc_gateway_id of this GlobalDcGatewayId.
         :rtype: str
@@ -55,7 +55,7 @@ class GlobalDcGatewayId:
     def global_dc_gateway_id(self, global_dc_gateway_id):
         """Sets the global_dc_gateway_id of this GlobalDcGatewayId.
 
-        资源ID标识符。
+        Gdgw的ID。
 
         :param global_dc_gateway_id: The global_dc_gateway_id of this GlobalDcGatewayId.
         :type global_dc_gateway_id: str

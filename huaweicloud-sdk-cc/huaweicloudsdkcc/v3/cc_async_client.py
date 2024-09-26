@@ -3979,6 +3979,536 @@ class CcAsyncClient(Client):
 
         return http_info
 
+    def batch_create_gcb_resource_tags_async(self, request):
+        """批量添加账户全域互联带宽资源标签
+
+        TMS批量添加资源标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchCreateGcbResourceTags
+        :type request: :class:`huaweicloudsdkcc.v3.BatchCreateGcbResourceTagsRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.BatchCreateGcbResourceTagsResponse`
+        """
+        http_info = self._batch_create_gcb_resource_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_create_gcb_resource_tags_async_invoker(self, request):
+        http_info = self._batch_create_gcb_resource_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_create_gcb_resource_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/gcb/{resource_id}/tags/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateGcbResourceTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_gcb_resource_tags_async(self, request):
+        """批量删除账户全域互联带宽资源标签
+
+        批量删除账户全域互联带宽资源标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteGcbResourceTags
+        :type request: :class:`huaweicloudsdkcc.v3.BatchDeleteGcbResourceTagsRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.BatchDeleteGcbResourceTagsResponse`
+        """
+        http_info = self._batch_delete_gcb_resource_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_gcb_resource_tags_async_invoker(self, request):
+        http_info = self._batch_delete_gcb_resource_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_gcb_resource_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/gcb/{resource_id}/tags/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteGcbResourceTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def count_gcb_resource_by_tag_async(self, request):
+        """查询账户全域互联带宽资源标签数量
+
+        查询账户全域互联带宽资源标签数量
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CountGcbResourceByTag
+        :type request: :class:`huaweicloudsdkcc.v3.CountGcbResourceByTagRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.CountGcbResourceByTagResponse`
+        """
+        http_info = self._count_gcb_resource_by_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def count_gcb_resource_by_tag_async_invoker(self, request):
+        http_info = self._count_gcb_resource_by_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _count_gcb_resource_by_tag_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/gcb/resource-instances/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "CountGcbResourceByTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_gcb_resource_tag_async(self, request):
+        """添加账户全域互联带宽资源标签
+
+        添加账户全域互联带宽资源标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateGcbResourceTag
+        :type request: :class:`huaweicloudsdkcc.v3.CreateGcbResourceTagRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.CreateGcbResourceTagResponse`
+        """
+        http_info = self._create_gcb_resource_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_gcb_resource_tag_async_invoker(self, request):
+        http_info = self._create_gcb_resource_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_gcb_resource_tag_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/gcb/{resource_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateGcbResourceTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_gcb_resource_tag_async(self, request):
+        """删除账户全域互联带宽资源标签
+
+        删除账户全域互联带宽资源标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteGcbResourceTag
+        :type request: :class:`huaweicloudsdkcc.v3.DeleteGcbResourceTagRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.DeleteGcbResourceTagResponse`
+        """
+        http_info = self._delete_gcb_resource_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_gcb_resource_tag_async_invoker(self, request):
+        http_info = self._delete_gcb_resource_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_gcb_resource_tag_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/gcb/{resource_id}/tags/{tag_key}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteGcbResourceTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+        if 'tag_key' in local_var_params:
+            path_params['tag_key'] = local_var_params['tag_key']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_gcb_resource_by_tag_async(self, request):
+        """查询账户全域互联带宽资源实例列表
+
+        查询账户全域互联带宽资源实例列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListGcbResourceByTag
+        :type request: :class:`huaweicloudsdkcc.v3.ListGcbResourceByTagRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.ListGcbResourceByTagResponse`
+        """
+        http_info = self._list_gcb_resource_by_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_gcb_resource_by_tag_async_invoker(self, request):
+        http_info = self._list_gcb_resource_by_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_gcb_resource_by_tag_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/gcb/resource-instances/filter",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGcbResourceByTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_gcb_resource_tags_async(self, request):
+        """查询账户全域互联带宽资源的标签
+
+        查询账户全域互联带宽资源的标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListGcbResourceTags
+        :type request: :class:`huaweicloudsdkcc.v3.ListGcbResourceTagsRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.ListGcbResourceTagsResponse`
+        """
+        http_info = self._list_gcb_resource_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_gcb_resource_tags_async_invoker(self, request):
+        http_info = self._list_gcb_resource_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_gcb_resource_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/gcb/{resource_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGcbResourceTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_gcb_tenant_tags_async(self, request):
+        """查询账户全域互联带宽所有资源标签
+
+        查询账户全域互联带宽所有资源标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListGcbTenantTags
+        :type request: :class:`huaweicloudsdkcc.v3.ListGcbTenantTagsRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.ListGcbTenantTagsResponse`
+        """
+        http_info = self._list_gcb_tenant_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_gcb_tenant_tags_async_invoker(self, request):
+        http_info = self._list_gcb_tenant_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_gcb_tenant_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/gcb/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGcbTenantTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def associate_global_connection_bandwidth_instance_async(self, request):
         """全域互联带宽绑定实例
 
@@ -4428,6 +4958,10 @@ class CcAsyncClient(Client):
         if 'id' in local_var_params:
             query_params.append(('id', local_var_params['id']))
             collection_formats['id'] = 'csv'
+        if 'name_en' in local_var_params:
+            query_params.append(('name_en', local_var_params['name_en']))
+        if 'name_cn' in local_var_params:
+            query_params.append(('name_cn', local_var_params['name_cn']))
         if 'site_code' in local_var_params:
             query_params.append(('site_code', local_var_params['site_code']))
         if 'site_type' in local_var_params:
@@ -4587,12 +5121,21 @@ class CcAsyncClient(Client):
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
             collection_formats['enterprise_project_id'] = 'csv'
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+            collection_formats['instance_id'] = 'csv'
+        if 'instance_type' in local_var_params:
+            query_params.append(('instance_type', local_var_params['instance_type']))
+            collection_formats['instance_type'] = 'csv'
         if 'binding_service' in local_var_params:
             query_params.append(('binding_service', local_var_params['binding_service']))
             collection_formats['binding_service'] = 'csv'
         if 'type' in local_var_params:
             query_params.append(('type', local_var_params['type']))
             collection_formats['type'] = 'csv'
+        if 'admin_state' in local_var_params:
+            query_params.append(('admin_state', local_var_params['admin_state']))
+            collection_formats['admin_state'] = 'csv'
         if 'charge_mode' in local_var_params:
             query_params.append(('charge_mode', local_var_params['charge_mode']))
             collection_formats['charge_mode'] = 'csv'

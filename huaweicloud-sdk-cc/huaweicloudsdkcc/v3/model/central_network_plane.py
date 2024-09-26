@@ -35,7 +35,7 @@ class CentralNetworkPlane:
 
         The model defined in huaweicloud sdk
 
-        :param id: 资源ID标识符。
+        :param id: 实例ID。
         :type id: str
         :param name: 实例名字。
         :type name: str
@@ -64,7 +64,7 @@ class CentralNetworkPlane:
     def id(self):
         """Gets the id of this CentralNetworkPlane.
 
-        资源ID标识符。
+        实例ID。
 
         :return: The id of this CentralNetworkPlane.
         :rtype: str
@@ -75,7 +75,7 @@ class CentralNetworkPlane:
     def id(self, id):
         """Sets the id of this CentralNetworkPlane.
 
-        资源ID标识符。
+        实例ID。
 
         :param id: The id of this CentralNetworkPlane.
         :type id: str

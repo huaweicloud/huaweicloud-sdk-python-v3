@@ -31,7 +31,7 @@ class AssociateGlobalConnectionBandwidthInstanceRequest:
 
         The model defined in huaweicloud sdk
 
-        :param id: 资源的Id。
+        :param id: 实例ID。
         :type id: str
         :param body: Body of the AssociateGlobalConnectionBandwidthInstanceRequest
         :type body: :class:`huaweicloudsdkcc.v3.AssociateGlobalConnectionBandwidthInstanceRequestBody`
@@ -51,7 +51,7 @@ class AssociateGlobalConnectionBandwidthInstanceRequest:
     def id(self):
         """Gets the id of this AssociateGlobalConnectionBandwidthInstanceRequest.
 
-        资源的Id。
+        实例ID。
 
         :return: The id of this AssociateGlobalConnectionBandwidthInstanceRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class AssociateGlobalConnectionBandwidthInstanceRequest:
     def id(self, id):
         """Sets the id of this AssociateGlobalConnectionBandwidthInstanceRequest.
 
-        资源的Id。
+        实例ID。
 
         :param id: The id of this AssociateGlobalConnectionBandwidthInstanceRequest.
         :type id: str

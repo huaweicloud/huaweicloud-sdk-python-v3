@@ -23,7 +23,7 @@ class ShowTestCaseDetailResponse(SdkResponse):
         'service_id': 'int',
         'name': 'str',
         'testcase_number': 'str',
-        'rank_id': 'str',
+        'rank_id': 'int',
         'status_id': 'str',
         'assigned_user': 'AssignedUserInfo',
         'execute_count': 'int',
@@ -65,7 +65,7 @@ class ShowTestCaseDetailResponse(SdkResponse):
         :param testcase_number: 测试用例编号
         :type testcase_number: str
         :param rank_id: 测试用例等级
-        :type rank_id: str
+        :type rank_id: int
         :param status_id: 测试用例状态
         :type status_id: str
         :param assigned_user: 
@@ -243,7 +243,7 @@ class ShowTestCaseDetailResponse(SdkResponse):
         测试用例等级
 
         :return: The rank_id of this ShowTestCaseDetailResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._rank_id
 
@@ -254,7 +254,7 @@ class ShowTestCaseDetailResponse(SdkResponse):
         测试用例等级
 
         :param rank_id: The rank_id of this ShowTestCaseDetailResponse.
-        :type rank_id: str
+        :type rank_id: int
         """
         self._rank_id = rank_id
 

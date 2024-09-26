@@ -15,6 +15,7 @@ class CentralNetworkStateEnum:
     CREATING = "CREATING"
     DELETING = "DELETING"
     DELETED = "DELETED"
+    RESTORING = "RESTORING"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

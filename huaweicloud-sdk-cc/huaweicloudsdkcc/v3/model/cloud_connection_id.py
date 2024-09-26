@@ -29,7 +29,7 @@ class CloudConnectionId:
 
         The model defined in huaweicloud sdk
 
-        :param cloud_connection_id: 资源ID标识符。
+        :param cloud_connection_id: 云连接实例ID。
         :type cloud_connection_id: str
         """
         
@@ -44,7 +44,7 @@ class CloudConnectionId:
     def cloud_connection_id(self):
         """Gets the cloud_connection_id of this CloudConnectionId.
 
-        资源ID标识符。
+        云连接实例ID。
 
         :return: The cloud_connection_id of this CloudConnectionId.
         :rtype: str
@@ -55,7 +55,7 @@ class CloudConnectionId:
     def cloud_connection_id(self, cloud_connection_id):
         """Sets the cloud_connection_id of this CloudConnectionId.
 
-        资源ID标识符。
+        云连接实例ID。
 
         :param cloud_connection_id: The cloud_connection_id of this CloudConnectionId.
         :type cloud_connection_id: str

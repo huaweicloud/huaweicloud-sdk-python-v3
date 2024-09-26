@@ -19,6 +19,8 @@ class StorageSelectorsMatchLabels:
     openapi_types = {
         'size': 'str',
         'volume_type': 'str',
+        'iops': 'str',
+        'throughput': 'str',
         'metadata_encrypted': 'str',
         'metadata_cmkid': 'str',
         'count': 'str'
@@ -27,12 +29,14 @@ class StorageSelectorsMatchLabels:
     attribute_map = {
         'size': 'size',
         'volume_type': 'volumeType',
+        'iops': 'iops',
+        'throughput': 'throughput',
         'metadata_encrypted': 'metadataEncrypted',
         'metadata_cmkid': 'metadataCmkid',
         'count': 'count'
     }
 
-    def __init__(self, size=None, volume_type=None, metadata_encrypted=None, metadata_cmkid=None, count=None):
+    def __init__(self, size=None, volume_type=None, iops=None, throughput=None, metadata_encrypted=None, metadata_cmkid=None, count=None):
         """StorageSelectorsMatchLabels
 
         The model defined in huaweicloud sdk
@@ -41,6 +45,10 @@ class StorageSelectorsMatchLabels:
         :type size: str
         :param volume_type: 云硬盘类型，目前支持SSD\\GPSSD\\SAS\\ESSD\\SATA等。
         :type volume_type: str
+        :param iops: 匹配的磁盘iops大小，不填则无磁盘iops大小限制。当需要选择GPSSD2或ESSD2类型磁盘时，配置iops来准确选择磁盘。例如：3000.
+        :type iops: str
+        :param throughput: 匹配的磁盘吞吐量大小，不填则无磁盘吞吐量大小限制。当需要选择GPSSD2类型磁盘时，配置throughput来准确选择磁盘。例如：125.
+        :type throughput: str
         :param metadata_encrypted: 磁盘加密标识符，0代表不加密，1代表加密。
         :type metadata_encrypted: str
         :param metadata_cmkid: 加密磁盘的用户主密钥ID，长度为36字节的字符串。
@@ -53,6 +61,8 @@ class StorageSelectorsMatchLabels:
 
         self._size = None
         self._volume_type = None
+        self._iops = None
+        self._throughput = None
         self._metadata_encrypted = None
         self._metadata_cmkid = None
         self._count = None
@@ -62,6 +72,10 @@ class StorageSelectorsMatchLabels:
             self.size = size
         if volume_type is not None:
             self.volume_type = volume_type
+        if iops is not None:
+            self.iops = iops
+        if throughput is not None:
+            self.throughput = throughput
         if metadata_encrypted is not None:
             self.metadata_encrypted = metadata_encrypted
         if metadata_cmkid is not None:
@@ -112,6 +126,50 @@ class StorageSelectorsMatchLabels:
         :type volume_type: str
         """
         self._volume_type = volume_type
+
+    @property
+    def iops(self):
+        """Gets the iops of this StorageSelectorsMatchLabels.
+
+        匹配的磁盘iops大小，不填则无磁盘iops大小限制。当需要选择GPSSD2或ESSD2类型磁盘时，配置iops来准确选择磁盘。例如：3000.
+
+        :return: The iops of this StorageSelectorsMatchLabels.
+        :rtype: str
+        """
+        return self._iops
+
+    @iops.setter
+    def iops(self, iops):
+        """Sets the iops of this StorageSelectorsMatchLabels.
+
+        匹配的磁盘iops大小，不填则无磁盘iops大小限制。当需要选择GPSSD2或ESSD2类型磁盘时，配置iops来准确选择磁盘。例如：3000.
+
+        :param iops: The iops of this StorageSelectorsMatchLabels.
+        :type iops: str
+        """
+        self._iops = iops
+
+    @property
+    def throughput(self):
+        """Gets the throughput of this StorageSelectorsMatchLabels.
+
+        匹配的磁盘吞吐量大小，不填则无磁盘吞吐量大小限制。当需要选择GPSSD2类型磁盘时，配置throughput来准确选择磁盘。例如：125.
+
+        :return: The throughput of this StorageSelectorsMatchLabels.
+        :rtype: str
+        """
+        return self._throughput
+
+    @throughput.setter
+    def throughput(self, throughput):
+        """Sets the throughput of this StorageSelectorsMatchLabels.
+
+        匹配的磁盘吞吐量大小，不填则无磁盘吞吐量大小限制。当需要选择GPSSD2类型磁盘时，配置throughput来准确选择磁盘。例如：125.
+
+        :param throughput: The throughput of this StorageSelectorsMatchLabels.
+        :type throughput: str
+        """
+        self._throughput = throughput
 
     @property
     def metadata_encrypted(self):

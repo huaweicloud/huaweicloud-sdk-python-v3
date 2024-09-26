@@ -29,7 +29,7 @@ class InstanceId:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 资源ID标识符。
+        :param instance_id: 网络实例（VPC，VGW）的ID。
         :type instance_id: str
         """
         
@@ -44,7 +44,7 @@ class InstanceId:
     def instance_id(self):
         """Gets the instance_id of this InstanceId.
 
-        资源ID标识符。
+        网络实例（VPC，VGW）的ID。
 
         :return: The instance_id of this InstanceId.
         :rtype: str
@@ -55,7 +55,7 @@ class InstanceId:
     def instance_id(self, instance_id):
         """Sets the instance_id of this InstanceId.
 
-        资源ID标识符。
+        网络实例（VPC，VGW）的ID。
 
         :param instance_id: The instance_id of this InstanceId.
         :type instance_id: str

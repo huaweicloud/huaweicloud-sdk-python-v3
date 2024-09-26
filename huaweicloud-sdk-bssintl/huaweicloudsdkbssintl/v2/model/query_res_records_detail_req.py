@@ -89,9 +89,9 @@ class QueryResRecordsDetailReq:
         :type method: str
         :param sub_customer_id: 企业子账号ID。  说明： 如果method取值不为sub_customer，则此参数无效。如果method取值为sub_customer，则此参数不能为空。
         :type sub_customer_id: str
-        :param statistic_type: 统计类型。默认值为1。 1：按账期2：按天
+        :param statistic_type: 统计类型。默认值为1。 1：按账期2：按天3：按明细
         :type statistic_type: int
-        :param query_type: |参数名称：查询类型。默认值为BILLCYCLE。| |参数的约束及描述：默认值为BILLCYCLE。BILLCYCLE：按月 DAILY：按天 仅当statistic_type&#x3D;2时，支持传递query_type&#x3D;DAILY。该参数不携带或携带值为null或携带为空串时，取默认值BILLCYCLE。|
+        :param query_type: |参数名称：查询类型。默认值为BILLCYCLE。| |参数的约束及描述：默认值为BILLCYCLE。BILLCYCLE：按月 DAILY：按天 仅当statistic_type&#x3D;2或3时，支持传递query_type&#x3D;DAILY。该参数不携带或携带值为null或携带为空串时，取默认值BILLCYCLE。|
         :type query_type: str
         :param bill_cycle_begin: |账期开始时间。格式为YYYY-MM-DD。| |参数的约束及描述：仅当query_type&#x3D;DAILY时，必须传递账期开始时间。该参数不携带或携带值为null或携带为空串时，不作为筛选条件。|
         :type bill_cycle_begin: str
@@ -449,7 +449,7 @@ class QueryResRecordsDetailReq:
     def statistic_type(self):
         """Gets the statistic_type of this QueryResRecordsDetailReq.
 
-        统计类型。默认值为1。 1：按账期2：按天
+        统计类型。默认值为1。 1：按账期2：按天3：按明细
 
         :return: The statistic_type of this QueryResRecordsDetailReq.
         :rtype: int
@@ -460,7 +460,7 @@ class QueryResRecordsDetailReq:
     def statistic_type(self, statistic_type):
         """Sets the statistic_type of this QueryResRecordsDetailReq.
 
-        统计类型。默认值为1。 1：按账期2：按天
+        统计类型。默认值为1。 1：按账期2：按天3：按明细
 
         :param statistic_type: The statistic_type of this QueryResRecordsDetailReq.
         :type statistic_type: int
@@ -471,7 +471,7 @@ class QueryResRecordsDetailReq:
     def query_type(self):
         """Gets the query_type of this QueryResRecordsDetailReq.
 
-        |参数名称：查询类型。默认值为BILLCYCLE。| |参数的约束及描述：默认值为BILLCYCLE。BILLCYCLE：按月 DAILY：按天 仅当statistic_type=2时，支持传递query_type=DAILY。该参数不携带或携带值为null或携带为空串时，取默认值BILLCYCLE。|
+        |参数名称：查询类型。默认值为BILLCYCLE。| |参数的约束及描述：默认值为BILLCYCLE。BILLCYCLE：按月 DAILY：按天 仅当statistic_type=2或3时，支持传递query_type=DAILY。该参数不携带或携带值为null或携带为空串时，取默认值BILLCYCLE。|
 
         :return: The query_type of this QueryResRecordsDetailReq.
         :rtype: str
@@ -482,7 +482,7 @@ class QueryResRecordsDetailReq:
     def query_type(self, query_type):
         """Sets the query_type of this QueryResRecordsDetailReq.
 
-        |参数名称：查询类型。默认值为BILLCYCLE。| |参数的约束及描述：默认值为BILLCYCLE。BILLCYCLE：按月 DAILY：按天 仅当statistic_type=2时，支持传递query_type=DAILY。该参数不携带或携带值为null或携带为空串时，取默认值BILLCYCLE。|
+        |参数名称：查询类型。默认值为BILLCYCLE。| |参数的约束及描述：默认值为BILLCYCLE。BILLCYCLE：按月 DAILY：按天 仅当statistic_type=2或3时，支持传递query_type=DAILY。该参数不携带或携带值为null或携带为空串时，取默认值BILLCYCLE。|
 
         :param query_type: The query_type of this QueryResRecordsDetailReq.
         :type query_type: str

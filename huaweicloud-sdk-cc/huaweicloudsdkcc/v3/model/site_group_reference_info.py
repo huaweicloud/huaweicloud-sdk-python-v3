@@ -35,7 +35,7 @@ class SiteGroupReferenceInfo:
 
         The model defined in huaweicloud sdk
 
-        :param id: 资源ID标识符。
+        :param id: 实例ID。
         :type id: str
         :param description: 实例描述。不支持 &lt;&gt;。
         :type description: str
@@ -65,7 +65,7 @@ class SiteGroupReferenceInfo:
     def id(self):
         """Gets the id of this SiteGroupReferenceInfo.
 
-        资源ID标识符。
+        实例ID。
 
         :return: The id of this SiteGroupReferenceInfo.
         :rtype: str
@@ -76,7 +76,7 @@ class SiteGroupReferenceInfo:
     def id(self, id):
         """Sets the id of this SiteGroupReferenceInfo.
 
-        资源ID标识符。
+        实例ID。
 
         :param id: The id of this SiteGroupReferenceInfo.
         :type id: str

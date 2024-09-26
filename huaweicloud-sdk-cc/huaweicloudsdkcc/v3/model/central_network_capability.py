@@ -37,9 +37,9 @@ class CentralNetworkCapability:
 
         The model defined in huaweicloud sdk
 
-        :param id: 资源ID标识符。
+        :param id: 实例ID。
         :type id: str
-        :param domain_id: 实例所属帐号ID。
+        :param domain_id: 实例所属账号ID。
         :type domain_id: str
         :param capability: 
         :type capability: :class:`huaweicloudsdkcc.v3.CentralNetworkCapabilityEnum`
@@ -60,7 +60,7 @@ class CentralNetworkCapability:
     def id(self):
         """Gets the id of this CentralNetworkCapability.
 
-        资源ID标识符。
+        实例ID。
 
         :return: The id of this CentralNetworkCapability.
         :rtype: str
@@ -71,7 +71,7 @@ class CentralNetworkCapability:
     def id(self, id):
         """Sets the id of this CentralNetworkCapability.
 
-        资源ID标识符。
+        实例ID。
 
         :param id: The id of this CentralNetworkCapability.
         :type id: str
@@ -82,7 +82,7 @@ class CentralNetworkCapability:
     def domain_id(self):
         """Gets the domain_id of this CentralNetworkCapability.
 
-        实例所属帐号ID。
+        实例所属账号ID。
 
         :return: The domain_id of this CentralNetworkCapability.
         :rtype: str
@@ -93,7 +93,7 @@ class CentralNetworkCapability:
     def domain_id(self, domain_id):
         """Sets the domain_id of this CentralNetworkCapability.
 
-        实例所属帐号ID。
+        实例所属账号ID。
 
         :param domain_id: The domain_id of this CentralNetworkCapability.
         :type domain_id: str

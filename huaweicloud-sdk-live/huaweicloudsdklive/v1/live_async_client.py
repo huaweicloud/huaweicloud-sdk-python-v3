@@ -3897,6 +3897,367 @@ class LiveAsyncClient(Client):
 
         return http_info
 
+    def create_harvest_task_async(self, request):
+        """创建Live2VOD任务
+
+        创建Live2VOD任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateHarvestTask
+        :type request: :class:`huaweicloudsdklive.v1.CreateHarvestTaskRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.CreateHarvestTaskResponse`
+        """
+        http_info = self._create_harvest_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_harvest_task_async_invoker(self, request):
+        http_info = self._create_harvest_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_harvest_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/ott/harvest/task",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateHarvestTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'access_control_allow_internal' in local_var_params:
+            header_params['Access-Control-Allow-Internal'] = local_var_params['access_control_allow_internal']
+        if 'access_control_allow_external' in local_var_params:
+            header_params['Access-Control-Allow-External'] = local_var_params['access_control_allow_external']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_harvest_task_async(self, request):
+        """删除Live2VOD任务
+
+        删除Live2VOD任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteHarvestTask
+        :type request: :class:`huaweicloudsdklive.v1.DeleteHarvestTaskRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.DeleteHarvestTaskResponse`
+        """
+        http_info = self._delete_harvest_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_harvest_task_async_invoker(self, request):
+        http_info = self._delete_harvest_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_harvest_task_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/ott/harvest/task",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteHarvestTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'job_id' in local_var_params:
+            query_params.append(('job_id', local_var_params['job_id']))
+
+        header_params = {}
+        if 'access_control_allow_internal' in local_var_params:
+            header_params['Access-Control-Allow-Internal'] = local_var_params['access_control_allow_internal']
+        if 'access_control_allow_external' in local_var_params:
+            header_params['Access-Control-Allow-External'] = local_var_params['access_control_allow_external']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_harvest_task_async(self, request):
+        """查询Live2VOD任务
+
+        查询Live2VOD任务，支持批量查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListHarvestTask
+        :type request: :class:`huaweicloudsdklive.v1.ListHarvestTaskRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.ListHarvestTaskResponse`
+        """
+        http_info = self._list_harvest_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_harvest_task_async_invoker(self, request):
+        http_info = self._list_harvest_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_harvest_task_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/ott/harvest/task",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHarvestTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'domain' in local_var_params:
+            query_params.append(('domain', local_var_params['domain']))
+        if 'app_name' in local_var_params:
+            query_params.append(('app_name', local_var_params['app_name']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'job_id' in local_var_params:
+            query_params.append(('job_id', local_var_params['job_id']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'event_name' in local_var_params:
+            query_params.append(('event_name', local_var_params['event_name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'access_control_allow_internal' in local_var_params:
+            header_params['Access-Control-Allow-Internal'] = local_var_params['access_control_allow_internal']
+        if 'access_control_allow_external' in local_var_params:
+            header_params['Access-Control-Allow-External'] = local_var_params['access_control_allow_external']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def modify_harvest_task_async(self, request):
+        """修改Live2VOD任务
+
+        修改Live2VOD任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ModifyHarvestTask
+        :type request: :class:`huaweicloudsdklive.v1.ModifyHarvestTaskRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.ModifyHarvestTaskResponse`
+        """
+        http_info = self._modify_harvest_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def modify_harvest_task_async_invoker(self, request):
+        http_info = self._modify_harvest_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _modify_harvest_task_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/ott/harvest/task",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyHarvestTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'access_control_allow_internal' in local_var_params:
+            header_params['Access-Control-Allow-Internal'] = local_var_params['access_control_allow_internal']
+        if 'access_control_allow_external' in local_var_params:
+            header_params['Access-Control-Allow-External'] = local_var_params['access_control_allow_external']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_harvest_job_status_async(self, request):
+        """修改Live2VOD任务状态
+
+        修改Live2VOD任务状态。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateHarvestJobStatus
+        :type request: :class:`huaweicloudsdklive.v1.UpdateHarvestJobStatusRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.UpdateHarvestJobStatusResponse`
+        """
+        http_info = self._update_harvest_job_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_harvest_job_status_async_invoker(self, request):
+        http_info = self._update_harvest_job_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_harvest_job_status_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/ott/harvest/task/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateHarvestJobStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'access_control_allow_internal' in local_var_params:
+            header_params['Access-Control-Allow-Internal'] = local_var_params['access_control_allow_internal']
+        if 'access_control_allow_external' in local_var_params:
+            header_params['Access-Control-Allow-External'] = local_var_params['access_control_allow_external']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_obs_bucket_authority_public_async(self, request):
         """OBS桶授权及取消授权
 

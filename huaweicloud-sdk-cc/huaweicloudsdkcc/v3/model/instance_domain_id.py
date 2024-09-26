@@ -29,7 +29,7 @@ class InstanceDomainId:
 
         The model defined in huaweicloud sdk
 
-        :param instance_domain_id: 实例所属帐号ID。
+        :param instance_domain_id: 网络实例（VPC，VGW）所属账号ID。
         :type instance_domain_id: str
         """
         
@@ -45,7 +45,7 @@ class InstanceDomainId:
     def instance_domain_id(self):
         """Gets the instance_domain_id of this InstanceDomainId.
 
-        实例所属帐号ID。
+        网络实例（VPC，VGW）所属账号ID。
 
         :return: The instance_domain_id of this InstanceDomainId.
         :rtype: str
@@ -56,7 +56,7 @@ class InstanceDomainId:
     def instance_domain_id(self, instance_domain_id):
         """Sets the instance_domain_id of this InstanceDomainId.
 
-        实例所属帐号ID。
+        网络实例（VPC，VGW）所属账号ID。
 
         :param instance_domain_id: The instance_domain_id of this InstanceDomainId.
         :type instance_domain_id: str

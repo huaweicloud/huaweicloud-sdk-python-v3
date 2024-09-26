@@ -32,6 +32,73 @@ class EdgeSecClient(Client):
 
         return client_builder
 
+    def apply_http_policy(self, request):
+        """更新防护策略的域名
+
+        更新防护策略的域名
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ApplyHttpPolicy
+        :type request: :class:`huaweicloudsdkedgesec.v2.ApplyHttpPolicyRequest`
+        :rtype: :class:`huaweicloudsdkedgesec.v2.ApplyHttpPolicyResponse`
+        """
+        http_info = self._apply_http_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def apply_http_policy_invoker(self, request):
+        http_info = self._apply_http_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _apply_http_policy_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/edgesec/http/policies/{policy_id}/hosts",
+            "request_type": request.__class__.__name__,
+            "response_type": "ApplyHttpPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_domains(self, request):
         """创建防护域名
 
@@ -57,6 +124,71 @@ class EdgeSecClient(Client):
             "resource_path": "/v1/edgesec/configuration/domains",
             "request_type": request.__class__.__name__,
             "response_type": "CreateDomainsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_http_policy(self, request):
+        """创建防护策略
+
+        创建防护策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateHttpPolicy
+        :type request: :class:`huaweicloudsdkedgesec.v2.CreateHttpPolicyRequest`
+        :rtype: :class:`huaweicloudsdkedgesec.v2.CreateHttpPolicyResponse`
+        """
+        http_info = self._create_http_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_http_policy_invoker(self, request):
+        http_info = self._create_http_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_http_policy_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/edgesec/http/policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateHttpPolicyResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -137,6 +269,71 @@ class EdgeSecClient(Client):
         query_params = []
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_http_policy(self, request):
+        """删除防护策略
+
+        删除防护策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteHttpPolicy
+        :type request: :class:`huaweicloudsdkedgesec.v2.DeleteHttpPolicyRequest`
+        :rtype: :class:`huaweicloudsdkedgesec.v2.DeleteHttpPolicyResponse`
+        """
+        http_info = self._delete_http_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_http_policy_invoker(self, request):
+        http_info = self._delete_http_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_http_policy_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/edgesec/http/policies/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteHttpPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
 
         header_params = {}
 
@@ -302,6 +499,144 @@ class EdgeSecClient(Client):
 
         return http_info
 
+    def show_http_policies(self, request):
+        """查询防护策略列表
+
+        查询防护策略列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowHttpPolicies
+        :type request: :class:`huaweicloudsdkedgesec.v2.ShowHttpPoliciesRequest`
+        :rtype: :class:`huaweicloudsdkedgesec.v2.ShowHttpPoliciesResponse`
+        """
+        http_info = self._show_http_policies_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_http_policies_invoker(self, request):
+        http_info = self._show_http_policies_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_http_policies_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/edgesec/http/policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowHttpPoliciesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'pagesize' in local_var_params:
+            query_params.append(('pagesize', local_var_params['pagesize']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'hostname' in local_var_params:
+            query_params.append(('hostname', local_var_params['hostname']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_http_policy(self, request):
+        """查询防护策略
+
+        查询防护策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowHttpPolicy
+        :type request: :class:`huaweicloudsdkedgesec.v2.ShowHttpPolicyRequest`
+        :rtype: :class:`huaweicloudsdkedgesec.v2.ShowHttpPolicyResponse`
+        """
+        http_info = self._show_http_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_http_policy_invoker(self, request):
+        http_info = self._show_http_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_http_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/edgesec/http/policies/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowHttpPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_domains(self, request):
         """更新防护域名
 
@@ -338,6 +673,144 @@ class EdgeSecClient(Client):
         path_params = {}
         if 'domain_id' in local_var_params:
             path_params['domain_id'] = local_var_params['domain_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_http_policy(self, request):
+        """更新防护策略
+
+        更新防护策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateHttpPolicy
+        :type request: :class:`huaweicloudsdkedgesec.v2.UpdateHttpPolicyRequest`
+        :rtype: :class:`huaweicloudsdkedgesec.v2.UpdateHttpPolicyResponse`
+        """
+        http_info = self._update_http_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_http_policy_invoker(self, request):
+        http_info = self._update_http_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_http_policy_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/edgesec/http/policies/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateHttpPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_http_policy_rule_status(self, request):
+        """更新防护策略规则开关
+
+        更新防护策略规则开关
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateHttpPolicyRuleStatus
+        :type request: :class:`huaweicloudsdkedgesec.v2.UpdateHttpPolicyRuleStatusRequest`
+        :rtype: :class:`huaweicloudsdkedgesec.v2.UpdateHttpPolicyRuleStatusResponse`
+        """
+        http_info = self._update_http_policy_rule_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_http_policy_rule_status_invoker(self, request):
+        http_info = self._update_http_policy_rule_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_http_policy_rule_status_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/edgesec/http/policies/{policy_id}/{rule_type}/{rule_id}/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateHttpPolicyRuleStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+        if 'rule_type' in local_var_params:
+            path_params['rule_type'] = local_var_params['rule_type']
+        if 'rule_id' in local_var_params:
+            path_params['rule_id'] = local_var_params['rule_id']
 
         query_params = []
 

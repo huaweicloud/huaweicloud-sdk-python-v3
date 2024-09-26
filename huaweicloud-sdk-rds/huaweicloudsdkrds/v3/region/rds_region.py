@@ -18,6 +18,8 @@ class RdsRegion:
                         "https://rds.cn-east-3.myhuaweicloud.com")
     CN_EAST_5 = Region("cn-east-5",
                         "https://rds.cn-east-5.myhuaweicloud.com")
+    CN_EAST_4 = Region("cn-east-4",
+                        "https://rds.cn-east-4.myhuaweicloud.com")
     CN_SOUTH_1 = Region("cn-south-1",
                         "https://rds.cn-south-1.myhuaweicloud.com")
     CN_SOUTHWEST_2 = Region("cn-southwest-2",
@@ -66,6 +68,7 @@ class RdsRegion:
         "cn-east-2": CN_EAST_2,
         "cn-east-3": CN_EAST_3,
         "cn-east-5": CN_EAST_5,
+        "cn-east-4": CN_EAST_4,
         "cn-south-1": CN_SOUTH_1,
         "cn-southwest-2": CN_SOUTHWEST_2,
         "ap-southeast-2": AP_SOUTHEAST_2,

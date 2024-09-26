@@ -17,6 +17,7 @@ class AccessConfigurationDataItems:
     sensitive_list = []
 
     openapi_types = {
+        'operator': 'str',
         'uid': 'str',
         'metadata': 'AccessConfigurationMetadata',
         'type': 'str',
@@ -29,6 +30,7 @@ class AccessConfigurationDataItems:
     }
 
     attribute_map = {
+        'operator': 'operator',
         'uid': 'uid',
         'metadata': 'metadata',
         'type': 'type',
@@ -40,11 +42,13 @@ class AccessConfigurationDataItems:
         'private_ip': 'private_ip'
     }
 
-    def __init__(self, uid=None, metadata=None, type=None, domain_names=None, access_control=None, ports=None, elb_id=None, public_ip=None, private_ip=None):
+    def __init__(self, operator=None, uid=None, metadata=None, type=None, domain_names=None, access_control=None, ports=None, elb_id=None, public_ip=None, private_ip=None):
         """AccessConfigurationDataItems
 
         The model defined in huaweicloud sdk
 
+        :param operator: 配置模式。 - 如果operator值为空，则表示使用全量覆盖模式进行配置，否则表示使用增删改模式进行配置。且此级列表的所有元素的operator值必须同时全为空或者非空。 - 当使用增删改模式时，operator取值支持\&quot;add\&quot;,\&quot;copy\&quot;,\&quot;modify\&quot;,\&quot;delete\&quot;，分别表示新增，复制指定uid的元素修改后新增，修改指定uid的元素，删除指定uid的元素。 - 当operator取值为\&quot;copy\&quot;,\&quot;modify\&quot;,\&quot;delete\&quot;时，uid的值必须为非空，且存在于最后一次生效的配置中。 - 当operator取值为\&quot;copy\&quot;,\&quot;modify\&quot;时，与operator同级别的字段中除uid外的所有字段如不写，置空或者为空列表，则表示保留在最后一次生效配置中指定uid的元素的同一字段的值。 
+        :type operator: str
         :param uid: 访问方式的uid。
         :type uid: str
         :param metadata: 
@@ -67,6 +71,7 @@ class AccessConfigurationDataItems:
         
         
 
+        self._operator = None
         self._uid = None
         self._metadata = None
         self._type = None
@@ -78,6 +83,8 @@ class AccessConfigurationDataItems:
         self._private_ip = None
         self.discriminator = None
 
+        if operator is not None:
+            self.operator = operator
         if uid is not None:
             self.uid = uid
         if metadata is not None:
@@ -96,6 +103,28 @@ class AccessConfigurationDataItems:
             self.public_ip = public_ip
         if private_ip is not None:
             self.private_ip = private_ip
+
+    @property
+    def operator(self):
+        """Gets the operator of this AccessConfigurationDataItems.
+
+        配置模式。 - 如果operator值为空，则表示使用全量覆盖模式进行配置，否则表示使用增删改模式进行配置。且此级列表的所有元素的operator值必须同时全为空或者非空。 - 当使用增删改模式时，operator取值支持\"add\",\"copy\",\"modify\",\"delete\"，分别表示新增，复制指定uid的元素修改后新增，修改指定uid的元素，删除指定uid的元素。 - 当operator取值为\"copy\",\"modify\",\"delete\"时，uid的值必须为非空，且存在于最后一次生效的配置中。 - 当operator取值为\"copy\",\"modify\"时，与operator同级别的字段中除uid外的所有字段如不写，置空或者为空列表，则表示保留在最后一次生效配置中指定uid的元素的同一字段的值。 
+
+        :return: The operator of this AccessConfigurationDataItems.
+        :rtype: str
+        """
+        return self._operator
+
+    @operator.setter
+    def operator(self, operator):
+        """Sets the operator of this AccessConfigurationDataItems.
+
+        配置模式。 - 如果operator值为空，则表示使用全量覆盖模式进行配置，否则表示使用增删改模式进行配置。且此级列表的所有元素的operator值必须同时全为空或者非空。 - 当使用增删改模式时，operator取值支持\"add\",\"copy\",\"modify\",\"delete\"，分别表示新增，复制指定uid的元素修改后新增，修改指定uid的元素，删除指定uid的元素。 - 当operator取值为\"copy\",\"modify\",\"delete\"时，uid的值必须为非空，且存在于最后一次生效的配置中。 - 当operator取值为\"copy\",\"modify\"时，与operator同级别的字段中除uid外的所有字段如不写，置空或者为空列表，则表示保留在最后一次生效配置中指定uid的元素的同一字段的值。 
+
+        :param operator: The operator of this AccessConfigurationDataItems.
+        :type operator: str
+        """
+        self._operator = operator
 
     @property
     def uid(self):

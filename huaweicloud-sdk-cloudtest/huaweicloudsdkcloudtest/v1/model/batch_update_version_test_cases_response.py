@@ -18,138 +18,159 @@ class BatchUpdateVersionTestCasesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'id': 'str',
-        'name': 'str',
-        'success_list': 'list[str]',
-        'failed_list': 'list[str]'
+        'status': 'str',
+        'result': 'ResultValueUpdateTestCaseListVo',
+        'error': 'ApiError',
+        'request_id': 'str',
+        'server_address': 'str'
     }
 
     attribute_map = {
-        'id': 'id',
-        'name': 'name',
-        'success_list': 'success_list',
-        'failed_list': 'failed_list'
+        'status': 'status',
+        'result': 'result',
+        'error': 'error',
+        'request_id': 'request_id',
+        'server_address': 'server_address'
     }
 
-    def __init__(self, id=None, name=None, success_list=None, failed_list=None):
+    def __init__(self, status=None, result=None, error=None, request_id=None, server_address=None):
         """BatchUpdateVersionTestCasesResponse
 
         The model defined in huaweicloud sdk
 
-        :param id: CTS需要返回资源id
-        :type id: str
-        :param name: CTS需要返回资源name
-        :type name: str
-        :param success_list: 成功批量更新用例的id列表
-        :type success_list: list[str]
-        :param failed_list: 没有批量更新用例的id列表
-        :type failed_list: list[str]
+        :param status: 对外时：success|error; 对内时：ok|failed
+        :type status: str
+        :param result: 
+        :type result: :class:`huaweicloudsdkcloudtest.v1.ResultValueUpdateTestCaseListVo`
+        :param error: 
+        :type error: :class:`huaweicloudsdkcloudtest.v1.ApiError`
+        :param request_id: 由接口调用方传入，建议使用UUID保证请求的唯一性。
+        :type request_id: str
+        :param server_address: 对内接口才有此属性
+        :type server_address: str
         """
         
         super(BatchUpdateVersionTestCasesResponse, self).__init__()
 
-        self._id = None
-        self._name = None
-        self._success_list = None
-        self._failed_list = None
+        self._status = None
+        self._result = None
+        self._error = None
+        self._request_id = None
+        self._server_address = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
-        if name is not None:
-            self.name = name
-        if success_list is not None:
-            self.success_list = success_list
-        if failed_list is not None:
-            self.failed_list = failed_list
+        if status is not None:
+            self.status = status
+        if result is not None:
+            self.result = result
+        if error is not None:
+            self.error = error
+        if request_id is not None:
+            self.request_id = request_id
+        if server_address is not None:
+            self.server_address = server_address
 
     @property
-    def id(self):
-        """Gets the id of this BatchUpdateVersionTestCasesResponse.
+    def status(self):
+        """Gets the status of this BatchUpdateVersionTestCasesResponse.
 
-        CTS需要返回资源id
+        对外时：success|error; 对内时：ok|failed
 
-        :return: The id of this BatchUpdateVersionTestCasesResponse.
+        :return: The status of this BatchUpdateVersionTestCasesResponse.
         :rtype: str
         """
-        return self._id
+        return self._status
 
-    @id.setter
-    def id(self, id):
-        """Sets the id of this BatchUpdateVersionTestCasesResponse.
+    @status.setter
+    def status(self, status):
+        """Sets the status of this BatchUpdateVersionTestCasesResponse.
 
-        CTS需要返回资源id
+        对外时：success|error; 对内时：ok|failed
 
-        :param id: The id of this BatchUpdateVersionTestCasesResponse.
-        :type id: str
+        :param status: The status of this BatchUpdateVersionTestCasesResponse.
+        :type status: str
         """
-        self._id = id
+        self._status = status
 
     @property
-    def name(self):
-        """Gets the name of this BatchUpdateVersionTestCasesResponse.
+    def result(self):
+        """Gets the result of this BatchUpdateVersionTestCasesResponse.
 
-        CTS需要返回资源name
+        :return: The result of this BatchUpdateVersionTestCasesResponse.
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ResultValueUpdateTestCaseListVo`
+        """
+        return self._result
 
-        :return: The name of this BatchUpdateVersionTestCasesResponse.
+    @result.setter
+    def result(self, result):
+        """Sets the result of this BatchUpdateVersionTestCasesResponse.
+
+        :param result: The result of this BatchUpdateVersionTestCasesResponse.
+        :type result: :class:`huaweicloudsdkcloudtest.v1.ResultValueUpdateTestCaseListVo`
+        """
+        self._result = result
+
+    @property
+    def error(self):
+        """Gets the error of this BatchUpdateVersionTestCasesResponse.
+
+        :return: The error of this BatchUpdateVersionTestCasesResponse.
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ApiError`
+        """
+        return self._error
+
+    @error.setter
+    def error(self, error):
+        """Sets the error of this BatchUpdateVersionTestCasesResponse.
+
+        :param error: The error of this BatchUpdateVersionTestCasesResponse.
+        :type error: :class:`huaweicloudsdkcloudtest.v1.ApiError`
+        """
+        self._error = error
+
+    @property
+    def request_id(self):
+        """Gets the request_id of this BatchUpdateVersionTestCasesResponse.
+
+        由接口调用方传入，建议使用UUID保证请求的唯一性。
+
+        :return: The request_id of this BatchUpdateVersionTestCasesResponse.
         :rtype: str
         """
-        return self._name
+        return self._request_id
 
-    @name.setter
-    def name(self, name):
-        """Sets the name of this BatchUpdateVersionTestCasesResponse.
+    @request_id.setter
+    def request_id(self, request_id):
+        """Sets the request_id of this BatchUpdateVersionTestCasesResponse.
 
-        CTS需要返回资源name
+        由接口调用方传入，建议使用UUID保证请求的唯一性。
 
-        :param name: The name of this BatchUpdateVersionTestCasesResponse.
-        :type name: str
+        :param request_id: The request_id of this BatchUpdateVersionTestCasesResponse.
+        :type request_id: str
         """
-        self._name = name
+        self._request_id = request_id
 
     @property
-    def success_list(self):
-        """Gets the success_list of this BatchUpdateVersionTestCasesResponse.
+    def server_address(self):
+        """Gets the server_address of this BatchUpdateVersionTestCasesResponse.
 
-        成功批量更新用例的id列表
+        对内接口才有此属性
 
-        :return: The success_list of this BatchUpdateVersionTestCasesResponse.
-        :rtype: list[str]
+        :return: The server_address of this BatchUpdateVersionTestCasesResponse.
+        :rtype: str
         """
-        return self._success_list
+        return self._server_address
 
-    @success_list.setter
-    def success_list(self, success_list):
-        """Sets the success_list of this BatchUpdateVersionTestCasesResponse.
+    @server_address.setter
+    def server_address(self, server_address):
+        """Sets the server_address of this BatchUpdateVersionTestCasesResponse.
 
-        成功批量更新用例的id列表
+        对内接口才有此属性
 
-        :param success_list: The success_list of this BatchUpdateVersionTestCasesResponse.
-        :type success_list: list[str]
+        :param server_address: The server_address of this BatchUpdateVersionTestCasesResponse.
+        :type server_address: str
         """
-        self._success_list = success_list
-
-    @property
-    def failed_list(self):
-        """Gets the failed_list of this BatchUpdateVersionTestCasesResponse.
-
-        没有批量更新用例的id列表
-
-        :return: The failed_list of this BatchUpdateVersionTestCasesResponse.
-        :rtype: list[str]
-        """
-        return self._failed_list
-
-    @failed_list.setter
-    def failed_list(self, failed_list):
-        """Sets the failed_list of this BatchUpdateVersionTestCasesResponse.
-
-        没有批量更新用例的id列表
-
-        :param failed_list: The failed_list of this BatchUpdateVersionTestCasesResponse.
-        :type failed_list: list[str]
-        """
-        self._failed_list = failed_list
+        self._server_address = server_address
 
     def to_dict(self):
         """Returns the model properties as a dict"""

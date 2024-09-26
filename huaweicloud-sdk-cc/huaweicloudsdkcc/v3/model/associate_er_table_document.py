@@ -39,9 +39,9 @@ class AssociateErTableDocument:
         :type project_id: str
         :param region_id: RegionID。
         :type region_id: str
-        :param enterprise_router_id: 资源ID标识符。
+        :param enterprise_router_id: 企业路由器的ID。
         :type enterprise_router_id: str
-        :param enterprise_router_table_id: 资源ID标识符。
+        :param enterprise_router_table_id: 企业路由器的路由表ID。
         :type enterprise_router_table_id: str
         """
         
@@ -106,7 +106,7 @@ class AssociateErTableDocument:
     def enterprise_router_id(self):
         """Gets the enterprise_router_id of this AssociateErTableDocument.
 
-        资源ID标识符。
+        企业路由器的ID。
 
         :return: The enterprise_router_id of this AssociateErTableDocument.
         :rtype: str
@@ -117,7 +117,7 @@ class AssociateErTableDocument:
     def enterprise_router_id(self, enterprise_router_id):
         """Sets the enterprise_router_id of this AssociateErTableDocument.
 
-        资源ID标识符。
+        企业路由器的ID。
 
         :param enterprise_router_id: The enterprise_router_id of this AssociateErTableDocument.
         :type enterprise_router_id: str
@@ -128,7 +128,7 @@ class AssociateErTableDocument:
     def enterprise_router_table_id(self):
         """Gets the enterprise_router_table_id of this AssociateErTableDocument.
 
-        资源ID标识符。
+        企业路由器的路由表ID。
 
         :return: The enterprise_router_table_id of this AssociateErTableDocument.
         :rtype: str
@@ -139,7 +139,7 @@ class AssociateErTableDocument:
     def enterprise_router_table_id(self, enterprise_router_table_id):
         """Sets the enterprise_router_table_id of this AssociateErTableDocument.
 
-        资源ID标识符。
+        企业路由器的路由表ID。
 
         :param enterprise_router_table_id: The enterprise_router_table_id of this AssociateErTableDocument.
         :type enterprise_router_table_id: str

@@ -22,13 +22,13 @@ class CreateCentralNetworkErRouteTableAttachment:
         'enterprise_router_id': 'str',
         'enterprise_router_project_id': 'str',
         'enterprise_router_region_id': 'str',
+        'central_network_plane_id': 'str',
         'attachment_id': 'str',
         'enterprise_router_table_id': 'str',
         'attached_er_table_project_id': 'str',
         'attached_er_table_region_id': 'str',
         'attached_er_id': 'str',
         'attached_er_table_id': 'str',
-        'central_network_plane_id': 'str',
         'hosted_cloud': 'str'
     }
 
@@ -38,17 +38,17 @@ class CreateCentralNetworkErRouteTableAttachment:
         'enterprise_router_id': 'enterprise_router_id',
         'enterprise_router_project_id': 'enterprise_router_project_id',
         'enterprise_router_region_id': 'enterprise_router_region_id',
+        'central_network_plane_id': 'central_network_plane_id',
         'attachment_id': 'attachment_id',
         'enterprise_router_table_id': 'enterprise_router_table_id',
         'attached_er_table_project_id': 'attached_er_table_project_id',
         'attached_er_table_region_id': 'attached_er_table_region_id',
         'attached_er_id': 'attached_er_id',
         'attached_er_table_id': 'attached_er_table_id',
-        'central_network_plane_id': 'central_network_plane_id',
         'hosted_cloud': 'hosted_cloud'
     }
 
-    def __init__(self, name=None, description=None, enterprise_router_id=None, enterprise_router_project_id=None, enterprise_router_region_id=None, attachment_id=None, enterprise_router_table_id=None, attached_er_table_project_id=None, attached_er_table_region_id=None, attached_er_id=None, attached_er_table_id=None, central_network_plane_id=None, hosted_cloud=None):
+    def __init__(self, name=None, description=None, enterprise_router_id=None, enterprise_router_project_id=None, enterprise_router_region_id=None, central_network_plane_id=None, attachment_id=None, enterprise_router_table_id=None, attached_er_table_project_id=None, attached_er_table_region_id=None, attached_er_id=None, attached_er_table_id=None, hosted_cloud=None):
         """CreateCentralNetworkErRouteTableAttachment
 
         The model defined in huaweicloud sdk
@@ -57,26 +57,26 @@ class CreateCentralNetworkErRouteTableAttachment:
         :type name: str
         :param description: 实例描述。不支持 &lt;&gt;。
         :type description: str
-        :param enterprise_router_id: 资源ID标识符。
+        :param enterprise_router_id: 企业路由器的ID。
         :type enterprise_router_id: str
-        :param enterprise_router_project_id: 实例所属项目ID。
+        :param enterprise_router_project_id: 企业路由器的项目ID。
         :type enterprise_router_project_id: str
-        :param enterprise_router_region_id: RegionID。
+        :param enterprise_router_region_id: ER路由器的regionID。
         :type enterprise_router_region_id: str
-        :param attachment_id: 资源ID标识符。
+        :param central_network_plane_id: 中心网络平面ID。
+        :type central_network_plane_id: str
+        :param attachment_id: 中心网络附件对端实例的连接ID，企业路由器的连接ID或者GDGW的连接ID。
         :type attachment_id: str
-        :param enterprise_router_table_id: 资源ID标识符。
+        :param enterprise_router_table_id: 企业路由器的路由表ID。
         :type enterprise_router_table_id: str
         :param attached_er_table_project_id: 实例所属项目ID。
         :type attached_er_table_project_id: str
         :param attached_er_table_region_id: RegionID。
         :type attached_er_table_region_id: str
-        :param attached_er_id: 资源ID标识符。
+        :param attached_er_id: 实例ID。
         :type attached_er_id: str
-        :param attached_er_table_id: 资源ID标识符。
+        :param attached_er_table_id: 实例ID。
         :type attached_er_table_id: str
-        :param central_network_plane_id: 资源ID标识符。
-        :type central_network_plane_id: str
         :param hosted_cloud: - HWCloud (华为云) - Ireland (爱尔兰)
         :type hosted_cloud: str
         """
@@ -88,13 +88,13 @@ class CreateCentralNetworkErRouteTableAttachment:
         self._enterprise_router_id = None
         self._enterprise_router_project_id = None
         self._enterprise_router_region_id = None
+        self._central_network_plane_id = None
         self._attachment_id = None
         self._enterprise_router_table_id = None
         self._attached_er_table_project_id = None
         self._attached_er_table_region_id = None
         self._attached_er_id = None
         self._attached_er_table_id = None
-        self._central_network_plane_id = None
         self._hosted_cloud = None
         self.discriminator = None
 
@@ -104,6 +104,7 @@ class CreateCentralNetworkErRouteTableAttachment:
         self.enterprise_router_id = enterprise_router_id
         self.enterprise_router_project_id = enterprise_router_project_id
         self.enterprise_router_region_id = enterprise_router_region_id
+        self.central_network_plane_id = central_network_plane_id
         if attachment_id is not None:
             self.attachment_id = attachment_id
         self.enterprise_router_table_id = enterprise_router_table_id
@@ -111,7 +112,6 @@ class CreateCentralNetworkErRouteTableAttachment:
         self.attached_er_table_region_id = attached_er_table_region_id
         self.attached_er_id = attached_er_id
         self.attached_er_table_id = attached_er_table_id
-        self.central_network_plane_id = central_network_plane_id
         self.hosted_cloud = hosted_cloud
 
     @property
@@ -162,7 +162,7 @@ class CreateCentralNetworkErRouteTableAttachment:
     def enterprise_router_id(self):
         """Gets the enterprise_router_id of this CreateCentralNetworkErRouteTableAttachment.
 
-        资源ID标识符。
+        企业路由器的ID。
 
         :return: The enterprise_router_id of this CreateCentralNetworkErRouteTableAttachment.
         :rtype: str
@@ -173,7 +173,7 @@ class CreateCentralNetworkErRouteTableAttachment:
     def enterprise_router_id(self, enterprise_router_id):
         """Sets the enterprise_router_id of this CreateCentralNetworkErRouteTableAttachment.
 
-        资源ID标识符。
+        企业路由器的ID。
 
         :param enterprise_router_id: The enterprise_router_id of this CreateCentralNetworkErRouteTableAttachment.
         :type enterprise_router_id: str
@@ -184,7 +184,7 @@ class CreateCentralNetworkErRouteTableAttachment:
     def enterprise_router_project_id(self):
         """Gets the enterprise_router_project_id of this CreateCentralNetworkErRouteTableAttachment.
 
-        实例所属项目ID。
+        企业路由器的项目ID。
 
         :return: The enterprise_router_project_id of this CreateCentralNetworkErRouteTableAttachment.
         :rtype: str
@@ -195,7 +195,7 @@ class CreateCentralNetworkErRouteTableAttachment:
     def enterprise_router_project_id(self, enterprise_router_project_id):
         """Sets the enterprise_router_project_id of this CreateCentralNetworkErRouteTableAttachment.
 
-        实例所属项目ID。
+        企业路由器的项目ID。
 
         :param enterprise_router_project_id: The enterprise_router_project_id of this CreateCentralNetworkErRouteTableAttachment.
         :type enterprise_router_project_id: str
@@ -206,7 +206,7 @@ class CreateCentralNetworkErRouteTableAttachment:
     def enterprise_router_region_id(self):
         """Gets the enterprise_router_region_id of this CreateCentralNetworkErRouteTableAttachment.
 
-        RegionID。
+        ER路由器的regionID。
 
         :return: The enterprise_router_region_id of this CreateCentralNetworkErRouteTableAttachment.
         :rtype: str
@@ -217,7 +217,7 @@ class CreateCentralNetworkErRouteTableAttachment:
     def enterprise_router_region_id(self, enterprise_router_region_id):
         """Sets the enterprise_router_region_id of this CreateCentralNetworkErRouteTableAttachment.
 
-        RegionID。
+        ER路由器的regionID。
 
         :param enterprise_router_region_id: The enterprise_router_region_id of this CreateCentralNetworkErRouteTableAttachment.
         :type enterprise_router_region_id: str
@@ -225,10 +225,32 @@ class CreateCentralNetworkErRouteTableAttachment:
         self._enterprise_router_region_id = enterprise_router_region_id
 
     @property
+    def central_network_plane_id(self):
+        """Gets the central_network_plane_id of this CreateCentralNetworkErRouteTableAttachment.
+
+        中心网络平面ID。
+
+        :return: The central_network_plane_id of this CreateCentralNetworkErRouteTableAttachment.
+        :rtype: str
+        """
+        return self._central_network_plane_id
+
+    @central_network_plane_id.setter
+    def central_network_plane_id(self, central_network_plane_id):
+        """Sets the central_network_plane_id of this CreateCentralNetworkErRouteTableAttachment.
+
+        中心网络平面ID。
+
+        :param central_network_plane_id: The central_network_plane_id of this CreateCentralNetworkErRouteTableAttachment.
+        :type central_network_plane_id: str
+        """
+        self._central_network_plane_id = central_network_plane_id
+
+    @property
     def attachment_id(self):
         """Gets the attachment_id of this CreateCentralNetworkErRouteTableAttachment.
 
-        资源ID标识符。
+        中心网络附件对端实例的连接ID，企业路由器的连接ID或者GDGW的连接ID。
 
         :return: The attachment_id of this CreateCentralNetworkErRouteTableAttachment.
         :rtype: str
@@ -239,7 +261,7 @@ class CreateCentralNetworkErRouteTableAttachment:
     def attachment_id(self, attachment_id):
         """Sets the attachment_id of this CreateCentralNetworkErRouteTableAttachment.
 
-        资源ID标识符。
+        中心网络附件对端实例的连接ID，企业路由器的连接ID或者GDGW的连接ID。
 
         :param attachment_id: The attachment_id of this CreateCentralNetworkErRouteTableAttachment.
         :type attachment_id: str
@@ -250,7 +272,7 @@ class CreateCentralNetworkErRouteTableAttachment:
     def enterprise_router_table_id(self):
         """Gets the enterprise_router_table_id of this CreateCentralNetworkErRouteTableAttachment.
 
-        资源ID标识符。
+        企业路由器的路由表ID。
 
         :return: The enterprise_router_table_id of this CreateCentralNetworkErRouteTableAttachment.
         :rtype: str
@@ -261,7 +283,7 @@ class CreateCentralNetworkErRouteTableAttachment:
     def enterprise_router_table_id(self, enterprise_router_table_id):
         """Sets the enterprise_router_table_id of this CreateCentralNetworkErRouteTableAttachment.
 
-        资源ID标识符。
+        企业路由器的路由表ID。
 
         :param enterprise_router_table_id: The enterprise_router_table_id of this CreateCentralNetworkErRouteTableAttachment.
         :type enterprise_router_table_id: str
@@ -316,7 +338,7 @@ class CreateCentralNetworkErRouteTableAttachment:
     def attached_er_id(self):
         """Gets the attached_er_id of this CreateCentralNetworkErRouteTableAttachment.
 
-        资源ID标识符。
+        实例ID。
 
         :return: The attached_er_id of this CreateCentralNetworkErRouteTableAttachment.
         :rtype: str
@@ -327,7 +349,7 @@ class CreateCentralNetworkErRouteTableAttachment:
     def attached_er_id(self, attached_er_id):
         """Sets the attached_er_id of this CreateCentralNetworkErRouteTableAttachment.
 
-        资源ID标识符。
+        实例ID。
 
         :param attached_er_id: The attached_er_id of this CreateCentralNetworkErRouteTableAttachment.
         :type attached_er_id: str
@@ -338,7 +360,7 @@ class CreateCentralNetworkErRouteTableAttachment:
     def attached_er_table_id(self):
         """Gets the attached_er_table_id of this CreateCentralNetworkErRouteTableAttachment.
 
-        资源ID标识符。
+        实例ID。
 
         :return: The attached_er_table_id of this CreateCentralNetworkErRouteTableAttachment.
         :rtype: str
@@ -349,34 +371,12 @@ class CreateCentralNetworkErRouteTableAttachment:
     def attached_er_table_id(self, attached_er_table_id):
         """Sets the attached_er_table_id of this CreateCentralNetworkErRouteTableAttachment.
 
-        资源ID标识符。
+        实例ID。
 
         :param attached_er_table_id: The attached_er_table_id of this CreateCentralNetworkErRouteTableAttachment.
         :type attached_er_table_id: str
         """
         self._attached_er_table_id = attached_er_table_id
-
-    @property
-    def central_network_plane_id(self):
-        """Gets the central_network_plane_id of this CreateCentralNetworkErRouteTableAttachment.
-
-        资源ID标识符。
-
-        :return: The central_network_plane_id of this CreateCentralNetworkErRouteTableAttachment.
-        :rtype: str
-        """
-        return self._central_network_plane_id
-
-    @central_network_plane_id.setter
-    def central_network_plane_id(self, central_network_plane_id):
-        """Sets the central_network_plane_id of this CreateCentralNetworkErRouteTableAttachment.
-
-        资源ID标识符。
-
-        :param central_network_plane_id: The central_network_plane_id of this CreateCentralNetworkErRouteTableAttachment.
-        :type central_network_plane_id: str
-        """
-        self._central_network_plane_id = central_network_plane_id
 
     @property
     def hosted_cloud(self):

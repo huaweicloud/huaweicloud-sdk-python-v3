@@ -53,7 +53,7 @@ class DomainInfo:
         :type domain_name: str
         :param enterprise_project_id: 企业项目id
         :type enterprise_project_id: str
-        :param dispatch_status: - 调度状态: - 调度异常：dispatch_abnormal - 未调度：un_dispatch - 调度中：dispatching - 已调度：dispatched - 删除中：dispatch_deleting
+        :param dispatch_status: 调度状态： - 调度异常：dispatch_abnormal - 未调度：un_dispatch - 调度中：dispatching - 已调度：dispatched - 删除中：dispatch_deleting 
         :type dispatch_status: str
         :param web_name: 网站名称
         :type web_name: str
@@ -61,7 +61,7 @@ class DomainInfo:
         :type description: str
         :param policy_id: 策略id
         :type policy_id: str
-        :param protect_status: - 防护状态: - 防护中：on - 未防护：off
+        :param protect_status: 防护状态： - 防护中：on - 未防护：off 
         :type protect_status: str
         :param create_time: 创建域名的时间
         :type create_time: int
@@ -174,7 +174,7 @@ class DomainInfo:
     def dispatch_status(self):
         """Gets the dispatch_status of this DomainInfo.
 
-        - 调度状态: - 调度异常：dispatch_abnormal - 未调度：un_dispatch - 调度中：dispatching - 已调度：dispatched - 删除中：dispatch_deleting
+        调度状态： - 调度异常：dispatch_abnormal - 未调度：un_dispatch - 调度中：dispatching - 已调度：dispatched - 删除中：dispatch_deleting 
 
         :return: The dispatch_status of this DomainInfo.
         :rtype: str
@@ -185,7 +185,7 @@ class DomainInfo:
     def dispatch_status(self, dispatch_status):
         """Sets the dispatch_status of this DomainInfo.
 
-        - 调度状态: - 调度异常：dispatch_abnormal - 未调度：un_dispatch - 调度中：dispatching - 已调度：dispatched - 删除中：dispatch_deleting
+        调度状态： - 调度异常：dispatch_abnormal - 未调度：un_dispatch - 调度中：dispatching - 已调度：dispatched - 删除中：dispatch_deleting 
 
         :param dispatch_status: The dispatch_status of this DomainInfo.
         :type dispatch_status: str
@@ -262,7 +262,7 @@ class DomainInfo:
     def protect_status(self):
         """Gets the protect_status of this DomainInfo.
 
-        - 防护状态: - 防护中：on - 未防护：off
+        防护状态： - 防护中：on - 未防护：off 
 
         :return: The protect_status of this DomainInfo.
         :rtype: str
@@ -273,7 +273,7 @@ class DomainInfo:
     def protect_status(self, protect_status):
         """Sets the protect_status of this DomainInfo.
 
-        - 防护状态: - 防护中：on - 未防护：off
+        防护状态： - 防护中：on - 未防护：off 
 
         :param protect_status: The protect_status of this DomainInfo.
         :type protect_status: str

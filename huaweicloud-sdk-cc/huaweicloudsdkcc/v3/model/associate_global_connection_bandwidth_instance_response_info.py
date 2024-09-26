@@ -63,14 +63,11 @@ class AssociateGlobalConnectionBandwidthInstanceResponseInfo:
         self._message = None
         self.discriminator = None
 
-        if resource_id is not None:
-            self.resource_id = resource_id
-        if resource_type is not None:
-            self.resource_type = resource_type
+        self.resource_id = resource_id
+        self.resource_type = resource_type
         if region_id is not None:
             self.region_id = region_id
-        if project_id is not None:
-            self.project_id = project_id
+        self.project_id = project_id
         if result is not None:
             self.result = result
         if message is not None:

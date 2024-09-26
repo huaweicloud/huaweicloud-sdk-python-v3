@@ -35,7 +35,7 @@ class InterRegion:
 
         The model defined in huaweicloud sdk
 
-        :param id: 资源ID标识符。
+        :param id: 实例ID。
         :type id: str
         :param project_id: 实例所属项目ID。
         :type project_id: str
@@ -64,7 +64,7 @@ class InterRegion:
     def id(self):
         """Gets the id of this InterRegion.
 
-        资源ID标识符。
+        实例ID。
 
         :return: The id of this InterRegion.
         :rtype: str
@@ -75,7 +75,7 @@ class InterRegion:
     def id(self, id):
         """Sets the id of this InterRegion.
 
-        资源ID标识符。
+        实例ID。
 
         :param id: The id of this InterRegion.
         :type id: str

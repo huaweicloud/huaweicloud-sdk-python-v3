@@ -77,13 +77,13 @@ class CentralNetworkAttachment:
 
         The model defined in huaweicloud sdk
 
-        :param id: 资源ID标识符。
+        :param id: 实例ID。
         :type id: str
         :param name: 实例名字。
         :type name: str
         :param description: 实例描述。不支持 &lt;&gt;。
         :type description: str
-        :param domain_id: 实例所属帐号ID。
+        :param domain_id: 实例所属账号ID。
         :type domain_id: str
         :param state: 
         :type state: :class:`huaweicloudsdkcc.v3.CentralNetworkConnectionStateEnum`
@@ -91,11 +91,11 @@ class CentralNetworkAttachment:
         :type created_at: datetime
         :param updated_at: 实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
         :type updated_at: datetime
-        :param central_network_id: 资源ID标识符。
+        :param central_network_id: 中心网络ID。
         :type central_network_id: str
-        :param central_network_plane_id: 资源ID标识符。
+        :param central_network_plane_id: 中心网络平面ID。
         :type central_network_plane_id: str
-        :param global_connection_bandwidth_id: 资源ID标识符。
+        :param global_connection_bandwidth_id: 全域互联带宽ID。
         :type global_connection_bandwidth_id: str
         :param bandwidth_type: 
         :type bandwidth_type: :class:`huaweicloudsdkcc.v3.BandwidthTypeEnum`
@@ -103,27 +103,27 @@ class CentralNetworkAttachment:
         :type bandwidth_size: int
         :param is_frozen: 是否冻结
         :type is_frozen: bool
-        :param enterprise_router_id: 资源ID标识符。
+        :param enterprise_router_id: 企业路由器的ID。
         :type enterprise_router_id: str
-        :param enterprise_router_project_id: 实例所属项目ID。
+        :param enterprise_router_project_id: 企业路由器的项目ID。
         :type enterprise_router_project_id: str
-        :param enterprise_router_region_id: RegionID。
+        :param enterprise_router_region_id: ER路由器的regionID。
         :type enterprise_router_region_id: str
-        :param enterprise_router_attachment_id: 资源ID标识符。
+        :param enterprise_router_attachment_id: 企业路由器的连接ID。
         :type enterprise_router_attachment_id: str
         :param attachment_instance_type: 
         :type attachment_instance_type: :class:`huaweicloudsdkcc.v3.AttachmentInstanceTypeEnum`
-        :param attachment_instance_id: 资源ID标识符。
+        :param attachment_instance_id: 中心网络附件对端实例ID，企业路由器的路由表ID或者GDGW的ID。
         :type attachment_instance_id: str
-        :param attachment_id: 资源ID标识符。
+        :param attachment_id: 中心网络附件对端实例的连接ID，企业路由器的连接ID或者GDGW的连接ID。
         :type attachment_id: str
-        :param attachment_instance_project_id: 实例所属项目ID。
+        :param attachment_instance_project_id: 中心网络附件对端实例的项目ID。
         :type attachment_instance_project_id: str
-        :param attachment_instance_region_id: RegionID。
+        :param attachment_instance_region_id: 中心网络附件对端实例的regionID。
         :type attachment_instance_region_id: str
-        :param attachment_instance_site_code: 站点编码定义
+        :param attachment_instance_site_code: 中心网络附件对端实例的站点编码。
         :type attachment_instance_site_code: str
-        :param enterprise_router_site_code: 站点编码定义
+        :param enterprise_router_site_code: 中心网络企业路由器的站点编码。
         :type enterprise_router_site_code: str
         :param specification_value: 
         :type specification_value: :class:`huaweicloudsdkcc.v3.CentralNetworkAttachmentSpecificationValueInfo`
@@ -194,7 +194,7 @@ class CentralNetworkAttachment:
     def id(self):
         """Gets the id of this CentralNetworkAttachment.
 
-        资源ID标识符。
+        实例ID。
 
         :return: The id of this CentralNetworkAttachment.
         :rtype: str
@@ -205,7 +205,7 @@ class CentralNetworkAttachment:
     def id(self, id):
         """Sets the id of this CentralNetworkAttachment.
 
-        资源ID标识符。
+        实例ID。
 
         :param id: The id of this CentralNetworkAttachment.
         :type id: str
@@ -260,7 +260,7 @@ class CentralNetworkAttachment:
     def domain_id(self):
         """Gets the domain_id of this CentralNetworkAttachment.
 
-        实例所属帐号ID。
+        实例所属账号ID。
 
         :return: The domain_id of this CentralNetworkAttachment.
         :rtype: str
@@ -271,7 +271,7 @@ class CentralNetworkAttachment:
     def domain_id(self, domain_id):
         """Sets the domain_id of this CentralNetworkAttachment.
 
-        实例所属帐号ID。
+        实例所属账号ID。
 
         :param domain_id: The domain_id of this CentralNetworkAttachment.
         :type domain_id: str
@@ -344,7 +344,7 @@ class CentralNetworkAttachment:
     def central_network_id(self):
         """Gets the central_network_id of this CentralNetworkAttachment.
 
-        资源ID标识符。
+        中心网络ID。
 
         :return: The central_network_id of this CentralNetworkAttachment.
         :rtype: str
@@ -355,7 +355,7 @@ class CentralNetworkAttachment:
     def central_network_id(self, central_network_id):
         """Sets the central_network_id of this CentralNetworkAttachment.
 
-        资源ID标识符。
+        中心网络ID。
 
         :param central_network_id: The central_network_id of this CentralNetworkAttachment.
         :type central_network_id: str
@@ -366,7 +366,7 @@ class CentralNetworkAttachment:
     def central_network_plane_id(self):
         """Gets the central_network_plane_id of this CentralNetworkAttachment.
 
-        资源ID标识符。
+        中心网络平面ID。
 
         :return: The central_network_plane_id of this CentralNetworkAttachment.
         :rtype: str
@@ -377,7 +377,7 @@ class CentralNetworkAttachment:
     def central_network_plane_id(self, central_network_plane_id):
         """Sets the central_network_plane_id of this CentralNetworkAttachment.
 
-        资源ID标识符。
+        中心网络平面ID。
 
         :param central_network_plane_id: The central_network_plane_id of this CentralNetworkAttachment.
         :type central_network_plane_id: str
@@ -388,7 +388,7 @@ class CentralNetworkAttachment:
     def global_connection_bandwidth_id(self):
         """Gets the global_connection_bandwidth_id of this CentralNetworkAttachment.
 
-        资源ID标识符。
+        全域互联带宽ID。
 
         :return: The global_connection_bandwidth_id of this CentralNetworkAttachment.
         :rtype: str
@@ -399,7 +399,7 @@ class CentralNetworkAttachment:
     def global_connection_bandwidth_id(self, global_connection_bandwidth_id):
         """Sets the global_connection_bandwidth_id of this CentralNetworkAttachment.
 
-        资源ID标识符。
+        全域互联带宽ID。
 
         :param global_connection_bandwidth_id: The global_connection_bandwidth_id of this CentralNetworkAttachment.
         :type global_connection_bandwidth_id: str
@@ -472,7 +472,7 @@ class CentralNetworkAttachment:
     def enterprise_router_id(self):
         """Gets the enterprise_router_id of this CentralNetworkAttachment.
 
-        资源ID标识符。
+        企业路由器的ID。
 
         :return: The enterprise_router_id of this CentralNetworkAttachment.
         :rtype: str
@@ -483,7 +483,7 @@ class CentralNetworkAttachment:
     def enterprise_router_id(self, enterprise_router_id):
         """Sets the enterprise_router_id of this CentralNetworkAttachment.
 
-        资源ID标识符。
+        企业路由器的ID。
 
         :param enterprise_router_id: The enterprise_router_id of this CentralNetworkAttachment.
         :type enterprise_router_id: str
@@ -494,7 +494,7 @@ class CentralNetworkAttachment:
     def enterprise_router_project_id(self):
         """Gets the enterprise_router_project_id of this CentralNetworkAttachment.
 
-        实例所属项目ID。
+        企业路由器的项目ID。
 
         :return: The enterprise_router_project_id of this CentralNetworkAttachment.
         :rtype: str
@@ -505,7 +505,7 @@ class CentralNetworkAttachment:
     def enterprise_router_project_id(self, enterprise_router_project_id):
         """Sets the enterprise_router_project_id of this CentralNetworkAttachment.
 
-        实例所属项目ID。
+        企业路由器的项目ID。
 
         :param enterprise_router_project_id: The enterprise_router_project_id of this CentralNetworkAttachment.
         :type enterprise_router_project_id: str
@@ -516,7 +516,7 @@ class CentralNetworkAttachment:
     def enterprise_router_region_id(self):
         """Gets the enterprise_router_region_id of this CentralNetworkAttachment.
 
-        RegionID。
+        ER路由器的regionID。
 
         :return: The enterprise_router_region_id of this CentralNetworkAttachment.
         :rtype: str
@@ -527,7 +527,7 @@ class CentralNetworkAttachment:
     def enterprise_router_region_id(self, enterprise_router_region_id):
         """Sets the enterprise_router_region_id of this CentralNetworkAttachment.
 
-        RegionID。
+        ER路由器的regionID。
 
         :param enterprise_router_region_id: The enterprise_router_region_id of this CentralNetworkAttachment.
         :type enterprise_router_region_id: str
@@ -538,7 +538,7 @@ class CentralNetworkAttachment:
     def enterprise_router_attachment_id(self):
         """Gets the enterprise_router_attachment_id of this CentralNetworkAttachment.
 
-        资源ID标识符。
+        企业路由器的连接ID。
 
         :return: The enterprise_router_attachment_id of this CentralNetworkAttachment.
         :rtype: str
@@ -549,7 +549,7 @@ class CentralNetworkAttachment:
     def enterprise_router_attachment_id(self, enterprise_router_attachment_id):
         """Sets the enterprise_router_attachment_id of this CentralNetworkAttachment.
 
-        资源ID标识符。
+        企业路由器的连接ID。
 
         :param enterprise_router_attachment_id: The enterprise_router_attachment_id of this CentralNetworkAttachment.
         :type enterprise_router_attachment_id: str
@@ -578,7 +578,7 @@ class CentralNetworkAttachment:
     def attachment_instance_id(self):
         """Gets the attachment_instance_id of this CentralNetworkAttachment.
 
-        资源ID标识符。
+        中心网络附件对端实例ID，企业路由器的路由表ID或者GDGW的ID。
 
         :return: The attachment_instance_id of this CentralNetworkAttachment.
         :rtype: str
@@ -589,7 +589,7 @@ class CentralNetworkAttachment:
     def attachment_instance_id(self, attachment_instance_id):
         """Sets the attachment_instance_id of this CentralNetworkAttachment.
 
-        资源ID标识符。
+        中心网络附件对端实例ID，企业路由器的路由表ID或者GDGW的ID。
 
         :param attachment_instance_id: The attachment_instance_id of this CentralNetworkAttachment.
         :type attachment_instance_id: str
@@ -600,7 +600,7 @@ class CentralNetworkAttachment:
     def attachment_id(self):
         """Gets the attachment_id of this CentralNetworkAttachment.
 
-        资源ID标识符。
+        中心网络附件对端实例的连接ID，企业路由器的连接ID或者GDGW的连接ID。
 
         :return: The attachment_id of this CentralNetworkAttachment.
         :rtype: str
@@ -611,7 +611,7 @@ class CentralNetworkAttachment:
     def attachment_id(self, attachment_id):
         """Sets the attachment_id of this CentralNetworkAttachment.
 
-        资源ID标识符。
+        中心网络附件对端实例的连接ID，企业路由器的连接ID或者GDGW的连接ID。
 
         :param attachment_id: The attachment_id of this CentralNetworkAttachment.
         :type attachment_id: str
@@ -622,7 +622,7 @@ class CentralNetworkAttachment:
     def attachment_instance_project_id(self):
         """Gets the attachment_instance_project_id of this CentralNetworkAttachment.
 
-        实例所属项目ID。
+        中心网络附件对端实例的项目ID。
 
         :return: The attachment_instance_project_id of this CentralNetworkAttachment.
         :rtype: str
@@ -633,7 +633,7 @@ class CentralNetworkAttachment:
     def attachment_instance_project_id(self, attachment_instance_project_id):
         """Sets the attachment_instance_project_id of this CentralNetworkAttachment.
 
-        实例所属项目ID。
+        中心网络附件对端实例的项目ID。
 
         :param attachment_instance_project_id: The attachment_instance_project_id of this CentralNetworkAttachment.
         :type attachment_instance_project_id: str
@@ -644,7 +644,7 @@ class CentralNetworkAttachment:
     def attachment_instance_region_id(self):
         """Gets the attachment_instance_region_id of this CentralNetworkAttachment.
 
-        RegionID。
+        中心网络附件对端实例的regionID。
 
         :return: The attachment_instance_region_id of this CentralNetworkAttachment.
         :rtype: str
@@ -655,7 +655,7 @@ class CentralNetworkAttachment:
     def attachment_instance_region_id(self, attachment_instance_region_id):
         """Sets the attachment_instance_region_id of this CentralNetworkAttachment.
 
-        RegionID。
+        中心网络附件对端实例的regionID。
 
         :param attachment_instance_region_id: The attachment_instance_region_id of this CentralNetworkAttachment.
         :type attachment_instance_region_id: str
@@ -666,7 +666,7 @@ class CentralNetworkAttachment:
     def attachment_instance_site_code(self):
         """Gets the attachment_instance_site_code of this CentralNetworkAttachment.
 
-        站点编码定义
+        中心网络附件对端实例的站点编码。
 
         :return: The attachment_instance_site_code of this CentralNetworkAttachment.
         :rtype: str
@@ -677,7 +677,7 @@ class CentralNetworkAttachment:
     def attachment_instance_site_code(self, attachment_instance_site_code):
         """Sets the attachment_instance_site_code of this CentralNetworkAttachment.
 
-        站点编码定义
+        中心网络附件对端实例的站点编码。
 
         :param attachment_instance_site_code: The attachment_instance_site_code of this CentralNetworkAttachment.
         :type attachment_instance_site_code: str
@@ -688,7 +688,7 @@ class CentralNetworkAttachment:
     def enterprise_router_site_code(self):
         """Gets the enterprise_router_site_code of this CentralNetworkAttachment.
 
-        站点编码定义
+        中心网络企业路由器的站点编码。
 
         :return: The enterprise_router_site_code of this CentralNetworkAttachment.
         :rtype: str
@@ -699,7 +699,7 @@ class CentralNetworkAttachment:
     def enterprise_router_site_code(self, enterprise_router_site_code):
         """Sets the enterprise_router_site_code of this CentralNetworkAttachment.
 
-        站点编码定义
+        中心网络企业路由器的站点编码。
 
         :param enterprise_router_site_code: The enterprise_router_site_code of this CentralNetworkAttachment.
         :type enterprise_router_site_code: str

@@ -29,7 +29,7 @@ class ShowGlobalConnectionBandwidthRequest:
 
         The model defined in huaweicloud sdk
 
-        :param id: 资源的Id。
+        :param id: 实例ID。
         :type id: str
         """
         
@@ -44,7 +44,7 @@ class ShowGlobalConnectionBandwidthRequest:
     def id(self):
         """Gets the id of this ShowGlobalConnectionBandwidthRequest.
 
-        资源的Id。
+        实例ID。
 
         :return: The id of this ShowGlobalConnectionBandwidthRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class ShowGlobalConnectionBandwidthRequest:
     def id(self, id):
         """Sets the id of this ShowGlobalConnectionBandwidthRequest.
 
-        资源的Id。
+        实例ID。
 
         :param id: The id of this ShowGlobalConnectionBandwidthRequest.
         :type id: str

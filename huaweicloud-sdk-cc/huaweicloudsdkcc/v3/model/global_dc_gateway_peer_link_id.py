@@ -29,7 +29,7 @@ class GlobalDcGatewayPeerLinkId:
 
         The model defined in huaweicloud sdk
 
-        :param global_dc_gateway_peer_link_id: 资源ID标识符。
+        :param global_dc_gateway_peer_link_id: GDGW的连接ID。
         :type global_dc_gateway_peer_link_id: str
         """
         
@@ -45,7 +45,7 @@ class GlobalDcGatewayPeerLinkId:
     def global_dc_gateway_peer_link_id(self):
         """Gets the global_dc_gateway_peer_link_id of this GlobalDcGatewayPeerLinkId.
 
-        资源ID标识符。
+        GDGW的连接ID。
 
         :return: The global_dc_gateway_peer_link_id of this GlobalDcGatewayPeerLinkId.
         :rtype: str
@@ -56,7 +56,7 @@ class GlobalDcGatewayPeerLinkId:
     def global_dc_gateway_peer_link_id(self, global_dc_gateway_peer_link_id):
         """Sets the global_dc_gateway_peer_link_id of this GlobalDcGatewayPeerLinkId.
 
-        资源ID标识符。
+        GDGW的连接ID。
 
         :param global_dc_gateway_peer_link_id: The global_dc_gateway_peer_link_id of this GlobalDcGatewayPeerLinkId.
         :type global_dc_gateway_peer_link_id: str

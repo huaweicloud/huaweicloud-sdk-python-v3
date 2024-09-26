@@ -43,13 +43,13 @@ class CloudConnectionRoute:
 
         The model defined in huaweicloud sdk
 
-        :param id: 资源ID标识符。
+        :param id: 实例ID。
         :type id: str
-        :param cloud_connection_id: 资源ID标识符。
+        :param cloud_connection_id: 云连接实例ID。
         :type cloud_connection_id: str
-        :param domain_id: 实例所属帐号ID。
+        :param domain_id: 实例所属账号ID。
         :type domain_id: str
-        :param instance_id: 资源ID标识符。
+        :param instance_id: 网络实例（VPC，VGW）的ID。
         :type instance_id: str
         :param project_id: 实例所属项目ID。
         :type project_id: str
@@ -88,7 +88,7 @@ class CloudConnectionRoute:
     def id(self):
         """Gets the id of this CloudConnectionRoute.
 
-        资源ID标识符。
+        实例ID。
 
         :return: The id of this CloudConnectionRoute.
         :rtype: str
@@ -99,7 +99,7 @@ class CloudConnectionRoute:
     def id(self, id):
         """Sets the id of this CloudConnectionRoute.
 
-        资源ID标识符。
+        实例ID。
 
         :param id: The id of this CloudConnectionRoute.
         :type id: str
@@ -110,7 +110,7 @@ class CloudConnectionRoute:
     def cloud_connection_id(self):
         """Gets the cloud_connection_id of this CloudConnectionRoute.
 
-        资源ID标识符。
+        云连接实例ID。
 
         :return: The cloud_connection_id of this CloudConnectionRoute.
         :rtype: str
@@ -121,7 +121,7 @@ class CloudConnectionRoute:
     def cloud_connection_id(self, cloud_connection_id):
         """Sets the cloud_connection_id of this CloudConnectionRoute.
 
-        资源ID标识符。
+        云连接实例ID。
 
         :param cloud_connection_id: The cloud_connection_id of this CloudConnectionRoute.
         :type cloud_connection_id: str
@@ -132,7 +132,7 @@ class CloudConnectionRoute:
     def domain_id(self):
         """Gets the domain_id of this CloudConnectionRoute.
 
-        实例所属帐号ID。
+        实例所属账号ID。
 
         :return: The domain_id of this CloudConnectionRoute.
         :rtype: str
@@ -143,7 +143,7 @@ class CloudConnectionRoute:
     def domain_id(self, domain_id):
         """Sets the domain_id of this CloudConnectionRoute.
 
-        实例所属帐号ID。
+        实例所属账号ID。
 
         :param domain_id: The domain_id of this CloudConnectionRoute.
         :type domain_id: str
@@ -154,7 +154,7 @@ class CloudConnectionRoute:
     def instance_id(self):
         """Gets the instance_id of this CloudConnectionRoute.
 
-        资源ID标识符。
+        网络实例（VPC，VGW）的ID。
 
         :return: The instance_id of this CloudConnectionRoute.
         :rtype: str
@@ -165,7 +165,7 @@ class CloudConnectionRoute:
     def instance_id(self, instance_id):
         """Sets the instance_id of this CloudConnectionRoute.
 
-        资源ID标识符。
+        网络实例（VPC，VGW）的ID。
 
         :param instance_id: The instance_id of this CloudConnectionRoute.
         :type instance_id: str

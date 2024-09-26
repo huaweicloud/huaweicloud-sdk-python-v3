@@ -31,7 +31,7 @@ class UpdateAuthorisationRequest:
 
         The model defined in huaweicloud sdk
 
-        :param id: 资源的Id。
+        :param id: 实例ID。
         :type id: str
         :param body: Body of the UpdateAuthorisationRequest
         :type body: :class:`huaweicloudsdkcc.v3.UpdateAuthorisationRequestBody`
@@ -51,7 +51,7 @@ class UpdateAuthorisationRequest:
     def id(self):
         """Gets the id of this UpdateAuthorisationRequest.
 
-        资源的Id。
+        实例ID。
 
         :return: The id of this UpdateAuthorisationRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class UpdateAuthorisationRequest:
     def id(self, id):
         """Sets the id of this UpdateAuthorisationRequest.
 
-        资源的Id。
+        实例ID。
 
         :param id: The id of this UpdateAuthorisationRequest.
         :type id: str

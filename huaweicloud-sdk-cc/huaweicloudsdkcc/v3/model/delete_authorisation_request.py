@@ -29,7 +29,7 @@ class DeleteAuthorisationRequest:
 
         The model defined in huaweicloud sdk
 
-        :param id: 资源的Id。
+        :param id: 实例ID。
         :type id: str
         """
         
@@ -44,7 +44,7 @@ class DeleteAuthorisationRequest:
     def id(self):
         """Gets the id of this DeleteAuthorisationRequest.
 
-        资源的Id。
+        实例ID。
 
         :return: The id of this DeleteAuthorisationRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class DeleteAuthorisationRequest:
     def id(self, id):
         """Sets the id of this DeleteAuthorisationRequest.
 
-        资源的Id。
+        实例ID。
 
         :param id: The id of this DeleteAuthorisationRequest.
         :type id: str

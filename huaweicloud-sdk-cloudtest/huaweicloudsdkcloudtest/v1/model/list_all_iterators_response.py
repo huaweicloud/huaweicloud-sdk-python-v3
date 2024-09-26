@@ -18,184 +18,76 @@ class ListAllIteratorsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'total': 'int',
-        'value': 'list[TestVersionVo]',
-        'reason': 'str',
-        'page_size': 'int',
-        'page_no': 'int',
-        'has_more': 'bool'
+        'status': 'str',
+        'result': 'ResultValueListTestVersionVo'
     }
 
     attribute_map = {
-        'total': 'total',
-        'value': 'value',
-        'reason': 'reason',
-        'page_size': 'page_size',
-        'page_no': 'page_no',
-        'has_more': 'has_more'
+        'status': 'status',
+        'result': 'result'
     }
 
-    def __init__(self, total=None, value=None, reason=None, page_size=None, page_no=None, has_more=None):
+    def __init__(self, status=None, result=None):
         """ListAllIteratorsResponse
 
         The model defined in huaweicloud sdk
 
-        :param total: 起始记录数 大于 实际总条数时， 值为0， 分页请求才有此值
-        :type total: int
-        :param value: 实际的数据类型：单个对象，集合 或 NULL
-        :type value: list[:class:`huaweicloudsdkcloudtest.v1.TestVersionVo`]
-        :param reason: 业务失败的提示内容，对内接口才有此值
-        :type reason: str
-        :param page_size: 
-        :type page_size: int
-        :param page_no: 
-        :type page_no: int
-        :param has_more: 
-        :type has_more: bool
+        :param status: 对外时：success|error;
+        :type status: str
+        :param result: 
+        :type result: :class:`huaweicloudsdkcloudtest.v1.ResultValueListTestVersionVo`
         """
         
         super(ListAllIteratorsResponse, self).__init__()
 
-        self._total = None
-        self._value = None
-        self._reason = None
-        self._page_size = None
-        self._page_no = None
-        self._has_more = None
+        self._status = None
+        self._result = None
         self.discriminator = None
 
-        if total is not None:
-            self.total = total
-        if value is not None:
-            self.value = value
-        if reason is not None:
-            self.reason = reason
-        if page_size is not None:
-            self.page_size = page_size
-        if page_no is not None:
-            self.page_no = page_no
-        if has_more is not None:
-            self.has_more = has_more
+        if status is not None:
+            self.status = status
+        if result is not None:
+            self.result = result
 
     @property
-    def total(self):
-        """Gets the total of this ListAllIteratorsResponse.
+    def status(self):
+        """Gets the status of this ListAllIteratorsResponse.
 
-        起始记录数 大于 实际总条数时， 值为0， 分页请求才有此值
+        对外时：success|error;
 
-        :return: The total of this ListAllIteratorsResponse.
-        :rtype: int
-        """
-        return self._total
-
-    @total.setter
-    def total(self, total):
-        """Sets the total of this ListAllIteratorsResponse.
-
-        起始记录数 大于 实际总条数时， 值为0， 分页请求才有此值
-
-        :param total: The total of this ListAllIteratorsResponse.
-        :type total: int
-        """
-        self._total = total
-
-    @property
-    def value(self):
-        """Gets the value of this ListAllIteratorsResponse.
-
-        实际的数据类型：单个对象，集合 或 NULL
-
-        :return: The value of this ListAllIteratorsResponse.
-        :rtype: list[:class:`huaweicloudsdkcloudtest.v1.TestVersionVo`]
-        """
-        return self._value
-
-    @value.setter
-    def value(self, value):
-        """Sets the value of this ListAllIteratorsResponse.
-
-        实际的数据类型：单个对象，集合 或 NULL
-
-        :param value: The value of this ListAllIteratorsResponse.
-        :type value: list[:class:`huaweicloudsdkcloudtest.v1.TestVersionVo`]
-        """
-        self._value = value
-
-    @property
-    def reason(self):
-        """Gets the reason of this ListAllIteratorsResponse.
-
-        业务失败的提示内容，对内接口才有此值
-
-        :return: The reason of this ListAllIteratorsResponse.
+        :return: The status of this ListAllIteratorsResponse.
         :rtype: str
         """
-        return self._reason
+        return self._status
 
-    @reason.setter
-    def reason(self, reason):
-        """Sets the reason of this ListAllIteratorsResponse.
+    @status.setter
+    def status(self, status):
+        """Sets the status of this ListAllIteratorsResponse.
 
-        业务失败的提示内容，对内接口才有此值
+        对外时：success|error;
 
-        :param reason: The reason of this ListAllIteratorsResponse.
-        :type reason: str
+        :param status: The status of this ListAllIteratorsResponse.
+        :type status: str
         """
-        self._reason = reason
+        self._status = status
 
     @property
-    def page_size(self):
-        """Gets the page_size of this ListAllIteratorsResponse.
+    def result(self):
+        """Gets the result of this ListAllIteratorsResponse.
 
-        :return: The page_size of this ListAllIteratorsResponse.
-        :rtype: int
+        :return: The result of this ListAllIteratorsResponse.
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ResultValueListTestVersionVo`
         """
-        return self._page_size
+        return self._result
 
-    @page_size.setter
-    def page_size(self, page_size):
-        """Sets the page_size of this ListAllIteratorsResponse.
+    @result.setter
+    def result(self, result):
+        """Sets the result of this ListAllIteratorsResponse.
 
-        :param page_size: The page_size of this ListAllIteratorsResponse.
-        :type page_size: int
+        :param result: The result of this ListAllIteratorsResponse.
+        :type result: :class:`huaweicloudsdkcloudtest.v1.ResultValueListTestVersionVo`
         """
-        self._page_size = page_size
-
-    @property
-    def page_no(self):
-        """Gets the page_no of this ListAllIteratorsResponse.
-
-        :return: The page_no of this ListAllIteratorsResponse.
-        :rtype: int
-        """
-        return self._page_no
-
-    @page_no.setter
-    def page_no(self, page_no):
-        """Sets the page_no of this ListAllIteratorsResponse.
-
-        :param page_no: The page_no of this ListAllIteratorsResponse.
-        :type page_no: int
-        """
-        self._page_no = page_no
-
-    @property
-    def has_more(self):
-        """Gets the has_more of this ListAllIteratorsResponse.
-
-        :return: The has_more of this ListAllIteratorsResponse.
-        :rtype: bool
-        """
-        return self._has_more
-
-    @has_more.setter
-    def has_more(self, has_more):
-        """Sets the has_more of this ListAllIteratorsResponse.
-
-        :param has_more: The has_more of this ListAllIteratorsResponse.
-        :type has_more: bool
-        """
-        self._has_more = has_more
+        self._result = result
 
     def to_dict(self):
         """Returns the model properties as a dict"""

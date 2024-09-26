@@ -32,7 +32,7 @@ class ShowCloudConnectionResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param request_id: 资源ID标识符。
+        :param request_id: 请求ID。
         :type request_id: str
         :param cloud_connection: 
         :type cloud_connection: :class:`huaweicloudsdkcc.v3.CloudConnection`
@@ -51,7 +51,7 @@ class ShowCloudConnectionResponse(SdkResponse):
     def request_id(self):
         """Gets the request_id of this ShowCloudConnectionResponse.
 
-        资源ID标识符。
+        请求ID。
 
         :return: The request_id of this ShowCloudConnectionResponse.
         :rtype: str
@@ -62,7 +62,7 @@ class ShowCloudConnectionResponse(SdkResponse):
     def request_id(self, request_id):
         """Sets the request_id of this ShowCloudConnectionResponse.
 
-        资源ID标识符。
+        请求ID。
 
         :param request_id: The request_id of this ShowCloudConnectionResponse.
         :type request_id: str

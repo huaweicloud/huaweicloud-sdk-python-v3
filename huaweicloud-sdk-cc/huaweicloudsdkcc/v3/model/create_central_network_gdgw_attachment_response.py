@@ -32,7 +32,7 @@ class CreateCentralNetworkGdgwAttachmentResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param request_id: 资源ID标识符。
+        :param request_id: 请求ID。
         :type request_id: str
         :param central_network_gdgw_attachment: 
         :type central_network_gdgw_attachment: :class:`huaweicloudsdkcc.v3.CentralNetworkGdgwAttachment`
@@ -51,7 +51,7 @@ class CreateCentralNetworkGdgwAttachmentResponse(SdkResponse):
     def request_id(self):
         """Gets the request_id of this CreateCentralNetworkGdgwAttachmentResponse.
 
-        资源ID标识符。
+        请求ID。
 
         :return: The request_id of this CreateCentralNetworkGdgwAttachmentResponse.
         :rtype: str
@@ -62,7 +62,7 @@ class CreateCentralNetworkGdgwAttachmentResponse(SdkResponse):
     def request_id(self, request_id):
         """Sets the request_id of this CreateCentralNetworkGdgwAttachmentResponse.
 
-        资源ID标识符。
+        请求ID。
 
         :param request_id: The request_id of this CreateCentralNetworkGdgwAttachmentResponse.
         :type request_id: str

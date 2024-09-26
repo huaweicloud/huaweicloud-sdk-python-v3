@@ -29,7 +29,7 @@ class AttachmentInstanceId:
 
         The model defined in huaweicloud sdk
 
-        :param attachment_instance_id: 资源ID标识符。
+        :param attachment_instance_id: 中心网络附件对端实例ID，企业路由器的路由表ID或者GDGW的ID。
         :type attachment_instance_id: str
         """
         
@@ -44,7 +44,7 @@ class AttachmentInstanceId:
     def attachment_instance_id(self):
         """Gets the attachment_instance_id of this AttachmentInstanceId.
 
-        资源ID标识符。
+        中心网络附件对端实例ID，企业路由器的路由表ID或者GDGW的ID。
 
         :return: The attachment_instance_id of this AttachmentInstanceId.
         :rtype: str
@@ -55,7 +55,7 @@ class AttachmentInstanceId:
     def attachment_instance_id(self, attachment_instance_id):
         """Sets the attachment_instance_id of this AttachmentInstanceId.
 
-        资源ID标识符。
+        中心网络附件对端实例ID，企业路由器的路由表ID或者GDGW的ID。
 
         :param attachment_instance_id: The attachment_instance_id of this AttachmentInstanceId.
         :type attachment_instance_id: str

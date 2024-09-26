@@ -21,10 +21,10 @@ class CreateCentralNetworkGdgwAttachment:
         'description': 'str',
         'enterprise_router_id': 'str',
         'global_dc_gateway_id': 'str',
-        'enterprise_router_project_id': 'str',
-        'enterprise_router_region_id': 'str',
         'global_dc_gateway_project_id': 'str',
         'global_dc_gateway_region_id': 'str',
+        'enterprise_router_project_id': 'str',
+        'enterprise_router_region_id': 'str',
         'central_network_plane_id': 'str'
     }
 
@@ -33,14 +33,14 @@ class CreateCentralNetworkGdgwAttachment:
         'description': 'description',
         'enterprise_router_id': 'enterprise_router_id',
         'global_dc_gateway_id': 'global_dc_gateway_id',
-        'enterprise_router_project_id': 'enterprise_router_project_id',
-        'enterprise_router_region_id': 'enterprise_router_region_id',
         'global_dc_gateway_project_id': 'global_dc_gateway_project_id',
         'global_dc_gateway_region_id': 'global_dc_gateway_region_id',
+        'enterprise_router_project_id': 'enterprise_router_project_id',
+        'enterprise_router_region_id': 'enterprise_router_region_id',
         'central_network_plane_id': 'central_network_plane_id'
     }
 
-    def __init__(self, name=None, description=None, enterprise_router_id=None, global_dc_gateway_id=None, enterprise_router_project_id=None, enterprise_router_region_id=None, global_dc_gateway_project_id=None, global_dc_gateway_region_id=None, central_network_plane_id=None):
+    def __init__(self, name=None, description=None, enterprise_router_id=None, global_dc_gateway_id=None, global_dc_gateway_project_id=None, global_dc_gateway_region_id=None, enterprise_router_project_id=None, enterprise_router_region_id=None, central_network_plane_id=None):
         """CreateCentralNetworkGdgwAttachment
 
         The model defined in huaweicloud sdk
@@ -49,19 +49,19 @@ class CreateCentralNetworkGdgwAttachment:
         :type name: str
         :param description: 实例描述。不支持 &lt;&gt;。
         :type description: str
-        :param enterprise_router_id: 资源ID标识符。
+        :param enterprise_router_id: 企业路由器的ID。
         :type enterprise_router_id: str
-        :param global_dc_gateway_id: 资源ID标识符。
+        :param global_dc_gateway_id: Gdgw的ID。
         :type global_dc_gateway_id: str
-        :param enterprise_router_project_id: 实例所属项目ID。
-        :type enterprise_router_project_id: str
-        :param enterprise_router_region_id: RegionID。
-        :type enterprise_router_region_id: str
-        :param global_dc_gateway_project_id: 实例所属项目ID。
+        :param global_dc_gateway_project_id: Gdgw的项目ID。
         :type global_dc_gateway_project_id: str
-        :param global_dc_gateway_region_id: RegionID。
+        :param global_dc_gateway_region_id: Gdgw的RegionID。
         :type global_dc_gateway_region_id: str
-        :param central_network_plane_id: 资源ID标识符。
+        :param enterprise_router_project_id: 企业路由器的项目ID。
+        :type enterprise_router_project_id: str
+        :param enterprise_router_region_id: ER路由器的regionID。
+        :type enterprise_router_region_id: str
+        :param central_network_plane_id: 中心网络平面ID。
         :type central_network_plane_id: str
         """
         
@@ -71,10 +71,10 @@ class CreateCentralNetworkGdgwAttachment:
         self._description = None
         self._enterprise_router_id = None
         self._global_dc_gateway_id = None
-        self._enterprise_router_project_id = None
-        self._enterprise_router_region_id = None
         self._global_dc_gateway_project_id = None
         self._global_dc_gateway_region_id = None
+        self._enterprise_router_project_id = None
+        self._enterprise_router_region_id = None
         self._central_network_plane_id = None
         self.discriminator = None
 
@@ -83,10 +83,10 @@ class CreateCentralNetworkGdgwAttachment:
             self.description = description
         self.enterprise_router_id = enterprise_router_id
         self.global_dc_gateway_id = global_dc_gateway_id
-        self.enterprise_router_project_id = enterprise_router_project_id
-        self.enterprise_router_region_id = enterprise_router_region_id
         self.global_dc_gateway_project_id = global_dc_gateway_project_id
         self.global_dc_gateway_region_id = global_dc_gateway_region_id
+        self.enterprise_router_project_id = enterprise_router_project_id
+        self.enterprise_router_region_id = enterprise_router_region_id
         if central_network_plane_id is not None:
             self.central_network_plane_id = central_network_plane_id
 
@@ -138,7 +138,7 @@ class CreateCentralNetworkGdgwAttachment:
     def enterprise_router_id(self):
         """Gets the enterprise_router_id of this CreateCentralNetworkGdgwAttachment.
 
-        资源ID标识符。
+        企业路由器的ID。
 
         :return: The enterprise_router_id of this CreateCentralNetworkGdgwAttachment.
         :rtype: str
@@ -149,7 +149,7 @@ class CreateCentralNetworkGdgwAttachment:
     def enterprise_router_id(self, enterprise_router_id):
         """Sets the enterprise_router_id of this CreateCentralNetworkGdgwAttachment.
 
-        资源ID标识符。
+        企业路由器的ID。
 
         :param enterprise_router_id: The enterprise_router_id of this CreateCentralNetworkGdgwAttachment.
         :type enterprise_router_id: str
@@ -160,7 +160,7 @@ class CreateCentralNetworkGdgwAttachment:
     def global_dc_gateway_id(self):
         """Gets the global_dc_gateway_id of this CreateCentralNetworkGdgwAttachment.
 
-        资源ID标识符。
+        Gdgw的ID。
 
         :return: The global_dc_gateway_id of this CreateCentralNetworkGdgwAttachment.
         :rtype: str
@@ -171,7 +171,7 @@ class CreateCentralNetworkGdgwAttachment:
     def global_dc_gateway_id(self, global_dc_gateway_id):
         """Sets the global_dc_gateway_id of this CreateCentralNetworkGdgwAttachment.
 
-        资源ID标识符。
+        Gdgw的ID。
 
         :param global_dc_gateway_id: The global_dc_gateway_id of this CreateCentralNetworkGdgwAttachment.
         :type global_dc_gateway_id: str
@@ -179,54 +179,10 @@ class CreateCentralNetworkGdgwAttachment:
         self._global_dc_gateway_id = global_dc_gateway_id
 
     @property
-    def enterprise_router_project_id(self):
-        """Gets the enterprise_router_project_id of this CreateCentralNetworkGdgwAttachment.
-
-        实例所属项目ID。
-
-        :return: The enterprise_router_project_id of this CreateCentralNetworkGdgwAttachment.
-        :rtype: str
-        """
-        return self._enterprise_router_project_id
-
-    @enterprise_router_project_id.setter
-    def enterprise_router_project_id(self, enterprise_router_project_id):
-        """Sets the enterprise_router_project_id of this CreateCentralNetworkGdgwAttachment.
-
-        实例所属项目ID。
-
-        :param enterprise_router_project_id: The enterprise_router_project_id of this CreateCentralNetworkGdgwAttachment.
-        :type enterprise_router_project_id: str
-        """
-        self._enterprise_router_project_id = enterprise_router_project_id
-
-    @property
-    def enterprise_router_region_id(self):
-        """Gets the enterprise_router_region_id of this CreateCentralNetworkGdgwAttachment.
-
-        RegionID。
-
-        :return: The enterprise_router_region_id of this CreateCentralNetworkGdgwAttachment.
-        :rtype: str
-        """
-        return self._enterprise_router_region_id
-
-    @enterprise_router_region_id.setter
-    def enterprise_router_region_id(self, enterprise_router_region_id):
-        """Sets the enterprise_router_region_id of this CreateCentralNetworkGdgwAttachment.
-
-        RegionID。
-
-        :param enterprise_router_region_id: The enterprise_router_region_id of this CreateCentralNetworkGdgwAttachment.
-        :type enterprise_router_region_id: str
-        """
-        self._enterprise_router_region_id = enterprise_router_region_id
-
-    @property
     def global_dc_gateway_project_id(self):
         """Gets the global_dc_gateway_project_id of this CreateCentralNetworkGdgwAttachment.
 
-        实例所属项目ID。
+        Gdgw的项目ID。
 
         :return: The global_dc_gateway_project_id of this CreateCentralNetworkGdgwAttachment.
         :rtype: str
@@ -237,7 +193,7 @@ class CreateCentralNetworkGdgwAttachment:
     def global_dc_gateway_project_id(self, global_dc_gateway_project_id):
         """Sets the global_dc_gateway_project_id of this CreateCentralNetworkGdgwAttachment.
 
-        实例所属项目ID。
+        Gdgw的项目ID。
 
         :param global_dc_gateway_project_id: The global_dc_gateway_project_id of this CreateCentralNetworkGdgwAttachment.
         :type global_dc_gateway_project_id: str
@@ -248,7 +204,7 @@ class CreateCentralNetworkGdgwAttachment:
     def global_dc_gateway_region_id(self):
         """Gets the global_dc_gateway_region_id of this CreateCentralNetworkGdgwAttachment.
 
-        RegionID。
+        Gdgw的RegionID。
 
         :return: The global_dc_gateway_region_id of this CreateCentralNetworkGdgwAttachment.
         :rtype: str
@@ -259,7 +215,7 @@ class CreateCentralNetworkGdgwAttachment:
     def global_dc_gateway_region_id(self, global_dc_gateway_region_id):
         """Sets the global_dc_gateway_region_id of this CreateCentralNetworkGdgwAttachment.
 
-        RegionID。
+        Gdgw的RegionID。
 
         :param global_dc_gateway_region_id: The global_dc_gateway_region_id of this CreateCentralNetworkGdgwAttachment.
         :type global_dc_gateway_region_id: str
@@ -267,10 +223,54 @@ class CreateCentralNetworkGdgwAttachment:
         self._global_dc_gateway_region_id = global_dc_gateway_region_id
 
     @property
+    def enterprise_router_project_id(self):
+        """Gets the enterprise_router_project_id of this CreateCentralNetworkGdgwAttachment.
+
+        企业路由器的项目ID。
+
+        :return: The enterprise_router_project_id of this CreateCentralNetworkGdgwAttachment.
+        :rtype: str
+        """
+        return self._enterprise_router_project_id
+
+    @enterprise_router_project_id.setter
+    def enterprise_router_project_id(self, enterprise_router_project_id):
+        """Sets the enterprise_router_project_id of this CreateCentralNetworkGdgwAttachment.
+
+        企业路由器的项目ID。
+
+        :param enterprise_router_project_id: The enterprise_router_project_id of this CreateCentralNetworkGdgwAttachment.
+        :type enterprise_router_project_id: str
+        """
+        self._enterprise_router_project_id = enterprise_router_project_id
+
+    @property
+    def enterprise_router_region_id(self):
+        """Gets the enterprise_router_region_id of this CreateCentralNetworkGdgwAttachment.
+
+        ER路由器的regionID。
+
+        :return: The enterprise_router_region_id of this CreateCentralNetworkGdgwAttachment.
+        :rtype: str
+        """
+        return self._enterprise_router_region_id
+
+    @enterprise_router_region_id.setter
+    def enterprise_router_region_id(self, enterprise_router_region_id):
+        """Sets the enterprise_router_region_id of this CreateCentralNetworkGdgwAttachment.
+
+        ER路由器的regionID。
+
+        :param enterprise_router_region_id: The enterprise_router_region_id of this CreateCentralNetworkGdgwAttachment.
+        :type enterprise_router_region_id: str
+        """
+        self._enterprise_router_region_id = enterprise_router_region_id
+
+    @property
     def central_network_plane_id(self):
         """Gets the central_network_plane_id of this CreateCentralNetworkGdgwAttachment.
 
-        资源ID标识符。
+        中心网络平面ID。
 
         :return: The central_network_plane_id of this CreateCentralNetworkGdgwAttachment.
         :rtype: str
@@ -281,7 +281,7 @@ class CreateCentralNetworkGdgwAttachment:
     def central_network_plane_id(self, central_network_plane_id):
         """Sets the central_network_plane_id of this CreateCentralNetworkGdgwAttachment.
 
-        资源ID标识符。
+        中心网络平面ID。
 
         :param central_network_plane_id: The central_network_plane_id of this CreateCentralNetworkGdgwAttachment.
         :type central_network_plane_id: str

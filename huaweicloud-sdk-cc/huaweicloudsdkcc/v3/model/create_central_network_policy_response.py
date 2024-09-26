@@ -32,7 +32,7 @@ class CreateCentralNetworkPolicyResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param request_id: 资源ID标识符。
+        :param request_id: 请求ID。
         :type request_id: str
         :param central_network_policy: 
         :type central_network_policy: :class:`huaweicloudsdkcc.v3.CentralNetworkPolicy`
@@ -51,7 +51,7 @@ class CreateCentralNetworkPolicyResponse(SdkResponse):
     def request_id(self):
         """Gets the request_id of this CreateCentralNetworkPolicyResponse.
 
-        资源ID标识符。
+        请求ID。
 
         :return: The request_id of this CreateCentralNetworkPolicyResponse.
         :rtype: str
@@ -62,7 +62,7 @@ class CreateCentralNetworkPolicyResponse(SdkResponse):
     def request_id(self, request_id):
         """Sets the request_id of this CreateCentralNetworkPolicyResponse.
 
-        资源ID标识符。
+        请求ID。
 
         :param request_id: The request_id of this CreateCentralNetworkPolicyResponse.
         :type request_id: str

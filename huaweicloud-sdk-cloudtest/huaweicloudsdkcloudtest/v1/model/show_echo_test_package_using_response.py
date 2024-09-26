@@ -18,7 +18,7 @@ class ShowEchoTestPackageUsingResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'list[EchoTestPackageCheckResult]'
+        'body': 'object'
     }
 
     attribute_map = {
@@ -31,7 +31,7 @@ class ShowEchoTestPackageUsingResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param body: 
-        :type body: list[:class:`huaweicloudsdkcloudtest.v1.EchoTestPackageCheckResult`]
+        :type body: object
         """
         
         super(ShowEchoTestPackageUsingResponse, self).__init__()
@@ -47,7 +47,7 @@ class ShowEchoTestPackageUsingResponse(SdkResponse):
         """Gets the body of this ShowEchoTestPackageUsingResponse.
 
         :return: The body of this ShowEchoTestPackageUsingResponse.
-        :rtype: list[:class:`huaweicloudsdkcloudtest.v1.EchoTestPackageCheckResult`]
+        :rtype: object
         """
         return self._body
 
@@ -56,7 +56,7 @@ class ShowEchoTestPackageUsingResponse(SdkResponse):
         """Sets the body of this ShowEchoTestPackageUsingResponse.
 
         :param body: The body of this ShowEchoTestPackageUsingResponse.
-        :type body: list[:class:`huaweicloudsdkcloudtest.v1.EchoTestPackageCheckResult`]
+        :type body: object
         """
         self._body = body
 

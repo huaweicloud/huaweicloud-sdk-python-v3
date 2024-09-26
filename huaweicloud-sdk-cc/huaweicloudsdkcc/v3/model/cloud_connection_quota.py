@@ -39,9 +39,9 @@ class CloudConnectionQuota:
 
         The model defined in huaweicloud sdk
 
-        :param domain_id: 实例所属帐号ID。
+        :param domain_id: 实例所属账号ID。
         :type domain_id: str
-        :param cloud_connection_id: 资源ID标识符。
+        :param cloud_connection_id: 云连接实例ID。
         :type cloud_connection_id: str
         :param region_id: RegionID。
         :type region_id: str
@@ -77,7 +77,7 @@ class CloudConnectionQuota:
     def domain_id(self):
         """Gets the domain_id of this CloudConnectionQuota.
 
-        实例所属帐号ID。
+        实例所属账号ID。
 
         :return: The domain_id of this CloudConnectionQuota.
         :rtype: str
@@ -88,7 +88,7 @@ class CloudConnectionQuota:
     def domain_id(self, domain_id):
         """Sets the domain_id of this CloudConnectionQuota.
 
-        实例所属帐号ID。
+        实例所属账号ID。
 
         :param domain_id: The domain_id of this CloudConnectionQuota.
         :type domain_id: str
@@ -99,7 +99,7 @@ class CloudConnectionQuota:
     def cloud_connection_id(self):
         """Gets the cloud_connection_id of this CloudConnectionQuota.
 
-        资源ID标识符。
+        云连接实例ID。
 
         :return: The cloud_connection_id of this CloudConnectionQuota.
         :rtype: str
@@ -110,7 +110,7 @@ class CloudConnectionQuota:
     def cloud_connection_id(self, cloud_connection_id):
         """Sets the cloud_connection_id of this CloudConnectionQuota.
 
-        资源ID标识符。
+        云连接实例ID。
 
         :param cloud_connection_id: The cloud_connection_id of this CloudConnectionQuota.
         :type cloud_connection_id: str

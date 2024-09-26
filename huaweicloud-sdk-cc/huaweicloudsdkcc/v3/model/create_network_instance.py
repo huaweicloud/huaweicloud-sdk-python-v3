@@ -49,15 +49,15 @@ class CreateNetworkInstance:
         :type name: str
         :param description: 实例描述。不支持 &lt;&gt;。
         :type description: str
-        :param instance_id: 资源ID标识符。
+        :param instance_id: 网络实例（VPC，VGW）的ID。
         :type instance_id: str
-        :param instance_domain_id: 实例所属帐号ID。
+        :param instance_domain_id: 网络实例（VPC，VGW）所属账号ID。
         :type instance_domain_id: str
         :param project_id: 实例所属项目ID。
         :type project_id: str
         :param region_id: RegionID。
         :type region_id: str
-        :param cloud_connection_id: 资源ID标识符。
+        :param cloud_connection_id: 云连接实例ID。
         :type cloud_connection_id: str
         :param type: 添加到云连接网络实例的类型，有效值： - vpc：虚拟私有云。 - vgw：虚拟网关。
         :type type: str
@@ -139,7 +139,7 @@ class CreateNetworkInstance:
     def instance_id(self):
         """Gets the instance_id of this CreateNetworkInstance.
 
-        资源ID标识符。
+        网络实例（VPC，VGW）的ID。
 
         :return: The instance_id of this CreateNetworkInstance.
         :rtype: str
@@ -150,7 +150,7 @@ class CreateNetworkInstance:
     def instance_id(self, instance_id):
         """Sets the instance_id of this CreateNetworkInstance.
 
-        资源ID标识符。
+        网络实例（VPC，VGW）的ID。
 
         :param instance_id: The instance_id of this CreateNetworkInstance.
         :type instance_id: str
@@ -161,7 +161,7 @@ class CreateNetworkInstance:
     def instance_domain_id(self):
         """Gets the instance_domain_id of this CreateNetworkInstance.
 
-        实例所属帐号ID。
+        网络实例（VPC，VGW）所属账号ID。
 
         :return: The instance_domain_id of this CreateNetworkInstance.
         :rtype: str
@@ -172,7 +172,7 @@ class CreateNetworkInstance:
     def instance_domain_id(self, instance_domain_id):
         """Sets the instance_domain_id of this CreateNetworkInstance.
 
-        实例所属帐号ID。
+        网络实例（VPC，VGW）所属账号ID。
 
         :param instance_domain_id: The instance_domain_id of this CreateNetworkInstance.
         :type instance_domain_id: str
@@ -227,7 +227,7 @@ class CreateNetworkInstance:
     def cloud_connection_id(self):
         """Gets the cloud_connection_id of this CreateNetworkInstance.
 
-        资源ID标识符。
+        云连接实例ID。
 
         :return: The cloud_connection_id of this CreateNetworkInstance.
         :rtype: str
@@ -238,7 +238,7 @@ class CreateNetworkInstance:
     def cloud_connection_id(self, cloud_connection_id):
         """Sets the cloud_connection_id of this CreateNetworkInstance.
 
-        资源ID标识符。
+        云连接实例ID。
 
         :param cloud_connection_id: The cloud_connection_id of this CreateNetworkInstance.
         :type cloud_connection_id: str

@@ -20,6 +20,8 @@ class ListGlobalConnectionBandwidthSitesRequest:
         'limit': 'int',
         'marker': 'str',
         'id': 'list[str]',
+        'name_en': 'str',
+        'name_cn': 'str',
         'site_code': 'str',
         'site_type': 'str'
     }
@@ -28,11 +30,13 @@ class ListGlobalConnectionBandwidthSitesRequest:
         'limit': 'limit',
         'marker': 'marker',
         'id': 'id',
+        'name_en': 'name_en',
+        'name_cn': 'name_cn',
         'site_code': 'site_code',
         'site_type': 'site_type'
     }
 
-    def __init__(self, limit=None, marker=None, id=None, site_code=None, site_type=None):
+    def __init__(self, limit=None, marker=None, id=None, name_en=None, name_cn=None, site_code=None, site_type=None):
         """ListGlobalConnectionBandwidthSitesRequest
 
         The model defined in huaweicloud sdk
@@ -43,6 +47,10 @@ class ListGlobalConnectionBandwidthSitesRequest:
         :type marker: str
         :param id: 根据id查询，可查询多个id。
         :type id: list[str]
+        :param name_en: 站点信息自定义英文名称。
+        :type name_en: str
+        :param name_cn: 站点信息自定义中文名称。
+        :type name_cn: str
         :param site_code: 站点编码。
         :type site_code: str
         :param site_type: 站点类型： - Area: 大区 - SubArea: 区域 - Region: 城域
@@ -54,6 +62,8 @@ class ListGlobalConnectionBandwidthSitesRequest:
         self._limit = None
         self._marker = None
         self._id = None
+        self._name_en = None
+        self._name_cn = None
         self._site_code = None
         self._site_type = None
         self.discriminator = None
@@ -64,6 +74,10 @@ class ListGlobalConnectionBandwidthSitesRequest:
             self.marker = marker
         if id is not None:
             self.id = id
+        if name_en is not None:
+            self.name_en = name_en
+        if name_cn is not None:
+            self.name_cn = name_cn
         if site_code is not None:
             self.site_code = site_code
         if site_type is not None:
@@ -134,6 +148,50 @@ class ListGlobalConnectionBandwidthSitesRequest:
         :type id: list[str]
         """
         self._id = id
+
+    @property
+    def name_en(self):
+        """Gets the name_en of this ListGlobalConnectionBandwidthSitesRequest.
+
+        站点信息自定义英文名称。
+
+        :return: The name_en of this ListGlobalConnectionBandwidthSitesRequest.
+        :rtype: str
+        """
+        return self._name_en
+
+    @name_en.setter
+    def name_en(self, name_en):
+        """Sets the name_en of this ListGlobalConnectionBandwidthSitesRequest.
+
+        站点信息自定义英文名称。
+
+        :param name_en: The name_en of this ListGlobalConnectionBandwidthSitesRequest.
+        :type name_en: str
+        """
+        self._name_en = name_en
+
+    @property
+    def name_cn(self):
+        """Gets the name_cn of this ListGlobalConnectionBandwidthSitesRequest.
+
+        站点信息自定义中文名称。
+
+        :return: The name_cn of this ListGlobalConnectionBandwidthSitesRequest.
+        :rtype: str
+        """
+        return self._name_cn
+
+    @name_cn.setter
+    def name_cn(self, name_cn):
+        """Sets the name_cn of this ListGlobalConnectionBandwidthSitesRequest.
+
+        站点信息自定义中文名称。
+
+        :param name_cn: The name_cn of this ListGlobalConnectionBandwidthSitesRequest.
+        :type name_cn: str
+        """
+        self._name_cn = name_cn
 
     @property
     def site_code(self):

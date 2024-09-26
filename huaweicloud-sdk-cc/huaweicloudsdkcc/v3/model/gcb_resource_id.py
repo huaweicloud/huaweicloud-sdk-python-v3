@@ -38,8 +38,7 @@ class GcbResourceId:
         self._resource_id = None
         self.discriminator = None
 
-        if resource_id is not None:
-            self.resource_id = resource_id
+        self.resource_id = resource_id
 
     @property
     def resource_id(self):

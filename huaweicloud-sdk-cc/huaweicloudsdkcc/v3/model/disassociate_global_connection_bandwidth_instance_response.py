@@ -32,7 +32,7 @@ class DisassociateGlobalConnectionBandwidthInstanceResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param request_id: 资源ID标识符。
+        :param request_id: 请求ID。
         :type request_id: str
         :param gcbandwidths: 全域互联带宽解绑实例响应详情。
         :type gcbandwidths: list[:class:`huaweicloudsdkcc.v3.DisassociateGlobalConnectionBandwidthInstanceResponseInfo`]
@@ -51,7 +51,7 @@ class DisassociateGlobalConnectionBandwidthInstanceResponse(SdkResponse):
     def request_id(self):
         """Gets the request_id of this DisassociateGlobalConnectionBandwidthInstanceResponse.
 
-        资源ID标识符。
+        请求ID。
 
         :return: The request_id of this DisassociateGlobalConnectionBandwidthInstanceResponse.
         :rtype: str
@@ -62,7 +62,7 @@ class DisassociateGlobalConnectionBandwidthInstanceResponse(SdkResponse):
     def request_id(self, request_id):
         """Sets the request_id of this DisassociateGlobalConnectionBandwidthInstanceResponse.
 
-        资源ID标识符。
+        请求ID。
 
         :param request_id: The request_id of this DisassociateGlobalConnectionBandwidthInstanceResponse.
         :type request_id: str

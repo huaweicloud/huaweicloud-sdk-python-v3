@@ -29,7 +29,7 @@ class EnterpriseRouterTableId:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_router_table_id: 资源ID标识符。
+        :param enterprise_router_table_id: 企业路由器的路由表ID。
         :type enterprise_router_table_id: str
         """
         
@@ -44,7 +44,7 @@ class EnterpriseRouterTableId:
     def enterprise_router_table_id(self):
         """Gets the enterprise_router_table_id of this EnterpriseRouterTableId.
 
-        资源ID标识符。
+        企业路由器的路由表ID。
 
         :return: The enterprise_router_table_id of this EnterpriseRouterTableId.
         :rtype: str
@@ -55,7 +55,7 @@ class EnterpriseRouterTableId:
     def enterprise_router_table_id(self, enterprise_router_table_id):
         """Sets the enterprise_router_table_id of this EnterpriseRouterTableId.
 
-        资源ID标识符。
+        企业路由器的路由表ID。
 
         :param enterprise_router_table_id: The enterprise_router_table_id of this EnterpriseRouterTableId.
         :type enterprise_router_table_id: str

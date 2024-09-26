@@ -18,109 +18,159 @@ class ListTaskTestCasesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'related_case_uris': 'list[str]',
-        'not_related_case_uris': 'list[str]',
-        'case_task_info': 'list[RelateTaskTestCasesVo]'
+        'status': 'str',
+        'result': 'ResultValueQueryTaskTestCasesVo',
+        'error': 'ApiError',
+        'request_id': 'str',
+        'server_address': 'str'
     }
 
     attribute_map = {
-        'related_case_uris': 'related_case_uris',
-        'not_related_case_uris': 'not_related_case_uris',
-        'case_task_info': 'case_task_info'
+        'status': 'status',
+        'result': 'result',
+        'error': 'error',
+        'request_id': 'request_id',
+        'server_address': 'server_address'
     }
 
-    def __init__(self, related_case_uris=None, not_related_case_uris=None, case_task_info=None):
+    def __init__(self, status=None, result=None, error=None, request_id=None, server_address=None):
         """ListTaskTestCasesResponse
 
         The model defined in huaweicloud sdk
 
-        :param related_case_uris: 关联的用例uris
-        :type related_case_uris: list[str]
-        :param not_related_case_uris: 未关联的用例uris
-        :type not_related_case_uris: list[str]
-        :param case_task_info: 用例及任务信息
-        :type case_task_info: list[:class:`huaweicloudsdkcloudtest.v1.RelateTaskTestCasesVo`]
+        :param status: 对外时：success|error; 对内时：ok|failed
+        :type status: str
+        :param result: 
+        :type result: :class:`huaweicloudsdkcloudtest.v1.ResultValueQueryTaskTestCasesVo`
+        :param error: 
+        :type error: :class:`huaweicloudsdkcloudtest.v1.ApiError`
+        :param request_id: 由接口调用方传入，建议使用UUID保证请求的唯一性。
+        :type request_id: str
+        :param server_address: 对内接口才有此属性
+        :type server_address: str
         """
         
         super(ListTaskTestCasesResponse, self).__init__()
 
-        self._related_case_uris = None
-        self._not_related_case_uris = None
-        self._case_task_info = None
+        self._status = None
+        self._result = None
+        self._error = None
+        self._request_id = None
+        self._server_address = None
         self.discriminator = None
 
-        if related_case_uris is not None:
-            self.related_case_uris = related_case_uris
-        if not_related_case_uris is not None:
-            self.not_related_case_uris = not_related_case_uris
-        if case_task_info is not None:
-            self.case_task_info = case_task_info
+        if status is not None:
+            self.status = status
+        if result is not None:
+            self.result = result
+        if error is not None:
+            self.error = error
+        if request_id is not None:
+            self.request_id = request_id
+        if server_address is not None:
+            self.server_address = server_address
 
     @property
-    def related_case_uris(self):
-        """Gets the related_case_uris of this ListTaskTestCasesResponse.
+    def status(self):
+        """Gets the status of this ListTaskTestCasesResponse.
 
-        关联的用例uris
+        对外时：success|error; 对内时：ok|failed
 
-        :return: The related_case_uris of this ListTaskTestCasesResponse.
-        :rtype: list[str]
+        :return: The status of this ListTaskTestCasesResponse.
+        :rtype: str
         """
-        return self._related_case_uris
+        return self._status
 
-    @related_case_uris.setter
-    def related_case_uris(self, related_case_uris):
-        """Sets the related_case_uris of this ListTaskTestCasesResponse.
+    @status.setter
+    def status(self, status):
+        """Sets the status of this ListTaskTestCasesResponse.
 
-        关联的用例uris
+        对外时：success|error; 对内时：ok|failed
 
-        :param related_case_uris: The related_case_uris of this ListTaskTestCasesResponse.
-        :type related_case_uris: list[str]
+        :param status: The status of this ListTaskTestCasesResponse.
+        :type status: str
         """
-        self._related_case_uris = related_case_uris
+        self._status = status
 
     @property
-    def not_related_case_uris(self):
-        """Gets the not_related_case_uris of this ListTaskTestCasesResponse.
+    def result(self):
+        """Gets the result of this ListTaskTestCasesResponse.
 
-        未关联的用例uris
-
-        :return: The not_related_case_uris of this ListTaskTestCasesResponse.
-        :rtype: list[str]
+        :return: The result of this ListTaskTestCasesResponse.
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ResultValueQueryTaskTestCasesVo`
         """
-        return self._not_related_case_uris
+        return self._result
 
-    @not_related_case_uris.setter
-    def not_related_case_uris(self, not_related_case_uris):
-        """Sets the not_related_case_uris of this ListTaskTestCasesResponse.
+    @result.setter
+    def result(self, result):
+        """Sets the result of this ListTaskTestCasesResponse.
 
-        未关联的用例uris
-
-        :param not_related_case_uris: The not_related_case_uris of this ListTaskTestCasesResponse.
-        :type not_related_case_uris: list[str]
+        :param result: The result of this ListTaskTestCasesResponse.
+        :type result: :class:`huaweicloudsdkcloudtest.v1.ResultValueQueryTaskTestCasesVo`
         """
-        self._not_related_case_uris = not_related_case_uris
+        self._result = result
 
     @property
-    def case_task_info(self):
-        """Gets the case_task_info of this ListTaskTestCasesResponse.
+    def error(self):
+        """Gets the error of this ListTaskTestCasesResponse.
 
-        用例及任务信息
-
-        :return: The case_task_info of this ListTaskTestCasesResponse.
-        :rtype: list[:class:`huaweicloudsdkcloudtest.v1.RelateTaskTestCasesVo`]
+        :return: The error of this ListTaskTestCasesResponse.
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ApiError`
         """
-        return self._case_task_info
+        return self._error
 
-    @case_task_info.setter
-    def case_task_info(self, case_task_info):
-        """Sets the case_task_info of this ListTaskTestCasesResponse.
+    @error.setter
+    def error(self, error):
+        """Sets the error of this ListTaskTestCasesResponse.
 
-        用例及任务信息
-
-        :param case_task_info: The case_task_info of this ListTaskTestCasesResponse.
-        :type case_task_info: list[:class:`huaweicloudsdkcloudtest.v1.RelateTaskTestCasesVo`]
+        :param error: The error of this ListTaskTestCasesResponse.
+        :type error: :class:`huaweicloudsdkcloudtest.v1.ApiError`
         """
-        self._case_task_info = case_task_info
+        self._error = error
+
+    @property
+    def request_id(self):
+        """Gets the request_id of this ListTaskTestCasesResponse.
+
+        由接口调用方传入，建议使用UUID保证请求的唯一性。
+
+        :return: The request_id of this ListTaskTestCasesResponse.
+        :rtype: str
+        """
+        return self._request_id
+
+    @request_id.setter
+    def request_id(self, request_id):
+        """Sets the request_id of this ListTaskTestCasesResponse.
+
+        由接口调用方传入，建议使用UUID保证请求的唯一性。
+
+        :param request_id: The request_id of this ListTaskTestCasesResponse.
+        :type request_id: str
+        """
+        self._request_id = request_id
+
+    @property
+    def server_address(self):
+        """Gets the server_address of this ListTaskTestCasesResponse.
+
+        对内接口才有此属性
+
+        :return: The server_address of this ListTaskTestCasesResponse.
+        :rtype: str
+        """
+        return self._server_address
+
+    @server_address.setter
+    def server_address(self, server_address):
+        """Sets the server_address of this ListTaskTestCasesResponse.
+
+        对内接口才有此属性
+
+        :param server_address: The server_address of this ListTaskTestCasesResponse.
+        :type server_address: str
+        """
+        self._server_address = server_address
 
     def to_dict(self):
         """Returns the model properties as a dict"""

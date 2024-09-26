@@ -18,7 +18,7 @@ class CentralNetworkAttachmentSpecificationValueInfo:
 
     openapi_types = {
         'enterprise_router_table_id': 'str',
-        'attached_er_id': 'str',
+        'attachment_parent_instance_id': 'str',
         'approved_state': 'ApprovedStateEnum',
         'hosted_cloud': 'HostedCloudEnum',
         'reason': 'str'
@@ -26,21 +26,21 @@ class CentralNetworkAttachmentSpecificationValueInfo:
 
     attribute_map = {
         'enterprise_router_table_id': 'enterprise_router_table_id',
-        'attached_er_id': 'attached_er_id',
+        'attachment_parent_instance_id': 'attachment_parent_instance_id',
         'approved_state': 'approved_state',
         'hosted_cloud': 'hosted_cloud',
         'reason': 'reason'
     }
 
-    def __init__(self, enterprise_router_table_id=None, attached_er_id=None, approved_state=None, hosted_cloud=None, reason=None):
+    def __init__(self, enterprise_router_table_id=None, attachment_parent_instance_id=None, approved_state=None, hosted_cloud=None, reason=None):
         """CentralNetworkAttachmentSpecificationValueInfo
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_router_table_id: 资源ID标识符。
+        :param enterprise_router_table_id: 企业路由器的路由表ID。
         :type enterprise_router_table_id: str
-        :param attached_er_id: 资源ID标识符。
-        :type attached_er_id: str
+        :param attachment_parent_instance_id: 实例ID。
+        :type attachment_parent_instance_id: str
         :param approved_state: 
         :type approved_state: :class:`huaweicloudsdkcc.v3.ApprovedStateEnum`
         :param hosted_cloud: 
@@ -52,16 +52,15 @@ class CentralNetworkAttachmentSpecificationValueInfo:
         
 
         self._enterprise_router_table_id = None
-        self._attached_er_id = None
+        self._attachment_parent_instance_id = None
         self._approved_state = None
         self._hosted_cloud = None
         self._reason = None
         self.discriminator = None
 
-        if enterprise_router_table_id is not None:
-            self.enterprise_router_table_id = enterprise_router_table_id
-        if attached_er_id is not None:
-            self.attached_er_id = attached_er_id
+        self.enterprise_router_table_id = enterprise_router_table_id
+        if attachment_parent_instance_id is not None:
+            self.attachment_parent_instance_id = attachment_parent_instance_id
         if approved_state is not None:
             self.approved_state = approved_state
         if hosted_cloud is not None:
@@ -73,7 +72,7 @@ class CentralNetworkAttachmentSpecificationValueInfo:
     def enterprise_router_table_id(self):
         """Gets the enterprise_router_table_id of this CentralNetworkAttachmentSpecificationValueInfo.
 
-        资源ID标识符。
+        企业路由器的路由表ID。
 
         :return: The enterprise_router_table_id of this CentralNetworkAttachmentSpecificationValueInfo.
         :rtype: str
@@ -84,7 +83,7 @@ class CentralNetworkAttachmentSpecificationValueInfo:
     def enterprise_router_table_id(self, enterprise_router_table_id):
         """Sets the enterprise_router_table_id of this CentralNetworkAttachmentSpecificationValueInfo.
 
-        资源ID标识符。
+        企业路由器的路由表ID。
 
         :param enterprise_router_table_id: The enterprise_router_table_id of this CentralNetworkAttachmentSpecificationValueInfo.
         :type enterprise_router_table_id: str
@@ -92,26 +91,26 @@ class CentralNetworkAttachmentSpecificationValueInfo:
         self._enterprise_router_table_id = enterprise_router_table_id
 
     @property
-    def attached_er_id(self):
-        """Gets the attached_er_id of this CentralNetworkAttachmentSpecificationValueInfo.
+    def attachment_parent_instance_id(self):
+        """Gets the attachment_parent_instance_id of this CentralNetworkAttachmentSpecificationValueInfo.
 
-        资源ID标识符。
+        实例ID。
 
-        :return: The attached_er_id of this CentralNetworkAttachmentSpecificationValueInfo.
+        :return: The attachment_parent_instance_id of this CentralNetworkAttachmentSpecificationValueInfo.
         :rtype: str
         """
-        return self._attached_er_id
+        return self._attachment_parent_instance_id
 
-    @attached_er_id.setter
-    def attached_er_id(self, attached_er_id):
-        """Sets the attached_er_id of this CentralNetworkAttachmentSpecificationValueInfo.
+    @attachment_parent_instance_id.setter
+    def attachment_parent_instance_id(self, attachment_parent_instance_id):
+        """Sets the attachment_parent_instance_id of this CentralNetworkAttachmentSpecificationValueInfo.
 
-        资源ID标识符。
+        实例ID。
 
-        :param attached_er_id: The attached_er_id of this CentralNetworkAttachmentSpecificationValueInfo.
-        :type attached_er_id: str
+        :param attachment_parent_instance_id: The attachment_parent_instance_id of this CentralNetworkAttachmentSpecificationValueInfo.
+        :type attachment_parent_instance_id: str
         """
-        self._attached_er_id = attached_er_id
+        self._attachment_parent_instance_id = attachment_parent_instance_id
 
     @property
     def approved_state(self):

@@ -20,17 +20,19 @@ class ListComponentConfigurationsRequest:
         'application_id': 'str',
         'component_id': 'str',
         'x_enterprise_project_id': 'str',
-        'x_environment_id': 'str'
+        'x_environment_id': 'str',
+        'display_mode': 'str'
     }
 
     attribute_map = {
         'application_id': 'application_id',
         'component_id': 'component_id',
         'x_enterprise_project_id': 'X-Enterprise-Project-ID',
-        'x_environment_id': 'X-Environment-ID'
+        'x_environment_id': 'X-Environment-ID',
+        'display_mode': 'displayMode'
     }
 
-    def __init__(self, application_id=None, component_id=None, x_enterprise_project_id=None, x_environment_id=None):
+    def __init__(self, application_id=None, component_id=None, x_enterprise_project_id=None, x_environment_id=None, display_mode=None):
         """ListComponentConfigurationsRequest
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class ListComponentConfigurationsRequest:
         :type x_enterprise_project_id: str
         :param x_environment_id: 环境ID。      - 获取环境ID，通过《[云应用引擎API参考](https://support.huaweicloud.com/api-cae/ListEnvironments.html)》的“获取环境列表”章节获取环境信息。     - 请求响应成功后在响应体的items数组中的一个元素即为一个环境的信息，其中id字段即是环境ID。
         :type x_environment_id: str
+        :param display_mode: 显示模式，当前只支持“latestEffective”，即只显示最后一次生效配置。
+        :type display_mode: str
         """
         
         
@@ -51,6 +55,7 @@ class ListComponentConfigurationsRequest:
         self._component_id = None
         self._x_enterprise_project_id = None
         self._x_environment_id = None
+        self._display_mode = None
         self.discriminator = None
 
         self.application_id = application_id
@@ -58,6 +63,8 @@ class ListComponentConfigurationsRequest:
         if x_enterprise_project_id is not None:
             self.x_enterprise_project_id = x_enterprise_project_id
         self.x_environment_id = x_environment_id
+        if display_mode is not None:
+            self.display_mode = display_mode
 
     @property
     def application_id(self):
@@ -146,6 +153,28 @@ class ListComponentConfigurationsRequest:
         :type x_environment_id: str
         """
         self._x_environment_id = x_environment_id
+
+    @property
+    def display_mode(self):
+        """Gets the display_mode of this ListComponentConfigurationsRequest.
+
+        显示模式，当前只支持“latestEffective”，即只显示最后一次生效配置。
+
+        :return: The display_mode of this ListComponentConfigurationsRequest.
+        :rtype: str
+        """
+        return self._display_mode
+
+    @display_mode.setter
+    def display_mode(self, display_mode):
+        """Sets the display_mode of this ListComponentConfigurationsRequest.
+
+        显示模式，当前只支持“latestEffective”，即只显示最后一次生效配置。
+
+        :param display_mode: The display_mode of this ListComponentConfigurationsRequest.
+        :type display_mode: str
+        """
+        self._display_mode = display_mode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

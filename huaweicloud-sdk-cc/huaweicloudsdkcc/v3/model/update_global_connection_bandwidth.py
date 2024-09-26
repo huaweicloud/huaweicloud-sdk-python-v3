@@ -47,7 +47,7 @@ class UpdateGlobalConnectionBandwidth:
         :type description: str
         :param size: 功能说明：全域互联带宽实例中的带宽值大小，单位Mbit/s。 取值范围：2-300Mbit/s
         :type size: int
-        :param charge_mode: 功能说明：描述计费类型，描述可选计费类型。默认开放按带宽计费，传统95计费租户白名单控制。 取值范围：     bwd: 按带宽计费     95: 按传统型95计费
+        :param charge_mode: 功能说明：描述计费类型，描述可选计费类型。默认开放按带宽计费，传统95计费租户白名单控制。 取值范围：     bwd: 按带宽计费     95: 按传统型95计费     95avr: 按传统型日95计费
         :type charge_mode: str
         :param sla_level: 功能说明：描述网络等级，从高到低分为铂金、金、银。默认金，其余租户白名单控制。 - Pt: 铂金 - Au: 金 - Ag: 银
         :type sla_level: str
@@ -153,7 +153,7 @@ class UpdateGlobalConnectionBandwidth:
     def charge_mode(self):
         """Gets the charge_mode of this UpdateGlobalConnectionBandwidth.
 
-        功能说明：描述计费类型，描述可选计费类型。默认开放按带宽计费，传统95计费租户白名单控制。 取值范围：     bwd: 按带宽计费     95: 按传统型95计费
+        功能说明：描述计费类型，描述可选计费类型。默认开放按带宽计费，传统95计费租户白名单控制。 取值范围：     bwd: 按带宽计费     95: 按传统型95计费     95avr: 按传统型日95计费
 
         :return: The charge_mode of this UpdateGlobalConnectionBandwidth.
         :rtype: str
@@ -164,7 +164,7 @@ class UpdateGlobalConnectionBandwidth:
     def charge_mode(self, charge_mode):
         """Sets the charge_mode of this UpdateGlobalConnectionBandwidth.
 
-        功能说明：描述计费类型，描述可选计费类型。默认开放按带宽计费，传统95计费租户白名单控制。 取值范围：     bwd: 按带宽计费     95: 按传统型95计费
+        功能说明：描述计费类型，描述可选计费类型。默认开放按带宽计费，传统95计费租户白名单控制。 取值范围：     bwd: 按带宽计费     95: 按传统型95计费     95avr: 按传统型日95计费
 
         :param charge_mode: The charge_mode of this UpdateGlobalConnectionBandwidth.
         :type charge_mode: str

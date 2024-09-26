@@ -29,7 +29,7 @@ class BandwidthPackageId:
 
         The model defined in huaweicloud sdk
 
-        :param bandwidth_package_id: 资源ID标识符。
+        :param bandwidth_package_id: 带宽包实例ID。
         :type bandwidth_package_id: str
         """
         
@@ -44,7 +44,7 @@ class BandwidthPackageId:
     def bandwidth_package_id(self):
         """Gets the bandwidth_package_id of this BandwidthPackageId.
 
-        资源ID标识符。
+        带宽包实例ID。
 
         :return: The bandwidth_package_id of this BandwidthPackageId.
         :rtype: str
@@ -55,7 +55,7 @@ class BandwidthPackageId:
     def bandwidth_package_id(self, bandwidth_package_id):
         """Sets the bandwidth_package_id of this BandwidthPackageId.
 
-        资源ID标识符。
+        带宽包实例ID。
 
         :param bandwidth_package_id: The bandwidth_package_id of this BandwidthPackageId.
         :type bandwidth_package_id: str

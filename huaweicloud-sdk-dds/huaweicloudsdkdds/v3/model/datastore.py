@@ -35,7 +35,7 @@ class Datastore:
 
         :param type: 数据库版本类型。取值“DDS-Community”。
         :type type: str
-        :param version: 数据库版本。支持3.4、3.2和4.0版本。取值为“3.4”、“3.2”或“4.0”。
+        :param version: 数据库版本。支持3.4及以上版本。取值为“3.4”、“4.0”、“4.2”、“4.4”、“5.0”。
         :type version: str
         :param storage_engine: 存储引擎。支持WiredTiger存储引擎。取值为“wiredTiger”。
         :type storage_engine: str
@@ -78,7 +78,7 @@ class Datastore:
     def version(self):
         """Gets the version of this Datastore.
 
-        数据库版本。支持3.4、3.2和4.0版本。取值为“3.4”、“3.2”或“4.0”。
+        数据库版本。支持3.4及以上版本。取值为“3.4”、“4.0”、“4.2”、“4.4”、“5.0”。
 
         :return: The version of this Datastore.
         :rtype: str
@@ -89,7 +89,7 @@ class Datastore:
     def version(self, version):
         """Sets the version of this Datastore.
 
-        数据库版本。支持3.4、3.2和4.0版本。取值为“3.4”、“3.2”或“4.0”。
+        数据库版本。支持3.4及以上版本。取值为“3.4”、“4.0”、“4.2”、“4.4”、“5.0”。
 
         :param version: The version of this Datastore.
         :type version: str

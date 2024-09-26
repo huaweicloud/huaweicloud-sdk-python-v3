@@ -33,7 +33,7 @@ class PolicyStatement:
 
         The model defined in huaweicloud sdk
 
-        :param effect: - Allow,允许控制访问权限 - Deny,拒绝控制访问权限
+        :param effect: - Allow，允许控制访问权限 - Deny，拒绝控制访问权限
         :type effect: str
         :param action: obs访问权限
         :type action: list[str]
@@ -56,7 +56,7 @@ class PolicyStatement:
     def effect(self):
         """Gets the effect of this PolicyStatement.
 
-        - Allow,允许控制访问权限 - Deny,拒绝控制访问权限
+        - Allow，允许控制访问权限 - Deny，拒绝控制访问权限
 
         :return: The effect of this PolicyStatement.
         :rtype: str
@@ -67,7 +67,7 @@ class PolicyStatement:
     def effect(self, effect):
         """Sets the effect of this PolicyStatement.
 
-        - Allow,允许控制访问权限 - Deny,拒绝控制访问权限
+        - Allow，允许控制访问权限 - Deny，拒绝控制访问权限
 
         :param effect: The effect of this PolicyStatement.
         :type effect: str

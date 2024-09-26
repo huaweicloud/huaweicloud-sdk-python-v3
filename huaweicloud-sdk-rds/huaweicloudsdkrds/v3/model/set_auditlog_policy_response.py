@@ -18,20 +18,51 @@ class SetAuditlogPolicyResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'status': 'str'
     }
 
     attribute_map = {
+        'status': 'status'
     }
 
-    def __init__(self):
+    def __init__(self, status=None):
         """SetAuditlogPolicyResponse
 
         The model defined in huaweicloud sdk
 
+        :param status: 设置审计日志策略的操作结果。 - COMPLETED：已完成。
+        :type status: str
         """
         
         super(SetAuditlogPolicyResponse, self).__init__()
+
+        self._status = None
         self.discriminator = None
+
+        if status is not None:
+            self.status = status
+
+    @property
+    def status(self):
+        """Gets the status of this SetAuditlogPolicyResponse.
+
+        设置审计日志策略的操作结果。 - COMPLETED：已完成。
+
+        :return: The status of this SetAuditlogPolicyResponse.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this SetAuditlogPolicyResponse.
+
+        设置审计日志策略的操作结果。 - COMPLETED：已完成。
+
+        :param status: The status of this SetAuditlogPolicyResponse.
+        :type status: str
+        """
+        self._status = status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

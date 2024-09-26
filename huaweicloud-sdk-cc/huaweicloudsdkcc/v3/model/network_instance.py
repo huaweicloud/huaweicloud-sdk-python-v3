@@ -55,23 +55,23 @@ class NetworkInstance:
 
         The model defined in huaweicloud sdk
 
-        :param id: 资源ID标识符。
+        :param id: 实例ID。
         :type id: str
         :param name: 实例名字。
         :type name: str
         :param description: 实例描述。不支持 &lt;&gt;。
         :type description: str
-        :param domain_id: 实例所属帐号ID。
+        :param domain_id: 实例所属账号ID。
         :type domain_id: str
         :param created_at: 实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
         :type created_at: datetime
         :param updated_at: 实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
         :type updated_at: datetime
-        :param cloud_connection_id: 资源ID标识符。
+        :param cloud_connection_id: 云连接实例ID。
         :type cloud_connection_id: str
-        :param instance_id: 资源ID标识符。
+        :param instance_id: 网络实例（VPC，VGW）的ID。
         :type instance_id: str
-        :param instance_domain_id: 实例所属帐号ID。
+        :param instance_domain_id: 网络实例（VPC，VGW）所属账号ID。
         :type instance_domain_id: str
         :param region_id: RegionID。
         :type region_id: str
@@ -127,7 +127,7 @@ class NetworkInstance:
     def id(self):
         """Gets the id of this NetworkInstance.
 
-        资源ID标识符。
+        实例ID。
 
         :return: The id of this NetworkInstance.
         :rtype: str
@@ -138,7 +138,7 @@ class NetworkInstance:
     def id(self, id):
         """Sets the id of this NetworkInstance.
 
-        资源ID标识符。
+        实例ID。
 
         :param id: The id of this NetworkInstance.
         :type id: str
@@ -193,7 +193,7 @@ class NetworkInstance:
     def domain_id(self):
         """Gets the domain_id of this NetworkInstance.
 
-        实例所属帐号ID。
+        实例所属账号ID。
 
         :return: The domain_id of this NetworkInstance.
         :rtype: str
@@ -204,7 +204,7 @@ class NetworkInstance:
     def domain_id(self, domain_id):
         """Sets the domain_id of this NetworkInstance.
 
-        实例所属帐号ID。
+        实例所属账号ID。
 
         :param domain_id: The domain_id of this NetworkInstance.
         :type domain_id: str
@@ -259,7 +259,7 @@ class NetworkInstance:
     def cloud_connection_id(self):
         """Gets the cloud_connection_id of this NetworkInstance.
 
-        资源ID标识符。
+        云连接实例ID。
 
         :return: The cloud_connection_id of this NetworkInstance.
         :rtype: str
@@ -270,7 +270,7 @@ class NetworkInstance:
     def cloud_connection_id(self, cloud_connection_id):
         """Sets the cloud_connection_id of this NetworkInstance.
 
-        资源ID标识符。
+        云连接实例ID。
 
         :param cloud_connection_id: The cloud_connection_id of this NetworkInstance.
         :type cloud_connection_id: str
@@ -281,7 +281,7 @@ class NetworkInstance:
     def instance_id(self):
         """Gets the instance_id of this NetworkInstance.
 
-        资源ID标识符。
+        网络实例（VPC，VGW）的ID。
 
         :return: The instance_id of this NetworkInstance.
         :rtype: str
@@ -292,7 +292,7 @@ class NetworkInstance:
     def instance_id(self, instance_id):
         """Sets the instance_id of this NetworkInstance.
 
-        资源ID标识符。
+        网络实例（VPC，VGW）的ID。
 
         :param instance_id: The instance_id of this NetworkInstance.
         :type instance_id: str
@@ -303,7 +303,7 @@ class NetworkInstance:
     def instance_domain_id(self):
         """Gets the instance_domain_id of this NetworkInstance.
 
-        实例所属帐号ID。
+        网络实例（VPC，VGW）所属账号ID。
 
         :return: The instance_domain_id of this NetworkInstance.
         :rtype: str
@@ -314,7 +314,7 @@ class NetworkInstance:
     def instance_domain_id(self, instance_domain_id):
         """Sets the instance_domain_id of this NetworkInstance.
 
-        实例所属帐号ID。
+        网络实例（VPC，VGW）所属账号ID。
 
         :param instance_domain_id: The instance_domain_id of this NetworkInstance.
         :type instance_domain_id: str

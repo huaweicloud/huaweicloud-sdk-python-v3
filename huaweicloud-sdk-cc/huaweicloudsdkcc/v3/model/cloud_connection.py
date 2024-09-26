@@ -55,13 +55,13 @@ class CloudConnection:
 
         The model defined in huaweicloud sdk
 
-        :param id: 资源ID标识符。
+        :param id: 实例ID。
         :type id: str
         :param name: 实例名字。
         :type name: str
         :param description: 实例描述。不支持 &lt;&gt;。
         :type description: str
-        :param domain_id: 实例所属帐号ID。
+        :param domain_id: 实例所属账号ID。
         :type domain_id: str
         :param enterprise_project_id: 实例所属企业项目ID。
         :type enterprise_project_id: str
@@ -131,7 +131,7 @@ class CloudConnection:
     def id(self):
         """Gets the id of this CloudConnection.
 
-        资源ID标识符。
+        实例ID。
 
         :return: The id of this CloudConnection.
         :rtype: str
@@ -142,7 +142,7 @@ class CloudConnection:
     def id(self, id):
         """Sets the id of this CloudConnection.
 
-        资源ID标识符。
+        实例ID。
 
         :param id: The id of this CloudConnection.
         :type id: str
@@ -197,7 +197,7 @@ class CloudConnection:
     def domain_id(self):
         """Gets the domain_id of this CloudConnection.
 
-        实例所属帐号ID。
+        实例所属账号ID。
 
         :return: The domain_id of this CloudConnection.
         :rtype: str
@@ -208,7 +208,7 @@ class CloudConnection:
     def domain_id(self, domain_id):
         """Sets the domain_id of this CloudConnection.
 
-        实例所属帐号ID。
+        实例所属账号ID。
 
         :param domain_id: The domain_id of this CloudConnection.
         :type domain_id: str

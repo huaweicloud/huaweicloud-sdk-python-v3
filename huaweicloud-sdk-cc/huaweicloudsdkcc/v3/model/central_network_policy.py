@@ -45,15 +45,15 @@ class CentralNetworkPolicy:
 
         The model defined in huaweicloud sdk
 
-        :param id: 资源ID标识符。
+        :param id: 实例ID。
         :type id: str
         :param created_at: 实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
         :type created_at: datetime
-        :param domain_id: 实例所属帐号ID。
+        :param domain_id: 实例所属账号ID。
         :type domain_id: str
         :param state: 
         :type state: :class:`huaweicloudsdkcc.v3.CentralNetworkPolicyStateEnum`
-        :param central_network_id: 资源ID标识符。
+        :param central_network_id: 中心网络ID。
         :type central_network_id: str
         :param document_template_version: 
         :type document_template_version: :class:`huaweicloudsdkcc.v3.DocumentTemplateVersionEnum`
@@ -92,7 +92,7 @@ class CentralNetworkPolicy:
     def id(self):
         """Gets the id of this CentralNetworkPolicy.
 
-        资源ID标识符。
+        实例ID。
 
         :return: The id of this CentralNetworkPolicy.
         :rtype: str
@@ -103,7 +103,7 @@ class CentralNetworkPolicy:
     def id(self, id):
         """Sets the id of this CentralNetworkPolicy.
 
-        资源ID标识符。
+        实例ID。
 
         :param id: The id of this CentralNetworkPolicy.
         :type id: str
@@ -136,7 +136,7 @@ class CentralNetworkPolicy:
     def domain_id(self):
         """Gets the domain_id of this CentralNetworkPolicy.
 
-        实例所属帐号ID。
+        实例所属账号ID。
 
         :return: The domain_id of this CentralNetworkPolicy.
         :rtype: str
@@ -147,7 +147,7 @@ class CentralNetworkPolicy:
     def domain_id(self, domain_id):
         """Sets the domain_id of this CentralNetworkPolicy.
 
-        实例所属帐号ID。
+        实例所属账号ID。
 
         :param domain_id: The domain_id of this CentralNetworkPolicy.
         :type domain_id: str
@@ -176,7 +176,7 @@ class CentralNetworkPolicy:
     def central_network_id(self):
         """Gets the central_network_id of this CentralNetworkPolicy.
 
-        资源ID标识符。
+        中心网络ID。
 
         :return: The central_network_id of this CentralNetworkPolicy.
         :rtype: str
@@ -187,7 +187,7 @@ class CentralNetworkPolicy:
     def central_network_id(self, central_network_id):
         """Sets the central_network_id of this CentralNetworkPolicy.
 
-        资源ID标识符。
+        中心网络ID。
 
         :param central_network_id: The central_network_id of this CentralNetworkPolicy.
         :type central_network_id: str

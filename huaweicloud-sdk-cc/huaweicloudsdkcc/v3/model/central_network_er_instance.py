@@ -39,9 +39,9 @@ class CentralNetworkErInstance:
 
         The model defined in huaweicloud sdk
 
-        :param id: 资源ID标识符。
+        :param id: 实例ID。
         :type id: str
-        :param enterprise_router_id: 资源ID标识符。
+        :param enterprise_router_id: 企业路由器的ID。
         :type enterprise_router_id: str
         :param project_id: 实例所属项目ID。
         :type project_id: str
@@ -74,7 +74,7 @@ class CentralNetworkErInstance:
     def id(self):
         """Gets the id of this CentralNetworkErInstance.
 
-        资源ID标识符。
+        实例ID。
 
         :return: The id of this CentralNetworkErInstance.
         :rtype: str
@@ -85,7 +85,7 @@ class CentralNetworkErInstance:
     def id(self, id):
         """Sets the id of this CentralNetworkErInstance.
 
-        资源ID标识符。
+        实例ID。
 
         :param id: The id of this CentralNetworkErInstance.
         :type id: str
@@ -96,7 +96,7 @@ class CentralNetworkErInstance:
     def enterprise_router_id(self):
         """Gets the enterprise_router_id of this CentralNetworkErInstance.
 
-        资源ID标识符。
+        企业路由器的ID。
 
         :return: The enterprise_router_id of this CentralNetworkErInstance.
         :rtype: str
@@ -107,7 +107,7 @@ class CentralNetworkErInstance:
     def enterprise_router_id(self, enterprise_router_id):
         """Sets the enterprise_router_id of this CentralNetworkErInstance.
 
-        资源ID标识符。
+        企业路由器的ID。
 
         :param enterprise_router_id: The enterprise_router_id of this CentralNetworkErInstance.
         :type enterprise_router_id: str

@@ -29,7 +29,7 @@ class EnterpriseRouterRegionId:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_router_region_id: RegionID。
+        :param enterprise_router_region_id: ER路由器的regionID。
         :type enterprise_router_region_id: str
         """
         
@@ -44,7 +44,7 @@ class EnterpriseRouterRegionId:
     def enterprise_router_region_id(self):
         """Gets the enterprise_router_region_id of this EnterpriseRouterRegionId.
 
-        RegionID。
+        ER路由器的regionID。
 
         :return: The enterprise_router_region_id of this EnterpriseRouterRegionId.
         :rtype: str
@@ -55,7 +55,7 @@ class EnterpriseRouterRegionId:
     def enterprise_router_region_id(self, enterprise_router_region_id):
         """Sets the enterprise_router_region_id of this EnterpriseRouterRegionId.
 
-        RegionID。
+        ER路由器的regionID。
 
         :param enterprise_router_region_id: The enterprise_router_region_id of this EnterpriseRouterRegionId.
         :type enterprise_router_region_id: str

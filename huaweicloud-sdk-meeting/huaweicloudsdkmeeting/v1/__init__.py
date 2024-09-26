@@ -270,6 +270,7 @@ from huaweicloudsdkmeeting.v1.model.real_time_conf_info import RealTimeConfInfo
 from huaweicloudsdkmeeting.v1.model.real_time_participant import RealTimeParticipant
 from huaweicloudsdkmeeting.v1.model.record_download_info_bo import RecordDownloadInfoBO
 from huaweicloudsdkmeeting.v1.model.record_download_url_do import RecordDownloadUrlDO
+from huaweicloudsdkmeeting.v1.model.record_info_do import RecordInfoDO
 from huaweicloudsdkmeeting.v1.model.record_info_req import RecordInfoReq
 from huaweicloudsdkmeeting.v1.model.record_request import RecordRequest
 from huaweicloudsdkmeeting.v1.model.record_response import RecordResponse
@@ -397,6 +398,8 @@ from huaweicloudsdkmeeting.v1.model.search_users_request import SearchUsersReque
 from huaweicloudsdkmeeting.v1.model.search_users_response import SearchUsersResponse
 from huaweicloudsdkmeeting.v1.model.search_vision_active_code_request import SearchVisionActiveCodeRequest
 from huaweicloudsdkmeeting.v1.model.search_vision_active_code_response import SearchVisionActiveCodeResponse
+from huaweicloudsdkmeeting.v1.model.segment_do import SegmentDO
+from huaweicloudsdkmeeting.v1.model.segment_file_do import SegmentFileDO
 from huaweicloudsdkmeeting.v1.model.send_slide_verify_code_request import SendSlideVerifyCodeRequest
 from huaweicloudsdkmeeting.v1.model.send_slide_verify_code_response import SendSlideVerifyCodeResponse
 from huaweicloudsdkmeeting.v1.model.send_veri_code_for_change_pwd_request import SendVeriCodeForChangePwdRequest

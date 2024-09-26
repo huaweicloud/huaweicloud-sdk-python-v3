@@ -51,7 +51,7 @@ class GlobalConnectionBandwidthSites:
 
         The model defined in huaweicloud sdk
 
-        :param id: 资源ID标识符。
+        :param id: 实例ID。
         :type id: str
         :param description: 实例描述。不支持 &lt;&gt;。
         :type description: str
@@ -119,7 +119,7 @@ class GlobalConnectionBandwidthSites:
     def id(self):
         """Gets the id of this GlobalConnectionBandwidthSites.
 
-        资源ID标识符。
+        实例ID。
 
         :return: The id of this GlobalConnectionBandwidthSites.
         :rtype: str
@@ -130,7 +130,7 @@ class GlobalConnectionBandwidthSites:
     def id(self, id):
         """Sets the id of this GlobalConnectionBandwidthSites.
 
-        资源ID标识符。
+        实例ID。
 
         :param id: The id of this GlobalConnectionBandwidthSites.
         :type id: str

@@ -20,17 +20,23 @@ class Author:
         'id': 'float',
         'name': 'str',
         'state': 'str',
-        'username': 'str'
+        'username': 'str',
+        'name_cn': 'str',
+        'avatar_url': 'str',
+        'email': 'str'
     }
 
     attribute_map = {
         'id': 'id',
         'name': 'name',
         'state': 'state',
-        'username': 'username'
+        'username': 'username',
+        'name_cn': 'name_cn',
+        'avatar_url': 'avatar_url',
+        'email': 'email'
     }
 
-    def __init__(self, id=None, name=None, state=None, username=None):
+    def __init__(self, id=None, name=None, state=None, username=None, name_cn=None, avatar_url=None, email=None):
         """Author
 
         The model defined in huaweicloud sdk
@@ -43,6 +49,12 @@ class Author:
         :type state: str
         :param username: 用户iamId
         :type username: str
+        :param name_cn: 用户别名
+        :type name_cn: str
+        :param avatar_url: 头像url
+        :type avatar_url: str
+        :param email: 邮箱
+        :type email: str
         """
         
         
@@ -51,6 +63,9 @@ class Author:
         self._name = None
         self._state = None
         self._username = None
+        self._name_cn = None
+        self._avatar_url = None
+        self._email = None
         self.discriminator = None
 
         if id is not None:
@@ -61,6 +76,12 @@ class Author:
             self.state = state
         if username is not None:
             self.username = username
+        if name_cn is not None:
+            self.name_cn = name_cn
+        if avatar_url is not None:
+            self.avatar_url = avatar_url
+        if email is not None:
+            self.email = email
 
     @property
     def id(self):
@@ -149,6 +170,72 @@ class Author:
         :type username: str
         """
         self._username = username
+
+    @property
+    def name_cn(self):
+        """Gets the name_cn of this Author.
+
+        用户别名
+
+        :return: The name_cn of this Author.
+        :rtype: str
+        """
+        return self._name_cn
+
+    @name_cn.setter
+    def name_cn(self, name_cn):
+        """Sets the name_cn of this Author.
+
+        用户别名
+
+        :param name_cn: The name_cn of this Author.
+        :type name_cn: str
+        """
+        self._name_cn = name_cn
+
+    @property
+    def avatar_url(self):
+        """Gets the avatar_url of this Author.
+
+        头像url
+
+        :return: The avatar_url of this Author.
+        :rtype: str
+        """
+        return self._avatar_url
+
+    @avatar_url.setter
+    def avatar_url(self, avatar_url):
+        """Sets the avatar_url of this Author.
+
+        头像url
+
+        :param avatar_url: The avatar_url of this Author.
+        :type avatar_url: str
+        """
+        self._avatar_url = avatar_url
+
+    @property
+    def email(self):
+        """Gets the email of this Author.
+
+        邮箱
+
+        :return: The email of this Author.
+        :rtype: str
+        """
+        return self._email
+
+    @email.setter
+    def email(self, email):
+        """Sets the email of this Author.
+
+        邮箱
+
+        :param email: The email of this Author.
+        :type email: str
+        """
+        self._email = email
 
     def to_dict(self):
         """Returns the model properties as a dict"""

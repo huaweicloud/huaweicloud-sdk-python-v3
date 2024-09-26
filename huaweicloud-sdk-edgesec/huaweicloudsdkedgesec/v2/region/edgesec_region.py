@@ -27,27 +27,27 @@ class EdgeSecRegion:
     CN_NORTH_9 = Region("cn-north-9",
                         "https://esa.cn-north-4.myhuaweicloud.com")
     AP_SOUTHEAST_1 = Region("ap-southeast-1",
-                        "https://edgesec-intl.myhuaweicloud.com")
+                        "https://esa.cn-north-4.myhuaweicloud.com")
     AP_SOUTHEAST_2 = Region("ap-southeast-2",
-                        "https://edgesec-intl.myhuaweicloud.com")
+                        "https://esa.cn-north-4.myhuaweicloud.com")
     AP_SOUTHEAST_3 = Region("ap-southeast-3",
-                        "https://edgesec-intl.myhuaweicloud.com")
+                        "https://esa.cn-north-4.myhuaweicloud.com")
     AP_SOUTHEAST_4 = Region("ap-southeast-4",
-                        "https://edgesec-intl.myhuaweicloud.com")
+                        "https://esa.cn-north-4.myhuaweicloud.com")
     AF_SOUTH_1 = Region("af-south-1",
-                        "https://edgesec-intl.myhuaweicloud.com")
+                        "https://esa.cn-north-4.myhuaweicloud.com")
     SA_BRAZIL_1 = Region("sa-brazil-1",
-                        "https://edgesec-intl.myhuaweicloud.com")
+                        "https://esa.cn-north-4.myhuaweicloud.com")
     LA_SOUTH_2 = Region("la-south-2",
-                        "https://edgesec-intl.myhuaweicloud.com")
+                        "https://esa.cn-north-4.myhuaweicloud.com")
     NA_MEXICO_1 = Region("na-mexico-1",
-                        "https://edgesec-intl.myhuaweicloud.com")
+                        "https://esa.cn-north-4.myhuaweicloud.com")
     LA_NORTH_2 = Region("la-north-2",
-                        "https://edgesec-intl.myhuaweicloud.com")
+                        "https://esa.cn-north-4.myhuaweicloud.com")
     RU_NORTHWEST_2 = Region("ru-northwest-2",
-                        "https://edgesec-intl.myhuaweicloud.com")
+                        "https://esa.cn-north-4.myhuaweicloud.com")
     TR_WEST_1 = Region("tr-west-1",
-                        "https://edgesec-intl.myhuaweicloud.com")
+                        "https://esa.cn-north-4.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-2": CN_NORTH_2,

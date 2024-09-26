@@ -33,7 +33,7 @@ class BlockPage:
 
         The model defined in huaweicloud sdk
 
-        :param template: 模板名称
+        :param template: 模板名称，默认页面请输入default，自定义告警页面时请输入custom，重定向请输入redirect
         :type template: str
         :param custom_page: 
         :type custom_page: :class:`huaweicloudsdkwaf.v1.CustomPage`
@@ -58,7 +58,7 @@ class BlockPage:
     def template(self):
         """Gets the template of this BlockPage.
 
-        模板名称
+        模板名称，默认页面请输入default，自定义告警页面时请输入custom，重定向请输入redirect
 
         :return: The template of this BlockPage.
         :rtype: str
@@ -69,7 +69,7 @@ class BlockPage:
     def template(self, template):
         """Sets the template of this BlockPage.
 
-        模板名称
+        模板名称，默认页面请输入default，自定义告警页面时请输入custom，重定向请输入redirect
 
         :param template: The template of this BlockPage.
         :type template: str

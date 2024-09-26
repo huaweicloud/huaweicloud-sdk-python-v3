@@ -41,11 +41,11 @@ class CentralNetworkConnectionInfo:
 
         The model defined in huaweicloud sdk
 
-        :param id: 资源ID标识符。
+        :param id: 实例ID。
         :type id: str
-        :param plane_id: 资源ID标识符。
+        :param plane_id: 中心网络平面ID。
         :type plane_id: str
-        :param global_connection_bandwidth_id: 资源ID标识符。
+        :param global_connection_bandwidth_id: 全域互联带宽ID。
         :type global_connection_bandwidth_id: str
         :param bandwidth_size: 带宽值定义，单位Mbps。
         :type bandwidth_size: int
@@ -82,7 +82,7 @@ class CentralNetworkConnectionInfo:
     def id(self):
         """Gets the id of this CentralNetworkConnectionInfo.
 
-        资源ID标识符。
+        实例ID。
 
         :return: The id of this CentralNetworkConnectionInfo.
         :rtype: str
@@ -93,7 +93,7 @@ class CentralNetworkConnectionInfo:
     def id(self, id):
         """Sets the id of this CentralNetworkConnectionInfo.
 
-        资源ID标识符。
+        实例ID。
 
         :param id: The id of this CentralNetworkConnectionInfo.
         :type id: str
@@ -104,7 +104,7 @@ class CentralNetworkConnectionInfo:
     def plane_id(self):
         """Gets the plane_id of this CentralNetworkConnectionInfo.
 
-        资源ID标识符。
+        中心网络平面ID。
 
         :return: The plane_id of this CentralNetworkConnectionInfo.
         :rtype: str
@@ -115,7 +115,7 @@ class CentralNetworkConnectionInfo:
     def plane_id(self, plane_id):
         """Sets the plane_id of this CentralNetworkConnectionInfo.
 
-        资源ID标识符。
+        中心网络平面ID。
 
         :param plane_id: The plane_id of this CentralNetworkConnectionInfo.
         :type plane_id: str
@@ -126,7 +126,7 @@ class CentralNetworkConnectionInfo:
     def global_connection_bandwidth_id(self):
         """Gets the global_connection_bandwidth_id of this CentralNetworkConnectionInfo.
 
-        资源ID标识符。
+        全域互联带宽ID。
 
         :return: The global_connection_bandwidth_id of this CentralNetworkConnectionInfo.
         :rtype: str
@@ -137,7 +137,7 @@ class CentralNetworkConnectionInfo:
     def global_connection_bandwidth_id(self, global_connection_bandwidth_id):
         """Sets the global_connection_bandwidth_id of this CentralNetworkConnectionInfo.
 
-        资源ID标识符。
+        全域互联带宽ID。
 
         :param global_connection_bandwidth_id: The global_connection_bandwidth_id of this CentralNetworkConnectionInfo.
         :type global_connection_bandwidth_id: str

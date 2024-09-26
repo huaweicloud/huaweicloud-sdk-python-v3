@@ -18,6 +18,9 @@ class CentralNetworkConnectionStateEnum:
     RECOVERING = "RECOVERING"
     FAILED = "FAILED"
     DELETED = "DELETED"
+    APPROVING = "APPROVING"
+    APPROVED = "APPROVED"
+    UNAPPROVED = "UNAPPROVED"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

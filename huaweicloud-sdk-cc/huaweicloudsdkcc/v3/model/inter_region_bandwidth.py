@@ -47,21 +47,21 @@ class InterRegionBandwidth:
 
         The model defined in huaweicloud sdk
 
-        :param id: 资源ID标识符。
+        :param id: 实例ID。
         :type id: str
         :param name: 实例名字。
         :type name: str
         :param description: 实例描述。不支持 &lt;&gt;。
         :type description: str
-        :param domain_id: 实例所属帐号ID。
+        :param domain_id: 实例所属账号ID。
         :type domain_id: str
         :param created_at: 实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
         :type created_at: datetime
         :param updated_at: 实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
         :type updated_at: datetime
-        :param cloud_connection_id: 资源ID标识符。
+        :param cloud_connection_id: 云连接实例ID。
         :type cloud_connection_id: str
-        :param bandwidth_package_id: 资源ID标识符。
+        :param bandwidth_package_id: 带宽包实例ID。
         :type bandwidth_package_id: str
         :param inter_regions: 域间实例信息。
         :type inter_regions: list[:class:`huaweicloudsdkcc.v3.InterRegion`]
@@ -101,7 +101,7 @@ class InterRegionBandwidth:
     def id(self):
         """Gets the id of this InterRegionBandwidth.
 
-        资源ID标识符。
+        实例ID。
 
         :return: The id of this InterRegionBandwidth.
         :rtype: str
@@ -112,7 +112,7 @@ class InterRegionBandwidth:
     def id(self, id):
         """Sets the id of this InterRegionBandwidth.
 
-        资源ID标识符。
+        实例ID。
 
         :param id: The id of this InterRegionBandwidth.
         :type id: str
@@ -167,7 +167,7 @@ class InterRegionBandwidth:
     def domain_id(self):
         """Gets the domain_id of this InterRegionBandwidth.
 
-        实例所属帐号ID。
+        实例所属账号ID。
 
         :return: The domain_id of this InterRegionBandwidth.
         :rtype: str
@@ -178,7 +178,7 @@ class InterRegionBandwidth:
     def domain_id(self, domain_id):
         """Sets the domain_id of this InterRegionBandwidth.
 
-        实例所属帐号ID。
+        实例所属账号ID。
 
         :param domain_id: The domain_id of this InterRegionBandwidth.
         :type domain_id: str
@@ -233,7 +233,7 @@ class InterRegionBandwidth:
     def cloud_connection_id(self):
         """Gets the cloud_connection_id of this InterRegionBandwidth.
 
-        资源ID标识符。
+        云连接实例ID。
 
         :return: The cloud_connection_id of this InterRegionBandwidth.
         :rtype: str
@@ -244,7 +244,7 @@ class InterRegionBandwidth:
     def cloud_connection_id(self, cloud_connection_id):
         """Sets the cloud_connection_id of this InterRegionBandwidth.
 
-        资源ID标识符。
+        云连接实例ID。
 
         :param cloud_connection_id: The cloud_connection_id of this InterRegionBandwidth.
         :type cloud_connection_id: str
@@ -255,7 +255,7 @@ class InterRegionBandwidth:
     def bandwidth_package_id(self):
         """Gets the bandwidth_package_id of this InterRegionBandwidth.
 
-        资源ID标识符。
+        带宽包实例ID。
 
         :return: The bandwidth_package_id of this InterRegionBandwidth.
         :rtype: str
@@ -266,7 +266,7 @@ class InterRegionBandwidth:
     def bandwidth_package_id(self, bandwidth_package_id):
         """Sets the bandwidth_package_id of this InterRegionBandwidth.
 
-        资源ID标识符。
+        带宽包实例ID。
 
         :param bandwidth_package_id: The bandwidth_package_id of this InterRegionBandwidth.
         :type bandwidth_package_id: str

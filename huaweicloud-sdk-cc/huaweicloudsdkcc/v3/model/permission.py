@@ -51,13 +51,13 @@ class Permission:
 
         The model defined in huaweicloud sdk
 
-        :param id: 资源ID标识符。
+        :param id: 实例ID。
         :type id: str
         :param name: 实例名字。
         :type name: str
         :param description: 实例描述。不支持 &lt;&gt;。
         :type description: str
-        :param instance_id: 资源ID标识符。
+        :param instance_id: 网络实例（VPC，VGW）的ID。
         :type instance_id: str
         :param project_id: 实例所属项目ID。
         :type project_id: str
@@ -65,9 +65,9 @@ class Permission:
         :type region_id: str
         :param created_at: 实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
         :type created_at: datetime
-        :param domain_id: 实例所属帐号ID。
+        :param domain_id: 实例所属账号ID。
         :type domain_id: str
-        :param cloud_connection_id: 资源ID标识符。
+        :param cloud_connection_id: 云连接实例ID。
         :type cloud_connection_id: str
         :param status: 授权的状态。
         :type status: str
@@ -114,7 +114,7 @@ class Permission:
     def id(self):
         """Gets the id of this Permission.
 
-        资源ID标识符。
+        实例ID。
 
         :return: The id of this Permission.
         :rtype: str
@@ -125,7 +125,7 @@ class Permission:
     def id(self, id):
         """Sets the id of this Permission.
 
-        资源ID标识符。
+        实例ID。
 
         :param id: The id of this Permission.
         :type id: str
@@ -180,7 +180,7 @@ class Permission:
     def instance_id(self):
         """Gets the instance_id of this Permission.
 
-        资源ID标识符。
+        网络实例（VPC，VGW）的ID。
 
         :return: The instance_id of this Permission.
         :rtype: str
@@ -191,7 +191,7 @@ class Permission:
     def instance_id(self, instance_id):
         """Sets the instance_id of this Permission.
 
-        资源ID标识符。
+        网络实例（VPC，VGW）的ID。
 
         :param instance_id: The instance_id of this Permission.
         :type instance_id: str
@@ -268,7 +268,7 @@ class Permission:
     def domain_id(self):
         """Gets the domain_id of this Permission.
 
-        实例所属帐号ID。
+        实例所属账号ID。
 
         :return: The domain_id of this Permission.
         :rtype: str
@@ -279,7 +279,7 @@ class Permission:
     def domain_id(self, domain_id):
         """Sets the domain_id of this Permission.
 
-        实例所属帐号ID。
+        实例所属账号ID。
 
         :param domain_id: The domain_id of this Permission.
         :type domain_id: str
@@ -290,7 +290,7 @@ class Permission:
     def cloud_connection_id(self):
         """Gets the cloud_connection_id of this Permission.
 
-        资源ID标识符。
+        云连接实例ID。
 
         :return: The cloud_connection_id of this Permission.
         :rtype: str
@@ -301,7 +301,7 @@ class Permission:
     def cloud_connection_id(self, cloud_connection_id):
         """Sets the cloud_connection_id of this Permission.
 
-        资源ID标识符。
+        云连接实例ID。
 
         :param cloud_connection_id: The cloud_connection_id of this Permission.
         :type cloud_connection_id: str

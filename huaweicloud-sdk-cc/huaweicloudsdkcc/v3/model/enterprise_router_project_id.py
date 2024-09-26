@@ -29,7 +29,7 @@ class EnterpriseRouterProjectId:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_router_project_id: 实例所属项目ID。
+        :param enterprise_router_project_id: 企业路由器的项目ID。
         :type enterprise_router_project_id: str
         """
         
@@ -44,7 +44,7 @@ class EnterpriseRouterProjectId:
     def enterprise_router_project_id(self):
         """Gets the enterprise_router_project_id of this EnterpriseRouterProjectId.
 
-        实例所属项目ID。
+        企业路由器的项目ID。
 
         :return: The enterprise_router_project_id of this EnterpriseRouterProjectId.
         :rtype: str
@@ -55,7 +55,7 @@ class EnterpriseRouterProjectId:
     def enterprise_router_project_id(self, enterprise_router_project_id):
         """Sets the enterprise_router_project_id of this EnterpriseRouterProjectId.
 
-        实例所属项目ID。
+        企业路由器的项目ID。
 
         :param enterprise_router_project_id: The enterprise_router_project_id of this EnterpriseRouterProjectId.
         :type enterprise_router_project_id: str

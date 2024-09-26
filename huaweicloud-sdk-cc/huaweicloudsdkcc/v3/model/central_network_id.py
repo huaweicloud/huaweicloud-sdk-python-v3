@@ -29,7 +29,7 @@ class CentralNetworkId:
 
         The model defined in huaweicloud sdk
 
-        :param central_network_id: 资源ID标识符。
+        :param central_network_id: 中心网络ID。
         :type central_network_id: str
         """
         
@@ -44,7 +44,7 @@ class CentralNetworkId:
     def central_network_id(self):
         """Gets the central_network_id of this CentralNetworkId.
 
-        资源ID标识符。
+        中心网络ID。
 
         :return: The central_network_id of this CentralNetworkId.
         :rtype: str
@@ -55,7 +55,7 @@ class CentralNetworkId:
     def central_network_id(self, central_network_id):
         """Sets the central_network_id of this CentralNetworkId.
 
-        资源ID标识符。
+        中心网络ID。
 
         :param central_network_id: The central_network_id of this CentralNetworkId.
         :type central_network_id: str

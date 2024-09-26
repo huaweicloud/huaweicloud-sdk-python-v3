@@ -1543,6 +1543,8 @@ class CaeAsyncClient(Client):
             path_params['component_id'] = local_var_params['component_id']
 
         query_params = []
+        if 'display_mode' in local_var_params:
+            query_params.append(('displayMode', local_var_params['display_mode']))
 
         header_params = {}
         if 'x_enterprise_project_id' in local_var_params:

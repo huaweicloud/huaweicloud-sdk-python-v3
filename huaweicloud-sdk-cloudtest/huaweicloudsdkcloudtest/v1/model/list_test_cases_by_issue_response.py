@@ -18,254 +18,159 @@ class ListTestCasesByIssueResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'case_status_map': 'dict(str, int)',
-        'new_create': 'int',
-        'designing': 'int',
-        'finished': 'int',
-        'testing': 'int',
-        'test_case_num': 'int',
-        'testcases': 'list[TestCaseVo]',
-        'total_count': 'int'
+        'status': 'str',
+        'result': 'ResultValueQueryTestCasesByIssueVo',
+        'error': 'ApiError',
+        'request_id': 'str',
+        'server_address': 'str'
     }
 
     attribute_map = {
-        'case_status_map': 'case_status_map',
-        'new_create': 'new_create',
-        'designing': 'designing',
-        'finished': 'finished',
-        'testing': 'testing',
-        'test_case_num': 'test_case_num',
-        'testcases': 'testcases',
-        'total_count': 'total_count'
+        'status': 'status',
+        'result': 'result',
+        'error': 'error',
+        'request_id': 'request_id',
+        'server_address': 'server_address'
     }
 
-    def __init__(self, case_status_map=None, new_create=None, designing=None, finished=None, testing=None, test_case_num=None, testcases=None, total_count=None):
+    def __init__(self, status=None, result=None, error=None, request_id=None, server_address=None):
         """ListTestCasesByIssueResponse
 
         The model defined in huaweicloud sdk
 
-        :param case_status_map: 用例状态
-        :type case_status_map: dict(str, int)
-        :param new_create: 新建态
-        :type new_create: int
-        :param designing: 设计态
-        :type designing: int
-        :param finished: 完成态
-        :type finished: int
-        :param testing: 测试态
-        :type testing: int
-        :param test_case_num: 需求关联的用例数量
-        :type test_case_num: int
-        :param testcases: 用例详情
-        :type testcases: list[:class:`huaweicloudsdkcloudtest.v1.TestCaseVo`]
-        :param total_count: 用例总数
-        :type total_count: int
+        :param status: 对外时：success|error; 对内时：ok|failed
+        :type status: str
+        :param result: 
+        :type result: :class:`huaweicloudsdkcloudtest.v1.ResultValueQueryTestCasesByIssueVo`
+        :param error: 
+        :type error: :class:`huaweicloudsdkcloudtest.v1.ApiError`
+        :param request_id: 由接口调用方传入，建议使用UUID保证请求的唯一性。
+        :type request_id: str
+        :param server_address: 对内接口才有此属性
+        :type server_address: str
         """
         
         super(ListTestCasesByIssueResponse, self).__init__()
 
-        self._case_status_map = None
-        self._new_create = None
-        self._designing = None
-        self._finished = None
-        self._testing = None
-        self._test_case_num = None
-        self._testcases = None
-        self._total_count = None
+        self._status = None
+        self._result = None
+        self._error = None
+        self._request_id = None
+        self._server_address = None
         self.discriminator = None
 
-        if case_status_map is not None:
-            self.case_status_map = case_status_map
-        if new_create is not None:
-            self.new_create = new_create
-        if designing is not None:
-            self.designing = designing
-        if finished is not None:
-            self.finished = finished
-        if testing is not None:
-            self.testing = testing
-        if test_case_num is not None:
-            self.test_case_num = test_case_num
-        if testcases is not None:
-            self.testcases = testcases
-        if total_count is not None:
-            self.total_count = total_count
+        if status is not None:
+            self.status = status
+        if result is not None:
+            self.result = result
+        if error is not None:
+            self.error = error
+        if request_id is not None:
+            self.request_id = request_id
+        if server_address is not None:
+            self.server_address = server_address
 
     @property
-    def case_status_map(self):
-        """Gets the case_status_map of this ListTestCasesByIssueResponse.
+    def status(self):
+        """Gets the status of this ListTestCasesByIssueResponse.
 
-        用例状态
+        对外时：success|error; 对内时：ok|failed
 
-        :return: The case_status_map of this ListTestCasesByIssueResponse.
-        :rtype: dict(str, int)
+        :return: The status of this ListTestCasesByIssueResponse.
+        :rtype: str
         """
-        return self._case_status_map
+        return self._status
 
-    @case_status_map.setter
-    def case_status_map(self, case_status_map):
-        """Sets the case_status_map of this ListTestCasesByIssueResponse.
+    @status.setter
+    def status(self, status):
+        """Sets the status of this ListTestCasesByIssueResponse.
 
-        用例状态
+        对外时：success|error; 对内时：ok|failed
 
-        :param case_status_map: The case_status_map of this ListTestCasesByIssueResponse.
-        :type case_status_map: dict(str, int)
+        :param status: The status of this ListTestCasesByIssueResponse.
+        :type status: str
         """
-        self._case_status_map = case_status_map
+        self._status = status
 
     @property
-    def new_create(self):
-        """Gets the new_create of this ListTestCasesByIssueResponse.
+    def result(self):
+        """Gets the result of this ListTestCasesByIssueResponse.
 
-        新建态
-
-        :return: The new_create of this ListTestCasesByIssueResponse.
-        :rtype: int
+        :return: The result of this ListTestCasesByIssueResponse.
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ResultValueQueryTestCasesByIssueVo`
         """
-        return self._new_create
+        return self._result
 
-    @new_create.setter
-    def new_create(self, new_create):
-        """Sets the new_create of this ListTestCasesByIssueResponse.
+    @result.setter
+    def result(self, result):
+        """Sets the result of this ListTestCasesByIssueResponse.
 
-        新建态
-
-        :param new_create: The new_create of this ListTestCasesByIssueResponse.
-        :type new_create: int
+        :param result: The result of this ListTestCasesByIssueResponse.
+        :type result: :class:`huaweicloudsdkcloudtest.v1.ResultValueQueryTestCasesByIssueVo`
         """
-        self._new_create = new_create
+        self._result = result
 
     @property
-    def designing(self):
-        """Gets the designing of this ListTestCasesByIssueResponse.
+    def error(self):
+        """Gets the error of this ListTestCasesByIssueResponse.
 
-        设计态
-
-        :return: The designing of this ListTestCasesByIssueResponse.
-        :rtype: int
+        :return: The error of this ListTestCasesByIssueResponse.
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ApiError`
         """
-        return self._designing
+        return self._error
 
-    @designing.setter
-    def designing(self, designing):
-        """Sets the designing of this ListTestCasesByIssueResponse.
+    @error.setter
+    def error(self, error):
+        """Sets the error of this ListTestCasesByIssueResponse.
 
-        设计态
-
-        :param designing: The designing of this ListTestCasesByIssueResponse.
-        :type designing: int
+        :param error: The error of this ListTestCasesByIssueResponse.
+        :type error: :class:`huaweicloudsdkcloudtest.v1.ApiError`
         """
-        self._designing = designing
+        self._error = error
 
     @property
-    def finished(self):
-        """Gets the finished of this ListTestCasesByIssueResponse.
+    def request_id(self):
+        """Gets the request_id of this ListTestCasesByIssueResponse.
 
-        完成态
+        由接口调用方传入，建议使用UUID保证请求的唯一性。
 
-        :return: The finished of this ListTestCasesByIssueResponse.
-        :rtype: int
+        :return: The request_id of this ListTestCasesByIssueResponse.
+        :rtype: str
         """
-        return self._finished
+        return self._request_id
 
-    @finished.setter
-    def finished(self, finished):
-        """Sets the finished of this ListTestCasesByIssueResponse.
+    @request_id.setter
+    def request_id(self, request_id):
+        """Sets the request_id of this ListTestCasesByIssueResponse.
 
-        完成态
+        由接口调用方传入，建议使用UUID保证请求的唯一性。
 
-        :param finished: The finished of this ListTestCasesByIssueResponse.
-        :type finished: int
+        :param request_id: The request_id of this ListTestCasesByIssueResponse.
+        :type request_id: str
         """
-        self._finished = finished
+        self._request_id = request_id
 
     @property
-    def testing(self):
-        """Gets the testing of this ListTestCasesByIssueResponse.
+    def server_address(self):
+        """Gets the server_address of this ListTestCasesByIssueResponse.
 
-        测试态
+        对内接口才有此属性
 
-        :return: The testing of this ListTestCasesByIssueResponse.
-        :rtype: int
+        :return: The server_address of this ListTestCasesByIssueResponse.
+        :rtype: str
         """
-        return self._testing
+        return self._server_address
 
-    @testing.setter
-    def testing(self, testing):
-        """Sets the testing of this ListTestCasesByIssueResponse.
+    @server_address.setter
+    def server_address(self, server_address):
+        """Sets the server_address of this ListTestCasesByIssueResponse.
 
-        测试态
+        对内接口才有此属性
 
-        :param testing: The testing of this ListTestCasesByIssueResponse.
-        :type testing: int
+        :param server_address: The server_address of this ListTestCasesByIssueResponse.
+        :type server_address: str
         """
-        self._testing = testing
-
-    @property
-    def test_case_num(self):
-        """Gets the test_case_num of this ListTestCasesByIssueResponse.
-
-        需求关联的用例数量
-
-        :return: The test_case_num of this ListTestCasesByIssueResponse.
-        :rtype: int
-        """
-        return self._test_case_num
-
-    @test_case_num.setter
-    def test_case_num(self, test_case_num):
-        """Sets the test_case_num of this ListTestCasesByIssueResponse.
-
-        需求关联的用例数量
-
-        :param test_case_num: The test_case_num of this ListTestCasesByIssueResponse.
-        :type test_case_num: int
-        """
-        self._test_case_num = test_case_num
-
-    @property
-    def testcases(self):
-        """Gets the testcases of this ListTestCasesByIssueResponse.
-
-        用例详情
-
-        :return: The testcases of this ListTestCasesByIssueResponse.
-        :rtype: list[:class:`huaweicloudsdkcloudtest.v1.TestCaseVo`]
-        """
-        return self._testcases
-
-    @testcases.setter
-    def testcases(self, testcases):
-        """Sets the testcases of this ListTestCasesByIssueResponse.
-
-        用例详情
-
-        :param testcases: The testcases of this ListTestCasesByIssueResponse.
-        :type testcases: list[:class:`huaweicloudsdkcloudtest.v1.TestCaseVo`]
-        """
-        self._testcases = testcases
-
-    @property
-    def total_count(self):
-        """Gets the total_count of this ListTestCasesByIssueResponse.
-
-        用例总数
-
-        :return: The total_count of this ListTestCasesByIssueResponse.
-        :rtype: int
-        """
-        return self._total_count
-
-    @total_count.setter
-    def total_count(self, total_count):
-        """Sets the total_count of this ListTestCasesByIssueResponse.
-
-        用例总数
-
-        :param total_count: The total_count of this ListTestCasesByIssueResponse.
-        :type total_count: int
-        """
-        self._total_count = total_count
+        self._server_address = server_address
 
     def to_dict(self):
         """Returns the model properties as a dict"""

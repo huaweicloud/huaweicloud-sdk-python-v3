@@ -31,6 +31,7 @@ from huaweicloudsdkdas.v3.model.create_sql_limit_rules_response import CreateSql
 from huaweicloudsdkdas.v3.model.create_tuning_req import CreateTuningReq
 from huaweicloudsdkdas.v3.model.create_tuning_request import CreateTuningRequest
 from huaweicloudsdkdas.v3.model.create_tuning_response import CreateTuningResponse
+from huaweicloudsdkdas.v3.model.das_instance_info import DASInstanceInfo
 from huaweicloudsdkdas.v3.model.db_object_space_info import DbObjectSpaceInfo
 from huaweicloudsdkdas.v3.model.db_user import DbUser
 from huaweicloudsdkdas.v3.model.delete_db_user_request import DeleteDbUserRequest
@@ -70,6 +71,8 @@ from huaweicloudsdkdas.v3.model.innodb_trx import InnodbTrx
 from huaweicloudsdkdas.v3.model.instance_space_info import InstanceSpaceInfo
 from huaweicloudsdkdas.v3.model.list_api_versions_request import ListApiVersionsRequest
 from huaweicloudsdkdas.v3.model.list_api_versions_response import ListApiVersionsResponse
+from huaweicloudsdkdas.v3.model.list_cloud_dba_instances_request import ListCloudDbaInstancesRequest
+from huaweicloudsdkdas.v3.model.list_cloud_dba_instances_response import ListCloudDbaInstancesResponse
 from huaweicloudsdkdas.v3.model.list_db_users_request import ListDbUsersRequest
 from huaweicloudsdkdas.v3.model.list_db_users_response import ListDbUsersResponse
 from huaweicloudsdkdas.v3.model.list_innodb_locks_request import ListInnodbLocksRequest

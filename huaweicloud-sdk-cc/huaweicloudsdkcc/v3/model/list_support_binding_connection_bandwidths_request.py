@@ -73,7 +73,8 @@ class ListSupportBindingConnectionBandwidthsRequest:
             self.local_area = local_area
         if remote_area is not None:
             self.remote_area = remote_area
-        self.binding_service = binding_service
+        if binding_service is not None:
+            self.binding_service = binding_service
 
     @property
     def limit(self):

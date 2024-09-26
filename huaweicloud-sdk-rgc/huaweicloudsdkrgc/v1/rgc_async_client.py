@@ -231,6 +231,73 @@ class RgcAsyncClient(Client):
 
         return http_info
 
+    def list_enabled_controls_async(self, request):
+        """列出开启的控制策略
+
+        列出组织里开启的所有控制策略信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListEnabledControls
+        :type request: :class:`huaweicloudsdkrgc.v1.ListEnabledControlsRequest`
+        :rtype: :class:`huaweicloudsdkrgc.v1.ListEnabledControlsResponse`
+        """
+        http_info = self._list_enabled_controls_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_enabled_controls_async_invoker(self, request):
+        http_info = self._list_enabled_controls_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_enabled_controls_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/governance/enabled-controls",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEnabledControlsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_control_operate_async(self, request):
         """查询控制策略操作状态
 
@@ -267,6 +334,266 @@ class RgcAsyncClient(Client):
         path_params = {}
         if 'operation_control_status_id' in local_var_params:
             path_params['operation_control_status_id'] = local_var_params['operation_control_status_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_account_async(self, request):
+        """创建账号
+
+        在组织里的某个注册OU下创建账号。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateAccount
+        :type request: :class:`huaweicloudsdkrgc.v1.CreateAccountRequest`
+        :rtype: :class:`huaweicloudsdkrgc.v1.CreateAccountResponse`
+        """
+        http_info = self._create_account_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_account_async_invoker(self, request):
+        http_info = self._create_account_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_account_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/managed-organization/managed-accounts",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAccountResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def register_organizational_unit_async(self, request):
+        """注册OU
+
+        将组织里的某个OU注册到RGC服务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RegisterOrganizationalUnit
+        :type request: :class:`huaweicloudsdkrgc.v1.RegisterOrganizationalUnitRequest`
+        :rtype: :class:`huaweicloudsdkrgc.v1.RegisterOrganizationalUnitResponse`
+        """
+        http_info = self._register_organizational_unit_http_info(request)
+        return self._call_api(**http_info)
+
+    def register_organizational_unit_async_invoker(self, request):
+        http_info = self._register_organizational_unit_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _register_organizational_unit_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/managed-organization/organizational-units/{organizational_unit_id}/register",
+            "request_type": request.__class__.__name__,
+            "response_type": "RegisterOrganizationalUnitResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'organizational_unit_id' in local_var_params:
+            path_params['organizational_unit_id'] = local_var_params['organizational_unit_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_managed_account_async(self, request):
+        """查询纳管账号信息
+
+        查询组织里某个纳管账号信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowManagedAccount
+        :type request: :class:`huaweicloudsdkrgc.v1.ShowManagedAccountRequest`
+        :rtype: :class:`huaweicloudsdkrgc.v1.ShowManagedAccountResponse`
+        """
+        http_info = self._show_managed_account_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_managed_account_async_invoker(self, request):
+        http_info = self._show_managed_account_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_managed_account_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/managed-organization/managed-accounts/{managed_account_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowManagedAccountResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'managed_account_id' in local_var_params:
+            path_params['managed_account_id'] = local_var_params['managed_account_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_operation_async(self, request):
+        """查询注册过程信息
+
+        查询在RGC服务里注册/取消注册的过程信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowOperation
+        :type request: :class:`huaweicloudsdkrgc.v1.ShowOperationRequest`
+        :rtype: :class:`huaweicloudsdkrgc.v1.ShowOperationResponse`
+        """
+        http_info = self._show_operation_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_operation_async_invoker(self, request):
+        http_info = self._show_operation_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_operation_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/managed-organization/{operation_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowOperationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'operation_id' in local_var_params:
+            path_params['operation_id'] = local_var_params['operation_id']
 
         query_params = []
 

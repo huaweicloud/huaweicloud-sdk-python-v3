@@ -29,7 +29,7 @@ class DomainId:
 
         The model defined in huaweicloud sdk
 
-        :param domain_id: 实例所属帐号ID。
+        :param domain_id: 实例所属账号ID。
         :type domain_id: str
         """
         
@@ -44,7 +44,7 @@ class DomainId:
     def domain_id(self):
         """Gets the domain_id of this DomainId.
 
-        实例所属帐号ID。
+        实例所属账号ID。
 
         :return: The domain_id of this DomainId.
         :rtype: str
@@ -55,7 +55,7 @@ class DomainId:
     def domain_id(self, domain_id):
         """Sets the domain_id of this DomainId.
 
-        实例所属帐号ID。
+        实例所属账号ID。
 
         :param domain_id: The domain_id of this DomainId.
         :type domain_id: str

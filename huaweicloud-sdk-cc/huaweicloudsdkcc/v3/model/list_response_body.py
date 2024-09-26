@@ -31,7 +31,7 @@ class ListResponseBody:
 
         The model defined in huaweicloud sdk
 
-        :param request_id: 资源ID标识符。
+        :param request_id: 请求ID。
         :type request_id: str
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -51,7 +51,7 @@ class ListResponseBody:
     def request_id(self):
         """Gets the request_id of this ListResponseBody.
 
-        资源ID标识符。
+        请求ID。
 
         :return: The request_id of this ListResponseBody.
         :rtype: str
@@ -62,7 +62,7 @@ class ListResponseBody:
     def request_id(self, request_id):
         """Sets the request_id of this ListResponseBody.
 
-        资源ID标识符。
+        请求ID。
 
         :param request_id: The request_id of this ListResponseBody.
         :type request_id: str

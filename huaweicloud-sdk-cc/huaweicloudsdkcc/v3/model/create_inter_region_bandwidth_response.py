@@ -32,7 +32,7 @@ class CreateInterRegionBandwidthResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param request_id: 资源ID标识符。
+        :param request_id: 请求ID。
         :type request_id: str
         :param inter_region_bandwidth: 
         :type inter_region_bandwidth: :class:`huaweicloudsdkcc.v3.InterRegionBandwidth`
@@ -51,7 +51,7 @@ class CreateInterRegionBandwidthResponse(SdkResponse):
     def request_id(self):
         """Gets the request_id of this CreateInterRegionBandwidthResponse.
 
-        资源ID标识符。
+        请求ID。
 
         :return: The request_id of this CreateInterRegionBandwidthResponse.
         :rtype: str
@@ -62,7 +62,7 @@ class CreateInterRegionBandwidthResponse(SdkResponse):
     def request_id(self, request_id):
         """Sets the request_id of this CreateInterRegionBandwidthResponse.
 
-        资源ID标识符。
+        请求ID。
 
         :param request_id: The request_id of this CreateInterRegionBandwidthResponse.
         :type request_id: str

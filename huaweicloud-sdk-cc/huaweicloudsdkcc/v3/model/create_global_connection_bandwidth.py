@@ -63,7 +63,7 @@ class CreateGlobalConnectionBandwidth:
         :type enterprise_project_id: str
         :param tags: 实例标签。
         :type tags: list[:class:`huaweicloudsdkcc.v3.Tag`]
-        :param charge_mode: 功能说明：描述计费类型，描述可选计费类型。默认开放按带宽计费，传统95计费租户白名单控制。 取值范围：     bwd: 按带宽计费     95: 按传统型95计费
+        :param charge_mode: 功能说明：描述计费类型，描述可选计费类型。默认开放按带宽计费，传统95计费租户白名单控制。 取值范围：     bwd: 按带宽计费     95: 按传统型95计费     95avr: 按传统型日95计费
         :type charge_mode: str
         :param size: 功能说明：全域互联带宽实例中的带宽值大小，单位Mbit/s。 取值范围：2-300Mbit/s
         :type size: int
@@ -73,7 +73,7 @@ class CreateGlobalConnectionBandwidth:
         :type local_area: str
         :param remote_area: 功能说明：远端接入点，配合local_area信息描述带宽实例应用的范围。 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点），站点编码通过接口获取，带宽类型为Region可不传，其他类型必传 
         :type remote_area: str
-        :param spec_code_id: UUID of a line specification code.
+        :param spec_code_id: 功能说明：线路规格编码UUID。
         :type spec_code_id: str
         """
         
@@ -249,7 +249,7 @@ class CreateGlobalConnectionBandwidth:
     def charge_mode(self):
         """Gets the charge_mode of this CreateGlobalConnectionBandwidth.
 
-        功能说明：描述计费类型，描述可选计费类型。默认开放按带宽计费，传统95计费租户白名单控制。 取值范围：     bwd: 按带宽计费     95: 按传统型95计费
+        功能说明：描述计费类型，描述可选计费类型。默认开放按带宽计费，传统95计费租户白名单控制。 取值范围：     bwd: 按带宽计费     95: 按传统型95计费     95avr: 按传统型日95计费
 
         :return: The charge_mode of this CreateGlobalConnectionBandwidth.
         :rtype: str
@@ -260,7 +260,7 @@ class CreateGlobalConnectionBandwidth:
     def charge_mode(self, charge_mode):
         """Sets the charge_mode of this CreateGlobalConnectionBandwidth.
 
-        功能说明：描述计费类型，描述可选计费类型。默认开放按带宽计费，传统95计费租户白名单控制。 取值范围：     bwd: 按带宽计费     95: 按传统型95计费
+        功能说明：描述计费类型，描述可选计费类型。默认开放按带宽计费，传统95计费租户白名单控制。 取值范围：     bwd: 按带宽计费     95: 按传统型95计费     95avr: 按传统型日95计费
 
         :param charge_mode: The charge_mode of this CreateGlobalConnectionBandwidth.
         :type charge_mode: str
@@ -359,7 +359,7 @@ class CreateGlobalConnectionBandwidth:
     def spec_code_id(self):
         """Gets the spec_code_id of this CreateGlobalConnectionBandwidth.
 
-        UUID of a line specification code.
+        功能说明：线路规格编码UUID。
 
         :return: The spec_code_id of this CreateGlobalConnectionBandwidth.
         :rtype: str
@@ -370,7 +370,7 @@ class CreateGlobalConnectionBandwidth:
     def spec_code_id(self, spec_code_id):
         """Sets the spec_code_id of this CreateGlobalConnectionBandwidth.
 
-        UUID of a line specification code.
+        功能说明：线路规格编码UUID。
 
         :param spec_code_id: The spec_code_id of this CreateGlobalConnectionBandwidth.
         :type spec_code_id: str

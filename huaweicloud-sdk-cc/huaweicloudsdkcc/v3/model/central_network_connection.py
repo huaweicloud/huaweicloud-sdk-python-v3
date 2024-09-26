@@ -59,21 +59,21 @@ class CentralNetworkConnection:
 
         The model defined in huaweicloud sdk
 
-        :param id: 资源ID标识符。
+        :param id: 实例ID。
         :type id: str
         :param name: 实例名字。
         :type name: str
         :param description: 实例描述。不支持 &lt;&gt;。
         :type description: str
-        :param domain_id: 实例所属帐号ID。
+        :param domain_id: 实例所属账号ID。
         :type domain_id: str
         :param enterprise_project_id: 实例所属企业项目ID。
         :type enterprise_project_id: str
-        :param central_network_id: 资源ID标识符。
+        :param central_network_id: 中心网络ID。
         :type central_network_id: str
-        :param central_network_plane_id: 资源ID标识符。
+        :param central_network_plane_id: 中心网络平面ID。
         :type central_network_plane_id: str
-        :param global_connection_bandwidth_id: 资源ID标识符。
+        :param global_connection_bandwidth_id: 全域互联带宽ID。
         :type global_connection_bandwidth_id: str
         :param bandwidth_type: 
         :type bandwidth_type: :class:`huaweicloudsdkcc.v3.BandwidthTypeEnum`
@@ -138,7 +138,7 @@ class CentralNetworkConnection:
     def id(self):
         """Gets the id of this CentralNetworkConnection.
 
-        资源ID标识符。
+        实例ID。
 
         :return: The id of this CentralNetworkConnection.
         :rtype: str
@@ -149,7 +149,7 @@ class CentralNetworkConnection:
     def id(self, id):
         """Sets the id of this CentralNetworkConnection.
 
-        资源ID标识符。
+        实例ID。
 
         :param id: The id of this CentralNetworkConnection.
         :type id: str
@@ -204,7 +204,7 @@ class CentralNetworkConnection:
     def domain_id(self):
         """Gets the domain_id of this CentralNetworkConnection.
 
-        实例所属帐号ID。
+        实例所属账号ID。
 
         :return: The domain_id of this CentralNetworkConnection.
         :rtype: str
@@ -215,7 +215,7 @@ class CentralNetworkConnection:
     def domain_id(self, domain_id):
         """Sets the domain_id of this CentralNetworkConnection.
 
-        实例所属帐号ID。
+        实例所属账号ID。
 
         :param domain_id: The domain_id of this CentralNetworkConnection.
         :type domain_id: str
@@ -248,7 +248,7 @@ class CentralNetworkConnection:
     def central_network_id(self):
         """Gets the central_network_id of this CentralNetworkConnection.
 
-        资源ID标识符。
+        中心网络ID。
 
         :return: The central_network_id of this CentralNetworkConnection.
         :rtype: str
@@ -259,7 +259,7 @@ class CentralNetworkConnection:
     def central_network_id(self, central_network_id):
         """Sets the central_network_id of this CentralNetworkConnection.
 
-        资源ID标识符。
+        中心网络ID。
 
         :param central_network_id: The central_network_id of this CentralNetworkConnection.
         :type central_network_id: str
@@ -270,7 +270,7 @@ class CentralNetworkConnection:
     def central_network_plane_id(self):
         """Gets the central_network_plane_id of this CentralNetworkConnection.
 
-        资源ID标识符。
+        中心网络平面ID。
 
         :return: The central_network_plane_id of this CentralNetworkConnection.
         :rtype: str
@@ -281,7 +281,7 @@ class CentralNetworkConnection:
     def central_network_plane_id(self, central_network_plane_id):
         """Sets the central_network_plane_id of this CentralNetworkConnection.
 
-        资源ID标识符。
+        中心网络平面ID。
 
         :param central_network_plane_id: The central_network_plane_id of this CentralNetworkConnection.
         :type central_network_plane_id: str
@@ -292,7 +292,7 @@ class CentralNetworkConnection:
     def global_connection_bandwidth_id(self):
         """Gets the global_connection_bandwidth_id of this CentralNetworkConnection.
 
-        资源ID标识符。
+        全域互联带宽ID。
 
         :return: The global_connection_bandwidth_id of this CentralNetworkConnection.
         :rtype: str
@@ -303,7 +303,7 @@ class CentralNetworkConnection:
     def global_connection_bandwidth_id(self, global_connection_bandwidth_id):
         """Sets the global_connection_bandwidth_id of this CentralNetworkConnection.
 
-        资源ID标识符。
+        全域互联带宽ID。
 
         :param global_connection_bandwidth_id: The global_connection_bandwidth_id of this CentralNetworkConnection.
         :type global_connection_bandwidth_id: str

@@ -22,8 +22,11 @@ class ListGlobalConnectionBandwidthsRequest:
         'id': 'list[str]',
         'name': 'list[str]',
         'enterprise_project_id': 'list[str]',
+        'instance_id': 'list[str]',
+        'instance_type': 'list[str]',
         'binding_service': 'list[str]',
         'type': 'list[str]',
+        'admin_state': 'list[str]',
         'charge_mode': 'list[str]'
     }
 
@@ -33,12 +36,15 @@ class ListGlobalConnectionBandwidthsRequest:
         'id': 'id',
         'name': 'name',
         'enterprise_project_id': 'enterprise_project_id',
+        'instance_id': 'instance_id',
+        'instance_type': 'instance_type',
         'binding_service': 'binding_service',
         'type': 'type',
+        'admin_state': 'admin_state',
         'charge_mode': 'charge_mode'
     }
 
-    def __init__(self, limit=None, marker=None, id=None, name=None, enterprise_project_id=None, binding_service=None, type=None, charge_mode=None):
+    def __init__(self, limit=None, marker=None, id=None, name=None, enterprise_project_id=None, instance_id=None, instance_type=None, binding_service=None, type=None, admin_state=None, charge_mode=None):
         """ListGlobalConnectionBandwidthsRequest
 
         The model defined in huaweicloud sdk
@@ -53,11 +59,17 @@ class ListGlobalConnectionBandwidthsRequest:
         :type name: list[str]
         :param enterprise_project_id: 根据企业项目ID过滤列表。
         :type enterprise_project_id: list[str]
+        :param instance_id: 根据绑定实例id过滤全域互联带宽列表。
+        :type instance_id: list[str]
+        :param instance_type: 根据绑定实例类型过滤全域互联带宽列表。实例类型： - CC: 云连接 - GEIP: 全域弹性公网IP - GCN: 中心网络 - GSN: 分支网络
+        :type instance_type: list[str]
         :param binding_service: 根据支持绑定实例类型过滤全域互联带宽列表。实例类型： - CC: 云连接 - GEIP: 全域弹性公网IP - GCN: 中心网络 - GSN: 分支网络
         :type binding_service: list[str]
         :param type: 根据带宽类型过滤全域互联带宽列表。带宽类型： - TrsArea: 跨区带宽 - Area: 大区带宽 - SubArea: 区域带宽 - Region: 城域带宽
         :type type: list[str]
-        :param charge_mode: 根据计费方式过滤全域互联带宽列表： - bwd: 按带宽计费 - 95: 按传统型95计费
+        :param admin_state: 根据带宽状态过滤全域互联带宽列表： - NORMAL: 正常 - FREEZED: 冻结
+        :type admin_state: list[str]
+        :param charge_mode: 根据计费方式过滤全域互联带宽列表： - bwd: 按带宽计费 - 95: 按传统型95计费 - 95avr (日95计费)
         :type charge_mode: list[str]
         """
         
@@ -68,8 +80,11 @@ class ListGlobalConnectionBandwidthsRequest:
         self._id = None
         self._name = None
         self._enterprise_project_id = None
+        self._instance_id = None
+        self._instance_type = None
         self._binding_service = None
         self._type = None
+        self._admin_state = None
         self._charge_mode = None
         self.discriminator = None
 
@@ -83,10 +98,16 @@ class ListGlobalConnectionBandwidthsRequest:
             self.name = name
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if instance_id is not None:
+            self.instance_id = instance_id
+        if instance_type is not None:
+            self.instance_type = instance_type
         if binding_service is not None:
             self.binding_service = binding_service
         if type is not None:
             self.type = type
+        if admin_state is not None:
+            self.admin_state = admin_state
         if charge_mode is not None:
             self.charge_mode = charge_mode
 
@@ -201,6 +222,50 @@ class ListGlobalConnectionBandwidthsRequest:
         self._enterprise_project_id = enterprise_project_id
 
     @property
+    def instance_id(self):
+        """Gets the instance_id of this ListGlobalConnectionBandwidthsRequest.
+
+        根据绑定实例id过滤全域互联带宽列表。
+
+        :return: The instance_id of this ListGlobalConnectionBandwidthsRequest.
+        :rtype: list[str]
+        """
+        return self._instance_id
+
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        """Sets the instance_id of this ListGlobalConnectionBandwidthsRequest.
+
+        根据绑定实例id过滤全域互联带宽列表。
+
+        :param instance_id: The instance_id of this ListGlobalConnectionBandwidthsRequest.
+        :type instance_id: list[str]
+        """
+        self._instance_id = instance_id
+
+    @property
+    def instance_type(self):
+        """Gets the instance_type of this ListGlobalConnectionBandwidthsRequest.
+
+        根据绑定实例类型过滤全域互联带宽列表。实例类型： - CC: 云连接 - GEIP: 全域弹性公网IP - GCN: 中心网络 - GSN: 分支网络
+
+        :return: The instance_type of this ListGlobalConnectionBandwidthsRequest.
+        :rtype: list[str]
+        """
+        return self._instance_type
+
+    @instance_type.setter
+    def instance_type(self, instance_type):
+        """Sets the instance_type of this ListGlobalConnectionBandwidthsRequest.
+
+        根据绑定实例类型过滤全域互联带宽列表。实例类型： - CC: 云连接 - GEIP: 全域弹性公网IP - GCN: 中心网络 - GSN: 分支网络
+
+        :param instance_type: The instance_type of this ListGlobalConnectionBandwidthsRequest.
+        :type instance_type: list[str]
+        """
+        self._instance_type = instance_type
+
+    @property
     def binding_service(self):
         """Gets the binding_service of this ListGlobalConnectionBandwidthsRequest.
 
@@ -245,10 +310,32 @@ class ListGlobalConnectionBandwidthsRequest:
         self._type = type
 
     @property
+    def admin_state(self):
+        """Gets the admin_state of this ListGlobalConnectionBandwidthsRequest.
+
+        根据带宽状态过滤全域互联带宽列表： - NORMAL: 正常 - FREEZED: 冻结
+
+        :return: The admin_state of this ListGlobalConnectionBandwidthsRequest.
+        :rtype: list[str]
+        """
+        return self._admin_state
+
+    @admin_state.setter
+    def admin_state(self, admin_state):
+        """Sets the admin_state of this ListGlobalConnectionBandwidthsRequest.
+
+        根据带宽状态过滤全域互联带宽列表： - NORMAL: 正常 - FREEZED: 冻结
+
+        :param admin_state: The admin_state of this ListGlobalConnectionBandwidthsRequest.
+        :type admin_state: list[str]
+        """
+        self._admin_state = admin_state
+
+    @property
     def charge_mode(self):
         """Gets the charge_mode of this ListGlobalConnectionBandwidthsRequest.
 
-        根据计费方式过滤全域互联带宽列表： - bwd: 按带宽计费 - 95: 按传统型95计费
+        根据计费方式过滤全域互联带宽列表： - bwd: 按带宽计费 - 95: 按传统型95计费 - 95avr (日95计费)
 
         :return: The charge_mode of this ListGlobalConnectionBandwidthsRequest.
         :rtype: list[str]
@@ -259,7 +346,7 @@ class ListGlobalConnectionBandwidthsRequest:
     def charge_mode(self, charge_mode):
         """Sets the charge_mode of this ListGlobalConnectionBandwidthsRequest.
 
-        根据计费方式过滤全域互联带宽列表： - bwd: 按带宽计费 - 95: 按传统型95计费
+        根据计费方式过滤全域互联带宽列表： - bwd: 按带宽计费 - 95: 按传统型95计费 - 95avr (日95计费)
 
         :param charge_mode: The charge_mode of this ListGlobalConnectionBandwidthsRequest.
         :type charge_mode: list[str]

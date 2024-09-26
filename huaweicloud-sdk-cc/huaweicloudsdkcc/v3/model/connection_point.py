@@ -22,7 +22,8 @@ class ConnectionPoint:
         'region_id': 'str',
         'site_code': 'str',
         'instance_id': 'str',
-        'type': 'ConnectionPointTypeEnum'
+        'type': 'ConnectionPointTypeEnum',
+        'parent_instance_id': 'str'
     }
 
     attribute_map = {
@@ -31,15 +32,16 @@ class ConnectionPoint:
         'region_id': 'region_id',
         'site_code': 'site_code',
         'instance_id': 'instance_id',
-        'type': 'type'
+        'type': 'type',
+        'parent_instance_id': 'parent_instance_id'
     }
 
-    def __init__(self, id=None, project_id=None, region_id=None, site_code=None, instance_id=None, type=None):
+    def __init__(self, id=None, project_id=None, region_id=None, site_code=None, instance_id=None, type=None, parent_instance_id=None):
         """ConnectionPoint
 
         The model defined in huaweicloud sdk
 
-        :param id: 资源ID标识符。
+        :param id: 实例ID。
         :type id: str
         :param project_id: 实例所属项目ID。
         :type project_id: str
@@ -47,10 +49,12 @@ class ConnectionPoint:
         :type region_id: str
         :param site_code: 站点编码定义
         :type site_code: str
-        :param instance_id: 资源ID标识符。
+        :param instance_id: 实例ID。
         :type instance_id: str
         :param type: 
         :type type: :class:`huaweicloudsdkcc.v3.ConnectionPointTypeEnum`
+        :param parent_instance_id: 实例ID。
+        :type parent_instance_id: str
         """
         
         
@@ -61,6 +65,7 @@ class ConnectionPoint:
         self._site_code = None
         self._instance_id = None
         self._type = None
+        self._parent_instance_id = None
         self.discriminator = None
 
         self.id = id
@@ -69,12 +74,14 @@ class ConnectionPoint:
         self.site_code = site_code
         self.instance_id = instance_id
         self.type = type
+        if parent_instance_id is not None:
+            self.parent_instance_id = parent_instance_id
 
     @property
     def id(self):
         """Gets the id of this ConnectionPoint.
 
-        资源ID标识符。
+        实例ID。
 
         :return: The id of this ConnectionPoint.
         :rtype: str
@@ -85,7 +92,7 @@ class ConnectionPoint:
     def id(self, id):
         """Sets the id of this ConnectionPoint.
 
-        资源ID标识符。
+        实例ID。
 
         :param id: The id of this ConnectionPoint.
         :type id: str
@@ -162,7 +169,7 @@ class ConnectionPoint:
     def instance_id(self):
         """Gets the instance_id of this ConnectionPoint.
 
-        资源ID标识符。
+        实例ID。
 
         :return: The instance_id of this ConnectionPoint.
         :rtype: str
@@ -173,7 +180,7 @@ class ConnectionPoint:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ConnectionPoint.
 
-        资源ID标识符。
+        实例ID。
 
         :param instance_id: The instance_id of this ConnectionPoint.
         :type instance_id: str
@@ -197,6 +204,28 @@ class ConnectionPoint:
         :type type: :class:`huaweicloudsdkcc.v3.ConnectionPointTypeEnum`
         """
         self._type = type
+
+    @property
+    def parent_instance_id(self):
+        """Gets the parent_instance_id of this ConnectionPoint.
+
+        实例ID。
+
+        :return: The parent_instance_id of this ConnectionPoint.
+        :rtype: str
+        """
+        return self._parent_instance_id
+
+    @parent_instance_id.setter
+    def parent_instance_id(self, parent_instance_id):
+        """Sets the parent_instance_id of this ConnectionPoint.
+
+        实例ID。
+
+        :param parent_instance_id: The parent_instance_id of this ConnectionPoint.
+        :type parent_instance_id: str
+        """
+        self._parent_instance_id = parent_instance_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

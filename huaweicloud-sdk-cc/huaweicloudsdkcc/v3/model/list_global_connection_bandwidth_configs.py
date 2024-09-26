@@ -110,10 +110,8 @@ class ListGlobalConnectionBandwidthConfigs:
         self.quotas = quotas
         self.sla_level = sla_level
         self.bind_limit = bind_limit
-        if enable_area_bandwidth is not None:
-            self.enable_area_bandwidth = enable_area_bandwidth
-        if enable_change_95 is not None:
-            self.enable_change_95 = enable_change_95
+        self.enable_area_bandwidth = enable_area_bandwidth
+        self.enable_change_95 = enable_change_95
         if enable_spec_code is not None:
             self.enable_spec_code = enable_spec_code
 

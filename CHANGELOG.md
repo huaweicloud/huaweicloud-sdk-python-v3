@@ -1,3 +1,1671 @@
+# 3.1.116 2024-09-26
+
+### HuaweiCloud SDK BSS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListCustomerselfResourceRecordDetails**
+    - changes of response param
+      - `+ monthly_records.effective_time`
+      - `+ monthly_records.expire_time`
+
+### HuaweiCloud SDK BSSINTL
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListCustomerselfResourceRecordDetails**
+    - changes of response param
+      - `+ monthly_records.effective_time`
+      - `+ monthly_records.expire_time`
+
+### HuaweiCloud SDK CAE
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateComponentWithConfiguration**
+    - changes of request param
+      - `+ configurations.data.spec.items.operator`
+      - `+ configurations.data.spec.items.ports.operator`
+      - `+ configurations.data.spec.items.ports.uid`
+    - changes of response param
+      - `+ configurations.data.spec.items.operator`
+      - `+ configurations.data.spec.items.ports.operator`
+      - `+ configurations.data.spec.items.ports.uid`
+  - **ListComponentConfigurations**
+    - changes of request param
+      - `+ displayMode`
+    - changes of response param
+      - `+ items.data.spec.items.operator`
+      - `+ items.data.spec.items.ports.operator`
+      - `+ items.data.spec.items.ports.uid`
+  - **CreateComponentConfiguration**
+    - changes of request param
+      - `+ items.data.spec.items.operator`
+      - `+ items.data.spec.items.ports.operator`
+      - `+ items.data.spec.items.ports.uid`
+
+### HuaweiCloud SDK CC
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the following APIs:
+    - `ListGcbResourceTags`
+    - `CreateGcbResourceTag`
+    - `DeleteGcbResourceTag`
+    - `BatchCreateGcbResourceTags`
+    - `BatchDeleteGcbResourceTags`
+    - `CountGcbResourceByTag`
+    - `ListGcbResourceByTag`
+    - `ListGcbTenantTags`
+
+### HuaweiCloud SDK CC
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `ListGcbResourceTags`
+    - `CreateGcbResourceTag`
+    - `DeleteGcbResourceTag`
+    - `BatchCreateGcbResourceTags`
+    - `BatchDeleteGcbResourceTags`
+    - `CountGcbResourceByTag`
+    - `ListGcbResourceByTag`
+    - `ListGcbTenantTags`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListNetworkInstances**
+    - changes of request param
+      - `* id: list<UUIDDef> -> list<UUID32Def>`
+      - `* cloud_connection_id: list<UUIDDef> -> list<UUID32Def>`
+  - **ListCloudConnectionRoutes**
+    - changes of request param
+      - `* cloud_connection_id: list<UUIDDef> -> list<UUID32Def>`
+  - **ListAuthorisations**
+    - changes of request param
+      - `* id: list<UUIDDef> -> list<UUID32Def>`
+      - `* cloud_connection_id: list<UUIDDef> -> list<UUID32Def>`
+    - changes of response param
+      - `+ authorisations.is_loaded_by_cloud_connection`
+  - **CreateAuthorisation**
+    - changes of response param
+      - `+ authorisation.is_loaded_by_cloud_connection`
+  - **ListPermissions**
+    - changes of request param
+      - `* id: list<UUIDDef> -> list<UUID32Def>`
+      - `* cloud_connection_id: list<UUIDDef> -> list<UUID32Def>`
+  - **UpdateAuthorisation**
+    - changes of response param
+      - `+ authorisation.is_loaded_by_cloud_connection`
+  - **ListCentralNetworkGdgwAttachments**
+    - changes of request param
+      - `* id: list<UUIDDef> -> list<UUID64Def>`
+      - `* global_dc_gateway_id: list<UUIDDef> -> list<UUID64Def>`
+    - changes of response param
+      - `+ central_network_gdgw_attachments.auto_associate_route_enabled`
+      - `+ central_network_gdgw_attachments.auto_propagate_route_enabled`
+      - `+ central_network_gdgw_attachments.state: enum value [APPROVING,APPROVED,UNAPPROVED]`
+  - **CreateCentralNetworkGdgwAttachment**
+    - changes of response param
+      - `+ central_network_gdgw_attachment.auto_associate_route_enabled`
+      - `+ central_network_gdgw_attachment.auto_propagate_route_enabled`
+      - `+ central_network_gdgw_attachment.state: enum value [APPROVING,APPROVED,UNAPPROVED]`
+  - **ListCentralNetworkErRouteTableAttachments**
+    - changes of request param
+      - `* id: list<UUIDDef> -> list<UUID64Def>`
+      - `* attachment_instance_id: list<UUIDDef> -> list<UUID64Def>`
+    - changes of response param
+      - `+ central_network_er_route_table_attachments.auto_associate_route_enabled`
+      - `+ central_network_er_route_table_attachments.auto_propagate_route_enabled`
+      - `+ central_network_er_route_table_attachments.state: enum value [APPROVING,APPROVED,UNAPPROVED]`
+  - **CreateCentralNetworkErRouteTableAttachment**
+    - changes of request param
+      - `+ central_network_er_route_table_attachment.auto_associate_route_enabled`
+      - `+ central_network_er_route_table_attachment.auto_propagate_route_enabled`
+    - changes of response param
+      - `+ central_network_er_route_table_attachment.auto_associate_route_enabled`
+      - `+ central_network_er_route_table_attachment.auto_propagate_route_enabled`
+      - `+ central_network_er_route_table_attachment.state: enum value [APPROVING,APPROVED,UNAPPROVED]`
+  - **ShowCentralNetworkErRouteTableAttachment**
+    - changes of response param
+      - `+ central_network_er_route_table_attachment.auto_associate_route_enabled`
+      - `+ central_network_er_route_table_attachment.auto_propagate_route_enabled`
+      - `+ central_network_er_route_table_attachment.state: enum value [APPROVING,APPROVED,UNAPPROVED]`
+  - **UpdateCentralNetworkErRouteTableAttachment**
+    - changes of response param
+      - `+ central_network_er_route_table_attachment.auto_associate_route_enabled`
+      - `+ central_network_er_route_table_attachment.auto_propagate_route_enabled`
+      - `+ central_network_er_route_table_attachment.state: enum value [APPROVING,APPROVED,UNAPPROVED]`
+  - **ShowCentralNetworkGdgwAttachment**
+    - changes of response param
+      - `+ central_network_gdgw_attachment.auto_associate_route_enabled`
+      - `+ central_network_gdgw_attachment.auto_propagate_route_enabled`
+      - `+ central_network_gdgw_attachment.state: enum value [APPROVING,APPROVED,UNAPPROVED]`
+  - **UpdateCentralNetworkGdgwAttachment**
+    - changes of response param
+      - `+ central_network_gdgw_attachment.auto_associate_route_enabled`
+      - `+ central_network_gdgw_attachment.auto_propagate_route_enabled`
+      - `+ central_network_gdgw_attachment.state: enum value [APPROVING,APPROVED,UNAPPROVED]`
+  - **ListCentralNetworkCapabilities**
+    - changes of response param
+      - `+ capabilities.capability: enum value [central-network.is-support-custom-er-table,connection-bandwidth.free-line,er-instance.support-sts5-regions,gdgw-instance.support-dscp-regions,gdgw-instance.support-freeze-regions]`
+  - **ListGlobalConnectionBandwidthConfigs**
+    - changes of response param
+      - `+ configs.charge_mode: enum value [95avr]`
+      - `+ configs.size_range.type: enum value [95avr]`
+  - **ListGlobalConnectionBandwidthSpecCodes**
+    - changes of request param
+      - `* id: list<UUIDDef> -> list<UUID64Def>`
+  - **ListGlobalConnectionBandwidthSites**
+    - changes of request param
+      - `+ name_en`
+      - `+ name_cn`
+      - `* id: list<UUIDDef> -> list<UUID64Def>`
+  - **ListGlobalConnectionBandwidthLineLevels**
+    - changes of request param
+      - `* id: list<UUIDDef> -> list<UUID64Def>`
+  - **ListCloudConnections**
+    - changes of request param
+      - `* id: list<UUIDDef> -> list<UUID32Def>`
+  - **ListBandwidthPackages**
+    - changes of request param
+      - `* id: list<UUIDDef> -> list<UUID32Def>`
+      - `* cloud_connection_id: list<UUIDDef> -> list<UUID32Def>`
+  - **ListInterRegionBandwidths**
+    - changes of request param
+      - `* id: list<UUIDDef> -> list<UUID32Def>`
+      - `* cloud_connection_id: list<UUIDDef> -> list<UUID32Def>`
+  - **ListCentralNetworkConnections**
+    - changes of request param
+      - `* id: list<UUIDDef> -> list<UUID64Def>`
+      - `* global_connection_bandwidth_id: list<UUIDDef> -> list<UUID64Def>`
+    - changes of response param
+      - `+ central_network_connections.state: enum value [APPROVING,APPROVED,UNAPPROVED]`
+      - `+ central_network_connections.connection_point_pair.parent_instance_id`
+  - **UpdateCentralNetworkConnection**
+    - changes of response param
+      - `+ central_network_connection.state: enum value [APPROVING,APPROVED,UNAPPROVED]`
+      - `+ central_network_connection.connection_point_pair.parent_instance_id`
+  - **ListCentralNetworkAttachments**
+    - changes of request param
+      - `* id: list<UUIDDef> -> list<UUID64Def>`
+      - `* attachment_instance_id: list<UUIDDef> -> list<UUID64Def>`
+    - changes of response param
+      - `+ central_network_attachments.state: enum value [APPROVING,APPROVED,UNAPPROVED]`
+      - `+ central_network_attachments.specification_value.auto_associate_route_enabled`
+      - `+ central_network_attachments.specification_value.auto_propagate_route_enabled`
+      - `+ central_network_attachments.specification_value.attachment_parent_instance_id`
+      - `- central_network_attachments.specification_value.attached_er_id`
+  - **DeleteCentralNetworkAttachment**
+    - changes of response param
+      - `+ central_network_attachment.state: enum value [APPROVING,APPROVED,UNAPPROVED]`
+      - `+ central_network_attachment.specification_value.auto_associate_route_enabled`
+      - `+ central_network_attachment.specification_value.auto_propagate_route_enabled`
+      - `+ central_network_attachment.specification_value.attachment_parent_instance_id`
+      - `- central_network_attachment.specification_value.attached_er_id`
+  - **ListGlobalConnectionBandwidths**
+    - changes of request param
+      - `+ instance_id`
+      - `+ instance_type`
+      - `+ admin_state`
+      - `* id: list<UUIDDef> -> list<UUID64Def>`
+    - changes of response param
+      - `+ globalconnection_bandwidths.charge_mode: enum value [95avr]`
+  - **CreateGlobalConnectionBandwidth**
+    - changes of response param
+      - `+ globalconnection_bandwidth.charge_mode: enum value [95avr]`
+  - **ShowGlobalConnectionBandwidth**
+    - changes of response param
+      - `+ globalconnection_bandwidth.charge_mode: enum value [95avr]`
+  - **UpdateGlobalConnectionBandwidth**
+    - changes of request param
+      - `+ globalconnection_bandwidth.charge_mode: enum value [95avr]`
+    - changes of response param
+      - `+ globalconnection_bandwidth.charge_mode: enum value [95avr]`
+  - **ListSupportBindingConnectionBandwidths**
+    - changes of request param
+      - `* binding_service: required -> optional`
+    - changes of response param
+      - `+ globalconnection_bandwidths.charge_mode: enum value [95avr]`
+  - **ListCentralNetworks**
+    - changes of request param
+      - `* id: list<UUIDDef> -> list<UUID64Def>`
+      - `* enterprise_router_id: list<UUIDDef> -> list<UUID64Def>`
+      - `* attachment_instance_id: list<UUIDDef> -> list<UUID64Def>`
+      - `* global_connection_bandwidth_id: list<UUIDDef> -> list<UUID64Def>`
+      - `* connection_id: list<UUIDDef> -> list<UUID64Def>`
+    - changes of response param
+      - `+ central_networks.auto_associate_route_enabled`
+      - `+ central_networks.auto_propagate_route_enabled`
+      - `+ central_networks.state: enum value [RESTORING]`
+      - `+ central_networks.connections.state: enum value [APPROVING,APPROVED,UNAPPROVED]`
+      - `+ central_networks.connections.connection_point_pair.parent_instance_id`
+  - **CreateCentralNetwork**
+    - changes of request param
+      - `+ central_network.auto_associate_route_enabled`
+      - `+ central_network.auto_propagate_route_enabled`
+    - changes of response param
+      - `+ central_network.auto_associate_route_enabled`
+      - `+ central_network.auto_propagate_route_enabled`
+      - `+ central_network.state: enum value [RESTORING]`
+      - `+ central_network.connections.state: enum value [APPROVING,APPROVED,UNAPPROVED]`
+      - `+ central_network.connections.connection_point_pair.parent_instance_id`
+  - **ShowCentralNetwork**
+    - changes of response param
+      - `+ central_network.auto_associate_route_enabled`
+      - `+ central_network.auto_propagate_route_enabled`
+      - `+ central_network.state: enum value [RESTORING]`
+      - `+ central_network.connections.state: enum value [APPROVING,APPROVED,UNAPPROVED]`
+      - `+ central_network.connections.connection_point_pair.parent_instance_id`
+  - **UpdateCentralNetwork**
+    - changes of request param
+      - `+ central_network.auto_associate_route_enabled`
+      - `+ central_network.auto_propagate_route_enabled`
+    - changes of response param
+      - `+ central_network.auto_associate_route_enabled`
+      - `+ central_network.auto_propagate_route_enabled`
+      - `+ central_network.state: enum value [RESTORING]`
+      - `+ central_network.connections.state: enum value [APPROVING,APPROVED,UNAPPROVED]`
+      - `+ central_network.connections.connection_point_pair.parent_instance_id`
+  - **DeleteCentralNetwork**
+    - changes of response param
+      - `+ central_network.auto_associate_route_enabled`
+      - `+ central_network.auto_propagate_route_enabled`
+      - `+ central_network.state: enum value [RESTORING]`
+      - `+ central_network.connections.state: enum value [APPROVING,APPROVED,UNAPPROVED]`
+      - `+ central_network.connections.connection_point_pair.parent_instance_id`
+  - **ListCentralNetworksByTags**
+    - changes of response param
+      - `+ central_networks.auto_associate_route_enabled`
+      - `+ central_networks.auto_propagate_route_enabled`
+      - `+ central_networks.state: enum value [RESTORING]`
+      - `+ central_networks.connections.state: enum value [APPROVING,APPROVED,UNAPPROVED]`
+      - `+ central_networks.connections.connection_point_pair.parent_instance_id`
+  - **ListCentralNetworkPolicies**
+    - changes of request param
+      - `* id: list<UUIDDef> -> list<UUID64Def>`
+
+### HuaweiCloud SDK CCE
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowNode**
+    - changes of response param
+      - `+ spec.rootVolume.iops`
+      - `+ spec.rootVolume.throughput`
+      - `+ spec.storage.storageSelectors.matchLabels.iops`
+      - `+ spec.storage.storageSelectors.matchLabels.throughput`
+  - **UpdateNode**
+    - changes of response param
+      - `+ spec.rootVolume.iops`
+      - `+ spec.rootVolume.throughput`
+      - `+ spec.storage.storageSelectors.matchLabels.iops`
+      - `+ spec.storage.storageSelectors.matchLabels.throughput`
+  - **DeleteNode**
+    - changes of response param
+      - `+ spec.rootVolume.iops`
+      - `+ spec.rootVolume.throughput`
+      - `+ spec.storage.storageSelectors.matchLabels.iops`
+      - `+ spec.storage.storageSelectors.matchLabels.throughput`
+  - **CreateNode**
+    - changes of request param
+      - `+ spec.rootVolume.iops`
+      - `+ spec.rootVolume.throughput`
+      - `+ spec.storage.storageSelectors.matchLabels.iops`
+      - `+ spec.storage.storageSelectors.matchLabels.throughput`
+    - changes of response param
+      - `+ spec.rootVolume.iops`
+      - `+ spec.rootVolume.throughput`
+      - `+ spec.storage.storageSelectors.matchLabels.iops`
+      - `+ spec.storage.storageSelectors.matchLabels.throughput`
+  - **ListNodes**
+    - changes of response param
+      - `+ items.spec.rootVolume.iops`
+      - `+ items.spec.rootVolume.throughput`
+      - `+ items.spec.storage.storageSelectors.matchLabels.iops`
+      - `+ items.spec.storage.storageSelectors.matchLabels.throughput`
+  - **ShowNodePool**
+    - changes of response param
+      - `+ spec.nodeTemplate.rootVolume.iops`
+      - `+ spec.nodeTemplate.rootVolume.throughput`
+      - `+ spec.nodeTemplate.storage.storageSelectors.matchLabels.iops`
+      - `+ spec.nodeTemplate.storage.storageSelectors.matchLabels.throughput`
+  - **UpdateNodePool**
+    - changes of response param
+      - `+ spec.nodeTemplate.rootVolume.iops`
+      - `+ spec.nodeTemplate.rootVolume.throughput`
+      - `+ spec.nodeTemplate.storage.storageSelectors.matchLabels.iops`
+      - `+ spec.nodeTemplate.storage.storageSelectors.matchLabels.throughput`
+  - **DeleteNodePool**
+    - changes of response param
+      - `+ spec.nodeTemplate.rootVolume.iops`
+      - `+ spec.nodeTemplate.rootVolume.throughput`
+      - `+ spec.nodeTemplate.storage.storageSelectors.matchLabels.iops`
+      - `+ spec.nodeTemplate.storage.storageSelectors.matchLabels.throughput`
+  - **AddNode**
+    - changes of request param
+      - `+ nodeList.spec.volumeConfig.storage.storageSelectors.matchLabels.iops`
+      - `+ nodeList.spec.volumeConfig.storage.storageSelectors.matchLabels.throughput`
+  - **ResetNode**
+    - changes of request param
+      - `+ nodeList.spec.volumeConfig.storage.storageSelectors.matchLabels.iops`
+      - `+ nodeList.spec.volumeConfig.storage.storageSelectors.matchLabels.throughput`
+  - **CreateNodePool**
+    - changes of request param
+      - `+ spec.nodeTemplate.rootVolume.iops`
+      - `+ spec.nodeTemplate.rootVolume.throughput`
+      - `+ spec.nodeTemplate.storage.storageSelectors.matchLabels.iops`
+      - `+ spec.nodeTemplate.storage.storageSelectors.matchLabels.throughput`
+    - changes of response param
+      - `+ spec.nodeTemplate.rootVolume.iops`
+      - `+ spec.nodeTemplate.rootVolume.throughput`
+      - `+ spec.nodeTemplate.storage.storageSelectors.matchLabels.iops`
+      - `+ spec.nodeTemplate.storage.storageSelectors.matchLabels.throughput`
+  - **ListNodePools**
+    - changes of response param
+      - `+ items.spec.nodeTemplate.rootVolume.iops`
+      - `+ items.spec.nodeTemplate.rootVolume.throughput`
+      - `+ items.spec.nodeTemplate.storage.storageSelectors.matchLabels.iops`
+      - `+ items.spec.nodeTemplate.storage.storageSelectors.matchLabels.throughput`
+
+### HuaweiCloud SDK CES
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateAlarmRules**
+    - changes of request param
+      - `+ tags`
+
+### HuaweiCloud SDK Cloudtest
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListTaskTestCases**
+    - changes of response param
+      - `+ result`
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `+ status`
+      - `- not_related_case_uris`
+      - `- related_case_uris`
+      - `- case_task_info`
+  - **ListAttachments**
+    - changes of response param
+      - `+ result`
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `+ status`
+      - `- value`
+  - **ShowBackgroundInfo**
+    - changes of response param
+      - `+ result`
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `+ status`
+      - `- project_uuid`
+      - `- cover_file_name`
+      - `- logo_file_name`
+      - `- background_file_name`
+  - **ShowProgress**
+    - changes of response param
+      - `+ result`
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `+ status`
+      - `- reason`
+      - `- return_value`
+      - `- is_ended`
+      - `- code`
+      - `- last_modified_time`
+      - `- end_time`
+      - `- begin_time`
+      - `- line_up_num`
+      - `- completed`
+      - `- submitted_time`
+      - `- uri`
+      - `- exception_message`
+      - `- finished_count`
+      - `- total`
+      - `- asyn_operation_key`
+      - `- finished_percent`
+      - `- name`
+      - `- server_ip`
+      - `- cancelled`
+      - `- informations`
+  - **ListProjectTestCaseFields**
+    - changes of response param
+      - `+ result`
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `+ status`
+      - `- value`
+  - **ShowFreeDeclaration**
+    - changes of response param
+      - `+ result`
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `+ status`
+      - `- value`
+  - **ListTestTypes**
+    - changes of response param
+      - `+ result`
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `+ status`
+      - `- value`
+  - **ShowTestCase**
+    - changes of response param
+      - `+ result`
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `+ status`
+      - `- type`
+      - `- preparation`
+      - `- number`
+      - `- custom_field_1`
+      - `- custom_field_2`
+      - `- rank`
+      - `- execute_duration`
+      - `- parent_path`
+      - `- test_factor_number`
+      - `- last_modified`
+      - `- project_uuid`
+      - `- issue`
+      - `- feature_name`
+      - `- custom_field_5`
+      - `- custom_field_6`
+      - `- custom_field_3`
+      - `- creation_date`
+      - `- custom_field_4`
+      - `- custom_field_9`
+      - `- feature_uri`
+      - `- custom_field_7`
+      - `- tags`
+      - `- last_modifier`
+      - `- last_change_time`
+      - `- labels`
+      - `- custom_field_8`
+      - `- issue_name`
+      - `- last_result`
+      - `- is_keyword`
+      - `- parent_uri`
+      - `- result_code`
+      - `- para_validator`
+      - `- cloud_carrier`
+      - `- activity`
+      - `- test_pattern_number`
+      - `- iterator_case_uri`
+      - `- execute_parameter`
+      - `- is_contract_testcase`
+      - `- last_result_uri`
+      - `- svn_script_path`
+      - `- be_auto_type_time`
+      - `- expect_output`
+      - `- release_dev`
+      - `- test_base_num`
+      - `- origin_uri`
+      - `- associate_issue`
+      - `- exe_platform`
+      - `- testcase_uri`
+      - `- uri`
+      - `- test_type`
+      - `- execute_param`
+      - `- version_name`
+      - `- stage`
+      - `- market_place`
+      - `- label_id`
+      - `- defect_list`
+      - `- test_mind_url`
+      - `- keywords`
+      - `- creation_version_name`
+      - `- custom_field_14`
+      - `- execute_times`
+      - `- custom_field_15`
+      - `- version_uri`
+      - `- custom_field_12`
+      - `- knet_node_id`
+      - `- custom_field_13`
+      - `- platform_type`
+      - `- custom_field_10`
+      - `- custom_field_11`
+      - `- creation_date_timestamp`
+      - `- custom_field_18`
+      - `- custom_field_19`
+      - `- custom_field_16`
+      - `- custom_field_17`
+      - `- test_feature`
+      - `- owner_name`
+      - `- new_created`
+      - `- author`
+      - `- steps`
+      - `- base_flag`
+      - `- market`
+      - `- custom_field_25`
+      - `- custom_field_23`
+      - `- module_id`
+      - `- custom_field_24`
+      - `- snp_no`
+      - `- dr_relation_id`
+      - `- custom_field_21`
+      - `- custom_field_22`
+      - `- first_execute_time`
+      - `- custom_field_20`
+      - `- name`
+      - `- module_name`
+      - `- region`
+      - `- testcase_project`
+      - `- automatically_executed`
+      - `- author_name`
+      - `- test_mind_id`
+      - `- release_id`
+      - `- detect_type`
+      - `- scene_flag`
+      - `- status_code`
+      - `- last_modified_timestamp`
+      - `- interface_name`
+      - `- remark`
+      - `- service_type_name`
+      - `- auto_type`
+      - `- compare_number`
+      - `- last_modifier_name`
+      - `- test_type_name`
+      - `- commit_url`
+      - `- creation_version_uri`
+      - `- to_be_auto_exec`
+      - `- time_cost`
+      - `- network_script_name`
+      - `- env_type`
+      - `- module_path`
+      - `- execute_latest_time`
+      - `- feature_path`
+      - `- owner`
+      - `- case_type`
+      - `- designer`
+      - `- test_step`
+      - `- service_type`
+      - `- last_exe_author`
+      - `- comment`
+      - `- associate_defect`
+      - `- design_note`
+      - `- map_restrict`
+      - `- module_path_name`
+      - `- script_link`
+  - **CreateResourceUri**
+    - changes of response param
+      - `+ result`
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `+ status`
+      - `- value`
+  - **ShowDomainInfo**
+    - changes of response param
+      - `+ result`
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `+ status`
+      - `- value`
+  - **ShowDisclaimerRecord**
+    - changes of response param
+      - `+ result`
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `+ status`
+      - `- value`
+  - **ListAllIterators**
+    - changes of response param
+      - `+ result`
+      - `+ status`
+      - `- reason`
+      - `- total`
+      - `- page_no`
+      - `- has_more`
+      - `- value`
+      - `- page_size`
+  - **ShowIteratorByDefect**
+    - changes of response param
+      - `+ result`
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `+ status`
+      - `- type`
+      - `- metric_pbi_id_names`
+      - `- domain_id`
+      - `- number`
+      - `- version_uri`
+      - `- finish_date`
+      - `- pbi_id`
+      - `- creation_date_timestamp`
+      - `- rank`
+      - `- parent_path`
+      - `- current_stage`
+      - `- last_modified`
+      - `- is_closed`
+      - `- risk_des`
+      - `- project_uuid`
+      - `- is_master`
+      - `- owner_name`
+      - `- author`
+      - `- service_name`
+      - `- metric_pbi_ids`
+      - `- asyn_git`
+      - `- creation_date`
+      - `- version`
+      - `- iterations`
+      - `- last_modifier`
+      - `- last_change_time`
+      - `- name`
+      - `- parent_uri`
+      - `- service_types`
+      - `- region`
+      - `- author_name`
+      - `- last_modified_timestamp`
+      - `- description`
+      - `- is_iterator`
+      - `- pbi_name`
+      - `- risk_rating`
+      - `- creation_version_uri`
+      - `- service_id`
+      - `- last_syn_date`
+      - `- plan_end_date`
+      - `- plan_start_date`
+      - `- owner`
+      - `- creator`
+      - `- origin_uri`
+      - `- uri`
+      - `- comment`
+      - `- creator_name`
+      - `- pi_id`
+      - `- plan_id`
+      - `- schema_no`
+  - **ListTestReportsByCondition**
+    - changes of response param
+      - `+ result`
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `+ status`
+      - `- reason`
+      - `- total`
+      - `- page_no`
+      - `- has_more`
+      - `- value`
+      - `- page_size`
+  - **ListOwnTestCases**
+    - changes of response param
+      - `+ result`
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `+ status`
+      - `- reason`
+      - `- total`
+      - `- page_no`
+      - `- has_more`
+      - `- value`
+      - `- page_size`
+  - **ShowTestCasesChangeStatistics**
+    - changes of response param
+      - `+ result`
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `+ status`
+      - `- reuse_testcases_number`
+      - `- update_date_timestamp`
+      - `- modifying_testcases_number`
+      - `- add_testcases_number`
+      - `- update_date`
+  - **BatchDeleteTestCases**
+    - changes of response param
+      - `+ result`
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `+ status`
+      - `- value`
+  - **CreateVersionTestCase**
+    - changes of request param
+      - `+ result`
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `+ status`
+      - `- steps`
+      - `- attachments`
+      - `- author`
+      - `- name`
+      - `- rank`
+      - `- owner`
+      - `- preparation`
+      - `- remark`
+      - `- stage`
+      - `- activity`
+      - `- keywords`
+      - `- market`
+      - `- designer`
+      - `- tags`
+      - `- region`
+      - `- relate_type`
+      - `- service_type`
+      - `- only_change_script`
+      - `- add_to_iterator`
+      - `- need_update_relation`
+      - `- creation_version_uri`
+      - `- number`
+      - `- case_type`
+      - `- platform_type`
+      - `- test_type`
+      - `- design_note`
+      - `- test_step`
+      - `- expect_output`
+      - `- env_type`
+      - `- exe_platform`
+      - `- testcase_project`
+      - `- svn_script_path`
+      - `- map_restrict`
+      - `- network_script_name`
+      - `- auto_type`
+      - `- to_be_auto_exec`
+      - `- last_result`
+      - `- last_result_uri`
+      - `- feature_uri`
+      - `- interface_name`
+      - `- snp_no`
+      - `- dr_relation_id`
+      - `- test_base_num`
+      - `- automatically_executed`
+      - `- first_execute_time`
+      - `- detect_type`
+      - `- execute_param`
+      - `- test_feature`
+      - `- is_contract_testcase`
+      - `- time_cost`
+      - `- custom_field_1`
+      - `- custom_field_2`
+      - `- custom_field_3`
+      - `- custom_field_4`
+      - `- custom_field_5`
+      - `- custom_field_6`
+      - `- custom_field_7`
+      - `- custom_field_8`
+      - `- custom_field_9`
+      - `- custom_field_10`
+      - `- custom_field_11`
+      - `- custom_field_12`
+      - `- custom_field_13`
+      - `- custom_field_14`
+      - `- custom_field_15`
+      - `- custom_field_16`
+      - `- custom_field_17`
+      - `- custom_field_18`
+      - `- custom_field_19`
+      - `- custom_field_20`
+      - `- custom_field_21`
+      - `- custom_field_22`
+      - `- custom_field_23`
+      - `- custom_field_24`
+      - `- custom_field_25`
+      - `- be_auto_type_time`
+      - `- compare_number`
+      - `- scene_flag`
+      - `- base_flag`
+      - `- para_validator`
+      - `- knet_node_id`
+      - `- last_exe_author`
+      - `- cloud_carrier`
+      - `- market_place`
+      - `- test_mind_id`
+      - `- test_mind_url`
+      - `- commit_url`
+      - `- test_pattern_number`
+      - `- test_factor_number`
+      - `- status_code`
+      - `- result_code`
+      - `- release_id`
+      - `- label_id`
+      - `- label_names`
+      - `- module_id`
+      - `- execute_latest_time`
+      - `- execute_duration`
+      - `- is_keyword`
+      - `- release_dev`
+      - `- new_created`
+      - `- execute_parameter`
+      - `- project_uuid`
+      - `- version_uri`
+  - **ListTestCaseComments**
+    - changes of response param
+      - `+ result`
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `+ status`
+      - `- reason`
+      - `- total`
+      - `- page_no`
+      - `- has_more`
+      - `- value`
+      - `- page_size`
+  - **AddTestCaseComment**
+    - changes of response param
+      - `+ result`
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `+ status`
+      - `- project_uuid`
+      - `- creator`
+      - `- test_case_uri`
+      - `- create_time`
+      - `- create_time_timestamp`
+      - `- display_name`
+      - `- uri`
+      - `- update_time`
+      - `- version_uri`
+      - `- notifier`
+      - `- comment`
+      - `- update_time_timestamp`
+  - **ListTasks**
+    - changes of response param
+      - `+ result`
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `+ status`
+      - `- reason`
+      - `- total`
+      - `- page_no`
+      - `- has_more`
+      - `- value`
+      - `- page_size`
+  - **ListTaskAssignCases**
+    - changes of response param
+      - `+ result`
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `+ status`
+      - `- reason`
+      - `- total`
+      - `- page_no`
+      - `- has_more`
+      - `- value`
+      - `- page_size`
+  - **ShowBranch**
+    - changes of response param
+      - `+ result`
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `+ status`
+      - `- type`
+      - `- metric_pbi_id_names`
+      - `- domain_id`
+      - `- number`
+      - `- version_uri`
+      - `- finish_date`
+      - `- pbi_id`
+      - `- creation_date_timestamp`
+      - `- rank`
+      - `- parent_path`
+      - `- current_stage`
+      - `- last_modified`
+      - `- is_closed`
+      - `- risk_des`
+      - `- project_uuid`
+      - `- is_master`
+      - `- owner_name`
+      - `- author`
+      - `- service_name`
+      - `- metric_pbi_ids`
+      - `- asyn_git`
+      - `- creation_date`
+      - `- version`
+      - `- iterations`
+      - `- last_modifier`
+      - `- last_change_time`
+      - `- name`
+      - `- parent_uri`
+      - `- service_types`
+      - `- region`
+      - `- author_name`
+      - `- last_modified_timestamp`
+      - `- description`
+      - `- is_iterator`
+      - `- pbi_name`
+      - `- risk_rating`
+      - `- creation_version_uri`
+      - `- service_id`
+      - `- last_syn_date`
+      - `- plan_end_date`
+      - `- plan_start_date`
+      - `- owner`
+      - `- creator`
+      - `- origin_uri`
+      - `- uri`
+      - `- comment`
+      - `- creator_name`
+      - `- pi_id`
+      - `- plan_id`
+      - `- schema_no`
+  - **ListDomainVisibleServices**
+    - changes of response param
+      - `+ result`
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `+ status`
+      - `- value`
+  - **ListTestCasesByIssue**
+    - changes of response param
+      - `+ result`
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `+ status`
+      - `- new_create`
+      - `- total_count`
+      - `- testing`
+      - `- testcases`
+      - `- finished`
+      - `- test_case_num`
+      - `- designing`
+      - `- case_status_map`
+  - **BatchAddRelationsByOneCase**
+    - changes of response param
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `* result: object<ResultValueStringForOk> -> object<ResultValueString>`
+  - **ListAllTestCases**
+    - changes of response param
+      - `+ result`
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `+ status`
+      - `- reason`
+      - `- total`
+      - `- page_no`
+      - `- has_more`
+      - `- value`
+      - `- page_size`
+  - **BatchAddResourcesForIterator**
+    - changes of response param
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `* result: object<ResultValueStringForOk> -> object<ResultValueString>`
+  - **BatchRemoveTestCasesFromIterator**
+    - changes of response param
+      - `+ result`
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `+ status`
+      - `- name`
+      - `- id`
+  - **CreateReport**
+    - changes of response param
+      - `+ result`
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `+ status`
+      - `- value`
+  - **UpdateVersionTestCase**
+    - changes of response param
+      - `+ result`
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `+ status`
+      - `- type`
+      - `- preparation`
+      - `- number`
+      - `- custom_field_1`
+      - `- custom_field_2`
+      - `- rank`
+      - `- execute_duration`
+      - `- parent_path`
+      - `- test_factor_number`
+      - `- last_modified`
+      - `- project_uuid`
+      - `- feature_name`
+      - `- custom_field_5`
+      - `- custom_field_6`
+      - `- custom_field_3`
+      - `- creation_date`
+      - `- custom_field_4`
+      - `- custom_field_9`
+      - `- feature_uri`
+      - `- custom_field_7`
+      - `- tags`
+      - `- last_modifier`
+      - `- last_change_time`
+      - `- labels`
+      - `- custom_field_8`
+      - `- issue_name`
+      - `- last_result`
+      - `- is_keyword`
+      - `- parent_uri`
+      - `- result_code`
+      - `- para_validator`
+      - `- cloud_carrier`
+      - `- activity`
+      - `- test_pattern_number`
+      - `- iterator_case_uri`
+      - `- execute_parameter`
+      - `- is_contract_testcase`
+      - `- last_result_uri`
+      - `- svn_script_path`
+      - `- be_auto_type_time`
+      - `- expect_output`
+      - `- release_dev`
+      - `- test_base_num`
+      - `- origin_uri`
+      - `- exe_platform`
+      - `- testcase_uri`
+      - `- uri`
+      - `- test_type`
+      - `- execute_param`
+      - `- stage`
+      - `- market_place`
+      - `- label_id`
+      - `- test_mind_url`
+      - `- keywords`
+      - `- creation_version_name`
+      - `- custom_field_14`
+      - `- execute_times`
+      - `- custom_field_15`
+      - `- version_uri`
+      - `- custom_field_12`
+      - `- knet_node_id`
+      - `- custom_field_13`
+      - `- platform_type`
+      - `- custom_field_10`
+      - `- custom_field_11`
+      - `- creation_date_timestamp`
+      - `- custom_field_18`
+      - `- custom_field_19`
+      - `- custom_field_16`
+      - `- custom_field_17`
+      - `- test_feature`
+      - `- owner_name`
+      - `- new_created`
+      - `- author`
+      - `- base_flag`
+      - `- market`
+      - `- custom_field_25`
+      - `- custom_field_23`
+      - `- module_id`
+      - `- custom_field_24`
+      - `- snp_no`
+      - `- dr_relation_id`
+      - `- custom_field_21`
+      - `- custom_field_22`
+      - `- first_execute_time`
+      - `- custom_field_20`
+      - `- name`
+      - `- module_name`
+      - `- region`
+      - `- testcase_project`
+      - `- automatically_executed`
+      - `- author_name`
+      - `- test_mind_id`
+      - `- release_id`
+      - `- detect_type`
+      - `- scene_flag`
+      - `- status_code`
+      - `- last_modified_timestamp`
+      - `- interface_name`
+      - `- remark`
+      - `- service_type_name`
+      - `- auto_type`
+      - `- compare_number`
+      - `- test_type_name`
+      - `- commit_url`
+      - `- creation_version_uri`
+      - `- to_be_auto_exec`
+      - `- time_cost`
+      - `- network_script_name`
+      - `- env_type`
+      - `- module_path`
+      - `- execute_latest_time`
+      - `- feature_path`
+      - `- owner`
+      - `- case_type`
+      - `- designer`
+      - `- test_step`
+      - `- service_type`
+      - `- last_exe_author`
+      - `- comment`
+      - `- design_note`
+      - `- map_restrict`
+      - `- module_path_name`
+      - `- script_link`
+  - **BatchUpdateVersionTestCases**
+    - changes of response param
+      - `+ result`
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `+ status`
+      - `- success_list`
+      - `- name`
+      - `- failed_list`
+      - `- id`
+  - **UpdateTestCaseComment**
+    - changes of response param
+      - `+ result`
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `+ status`
+      - `- project_uuid`
+      - `- creator`
+      - `- test_case_uri`
+      - `- create_time`
+      - `- create_time_timestamp`
+      - `- display_name`
+      - `- uri`
+      - `- update_time`
+      - `- version_uri`
+      - `- notifier`
+      - `- comment`
+      - `- update_time_timestamp`
+  - **DeleteTestCaseComment**
+    - changes of response param
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `* result: object<ResultValueStringForOk> -> object<ResultValueString>`
+  - **CreateIterator**
+    - changes of response param
+      - `+ result`
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `+ status`
+      - `- type`
+      - `- metric_pbi_id_names`
+      - `- domain_id`
+      - `- number`
+      - `- version_uri`
+      - `- finish_date`
+      - `- pbi_id`
+      - `- creation_date_timestamp`
+      - `- rank`
+      - `- parent_path`
+      - `- current_stage`
+      - `- last_modified`
+      - `- is_closed`
+      - `- risk_des`
+      - `- project_uuid`
+      - `- is_master`
+      - `- owner_name`
+      - `- author`
+      - `- service_name`
+      - `- metric_pbi_ids`
+      - `- asyn_git`
+      - `- creation_date`
+      - `- version`
+      - `- iterations`
+      - `- last_modifier`
+      - `- last_change_time`
+      - `- name`
+      - `- parent_uri`
+      - `- service_types`
+      - `- region`
+      - `- author_name`
+      - `- last_modified_timestamp`
+      - `- description`
+      - `- is_iterator`
+      - `- pbi_name`
+      - `- risk_rating`
+      - `- creation_version_uri`
+      - `- service_id`
+      - `- last_syn_date`
+      - `- plan_end_date`
+      - `- plan_start_date`
+      - `- owner`
+      - `- creator`
+      - `- origin_uri`
+      - `- uri`
+      - `- comment`
+      - `- creator_name`
+      - `- pi_id`
+      - `- plan_id`
+      - `- schema_no`
+  - **ListIteratorIssueTree**
+    - changes of response param
+      - `+ result`
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `+ status`
+      - `- value`
+  - **RemoveIssuesFromIterator**
+    - changes of response param
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `* result: object<ResultValueStringForOk> -> object<ResultValueString>`
+  - **ShowIteratorDetail**
+    - changes of response param
+      - `+ result`
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `+ status`
+      - `- actual_start_date`
+      - `- actual_end_date_timestamp`
+      - `- type`
+      - `- metric_pbi_id_names`
+      - `- domain_id`
+      - `- number`
+      - `- version_uri`
+      - `- finish_date`
+      - `- pbi_id`
+      - `- creation_date_timestamp`
+      - `- rank`
+      - `- parent_path`
+      - `- current_stage`
+      - `- last_modified`
+      - `- is_closed`
+      - `- risk_des`
+      - `- project_uuid`
+      - `- start_date_timestamp`
+      - `- expired_info`
+      - `- is_master`
+      - `- owner_name`
+      - `- author`
+      - `- service_name`
+      - `- metric_pbi_ids`
+      - `- asyn_git`
+      - `- creation_date`
+      - `- version`
+      - `- execute`
+      - `- iterations`
+      - `- last_modifier`
+      - `- last_change_time`
+      - `- name`
+      - `- parent_uri`
+      - `- service_types`
+      - `- region`
+      - `- author_name`
+      - `- end_date`
+      - `- last_modified_timestamp`
+      - `- description`
+      - `- is_iterator`
+      - `- pbi_name`
+      - `- risk_rating`
+      - `- creation_version_uri`
+      - `- service_id`
+      - `- end_date_timestamp`
+      - `- design`
+      - `- branch_name`
+      - `- last_syn_date`
+      - `- plan_end_date`
+      - `- plan_start_date`
+      - `- start_date`
+      - `- owner`
+      - `- creator`
+      - `- branch_uri`
+      - `- origin_uri`
+      - `- actual_start_date_timestamp`
+      - `- uri`
+      - `- actual_end_date`
+      - `- is_expired`
+      - `- stages`
+      - `- report`
+      - `- comment`
+      - `- creator_name`
+      - `- pi_id`
+      - `- plan_id`
+      - `- schema_no`
+  - **UpdateIterator**
+    - changes of response param
+      - `+ result`
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `+ status`
+      - `- type`
+      - `- metric_pbi_id_names`
+      - `- domain_id`
+      - `- number`
+      - `- version_uri`
+      - `- finish_date`
+      - `- pbi_id`
+      - `- creation_date_timestamp`
+      - `- rank`
+      - `- parent_path`
+      - `- current_stage`
+      - `- last_modified`
+      - `- is_closed`
+      - `- risk_des`
+      - `- project_uuid`
+      - `- is_master`
+      - `- owner_name`
+      - `- author`
+      - `- service_name`
+      - `- metric_pbi_ids`
+      - `- asyn_git`
+      - `- creation_date`
+      - `- version`
+      - `- iterations`
+      - `- last_modifier`
+      - `- last_change_time`
+      - `- name`
+      - `- parent_uri`
+      - `- service_types`
+      - `- region`
+      - `- author_name`
+      - `- last_modified_timestamp`
+      - `- description`
+      - `- is_iterator`
+      - `- pbi_name`
+      - `- risk_rating`
+      - `- creation_version_uri`
+      - `- service_id`
+      - `- last_syn_date`
+      - `- plan_end_date`
+      - `- plan_start_date`
+      - `- owner`
+      - `- creator`
+      - `- origin_uri`
+      - `- uri`
+      - `- comment`
+      - `- creator_name`
+      - `- pi_id`
+      - `- plan_id`
+      - `- schema_no`
+  - **ListUsingGet**
+    - changes of response param
+      - `* list.create_time: date-time -> int64`
+      - `* list.update_time: date-time -> int64`
+  - **CreateTestCase**
+    - changes of response param
+      - `* rank_id: string -> int32`
+  - **ShowTestCaseDetail**
+    - changes of response param
+      - `* rank_id: string -> int32`
+  - **UpdateTestCase**
+    - changes of response param
+      - `* rank_id: string -> int32`
+  - **ShowTestCaseDetailV2**
+    - changes of response param
+      - `* rank_id: string -> int32`
+  - **ListIssueTree**
+    - changes of response param
+      - `+ result`
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `+ status`
+      - `- value`
+  - **CreateProjectBranch**
+    - changes of response param
+      - `+ result`
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `+ status`
+      - `- type`
+      - `- metric_pbi_id_names`
+      - `- domain_id`
+      - `- number`
+      - `- version_uri`
+      - `- finish_date`
+      - `- pbi_id`
+      - `- creation_date_timestamp`
+      - `- rank`
+      - `- parent_path`
+      - `- current_stage`
+      - `- last_modified`
+      - `- is_closed`
+      - `- risk_des`
+      - `- project_uuid`
+      - `- is_master`
+      - `- owner_name`
+      - `- author`
+      - `- service_name`
+      - `- metric_pbi_ids`
+      - `- asyn_git`
+      - `- creation_date`
+      - `- version`
+      - `- iterations`
+      - `- last_modifier`
+      - `- last_change_time`
+      - `- name`
+      - `- parent_uri`
+      - `- service_types`
+      - `- region`
+      - `- author_name`
+      - `- last_modified_timestamp`
+      - `- description`
+      - `- is_iterator`
+      - `- pbi_name`
+      - `- risk_rating`
+      - `- creation_version_uri`
+      - `- service_id`
+      - `- last_syn_date`
+      - `- plan_end_date`
+      - `- plan_start_date`
+      - `- owner`
+      - `- creator`
+      - `- origin_uri`
+      - `- uri`
+      - `- comment`
+      - `- creator_name`
+      - `- pi_id`
+      - `- plan_id`
+      - `- schema_no`
+  - **ListIterators**
+    - changes of response param
+      - `+ result`
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `+ status`
+      - `- reason`
+      - `- total`
+      - `- page_no`
+      - `- has_more`
+      - `- value`
+      - `- page_size`
+
+### HuaweiCloud SDK CodeHub
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `ListMergeRequestReviewers`
+    - `UpdateMergeRequestApprovalState`
+    - `ListMergeChanges`
+    - `ListRelatedCommits`
+    - `ListMergeChangesTrees`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowMergeRequest**
+    - changes of response param
+      - `+ result.author.name_cn`
+      - `+ result.author.avatar_url`
+      - `+ result.author.email`
+  - **ListMergeRequest**
+    - changes of response param
+      - `+ result.merge_requests.author.name_cn`
+      - `+ result.merge_requests.author.avatar_url`
+      - `+ result.merge_requests.author.email`
+
+### HuaweiCloud SDK DAS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the API `ListCloudDbaInstances`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DDS
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ResizeInstance**
+    - changes of request param
+      - `+ resize.target_type: enum value [config,readonly]`
+
+### HuaweiCloud SDK EdgeSec
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the following APIs:
+    - `ShowHttpPolicies`
+    - `CreateHttpPolicy`
+    - `ShowHttpPolicy`
+    - `UpdateHttpPolicy`
+    - `DeleteHttpPolicy`
+    - `ApplyHttpPolicy`
+    - `UpdateHttpPolicyRuleStatus`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK HSS
+
+- _API Version_
+  - V5
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the APIs `ListAccounts`, `BatchAddAccounts`, `DeleteAccount`, `ListOrganizationTree`
+
+### HuaweiCloud SDK Live
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ListHarvestTask`
+    - `ModifyHarvestTask`
+    - `CreateHarvestTask`
+    - `DeleteHarvestTask`
+    - `UpdateHarvestJobStatus`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Meeting
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowRecordInfo**
+    - changes of response param
+      - `+ data.subject`
+      - `+ data.beginTime`
+      - `+ data.segmentOffset`
+      - `+ data.segmentLimit`
+      - `+ data.segmentCount`
+      - `+ data.segmentList`
+      - `* data: object -> object<RecordInfoDO>`
+
+### HuaweiCloud SDK RGC
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ListEnabledControls`
+    - `CreateAccount`
+    - `ShowManagedAccount`
+    - `ShowOperation`
+    - `RegisterOrganizationalUnit`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK VPCEP
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateEndpointService**
+    - changes of request param
+      - `+ snat_network_id`
+
 # 3.1.115 2024-09-23
 
 ### HuaweiCloud SDK AOM

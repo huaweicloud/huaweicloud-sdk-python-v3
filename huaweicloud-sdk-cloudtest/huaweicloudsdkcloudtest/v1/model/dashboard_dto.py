@@ -17,7 +17,7 @@ class DashboardDto:
     sensitive_list = []
 
     openapi_types = {
-        'create_time': 'datetime',
+        'create_time': 'int',
         'create_user': 'str',
         'data_type': 'str',
         'id': 'str',
@@ -25,7 +25,7 @@ class DashboardDto:
         'service_id': 'str',
         'task_ids': 'list[str]',
         'task_type': 'str',
-        'update_time': 'datetime',
+        'update_time': 'int',
         'update_user': 'str',
         'view_type': 'str'
     }
@@ -50,7 +50,7 @@ class DashboardDto:
         The model defined in huaweicloud sdk
 
         :param create_time: 创建时间
-        :type create_time: datetime
+        :type create_time: int
         :param create_user: 创建者
         :type create_user: str
         :param data_type: 数据类型：0&#x3D;用例成功率；1&#x3D;用例时长
@@ -66,7 +66,7 @@ class DashboardDto:
         :param task_type: 任务类型，仅支持持续拨测和冒烟测试
         :type task_type: str
         :param update_time: 修改时间
-        :type update_time: datetime
+        :type update_time: int
         :param update_user: 修改者
         :type update_user: str
         :param view_type: 看板类型：0&#x3D;折线图；1&#x3D;散点图；2&#x3D;饼图
@@ -118,7 +118,7 @@ class DashboardDto:
         创建时间
 
         :return: The create_time of this DashboardDto.
-        :rtype: datetime
+        :rtype: int
         """
         return self._create_time
 
@@ -129,7 +129,7 @@ class DashboardDto:
         创建时间
 
         :param create_time: The create_time of this DashboardDto.
-        :type create_time: datetime
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -294,7 +294,7 @@ class DashboardDto:
         修改时间
 
         :return: The update_time of this DashboardDto.
-        :rtype: datetime
+        :rtype: int
         """
         return self._update_time
 
@@ -305,7 +305,7 @@ class DashboardDto:
         修改时间
 
         :param update_time: The update_time of this DashboardDto.
-        :type update_time: datetime
+        :type update_time: int
         """
         self._update_time = update_time
 

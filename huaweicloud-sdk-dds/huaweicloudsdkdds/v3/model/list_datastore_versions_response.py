@@ -30,7 +30,7 @@ class ListDatastoreVersionsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param versions: 数据库版本。支持3.4、3.2和4.0版本。
+        :param versions: 数据库版本。支持3.4及以上版本。
         :type versions: list[str]
         """
         
@@ -46,7 +46,7 @@ class ListDatastoreVersionsResponse(SdkResponse):
     def versions(self):
         """Gets the versions of this ListDatastoreVersionsResponse.
 
-        数据库版本。支持3.4、3.2和4.0版本。
+        数据库版本。支持3.4及以上版本。
 
         :return: The versions of this ListDatastoreVersionsResponse.
         :rtype: list[str]
@@ -57,7 +57,7 @@ class ListDatastoreVersionsResponse(SdkResponse):
     def versions(self, versions):
         """Sets the versions of this ListDatastoreVersionsResponse.
 
-        数据库版本。支持3.4、3.2和4.0版本。
+        数据库版本。支持3.4及以上版本。
 
         :param versions: The versions of this ListDatastoreVersionsResponse.
         :type versions: list[str]

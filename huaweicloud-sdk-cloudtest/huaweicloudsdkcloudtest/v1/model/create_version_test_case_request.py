@@ -18,7 +18,7 @@ class CreateVersionTestCaseRequest:
 
     openapi_types = {
         'version_id': 'str',
-        'body': 'TestCaseInfo'
+        'body': 'ApiResultTestCaseVo'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class CreateVersionTestCaseRequest:
         :param version_id: 分支或者迭代uri
         :type version_id: str
         :param body: Body of the CreateVersionTestCaseRequest
-        :type body: :class:`huaweicloudsdkcloudtest.v1.TestCaseInfo`
+        :type body: :class:`huaweicloudsdkcloudtest.v1.ApiResultTestCaseVo`
         """
         
         
@@ -74,7 +74,7 @@ class CreateVersionTestCaseRequest:
         """Gets the body of this CreateVersionTestCaseRequest.
 
         :return: The body of this CreateVersionTestCaseRequest.
-        :rtype: :class:`huaweicloudsdkcloudtest.v1.TestCaseInfo`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ApiResultTestCaseVo`
         """
         return self._body
 
@@ -83,7 +83,7 @@ class CreateVersionTestCaseRequest:
         """Sets the body of this CreateVersionTestCaseRequest.
 
         :param body: The body of this CreateVersionTestCaseRequest.
-        :type body: :class:`huaweicloudsdkcloudtest.v1.TestCaseInfo`
+        :type body: :class:`huaweicloudsdkcloudtest.v1.ApiResultTestCaseVo`
         """
         self._body = body
 

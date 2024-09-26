@@ -38,8 +38,7 @@ class GcbType:
         self._type = None
         self.discriminator = None
 
-        if type is not None:
-            self.type = type
+        self.type = type
 
     @property
     def type(self):

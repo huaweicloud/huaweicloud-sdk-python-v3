@@ -47,7 +47,7 @@ class GlobalConnectionBandwidthSpecCode:
 
         The model defined in huaweicloud sdk
 
-        :param id: 资源ID标识符。
+        :param id: 实例ID。
         :type id: str
         :param local_area: 功能说明：本端接入点，配合remote_area信息描述带宽实例应用的范围。 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点），站点编码通过接口获取，带宽类型为Region可不传，其他类型必传 
         :type local_area: str
@@ -105,7 +105,7 @@ class GlobalConnectionBandwidthSpecCode:
     def id(self):
         """Gets the id of this GlobalConnectionBandwidthSpecCode.
 
-        资源ID标识符。
+        实例ID。
 
         :return: The id of this GlobalConnectionBandwidthSpecCode.
         :rtype: str
@@ -116,7 +116,7 @@ class GlobalConnectionBandwidthSpecCode:
     def id(self, id):
         """Sets the id of this GlobalConnectionBandwidthSpecCode.
 
-        资源ID标识符。
+        实例ID。
 
         :param id: The id of this GlobalConnectionBandwidthSpecCode.
         :type id: str

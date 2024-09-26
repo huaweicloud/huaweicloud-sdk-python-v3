@@ -33,7 +33,7 @@ class GlobalConnectionBandwidthSizeRange:
 
         The model defined in huaweicloud sdk
 
-        :param type: 描述计费类型，描述可选计费类型。 取值范围：     bwd: 按带宽计费     95: 按传统型95计费
+        :param type: 描述计费类型，描述可选计费类型。 取值范围：     bwd: 按带宽计费     95: 按传统型95计费     95avr：日95计费
         :type type: str
         :param min: 全域互联带宽最小值，单位Mbit/s。
         :type min: int
@@ -59,7 +59,7 @@ class GlobalConnectionBandwidthSizeRange:
     def type(self):
         """Gets the type of this GlobalConnectionBandwidthSizeRange.
 
-        描述计费类型，描述可选计费类型。 取值范围：     bwd: 按带宽计费     95: 按传统型95计费
+        描述计费类型，描述可选计费类型。 取值范围：     bwd: 按带宽计费     95: 按传统型95计费     95avr：日95计费
 
         :return: The type of this GlobalConnectionBandwidthSizeRange.
         :rtype: str
@@ -70,7 +70,7 @@ class GlobalConnectionBandwidthSizeRange:
     def type(self, type):
         """Sets the type of this GlobalConnectionBandwidthSizeRange.
 
-        描述计费类型，描述可选计费类型。 取值范围：     bwd: 按带宽计费     95: 按传统型95计费
+        描述计费类型，描述可选计费类型。 取值范围：     bwd: 按带宽计费     95: 按传统型95计费     95avr：日95计费
 
         :param type: The type of this GlobalConnectionBandwidthSizeRange.
         :type type: str

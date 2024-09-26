@@ -20,7 +20,7 @@ class ShowRecordInfoResponse(SdkResponse):
     openapi_types = {
         'code': 'str',
         'message': 'str',
-        'data': 'object'
+        'data': 'RecordInfoDO'
     }
 
     attribute_map = {
@@ -38,8 +38,8 @@ class ShowRecordInfoResponse(SdkResponse):
         :type code: str
         :param message: 结果描述
         :type message: str
-        :param data: 响应体详情数据
-        :type data: object
+        :param data: 
+        :type data: :class:`huaweicloudsdkmeeting.v1.RecordInfoDO`
         """
         
         super(ShowRecordInfoResponse, self).__init__()
@@ -104,10 +104,8 @@ class ShowRecordInfoResponse(SdkResponse):
     def data(self):
         """Gets the data of this ShowRecordInfoResponse.
 
-        响应体详情数据
-
         :return: The data of this ShowRecordInfoResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkmeeting.v1.RecordInfoDO`
         """
         return self._data
 
@@ -115,10 +113,8 @@ class ShowRecordInfoResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this ShowRecordInfoResponse.
 
-        响应体详情数据
-
         :param data: The data of this ShowRecordInfoResponse.
-        :type data: object
+        :type data: :class:`huaweicloudsdkmeeting.v1.RecordInfoDO`
         """
         self._data = data
 

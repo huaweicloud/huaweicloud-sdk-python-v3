@@ -35,9 +35,9 @@ class CreateInterRegionBandwidth:
 
         The model defined in huaweicloud sdk
 
-        :param cloud_connection_id: 资源ID标识符。
+        :param cloud_connection_id: 云连接实例ID。
         :type cloud_connection_id: str
-        :param bandwidth_package_id: 资源ID标识符。
+        :param bandwidth_package_id: 带宽包实例ID。
         :type bandwidth_package_id: str
         :param bandwidth: 域间带宽值。
         :type bandwidth: int
@@ -62,7 +62,7 @@ class CreateInterRegionBandwidth:
     def cloud_connection_id(self):
         """Gets the cloud_connection_id of this CreateInterRegionBandwidth.
 
-        资源ID标识符。
+        云连接实例ID。
 
         :return: The cloud_connection_id of this CreateInterRegionBandwidth.
         :rtype: str
@@ -73,7 +73,7 @@ class CreateInterRegionBandwidth:
     def cloud_connection_id(self, cloud_connection_id):
         """Sets the cloud_connection_id of this CreateInterRegionBandwidth.
 
-        资源ID标识符。
+        云连接实例ID。
 
         :param cloud_connection_id: The cloud_connection_id of this CreateInterRegionBandwidth.
         :type cloud_connection_id: str
@@ -84,7 +84,7 @@ class CreateInterRegionBandwidth:
     def bandwidth_package_id(self):
         """Gets the bandwidth_package_id of this CreateInterRegionBandwidth.
 
-        资源ID标识符。
+        带宽包实例ID。
 
         :return: The bandwidth_package_id of this CreateInterRegionBandwidth.
         :rtype: str
@@ -95,7 +95,7 @@ class CreateInterRegionBandwidth:
     def bandwidth_package_id(self, bandwidth_package_id):
         """Sets the bandwidth_package_id of this CreateInterRegionBandwidth.
 
-        资源ID标识符。
+        带宽包实例ID。
 
         :param bandwidth_package_id: The bandwidth_package_id of this CreateInterRegionBandwidth.
         :type bandwidth_package_id: str

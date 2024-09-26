@@ -18,184 +18,159 @@ class ListIteratorsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'total': 'int',
-        'value': 'list[IteratorVersionSummaryVo]',
-        'reason': 'str',
-        'page_size': 'int',
-        'page_no': 'int',
-        'has_more': 'bool'
+        'status': 'str',
+        'result': 'ResultValueListIteratorVersionSummaryVo',
+        'error': 'ApiError',
+        'request_id': 'str',
+        'server_address': 'str'
     }
 
     attribute_map = {
-        'total': 'total',
-        'value': 'value',
-        'reason': 'reason',
-        'page_size': 'page_size',
-        'page_no': 'page_no',
-        'has_more': 'has_more'
+        'status': 'status',
+        'result': 'result',
+        'error': 'error',
+        'request_id': 'request_id',
+        'server_address': 'server_address'
     }
 
-    def __init__(self, total=None, value=None, reason=None, page_size=None, page_no=None, has_more=None):
+    def __init__(self, status=None, result=None, error=None, request_id=None, server_address=None):
         """ListIteratorsResponse
 
         The model defined in huaweicloud sdk
 
-        :param total: 起始记录数 大于 实际总条数时， 值为0， 分页请求才有此值
-        :type total: int
-        :param value: 实际的数据类型：单个对象，集合 或 NULL
-        :type value: list[:class:`huaweicloudsdkcloudtest.v1.IteratorVersionSummaryVo`]
-        :param reason: 业务失败的提示内容，对内接口才有此值
-        :type reason: str
-        :param page_size: 
-        :type page_size: int
-        :param page_no: 
-        :type page_no: int
-        :param has_more: 
-        :type has_more: bool
+        :param status: 对外时：success|error; 对内时：ok|failed
+        :type status: str
+        :param result: 
+        :type result: :class:`huaweicloudsdkcloudtest.v1.ResultValueListIteratorVersionSummaryVo`
+        :param error: 
+        :type error: :class:`huaweicloudsdkcloudtest.v1.ApiError`
+        :param request_id: 由接口调用方传入，建议使用UUID保证请求的唯一性。
+        :type request_id: str
+        :param server_address: 对内接口才有此属性
+        :type server_address: str
         """
         
         super(ListIteratorsResponse, self).__init__()
 
-        self._total = None
-        self._value = None
-        self._reason = None
-        self._page_size = None
-        self._page_no = None
-        self._has_more = None
+        self._status = None
+        self._result = None
+        self._error = None
+        self._request_id = None
+        self._server_address = None
         self.discriminator = None
 
-        if total is not None:
-            self.total = total
-        if value is not None:
-            self.value = value
-        if reason is not None:
-            self.reason = reason
-        if page_size is not None:
-            self.page_size = page_size
-        if page_no is not None:
-            self.page_no = page_no
-        if has_more is not None:
-            self.has_more = has_more
+        if status is not None:
+            self.status = status
+        if result is not None:
+            self.result = result
+        if error is not None:
+            self.error = error
+        if request_id is not None:
+            self.request_id = request_id
+        if server_address is not None:
+            self.server_address = server_address
 
     @property
-    def total(self):
-        """Gets the total of this ListIteratorsResponse.
+    def status(self):
+        """Gets the status of this ListIteratorsResponse.
 
-        起始记录数 大于 实际总条数时， 值为0， 分页请求才有此值
+        对外时：success|error; 对内时：ok|failed
 
-        :return: The total of this ListIteratorsResponse.
-        :rtype: int
-        """
-        return self._total
-
-    @total.setter
-    def total(self, total):
-        """Sets the total of this ListIteratorsResponse.
-
-        起始记录数 大于 实际总条数时， 值为0， 分页请求才有此值
-
-        :param total: The total of this ListIteratorsResponse.
-        :type total: int
-        """
-        self._total = total
-
-    @property
-    def value(self):
-        """Gets the value of this ListIteratorsResponse.
-
-        实际的数据类型：单个对象，集合 或 NULL
-
-        :return: The value of this ListIteratorsResponse.
-        :rtype: list[:class:`huaweicloudsdkcloudtest.v1.IteratorVersionSummaryVo`]
-        """
-        return self._value
-
-    @value.setter
-    def value(self, value):
-        """Sets the value of this ListIteratorsResponse.
-
-        实际的数据类型：单个对象，集合 或 NULL
-
-        :param value: The value of this ListIteratorsResponse.
-        :type value: list[:class:`huaweicloudsdkcloudtest.v1.IteratorVersionSummaryVo`]
-        """
-        self._value = value
-
-    @property
-    def reason(self):
-        """Gets the reason of this ListIteratorsResponse.
-
-        业务失败的提示内容，对内接口才有此值
-
-        :return: The reason of this ListIteratorsResponse.
+        :return: The status of this ListIteratorsResponse.
         :rtype: str
         """
-        return self._reason
+        return self._status
 
-    @reason.setter
-    def reason(self, reason):
-        """Sets the reason of this ListIteratorsResponse.
+    @status.setter
+    def status(self, status):
+        """Sets the status of this ListIteratorsResponse.
 
-        业务失败的提示内容，对内接口才有此值
+        对外时：success|error; 对内时：ok|failed
 
-        :param reason: The reason of this ListIteratorsResponse.
-        :type reason: str
+        :param status: The status of this ListIteratorsResponse.
+        :type status: str
         """
-        self._reason = reason
+        self._status = status
 
     @property
-    def page_size(self):
-        """Gets the page_size of this ListIteratorsResponse.
+    def result(self):
+        """Gets the result of this ListIteratorsResponse.
 
-        :return: The page_size of this ListIteratorsResponse.
-        :rtype: int
+        :return: The result of this ListIteratorsResponse.
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ResultValueListIteratorVersionSummaryVo`
         """
-        return self._page_size
+        return self._result
 
-    @page_size.setter
-    def page_size(self, page_size):
-        """Sets the page_size of this ListIteratorsResponse.
+    @result.setter
+    def result(self, result):
+        """Sets the result of this ListIteratorsResponse.
 
-        :param page_size: The page_size of this ListIteratorsResponse.
-        :type page_size: int
+        :param result: The result of this ListIteratorsResponse.
+        :type result: :class:`huaweicloudsdkcloudtest.v1.ResultValueListIteratorVersionSummaryVo`
         """
-        self._page_size = page_size
+        self._result = result
 
     @property
-    def page_no(self):
-        """Gets the page_no of this ListIteratorsResponse.
+    def error(self):
+        """Gets the error of this ListIteratorsResponse.
 
-        :return: The page_no of this ListIteratorsResponse.
-        :rtype: int
+        :return: The error of this ListIteratorsResponse.
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ApiError`
         """
-        return self._page_no
+        return self._error
 
-    @page_no.setter
-    def page_no(self, page_no):
-        """Sets the page_no of this ListIteratorsResponse.
+    @error.setter
+    def error(self, error):
+        """Sets the error of this ListIteratorsResponse.
 
-        :param page_no: The page_no of this ListIteratorsResponse.
-        :type page_no: int
+        :param error: The error of this ListIteratorsResponse.
+        :type error: :class:`huaweicloudsdkcloudtest.v1.ApiError`
         """
-        self._page_no = page_no
+        self._error = error
 
     @property
-    def has_more(self):
-        """Gets the has_more of this ListIteratorsResponse.
+    def request_id(self):
+        """Gets the request_id of this ListIteratorsResponse.
 
-        :return: The has_more of this ListIteratorsResponse.
-        :rtype: bool
+        由接口调用方传入，建议使用UUID保证请求的唯一性。
+
+        :return: The request_id of this ListIteratorsResponse.
+        :rtype: str
         """
-        return self._has_more
+        return self._request_id
 
-    @has_more.setter
-    def has_more(self, has_more):
-        """Sets the has_more of this ListIteratorsResponse.
+    @request_id.setter
+    def request_id(self, request_id):
+        """Sets the request_id of this ListIteratorsResponse.
 
-        :param has_more: The has_more of this ListIteratorsResponse.
-        :type has_more: bool
+        由接口调用方传入，建议使用UUID保证请求的唯一性。
+
+        :param request_id: The request_id of this ListIteratorsResponse.
+        :type request_id: str
         """
-        self._has_more = has_more
+        self._request_id = request_id
+
+    @property
+    def server_address(self):
+        """Gets the server_address of this ListIteratorsResponse.
+
+        对内接口才有此属性
+
+        :return: The server_address of this ListIteratorsResponse.
+        :rtype: str
+        """
+        return self._server_address
+
+    @server_address.setter
+    def server_address(self, server_address):
+        """Sets the server_address of this ListIteratorsResponse.
+
+        对内接口才有此属性
+
+        :param server_address: The server_address of this ListIteratorsResponse.
+        :type server_address: str
+        """
+        self._server_address = server_address
 
     def to_dict(self):
         """Returns the model properties as a dict"""

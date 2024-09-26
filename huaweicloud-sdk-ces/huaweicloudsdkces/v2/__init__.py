@@ -178,6 +178,7 @@ from huaweicloudsdkces.v2.model.resource import Resource
 from huaweicloudsdkces.v2.model.resource_category import ResourceCategory
 from huaweicloudsdkces.v2.model.resource_group_id import ResourceGroupID
 from huaweicloudsdkces.v2.model.resource_group_tag_relation import ResourceGroupTagRelation
+from huaweicloudsdkces.v2.model.resource_tag import ResourceTag
 from huaweicloudsdkces.v2.model.resources_in_list_resp import ResourcesInListResp
 from huaweicloudsdkces.v2.model.resources_req import ResourcesReq
 from huaweicloudsdkces.v2.model.resources_req_v2 import ResourcesReqV2

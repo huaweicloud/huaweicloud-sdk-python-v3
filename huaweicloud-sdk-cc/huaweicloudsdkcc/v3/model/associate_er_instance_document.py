@@ -33,7 +33,7 @@ class AssociateErInstanceDocument:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_router_id: 资源ID标识符。
+        :param enterprise_router_id: 企业路由器的ID。
         :type enterprise_router_id: str
         :param project_id: 实例所属项目ID。
         :type project_id: str
@@ -56,7 +56,7 @@ class AssociateErInstanceDocument:
     def enterprise_router_id(self):
         """Gets the enterprise_router_id of this AssociateErInstanceDocument.
 
-        资源ID标识符。
+        企业路由器的ID。
 
         :return: The enterprise_router_id of this AssociateErInstanceDocument.
         :rtype: str
@@ -67,7 +67,7 @@ class AssociateErInstanceDocument:
     def enterprise_router_id(self, enterprise_router_id):
         """Sets the enterprise_router_id of this AssociateErInstanceDocument.
 
-        资源ID标识符。
+        企业路由器的ID。
 
         :param enterprise_router_id: The enterprise_router_id of this AssociateErInstanceDocument.
         :type enterprise_router_id: str

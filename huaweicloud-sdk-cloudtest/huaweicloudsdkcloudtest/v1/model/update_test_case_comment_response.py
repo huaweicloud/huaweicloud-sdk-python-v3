@@ -18,330 +18,159 @@ class UpdateTestCaseCommentResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'uri': 'str',
-        'creator': 'str',
-        'comment': 'str',
-        'notifier': 'list[str]',
-        'test_case_uri': 'str',
-        'create_time': 'datetime',
-        'create_time_timestamp': 'int',
-        'update_time': 'datetime',
-        'update_time_timestamp': 'int',
-        'project_uuid': 'str',
-        'version_uri': 'str',
-        'display_name': 'str'
+        'status': 'str',
+        'result': 'ResultValueTestCaseCommentVo',
+        'error': 'ApiError',
+        'request_id': 'str',
+        'server_address': 'str'
     }
 
     attribute_map = {
-        'uri': 'uri',
-        'creator': 'creator',
-        'comment': 'comment',
-        'notifier': 'notifier',
-        'test_case_uri': 'test_case_uri',
-        'create_time': 'create_time',
-        'create_time_timestamp': 'create_time_timestamp',
-        'update_time': 'update_time',
-        'update_time_timestamp': 'update_time_timestamp',
-        'project_uuid': 'project_uuid',
-        'version_uri': 'version_uri',
-        'display_name': 'display_name'
+        'status': 'status',
+        'result': 'result',
+        'error': 'error',
+        'request_id': 'request_id',
+        'server_address': 'server_address'
     }
 
-    def __init__(self, uri=None, creator=None, comment=None, notifier=None, test_case_uri=None, create_time=None, create_time_timestamp=None, update_time=None, update_time_timestamp=None, project_uuid=None, version_uri=None, display_name=None):
+    def __init__(self, status=None, result=None, error=None, request_id=None, server_address=None):
         """UpdateTestCaseCommentResponse
 
         The model defined in huaweicloud sdk
 
-        :param uri: 
-        :type uri: str
-        :param creator: 
-        :type creator: str
-        :param comment: 
-        :type comment: str
-        :param notifier: 
-        :type notifier: list[str]
-        :param test_case_uri: 
-        :type test_case_uri: str
-        :param create_time: 
-        :type create_time: datetime
-        :param create_time_timestamp: 创建时间时间戳
-        :type create_time_timestamp: int
-        :param update_time: 
-        :type update_time: datetime
-        :param update_time_timestamp: 更新时间时间戳
-        :type update_time_timestamp: int
-        :param project_uuid: 
-        :type project_uuid: str
-        :param version_uri: 
-        :type version_uri: str
-        :param display_name: 
-        :type display_name: str
+        :param status: 对外时：success|error; 对内时：ok|failed
+        :type status: str
+        :param result: 
+        :type result: :class:`huaweicloudsdkcloudtest.v1.ResultValueTestCaseCommentVo`
+        :param error: 
+        :type error: :class:`huaweicloudsdkcloudtest.v1.ApiError`
+        :param request_id: 由接口调用方传入，建议使用UUID保证请求的唯一性。
+        :type request_id: str
+        :param server_address: 对内接口才有此属性
+        :type server_address: str
         """
         
         super(UpdateTestCaseCommentResponse, self).__init__()
 
-        self._uri = None
-        self._creator = None
-        self._comment = None
-        self._notifier = None
-        self._test_case_uri = None
-        self._create_time = None
-        self._create_time_timestamp = None
-        self._update_time = None
-        self._update_time_timestamp = None
-        self._project_uuid = None
-        self._version_uri = None
-        self._display_name = None
+        self._status = None
+        self._result = None
+        self._error = None
+        self._request_id = None
+        self._server_address = None
         self.discriminator = None
 
-        if uri is not None:
-            self.uri = uri
-        if creator is not None:
-            self.creator = creator
-        if comment is not None:
-            self.comment = comment
-        if notifier is not None:
-            self.notifier = notifier
-        if test_case_uri is not None:
-            self.test_case_uri = test_case_uri
-        if create_time is not None:
-            self.create_time = create_time
-        if create_time_timestamp is not None:
-            self.create_time_timestamp = create_time_timestamp
-        if update_time is not None:
-            self.update_time = update_time
-        if update_time_timestamp is not None:
-            self.update_time_timestamp = update_time_timestamp
-        if project_uuid is not None:
-            self.project_uuid = project_uuid
-        if version_uri is not None:
-            self.version_uri = version_uri
-        if display_name is not None:
-            self.display_name = display_name
+        if status is not None:
+            self.status = status
+        if result is not None:
+            self.result = result
+        if error is not None:
+            self.error = error
+        if request_id is not None:
+            self.request_id = request_id
+        if server_address is not None:
+            self.server_address = server_address
 
     @property
-    def uri(self):
-        """Gets the uri of this UpdateTestCaseCommentResponse.
+    def status(self):
+        """Gets the status of this UpdateTestCaseCommentResponse.
 
-        :return: The uri of this UpdateTestCaseCommentResponse.
+        对外时：success|error; 对内时：ok|failed
+
+        :return: The status of this UpdateTestCaseCommentResponse.
         :rtype: str
         """
-        return self._uri
+        return self._status
 
-    @uri.setter
-    def uri(self, uri):
-        """Sets the uri of this UpdateTestCaseCommentResponse.
+    @status.setter
+    def status(self, status):
+        """Sets the status of this UpdateTestCaseCommentResponse.
 
-        :param uri: The uri of this UpdateTestCaseCommentResponse.
-        :type uri: str
+        对外时：success|error; 对内时：ok|failed
+
+        :param status: The status of this UpdateTestCaseCommentResponse.
+        :type status: str
         """
-        self._uri = uri
+        self._status = status
 
     @property
-    def creator(self):
-        """Gets the creator of this UpdateTestCaseCommentResponse.
+    def result(self):
+        """Gets the result of this UpdateTestCaseCommentResponse.
 
-        :return: The creator of this UpdateTestCaseCommentResponse.
+        :return: The result of this UpdateTestCaseCommentResponse.
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ResultValueTestCaseCommentVo`
+        """
+        return self._result
+
+    @result.setter
+    def result(self, result):
+        """Sets the result of this UpdateTestCaseCommentResponse.
+
+        :param result: The result of this UpdateTestCaseCommentResponse.
+        :type result: :class:`huaweicloudsdkcloudtest.v1.ResultValueTestCaseCommentVo`
+        """
+        self._result = result
+
+    @property
+    def error(self):
+        """Gets the error of this UpdateTestCaseCommentResponse.
+
+        :return: The error of this UpdateTestCaseCommentResponse.
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ApiError`
+        """
+        return self._error
+
+    @error.setter
+    def error(self, error):
+        """Sets the error of this UpdateTestCaseCommentResponse.
+
+        :param error: The error of this UpdateTestCaseCommentResponse.
+        :type error: :class:`huaweicloudsdkcloudtest.v1.ApiError`
+        """
+        self._error = error
+
+    @property
+    def request_id(self):
+        """Gets the request_id of this UpdateTestCaseCommentResponse.
+
+        由接口调用方传入，建议使用UUID保证请求的唯一性。
+
+        :return: The request_id of this UpdateTestCaseCommentResponse.
         :rtype: str
         """
-        return self._creator
+        return self._request_id
 
-    @creator.setter
-    def creator(self, creator):
-        """Sets the creator of this UpdateTestCaseCommentResponse.
+    @request_id.setter
+    def request_id(self, request_id):
+        """Sets the request_id of this UpdateTestCaseCommentResponse.
 
-        :param creator: The creator of this UpdateTestCaseCommentResponse.
-        :type creator: str
+        由接口调用方传入，建议使用UUID保证请求的唯一性。
+
+        :param request_id: The request_id of this UpdateTestCaseCommentResponse.
+        :type request_id: str
         """
-        self._creator = creator
+        self._request_id = request_id
 
     @property
-    def comment(self):
-        """Gets the comment of this UpdateTestCaseCommentResponse.
+    def server_address(self):
+        """Gets the server_address of this UpdateTestCaseCommentResponse.
 
-        :return: The comment of this UpdateTestCaseCommentResponse.
+        对内接口才有此属性
+
+        :return: The server_address of this UpdateTestCaseCommentResponse.
         :rtype: str
         """
-        return self._comment
+        return self._server_address
 
-    @comment.setter
-    def comment(self, comment):
-        """Sets the comment of this UpdateTestCaseCommentResponse.
+    @server_address.setter
+    def server_address(self, server_address):
+        """Sets the server_address of this UpdateTestCaseCommentResponse.
 
-        :param comment: The comment of this UpdateTestCaseCommentResponse.
-        :type comment: str
+        对内接口才有此属性
+
+        :param server_address: The server_address of this UpdateTestCaseCommentResponse.
+        :type server_address: str
         """
-        self._comment = comment
-
-    @property
-    def notifier(self):
-        """Gets the notifier of this UpdateTestCaseCommentResponse.
-
-        :return: The notifier of this UpdateTestCaseCommentResponse.
-        :rtype: list[str]
-        """
-        return self._notifier
-
-    @notifier.setter
-    def notifier(self, notifier):
-        """Sets the notifier of this UpdateTestCaseCommentResponse.
-
-        :param notifier: The notifier of this UpdateTestCaseCommentResponse.
-        :type notifier: list[str]
-        """
-        self._notifier = notifier
-
-    @property
-    def test_case_uri(self):
-        """Gets the test_case_uri of this UpdateTestCaseCommentResponse.
-
-        :return: The test_case_uri of this UpdateTestCaseCommentResponse.
-        :rtype: str
-        """
-        return self._test_case_uri
-
-    @test_case_uri.setter
-    def test_case_uri(self, test_case_uri):
-        """Sets the test_case_uri of this UpdateTestCaseCommentResponse.
-
-        :param test_case_uri: The test_case_uri of this UpdateTestCaseCommentResponse.
-        :type test_case_uri: str
-        """
-        self._test_case_uri = test_case_uri
-
-    @property
-    def create_time(self):
-        """Gets the create_time of this UpdateTestCaseCommentResponse.
-
-        :return: The create_time of this UpdateTestCaseCommentResponse.
-        :rtype: datetime
-        """
-        return self._create_time
-
-    @create_time.setter
-    def create_time(self, create_time):
-        """Sets the create_time of this UpdateTestCaseCommentResponse.
-
-        :param create_time: The create_time of this UpdateTestCaseCommentResponse.
-        :type create_time: datetime
-        """
-        self._create_time = create_time
-
-    @property
-    def create_time_timestamp(self):
-        """Gets the create_time_timestamp of this UpdateTestCaseCommentResponse.
-
-        创建时间时间戳
-
-        :return: The create_time_timestamp of this UpdateTestCaseCommentResponse.
-        :rtype: int
-        """
-        return self._create_time_timestamp
-
-    @create_time_timestamp.setter
-    def create_time_timestamp(self, create_time_timestamp):
-        """Sets the create_time_timestamp of this UpdateTestCaseCommentResponse.
-
-        创建时间时间戳
-
-        :param create_time_timestamp: The create_time_timestamp of this UpdateTestCaseCommentResponse.
-        :type create_time_timestamp: int
-        """
-        self._create_time_timestamp = create_time_timestamp
-
-    @property
-    def update_time(self):
-        """Gets the update_time of this UpdateTestCaseCommentResponse.
-
-        :return: The update_time of this UpdateTestCaseCommentResponse.
-        :rtype: datetime
-        """
-        return self._update_time
-
-    @update_time.setter
-    def update_time(self, update_time):
-        """Sets the update_time of this UpdateTestCaseCommentResponse.
-
-        :param update_time: The update_time of this UpdateTestCaseCommentResponse.
-        :type update_time: datetime
-        """
-        self._update_time = update_time
-
-    @property
-    def update_time_timestamp(self):
-        """Gets the update_time_timestamp of this UpdateTestCaseCommentResponse.
-
-        更新时间时间戳
-
-        :return: The update_time_timestamp of this UpdateTestCaseCommentResponse.
-        :rtype: int
-        """
-        return self._update_time_timestamp
-
-    @update_time_timestamp.setter
-    def update_time_timestamp(self, update_time_timestamp):
-        """Sets the update_time_timestamp of this UpdateTestCaseCommentResponse.
-
-        更新时间时间戳
-
-        :param update_time_timestamp: The update_time_timestamp of this UpdateTestCaseCommentResponse.
-        :type update_time_timestamp: int
-        """
-        self._update_time_timestamp = update_time_timestamp
-
-    @property
-    def project_uuid(self):
-        """Gets the project_uuid of this UpdateTestCaseCommentResponse.
-
-        :return: The project_uuid of this UpdateTestCaseCommentResponse.
-        :rtype: str
-        """
-        return self._project_uuid
-
-    @project_uuid.setter
-    def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this UpdateTestCaseCommentResponse.
-
-        :param project_uuid: The project_uuid of this UpdateTestCaseCommentResponse.
-        :type project_uuid: str
-        """
-        self._project_uuid = project_uuid
-
-    @property
-    def version_uri(self):
-        """Gets the version_uri of this UpdateTestCaseCommentResponse.
-
-        :return: The version_uri of this UpdateTestCaseCommentResponse.
-        :rtype: str
-        """
-        return self._version_uri
-
-    @version_uri.setter
-    def version_uri(self, version_uri):
-        """Sets the version_uri of this UpdateTestCaseCommentResponse.
-
-        :param version_uri: The version_uri of this UpdateTestCaseCommentResponse.
-        :type version_uri: str
-        """
-        self._version_uri = version_uri
-
-    @property
-    def display_name(self):
-        """Gets the display_name of this UpdateTestCaseCommentResponse.
-
-        :return: The display_name of this UpdateTestCaseCommentResponse.
-        :rtype: str
-        """
-        return self._display_name
-
-    @display_name.setter
-    def display_name(self, display_name):
-        """Sets the display_name of this UpdateTestCaseCommentResponse.
-
-        :param display_name: The display_name of this UpdateTestCaseCommentResponse.
-        :type display_name: str
-        """
-        self._display_name = display_name
+        self._server_address = server_address
 
     def to_dict(self):
         """Returns the model properties as a dict"""
