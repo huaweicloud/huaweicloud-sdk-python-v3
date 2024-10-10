@@ -25,7 +25,8 @@ class TriggerProcess:
         'reply_audios': 'list[ReplyAudioInfo]',
         'reply_order': 'str',
         'reply_role': 'str',
-        'robot_id': 'str'
+        'robot_id': 'str',
+        'play_type': 'str'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class TriggerProcess:
         'reply_audios': 'reply_audios',
         'reply_order': 'reply_order',
         'reply_role': 'reply_role',
-        'robot_id': 'robot_id'
+        'robot_id': 'robot_id',
+        'play_type': 'play_type'
     }
 
-    def __init__(self, time_window=None, reply_mode=None, layer_config=None, extra_layer_config=None, reply_texts=None, reply_audios=None, reply_order=None, reply_role=None, robot_id=None):
+    def __init__(self, time_window=None, reply_mode=None, layer_config=None, extra_layer_config=None, reply_texts=None, reply_audios=None, reply_order=None, reply_role=None, robot_id=None, play_type=None):
         """TriggerProcess
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class TriggerProcess:
         :type reply_role: str
         :param robot_id: **参数解释**： 机器人ID。 **约束限制**： reply_mode为INTELLIGENT_REPLY时必填，智能交互配置的大模型机器人ID。 获取方法请参考[创建应用](CreateRobot.xml)。 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及
         :type robot_id: str
+        :param play_type: 回复播放类型。 - APPEND：追加，放置在场景播放队列尾部 - INSERT： 插入，在两个音频文件，或者文本句末添加。 - PLAY_NOW : 立即插入，收到指令后，立即播放，无需等待句末。
+        :type play_type: str
         """
         
         
@@ -76,6 +80,7 @@ class TriggerProcess:
         self._reply_order = None
         self._reply_role = None
         self._robot_id = None
+        self._play_type = None
         self.discriminator = None
 
         if time_window is not None:
@@ -96,6 +101,8 @@ class TriggerProcess:
             self.reply_role = reply_role
         if robot_id is not None:
             self.robot_id = robot_id
+        if play_type is not None:
+            self.play_type = play_type
 
     @property
     def time_window(self):
@@ -286,6 +293,28 @@ class TriggerProcess:
         :type robot_id: str
         """
         self._robot_id = robot_id
+
+    @property
+    def play_type(self):
+        """Gets the play_type of this TriggerProcess.
+
+        回复播放类型。 - APPEND：追加，放置在场景播放队列尾部 - INSERT： 插入，在两个音频文件，或者文本句末添加。 - PLAY_NOW : 立即插入，收到指令后，立即播放，无需等待句末。
+
+        :return: The play_type of this TriggerProcess.
+        :rtype: str
+        """
+        return self._play_type
+
+    @play_type.setter
+    def play_type(self, play_type):
+        """Sets the play_type of this TriggerProcess.
+
+        回复播放类型。 - APPEND：追加，放置在场景播放队列尾部 - INSERT： 插入，在两个音频文件，或者文本句末添加。 - PLAY_NOW : 立即插入，收到指令后，立即播放，无需等待句末。
+
+        :param play_type: The play_type of this TriggerProcess.
+        :type play_type: str
+        """
+        self._play_type = play_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

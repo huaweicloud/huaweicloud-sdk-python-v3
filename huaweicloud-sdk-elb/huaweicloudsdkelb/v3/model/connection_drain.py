@@ -31,9 +31,9 @@ class ConnectionDrain:
 
         The model defined in huaweicloud sdk
 
-        :param enable: 延迟注销功能开关。取值：true 开启，false 关闭，默认true。
+        :param enable: 参数解释：延迟注销功能开关。  取值范围：true 开启，false 关闭。  默认取值：true。
         :type enable: bool
-        :param timeout: 延迟注销时间，单位：s； 取值范围：10~4000
+        :param timeout: 参数解释：延迟注销时间。  取值范围：10~4000，单位：秒。
         :type timeout: int
         """
         
@@ -52,7 +52,7 @@ class ConnectionDrain:
     def enable(self):
         """Gets the enable of this ConnectionDrain.
 
-        延迟注销功能开关。取值：true 开启，false 关闭，默认true。
+        参数解释：延迟注销功能开关。  取值范围：true 开启，false 关闭。  默认取值：true。
 
         :return: The enable of this ConnectionDrain.
         :rtype: bool
@@ -63,7 +63,7 @@ class ConnectionDrain:
     def enable(self, enable):
         """Sets the enable of this ConnectionDrain.
 
-        延迟注销功能开关。取值：true 开启，false 关闭，默认true。
+        参数解释：延迟注销功能开关。  取值范围：true 开启，false 关闭。  默认取值：true。
 
         :param enable: The enable of this ConnectionDrain.
         :type enable: bool
@@ -74,7 +74,7 @@ class ConnectionDrain:
     def timeout(self):
         """Gets the timeout of this ConnectionDrain.
 
-        延迟注销时间，单位：s； 取值范围：10~4000
+        参数解释：延迟注销时间。  取值范围：10~4000，单位：秒。
 
         :return: The timeout of this ConnectionDrain.
         :rtype: int
@@ -85,7 +85,7 @@ class ConnectionDrain:
     def timeout(self, timeout):
         """Sets the timeout of this ConnectionDrain.
 
-        延迟注销时间，单位：s； 取值范围：10~4000
+        参数解释：延迟注销时间。  取值范围：10~4000，单位：秒。
 
         :param timeout: The timeout of this ConnectionDrain.
         :type timeout: int

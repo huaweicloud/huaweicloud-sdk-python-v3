@@ -31,7 +31,7 @@ class BatchAddAvailableZonesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param loadbalancer_id: 负载均衡器ID。
+        :param loadbalancer_id: 参数解释：负载均衡器ID。
         :type loadbalancer_id: str
         :param body: Body of the BatchAddAvailableZonesRequest
         :type body: :class:`huaweicloudsdkelb.v3.BatchAddAvailableZonesRequestBody`
@@ -51,7 +51,7 @@ class BatchAddAvailableZonesRequest:
     def loadbalancer_id(self):
         """Gets the loadbalancer_id of this BatchAddAvailableZonesRequest.
 
-        负载均衡器ID。
+        参数解释：负载均衡器ID。
 
         :return: The loadbalancer_id of this BatchAddAvailableZonesRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class BatchAddAvailableZonesRequest:
     def loadbalancer_id(self, loadbalancer_id):
         """Sets the loadbalancer_id of this BatchAddAvailableZonesRequest.
 
-        负载均衡器ID。
+        参数解释：负载均衡器ID。
 
         :param loadbalancer_id: The loadbalancer_id of this BatchAddAvailableZonesRequest.
         :type loadbalancer_id: str

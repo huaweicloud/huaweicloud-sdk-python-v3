@@ -30,7 +30,8 @@ class StarRocksCreateRequest:
         'be_volume': 'StarRocksCreateRequestBeVolume',
         'az_code': 'str',
         'time_zone': 'str',
-        'tags_info': 'StarRocksCreateRequestTagsInfo'
+        'tags_info': 'StarRocksCreateRequestTagsInfo',
+        'security_group_id': 'str'
     }
 
     attribute_map = {
@@ -47,10 +48,11 @@ class StarRocksCreateRequest:
         'be_volume': 'be_volume',
         'az_code': 'az_code',
         'time_zone': 'time_zone',
-        'tags_info': 'tags_info'
+        'tags_info': 'tags_info',
+        'security_group_id': 'security_group_id'
     }
 
-    def __init__(self, name=None, engine=None, ha=None, fe_flavor_id=None, be_flavor_id=None, db_root_pwd=None, fe_count=None, be_count=None, az_mode=None, fe_volume=None, be_volume=None, az_code=None, time_zone=None, tags_info=None):
+    def __init__(self, name=None, engine=None, ha=None, fe_flavor_id=None, be_flavor_id=None, db_root_pwd=None, fe_count=None, be_count=None, az_mode=None, fe_volume=None, be_volume=None, az_code=None, time_zone=None, tags_info=None, security_group_id=None):
         """StarRocksCreateRequest
 
         The model defined in huaweicloud sdk
@@ -83,6 +85,8 @@ class StarRocksCreateRequest:
         :type time_zone: str
         :param tags_info: 
         :type tags_info: :class:`huaweicloudsdkgaussdb.v3.StarRocksCreateRequestTagsInfo`
+        :param security_group_id: 实例安全组ID。默认与Taurus安全组ID一致。
+        :type security_group_id: str
         """
         
         
@@ -101,6 +105,7 @@ class StarRocksCreateRequest:
         self._az_code = None
         self._time_zone = None
         self._tags_info = None
+        self._security_group_id = None
         self.discriminator = None
 
         self.name = name
@@ -118,6 +123,8 @@ class StarRocksCreateRequest:
         if time_zone is not None:
             self.time_zone = time_zone
         self.tags_info = tags_info
+        if security_group_id is not None:
+            self.security_group_id = security_group_id
 
     @property
     def name(self):
@@ -406,6 +413,28 @@ class StarRocksCreateRequest:
         :type tags_info: :class:`huaweicloudsdkgaussdb.v3.StarRocksCreateRequestTagsInfo`
         """
         self._tags_info = tags_info
+
+    @property
+    def security_group_id(self):
+        """Gets the security_group_id of this StarRocksCreateRequest.
+
+        实例安全组ID。默认与Taurus安全组ID一致。
+
+        :return: The security_group_id of this StarRocksCreateRequest.
+        :rtype: str
+        """
+        return self._security_group_id
+
+    @security_group_id.setter
+    def security_group_id(self, security_group_id):
+        """Sets the security_group_id of this StarRocksCreateRequest.
+
+        实例安全组ID。默认与Taurus安全组ID一致。
+
+        :param security_group_id: The security_group_id of this StarRocksCreateRequest.
+        :type security_group_id: str
+        """
+        self._security_group_id = security_group_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

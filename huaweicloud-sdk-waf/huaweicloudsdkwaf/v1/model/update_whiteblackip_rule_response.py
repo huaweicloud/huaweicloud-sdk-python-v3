@@ -25,6 +25,8 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
         'description': 'str',
         'white': 'int',
         'time_mode': 'str',
+        'start': 'int',
+        'terminal': 'int',
         'ip_group': 'IpGroup'
     }
 
@@ -36,10 +38,12 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
         'description': 'description',
         'white': 'white',
         'time_mode': 'time_mode',
+        'start': 'start',
+        'terminal': 'terminal',
         'ip_group': 'ip_group'
     }
 
-    def __init__(self, id=None, name=None, policyid=None, addr=None, description=None, white=None, time_mode=None, ip_group=None):
+    def __init__(self, id=None, name=None, policyid=None, addr=None, description=None, white=None, time_mode=None, start=None, terminal=None, ip_group=None):
         """UpdateWhiteblackipRuleResponse
 
         The model defined in huaweicloud sdk
@@ -58,6 +62,10 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
         :type white: int
         :param time_mode: 生效模式，默认为permanent（立即生效）
         :type time_mode: str
+        :param start: 规则生效开始时间，生效模式为自定义时，此字段才有效
+        :type start: int
+        :param terminal: 规则生效结束时间，生效模式为自定义时，此字段才有效
+        :type terminal: int
         :param ip_group: 
         :type ip_group: :class:`huaweicloudsdkwaf.v1.IpGroup`
         """
@@ -71,6 +79,8 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
         self._description = None
         self._white = None
         self._time_mode = None
+        self._start = None
+        self._terminal = None
         self._ip_group = None
         self.discriminator = None
 
@@ -88,6 +98,10 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
             self.white = white
         if time_mode is not None:
             self.time_mode = time_mode
+        if start is not None:
+            self.start = start
+        if terminal is not None:
+            self.terminal = terminal
         if ip_group is not None:
             self.ip_group = ip_group
 
@@ -244,6 +258,50 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
         :type time_mode: str
         """
         self._time_mode = time_mode
+
+    @property
+    def start(self):
+        """Gets the start of this UpdateWhiteblackipRuleResponse.
+
+        规则生效开始时间，生效模式为自定义时，此字段才有效
+
+        :return: The start of this UpdateWhiteblackipRuleResponse.
+        :rtype: int
+        """
+        return self._start
+
+    @start.setter
+    def start(self, start):
+        """Sets the start of this UpdateWhiteblackipRuleResponse.
+
+        规则生效开始时间，生效模式为自定义时，此字段才有效
+
+        :param start: The start of this UpdateWhiteblackipRuleResponse.
+        :type start: int
+        """
+        self._start = start
+
+    @property
+    def terminal(self):
+        """Gets the terminal of this UpdateWhiteblackipRuleResponse.
+
+        规则生效结束时间，生效模式为自定义时，此字段才有效
+
+        :return: The terminal of this UpdateWhiteblackipRuleResponse.
+        :rtype: int
+        """
+        return self._terminal
+
+    @terminal.setter
+    def terminal(self, terminal):
+        """Sets the terminal of this UpdateWhiteblackipRuleResponse.
+
+        规则生效结束时间，生效模式为自定义时，此字段才有效
+
+        :param terminal: The terminal of this UpdateWhiteblackipRuleResponse.
+        :type terminal: int
+        """
+        self._terminal = terminal
 
     @property
     def ip_group(self):

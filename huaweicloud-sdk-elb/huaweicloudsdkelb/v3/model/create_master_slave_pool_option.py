@@ -57,29 +57,29 @@ class CreateMasterSlavePoolOption:
 
         The model defined in huaweicloud sdk
 
-        :param description: 后端云服务器组的描述信息。
+        :param description: 后端服务器组的描述信息。
         :type description: str
-        :param lb_algorithm: 后端云服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  [不支持QUIC_CID。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt,dt_test)
+        :param lb_algorithm: 后端服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  [不支持QUIC_CID。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt,dt_test)
         :type lb_algorithm: str
-        :param loadbalancer_id: 后端云服务器组关联的LB的ID。  使用说明：listener_id，loadbalancer_id，type至少指定一个。
+        :param loadbalancer_id: 后端服务器组关联的LB的ID。  使用说明：listener_id，loadbalancer_id，type至少指定一个。
         :type loadbalancer_id: str
-        :param listener_id: 后端云服务器组关联的监听器的ID。  使用说明：listener_id，loadbalancer_id，type至少指定一个。
+        :param listener_id: 后端服务器组关联的监听器的ID。  使用说明：listener_id，loadbalancer_id，type至少指定一个。
         :type listener_id: str
-        :param name: 后端云服务器组的名称。
+        :param name: 后端服务器组的名称。
         :type name: str
-        :param project_id: 后端云服务器组所属的项目ID。
+        :param project_id: 后端服务器组所属的项目ID。
         :type project_id: str
-        :param protocol: 后端云服务器组的后端协议。  取值：TCP、UDP、QUIC、TLS。  使用说明： - listener的protocol为UDP时，pool的protocol必须为UDP或QUIC。 - listener的protocol为TCP时，pool的protocol必须为TCP。 - listener的protocol为TLS时，pool的protocol必须为TLS或TCP（且只能使用ip_version为v4的TCP pool）。 - 其他协议监听器不支持主备后端服务器组。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt,dt_test)
+        :param protocol: 后端服务器组的后端协议。  取值：TCP、UDP、QUIC、TLS。  使用说明： - listener的protocol为UDP时，pool的protocol必须为UDP或QUIC。 - listener的protocol为TCP时，pool的protocol必须为TCP。 - listener的protocol为TLS时，pool的protocol必须为TLS或TCP（且只能使用ip_version为v4的TCP pool）。 - 其他协议监听器不支持主备后端服务器组。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt,dt_test)
         :type protocol: str
         :param session_persistence: 
         :type session_persistence: :class:`huaweicloudsdkelb.v3.CreatePoolSessionPersistenceOption`
-        :param vpc_id: 后端云服务器组关联的虚拟私有云的ID。  指定了vpc_id的约束： - 只能挂载到该虚拟私有云下。 - 只能添加该虚拟私有云下的后端服务器或跨VPC的后端服务器。 - type必须指定为instance。  没有指定vpc_id的约束： - 后续添加后端服务器时，vpc_id由后端服务器所在的虚拟私有云确定。
+        :param vpc_id: 后端服务器组关联的虚拟私有云的ID。  指定了vpc_id的约束： - 只能挂载到该虚拟私有云下。 - 只能添加该虚拟私有云下的后端服务器或跨VPC的后端服务器。 - type必须指定为instance。  没有指定vpc_id的约束： - 后续添加后端服务器时，vpc_id由后端服务器所在的虚拟私有云确定。
         :type vpc_id: str
         :param type: 后端服务器组的类型。  取值： - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。 - ip：只能添加跨VPC后端，type指定为该类型时，vpc_id不允许指定。
         :type type: str
-        :param ip_version: 后端云服务器组支持的IP版本。  [取值： - 共享型：固定为v4； -  独享型：取值dualstack、v4、v6。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。  当协议为HTTP时，ip_version为v4。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs)  [取值：dualstack、v4、v6。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。 当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt,dt_test)
+        :param ip_version: 后端服务器组支持的IP版本。  [取值： - 共享型：固定为v4； -  独享型：取值dualstack、v4、v6。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。  当协议为HTTP时，ip_version为v4。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs)  [取值：dualstack、v4、v6。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。 当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt,dt_test)
         :type ip_version: str
-        :param members: 主备主机组的后端服务器。 只能添加2个后端云服务器，必须有一个为主，一个为备。
+        :param members: 主备主机组的后端服务器。 只能添加2个后端服务器，必须有一个为主，一个为备。
         :type members: list[:class:`huaweicloudsdkelb.v3.CreateMasterSlaveMemberOption`]
         :param healthmonitor: 
         :type healthmonitor: :class:`huaweicloudsdkelb.v3.CreateMasterSlaveHealthMonitorOption`
@@ -138,7 +138,7 @@ class CreateMasterSlavePoolOption:
     def description(self):
         """Gets the description of this CreateMasterSlavePoolOption.
 
-        后端云服务器组的描述信息。
+        后端服务器组的描述信息。
 
         :return: The description of this CreateMasterSlavePoolOption.
         :rtype: str
@@ -149,7 +149,7 @@ class CreateMasterSlavePoolOption:
     def description(self, description):
         """Sets the description of this CreateMasterSlavePoolOption.
 
-        后端云服务器组的描述信息。
+        后端服务器组的描述信息。
 
         :param description: The description of this CreateMasterSlavePoolOption.
         :type description: str
@@ -160,7 +160,7 @@ class CreateMasterSlavePoolOption:
     def lb_algorithm(self):
         """Gets the lb_algorithm of this CreateMasterSlavePoolOption.
 
-        后端云服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  [不支持QUIC_CID。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt,dt_test)
+        后端服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  [不支持QUIC_CID。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt,dt_test)
 
         :return: The lb_algorithm of this CreateMasterSlavePoolOption.
         :rtype: str
@@ -171,7 +171,7 @@ class CreateMasterSlavePoolOption:
     def lb_algorithm(self, lb_algorithm):
         """Sets the lb_algorithm of this CreateMasterSlavePoolOption.
 
-        后端云服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  [不支持QUIC_CID。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt,dt_test)
+        后端服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  [不支持QUIC_CID。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt,dt_test)
 
         :param lb_algorithm: The lb_algorithm of this CreateMasterSlavePoolOption.
         :type lb_algorithm: str
@@ -182,7 +182,7 @@ class CreateMasterSlavePoolOption:
     def loadbalancer_id(self):
         """Gets the loadbalancer_id of this CreateMasterSlavePoolOption.
 
-        后端云服务器组关联的LB的ID。  使用说明：listener_id，loadbalancer_id，type至少指定一个。
+        后端服务器组关联的LB的ID。  使用说明：listener_id，loadbalancer_id，type至少指定一个。
 
         :return: The loadbalancer_id of this CreateMasterSlavePoolOption.
         :rtype: str
@@ -193,7 +193,7 @@ class CreateMasterSlavePoolOption:
     def loadbalancer_id(self, loadbalancer_id):
         """Sets the loadbalancer_id of this CreateMasterSlavePoolOption.
 
-        后端云服务器组关联的LB的ID。  使用说明：listener_id，loadbalancer_id，type至少指定一个。
+        后端服务器组关联的LB的ID。  使用说明：listener_id，loadbalancer_id，type至少指定一个。
 
         :param loadbalancer_id: The loadbalancer_id of this CreateMasterSlavePoolOption.
         :type loadbalancer_id: str
@@ -204,7 +204,7 @@ class CreateMasterSlavePoolOption:
     def listener_id(self):
         """Gets the listener_id of this CreateMasterSlavePoolOption.
 
-        后端云服务器组关联的监听器的ID。  使用说明：listener_id，loadbalancer_id，type至少指定一个。
+        后端服务器组关联的监听器的ID。  使用说明：listener_id，loadbalancer_id，type至少指定一个。
 
         :return: The listener_id of this CreateMasterSlavePoolOption.
         :rtype: str
@@ -215,7 +215,7 @@ class CreateMasterSlavePoolOption:
     def listener_id(self, listener_id):
         """Sets the listener_id of this CreateMasterSlavePoolOption.
 
-        后端云服务器组关联的监听器的ID。  使用说明：listener_id，loadbalancer_id，type至少指定一个。
+        后端服务器组关联的监听器的ID。  使用说明：listener_id，loadbalancer_id，type至少指定一个。
 
         :param listener_id: The listener_id of this CreateMasterSlavePoolOption.
         :type listener_id: str
@@ -226,7 +226,7 @@ class CreateMasterSlavePoolOption:
     def name(self):
         """Gets the name of this CreateMasterSlavePoolOption.
 
-        后端云服务器组的名称。
+        后端服务器组的名称。
 
         :return: The name of this CreateMasterSlavePoolOption.
         :rtype: str
@@ -237,7 +237,7 @@ class CreateMasterSlavePoolOption:
     def name(self, name):
         """Sets the name of this CreateMasterSlavePoolOption.
 
-        后端云服务器组的名称。
+        后端服务器组的名称。
 
         :param name: The name of this CreateMasterSlavePoolOption.
         :type name: str
@@ -248,7 +248,7 @@ class CreateMasterSlavePoolOption:
     def project_id(self):
         """Gets the project_id of this CreateMasterSlavePoolOption.
 
-        后端云服务器组所属的项目ID。
+        后端服务器组所属的项目ID。
 
         :return: The project_id of this CreateMasterSlavePoolOption.
         :rtype: str
@@ -259,7 +259,7 @@ class CreateMasterSlavePoolOption:
     def project_id(self, project_id):
         """Sets the project_id of this CreateMasterSlavePoolOption.
 
-        后端云服务器组所属的项目ID。
+        后端服务器组所属的项目ID。
 
         :param project_id: The project_id of this CreateMasterSlavePoolOption.
         :type project_id: str
@@ -270,7 +270,7 @@ class CreateMasterSlavePoolOption:
     def protocol(self):
         """Gets the protocol of this CreateMasterSlavePoolOption.
 
-        后端云服务器组的后端协议。  取值：TCP、UDP、QUIC、TLS。  使用说明： - listener的protocol为UDP时，pool的protocol必须为UDP或QUIC。 - listener的protocol为TCP时，pool的protocol必须为TCP。 - listener的protocol为TLS时，pool的protocol必须为TLS或TCP（且只能使用ip_version为v4的TCP pool）。 - 其他协议监听器不支持主备后端服务器组。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt,dt_test)
+        后端服务器组的后端协议。  取值：TCP、UDP、QUIC、TLS。  使用说明： - listener的protocol为UDP时，pool的protocol必须为UDP或QUIC。 - listener的protocol为TCP时，pool的protocol必须为TCP。 - listener的protocol为TLS时，pool的protocol必须为TLS或TCP（且只能使用ip_version为v4的TCP pool）。 - 其他协议监听器不支持主备后端服务器组。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt,dt_test)
 
         :return: The protocol of this CreateMasterSlavePoolOption.
         :rtype: str
@@ -281,7 +281,7 @@ class CreateMasterSlavePoolOption:
     def protocol(self, protocol):
         """Sets the protocol of this CreateMasterSlavePoolOption.
 
-        后端云服务器组的后端协议。  取值：TCP、UDP、QUIC、TLS。  使用说明： - listener的protocol为UDP时，pool的protocol必须为UDP或QUIC。 - listener的protocol为TCP时，pool的protocol必须为TCP。 - listener的protocol为TLS时，pool的protocol必须为TLS或TCP（且只能使用ip_version为v4的TCP pool）。 - 其他协议监听器不支持主备后端服务器组。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt,dt_test)
+        后端服务器组的后端协议。  取值：TCP、UDP、QUIC、TLS。  使用说明： - listener的protocol为UDP时，pool的protocol必须为UDP或QUIC。 - listener的protocol为TCP时，pool的protocol必须为TCP。 - listener的protocol为TLS时，pool的protocol必须为TLS或TCP（且只能使用ip_version为v4的TCP pool）。 - 其他协议监听器不支持主备后端服务器组。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt,dt_test)
 
         :param protocol: The protocol of this CreateMasterSlavePoolOption.
         :type protocol: str
@@ -310,7 +310,7 @@ class CreateMasterSlavePoolOption:
     def vpc_id(self):
         """Gets the vpc_id of this CreateMasterSlavePoolOption.
 
-        后端云服务器组关联的虚拟私有云的ID。  指定了vpc_id的约束： - 只能挂载到该虚拟私有云下。 - 只能添加该虚拟私有云下的后端服务器或跨VPC的后端服务器。 - type必须指定为instance。  没有指定vpc_id的约束： - 后续添加后端服务器时，vpc_id由后端服务器所在的虚拟私有云确定。
+        后端服务器组关联的虚拟私有云的ID。  指定了vpc_id的约束： - 只能挂载到该虚拟私有云下。 - 只能添加该虚拟私有云下的后端服务器或跨VPC的后端服务器。 - type必须指定为instance。  没有指定vpc_id的约束： - 后续添加后端服务器时，vpc_id由后端服务器所在的虚拟私有云确定。
 
         :return: The vpc_id of this CreateMasterSlavePoolOption.
         :rtype: str
@@ -321,7 +321,7 @@ class CreateMasterSlavePoolOption:
     def vpc_id(self, vpc_id):
         """Sets the vpc_id of this CreateMasterSlavePoolOption.
 
-        后端云服务器组关联的虚拟私有云的ID。  指定了vpc_id的约束： - 只能挂载到该虚拟私有云下。 - 只能添加该虚拟私有云下的后端服务器或跨VPC的后端服务器。 - type必须指定为instance。  没有指定vpc_id的约束： - 后续添加后端服务器时，vpc_id由后端服务器所在的虚拟私有云确定。
+        后端服务器组关联的虚拟私有云的ID。  指定了vpc_id的约束： - 只能挂载到该虚拟私有云下。 - 只能添加该虚拟私有云下的后端服务器或跨VPC的后端服务器。 - type必须指定为instance。  没有指定vpc_id的约束： - 后续添加后端服务器时，vpc_id由后端服务器所在的虚拟私有云确定。
 
         :param vpc_id: The vpc_id of this CreateMasterSlavePoolOption.
         :type vpc_id: str
@@ -354,7 +354,7 @@ class CreateMasterSlavePoolOption:
     def ip_version(self):
         """Gets the ip_version of this CreateMasterSlavePoolOption.
 
-        后端云服务器组支持的IP版本。  [取值： - 共享型：固定为v4； -  独享型：取值dualstack、v4、v6。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。  当协议为HTTP时，ip_version为v4。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs)  [取值：dualstack、v4、v6。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。 当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt,dt_test)
+        后端服务器组支持的IP版本。  [取值： - 共享型：固定为v4； -  独享型：取值dualstack、v4、v6。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。  当协议为HTTP时，ip_version为v4。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs)  [取值：dualstack、v4、v6。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。 当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt,dt_test)
 
         :return: The ip_version of this CreateMasterSlavePoolOption.
         :rtype: str
@@ -365,7 +365,7 @@ class CreateMasterSlavePoolOption:
     def ip_version(self, ip_version):
         """Sets the ip_version of this CreateMasterSlavePoolOption.
 
-        后端云服务器组支持的IP版本。  [取值： - 共享型：固定为v4； -  独享型：取值dualstack、v4、v6。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。  当协议为HTTP时，ip_version为v4。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs)  [取值：dualstack、v4、v6。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。 当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt,dt_test)
+        后端服务器组支持的IP版本。  [取值： - 共享型：固定为v4； -  独享型：取值dualstack、v4、v6。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。  当协议为HTTP时，ip_version为v4。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs)  [取值：dualstack、v4、v6。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。 当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt,dt_test)
 
         :param ip_version: The ip_version of this CreateMasterSlavePoolOption.
         :type ip_version: str
@@ -376,7 +376,7 @@ class CreateMasterSlavePoolOption:
     def members(self):
         """Gets the members of this CreateMasterSlavePoolOption.
 
-        主备主机组的后端服务器。 只能添加2个后端云服务器，必须有一个为主，一个为备。
+        主备主机组的后端服务器。 只能添加2个后端服务器，必须有一个为主，一个为备。
 
         :return: The members of this CreateMasterSlavePoolOption.
         :rtype: list[:class:`huaweicloudsdkelb.v3.CreateMasterSlaveMemberOption`]
@@ -387,7 +387,7 @@ class CreateMasterSlavePoolOption:
     def members(self, members):
         """Sets the members of this CreateMasterSlavePoolOption.
 
-        主备主机组的后端服务器。 只能添加2个后端云服务器，必须有一个为主，一个为备。
+        主备主机组的后端服务器。 只能添加2个后端服务器，必须有一个为主，一个为备。
 
         :param members: The members of this CreateMasterSlavePoolOption.
         :type members: list[:class:`huaweicloudsdkelb.v3.CreateMasterSlaveMemberOption`]

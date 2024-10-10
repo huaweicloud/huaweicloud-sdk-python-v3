@@ -23,6 +23,7 @@ class CreateDigitalAssetRequestBody:
         'review_config': 'ReviewConfig',
         'tags': 'list[str]',
         'asset_extra_meta': 'AssetExtraMeta',
+        'system_properties': 'list[SystemProperty]',
         'shared_config': 'AssetSharedConfig',
         'is_need_generate_cover': 'bool',
         'asset_order': 'int',
@@ -36,13 +37,14 @@ class CreateDigitalAssetRequestBody:
         'review_config': 'review_config',
         'tags': 'tags',
         'asset_extra_meta': 'asset_extra_meta',
+        'system_properties': 'system_properties',
         'shared_config': 'shared_config',
         'is_need_generate_cover': 'is_need_generate_cover',
         'asset_order': 'asset_order',
         'supported_service': 'supported_service'
     }
 
-    def __init__(self, asset_name=None, asset_description=None, asset_type=None, review_config=None, tags=None, asset_extra_meta=None, shared_config=None, is_need_generate_cover=None, asset_order=None, supported_service=None):
+    def __init__(self, asset_name=None, asset_description=None, asset_type=None, review_config=None, tags=None, asset_extra_meta=None, system_properties=None, shared_config=None, is_need_generate_cover=None, asset_order=None, supported_service=None):
         """CreateDigitalAssetRequestBody
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class CreateDigitalAssetRequestBody:
         :type tags: list[str]
         :param asset_extra_meta: 
         :type asset_extra_meta: :class:`huaweicloudsdkmetastudio.v1.AssetExtraMeta`
+        :param system_properties: **参数解释**： 设置系统属性。内部参数，普通用户无需设置。 **约束限制**： 不涉及 **取值范围**： 个数最大为50个。 **默认取值**： 不涉及
+        :type system_properties: list[:class:`huaweicloudsdkmetastudio.v1.SystemProperty`]
         :param shared_config: 
         :type shared_config: :class:`huaweicloudsdkmetastudio.v1.AssetSharedConfig`
         :param is_need_generate_cover: **参数解释**： 是否需要生成封面。 **约束限制**： 仅用于视频类资产。 **取值范围**： * true：自动生成封面。 * false：不自动生成封面。
@@ -77,6 +81,7 @@ class CreateDigitalAssetRequestBody:
         self._review_config = None
         self._tags = None
         self._asset_extra_meta = None
+        self._system_properties = None
         self._shared_config = None
         self._is_need_generate_cover = None
         self._asset_order = None
@@ -93,6 +98,8 @@ class CreateDigitalAssetRequestBody:
             self.tags = tags
         if asset_extra_meta is not None:
             self.asset_extra_meta = asset_extra_meta
+        if system_properties is not None:
+            self.system_properties = system_properties
         if shared_config is not None:
             self.shared_config = shared_config
         if is_need_generate_cover is not None:
@@ -225,6 +232,28 @@ class CreateDigitalAssetRequestBody:
         :type asset_extra_meta: :class:`huaweicloudsdkmetastudio.v1.AssetExtraMeta`
         """
         self._asset_extra_meta = asset_extra_meta
+
+    @property
+    def system_properties(self):
+        """Gets the system_properties of this CreateDigitalAssetRequestBody.
+
+        **参数解释**： 设置系统属性。内部参数，普通用户无需设置。 **约束限制**： 不涉及 **取值范围**： 个数最大为50个。 **默认取值**： 不涉及
+
+        :return: The system_properties of this CreateDigitalAssetRequestBody.
+        :rtype: list[:class:`huaweicloudsdkmetastudio.v1.SystemProperty`]
+        """
+        return self._system_properties
+
+    @system_properties.setter
+    def system_properties(self, system_properties):
+        """Sets the system_properties of this CreateDigitalAssetRequestBody.
+
+        **参数解释**： 设置系统属性。内部参数，普通用户无需设置。 **约束限制**： 不涉及 **取值范围**： 个数最大为50个。 **默认取值**： 不涉及
+
+        :param system_properties: The system_properties of this CreateDigitalAssetRequestBody.
+        :type system_properties: list[:class:`huaweicloudsdkmetastudio.v1.SystemProperty`]
+        """
+        self._system_properties = system_properties
 
     @property
     def shared_config(self):

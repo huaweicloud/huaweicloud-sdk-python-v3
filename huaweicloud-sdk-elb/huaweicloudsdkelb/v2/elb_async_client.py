@@ -2399,6 +2399,8 @@ class ElbAsyncClient(Client):
             query_params.append(('admin_state_up', local_var_params['admin_state_up']))
         if 'weight' in local_var_params:
             query_params.append(('weight', local_var_params['weight']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 

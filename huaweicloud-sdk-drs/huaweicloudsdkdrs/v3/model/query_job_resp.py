@@ -42,7 +42,7 @@ class QueryJobResp:
         'filter_ddl_policy': 'str',
         'speed_limit': 'list[SpeedLimitInfo]',
         'schema_type': 'str',
-        'node_num': 'str',
+        'node_num': 'int',
         'object_switch': 'bool',
         'master_job_id': 'str',
         'full_mode': 'str',
@@ -199,8 +199,8 @@ class QueryJobResp:
         :type speed_limit: list[:class:`huaweicloudsdkdrs.v3.SpeedLimitInfo`]
         :param schema_type: 迁移方案 - Replication-主从复制 - Tungsten-日志解析 - PGBaseBackup-PG备份
         :type schema_type: str
-        :param node_num: 节点个数。
-        :type node_num: str
+        :param node_num: 节点个数。MongoDB数据库时对应源端分片个数，源库为集群时必填，[1-32]，MySQL双主灾备时会默认设置为2。
+        :type node_num: int
         :param object_switch: 对象选择开关
         :type object_switch: bool
         :param master_job_id: 主任务Id。
@@ -999,10 +999,10 @@ class QueryJobResp:
     def node_num(self):
         """Gets the node_num of this QueryJobResp.
 
-        节点个数。
+        节点个数。MongoDB数据库时对应源端分片个数，源库为集群时必填，[1-32]，MySQL双主灾备时会默认设置为2。
 
         :return: The node_num of this QueryJobResp.
-        :rtype: str
+        :rtype: int
         """
         return self._node_num
 
@@ -1010,10 +1010,10 @@ class QueryJobResp:
     def node_num(self, node_num):
         """Sets the node_num of this QueryJobResp.
 
-        节点个数。
+        节点个数。MongoDB数据库时对应源端分片个数，源库为集群时必填，[1-32]，MySQL双主灾备时会默认设置为2。
 
         :param node_num: The node_num of this QueryJobResp.
-        :type node_num: str
+        :type node_num: int
         """
         self._node_num = node_num
 

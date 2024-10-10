@@ -36,7 +36,7 @@ class UpdateDataProgressResponse(SdkResponse):
 
         :param id: 查询结果id
         :type id: str
-        :param status: 查询状态
+        :param status: 查询状态 pending：处理中 failed：失败 success：成功
         :type status: str
         :param job_id: 任务ID
         :type job_id: str
@@ -82,7 +82,7 @@ class UpdateDataProgressResponse(SdkResponse):
     def status(self):
         """Gets the status of this UpdateDataProgressResponse.
 
-        查询状态
+        查询状态 pending：处理中 failed：失败 success：成功
 
         :return: The status of this UpdateDataProgressResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class UpdateDataProgressResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this UpdateDataProgressResponse.
 
-        查询状态
+        查询状态 pending：处理中 failed：失败 success：成功
 
         :param status: The status of this UpdateDataProgressResponse.
         :type status: str

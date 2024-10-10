@@ -18,51 +18,51 @@ class CheckStarrocksParamsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'check_starrocks_params_responce': 'list[ParamGroupParameterDifferences]'
+        'differences': 'list[ParamGroupParameterDifferences]'
     }
 
     attribute_map = {
-        'check_starrocks_params_responce': 'check_starrocks_params_responce'
+        'differences': 'differences'
     }
 
-    def __init__(self, check_starrocks_params_responce=None):
+    def __init__(self, differences=None):
         """CheckStarrocksParamsResponse
 
         The model defined in huaweicloud sdk
 
-        :param check_starrocks_params_responce: 参数之间区别的集合。
-        :type check_starrocks_params_responce: list[:class:`huaweicloudsdkgaussdb.v3.ParamGroupParameterDifferences`]
+        :param differences: 参数之间区别的集合。
+        :type differences: list[:class:`huaweicloudsdkgaussdb.v3.ParamGroupParameterDifferences`]
         """
         
         super(CheckStarrocksParamsResponse, self).__init__()
 
-        self._check_starrocks_params_responce = None
+        self._differences = None
         self.discriminator = None
 
-        if check_starrocks_params_responce is not None:
-            self.check_starrocks_params_responce = check_starrocks_params_responce
+        if differences is not None:
+            self.differences = differences
 
     @property
-    def check_starrocks_params_responce(self):
-        """Gets the check_starrocks_params_responce of this CheckStarrocksParamsResponse.
+    def differences(self):
+        """Gets the differences of this CheckStarrocksParamsResponse.
 
         参数之间区别的集合。
 
-        :return: The check_starrocks_params_responce of this CheckStarrocksParamsResponse.
+        :return: The differences of this CheckStarrocksParamsResponse.
         :rtype: list[:class:`huaweicloudsdkgaussdb.v3.ParamGroupParameterDifferences`]
         """
-        return self._check_starrocks_params_responce
+        return self._differences
 
-    @check_starrocks_params_responce.setter
-    def check_starrocks_params_responce(self, check_starrocks_params_responce):
-        """Sets the check_starrocks_params_responce of this CheckStarrocksParamsResponse.
+    @differences.setter
+    def differences(self, differences):
+        """Sets the differences of this CheckStarrocksParamsResponse.
 
         参数之间区别的集合。
 
-        :param check_starrocks_params_responce: The check_starrocks_params_responce of this CheckStarrocksParamsResponse.
-        :type check_starrocks_params_responce: list[:class:`huaweicloudsdkgaussdb.v3.ParamGroupParameterDifferences`]
+        :param differences: The differences of this CheckStarrocksParamsResponse.
+        :type differences: list[:class:`huaweicloudsdkgaussdb.v3.ParamGroupParameterDifferences`]
         """
-        self._check_starrocks_params_responce = check_starrocks_params_responce
+        self._differences = differences
 
     def to_dict(self):
         """Returns the model properties as a dict"""

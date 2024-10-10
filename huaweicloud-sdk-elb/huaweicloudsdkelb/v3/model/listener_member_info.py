@@ -33,7 +33,7 @@ class ListenerMemberInfo:
 
         :param listener_id: 后端服务器关联的监听器id。
         :type listener_id: str
-        :param operating_status: 后端云服务器的健康状态。  取值： - ONLINE：后端云服务器正常。 - NO_MONITOR：后端云服务器所在的服务器组没有健康检查器。 - OFFLINE：后端云服务器关联的ECS服务器不存在或已关机或服务异常。
+        :param operating_status: 后端服务器的健康状态。  取值： - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机或服务异常。
         :type operating_status: str
         """
         
@@ -72,7 +72,7 @@ class ListenerMemberInfo:
     def operating_status(self):
         """Gets the operating_status of this ListenerMemberInfo.
 
-        后端云服务器的健康状态。  取值： - ONLINE：后端云服务器正常。 - NO_MONITOR：后端云服务器所在的服务器组没有健康检查器。 - OFFLINE：后端云服务器关联的ECS服务器不存在或已关机或服务异常。
+        后端服务器的健康状态。  取值： - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机或服务异常。
 
         :return: The operating_status of this ListenerMemberInfo.
         :rtype: str
@@ -83,7 +83,7 @@ class ListenerMemberInfo:
     def operating_status(self, operating_status):
         """Sets the operating_status of this ListenerMemberInfo.
 
-        后端云服务器的健康状态。  取值： - ONLINE：后端云服务器正常。 - NO_MONITOR：后端云服务器所在的服务器组没有健康检查器。 - OFFLINE：后端云服务器关联的ECS服务器不存在或已关机或服务异常。
+        后端服务器的健康状态。  取值： - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机或服务异常。
 
         :param operating_status: The operating_status of this ListenerMemberInfo.
         :type operating_status: str

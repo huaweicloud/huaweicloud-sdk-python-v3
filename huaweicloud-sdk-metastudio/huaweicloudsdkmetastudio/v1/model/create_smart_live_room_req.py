@@ -21,6 +21,7 @@ class CreateSmartLiveRoomReq:
         'room_description': 'str',
         'room_type': 'str',
         'scene_scripts': 'list[LiveVideoScriptInfo]',
+        'interaction_config': 'LiveRoomInteractionConfig',
         'interaction_rules': 'list[LiveRoomInteractionRuleInfo]',
         'play_policy': 'PlayPolicy',
         'video_config': 'VideoConfig',
@@ -41,6 +42,7 @@ class CreateSmartLiveRoomReq:
         'room_description': 'room_description',
         'room_type': 'room_type',
         'scene_scripts': 'scene_scripts',
+        'interaction_config': 'interaction_config',
         'interaction_rules': 'interaction_rules',
         'play_policy': 'play_policy',
         'video_config': 'video_config',
@@ -56,7 +58,7 @@ class CreateSmartLiveRoomReq:
         'priv_data': 'priv_data'
     }
 
-    def __init__(self, room_name=None, room_description=None, room_type=None, scene_scripts=None, interaction_rules=None, play_policy=None, video_config=None, output_urls=None, stream_keys=None, backup_model_asset_ids=None, live_event_callback_config=None, rtc_callback_config=None, review_config=None, shared_config=None, view_mode=None, co_streamer_config=None, priv_data=None):
+    def __init__(self, room_name=None, room_description=None, room_type=None, scene_scripts=None, interaction_config=None, interaction_rules=None, play_policy=None, video_config=None, output_urls=None, stream_keys=None, backup_model_asset_ids=None, live_event_callback_config=None, rtc_callback_config=None, review_config=None, shared_config=None, view_mode=None, co_streamer_config=None, priv_data=None):
         """CreateSmartLiveRoomReq
 
         The model defined in huaweicloud sdk
@@ -69,6 +71,8 @@ class CreateSmartLiveRoomReq:
         :type room_type: str
         :param scene_scripts: 默认直播剧本列表。
         :type scene_scripts: list[:class:`huaweicloudsdkmetastudio.v1.LiveVideoScriptInfo`]
+        :param interaction_config: 
+        :type interaction_config: :class:`huaweicloudsdkmetastudio.v1.LiveRoomInteractionConfig`
         :param interaction_rules: 互动规则列表
         :type interaction_rules: list[:class:`huaweicloudsdkmetastudio.v1.LiveRoomInteractionRuleInfo`]
         :param play_policy: 
@@ -103,6 +107,7 @@ class CreateSmartLiveRoomReq:
         self._room_description = None
         self._room_type = None
         self._scene_scripts = None
+        self._interaction_config = None
         self._interaction_rules = None
         self._play_policy = None
         self._video_config = None
@@ -125,6 +130,8 @@ class CreateSmartLiveRoomReq:
             self.room_type = room_type
         if scene_scripts is not None:
             self.scene_scripts = scene_scripts
+        if interaction_config is not None:
+            self.interaction_config = interaction_config
         if interaction_rules is not None:
             self.interaction_rules = interaction_rules
         if play_policy is not None:
@@ -239,6 +246,24 @@ class CreateSmartLiveRoomReq:
         :type scene_scripts: list[:class:`huaweicloudsdkmetastudio.v1.LiveVideoScriptInfo`]
         """
         self._scene_scripts = scene_scripts
+
+    @property
+    def interaction_config(self):
+        """Gets the interaction_config of this CreateSmartLiveRoomReq.
+
+        :return: The interaction_config of this CreateSmartLiveRoomReq.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.LiveRoomInteractionConfig`
+        """
+        return self._interaction_config
+
+    @interaction_config.setter
+    def interaction_config(self, interaction_config):
+        """Sets the interaction_config of this CreateSmartLiveRoomReq.
+
+        :param interaction_config: The interaction_config of this CreateSmartLiveRoomReq.
+        :type interaction_config: :class:`huaweicloudsdkmetastudio.v1.LiveRoomInteractionConfig`
+        """
+        self._interaction_config = interaction_config
 
     @property
     def interaction_rules(self):

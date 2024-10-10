@@ -26,7 +26,9 @@ class VoiceCapability:
         'is_support_ssml_say_as': 'bool',
         'is_support_ssml_sub': 'bool',
         'is_support_word': 'bool',
-        'is_support_voice_cache': 'bool'
+        'is_support_voice_cache': 'bool',
+        'conversion_rate': 'float',
+        'conversion_rate_en': 'float'
     }
 
     attribute_map = {
@@ -39,10 +41,12 @@ class VoiceCapability:
         'is_support_ssml_say_as': 'is_support_ssml_say_as',
         'is_support_ssml_sub': 'is_support_ssml_sub',
         'is_support_word': 'is_support_word',
-        'is_support_voice_cache': 'is_support_voice_cache'
+        'is_support_voice_cache': 'is_support_voice_cache',
+        'conversion_rate': 'conversion_rate',
+        'conversion_rate_en': 'conversion_rate_en'
     }
 
-    def __init__(self, is_support_phoneme_en=None, is_support_phoneme=None, is_support_break_time=None, is_support_break_strength=None, is_support_speed=None, is_support_prosody=None, is_support_ssml_say_as=None, is_support_ssml_sub=None, is_support_word=None, is_support_voice_cache=None):
+    def __init__(self, is_support_phoneme_en=None, is_support_phoneme=None, is_support_break_time=None, is_support_break_strength=None, is_support_speed=None, is_support_prosody=None, is_support_ssml_say_as=None, is_support_ssml_sub=None, is_support_word=None, is_support_voice_cache=None, conversion_rate=None, conversion_rate_en=None):
         """VoiceCapability
 
         The model defined in huaweicloud sdk
@@ -67,6 +71,10 @@ class VoiceCapability:
         :type is_support_word: bool
         :param is_support_voice_cache: 是否支持缓存。
         :type is_support_voice_cache: bool
+        :param conversion_rate: **参数解释**： 合成率。 **约束限制**： 不涉及 **取值范围**： * 0-50
+        :type conversion_rate: float
+        :param conversion_rate_en: **参数解释**： 英语的合成率。 **约束限制**： 不涉及 **取值范围**： * 0-50
+        :type conversion_rate_en: float
         """
         
         
@@ -81,6 +89,8 @@ class VoiceCapability:
         self._is_support_ssml_sub = None
         self._is_support_word = None
         self._is_support_voice_cache = None
+        self._conversion_rate = None
+        self._conversion_rate_en = None
         self.discriminator = None
 
         if is_support_phoneme_en is not None:
@@ -103,6 +113,10 @@ class VoiceCapability:
             self.is_support_word = is_support_word
         if is_support_voice_cache is not None:
             self.is_support_voice_cache = is_support_voice_cache
+        if conversion_rate is not None:
+            self.conversion_rate = conversion_rate
+        if conversion_rate_en is not None:
+            self.conversion_rate_en = conversion_rate_en
 
     @property
     def is_support_phoneme_en(self):
@@ -323,6 +337,50 @@ class VoiceCapability:
         :type is_support_voice_cache: bool
         """
         self._is_support_voice_cache = is_support_voice_cache
+
+    @property
+    def conversion_rate(self):
+        """Gets the conversion_rate of this VoiceCapability.
+
+        **参数解释**： 合成率。 **约束限制**： 不涉及 **取值范围**： * 0-50
+
+        :return: The conversion_rate of this VoiceCapability.
+        :rtype: float
+        """
+        return self._conversion_rate
+
+    @conversion_rate.setter
+    def conversion_rate(self, conversion_rate):
+        """Sets the conversion_rate of this VoiceCapability.
+
+        **参数解释**： 合成率。 **约束限制**： 不涉及 **取值范围**： * 0-50
+
+        :param conversion_rate: The conversion_rate of this VoiceCapability.
+        :type conversion_rate: float
+        """
+        self._conversion_rate = conversion_rate
+
+    @property
+    def conversion_rate_en(self):
+        """Gets the conversion_rate_en of this VoiceCapability.
+
+        **参数解释**： 英语的合成率。 **约束限制**： 不涉及 **取值范围**： * 0-50
+
+        :return: The conversion_rate_en of this VoiceCapability.
+        :rtype: float
+        """
+        return self._conversion_rate_en
+
+    @conversion_rate_en.setter
+    def conversion_rate_en(self, conversion_rate_en):
+        """Sets the conversion_rate_en of this VoiceCapability.
+
+        **参数解释**： 英语的合成率。 **约束限制**： 不涉及 **取值范围**： * 0-50
+
+        :param conversion_rate_en: The conversion_rate_en of this VoiceCapability.
+        :type conversion_rate_en: float
+        """
+        self._conversion_rate_en = conversion_rate_en
 
     def to_dict(self):
         """Returns the model properties as a dict"""

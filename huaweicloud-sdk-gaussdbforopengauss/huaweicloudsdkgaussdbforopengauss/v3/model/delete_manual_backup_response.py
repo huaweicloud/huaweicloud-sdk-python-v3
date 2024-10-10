@@ -18,20 +18,80 @@ class DeleteManualBackupResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'backup_id': 'str',
+        'backup_name': 'str'
     }
 
     attribute_map = {
+        'backup_id': 'backup_id',
+        'backup_name': 'backup_name'
     }
 
-    def __init__(self):
+    def __init__(self, backup_id=None, backup_name=None):
         """DeleteManualBackupResponse
 
         The model defined in huaweicloud sdk
 
+        :param backup_id: 备份ID。
+        :type backup_id: str
+        :param backup_name: 备份名称。
+        :type backup_name: str
         """
         
         super(DeleteManualBackupResponse, self).__init__()
+
+        self._backup_id = None
+        self._backup_name = None
         self.discriminator = None
+
+        if backup_id is not None:
+            self.backup_id = backup_id
+        if backup_name is not None:
+            self.backup_name = backup_name
+
+    @property
+    def backup_id(self):
+        """Gets the backup_id of this DeleteManualBackupResponse.
+
+        备份ID。
+
+        :return: The backup_id of this DeleteManualBackupResponse.
+        :rtype: str
+        """
+        return self._backup_id
+
+    @backup_id.setter
+    def backup_id(self, backup_id):
+        """Sets the backup_id of this DeleteManualBackupResponse.
+
+        备份ID。
+
+        :param backup_id: The backup_id of this DeleteManualBackupResponse.
+        :type backup_id: str
+        """
+        self._backup_id = backup_id
+
+    @property
+    def backup_name(self):
+        """Gets the backup_name of this DeleteManualBackupResponse.
+
+        备份名称。
+
+        :return: The backup_name of this DeleteManualBackupResponse.
+        :rtype: str
+        """
+        return self._backup_name
+
+    @backup_name.setter
+    def backup_name(self, backup_name):
+        """Sets the backup_name of this DeleteManualBackupResponse.
+
+        备份名称。
+
+        :param backup_name: The backup_name of this DeleteManualBackupResponse.
+        :type backup_name: str
+        """
+        self._backup_name = backup_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

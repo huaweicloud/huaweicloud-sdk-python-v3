@@ -41,7 +41,7 @@ class ListFlavorsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param marker: 参数解释：上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        :param marker: 参数解释：上一页最后一条记录的ID。  约束限制： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
         :type marker: str
         :param limit: 参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
         :type limit: int
@@ -87,7 +87,7 @@ class ListFlavorsRequest:
     def marker(self):
         """Gets the marker of this ListFlavorsRequest.
 
-        参数解释：上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        参数解释：上一页最后一条记录的ID。  约束限制： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
         :return: The marker of this ListFlavorsRequest.
         :rtype: str
@@ -98,7 +98,7 @@ class ListFlavorsRequest:
     def marker(self, marker):
         """Sets the marker of this ListFlavorsRequest.
 
-        参数解释：上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        参数解释：上一页最后一条记录的ID。  约束限制： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
         :param marker: The marker of this ListFlavorsRequest.
         :type marker: str

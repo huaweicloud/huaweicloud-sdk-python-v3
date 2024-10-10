@@ -39,7 +39,8 @@ class AutopilotClusterSpec:
         'kube_proxy_mode': 'str',
         'az': 'str',
         'extend_param': 'AutopilotClusterExtendParam',
-        'configurations_override': 'list[AutopilotPackageConfiguration]'
+        'configurations_override': 'list[AutopilotPackageConfiguration]',
+        'deletion_protection': 'bool'
     }
 
     attribute_map = {
@@ -65,10 +66,11 @@ class AutopilotClusterSpec:
         'kube_proxy_mode': 'kubeProxyMode',
         'az': 'az',
         'extend_param': 'extendParam',
-        'configurations_override': 'configurationsOverride'
+        'configurations_override': 'configurationsOverride',
+        'deletion_protection': 'deletionProtection'
     }
 
-    def __init__(self, category=None, type=None, flavor=None, version=None, platform_version=None, description=None, custom_san=None, enable_snat=None, enable_swr_image_access=None, enable_autopilot=None, ipv6enable=None, host_network=None, container_network=None, eni_network=None, service_network=None, authentication=None, billing_mode=None, kubernetes_svc_ip_range=None, cluster_tags=None, kube_proxy_mode=None, az=None, extend_param=None, configurations_override=None):
+    def __init__(self, category=None, type=None, flavor=None, version=None, platform_version=None, description=None, custom_san=None, enable_snat=None, enable_swr_image_access=None, enable_autopilot=None, ipv6enable=None, host_network=None, container_network=None, eni_network=None, service_network=None, authentication=None, billing_mode=None, kubernetes_svc_ip_range=None, cluster_tags=None, kube_proxy_mode=None, az=None, extend_param=None, configurations_override=None, deletion_protection=None):
         """AutopilotClusterSpec
 
         The model defined in huaweicloud sdk
@@ -119,6 +121,8 @@ class AutopilotClusterSpec:
         :type extend_param: :class:`huaweicloudsdkcce.v3.AutopilotClusterExtendParam`
         :param configurations_override: 覆盖集群默认组件配置  若指定了不支持的组件或组件不支持的参数，该配置项将被忽略。  当前支持的可配置组件及其参数详见 [[配置管理](https://support.huaweicloud.com/usermanual-cce/cce_10_0213.html)](tag:hws) [[配置管理](https://support.huaweicloud.com/intl/zh-cn/usermanual-cce/cce_10_0213.html)](tag:hws_hk) 
         :type configurations_override: list[:class:`huaweicloudsdkcce.v3.AutopilotPackageConfiguration`]
+        :param deletion_protection: 集群删除保护，开启后禁止用户通过API或console调用删除集群，true表示开启，默认值false关闭。
+        :type deletion_protection: bool
         """
         
         
@@ -146,6 +150,7 @@ class AutopilotClusterSpec:
         self._az = None
         self._extend_param = None
         self._configurations_override = None
+        self._deletion_protection = None
         self.discriminator = None
 
         if category is not None:
@@ -191,6 +196,8 @@ class AutopilotClusterSpec:
             self.extend_param = extend_param
         if configurations_override is not None:
             self.configurations_override = configurations_override
+        if deletion_protection is not None:
+            self.deletion_protection = deletion_protection
 
     @property
     def category(self):
@@ -673,6 +680,28 @@ class AutopilotClusterSpec:
         :type configurations_override: list[:class:`huaweicloudsdkcce.v3.AutopilotPackageConfiguration`]
         """
         self._configurations_override = configurations_override
+
+    @property
+    def deletion_protection(self):
+        """Gets the deletion_protection of this AutopilotClusterSpec.
+
+        集群删除保护，开启后禁止用户通过API或console调用删除集群，true表示开启，默认值false关闭。
+
+        :return: The deletion_protection of this AutopilotClusterSpec.
+        :rtype: bool
+        """
+        return self._deletion_protection
+
+    @deletion_protection.setter
+    def deletion_protection(self, deletion_protection):
+        """Sets the deletion_protection of this AutopilotClusterSpec.
+
+        集群删除保护，开启后禁止用户通过API或console调用删除集群，true表示开启，默认值false关闭。
+
+        :param deletion_protection: The deletion_protection of this AutopilotClusterSpec.
+        :type deletion_protection: bool
+        """
+        self._deletion_protection = deletion_protection
 
     def to_dict(self):
         """Returns the model properties as a dict"""

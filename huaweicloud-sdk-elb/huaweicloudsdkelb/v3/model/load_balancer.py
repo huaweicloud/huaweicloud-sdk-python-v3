@@ -127,7 +127,7 @@ class LoadBalancer:
         :type admin_state_up: bool
         :param provider: 参数解释：负载均衡器的生产者名称。固定为vlb。
         :type provider: str
-        :param pools: 参数解释：负载均衡器直接关联的后端云服务器组的ID列表。
+        :param pools: 参数解释：负载均衡器直接关联的后端服务器组的ID列表。
         :type pools: list[:class:`huaweicloudsdkelb.v3.PoolRef`]
         :param listeners: 参数解释：负载均衡器关联的监听器的ID列表。
         :type listeners: list[:class:`huaweicloudsdkelb.v3.ListenerRef`]
@@ -183,13 +183,13 @@ class LoadBalancer:
         :type elb_virsubnet_ids: list[str]
         :param elb_virsubnet_type: 参数解释：下联面子网类型。  取值范围： - ipv4：ipv4 - dualstack：双栈
         :type elb_virsubnet_type: str
-        :param ip_target_enable: 参数解释：是否启用跨VPC后端转发。 开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。  约束限制： - 开启后不能关闭。 - 使用共享VPC的实例使用此特性时，需确保共享资源所有者已开通VPC对等连接，否则通信异常。 [- 仅独享型负载均衡器支持该特性。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,fcs,dt)  取值范围： - true：开启。 - false：不开启。  [荷兰region不支持该字段，请勿使用。](tag:dt,dt_test)
+        :param ip_target_enable: 参数解释：是否启用跨VPC后端转发。 开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。  约束限制： - 开启后不能关闭。 - 使用共享VPC的实例使用此特性时，需确保共享资源所有者已开通VPC对等连接，否则通信异常。 [- 仅独享型负载均衡器支持该特性。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,fcs,dt) [- 网关型LB不支持该特性。](tag:hws_eu)  取值范围： - true：开启。 - false：不开启。  [荷兰region不支持该字段，请勿使用。](tag:dt,dt_test)
         :type ip_target_enable: bool
         :param frozen_scene: 参数解释：负载均衡器的冻结场景。 [若负载均衡器有多个冻结场景，用逗号分隔。  取值范围： - POLICE：公安冻结场景。 - ILLEGAL：违规冻结场景。 - VERIFY：客户未实名认证冻结场景。 - PARTNER：合作伙伴冻结（合作伙伴冻结子客户资源）。 - AREAR：欠费冻结场景。](tag:hws,hws_hk)  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,ocb,hws_ocb)
         :type frozen_scene: str
         :param ipv6_bandwidth: 
         :type ipv6_bandwidth: :class:`huaweicloudsdkelb.v3.BandwidthRef`
-        :param deletion_protection_enable: 参数解释：是否开启删除保护。  约束限制： - 仅当前局点启用删除保护特性后才会返回该字段。 - 退场时需要先关闭所有资源的删除保护开关。  取值范围： - false：不开启。 - true：开启。 &gt;退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt,dt_test)
+        :param deletion_protection_enable: 参数解释：是否开启删除保护。  约束限制： - 仅当前局点启用删除保护特性后才会返回该字段。 - 退场时需要先关闭所有资源的删除保护开关。  取值范围： - false：不开启。 - true：开启。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt,dt_test)
         :type deletion_protection_enable: bool
         :param autoscaling: 
         :type autoscaling: :class:`huaweicloudsdkelb.v3.AutoscalingRef`
@@ -427,7 +427,7 @@ class LoadBalancer:
     def pools(self):
         """Gets the pools of this LoadBalancer.
 
-        参数解释：负载均衡器直接关联的后端云服务器组的ID列表。
+        参数解释：负载均衡器直接关联的后端服务器组的ID列表。
 
         :return: The pools of this LoadBalancer.
         :rtype: list[:class:`huaweicloudsdkelb.v3.PoolRef`]
@@ -438,7 +438,7 @@ class LoadBalancer:
     def pools(self, pools):
         """Sets the pools of this LoadBalancer.
 
-        参数解释：负载均衡器直接关联的后端云服务器组的ID列表。
+        参数解释：负载均衡器直接关联的后端服务器组的ID列表。
 
         :param pools: The pools of this LoadBalancer.
         :type pools: list[:class:`huaweicloudsdkelb.v3.PoolRef`]
@@ -1043,7 +1043,7 @@ class LoadBalancer:
     def ip_target_enable(self):
         """Gets the ip_target_enable of this LoadBalancer.
 
-        参数解释：是否启用跨VPC后端转发。 开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。  约束限制： - 开启后不能关闭。 - 使用共享VPC的实例使用此特性时，需确保共享资源所有者已开通VPC对等连接，否则通信异常。 [- 仅独享型负载均衡器支持该特性。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,fcs,dt)  取值范围： - true：开启。 - false：不开启。  [荷兰region不支持该字段，请勿使用。](tag:dt,dt_test)
+        参数解释：是否启用跨VPC后端转发。 开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。  约束限制： - 开启后不能关闭。 - 使用共享VPC的实例使用此特性时，需确保共享资源所有者已开通VPC对等连接，否则通信异常。 [- 仅独享型负载均衡器支持该特性。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,fcs,dt) [- 网关型LB不支持该特性。](tag:hws_eu)  取值范围： - true：开启。 - false：不开启。  [荷兰region不支持该字段，请勿使用。](tag:dt,dt_test)
 
         :return: The ip_target_enable of this LoadBalancer.
         :rtype: bool
@@ -1054,7 +1054,7 @@ class LoadBalancer:
     def ip_target_enable(self, ip_target_enable):
         """Sets the ip_target_enable of this LoadBalancer.
 
-        参数解释：是否启用跨VPC后端转发。 开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。  约束限制： - 开启后不能关闭。 - 使用共享VPC的实例使用此特性时，需确保共享资源所有者已开通VPC对等连接，否则通信异常。 [- 仅独享型负载均衡器支持该特性。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,fcs,dt)  取值范围： - true：开启。 - false：不开启。  [荷兰region不支持该字段，请勿使用。](tag:dt,dt_test)
+        参数解释：是否启用跨VPC后端转发。 开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。  约束限制： - 开启后不能关闭。 - 使用共享VPC的实例使用此特性时，需确保共享资源所有者已开通VPC对等连接，否则通信异常。 [- 仅独享型负载均衡器支持该特性。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,fcs,dt) [- 网关型LB不支持该特性。](tag:hws_eu)  取值范围： - true：开启。 - false：不开启。  [荷兰region不支持该字段，请勿使用。](tag:dt,dt_test)
 
         :param ip_target_enable: The ip_target_enable of this LoadBalancer.
         :type ip_target_enable: bool
@@ -1105,7 +1105,7 @@ class LoadBalancer:
     def deletion_protection_enable(self):
         """Gets the deletion_protection_enable of this LoadBalancer.
 
-        参数解释：是否开启删除保护。  约束限制： - 仅当前局点启用删除保护特性后才会返回该字段。 - 退场时需要先关闭所有资源的删除保护开关。  取值范围： - false：不开启。 - true：开启。 >退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt,dt_test)
+        参数解释：是否开启删除保护。  约束限制： - 仅当前局点启用删除保护特性后才会返回该字段。 - 退场时需要先关闭所有资源的删除保护开关。  取值范围： - false：不开启。 - true：开启。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt,dt_test)
 
         :return: The deletion_protection_enable of this LoadBalancer.
         :rtype: bool
@@ -1116,7 +1116,7 @@ class LoadBalancer:
     def deletion_protection_enable(self, deletion_protection_enable):
         """Sets the deletion_protection_enable of this LoadBalancer.
 
-        参数解释：是否开启删除保护。  约束限制： - 仅当前局点启用删除保护特性后才会返回该字段。 - 退场时需要先关闭所有资源的删除保护开关。  取值范围： - false：不开启。 - true：开启。 >退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt,dt_test)
+        参数解释：是否开启删除保护。  约束限制： - 仅当前局点启用删除保护特性后才会返回该字段。 - 退场时需要先关闭所有资源的删除保护开关。  取值范围： - false：不开启。 - true：开启。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt,dt_test)
 
         :param deletion_protection_enable: The deletion_protection_enable of this LoadBalancer.
         :type deletion_protection_enable: bool

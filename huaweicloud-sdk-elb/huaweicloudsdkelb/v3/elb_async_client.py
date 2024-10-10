@@ -905,7 +905,11 @@ class ElbAsyncClient(Client):
         6. 若要创建网络型负载均衡器，则需要传入l4_flavor_id（网络型规格ID）；若要创建应用型负载均衡器，则需要传入l7_flavor_id（应用型规格ID）；若要创建网络型+应用型负载均衡器，则需要传入l4_flavor_id和l7_flavor_id。
         7. 若要创建包周期负载均衡器，则需要传入prepaid_options，否则创建按需计费负载均衡器。
         8. 按需计费分为固定规格计费和弹性规格计费，根据创建时所选规格的类型决定计费方式。具体规格说明见创建LB请求参数l4_flavor_id和l7_flavor_id。
-        [9.若要创建gateway类型的负载均衡器，指定loadbalancer_type&#x3D;“gateway”，不支持指定vip_address，ipv6_vip_address；vip_subnet_cidr_id和ipv6_subnet_cidr_id两者不能同时为空，如果两者都传入，必须属于同一子网。 不支持公网类型。如果要指定规格，则从请求参数gw_flavor_id传入。](tag:hws_eu)
+        [9.若要创建gateway类型的负载均衡器，则需要：
+           - 指定loadbalancer_type&#x3D;\&quot;gateway\&quot;，且不支持指定vip_address，ipv6_vip_address。
+           - vip_subnet_cidr_id和ipv6_subnet_cidr_id两者不能都为空，如果两者都传入，则必须属于同一子网。
+           - 不支持创建公网gateway类型LB。
+           - 如果要指定规格，则从请求参数gw_flavor_id传入。](tag:hws_eu)
         
         Please refer to HUAWEI cloud API Explorer for details.
 

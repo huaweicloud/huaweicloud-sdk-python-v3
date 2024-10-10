@@ -26,7 +26,9 @@ class WhiteBlackIpResponseBody:
         'addr': 'str',
         'white': 'int',
         'ip_group': 'IpGroup',
-        'time_mode': 'str'
+        'time_mode': 'str',
+        'start': 'int',
+        'terminal': 'int'
     }
 
     attribute_map = {
@@ -39,10 +41,12 @@ class WhiteBlackIpResponseBody:
         'addr': 'addr',
         'white': 'white',
         'ip_group': 'ip_group',
-        'time_mode': 'time_mode'
+        'time_mode': 'time_mode',
+        'start': 'start',
+        'terminal': 'terminal'
     }
 
-    def __init__(self, id=None, name=None, policyid=None, timestamp=None, description=None, status=None, addr=None, white=None, ip_group=None, time_mode=None):
+    def __init__(self, id=None, name=None, policyid=None, timestamp=None, description=None, status=None, addr=None, white=None, ip_group=None, time_mode=None, start=None, terminal=None):
         """WhiteBlackIpResponseBody
 
         The model defined in huaweicloud sdk
@@ -67,6 +71,10 @@ class WhiteBlackIpResponseBody:
         :type ip_group: :class:`huaweicloudsdkwaf.v1.IpGroup`
         :param time_mode: 生效模式，默认为permanent（立即生效）
         :type time_mode: str
+        :param start: 规则生效的开始时间，生效模式为自定义时，此字段才有效
+        :type start: int
+        :param terminal: 规则生效的结束时间，生效模式为自定义时，此字段才有效
+        :type terminal: int
         """
         
         
@@ -81,6 +89,8 @@ class WhiteBlackIpResponseBody:
         self._white = None
         self._ip_group = None
         self._time_mode = None
+        self._start = None
+        self._terminal = None
         self.discriminator = None
 
         if id is not None:
@@ -103,6 +113,10 @@ class WhiteBlackIpResponseBody:
             self.ip_group = ip_group
         if time_mode is not None:
             self.time_mode = time_mode
+        if start is not None:
+            self.start = start
+        if terminal is not None:
+            self.terminal = terminal
 
     @property
     def id(self):
@@ -319,6 +333,50 @@ class WhiteBlackIpResponseBody:
         :type time_mode: str
         """
         self._time_mode = time_mode
+
+    @property
+    def start(self):
+        """Gets the start of this WhiteBlackIpResponseBody.
+
+        规则生效的开始时间，生效模式为自定义时，此字段才有效
+
+        :return: The start of this WhiteBlackIpResponseBody.
+        :rtype: int
+        """
+        return self._start
+
+    @start.setter
+    def start(self, start):
+        """Sets the start of this WhiteBlackIpResponseBody.
+
+        规则生效的开始时间，生效模式为自定义时，此字段才有效
+
+        :param start: The start of this WhiteBlackIpResponseBody.
+        :type start: int
+        """
+        self._start = start
+
+    @property
+    def terminal(self):
+        """Gets the terminal of this WhiteBlackIpResponseBody.
+
+        规则生效的结束时间，生效模式为自定义时，此字段才有效
+
+        :return: The terminal of this WhiteBlackIpResponseBody.
+        :rtype: int
+        """
+        return self._terminal
+
+    @terminal.setter
+    def terminal(self, terminal):
+        """Sets the terminal of this WhiteBlackIpResponseBody.
+
+        规则生效的结束时间，生效模式为自定义时，此字段才有效
+
+        :param terminal: The terminal of this WhiteBlackIpResponseBody.
+        :type terminal: int
+        """
+        self._terminal = terminal
 
     def to_dict(self):
         """Returns the model properties as a dict"""

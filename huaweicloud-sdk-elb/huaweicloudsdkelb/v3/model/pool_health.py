@@ -29,7 +29,7 @@ class PoolHealth:
 
         The model defined in huaweicloud sdk
 
-        :param minimum_healthy_member_count: 当健康检查在线的member个数小于该个数，判定pool的state为不健康； 取值范围：0或者1； 0：默认值，不生效； 1：全下线转发生效；
+        :param minimum_healthy_member_count: 参数解释：当健康检查在线的member个数小于该个数，判定pool的state为不健康。  取值范围： - 0：默认值，不生效。 - 1：全下线转发生效。
         :type minimum_healthy_member_count: int
         """
         
@@ -45,7 +45,7 @@ class PoolHealth:
     def minimum_healthy_member_count(self):
         """Gets the minimum_healthy_member_count of this PoolHealth.
 
-        当健康检查在线的member个数小于该个数，判定pool的state为不健康； 取值范围：0或者1； 0：默认值，不生效； 1：全下线转发生效；
+        参数解释：当健康检查在线的member个数小于该个数，判定pool的state为不健康。  取值范围： - 0：默认值，不生效。 - 1：全下线转发生效。
 
         :return: The minimum_healthy_member_count of this PoolHealth.
         :rtype: int
@@ -56,7 +56,7 @@ class PoolHealth:
     def minimum_healthy_member_count(self, minimum_healthy_member_count):
         """Sets the minimum_healthy_member_count of this PoolHealth.
 
-        当健康检查在线的member个数小于该个数，判定pool的state为不健康； 取值范围：0或者1； 0：默认值，不生效； 1：全下线转发生效；
+        参数解释：当健康检查在线的member个数小于该个数，判定pool的state为不健康。  取值范围： - 0：默认值，不生效。 - 1：全下线转发生效。
 
         :param minimum_healthy_member_count: The minimum_healthy_member_count of this PoolHealth.
         :type minimum_healthy_member_count: int

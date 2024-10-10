@@ -103,7 +103,7 @@ class CreateLoadBalancerOption:
         :type l4_flavor_id: str
         :param l7_flavor_id: 参数解释：应用型规格ID。  约束限制： [- 可以通过GET https://{ELB_Endpoint}/v3/{project_id}/elb/flavors?type&#x3D;L7 响应参数中的id得到。 - 当l4_flavor_id和l7_flavor_id都不传的时，会使用默认flavor （默认flavor根据不同局点有所不同，具体以实际值为准）。 - 当传入的规格类型为L7，表示该实例为固定规格实例，按规格计费。 - 当传入的规格类型为L7_elastic_max，表示该实例为弹性实例，按LCU计费。](tag:hws,hws_hk,hws_eu,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb)   [网关型LB不支持指定l7_flavor_id。](tag:hws_eu) [只支持设置为l7_flavor.elb.shared。](tag:hcso_dt) [所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso,hk_vdf,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)  取值范围： 标准的UUID格式，长度为36个字符。
         :type l7_flavor_id: str
-        :param guaranteed: 参数解释：是否为独享型负载均衡器实例。  约束限制：当前只支持设置为true，设置为false会返回400 Bad Request。  取值范围：布尔类型。 - true：独享型。 - false：共享型。  默认取值：true。
+        :param guaranteed: 参数解释：是否为独享型负载均衡器实例。  约束限制：当前只支持设置为true，设置为false会返回400 Bad Request。  取值范围： - true：独享型。 - false：共享型。  默认取值：true。
         :type guaranteed: bool
         :param vpc_id: 参数解释：负载均衡器所在的VPC ID。  约束限制: - 参数获取，可以通过 GET https://{VPC_Endpoint}/v1/{project_id}/vpcs 响应参数中的id得到。 - vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。  取值范围： 标准的UUID格式，长度为36个字符。
         :type vpc_id: str
@@ -438,7 +438,7 @@ class CreateLoadBalancerOption:
     def guaranteed(self):
         """Gets the guaranteed of this CreateLoadBalancerOption.
 
-        参数解释：是否为独享型负载均衡器实例。  约束限制：当前只支持设置为true，设置为false会返回400 Bad Request。  取值范围：布尔类型。 - true：独享型。 - false：共享型。  默认取值：true。
+        参数解释：是否为独享型负载均衡器实例。  约束限制：当前只支持设置为true，设置为false会返回400 Bad Request。  取值范围： - true：独享型。 - false：共享型。  默认取值：true。
 
         :return: The guaranteed of this CreateLoadBalancerOption.
         :rtype: bool
@@ -449,7 +449,7 @@ class CreateLoadBalancerOption:
     def guaranteed(self, guaranteed):
         """Sets the guaranteed of this CreateLoadBalancerOption.
 
-        参数解释：是否为独享型负载均衡器实例。  约束限制：当前只支持设置为true，设置为false会返回400 Bad Request。  取值范围：布尔类型。 - true：独享型。 - false：共享型。  默认取值：true。
+        参数解释：是否为独享型负载均衡器实例。  约束限制：当前只支持设置为true，设置为false会返回400 Bad Request。  取值范围： - true：独享型。 - false：共享型。  默认取值：true。
 
         :param guaranteed: The guaranteed of this CreateLoadBalancerOption.
         :type guaranteed: bool

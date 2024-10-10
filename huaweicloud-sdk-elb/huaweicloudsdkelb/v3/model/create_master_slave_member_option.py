@@ -39,15 +39,15 @@ class CreateMasterSlaveMemberOption:
 
         The model defined in huaweicloud sdk
 
-        :param address: 后端服务器对应的IP地址。  使用说明： - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。 - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。 该IP地址可以是私网IPv4或IPv6。但必须在subnet_cidr_id对应的子网网段中。且只能指定为关联ECS的主网卡内网IP。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
+        :param address: 后端服务器对应的IP地址。  使用说明： - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。 - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。 该IP地址可以是私网IPv4或IPv6。但必须在subnet_cidr_id对应的子网网段中。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
         :type address: str
-        :param admin_state_up: 后端云服务器的管理状态。  取值：true。  虽然创建、更新请求支持该字段，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
+        :param admin_state_up: 后端服务器的管理状态。  取值：true。  虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
         :type admin_state_up: bool
-        :param name: 后端云服务器名称。
+        :param name: 后端服务器名称。
         :type name: str
         :param protocol_port: 后端服务器业务端口。 &gt;在开启端口透传的pool下创建member传该字段不生效，可不传该字段。
         :type protocol_port: int
-        :param subnet_cidr_id: 后端云服务器所在的子网ID，可以是子网的IPv4子网ID或IPv6子网ID。  使用说明： - 该子网和关联的负载均衡器的子网必须在同一VPC下。 - 若所属LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。 此时address必须为IPv4地址，所在的pool的协议必须为TCP/HTTP/HTTPS。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt,dt_test)
+        :param subnet_cidr_id: 后端服务器所在的子网ID，可以是子网的IPv4子网ID或IPv6子网ID。  使用说明： - 该子网和关联的负载均衡器的子网必须在同一VPC下。 - 若所属LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为IPv4地址，所在的pool的协议必须为UDP/TCP/TLS/HTTP/HTTPS/QUIC/GRPC。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt,dt_test)
         :type subnet_cidr_id: str
         :param role: 后端服务器的主备状态。  取值范围： - master：主后端服务器。 - slave：备后端服务器。
         :type role: str
@@ -77,7 +77,7 @@ class CreateMasterSlaveMemberOption:
     def address(self):
         """Gets the address of this CreateMasterSlaveMemberOption.
 
-        后端服务器对应的IP地址。  使用说明： - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。 - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。 该IP地址可以是私网IPv4或IPv6。但必须在subnet_cidr_id对应的子网网段中。且只能指定为关联ECS的主网卡内网IP。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
+        后端服务器对应的IP地址。  使用说明： - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。 - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。 该IP地址可以是私网IPv4或IPv6。但必须在subnet_cidr_id对应的子网网段中。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
 
         :return: The address of this CreateMasterSlaveMemberOption.
         :rtype: str
@@ -88,7 +88,7 @@ class CreateMasterSlaveMemberOption:
     def address(self, address):
         """Sets the address of this CreateMasterSlaveMemberOption.
 
-        后端服务器对应的IP地址。  使用说明： - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。 - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。 该IP地址可以是私网IPv4或IPv6。但必须在subnet_cidr_id对应的子网网段中。且只能指定为关联ECS的主网卡内网IP。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
+        后端服务器对应的IP地址。  使用说明： - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。 - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。 该IP地址可以是私网IPv4或IPv6。但必须在subnet_cidr_id对应的子网网段中。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
 
         :param address: The address of this CreateMasterSlaveMemberOption.
         :type address: str
@@ -99,7 +99,7 @@ class CreateMasterSlaveMemberOption:
     def admin_state_up(self):
         """Gets the admin_state_up of this CreateMasterSlaveMemberOption.
 
-        后端云服务器的管理状态。  取值：true。  虽然创建、更新请求支持该字段，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
+        后端服务器的管理状态。  取值：true。  虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
 
         :return: The admin_state_up of this CreateMasterSlaveMemberOption.
         :rtype: bool
@@ -110,7 +110,7 @@ class CreateMasterSlaveMemberOption:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this CreateMasterSlaveMemberOption.
 
-        后端云服务器的管理状态。  取值：true。  虽然创建、更新请求支持该字段，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
+        后端服务器的管理状态。  取值：true。  虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
 
         :param admin_state_up: The admin_state_up of this CreateMasterSlaveMemberOption.
         :type admin_state_up: bool
@@ -121,7 +121,7 @@ class CreateMasterSlaveMemberOption:
     def name(self):
         """Gets the name of this CreateMasterSlaveMemberOption.
 
-        后端云服务器名称。
+        后端服务器名称。
 
         :return: The name of this CreateMasterSlaveMemberOption.
         :rtype: str
@@ -132,7 +132,7 @@ class CreateMasterSlaveMemberOption:
     def name(self, name):
         """Sets the name of this CreateMasterSlaveMemberOption.
 
-        后端云服务器名称。
+        后端服务器名称。
 
         :param name: The name of this CreateMasterSlaveMemberOption.
         :type name: str
@@ -165,7 +165,7 @@ class CreateMasterSlaveMemberOption:
     def subnet_cidr_id(self):
         """Gets the subnet_cidr_id of this CreateMasterSlaveMemberOption.
 
-        后端云服务器所在的子网ID，可以是子网的IPv4子网ID或IPv6子网ID。  使用说明： - 该子网和关联的负载均衡器的子网必须在同一VPC下。 - 若所属LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。 此时address必须为IPv4地址，所在的pool的协议必须为TCP/HTTP/HTTPS。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt,dt_test)
+        后端服务器所在的子网ID，可以是子网的IPv4子网ID或IPv6子网ID。  使用说明： - 该子网和关联的负载均衡器的子网必须在同一VPC下。 - 若所属LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为IPv4地址，所在的pool的协议必须为UDP/TCP/TLS/HTTP/HTTPS/QUIC/GRPC。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt,dt_test)
 
         :return: The subnet_cidr_id of this CreateMasterSlaveMemberOption.
         :rtype: str
@@ -176,7 +176,7 @@ class CreateMasterSlaveMemberOption:
     def subnet_cidr_id(self, subnet_cidr_id):
         """Sets the subnet_cidr_id of this CreateMasterSlaveMemberOption.
 
-        后端云服务器所在的子网ID，可以是子网的IPv4子网ID或IPv6子网ID。  使用说明： - 该子网和关联的负载均衡器的子网必须在同一VPC下。 - 若所属LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。 此时address必须为IPv4地址，所在的pool的协议必须为TCP/HTTP/HTTPS。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt,dt_test)
+        后端服务器所在的子网ID，可以是子网的IPv4子网ID或IPv6子网ID。  使用说明： - 该子网和关联的负载均衡器的子网必须在同一VPC下。 - 若所属LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为IPv4地址，所在的pool的协议必须为UDP/TCP/TLS/HTTP/HTTPS/QUIC/GRPC。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt,dt_test)
 
         :param subnet_cidr_id: The subnet_cidr_id of this CreateMasterSlaveMemberOption.
         :type subnet_cidr_id: str

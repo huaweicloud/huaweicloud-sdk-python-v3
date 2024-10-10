@@ -45,7 +45,7 @@ class LoadBalancerStatus:
         :type provisioning_status: str
         :param listeners: 负载均衡器关联的监听器列表。
         :type listeners: list[:class:`huaweicloudsdkelb.v3.LoadBalancerStatusListener`]
-        :param pools: 负载均衡器关联的后端云服务器组列表。
+        :param pools: 负载均衡器关联的后端服务器组列表。
         :type pools: list[:class:`huaweicloudsdkelb.v3.LoadBalancerStatusPool`]
         :param id: 负载均衡器ID。
         :type id: str
@@ -140,7 +140,7 @@ class LoadBalancerStatus:
     def pools(self):
         """Gets the pools of this LoadBalancerStatus.
 
-        负载均衡器关联的后端云服务器组列表。
+        负载均衡器关联的后端服务器组列表。
 
         :return: The pools of this LoadBalancerStatus.
         :rtype: list[:class:`huaweicloudsdkelb.v3.LoadBalancerStatusPool`]
@@ -151,7 +151,7 @@ class LoadBalancerStatus:
     def pools(self, pools):
         """Sets the pools of this LoadBalancerStatus.
 
-        负载均衡器关联的后端云服务器组列表。
+        负载均衡器关联的后端服务器组列表。
 
         :param pools: The pools of this LoadBalancerStatus.
         :type pools: list[:class:`huaweicloudsdkelb.v3.LoadBalancerStatusPool`]

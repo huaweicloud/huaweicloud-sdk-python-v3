@@ -231,6 +231,73 @@ class AadClient(Client):
 
         return http_info
 
+    def associate_ip_to_policy_and_package(self, request):
+        """策略和防护包绑定防护对象
+
+        策略和防护包绑定防护对象
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AssociateIpToPolicyAndPackage
+        :type request: :class:`huaweicloudsdkaad.v1.AssociateIpToPolicyAndPackageRequest`
+        :rtype: :class:`huaweicloudsdkaad.v1.AssociateIpToPolicyAndPackageResponse`
+        """
+        http_info = self._associate_ip_to_policy_and_package_http_info(request)
+        return self._call_api(**http_info)
+
+    def associate_ip_to_policy_and_package_invoker(self, request):
+        http_info = self._associate_ip_to_policy_and_package_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _associate_ip_to_policy_and_package_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/cnad/policies/{policy_id}/bind",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateIpToPolicyAndPackageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_create_instance_ip_rule(self, request):
         """批量创建高防实例IP的转发规则
 
@@ -784,6 +851,73 @@ class AadClient(Client):
             "resource_path": "/v1/cnad/policies/{policy_id}/unbind",
             "request_type": request.__class__.__name__,
             "response_type": "DisassociateIpFromPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def disassociate_ip_from_policy_and_package(self, request):
+        """策略和防护包解绑防护对象
+
+        策略和防护包解绑防护对象
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DisassociateIpFromPolicyAndPackage
+        :type request: :class:`huaweicloudsdkaad.v1.DisassociateIpFromPolicyAndPackageRequest`
+        :rtype: :class:`huaweicloudsdkaad.v1.DisassociateIpFromPolicyAndPackageResponse`
+        """
+        http_info = self._disassociate_ip_from_policy_and_package_http_info(request)
+        return self._call_api(**http_info)
+
+    def disassociate_ip_from_policy_and_package_invoker(self, request):
+        http_info = self._disassociate_ip_from_policy_and_package_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _disassociate_ip_from_policy_and_package_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/cnad/policies/{policy_id}/unbind",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisassociateIpFromPolicyAndPackageResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

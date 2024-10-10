@@ -59,13 +59,13 @@ class MasterSlaveMember:
         :type id: str
         :param name: 后端服务器名称。
         :type name: str
-        :param admin_state_up: 后端云服务器的管理状态。  取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
+        :param admin_state_up: 后端服务器的管理状态。  取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
         :type admin_state_up: bool
-        :param subnet_cidr_id: 后端云服务器所在子网的IPv4子网ID或IPv6子网ID。  若所属的LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。 此时address必须为IPv4地址，所在的pool的协议必须为TCP/HTTP/HTTPS。  使用说明：该子网和关联的负载均衡器的子网必须在同一VPC下。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt,dt_test)
+        :param subnet_cidr_id: 后端服务器所在子网的IPv4子网ID或IPv6子网ID。  若所属的LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为IPv4地址，所在的pool的协议必须为UDP/TCP/TLS/HTTP/HTTPS/QUIC/GRPC。  使用说明：该子网和关联的负载均衡器的子网必须在同一VPC下。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt,dt_test)
         :type subnet_cidr_id: str
         :param protocol_port: 后端服务器业务端口。 &gt;在开启端口透传的pool下创建member传该字段不生效，可不传该字段。
         :type protocol_port: int
-        :param address: 后端服务器对应的IP地址。  使用说明： - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。 - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址可以是私网IPv4或IPv6。 但必须在subnet_cidr_id对应的子网网段中。且只能指定为关联ECS的主网卡内网IP。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
+        :param address: 后端服务器对应的IP地址。  使用说明： - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。 - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址可以是私网IPv4或IPv6。 但必须在subnet_cidr_id对应的子网网段中。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
         :type address: str
         :param ip_version: 当前后端服务器的IP地址版本，由后端系统自动根据传入的address字段确定。取值：v4、v6。
         :type ip_version: str
@@ -73,15 +73,15 @@ class MasterSlaveMember:
         :type device_owner: str
         :param device_id: 关联的ECS ID，为空表示后端服务器未关联到ECS。  不支持该字段，请勿使用。
         :type device_id: str
-        :param operating_status: 后端云服务器的健康状态。  取值： - ONLINE：后端云服务器正常。 - NO_MONITOR：后端云服务器所在的服务器组没有健康检查器。 - OFFLINE：后端云服务器关联的ECS服务器不存在或已关机。
+        :param operating_status: 后端服务器的健康状态。  取值： - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。
         :type operating_status: str
-        :param member_type: 后端云服务器的类型。  取值： - ip：跨VPC的member。 - instance：关联到ECS的member。
+        :param member_type: 后端服务器的类型。  取值： - ip：跨VPC的member。 - instance：关联到ECS的member。
         :type member_type: str
         :param instance_id: member关联的实例ID。空表示member关联的实例为非真实设备 （如：跨VPC场景）
         :type instance_id: str
         :param role: 后端服务器的主备状态。
         :type role: str
-        :param status: 后端云服务器监听器粒度的的健康状态。 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_status为准。 若绑定的监听器不在该字段中，则以外层的operating_status为准。
+        :param status: 后端服务器监听器粒度的的健康状态。 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_status为准。 若绑定的监听器不在该字段中，则以外层的operating_status为准。
         :type status: list[:class:`huaweicloudsdkelb.v3.ListenerMemberInfo`]
         """
         
@@ -166,7 +166,7 @@ class MasterSlaveMember:
     def admin_state_up(self):
         """Gets the admin_state_up of this MasterSlaveMember.
 
-        后端云服务器的管理状态。  取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
+        后端服务器的管理状态。  取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
 
         :return: The admin_state_up of this MasterSlaveMember.
         :rtype: bool
@@ -177,7 +177,7 @@ class MasterSlaveMember:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this MasterSlaveMember.
 
-        后端云服务器的管理状态。  取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
+        后端服务器的管理状态。  取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
 
         :param admin_state_up: The admin_state_up of this MasterSlaveMember.
         :type admin_state_up: bool
@@ -188,7 +188,7 @@ class MasterSlaveMember:
     def subnet_cidr_id(self):
         """Gets the subnet_cidr_id of this MasterSlaveMember.
 
-        后端云服务器所在子网的IPv4子网ID或IPv6子网ID。  若所属的LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。 此时address必须为IPv4地址，所在的pool的协议必须为TCP/HTTP/HTTPS。  使用说明：该子网和关联的负载均衡器的子网必须在同一VPC下。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt,dt_test)
+        后端服务器所在子网的IPv4子网ID或IPv6子网ID。  若所属的LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为IPv4地址，所在的pool的协议必须为UDP/TCP/TLS/HTTP/HTTPS/QUIC/GRPC。  使用说明：该子网和关联的负载均衡器的子网必须在同一VPC下。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt,dt_test)
 
         :return: The subnet_cidr_id of this MasterSlaveMember.
         :rtype: str
@@ -199,7 +199,7 @@ class MasterSlaveMember:
     def subnet_cidr_id(self, subnet_cidr_id):
         """Sets the subnet_cidr_id of this MasterSlaveMember.
 
-        后端云服务器所在子网的IPv4子网ID或IPv6子网ID。  若所属的LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。 此时address必须为IPv4地址，所在的pool的协议必须为TCP/HTTP/HTTPS。  使用说明：该子网和关联的负载均衡器的子网必须在同一VPC下。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt,dt_test)
+        后端服务器所在子网的IPv4子网ID或IPv6子网ID。  若所属的LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为IPv4地址，所在的pool的协议必须为UDP/TCP/TLS/HTTP/HTTPS/QUIC/GRPC。  使用说明：该子网和关联的负载均衡器的子网必须在同一VPC下。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt,dt_test)
 
         :param subnet_cidr_id: The subnet_cidr_id of this MasterSlaveMember.
         :type subnet_cidr_id: str
@@ -232,7 +232,7 @@ class MasterSlaveMember:
     def address(self):
         """Gets the address of this MasterSlaveMember.
 
-        后端服务器对应的IP地址。  使用说明： - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。 - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址可以是私网IPv4或IPv6。 但必须在subnet_cidr_id对应的子网网段中。且只能指定为关联ECS的主网卡内网IP。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
+        后端服务器对应的IP地址。  使用说明： - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。 - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址可以是私网IPv4或IPv6。 但必须在subnet_cidr_id对应的子网网段中。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
 
         :return: The address of this MasterSlaveMember.
         :rtype: str
@@ -243,7 +243,7 @@ class MasterSlaveMember:
     def address(self, address):
         """Sets the address of this MasterSlaveMember.
 
-        后端服务器对应的IP地址。  使用说明： - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。 - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址可以是私网IPv4或IPv6。 但必须在subnet_cidr_id对应的子网网段中。且只能指定为关联ECS的主网卡内网IP。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
+        后端服务器对应的IP地址。  使用说明： - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。 - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址可以是私网IPv4或IPv6。 但必须在subnet_cidr_id对应的子网网段中。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
 
         :param address: The address of this MasterSlaveMember.
         :type address: str
@@ -320,7 +320,7 @@ class MasterSlaveMember:
     def operating_status(self):
         """Gets the operating_status of this MasterSlaveMember.
 
-        后端云服务器的健康状态。  取值： - ONLINE：后端云服务器正常。 - NO_MONITOR：后端云服务器所在的服务器组没有健康检查器。 - OFFLINE：后端云服务器关联的ECS服务器不存在或已关机。
+        后端服务器的健康状态。  取值： - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。
 
         :return: The operating_status of this MasterSlaveMember.
         :rtype: str
@@ -331,7 +331,7 @@ class MasterSlaveMember:
     def operating_status(self, operating_status):
         """Sets the operating_status of this MasterSlaveMember.
 
-        后端云服务器的健康状态。  取值： - ONLINE：后端云服务器正常。 - NO_MONITOR：后端云服务器所在的服务器组没有健康检查器。 - OFFLINE：后端云服务器关联的ECS服务器不存在或已关机。
+        后端服务器的健康状态。  取值： - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。
 
         :param operating_status: The operating_status of this MasterSlaveMember.
         :type operating_status: str
@@ -342,7 +342,7 @@ class MasterSlaveMember:
     def member_type(self):
         """Gets the member_type of this MasterSlaveMember.
 
-        后端云服务器的类型。  取值： - ip：跨VPC的member。 - instance：关联到ECS的member。
+        后端服务器的类型。  取值： - ip：跨VPC的member。 - instance：关联到ECS的member。
 
         :return: The member_type of this MasterSlaveMember.
         :rtype: str
@@ -353,7 +353,7 @@ class MasterSlaveMember:
     def member_type(self, member_type):
         """Sets the member_type of this MasterSlaveMember.
 
-        后端云服务器的类型。  取值： - ip：跨VPC的member。 - instance：关联到ECS的member。
+        后端服务器的类型。  取值： - ip：跨VPC的member。 - instance：关联到ECS的member。
 
         :param member_type: The member_type of this MasterSlaveMember.
         :type member_type: str
@@ -408,7 +408,7 @@ class MasterSlaveMember:
     def status(self):
         """Gets the status of this MasterSlaveMember.
 
-        后端云服务器监听器粒度的的健康状态。 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_status为准。 若绑定的监听器不在该字段中，则以外层的operating_status为准。
+        后端服务器监听器粒度的的健康状态。 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_status为准。 若绑定的监听器不在该字段中，则以外层的operating_status为准。
 
         :return: The status of this MasterSlaveMember.
         :rtype: list[:class:`huaweicloudsdkelb.v3.ListenerMemberInfo`]
@@ -419,7 +419,7 @@ class MasterSlaveMember:
     def status(self, status):
         """Sets the status of this MasterSlaveMember.
 
-        后端云服务器监听器粒度的的健康状态。 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_status为准。 若绑定的监听器不在该字段中，则以外层的operating_status为准。
+        后端服务器监听器粒度的的健康状态。 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_status为准。 若绑定的监听器不在该字段中，则以外层的operating_status为准。
 
         :param status: The status of this MasterSlaveMember.
         :type status: list[:class:`huaweicloudsdkelb.v3.ListenerMemberInfo`]

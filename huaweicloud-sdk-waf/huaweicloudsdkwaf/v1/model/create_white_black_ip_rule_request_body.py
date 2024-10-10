@@ -21,7 +21,10 @@ class CreateWhiteBlackIpRuleRequestBody:
         'addr': 'str',
         'description': 'str',
         'white': 'int',
-        'ip_group_id': 'str'
+        'ip_group_id': 'str',
+        'time_mode': 'str',
+        'start': 'int',
+        'terminal': 'int'
     }
 
     attribute_map = {
@@ -29,10 +32,13 @@ class CreateWhiteBlackIpRuleRequestBody:
         'addr': 'addr',
         'description': 'description',
         'white': 'white',
-        'ip_group_id': 'ip_group_id'
+        'ip_group_id': 'ip_group_id',
+        'time_mode': 'time_mode',
+        'start': 'start',
+        'terminal': 'terminal'
     }
 
-    def __init__(self, name=None, addr=None, description=None, white=None, ip_group_id=None):
+    def __init__(self, name=None, addr=None, description=None, white=None, ip_group_id=None, time_mode=None, start=None, terminal=None):
         """CreateWhiteBlackIpRuleRequestBody
 
         The model defined in huaweicloud sdk
@@ -47,6 +53,12 @@ class CreateWhiteBlackIpRuleRequestBody:
         :type white: int
         :param ip_group_id: 创建的Ip地址组id，该参数与addr参数只能使用一个；Ip地址组可在控制台中对象管理-&gt;地址组管理中添加。
         :type ip_group_id: str
+        :param time_mode: 生效模式，默认为permanent（立即生效）,创建自定义生效规则时请输入：customize
+        :type time_mode: str
+        :param start: 规则生效开始时间，生效模式为自定义时，此字段才有效，请输入时间戳
+        :type start: int
+        :param terminal: 规则生效结束时间，生效模式为自定义时，此字段才有效，请输入时间戳
+        :type terminal: int
         """
         
         
@@ -56,6 +68,9 @@ class CreateWhiteBlackIpRuleRequestBody:
         self._description = None
         self._white = None
         self._ip_group_id = None
+        self._time_mode = None
+        self._start = None
+        self._terminal = None
         self.discriminator = None
 
         self.name = name
@@ -66,6 +81,12 @@ class CreateWhiteBlackIpRuleRequestBody:
         self.white = white
         if ip_group_id is not None:
             self.ip_group_id = ip_group_id
+        if time_mode is not None:
+            self.time_mode = time_mode
+        if start is not None:
+            self.start = start
+        if terminal is not None:
+            self.terminal = terminal
 
     @property
     def name(self):
@@ -176,6 +197,72 @@ class CreateWhiteBlackIpRuleRequestBody:
         :type ip_group_id: str
         """
         self._ip_group_id = ip_group_id
+
+    @property
+    def time_mode(self):
+        """Gets the time_mode of this CreateWhiteBlackIpRuleRequestBody.
+
+        生效模式，默认为permanent（立即生效）,创建自定义生效规则时请输入：customize
+
+        :return: The time_mode of this CreateWhiteBlackIpRuleRequestBody.
+        :rtype: str
+        """
+        return self._time_mode
+
+    @time_mode.setter
+    def time_mode(self, time_mode):
+        """Sets the time_mode of this CreateWhiteBlackIpRuleRequestBody.
+
+        生效模式，默认为permanent（立即生效）,创建自定义生效规则时请输入：customize
+
+        :param time_mode: The time_mode of this CreateWhiteBlackIpRuleRequestBody.
+        :type time_mode: str
+        """
+        self._time_mode = time_mode
+
+    @property
+    def start(self):
+        """Gets the start of this CreateWhiteBlackIpRuleRequestBody.
+
+        规则生效开始时间，生效模式为自定义时，此字段才有效，请输入时间戳
+
+        :return: The start of this CreateWhiteBlackIpRuleRequestBody.
+        :rtype: int
+        """
+        return self._start
+
+    @start.setter
+    def start(self, start):
+        """Sets the start of this CreateWhiteBlackIpRuleRequestBody.
+
+        规则生效开始时间，生效模式为自定义时，此字段才有效，请输入时间戳
+
+        :param start: The start of this CreateWhiteBlackIpRuleRequestBody.
+        :type start: int
+        """
+        self._start = start
+
+    @property
+    def terminal(self):
+        """Gets the terminal of this CreateWhiteBlackIpRuleRequestBody.
+
+        规则生效结束时间，生效模式为自定义时，此字段才有效，请输入时间戳
+
+        :return: The terminal of this CreateWhiteBlackIpRuleRequestBody.
+        :rtype: int
+        """
+        return self._terminal
+
+    @terminal.setter
+    def terminal(self, terminal):
+        """Sets the terminal of this CreateWhiteBlackIpRuleRequestBody.
+
+        规则生效结束时间，生效模式为自定义时，此字段才有效，请输入时间戳
+
+        :param terminal: The terminal of this CreateWhiteBlackIpRuleRequestBody.
+        :type terminal: int
+        """
+        self._terminal = terminal
 
     def to_dict(self):
         """Returns the model properties as a dict"""

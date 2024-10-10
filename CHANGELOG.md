@@ -1,3 +1,265 @@
+# 3.1.117 2024-10-10
+
+### HuaweiCloud SDK AAD
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the APIs `AssociateIpToPolicyAndPackage`, `DisassociateIpFromPolicyAndPackage`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CCE
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowAutopilotCluster**
+    - changes of response param
+      - `+ spec.deletionProtection`
+  - **UpdateAutopilotCluster**
+    - changes of response param
+      - `+ spec.deletionProtection`
+  - **DeleteAutopilotCluster**
+    - changes of response param
+      - `+ spec.deletionProtection`
+  - **CreateAutopilotCluster**
+    - changes of request param
+      - `+ spec.deletionProtection`
+    - changes of response param
+      - `+ spec.deletionProtection`
+  - **ListAutopilotClusters**
+    - changes of response param
+      - `+ items.spec.deletionProtection`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `CreateLineageInfo`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DGC
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowJob**
+    - changes of response param
+      - `+ downstreamJobs`
+
+### HuaweiCloud SDK DRS
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **BatchListJobDetails**
+    - changes of response param
+      - `* results.node_num: string -> int32`
+
+### HuaweiCloud SDK DRS
+
+- _API Version_
+  - V5
+- _Features_
+  - Support the following APIs:
+    - `ListReplicationJobs`
+    - `CreateReplicationJob`
+    - `ShowReplicationJob`
+    - `UpdateReplicationJob`
+    - `DeleteReplicationJob`
+    - `ChangeToPeriod`
+    - `ListConnections`
+    - `CreateConnection`
+    - `ModifyConnection`
+    - `DeleteConnection`
+    - `ListJobDdls`
+    - `CleanAlarms`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK ELB
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListMembers**
+    - changes of request param
+      - `+ enterprise_project_id`
+
+### HuaweiCloud SDK EVS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowVolume**
+    - changes of response param
+      - `- volume.snapshot_policy_id`
+  - **ListVolumes**
+    - changes of request param
+      - `- snapshot_policy_id`
+    - changes of response param
+      - `- volumes.snapshot_policy_id`
+
+### HuaweiCloud SDK GaussDB
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateStarrocksInstance**
+    - changes of request param
+      - `+ security_group_id`
+  - **CheckStarrocksParams**
+    - changes of response param
+      - `+ differences`
+      - `- check_starrocks_params_responce`
+
+### HuaweiCloud SDK MetaStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ExecuteSmartLiveCommand**
+    - changes of request param
+      - `+ command: enum value [CLEAN_UP_INSERT_COMMAND]`
+    - changes of response param
+      - `+ command: enum value [CLEAN_UP_INSERT_COMMAND]`
+  - **ShowAsset**
+    - changes of response param
+      - `+ system_properties.key: enum value [DIGITAL_HUMAN_2D_VIDEO,DIGITAL_HUMAN_3D_VIDEO,PHOTO_VIDEO,TRANSLATED_VIDEO]`
+      - `+ asset_extra_meta.voice_model_meta.voice_capability.conversion_rate`
+      - `+ asset_extra_meta.voice_model_meta.voice_capability.conversion_rate_en`
+  - **UpdateDigitalAsset**
+    - changes of request param
+      - `+ system_properties.key: enum value [DIGITAL_HUMAN_2D_VIDEO,DIGITAL_HUMAN_3D_VIDEO,PHOTO_VIDEO,TRANSLATED_VIDEO]`
+      - `+ asset_extra_meta.voice_model_meta.voice_capability.conversion_rate`
+      - `+ asset_extra_meta.voice_model_meta.voice_capability.conversion_rate_en`
+    - changes of response param
+      - `+ system_properties.key: enum value [DIGITAL_HUMAN_2D_VIDEO,DIGITAL_HUMAN_3D_VIDEO,PHOTO_VIDEO,TRANSLATED_VIDEO]`
+      - `+ asset_extra_meta.voice_model_meta.voice_capability.conversion_rate`
+      - `+ asset_extra_meta.voice_model_meta.voice_capability.conversion_rate_en`
+  - **CreateDigitalAsset**
+    - changes of request param
+      - `+ system_properties`
+      - `+ asset_extra_meta.voice_model_meta.voice_capability.conversion_rate`
+      - `+ asset_extra_meta.voice_model_meta.voice_capability.conversion_rate_en`
+  - **ListAssets**
+    - changes of response param
+      - `+ assets.system_properties.key: enum value [DIGITAL_HUMAN_2D_VIDEO,DIGITAL_HUMAN_3D_VIDEO,PHOTO_VIDEO,TRANSLATED_VIDEO]`
+      - `+ assets.asset_extra_meta.voice_model_meta.voice_capability.conversion_rate`
+      - `+ assets.asset_extra_meta.voice_model_meta.voice_capability.conversion_rate_en`
+  - **CreateSmartLiveRoom**
+    - changes of request param
+      - `+ interaction_config`
+      - `+ interaction_rules.trigger.play_type`
+  - **ShowSmartLiveRoom**
+    - changes of response param
+      - `+ interaction_config`
+      - `+ interaction_rules.trigger.play_type`
+  - **UpdateSmartLiveRoom**
+    - changes of request param
+      - `+ interaction_config`
+      - `+ interaction_rules.trigger.play_type`
+    - changes of response param
+      - `+ interaction_config`
+      - `+ interaction_rules.trigger.play_type`
+  - **UpdateInteractionRuleGroup**
+    - changes of request param
+      - `+ interaction_rules.trigger.play_type`
+    - changes of response param
+      - `+ interaction_rules.trigger.play_type`
+  - **CreateInteractionRuleGroup**
+    - changes of request param
+      - `+ interaction_rules.trigger.play_type`
+  - **ListInteractionRuleGroups**
+    - changes of response param
+      - `+ interaction_rule_groups.interaction_rules.trigger.play_type`
+
+### HuaweiCloud SDK RDS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the APIs `ShowRecoveryTimeWindow`, `UpdateToPeriod`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK WAF
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowWhiteBlackIpRule**
+    - changes of response param
+      - `+ start`
+      - `+ terminal`
+  - **UpdateWhiteblackipRule**
+    - changes of request param
+      - `+ time_mode`
+      - `+ start`
+      - `+ terminal`
+    - changes of response param
+      - `+ start`
+      - `+ terminal`
+  - **DeleteWhiteBlackIpRule**
+    - changes of response param
+      - `+ start`
+      - `+ terminal`
+  - **CreateWhiteblackipRule**
+    - changes of request param
+      - `+ time_mode`
+      - `+ start`
+      - `+ terminal`
+    - changes of response param
+      - `+ start`
+      - `+ terminal`
+  - **ListWhiteblackipRule**
+    - changes of response param
+      - `+ items.start`
+      - `+ items.terminal`
+
 # 3.1.116 2024-09-26
 
 ### HuaweiCloud SDK BSS

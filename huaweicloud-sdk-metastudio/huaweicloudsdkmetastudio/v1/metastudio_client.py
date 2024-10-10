@@ -9311,7 +9311,11 @@ class MetaStudioClient(Client):
     def create_tts_audition(self, request):
         """创建TTS试听任务
 
-        该接口用于创建生成播报内容的语音试听文件任务。第三方音色试听需要收费，收费标准参考：https://marketplace.huaweicloud.com/product/OFFI919400645308506112#productid&#x3D;OFFI919400645308506112
+        该接口用于创建生成播报内容的语音试听文件任务。
+        
+        [第三方音色试听需要收费，收费标准参考：https://marketplace.huaweicloud.com/product/OFFI919400645308506112#productid&#x3D;OFFI919400645308506112](tag:hc)
+        
+        [第三方音色试听需要收费，收费标准参考：https://marketplace.huaweicloud.com/intl/contents/939bf377-3005-472b-a4e2-383911e6102f](tag:hk)
         
         Please refer to HUAWEI cloud API Explorer for details.
 

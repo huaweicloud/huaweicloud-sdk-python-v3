@@ -27,7 +27,8 @@ class ListMembersRequest:
         'protocol_port': 'int',
         'subnet_id': 'str',
         'admin_state_up': 'bool',
-        'weight': 'int'
+        'weight': 'int',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class ListMembersRequest:
         'protocol_port': 'protocol_port',
         'subnet_id': 'subnet_id',
         'admin_state_up': 'admin_state_up',
-        'weight': 'weight'
+        'weight': 'weight',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, pool_id=None, limit=None, marker=None, page_reverse=None, id=None, name=None, address=None, protocol_port=None, subnet_id=None, admin_state_up=None, weight=None):
+    def __init__(self, pool_id=None, limit=None, marker=None, page_reverse=None, id=None, name=None, address=None, protocol_port=None, subnet_id=None, admin_state_up=None, weight=None, enterprise_project_id=None):
         """ListMembersRequest
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class ListMembersRequest:
         :type admin_state_up: bool
         :param weight: 后端云服务器的权重。
         :type weight: int
+        :param enterprise_project_id: 企业项目ID。 不传时查询default企业项目（即enterprise_project_id&#x3D;0）下的资源，鉴权按照default企业项目鉴权。 如果传值enterprise_project_id&#x3D;all_granted_eps，则表示查询所有有权限的企业项目下的资源。 其他情况则传已存在的企业项目ID。此时会校验ID，若不存在或格式错误则报错。
+        :type enterprise_project_id: str
         """
         
         
@@ -86,6 +90,7 @@ class ListMembersRequest:
         self._subnet_id = None
         self._admin_state_up = None
         self._weight = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         self.pool_id = pool_id
@@ -109,6 +114,8 @@ class ListMembersRequest:
             self.admin_state_up = admin_state_up
         if weight is not None:
             self.weight = weight
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def pool_id(self):
@@ -351,6 +358,28 @@ class ListMembersRequest:
         :type weight: int
         """
         self._weight = weight
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListMembersRequest.
+
+        企业项目ID。 不传时查询default企业项目（即enterprise_project_id=0）下的资源，鉴权按照default企业项目鉴权。 如果传值enterprise_project_id=all_granted_eps，则表示查询所有有权限的企业项目下的资源。 其他情况则传已存在的企业项目ID。此时会校验ID，若不存在或格式错误则报错。
+
+        :return: The enterprise_project_id of this ListMembersRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListMembersRequest.
+
+        企业项目ID。 不传时查询default企业项目（即enterprise_project_id=0）下的资源，鉴权按照default企业项目鉴权。 如果传值enterprise_project_id=all_granted_eps，则表示查询所有有权限的企业项目下的资源。 其他情况则传已存在的企业项目ID。此时会校验ID，若不存在或格式错误则报错。
+
+        :param enterprise_project_id: The enterprise_project_id of this ListMembersRequest.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

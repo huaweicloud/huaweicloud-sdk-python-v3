@@ -91,7 +91,7 @@ class CreateListenerOption:
 
         :param admin_state_up: 参数解释：监听器的管理状态。  约束限制：只支持设置为true。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
         :type admin_state_up: bool
-        :param default_pool_id: 参数解释：监听器默认的后端云服务器组ID。当请求没有匹配的转发策略时，转发到默认后端云服务器上处理。
+        :param default_pool_id: 参数解释：监听器默认的后端服务器组ID。当请求没有匹配的转发策略时，转发到默认后端服务器上处理。
         :type default_pool_id: str
         :param client_ca_tls_container_ref: 参数解释：监听器使用的CA证书ID。  约束限制： - 当且仅当type&#x3D;client时，才会使用该字段对应的证书。 - 监听器协议为QUIC时不支持该字段。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt,dt_test)
         :type client_ca_tls_container_ref: str
@@ -137,7 +137,7 @@ class CreateListenerOption:
         :type transparent_client_ip_enable: bool
         :param proxy_protocol_enable: 参数解释：是否开启proxy_protocol。  约束限制：仅TLS监听器可指定，其他协议的监听器该字段不生效，proxy_protocol不开启。
         :type proxy_protocol_enable: bool
-        :param enhance_l7policy_enable: 参数解释：是否开启高级转发策略功能。开启高级转发策略后，支持更灵活的转发策略和转发规则设置。  开启后支持如下场景： - 转发策略的action字段支持指定为REDIRECT_TO_URL, FIXED_RESPONSE，即支持URL重定向和响应固定的内容给客户端。 - 转发策略支持指定priority、redirect_url_config、fixed_response_config字段。 - 转发规则rule的type可以指定METHOD, HEADER, QUERY_STRING, SOURCE_IP这几种取值。 - 转发规则rule的type为HOST_NAME时，转发规则rule的value支持通配符*。 - 转发规则支持指定conditions字段。  取值范围：true开启，false不开启，默认false。  [荷兰region不支持该字段，请勿使用。](tag:dt,dt_test) &gt; 开启后不支持关闭
+        :param enhance_l7policy_enable: 参数解释：是否开启高级转发策略功能。开启高级转发策略后，支持更灵活的转发策略和转发规则设置。  开启后支持如下场景： - 转发策略的action字段支持指定为REDIRECT_TO_URL, FIXED_RESPONSE，即支持URL重定向和响应固定的内容给客户端。 - 转发策略支持指定priority、redirect_url_config、fixed_response_config字段。 - 转发规则rule的type可以指定METHOD, HEADER, QUERY_STRING, SOURCE_IP这几种取值。 - 转发规则rule的type为HOST_NAME时，转发规则rule的value支持通配符*。 - 转发规则支持指定conditions字段。  约束限制：开启后不支持关闭  取值范围：true开启，false不开启，默认false。  [荷兰region不支持该字段，请勿使用。](tag:dt,dt_test)
         :type enhance_l7policy_enable: bool
         :param quic_config: 
         :type quic_config: :class:`huaweicloudsdkelb.v3.CreateListenerQuicConfigOption`
@@ -275,7 +275,7 @@ class CreateListenerOption:
     def default_pool_id(self):
         """Gets the default_pool_id of this CreateListenerOption.
 
-        参数解释：监听器默认的后端云服务器组ID。当请求没有匹配的转发策略时，转发到默认后端云服务器上处理。
+        参数解释：监听器默认的后端服务器组ID。当请求没有匹配的转发策略时，转发到默认后端服务器上处理。
 
         :return: The default_pool_id of this CreateListenerOption.
         :rtype: str
@@ -286,7 +286,7 @@ class CreateListenerOption:
     def default_pool_id(self, default_pool_id):
         """Sets the default_pool_id of this CreateListenerOption.
 
-        参数解释：监听器默认的后端云服务器组ID。当请求没有匹配的转发策略时，转发到默认后端云服务器上处理。
+        参数解释：监听器默认的后端服务器组ID。当请求没有匹配的转发策略时，转发到默认后端服务器上处理。
 
         :param default_pool_id: The default_pool_id of this CreateListenerOption.
         :type default_pool_id: str
@@ -773,7 +773,7 @@ class CreateListenerOption:
     def enhance_l7policy_enable(self):
         """Gets the enhance_l7policy_enable of this CreateListenerOption.
 
-        参数解释：是否开启高级转发策略功能。开启高级转发策略后，支持更灵活的转发策略和转发规则设置。  开启后支持如下场景： - 转发策略的action字段支持指定为REDIRECT_TO_URL, FIXED_RESPONSE，即支持URL重定向和响应固定的内容给客户端。 - 转发策略支持指定priority、redirect_url_config、fixed_response_config字段。 - 转发规则rule的type可以指定METHOD, HEADER, QUERY_STRING, SOURCE_IP这几种取值。 - 转发规则rule的type为HOST_NAME时，转发规则rule的value支持通配符*。 - 转发规则支持指定conditions字段。  取值范围：true开启，false不开启，默认false。  [荷兰region不支持该字段，请勿使用。](tag:dt,dt_test) > 开启后不支持关闭
+        参数解释：是否开启高级转发策略功能。开启高级转发策略后，支持更灵活的转发策略和转发规则设置。  开启后支持如下场景： - 转发策略的action字段支持指定为REDIRECT_TO_URL, FIXED_RESPONSE，即支持URL重定向和响应固定的内容给客户端。 - 转发策略支持指定priority、redirect_url_config、fixed_response_config字段。 - 转发规则rule的type可以指定METHOD, HEADER, QUERY_STRING, SOURCE_IP这几种取值。 - 转发规则rule的type为HOST_NAME时，转发规则rule的value支持通配符*。 - 转发规则支持指定conditions字段。  约束限制：开启后不支持关闭  取值范围：true开启，false不开启，默认false。  [荷兰region不支持该字段，请勿使用。](tag:dt,dt_test)
 
         :return: The enhance_l7policy_enable of this CreateListenerOption.
         :rtype: bool
@@ -784,7 +784,7 @@ class CreateListenerOption:
     def enhance_l7policy_enable(self, enhance_l7policy_enable):
         """Sets the enhance_l7policy_enable of this CreateListenerOption.
 
-        参数解释：是否开启高级转发策略功能。开启高级转发策略后，支持更灵活的转发策略和转发规则设置。  开启后支持如下场景： - 转发策略的action字段支持指定为REDIRECT_TO_URL, FIXED_RESPONSE，即支持URL重定向和响应固定的内容给客户端。 - 转发策略支持指定priority、redirect_url_config、fixed_response_config字段。 - 转发规则rule的type可以指定METHOD, HEADER, QUERY_STRING, SOURCE_IP这几种取值。 - 转发规则rule的type为HOST_NAME时，转发规则rule的value支持通配符*。 - 转发规则支持指定conditions字段。  取值范围：true开启，false不开启，默认false。  [荷兰region不支持该字段，请勿使用。](tag:dt,dt_test) > 开启后不支持关闭
+        参数解释：是否开启高级转发策略功能。开启高级转发策略后，支持更灵活的转发策略和转发规则设置。  开启后支持如下场景： - 转发策略的action字段支持指定为REDIRECT_TO_URL, FIXED_RESPONSE，即支持URL重定向和响应固定的内容给客户端。 - 转发策略支持指定priority、redirect_url_config、fixed_response_config字段。 - 转发规则rule的type可以指定METHOD, HEADER, QUERY_STRING, SOURCE_IP这几种取值。 - 转发规则rule的type为HOST_NAME时，转发规则rule的value支持通配符*。 - 转发规则支持指定conditions字段。  约束限制：开启后不支持关闭  取值范围：true开启，false不开启，默认false。  [荷兰region不支持该字段，请勿使用。](tag:dt,dt_test)
 
         :param enhance_l7policy_enable: The enhance_l7policy_enable of this CreateListenerOption.
         :type enhance_l7policy_enable: bool

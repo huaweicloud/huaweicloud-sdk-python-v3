@@ -39,13 +39,13 @@ class BatchUpdateMembersOption:
 
         :param id: 后端服务器ID。 &gt;此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
         :type id: str
-        :param admin_state_up: 后端云服务器的管理状态。取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。  请勿传入该字段。
+        :param admin_state_up: 后端服务器的管理状态。取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。  请勿传入该字段。
         :type admin_state_up: bool
         :param name: 后端服务器名称。
         :type name: str
         :param protocol_port: 后端服务器端口。  在开启端口透传的pool下的member，该字段无法更新。  [网关型LB，即pool协议为IP时，protocol_port必须设置为0。](tag:hws_eu)
         :type protocol_port: int
-        :param weight: 后端云服务器的权重，请求按权重在同一后端云服务器组下的后端云服务器间分发。权重为0的后端不再接受新的请求。当后端云服务器所在的后端云服务器组的lb_algorithm的取值为SOURCE_IP时，该字段无效。
+        :param weight: 后端服务器的权重，请求按权重在同一后端服务器组下的后端服务器间分发。权重为0的后端不再接受新的请求。当后端服务器所在的后端服务器组的lb_algorithm的取值为SOURCE_IP时，该字段无效。
         :type weight: int
         """
         
@@ -94,7 +94,7 @@ class BatchUpdateMembersOption:
     def admin_state_up(self):
         """Gets the admin_state_up of this BatchUpdateMembersOption.
 
-        后端云服务器的管理状态。取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。  请勿传入该字段。
+        后端服务器的管理状态。取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。  请勿传入该字段。
 
         :return: The admin_state_up of this BatchUpdateMembersOption.
         :rtype: bool
@@ -105,7 +105,7 @@ class BatchUpdateMembersOption:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this BatchUpdateMembersOption.
 
-        后端云服务器的管理状态。取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。  请勿传入该字段。
+        后端服务器的管理状态。取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。  请勿传入该字段。
 
         :param admin_state_up: The admin_state_up of this BatchUpdateMembersOption.
         :type admin_state_up: bool
@@ -160,7 +160,7 @@ class BatchUpdateMembersOption:
     def weight(self):
         """Gets the weight of this BatchUpdateMembersOption.
 
-        后端云服务器的权重，请求按权重在同一后端云服务器组下的后端云服务器间分发。权重为0的后端不再接受新的请求。当后端云服务器所在的后端云服务器组的lb_algorithm的取值为SOURCE_IP时，该字段无效。
+        后端服务器的权重，请求按权重在同一后端服务器组下的后端服务器间分发。权重为0的后端不再接受新的请求。当后端服务器所在的后端服务器组的lb_algorithm的取值为SOURCE_IP时，该字段无效。
 
         :return: The weight of this BatchUpdateMembersOption.
         :rtype: int
@@ -171,7 +171,7 @@ class BatchUpdateMembersOption:
     def weight(self, weight):
         """Sets the weight of this BatchUpdateMembersOption.
 
-        后端云服务器的权重，请求按权重在同一后端云服务器组下的后端云服务器间分发。权重为0的后端不再接受新的请求。当后端云服务器所在的后端云服务器组的lb_algorithm的取值为SOURCE_IP时，该字段无效。
+        后端服务器的权重，请求按权重在同一后端服务器组下的后端服务器间分发。权重为0的后端不再接受新的请求。当后端服务器所在的后端服务器组的lb_algorithm的取值为SOURCE_IP时，该字段无效。
 
         :param weight: The weight of this BatchUpdateMembersOption.
         :type weight: int

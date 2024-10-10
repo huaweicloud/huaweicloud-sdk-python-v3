@@ -55,6 +55,7 @@ from huaweicloudsdkdgc.v1.model.job import Job
 from huaweicloudsdkdgc.v1.model.job_alarm import JobAlarm
 from huaweicloudsdkdgc.v1.model.job_approver import JobApprover
 from huaweicloudsdkdgc.v1.model.job_info import JobInfo
+from huaweicloudsdkdgc.v1.model.job_information import JobInformation
 from huaweicloudsdkdgc.v1.model.job_instance import JobInstance
 from huaweicloudsdkdgc.v1.model.job_param import JobParam
 from huaweicloudsdkdgc.v1.model.job_resource_info import JobResourceInfo

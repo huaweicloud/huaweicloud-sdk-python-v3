@@ -103,7 +103,7 @@ class ListListenersRequest:
         :type admin_state_up: bool
         :param connection_limit: ​监听器的最大连接数。  取值：-1表示不限制连接数。  支持多值查询，查询条件格式：*connection_limit&#x3D;xxx&amp;connection_limit&#x3D;xxx*。  不支持该字段，请勿使用。
         :type connection_limit: list[int]
-        :param default_pool_id: 监听器的默认后端云服务器组ID。当请求没有匹配的转发策略时，转发到默认后端云服务器上处理。  支持多值查询，查询条件格式：*default_pool_id&#x3D;xxx&amp;default_pool_id&#x3D;xxx*。
+        :param default_pool_id: 监听器的默认后端服务器组ID。当请求没有匹配的转发策略时，转发到默认后端服务器上处理。  支持多值查询，查询条件格式：*default_pool_id&#x3D;xxx&amp;default_pool_id&#x3D;xxx*。
         :type default_pool_id: list[str]
         :param id: 监听器ID。  支持多值查询，查询条件格式：*id&#x3D;xxx&amp;id&#x3D;xxx*。
         :type id: list[str]
@@ -115,9 +115,9 @@ class ListListenersRequest:
         :type loadbalancer_id: list[str]
         :param tls_ciphers_policy: 监听器使用的安全策略。  支持多值查询，查询条件格式：*tls_ciphers_policy&#x3D;xxx&amp;tls_ciphers_policy&#x3D;xxx*。
         :type tls_ciphers_policy: list[str]
-        :param member_address: 后端云服务器的IP地址。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_address&#x3D;xxx&amp;member_address&#x3D;xxx*。
+        :param member_address: 后端服务器的IP地址。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_address&#x3D;xxx&amp;member_address&#x3D;xxx*。
         :type member_address: list[str]
-        :param member_device_id: 后端云服务器对应的弹性云服务器的ID。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_device_id&#x3D;xxx&amp;member_device_id&#x3D;xxx*。
+        :param member_device_id: 后端服务器对应的弹性云服务器的ID。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_device_id&#x3D;xxx&amp;member_device_id&#x3D;xxx*。
         :type member_device_id: list[str]
         :param enterprise_project_id: 企业项目ID。不传时查询default企业项目\&quot;0\&quot;下的资源，鉴权按照default企业项目鉴权； 如果传值，则传已存在的企业项目ID或all_granted_eps（表示查询所有企业项目）进行查询。  支持多值查询，查询条件格式：*enterprise_project_id&#x3D;xxx&amp;enterprise_project_id&#x3D;xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
         :type enterprise_project_id: list[str]
@@ -135,7 +135,7 @@ class ListListenersRequest:
         :type proxy_protocol_enable: bool
         :param enhance_l7policy_enable: 是否开启高级转发策略功能。开启高级转发策略后，支持更灵活的转发策略和转发规则设置。  取值：true开启，false不开启。  [荷兰region不支持该字段，请勿使用。](tag:dt,dt_test)
         :type enhance_l7policy_enable: bool
-        :param member_instance_id: 后端云服务器ID。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_instance_id&#x3D;xxx&amp;member_instance_id&#x3D;xxx*。
+        :param member_instance_id: 后端服务器ID。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_instance_id&#x3D;xxx&amp;member_instance_id&#x3D;xxx*。
         :type member_instance_id: list[str]
         :param protection_status: 修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
         :type protection_status: list[str]
@@ -454,7 +454,7 @@ class ListListenersRequest:
     def default_pool_id(self):
         """Gets the default_pool_id of this ListListenersRequest.
 
-        监听器的默认后端云服务器组ID。当请求没有匹配的转发策略时，转发到默认后端云服务器上处理。  支持多值查询，查询条件格式：*default_pool_id=xxx&default_pool_id=xxx*。
+        监听器的默认后端服务器组ID。当请求没有匹配的转发策略时，转发到默认后端服务器上处理。  支持多值查询，查询条件格式：*default_pool_id=xxx&default_pool_id=xxx*。
 
         :return: The default_pool_id of this ListListenersRequest.
         :rtype: list[str]
@@ -465,7 +465,7 @@ class ListListenersRequest:
     def default_pool_id(self, default_pool_id):
         """Sets the default_pool_id of this ListListenersRequest.
 
-        监听器的默认后端云服务器组ID。当请求没有匹配的转发策略时，转发到默认后端云服务器上处理。  支持多值查询，查询条件格式：*default_pool_id=xxx&default_pool_id=xxx*。
+        监听器的默认后端服务器组ID。当请求没有匹配的转发策略时，转发到默认后端服务器上处理。  支持多值查询，查询条件格式：*default_pool_id=xxx&default_pool_id=xxx*。
 
         :param default_pool_id: The default_pool_id of this ListListenersRequest.
         :type default_pool_id: list[str]
@@ -586,7 +586,7 @@ class ListListenersRequest:
     def member_address(self):
         """Gets the member_address of this ListListenersRequest.
 
-        后端云服务器的IP地址。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_address=xxx&member_address=xxx*。
+        后端服务器的IP地址。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_address=xxx&member_address=xxx*。
 
         :return: The member_address of this ListListenersRequest.
         :rtype: list[str]
@@ -597,7 +597,7 @@ class ListListenersRequest:
     def member_address(self, member_address):
         """Sets the member_address of this ListListenersRequest.
 
-        后端云服务器的IP地址。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_address=xxx&member_address=xxx*。
+        后端服务器的IP地址。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_address=xxx&member_address=xxx*。
 
         :param member_address: The member_address of this ListListenersRequest.
         :type member_address: list[str]
@@ -608,7 +608,7 @@ class ListListenersRequest:
     def member_device_id(self):
         """Gets the member_device_id of this ListListenersRequest.
 
-        后端云服务器对应的弹性云服务器的ID。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_device_id=xxx&member_device_id=xxx*。
+        后端服务器对应的弹性云服务器的ID。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_device_id=xxx&member_device_id=xxx*。
 
         :return: The member_device_id of this ListListenersRequest.
         :rtype: list[str]
@@ -619,7 +619,7 @@ class ListListenersRequest:
     def member_device_id(self, member_device_id):
         """Sets the member_device_id of this ListListenersRequest.
 
-        后端云服务器对应的弹性云服务器的ID。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_device_id=xxx&member_device_id=xxx*。
+        后端服务器对应的弹性云服务器的ID。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_device_id=xxx&member_device_id=xxx*。
 
         :param member_device_id: The member_device_id of this ListListenersRequest.
         :type member_device_id: list[str]
@@ -806,7 +806,7 @@ class ListListenersRequest:
     def member_instance_id(self):
         """Gets the member_instance_id of this ListListenersRequest.
 
-        后端云服务器ID。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_instance_id=xxx&member_instance_id=xxx*。
+        后端服务器ID。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_instance_id=xxx&member_instance_id=xxx*。
 
         :return: The member_instance_id of this ListListenersRequest.
         :rtype: list[str]
@@ -817,7 +817,7 @@ class ListListenersRequest:
     def member_instance_id(self, member_instance_id):
         """Sets the member_instance_id of this ListListenersRequest.
 
-        后端云服务器ID。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_instance_id=xxx&member_instance_id=xxx*。
+        后端服务器ID。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_instance_id=xxx&member_instance_id=xxx*。
 
         :param member_instance_id: The member_instance_id of this ListListenersRequest.
         :type member_instance_id: list[str]

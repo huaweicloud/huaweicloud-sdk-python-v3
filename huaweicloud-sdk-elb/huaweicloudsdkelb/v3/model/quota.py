@@ -71,11 +71,11 @@ class Quota:
         :type l7policy: int
         :param condition_per_policy: 单个转发策略下所有转发规则的condition总数配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
         :type condition_per_policy: int
-        :param pool: 后端云服务器组配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        :param pool: 后端服务器组配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
         :type pool: int
         :param healthmonitor: 健康检查配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
         :type healthmonitor: int
-        :param member: 后端云服务器配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        :param member: 后端服务器配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
         :type member: int
         :param members_per_pool: 单个pool下的member的配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
         :type members_per_pool: int
@@ -266,7 +266,7 @@ class Quota:
     def pool(self):
         """Gets the pool of this Quota.
 
-        后端云服务器组配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        后端服务器组配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
         :return: The pool of this Quota.
         :rtype: int
@@ -277,7 +277,7 @@ class Quota:
     def pool(self, pool):
         """Sets the pool of this Quota.
 
-        后端云服务器组配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        后端服务器组配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
         :param pool: The pool of this Quota.
         :type pool: int
@@ -310,7 +310,7 @@ class Quota:
     def member(self):
         """Gets the member of this Quota.
 
-        后端云服务器配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        后端服务器配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
         :return: The member of this Quota.
         :rtype: int
@@ -321,7 +321,7 @@ class Quota:
     def member(self, member):
         """Sets the member of this Quota.
 
-        后端云服务器配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        后端服务器配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
         :param member: The member of this Quota.
         :type member: int

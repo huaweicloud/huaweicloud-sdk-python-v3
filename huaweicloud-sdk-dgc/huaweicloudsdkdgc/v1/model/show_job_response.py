@@ -23,6 +23,7 @@ class ShowJobResponse(SdkResponse):
         'schedule': 'Schedule',
         'params': 'list[JobParam]',
         'directory': 'str',
+        'downstream_jobs': 'list[JobInformation]',
         'process_type': 'str',
         'id': 'int',
         'create_time': 'int',
@@ -44,6 +45,7 @@ class ShowJobResponse(SdkResponse):
         'schedule': 'schedule',
         'params': 'params',
         'directory': 'directory',
+        'downstream_jobs': 'downstreamJobs',
         'process_type': 'processType',
         'id': 'id',
         'create_time': 'createTime',
@@ -59,7 +61,7 @@ class ShowJobResponse(SdkResponse):
         'version': 'version'
     }
 
-    def __init__(self, name=None, nodes=None, schedule=None, params=None, directory=None, process_type=None, id=None, create_time=None, single_node_job_flag=None, single_node_job_type=None, last_update_user=None, log_path=None, basic_config=None, description=None, clean_overdue_days=None, clean_waiting_job=None, empty_running_job=None, version=None):
+    def __init__(self, name=None, nodes=None, schedule=None, params=None, directory=None, downstream_jobs=None, process_type=None, id=None, create_time=None, single_node_job_flag=None, single_node_job_type=None, last_update_user=None, log_path=None, basic_config=None, description=None, clean_overdue_days=None, clean_waiting_job=None, empty_running_job=None, version=None):
         """ShowJobResponse
 
         The model defined in huaweicloud sdk
@@ -74,6 +76,8 @@ class ShowJobResponse(SdkResponse):
         :type params: list[:class:`huaweicloudsdkdgc.v1.JobParam`]
         :param directory: 作业在目录树上的路径。创建作业时如果路径目录不存在，会自动创建目录，如/dir/a/，默认在根目录/。
         :type directory: str
+        :param downstream_jobs: 下游作业信息
+        :type downstream_jobs: list[:class:`huaweicloudsdkdgc.v1.JobInformation`]
         :param process_type: 作业类型，REAL_TIME： 实时处理，BATCH：批处理
         :type process_type: str
         :param id: 作业Id, 用户查询作业时使用。
@@ -109,6 +113,7 @@ class ShowJobResponse(SdkResponse):
         self._schedule = None
         self._params = None
         self._directory = None
+        self._downstream_jobs = None
         self._process_type = None
         self._id = None
         self._create_time = None
@@ -134,6 +139,8 @@ class ShowJobResponse(SdkResponse):
             self.params = params
         if directory is not None:
             self.directory = directory
+        if downstream_jobs is not None:
+            self.downstream_jobs = downstream_jobs
         if process_type is not None:
             self.process_type = process_type
         if id is not None:
@@ -266,6 +273,28 @@ class ShowJobResponse(SdkResponse):
         :type directory: str
         """
         self._directory = directory
+
+    @property
+    def downstream_jobs(self):
+        """Gets the downstream_jobs of this ShowJobResponse.
+
+        下游作业信息
+
+        :return: The downstream_jobs of this ShowJobResponse.
+        :rtype: list[:class:`huaweicloudsdkdgc.v1.JobInformation`]
+        """
+        return self._downstream_jobs
+
+    @downstream_jobs.setter
+    def downstream_jobs(self, downstream_jobs):
+        """Sets the downstream_jobs of this ShowJobResponse.
+
+        下游作业信息
+
+        :param downstream_jobs: The downstream_jobs of this ShowJobResponse.
+        :type downstream_jobs: list[:class:`huaweicloudsdkdgc.v1.JobInformation`]
+        """
+        self._downstream_jobs = downstream_jobs
 
     @property
     def process_type(self):
