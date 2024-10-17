@@ -33,7 +33,8 @@ class SimPoolVO:
         'activated_sim_quantity': 'int',
         'inactive_sim_quantity': 'int',
         'disassembled_sim_quantity': 'int',
-        'order_ids': 'str'
+        'order_ids': 'str',
+        'status': 'int'
     }
 
     attribute_map = {
@@ -53,10 +54,11 @@ class SimPoolVO:
         'activated_sim_quantity': 'activated_sim_quantity',
         'inactive_sim_quantity': 'inactive_sim_quantity',
         'disassembled_sim_quantity': 'disassembled_sim_quantity',
-        'order_ids': 'order_ids'
+        'order_ids': 'order_ids',
+        'status': 'status'
     }
 
-    def __init__(self, id=None, pool_name=None, price_plan_name=None, price_plan_id=None, effective_time=None, expired_time=None, billing_cycle=None, flow_total=None, flow_used=None, flow_left=None, quantity=None, modify_time=None, order_id=None, activated_sim_quantity=None, inactive_sim_quantity=None, disassembled_sim_quantity=None, order_ids=None):
+    def __init__(self, id=None, pool_name=None, price_plan_name=None, price_plan_id=None, effective_time=None, expired_time=None, billing_cycle=None, flow_total=None, flow_used=None, flow_left=None, quantity=None, modify_time=None, order_id=None, activated_sim_quantity=None, inactive_sim_quantity=None, disassembled_sim_quantity=None, order_ids=None, status=None):
         """SimPoolVO
 
         The model defined in huaweicloud sdk
@@ -95,6 +97,8 @@ class SimPoolVO:
         :type disassembled_sim_quantity: int
         :param order_ids: 组成流量池的批次号列表
         :type order_ids: str
+        :param status: 流量池状态，0：废弃，1：在用
+        :type status: int
         """
         
         
@@ -116,6 +120,7 @@ class SimPoolVO:
         self._inactive_sim_quantity = None
         self._disassembled_sim_quantity = None
         self._order_ids = None
+        self._status = None
         self.discriminator = None
 
         if id is not None:
@@ -152,6 +157,8 @@ class SimPoolVO:
             self.disassembled_sim_quantity = disassembled_sim_quantity
         if order_ids is not None:
             self.order_ids = order_ids
+        if status is not None:
+            self.status = status
 
     @property
     def id(self):
@@ -526,6 +533,28 @@ class SimPoolVO:
         :type order_ids: str
         """
         self._order_ids = order_ids
+
+    @property
+    def status(self):
+        """Gets the status of this SimPoolVO.
+
+        流量池状态，0：废弃，1：在用
+
+        :return: The status of this SimPoolVO.
+        :rtype: int
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this SimPoolVO.
+
+        流量池状态，0：废弃，1：在用
+
+        :param status: The status of this SimPoolVO.
+        :type status: int
+        """
+        self._status = status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

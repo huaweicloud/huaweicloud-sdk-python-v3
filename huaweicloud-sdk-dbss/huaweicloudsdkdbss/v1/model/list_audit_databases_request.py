@@ -35,13 +35,13 @@ class ListAuditDatabasesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例ID
+        :param instance_id: 实例ID。可在查询实例列表接口的ID字段获取。
         :type instance_id: str
-        :param status: 实例状态 ON ：开启 OFF ： 关闭
+        :param status: 实例状态 - ON :开启 - OFF : 关闭
         :type status: str
-        :param offset: 偏移量
+        :param offset: 偏移量，从第一条数据偏移offset条数据后开始查询，默认为0。
         :type offset: str
-        :param limit: 查询记录数
+        :param limit: 查询记录数，默认为100。
         :type limit: str
         """
         
@@ -65,7 +65,7 @@ class ListAuditDatabasesRequest:
     def instance_id(self):
         """Gets the instance_id of this ListAuditDatabasesRequest.
 
-        实例ID
+        实例ID。可在查询实例列表接口的ID字段获取。
 
         :return: The instance_id of this ListAuditDatabasesRequest.
         :rtype: str
@@ -76,7 +76,7 @@ class ListAuditDatabasesRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListAuditDatabasesRequest.
 
-        实例ID
+        实例ID。可在查询实例列表接口的ID字段获取。
 
         :param instance_id: The instance_id of this ListAuditDatabasesRequest.
         :type instance_id: str
@@ -87,7 +87,7 @@ class ListAuditDatabasesRequest:
     def status(self):
         """Gets the status of this ListAuditDatabasesRequest.
 
-        实例状态 ON ：开启 OFF ： 关闭
+        实例状态 - ON :开启 - OFF : 关闭
 
         :return: The status of this ListAuditDatabasesRequest.
         :rtype: str
@@ -98,7 +98,7 @@ class ListAuditDatabasesRequest:
     def status(self, status):
         """Sets the status of this ListAuditDatabasesRequest.
 
-        实例状态 ON ：开启 OFF ： 关闭
+        实例状态 - ON :开启 - OFF : 关闭
 
         :param status: The status of this ListAuditDatabasesRequest.
         :type status: str
@@ -109,7 +109,7 @@ class ListAuditDatabasesRequest:
     def offset(self):
         """Gets the offset of this ListAuditDatabasesRequest.
 
-        偏移量
+        偏移量，从第一条数据偏移offset条数据后开始查询，默认为0。
 
         :return: The offset of this ListAuditDatabasesRequest.
         :rtype: str
@@ -120,7 +120,7 @@ class ListAuditDatabasesRequest:
     def offset(self, offset):
         """Sets the offset of this ListAuditDatabasesRequest.
 
-        偏移量
+        偏移量，从第一条数据偏移offset条数据后开始查询，默认为0。
 
         :param offset: The offset of this ListAuditDatabasesRequest.
         :type offset: str
@@ -131,7 +131,7 @@ class ListAuditDatabasesRequest:
     def limit(self):
         """Gets the limit of this ListAuditDatabasesRequest.
 
-        查询记录数
+        查询记录数，默认为100。
 
         :return: The limit of this ListAuditDatabasesRequest.
         :rtype: str
@@ -142,7 +142,7 @@ class ListAuditDatabasesRequest:
     def limit(self, limit):
         """Sets the limit of this ListAuditDatabasesRequest.
 
-        查询记录数
+        查询记录数，默认为100。
 
         :param limit: The limit of this ListAuditDatabasesRequest.
         :type limit: str

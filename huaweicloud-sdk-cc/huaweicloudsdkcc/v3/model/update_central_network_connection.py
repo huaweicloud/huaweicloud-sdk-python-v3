@@ -37,7 +37,7 @@ class UpdateCentralNetworkConnection:
         :type bandwidth_type: :class:`huaweicloudsdkcc.v3.BandwidthTypeEnum`
         :param global_connection_bandwidth_id: 全域互联带宽ID。
         :type global_connection_bandwidth_id: str
-        :param bandwidth_size: 带宽值定义，单位Mbps。
+        :param bandwidth_size: 带宽值，单位Mbps。
         :type bandwidth_size: int
         """
         
@@ -98,7 +98,7 @@ class UpdateCentralNetworkConnection:
     def bandwidth_size(self):
         """Gets the bandwidth_size of this UpdateCentralNetworkConnection.
 
-        带宽值定义，单位Mbps。
+        带宽值，单位Mbps。
 
         :return: The bandwidth_size of this UpdateCentralNetworkConnection.
         :rtype: int
@@ -109,7 +109,7 @@ class UpdateCentralNetworkConnection:
     def bandwidth_size(self, bandwidth_size):
         """Sets the bandwidth_size of this UpdateCentralNetworkConnection.
 
-        带宽值定义，单位Mbps。
+        带宽值，单位Mbps。
 
         :param bandwidth_size: The bandwidth_size of this UpdateCentralNetworkConnection.
         :type bandwidth_size: int

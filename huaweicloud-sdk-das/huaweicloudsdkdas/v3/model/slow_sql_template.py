@@ -19,6 +19,7 @@ class SlowSqlTemplate:
     openapi_types = {
         'sql_template': 'str',
         'sql_sample': 'str',
+        'sql_sample_user': 'str',
         'db_names': 'list[str]',
         'execute_count': 'int',
         'avg_execute_time': 'float',
@@ -34,6 +35,7 @@ class SlowSqlTemplate:
     attribute_map = {
         'sql_template': 'sql_template',
         'sql_sample': 'sql_sample',
+        'sql_sample_user': 'sql_sample_user',
         'db_names': 'db_names',
         'execute_count': 'execute_count',
         'avg_execute_time': 'avg_execute_time',
@@ -46,7 +48,7 @@ class SlowSqlTemplate:
         'max_rows_sent': 'max_rows_sent'
     }
 
-    def __init__(self, sql_template=None, sql_sample=None, db_names=None, execute_count=None, avg_execute_time=None, max_execute_time=None, avg_lock_wait_time=None, max_lock_wait_time=None, avg_rows_examined=None, max_rows_examined=None, avg_rows_sent=None, max_rows_sent=None):
+    def __init__(self, sql_template=None, sql_sample=None, sql_sample_user=None, db_names=None, execute_count=None, avg_execute_time=None, max_execute_time=None, avg_lock_wait_time=None, max_lock_wait_time=None, avg_rows_examined=None, max_rows_examined=None, avg_rows_sent=None, max_rows_sent=None):
         """SlowSqlTemplate
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class SlowSqlTemplate:
         :type sql_template: str
         :param sql_sample: SQL样本。
         :type sql_sample: str
+        :param sql_sample_user: SQL样本执行用户。
+        :type sql_sample_user: str
         :param db_names: 库名。
         :type db_names: list[str]
         :param execute_count: 执行次数。
@@ -81,6 +85,7 @@ class SlowSqlTemplate:
 
         self._sql_template = None
         self._sql_sample = None
+        self._sql_sample_user = None
         self._db_names = None
         self._execute_count = None
         self._avg_execute_time = None
@@ -96,6 +101,8 @@ class SlowSqlTemplate:
         self.sql_template = sql_template
         if sql_sample is not None:
             self.sql_sample = sql_sample
+        if sql_sample_user is not None:
+            self.sql_sample_user = sql_sample_user
         self.db_names = db_names
         self.execute_count = execute_count
         self.avg_execute_time = avg_execute_time
@@ -150,6 +157,28 @@ class SlowSqlTemplate:
         :type sql_sample: str
         """
         self._sql_sample = sql_sample
+
+    @property
+    def sql_sample_user(self):
+        """Gets the sql_sample_user of this SlowSqlTemplate.
+
+        SQL样本执行用户。
+
+        :return: The sql_sample_user of this SlowSqlTemplate.
+        :rtype: str
+        """
+        return self._sql_sample_user
+
+    @sql_sample_user.setter
+    def sql_sample_user(self, sql_sample_user):
+        """Sets the sql_sample_user of this SlowSqlTemplate.
+
+        SQL样本执行用户。
+
+        :param sql_sample_user: The sql_sample_user of this SlowSqlTemplate.
+        :type sql_sample_user: str
+        """
+        self._sql_sample_user = sql_sample_user
 
     @property
     def db_names(self):

@@ -33,9 +33,9 @@ class BatchAddResourceTagRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: 资源类型。审计：auditInstance
+        :param resource_type: 资源类型。 - auditInstance
         :type resource_type: str
-        :param resource_id: 资源ID
+        :param resource_id: 资源ID。可在查询实例列表接口的resource_id字段获取。
         :type resource_id: str
         :param body: Body of the BatchAddResourceTagRequest
         :type body: :class:`huaweicloudsdkdbss.v1.ResourceTagRequest`
@@ -57,7 +57,7 @@ class BatchAddResourceTagRequest:
     def resource_type(self):
         """Gets the resource_type of this BatchAddResourceTagRequest.
 
-        资源类型。审计：auditInstance
+        资源类型。 - auditInstance
 
         :return: The resource_type of this BatchAddResourceTagRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class BatchAddResourceTagRequest:
     def resource_type(self, resource_type):
         """Sets the resource_type of this BatchAddResourceTagRequest.
 
-        资源类型。审计：auditInstance
+        资源类型。 - auditInstance
 
         :param resource_type: The resource_type of this BatchAddResourceTagRequest.
         :type resource_type: str
@@ -79,7 +79,7 @@ class BatchAddResourceTagRequest:
     def resource_id(self):
         """Gets the resource_id of this BatchAddResourceTagRequest.
 
-        资源ID
+        资源ID。可在查询实例列表接口的resource_id字段获取。
 
         :return: The resource_id of this BatchAddResourceTagRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class BatchAddResourceTagRequest:
     def resource_id(self, resource_id):
         """Sets the resource_id of this BatchAddResourceTagRequest.
 
-        资源ID
+        资源ID。可在查询实例列表接口的resource_id字段获取。
 
         :param resource_id: The resource_id of this BatchAddResourceTagRequest.
         :type resource_id: str

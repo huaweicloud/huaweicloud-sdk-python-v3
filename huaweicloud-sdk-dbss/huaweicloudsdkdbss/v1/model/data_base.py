@@ -29,7 +29,12 @@ class DataBase:
         'instance_name': 'str',
         'audit_status': 'str',
         'agent_url': 'list[str]',
-        'db_classification': 'str'
+        'db_classification': 'str',
+        'rds_audit_switch_mismatch': 'bool',
+        'rds_id': 'str',
+        'rds_obj_info': 'str',
+        'dws_obj_info': 'str',
+        'clouddb_obj_info': 'str'
     }
 
     attribute_map = {
@@ -45,10 +50,15 @@ class DataBase:
         'instance_name': 'instance_name',
         'audit_status': 'audit_status',
         'agent_url': 'agent_url',
-        'db_classification': 'db_classification'
+        'db_classification': 'db_classification',
+        'rds_audit_switch_mismatch': 'rds_audit_switch_mismatch',
+        'rds_id': 'rds_id',
+        'rds_obj_info': 'rds_obj_info',
+        'dws_obj_info': 'dws_obj_info',
+        'clouddb_obj_info': 'clouddb_obj_info'
     }
 
-    def __init__(self, id=None, name=None, type=None, version=None, charset=None, ip=None, port=None, os=None, status=None, instance_name=None, audit_status=None, agent_url=None, db_classification=None):
+    def __init__(self, id=None, name=None, type=None, version=None, charset=None, ip=None, port=None, os=None, status=None, instance_name=None, audit_status=None, agent_url=None, db_classification=None, rds_audit_switch_mismatch=None, rds_id=None, rds_obj_info=None, dws_obj_info=None, clouddb_obj_info=None):
         """DataBase
 
         The model defined in huaweicloud sdk
@@ -57,11 +67,11 @@ class DataBase:
         :type id: str
         :param name: 数据库名称
         :type name: str
-        :param type: 添加的数据库类型： 枚举值：  MYSQL  ORACLE  POSTGRESQL  SQLSERVER  DAMENG  TAURUS  DWS  KINGBASE  GAUSSDBOPENGAUSS   GREENPLUM   HIGHGO   SHENTONG   GBASE8A   GBASE8S   GBASEXDM   MONGODB   DDS
+        :param type: 添加的数据库类型： - MYSQL - ORACLE - POSTGRESQL - SQLSERVER - DAMENG - TAURUS - DWS - KINGBASE - GAUSSDBOPENGAUSS - GREENPLUM - HIGHGO - SHENTONG - GBASE8A - GBASE8S - GBASEXDM - MONGODB - DDS
         :type type: str
         :param version: 数据库版本
         :type version: str
-        :param charset: 数据库字符集
+        :param charset: 数据库字符集 - GBK - UTF8
         :type charset: str
         :param ip: 数据库IP
         :type ip: str
@@ -69,16 +79,26 @@ class DataBase:
         :type port: str
         :param os: 数据库操作系统
         :type os: str
-        :param status: 开启状态（1：开启，0：关闭）
+        :param status: 实例状态 - ON :开启 - OFF : 关闭
         :type status: str
         :param instance_name: 数据库实例名
         :type instance_name: str
-        :param audit_status: 数据库的运行状态 枚举值：  ACTIVE  SHUTOFF  ERROR
+        :param audit_status: 数据库的运行状态 - ACTIVE - SHUTOFF - ERROR
         :type audit_status: str
         :param agent_url: agent的唯一ID
         :type agent_url: list[str]
-        :param db_classification: 数据库分类，取值范围： RDS（表示RDS数据库）和 ECS（自建数据库）
+        :param db_classification: 数据库分类 - RDS: 表示RDS数据库 - ECS:自建数据库
         :type db_classification: str
+        :param rds_audit_switch_mismatch: rds实例审计开关状态不匹配。当数据库审计开启且rds侧日志上传开关关闭时该字段为true。
+        :type rds_audit_switch_mismatch: bool
+        :param rds_id: RDS数据库的ID。
+        :type rds_id: str
+        :param rds_obj_info: RDS数据库信息。
+        :type rds_obj_info: str
+        :param dws_obj_info: DWS数据库信息。
+        :type dws_obj_info: str
+        :param clouddb_obj_info: 云数据库信息，该字段已废弃。
+        :type clouddb_obj_info: str
         """
         
         
@@ -96,6 +116,11 @@ class DataBase:
         self._audit_status = None
         self._agent_url = None
         self._db_classification = None
+        self._rds_audit_switch_mismatch = None
+        self._rds_id = None
+        self._rds_obj_info = None
+        self._dws_obj_info = None
+        self._clouddb_obj_info = None
         self.discriminator = None
 
         if id is not None:
@@ -107,14 +132,23 @@ class DataBase:
         self.ip = ip
         self.port = port
         self.os = os
-        if status is not None:
-            self.status = status
+        self.status = status
         self.instance_name = instance_name
         if audit_status is not None:
             self.audit_status = audit_status
         if agent_url is not None:
             self.agent_url = agent_url
         self.db_classification = db_classification
+        if rds_audit_switch_mismatch is not None:
+            self.rds_audit_switch_mismatch = rds_audit_switch_mismatch
+        if rds_id is not None:
+            self.rds_id = rds_id
+        if rds_obj_info is not None:
+            self.rds_obj_info = rds_obj_info
+        if dws_obj_info is not None:
+            self.dws_obj_info = dws_obj_info
+        if clouddb_obj_info is not None:
+            self.clouddb_obj_info = clouddb_obj_info
 
     @property
     def id(self):
@@ -164,7 +198,7 @@ class DataBase:
     def type(self):
         """Gets the type of this DataBase.
 
-        添加的数据库类型： 枚举值：  MYSQL  ORACLE  POSTGRESQL  SQLSERVER  DAMENG  TAURUS  DWS  KINGBASE  GAUSSDBOPENGAUSS   GREENPLUM   HIGHGO   SHENTONG   GBASE8A   GBASE8S   GBASEXDM   MONGODB   DDS
+        添加的数据库类型： - MYSQL - ORACLE - POSTGRESQL - SQLSERVER - DAMENG - TAURUS - DWS - KINGBASE - GAUSSDBOPENGAUSS - GREENPLUM - HIGHGO - SHENTONG - GBASE8A - GBASE8S - GBASEXDM - MONGODB - DDS
 
         :return: The type of this DataBase.
         :rtype: str
@@ -175,7 +209,7 @@ class DataBase:
     def type(self, type):
         """Sets the type of this DataBase.
 
-        添加的数据库类型： 枚举值：  MYSQL  ORACLE  POSTGRESQL  SQLSERVER  DAMENG  TAURUS  DWS  KINGBASE  GAUSSDBOPENGAUSS   GREENPLUM   HIGHGO   SHENTONG   GBASE8A   GBASE8S   GBASEXDM   MONGODB   DDS
+        添加的数据库类型： - MYSQL - ORACLE - POSTGRESQL - SQLSERVER - DAMENG - TAURUS - DWS - KINGBASE - GAUSSDBOPENGAUSS - GREENPLUM - HIGHGO - SHENTONG - GBASE8A - GBASE8S - GBASEXDM - MONGODB - DDS
 
         :param type: The type of this DataBase.
         :type type: str
@@ -208,7 +242,7 @@ class DataBase:
     def charset(self):
         """Gets the charset of this DataBase.
 
-        数据库字符集
+        数据库字符集 - GBK - UTF8
 
         :return: The charset of this DataBase.
         :rtype: str
@@ -219,7 +253,7 @@ class DataBase:
     def charset(self, charset):
         """Sets the charset of this DataBase.
 
-        数据库字符集
+        数据库字符集 - GBK - UTF8
 
         :param charset: The charset of this DataBase.
         :type charset: str
@@ -296,7 +330,7 @@ class DataBase:
     def status(self):
         """Gets the status of this DataBase.
 
-        开启状态（1：开启，0：关闭）
+        实例状态 - ON :开启 - OFF : 关闭
 
         :return: The status of this DataBase.
         :rtype: str
@@ -307,7 +341,7 @@ class DataBase:
     def status(self, status):
         """Sets the status of this DataBase.
 
-        开启状态（1：开启，0：关闭）
+        实例状态 - ON :开启 - OFF : 关闭
 
         :param status: The status of this DataBase.
         :type status: str
@@ -340,7 +374,7 @@ class DataBase:
     def audit_status(self):
         """Gets the audit_status of this DataBase.
 
-        数据库的运行状态 枚举值：  ACTIVE  SHUTOFF  ERROR
+        数据库的运行状态 - ACTIVE - SHUTOFF - ERROR
 
         :return: The audit_status of this DataBase.
         :rtype: str
@@ -351,7 +385,7 @@ class DataBase:
     def audit_status(self, audit_status):
         """Sets the audit_status of this DataBase.
 
-        数据库的运行状态 枚举值：  ACTIVE  SHUTOFF  ERROR
+        数据库的运行状态 - ACTIVE - SHUTOFF - ERROR
 
         :param audit_status: The audit_status of this DataBase.
         :type audit_status: str
@@ -384,7 +418,7 @@ class DataBase:
     def db_classification(self):
         """Gets the db_classification of this DataBase.
 
-        数据库分类，取值范围： RDS（表示RDS数据库）和 ECS（自建数据库）
+        数据库分类 - RDS: 表示RDS数据库 - ECS:自建数据库
 
         :return: The db_classification of this DataBase.
         :rtype: str
@@ -395,12 +429,122 @@ class DataBase:
     def db_classification(self, db_classification):
         """Sets the db_classification of this DataBase.
 
-        数据库分类，取值范围： RDS（表示RDS数据库）和 ECS（自建数据库）
+        数据库分类 - RDS: 表示RDS数据库 - ECS:自建数据库
 
         :param db_classification: The db_classification of this DataBase.
         :type db_classification: str
         """
         self._db_classification = db_classification
+
+    @property
+    def rds_audit_switch_mismatch(self):
+        """Gets the rds_audit_switch_mismatch of this DataBase.
+
+        rds实例审计开关状态不匹配。当数据库审计开启且rds侧日志上传开关关闭时该字段为true。
+
+        :return: The rds_audit_switch_mismatch of this DataBase.
+        :rtype: bool
+        """
+        return self._rds_audit_switch_mismatch
+
+    @rds_audit_switch_mismatch.setter
+    def rds_audit_switch_mismatch(self, rds_audit_switch_mismatch):
+        """Sets the rds_audit_switch_mismatch of this DataBase.
+
+        rds实例审计开关状态不匹配。当数据库审计开启且rds侧日志上传开关关闭时该字段为true。
+
+        :param rds_audit_switch_mismatch: The rds_audit_switch_mismatch of this DataBase.
+        :type rds_audit_switch_mismatch: bool
+        """
+        self._rds_audit_switch_mismatch = rds_audit_switch_mismatch
+
+    @property
+    def rds_id(self):
+        """Gets the rds_id of this DataBase.
+
+        RDS数据库的ID。
+
+        :return: The rds_id of this DataBase.
+        :rtype: str
+        """
+        return self._rds_id
+
+    @rds_id.setter
+    def rds_id(self, rds_id):
+        """Sets the rds_id of this DataBase.
+
+        RDS数据库的ID。
+
+        :param rds_id: The rds_id of this DataBase.
+        :type rds_id: str
+        """
+        self._rds_id = rds_id
+
+    @property
+    def rds_obj_info(self):
+        """Gets the rds_obj_info of this DataBase.
+
+        RDS数据库信息。
+
+        :return: The rds_obj_info of this DataBase.
+        :rtype: str
+        """
+        return self._rds_obj_info
+
+    @rds_obj_info.setter
+    def rds_obj_info(self, rds_obj_info):
+        """Sets the rds_obj_info of this DataBase.
+
+        RDS数据库信息。
+
+        :param rds_obj_info: The rds_obj_info of this DataBase.
+        :type rds_obj_info: str
+        """
+        self._rds_obj_info = rds_obj_info
+
+    @property
+    def dws_obj_info(self):
+        """Gets the dws_obj_info of this DataBase.
+
+        DWS数据库信息。
+
+        :return: The dws_obj_info of this DataBase.
+        :rtype: str
+        """
+        return self._dws_obj_info
+
+    @dws_obj_info.setter
+    def dws_obj_info(self, dws_obj_info):
+        """Sets the dws_obj_info of this DataBase.
+
+        DWS数据库信息。
+
+        :param dws_obj_info: The dws_obj_info of this DataBase.
+        :type dws_obj_info: str
+        """
+        self._dws_obj_info = dws_obj_info
+
+    @property
+    def clouddb_obj_info(self):
+        """Gets the clouddb_obj_info of this DataBase.
+
+        云数据库信息，该字段已废弃。
+
+        :return: The clouddb_obj_info of this DataBase.
+        :rtype: str
+        """
+        return self._clouddb_obj_info
+
+    @clouddb_obj_info.setter
+    def clouddb_obj_info(self, clouddb_obj_info):
+        """Sets the clouddb_obj_info of this DataBase.
+
+        云数据库信息，该字段已废弃。
+
+        :param clouddb_obj_info: The clouddb_obj_info of this DataBase.
+        :type clouddb_obj_info: str
+        """
+        self._clouddb_obj_info = clouddb_obj_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

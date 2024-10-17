@@ -23,6 +23,8 @@ class DbObjectSpaceInfo:
         'used_size': 'int',
         'data_size': 'int',
         'index_size': 'int',
+        'free_size': 'int',
+        'free_rate': 'float',
         'estimated_rows': 'int'
     }
 
@@ -33,10 +35,12 @@ class DbObjectSpaceInfo:
         'used_size': 'used_size',
         'data_size': 'data_size',
         'index_size': 'index_size',
+        'free_size': 'free_size',
+        'free_rate': 'free_rate',
         'estimated_rows': 'estimated_rows'
     }
 
-    def __init__(self, object_type=None, object_name=None, object_id=None, used_size=None, data_size=None, index_size=None, estimated_rows=None):
+    def __init__(self, object_type=None, object_name=None, object_id=None, used_size=None, data_size=None, index_size=None, free_size=None, free_rate=None, estimated_rows=None):
         """DbObjectSpaceInfo
 
         The model defined in huaweicloud sdk
@@ -53,6 +57,10 @@ class DbObjectSpaceInfo:
         :type data_size: int
         :param index_size: 索引空间，以字节为单位
         :type index_size: int
+        :param free_size: 碎片空间，以字节为单位
+        :type free_size: int
+        :param free_rate: 碎片率
+        :type free_rate: float
         :param estimated_rows: 估算值行数，以字节为单位
         :type estimated_rows: int
         """
@@ -65,6 +73,8 @@ class DbObjectSpaceInfo:
         self._used_size = None
         self._data_size = None
         self._index_size = None
+        self._free_size = None
+        self._free_rate = None
         self._estimated_rows = None
         self.discriminator = None
 
@@ -78,6 +88,10 @@ class DbObjectSpaceInfo:
             self.data_size = data_size
         if index_size is not None:
             self.index_size = index_size
+        if free_size is not None:
+            self.free_size = free_size
+        if free_rate is not None:
+            self.free_rate = free_rate
         if estimated_rows is not None:
             self.estimated_rows = estimated_rows
 
@@ -212,6 +226,50 @@ class DbObjectSpaceInfo:
         :type index_size: int
         """
         self._index_size = index_size
+
+    @property
+    def free_size(self):
+        """Gets the free_size of this DbObjectSpaceInfo.
+
+        碎片空间，以字节为单位
+
+        :return: The free_size of this DbObjectSpaceInfo.
+        :rtype: int
+        """
+        return self._free_size
+
+    @free_size.setter
+    def free_size(self, free_size):
+        """Sets the free_size of this DbObjectSpaceInfo.
+
+        碎片空间，以字节为单位
+
+        :param free_size: The free_size of this DbObjectSpaceInfo.
+        :type free_size: int
+        """
+        self._free_size = free_size
+
+    @property
+    def free_rate(self):
+        """Gets the free_rate of this DbObjectSpaceInfo.
+
+        碎片率
+
+        :return: The free_rate of this DbObjectSpaceInfo.
+        :rtype: float
+        """
+        return self._free_rate
+
+    @free_rate.setter
+    def free_rate(self, free_rate):
+        """Sets the free_rate of this DbObjectSpaceInfo.
+
+        碎片率
+
+        :param free_rate: The free_rate of this DbObjectSpaceInfo.
+        :type free_rate: float
+        """
+        self._free_rate = free_rate
 
     @property
     def estimated_rows(self):

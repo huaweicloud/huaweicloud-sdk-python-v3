@@ -2,10 +2,11 @@
 
 import six
 
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class DeleteDedicatedHostRequest:
+class DeleteAuditDatabaseResponse(SdkResponse):
 
     """
     Attributes:
@@ -17,50 +18,51 @@ class DeleteDedicatedHostRequest:
     sensitive_list = []
 
     openapi_types = {
-        'dedicated_host_id': 'str'
+        'result': 'str'
     }
 
     attribute_map = {
-        'dedicated_host_id': 'dedicated_host_id'
+        'result': 'result'
     }
 
-    def __init__(self, dedicated_host_id=None):
-        """DeleteDedicatedHostRequest
+    def __init__(self, result=None):
+        """DeleteAuditDatabaseResponse
 
         The model defined in huaweicloud sdk
 
-        :param dedicated_host_id: 专属主机ID。
-        :type dedicated_host_id: str
+        :param result: 响应状态
+        :type result: str
         """
         
-        
+        super(DeleteAuditDatabaseResponse, self).__init__()
 
-        self._dedicated_host_id = None
+        self._result = None
         self.discriminator = None
 
-        self.dedicated_host_id = dedicated_host_id
+        if result is not None:
+            self.result = result
 
     @property
-    def dedicated_host_id(self):
-        """Gets the dedicated_host_id of this DeleteDedicatedHostRequest.
+    def result(self):
+        """Gets the result of this DeleteAuditDatabaseResponse.
 
-        专属主机ID。
+        响应状态
 
-        :return: The dedicated_host_id of this DeleteDedicatedHostRequest.
+        :return: The result of this DeleteAuditDatabaseResponse.
         :rtype: str
         """
-        return self._dedicated_host_id
+        return self._result
 
-    @dedicated_host_id.setter
-    def dedicated_host_id(self, dedicated_host_id):
-        """Sets the dedicated_host_id of this DeleteDedicatedHostRequest.
+    @result.setter
+    def result(self, result):
+        """Sets the result of this DeleteAuditDatabaseResponse.
 
-        专属主机ID。
+        响应状态
 
-        :param dedicated_host_id: The dedicated_host_id of this DeleteDedicatedHostRequest.
-        :type dedicated_host_id: str
+        :param result: The result of this DeleteAuditDatabaseResponse.
+        :type result: str
         """
-        self._dedicated_host_id = dedicated_host_id
+        self._result = result
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -104,7 +106,7 @@ class DeleteDedicatedHostRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, DeleteDedicatedHostRequest):
+        if not isinstance(other, DeleteAuditDatabaseResponse):
             return False
 
         return self.__dict__ == other.__dict__

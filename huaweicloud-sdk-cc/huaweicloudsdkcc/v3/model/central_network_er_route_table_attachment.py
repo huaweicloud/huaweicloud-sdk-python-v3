@@ -36,12 +36,12 @@ class CentralNetworkErRouteTableAttachment:
         'enterprise_router_attachment_id': 'str',
         'enterprise_router_table_id': 'str',
         'enterprise_router_site_code': 'str',
-        'attached_er_table_id': 'str',
-        'attached_er_table_region_id': 'str',
         'attached_er_table_project_id': 'str',
-        'attached_er_table_site_code': 'str',
+        'attached_er_table_region_id': 'str',
         'attached_er_id': 'str',
+        'attached_er_table_id': 'str',
         'attached_er_attachment_id': 'str',
+        'attached_er_table_site_code': 'str',
         'approved_state': 'ApprovedStateEnum',
         'hosted_cloud': 'HostedCloudEnum',
         'reason': 'str'
@@ -67,18 +67,18 @@ class CentralNetworkErRouteTableAttachment:
         'enterprise_router_attachment_id': 'enterprise_router_attachment_id',
         'enterprise_router_table_id': 'enterprise_router_table_id',
         'enterprise_router_site_code': 'enterprise_router_site_code',
-        'attached_er_table_id': 'attached_er_table_id',
-        'attached_er_table_region_id': 'attached_er_table_region_id',
         'attached_er_table_project_id': 'attached_er_table_project_id',
-        'attached_er_table_site_code': 'attached_er_table_site_code',
+        'attached_er_table_region_id': 'attached_er_table_region_id',
         'attached_er_id': 'attached_er_id',
+        'attached_er_table_id': 'attached_er_table_id',
         'attached_er_attachment_id': 'attached_er_attachment_id',
+        'attached_er_table_site_code': 'attached_er_table_site_code',
         'approved_state': 'approved_state',
         'hosted_cloud': 'hosted_cloud',
         'reason': 'reason'
     }
 
-    def __init__(self, id=None, name=None, description=None, domain_id=None, state=None, created_at=None, updated_at=None, central_network_id=None, central_network_plane_id=None, global_connection_bandwidth_id=None, is_frozen=None, bandwidth_type=None, bandwidth_size=None, enterprise_router_id=None, enterprise_router_project_id=None, enterprise_router_region_id=None, enterprise_router_attachment_id=None, enterprise_router_table_id=None, enterprise_router_site_code=None, attached_er_table_id=None, attached_er_table_region_id=None, attached_er_table_project_id=None, attached_er_table_site_code=None, attached_er_id=None, attached_er_attachment_id=None, approved_state=None, hosted_cloud=None, reason=None):
+    def __init__(self, id=None, name=None, description=None, domain_id=None, state=None, created_at=None, updated_at=None, central_network_id=None, central_network_plane_id=None, global_connection_bandwidth_id=None, is_frozen=None, bandwidth_type=None, bandwidth_size=None, enterprise_router_id=None, enterprise_router_project_id=None, enterprise_router_region_id=None, enterprise_router_attachment_id=None, enterprise_router_table_id=None, enterprise_router_site_code=None, attached_er_table_project_id=None, attached_er_table_region_id=None, attached_er_id=None, attached_er_table_id=None, attached_er_attachment_id=None, attached_er_table_site_code=None, approved_state=None, hosted_cloud=None, reason=None):
         """CentralNetworkErRouteTableAttachment
 
         The model defined in huaweicloud sdk
@@ -107,7 +107,7 @@ class CentralNetworkErRouteTableAttachment:
         :type is_frozen: bool
         :param bandwidth_type: 
         :type bandwidth_type: :class:`huaweicloudsdkcc.v3.BandwidthTypeEnum`
-        :param bandwidth_size: 带宽值定义，单位Mbps。
+        :param bandwidth_size: 带宽值，单位Mbps。
         :type bandwidth_size: int
         :param enterprise_router_id: 企业路由器的ID。
         :type enterprise_router_id: str
@@ -121,18 +121,18 @@ class CentralNetworkErRouteTableAttachment:
         :type enterprise_router_table_id: str
         :param enterprise_router_site_code: 中心网络企业路由器的站点编码。
         :type enterprise_router_site_code: str
-        :param attached_er_table_id: 实例ID。
-        :type attached_er_table_id: str
-        :param attached_er_table_region_id: RegionID。
-        :type attached_er_table_region_id: str
-        :param attached_er_table_project_id: 实例所属项目ID。
+        :param attached_er_table_project_id: 被挂载的企业路由器的项目ID。
         :type attached_er_table_project_id: str
-        :param attached_er_table_site_code: 站点编码定义
-        :type attached_er_table_site_code: str
-        :param attached_er_id: 实例ID。
+        :param attached_er_table_region_id: ER路由器的regionID。
+        :type attached_er_table_region_id: str
+        :param attached_er_id: 被挂载的企业路由器ID。
         :type attached_er_id: str
-        :param attached_er_attachment_id: 实例ID。
+        :param attached_er_table_id: 被挂载的企业路由器的路由表ID。
+        :type attached_er_table_id: str
+        :param attached_er_attachment_id: 被挂载的企业路由器的连接ID。
         :type attached_er_attachment_id: str
+        :param attached_er_table_site_code: 被挂载的企业路由器的站点编码。
+        :type attached_er_table_site_code: str
         :param approved_state: 
         :type approved_state: :class:`huaweicloudsdkcc.v3.ApprovedStateEnum`
         :param hosted_cloud: 
@@ -162,12 +162,12 @@ class CentralNetworkErRouteTableAttachment:
         self._enterprise_router_attachment_id = None
         self._enterprise_router_table_id = None
         self._enterprise_router_site_code = None
-        self._attached_er_table_id = None
-        self._attached_er_table_region_id = None
         self._attached_er_table_project_id = None
-        self._attached_er_table_site_code = None
+        self._attached_er_table_region_id = None
         self._attached_er_id = None
+        self._attached_er_table_id = None
         self._attached_er_attachment_id = None
+        self._attached_er_table_site_code = None
         self._approved_state = None
         self._hosted_cloud = None
         self._reason = None
@@ -196,13 +196,13 @@ class CentralNetworkErRouteTableAttachment:
             self.enterprise_router_attachment_id = enterprise_router_attachment_id
         self.enterprise_router_table_id = enterprise_router_table_id
         self.enterprise_router_site_code = enterprise_router_site_code
-        self.attached_er_table_id = attached_er_table_id
-        self.attached_er_table_region_id = attached_er_table_region_id
         self.attached_er_table_project_id = attached_er_table_project_id
-        self.attached_er_table_site_code = attached_er_table_site_code
+        self.attached_er_table_region_id = attached_er_table_region_id
         self.attached_er_id = attached_er_id
+        self.attached_er_table_id = attached_er_table_id
         if attached_er_attachment_id is not None:
             self.attached_er_attachment_id = attached_er_attachment_id
+        self.attached_er_table_site_code = attached_er_table_site_code
         self.approved_state = approved_state
         if hosted_cloud is not None:
             self.hosted_cloud = hosted_cloud
@@ -469,7 +469,7 @@ class CentralNetworkErRouteTableAttachment:
     def bandwidth_size(self):
         """Gets the bandwidth_size of this CentralNetworkErRouteTableAttachment.
 
-        带宽值定义，单位Mbps。
+        带宽值，单位Mbps。
 
         :return: The bandwidth_size of this CentralNetworkErRouteTableAttachment.
         :rtype: int
@@ -480,7 +480,7 @@ class CentralNetworkErRouteTableAttachment:
     def bandwidth_size(self, bandwidth_size):
         """Sets the bandwidth_size of this CentralNetworkErRouteTableAttachment.
 
-        带宽值定义，单位Mbps。
+        带宽值，单位Mbps。
 
         :param bandwidth_size: The bandwidth_size of this CentralNetworkErRouteTableAttachment.
         :type bandwidth_size: int
@@ -620,54 +620,10 @@ class CentralNetworkErRouteTableAttachment:
         self._enterprise_router_site_code = enterprise_router_site_code
 
     @property
-    def attached_er_table_id(self):
-        """Gets the attached_er_table_id of this CentralNetworkErRouteTableAttachment.
-
-        实例ID。
-
-        :return: The attached_er_table_id of this CentralNetworkErRouteTableAttachment.
-        :rtype: str
-        """
-        return self._attached_er_table_id
-
-    @attached_er_table_id.setter
-    def attached_er_table_id(self, attached_er_table_id):
-        """Sets the attached_er_table_id of this CentralNetworkErRouteTableAttachment.
-
-        实例ID。
-
-        :param attached_er_table_id: The attached_er_table_id of this CentralNetworkErRouteTableAttachment.
-        :type attached_er_table_id: str
-        """
-        self._attached_er_table_id = attached_er_table_id
-
-    @property
-    def attached_er_table_region_id(self):
-        """Gets the attached_er_table_region_id of this CentralNetworkErRouteTableAttachment.
-
-        RegionID。
-
-        :return: The attached_er_table_region_id of this CentralNetworkErRouteTableAttachment.
-        :rtype: str
-        """
-        return self._attached_er_table_region_id
-
-    @attached_er_table_region_id.setter
-    def attached_er_table_region_id(self, attached_er_table_region_id):
-        """Sets the attached_er_table_region_id of this CentralNetworkErRouteTableAttachment.
-
-        RegionID。
-
-        :param attached_er_table_region_id: The attached_er_table_region_id of this CentralNetworkErRouteTableAttachment.
-        :type attached_er_table_region_id: str
-        """
-        self._attached_er_table_region_id = attached_er_table_region_id
-
-    @property
     def attached_er_table_project_id(self):
         """Gets the attached_er_table_project_id of this CentralNetworkErRouteTableAttachment.
 
-        实例所属项目ID。
+        被挂载的企业路由器的项目ID。
 
         :return: The attached_er_table_project_id of this CentralNetworkErRouteTableAttachment.
         :rtype: str
@@ -678,7 +634,7 @@ class CentralNetworkErRouteTableAttachment:
     def attached_er_table_project_id(self, attached_er_table_project_id):
         """Sets the attached_er_table_project_id of this CentralNetworkErRouteTableAttachment.
 
-        实例所属项目ID。
+        被挂载的企业路由器的项目ID。
 
         :param attached_er_table_project_id: The attached_er_table_project_id of this CentralNetworkErRouteTableAttachment.
         :type attached_er_table_project_id: str
@@ -686,32 +642,32 @@ class CentralNetworkErRouteTableAttachment:
         self._attached_er_table_project_id = attached_er_table_project_id
 
     @property
-    def attached_er_table_site_code(self):
-        """Gets the attached_er_table_site_code of this CentralNetworkErRouteTableAttachment.
+    def attached_er_table_region_id(self):
+        """Gets the attached_er_table_region_id of this CentralNetworkErRouteTableAttachment.
 
-        站点编码定义
+        ER路由器的regionID。
 
-        :return: The attached_er_table_site_code of this CentralNetworkErRouteTableAttachment.
+        :return: The attached_er_table_region_id of this CentralNetworkErRouteTableAttachment.
         :rtype: str
         """
-        return self._attached_er_table_site_code
+        return self._attached_er_table_region_id
 
-    @attached_er_table_site_code.setter
-    def attached_er_table_site_code(self, attached_er_table_site_code):
-        """Sets the attached_er_table_site_code of this CentralNetworkErRouteTableAttachment.
+    @attached_er_table_region_id.setter
+    def attached_er_table_region_id(self, attached_er_table_region_id):
+        """Sets the attached_er_table_region_id of this CentralNetworkErRouteTableAttachment.
 
-        站点编码定义
+        ER路由器的regionID。
 
-        :param attached_er_table_site_code: The attached_er_table_site_code of this CentralNetworkErRouteTableAttachment.
-        :type attached_er_table_site_code: str
+        :param attached_er_table_region_id: The attached_er_table_region_id of this CentralNetworkErRouteTableAttachment.
+        :type attached_er_table_region_id: str
         """
-        self._attached_er_table_site_code = attached_er_table_site_code
+        self._attached_er_table_region_id = attached_er_table_region_id
 
     @property
     def attached_er_id(self):
         """Gets the attached_er_id of this CentralNetworkErRouteTableAttachment.
 
-        实例ID。
+        被挂载的企业路由器ID。
 
         :return: The attached_er_id of this CentralNetworkErRouteTableAttachment.
         :rtype: str
@@ -722,7 +678,7 @@ class CentralNetworkErRouteTableAttachment:
     def attached_er_id(self, attached_er_id):
         """Sets the attached_er_id of this CentralNetworkErRouteTableAttachment.
 
-        实例ID。
+        被挂载的企业路由器ID。
 
         :param attached_er_id: The attached_er_id of this CentralNetworkErRouteTableAttachment.
         :type attached_er_id: str
@@ -730,10 +686,32 @@ class CentralNetworkErRouteTableAttachment:
         self._attached_er_id = attached_er_id
 
     @property
+    def attached_er_table_id(self):
+        """Gets the attached_er_table_id of this CentralNetworkErRouteTableAttachment.
+
+        被挂载的企业路由器的路由表ID。
+
+        :return: The attached_er_table_id of this CentralNetworkErRouteTableAttachment.
+        :rtype: str
+        """
+        return self._attached_er_table_id
+
+    @attached_er_table_id.setter
+    def attached_er_table_id(self, attached_er_table_id):
+        """Sets the attached_er_table_id of this CentralNetworkErRouteTableAttachment.
+
+        被挂载的企业路由器的路由表ID。
+
+        :param attached_er_table_id: The attached_er_table_id of this CentralNetworkErRouteTableAttachment.
+        :type attached_er_table_id: str
+        """
+        self._attached_er_table_id = attached_er_table_id
+
+    @property
     def attached_er_attachment_id(self):
         """Gets the attached_er_attachment_id of this CentralNetworkErRouteTableAttachment.
 
-        实例ID。
+        被挂载的企业路由器的连接ID。
 
         :return: The attached_er_attachment_id of this CentralNetworkErRouteTableAttachment.
         :rtype: str
@@ -744,12 +722,34 @@ class CentralNetworkErRouteTableAttachment:
     def attached_er_attachment_id(self, attached_er_attachment_id):
         """Sets the attached_er_attachment_id of this CentralNetworkErRouteTableAttachment.
 
-        实例ID。
+        被挂载的企业路由器的连接ID。
 
         :param attached_er_attachment_id: The attached_er_attachment_id of this CentralNetworkErRouteTableAttachment.
         :type attached_er_attachment_id: str
         """
         self._attached_er_attachment_id = attached_er_attachment_id
+
+    @property
+    def attached_er_table_site_code(self):
+        """Gets the attached_er_table_site_code of this CentralNetworkErRouteTableAttachment.
+
+        被挂载的企业路由器的站点编码。
+
+        :return: The attached_er_table_site_code of this CentralNetworkErRouteTableAttachment.
+        :rtype: str
+        """
+        return self._attached_er_table_site_code
+
+    @attached_er_table_site_code.setter
+    def attached_er_table_site_code(self, attached_er_table_site_code):
+        """Sets the attached_er_table_site_code of this CentralNetworkErRouteTableAttachment.
+
+        被挂载的企业路由器的站点编码。
+
+        :param attached_er_table_site_code: The attached_er_table_site_code of this CentralNetworkErRouteTableAttachment.
+        :type attached_er_table_site_code: str
+        """
+        self._attached_er_table_site_code = attached_er_table_site_code
 
     @property
     def approved_state(self):

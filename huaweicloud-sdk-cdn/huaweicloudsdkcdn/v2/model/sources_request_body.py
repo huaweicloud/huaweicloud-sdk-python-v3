@@ -22,7 +22,9 @@ class SourcesRequestBody:
         'origin_type': 'str',
         'obs_bucket_type': 'str',
         'active_standby': 'int',
-        'enable_obs_web_hosting': 'int'
+        'enable_obs_web_hosting': 'int',
+        'http_port': 'int',
+        'https_port': 'int'
     }
 
     attribute_map = {
@@ -31,10 +33,12 @@ class SourcesRequestBody:
         'origin_type': 'origin_type',
         'obs_bucket_type': 'obs_bucket_type',
         'active_standby': 'active_standby',
-        'enable_obs_web_hosting': 'enable_obs_web_hosting'
+        'enable_obs_web_hosting': 'enable_obs_web_hosting',
+        'http_port': 'http_port',
+        'https_port': 'https_port'
     }
 
-    def __init__(self, domain_id=None, ip_or_domain=None, origin_type=None, obs_bucket_type=None, active_standby=None, enable_obs_web_hosting=None):
+    def __init__(self, domain_id=None, ip_or_domain=None, origin_type=None, obs_bucket_type=None, active_standby=None, enable_obs_web_hosting=None, http_port=None, https_port=None):
         """SourcesRequestBody
 
         The model defined in huaweicloud sdk
@@ -51,6 +55,10 @@ class SourcesRequestBody:
         :type active_standby: int
         :param enable_obs_web_hosting: 是否开启OBS静态网站托管(0表示关闭,1表示则为开启)，源站类型为obs_bucket时传递。
         :type enable_obs_web_hosting: int
+        :param http_port: HTTP端口，默认80,端口取值取值范围1-65535。
+        :type http_port: int
+        :param https_port: HTTPS端口，默认443,端口取值取值范围1-65535。
+        :type https_port: int
         """
         
         
@@ -61,6 +69,8 @@ class SourcesRequestBody:
         self._obs_bucket_type = None
         self._active_standby = None
         self._enable_obs_web_hosting = None
+        self._http_port = None
+        self._https_port = None
         self.discriminator = None
 
         if domain_id is not None:
@@ -72,6 +82,10 @@ class SourcesRequestBody:
         self.active_standby = active_standby
         if enable_obs_web_hosting is not None:
             self.enable_obs_web_hosting = enable_obs_web_hosting
+        if http_port is not None:
+            self.http_port = http_port
+        if https_port is not None:
+            self.https_port = https_port
 
     @property
     def domain_id(self):
@@ -204,6 +218,50 @@ class SourcesRequestBody:
         :type enable_obs_web_hosting: int
         """
         self._enable_obs_web_hosting = enable_obs_web_hosting
+
+    @property
+    def http_port(self):
+        """Gets the http_port of this SourcesRequestBody.
+
+        HTTP端口，默认80,端口取值取值范围1-65535。
+
+        :return: The http_port of this SourcesRequestBody.
+        :rtype: int
+        """
+        return self._http_port
+
+    @http_port.setter
+    def http_port(self, http_port):
+        """Sets the http_port of this SourcesRequestBody.
+
+        HTTP端口，默认80,端口取值取值范围1-65535。
+
+        :param http_port: The http_port of this SourcesRequestBody.
+        :type http_port: int
+        """
+        self._http_port = http_port
+
+    @property
+    def https_port(self):
+        """Gets the https_port of this SourcesRequestBody.
+
+        HTTPS端口，默认443,端口取值取值范围1-65535。
+
+        :return: The https_port of this SourcesRequestBody.
+        :rtype: int
+        """
+        return self._https_port
+
+    @https_port.setter
+    def https_port(self, https_port):
+        """Sets the https_port of this SourcesRequestBody.
+
+        HTTPS端口，默认443,端口取值取值范围1-65535。
+
+        :param https_port: The https_port of this SourcesRequestBody.
+        :type https_port: int
+        """
+        self._https_port = https_port
 
     def to_dict(self):
         """Returns the model properties as a dict"""

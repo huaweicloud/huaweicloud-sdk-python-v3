@@ -29,7 +29,7 @@ class BandwidthSize:
 
         The model defined in huaweicloud sdk
 
-        :param bandwidth_size: 带宽值定义，单位Mbps。
+        :param bandwidth_size: 带宽值，单位Mbps。
         :type bandwidth_size: int
         """
         
@@ -45,7 +45,7 @@ class BandwidthSize:
     def bandwidth_size(self):
         """Gets the bandwidth_size of this BandwidthSize.
 
-        带宽值定义，单位Mbps。
+        带宽值，单位Mbps。
 
         :return: The bandwidth_size of this BandwidthSize.
         :rtype: int
@@ -56,7 +56,7 @@ class BandwidthSize:
     def bandwidth_size(self, bandwidth_size):
         """Sets the bandwidth_size of this BandwidthSize.
 
-        带宽值定义，单位Mbps。
+        带宽值，单位Mbps。
 
         :param bandwidth_size: The bandwidth_size of this BandwidthSize.
         :type bandwidth_size: int

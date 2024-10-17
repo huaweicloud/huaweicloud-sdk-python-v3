@@ -47,13 +47,13 @@ class SqlRuleResponseRules:
         :type id: str
         :param name: SQL规则名称
         :type name: str
-        :param status: 规则的状态：  ON  OFF
+        :param status: 规则的状态： - ON - OFF
         :type status: str
-        :param risk_level: 风险级别  HIGH  MEDIUM  LOW
+        :param risk_level: 风险级别 - HIGH - MEDIUM - LOW
         :type risk_level: str
-        :param type: 类型
+        :param type: 风险类型
         :type type: str
-        :param rank: 等级
+        :param rank: 优先级。数字越小优先级越高。
         :type rank: int
         :param feature: SQL命令特征
         :type feature: str
@@ -138,7 +138,7 @@ class SqlRuleResponseRules:
     def status(self):
         """Gets the status of this SqlRuleResponseRules.
 
-        规则的状态：  ON  OFF
+        规则的状态： - ON - OFF
 
         :return: The status of this SqlRuleResponseRules.
         :rtype: str
@@ -149,7 +149,7 @@ class SqlRuleResponseRules:
     def status(self, status):
         """Sets the status of this SqlRuleResponseRules.
 
-        规则的状态：  ON  OFF
+        规则的状态： - ON - OFF
 
         :param status: The status of this SqlRuleResponseRules.
         :type status: str
@@ -160,7 +160,7 @@ class SqlRuleResponseRules:
     def risk_level(self):
         """Gets the risk_level of this SqlRuleResponseRules.
 
-        风险级别  HIGH  MEDIUM  LOW
+        风险级别 - HIGH - MEDIUM - LOW
 
         :return: The risk_level of this SqlRuleResponseRules.
         :rtype: str
@@ -171,7 +171,7 @@ class SqlRuleResponseRules:
     def risk_level(self, risk_level):
         """Sets the risk_level of this SqlRuleResponseRules.
 
-        风险级别  HIGH  MEDIUM  LOW
+        风险级别 - HIGH - MEDIUM - LOW
 
         :param risk_level: The risk_level of this SqlRuleResponseRules.
         :type risk_level: str
@@ -182,7 +182,7 @@ class SqlRuleResponseRules:
     def type(self):
         """Gets the type of this SqlRuleResponseRules.
 
-        类型
+        风险类型
 
         :return: The type of this SqlRuleResponseRules.
         :rtype: str
@@ -193,7 +193,7 @@ class SqlRuleResponseRules:
     def type(self, type):
         """Sets the type of this SqlRuleResponseRules.
 
-        类型
+        风险类型
 
         :param type: The type of this SqlRuleResponseRules.
         :type type: str
@@ -204,7 +204,7 @@ class SqlRuleResponseRules:
     def rank(self):
         """Gets the rank of this SqlRuleResponseRules.
 
-        等级
+        优先级。数字越小优先级越高。
 
         :return: The rank of this SqlRuleResponseRules.
         :rtype: int
@@ -215,7 +215,7 @@ class SqlRuleResponseRules:
     def rank(self, rank):
         """Sets the rank of this SqlRuleResponseRules.
 
-        等级
+        优先级。数字越小优先级越高。
 
         :param rank: The rank of this SqlRuleResponseRules.
         :type rank: int

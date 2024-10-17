@@ -43,9 +43,9 @@ class ShowUrlTaskInfoRequest:
 
         The model defined in huaweicloud sdk
 
-        :param start_time: 起始时间戳（毫秒），默认当天00:00。
+        :param start_time: 查询起始时间戳（毫秒），不传默认当天00:00，需与结束时间戳同时指定，时间跨度不能超过24小时。
         :type start_time: int
-        :param end_time: 结束时间戳（毫秒），默认次日00:00。
+        :param end_time: 查询结束时间戳（毫秒），不传默认次日00:00，需与开始时间戳同时指定，时间跨度不能超过24小时。
         :type end_time: int
         :param offset: 偏移量：特定数据字段与起始数据字段位置的距离，默认为0。
         :type offset: int
@@ -94,7 +94,7 @@ class ShowUrlTaskInfoRequest:
     def start_time(self):
         """Gets the start_time of this ShowUrlTaskInfoRequest.
 
-        起始时间戳（毫秒），默认当天00:00。
+        查询起始时间戳（毫秒），不传默认当天00:00，需与结束时间戳同时指定，时间跨度不能超过24小时。
 
         :return: The start_time of this ShowUrlTaskInfoRequest.
         :rtype: int
@@ -105,7 +105,7 @@ class ShowUrlTaskInfoRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ShowUrlTaskInfoRequest.
 
-        起始时间戳（毫秒），默认当天00:00。
+        查询起始时间戳（毫秒），不传默认当天00:00，需与结束时间戳同时指定，时间跨度不能超过24小时。
 
         :param start_time: The start_time of this ShowUrlTaskInfoRequest.
         :type start_time: int
@@ -116,7 +116,7 @@ class ShowUrlTaskInfoRequest:
     def end_time(self):
         """Gets the end_time of this ShowUrlTaskInfoRequest.
 
-        结束时间戳（毫秒），默认次日00:00。
+        查询结束时间戳（毫秒），不传默认次日00:00，需与开始时间戳同时指定，时间跨度不能超过24小时。
 
         :return: The end_time of this ShowUrlTaskInfoRequest.
         :rtype: int
@@ -127,7 +127,7 @@ class ShowUrlTaskInfoRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ShowUrlTaskInfoRequest.
 
-        结束时间戳（毫秒），默认次日00:00。
+        查询结束时间戳（毫秒），不传默认次日00:00，需与开始时间戳同时指定，时间跨度不能超过24小时。
 
         :param end_time: The end_time of this ShowUrlTaskInfoRequest.
         :type end_time: int

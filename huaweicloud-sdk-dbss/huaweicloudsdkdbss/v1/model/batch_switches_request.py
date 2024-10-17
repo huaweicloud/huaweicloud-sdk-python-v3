@@ -31,9 +31,9 @@ class BatchSwitchesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param ids: risk id, ids 中间逗号分隔
+        :param ids: 规则ID,多个ID中间逗号分隔。可在查询风险规则策略接口ID字段获取。
         :type ids: str
-        :param status: OFF：关闭 ON：开启
+        :param status: 开关状态 - OFF: 关闭 - ON: 开启
         :type status: str
         """
         
@@ -52,7 +52,7 @@ class BatchSwitchesRequest:
     def ids(self):
         """Gets the ids of this BatchSwitchesRequest.
 
-        risk id, ids 中间逗号分隔
+        规则ID,多个ID中间逗号分隔。可在查询风险规则策略接口ID字段获取。
 
         :return: The ids of this BatchSwitchesRequest.
         :rtype: str
@@ -63,7 +63,7 @@ class BatchSwitchesRequest:
     def ids(self, ids):
         """Sets the ids of this BatchSwitchesRequest.
 
-        risk id, ids 中间逗号分隔
+        规则ID,多个ID中间逗号分隔。可在查询风险规则策略接口ID字段获取。
 
         :param ids: The ids of this BatchSwitchesRequest.
         :type ids: str
@@ -74,7 +74,7 @@ class BatchSwitchesRequest:
     def status(self):
         """Gets the status of this BatchSwitchesRequest.
 
-        OFF：关闭 ON：开启
+        开关状态 - OFF: 关闭 - ON: 开启
 
         :return: The status of this BatchSwitchesRequest.
         :rtype: str
@@ -85,7 +85,7 @@ class BatchSwitchesRequest:
     def status(self, status):
         """Sets the status of this BatchSwitchesRequest.
 
-        OFF：关闭 ON：开启
+        开关状态 - OFF: 关闭 - ON: 开启
 
         :param status: The status of this BatchSwitchesRequest.
         :type status: str

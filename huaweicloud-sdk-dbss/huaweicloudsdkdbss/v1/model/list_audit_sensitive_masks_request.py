@@ -33,7 +33,7 @@ class ListAuditSensitiveMasksRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例ID
+        :param instance_id: 实例ID。可在查询实例列表接口的ID字段获取。
         :type instance_id: str
         :param offset: 偏移量
         :type offset: str
@@ -58,7 +58,7 @@ class ListAuditSensitiveMasksRequest:
     def instance_id(self):
         """Gets the instance_id of this ListAuditSensitiveMasksRequest.
 
-        实例ID
+        实例ID。可在查询实例列表接口的ID字段获取。
 
         :return: The instance_id of this ListAuditSensitiveMasksRequest.
         :rtype: str
@@ -69,7 +69,7 @@ class ListAuditSensitiveMasksRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListAuditSensitiveMasksRequest.
 
-        实例ID
+        实例ID。可在查询实例列表接口的ID字段获取。
 
         :param instance_id: The instance_id of this ListAuditSensitiveMasksRequest.
         :type instance_id: str

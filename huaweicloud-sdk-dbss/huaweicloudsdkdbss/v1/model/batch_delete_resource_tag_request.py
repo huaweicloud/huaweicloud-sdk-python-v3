@@ -19,7 +19,7 @@ class BatchDeleteResourceTagRequest:
     openapi_types = {
         'resource_type': 'str',
         'resource_id': 'str',
-        'body': 'ResourceTagRequest'
+        'body': 'ResourceTagDeleteRequest'
     }
 
     attribute_map = {
@@ -33,12 +33,12 @@ class BatchDeleteResourceTagRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: 资源类型。审计：auditInstance
+        :param resource_type: 资源类型。 - auditInstance
         :type resource_type: str
-        :param resource_id: 资源ID
+        :param resource_id: 资源ID。可在查询实例列表接口的resource_id字段获取。
         :type resource_id: str
         :param body: Body of the BatchDeleteResourceTagRequest
-        :type body: :class:`huaweicloudsdkdbss.v1.ResourceTagRequest`
+        :type body: :class:`huaweicloudsdkdbss.v1.ResourceTagDeleteRequest`
         """
         
         
@@ -57,7 +57,7 @@ class BatchDeleteResourceTagRequest:
     def resource_type(self):
         """Gets the resource_type of this BatchDeleteResourceTagRequest.
 
-        资源类型。审计：auditInstance
+        资源类型。 - auditInstance
 
         :return: The resource_type of this BatchDeleteResourceTagRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class BatchDeleteResourceTagRequest:
     def resource_type(self, resource_type):
         """Sets the resource_type of this BatchDeleteResourceTagRequest.
 
-        资源类型。审计：auditInstance
+        资源类型。 - auditInstance
 
         :param resource_type: The resource_type of this BatchDeleteResourceTagRequest.
         :type resource_type: str
@@ -79,7 +79,7 @@ class BatchDeleteResourceTagRequest:
     def resource_id(self):
         """Gets the resource_id of this BatchDeleteResourceTagRequest.
 
-        资源ID
+        资源ID。可在查询实例列表接口的resource_id字段获取。
 
         :return: The resource_id of this BatchDeleteResourceTagRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class BatchDeleteResourceTagRequest:
     def resource_id(self, resource_id):
         """Sets the resource_id of this BatchDeleteResourceTagRequest.
 
-        资源ID
+        资源ID。可在查询实例列表接口的resource_id字段获取。
 
         :param resource_id: The resource_id of this BatchDeleteResourceTagRequest.
         :type resource_id: str
@@ -102,7 +102,7 @@ class BatchDeleteResourceTagRequest:
         """Gets the body of this BatchDeleteResourceTagRequest.
 
         :return: The body of this BatchDeleteResourceTagRequest.
-        :rtype: :class:`huaweicloudsdkdbss.v1.ResourceTagRequest`
+        :rtype: :class:`huaweicloudsdkdbss.v1.ResourceTagDeleteRequest`
         """
         return self._body
 
@@ -111,7 +111,7 @@ class BatchDeleteResourceTagRequest:
         """Sets the body of this BatchDeleteResourceTagRequest.
 
         :param body: The body of this BatchDeleteResourceTagRequest.
-        :type body: :class:`huaweicloudsdkdbss.v1.ResourceTagRequest`
+        :type body: :class:`huaweicloudsdkdbss.v1.ResourceTagDeleteRequest`
         """
         self._body = body
 

@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class CreateDedicatedHostRequest:
+class AddRdsDatabaseRequest:
 
     """
     Attributes:
@@ -17,45 +17,73 @@ class CreateDedicatedHostRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'ReqAllocateDeh'
+        'instance_id': 'str',
+        'body': 'RdsDbRequest'
     }
 
     attribute_map = {
+        'instance_id': 'instance_id',
         'body': 'body'
     }
 
-    def __init__(self, body=None):
-        """CreateDedicatedHostRequest
+    def __init__(self, instance_id=None, body=None):
+        """AddRdsDatabaseRequest
 
         The model defined in huaweicloud sdk
 
-        :param body: Body of the CreateDedicatedHostRequest
-        :type body: :class:`huaweicloudsdkdeh.v1.ReqAllocateDeh`
+        :param instance_id: 实例ID。可在查询实例列表接口的ID字段获取。
+        :type instance_id: str
+        :param body: Body of the AddRdsDatabaseRequest
+        :type body: :class:`huaweicloudsdkdbss.v1.RdsDbRequest`
         """
         
         
 
+        self._instance_id = None
         self._body = None
         self.discriminator = None
 
+        self.instance_id = instance_id
         if body is not None:
             self.body = body
 
     @property
-    def body(self):
-        """Gets the body of this CreateDedicatedHostRequest.
+    def instance_id(self):
+        """Gets the instance_id of this AddRdsDatabaseRequest.
 
-        :return: The body of this CreateDedicatedHostRequest.
-        :rtype: :class:`huaweicloudsdkdeh.v1.ReqAllocateDeh`
+        实例ID。可在查询实例列表接口的ID字段获取。
+
+        :return: The instance_id of this AddRdsDatabaseRequest.
+        :rtype: str
+        """
+        return self._instance_id
+
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        """Sets the instance_id of this AddRdsDatabaseRequest.
+
+        实例ID。可在查询实例列表接口的ID字段获取。
+
+        :param instance_id: The instance_id of this AddRdsDatabaseRequest.
+        :type instance_id: str
+        """
+        self._instance_id = instance_id
+
+    @property
+    def body(self):
+        """Gets the body of this AddRdsDatabaseRequest.
+
+        :return: The body of this AddRdsDatabaseRequest.
+        :rtype: :class:`huaweicloudsdkdbss.v1.RdsDbRequest`
         """
         return self._body
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDedicatedHostRequest.
+        """Sets the body of this AddRdsDatabaseRequest.
 
-        :param body: The body of this CreateDedicatedHostRequest.
-        :type body: :class:`huaweicloudsdkdeh.v1.ReqAllocateDeh`
+        :param body: The body of this AddRdsDatabaseRequest.
+        :type body: :class:`huaweicloudsdkdbss.v1.RdsDbRequest`
         """
         self._body = body
 
@@ -101,7 +129,7 @@ class CreateDedicatedHostRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CreateDedicatedHostRequest):
+        if not isinstance(other, AddRdsDatabaseRequest):
             return False
 
         return self.__dict__ == other.__dict__

@@ -17,32 +17,32 @@ class ResourceInstanceResponseResources:
     sensitive_list = []
 
     openapi_types = {
-        'resource_detail': 'object',
         'resource_id': 'str',
         'resource_name': 'str',
+        'resource_detail': 'object',
         'tags': 'list[ResourceInstanceResponseTags]',
         'sys_tags': 'list[ResourceInstanceResponseSysTags]'
     }
 
     attribute_map = {
-        'resource_detail': 'resource_detail',
         'resource_id': 'resource_id',
         'resource_name': 'resource_name',
+        'resource_detail': 'resource_detail',
         'tags': 'tags',
         'sys_tags': 'sys_tags'
     }
 
-    def __init__(self, resource_detail=None, resource_id=None, resource_name=None, tags=None, sys_tags=None):
+    def __init__(self, resource_id=None, resource_name=None, resource_detail=None, tags=None, sys_tags=None):
         """ResourceInstanceResponseResources
 
         The model defined in huaweicloud sdk
 
-        :param resource_detail: 资源详情。 资源对象，用于扩展。默认为空
-        :type resource_detail: object
         :param resource_id: 资源ID
         :type resource_id: str
-        :param resource_name: 资源名称，资源没有名称时默认为空字符串，eip返回ip地址
+        :param resource_name: 资源名称，资源没有名称时默认为空字符串，eip返回ip地址。
         :type resource_name: str
+        :param resource_detail: 资源详情。 资源对象，用于扩展，默认为空。
+        :type resource_detail: object
         :param tags: 标签列表，没有标签默认为空数组
         :type tags: list[:class:`huaweicloudsdkdbss.v1.ResourceInstanceResponseTags`]
         :param sys_tags: 仅op_service权限才可以可以获取此字段： 目前只包含一个resource_tag 结构体 key：_sys_enterprise_project_id value：企业项目id，0表示默认企业项目 非op_service场景不能返回此字段
@@ -51,41 +51,19 @@ class ResourceInstanceResponseResources:
         
         
 
-        self._resource_detail = None
         self._resource_id = None
         self._resource_name = None
+        self._resource_detail = None
         self._tags = None
         self._sys_tags = None
         self.discriminator = None
 
-        self.resource_detail = resource_detail
         self.resource_id = resource_id
         self.resource_name = resource_name
+        self.resource_detail = resource_detail
         self.tags = tags
         if sys_tags is not None:
             self.sys_tags = sys_tags
-
-    @property
-    def resource_detail(self):
-        """Gets the resource_detail of this ResourceInstanceResponseResources.
-
-        资源详情。 资源对象，用于扩展。默认为空
-
-        :return: The resource_detail of this ResourceInstanceResponseResources.
-        :rtype: object
-        """
-        return self._resource_detail
-
-    @resource_detail.setter
-    def resource_detail(self, resource_detail):
-        """Sets the resource_detail of this ResourceInstanceResponseResources.
-
-        资源详情。 资源对象，用于扩展。默认为空
-
-        :param resource_detail: The resource_detail of this ResourceInstanceResponseResources.
-        :type resource_detail: object
-        """
-        self._resource_detail = resource_detail
 
     @property
     def resource_id(self):
@@ -113,7 +91,7 @@ class ResourceInstanceResponseResources:
     def resource_name(self):
         """Gets the resource_name of this ResourceInstanceResponseResources.
 
-        资源名称，资源没有名称时默认为空字符串，eip返回ip地址
+        资源名称，资源没有名称时默认为空字符串，eip返回ip地址。
 
         :return: The resource_name of this ResourceInstanceResponseResources.
         :rtype: str
@@ -124,12 +102,34 @@ class ResourceInstanceResponseResources:
     def resource_name(self, resource_name):
         """Sets the resource_name of this ResourceInstanceResponseResources.
 
-        资源名称，资源没有名称时默认为空字符串，eip返回ip地址
+        资源名称，资源没有名称时默认为空字符串，eip返回ip地址。
 
         :param resource_name: The resource_name of this ResourceInstanceResponseResources.
         :type resource_name: str
         """
         self._resource_name = resource_name
+
+    @property
+    def resource_detail(self):
+        """Gets the resource_detail of this ResourceInstanceResponseResources.
+
+        资源详情。 资源对象，用于扩展，默认为空。
+
+        :return: The resource_detail of this ResourceInstanceResponseResources.
+        :rtype: object
+        """
+        return self._resource_detail
+
+    @resource_detail.setter
+    def resource_detail(self, resource_detail):
+        """Sets the resource_detail of this ResourceInstanceResponseResources.
+
+        资源详情。 资源对象，用于扩展，默认为空。
+
+        :param resource_detail: The resource_detail of this ResourceInstanceResponseResources.
+        :type resource_detail: object
+        """
+        self._resource_detail = resource_detail
 
     @property
     def tags(self):

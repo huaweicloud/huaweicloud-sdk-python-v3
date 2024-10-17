@@ -31,9 +31,9 @@ class ShowAuditRuleRiskRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例ID
+        :param instance_id: 实例ID。可在查询实例列表接口的ID字段获取。
         :type instance_id: str
-        :param risk_id: 风险规则ID
+        :param risk_id: 风险规则ID。可在查询风险规则策略接口的ID字段获取。
         :type risk_id: str
         """
         
@@ -50,7 +50,7 @@ class ShowAuditRuleRiskRequest:
     def instance_id(self):
         """Gets the instance_id of this ShowAuditRuleRiskRequest.
 
-        实例ID
+        实例ID。可在查询实例列表接口的ID字段获取。
 
         :return: The instance_id of this ShowAuditRuleRiskRequest.
         :rtype: str
@@ -61,7 +61,7 @@ class ShowAuditRuleRiskRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ShowAuditRuleRiskRequest.
 
-        实例ID
+        实例ID。可在查询实例列表接口的ID字段获取。
 
         :param instance_id: The instance_id of this ShowAuditRuleRiskRequest.
         :type instance_id: str
@@ -72,7 +72,7 @@ class ShowAuditRuleRiskRequest:
     def risk_id(self):
         """Gets the risk_id of this ShowAuditRuleRiskRequest.
 
-        风险规则ID
+        风险规则ID。可在查询风险规则策略接口的ID字段获取。
 
         :return: The risk_id of this ShowAuditRuleRiskRequest.
         :rtype: str
@@ -83,7 +83,7 @@ class ShowAuditRuleRiskRequest:
     def risk_id(self, risk_id):
         """Sets the risk_id of this ShowAuditRuleRiskRequest.
 
-        风险规则ID
+        风险规则ID。可在查询风险规则策略接口的ID字段获取。
 
         :param risk_id: The risk_id of this ShowAuditRuleRiskRequest.
         :type risk_id: str

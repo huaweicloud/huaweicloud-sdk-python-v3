@@ -31,7 +31,7 @@ class ListAuditOperateLogsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例ID
+        :param instance_id: 实例ID。可在查询实例列表接口的ID字段获取。
         :type instance_id: str
         :param body: Body of the ListAuditOperateLogsRequest
         :type body: :class:`huaweicloudsdkdbss.v1.OperateLogGetRequest`
@@ -51,7 +51,7 @@ class ListAuditOperateLogsRequest:
     def instance_id(self):
         """Gets the instance_id of this ListAuditOperateLogsRequest.
 
-        实例ID
+        实例ID。可在查询实例列表接口的ID字段获取。
 
         :return: The instance_id of this ListAuditOperateLogsRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class ListAuditOperateLogsRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListAuditOperateLogsRequest.
 
-        实例ID
+        实例ID。可在查询实例列表接口的ID字段获取。
 
         :param instance_id: The instance_id of this ListAuditOperateLogsRequest.
         :type instance_id: str

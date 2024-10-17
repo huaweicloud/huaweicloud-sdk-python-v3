@@ -19,7 +19,7 @@ class OperateLogGetRequest:
     openapi_types = {
         'time': 'TimeRangeBean',
         'user_name': 'str',
-        'operate_name': 'str',
+        'action': 'str',
         'result': 'str',
         'page': 'str',
         'size': 'str'
@@ -28,24 +28,24 @@ class OperateLogGetRequest:
     attribute_map = {
         'time': 'time',
         'user_name': 'user_name',
-        'operate_name': 'operate_name',
+        'action': 'action',
         'result': 'result',
         'page': 'page',
         'size': 'size'
     }
 
-    def __init__(self, time=None, user_name=None, operate_name=None, result=None, page=None, size=None):
+    def __init__(self, time=None, user_name=None, action=None, result=None, page=None, size=None):
         """OperateLogGetRequest
 
         The model defined in huaweicloud sdk
 
         :param time: 
         :type time: :class:`huaweicloudsdkdbss.v1.TimeRangeBean`
-        :param user_name: 筛选角色用户获取操作日志
+        :param user_name: 操作日志用户名
         :type user_name: str
-        :param operate_name: 筛选操作对象名称获取操作日志
-        :type operate_name: str
-        :param result: 根据执行结果获取操作日志 [success, fail]
+        :param action: 动作名称 - CREATE - DELETE - DOWNLOAD - UPDATE
+        :type action: str
+        :param result: 执行结果 - success - fail
         :type result: str
         :param page: 页数
         :type page: str
@@ -57,7 +57,7 @@ class OperateLogGetRequest:
 
         self._time = None
         self._user_name = None
-        self._operate_name = None
+        self._action = None
         self._result = None
         self._page = None
         self._size = None
@@ -67,8 +67,8 @@ class OperateLogGetRequest:
             self.time = time
         if user_name is not None:
             self.user_name = user_name
-        if operate_name is not None:
-            self.operate_name = operate_name
+        if action is not None:
+            self.action = action
         if result is not None:
             self.result = result
         if page is not None:
@@ -98,7 +98,7 @@ class OperateLogGetRequest:
     def user_name(self):
         """Gets the user_name of this OperateLogGetRequest.
 
-        筛选角色用户获取操作日志
+        操作日志用户名
 
         :return: The user_name of this OperateLogGetRequest.
         :rtype: str
@@ -109,7 +109,7 @@ class OperateLogGetRequest:
     def user_name(self, user_name):
         """Sets the user_name of this OperateLogGetRequest.
 
-        筛选角色用户获取操作日志
+        操作日志用户名
 
         :param user_name: The user_name of this OperateLogGetRequest.
         :type user_name: str
@@ -117,32 +117,32 @@ class OperateLogGetRequest:
         self._user_name = user_name
 
     @property
-    def operate_name(self):
-        """Gets the operate_name of this OperateLogGetRequest.
+    def action(self):
+        """Gets the action of this OperateLogGetRequest.
 
-        筛选操作对象名称获取操作日志
+        动作名称 - CREATE - DELETE - DOWNLOAD - UPDATE
 
-        :return: The operate_name of this OperateLogGetRequest.
+        :return: The action of this OperateLogGetRequest.
         :rtype: str
         """
-        return self._operate_name
+        return self._action
 
-    @operate_name.setter
-    def operate_name(self, operate_name):
-        """Sets the operate_name of this OperateLogGetRequest.
+    @action.setter
+    def action(self, action):
+        """Sets the action of this OperateLogGetRequest.
 
-        筛选操作对象名称获取操作日志
+        动作名称 - CREATE - DELETE - DOWNLOAD - UPDATE
 
-        :param operate_name: The operate_name of this OperateLogGetRequest.
-        :type operate_name: str
+        :param action: The action of this OperateLogGetRequest.
+        :type action: str
         """
-        self._operate_name = operate_name
+        self._action = action
 
     @property
     def result(self):
         """Gets the result of this OperateLogGetRequest.
 
-        根据执行结果获取操作日志 [success, fail]
+        执行结果 - success - fail
 
         :return: The result of this OperateLogGetRequest.
         :rtype: str
@@ -153,7 +153,7 @@ class OperateLogGetRequest:
     def result(self, result):
         """Sets the result of this OperateLogGetRequest.
 
-        根据执行结果获取操作日志 [success, fail]
+        执行结果 - success - fail
 
         :param result: The result of this OperateLogGetRequest.
         :type result: str

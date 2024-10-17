@@ -2,11 +2,10 @@
 
 import six
 
-from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class CreateDedicatedHostResponse(SdkResponse):
+class AttachedEnterpriseRouterRegionId:
 
     """
     Attributes:
@@ -18,51 +17,50 @@ class CreateDedicatedHostResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'dedicated_host_ids': 'list[str]'
+        'attached_er_table_region_id': 'str'
     }
 
     attribute_map = {
-        'dedicated_host_ids': 'dedicated_host_ids'
+        'attached_er_table_region_id': 'attached_er_table_region_id'
     }
 
-    def __init__(self, dedicated_host_ids=None):
-        """CreateDedicatedHostResponse
+    def __init__(self, attached_er_table_region_id=None):
+        """AttachedEnterpriseRouterRegionId
 
         The model defined in huaweicloud sdk
 
-        :param dedicated_host_ids: 已分配的专属主机ID数组。租户可以在这些专属主机上创建云服务器。
-        :type dedicated_host_ids: list[str]
+        :param attached_er_table_region_id: ER路由器的regionID。
+        :type attached_er_table_region_id: str
         """
         
-        super(CreateDedicatedHostResponse, self).__init__()
+        
 
-        self._dedicated_host_ids = None
+        self._attached_er_table_region_id = None
         self.discriminator = None
 
-        if dedicated_host_ids is not None:
-            self.dedicated_host_ids = dedicated_host_ids
+        self.attached_er_table_region_id = attached_er_table_region_id
 
     @property
-    def dedicated_host_ids(self):
-        """Gets the dedicated_host_ids of this CreateDedicatedHostResponse.
+    def attached_er_table_region_id(self):
+        """Gets the attached_er_table_region_id of this AttachedEnterpriseRouterRegionId.
 
-        已分配的专属主机ID数组。租户可以在这些专属主机上创建云服务器。
+        ER路由器的regionID。
 
-        :return: The dedicated_host_ids of this CreateDedicatedHostResponse.
-        :rtype: list[str]
+        :return: The attached_er_table_region_id of this AttachedEnterpriseRouterRegionId.
+        :rtype: str
         """
-        return self._dedicated_host_ids
+        return self._attached_er_table_region_id
 
-    @dedicated_host_ids.setter
-    def dedicated_host_ids(self, dedicated_host_ids):
-        """Sets the dedicated_host_ids of this CreateDedicatedHostResponse.
+    @attached_er_table_region_id.setter
+    def attached_er_table_region_id(self, attached_er_table_region_id):
+        """Sets the attached_er_table_region_id of this AttachedEnterpriseRouterRegionId.
 
-        已分配的专属主机ID数组。租户可以在这些专属主机上创建云服务器。
+        ER路由器的regionID。
 
-        :param dedicated_host_ids: The dedicated_host_ids of this CreateDedicatedHostResponse.
-        :type dedicated_host_ids: list[str]
+        :param attached_er_table_region_id: The attached_er_table_region_id of this AttachedEnterpriseRouterRegionId.
+        :type attached_er_table_region_id: str
         """
-        self._dedicated_host_ids = dedicated_host_ids
+        self._attached_er_table_region_id = attached_er_table_region_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -106,7 +104,7 @@ class CreateDedicatedHostResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CreateDedicatedHostResponse):
+        if not isinstance(other, AttachedEnterpriseRouterRegionId):
             return False
 
         return self.__dict__ == other.__dict__

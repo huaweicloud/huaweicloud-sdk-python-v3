@@ -65,7 +65,7 @@ class InterRegionBandwidth:
         :type bandwidth_package_id: str
         :param inter_regions: 域间实例信息。
         :type inter_regions: list[:class:`huaweicloudsdkcc.v3.InterRegion`]
-        :param bandwidth: 域间带宽的值。
+        :param bandwidth: 带宽值，单位Mbps。
         :type bandwidth: int
         """
         
@@ -299,7 +299,7 @@ class InterRegionBandwidth:
     def bandwidth(self):
         """Gets the bandwidth of this InterRegionBandwidth.
 
-        域间带宽的值。
+        带宽值，单位Mbps。
 
         :return: The bandwidth of this InterRegionBandwidth.
         :rtype: int
@@ -310,7 +310,7 @@ class InterRegionBandwidth:
     def bandwidth(self, bandwidth):
         """Sets the bandwidth of this InterRegionBandwidth.
 
-        域间带宽的值。
+        带宽值，单位Mbps。
 
         :param bandwidth: The bandwidth of this InterRegionBandwidth.
         :type bandwidth: int

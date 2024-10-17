@@ -23,7 +23,8 @@ class EcsSpecificationBean:
         'name': 'str',
         'proxy': 'int',
         'ram': 'int',
-        'vcpus': 'int'
+        'vcpus': 'int',
+        'az_type': 'str'
     }
 
     attribute_map = {
@@ -33,28 +34,31 @@ class EcsSpecificationBean:
         'name': 'name',
         'proxy': 'proxy',
         'ram': 'ram',
-        'vcpus': 'vcpus'
+        'vcpus': 'vcpus',
+        'az_type': 'az_type'
     }
 
-    def __init__(self, azs=None, id=None, level=None, name=None, proxy=None, ram=None, vcpus=None):
+    def __init__(self, azs=None, id=None, level=None, name=None, proxy=None, ram=None, vcpus=None, az_type=None):
         """EcsSpecificationBean
 
         The model defined in huaweicloud sdk
 
-        :param azs: 可用区集合
+        :param azs: ECS规格所在的可用区集合
         :type azs: list[str]
-        :param id: ID
+        :param id: 规格ID
         :type id: str
-        :param level: 等级
+        :param level: 规格等级，支持的等级以局点配置为准。 - entry:入门版 - low:基础版 - medium:专业版 - high:高级版
         :type level: str
-        :param name: 名称
+        :param name: 规格名称
         :type name: str
-        :param proxy: 代理
+        :param proxy: 规格可添加的数据库数量
         :type proxy: int
         :param ram: 内存
         :type ram: int
         :param vcpus: CPU
         :type vcpus: int
+        :param az_type: 可用区类型 - DEDICATED - DEC - EDGE
+        :type az_type: str
         """
         
         
@@ -66,6 +70,7 @@ class EcsSpecificationBean:
         self._proxy = None
         self._ram = None
         self._vcpus = None
+        self._az_type = None
         self.discriminator = None
 
         self.azs = azs
@@ -75,12 +80,14 @@ class EcsSpecificationBean:
         self.proxy = proxy
         self.ram = ram
         self.vcpus = vcpus
+        if az_type is not None:
+            self.az_type = az_type
 
     @property
     def azs(self):
         """Gets the azs of this EcsSpecificationBean.
 
-        可用区集合
+        ECS规格所在的可用区集合
 
         :return: The azs of this EcsSpecificationBean.
         :rtype: list[str]
@@ -91,7 +98,7 @@ class EcsSpecificationBean:
     def azs(self, azs):
         """Sets the azs of this EcsSpecificationBean.
 
-        可用区集合
+        ECS规格所在的可用区集合
 
         :param azs: The azs of this EcsSpecificationBean.
         :type azs: list[str]
@@ -102,7 +109,7 @@ class EcsSpecificationBean:
     def id(self):
         """Gets the id of this EcsSpecificationBean.
 
-        ID
+        规格ID
 
         :return: The id of this EcsSpecificationBean.
         :rtype: str
@@ -113,7 +120,7 @@ class EcsSpecificationBean:
     def id(self, id):
         """Sets the id of this EcsSpecificationBean.
 
-        ID
+        规格ID
 
         :param id: The id of this EcsSpecificationBean.
         :type id: str
@@ -124,7 +131,7 @@ class EcsSpecificationBean:
     def level(self):
         """Gets the level of this EcsSpecificationBean.
 
-        等级
+        规格等级，支持的等级以局点配置为准。 - entry:入门版 - low:基础版 - medium:专业版 - high:高级版
 
         :return: The level of this EcsSpecificationBean.
         :rtype: str
@@ -135,7 +142,7 @@ class EcsSpecificationBean:
     def level(self, level):
         """Sets the level of this EcsSpecificationBean.
 
-        等级
+        规格等级，支持的等级以局点配置为准。 - entry:入门版 - low:基础版 - medium:专业版 - high:高级版
 
         :param level: The level of this EcsSpecificationBean.
         :type level: str
@@ -146,7 +153,7 @@ class EcsSpecificationBean:
     def name(self):
         """Gets the name of this EcsSpecificationBean.
 
-        名称
+        规格名称
 
         :return: The name of this EcsSpecificationBean.
         :rtype: str
@@ -157,7 +164,7 @@ class EcsSpecificationBean:
     def name(self, name):
         """Sets the name of this EcsSpecificationBean.
 
-        名称
+        规格名称
 
         :param name: The name of this EcsSpecificationBean.
         :type name: str
@@ -168,7 +175,7 @@ class EcsSpecificationBean:
     def proxy(self):
         """Gets the proxy of this EcsSpecificationBean.
 
-        代理
+        规格可添加的数据库数量
 
         :return: The proxy of this EcsSpecificationBean.
         :rtype: int
@@ -179,7 +186,7 @@ class EcsSpecificationBean:
     def proxy(self, proxy):
         """Sets the proxy of this EcsSpecificationBean.
 
-        代理
+        规格可添加的数据库数量
 
         :param proxy: The proxy of this EcsSpecificationBean.
         :type proxy: int
@@ -229,6 +236,28 @@ class EcsSpecificationBean:
         :type vcpus: int
         """
         self._vcpus = vcpus
+
+    @property
+    def az_type(self):
+        """Gets the az_type of this EcsSpecificationBean.
+
+        可用区类型 - DEDICATED - DEC - EDGE
+
+        :return: The az_type of this EcsSpecificationBean.
+        :rtype: str
+        """
+        return self._az_type
+
+    @az_type.setter
+    def az_type(self, az_type):
+        """Sets the az_type of this EcsSpecificationBean.
+
+        可用区类型 - DEDICATED - DEC - EDGE
+
+        :param az_type: The az_type of this EcsSpecificationBean.
+        :type az_type: str
+        """
+        self._az_type = az_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

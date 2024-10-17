@@ -85,7 +85,7 @@ class AuditInstanceListBean:
 
         The model defined in huaweicloud sdk
 
-        :param charge_model: 付费模式 Period：包周期 Demand：按需。
+        :param charge_model: 付费模式  - Period：包周期 - Demand：按需。
         :type charge_model: str
         :param comment: 备注信息。
         :type comment: str
@@ -101,7 +101,7 @@ class AuditInstanceListBean:
         :type created: str
         :param database_limit: 支持的数据库总数
         :type database_limit: int
-        :param effect: 1.冻结可释放  2.冻结不可释放 3.冻结后不可续费
+        :param effect: 实例结果状态 - 1:冻结可释放  - 2:冻结不可释放 - 3:冻结后不可续费
         :type effect: int
         :param expired: 过期时间
         :type expired: str
@@ -111,9 +111,9 @@ class AuditInstanceListBean:
         :type keep_days: str
         :param name: 实例别名
         :type name: str
-        :param new_version: 如果有返回，则需要升级，如果没有，则为null
+        :param new_version: 如果有返回，则需要升级，如果没有，则为null。
         :type new_version: str
-        :param port_id: 绑定弹性IP的portID
+        :param port_id: 绑定弹性IP的port ID
         :type port_id: str
         :param ram: 内存
         :type ram: int
@@ -131,11 +131,11 @@ class AuditInstanceListBean:
         :type security_group_id: str
         :param specification: 实例规格
         :type specification: str
-        :param status: 实例状态： SHUTOFF(已关闭) ACTIVE(运行中，允许任何操作) DELETING(删除中，不允许任何操作) BUILD(创建中，不允许任何操作) DELETED(已删除，不需要展示) ERROR(故障，只允许删除) HAWAIT(等待备机创建成功，不允许任何操作) FROZEN(已冻结，只允许续费、绑定/解绑) UPGRADING(升级中，不允许升级操作)
+        :param status: 实例状态  - SHUTOFF :已关闭  - ACTIVE: 运行中，允许任何操作   - DELETING: 删除中，不允许任何操作  - BUILD: 创建中，不允许任何操作  - DELETED: 已删除，不需要展示  - ERROR: 故障，只允许删除  - HAWAIT: 等待备机创建成功，不允许任何操作  - FROZEN: 已冻结，只允许续费、绑定/解绑  - UPGRADING: 升级中，不允许升级操作
         :type status: str
         :param subnet_id: 子网ID
         :type subnet_id: str
-        :param task: 任务状态： powering-on(正在开启，实例可以绑定、解绑) powering-off(正在关闭，实例可以绑定、解绑) rebooting(正在重启，实例可以绑定、解绑) delete_wait(等待删除，集群与实例不允许任何操作) NO_TASK(不展示)
+        :param task: 任务状态  - powering-on: 正在开启，实例可以绑定、解绑  - powering-off: 正在关闭，实例可以绑定、解绑  - rebooting: 正在重启，实例可以绑定、解绑  - delete_wait: 等待删除，集群与实例不允许任何操作  - NO_TASK: 不展示
         :type task: str
         :param version: 实例的当前版本
         :type version: str
@@ -212,7 +212,7 @@ class AuditInstanceListBean:
     def charge_model(self):
         """Gets the charge_model of this AuditInstanceListBean.
 
-        付费模式 Period：包周期 Demand：按需。
+        付费模式  - Period：包周期 - Demand：按需。
 
         :return: The charge_model of this AuditInstanceListBean.
         :rtype: str
@@ -223,7 +223,7 @@ class AuditInstanceListBean:
     def charge_model(self, charge_model):
         """Sets the charge_model of this AuditInstanceListBean.
 
-        付费模式 Period：包周期 Demand：按需。
+        付费模式  - Period：包周期 - Demand：按需。
 
         :param charge_model: The charge_model of this AuditInstanceListBean.
         :type charge_model: str
@@ -388,7 +388,7 @@ class AuditInstanceListBean:
     def effect(self):
         """Gets the effect of this AuditInstanceListBean.
 
-        1.冻结可释放  2.冻结不可释放 3.冻结后不可续费
+        实例结果状态 - 1:冻结可释放  - 2:冻结不可释放 - 3:冻结后不可续费
 
         :return: The effect of this AuditInstanceListBean.
         :rtype: int
@@ -399,7 +399,7 @@ class AuditInstanceListBean:
     def effect(self, effect):
         """Sets the effect of this AuditInstanceListBean.
 
-        1.冻结可释放  2.冻结不可释放 3.冻结后不可续费
+        实例结果状态 - 1:冻结可释放  - 2:冻结不可释放 - 3:冻结后不可续费
 
         :param effect: The effect of this AuditInstanceListBean.
         :type effect: int
@@ -498,7 +498,7 @@ class AuditInstanceListBean:
     def new_version(self):
         """Gets the new_version of this AuditInstanceListBean.
 
-        如果有返回，则需要升级，如果没有，则为null
+        如果有返回，则需要升级，如果没有，则为null。
 
         :return: The new_version of this AuditInstanceListBean.
         :rtype: str
@@ -509,7 +509,7 @@ class AuditInstanceListBean:
     def new_version(self, new_version):
         """Sets the new_version of this AuditInstanceListBean.
 
-        如果有返回，则需要升级，如果没有，则为null
+        如果有返回，则需要升级，如果没有，则为null。
 
         :param new_version: The new_version of this AuditInstanceListBean.
         :type new_version: str
@@ -520,7 +520,7 @@ class AuditInstanceListBean:
     def port_id(self):
         """Gets the port_id of this AuditInstanceListBean.
 
-        绑定弹性IP的portID
+        绑定弹性IP的port ID
 
         :return: The port_id of this AuditInstanceListBean.
         :rtype: str
@@ -531,7 +531,7 @@ class AuditInstanceListBean:
     def port_id(self, port_id):
         """Sets the port_id of this AuditInstanceListBean.
 
-        绑定弹性IP的portID
+        绑定弹性IP的port ID
 
         :param port_id: The port_id of this AuditInstanceListBean.
         :type port_id: str
@@ -718,7 +718,7 @@ class AuditInstanceListBean:
     def status(self):
         """Gets the status of this AuditInstanceListBean.
 
-        实例状态： SHUTOFF(已关闭) ACTIVE(运行中，允许任何操作) DELETING(删除中，不允许任何操作) BUILD(创建中，不允许任何操作) DELETED(已删除，不需要展示) ERROR(故障，只允许删除) HAWAIT(等待备机创建成功，不允许任何操作) FROZEN(已冻结，只允许续费、绑定/解绑) UPGRADING(升级中，不允许升级操作)
+        实例状态  - SHUTOFF :已关闭  - ACTIVE: 运行中，允许任何操作   - DELETING: 删除中，不允许任何操作  - BUILD: 创建中，不允许任何操作  - DELETED: 已删除，不需要展示  - ERROR: 故障，只允许删除  - HAWAIT: 等待备机创建成功，不允许任何操作  - FROZEN: 已冻结，只允许续费、绑定/解绑  - UPGRADING: 升级中，不允许升级操作
 
         :return: The status of this AuditInstanceListBean.
         :rtype: str
@@ -729,7 +729,7 @@ class AuditInstanceListBean:
     def status(self, status):
         """Sets the status of this AuditInstanceListBean.
 
-        实例状态： SHUTOFF(已关闭) ACTIVE(运行中，允许任何操作) DELETING(删除中，不允许任何操作) BUILD(创建中，不允许任何操作) DELETED(已删除，不需要展示) ERROR(故障，只允许删除) HAWAIT(等待备机创建成功，不允许任何操作) FROZEN(已冻结，只允许续费、绑定/解绑) UPGRADING(升级中，不允许升级操作)
+        实例状态  - SHUTOFF :已关闭  - ACTIVE: 运行中，允许任何操作   - DELETING: 删除中，不允许任何操作  - BUILD: 创建中，不允许任何操作  - DELETED: 已删除，不需要展示  - ERROR: 故障，只允许删除  - HAWAIT: 等待备机创建成功，不允许任何操作  - FROZEN: 已冻结，只允许续费、绑定/解绑  - UPGRADING: 升级中，不允许升级操作
 
         :param status: The status of this AuditInstanceListBean.
         :type status: str
@@ -762,7 +762,7 @@ class AuditInstanceListBean:
     def task(self):
         """Gets the task of this AuditInstanceListBean.
 
-        任务状态： powering-on(正在开启，实例可以绑定、解绑) powering-off(正在关闭，实例可以绑定、解绑) rebooting(正在重启，实例可以绑定、解绑) delete_wait(等待删除，集群与实例不允许任何操作) NO_TASK(不展示)
+        任务状态  - powering-on: 正在开启，实例可以绑定、解绑  - powering-off: 正在关闭，实例可以绑定、解绑  - rebooting: 正在重启，实例可以绑定、解绑  - delete_wait: 等待删除，集群与实例不允许任何操作  - NO_TASK: 不展示
 
         :return: The task of this AuditInstanceListBean.
         :rtype: str
@@ -773,7 +773,7 @@ class AuditInstanceListBean:
     def task(self, task):
         """Sets the task of this AuditInstanceListBean.
 
-        任务状态： powering-on(正在开启，实例可以绑定、解绑) powering-off(正在关闭，实例可以绑定、解绑) rebooting(正在重启，实例可以绑定、解绑) delete_wait(等待删除，集群与实例不允许任何操作) NO_TASK(不展示)
+        任务状态  - powering-on: 正在开启，实例可以绑定、解绑  - powering-off: 正在关闭，实例可以绑定、解绑  - rebooting: 正在重启，实例可以绑定、解绑  - delete_wait: 等待删除，集群与实例不允许任何操作  - NO_TASK: 不展示
 
         :param task: The task of this AuditInstanceListBean.
         :type task: str

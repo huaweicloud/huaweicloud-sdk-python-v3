@@ -29,7 +29,7 @@ class SqlRuleRequest:
 
         The model defined in huaweicloud sdk
 
-        :param risk_levels: 风险级别:(多项查询使用逗号分隔)  HIGH  MEDIUM  LOW  NO_RISK
+        :param risk_levels: 风险级别 - HIGH - MEDIUM - LOW - NO_RISK
         :type risk_levels: str
         """
         
@@ -45,7 +45,7 @@ class SqlRuleRequest:
     def risk_levels(self):
         """Gets the risk_levels of this SqlRuleRequest.
 
-        风险级别:(多项查询使用逗号分隔)  HIGH  MEDIUM  LOW  NO_RISK
+        风险级别 - HIGH - MEDIUM - LOW - NO_RISK
 
         :return: The risk_levels of this SqlRuleRequest.
         :rtype: str
@@ -56,7 +56,7 @@ class SqlRuleRequest:
     def risk_levels(self, risk_levels):
         """Sets the risk_levels of this SqlRuleRequest.
 
-        风险级别:(多项查询使用逗号分隔)  HIGH  MEDIUM  LOW  NO_RISK
+        风险级别 - HIGH - MEDIUM - LOW - NO_RISK
 
         :param risk_levels: The risk_levels of this SqlRuleRequest.
         :type risk_levels: str

@@ -2037,6 +2037,9 @@ class GslAsyncClient(Client):
             query_params.append(('billing_cycle', local_var_params['billing_cycle']))
         if 'all_billing_cycle' in local_var_params:
             query_params.append(('all_billing_cycle', local_var_params['all_billing_cycle']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+            collection_formats['status'] = 'csv'
 
         header_params = {}
 

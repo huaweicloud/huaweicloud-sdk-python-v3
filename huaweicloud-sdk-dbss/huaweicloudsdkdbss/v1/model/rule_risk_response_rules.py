@@ -23,7 +23,8 @@ class RuleRiskResponseRules:
         'feature': 'str',
         'status': 'str',
         'rank': 'int',
-        'risk_level': 'str'
+        'risk_level': 'str',
+        'rule_type': 'str'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class RuleRiskResponseRules:
         'feature': 'feature',
         'status': 'status',
         'rank': 'rank',
-        'risk_level': 'risk_level'
+        'risk_level': 'risk_level',
+        'rule_type': 'rule_type'
     }
 
-    def __init__(self, id=None, name=None, type=None, feature=None, status=None, rank=None, risk_level=None):
+    def __init__(self, id=None, name=None, type=None, feature=None, status=None, rank=None, risk_level=None, rule_type=None):
         """RuleRiskResponseRules
 
         The model defined in huaweicloud sdk
@@ -45,16 +47,18 @@ class RuleRiskResponseRules:
         :type id: str
         :param name: 风险规则名称
         :type name: str
-        :param type: 风险类型
+        :param type: 风险规则类型
         :type type: str
-        :param feature: 风险特征
+        :param feature: 风险规则特征
         :type feature: str
-        :param status: 风险规则状态
+        :param status: 风险规则状态。 - ON: 开启 - OFF: 关闭
         :type status: str
-        :param rank: 风险规则优先级
+        :param rank: 风险规则优先级。数字越小优先级越高。
         :type rank: int
-        :param risk_level: 风险级别
+        :param risk_level: 风险级别 - LOW - MEDIUM - HIGH - NO_RISK]
         :type risk_level: str
+        :param rule_type: 规则类型
+        :type rule_type: str
         """
         
         
@@ -66,22 +70,21 @@ class RuleRiskResponseRules:
         self._status = None
         self._rank = None
         self._risk_level = None
+        self._rule_type = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
-        if name is not None:
-            self.name = name
-        if type is not None:
-            self.type = type
+        self.id = id
+        self.name = name
+        self.type = type
         if feature is not None:
             self.feature = feature
-        if status is not None:
-            self.status = status
+        self.status = status
         if rank is not None:
             self.rank = rank
         if risk_level is not None:
             self.risk_level = risk_level
+        if rule_type is not None:
+            self.rule_type = rule_type
 
     @property
     def id(self):
@@ -131,7 +134,7 @@ class RuleRiskResponseRules:
     def type(self):
         """Gets the type of this RuleRiskResponseRules.
 
-        风险类型
+        风险规则类型
 
         :return: The type of this RuleRiskResponseRules.
         :rtype: str
@@ -142,7 +145,7 @@ class RuleRiskResponseRules:
     def type(self, type):
         """Sets the type of this RuleRiskResponseRules.
 
-        风险类型
+        风险规则类型
 
         :param type: The type of this RuleRiskResponseRules.
         :type type: str
@@ -153,7 +156,7 @@ class RuleRiskResponseRules:
     def feature(self):
         """Gets the feature of this RuleRiskResponseRules.
 
-        风险特征
+        风险规则特征
 
         :return: The feature of this RuleRiskResponseRules.
         :rtype: str
@@ -164,7 +167,7 @@ class RuleRiskResponseRules:
     def feature(self, feature):
         """Sets the feature of this RuleRiskResponseRules.
 
-        风险特征
+        风险规则特征
 
         :param feature: The feature of this RuleRiskResponseRules.
         :type feature: str
@@ -175,7 +178,7 @@ class RuleRiskResponseRules:
     def status(self):
         """Gets the status of this RuleRiskResponseRules.
 
-        风险规则状态
+        风险规则状态。 - ON: 开启 - OFF: 关闭
 
         :return: The status of this RuleRiskResponseRules.
         :rtype: str
@@ -186,7 +189,7 @@ class RuleRiskResponseRules:
     def status(self, status):
         """Sets the status of this RuleRiskResponseRules.
 
-        风险规则状态
+        风险规则状态。 - ON: 开启 - OFF: 关闭
 
         :param status: The status of this RuleRiskResponseRules.
         :type status: str
@@ -197,7 +200,7 @@ class RuleRiskResponseRules:
     def rank(self):
         """Gets the rank of this RuleRiskResponseRules.
 
-        风险规则优先级
+        风险规则优先级。数字越小优先级越高。
 
         :return: The rank of this RuleRiskResponseRules.
         :rtype: int
@@ -208,7 +211,7 @@ class RuleRiskResponseRules:
     def rank(self, rank):
         """Sets the rank of this RuleRiskResponseRules.
 
-        风险规则优先级
+        风险规则优先级。数字越小优先级越高。
 
         :param rank: The rank of this RuleRiskResponseRules.
         :type rank: int
@@ -219,7 +222,7 @@ class RuleRiskResponseRules:
     def risk_level(self):
         """Gets the risk_level of this RuleRiskResponseRules.
 
-        风险级别
+        风险级别 - LOW - MEDIUM - HIGH - NO_RISK]
 
         :return: The risk_level of this RuleRiskResponseRules.
         :rtype: str
@@ -230,12 +233,34 @@ class RuleRiskResponseRules:
     def risk_level(self, risk_level):
         """Sets the risk_level of this RuleRiskResponseRules.
 
-        风险级别
+        风险级别 - LOW - MEDIUM - HIGH - NO_RISK]
 
         :param risk_level: The risk_level of this RuleRiskResponseRules.
         :type risk_level: str
         """
         self._risk_level = risk_level
+
+    @property
+    def rule_type(self):
+        """Gets the rule_type of this RuleRiskResponseRules.
+
+        规则类型
+
+        :return: The rule_type of this RuleRiskResponseRules.
+        :rtype: str
+        """
+        return self._rule_type
+
+    @rule_type.setter
+    def rule_type(self, rule_type):
+        """Sets the rule_type of this RuleRiskResponseRules.
+
+        规则类型
+
+        :param rule_type: The rule_type of this RuleRiskResponseRules.
+        :type rule_type: str
+        """
+        self._rule_type = rule_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

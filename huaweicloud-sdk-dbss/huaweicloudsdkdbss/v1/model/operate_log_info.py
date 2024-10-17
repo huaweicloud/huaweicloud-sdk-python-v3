@@ -20,8 +20,8 @@ class OperateLogInfo:
         'id': 'str',
         'user': 'str',
         'time': 'str',
-        'function': 'str',
         'action': 'str',
+        'function': 'str',
         'name': 'str',
         'description': 'str',
         'result': 'str'
@@ -31,33 +31,33 @@ class OperateLogInfo:
         'id': 'id',
         'user': 'user',
         'time': 'time',
-        'function': 'function',
         'action': 'action',
+        'function': 'function',
         'name': 'name',
         'description': 'description',
         'result': 'result'
     }
 
-    def __init__(self, id=None, user=None, time=None, function=None, action=None, name=None, description=None, result=None):
+    def __init__(self, id=None, user=None, time=None, action=None, function=None, name=None, description=None, result=None):
         """OperateLogInfo
 
         The model defined in huaweicloud sdk
 
         :param id: 操作日志ID
         :type id: str
-        :param user: 操作日志用户
+        :param user: 操作日志用户名
         :type user: str
-        :param time: 该条记录发生的时间，格式为时间戳
+        :param time: 该条记录发生的时间，格式为时间戳。
         :type time: str
+        :param action: 该条记录的操作类型 - create：创建 - update：更新 - delete：删除 - download: 下载
+        :type action: str
         :param function: 该条记录的功能类型
         :type function: str
-        :param action: 该条记录的操作类型  create：创建  update：更新  operate：操作（开关）  delete：删除
-        :type action: str
         :param name: 该条记录对应的用户操作对象
         :type name: str
         :param description: 该条记录具体的描述
         :type description: str
-        :param result: 该条记录对应用户执行的结果  success表示成功  fail表示失败
+        :param result: 该条记录对应用户执行的结果 - success: 成功 - fail: 失败
         :type result: str
         """
         
@@ -66,8 +66,8 @@ class OperateLogInfo:
         self._id = None
         self._user = None
         self._time = None
-        self._function = None
         self._action = None
+        self._function = None
         self._name = None
         self._description = None
         self._result = None
@@ -79,10 +79,10 @@ class OperateLogInfo:
             self.user = user
         if time is not None:
             self.time = time
-        if function is not None:
-            self.function = function
         if action is not None:
             self.action = action
+        if function is not None:
+            self.function = function
         if name is not None:
             self.name = name
         if description is not None:
@@ -116,7 +116,7 @@ class OperateLogInfo:
     def user(self):
         """Gets the user of this OperateLogInfo.
 
-        操作日志用户
+        操作日志用户名
 
         :return: The user of this OperateLogInfo.
         :rtype: str
@@ -127,7 +127,7 @@ class OperateLogInfo:
     def user(self, user):
         """Sets the user of this OperateLogInfo.
 
-        操作日志用户
+        操作日志用户名
 
         :param user: The user of this OperateLogInfo.
         :type user: str
@@ -138,7 +138,7 @@ class OperateLogInfo:
     def time(self):
         """Gets the time of this OperateLogInfo.
 
-        该条记录发生的时间，格式为时间戳
+        该条记录发生的时间，格式为时间戳。
 
         :return: The time of this OperateLogInfo.
         :rtype: str
@@ -149,12 +149,34 @@ class OperateLogInfo:
     def time(self, time):
         """Sets the time of this OperateLogInfo.
 
-        该条记录发生的时间，格式为时间戳
+        该条记录发生的时间，格式为时间戳。
 
         :param time: The time of this OperateLogInfo.
         :type time: str
         """
         self._time = time
+
+    @property
+    def action(self):
+        """Gets the action of this OperateLogInfo.
+
+        该条记录的操作类型 - create：创建 - update：更新 - delete：删除 - download: 下载
+
+        :return: The action of this OperateLogInfo.
+        :rtype: str
+        """
+        return self._action
+
+    @action.setter
+    def action(self, action):
+        """Sets the action of this OperateLogInfo.
+
+        该条记录的操作类型 - create：创建 - update：更新 - delete：删除 - download: 下载
+
+        :param action: The action of this OperateLogInfo.
+        :type action: str
+        """
+        self._action = action
 
     @property
     def function(self):
@@ -177,28 +199,6 @@ class OperateLogInfo:
         :type function: str
         """
         self._function = function
-
-    @property
-    def action(self):
-        """Gets the action of this OperateLogInfo.
-
-        该条记录的操作类型  create：创建  update：更新  operate：操作（开关）  delete：删除
-
-        :return: The action of this OperateLogInfo.
-        :rtype: str
-        """
-        return self._action
-
-    @action.setter
-    def action(self, action):
-        """Sets the action of this OperateLogInfo.
-
-        该条记录的操作类型  create：创建  update：更新  operate：操作（开关）  delete：删除
-
-        :param action: The action of this OperateLogInfo.
-        :type action: str
-        """
-        self._action = action
 
     @property
     def name(self):
@@ -248,7 +248,7 @@ class OperateLogInfo:
     def result(self):
         """Gets the result of this OperateLogInfo.
 
-        该条记录对应用户执行的结果  success表示成功  fail表示失败
+        该条记录对应用户执行的结果 - success: 成功 - fail: 失败
 
         :return: The result of this OperateLogInfo.
         :rtype: str
@@ -259,7 +259,7 @@ class OperateLogInfo:
     def result(self, result):
         """Sets the result of this OperateLogInfo.
 
-        该条记录对应用户执行的结果  success表示成功  fail表示失败
+        该条记录对应用户执行的结果 - success: 成功 - fail: 失败
 
         :param result: The result of this OperateLogInfo.
         :type result: str

@@ -2,11 +2,10 @@
 
 import six
 
-from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class DeleteDedicatedHostResponse(SdkResponse):
+class ResourceTagDeleteRequestTags:
 
     """
     Attributes:
@@ -18,20 +17,79 @@ class DeleteDedicatedHostResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'key': 'str',
+        'value': 'str'
     }
 
     attribute_map = {
+        'key': 'key',
+        'value': 'value'
     }
 
-    def __init__(self):
-        """DeleteDedicatedHostResponse
+    def __init__(self, key=None, value=None):
+        """ResourceTagDeleteRequestTags
 
         The model defined in huaweicloud sdk
 
+        :param key: 键。最大长度128个字符。
+        :type key: str
+        :param value: 值。每个值最大长度255个字符。
+        :type value: str
         """
         
-        super(DeleteDedicatedHostResponse, self).__init__()
+        
+
+        self._key = None
+        self._value = None
         self.discriminator = None
+
+        self.key = key
+        if value is not None:
+            self.value = value
+
+    @property
+    def key(self):
+        """Gets the key of this ResourceTagDeleteRequestTags.
+
+        键。最大长度128个字符。
+
+        :return: The key of this ResourceTagDeleteRequestTags.
+        :rtype: str
+        """
+        return self._key
+
+    @key.setter
+    def key(self, key):
+        """Sets the key of this ResourceTagDeleteRequestTags.
+
+        键。最大长度128个字符。
+
+        :param key: The key of this ResourceTagDeleteRequestTags.
+        :type key: str
+        """
+        self._key = key
+
+    @property
+    def value(self):
+        """Gets the value of this ResourceTagDeleteRequestTags.
+
+        值。每个值最大长度255个字符。
+
+        :return: The value of this ResourceTagDeleteRequestTags.
+        :rtype: str
+        """
+        return self._value
+
+    @value.setter
+    def value(self, value):
+        """Sets the value of this ResourceTagDeleteRequestTags.
+
+        值。每个值最大长度255个字符。
+
+        :param value: The value of this ResourceTagDeleteRequestTags.
+        :type value: str
+        """
+        self._value = value
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -75,7 +133,7 @@ class DeleteDedicatedHostResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, DeleteDedicatedHostResponse):
+        if not isinstance(other, ResourceTagDeleteRequestTags):
             return False
 
         return self.__dict__ == other.__dict__

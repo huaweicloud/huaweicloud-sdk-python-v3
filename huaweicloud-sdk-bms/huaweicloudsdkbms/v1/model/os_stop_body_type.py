@@ -43,7 +43,8 @@ class OsStopBodyType:
         self._servers = None
         self.discriminator = None
 
-        self.type = type
+        if type is not None:
+            self.type = type
         self.servers = servers
 
     @property

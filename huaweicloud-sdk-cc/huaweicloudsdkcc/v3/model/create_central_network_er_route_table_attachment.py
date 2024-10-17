@@ -29,7 +29,7 @@ class CreateCentralNetworkErRouteTableAttachment:
         'attached_er_table_region_id': 'str',
         'attached_er_id': 'str',
         'attached_er_table_id': 'str',
-        'hosted_cloud': 'str'
+        'hosted_cloud': 'HostedCloudEnum'
     }
 
     attribute_map = {
@@ -69,16 +69,16 @@ class CreateCentralNetworkErRouteTableAttachment:
         :type attachment_id: str
         :param enterprise_router_table_id: 企业路由器的路由表ID。
         :type enterprise_router_table_id: str
-        :param attached_er_table_project_id: 实例所属项目ID。
+        :param attached_er_table_project_id: 被挂载的企业路由器的项目ID。
         :type attached_er_table_project_id: str
-        :param attached_er_table_region_id: RegionID。
+        :param attached_er_table_region_id: ER路由器的regionID。
         :type attached_er_table_region_id: str
-        :param attached_er_id: 实例ID。
+        :param attached_er_id: 被挂载的企业路由器ID。
         :type attached_er_id: str
-        :param attached_er_table_id: 实例ID。
+        :param attached_er_table_id: 被挂载的企业路由器的路由表ID。
         :type attached_er_table_id: str
-        :param hosted_cloud: - HWCloud (华为云) - Ireland (爱尔兰)
-        :type hosted_cloud: str
+        :param hosted_cloud: 
+        :type hosted_cloud: :class:`huaweicloudsdkcc.v3.HostedCloudEnum`
         """
         
         
@@ -294,7 +294,7 @@ class CreateCentralNetworkErRouteTableAttachment:
     def attached_er_table_project_id(self):
         """Gets the attached_er_table_project_id of this CreateCentralNetworkErRouteTableAttachment.
 
-        实例所属项目ID。
+        被挂载的企业路由器的项目ID。
 
         :return: The attached_er_table_project_id of this CreateCentralNetworkErRouteTableAttachment.
         :rtype: str
@@ -305,7 +305,7 @@ class CreateCentralNetworkErRouteTableAttachment:
     def attached_er_table_project_id(self, attached_er_table_project_id):
         """Sets the attached_er_table_project_id of this CreateCentralNetworkErRouteTableAttachment.
 
-        实例所属项目ID。
+        被挂载的企业路由器的项目ID。
 
         :param attached_er_table_project_id: The attached_er_table_project_id of this CreateCentralNetworkErRouteTableAttachment.
         :type attached_er_table_project_id: str
@@ -316,7 +316,7 @@ class CreateCentralNetworkErRouteTableAttachment:
     def attached_er_table_region_id(self):
         """Gets the attached_er_table_region_id of this CreateCentralNetworkErRouteTableAttachment.
 
-        RegionID。
+        ER路由器的regionID。
 
         :return: The attached_er_table_region_id of this CreateCentralNetworkErRouteTableAttachment.
         :rtype: str
@@ -327,7 +327,7 @@ class CreateCentralNetworkErRouteTableAttachment:
     def attached_er_table_region_id(self, attached_er_table_region_id):
         """Sets the attached_er_table_region_id of this CreateCentralNetworkErRouteTableAttachment.
 
-        RegionID。
+        ER路由器的regionID。
 
         :param attached_er_table_region_id: The attached_er_table_region_id of this CreateCentralNetworkErRouteTableAttachment.
         :type attached_er_table_region_id: str
@@ -338,7 +338,7 @@ class CreateCentralNetworkErRouteTableAttachment:
     def attached_er_id(self):
         """Gets the attached_er_id of this CreateCentralNetworkErRouteTableAttachment.
 
-        实例ID。
+        被挂载的企业路由器ID。
 
         :return: The attached_er_id of this CreateCentralNetworkErRouteTableAttachment.
         :rtype: str
@@ -349,7 +349,7 @@ class CreateCentralNetworkErRouteTableAttachment:
     def attached_er_id(self, attached_er_id):
         """Sets the attached_er_id of this CreateCentralNetworkErRouteTableAttachment.
 
-        实例ID。
+        被挂载的企业路由器ID。
 
         :param attached_er_id: The attached_er_id of this CreateCentralNetworkErRouteTableAttachment.
         :type attached_er_id: str
@@ -360,7 +360,7 @@ class CreateCentralNetworkErRouteTableAttachment:
     def attached_er_table_id(self):
         """Gets the attached_er_table_id of this CreateCentralNetworkErRouteTableAttachment.
 
-        实例ID。
+        被挂载的企业路由器的路由表ID。
 
         :return: The attached_er_table_id of this CreateCentralNetworkErRouteTableAttachment.
         :rtype: str
@@ -371,7 +371,7 @@ class CreateCentralNetworkErRouteTableAttachment:
     def attached_er_table_id(self, attached_er_table_id):
         """Sets the attached_er_table_id of this CreateCentralNetworkErRouteTableAttachment.
 
-        实例ID。
+        被挂载的企业路由器的路由表ID。
 
         :param attached_er_table_id: The attached_er_table_id of this CreateCentralNetworkErRouteTableAttachment.
         :type attached_er_table_id: str
@@ -382,10 +382,8 @@ class CreateCentralNetworkErRouteTableAttachment:
     def hosted_cloud(self):
         """Gets the hosted_cloud of this CreateCentralNetworkErRouteTableAttachment.
 
-        - HWCloud (华为云) - Ireland (爱尔兰)
-
         :return: The hosted_cloud of this CreateCentralNetworkErRouteTableAttachment.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcc.v3.HostedCloudEnum`
         """
         return self._hosted_cloud
 
@@ -393,10 +391,8 @@ class CreateCentralNetworkErRouteTableAttachment:
     def hosted_cloud(self, hosted_cloud):
         """Sets the hosted_cloud of this CreateCentralNetworkErRouteTableAttachment.
 
-        - HWCloud (华为云) - Ireland (爱尔兰)
-
         :param hosted_cloud: The hosted_cloud of this CreateCentralNetworkErRouteTableAttachment.
-        :type hosted_cloud: str
+        :type hosted_cloud: :class:`huaweicloudsdkcc.v3.HostedCloudEnum`
         """
         self._hosted_cloud = hosted_cloud
 

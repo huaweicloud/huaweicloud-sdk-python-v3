@@ -31,9 +31,9 @@ class ProjectResourceTagResponseTags:
 
         The model defined in huaweicloud sdk
 
-        :param key: 键。最大长度128个字符。 key满足3.1 KEY字符集规范。
+        :param key: 键。最大长度128个字符。
         :type key: str
-        :param values: 值列表。每个值最大长度255个字符。 value满足3.2 VALUE字符集规范。
+        :param values: 值列表。每个值最大长度255个字符。
         :type values: list[str]
         """
         
@@ -43,14 +43,16 @@ class ProjectResourceTagResponseTags:
         self._values = None
         self.discriminator = None
 
-        self.key = key
-        self.values = values
+        if key is not None:
+            self.key = key
+        if values is not None:
+            self.values = values
 
     @property
     def key(self):
         """Gets the key of this ProjectResourceTagResponseTags.
 
-        键。最大长度128个字符。 key满足3.1 KEY字符集规范。
+        键。最大长度128个字符。
 
         :return: The key of this ProjectResourceTagResponseTags.
         :rtype: str
@@ -61,7 +63,7 @@ class ProjectResourceTagResponseTags:
     def key(self, key):
         """Sets the key of this ProjectResourceTagResponseTags.
 
-        键。最大长度128个字符。 key满足3.1 KEY字符集规范。
+        键。最大长度128个字符。
 
         :param key: The key of this ProjectResourceTagResponseTags.
         :type key: str
@@ -72,7 +74,7 @@ class ProjectResourceTagResponseTags:
     def values(self):
         """Gets the values of this ProjectResourceTagResponseTags.
 
-        值列表。每个值最大长度255个字符。 value满足3.2 VALUE字符集规范。
+        值列表。每个值最大长度255个字符。
 
         :return: The values of this ProjectResourceTagResponseTags.
         :rtype: list[str]
@@ -83,7 +85,7 @@ class ProjectResourceTagResponseTags:
     def values(self, values):
         """Sets the values of this ProjectResourceTagResponseTags.
 
-        值列表。每个值最大长度255个字符。 value满足3.2 VALUE字符集规范。
+        值列表。每个值最大长度255个字符。
 
         :param values: The values of this ProjectResourceTagResponseTags.
         :type values: list[str]

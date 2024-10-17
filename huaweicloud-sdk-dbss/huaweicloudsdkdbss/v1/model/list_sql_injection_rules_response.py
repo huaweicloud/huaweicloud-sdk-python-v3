@@ -34,7 +34,7 @@ class ListSqlInjectionRulesResponse(SdkResponse):
 
         :param rules: SQL规则列表
         :type rules: list[:class:`huaweicloudsdkdbss.v1.SqlRuleResponseRules`]
-        :param total: 当前范围总数
+        :param total: 总数
         :type total: int
         """
         
@@ -75,7 +75,7 @@ class ListSqlInjectionRulesResponse(SdkResponse):
     def total(self):
         """Gets the total of this ListSqlInjectionRulesResponse.
 
-        当前范围总数
+        总数
 
         :return: The total of this ListSqlInjectionRulesResponse.
         :rtype: int
@@ -86,7 +86,7 @@ class ListSqlInjectionRulesResponse(SdkResponse):
     def total(self, total):
         """Sets the total of this ListSqlInjectionRulesResponse.
 
-        当前范围总数
+        总数
 
         :param total: The total of this ListSqlInjectionRulesResponse.
         :type total: int

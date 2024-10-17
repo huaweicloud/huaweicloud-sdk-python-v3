@@ -29,7 +29,7 @@ class ListAuditInstanceJobsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_id: 资源ID
+        :param resource_id: 资源ID。可在查询实例列表接口的resource_id获取。
         :type resource_id: str
         """
         
@@ -44,7 +44,7 @@ class ListAuditInstanceJobsRequest:
     def resource_id(self):
         """Gets the resource_id of this ListAuditInstanceJobsRequest.
 
-        资源ID
+        资源ID。可在查询实例列表接口的resource_id获取。
 
         :return: The resource_id of this ListAuditInstanceJobsRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class ListAuditInstanceJobsRequest:
     def resource_id(self, resource_id):
         """Sets the resource_id of this ListAuditInstanceJobsRequest.
 
-        资源ID
+        资源ID。可在查询实例列表接口的resource_id获取。
 
         :param resource_id: The resource_id of this ListAuditInstanceJobsRequest.
         :type resource_id: str

@@ -33,11 +33,11 @@ class ListAuditRuleRisksRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例ID
+        :param instance_id: 实例ID。可在查询实例列表接口的ID字段获取。
         :type instance_id: str
         :param name: 风险名称
         :type name: str
-        :param risk_levels: 风险级别[LOW,MEDIUM,HIGH,NO_RISK]
+        :param risk_levels: 风险级别 - LOW - MEDIUM - HIGH - NO_RISK
         :type risk_levels: str
         """
         
@@ -58,7 +58,7 @@ class ListAuditRuleRisksRequest:
     def instance_id(self):
         """Gets the instance_id of this ListAuditRuleRisksRequest.
 
-        实例ID
+        实例ID。可在查询实例列表接口的ID字段获取。
 
         :return: The instance_id of this ListAuditRuleRisksRequest.
         :rtype: str
@@ -69,7 +69,7 @@ class ListAuditRuleRisksRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListAuditRuleRisksRequest.
 
-        实例ID
+        实例ID。可在查询实例列表接口的ID字段获取。
 
         :param instance_id: The instance_id of this ListAuditRuleRisksRequest.
         :type instance_id: str
@@ -102,7 +102,7 @@ class ListAuditRuleRisksRequest:
     def risk_levels(self):
         """Gets the risk_levels of this ListAuditRuleRisksRequest.
 
-        风险级别[LOW,MEDIUM,HIGH,NO_RISK]
+        风险级别 - LOW - MEDIUM - HIGH - NO_RISK
 
         :return: The risk_levels of this ListAuditRuleRisksRequest.
         :rtype: str
@@ -113,7 +113,7 @@ class ListAuditRuleRisksRequest:
     def risk_levels(self, risk_levels):
         """Sets the risk_levels of this ListAuditRuleRisksRequest.
 
-        风险级别[LOW,MEDIUM,HIGH,NO_RISK]
+        风险级别 - LOW - MEDIUM - HIGH - NO_RISK
 
         :param risk_levels: The risk_levels of this ListAuditRuleRisksRequest.
         :type risk_levels: str

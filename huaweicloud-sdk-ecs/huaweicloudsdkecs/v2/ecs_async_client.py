@@ -3531,6 +3531,71 @@ class EcsAsyncClient(Client):
 
         return http_info
 
+    def nova_show_flavor_extra_specs_async(self, request):
+        """查询云服务器规格extra_specs的详情
+
+        查询指定的规格的详细信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for NovaShowFlavorExtraSpecs
+        :type request: :class:`huaweicloudsdkecs.v2.NovaShowFlavorExtraSpecsRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.NovaShowFlavorExtraSpecsResponse`
+        """
+        http_info = self._nova_show_flavor_extra_specs_http_info(request)
+        return self._call_api(**http_info)
+
+    def nova_show_flavor_extra_specs_async_invoker(self, request):
+        http_info = self._nova_show_flavor_extra_specs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _nova_show_flavor_extra_specs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.1/{project_id}/flavors/{flavor_id}/os-extra_specs",
+            "request_type": request.__class__.__name__,
+            "response_type": "NovaShowFlavorExtraSpecsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'flavor_id' in local_var_params:
+            path_params['flavor_id'] = local_var_params['flavor_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def nova_show_keypair_async(self, request):
         """查询SSH密钥详情
 

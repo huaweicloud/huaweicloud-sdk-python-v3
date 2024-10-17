@@ -35,11 +35,11 @@ class ListResourceInstanceByTagRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: 资源类型。审计：auditInstance
+        :param resource_type: 资源类型。 - auditInstance
         :type resource_type: str
-        :param limit: 查询记录数（action为count时无此参数）如果action为filter默认为1000，limit最多为1000,不能为负数，最小值为1
+        :param limit: 查询记录数（action为count时无此参数）如果action为filter默认为1000，limit最多为1000,不能为负数，最小值为1。
         :type limit: str
-        :param offset: 索引位置，偏移量（action为count时无此参数）从第一条数据偏移offset条数据后开始查询，如果action为filter默认为0（偏移0条数据，表示从第一条数据开始查询）,必须为数字，不能为负数
+        :param offset: 索引位置，偏移量（action为count时无此参数）从第一条数据偏移offset条数据后开始查询，如果action为filter默认为0（偏移0条数据，表示从第一条数据开始查询）,必须为数字，不能为负数。
         :type offset: str
         :param body: Body of the ListResourceInstanceByTagRequest
         :type body: :class:`huaweicloudsdkdbss.v1.ResourceInstanceTagRequest`
@@ -65,7 +65,7 @@ class ListResourceInstanceByTagRequest:
     def resource_type(self):
         """Gets the resource_type of this ListResourceInstanceByTagRequest.
 
-        资源类型。审计：auditInstance
+        资源类型。 - auditInstance
 
         :return: The resource_type of this ListResourceInstanceByTagRequest.
         :rtype: str
@@ -76,7 +76,7 @@ class ListResourceInstanceByTagRequest:
     def resource_type(self, resource_type):
         """Sets the resource_type of this ListResourceInstanceByTagRequest.
 
-        资源类型。审计：auditInstance
+        资源类型。 - auditInstance
 
         :param resource_type: The resource_type of this ListResourceInstanceByTagRequest.
         :type resource_type: str
@@ -87,7 +87,7 @@ class ListResourceInstanceByTagRequest:
     def limit(self):
         """Gets the limit of this ListResourceInstanceByTagRequest.
 
-        查询记录数（action为count时无此参数）如果action为filter默认为1000，limit最多为1000,不能为负数，最小值为1
+        查询记录数（action为count时无此参数）如果action为filter默认为1000，limit最多为1000,不能为负数，最小值为1。
 
         :return: The limit of this ListResourceInstanceByTagRequest.
         :rtype: str
@@ -98,7 +98,7 @@ class ListResourceInstanceByTagRequest:
     def limit(self, limit):
         """Sets the limit of this ListResourceInstanceByTagRequest.
 
-        查询记录数（action为count时无此参数）如果action为filter默认为1000，limit最多为1000,不能为负数，最小值为1
+        查询记录数（action为count时无此参数）如果action为filter默认为1000，limit最多为1000,不能为负数，最小值为1。
 
         :param limit: The limit of this ListResourceInstanceByTagRequest.
         :type limit: str
@@ -109,7 +109,7 @@ class ListResourceInstanceByTagRequest:
     def offset(self):
         """Gets the offset of this ListResourceInstanceByTagRequest.
 
-        索引位置，偏移量（action为count时无此参数）从第一条数据偏移offset条数据后开始查询，如果action为filter默认为0（偏移0条数据，表示从第一条数据开始查询）,必须为数字，不能为负数
+        索引位置，偏移量（action为count时无此参数）从第一条数据偏移offset条数据后开始查询，如果action为filter默认为0（偏移0条数据，表示从第一条数据开始查询）,必须为数字，不能为负数。
 
         :return: The offset of this ListResourceInstanceByTagRequest.
         :rtype: str
@@ -120,7 +120,7 @@ class ListResourceInstanceByTagRequest:
     def offset(self, offset):
         """Sets the offset of this ListResourceInstanceByTagRequest.
 
-        索引位置，偏移量（action为count时无此参数）从第一条数据偏移offset条数据后开始查询，如果action为filter默认为0（偏移0条数据，表示从第一条数据开始查询）,必须为数字，不能为负数
+        索引位置，偏移量（action为count时无此参数）从第一条数据偏移offset条数据后开始查询，如果action为filter默认为0（偏移0条数据，表示从第一条数据开始查询）,必须为数字，不能为负数。
 
         :param offset: The offset of this ListResourceInstanceByTagRequest.
         :type offset: str

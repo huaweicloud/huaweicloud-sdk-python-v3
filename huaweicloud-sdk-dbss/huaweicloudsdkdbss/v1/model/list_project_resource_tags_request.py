@@ -29,7 +29,7 @@ class ListProjectResourceTagsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: 资源类型。审计：auditInstance
+        :param resource_type: 资源类型。 - auditInstance
         :type resource_type: str
         """
         
@@ -44,7 +44,7 @@ class ListProjectResourceTagsRequest:
     def resource_type(self):
         """Gets the resource_type of this ListProjectResourceTagsRequest.
 
-        资源类型。审计：auditInstance
+        资源类型。 - auditInstance
 
         :return: The resource_type of this ListProjectResourceTagsRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class ListProjectResourceTagsRequest:
     def resource_type(self, resource_type):
         """Sets the resource_type of this ListProjectResourceTagsRequest.
 
-        资源类型。审计：auditInstance
+        资源类型。 - auditInstance
 
         :param resource_type: The resource_type of this ListProjectResourceTagsRequest.
         :type resource_type: str

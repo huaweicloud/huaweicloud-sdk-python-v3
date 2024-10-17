@@ -30,7 +30,7 @@ class ListAvailabilityZoneInfosResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param azs: az列表
+        :param azs: 可用区集合
         :type azs: list[:class:`huaweicloudsdkdbss.v1.AzInfo`]
         """
         
@@ -46,7 +46,7 @@ class ListAvailabilityZoneInfosResponse(SdkResponse):
     def azs(self):
         """Gets the azs of this ListAvailabilityZoneInfosResponse.
 
-        az列表
+        可用区集合
 
         :return: The azs of this ListAvailabilityZoneInfosResponse.
         :rtype: list[:class:`huaweicloudsdkdbss.v1.AzInfo`]
@@ -57,7 +57,7 @@ class ListAvailabilityZoneInfosResponse(SdkResponse):
     def azs(self, azs):
         """Sets the azs of this ListAvailabilityZoneInfosResponse.
 
-        az列表
+        可用区集合
 
         :param azs: The azs of this ListAvailabilityZoneInfosResponse.
         :type azs: list[:class:`huaweicloudsdkdbss.v1.AzInfo`]

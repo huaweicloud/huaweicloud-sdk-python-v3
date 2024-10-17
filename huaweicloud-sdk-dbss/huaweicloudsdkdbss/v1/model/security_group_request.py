@@ -17,56 +17,56 @@ class SecurityGroupRequest:
     sensitive_list = []
 
     openapi_types = {
-        'resource_id': 'str',
+        'instance_id': 'str',
         'securitygroup_ids': 'list[str]'
     }
 
     attribute_map = {
-        'resource_id': 'resource_id',
+        'instance_id': 'instance_id',
         'securitygroup_ids': 'securitygroup_ids'
     }
 
-    def __init__(self, resource_id=None, securitygroup_ids=None):
+    def __init__(self, instance_id=None, securitygroup_ids=None):
         """SecurityGroupRequest
 
         The model defined in huaweicloud sdk
 
-        :param resource_id: 资源ID
-        :type resource_id: str
+        :param instance_id: 实例ID。可在查询实例列表接口的ID字段获取。
+        :type instance_id: str
         :param securitygroup_ids: 安全组ID列表(目前只支持传一个ID)
         :type securitygroup_ids: list[str]
         """
         
         
 
-        self._resource_id = None
+        self._instance_id = None
         self._securitygroup_ids = None
         self.discriminator = None
 
-        self.resource_id = resource_id
+        self.instance_id = instance_id
         self.securitygroup_ids = securitygroup_ids
 
     @property
-    def resource_id(self):
-        """Gets the resource_id of this SecurityGroupRequest.
+    def instance_id(self):
+        """Gets the instance_id of this SecurityGroupRequest.
 
-        资源ID
+        实例ID。可在查询实例列表接口的ID字段获取。
 
-        :return: The resource_id of this SecurityGroupRequest.
+        :return: The instance_id of this SecurityGroupRequest.
         :rtype: str
         """
-        return self._resource_id
+        return self._instance_id
 
-    @resource_id.setter
-    def resource_id(self, resource_id):
-        """Sets the resource_id of this SecurityGroupRequest.
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        """Sets the instance_id of this SecurityGroupRequest.
 
-        资源ID
+        实例ID。可在查询实例列表接口的ID字段获取。
 
-        :param resource_id: The resource_id of this SecurityGroupRequest.
-        :type resource_id: str
+        :param instance_id: The instance_id of this SecurityGroupRequest.
+        :type instance_id: str
         """
-        self._resource_id = resource_id
+        self._instance_id = instance_id
 
     @property
     def securitygroup_ids(self):

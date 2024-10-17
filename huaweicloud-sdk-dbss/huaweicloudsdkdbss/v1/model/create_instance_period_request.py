@@ -17,8 +17,8 @@ class CreateInstancePeriodRequest:
     sensitive_list = []
 
     openapi_types = {
-        'flavor_ref': 'str',
         'name': 'str',
+        'flavor_ref': 'str',
         'vpc_id': 'str',
         'availability_zone': 'str',
         'enterprise_project_id': 'str',
@@ -38,8 +38,8 @@ class CreateInstancePeriodRequest:
     }
 
     attribute_map = {
-        'flavor_ref': 'flavor_ref',
         'name': 'name',
+        'flavor_ref': 'flavor_ref',
         'vpc_id': 'vpc_id',
         'availability_zone': 'availability_zone',
         'enterprise_project_id': 'enterprise_project_id',
@@ -58,20 +58,20 @@ class CreateInstancePeriodRequest:
         'is_auto_renew': 'is_auto_renew'
     }
 
-    def __init__(self, flavor_ref=None, name=None, vpc_id=None, availability_zone=None, enterprise_project_id=None, nics=None, security_groups=None, comment=None, region=None, cloud_service_type=None, charging_mode=None, period_type=None, period_num=None, subscription_num=None, product_infos=None, tags=None, promotion_info=None, is_auto_renew=None):
+    def __init__(self, name=None, flavor_ref=None, vpc_id=None, availability_zone=None, enterprise_project_id=None, nics=None, security_groups=None, comment=None, region=None, cloud_service_type=None, charging_mode=None, period_type=None, period_num=None, subscription_num=None, product_infos=None, tags=None, promotion_info=None, is_auto_renew=None):
         """CreateInstancePeriodRequest
 
         The model defined in huaweicloud sdk
 
+        :param name: 实例名称。取值范围： - 只能由中文字符、英文字母、数字、下划线、中划线组成，且长度小于等于64个字符。
+        :type name: str
         :param flavor_ref: 云服务器使用的规格ID
         :type flavor_ref: str
-        :param name: 云服务器名称。 取值范围： • 只能由中文字符、英文字母、数字、下划线、中划线组成，且长度小于等于64个字符。 • 创建的云服务器数量大于1时，长度小于等于59个字符
-        :type name: str
-        :param vpc_id: VPC的ID
+        :param vpc_id: 虚拟私有云的ID
         :type vpc_id: str
-        :param availability_zone: 云服务器对应可用分区信息。(两个主备分区，中间用“,”分割，例如az1.dc1,az2.dc2)
+        :param availability_zone: 云服务器对应可用分区信息。(两个主备分区，中间用“,”分割，例如az1.dc1,az2.dc2)。
         :type availability_zone: str
-        :param enterprise_project_id: 企业项目ID
+        :param enterprise_project_id: 企业项目ID。对接EPS必输。
         :type enterprise_project_id: str
         :param nics: 云服务器对应的网卡信息
         :type nics: list[:class:`huaweicloudsdkdbss.v1.CreateInstancePeriodRequestNics`]
@@ -81,11 +81,11 @@ class CreateInstancePeriodRequest:
         :type comment: str
         :param region: 云服务器所在区域ID
         :type region: str
-        :param cloud_service_type: 服务类型： 默认hws.service.type.dbss
+        :param cloud_service_type: 服务类型： - hws.service.type.dbss
         :type cloud_service_type: str
-        :param charging_mode: 计费模式： • 0：包周期计费 • 1：按需计费
+        :param charging_mode: 计费模式： - 0: 包周期计费 - 1: 按需计费
         :type charging_mode: int
-        :param period_type: 订购周期类型： • 0：天； • 1：周； • 2：月； • 3：年； • 4：小时； • 5：绝对时间
+        :param period_type: -订购周期类型 - 0: 天 - 1：周 - 2：月 - 3：年 - 4: 小时 - 5: 绝对时间
         :type period_type: int
         :param period_num: 订购周期数
         :type period_num: int
@@ -97,14 +97,14 @@ class CreateInstancePeriodRequest:
         :type tags: list[:class:`huaweicloudsdkdbss.v1.KeyValueBean`]
         :param promotion_info: 折扣信息
         :type promotion_info: str
-        :param is_auto_renew: 自动续费 1表示自动续费，0表示不自动续费
+        :param is_auto_renew: 自动续费 - 1: 自动续费 - 0: 不自动续费
         :type is_auto_renew: int
         """
         
         
 
-        self._flavor_ref = None
         self._name = None
+        self._flavor_ref = None
         self._vpc_id = None
         self._availability_zone = None
         self._enterprise_project_id = None
@@ -123,11 +123,12 @@ class CreateInstancePeriodRequest:
         self._is_auto_renew = None
         self.discriminator = None
 
-        self.flavor_ref = flavor_ref
         self.name = name
+        self.flavor_ref = flavor_ref
         self.vpc_id = vpc_id
         self.availability_zone = availability_zone
-        self.enterprise_project_id = enterprise_project_id
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         self.nics = nics
         self.security_groups = security_groups
         if comment is not None:
@@ -145,6 +146,28 @@ class CreateInstancePeriodRequest:
             self.promotion_info = promotion_info
         if is_auto_renew is not None:
             self.is_auto_renew = is_auto_renew
+
+    @property
+    def name(self):
+        """Gets the name of this CreateInstancePeriodRequest.
+
+        实例名称。取值范围： - 只能由中文字符、英文字母、数字、下划线、中划线组成，且长度小于等于64个字符。
+
+        :return: The name of this CreateInstancePeriodRequest.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this CreateInstancePeriodRequest.
+
+        实例名称。取值范围： - 只能由中文字符、英文字母、数字、下划线、中划线组成，且长度小于等于64个字符。
+
+        :param name: The name of this CreateInstancePeriodRequest.
+        :type name: str
+        """
+        self._name = name
 
     @property
     def flavor_ref(self):
@@ -169,32 +192,10 @@ class CreateInstancePeriodRequest:
         self._flavor_ref = flavor_ref
 
     @property
-    def name(self):
-        """Gets the name of this CreateInstancePeriodRequest.
-
-        云服务器名称。 取值范围： • 只能由中文字符、英文字母、数字、下划线、中划线组成，且长度小于等于64个字符。 • 创建的云服务器数量大于1时，长度小于等于59个字符
-
-        :return: The name of this CreateInstancePeriodRequest.
-        :rtype: str
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        """Sets the name of this CreateInstancePeriodRequest.
-
-        云服务器名称。 取值范围： • 只能由中文字符、英文字母、数字、下划线、中划线组成，且长度小于等于64个字符。 • 创建的云服务器数量大于1时，长度小于等于59个字符
-
-        :param name: The name of this CreateInstancePeriodRequest.
-        :type name: str
-        """
-        self._name = name
-
-    @property
     def vpc_id(self):
         """Gets the vpc_id of this CreateInstancePeriodRequest.
 
-        VPC的ID
+        虚拟私有云的ID
 
         :return: The vpc_id of this CreateInstancePeriodRequest.
         :rtype: str
@@ -205,7 +206,7 @@ class CreateInstancePeriodRequest:
     def vpc_id(self, vpc_id):
         """Sets the vpc_id of this CreateInstancePeriodRequest.
 
-        VPC的ID
+        虚拟私有云的ID
 
         :param vpc_id: The vpc_id of this CreateInstancePeriodRequest.
         :type vpc_id: str
@@ -216,7 +217,7 @@ class CreateInstancePeriodRequest:
     def availability_zone(self):
         """Gets the availability_zone of this CreateInstancePeriodRequest.
 
-        云服务器对应可用分区信息。(两个主备分区，中间用“,”分割，例如az1.dc1,az2.dc2)
+        云服务器对应可用分区信息。(两个主备分区，中间用“,”分割，例如az1.dc1,az2.dc2)。
 
         :return: The availability_zone of this CreateInstancePeriodRequest.
         :rtype: str
@@ -227,7 +228,7 @@ class CreateInstancePeriodRequest:
     def availability_zone(self, availability_zone):
         """Sets the availability_zone of this CreateInstancePeriodRequest.
 
-        云服务器对应可用分区信息。(两个主备分区，中间用“,”分割，例如az1.dc1,az2.dc2)
+        云服务器对应可用分区信息。(两个主备分区，中间用“,”分割，例如az1.dc1,az2.dc2)。
 
         :param availability_zone: The availability_zone of this CreateInstancePeriodRequest.
         :type availability_zone: str
@@ -238,7 +239,7 @@ class CreateInstancePeriodRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this CreateInstancePeriodRequest.
 
-        企业项目ID
+        企业项目ID。对接EPS必输。
 
         :return: The enterprise_project_id of this CreateInstancePeriodRequest.
         :rtype: str
@@ -249,7 +250,7 @@ class CreateInstancePeriodRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this CreateInstancePeriodRequest.
 
-        企业项目ID
+        企业项目ID。对接EPS必输。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateInstancePeriodRequest.
         :type enterprise_project_id: str
@@ -348,7 +349,7 @@ class CreateInstancePeriodRequest:
     def cloud_service_type(self):
         """Gets the cloud_service_type of this CreateInstancePeriodRequest.
 
-        服务类型： 默认hws.service.type.dbss
+        服务类型： - hws.service.type.dbss
 
         :return: The cloud_service_type of this CreateInstancePeriodRequest.
         :rtype: str
@@ -359,7 +360,7 @@ class CreateInstancePeriodRequest:
     def cloud_service_type(self, cloud_service_type):
         """Sets the cloud_service_type of this CreateInstancePeriodRequest.
 
-        服务类型： 默认hws.service.type.dbss
+        服务类型： - hws.service.type.dbss
 
         :param cloud_service_type: The cloud_service_type of this CreateInstancePeriodRequest.
         :type cloud_service_type: str
@@ -370,7 +371,7 @@ class CreateInstancePeriodRequest:
     def charging_mode(self):
         """Gets the charging_mode of this CreateInstancePeriodRequest.
 
-        计费模式： • 0：包周期计费 • 1：按需计费
+        计费模式： - 0: 包周期计费 - 1: 按需计费
 
         :return: The charging_mode of this CreateInstancePeriodRequest.
         :rtype: int
@@ -381,7 +382,7 @@ class CreateInstancePeriodRequest:
     def charging_mode(self, charging_mode):
         """Sets the charging_mode of this CreateInstancePeriodRequest.
 
-        计费模式： • 0：包周期计费 • 1：按需计费
+        计费模式： - 0: 包周期计费 - 1: 按需计费
 
         :param charging_mode: The charging_mode of this CreateInstancePeriodRequest.
         :type charging_mode: int
@@ -392,7 +393,7 @@ class CreateInstancePeriodRequest:
     def period_type(self):
         """Gets the period_type of this CreateInstancePeriodRequest.
 
-        订购周期类型： • 0：天； • 1：周； • 2：月； • 3：年； • 4：小时； • 5：绝对时间
+        -订购周期类型 - 0: 天 - 1：周 - 2：月 - 3：年 - 4: 小时 - 5: 绝对时间
 
         :return: The period_type of this CreateInstancePeriodRequest.
         :rtype: int
@@ -403,7 +404,7 @@ class CreateInstancePeriodRequest:
     def period_type(self, period_type):
         """Sets the period_type of this CreateInstancePeriodRequest.
 
-        订购周期类型： • 0：天； • 1：周； • 2：月； • 3：年； • 4：小时； • 5：绝对时间
+        -订购周期类型 - 0: 天 - 1：周 - 2：月 - 3：年 - 4: 小时 - 5: 绝对时间
 
         :param period_type: The period_type of this CreateInstancePeriodRequest.
         :type period_type: int
@@ -524,7 +525,7 @@ class CreateInstancePeriodRequest:
     def is_auto_renew(self):
         """Gets the is_auto_renew of this CreateInstancePeriodRequest.
 
-        自动续费 1表示自动续费，0表示不自动续费
+        自动续费 - 1: 自动续费 - 0: 不自动续费
 
         :return: The is_auto_renew of this CreateInstancePeriodRequest.
         :rtype: int
@@ -535,7 +536,7 @@ class CreateInstancePeriodRequest:
     def is_auto_renew(self, is_auto_renew):
         """Sets the is_auto_renew of this CreateInstancePeriodRequest.
 
-        自动续费 1表示自动续费，0表示不自动续费
+        自动续费 - 1: 自动续费 - 0: 不自动续费
 
         :param is_auto_renew: The is_auto_renew of this CreateInstancePeriodRequest.
         :type is_auto_renew: int

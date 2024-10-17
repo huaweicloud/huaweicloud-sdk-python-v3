@@ -33,9 +33,9 @@ class TrackerSMNChannelConfigBody:
 
         The model defined in huaweicloud sdk
 
-        :param region_id: 区域id
+        :param region_id: SMN主题的区域id
         :type region_id: str
-        :param project_id: 项目id
+        :param project_id: 创建或更新资源记录器用户的项目id
         :type project_id: str
         :param topic_urn: SMN主题urn
         :type topic_urn: str
@@ -56,7 +56,7 @@ class TrackerSMNChannelConfigBody:
     def region_id(self):
         """Gets the region_id of this TrackerSMNChannelConfigBody.
 
-        区域id
+        SMN主题的区域id
 
         :return: The region_id of this TrackerSMNChannelConfigBody.
         :rtype: str
@@ -67,7 +67,7 @@ class TrackerSMNChannelConfigBody:
     def region_id(self, region_id):
         """Sets the region_id of this TrackerSMNChannelConfigBody.
 
-        区域id
+        SMN主题的区域id
 
         :param region_id: The region_id of this TrackerSMNChannelConfigBody.
         :type region_id: str
@@ -78,7 +78,7 @@ class TrackerSMNChannelConfigBody:
     def project_id(self):
         """Gets the project_id of this TrackerSMNChannelConfigBody.
 
-        项目id
+        创建或更新资源记录器用户的项目id
 
         :return: The project_id of this TrackerSMNChannelConfigBody.
         :rtype: str
@@ -89,7 +89,7 @@ class TrackerSMNChannelConfigBody:
     def project_id(self, project_id):
         """Sets the project_id of this TrackerSMNChannelConfigBody.
 
-        项目id
+        创建或更新资源记录器用户的项目id
 
         :param project_id: The project_id of this TrackerSMNChannelConfigBody.
         :type project_id: str

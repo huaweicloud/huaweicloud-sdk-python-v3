@@ -22,6 +22,7 @@ class JobBean:
         'job_type': 'str',
         'server_id': 'str',
         'server_name': 'str',
+        'resource_id': 'str',
         'begin_time': 'int',
         'end_time': 'int',
         'charge_mode': 'str',
@@ -37,6 +38,7 @@ class JobBean:
         'job_type': 'job_type',
         'server_id': 'server_id',
         'server_name': 'server_name',
+        'resource_id': 'resource_id',
         'begin_time': 'begin_time',
         'end_time': 'end_time',
         'charge_mode': 'charge_mode',
@@ -46,14 +48,14 @@ class JobBean:
         'ha_name': 'ha_name'
     }
 
-    def __init__(self, job_id=None, status=None, job_type=None, server_id=None, server_name=None, begin_time=None, end_time=None, charge_mode=None, error_code=None, fail_reason=None, ha_id=None, ha_name=None):
+    def __init__(self, job_id=None, status=None, job_type=None, server_id=None, server_name=None, resource_id=None, begin_time=None, end_time=None, charge_mode=None, error_code=None, fail_reason=None, ha_id=None, ha_name=None):
         """JobBean
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 任务ID,异步查询标识
+        :param job_id: 任务ID。
         :type job_id: str
-        :param status: 状态
+        :param status: 任务状态 - SUCCESS - RUNNING - FAIL - INIT - READY
         :type status: str
         :param job_type: 类型
         :type job_type: str
@@ -61,19 +63,21 @@ class JobBean:
         :type server_id: str
         :param server_name: 虚拟机名称
         :type server_name: str
+        :param resource_id: 资源ID
+        :type resource_id: str
         :param begin_time: 开始时间
         :type begin_time: int
         :param end_time: 结束时间
         :type end_time: int
-        :param charge_mode: 计费模式
+        :param charge_mode: 计费模式 - Period:包周期计费 - Demand:按需计费
         :type charge_mode: str
         :param error_code: 错误码
         :type error_code: str
         :param fail_reason: 失败原因
         :type fail_reason: str
-        :param ha_id: 双机实例HA共用的id
+        :param ha_id: 防护实例ID,该字段已废弃
         :type ha_id: str
-        :param ha_name: HA别名
+        :param ha_name: 防护实例名称，该字段已废弃
         :type ha_name: str
         """
         
@@ -84,6 +88,7 @@ class JobBean:
         self._job_type = None
         self._server_id = None
         self._server_name = None
+        self._resource_id = None
         self._begin_time = None
         self._end_time = None
         self._charge_mode = None
@@ -98,6 +103,7 @@ class JobBean:
         self.job_type = job_type
         self.server_id = server_id
         self.server_name = server_name
+        self.resource_id = resource_id
         self.begin_time = begin_time
         self.end_time = end_time
         self.charge_mode = charge_mode
@@ -114,7 +120,7 @@ class JobBean:
     def job_id(self):
         """Gets the job_id of this JobBean.
 
-        任务ID,异步查询标识
+        任务ID。
 
         :return: The job_id of this JobBean.
         :rtype: str
@@ -125,7 +131,7 @@ class JobBean:
     def job_id(self, job_id):
         """Sets the job_id of this JobBean.
 
-        任务ID,异步查询标识
+        任务ID。
 
         :param job_id: The job_id of this JobBean.
         :type job_id: str
@@ -136,7 +142,7 @@ class JobBean:
     def status(self):
         """Gets the status of this JobBean.
 
-        状态
+        任务状态 - SUCCESS - RUNNING - FAIL - INIT - READY
 
         :return: The status of this JobBean.
         :rtype: str
@@ -147,7 +153,7 @@ class JobBean:
     def status(self, status):
         """Sets the status of this JobBean.
 
-        状态
+        任务状态 - SUCCESS - RUNNING - FAIL - INIT - READY
 
         :param status: The status of this JobBean.
         :type status: str
@@ -221,6 +227,28 @@ class JobBean:
         self._server_name = server_name
 
     @property
+    def resource_id(self):
+        """Gets the resource_id of this JobBean.
+
+        资源ID
+
+        :return: The resource_id of this JobBean.
+        :rtype: str
+        """
+        return self._resource_id
+
+    @resource_id.setter
+    def resource_id(self, resource_id):
+        """Sets the resource_id of this JobBean.
+
+        资源ID
+
+        :param resource_id: The resource_id of this JobBean.
+        :type resource_id: str
+        """
+        self._resource_id = resource_id
+
+    @property
     def begin_time(self):
         """Gets the begin_time of this JobBean.
 
@@ -268,7 +296,7 @@ class JobBean:
     def charge_mode(self):
         """Gets the charge_mode of this JobBean.
 
-        计费模式
+        计费模式 - Period:包周期计费 - Demand:按需计费
 
         :return: The charge_mode of this JobBean.
         :rtype: str
@@ -279,7 +307,7 @@ class JobBean:
     def charge_mode(self, charge_mode):
         """Sets the charge_mode of this JobBean.
 
-        计费模式
+        计费模式 - Period:包周期计费 - Demand:按需计费
 
         :param charge_mode: The charge_mode of this JobBean.
         :type charge_mode: str
@@ -334,7 +362,7 @@ class JobBean:
     def ha_id(self):
         """Gets the ha_id of this JobBean.
 
-        双机实例HA共用的id
+        防护实例ID,该字段已废弃
 
         :return: The ha_id of this JobBean.
         :rtype: str
@@ -345,7 +373,7 @@ class JobBean:
     def ha_id(self, ha_id):
         """Sets the ha_id of this JobBean.
 
-        双机实例HA共用的id
+        防护实例ID,该字段已废弃
 
         :param ha_id: The ha_id of this JobBean.
         :type ha_id: str
@@ -356,7 +384,7 @@ class JobBean:
     def ha_name(self):
         """Gets the ha_name of this JobBean.
 
-        HA别名
+        防护实例名称，该字段已废弃
 
         :return: The ha_name of this JobBean.
         :rtype: str
@@ -367,7 +395,7 @@ class JobBean:
     def ha_name(self, ha_name):
         """Sets the ha_name of this JobBean.
 
-        HA别名
+        防护实例名称，该字段已废弃
 
         :param ha_name: The ha_name of this JobBean.
         :type ha_name: str

@@ -31,9 +31,9 @@ class AgentSwitchRequest:
 
         The model defined in huaweicloud sdk
 
-        :param agent_id: 审计agent的ID
+        :param agent_id: 审计agent的ID。可在查询数据库agent列表接口ID字段获取。
         :type agent_id: str
-        :param status: Agent开关状态 1：开启 0：关闭
+        :param status: Agent开关状态 - 1：开启 - 0：关闭
         :type status: int
         """
         
@@ -50,7 +50,7 @@ class AgentSwitchRequest:
     def agent_id(self):
         """Gets the agent_id of this AgentSwitchRequest.
 
-        审计agent的ID
+        审计agent的ID。可在查询数据库agent列表接口ID字段获取。
 
         :return: The agent_id of this AgentSwitchRequest.
         :rtype: str
@@ -61,7 +61,7 @@ class AgentSwitchRequest:
     def agent_id(self, agent_id):
         """Sets the agent_id of this AgentSwitchRequest.
 
-        审计agent的ID
+        审计agent的ID。可在查询数据库agent列表接口ID字段获取。
 
         :param agent_id: The agent_id of this AgentSwitchRequest.
         :type agent_id: str
@@ -72,7 +72,7 @@ class AgentSwitchRequest:
     def status(self):
         """Gets the status of this AgentSwitchRequest.
 
-        Agent开关状态 1：开启 0：关闭
+        Agent开关状态 - 1：开启 - 0：关闭
 
         :return: The status of this AgentSwitchRequest.
         :rtype: int
@@ -83,7 +83,7 @@ class AgentSwitchRequest:
     def status(self, status):
         """Sets the status of this AgentSwitchRequest.
 
-        Agent开关状态 1：开启 0：关闭
+        Agent开关状态 - 1：开启 - 0：关闭
 
         :param status: The status of this AgentSwitchRequest.
         :type status: int

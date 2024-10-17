@@ -60,25 +60,25 @@ class ShowAuditRuleRiskResponse(SdkResponse):
         :type rule_id: str
         :param rule_name: 风险名称
         :type rule_name: str
-        :param status: 风险规则状态 枚举值：  OFF  ON
+        :param status: 风险规则状态 - OFF - ON
         :type status: str
-        :param action: 操作集合, 中间逗号分隔 LOGIN CREATE_TABLE CREATE_TABLESPACE DROP_TABLE DROP_TABLESPACE DELETE INSERT INSERT_SELECT SELECT SELECT_FOR_UPDATE UPDATE CREATE_USER DROP_USER GRANT OPERATE ALL
+        :param action: 操作集合, 中间逗号分隔。 LOGIN,CREATE_TABLE,CREATE_TABLESPACE,DROP_TABLE, DROP_TABLESPACE,DELETE,INSERT,INSERT_SELECT,SELECT,SELECT_FOR_UPDATE, UPDATE,CREATE_USER,DROP_USER,GRANT,OPERATE ALL
         :type action: str
         :param schemas: Schema列表
         :type schemas: list[:class:`huaweicloudsdkdbss.v1.RuleRiskInfoBeanSchemas`]
-        :param rank: 风险规则优先级
+        :param rank: 风险规则优先级。数字越小优先级越高。
         :type rank: int
         :param ignore_case: 是否忽略大小写
         :type ignore_case: bool
-        :param risk_level: 风险级别 枚举值：  LOW  MEDIUM  HIGH  NO_RISK
+        :param risk_level: 风险级别 - LOW - MEDIUM - HIGH - NO_RISK
         :type risk_level: str
         :param db_ids: 数据库id，中间逗号分隔（单个id 小于256位）
         :type db_ids: str
-        :param execution_symbol: 执行时长对执行时长阈值的关系 枚举值：  GREATER  EQUAL  LESS  GREATER_EQUAL  LESS_EQUAL  NO_MATCH
+        :param execution_symbol: 执行时长对执行时长阈值的关系 - GREATER - EQUAL - LESS - GREATER_EQUAL - LESS_EQUAL - NO_MATCH
         :type execution_symbol: str
         :param execution_time: 设定的执行时长阈值
         :type execution_time: int
-        :param affect_symbol: 影响行数对行数阈值的关系：  枚举值：  GREATER  EQUAL  LESS  GREATER_EQUAL  LESS_EQUAL  NO_MATCH
+        :param affect_symbol: 影响行数对行数阈值的关系：  - GREATER - EQUAL - LESS - GREATER_EQUAL - LESS_EQUAL - NO_MATCH
         :type affect_symbol: str
         :param affect_rows: 设定的影响行数阈值
         :type affect_rows: int
@@ -181,7 +181,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
     def status(self):
         """Gets the status of this ShowAuditRuleRiskResponse.
 
-        风险规则状态 枚举值：  OFF  ON
+        风险规则状态 - OFF - ON
 
         :return: The status of this ShowAuditRuleRiskResponse.
         :rtype: str
@@ -192,7 +192,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this ShowAuditRuleRiskResponse.
 
-        风险规则状态 枚举值：  OFF  ON
+        风险规则状态 - OFF - ON
 
         :param status: The status of this ShowAuditRuleRiskResponse.
         :type status: str
@@ -203,7 +203,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
     def action(self):
         """Gets the action of this ShowAuditRuleRiskResponse.
 
-        操作集合, 中间逗号分隔 LOGIN CREATE_TABLE CREATE_TABLESPACE DROP_TABLE DROP_TABLESPACE DELETE INSERT INSERT_SELECT SELECT SELECT_FOR_UPDATE UPDATE CREATE_USER DROP_USER GRANT OPERATE ALL
+        操作集合, 中间逗号分隔。 LOGIN,CREATE_TABLE,CREATE_TABLESPACE,DROP_TABLE, DROP_TABLESPACE,DELETE,INSERT,INSERT_SELECT,SELECT,SELECT_FOR_UPDATE, UPDATE,CREATE_USER,DROP_USER,GRANT,OPERATE ALL
 
         :return: The action of this ShowAuditRuleRiskResponse.
         :rtype: str
@@ -214,7 +214,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
     def action(self, action):
         """Sets the action of this ShowAuditRuleRiskResponse.
 
-        操作集合, 中间逗号分隔 LOGIN CREATE_TABLE CREATE_TABLESPACE DROP_TABLE DROP_TABLESPACE DELETE INSERT INSERT_SELECT SELECT SELECT_FOR_UPDATE UPDATE CREATE_USER DROP_USER GRANT OPERATE ALL
+        操作集合, 中间逗号分隔。 LOGIN,CREATE_TABLE,CREATE_TABLESPACE,DROP_TABLE, DROP_TABLESPACE,DELETE,INSERT,INSERT_SELECT,SELECT,SELECT_FOR_UPDATE, UPDATE,CREATE_USER,DROP_USER,GRANT,OPERATE ALL
 
         :param action: The action of this ShowAuditRuleRiskResponse.
         :type action: str
@@ -247,7 +247,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
     def rank(self):
         """Gets the rank of this ShowAuditRuleRiskResponse.
 
-        风险规则优先级
+        风险规则优先级。数字越小优先级越高。
 
         :return: The rank of this ShowAuditRuleRiskResponse.
         :rtype: int
@@ -258,7 +258,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
     def rank(self, rank):
         """Sets the rank of this ShowAuditRuleRiskResponse.
 
-        风险规则优先级
+        风险规则优先级。数字越小优先级越高。
 
         :param rank: The rank of this ShowAuditRuleRiskResponse.
         :type rank: int
@@ -291,7 +291,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
     def risk_level(self):
         """Gets the risk_level of this ShowAuditRuleRiskResponse.
 
-        风险级别 枚举值：  LOW  MEDIUM  HIGH  NO_RISK
+        风险级别 - LOW - MEDIUM - HIGH - NO_RISK
 
         :return: The risk_level of this ShowAuditRuleRiskResponse.
         :rtype: str
@@ -302,7 +302,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
     def risk_level(self, risk_level):
         """Sets the risk_level of this ShowAuditRuleRiskResponse.
 
-        风险级别 枚举值：  LOW  MEDIUM  HIGH  NO_RISK
+        风险级别 - LOW - MEDIUM - HIGH - NO_RISK
 
         :param risk_level: The risk_level of this ShowAuditRuleRiskResponse.
         :type risk_level: str
@@ -335,7 +335,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
     def execution_symbol(self):
         """Gets the execution_symbol of this ShowAuditRuleRiskResponse.
 
-        执行时长对执行时长阈值的关系 枚举值：  GREATER  EQUAL  LESS  GREATER_EQUAL  LESS_EQUAL  NO_MATCH
+        执行时长对执行时长阈值的关系 - GREATER - EQUAL - LESS - GREATER_EQUAL - LESS_EQUAL - NO_MATCH
 
         :return: The execution_symbol of this ShowAuditRuleRiskResponse.
         :rtype: str
@@ -346,7 +346,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
     def execution_symbol(self, execution_symbol):
         """Sets the execution_symbol of this ShowAuditRuleRiskResponse.
 
-        执行时长对执行时长阈值的关系 枚举值：  GREATER  EQUAL  LESS  GREATER_EQUAL  LESS_EQUAL  NO_MATCH
+        执行时长对执行时长阈值的关系 - GREATER - EQUAL - LESS - GREATER_EQUAL - LESS_EQUAL - NO_MATCH
 
         :param execution_symbol: The execution_symbol of this ShowAuditRuleRiskResponse.
         :type execution_symbol: str
@@ -379,7 +379,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
     def affect_symbol(self):
         """Gets the affect_symbol of this ShowAuditRuleRiskResponse.
 
-        影响行数对行数阈值的关系：  枚举值：  GREATER  EQUAL  LESS  GREATER_EQUAL  LESS_EQUAL  NO_MATCH
+        影响行数对行数阈值的关系：  - GREATER - EQUAL - LESS - GREATER_EQUAL - LESS_EQUAL - NO_MATCH
 
         :return: The affect_symbol of this ShowAuditRuleRiskResponse.
         :rtype: str
@@ -390,7 +390,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
     def affect_symbol(self, affect_symbol):
         """Sets the affect_symbol of this ShowAuditRuleRiskResponse.
 
-        影响行数对行数阈值的关系：  枚举值：  GREATER  EQUAL  LESS  GREATER_EQUAL  LESS_EQUAL  NO_MATCH
+        影响行数对行数阈值的关系：  - GREATER - EQUAL - LESS - GREATER_EQUAL - LESS_EQUAL - NO_MATCH
 
         :param affect_symbol: The affect_symbol of this ShowAuditRuleRiskResponse.
         :type affect_symbol: str

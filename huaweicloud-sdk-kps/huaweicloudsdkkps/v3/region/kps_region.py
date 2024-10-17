@@ -52,6 +52,10 @@ class KpsRegion:
                         "https://kms.my-kualalumpur-1.myhuaweicloud.com")
     RU_MOSCOW_1 = Region("ru-moscow-1",
                         "https://kms.ru-moscow-1.myhuaweicloud.com")
+    CN_EAST_5 = Region("cn-east-5",
+                        "https://kms.cn-east-5.myhuaweicloud.com")
+    CN_EAST_4 = Region("cn-east-4",
+                        "https://kms.cn-east-4.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
@@ -77,6 +81,8 @@ class KpsRegion:
         "tr-west-1": TR_WEST_1,
         "my-kualalumpur-1": MY_KUALALUMPUR_1,
         "ru-moscow-1": RU_MOSCOW_1,
+        "cn-east-5": CN_EAST_5,
+        "cn-east-4": CN_EAST_4,
     }
 
     @classmethod

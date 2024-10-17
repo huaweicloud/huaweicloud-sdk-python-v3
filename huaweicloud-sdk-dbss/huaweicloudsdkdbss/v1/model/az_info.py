@@ -43,9 +43,9 @@ class AzInfo:
         :type zone_number: int
         :param az_type: 可用区类型
         :type az_type: str
-        :param alias: 可用区别名
+        :param alias: 可用区中文别名
         :type alias: str
-        :param alias_us: 可用区别名英文
+        :param alias_us: 可用区英文别名
         :type alias_us: str
         """
         
@@ -134,7 +134,7 @@ class AzInfo:
     def alias(self):
         """Gets the alias of this AzInfo.
 
-        可用区别名
+        可用区中文别名
 
         :return: The alias of this AzInfo.
         :rtype: str
@@ -145,7 +145,7 @@ class AzInfo:
     def alias(self, alias):
         """Sets the alias of this AzInfo.
 
-        可用区别名
+        可用区中文别名
 
         :param alias: The alias of this AzInfo.
         :type alias: str
@@ -156,7 +156,7 @@ class AzInfo:
     def alias_us(self):
         """Gets the alias_us of this AzInfo.
 
-        可用区别名英文
+        可用区英文别名
 
         :return: The alias_us of this AzInfo.
         :rtype: str
@@ -167,7 +167,7 @@ class AzInfo:
     def alias_us(self, alias_us):
         """Sets the alias_us of this AzInfo.
 
-        可用区别名英文
+        可用区英文别名
 
         :param alias_us: The alias_us of this AzInfo.
         :type alias_us: str

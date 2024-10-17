@@ -21,7 +21,8 @@ class ListSimPoolsRequest:
         'limit': 'int',
         'offset': 'int',
         'billing_cycle': 'str',
-        'all_billing_cycle': 'bool'
+        'all_billing_cycle': 'bool',
+        'status': 'list[int]'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class ListSimPoolsRequest:
         'limit': 'limit',
         'offset': 'offset',
         'billing_cycle': 'billing_cycle',
-        'all_billing_cycle': 'all_billing_cycle'
+        'all_billing_cycle': 'all_billing_cycle',
+        'status': 'status'
     }
 
-    def __init__(self, pool_name=None, limit=None, offset=None, billing_cycle=None, all_billing_cycle=None):
+    def __init__(self, pool_name=None, limit=None, offset=None, billing_cycle=None, all_billing_cycle=None, status=None):
         """ListSimPoolsRequest
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class ListSimPoolsRequest:
         :type billing_cycle: str
         :param all_billing_cycle: 是否查询近六个月账期标识
         :type all_billing_cycle: bool
+        :param status: 流量池状态
+        :type status: list[int]
         """
         
         
@@ -56,6 +60,7 @@ class ListSimPoolsRequest:
         self._offset = None
         self._billing_cycle = None
         self._all_billing_cycle = None
+        self._status = None
         self.discriminator = None
 
         if pool_name is not None:
@@ -68,6 +73,8 @@ class ListSimPoolsRequest:
             self.billing_cycle = billing_cycle
         if all_billing_cycle is not None:
             self.all_billing_cycle = all_billing_cycle
+        if status is not None:
+            self.status = status
 
     @property
     def pool_name(self):
@@ -178,6 +185,28 @@ class ListSimPoolsRequest:
         :type all_billing_cycle: bool
         """
         self._all_billing_cycle = all_billing_cycle
+
+    @property
+    def status(self):
+        """Gets the status of this ListSimPoolsRequest.
+
+        流量池状态
+
+        :return: The status of this ListSimPoolsRequest.
+        :rtype: list[int]
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this ListSimPoolsRequest.
+
+        流量池状态
+
+        :param status: The status of this ListSimPoolsRequest.
+        :type status: list[int]
+        """
+        self._status = status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

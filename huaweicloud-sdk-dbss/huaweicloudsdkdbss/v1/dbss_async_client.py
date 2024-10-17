@@ -32,31 +32,31 @@ class DbssAsyncClient(Client):
 
         return client_builder
 
-    def add_rds_no_agent_database_async(self, request):
-        """添加RDS免agent数据库
+    def add_audit_database_async(self, request):
+        """添加自建数据库
 
-        添加RDS免agent数据库
+        添加自建数据库
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for AddRdsNoAgentDatabase
-        :type request: :class:`huaweicloudsdkdbss.v1.AddRdsNoAgentDatabaseRequest`
-        :rtype: :class:`huaweicloudsdkdbss.v1.AddRdsNoAgentDatabaseResponse`
+        :param request: Request instance for AddAuditDatabase
+        :type request: :class:`huaweicloudsdkdbss.v1.AddAuditDatabaseRequest`
+        :rtype: :class:`huaweicloudsdkdbss.v1.AddAuditDatabaseResponse`
         """
-        http_info = self._add_rds_no_agent_database_http_info(request)
+        http_info = self._add_audit_database_http_info(request)
         return self._call_api(**http_info)
 
-    def add_rds_no_agent_database_async_invoker(self, request):
-        http_info = self._add_rds_no_agent_database_http_info(request)
+    def add_audit_database_async_invoker(self, request):
+        http_info = self._add_audit_database_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _add_rds_no_agent_database_http_info(self, request):
+    def _add_audit_database_http_info(self, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/v1/{project_id}/{instance_id}/dbss/audit/databases/rds",
+            "resource_path": "/v1/{project_id}/{instance_id}/audit/databases",
             "request_type": request.__class__.__name__,
-            "response_type": "AddRdsNoAgentDatabaseResponse"
+            "response_type": "AddAuditDatabaseResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -99,31 +99,31 @@ class DbssAsyncClient(Client):
 
         return http_info
 
-    def batch_add_resource_tag_async(self, request):
-        """批量添加资源标签
+    def add_rds_database_async(self, request):
+        """添加RDS数据库
 
-        批量添加资源标签
+        添加RDS数据库
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for BatchAddResourceTag
-        :type request: :class:`huaweicloudsdkdbss.v1.BatchAddResourceTagRequest`
-        :rtype: :class:`huaweicloudsdkdbss.v1.BatchAddResourceTagResponse`
+        :param request: Request instance for AddRdsDatabase
+        :type request: :class:`huaweicloudsdkdbss.v1.AddRdsDatabaseRequest`
+        :rtype: :class:`huaweicloudsdkdbss.v1.AddRdsDatabaseResponse`
         """
-        http_info = self._batch_add_resource_tag_http_info(request)
+        http_info = self._add_rds_database_http_info(request)
         return self._call_api(**http_info)
 
-    def batch_add_resource_tag_async_invoker(self, request):
-        http_info = self._batch_add_resource_tag_http_info(request)
+    def add_rds_database_async_invoker(self, request):
+        http_info = self._add_rds_database_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _batch_add_resource_tag_http_info(self, request):
+    def _add_rds_database_http_info(self, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/v1/{project_id}/{resource_type}/{resource_id}/tags/create",
+            "resource_path": "/v2/{project_id}/{instance_id}/audit/databases/rds",
             "request_type": request.__class__.__name__,
-            "response_type": "BatchAddResourceTagResponse"
+            "response_type": "AddRdsDatabaseResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -133,10 +133,8 @@ class DbssAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'resource_type' in local_var_params:
-            path_params['resource_type'] = local_var_params['resource_type']
-        if 'resource_id' in local_var_params:
-            path_params['resource_id'] = local_var_params['resource_id']
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
 
@@ -168,100 +166,32 @@ class DbssAsyncClient(Client):
 
         return http_info
 
-    def batch_delete_resource_tag_async(self, request):
-        """批量删除资源标签
+    def add_rds_no_agent_database_async(self, request):
+        """添加RDS数据库(V1待下线)
 
-        批量删除资源标签
+        添加RDS数据库。V1版本已不再维护，待下线。
+        请使用V2版本接口（/v2/{project_id}/{instance_id}/audit/databases/rds）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for BatchDeleteResourceTag
-        :type request: :class:`huaweicloudsdkdbss.v1.BatchDeleteResourceTagRequest`
-        :rtype: :class:`huaweicloudsdkdbss.v1.BatchDeleteResourceTagResponse`
+        :param request: Request instance for AddRdsNoAgentDatabase
+        :type request: :class:`huaweicloudsdkdbss.v1.AddRdsNoAgentDatabaseRequest`
+        :rtype: :class:`huaweicloudsdkdbss.v1.AddRdsNoAgentDatabaseResponse`
         """
-        http_info = self._batch_delete_resource_tag_http_info(request)
+        http_info = self._add_rds_no_agent_database_http_info(request)
         return self._call_api(**http_info)
 
-    def batch_delete_resource_tag_async_invoker(self, request):
-        http_info = self._batch_delete_resource_tag_http_info(request)
+    def add_rds_no_agent_database_async_invoker(self, request):
+        http_info = self._add_rds_no_agent_database_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _batch_delete_resource_tag_http_info(self, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/v1/{project_id}/{resource_type}/{resource_id}/tags/delete",
-            "request_type": request.__class__.__name__,
-            "response_type": "BatchDeleteResourceTagResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'resource_type' in local_var_params:
-            path_params['resource_type'] = local_var_params['resource_type']
-        if 'resource_id' in local_var_params:
-            path_params['resource_id'] = local_var_params['resource_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def count_resource_instance_by_tag_async(self, request):
-        """根据标签查询资源实例数量
-
-        根据标签查询资源实例数量
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CountResourceInstanceByTag
-        :type request: :class:`huaweicloudsdkdbss.v1.CountResourceInstanceByTagRequest`
-        :rtype: :class:`huaweicloudsdkdbss.v1.CountResourceInstanceByTagResponse`
-        """
-        http_info = self._count_resource_instance_by_tag_http_info(request)
-        return self._call_api(**http_info)
-
-    def count_resource_instance_by_tag_async_invoker(self, request):
-        http_info = self._count_resource_instance_by_tag_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _count_resource_instance_by_tag_http_info(self, request):
+    def _add_rds_no_agent_database_http_info(self, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/v1/{project_id}/{resource_type}/resource-instances/count",
+            "resource_path": "/v1/{project_id}/{instance_id}/dbss/audit/databases/rds",
             "request_type": request.__class__.__name__,
-            "response_type": "CountResourceInstanceByTagResponse"
+            "response_type": "AddRdsNoAgentDatabaseResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -271,8 +201,8 @@ class DbssAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'resource_type' in local_var_params:
-            path_params['resource_type'] = local_var_params['resource_type']
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
 
@@ -338,6 +268,205 @@ class DbssAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_audit_database_async(self, request):
+        """删除数据库
+
+        删除数据库
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteAuditDatabase
+        :type request: :class:`huaweicloudsdkdbss.v1.DeleteAuditDatabaseRequest`
+        :rtype: :class:`huaweicloudsdkdbss.v1.DeleteAuditDatabaseResponse`
+        """
+        http_info = self._delete_audit_database_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_audit_database_async_invoker(self, request):
+        http_info = self._delete_audit_database_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_audit_database_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/{instance_id}/audit/databases/{db_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAuditDatabaseResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'db_id' in local_var_params:
+            path_params['db_id'] = local_var_params['db_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_instances_async(self, request):
+        """删除审计实例
+
+        只有按需计费模式实例没有任务时 或 包周期模式实例状态为故障时，才能执行此操作。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteInstances
+        :type request: :class:`huaweicloudsdkdbss.v1.DeleteInstancesRequest`
+        :rtype: :class:`huaweicloudsdkdbss.v1.DeleteInstancesResponse`
+        """
+        http_info = self._delete_instances_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_instances_async_invoker(self, request):
+        http_info = self._delete_instances_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_instances_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/dbss/audit/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteInstancesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_audit_alarm_log_async(self, request):
+        """查询审计告警信息
+
+        查询审计告警信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAuditAlarmLog
+        :type request: :class:`huaweicloudsdkdbss.v1.ListAuditAlarmLogRequest`
+        :rtype: :class:`huaweicloudsdkdbss.v1.ListAuditAlarmLogResponse`
+        """
+        http_info = self._list_audit_alarm_log_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_audit_alarm_log_async_invoker(self, request):
+        http_info = self._list_audit_alarm_log_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_audit_alarm_log_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/{instance_id}/audit/alarm-log",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAuditAlarmLogResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
 
@@ -846,6 +975,140 @@ class DbssAsyncClient(Client):
 
         return http_info
 
+    def list_audit_sqls_async(self, request):
+        """查询审计SQL语句
+
+        查询审计SQL语句
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAuditSqls
+        :type request: :class:`huaweicloudsdkdbss.v1.ListAuditSqlsRequest`
+        :rtype: :class:`huaweicloudsdkdbss.v1.ListAuditSqlsResponse`
+        """
+        http_info = self._list_audit_sqls_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_audit_sqls_async_invoker(self, request):
+        http_info = self._list_audit_sqls_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_audit_sqls_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/{instance_id}/audit/sqls",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAuditSqlsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_audit_summary_infos_async(self, request):
+        """查询审计汇总信息
+
+        查询审计汇总信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAuditSummaryInfos
+        :type request: :class:`huaweicloudsdkdbss.v1.ListAuditSummaryInfosRequest`
+        :rtype: :class:`huaweicloudsdkdbss.v1.ListAuditSummaryInfosResponse`
+        """
+        http_info = self._list_audit_summary_infos_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_audit_summary_infos_async_invoker(self, request):
+        http_info = self._list_audit_summary_infos_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_audit_summary_infos_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/audit/summary/info",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAuditSummaryInfosResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_availability_zone_infos_async(self, request):
         """查询可用区信息
 
@@ -910,9 +1173,9 @@ class DbssAsyncClient(Client):
         return http_info
 
     def list_ecs_specification_async(self, request):
-        """查询ecs服务器规格信息
+        """查询ECS服务器规格信息
 
-        查询ecs服务器规格信息
+        查询ECS服务器规格信息
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -972,31 +1235,31 @@ class DbssAsyncClient(Client):
 
         return http_info
 
-    def list_project_resource_tags_async(self, request):
-        """查询项目标签
+    def list_rds_databases_async(self, request):
+        """查询RDS数据库列表
 
-        查询项目标签
+        查询RDS数据库列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for ListProjectResourceTags
-        :type request: :class:`huaweicloudsdkdbss.v1.ListProjectResourceTagsRequest`
-        :rtype: :class:`huaweicloudsdkdbss.v1.ListProjectResourceTagsResponse`
+        :param request: Request instance for ListRdsDatabases
+        :type request: :class:`huaweicloudsdkdbss.v1.ListRdsDatabasesRequest`
+        :rtype: :class:`huaweicloudsdkdbss.v1.ListRdsDatabasesResponse`
         """
-        http_info = self._list_project_resource_tags_http_info(request)
+        http_info = self._list_rds_databases_http_info(request)
         return self._call_api(**http_info)
 
-    def list_project_resource_tags_async_invoker(self, request):
-        http_info = self._list_project_resource_tags_http_info(request)
+    def list_rds_databases_async_invoker(self, request):
+        http_info = self._list_rds_databases_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _list_project_resource_tags_http_info(self, request):
+    def _list_rds_databases_http_info(self, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v1/{project_id}/{resource_type}/tags",
+            "resource_path": "/v2/{project_id}/audit/databases/rds",
             "request_type": request.__class__.__name__,
-            "response_type": "ListProjectResourceTagsResponse"
+            "response_type": "ListRdsDatabasesResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1006,10 +1269,14 @@ class DbssAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'resource_type' in local_var_params:
-            path_params['resource_type'] = local_var_params['resource_type']
 
         query_params = []
+        if 'db_type' in local_var_params:
+            query_params.append(('db_type', local_var_params['db_type']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -1023,77 +1290,6 @@ class DbssAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_resource_instance_by_tag_async(self, request):
-        """根据标签查询资源实例列表
-
-        根据标签查询资源实例列表
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListResourceInstanceByTag
-        :type request: :class:`huaweicloudsdkdbss.v1.ListResourceInstanceByTagRequest`
-        :rtype: :class:`huaweicloudsdkdbss.v1.ListResourceInstanceByTagResponse`
-        """
-        http_info = self._list_resource_instance_by_tag_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_resource_instance_by_tag_async_invoker(self, request):
-        http_info = self._list_resource_instance_by_tag_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_resource_instance_by_tag_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/{resource_type}/resource-instances/filter",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListResourceInstanceByTagResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'resource_type' in local_var_params:
-            path_params['resource_type'] = local_var_params['resource_type']
-
-        query_params = []
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -1144,6 +1340,71 @@ class DbssAsyncClient(Client):
         path_params = {}
         if 'instance_id' in local_var_params:
             path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def reboot_audit_instance_async(self, request):
+        """重启审计实例
+
+        重启审计实例
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RebootAuditInstance
+        :type request: :class:`huaweicloudsdkdbss.v1.RebootAuditInstanceRequest`
+        :rtype: :class:`huaweicloudsdkdbss.v1.RebootAuditInstanceResponse`
+        """
+        http_info = self._reboot_audit_instance_http_info(request)
+        return self._call_api(**http_info)
+
+    def reboot_audit_instance_async_invoker(self, request):
+        http_info = self._reboot_audit_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _reboot_audit_instance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/dbss/audit/instance/reboot",
+            "request_type": request.__class__.__name__,
+            "response_type": "RebootAuditInstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
 
         query_params = []
 
@@ -1305,31 +1566,161 @@ class DbssAsyncClient(Client):
 
         return http_info
 
-    def switch_agent_async(self, request):
-        """开启关闭Agent
+    def start_audit_instance_async(self, request):
+        """开启审计实例
 
-        用于开启和关闭agent的功能，当开启后，开始抓取用户的访问信息。
+        开启审计实例
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for SwitchAgent
-        :type request: :class:`huaweicloudsdkdbss.v1.SwitchAgentRequest`
-        :rtype: :class:`huaweicloudsdkdbss.v1.SwitchAgentResponse`
+        :param request: Request instance for StartAuditInstance
+        :type request: :class:`huaweicloudsdkdbss.v1.StartAuditInstanceRequest`
+        :rtype: :class:`huaweicloudsdkdbss.v1.StartAuditInstanceResponse`
         """
-        http_info = self._switch_agent_http_info(request)
+        http_info = self._start_audit_instance_http_info(request)
         return self._call_api(**http_info)
 
-    def switch_agent_async_invoker(self, request):
-        http_info = self._switch_agent_http_info(request)
+    def start_audit_instance_async_invoker(self, request):
+        http_info = self._start_audit_instance_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _switch_agent_http_info(self, request):
+    def _start_audit_instance_http_info(self, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/v1/{project_id}/{instance_id}/audit/agent/switch",
+            "resource_path": "/v1/{project_id}/dbss/audit/instance/start",
             "request_type": request.__class__.__name__,
-            "response_type": "SwitchAgentResponse"
+            "response_type": "StartAuditInstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def stop_audit_instance_async(self, request):
+        """关闭审计实例
+
+        关闭审计实例
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for StopAuditInstance
+        :type request: :class:`huaweicloudsdkdbss.v1.StopAuditInstanceRequest`
+        :rtype: :class:`huaweicloudsdkdbss.v1.StopAuditInstanceResponse`
+        """
+        http_info = self._stop_audit_instance_http_info(request)
+        return self._call_api(**http_info)
+
+    def stop_audit_instance_async_invoker(self, request):
+        http_info = self._stop_audit_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _stop_audit_instance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/dbss/audit/instance/stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopAuditInstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def switch_audit_database_async(self, request):
+        """开启关闭数据库
+
+        开启关闭数据库
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SwitchAuditDatabase
+        :type request: :class:`huaweicloudsdkdbss.v1.SwitchAuditDatabaseRequest`
+        :rtype: :class:`huaweicloudsdkdbss.v1.SwitchAuditDatabaseResponse`
+        """
+        http_info = self._switch_audit_database_http_info(request)
+        return self._call_api(**http_info)
+
+    def switch_audit_database_async_invoker(self, request):
+        http_info = self._switch_audit_database_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _switch_audit_database_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/{instance_id}/audit/databases/switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchAuditDatabaseResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1439,10 +1830,77 @@ class DbssAsyncClient(Client):
 
         return http_info
 
-    def update_audit_security_group_async(self, request):
-        """修改安全组
+    def update_audit_instance_async(self, request):
+        """更新审计实例信息
 
-        修改安全组
+        更新审计实例信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateAuditInstance
+        :type request: :class:`huaweicloudsdkdbss.v1.UpdateAuditInstanceRequest`
+        :rtype: :class:`huaweicloudsdkdbss.v1.UpdateAuditInstanceResponse`
+        """
+        http_info = self._update_audit_instance_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_audit_instance_async_invoker(self, request):
+        http_info = self._update_audit_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_audit_instance_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/dbss/audit/instances/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAuditInstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_audit_security_group_async(self, request):
+        """修改实例安全组
+
+        修改实例安全组
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1475,6 +1933,688 @@ class DbssAsyncClient(Client):
         path_params = {}
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def add_audit_agent_async(self, request):
+        """添加审计数据库Agent
+
+        添加审计数据库Agent
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AddAuditAgent
+        :type request: :class:`huaweicloudsdkdbss.v1.AddAuditAgentRequest`
+        :rtype: :class:`huaweicloudsdkdbss.v1.AddAuditAgentResponse`
+        """
+        http_info = self._add_audit_agent_http_info(request)
+        return self._call_api(**http_info)
+
+    def add_audit_agent_async_invoker(self, request):
+        http_info = self._add_audit_agent_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_audit_agent_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/{instance_id}/audit/agents",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddAuditAgentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_audit_agent_async(self, request):
+        """删除数据库Agent
+
+        删除数据库Agent
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteAuditAgent
+        :type request: :class:`huaweicloudsdkdbss.v1.DeleteAuditAgentRequest`
+        :rtype: :class:`huaweicloudsdkdbss.v1.DeleteAuditAgentResponse`
+        """
+        http_info = self._delete_audit_agent_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_audit_agent_async_invoker(self, request):
+        http_info = self._delete_audit_agent_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_audit_agent_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/{instance_id}/audit/agents/{agent_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAuditAgentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'agent_id' in local_var_params:
+            path_params['agent_id'] = local_var_params['agent_id']
+
+        query_params = []
+        if 'db_id' in local_var_params:
+            query_params.append(('db_id', local_var_params['db_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def download_audit_agent_async(self, request):
+        """下载审计Agent
+
+        下载审计Agent
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DownloadAuditAgent
+        :type request: :class:`huaweicloudsdkdbss.v1.DownloadAuditAgentRequest`
+        :rtype: :class:`huaweicloudsdkdbss.v1.DownloadAuditAgentResponse`
+        """
+        http_info = self._download_audit_agent_http_info(request)
+        return self._call_api(**http_info)
+
+    def download_audit_agent_async_invoker(self, request):
+        http_info = self._download_audit_agent_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _download_audit_agent_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/{instance_id}/audit/agents/{agent_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadAuditAgentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'agent_id' in local_var_params:
+            path_params['agent_id'] = local_var_params['agent_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_audit_agent_async(self, request):
+        """查询数据库Agent列表
+
+        查询数据库Agent列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAuditAgent
+        :type request: :class:`huaweicloudsdkdbss.v1.ListAuditAgentRequest`
+        :rtype: :class:`huaweicloudsdkdbss.v1.ListAuditAgentResponse`
+        """
+        http_info = self._list_audit_agent_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_audit_agent_async_invoker(self, request):
+        http_info = self._list_audit_agent_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_audit_agent_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/{instance_id}/audit/agents",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAuditAgentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'db_id' in local_var_params:
+            query_params.append(('db_id', local_var_params['db_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def switch_agent_async(self, request):
+        """开启关闭Agent
+
+        用于开启和关闭Agent审计的功能，当开启后，开始抓取用户的访问信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SwitchAgent
+        :type request: :class:`huaweicloudsdkdbss.v1.SwitchAgentRequest`
+        :rtype: :class:`huaweicloudsdkdbss.v1.SwitchAgentResponse`
+        """
+        http_info = self._switch_agent_http_info(request)
+        return self._call_api(**http_info)
+
+    def switch_agent_async_invoker(self, request):
+        http_info = self._switch_agent_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _switch_agent_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/{instance_id}/audit/agent/switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchAgentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_add_resource_tag_async(self, request):
+        """批量添加资源标签
+
+        批量添加资源标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchAddResourceTag
+        :type request: :class:`huaweicloudsdkdbss.v1.BatchAddResourceTagRequest`
+        :rtype: :class:`huaweicloudsdkdbss.v1.BatchAddResourceTagResponse`
+        """
+        http_info = self._batch_add_resource_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_add_resource_tag_async_invoker(self, request):
+        http_info = self._batch_add_resource_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_add_resource_tag_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/{resource_type}/{resource_id}/tags/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchAddResourceTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_resource_tag_async(self, request):
+        """批量删除资源标签
+
+        批量删除资源标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteResourceTag
+        :type request: :class:`huaweicloudsdkdbss.v1.BatchDeleteResourceTagRequest`
+        :rtype: :class:`huaweicloudsdkdbss.v1.BatchDeleteResourceTagResponse`
+        """
+        http_info = self._batch_delete_resource_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_resource_tag_async_invoker(self, request):
+        http_info = self._batch_delete_resource_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_resource_tag_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/{resource_type}/{resource_id}/tags/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteResourceTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def count_resource_instance_by_tag_async(self, request):
+        """根据标签查询资源实例数量
+
+        根据标签查询资源实例数量
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CountResourceInstanceByTag
+        :type request: :class:`huaweicloudsdkdbss.v1.CountResourceInstanceByTagRequest`
+        :rtype: :class:`huaweicloudsdkdbss.v1.CountResourceInstanceByTagResponse`
+        """
+        http_info = self._count_resource_instance_by_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def count_resource_instance_by_tag_async_invoker(self, request):
+        http_info = self._count_resource_instance_by_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _count_resource_instance_by_tag_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/{resource_type}/resource-instances/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "CountResourceInstanceByTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_project_resource_tags_async(self, request):
+        """查询项目标签
+
+        查询项目标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListProjectResourceTags
+        :type request: :class:`huaweicloudsdkdbss.v1.ListProjectResourceTagsRequest`
+        :rtype: :class:`huaweicloudsdkdbss.v1.ListProjectResourceTagsResponse`
+        """
+        http_info = self._list_project_resource_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_project_resource_tags_async_invoker(self, request):
+        http_info = self._list_project_resource_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_project_resource_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/{resource_type}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectResourceTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_resource_instance_by_tag_async(self, request):
+        """根据标签查询资源实例列表
+
+        根据标签查询资源实例列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListResourceInstanceByTag
+        :type request: :class:`huaweicloudsdkdbss.v1.ListResourceInstanceByTagRequest`
+        :rtype: :class:`huaweicloudsdkdbss.v1.ListResourceInstanceByTagResponse`
+        """
+        http_info = self._list_resource_instance_by_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_resource_instance_by_tag_async_invoker(self, request):
+        http_info = self._list_resource_instance_by_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_resource_instance_by_tag_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/{resource_type}/resource-instances/filter",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResourceInstanceByTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
 

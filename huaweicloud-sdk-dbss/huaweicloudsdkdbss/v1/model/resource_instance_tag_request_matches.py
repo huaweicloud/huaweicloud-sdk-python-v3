@@ -31,9 +31,9 @@ class ResourceInstanceTagRequestMatches:
 
         The model defined in huaweicloud sdk
 
-        :param key: 键
+        :param key: 键，目前仅支持：resource_name
         :type key: str
-        :param value: 值
+        :param value: 值，需要匹配的资源名称
         :type value: str
         """
         
@@ -43,16 +43,14 @@ class ResourceInstanceTagRequestMatches:
         self._value = None
         self.discriminator = None
 
-        if key is not None:
-            self.key = key
-        if value is not None:
-            self.value = value
+        self.key = key
+        self.value = value
 
     @property
     def key(self):
         """Gets the key of this ResourceInstanceTagRequestMatches.
 
-        键
+        键，目前仅支持：resource_name
 
         :return: The key of this ResourceInstanceTagRequestMatches.
         :rtype: str
@@ -63,7 +61,7 @@ class ResourceInstanceTagRequestMatches:
     def key(self, key):
         """Sets the key of this ResourceInstanceTagRequestMatches.
 
-        键
+        键，目前仅支持：resource_name
 
         :param key: The key of this ResourceInstanceTagRequestMatches.
         :type key: str
@@ -74,7 +72,7 @@ class ResourceInstanceTagRequestMatches:
     def value(self):
         """Gets the value of this ResourceInstanceTagRequestMatches.
 
-        值
+        值，需要匹配的资源名称
 
         :return: The value of this ResourceInstanceTagRequestMatches.
         :rtype: str
@@ -85,7 +83,7 @@ class ResourceInstanceTagRequestMatches:
     def value(self, value):
         """Sets the value of this ResourceInstanceTagRequestMatches.
 
-        值
+        值，需要匹配的资源名称
 
         :param value: The value of this ResourceInstanceTagRequestMatches.
         :type value: str

@@ -17,8 +17,8 @@ class ResourceTagRequest:
     sensitive_list = []
 
     openapi_types = {
-        'tags': 'list[KeyValueBean]',
-        'sys_tags': 'list[KeyValueBean]'
+        'tags': 'list[ResourceTagRequestTags]',
+        'sys_tags': 'list[ResourceTagRequestTags]'
     }
 
     attribute_map = {
@@ -32,9 +32,9 @@ class ResourceTagRequest:
         The model defined in huaweicloud sdk
 
         :param tags: 标签列表 租户权限时该字段必选，op_service权限时和sys_tags二选一
-        :type tags: list[:class:`huaweicloudsdkdbss.v1.KeyValueBean`]
+        :type tags: list[:class:`huaweicloudsdkdbss.v1.ResourceTagRequestTags`]
         :param sys_tags: 系统标签列表 op_service权限可以访问，和tags二选一。 目前TMS调用时只包含一个resource_tag结构体 ，key固定为：_sys_enterprise_project_id value是UUID或0,value为0表示默认企业项目
-        :type sys_tags: list[:class:`huaweicloudsdkdbss.v1.KeyValueBean`]
+        :type sys_tags: list[:class:`huaweicloudsdkdbss.v1.ResourceTagRequestTags`]
         """
         
         
@@ -55,7 +55,7 @@ class ResourceTagRequest:
         标签列表 租户权限时该字段必选，op_service权限时和sys_tags二选一
 
         :return: The tags of this ResourceTagRequest.
-        :rtype: list[:class:`huaweicloudsdkdbss.v1.KeyValueBean`]
+        :rtype: list[:class:`huaweicloudsdkdbss.v1.ResourceTagRequestTags`]
         """
         return self._tags
 
@@ -66,7 +66,7 @@ class ResourceTagRequest:
         标签列表 租户权限时该字段必选，op_service权限时和sys_tags二选一
 
         :param tags: The tags of this ResourceTagRequest.
-        :type tags: list[:class:`huaweicloudsdkdbss.v1.KeyValueBean`]
+        :type tags: list[:class:`huaweicloudsdkdbss.v1.ResourceTagRequestTags`]
         """
         self._tags = tags
 
@@ -77,7 +77,7 @@ class ResourceTagRequest:
         系统标签列表 op_service权限可以访问，和tags二选一。 目前TMS调用时只包含一个resource_tag结构体 ，key固定为：_sys_enterprise_project_id value是UUID或0,value为0表示默认企业项目
 
         :return: The sys_tags of this ResourceTagRequest.
-        :rtype: list[:class:`huaweicloudsdkdbss.v1.KeyValueBean`]
+        :rtype: list[:class:`huaweicloudsdkdbss.v1.ResourceTagRequestTags`]
         """
         return self._sys_tags
 
@@ -88,7 +88,7 @@ class ResourceTagRequest:
         系统标签列表 op_service权限可以访问，和tags二选一。 目前TMS调用时只包含一个resource_tag结构体 ，key固定为：_sys_enterprise_project_id value是UUID或0,value为0表示默认企业项目
 
         :param sys_tags: The sys_tags of this ResourceTagRequest.
-        :type sys_tags: list[:class:`huaweicloudsdkdbss.v1.KeyValueBean`]
+        :type sys_tags: list[:class:`huaweicloudsdkdbss.v1.ResourceTagRequestTags`]
         """
         self._sys_tags = sys_tags
 

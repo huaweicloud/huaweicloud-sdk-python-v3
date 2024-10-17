@@ -95,7 +95,7 @@ class CentralNetworkGdgwAttachment:
         :type global_connection_bandwidth_id: str
         :param bandwidth_type: 
         :type bandwidth_type: :class:`huaweicloudsdkcc.v3.BandwidthTypeEnum`
-        :param bandwidth_size: 带宽值定义，单位Mbps。
+        :param bandwidth_size: 带宽值，单位Mbps。
         :type bandwidth_size: int
         :param is_frozen: 是否冻结
         :type is_frozen: bool
@@ -415,7 +415,7 @@ class CentralNetworkGdgwAttachment:
     def bandwidth_size(self):
         """Gets the bandwidth_size of this CentralNetworkGdgwAttachment.
 
-        带宽值定义，单位Mbps。
+        带宽值，单位Mbps。
 
         :return: The bandwidth_size of this CentralNetworkGdgwAttachment.
         :rtype: int
@@ -426,7 +426,7 @@ class CentralNetworkGdgwAttachment:
     def bandwidth_size(self, bandwidth_size):
         """Sets the bandwidth_size of this CentralNetworkGdgwAttachment.
 
-        带宽值定义，单位Mbps。
+        带宽值，单位Mbps。
 
         :param bandwidth_size: The bandwidth_size of this CentralNetworkGdgwAttachment.
         :type bandwidth_size: int
