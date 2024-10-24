@@ -35,9 +35,9 @@ class StreamSelectionItem:
 
         :param key: 拉流URL中用于码率过滤的参数
         :type key: str
-        :param max_bandwidth: 最小码率，单位：bps 取值范围：0 - 104,857,600（100Mbps）
+        :param max_bandwidth: 最大码率，单位：bps  取值范围：0 - 104,857,600（100Mbps）
         :type max_bandwidth: int
-        :param min_bandwidth: 最小码率，单位：bps 取值范围：0 - 104,857,600（100Mbps）
+        :param min_bandwidth: 最小码率，单位：bps  取值范围：0 - 104,857,600（100Mbps）
         :type min_bandwidth: int
         """
         
@@ -81,7 +81,7 @@ class StreamSelectionItem:
     def max_bandwidth(self):
         """Gets the max_bandwidth of this StreamSelectionItem.
 
-        最小码率，单位：bps 取值范围：0 - 104,857,600（100Mbps）
+        最大码率，单位：bps  取值范围：0 - 104,857,600（100Mbps）
 
         :return: The max_bandwidth of this StreamSelectionItem.
         :rtype: int
@@ -92,7 +92,7 @@ class StreamSelectionItem:
     def max_bandwidth(self, max_bandwidth):
         """Sets the max_bandwidth of this StreamSelectionItem.
 
-        最小码率，单位：bps 取值范围：0 - 104,857,600（100Mbps）
+        最大码率，单位：bps  取值范围：0 - 104,857,600（100Mbps）
 
         :param max_bandwidth: The max_bandwidth of this StreamSelectionItem.
         :type max_bandwidth: int
@@ -103,7 +103,7 @@ class StreamSelectionItem:
     def min_bandwidth(self):
         """Gets the min_bandwidth of this StreamSelectionItem.
 
-        最小码率，单位：bps 取值范围：0 - 104,857,600（100Mbps）
+        最小码率，单位：bps  取值范围：0 - 104,857,600（100Mbps）
 
         :return: The min_bandwidth of this StreamSelectionItem.
         :rtype: int
@@ -114,7 +114,7 @@ class StreamSelectionItem:
     def min_bandwidth(self, min_bandwidth):
         """Sets the min_bandwidth of this StreamSelectionItem.
 
-        最小码率，单位：bps 取值范围：0 - 104,857,600（100Mbps）
+        最小码率，单位：bps  取值范围：0 - 104,857,600（100Mbps）
 
         :param min_bandwidth: The min_bandwidth of this StreamSelectionItem.
         :type min_bandwidth: int

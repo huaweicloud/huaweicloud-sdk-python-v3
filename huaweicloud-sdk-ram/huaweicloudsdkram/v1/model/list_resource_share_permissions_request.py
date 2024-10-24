@@ -15,8 +15,10 @@ class ListResourceSharePermissionsRequest:
                             and the value is json key in definition.
     """
     sensitive_list = []
+    sensitive_list.append('x_security_token')
 
     openapi_types = {
+        'x_security_token': 'str',
         'resource_share_id': 'str',
         'permission_name': 'str',
         'limit': 'int',
@@ -24,17 +26,20 @@ class ListResourceSharePermissionsRequest:
     }
 
     attribute_map = {
+        'x_security_token': 'X-Security-Token',
         'resource_share_id': 'resource_share_id',
         'permission_name': 'permission_name',
         'limit': 'limit',
         'marker': 'marker'
     }
 
-    def __init__(self, resource_share_id=None, permission_name=None, limit=None, marker=None):
+    def __init__(self, x_security_token=None, resource_share_id=None, permission_name=None, limit=None, marker=None):
         """ListResourceSharePermissionsRequest
 
         The model defined in huaweicloud sdk
 
+        :param x_security_token: 如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+        :type x_security_token: str
         :param resource_share_id: 资源共享实例的ID。
         :type resource_share_id: str
         :param permission_name: 共享资源权限的名称。
@@ -47,12 +52,15 @@ class ListResourceSharePermissionsRequest:
         
         
 
+        self._x_security_token = None
         self._resource_share_id = None
         self._permission_name = None
         self._limit = None
         self._marker = None
         self.discriminator = None
 
+        if x_security_token is not None:
+            self.x_security_token = x_security_token
         self.resource_share_id = resource_share_id
         if permission_name is not None:
             self.permission_name = permission_name
@@ -60,6 +68,28 @@ class ListResourceSharePermissionsRequest:
             self.limit = limit
         if marker is not None:
             self.marker = marker
+
+    @property
+    def x_security_token(self):
+        """Gets the x_security_token of this ListResourceSharePermissionsRequest.
+
+        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+
+        :return: The x_security_token of this ListResourceSharePermissionsRequest.
+        :rtype: str
+        """
+        return self._x_security_token
+
+    @x_security_token.setter
+    def x_security_token(self, x_security_token):
+        """Sets the x_security_token of this ListResourceSharePermissionsRequest.
+
+        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+
+        :param x_security_token: The x_security_token of this ListResourceSharePermissionsRequest.
+        :type x_security_token: str
+        """
+        self._x_security_token = x_security_token
 
     @property
     def resource_share_id(self):

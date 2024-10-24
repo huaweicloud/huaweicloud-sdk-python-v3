@@ -17,20 +17,109 @@ class ListEnvsRequest:
     sensitive_list = []
 
     openapi_types = {
+        'page_num': 'int',
+        'page_size': 'int',
+        'env_types': 'str'
     }
 
     attribute_map = {
+        'page_num': 'page_num',
+        'page_size': 'page_size',
+        'env_types': 'env_types'
     }
 
-    def __init__(self):
+    def __init__(self, page_num=None, page_size=None, env_types=None):
         """ListEnvsRequest
 
         The model defined in huaweicloud sdk
 
+        :param page_num: 页码
+        :type page_num: int
+        :param page_size: 当前页大小
+        :type page_size: int
+        :param env_types: 云服务类型 - STUDIO：设计态服务。 - CLOUD_BASIC：公有云基础版数据建模引擎。 - CLOUD_TRIAL：公有云体验版数据建模引擎。 - EDGE_BASIC：边缘云基础版数据建模引擎。 - CLOUD_LINKX：公有云基础版数字主线引擎。 - EDGE_LINKX：边缘云基础版数字主线引擎。
+        :type env_types: str
         """
         
         
+
+        self._page_num = None
+        self._page_size = None
+        self._env_types = None
         self.discriminator = None
+
+        if page_num is not None:
+            self.page_num = page_num
+        if page_size is not None:
+            self.page_size = page_size
+        if env_types is not None:
+            self.env_types = env_types
+
+    @property
+    def page_num(self):
+        """Gets the page_num of this ListEnvsRequest.
+
+        页码
+
+        :return: The page_num of this ListEnvsRequest.
+        :rtype: int
+        """
+        return self._page_num
+
+    @page_num.setter
+    def page_num(self, page_num):
+        """Sets the page_num of this ListEnvsRequest.
+
+        页码
+
+        :param page_num: The page_num of this ListEnvsRequest.
+        :type page_num: int
+        """
+        self._page_num = page_num
+
+    @property
+    def page_size(self):
+        """Gets the page_size of this ListEnvsRequest.
+
+        当前页大小
+
+        :return: The page_size of this ListEnvsRequest.
+        :rtype: int
+        """
+        return self._page_size
+
+    @page_size.setter
+    def page_size(self, page_size):
+        """Sets the page_size of this ListEnvsRequest.
+
+        当前页大小
+
+        :param page_size: The page_size of this ListEnvsRequest.
+        :type page_size: int
+        """
+        self._page_size = page_size
+
+    @property
+    def env_types(self):
+        """Gets the env_types of this ListEnvsRequest.
+
+        云服务类型 - STUDIO：设计态服务。 - CLOUD_BASIC：公有云基础版数据建模引擎。 - CLOUD_TRIAL：公有云体验版数据建模引擎。 - EDGE_BASIC：边缘云基础版数据建模引擎。 - CLOUD_LINKX：公有云基础版数字主线引擎。 - EDGE_LINKX：边缘云基础版数字主线引擎。
+
+        :return: The env_types of this ListEnvsRequest.
+        :rtype: str
+        """
+        return self._env_types
+
+    @env_types.setter
+    def env_types(self, env_types):
+        """Sets the env_types of this ListEnvsRequest.
+
+        云服务类型 - STUDIO：设计态服务。 - CLOUD_BASIC：公有云基础版数据建模引擎。 - CLOUD_TRIAL：公有云体验版数据建模引擎。 - EDGE_BASIC：边缘云基础版数据建模引擎。 - CLOUD_LINKX：公有云基础版数字主线引擎。 - EDGE_LINKX：边缘云基础版数字主线引擎。
+
+        :param env_types: The env_types of this ListEnvsRequest.
+        :type env_types: str
+        """
+        self._env_types = env_types
 
     def to_dict(self):
         """Returns the model properties as a dict"""

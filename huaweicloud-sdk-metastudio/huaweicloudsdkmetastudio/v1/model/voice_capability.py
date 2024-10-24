@@ -28,7 +28,8 @@ class VoiceCapability:
         'is_support_word': 'bool',
         'is_support_voice_cache': 'bool',
         'conversion_rate': 'float',
-        'conversion_rate_en': 'float'
+        'conversion_rate_en': 'float',
+        'is_support_srt': 'bool'
     }
 
     attribute_map = {
@@ -43,10 +44,11 @@ class VoiceCapability:
         'is_support_word': 'is_support_word',
         'is_support_voice_cache': 'is_support_voice_cache',
         'conversion_rate': 'conversion_rate',
-        'conversion_rate_en': 'conversion_rate_en'
+        'conversion_rate_en': 'conversion_rate_en',
+        'is_support_srt': 'is_support_srt'
     }
 
-    def __init__(self, is_support_phoneme_en=None, is_support_phoneme=None, is_support_break_time=None, is_support_break_strength=None, is_support_speed=None, is_support_prosody=None, is_support_ssml_say_as=None, is_support_ssml_sub=None, is_support_word=None, is_support_voice_cache=None, conversion_rate=None, conversion_rate_en=None):
+    def __init__(self, is_support_phoneme_en=None, is_support_phoneme=None, is_support_break_time=None, is_support_break_strength=None, is_support_speed=None, is_support_prosody=None, is_support_ssml_say_as=None, is_support_ssml_sub=None, is_support_word=None, is_support_voice_cache=None, conversion_rate=None, conversion_rate_en=None, is_support_srt=None):
         """VoiceCapability
 
         The model defined in huaweicloud sdk
@@ -75,6 +77,8 @@ class VoiceCapability:
         :type conversion_rate: float
         :param conversion_rate_en: **参数解释**： 英语的合成率。 **约束限制**： 不涉及 **取值范围**： * 0-50
         :type conversion_rate_en: float
+        :param is_support_srt: 是否支持生成STR字幕文件。
+        :type is_support_srt: bool
         """
         
         
@@ -91,6 +95,7 @@ class VoiceCapability:
         self._is_support_voice_cache = None
         self._conversion_rate = None
         self._conversion_rate_en = None
+        self._is_support_srt = None
         self.discriminator = None
 
         if is_support_phoneme_en is not None:
@@ -117,6 +122,8 @@ class VoiceCapability:
             self.conversion_rate = conversion_rate
         if conversion_rate_en is not None:
             self.conversion_rate_en = conversion_rate_en
+        if is_support_srt is not None:
+            self.is_support_srt = is_support_srt
 
     @property
     def is_support_phoneme_en(self):
@@ -381,6 +388,28 @@ class VoiceCapability:
         :type conversion_rate_en: float
         """
         self._conversion_rate_en = conversion_rate_en
+
+    @property
+    def is_support_srt(self):
+        """Gets the is_support_srt of this VoiceCapability.
+
+        是否支持生成STR字幕文件。
+
+        :return: The is_support_srt of this VoiceCapability.
+        :rtype: bool
+        """
+        return self._is_support_srt
+
+    @is_support_srt.setter
+    def is_support_srt(self, is_support_srt):
+        """Sets the is_support_srt of this VoiceCapability.
+
+        是否支持生成STR字幕文件。
+
+        :param is_support_srt: The is_support_srt of this VoiceCapability.
+        :type is_support_srt: bool
+        """
+        self._is_support_srt = is_support_srt
 
     def to_dict(self):
         """Returns the model properties as a dict"""

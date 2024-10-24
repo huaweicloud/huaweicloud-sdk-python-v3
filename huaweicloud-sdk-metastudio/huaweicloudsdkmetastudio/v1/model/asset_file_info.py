@@ -25,7 +25,8 @@ class AssetFileInfo:
         'asset_file_category': 'str',
         'download_url': 'str',
         'state': 'str',
-        'reason': 'str'
+        'reason': 'str',
+        'file_extra_meta': 'FileExtraMeta'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class AssetFileInfo:
         'asset_file_category': 'asset_file_category',
         'download_url': 'download_url',
         'state': 'state',
-        'reason': 'reason'
+        'reason': 'reason',
+        'file_extra_meta': 'file_extra_meta'
     }
 
-    def __init__(self, file_id=None, file_name=None, file_md5=None, file_size=None, file_type=None, asset_file_category=None, download_url=None, state=None, reason=None):
+    def __init__(self, file_id=None, file_name=None, file_md5=None, file_size=None, file_type=None, asset_file_category=None, download_url=None, state=None, reason=None, file_extra_meta=None):
         """AssetFileInfo
 
         The model defined in huaweicloud sdk
@@ -55,7 +57,7 @@ class AssetFileInfo:
         :type file_size: int
         :param file_type: 文件类型（默认提取文件后缀）。
         :type file_type: str
-        :param asset_file_category: 文件在资产中的分类。每种资产类型包含的文件分类不同。 * MAIN：主文件 * COVER：封面文件 * PAGE：内容页图片 * SAMPLE：样例音频 * OTHER：其他文件 * WHOLE_MODEL：全模型 * USER_MODIFIED_MODEL：用户上传模型 &gt; * 资产类型为SCENE、ANIMATION、VIDEO、IMAGE、MATERIAL时，包含MAIN、COVER和OTHER &gt; * 资产类型为PPT时，包含MAIN、COVER、PAGE和OTHER &gt; * 资产类型为HUMAN_MODEL时，包含MAIN、COVER和OTHER &gt; * 资产类型为VOICE_MODEL时，包含MAIN、SAMPLE(样例音频文件)和OTHER &gt; * 资产类型为HUMAN_MODEL_2D时，包含MAIN、COVER、SAMPLE(动作样例)和OTHER(遮罩文件) &gt; * 资产类型为BUSINESS_CARD_TEMPLET时，包含MAIN和COVER(名片效果图)
+        :param asset_file_category: 文件在资产中的分类。每种资产类型包含的文件分类不同。 * MAIN：主文件 * COVER：封面文件 * PAGE：内容页图片 * SAMPLE：样例音频 * OTHER：其他文件 * WHOLE_MODEL：全模型 * USER_MODIFIED_MODEL：用户上传模型 * TEMPORARY：临时文件夹（用于文件替换时上传新文件） &gt; * 资产类型为SCENE、ANIMATION、VIDEO、IMAGE、MATERIAL时，包含MAIN、COVER和OTHER &gt; * 资产类型为PPT时，包含MAIN、COVER、PAGE和OTHER &gt; * 资产类型为HUMAN_MODEL时，包含MAIN、COVER和OTHER &gt; * 资产类型为VOICE_MODEL时，包含MAIN、SAMPLE(样例音频文件)和OTHER &gt; * 资产类型为HUMAN_MODEL_2D时，包含MAIN、COVER、SAMPLE(动作样例)和OTHER(遮罩文件) &gt; * 资产类型为BUSINESS_CARD_TEMPLET时，包含MAIN和COVER(名片效果图)
         :type asset_file_category: str
         :param download_url: 文件下载URL，有效期为24小时。
         :type download_url: str
@@ -63,6 +65,8 @@ class AssetFileInfo:
         :type state: str
         :param reason: 审核失败原因
         :type reason: str
+        :param file_extra_meta: 
+        :type file_extra_meta: :class:`huaweicloudsdkmetastudio.v1.FileExtraMeta`
         """
         
         
@@ -76,6 +80,7 @@ class AssetFileInfo:
         self._download_url = None
         self._state = None
         self._reason = None
+        self._file_extra_meta = None
         self.discriminator = None
 
         if file_id is not None:
@@ -96,6 +101,8 @@ class AssetFileInfo:
             self.state = state
         if reason is not None:
             self.reason = reason
+        if file_extra_meta is not None:
+            self.file_extra_meta = file_extra_meta
 
     @property
     def file_id(self):
@@ -211,7 +218,7 @@ class AssetFileInfo:
     def asset_file_category(self):
         """Gets the asset_file_category of this AssetFileInfo.
 
-        文件在资产中的分类。每种资产类型包含的文件分类不同。 * MAIN：主文件 * COVER：封面文件 * PAGE：内容页图片 * SAMPLE：样例音频 * OTHER：其他文件 * WHOLE_MODEL：全模型 * USER_MODIFIED_MODEL：用户上传模型 > * 资产类型为SCENE、ANIMATION、VIDEO、IMAGE、MATERIAL时，包含MAIN、COVER和OTHER > * 资产类型为PPT时，包含MAIN、COVER、PAGE和OTHER > * 资产类型为HUMAN_MODEL时，包含MAIN、COVER和OTHER > * 资产类型为VOICE_MODEL时，包含MAIN、SAMPLE(样例音频文件)和OTHER > * 资产类型为HUMAN_MODEL_2D时，包含MAIN、COVER、SAMPLE(动作样例)和OTHER(遮罩文件) > * 资产类型为BUSINESS_CARD_TEMPLET时，包含MAIN和COVER(名片效果图)
+        文件在资产中的分类。每种资产类型包含的文件分类不同。 * MAIN：主文件 * COVER：封面文件 * PAGE：内容页图片 * SAMPLE：样例音频 * OTHER：其他文件 * WHOLE_MODEL：全模型 * USER_MODIFIED_MODEL：用户上传模型 * TEMPORARY：临时文件夹（用于文件替换时上传新文件） > * 资产类型为SCENE、ANIMATION、VIDEO、IMAGE、MATERIAL时，包含MAIN、COVER和OTHER > * 资产类型为PPT时，包含MAIN、COVER、PAGE和OTHER > * 资产类型为HUMAN_MODEL时，包含MAIN、COVER和OTHER > * 资产类型为VOICE_MODEL时，包含MAIN、SAMPLE(样例音频文件)和OTHER > * 资产类型为HUMAN_MODEL_2D时，包含MAIN、COVER、SAMPLE(动作样例)和OTHER(遮罩文件) > * 资产类型为BUSINESS_CARD_TEMPLET时，包含MAIN和COVER(名片效果图)
 
         :return: The asset_file_category of this AssetFileInfo.
         :rtype: str
@@ -222,7 +229,7 @@ class AssetFileInfo:
     def asset_file_category(self, asset_file_category):
         """Sets the asset_file_category of this AssetFileInfo.
 
-        文件在资产中的分类。每种资产类型包含的文件分类不同。 * MAIN：主文件 * COVER：封面文件 * PAGE：内容页图片 * SAMPLE：样例音频 * OTHER：其他文件 * WHOLE_MODEL：全模型 * USER_MODIFIED_MODEL：用户上传模型 > * 资产类型为SCENE、ANIMATION、VIDEO、IMAGE、MATERIAL时，包含MAIN、COVER和OTHER > * 资产类型为PPT时，包含MAIN、COVER、PAGE和OTHER > * 资产类型为HUMAN_MODEL时，包含MAIN、COVER和OTHER > * 资产类型为VOICE_MODEL时，包含MAIN、SAMPLE(样例音频文件)和OTHER > * 资产类型为HUMAN_MODEL_2D时，包含MAIN、COVER、SAMPLE(动作样例)和OTHER(遮罩文件) > * 资产类型为BUSINESS_CARD_TEMPLET时，包含MAIN和COVER(名片效果图)
+        文件在资产中的分类。每种资产类型包含的文件分类不同。 * MAIN：主文件 * COVER：封面文件 * PAGE：内容页图片 * SAMPLE：样例音频 * OTHER：其他文件 * WHOLE_MODEL：全模型 * USER_MODIFIED_MODEL：用户上传模型 * TEMPORARY：临时文件夹（用于文件替换时上传新文件） > * 资产类型为SCENE、ANIMATION、VIDEO、IMAGE、MATERIAL时，包含MAIN、COVER和OTHER > * 资产类型为PPT时，包含MAIN、COVER、PAGE和OTHER > * 资产类型为HUMAN_MODEL时，包含MAIN、COVER和OTHER > * 资产类型为VOICE_MODEL时，包含MAIN、SAMPLE(样例音频文件)和OTHER > * 资产类型为HUMAN_MODEL_2D时，包含MAIN、COVER、SAMPLE(动作样例)和OTHER(遮罩文件) > * 资产类型为BUSINESS_CARD_TEMPLET时，包含MAIN和COVER(名片效果图)
 
         :param asset_file_category: The asset_file_category of this AssetFileInfo.
         :type asset_file_category: str
@@ -294,6 +301,24 @@ class AssetFileInfo:
         :type reason: str
         """
         self._reason = reason
+
+    @property
+    def file_extra_meta(self):
+        """Gets the file_extra_meta of this AssetFileInfo.
+
+        :return: The file_extra_meta of this AssetFileInfo.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.FileExtraMeta`
+        """
+        return self._file_extra_meta
+
+    @file_extra_meta.setter
+    def file_extra_meta(self, file_extra_meta):
+        """Sets the file_extra_meta of this AssetFileInfo.
+
+        :param file_extra_meta: The file_extra_meta of this AssetFileInfo.
+        :type file_extra_meta: :class:`huaweicloudsdkmetastudio.v1.FileExtraMeta`
+        """
+        self._file_extra_meta = file_extra_meta
 
     def to_dict(self):
         """Returns the model properties as a dict"""

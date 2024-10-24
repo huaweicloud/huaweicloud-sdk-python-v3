@@ -69,7 +69,7 @@ class Create2dModelTrainingJobReq:
         :type batch_name: str
         :param tags: 分身数字人训练任务标签。
         :type tags: list[str]
-        :param model_version: 分身数字人模型版本。默认是V3版本模型。 * V2: V2版本模型 * V3：V3版本模型 * V3.2：V3.2版本模型 &gt; * V2版本已废弃不用
+        :param model_version: 分身数字人模型版本。默认是V3.2版本模型。 * V3.2：V3.2版本模型 &gt; * V3和V2版本已废弃不用
         :type model_version: str
         :param is_flexus: 是否是基础版的形象训练
         :type is_flexus: bool
@@ -304,7 +304,7 @@ class Create2dModelTrainingJobReq:
     def model_version(self):
         """Gets the model_version of this Create2dModelTrainingJobReq.
 
-        分身数字人模型版本。默认是V3版本模型。 * V2: V2版本模型 * V3：V3版本模型 * V3.2：V3.2版本模型 > * V2版本已废弃不用
+        分身数字人模型版本。默认是V3.2版本模型。 * V3.2：V3.2版本模型 > * V3和V2版本已废弃不用
 
         :return: The model_version of this Create2dModelTrainingJobReq.
         :rtype: str
@@ -315,7 +315,7 @@ class Create2dModelTrainingJobReq:
     def model_version(self, model_version):
         """Sets the model_version of this Create2dModelTrainingJobReq.
 
-        分身数字人模型版本。默认是V3版本模型。 * V2: V2版本模型 * V3：V3版本模型 * V3.2：V3.2版本模型 > * V2版本已废弃不用
+        分身数字人模型版本。默认是V3.2版本模型。 * V3.2：V3.2版本模型 > * V3和V2版本已废弃不用
 
         :param model_version: The model_version of this Create2dModelTrainingJobReq.
         :type model_version: str

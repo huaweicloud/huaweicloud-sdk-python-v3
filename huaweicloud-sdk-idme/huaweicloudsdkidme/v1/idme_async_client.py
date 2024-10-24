@@ -97,6 +97,73 @@ class IdmeAsyncClient(Client):
 
         return http_info
 
+    def delete_cloud_service_async(self, request):
+        """删除iDME实例
+
+        本接口用于删除工业数字模型驱动引擎（Industrial Digital Model Engine，简称iDME）实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteCloudService
+        :type request: :class:`huaweicloudsdkidme.v1.DeleteCloudServiceRequest`
+        :rtype: :class:`huaweicloudsdkidme.v1.DeleteCloudServiceResponse`
+        """
+        http_info = self._delete_cloud_service_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_cloud_service_async_invoker(self, request):
+        http_info = self._delete_cloud_service_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_cloud_service_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/{service_type}/instances/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCloudServiceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'service_type' in local_var_params:
+            path_params['service_type'] = local_var_params['service_type']
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_xdm_application_async(self, request):
         """删除应用
 
@@ -267,6 +334,10 @@ class IdmeAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'page_num' in local_var_params:
+            query_params.append(('page_num', local_var_params['page_num']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
 
         header_params = {}
 
@@ -330,6 +401,12 @@ class IdmeAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'page_num' in local_var_params:
+            query_params.append(('page_num', local_var_params['page_num']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
+        if 'env_types' in local_var_params:
+            query_params.append(('env_types', local_var_params['env_types']))
 
         header_params = {}
 

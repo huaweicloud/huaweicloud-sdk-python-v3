@@ -22,8 +22,7 @@ class ModifyOttChannelInfoRecordSettingsResponse(SdkResponse):
         'result_msg': 'str',
         'domain': 'str',
         'app_name': 'str',
-        'id': 'str',
-        'sources': 'list[SourceRsp]'
+        'id': 'str'
     }
 
     attribute_map = {
@@ -31,11 +30,10 @@ class ModifyOttChannelInfoRecordSettingsResponse(SdkResponse):
         'result_msg': 'result_msg',
         'domain': 'domain',
         'app_name': 'app_name',
-        'id': 'id',
-        'sources': 'sources'
+        'id': 'id'
     }
 
-    def __init__(self, result_code=None, result_msg=None, domain=None, app_name=None, id=None, sources=None):
+    def __init__(self, result_code=None, result_msg=None, domain=None, app_name=None, id=None):
         """ModifyOttChannelInfoRecordSettingsResponse
 
         The model defined in huaweicloud sdk
@@ -50,8 +48,6 @@ class ModifyOttChannelInfoRecordSettingsResponse(SdkResponse):
         :type app_name: str
         :param id: 频道ID。频道唯一标识，为必填项
         :type id: str
-        :param sources: 推流URL列表。创建频道时，只有入流协议为RTMP_PUSH时，会返回推流URL列表
-        :type sources: list[:class:`huaweicloudsdklive.v1.SourceRsp`]
         """
         
         super(ModifyOttChannelInfoRecordSettingsResponse, self).__init__()
@@ -61,7 +57,6 @@ class ModifyOttChannelInfoRecordSettingsResponse(SdkResponse):
         self._domain = None
         self._app_name = None
         self._id = None
-        self._sources = None
         self.discriminator = None
 
         if result_code is not None:
@@ -74,8 +69,6 @@ class ModifyOttChannelInfoRecordSettingsResponse(SdkResponse):
             self.app_name = app_name
         if id is not None:
             self.id = id
-        if sources is not None:
-            self.sources = sources
 
     @property
     def result_code(self):
@@ -186,28 +179,6 @@ class ModifyOttChannelInfoRecordSettingsResponse(SdkResponse):
         :type id: str
         """
         self._id = id
-
-    @property
-    def sources(self):
-        """Gets the sources of this ModifyOttChannelInfoRecordSettingsResponse.
-
-        推流URL列表。创建频道时，只有入流协议为RTMP_PUSH时，会返回推流URL列表
-
-        :return: The sources of this ModifyOttChannelInfoRecordSettingsResponse.
-        :rtype: list[:class:`huaweicloudsdklive.v1.SourceRsp`]
-        """
-        return self._sources
-
-    @sources.setter
-    def sources(self, sources):
-        """Sets the sources of this ModifyOttChannelInfoRecordSettingsResponse.
-
-        推流URL列表。创建频道时，只有入流协议为RTMP_PUSH时，会返回推流URL列表
-
-        :param sources: The sources of this ModifyOttChannelInfoRecordSettingsResponse.
-        :type sources: list[:class:`huaweicloudsdklive.v1.SourceRsp`]
-        """
-        self._sources = sources
 
     def to_dict(self):
         """Returns the model properties as a dict"""

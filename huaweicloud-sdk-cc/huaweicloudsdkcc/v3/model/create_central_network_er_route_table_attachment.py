@@ -29,7 +29,7 @@ class CreateCentralNetworkErRouteTableAttachment:
         'attached_er_table_region_id': 'str',
         'attached_er_id': 'str',
         'attached_er_table_id': 'str',
-        'hosted_cloud': 'HostedCloudEnum'
+        'hosted_cloud': 'str'
     }
 
     attribute_map = {
@@ -77,8 +77,8 @@ class CreateCentralNetworkErRouteTableAttachment:
         :type attached_er_id: str
         :param attached_er_table_id: 被挂载的企业路由器的路由表ID。
         :type attached_er_table_id: str
-        :param hosted_cloud: 
-        :type hosted_cloud: :class:`huaweicloudsdkcc.v3.HostedCloudEnum`
+        :param hosted_cloud: - HWCloud (华为云) - Ireland (爱尔兰)
+        :type hosted_cloud: str
         """
         
         
@@ -382,8 +382,10 @@ class CreateCentralNetworkErRouteTableAttachment:
     def hosted_cloud(self):
         """Gets the hosted_cloud of this CreateCentralNetworkErRouteTableAttachment.
 
+        - HWCloud (华为云) - Ireland (爱尔兰)
+
         :return: The hosted_cloud of this CreateCentralNetworkErRouteTableAttachment.
-        :rtype: :class:`huaweicloudsdkcc.v3.HostedCloudEnum`
+        :rtype: str
         """
         return self._hosted_cloud
 
@@ -391,8 +393,10 @@ class CreateCentralNetworkErRouteTableAttachment:
     def hosted_cloud(self, hosted_cloud):
         """Sets the hosted_cloud of this CreateCentralNetworkErRouteTableAttachment.
 
+        - HWCloud (华为云) - Ireland (爱尔兰)
+
         :param hosted_cloud: The hosted_cloud of this CreateCentralNetworkErRouteTableAttachment.
-        :type hosted_cloud: :class:`huaweicloudsdkcc.v3.HostedCloudEnum`
+        :type hosted_cloud: str
         """
         self._hosted_cloud = hosted_cloud
 

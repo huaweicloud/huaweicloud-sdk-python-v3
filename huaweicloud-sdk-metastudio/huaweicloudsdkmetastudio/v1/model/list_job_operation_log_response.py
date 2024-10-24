@@ -19,7 +19,7 @@ class ListJobOperationLogResponse(SdkResponse):
 
     openapi_types = {
         'count': 'int',
-        'operations': 'list[object]'
+        'operations': 'list[OperationLogItem]'
     }
 
     attribute_map = {
@@ -34,8 +34,8 @@ class ListJobOperationLogResponse(SdkResponse):
 
         :param count: 满足查询要求的操作日志总数
         :type count: int
-        :param operations: 操作
-        :type operations: list[object]
+        :param operations: 操作日志列表
+        :type operations: list[:class:`huaweicloudsdkmetastudio.v1.OperationLogItem`]
         """
         
         super(ListJobOperationLogResponse, self).__init__()
@@ -75,10 +75,10 @@ class ListJobOperationLogResponse(SdkResponse):
     def operations(self):
         """Gets the operations of this ListJobOperationLogResponse.
 
-        操作
+        操作日志列表
 
         :return: The operations of this ListJobOperationLogResponse.
-        :rtype: list[object]
+        :rtype: list[:class:`huaweicloudsdkmetastudio.v1.OperationLogItem`]
         """
         return self._operations
 
@@ -86,10 +86,10 @@ class ListJobOperationLogResponse(SdkResponse):
     def operations(self, operations):
         """Sets the operations of this ListJobOperationLogResponse.
 
-        操作
+        操作日志列表
 
         :param operations: The operations of this ListJobOperationLogResponse.
-        :type operations: list[object]
+        :type operations: list[:class:`huaweicloudsdkmetastudio.v1.OperationLogItem`]
         """
         self._operations = operations
 

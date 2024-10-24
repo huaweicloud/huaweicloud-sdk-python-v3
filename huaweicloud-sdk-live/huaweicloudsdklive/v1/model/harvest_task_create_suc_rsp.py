@@ -57,7 +57,7 @@ class HarvestTaskCreateSucRsp:
         :type domain: str
         :param app_name: 组名或应用名
         :type app_name: str
-        :param id: 频道ID。频道唯一标识，为必填项。频道ID不建议输入下划线“_”，否则会影响转码和截图任务
+        :param id: 频道ID。频道唯一标识，为必填项。
         :type id: str
         :param start_time: 开始时间。Unix时间错，单位为秒
         :type start_time: int
@@ -178,7 +178,7 @@ class HarvestTaskCreateSucRsp:
     def id(self):
         """Gets the id of this HarvestTaskCreateSucRsp.
 
-        频道ID。频道唯一标识，为必填项。频道ID不建议输入下划线“_”，否则会影响转码和截图任务
+        频道ID。频道唯一标识，为必填项。
 
         :return: The id of this HarvestTaskCreateSucRsp.
         :rtype: str
@@ -189,7 +189,7 @@ class HarvestTaskCreateSucRsp:
     def id(self, id):
         """Sets the id of this HarvestTaskCreateSucRsp.
 
-        频道ID。频道唯一标识，为必填项。频道ID不建议输入下划线“_”，否则会影响转码和截图任务
+        频道ID。频道唯一标识，为必填项。
 
         :param id: The id of this HarvestTaskCreateSucRsp.
         :type id: str

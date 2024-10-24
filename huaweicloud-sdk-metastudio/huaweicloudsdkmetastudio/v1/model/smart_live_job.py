@@ -35,7 +35,8 @@ class SmartLiveJob:
         'block_reason': 'str',
         'cover_url': 'str',
         'co_streamer_config': 'CoStreamerConfig',
-        'live_job_log': 'LiveJobLog'
+        'live_job_log': 'LiveJobLog',
+        'relation_live_platform_info': 'PlatformLiveDetailInfo'
     }
 
     attribute_map = {
@@ -57,10 +58,11 @@ class SmartLiveJob:
         'block_reason': 'block_reason',
         'cover_url': 'cover_url',
         'co_streamer_config': 'co_streamer_config',
-        'live_job_log': 'live_job_log'
+        'live_job_log': 'live_job_log',
+        'relation_live_platform_info': 'relation_live_platform_info'
     }
 
-    def __init__(self, job_id=None, room_id=None, room_name=None, state=None, duration=None, start_time=None, end_time=None, error_info=None, create_time=None, lastupdate_time=None, rtc_room_info=None, live_event_report_url=None, live_event_callback_config=None, rtc_callback_config=None, stream_duration=None, block_reason=None, cover_url=None, co_streamer_config=None, live_job_log=None):
+    def __init__(self, job_id=None, room_id=None, room_name=None, state=None, duration=None, start_time=None, end_time=None, error_info=None, create_time=None, lastupdate_time=None, rtc_room_info=None, live_event_report_url=None, live_event_callback_config=None, rtc_callback_config=None, stream_duration=None, block_reason=None, cover_url=None, co_streamer_config=None, live_job_log=None, relation_live_platform_info=None):
         """SmartLiveJob
 
         The model defined in huaweicloud sdk
@@ -103,6 +105,8 @@ class SmartLiveJob:
         :type co_streamer_config: :class:`huaweicloudsdkmetastudio.v1.CoStreamerConfig`
         :param live_job_log: 
         :type live_job_log: :class:`huaweicloudsdkmetastudio.v1.LiveJobLog`
+        :param relation_live_platform_info: 
+        :type relation_live_platform_info: :class:`huaweicloudsdkmetastudio.v1.PlatformLiveDetailInfo`
         """
         
         
@@ -126,6 +130,7 @@ class SmartLiveJob:
         self._cover_url = None
         self._co_streamer_config = None
         self._live_job_log = None
+        self._relation_live_platform_info = None
         self.discriminator = None
 
         if job_id is not None:
@@ -166,6 +171,8 @@ class SmartLiveJob:
             self.co_streamer_config = co_streamer_config
         if live_job_log is not None:
             self.live_job_log = live_job_log
+        if relation_live_platform_info is not None:
+            self.relation_live_platform_info = relation_live_platform_info
 
     @property
     def job_id(self):
@@ -560,6 +567,24 @@ class SmartLiveJob:
         :type live_job_log: :class:`huaweicloudsdkmetastudio.v1.LiveJobLog`
         """
         self._live_job_log = live_job_log
+
+    @property
+    def relation_live_platform_info(self):
+        """Gets the relation_live_platform_info of this SmartLiveJob.
+
+        :return: The relation_live_platform_info of this SmartLiveJob.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.PlatformLiveDetailInfo`
+        """
+        return self._relation_live_platform_info
+
+    @relation_live_platform_info.setter
+    def relation_live_platform_info(self, relation_live_platform_info):
+        """Sets the relation_live_platform_info of this SmartLiveJob.
+
+        :param relation_live_platform_info: The relation_live_platform_info of this SmartLiveJob.
+        :type relation_live_platform_info: :class:`huaweicloudsdkmetastudio.v1.PlatformLiveDetailInfo`
+        """
+        self._relation_live_platform_info = relation_live_platform_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

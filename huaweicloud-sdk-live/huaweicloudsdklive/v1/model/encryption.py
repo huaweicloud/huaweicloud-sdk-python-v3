@@ -20,41 +20,53 @@ class Encryption:
         'key_rotation_interval_seconds': 'int',
         'encryption_method': 'str',
         'level': 'str',
-        'drm_content_id': 'str',
+        'resource_id': 'str',
         'system_ids': 'list[str]',
-        'auth_info': 'str',
-        'km_url': 'str'
+        'url': 'str',
+        'speke_version': 'str',
+        'request_mode': 'str',
+        'http_headers': 'list[HttpHeader]',
+        'urn': 'str'
     }
 
     attribute_map = {
         'key_rotation_interval_seconds': 'key_rotation_interval_seconds',
         'encryption_method': 'encryption_method',
         'level': 'level',
-        'drm_content_id': 'drm_content_id',
+        'resource_id': 'resource_id',
         'system_ids': 'system_ids',
-        'auth_info': 'auth_info',
-        'km_url': 'km_url'
+        'url': 'url',
+        'speke_version': 'speke_version',
+        'request_mode': 'request_mode',
+        'http_headers': 'http_headers',
+        'urn': 'urn'
     }
 
-    def __init__(self, key_rotation_interval_seconds=None, encryption_method=None, level=None, drm_content_id=None, system_ids=None, auth_info=None, km_url=None):
+    def __init__(self, key_rotation_interval_seconds=None, encryption_method=None, level=None, resource_id=None, system_ids=None, url=None, speke_version=None, request_mode=None, http_headers=None, urn=None):
         """Encryption
 
         The model defined in huaweicloud sdk
 
-        :param key_rotation_interval_seconds: 密钥缓存时间。如果密钥不变，默认缓存七天
+        :param key_rotation_interval_seconds: 密钥缓存时间。如果密钥不变，默认缓存七天。  请注意：目前为保留字段，不支持配置。 
         :type key_rotation_interval_seconds: int
-        :param encryption_method: 加密方式
+        :param encryption_method: 加密方式。  请注意：目前为保留字段，不支持配置。 
         :type encryption_method: str
         :param level: 取值如下： - content：一个频道对应一个密钥 - profile：一个码率对应一个密钥  默认值：content
         :type level: str
-        :param drm_content_id: 客户生成的DRM内容ID
-        :type drm_content_id: str
-        :param system_ids: system_id枚举值
+        :param resource_id: 客户生成的DRM内容ID
+        :type resource_id: str
+        :param system_ids: system_id枚举值。  取值如下： * HLS：FairPlay * DASH：Widevine、PlayReady * MSS：PlayReady 
         :type system_ids: list[str]
-        :param auth_info: 增加到请求消息体header中的鉴权信息
-        :type auth_info: str
-        :param km_url: 获取密钥的DRM地址
-        :type km_url: str
+        :param url: 获取密钥的DRM地址
+        :type url: str
+        :param speke_version: drm speke 版本号 当前只支持1.0
+        :type speke_version: str
+        :param request_mode: 请求模式。  取值如下： * direct_http：HTTP(S)直接访问DRM。 * functiongraph_proxy：FunctionGraph代理访问DRM。 
+        :type request_mode: str
+        :param http_headers: 需要添加在drm请求头中的鉴权信息。最多支持配置5个。  仅direct_http请求模式支持配置http_headers。 
+        :type http_headers: list[:class:`huaweicloudsdklive.v1.HttpHeader`]
+        :param urn: functiongraph_proxy请求模式需要提供functiongraph的urn。
+        :type urn: str
         """
         
         
@@ -62,10 +74,13 @@ class Encryption:
         self._key_rotation_interval_seconds = None
         self._encryption_method = None
         self._level = None
-        self._drm_content_id = None
+        self._resource_id = None
         self._system_ids = None
-        self._auth_info = None
-        self._km_url = None
+        self._url = None
+        self._speke_version = None
+        self._request_mode = None
+        self._http_headers = None
+        self._urn = None
         self.discriminator = None
 
         if key_rotation_interval_seconds is not None:
@@ -74,16 +89,21 @@ class Encryption:
             self.encryption_method = encryption_method
         if level is not None:
             self.level = level
-        self.drm_content_id = drm_content_id
+        self.resource_id = resource_id
         self.system_ids = system_ids
-        self.auth_info = auth_info
-        self.km_url = km_url
+        self.url = url
+        self.speke_version = speke_version
+        self.request_mode = request_mode
+        if http_headers is not None:
+            self.http_headers = http_headers
+        if urn is not None:
+            self.urn = urn
 
     @property
     def key_rotation_interval_seconds(self):
         """Gets the key_rotation_interval_seconds of this Encryption.
 
-        密钥缓存时间。如果密钥不变，默认缓存七天
+        密钥缓存时间。如果密钥不变，默认缓存七天。  请注意：目前为保留字段，不支持配置。 
 
         :return: The key_rotation_interval_seconds of this Encryption.
         :rtype: int
@@ -94,7 +114,7 @@ class Encryption:
     def key_rotation_interval_seconds(self, key_rotation_interval_seconds):
         """Sets the key_rotation_interval_seconds of this Encryption.
 
-        密钥缓存时间。如果密钥不变，默认缓存七天
+        密钥缓存时间。如果密钥不变，默认缓存七天。  请注意：目前为保留字段，不支持配置。 
 
         :param key_rotation_interval_seconds: The key_rotation_interval_seconds of this Encryption.
         :type key_rotation_interval_seconds: int
@@ -105,7 +125,7 @@ class Encryption:
     def encryption_method(self):
         """Gets the encryption_method of this Encryption.
 
-        加密方式
+        加密方式。  请注意：目前为保留字段，不支持配置。 
 
         :return: The encryption_method of this Encryption.
         :rtype: str
@@ -116,7 +136,7 @@ class Encryption:
     def encryption_method(self, encryption_method):
         """Sets the encryption_method of this Encryption.
 
-        加密方式
+        加密方式。  请注意：目前为保留字段，不支持配置。 
 
         :param encryption_method: The encryption_method of this Encryption.
         :type encryption_method: str
@@ -146,32 +166,32 @@ class Encryption:
         self._level = level
 
     @property
-    def drm_content_id(self):
-        """Gets the drm_content_id of this Encryption.
+    def resource_id(self):
+        """Gets the resource_id of this Encryption.
 
         客户生成的DRM内容ID
 
-        :return: The drm_content_id of this Encryption.
+        :return: The resource_id of this Encryption.
         :rtype: str
         """
-        return self._drm_content_id
+        return self._resource_id
 
-    @drm_content_id.setter
-    def drm_content_id(self, drm_content_id):
-        """Sets the drm_content_id of this Encryption.
+    @resource_id.setter
+    def resource_id(self, resource_id):
+        """Sets the resource_id of this Encryption.
 
         客户生成的DRM内容ID
 
-        :param drm_content_id: The drm_content_id of this Encryption.
-        :type drm_content_id: str
+        :param resource_id: The resource_id of this Encryption.
+        :type resource_id: str
         """
-        self._drm_content_id = drm_content_id
+        self._resource_id = resource_id
 
     @property
     def system_ids(self):
         """Gets the system_ids of this Encryption.
 
-        system_id枚举值
+        system_id枚举值。  取值如下： * HLS：FairPlay * DASH：Widevine、PlayReady * MSS：PlayReady 
 
         :return: The system_ids of this Encryption.
         :rtype: list[str]
@@ -182,7 +202,7 @@ class Encryption:
     def system_ids(self, system_ids):
         """Sets the system_ids of this Encryption.
 
-        system_id枚举值
+        system_id枚举值。  取值如下： * HLS：FairPlay * DASH：Widevine、PlayReady * MSS：PlayReady 
 
         :param system_ids: The system_ids of this Encryption.
         :type system_ids: list[str]
@@ -190,48 +210,114 @@ class Encryption:
         self._system_ids = system_ids
 
     @property
-    def auth_info(self):
-        """Gets the auth_info of this Encryption.
+    def url(self):
+        """Gets the url of this Encryption.
 
-        增加到请求消息体header中的鉴权信息
+        获取密钥的DRM地址
 
-        :return: The auth_info of this Encryption.
+        :return: The url of this Encryption.
         :rtype: str
         """
-        return self._auth_info
+        return self._url
 
-    @auth_info.setter
-    def auth_info(self, auth_info):
-        """Sets the auth_info of this Encryption.
+    @url.setter
+    def url(self, url):
+        """Sets the url of this Encryption.
 
-        增加到请求消息体header中的鉴权信息
+        获取密钥的DRM地址
 
-        :param auth_info: The auth_info of this Encryption.
-        :type auth_info: str
+        :param url: The url of this Encryption.
+        :type url: str
         """
-        self._auth_info = auth_info
+        self._url = url
 
     @property
-    def km_url(self):
-        """Gets the km_url of this Encryption.
+    def speke_version(self):
+        """Gets the speke_version of this Encryption.
 
-        获取密钥的DRM地址
+        drm speke 版本号 当前只支持1.0
 
-        :return: The km_url of this Encryption.
+        :return: The speke_version of this Encryption.
         :rtype: str
         """
-        return self._km_url
+        return self._speke_version
 
-    @km_url.setter
-    def km_url(self, km_url):
-        """Sets the km_url of this Encryption.
+    @speke_version.setter
+    def speke_version(self, speke_version):
+        """Sets the speke_version of this Encryption.
 
-        获取密钥的DRM地址
+        drm speke 版本号 当前只支持1.0
 
-        :param km_url: The km_url of this Encryption.
-        :type km_url: str
+        :param speke_version: The speke_version of this Encryption.
+        :type speke_version: str
         """
-        self._km_url = km_url
+        self._speke_version = speke_version
+
+    @property
+    def request_mode(self):
+        """Gets the request_mode of this Encryption.
+
+        请求模式。  取值如下： * direct_http：HTTP(S)直接访问DRM。 * functiongraph_proxy：FunctionGraph代理访问DRM。 
+
+        :return: The request_mode of this Encryption.
+        :rtype: str
+        """
+        return self._request_mode
+
+    @request_mode.setter
+    def request_mode(self, request_mode):
+        """Sets the request_mode of this Encryption.
+
+        请求模式。  取值如下： * direct_http：HTTP(S)直接访问DRM。 * functiongraph_proxy：FunctionGraph代理访问DRM。 
+
+        :param request_mode: The request_mode of this Encryption.
+        :type request_mode: str
+        """
+        self._request_mode = request_mode
+
+    @property
+    def http_headers(self):
+        """Gets the http_headers of this Encryption.
+
+        需要添加在drm请求头中的鉴权信息。最多支持配置5个。  仅direct_http请求模式支持配置http_headers。 
+
+        :return: The http_headers of this Encryption.
+        :rtype: list[:class:`huaweicloudsdklive.v1.HttpHeader`]
+        """
+        return self._http_headers
+
+    @http_headers.setter
+    def http_headers(self, http_headers):
+        """Sets the http_headers of this Encryption.
+
+        需要添加在drm请求头中的鉴权信息。最多支持配置5个。  仅direct_http请求模式支持配置http_headers。 
+
+        :param http_headers: The http_headers of this Encryption.
+        :type http_headers: list[:class:`huaweicloudsdklive.v1.HttpHeader`]
+        """
+        self._http_headers = http_headers
+
+    @property
+    def urn(self):
+        """Gets the urn of this Encryption.
+
+        functiongraph_proxy请求模式需要提供functiongraph的urn。
+
+        :return: The urn of this Encryption.
+        :rtype: str
+        """
+        return self._urn
+
+    @urn.setter
+    def urn(self, urn):
+        """Sets the urn of this Encryption.
+
+        functiongraph_proxy请求模式需要提供functiongraph的urn。
+
+        :param urn: The urn of this Encryption.
+        :type urn: str
+        """
+        self._urn = urn
 
     def to_dict(self):
         """Returns the model properties as a dict"""

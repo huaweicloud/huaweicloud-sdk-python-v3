@@ -34,6 +34,7 @@ from huaweicloudsdkcc.v3.model.attachment_instance_region_id import AttachmentIn
 from huaweicloudsdkcc.v3.model.attachment_instance_site_code import AttachmentInstanceSiteCode
 from huaweicloudsdkcc.v3.model.attachment_instance_type import AttachmentInstanceType
 from huaweicloudsdkcc.v3.model.attachment_instance_type_enum import AttachmentInstanceTypeEnum
+from huaweicloudsdkcc.v3.model.attachment_parent_instance_id import AttachmentParentInstanceId
 from huaweicloudsdkcc.v3.model.authorisation import Authorisation
 from huaweicloudsdkcc.v3.model.auto_associate_route_enabled import AutoAssociateRouteEnabled
 from huaweicloudsdkcc.v3.model.auto_propagate_route_enabled import AutoPropagateRouteEnabled
@@ -82,7 +83,9 @@ from huaweicloudsdkcc.v3.model.cloud_connection_id import CloudConnectionId
 from huaweicloudsdkcc.v3.model.cloud_connection_quota import CloudConnectionQuota
 from huaweicloudsdkcc.v3.model.cloud_connection_route import CloudConnectionRoute
 from huaweicloudsdkcc.v3.model.connection_point import ConnectionPoint
+from huaweicloudsdkcc.v3.model.connection_point_instance_id import ConnectionPointInstanceId
 from huaweicloudsdkcc.v3.model.connection_point_pair import ConnectionPointPair
+from huaweicloudsdkcc.v3.model.connection_point_parent_instance_id import ConnectionPointParentInstanceId
 from huaweicloudsdkcc.v3.model.connection_point_type_enum import ConnectionPointTypeEnum
 from huaweicloudsdkcc.v3.model.connection_type import ConnectionType
 from huaweicloudsdkcc.v3.model.connection_type_enum import ConnectionTypeEnum
@@ -204,6 +207,7 @@ from huaweicloudsdkcc.v3.model.global_dc_gateway_id import GlobalDcGatewayId
 from huaweicloudsdkcc.v3.model.global_dc_gateway_peer_link_id import GlobalDcGatewayPeerLinkId
 from huaweicloudsdkcc.v3.model.global_dc_gateway_project_id import GlobalDcGatewayProjectId
 from huaweicloudsdkcc.v3.model.global_dc_gateway_region_id import GlobalDcGatewayRegionId
+from huaweicloudsdkcc.v3.model.hosted_cloud import HostedCloud
 from huaweicloudsdkcc.v3.model.hosted_cloud_enum import HostedCloudEnum
 from huaweicloudsdkcc.v3.model.instance_domain_id import InstanceDomainId
 from huaweicloudsdkcc.v3.model.instance_id import InstanceId
@@ -292,6 +296,7 @@ from huaweicloudsdkcc.v3.model.non_required_auto_propagate_route_enabled import 
 from huaweicloudsdkcc.v3.model.non_required_central_network_plane_id import NonRequiredCentralNetworkPlaneId
 from huaweicloudsdkcc.v3.model.non_required_gcb_charge_mode import NonRequiredGcbChargeMode
 from huaweicloudsdkcc.v3.model.non_required_gcb_size import NonRequiredGcbSize
+from huaweicloudsdkcc.v3.model.non_required_hosted_cloud import NonRequiredHostedCloud
 from huaweicloudsdkcc.v3.model.non_required_name import NonRequiredName
 from huaweicloudsdkcc.v3.model.page_info import PageInfo
 from huaweicloudsdkcc.v3.model.permission import Permission

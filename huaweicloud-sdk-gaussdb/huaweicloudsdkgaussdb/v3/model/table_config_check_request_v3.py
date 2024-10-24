@@ -23,7 +23,9 @@ class TableConfigCheckRequestV3:
         'task_name': 'str',
         'db_configs': 'list[DbConfig]',
         'tables_configs': 'list[TablesConfig]',
-        'table_repl_config': 'TableReplConfig'
+        'table_repl_config': 'TableReplConfig',
+        'target_database_name': 'str',
+        'is_create_task': 'str'
     }
 
     attribute_map = {
@@ -33,10 +35,12 @@ class TableConfigCheckRequestV3:
         'task_name': 'task_name',
         'db_configs': 'db_configs',
         'tables_configs': 'tables_configs',
-        'table_repl_config': 'table_repl_config'
+        'table_repl_config': 'table_repl_config',
+        'target_database_name': 'target_database_name',
+        'is_create_task': 'is_create_task'
     }
 
-    def __init__(self, source_instance_id=None, source_node_id=None, source_database_name=None, task_name=None, db_configs=None, tables_configs=None, table_repl_config=None):
+    def __init__(self, source_instance_id=None, source_node_id=None, source_database_name=None, task_name=None, db_configs=None, tables_configs=None, table_repl_config=None, target_database_name=None, is_create_task=None):
         """TableConfigCheckRequestV3
 
         The model defined in huaweicloud sdk
@@ -55,6 +59,10 @@ class TableConfigCheckRequestV3:
         :type tables_configs: list[:class:`huaweicloudsdkgaussdb.v3.TablesConfig`]
         :param table_repl_config: 
         :type table_repl_config: :class:`huaweicloudsdkgaussdb.v3.TableReplConfig`
+        :param target_database_name: 目标数据库名。字符长度限制3~128位，仅支持英文大小写字母、数字以及下划线。
+        :type target_database_name: str
+        :param is_create_task: 是否创建同步任务
+        :type is_create_task: str
         """
         
         
@@ -66,6 +74,8 @@ class TableConfigCheckRequestV3:
         self._db_configs = None
         self._tables_configs = None
         self._table_repl_config = None
+        self._target_database_name = None
+        self._is_create_task = None
         self.discriminator = None
 
         if source_instance_id is not None:
@@ -82,6 +92,10 @@ class TableConfigCheckRequestV3:
             self.tables_configs = tables_configs
         if table_repl_config is not None:
             self.table_repl_config = table_repl_config
+        if target_database_name is not None:
+            self.target_database_name = target_database_name
+        if is_create_task is not None:
+            self.is_create_task = is_create_task
 
     @property
     def source_instance_id(self):
@@ -232,6 +246,50 @@ class TableConfigCheckRequestV3:
         :type table_repl_config: :class:`huaweicloudsdkgaussdb.v3.TableReplConfig`
         """
         self._table_repl_config = table_repl_config
+
+    @property
+    def target_database_name(self):
+        """Gets the target_database_name of this TableConfigCheckRequestV3.
+
+        目标数据库名。字符长度限制3~128位，仅支持英文大小写字母、数字以及下划线。
+
+        :return: The target_database_name of this TableConfigCheckRequestV3.
+        :rtype: str
+        """
+        return self._target_database_name
+
+    @target_database_name.setter
+    def target_database_name(self, target_database_name):
+        """Sets the target_database_name of this TableConfigCheckRequestV3.
+
+        目标数据库名。字符长度限制3~128位，仅支持英文大小写字母、数字以及下划线。
+
+        :param target_database_name: The target_database_name of this TableConfigCheckRequestV3.
+        :type target_database_name: str
+        """
+        self._target_database_name = target_database_name
+
+    @property
+    def is_create_task(self):
+        """Gets the is_create_task of this TableConfigCheckRequestV3.
+
+        是否创建同步任务
+
+        :return: The is_create_task of this TableConfigCheckRequestV3.
+        :rtype: str
+        """
+        return self._is_create_task
+
+    @is_create_task.setter
+    def is_create_task(self, is_create_task):
+        """Sets the is_create_task of this TableConfigCheckRequestV3.
+
+        是否创建同步任务
+
+        :param is_create_task: The is_create_task of this TableConfigCheckRequestV3.
+        :type is_create_task: str
+        """
+        self._is_create_task = is_create_task
 
     def to_dict(self):
         """Returns the model properties as a dict"""

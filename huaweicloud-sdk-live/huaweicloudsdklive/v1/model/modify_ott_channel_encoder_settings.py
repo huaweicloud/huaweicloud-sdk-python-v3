@@ -20,17 +20,19 @@ class ModifyOttChannelEncoderSettings:
         'domain': 'str',
         'app_name': 'str',
         'id': 'str',
-        'encoder_settings': 'list[ModifyOttChannelEncoderSettingsEncoderSettings]'
+        'encoder_settings': 'list[ModifyOttChannelEncoderSettingsEncoderSettings]',
+        'encoder_settings_expand': 'EncoderSettingsExpand'
     }
 
     attribute_map = {
         'domain': 'domain',
         'app_name': 'app_name',
         'id': 'id',
-        'encoder_settings': 'encoder_settings'
+        'encoder_settings': 'encoder_settings',
+        'encoder_settings_expand': 'encoder_settings_expand'
     }
 
-    def __init__(self, domain=None, app_name=None, id=None, encoder_settings=None):
+    def __init__(self, domain=None, app_name=None, id=None, encoder_settings=None, encoder_settings_expand=None):
         """ModifyOttChannelEncoderSettings
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class ModifyOttChannelEncoderSettings:
         :type id: str
         :param encoder_settings: 转码模板配置
         :type encoder_settings: list[:class:`huaweicloudsdklive.v1.ModifyOttChannelEncoderSettingsEncoderSettings`]
+        :param encoder_settings_expand: 
+        :type encoder_settings_expand: :class:`huaweicloudsdklive.v1.EncoderSettingsExpand`
         """
         
         
@@ -51,6 +55,7 @@ class ModifyOttChannelEncoderSettings:
         self._app_name = None
         self._id = None
         self._encoder_settings = None
+        self._encoder_settings_expand = None
         self.discriminator = None
 
         self.domain = domain
@@ -58,6 +63,8 @@ class ModifyOttChannelEncoderSettings:
         self.id = id
         if encoder_settings is not None:
             self.encoder_settings = encoder_settings
+        if encoder_settings_expand is not None:
+            self.encoder_settings_expand = encoder_settings_expand
 
     @property
     def domain(self):
@@ -146,6 +153,24 @@ class ModifyOttChannelEncoderSettings:
         :type encoder_settings: list[:class:`huaweicloudsdklive.v1.ModifyOttChannelEncoderSettingsEncoderSettings`]
         """
         self._encoder_settings = encoder_settings
+
+    @property
+    def encoder_settings_expand(self):
+        """Gets the encoder_settings_expand of this ModifyOttChannelEncoderSettings.
+
+        :return: The encoder_settings_expand of this ModifyOttChannelEncoderSettings.
+        :rtype: :class:`huaweicloudsdklive.v1.EncoderSettingsExpand`
+        """
+        return self._encoder_settings_expand
+
+    @encoder_settings_expand.setter
+    def encoder_settings_expand(self, encoder_settings_expand):
+        """Sets the encoder_settings_expand of this ModifyOttChannelEncoderSettings.
+
+        :param encoder_settings_expand: The encoder_settings_expand of this ModifyOttChannelEncoderSettings.
+        :type encoder_settings_expand: :class:`huaweicloudsdklive.v1.EncoderSettingsExpand`
+        """
+        self._encoder_settings_expand = encoder_settings_expand
 
     def to_dict(self):
         """Returns the model properties as a dict"""

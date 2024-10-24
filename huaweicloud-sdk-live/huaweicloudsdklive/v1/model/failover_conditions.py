@@ -31,9 +31,9 @@ class FailoverConditions:
 
         The model defined in huaweicloud sdk
 
-        :param input_loss_threshold_msec: 入流停止的时长阈值。到达此阈值后，自动触发主备切换  单位：毫秒，取值范围：0 - 3600000
+        :param input_loss_threshold_msec: 入流停止的时长阈值。到达此阈值后，自动触发主备切换。  单位：毫秒，取值范围：0 - 3600000。  非必填，默认填2000ms。
         :type input_loss_threshold_msec: int
-        :param input_preference: 以主入流URL为第一优先级（PRIMARY）或主备URL平等切换（EQUAL）  如果为平等切换时使用的是备URL，无需手工切换到主URL
+        :param input_preference: 以主入流URL为第一优先级（PRIMARY）或主备URL平等切换（EQUAL）。  如果是平等切换时，使用的是备URL，不会自动切换至主URL。  非必填，默认值为EQUAL。
         :type input_preference: str
         """
         
@@ -52,7 +52,7 @@ class FailoverConditions:
     def input_loss_threshold_msec(self):
         """Gets the input_loss_threshold_msec of this FailoverConditions.
 
-        入流停止的时长阈值。到达此阈值后，自动触发主备切换  单位：毫秒，取值范围：0 - 3600000
+        入流停止的时长阈值。到达此阈值后，自动触发主备切换。  单位：毫秒，取值范围：0 - 3600000。  非必填，默认填2000ms。
 
         :return: The input_loss_threshold_msec of this FailoverConditions.
         :rtype: int
@@ -63,7 +63,7 @@ class FailoverConditions:
     def input_loss_threshold_msec(self, input_loss_threshold_msec):
         """Sets the input_loss_threshold_msec of this FailoverConditions.
 
-        入流停止的时长阈值。到达此阈值后，自动触发主备切换  单位：毫秒，取值范围：0 - 3600000
+        入流停止的时长阈值。到达此阈值后，自动触发主备切换。  单位：毫秒，取值范围：0 - 3600000。  非必填，默认填2000ms。
 
         :param input_loss_threshold_msec: The input_loss_threshold_msec of this FailoverConditions.
         :type input_loss_threshold_msec: int
@@ -74,7 +74,7 @@ class FailoverConditions:
     def input_preference(self):
         """Gets the input_preference of this FailoverConditions.
 
-        以主入流URL为第一优先级（PRIMARY）或主备URL平等切换（EQUAL）  如果为平等切换时使用的是备URL，无需手工切换到主URL
+        以主入流URL为第一优先级（PRIMARY）或主备URL平等切换（EQUAL）。  如果是平等切换时，使用的是备URL，不会自动切换至主URL。  非必填，默认值为EQUAL。
 
         :return: The input_preference of this FailoverConditions.
         :rtype: str
@@ -85,7 +85,7 @@ class FailoverConditions:
     def input_preference(self, input_preference):
         """Sets the input_preference of this FailoverConditions.
 
-        以主入流URL为第一优先级（PRIMARY）或主备URL平等切换（EQUAL）  如果为平等切换时使用的是备URL，无需手工切换到主URL
+        以主入流URL为第一优先级（PRIMARY）或主备URL平等切换（EQUAL）。  如果是平等切换时，使用的是备URL，不会自动切换至主URL。  非必填，默认值为EQUAL。
 
         :param input_preference: The input_preference of this FailoverConditions.
         :type input_preference: str

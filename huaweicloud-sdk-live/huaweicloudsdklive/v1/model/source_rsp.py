@@ -39,7 +39,7 @@ class SourceRsp:
 
         :param url: RTMP推流地址
         :type url: str
-        :param bitrate: 码率。  单位：bps。取值范围：0 - 104,857,600（100Mbps）
+        :param bitrate: 码率。  单位：bps。取值范围：(0,104,857,600]（100Mbps）
         :type bitrate: int
         :param width: 分辨率对应宽的值。取值范围：0 - 4096（4K）
         :type width: int
@@ -95,7 +95,7 @@ class SourceRsp:
     def bitrate(self):
         """Gets the bitrate of this SourceRsp.
 
-        码率。  单位：bps。取值范围：0 - 104,857,600（100Mbps）
+        码率。  单位：bps。取值范围：(0,104,857,600]（100Mbps）
 
         :return: The bitrate of this SourceRsp.
         :rtype: int
@@ -106,7 +106,7 @@ class SourceRsp:
     def bitrate(self, bitrate):
         """Sets the bitrate of this SourceRsp.
 
-        码率。  单位：bps。取值范围：0 - 104,857,600（100Mbps）
+        码率。  单位：bps。取值范围：(0,104,857,600]（100Mbps）
 
         :param bitrate: The bitrate of this SourceRsp.
         :type bitrate: int

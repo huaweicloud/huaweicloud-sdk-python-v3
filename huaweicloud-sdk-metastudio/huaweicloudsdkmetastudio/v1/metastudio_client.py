@@ -2003,6 +2003,7 @@ class MetaStudioClient(Client):
         """查询视频制作任务列表
 
         该接口用于查询视频制作任务列表。可查询分身数字人视频制作列表，照片数字人视频制作列表等。
+        &gt; - 默认查询最近一个月任务记录。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -8015,6 +8016,229 @@ class MetaStudioClient(Client):
         header_params = {}
         if 'x_app_user_id' in local_var_params:
             header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def count_tenant_resources(self, request):
+        """统计时间段内资源数量
+
+        统计时间段内资源数量
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CountTenantResources
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CountTenantResourcesRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CountTenantResourcesResponse`
+        """
+        http_info = self._count_tenant_resources_http_info(request)
+        return self._call_api(**http_info)
+
+    def count_tenant_resources_invoker(self, request):
+        http_info = self._count_tenant_resources_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _count_tenant_resources_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/tenants/resources-count",
+            "request_type": request.__class__.__name__,
+            "response_type": "CountTenantResourcesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'business' in local_var_params:
+            query_params.append(('business', local_var_params['business']))
+        if 'resource_expire_start_time' in local_var_params:
+            query_params.append(('resource_expire_start_time', local_var_params['resource_expire_start_time']))
+        if 'resource_expire_end_time' in local_var_params:
+            query_params.append(('resource_expire_end_time', local_var_params['resource_expire_end_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_tenant_resources(self, request):
+        """查看租户资源列表
+
+        查看租户资源列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListTenantResources
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ListTenantResourcesRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListTenantResourcesResponse`
+        """
+        http_info = self._list_tenant_resources_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_tenant_resources_invoker(self, request):
+        http_info = self._list_tenant_resources_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_tenant_resources_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/tenants/resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTenantResourcesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'resource' in local_var_params:
+            query_params.append(('resource', local_var_params['resource']))
+        if 'business' in local_var_params:
+            query_params.append(('business', local_var_params['business']))
+        if 'resource_source' in local_var_params:
+            query_params.append(('resource_source', local_var_params['resource_source']))
+        if 'resource_name' in local_var_params:
+            query_params.append(('resource_name', local_var_params['resource_name']))
+        if 'resource_id' in local_var_params:
+            query_params.append(('resource_id', local_var_params['resource_id']))
+        if 'order_id' in local_var_params:
+            query_params.append(('order_id', local_var_params['order_id']))
+        if 'charging_mode' in local_var_params:
+            query_params.append(('charging_mode', local_var_params['charging_mode']))
+        if 'resource_expire_start_time' in local_var_params:
+            query_params.append(('resource_expire_start_time', local_var_params['resource_expire_start_time']))
+        if 'resource_expire_end_time' in local_var_params:
+            query_params.append(('resource_expire_end_time', local_var_params['resource_expire_end_time']))
+        if 'sub_resource' in local_var_params:
+            query_params.append(('sub_resource', local_var_params['sub_resource']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_resource_usage(self, request):
+        """查看租户资源用量信息
+
+        查看租户资源用量信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowResourceUsage
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowResourceUsageRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowResourceUsageResponse`
+        """
+        http_info = self._show_resource_usage_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_resource_usage_invoker(self, request):
+        http_info = self._show_resource_usage_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_resource_usage_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/tenants/resources-usage",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowResourceUsageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'resource' in local_var_params:
+            query_params.append(('resource', local_var_params['resource']))
+        if 'business' in local_var_params:
+            query_params.append(('business', local_var_params['business']))
+
+        header_params = {}
 
         form_params = {}
 

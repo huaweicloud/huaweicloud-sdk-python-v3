@@ -1,3 +1,377 @@
+# 3.1.119 2024-10-24
+
+### HuaweiCloud SDK CCE
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowCluster**
+    - changes of response param
+      - `+ spec.enableDistMgt`
+  - **UpdateCluster**
+    - changes of response param
+      - `+ spec.enableDistMgt`
+  - **DeleteCluster**
+    - changes of response param
+      - `+ spec.enableDistMgt`
+  - **CreateCluster**
+    - changes of request param
+      - `+ spec.enableDistMgt`
+    - changes of response param
+      - `+ spec.enableDistMgt`
+  - **ListClusters**
+    - changes of response param
+      - `+ items.spec.enableDistMgt`
+
+### HuaweiCloud SDK CES
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **BatchCreateAgentInvocations**
+    - changes of request param
+      - `+ version`
+
+### HuaweiCloud SDK DDM
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ListApiVersion`
+    - `DeleteDdmDatabase`
+    - `ListDdmEngines`
+    - `ListDdmFlavors`
+    - `ExpandDdmInstanceNodes`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListDatabases**
+    - changes of response param
+      - `* databases.created: string -> int64`
+
+### HuaweiCloud SDK DRS
+
+- _API Version_
+  - V5
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListAsyncJobDetail**
+    - changes of response param
+      - `+ jobs.compare_result.data_compare_task_list.options`
+      - `+ jobs.compare_result.data_compare_task_list.dynamic_compare_delay`
+  - **ShowJobDetail**
+    - changes of response param
+      - `+ job.compare_result.data_compare_task_list.options`
+      - `+ job.compare_result.data_compare_task_list.dynamic_compare_delay`
+
+### HuaweiCloud SDK GaussDB
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CheckTableConfig**
+    - changes of request param
+      - `+ target_database_name`
+      - `+ is_create_task`
+
+### HuaweiCloud SDK IdentityCenter
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `AttachManagedPolicyToPermissionSet`
+    - `DeleteAccountAssignment`
+    - `DescribeAccountAssignmentCreationStatus`
+    - `DescribePermissionSetProvisioningStatus`
+    - `DetachManagedPolicyFromPermissionSet`
+    - `ListAccountAssignmentCreationStatus`
+    - `ListAccountAssignmentDeletionStatus`
+    - `ListAccountAssignments`
+    - `ListAccountsForProvisionedPermissionSet`
+    - `ListManagedPoliciesInPermissionSet`
+    - `ListPermissionSetProvisioningStatus`
+    - `ListPermissionSets`
+    - `CreatePermissionSet`
+    - `ListPermissionSetsProvisionedToAccount`
+    - `ProvisionPermissionSet`
+    - `CreateAccountAssignment`
+    - `DescribeAccountAssignmentDeletionStatus`
+    - `DescribeInstanceAccessControlAttributeConfiguration`
+    - `UpdateInstanceAccessControlAttributeConfiguration`
+    - `CreateInstanceAccessControlAttributeConfiguration`
+    - `DeleteInstanceAccessControlAttributeConfiguration`
+    - `DescribePermissionSet`
+    - `UpdatePermissionSet`
+    - `DeletePermissionSet`
+    - `GetCustomRoleForPermissionSet`
+    - `PutCustomRoleToPermissionSet`
+    - `DeleteCustomRoleFromPermissionSet`
+    - `GetCustomPolicyForPermissionSet`
+    - `PutCustomPolicyToPermissionSet`
+    - `DeleteCustomPolicyFromPermissionSet`
+    - `AttachManagedRoleToPermissionSet`
+    - `DetachManagedRoleFromPermissionSet`
+    - `ListManagedRolesInPermissionSet`
+    - `ListTagResources`
+    - `CreateTagResource`
+    - `DeleteTagResource`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK IdentityCenterStore
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `DescribeUser`
+    - `UpdateUser`
+    - `DeleteUser`
+    - `GetUserId`
+    - `ListGroups`
+    - `CreateGroup`
+    - `DescribeGroup`
+    - `UpdateGroup`
+    - `DeleteGroup`
+    - `GetGroupId`
+    - `ListGroupMemberships`
+    - `CreateGroupMembership`
+    - `ListGroupMembershipsForMember`
+    - `GetGroupMembershipId`
+    - `IsMemberInGroups`
+    - `DescribeGroupMembership`
+    - `DeleteGroupMembership`
+    - `CreateUser`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK iDME
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `DeleteCloudService`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListEnvs**
+    - changes of request param
+      - `+ page_num`
+      - `+ page_size`
+      - `+ env_types`
+  - **ListApps**
+    - changes of request param
+      - `+ page_num`
+      - `+ page_size`
+
+### HuaweiCloud SDK MetaStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the APIs `ShowResourceUsage`, `ListTenantResources`, `CountTenantResources`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateTrainingBasicJob**
+    - changes of request param
+      - `+ batch_name`
+  - **CreateTrainingMiddleJob**
+    - changes of request param
+      - `+ batch_name`
+  - **CreateTrainingAdvanceJob**
+    - changes of request param
+      - `+ batch_name`
+  - **ShowVoiceTrainingJob**
+    - changes of response param
+      - `+ batch_name`
+  - **ListJobOperationLog**
+    - changes of response param
+      - `* operations: list<object> -> list<OperationLogItem>`
+  - **ShowSmartLive**
+    - changes of response param
+      - `+ relation_live_platform_info`
+  - **ListVoiceTrainingJob**
+    - changes of response param
+      - `+ batch_name`
+      - `+ jobs.batch_name`
+  - **ShowAsset**
+    - changes of response param
+      - `+ files.file_extra_meta`
+      - `+ asset_extra_meta.voice_model_meta.voice_capability.is_support_srt`
+  - **UpdateDigitalAsset**
+    - changes of request param
+      - `+ asset_extra_meta.voice_model_meta.voice_capability.is_support_srt`
+    - changes of response param
+      - `+ files.file_extra_meta`
+      - `+ asset_extra_meta.voice_model_meta.voice_capability.is_support_srt`
+  - **ListSmartLive**
+    - changes of response param
+      - `+ relation_live_platform_info`
+      - `+ smart_live_jobs.relation_live_platform_info`
+  - **ListSmartLiveJobs**
+    - changes of response param
+      - `+ relation_live_platform_info`
+      - `+ smart_live_jobs.relation_live_platform_info`
+  - **CreateDigitalAsset**
+    - changes of request param
+      - `+ asset_extra_meta.voice_model_meta.voice_capability.is_support_srt`
+  - **ListAssets**
+    - changes of response param
+      - `+ assets.files.file_extra_meta`
+      - `+ assets.asset_extra_meta.voice_model_meta.voice_capability.is_support_srt`
+  - **Create2DDigitalHumanVideo**
+    - changes of request param
+      - `+ shoot_scripts.subtitle_file_info`
+  - **Show2DDigitalHumanVideo**
+    - changes of response param
+      - `+ shoot_scripts.subtitle_file_info`
+  - **CreatePhotoDigitalHumanVideo**
+    - changes of request param
+      - `+ shoot_scripts.subtitle_file_info`
+  - **ShowPhotoDigitalHumanVideo**
+    - changes of response param
+      - `+ shoot_scripts.subtitle_file_info`
+  - **ShowSmartLiveRoom**
+    - changes of response param
+      - `+ relation_live_platform_info`
+      - `+ scene_scripts.shoot_scripts.relation_product`
+  - **UpdateSmartLiveRoom**
+    - changes of response param
+      - `+ relation_live_platform_info`
+      - `+ scene_scripts.shoot_scripts.relation_product`
+  - **CreateVideoScripts**
+    - changes of request param
+      - `+ shoot_scripts.subtitle_file_info`
+  - **ShowVideoScript**
+    - changes of response param
+      - `+ shoot_scripts.preview_info`
+      - `+ shoot_scripts.subtitle_file_info.text_subtitle_file`
+      - `+ shoot_scripts.subtitle_file_info.audio_subtitle_file`
+      - `- shoot_scripts.subtitle_file_info.subtitle_file_download_url`
+      - `- shoot_scripts.subtitle_file_info.subtitle_file_upload_url`
+      - `- shoot_scripts.subtitle_file_info.subtitle_file_state`
+      - `- shoot_scripts.subtitle_file_info.job_id`
+      - `* shoot_scripts.subtitle_file_info: object<SubtitleFileInfo> -> object<SubtitleFiles>`
+  - **UpdateVideoScript**
+    - changes of request param
+      - `+ shoot_scripts.subtitle_file_info`
+
+### HuaweiCloud SDK RAM
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **EnableOrganizationShare**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **DisableOrganizationShare**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **ShowOrganizationShare**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **AssociateResourceSharePermission**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **DisassociateResourceSharePermission**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **AcceptResourceShareInvitation**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **RejectResourceShareInvitation**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **SearchResourceShareInvitation**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **ListPermissions**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **ShowPermission**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **AssociateResourceShare**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **DisassociateResourceShare**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **SearchResourceShareAssociations**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **ListResourceShareTags**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **SearchResourceShareCountByTags**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **BatchCreateResourceShareTags**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **BatchDeleteResourceShareTags**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **ListResourceSharePermissions**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **SearchSharedResources**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **SearchSharedPrincipals**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **ListResourceTypes**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **ListPermissionVersions**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **CreateResourceShare**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **SearchResourceShares**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **DeleteResourceShare**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **UpdateResourceShare**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **ListResourceSharesByTags**
+    - changes of request param
+      - `+ X-Security-Token`
+  - **ListQuota**
+    - changes of request param
+      - `+ X-Security-Token`
+
 # 3.1.118 2024-10-17
 
 ### HuaweiCloud SDK CC

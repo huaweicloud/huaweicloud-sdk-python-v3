@@ -4,6 +4,8 @@ from __future__ import absolute_import
 
 # import models into model package
 from huaweicloudsdkddm.v1.model.admin_user_info_req import AdminUserInfoReq
+from huaweicloudsdkddm.v1.model.api_version import ApiVersion
+from huaweicloudsdkddm.v1.model.available_zone import AvailableZone
 from huaweicloudsdkddm.v1.model.compute_flavor_groups_info import ComputeFlavorGroupsInfo
 from huaweicloudsdkddm.v1.model.compute_flavors import ComputeFlavors
 from huaweicloudsdkddm.v1.model.configuration_parameter_list import ConfigurationParameterList
@@ -29,19 +31,28 @@ from huaweicloudsdkddm.v1.model.create_users_response import CreateUsersResponse
 from huaweicloudsdkddm.v1.model.database_instabces_param import DatabaseInstabcesParam
 from huaweicloudsdkddm.v1.model.delete_database_request import DeleteDatabaseRequest
 from huaweicloudsdkddm.v1.model.delete_database_response import DeleteDatabaseResponse
+from huaweicloudsdkddm.v1.model.delete_ddm_database_request import DeleteDdmDatabaseRequest
+from huaweicloudsdkddm.v1.model.delete_ddm_database_response import DeleteDdmDatabaseResponse
 from huaweicloudsdkddm.v1.model.delete_instance_request import DeleteInstanceRequest
 from huaweicloudsdkddm.v1.model.delete_instance_response import DeleteInstanceResponse
 from huaweicloudsdkddm.v1.model.delete_user_request import DeleteUserRequest
 from huaweicloudsdkddm.v1.model.delete_user_response import DeleteUserResponse
+from huaweicloudsdkddm.v1.model.engine_group_info import EngineGroupInfo
 from huaweicloudsdkddm.v1.model.engine_groups_info import EngineGroupsInfo
+from huaweicloudsdkddm.v1.model.enlarge_node_info import EnlargeNodeInfo
 from huaweicloudsdkddm.v1.model.enlarge_request import EnlargeRequest
 from huaweicloudsdkddm.v1.model.error_response import ErrorResponse
 from huaweicloudsdkddm.v1.model.execute_kill_logical_processes_request import ExecuteKillLogicalProcessesRequest
 from huaweicloudsdkddm.v1.model.execute_kill_logical_processes_response import ExecuteKillLogicalProcessesResponse
 from huaweicloudsdkddm.v1.model.execute_kill_physical_processes_request import ExecuteKillPhysicalProcessesRequest
 from huaweicloudsdkddm.v1.model.execute_kill_physical_processes_response import ExecuteKillPhysicalProcessesResponse
+from huaweicloudsdkddm.v1.model.expand_ddm_instance_nodes_request import ExpandDdmInstanceNodesRequest
+from huaweicloudsdkddm.v1.model.expand_ddm_instance_nodes_request_body import ExpandDdmInstanceNodesRequestBody
+from huaweicloudsdkddm.v1.model.expand_ddm_instance_nodes_response import ExpandDdmInstanceNodesResponse
 from huaweicloudsdkddm.v1.model.expand_instance_nodes_request import ExpandInstanceNodesRequest
 from huaweicloudsdkddm.v1.model.expand_instance_nodes_response import ExpandInstanceNodesResponse
+from huaweicloudsdkddm.v1.model.flavor import Flavor
+from huaweicloudsdkddm.v1.model.flavor_group_info import FlavorGroupInfo
 from huaweicloudsdkddm.v1.model.get_database_info import GetDatabaseInfo
 from huaweicloudsdkddm.v1.model.get_database_response_bean import GetDatabaseResponseBean
 from huaweicloudsdkddm.v1.model.get_database_used_rds import GetDatabaseUsedRds
@@ -52,10 +63,17 @@ from huaweicloudsdkddm.v1.model.get_users_listdatabase import GetUsersListdataba
 from huaweicloudsdkddm.v1.model.group_info import GroupInfo
 from huaweicloudsdkddm.v1.model.group_node_info import GroupNodeInfo
 from huaweicloudsdkddm.v1.model.kill_processes_open_request import KillProcessesOpenRequest
+from huaweicloudsdkddm.v1.model.link_info import LinkInfo
+from huaweicloudsdkddm.v1.model.list_api_version_request import ListApiVersionRequest
+from huaweicloudsdkddm.v1.model.list_api_version_response import ListApiVersionResponse
 from huaweicloudsdkddm.v1.model.list_available_rds_list_request import ListAvailableRdsListRequest
 from huaweicloudsdkddm.v1.model.list_available_rds_list_response import ListAvailableRdsListResponse
 from huaweicloudsdkddm.v1.model.list_databases_request import ListDatabasesRequest
 from huaweicloudsdkddm.v1.model.list_databases_response import ListDatabasesResponse
+from huaweicloudsdkddm.v1.model.list_ddm_engines_request import ListDdmEnginesRequest
+from huaweicloudsdkddm.v1.model.list_ddm_engines_response import ListDdmEnginesResponse
+from huaweicloudsdkddm.v1.model.list_ddm_flavors_request import ListDdmFlavorsRequest
+from huaweicloudsdkddm.v1.model.list_ddm_flavors_response import ListDdmFlavorsResponse
 from huaweicloudsdkddm.v1.model.list_engines_request import ListEnginesRequest
 from huaweicloudsdkddm.v1.model.list_engines_response import ListEnginesResponse
 from huaweicloudsdkddm.v1.model.list_flavors_request import ListFlavorsRequest

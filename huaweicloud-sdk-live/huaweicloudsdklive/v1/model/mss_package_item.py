@@ -43,11 +43,11 @@ class MssPackageItem:
 
         The model defined in huaweicloud sdk
 
-        :param url: 客户自定义的拉流地址，包括方法、域名、路径和参数
+        :param url: 客户自定义的拉流地址，包括方法、域名、路径
         :type url: str
         :param stream_selection: 从全量流中过滤出一个码率在[min, max]区间的流。如果不需要码率过滤可不选。
         :type stream_selection: list[:class:`huaweicloudsdklive.v1.StreamSelectionItem`]
-        :param segment_duration_seconds: 频道输出分片的时长，为必选项  单位：秒。取值范围：1-10
+        :param segment_duration_seconds: 频道输出分片的时长，为必选项  单位：秒。取值范围：1-10 &gt; 修改分片时长会影响已录制内容的时移和回看服务，请谨慎修改！
         :type segment_duration_seconds: int
         :param playlist_window_seconds: 频道直播返回分片的窗口长度，为频道输出分片的时长乘以数量后得到的值。实际返回的分片数不小于3个。  单位：秒。取值范围：0 - 86400（24小时转化成秒后的取值）
         :type playlist_window_seconds: int
@@ -76,8 +76,7 @@ class MssPackageItem:
         self.url = url
         if stream_selection is not None:
             self.stream_selection = stream_selection
-        if segment_duration_seconds is not None:
-            self.segment_duration_seconds = segment_duration_seconds
+        self.segment_duration_seconds = segment_duration_seconds
         if playlist_window_seconds is not None:
             self.playlist_window_seconds = playlist_window_seconds
         if encryption is not None:
@@ -93,7 +92,7 @@ class MssPackageItem:
     def url(self):
         """Gets the url of this MssPackageItem.
 
-        客户自定义的拉流地址，包括方法、域名、路径和参数
+        客户自定义的拉流地址，包括方法、域名、路径
 
         :return: The url of this MssPackageItem.
         :rtype: str
@@ -104,7 +103,7 @@ class MssPackageItem:
     def url(self, url):
         """Sets the url of this MssPackageItem.
 
-        客户自定义的拉流地址，包括方法、域名、路径和参数
+        客户自定义的拉流地址，包括方法、域名、路径
 
         :param url: The url of this MssPackageItem.
         :type url: str
@@ -137,7 +136,7 @@ class MssPackageItem:
     def segment_duration_seconds(self):
         """Gets the segment_duration_seconds of this MssPackageItem.
 
-        频道输出分片的时长，为必选项  单位：秒。取值范围：1-10
+        频道输出分片的时长，为必选项  单位：秒。取值范围：1-10 > 修改分片时长会影响已录制内容的时移和回看服务，请谨慎修改！
 
         :return: The segment_duration_seconds of this MssPackageItem.
         :rtype: int
@@ -148,7 +147,7 @@ class MssPackageItem:
     def segment_duration_seconds(self, segment_duration_seconds):
         """Sets the segment_duration_seconds of this MssPackageItem.
 
-        频道输出分片的时长，为必选项  单位：秒。取值范围：1-10
+        频道输出分片的时长，为必选项  单位：秒。取值范围：1-10 > 修改分片时长会影响已录制内容的时移和回看服务，请谨慎修改！
 
         :param segment_duration_seconds: The segment_duration_seconds of this MssPackageItem.
         :type segment_duration_seconds: int

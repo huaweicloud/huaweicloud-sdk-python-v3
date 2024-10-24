@@ -15,24 +15,29 @@ class ShowPermissionRequest:
                             and the value is json key in definition.
     """
     sensitive_list = []
+    sensitive_list.append('x_security_token')
 
     openapi_types = {
         'permission_id': 'str',
+        'x_security_token': 'str',
         'permission_version': 'int'
     }
 
     attribute_map = {
         'permission_id': 'permission_id',
+        'x_security_token': 'X-Security-Token',
         'permission_version': 'permission_version'
     }
 
-    def __init__(self, permission_id=None, permission_version=None):
+    def __init__(self, permission_id=None, x_security_token=None, permission_version=None):
         """ShowPermissionRequest
 
         The model defined in huaweicloud sdk
 
         :param permission_id: 共享资源权限的ID。
         :type permission_id: str
+        :param x_security_token: 如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+        :type x_security_token: str
         :param permission_version: 资源权限版本。
         :type permission_version: int
         """
@@ -40,10 +45,13 @@ class ShowPermissionRequest:
         
 
         self._permission_id = None
+        self._x_security_token = None
         self._permission_version = None
         self.discriminator = None
 
         self.permission_id = permission_id
+        if x_security_token is not None:
+            self.x_security_token = x_security_token
         if permission_version is not None:
             self.permission_version = permission_version
 
@@ -68,6 +76,28 @@ class ShowPermissionRequest:
         :type permission_id: str
         """
         self._permission_id = permission_id
+
+    @property
+    def x_security_token(self):
+        """Gets the x_security_token of this ShowPermissionRequest.
+
+        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+
+        :return: The x_security_token of this ShowPermissionRequest.
+        :rtype: str
+        """
+        return self._x_security_token
+
+    @x_security_token.setter
+    def x_security_token(self, x_security_token):
+        """Sets the x_security_token of this ShowPermissionRequest.
+
+        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+
+        :param x_security_token: The x_security_token of this ShowPermissionRequest.
+        :type x_security_token: str
+        """
+        self._x_security_token = x_security_token
 
     @property
     def permission_version(self):

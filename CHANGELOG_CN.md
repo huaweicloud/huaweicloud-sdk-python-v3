@@ -1,3 +1,377 @@
+# 3.1.119 2024-10-24
+
+### HuaweiCloud SDK CCE
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowCluster**
+    - 响应参数变更
+      - `+ spec.enableDistMgt`
+  - **UpdateCluster**
+    - 响应参数变更
+      - `+ spec.enableDistMgt`
+  - **DeleteCluster**
+    - 响应参数变更
+      - `+ spec.enableDistMgt`
+  - **CreateCluster**
+    - 请求参数变更
+      - `+ spec.enableDistMgt`
+    - 响应参数变更
+      - `+ spec.enableDistMgt`
+  - **ListClusters**
+    - 响应参数变更
+      - `+ items.spec.enableDistMgt`
+
+### HuaweiCloud SDK CES
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **BatchCreateAgentInvocations**
+    - 请求参数变更
+      - `+ version`
+
+### HuaweiCloud SDK DDM
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `ListApiVersion`
+    - `DeleteDdmDatabase`
+    - `ListDdmEngines`
+    - `ListDdmFlavors`
+    - `ExpandDdmInstanceNodes`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListDatabases**
+    - 响应参数变更
+      - `* databases.created: string -> int64`
+
+### HuaweiCloud SDK DRS
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListAsyncJobDetail**
+    - 响应参数变更
+      - `+ jobs.compare_result.data_compare_task_list.options`
+      - `+ jobs.compare_result.data_compare_task_list.dynamic_compare_delay`
+  - **ShowJobDetail**
+    - 响应参数变更
+      - `+ job.compare_result.data_compare_task_list.options`
+      - `+ job.compare_result.data_compare_task_list.dynamic_compare_delay`
+
+### HuaweiCloud SDK GaussDB
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CheckTableConfig**
+    - 请求参数变更
+      - `+ target_database_name`
+      - `+ is_create_task`
+
+### HuaweiCloud SDK IdentityCenter
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `AttachManagedPolicyToPermissionSet`
+    - `DeleteAccountAssignment`
+    - `DescribeAccountAssignmentCreationStatus`
+    - `DescribePermissionSetProvisioningStatus`
+    - `DetachManagedPolicyFromPermissionSet`
+    - `ListAccountAssignmentCreationStatus`
+    - `ListAccountAssignmentDeletionStatus`
+    - `ListAccountAssignments`
+    - `ListAccountsForProvisionedPermissionSet`
+    - `ListManagedPoliciesInPermissionSet`
+    - `ListPermissionSetProvisioningStatus`
+    - `ListPermissionSets`
+    - `CreatePermissionSet`
+    - `ListPermissionSetsProvisionedToAccount`
+    - `ProvisionPermissionSet`
+    - `CreateAccountAssignment`
+    - `DescribeAccountAssignmentDeletionStatus`
+    - `DescribeInstanceAccessControlAttributeConfiguration`
+    - `UpdateInstanceAccessControlAttributeConfiguration`
+    - `CreateInstanceAccessControlAttributeConfiguration`
+    - `DeleteInstanceAccessControlAttributeConfiguration`
+    - `DescribePermissionSet`
+    - `UpdatePermissionSet`
+    - `DeletePermissionSet`
+    - `GetCustomRoleForPermissionSet`
+    - `PutCustomRoleToPermissionSet`
+    - `DeleteCustomRoleFromPermissionSet`
+    - `GetCustomPolicyForPermissionSet`
+    - `PutCustomPolicyToPermissionSet`
+    - `DeleteCustomPolicyFromPermissionSet`
+    - `AttachManagedRoleToPermissionSet`
+    - `DetachManagedRoleFromPermissionSet`
+    - `ListManagedRolesInPermissionSet`
+    - `ListTagResources`
+    - `CreateTagResource`
+    - `DeleteTagResource`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK IdentityCenterStore
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `DescribeUser`
+    - `UpdateUser`
+    - `DeleteUser`
+    - `GetUserId`
+    - `ListGroups`
+    - `CreateGroup`
+    - `DescribeGroup`
+    - `UpdateGroup`
+    - `DeleteGroup`
+    - `GetGroupId`
+    - `ListGroupMemberships`
+    - `CreateGroupMembership`
+    - `ListGroupMembershipsForMember`
+    - `GetGroupMembershipId`
+    - `IsMemberInGroups`
+    - `DescribeGroupMembership`
+    - `DeleteGroupMembership`
+    - `CreateUser`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK iDME
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`DeleteCloudService`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListEnvs**
+    - 请求参数变更
+      - `+ page_num`
+      - `+ page_size`
+      - `+ env_types`
+  - **ListApps**
+    - 请求参数变更
+      - `+ page_num`
+      - `+ page_size`
+
+### HuaweiCloud SDK MetaStudio
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`ShowResourceUsage`、`ListTenantResources`、`CountTenantResources`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateTrainingBasicJob**
+    - 请求参数变更
+      - `+ batch_name`
+  - **CreateTrainingMiddleJob**
+    - 请求参数变更
+      - `+ batch_name`
+  - **CreateTrainingAdvanceJob**
+    - 请求参数变更
+      - `+ batch_name`
+  - **ShowVoiceTrainingJob**
+    - 响应参数变更
+      - `+ batch_name`
+  - **ListJobOperationLog**
+    - 响应参数变更
+      - `* operations: list<object> -> list<OperationLogItem>`
+  - **ShowSmartLive**
+    - 响应参数变更
+      - `+ relation_live_platform_info`
+  - **ListVoiceTrainingJob**
+    - 响应参数变更
+      - `+ batch_name`
+      - `+ jobs.batch_name`
+  - **ShowAsset**
+    - 响应参数变更
+      - `+ files.file_extra_meta`
+      - `+ asset_extra_meta.voice_model_meta.voice_capability.is_support_srt`
+  - **UpdateDigitalAsset**
+    - 请求参数变更
+      - `+ asset_extra_meta.voice_model_meta.voice_capability.is_support_srt`
+    - 响应参数变更
+      - `+ files.file_extra_meta`
+      - `+ asset_extra_meta.voice_model_meta.voice_capability.is_support_srt`
+  - **ListSmartLive**
+    - 响应参数变更
+      - `+ relation_live_platform_info`
+      - `+ smart_live_jobs.relation_live_platform_info`
+  - **ListSmartLiveJobs**
+    - 响应参数变更
+      - `+ relation_live_platform_info`
+      - `+ smart_live_jobs.relation_live_platform_info`
+  - **CreateDigitalAsset**
+    - 请求参数变更
+      - `+ asset_extra_meta.voice_model_meta.voice_capability.is_support_srt`
+  - **ListAssets**
+    - 响应参数变更
+      - `+ assets.files.file_extra_meta`
+      - `+ assets.asset_extra_meta.voice_model_meta.voice_capability.is_support_srt`
+  - **Create2DDigitalHumanVideo**
+    - 请求参数变更
+      - `+ shoot_scripts.subtitle_file_info`
+  - **Show2DDigitalHumanVideo**
+    - 响应参数变更
+      - `+ shoot_scripts.subtitle_file_info`
+  - **CreatePhotoDigitalHumanVideo**
+    - 请求参数变更
+      - `+ shoot_scripts.subtitle_file_info`
+  - **ShowPhotoDigitalHumanVideo**
+    - 响应参数变更
+      - `+ shoot_scripts.subtitle_file_info`
+  - **ShowSmartLiveRoom**
+    - 响应参数变更
+      - `+ relation_live_platform_info`
+      - `+ scene_scripts.shoot_scripts.relation_product`
+  - **UpdateSmartLiveRoom**
+    - 响应参数变更
+      - `+ relation_live_platform_info`
+      - `+ scene_scripts.shoot_scripts.relation_product`
+  - **CreateVideoScripts**
+    - 请求参数变更
+      - `+ shoot_scripts.subtitle_file_info`
+  - **ShowVideoScript**
+    - 响应参数变更
+      - `+ shoot_scripts.preview_info`
+      - `+ shoot_scripts.subtitle_file_info.text_subtitle_file`
+      - `+ shoot_scripts.subtitle_file_info.audio_subtitle_file`
+      - `- shoot_scripts.subtitle_file_info.subtitle_file_download_url`
+      - `- shoot_scripts.subtitle_file_info.subtitle_file_upload_url`
+      - `- shoot_scripts.subtitle_file_info.subtitle_file_state`
+      - `- shoot_scripts.subtitle_file_info.job_id`
+      - `* shoot_scripts.subtitle_file_info: object<SubtitleFileInfo> -> object<SubtitleFiles>`
+  - **UpdateVideoScript**
+    - 请求参数变更
+      - `+ shoot_scripts.subtitle_file_info`
+
+### HuaweiCloud SDK RAM
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **EnableOrganizationShare**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **DisableOrganizationShare**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **ShowOrganizationShare**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **AssociateResourceSharePermission**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **DisassociateResourceSharePermission**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **AcceptResourceShareInvitation**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **RejectResourceShareInvitation**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **SearchResourceShareInvitation**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **ListPermissions**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **ShowPermission**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **AssociateResourceShare**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **DisassociateResourceShare**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **SearchResourceShareAssociations**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **ListResourceShareTags**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **SearchResourceShareCountByTags**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **BatchCreateResourceShareTags**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **BatchDeleteResourceShareTags**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **ListResourceSharePermissions**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **SearchSharedResources**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **SearchSharedPrincipals**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **ListResourceTypes**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **ListPermissionVersions**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **CreateResourceShare**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **SearchResourceShares**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **DeleteResourceShare**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **UpdateResourceShare**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **ListResourceSharesByTags**
+    - 请求参数变更
+      - `+ X-Security-Token`
+  - **ListQuota**
+    - 请求参数变更
+      - `+ X-Security-Token`
+
 # 3.1.118 2024-10-17
 
 ### HuaweiCloud SDK CC

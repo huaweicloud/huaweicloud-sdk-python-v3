@@ -15,24 +15,29 @@ class BatchDeleteResourceShareTagsRequest:
                             and the value is json key in definition.
     """
     sensitive_list = []
+    sensitive_list.append('x_security_token')
 
     openapi_types = {
         'resource_share_id': 'str',
+        'x_security_token': 'str',
         'body': 'UntagResourceReqBody'
     }
 
     attribute_map = {
         'resource_share_id': 'resource_share_id',
+        'x_security_token': 'X-Security-Token',
         'body': 'body'
     }
 
-    def __init__(self, resource_share_id=None, body=None):
+    def __init__(self, resource_share_id=None, x_security_token=None, body=None):
         """BatchDeleteResourceShareTagsRequest
 
         The model defined in huaweicloud sdk
 
         :param resource_share_id: 资源共享实例的ID。
         :type resource_share_id: str
+        :param x_security_token: 如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+        :type x_security_token: str
         :param body: Body of the BatchDeleteResourceShareTagsRequest
         :type body: :class:`huaweicloudsdkram.v1.UntagResourceReqBody`
         """
@@ -40,10 +45,13 @@ class BatchDeleteResourceShareTagsRequest:
         
 
         self._resource_share_id = None
+        self._x_security_token = None
         self._body = None
         self.discriminator = None
 
         self.resource_share_id = resource_share_id
+        if x_security_token is not None:
+            self.x_security_token = x_security_token
         if body is not None:
             self.body = body
 
@@ -68,6 +76,28 @@ class BatchDeleteResourceShareTagsRequest:
         :type resource_share_id: str
         """
         self._resource_share_id = resource_share_id
+
+    @property
+    def x_security_token(self):
+        """Gets the x_security_token of this BatchDeleteResourceShareTagsRequest.
+
+        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+
+        :return: The x_security_token of this BatchDeleteResourceShareTagsRequest.
+        :rtype: str
+        """
+        return self._x_security_token
+
+    @x_security_token.setter
+    def x_security_token(self, x_security_token):
+        """Sets the x_security_token of this BatchDeleteResourceShareTagsRequest.
+
+        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+
+        :param x_security_token: The x_security_token of this BatchDeleteResourceShareTagsRequest.
+        :type x_security_token: str
+        """
+        self._x_security_token = x_security_token
 
     @property
     def body(self):

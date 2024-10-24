@@ -35,7 +35,8 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
         'create_type': 'CreateType',
         'tag': 'JobTag',
         'phone': 'str',
-        'dhtms_job_id': 'str'
+        'dhtms_job_id': 'str',
+        'batch_name': 'str'
     }
 
     attribute_map = {
@@ -56,10 +57,11 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
         'create_type': 'create_type',
         'tag': 'tag',
         'phone': 'phone',
-        'dhtms_job_id': 'dhtms_job_id'
+        'dhtms_job_id': 'dhtms_job_id',
+        'batch_name': 'batch_name'
     }
 
-    def __init__(self, job_type=None, job_id=None, app_user_id=None, voice_name=None, sex=None, language=None, state=None, reject_times=None, asset_id=None, job_failed_code=None, job_failed_reason=None, create_time=None, lastupdate_time=None, voice_authorization_url=None, create_type=None, tag=None, phone=None, dhtms_job_id=None):
+    def __init__(self, job_type=None, job_id=None, app_user_id=None, voice_name=None, sex=None, language=None, state=None, reject_times=None, asset_id=None, job_failed_code=None, job_failed_reason=None, create_time=None, lastupdate_time=None, voice_authorization_url=None, create_type=None, tag=None, phone=None, dhtms_job_id=None, batch_name=None):
         """ShowVoiceTrainingJobResponse
 
         The model defined in huaweicloud sdk
@@ -100,6 +102,8 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
         :type phone: str
         :param dhtms_job_id: 形象制作任务id
         :type dhtms_job_id: str
+        :param batch_name: 批次名称
+        :type batch_name: str
         """
         
         super(ShowVoiceTrainingJobResponse, self).__init__()
@@ -122,6 +126,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
         self._tag = None
         self._phone = None
         self._dhtms_job_id = None
+        self._batch_name = None
         self.discriminator = None
 
         if job_type is not None:
@@ -160,6 +165,8 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
             self.phone = phone
         if dhtms_job_id is not None:
             self.dhtms_job_id = dhtms_job_id
+        if batch_name is not None:
+            self.batch_name = batch_name
 
     @property
     def job_type(self):
@@ -540,6 +547,28 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
         :type dhtms_job_id: str
         """
         self._dhtms_job_id = dhtms_job_id
+
+    @property
+    def batch_name(self):
+        """Gets the batch_name of this ShowVoiceTrainingJobResponse.
+
+        批次名称
+
+        :return: The batch_name of this ShowVoiceTrainingJobResponse.
+        :rtype: str
+        """
+        return self._batch_name
+
+    @batch_name.setter
+    def batch_name(self, batch_name):
+        """Sets the batch_name of this ShowVoiceTrainingJobResponse.
+
+        批次名称
+
+        :param batch_name: The batch_name of this ShowVoiceTrainingJobResponse.
+        :type batch_name: str
+        """
+        self._batch_name = batch_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

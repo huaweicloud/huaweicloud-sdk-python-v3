@@ -34,7 +34,8 @@ class CreateSmartLiveRoomReq:
         'shared_config': 'SharedConfig',
         'view_mode': 'str',
         'co_streamer_config': 'CoStreamerConfig',
-        'priv_data': 'str'
+        'priv_data': 'str',
+        'relation_live_platform_info': 'PlatformLiveInfo'
     }
 
     attribute_map = {
@@ -55,10 +56,11 @@ class CreateSmartLiveRoomReq:
         'shared_config': 'shared_config',
         'view_mode': 'view_mode',
         'co_streamer_config': 'co_streamer_config',
-        'priv_data': 'priv_data'
+        'priv_data': 'priv_data',
+        'relation_live_platform_info': 'relation_live_platform_info'
     }
 
-    def __init__(self, room_name=None, room_description=None, room_type=None, scene_scripts=None, interaction_config=None, interaction_rules=None, play_policy=None, video_config=None, output_urls=None, stream_keys=None, backup_model_asset_ids=None, live_event_callback_config=None, rtc_callback_config=None, review_config=None, shared_config=None, view_mode=None, co_streamer_config=None, priv_data=None):
+    def __init__(self, room_name=None, room_description=None, room_type=None, scene_scripts=None, interaction_config=None, interaction_rules=None, play_policy=None, video_config=None, output_urls=None, stream_keys=None, backup_model_asset_ids=None, live_event_callback_config=None, rtc_callback_config=None, review_config=None, shared_config=None, view_mode=None, co_streamer_config=None, priv_data=None, relation_live_platform_info=None):
         """CreateSmartLiveRoomReq
 
         The model defined in huaweicloud sdk
@@ -99,6 +101,8 @@ class CreateSmartLiveRoomReq:
         :type co_streamer_config: :class:`huaweicloudsdkmetastudio.v1.CoStreamerConfig`
         :param priv_data: **参数解释**： 匹配值私有数据，用户填写，原样带回。 **约束限制**： 不涉及 **取值范围**： 字符长度0-8192 **默认取值**： 不涉及。
         :type priv_data: str
+        :param relation_live_platform_info: 
+        :type relation_live_platform_info: :class:`huaweicloudsdkmetastudio.v1.PlatformLiveInfo`
         """
         
         
@@ -121,6 +125,7 @@ class CreateSmartLiveRoomReq:
         self._view_mode = None
         self._co_streamer_config = None
         self._priv_data = None
+        self._relation_live_platform_info = None
         self.discriminator = None
 
         self.room_name = room_name
@@ -158,6 +163,8 @@ class CreateSmartLiveRoomReq:
             self.co_streamer_config = co_streamer_config
         if priv_data is not None:
             self.priv_data = priv_data
+        if relation_live_platform_info is not None:
+            self.relation_live_platform_info = relation_live_platform_info
 
     @property
     def room_name(self):
@@ -522,6 +529,24 @@ class CreateSmartLiveRoomReq:
         :type priv_data: str
         """
         self._priv_data = priv_data
+
+    @property
+    def relation_live_platform_info(self):
+        """Gets the relation_live_platform_info of this CreateSmartLiveRoomReq.
+
+        :return: The relation_live_platform_info of this CreateSmartLiveRoomReq.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.PlatformLiveInfo`
+        """
+        return self._relation_live_platform_info
+
+    @relation_live_platform_info.setter
+    def relation_live_platform_info(self, relation_live_platform_info):
+        """Sets the relation_live_platform_info of this CreateSmartLiveRoomReq.
+
+        :param relation_live_platform_info: The relation_live_platform_info of this CreateSmartLiveRoomReq.
+        :type relation_live_platform_info: :class:`huaweicloudsdkmetastudio.v1.PlatformLiveInfo`
+        """
+        self._relation_live_platform_info = relation_live_platform_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -39,7 +39,7 @@ class ModifyOttChannelState:
         :type domain: str
         :param app_name: 组名或应用名
         :type app_name: str
-        :param id: 频道ID。频道唯一标识，为必填项。频道ID不建议输入下划线“_”，否则会影响转码和截图任务
+        :param id: 频道ID。频道唯一标识，为必填项。
         :type id: str
         :param state: 频道状态 - ON：频道下发成功后，自动启动拉流、转码、录制等功能 - OFF：仅保存频道信息，不启动频道
         :type state: str
@@ -106,7 +106,7 @@ class ModifyOttChannelState:
     def id(self):
         """Gets the id of this ModifyOttChannelState.
 
-        频道ID。频道唯一标识，为必填项。频道ID不建议输入下划线“_”，否则会影响转码和截图任务
+        频道ID。频道唯一标识，为必填项。
 
         :return: The id of this ModifyOttChannelState.
         :rtype: str
@@ -117,7 +117,7 @@ class ModifyOttChannelState:
     def id(self, id):
         """Sets the id of this ModifyOttChannelState.
 
-        频道ID。频道唯一标识，为必填项。频道ID不建议输入下划线“_”，否则会影响转码和截图任务
+        频道ID。频道唯一标识，为必填项。
 
         :param id: The id of this ModifyOttChannelState.
         :type id: str

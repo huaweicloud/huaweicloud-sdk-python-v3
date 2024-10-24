@@ -6,6 +6,9 @@ from huaweicloudsdklive.v1.live_client import LiveClient
 from huaweicloudsdklive.v1.live_async_client import LiveAsyncClient
 
 from huaweicloudsdklive.v1.model.app_quality_info import AppQualityInfo
+from huaweicloudsdklive.v1.model.audio_selector_lang_selection import AudioSelectorLangSelection
+from huaweicloudsdklive.v1.model.audio_selector_pid_selection import AudioSelectorPidSelection
+from huaweicloudsdklive.v1.model.audio_selector_settings import AudioSelectorSettings
 from huaweicloudsdklive.v1.model.batch_show_ip_belongs_request import BatchShowIpBelongsRequest
 from huaweicloudsdklive.v1.model.batch_show_ip_belongs_response import BatchShowIpBelongsResponse
 from huaweicloudsdklive.v1.model.callback_url import CallbackUrl
@@ -69,6 +72,8 @@ from huaweicloudsdklive.v1.model.delete_transcodings_template_response import De
 from huaweicloudsdklive.v1.model.domain_https_cert_info import DomainHttpsCertInfo
 from huaweicloudsdklive.v1.model.domain_ipv6_switch_req import DomainIpv6SwitchReq
 from huaweicloudsdklive.v1.model.domain_mapping import DomainMapping
+from huaweicloudsdklive.v1.model.encoder_settings_expand import EncoderSettingsExpand
+from huaweicloudsdklive.v1.model.encoder_settings_expand_audio_descriptions import EncoderSettingsExpandAudioDescriptions
 from huaweicloudsdklive.v1.model.encryption import Encryption
 from huaweicloudsdklive.v1.model.endpoint_item import EndpointItem
 from huaweicloudsdklive.v1.model.flv_record_config import FLVRecordConfig
@@ -78,7 +83,9 @@ from huaweicloudsdklive.v1.model.gm_certificate_info import GmCertificateInfo
 from huaweicloudsdklive.v1.model.hls_record_config import HLSRecordConfig
 from huaweicloudsdklive.v1.model.harvest_task_create_suc_rsp import HarvestTaskCreateSucRsp
 from huaweicloudsdklive.v1.model.hls_package_item import HlsPackageItem
+from huaweicloudsdklive.v1.model.http_header import HttpHeader
 from huaweicloudsdklive.v1.model.ip_auth_info import IPAuthInfo
+from huaweicloudsdklive.v1.model.input_audio_selector import InputAudioSelector
 from huaweicloudsdklive.v1.model.input_stream_info import InputStreamInfo
 from huaweicloudsdklive.v1.model.key_chain_info import KeyChainInfo
 from huaweicloudsdklive.v1.model.list_delay_config_request import ListDelayConfigRequest

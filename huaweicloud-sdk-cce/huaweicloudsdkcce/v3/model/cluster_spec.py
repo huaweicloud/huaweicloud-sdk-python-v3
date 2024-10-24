@@ -39,6 +39,7 @@ class ClusterSpec:
         'extend_param': 'ClusterExtendParam',
         'support_istio': 'bool',
         'enable_master_volume_encryption': 'bool',
+        'enable_dist_mgt': 'bool',
         'configurations_override': 'list[PackageConfiguration]'
     }
 
@@ -65,10 +66,11 @@ class ClusterSpec:
         'extend_param': 'extendParam',
         'support_istio': 'supportIstio',
         'enable_master_volume_encryption': 'enableMasterVolumeEncryption',
+        'enable_dist_mgt': 'enableDistMgt',
         'configurations_override': 'configurationsOverride'
     }
 
-    def __init__(self, category=None, type=None, flavor=None, version=None, platform_version=None, description=None, custom_san=None, ipv6enable=None, host_network=None, container_network=None, eni_network=None, service_network=None, authentication=None, billing_mode=None, masters=None, kubernetes_svc_ip_range=None, cluster_tags=None, kube_proxy_mode=None, az=None, extend_param=None, support_istio=None, enable_master_volume_encryption=None, configurations_override=None):
+    def __init__(self, category=None, type=None, flavor=None, version=None, platform_version=None, description=None, custom_san=None, ipv6enable=None, host_network=None, container_network=None, eni_network=None, service_network=None, authentication=None, billing_mode=None, masters=None, kubernetes_svc_ip_range=None, cluster_tags=None, kube_proxy_mode=None, az=None, extend_param=None, support_istio=None, enable_master_volume_encryption=None, enable_dist_mgt=None, configurations_override=None):
         """ClusterSpec
 
         The model defined in huaweicloud sdk
@@ -117,6 +119,8 @@ class ClusterSpec:
         :type support_istio: bool
         :param enable_master_volume_encryption: 集群控制节点系统盘、数据盘加密。默认使用AES_256加密算法。CCE、Turbo集群1.25及以上版本开始支持。集群创建后不支持修改。开启后存在一定的磁盘读写性能损耗。
         :type enable_master_volume_encryption: bool
+        :param enable_dist_mgt: 集群开启对分布式云支持。创建CCE Turbo集群时，可在创建集群过程中，开启对分布式云(cloudpond)支持。
+        :type enable_dist_mgt: bool
         :param configurations_override: 覆盖集群默认组件配置  若指定了不支持的组件或组件不支持的参数，该配置项将被忽略。  当前支持的可配置组件及其参数详见 [[配置管理](https://support.huaweicloud.com/usermanual-cce/cce_10_0213.html)](tag:hws) [[配置管理](https://support.huaweicloud.com/intl/zh-cn/usermanual-cce/cce_10_0213.html)](tag:hws_hk) 
         :type configurations_override: list[:class:`huaweicloudsdkcce.v3.PackageConfiguration`]
         """
@@ -145,6 +149,7 @@ class ClusterSpec:
         self._extend_param = None
         self._support_istio = None
         self._enable_master_volume_encryption = None
+        self._enable_dist_mgt = None
         self._configurations_override = None
         self.discriminator = None
 
@@ -189,6 +194,8 @@ class ClusterSpec:
             self.support_istio = support_istio
         if enable_master_volume_encryption is not None:
             self.enable_master_volume_encryption = enable_master_volume_encryption
+        if enable_dist_mgt is not None:
+            self.enable_dist_mgt = enable_dist_mgt
         if configurations_override is not None:
             self.configurations_override = configurations_override
 
@@ -651,6 +658,28 @@ class ClusterSpec:
         :type enable_master_volume_encryption: bool
         """
         self._enable_master_volume_encryption = enable_master_volume_encryption
+
+    @property
+    def enable_dist_mgt(self):
+        """Gets the enable_dist_mgt of this ClusterSpec.
+
+        集群开启对分布式云支持。创建CCE Turbo集群时，可在创建集群过程中，开启对分布式云(cloudpond)支持。
+
+        :return: The enable_dist_mgt of this ClusterSpec.
+        :rtype: bool
+        """
+        return self._enable_dist_mgt
+
+    @enable_dist_mgt.setter
+    def enable_dist_mgt(self, enable_dist_mgt):
+        """Sets the enable_dist_mgt of this ClusterSpec.
+
+        集群开启对分布式云支持。创建CCE Turbo集群时，可在创建集群过程中，开启对分布式云(cloudpond)支持。
+
+        :param enable_dist_mgt: The enable_dist_mgt of this ClusterSpec.
+        :type enable_dist_mgt: bool
+        """
+        self._enable_dist_mgt = enable_dist_mgt
 
     @property
     def configurations_override(self):

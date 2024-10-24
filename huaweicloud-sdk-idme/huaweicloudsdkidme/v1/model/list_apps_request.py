@@ -17,20 +17,80 @@ class ListAppsRequest:
     sensitive_list = []
 
     openapi_types = {
+        'page_num': 'int',
+        'page_size': 'int'
     }
 
     attribute_map = {
+        'page_num': 'page_num',
+        'page_size': 'page_size'
     }
 
-    def __init__(self):
+    def __init__(self, page_num=None, page_size=None):
         """ListAppsRequest
 
         The model defined in huaweicloud sdk
 
+        :param page_num: 页码
+        :type page_num: int
+        :param page_size: 当前页大小
+        :type page_size: int
         """
         
         
+
+        self._page_num = None
+        self._page_size = None
         self.discriminator = None
+
+        if page_num is not None:
+            self.page_num = page_num
+        if page_size is not None:
+            self.page_size = page_size
+
+    @property
+    def page_num(self):
+        """Gets the page_num of this ListAppsRequest.
+
+        页码
+
+        :return: The page_num of this ListAppsRequest.
+        :rtype: int
+        """
+        return self._page_num
+
+    @page_num.setter
+    def page_num(self, page_num):
+        """Sets the page_num of this ListAppsRequest.
+
+        页码
+
+        :param page_num: The page_num of this ListAppsRequest.
+        :type page_num: int
+        """
+        self._page_num = page_num
+
+    @property
+    def page_size(self):
+        """Gets the page_size of this ListAppsRequest.
+
+        当前页大小
+
+        :return: The page_size of this ListAppsRequest.
+        :rtype: int
+        """
+        return self._page_size
+
+    @page_size.setter
+    def page_size(self, page_size):
+        """Sets the page_size of this ListAppsRequest.
+
+        当前页大小
+
+        :param page_size: The page_size of this ListAppsRequest.
+        :type page_size: int
+        """
+        self._page_size = page_size
 
     def to_dict(self):
         """Returns the model properties as a dict"""

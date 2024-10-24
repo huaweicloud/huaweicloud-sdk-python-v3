@@ -37,6 +37,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         'co_streamer_config': 'CoStreamerConfig',
         'priv_data': 'str',
         'room_id': 'str',
+        'relation_live_platform_info': 'PlatformLiveDetailInfo',
         'create_time': 'str',
         'update_time': 'str',
         'cover_url': 'str',
@@ -66,6 +67,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         'co_streamer_config': 'co_streamer_config',
         'priv_data': 'priv_data',
         'room_id': 'room_id',
+        'relation_live_platform_info': 'relation_live_platform_info',
         'create_time': 'create_time',
         'update_time': 'update_time',
         'cover_url': 'cover_url',
@@ -75,7 +77,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, room_name=None, room_description=None, room_type=None, scene_scripts=None, interaction_config=None, interaction_rules=None, play_policy=None, video_config=None, output_urls=None, stream_keys=None, backup_model_asset_ids=None, live_event_callback_config=None, rtc_callback_config=None, review_config=None, shared_config=None, view_mode=None, co_streamer_config=None, priv_data=None, room_id=None, create_time=None, update_time=None, cover_url=None, thumbnail=None, room_state=None, error_info=None, x_request_id=None):
+    def __init__(self, room_name=None, room_description=None, room_type=None, scene_scripts=None, interaction_config=None, interaction_rules=None, play_policy=None, video_config=None, output_urls=None, stream_keys=None, backup_model_asset_ids=None, live_event_callback_config=None, rtc_callback_config=None, review_config=None, shared_config=None, view_mode=None, co_streamer_config=None, priv_data=None, room_id=None, relation_live_platform_info=None, create_time=None, update_time=None, cover_url=None, thumbnail=None, room_state=None, error_info=None, x_request_id=None):
         """ShowSmartLiveRoomResponse
 
         The model defined in huaweicloud sdk
@@ -118,6 +120,8 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         :type priv_data: str
         :param room_id: 直播间ID
         :type room_id: str
+        :param relation_live_platform_info: 
+        :type relation_live_platform_info: :class:`huaweicloudsdkmetastudio.v1.PlatformLiveDetailInfo`
         :param create_time: 直播间创建时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
         :type create_time: str
         :param update_time: 直播间更新时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
@@ -155,6 +159,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         self._co_streamer_config = None
         self._priv_data = None
         self._room_id = None
+        self._relation_live_platform_info = None
         self._create_time = None
         self._update_time = None
         self._cover_url = None
@@ -201,6 +206,8 @@ class ShowSmartLiveRoomResponse(SdkResponse):
             self.priv_data = priv_data
         if room_id is not None:
             self.room_id = room_id
+        if relation_live_platform_info is not None:
+            self.relation_live_platform_info = relation_live_platform_info
         if create_time is not None:
             self.create_time = create_time
         if update_time is not None:
@@ -601,6 +608,24 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         :type room_id: str
         """
         self._room_id = room_id
+
+    @property
+    def relation_live_platform_info(self):
+        """Gets the relation_live_platform_info of this ShowSmartLiveRoomResponse.
+
+        :return: The relation_live_platform_info of this ShowSmartLiveRoomResponse.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.PlatformLiveDetailInfo`
+        """
+        return self._relation_live_platform_info
+
+    @relation_live_platform_info.setter
+    def relation_live_platform_info(self, relation_live_platform_info):
+        """Sets the relation_live_platform_info of this ShowSmartLiveRoomResponse.
+
+        :param relation_live_platform_info: The relation_live_platform_info of this ShowSmartLiveRoomResponse.
+        :type relation_live_platform_info: :class:`huaweicloudsdkmetastudio.v1.PlatformLiveDetailInfo`
+        """
+        self._relation_live_platform_info = relation_live_platform_info
 
     @property
     def create_time(self):

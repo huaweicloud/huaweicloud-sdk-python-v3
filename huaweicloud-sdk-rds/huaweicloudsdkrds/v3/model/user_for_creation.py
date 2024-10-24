@@ -45,7 +45,7 @@ class UserForCreation:
         :type password: str
         :param comment: 数据库用户备注。 取值范围：长度1~512个字符。目前仅支持MySQL 8.0.25及以上版本。
         :type comment: str
-        :param is_privilege: 是否创建高权限用户。 • 若为true，则不用传hosts、databases参数。
+        :param is_privilege: 是否创建高权限用户。 • 默认为false，暂不支持设置为true
         :type is_privilege: bool
         :param hosts: 授权用户登录主机IP列表 • 若IP地址为%，则表示允许所有地址访问MySQL实例。 • 若IP地址为“10.10.10.%”，则表示10.10.10.X的IP地址都可以访问该MySQL实例。 • 支持添加多个IP地址。
         :type hosts: list[str]
@@ -144,7 +144,7 @@ class UserForCreation:
     def is_privilege(self):
         """Gets the is_privilege of this UserForCreation.
 
-        是否创建高权限用户。 • 若为true，则不用传hosts、databases参数。
+        是否创建高权限用户。 • 默认为false，暂不支持设置为true
 
         :return: The is_privilege of this UserForCreation.
         :rtype: bool
@@ -155,7 +155,7 @@ class UserForCreation:
     def is_privilege(self, is_privilege):
         """Sets the is_privilege of this UserForCreation.
 
-        是否创建高权限用户。 • 若为true，则不用传hosts、databases参数。
+        是否创建高权限用户。 • 默认为false，暂不支持设置为true
 
         :param is_privilege: The is_privilege of this UserForCreation.
         :type is_privilege: bool

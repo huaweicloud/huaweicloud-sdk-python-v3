@@ -18,15 +18,17 @@ class ShootScriptItem:
 
     openapi_types = {
         'sequence_no': 'int',
-        'shoot_script': 'ShootScript'
+        'shoot_script': 'ShootScript',
+        'subtitle_file_info': 'SubtitleFiles'
     }
 
     attribute_map = {
         'sequence_no': 'sequence_no',
-        'shoot_script': 'shoot_script'
+        'shoot_script': 'shoot_script',
+        'subtitle_file_info': 'subtitle_file_info'
     }
 
-    def __init__(self, sequence_no=None, shoot_script=None):
+    def __init__(self, sequence_no=None, shoot_script=None, subtitle_file_info=None):
         """ShootScriptItem
 
         The model defined in huaweicloud sdk
@@ -35,18 +37,23 @@ class ShootScriptItem:
         :type sequence_no: int
         :param shoot_script: 
         :type shoot_script: :class:`huaweicloudsdkmetastudio.v1.ShootScript`
+        :param subtitle_file_info: 
+        :type subtitle_file_info: :class:`huaweicloudsdkmetastudio.v1.SubtitleFiles`
         """
         
         
 
         self._sequence_no = None
         self._shoot_script = None
+        self._subtitle_file_info = None
         self.discriminator = None
 
         if sequence_no is not None:
             self.sequence_no = sequence_no
         if shoot_script is not None:
             self.shoot_script = shoot_script
+        if subtitle_file_info is not None:
+            self.subtitle_file_info = subtitle_file_info
 
     @property
     def sequence_no(self):
@@ -87,6 +94,24 @@ class ShootScriptItem:
         :type shoot_script: :class:`huaweicloudsdkmetastudio.v1.ShootScript`
         """
         self._shoot_script = shoot_script
+
+    @property
+    def subtitle_file_info(self):
+        """Gets the subtitle_file_info of this ShootScriptItem.
+
+        :return: The subtitle_file_info of this ShootScriptItem.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.SubtitleFiles`
+        """
+        return self._subtitle_file_info
+
+    @subtitle_file_info.setter
+    def subtitle_file_info(self, subtitle_file_info):
+        """Sets the subtitle_file_info of this ShootScriptItem.
+
+        :param subtitle_file_info: The subtitle_file_info of this ShootScriptItem.
+        :type subtitle_file_info: :class:`huaweicloudsdkmetastudio.v1.SubtitleFiles`
+        """
+        self._subtitle_file_info = subtitle_file_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

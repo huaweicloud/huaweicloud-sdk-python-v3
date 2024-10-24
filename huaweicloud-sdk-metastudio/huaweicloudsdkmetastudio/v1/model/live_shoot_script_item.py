@@ -20,17 +20,19 @@ class LiveShootScriptItem:
         'sequence_no': 'int',
         'title': 'str',
         'text_config': 'TextConfig',
-        'audio_config': 'LiveAudioConfig'
+        'audio_config': 'LiveAudioConfig',
+        'relation_product': 'RelationProductInfo'
     }
 
     attribute_map = {
         'sequence_no': 'sequence_no',
         'title': 'title',
         'text_config': 'text_config',
-        'audio_config': 'audio_config'
+        'audio_config': 'audio_config',
+        'relation_product': 'relation_product'
     }
 
-    def __init__(self, sequence_no=None, title=None, text_config=None, audio_config=None):
+    def __init__(self, sequence_no=None, title=None, text_config=None, audio_config=None, relation_product=None):
         """LiveShootScriptItem
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class LiveShootScriptItem:
         :type text_config: :class:`huaweicloudsdkmetastudio.v1.TextConfig`
         :param audio_config: 
         :type audio_config: :class:`huaweicloudsdkmetastudio.v1.LiveAudioConfig`
+        :param relation_product: 
+        :type relation_product: :class:`huaweicloudsdkmetastudio.v1.RelationProductInfo`
         """
         
         
@@ -51,6 +55,7 @@ class LiveShootScriptItem:
         self._title = None
         self._text_config = None
         self._audio_config = None
+        self._relation_product = None
         self.discriminator = None
 
         if sequence_no is not None:
@@ -61,6 +66,8 @@ class LiveShootScriptItem:
             self.text_config = text_config
         if audio_config is not None:
             self.audio_config = audio_config
+        if relation_product is not None:
+            self.relation_product = relation_product
 
     @property
     def sequence_no(self):
@@ -141,6 +148,24 @@ class LiveShootScriptItem:
         :type audio_config: :class:`huaweicloudsdkmetastudio.v1.LiveAudioConfig`
         """
         self._audio_config = audio_config
+
+    @property
+    def relation_product(self):
+        """Gets the relation_product of this LiveShootScriptItem.
+
+        :return: The relation_product of this LiveShootScriptItem.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.RelationProductInfo`
+        """
+        return self._relation_product
+
+    @relation_product.setter
+    def relation_product(self, relation_product):
+        """Sets the relation_product of this LiveShootScriptItem.
+
+        :param relation_product: The relation_product of this LiveShootScriptItem.
+        :type relation_product: :class:`huaweicloudsdkmetastudio.v1.RelationProductInfo`
+        """
+        self._relation_product = relation_product
 
     def to_dict(self):
         """Returns the model properties as a dict"""

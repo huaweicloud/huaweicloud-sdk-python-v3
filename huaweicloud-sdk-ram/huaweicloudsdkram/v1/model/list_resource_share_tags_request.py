@@ -15,18 +15,21 @@ class ListResourceShareTagsRequest:
                             and the value is json key in definition.
     """
     sensitive_list = []
+    sensitive_list.append('x_security_token')
 
     openapi_types = {
         'limit': 'int',
-        'marker': 'str'
+        'marker': 'str',
+        'x_security_token': 'str'
     }
 
     attribute_map = {
         'limit': 'limit',
-        'marker': 'marker'
+        'marker': 'marker',
+        'x_security_token': 'X-Security-Token'
     }
 
-    def __init__(self, limit=None, marker=None):
+    def __init__(self, limit=None, marker=None, x_security_token=None):
         """ListResourceShareTagsRequest
 
         The model defined in huaweicloud sdk
@@ -35,18 +38,23 @@ class ListResourceShareTagsRequest:
         :type limit: int
         :param marker: 页面标记。
         :type marker: str
+        :param x_security_token: 如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+        :type x_security_token: str
         """
         
         
 
         self._limit = None
         self._marker = None
+        self._x_security_token = None
         self.discriminator = None
 
         if limit is not None:
             self.limit = limit
         if marker is not None:
             self.marker = marker
+        if x_security_token is not None:
+            self.x_security_token = x_security_token
 
     @property
     def limit(self):
@@ -91,6 +99,28 @@ class ListResourceShareTagsRequest:
         :type marker: str
         """
         self._marker = marker
+
+    @property
+    def x_security_token(self):
+        """Gets the x_security_token of this ListResourceShareTagsRequest.
+
+        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+
+        :return: The x_security_token of this ListResourceShareTagsRequest.
+        :rtype: str
+        """
+        return self._x_security_token
+
+    @x_security_token.setter
+    def x_security_token(self, x_security_token):
+        """Sets the x_security_token of this ListResourceShareTagsRequest.
+
+        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+
+        :param x_security_token: The x_security_token of this ListResourceShareTagsRequest.
+        :type x_security_token: str
+        """
+        self._x_security_token = x_security_token
 
     def to_dict(self):
         """Returns the model properties as a dict"""

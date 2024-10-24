@@ -25,7 +25,8 @@ class CreateOttChannelInfoReq:
         'input': 'InputStreamInfo',
         'encoder_settings': 'list[ModifyOttChannelEncoderSettingsEncoderSettings]',
         'record_settings': 'CreateOttChannelInfoReqRecordSettings',
-        'endpoints': 'list[EndpointItem]'
+        'endpoints': 'list[EndpointItem]',
+        'encoder_settings_expand': 'EncoderSettingsExpand'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class CreateOttChannelInfoReq:
         'input': 'input',
         'encoder_settings': 'encoder_settings',
         'record_settings': 'record_settings',
-        'endpoints': 'endpoints'
+        'endpoints': 'endpoints',
+        'encoder_settings_expand': 'encoder_settings_expand'
     }
 
-    def __init__(self, domain=None, app_name=None, id=None, name=None, state=None, input=None, encoder_settings=None, record_settings=None, endpoints=None):
+    def __init__(self, domain=None, app_name=None, id=None, name=None, state=None, input=None, encoder_settings=None, record_settings=None, endpoints=None, encoder_settings_expand=None):
         """CreateOttChannelInfoReq
 
         The model defined in huaweicloud sdk
@@ -49,7 +51,7 @@ class CreateOttChannelInfoReq:
         :type domain: str
         :param app_name: 组名或应用名
         :type app_name: str
-        :param id: 频道ID。频道唯一标识，为必填项。频道ID不建议输入下划线“_”，否则会影响转码和截图任务
+        :param id: 频道ID。频道唯一标识，为必填项。
         :type id: str
         :param name: 频道名。可选配置
         :type name: str
@@ -63,6 +65,8 @@ class CreateOttChannelInfoReq:
         :type record_settings: :class:`huaweicloudsdklive.v1.CreateOttChannelInfoReqRecordSettings`
         :param endpoints: 频道出流信息
         :type endpoints: list[:class:`huaweicloudsdklive.v1.EndpointItem`]
+        :param encoder_settings_expand: 
+        :type encoder_settings_expand: :class:`huaweicloudsdklive.v1.EncoderSettingsExpand`
         """
         
         
@@ -76,6 +80,7 @@ class CreateOttChannelInfoReq:
         self._encoder_settings = None
         self._record_settings = None
         self._endpoints = None
+        self._encoder_settings_expand = None
         self.discriminator = None
 
         self.domain = domain
@@ -89,6 +94,8 @@ class CreateOttChannelInfoReq:
             self.encoder_settings = encoder_settings
         self.record_settings = record_settings
         self.endpoints = endpoints
+        if encoder_settings_expand is not None:
+            self.encoder_settings_expand = encoder_settings_expand
 
     @property
     def domain(self):
@@ -138,7 +145,7 @@ class CreateOttChannelInfoReq:
     def id(self):
         """Gets the id of this CreateOttChannelInfoReq.
 
-        频道ID。频道唯一标识，为必填项。频道ID不建议输入下划线“_”，否则会影响转码和截图任务
+        频道ID。频道唯一标识，为必填项。
 
         :return: The id of this CreateOttChannelInfoReq.
         :rtype: str
@@ -149,7 +156,7 @@ class CreateOttChannelInfoReq:
     def id(self, id):
         """Sets the id of this CreateOttChannelInfoReq.
 
-        频道ID。频道唯一标识，为必填项。频道ID不建议输入下划线“_”，否则会影响转码和截图任务
+        频道ID。频道唯一标识，为必填项。
 
         :param id: The id of this CreateOttChannelInfoReq.
         :type id: str
@@ -279,6 +286,24 @@ class CreateOttChannelInfoReq:
         :type endpoints: list[:class:`huaweicloudsdklive.v1.EndpointItem`]
         """
         self._endpoints = endpoints
+
+    @property
+    def encoder_settings_expand(self):
+        """Gets the encoder_settings_expand of this CreateOttChannelInfoReq.
+
+        :return: The encoder_settings_expand of this CreateOttChannelInfoReq.
+        :rtype: :class:`huaweicloudsdklive.v1.EncoderSettingsExpand`
+        """
+        return self._encoder_settings_expand
+
+    @encoder_settings_expand.setter
+    def encoder_settings_expand(self, encoder_settings_expand):
+        """Sets the encoder_settings_expand of this CreateOttChannelInfoReq.
+
+        :param encoder_settings_expand: The encoder_settings_expand of this CreateOttChannelInfoReq.
+        :type encoder_settings_expand: :class:`huaweicloudsdklive.v1.EncoderSettingsExpand`
+        """
+        self._encoder_settings_expand = encoder_settings_expand
 
     def to_dict(self):
         """Returns the model properties as a dict"""

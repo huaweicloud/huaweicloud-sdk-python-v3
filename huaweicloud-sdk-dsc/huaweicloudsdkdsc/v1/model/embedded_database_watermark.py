@@ -41,7 +41,7 @@ class EmbeddedDatabaseWatermark:
         :type watermark_key: str
         :param columns: 字段类型列表，最大长度100。使用时，至少包含两个字段，一个“primary_key”为true表示主键，一个为false用来嵌入水印
         :type columns: list[:class:`huaweicloudsdkdsc.v1.Columns`]
-        :param data: 数据字段的内容，最大支持长度2000
+        :param data: 嵌入可提取水印的行数限制1500-50000行。内容建议：数据具有随机性，内容重复率低
         :type data: list[dict(str, object)]
         """
         
@@ -128,7 +128,7 @@ class EmbeddedDatabaseWatermark:
     def data(self):
         """Gets the data of this EmbeddedDatabaseWatermark.
 
-        数据字段的内容，最大支持长度2000
+        嵌入可提取水印的行数限制1500-50000行。内容建议：数据具有随机性，内容重复率低
 
         :return: The data of this EmbeddedDatabaseWatermark.
         :rtype: list[dict(str, object)]
@@ -139,7 +139,7 @@ class EmbeddedDatabaseWatermark:
     def data(self, data):
         """Sets the data of this EmbeddedDatabaseWatermark.
 
-        数据字段的内容，最大支持长度2000
+        嵌入可提取水印的行数限制1500-50000行。内容建议：数据具有随机性，内容重复率低
 
         :param data: The data of this EmbeddedDatabaseWatermark.
         :type data: list[dict(str, object)]

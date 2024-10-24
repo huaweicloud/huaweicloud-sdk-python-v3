@@ -33,9 +33,9 @@ class VideoLayerConfig:
 
         The model defined in huaweicloud sdk
 
-        :param video_url: **参数解释**： 视频文件的URL。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-2048位。 **默认取值**： 不涉及。
+        :param video_url: **参数解释**： 视频文件的URL。 **约束限制**： * 仅直播支持外部URL，其他业务通过资产库查询获取，不支持外部URL。 **取值范围**： 字符长度1-2048位。 **默认取值**： 不涉及。
         :type video_url: str
-        :param video_cover_url: **参数解释**： 视频封面文件的URL。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-2048位。 **默认取值**： 不涉及。
+        :param video_cover_url: **参数解释**： 视频封面文件的URL。 **约束限制**： * 仅直播支持外部URL，其他业务通过资产库查询获取，不支持外部URL。 **取值范围**： 字符长度1-2048位。 **默认取值**： 不涉及。
         :type video_cover_url: str
         :param loop_count: **参数解释**： 循环播放视频次数。  特殊取值： * 0：表示不播放 * -1：表示持续循环播放  **约束限制**： 不涉及。
         :type loop_count: int
@@ -59,7 +59,7 @@ class VideoLayerConfig:
     def video_url(self):
         """Gets the video_url of this VideoLayerConfig.
 
-        **参数解释**： 视频文件的URL。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-2048位。 **默认取值**： 不涉及。
+        **参数解释**： 视频文件的URL。 **约束限制**： * 仅直播支持外部URL，其他业务通过资产库查询获取，不支持外部URL。 **取值范围**： 字符长度1-2048位。 **默认取值**： 不涉及。
 
         :return: The video_url of this VideoLayerConfig.
         :rtype: str
@@ -70,7 +70,7 @@ class VideoLayerConfig:
     def video_url(self, video_url):
         """Sets the video_url of this VideoLayerConfig.
 
-        **参数解释**： 视频文件的URL。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-2048位。 **默认取值**： 不涉及。
+        **参数解释**： 视频文件的URL。 **约束限制**： * 仅直播支持外部URL，其他业务通过资产库查询获取，不支持外部URL。 **取值范围**： 字符长度1-2048位。 **默认取值**： 不涉及。
 
         :param video_url: The video_url of this VideoLayerConfig.
         :type video_url: str
@@ -81,7 +81,7 @@ class VideoLayerConfig:
     def video_cover_url(self):
         """Gets the video_cover_url of this VideoLayerConfig.
 
-        **参数解释**： 视频封面文件的URL。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-2048位。 **默认取值**： 不涉及。
+        **参数解释**： 视频封面文件的URL。 **约束限制**： * 仅直播支持外部URL，其他业务通过资产库查询获取，不支持外部URL。 **取值范围**： 字符长度1-2048位。 **默认取值**： 不涉及。
 
         :return: The video_cover_url of this VideoLayerConfig.
         :rtype: str
@@ -92,7 +92,7 @@ class VideoLayerConfig:
     def video_cover_url(self, video_cover_url):
         """Sets the video_cover_url of this VideoLayerConfig.
 
-        **参数解释**： 视频封面文件的URL。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-2048位。 **默认取值**： 不涉及。
+        **参数解释**： 视频封面文件的URL。 **约束限制**： * 仅直播支持外部URL，其他业务通过资产库查询获取，不支持外部URL。 **取值范围**： 字符长度1-2048位。 **默认取值**： 不涉及。
 
         :param video_cover_url: The video_cover_url of this VideoLayerConfig.
         :type video_cover_url: str

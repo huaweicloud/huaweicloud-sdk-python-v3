@@ -43,9 +43,9 @@ class SubtitleConfig:
         :type dx: int
         :param dy: **参数解释**： 字幕框左下角像素点坐标。 **约束限制**： 不涉及。 **默认取值**： 不涉及。
         :type dy: int
-        :param font_name: **参数解释**： 字体。当前支持的字体： * HarmonyOS_Sans_SC_Black：鸿蒙粗体 * HarmonyOS_Sans_SC_Regular：鸿蒙常规 * HarmonyOS_Sans_SC_Thin：鸿蒙细体。  **约束限制**： 不涉及。 **取值范围**： 字符长度0-64位
+        :param font_name: **参数解释**： 字体。当前支持的字体请参考[服务支持的字体](metastudio_02_0041.xml) **约束限制**： 不涉及。 **取值范围**： 字符长度0-64位
         :type font_name: str
-        :param font_size: **参数解释**： 字体大小。接口的取值范围为0-120，实际业务使用的取值范围要求为4-120，请以业务实际使用要求为准。 **约束限制**： 不涉及。
+        :param font_size: **参数解释**： 字体大小。接口的取值范围为0-120，实际业务使用的取值范围要求为24-120，请以业务实际使用要求为准。 **约束限制**： 不涉及。
         :type font_size: int
         :param h: **参数解释**： 字幕框高度。 **约束限制**： 参数h用于方便前端计算字幕框左上角坐标，后台不使用该参数。
         :type h: int
@@ -124,7 +124,7 @@ class SubtitleConfig:
     def font_name(self):
         """Gets the font_name of this SubtitleConfig.
 
-        **参数解释**： 字体。当前支持的字体： * HarmonyOS_Sans_SC_Black：鸿蒙粗体 * HarmonyOS_Sans_SC_Regular：鸿蒙常规 * HarmonyOS_Sans_SC_Thin：鸿蒙细体。  **约束限制**： 不涉及。 **取值范围**： 字符长度0-64位
+        **参数解释**： 字体。当前支持的字体请参考[服务支持的字体](metastudio_02_0041.xml) **约束限制**： 不涉及。 **取值范围**： 字符长度0-64位
 
         :return: The font_name of this SubtitleConfig.
         :rtype: str
@@ -135,7 +135,7 @@ class SubtitleConfig:
     def font_name(self, font_name):
         """Sets the font_name of this SubtitleConfig.
 
-        **参数解释**： 字体。当前支持的字体： * HarmonyOS_Sans_SC_Black：鸿蒙粗体 * HarmonyOS_Sans_SC_Regular：鸿蒙常规 * HarmonyOS_Sans_SC_Thin：鸿蒙细体。  **约束限制**： 不涉及。 **取值范围**： 字符长度0-64位
+        **参数解释**： 字体。当前支持的字体请参考[服务支持的字体](metastudio_02_0041.xml) **约束限制**： 不涉及。 **取值范围**： 字符长度0-64位
 
         :param font_name: The font_name of this SubtitleConfig.
         :type font_name: str
@@ -146,7 +146,7 @@ class SubtitleConfig:
     def font_size(self):
         """Gets the font_size of this SubtitleConfig.
 
-        **参数解释**： 字体大小。接口的取值范围为0-120，实际业务使用的取值范围要求为4-120，请以业务实际使用要求为准。 **约束限制**： 不涉及。
+        **参数解释**： 字体大小。接口的取值范围为0-120，实际业务使用的取值范围要求为24-120，请以业务实际使用要求为准。 **约束限制**： 不涉及。
 
         :return: The font_size of this SubtitleConfig.
         :rtype: int
@@ -157,7 +157,7 @@ class SubtitleConfig:
     def font_size(self, font_size):
         """Sets the font_size of this SubtitleConfig.
 
-        **参数解释**： 字体大小。接口的取值范围为0-120，实际业务使用的取值范围要求为4-120，请以业务实际使用要求为准。 **约束限制**： 不涉及。
+        **参数解释**： 字体大小。接口的取值范围为0-120，实际业务使用的取值范围要求为24-120，请以业务实际使用要求为准。 **约束限制**： 不涉及。
 
         :param font_size: The font_size of this SubtitleConfig.
         :type font_size: int

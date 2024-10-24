@@ -22,7 +22,8 @@ class BatchCreateInvocationRequestBody:
         'invocation_target': 'str',
         'invocation_ids': 'list[str]',
         'version_type': 'str',
-        'origin': 'str'
+        'origin': 'str',
+        'version': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class BatchCreateInvocationRequestBody:
         'invocation_target': 'invocation_target',
         'invocation_ids': 'invocation_ids',
         'version_type': 'version_type',
-        'origin': 'origin'
+        'origin': 'origin',
+        'version': 'version'
     }
 
-    def __init__(self, instance_ids=None, invocation_type=None, invocation_target=None, invocation_ids=None, version_type=None, origin=None):
+    def __init__(self, instance_ids=None, invocation_type=None, invocation_target=None, invocation_ids=None, version_type=None, origin=None, version=None):
         """BatchCreateInvocationRequestBody
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class BatchCreateInvocationRequestBody:
         :type version_type: str
         :param origin: Agent任务接口调用源，CES表示由Console调用，APICOM_BMS表示由裸金属服务器调用，ADMIN_SERVER表示由运维平台调用
         :type origin: str
+        :param version: 版本号
+        :type version: str
         """
         
         
@@ -61,6 +65,7 @@ class BatchCreateInvocationRequestBody:
         self._invocation_ids = None
         self._version_type = None
         self._origin = None
+        self._version = None
         self.discriminator = None
 
         if instance_ids is not None:
@@ -74,6 +79,8 @@ class BatchCreateInvocationRequestBody:
             self.version_type = version_type
         if origin is not None:
             self.origin = origin
+        if version is not None:
+            self.version = version
 
     @property
     def instance_ids(self):
@@ -206,6 +213,28 @@ class BatchCreateInvocationRequestBody:
         :type origin: str
         """
         self._origin = origin
+
+    @property
+    def version(self):
+        """Gets the version of this BatchCreateInvocationRequestBody.
+
+        版本号
+
+        :return: The version of this BatchCreateInvocationRequestBody.
+        :rtype: str
+        """
+        return self._version
+
+    @version.setter
+    def version(self, version):
+        """Sets the version of this BatchCreateInvocationRequestBody.
+
+        版本号
+
+        :param version: The version of this BatchCreateInvocationRequestBody.
+        :type version: str
+        """
+        self._version = version
 
     def to_dict(self):
         """Returns the model properties as a dict"""

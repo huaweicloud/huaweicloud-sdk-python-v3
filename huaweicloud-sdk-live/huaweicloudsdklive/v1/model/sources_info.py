@@ -49,7 +49,7 @@ class SourcesInfo:
 
         :param url: 频道源流URL，用于外部拉流
         :type url: str
-        :param bitrate: 码率。无需直播转码时，此参数为必填项  单位：bps。取值范围：0 - 104,857,600（100Mbps）
+        :param bitrate: 码率。无需直播转码时，此参数为必填项  单位：bps。取值范围：(0,104,857,600]（100Mbps）
         :type bitrate: int
         :param width: 分辨率对应宽的值，非必填项  取值范围：0 - 4096（4K）
         :type width: int
@@ -63,9 +63,9 @@ class SourcesInfo:
         :type passphrase: str
         :param backup_urls: 备入流地址列表
         :type backup_urls: list[str]
-        :param stream_id: 协议为SRT_PULL时，拉流地址的streamid
+        :param stream_id: 频道为SRT_PULL类型时，拉流地址的Stream ID。
         :type stream_id: str
-        :param latency: 协议为SRT_PULL时，拉流时延
+        :param latency: 频道为SRT_PULL类型时的拉流时延。
         :type latency: int
         """
         
@@ -130,7 +130,7 @@ class SourcesInfo:
     def bitrate(self):
         """Gets the bitrate of this SourcesInfo.
 
-        码率。无需直播转码时，此参数为必填项  单位：bps。取值范围：0 - 104,857,600（100Mbps）
+        码率。无需直播转码时，此参数为必填项  单位：bps。取值范围：(0,104,857,600]（100Mbps）
 
         :return: The bitrate of this SourcesInfo.
         :rtype: int
@@ -141,7 +141,7 @@ class SourcesInfo:
     def bitrate(self, bitrate):
         """Sets the bitrate of this SourcesInfo.
 
-        码率。无需直播转码时，此参数为必填项  单位：bps。取值范围：0 - 104,857,600（100Mbps）
+        码率。无需直播转码时，此参数为必填项  单位：bps。取值范围：(0,104,857,600]（100Mbps）
 
         :param bitrate: The bitrate of this SourcesInfo.
         :type bitrate: int
@@ -284,7 +284,7 @@ class SourcesInfo:
     def stream_id(self):
         """Gets the stream_id of this SourcesInfo.
 
-        协议为SRT_PULL时，拉流地址的streamid
+        频道为SRT_PULL类型时，拉流地址的Stream ID。
 
         :return: The stream_id of this SourcesInfo.
         :rtype: str
@@ -295,7 +295,7 @@ class SourcesInfo:
     def stream_id(self, stream_id):
         """Sets the stream_id of this SourcesInfo.
 
-        协议为SRT_PULL时，拉流地址的streamid
+        频道为SRT_PULL类型时，拉流地址的Stream ID。
 
         :param stream_id: The stream_id of this SourcesInfo.
         :type stream_id: str
@@ -306,7 +306,7 @@ class SourcesInfo:
     def latency(self):
         """Gets the latency of this SourcesInfo.
 
-        协议为SRT_PULL时，拉流时延
+        频道为SRT_PULL类型时的拉流时延。
 
         :return: The latency of this SourcesInfo.
         :rtype: int
@@ -317,7 +317,7 @@ class SourcesInfo:
     def latency(self, latency):
         """Sets the latency of this SourcesInfo.
 
-        协议为SRT_PULL时，拉流时延
+        频道为SRT_PULL类型时的拉流时延。
 
         :param latency: The latency of this SourcesInfo.
         :type latency: int

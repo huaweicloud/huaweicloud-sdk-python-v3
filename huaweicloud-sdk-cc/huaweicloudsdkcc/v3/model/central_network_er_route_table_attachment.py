@@ -42,8 +42,8 @@ class CentralNetworkErRouteTableAttachment:
         'attached_er_table_id': 'str',
         'attached_er_attachment_id': 'str',
         'attached_er_table_site_code': 'str',
-        'approved_state': 'ApprovedStateEnum',
         'hosted_cloud': 'HostedCloudEnum',
+        'approved_state': 'ApprovedStateEnum',
         'reason': 'str'
     }
 
@@ -73,12 +73,12 @@ class CentralNetworkErRouteTableAttachment:
         'attached_er_table_id': 'attached_er_table_id',
         'attached_er_attachment_id': 'attached_er_attachment_id',
         'attached_er_table_site_code': 'attached_er_table_site_code',
-        'approved_state': 'approved_state',
         'hosted_cloud': 'hosted_cloud',
+        'approved_state': 'approved_state',
         'reason': 'reason'
     }
 
-    def __init__(self, id=None, name=None, description=None, domain_id=None, state=None, created_at=None, updated_at=None, central_network_id=None, central_network_plane_id=None, global_connection_bandwidth_id=None, is_frozen=None, bandwidth_type=None, bandwidth_size=None, enterprise_router_id=None, enterprise_router_project_id=None, enterprise_router_region_id=None, enterprise_router_attachment_id=None, enterprise_router_table_id=None, enterprise_router_site_code=None, attached_er_table_project_id=None, attached_er_table_region_id=None, attached_er_id=None, attached_er_table_id=None, attached_er_attachment_id=None, attached_er_table_site_code=None, approved_state=None, hosted_cloud=None, reason=None):
+    def __init__(self, id=None, name=None, description=None, domain_id=None, state=None, created_at=None, updated_at=None, central_network_id=None, central_network_plane_id=None, global_connection_bandwidth_id=None, is_frozen=None, bandwidth_type=None, bandwidth_size=None, enterprise_router_id=None, enterprise_router_project_id=None, enterprise_router_region_id=None, enterprise_router_attachment_id=None, enterprise_router_table_id=None, enterprise_router_site_code=None, attached_er_table_project_id=None, attached_er_table_region_id=None, attached_er_id=None, attached_er_table_id=None, attached_er_attachment_id=None, attached_er_table_site_code=None, hosted_cloud=None, approved_state=None, reason=None):
         """CentralNetworkErRouteTableAttachment
 
         The model defined in huaweicloud sdk
@@ -133,10 +133,10 @@ class CentralNetworkErRouteTableAttachment:
         :type attached_er_attachment_id: str
         :param attached_er_table_site_code: 被挂载的企业路由器的站点编码。
         :type attached_er_table_site_code: str
-        :param approved_state: 
-        :type approved_state: :class:`huaweicloudsdkcc.v3.ApprovedStateEnum`
         :param hosted_cloud: 
         :type hosted_cloud: :class:`huaweicloudsdkcc.v3.HostedCloudEnum`
+        :param approved_state: 
+        :type approved_state: :class:`huaweicloudsdkcc.v3.ApprovedStateEnum`
         :param reason: 审批拒绝创建企业路由表附件的原因。
         :type reason: str
         """
@@ -168,8 +168,8 @@ class CentralNetworkErRouteTableAttachment:
         self._attached_er_table_id = None
         self._attached_er_attachment_id = None
         self._attached_er_table_site_code = None
-        self._approved_state = None
         self._hosted_cloud = None
+        self._approved_state = None
         self._reason = None
         self.discriminator = None
 
@@ -203,9 +203,9 @@ class CentralNetworkErRouteTableAttachment:
         if attached_er_attachment_id is not None:
             self.attached_er_attachment_id = attached_er_attachment_id
         self.attached_er_table_site_code = attached_er_table_site_code
-        self.approved_state = approved_state
         if hosted_cloud is not None:
             self.hosted_cloud = hosted_cloud
+        self.approved_state = approved_state
         if reason is not None:
             self.reason = reason
 
@@ -752,24 +752,6 @@ class CentralNetworkErRouteTableAttachment:
         self._attached_er_table_site_code = attached_er_table_site_code
 
     @property
-    def approved_state(self):
-        """Gets the approved_state of this CentralNetworkErRouteTableAttachment.
-
-        :return: The approved_state of this CentralNetworkErRouteTableAttachment.
-        :rtype: :class:`huaweicloudsdkcc.v3.ApprovedStateEnum`
-        """
-        return self._approved_state
-
-    @approved_state.setter
-    def approved_state(self, approved_state):
-        """Sets the approved_state of this CentralNetworkErRouteTableAttachment.
-
-        :param approved_state: The approved_state of this CentralNetworkErRouteTableAttachment.
-        :type approved_state: :class:`huaweicloudsdkcc.v3.ApprovedStateEnum`
-        """
-        self._approved_state = approved_state
-
-    @property
     def hosted_cloud(self):
         """Gets the hosted_cloud of this CentralNetworkErRouteTableAttachment.
 
@@ -786,6 +768,24 @@ class CentralNetworkErRouteTableAttachment:
         :type hosted_cloud: :class:`huaweicloudsdkcc.v3.HostedCloudEnum`
         """
         self._hosted_cloud = hosted_cloud
+
+    @property
+    def approved_state(self):
+        """Gets the approved_state of this CentralNetworkErRouteTableAttachment.
+
+        :return: The approved_state of this CentralNetworkErRouteTableAttachment.
+        :rtype: :class:`huaweicloudsdkcc.v3.ApprovedStateEnum`
+        """
+        return self._approved_state
+
+    @approved_state.setter
+    def approved_state(self, approved_state):
+        """Sets the approved_state of this CentralNetworkErRouteTableAttachment.
+
+        :param approved_state: The approved_state of this CentralNetworkErRouteTableAttachment.
+        :type approved_state: :class:`huaweicloudsdkcc.v3.ApprovedStateEnum`
+        """
+        self._approved_state = approved_state
 
     @property
     def reason(self):

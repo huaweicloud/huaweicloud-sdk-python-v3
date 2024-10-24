@@ -37,7 +37,7 @@ class TextLayerConfig:
 
         :param text_context: **参数解释**： 文字图层的文本，内容需做Base64编码。  示例：若想添加文字水印“测试文字水印”，那么text_context的值为：5rWL6K+V5paH5a2X5rC05Y2w **约束限制**： 不涉及。 **取值范围**： 字符长度0-1024位。 **默认取值**： 不涉及。
         :type text_context: str
-        :param font_name: **参数解释**： 字体。当前支持的字体： **约束限制**： 不涉及。 **取值范围**： 支持的字体请参考[服务支持的字体](metastudio_02_0041.xml)
+        :param font_name: 字体。当前支持的字体请参考[服务支持的字体](metastudio_02_0041.xml) **约束限制**： 不涉及。 **取值范围**： 字符长度0-64位
         :type font_name: str
         :param font_size: **参数解释**： 字体大小（像素）。接口的取值范围为0-120，实际业务使用的取值范围要求为4-120，请以业务实际使用要求为准。  **约束限制**： 不涉及。
         :type font_size: int
@@ -88,7 +88,7 @@ class TextLayerConfig:
     def font_name(self):
         """Gets the font_name of this TextLayerConfig.
 
-        **参数解释**： 字体。当前支持的字体： **约束限制**： 不涉及。 **取值范围**： 支持的字体请参考[服务支持的字体](metastudio_02_0041.xml)
+        字体。当前支持的字体请参考[服务支持的字体](metastudio_02_0041.xml) **约束限制**： 不涉及。 **取值范围**： 字符长度0-64位
 
         :return: The font_name of this TextLayerConfig.
         :rtype: str
@@ -99,7 +99,7 @@ class TextLayerConfig:
     def font_name(self, font_name):
         """Sets the font_name of this TextLayerConfig.
 
-        **参数解释**： 字体。当前支持的字体： **约束限制**： 不涉及。 **取值范围**： 支持的字体请参考[服务支持的字体](metastudio_02_0041.xml)
+        字体。当前支持的字体请参考[服务支持的字体](metastudio_02_0041.xml) **约束限制**： 不涉及。 **取值范围**： 字符长度0-64位
 
         :param font_name: The font_name of this TextLayerConfig.
         :type font_name: str

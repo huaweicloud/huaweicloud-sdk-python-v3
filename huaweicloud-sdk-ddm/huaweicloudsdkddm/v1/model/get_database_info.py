@@ -21,7 +21,7 @@ class GetDatabaseInfo:
         'shard_mode': 'str',
         'shard_number': 'int',
         'status': 'str',
-        'created': 'str',
+        'created': 'int',
         'used_rds': 'list[GetDatabaseUsedRds]',
         'shard_unit': 'int'
     }
@@ -50,7 +50,7 @@ class GetDatabaseInfo:
         :param status: 逻辑库状态。
         :type status: str
         :param created: 逻辑库的创建时间。
-        :type created: str
+        :type created: int
         :param used_rds: 逻辑库关联的RDS实例信息。
         :type used_rds: list[:class:`huaweicloudsdkddm.v1.GetDatabaseUsedRds`]
         :param shard_unit: 单个RDS上的逻辑库分片数。
@@ -171,7 +171,7 @@ class GetDatabaseInfo:
         逻辑库的创建时间。
 
         :return: The created of this GetDatabaseInfo.
-        :rtype: str
+        :rtype: int
         """
         return self._created
 
@@ -182,7 +182,7 @@ class GetDatabaseInfo:
         逻辑库的创建时间。
 
         :param created: The created of this GetDatabaseInfo.
-        :type created: str
+        :type created: int
         """
         self._created = created
 

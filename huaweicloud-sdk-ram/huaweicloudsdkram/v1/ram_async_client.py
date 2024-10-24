@@ -72,6 +72,8 @@ class RamAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -139,6 +141,8 @@ class RamAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -212,6 +216,8 @@ class RamAsyncClient(Client):
             query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -275,6 +281,8 @@ class RamAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -342,6 +350,8 @@ class RamAsyncClient(Client):
             query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -405,6 +415,8 @@ class RamAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -468,6 +480,8 @@ class RamAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -531,6 +545,8 @@ class RamAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -600,6 +616,8 @@ class RamAsyncClient(Client):
             query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -671,6 +689,8 @@ class RamAsyncClient(Client):
             query_params.append(('permission_type', local_var_params['permission_type']))
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -738,6 +758,8 @@ class RamAsyncClient(Client):
             query_params.append(('permission_version', local_var_params['permission_version']))
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -801,6 +823,8 @@ class RamAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -866,6 +890,8 @@ class RamAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -931,6 +957,8 @@ class RamAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -998,6 +1026,8 @@ class RamAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1061,6 +1091,8 @@ class RamAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1128,6 +1160,8 @@ class RamAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1195,6 +1229,8 @@ class RamAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1223,9 +1259,9 @@ class RamAsyncClient(Client):
         return http_info
 
     def disassociate_resource_share_async(self, request):
-        """移除资源使用者和共享资源
+        """移除资源使用者或共享资源
 
-        将指定的资源使用者或共享资源从指定的资源共享实例中移除。
+        将指定的资源使用者或共享资源从指定的资源共享实例中移除。资源使用者也可以从指定的资源共享实例中主动退出。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1262,6 +1298,8 @@ class RamAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1327,6 +1365,8 @@ class RamAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1394,6 +1434,8 @@ class RamAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1459,6 +1501,8 @@ class RamAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1522,6 +1566,8 @@ class RamAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1589,6 +1635,8 @@ class RamAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1656,6 +1704,8 @@ class RamAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1725,6 +1775,8 @@ class RamAsyncClient(Client):
             query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1792,6 +1844,8 @@ class RamAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1857,6 +1911,8 @@ class RamAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 

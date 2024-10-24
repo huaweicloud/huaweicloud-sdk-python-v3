@@ -24,7 +24,8 @@ class DashPackageItem:
         'encryption': 'Encryption',
         'ads': 'object',
         'ext_args': 'object',
-        'request_args': 'PackageRequestArgs'
+        'request_args': 'PackageRequestArgs',
+        'ad_marker': 'str'
     }
 
     attribute_map = {
@@ -35,19 +36,20 @@ class DashPackageItem:
         'encryption': 'encryption',
         'ads': 'ads',
         'ext_args': 'ext_args',
-        'request_args': 'request_args'
+        'request_args': 'request_args',
+        'ad_marker': 'ad_marker'
     }
 
-    def __init__(self, url=None, stream_selection=None, segment_duration_seconds=None, playlist_window_seconds=None, encryption=None, ads=None, ext_args=None, request_args=None):
+    def __init__(self, url=None, stream_selection=None, segment_duration_seconds=None, playlist_window_seconds=None, encryption=None, ads=None, ext_args=None, request_args=None, ad_marker=None):
         """DashPackageItem
 
         The model defined in huaweicloud sdk
 
-        :param url: 客户自定义的拉流地址，包括方法、域名、路径和参数
+        :param url: 客户自定义的拉流地址，包括方法、域名、路径
         :type url: str
         :param stream_selection: 从全量流中过滤出一个码率在[min, max]区间的流。如果不需要码率过滤可不选。
         :type stream_selection: list[:class:`huaweicloudsdklive.v1.StreamSelectionItem`]
-        :param segment_duration_seconds: 频道输出分片的时长，为必选项  单位：秒。取值范围：1-10
+        :param segment_duration_seconds: 频道输出分片的时长，为必选项  单位：秒。取值范围：1-10 &gt; 修改分片时长会影响已录制内容的时移和回看服务，请谨慎修改！
         :type segment_duration_seconds: int
         :param playlist_window_seconds: 频道直播返回分片的窗口长度，为频道输出分片的时长乘以数量后得到的值。实际返回的分片数不小于3个。  单位：秒。取值范围：0 - 86400（24小时转化成秒后的取值）
         :type playlist_window_seconds: int
@@ -59,6 +61,8 @@ class DashPackageItem:
         :type ext_args: object
         :param request_args: 
         :type request_args: :class:`huaweicloudsdklive.v1.PackageRequestArgs`
+        :param ad_marker: 广告标识。  DASH取值：\&quot;xml+bin\&quot;。 
+        :type ad_marker: str
         """
         
         
@@ -71,13 +75,13 @@ class DashPackageItem:
         self._ads = None
         self._ext_args = None
         self._request_args = None
+        self._ad_marker = None
         self.discriminator = None
 
         self.url = url
         if stream_selection is not None:
             self.stream_selection = stream_selection
-        if segment_duration_seconds is not None:
-            self.segment_duration_seconds = segment_duration_seconds
+        self.segment_duration_seconds = segment_duration_seconds
         if playlist_window_seconds is not None:
             self.playlist_window_seconds = playlist_window_seconds
         if encryption is not None:
@@ -88,12 +92,14 @@ class DashPackageItem:
             self.ext_args = ext_args
         if request_args is not None:
             self.request_args = request_args
+        if ad_marker is not None:
+            self.ad_marker = ad_marker
 
     @property
     def url(self):
         """Gets the url of this DashPackageItem.
 
-        客户自定义的拉流地址，包括方法、域名、路径和参数
+        客户自定义的拉流地址，包括方法、域名、路径
 
         :return: The url of this DashPackageItem.
         :rtype: str
@@ -104,7 +110,7 @@ class DashPackageItem:
     def url(self, url):
         """Sets the url of this DashPackageItem.
 
-        客户自定义的拉流地址，包括方法、域名、路径和参数
+        客户自定义的拉流地址，包括方法、域名、路径
 
         :param url: The url of this DashPackageItem.
         :type url: str
@@ -137,7 +143,7 @@ class DashPackageItem:
     def segment_duration_seconds(self):
         """Gets the segment_duration_seconds of this DashPackageItem.
 
-        频道输出分片的时长，为必选项  单位：秒。取值范围：1-10
+        频道输出分片的时长，为必选项  单位：秒。取值范围：1-10 > 修改分片时长会影响已录制内容的时移和回看服务，请谨慎修改！
 
         :return: The segment_duration_seconds of this DashPackageItem.
         :rtype: int
@@ -148,7 +154,7 @@ class DashPackageItem:
     def segment_duration_seconds(self, segment_duration_seconds):
         """Sets the segment_duration_seconds of this DashPackageItem.
 
-        频道输出分片的时长，为必选项  单位：秒。取值范围：1-10
+        频道输出分片的时长，为必选项  单位：秒。取值范围：1-10 > 修改分片时长会影响已录制内容的时移和回看服务，请谨慎修改！
 
         :param segment_duration_seconds: The segment_duration_seconds of this DashPackageItem.
         :type segment_duration_seconds: int
@@ -256,6 +262,28 @@ class DashPackageItem:
         :type request_args: :class:`huaweicloudsdklive.v1.PackageRequestArgs`
         """
         self._request_args = request_args
+
+    @property
+    def ad_marker(self):
+        """Gets the ad_marker of this DashPackageItem.
+
+        广告标识。  DASH取值：\"xml+bin\"。 
+
+        :return: The ad_marker of this DashPackageItem.
+        :rtype: str
+        """
+        return self._ad_marker
+
+    @ad_marker.setter
+    def ad_marker(self, ad_marker):
+        """Sets the ad_marker of this DashPackageItem.
+
+        广告标识。  DASH取值：\"xml+bin\"。 
+
+        :param ad_marker: The ad_marker of this DashPackageItem.
+        :type ad_marker: str
+        """
+        self._ad_marker = ad_marker
 
     def to_dict(self):
         """Returns the model properties as a dict"""
