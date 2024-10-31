@@ -59,7 +59,7 @@ class VpcCreate:
         :type type: int
         :param dict_code: VPC通道的字典编码  支持英文，数字，特殊字符（-_.）  暂不支持
         :type dict_code: str
-        :param member_groups: VPC通道后端服务器组列表
+        :param member_groups: VPC通道后端服务器组列表。当microservice_info中service_type为NACOS类型时，服务器组的权重不支持手动设置。
         :type member_groups: list[:class:`huaweicloudsdkapig.v2.MemberGroupCreate`]
         :param members: VPC后端实例列表。
         :type members: list[:class:`huaweicloudsdkapig.v2.MemberInfo`]
@@ -236,7 +236,7 @@ class VpcCreate:
     def member_groups(self):
         """Gets the member_groups of this VpcCreate.
 
-        VPC通道后端服务器组列表
+        VPC通道后端服务器组列表。当microservice_info中service_type为NACOS类型时，服务器组的权重不支持手动设置。
 
         :return: The member_groups of this VpcCreate.
         :rtype: list[:class:`huaweicloudsdkapig.v2.MemberGroupCreate`]
@@ -247,7 +247,7 @@ class VpcCreate:
     def member_groups(self, member_groups):
         """Sets the member_groups of this VpcCreate.
 
-        VPC通道后端服务器组列表
+        VPC通道后端服务器组列表。当microservice_info中service_type为NACOS类型时，服务器组的权重不支持手动设置。
 
         :param member_groups: The member_groups of this VpcCreate.
         :type member_groups: list[:class:`huaweicloudsdkapig.v2.MemberGroupCreate`]

@@ -33,7 +33,7 @@ class RuleHitCountObject:
 
         :param rule_id: 规则id
         :type rule_id: str
-        :param rule_hit_count: 规则击中次数
+        :param rule_hit_count: 规则击中次数，当acl规则被触发时，对应规则id的击中次数会添加一次。
         :type rule_hit_count: int
         """
         
@@ -74,7 +74,7 @@ class RuleHitCountObject:
     def rule_hit_count(self):
         """Gets the rule_hit_count of this RuleHitCountObject.
 
-        规则击中次数
+        规则击中次数，当acl规则被触发时，对应规则id的击中次数会添加一次。
 
         :return: The rule_hit_count of this RuleHitCountObject.
         :rtype: int
@@ -85,7 +85,7 @@ class RuleHitCountObject:
     def rule_hit_count(self, rule_hit_count):
         """Sets the rule_hit_count of this RuleHitCountObject.
 
-        规则击中次数
+        规则击中次数，当acl规则被触发时，对应规则id的击中次数会添加一次。
 
         :param rule_hit_count: The rule_hit_count of this RuleHitCountObject.
         :type rule_hit_count: int

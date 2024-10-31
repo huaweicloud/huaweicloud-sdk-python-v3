@@ -39,9 +39,9 @@ class BlackWhiteListResponseData:
         :type offset: int
         :param limit: 每页显示个数，范围为1-1024
         :type limit: int
-        :param total: 查询的总条数
+        :param total: 查询黑白名单总条数
         :type total: int
-        :param records: 黑白名单记录
+        :param records: 黑白名单列表
         :type records: list[:class:`huaweicloudsdkcfw.v1.BlackWhiteListResponseDataRecords`]
         """
         
@@ -110,7 +110,7 @@ class BlackWhiteListResponseData:
     def total(self):
         """Gets the total of this BlackWhiteListResponseData.
 
-        查询的总条数
+        查询黑白名单总条数
 
         :return: The total of this BlackWhiteListResponseData.
         :rtype: int
@@ -121,7 +121,7 @@ class BlackWhiteListResponseData:
     def total(self, total):
         """Sets the total of this BlackWhiteListResponseData.
 
-        查询的总条数
+        查询黑白名单总条数
 
         :param total: The total of this BlackWhiteListResponseData.
         :type total: int
@@ -132,7 +132,7 @@ class BlackWhiteListResponseData:
     def records(self):
         """Gets the records of this BlackWhiteListResponseData.
 
-        黑白名单记录
+        黑白名单列表
 
         :return: The records of this BlackWhiteListResponseData.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.BlackWhiteListResponseDataRecords`]
@@ -143,7 +143,7 @@ class BlackWhiteListResponseData:
     def records(self, records):
         """Sets the records of this BlackWhiteListResponseData.
 
-        黑白名单记录
+        黑白名单列表
 
         :param records: The records of this BlackWhiteListResponseData.
         :type records: list[:class:`huaweicloudsdkcfw.v1.BlackWhiteListResponseDataRecords`]

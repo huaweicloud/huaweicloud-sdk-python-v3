@@ -29,6 +29,10 @@ class CreatePremiumHostResponse(SdkResponse):
         'cipher': 'str',
         'extend': 'dict(str, str)',
         'flag': 'Flag',
+        'mode': 'str',
+        'loadbalancer_id': 'str',
+        'listener_id': 'str',
+        'protocol_port': 'int',
         'description': 'str',
         'policyid': 'str',
         'domainid': 'str',
@@ -52,6 +56,10 @@ class CreatePremiumHostResponse(SdkResponse):
         'cipher': 'cipher',
         'extend': 'extend',
         'flag': 'flag',
+        'mode': 'mode',
+        'loadbalancer_id': 'loadbalancer_id',
+        'listener_id': 'listener_id',
+        'protocol_port': 'protocol_port',
         'description': 'description',
         'policyid': 'policyid',
         'domainid': 'domainid',
@@ -63,7 +71,7 @@ class CreatePremiumHostResponse(SdkResponse):
         'forward_header_map': 'forward_header_map'
     }
 
-    def __init__(self, id=None, hostname=None, protocol=None, server=None, proxy=None, locked=None, timestamp=None, tls=None, cipher=None, extend=None, flag=None, description=None, policyid=None, domainid=None, projectid=None, enterprise_project_id=None, protect_status=None, access_status=None, block_page=None, forward_header_map=None):
+    def __init__(self, id=None, hostname=None, protocol=None, server=None, proxy=None, locked=None, timestamp=None, tls=None, cipher=None, extend=None, flag=None, mode=None, loadbalancer_id=None, listener_id=None, protocol_port=None, description=None, policyid=None, domainid=None, projectid=None, enterprise_project_id=None, protect_status=None, access_status=None, block_page=None, forward_header_map=None):
         """CreatePremiumHostResponse
 
         The model defined in huaweicloud sdk
@@ -90,6 +98,14 @@ class CreatePremiumHostResponse(SdkResponse):
         :type extend: dict(str, str)
         :param flag: 
         :type flag: :class:`huaweicloudsdkwaf.v1.Flag`
+        :param mode: 云模式elb接入域名返回此字段：elb-shared
+        :type mode: str
+        :param loadbalancer_id: 云模式elb接入域名返回此字段，表示负载均衡器（ELB）id
+        :type loadbalancer_id: str
+        :param listener_id: 云模式elb接入域名返回此字段，表示监听器id
+        :type listener_id: str
+        :param protocol_port: 云模式elb接入域名返回此字段， 表示业务端口
+        :type protocol_port: int
         :param description: 域名描述
         :type description: str
         :param policyid: 防护域名初始绑定的防护策略ID,可以通过策略名称调用查询防护策略列表（ListPolicy）接口查询到对应的策略id
@@ -123,6 +139,10 @@ class CreatePremiumHostResponse(SdkResponse):
         self._cipher = None
         self._extend = None
         self._flag = None
+        self._mode = None
+        self._loadbalancer_id = None
+        self._listener_id = None
+        self._protocol_port = None
         self._description = None
         self._policyid = None
         self._domainid = None
@@ -156,6 +176,14 @@ class CreatePremiumHostResponse(SdkResponse):
             self.extend = extend
         if flag is not None:
             self.flag = flag
+        if mode is not None:
+            self.mode = mode
+        if loadbalancer_id is not None:
+            self.loadbalancer_id = loadbalancer_id
+        if listener_id is not None:
+            self.listener_id = listener_id
+        if protocol_port is not None:
+            self.protocol_port = protocol_port
         if description is not None:
             self.description = description
         if policyid is not None:
@@ -412,6 +440,94 @@ class CreatePremiumHostResponse(SdkResponse):
         :type flag: :class:`huaweicloudsdkwaf.v1.Flag`
         """
         self._flag = flag
+
+    @property
+    def mode(self):
+        """Gets the mode of this CreatePremiumHostResponse.
+
+        云模式elb接入域名返回此字段：elb-shared
+
+        :return: The mode of this CreatePremiumHostResponse.
+        :rtype: str
+        """
+        return self._mode
+
+    @mode.setter
+    def mode(self, mode):
+        """Sets the mode of this CreatePremiumHostResponse.
+
+        云模式elb接入域名返回此字段：elb-shared
+
+        :param mode: The mode of this CreatePremiumHostResponse.
+        :type mode: str
+        """
+        self._mode = mode
+
+    @property
+    def loadbalancer_id(self):
+        """Gets the loadbalancer_id of this CreatePremiumHostResponse.
+
+        云模式elb接入域名返回此字段，表示负载均衡器（ELB）id
+
+        :return: The loadbalancer_id of this CreatePremiumHostResponse.
+        :rtype: str
+        """
+        return self._loadbalancer_id
+
+    @loadbalancer_id.setter
+    def loadbalancer_id(self, loadbalancer_id):
+        """Sets the loadbalancer_id of this CreatePremiumHostResponse.
+
+        云模式elb接入域名返回此字段，表示负载均衡器（ELB）id
+
+        :param loadbalancer_id: The loadbalancer_id of this CreatePremiumHostResponse.
+        :type loadbalancer_id: str
+        """
+        self._loadbalancer_id = loadbalancer_id
+
+    @property
+    def listener_id(self):
+        """Gets the listener_id of this CreatePremiumHostResponse.
+
+        云模式elb接入域名返回此字段，表示监听器id
+
+        :return: The listener_id of this CreatePremiumHostResponse.
+        :rtype: str
+        """
+        return self._listener_id
+
+    @listener_id.setter
+    def listener_id(self, listener_id):
+        """Sets the listener_id of this CreatePremiumHostResponse.
+
+        云模式elb接入域名返回此字段，表示监听器id
+
+        :param listener_id: The listener_id of this CreatePremiumHostResponse.
+        :type listener_id: str
+        """
+        self._listener_id = listener_id
+
+    @property
+    def protocol_port(self):
+        """Gets the protocol_port of this CreatePremiumHostResponse.
+
+        云模式elb接入域名返回此字段， 表示业务端口
+
+        :return: The protocol_port of this CreatePremiumHostResponse.
+        :rtype: int
+        """
+        return self._protocol_port
+
+    @protocol_port.setter
+    def protocol_port(self, protocol_port):
+        """Sets the protocol_port of this CreatePremiumHostResponse.
+
+        云模式elb接入域名返回此字段， 表示业务端口
+
+        :param protocol_port: The protocol_port of this CreatePremiumHostResponse.
+        :type protocol_port: int
+        """
+        self._protocol_port = protocol_port
 
     @property
     def description(self):

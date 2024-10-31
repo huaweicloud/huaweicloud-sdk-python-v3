@@ -39,7 +39,7 @@ class EipResponseData:
         :type limit: int
         :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
         :type offset: int
-        :param total: 总数
+        :param total: 查询获得EIP列表总数
         :type total: int
         :param records: eip资源记录
         :type records: list[:class:`huaweicloudsdkcfw.v1.EipResource`]
@@ -110,7 +110,7 @@ class EipResponseData:
     def total(self):
         """Gets the total of this EipResponseData.
 
-        总数
+        查询获得EIP列表总数
 
         :return: The total of this EipResponseData.
         :rtype: int
@@ -121,7 +121,7 @@ class EipResponseData:
     def total(self, total):
         """Sets the total of this EipResponseData.
 
-        总数
+        查询获得EIP列表总数
 
         :param total: The total of this EipResponseData.
         :type total: int

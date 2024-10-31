@@ -31,9 +31,9 @@ class CreateFirewallReqTags:
 
         The model defined in huaweicloud sdk
 
-        :param key: 标签KEY
+        :param key: 资源标签键
         :type key: str
-        :param value: 标签VALUE
+        :param value: 资源标签值
         :type value: str
         """
         
@@ -52,7 +52,7 @@ class CreateFirewallReqTags:
     def key(self):
         """Gets the key of this CreateFirewallReqTags.
 
-        标签KEY
+        资源标签键
 
         :return: The key of this CreateFirewallReqTags.
         :rtype: str
@@ -63,7 +63,7 @@ class CreateFirewallReqTags:
     def key(self, key):
         """Sets the key of this CreateFirewallReqTags.
 
-        标签KEY
+        资源标签键
 
         :param key: The key of this CreateFirewallReqTags.
         :type key: str
@@ -74,7 +74,7 @@ class CreateFirewallReqTags:
     def value(self):
         """Gets the value of this CreateFirewallReqTags.
 
-        标签VALUE
+        资源标签值
 
         :return: The value of this CreateFirewallReqTags.
         :rtype: str
@@ -85,7 +85,7 @@ class CreateFirewallReqTags:
     def value(self, value):
         """Sets the value of this CreateFirewallReqTags.
 
-        标签VALUE
+        资源标签值
 
         :param value: The value of this CreateFirewallReqTags.
         :type value: str

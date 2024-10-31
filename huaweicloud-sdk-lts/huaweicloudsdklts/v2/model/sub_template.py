@@ -18,15 +18,17 @@ class SubTemplate:
 
     openapi_types = {
         'sub_type': 'str',
-        'content': 'str'
+        'content': 'str',
+        'topic': 'str'
     }
 
     attribute_map = {
         'sub_type': 'sub_type',
-        'content': 'content'
+        'content': 'content',
+        'topic': 'topic'
     }
 
-    def __init__(self, sub_type=None, content=None):
+    def __init__(self, sub_type=None, content=None, topic=None):
         """SubTemplate
 
         The model defined in huaweicloud sdk
@@ -35,16 +37,21 @@ class SubTemplate:
         :type sub_type: str
         :param content: 子模版正文，$符号后所跟变量仅支持以下变量，根据不同告警类型（关键词告警和sql告警），所支持的变量亦不相同。 目前两种告警类型有共同变量如下：告警级别：${event_severity};发生时间：${starts_at};告警源：$event.metadata.resource_provider;资源类型：$event.metadata.resource_type;资源标识：${resources};统计类型：关键词统计;表达式：$event.annotations.condition_expression;当前值: $event.annotations.current_value;统计周期：$event.annotations.frequency; 关键词告警特有变量：查询时间：$event.annotations.results[0].time;查询日志：$event.annotations.results[0].raw_results; sql告警特有变量：日志组/流名称：$event.annotations.results[0].resource_id;查询语句：$event.annotations.results[0].sql;查询时间：$event.annotations.results[0].time;查询URL：$event.annotations.results[0].url;查询日志：$event.annotations.results[0].raw_results; 变量后面的分号\&quot;;\&quot;为英文符号，必须添加，否则模板会出现替换失败的情况
         :type content: str
+        :param topic: 邮件主题,只有sub_type&#x3D;email时生效
+        :type topic: str
         """
         
         
 
         self._sub_type = None
         self._content = None
+        self._topic = None
         self.discriminator = None
 
         self.sub_type = sub_type
         self.content = content
+        if topic is not None:
+            self.topic = topic
 
     @property
     def sub_type(self):
@@ -89,6 +96,28 @@ class SubTemplate:
         :type content: str
         """
         self._content = content
+
+    @property
+    def topic(self):
+        """Gets the topic of this SubTemplate.
+
+        邮件主题,只有sub_type=email时生效
+
+        :return: The topic of this SubTemplate.
+        :rtype: str
+        """
+        return self._topic
+
+    @topic.setter
+    def topic(self, topic):
+        """Sets the topic of this SubTemplate.
+
+        邮件主题,只有sub_type=email时生效
+
+        :param topic: The topic of this SubTemplate.
+        :type topic: str
+        """
+        self._topic = topic
 
     def to_dict(self):
         """Returns the model properties as a dict"""

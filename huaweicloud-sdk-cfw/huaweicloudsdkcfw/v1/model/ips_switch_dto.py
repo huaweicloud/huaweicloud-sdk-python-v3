@@ -33,11 +33,11 @@ class IpsSwitchDTO:
 
         The model defined in huaweicloud sdk
 
-        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。
+        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。此处仅取type为0的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
         :type object_id: str
         :param ips_type: 补丁类型，仅支持虚拟补丁，值为2。
         :type ips_type: int
-        :param status: ips特性开关状态
+        :param status: ips特性开关状态，0表示关闭，1表示开启
         :type status: int
         """
         
@@ -56,7 +56,7 @@ class IpsSwitchDTO:
     def object_id(self):
         """Gets the object_id of this IpsSwitchDTO.
 
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。
+        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。此处仅取type为0的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
 
         :return: The object_id of this IpsSwitchDTO.
         :rtype: str
@@ -67,7 +67,7 @@ class IpsSwitchDTO:
     def object_id(self, object_id):
         """Sets the object_id of this IpsSwitchDTO.
 
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。
+        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。此处仅取type为0的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
 
         :param object_id: The object_id of this IpsSwitchDTO.
         :type object_id: str
@@ -100,7 +100,7 @@ class IpsSwitchDTO:
     def status(self):
         """Gets the status of this IpsSwitchDTO.
 
-        ips特性开关状态
+        ips特性开关状态，0表示关闭，1表示开启
 
         :return: The status of this IpsSwitchDTO.
         :rtype: int
@@ -111,7 +111,7 @@ class IpsSwitchDTO:
     def status(self, status):
         """Sets the status of this IpsSwitchDTO.
 
-        ips特性开关状态
+        ips特性开关状态，0表示关闭，1表示开启
 
         :param status: The status of this IpsSwitchDTO.
         :type status: int

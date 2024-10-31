@@ -137,6 +137,8 @@ from huaweicloudsdklts.v2.model.delete_transfer_response import DeleteTransferRe
 from huaweicloudsdklts.v2.model.deletefavorite_request import DeletefavoriteRequest
 from huaweicloudsdklts.v2.model.deletefavorite_response import DeletefavoriteResponse
 from huaweicloudsdklts.v2.model.demo_field import DemoField
+from huaweicloudsdklts.v2.model.demo_field_access import DemoFieldAccess
+from huaweicloudsdklts.v2.model.detail import Detail
 from huaweicloudsdklts.v2.model.disable_log_collection_request import DisableLogCollectionRequest
 from huaweicloudsdklts.v2.model.disable_log_collection_response import DisableLogCollectionResponse
 from huaweicloudsdklts.v2.model.enable_log_collection_request import EnableLogCollectionRequest
@@ -233,6 +235,7 @@ from huaweicloudsdklts.v2.model.page_info import PageInfo
 from huaweicloudsdklts.v2.model.preview_agency_log_access_req_body import PreviewAgencyLogAccessReqBody
 from huaweicloudsdklts.v2.model.preview_agency_log_access_req_list_body import PreviewAgencyLogAccessReqListBody
 from huaweicloudsdklts.v2.model.preview_template_body import PreviewTemplateBody
+from huaweicloudsdklts.v2.model.processor import Processor
 from huaweicloudsdklts.v2.model.quert_history_sql_results_body import QuertHistorySQLResultsBody
 from huaweicloudsdklts.v2.model.query_log_key_word_count_request_body import QueryLogKeyWordCountRequestBody
 from huaweicloudsdklts.v2.model.query_lts_log_params import QueryLtsLogParams

@@ -33,11 +33,11 @@ class ResourceTag:
 
         The model defined in huaweicloud sdk
 
-        :param key: 键
+        :param key: 标签键
         :type key: str
-        :param value: 值
+        :param value: 标签值
         :type value: str
-        :param update_time: 更新时间
+        :param update_time: 标签更新时间
         :type update_time: str
         """
         
@@ -59,7 +59,7 @@ class ResourceTag:
     def key(self):
         """Gets the key of this ResourceTag.
 
-        键
+        标签键
 
         :return: The key of this ResourceTag.
         :rtype: str
@@ -70,7 +70,7 @@ class ResourceTag:
     def key(self, key):
         """Sets the key of this ResourceTag.
 
-        键
+        标签键
 
         :param key: The key of this ResourceTag.
         :type key: str
@@ -81,7 +81,7 @@ class ResourceTag:
     def value(self):
         """Gets the value of this ResourceTag.
 
-        值
+        标签值
 
         :return: The value of this ResourceTag.
         :rtype: str
@@ -92,7 +92,7 @@ class ResourceTag:
     def value(self, value):
         """Sets the value of this ResourceTag.
 
-        值
+        标签值
 
         :param value: The value of this ResourceTag.
         :type value: str
@@ -103,7 +103,7 @@ class ResourceTag:
     def update_time(self):
         """Gets the update_time of this ResourceTag.
 
-        更新时间
+        标签更新时间
 
         :return: The update_time of this ResourceTag.
         :rtype: str
@@ -114,7 +114,7 @@ class ResourceTag:
     def update_time(self, update_time):
         """Sets the update_time of this ResourceTag.
 
-        更新时间
+        标签更新时间
 
         :param update_time: The update_time of this ResourceTag.
         :type update_time: str

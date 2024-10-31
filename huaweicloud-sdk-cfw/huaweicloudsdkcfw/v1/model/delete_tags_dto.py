@@ -29,7 +29,7 @@ class DeleteTagsDto:
 
         The model defined in huaweicloud sdk
 
-        :param tags: 标签列表
+        :param tags: 防火墙标签列表
         :type tags: list[:class:`huaweicloudsdkcfw.v1.ResourceTag`]
         """
         
@@ -45,7 +45,7 @@ class DeleteTagsDto:
     def tags(self):
         """Gets the tags of this DeleteTagsDto.
 
-        标签列表
+        防火墙标签列表
 
         :return: The tags of this DeleteTagsDto.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.ResourceTag`]
@@ -56,7 +56,7 @@ class DeleteTagsDto:
     def tags(self, tags):
         """Sets the tags of this DeleteTagsDto.
 
-        标签列表
+        防火墙标签列表
 
         :param tags: The tags of this DeleteTagsDto.
         :type tags: list[:class:`huaweicloudsdkcfw.v1.ResourceTag`]

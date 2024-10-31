@@ -37,11 +37,11 @@ class CaptureResultUrlVO:
 
         The model defined in huaweicloud sdk
 
-        :param captcha: 下载链接提取码
+        :param captcha: 下载链接提取码，用于打开下载链接时使用。
         :type captcha: str
         :param expires: 下载链接过期时间
         :type expires: int
-        :param file_list: 抓包文件列表
+        :param file_list: 抓包文件列表，当环境不支持obs文件夹分享时使用。当此字段存在时，无captch，expires，url返回值。
         :type file_list: list[:class:`huaweicloudsdkcfw.v1.CaptureFile`]
         :param request_header: 
         :type request_header: :class:`huaweicloudsdkcfw.v1.HostHeaderInfo`
@@ -73,7 +73,7 @@ class CaptureResultUrlVO:
     def captcha(self):
         """Gets the captcha of this CaptureResultUrlVO.
 
-        下载链接提取码
+        下载链接提取码，用于打开下载链接时使用。
 
         :return: The captcha of this CaptureResultUrlVO.
         :rtype: str
@@ -84,7 +84,7 @@ class CaptureResultUrlVO:
     def captcha(self, captcha):
         """Sets the captcha of this CaptureResultUrlVO.
 
-        下载链接提取码
+        下载链接提取码，用于打开下载链接时使用。
 
         :param captcha: The captcha of this CaptureResultUrlVO.
         :type captcha: str
@@ -117,7 +117,7 @@ class CaptureResultUrlVO:
     def file_list(self):
         """Gets the file_list of this CaptureResultUrlVO.
 
-        抓包文件列表
+        抓包文件列表，当环境不支持obs文件夹分享时使用。当此字段存在时，无captch，expires，url返回值。
 
         :return: The file_list of this CaptureResultUrlVO.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.CaptureFile`]
@@ -128,7 +128,7 @@ class CaptureResultUrlVO:
     def file_list(self, file_list):
         """Sets the file_list of this CaptureResultUrlVO.
 
-        抓包文件列表
+        抓包文件列表，当环境不支持obs文件夹分享时使用。当此字段存在时，无captch，expires，url返回值。
 
         :param file_list: The file_list of this CaptureResultUrlVO.
         :type file_list: list[:class:`huaweicloudsdkcfw.v1.CaptureFile`]

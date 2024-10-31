@@ -33,11 +33,11 @@ class TagsVO:
 
         The model defined in huaweicloud sdk
 
-        :param tag_id: 标签id
+        :param tag_id: 规则id
         :type tag_id: str
-        :param tag_key: 标签键
+        :param tag_key: 规则标签键
         :type tag_key: str
-        :param tag_value: 标签值
+        :param tag_value: 规则标签值
         :type tag_value: str
         """
         
@@ -59,7 +59,7 @@ class TagsVO:
     def tag_id(self):
         """Gets the tag_id of this TagsVO.
 
-        标签id
+        规则id
 
         :return: The tag_id of this TagsVO.
         :rtype: str
@@ -70,7 +70,7 @@ class TagsVO:
     def tag_id(self, tag_id):
         """Sets the tag_id of this TagsVO.
 
-        标签id
+        规则id
 
         :param tag_id: The tag_id of this TagsVO.
         :type tag_id: str
@@ -81,7 +81,7 @@ class TagsVO:
     def tag_key(self):
         """Gets the tag_key of this TagsVO.
 
-        标签键
+        规则标签键
 
         :return: The tag_key of this TagsVO.
         :rtype: str
@@ -92,7 +92,7 @@ class TagsVO:
     def tag_key(self, tag_key):
         """Sets the tag_key of this TagsVO.
 
-        标签键
+        规则标签键
 
         :param tag_key: The tag_key of this TagsVO.
         :type tag_key: str
@@ -103,7 +103,7 @@ class TagsVO:
     def tag_value(self):
         """Gets the tag_value of this TagsVO.
 
-        标签值
+        规则标签值
 
         :return: The tag_value of this TagsVO.
         :rtype: str
@@ -114,7 +114,7 @@ class TagsVO:
     def tag_value(self, tag_value):
         """Sets the tag_value of this TagsVO.
 
-        标签值
+        规则标签值
 
         :param tag_value: The tag_value of this TagsVO.
         :type tag_value: str

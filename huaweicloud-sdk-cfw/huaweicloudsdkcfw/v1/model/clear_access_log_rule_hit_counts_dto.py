@@ -29,7 +29,7 @@ class ClearAccessLogRuleHitCountsDto:
 
         The model defined in huaweicloud sdk
 
-        :param rule_ids: 规则id列表
+        :param rule_ids: 删除规则击中次数请求的规则列表，规则id可通过[查询防护规则接口](ListAclRules.xml)查询获得，通过返回值中的data.records.rule_id（.表示各对象之间层级的区分）获得。
         :type rule_ids: list[str]
         """
         
@@ -44,7 +44,7 @@ class ClearAccessLogRuleHitCountsDto:
     def rule_ids(self):
         """Gets the rule_ids of this ClearAccessLogRuleHitCountsDto.
 
-        规则id列表
+        删除规则击中次数请求的规则列表，规则id可通过[查询防护规则接口](ListAclRules.xml)查询获得，通过返回值中的data.records.rule_id（.表示各对象之间层级的区分）获得。
 
         :return: The rule_ids of this ClearAccessLogRuleHitCountsDto.
         :rtype: list[str]
@@ -55,7 +55,7 @@ class ClearAccessLogRuleHitCountsDto:
     def rule_ids(self, rule_ids):
         """Sets the rule_ids of this ClearAccessLogRuleHitCountsDto.
 
-        规则id列表
+        删除规则击中次数请求的规则列表，规则id可通过[查询防护规则接口](ListAclRules.xml)查询获得，通过返回值中的data.records.rule_id（.表示各对象之间层级的区分）获得。
 
         :param rule_ids: The rule_ids of this ClearAccessLogRuleHitCountsDto.
         :type rule_ids: list[str]

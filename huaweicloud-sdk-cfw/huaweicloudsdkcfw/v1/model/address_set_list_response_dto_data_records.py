@@ -20,41 +20,41 @@ class AddressSetListResponseDTODataRecords:
         'set_id': 'str',
         'ref_count': 'int',
         'description': 'str',
-        'name': 'str',
         'address_type': 'int',
         'object_id': 'str',
-        'address_set_type': 'int'
+        'address_set_type': 'int',
+        'name': 'str'
     }
 
     attribute_map = {
         'set_id': 'set_id',
         'ref_count': 'ref_count',
         'description': 'description',
-        'name': 'name',
         'address_type': 'address_type',
         'object_id': 'object_id',
-        'address_set_type': 'address_set_type'
+        'address_set_type': 'address_set_type',
+        'name': 'name'
     }
 
-    def __init__(self, set_id=None, ref_count=None, description=None, name=None, address_type=None, object_id=None, address_set_type=None):
+    def __init__(self, set_id=None, ref_count=None, description=None, address_type=None, object_id=None, address_set_type=None, name=None):
         """AddressSetListResponseDTODataRecords
 
         The model defined in huaweicloud sdk
 
         :param set_id: 地址组id
         :type set_id: str
-        :param ref_count: 引用次数
+        :param ref_count: 地址组被规则引用次数
         :type ref_count: int
         :param description: 描述信息
         :type description: str
-        :param name: 地址组名称
-        :type name: str
-        :param address_type: 地址类型0 ipv4,1 ipv6
+        :param address_type: 地址类型0 ipv4，1 ipv6
         :type address_type: int
-        :param object_id: 互联网边界防护对象id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，type为0的为互联网边界防护对象id。
+        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
         :type object_id: str
         :param address_set_type: 地址组类型，0表示自定义地址组，1表示WAF回源IP地址组，2表示DDoS回源IP地址组，3表示NAT64转换地址组
         :type address_set_type: int
+        :param name: 地址组名称
+        :type name: str
         """
         
         
@@ -62,10 +62,10 @@ class AddressSetListResponseDTODataRecords:
         self._set_id = None
         self._ref_count = None
         self._description = None
-        self._name = None
         self._address_type = None
         self._object_id = None
         self._address_set_type = None
+        self._name = None
         self.discriminator = None
 
         if set_id is not None:
@@ -74,14 +74,14 @@ class AddressSetListResponseDTODataRecords:
             self.ref_count = ref_count
         if description is not None:
             self.description = description
-        if name is not None:
-            self.name = name
         if address_type is not None:
             self.address_type = address_type
         if object_id is not None:
             self.object_id = object_id
         if address_set_type is not None:
             self.address_set_type = address_set_type
+        if name is not None:
+            self.name = name
 
     @property
     def set_id(self):
@@ -109,7 +109,7 @@ class AddressSetListResponseDTODataRecords:
     def ref_count(self):
         """Gets the ref_count of this AddressSetListResponseDTODataRecords.
 
-        引用次数
+        地址组被规则引用次数
 
         :return: The ref_count of this AddressSetListResponseDTODataRecords.
         :rtype: int
@@ -120,7 +120,7 @@ class AddressSetListResponseDTODataRecords:
     def ref_count(self, ref_count):
         """Sets the ref_count of this AddressSetListResponseDTODataRecords.
 
-        引用次数
+        地址组被规则引用次数
 
         :param ref_count: The ref_count of this AddressSetListResponseDTODataRecords.
         :type ref_count: int
@@ -150,32 +150,10 @@ class AddressSetListResponseDTODataRecords:
         self._description = description
 
     @property
-    def name(self):
-        """Gets the name of this AddressSetListResponseDTODataRecords.
-
-        地址组名称
-
-        :return: The name of this AddressSetListResponseDTODataRecords.
-        :rtype: str
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        """Sets the name of this AddressSetListResponseDTODataRecords.
-
-        地址组名称
-
-        :param name: The name of this AddressSetListResponseDTODataRecords.
-        :type name: str
-        """
-        self._name = name
-
-    @property
     def address_type(self):
         """Gets the address_type of this AddressSetListResponseDTODataRecords.
 
-        地址类型0 ipv4,1 ipv6
+        地址类型0 ipv4，1 ipv6
 
         :return: The address_type of this AddressSetListResponseDTODataRecords.
         :rtype: int
@@ -186,7 +164,7 @@ class AddressSetListResponseDTODataRecords:
     def address_type(self, address_type):
         """Sets the address_type of this AddressSetListResponseDTODataRecords.
 
-        地址类型0 ipv4,1 ipv6
+        地址类型0 ipv4，1 ipv6
 
         :param address_type: The address_type of this AddressSetListResponseDTODataRecords.
         :type address_type: int
@@ -197,7 +175,7 @@ class AddressSetListResponseDTODataRecords:
     def object_id(self):
         """Gets the object_id of this AddressSetListResponseDTODataRecords.
 
-        互联网边界防护对象id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，type为0的为互联网边界防护对象id。
+        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
 
         :return: The object_id of this AddressSetListResponseDTODataRecords.
         :rtype: str
@@ -208,7 +186,7 @@ class AddressSetListResponseDTODataRecords:
     def object_id(self, object_id):
         """Sets the object_id of this AddressSetListResponseDTODataRecords.
 
-        互联网边界防护对象id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，type为0的为互联网边界防护对象id。
+        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
 
         :param object_id: The object_id of this AddressSetListResponseDTODataRecords.
         :type object_id: str
@@ -236,6 +214,28 @@ class AddressSetListResponseDTODataRecords:
         :type address_set_type: int
         """
         self._address_set_type = address_set_type
+
+    @property
+    def name(self):
+        """Gets the name of this AddressSetListResponseDTODataRecords.
+
+        地址组名称
+
+        :return: The name of this AddressSetListResponseDTODataRecords.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this AddressSetListResponseDTODataRecords.
+
+        地址组名称
+
+        :param name: The name of this AddressSetListResponseDTODataRecords.
+        :type name: str
+        """
+        self._name = name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

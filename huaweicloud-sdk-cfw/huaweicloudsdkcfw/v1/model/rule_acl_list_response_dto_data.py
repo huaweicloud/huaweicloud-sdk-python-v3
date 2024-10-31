@@ -41,11 +41,11 @@ class RuleAclListResponseDTOData:
         :type offset: int
         :param limit: 每页显示个数，范围为1-1024
         :type limit: int
-        :param total: 查询总条数
+        :param total: 查询规则列表总条数
         :type total: int
         :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。
         :type object_id: str
-        :param records: records
+        :param records: 查询规则列表记录
         :type records: list[:class:`huaweicloudsdkcfw.v1.RuleAclListResponseDTODataRecords`]
         """
         
@@ -117,7 +117,7 @@ class RuleAclListResponseDTOData:
     def total(self):
         """Gets the total of this RuleAclListResponseDTOData.
 
-        查询总条数
+        查询规则列表总条数
 
         :return: The total of this RuleAclListResponseDTOData.
         :rtype: int
@@ -128,7 +128,7 @@ class RuleAclListResponseDTOData:
     def total(self, total):
         """Sets the total of this RuleAclListResponseDTOData.
 
-        查询总条数
+        查询规则列表总条数
 
         :param total: The total of this RuleAclListResponseDTOData.
         :type total: int
@@ -161,7 +161,7 @@ class RuleAclListResponseDTOData:
     def records(self):
         """Gets the records of this RuleAclListResponseDTOData.
 
-        records
+        查询规则列表记录
 
         :return: The records of this RuleAclListResponseDTOData.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.RuleAclListResponseDTODataRecords`]
@@ -172,7 +172,7 @@ class RuleAclListResponseDTOData:
     def records(self, records):
         """Sets the records of this RuleAclListResponseDTOData.
 
-        records
+        查询规则列表记录
 
         :param records: The records of this RuleAclListResponseDTOData.
         :type records: list[:class:`huaweicloudsdkcfw.v1.RuleAclListResponseDTODataRecords`]

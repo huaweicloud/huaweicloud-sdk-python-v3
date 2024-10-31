@@ -26,7 +26,8 @@ class ListPluginAttachableApisRequest:
         'api_id': 'str',
         'group_id': 'str',
         'req_method': 'str',
-        'req_uri': 'str'
+        'req_uri': 'str',
+        'tags': 'str'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class ListPluginAttachableApisRequest:
         'api_id': 'api_id',
         'group_id': 'group_id',
         'req_method': 'req_method',
-        'req_uri': 'req_uri'
+        'req_uri': 'req_uri',
+        'tags': 'tags'
     }
 
-    def __init__(self, instance_id=None, offset=None, limit=None, plugin_id=None, env_id=None, api_name=None, api_id=None, group_id=None, req_method=None, req_uri=None):
+    def __init__(self, instance_id=None, offset=None, limit=None, plugin_id=None, env_id=None, api_name=None, api_id=None, group_id=None, req_method=None, req_uri=None, tags=None):
         """ListPluginAttachableApisRequest
 
         The model defined in huaweicloud sdk
@@ -67,6 +69,8 @@ class ListPluginAttachableApisRequest:
         :type req_method: str
         :param req_uri: 请求路径
         :type req_uri: str
+        :param tags: API标签，该参数可指定多个，多个不同的参数值为或关系；不指定或为空时，表示不筛选标签；指定为#no_tags#时，表示筛选无标签API。
+        :type tags: str
         """
         
         
@@ -81,6 +85,7 @@ class ListPluginAttachableApisRequest:
         self._group_id = None
         self._req_method = None
         self._req_uri = None
+        self._tags = None
         self.discriminator = None
 
         self.instance_id = instance_id
@@ -100,6 +105,8 @@ class ListPluginAttachableApisRequest:
             self.req_method = req_method
         if req_uri is not None:
             self.req_uri = req_uri
+        if tags is not None:
+            self.tags = tags
 
     @property
     def instance_id(self):
@@ -320,6 +327,28 @@ class ListPluginAttachableApisRequest:
         :type req_uri: str
         """
         self._req_uri = req_uri
+
+    @property
+    def tags(self):
+        """Gets the tags of this ListPluginAttachableApisRequest.
+
+        API标签，该参数可指定多个，多个不同的参数值为或关系；不指定或为空时，表示不筛选标签；指定为#no_tags#时，表示筛选无标签API。
+
+        :return: The tags of this ListPluginAttachableApisRequest.
+        :rtype: str
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this ListPluginAttachableApisRequest.
+
+        API标签，该参数可指定多个，多个不同的参数值为或关系；不指定或为空时，表示不筛选标签；指定为#no_tags#时，表示筛选无标签API。
+
+        :param tags: The tags of this ListPluginAttachableApisRequest.
+        :type tags: str
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

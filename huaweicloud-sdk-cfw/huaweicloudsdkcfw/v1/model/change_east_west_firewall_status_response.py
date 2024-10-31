@@ -18,43 +18,36 @@ class ChangeEastWestFirewallStatusResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'SuccessRspData',
-        'trace_id': 'str'
+        'data': 'ChangeEastWestFirewallStatusResponseData'
     }
 
     attribute_map = {
-        'data': 'data',
-        'trace_id': 'trace_id'
+        'data': 'data'
     }
 
-    def __init__(self, data=None, trace_id=None):
+    def __init__(self, data=None):
         """ChangeEastWestFirewallStatusResponse
 
         The model defined in huaweicloud sdk
 
         :param data: 
-        :type data: :class:`huaweicloudsdkcfw.v1.SuccessRspData`
-        :param trace_id: trace id
-        :type trace_id: str
+        :type data: :class:`huaweicloudsdkcfw.v1.ChangeEastWestFirewallStatusResponseData`
         """
         
         super(ChangeEastWestFirewallStatusResponse, self).__init__()
 
         self._data = None
-        self._trace_id = None
         self.discriminator = None
 
         if data is not None:
             self.data = data
-        if trace_id is not None:
-            self.trace_id = trace_id
 
     @property
     def data(self):
         """Gets the data of this ChangeEastWestFirewallStatusResponse.
 
         :return: The data of this ChangeEastWestFirewallStatusResponse.
-        :rtype: :class:`huaweicloudsdkcfw.v1.SuccessRspData`
+        :rtype: :class:`huaweicloudsdkcfw.v1.ChangeEastWestFirewallStatusResponseData`
         """
         return self._data
 
@@ -63,31 +56,9 @@ class ChangeEastWestFirewallStatusResponse(SdkResponse):
         """Sets the data of this ChangeEastWestFirewallStatusResponse.
 
         :param data: The data of this ChangeEastWestFirewallStatusResponse.
-        :type data: :class:`huaweicloudsdkcfw.v1.SuccessRspData`
+        :type data: :class:`huaweicloudsdkcfw.v1.ChangeEastWestFirewallStatusResponseData`
         """
         self._data = data
-
-    @property
-    def trace_id(self):
-        """Gets the trace_id of this ChangeEastWestFirewallStatusResponse.
-
-        trace id
-
-        :return: The trace_id of this ChangeEastWestFirewallStatusResponse.
-        :rtype: str
-        """
-        return self._trace_id
-
-    @trace_id.setter
-    def trace_id(self, trace_id):
-        """Sets the trace_id of this ChangeEastWestFirewallStatusResponse.
-
-        trace id
-
-        :param trace_id: The trace_id of this ChangeEastWestFirewallStatusResponse.
-        :type trace_id: str
-        """
-        self._trace_id = trace_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

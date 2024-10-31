@@ -31,9 +31,9 @@ class UpdateDnsServersRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param dns_server: DNS服务器
+        :param dns_server: DNS服务器列表
         :type dns_server: list[:class:`huaweicloudsdkcfw.v1.UpdateDnsServersRequestBodyDnsServer`]
-        :param health_check_domain_name: 健康检查域名
+        :param health_check_domain_name: 健康检查域名，可通过[查询dns服务器列表接口](ListDnsServers.xml)查询获得，通过返回值中的data.health_check_domain_name（.表示各对象之间层级的区分）获得。
         :type health_check_domain_name: str
         """
         
@@ -51,7 +51,7 @@ class UpdateDnsServersRequestBody:
     def dns_server(self):
         """Gets the dns_server of this UpdateDnsServersRequestBody.
 
-        DNS服务器
+        DNS服务器列表
 
         :return: The dns_server of this UpdateDnsServersRequestBody.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.UpdateDnsServersRequestBodyDnsServer`]
@@ -62,7 +62,7 @@ class UpdateDnsServersRequestBody:
     def dns_server(self, dns_server):
         """Sets the dns_server of this UpdateDnsServersRequestBody.
 
-        DNS服务器
+        DNS服务器列表
 
         :param dns_server: The dns_server of this UpdateDnsServersRequestBody.
         :type dns_server: list[:class:`huaweicloudsdkcfw.v1.UpdateDnsServersRequestBodyDnsServer`]
@@ -73,7 +73,7 @@ class UpdateDnsServersRequestBody:
     def health_check_domain_name(self):
         """Gets the health_check_domain_name of this UpdateDnsServersRequestBody.
 
-        健康检查域名
+        健康检查域名，可通过[查询dns服务器列表接口](ListDnsServers.xml)查询获得，通过返回值中的data.health_check_domain_name（.表示各对象之间层级的区分）获得。
 
         :return: The health_check_domain_name of this UpdateDnsServersRequestBody.
         :rtype: str
@@ -84,7 +84,7 @@ class UpdateDnsServersRequestBody:
     def health_check_domain_name(self, health_check_domain_name):
         """Sets the health_check_domain_name of this UpdateDnsServersRequestBody.
 
-        健康检查域名
+        健康检查域名，可通过[查询dns服务器列表接口](ListDnsServers.xml)查询获得，通过返回值中的data.health_check_domain_name（.表示各对象之间层级的区分）获得。
 
         :param health_check_domain_name: The health_check_domain_name of this UpdateDnsServersRequestBody.
         :type health_check_domain_name: str

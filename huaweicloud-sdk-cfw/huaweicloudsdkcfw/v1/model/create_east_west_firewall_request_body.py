@@ -33,9 +33,9 @@ class CreateEastWestFirewallRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param er_id: 出方向关联ER实例id
+        :param er_id: 出方向关联ER ID,可通过ER服务查询企业路由器列表接口获得，返回值中instances.id即为erid（.表示各对象之间层级的区分）
         :type er_id: str
-        :param inspection_cidr: inspection cidr
+        :param inspection_cidr: 创建引流VPC时使用的网段
         :type inspection_cidr: str
         :param mode: 东西向防火墙模式，填写er
         :type mode: str
@@ -48,8 +48,7 @@ class CreateEastWestFirewallRequestBody:
         self._mode = None
         self.discriminator = None
 
-        if er_id is not None:
-            self.er_id = er_id
+        self.er_id = er_id
         self.inspection_cidr = inspection_cidr
         self.mode = mode
 
@@ -57,7 +56,7 @@ class CreateEastWestFirewallRequestBody:
     def er_id(self):
         """Gets the er_id of this CreateEastWestFirewallRequestBody.
 
-        出方向关联ER实例id
+        出方向关联ER ID,可通过ER服务查询企业路由器列表接口获得，返回值中instances.id即为erid（.表示各对象之间层级的区分）
 
         :return: The er_id of this CreateEastWestFirewallRequestBody.
         :rtype: str
@@ -68,7 +67,7 @@ class CreateEastWestFirewallRequestBody:
     def er_id(self, er_id):
         """Sets the er_id of this CreateEastWestFirewallRequestBody.
 
-        出方向关联ER实例id
+        出方向关联ER ID,可通过ER服务查询企业路由器列表接口获得，返回值中instances.id即为erid（.表示各对象之间层级的区分）
 
         :param er_id: The er_id of this CreateEastWestFirewallRequestBody.
         :type er_id: str
@@ -79,7 +78,7 @@ class CreateEastWestFirewallRequestBody:
     def inspection_cidr(self):
         """Gets the inspection_cidr of this CreateEastWestFirewallRequestBody.
 
-        inspection cidr
+        创建引流VPC时使用的网段
 
         :return: The inspection_cidr of this CreateEastWestFirewallRequestBody.
         :rtype: str
@@ -90,7 +89,7 @@ class CreateEastWestFirewallRequestBody:
     def inspection_cidr(self, inspection_cidr):
         """Sets the inspection_cidr of this CreateEastWestFirewallRequestBody.
 
-        inspection cidr
+        创建引流VPC时使用的网段
 
         :param inspection_cidr: The inspection_cidr of this CreateEastWestFirewallRequestBody.
         :type inspection_cidr: str

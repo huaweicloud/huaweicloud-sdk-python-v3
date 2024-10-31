@@ -43,9 +43,9 @@ class ListAddressItemsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param set_id: 地址组id
+        :param set_id: 地址组id，可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
         :type set_id: str
-        :param key_word: 关键字
+        :param key_word: 关键字，包括地址组成员名称或描述的一部分
         :type key_word: str
         :param limit: 每页显示个数，范围为1-1024
         :type limit: int
@@ -53,9 +53,9 @@ class ListAddressItemsRequest:
         :type offset: int
         :param address: ip地址
         :type address: str
-        :param enterprise_project_id: 企业项目id，用户支持企业项目后，由企业项目生成的id。
+        :param enterprise_project_id: 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
         :type enterprise_project_id: str
-        :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，默认情况下，fw_instance_Id为空时，返回账号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
+        :param fw_instance_id: 防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
         :type fw_instance_id: str
         :param query_address_set_type: 查询地址组类型，0表示自定义地址组，1表示预定义地址组
         :type query_address_set_type: int
@@ -91,7 +91,7 @@ class ListAddressItemsRequest:
     def set_id(self):
         """Gets the set_id of this ListAddressItemsRequest.
 
-        地址组id
+        地址组id，可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
         :return: The set_id of this ListAddressItemsRequest.
         :rtype: str
@@ -102,7 +102,7 @@ class ListAddressItemsRequest:
     def set_id(self, set_id):
         """Sets the set_id of this ListAddressItemsRequest.
 
-        地址组id
+        地址组id，可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
         :param set_id: The set_id of this ListAddressItemsRequest.
         :type set_id: str
@@ -113,7 +113,7 @@ class ListAddressItemsRequest:
     def key_word(self):
         """Gets the key_word of this ListAddressItemsRequest.
 
-        关键字
+        关键字，包括地址组成员名称或描述的一部分
 
         :return: The key_word of this ListAddressItemsRequest.
         :rtype: str
@@ -124,7 +124,7 @@ class ListAddressItemsRequest:
     def key_word(self, key_word):
         """Sets the key_word of this ListAddressItemsRequest.
 
-        关键字
+        关键字，包括地址组成员名称或描述的一部分
 
         :param key_word: The key_word of this ListAddressItemsRequest.
         :type key_word: str
@@ -201,7 +201,7 @@ class ListAddressItemsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListAddressItemsRequest.
 
-        企业项目id，用户支持企业项目后，由企业项目生成的id。
+        企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
         :return: The enterprise_project_id of this ListAddressItemsRequest.
         :rtype: str
@@ -212,7 +212,7 @@ class ListAddressItemsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListAddressItemsRequest.
 
-        企业项目id，用户支持企业项目后，由企业项目生成的id。
+        企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
         :param enterprise_project_id: The enterprise_project_id of this ListAddressItemsRequest.
         :type enterprise_project_id: str
@@ -223,7 +223,7 @@ class ListAddressItemsRequest:
     def fw_instance_id(self):
         """Gets the fw_instance_id of this ListAddressItemsRequest.
 
-        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，默认情况下，fw_instance_Id为空时，返回账号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
+        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
         :return: The fw_instance_id of this ListAddressItemsRequest.
         :rtype: str
@@ -234,7 +234,7 @@ class ListAddressItemsRequest:
     def fw_instance_id(self, fw_instance_id):
         """Sets the fw_instance_id of this ListAddressItemsRequest.
 
-        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，默认情况下，fw_instance_Id为空时，返回账号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
+        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
         :param fw_instance_id: The fw_instance_id of this ListAddressItemsRequest.
         :type fw_instance_id: str

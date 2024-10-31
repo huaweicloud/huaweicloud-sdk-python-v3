@@ -33,9 +33,9 @@ class UpdateLogConfigRequest:
 
         The model defined in huaweicloud sdk
 
-        :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)。
+        :param fw_instance_id: 防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取(ListFirewallDetail.xml)。
         :type fw_instance_id: str
-        :param enterprise_project_id: 企业项目id，用户支持企业项目后，由企业项目生成的id。
+        :param enterprise_project_id: 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
         :type enterprise_project_id: str
         :param body: Body of the UpdateLogConfigRequest
         :type body: :class:`huaweicloudsdkcfw.v1.LogConfigDto`
@@ -58,7 +58,7 @@ class UpdateLogConfigRequest:
     def fw_instance_id(self):
         """Gets the fw_instance_id of this UpdateLogConfigRequest.
 
-        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)。
+        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取(ListFirewallDetail.xml)。
 
         :return: The fw_instance_id of this UpdateLogConfigRequest.
         :rtype: str
@@ -69,7 +69,7 @@ class UpdateLogConfigRequest:
     def fw_instance_id(self, fw_instance_id):
         """Sets the fw_instance_id of this UpdateLogConfigRequest.
 
-        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)。
+        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取(ListFirewallDetail.xml)。
 
         :param fw_instance_id: The fw_instance_id of this UpdateLogConfigRequest.
         :type fw_instance_id: str
@@ -80,7 +80,7 @@ class UpdateLogConfigRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this UpdateLogConfigRequest.
 
-        企业项目id，用户支持企业项目后，由企业项目生成的id。
+        企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
         :return: The enterprise_project_id of this UpdateLogConfigRequest.
         :rtype: str
@@ -91,7 +91,7 @@ class UpdateLogConfigRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this UpdateLogConfigRequest.
 
-        企业项目id，用户支持企业项目后，由企业项目生成的id。
+        企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
         :param enterprise_project_id: The enterprise_project_id of this UpdateLogConfigRequest.
         :type enterprise_project_id: str

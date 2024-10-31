@@ -41,9 +41,9 @@ class CaptureTaskDto:
 
         :param destination: 
         :type destination: :class:`huaweicloudsdkcfw.v1.CaptureRuleAddressDto`
-        :param duration: 抓包时长
+        :param duration: 抓包时长，以分钟为单位
         :type duration: int
-        :param max_packets: 最大抓包数
+        :param max_packets: 最大抓包数，以个为单位
         :type max_packets: int
         :param name: 抓包任务名称
         :type name: str
@@ -92,7 +92,7 @@ class CaptureTaskDto:
     def duration(self):
         """Gets the duration of this CaptureTaskDto.
 
-        抓包时长
+        抓包时长，以分钟为单位
 
         :return: The duration of this CaptureTaskDto.
         :rtype: int
@@ -103,7 +103,7 @@ class CaptureTaskDto:
     def duration(self, duration):
         """Sets the duration of this CaptureTaskDto.
 
-        抓包时长
+        抓包时长，以分钟为单位
 
         :param duration: The duration of this CaptureTaskDto.
         :type duration: int
@@ -114,7 +114,7 @@ class CaptureTaskDto:
     def max_packets(self):
         """Gets the max_packets of this CaptureTaskDto.
 
-        最大抓包数
+        最大抓包数，以个为单位
 
         :return: The max_packets of this CaptureTaskDto.
         :rtype: int
@@ -125,7 +125,7 @@ class CaptureTaskDto:
     def max_packets(self, max_packets):
         """Sets the max_packets of this CaptureTaskDto.
 
-        最大抓包数
+        最大抓包数，以个为单位
 
         :param max_packets: The max_packets of this CaptureTaskDto.
         :type max_packets: int

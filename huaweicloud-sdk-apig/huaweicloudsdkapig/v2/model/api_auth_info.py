@@ -37,6 +37,7 @@ class ApiAuthInfo:
         'auth_blacklist': 'list[str]',
         'visit_param': 'str',
         'roma_app_type': 'str',
+        'tags': 'list[str]',
         'env_name': 'str',
         'app_id': 'str'
     }
@@ -62,11 +63,12 @@ class ApiAuthInfo:
         'auth_blacklist': 'auth_blacklist',
         'visit_param': 'visit_param',
         'roma_app_type': 'roma_app_type',
+        'tags': 'tags',
         'env_name': 'env_name',
         'app_id': 'app_id'
     }
 
-    def __init__(self, id=None, api_id=None, api_name=None, group_name=None, api_type=None, api_remark=None, env_id=None, auth_role=None, auth_time=None, app_name=None, app_remark=None, app_type=None, app_creator=None, publish_id=None, group_id=None, auth_tunnel=None, auth_whitelist=None, auth_blacklist=None, visit_param=None, roma_app_type=None, env_name=None, app_id=None):
+    def __init__(self, id=None, api_id=None, api_name=None, group_name=None, api_type=None, api_remark=None, env_id=None, auth_role=None, auth_time=None, app_name=None, app_remark=None, app_type=None, app_creator=None, publish_id=None, group_id=None, auth_tunnel=None, auth_whitelist=None, auth_blacklist=None, visit_param=None, roma_app_type=None, tags=None, env_name=None, app_id=None):
         """ApiAuthInfo
 
         The model defined in huaweicloud sdk
@@ -111,6 +113,8 @@ class ApiAuthInfo:
         :type visit_param: str
         :param roma_app_type: ROMA_APP的类型： - subscription：订阅应用 - integration：集成应用  暂不支持
         :type roma_app_type: str
+        :param tags: API绑定的标签，标签配额默认10条，可以联系技术调整。
+        :type tags: list[str]
         :param env_name: api授权绑定的环境名称
         :type env_name: str
         :param app_id: APP的编号
@@ -139,6 +143,7 @@ class ApiAuthInfo:
         self._auth_blacklist = None
         self._visit_param = None
         self._roma_app_type = None
+        self._tags = None
         self._env_name = None
         self._app_id = None
         self.discriminator = None
@@ -183,6 +188,8 @@ class ApiAuthInfo:
             self.visit_param = visit_param
         if roma_app_type is not None:
             self.roma_app_type = roma_app_type
+        if tags is not None:
+            self.tags = tags
         if env_name is not None:
             self.env_name = env_name
         if app_id is not None:
@@ -627,6 +634,28 @@ class ApiAuthInfo:
         :type roma_app_type: str
         """
         self._roma_app_type = roma_app_type
+
+    @property
+    def tags(self):
+        """Gets the tags of this ApiAuthInfo.
+
+        API绑定的标签，标签配额默认10条，可以联系技术调整。
+
+        :return: The tags of this ApiAuthInfo.
+        :rtype: list[str]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this ApiAuthInfo.
+
+        API绑定的标签，标签配额默认10条，可以联系技术调整。
+
+        :param tags: The tags of this ApiAuthInfo.
+        :type tags: list[str]
+        """
+        self._tags = tags
 
     @property
     def env_name(self):

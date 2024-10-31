@@ -77,9 +77,9 @@ class ListAccessControlLogsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)。
+        :param fw_instance_id: 防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
         :type fw_instance_id: str
-        :param rule_id: 规则ID
+        :param rule_id: 规则id，可通过[查询防护规则接口](ListAclRules.xml)查询获得，通过返回值中的data.records.rule_id（.表示各对象之间层级的区分）获得。
         :type rule_id: str
         :param start_time: 开始时间，以毫秒为单位的时间戳，如1718936272648
         :type start_time: int
@@ -95,7 +95,7 @@ class ListAccessControlLogsRequest:
         :type dst_port: int
         :param protocol: 协议类型，包含TCP, UDP,ICMP,ICMPV6等。
         :type protocol: str
-        :param app: 应用协议
+        :param app: 规则应用类型包括：“HTTP”，\&quot;HTTPS\&quot;，\&quot;TLS1\&quot;，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
         :type app: str
         :param log_id: 文档ID,第一页为空，其他页不为空，其他页可取上一次查询最后一条数据的log_id
         :type log_id: str
@@ -107,7 +107,7 @@ class ListAccessControlLogsRequest:
         :type limit: int
         :param log_type: 日志类型包括：internet，vpc，nat
         :type log_type: str
-        :param enterprise_project_id: 企业项目id，用户支持企业项目后，由企业项目生成的id。
+        :param enterprise_project_id: 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
         :type enterprise_project_id: str
         :param dst_host: 目标主机
         :type dst_host: str
@@ -209,7 +209,7 @@ class ListAccessControlLogsRequest:
     def fw_instance_id(self):
         """Gets the fw_instance_id of this ListAccessControlLogsRequest.
 
-        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)。
+        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
         :return: The fw_instance_id of this ListAccessControlLogsRequest.
         :rtype: str
@@ -220,7 +220,7 @@ class ListAccessControlLogsRequest:
     def fw_instance_id(self, fw_instance_id):
         """Sets the fw_instance_id of this ListAccessControlLogsRequest.
 
-        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)。
+        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
         :param fw_instance_id: The fw_instance_id of this ListAccessControlLogsRequest.
         :type fw_instance_id: str
@@ -231,7 +231,7 @@ class ListAccessControlLogsRequest:
     def rule_id(self):
         """Gets the rule_id of this ListAccessControlLogsRequest.
 
-        规则ID
+        规则id，可通过[查询防护规则接口](ListAclRules.xml)查询获得，通过返回值中的data.records.rule_id（.表示各对象之间层级的区分）获得。
 
         :return: The rule_id of this ListAccessControlLogsRequest.
         :rtype: str
@@ -242,7 +242,7 @@ class ListAccessControlLogsRequest:
     def rule_id(self, rule_id):
         """Sets the rule_id of this ListAccessControlLogsRequest.
 
-        规则ID
+        规则id，可通过[查询防护规则接口](ListAclRules.xml)查询获得，通过返回值中的data.records.rule_id（.表示各对象之间层级的区分）获得。
 
         :param rule_id: The rule_id of this ListAccessControlLogsRequest.
         :type rule_id: str
@@ -407,7 +407,7 @@ class ListAccessControlLogsRequest:
     def app(self):
         """Gets the app of this ListAccessControlLogsRequest.
 
-        应用协议
+        规则应用类型包括：“HTTP”，\"HTTPS\"，\"TLS1\"，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
 
         :return: The app of this ListAccessControlLogsRequest.
         :rtype: str
@@ -418,7 +418,7 @@ class ListAccessControlLogsRequest:
     def app(self, app):
         """Sets the app of this ListAccessControlLogsRequest.
 
-        应用协议
+        规则应用类型包括：“HTTP”，\"HTTPS\"，\"TLS1\"，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
 
         :param app: The app of this ListAccessControlLogsRequest.
         :type app: str
@@ -539,7 +539,7 @@ class ListAccessControlLogsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListAccessControlLogsRequest.
 
-        企业项目id，用户支持企业项目后，由企业项目生成的id。
+        企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
         :return: The enterprise_project_id of this ListAccessControlLogsRequest.
         :rtype: str
@@ -550,7 +550,7 @@ class ListAccessControlLogsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListAccessControlLogsRequest.
 
-        企业项目id，用户支持企业项目后，由企业项目生成的id。
+        企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
         :param enterprise_project_id: The enterprise_project_id of this ListAccessControlLogsRequest.
         :type enterprise_project_id: str

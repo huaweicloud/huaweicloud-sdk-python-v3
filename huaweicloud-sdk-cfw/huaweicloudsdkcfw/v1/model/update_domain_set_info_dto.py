@@ -31,9 +31,9 @@ class UpdateDomainSetInfoDto:
 
         The model defined in huaweicloud sdk
 
-        :param name: 域名组名称UUID
+        :param name: 域名组名称
         :type name: str
-        :param description: 描述
+        :param description: 域名组描述
         :type description: str
         """
         
@@ -51,7 +51,7 @@ class UpdateDomainSetInfoDto:
     def name(self):
         """Gets the name of this UpdateDomainSetInfoDto.
 
-        域名组名称UUID
+        域名组名称
 
         :return: The name of this UpdateDomainSetInfoDto.
         :rtype: str
@@ -62,7 +62,7 @@ class UpdateDomainSetInfoDto:
     def name(self, name):
         """Sets the name of this UpdateDomainSetInfoDto.
 
-        域名组名称UUID
+        域名组名称
 
         :param name: The name of this UpdateDomainSetInfoDto.
         :type name: str
@@ -73,7 +73,7 @@ class UpdateDomainSetInfoDto:
     def description(self):
         """Gets the description of this UpdateDomainSetInfoDto.
 
-        描述
+        域名组描述
 
         :return: The description of this UpdateDomainSetInfoDto.
         :rtype: str
@@ -84,7 +84,7 @@ class UpdateDomainSetInfoDto:
     def description(self, description):
         """Sets the description of this UpdateDomainSetInfoDto.
 
-        描述
+        域名组描述
 
         :param description: The description of this UpdateDomainSetInfoDto.
         :type description: str

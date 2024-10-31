@@ -33,11 +33,11 @@ class HttpQueryCfwAttackLogsResponseDTOData:
 
         The model defined in huaweicloud sdk
 
-        :param total: 返回数量
+        :param total: 返回攻击数据总数
         :type total: int
         :param limit: 每页显示个数，范围为1-1024
         :type limit: int
-        :param records: 记录
+        :param records: 攻击日志记录列表
         :type records: list[:class:`huaweicloudsdkcfw.v1.HttpQueryCfwAttackLogsResponseDTODataRecords`]
         """
         
@@ -59,7 +59,7 @@ class HttpQueryCfwAttackLogsResponseDTOData:
     def total(self):
         """Gets the total of this HttpQueryCfwAttackLogsResponseDTOData.
 
-        返回数量
+        返回攻击数据总数
 
         :return: The total of this HttpQueryCfwAttackLogsResponseDTOData.
         :rtype: int
@@ -70,7 +70,7 @@ class HttpQueryCfwAttackLogsResponseDTOData:
     def total(self, total):
         """Sets the total of this HttpQueryCfwAttackLogsResponseDTOData.
 
-        返回数量
+        返回攻击数据总数
 
         :param total: The total of this HttpQueryCfwAttackLogsResponseDTOData.
         :type total: int
@@ -103,7 +103,7 @@ class HttpQueryCfwAttackLogsResponseDTOData:
     def records(self):
         """Gets the records of this HttpQueryCfwAttackLogsResponseDTOData.
 
-        记录
+        攻击日志记录列表
 
         :return: The records of this HttpQueryCfwAttackLogsResponseDTOData.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.HttpQueryCfwAttackLogsResponseDTODataRecords`]
@@ -114,7 +114,7 @@ class HttpQueryCfwAttackLogsResponseDTOData:
     def records(self, records):
         """Sets the records of this HttpQueryCfwAttackLogsResponseDTOData.
 
-        记录
+        攻击日志记录列表
 
         :param records: The records of this HttpQueryCfwAttackLogsResponseDTOData.
         :type records: list[:class:`huaweicloudsdkcfw.v1.HttpQueryCfwAttackLogsResponseDTODataRecords`]

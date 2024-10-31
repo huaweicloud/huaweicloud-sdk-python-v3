@@ -25,6 +25,8 @@ from huaweicloudsdkidme.v1.model.list_envs_response_body_result import ListEnvsR
 from huaweicloudsdkidme.v1.model.modify_application_request import ModifyApplicationRequest
 from huaweicloudsdkidme.v1.model.modify_application_request_body import ModifyApplicationRequestBody
 from huaweicloudsdkidme.v1.model.modify_application_response import ModifyApplicationResponse
+from huaweicloudsdkidme.v1.model.subscribe_cloud_service_request import SubscribeCloudServiceRequest
+from huaweicloudsdkidme.v1.model.subscribe_cloud_service_response import SubscribeCloudServiceResponse
 from huaweicloudsdkidme.v1.model.uninstall_request import UninstallRequest
 from huaweicloudsdkidme.v1.model.uninstall_response import UninstallResponse
 

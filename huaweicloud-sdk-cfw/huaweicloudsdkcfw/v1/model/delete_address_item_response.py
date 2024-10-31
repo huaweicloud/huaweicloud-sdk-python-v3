@@ -18,7 +18,7 @@ class DeleteAddressItemResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'IdObject'
+        'data': 'AddressItemId'
     }
 
     attribute_map = {
@@ -31,7 +31,7 @@ class DeleteAddressItemResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param data: 
-        :type data: :class:`huaweicloudsdkcfw.v1.IdObject`
+        :type data: :class:`huaweicloudsdkcfw.v1.AddressItemId`
         """
         
         super(DeleteAddressItemResponse, self).__init__()
@@ -47,7 +47,7 @@ class DeleteAddressItemResponse(SdkResponse):
         """Gets the data of this DeleteAddressItemResponse.
 
         :return: The data of this DeleteAddressItemResponse.
-        :rtype: :class:`huaweicloudsdkcfw.v1.IdObject`
+        :rtype: :class:`huaweicloudsdkcfw.v1.AddressItemId`
         """
         return self._data
 
@@ -56,7 +56,7 @@ class DeleteAddressItemResponse(SdkResponse):
         """Sets the data of this DeleteAddressItemResponse.
 
         :param data: The data of this DeleteAddressItemResponse.
-        :type data: :class:`huaweicloudsdkcfw.v1.IdObject`
+        :type data: :class:`huaweicloudsdkcfw.v1.AddressItemId`
         """
         self._data = data
 

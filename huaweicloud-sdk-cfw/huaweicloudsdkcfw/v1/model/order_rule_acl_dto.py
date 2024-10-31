@@ -33,7 +33,7 @@ class OrderRuleAclDto:
 
         The model defined in huaweicloud sdk
 
-        :param dest_rule_id: 目标规则id，添加规则位于此规则之后，非置顶时不能为空，置顶时为空
+        :param dest_rule_id: 目标规则id，添加规则位于此规则之后，非置顶时不能为空，置顶时为空，目标规则id可以通过[查询防护规则接口](ListAclRules.xml)获得，通过返回值中的data.records.rule_id（.表示各对象之间层级的区分）获得。
         :type dest_rule_id: str
         :param top: 是否置顶，0代表非置顶，1代表置顶
         :type top: int
@@ -59,7 +59,7 @@ class OrderRuleAclDto:
     def dest_rule_id(self):
         """Gets the dest_rule_id of this OrderRuleAclDto.
 
-        目标规则id，添加规则位于此规则之后，非置顶时不能为空，置顶时为空
+        目标规则id，添加规则位于此规则之后，非置顶时不能为空，置顶时为空，目标规则id可以通过[查询防护规则接口](ListAclRules.xml)获得，通过返回值中的data.records.rule_id（.表示各对象之间层级的区分）获得。
 
         :return: The dest_rule_id of this OrderRuleAclDto.
         :rtype: str
@@ -70,7 +70,7 @@ class OrderRuleAclDto:
     def dest_rule_id(self, dest_rule_id):
         """Sets the dest_rule_id of this OrderRuleAclDto.
 
-        目标规则id，添加规则位于此规则之后，非置顶时不能为空，置顶时为空
+        目标规则id，添加规则位于此规则之后，非置顶时不能为空，置顶时为空，目标规则id可以通过[查询防护规则接口](ListAclRules.xml)获得，通过返回值中的data.records.rule_id（.表示各对象之间层级的区分）获得。
 
         :param dest_rule_id: The dest_rule_id of this OrderRuleAclDto.
         :type dest_rule_id: str

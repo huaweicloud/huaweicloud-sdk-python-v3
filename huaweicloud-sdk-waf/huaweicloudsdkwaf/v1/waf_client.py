@@ -2957,6 +2957,8 @@ class WafClient(Client):
             query_params.append(('instances', local_var_params['instances']))
         if 'group_by' in local_var_params:
             query_params.append(('group_by', local_var_params['group_by']))
+        if 'display_option' in local_var_params:
+            query_params.append(('display_option', local_var_params['display_option']))
 
         header_params = {}
 

@@ -25,7 +25,8 @@ class MicroserviceImportReq:
         'auth_type': 'str',
         'cors': 'bool',
         'cse_info': 'MicroServiceInfoCSECreate',
-        'cce_info': 'MicroServiceInfoCCECreate'
+        'cce_info': 'MicroServiceInfoCCECreate',
+        'nacos_info': 'MicroServiceInfoNacosBase'
     }
 
     attribute_map = {
@@ -37,17 +38,18 @@ class MicroserviceImportReq:
         'auth_type': 'auth_type',
         'cors': 'cors',
         'cse_info': 'cse_info',
-        'cce_info': 'cce_info'
+        'cce_info': 'cce_info',
+        'nacos_info': 'nacos_info'
     }
 
-    def __init__(self, group_info=None, service_type=None, protocol=None, apis=None, backend_timeout=None, auth_type=None, cors=None, cse_info=None, cce_info=None):
+    def __init__(self, group_info=None, service_type=None, protocol=None, apis=None, backend_timeout=None, auth_type=None, cors=None, cse_info=None, cce_info=None, nacos_info=None):
         """MicroserviceImportReq
 
         The model defined in huaweicloud sdk
 
         :param group_info: 
         :type group_info: :class:`huaweicloudsdkapig.v2.MicroserviceGroup`
-        :param service_type: 微服务中心类型。 - CSE：CSE微服务注册中心 - CCE: CCE云容器引擎（工作负载） - CCE_SERVICE: CCE云容器引擎（Service）
+        :param service_type: 微服务中心类型。 - CSE：CSE微服务注册中心 - CCE: CCE云容器引擎（工作负载） - CCE_SERVICE: CCE云容器引擎（Service） - NACOS: Nacos注册中心，nacos_info必填。
         :type service_type: str
         :param protocol: API网关访问微服务的请求协议 - HTTP - HTTPS
         :type protocol: str
@@ -63,6 +65,8 @@ class MicroserviceImportReq:
         :type cse_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCSECreate`
         :param cce_info: 
         :type cce_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCCECreate`
+        :param nacos_info: 
+        :type nacos_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoNacosBase`
         """
         
         
@@ -76,6 +80,7 @@ class MicroserviceImportReq:
         self._cors = None
         self._cse_info = None
         self._cce_info = None
+        self._nacos_info = None
         self.discriminator = None
 
         self.group_info = group_info
@@ -93,6 +98,8 @@ class MicroserviceImportReq:
             self.cse_info = cse_info
         if cce_info is not None:
             self.cce_info = cce_info
+        if nacos_info is not None:
+            self.nacos_info = nacos_info
 
     @property
     def group_info(self):
@@ -116,7 +123,7 @@ class MicroserviceImportReq:
     def service_type(self):
         """Gets the service_type of this MicroserviceImportReq.
 
-        微服务中心类型。 - CSE：CSE微服务注册中心 - CCE: CCE云容器引擎（工作负载） - CCE_SERVICE: CCE云容器引擎（Service）
+        微服务中心类型。 - CSE：CSE微服务注册中心 - CCE: CCE云容器引擎（工作负载） - CCE_SERVICE: CCE云容器引擎（Service） - NACOS: Nacos注册中心，nacos_info必填。
 
         :return: The service_type of this MicroserviceImportReq.
         :rtype: str
@@ -127,7 +134,7 @@ class MicroserviceImportReq:
     def service_type(self, service_type):
         """Sets the service_type of this MicroserviceImportReq.
 
-        微服务中心类型。 - CSE：CSE微服务注册中心 - CCE: CCE云容器引擎（工作负载） - CCE_SERVICE: CCE云容器引擎（Service）
+        微服务中心类型。 - CSE：CSE微服务注册中心 - CCE: CCE云容器引擎（工作负载） - CCE_SERVICE: CCE云容器引擎（Service） - NACOS: Nacos注册中心，nacos_info必填。
 
         :param service_type: The service_type of this MicroserviceImportReq.
         :type service_type: str
@@ -279,6 +286,24 @@ class MicroserviceImportReq:
         :type cce_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCCECreate`
         """
         self._cce_info = cce_info
+
+    @property
+    def nacos_info(self):
+        """Gets the nacos_info of this MicroserviceImportReq.
+
+        :return: The nacos_info of this MicroserviceImportReq.
+        :rtype: :class:`huaweicloudsdkapig.v2.MicroServiceInfoNacosBase`
+        """
+        return self._nacos_info
+
+    @nacos_info.setter
+    def nacos_info(self, nacos_info):
+        """Sets the nacos_info of this MicroserviceImportReq.
+
+        :param nacos_info: The nacos_info of this MicroserviceImportReq.
+        :type nacos_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoNacosBase`
+        """
+        self._nacos_info = nacos_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

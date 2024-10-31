@@ -29,7 +29,7 @@ class DeleteFirewallRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_id: 资源id
+        :param resource_id: 防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
         :type resource_id: str
         """
         
@@ -44,7 +44,7 @@ class DeleteFirewallRequest:
     def resource_id(self):
         """Gets the resource_id of this DeleteFirewallRequest.
 
-        资源id
+        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
         :return: The resource_id of this DeleteFirewallRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class DeleteFirewallRequest:
     def resource_id(self, resource_id):
         """Sets the resource_id of this DeleteFirewallRequest.
 
-        资源id
+        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
         :param resource_id: The resource_id of this DeleteFirewallRequest.
         :type resource_id: str

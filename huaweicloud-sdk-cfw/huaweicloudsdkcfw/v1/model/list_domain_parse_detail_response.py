@@ -30,7 +30,7 @@ class ListDomainParseDetailResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: 域名id列表
+        :param data: 域名解析ip列表
         :type data: list[str]
         """
         
@@ -46,7 +46,7 @@ class ListDomainParseDetailResponse(SdkResponse):
     def data(self):
         """Gets the data of this ListDomainParseDetailResponse.
 
-        域名id列表
+        域名解析ip列表
 
         :return: The data of this ListDomainParseDetailResponse.
         :rtype: list[str]
@@ -57,7 +57,7 @@ class ListDomainParseDetailResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this ListDomainParseDetailResponse.
 
-        域名id列表
+        域名解析ip列表
 
         :param data: The data of this ListDomainParseDetailResponse.
         :type data: list[str]

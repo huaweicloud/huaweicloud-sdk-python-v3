@@ -39,13 +39,13 @@ class FirewallInstanceResource:
 
         The model defined in huaweicloud sdk
 
-        :param resource_id: 资源id
+        :param resource_id: 资源id，包括防火墙资源id，带宽资源id，eip资源id，vpc资源id，cbc回调后返回id。
         :type resource_id: str
         :param cloud_service_type: 服务类型，用于CBC使用，特指：hws.service.type.cfw
         :type cloud_service_type: str
-        :param resource_type: 资源类型，包括: 1、云防火墙:hws.resource.type.cfw 2、EIP:hws.resource.type.cfw.exp.eip 3、带宽:hws.resource.type.cfw.exp.bandwidth 4、VPC:hws.resource.type.cfw.exp.vpc 5、日志存储:hws.resource.type.cfw.exp.logaudit
+        :param resource_type: 资源类型 包括:   1、云防火墙:hws.resource.type.cfw   2、EIP:hws.resource.type.cfw.exp.eip   3、带宽:hws.resource.type.cfw.exp.bandwidth   4、VPC:hws.resource.type.cfw.exp
         :type resource_type: str
-        :param resource_spec_code: 库存单位码
+        :param resource_spec_code: 库存单位码，包括：1、防火墙标准版cfw.standard 2、防火墙专业版cfw.professional 3、eip标准版cfw.expack.eip.standard 4、eip专业版cfw.expack.eip.professional 5、带宽基础版cfw.expack.bandwidth.standard 6、带宽专业版cfw.expack.bandwidth.professional 7、vpc专业版cfw.expack.vpc.professional
         :type resource_spec_code: str
         :param resource_size: 资源数量
         :type resource_size: int
@@ -80,7 +80,7 @@ class FirewallInstanceResource:
     def resource_id(self):
         """Gets the resource_id of this FirewallInstanceResource.
 
-        资源id
+        资源id，包括防火墙资源id，带宽资源id，eip资源id，vpc资源id，cbc回调后返回id。
 
         :return: The resource_id of this FirewallInstanceResource.
         :rtype: str
@@ -91,7 +91,7 @@ class FirewallInstanceResource:
     def resource_id(self, resource_id):
         """Sets the resource_id of this FirewallInstanceResource.
 
-        资源id
+        资源id，包括防火墙资源id，带宽资源id，eip资源id，vpc资源id，cbc回调后返回id。
 
         :param resource_id: The resource_id of this FirewallInstanceResource.
         :type resource_id: str
@@ -124,7 +124,7 @@ class FirewallInstanceResource:
     def resource_type(self):
         """Gets the resource_type of this FirewallInstanceResource.
 
-        资源类型，包括: 1、云防火墙:hws.resource.type.cfw 2、EIP:hws.resource.type.cfw.exp.eip 3、带宽:hws.resource.type.cfw.exp.bandwidth 4、VPC:hws.resource.type.cfw.exp.vpc 5、日志存储:hws.resource.type.cfw.exp.logaudit
+        资源类型 包括:   1、云防火墙:hws.resource.type.cfw   2、EIP:hws.resource.type.cfw.exp.eip   3、带宽:hws.resource.type.cfw.exp.bandwidth   4、VPC:hws.resource.type.cfw.exp
 
         :return: The resource_type of this FirewallInstanceResource.
         :rtype: str
@@ -135,7 +135,7 @@ class FirewallInstanceResource:
     def resource_type(self, resource_type):
         """Sets the resource_type of this FirewallInstanceResource.
 
-        资源类型，包括: 1、云防火墙:hws.resource.type.cfw 2、EIP:hws.resource.type.cfw.exp.eip 3、带宽:hws.resource.type.cfw.exp.bandwidth 4、VPC:hws.resource.type.cfw.exp.vpc 5、日志存储:hws.resource.type.cfw.exp.logaudit
+        资源类型 包括:   1、云防火墙:hws.resource.type.cfw   2、EIP:hws.resource.type.cfw.exp.eip   3、带宽:hws.resource.type.cfw.exp.bandwidth   4、VPC:hws.resource.type.cfw.exp
 
         :param resource_type: The resource_type of this FirewallInstanceResource.
         :type resource_type: str
@@ -146,7 +146,7 @@ class FirewallInstanceResource:
     def resource_spec_code(self):
         """Gets the resource_spec_code of this FirewallInstanceResource.
 
-        库存单位码
+        库存单位码，包括：1、防火墙标准版cfw.standard 2、防火墙专业版cfw.professional 3、eip标准版cfw.expack.eip.standard 4、eip专业版cfw.expack.eip.professional 5、带宽基础版cfw.expack.bandwidth.standard 6、带宽专业版cfw.expack.bandwidth.professional 7、vpc专业版cfw.expack.vpc.professional
 
         :return: The resource_spec_code of this FirewallInstanceResource.
         :rtype: str
@@ -157,7 +157,7 @@ class FirewallInstanceResource:
     def resource_spec_code(self, resource_spec_code):
         """Sets the resource_spec_code of this FirewallInstanceResource.
 
-        库存单位码
+        库存单位码，包括：1、防火墙标准版cfw.standard 2、防火墙专业版cfw.professional 3、eip标准版cfw.expack.eip.standard 4、eip专业版cfw.expack.eip.professional 5、带宽基础版cfw.expack.bandwidth.standard 6、带宽专业版cfw.expack.bandwidth.professional 7、vpc专业版cfw.expack.vpc.professional
 
         :param resource_spec_code: The resource_spec_code of this FirewallInstanceResource.
         :type resource_spec_code: str

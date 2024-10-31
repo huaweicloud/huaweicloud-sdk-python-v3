@@ -31,9 +31,9 @@ class DeleteAddressItemsInfoDto:
 
         The model defined in huaweicloud sdk
 
-        :param set_id: 地址组id
+        :param set_id: 地址组id，可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
         :type set_id: str
-        :param address_item_ids: 地址组成员id列表
+        :param address_item_ids: 地址组成员id列表，地址组成员id可通过[查询地址组成员接口](ListAddressItems.xml)查询获得，通过返回值中的data.records.item_id（.表示各对象之间层级的区分）获得。
         :type address_item_ids: list[str]
         """
         
@@ -50,7 +50,7 @@ class DeleteAddressItemsInfoDto:
     def set_id(self):
         """Gets the set_id of this DeleteAddressItemsInfoDto.
 
-        地址组id
+        地址组id，可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
         :return: The set_id of this DeleteAddressItemsInfoDto.
         :rtype: str
@@ -61,7 +61,7 @@ class DeleteAddressItemsInfoDto:
     def set_id(self, set_id):
         """Sets the set_id of this DeleteAddressItemsInfoDto.
 
-        地址组id
+        地址组id，可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
         :param set_id: The set_id of this DeleteAddressItemsInfoDto.
         :type set_id: str
@@ -72,7 +72,7 @@ class DeleteAddressItemsInfoDto:
     def address_item_ids(self):
         """Gets the address_item_ids of this DeleteAddressItemsInfoDto.
 
-        地址组成员id列表
+        地址组成员id列表，地址组成员id可通过[查询地址组成员接口](ListAddressItems.xml)查询获得，通过返回值中的data.records.item_id（.表示各对象之间层级的区分）获得。
 
         :return: The address_item_ids of this DeleteAddressItemsInfoDto.
         :rtype: list[str]
@@ -83,7 +83,7 @@ class DeleteAddressItemsInfoDto:
     def address_item_ids(self, address_item_ids):
         """Sets the address_item_ids of this DeleteAddressItemsInfoDto.
 
-        地址组成员id列表
+        地址组成员id列表，地址组成员id可通过[查询地址组成员接口](ListAddressItems.xml)查询获得，通过返回值中的data.records.item_id（.表示各对象之间层级的区分）获得。
 
         :param address_item_ids: The address_item_ids of this DeleteAddressItemsInfoDto.
         :type address_item_ids: list[str]

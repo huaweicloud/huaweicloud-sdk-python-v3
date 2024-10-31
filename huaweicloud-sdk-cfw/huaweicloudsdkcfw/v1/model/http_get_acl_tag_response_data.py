@@ -39,9 +39,9 @@ class HttpGetAclTagResponseData:
         :type offset: int
         :param limit: 每页显示个数，范围为1-1024
         :type limit: int
-        :param total: 总数
+        :param total: 规则标签总数
         :type total: int
-        :param records: 标签列表
+        :param records: 规则标签列表
         :type records: list[:class:`huaweicloudsdkcfw.v1.TagsVO`]
         """
         
@@ -110,7 +110,7 @@ class HttpGetAclTagResponseData:
     def total(self):
         """Gets the total of this HttpGetAclTagResponseData.
 
-        总数
+        规则标签总数
 
         :return: The total of this HttpGetAclTagResponseData.
         :rtype: int
@@ -121,7 +121,7 @@ class HttpGetAclTagResponseData:
     def total(self, total):
         """Sets the total of this HttpGetAclTagResponseData.
 
-        总数
+        规则标签总数
 
         :param total: The total of this HttpGetAclTagResponseData.
         :type total: int
@@ -132,7 +132,7 @@ class HttpGetAclTagResponseData:
     def records(self):
         """Gets the records of this HttpGetAclTagResponseData.
 
-        标签列表
+        规则标签列表
 
         :return: The records of this HttpGetAclTagResponseData.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.TagsVO`]
@@ -143,7 +143,7 @@ class HttpGetAclTagResponseData:
     def records(self, records):
         """Sets the records of this HttpGetAclTagResponseData.
 
-        标签列表
+        规则标签列表
 
         :param records: The records of this HttpGetAclTagResponseData.
         :type records: list[:class:`huaweicloudsdkcfw.v1.TagsVO`]

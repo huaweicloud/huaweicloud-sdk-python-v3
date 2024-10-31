@@ -35,11 +35,11 @@ class UpdateAclRuleOrderRequest:
 
         The model defined in huaweicloud sdk
 
-        :param acl_rule_id: 规则id
+        :param acl_rule_id: 规则id，可通过[查询防护规则接口](ListAclRules.xml)查询获得，通过返回值中的data.records.rule_id（.表示各对象之间层级的区分）获得。
         :type acl_rule_id: str
-        :param enterprise_project_id: 企业项目id，用户支持企业项目后，由企业项目生成的id。
+        :param enterprise_project_id: 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
         :type enterprise_project_id: str
-        :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，默认情况下，fw_instance_Id为空时，返回账号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
+        :param fw_instance_id: 防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
         :type fw_instance_id: str
         :param body: Body of the UpdateAclRuleOrderRequest
         :type body: :class:`huaweicloudsdkcfw.v1.OrderRuleAclDto`
@@ -65,7 +65,7 @@ class UpdateAclRuleOrderRequest:
     def acl_rule_id(self):
         """Gets the acl_rule_id of this UpdateAclRuleOrderRequest.
 
-        规则id
+        规则id，可通过[查询防护规则接口](ListAclRules.xml)查询获得，通过返回值中的data.records.rule_id（.表示各对象之间层级的区分）获得。
 
         :return: The acl_rule_id of this UpdateAclRuleOrderRequest.
         :rtype: str
@@ -76,7 +76,7 @@ class UpdateAclRuleOrderRequest:
     def acl_rule_id(self, acl_rule_id):
         """Sets the acl_rule_id of this UpdateAclRuleOrderRequest.
 
-        规则id
+        规则id，可通过[查询防护规则接口](ListAclRules.xml)查询获得，通过返回值中的data.records.rule_id（.表示各对象之间层级的区分）获得。
 
         :param acl_rule_id: The acl_rule_id of this UpdateAclRuleOrderRequest.
         :type acl_rule_id: str
@@ -87,7 +87,7 @@ class UpdateAclRuleOrderRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this UpdateAclRuleOrderRequest.
 
-        企业项目id，用户支持企业项目后，由企业项目生成的id。
+        企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
         :return: The enterprise_project_id of this UpdateAclRuleOrderRequest.
         :rtype: str
@@ -98,7 +98,7 @@ class UpdateAclRuleOrderRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this UpdateAclRuleOrderRequest.
 
-        企业项目id，用户支持企业项目后，由企业项目生成的id。
+        企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
         :param enterprise_project_id: The enterprise_project_id of this UpdateAclRuleOrderRequest.
         :type enterprise_project_id: str
@@ -109,7 +109,7 @@ class UpdateAclRuleOrderRequest:
     def fw_instance_id(self):
         """Gets the fw_instance_id of this UpdateAclRuleOrderRequest.
 
-        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，默认情况下，fw_instance_Id为空时，返回账号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
+        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
         :return: The fw_instance_id of this UpdateAclRuleOrderRequest.
         :rtype: str
@@ -120,7 +120,7 @@ class UpdateAclRuleOrderRequest:
     def fw_instance_id(self, fw_instance_id):
         """Sets the fw_instance_id of this UpdateAclRuleOrderRequest.
 
-        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，默认情况下，fw_instance_Id为空时，返回账号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
+        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
         :param fw_instance_id: The fw_instance_id of this UpdateAclRuleOrderRequest.
         :type fw_instance_id: str

@@ -18,7 +18,7 @@ class CreateCaptureTaskResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'IdObject'
+        'data': 'CaptureTaskId'
     }
 
     attribute_map = {
@@ -31,7 +31,7 @@ class CreateCaptureTaskResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param data: 
-        :type data: :class:`huaweicloudsdkcfw.v1.IdObject`
+        :type data: :class:`huaweicloudsdkcfw.v1.CaptureTaskId`
         """
         
         super(CreateCaptureTaskResponse, self).__init__()
@@ -47,7 +47,7 @@ class CreateCaptureTaskResponse(SdkResponse):
         """Gets the data of this CreateCaptureTaskResponse.
 
         :return: The data of this CreateCaptureTaskResponse.
-        :rtype: :class:`huaweicloudsdkcfw.v1.IdObject`
+        :rtype: :class:`huaweicloudsdkcfw.v1.CaptureTaskId`
         """
         return self._data
 
@@ -56,7 +56,7 @@ class CreateCaptureTaskResponse(SdkResponse):
         """Sets the data of this CreateCaptureTaskResponse.
 
         :param data: The data of this CreateCaptureTaskResponse.
-        :type data: :class:`huaweicloudsdkcfw.v1.IdObject`
+        :type data: :class:`huaweicloudsdkcfw.v1.CaptureTaskId`
         """
         self._data = data
 

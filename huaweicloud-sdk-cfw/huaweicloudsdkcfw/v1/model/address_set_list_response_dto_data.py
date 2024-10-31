@@ -39,7 +39,7 @@ class AddressSetListResponseDTOData:
         :type offset: int
         :param limit: 每页显示个数，范围为1-1024
         :type limit: int
-        :param total: 总数
+        :param total: 地址组总数
         :type total: int
         :param records: 地址组列表
         :type records: list[:class:`huaweicloudsdkcfw.v1.AddressSetListResponseDTODataRecords`]
@@ -110,7 +110,7 @@ class AddressSetListResponseDTOData:
     def total(self):
         """Gets the total of this AddressSetListResponseDTOData.
 
-        总数
+        地址组总数
 
         :return: The total of this AddressSetListResponseDTOData.
         :rtype: int
@@ -121,7 +121,7 @@ class AddressSetListResponseDTOData:
     def total(self, total):
         """Sets the total of this AddressSetListResponseDTOData.
 
-        总数
+        地址组总数
 
         :param total: The total of this AddressSetListResponseDTOData.
         :type total: int

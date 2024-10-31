@@ -54,7 +54,7 @@ class ShowDomainDetailResponse(SdkResponse):
         :type description: str
         :param policy_id: 策略id
         :type policy_id: str
-        :param protect_status: 防护状态： - 防护中：on - 未防护：off 
+        :param protect_status: - 防护状态: - 防护中：on - 未防护：off
         :type protect_status: str
         :param create_time: 创建域名的时间
         :type create_time: int
@@ -205,7 +205,7 @@ class ShowDomainDetailResponse(SdkResponse):
     def protect_status(self):
         """Gets the protect_status of this ShowDomainDetailResponse.
 
-        防护状态： - 防护中：on - 未防护：off 
+        - 防护状态: - 防护中：on - 未防护：off
 
         :return: The protect_status of this ShowDomainDetailResponse.
         :rtype: str
@@ -216,7 +216,7 @@ class ShowDomainDetailResponse(SdkResponse):
     def protect_status(self, protect_status):
         """Sets the protect_status of this ShowDomainDetailResponse.
 
-        防护状态： - 防护中：on - 未防护：off 
+        - 防护状态: - 防护中：on - 未防护：off
 
         :param protect_status: The protect_status of this ShowDomainDetailResponse.
         :type protect_status: str

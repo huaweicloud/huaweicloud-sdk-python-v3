@@ -61,23 +61,23 @@ class CaptureTaskVO:
 
         The model defined in huaweicloud sdk
 
-        :param capture_size: 抓包大小
+        :param capture_size: 抓包大小,如500kb,500mb
         :type capture_size: str
-        :param created_date: 抓包创建时间
+        :param created_date: 抓包创建时间,如2024/08/31 10:17:30
         :type created_date: str
         :param dest_address: 目的地址
         :type dest_address: str
-        :param dest_address_type: 目的地址类型0 ipv4,1 ipv6
+        :param dest_address_type: 目的地址类型0 ipv4，1 ipv6
         :type dest_address_type: int
         :param dest_port: 目的端口
         :type dest_port: str
-        :param duration: 抓包时长
+        :param duration: 抓包时长，以分钟为单位
         :type duration: int
         :param is_deleted: 是否被删除，0否 1是
         :type is_deleted: int
-        :param max_packets: 最大抓包数
+        :param max_packets: 最大抓包数，以个为单位
         :type max_packets: int
-        :param modified_date: 修改日期
+        :param modified_date: 修改日期,如2024/08/31 10:17:30
         :type modified_date: str
         :param name: 抓包任务名称
         :type name: str
@@ -87,11 +87,11 @@ class CaptureTaskVO:
         :type remaining_days: int
         :param source_address: 源地址
         :type source_address: str
-        :param source_address_type: 源地址类型0 ipv4,1 ipv6
+        :param source_address_type: 源地址类型0 ipv4，1 ipv6
         :type source_address_type: int
         :param source_port: 源端口
         :type source_port: str
-        :param status: 抓包任务状态
+        :param status: 抓包任务状态，如成功（1），运行中（2），已截止（4），截止中（5）
         :type status: int
         :param task_id: 抓包任务id
         :type task_id: str
@@ -157,7 +157,7 @@ class CaptureTaskVO:
     def capture_size(self):
         """Gets the capture_size of this CaptureTaskVO.
 
-        抓包大小
+        抓包大小,如500kb,500mb
 
         :return: The capture_size of this CaptureTaskVO.
         :rtype: str
@@ -168,7 +168,7 @@ class CaptureTaskVO:
     def capture_size(self, capture_size):
         """Sets the capture_size of this CaptureTaskVO.
 
-        抓包大小
+        抓包大小,如500kb,500mb
 
         :param capture_size: The capture_size of this CaptureTaskVO.
         :type capture_size: str
@@ -179,7 +179,7 @@ class CaptureTaskVO:
     def created_date(self):
         """Gets the created_date of this CaptureTaskVO.
 
-        抓包创建时间
+        抓包创建时间,如2024/08/31 10:17:30
 
         :return: The created_date of this CaptureTaskVO.
         :rtype: str
@@ -190,7 +190,7 @@ class CaptureTaskVO:
     def created_date(self, created_date):
         """Sets the created_date of this CaptureTaskVO.
 
-        抓包创建时间
+        抓包创建时间,如2024/08/31 10:17:30
 
         :param created_date: The created_date of this CaptureTaskVO.
         :type created_date: str
@@ -223,7 +223,7 @@ class CaptureTaskVO:
     def dest_address_type(self):
         """Gets the dest_address_type of this CaptureTaskVO.
 
-        目的地址类型0 ipv4,1 ipv6
+        目的地址类型0 ipv4，1 ipv6
 
         :return: The dest_address_type of this CaptureTaskVO.
         :rtype: int
@@ -234,7 +234,7 @@ class CaptureTaskVO:
     def dest_address_type(self, dest_address_type):
         """Sets the dest_address_type of this CaptureTaskVO.
 
-        目的地址类型0 ipv4,1 ipv6
+        目的地址类型0 ipv4，1 ipv6
 
         :param dest_address_type: The dest_address_type of this CaptureTaskVO.
         :type dest_address_type: int
@@ -267,7 +267,7 @@ class CaptureTaskVO:
     def duration(self):
         """Gets the duration of this CaptureTaskVO.
 
-        抓包时长
+        抓包时长，以分钟为单位
 
         :return: The duration of this CaptureTaskVO.
         :rtype: int
@@ -278,7 +278,7 @@ class CaptureTaskVO:
     def duration(self, duration):
         """Sets the duration of this CaptureTaskVO.
 
-        抓包时长
+        抓包时长，以分钟为单位
 
         :param duration: The duration of this CaptureTaskVO.
         :type duration: int
@@ -311,7 +311,7 @@ class CaptureTaskVO:
     def max_packets(self):
         """Gets the max_packets of this CaptureTaskVO.
 
-        最大抓包数
+        最大抓包数，以个为单位
 
         :return: The max_packets of this CaptureTaskVO.
         :rtype: int
@@ -322,7 +322,7 @@ class CaptureTaskVO:
     def max_packets(self, max_packets):
         """Sets the max_packets of this CaptureTaskVO.
 
-        最大抓包数
+        最大抓包数，以个为单位
 
         :param max_packets: The max_packets of this CaptureTaskVO.
         :type max_packets: int
@@ -333,7 +333,7 @@ class CaptureTaskVO:
     def modified_date(self):
         """Gets the modified_date of this CaptureTaskVO.
 
-        修改日期
+        修改日期,如2024/08/31 10:17:30
 
         :return: The modified_date of this CaptureTaskVO.
         :rtype: str
@@ -344,7 +344,7 @@ class CaptureTaskVO:
     def modified_date(self, modified_date):
         """Sets the modified_date of this CaptureTaskVO.
 
-        修改日期
+        修改日期,如2024/08/31 10:17:30
 
         :param modified_date: The modified_date of this CaptureTaskVO.
         :type modified_date: str
@@ -443,7 +443,7 @@ class CaptureTaskVO:
     def source_address_type(self):
         """Gets the source_address_type of this CaptureTaskVO.
 
-        源地址类型0 ipv4,1 ipv6
+        源地址类型0 ipv4，1 ipv6
 
         :return: The source_address_type of this CaptureTaskVO.
         :rtype: int
@@ -454,7 +454,7 @@ class CaptureTaskVO:
     def source_address_type(self, source_address_type):
         """Sets the source_address_type of this CaptureTaskVO.
 
-        源地址类型0 ipv4,1 ipv6
+        源地址类型0 ipv4，1 ipv6
 
         :param source_address_type: The source_address_type of this CaptureTaskVO.
         :type source_address_type: int
@@ -487,7 +487,7 @@ class CaptureTaskVO:
     def status(self):
         """Gets the status of this CaptureTaskVO.
 
-        抓包任务状态
+        抓包任务状态，如成功（1），运行中（2），已截止（4），截止中（5）
 
         :return: The status of this CaptureTaskVO.
         :rtype: int
@@ -498,7 +498,7 @@ class CaptureTaskVO:
     def status(self, status):
         """Sets the status of this CaptureTaskVO.
 
-        抓包任务状态
+        抓包任务状态，如成功（1），运行中（2），已截止（4），截止中（5）
 
         :param status: The status of this CaptureTaskVO.
         :type status: int

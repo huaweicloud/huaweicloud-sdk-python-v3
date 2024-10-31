@@ -33,11 +33,11 @@ class AddRuleAclDto:
 
         The model defined in huaweicloud sdk
 
-        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。
+        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
         :type object_id: str
-        :param type: 规则type，0：互联网规则，1：vpc规则，2：nat规则
+        :param type: 规则类型，0：互联网边界规则，1：vpc间规则，2：nat规则，当type取0时，规则源和目的地址需要为公网ip或域名，vpc间规则需要源和目的地址为私有ip，nat规则需要源地址为私网ip，目的地址为公网ip或域名。
         :type type: int
-        :param rules: rules
+        :param rules: 添加规则请求规则列表
         :type rules: list[:class:`huaweicloudsdkcfw.v1.AddRuleAclDtoRules`]
         """
         
@@ -56,7 +56,7 @@ class AddRuleAclDto:
     def object_id(self):
         """Gets the object_id of this AddRuleAclDto.
 
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。
+        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
 
         :return: The object_id of this AddRuleAclDto.
         :rtype: str
@@ -67,7 +67,7 @@ class AddRuleAclDto:
     def object_id(self, object_id):
         """Sets the object_id of this AddRuleAclDto.
 
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。
+        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
 
         :param object_id: The object_id of this AddRuleAclDto.
         :type object_id: str
@@ -78,7 +78,7 @@ class AddRuleAclDto:
     def type(self):
         """Gets the type of this AddRuleAclDto.
 
-        规则type，0：互联网规则，1：vpc规则，2：nat规则
+        规则类型，0：互联网边界规则，1：vpc间规则，2：nat规则，当type取0时，规则源和目的地址需要为公网ip或域名，vpc间规则需要源和目的地址为私有ip，nat规则需要源地址为私网ip，目的地址为公网ip或域名。
 
         :return: The type of this AddRuleAclDto.
         :rtype: int
@@ -89,7 +89,7 @@ class AddRuleAclDto:
     def type(self, type):
         """Sets the type of this AddRuleAclDto.
 
-        规则type，0：互联网规则，1：vpc规则，2：nat规则
+        规则类型，0：互联网边界规则，1：vpc间规则，2：nat规则，当type取0时，规则源和目的地址需要为公网ip或域名，vpc间规则需要源和目的地址为私有ip，nat规则需要源地址为私网ip，目的地址为公网ip或域名。
 
         :param type: The type of this AddRuleAclDto.
         :type type: int
@@ -100,7 +100,7 @@ class AddRuleAclDto:
     def rules(self):
         """Gets the rules of this AddRuleAclDto.
 
-        rules
+        添加规则请求规则列表
 
         :return: The rules of this AddRuleAclDto.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.AddRuleAclDtoRules`]
@@ -111,7 +111,7 @@ class AddRuleAclDto:
     def rules(self, rules):
         """Sets the rules of this AddRuleAclDto.
 
-        rules
+        添加规则请求规则列表
 
         :param rules: The rules of this AddRuleAclDto.
         :type rules: list[:class:`huaweicloudsdkcfw.v1.AddRuleAclDtoRules`]

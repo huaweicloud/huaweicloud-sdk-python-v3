@@ -18,15 +18,17 @@ class AudioStreamCreateRequestData:
 
     openapi_types = {
         'url': 'str',
-        'language': 'str'
+        'language': 'str',
+        'return_all_results': 'bool'
     }
 
     attribute_map = {
         'url': 'url',
-        'language': 'language'
+        'language': 'language',
+        'return_all_results': 'return_all_results'
     }
 
-    def __init__(self, url=None, language=None):
+    def __init__(self, url=None, language=None, return_all_results=None):
         """AudioStreamCreateRequestData
 
         The model defined in huaweicloud sdk
@@ -35,17 +37,22 @@ class AudioStreamCreateRequestData:
         :type url: str
         :param language: 指定音频流中语种类型 zh: 中文,默认值为zh
         :type language: str
+        :param return_all_results: 返回音频片段结果的策略。可选值如下： false：返回风险等级为非pass的音频片段结果 true：返回所有风险等级的音频片段结果 说明： 1. 默认值为false； 2. 每隔10秒返回一次最近10秒音频流的审核结果。
+        :type return_all_results: bool
         """
         
         
 
         self._url = None
         self._language = None
+        self._return_all_results = None
         self.discriminator = None
 
         self.url = url
         if language is not None:
             self.language = language
+        if return_all_results is not None:
+            self.return_all_results = return_all_results
 
     @property
     def url(self):
@@ -90,6 +97,28 @@ class AudioStreamCreateRequestData:
         :type language: str
         """
         self._language = language
+
+    @property
+    def return_all_results(self):
+        """Gets the return_all_results of this AudioStreamCreateRequestData.
+
+        返回音频片段结果的策略。可选值如下： false：返回风险等级为非pass的音频片段结果 true：返回所有风险等级的音频片段结果 说明： 1. 默认值为false； 2. 每隔10秒返回一次最近10秒音频流的审核结果。
+
+        :return: The return_all_results of this AudioStreamCreateRequestData.
+        :rtype: bool
+        """
+        return self._return_all_results
+
+    @return_all_results.setter
+    def return_all_results(self, return_all_results):
+        """Sets the return_all_results of this AudioStreamCreateRequestData.
+
+        返回音频片段结果的策略。可选值如下： false：返回风险等级为非pass的音频片段结果 true：返回所有风险等级的音频片段结果 说明： 1. 默认值为false； 2. 每隔10秒返回一次最近10秒音频流的审核结果。
+
+        :param return_all_results: The return_all_results of this AudioStreamCreateRequestData.
+        :type return_all_results: bool
+        """
+        self._return_all_results = return_all_results
 
     def to_dict(self):
         """Returns the model properties as a dict"""

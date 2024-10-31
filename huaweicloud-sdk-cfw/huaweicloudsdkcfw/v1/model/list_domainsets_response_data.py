@@ -39,7 +39,7 @@ class ListDomainsetsResponseData:
         :type limit: int
         :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
         :type offset: int
-        :param total: 总数
+        :param total: 域名组总数
         :type total: int
         :param records: 域名组列表
         :type records: list[:class:`huaweicloudsdkcfw.v1.DomainSetVo`]
@@ -110,7 +110,7 @@ class ListDomainsetsResponseData:
     def total(self):
         """Gets the total of this ListDomainsetsResponseData.
 
-        总数
+        域名组总数
 
         :return: The total of this ListDomainsetsResponseData.
         :rtype: int
@@ -121,7 +121,7 @@ class ListDomainsetsResponseData:
     def total(self, total):
         """Sets the total of this ListDomainsetsResponseData.
 
-        总数
+        域名组总数
 
         :param total: The total of this ListDomainsetsResponseData.
         :type total: int

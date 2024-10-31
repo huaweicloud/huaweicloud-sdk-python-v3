@@ -33,7 +33,8 @@ class PluginApiInfo:
         'env_name': 'str',
         'publish_id': 'str',
         'plugin_attach_id': 'str',
-        'attached_time': 'datetime'
+        'attached_time': 'datetime',
+        'tags': 'list[str]'
     }
 
     attribute_map = {
@@ -53,10 +54,11 @@ class PluginApiInfo:
         'env_name': 'env_name',
         'publish_id': 'publish_id',
         'plugin_attach_id': 'plugin_attach_id',
-        'attached_time': 'attached_time'
+        'attached_time': 'attached_time',
+        'tags': 'tags'
     }
 
-    def __init__(self, api_id=None, api_name=None, type=None, req_protocol=None, req_method=None, req_uri=None, auth_type=None, match_mode=None, remark=None, group_id=None, group_name=None, roma_app_id=None, env_id=None, env_name=None, publish_id=None, plugin_attach_id=None, attached_time=None):
+    def __init__(self, api_id=None, api_name=None, type=None, req_protocol=None, req_method=None, req_uri=None, auth_type=None, match_mode=None, remark=None, group_id=None, group_name=None, roma_app_id=None, env_id=None, env_name=None, publish_id=None, plugin_attach_id=None, attached_time=None, tags=None):
         """PluginApiInfo
 
         The model defined in huaweicloud sdk
@@ -95,6 +97,8 @@ class PluginApiInfo:
         :type plugin_attach_id: str
         :param attached_time: 绑定时间。
         :type attached_time: datetime
+        :param tags: API绑定的标签，标签配额默认10条，可以联系技术调整。
+        :type tags: list[str]
         """
         
         
@@ -116,6 +120,7 @@ class PluginApiInfo:
         self._publish_id = None
         self._plugin_attach_id = None
         self._attached_time = None
+        self._tags = None
         self.discriminator = None
 
         if api_id is not None:
@@ -152,6 +157,8 @@ class PluginApiInfo:
             self.plugin_attach_id = plugin_attach_id
         if attached_time is not None:
             self.attached_time = attached_time
+        if tags is not None:
+            self.tags = tags
 
     @property
     def api_id(self):
@@ -526,6 +533,28 @@ class PluginApiInfo:
         :type attached_time: datetime
         """
         self._attached_time = attached_time
+
+    @property
+    def tags(self):
+        """Gets the tags of this PluginApiInfo.
+
+        API绑定的标签，标签配额默认10条，可以联系技术调整。
+
+        :return: The tags of this PluginApiInfo.
+        :rtype: list[str]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this PluginApiInfo.
+
+        API绑定的标签，标签配额默认10条，可以联系技术调整。
+
+        :param tags: The tags of this PluginApiInfo.
+        :type tags: list[str]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

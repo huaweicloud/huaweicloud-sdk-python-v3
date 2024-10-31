@@ -31,9 +31,9 @@ class DeleteDomainDto:
 
         The model defined in huaweicloud sdk
 
-        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。
+        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
         :type object_id: str
-        :param domain_address_ids: 域名id列表
+        :param domain_address_ids: 域名id列表,域名id可通过[获取域名组下域名列表接口](ListDomains.xml)查询获得，通过返回值中的data.records.domain_address_id（.表示各对象之间层级的区分）获得。
         :type domain_address_ids: list[str]
         """
         
@@ -50,7 +50,7 @@ class DeleteDomainDto:
     def object_id(self):
         """Gets the object_id of this DeleteDomainDto.
 
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。
+        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
 
         :return: The object_id of this DeleteDomainDto.
         :rtype: str
@@ -61,7 +61,7 @@ class DeleteDomainDto:
     def object_id(self, object_id):
         """Sets the object_id of this DeleteDomainDto.
 
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。
+        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
 
         :param object_id: The object_id of this DeleteDomainDto.
         :type object_id: str
@@ -72,7 +72,7 @@ class DeleteDomainDto:
     def domain_address_ids(self):
         """Gets the domain_address_ids of this DeleteDomainDto.
 
-        域名id列表
+        域名id列表,域名id可通过[获取域名组下域名列表接口](ListDomains.xml)查询获得，通过返回值中的data.records.domain_address_id（.表示各对象之间层级的区分）获得。
 
         :return: The domain_address_ids of this DeleteDomainDto.
         :rtype: list[str]
@@ -83,7 +83,7 @@ class DeleteDomainDto:
     def domain_address_ids(self, domain_address_ids):
         """Sets the domain_address_ids of this DeleteDomainDto.
 
-        域名id列表
+        域名id列表,域名id可通过[获取域名组下域名列表接口](ListDomains.xml)查询获得，通过返回值中的data.records.domain_address_id（.表示各对象之间层级的区分）获得。
 
         :param domain_address_ids: The domain_address_ids of this DeleteDomainDto.
         :type domain_address_ids: list[str]

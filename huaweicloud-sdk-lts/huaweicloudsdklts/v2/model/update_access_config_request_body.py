@@ -23,7 +23,16 @@ class UpdateAccessConfigRequestBody:
         'access_config_tag': 'list[AccessConfigTag]',
         'log_split': 'bool',
         'binary_collect': 'bool',
-        'cluster_id': 'str'
+        'cluster_id': 'str',
+        'incremental_collect': 'bool',
+        'encoding_format': 'str',
+        'processor_type': 'str',
+        'demo_log': 'str',
+        'demo_fields': 'list[DemoFieldAccess]',
+        'processors': 'list[Processor]',
+        'application_id': 'str',
+        'environment_id': 'str',
+        'component_id': 'list[str]'
     }
 
     attribute_map = {
@@ -33,10 +42,19 @@ class UpdateAccessConfigRequestBody:
         'access_config_tag': 'access_config_tag',
         'log_split': 'log_split',
         'binary_collect': 'binary_collect',
-        'cluster_id': 'cluster_id'
+        'cluster_id': 'cluster_id',
+        'incremental_collect': 'incremental_collect',
+        'encoding_format': 'encoding_format',
+        'processor_type': 'processor_type',
+        'demo_log': 'demo_log',
+        'demo_fields': 'demo_fields',
+        'processors': 'processors',
+        'application_id': 'application_id',
+        'environment_id': 'environment_id',
+        'component_id': 'component_id'
     }
 
-    def __init__(self, access_config_id=None, access_config_detail=None, host_group_info=None, access_config_tag=None, log_split=None, binary_collect=None, cluster_id=None):
+    def __init__(self, access_config_id=None, access_config_detail=None, host_group_info=None, access_config_tag=None, log_split=None, binary_collect=None, cluster_id=None, incremental_collect=None, encoding_format=None, processor_type=None, demo_log=None, demo_fields=None, processors=None, application_id=None, environment_id=None, component_id=None):
         """UpdateAccessConfigRequestBody
 
         The model defined in huaweicloud sdk
@@ -55,6 +73,24 @@ class UpdateAccessConfigRequestBody:
         :type binary_collect: bool
         :param cluster_id: CCE集群ID，CCE类型时，为必填
         :type cluster_id: str
+        :param incremental_collect: 是否增量采集 true为是 false为否（全量采集）
+        :type incremental_collect: bool
+        :param encoding_format: 编码格式，默认UTF-8
+        :type encoding_format: str
+        :param processor_type: IC结构化解析类型
+        :type processor_type: str
+        :param demo_log: 示例日志
+        :type demo_log: str
+        :param demo_fields: 示例日志解析字段
+        :type demo_fields: list[:class:`huaweicloudsdklts.v2.DemoFieldAccess`]
+        :param processors: IC结构化解析器
+        :type processors: list[:class:`huaweicloudsdklts.v2.Processor`]
+        :param application_id: ServiceStage应用ID
+        :type application_id: str
+        :param environment_id: ServiceStage环境ID
+        :type environment_id: str
+        :param component_id: ServiceStage组件ID
+        :type component_id: list[str]
         """
         
         
@@ -66,6 +102,15 @@ class UpdateAccessConfigRequestBody:
         self._log_split = None
         self._binary_collect = None
         self._cluster_id = None
+        self._incremental_collect = None
+        self._encoding_format = None
+        self._processor_type = None
+        self._demo_log = None
+        self._demo_fields = None
+        self._processors = None
+        self._application_id = None
+        self._environment_id = None
+        self._component_id = None
         self.discriminator = None
 
         self.access_config_id = access_config_id
@@ -81,6 +126,24 @@ class UpdateAccessConfigRequestBody:
             self.binary_collect = binary_collect
         if cluster_id is not None:
             self.cluster_id = cluster_id
+        if incremental_collect is not None:
+            self.incremental_collect = incremental_collect
+        if encoding_format is not None:
+            self.encoding_format = encoding_format
+        if processor_type is not None:
+            self.processor_type = processor_type
+        if demo_log is not None:
+            self.demo_log = demo_log
+        if demo_fields is not None:
+            self.demo_fields = demo_fields
+        if processors is not None:
+            self.processors = processors
+        if application_id is not None:
+            self.application_id = application_id
+        if environment_id is not None:
+            self.environment_id = environment_id
+        if component_id is not None:
+            self.component_id = component_id
 
     @property
     def access_config_id(self):
@@ -227,6 +290,204 @@ class UpdateAccessConfigRequestBody:
         :type cluster_id: str
         """
         self._cluster_id = cluster_id
+
+    @property
+    def incremental_collect(self):
+        """Gets the incremental_collect of this UpdateAccessConfigRequestBody.
+
+        是否增量采集 true为是 false为否（全量采集）
+
+        :return: The incremental_collect of this UpdateAccessConfigRequestBody.
+        :rtype: bool
+        """
+        return self._incremental_collect
+
+    @incremental_collect.setter
+    def incremental_collect(self, incremental_collect):
+        """Sets the incremental_collect of this UpdateAccessConfigRequestBody.
+
+        是否增量采集 true为是 false为否（全量采集）
+
+        :param incremental_collect: The incremental_collect of this UpdateAccessConfigRequestBody.
+        :type incremental_collect: bool
+        """
+        self._incremental_collect = incremental_collect
+
+    @property
+    def encoding_format(self):
+        """Gets the encoding_format of this UpdateAccessConfigRequestBody.
+
+        编码格式，默认UTF-8
+
+        :return: The encoding_format of this UpdateAccessConfigRequestBody.
+        :rtype: str
+        """
+        return self._encoding_format
+
+    @encoding_format.setter
+    def encoding_format(self, encoding_format):
+        """Sets the encoding_format of this UpdateAccessConfigRequestBody.
+
+        编码格式，默认UTF-8
+
+        :param encoding_format: The encoding_format of this UpdateAccessConfigRequestBody.
+        :type encoding_format: str
+        """
+        self._encoding_format = encoding_format
+
+    @property
+    def processor_type(self):
+        """Gets the processor_type of this UpdateAccessConfigRequestBody.
+
+        IC结构化解析类型
+
+        :return: The processor_type of this UpdateAccessConfigRequestBody.
+        :rtype: str
+        """
+        return self._processor_type
+
+    @processor_type.setter
+    def processor_type(self, processor_type):
+        """Sets the processor_type of this UpdateAccessConfigRequestBody.
+
+        IC结构化解析类型
+
+        :param processor_type: The processor_type of this UpdateAccessConfigRequestBody.
+        :type processor_type: str
+        """
+        self._processor_type = processor_type
+
+    @property
+    def demo_log(self):
+        """Gets the demo_log of this UpdateAccessConfigRequestBody.
+
+        示例日志
+
+        :return: The demo_log of this UpdateAccessConfigRequestBody.
+        :rtype: str
+        """
+        return self._demo_log
+
+    @demo_log.setter
+    def demo_log(self, demo_log):
+        """Sets the demo_log of this UpdateAccessConfigRequestBody.
+
+        示例日志
+
+        :param demo_log: The demo_log of this UpdateAccessConfigRequestBody.
+        :type demo_log: str
+        """
+        self._demo_log = demo_log
+
+    @property
+    def demo_fields(self):
+        """Gets the demo_fields of this UpdateAccessConfigRequestBody.
+
+        示例日志解析字段
+
+        :return: The demo_fields of this UpdateAccessConfigRequestBody.
+        :rtype: list[:class:`huaweicloudsdklts.v2.DemoFieldAccess`]
+        """
+        return self._demo_fields
+
+    @demo_fields.setter
+    def demo_fields(self, demo_fields):
+        """Sets the demo_fields of this UpdateAccessConfigRequestBody.
+
+        示例日志解析字段
+
+        :param demo_fields: The demo_fields of this UpdateAccessConfigRequestBody.
+        :type demo_fields: list[:class:`huaweicloudsdklts.v2.DemoFieldAccess`]
+        """
+        self._demo_fields = demo_fields
+
+    @property
+    def processors(self):
+        """Gets the processors of this UpdateAccessConfigRequestBody.
+
+        IC结构化解析器
+
+        :return: The processors of this UpdateAccessConfigRequestBody.
+        :rtype: list[:class:`huaweicloudsdklts.v2.Processor`]
+        """
+        return self._processors
+
+    @processors.setter
+    def processors(self, processors):
+        """Sets the processors of this UpdateAccessConfigRequestBody.
+
+        IC结构化解析器
+
+        :param processors: The processors of this UpdateAccessConfigRequestBody.
+        :type processors: list[:class:`huaweicloudsdklts.v2.Processor`]
+        """
+        self._processors = processors
+
+    @property
+    def application_id(self):
+        """Gets the application_id of this UpdateAccessConfigRequestBody.
+
+        ServiceStage应用ID
+
+        :return: The application_id of this UpdateAccessConfigRequestBody.
+        :rtype: str
+        """
+        return self._application_id
+
+    @application_id.setter
+    def application_id(self, application_id):
+        """Sets the application_id of this UpdateAccessConfigRequestBody.
+
+        ServiceStage应用ID
+
+        :param application_id: The application_id of this UpdateAccessConfigRequestBody.
+        :type application_id: str
+        """
+        self._application_id = application_id
+
+    @property
+    def environment_id(self):
+        """Gets the environment_id of this UpdateAccessConfigRequestBody.
+
+        ServiceStage环境ID
+
+        :return: The environment_id of this UpdateAccessConfigRequestBody.
+        :rtype: str
+        """
+        return self._environment_id
+
+    @environment_id.setter
+    def environment_id(self, environment_id):
+        """Sets the environment_id of this UpdateAccessConfigRequestBody.
+
+        ServiceStage环境ID
+
+        :param environment_id: The environment_id of this UpdateAccessConfigRequestBody.
+        :type environment_id: str
+        """
+        self._environment_id = environment_id
+
+    @property
+    def component_id(self):
+        """Gets the component_id of this UpdateAccessConfigRequestBody.
+
+        ServiceStage组件ID
+
+        :return: The component_id of this UpdateAccessConfigRequestBody.
+        :rtype: list[str]
+        """
+        return self._component_id
+
+    @component_id.setter
+    def component_id(self, component_id):
+        """Sets the component_id of this UpdateAccessConfigRequestBody.
+
+        ServiceStage组件ID
+
+        :param component_id: The component_id of this UpdateAccessConfigRequestBody.
+        :type component_id: list[str]
+        """
+        self._component_id = component_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

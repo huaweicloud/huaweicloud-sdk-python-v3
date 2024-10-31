@@ -36,7 +36,8 @@ class ApiAuthBase:
         'auth_whitelist': 'list[str]',
         'auth_blacklist': 'list[str]',
         'visit_param': 'str',
-        'roma_app_type': 'str'
+        'roma_app_type': 'str',
+        'tags': 'list[str]'
     }
 
     attribute_map = {
@@ -59,10 +60,11 @@ class ApiAuthBase:
         'auth_whitelist': 'auth_whitelist',
         'auth_blacklist': 'auth_blacklist',
         'visit_param': 'visit_param',
-        'roma_app_type': 'roma_app_type'
+        'roma_app_type': 'roma_app_type',
+        'tags': 'tags'
     }
 
-    def __init__(self, id=None, api_id=None, api_name=None, group_name=None, api_type=None, api_remark=None, env_id=None, auth_role=None, auth_time=None, app_name=None, app_remark=None, app_type=None, app_creator=None, publish_id=None, group_id=None, auth_tunnel=None, auth_whitelist=None, auth_blacklist=None, visit_param=None, roma_app_type=None):
+    def __init__(self, id=None, api_id=None, api_name=None, group_name=None, api_type=None, api_remark=None, env_id=None, auth_role=None, auth_time=None, app_name=None, app_remark=None, app_type=None, app_creator=None, publish_id=None, group_id=None, auth_tunnel=None, auth_whitelist=None, auth_blacklist=None, visit_param=None, roma_app_type=None, tags=None):
         """ApiAuthBase
 
         The model defined in huaweicloud sdk
@@ -107,6 +109,8 @@ class ApiAuthBase:
         :type visit_param: str
         :param roma_app_type: ROMA_APP的类型： - subscription：订阅应用 - integration：集成应用  暂不支持
         :type roma_app_type: str
+        :param tags: API绑定的标签，标签配额默认10条，可以联系技术调整。
+        :type tags: list[str]
         """
         
         
@@ -131,6 +135,7 @@ class ApiAuthBase:
         self._auth_blacklist = None
         self._visit_param = None
         self._roma_app_type = None
+        self._tags = None
         self.discriminator = None
 
         if id is not None:
@@ -173,6 +178,8 @@ class ApiAuthBase:
             self.visit_param = visit_param
         if roma_app_type is not None:
             self.roma_app_type = roma_app_type
+        if tags is not None:
+            self.tags = tags
 
     @property
     def id(self):
@@ -613,6 +620,28 @@ class ApiAuthBase:
         :type roma_app_type: str
         """
         self._roma_app_type = roma_app_type
+
+    @property
+    def tags(self):
+        """Gets the tags of this ApiAuthBase.
+
+        API绑定的标签，标签配额默认10条，可以联系技术调整。
+
+        :return: The tags of this ApiAuthBase.
+        :rtype: list[str]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this ApiAuthBase.
+
+        API绑定的标签，标签配额默认10条，可以联系技术调整。
+
+        :param tags: The tags of this ApiAuthBase.
+        :type tags: list[str]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -19,15 +19,17 @@ class ListWhiteblackipRuleResponse(SdkResponse):
 
     openapi_types = {
         'total': 'int',
-        'items': 'list[WhiteBlackIpResponseBody]'
+        'items': 'list[WhiteBlackIpResponseBody]',
+        'size': 'int'
     }
 
     attribute_map = {
         'total': 'total',
-        'items': 'items'
+        'items': 'items',
+        'size': 'size'
     }
 
-    def __init__(self, total=None, items=None):
+    def __init__(self, total=None, items=None, size=None):
         """ListWhiteblackipRuleResponse
 
         The model defined in huaweicloud sdk
@@ -36,18 +38,23 @@ class ListWhiteblackipRuleResponse(SdkResponse):
         :type total: int
         :param items: 黑白名单规则列表信息
         :type items: list[:class:`huaweicloudsdkwaf.v1.WhiteBlackIpResponseBody`]
+        :param size: ip地址总数
+        :type size: int
         """
         
         super(ListWhiteblackipRuleResponse, self).__init__()
 
         self._total = None
         self._items = None
+        self._size = None
         self.discriminator = None
 
         if total is not None:
             self.total = total
         if items is not None:
             self.items = items
+        if size is not None:
+            self.size = size
 
     @property
     def total(self):
@@ -92,6 +99,28 @@ class ListWhiteblackipRuleResponse(SdkResponse):
         :type items: list[:class:`huaweicloudsdkwaf.v1.WhiteBlackIpResponseBody`]
         """
         self._items = items
+
+    @property
+    def size(self):
+        """Gets the size of this ListWhiteblackipRuleResponse.
+
+        ip地址总数
+
+        :return: The size of this ListWhiteblackipRuleResponse.
+        :rtype: int
+        """
+        return self._size
+
+    @size.setter
+    def size(self, size):
+        """Sets the size of this ListWhiteblackipRuleResponse.
+
+        ip地址总数
+
+        :param size: The size of this ListWhiteblackipRuleResponse.
+        :type size: int
+        """
+        self._size = size
 
     def to_dict(self):
         """Returns the model properties as a dict"""

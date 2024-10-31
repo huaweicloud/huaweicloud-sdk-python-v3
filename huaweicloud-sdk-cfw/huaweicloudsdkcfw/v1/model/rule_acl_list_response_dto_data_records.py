@@ -67,15 +67,15 @@ class RuleAclListResponseDTODataRecords:
 
         :param rule_id: 规则id
         :type rule_id: str
-        :param address_type: 地址类型0 ipv4,1 ipv6
+        :param address_type: 地址类型0 ipv4，1 ipv6
         :type address_type: int
         :param name: 规则名称
         :type name: str
         :param direction: 规则方向0：外到内1：内到外
         :type direction: int
-        :param action_type: 动作0：permit,1：deny
+        :param action_type: 动作0：permit，1：deny
         :type action_type: int
-        :param status: 规则下发状态 0：禁用,1：启用
+        :param status: 规则下发状态 0：禁用，1：启用
         :type status: int
         :param description: 描述
         :type description: str
@@ -83,9 +83,9 @@ class RuleAclListResponseDTODataRecords:
         :type long_connect_time: int
         :param long_connect_enable: 长连接支持
         :type long_connect_enable: int
-        :param long_connect_time_hour: 长连接时长小时
+        :param long_connect_time_hour: 长连接时长对应小时
         :type long_connect_time_hour: int
-        :param long_connect_time_minute: 长连接时长分钟
+        :param long_connect_time_minute: 长连接时长对应分钟
         :type long_connect_time_minute: int
         :param long_connect_time_second: 长连接时长秒
         :type long_connect_time_second: int
@@ -95,11 +95,11 @@ class RuleAclListResponseDTODataRecords:
         :type destination: :class:`huaweicloudsdkcfw.v1.RuleAddressDtoForResponse`
         :param service: 
         :type service: :class:`huaweicloudsdkcfw.v1.RuleServiceDtoForResponse`
-        :param type: 规则type，0：互联网规则，1：vpc规则，2：nat规则
+        :param type: 规则类型，0：互联网规则，1：vpc规则，2：nat规则
         :type type: int
-        :param created_date: 创建时间
+        :param created_date: 规则创建时间，例如：\&quot;2024-08-12 08:40:00\&quot;
         :type created_date: str
-        :param last_open_time: 最后开启时间
+        :param last_open_time: 规则最后开启时间，例如：\&quot;2024-08-12 08:40:00\&quot;
         :type last_open_time: str
         :param tag: 
         :type tag: :class:`huaweicloudsdkcfw.v1.TagsVO`
@@ -193,7 +193,7 @@ class RuleAclListResponseDTODataRecords:
     def address_type(self):
         """Gets the address_type of this RuleAclListResponseDTODataRecords.
 
-        地址类型0 ipv4,1 ipv6
+        地址类型0 ipv4，1 ipv6
 
         :return: The address_type of this RuleAclListResponseDTODataRecords.
         :rtype: int
@@ -204,7 +204,7 @@ class RuleAclListResponseDTODataRecords:
     def address_type(self, address_type):
         """Sets the address_type of this RuleAclListResponseDTODataRecords.
 
-        地址类型0 ipv4,1 ipv6
+        地址类型0 ipv4，1 ipv6
 
         :param address_type: The address_type of this RuleAclListResponseDTODataRecords.
         :type address_type: int
@@ -259,7 +259,7 @@ class RuleAclListResponseDTODataRecords:
     def action_type(self):
         """Gets the action_type of this RuleAclListResponseDTODataRecords.
 
-        动作0：permit,1：deny
+        动作0：permit，1：deny
 
         :return: The action_type of this RuleAclListResponseDTODataRecords.
         :rtype: int
@@ -270,7 +270,7 @@ class RuleAclListResponseDTODataRecords:
     def action_type(self, action_type):
         """Sets the action_type of this RuleAclListResponseDTODataRecords.
 
-        动作0：permit,1：deny
+        动作0：permit，1：deny
 
         :param action_type: The action_type of this RuleAclListResponseDTODataRecords.
         :type action_type: int
@@ -281,7 +281,7 @@ class RuleAclListResponseDTODataRecords:
     def status(self):
         """Gets the status of this RuleAclListResponseDTODataRecords.
 
-        规则下发状态 0：禁用,1：启用
+        规则下发状态 0：禁用，1：启用
 
         :return: The status of this RuleAclListResponseDTODataRecords.
         :rtype: int
@@ -292,7 +292,7 @@ class RuleAclListResponseDTODataRecords:
     def status(self, status):
         """Sets the status of this RuleAclListResponseDTODataRecords.
 
-        规则下发状态 0：禁用,1：启用
+        规则下发状态 0：禁用，1：启用
 
         :param status: The status of this RuleAclListResponseDTODataRecords.
         :type status: int
@@ -369,7 +369,7 @@ class RuleAclListResponseDTODataRecords:
     def long_connect_time_hour(self):
         """Gets the long_connect_time_hour of this RuleAclListResponseDTODataRecords.
 
-        长连接时长小时
+        长连接时长对应小时
 
         :return: The long_connect_time_hour of this RuleAclListResponseDTODataRecords.
         :rtype: int
@@ -380,7 +380,7 @@ class RuleAclListResponseDTODataRecords:
     def long_connect_time_hour(self, long_connect_time_hour):
         """Sets the long_connect_time_hour of this RuleAclListResponseDTODataRecords.
 
-        长连接时长小时
+        长连接时长对应小时
 
         :param long_connect_time_hour: The long_connect_time_hour of this RuleAclListResponseDTODataRecords.
         :type long_connect_time_hour: int
@@ -391,7 +391,7 @@ class RuleAclListResponseDTODataRecords:
     def long_connect_time_minute(self):
         """Gets the long_connect_time_minute of this RuleAclListResponseDTODataRecords.
 
-        长连接时长分钟
+        长连接时长对应分钟
 
         :return: The long_connect_time_minute of this RuleAclListResponseDTODataRecords.
         :rtype: int
@@ -402,7 +402,7 @@ class RuleAclListResponseDTODataRecords:
     def long_connect_time_minute(self, long_connect_time_minute):
         """Sets the long_connect_time_minute of this RuleAclListResponseDTODataRecords.
 
-        长连接时长分钟
+        长连接时长对应分钟
 
         :param long_connect_time_minute: The long_connect_time_minute of this RuleAclListResponseDTODataRecords.
         :type long_connect_time_minute: int
@@ -489,7 +489,7 @@ class RuleAclListResponseDTODataRecords:
     def type(self):
         """Gets the type of this RuleAclListResponseDTODataRecords.
 
-        规则type，0：互联网规则，1：vpc规则，2：nat规则
+        规则类型，0：互联网规则，1：vpc规则，2：nat规则
 
         :return: The type of this RuleAclListResponseDTODataRecords.
         :rtype: int
@@ -500,7 +500,7 @@ class RuleAclListResponseDTODataRecords:
     def type(self, type):
         """Sets the type of this RuleAclListResponseDTODataRecords.
 
-        规则type，0：互联网规则，1：vpc规则，2：nat规则
+        规则类型，0：互联网规则，1：vpc规则，2：nat规则
 
         :param type: The type of this RuleAclListResponseDTODataRecords.
         :type type: int
@@ -511,7 +511,7 @@ class RuleAclListResponseDTODataRecords:
     def created_date(self):
         """Gets the created_date of this RuleAclListResponseDTODataRecords.
 
-        创建时间
+        规则创建时间，例如：\"2024-08-12 08:40:00\"
 
         :return: The created_date of this RuleAclListResponseDTODataRecords.
         :rtype: str
@@ -522,7 +522,7 @@ class RuleAclListResponseDTODataRecords:
     def created_date(self, created_date):
         """Sets the created_date of this RuleAclListResponseDTODataRecords.
 
-        创建时间
+        规则创建时间，例如：\"2024-08-12 08:40:00\"
 
         :param created_date: The created_date of this RuleAclListResponseDTODataRecords.
         :type created_date: str
@@ -533,7 +533,7 @@ class RuleAclListResponseDTODataRecords:
     def last_open_time(self):
         """Gets the last_open_time of this RuleAclListResponseDTODataRecords.
 
-        最后开启时间
+        规则最后开启时间，例如：\"2024-08-12 08:40:00\"
 
         :return: The last_open_time of this RuleAclListResponseDTODataRecords.
         :rtype: str
@@ -544,7 +544,7 @@ class RuleAclListResponseDTODataRecords:
     def last_open_time(self, last_open_time):
         """Sets the last_open_time of this RuleAclListResponseDTODataRecords.
 
-        最后开启时间
+        规则最后开启时间，例如：\"2024-08-12 08:40:00\"
 
         :param last_open_time: The last_open_time of this RuleAclListResponseDTODataRecords.
         :type last_open_time: str

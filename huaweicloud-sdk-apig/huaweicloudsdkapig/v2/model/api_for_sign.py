@@ -27,6 +27,7 @@ class ApiForSign:
         'run_env_id': 'str',
         'id': 'str',
         'req_uri': 'str',
+        'tags': 'list[str]',
         'type': 'int',
         'signature_name': 'str',
         'req_method': 'str'
@@ -43,12 +44,13 @@ class ApiForSign:
         'run_env_id': 'run_env_id',
         'id': 'id',
         'req_uri': 'req_uri',
+        'tags': 'tags',
         'type': 'type',
         'signature_name': 'signature_name',
         'req_method': 'req_method'
     }
 
-    def __init__(self, auth_type=None, run_env_name=None, group_name=None, publish_id=None, group_id=None, name=None, remark=None, run_env_id=None, id=None, req_uri=None, type=None, signature_name=None, req_method=None):
+    def __init__(self, auth_type=None, run_env_name=None, group_name=None, publish_id=None, group_id=None, name=None, remark=None, run_env_id=None, id=None, req_uri=None, tags=None, type=None, signature_name=None, req_method=None):
         """ApiForSign
 
         The model defined in huaweicloud sdk
@@ -73,6 +75,8 @@ class ApiForSign:
         :type id: str
         :param req_uri: API的请求地址
         :type req_uri: str
+        :param tags: API绑定的标签，标签配额默认10条，可以联系技术调整。
+        :type tags: list[str]
         :param type: API类型
         :type type: int
         :param signature_name: 已绑定的签名密钥名称
@@ -93,6 +97,7 @@ class ApiForSign:
         self._run_env_id = None
         self._id = None
         self._req_uri = None
+        self._tags = None
         self._type = None
         self._signature_name = None
         self._req_method = None
@@ -118,6 +123,8 @@ class ApiForSign:
             self.id = id
         if req_uri is not None:
             self.req_uri = req_uri
+        if tags is not None:
+            self.tags = tags
         if type is not None:
             self.type = type
         if signature_name is not None:
@@ -344,6 +351,28 @@ class ApiForSign:
         :type req_uri: str
         """
         self._req_uri = req_uri
+
+    @property
+    def tags(self):
+        """Gets the tags of this ApiForSign.
+
+        API绑定的标签，标签配额默认10条，可以联系技术调整。
+
+        :return: The tags of this ApiForSign.
+        :rtype: list[str]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this ApiForSign.
+
+        API绑定的标签，标签配额默认10条，可以联系技术调整。
+
+        :param tags: The tags of this ApiForSign.
+        :type tags: list[str]
+        """
+        self._tags = tags
 
     @property
     def type(self):

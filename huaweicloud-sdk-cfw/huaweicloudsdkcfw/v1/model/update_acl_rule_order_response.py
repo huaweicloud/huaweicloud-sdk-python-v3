@@ -18,7 +18,7 @@ class UpdateAclRuleOrderResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'RuleId'
+        'data': 'OrderRuleId'
     }
 
     attribute_map = {
@@ -31,7 +31,7 @@ class UpdateAclRuleOrderResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param data: 
-        :type data: :class:`huaweicloudsdkcfw.v1.RuleId`
+        :type data: :class:`huaweicloudsdkcfw.v1.OrderRuleId`
         """
         
         super(UpdateAclRuleOrderResponse, self).__init__()
@@ -47,7 +47,7 @@ class UpdateAclRuleOrderResponse(SdkResponse):
         """Gets the data of this UpdateAclRuleOrderResponse.
 
         :return: The data of this UpdateAclRuleOrderResponse.
-        :rtype: :class:`huaweicloudsdkcfw.v1.RuleId`
+        :rtype: :class:`huaweicloudsdkcfw.v1.OrderRuleId`
         """
         return self._data
 
@@ -56,7 +56,7 @@ class UpdateAclRuleOrderResponse(SdkResponse):
         """Sets the data of this UpdateAclRuleOrderResponse.
 
         :param data: The data of this UpdateAclRuleOrderResponse.
-        :type data: :class:`huaweicloudsdkcfw.v1.RuleId`
+        :type data: :class:`huaweicloudsdkcfw.v1.OrderRuleId`
         """
         self._data = data
 

@@ -24,7 +24,9 @@ class Metadata:
         'resource_type': 'str',
         'resource_id': 'str',
         'resource_provider': 'str',
-        'lts_alarm_type': 'str'
+        'lts_alarm_type': 'str',
+        'log_group_name': 'str',
+        'log_stream_name': 'str'
     }
 
     attribute_map = {
@@ -35,10 +37,12 @@ class Metadata:
         'resource_type': 'resource_type',
         'resource_id': 'resource_id',
         'resource_provider': 'resource_provider',
-        'lts_alarm_type': 'lts_alarm_type'
+        'lts_alarm_type': 'lts_alarm_type',
+        'log_group_name': 'log_group_name',
+        'log_stream_name': 'log_stream_name'
     }
 
-    def __init__(self, event_type=None, event_id=None, event_severity=None, event_name=None, resource_type=None, resource_id=None, resource_provider=None, lts_alarm_type=None):
+    def __init__(self, event_type=None, event_id=None, event_severity=None, event_name=None, resource_type=None, resource_id=None, resource_provider=None, lts_alarm_type=None, log_group_name=None, log_stream_name=None):
         """Metadata
 
         The model defined in huaweicloud sdk
@@ -59,6 +63,10 @@ class Metadata:
         :type resource_provider: str
         :param lts_alarm_type: 告警规则类型(SQL/关键词)
         :type lts_alarm_type: str
+        :param log_group_name: 日志组原始名称
+        :type log_group_name: str
+        :param log_stream_name: 日志流原始名称
+        :type log_stream_name: str
         """
         
         
@@ -71,6 +79,8 @@ class Metadata:
         self._resource_id = None
         self._resource_provider = None
         self._lts_alarm_type = None
+        self._log_group_name = None
+        self._log_stream_name = None
         self.discriminator = None
 
         self.event_type = event_type
@@ -81,6 +91,10 @@ class Metadata:
         self.resource_id = resource_id
         self.resource_provider = resource_provider
         self.lts_alarm_type = lts_alarm_type
+        if log_group_name is not None:
+            self.log_group_name = log_group_name
+        if log_stream_name is not None:
+            self.log_stream_name = log_stream_name
 
     @property
     def event_type(self):
@@ -257,6 +271,50 @@ class Metadata:
         :type lts_alarm_type: str
         """
         self._lts_alarm_type = lts_alarm_type
+
+    @property
+    def log_group_name(self):
+        """Gets the log_group_name of this Metadata.
+
+        日志组原始名称
+
+        :return: The log_group_name of this Metadata.
+        :rtype: str
+        """
+        return self._log_group_name
+
+    @log_group_name.setter
+    def log_group_name(self, log_group_name):
+        """Sets the log_group_name of this Metadata.
+
+        日志组原始名称
+
+        :param log_group_name: The log_group_name of this Metadata.
+        :type log_group_name: str
+        """
+        self._log_group_name = log_group_name
+
+    @property
+    def log_stream_name(self):
+        """Gets the log_stream_name of this Metadata.
+
+        日志流原始名称
+
+        :return: The log_stream_name of this Metadata.
+        :rtype: str
+        """
+        return self._log_stream_name
+
+    @log_stream_name.setter
+    def log_stream_name(self, log_stream_name):
+        """Sets the log_stream_name of this Metadata.
+
+        日志流原始名称
+
+        :param log_stream_name: The log_stream_name of this Metadata.
+        :type log_stream_name: str
+        """
+        self._log_stream_name = log_stream_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

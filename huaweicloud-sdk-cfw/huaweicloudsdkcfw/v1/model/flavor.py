@@ -45,23 +45,23 @@ class Flavor:
 
         The model defined in huaweicloud sdk
 
-        :param version: 防火墙版本，0：标准版，1：专业版，2：铂金版，3：基础版，购买时，当防火墙“charge_mode”为“postPaid”时，仅支持专业版。“charge_mode”为“prePaid”时，支持标准版、专业版。
+        :param version: 防火墙版本，0：标准版，1：专业版，3：基础版，购买时，当防火墙“charge_mode”为“postPaid”时，仅支持专业版。“charge_mode”为“prePaid”时，支持标准版、专业版。
         :type version: int
         :param eip_count: eip数量
         :type eip_count: int
         :param vpc_count: vpc数量
         :type vpc_count: int
-        :param bandwidth: 带宽
+        :param bandwidth: 带宽，单位为mbps
         :type bandwidth: int
-        :param log_storage: 日志存储
+        :param log_storage: 日志存储，单位为byte
         :type log_storage: int
-        :param default_bandwidth: 默认防火墙带宽
+        :param default_bandwidth: 默认防火墙带宽，单位为mbps，标准版为10，专业版为50，按需专业版为200
         :type default_bandwidth: int
-        :param default_eip_count: 默认eip数
+        :param default_eip_count: 默认eip数，标准版为20，专业版为50，按需专业版为1000
         :type default_eip_count: int
-        :param default_log_storage: 默认日志存储
+        :param default_log_storage: 默认日志存储，单位为byte，默认为0
         :type default_log_storage: int
-        :param default_vpc_count: 默认vpc数
+        :param default_vpc_count: 默认vpc数，标准版为0，专业版为2，按需专业版为5
         :type default_vpc_count: int
         """
         
@@ -101,7 +101,7 @@ class Flavor:
     def version(self):
         """Gets the version of this Flavor.
 
-        防火墙版本，0：标准版，1：专业版，2：铂金版，3：基础版，购买时，当防火墙“charge_mode”为“postPaid”时，仅支持专业版。“charge_mode”为“prePaid”时，支持标准版、专业版。
+        防火墙版本，0：标准版，1：专业版，3：基础版，购买时，当防火墙“charge_mode”为“postPaid”时，仅支持专业版。“charge_mode”为“prePaid”时，支持标准版、专业版。
 
         :return: The version of this Flavor.
         :rtype: int
@@ -112,7 +112,7 @@ class Flavor:
     def version(self, version):
         """Sets the version of this Flavor.
 
-        防火墙版本，0：标准版，1：专业版，2：铂金版，3：基础版，购买时，当防火墙“charge_mode”为“postPaid”时，仅支持专业版。“charge_mode”为“prePaid”时，支持标准版、专业版。
+        防火墙版本，0：标准版，1：专业版，3：基础版，购买时，当防火墙“charge_mode”为“postPaid”时，仅支持专业版。“charge_mode”为“prePaid”时，支持标准版、专业版。
 
         :param version: The version of this Flavor.
         :type version: int
@@ -167,7 +167,7 @@ class Flavor:
     def bandwidth(self):
         """Gets the bandwidth of this Flavor.
 
-        带宽
+        带宽，单位为mbps
 
         :return: The bandwidth of this Flavor.
         :rtype: int
@@ -178,7 +178,7 @@ class Flavor:
     def bandwidth(self, bandwidth):
         """Sets the bandwidth of this Flavor.
 
-        带宽
+        带宽，单位为mbps
 
         :param bandwidth: The bandwidth of this Flavor.
         :type bandwidth: int
@@ -189,7 +189,7 @@ class Flavor:
     def log_storage(self):
         """Gets the log_storage of this Flavor.
 
-        日志存储
+        日志存储，单位为byte
 
         :return: The log_storage of this Flavor.
         :rtype: int
@@ -200,7 +200,7 @@ class Flavor:
     def log_storage(self, log_storage):
         """Sets the log_storage of this Flavor.
 
-        日志存储
+        日志存储，单位为byte
 
         :param log_storage: The log_storage of this Flavor.
         :type log_storage: int
@@ -211,7 +211,7 @@ class Flavor:
     def default_bandwidth(self):
         """Gets the default_bandwidth of this Flavor.
 
-        默认防火墙带宽
+        默认防火墙带宽，单位为mbps，标准版为10，专业版为50，按需专业版为200
 
         :return: The default_bandwidth of this Flavor.
         :rtype: int
@@ -222,7 +222,7 @@ class Flavor:
     def default_bandwidth(self, default_bandwidth):
         """Sets the default_bandwidth of this Flavor.
 
-        默认防火墙带宽
+        默认防火墙带宽，单位为mbps，标准版为10，专业版为50，按需专业版为200
 
         :param default_bandwidth: The default_bandwidth of this Flavor.
         :type default_bandwidth: int
@@ -233,7 +233,7 @@ class Flavor:
     def default_eip_count(self):
         """Gets the default_eip_count of this Flavor.
 
-        默认eip数
+        默认eip数，标准版为20，专业版为50，按需专业版为1000
 
         :return: The default_eip_count of this Flavor.
         :rtype: int
@@ -244,7 +244,7 @@ class Flavor:
     def default_eip_count(self, default_eip_count):
         """Sets the default_eip_count of this Flavor.
 
-        默认eip数
+        默认eip数，标准版为20，专业版为50，按需专业版为1000
 
         :param default_eip_count: The default_eip_count of this Flavor.
         :type default_eip_count: int
@@ -255,7 +255,7 @@ class Flavor:
     def default_log_storage(self):
         """Gets the default_log_storage of this Flavor.
 
-        默认日志存储
+        默认日志存储，单位为byte，默认为0
 
         :return: The default_log_storage of this Flavor.
         :rtype: int
@@ -266,7 +266,7 @@ class Flavor:
     def default_log_storage(self, default_log_storage):
         """Sets the default_log_storage of this Flavor.
 
-        默认日志存储
+        默认日志存储，单位为byte，默认为0
 
         :param default_log_storage: The default_log_storage of this Flavor.
         :type default_log_storage: int
@@ -277,7 +277,7 @@ class Flavor:
     def default_vpc_count(self):
         """Gets the default_vpc_count of this Flavor.
 
-        默认vpc数
+        默认vpc数，标准版为0，专业版为2，按需专业版为5
 
         :return: The default_vpc_count of this Flavor.
         :rtype: int
@@ -288,7 +288,7 @@ class Flavor:
     def default_vpc_count(self, default_vpc_count):
         """Sets the default_vpc_count of this Flavor.
 
-        默认vpc数
+        默认vpc数，标准版为0，专业版为2，按需专业版为5
 
         :param default_vpc_count: The default_vpc_count of this Flavor.
         :type default_vpc_count: int

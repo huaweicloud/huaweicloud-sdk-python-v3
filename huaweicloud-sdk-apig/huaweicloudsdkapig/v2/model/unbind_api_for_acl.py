@@ -29,7 +29,8 @@ class UnbindApiForAcl:
         'acl_name': 'str',
         'req_uri': 'str',
         'auth_type': 'str',
-        'req_method': 'str'
+        'req_method': 'str',
+        'tags': 'list[str]'
     }
 
     attribute_map = {
@@ -45,10 +46,11 @@ class UnbindApiForAcl:
         'acl_name': 'acl_name',
         'req_uri': 'req_uri',
         'auth_type': 'auth_type',
-        'req_method': 'req_method'
+        'req_method': 'req_method',
+        'tags': 'tags'
     }
 
-    def __init__(self, id=None, name=None, group_id=None, group_name=None, type=None, remark=None, run_env_name=None, run_env_id=None, publish_id=None, acl_name=None, req_uri=None, auth_type=None, req_method=None):
+    def __init__(self, id=None, name=None, group_id=None, group_name=None, type=None, remark=None, run_env_name=None, run_env_id=None, publish_id=None, acl_name=None, req_uri=None, auth_type=None, req_method=None, tags=None):
         """UnbindApiForAcl
 
         The model defined in huaweicloud sdk
@@ -79,6 +81,8 @@ class UnbindApiForAcl:
         :type auth_type: str
         :param req_method: API请求方法
         :type req_method: str
+        :param tags: API绑定的标签，标签配额默认10条，可以联系技术调整。
+        :type tags: list[str]
         """
         
         
@@ -96,6 +100,7 @@ class UnbindApiForAcl:
         self._req_uri = None
         self._auth_type = None
         self._req_method = None
+        self._tags = None
         self.discriminator = None
 
         if id is not None:
@@ -124,6 +129,8 @@ class UnbindApiForAcl:
             self.auth_type = auth_type
         if req_method is not None:
             self.req_method = req_method
+        if tags is not None:
+            self.tags = tags
 
     @property
     def id(self):
@@ -410,6 +417,28 @@ class UnbindApiForAcl:
         :type req_method: str
         """
         self._req_method = req_method
+
+    @property
+    def tags(self):
+        """Gets the tags of this UnbindApiForAcl.
+
+        API绑定的标签，标签配额默认10条，可以联系技术调整。
+
+        :return: The tags of this UnbindApiForAcl.
+        :rtype: list[str]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this UnbindApiForAcl.
+
+        API绑定的标签，标签配额默认10条，可以联系技术调整。
+
+        :param tags: The tags of this UnbindApiForAcl.
+        :type tags: list[str]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

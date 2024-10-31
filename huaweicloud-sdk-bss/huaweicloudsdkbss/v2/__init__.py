@@ -83,6 +83,7 @@ from huaweicloudsdkbss.v2.model.discount_item_v2 import DiscountItemV2
 from huaweicloudsdkbss.v2.model.discount_simple_info_v3 import DiscountSimpleInfoV3
 from huaweicloudsdkbss.v2.model.em_child_node_v2 import EmChildNodeV2
 from huaweicloudsdkbss.v2.model.enterprise_person_new import EnterprisePersonNew
+from huaweicloudsdkbss.v2.model.enterprise_project import EnterpriseProject
 from huaweicloudsdkbss.v2.model.error_detail import ErrorDetail
 from huaweicloudsdkbss.v2.model.fail_resource_info import FailResourceInfo
 from huaweicloudsdkbss.v2.model.filter_factor import FilterFactor

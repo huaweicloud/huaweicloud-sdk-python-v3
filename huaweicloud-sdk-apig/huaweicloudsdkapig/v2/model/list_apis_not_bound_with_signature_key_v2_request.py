@@ -24,7 +24,8 @@ class ListApisNotBoundWithSignatureKeyV2Request:
         'env_id': 'str',
         'api_id': 'str',
         'api_name': 'str',
-        'group_id': 'str'
+        'group_id': 'str',
+        'tags': 'str'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class ListApisNotBoundWithSignatureKeyV2Request:
         'env_id': 'env_id',
         'api_id': 'api_id',
         'api_name': 'api_name',
-        'group_id': 'group_id'
+        'group_id': 'group_id',
+        'tags': 'tags'
     }
 
-    def __init__(self, instance_id=None, offset=None, limit=None, sign_id=None, env_id=None, api_id=None, api_name=None, group_id=None):
+    def __init__(self, instance_id=None, offset=None, limit=None, sign_id=None, env_id=None, api_id=None, api_name=None, group_id=None, tags=None):
         """ListApisNotBoundWithSignatureKeyV2Request
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class ListApisNotBoundWithSignatureKeyV2Request:
         :type api_name: str
         :param group_id: API分组编号
         :type group_id: str
+        :param tags: API标签，该参数可指定多个，多个不同的参数值为或关系；不指定或为空时，表示不筛选标签；指定为#no_tags#时，表示筛选无标签API。
+        :type tags: str
         """
         
         
@@ -71,6 +75,7 @@ class ListApisNotBoundWithSignatureKeyV2Request:
         self._api_id = None
         self._api_name = None
         self._group_id = None
+        self._tags = None
         self.discriminator = None
 
         self.instance_id = instance_id
@@ -87,6 +92,8 @@ class ListApisNotBoundWithSignatureKeyV2Request:
             self.api_name = api_name
         if group_id is not None:
             self.group_id = group_id
+        if tags is not None:
+            self.tags = tags
 
     @property
     def instance_id(self):
@@ -263,6 +270,28 @@ class ListApisNotBoundWithSignatureKeyV2Request:
         :type group_id: str
         """
         self._group_id = group_id
+
+    @property
+    def tags(self):
+        """Gets the tags of this ListApisNotBoundWithSignatureKeyV2Request.
+
+        API标签，该参数可指定多个，多个不同的参数值为或关系；不指定或为空时，表示不筛选标签；指定为#no_tags#时，表示筛选无标签API。
+
+        :return: The tags of this ListApisNotBoundWithSignatureKeyV2Request.
+        :rtype: str
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this ListApisNotBoundWithSignatureKeyV2Request.
+
+        API标签，该参数可指定多个，多个不同的参数值为或关系；不指定或为空时，表示不筛选标签；指定为#no_tags#时，表示筛选无标签API。
+
+        :param tags: The tags of this ListApisNotBoundWithSignatureKeyV2Request.
+        :type tags: str
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

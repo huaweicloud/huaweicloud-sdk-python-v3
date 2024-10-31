@@ -55,21 +55,21 @@ class RuleAddressDtoForResponse:
 
         The model defined in huaweicloud sdk
 
-        :param type: 源类型0手工输入,1关联IP地址组,2域名，3地理位置，4域名组，5多对象，6域名组-DNS解析，7域名组-URL过滤。
+        :param type: 地址类型0手工输入，1关联IP地址组，2域名，3地理位置，4域名组，5多对象，6域名组-DNS解析，7域名组-应用型。
         :type type: int
-        :param address_type: 源类型0 ipv4,1 ipv6
+        :param address_type: 地址类型0 ipv4，1 ipv6，当type为0手动输入类型时不能为空
         :type address_type: int
-        :param address: 源IP，手动类型不能为空，自动及domain类型为空
+        :param address: IP地址信息
         :type address: str
-        :param address_set_id: 关联IP地址组ID，自动类型不能为空，手动类型合domain类型为空
+        :param address_set_id: 关联IP地址组ID
         :type address_set_id: str
         :param address_set_name: 地址组名称
         :type address_set_name: str
-        :param domain_address_name: 域名地址名称，域名类型时不能为空，手动类型及自动类型时为空
+        :param domain_address_name: 域名地址名称
         :type domain_address_name: str
-        :param region_list_json: 规则region列表json值
+        :param region_list_json: 规则地域列表json值
         :type region_list_json: str
-        :param region_list: 规则region列表
+        :param region_list: 规则地域列表
         :type region_list: list[:class:`huaweicloudsdkcfw.v1.IpRegionDto`]
         :param domain_set_id: 域名组id
         :type domain_set_id: str
@@ -77,7 +77,7 @@ class RuleAddressDtoForResponse:
         :type domain_set_name: str
         :param ip_address: IP地址列表
         :type ip_address: list[str]
-        :param address_group: 地址组列表
+        :param address_group: 地址组id列表
         :type address_group: list[str]
         :param address_group_names: 地址组名称列表
         :type address_group_names: list[:class:`huaweicloudsdkcfw.v1.AddressGroupVO`]
@@ -135,7 +135,7 @@ class RuleAddressDtoForResponse:
     def type(self):
         """Gets the type of this RuleAddressDtoForResponse.
 
-        源类型0手工输入,1关联IP地址组,2域名，3地理位置，4域名组，5多对象，6域名组-DNS解析，7域名组-URL过滤。
+        地址类型0手工输入，1关联IP地址组，2域名，3地理位置，4域名组，5多对象，6域名组-DNS解析，7域名组-应用型。
 
         :return: The type of this RuleAddressDtoForResponse.
         :rtype: int
@@ -146,7 +146,7 @@ class RuleAddressDtoForResponse:
     def type(self, type):
         """Sets the type of this RuleAddressDtoForResponse.
 
-        源类型0手工输入,1关联IP地址组,2域名，3地理位置，4域名组，5多对象，6域名组-DNS解析，7域名组-URL过滤。
+        地址类型0手工输入，1关联IP地址组，2域名，3地理位置，4域名组，5多对象，6域名组-DNS解析，7域名组-应用型。
 
         :param type: The type of this RuleAddressDtoForResponse.
         :type type: int
@@ -157,7 +157,7 @@ class RuleAddressDtoForResponse:
     def address_type(self):
         """Gets the address_type of this RuleAddressDtoForResponse.
 
-        源类型0 ipv4,1 ipv6
+        地址类型0 ipv4，1 ipv6，当type为0手动输入类型时不能为空
 
         :return: The address_type of this RuleAddressDtoForResponse.
         :rtype: int
@@ -168,7 +168,7 @@ class RuleAddressDtoForResponse:
     def address_type(self, address_type):
         """Sets the address_type of this RuleAddressDtoForResponse.
 
-        源类型0 ipv4,1 ipv6
+        地址类型0 ipv4，1 ipv6，当type为0手动输入类型时不能为空
 
         :param address_type: The address_type of this RuleAddressDtoForResponse.
         :type address_type: int
@@ -179,7 +179,7 @@ class RuleAddressDtoForResponse:
     def address(self):
         """Gets the address of this RuleAddressDtoForResponse.
 
-        源IP，手动类型不能为空，自动及domain类型为空
+        IP地址信息
 
         :return: The address of this RuleAddressDtoForResponse.
         :rtype: str
@@ -190,7 +190,7 @@ class RuleAddressDtoForResponse:
     def address(self, address):
         """Sets the address of this RuleAddressDtoForResponse.
 
-        源IP，手动类型不能为空，自动及domain类型为空
+        IP地址信息
 
         :param address: The address of this RuleAddressDtoForResponse.
         :type address: str
@@ -201,7 +201,7 @@ class RuleAddressDtoForResponse:
     def address_set_id(self):
         """Gets the address_set_id of this RuleAddressDtoForResponse.
 
-        关联IP地址组ID，自动类型不能为空，手动类型合domain类型为空
+        关联IP地址组ID
 
         :return: The address_set_id of this RuleAddressDtoForResponse.
         :rtype: str
@@ -212,7 +212,7 @@ class RuleAddressDtoForResponse:
     def address_set_id(self, address_set_id):
         """Sets the address_set_id of this RuleAddressDtoForResponse.
 
-        关联IP地址组ID，自动类型不能为空，手动类型合domain类型为空
+        关联IP地址组ID
 
         :param address_set_id: The address_set_id of this RuleAddressDtoForResponse.
         :type address_set_id: str
@@ -245,7 +245,7 @@ class RuleAddressDtoForResponse:
     def domain_address_name(self):
         """Gets the domain_address_name of this RuleAddressDtoForResponse.
 
-        域名地址名称，域名类型时不能为空，手动类型及自动类型时为空
+        域名地址名称
 
         :return: The domain_address_name of this RuleAddressDtoForResponse.
         :rtype: str
@@ -256,7 +256,7 @@ class RuleAddressDtoForResponse:
     def domain_address_name(self, domain_address_name):
         """Sets the domain_address_name of this RuleAddressDtoForResponse.
 
-        域名地址名称，域名类型时不能为空，手动类型及自动类型时为空
+        域名地址名称
 
         :param domain_address_name: The domain_address_name of this RuleAddressDtoForResponse.
         :type domain_address_name: str
@@ -267,7 +267,7 @@ class RuleAddressDtoForResponse:
     def region_list_json(self):
         """Gets the region_list_json of this RuleAddressDtoForResponse.
 
-        规则region列表json值
+        规则地域列表json值
 
         :return: The region_list_json of this RuleAddressDtoForResponse.
         :rtype: str
@@ -278,7 +278,7 @@ class RuleAddressDtoForResponse:
     def region_list_json(self, region_list_json):
         """Sets the region_list_json of this RuleAddressDtoForResponse.
 
-        规则region列表json值
+        规则地域列表json值
 
         :param region_list_json: The region_list_json of this RuleAddressDtoForResponse.
         :type region_list_json: str
@@ -289,7 +289,7 @@ class RuleAddressDtoForResponse:
     def region_list(self):
         """Gets the region_list of this RuleAddressDtoForResponse.
 
-        规则region列表
+        规则地域列表
 
         :return: The region_list of this RuleAddressDtoForResponse.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.IpRegionDto`]
@@ -300,7 +300,7 @@ class RuleAddressDtoForResponse:
     def region_list(self, region_list):
         """Sets the region_list of this RuleAddressDtoForResponse.
 
-        规则region列表
+        规则地域列表
 
         :param region_list: The region_list of this RuleAddressDtoForResponse.
         :type region_list: list[:class:`huaweicloudsdkcfw.v1.IpRegionDto`]
@@ -377,7 +377,7 @@ class RuleAddressDtoForResponse:
     def address_group(self):
         """Gets the address_group of this RuleAddressDtoForResponse.
 
-        地址组列表
+        地址组id列表
 
         :return: The address_group of this RuleAddressDtoForResponse.
         :rtype: list[str]
@@ -388,7 +388,7 @@ class RuleAddressDtoForResponse:
     def address_group(self, address_group):
         """Sets the address_group of this RuleAddressDtoForResponse.
 
-        地址组列表
+        地址组id列表
 
         :param address_group: The address_group of this RuleAddressDtoForResponse.
         :type address_group: list[str]

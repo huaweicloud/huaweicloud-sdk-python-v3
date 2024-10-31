@@ -33,7 +33,7 @@ class HttpQueryCfwFlowLogsResponseDTOData:
 
         The model defined in huaweicloud sdk
 
-        :param total: 返回数量
+        :param total: 查询流日志返回值记录总数
         :type total: int
         :param limit: 每页显示个数，范围为1-1024
         :type limit: int
@@ -59,7 +59,7 @@ class HttpQueryCfwFlowLogsResponseDTOData:
     def total(self):
         """Gets the total of this HttpQueryCfwFlowLogsResponseDTOData.
 
-        返回数量
+        查询流日志返回值记录总数
 
         :return: The total of this HttpQueryCfwFlowLogsResponseDTOData.
         :rtype: int
@@ -70,7 +70,7 @@ class HttpQueryCfwFlowLogsResponseDTOData:
     def total(self, total):
         """Sets the total of this HttpQueryCfwFlowLogsResponseDTOData.
 
-        返回数量
+        查询流日志返回值记录总数
 
         :param total: The total of this HttpQueryCfwFlowLogsResponseDTOData.
         :type total: int

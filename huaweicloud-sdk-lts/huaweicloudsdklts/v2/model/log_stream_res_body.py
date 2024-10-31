@@ -20,21 +20,33 @@ class LogStreamResBody:
         'creation_time': 'int',
         'log_stream_id': 'str',
         'log_stream_name': 'str',
+        'log_stream_name_alias': 'str',
         'tag': 'dict(str, str)',
         'filter_count': 'int',
-        'is_favorite': 'bool'
+        'is_favorite': 'bool',
+        'whether_log_storage': 'bool',
+        'hot_cold_separation': 'bool',
+        'auth_web_tracking': 'bool',
+        'ttl_in_days': 'int',
+        'hot_storage_days': 'int'
     }
 
     attribute_map = {
         'creation_time': 'creation_time',
         'log_stream_id': 'log_stream_id',
         'log_stream_name': 'log_stream_name',
+        'log_stream_name_alias': 'log_stream_name_alias',
         'tag': 'tag',
         'filter_count': 'filter_count',
-        'is_favorite': 'is_favorite'
+        'is_favorite': 'is_favorite',
+        'whether_log_storage': 'whether_log_storage',
+        'hot_cold_separation': 'hot_cold_separation',
+        'auth_web_tracking': 'auth_web_tracking',
+        'ttl_in_days': 'ttl_in_days',
+        'hot_storage_days': 'hot_storage_days'
     }
 
-    def __init__(self, creation_time=None, log_stream_id=None, log_stream_name=None, tag=None, filter_count=None, is_favorite=None):
+    def __init__(self, creation_time=None, log_stream_id=None, log_stream_name=None, log_stream_name_alias=None, tag=None, filter_count=None, is_favorite=None, whether_log_storage=None, hot_cold_separation=None, auth_web_tracking=None, ttl_in_days=None, hot_storage_days=None):
         """LogStreamResBody
 
         The model defined in huaweicloud sdk
@@ -45,12 +57,24 @@ class LogStreamResBody:
         :type log_stream_id: str
         :param log_stream_name: 日志流名称
         :type log_stream_name: str
+        :param log_stream_name_alias: 日志流别名
+        :type log_stream_name_alias: str
         :param tag: 日志流所属标签
         :type tag: dict(str, str)
         :param filter_count: 过滤器个数
         :type filter_count: int
         :param is_favorite: 是否收藏日志流。
         :type is_favorite: bool
+        :param whether_log_storage: 是否日志存储
+        :type whether_log_storage: bool
+        :param hot_cold_separation: 是否冷存储
+        :type hot_cold_separation: bool
+        :param auth_web_tracking: 匿名写入开关
+        :type auth_web_tracking: bool
+        :param ttl_in_days: 存储时间
+        :type ttl_in_days: int
+        :param hot_storage_days: 标准存储时间
+        :type hot_storage_days: int
         """
         
         
@@ -58,9 +82,15 @@ class LogStreamResBody:
         self._creation_time = None
         self._log_stream_id = None
         self._log_stream_name = None
+        self._log_stream_name_alias = None
         self._tag = None
         self._filter_count = None
         self._is_favorite = None
+        self._whether_log_storage = None
+        self._hot_cold_separation = None
+        self._auth_web_tracking = None
+        self._ttl_in_days = None
+        self._hot_storage_days = None
         self.discriminator = None
 
         if creation_time is not None:
@@ -69,12 +99,24 @@ class LogStreamResBody:
             self.log_stream_id = log_stream_id
         if log_stream_name is not None:
             self.log_stream_name = log_stream_name
+        if log_stream_name_alias is not None:
+            self.log_stream_name_alias = log_stream_name_alias
         if tag is not None:
             self.tag = tag
         if filter_count is not None:
             self.filter_count = filter_count
         if is_favorite is not None:
             self.is_favorite = is_favorite
+        if whether_log_storage is not None:
+            self.whether_log_storage = whether_log_storage
+        if hot_cold_separation is not None:
+            self.hot_cold_separation = hot_cold_separation
+        if auth_web_tracking is not None:
+            self.auth_web_tracking = auth_web_tracking
+        if ttl_in_days is not None:
+            self.ttl_in_days = ttl_in_days
+        if hot_storage_days is not None:
+            self.hot_storage_days = hot_storage_days
 
     @property
     def creation_time(self):
@@ -143,6 +185,28 @@ class LogStreamResBody:
         self._log_stream_name = log_stream_name
 
     @property
+    def log_stream_name_alias(self):
+        """Gets the log_stream_name_alias of this LogStreamResBody.
+
+        日志流别名
+
+        :return: The log_stream_name_alias of this LogStreamResBody.
+        :rtype: str
+        """
+        return self._log_stream_name_alias
+
+    @log_stream_name_alias.setter
+    def log_stream_name_alias(self, log_stream_name_alias):
+        """Sets the log_stream_name_alias of this LogStreamResBody.
+
+        日志流别名
+
+        :param log_stream_name_alias: The log_stream_name_alias of this LogStreamResBody.
+        :type log_stream_name_alias: str
+        """
+        self._log_stream_name_alias = log_stream_name_alias
+
+    @property
     def tag(self):
         """Gets the tag of this LogStreamResBody.
 
@@ -207,6 +271,116 @@ class LogStreamResBody:
         :type is_favorite: bool
         """
         self._is_favorite = is_favorite
+
+    @property
+    def whether_log_storage(self):
+        """Gets the whether_log_storage of this LogStreamResBody.
+
+        是否日志存储
+
+        :return: The whether_log_storage of this LogStreamResBody.
+        :rtype: bool
+        """
+        return self._whether_log_storage
+
+    @whether_log_storage.setter
+    def whether_log_storage(self, whether_log_storage):
+        """Sets the whether_log_storage of this LogStreamResBody.
+
+        是否日志存储
+
+        :param whether_log_storage: The whether_log_storage of this LogStreamResBody.
+        :type whether_log_storage: bool
+        """
+        self._whether_log_storage = whether_log_storage
+
+    @property
+    def hot_cold_separation(self):
+        """Gets the hot_cold_separation of this LogStreamResBody.
+
+        是否冷存储
+
+        :return: The hot_cold_separation of this LogStreamResBody.
+        :rtype: bool
+        """
+        return self._hot_cold_separation
+
+    @hot_cold_separation.setter
+    def hot_cold_separation(self, hot_cold_separation):
+        """Sets the hot_cold_separation of this LogStreamResBody.
+
+        是否冷存储
+
+        :param hot_cold_separation: The hot_cold_separation of this LogStreamResBody.
+        :type hot_cold_separation: bool
+        """
+        self._hot_cold_separation = hot_cold_separation
+
+    @property
+    def auth_web_tracking(self):
+        """Gets the auth_web_tracking of this LogStreamResBody.
+
+        匿名写入开关
+
+        :return: The auth_web_tracking of this LogStreamResBody.
+        :rtype: bool
+        """
+        return self._auth_web_tracking
+
+    @auth_web_tracking.setter
+    def auth_web_tracking(self, auth_web_tracking):
+        """Sets the auth_web_tracking of this LogStreamResBody.
+
+        匿名写入开关
+
+        :param auth_web_tracking: The auth_web_tracking of this LogStreamResBody.
+        :type auth_web_tracking: bool
+        """
+        self._auth_web_tracking = auth_web_tracking
+
+    @property
+    def ttl_in_days(self):
+        """Gets the ttl_in_days of this LogStreamResBody.
+
+        存储时间
+
+        :return: The ttl_in_days of this LogStreamResBody.
+        :rtype: int
+        """
+        return self._ttl_in_days
+
+    @ttl_in_days.setter
+    def ttl_in_days(self, ttl_in_days):
+        """Sets the ttl_in_days of this LogStreamResBody.
+
+        存储时间
+
+        :param ttl_in_days: The ttl_in_days of this LogStreamResBody.
+        :type ttl_in_days: int
+        """
+        self._ttl_in_days = ttl_in_days
+
+    @property
+    def hot_storage_days(self):
+        """Gets the hot_storage_days of this LogStreamResBody.
+
+        标准存储时间
+
+        :return: The hot_storage_days of this LogStreamResBody.
+        :rtype: int
+        """
+        return self._hot_storage_days
+
+    @hot_storage_days.setter
+    def hot_storage_days(self, hot_storage_days):
+        """Sets the hot_storage_days of this LogStreamResBody.
+
+        标准存储时间
+
+        :param hot_storage_days: The hot_storage_days of this LogStreamResBody.
+        :type hot_storage_days: int
+        """
+        self._hot_storage_days = hot_storage_days
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -35,13 +35,13 @@ class AddAddressSetDto:
 
         The model defined in huaweicloud sdk
 
-        :param object_id: 互联网边界防护对象id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，type为0的为互联网边界防护对象id。
+        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
         :type object_id: str
         :param name: 地址组名称
         :type name: str
         :param description: 地址组描述
         :type description: str
-        :param address_type: 地址类型0 ipv4,1 ipv6
+        :param address_type: 地址类型0 ipv4，1 ipv6
         :type address_type: int
         """
         
@@ -64,7 +64,7 @@ class AddAddressSetDto:
     def object_id(self):
         """Gets the object_id of this AddAddressSetDto.
 
-        互联网边界防护对象id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，type为0的为互联网边界防护对象id。
+        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
 
         :return: The object_id of this AddAddressSetDto.
         :rtype: str
@@ -75,7 +75,7 @@ class AddAddressSetDto:
     def object_id(self, object_id):
         """Sets the object_id of this AddAddressSetDto.
 
-        互联网边界防护对象id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，type为0的为互联网边界防护对象id。
+        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
 
         :param object_id: The object_id of this AddAddressSetDto.
         :type object_id: str
@@ -130,7 +130,7 @@ class AddAddressSetDto:
     def address_type(self):
         """Gets the address_type of this AddAddressSetDto.
 
-        地址类型0 ipv4,1 ipv6
+        地址类型0 ipv4，1 ipv6
 
         :return: The address_type of this AddAddressSetDto.
         :rtype: int
@@ -141,7 +141,7 @@ class AddAddressSetDto:
     def address_type(self, address_type):
         """Sets the address_type of this AddAddressSetDto.
 
-        地址类型0 ipv4,1 ipv6
+        地址类型0 ipv4，1 ipv6
 
         :param address_type: The address_type of this AddAddressSetDto.
         :type address_type: int

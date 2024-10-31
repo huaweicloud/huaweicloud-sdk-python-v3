@@ -31,9 +31,9 @@ class AddAddressItemsInfoDto:
 
         The model defined in huaweicloud sdk
 
-        :param set_id: 地址组id
+        :param set_id: 地址组id，可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
         :type set_id: str
-        :param address_items: 地址组成员信息
+        :param address_items: 地址组成员列表
         :type address_items: list[:class:`huaweicloudsdkcfw.v1.AddAddressItemsInfoDtoAddressItems`]
         """
         
@@ -52,7 +52,7 @@ class AddAddressItemsInfoDto:
     def set_id(self):
         """Gets the set_id of this AddAddressItemsInfoDto.
 
-        地址组id
+        地址组id，可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
         :return: The set_id of this AddAddressItemsInfoDto.
         :rtype: str
@@ -63,7 +63,7 @@ class AddAddressItemsInfoDto:
     def set_id(self, set_id):
         """Sets the set_id of this AddAddressItemsInfoDto.
 
-        地址组id
+        地址组id，可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
         :param set_id: The set_id of this AddAddressItemsInfoDto.
         :type set_id: str
@@ -74,7 +74,7 @@ class AddAddressItemsInfoDto:
     def address_items(self):
         """Gets the address_items of this AddAddressItemsInfoDto.
 
-        地址组成员信息
+        地址组成员列表
 
         :return: The address_items of this AddAddressItemsInfoDto.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.AddAddressItemsInfoDtoAddressItems`]
@@ -85,7 +85,7 @@ class AddAddressItemsInfoDto:
     def address_items(self, address_items):
         """Sets the address_items of this AddAddressItemsInfoDto.
 
-        地址组成员信息
+        地址组成员列表
 
         :param address_items: The address_items of this AddAddressItemsInfoDto.
         :type address_items: list[:class:`huaweicloudsdkcfw.v1.AddAddressItemsInfoDtoAddressItems`]

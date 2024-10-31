@@ -17,7 +17,7 @@ class AddressItems:
     sensitive_list = []
 
     openapi_types = {
-        'items': 'list[IdObject]',
+        'items': 'list[AddressItemIdWithoutName]',
         'covered_ip': 'list[CoveredIPVO]'
     }
 
@@ -32,7 +32,7 @@ class AddressItems:
         The model defined in huaweicloud sdk
 
         :param items: 地址组成员id列表
-        :type items: list[:class:`huaweicloudsdkcfw.v1.IdObject`]
+        :type items: list[:class:`huaweicloudsdkcfw.v1.AddressItemIdWithoutName`]
         :param covered_ip: 覆盖ip列表
         :type covered_ip: list[:class:`huaweicloudsdkcfw.v1.CoveredIPVO`]
         """
@@ -55,7 +55,7 @@ class AddressItems:
         地址组成员id列表
 
         :return: The items of this AddressItems.
-        :rtype: list[:class:`huaweicloudsdkcfw.v1.IdObject`]
+        :rtype: list[:class:`huaweicloudsdkcfw.v1.AddressItemIdWithoutName`]
         """
         return self._items
 
@@ -66,7 +66,7 @@ class AddressItems:
         地址组成员id列表
 
         :param items: The items of this AddressItems.
-        :type items: list[:class:`huaweicloudsdkcfw.v1.IdObject`]
+        :type items: list[:class:`huaweicloudsdkcfw.v1.AddressItemIdWithoutName`]
         """
         self._items = items
 

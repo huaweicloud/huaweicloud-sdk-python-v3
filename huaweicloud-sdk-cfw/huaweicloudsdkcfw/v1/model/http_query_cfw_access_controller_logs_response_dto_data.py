@@ -33,11 +33,11 @@ class HttpQueryCfwAccessControllerLogsResponseDTOData:
 
         The model defined in huaweicloud sdk
 
-        :param total: 返回数量
+        :param total: 查询访问控制日志记录总数
         :type total: int
         :param limit: 每页显示个数，范围为1-1024
         :type limit: int
-        :param records: 记录
+        :param records: 查询访问控制日志记录
         :type records: list[:class:`huaweicloudsdkcfw.v1.HttpQueryCfwAccessControllerLogsResponseDTODataRecords`]
         """
         
@@ -59,7 +59,7 @@ class HttpQueryCfwAccessControllerLogsResponseDTOData:
     def total(self):
         """Gets the total of this HttpQueryCfwAccessControllerLogsResponseDTOData.
 
-        返回数量
+        查询访问控制日志记录总数
 
         :return: The total of this HttpQueryCfwAccessControllerLogsResponseDTOData.
         :rtype: int
@@ -70,7 +70,7 @@ class HttpQueryCfwAccessControllerLogsResponseDTOData:
     def total(self, total):
         """Sets the total of this HttpQueryCfwAccessControllerLogsResponseDTOData.
 
-        返回数量
+        查询访问控制日志记录总数
 
         :param total: The total of this HttpQueryCfwAccessControllerLogsResponseDTOData.
         :type total: int
@@ -103,7 +103,7 @@ class HttpQueryCfwAccessControllerLogsResponseDTOData:
     def records(self):
         """Gets the records of this HttpQueryCfwAccessControllerLogsResponseDTOData.
 
-        记录
+        查询访问控制日志记录
 
         :return: The records of this HttpQueryCfwAccessControllerLogsResponseDTOData.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.HttpQueryCfwAccessControllerLogsResponseDTODataRecords`]
@@ -114,7 +114,7 @@ class HttpQueryCfwAccessControllerLogsResponseDTOData:
     def records(self, records):
         """Sets the records of this HttpQueryCfwAccessControllerLogsResponseDTOData.
 
-        记录
+        查询访问控制日志记录
 
         :param records: The records of this HttpQueryCfwAccessControllerLogsResponseDTOData.
         :type records: list[:class:`huaweicloudsdkcfw.v1.HttpQueryCfwAccessControllerLogsResponseDTODataRecords`]

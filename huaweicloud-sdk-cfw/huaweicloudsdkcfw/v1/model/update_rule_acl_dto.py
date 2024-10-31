@@ -19,12 +19,10 @@ class UpdateRuleAclDto:
     openapi_types = {
         'address_type': 'int',
         'name': 'str',
-        'sequence': 'OrderRuleAclDto',
         'direction': 'int',
         'action_type': 'int',
         'status': 'int',
         'applications': 'list[str]',
-        'applications_json_string': 'str',
         'description': 'str',
         'long_connect_time_hour': 'int',
         'long_connect_time_minute': 'int',
@@ -41,12 +39,10 @@ class UpdateRuleAclDto:
     attribute_map = {
         'address_type': 'address_type',
         'name': 'name',
-        'sequence': 'sequence',
         'direction': 'direction',
         'action_type': 'action_type',
         'status': 'status',
         'applications': 'applications',
-        'applications_json_string': 'applicationsJsonString',
         'description': 'description',
         'long_connect_time_hour': 'long_connect_time_hour',
         'long_connect_time_minute': 'long_connect_time_minute',
@@ -60,32 +56,28 @@ class UpdateRuleAclDto:
         'tag': 'tag'
     }
 
-    def __init__(self, address_type=None, name=None, sequence=None, direction=None, action_type=None, status=None, applications=None, applications_json_string=None, description=None, long_connect_time_hour=None, long_connect_time_minute=None, long_connect_time_second=None, long_connect_time=None, long_connect_enable=None, source=None, destination=None, service=None, type=None, tag=None):
+    def __init__(self, address_type=None, name=None, direction=None, action_type=None, status=None, applications=None, description=None, long_connect_time_hour=None, long_connect_time_minute=None, long_connect_time_second=None, long_connect_time=None, long_connect_enable=None, source=None, destination=None, service=None, type=None, tag=None):
         """UpdateRuleAclDto
 
         The model defined in huaweicloud sdk
 
-        :param address_type: 地址类型，0 ipv4,1 ipv6
+        :param address_type: 地址类型，0表示ipv4，1表示ipv6
         :type address_type: int
         :param name: 规则名称
         :type name: str
-        :param sequence: 
-        :type sequence: :class:`huaweicloudsdkcfw.v1.OrderRuleAclDto`
-        :param direction: 方向：0表示外到内，1表示内到外【说明：规则type&#x3D;0：互联网规则 | 2：nat规则时方向值必填】
+        :param direction: 方向：0表示外到内，1表示内到外,规则type&#x3D;0（互联网规则）或者type&#x3D; 2（nat规则）时方向值必填
         :type direction: int
-        :param action_type: 动作0：permit,1：deny
+        :param action_type: 规则动作，0表示允许通行（permit），1表示拒绝通行（deny）
         :type action_type: int
-        :param status: 规则下发状态 0：禁用,1：启用
+        :param status: 规则启用状态，0表示禁用，1表示启用
         :type status: int
-        :param applications: 应用列表
+        :param applications: 规则应用列表，规则应用类型包括：“HTTP”，\&quot;HTTPS\&quot;，\&quot;TLS1\&quot;，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
         :type applications: list[str]
-        :param applications_json_string: 应用列表转化为字符串
-        :type applications_json_string: str
-        :param description: 描述
+        :param description: 规则描述
         :type description: str
-        :param long_connect_time_hour: 长连接时长小时
+        :param long_connect_time_hour: 长连接时长对应小时
         :type long_connect_time_hour: int
-        :param long_connect_time_minute: 长连接时长分钟
+        :param long_connect_time_minute: 长连接时长对应分钟
         :type long_connect_time_minute: int
         :param long_connect_time_second: 长连接时长秒
         :type long_connect_time_second: int
@@ -99,7 +91,7 @@ class UpdateRuleAclDto:
         :type destination: :class:`huaweicloudsdkcfw.v1.RuleAddressDto`
         :param service: 
         :type service: :class:`huaweicloudsdkcfw.v1.RuleServiceDto`
-        :param type: 规则type，0：互联网规则，1：vpc规则，2：nat规则
+        :param type: 规则类型，0：互联网规则，1：vpc规则，2：nat规则
         :type type: int
         :param tag: 
         :type tag: :class:`huaweicloudsdkcfw.v1.TagsVO`
@@ -109,12 +101,10 @@ class UpdateRuleAclDto:
 
         self._address_type = None
         self._name = None
-        self._sequence = None
         self._direction = None
         self._action_type = None
         self._status = None
         self._applications = None
-        self._applications_json_string = None
         self._description = None
         self._long_connect_time_hour = None
         self._long_connect_time_minute = None
@@ -132,8 +122,6 @@ class UpdateRuleAclDto:
             self.address_type = address_type
         if name is not None:
             self.name = name
-        if sequence is not None:
-            self.sequence = sequence
         if direction is not None:
             self.direction = direction
         if action_type is not None:
@@ -142,8 +130,6 @@ class UpdateRuleAclDto:
             self.status = status
         if applications is not None:
             self.applications = applications
-        if applications_json_string is not None:
-            self.applications_json_string = applications_json_string
         if description is not None:
             self.description = description
         if long_connect_time_hour is not None:
@@ -171,7 +157,7 @@ class UpdateRuleAclDto:
     def address_type(self):
         """Gets the address_type of this UpdateRuleAclDto.
 
-        地址类型，0 ipv4,1 ipv6
+        地址类型，0表示ipv4，1表示ipv6
 
         :return: The address_type of this UpdateRuleAclDto.
         :rtype: int
@@ -182,7 +168,7 @@ class UpdateRuleAclDto:
     def address_type(self, address_type):
         """Sets the address_type of this UpdateRuleAclDto.
 
-        地址类型，0 ipv4,1 ipv6
+        地址类型，0表示ipv4，1表示ipv6
 
         :param address_type: The address_type of this UpdateRuleAclDto.
         :type address_type: int
@@ -212,28 +198,10 @@ class UpdateRuleAclDto:
         self._name = name
 
     @property
-    def sequence(self):
-        """Gets the sequence of this UpdateRuleAclDto.
-
-        :return: The sequence of this UpdateRuleAclDto.
-        :rtype: :class:`huaweicloudsdkcfw.v1.OrderRuleAclDto`
-        """
-        return self._sequence
-
-    @sequence.setter
-    def sequence(self, sequence):
-        """Sets the sequence of this UpdateRuleAclDto.
-
-        :param sequence: The sequence of this UpdateRuleAclDto.
-        :type sequence: :class:`huaweicloudsdkcfw.v1.OrderRuleAclDto`
-        """
-        self._sequence = sequence
-
-    @property
     def direction(self):
         """Gets the direction of this UpdateRuleAclDto.
 
-        方向：0表示外到内，1表示内到外【说明：规则type=0：互联网规则 | 2：nat规则时方向值必填】
+        方向：0表示外到内，1表示内到外,规则type=0（互联网规则）或者type= 2（nat规则）时方向值必填
 
         :return: The direction of this UpdateRuleAclDto.
         :rtype: int
@@ -244,7 +212,7 @@ class UpdateRuleAclDto:
     def direction(self, direction):
         """Sets the direction of this UpdateRuleAclDto.
 
-        方向：0表示外到内，1表示内到外【说明：规则type=0：互联网规则 | 2：nat规则时方向值必填】
+        方向：0表示外到内，1表示内到外,规则type=0（互联网规则）或者type= 2（nat规则）时方向值必填
 
         :param direction: The direction of this UpdateRuleAclDto.
         :type direction: int
@@ -255,7 +223,7 @@ class UpdateRuleAclDto:
     def action_type(self):
         """Gets the action_type of this UpdateRuleAclDto.
 
-        动作0：permit,1：deny
+        规则动作，0表示允许通行（permit），1表示拒绝通行（deny）
 
         :return: The action_type of this UpdateRuleAclDto.
         :rtype: int
@@ -266,7 +234,7 @@ class UpdateRuleAclDto:
     def action_type(self, action_type):
         """Sets the action_type of this UpdateRuleAclDto.
 
-        动作0：permit,1：deny
+        规则动作，0表示允许通行（permit），1表示拒绝通行（deny）
 
         :param action_type: The action_type of this UpdateRuleAclDto.
         :type action_type: int
@@ -277,7 +245,7 @@ class UpdateRuleAclDto:
     def status(self):
         """Gets the status of this UpdateRuleAclDto.
 
-        规则下发状态 0：禁用,1：启用
+        规则启用状态，0表示禁用，1表示启用
 
         :return: The status of this UpdateRuleAclDto.
         :rtype: int
@@ -288,7 +256,7 @@ class UpdateRuleAclDto:
     def status(self, status):
         """Sets the status of this UpdateRuleAclDto.
 
-        规则下发状态 0：禁用,1：启用
+        规则启用状态，0表示禁用，1表示启用
 
         :param status: The status of this UpdateRuleAclDto.
         :type status: int
@@ -299,7 +267,7 @@ class UpdateRuleAclDto:
     def applications(self):
         """Gets the applications of this UpdateRuleAclDto.
 
-        应用列表
+        规则应用列表，规则应用类型包括：“HTTP”，\"HTTPS\"，\"TLS1\"，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
 
         :return: The applications of this UpdateRuleAclDto.
         :rtype: list[str]
@@ -310,7 +278,7 @@ class UpdateRuleAclDto:
     def applications(self, applications):
         """Sets the applications of this UpdateRuleAclDto.
 
-        应用列表
+        规则应用列表，规则应用类型包括：“HTTP”，\"HTTPS\"，\"TLS1\"，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
 
         :param applications: The applications of this UpdateRuleAclDto.
         :type applications: list[str]
@@ -318,32 +286,10 @@ class UpdateRuleAclDto:
         self._applications = applications
 
     @property
-    def applications_json_string(self):
-        """Gets the applications_json_string of this UpdateRuleAclDto.
-
-        应用列表转化为字符串
-
-        :return: The applications_json_string of this UpdateRuleAclDto.
-        :rtype: str
-        """
-        return self._applications_json_string
-
-    @applications_json_string.setter
-    def applications_json_string(self, applications_json_string):
-        """Sets the applications_json_string of this UpdateRuleAclDto.
-
-        应用列表转化为字符串
-
-        :param applications_json_string: The applications_json_string of this UpdateRuleAclDto.
-        :type applications_json_string: str
-        """
-        self._applications_json_string = applications_json_string
-
-    @property
     def description(self):
         """Gets the description of this UpdateRuleAclDto.
 
-        描述
+        规则描述
 
         :return: The description of this UpdateRuleAclDto.
         :rtype: str
@@ -354,7 +300,7 @@ class UpdateRuleAclDto:
     def description(self, description):
         """Sets the description of this UpdateRuleAclDto.
 
-        描述
+        规则描述
 
         :param description: The description of this UpdateRuleAclDto.
         :type description: str
@@ -365,7 +311,7 @@ class UpdateRuleAclDto:
     def long_connect_time_hour(self):
         """Gets the long_connect_time_hour of this UpdateRuleAclDto.
 
-        长连接时长小时
+        长连接时长对应小时
 
         :return: The long_connect_time_hour of this UpdateRuleAclDto.
         :rtype: int
@@ -376,7 +322,7 @@ class UpdateRuleAclDto:
     def long_connect_time_hour(self, long_connect_time_hour):
         """Sets the long_connect_time_hour of this UpdateRuleAclDto.
 
-        长连接时长小时
+        长连接时长对应小时
 
         :param long_connect_time_hour: The long_connect_time_hour of this UpdateRuleAclDto.
         :type long_connect_time_hour: int
@@ -387,7 +333,7 @@ class UpdateRuleAclDto:
     def long_connect_time_minute(self):
         """Gets the long_connect_time_minute of this UpdateRuleAclDto.
 
-        长连接时长分钟
+        长连接时长对应分钟
 
         :return: The long_connect_time_minute of this UpdateRuleAclDto.
         :rtype: int
@@ -398,7 +344,7 @@ class UpdateRuleAclDto:
     def long_connect_time_minute(self, long_connect_time_minute):
         """Sets the long_connect_time_minute of this UpdateRuleAclDto.
 
-        长连接时长分钟
+        长连接时长对应分钟
 
         :param long_connect_time_minute: The long_connect_time_minute of this UpdateRuleAclDto.
         :type long_connect_time_minute: int
@@ -529,7 +475,7 @@ class UpdateRuleAclDto:
     def type(self):
         """Gets the type of this UpdateRuleAclDto.
 
-        规则type，0：互联网规则，1：vpc规则，2：nat规则
+        规则类型，0：互联网规则，1：vpc规则，2：nat规则
 
         :return: The type of this UpdateRuleAclDto.
         :rtype: int
@@ -540,7 +486,7 @@ class UpdateRuleAclDto:
     def type(self, type):
         """Sets the type of this UpdateRuleAclDto.
 
-        规则type，0：互联网规则，1：vpc规则，2：nat规则
+        规则类型，0：互联网规则，1：vpc规则，2：nat规则
 
         :param type: The type of this UpdateRuleAclDto.
         :type type: int

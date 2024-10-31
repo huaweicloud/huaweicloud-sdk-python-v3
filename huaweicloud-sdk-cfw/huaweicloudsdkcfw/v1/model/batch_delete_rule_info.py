@@ -31,9 +31,9 @@ class BatchDeleteRuleInfo:
 
         The model defined in huaweicloud sdk
 
-        :param name: acl名称
+        :param name: 批量删除的acl的名称
         :type name: str
-        :param id: aclId
+        :param id: 批量删除的acl的id
         :type id: str
         """
         
@@ -52,7 +52,7 @@ class BatchDeleteRuleInfo:
     def name(self):
         """Gets the name of this BatchDeleteRuleInfo.
 
-        acl名称
+        批量删除的acl的名称
 
         :return: The name of this BatchDeleteRuleInfo.
         :rtype: str
@@ -63,7 +63,7 @@ class BatchDeleteRuleInfo:
     def name(self, name):
         """Sets the name of this BatchDeleteRuleInfo.
 
-        acl名称
+        批量删除的acl的名称
 
         :param name: The name of this BatchDeleteRuleInfo.
         :type name: str
@@ -74,7 +74,7 @@ class BatchDeleteRuleInfo:
     def id(self):
         """Gets the id of this BatchDeleteRuleInfo.
 
-        aclId
+        批量删除的acl的id
 
         :return: The id of this BatchDeleteRuleInfo.
         :rtype: str
@@ -85,7 +85,7 @@ class BatchDeleteRuleInfo:
     def id(self, id):
         """Sets the id of this BatchDeleteRuleInfo.
 
-        aclId
+        批量删除的acl的id
 
         :param id: The id of this BatchDeleteRuleInfo.
         :type id: str

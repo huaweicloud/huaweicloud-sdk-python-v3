@@ -41,7 +41,7 @@ class TestCaseListVo:
         'associate_issue_info': 'AssociateIssueInfoVo',
         'associate_defect_info': 'AssociateDefectInfoVo',
         'case_type': 'int',
-        'labels': 'str',
+        'labels': 'list[LabelVo]',
         'custom_field_info': 'list[CustomFieldVo]',
         'is_test_design': 'bool',
         'last_modified': 'int',
@@ -134,7 +134,7 @@ class TestCaseListVo:
         :param case_type: 用例类型
         :type case_type: int
         :param labels: 用例标签名称列表
-        :type labels: str
+        :type labels: list[:class:`huaweicloudsdkcloudtest.v1.LabelVo`]
         :param custom_field_info: 自定义字段信息
         :type custom_field_info: list[:class:`huaweicloudsdkcloudtest.v1.CustomFieldVo`]
         :param is_test_design: 是否来自测试设计（null：不限，false：否来自测试设计，true：来自测试设计）
@@ -728,7 +728,7 @@ class TestCaseListVo:
         用例标签名称列表
 
         :return: The labels of this TestCaseListVo.
-        :rtype: str
+        :rtype: list[:class:`huaweicloudsdkcloudtest.v1.LabelVo`]
         """
         return self._labels
 
@@ -739,7 +739,7 @@ class TestCaseListVo:
         用例标签名称列表
 
         :param labels: The labels of this TestCaseListVo.
-        :type labels: str
+        :type labels: list[:class:`huaweicloudsdkcloudtest.v1.LabelVo`]
         """
         self._labels = labels
 

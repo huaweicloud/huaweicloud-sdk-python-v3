@@ -31,9 +31,9 @@ class CreateEWFirewallInspectVpcResp:
 
         The model defined in huaweicloud sdk
 
-        :param vpc_id: vpc id
+        :param vpc_id: 引流VPC的ID
         :type vpc_id: str
-        :param subnet_ids: 子网列表
+        :param subnet_ids: 创建的引流VPC的子网ID列表
         :type subnet_ids: list[str]
         """
         
@@ -52,7 +52,7 @@ class CreateEWFirewallInspectVpcResp:
     def vpc_id(self):
         """Gets the vpc_id of this CreateEWFirewallInspectVpcResp.
 
-        vpc id
+        引流VPC的ID
 
         :return: The vpc_id of this CreateEWFirewallInspectVpcResp.
         :rtype: str
@@ -63,7 +63,7 @@ class CreateEWFirewallInspectVpcResp:
     def vpc_id(self, vpc_id):
         """Sets the vpc_id of this CreateEWFirewallInspectVpcResp.
 
-        vpc id
+        引流VPC的ID
 
         :param vpc_id: The vpc_id of this CreateEWFirewallInspectVpcResp.
         :type vpc_id: str
@@ -74,7 +74,7 @@ class CreateEWFirewallInspectVpcResp:
     def subnet_ids(self):
         """Gets the subnet_ids of this CreateEWFirewallInspectVpcResp.
 
-        子网列表
+        创建的引流VPC的子网ID列表
 
         :return: The subnet_ids of this CreateEWFirewallInspectVpcResp.
         :rtype: list[str]
@@ -85,7 +85,7 @@ class CreateEWFirewallInspectVpcResp:
     def subnet_ids(self, subnet_ids):
         """Sets the subnet_ids of this CreateEWFirewallInspectVpcResp.
 
-        子网列表
+        创建的引流VPC的子网ID列表
 
         :param subnet_ids: The subnet_ids of this CreateEWFirewallInspectVpcResp.
         :type subnet_ids: list[str]

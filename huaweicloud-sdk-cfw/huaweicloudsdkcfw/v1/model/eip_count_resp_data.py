@@ -17,44 +17,37 @@ class EipCountRespData:
     sensitive_list = []
 
     openapi_types = {
-        'object_id': 'str',
         'eip_total': 'int',
         'eip_protected': 'int',
         'eip_protected_self': 'int'
     }
 
     attribute_map = {
-        'object_id': 'object_id',
         'eip_total': 'eip_total',
         'eip_protected': 'eip_protected',
         'eip_protected_self': 'eip_protected_self'
     }
 
-    def __init__(self, object_id=None, eip_total=None, eip_protected=None, eip_protected_self=None):
+    def __init__(self, eip_total=None, eip_protected=None, eip_protected_self=None):
         """EipCountRespData
 
         The model defined in huaweicloud sdk
 
-        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。
-        :type object_id: str
-        :param eip_total: EIP总数
+        :param eip_total: 总体EIP数
         :type eip_total: int
         :param eip_protected: 该账号下所有墙防护EIP总数量
         :type eip_protected: int
-        :param eip_protected_self: 该当前防火墙防护EIP数量
+        :param eip_protected_self: 当前防火墙防护EIP数量
         :type eip_protected_self: int
         """
         
         
 
-        self._object_id = None
         self._eip_total = None
         self._eip_protected = None
         self._eip_protected_self = None
         self.discriminator = None
 
-        if object_id is not None:
-            self.object_id = object_id
         if eip_total is not None:
             self.eip_total = eip_total
         if eip_protected is not None:
@@ -63,32 +56,10 @@ class EipCountRespData:
             self.eip_protected_self = eip_protected_self
 
     @property
-    def object_id(self):
-        """Gets the object_id of this EipCountRespData.
-
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。
-
-        :return: The object_id of this EipCountRespData.
-        :rtype: str
-        """
-        return self._object_id
-
-    @object_id.setter
-    def object_id(self, object_id):
-        """Sets the object_id of this EipCountRespData.
-
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。
-
-        :param object_id: The object_id of this EipCountRespData.
-        :type object_id: str
-        """
-        self._object_id = object_id
-
-    @property
     def eip_total(self):
         """Gets the eip_total of this EipCountRespData.
 
-        EIP总数
+        总体EIP数
 
         :return: The eip_total of this EipCountRespData.
         :rtype: int
@@ -99,7 +70,7 @@ class EipCountRespData:
     def eip_total(self, eip_total):
         """Sets the eip_total of this EipCountRespData.
 
-        EIP总数
+        总体EIP数
 
         :param eip_total: The eip_total of this EipCountRespData.
         :type eip_total: int
@@ -132,7 +103,7 @@ class EipCountRespData:
     def eip_protected_self(self):
         """Gets the eip_protected_self of this EipCountRespData.
 
-        该当前防火墙防护EIP数量
+        当前防火墙防护EIP数量
 
         :return: The eip_protected_self of this EipCountRespData.
         :rtype: int
@@ -143,7 +114,7 @@ class EipCountRespData:
     def eip_protected_self(self, eip_protected_self):
         """Sets the eip_protected_self of this EipCountRespData.
 
-        该当前防火墙防护EIP数量
+        当前防火墙防护EIP数量
 
         :param eip_protected_self: The eip_protected_self of this EipCountRespData.
         :type eip_protected_self: int

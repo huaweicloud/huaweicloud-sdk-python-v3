@@ -18,25 +18,25 @@ class ShowFactorByAssetIdRequest:
 
     openapi_types = {
         'project_id': 'str',
-        'asset_id': 'str',
+        'id': 'str',
         'body': 'CommRequestListFactorParam'
     }
 
     attribute_map = {
         'project_id': 'project_id',
-        'asset_id': 'asset_id',
+        'id': 'id',
         'body': 'body'
     }
 
-    def __init__(self, project_id=None, asset_id=None, body=None):
+    def __init__(self, project_id=None, id=None, body=None):
         """ShowFactorByAssetIdRequest
 
         The model defined in huaweicloud sdk
 
         :param project_id: 项目ID，固定长度32位字符（字母和数字）。
         :type project_id: str
-        :param asset_id: 资产库ID
-        :type asset_id: str
+        :param id: 资产库ID
+        :type id: str
         :param body: Body of the ShowFactorByAssetIdRequest
         :type body: :class:`huaweicloudsdkcloudtest.v1.CommRequestListFactorParam`
         """
@@ -44,12 +44,12 @@ class ShowFactorByAssetIdRequest:
         
 
         self._project_id = None
-        self._asset_id = None
+        self._id = None
         self._body = None
         self.discriminator = None
 
         self.project_id = project_id
-        self.asset_id = asset_id
+        self.id = id
         if body is not None:
             self.body = body
 
@@ -76,26 +76,26 @@ class ShowFactorByAssetIdRequest:
         self._project_id = project_id
 
     @property
-    def asset_id(self):
-        """Gets the asset_id of this ShowFactorByAssetIdRequest.
+    def id(self):
+        """Gets the id of this ShowFactorByAssetIdRequest.
 
         资产库ID
 
-        :return: The asset_id of this ShowFactorByAssetIdRequest.
+        :return: The id of this ShowFactorByAssetIdRequest.
         :rtype: str
         """
-        return self._asset_id
+        return self._id
 
-    @asset_id.setter
-    def asset_id(self, asset_id):
-        """Sets the asset_id of this ShowFactorByAssetIdRequest.
+    @id.setter
+    def id(self, id):
+        """Sets the id of this ShowFactorByAssetIdRequest.
 
         资产库ID
 
-        :param asset_id: The asset_id of this ShowFactorByAssetIdRequest.
-        :type asset_id: str
+        :param id: The id of this ShowFactorByAssetIdRequest.
+        :type id: str
         """
-        self._asset_id = asset_id
+        self._id = id
 
     @property
     def body(self):

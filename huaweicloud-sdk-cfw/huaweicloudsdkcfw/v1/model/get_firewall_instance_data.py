@@ -39,7 +39,7 @@ class GetFirewallInstanceData:
         :type limit: int
         :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
         :type offset: int
-        :param total: 总数
+        :param total: 防火墙总数
         :type total: int
         :param records: 查询防火墙实例信息列表
         :type records: list[:class:`huaweicloudsdkcfw.v1.GetFirewallInstanceResponseRecord`]
@@ -110,7 +110,7 @@ class GetFirewallInstanceData:
     def total(self):
         """Gets the total of this GetFirewallInstanceData.
 
-        总数
+        防火墙总数
 
         :return: The total of this GetFirewallInstanceData.
         :rtype: int
@@ -121,7 +121,7 @@ class GetFirewallInstanceData:
     def total(self, total):
         """Sets the total of this GetFirewallInstanceData.
 
-        总数
+        防火墙总数
 
         :param total: The total of this GetFirewallInstanceData.
         :type total: int

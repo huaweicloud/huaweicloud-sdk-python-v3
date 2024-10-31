@@ -61,31 +61,31 @@ class ListAclRulesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。
+        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
         :type object_id: str
-        :param type: 规则Type0：互联网规则,1：vpc规则, 2:nat规则
+        :param type: 规则类型，0：互联网规则，1：vpc规则，2：nat规则
         :type type: int
         :param ip: ip地址
         :type ip: str
-        :param name: 名称
+        :param name: 规则名称
         :type name: str
         :param direction: 方向0：外到内1：内到外
         :type direction: int
-        :param status: 规则下发状态 0：禁用,1：启用
+        :param status: 规则下发状态 0：禁用，1：启用
         :type status: int
-        :param action_type: 动作0：permit,1：deny
+        :param action_type: 动作0：permit，1：deny
         :type action_type: int
-        :param address_type: 地址类型0 ipv4
+        :param address_type: 地址类型，0表示ipv4，1表示ipv6
         :type address_type: int
         :param limit: 每页显示个数，范围为1-1024
         :type limit: int
         :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
         :type offset: int
-        :param enterprise_project_id: 企业项目id，用户支持企业项目后，由企业项目生成的id。
+        :param enterprise_project_id: 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
         :type enterprise_project_id: str
-        :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，默认情况下，fw_instance_Id为空时，返回账号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
+        :param fw_instance_id: 防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
         :type fw_instance_id: str
-        :param tags_id: 标签id
+        :param tags_id: 规则标签id，创建规则时产生。
         :type tags_id: str
         :param source: 源地址
         :type source: str
@@ -93,7 +93,7 @@ class ListAclRulesRequest:
         :type destination: str
         :param service: 服务端口
         :type service: str
-        :param application: 应用
+        :param application: 规则应用类型包括：“HTTP”，\&quot;HTTPS\&quot;，\&quot;TLS1\&quot;，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
         :type application: str
         """
         
@@ -154,7 +154,7 @@ class ListAclRulesRequest:
     def object_id(self):
         """Gets the object_id of this ListAclRulesRequest.
 
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。
+        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
 
         :return: The object_id of this ListAclRulesRequest.
         :rtype: str
@@ -165,7 +165,7 @@ class ListAclRulesRequest:
     def object_id(self, object_id):
         """Sets the object_id of this ListAclRulesRequest.
 
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。
+        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
 
         :param object_id: The object_id of this ListAclRulesRequest.
         :type object_id: str
@@ -176,7 +176,7 @@ class ListAclRulesRequest:
     def type(self):
         """Gets the type of this ListAclRulesRequest.
 
-        规则Type0：互联网规则,1：vpc规则, 2:nat规则
+        规则类型，0：互联网规则，1：vpc规则，2：nat规则
 
         :return: The type of this ListAclRulesRequest.
         :rtype: int
@@ -187,7 +187,7 @@ class ListAclRulesRequest:
     def type(self, type):
         """Sets the type of this ListAclRulesRequest.
 
-        规则Type0：互联网规则,1：vpc规则, 2:nat规则
+        规则类型，0：互联网规则，1：vpc规则，2：nat规则
 
         :param type: The type of this ListAclRulesRequest.
         :type type: int
@@ -220,7 +220,7 @@ class ListAclRulesRequest:
     def name(self):
         """Gets the name of this ListAclRulesRequest.
 
-        名称
+        规则名称
 
         :return: The name of this ListAclRulesRequest.
         :rtype: str
@@ -231,7 +231,7 @@ class ListAclRulesRequest:
     def name(self, name):
         """Sets the name of this ListAclRulesRequest.
 
-        名称
+        规则名称
 
         :param name: The name of this ListAclRulesRequest.
         :type name: str
@@ -264,7 +264,7 @@ class ListAclRulesRequest:
     def status(self):
         """Gets the status of this ListAclRulesRequest.
 
-        规则下发状态 0：禁用,1：启用
+        规则下发状态 0：禁用，1：启用
 
         :return: The status of this ListAclRulesRequest.
         :rtype: int
@@ -275,7 +275,7 @@ class ListAclRulesRequest:
     def status(self, status):
         """Sets the status of this ListAclRulesRequest.
 
-        规则下发状态 0：禁用,1：启用
+        规则下发状态 0：禁用，1：启用
 
         :param status: The status of this ListAclRulesRequest.
         :type status: int
@@ -286,7 +286,7 @@ class ListAclRulesRequest:
     def action_type(self):
         """Gets the action_type of this ListAclRulesRequest.
 
-        动作0：permit,1：deny
+        动作0：permit，1：deny
 
         :return: The action_type of this ListAclRulesRequest.
         :rtype: int
@@ -297,7 +297,7 @@ class ListAclRulesRequest:
     def action_type(self, action_type):
         """Sets the action_type of this ListAclRulesRequest.
 
-        动作0：permit,1：deny
+        动作0：permit，1：deny
 
         :param action_type: The action_type of this ListAclRulesRequest.
         :type action_type: int
@@ -308,7 +308,7 @@ class ListAclRulesRequest:
     def address_type(self):
         """Gets the address_type of this ListAclRulesRequest.
 
-        地址类型0 ipv4
+        地址类型，0表示ipv4，1表示ipv6
 
         :return: The address_type of this ListAclRulesRequest.
         :rtype: int
@@ -319,7 +319,7 @@ class ListAclRulesRequest:
     def address_type(self, address_type):
         """Sets the address_type of this ListAclRulesRequest.
 
-        地址类型0 ipv4
+        地址类型，0表示ipv4，1表示ipv6
 
         :param address_type: The address_type of this ListAclRulesRequest.
         :type address_type: int
@@ -374,7 +374,7 @@ class ListAclRulesRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListAclRulesRequest.
 
-        企业项目id，用户支持企业项目后，由企业项目生成的id。
+        企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
         :return: The enterprise_project_id of this ListAclRulesRequest.
         :rtype: str
@@ -385,7 +385,7 @@ class ListAclRulesRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListAclRulesRequest.
 
-        企业项目id，用户支持企业项目后，由企业项目生成的id。
+        企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
         :param enterprise_project_id: The enterprise_project_id of this ListAclRulesRequest.
         :type enterprise_project_id: str
@@ -396,7 +396,7 @@ class ListAclRulesRequest:
     def fw_instance_id(self):
         """Gets the fw_instance_id of this ListAclRulesRequest.
 
-        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，默认情况下，fw_instance_Id为空时，返回账号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
+        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
         :return: The fw_instance_id of this ListAclRulesRequest.
         :rtype: str
@@ -407,7 +407,7 @@ class ListAclRulesRequest:
     def fw_instance_id(self, fw_instance_id):
         """Sets the fw_instance_id of this ListAclRulesRequest.
 
-        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，默认情况下，fw_instance_Id为空时，返回账号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
+        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
         :param fw_instance_id: The fw_instance_id of this ListAclRulesRequest.
         :type fw_instance_id: str
@@ -418,7 +418,7 @@ class ListAclRulesRequest:
     def tags_id(self):
         """Gets the tags_id of this ListAclRulesRequest.
 
-        标签id
+        规则标签id，创建规则时产生。
 
         :return: The tags_id of this ListAclRulesRequest.
         :rtype: str
@@ -429,7 +429,7 @@ class ListAclRulesRequest:
     def tags_id(self, tags_id):
         """Sets the tags_id of this ListAclRulesRequest.
 
-        标签id
+        规则标签id，创建规则时产生。
 
         :param tags_id: The tags_id of this ListAclRulesRequest.
         :type tags_id: str
@@ -506,7 +506,7 @@ class ListAclRulesRequest:
     def application(self):
         """Gets the application of this ListAclRulesRequest.
 
-        应用
+        规则应用类型包括：“HTTP”，\"HTTPS\"，\"TLS1\"，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
 
         :return: The application of this ListAclRulesRequest.
         :rtype: str
@@ -517,7 +517,7 @@ class ListAclRulesRequest:
     def application(self, application):
         """Sets the application of this ListAclRulesRequest.
 
-        应用
+        规则应用类型包括：“HTTP”，\"HTTPS\"，\"TLS1\"，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
 
         :param application: The application of this ListAclRulesRequest.
         :type application: str

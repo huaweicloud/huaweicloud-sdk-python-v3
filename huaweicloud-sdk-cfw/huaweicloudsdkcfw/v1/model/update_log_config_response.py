@@ -30,7 +30,7 @@ class UpdateLogConfigResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: 日志配置id
+        :param data: 更新日志配置返回值，为防火墙id
         :type data: str
         """
         
@@ -46,7 +46,7 @@ class UpdateLogConfigResponse(SdkResponse):
     def data(self):
         """Gets the data of this UpdateLogConfigResponse.
 
-        日志配置id
+        更新日志配置返回值，为防火墙id
 
         :return: The data of this UpdateLogConfigResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class UpdateLogConfigResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this UpdateLogConfigResponse.
 
-        日志配置id
+        更新日志配置返回值，为防火墙id
 
         :param data: The data of this UpdateLogConfigResponse.
         :type data: str

@@ -18,35 +18,27 @@ class HttpQueryCaptureTaskResponseData:
 
     openapi_types = {
         'limit': 'int',
-        'object_id': 'str',
         'offset': 'int',
-        'project_id': 'str',
         'total': 'int',
         'records': 'list[CaptureTaskVO]'
     }
 
     attribute_map = {
         'limit': 'limit',
-        'object_id': 'object_id',
         'offset': 'offset',
-        'project_id': 'project_id',
         'total': 'total',
         'records': 'records'
     }
 
-    def __init__(self, limit=None, object_id=None, offset=None, project_id=None, total=None, records=None):
+    def __init__(self, limit=None, offset=None, total=None, records=None):
         """HttpQueryCaptureTaskResponseData
 
         The model defined in huaweicloud sdk
 
         :param limit: 每页显示个数，范围为1-1024
         :type limit: int
-        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。
-        :type object_id: str
         :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
         :type offset: int
-        :param project_id: 租户project_id
-        :type project_id: str
         :param total: 抓包任务总数
         :type total: int
         :param records: 抓包任务列表
@@ -56,21 +48,15 @@ class HttpQueryCaptureTaskResponseData:
         
 
         self._limit = None
-        self._object_id = None
         self._offset = None
-        self._project_id = None
         self._total = None
         self._records = None
         self.discriminator = None
 
         if limit is not None:
             self.limit = limit
-        if object_id is not None:
-            self.object_id = object_id
         if offset is not None:
             self.offset = offset
-        if project_id is not None:
-            self.project_id = project_id
         if total is not None:
             self.total = total
         if records is not None:
@@ -99,28 +85,6 @@ class HttpQueryCaptureTaskResponseData:
         self._limit = limit
 
     @property
-    def object_id(self):
-        """Gets the object_id of this HttpQueryCaptureTaskResponseData.
-
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。
-
-        :return: The object_id of this HttpQueryCaptureTaskResponseData.
-        :rtype: str
-        """
-        return self._object_id
-
-    @object_id.setter
-    def object_id(self, object_id):
-        """Sets the object_id of this HttpQueryCaptureTaskResponseData.
-
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。
-
-        :param object_id: The object_id of this HttpQueryCaptureTaskResponseData.
-        :type object_id: str
-        """
-        self._object_id = object_id
-
-    @property
     def offset(self):
         """Gets the offset of this HttpQueryCaptureTaskResponseData.
 
@@ -141,28 +105,6 @@ class HttpQueryCaptureTaskResponseData:
         :type offset: int
         """
         self._offset = offset
-
-    @property
-    def project_id(self):
-        """Gets the project_id of this HttpQueryCaptureTaskResponseData.
-
-        租户project_id
-
-        :return: The project_id of this HttpQueryCaptureTaskResponseData.
-        :rtype: str
-        """
-        return self._project_id
-
-    @project_id.setter
-    def project_id(self, project_id):
-        """Sets the project_id of this HttpQueryCaptureTaskResponseData.
-
-        租户project_id
-
-        :param project_id: The project_id of this HttpQueryCaptureTaskResponseData.
-        :type project_id: str
-        """
-        self._project_id = project_id
 
     @property
     def total(self):

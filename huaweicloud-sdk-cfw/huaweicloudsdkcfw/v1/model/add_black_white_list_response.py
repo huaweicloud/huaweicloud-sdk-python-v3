@@ -18,7 +18,7 @@ class AddBlackWhiteListResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'IdObject'
+        'data': 'BlackWhiteListId'
     }
 
     attribute_map = {
@@ -31,7 +31,7 @@ class AddBlackWhiteListResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param data: 
-        :type data: :class:`huaweicloudsdkcfw.v1.IdObject`
+        :type data: :class:`huaweicloudsdkcfw.v1.BlackWhiteListId`
         """
         
         super(AddBlackWhiteListResponse, self).__init__()
@@ -47,7 +47,7 @@ class AddBlackWhiteListResponse(SdkResponse):
         """Gets the data of this AddBlackWhiteListResponse.
 
         :return: The data of this AddBlackWhiteListResponse.
-        :rtype: :class:`huaweicloudsdkcfw.v1.IdObject`
+        :rtype: :class:`huaweicloudsdkcfw.v1.BlackWhiteListId`
         """
         return self._data
 
@@ -56,7 +56,7 @@ class AddBlackWhiteListResponse(SdkResponse):
         """Sets the data of this AddBlackWhiteListResponse.
 
         :param data: The data of this AddBlackWhiteListResponse.
-        :type data: :class:`huaweicloudsdkcfw.v1.IdObject`
+        :type data: :class:`huaweicloudsdkcfw.v1.BlackWhiteListId`
         """
         self._data = data
 

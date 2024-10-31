@@ -48,6 +48,8 @@ class SwrRegion:
                         "https://swr-api.ae-ad-1.myhuaweicloud.com")
     EU_WEST_101 = Region("eu-west-101",
                         "https://swr-api.eu-west-101.myhuaweicloud.eu")
+    RU_MOSCOW_1 = Region("ru-moscow-1",
+                        "https://swr-api.ru-moscow-1.myhuaweicloud.com")
     MY_KUALALUMPUR_1 = Region("my-kualalumpur-1",
                         "https://swr-api.my-kualalumpur-1.myhuaweicloud.com")
     ME_EAST_1 = Region("me-east-1",
@@ -77,6 +79,7 @@ class SwrRegion:
         "tr-west-1": TR_WEST_1,
         "ae-ad-1": AE_AD_1,
         "eu-west-101": EU_WEST_101,
+        "ru-moscow-1": RU_MOSCOW_1,
         "my-kualalumpur-1": MY_KUALALUMPUR_1,
         "me-east-1": ME_EAST_1,
         "eu-west-0": EU_WEST_0,

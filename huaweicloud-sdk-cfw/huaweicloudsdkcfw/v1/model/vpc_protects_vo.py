@@ -41,19 +41,19 @@ class VPCProtectsVo:
 
         The model defined in huaweicloud sdk
 
-        :param total: 总VPC数
+        :param total: 总防护VPC数
         :type total: int
-        :param self_total: 本项目防护VPC数
+        :param self_total: 防火墙东西向防护可进行跨账号防护VPC，self_total表示本项目防护VPC总数。
         :type self_total: int
-        :param other_total: 其他项目防护VPC数
+        :param other_total: 防火墙东西向防护可进行跨账号防护VPC，other_total表示其他项目防护VPC数
         :type other_total: int
-        :param protect_vpcs: 防护VPC
+        :param protect_vpcs: 防火墙东西向防护可进行跨账号防护VPC，protect_vpcs指的是总体防护VPC列表
         :type protect_vpcs: list[:class:`huaweicloudsdkcfw.v1.VpcAttachmentDetail`]
-        :param self_protect_vpcs: 本项目防护VPC
+        :param self_protect_vpcs: 防火墙东西向防护可进行跨账号防护VPC，self_protect_vpcs指的是本项目防护VPC列表
         :type self_protect_vpcs: list[:class:`huaweicloudsdkcfw.v1.VpcAttachmentDetail`]
-        :param other_protect_vpcs: 其他项目防护VPC
+        :param other_protect_vpcs: 防火墙东西向防护可进行跨账号防护VPC，other_protect_vpcs指的是其他项目防护VPC列表
         :type other_protect_vpcs: list[:class:`huaweicloudsdkcfw.v1.VpcAttachmentDetail`]
-        :param total_assets: 所有资产数量
+        :param total_assets: 租户的所有VPC资产数量
         :type total_assets: int
         """
         
@@ -87,7 +87,7 @@ class VPCProtectsVo:
     def total(self):
         """Gets the total of this VPCProtectsVo.
 
-        总VPC数
+        总防护VPC数
 
         :return: The total of this VPCProtectsVo.
         :rtype: int
@@ -98,7 +98,7 @@ class VPCProtectsVo:
     def total(self, total):
         """Sets the total of this VPCProtectsVo.
 
-        总VPC数
+        总防护VPC数
 
         :param total: The total of this VPCProtectsVo.
         :type total: int
@@ -109,7 +109,7 @@ class VPCProtectsVo:
     def self_total(self):
         """Gets the self_total of this VPCProtectsVo.
 
-        本项目防护VPC数
+        防火墙东西向防护可进行跨账号防护VPC，self_total表示本项目防护VPC总数。
 
         :return: The self_total of this VPCProtectsVo.
         :rtype: int
@@ -120,7 +120,7 @@ class VPCProtectsVo:
     def self_total(self, self_total):
         """Sets the self_total of this VPCProtectsVo.
 
-        本项目防护VPC数
+        防火墙东西向防护可进行跨账号防护VPC，self_total表示本项目防护VPC总数。
 
         :param self_total: The self_total of this VPCProtectsVo.
         :type self_total: int
@@ -131,7 +131,7 @@ class VPCProtectsVo:
     def other_total(self):
         """Gets the other_total of this VPCProtectsVo.
 
-        其他项目防护VPC数
+        防火墙东西向防护可进行跨账号防护VPC，other_total表示其他项目防护VPC数
 
         :return: The other_total of this VPCProtectsVo.
         :rtype: int
@@ -142,7 +142,7 @@ class VPCProtectsVo:
     def other_total(self, other_total):
         """Sets the other_total of this VPCProtectsVo.
 
-        其他项目防护VPC数
+        防火墙东西向防护可进行跨账号防护VPC，other_total表示其他项目防护VPC数
 
         :param other_total: The other_total of this VPCProtectsVo.
         :type other_total: int
@@ -153,7 +153,7 @@ class VPCProtectsVo:
     def protect_vpcs(self):
         """Gets the protect_vpcs of this VPCProtectsVo.
 
-        防护VPC
+        防火墙东西向防护可进行跨账号防护VPC，protect_vpcs指的是总体防护VPC列表
 
         :return: The protect_vpcs of this VPCProtectsVo.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.VpcAttachmentDetail`]
@@ -164,7 +164,7 @@ class VPCProtectsVo:
     def protect_vpcs(self, protect_vpcs):
         """Sets the protect_vpcs of this VPCProtectsVo.
 
-        防护VPC
+        防火墙东西向防护可进行跨账号防护VPC，protect_vpcs指的是总体防护VPC列表
 
         :param protect_vpcs: The protect_vpcs of this VPCProtectsVo.
         :type protect_vpcs: list[:class:`huaweicloudsdkcfw.v1.VpcAttachmentDetail`]
@@ -175,7 +175,7 @@ class VPCProtectsVo:
     def self_protect_vpcs(self):
         """Gets the self_protect_vpcs of this VPCProtectsVo.
 
-        本项目防护VPC
+        防火墙东西向防护可进行跨账号防护VPC，self_protect_vpcs指的是本项目防护VPC列表
 
         :return: The self_protect_vpcs of this VPCProtectsVo.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.VpcAttachmentDetail`]
@@ -186,7 +186,7 @@ class VPCProtectsVo:
     def self_protect_vpcs(self, self_protect_vpcs):
         """Sets the self_protect_vpcs of this VPCProtectsVo.
 
-        本项目防护VPC
+        防火墙东西向防护可进行跨账号防护VPC，self_protect_vpcs指的是本项目防护VPC列表
 
         :param self_protect_vpcs: The self_protect_vpcs of this VPCProtectsVo.
         :type self_protect_vpcs: list[:class:`huaweicloudsdkcfw.v1.VpcAttachmentDetail`]
@@ -197,7 +197,7 @@ class VPCProtectsVo:
     def other_protect_vpcs(self):
         """Gets the other_protect_vpcs of this VPCProtectsVo.
 
-        其他项目防护VPC
+        防火墙东西向防护可进行跨账号防护VPC，other_protect_vpcs指的是其他项目防护VPC列表
 
         :return: The other_protect_vpcs of this VPCProtectsVo.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.VpcAttachmentDetail`]
@@ -208,7 +208,7 @@ class VPCProtectsVo:
     def other_protect_vpcs(self, other_protect_vpcs):
         """Sets the other_protect_vpcs of this VPCProtectsVo.
 
-        其他项目防护VPC
+        防火墙东西向防护可进行跨账号防护VPC，other_protect_vpcs指的是其他项目防护VPC列表
 
         :param other_protect_vpcs: The other_protect_vpcs of this VPCProtectsVo.
         :type other_protect_vpcs: list[:class:`huaweicloudsdkcfw.v1.VpcAttachmentDetail`]
@@ -219,7 +219,7 @@ class VPCProtectsVo:
     def total_assets(self):
         """Gets the total_assets of this VPCProtectsVo.
 
-        所有资产数量
+        租户的所有VPC资产数量
 
         :return: The total_assets of this VPCProtectsVo.
         :rtype: int
@@ -230,7 +230,7 @@ class VPCProtectsVo:
     def total_assets(self, total_assets):
         """Sets the total_assets of this VPCProtectsVo.
 
-        所有资产数量
+        租户的所有VPC资产数量
 
         :param total_assets: The total_assets of this VPCProtectsVo.
         :type total_assets: int

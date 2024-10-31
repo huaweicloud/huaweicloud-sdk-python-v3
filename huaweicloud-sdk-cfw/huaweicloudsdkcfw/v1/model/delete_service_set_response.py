@@ -18,7 +18,7 @@ class DeleteServiceSetResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'IdObject'
+        'data': 'ServiceSetId'
     }
 
     attribute_map = {
@@ -31,7 +31,7 @@ class DeleteServiceSetResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param data: 
-        :type data: :class:`huaweicloudsdkcfw.v1.IdObject`
+        :type data: :class:`huaweicloudsdkcfw.v1.ServiceSetId`
         """
         
         super(DeleteServiceSetResponse, self).__init__()
@@ -47,7 +47,7 @@ class DeleteServiceSetResponse(SdkResponse):
         """Gets the data of this DeleteServiceSetResponse.
 
         :return: The data of this DeleteServiceSetResponse.
-        :rtype: :class:`huaweicloudsdkcfw.v1.IdObject`
+        :rtype: :class:`huaweicloudsdkcfw.v1.ServiceSetId`
         """
         return self._data
 
@@ -56,7 +56,7 @@ class DeleteServiceSetResponse(SdkResponse):
         """Sets the data of this DeleteServiceSetResponse.
 
         :param data: The data of this DeleteServiceSetResponse.
-        :type data: :class:`huaweicloudsdkcfw.v1.IdObject`
+        :type data: :class:`huaweicloudsdkcfw.v1.ServiceSetId`
         """
         self._data = data
 

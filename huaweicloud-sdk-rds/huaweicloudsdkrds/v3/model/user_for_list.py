@@ -17,28 +17,40 @@ class UserForList:
     sensitive_list = []
 
     openapi_types = {
-        'name': 'str'
+        'name': 'str',
+        'databases': 'list[DatabaseWithPrivilegeObject]',
+        'hosts': 'list[str]'
     }
 
     attribute_map = {
-        'name': 'name'
+        'name': 'name',
+        'databases': 'databases',
+        'hosts': 'hosts'
     }
 
-    def __init__(self, name=None):
+    def __init__(self, name=None, databases=None, hosts=None):
         """UserForList
 
         The model defined in huaweicloud sdk
 
         :param name: 数据库用户名称。
         :type name: str
+        :param databases: 数据库及其权限。
+        :type databases: list[:class:`huaweicloudsdkrds.v3.DatabaseWithPrivilegeObject`]
+        :param hosts: 授权用户登录主机IP列表 • 若IP地址为%，则表示允许所有地址访问MySQL实例。 • 若IP地址为“10.10.10.%”，则表示10.10.10.X的IP地址都可以访问该MySQL实例。 • 支持添加多个IP地址。
+        :type hosts: list[str]
         """
         
         
 
         self._name = None
+        self._databases = None
+        self._hosts = None
         self.discriminator = None
 
         self.name = name
+        self.databases = databases
+        self.hosts = hosts
 
     @property
     def name(self):
@@ -61,6 +73,50 @@ class UserForList:
         :type name: str
         """
         self._name = name
+
+    @property
+    def databases(self):
+        """Gets the databases of this UserForList.
+
+        数据库及其权限。
+
+        :return: The databases of this UserForList.
+        :rtype: list[:class:`huaweicloudsdkrds.v3.DatabaseWithPrivilegeObject`]
+        """
+        return self._databases
+
+    @databases.setter
+    def databases(self, databases):
+        """Sets the databases of this UserForList.
+
+        数据库及其权限。
+
+        :param databases: The databases of this UserForList.
+        :type databases: list[:class:`huaweicloudsdkrds.v3.DatabaseWithPrivilegeObject`]
+        """
+        self._databases = databases
+
+    @property
+    def hosts(self):
+        """Gets the hosts of this UserForList.
+
+        授权用户登录主机IP列表 • 若IP地址为%，则表示允许所有地址访问MySQL实例。 • 若IP地址为“10.10.10.%”，则表示10.10.10.X的IP地址都可以访问该MySQL实例。 • 支持添加多个IP地址。
+
+        :return: The hosts of this UserForList.
+        :rtype: list[str]
+        """
+        return self._hosts
+
+    @hosts.setter
+    def hosts(self, hosts):
+        """Sets the hosts of this UserForList.
+
+        授权用户登录主机IP列表 • 若IP地址为%，则表示允许所有地址访问MySQL实例。 • 若IP地址为“10.10.10.%”，则表示10.10.10.X的IP地址都可以访问该MySQL实例。 • 支持添加多个IP地址。
+
+        :param hosts: The hosts of this UserForList.
+        :type hosts: list[str]
+        """
+        self._hosts = hosts
 
     def to_dict(self):
         """Returns the model properties as a dict"""

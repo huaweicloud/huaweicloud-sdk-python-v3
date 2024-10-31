@@ -35,13 +35,13 @@ class IpRegionDto:
 
         The model defined in huaweicloud sdk
 
-        :param region_id: 区域id
+        :param region_id: 区域id，可通过[获取账号、IAM用户、项目、用户组、区域、委托的名称和ID](cfw_02_0030.xml)获取。
         :type region_id: str
-        :param description_cn: 中文描述
+        :param description_cn: 区域中文描述，仅当区域为中国区域时使用，可通过[地域信息表](cfw_02_0031.xml)获取。
         :type description_cn: str
-        :param description_en: 英文描述
+        :param description_en: 区域英文描述，仅当区域为非中国区域时使用，可通过[地域信息表](cfw_02_0031.xml)获取。
         :type description_en: str
-        :param region_type: 区域类型，0表示国家，1表示省份，2表示大洲
+        :param region_type: 区域类型，0表示国家，1表示省份，2表示大洲，可通过[地域信息表](cfw_02_0031.xml)获取。
         :type region_type: int
         """
         
@@ -66,7 +66,7 @@ class IpRegionDto:
     def region_id(self):
         """Gets the region_id of this IpRegionDto.
 
-        区域id
+        区域id，可通过[获取账号、IAM用户、项目、用户组、区域、委托的名称和ID](cfw_02_0030.xml)获取。
 
         :return: The region_id of this IpRegionDto.
         :rtype: str
@@ -77,7 +77,7 @@ class IpRegionDto:
     def region_id(self, region_id):
         """Sets the region_id of this IpRegionDto.
 
-        区域id
+        区域id，可通过[获取账号、IAM用户、项目、用户组、区域、委托的名称和ID](cfw_02_0030.xml)获取。
 
         :param region_id: The region_id of this IpRegionDto.
         :type region_id: str
@@ -88,7 +88,7 @@ class IpRegionDto:
     def description_cn(self):
         """Gets the description_cn of this IpRegionDto.
 
-        中文描述
+        区域中文描述，仅当区域为中国区域时使用，可通过[地域信息表](cfw_02_0031.xml)获取。
 
         :return: The description_cn of this IpRegionDto.
         :rtype: str
@@ -99,7 +99,7 @@ class IpRegionDto:
     def description_cn(self, description_cn):
         """Sets the description_cn of this IpRegionDto.
 
-        中文描述
+        区域中文描述，仅当区域为中国区域时使用，可通过[地域信息表](cfw_02_0031.xml)获取。
 
         :param description_cn: The description_cn of this IpRegionDto.
         :type description_cn: str
@@ -110,7 +110,7 @@ class IpRegionDto:
     def description_en(self):
         """Gets the description_en of this IpRegionDto.
 
-        英文描述
+        区域英文描述，仅当区域为非中国区域时使用，可通过[地域信息表](cfw_02_0031.xml)获取。
 
         :return: The description_en of this IpRegionDto.
         :rtype: str
@@ -121,7 +121,7 @@ class IpRegionDto:
     def description_en(self, description_en):
         """Sets the description_en of this IpRegionDto.
 
-        英文描述
+        区域英文描述，仅当区域为非中国区域时使用，可通过[地域信息表](cfw_02_0031.xml)获取。
 
         :param description_en: The description_en of this IpRegionDto.
         :type description_en: str
@@ -132,7 +132,7 @@ class IpRegionDto:
     def region_type(self):
         """Gets the region_type of this IpRegionDto.
 
-        区域类型，0表示国家，1表示省份，2表示大洲
+        区域类型，0表示国家，1表示省份，2表示大洲，可通过[地域信息表](cfw_02_0031.xml)获取。
 
         :return: The region_type of this IpRegionDto.
         :rtype: int
@@ -143,7 +143,7 @@ class IpRegionDto:
     def region_type(self, region_type):
         """Sets the region_type of this IpRegionDto.
 
-        区域类型，0表示国家，1表示省份，2表示大洲
+        区域类型，0表示国家，1表示省份，2表示大洲，可通过[地域信息表](cfw_02_0031.xml)获取。
 
         :param region_type: The region_type of this IpRegionDto.
         :type region_type: int

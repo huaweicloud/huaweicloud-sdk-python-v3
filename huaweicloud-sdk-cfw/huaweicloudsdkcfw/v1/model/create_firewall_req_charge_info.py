@@ -41,11 +41,11 @@ class CreateFirewallReqChargeInfo:
         :type charge_mode: str
         :param period_type: 订购周期类型。  取值范围：  month：包月。 year：包年。 说明：“charge_mode”为“prePaid”时生效，且为必选值。
         :type period_type: str
-        :param period_num: “charge_mode”为“prePaid”时生效，且为必选值，指定订购的时间。  取值范围：  当“period_type”为“month”时，取值为1~9。 当“period_type”为“year”时，取值为1~3。
+        :param period_num: “charge_mode”为“prePaid”时生效，且为必选值，指定订购的时间。  取值范围：  - 当“period_type”为“month”时，取值为1~9。 - 当“period_type”为“year”时，取值为1~3。
         :type period_num: int
         :param is_auto_renew: 创建包周期实例时可指定，表示是否自动续订，续订的周期和原周期相同，且续订时会自动支付。  true，为自动续订。 false，为不自动续订，默认该方式。
         :type is_auto_renew: bool
-        :param is_auto_pay: 创建包周期时可指定，表示是否自动从客户的账户中支付，此字段不影响自动续订的支付方式。  true，为自动支付。（会自动选择折扣和优惠券进行优惠，然后自动从客户华为云账户中支付），自动支付失败后会生成订单成功(该订单应付金额是优惠后金额)、但订单状态为“待支付”，等待客户手动支付(手动支付时，客户还可以修改系统自动选择的折扣和优惠券) false，为手动支付，默认该方式。（需要客户手动去支付，客户可以选择折扣和优惠券）
+        :param is_auto_pay: 创建包周期时可指定，表示是否自动从客户的账户中支付，此字段不影响自动续订的支付方式。  - true，为自动支付。（会自动选择折扣和优惠券进行优惠，然后自动从客户华为云账户中支付），自动支付失败会生成、但订单状态为“待支付”，等待客户手动支付(手动支付时，可以修改系统自动选择的折扣和优惠券) - false，为手动支付，默认该方式。（需要客户手动去支付，客户可以选择折扣和优惠券）
         :type is_auto_pay: bool
         """
         
@@ -114,7 +114,7 @@ class CreateFirewallReqChargeInfo:
     def period_num(self):
         """Gets the period_num of this CreateFirewallReqChargeInfo.
 
-        “charge_mode”为“prePaid”时生效，且为必选值，指定订购的时间。  取值范围：  当“period_type”为“month”时，取值为1~9。 当“period_type”为“year”时，取值为1~3。
+        “charge_mode”为“prePaid”时生效，且为必选值，指定订购的时间。  取值范围：  - 当“period_type”为“month”时，取值为1~9。 - 当“period_type”为“year”时，取值为1~3。
 
         :return: The period_num of this CreateFirewallReqChargeInfo.
         :rtype: int
@@ -125,7 +125,7 @@ class CreateFirewallReqChargeInfo:
     def period_num(self, period_num):
         """Sets the period_num of this CreateFirewallReqChargeInfo.
 
-        “charge_mode”为“prePaid”时生效，且为必选值，指定订购的时间。  取值范围：  当“period_type”为“month”时，取值为1~9。 当“period_type”为“year”时，取值为1~3。
+        “charge_mode”为“prePaid”时生效，且为必选值，指定订购的时间。  取值范围：  - 当“period_type”为“month”时，取值为1~9。 - 当“period_type”为“year”时，取值为1~3。
 
         :param period_num: The period_num of this CreateFirewallReqChargeInfo.
         :type period_num: int
@@ -158,7 +158,7 @@ class CreateFirewallReqChargeInfo:
     def is_auto_pay(self):
         """Gets the is_auto_pay of this CreateFirewallReqChargeInfo.
 
-        创建包周期时可指定，表示是否自动从客户的账户中支付，此字段不影响自动续订的支付方式。  true，为自动支付。（会自动选择折扣和优惠券进行优惠，然后自动从客户华为云账户中支付），自动支付失败后会生成订单成功(该订单应付金额是优惠后金额)、但订单状态为“待支付”，等待客户手动支付(手动支付时，客户还可以修改系统自动选择的折扣和优惠券) false，为手动支付，默认该方式。（需要客户手动去支付，客户可以选择折扣和优惠券）
+        创建包周期时可指定，表示是否自动从客户的账户中支付，此字段不影响自动续订的支付方式。  - true，为自动支付。（会自动选择折扣和优惠券进行优惠，然后自动从客户华为云账户中支付），自动支付失败会生成、但订单状态为“待支付”，等待客户手动支付(手动支付时，可以修改系统自动选择的折扣和优惠券) - false，为手动支付，默认该方式。（需要客户手动去支付，客户可以选择折扣和优惠券）
 
         :return: The is_auto_pay of this CreateFirewallReqChargeInfo.
         :rtype: bool
@@ -169,7 +169,7 @@ class CreateFirewallReqChargeInfo:
     def is_auto_pay(self, is_auto_pay):
         """Sets the is_auto_pay of this CreateFirewallReqChargeInfo.
 
-        创建包周期时可指定，表示是否自动从客户的账户中支付，此字段不影响自动续订的支付方式。  true，为自动支付。（会自动选择折扣和优惠券进行优惠，然后自动从客户华为云账户中支付），自动支付失败后会生成订单成功(该订单应付金额是优惠后金额)、但订单状态为“待支付”，等待客户手动支付(手动支付时，客户还可以修改系统自动选择的折扣和优惠券) false，为手动支付，默认该方式。（需要客户手动去支付，客户可以选择折扣和优惠券）
+        创建包周期时可指定，表示是否自动从客户的账户中支付，此字段不影响自动续订的支付方式。  - true，为自动支付。（会自动选择折扣和优惠券进行优惠，然后自动从客户华为云账户中支付），自动支付失败会生成、但订单状态为“待支付”，等待客户手动支付(手动支付时，可以修改系统自动选择的折扣和优惠券) - false，为手动支付，默认该方式。（需要客户手动去支付，客户可以选择折扣和优惠券）
 
         :param is_auto_pay: The is_auto_pay of this CreateFirewallReqChargeInfo.
         :type is_auto_pay: bool

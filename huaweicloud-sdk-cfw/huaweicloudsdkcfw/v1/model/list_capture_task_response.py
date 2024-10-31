@@ -18,7 +18,7 @@ class ListCaptureTaskResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'list[HttpQueryCaptureTaskResponseData]'
+        'data': 'HttpQueryCaptureTaskResponseData'
     }
 
     attribute_map = {
@@ -30,8 +30,8 @@ class ListCaptureTaskResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: 查询抓包任务返回值。
-        :type data: list[:class:`huaweicloudsdkcfw.v1.HttpQueryCaptureTaskResponseData`]
+        :param data: 
+        :type data: :class:`huaweicloudsdkcfw.v1.HttpQueryCaptureTaskResponseData`
         """
         
         super(ListCaptureTaskResponse, self).__init__()
@@ -46,10 +46,8 @@ class ListCaptureTaskResponse(SdkResponse):
     def data(self):
         """Gets the data of this ListCaptureTaskResponse.
 
-        查询抓包任务返回值。
-
         :return: The data of this ListCaptureTaskResponse.
-        :rtype: list[:class:`huaweicloudsdkcfw.v1.HttpQueryCaptureTaskResponseData`]
+        :rtype: :class:`huaweicloudsdkcfw.v1.HttpQueryCaptureTaskResponseData`
         """
         return self._data
 
@@ -57,10 +55,8 @@ class ListCaptureTaskResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this ListCaptureTaskResponse.
 
-        查询抓包任务返回值。
-
         :param data: The data of this ListCaptureTaskResponse.
-        :type data: list[:class:`huaweicloudsdkcfw.v1.HttpQueryCaptureTaskResponseData`]
+        :type data: :class:`huaweicloudsdkcfw.v1.HttpQueryCaptureTaskResponseData`
         """
         self._data = data
 

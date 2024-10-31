@@ -33,7 +33,7 @@ class CreateEWFirewallResp:
 
         The model defined in huaweicloud sdk
 
-        :param id: 东西向防护id
+        :param id: 东西向防护id，对应object_id字段
         :type id: str
         :param er: 
         :type er: :class:`huaweicloudsdkcfw.v1.Er`
@@ -59,7 +59,7 @@ class CreateEWFirewallResp:
     def id(self):
         """Gets the id of this CreateEWFirewallResp.
 
-        东西向防护id
+        东西向防护id，对应object_id字段
 
         :return: The id of this CreateEWFirewallResp.
         :rtype: str
@@ -70,7 +70,7 @@ class CreateEWFirewallResp:
     def id(self, id):
         """Sets the id of this CreateEWFirewallResp.
 
-        东西向防护id
+        东西向防护id，对应object_id字段
 
         :param id: The id of this CreateEWFirewallResp.
         :type id: str

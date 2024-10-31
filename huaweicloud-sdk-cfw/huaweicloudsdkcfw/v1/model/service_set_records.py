@@ -39,7 +39,7 @@ class ServiceSetRecords:
         :type offset: int
         :param limit: 每页显示个数，范围为1-1024
         :type limit: int
-        :param total: 查询总数
+        :param total: 查询服务组总数
         :type total: int
         :param records: 服务组列表
         :type records: list[:class:`huaweicloudsdkcfw.v1.ServiceSet`]
@@ -110,7 +110,7 @@ class ServiceSetRecords:
     def total(self):
         """Gets the total of this ServiceSetRecords.
 
-        查询总数
+        查询服务组总数
 
         :return: The total of this ServiceSetRecords.
         :rtype: int
@@ -121,7 +121,7 @@ class ServiceSetRecords:
     def total(self, total):
         """Sets the total of this ServiceSetRecords.
 
-        查询总数
+        查询服务组总数
 
         :param total: The total of this ServiceSetRecords.
         :type total: int

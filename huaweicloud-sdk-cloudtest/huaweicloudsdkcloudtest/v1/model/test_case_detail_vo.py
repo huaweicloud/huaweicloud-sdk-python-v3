@@ -99,7 +99,7 @@ class TestCaseDetailVo:
         'result_code': 'str',
         'release_id': 'str',
         'label_id': 'str',
-        'labels': 'str',
+        'labels': 'list[LabelVo]',
         'module_id': 'str',
         'module_name': 'str',
         'module_path': 'str',
@@ -454,7 +454,7 @@ class TestCaseDetailVo:
         :param label_id: 标签ID
         :type label_id: str
         :param labels: 用例标签名称列表
-        :type labels: str
+        :type labels: list[:class:`huaweicloudsdkcloudtest.v1.LabelVo`]
         :param module_id: 模块ID
         :type module_id: str
         :param module_name: 模块名称
@@ -2758,7 +2758,7 @@ class TestCaseDetailVo:
         用例标签名称列表
 
         :return: The labels of this TestCaseDetailVo.
-        :rtype: str
+        :rtype: list[:class:`huaweicloudsdkcloudtest.v1.LabelVo`]
         """
         return self._labels
 
@@ -2769,7 +2769,7 @@ class TestCaseDetailVo:
         用例标签名称列表
 
         :param labels: The labels of this TestCaseDetailVo.
-        :type labels: str
+        :type labels: list[:class:`huaweicloudsdkcloudtest.v1.LabelVo`]
         """
         self._labels = labels
 

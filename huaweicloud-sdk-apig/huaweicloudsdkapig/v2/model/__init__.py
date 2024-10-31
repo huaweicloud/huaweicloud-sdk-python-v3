@@ -460,11 +460,14 @@ from huaweicloudsdkapig.v2.model.micro_service_info_cce_create import MicroServi
 from huaweicloudsdkapig.v2.model.micro_service_info_cse import MicroServiceInfoCSE
 from huaweicloudsdkapig.v2.model.micro_service_info_cse_base import MicroServiceInfoCSEBase
 from huaweicloudsdkapig.v2.model.micro_service_info_cse_create import MicroServiceInfoCSECreate
+from huaweicloudsdkapig.v2.model.micro_service_info_nacos_base import MicroServiceInfoNacosBase
 from huaweicloudsdkapig.v2.model.microservice_api_create import MicroserviceApiCreate
 from huaweicloudsdkapig.v2.model.microservice_group import MicroserviceGroup
 from huaweicloudsdkapig.v2.model.microservice_import_api_resp import MicroserviceImportApiResp
 from huaweicloudsdkapig.v2.model.microservice_import_req import MicroserviceImportReq
 from huaweicloudsdkapig.v2.model.microservice_label import MicroserviceLabel
+from huaweicloudsdkapig.v2.model.nacos_server_config import NacosServerConfig
+from huaweicloudsdkapig.v2.model.nacos_user_info import NacosUserInfo
 from huaweicloudsdkapig.v2.model.network_traffic_stats import NetworkTrafficStats
 from huaweicloudsdkapig.v2.model.node_ips import NodeIps
 from huaweicloudsdkapig.v2.model.open_engress_eip_req import OpenEngressEipReq

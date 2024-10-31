@@ -39,9 +39,9 @@ class CreateFirewallReq:
 
         :param name: 防火墙名称
         :type name: str
-        :param enterprise_project_id: 企业项目ID，租户未开启企业项目时传0
+        :param enterprise_project_id: 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
         :type enterprise_project_id: str
-        :param tags: 资源标签
+        :param tags: 服务资源标签列表，防火墙资源添加标签后，可根据键、值组合查询资源，同时可根据键、值组合进行话单合并统计。
         :type tags: list[:class:`huaweicloudsdkcfw.v1.CreateFirewallReqTags`]
         :param flavor: 
         :type flavor: :class:`huaweicloudsdkcfw.v1.CreateFirewallReqFlavor`
@@ -92,7 +92,7 @@ class CreateFirewallReq:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this CreateFirewallReq.
 
-        企业项目ID，租户未开启企业项目时传0
+        企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
         :return: The enterprise_project_id of this CreateFirewallReq.
         :rtype: str
@@ -103,7 +103,7 @@ class CreateFirewallReq:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this CreateFirewallReq.
 
-        企业项目ID，租户未开启企业项目时传0
+        企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
         :param enterprise_project_id: The enterprise_project_id of this CreateFirewallReq.
         :type enterprise_project_id: str
@@ -114,7 +114,7 @@ class CreateFirewallReq:
     def tags(self):
         """Gets the tags of this CreateFirewallReq.
 
-        资源标签
+        服务资源标签列表，防火墙资源添加标签后，可根据键、值组合查询资源，同时可根据键、值组合进行话单合并统计。
 
         :return: The tags of this CreateFirewallReq.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.CreateFirewallReqTags`]
@@ -125,7 +125,7 @@ class CreateFirewallReq:
     def tags(self, tags):
         """Sets the tags of this CreateFirewallReq.
 
-        资源标签
+        服务资源标签列表，防火墙资源添加标签后，可根据键、值组合查询资源，同时可根据键、值组合进行话单合并统计。
 
         :param tags: The tags of this CreateFirewallReq.
         :type tags: list[:class:`huaweicloudsdkcfw.v1.CreateFirewallReqTags`]

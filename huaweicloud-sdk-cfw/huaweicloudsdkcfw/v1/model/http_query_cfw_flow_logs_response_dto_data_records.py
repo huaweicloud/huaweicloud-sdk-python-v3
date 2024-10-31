@@ -79,9 +79,9 @@ class HttpQueryCfwFlowLogsResponseDTODataRecords:
 
         :param bytes: 字节
         :type bytes: float
-        :param direction: 方向，有内到外和外到内两种
+        :param direction: 方向，有内到外（in2out）和外到内（out2in）两种
         :type direction: str
-        :param packets: 包
+        :param packets: 字节包数
         :type packets: int
         :param start_time: 开始时间，以毫秒为单位的时间戳，如1718936272648
         :type start_time: int
@@ -95,7 +95,7 @@ class HttpQueryCfwFlowLogsResponseDTODataRecords:
         :type src_port: int
         :param dst_ip: 目的IP
         :type dst_ip: str
-        :param app: 应用协议
+        :param app: 规则应用类型包括：“HTTP”，\&quot;HTTPS\&quot;，\&quot;TLS1\&quot;，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
         :type app: str
         :param dst_port: 目的端口
         :type dst_port: int
@@ -235,7 +235,7 @@ class HttpQueryCfwFlowLogsResponseDTODataRecords:
     def direction(self):
         """Gets the direction of this HttpQueryCfwFlowLogsResponseDTODataRecords.
 
-        方向，有内到外和外到内两种
+        方向，有内到外（in2out）和外到内（out2in）两种
 
         :return: The direction of this HttpQueryCfwFlowLogsResponseDTODataRecords.
         :rtype: str
@@ -246,7 +246,7 @@ class HttpQueryCfwFlowLogsResponseDTODataRecords:
     def direction(self, direction):
         """Sets the direction of this HttpQueryCfwFlowLogsResponseDTODataRecords.
 
-        方向，有内到外和外到内两种
+        方向，有内到外（in2out）和外到内（out2in）两种
 
         :param direction: The direction of this HttpQueryCfwFlowLogsResponseDTODataRecords.
         :type direction: str
@@ -257,7 +257,7 @@ class HttpQueryCfwFlowLogsResponseDTODataRecords:
     def packets(self):
         """Gets the packets of this HttpQueryCfwFlowLogsResponseDTODataRecords.
 
-        包
+        字节包数
 
         :return: The packets of this HttpQueryCfwFlowLogsResponseDTODataRecords.
         :rtype: int
@@ -268,7 +268,7 @@ class HttpQueryCfwFlowLogsResponseDTODataRecords:
     def packets(self, packets):
         """Sets the packets of this HttpQueryCfwFlowLogsResponseDTODataRecords.
 
-        包
+        字节包数
 
         :param packets: The packets of this HttpQueryCfwFlowLogsResponseDTODataRecords.
         :type packets: int
@@ -411,7 +411,7 @@ class HttpQueryCfwFlowLogsResponseDTODataRecords:
     def app(self):
         """Gets the app of this HttpQueryCfwFlowLogsResponseDTODataRecords.
 
-        应用协议
+        规则应用类型包括：“HTTP”，\"HTTPS\"，\"TLS1\"，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
 
         :return: The app of this HttpQueryCfwFlowLogsResponseDTODataRecords.
         :rtype: str
@@ -422,7 +422,7 @@ class HttpQueryCfwFlowLogsResponseDTODataRecords:
     def app(self, app):
         """Sets the app of this HttpQueryCfwFlowLogsResponseDTODataRecords.
 
-        应用协议
+        规则应用类型包括：“HTTP”，\"HTTPS\"，\"TLS1\"，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
 
         :param app: The app of this HttpQueryCfwFlowLogsResponseDTODataRecords.
         :type app: str

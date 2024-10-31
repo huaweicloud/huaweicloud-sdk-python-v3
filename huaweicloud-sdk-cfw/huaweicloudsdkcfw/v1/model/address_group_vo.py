@@ -35,9 +35,9 @@ class AddressGroupVO:
 
         :param address_set_type: 地址组类型，0表示自定义地址组，1表示WAF回源IP地址组，2表示DDoS回源IP地址组，3表示NAT64转换地址组
         :type address_set_type: int
-        :param name: 地址组名称
+        :param name: 关联IP地址组名称，可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.name（.表示各对象之间层级的区分）获得。
         :type name: str
-        :param set_id: 地址组id
+        :param set_id: 关联IP地址组ID，可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
         :type set_id: str
         """
         
@@ -81,7 +81,7 @@ class AddressGroupVO:
     def name(self):
         """Gets the name of this AddressGroupVO.
 
-        地址组名称
+        关联IP地址组名称，可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.name（.表示各对象之间层级的区分）获得。
 
         :return: The name of this AddressGroupVO.
         :rtype: str
@@ -92,7 +92,7 @@ class AddressGroupVO:
     def name(self, name):
         """Sets the name of this AddressGroupVO.
 
-        地址组名称
+        关联IP地址组名称，可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.name（.表示各对象之间层级的区分）获得。
 
         :param name: The name of this AddressGroupVO.
         :type name: str
@@ -103,7 +103,7 @@ class AddressGroupVO:
     def set_id(self):
         """Gets the set_id of this AddressGroupVO.
 
-        地址组id
+        关联IP地址组ID，可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
         :return: The set_id of this AddressGroupVO.
         :rtype: str
@@ -114,7 +114,7 @@ class AddressGroupVO:
     def set_id(self, set_id):
         """Sets the set_id of this AddressGroupVO.
 
-        地址组id
+        关联IP地址组ID，可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
         :param set_id: The set_id of this AddressGroupVO.
         :type set_id: str

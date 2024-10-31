@@ -31,7 +31,7 @@ class ApplyHttpPolicyRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 企业项目id
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id，默认为0
         :type enterprise_project_id: str
         :param hosts: 待关联域名的id
         :type hosts: list[str]
@@ -51,7 +51,7 @@ class ApplyHttpPolicyRequestBody:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ApplyHttpPolicyRequestBody.
 
-        企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id，默认为0
 
         :return: The enterprise_project_id of this ApplyHttpPolicyRequestBody.
         :rtype: str
@@ -62,7 +62,7 @@ class ApplyHttpPolicyRequestBody:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ApplyHttpPolicyRequestBody.
 
-        企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id，默认为0
 
         :param enterprise_project_id: The enterprise_project_id of this ApplyHttpPolicyRequestBody.
         :type enterprise_project_id: str

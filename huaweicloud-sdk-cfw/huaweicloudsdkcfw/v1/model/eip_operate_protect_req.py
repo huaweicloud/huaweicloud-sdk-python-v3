@@ -33,11 +33,11 @@ class EipOperateProtectReq:
 
         The model defined in huaweicloud sdk
 
-        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。
+        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。此处仅取type为0的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
         :type object_id: str
-        :param status: EIP状态，0表示防护中，1表示未防护
+        :param status: EIP切换的状态，0表示防护中，1表示未防护
         :type status: int
-        :param ip_infos: EIP信息列表
+        :param ip_infos: 切换防护状态的EIP信息列表
         :type ip_infos: list[:class:`huaweicloudsdkcfw.v1.EipOperateProtectReqIpInfos`]
         """
         
@@ -56,7 +56,7 @@ class EipOperateProtectReq:
     def object_id(self):
         """Gets the object_id of this EipOperateProtectReq.
 
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。
+        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。此处仅取type为0的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
 
         :return: The object_id of this EipOperateProtectReq.
         :rtype: str
@@ -67,7 +67,7 @@ class EipOperateProtectReq:
     def object_id(self, object_id):
         """Sets the object_id of this EipOperateProtectReq.
 
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。
+        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。此处仅取type为0的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
 
         :param object_id: The object_id of this EipOperateProtectReq.
         :type object_id: str
@@ -78,7 +78,7 @@ class EipOperateProtectReq:
     def status(self):
         """Gets the status of this EipOperateProtectReq.
 
-        EIP状态，0表示防护中，1表示未防护
+        EIP切换的状态，0表示防护中，1表示未防护
 
         :return: The status of this EipOperateProtectReq.
         :rtype: int
@@ -89,7 +89,7 @@ class EipOperateProtectReq:
     def status(self, status):
         """Sets the status of this EipOperateProtectReq.
 
-        EIP状态，0表示防护中，1表示未防护
+        EIP切换的状态，0表示防护中，1表示未防护
 
         :param status: The status of this EipOperateProtectReq.
         :type status: int
@@ -100,7 +100,7 @@ class EipOperateProtectReq:
     def ip_infos(self):
         """Gets the ip_infos of this EipOperateProtectReq.
 
-        EIP信息列表
+        切换防护状态的EIP信息列表
 
         :return: The ip_infos of this EipOperateProtectReq.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.EipOperateProtectReqIpInfos`]
@@ -111,7 +111,7 @@ class EipOperateProtectReq:
     def ip_infos(self, ip_infos):
         """Sets the ip_infos of this EipOperateProtectReq.
 
-        EIP信息列表
+        切换防护状态的EIP信息列表
 
         :param ip_infos: The ip_infos of this EipOperateProtectReq.
         :type ip_infos: list[:class:`huaweicloudsdkcfw.v1.EipOperateProtectReqIpInfos`]

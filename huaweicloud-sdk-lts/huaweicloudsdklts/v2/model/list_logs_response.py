@@ -21,7 +21,7 @@ class ListLogsResponse(SdkResponse):
         'count': 'int',
         'logs': 'list[LogContents]',
         'is_query_complete': 'bool',
-        'analysis_logs': 'list[dict(str, str)]'
+        'analysis_logs': 'list[object]'
     }
 
     attribute_map = {
@@ -43,7 +43,7 @@ class ListLogsResponse(SdkResponse):
         :param is_query_complete: 是否查询完成。
         :type is_query_complete: bool
         :param analysis_logs: 分析日志返回响应体
-        :type analysis_logs: list[dict(str, str)]
+        :type analysis_logs: list[object]
         """
         
         super(ListLogsResponse, self).__init__()
@@ -136,7 +136,7 @@ class ListLogsResponse(SdkResponse):
         分析日志返回响应体
 
         :return: The analysis_logs of this ListLogsResponse.
-        :rtype: list[dict(str, str)]
+        :rtype: list[object]
         """
         return self._analysis_logs
 
@@ -147,7 +147,7 @@ class ListLogsResponse(SdkResponse):
         分析日志返回响应体
 
         :param analysis_logs: The analysis_logs of this ListLogsResponse.
-        :type analysis_logs: list[dict(str, str)]
+        :type analysis_logs: list[object]
         """
         self._analysis_logs = analysis_logs
 

@@ -51,29 +51,29 @@ class FirewallInstanceVO:
 
         The model defined in huaweicloud sdk
 
-        :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，默认情况下，fw_instance_Id为空时，返回账号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
+        :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标记防火墙由系统自动生成的id。
         :type fw_instance_id: str
-        :param resource_id: 资源id
+        :param resource_id: 资源id，与防火墙实例id fw_instance_id相同
         :type resource_id: str
-        :param name: 防火墙创建时间戳
+        :param name: 创建防火墙时的时间戳
         :type name: str
         :param fw_instance_name: 防火墙名称
         :type fw_instance_name: str
         :param enterprise_project_id: 企业项目id，用户支持企业项目后，由企业项目生成的id。
         :type enterprise_project_id: str
-        :param ha_type: 集群类型
+        :param ha_type: 集群类型，包含主备（0）和集群（1）两种方式，主备模式包含四个节点，2个主节点构成集群，剩余两个节点为主节点的备节点，集群模式仅拉起两个节点作为集群。
         :type ha_type: int
         :param charge_mode: 计费模式 0：包年/包月 1：按需
         :type charge_mode: int
-        :param service_type: 服务类型
+        :param service_type: 防火墙防护类型，目前仅支持0，互联网防护。
         :type service_type: int
-        :param engine_type: 引擎类型
+        :param engine_type: 引擎类型，0：自研引擎 1：山石引擎 3：天融信引擎
         :type engine_type: int
         :param flavor: 
         :type flavor: :class:`huaweicloudsdkcfw.v1.Flavor`
-        :param status: 防火墙状态列表，包括-1：等待支付，0：创建中，1，删除中，2：运行中，3：升级中，4：删除完成：5：冻结中，6：创建失败，7：删除失败，8：冻结失败，9：存储中，10：存储失败，11：升级失败
+        :param status: 防火墙状态列表，包括-1：等待支付，0：创建中，1：删除中，2：运行中，3：升级中，4：删除完成：5：冻结中，6：创建失败，7：删除失败，8：冻结失败，9：存储中，10：存储失败，11：升级失败
         :type status: int
-        :param tags: 标签列表
+        :param tags: 标签列表，标签键值map转化的json字符串，如\&quot;{\\\&quot;key\\\&quot;:\\\&quot;value\\\&quot;}\&quot;
         :type tags: str
         """
         
@@ -122,7 +122,7 @@ class FirewallInstanceVO:
     def fw_instance_id(self):
         """Gets the fw_instance_id of this FirewallInstanceVO.
 
-        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，默认情况下，fw_instance_Id为空时，返回账号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
+        防火墙实例id，创建云防火墙后用于标记防火墙由系统自动生成的id。
 
         :return: The fw_instance_id of this FirewallInstanceVO.
         :rtype: str
@@ -133,7 +133,7 @@ class FirewallInstanceVO:
     def fw_instance_id(self, fw_instance_id):
         """Sets the fw_instance_id of this FirewallInstanceVO.
 
-        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，默认情况下，fw_instance_Id为空时，返回账号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
+        防火墙实例id，创建云防火墙后用于标记防火墙由系统自动生成的id。
 
         :param fw_instance_id: The fw_instance_id of this FirewallInstanceVO.
         :type fw_instance_id: str
@@ -144,7 +144,7 @@ class FirewallInstanceVO:
     def resource_id(self):
         """Gets the resource_id of this FirewallInstanceVO.
 
-        资源id
+        资源id，与防火墙实例id fw_instance_id相同
 
         :return: The resource_id of this FirewallInstanceVO.
         :rtype: str
@@ -155,7 +155,7 @@ class FirewallInstanceVO:
     def resource_id(self, resource_id):
         """Sets the resource_id of this FirewallInstanceVO.
 
-        资源id
+        资源id，与防火墙实例id fw_instance_id相同
 
         :param resource_id: The resource_id of this FirewallInstanceVO.
         :type resource_id: str
@@ -166,7 +166,7 @@ class FirewallInstanceVO:
     def name(self):
         """Gets the name of this FirewallInstanceVO.
 
-        防火墙创建时间戳
+        创建防火墙时的时间戳
 
         :return: The name of this FirewallInstanceVO.
         :rtype: str
@@ -177,7 +177,7 @@ class FirewallInstanceVO:
     def name(self, name):
         """Sets the name of this FirewallInstanceVO.
 
-        防火墙创建时间戳
+        创建防火墙时的时间戳
 
         :param name: The name of this FirewallInstanceVO.
         :type name: str
@@ -232,7 +232,7 @@ class FirewallInstanceVO:
     def ha_type(self):
         """Gets the ha_type of this FirewallInstanceVO.
 
-        集群类型
+        集群类型，包含主备（0）和集群（1）两种方式，主备模式包含四个节点，2个主节点构成集群，剩余两个节点为主节点的备节点，集群模式仅拉起两个节点作为集群。
 
         :return: The ha_type of this FirewallInstanceVO.
         :rtype: int
@@ -243,7 +243,7 @@ class FirewallInstanceVO:
     def ha_type(self, ha_type):
         """Sets the ha_type of this FirewallInstanceVO.
 
-        集群类型
+        集群类型，包含主备（0）和集群（1）两种方式，主备模式包含四个节点，2个主节点构成集群，剩余两个节点为主节点的备节点，集群模式仅拉起两个节点作为集群。
 
         :param ha_type: The ha_type of this FirewallInstanceVO.
         :type ha_type: int
@@ -276,7 +276,7 @@ class FirewallInstanceVO:
     def service_type(self):
         """Gets the service_type of this FirewallInstanceVO.
 
-        服务类型
+        防火墙防护类型，目前仅支持0，互联网防护。
 
         :return: The service_type of this FirewallInstanceVO.
         :rtype: int
@@ -287,7 +287,7 @@ class FirewallInstanceVO:
     def service_type(self, service_type):
         """Sets the service_type of this FirewallInstanceVO.
 
-        服务类型
+        防火墙防护类型，目前仅支持0，互联网防护。
 
         :param service_type: The service_type of this FirewallInstanceVO.
         :type service_type: int
@@ -298,7 +298,7 @@ class FirewallInstanceVO:
     def engine_type(self):
         """Gets the engine_type of this FirewallInstanceVO.
 
-        引擎类型
+        引擎类型，0：自研引擎 1：山石引擎 3：天融信引擎
 
         :return: The engine_type of this FirewallInstanceVO.
         :rtype: int
@@ -309,7 +309,7 @@ class FirewallInstanceVO:
     def engine_type(self, engine_type):
         """Sets the engine_type of this FirewallInstanceVO.
 
-        引擎类型
+        引擎类型，0：自研引擎 1：山石引擎 3：天融信引擎
 
         :param engine_type: The engine_type of this FirewallInstanceVO.
         :type engine_type: int
@@ -338,7 +338,7 @@ class FirewallInstanceVO:
     def status(self):
         """Gets the status of this FirewallInstanceVO.
 
-        防火墙状态列表，包括-1：等待支付，0：创建中，1，删除中，2：运行中，3：升级中，4：删除完成：5：冻结中，6：创建失败，7：删除失败，8：冻结失败，9：存储中，10：存储失败，11：升级失败
+        防火墙状态列表，包括-1：等待支付，0：创建中，1：删除中，2：运行中，3：升级中，4：删除完成：5：冻结中，6：创建失败，7：删除失败，8：冻结失败，9：存储中，10：存储失败，11：升级失败
 
         :return: The status of this FirewallInstanceVO.
         :rtype: int
@@ -349,7 +349,7 @@ class FirewallInstanceVO:
     def status(self, status):
         """Sets the status of this FirewallInstanceVO.
 
-        防火墙状态列表，包括-1：等待支付，0：创建中，1，删除中，2：运行中，3：升级中，4：删除完成：5：冻结中，6：创建失败，7：删除失败，8：冻结失败，9：存储中，10：存储失败，11：升级失败
+        防火墙状态列表，包括-1：等待支付，0：创建中，1：删除中，2：运行中，3：升级中，4：删除完成：5：冻结中，6：创建失败，7：删除失败，8：冻结失败，9：存储中，10：存储失败，11：升级失败
 
         :param status: The status of this FirewallInstanceVO.
         :type status: int
@@ -360,7 +360,7 @@ class FirewallInstanceVO:
     def tags(self):
         """Gets the tags of this FirewallInstanceVO.
 
-        标签列表
+        标签列表，标签键值map转化的json字符串，如\"{\\\"key\\\":\\\"value\\\"}\"
 
         :return: The tags of this FirewallInstanceVO.
         :rtype: str
@@ -371,7 +371,7 @@ class FirewallInstanceVO:
     def tags(self, tags):
         """Sets the tags of this FirewallInstanceVO.
 
-        标签列表
+        标签列表，标签键值map转化的json字符串，如\"{\\\"key\\\":\\\"value\\\"}\"
 
         :param tags: The tags of this FirewallInstanceVO.
         :type tags: str

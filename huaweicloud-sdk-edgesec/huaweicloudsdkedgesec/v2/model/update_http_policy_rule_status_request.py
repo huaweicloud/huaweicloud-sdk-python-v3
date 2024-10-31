@@ -37,7 +37,7 @@ class UpdateHttpPolicyRuleStatusRequest:
 
         :param policy_id: 防护策略id
         :type policy_id: str
-        :param rule_type: 防护策略规则 cc|custom|whiteblackip|privacy|ignore|geoip|antitamper|antileakage|punishment|ip-reputation
+        :param rule_type: 防护策略规则 cc-rule|access-control-rule|blocktrustip-rule|privacy-rule|ignore-rule|geoip-rule|punishment-rule
         :type rule_type: str
         :param rule_id: 防护策略规则id
         :type rule_id: str
@@ -85,7 +85,7 @@ class UpdateHttpPolicyRuleStatusRequest:
     def rule_type(self):
         """Gets the rule_type of this UpdateHttpPolicyRuleStatusRequest.
 
-        防护策略规则 cc|custom|whiteblackip|privacy|ignore|geoip|antitamper|antileakage|punishment|ip-reputation
+        防护策略规则 cc-rule|access-control-rule|blocktrustip-rule|privacy-rule|ignore-rule|geoip-rule|punishment-rule
 
         :return: The rule_type of this UpdateHttpPolicyRuleStatusRequest.
         :rtype: str
@@ -96,7 +96,7 @@ class UpdateHttpPolicyRuleStatusRequest:
     def rule_type(self, rule_type):
         """Sets the rule_type of this UpdateHttpPolicyRuleStatusRequest.
 
-        防护策略规则 cc|custom|whiteblackip|privacy|ignore|geoip|antitamper|antileakage|punishment|ip-reputation
+        防护策略规则 cc-rule|access-control-rule|blocktrustip-rule|privacy-rule|ignore-rule|geoip-rule|punishment-rule
 
         :param rule_type: The rule_type of this UpdateHttpPolicyRuleStatusRequest.
         :type rule_type: str

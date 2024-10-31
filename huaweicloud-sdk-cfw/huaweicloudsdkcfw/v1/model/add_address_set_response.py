@@ -18,7 +18,7 @@ class AddAddressSetResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'IdObject'
+        'data': 'AddressSetId'
     }
 
     attribute_map = {
@@ -31,7 +31,7 @@ class AddAddressSetResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param data: 
-        :type data: :class:`huaweicloudsdkcfw.v1.IdObject`
+        :type data: :class:`huaweicloudsdkcfw.v1.AddressSetId`
         """
         
         super(AddAddressSetResponse, self).__init__()
@@ -47,7 +47,7 @@ class AddAddressSetResponse(SdkResponse):
         """Gets the data of this AddAddressSetResponse.
 
         :return: The data of this AddAddressSetResponse.
-        :rtype: :class:`huaweicloudsdkcfw.v1.IdObject`
+        :rtype: :class:`huaweicloudsdkcfw.v1.AddressSetId`
         """
         return self._data
 
@@ -56,7 +56,7 @@ class AddAddressSetResponse(SdkResponse):
         """Sets the data of this AddAddressSetResponse.
 
         :param data: The data of this AddAddressSetResponse.
-        :type data: :class:`huaweicloudsdkcfw.v1.IdObject`
+        :type data: :class:`huaweicloudsdkcfw.v1.AddressSetId`
         """
         self._data = data
 

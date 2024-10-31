@@ -58,8 +58,7 @@ class LTSIndexConfigInfo:
             self.fields = fields
         if sql_analysis_enable is not None:
             self.sql_analysis_enable = sql_analysis_enable
-        if log_stream_id is not None:
-            self.log_stream_id = log_stream_id
+        self.log_stream_id = log_stream_id
 
     @property
     def full_text_index(self):

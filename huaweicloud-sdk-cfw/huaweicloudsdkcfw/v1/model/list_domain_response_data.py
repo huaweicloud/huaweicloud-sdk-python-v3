@@ -43,13 +43,13 @@ class ListDomainResponseData:
         :type limit: int
         :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
         :type offset: int
-        :param project_id: 租户项目id
+        :param project_id: 项目ID
         :type project_id: str
         :param records: 域名信息列表
         :type records: list[:class:`huaweicloudsdkcfw.v1.DomainInfo`]
         :param set_id: 域名组id
         :type set_id: str
-        :param total: 总数
+        :param total: 域名总数
         :type total: int
         """
         
@@ -124,7 +124,7 @@ class ListDomainResponseData:
     def project_id(self):
         """Gets the project_id of this ListDomainResponseData.
 
-        租户项目id
+        项目ID
 
         :return: The project_id of this ListDomainResponseData.
         :rtype: str
@@ -135,7 +135,7 @@ class ListDomainResponseData:
     def project_id(self, project_id):
         """Sets the project_id of this ListDomainResponseData.
 
-        租户项目id
+        项目ID
 
         :param project_id: The project_id of this ListDomainResponseData.
         :type project_id: str
@@ -190,7 +190,7 @@ class ListDomainResponseData:
     def total(self):
         """Gets the total of this ListDomainResponseData.
 
-        总数
+        域名总数
 
         :return: The total of this ListDomainResponseData.
         :rtype: int
@@ -201,7 +201,7 @@ class ListDomainResponseData:
     def total(self, total):
         """Sets the total of this ListDomainResponseData.
 
-        总数
+        域名总数
 
         :param total: The total of this ListDomainResponseData.
         :type total: int

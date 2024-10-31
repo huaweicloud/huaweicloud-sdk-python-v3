@@ -89,8 +89,7 @@ class CreateCustomerV2Req:
             self.email = email
         if verification_code is not None:
             self.verification_code = verification_code
-        if domain_area is not None:
-            self.domain_area = domain_area
+        self.domain_area = domain_area
         self.xaccount_id = xaccount_id
         self.xaccount_type = xaccount_type
         if password is not None:

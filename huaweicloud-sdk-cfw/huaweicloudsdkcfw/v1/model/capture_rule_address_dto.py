@@ -35,7 +35,7 @@ class CaptureRuleAddressDto:
 
         :param address: 地址
         :type address: str
-        :param address_type: 目的地址类型0 ipv4,1 ipv6
+        :param address_type: 目的地址类型0 ipv4，1 ipv6
         :type address_type: int
         :param type: 输入地址类型，目前只支持0，手工输入类型
         :type type: int
@@ -78,7 +78,7 @@ class CaptureRuleAddressDto:
     def address_type(self):
         """Gets the address_type of this CaptureRuleAddressDto.
 
-        目的地址类型0 ipv4,1 ipv6
+        目的地址类型0 ipv4，1 ipv6
 
         :return: The address_type of this CaptureRuleAddressDto.
         :rtype: int
@@ -89,7 +89,7 @@ class CaptureRuleAddressDto:
     def address_type(self, address_type):
         """Sets the address_type of this CaptureRuleAddressDto.
 
-        目的地址类型0 ipv4,1 ipv6
+        目的地址类型0 ipv4，1 ipv6
 
         :param address_type: The address_type of this CaptureRuleAddressDto.
         :type address_type: int

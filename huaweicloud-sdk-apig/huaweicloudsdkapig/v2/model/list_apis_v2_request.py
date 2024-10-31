@@ -31,7 +31,8 @@ class ListApisV2Request:
         'type': 'int',
         'precise_search': 'str',
         'vpc_channel_name': 'str',
-        'return_data_mode': 'str'
+        'return_data_mode': 'str',
+        'tags': 'str'
     }
 
     attribute_map = {
@@ -49,10 +50,11 @@ class ListApisV2Request:
         'type': 'type',
         'precise_search': 'precise_search',
         'vpc_channel_name': 'vpc_channel_name',
-        'return_data_mode': 'return_data_mode'
+        'return_data_mode': 'return_data_mode',
+        'tags': 'tags'
     }
 
-    def __init__(self, instance_id=None, offset=None, limit=None, id=None, name=None, group_id=None, req_protocol=None, req_method=None, req_uri=None, auth_type=None, env_id=None, type=None, precise_search=None, vpc_channel_name=None, return_data_mode=None):
+    def __init__(self, instance_id=None, offset=None, limit=None, id=None, name=None, group_id=None, req_protocol=None, req_method=None, req_uri=None, auth_type=None, env_id=None, type=None, precise_search=None, vpc_channel_name=None, return_data_mode=None, tags=None):
         """ListApisV2Request
 
         The model defined in huaweicloud sdk
@@ -87,6 +89,8 @@ class ListApisV2Request:
         :type vpc_channel_name: str
         :param return_data_mode: 指定API详情中需要包含的额外返回结果，多个参数之间使用“,”隔开，当brief和其他include参数共同使用时，brief不生效。 目前仅支持brief，include_group，include_group_backend。 brief：默认值，不包含额外信息。 include_group：返回结果中包含api_group_info。 include_group_backend：返回结果中包含backend_api。
         :type return_data_mode: str
+        :param tags: API标签，该参数可指定多个，多个不同的参数值为或关系；不指定或为空时，表示不筛选标签；指定为#no_tags#时，表示筛选无标签API。
+        :type tags: str
         """
         
         
@@ -106,6 +110,7 @@ class ListApisV2Request:
         self._precise_search = None
         self._vpc_channel_name = None
         self._return_data_mode = None
+        self._tags = None
         self.discriminator = None
 
         self.instance_id = instance_id
@@ -137,6 +142,8 @@ class ListApisV2Request:
             self.vpc_channel_name = vpc_channel_name
         if return_data_mode is not None:
             self.return_data_mode = return_data_mode
+        if tags is not None:
+            self.tags = tags
 
     @property
     def instance_id(self):
@@ -467,6 +474,28 @@ class ListApisV2Request:
         :type return_data_mode: str
         """
         self._return_data_mode = return_data_mode
+
+    @property
+    def tags(self):
+        """Gets the tags of this ListApisV2Request.
+
+        API标签，该参数可指定多个，多个不同的参数值为或关系；不指定或为空时，表示不筛选标签；指定为#no_tags#时，表示筛选无标签API。
+
+        :return: The tags of this ListApisV2Request.
+        :rtype: str
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this ListApisV2Request.
+
+        API标签，该参数可指定多个，多个不同的参数值为或关系；不指定或为空时，表示不筛选标签；指定为#no_tags#时，表示筛选无标签API。
+
+        :param tags: The tags of this ListApisV2Request.
+        :type tags: str
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

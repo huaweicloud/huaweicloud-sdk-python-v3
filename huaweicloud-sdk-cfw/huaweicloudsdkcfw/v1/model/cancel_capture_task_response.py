@@ -18,7 +18,7 @@ class CancelCaptureTaskResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'IdObject'
+        'data': 'CaptureTaskId'
     }
 
     attribute_map = {
@@ -31,7 +31,7 @@ class CancelCaptureTaskResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param data: 
-        :type data: :class:`huaweicloudsdkcfw.v1.IdObject`
+        :type data: :class:`huaweicloudsdkcfw.v1.CaptureTaskId`
         """
         
         super(CancelCaptureTaskResponse, self).__init__()
@@ -47,7 +47,7 @@ class CancelCaptureTaskResponse(SdkResponse):
         """Gets the data of this CancelCaptureTaskResponse.
 
         :return: The data of this CancelCaptureTaskResponse.
-        :rtype: :class:`huaweicloudsdkcfw.v1.IdObject`
+        :rtype: :class:`huaweicloudsdkcfw.v1.CaptureTaskId`
         """
         return self._data
 
@@ -56,7 +56,7 @@ class CancelCaptureTaskResponse(SdkResponse):
         """Sets the data of this CancelCaptureTaskResponse.
 
         :param data: The data of this CancelCaptureTaskResponse.
-        :type data: :class:`huaweicloudsdkcfw.v1.IdObject`
+        :type data: :class:`huaweicloudsdkcfw.v1.CaptureTaskId`
         """
         self._data = data
 

@@ -17,29 +17,25 @@ class AddAddressItemsInfoDtoAddressItems:
     sensitive_list = []
 
     openapi_types = {
-        'name': 'str',
         'address_type': 'int',
         'address': 'str',
         'description': 'str'
     }
 
     attribute_map = {
-        'name': 'name',
         'address_type': 'address_type',
         'address': 'address',
         'description': 'description'
     }
 
-    def __init__(self, name=None, address_type=None, address=None, description=None):
+    def __init__(self, address_type=None, address=None, description=None):
         """AddAddressItemsInfoDtoAddressItems
 
         The model defined in huaweicloud sdk
 
-        :param name: 地址名称
-        :type name: str
-        :param address_type: 地址类型0 ipv4,1 ipv6
+        :param address_type: 地址类型0 ipv4，1 ipv6
         :type address_type: int
-        :param address: 地址组ip信息
+        :param address: ip
         :type address: str
         :param description: 地址组成员描述
         :type description: str
@@ -47,47 +43,22 @@ class AddAddressItemsInfoDtoAddressItems:
         
         
 
-        self._name = None
         self._address_type = None
         self._address = None
         self._description = None
         self.discriminator = None
 
-        self.name = name
         if address_type is not None:
             self.address_type = address_type
-        if address is not None:
-            self.address = address
+        self.address = address
         if description is not None:
             self.description = description
-
-    @property
-    def name(self):
-        """Gets the name of this AddAddressItemsInfoDtoAddressItems.
-
-        地址名称
-
-        :return: The name of this AddAddressItemsInfoDtoAddressItems.
-        :rtype: str
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        """Sets the name of this AddAddressItemsInfoDtoAddressItems.
-
-        地址名称
-
-        :param name: The name of this AddAddressItemsInfoDtoAddressItems.
-        :type name: str
-        """
-        self._name = name
 
     @property
     def address_type(self):
         """Gets the address_type of this AddAddressItemsInfoDtoAddressItems.
 
-        地址类型0 ipv4,1 ipv6
+        地址类型0 ipv4，1 ipv6
 
         :return: The address_type of this AddAddressItemsInfoDtoAddressItems.
         :rtype: int
@@ -98,7 +69,7 @@ class AddAddressItemsInfoDtoAddressItems:
     def address_type(self, address_type):
         """Sets the address_type of this AddAddressItemsInfoDtoAddressItems.
 
-        地址类型0 ipv4,1 ipv6
+        地址类型0 ipv4，1 ipv6
 
         :param address_type: The address_type of this AddAddressItemsInfoDtoAddressItems.
         :type address_type: int
@@ -109,7 +80,7 @@ class AddAddressItemsInfoDtoAddressItems:
     def address(self):
         """Gets the address of this AddAddressItemsInfoDtoAddressItems.
 
-        地址组ip信息
+        ip
 
         :return: The address of this AddAddressItemsInfoDtoAddressItems.
         :rtype: str
@@ -120,7 +91,7 @@ class AddAddressItemsInfoDtoAddressItems:
     def address(self, address):
         """Sets the address of this AddAddressItemsInfoDtoAddressItems.
 
-        地址组ip信息
+        ip
 
         :param address: The address of this AddAddressItemsInfoDtoAddressItems.
         :type address: str

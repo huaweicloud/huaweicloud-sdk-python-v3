@@ -37,11 +37,11 @@ class DnsServersResponseDTO:
 
         The model defined in huaweicloud sdk
 
-        :param id: id
+        :param id: 域名服务器id
         :type id: int
-        :param is_applied: 是否应用，0否 1是
+        :param is_applied: 域名服务器是否应用，0否 1是
         :type is_applied: int
-        :param is_customized: 是否是用户自定义的dns服务器，0否 1是
+        :param is_customized: 域名服务器是否是用户自定义的dns服务器，0否 1是
         :type is_customized: int
         :param server_ip: DNS服务器IP
         :type server_ip: str
@@ -73,7 +73,7 @@ class DnsServersResponseDTO:
     def id(self):
         """Gets the id of this DnsServersResponseDTO.
 
-        id
+        域名服务器id
 
         :return: The id of this DnsServersResponseDTO.
         :rtype: int
@@ -84,7 +84,7 @@ class DnsServersResponseDTO:
     def id(self, id):
         """Sets the id of this DnsServersResponseDTO.
 
-        id
+        域名服务器id
 
         :param id: The id of this DnsServersResponseDTO.
         :type id: int
@@ -95,7 +95,7 @@ class DnsServersResponseDTO:
     def is_applied(self):
         """Gets the is_applied of this DnsServersResponseDTO.
 
-        是否应用，0否 1是
+        域名服务器是否应用，0否 1是
 
         :return: The is_applied of this DnsServersResponseDTO.
         :rtype: int
@@ -106,7 +106,7 @@ class DnsServersResponseDTO:
     def is_applied(self, is_applied):
         """Sets the is_applied of this DnsServersResponseDTO.
 
-        是否应用，0否 1是
+        域名服务器是否应用，0否 1是
 
         :param is_applied: The is_applied of this DnsServersResponseDTO.
         :type is_applied: int
@@ -117,7 +117,7 @@ class DnsServersResponseDTO:
     def is_customized(self):
         """Gets the is_customized of this DnsServersResponseDTO.
 
-        是否是用户自定义的dns服务器，0否 1是
+        域名服务器是否是用户自定义的dns服务器，0否 1是
 
         :return: The is_customized of this DnsServersResponseDTO.
         :rtype: int
@@ -128,7 +128,7 @@ class DnsServersResponseDTO:
     def is_customized(self, is_customized):
         """Sets the is_customized of this DnsServersResponseDTO.
 
-        是否是用户自定义的dns服务器，0否 1是
+        域名服务器是否是用户自定义的dns服务器，0否 1是
 
         :param is_customized: The is_customized of this DnsServersResponseDTO.
         :type is_customized: int

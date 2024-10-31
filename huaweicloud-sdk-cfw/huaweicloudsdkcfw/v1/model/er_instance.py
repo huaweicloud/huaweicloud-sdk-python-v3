@@ -19,41 +19,29 @@ class ErInstance:
     openapi_types = {
         'id': 'str',
         'name': 'str',
-        'state': 'str',
-        'enterprise_project_id': 'str',
         'project_id': 'str',
-        'enable_ipv6': 'str',
         'attachment_id': 'str'
     }
 
     attribute_map = {
         'id': 'id',
         'name': 'name',
-        'state': 'state',
-        'enterprise_project_id': 'enterprise_project_id',
         'project_id': 'project_id',
-        'enable_ipv6': 'enable_ipv6',
         'attachment_id': 'attachment_id'
     }
 
-    def __init__(self, id=None, name=None, state=None, enterprise_project_id=None, project_id=None, enable_ipv6=None, attachment_id=None):
+    def __init__(self, id=None, name=None, project_id=None, attachment_id=None):
         """ErInstance
 
         The model defined in huaweicloud sdk
 
-        :param id: ER实例id
+        :param id: ER ID，创建ER时产生的ID
         :type id: str
         :param name: ER名称
         :type name: str
-        :param state: ER状态
-        :type state: str
-        :param enterprise_project_id: 企业租户id
-        :type enterprise_project_id: str
-        :param project_id: 租户id
+        :param project_id: 项目ID, 可以从调API处获取，也可以从控制台获取。[项目ID获取方式](cfw_02_0015.xml)
         :type project_id: str
-        :param enable_ipv6: 是否开启ipv6
-        :type enable_ipv6: str
-        :param attachment_id: 连接id
+        :param attachment_id: 企业路由器连接id，该连接用于连接防火墙和企业路由器，此字段可在通过id在ER界面查询指定er后在管理连接界面查询连接了解连接具体情况。
         :type attachment_id: str
         """
         
@@ -61,10 +49,7 @@ class ErInstance:
 
         self._id = None
         self._name = None
-        self._state = None
-        self._enterprise_project_id = None
         self._project_id = None
-        self._enable_ipv6 = None
         self._attachment_id = None
         self.discriminator = None
 
@@ -72,14 +57,8 @@ class ErInstance:
             self.id = id
         if name is not None:
             self.name = name
-        if state is not None:
-            self.state = state
-        if enterprise_project_id is not None:
-            self.enterprise_project_id = enterprise_project_id
         if project_id is not None:
             self.project_id = project_id
-        if enable_ipv6 is not None:
-            self.enable_ipv6 = enable_ipv6
         if attachment_id is not None:
             self.attachment_id = attachment_id
 
@@ -87,7 +66,7 @@ class ErInstance:
     def id(self):
         """Gets the id of this ErInstance.
 
-        ER实例id
+        ER ID，创建ER时产生的ID
 
         :return: The id of this ErInstance.
         :rtype: str
@@ -98,7 +77,7 @@ class ErInstance:
     def id(self, id):
         """Sets the id of this ErInstance.
 
-        ER实例id
+        ER ID，创建ER时产生的ID
 
         :param id: The id of this ErInstance.
         :type id: str
@@ -128,54 +107,10 @@ class ErInstance:
         self._name = name
 
     @property
-    def state(self):
-        """Gets the state of this ErInstance.
-
-        ER状态
-
-        :return: The state of this ErInstance.
-        :rtype: str
-        """
-        return self._state
-
-    @state.setter
-    def state(self, state):
-        """Sets the state of this ErInstance.
-
-        ER状态
-
-        :param state: The state of this ErInstance.
-        :type state: str
-        """
-        self._state = state
-
-    @property
-    def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ErInstance.
-
-        企业租户id
-
-        :return: The enterprise_project_id of this ErInstance.
-        :rtype: str
-        """
-        return self._enterprise_project_id
-
-    @enterprise_project_id.setter
-    def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ErInstance.
-
-        企业租户id
-
-        :param enterprise_project_id: The enterprise_project_id of this ErInstance.
-        :type enterprise_project_id: str
-        """
-        self._enterprise_project_id = enterprise_project_id
-
-    @property
     def project_id(self):
         """Gets the project_id of this ErInstance.
 
-        租户id
+        项目ID, 可以从调API处获取，也可以从控制台获取。[项目ID获取方式](cfw_02_0015.xml)
 
         :return: The project_id of this ErInstance.
         :rtype: str
@@ -186,7 +121,7 @@ class ErInstance:
     def project_id(self, project_id):
         """Sets the project_id of this ErInstance.
 
-        租户id
+        项目ID, 可以从调API处获取，也可以从控制台获取。[项目ID获取方式](cfw_02_0015.xml)
 
         :param project_id: The project_id of this ErInstance.
         :type project_id: str
@@ -194,32 +129,10 @@ class ErInstance:
         self._project_id = project_id
 
     @property
-    def enable_ipv6(self):
-        """Gets the enable_ipv6 of this ErInstance.
-
-        是否开启ipv6
-
-        :return: The enable_ipv6 of this ErInstance.
-        :rtype: str
-        """
-        return self._enable_ipv6
-
-    @enable_ipv6.setter
-    def enable_ipv6(self, enable_ipv6):
-        """Sets the enable_ipv6 of this ErInstance.
-
-        是否开启ipv6
-
-        :param enable_ipv6: The enable_ipv6 of this ErInstance.
-        :type enable_ipv6: str
-        """
-        self._enable_ipv6 = enable_ipv6
-
-    @property
     def attachment_id(self):
         """Gets the attachment_id of this ErInstance.
 
-        连接id
+        企业路由器连接id，该连接用于连接防火墙和企业路由器，此字段可在通过id在ER界面查询指定er后在管理连接界面查询连接了解连接具体情况。
 
         :return: The attachment_id of this ErInstance.
         :rtype: str
@@ -230,7 +143,7 @@ class ErInstance:
     def attachment_id(self, attachment_id):
         """Sets the attachment_id of this ErInstance.
 
-        连接id
+        企业路由器连接id，该连接用于连接防火墙和企业路由器，此字段可在通过id在ER界面查询指定er后在管理连接界面查询连接了解连接具体情况。
 
         :param attachment_id: The attachment_id of this ErInstance.
         :type attachment_id: str

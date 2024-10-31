@@ -53,23 +53,23 @@ class RuleServiceDto:
 
         :param type: 服务输入类型，0为手动输入类型，1为自动输入类型
         :type type: int
-        :param protocol: 协议类型:TCP为6, UDP为17,ICMP为1,ICMPV6为58,ANY为-1,手动类型不为空，自动类型为空
+        :param protocol: 协议类型：TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1,type为0手动类型时不能为空。
         :type protocol: int
-        :param protocols: 协议列表，协议类型:TCP为6, UDP为17,ICMP为1,ICMPV6为58,ANY为-1,手动类型不为空，自动类型为空
+        :param protocols: 协议列表，协议类型：TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1,type为0手动类型时不能为空。
         :type protocols: list[int]
         :param source_port: 源端口
         :type source_port: str
         :param dest_port: 目的端口
         :type dest_port: str
-        :param service_set_id: 服务组id，手动类型为空，自动类型为非空
+        :param service_set_id: 服务组id，当type为1（关联IP地址组）时不能为空，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
         :type service_set_id: str
-        :param service_set_name: 服务组名称
+        :param service_set_name: 服务组名称,当type为1（关联IP地址组）时不能为空，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.name（.表示各对象之间层级的区分）获得。
         :type service_set_name: str
         :param custom_service: 自定义服务
         :type custom_service: list[:class:`huaweicloudsdkcfw.v1.ServiceItem`]
-        :param predefined_group: 预定义服务组列表
+        :param predefined_group: 预定义服务组id列表，服务组id可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。查询条件中query_service_set_type需要设置为1预定义服务组。
         :type predefined_group: list[str]
-        :param service_group: 服务组列表
+        :param service_group: 服务组id列表，服务组id可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。查询条件中query_service_set_type需要设置为0自定义服务组。
         :type service_group: list[str]
         :param service_group_names: 服务组名称列表
         :type service_group_names: list[:class:`huaweicloudsdkcfw.v1.ServiceGroupVO`]
@@ -143,7 +143,7 @@ class RuleServiceDto:
     def protocol(self):
         """Gets the protocol of this RuleServiceDto.
 
-        协议类型:TCP为6, UDP为17,ICMP为1,ICMPV6为58,ANY为-1,手动类型不为空，自动类型为空
+        协议类型：TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1,type为0手动类型时不能为空。
 
         :return: The protocol of this RuleServiceDto.
         :rtype: int
@@ -154,7 +154,7 @@ class RuleServiceDto:
     def protocol(self, protocol):
         """Sets the protocol of this RuleServiceDto.
 
-        协议类型:TCP为6, UDP为17,ICMP为1,ICMPV6为58,ANY为-1,手动类型不为空，自动类型为空
+        协议类型：TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1,type为0手动类型时不能为空。
 
         :param protocol: The protocol of this RuleServiceDto.
         :type protocol: int
@@ -165,7 +165,7 @@ class RuleServiceDto:
     def protocols(self):
         """Gets the protocols of this RuleServiceDto.
 
-        协议列表，协议类型:TCP为6, UDP为17,ICMP为1,ICMPV6为58,ANY为-1,手动类型不为空，自动类型为空
+        协议列表，协议类型：TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1,type为0手动类型时不能为空。
 
         :return: The protocols of this RuleServiceDto.
         :rtype: list[int]
@@ -176,7 +176,7 @@ class RuleServiceDto:
     def protocols(self, protocols):
         """Sets the protocols of this RuleServiceDto.
 
-        协议列表，协议类型:TCP为6, UDP为17,ICMP为1,ICMPV6为58,ANY为-1,手动类型不为空，自动类型为空
+        协议列表，协议类型：TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1,type为0手动类型时不能为空。
 
         :param protocols: The protocols of this RuleServiceDto.
         :type protocols: list[int]
@@ -231,7 +231,7 @@ class RuleServiceDto:
     def service_set_id(self):
         """Gets the service_set_id of this RuleServiceDto.
 
-        服务组id，手动类型为空，自动类型为非空
+        服务组id，当type为1（关联IP地址组）时不能为空，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
         :return: The service_set_id of this RuleServiceDto.
         :rtype: str
@@ -242,7 +242,7 @@ class RuleServiceDto:
     def service_set_id(self, service_set_id):
         """Sets the service_set_id of this RuleServiceDto.
 
-        服务组id，手动类型为空，自动类型为非空
+        服务组id，当type为1（关联IP地址组）时不能为空，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
         :param service_set_id: The service_set_id of this RuleServiceDto.
         :type service_set_id: str
@@ -253,7 +253,7 @@ class RuleServiceDto:
     def service_set_name(self):
         """Gets the service_set_name of this RuleServiceDto.
 
-        服务组名称
+        服务组名称,当type为1（关联IP地址组）时不能为空，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.name（.表示各对象之间层级的区分）获得。
 
         :return: The service_set_name of this RuleServiceDto.
         :rtype: str
@@ -264,7 +264,7 @@ class RuleServiceDto:
     def service_set_name(self, service_set_name):
         """Sets the service_set_name of this RuleServiceDto.
 
-        服务组名称
+        服务组名称,当type为1（关联IP地址组）时不能为空，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.name（.表示各对象之间层级的区分）获得。
 
         :param service_set_name: The service_set_name of this RuleServiceDto.
         :type service_set_name: str
@@ -297,7 +297,7 @@ class RuleServiceDto:
     def predefined_group(self):
         """Gets the predefined_group of this RuleServiceDto.
 
-        预定义服务组列表
+        预定义服务组id列表，服务组id可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。查询条件中query_service_set_type需要设置为1预定义服务组。
 
         :return: The predefined_group of this RuleServiceDto.
         :rtype: list[str]
@@ -308,7 +308,7 @@ class RuleServiceDto:
     def predefined_group(self, predefined_group):
         """Sets the predefined_group of this RuleServiceDto.
 
-        预定义服务组列表
+        预定义服务组id列表，服务组id可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。查询条件中query_service_set_type需要设置为1预定义服务组。
 
         :param predefined_group: The predefined_group of this RuleServiceDto.
         :type predefined_group: list[str]
@@ -319,7 +319,7 @@ class RuleServiceDto:
     def service_group(self):
         """Gets the service_group of this RuleServiceDto.
 
-        服务组列表
+        服务组id列表，服务组id可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。查询条件中query_service_set_type需要设置为0自定义服务组。
 
         :return: The service_group of this RuleServiceDto.
         :rtype: list[str]
@@ -330,7 +330,7 @@ class RuleServiceDto:
     def service_group(self, service_group):
         """Sets the service_group of this RuleServiceDto.
 
-        服务组列表
+        服务组id列表，服务组id可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。查询条件中query_service_set_type需要设置为0自定义服务组。
 
         :param service_group: The service_group of this RuleServiceDto.
         :type service_group: list[str]

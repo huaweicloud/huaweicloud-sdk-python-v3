@@ -23,7 +23,6 @@ class DomainSetVo:
         'ref_count': 'int',
         'domain_set_type': 'int',
         'config_status': 'int',
-        'message': 'str',
         'rules': 'list[UseRuleVO]'
     }
 
@@ -34,11 +33,10 @@ class DomainSetVo:
         'ref_count': 'ref_count',
         'domain_set_type': 'domain_set_type',
         'config_status': 'config_status',
-        'message': 'message',
         'rules': 'rules'
     }
 
-    def __init__(self, set_id=None, name=None, description=None, ref_count=None, domain_set_type=None, config_status=None, message=None, rules=None):
+    def __init__(self, set_id=None, name=None, description=None, ref_count=None, domain_set_type=None, config_status=None, rules=None):
         """DomainSetVo
 
         The model defined in huaweicloud sdk
@@ -47,16 +45,14 @@ class DomainSetVo:
         :type set_id: str
         :param name: 域名组名称
         :type name: str
-        :param description: 描述
+        :param description: 域名组描述
         :type description: str
-        :param ref_count: 引用次数
+        :param ref_count: 域名组被规则引用次数
         :type ref_count: int
         :param domain_set_type: 域名组类型，0表示应用域名组，1表示网络域名组
         :type domain_set_type: int
-        :param config_status: 配置状态
+        :param config_status: 配置状态，-1表示未配置态，0表示配置失败，1表示配置成功，2表示配置中，3表示正常，4表示配置异常
         :type config_status: int
-        :param message: 异常信息
-        :type message: str
         :param rules: 使用规则id列表
         :type rules: list[:class:`huaweicloudsdkcfw.v1.UseRuleVO`]
         """
@@ -69,7 +65,6 @@ class DomainSetVo:
         self._ref_count = None
         self._domain_set_type = None
         self._config_status = None
-        self._message = None
         self._rules = None
         self.discriminator = None
 
@@ -85,8 +80,6 @@ class DomainSetVo:
             self.domain_set_type = domain_set_type
         if config_status is not None:
             self.config_status = config_status
-        if message is not None:
-            self.message = message
         if rules is not None:
             self.rules = rules
 
@@ -138,7 +131,7 @@ class DomainSetVo:
     def description(self):
         """Gets the description of this DomainSetVo.
 
-        描述
+        域名组描述
 
         :return: The description of this DomainSetVo.
         :rtype: str
@@ -149,7 +142,7 @@ class DomainSetVo:
     def description(self, description):
         """Sets the description of this DomainSetVo.
 
-        描述
+        域名组描述
 
         :param description: The description of this DomainSetVo.
         :type description: str
@@ -160,7 +153,7 @@ class DomainSetVo:
     def ref_count(self):
         """Gets the ref_count of this DomainSetVo.
 
-        引用次数
+        域名组被规则引用次数
 
         :return: The ref_count of this DomainSetVo.
         :rtype: int
@@ -171,7 +164,7 @@ class DomainSetVo:
     def ref_count(self, ref_count):
         """Sets the ref_count of this DomainSetVo.
 
-        引用次数
+        域名组被规则引用次数
 
         :param ref_count: The ref_count of this DomainSetVo.
         :type ref_count: int
@@ -204,7 +197,7 @@ class DomainSetVo:
     def config_status(self):
         """Gets the config_status of this DomainSetVo.
 
-        配置状态
+        配置状态，-1表示未配置态，0表示配置失败，1表示配置成功，2表示配置中，3表示正常，4表示配置异常
 
         :return: The config_status of this DomainSetVo.
         :rtype: int
@@ -215,34 +208,12 @@ class DomainSetVo:
     def config_status(self, config_status):
         """Sets the config_status of this DomainSetVo.
 
-        配置状态
+        配置状态，-1表示未配置态，0表示配置失败，1表示配置成功，2表示配置中，3表示正常，4表示配置异常
 
         :param config_status: The config_status of this DomainSetVo.
         :type config_status: int
         """
         self._config_status = config_status
-
-    @property
-    def message(self):
-        """Gets the message of this DomainSetVo.
-
-        异常信息
-
-        :return: The message of this DomainSetVo.
-        :rtype: str
-        """
-        return self._message
-
-    @message.setter
-    def message(self, message):
-        """Sets the message of this DomainSetVo.
-
-        异常信息
-
-        :param message: The message of this DomainSetVo.
-        :type message: str
-        """
-        self._message = message
 
     @property
     def rules(self):

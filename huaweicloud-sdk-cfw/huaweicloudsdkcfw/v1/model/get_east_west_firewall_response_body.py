@@ -20,7 +20,6 @@ class GetEastWestFirewallResponseBody:
         'object_id': 'str',
         'project_id': 'str',
         'status': 'int',
-        'er_associated_subnet': 'SubnetInfo',
         'firewall_associated_subnets': 'list[SubnetInfo]',
         'er': 'ErInstance',
         'inspection_vpc': 'VpcDetail',
@@ -28,15 +27,13 @@ class GetEastWestFirewallResponseBody:
         'total': 'int',
         'offset': 'int',
         'limit': 'int',
-        'mode': 'str',
-        'ew_vpc_route_limit': 'int'
+        'mode': 'str'
     }
 
     attribute_map = {
         'object_id': 'object_id',
         'project_id': 'project_id',
         'status': 'status',
-        'er_associated_subnet': 'er_associated_subnet',
         'firewall_associated_subnets': 'firewall_associated_subnets',
         'er': 'er',
         'inspection_vpc': 'inspection_vpc',
@@ -44,23 +41,20 @@ class GetEastWestFirewallResponseBody:
         'total': 'total',
         'offset': 'offset',
         'limit': 'limit',
-        'mode': 'mode',
-        'ew_vpc_route_limit': 'ew_vpc_route_limit'
+        'mode': 'mode'
     }
 
-    def __init__(self, object_id=None, project_id=None, status=None, er_associated_subnet=None, firewall_associated_subnets=None, er=None, inspection_vpc=None, protect_infos=None, total=None, offset=None, limit=None, mode=None, ew_vpc_route_limit=None):
+    def __init__(self, object_id=None, project_id=None, status=None, firewall_associated_subnets=None, er=None, inspection_vpc=None, protect_infos=None, total=None, offset=None, limit=None, mode=None):
         """GetEastWestFirewallResponseBody
 
         The model defined in huaweicloud sdk
 
-        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。
+        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。此处仅取type为1的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
         :type object_id: str
-        :param project_id: 租户project_id
+        :param project_id: 项目ID, 可以从调API处获取，也可以从控制台获取。[项目ID获取方式](cfw_02_0015.xml)
         :type project_id: str
         :param status: 防护状态：0 已开启防护， 1 未开启防护
         :type status: int
-        :param er_associated_subnet: 
-        :type er_associated_subnet: :class:`huaweicloudsdkcfw.v1.SubnetInfo`
         :param firewall_associated_subnets: 云防火墙关联子网信息
         :type firewall_associated_subnets: list[:class:`huaweicloudsdkcfw.v1.SubnetInfo`]
         :param er: 
@@ -75,10 +69,8 @@ class GetEastWestFirewallResponseBody:
         :type offset: int
         :param limit: 每页显示个数，范围为1-1024
         :type limit: int
-        :param mode: 防护模式
+        :param mode: 防护模式，值为er
         :type mode: str
-        :param ew_vpc_route_limit: 东西向路由限制
-        :type ew_vpc_route_limit: int
         """
         
         
@@ -86,7 +78,6 @@ class GetEastWestFirewallResponseBody:
         self._object_id = None
         self._project_id = None
         self._status = None
-        self._er_associated_subnet = None
         self._firewall_associated_subnets = None
         self._er = None
         self._inspection_vpc = None
@@ -95,7 +86,6 @@ class GetEastWestFirewallResponseBody:
         self._offset = None
         self._limit = None
         self._mode = None
-        self._ew_vpc_route_limit = None
         self.discriminator = None
 
         if object_id is not None:
@@ -104,8 +94,6 @@ class GetEastWestFirewallResponseBody:
             self.project_id = project_id
         if status is not None:
             self.status = status
-        if er_associated_subnet is not None:
-            self.er_associated_subnet = er_associated_subnet
         if firewall_associated_subnets is not None:
             self.firewall_associated_subnets = firewall_associated_subnets
         if er is not None:
@@ -122,14 +110,12 @@ class GetEastWestFirewallResponseBody:
             self.limit = limit
         if mode is not None:
             self.mode = mode
-        if ew_vpc_route_limit is not None:
-            self.ew_vpc_route_limit = ew_vpc_route_limit
 
     @property
     def object_id(self):
         """Gets the object_id of this GetEastWestFirewallResponseBody.
 
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。
+        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。此处仅取type为1的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
 
         :return: The object_id of this GetEastWestFirewallResponseBody.
         :rtype: str
@@ -140,7 +126,7 @@ class GetEastWestFirewallResponseBody:
     def object_id(self, object_id):
         """Sets the object_id of this GetEastWestFirewallResponseBody.
 
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。
+        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。此处仅取type为1的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
 
         :param object_id: The object_id of this GetEastWestFirewallResponseBody.
         :type object_id: str
@@ -151,7 +137,7 @@ class GetEastWestFirewallResponseBody:
     def project_id(self):
         """Gets the project_id of this GetEastWestFirewallResponseBody.
 
-        租户project_id
+        项目ID, 可以从调API处获取，也可以从控制台获取。[项目ID获取方式](cfw_02_0015.xml)
 
         :return: The project_id of this GetEastWestFirewallResponseBody.
         :rtype: str
@@ -162,7 +148,7 @@ class GetEastWestFirewallResponseBody:
     def project_id(self, project_id):
         """Sets the project_id of this GetEastWestFirewallResponseBody.
 
-        租户project_id
+        项目ID, 可以从调API处获取，也可以从控制台获取。[项目ID获取方式](cfw_02_0015.xml)
 
         :param project_id: The project_id of this GetEastWestFirewallResponseBody.
         :type project_id: str
@@ -190,24 +176,6 @@ class GetEastWestFirewallResponseBody:
         :type status: int
         """
         self._status = status
-
-    @property
-    def er_associated_subnet(self):
-        """Gets the er_associated_subnet of this GetEastWestFirewallResponseBody.
-
-        :return: The er_associated_subnet of this GetEastWestFirewallResponseBody.
-        :rtype: :class:`huaweicloudsdkcfw.v1.SubnetInfo`
-        """
-        return self._er_associated_subnet
-
-    @er_associated_subnet.setter
-    def er_associated_subnet(self, er_associated_subnet):
-        """Sets the er_associated_subnet of this GetEastWestFirewallResponseBody.
-
-        :param er_associated_subnet: The er_associated_subnet of this GetEastWestFirewallResponseBody.
-        :type er_associated_subnet: :class:`huaweicloudsdkcfw.v1.SubnetInfo`
-        """
-        self._er_associated_subnet = er_associated_subnet
 
     @property
     def firewall_associated_subnets(self):
@@ -359,7 +327,7 @@ class GetEastWestFirewallResponseBody:
     def mode(self):
         """Gets the mode of this GetEastWestFirewallResponseBody.
 
-        防护模式
+        防护模式，值为er
 
         :return: The mode of this GetEastWestFirewallResponseBody.
         :rtype: str
@@ -370,34 +338,12 @@ class GetEastWestFirewallResponseBody:
     def mode(self, mode):
         """Sets the mode of this GetEastWestFirewallResponseBody.
 
-        防护模式
+        防护模式，值为er
 
         :param mode: The mode of this GetEastWestFirewallResponseBody.
         :type mode: str
         """
         self._mode = mode
-
-    @property
-    def ew_vpc_route_limit(self):
-        """Gets the ew_vpc_route_limit of this GetEastWestFirewallResponseBody.
-
-        东西向路由限制
-
-        :return: The ew_vpc_route_limit of this GetEastWestFirewallResponseBody.
-        :rtype: int
-        """
-        return self._ew_vpc_route_limit
-
-    @ew_vpc_route_limit.setter
-    def ew_vpc_route_limit(self, ew_vpc_route_limit):
-        """Sets the ew_vpc_route_limit of this GetEastWestFirewallResponseBody.
-
-        东西向路由限制
-
-        :param ew_vpc_route_limit: The ew_vpc_route_limit of this GetEastWestFirewallResponseBody.
-        :type ew_vpc_route_limit: int
-        """
-        self._ew_vpc_route_limit = ew_vpc_route_limit
 
     def to_dict(self):
         """Returns the model properties as a dict"""

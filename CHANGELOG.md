@@ -1,3 +1,739 @@
+# 3.1.120 2024-10-31
+
+### HuaweiCloud SDK APIG
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **AssociateSignatureKeyV2**
+    - changes of response param
+      - `+ bindings.tags`
+  - **ListSignatureKeysBindedToApiV2**
+    - changes of response param
+      - `+ bindings.tags`
+  - **ListApisNotBoundWithSignatureKeyV2**
+    - changes of request param
+      - `+ tags`
+    - changes of response param
+      - `+ apis.tags`
+  - **ListApisBindedToSignatureKeyV2**
+    - changes of request param
+      - `+ tags`
+    - changes of response param
+      - `+ bindings.tags`
+  - **ListApisBindedToRequestThrottlingPolicyV2**
+    - changes of request param
+      - `+ tags`
+    - changes of response param
+      - `+ apis.tags`
+  - **ListApisUnbindedToRequestThrottlingPolicyV2**
+    - changes of request param
+      - `+ tags`
+    - changes of response param
+      - `+ apis.tags`
+  - **ListAppsBindedToApiV2**
+    - changes of response param
+      - `+ auths.tags`
+  - **ListApisBindedToAppV2**
+    - changes of request param
+      - `+ tags`
+    - changes of response param
+      - `+ auths.tags`
+  - **ListApisUnbindedToAppV2**
+    - changes of request param
+      - `+ tags`
+    - changes of response param
+      - `+ apis.tags`
+  - **ListApisBindedToAclPolicyV2**
+    - changes of request param
+      - `+ tags`
+    - changes of response param
+      - `+ apis.tags`
+  - **ListApisUnbindedToAclPolicyV2**
+    - changes of request param
+      - `+ tags`
+    - changes of response param
+      - `+ apis.tags`
+  - **ListPluginAttachedApis**
+    - changes of request param
+      - `+ tags`
+    - changes of response param
+      - `+ apis.tags`
+  - **ListPluginAttachableApis**
+    - changes of request param
+      - `+ tags`
+    - changes of response param
+      - `+ apis.tags`
+  - **ShowDetailsOfVpcChannelV2**
+    - changes of response param
+      - `+ microservice_info.nacos_info`
+      - `+ microservice_info.service_type: enum value [NACOS]`
+  - **UpdateVpcChannelV2**
+    - changes of request param
+      - `+ microservice_info.nacos_info`
+      - `+ microservice_info.service_type: enum value [NACOS]`
+    - changes of response param
+      - `+ microservice_info.nacos_info`
+      - `+ microservice_info.service_type: enum value [NACOS]`
+  - **ImportMicroservice**
+    - changes of request param
+      - `+ nacos_info`
+      - `+ service_type: enum value [NACOS]`
+  - **ListApisV2**
+    - changes of request param
+      - `+ tags`
+  - **CreateVpcChannelV2**
+    - changes of request param
+      - `+ microservice_info.nacos_info`
+      - `+ microservice_info.service_type: enum value [NACOS]`
+    - changes of response param
+      - `+ microservice_info.nacos_info`
+      - `+ microservice_info.service_type: enum value [NACOS]`
+  - **ListVpcChannelsV2**
+    - changes of response param
+      - `+ vpc_channels.microservice_info.nacos_info`
+      - `+ vpc_channels.microservice_info.service_type: enum value [NACOS]`
+
+### HuaweiCloud SDK BSS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListCustomerOrders**
+    - changes of response param
+      - `+ order_infos.enterprise_projects`
+
+### HuaweiCloud SDK BSSINTL
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListCustomerOrders**
+    - changes of response param
+      - `+ order_infos.enterprise_projects`
+
+### HuaweiCloud SDK CFW
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ChangeEastWestFirewallStatus**
+    - changes of response param
+      - `- trace_id`
+      - `* data: object -> object<ChangeEastWestFirewallStatusResponseData>`
+  - **AddServiceSet**
+    - changes of response param
+      - `+ data.name`
+      - `* data: object -> object<ServiceSetId>`
+  - **ListJob**
+    - changes of response param
+      - `- error_msg`
+      - `- error_code`
+      - `* data: object -> object<GetCreateFirewallJobResponseData>`
+  - **ListAddressSets**
+    - changes of request param
+      - `+ address_type: enum value [0,1]`
+  - **BatchUpdateAclRuleActions**
+    - changes of request param
+      - `+ fw_instance_id`
+  - **ListDnsServers**
+    - changes of request param
+      - `* fw_instance_id: required -> optional`
+  - **ChangeIpsSwitchStatus**
+    - changes of request param
+      - `- X-Language`
+      - `- ips_type: enum value [1]`
+  - **UpdateAclRuleOrder**
+    - changes of response param
+      - `- data.name`
+      - `* data: object<RuleId> -> object<OrderRuleId>`
+  - **AddBlackWhiteList**
+    - changes of response param
+      - `* data: object<IdObject> -> object<BlackWhiteListId>`
+  - **UpdateBlackWhiteList**
+    - changes of response param
+      - `* data: object<IdObject> -> object<BlackWhiteListId>`
+  - **DeleteBlackWhiteList**
+    - changes of response param
+      - `* data: object<IdObject> -> object<BlackWhiteListId>`
+  - **UpdateServiceSet**
+    - changes of response param
+      - `+ data.name`
+      - `* data: object -> object<ServiceSetId>`
+  - **DeleteServiceSet**
+    - changes of response param
+      - `* data: object<IdObject> -> object<ServiceSetId>`
+  - **DeleteServiceItem**
+    - changes of response param
+      - `* data: object<IdObject> -> object<DeleteServiceItemResponseBodyData>`
+  - **ListEipCount**
+    - changes of response param
+      - `- data.object_id`
+  - **ChangeEipStatus**
+    - changes of response param
+      - `+ data.fail_eip_list`
+  - **DeleteAddressItem**
+    - changes of response param
+      - `* data: object<IdObject> -> object<AddressItemId>`
+  - **AddAddressSet**
+    - changes of request param
+      - `- address_type: enum value [0,1]`
+    - changes of response param
+      - `* data: object<IdObject> -> object<AddressSetId>`
+  - **ListAddressSetDetail**
+    - changes of response param
+      - `- data.address_type: enum value [0,1]`
+  - **UpdateAddressSet**
+    - changes of response param
+      - `+ data.name`
+  - **DeleteAddressSet**
+    - changes of response param
+      - `* data: object<IdObject> -> object<AddressSetId>`
+  - **AddDomainSet**
+    - changes of request param
+      - `* fw_instance_id: optional -> required`
+  - **DeleteDomains**
+    - changes of request param
+      - `+ fw_instance_id`
+  - **ListCaptureTask**
+    - changes of request param
+      - `* fw_instance_id: optional -> required`
+    - changes of response param
+      - `* data: list<HttpQueryCaptureTaskResponseData> -> object<HttpQueryCaptureTaskResponseData>`
+  - **CreateCaptureTask**
+    - changes of response param
+      - `* data: object<IdObject> -> object<CaptureTaskId>`
+  - **DeleteCaptureTask**
+    - changes of response param
+      - `* data: object<IdObject> -> object<CaptureTaskId>`
+  - **CancelCaptureTask**
+    - changes of response param
+      - `* data: object<IdObject> -> object<CaptureTaskId>`
+  - **ListEastWestFirewall**
+    - changes of response param
+      - `- data.er_associated_subnet`
+      - `- data.ew_vpc_route_limit`
+      - `- data.firewall_associated_subnets.status`
+      - `- data.er.state`
+      - `- data.er.enterprise_project_id`
+      - `- data.er.enable_ipv6`
+      - `- data.inspection_vpc.status`
+  - **AddAclRule**
+    - changes of request param
+      - `- rules.applicationsJsonString`
+  - **UpdateAclRule**
+    - changes of request param
+      - `- sequence`
+      - `- applicationsJsonString`
+  - **ListAclRules**
+    - changes of request param
+      - `+ address_type: enum value [2]`
+  - **ListEips**
+    - changes of request param
+      - `+ status: enum value [null,0,1]`
+      - `+ sync: enum value [0,1]`
+    - changes of response param
+      - `- data.records.owner`
+  - **AddAddressItem**
+    - changes of request param
+      - `- address_items.name`
+    - changes of response param
+      - `- data.items.name`
+      - `* data.items: list<IdObject> -> list<AddressItemIdWithoutName>`
+  - **ListDomains**
+    - changes of response param
+      - `- data.records.dns_ips`
+  - **ListFirewallDetail**
+    - changes of request param
+      - `+ service_type: enum value [0,1]`
+    - changes of response param
+      - `- data.records.status: enum value [-1,0,1,2,3,4,5,6,7,8,9,10,11]`
+  - **ListDomainSets**
+    - changes of response param
+      - `- data.records.message`
+
+### HuaweiCloud SDK Cloudtest
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ShowCaseResult`
+    - `ShowTemplateById`
+    - `DeleteTemplateById`
+    - `CreateTemplate`
+    - `UpdateMindmapName`
+    - `ShowMindmapRecycleByPage`
+    - `ShowMindmapBackupByPage`
+    - `ShowTestcaseById`
+    - `ShowDefaultTemplateByPage`
+    - `ShowMindmapRecycleById`
+    - `DeleteMindmapRecycleById`
+    - `CreateBackupMindmap`
+    - `ShowMindmapBackupById`
+    - `DeleteMindmapBackupById`
+    - `ImportAsset`
+    - `DownloadAssetTemplate`
+    - `ImportFactor`
+    - `ExportFactor`
+    - `DeleteAsset`
+    - `UpdateAssetTree`
+    - `CreateAssetTree`
+    - `DeleteAssetTree`
+    - `BatchDeleteFacotrByIds`
+    - `BatchShowTestCase`
+    - `DeleteFacotrById`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListOwnTestCases**
+    - changes of response param
+      - `* result.value.labels: string -> list<LabelVo>`
+  - **UpdateVersionTestCase**
+    - changes of response param
+      - `* result.value.labels: string -> list<LabelVo>`
+  - **CreateVersionTestCase**
+    - changes of request param
+      - `* result.value.labels: string -> list<LabelVo>`
+    - changes of response param
+      - `* labels: string -> list<LabelVo>`
+  - **ShowTestCase**
+    - changes of response param
+      - `* result.value.labels: string -> list<LabelVo>`
+  - **ListAllTestCases**
+    - changes of response param
+      - `* result.value.labels: string -> list<LabelVo>`
+  - **ListTestCasesByIssue**
+    - changes of response param
+      - `* result.value.testcases.labels: string -> list<LabelVo>`
+
+### HuaweiCloud SDK CodeHub
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListRelatedCommits**
+    - changes of response param
+      - `+ result.list.iamId`
+      - `+ result.list.userName`
+      - `+ result.list.repositoryId`
+      - `+ result.list.userId`
+      - `+ result.list.branchName`
+      - `+ result.list.commitId`
+      - `+ result.list.commitShortId`
+      - `+ result.list.commitMsg`
+      - `+ result.list.commitUrl`
+      - `+ result.list.commitType`
+      - `+ result.list.relatedId`
+      - `+ result.list.createAt`
+      - `+ result.list.updateAt`
+      - `+ result.list.relatedUrl`
+      - `- result.list.iam_id`
+      - `- result.list.user_name`
+      - `- result.list.repository_id`
+      - `- result.list.user_id`
+      - `- result.list.branch_name`
+      - `- result.list.commit_id`
+      - `- result.list.commit_shortId`
+      - `- result.list.commit_msg`
+      - `- result.list.commit_url`
+      - `- result.list.commit_type`
+      - `- result.list.related_id`
+      - `- result.list.create_at`
+      - `- result.list.update_at`
+      - `- result.list.related_url`
+
+### HuaweiCloud SDK DAS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the APIs `CreateHealthReportTask`, `ListHealthReportTask`, `ShowInstanceHealthReport`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DRS
+
+- _API Version_
+  - V5
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListAsyncJobDetail**
+    - changes of response param
+      - `- jobs.compare_result.data_compare_task_list.dynamic_compare_delay`
+      - `* jobs.compare_result.data_compare_task_list.report_remain_seconds: string -> int64`
+  - **ShowJobDetail**
+    - changes of response param
+      - `- job.compare_result.data_compare_task_list.dynamic_compare_delay`
+      - `* job.compare_result.data_compare_task_list.report_remain_seconds: string -> int64`
+
+### HuaweiCloud SDK EdgeSec
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the following APIs:
+    - `ShowHttpCcRules`
+    - `CreateHttpCcRule`
+    - `ShowHttpCcRule`
+    - `UpdateHttpCcRule`
+    - `DeleteHttpCcRule`
+    - `ShowHttpAccessControlRules`
+    - `CreateHttpAccessControlRule`
+    - `ShowHttpAccessControlRule`
+    - `UpdateHttpAccessControlRule`
+    - `DeleteHttpAccessControlRule`
+    - `ShowHttpBlockTrustIpRules`
+    - `CreateHttpBlockTrustIpRule`
+    - `ShowHttpBlockTrustIpRule`
+    - `UpdateHttpBlockTrustIpRule`
+    - `DeleteHttpBlockTrustIpRule`
+    - `ShowHttpGeoIpRules`
+    - `CreateHttpGeoIpRule`
+    - `ShowHttpGeoIpRule`
+    - `UpdateHttpGeoIpRule`
+    - `DeleteHttpGeoIpRule`
+    - `ShowHttpIgnoreRules`
+    - `CreateHttpIgnoreRule`
+    - `ShowHttpIgnoreRule`
+    - `UpdateHttpIgnoreRule`
+    - `DeleteHttpIgnoreRule`
+    - `ResetHttpIgnoreRule`
+    - `ShowHttpPunishmentRules`
+    - `CreateHttpPunishmentRule`
+    - `ShowHttpPunishmentRule`
+    - `UpdateHttpPunishmentRule`
+    - `DeleteHttpPunishmentRule`
+    - `ShowHttpIpGroups`
+    - `CreateHttpIpGroup`
+    - `ShowHttpIpGroup`
+    - `UpdateHttpIpGroup`
+    - `DeleteHttpIpGroup`
+    - `ShowHttpStatistics`
+    - `ShowHttpOverviews`
+    - `ShowHttpReferenceTables`
+    - `CreateHttpReferenceTable`
+    - `UpdateHttpReferenceTable`
+    - `DeleteHttpReferenceTable`
+    - `ShowDdosAttackTimelineStats`
+    - `ShowHttpAttackDistributionStats`
+    - `ShowHttpAttackTimelineStats`
+    - `ShowHttpAttackTopStats`
+    - `ShowDdosAttackLogs`
+    - `DownloadDdosAttackLogs`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `UpdateMysqlCompatibility`
+    - `StartMysqlCompatibility`
+    - `StopInstance`
+    - `ListLimitTask`
+    - `CreateLimitTask`
+    - `ShowLimitTask`
+    - `UpdateLimitTask`
+    - `DeleteLimitTask`
+    - `ListNodeLimitSqlModel`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK GES
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListGraphs2**
+    - changes of response param
+      - `+ graphs.enable_lts`
+  - **ShowGraph2**
+    - changes of response param
+      - `+ graph.enable_lts`
+
+### HuaweiCloud SDK iDME
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `SubscribeCloudService`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK LTS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListLogStreams**
+    - changes of response param
+      - `+ log_streams.log_stream_name_alias`
+      - `+ log_streams.whether_log_storage`
+      - `+ log_streams.hot_cold_separation`
+      - `+ log_streams.auth_web_tracking`
+      - `+ log_streams.ttl_in_days`
+      - `+ log_streams.hot_storage_days`
+  - **ListLogStream**
+    - changes of response param
+      - `+ log_streams.log_stream_name_alias`
+      - `+ log_streams.whether_log_storage`
+      - `+ log_streams.hot_cold_separation`
+      - `+ log_streams.auth_web_tracking`
+      - `+ log_streams.ttl_in_days`
+      - `+ log_streams.hot_storage_days`
+  - **ListLogs**
+    - changes of response param
+      - `* analysisLogs: list<map<string, string>> -> list<object>`
+  - **ShowNotificationTemplate**
+    - changes of response param
+      - `+ templates.topic`
+  - **ListActiveOrHistoryAlarms**
+    - changes of response param
+      - `+ events.metadata.log_group_name`
+      - `+ events.metadata.log_stream_name`
+  - **DeleteActiveAlarms**
+    - changes of request param
+      - `+ events.metadata.log_group_name`
+      - `+ events.metadata.log_stream_name`
+  - **UpdateNotificationTemplate**
+    - changes of request param
+      - `+ templates.topic`
+    - changes of response param
+      - `+ templates.topic`
+  - **CreateNotificationTemplate**
+    - changes of request param
+      - `+ templates.topic`
+    - changes of response param
+      - `+ templates.topic`
+  - **ListNotificationTemplates**
+    - changes of response param
+      - `+ results.templates.topic`
+  - **ListAccessConfig**
+    - changes of response param
+      - `+ processor_type`
+      - `+ component_id`
+      - `+ environment_id`
+      - `+ processors`
+      - `+ application_id`
+      - `+ encoding_format`
+      - `+ demo_log`
+      - `+ incremental_collect`
+      - `+ demo_fields`
+      - `+ result.encoding_format`
+      - `+ result.incremental_collect`
+      - `+ result.processor_type`
+      - `+ result.demo_log`
+      - `+ result.demo_fields`
+      - `+ result.processors`
+      - `+ result.application_id`
+      - `+ result.environment_id`
+      - `+ result.component_id`
+  - **UpdateAccessConfig**
+    - changes of request param
+      - `+ incremental_collect`
+      - `+ encoding_format`
+      - `+ processor_type`
+      - `+ demo_log`
+      - `+ demo_fields`
+      - `+ processors`
+      - `+ application_id`
+      - `+ environment_id`
+      - `+ component_id`
+    - changes of response param
+      - `+ processor_type`
+      - `+ component_id`
+      - `+ environment_id`
+      - `+ processors`
+      - `+ application_id`
+      - `+ encoding_format`
+      - `+ demo_log`
+      - `+ incremental_collect`
+      - `+ demo_fields`
+  - **CreateAccessConfig**
+    - changes of request param
+      - `+ incremental_collect`
+      - `+ encoding_format`
+      - `+ processor_type`
+      - `+ demo_log`
+      - `+ demo_fields`
+      - `+ processors`
+      - `+ application_id`
+      - `+ environment_id`
+      - `+ component_id`
+      - `+ access_config_type_source`
+    - changes of response param
+      - `+ processor_type`
+      - `+ component_id`
+      - `+ environment_id`
+      - `+ processors`
+      - `+ application_id`
+      - `+ encoding_format`
+      - `+ demo_log`
+      - `+ incremental_collect`
+      - `+ demo_fields`
+  - **DeleteAccessConfig**
+    - changes of response param
+      - `+ processor_type`
+      - `+ component_id`
+      - `+ environment_id`
+      - `+ processors`
+      - `+ application_id`
+      - `+ encoding_format`
+      - `+ demo_log`
+      - `+ incremental_collect`
+      - `+ demo_fields`
+      - `+ result.encoding_format`
+      - `+ result.incremental_collect`
+      - `+ result.processor_type`
+      - `+ result.demo_log`
+      - `+ result.demo_fields`
+      - `+ result.processors`
+      - `+ result.application_id`
+      - `+ result.environment_id`
+      - `+ result.component_id`
+
+### HuaweiCloud SDK Moderation
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **RunCreateAudioStreamModerationJob**
+    - changes of request param
+      - `+ data.return_all_results`
+
+### HuaweiCloud SDK OCR
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **RecognizeSmartDocumentRecognizer**
+    - changes of request param
+      - `+ language`
+
+### HuaweiCloud SDK RDS
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListDbUsers**
+    - changes of response param
+      - `+ users.databases`
+      - `+ users.hosts`
+  - **ListSqlserverDbUsers**
+    - changes of response param
+      - `+ users.databases`
+      - `+ users.hosts`
+
+### HuaweiCloud SDK VOD
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the APIs `ShowStorageModeType`, `UpdateStorageModeType`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK WAF
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListBandwidthTimeline**
+    - changes of request param
+      - `+ display_option`
+  - **ListWhiteblackipRule**
+    - changes of response param
+      - `+ size`
+  - **CreatePremiumHost**
+    - changes of response param
+      - `+ loadbalancer_id`
+      - `+ mode`
+      - `+ protocol_port`
+      - `+ listener_id`
+  - **ShowPremiumHost**
+    - changes of response param
+      - `+ loadbalancer_id`
+      - `+ mode`
+      - `+ protocol_port`
+      - `+ listener_id`
+  - **UpdatePremiumHost**
+    - changes of response param
+      - `+ loadbalancer_id`
+      - `+ mode`
+      - `+ protocol_port`
+      - `+ listener_id`
+
+### HuaweiCloud SDK Workspace
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the API `ChangeUserPrivilegeGroup`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.1.119 2024-10-24
 
 ### HuaweiCloud SDK CCE

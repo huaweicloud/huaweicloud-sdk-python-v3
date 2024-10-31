@@ -4375,6 +4375,8 @@ class ApigAsyncClient(Client):
             query_params.append(('api_name', local_var_params['api_name']))
         if 'group_id' in local_var_params:
             query_params.append(('group_id', local_var_params['group_id']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
 
         header_params = {}
 
@@ -4454,6 +4456,8 @@ class ApigAsyncClient(Client):
             query_params.append(('api_name', local_var_params['api_name']))
         if 'group_id' in local_var_params:
             query_params.append(('group_id', local_var_params['group_id']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
 
         header_params = {}
 
@@ -6405,6 +6409,8 @@ class ApigAsyncClient(Client):
             query_params.append(('req_method', local_var_params['req_method']))
         if 'req_uri' in local_var_params:
             query_params.append(('req_uri', local_var_params['req_uri']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
 
         header_params = {}
 
@@ -6492,6 +6498,8 @@ class ApigAsyncClient(Client):
             query_params.append(('req_method', local_var_params['req_method']))
         if 'req_uri' in local_var_params:
             query_params.append(('req_uri', local_var_params['req_uri']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
 
         header_params = {}
 
@@ -11563,6 +11571,8 @@ class ApigAsyncClient(Client):
             query_params.append(('api_id', local_var_params['api_id']))
         if 'api_name' in local_var_params:
             query_params.append(('api_name', local_var_params['api_name']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
 
         header_params = {}
 
@@ -11642,6 +11652,8 @@ class ApigAsyncClient(Client):
             query_params.append(('api_id', local_var_params['api_id']))
         if 'api_name' in local_var_params:
             query_params.append(('api_name', local_var_params['api_name']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
 
         header_params = {}
 
@@ -11735,6 +11747,8 @@ class ApigAsyncClient(Client):
             query_params.append(('vpc_channel_name', local_var_params['vpc_channel_name']))
         if 'return_data_mode' in local_var_params:
             query_params.append(('return_data_mode', local_var_params['return_data_mode']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
 
         header_params = {}
 
@@ -12447,6 +12461,8 @@ class ApigAsyncClient(Client):
             query_params.append(('env_id', local_var_params['env_id']))
         if 'group_id' in local_var_params:
             query_params.append(('group_id', local_var_params['group_id']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
 
         header_params = {}
 
@@ -12526,6 +12542,8 @@ class ApigAsyncClient(Client):
             query_params.append(('env_id', local_var_params['env_id']))
         if 'group_id' in local_var_params:
             query_params.append(('group_id', local_var_params['group_id']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
 
         header_params = {}
 
@@ -12741,6 +12759,8 @@ class ApigAsyncClient(Client):
             query_params.append(('group_name', local_var_params['group_name']))
         if 'env_id' in local_var_params:
             query_params.append(('env_id', local_var_params['env_id']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
 
         header_params = {}
 
@@ -12820,6 +12840,8 @@ class ApigAsyncClient(Client):
             query_params.append(('api_id', local_var_params['api_id']))
         if 'api_name' in local_var_params:
             query_params.append(('api_name', local_var_params['api_name']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
 
         header_params = {}
 
@@ -14831,7 +14853,7 @@ class ApigAsyncClient(Client):
     def update_member_group_async(self, request):
         """更新VPC通道后端服务器组
 
-        更新指定VPC通道后端服务器组
+        更新指定VPC通道后端服务器组。当负载通道为nacos微服务类型时，不支持修改服务器组权重。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

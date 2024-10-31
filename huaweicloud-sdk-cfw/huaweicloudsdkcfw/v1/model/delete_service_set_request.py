@@ -33,11 +33,11 @@ class DeleteServiceSetRequest:
 
         The model defined in huaweicloud sdk
 
-        :param set_id: 服务集合id
+        :param set_id: 服务组id，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
         :type set_id: str
-        :param enterprise_project_id: 企业项目id，用户支持企业项目后，由企业项目生成的id。
+        :param enterprise_project_id: 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
         :type enterprise_project_id: str
-        :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，默认情况下，fw_instance_Id为空时，返回账号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
+        :param fw_instance_id: 防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
         :type fw_instance_id: str
         """
         
@@ -58,7 +58,7 @@ class DeleteServiceSetRequest:
     def set_id(self):
         """Gets the set_id of this DeleteServiceSetRequest.
 
-        服务集合id
+        服务组id，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
         :return: The set_id of this DeleteServiceSetRequest.
         :rtype: str
@@ -69,7 +69,7 @@ class DeleteServiceSetRequest:
     def set_id(self, set_id):
         """Sets the set_id of this DeleteServiceSetRequest.
 
-        服务集合id
+        服务组id，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
         :param set_id: The set_id of this DeleteServiceSetRequest.
         :type set_id: str
@@ -80,7 +80,7 @@ class DeleteServiceSetRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this DeleteServiceSetRequest.
 
-        企业项目id，用户支持企业项目后，由企业项目生成的id。
+        企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
         :return: The enterprise_project_id of this DeleteServiceSetRequest.
         :rtype: str
@@ -91,7 +91,7 @@ class DeleteServiceSetRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this DeleteServiceSetRequest.
 
-        企业项目id，用户支持企业项目后，由企业项目生成的id。
+        企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
         :param enterprise_project_id: The enterprise_project_id of this DeleteServiceSetRequest.
         :type enterprise_project_id: str
@@ -102,7 +102,7 @@ class DeleteServiceSetRequest:
     def fw_instance_id(self):
         """Gets the fw_instance_id of this DeleteServiceSetRequest.
 
-        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，默认情况下，fw_instance_Id为空时，返回账号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
+        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
         :return: The fw_instance_id of this DeleteServiceSetRequest.
         :rtype: str
@@ -113,7 +113,7 @@ class DeleteServiceSetRequest:
     def fw_instance_id(self, fw_instance_id):
         """Sets the fw_instance_id of this DeleteServiceSetRequest.
 
-        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，默认情况下，fw_instance_Id为空时，返回账号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
+        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
         :param fw_instance_id: The fw_instance_id of this DeleteServiceSetRequest.
         :type fw_instance_id: str

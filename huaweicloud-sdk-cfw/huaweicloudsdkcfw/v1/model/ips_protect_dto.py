@@ -43,10 +43,8 @@ class IpsProtectDTO:
         self._mode = None
         self.discriminator = None
 
-        if object_id is not None:
-            self.object_id = object_id
-        if mode is not None:
-            self.mode = mode
+        self.object_id = object_id
+        self.mode = mode
 
     @property
     def object_id(self):

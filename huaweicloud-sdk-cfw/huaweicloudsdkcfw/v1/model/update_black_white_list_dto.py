@@ -41,11 +41,11 @@ class UpdateBlackWhiteListDto:
 
         :param direction: 地址方向0：源地址1：目的地址
         :type direction: int
-        :param address_type: 地址类型0：ipv4,1:ipv6
+        :param address_type: 地址类型0：ipv4，1:ipv6
         :type address_type: int
         :param address: ip地址
         :type address: str
-        :param protocol: 协议类型:TCP为6, UDP为17,ICMP为1,ICMPV6为58,ANY为-1
+        :param protocol: 协议类型：TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1
         :type protocol: int
         :param port: 端口
         :type port: str
@@ -101,7 +101,7 @@ class UpdateBlackWhiteListDto:
     def address_type(self):
         """Gets the address_type of this UpdateBlackWhiteListDto.
 
-        地址类型0：ipv4,1:ipv6
+        地址类型0：ipv4，1:ipv6
 
         :return: The address_type of this UpdateBlackWhiteListDto.
         :rtype: int
@@ -112,7 +112,7 @@ class UpdateBlackWhiteListDto:
     def address_type(self, address_type):
         """Sets the address_type of this UpdateBlackWhiteListDto.
 
-        地址类型0：ipv4,1:ipv6
+        地址类型0：ipv4，1:ipv6
 
         :param address_type: The address_type of this UpdateBlackWhiteListDto.
         :type address_type: int
@@ -145,7 +145,7 @@ class UpdateBlackWhiteListDto:
     def protocol(self):
         """Gets the protocol of this UpdateBlackWhiteListDto.
 
-        协议类型:TCP为6, UDP为17,ICMP为1,ICMPV6为58,ANY为-1
+        协议类型：TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1
 
         :return: The protocol of this UpdateBlackWhiteListDto.
         :rtype: int
@@ -156,7 +156,7 @@ class UpdateBlackWhiteListDto:
     def protocol(self, protocol):
         """Sets the protocol of this UpdateBlackWhiteListDto.
 
-        协议类型:TCP为6, UDP为17,ICMP为1,ICMPV6为58,ANY为-1
+        协议类型：TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1
 
         :param protocol: The protocol of this UpdateBlackWhiteListDto.
         :type protocol: int

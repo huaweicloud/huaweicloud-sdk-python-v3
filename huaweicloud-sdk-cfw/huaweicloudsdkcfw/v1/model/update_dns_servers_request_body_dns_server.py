@@ -33,7 +33,7 @@ class UpdateDnsServersRequestBodyDnsServer:
 
         The model defined in huaweicloud sdk
 
-        :param server_ip: DNS服务器IP
+        :param server_ip: DNS服务器IP，可通过[查询dns服务器列表接口](ListDnsServers.xml)查询获得，通过返回值中的data.server_ip（.表示各对象之间层级的区分）获得。
         :type server_ip: str
         :param is_customized: 是否是用户自定义的dns服务器，0否 1是
         :type is_customized: int
@@ -48,18 +48,15 @@ class UpdateDnsServersRequestBodyDnsServer:
         self._is_applied = None
         self.discriminator = None
 
-        if server_ip is not None:
-            self.server_ip = server_ip
-        if is_customized is not None:
-            self.is_customized = is_customized
-        if is_applied is not None:
-            self.is_applied = is_applied
+        self.server_ip = server_ip
+        self.is_customized = is_customized
+        self.is_applied = is_applied
 
     @property
     def server_ip(self):
         """Gets the server_ip of this UpdateDnsServersRequestBodyDnsServer.
 
-        DNS服务器IP
+        DNS服务器IP，可通过[查询dns服务器列表接口](ListDnsServers.xml)查询获得，通过返回值中的data.server_ip（.表示各对象之间层级的区分）获得。
 
         :return: The server_ip of this UpdateDnsServersRequestBodyDnsServer.
         :rtype: str
@@ -70,7 +67,7 @@ class UpdateDnsServersRequestBodyDnsServer:
     def server_ip(self, server_ip):
         """Sets the server_ip of this UpdateDnsServersRequestBodyDnsServer.
 
-        DNS服务器IP
+        DNS服务器IP，可通过[查询dns服务器列表接口](ListDnsServers.xml)查询获得，通过返回值中的data.server_ip（.表示各对象之间层级的区分）获得。
 
         :param server_ip: The server_ip of this UpdateDnsServersRequestBodyDnsServer.
         :type server_ip: str

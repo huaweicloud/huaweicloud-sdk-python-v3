@@ -35,13 +35,13 @@ class CreateFirewallReqFlavor:
 
         The model defined in huaweicloud sdk
 
-        :param version: 防火墙版本 “charge_mode”为“prePaid”时，仅支持专业版。 “charge_mode”为“postPaid”时，支持标准版、专业版。  Standard - 标准版 Professional - 专业版
+        :param version: 防火墙版本 “charge_mode”为“prePaid”时，支持标准版、专业版。 “charge_mode”为“postPaid”时，仅支持专业版。  Standard - 标准版 Professional - 专业版
         :type version: str
-        :param extend_eip_count: 扩展EIP数量，仅包周期场景下生效
+        :param extend_eip_count: 扩展EIP数量，仅包周期场景下生效，当用户需要在增加EIP使用时需要使用此参数。
         :type extend_eip_count: int
-        :param extend_bandwidth: 扩展带宽，步长为5，仅包周期场景下生效
+        :param extend_bandwidth: 扩展带宽，步长为5，仅包周期场景下生效，当用户需要在增加带宽使用时需要使用此参数。
         :type extend_bandwidth: int
-        :param extend_vpc_count: 扩展VPC数量，仅包周期场景下生效
+        :param extend_vpc_count: 扩展VPC数量，仅包周期场景下生效，当用户需要增加VPC使用时需要使用此参数。
         :type extend_vpc_count: int
         """
         
@@ -65,7 +65,7 @@ class CreateFirewallReqFlavor:
     def version(self):
         """Gets the version of this CreateFirewallReqFlavor.
 
-        防火墙版本 “charge_mode”为“prePaid”时，仅支持专业版。 “charge_mode”为“postPaid”时，支持标准版、专业版。  Standard - 标准版 Professional - 专业版
+        防火墙版本 “charge_mode”为“prePaid”时，支持标准版、专业版。 “charge_mode”为“postPaid”时，仅支持专业版。  Standard - 标准版 Professional - 专业版
 
         :return: The version of this CreateFirewallReqFlavor.
         :rtype: str
@@ -76,7 +76,7 @@ class CreateFirewallReqFlavor:
     def version(self, version):
         """Sets the version of this CreateFirewallReqFlavor.
 
-        防火墙版本 “charge_mode”为“prePaid”时，仅支持专业版。 “charge_mode”为“postPaid”时，支持标准版、专业版。  Standard - 标准版 Professional - 专业版
+        防火墙版本 “charge_mode”为“prePaid”时，支持标准版、专业版。 “charge_mode”为“postPaid”时，仅支持专业版。  Standard - 标准版 Professional - 专业版
 
         :param version: The version of this CreateFirewallReqFlavor.
         :type version: str
@@ -87,7 +87,7 @@ class CreateFirewallReqFlavor:
     def extend_eip_count(self):
         """Gets the extend_eip_count of this CreateFirewallReqFlavor.
 
-        扩展EIP数量，仅包周期场景下生效
+        扩展EIP数量，仅包周期场景下生效，当用户需要在增加EIP使用时需要使用此参数。
 
         :return: The extend_eip_count of this CreateFirewallReqFlavor.
         :rtype: int
@@ -98,7 +98,7 @@ class CreateFirewallReqFlavor:
     def extend_eip_count(self, extend_eip_count):
         """Sets the extend_eip_count of this CreateFirewallReqFlavor.
 
-        扩展EIP数量，仅包周期场景下生效
+        扩展EIP数量，仅包周期场景下生效，当用户需要在增加EIP使用时需要使用此参数。
 
         :param extend_eip_count: The extend_eip_count of this CreateFirewallReqFlavor.
         :type extend_eip_count: int
@@ -109,7 +109,7 @@ class CreateFirewallReqFlavor:
     def extend_bandwidth(self):
         """Gets the extend_bandwidth of this CreateFirewallReqFlavor.
 
-        扩展带宽，步长为5，仅包周期场景下生效
+        扩展带宽，步长为5，仅包周期场景下生效，当用户需要在增加带宽使用时需要使用此参数。
 
         :return: The extend_bandwidth of this CreateFirewallReqFlavor.
         :rtype: int
@@ -120,7 +120,7 @@ class CreateFirewallReqFlavor:
     def extend_bandwidth(self, extend_bandwidth):
         """Sets the extend_bandwidth of this CreateFirewallReqFlavor.
 
-        扩展带宽，步长为5，仅包周期场景下生效
+        扩展带宽，步长为5，仅包周期场景下生效，当用户需要在增加带宽使用时需要使用此参数。
 
         :param extend_bandwidth: The extend_bandwidth of this CreateFirewallReqFlavor.
         :type extend_bandwidth: int
@@ -131,7 +131,7 @@ class CreateFirewallReqFlavor:
     def extend_vpc_count(self):
         """Gets the extend_vpc_count of this CreateFirewallReqFlavor.
 
-        扩展VPC数量，仅包周期场景下生效
+        扩展VPC数量，仅包周期场景下生效，当用户需要增加VPC使用时需要使用此参数。
 
         :return: The extend_vpc_count of this CreateFirewallReqFlavor.
         :rtype: int
@@ -142,7 +142,7 @@ class CreateFirewallReqFlavor:
     def extend_vpc_count(self, extend_vpc_count):
         """Sets the extend_vpc_count of this CreateFirewallReqFlavor.
 
-        扩展VPC数量，仅包周期场景下生效
+        扩展VPC数量，仅包周期场景下生效，当用户需要增加VPC使用时需要使用此参数。
 
         :param extend_vpc_count: The extend_vpc_count of this CreateFirewallReqFlavor.
         :type extend_vpc_count: int

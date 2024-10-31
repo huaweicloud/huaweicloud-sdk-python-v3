@@ -19,30 +19,26 @@ class DomainInfo:
     openapi_types = {
         'domain_address_id': 'str',
         'domain_name': 'str',
-        'description': 'str',
-        'dns_ips': 'list[str]'
+        'description': 'str'
     }
 
     attribute_map = {
         'domain_address_id': 'domain_address_id',
         'domain_name': 'domain_name',
-        'description': 'description',
-        'dns_ips': 'dns_ips'
+        'description': 'description'
     }
 
-    def __init__(self, domain_address_id=None, domain_name=None, description=None, dns_ips=None):
+    def __init__(self, domain_address_id=None, domain_name=None, description=None):
         """DomainInfo
 
         The model defined in huaweicloud sdk
 
         :param domain_address_id: 域名地址id
         :type domain_address_id: str
-        :param domain_name: 域名
+        :param domain_name: 域名，如www.test.com
         :type domain_name: str
-        :param description: 描述
+        :param description: 域名描述
         :type description: str
-        :param dns_ips: 域名服务器列表
-        :type dns_ips: list[str]
         """
         
         
@@ -50,7 +46,6 @@ class DomainInfo:
         self._domain_address_id = None
         self._domain_name = None
         self._description = None
-        self._dns_ips = None
         self.discriminator = None
 
         if domain_address_id is not None:
@@ -59,8 +54,6 @@ class DomainInfo:
             self.domain_name = domain_name
         if description is not None:
             self.description = description
-        if dns_ips is not None:
-            self.dns_ips = dns_ips
 
     @property
     def domain_address_id(self):
@@ -88,7 +81,7 @@ class DomainInfo:
     def domain_name(self):
         """Gets the domain_name of this DomainInfo.
 
-        域名
+        域名，如www.test.com
 
         :return: The domain_name of this DomainInfo.
         :rtype: str
@@ -99,7 +92,7 @@ class DomainInfo:
     def domain_name(self, domain_name):
         """Sets the domain_name of this DomainInfo.
 
-        域名
+        域名，如www.test.com
 
         :param domain_name: The domain_name of this DomainInfo.
         :type domain_name: str
@@ -110,7 +103,7 @@ class DomainInfo:
     def description(self):
         """Gets the description of this DomainInfo.
 
-        描述
+        域名描述
 
         :return: The description of this DomainInfo.
         :rtype: str
@@ -121,34 +114,12 @@ class DomainInfo:
     def description(self, description):
         """Sets the description of this DomainInfo.
 
-        描述
+        域名描述
 
         :param description: The description of this DomainInfo.
         :type description: str
         """
         self._description = description
-
-    @property
-    def dns_ips(self):
-        """Gets the dns_ips of this DomainInfo.
-
-        域名服务器列表
-
-        :return: The dns_ips of this DomainInfo.
-        :rtype: list[str]
-        """
-        return self._dns_ips
-
-    @dns_ips.setter
-    def dns_ips(self, dns_ips):
-        """Sets the dns_ips of this DomainInfo.
-
-        域名服务器列表
-
-        :param dns_ips: The dns_ips of this DomainInfo.
-        :type dns_ips: list[str]
-        """
-        self._dns_ips = dns_ips
 
     def to_dict(self):
         """Returns the model properties as a dict"""

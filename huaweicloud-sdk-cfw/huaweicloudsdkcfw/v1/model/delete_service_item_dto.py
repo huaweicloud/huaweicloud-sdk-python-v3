@@ -31,9 +31,9 @@ class DeleteServiceItemDto:
 
         The model defined in huaweicloud sdk
 
-        :param set_id: 服务组id
+        :param set_id: 服务组id，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
         :type set_id: str
-        :param service_item_ids: 服务组成员id列表
+        :param service_item_ids: 服务组成员id列表，服务组成员id可通过[查询服务成员列表接口](ListServiceItems.xml)查询获得，通过返回值中的data.records.item_id（.表示各对象之间层级的区分）获得。
         :type service_item_ids: list[str]
         """
         
@@ -50,7 +50,7 @@ class DeleteServiceItemDto:
     def set_id(self):
         """Gets the set_id of this DeleteServiceItemDto.
 
-        服务组id
+        服务组id，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
         :return: The set_id of this DeleteServiceItemDto.
         :rtype: str
@@ -61,7 +61,7 @@ class DeleteServiceItemDto:
     def set_id(self, set_id):
         """Sets the set_id of this DeleteServiceItemDto.
 
-        服务组id
+        服务组id，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
         :param set_id: The set_id of this DeleteServiceItemDto.
         :type set_id: str
@@ -72,7 +72,7 @@ class DeleteServiceItemDto:
     def service_item_ids(self):
         """Gets the service_item_ids of this DeleteServiceItemDto.
 
-        服务组成员id列表
+        服务组成员id列表，服务组成员id可通过[查询服务成员列表接口](ListServiceItems.xml)查询获得，通过返回值中的data.records.item_id（.表示各对象之间层级的区分）获得。
 
         :return: The service_item_ids of this DeleteServiceItemDto.
         :rtype: list[str]
@@ -83,7 +83,7 @@ class DeleteServiceItemDto:
     def service_item_ids(self, service_item_ids):
         """Sets the service_item_ids of this DeleteServiceItemDto.
 
-        服务组成员id列表
+        服务组成员id列表，服务组成员id可通过[查询服务成员列表接口](ListServiceItems.xml)查询获得，通过返回值中的data.records.item_id（.表示各对象之间层级的区分）获得。
 
         :param service_item_ids: The service_item_ids of this DeleteServiceItemDto.
         :type service_item_ids: list[str]

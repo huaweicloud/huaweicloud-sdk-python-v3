@@ -33,11 +33,11 @@ class IpsSwitchResponseDTO:
 
         The model defined in huaweicloud sdk
 
-        :param id: ips开关id
+        :param id: ips开关id，此处为互联网边界防护对象id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得
         :type id: str
-        :param basic_defense_status: 基础防御状态
+        :param basic_defense_status: 基础防御状态，0表示关闭，1表示开启
         :type basic_defense_status: int
-        :param virtual_patches_status: 虚拟补丁状态
+        :param virtual_patches_status: 虚拟补丁状态，0表示关闭，1表示开启
         :type virtual_patches_status: int
         """
         
@@ -59,7 +59,7 @@ class IpsSwitchResponseDTO:
     def id(self):
         """Gets the id of this IpsSwitchResponseDTO.
 
-        ips开关id
+        ips开关id，此处为互联网边界防护对象id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得
 
         :return: The id of this IpsSwitchResponseDTO.
         :rtype: str
@@ -70,7 +70,7 @@ class IpsSwitchResponseDTO:
     def id(self, id):
         """Sets the id of this IpsSwitchResponseDTO.
 
-        ips开关id
+        ips开关id，此处为互联网边界防护对象id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得
 
         :param id: The id of this IpsSwitchResponseDTO.
         :type id: str
@@ -81,7 +81,7 @@ class IpsSwitchResponseDTO:
     def basic_defense_status(self):
         """Gets the basic_defense_status of this IpsSwitchResponseDTO.
 
-        基础防御状态
+        基础防御状态，0表示关闭，1表示开启
 
         :return: The basic_defense_status of this IpsSwitchResponseDTO.
         :rtype: int
@@ -92,7 +92,7 @@ class IpsSwitchResponseDTO:
     def basic_defense_status(self, basic_defense_status):
         """Sets the basic_defense_status of this IpsSwitchResponseDTO.
 
-        基础防御状态
+        基础防御状态，0表示关闭，1表示开启
 
         :param basic_defense_status: The basic_defense_status of this IpsSwitchResponseDTO.
         :type basic_defense_status: int
@@ -103,7 +103,7 @@ class IpsSwitchResponseDTO:
     def virtual_patches_status(self):
         """Gets the virtual_patches_status of this IpsSwitchResponseDTO.
 
-        虚拟补丁状态
+        虚拟补丁状态，0表示关闭，1表示开启
 
         :return: The virtual_patches_status of this IpsSwitchResponseDTO.
         :rtype: int
@@ -114,7 +114,7 @@ class IpsSwitchResponseDTO:
     def virtual_patches_status(self, virtual_patches_status):
         """Sets the virtual_patches_status of this IpsSwitchResponseDTO.
 
-        虚拟补丁状态
+        虚拟补丁状态，0表示关闭，1表示开启
 
         :param virtual_patches_status: The virtual_patches_status of this IpsSwitchResponseDTO.
         :type virtual_patches_status: int

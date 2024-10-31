@@ -53,9 +53,9 @@ class ListEipsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。
+        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。此处仅取type为0的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
         :type object_id: str
-        :param key_word: 弹性公网ID/弹性公网IP
+        :param key_word: 查询防护EIP列表关键字，可选用弹性公网ID和弹性公网IP
         :type key_word: str
         :param status: 防护状态 null-全部 0-开启防护 1-关闭防护
         :type status: str
@@ -65,19 +65,19 @@ class ListEipsRequest:
         :type limit: int
         :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
         :type offset: int
-        :param enterprise_project_id: 企业项目id，用户支持企业项目后，由企业项目生成的id。
+        :param enterprise_project_id: 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
         :type enterprise_project_id: str
-        :param device_key: 设备键
+        :param device_key: 设备关键字，是eip绑定的资产的名称或id
         :type device_key: str
-        :param address_type: 地址类型0 ipv4,1 ipv6
+        :param address_type: 地址类型0 ipv4，1 ipv6
         :type address_type: int
-        :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，默认情况下，fw_instance_Id为空时，返回账号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
+        :param fw_instance_id: 防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
         :type fw_instance_id: str
-        :param fw_key_word: 所绑定防火墙id防火墙名称
+        :param fw_key_word: 防火墙关键字，可使用防火墙id或名称查询，可通过[防火墙ID获取方式](cfw_02_0028.xml)
         :type fw_key_word: str
-        :param eps_id: 弹性公网ip的企业项目id
+        :param eps_id: 弹性公网ip的企业项目id，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，租户未开启企业项目时为0
         :type eps_id: str
-        :param tags: 标签列表信息
+        :param tags: 标签列表信息可通过查询EIP服务界面列表标签页签获得
         :type tags: str
         """
         
@@ -126,7 +126,7 @@ class ListEipsRequest:
     def object_id(self):
         """Gets the object_id of this ListEipsRequest.
 
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。
+        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。此处仅取type为0的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
 
         :return: The object_id of this ListEipsRequest.
         :rtype: str
@@ -137,7 +137,7 @@ class ListEipsRequest:
     def object_id(self, object_id):
         """Sets the object_id of this ListEipsRequest.
 
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。
+        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。此处仅取type为0的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
 
         :param object_id: The object_id of this ListEipsRequest.
         :type object_id: str
@@ -148,7 +148,7 @@ class ListEipsRequest:
     def key_word(self):
         """Gets the key_word of this ListEipsRequest.
 
-        弹性公网ID/弹性公网IP
+        查询防护EIP列表关键字，可选用弹性公网ID和弹性公网IP
 
         :return: The key_word of this ListEipsRequest.
         :rtype: str
@@ -159,7 +159,7 @@ class ListEipsRequest:
     def key_word(self, key_word):
         """Sets the key_word of this ListEipsRequest.
 
-        弹性公网ID/弹性公网IP
+        查询防护EIP列表关键字，可选用弹性公网ID和弹性公网IP
 
         :param key_word: The key_word of this ListEipsRequest.
         :type key_word: str
@@ -258,7 +258,7 @@ class ListEipsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListEipsRequest.
 
-        企业项目id，用户支持企业项目后，由企业项目生成的id。
+        企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
         :return: The enterprise_project_id of this ListEipsRequest.
         :rtype: str
@@ -269,7 +269,7 @@ class ListEipsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListEipsRequest.
 
-        企业项目id，用户支持企业项目后，由企业项目生成的id。
+        企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
         :param enterprise_project_id: The enterprise_project_id of this ListEipsRequest.
         :type enterprise_project_id: str
@@ -280,7 +280,7 @@ class ListEipsRequest:
     def device_key(self):
         """Gets the device_key of this ListEipsRequest.
 
-        设备键
+        设备关键字，是eip绑定的资产的名称或id
 
         :return: The device_key of this ListEipsRequest.
         :rtype: str
@@ -291,7 +291,7 @@ class ListEipsRequest:
     def device_key(self, device_key):
         """Sets the device_key of this ListEipsRequest.
 
-        设备键
+        设备关键字，是eip绑定的资产的名称或id
 
         :param device_key: The device_key of this ListEipsRequest.
         :type device_key: str
@@ -302,7 +302,7 @@ class ListEipsRequest:
     def address_type(self):
         """Gets the address_type of this ListEipsRequest.
 
-        地址类型0 ipv4,1 ipv6
+        地址类型0 ipv4，1 ipv6
 
         :return: The address_type of this ListEipsRequest.
         :rtype: int
@@ -313,7 +313,7 @@ class ListEipsRequest:
     def address_type(self, address_type):
         """Sets the address_type of this ListEipsRequest.
 
-        地址类型0 ipv4,1 ipv6
+        地址类型0 ipv4，1 ipv6
 
         :param address_type: The address_type of this ListEipsRequest.
         :type address_type: int
@@ -324,7 +324,7 @@ class ListEipsRequest:
     def fw_instance_id(self):
         """Gets the fw_instance_id of this ListEipsRequest.
 
-        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，默认情况下，fw_instance_Id为空时，返回账号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
+        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
         :return: The fw_instance_id of this ListEipsRequest.
         :rtype: str
@@ -335,7 +335,7 @@ class ListEipsRequest:
     def fw_instance_id(self, fw_instance_id):
         """Sets the fw_instance_id of this ListEipsRequest.
 
-        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，默认情况下，fw_instance_Id为空时，返回账号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
+        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
         :param fw_instance_id: The fw_instance_id of this ListEipsRequest.
         :type fw_instance_id: str
@@ -346,7 +346,7 @@ class ListEipsRequest:
     def fw_key_word(self):
         """Gets the fw_key_word of this ListEipsRequest.
 
-        所绑定防火墙id防火墙名称
+        防火墙关键字，可使用防火墙id或名称查询，可通过[防火墙ID获取方式](cfw_02_0028.xml)
 
         :return: The fw_key_word of this ListEipsRequest.
         :rtype: str
@@ -357,7 +357,7 @@ class ListEipsRequest:
     def fw_key_word(self, fw_key_word):
         """Sets the fw_key_word of this ListEipsRequest.
 
-        所绑定防火墙id防火墙名称
+        防火墙关键字，可使用防火墙id或名称查询，可通过[防火墙ID获取方式](cfw_02_0028.xml)
 
         :param fw_key_word: The fw_key_word of this ListEipsRequest.
         :type fw_key_word: str
@@ -368,7 +368,7 @@ class ListEipsRequest:
     def eps_id(self):
         """Gets the eps_id of this ListEipsRequest.
 
-        弹性公网ip的企业项目id
+        弹性公网ip的企业项目id，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，租户未开启企业项目时为0
 
         :return: The eps_id of this ListEipsRequest.
         :rtype: str
@@ -379,7 +379,7 @@ class ListEipsRequest:
     def eps_id(self, eps_id):
         """Sets the eps_id of this ListEipsRequest.
 
-        弹性公网ip的企业项目id
+        弹性公网ip的企业项目id，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，租户未开启企业项目时为0
 
         :param eps_id: The eps_id of this ListEipsRequest.
         :type eps_id: str
@@ -390,7 +390,7 @@ class ListEipsRequest:
     def tags(self):
         """Gets the tags of this ListEipsRequest.
 
-        标签列表信息
+        标签列表信息可通过查询EIP服务界面列表标签页签获得
 
         :return: The tags of this ListEipsRequest.
         :rtype: str
@@ -401,7 +401,7 @@ class ListEipsRequest:
     def tags(self, tags):
         """Sets the tags of this ListEipsRequest.
 
-        标签列表信息
+        标签列表信息可通过查询EIP服务界面列表标签页签获得
 
         :param tags: The tags of this ListEipsRequest.
         :type tags: str

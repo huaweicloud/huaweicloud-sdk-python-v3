@@ -31,7 +31,8 @@ class CustomerOrderV2:
         'payment_time': 'str',
         'currency': 'str',
         'contract_id': 'str',
-        'amount_info': 'AmountInfomationV2'
+        'amount_info': 'AmountInfomationV2',
+        'enterprise_projects': 'list[EnterpriseProject]'
     }
 
     attribute_map = {
@@ -49,10 +50,11 @@ class CustomerOrderV2:
         'payment_time': 'payment_time',
         'currency': 'currency',
         'contract_id': 'contract_id',
-        'amount_info': 'amount_info'
+        'amount_info': 'amount_info',
+        'enterprise_projects': 'enterprise_projects'
     }
 
-    def __init__(self, order_id=None, customer_id=None, service_type_code=None, service_type_name=None, source_type=None, status=None, order_type=None, amount_after_discount=None, official_amount=None, measure_id=None, create_time=None, payment_time=None, currency=None, contract_id=None, amount_info=None):
+    def __init__(self, order_id=None, customer_id=None, service_type_code=None, service_type_name=None, source_type=None, status=None, order_type=None, amount_after_discount=None, official_amount=None, measure_id=None, create_time=None, payment_time=None, currency=None, contract_id=None, amount_info=None, enterprise_projects=None):
         """CustomerOrderV2
 
         The model defined in huaweicloud sdk
@@ -87,6 +89,8 @@ class CustomerOrderV2:
         :type contract_id: str
         :param amount_info: 
         :type amount_info: :class:`huaweicloudsdkbssintl.v2.AmountInfomationV2`
+        :param enterprise_projects: |参数名称：客户订单企业项目信息。| |参数约束及描述： 客户订单企业项目信息。具体请参见表 EnterpriseProject。|
+        :type enterprise_projects: list[:class:`huaweicloudsdkbssintl.v2.EnterpriseProject`]
         """
         
         
@@ -106,6 +110,7 @@ class CustomerOrderV2:
         self._currency = None
         self._contract_id = None
         self._amount_info = None
+        self._enterprise_projects = None
         self.discriminator = None
 
         if order_id is not None:
@@ -138,6 +143,8 @@ class CustomerOrderV2:
             self.contract_id = contract_id
         if amount_info is not None:
             self.amount_info = amount_info
+        if enterprise_projects is not None:
+            self.enterprise_projects = enterprise_projects
 
     @property
     def order_id(self):
@@ -464,6 +471,28 @@ class CustomerOrderV2:
         :type amount_info: :class:`huaweicloudsdkbssintl.v2.AmountInfomationV2`
         """
         self._amount_info = amount_info
+
+    @property
+    def enterprise_projects(self):
+        """Gets the enterprise_projects of this CustomerOrderV2.
+
+        |参数名称：客户订单企业项目信息。| |参数约束及描述： 客户订单企业项目信息。具体请参见表 EnterpriseProject。|
+
+        :return: The enterprise_projects of this CustomerOrderV2.
+        :rtype: list[:class:`huaweicloudsdkbssintl.v2.EnterpriseProject`]
+        """
+        return self._enterprise_projects
+
+    @enterprise_projects.setter
+    def enterprise_projects(self, enterprise_projects):
+        """Sets the enterprise_projects of this CustomerOrderV2.
+
+        |参数名称：客户订单企业项目信息。| |参数约束及描述： 客户订单企业项目信息。具体请参见表 EnterpriseProject。|
+
+        :param enterprise_projects: The enterprise_projects of this CustomerOrderV2.
+        :type enterprise_projects: list[:class:`huaweicloudsdkbssintl.v2.EnterpriseProject`]
+        """
+        self._enterprise_projects = enterprise_projects
 
     def to_dict(self):
         """Returns the model properties as a dict"""

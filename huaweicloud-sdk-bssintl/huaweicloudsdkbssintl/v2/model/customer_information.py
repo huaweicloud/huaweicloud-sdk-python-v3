@@ -59,7 +59,7 @@ class CustomerInformation:
 
         :param customer: 实名认证名称。
         :type customer: str
-        :param account_name: 客户经理登录名称。
+        :param account_name: 客户登录名称（如果客户创建了子用户，此处返回主账号登录名称）。
         :type account_name: str
         :param customer_id: 客户账号ID。
         :type customer_id: str
@@ -163,7 +163,7 @@ class CustomerInformation:
     def account_name(self):
         """Gets the account_name of this CustomerInformation.
 
-        客户经理登录名称。
+        客户登录名称（如果客户创建了子用户，此处返回主账号登录名称）。
 
         :return: The account_name of this CustomerInformation.
         :rtype: str
@@ -174,7 +174,7 @@ class CustomerInformation:
     def account_name(self, account_name):
         """Sets the account_name of this CustomerInformation.
 
-        客户经理登录名称。
+        客户登录名称（如果客户创建了子用户，此处返回主账号登录名称）。
 
         :param account_name: The account_name of this CustomerInformation.
         :type account_name: str

@@ -45,7 +45,7 @@ class AddressSetDetailResponseDTOData:
         :type description: str
         :param address_set_type: 地址组类型，0表示自定义地址组，1表示WAF回源IP地址组，2表示DDoS回源IP地址组，3表示NAT64转换地址组
         :type address_set_type: int
-        :param address_type: 地址类型0 ipv4,1 ipv6
+        :param address_type: 地址类型0 ipv4，1 ipv6
         :type address_type: int
         """
         
@@ -161,7 +161,7 @@ class AddressSetDetailResponseDTOData:
     def address_type(self):
         """Gets the address_type of this AddressSetDetailResponseDTOData.
 
-        地址类型0 ipv4,1 ipv6
+        地址类型0 ipv4，1 ipv6
 
         :return: The address_type of this AddressSetDetailResponseDTOData.
         :rtype: int
@@ -172,7 +172,7 @@ class AddressSetDetailResponseDTOData:
     def address_type(self, address_type):
         """Sets the address_type of this AddressSetDetailResponseDTOData.
 
-        地址类型0 ipv4,1 ipv6
+        地址类型0 ipv4，1 ipv6
 
         :param address_type: The address_type of this AddressSetDetailResponseDTOData.
         :type address_type: int

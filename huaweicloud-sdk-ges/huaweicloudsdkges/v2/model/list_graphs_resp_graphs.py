@@ -61,7 +61,8 @@ class ListGraphsRespGraphs:
         'resize_time': 'str',
         'enable_multi_label': 'bool',
         'capacity_ratio': 'int',
-        'sort_key_type': 'str'
+        'sort_key_type': 'str',
+        'enable_lts': 'bool'
     }
 
     attribute_map = {
@@ -109,10 +110,11 @@ class ListGraphsRespGraphs:
         'resize_time': 'resize_time',
         'enable_multi_label': 'enable_multi_label',
         'capacity_ratio': 'capacity_ratio',
-        'sort_key_type': 'sort_key_type'
+        'sort_key_type': 'sort_key_type',
+        'enable_lts': 'enable_lts'
     }
 
-    def __init__(self, id=None, name=None, created_by=None, is_multi_az=None, region_code=None, az_code=None, schema_path=None, edgeset_path=None, vertexset_path=None, edgeset_format=None, edgeset_default_label=None, vertexset_format=None, vertexset_default_label=None, data_store_version=None, sys_tags=None, status=None, action_progress=None, graph_size_type_index=None, vpc_id=None, subnet_id=None, security_group_id=None, replication=None, created=None, updated=None, private_ip=None, public_ip=None, arch=None, encrypted=None, master_key_id=None, master_key_name=None, enable_rbac=None, enable_full_text_index=None, enable_hyg=None, traffic_ip_list=None, crypt_algorithm=None, enable_https=None, tags=None, product_type=None, vertex_id_type=None, origin_graph_size_type_index=None, expand_time=None, resize_time=None, enable_multi_label=None, capacity_ratio=None, sort_key_type=None):
+    def __init__(self, id=None, name=None, created_by=None, is_multi_az=None, region_code=None, az_code=None, schema_path=None, edgeset_path=None, vertexset_path=None, edgeset_format=None, edgeset_default_label=None, vertexset_format=None, vertexset_default_label=None, data_store_version=None, sys_tags=None, status=None, action_progress=None, graph_size_type_index=None, vpc_id=None, subnet_id=None, security_group_id=None, replication=None, created=None, updated=None, private_ip=None, public_ip=None, arch=None, encrypted=None, master_key_id=None, master_key_name=None, enable_rbac=None, enable_full_text_index=None, enable_hyg=None, traffic_ip_list=None, crypt_algorithm=None, enable_https=None, tags=None, product_type=None, vertex_id_type=None, origin_graph_size_type_index=None, expand_time=None, resize_time=None, enable_multi_label=None, capacity_ratio=None, sort_key_type=None, enable_lts=None):
         """ListGraphsRespGraphs
 
         The model defined in huaweicloud sdk
@@ -207,6 +209,8 @@ class ListGraphsRespGraphs:
         :type capacity_ratio: int
         :param sort_key_type: 图的sortKey类型，内存版图无此值。
         :type sort_key_type: str
+        :param enable_lts: 对接云服务LTS日志开启状态。  - true：日志对接开启中。 - false：日志对接关闭中。
+        :type enable_lts: bool
         """
         
         
@@ -256,6 +260,7 @@ class ListGraphsRespGraphs:
         self._enable_multi_label = None
         self._capacity_ratio = None
         self._sort_key_type = None
+        self._enable_lts = None
         self.discriminator = None
 
         if id is not None:
@@ -348,6 +353,8 @@ class ListGraphsRespGraphs:
             self.capacity_ratio = capacity_ratio
         if sort_key_type is not None:
             self.sort_key_type = sort_key_type
+        if enable_lts is not None:
+            self.enable_lts = enable_lts
 
     @property
     def id(self):
@@ -1334,6 +1341,28 @@ class ListGraphsRespGraphs:
         :type sort_key_type: str
         """
         self._sort_key_type = sort_key_type
+
+    @property
+    def enable_lts(self):
+        """Gets the enable_lts of this ListGraphsRespGraphs.
+
+        对接云服务LTS日志开启状态。  - true：日志对接开启中。 - false：日志对接关闭中。
+
+        :return: The enable_lts of this ListGraphsRespGraphs.
+        :rtype: bool
+        """
+        return self._enable_lts
+
+    @enable_lts.setter
+    def enable_lts(self, enable_lts):
+        """Sets the enable_lts of this ListGraphsRespGraphs.
+
+        对接云服务LTS日志开启状态。  - true：日志对接开启中。 - false：日志对接关闭中。
+
+        :param enable_lts: The enable_lts of this ListGraphsRespGraphs.
+        :type enable_lts: bool
+        """
+        self._enable_lts = enable_lts
 
     def to_dict(self):
         """Returns the model properties as a dict"""

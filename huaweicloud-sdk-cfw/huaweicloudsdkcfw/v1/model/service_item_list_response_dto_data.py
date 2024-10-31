@@ -41,7 +41,7 @@ class ServiceItemListResponseDtoData:
         :type offset: int
         :param limit: 每页显示个数，范围为1-1024
         :type limit: int
-        :param total: 记录的总数
+        :param total: 服务组成员总数
         :type total: int
         :param set_id: 服务组id
         :type set_id: str
@@ -117,7 +117,7 @@ class ServiceItemListResponseDtoData:
     def total(self):
         """Gets the total of this ServiceItemListResponseDtoData.
 
-        记录的总数
+        服务组成员总数
 
         :return: The total of this ServiceItemListResponseDtoData.
         :rtype: int
@@ -128,7 +128,7 @@ class ServiceItemListResponseDtoData:
     def total(self, total):
         """Sets the total of this ServiceItemListResponseDtoData.
 
-        记录的总数
+        服务组成员总数
 
         :param total: The total of this ServiceItemListResponseDtoData.
         :type total: int

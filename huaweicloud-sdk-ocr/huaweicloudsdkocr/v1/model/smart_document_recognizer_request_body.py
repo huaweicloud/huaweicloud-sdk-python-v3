@@ -20,6 +20,7 @@ class SmartDocumentRecognizerRequestBody:
         'data': 'str',
         'url': 'str',
         'single_orientation_mode': 'bool',
+        'language': 'str',
         'kv': 'bool',
         'table': 'bool',
         'layout': 'bool',
@@ -34,6 +35,7 @@ class SmartDocumentRecognizerRequestBody:
         'data': 'data',
         'url': 'url',
         'single_orientation_mode': 'single_orientation_mode',
+        'language': 'language',
         'kv': 'kv',
         'table': 'table',
         'layout': 'layout',
@@ -44,7 +46,7 @@ class SmartDocumentRecognizerRequestBody:
         'pdf_page_number': 'pdf_page_number'
     }
 
-    def __init__(self, data=None, url=None, single_orientation_mode=None, kv=None, table=None, layout=None, return_excel=None, form=None, formula=None, kv_map=None, pdf_page_number=None):
+    def __init__(self, data=None, url=None, single_orientation_mode=None, language=None, kv=None, table=None, layout=None, return_excel=None, form=None, formula=None, kv_map=None, pdf_page_number=None):
         """SmartDocumentRecognizerRequestBody
 
         The model defined in huaweicloud sdk
@@ -53,8 +55,10 @@ class SmartDocumentRecognizerRequestBody:
         :type data: str
         :param url: 与data二选一。 图片或PDF的URL路径，目前支持： - 公网http/https url - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/api-ocr/ocr_03_0132.html)。 &gt; 说明： - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 - url中不能存在中文字符，若存在，中文需要进行utf8编码。 
         :type url: str
-        :param single_orientation_mode: 单朝向模式开关。可选值包括： - true：打开单朝向模式 - false：关闭单朝向模式  未传入该参数时默认为false，即默认图片中的字段为多朝向 
+        :param single_orientation_mode: 单朝向模式开关。可选值包括： - true：打开单朝向模式 - false：关闭单朝向模式  图片文字方向一致时，打开该开关可提升识别精度；图片文字方向不一致时，关闭该开关可支持多朝向文字识别。未传入该参数时默认为true，既默认图片中的字段为单朝向。 
         :type single_orientation_mode: bool
+        :param language: 语种选择，未传入该参数时默认为中英文识别模式。参考[华为云通用文字支持语种](https://support.huaweicloud.com/api-ocr/ocr_03_0042.html)。 
+        :type language: str
         :param kv: 是否进行键值对（key-value）提取。若是，结果会以“kv_result”这一关键字返回。 
         :type kv: bool
         :param table: 是否进行表格识别。此处表格特指逻辑表格，通常具有M行N列的形式，且第一行或第一列为表头。若是，结果会以“table_result”这一关键字返回。 
@@ -65,7 +69,7 @@ class SmartDocumentRecognizerRequestBody:
         :type return_excel: bool
         :param form: 是否进行有线表单识别。有线表单指关键信息以有线单元格形式进行呈现，例如户口本、机动车发票等。若是，结果会以\&quot;form_result\&quot;这一关键字返回。 
         :type form: bool
-        :param formula: 是否进行公式识别，识别结果为latex序列。若是，结果会以“formula_result”这一关键字返回。 当前仅支持文档（例如论文）中的公式识别，不支持公式切片图像。 
+        :param formula: 是否进行公式识别，识别结果为latex序列。若是，结果会以“formula_result”这一关键字返回。  - 开启公式识别后会降低响应速度。 - 当前仅支持3行以内公式识别，不支持3行以上的多行公式。 
         :type formula: bool
         :param kv_map: 需要传入字典的json序列化后字符串，用于对kv_result中的特定key值进行归一化映射。例如，kv_result中包含{\&quot;名称\&quot;：\&quot;小明\&quot;}的键值对，若传入{\&quot;名称\&quot;：\&quot;姓名\&quot;}的kv_map，则返回结果为{“姓名”：“小明”}。  &gt; 参数传入示例： - \&quot;kv_map\&quot;:\&quot;{\\\&quot;名称\\\&quot;:\\\&quot;姓名\\\&quot;}\&quot; 
         :type kv_map: str
@@ -78,6 +82,7 @@ class SmartDocumentRecognizerRequestBody:
         self._data = None
         self._url = None
         self._single_orientation_mode = None
+        self._language = None
         self._kv = None
         self._table = None
         self._layout = None
@@ -94,6 +99,8 @@ class SmartDocumentRecognizerRequestBody:
             self.url = url
         if single_orientation_mode is not None:
             self.single_orientation_mode = single_orientation_mode
+        if language is not None:
+            self.language = language
         if kv is not None:
             self.kv = kv
         if table is not None:
@@ -159,7 +166,7 @@ class SmartDocumentRecognizerRequestBody:
     def single_orientation_mode(self):
         """Gets the single_orientation_mode of this SmartDocumentRecognizerRequestBody.
 
-        单朝向模式开关。可选值包括： - true：打开单朝向模式 - false：关闭单朝向模式  未传入该参数时默认为false，即默认图片中的字段为多朝向 
+        单朝向模式开关。可选值包括： - true：打开单朝向模式 - false：关闭单朝向模式  图片文字方向一致时，打开该开关可提升识别精度；图片文字方向不一致时，关闭该开关可支持多朝向文字识别。未传入该参数时默认为true，既默认图片中的字段为单朝向。 
 
         :return: The single_orientation_mode of this SmartDocumentRecognizerRequestBody.
         :rtype: bool
@@ -170,12 +177,34 @@ class SmartDocumentRecognizerRequestBody:
     def single_orientation_mode(self, single_orientation_mode):
         """Sets the single_orientation_mode of this SmartDocumentRecognizerRequestBody.
 
-        单朝向模式开关。可选值包括： - true：打开单朝向模式 - false：关闭单朝向模式  未传入该参数时默认为false，即默认图片中的字段为多朝向 
+        单朝向模式开关。可选值包括： - true：打开单朝向模式 - false：关闭单朝向模式  图片文字方向一致时，打开该开关可提升识别精度；图片文字方向不一致时，关闭该开关可支持多朝向文字识别。未传入该参数时默认为true，既默认图片中的字段为单朝向。 
 
         :param single_orientation_mode: The single_orientation_mode of this SmartDocumentRecognizerRequestBody.
         :type single_orientation_mode: bool
         """
         self._single_orientation_mode = single_orientation_mode
+
+    @property
+    def language(self):
+        """Gets the language of this SmartDocumentRecognizerRequestBody.
+
+        语种选择，未传入该参数时默认为中英文识别模式。参考[华为云通用文字支持语种](https://support.huaweicloud.com/api-ocr/ocr_03_0042.html)。 
+
+        :return: The language of this SmartDocumentRecognizerRequestBody.
+        :rtype: str
+        """
+        return self._language
+
+    @language.setter
+    def language(self, language):
+        """Sets the language of this SmartDocumentRecognizerRequestBody.
+
+        语种选择，未传入该参数时默认为中英文识别模式。参考[华为云通用文字支持语种](https://support.huaweicloud.com/api-ocr/ocr_03_0042.html)。 
+
+        :param language: The language of this SmartDocumentRecognizerRequestBody.
+        :type language: str
+        """
+        self._language = language
 
     @property
     def kv(self):
@@ -291,7 +320,7 @@ class SmartDocumentRecognizerRequestBody:
     def formula(self):
         """Gets the formula of this SmartDocumentRecognizerRequestBody.
 
-        是否进行公式识别，识别结果为latex序列。若是，结果会以“formula_result”这一关键字返回。 当前仅支持文档（例如论文）中的公式识别，不支持公式切片图像。 
+        是否进行公式识别，识别结果为latex序列。若是，结果会以“formula_result”这一关键字返回。  - 开启公式识别后会降低响应速度。 - 当前仅支持3行以内公式识别，不支持3行以上的多行公式。 
 
         :return: The formula of this SmartDocumentRecognizerRequestBody.
         :rtype: bool
@@ -302,7 +331,7 @@ class SmartDocumentRecognizerRequestBody:
     def formula(self, formula):
         """Sets the formula of this SmartDocumentRecognizerRequestBody.
 
-        是否进行公式识别，识别结果为latex序列。若是，结果会以“formula_result”这一关键字返回。 当前仅支持文档（例如论文）中的公式识别，不支持公式切片图像。 
+        是否进行公式识别，识别结果为latex序列。若是，结果会以“formula_result”这一关键字返回。  - 开启公式识别后会降低响应速度。 - 当前仅支持3行以内公式识别，不支持3行以上的多行公式。 
 
         :param formula: The formula of this SmartDocumentRecognizerRequestBody.
         :type formula: bool

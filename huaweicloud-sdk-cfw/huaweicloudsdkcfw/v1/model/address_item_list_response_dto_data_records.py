@@ -45,7 +45,7 @@ class AddressItemListResponseDTODataRecords:
         :type description: str
         :param address_type: 地址组类型，0 ipv4,1 ipv6
         :type address_type: int
-        :param address: 地址组
+        :param address: 地址信息
         :type address: str
         """
         
@@ -161,7 +161,7 @@ class AddressItemListResponseDTODataRecords:
     def address(self):
         """Gets the address of this AddressItemListResponseDTODataRecords.
 
-        地址组
+        地址信息
 
         :return: The address of this AddressItemListResponseDTODataRecords.
         :rtype: str
@@ -172,7 +172,7 @@ class AddressItemListResponseDTODataRecords:
     def address(self, address):
         """Sets the address of this AddressItemListResponseDTODataRecords.
 
-        地址组
+        地址信息
 
         :param address: The address of this AddressItemListResponseDTODataRecords.
         :type address: str

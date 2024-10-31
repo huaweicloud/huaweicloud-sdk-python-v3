@@ -31,9 +31,9 @@ class Er:
 
         The model defined in huaweicloud sdk
 
-        :param er_id: ER ID
+        :param er_id: ER ID，创建东西向防护引用的 ID
         :type er_id: str
-        :param er_attach_id: ER连接ID
+        :param er_attach_id: 企业路由器连接id，该连接用于连接防火墙和企业路由器，此字段可在通过id在ER界面查询指定er后在管理连接界面查询连接了解连接具体情况。
         :type er_attach_id: str
         """
         
@@ -52,7 +52,7 @@ class Er:
     def er_id(self):
         """Gets the er_id of this Er.
 
-        ER ID
+        ER ID，创建东西向防护引用的 ID
 
         :return: The er_id of this Er.
         :rtype: str
@@ -63,7 +63,7 @@ class Er:
     def er_id(self, er_id):
         """Sets the er_id of this Er.
 
-        ER ID
+        ER ID，创建东西向防护引用的 ID
 
         :param er_id: The er_id of this Er.
         :type er_id: str
@@ -74,7 +74,7 @@ class Er:
     def er_attach_id(self):
         """Gets the er_attach_id of this Er.
 
-        ER连接ID
+        企业路由器连接id，该连接用于连接防火墙和企业路由器，此字段可在通过id在ER界面查询指定er后在管理连接界面查询连接了解连接具体情况。
 
         :return: The er_attach_id of this Er.
         :rtype: str
@@ -85,7 +85,7 @@ class Er:
     def er_attach_id(self, er_attach_id):
         """Sets the er_attach_id of this Er.
 
-        ER连接ID
+        企业路由器连接id，该连接用于连接防火墙和企业路由器，此字段可在通过id在ER界面查询指定er后在管理连接界面查询连接了解连接具体情况。
 
         :param er_attach_id: The er_attach_id of this Er.
         :type er_attach_id: str

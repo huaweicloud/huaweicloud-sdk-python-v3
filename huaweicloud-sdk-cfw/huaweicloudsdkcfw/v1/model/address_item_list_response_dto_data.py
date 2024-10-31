@@ -41,11 +41,11 @@ class AddressItemListResponseDTOData:
         :type offset: int
         :param limit: 每页显示个数，范围为1-1024
         :type limit: int
-        :param total: 总数
+        :param total: 地址组成员总数
         :type total: int
         :param set_id: 地址组id
         :type set_id: str
-        :param records: 成员信息
+        :param records: 地址组成员记录列表
         :type records: list[:class:`huaweicloudsdkcfw.v1.AddressItemListResponseDTODataRecords`]
         """
         
@@ -117,7 +117,7 @@ class AddressItemListResponseDTOData:
     def total(self):
         """Gets the total of this AddressItemListResponseDTOData.
 
-        总数
+        地址组成员总数
 
         :return: The total of this AddressItemListResponseDTOData.
         :rtype: int
@@ -128,7 +128,7 @@ class AddressItemListResponseDTOData:
     def total(self, total):
         """Sets the total of this AddressItemListResponseDTOData.
 
-        总数
+        地址组成员总数
 
         :param total: The total of this AddressItemListResponseDTOData.
         :type total: int
@@ -161,7 +161,7 @@ class AddressItemListResponseDTOData:
     def records(self):
         """Gets the records of this AddressItemListResponseDTOData.
 
-        成员信息
+        地址组成员记录列表
 
         :return: The records of this AddressItemListResponseDTOData.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.AddressItemListResponseDTODataRecords`]
@@ -172,7 +172,7 @@ class AddressItemListResponseDTOData:
     def records(self, records):
         """Sets the records of this AddressItemListResponseDTOData.
 
-        成员信息
+        地址组成员记录列表
 
         :param records: The records of this AddressItemListResponseDTOData.
         :type records: list[:class:`huaweicloudsdkcfw.v1.AddressItemListResponseDTODataRecords`]

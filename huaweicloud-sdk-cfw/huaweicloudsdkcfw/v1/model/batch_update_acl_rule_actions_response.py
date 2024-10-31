@@ -30,7 +30,7 @@ class BatchUpdateAclRuleActionsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: 批量更新acl规则id
+        :param data: 批量更新acl规则id，为请求体中传入的规则id
         :type data: list[str]
         """
         
@@ -46,7 +46,7 @@ class BatchUpdateAclRuleActionsResponse(SdkResponse):
     def data(self):
         """Gets the data of this BatchUpdateAclRuleActionsResponse.
 
-        批量更新acl规则id
+        批量更新acl规则id，为请求体中传入的规则id
 
         :return: The data of this BatchUpdateAclRuleActionsResponse.
         :rtype: list[str]
@@ -57,7 +57,7 @@ class BatchUpdateAclRuleActionsResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this BatchUpdateAclRuleActionsResponse.
 
-        批量更新acl规则id
+        批量更新acl规则id，为请求体中传入的规则id
 
         :param data: The data of this BatchUpdateAclRuleActionsResponse.
         :type data: list[str]

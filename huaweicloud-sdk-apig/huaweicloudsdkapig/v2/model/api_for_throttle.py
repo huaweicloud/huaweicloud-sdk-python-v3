@@ -31,7 +31,8 @@ class ApiForThrottle:
         'group_id': 'str',
         'name': 'str',
         'id': 'str',
-        'req_method': 'str'
+        'req_method': 'str',
+        'tags': 'list[str]'
     }
 
     attribute_map = {
@@ -49,10 +50,11 @@ class ApiForThrottle:
         'group_id': 'group_id',
         'name': 'name',
         'id': 'id',
-        'req_method': 'req_method'
+        'req_method': 'req_method',
+        'tags': 'tags'
     }
 
-    def __init__(self, auth_type=None, group_name=None, publish_id=None, throttle_apply_id=None, apply_time=None, remark=None, run_env_id=None, type=None, throttle_name=None, req_uri=None, run_env_name=None, group_id=None, name=None, id=None, req_method=None):
+    def __init__(self, auth_type=None, group_name=None, publish_id=None, throttle_apply_id=None, apply_time=None, remark=None, run_env_id=None, type=None, throttle_name=None, req_uri=None, run_env_name=None, group_id=None, name=None, id=None, req_method=None, tags=None):
         """ApiForThrottle
 
         The model defined in huaweicloud sdk
@@ -87,6 +89,8 @@ class ApiForThrottle:
         :type id: str
         :param req_method: API请求方法
         :type req_method: str
+        :param tags: API绑定的标签，标签配额默认10条，可以联系技术调整。
+        :type tags: list[str]
         """
         
         
@@ -106,6 +110,7 @@ class ApiForThrottle:
         self._name = None
         self._id = None
         self._req_method = None
+        self._tags = None
         self.discriminator = None
 
         if auth_type is not None:
@@ -138,6 +143,8 @@ class ApiForThrottle:
             self.id = id
         if req_method is not None:
             self.req_method = req_method
+        if tags is not None:
+            self.tags = tags
 
     @property
     def auth_type(self):
@@ -468,6 +475,28 @@ class ApiForThrottle:
         :type req_method: str
         """
         self._req_method = req_method
+
+    @property
+    def tags(self):
+        """Gets the tags of this ApiForThrottle.
+
+        API绑定的标签，标签配额默认10条，可以联系技术调整。
+
+        :return: The tags of this ApiForThrottle.
+        :rtype: list[str]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this ApiForThrottle.
+
+        API绑定的标签，标签配额默认10条，可以联系技术调整。
+
+        :param tags: The tags of this ApiForThrottle.
+        :type tags: list[str]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -43,7 +43,7 @@ class HttpFirewallInstanceListResponseData:
         :type offset: int
         :param project_id: 租户项目ID
         :type project_id: str
-        :param total: 总数
+        :param total: 防火墙总数量
         :type total: int
         :param records: 查询防火墙列表记录
         :type records: list[:class:`huaweicloudsdkcfw.v1.FirewallInstanceVO`]
@@ -139,7 +139,7 @@ class HttpFirewallInstanceListResponseData:
     def total(self):
         """Gets the total of this HttpFirewallInstanceListResponseData.
 
-        总数
+        防火墙总数量
 
         :return: The total of this HttpFirewallInstanceListResponseData.
         :rtype: int
@@ -150,7 +150,7 @@ class HttpFirewallInstanceListResponseData:
     def total(self, total):
         """Sets the total of this HttpFirewallInstanceListResponseData.
 
-        总数
+        防火墙总数量
 
         :param total: The total of this HttpFirewallInstanceListResponseData.
         :type total: int

@@ -18,7 +18,7 @@ class DeleteCaptureTaskResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'IdObject'
+        'data': 'CaptureTaskId'
     }
 
     attribute_map = {
@@ -31,7 +31,7 @@ class DeleteCaptureTaskResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param data: 
-        :type data: :class:`huaweicloudsdkcfw.v1.IdObject`
+        :type data: :class:`huaweicloudsdkcfw.v1.CaptureTaskId`
         """
         
         super(DeleteCaptureTaskResponse, self).__init__()
@@ -47,7 +47,7 @@ class DeleteCaptureTaskResponse(SdkResponse):
         """Gets the data of this DeleteCaptureTaskResponse.
 
         :return: The data of this DeleteCaptureTaskResponse.
-        :rtype: :class:`huaweicloudsdkcfw.v1.IdObject`
+        :rtype: :class:`huaweicloudsdkcfw.v1.CaptureTaskId`
         """
         return self._data
 
@@ -56,7 +56,7 @@ class DeleteCaptureTaskResponse(SdkResponse):
         """Sets the data of this DeleteCaptureTaskResponse.
 
         :param data: The data of this DeleteCaptureTaskResponse.
-        :type data: :class:`huaweicloudsdkcfw.v1.IdObject`
+        :type data: :class:`huaweicloudsdkcfw.v1.CaptureTaskId`
         """
         self._data = data
 

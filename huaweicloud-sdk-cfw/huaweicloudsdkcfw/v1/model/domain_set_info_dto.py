@@ -31,9 +31,9 @@ class DomainSetInfoDto:
 
         The model defined in huaweicloud sdk
 
-        :param domain_name: 域名
+        :param domain_name: 域名，如www.test.com
         :type domain_name: str
-        :param description: 描述
+        :param description: 域名描述
         :type description: str
         """
         
@@ -51,7 +51,7 @@ class DomainSetInfoDto:
     def domain_name(self):
         """Gets the domain_name of this DomainSetInfoDto.
 
-        域名
+        域名，如www.test.com
 
         :return: The domain_name of this DomainSetInfoDto.
         :rtype: str
@@ -62,7 +62,7 @@ class DomainSetInfoDto:
     def domain_name(self, domain_name):
         """Sets the domain_name of this DomainSetInfoDto.
 
-        域名
+        域名，如www.test.com
 
         :param domain_name: The domain_name of this DomainSetInfoDto.
         :type domain_name: str
@@ -73,7 +73,7 @@ class DomainSetInfoDto:
     def description(self):
         """Gets the description of this DomainSetInfoDto.
 
-        描述
+        域名描述
 
         :return: The description of this DomainSetInfoDto.
         :rtype: str
@@ -84,7 +84,7 @@ class DomainSetInfoDto:
     def description(self, description):
         """Sets the description of this DomainSetInfoDto.
 
-        描述
+        域名描述
 
         :param description: The description of this DomainSetInfoDto.
         :type description: str

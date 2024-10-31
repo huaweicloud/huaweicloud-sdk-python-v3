@@ -436,6 +436,75 @@ class DasClient(Client):
 
         return http_info
 
+    def create_health_report_task(self, request):
+        """创建实例健康诊断任务
+
+        创建实例健康诊断任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateHealthReportTask
+        :type request: :class:`huaweicloudsdkdas.v3.CreateHealthReportTaskRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.CreateHealthReportTaskResponse`
+        """
+        http_info = self._create_health_report_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_health_report_task_invoker(self, request):
+        http_info = self._create_health_report_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_health_report_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/create-instance-health-report-task",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateHealthReportTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_share_connections(self, request):
         """设置共享链接
 
@@ -1690,6 +1759,81 @@ class DasClient(Client):
 
         return http_info
 
+    def list_health_report_task(self, request):
+        """查询实例健康诊断报告列表
+
+        查询实例健康诊断报告列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListHealthReportTask
+        :type request: :class:`huaweicloudsdkdas.v3.ListHealthReportTaskRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ListHealthReportTaskResponse`
+        """
+        http_info = self._list_health_report_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_health_report_task_invoker(self, request):
+        http_info = self._list_health_report_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_health_report_task_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/get-instance-health-report-task-list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHealthReportTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'start_at' in local_var_params:
+            query_params.append(('start_at', local_var_params['start_at']))
+        if 'end_at' in local_var_params:
+            query_params.append(('end_at', local_var_params['end_at']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_innodb_locks(self, request):
         """查询InnoDB锁等待列表
 
@@ -2336,6 +2480,75 @@ class DasClient(Client):
             path_params['db_user_id'] = local_var_params['db_user_id']
 
         query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_instance_health_report(self, request):
+        """获取实例健康诊断报告内容
+
+        获取实例健康诊断报告内容。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowInstanceHealthReport
+        :type request: :class:`huaweicloudsdkdas.v3.ShowInstanceHealthReportRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ShowInstanceHealthReportResponse`
+        """
+        http_info = self._show_instance_health_report_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_instance_health_report_invoker(self, request):
+        http_info = self._show_instance_health_report_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_instance_health_report_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/get-instance-health-report",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInstanceHealthReportResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'task_id' in local_var_params:
+            query_params.append(('task_id', local_var_params['task_id']))
 
         header_params = {}
         if 'x_language' in local_var_params:

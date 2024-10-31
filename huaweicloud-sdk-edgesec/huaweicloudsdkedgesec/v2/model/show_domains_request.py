@@ -45,7 +45,7 @@ class ShowDomainsRequest:
         :type domain_name: str
         :param policy_name: 策略名称
         :type policy_name: str
-        :param enterprise_project_id: 企业项目id
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id，默认为0
         :type enterprise_project_id: str
         """
         
@@ -161,7 +161,7 @@ class ShowDomainsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ShowDomainsRequest.
 
-        企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id，默认为0
 
         :return: The enterprise_project_id of this ShowDomainsRequest.
         :rtype: str
@@ -172,7 +172,7 @@ class ShowDomainsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ShowDomainsRequest.
 
-        企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id，默认为0
 
         :param enterprise_project_id: The enterprise_project_id of this ShowDomainsRequest.
         :type enterprise_project_id: str

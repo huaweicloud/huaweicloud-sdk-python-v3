@@ -30,6 +30,7 @@ class SignApiBindingInfo:
         'sign_id': 'str',
         'sign_name': 'str',
         'req_method': 'str',
+        'tags': 'list[str]',
         'sign_key': 'str',
         'sign_secret': 'str',
         'sign_type': 'str'
@@ -49,12 +50,13 @@ class SignApiBindingInfo:
         'sign_id': 'sign_id',
         'sign_name': 'sign_name',
         'req_method': 'req_method',
+        'tags': 'tags',
         'sign_key': 'sign_key',
         'sign_secret': 'sign_secret',
         'sign_type': 'sign_type'
     }
 
-    def __init__(self, publish_id=None, api_id=None, group_name=None, binding_time=None, env_id=None, env_name=None, api_type=None, api_name=None, id=None, api_remark=None, sign_id=None, sign_name=None, req_method=None, sign_key=None, sign_secret=None, sign_type=None):
+    def __init__(self, publish_id=None, api_id=None, group_name=None, binding_time=None, env_id=None, env_name=None, api_type=None, api_name=None, id=None, api_remark=None, sign_id=None, sign_name=None, req_method=None, tags=None, sign_key=None, sign_secret=None, sign_type=None):
         """SignApiBindingInfo
 
         The model defined in huaweicloud sdk
@@ -85,6 +87,8 @@ class SignApiBindingInfo:
         :type sign_name: str
         :param req_method: API请求方法
         :type req_method: str
+        :param tags: API绑定的标签，标签配额默认10条，可以联系技术调整。
+        :type tags: list[str]
         :param sign_key: 签名密钥的key。 - hmac类型的签名密钥key：支持英文，数字，下划线，中划线，且只能以英文字母或数字开头，8 ~ 32字符。未填写时后台自动生成。 - basic类型的签名密钥key：支持英文，数字，下划线，中划线，且只能以英文字母开头，4 ~ 32字符。未填写时后台自动生成。 - public_key类型的签名密钥key：支持英文，数字，下划线，中划线，+，/，&#x3D;，可以英文字母，数字，+，/开头，8 ~ 512字符。未填写时后台自动生成。 - aes类型的签名密钥key：支持英文，数字，下划线，中划线，!，@，#，$，%，+，/，&#x3D;，可以英文字母，数字，+，/开头，签名算法为aes-128-cfb时为16个字符，签名算法为aes-256-cfb时为32个字符。未填写时后台自动生成。
         :type sign_key: str
         :param sign_secret: 签名密钥的密钥。 - hmac类型的签名密钥key：支持英文，数字，下划线，中划线，!，@，#，$，%，且只能以英文字母或数字开头，16 ~ 64字符。未填写时后台自动生成。 - basic类型的签名密钥key：支持英文，数字，下划线，中划线，!，@，#，$，%，且只能以英文字母或数字开头，8 ~ 64字符。未填写时后台自动生成。 - public_key类型的签名密钥key：支持英文，数字，下划线，中划线，!，@，#，$，%，+，/，&#x3D;，可以英文字母，数字，+，/开头，15 ~ 2048字符。未填写时后台自动生成。 - aes类型签名密钥使用的向量：支持英文，数字，下划线，中划线，!，@，#，$，%，+，/，&#x3D;，可以英文字母，数字，+，/开头，16个字符。未填写时后台自动生成。
@@ -108,6 +112,7 @@ class SignApiBindingInfo:
         self._sign_id = None
         self._sign_name = None
         self._req_method = None
+        self._tags = None
         self._sign_key = None
         self._sign_secret = None
         self._sign_type = None
@@ -139,6 +144,8 @@ class SignApiBindingInfo:
             self.sign_name = sign_name
         if req_method is not None:
             self.req_method = req_method
+        if tags is not None:
+            self.tags = tags
         if sign_key is not None:
             self.sign_key = sign_key
         if sign_secret is not None:
@@ -431,6 +438,28 @@ class SignApiBindingInfo:
         :type req_method: str
         """
         self._req_method = req_method
+
+    @property
+    def tags(self):
+        """Gets the tags of this SignApiBindingInfo.
+
+        API绑定的标签，标签配额默认10条，可以联系技术调整。
+
+        :return: The tags of this SignApiBindingInfo.
+        :rtype: list[str]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this SignApiBindingInfo.
+
+        API绑定的标签，标签配额默认10条，可以联系技术调整。
+
+        :param tags: The tags of this SignApiBindingInfo.
+        :type tags: list[str]
+        """
+        self._tags = tags
 
     @property
     def sign_key(self):

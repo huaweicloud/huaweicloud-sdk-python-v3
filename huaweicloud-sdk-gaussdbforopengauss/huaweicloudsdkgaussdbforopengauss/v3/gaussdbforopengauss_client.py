@@ -6285,6 +6285,75 @@ class GaussDBforopenGaussClient(Client):
 
         return http_info
 
+    def start_mysql_compatibility(self, request):
+        """开启MySQl兼容端口服务
+
+        开启指定实例的MySQl兼容端口。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for StartMysqlCompatibility
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.StartMysqlCompatibilityRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.StartMysqlCompatibilityResponse`
+        """
+        http_info = self._start_mysql_compatibility_http_info(request)
+        return self._call_api(**http_info)
+
+    def start_mysql_compatibility_invoker(self, request):
+        http_info = self._start_mysql_compatibility_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _start_mysql_compatibility_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/mysql-compatibility",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartMysqlCompatibilityResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def stop_backup(self, request):
         """停止备份
 
@@ -6338,6 +6407,75 @@ class GaussDBforopenGaussClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def stop_instance(self, request):
+        """停止数据库
+
+        停止数据库,同时支持节点级别的停止操作
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for StopInstance
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.StopInstanceRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.StopInstanceResponse`
+        """
+        http_info = self._stop_instance_http_info(request)
+        return self._call_api(**http_info)
+
+    def stop_instance_invoker(self, request):
+        http_info = self._stop_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _stop_instance_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/db-stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopInstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -6584,6 +6722,75 @@ class GaussDBforopenGaussClient(Client):
             "resource_path": "/v3/{project_id}/instances/{instance_id}/name",
             "request_type": request.__class__.__name__,
             "response_type": "UpdateInstanceNameResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_mysql_compatibility(self, request):
+        """更新/关闭MySQl兼容端口服务
+
+        更新指定实例的MySQl兼容端口服务配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateMysqlCompatibility
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.UpdateMysqlCompatibilityRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.UpdateMysqlCompatibilityResponse`
+        """
+        http_info = self._update_mysql_compatibility_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_mysql_compatibility_invoker(self, request):
+        http_info = self._update_mysql_compatibility_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_mysql_compatibility_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/mysql-compatibility",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateMysqlCompatibilityResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -6892,6 +7099,434 @@ class GaussDBforopenGaussClient(Client):
         header_params = {}
         if 'x_language' in local_var_params:
             header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_limit_task(self, request):
+        """创建限流任务
+
+        根据具体范围和类型，进行限流任务的创建
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateLimitTask
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateLimitTaskRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateLimitTaskResponse`
+        """
+        http_info = self._create_limit_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_limit_task_invoker(self, request):
+        http_info = self._create_limit_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_limit_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/limit-task",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateLimitTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_limit_task(self, request):
+        """删除限流任务
+
+        根据task_id进行限流任务的删除
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteLimitTask
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.DeleteLimitTaskRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.DeleteLimitTaskResponse`
+        """
+        http_info = self._delete_limit_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_limit_task_invoker(self, request):
+        http_info = self._delete_limit_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_limit_task_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/limit-task/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteLimitTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_limit_task(self, request):
+        """根据指定条件查询限流任务列表
+
+        根据指定条件查询限流任务列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListLimitTask
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListLimitTaskRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListLimitTaskResponse`
+        """
+        http_info = self._list_limit_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_limit_task_invoker(self, request):
+        http_info = self._list_limit_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_limit_task_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/limit-task-list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLimitTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'task_scope' in local_var_params:
+            query_params.append(('task_scope', local_var_params['task_scope']))
+        if 'limit_type' in local_var_params:
+            query_params.append(('limit_type', local_var_params['limit_type']))
+        if 'limit_type_value' in local_var_params:
+            query_params.append(('limit_type_value', local_var_params['limit_type_value']))
+        if 'task_name' in local_var_params:
+            query_params.append(('task_name', local_var_params['task_name']))
+        if 'sql_model' in local_var_params:
+            query_params.append(('sql_model', local_var_params['sql_model']))
+        if 'rule_name' in local_var_params:
+            query_params.append(('rule_name', local_var_params['rule_name']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_node_limit_sql_model(self, request):
+        """查询节点的sql模板列表
+
+        查询节点的sql模板列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListNodeLimitSqlModel
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListNodeLimitSqlModelRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListNodeLimitSqlModelResponse`
+        """
+        http_info = self._list_node_limit_sql_model_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_node_limit_sql_model_invoker(self, request):
+        http_info = self._list_node_limit_sql_model_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_node_limit_sql_model_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/list-node-limit-sql-model",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNodeLimitSqlModelResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'node_id' in local_var_params:
+            query_params.append(('node_id', local_var_params['node_id']))
+        if 'sql_model' in local_var_params:
+            query_params.append(('sql_model', local_var_params['sql_model']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_limit_task(self, request):
+        """查询限流任务详情
+
+        查询限流任务详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowLimitTask
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowLimitTaskRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowLimitTaskResponse`
+        """
+        http_info = self._show_limit_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_limit_task_invoker(self, request):
+        http_info = self._show_limit_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_limit_task_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/limit-task/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowLimitTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_limit_task(self, request):
+        """修改限流任务
+
+        根据新的条件进行限流任务的更新
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateLimitTask
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.UpdateLimitTaskRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.UpdateLimitTaskResponse`
+        """
+        http_info = self._update_limit_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_limit_task_invoker(self, request):
+        http_info = self._update_limit_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_limit_task_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/limit-task/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateLimitTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
 
         form_params = {}
 

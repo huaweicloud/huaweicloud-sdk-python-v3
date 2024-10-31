@@ -31,9 +31,9 @@ class CreateTag:
 
         The model defined in huaweicloud sdk
 
-        :param key: 键
+        :param key: 标签键
         :type key: str
-        :param value: 值
+        :param value: 标签值
         :type value: str
         """
         
@@ -52,7 +52,7 @@ class CreateTag:
     def key(self):
         """Gets the key of this CreateTag.
 
-        键
+        标签键
 
         :return: The key of this CreateTag.
         :rtype: str
@@ -63,7 +63,7 @@ class CreateTag:
     def key(self, key):
         """Sets the key of this CreateTag.
 
-        键
+        标签键
 
         :param key: The key of this CreateTag.
         :type key: str
@@ -74,7 +74,7 @@ class CreateTag:
     def value(self):
         """Gets the value of this CreateTag.
 
-        值
+        标签值
 
         :return: The value of this CreateTag.
         :rtype: str
@@ -85,7 +85,7 @@ class CreateTag:
     def value(self, value):
         """Sets the value of this CreateTag.
 
-        值
+        标签值
 
         :param value: The value of this CreateTag.
         :type value: str

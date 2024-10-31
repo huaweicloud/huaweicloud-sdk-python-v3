@@ -27,7 +27,8 @@ class AclBindApiInfo:
         'group_name': 'str',
         'bind_time': 'datetime',
         'publish_id': 'str',
-        'req_method': 'str'
+        'req_method': 'str',
+        'tags': 'list[str]'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class AclBindApiInfo:
         'group_name': 'group_name',
         'bind_time': 'bind_time',
         'publish_id': 'publish_id',
-        'req_method': 'req_method'
+        'req_method': 'req_method',
+        'tags': 'tags'
     }
 
-    def __init__(self, api_id=None, api_name=None, api_type=None, api_remark=None, env_id=None, env_name=None, bind_id=None, group_name=None, bind_time=None, publish_id=None, req_method=None):
+    def __init__(self, api_id=None, api_name=None, api_type=None, api_remark=None, env_id=None, env_name=None, bind_id=None, group_name=None, bind_time=None, publish_id=None, req_method=None, tags=None):
         """AclBindApiInfo
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class AclBindApiInfo:
         :type publish_id: str
         :param req_method: API请求方法
         :type req_method: str
+        :param tags: API绑定的标签，标签配额默认10条，可以联系技术调整。
+        :type tags: list[str]
         """
         
         
@@ -86,6 +90,7 @@ class AclBindApiInfo:
         self._bind_time = None
         self._publish_id = None
         self._req_method = None
+        self._tags = None
         self.discriminator = None
 
         if api_id is not None:
@@ -110,6 +115,8 @@ class AclBindApiInfo:
             self.publish_id = publish_id
         if req_method is not None:
             self.req_method = req_method
+        if tags is not None:
+            self.tags = tags
 
     @property
     def api_id(self):
@@ -352,6 +359,28 @@ class AclBindApiInfo:
         :type req_method: str
         """
         self._req_method = req_method
+
+    @property
+    def tags(self):
+        """Gets the tags of this AclBindApiInfo.
+
+        API绑定的标签，标签配额默认10条，可以联系技术调整。
+
+        :return: The tags of this AclBindApiInfo.
+        :rtype: list[str]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this AclBindApiInfo.
+
+        API绑定的标签，标签配额默认10条，可以联系技术调整。
+
+        :param tags: The tags of this AclBindApiInfo.
+        :type tags: list[str]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

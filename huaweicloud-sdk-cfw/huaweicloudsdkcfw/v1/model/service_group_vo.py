@@ -37,11 +37,11 @@ class ServiceGroupVO:
 
         :param name: 服务组名称
         :type name: str
-        :param protocols: 协议列表
+        :param protocols: 协议列表，协议类型：TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1
         :type protocols: list[int]
-        :param service_set_type: 服务组类型，0表示自定义服务组，1表示常用WEB服务，2表示常用远程登录和PING，3表示常用数据库
+        :param service_set_type: 服务组类型，0表示自定义服务组，1表示预定义服务组
         :type service_set_type: int
-        :param set_id: 服务组ID
+        :param set_id: 服务组id，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
         :type set_id: str
         """
         
@@ -88,7 +88,7 @@ class ServiceGroupVO:
     def protocols(self):
         """Gets the protocols of this ServiceGroupVO.
 
-        协议列表
+        协议列表，协议类型：TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1
 
         :return: The protocols of this ServiceGroupVO.
         :rtype: list[int]
@@ -99,7 +99,7 @@ class ServiceGroupVO:
     def protocols(self, protocols):
         """Sets the protocols of this ServiceGroupVO.
 
-        协议列表
+        协议列表，协议类型：TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1
 
         :param protocols: The protocols of this ServiceGroupVO.
         :type protocols: list[int]
@@ -110,7 +110,7 @@ class ServiceGroupVO:
     def service_set_type(self):
         """Gets the service_set_type of this ServiceGroupVO.
 
-        服务组类型，0表示自定义服务组，1表示常用WEB服务，2表示常用远程登录和PING，3表示常用数据库
+        服务组类型，0表示自定义服务组，1表示预定义服务组
 
         :return: The service_set_type of this ServiceGroupVO.
         :rtype: int
@@ -121,7 +121,7 @@ class ServiceGroupVO:
     def service_set_type(self, service_set_type):
         """Sets the service_set_type of this ServiceGroupVO.
 
-        服务组类型，0表示自定义服务组，1表示常用WEB服务，2表示常用远程登录和PING，3表示常用数据库
+        服务组类型，0表示自定义服务组，1表示预定义服务组
 
         :param service_set_type: The service_set_type of this ServiceGroupVO.
         :type service_set_type: int
@@ -132,7 +132,7 @@ class ServiceGroupVO:
     def set_id(self):
         """Gets the set_id of this ServiceGroupVO.
 
-        服务组ID
+        服务组id，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
         :return: The set_id of this ServiceGroupVO.
         :rtype: str
@@ -143,7 +143,7 @@ class ServiceGroupVO:
     def set_id(self, set_id):
         """Sets the set_id of this ServiceGroupVO.
 
-        服务组ID
+        服务组id，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
         :param set_id: The set_id of this ServiceGroupVO.
         :type set_id: str

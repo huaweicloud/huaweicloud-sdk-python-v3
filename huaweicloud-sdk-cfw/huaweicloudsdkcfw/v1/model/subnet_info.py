@@ -23,7 +23,6 @@ class SubnetInfo:
         'id': 'str',
         'gateway_ip': 'str',
         'vpc_id': 'str',
-        'status': 'str',
         'ipv6_enable': 'bool'
     }
 
@@ -34,29 +33,26 @@ class SubnetInfo:
         'id': 'id',
         'gateway_ip': 'gateway_ip',
         'vpc_id': 'vpc_id',
-        'status': 'status',
         'ipv6_enable': 'ipv6_enable'
     }
 
-    def __init__(self, availability_zone=None, cidr=None, name=None, id=None, gateway_ip=None, vpc_id=None, status=None, ipv6_enable=None):
+    def __init__(self, availability_zone=None, cidr=None, name=None, id=None, gateway_ip=None, vpc_id=None, ipv6_enable=None):
         """SubnetInfo
 
         The model defined in huaweicloud sdk
 
-        :param availability_zone: 子网id
+        :param availability_zone: 子网所在的可用区标识，从终端节点获取，参考[终端节点](cfw_02_0003.xml)
         :type availability_zone: str
-        :param cidr: vpc cidr
+        :param cidr: 功能说明：虚拟私有云下可用子网的范围 取值范围： 10.0.0.0/8~24 172.16.0.0/12~24 192.168.0.0/16~24 不指定cidr时，默认值为空 约束：必须是cidr格式，例如:192.168.0.0/16
         :type cidr: str
         :param name: 子网名称
         :type name: str
         :param id: 子网id
         :type id: str
-        :param gateway_ip: 子网网关ip
+        :param gateway_ip: 子网的网关，取值范围为子网网段cidr中的ip地址
         :type gateway_ip: str
-        :param vpc_id: vpc id
+        :param vpc_id: 创建vpc产生的uuid
         :type vpc_id: str
-        :param status: 子网的状态
-        :type status: str
         :param ipv6_enable: 是否支持ipv6，boolean值为true表示是，false表示否
         :type ipv6_enable: bool
         """
@@ -69,7 +65,6 @@ class SubnetInfo:
         self._id = None
         self._gateway_ip = None
         self._vpc_id = None
-        self._status = None
         self._ipv6_enable = None
         self.discriminator = None
 
@@ -85,8 +80,6 @@ class SubnetInfo:
             self.gateway_ip = gateway_ip
         if vpc_id is not None:
             self.vpc_id = vpc_id
-        if status is not None:
-            self.status = status
         if ipv6_enable is not None:
             self.ipv6_enable = ipv6_enable
 
@@ -94,7 +87,7 @@ class SubnetInfo:
     def availability_zone(self):
         """Gets the availability_zone of this SubnetInfo.
 
-        子网id
+        子网所在的可用区标识，从终端节点获取，参考[终端节点](cfw_02_0003.xml)
 
         :return: The availability_zone of this SubnetInfo.
         :rtype: str
@@ -105,7 +98,7 @@ class SubnetInfo:
     def availability_zone(self, availability_zone):
         """Sets the availability_zone of this SubnetInfo.
 
-        子网id
+        子网所在的可用区标识，从终端节点获取，参考[终端节点](cfw_02_0003.xml)
 
         :param availability_zone: The availability_zone of this SubnetInfo.
         :type availability_zone: str
@@ -116,7 +109,7 @@ class SubnetInfo:
     def cidr(self):
         """Gets the cidr of this SubnetInfo.
 
-        vpc cidr
+        功能说明：虚拟私有云下可用子网的范围 取值范围： 10.0.0.0/8~24 172.16.0.0/12~24 192.168.0.0/16~24 不指定cidr时，默认值为空 约束：必须是cidr格式，例如:192.168.0.0/16
 
         :return: The cidr of this SubnetInfo.
         :rtype: str
@@ -127,7 +120,7 @@ class SubnetInfo:
     def cidr(self, cidr):
         """Sets the cidr of this SubnetInfo.
 
-        vpc cidr
+        功能说明：虚拟私有云下可用子网的范围 取值范围： 10.0.0.0/8~24 172.16.0.0/12~24 192.168.0.0/16~24 不指定cidr时，默认值为空 约束：必须是cidr格式，例如:192.168.0.0/16
 
         :param cidr: The cidr of this SubnetInfo.
         :type cidr: str
@@ -182,7 +175,7 @@ class SubnetInfo:
     def gateway_ip(self):
         """Gets the gateway_ip of this SubnetInfo.
 
-        子网网关ip
+        子网的网关，取值范围为子网网段cidr中的ip地址
 
         :return: The gateway_ip of this SubnetInfo.
         :rtype: str
@@ -193,7 +186,7 @@ class SubnetInfo:
     def gateway_ip(self, gateway_ip):
         """Sets the gateway_ip of this SubnetInfo.
 
-        子网网关ip
+        子网的网关，取值范围为子网网段cidr中的ip地址
 
         :param gateway_ip: The gateway_ip of this SubnetInfo.
         :type gateway_ip: str
@@ -204,7 +197,7 @@ class SubnetInfo:
     def vpc_id(self):
         """Gets the vpc_id of this SubnetInfo.
 
-        vpc id
+        创建vpc产生的uuid
 
         :return: The vpc_id of this SubnetInfo.
         :rtype: str
@@ -215,34 +208,12 @@ class SubnetInfo:
     def vpc_id(self, vpc_id):
         """Sets the vpc_id of this SubnetInfo.
 
-        vpc id
+        创建vpc产生的uuid
 
         :param vpc_id: The vpc_id of this SubnetInfo.
         :type vpc_id: str
         """
         self._vpc_id = vpc_id
-
-    @property
-    def status(self):
-        """Gets the status of this SubnetInfo.
-
-        子网的状态
-
-        :return: The status of this SubnetInfo.
-        :rtype: str
-        """
-        return self._status
-
-    @status.setter
-    def status(self, status):
-        """Sets the status of this SubnetInfo.
-
-        子网的状态
-
-        :param status: The status of this SubnetInfo.
-        :type status: str
-        """
-        self._status = status
 
     @property
     def ipv6_enable(self):

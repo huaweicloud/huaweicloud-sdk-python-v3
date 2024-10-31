@@ -29,7 +29,7 @@ class ServiceItemIdsItems:
 
         The model defined in huaweicloud sdk
 
-        :param id: id值
+        :param id: 服务组成员id
         :type id: str
         """
         
@@ -45,7 +45,7 @@ class ServiceItemIdsItems:
     def id(self):
         """Gets the id of this ServiceItemIdsItems.
 
-        id值
+        服务组成员id
 
         :return: The id of this ServiceItemIdsItems.
         :rtype: str
@@ -56,7 +56,7 @@ class ServiceItemIdsItems:
     def id(self, id):
         """Sets the id of this ServiceItemIdsItems.
 
-        id值
+        服务组成员id
 
         :param id: The id of this ServiceItemIdsItems.
         :type id: str

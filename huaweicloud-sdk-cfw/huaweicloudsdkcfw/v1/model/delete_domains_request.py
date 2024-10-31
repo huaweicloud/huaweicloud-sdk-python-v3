@@ -19,24 +19,28 @@ class DeleteDomainsRequest:
     openapi_types = {
         'set_id': 'str',
         'enterprise_project_id': 'str',
+        'fw_instance_id': 'str',
         'body': 'DeleteDomainDto'
     }
 
     attribute_map = {
         'set_id': 'set_id',
         'enterprise_project_id': 'enterprise_project_id',
+        'fw_instance_id': 'fw_instance_id',
         'body': 'body'
     }
 
-    def __init__(self, set_id=None, enterprise_project_id=None, body=None):
+    def __init__(self, set_id=None, enterprise_project_id=None, fw_instance_id=None, body=None):
         """DeleteDomainsRequest
 
         The model defined in huaweicloud sdk
 
-        :param set_id: 域名组id
+        :param set_id: 域名组id，可通过[查询域名组列表接口](ListDomainSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
         :type set_id: str
-        :param enterprise_project_id: 企业项目id，用户支持企业项目后，由企业项目生成的id。
+        :param enterprise_project_id: 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
         :type enterprise_project_id: str
+        :param fw_instance_id: 防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        :type fw_instance_id: str
         :param body: Body of the DeleteDomainsRequest
         :type body: :class:`huaweicloudsdkcfw.v1.DeleteDomainDto`
         """
@@ -45,12 +49,15 @@ class DeleteDomainsRequest:
 
         self._set_id = None
         self._enterprise_project_id = None
+        self._fw_instance_id = None
         self._body = None
         self.discriminator = None
 
         self.set_id = set_id
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if fw_instance_id is not None:
+            self.fw_instance_id = fw_instance_id
         if body is not None:
             self.body = body
 
@@ -58,7 +65,7 @@ class DeleteDomainsRequest:
     def set_id(self):
         """Gets the set_id of this DeleteDomainsRequest.
 
-        域名组id
+        域名组id，可通过[查询域名组列表接口](ListDomainSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
         :return: The set_id of this DeleteDomainsRequest.
         :rtype: str
@@ -69,7 +76,7 @@ class DeleteDomainsRequest:
     def set_id(self, set_id):
         """Sets the set_id of this DeleteDomainsRequest.
 
-        域名组id
+        域名组id，可通过[查询域名组列表接口](ListDomainSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
         :param set_id: The set_id of this DeleteDomainsRequest.
         :type set_id: str
@@ -80,7 +87,7 @@ class DeleteDomainsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this DeleteDomainsRequest.
 
-        企业项目id，用户支持企业项目后，由企业项目生成的id。
+        企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
         :return: The enterprise_project_id of this DeleteDomainsRequest.
         :rtype: str
@@ -91,12 +98,34 @@ class DeleteDomainsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this DeleteDomainsRequest.
 
-        企业项目id，用户支持企业项目后，由企业项目生成的id。
+        企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
         :param enterprise_project_id: The enterprise_project_id of this DeleteDomainsRequest.
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def fw_instance_id(self):
+        """Gets the fw_instance_id of this DeleteDomainsRequest.
+
+        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+
+        :return: The fw_instance_id of this DeleteDomainsRequest.
+        :rtype: str
+        """
+        return self._fw_instance_id
+
+    @fw_instance_id.setter
+    def fw_instance_id(self, fw_instance_id):
+        """Sets the fw_instance_id of this DeleteDomainsRequest.
+
+        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+
+        :param fw_instance_id: The fw_instance_id of this DeleteDomainsRequest.
+        :type fw_instance_id: str
+        """
+        self._fw_instance_id = fw_instance_id
 
     @property
     def body(self):

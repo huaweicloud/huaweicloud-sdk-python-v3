@@ -29,7 +29,8 @@ class SignApiBindingBase:
         'api_remark': 'str',
         'sign_id': 'str',
         'sign_name': 'str',
-        'req_method': 'str'
+        'req_method': 'str',
+        'tags': 'list[str]'
     }
 
     attribute_map = {
@@ -45,10 +46,11 @@ class SignApiBindingBase:
         'api_remark': 'api_remark',
         'sign_id': 'sign_id',
         'sign_name': 'sign_name',
-        'req_method': 'req_method'
+        'req_method': 'req_method',
+        'tags': 'tags'
     }
 
-    def __init__(self, publish_id=None, api_id=None, group_name=None, binding_time=None, env_id=None, env_name=None, api_type=None, api_name=None, id=None, api_remark=None, sign_id=None, sign_name=None, req_method=None):
+    def __init__(self, publish_id=None, api_id=None, group_name=None, binding_time=None, env_id=None, env_name=None, api_type=None, api_name=None, id=None, api_remark=None, sign_id=None, sign_name=None, req_method=None, tags=None):
         """SignApiBindingBase
 
         The model defined in huaweicloud sdk
@@ -79,6 +81,8 @@ class SignApiBindingBase:
         :type sign_name: str
         :param req_method: API请求方法
         :type req_method: str
+        :param tags: API绑定的标签，标签配额默认10条，可以联系技术调整。
+        :type tags: list[str]
         """
         
         
@@ -96,6 +100,7 @@ class SignApiBindingBase:
         self._sign_id = None
         self._sign_name = None
         self._req_method = None
+        self._tags = None
         self.discriminator = None
 
         if publish_id is not None:
@@ -124,6 +129,8 @@ class SignApiBindingBase:
             self.sign_name = sign_name
         if req_method is not None:
             self.req_method = req_method
+        if tags is not None:
+            self.tags = tags
 
     @property
     def publish_id(self):
@@ -410,6 +417,28 @@ class SignApiBindingBase:
         :type req_method: str
         """
         self._req_method = req_method
+
+    @property
+    def tags(self):
+        """Gets the tags of this SignApiBindingBase.
+
+        API绑定的标签，标签配额默认10条，可以联系技术调整。
+
+        :return: The tags of this SignApiBindingBase.
+        :rtype: list[str]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this SignApiBindingBase.
+
+        API绑定的标签，标签配额默认10条，可以联系技术调整。
+
+        :param tags: The tags of this SignApiBindingBase.
+        :type tags: list[str]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

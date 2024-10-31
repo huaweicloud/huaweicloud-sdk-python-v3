@@ -31,7 +31,7 @@ class IpsProtectModeObject:
 
         The model defined in huaweicloud sdk
 
-        :param id: ips防护模式id
+        :param id: ips防护模式id，此处为防护对象id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得
         :type id: str
         :param mode: ips防护模式，0：观察模式，1：严格模式，2：中等模式，3：宽松模式
         :type mode: int
@@ -52,7 +52,7 @@ class IpsProtectModeObject:
     def id(self):
         """Gets the id of this IpsProtectModeObject.
 
-        ips防护模式id
+        ips防护模式id，此处为防护对象id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得
 
         :return: The id of this IpsProtectModeObject.
         :rtype: str
@@ -63,7 +63,7 @@ class IpsProtectModeObject:
     def id(self, id):
         """Sets the id of this IpsProtectModeObject.
 
-        ips防护模式id
+        ips防护模式id，此处为防护对象id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得
 
         :param id: The id of this IpsProtectModeObject.
         :type id: str

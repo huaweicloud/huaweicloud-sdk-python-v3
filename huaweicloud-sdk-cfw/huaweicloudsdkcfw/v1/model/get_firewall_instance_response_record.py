@@ -67,17 +67,17 @@ class GetFirewallInstanceResponseRecord:
 
         The model defined in huaweicloud sdk
 
-        :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)。
+        :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id。，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，默认情况下，fw_instance_Id为空时，返回账号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
         :type fw_instance_id: str
         :param name: 防火墙名称
         :type name: str
-        :param ha_type: 集群类型
+        :param ha_type: 集群类型，包含主备（0）和集群（1）两种方式，主备模式包含四个节点，2个主节点构成集群，剩余两个节点为主节点的备节点，集群模式仅拉起两个节点作为集群。
         :type ha_type: int
         :param charge_mode: 计费模式 0：包年/包月 1：按需
         :type charge_mode: int
-        :param service_type: 服务类型
+        :param service_type: 防火墙防护类型，目前仅支持0，互联网防护
         :type service_type: int
-        :param engine_type: 引擎类型
+        :param engine_type: 引擎类型，0：自研引擎 1：山石引擎 3：天融信引擎
         :type engine_type: int
         :param flavor: 
         :type flavor: :class:`huaweicloudsdkcfw.v1.Flavor`
@@ -87,9 +87,9 @@ class GetFirewallInstanceResponseRecord:
         :type status: int
         :param is_old_firewall_instance: 是否为旧引擎，true表示是，false表示不是
         :type is_old_firewall_instance: bool
-        :param is_available_obs: 是否支持obs
+        :param is_available_obs: 是否支持obs，true表示是，false表示不是
         :type is_available_obs: bool
-        :param is_support_threat_tags: 是否支持威胁标签
+        :param is_support_threat_tags: 是否支持威胁情报标签，true表示是，false表示不是
         :type is_support_threat_tags: bool
         :param support_ipv6: 是否支持ipv6，true表示是，false表示不是
         :type support_ipv6: bool
@@ -99,13 +99,13 @@ class GetFirewallInstanceResponseRecord:
         :type resources: list[:class:`huaweicloudsdkcfw.v1.FirewallInstanceResource`]
         :param fw_instance_name: 防火墙名称
         :type fw_instance_name: str
-        :param enterprise_project_id: 企业项目id，用户支持企业项目后，由企业项目生成的id。
+        :param enterprise_project_id: 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
         :type enterprise_project_id: str
-        :param resource_id: 资源id
+        :param resource_id: 防火墙资源id，同fw_instance_id
         :type resource_id: str
         :param support_url_filtering: 是否支持url过滤，true表示是，false表示不是
         :type support_url_filtering: bool
-        :param tags: 标签列表
+        :param tags: 标签列表，标签键值map转化的json字符串，如\&quot;{\\\&quot;key\\\&quot;:\\\&quot;value\\\&quot;}\&quot;
         :type tags: str
         """
         
@@ -178,7 +178,7 @@ class GetFirewallInstanceResponseRecord:
     def fw_instance_id(self):
         """Gets the fw_instance_id of this GetFirewallInstanceResponseRecord.
 
-        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)。
+        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id。，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，默认情况下，fw_instance_Id为空时，返回账号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
 
         :return: The fw_instance_id of this GetFirewallInstanceResponseRecord.
         :rtype: str
@@ -189,7 +189,7 @@ class GetFirewallInstanceResponseRecord:
     def fw_instance_id(self, fw_instance_id):
         """Sets the fw_instance_id of this GetFirewallInstanceResponseRecord.
 
-        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)。
+        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id。，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，默认情况下，fw_instance_Id为空时，返回账号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
 
         :param fw_instance_id: The fw_instance_id of this GetFirewallInstanceResponseRecord.
         :type fw_instance_id: str
@@ -222,7 +222,7 @@ class GetFirewallInstanceResponseRecord:
     def ha_type(self):
         """Gets the ha_type of this GetFirewallInstanceResponseRecord.
 
-        集群类型
+        集群类型，包含主备（0）和集群（1）两种方式，主备模式包含四个节点，2个主节点构成集群，剩余两个节点为主节点的备节点，集群模式仅拉起两个节点作为集群。
 
         :return: The ha_type of this GetFirewallInstanceResponseRecord.
         :rtype: int
@@ -233,7 +233,7 @@ class GetFirewallInstanceResponseRecord:
     def ha_type(self, ha_type):
         """Sets the ha_type of this GetFirewallInstanceResponseRecord.
 
-        集群类型
+        集群类型，包含主备（0）和集群（1）两种方式，主备模式包含四个节点，2个主节点构成集群，剩余两个节点为主节点的备节点，集群模式仅拉起两个节点作为集群。
 
         :param ha_type: The ha_type of this GetFirewallInstanceResponseRecord.
         :type ha_type: int
@@ -266,7 +266,7 @@ class GetFirewallInstanceResponseRecord:
     def service_type(self):
         """Gets the service_type of this GetFirewallInstanceResponseRecord.
 
-        服务类型
+        防火墙防护类型，目前仅支持0，互联网防护
 
         :return: The service_type of this GetFirewallInstanceResponseRecord.
         :rtype: int
@@ -277,7 +277,7 @@ class GetFirewallInstanceResponseRecord:
     def service_type(self, service_type):
         """Sets the service_type of this GetFirewallInstanceResponseRecord.
 
-        服务类型
+        防火墙防护类型，目前仅支持0，互联网防护
 
         :param service_type: The service_type of this GetFirewallInstanceResponseRecord.
         :type service_type: int
@@ -288,7 +288,7 @@ class GetFirewallInstanceResponseRecord:
     def engine_type(self):
         """Gets the engine_type of this GetFirewallInstanceResponseRecord.
 
-        引擎类型
+        引擎类型，0：自研引擎 1：山石引擎 3：天融信引擎
 
         :return: The engine_type of this GetFirewallInstanceResponseRecord.
         :rtype: int
@@ -299,7 +299,7 @@ class GetFirewallInstanceResponseRecord:
     def engine_type(self, engine_type):
         """Sets the engine_type of this GetFirewallInstanceResponseRecord.
 
-        引擎类型
+        引擎类型，0：自研引擎 1：山石引擎 3：天融信引擎
 
         :param engine_type: The engine_type of this GetFirewallInstanceResponseRecord.
         :type engine_type: int
@@ -394,7 +394,7 @@ class GetFirewallInstanceResponseRecord:
     def is_available_obs(self):
         """Gets the is_available_obs of this GetFirewallInstanceResponseRecord.
 
-        是否支持obs
+        是否支持obs，true表示是，false表示不是
 
         :return: The is_available_obs of this GetFirewallInstanceResponseRecord.
         :rtype: bool
@@ -405,7 +405,7 @@ class GetFirewallInstanceResponseRecord:
     def is_available_obs(self, is_available_obs):
         """Sets the is_available_obs of this GetFirewallInstanceResponseRecord.
 
-        是否支持obs
+        是否支持obs，true表示是，false表示不是
 
         :param is_available_obs: The is_available_obs of this GetFirewallInstanceResponseRecord.
         :type is_available_obs: bool
@@ -416,7 +416,7 @@ class GetFirewallInstanceResponseRecord:
     def is_support_threat_tags(self):
         """Gets the is_support_threat_tags of this GetFirewallInstanceResponseRecord.
 
-        是否支持威胁标签
+        是否支持威胁情报标签，true表示是，false表示不是
 
         :return: The is_support_threat_tags of this GetFirewallInstanceResponseRecord.
         :rtype: bool
@@ -427,7 +427,7 @@ class GetFirewallInstanceResponseRecord:
     def is_support_threat_tags(self, is_support_threat_tags):
         """Sets the is_support_threat_tags of this GetFirewallInstanceResponseRecord.
 
-        是否支持威胁标签
+        是否支持威胁情报标签，true表示是，false表示不是
 
         :param is_support_threat_tags: The is_support_threat_tags of this GetFirewallInstanceResponseRecord.
         :type is_support_threat_tags: bool
@@ -526,7 +526,7 @@ class GetFirewallInstanceResponseRecord:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this GetFirewallInstanceResponseRecord.
 
-        企业项目id，用户支持企业项目后，由企业项目生成的id。
+        企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
         :return: The enterprise_project_id of this GetFirewallInstanceResponseRecord.
         :rtype: str
@@ -537,7 +537,7 @@ class GetFirewallInstanceResponseRecord:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this GetFirewallInstanceResponseRecord.
 
-        企业项目id，用户支持企业项目后，由企业项目生成的id。
+        企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
         :param enterprise_project_id: The enterprise_project_id of this GetFirewallInstanceResponseRecord.
         :type enterprise_project_id: str
@@ -548,7 +548,7 @@ class GetFirewallInstanceResponseRecord:
     def resource_id(self):
         """Gets the resource_id of this GetFirewallInstanceResponseRecord.
 
-        资源id
+        防火墙资源id，同fw_instance_id
 
         :return: The resource_id of this GetFirewallInstanceResponseRecord.
         :rtype: str
@@ -559,7 +559,7 @@ class GetFirewallInstanceResponseRecord:
     def resource_id(self, resource_id):
         """Sets the resource_id of this GetFirewallInstanceResponseRecord.
 
-        资源id
+        防火墙资源id，同fw_instance_id
 
         :param resource_id: The resource_id of this GetFirewallInstanceResponseRecord.
         :type resource_id: str
@@ -592,7 +592,7 @@ class GetFirewallInstanceResponseRecord:
     def tags(self):
         """Gets the tags of this GetFirewallInstanceResponseRecord.
 
-        标签列表
+        标签列表，标签键值map转化的json字符串，如\"{\\\"key\\\":\\\"value\\\"}\"
 
         :return: The tags of this GetFirewallInstanceResponseRecord.
         :rtype: str
@@ -603,7 +603,7 @@ class GetFirewallInstanceResponseRecord:
     def tags(self, tags):
         """Sets the tags of this GetFirewallInstanceResponseRecord.
 
-        标签列表
+        标签列表，标签键值map转化的json字符串，如\"{\\\"key\\\":\\\"value\\\"}\"
 
         :param tags: The tags of this GetFirewallInstanceResponseRecord.
         :type tags: str

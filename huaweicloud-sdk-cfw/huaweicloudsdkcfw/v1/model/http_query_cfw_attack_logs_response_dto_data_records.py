@@ -89,9 +89,9 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
         The model defined in huaweicloud sdk
 
-        :param direction: 方向，有内到外和外到内两种
+        :param direction: 方向，包含in2out，out2in
         :type direction: str
-        :param action: 动作
+        :param action: 动作包含permit，deny
         :type action: str
         :param event_time: 事件时间，以毫秒为单位的时间戳，如1718936272648
         :type event_time: int
@@ -99,7 +99,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
         :type attack_type: str
         :param attack_rule: 攻击规则
         :type attack_rule: str
-        :param level: 威胁等级
+        :param level: 威胁等级，包括CRITICAL、HIGH、MEDIUM、LOW
         :type level: str
         :param source: 来源
         :type source: str
@@ -119,11 +119,11 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
         :type dst_ip: str
         :param dst_port: 目的端口
         :type dst_port: int
-        :param protocol: 协议
+        :param protocol: 协议类型，包含TCP, UDP,ICMP,ICMPV6等。
         :type protocol: str
         :param packet: 攻击日志报文
         :type packet: str
-        :param app: 应用协议
+        :param app: 规则应用类型包括：“HTTP”，\&quot;HTTPS\&quot;，\&quot;TLS1\&quot;，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
         :type app: str
         :param packet_messages: 攻击报文信息
         :type packet_messages: list[:class:`huaweicloudsdkcfw.v1.PacketMessage`]
@@ -255,7 +255,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
     def direction(self):
         """Gets the direction of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
-        方向，有内到外和外到内两种
+        方向，包含in2out，out2in
 
         :return: The direction of this HttpQueryCfwAttackLogsResponseDTODataRecords.
         :rtype: str
@@ -266,7 +266,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
     def direction(self, direction):
         """Sets the direction of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
-        方向，有内到外和外到内两种
+        方向，包含in2out，out2in
 
         :param direction: The direction of this HttpQueryCfwAttackLogsResponseDTODataRecords.
         :type direction: str
@@ -277,7 +277,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
     def action(self):
         """Gets the action of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
-        动作
+        动作包含permit，deny
 
         :return: The action of this HttpQueryCfwAttackLogsResponseDTODataRecords.
         :rtype: str
@@ -288,7 +288,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
     def action(self, action):
         """Sets the action of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
-        动作
+        动作包含permit，deny
 
         :param action: The action of this HttpQueryCfwAttackLogsResponseDTODataRecords.
         :type action: str
@@ -365,7 +365,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
     def level(self):
         """Gets the level of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
-        威胁等级
+        威胁等级，包括CRITICAL、HIGH、MEDIUM、LOW
 
         :return: The level of this HttpQueryCfwAttackLogsResponseDTODataRecords.
         :rtype: str
@@ -376,7 +376,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
     def level(self, level):
         """Sets the level of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
-        威胁等级
+        威胁等级，包括CRITICAL、HIGH、MEDIUM、LOW
 
         :param level: The level of this HttpQueryCfwAttackLogsResponseDTODataRecords.
         :type level: str
@@ -585,7 +585,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
     def protocol(self):
         """Gets the protocol of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
-        协议
+        协议类型，包含TCP, UDP,ICMP,ICMPV6等。
 
         :return: The protocol of this HttpQueryCfwAttackLogsResponseDTODataRecords.
         :rtype: str
@@ -596,7 +596,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
     def protocol(self, protocol):
         """Sets the protocol of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
-        协议
+        协议类型，包含TCP, UDP,ICMP,ICMPV6等。
 
         :param protocol: The protocol of this HttpQueryCfwAttackLogsResponseDTODataRecords.
         :type protocol: str
@@ -629,7 +629,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
     def app(self):
         """Gets the app of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
-        应用协议
+        规则应用类型包括：“HTTP”，\"HTTPS\"，\"TLS1\"，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
 
         :return: The app of this HttpQueryCfwAttackLogsResponseDTODataRecords.
         :rtype: str
@@ -640,7 +640,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
     def app(self, app):
         """Sets the app of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
-        应用协议
+        规则应用类型包括：“HTTP”，\"HTTPS\"，\"TLS1\"，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
 
         :param app: The app of this HttpQueryCfwAttackLogsResponseDTODataRecords.
         :type app: str

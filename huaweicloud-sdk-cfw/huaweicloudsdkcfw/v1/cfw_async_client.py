@@ -796,7 +796,7 @@ class CfwAsyncClient(Client):
     def change_east_west_firewall_status_async(self, request):
         """修改东西向防火墙防护状态
 
-        东西向防护资源防护开启/关闭
+        东西向防护开启/关闭
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -865,7 +865,7 @@ class CfwAsyncClient(Client):
     def create_capture_task_async(self, request):
         """创建抓包任务
 
-        创建抓包任务
+        创建抓包任务，每个任务只能执行一次。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1342,9 +1342,9 @@ class CfwAsyncClient(Client):
         return http_info
 
     def delete_capture_task_async(self, request):
-        """删除抓包任务
+        """批量删除抓包任务
 
-        删除抓包任务
+        批量删除抓包任务
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1519,6 +1519,8 @@ class CfwAsyncClient(Client):
         query_params = []
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 
@@ -4153,6 +4155,8 @@ class CfwAsyncClient(Client):
         query_params = []
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 
@@ -5037,8 +5041,6 @@ class CfwAsyncClient(Client):
             query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 

@@ -1,0 +1,173 @@
+# coding: utf-8
+
+import six
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class Url:
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'name': 'str',
+        'address': 'str',
+        'type': 'str'
+    }
+
+    attribute_map = {
+        'name': 'name',
+        'address': 'address',
+        'type': 'type'
+    }
+
+    def __init__(self, name=None, address=None, type=None):
+        """Url
+
+        The model defined in huaweicloud sdk
+
+        :param name: Url名称
+        :type name: str
+        :param address: Url地址
+        :type address: str
+        :param type: 类型，PUBLIC为公网地址，PRIVATE为内网地址
+        :type type: str
+        """
+        
+        
+
+        self._name = None
+        self._address = None
+        self._type = None
+        self.discriminator = None
+
+        if name is not None:
+            self.name = name
+        if address is not None:
+            self.address = address
+        if type is not None:
+            self.type = type
+
+    @property
+    def name(self):
+        """Gets the name of this Url.
+
+        Url名称
+
+        :return: The name of this Url.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this Url.
+
+        Url名称
+
+        :param name: The name of this Url.
+        :type name: str
+        """
+        self._name = name
+
+    @property
+    def address(self):
+        """Gets the address of this Url.
+
+        Url地址
+
+        :return: The address of this Url.
+        :rtype: str
+        """
+        return self._address
+
+    @address.setter
+    def address(self, address):
+        """Sets the address of this Url.
+
+        Url地址
+
+        :param address: The address of this Url.
+        :type address: str
+        """
+        self._address = address
+
+    @property
+    def type(self):
+        """Gets the type of this Url.
+
+        类型，PUBLIC为公网地址，PRIVATE为内网地址
+
+        :return: The type of this Url.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this Url.
+
+        类型，PUBLIC为公网地址，PRIVATE为内网地址
+
+        :param type: The type of this Url.
+        :type type: str
+        """
+        self._type = type
+
+    def to_dict(self):
+        """Returns the model properties as a dict"""
+        result = {}
+
+        for attr, _ in six.iteritems(self.openapi_types):
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, Url):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

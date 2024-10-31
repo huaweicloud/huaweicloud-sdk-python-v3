@@ -22,7 +22,8 @@ class ListBandwidthTimelineRequest:
         'to': 'int',
         'hosts': 'str',
         'instances': 'str',
-        'group_by': 'str'
+        'group_by': 'str',
+        'display_option': 'int'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class ListBandwidthTimelineRequest:
         'to': 'to',
         'hosts': 'hosts',
         'instances': 'instances',
-        'group_by': 'group_by'
+        'group_by': 'group_by',
+        'display_option': 'display_option'
     }
 
-    def __init__(self, enterprise_project_id=None, _from=None, to=None, hosts=None, instances=None, group_by=None):
+    def __init__(self, enterprise_project_id=None, _from=None, to=None, hosts=None, instances=None, group_by=None, display_option=None):
         """ListBandwidthTimelineRequest
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class ListBandwidthTimelineRequest:
         :type instances: str
         :param group_by: 展示维度，按天展示时传\&quot;DAY\&quot;；默认不传，按照分钟展示。
         :type group_by: str
+        :param display_option: 发送/接受字节数，查看峰值请输入1，查看平均值请输入0
+        :type display_option: int
         """
         
         
@@ -61,6 +65,7 @@ class ListBandwidthTimelineRequest:
         self._hosts = None
         self._instances = None
         self._group_by = None
+        self._display_option = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
@@ -73,6 +78,8 @@ class ListBandwidthTimelineRequest:
             self.instances = instances
         if group_by is not None:
             self.group_by = group_by
+        if display_option is not None:
+            self.display_option = display_option
 
     @property
     def enterprise_project_id(self):
@@ -205,6 +212,28 @@ class ListBandwidthTimelineRequest:
         :type group_by: str
         """
         self._group_by = group_by
+
+    @property
+    def display_option(self):
+        """Gets the display_option of this ListBandwidthTimelineRequest.
+
+        发送/接受字节数，查看峰值请输入1，查看平均值请输入0
+
+        :return: The display_option of this ListBandwidthTimelineRequest.
+        :rtype: int
+        """
+        return self._display_option
+
+    @display_option.setter
+    def display_option(self, display_option):
+        """Sets the display_option of this ListBandwidthTimelineRequest.
+
+        发送/接受字节数，查看峰值请输入1，查看平均值请输入0
+
+        :param display_option: The display_option of this ListBandwidthTimelineRequest.
+        :type display_option: int
+        """
+        self._display_option = display_option
 
     def to_dict(self):
         """Returns the model properties as a dict"""

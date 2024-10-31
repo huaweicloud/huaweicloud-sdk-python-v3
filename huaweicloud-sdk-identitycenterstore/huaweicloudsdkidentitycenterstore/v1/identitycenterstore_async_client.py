@@ -22,11 +22,11 @@ class IdentityCenterStoreAsyncClient(Client):
     @classmethod
     def new_builder(cls, clazz=None):
         if not clazz:
-            client_builder = ClientBuilder(cls, "GlobalCredentials")
+            client_builder = ClientBuilder(cls)
         else:
             if clazz.__name__ != "IdentityCenterStoreAsyncClient":
                 raise TypeError("client type error, support client type is IdentityCenterStoreAsyncClient")
-            client_builder = ClientBuilder(clazz, "GlobalCredentials")
+            client_builder = ClientBuilder(clazz)
 
         
 

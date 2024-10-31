@@ -31,9 +31,9 @@ class AddServiceItemsUsingPOSTRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param set_id: 服务组id
+        :param set_id: 服务组id，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
         :type set_id: str
-        :param service_items: 添加服务组成员
+        :param service_items: 服务组成员列表
         :type service_items: list[:class:`huaweicloudsdkcfw.v1.AddServiceItemsUsingPOSTRequestBodyServiceItems`]
         """
         
@@ -50,7 +50,7 @@ class AddServiceItemsUsingPOSTRequestBody:
     def set_id(self):
         """Gets the set_id of this AddServiceItemsUsingPOSTRequestBody.
 
-        服务组id
+        服务组id，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
         :return: The set_id of this AddServiceItemsUsingPOSTRequestBody.
         :rtype: str
@@ -61,7 +61,7 @@ class AddServiceItemsUsingPOSTRequestBody:
     def set_id(self, set_id):
         """Sets the set_id of this AddServiceItemsUsingPOSTRequestBody.
 
-        服务组id
+        服务组id，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
         :param set_id: The set_id of this AddServiceItemsUsingPOSTRequestBody.
         :type set_id: str
@@ -72,7 +72,7 @@ class AddServiceItemsUsingPOSTRequestBody:
     def service_items(self):
         """Gets the service_items of this AddServiceItemsUsingPOSTRequestBody.
 
-        添加服务组成员
+        服务组成员列表
 
         :return: The service_items of this AddServiceItemsUsingPOSTRequestBody.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.AddServiceItemsUsingPOSTRequestBodyServiceItems`]
@@ -83,7 +83,7 @@ class AddServiceItemsUsingPOSTRequestBody:
     def service_items(self, service_items):
         """Sets the service_items of this AddServiceItemsUsingPOSTRequestBody.
 
-        添加服务组成员
+        服务组成员列表
 
         :param service_items: The service_items of this AddServiceItemsUsingPOSTRequestBody.
         :type service_items: list[:class:`huaweicloudsdkcfw.v1.AddServiceItemsUsingPOSTRequestBodyServiceItems`]

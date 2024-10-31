@@ -19,30 +19,26 @@ class VpcDetail:
     openapi_types = {
         'id': 'str',
         'name': 'str',
-        'cidr': 'str',
-        'status': 'str'
+        'cidr': 'str'
     }
 
     attribute_map = {
         'id': 'id',
         'name': 'name',
-        'cidr': 'cidr',
-        'status': 'status'
+        'cidr': 'cidr'
     }
 
-    def __init__(self, id=None, name=None, cidr=None, status=None):
+    def __init__(self, id=None, name=None, cidr=None):
         """VpcDetail
 
         The model defined in huaweicloud sdk
 
-        :param id: id
+        :param id: 创建引流VPC产生的随机UUID
         :type id: str
-        :param name: 名称
+        :param name: 引流VPC名称
         :type name: str
-        :param cidr: vpc cidr
+        :param cidr: 功能说明：虚拟私有云下可用子网的范围 取值范围： 10.0.0.0/8~24 172.16.0.0/12~24 192.168.0.0/16~24 不指定cidr时，默认值为空 约束：必须是cidr格式，例如:192.168.0.0/16
         :type cidr: str
-        :param status: 状态
-        :type status: str
         """
         
         
@@ -50,7 +46,6 @@ class VpcDetail:
         self._id = None
         self._name = None
         self._cidr = None
-        self._status = None
         self.discriminator = None
 
         if id is not None:
@@ -59,14 +54,12 @@ class VpcDetail:
             self.name = name
         if cidr is not None:
             self.cidr = cidr
-        if status is not None:
-            self.status = status
 
     @property
     def id(self):
         """Gets the id of this VpcDetail.
 
-        id
+        创建引流VPC产生的随机UUID
 
         :return: The id of this VpcDetail.
         :rtype: str
@@ -77,7 +70,7 @@ class VpcDetail:
     def id(self, id):
         """Sets the id of this VpcDetail.
 
-        id
+        创建引流VPC产生的随机UUID
 
         :param id: The id of this VpcDetail.
         :type id: str
@@ -88,7 +81,7 @@ class VpcDetail:
     def name(self):
         """Gets the name of this VpcDetail.
 
-        名称
+        引流VPC名称
 
         :return: The name of this VpcDetail.
         :rtype: str
@@ -99,7 +92,7 @@ class VpcDetail:
     def name(self, name):
         """Sets the name of this VpcDetail.
 
-        名称
+        引流VPC名称
 
         :param name: The name of this VpcDetail.
         :type name: str
@@ -110,7 +103,7 @@ class VpcDetail:
     def cidr(self):
         """Gets the cidr of this VpcDetail.
 
-        vpc cidr
+        功能说明：虚拟私有云下可用子网的范围 取值范围： 10.0.0.0/8~24 172.16.0.0/12~24 192.168.0.0/16~24 不指定cidr时，默认值为空 约束：必须是cidr格式，例如:192.168.0.0/16
 
         :return: The cidr of this VpcDetail.
         :rtype: str
@@ -121,34 +114,12 @@ class VpcDetail:
     def cidr(self, cidr):
         """Sets the cidr of this VpcDetail.
 
-        vpc cidr
+        功能说明：虚拟私有云下可用子网的范围 取值范围： 10.0.0.0/8~24 172.16.0.0/12~24 192.168.0.0/16~24 不指定cidr时，默认值为空 约束：必须是cidr格式，例如:192.168.0.0/16
 
         :param cidr: The cidr of this VpcDetail.
         :type cidr: str
         """
         self._cidr = cidr
-
-    @property
-    def status(self):
-        """Gets the status of this VpcDetail.
-
-        状态
-
-        :return: The status of this VpcDetail.
-        :rtype: str
-        """
-        return self._status
-
-    @status.setter
-    def status(self, status):
-        """Sets the status of this VpcDetail.
-
-        状态
-
-        :param status: The status of this VpcDetail.
-        :type status: str
-        """
-        self._status = status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

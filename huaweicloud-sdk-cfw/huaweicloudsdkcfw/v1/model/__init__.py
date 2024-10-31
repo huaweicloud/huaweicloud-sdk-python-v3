@@ -33,10 +33,13 @@ from huaweicloudsdkcfw.v1.model.add_service_set_request import AddServiceSetRequ
 from huaweicloudsdkcfw.v1.model.add_service_set_response import AddServiceSetResponse
 from huaweicloudsdkcfw.v1.model.add_service_set_using_post_request_body import AddServiceSetUsingPOSTRequestBody
 from huaweicloudsdkcfw.v1.model.address_group_vo import AddressGroupVO
+from huaweicloudsdkcfw.v1.model.address_item_id import AddressItemId
+from huaweicloudsdkcfw.v1.model.address_item_id_without_name import AddressItemIdWithoutName
 from huaweicloudsdkcfw.v1.model.address_item_list_response_dto_data import AddressItemListResponseDTOData
 from huaweicloudsdkcfw.v1.model.address_item_list_response_dto_data_records import AddressItemListResponseDTODataRecords
 from huaweicloudsdkcfw.v1.model.address_items import AddressItems
 from huaweicloudsdkcfw.v1.model.address_set_detail_response_dto_data import AddressSetDetailResponseDTOData
+from huaweicloudsdkcfw.v1.model.address_set_id import AddressSetId
 from huaweicloudsdkcfw.v1.model.address_set_list_response_dto_data import AddressSetListResponseDTOData
 from huaweicloudsdkcfw.v1.model.address_set_list_response_dto_data_records import AddressSetListResponseDTODataRecords
 from huaweicloudsdkcfw.v1.model.batch_delete_acl_rules_request import BatchDeleteAclRulesRequest
@@ -49,6 +52,7 @@ from huaweicloudsdkcfw.v1.model.batch_delete_service_items_request import BatchD
 from huaweicloudsdkcfw.v1.model.batch_delete_service_items_response import BatchDeleteServiceItemsResponse
 from huaweicloudsdkcfw.v1.model.batch_update_acl_rule_actions_request import BatchUpdateAclRuleActionsRequest
 from huaweicloudsdkcfw.v1.model.batch_update_acl_rule_actions_response import BatchUpdateAclRuleActionsResponse
+from huaweicloudsdkcfw.v1.model.black_white_list_id import BlackWhiteListId
 from huaweicloudsdkcfw.v1.model.black_white_list_response_data import BlackWhiteListResponseData
 from huaweicloudsdkcfw.v1.model.black_white_list_response_data_records import BlackWhiteListResponseDataRecords
 from huaweicloudsdkcfw.v1.model.cancel_capture_task_dto import CancelCaptureTaskDto
@@ -59,9 +63,11 @@ from huaweicloudsdkcfw.v1.model.capture_result_url_vo import CaptureResultUrlVO
 from huaweicloudsdkcfw.v1.model.capture_rule_address_dto import CaptureRuleAddressDto
 from huaweicloudsdkcfw.v1.model.capture_service_dto import CaptureServiceDto
 from huaweicloudsdkcfw.v1.model.capture_task_dto import CaptureTaskDto
+from huaweicloudsdkcfw.v1.model.capture_task_id import CaptureTaskId
 from huaweicloudsdkcfw.v1.model.capture_task_vo import CaptureTaskVO
 from huaweicloudsdkcfw.v1.model.change_east_west_firewall_status_request import ChangeEastWestFirewallStatusRequest
 from huaweicloudsdkcfw.v1.model.change_east_west_firewall_status_response import ChangeEastWestFirewallStatusResponse
+from huaweicloudsdkcfw.v1.model.change_east_west_firewall_status_response_data import ChangeEastWestFirewallStatusResponseData
 from huaweicloudsdkcfw.v1.model.change_eip_status_request import ChangeEipStatusRequest
 from huaweicloudsdkcfw.v1.model.change_eip_status_response import ChangeEipStatusResponse
 from huaweicloudsdkcfw.v1.model.change_ips_protect_mode_request import ChangeIpsProtectModeRequest
@@ -114,6 +120,7 @@ from huaweicloudsdkcfw.v1.model.delete_rule_acl_dto import DeleteRuleAclDto
 from huaweicloudsdkcfw.v1.model.delete_service_item_dto import DeleteServiceItemDto
 from huaweicloudsdkcfw.v1.model.delete_service_item_request import DeleteServiceItemRequest
 from huaweicloudsdkcfw.v1.model.delete_service_item_response import DeleteServiceItemResponse
+from huaweicloudsdkcfw.v1.model.delete_service_item_response_body_data import DeleteServiceItemResponseBodyData
 from huaweicloudsdkcfw.v1.model.delete_service_set_request import DeleteServiceSetRequest
 from huaweicloudsdkcfw.v1.model.delete_service_set_response import DeleteServiceSetResponse
 from huaweicloudsdkcfw.v1.model.delete_tag_request import DeleteTagRequest
@@ -132,11 +139,12 @@ from huaweicloudsdkcfw.v1.model.eip_resource import EipResource
 from huaweicloudsdkcfw.v1.model.eip_response_data import EipResponseData
 from huaweicloudsdkcfw.v1.model.er import Er
 from huaweicloudsdkcfw.v1.model.er_instance import ErInstance
-from huaweicloudsdkcfw.v1.model.error_rsp import ErrorRsp
 from huaweicloudsdkcfw.v1.model.ew_protect_resource_info import EwProtectResourceInfo
+from huaweicloudsdkcfw.v1.model.failed_eip_info import FailedEipInfo
 from huaweicloudsdkcfw.v1.model.firewall_instance_resource import FirewallInstanceResource
 from huaweicloudsdkcfw.v1.model.firewall_instance_vo import FirewallInstanceVO
 from huaweicloudsdkcfw.v1.model.flavor import Flavor
+from huaweicloudsdkcfw.v1.model.get_create_firewall_job_response_data import GetCreateFirewallJobResponseData
 from huaweicloudsdkcfw.v1.model.get_east_west_firewall_response_body import GetEastWestFirewallResponseBody
 from huaweicloudsdkcfw.v1.model.get_firewall_instance_data import GetFirewallInstanceData
 from huaweicloudsdkcfw.v1.model.get_firewall_instance_response_record import GetFirewallInstanceResponseRecord
@@ -150,7 +158,6 @@ from huaweicloudsdkcfw.v1.model.http_query_cfw_attack_logs_response_dto_data imp
 from huaweicloudsdkcfw.v1.model.http_query_cfw_attack_logs_response_dto_data_records import HttpQueryCfwAttackLogsResponseDTODataRecords
 from huaweicloudsdkcfw.v1.model.http_query_cfw_flow_logs_response_dto_data import HttpQueryCfwFlowLogsResponseDTOData
 from huaweicloudsdkcfw.v1.model.http_query_cfw_flow_logs_response_dto_data_records import HttpQueryCfwFlowLogsResponseDTODataRecords
-from huaweicloudsdkcfw.v1.model.id_object import IdObject
 from huaweicloudsdkcfw.v1.model.ip_region_dto import IpRegionDto
 from huaweicloudsdkcfw.v1.model.ips_protect_dto import IpsProtectDTO
 from huaweicloudsdkcfw.v1.model.ips_protect_mode_object import IpsProtectModeObject
@@ -219,6 +226,7 @@ from huaweicloudsdkcfw.v1.model.list_service_sets_request import ListServiceSets
 from huaweicloudsdkcfw.v1.model.list_service_sets_response import ListServiceSetsResponse
 from huaweicloudsdkcfw.v1.model.log_config_dto import LogConfigDto
 from huaweicloudsdkcfw.v1.model.order_rule_acl_dto import OrderRuleAclDto
+from huaweicloudsdkcfw.v1.model.order_rule_id import OrderRuleId
 from huaweicloudsdkcfw.v1.model.packet_message import PacketMessage
 from huaweicloudsdkcfw.v1.model.protect_object_vo import ProtectObjectVO
 from huaweicloudsdkcfw.v1.model.query_fire_wall_instance_dto import QueryFireWallInstanceDto
@@ -242,9 +250,9 @@ from huaweicloudsdkcfw.v1.model.service_item_list_response_dto_data import Servi
 from huaweicloudsdkcfw.v1.model.service_item_list_response_dto_data_records import ServiceItemListResponseDtoDataRecords
 from huaweicloudsdkcfw.v1.model.service_set import ServiceSet
 from huaweicloudsdkcfw.v1.model.service_set_detail_response_dto import ServiceSetDetailResponseDto
+from huaweicloudsdkcfw.v1.model.service_set_id import ServiceSetId
 from huaweicloudsdkcfw.v1.model.service_set_records import ServiceSetRecords
 from huaweicloudsdkcfw.v1.model.subnet_info import SubnetInfo
-from huaweicloudsdkcfw.v1.model.success_rsp_data import SuccessRspData
 from huaweicloudsdkcfw.v1.model.tag_info import TagInfo
 from huaweicloudsdkcfw.v1.model.tags_vo import TagsVO
 from huaweicloudsdkcfw.v1.model.update_acl_rule_order_request import UpdateAclRuleOrderRequest

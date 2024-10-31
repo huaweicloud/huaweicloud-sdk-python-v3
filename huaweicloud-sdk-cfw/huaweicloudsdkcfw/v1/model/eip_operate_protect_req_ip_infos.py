@@ -33,11 +33,11 @@ class EipOperateProtectReqIpInfos:
 
         The model defined in huaweicloud sdk
 
-        :param id: 弹性公网IP数据ID
+        :param id: 弹性公网IP ID，可通过调用弹性IP列表查询接口获得，通过返回值中的data.records.id（.表示各对象之间层级的区分）获得。
         :type id: str
-        :param public_ip: 弹性公网IP地址
+        :param public_ip: 弹性公网IP IPv4地址，可通过调用弹性IP列表查询接口获得，通过返回值中的data.records.public_ip（.表示各对象之间层级的区分）获得。
         :type public_ip: str
-        :param public_ipv6: 弹性公网IP地址IPV6
+        :param public_ipv6: 弹性公网IP IPv6地址，可通过调用弹性IP列表查询接口获得，通过返回值中的data.records.public_ipv6（.表示各对象之间层级的区分）获得。
         :type public_ipv6: str
         """
         
@@ -59,7 +59,7 @@ class EipOperateProtectReqIpInfos:
     def id(self):
         """Gets the id of this EipOperateProtectReqIpInfos.
 
-        弹性公网IP数据ID
+        弹性公网IP ID，可通过调用弹性IP列表查询接口获得，通过返回值中的data.records.id（.表示各对象之间层级的区分）获得。
 
         :return: The id of this EipOperateProtectReqIpInfos.
         :rtype: str
@@ -70,7 +70,7 @@ class EipOperateProtectReqIpInfos:
     def id(self, id):
         """Sets the id of this EipOperateProtectReqIpInfos.
 
-        弹性公网IP数据ID
+        弹性公网IP ID，可通过调用弹性IP列表查询接口获得，通过返回值中的data.records.id（.表示各对象之间层级的区分）获得。
 
         :param id: The id of this EipOperateProtectReqIpInfos.
         :type id: str
@@ -81,7 +81,7 @@ class EipOperateProtectReqIpInfos:
     def public_ip(self):
         """Gets the public_ip of this EipOperateProtectReqIpInfos.
 
-        弹性公网IP地址
+        弹性公网IP IPv4地址，可通过调用弹性IP列表查询接口获得，通过返回值中的data.records.public_ip（.表示各对象之间层级的区分）获得。
 
         :return: The public_ip of this EipOperateProtectReqIpInfos.
         :rtype: str
@@ -92,7 +92,7 @@ class EipOperateProtectReqIpInfos:
     def public_ip(self, public_ip):
         """Sets the public_ip of this EipOperateProtectReqIpInfos.
 
-        弹性公网IP地址
+        弹性公网IP IPv4地址，可通过调用弹性IP列表查询接口获得，通过返回值中的data.records.public_ip（.表示各对象之间层级的区分）获得。
 
         :param public_ip: The public_ip of this EipOperateProtectReqIpInfos.
         :type public_ip: str
@@ -103,7 +103,7 @@ class EipOperateProtectReqIpInfos:
     def public_ipv6(self):
         """Gets the public_ipv6 of this EipOperateProtectReqIpInfos.
 
-        弹性公网IP地址IPV6
+        弹性公网IP IPv6地址，可通过调用弹性IP列表查询接口获得，通过返回值中的data.records.public_ipv6（.表示各对象之间层级的区分）获得。
 
         :return: The public_ipv6 of this EipOperateProtectReqIpInfos.
         :rtype: str
@@ -114,7 +114,7 @@ class EipOperateProtectReqIpInfos:
     def public_ipv6(self, public_ipv6):
         """Sets the public_ipv6 of this EipOperateProtectReqIpInfos.
 
-        弹性公网IP地址IPV6
+        弹性公网IP IPv6地址，可通过调用弹性IP列表查询接口获得，通过返回值中的data.records.public_ipv6（.表示各对象之间层级的区分）获得。
 
         :param public_ipv6: The public_ipv6 of this EipOperateProtectReqIpInfos.
         :type public_ipv6: str
