@@ -97,6 +97,71 @@ class AadClient(Client):
 
         return http_info
 
+    def delete_domain(self, request):
+        """删除防护域名
+
+        删除防护域名
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteDomain
+        :type request: :class:`huaweicloudsdkaad.v2.DeleteDomainRequest`
+        :rtype: :class:`huaweicloudsdkaad.v2.DeleteDomainResponse`
+        """
+        http_info = self._delete_domain_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_domain_invoker(self, request):
+        http_info = self._delete_domain_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_domain_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/aad/domains",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDomainResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_d_do_s_attack_event(self, request):
         """查询DDoS攻击事件列表
 
@@ -1230,71 +1295,6 @@ class AadClient(Client):
             "resource_path": "/v2/aad/instance",
             "request_type": request.__class__.__name__,
             "response_type": "UpgradeInstanceSpecResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def delete_domain(self, request):
-        """删除防护域名
-
-        删除防护域名
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for DeleteDomain
-        :type request: :class:`huaweicloudsdkaad.v2.DeleteDomainRequest`
-        :rtype: :class:`huaweicloudsdkaad.v2.DeleteDomainResponse`
-        """
-        http_info = self._delete_domain_http_info(request)
-        return self._call_api(**http_info)
-
-    def delete_domain_invoker(self, request):
-        http_info = self._delete_domain_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _delete_domain_http_info(cls, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/v2/aad/domains",
-            "request_type": request.__class__.__name__,
-            "response_type": "DeleteDomainResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

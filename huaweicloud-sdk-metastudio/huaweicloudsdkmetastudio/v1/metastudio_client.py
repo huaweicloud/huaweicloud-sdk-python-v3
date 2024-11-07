@@ -6132,6 +6132,73 @@ class MetaStudioClient(Client):
 
         return http_info
 
+    def validate_robot(self, request):
+        """校验应用
+
+        该接口用于校验应用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ValidateRobot
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ValidateRobotRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ValidateRobotResponse`
+        """
+        http_info = self._validate_robot_http_info(request)
+        return self._call_api(**http_info)
+
+    def validate_robot_invoker(self, request):
+        http_info = self._validate_robot_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _validate_robot_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-human-chat/robot/validate",
+            "request_type": request.__class__.__name__,
+            "response_type": "ValidateRobotResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_smart_chat_room(self, request):
         """创建智能交互对话
 
@@ -8042,9 +8109,9 @@ class MetaStudioClient(Client):
         return http_info
 
     def count_tenant_resources(self, request):
-        """统计时间段内资源数量
+        """统计时间段内过期的资源数量
 
-        统计时间段内资源数量
+        统计指定时间段内即将过期的包周期与一次性资源数量。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -8113,7 +8180,9 @@ class MetaStudioClient(Client):
     def list_tenant_resources(self, request):
         """查看租户资源列表
 
-        查看租户资源列表
+        查看租户资源列表。
+        &gt; 按需套餐包用量本接口无法查询，需要调用CBC接口查询。[按需套餐包用量查询](https://cbc.huaweicloud.com/bm/support/api-apidt/CBCInterface_0001239.html)和[查询资源包信息](https://cbc.huaweicloud.com/bm/support/api-apidt/CBCInterface_0000511.html)。
+        &gt; 各种资源的计费方式请参考[计费说明](https://support.huaweicloud.com/productdesc-metastudio/metastudio_01_0006.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -8156,8 +8225,6 @@ class MetaStudioClient(Client):
             query_params.append(('business', local_var_params['business']))
         if 'resource_source' in local_var_params:
             query_params.append(('resource_source', local_var_params['resource_source']))
-        if 'resource_name' in local_var_params:
-            query_params.append(('resource_name', local_var_params['resource_name']))
         if 'resource_id' in local_var_params:
             query_params.append(('resource_id', local_var_params['resource_id']))
         if 'order_id' in local_var_params:
@@ -8200,7 +8267,9 @@ class MetaStudioClient(Client):
     def show_resource_usage(self, request):
         """查看租户资源用量信息
 
-        查看租户资源用量信息
+        查询租户一次性和包周期（包年/包月）资源用量信息。
+        &gt; 按需套餐包用量本接口无法查询，需要调用CBC接口查询。[按需套餐包用量查询](https://cbc.huaweicloud.com/bm/support/api-apidt/CBCInterface_0001239.html)和[查询资源包信息](https://cbc.huaweicloud.com/bm/support/api-apidt/CBCInterface_0000511.html)。
+        &gt; 各种资源的计费方式请参考[计费说明](https://support.huaweicloud.com/productdesc-metastudio/metastudio_01_0006.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

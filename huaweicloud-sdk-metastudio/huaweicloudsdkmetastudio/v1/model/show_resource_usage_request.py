@@ -31,9 +31,9 @@ class ShowResourceUsageRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource: 资源类型。
+        :param resource: 资源类型。可填多个，用\&quot;,\&quot;分隔。详见[资源类型](metastudio_02_0042.xml)。
         :type resource: str
-        :param business: 业务类型。
+        :param business: 业务类型。可填多个，用\&quot;,\&quot;分隔。 * VOICE_CLONE：声音制作 * SYNTHETICS_SOUND：声音合成 * ASSET_MANAGER：资产管理 * MODELING_2D：形象制作 * LIVE_2D：分身数字人视频直播 * VIDEO_2D：分身数字人视频制作 * CHAT_2D：分身数字人智能交互 * BUSINESS_CARD_2D：分身数字人名片 * PICTURE_2D：照片数字人视频 * MODELING_3D：3D照片建模 * VDS_3D：3D视觉驱动 * TTSA_3D：3D语音驱动 * FLEXUS_2D：FLEXUS版本资源
         :type business: str
         """
         
@@ -52,7 +52,7 @@ class ShowResourceUsageRequest:
     def resource(self):
         """Gets the resource of this ShowResourceUsageRequest.
 
-        资源类型。
+        资源类型。可填多个，用\",\"分隔。详见[资源类型](metastudio_02_0042.xml)。
 
         :return: The resource of this ShowResourceUsageRequest.
         :rtype: str
@@ -63,7 +63,7 @@ class ShowResourceUsageRequest:
     def resource(self, resource):
         """Sets the resource of this ShowResourceUsageRequest.
 
-        资源类型。
+        资源类型。可填多个，用\",\"分隔。详见[资源类型](metastudio_02_0042.xml)。
 
         :param resource: The resource of this ShowResourceUsageRequest.
         :type resource: str
@@ -74,7 +74,7 @@ class ShowResourceUsageRequest:
     def business(self):
         """Gets the business of this ShowResourceUsageRequest.
 
-        业务类型。
+        业务类型。可填多个，用\",\"分隔。 * VOICE_CLONE：声音制作 * SYNTHETICS_SOUND：声音合成 * ASSET_MANAGER：资产管理 * MODELING_2D：形象制作 * LIVE_2D：分身数字人视频直播 * VIDEO_2D：分身数字人视频制作 * CHAT_2D：分身数字人智能交互 * BUSINESS_CARD_2D：分身数字人名片 * PICTURE_2D：照片数字人视频 * MODELING_3D：3D照片建模 * VDS_3D：3D视觉驱动 * TTSA_3D：3D语音驱动 * FLEXUS_2D：FLEXUS版本资源
 
         :return: The business of this ShowResourceUsageRequest.
         :rtype: str
@@ -85,7 +85,7 @@ class ShowResourceUsageRequest:
     def business(self, business):
         """Sets the business of this ShowResourceUsageRequest.
 
-        业务类型。
+        业务类型。可填多个，用\",\"分隔。 * VOICE_CLONE：声音制作 * SYNTHETICS_SOUND：声音合成 * ASSET_MANAGER：资产管理 * MODELING_2D：形象制作 * LIVE_2D：分身数字人视频直播 * VIDEO_2D：分身数字人视频制作 * CHAT_2D：分身数字人智能交互 * BUSINESS_CARD_2D：分身数字人名片 * PICTURE_2D：照片数字人视频 * MODELING_3D：3D照片建模 * VDS_3D：3D视觉驱动 * TTSA_3D：3D语音驱动 * FLEXUS_2D：FLEXUS版本资源
 
         :param business: The business of this ShowResourceUsageRequest.
         :type business: str

@@ -21,7 +21,7 @@ class UserProcessAuditLog:
         'instance_name': 'str',
         'process_id': 'str',
         'execute_user_name': 'str',
-        'excute_time': 'str'
+        'execute_time': 'str'
     }
 
     attribute_map = {
@@ -29,10 +29,10 @@ class UserProcessAuditLog:
         'instance_name': 'instance_name',
         'process_id': 'process_id',
         'execute_user_name': 'execute_user_name',
-        'excute_time': 'excute_time'
+        'execute_time': 'execute_time'
     }
 
-    def __init__(self, instance_id=None, instance_name=None, process_id=None, execute_user_name=None, excute_time=None):
+    def __init__(self, instance_id=None, instance_name=None, process_id=None, execute_user_name=None, execute_time=None):
         """UserProcessAuditLog
 
         The model defined in huaweicloud sdk
@@ -45,8 +45,8 @@ class UserProcessAuditLog:
         :type process_id: str
         :param execute_user_name: 执行用户名
         :type execute_user_name: str
-        :param excute_time: 发生时间，UTC时间
-        :type excute_time: str
+        :param execute_time: 发生时间，UTC时间
+        :type execute_time: str
         """
         
         
@@ -55,7 +55,7 @@ class UserProcessAuditLog:
         self._instance_name = None
         self._process_id = None
         self._execute_user_name = None
-        self._excute_time = None
+        self._execute_time = None
         self.discriminator = None
 
         if instance_id is not None:
@@ -66,8 +66,8 @@ class UserProcessAuditLog:
             self.process_id = process_id
         if execute_user_name is not None:
             self.execute_user_name = execute_user_name
-        if excute_time is not None:
-            self.excute_time = excute_time
+        if execute_time is not None:
+            self.execute_time = execute_time
 
     @property
     def instance_id(self):
@@ -158,26 +158,26 @@ class UserProcessAuditLog:
         self._execute_user_name = execute_user_name
 
     @property
-    def excute_time(self):
-        """Gets the excute_time of this UserProcessAuditLog.
+    def execute_time(self):
+        """Gets the execute_time of this UserProcessAuditLog.
 
         发生时间，UTC时间
 
-        :return: The excute_time of this UserProcessAuditLog.
+        :return: The execute_time of this UserProcessAuditLog.
         :rtype: str
         """
-        return self._excute_time
+        return self._execute_time
 
-    @excute_time.setter
-    def excute_time(self, excute_time):
-        """Sets the excute_time of this UserProcessAuditLog.
+    @execute_time.setter
+    def execute_time(self, execute_time):
+        """Sets the execute_time of this UserProcessAuditLog.
 
         发生时间，UTC时间
 
-        :param excute_time: The excute_time of this UserProcessAuditLog.
-        :type excute_time: str
+        :param execute_time: The execute_time of this UserProcessAuditLog.
+        :type execute_time: str
         """
-        self._excute_time = excute_time
+        self._execute_time = execute_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

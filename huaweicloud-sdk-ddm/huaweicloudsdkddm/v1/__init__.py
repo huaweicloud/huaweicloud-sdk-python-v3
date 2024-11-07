@@ -8,6 +8,8 @@ from huaweicloudsdkddm.v1.ddm_async_client import DdmAsyncClient
 from huaweicloudsdkddm.v1.model.admin_user_info_req import AdminUserInfoReq
 from huaweicloudsdkddm.v1.model.api_version import ApiVersion
 from huaweicloudsdkddm.v1.model.available_zone import AvailableZone
+from huaweicloudsdkddm.v1.model.change_database_version_request import ChangeDatabaseVersionRequest
+from huaweicloudsdkddm.v1.model.change_database_version_response import ChangeDatabaseVersionResponse
 from huaweicloudsdkddm.v1.model.compute_flavor_groups_info import ComputeFlavorGroupsInfo
 from huaweicloudsdkddm.v1.model.compute_flavors import ComputeFlavors
 from huaweicloudsdkddm.v1.model.configuration_parameter_list import ConfigurationParameterList
@@ -31,6 +33,7 @@ from huaweicloudsdkddm.v1.model.create_users_req import CreateUsersReq
 from huaweicloudsdkddm.v1.model.create_users_request import CreateUsersRequest
 from huaweicloudsdkddm.v1.model.create_users_response import CreateUsersResponse
 from huaweicloudsdkddm.v1.model.database_instabces_param import DatabaseInstabcesParam
+from huaweicloudsdkddm.v1.model.database_version_request import DatabaseVersionRequest
 from huaweicloudsdkddm.v1.model.delete_database_request import DeleteDatabaseRequest
 from huaweicloudsdkddm.v1.model.delete_database_response import DeleteDatabaseResponse
 from huaweicloudsdkddm.v1.model.delete_ddm_database_request import DeleteDdmDatabaseRequest
@@ -70,6 +73,8 @@ from huaweicloudsdkddm.v1.model.list_api_version_request import ListApiVersionRe
 from huaweicloudsdkddm.v1.model.list_api_version_response import ListApiVersionResponse
 from huaweicloudsdkddm.v1.model.list_available_rds_list_request import ListAvailableRdsListRequest
 from huaweicloudsdkddm.v1.model.list_available_rds_list_response import ListAvailableRdsListResponse
+from huaweicloudsdkddm.v1.model.list_database_available_versions_request import ListDatabaseAvailableVersionsRequest
+from huaweicloudsdkddm.v1.model.list_database_available_versions_response import ListDatabaseAvailableVersionsResponse
 from huaweicloudsdkddm.v1.model.list_databases_request import ListDatabasesRequest
 from huaweicloudsdkddm.v1.model.list_databases_response import ListDatabasesResponse
 from huaweicloudsdkddm.v1.model.list_ddm_engines_request import ListDdmEnginesRequest
@@ -116,6 +121,8 @@ from huaweicloudsdkddm.v1.model.restar_instance_info import RestarInstanceInfo
 from huaweicloudsdkddm.v1.model.restart_instance_req import RestartInstanceReq
 from huaweicloudsdkddm.v1.model.restart_instance_request import RestartInstanceRequest
 from huaweicloudsdkddm.v1.model.restart_instance_response import RestartInstanceResponse
+from huaweicloudsdkddm.v1.model.roll_back_database_version_request import RollBackDatabaseVersionRequest
+from huaweicloudsdkddm.v1.model.roll_back_database_version_response import RollBackDatabaseVersionResponse
 from huaweicloudsdkddm.v1.model.show_database_request import ShowDatabaseRequest
 from huaweicloudsdkddm.v1.model.show_database_response import ShowDatabaseResponse
 from huaweicloudsdkddm.v1.model.show_instance_bean_response import ShowInstanceBeanResponse

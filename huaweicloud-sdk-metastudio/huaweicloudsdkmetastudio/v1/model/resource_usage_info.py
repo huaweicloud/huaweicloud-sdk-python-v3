@@ -45,7 +45,7 @@ class ResourceUsageInfo:
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: 资源类型。resource_spec_code/quota字段。
+        :param resource_type: 资源类型。详见[资源类型](metastudio_02_0042.xml)。
         :type resource_type: str
         :param business_type: 业务类型。 * VOICE_CLONE：声音制作 * SYNTHETICS_SOUND：声音合成 * ASSET_MANAGER：资产管理 * MODELING_2D：形象制作 * LIVE_2D：分身数字人视频直播 * VIDEO_2D：分身数字人视频制作 * CHAT_2D：分身数字人智能交互 * BUSINESS_CARD_2D：分身数字人名片 * PICTURE_2D：照片数字人视频 * MODELING_3D：3D照片建模 * VDS_3D：3D视觉驱动 * TTSA_3D：3D语音驱动 * FLEXUS_2D：FLEXUS版本资源
         :type business_type: str
@@ -101,7 +101,7 @@ class ResourceUsageInfo:
     def resource_type(self):
         """Gets the resource_type of this ResourceUsageInfo.
 
-        资源类型。resource_spec_code/quota字段。
+        资源类型。详见[资源类型](metastudio_02_0042.xml)。
 
         :return: The resource_type of this ResourceUsageInfo.
         :rtype: str
@@ -112,7 +112,7 @@ class ResourceUsageInfo:
     def resource_type(self, resource_type):
         """Sets the resource_type of this ResourceUsageInfo.
 
-        资源类型。resource_spec_code/quota字段。
+        资源类型。详见[资源类型](metastudio_02_0042.xml)。
 
         :param resource_type: The resource_type of this ResourceUsageInfo.
         :type resource_type: str

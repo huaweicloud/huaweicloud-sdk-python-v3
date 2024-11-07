@@ -12,6 +12,7 @@ class FindingType:
     EXTERNAL_ACCESS = "external_access"
     UNUSED_IAM_USER_ACCESS_KEY = "unused_iam_user_access_key"
     UNUSED_IAM_USER_PASSWORD = "unused_iam_user_password"
+    UNUSED_PERMISSION = "unused_permission"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

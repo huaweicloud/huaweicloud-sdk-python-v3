@@ -18,24 +18,20 @@ class ExpandDdmInstanceNodesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'instance_id': 'str',
         'job_id': 'str',
         'order_id': 'str'
     }
 
     attribute_map = {
-        'instance_id': 'instance_id',
         'job_id': 'job_id',
         'order_id': 'order_id'
     }
 
-    def __init__(self, instance_id=None, job_id=None, order_id=None):
+    def __init__(self, job_id=None, order_id=None):
         """ExpandDdmInstanceNodesResponse
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: DDM实例ID。
-        :type instance_id: str
         :param job_id: 任务ID，仅创建按需实例时会返回该参数。
         :type job_id: str
         :param order_id: 订单号，创建包年包月时返回该参数。
@@ -44,39 +40,14 @@ class ExpandDdmInstanceNodesResponse(SdkResponse):
         
         super(ExpandDdmInstanceNodesResponse, self).__init__()
 
-        self._instance_id = None
         self._job_id = None
         self._order_id = None
         self.discriminator = None
 
-        if instance_id is not None:
-            self.instance_id = instance_id
         if job_id is not None:
             self.job_id = job_id
         if order_id is not None:
             self.order_id = order_id
-
-    @property
-    def instance_id(self):
-        """Gets the instance_id of this ExpandDdmInstanceNodesResponse.
-
-        DDM实例ID。
-
-        :return: The instance_id of this ExpandDdmInstanceNodesResponse.
-        :rtype: str
-        """
-        return self._instance_id
-
-    @instance_id.setter
-    def instance_id(self, instance_id):
-        """Sets the instance_id of this ExpandDdmInstanceNodesResponse.
-
-        DDM实例ID。
-
-        :param instance_id: The instance_id of this ExpandDdmInstanceNodesResponse.
-        :type instance_id: str
-        """
-        self._instance_id = instance_id
 
     @property
     def job_id(self):

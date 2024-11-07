@@ -19,16 +19,18 @@ class FindingDetails:
     openapi_types = {
         'external_access_details': 'ExternalAccessDetails',
         'unused_iam_user_access_key_details': 'UnusedIamUserAccessKeyDetails',
-        'unused_iam_user_password_details': 'UnusedIamUserPasswordDetails'
+        'unused_iam_user_password_details': 'UnusedIamUserPasswordDetails',
+        'unused_permission_details': 'UnusedPermissionDetails'
     }
 
     attribute_map = {
         'external_access_details': 'external_access_details',
         'unused_iam_user_access_key_details': 'unused_iam_user_access_key_details',
-        'unused_iam_user_password_details': 'unused_iam_user_password_details'
+        'unused_iam_user_password_details': 'unused_iam_user_password_details',
+        'unused_permission_details': 'unused_permission_details'
     }
 
-    def __init__(self, external_access_details=None, unused_iam_user_access_key_details=None, unused_iam_user_password_details=None):
+    def __init__(self, external_access_details=None, unused_iam_user_access_key_details=None, unused_iam_user_password_details=None, unused_permission_details=None):
         """FindingDetails
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class FindingDetails:
         :type unused_iam_user_access_key_details: :class:`huaweicloudsdkiamaccessanalyzer.v1.UnusedIamUserAccessKeyDetails`
         :param unused_iam_user_password_details: 
         :type unused_iam_user_password_details: :class:`huaweicloudsdkiamaccessanalyzer.v1.UnusedIamUserPasswordDetails`
+        :param unused_permission_details: 
+        :type unused_permission_details: :class:`huaweicloudsdkiamaccessanalyzer.v1.UnusedPermissionDetails`
         """
         
         
@@ -46,6 +50,7 @@ class FindingDetails:
         self._external_access_details = None
         self._unused_iam_user_access_key_details = None
         self._unused_iam_user_password_details = None
+        self._unused_permission_details = None
         self.discriminator = None
 
         if external_access_details is not None:
@@ -54,6 +59,8 @@ class FindingDetails:
             self.unused_iam_user_access_key_details = unused_iam_user_access_key_details
         if unused_iam_user_password_details is not None:
             self.unused_iam_user_password_details = unused_iam_user_password_details
+        if unused_permission_details is not None:
+            self.unused_permission_details = unused_permission_details
 
     @property
     def external_access_details(self):
@@ -108,6 +115,24 @@ class FindingDetails:
         :type unused_iam_user_password_details: :class:`huaweicloudsdkiamaccessanalyzer.v1.UnusedIamUserPasswordDetails`
         """
         self._unused_iam_user_password_details = unused_iam_user_password_details
+
+    @property
+    def unused_permission_details(self):
+        """Gets the unused_permission_details of this FindingDetails.
+
+        :return: The unused_permission_details of this FindingDetails.
+        :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.UnusedPermissionDetails`
+        """
+        return self._unused_permission_details
+
+    @unused_permission_details.setter
+    def unused_permission_details(self, unused_permission_details):
+        """Sets the unused_permission_details of this FindingDetails.
+
+        :param unused_permission_details: The unused_permission_details of this FindingDetails.
+        :type unused_permission_details: :class:`huaweicloudsdkiamaccessanalyzer.v1.UnusedPermissionDetails`
+        """
+        self._unused_permission_details = unused_permission_details
 
     def to_dict(self):
         """Returns the model properties as a dict"""

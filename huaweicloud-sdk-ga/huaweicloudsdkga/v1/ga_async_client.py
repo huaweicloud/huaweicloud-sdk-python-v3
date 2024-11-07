@@ -2336,6 +2336,344 @@ class GaAsyncClient(Client):
 
         return http_info
 
+    def create_logtank_async(self, request):
+        """创建云日志
+
+        创建云日志。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateLogtank
+        :type request: :class:`huaweicloudsdkga.v1.CreateLogtankRequest`
+        :rtype: :class:`huaweicloudsdkga.v1.CreateLogtankResponse`
+        """
+        http_info = self._create_logtank_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_logtank_async_invoker(self, request):
+        http_info = self._create_logtank_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_logtank_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/logtanks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateLogtankResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_logtank_async(self, request):
+        """删除云日志
+
+        删除云日志。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteLogtank
+        :type request: :class:`huaweicloudsdkga.v1.DeleteLogtankRequest`
+        :rtype: :class:`huaweicloudsdkga.v1.DeleteLogtankResponse`
+        """
+        http_info = self._delete_logtank_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_logtank_async_invoker(self, request):
+        http_info = self._delete_logtank_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_logtank_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/logtanks/{logtank_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteLogtankResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'logtank_id' in local_var_params:
+            path_params['logtank_id'] = local_var_params['logtank_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_logtanks_async(self, request):
+        """查询云日志列表
+
+        查询云日志列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListLogtanks
+        :type request: :class:`huaweicloudsdkga.v1.ListLogtanksRequest`
+        :rtype: :class:`huaweicloudsdkga.v1.ListLogtanksResponse`
+        """
+        http_info = self._list_logtanks_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_logtanks_async_invoker(self, request):
+        http_info = self._list_logtanks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_logtanks_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/logtanks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLogtanksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'resource_ids' in local_var_params:
+            query_params.append(('resource_ids', local_var_params['resource_ids']))
+            collection_formats['resource_ids'] = 'multi'
+        if 'resource_type' in local_var_params:
+            query_params.append(('resource_type', local_var_params['resource_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_logtank_async(self, request):
+        """查询云日志详情
+
+        查询云日志详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowLogtank
+        :type request: :class:`huaweicloudsdkga.v1.ShowLogtankRequest`
+        :rtype: :class:`huaweicloudsdkga.v1.ShowLogtankResponse`
+        """
+        http_info = self._show_logtank_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_logtank_async_invoker(self, request):
+        http_info = self._show_logtank_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_logtank_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/logtanks/{logtank_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowLogtankResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'logtank_id' in local_var_params:
+            path_params['logtank_id'] = local_var_params['logtank_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_logtank_async(self, request):
+        """更新云日志
+
+        更新云日志。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateLogtank
+        :type request: :class:`huaweicloudsdkga.v1.UpdateLogtankRequest`
+        :rtype: :class:`huaweicloudsdkga.v1.UpdateLogtankResponse`
+        """
+        http_info = self._update_logtank_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_logtank_async_invoker(self, request):
+        http_info = self._update_logtank_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_logtank_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/logtanks/{logtank_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateLogtankResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'logtank_id' in local_var_params:
+            path_params['logtank_id'] = local_var_params['logtank_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_regions_async(self, request):
         """查询区域列表
 

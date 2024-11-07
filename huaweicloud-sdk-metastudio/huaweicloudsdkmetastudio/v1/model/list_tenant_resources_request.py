@@ -22,7 +22,6 @@ class ListTenantResourcesRequest:
         'resource': 'str',
         'business': 'str',
         'resource_source': 'str',
-        'resource_name': 'str',
         'resource_id': 'str',
         'order_id': 'str',
         'charging_mode': 'str',
@@ -37,7 +36,6 @@ class ListTenantResourcesRequest:
         'resource': 'resource',
         'business': 'business',
         'resource_source': 'resource_source',
-        'resource_name': 'resource_name',
         'resource_id': 'resource_id',
         'order_id': 'order_id',
         'charging_mode': 'charging_mode',
@@ -46,7 +44,7 @@ class ListTenantResourcesRequest:
         'sub_resource': 'sub_resource'
     }
 
-    def __init__(self, limit=None, offset=None, resource=None, business=None, resource_source=None, resource_name=None, resource_id=None, order_id=None, charging_mode=None, resource_expire_start_time=None, resource_expire_end_time=None, sub_resource=None):
+    def __init__(self, limit=None, offset=None, resource=None, business=None, resource_source=None, resource_id=None, order_id=None, charging_mode=None, resource_expire_start_time=None, resource_expire_end_time=None, sub_resource=None):
         """ListTenantResourcesRequest
 
         The model defined in huaweicloud sdk
@@ -55,25 +53,23 @@ class ListTenantResourcesRequest:
         :type limit: int
         :param offset: 偏移量，表示从此偏移量开始查询。
         :type offset: int
-        :param resource: 资源类型。
+        :param resource: 资源类型。可填多个，用\&quot;,\&quot;分隔。详见[资源类型](metastudio_02_0042.xml)。
         :type resource: str
-        :param business: 业务类型。
+        :param business: 业务类型。可填多个，用\&quot;,\&quot;分隔。 * VOICE_CLONE：声音制作 * SYNTHETICS_SOUND：声音合成 * ASSET_MANAGER：资产管理 * MODELING_2D：形象制作 * LIVE_2D：分身数字人视频直播 * VIDEO_2D：分身数字人视频制作 * CHAT_2D：分身数字人智能交互 * BUSINESS_CARD_2D：分身数字人名片 * PICTURE_2D：照片数字人视频 * MODELING_3D：3D照片建模 * VDS_3D：3D视觉驱动 * TTSA_3D：3D语音驱动 * FLEXUS_2D：FLEXUS版本资源
         :type business: str
-        :param resource_source: 资源来源。
+        :param resource_source: 资源来源,可填多个 例如:PURCHASED,ADMIN_ALLOCATED,将返回商用资源与管理员分配资源。 * PURCHASED: 用户购买的资源 * SP_ALLOCATED: SP分配的资源 * ADMIN_ALLOCATED: 系统管理员分配的资源
         :type resource_source: str
-        :param resource_name: 资源名称。
-        :type resource_name: str
         :param resource_id: 资源id。
         :type resource_id: str
         :param order_id: 订单id。
         :type order_id: str
-        :param charging_mode: 计费模式。
+        :param charging_mode: 计费类型。  * PERIODIC: 包周期  * ONE_TIME：一次性  * ON_DEMAND：按需 计费模式。
         :type charging_mode: str
         :param resource_expire_start_time: 资源过期时间段 开始时间。格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;
         :type resource_expire_start_time: str
         :param resource_expire_end_time: 资源过期时间段 结束时间。格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;
         :type resource_expire_end_time: str
-        :param sub_resource: 子资源类型。
+        :param sub_resource: 子资源类型。当前只有flexus套餐包存在该字段 * voice_clone_flexus: 语音克隆Flexus版 * modeling_count_2d_model_flexus: 分身数字人形象制作Flexus版 * video_time_flexus_2d_model: 分身数字人Flexus版本视频制作
         :type sub_resource: str
         """
         
@@ -84,7 +80,6 @@ class ListTenantResourcesRequest:
         self._resource = None
         self._business = None
         self._resource_source = None
-        self._resource_name = None
         self._resource_id = None
         self._order_id = None
         self._charging_mode = None
@@ -102,8 +97,6 @@ class ListTenantResourcesRequest:
         if business is not None:
             self.business = business
         self.resource_source = resource_source
-        if resource_name is not None:
-            self.resource_name = resource_name
         if resource_id is not None:
             self.resource_id = resource_id
         if order_id is not None:
@@ -165,7 +158,7 @@ class ListTenantResourcesRequest:
     def resource(self):
         """Gets the resource of this ListTenantResourcesRequest.
 
-        资源类型。
+        资源类型。可填多个，用\",\"分隔。详见[资源类型](metastudio_02_0042.xml)。
 
         :return: The resource of this ListTenantResourcesRequest.
         :rtype: str
@@ -176,7 +169,7 @@ class ListTenantResourcesRequest:
     def resource(self, resource):
         """Sets the resource of this ListTenantResourcesRequest.
 
-        资源类型。
+        资源类型。可填多个，用\",\"分隔。详见[资源类型](metastudio_02_0042.xml)。
 
         :param resource: The resource of this ListTenantResourcesRequest.
         :type resource: str
@@ -187,7 +180,7 @@ class ListTenantResourcesRequest:
     def business(self):
         """Gets the business of this ListTenantResourcesRequest.
 
-        业务类型。
+        业务类型。可填多个，用\",\"分隔。 * VOICE_CLONE：声音制作 * SYNTHETICS_SOUND：声音合成 * ASSET_MANAGER：资产管理 * MODELING_2D：形象制作 * LIVE_2D：分身数字人视频直播 * VIDEO_2D：分身数字人视频制作 * CHAT_2D：分身数字人智能交互 * BUSINESS_CARD_2D：分身数字人名片 * PICTURE_2D：照片数字人视频 * MODELING_3D：3D照片建模 * VDS_3D：3D视觉驱动 * TTSA_3D：3D语音驱动 * FLEXUS_2D：FLEXUS版本资源
 
         :return: The business of this ListTenantResourcesRequest.
         :rtype: str
@@ -198,7 +191,7 @@ class ListTenantResourcesRequest:
     def business(self, business):
         """Sets the business of this ListTenantResourcesRequest.
 
-        业务类型。
+        业务类型。可填多个，用\",\"分隔。 * VOICE_CLONE：声音制作 * SYNTHETICS_SOUND：声音合成 * ASSET_MANAGER：资产管理 * MODELING_2D：形象制作 * LIVE_2D：分身数字人视频直播 * VIDEO_2D：分身数字人视频制作 * CHAT_2D：分身数字人智能交互 * BUSINESS_CARD_2D：分身数字人名片 * PICTURE_2D：照片数字人视频 * MODELING_3D：3D照片建模 * VDS_3D：3D视觉驱动 * TTSA_3D：3D语音驱动 * FLEXUS_2D：FLEXUS版本资源
 
         :param business: The business of this ListTenantResourcesRequest.
         :type business: str
@@ -209,7 +202,7 @@ class ListTenantResourcesRequest:
     def resource_source(self):
         """Gets the resource_source of this ListTenantResourcesRequest.
 
-        资源来源。
+        资源来源,可填多个 例如:PURCHASED,ADMIN_ALLOCATED,将返回商用资源与管理员分配资源。 * PURCHASED: 用户购买的资源 * SP_ALLOCATED: SP分配的资源 * ADMIN_ALLOCATED: 系统管理员分配的资源
 
         :return: The resource_source of this ListTenantResourcesRequest.
         :rtype: str
@@ -220,34 +213,12 @@ class ListTenantResourcesRequest:
     def resource_source(self, resource_source):
         """Sets the resource_source of this ListTenantResourcesRequest.
 
-        资源来源。
+        资源来源,可填多个 例如:PURCHASED,ADMIN_ALLOCATED,将返回商用资源与管理员分配资源。 * PURCHASED: 用户购买的资源 * SP_ALLOCATED: SP分配的资源 * ADMIN_ALLOCATED: 系统管理员分配的资源
 
         :param resource_source: The resource_source of this ListTenantResourcesRequest.
         :type resource_source: str
         """
         self._resource_source = resource_source
-
-    @property
-    def resource_name(self):
-        """Gets the resource_name of this ListTenantResourcesRequest.
-
-        资源名称。
-
-        :return: The resource_name of this ListTenantResourcesRequest.
-        :rtype: str
-        """
-        return self._resource_name
-
-    @resource_name.setter
-    def resource_name(self, resource_name):
-        """Sets the resource_name of this ListTenantResourcesRequest.
-
-        资源名称。
-
-        :param resource_name: The resource_name of this ListTenantResourcesRequest.
-        :type resource_name: str
-        """
-        self._resource_name = resource_name
 
     @property
     def resource_id(self):
@@ -297,7 +268,7 @@ class ListTenantResourcesRequest:
     def charging_mode(self):
         """Gets the charging_mode of this ListTenantResourcesRequest.
 
-        计费模式。
+        计费类型。  * PERIODIC: 包周期  * ONE_TIME：一次性  * ON_DEMAND：按需 计费模式。
 
         :return: The charging_mode of this ListTenantResourcesRequest.
         :rtype: str
@@ -308,7 +279,7 @@ class ListTenantResourcesRequest:
     def charging_mode(self, charging_mode):
         """Sets the charging_mode of this ListTenantResourcesRequest.
 
-        计费模式。
+        计费类型。  * PERIODIC: 包周期  * ONE_TIME：一次性  * ON_DEMAND：按需 计费模式。
 
         :param charging_mode: The charging_mode of this ListTenantResourcesRequest.
         :type charging_mode: str
@@ -363,7 +334,7 @@ class ListTenantResourcesRequest:
     def sub_resource(self):
         """Gets the sub_resource of this ListTenantResourcesRequest.
 
-        子资源类型。
+        子资源类型。当前只有flexus套餐包存在该字段 * voice_clone_flexus: 语音克隆Flexus版 * modeling_count_2d_model_flexus: 分身数字人形象制作Flexus版 * video_time_flexus_2d_model: 分身数字人Flexus版本视频制作
 
         :return: The sub_resource of this ListTenantResourcesRequest.
         :rtype: str
@@ -374,7 +345,7 @@ class ListTenantResourcesRequest:
     def sub_resource(self, sub_resource):
         """Sets the sub_resource of this ListTenantResourcesRequest.
 
-        子资源类型。
+        子资源类型。当前只有flexus套餐包存在该字段 * voice_clone_flexus: 语音克隆Flexus版 * modeling_count_2d_model_flexus: 分身数字人形象制作Flexus版 * video_time_flexus_2d_model: 分身数字人Flexus版本视频制作
 
         :param sub_resource: The sub_resource of this ListTenantResourcesRequest.
         :type sub_resource: str

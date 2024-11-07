@@ -19,6 +19,8 @@ class VideoParameters:
     openapi_types = {
         'output_policy': 'str',
         'codec': 'int',
+        'crf': 'object',
+        'max_bitrate': 'int',
         'bitrate': 'int',
         'profile': 'int',
         'level': 'int',
@@ -34,6 +36,8 @@ class VideoParameters:
     attribute_map = {
         'output_policy': 'output_policy',
         'codec': 'codec',
+        'crf': 'crf',
+        'max_bitrate': 'max_bitrate',
         'bitrate': 'bitrate',
         'profile': 'profile',
         'level': 'level',
@@ -46,7 +50,7 @@ class VideoParameters:
         'black_cut': 'black_cut'
     }
 
-    def __init__(self, output_policy=None, codec=None, bitrate=None, profile=None, level=None, preset=None, max_iframes_interval=None, bframes_count=None, frame_rate=None, width=None, height=None, black_cut=None):
+    def __init__(self, output_policy=None, codec=None, crf=None, max_bitrate=None, bitrate=None, profile=None, level=None, preset=None, max_iframes_interval=None, bframes_count=None, frame_rate=None, width=None, height=None, black_cut=None):
         """VideoParameters
 
         The model defined in huaweicloud sdk
@@ -55,6 +59,10 @@ class VideoParameters:
         :type output_policy: str
         :param codec: 视频编码格式。  取值如下： - 1：VIDEO_CODEC_H264 - 2：VIDEO_CODEC_H265 
         :type codec: int
+        :param crf: 视频恒定码率控制因子。  取值范围为[0, 51] 
+        :type crf: object
+        :param max_bitrate: 输出最大码率  单位：kbit/s  带crf时使用，参考原片的平均码率进行设置（一般为1.5倍） 
+        :type max_bitrate: int
         :param bitrate: 输出平均码率。  取值范围：0或[40,30000]之间的整数。  单位：kbit/s  若设置为0，则输出平均码率为自适应值。 
         :type bitrate: int
         :param profile: 编码档次  取值如下： - 1：VIDEO_PROFILE_H264_BASE - 2：VIDEO_PROFILE_H264_MAIN - 3：VIDEO_PROFILE_H264_HIGH - 4：VIDEO_PROFILE_H265_MAIN 
@@ -81,6 +89,8 @@ class VideoParameters:
 
         self._output_policy = None
         self._codec = None
+        self._crf = None
+        self._max_bitrate = None
         self._bitrate = None
         self._profile = None
         self._level = None
@@ -97,6 +107,10 @@ class VideoParameters:
             self.output_policy = output_policy
         if codec is not None:
             self.codec = codec
+        if crf is not None:
+            self.crf = crf
+        if max_bitrate is not None:
+            self.max_bitrate = max_bitrate
         if bitrate is not None:
             self.bitrate = bitrate
         if profile is not None:
@@ -161,6 +175,50 @@ class VideoParameters:
         :type codec: int
         """
         self._codec = codec
+
+    @property
+    def crf(self):
+        """Gets the crf of this VideoParameters.
+
+        视频恒定码率控制因子。  取值范围为[0, 51] 
+
+        :return: The crf of this VideoParameters.
+        :rtype: object
+        """
+        return self._crf
+
+    @crf.setter
+    def crf(self, crf):
+        """Sets the crf of this VideoParameters.
+
+        视频恒定码率控制因子。  取值范围为[0, 51] 
+
+        :param crf: The crf of this VideoParameters.
+        :type crf: object
+        """
+        self._crf = crf
+
+    @property
+    def max_bitrate(self):
+        """Gets the max_bitrate of this VideoParameters.
+
+        输出最大码率  单位：kbit/s  带crf时使用，参考原片的平均码率进行设置（一般为1.5倍） 
+
+        :return: The max_bitrate of this VideoParameters.
+        :rtype: int
+        """
+        return self._max_bitrate
+
+    @max_bitrate.setter
+    def max_bitrate(self, max_bitrate):
+        """Sets the max_bitrate of this VideoParameters.
+
+        输出最大码率  单位：kbit/s  带crf时使用，参考原片的平均码率进行设置（一般为1.5倍） 
+
+        :param max_bitrate: The max_bitrate of this VideoParameters.
+        :type max_bitrate: int
+        """
+        self._max_bitrate = max_bitrate
 
     @property
     def bitrate(self):

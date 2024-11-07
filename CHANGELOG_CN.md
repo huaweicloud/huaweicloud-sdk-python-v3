@@ -1,3 +1,210 @@
+# 3.1.121 2024-11-07
+
+### HuaweiCloud SDK AAD
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpgradeInstanceSpec**
+    - 请求参数变更
+      - `+ upgrade_data.elastic_service_bandwidth_type`
+      - `+ upgrade_data.elastic_service_bandwidth`
+
+### HuaweiCloud SDK CC
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `CreateP2PSiteNetwork`
+    - `ListSiteNetworks`
+    - `ShowSiteNetwork`
+    - `UpdateSiteNetwork`
+    - `DeleteSiteNetwork`
+    - `DisassociateSiteNetworkBandwidth`
+    - `AssociateSiteNetworkBandwidth`
+    - `UpdateSiteNetworkBandwidthSize`
+    - `UpdateSiteNetworkBandwidth`
+    - `ListSiteNetworkQuotas`
+    - `ListSiteNetworkCapabilities`
+    - `ListBandwidthPackageSites`
+    - `ListBandwidthPackageLevels`
+    - `ListBandwidthPackageLines`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DDM
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`ChangeDatabaseVersion`、`ListDatabaseAvailableVersions`、`RollBackDatabaseVersion`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateInstance**
+    - 响应参数变更
+      - `+ job_id`
+  - **ShowProcessesAuditLog**
+    - 响应参数变更
+      - `+ process_audit_logs.execute_time`
+      - `- process_audit_logs.excute_time`
+  - **ExpandDdmInstanceNodes**
+    - 响应参数变更
+      - `- instance_id`
+
+### HuaweiCloud SDK GA
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `ListLogtanks`
+    - `CreateLogtank`
+    - `ShowLogtank`
+    - `UpdateLogtank`
+    - `DeleteLogtank`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`BatchUpgradeDatabaseVersion`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK IAMAccessAnalyzer
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListFindings**
+    - 响应参数变更
+      - `+ findings.finding_type: enum value [unused_permission]`
+  - **ShowFinding**
+    - 响应参数变更
+      - `+ finding.finding_type: enum value [unused_permission]`
+      - `+ finding.finding_details.unused_permission_details`
+  - **ValidatePolicy**
+    - 请求参数变更
+      - `- validate_policy_resource_type: enum value [obs:bucket]`
+
+### HuaweiCloud SDK IoTDA
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 支持以下接口：
+    - `ListAsyncHistoryCommands`
+    - `CountAsyncHistoryCommands`
+    - `ListFunctions`
+    - `AddFunctions`
+    - `DeleteFunctions`
+    - `ListAsyncCommands`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK MetaStudio
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`ValidateRobot`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListTenantResources**
+    - 请求参数变更
+      - `- resource_name`
+  - **ShowAsset**
+    - 响应参数变更
+      - `+ system_properties.key: enum value [MEITUAN_MATERIAL_APPROVED]`
+  - **UpdateDigitalAsset**
+    - 请求参数变更
+      - `+ system_properties.key: enum value [MEITUAN_MATERIAL_APPROVED]`
+    - 响应参数变更
+      - `+ system_properties.key: enum value [MEITUAN_MATERIAL_APPROVED]`
+  - **CreateDigitalAsset**
+    - 请求参数变更
+      - `+ system_properties.key: enum value [MEITUAN_MATERIAL_APPROVED]`
+  - **ListAssets**
+    - 响应参数变更
+      - `+ assets.system_properties.key: enum value [MEITUAN_MATERIAL_APPROVED]`
+
+### HuaweiCloud SDK MPC
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateExtractTask**
+    - 请求参数变更
+      - `+ encryption`
+  - **CreateTranscodingTask**
+    - 请求参数变更
+      - `+ av_parameters.video.crf`
+      - `+ av_parameters.video.max_bitrate`
+  - **ListTranscodingTask**
+    - 响应参数变更
+      - `+ task_array.av_parameters.video.crf`
+      - `+ task_array.av_parameters.video.max_bitrate`
+  - **CreateEditingJob**
+    - 请求参数变更
+      - `+ concats.av_parameters.video.crf`
+      - `+ concats.av_parameters.video.max_bitrate`
+  - **ListEditingJob**
+    - 响应参数变更
+      - `+ jobs.edit_task_req.concats.av_parameters.video.crf`
+      - `+ jobs.edit_task_req.concats.av_parameters.video.max_bitrate`
+
+### HuaweiCloud SDK VPCEP
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListEndpointInfoDetails**
+    - 响应参数变更
+      - `* error: object<QueryError> -> list<QueryError>`
+
+### HuaweiCloud SDK WAF
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListHost**
+    - 响应参数变更
+      - `+ items.server`
+
 # 3.1.120 2024-10-31
 
 ### HuaweiCloud SDK APIG

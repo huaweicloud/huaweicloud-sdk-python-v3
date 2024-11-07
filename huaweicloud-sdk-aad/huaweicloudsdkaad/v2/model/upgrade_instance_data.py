@@ -21,7 +21,9 @@ class UpgradeInstanceData:
         'elastic_bandwidth': 'str',
         'service_bandwidth': 'int',
         'port_num': 'int',
-        'bind_domain_num': 'int'
+        'bind_domain_num': 'int',
+        'elastic_service_bandwidth_type': 'int',
+        'elastic_service_bandwidth': 'int'
     }
 
     attribute_map = {
@@ -29,10 +31,12 @@ class UpgradeInstanceData:
         'elastic_bandwidth': 'elastic_bandwidth',
         'service_bandwidth': 'service_bandwidth',
         'port_num': 'port_num',
-        'bind_domain_num': 'bind_domain_num'
+        'bind_domain_num': 'bind_domain_num',
+        'elastic_service_bandwidth_type': 'elastic_service_bandwidth_type',
+        'elastic_service_bandwidth': 'elastic_service_bandwidth'
     }
 
-    def __init__(self, basic_bandwidth=None, elastic_bandwidth=None, service_bandwidth=None, port_num=None, bind_domain_num=None):
+    def __init__(self, basic_bandwidth=None, elastic_bandwidth=None, service_bandwidth=None, port_num=None, bind_domain_num=None, elastic_service_bandwidth_type=None, elastic_service_bandwidth=None):
         """UpgradeInstanceData
 
         The model defined in huaweicloud sdk
@@ -47,6 +51,10 @@ class UpgradeInstanceData:
         :type port_num: int
         :param bind_domain_num: 域名数
         :type bind_domain_num: int
+        :param elastic_service_bandwidth_type: 弹性业务带宽,0-关闭，3-月95
+        :type elastic_service_bandwidth_type: int
+        :param elastic_service_bandwidth: 弹性业务带宽增加值
+        :type elastic_service_bandwidth: int
         """
         
         
@@ -56,6 +64,8 @@ class UpgradeInstanceData:
         self._service_bandwidth = None
         self._port_num = None
         self._bind_domain_num = None
+        self._elastic_service_bandwidth_type = None
+        self._elastic_service_bandwidth = None
         self.discriminator = None
 
         if basic_bandwidth is not None:
@@ -68,6 +78,10 @@ class UpgradeInstanceData:
             self.port_num = port_num
         if bind_domain_num is not None:
             self.bind_domain_num = bind_domain_num
+        if elastic_service_bandwidth_type is not None:
+            self.elastic_service_bandwidth_type = elastic_service_bandwidth_type
+        if elastic_service_bandwidth is not None:
+            self.elastic_service_bandwidth = elastic_service_bandwidth
 
     @property
     def basic_bandwidth(self):
@@ -178,6 +192,50 @@ class UpgradeInstanceData:
         :type bind_domain_num: int
         """
         self._bind_domain_num = bind_domain_num
+
+    @property
+    def elastic_service_bandwidth_type(self):
+        """Gets the elastic_service_bandwidth_type of this UpgradeInstanceData.
+
+        弹性业务带宽,0-关闭，3-月95
+
+        :return: The elastic_service_bandwidth_type of this UpgradeInstanceData.
+        :rtype: int
+        """
+        return self._elastic_service_bandwidth_type
+
+    @elastic_service_bandwidth_type.setter
+    def elastic_service_bandwidth_type(self, elastic_service_bandwidth_type):
+        """Sets the elastic_service_bandwidth_type of this UpgradeInstanceData.
+
+        弹性业务带宽,0-关闭，3-月95
+
+        :param elastic_service_bandwidth_type: The elastic_service_bandwidth_type of this UpgradeInstanceData.
+        :type elastic_service_bandwidth_type: int
+        """
+        self._elastic_service_bandwidth_type = elastic_service_bandwidth_type
+
+    @property
+    def elastic_service_bandwidth(self):
+        """Gets the elastic_service_bandwidth of this UpgradeInstanceData.
+
+        弹性业务带宽增加值
+
+        :return: The elastic_service_bandwidth of this UpgradeInstanceData.
+        :rtype: int
+        """
+        return self._elastic_service_bandwidth
+
+    @elastic_service_bandwidth.setter
+    def elastic_service_bandwidth(self, elastic_service_bandwidth):
+        """Sets the elastic_service_bandwidth of this UpgradeInstanceData.
+
+        弹性业务带宽增加值
+
+        :param elastic_service_bandwidth: The elastic_service_bandwidth of this UpgradeInstanceData.
+        :type elastic_service_bandwidth: int
+        """
+        self._elastic_service_bandwidth = elastic_service_bandwidth
 
     def to_dict(self):
         """Returns the model properties as a dict"""

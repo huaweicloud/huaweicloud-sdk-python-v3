@@ -36,7 +36,7 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
         'updated_at': 'datetime',
         'project_id': 'str',
         'tags': 'list[TagList]',
-        'error': 'QueryError',
+        'error': 'list[QueryError]',
         'whitelist': 'list[str]',
         'enable_whitelist': 'bool',
         'routetables': 'list[str]',
@@ -121,7 +121,7 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
         :param tags: 标签列表，没有标签默认为空数组。
         :type tags: list[:class:`huaweicloudsdkvpcep.v1.TagList`]
         :param error: 
-        :type error: :class:`huaweicloudsdkvpcep.v1.QueryError`
+        :type error: list[:class:`huaweicloudsdkvpcep.v1.QueryError`]
         :param whitelist: 控制访问终端节点的白名单。 若未创建，则返回空列表。 创建连接Interface类型终端节点服务的终端节点时，显示此参数。
         :type whitelist: list[str]
         :param enable_whitelist: 是否开启网络ACL隔离。  - true：开启网络ACL隔离  - false：不开启网络ACL隔离 若未指定，则返回false。 创建连接Interface类型终端节点服务的终端节点时，显示此参数。
@@ -632,7 +632,7 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
         """Gets the error of this ListEndpointInfoDetailsResponse.
 
         :return: The error of this ListEndpointInfoDetailsResponse.
-        :rtype: :class:`huaweicloudsdkvpcep.v1.QueryError`
+        :rtype: list[:class:`huaweicloudsdkvpcep.v1.QueryError`]
         """
         return self._error
 
@@ -641,7 +641,7 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
         """Sets the error of this ListEndpointInfoDetailsResponse.
 
         :param error: The error of this ListEndpointInfoDetailsResponse.
-        :type error: :class:`huaweicloudsdkvpcep.v1.QueryError`
+        :type error: list[:class:`huaweicloudsdkvpcep.v1.QueryError`]
         """
         self._error = error
 

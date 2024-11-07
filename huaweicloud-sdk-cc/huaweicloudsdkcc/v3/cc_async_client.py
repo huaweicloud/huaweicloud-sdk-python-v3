@@ -6071,6 +6071,974 @@ class CcAsyncClient(Client):
 
         return http_info
 
+    def associate_site_network_bandwidth_async(self, request):
+        """关联分支连接带宽
+
+        关联分支连接带宽。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AssociateSiteNetworkBandwidth
+        :type request: :class:`huaweicloudsdkcc.v3.AssociateSiteNetworkBandwidthRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.AssociateSiteNetworkBandwidthResponse`
+        """
+        http_info = self._associate_site_network_bandwidth_http_info(request)
+        return self._call_api(**http_info)
+
+    def associate_site_network_bandwidth_async_invoker(self, request):
+        http_info = self._associate_site_network_bandwidth_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _associate_site_network_bandwidth_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{domain_id}/dcaas/site-network/{site_network_id}/connections/{site_connection_id}/associate",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateSiteNetworkBandwidthResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'site_network_id' in local_var_params:
+            path_params['site_network_id'] = local_var_params['site_network_id']
+        if 'site_connection_id' in local_var_params:
+            path_params['site_connection_id'] = local_var_params['site_connection_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def disassociate_site_network_bandwidth_async(self, request):
+        """解关联分支连接带宽
+
+        解关联分支连接带宽。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DisassociateSiteNetworkBandwidth
+        :type request: :class:`huaweicloudsdkcc.v3.DisassociateSiteNetworkBandwidthRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.DisassociateSiteNetworkBandwidthResponse`
+        """
+        http_info = self._disassociate_site_network_bandwidth_http_info(request)
+        return self._call_api(**http_info)
+
+    def disassociate_site_network_bandwidth_async_invoker(self, request):
+        http_info = self._disassociate_site_network_bandwidth_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _disassociate_site_network_bandwidth_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{domain_id}/dcaas/site-network/{site_network_id}/connections/{site_connection_id}/disassociate",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisassociateSiteNetworkBandwidthResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'site_network_id' in local_var_params:
+            path_params['site_network_id'] = local_var_params['site_network_id']
+        if 'site_connection_id' in local_var_params:
+            path_params['site_connection_id'] = local_var_params['site_connection_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_site_network_bandwidth_async(self, request):
+        """更改分支连接带宽包
+
+        更改分支连接带宽包。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateSiteNetworkBandwidth
+        :type request: :class:`huaweicloudsdkcc.v3.UpdateSiteNetworkBandwidthRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.UpdateSiteNetworkBandwidthResponse`
+        """
+        http_info = self._update_site_network_bandwidth_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_site_network_bandwidth_async_invoker(self, request):
+        http_info = self._update_site_network_bandwidth_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_site_network_bandwidth_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{domain_id}/dcaas/site-network/{site_network_id}/connections/{site_connection_id}/update-bandwidth",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSiteNetworkBandwidthResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'site_network_id' in local_var_params:
+            path_params['site_network_id'] = local_var_params['site_network_id']
+        if 'site_connection_id' in local_var_params:
+            path_params['site_connection_id'] = local_var_params['site_connection_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_site_network_bandwidth_size_async(self, request):
+        """更改分支连接带宽大小
+
+        更改分支连接带宽大小。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateSiteNetworkBandwidthSize
+        :type request: :class:`huaweicloudsdkcc.v3.UpdateSiteNetworkBandwidthSizeRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.UpdateSiteNetworkBandwidthSizeResponse`
+        """
+        http_info = self._update_site_network_bandwidth_size_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_site_network_bandwidth_size_async_invoker(self, request):
+        http_info = self._update_site_network_bandwidth_size_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_site_network_bandwidth_size_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{domain_id}/dcaas/site-network/{site_network_id}/connections/{site_connection_id}/update-bandwidth-size",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSiteNetworkBandwidthSizeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'site_network_id' in local_var_params:
+            path_params['site_network_id'] = local_var_params['site_network_id']
+        if 'site_connection_id' in local_var_params:
+            path_params['site_connection_id'] = local_var_params['site_connection_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_p2_p_site_network_async(self, request):
+        """创建P2P类型的分支网络
+
+        创建P2P类型的分支网络。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateP2PSiteNetwork
+        :type request: :class:`huaweicloudsdkcc.v3.CreateP2PSiteNetworkRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.CreateP2PSiteNetworkResponse`
+        """
+        http_info = self._create_p2_p_site_network_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_p2_p_site_network_async_invoker(self, request):
+        http_info = self._create_p2_p_site_network_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_p2_p_site_network_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{domain_id}/dcaas/p2p-site-networks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateP2PSiteNetworkResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_site_network_async(self, request):
+        """删除分支网络
+
+        删除分支网络。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteSiteNetwork
+        :type request: :class:`huaweicloudsdkcc.v3.DeleteSiteNetworkRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.DeleteSiteNetworkResponse`
+        """
+        http_info = self._delete_site_network_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_site_network_async_invoker(self, request):
+        http_info = self._delete_site_network_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_site_network_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{domain_id}/dcaas/site-networks/{site_network_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSiteNetworkResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'site_network_id' in local_var_params:
+            path_params['site_network_id'] = local_var_params['site_network_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_site_networks_async(self, request):
+        """查询分支网络列表
+
+        查询分支网络列表。
+        分页查询使用的参数为marker、limit。limit默认值为0，没有指定marker时返回第一条数据。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSiteNetworks
+        :type request: :class:`huaweicloudsdkcc.v3.ListSiteNetworksRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.ListSiteNetworksResponse`
+        """
+        http_info = self._list_site_networks_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_site_networks_async_invoker(self, request):
+        http_info = self._list_site_networks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_site_networks_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/dcaas/site-networks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSiteNetworksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+            collection_formats['id'] = 'csv'
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+            collection_formats['name'] = 'csv'
+        if 'state' in local_var_params:
+            query_params.append(('state', local_var_params['state']))
+            collection_formats['state'] = 'csv'
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+            collection_formats['enterprise_project_id'] = 'csv'
+        if 'global_dc_gateway_id' in local_var_params:
+            query_params.append(('global_dc_gateway_id', local_var_params['global_dc_gateway_id']))
+            collection_formats['global_dc_gateway_id'] = 'multi'
+        if 'global_connection_bandwidth_id' in local_var_params:
+            query_params.append(('global_connection_bandwidth_id', local_var_params['global_connection_bandwidth_id']))
+            collection_formats['global_connection_bandwidth_id'] = 'csv'
+        if 'connection_id' in local_var_params:
+            query_params.append(('connection_id', local_var_params['connection_id']))
+            collection_formats['connection_id'] = 'multi'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_site_network_async(self, request):
+        """查询分支网络详情
+
+        查询分支网络详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowSiteNetwork
+        :type request: :class:`huaweicloudsdkcc.v3.ShowSiteNetworkRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.ShowSiteNetworkResponse`
+        """
+        http_info = self._show_site_network_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_site_network_async_invoker(self, request):
+        http_info = self._show_site_network_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_site_network_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/dcaas/site-networks/{site_network_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSiteNetworkResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'site_network_id' in local_var_params:
+            path_params['site_network_id'] = local_var_params['site_network_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_site_network_async(self, request):
+        """更新分支网络详情
+
+        更新分支网络详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateSiteNetwork
+        :type request: :class:`huaweicloudsdkcc.v3.UpdateSiteNetworkRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.UpdateSiteNetworkResponse`
+        """
+        http_info = self._update_site_network_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_site_network_async_invoker(self, request):
+        http_info = self._update_site_network_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_site_network_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{domain_id}/dcaas/site-networks/{site_network_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSiteNetworkResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'site_network_id' in local_var_params:
+            path_params['site_network_id'] = local_var_params['site_network_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_site_network_capabilities_async(self, request):
+        """查询分支网络的能力列表
+
+        查询分支网络的能力列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSiteNetworkCapabilities
+        :type request: :class:`huaweicloudsdkcc.v3.ListSiteNetworkCapabilitiesRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.ListSiteNetworkCapabilitiesResponse`
+        """
+        http_info = self._list_site_network_capabilities_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_site_network_capabilities_async_invoker(self, request):
+        http_info = self._list_site_network_capabilities_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_site_network_capabilities_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/dcaas/site-network/capabilities",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSiteNetworkCapabilitiesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'specification' in local_var_params:
+            query_params.append(('specification', local_var_params['specification']))
+            collection_formats['specification'] = 'csv'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_site_network_quotas_async(self, request):
+        """查询分支网络配额
+
+        查询分支网络配额。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSiteNetworkQuotas
+        :type request: :class:`huaweicloudsdkcc.v3.ListSiteNetworkQuotasRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.ListSiteNetworkQuotasResponse`
+        """
+        http_info = self._list_site_network_quotas_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_site_network_quotas_async_invoker(self, request):
+        http_info = self._list_site_network_quotas_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_site_network_quotas_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/dcaas/site-network/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSiteNetworkQuotasResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'quota_type' in local_var_params:
+            query_params.append(('quota_type', local_var_params['quota_type']))
+            collection_formats['quota_type'] = 'csv'
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_bandwidth_package_levels_async(self, request):
+        """查询带宽包等级列表
+
+        查询带宽包等级列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListBandwidthPackageLevels
+        :type request: :class:`huaweicloudsdkcc.v3.ListBandwidthPackageLevelsRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.ListBandwidthPackageLevelsResponse`
+        """
+        http_info = self._list_bandwidth_package_levels_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_bandwidth_package_levels_async_invoker(self, request):
+        http_info = self._list_bandwidth_package_levels_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_bandwidth_package_levels_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/ccaas/bandwidth-packages/levels",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBandwidthPackageLevelsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'level' in local_var_params:
+            query_params.append(('level', local_var_params['level']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_bandwidth_package_lines_async(self, request):
+        """查询带宽包线路列表
+
+        查询带宽包线路列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListBandwidthPackageLines
+        :type request: :class:`huaweicloudsdkcc.v3.ListBandwidthPackageLinesRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.ListBandwidthPackageLinesResponse`
+        """
+        http_info = self._list_bandwidth_package_lines_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_bandwidth_package_lines_async_invoker(self, request):
+        http_info = self._list_bandwidth_package_lines_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_bandwidth_package_lines_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/ccaas/bandwidth-packages/lines",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBandwidthPackageLinesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'level' in local_var_params:
+            query_params.append(('level', local_var_params['level']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_bandwidth_package_sites_async(self, request):
+        """查询带宽包站点列表
+
+        查询带宽包站点列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListBandwidthPackageSites
+        :type request: :class:`huaweicloudsdkcc.v3.ListBandwidthPackageSitesRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.ListBandwidthPackageSitesResponse`
+        """
+        http_info = self._list_bandwidth_package_sites_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_bandwidth_package_sites_async_invoker(self, request):
+        http_info = self._list_bandwidth_package_sites_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_bandwidth_package_sites_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/ccaas/bandwidth-packages/sites",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBandwidthPackageSitesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'site_code' in local_var_params:
+            query_params.append(('site_code', local_var_params['site_code']))
+        if 'region_id' in local_var_params:
+            query_params.append(('region_id', local_var_params['region_id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def _call_api(self, **kwargs):
         try:
             kwargs["async_request"] = True

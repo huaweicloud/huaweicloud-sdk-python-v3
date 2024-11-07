@@ -45,7 +45,7 @@ class VerifyVideoMattingInfo:
         :type width: int
         :param height: 区域高度像素值。
         :type height: int
-        :param method: 资源操作类型。 * RESERVED: 保留区域 * DELETE：删除区域 * NO_DEGREEN：无区域
+        :param method: 资源操作类型。 * RESERVED: 视频不需要抠绿的区域。 * DELETE：视频需要抠绿的区域。 * NO_DEGREEN：视频不需要去绿的区域。
         :type method: str
         """
         
@@ -161,7 +161,7 @@ class VerifyVideoMattingInfo:
     def method(self):
         """Gets the method of this VerifyVideoMattingInfo.
 
-        资源操作类型。 * RESERVED: 保留区域 * DELETE：删除区域 * NO_DEGREEN：无区域
+        资源操作类型。 * RESERVED: 视频不需要抠绿的区域。 * DELETE：视频需要抠绿的区域。 * NO_DEGREEN：视频不需要去绿的区域。
 
         :return: The method of this VerifyVideoMattingInfo.
         :rtype: str
@@ -172,7 +172,7 @@ class VerifyVideoMattingInfo:
     def method(self, method):
         """Sets the method of this VerifyVideoMattingInfo.
 
-        资源操作类型。 * RESERVED: 保留区域 * DELETE：删除区域 * NO_DEGREEN：无区域
+        资源操作类型。 * RESERVED: 视频不需要抠绿的区域。 * DELETE：视频需要抠绿的区域。 * NO_DEGREEN：视频不需要去绿的区域。
 
         :param method: The method of this VerifyVideoMattingInfo.
         :type method: str

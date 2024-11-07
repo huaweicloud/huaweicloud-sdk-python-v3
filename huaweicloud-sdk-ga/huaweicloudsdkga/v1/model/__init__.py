@@ -42,6 +42,10 @@ from huaweicloudsdkga.v1.model.create_listener_option import CreateListenerOptio
 from huaweicloudsdkga.v1.model.create_listener_request import CreateListenerRequest
 from huaweicloudsdkga.v1.model.create_listener_request_body import CreateListenerRequestBody
 from huaweicloudsdkga.v1.model.create_listener_response import CreateListenerResponse
+from huaweicloudsdkga.v1.model.create_logtank_option import CreateLogtankOption
+from huaweicloudsdkga.v1.model.create_logtank_request import CreateLogtankRequest
+from huaweicloudsdkga.v1.model.create_logtank_request_body import CreateLogtankRequestBody
+from huaweicloudsdkga.v1.model.create_logtank_response import CreateLogtankResponse
 from huaweicloudsdkga.v1.model.create_tags_request import CreateTagsRequest
 from huaweicloudsdkga.v1.model.create_tags_request_body import CreateTagsRequestBody
 from huaweicloudsdkga.v1.model.create_tags_response import CreateTagsResponse
@@ -57,6 +61,8 @@ from huaweicloudsdkga.v1.model.delete_ip_group_request import DeleteIpGroupReque
 from huaweicloudsdkga.v1.model.delete_ip_group_response import DeleteIpGroupResponse
 from huaweicloudsdkga.v1.model.delete_listener_request import DeleteListenerRequest
 from huaweicloudsdkga.v1.model.delete_listener_response import DeleteListenerResponse
+from huaweicloudsdkga.v1.model.delete_logtank_request import DeleteLogtankRequest
+from huaweicloudsdkga.v1.model.delete_logtank_response import DeleteLogtankResponse
 from huaweicloudsdkga.v1.model.delete_tags_request import DeleteTagsRequest
 from huaweicloudsdkga.v1.model.delete_tags_request_body import DeleteTagsRequestBody
 from huaweicloudsdkga.v1.model.delete_tags_response import DeleteTagsResponse
@@ -85,6 +91,8 @@ from huaweicloudsdkga.v1.model.list_ip_groups_request import ListIpGroupsRequest
 from huaweicloudsdkga.v1.model.list_ip_groups_response import ListIpGroupsResponse
 from huaweicloudsdkga.v1.model.list_listeners_request import ListListenersRequest
 from huaweicloudsdkga.v1.model.list_listeners_response import ListListenersResponse
+from huaweicloudsdkga.v1.model.list_logtanks_request import ListLogtanksRequest
+from huaweicloudsdkga.v1.model.list_logtanks_response import ListLogtanksResponse
 from huaweicloudsdkga.v1.model.list_regions_request import ListRegionsRequest
 from huaweicloudsdkga.v1.model.list_regions_response import ListRegionsResponse
 from huaweicloudsdkga.v1.model.list_resources_by_tag_request import ListResourcesByTagRequest
@@ -96,6 +104,8 @@ from huaweicloudsdkga.v1.model.listener_access_control_policy import ListenerAcc
 from huaweicloudsdkga.v1.model.listener_access_control_type import ListenerAccessControlType
 from huaweicloudsdkga.v1.model.listener_detail import ListenerDetail
 from huaweicloudsdkga.v1.model.listener_protocol import ListenerProtocol
+from huaweicloudsdkga.v1.model.logtank_detail import LogtankDetail
+from huaweicloudsdkga.v1.model.logtank_resource_type import LogtankResourceType
 from huaweicloudsdkga.v1.model.match import Match
 from huaweicloudsdkga.v1.model.page_info import PageInfo
 from huaweicloudsdkga.v1.model.port_range import PortRange
@@ -118,6 +128,8 @@ from huaweicloudsdkga.v1.model.show_ip_group_request import ShowIpGroupRequest
 from huaweicloudsdkga.v1.model.show_ip_group_response import ShowIpGroupResponse
 from huaweicloudsdkga.v1.model.show_listener_request import ShowListenerRequest
 from huaweicloudsdkga.v1.model.show_listener_response import ShowListenerResponse
+from huaweicloudsdkga.v1.model.show_logtank_request import ShowLogtankRequest
+from huaweicloudsdkga.v1.model.show_logtank_response import ShowLogtankResponse
 from huaweicloudsdkga.v1.model.show_resource_tags_request import ShowResourceTagsRequest
 from huaweicloudsdkga.v1.model.show_resource_tags_response import ShowResourceTagsResponse
 from huaweicloudsdkga.v1.model.tag import Tag
@@ -146,3 +158,7 @@ from huaweicloudsdkga.v1.model.update_listener_option import UpdateListenerOptio
 from huaweicloudsdkga.v1.model.update_listener_request import UpdateListenerRequest
 from huaweicloudsdkga.v1.model.update_listener_request_body import UpdateListenerRequestBody
 from huaweicloudsdkga.v1.model.update_listener_response import UpdateListenerResponse
+from huaweicloudsdkga.v1.model.update_logtank_option import UpdateLogtankOption
+from huaweicloudsdkga.v1.model.update_logtank_request import UpdateLogtankRequest
+from huaweicloudsdkga.v1.model.update_logtank_request_body import UpdateLogtankRequestBody
+from huaweicloudsdkga.v1.model.update_logtank_response import UpdateLogtankResponse

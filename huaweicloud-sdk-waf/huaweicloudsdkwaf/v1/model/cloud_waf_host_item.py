@@ -21,6 +21,7 @@ class CloudWafHostItem:
         'hostid': 'str',
         'region': 'str',
         'description': 'str',
+        'server': 'list[CloudWafServer]',
         'type': 'int',
         'proxy': 'bool',
         'hostname': 'str',
@@ -40,6 +41,7 @@ class CloudWafHostItem:
         'hostid': 'hostid',
         'region': 'region',
         'description': 'description',
+        'server': 'server',
         'type': 'type',
         'proxy': 'proxy',
         'hostname': 'hostname',
@@ -54,7 +56,7 @@ class CloudWafHostItem:
         'flag': 'flag'
     }
 
-    def __init__(self, id=None, hostid=None, region=None, description=None, type=None, proxy=None, hostname=None, access_code=None, policyid=None, timestamp=None, protect_status=None, access_status=None, exclusive_ip=None, paid_type=None, web_tag=None, flag=None):
+    def __init__(self, id=None, hostid=None, region=None, description=None, server=None, type=None, proxy=None, hostname=None, access_code=None, policyid=None, timestamp=None, protect_status=None, access_status=None, exclusive_ip=None, paid_type=None, web_tag=None, flag=None):
         """CloudWafHostItem
 
         The model defined in huaweicloud sdk
@@ -67,6 +69,8 @@ class CloudWafHostItem:
         :type region: str
         :param description: 域名描述信息，可选参数。
         :type description: str
+        :param server: 防护域名的源站服务器配置信息
+        :type server: list[:class:`huaweicloudsdkwaf.v1.CloudWafServer`]
         :param type: WAF部署模式，默认是1，目前仅支持反代模式，冗余参数
         :type type: int
         :param proxy: 防护域名是否使用代理   - false：不使用代理   - true：使用代理
@@ -99,6 +103,7 @@ class CloudWafHostItem:
         self._hostid = None
         self._region = None
         self._description = None
+        self._server = None
         self._type = None
         self._proxy = None
         self._hostname = None
@@ -121,6 +126,8 @@ class CloudWafHostItem:
             self.region = region
         if description is not None:
             self.description = description
+        if server is not None:
+            self.server = server
         if type is not None:
             self.type = type
         if proxy is not None:
@@ -233,6 +240,28 @@ class CloudWafHostItem:
         :type description: str
         """
         self._description = description
+
+    @property
+    def server(self):
+        """Gets the server of this CloudWafHostItem.
+
+        防护域名的源站服务器配置信息
+
+        :return: The server of this CloudWafHostItem.
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.CloudWafServer`]
+        """
+        return self._server
+
+    @server.setter
+    def server(self, server):
+        """Sets the server of this CloudWafHostItem.
+
+        防护域名的源站服务器配置信息
+
+        :param server: The server of this CloudWafHostItem.
+        :type server: list[:class:`huaweicloudsdkwaf.v1.CloudWafServer`]
+        """
+        self._server = server
 
     @property
     def type(self):

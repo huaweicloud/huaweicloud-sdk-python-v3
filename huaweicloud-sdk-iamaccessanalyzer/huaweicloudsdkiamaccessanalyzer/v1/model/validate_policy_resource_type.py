@@ -9,7 +9,6 @@ class ValidatePolicyResourceType:
     """
     allowed enum values
     """
-    OBS_BUCKET = "obs:bucket"
     IAM_AGENCY = "iam:agency"
     """
     Attributes:

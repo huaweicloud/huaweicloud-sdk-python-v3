@@ -19,41 +19,48 @@ class CreateInstanceResponse(SdkResponse):
 
     openapi_types = {
         'id': 'str',
-        'order_id': 'str'
+        'order_id': 'str',
+        'job_id': 'str'
     }
 
     attribute_map = {
         'id': 'id',
-        'order_id': 'order_id'
+        'order_id': 'order_id',
+        'job_id': 'job_id'
     }
 
-    def __init__(self, id=None, order_id=None):
+    def __init__(self, id=None, order_id=None, job_id=None):
         """CreateInstanceResponse
 
         The model defined in huaweicloud sdk
 
-        :param id: 实例ID。创建按需付费实例时返回该参数。
+        :param id: 实例ID，创建按需付费实例时返回该参数。
         :type id: str
         :param order_id: 订单号，创建包年/包月实例时返回该参数。
         :type order_id: str
+        :param job_id: 任务id，创建按需付费实例时返回该参数
+        :type job_id: str
         """
         
         super(CreateInstanceResponse, self).__init__()
 
         self._id = None
         self._order_id = None
+        self._job_id = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
         if order_id is not None:
             self.order_id = order_id
+        if job_id is not None:
+            self.job_id = job_id
 
     @property
     def id(self):
         """Gets the id of this CreateInstanceResponse.
 
-        实例ID。创建按需付费实例时返回该参数。
+        实例ID，创建按需付费实例时返回该参数。
 
         :return: The id of this CreateInstanceResponse.
         :rtype: str
@@ -64,7 +71,7 @@ class CreateInstanceResponse(SdkResponse):
     def id(self, id):
         """Sets the id of this CreateInstanceResponse.
 
-        实例ID。创建按需付费实例时返回该参数。
+        实例ID，创建按需付费实例时返回该参数。
 
         :param id: The id of this CreateInstanceResponse.
         :type id: str
@@ -92,6 +99,28 @@ class CreateInstanceResponse(SdkResponse):
         :type order_id: str
         """
         self._order_id = order_id
+
+    @property
+    def job_id(self):
+        """Gets the job_id of this CreateInstanceResponse.
+
+        任务id，创建按需付费实例时返回该参数
+
+        :return: The job_id of this CreateInstanceResponse.
+        :rtype: str
+        """
+        return self._job_id
+
+    @job_id.setter
+    def job_id(self, job_id):
+        """Sets the job_id of this CreateInstanceResponse.
+
+        任务id，创建按需付费实例时返回该参数
+
+        :param job_id: The job_id of this CreateInstanceResponse.
+        :type job_id: str
+        """
+        self._job_id = job_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

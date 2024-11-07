@@ -20,17 +20,19 @@ class CreateExtractTaskReq:
         'input': 'ObsObjInfo',
         'output': 'ObsObjInfo',
         'user_data': 'str',
-        'sync': 'int'
+        'sync': 'int',
+        'encryption': 'Encryption'
     }
 
     attribute_map = {
         'input': 'input',
         'output': 'output',
         'user_data': 'user_data',
-        'sync': 'sync'
+        'sync': 'sync',
+        'encryption': 'encryption'
     }
 
-    def __init__(self, input=None, output=None, user_data=None, sync=None):
+    def __init__(self, input=None, output=None, user_data=None, sync=None, encryption=None):
         """CreateExtractTaskReq
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class CreateExtractTaskReq:
         :type user_data: str
         :param sync: 是否同步处理, - 0：排队处理 - 1：同步处理  默认值：0 
         :type sync: int
+        :param encryption: 
+        :type encryption: :class:`huaweicloudsdkmpc.v1.Encryption`
         """
         
         
@@ -51,6 +55,7 @@ class CreateExtractTaskReq:
         self._output = None
         self._user_data = None
         self._sync = None
+        self._encryption = None
         self.discriminator = None
 
         if input is not None:
@@ -61,6 +66,8 @@ class CreateExtractTaskReq:
             self.user_data = user_data
         if sync is not None:
             self.sync = sync
+        if encryption is not None:
+            self.encryption = encryption
 
     @property
     def input(self):
@@ -141,6 +148,24 @@ class CreateExtractTaskReq:
         :type sync: int
         """
         self._sync = sync
+
+    @property
+    def encryption(self):
+        """Gets the encryption of this CreateExtractTaskReq.
+
+        :return: The encryption of this CreateExtractTaskReq.
+        :rtype: :class:`huaweicloudsdkmpc.v1.Encryption`
+        """
+        return self._encryption
+
+    @encryption.setter
+    def encryption(self, encryption):
+        """Sets the encryption of this CreateExtractTaskReq.
+
+        :param encryption: The encryption of this CreateExtractTaskReq.
+        :type encryption: :class:`huaweicloudsdkmpc.v1.Encryption`
+        """
+        self._encryption = encryption
 
     def to_dict(self):
         """Returns the model properties as a dict"""

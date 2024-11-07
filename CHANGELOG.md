@@ -1,3 +1,210 @@
+# 3.1.121 2024-11-07
+
+### HuaweiCloud SDK AAD
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpgradeInstanceSpec**
+    - changes of request param
+      - `+ upgrade_data.elastic_service_bandwidth_type`
+      - `+ upgrade_data.elastic_service_bandwidth`
+
+### HuaweiCloud SDK CC
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `CreateP2PSiteNetwork`
+    - `ListSiteNetworks`
+    - `ShowSiteNetwork`
+    - `UpdateSiteNetwork`
+    - `DeleteSiteNetwork`
+    - `DisassociateSiteNetworkBandwidth`
+    - `AssociateSiteNetworkBandwidth`
+    - `UpdateSiteNetworkBandwidthSize`
+    - `UpdateSiteNetworkBandwidth`
+    - `ListSiteNetworkQuotas`
+    - `ListSiteNetworkCapabilities`
+    - `ListBandwidthPackageSites`
+    - `ListBandwidthPackageLevels`
+    - `ListBandwidthPackageLines`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DDM
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the APIs `ChangeDatabaseVersion`, `ListDatabaseAvailableVersions`, `RollBackDatabaseVersion`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateInstance**
+    - changes of response param
+      - `+ job_id`
+  - **ShowProcessesAuditLog**
+    - changes of response param
+      - `+ process_audit_logs.execute_time`
+      - `- process_audit_logs.excute_time`
+  - **ExpandDdmInstanceNodes**
+    - changes of response param
+      - `- instance_id`
+
+### HuaweiCloud SDK GA
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ListLogtanks`
+    - `CreateLogtank`
+    - `ShowLogtank`
+    - `UpdateLogtank`
+    - `DeleteLogtank`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the API `BatchUpgradeDatabaseVersion`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK IAMAccessAnalyzer
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListFindings**
+    - changes of response param
+      - `+ findings.finding_type: enum value [unused_permission]`
+  - **ShowFinding**
+    - changes of response param
+      - `+ finding.finding_type: enum value [unused_permission]`
+      - `+ finding.finding_details.unused_permission_details`
+  - **ValidatePolicy**
+    - changes of request param
+      - `- validate_policy_resource_type: enum value [obs:bucket]`
+
+### HuaweiCloud SDK IoTDA
+
+- _API Version_
+  - V5
+- _Features_
+  - Support the following APIs:
+    - `ListAsyncHistoryCommands`
+    - `CountAsyncHistoryCommands`
+    - `ListFunctions`
+    - `AddFunctions`
+    - `DeleteFunctions`
+    - `ListAsyncCommands`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK MetaStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `ValidateRobot`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListTenantResources**
+    - changes of request param
+      - `- resource_name`
+  - **ShowAsset**
+    - changes of response param
+      - `+ system_properties.key: enum value [MEITUAN_MATERIAL_APPROVED]`
+  - **UpdateDigitalAsset**
+    - changes of request param
+      - `+ system_properties.key: enum value [MEITUAN_MATERIAL_APPROVED]`
+    - changes of response param
+      - `+ system_properties.key: enum value [MEITUAN_MATERIAL_APPROVED]`
+  - **CreateDigitalAsset**
+    - changes of request param
+      - `+ system_properties.key: enum value [MEITUAN_MATERIAL_APPROVED]`
+  - **ListAssets**
+    - changes of response param
+      - `+ assets.system_properties.key: enum value [MEITUAN_MATERIAL_APPROVED]`
+
+### HuaweiCloud SDK MPC
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateExtractTask**
+    - changes of request param
+      - `+ encryption`
+  - **CreateTranscodingTask**
+    - changes of request param
+      - `+ av_parameters.video.crf`
+      - `+ av_parameters.video.max_bitrate`
+  - **ListTranscodingTask**
+    - changes of response param
+      - `+ task_array.av_parameters.video.crf`
+      - `+ task_array.av_parameters.video.max_bitrate`
+  - **CreateEditingJob**
+    - changes of request param
+      - `+ concats.av_parameters.video.crf`
+      - `+ concats.av_parameters.video.max_bitrate`
+  - **ListEditingJob**
+    - changes of response param
+      - `+ jobs.edit_task_req.concats.av_parameters.video.crf`
+      - `+ jobs.edit_task_req.concats.av_parameters.video.max_bitrate`
+
+### HuaweiCloud SDK VPCEP
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListEndpointInfoDetails**
+    - changes of response param
+      - `* error: object<QueryError> -> list<QueryError>`
+
+### HuaweiCloud SDK WAF
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListHost**
+    - changes of response param
+      - `+ items.server`
+
 # 3.1.120 2024-10-31
 
 ### HuaweiCloud SDK APIG

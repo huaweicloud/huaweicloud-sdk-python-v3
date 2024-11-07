@@ -710,6 +710,81 @@ class IoTDAClient(Client):
 
         return http_info
 
+    def count_async_history_commands(self, request):
+        """统计设备下的历史命令总数
+
+        统计设备下的历史命令总数。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CountAsyncHistoryCommands
+        :type request: :class:`huaweicloudsdkiotda.v5.CountAsyncHistoryCommandsRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.CountAsyncHistoryCommandsResponse`
+        """
+        http_info = self._count_async_history_commands_http_info(request)
+        return self._call_api(**http_info)
+
+    def count_async_history_commands_invoker(self, request):
+        http_info = self._count_async_history_commands_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _count_async_history_commands_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/iot/{project_id}/devices/{device_id}/async-commands-history/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "CountAsyncHistoryCommandsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'device_id' in local_var_params:
+            path_params['device_id'] = local_var_params['device_id']
+
+        query_params = []
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'command_name' in local_var_params:
+            query_params.append(('command_name', local_var_params['command_name']))
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_async_command(self, request):
         """下发异步设备命令
 
@@ -761,6 +836,168 @@ class IoTDAClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_async_commands(self, request):
+        """查询设备下队列中的命令
+
+        查询设备下队列中的命令（处理中的命令），包含PENDING、SENT、DELIVERED三种状态，注意：DELIVERED状态的命令经过系统设定的一段时间（具体以系统配置为准）仍然没有更新，就会从队列中移除，变为历史命令。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAsyncCommands
+        :type request: :class:`huaweicloudsdkiotda.v5.ListAsyncCommandsRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.ListAsyncCommandsResponse`
+        """
+        http_info = self._list_async_commands_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_async_commands_invoker(self, request):
+        http_info = self._list_async_commands_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_async_commands_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/iot/{project_id}/devices/{device_id}/async-commands",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAsyncCommandsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'device_id' in local_var_params:
+            path_params['device_id'] = local_var_params['device_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'command_name' in local_var_params:
+            query_params.append(('command_name', local_var_params['command_name']))
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_async_history_commands(self, request):
+        """查询设备下的历史命令
+
+        查询设备下发的历史异步命令，包含EXPIRED、SUCCESSFUL、FAILED、TIMEOUT、DELIVERED五种状态。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAsyncHistoryCommands
+        :type request: :class:`huaweicloudsdkiotda.v5.ListAsyncHistoryCommandsRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.ListAsyncHistoryCommandsResponse`
+        """
+        http_info = self._list_async_history_commands_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_async_history_commands_invoker(self, request):
+        http_info = self._list_async_history_commands_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_async_history_commands_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/iot/{project_id}/devices/{device_id}/async-commands-history",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAsyncHistoryCommandsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'device_id' in local_var_params:
+            path_params['device_id'] = local_var_params['device_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'command_name' in local_var_params:
+            query_params.append(('command_name', local_var_params['command_name']))
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -5170,6 +5407,221 @@ class IoTDAClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def add_functions(self, request):
+        """创建编解码函数
+
+        提供创建编解码函数的功能。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AddFunctions
+        :type request: :class:`huaweicloudsdkiotda.v5.AddFunctionsRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.AddFunctionsResponse`
+        """
+        http_info = self._add_functions_http_info(request)
+        return self._call_api(**http_info)
+
+    def add_functions_invoker(self, request):
+        http_info = self._add_functions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_functions_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/iot/{project_id}/product-functions",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddFunctionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_functions(self, request):
+        """删除编解码函数
+
+        提供删除编解码函数的功能。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteFunctions
+        :type request: :class:`huaweicloudsdkiotda.v5.DeleteFunctionsRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.DeleteFunctionsResponse`
+        """
+        http_info = self._delete_functions_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_functions_invoker(self, request):
+        http_info = self._delete_functions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_functions_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/iot/{project_id}/product-functions/{function_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteFunctionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'function_id' in local_var_params:
+            path_params['function_id'] = local_var_params['function_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_functions(self, request):
+        """查询编解码函数
+
+        提供查询编解码函数的功能。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListFunctions
+        :type request: :class:`huaweicloudsdkiotda.v5.ListFunctionsRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.ListFunctionsResponse`
+        """
+        http_info = self._list_functions_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_functions_invoker(self, request):
+        http_info = self._list_functions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_functions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/iot/{project_id}/product-functions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFunctionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'app_id' in local_var_params:
+            query_params.append(('app_id', local_var_params['app_id']))
+        if 'product_id' in local_var_params:
+            query_params.append(('product_id', local_var_params['product_id']))
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
