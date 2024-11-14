@@ -65,7 +65,7 @@ class CreateTTSAReq:
         :type volume: int
         :param emotion: 情感标签。 * ANGER：愤怒 * HAPPY：开心 * SAD：悲伤 * CALM：平静
         :type emotion: str
-        :param style_id: 风格化ID。需要调用数字人风格管理相关接口，从系统重查得。
+        :param style_id: 风格化ID。需要调用数字人风格管理相关接口，从系统中查得。
         :type style_id: str
         :param camera_position: 人位置及相机位置。由如下4组浮点数组成的字符：人位置的X/Y/Z值，人角度的Pitch/Yaw/Roll值；相机位置的X/Y/Z值，相机角度的Pitch/Yaw/Roll值。
         :type camera_position: str
@@ -289,7 +289,7 @@ class CreateTTSAReq:
     def style_id(self):
         """Gets the style_id of this CreateTTSAReq.
 
-        风格化ID。需要调用数字人风格管理相关接口，从系统重查得。
+        风格化ID。需要调用数字人风格管理相关接口，从系统中查得。
 
         :return: The style_id of this CreateTTSAReq.
         :rtype: str
@@ -300,7 +300,7 @@ class CreateTTSAReq:
     def style_id(self, style_id):
         """Sets the style_id of this CreateTTSAReq.
 
-        风格化ID。需要调用数字人风格管理相关接口，从系统重查得。
+        风格化ID。需要调用数字人风格管理相关接口，从系统中查得。
 
         :param style_id: The style_id of this CreateTTSAReq.
         :type style_id: str

@@ -2482,7 +2482,7 @@ class WorkspaceClient(Client):
     def list_unused_desktops(self, request):
         """查询在指定时间段未使用的桌面
 
-        查询在指定时间段未使用的桌面。
+        查询在指定时间段未使用的桌面。已废弃，不推荐使用。统计数据推荐使用[查询桌面使用情况统计数据接口](https://console.huaweicloud.com/apiexplorer/#/openapi/Workspace/doc?api&#x3D;ListDesktopUsageMetric)和[查询用户使用统计数据接口](https://console.huaweicloud.com/apiexplorer/#/openapi/Workspace/doc?api&#x3D;ListUserUsageMetric)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2553,7 +2553,7 @@ class WorkspaceClient(Client):
     def list_used_desktop_info(self, request):
         """查询使用桌面的时长
 
-        查询使用桌面的时长。
+        查询使用桌面的时长。已废弃，不推荐使用。统计数据推荐使用[查询桌面使用情况统计数据接口](https://console.huaweicloud.com/apiexplorer/#/openapi/Workspace/doc?api&#x3D;ListDesktopUsageMetric)和[查询用户使用统计数据接口](https://console.huaweicloud.com/apiexplorer/#/openapi/Workspace/doc?api&#x3D;ListUserUsageMetric)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

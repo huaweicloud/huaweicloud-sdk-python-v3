@@ -22,7 +22,8 @@ class ApigDataSourceVo:
         'dw_config': 'object',
         'agent_id': 'str',
         'agent_name': 'str',
-        'env_type': 'int'
+        'env_type': 'int',
+        'support_service': 'int'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class ApigDataSourceVo:
         'dw_config': 'dw_config',
         'agent_id': 'agent_id',
         'agent_name': 'agent_name',
-        'env_type': 'env_type'
+        'env_type': 'env_type',
+        'support_service': 'supportService'
     }
 
-    def __init__(self, dw_name=None, dw_type=None, dw_config=None, agent_id=None, agent_name=None, env_type=None):
+    def __init__(self, dw_name=None, dw_type=None, dw_config=None, agent_id=None, agent_name=None, env_type=None, support_service=None):
         """ApigDataSourceVo
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class ApigDataSourceVo:
         :type agent_name: str
         :param env_type: 0：开发模式 1：生产模式。默认为0
         :type env_type: int
+        :param support_service: 1：cdm 2：数据架构 4:数据开发 8：数据质量 16：数据目录 32：数据安全 64：数据服务
+        :type support_service: int
         """
         
         
@@ -61,6 +65,7 @@ class ApigDataSourceVo:
         self._agent_id = None
         self._agent_name = None
         self._env_type = None
+        self._support_service = None
         self.discriminator = None
 
         self.dw_name = dw_name
@@ -72,6 +77,8 @@ class ApigDataSourceVo:
             self.agent_name = agent_name
         if env_type is not None:
             self.env_type = env_type
+        if support_service is not None:
+            self.support_service = support_service
 
     @property
     def dw_name(self):
@@ -204,6 +211,28 @@ class ApigDataSourceVo:
         :type env_type: int
         """
         self._env_type = env_type
+
+    @property
+    def support_service(self):
+        """Gets the support_service of this ApigDataSourceVo.
+
+        1：cdm 2：数据架构 4:数据开发 8：数据质量 16：数据目录 32：数据安全 64：数据服务
+
+        :return: The support_service of this ApigDataSourceVo.
+        :rtype: int
+        """
+        return self._support_service
+
+    @support_service.setter
+    def support_service(self, support_service):
+        """Sets the support_service of this ApigDataSourceVo.
+
+        1：cdm 2：数据架构 4:数据开发 8：数据质量 16：数据目录 32：数据安全 64：数据服务
+
+        :param support_service: The support_service of this ApigDataSourceVo.
+        :type support_service: int
+        """
+        self._support_service = support_service
 
     def to_dict(self):
         """Returns the model properties as a dict"""

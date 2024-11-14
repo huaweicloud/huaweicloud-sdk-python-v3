@@ -88,7 +88,8 @@ class ListAppsRequest:
         self._part_match = None
         self.discriminator = None
 
-        self.host_id = host_id
+        if host_id is not None:
+            self.host_id = host_id
         if host_name is not None:
             self.host_name = host_name
         if app_name is not None:

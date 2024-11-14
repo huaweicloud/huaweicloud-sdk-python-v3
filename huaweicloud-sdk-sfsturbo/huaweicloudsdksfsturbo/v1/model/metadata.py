@@ -43,9 +43,9 @@ class Metadata:
         :type dedicated_flavor: str
         :param dedicated_storage_id: 创专属文件系统，要指定一个专属分布式存储的ID。
         :type dedicated_storage_id: str
-        :param expand_type: 扩展类型。创建增强型/HPC型/HPC缓存型文件系统时，该参数必填。 创建增强型的文件系统，包括标准型-增强版和性能型-增强版，需要填写\&quot;bandwidth\&quot;。 创建HPC型文件系统，需要填写\&quot;hpc\&quot;。 创建HPC缓存型，需要填写\&quot;hpc_cache\&quot;。 
+        :param expand_type: 扩展类型；当文件系统正在创建时，该字段不返回。  - 创建增强型、20MB/s/TiB、40MB/s/TiB、125MB/s/TiB、250MB/s/TiB、500MB/s/TiB、1000MB/s/TiB、HPC缓存型文件系统时，该参数必填。  - 创建增强型的文件系统，包括标准型-增强版和性能型-增强版，需要填写\&quot;bandwidth\&quot;。  - 创建20MB/s/TiB、40MB/s/TiB、125MB/s/TiB、250MB/s/TiB、500MB/s/TiB、1000MB/s/TiB文件系统，需要填写\&quot;hpc\&quot;。  - 创建HPC缓存型，需要填写\&quot;hpc_cache\&quot;。 
         :type expand_type: str
-        :param hpc_bw: 文件系统的带宽规格。创建HPC型/HPC缓存型文件系统时，该参数必填。 HPC型，可以填写\&quot;20M\&quot;、\&quot;40M\&quot;、\&quot;125M\&quot;、\&quot;250M\&quot;、\&quot;500M\&quot;、\&quot;1000M\&quot;。 HPC缓存型，可以填写\&quot;2G\&quot;、\&quot;4G\&quot;、\&quot;8G\&quot;、\&quot;16G\&quot;、\&quot;24G\&quot;、\&quot;32G\&quot;、\&quot;48G\&quot;。 
+        :param hpc_bw: 文件系统的带宽规格。  创建20MB/s/TiB、40MB/s/TiB、125MB/s/TiB、250MB/s/TiB、500MB/s/TiB、1000MB/s/TiB、HPC缓存型文件系统时，该参数必填。  20MB/s/TiB，填写\&quot;20M\&quot;。 40MB/s/TiB，填写\&quot;40M\&quot;。 125MB/s/TiB，填写\&quot;125M\&quot;。 250MB/s/TiB，填写\&quot;250M\&quot;。 500MB/s/TiB，填写\&quot;500M\&quot;。 1000MB/s/TiB，填写\&quot;1000M\&quot;。 HPC缓存型，填写\&quot;2G\&quot;、\&quot;4G\&quot;、\&quot;8G\&quot;、\&quot;16G\&quot;、\&quot;24G\&quot;、\&quot;32G\&quot;或\&quot;48G\&quot;。 
         :type hpc_bw: str
         """
         
@@ -139,7 +139,7 @@ class Metadata:
     def expand_type(self):
         """Gets the expand_type of this Metadata.
 
-        扩展类型。创建增强型/HPC型/HPC缓存型文件系统时，该参数必填。 创建增强型的文件系统，包括标准型-增强版和性能型-增强版，需要填写\"bandwidth\"。 创建HPC型文件系统，需要填写\"hpc\"。 创建HPC缓存型，需要填写\"hpc_cache\"。 
+        扩展类型；当文件系统正在创建时，该字段不返回。  - 创建增强型、20MB/s/TiB、40MB/s/TiB、125MB/s/TiB、250MB/s/TiB、500MB/s/TiB、1000MB/s/TiB、HPC缓存型文件系统时，该参数必填。  - 创建增强型的文件系统，包括标准型-增强版和性能型-增强版，需要填写\"bandwidth\"。  - 创建20MB/s/TiB、40MB/s/TiB、125MB/s/TiB、250MB/s/TiB、500MB/s/TiB、1000MB/s/TiB文件系统，需要填写\"hpc\"。  - 创建HPC缓存型，需要填写\"hpc_cache\"。 
 
         :return: The expand_type of this Metadata.
         :rtype: str
@@ -150,7 +150,7 @@ class Metadata:
     def expand_type(self, expand_type):
         """Sets the expand_type of this Metadata.
 
-        扩展类型。创建增强型/HPC型/HPC缓存型文件系统时，该参数必填。 创建增强型的文件系统，包括标准型-增强版和性能型-增强版，需要填写\"bandwidth\"。 创建HPC型文件系统，需要填写\"hpc\"。 创建HPC缓存型，需要填写\"hpc_cache\"。 
+        扩展类型；当文件系统正在创建时，该字段不返回。  - 创建增强型、20MB/s/TiB、40MB/s/TiB、125MB/s/TiB、250MB/s/TiB、500MB/s/TiB、1000MB/s/TiB、HPC缓存型文件系统时，该参数必填。  - 创建增强型的文件系统，包括标准型-增强版和性能型-增强版，需要填写\"bandwidth\"。  - 创建20MB/s/TiB、40MB/s/TiB、125MB/s/TiB、250MB/s/TiB、500MB/s/TiB、1000MB/s/TiB文件系统，需要填写\"hpc\"。  - 创建HPC缓存型，需要填写\"hpc_cache\"。 
 
         :param expand_type: The expand_type of this Metadata.
         :type expand_type: str
@@ -161,7 +161,7 @@ class Metadata:
     def hpc_bw(self):
         """Gets the hpc_bw of this Metadata.
 
-        文件系统的带宽规格。创建HPC型/HPC缓存型文件系统时，该参数必填。 HPC型，可以填写\"20M\"、\"40M\"、\"125M\"、\"250M\"、\"500M\"、\"1000M\"。 HPC缓存型，可以填写\"2G\"、\"4G\"、\"8G\"、\"16G\"、\"24G\"、\"32G\"、\"48G\"。 
+        文件系统的带宽规格。  创建20MB/s/TiB、40MB/s/TiB、125MB/s/TiB、250MB/s/TiB、500MB/s/TiB、1000MB/s/TiB、HPC缓存型文件系统时，该参数必填。  20MB/s/TiB，填写\"20M\"。 40MB/s/TiB，填写\"40M\"。 125MB/s/TiB，填写\"125M\"。 250MB/s/TiB，填写\"250M\"。 500MB/s/TiB，填写\"500M\"。 1000MB/s/TiB，填写\"1000M\"。 HPC缓存型，填写\"2G\"、\"4G\"、\"8G\"、\"16G\"、\"24G\"、\"32G\"或\"48G\"。 
 
         :return: The hpc_bw of this Metadata.
         :rtype: str
@@ -172,7 +172,7 @@ class Metadata:
     def hpc_bw(self, hpc_bw):
         """Sets the hpc_bw of this Metadata.
 
-        文件系统的带宽规格。创建HPC型/HPC缓存型文件系统时，该参数必填。 HPC型，可以填写\"20M\"、\"40M\"、\"125M\"、\"250M\"、\"500M\"、\"1000M\"。 HPC缓存型，可以填写\"2G\"、\"4G\"、\"8G\"、\"16G\"、\"24G\"、\"32G\"、\"48G\"。 
+        文件系统的带宽规格。  创建20MB/s/TiB、40MB/s/TiB、125MB/s/TiB、250MB/s/TiB、500MB/s/TiB、1000MB/s/TiB、HPC缓存型文件系统时，该参数必填。  20MB/s/TiB，填写\"20M\"。 40MB/s/TiB，填写\"40M\"。 125MB/s/TiB，填写\"125M\"。 250MB/s/TiB，填写\"250M\"。 500MB/s/TiB，填写\"500M\"。 1000MB/s/TiB，填写\"1000M\"。 HPC缓存型，填写\"2G\"、\"4G\"、\"8G\"、\"16G\"、\"24G\"、\"32G\"或\"48G\"。 
 
         :param hpc_bw: The hpc_bw of this Metadata.
         :type hpc_bw: str

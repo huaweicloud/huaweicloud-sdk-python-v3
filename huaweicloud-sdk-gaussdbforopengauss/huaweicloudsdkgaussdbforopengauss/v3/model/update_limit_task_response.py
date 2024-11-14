@@ -42,7 +42,7 @@ class UpdateLimitTaskResponse(SdkResponse):
         'cpu_utilization': 'cpu_utilization',
         'memory_utilization': 'memory_utilization',
         'rule_name': 'rule_name',
-        'job_id': 'jobId'
+        'job_id': 'job_id'
     }
 
     def __init__(self, task_id=None, databases=None, task_name=None, key_words=None, parallel_size=None, start_time=None, end_time=None, cpu_utilization=None, memory_utilization=None, rule_name=None, job_id=None):

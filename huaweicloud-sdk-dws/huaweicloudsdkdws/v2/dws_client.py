@@ -9322,6 +9322,71 @@ class DwsClient(Client):
 
         return http_info
 
+    def start_cluster(self, request):
+        """启动集群
+
+        集群管理-启动集群
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for StartCluster
+        :type request: :class:`huaweicloudsdkdws.v2.StartClusterRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.StartClusterResponse`
+        """
+        http_info = self._start_cluster_http_info(request)
+        return self._call_api(**http_info)
+
+    def start_cluster_invoker(self, request):
+        http_info = self._start_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _start_cluster_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/clusters/{cluster_id}/start",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartClusterResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def start_disaster_recovery(self, request):
         """启动容灾
 
@@ -9429,6 +9494,71 @@ class DwsClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
         if 'plan_id' in local_var_params:
             path_params['plan_id'] = local_var_params['plan_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def stop_cluster(self, request):
+        """停止集群
+
+        集群管理-停止集群
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for StopCluster
+        :type request: :class:`huaweicloudsdkdws.v2.StopClusterRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.StopClusterResponse`
+        """
+        http_info = self._stop_cluster_http_info(request)
+        return self._call_api(**http_info)
+
+    def stop_cluster_invoker(self, request):
+        http_info = self._stop_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _stop_cluster_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/clusters/{cluster_id}/stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopClusterResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
 

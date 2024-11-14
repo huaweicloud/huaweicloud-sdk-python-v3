@@ -35,7 +35,7 @@ class CreateFsTaskRequest:
 
         :param share_id: 文件系统id
         :type share_id: str
-        :param feature: 任务类型。例，DU任务取值为dir-usage
+        :param feature: 任务类型。当前仅支持取值\&quot;dir-usage\&quot;。
         :type feature: str
         :param body: Body of the CreateFsTaskRequest
         :type body: :class:`huaweicloudsdksfsturbo.v1.FsDirReq`
@@ -79,7 +79,7 @@ class CreateFsTaskRequest:
     def feature(self):
         """Gets the feature of this CreateFsTaskRequest.
 
-        任务类型。例，DU任务取值为dir-usage
+        任务类型。当前仅支持取值\"dir-usage\"。
 
         :return: The feature of this CreateFsTaskRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class CreateFsTaskRequest:
     def feature(self, feature):
         """Sets the feature of this CreateFsTaskRequest.
 
-        任务类型。例，DU任务取值为dir-usage
+        任务类型。当前仅支持取值\"dir-usage\"。
 
         :param feature: The feature of this CreateFsTaskRequest.
         :type feature: str

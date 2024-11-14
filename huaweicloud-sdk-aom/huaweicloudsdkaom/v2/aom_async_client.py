@@ -2004,8 +2004,8 @@ class AomAsyncClient(Client):
             query_params.append(('action', local_var_params['action']))
 
         header_params = {}
-        if 'x_enterprise_prject_id' in local_var_params:
-            header_params['x-enterprise-prject-id'] = local_var_params['x_enterprise_prject_id']
+        if 'enterprise_project_id' in local_var_params:
+            header_params['enterprise-project-id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 

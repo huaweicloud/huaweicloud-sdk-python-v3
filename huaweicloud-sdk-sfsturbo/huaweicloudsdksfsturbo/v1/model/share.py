@@ -53,7 +53,7 @@ class Share:
 
         The model defined in huaweicloud sdk
 
-        :param availability_zone: 文件系统所在可用区(az)的编码
+        :param availability_zone: 文件系统所在可用区(az)的编码 
         :type availability_zone: str
         :param description: 文件系统描述信息，长度为0~255。当前不支持。
         :type description: str
@@ -63,17 +63,17 @@ class Share:
         :type metadata: :class:`huaweicloudsdksfsturbo.v1.Metadata`
         :param name: SFS Turbo文件系统的名称。长度为4~64位，必须以字母开头，可以包含字母、数字、中划线、下划线，不能包含其他的特殊字符，不区分大小写。
         :type name: str
-        :param security_group_id: 用户在某一区域下的安全组ID。
+        :param security_group_id: 用户在某一区域下的安全组ID。 
         :type security_group_id: str
         :param share_proto: 文件系统共享协议，有效值为NFS。NFS（Network File System），即网络文件系统。一种使用于分散式文件系统的协议，通过网络让不同的机器、不同的操作系统能够彼此分享数据。
         :type share_proto: str
-        :param share_type: 文件系统类型，有效值为STANDARD或者PERFORMANCE。 通用型：标准型和标准型增强版填写STANDARD，性能型和性能型增强版填写PERFORMANCE。 HPC型：不校验该字段，可填写STANDARD或者PERFORMANCE。 HPC缓存型：不校验该字段，可填写STANDARD或者PERFORMANCE。 
+        :param share_type: 文件系统类型，有效值为STANDARD或者PERFORMANCE。当文件系统正在创建时，该字段不返回。  - SFS Turbo上一代文件系统规格类型：标准型和标准型增强版填写STANDARD，性能型和性能型增强版填写PERFORMANCE。  - 20MB/s/TiB、40MB/s/TiB、125MB/s/TiB、250MB/s/TiB、500MB/s/TiB、1000MB/TiB：不校验该字段，填写STANDARD或者PERFORMANCE。  - HPC缓存型：不校验该字段，填写STANDARD或者PERFORMANCE。 
         :type share_type: str
-        :param size: 通用型-普通文件系统容量，取值范围500~32768，单位GB。 通用型-增强版文件系统，即在“metadata”字段中设置了expand_type&#x3D;\&quot;bandwidth\&quot;，则容量范围是10240~327680，单位GiB。 HPC型文件系统，即在“metadata”字段中设置了expand_type&#x3D;\&quot;hpc\&quot;，则容量范围是3686(或1228)~1048576，单位GiB。对于20MB/s/TiB的规格，起步容量为3686GiB；对于HPC其他规格，起步容量为1228GiB。HPC型文件系统的容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB-&gt;3686GiB, 4.8TiB-&gt;4915GiB，8.4TiB-&gt;8601GiB。 HPC缓存型文件系统，即在“metadata”字段中设置了expand_type&#x3D;\&quot;hpc_cache\&quot;，则容量范围是4096~1048576，单位GiB。不同带宽，起步容量不一样，步长均为1TiB。如2GB/s带宽，起步容量为4TiB，即4096GiB；4GB/s带宽，起步容量为8TiB，即8192GiB；8GB/s带宽，起步容量为16TiB，即16384GiB。 
+        :param size: - SFS Turbo上一代文件系统规格类型-文件系统容量：取值范围为500~32768，单位为GiB。  - SFS Turbo上一代文件系统规格类型-增强版文件系统：在“metadata”字段中设置了expand_type&#x3D;\&quot;bandwidth\&quot;，则容量范围为10240~327680，单位为GiB。  - 20MB/s/TiB：在“metadata”字段中设置了expand_type&#x3D;\&quot;hpc\&quot;、hpc_bw&#x3D;\&quot;20M\&quot;，则容量范围为3686~1048576，单位为GiB。容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB-&gt;3686GiB, 4.8TiB-&gt;4915GiB，8.4TiB-&gt;8601GiB。  - 40MB/s/TiB：在“metadata”字段中设置了expand_type&#x3D;\&quot;hpc\&quot;、hpc_bw&#x3D;\&quot;40M\&quot;，则容量范围为1228~1048576，单位为GiB。容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB-&gt;3686GiB, 4.8TiB-&gt;4915GiB，8.4TiB-&gt;8601GiB。  - 125MB/s/TiB：在“metadata”字段中设置了expand_type&#x3D;\&quot;hpc\&quot;、hpc_bw&#x3D;\&quot;125M\&quot;，则容量范围为1228~1048576，单位为GiB。容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB-&gt;3686GiB, 4.8TiB-&gt;4915GiB，8.4TiB-&gt;8601GiB。  - 250MB/s/TiB：在“metadata”字段中设置了expand_type&#x3D;\&quot;hpc\&quot;、hpc_bw&#x3D;\&quot;250M\&quot;，则容量范围为1228~1048576，单位为GiB。容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB-&gt;3686GiB, 4.8TiB-&gt;4915GiB，8.4TiB-&gt;8601GiB。  - 500MB/s/TiB：在“metadata”字段中设置了expand_type&#x3D;\&quot;hpc\&quot;、hpc_bw&#x3D;\&quot;500M\&quot;，则容量范围为1228~1048576，单位为GiB。容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB-&gt;3686GiB, 4.8TiB-&gt;4915GiB，8.4TiB-&gt;8601GiB。  - 1000MB/s/TiB：在“metadata”字段中设置了expand_type&#x3D;\&quot;hpc\&quot;、hpc_bw&#x3D;\&quot;1000M\&quot;，则容量范围为1228~1048576，单位为GiB。容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB-&gt;3686GiB, 4.8TiB-&gt;4915GiB，8.4TiB-&gt;8601GiB。  - HPC缓存型文件系统：在“metadata”字段中设置了expand_type&#x3D;\&quot;hpc_cache\&quot;，则容量范围为4096~1048576，单位为GiB。不同带宽，起步容量不一样，步长均为1TiB。如2GB/s带宽，起步容量为4TiB，即4096GiB；4GB/s带宽，起步容量为8TiB，即8192GiB；8GB/s带宽，起步容量为16TiB，即16384GiB。 
         :type size: int
-        :param subnet_id: 用户在VPC下面的子网的网络ID。
+        :param subnet_id: 用户在VPC下面的子网的网络ID。 
         :type subnet_id: str
-        :param vpc_id: 用户在某一区域下的VPC ID。
+        :param vpc_id: 用户在某一区域下的VPC ID。 
         :type vpc_id: str
         :param backup_id: 备份ID，从备份创建文件系统时为必选。
         :type backup_id: str
@@ -121,7 +121,7 @@ class Share:
     def availability_zone(self):
         """Gets the availability_zone of this Share.
 
-        文件系统所在可用区(az)的编码
+        文件系统所在可用区(az)的编码 
 
         :return: The availability_zone of this Share.
         :rtype: str
@@ -132,7 +132,7 @@ class Share:
     def availability_zone(self, availability_zone):
         """Sets the availability_zone of this Share.
 
-        文件系统所在可用区(az)的编码
+        文件系统所在可用区(az)的编码 
 
         :param availability_zone: The availability_zone of this Share.
         :type availability_zone: str
@@ -227,7 +227,7 @@ class Share:
     def security_group_id(self):
         """Gets the security_group_id of this Share.
 
-        用户在某一区域下的安全组ID。
+        用户在某一区域下的安全组ID。 
 
         :return: The security_group_id of this Share.
         :rtype: str
@@ -238,7 +238,7 @@ class Share:
     def security_group_id(self, security_group_id):
         """Sets the security_group_id of this Share.
 
-        用户在某一区域下的安全组ID。
+        用户在某一区域下的安全组ID。 
 
         :param security_group_id: The security_group_id of this Share.
         :type security_group_id: str
@@ -271,7 +271,7 @@ class Share:
     def share_type(self):
         """Gets the share_type of this Share.
 
-        文件系统类型，有效值为STANDARD或者PERFORMANCE。 通用型：标准型和标准型增强版填写STANDARD，性能型和性能型增强版填写PERFORMANCE。 HPC型：不校验该字段，可填写STANDARD或者PERFORMANCE。 HPC缓存型：不校验该字段，可填写STANDARD或者PERFORMANCE。 
+        文件系统类型，有效值为STANDARD或者PERFORMANCE。当文件系统正在创建时，该字段不返回。  - SFS Turbo上一代文件系统规格类型：标准型和标准型增强版填写STANDARD，性能型和性能型增强版填写PERFORMANCE。  - 20MB/s/TiB、40MB/s/TiB、125MB/s/TiB、250MB/s/TiB、500MB/s/TiB、1000MB/TiB：不校验该字段，填写STANDARD或者PERFORMANCE。  - HPC缓存型：不校验该字段，填写STANDARD或者PERFORMANCE。 
 
         :return: The share_type of this Share.
         :rtype: str
@@ -282,7 +282,7 @@ class Share:
     def share_type(self, share_type):
         """Sets the share_type of this Share.
 
-        文件系统类型，有效值为STANDARD或者PERFORMANCE。 通用型：标准型和标准型增强版填写STANDARD，性能型和性能型增强版填写PERFORMANCE。 HPC型：不校验该字段，可填写STANDARD或者PERFORMANCE。 HPC缓存型：不校验该字段，可填写STANDARD或者PERFORMANCE。 
+        文件系统类型，有效值为STANDARD或者PERFORMANCE。当文件系统正在创建时，该字段不返回。  - SFS Turbo上一代文件系统规格类型：标准型和标准型增强版填写STANDARD，性能型和性能型增强版填写PERFORMANCE。  - 20MB/s/TiB、40MB/s/TiB、125MB/s/TiB、250MB/s/TiB、500MB/s/TiB、1000MB/TiB：不校验该字段，填写STANDARD或者PERFORMANCE。  - HPC缓存型：不校验该字段，填写STANDARD或者PERFORMANCE。 
 
         :param share_type: The share_type of this Share.
         :type share_type: str
@@ -293,7 +293,7 @@ class Share:
     def size(self):
         """Gets the size of this Share.
 
-        通用型-普通文件系统容量，取值范围500~32768，单位GB。 通用型-增强版文件系统，即在“metadata”字段中设置了expand_type=\"bandwidth\"，则容量范围是10240~327680，单位GiB。 HPC型文件系统，即在“metadata”字段中设置了expand_type=\"hpc\"，则容量范围是3686(或1228)~1048576，单位GiB。对于20MB/s/TiB的规格，起步容量为3686GiB；对于HPC其他规格，起步容量为1228GiB。HPC型文件系统的容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB->3686GiB, 4.8TiB->4915GiB，8.4TiB->8601GiB。 HPC缓存型文件系统，即在“metadata”字段中设置了expand_type=\"hpc_cache\"，则容量范围是4096~1048576，单位GiB。不同带宽，起步容量不一样，步长均为1TiB。如2GB/s带宽，起步容量为4TiB，即4096GiB；4GB/s带宽，起步容量为8TiB，即8192GiB；8GB/s带宽，起步容量为16TiB，即16384GiB。 
+        - SFS Turbo上一代文件系统规格类型-文件系统容量：取值范围为500~32768，单位为GiB。  - SFS Turbo上一代文件系统规格类型-增强版文件系统：在“metadata”字段中设置了expand_type=\"bandwidth\"，则容量范围为10240~327680，单位为GiB。  - 20MB/s/TiB：在“metadata”字段中设置了expand_type=\"hpc\"、hpc_bw=\"20M\"，则容量范围为3686~1048576，单位为GiB。容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB->3686GiB, 4.8TiB->4915GiB，8.4TiB->8601GiB。  - 40MB/s/TiB：在“metadata”字段中设置了expand_type=\"hpc\"、hpc_bw=\"40M\"，则容量范围为1228~1048576，单位为GiB。容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB->3686GiB, 4.8TiB->4915GiB，8.4TiB->8601GiB。  - 125MB/s/TiB：在“metadata”字段中设置了expand_type=\"hpc\"、hpc_bw=\"125M\"，则容量范围为1228~1048576，单位为GiB。容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB->3686GiB, 4.8TiB->4915GiB，8.4TiB->8601GiB。  - 250MB/s/TiB：在“metadata”字段中设置了expand_type=\"hpc\"、hpc_bw=\"250M\"，则容量范围为1228~1048576，单位为GiB。容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB->3686GiB, 4.8TiB->4915GiB，8.4TiB->8601GiB。  - 500MB/s/TiB：在“metadata”字段中设置了expand_type=\"hpc\"、hpc_bw=\"500M\"，则容量范围为1228~1048576，单位为GiB。容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB->3686GiB, 4.8TiB->4915GiB，8.4TiB->8601GiB。  - 1000MB/s/TiB：在“metadata”字段中设置了expand_type=\"hpc\"、hpc_bw=\"1000M\"，则容量范围为1228~1048576，单位为GiB。容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB->3686GiB, 4.8TiB->4915GiB，8.4TiB->8601GiB。  - HPC缓存型文件系统：在“metadata”字段中设置了expand_type=\"hpc_cache\"，则容量范围为4096~1048576，单位为GiB。不同带宽，起步容量不一样，步长均为1TiB。如2GB/s带宽，起步容量为4TiB，即4096GiB；4GB/s带宽，起步容量为8TiB，即8192GiB；8GB/s带宽，起步容量为16TiB，即16384GiB。 
 
         :return: The size of this Share.
         :rtype: int
@@ -304,7 +304,7 @@ class Share:
     def size(self, size):
         """Sets the size of this Share.
 
-        通用型-普通文件系统容量，取值范围500~32768，单位GB。 通用型-增强版文件系统，即在“metadata”字段中设置了expand_type=\"bandwidth\"，则容量范围是10240~327680，单位GiB。 HPC型文件系统，即在“metadata”字段中设置了expand_type=\"hpc\"，则容量范围是3686(或1228)~1048576，单位GiB。对于20MB/s/TiB的规格，起步容量为3686GiB；对于HPC其他规格，起步容量为1228GiB。HPC型文件系统的容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB->3686GiB, 4.8TiB->4915GiB，8.4TiB->8601GiB。 HPC缓存型文件系统，即在“metadata”字段中设置了expand_type=\"hpc_cache\"，则容量范围是4096~1048576，单位GiB。不同带宽，起步容量不一样，步长均为1TiB。如2GB/s带宽，起步容量为4TiB，即4096GiB；4GB/s带宽，起步容量为8TiB，即8192GiB；8GB/s带宽，起步容量为16TiB，即16384GiB。 
+        - SFS Turbo上一代文件系统规格类型-文件系统容量：取值范围为500~32768，单位为GiB。  - SFS Turbo上一代文件系统规格类型-增强版文件系统：在“metadata”字段中设置了expand_type=\"bandwidth\"，则容量范围为10240~327680，单位为GiB。  - 20MB/s/TiB：在“metadata”字段中设置了expand_type=\"hpc\"、hpc_bw=\"20M\"，则容量范围为3686~1048576，单位为GiB。容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB->3686GiB, 4.8TiB->4915GiB，8.4TiB->8601GiB。  - 40MB/s/TiB：在“metadata”字段中设置了expand_type=\"hpc\"、hpc_bw=\"40M\"，则容量范围为1228~1048576，单位为GiB。容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB->3686GiB, 4.8TiB->4915GiB，8.4TiB->8601GiB。  - 125MB/s/TiB：在“metadata”字段中设置了expand_type=\"hpc\"、hpc_bw=\"125M\"，则容量范围为1228~1048576，单位为GiB。容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB->3686GiB, 4.8TiB->4915GiB，8.4TiB->8601GiB。  - 250MB/s/TiB：在“metadata”字段中设置了expand_type=\"hpc\"、hpc_bw=\"250M\"，则容量范围为1228~1048576，单位为GiB。容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB->3686GiB, 4.8TiB->4915GiB，8.4TiB->8601GiB。  - 500MB/s/TiB：在“metadata”字段中设置了expand_type=\"hpc\"、hpc_bw=\"500M\"，则容量范围为1228~1048576，单位为GiB。容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB->3686GiB, 4.8TiB->4915GiB，8.4TiB->8601GiB。  - 1000MB/s/TiB：在“metadata”字段中设置了expand_type=\"hpc\"、hpc_bw=\"1000M\"，则容量范围为1228~1048576，单位为GiB。容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB->3686GiB, 4.8TiB->4915GiB，8.4TiB->8601GiB。  - HPC缓存型文件系统：在“metadata”字段中设置了expand_type=\"hpc_cache\"，则容量范围为4096~1048576，单位为GiB。不同带宽，起步容量不一样，步长均为1TiB。如2GB/s带宽，起步容量为4TiB，即4096GiB；4GB/s带宽，起步容量为8TiB，即8192GiB；8GB/s带宽，起步容量为16TiB，即16384GiB。 
 
         :param size: The size of this Share.
         :type size: int
@@ -315,7 +315,7 @@ class Share:
     def subnet_id(self):
         """Gets the subnet_id of this Share.
 
-        用户在VPC下面的子网的网络ID。
+        用户在VPC下面的子网的网络ID。 
 
         :return: The subnet_id of this Share.
         :rtype: str
@@ -326,7 +326,7 @@ class Share:
     def subnet_id(self, subnet_id):
         """Sets the subnet_id of this Share.
 
-        用户在VPC下面的子网的网络ID。
+        用户在VPC下面的子网的网络ID。 
 
         :param subnet_id: The subnet_id of this Share.
         :type subnet_id: str
@@ -337,7 +337,7 @@ class Share:
     def vpc_id(self):
         """Gets the vpc_id of this Share.
 
-        用户在某一区域下的VPC ID。
+        用户在某一区域下的VPC ID。 
 
         :return: The vpc_id of this Share.
         :rtype: str
@@ -348,7 +348,7 @@ class Share:
     def vpc_id(self, vpc_id):
         """Sets the vpc_id of this Share.
 
-        用户在某一区域下的VPC ID。
+        用户在某一区域下的VPC ID。 
 
         :param vpc_id: The vpc_id of this Share.
         :type vpc_id: str

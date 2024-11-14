@@ -31,7 +31,7 @@ class CreateBackendTargetRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param file_system_path: 联动目录名称，SFS Turbo会在文件系统根目录下以该名称创建一个子目录，该目录用于绑定后端存储。子目录名称不能重复，长度不能超过255个字符，子目录名称不能是“.”或“..”。不支持多层目录，不能包含字符&#39;/&#39;。
+        :param file_system_path: 联动目录名称，SFS Turbo会在文件系统根目录下以该名称创建一个子目录，该目录用于绑定后端存储。  必须是文件系统根目录下不存在的目录名，长度不能超过63个字符，子目录名称不能是“.”或“..”。  不支持多层目录，不能包含字符&#39;/&#39;。 
         :type file_system_path: str
         :param obs: 
         :type obs: :class:`huaweicloudsdksfsturbo.v1.ObsDataRepository`
@@ -50,7 +50,7 @@ class CreateBackendTargetRequestBody:
     def file_system_path(self):
         """Gets the file_system_path of this CreateBackendTargetRequestBody.
 
-        联动目录名称，SFS Turbo会在文件系统根目录下以该名称创建一个子目录，该目录用于绑定后端存储。子目录名称不能重复，长度不能超过255个字符，子目录名称不能是“.”或“..”。不支持多层目录，不能包含字符'/'。
+        联动目录名称，SFS Turbo会在文件系统根目录下以该名称创建一个子目录，该目录用于绑定后端存储。  必须是文件系统根目录下不存在的目录名，长度不能超过63个字符，子目录名称不能是“.”或“..”。  不支持多层目录，不能包含字符'/'。 
 
         :return: The file_system_path of this CreateBackendTargetRequestBody.
         :rtype: str
@@ -61,7 +61,7 @@ class CreateBackendTargetRequestBody:
     def file_system_path(self, file_system_path):
         """Sets the file_system_path of this CreateBackendTargetRequestBody.
 
-        联动目录名称，SFS Turbo会在文件系统根目录下以该名称创建一个子目录，该目录用于绑定后端存储。子目录名称不能重复，长度不能超过255个字符，子目录名称不能是“.”或“..”。不支持多层目录，不能包含字符'/'。
+        联动目录名称，SFS Turbo会在文件系统根目录下以该名称创建一个子目录，该目录用于绑定后端存储。  必须是文件系统根目录下不存在的目录名，长度不能超过63个字符，子目录名称不能是“.”或“..”。  不支持多层目录，不能包含字符'/'。 
 
         :param file_system_path: The file_system_path of this CreateBackendTargetRequestBody.
         :type file_system_path: str

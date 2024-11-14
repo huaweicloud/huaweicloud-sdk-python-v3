@@ -17,34 +17,48 @@ class RetypeVolume:
     sensitive_list = []
 
     openapi_types = {
-        'new_type': 'str'
+        'new_type': 'str',
+        'iops': 'int',
+        'throughput': 'int'
     }
 
     attribute_map = {
-        'new_type': 'new_type'
+        'new_type': 'new_type',
+        'iops': 'iops',
+        'throughput': 'throughput'
     }
 
-    def __init__(self, new_type=None):
+    def __init__(self, new_type=None, iops=None, throughput=None):
         """RetypeVolume
 
         The model defined in huaweicloud sdk
 
-        :param new_type: 磁盘变更至指定的磁盘类型
+        :param new_type: 变更至指定的云硬盘类型
         :type new_type: str
+        :param iops: 云硬盘iops大小。
+        :type iops: int
+        :param throughput: 云硬盘的吞吐量大小。
+        :type throughput: int
         """
         
         
 
         self._new_type = None
+        self._iops = None
+        self._throughput = None
         self.discriminator = None
 
         self.new_type = new_type
+        if iops is not None:
+            self.iops = iops
+        if throughput is not None:
+            self.throughput = throughput
 
     @property
     def new_type(self):
         """Gets the new_type of this RetypeVolume.
 
-        磁盘变更至指定的磁盘类型
+        变更至指定的云硬盘类型
 
         :return: The new_type of this RetypeVolume.
         :rtype: str
@@ -55,12 +69,56 @@ class RetypeVolume:
     def new_type(self, new_type):
         """Sets the new_type of this RetypeVolume.
 
-        磁盘变更至指定的磁盘类型
+        变更至指定的云硬盘类型
 
         :param new_type: The new_type of this RetypeVolume.
         :type new_type: str
         """
         self._new_type = new_type
+
+    @property
+    def iops(self):
+        """Gets the iops of this RetypeVolume.
+
+        云硬盘iops大小。
+
+        :return: The iops of this RetypeVolume.
+        :rtype: int
+        """
+        return self._iops
+
+    @iops.setter
+    def iops(self, iops):
+        """Sets the iops of this RetypeVolume.
+
+        云硬盘iops大小。
+
+        :param iops: The iops of this RetypeVolume.
+        :type iops: int
+        """
+        self._iops = iops
+
+    @property
+    def throughput(self):
+        """Gets the throughput of this RetypeVolume.
+
+        云硬盘的吞吐量大小。
+
+        :return: The throughput of this RetypeVolume.
+        :rtype: int
+        """
+        return self._throughput
+
+    @throughput.setter
+    def throughput(self, throughput):
+        """Sets the throughput of this RetypeVolume.
+
+        云硬盘的吞吐量大小。
+
+        :param throughput: The throughput of this RetypeVolume.
+        :type throughput: int
+        """
+        self._throughput = throughput
 
     def to_dict(self):
         """Returns the model properties as a dict"""

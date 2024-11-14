@@ -31,7 +31,7 @@ class UpdateHpcShareRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param action: 更新 HPC 型文件系统的操作类型。当前仅支持取值 config_gc_time
+        :param action: 更新文件系统的操作类型。当前仅支持取值 config_gc_time
         :type action: str
         :param gc_time: 文件系统冷数据淘汰时间，单位为小时，取值范围 [1, 100000000]。系统默认为 60 小时
         :type gc_time: int
@@ -50,7 +50,7 @@ class UpdateHpcShareRequestBody:
     def action(self):
         """Gets the action of this UpdateHpcShareRequestBody.
 
-        更新 HPC 型文件系统的操作类型。当前仅支持取值 config_gc_time
+        更新文件系统的操作类型。当前仅支持取值 config_gc_time
 
         :return: The action of this UpdateHpcShareRequestBody.
         :rtype: str
@@ -61,7 +61,7 @@ class UpdateHpcShareRequestBody:
     def action(self, action):
         """Sets the action of this UpdateHpcShareRequestBody.
 
-        更新 HPC 型文件系统的操作类型。当前仅支持取值 config_gc_time
+        更新文件系统的操作类型。当前仅支持取值 config_gc_time
 
         :param action: The action of this UpdateHpcShareRequestBody.
         :type action: str

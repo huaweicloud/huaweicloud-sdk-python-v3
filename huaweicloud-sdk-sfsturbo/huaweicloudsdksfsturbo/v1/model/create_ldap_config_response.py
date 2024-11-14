@@ -30,7 +30,7 @@ class CreateLdapConfigResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 创建ldap异步任务的id
+        :param job_id: ldap异步任务的id。可通过查询job的状态详情接口查询job的执行状态。
         :type job_id: str
         """
         
@@ -46,7 +46,7 @@ class CreateLdapConfigResponse(SdkResponse):
     def job_id(self):
         """Gets the job_id of this CreateLdapConfigResponse.
 
-        创建ldap异步任务的id
+        ldap异步任务的id。可通过查询job的状态详情接口查询job的执行状态。
 
         :return: The job_id of this CreateLdapConfigResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class CreateLdapConfigResponse(SdkResponse):
     def job_id(self, job_id):
         """Sets the job_id of this CreateLdapConfigResponse.
 
-        创建ldap异步任务的id
+        ldap异步任务的id。可通过查询job的状态详情接口查询job的执行状态。
 
         :param job_id: The job_id of this CreateLdapConfigResponse.
         :type job_id: str

@@ -51,7 +51,7 @@ class ListUsedDesktopInfoReq:
         :type group_by_type: str
         :param desktop_username: 若传桌面的用户名，则查询使用时间只有该用户的使用时间。
         :type desktop_username: str
-        :param offset: 从查询结果中的第几条数据开始返回,用于分页查询，取值范围0-2000，默认从0开始。
+        :param offset: 从查询结果中的第几条数据开始返回,用于分页查询，取值范围0-2147483647，默认从0开始。
         :type offset: int
         :param limit: 查询结果中想要返回的信息条目数量,用于分页查询，取值范围0-100，默认值100。
         :type limit: int
@@ -197,7 +197,7 @@ class ListUsedDesktopInfoReq:
     def offset(self):
         """Gets the offset of this ListUsedDesktopInfoReq.
 
-        从查询结果中的第几条数据开始返回,用于分页查询，取值范围0-2000，默认从0开始。
+        从查询结果中的第几条数据开始返回,用于分页查询，取值范围0-2147483647，默认从0开始。
 
         :return: The offset of this ListUsedDesktopInfoReq.
         :rtype: int
@@ -208,7 +208,7 @@ class ListUsedDesktopInfoReq:
     def offset(self, offset):
         """Sets the offset of this ListUsedDesktopInfoReq.
 
-        从查询结果中的第几条数据开始返回,用于分页查询，取值范围0-2000，默认从0开始。
+        从查询结果中的第几条数据开始返回,用于分页查询，取值范围0-2147483647，默认从0开始。
 
         :param offset: The offset of this ListUsedDesktopInfoReq.
         :type offset: int

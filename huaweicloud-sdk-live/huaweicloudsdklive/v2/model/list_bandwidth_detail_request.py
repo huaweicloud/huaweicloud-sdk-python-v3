@@ -55,9 +55,9 @@ class ListBandwidthDetailRequest:
         :type app: str
         :param stream: 流名。
         :type stream: str
-        :param country: 国家列表。具体取值请参考[国家名称缩写](vod_08_0172.xml)，不填写查询所有国家。 
+        :param country: 国家列表。具体取值请参考[国家名称缩写](https://support.huaweicloud.com/api-live/vod_08_0172.html)，不填写查询所有国家。 
         :type country: list[str]
-        :param region: 区域列表。具体取值请参考[省份名称缩写](live_03_0043.xml)，不填写查询所有区域。 
+        :param region: 区域列表。具体取值请参考[省份名称缩写](https://support.huaweicloud.com/api-live/live_03_0043.html)，不填写查询所有区域。 
         :type region: list[str]
         :param isp: 运营商列表，取值如下： - CMCC ：移动 - CTCC ：电信 - CUCC ：联通 - OTHER ：其他  不填写查询所有运营商。 
         :type isp: list[str]
@@ -181,7 +181,7 @@ class ListBandwidthDetailRequest:
     def country(self):
         """Gets the country of this ListBandwidthDetailRequest.
 
-        国家列表。具体取值请参考[国家名称缩写](vod_08_0172.xml)，不填写查询所有国家。 
+        国家列表。具体取值请参考[国家名称缩写](https://support.huaweicloud.com/api-live/vod_08_0172.html)，不填写查询所有国家。 
 
         :return: The country of this ListBandwidthDetailRequest.
         :rtype: list[str]
@@ -192,7 +192,7 @@ class ListBandwidthDetailRequest:
     def country(self, country):
         """Sets the country of this ListBandwidthDetailRequest.
 
-        国家列表。具体取值请参考[国家名称缩写](vod_08_0172.xml)，不填写查询所有国家。 
+        国家列表。具体取值请参考[国家名称缩写](https://support.huaweicloud.com/api-live/vod_08_0172.html)，不填写查询所有国家。 
 
         :param country: The country of this ListBandwidthDetailRequest.
         :type country: list[str]
@@ -203,7 +203,7 @@ class ListBandwidthDetailRequest:
     def region(self):
         """Gets the region of this ListBandwidthDetailRequest.
 
-        区域列表。具体取值请参考[省份名称缩写](live_03_0043.xml)，不填写查询所有区域。 
+        区域列表。具体取值请参考[省份名称缩写](https://support.huaweicloud.com/api-live/live_03_0043.html)，不填写查询所有区域。 
 
         :return: The region of this ListBandwidthDetailRequest.
         :rtype: list[str]
@@ -214,7 +214,7 @@ class ListBandwidthDetailRequest:
     def region(self, region):
         """Sets the region of this ListBandwidthDetailRequest.
 
-        区域列表。具体取值请参考[省份名称缩写](live_03_0043.xml)，不填写查询所有区域。 
+        区域列表。具体取值请参考[省份名称缩写](https://support.huaweicloud.com/api-live/live_03_0043.html)，不填写查询所有区域。 
 
         :param region: The region of this ListBandwidthDetailRequest.
         :type region: list[str]

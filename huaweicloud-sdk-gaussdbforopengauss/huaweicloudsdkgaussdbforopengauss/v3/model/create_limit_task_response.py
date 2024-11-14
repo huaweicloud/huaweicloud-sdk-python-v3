@@ -25,7 +25,7 @@ class CreateLimitTaskResponse(SdkResponse):
         'databases': 'str',
         'task_name': 'str',
         'sql_model': 'str',
-        'key_words': 'list[str]',
+        'key_words': 'str',
         'status': 'str',
         'instance_id': 'str',
         'rule_name': 'str',
@@ -64,7 +64,7 @@ class CreateLimitTaskResponse(SdkResponse):
         'creator': 'creator',
         'modifier': 'modifier',
         'node_infos': 'node_infos',
-        'job_id': 'jobId'
+        'job_id': 'job_id'
     }
 
     def __init__(self, task_id=None, task_scope=None, limit_type=None, limit_type_value=None, databases=None, task_name=None, sql_model=None, key_words=None, status=None, instance_id=None, rule_name=None, parallel_size=None, cpu_utilization=None, memory_utilization=None, start_time=None, end_time=None, created=None, updated=None, creator=None, modifier=None, node_infos=None, job_id=None):
@@ -87,7 +87,7 @@ class CreateLimitTaskResponse(SdkResponse):
         :param sql_model: SQL模板,仅当任务类型为SQL_ID时，返回该值且与请求参数相同。
         :type sql_model: str
         :param key_words: 关键词，仅当任务类型为SQL_TYPE时，返回该值且与请求参数相同。
-        :type key_words: list[str]
+        :type key_words: str
         :param status: 限流任务状态，当前支持：CREATING，UPDATEING，DELETING，WAIT_EXCUTE，EXCUTING，TIME_OVER，DELETED，CREATE_FAILED，UPDATE_FAILED，DELETE_FAILED，EXCEPTION，NODE_SHUT_DOWN。
         :type status: str
         :param instance_id: 实例id。
@@ -350,7 +350,7 @@ class CreateLimitTaskResponse(SdkResponse):
         关键词，仅当任务类型为SQL_TYPE时，返回该值且与请求参数相同。
 
         :return: The key_words of this CreateLimitTaskResponse.
-        :rtype: list[str]
+        :rtype: str
         """
         return self._key_words
 
@@ -361,7 +361,7 @@ class CreateLimitTaskResponse(SdkResponse):
         关键词，仅当任务类型为SQL_TYPE时，返回该值且与请求参数相同。
 
         :param key_words: The key_words of this CreateLimitTaskResponse.
-        :type key_words: list[str]
+        :type key_words: str
         """
         self._key_words = key_words
 

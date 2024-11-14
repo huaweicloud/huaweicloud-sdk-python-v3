@@ -17,28 +17,42 @@ class ListPermRulesRequest:
     sensitive_list = []
 
     openapi_types = {
-        'share_id': 'str'
+        'share_id': 'str',
+        'limit': 'int',
+        'offset': 'int'
     }
 
     attribute_map = {
-        'share_id': 'share_id'
+        'share_id': 'share_id',
+        'limit': 'limit',
+        'offset': 'offset'
     }
 
-    def __init__(self, share_id=None):
+    def __init__(self, share_id=None, limit=None, offset=None):
         """ListPermRulesRequest
 
         The model defined in huaweicloud sdk
 
         :param share_id: 文件系统id
         :type share_id: str
+        :param limit: 返回的权限规则个数
+        :type limit: int
+        :param offset: 返回的权限规则的偏移量
+        :type offset: int
         """
         
         
 
         self._share_id = None
+        self._limit = None
+        self._offset = None
         self.discriminator = None
 
         self.share_id = share_id
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
 
     @property
     def share_id(self):
@@ -61,6 +75,50 @@ class ListPermRulesRequest:
         :type share_id: str
         """
         self._share_id = share_id
+
+    @property
+    def limit(self):
+        """Gets the limit of this ListPermRulesRequest.
+
+        返回的权限规则个数
+
+        :return: The limit of this ListPermRulesRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListPermRulesRequest.
+
+        返回的权限规则个数
+
+        :param limit: The limit of this ListPermRulesRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def offset(self):
+        """Gets the offset of this ListPermRulesRequest.
+
+        返回的权限规则的偏移量
+
+        :return: The offset of this ListPermRulesRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ListPermRulesRequest.
+
+        返回的权限规则的偏移量
+
+        :param offset: The offset of this ListPermRulesRequest.
+        :type offset: int
+        """
+        self._offset = offset
 
     def to_dict(self):
         """Returns the model properties as a dict"""

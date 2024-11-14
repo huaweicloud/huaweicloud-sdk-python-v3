@@ -18,15 +18,19 @@ class InferenceVideoMarkInfo:
 
     openapi_types = {
         'video_start_time': 'str',
-        'video_end_time': 'str'
+        'video_end_time': 'str',
+        'chat_video_start_time': 'str',
+        'chat_video_end_time': 'str'
     }
 
     attribute_map = {
         'video_start_time': 'video_start_time',
-        'video_end_time': 'video_end_time'
+        'video_end_time': 'video_end_time',
+        'chat_video_start_time': 'chat_video_start_time',
+        'chat_video_end_time': 'chat_video_end_time'
     }
 
-    def __init__(self, video_start_time=None, video_end_time=None):
+    def __init__(self, video_start_time=None, video_end_time=None, chat_video_start_time=None, chat_video_end_time=None):
         """InferenceVideoMarkInfo
 
         The model defined in huaweicloud sdk
@@ -35,18 +39,28 @@ class InferenceVideoMarkInfo:
         :type video_start_time: str
         :param video_end_time: 选取推理数据预处理视频结束时间。格式：“HH:MM:SS.mmm”。
         :type video_end_time: str
+        :param chat_video_start_time: 选取推理数据预处理智能交互视频起始时间。格式：“HH:MM:SS.mmm”。
+        :type chat_video_start_time: str
+        :param chat_video_end_time: 选取推理数据预处理智能交互视频结束时间。格式：“HH:MM:SS.mmm”。
+        :type chat_video_end_time: str
         """
         
         
 
         self._video_start_time = None
         self._video_end_time = None
+        self._chat_video_start_time = None
+        self._chat_video_end_time = None
         self.discriminator = None
 
         if video_start_time is not None:
             self.video_start_time = video_start_time
         if video_end_time is not None:
             self.video_end_time = video_end_time
+        if chat_video_start_time is not None:
+            self.chat_video_start_time = chat_video_start_time
+        if chat_video_end_time is not None:
+            self.chat_video_end_time = chat_video_end_time
 
     @property
     def video_start_time(self):
@@ -91,6 +105,50 @@ class InferenceVideoMarkInfo:
         :type video_end_time: str
         """
         self._video_end_time = video_end_time
+
+    @property
+    def chat_video_start_time(self):
+        """Gets the chat_video_start_time of this InferenceVideoMarkInfo.
+
+        选取推理数据预处理智能交互视频起始时间。格式：“HH:MM:SS.mmm”。
+
+        :return: The chat_video_start_time of this InferenceVideoMarkInfo.
+        :rtype: str
+        """
+        return self._chat_video_start_time
+
+    @chat_video_start_time.setter
+    def chat_video_start_time(self, chat_video_start_time):
+        """Sets the chat_video_start_time of this InferenceVideoMarkInfo.
+
+        选取推理数据预处理智能交互视频起始时间。格式：“HH:MM:SS.mmm”。
+
+        :param chat_video_start_time: The chat_video_start_time of this InferenceVideoMarkInfo.
+        :type chat_video_start_time: str
+        """
+        self._chat_video_start_time = chat_video_start_time
+
+    @property
+    def chat_video_end_time(self):
+        """Gets the chat_video_end_time of this InferenceVideoMarkInfo.
+
+        选取推理数据预处理智能交互视频结束时间。格式：“HH:MM:SS.mmm”。
+
+        :return: The chat_video_end_time of this InferenceVideoMarkInfo.
+        :rtype: str
+        """
+        return self._chat_video_end_time
+
+    @chat_video_end_time.setter
+    def chat_video_end_time(self, chat_video_end_time):
+        """Sets the chat_video_end_time of this InferenceVideoMarkInfo.
+
+        选取推理数据预处理智能交互视频结束时间。格式：“HH:MM:SS.mmm”。
+
+        :param chat_video_end_time: The chat_video_end_time of this InferenceVideoMarkInfo.
+        :type chat_video_end_time: str
+        """
+        self._chat_video_end_time = chat_video_end_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

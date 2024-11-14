@@ -40,7 +40,13 @@ class ShowShareResponse(SdkResponse):
         'subnet_id': 'str',
         'vpc_id': 'str',
         'enterprise_project_id': 'str',
-        'tags': 'list[ResourceTag]'
+        'tags': 'list[ResourceTag]',
+        'optional_endpoint': 'str',
+        'hpc_bw': 'str',
+        'instance_id': 'str',
+        'instance_type': 'str',
+        'status_detail': 'str',
+        'features': 'ShareInfoFeatures'
     }
 
     attribute_map = {
@@ -66,10 +72,16 @@ class ShowShareResponse(SdkResponse):
         'subnet_id': 'subnet_id',
         'vpc_id': 'vpc_id',
         'enterprise_project_id': 'enterprise_project_id',
-        'tags': 'tags'
+        'tags': 'tags',
+        'optional_endpoint': 'optional_endpoint',
+        'hpc_bw': 'hpc_bw',
+        'instance_id': 'instanceId',
+        'instance_type': 'instanceType',
+        'status_detail': 'statusDetail',
+        'features': 'features'
     }
 
-    def __init__(self, action_progress=None, version=None, avail_capacity=None, availability_zone=None, az_name=None, created_at=None, crypt_key_id=None, expand_type=None, export_location=None, id=None, name=None, pay_model=None, region=None, security_group_id=None, share_proto=None, share_type=None, size=None, status=None, sub_status=None, subnet_id=None, vpc_id=None, enterprise_project_id=None, tags=None):
+    def __init__(self, action_progress=None, version=None, avail_capacity=None, availability_zone=None, az_name=None, created_at=None, crypt_key_id=None, expand_type=None, export_location=None, id=None, name=None, pay_model=None, region=None, security_group_id=None, share_proto=None, share_type=None, size=None, status=None, sub_status=None, subnet_id=None, vpc_id=None, enterprise_project_id=None, tags=None, optional_endpoint=None, hpc_bw=None, instance_id=None, instance_type=None, status_detail=None, features=None):
         """ShowShareResponse
 
         The model defined in huaweicloud sdk
@@ -88,15 +100,15 @@ class ShowShareResponse(SdkResponse):
         :type created_at: datetime
         :param crypt_key_id: 用户指定的加密密钥ID，非加密盘时不返回。
         :type crypt_key_id: str
-        :param expand_type: 如果是增强型文件系统，该字段返回bandwidth，否则不返回。
+        :param expand_type: 如果是增强版文件系统，该字段返回bandwidth；如果是20MB/s/TiB、40MB/s/TiB、125MB/s/TiB、250MB/s/TiB、500MB/s/TiB、1000MB/s/TiB，该字段返回hpc；否则不返回。
         :type expand_type: str
-        :param export_location: SFS Turbo文件系统的挂载端点。
+        :param export_location: SFS Turbo文件系统的挂载端点。例如\&quot;192.168.0.90:/\&quot;。如果文件系统正在创建，该字段不返回。
         :type export_location: str
         :param id: SFS Turbo的文件系统ID。
         :type id: str
         :param name: 创建时指定的SFS Turbo文件系统名称。
         :type name: str
-        :param pay_model: SFS Turbo文件系统的计费模式。&#39;0&#39;代表按需付费，&#39;1&#39;代表包周期计费。
+        :param pay_model: SFS Turbo文件系统的计费模式。&#39;0&#39;代表按需付费，&#39;1&#39;代表包周期计费。如果文件系统正在创建，该字段不返回。
         :type pay_model: str
         :param region: SFS Turbo文件系统所在区域。
         :type region: str
@@ -110,7 +122,7 @@ class ShowShareResponse(SdkResponse):
         :type size: str
         :param status: SFS Turbo文件系统的状态。&#39;100&#39;表示创建中，&#39;200&#39;表示可用，&#39;303&#39;表示创建失败，&#39;800&#39;表示实例被冻结。
         :type status: str
-        :param sub_status: SFS Turbo文件系统的子状态。 &#39;121&#39;表示扩容中；&#39;132&#39;表示修改安全组中；&#39;137&#39;表示添加VPC中；&#39;138&#39;表示删除VPC中；&#39;150&#39;表示配置联动后端中；&#39;151&#39;表示删除联动后端配置中； &#39;221&#39;表示扩容成功；&#39;232&#39;表示修改安全组成功；&#39;237&#39;表示添加VPC成功；&#39;238&#39;表示删除VPC成功；&#39;250&#39;表示配置联动后端成功；&#39;251&#39;表示删除联动后端配置成功； &#39;321&#39;表示扩容失败；&#39;332&#39;表示修改安全组失败；&#39;337&#39;表示添加VPC失败；&#39;338&#39;表示删除VPC失败；&#39;350&#39;表示配置联动后端失败；&#39;351&#39;表示删除联动后端配置失败； 
+        :param sub_status: SFS Turbo文件系统的子状态。当用户未对文件系统有修改类操作时，该字段不返回。 &#39;121&#39;表示扩容中；&#39;132&#39;表示修改安全组中；&#39;137&#39;表示添加VPC中；&#39;138&#39;表示删除VPC中；&#39;150&#39;表示配置联动后端中；&#39;151&#39;表示删除联动后端配置中。 &#39;221&#39;表示扩容成功；&#39;232&#39;表示修改安全组成功；&#39;237&#39;表示添加VPC成功；&#39;238&#39;表示删除VPC成功；&#39;250&#39;表示配置联动后端成功；&#39;251&#39;表示删除联动后端配置成功。 &#39;321&#39;表示扩容失败；&#39;332&#39;表示修改安全组失败；&#39;337&#39;表示添加VPC失败；&#39;338&#39;表示删除VPC失败；&#39;350&#39;表示配置联动后端失败；&#39;351&#39;表示删除联动后端配置失败。 
         :type sub_status: str
         :param subnet_id: 用户指定的子网的网络ID。
         :type subnet_id: str
@@ -120,6 +132,18 @@ class ShowShareResponse(SdkResponse):
         :type enterprise_project_id: str
         :param tags: tag标签的列表。
         :type tags: list[:class:`huaweicloudsdksfsturbo.v1.ResourceTag`]
+        :param optional_endpoint: 可选的挂载IP地址。上一代文件系统规格类型不返回该字段。
+        :type optional_endpoint: str
+        :param hpc_bw: 文件系统的带宽规格。 - \&quot;20M\&quot;表示20MB/s/TiB - \&quot;40M\&quot;表示40MB/s/TiB - \&quot;125M\&quot;表示125MB/s/TiB - \&quot;250M\&quot;表示250MB/s/TiB - \&quot;500M\&quot;表示500MB/s/TiB  - \&quot;1000M\&quot;表示1000MB/s/TiB  - \&quot;2G\&quot;、\&quot;4G\&quot;、\&quot;8G\&quot;、\&quot;16G\&quot;、\&quot;24G\&quot;、\&quot;32G\&quot;或\&quot;48G\&quot;表示HPC缓存型的带宽规格。 
+        :type hpc_bw: str
+        :param instance_id: 文件系统规格的节点id，为预留字段，不具备实际含义。
+        :type instance_id: str
+        :param instance_type: 文件系统规格的节点类型，为预留字段，不具备实际含义。
+        :type instance_type: str
+        :param status_detail: 文件系统的请求ID，为预留字段，不具备实际含义。
+        :type status_detail: str
+        :param features: 
+        :type features: :class:`huaweicloudsdksfsturbo.v1.ShareInfoFeatures`
         """
         
         super(ShowShareResponse, self).__init__()
@@ -147,6 +171,12 @@ class ShowShareResponse(SdkResponse):
         self._vpc_id = None
         self._enterprise_project_id = None
         self._tags = None
+        self._optional_endpoint = None
+        self._hpc_bw = None
+        self._instance_id = None
+        self._instance_type = None
+        self._status_detail = None
+        self._features = None
         self.discriminator = None
 
         if action_progress is not None:
@@ -195,6 +225,18 @@ class ShowShareResponse(SdkResponse):
             self.enterprise_project_id = enterprise_project_id
         if tags is not None:
             self.tags = tags
+        if optional_endpoint is not None:
+            self.optional_endpoint = optional_endpoint
+        if hpc_bw is not None:
+            self.hpc_bw = hpc_bw
+        if instance_id is not None:
+            self.instance_id = instance_id
+        if instance_type is not None:
+            self.instance_type = instance_type
+        if status_detail is not None:
+            self.status_detail = status_detail
+        if features is not None:
+            self.features = features
 
     @property
     def action_progress(self):
@@ -350,7 +392,7 @@ class ShowShareResponse(SdkResponse):
     def expand_type(self):
         """Gets the expand_type of this ShowShareResponse.
 
-        如果是增强型文件系统，该字段返回bandwidth，否则不返回。
+        如果是增强版文件系统，该字段返回bandwidth；如果是20MB/s/TiB、40MB/s/TiB、125MB/s/TiB、250MB/s/TiB、500MB/s/TiB、1000MB/s/TiB，该字段返回hpc；否则不返回。
 
         :return: The expand_type of this ShowShareResponse.
         :rtype: str
@@ -361,7 +403,7 @@ class ShowShareResponse(SdkResponse):
     def expand_type(self, expand_type):
         """Sets the expand_type of this ShowShareResponse.
 
-        如果是增强型文件系统，该字段返回bandwidth，否则不返回。
+        如果是增强版文件系统，该字段返回bandwidth；如果是20MB/s/TiB、40MB/s/TiB、125MB/s/TiB、250MB/s/TiB、500MB/s/TiB、1000MB/s/TiB，该字段返回hpc；否则不返回。
 
         :param expand_type: The expand_type of this ShowShareResponse.
         :type expand_type: str
@@ -372,7 +414,7 @@ class ShowShareResponse(SdkResponse):
     def export_location(self):
         """Gets the export_location of this ShowShareResponse.
 
-        SFS Turbo文件系统的挂载端点。
+        SFS Turbo文件系统的挂载端点。例如\"192.168.0.90:/\"。如果文件系统正在创建，该字段不返回。
 
         :return: The export_location of this ShowShareResponse.
         :rtype: str
@@ -383,7 +425,7 @@ class ShowShareResponse(SdkResponse):
     def export_location(self, export_location):
         """Sets the export_location of this ShowShareResponse.
 
-        SFS Turbo文件系统的挂载端点。
+        SFS Turbo文件系统的挂载端点。例如\"192.168.0.90:/\"。如果文件系统正在创建，该字段不返回。
 
         :param export_location: The export_location of this ShowShareResponse.
         :type export_location: str
@@ -438,7 +480,7 @@ class ShowShareResponse(SdkResponse):
     def pay_model(self):
         """Gets the pay_model of this ShowShareResponse.
 
-        SFS Turbo文件系统的计费模式。'0'代表按需付费，'1'代表包周期计费。
+        SFS Turbo文件系统的计费模式。'0'代表按需付费，'1'代表包周期计费。如果文件系统正在创建，该字段不返回。
 
         :return: The pay_model of this ShowShareResponse.
         :rtype: str
@@ -449,7 +491,7 @@ class ShowShareResponse(SdkResponse):
     def pay_model(self, pay_model):
         """Sets the pay_model of this ShowShareResponse.
 
-        SFS Turbo文件系统的计费模式。'0'代表按需付费，'1'代表包周期计费。
+        SFS Turbo文件系统的计费模式。'0'代表按需付费，'1'代表包周期计费。如果文件系统正在创建，该字段不返回。
 
         :param pay_model: The pay_model of this ShowShareResponse.
         :type pay_model: str
@@ -592,7 +634,7 @@ class ShowShareResponse(SdkResponse):
     def sub_status(self):
         """Gets the sub_status of this ShowShareResponse.
 
-        SFS Turbo文件系统的子状态。 '121'表示扩容中；'132'表示修改安全组中；'137'表示添加VPC中；'138'表示删除VPC中；'150'表示配置联动后端中；'151'表示删除联动后端配置中； '221'表示扩容成功；'232'表示修改安全组成功；'237'表示添加VPC成功；'238'表示删除VPC成功；'250'表示配置联动后端成功；'251'表示删除联动后端配置成功； '321'表示扩容失败；'332'表示修改安全组失败；'337'表示添加VPC失败；'338'表示删除VPC失败；'350'表示配置联动后端失败；'351'表示删除联动后端配置失败； 
+        SFS Turbo文件系统的子状态。当用户未对文件系统有修改类操作时，该字段不返回。 '121'表示扩容中；'132'表示修改安全组中；'137'表示添加VPC中；'138'表示删除VPC中；'150'表示配置联动后端中；'151'表示删除联动后端配置中。 '221'表示扩容成功；'232'表示修改安全组成功；'237'表示添加VPC成功；'238'表示删除VPC成功；'250'表示配置联动后端成功；'251'表示删除联动后端配置成功。 '321'表示扩容失败；'332'表示修改安全组失败；'337'表示添加VPC失败；'338'表示删除VPC失败；'350'表示配置联动后端失败；'351'表示删除联动后端配置失败。 
 
         :return: The sub_status of this ShowShareResponse.
         :rtype: str
@@ -603,7 +645,7 @@ class ShowShareResponse(SdkResponse):
     def sub_status(self, sub_status):
         """Sets the sub_status of this ShowShareResponse.
 
-        SFS Turbo文件系统的子状态。 '121'表示扩容中；'132'表示修改安全组中；'137'表示添加VPC中；'138'表示删除VPC中；'150'表示配置联动后端中；'151'表示删除联动后端配置中； '221'表示扩容成功；'232'表示修改安全组成功；'237'表示添加VPC成功；'238'表示删除VPC成功；'250'表示配置联动后端成功；'251'表示删除联动后端配置成功； '321'表示扩容失败；'332'表示修改安全组失败；'337'表示添加VPC失败；'338'表示删除VPC失败；'350'表示配置联动后端失败；'351'表示删除联动后端配置失败； 
+        SFS Turbo文件系统的子状态。当用户未对文件系统有修改类操作时，该字段不返回。 '121'表示扩容中；'132'表示修改安全组中；'137'表示添加VPC中；'138'表示删除VPC中；'150'表示配置联动后端中；'151'表示删除联动后端配置中。 '221'表示扩容成功；'232'表示修改安全组成功；'237'表示添加VPC成功；'238'表示删除VPC成功；'250'表示配置联动后端成功；'251'表示删除联动后端配置成功。 '321'表示扩容失败；'332'表示修改安全组失败；'337'表示添加VPC失败；'338'表示删除VPC失败；'350'表示配置联动后端失败；'351'表示删除联动后端配置失败。 
 
         :param sub_status: The sub_status of this ShowShareResponse.
         :type sub_status: str
@@ -697,6 +739,134 @@ class ShowShareResponse(SdkResponse):
         :type tags: list[:class:`huaweicloudsdksfsturbo.v1.ResourceTag`]
         """
         self._tags = tags
+
+    @property
+    def optional_endpoint(self):
+        """Gets the optional_endpoint of this ShowShareResponse.
+
+        可选的挂载IP地址。上一代文件系统规格类型不返回该字段。
+
+        :return: The optional_endpoint of this ShowShareResponse.
+        :rtype: str
+        """
+        return self._optional_endpoint
+
+    @optional_endpoint.setter
+    def optional_endpoint(self, optional_endpoint):
+        """Sets the optional_endpoint of this ShowShareResponse.
+
+        可选的挂载IP地址。上一代文件系统规格类型不返回该字段。
+
+        :param optional_endpoint: The optional_endpoint of this ShowShareResponse.
+        :type optional_endpoint: str
+        """
+        self._optional_endpoint = optional_endpoint
+
+    @property
+    def hpc_bw(self):
+        """Gets the hpc_bw of this ShowShareResponse.
+
+        文件系统的带宽规格。 - \"20M\"表示20MB/s/TiB - \"40M\"表示40MB/s/TiB - \"125M\"表示125MB/s/TiB - \"250M\"表示250MB/s/TiB - \"500M\"表示500MB/s/TiB  - \"1000M\"表示1000MB/s/TiB  - \"2G\"、\"4G\"、\"8G\"、\"16G\"、\"24G\"、\"32G\"或\"48G\"表示HPC缓存型的带宽规格。 
+
+        :return: The hpc_bw of this ShowShareResponse.
+        :rtype: str
+        """
+        return self._hpc_bw
+
+    @hpc_bw.setter
+    def hpc_bw(self, hpc_bw):
+        """Sets the hpc_bw of this ShowShareResponse.
+
+        文件系统的带宽规格。 - \"20M\"表示20MB/s/TiB - \"40M\"表示40MB/s/TiB - \"125M\"表示125MB/s/TiB - \"250M\"表示250MB/s/TiB - \"500M\"表示500MB/s/TiB  - \"1000M\"表示1000MB/s/TiB  - \"2G\"、\"4G\"、\"8G\"、\"16G\"、\"24G\"、\"32G\"或\"48G\"表示HPC缓存型的带宽规格。 
+
+        :param hpc_bw: The hpc_bw of this ShowShareResponse.
+        :type hpc_bw: str
+        """
+        self._hpc_bw = hpc_bw
+
+    @property
+    def instance_id(self):
+        """Gets the instance_id of this ShowShareResponse.
+
+        文件系统规格的节点id，为预留字段，不具备实际含义。
+
+        :return: The instance_id of this ShowShareResponse.
+        :rtype: str
+        """
+        return self._instance_id
+
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        """Sets the instance_id of this ShowShareResponse.
+
+        文件系统规格的节点id，为预留字段，不具备实际含义。
+
+        :param instance_id: The instance_id of this ShowShareResponse.
+        :type instance_id: str
+        """
+        self._instance_id = instance_id
+
+    @property
+    def instance_type(self):
+        """Gets the instance_type of this ShowShareResponse.
+
+        文件系统规格的节点类型，为预留字段，不具备实际含义。
+
+        :return: The instance_type of this ShowShareResponse.
+        :rtype: str
+        """
+        return self._instance_type
+
+    @instance_type.setter
+    def instance_type(self, instance_type):
+        """Sets the instance_type of this ShowShareResponse.
+
+        文件系统规格的节点类型，为预留字段，不具备实际含义。
+
+        :param instance_type: The instance_type of this ShowShareResponse.
+        :type instance_type: str
+        """
+        self._instance_type = instance_type
+
+    @property
+    def status_detail(self):
+        """Gets the status_detail of this ShowShareResponse.
+
+        文件系统的请求ID，为预留字段，不具备实际含义。
+
+        :return: The status_detail of this ShowShareResponse.
+        :rtype: str
+        """
+        return self._status_detail
+
+    @status_detail.setter
+    def status_detail(self, status_detail):
+        """Sets the status_detail of this ShowShareResponse.
+
+        文件系统的请求ID，为预留字段，不具备实际含义。
+
+        :param status_detail: The status_detail of this ShowShareResponse.
+        :type status_detail: str
+        """
+        self._status_detail = status_detail
+
+    @property
+    def features(self):
+        """Gets the features of this ShowShareResponse.
+
+        :return: The features of this ShowShareResponse.
+        :rtype: :class:`huaweicloudsdksfsturbo.v1.ShareInfoFeatures`
+        """
+        return self._features
+
+    @features.setter
+    def features(self, features):
+        """Sets the features of this ShowShareResponse.
+
+        :param features: The features of this ShowShareResponse.
+        :type features: :class:`huaweicloudsdksfsturbo.v1.ShareInfoFeatures`
+        """
+        self._features = features
 
     def to_dict(self):
         """Returns the model properties as a dict"""

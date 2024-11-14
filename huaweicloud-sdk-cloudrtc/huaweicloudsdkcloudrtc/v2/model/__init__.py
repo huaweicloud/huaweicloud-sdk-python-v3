@@ -5,7 +5,6 @@ from __future__ import absolute_import
 # import models into model package
 from huaweicloudsdkcloudrtc.v2.model.app import App
 from huaweicloudsdkcloudrtc.v2.model.app_auth import AppAuth
-from huaweicloudsdkcloudrtc.v2.model.app_auth_req import AppAuthReq
 from huaweicloudsdkcloudrtc.v2.model.app_auto_record_mode import AppAutoRecordMode
 from huaweicloudsdkcloudrtc.v2.model.app_callback_url import AppCallbackUrl
 from huaweicloudsdkcloudrtc.v2.model.app_callback_url_req import AppCallbackUrlReq
@@ -64,8 +63,6 @@ from huaweicloudsdkcloudrtc.v2.model.show_record_callback_request import ShowRec
 from huaweicloudsdkcloudrtc.v2.model.show_record_callback_response import ShowRecordCallbackResponse
 from huaweicloudsdkcloudrtc.v2.model.show_record_rule_request import ShowRecordRuleRequest
 from huaweicloudsdkcloudrtc.v2.model.show_record_rule_response import ShowRecordRuleResponse
-from huaweicloudsdkcloudrtc.v2.model.show_url_auth_request import ShowUrlAuthRequest
-from huaweicloudsdkcloudrtc.v2.model.show_url_auth_response import ShowUrlAuthResponse
 from huaweicloudsdkcloudrtc.v2.model.start_app_request import StartAppRequest
 from huaweicloudsdkcloudrtc.v2.model.start_app_response import StartAppResponse
 from huaweicloudsdkcloudrtc.v2.model.stop_app_request import StopAppRequest
@@ -89,5 +86,3 @@ from huaweicloudsdkcloudrtc.v2.model.update_record_callback_request import Updat
 from huaweicloudsdkcloudrtc.v2.model.update_record_callback_response import UpdateRecordCallbackResponse
 from huaweicloudsdkcloudrtc.v2.model.update_record_rule_request import UpdateRecordRuleRequest
 from huaweicloudsdkcloudrtc.v2.model.update_record_rule_response import UpdateRecordRuleResponse
-from huaweicloudsdkcloudrtc.v2.model.update_url_auth_request import UpdateUrlAuthRequest
-from huaweicloudsdkcloudrtc.v2.model.update_url_auth_response import UpdateUrlAuthResponse

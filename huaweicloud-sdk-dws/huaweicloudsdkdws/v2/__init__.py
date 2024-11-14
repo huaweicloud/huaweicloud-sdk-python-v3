@@ -440,12 +440,16 @@ from huaweicloudsdkdws.v2.model.snapshot_region import SnapshotRegion
 from huaweicloudsdkdws.v2.model.snapshot_resp import SnapshotResp
 from huaweicloudsdkdws.v2.model.snapshots import Snapshots
 from huaweicloudsdkdws.v2.model.snapshots_statistic import SnapshotsStatistic
+from huaweicloudsdkdws.v2.model.start_cluster_request import StartClusterRequest
+from huaweicloudsdkdws.v2.model.start_cluster_response import StartClusterResponse
 from huaweicloudsdkdws.v2.model.start_disaster_recovery_request import StartDisasterRecoveryRequest
 from huaweicloudsdkdws.v2.model.start_disaster_recovery_response import StartDisasterRecoveryResponse
 from huaweicloudsdkdws.v2.model.start_workload_plan_request import StartWorkloadPlanRequest
 from huaweicloudsdkdws.v2.model.start_workload_plan_response import StartWorkloadPlanResponse
 from huaweicloudsdkdws.v2.model.statistic import Statistic
 from huaweicloudsdkdws.v2.model.status_statistics import StatusStatistics
+from huaweicloudsdkdws.v2.model.stop_cluster_request import StopClusterRequest
+from huaweicloudsdkdws.v2.model.stop_cluster_response import StopClusterResponse
 from huaweicloudsdkdws.v2.model.stop_redistribution_request import StopRedistributionRequest
 from huaweicloudsdkdws.v2.model.stop_redistribution_response import StopRedistributionResponse
 from huaweicloudsdkdws.v2.model.stop_workload_plan_request import StopWorkloadPlanRequest

@@ -51,7 +51,7 @@ class ListDomainTrafficSummaryRequest:
         :type app: str
         :param stream: 流名。
         :type stream: str
-        :param region: 区域列表。具体取值请参考[省份名称缩写](live_03_0043.xml)，不填写查询所有区域。 
+        :param region: 区域列表。具体取值请参考[省份名称缩写](https://support.huaweicloud.com/api-live/live_03_0043.html)，不填写查询所有区域。 
         :type region: list[str]
         :param isp: 运营商列表。取值如下： - CMCC ：移动 - CTCC ： 电信 - CUCC ：联通 - OTHER ：其他  不填写查询所有运营商。 
         :type isp: list[str]
@@ -167,7 +167,7 @@ class ListDomainTrafficSummaryRequest:
     def region(self):
         """Gets the region of this ListDomainTrafficSummaryRequest.
 
-        区域列表。具体取值请参考[省份名称缩写](live_03_0043.xml)，不填写查询所有区域。 
+        区域列表。具体取值请参考[省份名称缩写](https://support.huaweicloud.com/api-live/live_03_0043.html)，不填写查询所有区域。 
 
         :return: The region of this ListDomainTrafficSummaryRequest.
         :rtype: list[str]
@@ -178,7 +178,7 @@ class ListDomainTrafficSummaryRequest:
     def region(self, region):
         """Sets the region of this ListDomainTrafficSummaryRequest.
 
-        区域列表。具体取值请参考[省份名称缩写](live_03_0043.xml)，不填写查询所有区域。 
+        区域列表。具体取值请参考[省份名称缩写](https://support.huaweicloud.com/api-live/live_03_0043.html)，不填写查询所有区域。 
 
         :param region: The region of this ListDomainTrafficSummaryRequest.
         :type region: list[str]

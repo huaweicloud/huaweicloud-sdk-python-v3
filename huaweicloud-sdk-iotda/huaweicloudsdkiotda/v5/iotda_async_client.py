@@ -5461,10 +5461,6 @@ class IoTDAAsyncClient(Client):
         header_params = {}
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
-        if 'sp_auth_token' in local_var_params:
-            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
-        if 'stage_auth_token' in local_var_params:
-            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
 
         form_params = {}
 
@@ -5534,10 +5530,6 @@ class IoTDAAsyncClient(Client):
         header_params = {}
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
-        if 'sp_auth_token' in local_var_params:
-            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
-        if 'stage_auth_token' in local_var_params:
-            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
 
         form_params = {}
 
@@ -5607,10 +5599,6 @@ class IoTDAAsyncClient(Client):
         header_params = {}
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
-        if 'sp_auth_token' in local_var_params:
-            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
-        if 'stage_auth_token' in local_var_params:
-            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
 
         form_params = {}
 

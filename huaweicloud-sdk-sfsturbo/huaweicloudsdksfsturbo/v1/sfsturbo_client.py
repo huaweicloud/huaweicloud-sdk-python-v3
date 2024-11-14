@@ -37,7 +37,7 @@ class SFSTurboClient(Client):
 
         指定共享批量添加标签。
         
-        一个共享上最多有10个标签。
+        一个共享上最多有20个标签。
         一个共享上的多个标签的key不允许重复。
         此接口为幂等接口：如果要添加的key在共享上已存在，则覆盖更新标签。
         
@@ -240,7 +240,7 @@ class SFSTurboClient(Client):
     def create_backend_target(self, request):
         """绑定后端存储
 
-        为SFS Turbo HPC型文件系统绑定后端存储
+        为SFS Turbo 文件系统绑定后端存储
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -441,7 +441,7 @@ class SFSTurboClient(Client):
     def create_fs_task(self, request):
         """创建文件系统异步任务
 
-        创建文件系统异步任务
+        创建文件系统异步任务，仅支持异步查询目录资源使用情况，API请求路径的feature取值为dir-usage，以下简称为DU任务。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -577,7 +577,11 @@ class SFSTurboClient(Client):
     def create_ldap_config(self, request):
         """创建并绑定ldap配置
 
-        创建并绑定ldap配置
+        创建并绑定ldap配置。LDAP（Lightweight Directory Access Protocol），中文名称轻量级目录访问协议，是对目录服务器（Directory Server）进行访问、控制的一种标准协议。LDAP服务器可以集中式地管理用户和群组的归属关系，通过绑定LDAP服务器，当一个用户访问您的文件系统的文件时，SFS Turbo将会访问您的LDAP服务器以进行用户身份验证，并且获取用户和群组的归属关系，从而进行Linux标准的文件UGO权限的检查。要使用此功能，首先您需要搭建好LDAP服务器（当前SFS Turbo仅支持LDAP v3协议），常见提供LDAP协议访问的目录服务器实现有OpenLdap(Linux)，Active Directory(Windows)等，不同目录服务器的实现细节有所差别，绑定时需要指定对应的Schema（Schema配置错误将会导致SFS Turbo无法正确获取用户以及群组信息，可能导致无权限访问文件系统内文件），当前SFS Turbo支持的Schema有：
+        1. RFC2307（Openldap通常选择此Schema）
+        2. MS-AD-BIS（Active Directory通常选择此Schema，支持RFC2307bis，支持嵌套的群组）
+        
+        SFS Turbo还支持配置主备LDAP服务器，当您的一台LDAP服务器故障无法访问后，SFS Turbo将会自动切换到备LDAP服务器访问，以免影响您的业务。同时，若您还选择将allow_local_user配置为Yes（默认为No），那么当您的LDAP服务器全部故障无法访问时，SFS Turbo将会使用您的本地用户以及群组信息，而非LDAP服务器中配置的信息进行身份验证和UGO权限检查，以最大程度减少故障影响面。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -777,7 +781,7 @@ class SFSTurboClient(Client):
         """创建共享标签
 
         指定共享添加一个标签。
-        一个共享上最多有10个标签。
+        一个共享上最多有20个标签。
         一个共享上的多个标签的key不允许重复。
         此接口为幂等接口：如果要添加的key在共享上已存在，则覆盖更新标签。
         
@@ -1049,7 +1053,7 @@ class SFSTurboClient(Client):
     def delete_fs_task(self, request):
         """取消/删除文件系统异步任务
 
-        如果异步任务正在执行，则取消并删除任务；否则，删除任务。
+        如果异步任务正在执行，则取消并删除任务；否则，删除任务。仅支持删除目录资源使用情况的任务，API请求路径的feature取值为dir-usage，以下简称为DU任务。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1115,10 +1119,81 @@ class SFSTurboClient(Client):
 
         return http_info
 
+    def delete_hpc_cache_task(self, request):
+        """删除数据导入导出任务
+
+        删除数据导入导出任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteHpcCacheTask
+        :type request: :class:`huaweicloudsdksfsturbo.v1.DeleteHpcCacheTaskRequest`
+        :rtype: :class:`huaweicloudsdksfsturbo.v1.DeleteHpcCacheTaskResponse`
+        """
+        http_info = self._delete_hpc_cache_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_hpc_cache_task_invoker(self, request):
+        http_info = self._delete_hpc_cache_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_hpc_cache_task_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/sfs-turbo/{share_id}/hpc-cache/task/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteHpcCacheTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'share_id' in local_var_params:
+            path_params['share_id'] = local_var_params['share_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_ldap_config(self, request):
         """删除ldap配置
 
-        删除ldap配置
+        删除ldap配置。LDAP（Lightweight Directory Access Protocol），中文名称轻量级目录访问协议，是对目录服务器（Directory Server）进行访问、控制的一种标准协议。LDAP服务器可以集中式地管理用户和群组的归属关系，通过绑定LDAP服务器，当一个用户访问您的文件系统的文件时，SFS Turbo将会访问您的LDAP服务器以进行用户身份验证，并且获取用户和群组的归属关系，从而进行Linux标准的文件UGO权限的检查。要使用此功能，首先您需要搭建好LDAP服务器（当前SFS Turbo仅支持LDAP v3协议），常见提供LDAP协议访问的目录服务器实现有OpenLdap(Linux)，Active Directory(Windows)等，不同目录服务器的实现细节有所差别，绑定时需要指定对应的Schema（Schema配置错误将会导致SFS Turbo无法正确获取用户以及群组信息，可能导致无权限访问文件系统内文件），当前SFS Turbo支持的Schema有：
+        1. RFC2307（Openldap通常选择此Schema）
+        2. MS-AD-BIS（Active Directory通常选择此Schema，支持RFC2307bis，支持嵌套的群组）
+        
+        SFS Turbo还支持配置主备LDAP服务器，当您的一台LDAP服务器故障无法访问后，SFS Turbo将会自动切换到备LDAP服务器访问，以免影响您的业务。同时，若您还选择将allow_local_user配置为Yes（默认为No），那么当您的LDAP服务器全部故障无法访问时，SFS Turbo将会使用您的本地用户以及群组信息，而非LDAP服务器中配置的信息进行身份验证和UGO权限检查，以最大程度减少故障影响面。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1518,7 +1593,7 @@ class SFSTurboClient(Client):
     def list_fs_tasks(self, request):
         """获取文件系统异步任务列表
 
-        获取文件系统异步任务列表
+        获取文件系统异步任务列表。仅支持查询目录资源使用情况的任务，API请求路径的feature取值为dir-usage，以下简称为DU任务。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1632,6 +1707,10 @@ class SFSTurboClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
 
         header_params = {}
 
@@ -1697,6 +1776,10 @@ class SFSTurboClient(Client):
             path_params['share_id'] = local_var_params['share_id']
 
         query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
 
@@ -1760,6 +1843,10 @@ class SFSTurboClient(Client):
         path_params = {}
 
         query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
 
@@ -2058,7 +2145,7 @@ class SFSTurboClient(Client):
     def show_fs_dir_quota(self, request):
         """查询目标文件夹quota
 
-        查询目标文件夹quota
+        查询目标文件夹quota。查询的used_capacity、used_inode数据可能有延迟。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2192,7 +2279,7 @@ class SFSTurboClient(Client):
     def show_fs_task(self, request):
         """获取文件系统异步任务详情
 
-        获取文件系统异步任务详情
+        获取文件系统异步任务详情。仅支持查询目录资源使用情况的任务，API请求路径的feature取值为dir-usage，以下简称为DU任务。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2328,7 +2415,7 @@ class SFSTurboClient(Client):
     def show_job_detail(self, request):
         """查询job的状态详情
 
-        查询job的执行状态。 可用于查询SFS Turbo异步API的执行状态。
+        查询job的执行状态。 可用于查询SFS Turbo异步API的执行状态。例如：可使用调用创建并绑定ldap配置接口时返回的jobId，通过该接口查询job的执行状态。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2393,7 +2480,11 @@ class SFSTurboClient(Client):
     def show_ldap_config(self, request):
         """查询Ldap的配置
 
-        查询Ldap的配置
+        查询Ldap的配置。LDAP（Lightweight Directory Access Protocol），中文名称轻量级目录访问协议，是对目录服务器（Directory Server）进行访问、控制的一种标准协议。LDAP服务器可以集中式地管理用户和群组的归属关系，通过绑定LDAP服务器，当一个用户访问您的文件系统的文件时，SFS Turbo将会访问您的LDAP服务器以进行用户身份验证，并且获取用户和群组的归属关系，从而进行Linux标准的文件UGO权限的检查。要使用此功能，首先您需要搭建好LDAP服务器（当前SFS Turbo仅支持LDAP v3协议），常见提供LDAP协议访问的目录服务器实现有OpenLdap(Linux)，Active Directory(Windows)等，不同目录服务器的实现细节有所差别，绑定时需要指定对应的Schema（Schema配置错误将会导致SFS Turbo无法正确获取用户以及群组信息，可能导致无权限访问文件系统内文件），当前SFS Turbo支持的Schema有：
+        1. RFC2307（Openldap通常选择此Schema）
+        2. MS-AD-BIS（Active Directory通常选择此Schema，支持RFC2307bis，支持嵌套的群组）
+        
+        SFS Turbo还支持配置主备LDAP服务器，当您的一台LDAP服务器故障无法访问后，SFS Turbo将会自动切换到备LDAP服务器访问，以免影响您的业务。同时，若您还选择将allow_local_user配置为Yes（默认为No），那么当您的LDAP服务器全部故障无法访问时，SFS Turbo将会使用您的本地用户以及群组信息，而非LDAP服务器中配置的信息进行身份验证和UGO权限检查，以最大程度减少故障影响面。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2789,7 +2880,11 @@ class SFSTurboClient(Client):
     def update_ldap_config(self, request):
         """修改ldap配置
 
-        修改ldap配置
+        修改ldap配置。LDAP（Lightweight Directory Access Protocol），中文名称轻量级目录访问协议，是对目录服务器（Directory Server）进行访问、控制的一种标准协议。LDAP服务器可以集中式地管理用户和群组的归属关系，通过绑定LDAP服务器，当一个用户访问您的文件系统的文件时，SFS Turbo将会访问您的LDAP服务器以进行用户身份验证，并且获取用户和群组的归属关系，从而进行Linux标准的文件UGO权限的检查。要使用此功能，首先您需要搭建好LDAP服务器（当前SFS Turbo仅支持LDAP v3协议），常见提供LDAP协议访问的目录服务器实现有OpenLdap(Linux)，Active Directory(Windows)等，不同目录服务器的实现细节有所差别，绑定时需要指定对应的Schema（Schema配置错误将会导致SFS Turbo无法正确获取用户以及群组信息，可能导致无权限访问文件系统内文件），当前SFS Turbo支持的Schema有：
+        1. RFC2307（Openldap通常选择此Schema）
+        2. MS-AD-BIS（Active Directory通常选择此Schema，支持RFC2307bis，支持嵌套的群组）
+        
+        SFS Turbo还支持配置主备LDAP服务器，当您的一台LDAP服务器故障无法访问后，SFS Turbo将会自动切换到备LDAP服务器访问，以免影响您的业务。同时，若您还选择将allow_local_user配置为Yes（默认为No），那么当您的LDAP服务器全部故障无法访问时，SFS Turbo将会使用您的本地用户以及群组信息，而非LDAP服务器中配置的信息进行身份验证和UGO权限检查，以最大程度减少故障影响面。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2836,6 +2931,144 @@ class SFSTurboClient(Client):
             body = request.get_file_stream()
 
         response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_obs_target_attributes(self, request):
+        """更新后端存储属性
+
+        更新后端存储属性
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateObsTargetAttributes
+        :type request: :class:`huaweicloudsdksfsturbo.v1.UpdateObsTargetAttributesRequest`
+        :rtype: :class:`huaweicloudsdksfsturbo.v1.UpdateObsTargetAttributesResponse`
+        """
+        http_info = self._update_obs_target_attributes_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_obs_target_attributes_invoker(self, request):
+        http_info = self._update_obs_target_attributes_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_obs_target_attributes_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/sfs-turbo/shares/{share_id}/targets/{target_id}/attributes",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateObsTargetAttributesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'share_id' in local_var_params:
+            path_params['share_id'] = local_var_params['share_id']
+        if 'target_id' in local_var_params:
+            path_params['target_id'] = local_var_params['target_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_obs_target_policy(self, request):
+        """更新后端存储自动同步策略
+
+        更新后端存储自动同步策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateObsTargetPolicy
+        :type request: :class:`huaweicloudsdksfsturbo.v1.UpdateObsTargetPolicyRequest`
+        :rtype: :class:`huaweicloudsdksfsturbo.v1.UpdateObsTargetPolicyResponse`
+        """
+        http_info = self._update_obs_target_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_obs_target_policy_invoker(self, request):
+        http_info = self._update_obs_target_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_obs_target_policy_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/sfs-turbo/shares/{share_id}/targets/{target_id}/policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateObsTargetPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'share_id' in local_var_params:
+            path_params['share_id'] = local_var_params['share_id']
+        if 'target_id' in local_var_params:
+            path_params['target_id'] = local_var_params['target_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])

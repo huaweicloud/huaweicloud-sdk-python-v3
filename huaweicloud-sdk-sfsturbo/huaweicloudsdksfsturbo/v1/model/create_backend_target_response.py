@@ -50,7 +50,7 @@ class CreateBackendTargetResponse(SdkResponse):
         :type failure_details: :class:`huaweicloudsdksfsturbo.v1.FailureDetailsMessage`
         :param file_system_path: 联动目录名称
         :type file_system_path: str
-        :param lifecycle: 绑定状态。如果返回状态为CREATING，您需要通过获取后端存储详细信息接口去轮询绑定完成状态。 如果返回状态为AVAILABLE，代表绑定后端存储成功。如果返回状态MISCONFIGURED，代表绑定后端存储失败。DELETING 状态暂不支持。
+        :param lifecycle: 绑定状态。  如果返回状态为CREATING，您需要通过获取后端存储详细信息接口去轮询绑定完成状态。  如果返回状态为AVAILABLE，代表绑定后端存储成功。  如果返回状态MISCONFIGURED，代表绑定后端存储失败。DELETING 状态暂不支持。 
         :type lifecycle: str
         :param obs: 
         :type obs: :class:`huaweicloudsdksfsturbo.v1.ObsDataRepository`
@@ -172,7 +172,7 @@ class CreateBackendTargetResponse(SdkResponse):
     def lifecycle(self):
         """Gets the lifecycle of this CreateBackendTargetResponse.
 
-        绑定状态。如果返回状态为CREATING，您需要通过获取后端存储详细信息接口去轮询绑定完成状态。 如果返回状态为AVAILABLE，代表绑定后端存储成功。如果返回状态MISCONFIGURED，代表绑定后端存储失败。DELETING 状态暂不支持。
+        绑定状态。  如果返回状态为CREATING，您需要通过获取后端存储详细信息接口去轮询绑定完成状态。  如果返回状态为AVAILABLE，代表绑定后端存储成功。  如果返回状态MISCONFIGURED，代表绑定后端存储失败。DELETING 状态暂不支持。 
 
         :return: The lifecycle of this CreateBackendTargetResponse.
         :rtype: str
@@ -183,7 +183,7 @@ class CreateBackendTargetResponse(SdkResponse):
     def lifecycle(self, lifecycle):
         """Sets the lifecycle of this CreateBackendTargetResponse.
 
-        绑定状态。如果返回状态为CREATING，您需要通过获取后端存储详细信息接口去轮询绑定完成状态。 如果返回状态为AVAILABLE，代表绑定后端存储成功。如果返回状态MISCONFIGURED，代表绑定后端存储失败。DELETING 状态暂不支持。
+        绑定状态。  如果返回状态为CREATING，您需要通过获取后端存储详细信息接口去轮询绑定完成状态。  如果返回状态为AVAILABLE，代表绑定后端存储成功。  如果返回状态MISCONFIGURED，代表绑定后端存储失败。DELETING 状态暂不支持。 
 
         :param lifecycle: The lifecycle of this CreateBackendTargetResponse.
         :type lifecycle: str

@@ -34,11 +34,14 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         'model_resolution': 'str',
         'app_user_id': 'str',
         'is_flexus': 'bool',
+        'is_only_human_model': 'bool',
         'training_video_download_url': 'str',
         'id_card_image1_download_url': 'str',
         'id_card_image2_download_url': 'str',
         'grant_file_download_url': 'str',
+        'pre_beauty_image_download_url': 'str',
         'action_video_download_url': 'str',
+        'post_beauty_image_download_url': 'str',
         'audio_file_download_url': 'str',
         'operation_logs': 'list[OperationLogInfo]',
         'verify_video_matting_info': 'list[VerifyVideoMattingInfo]',
@@ -48,15 +51,19 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         'mask_file_download_url': 'str',
         'verify_video_download_url': 'str',
         'markable_video_download_url': 'str',
+        'traning_video_mark_info': 'TrainingVideoMarkInfo',
         'inference_data_process_video_mark_info': 'InferenceVideoMarkInfo',
         'inference_data_process_action_mark_info': 'InferenceActionMarkInfo',
+        'inference_data_process_chat_action_mark_info': 'InferenceActionMarkInfo',
         'inference_data_process_eye_correction_mark_info': 'InferenceEyeCorrectionMarkInfo',
         'is_background_replacement': 'bool',
         'worker_type': 'list[str]',
+        'beauty_level': 'int',
         'voice_train_job_id': 'str',
         'flexus_retry_count': 'int',
         'audio_source_type': 'str',
         'supported_service': 'list[SupportedServiceEnum]',
+        'allocated_resource': 'TrainingAllocatedResource',
         'x_request_id': 'str'
     }
 
@@ -77,11 +84,14 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         'model_resolution': 'model_resolution',
         'app_user_id': 'app_user_id',
         'is_flexus': 'is_flexus',
+        'is_only_human_model': 'is_only_human_model',
         'training_video_download_url': 'training_video_download_url',
         'id_card_image1_download_url': 'id_card_image1_download_url',
         'id_card_image2_download_url': 'id_card_image2_download_url',
         'grant_file_download_url': 'grant_file_download_url',
+        'pre_beauty_image_download_url': 'pre_beauty_image_download_url',
         'action_video_download_url': 'action_video_download_url',
+        'post_beauty_image_download_url': 'post_beauty_image_download_url',
         'audio_file_download_url': 'audio_file_download_url',
         'operation_logs': 'operation_logs',
         'verify_video_matting_info': 'verify_video_matting_info',
@@ -91,19 +101,23 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         'mask_file_download_url': 'mask_file_download_url',
         'verify_video_download_url': 'verify_video_download_url',
         'markable_video_download_url': 'markable_video_download_url',
+        'traning_video_mark_info': 'traning_video_mark_info',
         'inference_data_process_video_mark_info': 'inference_data_process_video_mark_info',
         'inference_data_process_action_mark_info': 'inference_data_process_action_mark_info',
+        'inference_data_process_chat_action_mark_info': 'inference_data_process_chat_action_mark_info',
         'inference_data_process_eye_correction_mark_info': 'inference_data_process_eye_correction_mark_info',
         'is_background_replacement': 'is_background_replacement',
         'worker_type': 'worker_type',
+        'beauty_level': 'beauty_level',
         'voice_train_job_id': 'voice_train_job_id',
         'flexus_retry_count': 'flexus_retry_count',
         'audio_source_type': 'audio_source_type',
         'supported_service': 'supported_service',
+        'allocated_resource': 'allocated_resource',
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, job_id=None, name=None, state=None, asset_id=None, project_id=None, cover_download_url=None, last_update_time=None, create_time=None, contact=None, batch_name=None, tags=None, model_version=None, matting_type=None, model_resolution=None, app_user_id=None, is_flexus=None, training_video_download_url=None, id_card_image1_download_url=None, id_card_image2_download_url=None, grant_file_download_url=None, action_video_download_url=None, audio_file_download_url=None, operation_logs=None, verify_video_matting_info=None, comment_logs=None, samples=None, is_mask_file_uploaded=None, mask_file_download_url=None, verify_video_download_url=None, markable_video_download_url=None, inference_data_process_video_mark_info=None, inference_data_process_action_mark_info=None, inference_data_process_eye_correction_mark_info=None, is_background_replacement=None, worker_type=None, voice_train_job_id=None, flexus_retry_count=None, audio_source_type=None, supported_service=None, x_request_id=None):
+    def __init__(self, job_id=None, name=None, state=None, asset_id=None, project_id=None, cover_download_url=None, last_update_time=None, create_time=None, contact=None, batch_name=None, tags=None, model_version=None, matting_type=None, model_resolution=None, app_user_id=None, is_flexus=None, is_only_human_model=None, training_video_download_url=None, id_card_image1_download_url=None, id_card_image2_download_url=None, grant_file_download_url=None, pre_beauty_image_download_url=None, action_video_download_url=None, post_beauty_image_download_url=None, audio_file_download_url=None, operation_logs=None, verify_video_matting_info=None, comment_logs=None, samples=None, is_mask_file_uploaded=None, mask_file_download_url=None, verify_video_download_url=None, markable_video_download_url=None, traning_video_mark_info=None, inference_data_process_video_mark_info=None, inference_data_process_action_mark_info=None, inference_data_process_chat_action_mark_info=None, inference_data_process_eye_correction_mark_info=None, is_background_replacement=None, worker_type=None, beauty_level=None, voice_train_job_id=None, flexus_retry_count=None, audio_source_type=None, supported_service=None, allocated_resource=None, x_request_id=None):
         """Show2dModelTrainingJobResponse
 
         The model defined in huaweicloud sdk
@@ -112,7 +126,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         :type job_id: str
         :param name: 分身数字人模型名称。该名称会作为资产库中分身数字人模型资产名称。
         :type name: str
-        :param state: 任务的状态。  与MetaStudio Console上用户看到的状态映射关系如下：  - 待提交   * WAIT_FILE_UPLOAD: 待上传文件  - 系统审核中   * AUTO_VERIFYING: 自动审核中   * MANUAL_VERIFYING: 人工审核中  - 系统审核未通过   * AUTO_VERIFY_FAILED: 自动审核失败   * MANUAL_VERIFY_FAILED: 人工审核失败  - 算法训练中   &gt; 算法训练中的状态仅管理员需要处理，普通用户仅需要显示“算法训练中”即可。   * MANUAL_VERIFY_SUCCESS: 审核通过，等待预处理资源   * WAIT_TRAINING_DATA_PREPROCESS: 等待训练数据预处理   * TRAINING_DATA_PREPROCESSING: 训练数据预处理中   * TRAINING_DATA_PREPROCESS_FAILED: 训练数据预处理失败   * TRAINING_DATA_PREPROCESS_SUCCESS: 训练数据预处理完成，等待训练资源中   * TRAINING: 训练中   * TRAIN_FAILED: 训练失败   * TRAIN_SUCCESS: 训练完成，等待预处理资源   * INFERENCE_DATA_PREPROCESSING: 推理数据预处理中   * INFERENCE_DATA_PREPROCESS_FAILED: 推理数据预处理失败   * WAIT_MAIN_FILE_UPLOAD: 等待主文件上传   * MANUAL_STOP_INFERENCE_DATA_PREPROCESS: 人工中止推理预处理   * MANUAL_STOP_TRAIN: 人工中止训练   * MANUAL_STOP_TRAINING_DATA_PREPROCESS: 人工中止训练预处理   * WAIT_ADMIN_CONFIRM: 等待管理员审核   * WAIT_COMPILE: 等待转编译   * COMPILING: 转编译中   * COMPILE_FAILED: 转编译失败   * WAIT_GENERATE_ACTION: 等待原子动作生成   * WAIT_ARRANGE: 等待编排   * ACTION_GENERATE_DATA_PROCESSING: 原子动作生成中   * MANUAL_STOP_ACTION_GENERATE_DATA_PROCESSING: 人工中止动作生成   * MANUAL_STOP_ACTION_GENERATE_ORI_PROCESSING: 人工中止动作编排   * ACTION_GENERATE_ORI_PROCESSING: 动作编排中   * ACTION_GENERATE_DATA_FAILED: 动作生成失败   * ACTION_GENERATE_ORI_FAILED: 生成动作编排资产失败   * ACTION_GENERATE_ORI_SUCCESS: 动作编排成功   * GENERATE_ACTION_PREPROCESS_FAILED: 生成动作编排原子动作失败   * WAIT_ADMIN_CALIBRATION: 等待管理员确认动作信息  - 待用户审核，仅NA白名单用户有该状态   * WAIT_USER_CONFIRM: 等待用户确认训练效果  - 用户驳回，仅NA白名单用户有该状态   * JOB_REJECT: 驳回任务  - 已完成   * JOB_SUCCESS: 训练任务完成（普通用户任务的完成状态，此时用户已经可以使用模型）   * JOB_FINISH: 任务结束，是最终状态，不支持修改此状态(NA用户任务的完成状态，并且此状态表明模型效果已通过用户的验收)  - 挂起，仅NA白名单用户有该状态   * JOB_PENDING: 挂起任务
+        :param state: 任务的状态。  与MetaStudio Console上用户看到的状态映射关系如下：  - 待提交   * WAIT_FILE_UPLOAD: 待上传文件  - 系统审核中   * AUTO_VERIFYING: 自动审核中   * MANUAL_VERIFYING: 人工审核中  - 系统审核未通过   * AUTO_VERIFY_FAILED: 自动审核失败   * MANUAL_VERIFY_FAILED: 人工审核失败  - 算法训练中   &gt; 算法训练中的状态仅管理员需要处理，普通用户仅需要显示“算法训练中”即可。   * MANUAL_VERIFY_SUCCESS: 审核通过，等待预处理资源   * WAIT_TRAINING_DATA_PREPROCESS: 等待训练数据预处理   * TRAINING_DATA_PREPROCESSING: 训练数据预处理中   * TRAINING_DATA_PREPROCESS_FAILED: 训练数据预处理失败   * TRAINING_DATA_PREPROCESS_SUCCESS: 训练数据预处理完成，等待训练资源中   * TRAINING: 训练中   * TRAIN_FAILED: 训练失败   * TRAIN_SUCCESS: 训练完成，等待预处理资源   * INFERENCE_DATA_PREPROCESSING: 推理数据预处理中   * INFERENCE_DATA_PREPROCESS_FAILED: 推理数据预处理失败   * WAIT_MAIN_FILE_UPLOAD: 等待主文件上传   * MANUAL_STOP_INFERENCE_DATA_PREPROCESS: 人工中止推理预处理   * MANUAL_STOP_TRAIN: 人工中止训练   * MANUAL_STOP_TRAINING_DATA_PREPROCESS: 人工中止训练预处理   * WAIT_ADMIN_CONFIRM: 等待管理员审核   * WAIT_COMPILE: 等待转编译   * COMPILING: 转编译中   * COMPILE_FAILED: 转编译失败   * WAIT_GENERATE_ACTION: 等待原子动作生成   * WAIT_ARRANGE: 等待编排   * ACTION_GENERATE_DATA_PROCESSING: 原子动作生成中   * MANUAL_STOP_ACTION_GENERATE_DATA_PROCESSING: 人工中止动作生成   * MANUAL_STOP_ACTION_GENERATE_ORI_PROCESSING: 人工中止动作编排   * ACTION_GENERATE_ORI_PROCESSING: 动作编排中   * ACTION_GENERATE_DATA_FAILED: 动作生成失败   * ACTION_GENERATE_ORI_FAILED: 生成动作编排资产失败   * ACTION_GENERATE_ORI_SUCCESS: 动作编排成功   * GENERATE_ACTION_PREPROCESS_FAILED: 生成动作编排原子动作失败   * WAIT_ADMIN_CALIBRATION: 等待管理员确认动作信息   * WAIT_ASSET_SYNC: 等待资产同步  - 待用户审核，仅NA白名单用户有该状态   * WAIT_USER_CONFIRM: 等待用户确认训练效果  - 用户驳回，仅NA白名单用户有该状态   * JOB_REJECT: 驳回任务  - 已完成   * JOB_SUCCESS: 训练任务完成（普通用户任务的完成状态，此时用户已经可以使用模型）   * JOB_FINISH: 任务结束，是最终状态，不支持修改此状态(NA用户任务的完成状态，并且此状态表明模型效果已通过用户的验收)  - 挂起，仅NA白名单用户有该状态   * JOB_PENDING: 挂起任务
         :type state: str
         :param asset_id: 模型资产ID。
         :type asset_id: str
@@ -140,6 +154,8 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         :type app_user_id: str
         :param is_flexus: 是否是基础版的形象训练
         :type is_flexus: bool
+        :param is_only_human_model: 是否只训练形象模型，不训练声音模型。仅Flexus版本时有效，默认false。
+        :type is_only_human_model: bool
         :param training_video_download_url: 分身数字人训练视频下载URL。24小时内有效。
         :type training_video_download_url: str
         :param id_card_image1_download_url: 身份证正面照片下载URL。24小时内有效。
@@ -148,8 +164,12 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         :type id_card_image2_download_url: str
         :param grant_file_download_url: 授权书下载URL。24小时内有效。
         :type grant_file_download_url: str
+        :param pre_beauty_image_download_url: 美白前图片下载url。
+        :type pre_beauty_image_download_url: str
         :param action_video_download_url: 动作视频
         :type action_video_download_url: str
+        :param post_beauty_image_download_url: 美白后图片下载url。
+        :type post_beauty_image_download_url: str
         :param audio_file_download_url: 音频文件下载url。
         :type audio_file_download_url: str
         :param operation_logs: 操作日志列表。
@@ -168,16 +188,22 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         :type verify_video_download_url: str
         :param markable_video_download_url: 标注视频url下载链接。24小时内有效。
         :type markable_video_download_url: str
+        :param traning_video_mark_info: 
+        :type traning_video_mark_info: :class:`huaweicloudsdkmetastudio.v1.TrainingVideoMarkInfo`
         :param inference_data_process_video_mark_info: 
         :type inference_data_process_video_mark_info: :class:`huaweicloudsdkmetastudio.v1.InferenceVideoMarkInfo`
         :param inference_data_process_action_mark_info: 
         :type inference_data_process_action_mark_info: :class:`huaweicloudsdkmetastudio.v1.InferenceActionMarkInfo`
+        :param inference_data_process_chat_action_mark_info: 
+        :type inference_data_process_chat_action_mark_info: :class:`huaweicloudsdkmetastudio.v1.InferenceActionMarkInfo`
         :param inference_data_process_eye_correction_mark_info: 
         :type inference_data_process_eye_correction_mark_info: :class:`huaweicloudsdkmetastudio.v1.InferenceEyeCorrectionMarkInfo`
         :param is_background_replacement: 分身数字人是否需要背景替换。需要背景替换的分身数字人训练视频需要绿幕拍摄。
         :type is_background_replacement: bool
         :param worker_type: 转编译任务机型
         :type worker_type: list[str]
+        :param beauty_level: 美白等级。默认值0，不美白。
+        :type beauty_level: int
         :param voice_train_job_id: 声音训练任务id。
         :type voice_train_job_id: str
         :param flexus_retry_count: flexus版本任务剩余可以重训的次数，每重训一次减1，减到0时不可再重训。
@@ -186,6 +212,8 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         :type audio_source_type: str
         :param supported_service: 该任务所生成的模型支持的业务类型，可多选
         :type supported_service: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
+        :param allocated_resource: 
+        :type allocated_resource: :class:`huaweicloudsdkmetastudio.v1.TrainingAllocatedResource`
         :param x_request_id: 
         :type x_request_id: str
         """
@@ -208,11 +236,14 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         self._model_resolution = None
         self._app_user_id = None
         self._is_flexus = None
+        self._is_only_human_model = None
         self._training_video_download_url = None
         self._id_card_image1_download_url = None
         self._id_card_image2_download_url = None
         self._grant_file_download_url = None
+        self._pre_beauty_image_download_url = None
         self._action_video_download_url = None
+        self._post_beauty_image_download_url = None
         self._audio_file_download_url = None
         self._operation_logs = None
         self._verify_video_matting_info = None
@@ -222,15 +253,19 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         self._mask_file_download_url = None
         self._verify_video_download_url = None
         self._markable_video_download_url = None
+        self._traning_video_mark_info = None
         self._inference_data_process_video_mark_info = None
         self._inference_data_process_action_mark_info = None
+        self._inference_data_process_chat_action_mark_info = None
         self._inference_data_process_eye_correction_mark_info = None
         self._is_background_replacement = None
         self._worker_type = None
+        self._beauty_level = None
         self._voice_train_job_id = None
         self._flexus_retry_count = None
         self._audio_source_type = None
         self._supported_service = None
+        self._allocated_resource = None
         self._x_request_id = None
         self.discriminator = None
 
@@ -263,6 +298,8 @@ class Show2dModelTrainingJobResponse(SdkResponse):
             self.app_user_id = app_user_id
         if is_flexus is not None:
             self.is_flexus = is_flexus
+        if is_only_human_model is not None:
+            self.is_only_human_model = is_only_human_model
         if training_video_download_url is not None:
             self.training_video_download_url = training_video_download_url
         if id_card_image1_download_url is not None:
@@ -271,8 +308,12 @@ class Show2dModelTrainingJobResponse(SdkResponse):
             self.id_card_image2_download_url = id_card_image2_download_url
         if grant_file_download_url is not None:
             self.grant_file_download_url = grant_file_download_url
+        if pre_beauty_image_download_url is not None:
+            self.pre_beauty_image_download_url = pre_beauty_image_download_url
         if action_video_download_url is not None:
             self.action_video_download_url = action_video_download_url
+        if post_beauty_image_download_url is not None:
+            self.post_beauty_image_download_url = post_beauty_image_download_url
         if audio_file_download_url is not None:
             self.audio_file_download_url = audio_file_download_url
         if operation_logs is not None:
@@ -291,16 +332,22 @@ class Show2dModelTrainingJobResponse(SdkResponse):
             self.verify_video_download_url = verify_video_download_url
         if markable_video_download_url is not None:
             self.markable_video_download_url = markable_video_download_url
+        if traning_video_mark_info is not None:
+            self.traning_video_mark_info = traning_video_mark_info
         if inference_data_process_video_mark_info is not None:
             self.inference_data_process_video_mark_info = inference_data_process_video_mark_info
         if inference_data_process_action_mark_info is not None:
             self.inference_data_process_action_mark_info = inference_data_process_action_mark_info
+        if inference_data_process_chat_action_mark_info is not None:
+            self.inference_data_process_chat_action_mark_info = inference_data_process_chat_action_mark_info
         if inference_data_process_eye_correction_mark_info is not None:
             self.inference_data_process_eye_correction_mark_info = inference_data_process_eye_correction_mark_info
         if is_background_replacement is not None:
             self.is_background_replacement = is_background_replacement
         if worker_type is not None:
             self.worker_type = worker_type
+        if beauty_level is not None:
+            self.beauty_level = beauty_level
         if voice_train_job_id is not None:
             self.voice_train_job_id = voice_train_job_id
         if flexus_retry_count is not None:
@@ -309,6 +356,8 @@ class Show2dModelTrainingJobResponse(SdkResponse):
             self.audio_source_type = audio_source_type
         if supported_service is not None:
             self.supported_service = supported_service
+        if allocated_resource is not None:
+            self.allocated_resource = allocated_resource
         if x_request_id is not None:
             self.x_request_id = x_request_id
 
@@ -360,7 +409,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
     def state(self):
         """Gets the state of this Show2dModelTrainingJobResponse.
 
-        任务的状态。  与MetaStudio Console上用户看到的状态映射关系如下：  - 待提交   * WAIT_FILE_UPLOAD: 待上传文件  - 系统审核中   * AUTO_VERIFYING: 自动审核中   * MANUAL_VERIFYING: 人工审核中  - 系统审核未通过   * AUTO_VERIFY_FAILED: 自动审核失败   * MANUAL_VERIFY_FAILED: 人工审核失败  - 算法训练中   > 算法训练中的状态仅管理员需要处理，普通用户仅需要显示“算法训练中”即可。   * MANUAL_VERIFY_SUCCESS: 审核通过，等待预处理资源   * WAIT_TRAINING_DATA_PREPROCESS: 等待训练数据预处理   * TRAINING_DATA_PREPROCESSING: 训练数据预处理中   * TRAINING_DATA_PREPROCESS_FAILED: 训练数据预处理失败   * TRAINING_DATA_PREPROCESS_SUCCESS: 训练数据预处理完成，等待训练资源中   * TRAINING: 训练中   * TRAIN_FAILED: 训练失败   * TRAIN_SUCCESS: 训练完成，等待预处理资源   * INFERENCE_DATA_PREPROCESSING: 推理数据预处理中   * INFERENCE_DATA_PREPROCESS_FAILED: 推理数据预处理失败   * WAIT_MAIN_FILE_UPLOAD: 等待主文件上传   * MANUAL_STOP_INFERENCE_DATA_PREPROCESS: 人工中止推理预处理   * MANUAL_STOP_TRAIN: 人工中止训练   * MANUAL_STOP_TRAINING_DATA_PREPROCESS: 人工中止训练预处理   * WAIT_ADMIN_CONFIRM: 等待管理员审核   * WAIT_COMPILE: 等待转编译   * COMPILING: 转编译中   * COMPILE_FAILED: 转编译失败   * WAIT_GENERATE_ACTION: 等待原子动作生成   * WAIT_ARRANGE: 等待编排   * ACTION_GENERATE_DATA_PROCESSING: 原子动作生成中   * MANUAL_STOP_ACTION_GENERATE_DATA_PROCESSING: 人工中止动作生成   * MANUAL_STOP_ACTION_GENERATE_ORI_PROCESSING: 人工中止动作编排   * ACTION_GENERATE_ORI_PROCESSING: 动作编排中   * ACTION_GENERATE_DATA_FAILED: 动作生成失败   * ACTION_GENERATE_ORI_FAILED: 生成动作编排资产失败   * ACTION_GENERATE_ORI_SUCCESS: 动作编排成功   * GENERATE_ACTION_PREPROCESS_FAILED: 生成动作编排原子动作失败   * WAIT_ADMIN_CALIBRATION: 等待管理员确认动作信息  - 待用户审核，仅NA白名单用户有该状态   * WAIT_USER_CONFIRM: 等待用户确认训练效果  - 用户驳回，仅NA白名单用户有该状态   * JOB_REJECT: 驳回任务  - 已完成   * JOB_SUCCESS: 训练任务完成（普通用户任务的完成状态，此时用户已经可以使用模型）   * JOB_FINISH: 任务结束，是最终状态，不支持修改此状态(NA用户任务的完成状态，并且此状态表明模型效果已通过用户的验收)  - 挂起，仅NA白名单用户有该状态   * JOB_PENDING: 挂起任务
+        任务的状态。  与MetaStudio Console上用户看到的状态映射关系如下：  - 待提交   * WAIT_FILE_UPLOAD: 待上传文件  - 系统审核中   * AUTO_VERIFYING: 自动审核中   * MANUAL_VERIFYING: 人工审核中  - 系统审核未通过   * AUTO_VERIFY_FAILED: 自动审核失败   * MANUAL_VERIFY_FAILED: 人工审核失败  - 算法训练中   > 算法训练中的状态仅管理员需要处理，普通用户仅需要显示“算法训练中”即可。   * MANUAL_VERIFY_SUCCESS: 审核通过，等待预处理资源   * WAIT_TRAINING_DATA_PREPROCESS: 等待训练数据预处理   * TRAINING_DATA_PREPROCESSING: 训练数据预处理中   * TRAINING_DATA_PREPROCESS_FAILED: 训练数据预处理失败   * TRAINING_DATA_PREPROCESS_SUCCESS: 训练数据预处理完成，等待训练资源中   * TRAINING: 训练中   * TRAIN_FAILED: 训练失败   * TRAIN_SUCCESS: 训练完成，等待预处理资源   * INFERENCE_DATA_PREPROCESSING: 推理数据预处理中   * INFERENCE_DATA_PREPROCESS_FAILED: 推理数据预处理失败   * WAIT_MAIN_FILE_UPLOAD: 等待主文件上传   * MANUAL_STOP_INFERENCE_DATA_PREPROCESS: 人工中止推理预处理   * MANUAL_STOP_TRAIN: 人工中止训练   * MANUAL_STOP_TRAINING_DATA_PREPROCESS: 人工中止训练预处理   * WAIT_ADMIN_CONFIRM: 等待管理员审核   * WAIT_COMPILE: 等待转编译   * COMPILING: 转编译中   * COMPILE_FAILED: 转编译失败   * WAIT_GENERATE_ACTION: 等待原子动作生成   * WAIT_ARRANGE: 等待编排   * ACTION_GENERATE_DATA_PROCESSING: 原子动作生成中   * MANUAL_STOP_ACTION_GENERATE_DATA_PROCESSING: 人工中止动作生成   * MANUAL_STOP_ACTION_GENERATE_ORI_PROCESSING: 人工中止动作编排   * ACTION_GENERATE_ORI_PROCESSING: 动作编排中   * ACTION_GENERATE_DATA_FAILED: 动作生成失败   * ACTION_GENERATE_ORI_FAILED: 生成动作编排资产失败   * ACTION_GENERATE_ORI_SUCCESS: 动作编排成功   * GENERATE_ACTION_PREPROCESS_FAILED: 生成动作编排原子动作失败   * WAIT_ADMIN_CALIBRATION: 等待管理员确认动作信息   * WAIT_ASSET_SYNC: 等待资产同步  - 待用户审核，仅NA白名单用户有该状态   * WAIT_USER_CONFIRM: 等待用户确认训练效果  - 用户驳回，仅NA白名单用户有该状态   * JOB_REJECT: 驳回任务  - 已完成   * JOB_SUCCESS: 训练任务完成（普通用户任务的完成状态，此时用户已经可以使用模型）   * JOB_FINISH: 任务结束，是最终状态，不支持修改此状态(NA用户任务的完成状态，并且此状态表明模型效果已通过用户的验收)  - 挂起，仅NA白名单用户有该状态   * JOB_PENDING: 挂起任务
 
         :return: The state of this Show2dModelTrainingJobResponse.
         :rtype: str
@@ -371,7 +420,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
     def state(self, state):
         """Sets the state of this Show2dModelTrainingJobResponse.
 
-        任务的状态。  与MetaStudio Console上用户看到的状态映射关系如下：  - 待提交   * WAIT_FILE_UPLOAD: 待上传文件  - 系统审核中   * AUTO_VERIFYING: 自动审核中   * MANUAL_VERIFYING: 人工审核中  - 系统审核未通过   * AUTO_VERIFY_FAILED: 自动审核失败   * MANUAL_VERIFY_FAILED: 人工审核失败  - 算法训练中   > 算法训练中的状态仅管理员需要处理，普通用户仅需要显示“算法训练中”即可。   * MANUAL_VERIFY_SUCCESS: 审核通过，等待预处理资源   * WAIT_TRAINING_DATA_PREPROCESS: 等待训练数据预处理   * TRAINING_DATA_PREPROCESSING: 训练数据预处理中   * TRAINING_DATA_PREPROCESS_FAILED: 训练数据预处理失败   * TRAINING_DATA_PREPROCESS_SUCCESS: 训练数据预处理完成，等待训练资源中   * TRAINING: 训练中   * TRAIN_FAILED: 训练失败   * TRAIN_SUCCESS: 训练完成，等待预处理资源   * INFERENCE_DATA_PREPROCESSING: 推理数据预处理中   * INFERENCE_DATA_PREPROCESS_FAILED: 推理数据预处理失败   * WAIT_MAIN_FILE_UPLOAD: 等待主文件上传   * MANUAL_STOP_INFERENCE_DATA_PREPROCESS: 人工中止推理预处理   * MANUAL_STOP_TRAIN: 人工中止训练   * MANUAL_STOP_TRAINING_DATA_PREPROCESS: 人工中止训练预处理   * WAIT_ADMIN_CONFIRM: 等待管理员审核   * WAIT_COMPILE: 等待转编译   * COMPILING: 转编译中   * COMPILE_FAILED: 转编译失败   * WAIT_GENERATE_ACTION: 等待原子动作生成   * WAIT_ARRANGE: 等待编排   * ACTION_GENERATE_DATA_PROCESSING: 原子动作生成中   * MANUAL_STOP_ACTION_GENERATE_DATA_PROCESSING: 人工中止动作生成   * MANUAL_STOP_ACTION_GENERATE_ORI_PROCESSING: 人工中止动作编排   * ACTION_GENERATE_ORI_PROCESSING: 动作编排中   * ACTION_GENERATE_DATA_FAILED: 动作生成失败   * ACTION_GENERATE_ORI_FAILED: 生成动作编排资产失败   * ACTION_GENERATE_ORI_SUCCESS: 动作编排成功   * GENERATE_ACTION_PREPROCESS_FAILED: 生成动作编排原子动作失败   * WAIT_ADMIN_CALIBRATION: 等待管理员确认动作信息  - 待用户审核，仅NA白名单用户有该状态   * WAIT_USER_CONFIRM: 等待用户确认训练效果  - 用户驳回，仅NA白名单用户有该状态   * JOB_REJECT: 驳回任务  - 已完成   * JOB_SUCCESS: 训练任务完成（普通用户任务的完成状态，此时用户已经可以使用模型）   * JOB_FINISH: 任务结束，是最终状态，不支持修改此状态(NA用户任务的完成状态，并且此状态表明模型效果已通过用户的验收)  - 挂起，仅NA白名单用户有该状态   * JOB_PENDING: 挂起任务
+        任务的状态。  与MetaStudio Console上用户看到的状态映射关系如下：  - 待提交   * WAIT_FILE_UPLOAD: 待上传文件  - 系统审核中   * AUTO_VERIFYING: 自动审核中   * MANUAL_VERIFYING: 人工审核中  - 系统审核未通过   * AUTO_VERIFY_FAILED: 自动审核失败   * MANUAL_VERIFY_FAILED: 人工审核失败  - 算法训练中   > 算法训练中的状态仅管理员需要处理，普通用户仅需要显示“算法训练中”即可。   * MANUAL_VERIFY_SUCCESS: 审核通过，等待预处理资源   * WAIT_TRAINING_DATA_PREPROCESS: 等待训练数据预处理   * TRAINING_DATA_PREPROCESSING: 训练数据预处理中   * TRAINING_DATA_PREPROCESS_FAILED: 训练数据预处理失败   * TRAINING_DATA_PREPROCESS_SUCCESS: 训练数据预处理完成，等待训练资源中   * TRAINING: 训练中   * TRAIN_FAILED: 训练失败   * TRAIN_SUCCESS: 训练完成，等待预处理资源   * INFERENCE_DATA_PREPROCESSING: 推理数据预处理中   * INFERENCE_DATA_PREPROCESS_FAILED: 推理数据预处理失败   * WAIT_MAIN_FILE_UPLOAD: 等待主文件上传   * MANUAL_STOP_INFERENCE_DATA_PREPROCESS: 人工中止推理预处理   * MANUAL_STOP_TRAIN: 人工中止训练   * MANUAL_STOP_TRAINING_DATA_PREPROCESS: 人工中止训练预处理   * WAIT_ADMIN_CONFIRM: 等待管理员审核   * WAIT_COMPILE: 等待转编译   * COMPILING: 转编译中   * COMPILE_FAILED: 转编译失败   * WAIT_GENERATE_ACTION: 等待原子动作生成   * WAIT_ARRANGE: 等待编排   * ACTION_GENERATE_DATA_PROCESSING: 原子动作生成中   * MANUAL_STOP_ACTION_GENERATE_DATA_PROCESSING: 人工中止动作生成   * MANUAL_STOP_ACTION_GENERATE_ORI_PROCESSING: 人工中止动作编排   * ACTION_GENERATE_ORI_PROCESSING: 动作编排中   * ACTION_GENERATE_DATA_FAILED: 动作生成失败   * ACTION_GENERATE_ORI_FAILED: 生成动作编排资产失败   * ACTION_GENERATE_ORI_SUCCESS: 动作编排成功   * GENERATE_ACTION_PREPROCESS_FAILED: 生成动作编排原子动作失败   * WAIT_ADMIN_CALIBRATION: 等待管理员确认动作信息   * WAIT_ASSET_SYNC: 等待资产同步  - 待用户审核，仅NA白名单用户有该状态   * WAIT_USER_CONFIRM: 等待用户确认训练效果  - 用户驳回，仅NA白名单用户有该状态   * JOB_REJECT: 驳回任务  - 已完成   * JOB_SUCCESS: 训练任务完成（普通用户任务的完成状态，此时用户已经可以使用模型）   * JOB_FINISH: 任务结束，是最终状态，不支持修改此状态(NA用户任务的完成状态，并且此状态表明模型效果已通过用户的验收)  - 挂起，仅NA白名单用户有该状态   * JOB_PENDING: 挂起任务
 
         :param state: The state of this Show2dModelTrainingJobResponse.
         :type state: str
@@ -665,6 +714,28 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         self._is_flexus = is_flexus
 
     @property
+    def is_only_human_model(self):
+        """Gets the is_only_human_model of this Show2dModelTrainingJobResponse.
+
+        是否只训练形象模型，不训练声音模型。仅Flexus版本时有效，默认false。
+
+        :return: The is_only_human_model of this Show2dModelTrainingJobResponse.
+        :rtype: bool
+        """
+        return self._is_only_human_model
+
+    @is_only_human_model.setter
+    def is_only_human_model(self, is_only_human_model):
+        """Sets the is_only_human_model of this Show2dModelTrainingJobResponse.
+
+        是否只训练形象模型，不训练声音模型。仅Flexus版本时有效，默认false。
+
+        :param is_only_human_model: The is_only_human_model of this Show2dModelTrainingJobResponse.
+        :type is_only_human_model: bool
+        """
+        self._is_only_human_model = is_only_human_model
+
+    @property
     def training_video_download_url(self):
         """Gets the training_video_download_url of this Show2dModelTrainingJobResponse.
 
@@ -753,6 +824,28 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         self._grant_file_download_url = grant_file_download_url
 
     @property
+    def pre_beauty_image_download_url(self):
+        """Gets the pre_beauty_image_download_url of this Show2dModelTrainingJobResponse.
+
+        美白前图片下载url。
+
+        :return: The pre_beauty_image_download_url of this Show2dModelTrainingJobResponse.
+        :rtype: str
+        """
+        return self._pre_beauty_image_download_url
+
+    @pre_beauty_image_download_url.setter
+    def pre_beauty_image_download_url(self, pre_beauty_image_download_url):
+        """Sets the pre_beauty_image_download_url of this Show2dModelTrainingJobResponse.
+
+        美白前图片下载url。
+
+        :param pre_beauty_image_download_url: The pre_beauty_image_download_url of this Show2dModelTrainingJobResponse.
+        :type pre_beauty_image_download_url: str
+        """
+        self._pre_beauty_image_download_url = pre_beauty_image_download_url
+
+    @property
     def action_video_download_url(self):
         """Gets the action_video_download_url of this Show2dModelTrainingJobResponse.
 
@@ -773,6 +866,28 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         :type action_video_download_url: str
         """
         self._action_video_download_url = action_video_download_url
+
+    @property
+    def post_beauty_image_download_url(self):
+        """Gets the post_beauty_image_download_url of this Show2dModelTrainingJobResponse.
+
+        美白后图片下载url。
+
+        :return: The post_beauty_image_download_url of this Show2dModelTrainingJobResponse.
+        :rtype: str
+        """
+        return self._post_beauty_image_download_url
+
+    @post_beauty_image_download_url.setter
+    def post_beauty_image_download_url(self, post_beauty_image_download_url):
+        """Sets the post_beauty_image_download_url of this Show2dModelTrainingJobResponse.
+
+        美白后图片下载url。
+
+        :param post_beauty_image_download_url: The post_beauty_image_download_url of this Show2dModelTrainingJobResponse.
+        :type post_beauty_image_download_url: str
+        """
+        self._post_beauty_image_download_url = post_beauty_image_download_url
 
     @property
     def audio_file_download_url(self):
@@ -973,6 +1088,24 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         self._markable_video_download_url = markable_video_download_url
 
     @property
+    def traning_video_mark_info(self):
+        """Gets the traning_video_mark_info of this Show2dModelTrainingJobResponse.
+
+        :return: The traning_video_mark_info of this Show2dModelTrainingJobResponse.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.TrainingVideoMarkInfo`
+        """
+        return self._traning_video_mark_info
+
+    @traning_video_mark_info.setter
+    def traning_video_mark_info(self, traning_video_mark_info):
+        """Sets the traning_video_mark_info of this Show2dModelTrainingJobResponse.
+
+        :param traning_video_mark_info: The traning_video_mark_info of this Show2dModelTrainingJobResponse.
+        :type traning_video_mark_info: :class:`huaweicloudsdkmetastudio.v1.TrainingVideoMarkInfo`
+        """
+        self._traning_video_mark_info = traning_video_mark_info
+
+    @property
     def inference_data_process_video_mark_info(self):
         """Gets the inference_data_process_video_mark_info of this Show2dModelTrainingJobResponse.
 
@@ -1007,6 +1140,24 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         :type inference_data_process_action_mark_info: :class:`huaweicloudsdkmetastudio.v1.InferenceActionMarkInfo`
         """
         self._inference_data_process_action_mark_info = inference_data_process_action_mark_info
+
+    @property
+    def inference_data_process_chat_action_mark_info(self):
+        """Gets the inference_data_process_chat_action_mark_info of this Show2dModelTrainingJobResponse.
+
+        :return: The inference_data_process_chat_action_mark_info of this Show2dModelTrainingJobResponse.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.InferenceActionMarkInfo`
+        """
+        return self._inference_data_process_chat_action_mark_info
+
+    @inference_data_process_chat_action_mark_info.setter
+    def inference_data_process_chat_action_mark_info(self, inference_data_process_chat_action_mark_info):
+        """Sets the inference_data_process_chat_action_mark_info of this Show2dModelTrainingJobResponse.
+
+        :param inference_data_process_chat_action_mark_info: The inference_data_process_chat_action_mark_info of this Show2dModelTrainingJobResponse.
+        :type inference_data_process_chat_action_mark_info: :class:`huaweicloudsdkmetastudio.v1.InferenceActionMarkInfo`
+        """
+        self._inference_data_process_chat_action_mark_info = inference_data_process_chat_action_mark_info
 
     @property
     def inference_data_process_eye_correction_mark_info(self):
@@ -1069,6 +1220,28 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         :type worker_type: list[str]
         """
         self._worker_type = worker_type
+
+    @property
+    def beauty_level(self):
+        """Gets the beauty_level of this Show2dModelTrainingJobResponse.
+
+        美白等级。默认值0，不美白。
+
+        :return: The beauty_level of this Show2dModelTrainingJobResponse.
+        :rtype: int
+        """
+        return self._beauty_level
+
+    @beauty_level.setter
+    def beauty_level(self, beauty_level):
+        """Sets the beauty_level of this Show2dModelTrainingJobResponse.
+
+        美白等级。默认值0，不美白。
+
+        :param beauty_level: The beauty_level of this Show2dModelTrainingJobResponse.
+        :type beauty_level: int
+        """
+        self._beauty_level = beauty_level
 
     @property
     def voice_train_job_id(self):
@@ -1157,6 +1330,24 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         :type supported_service: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
         """
         self._supported_service = supported_service
+
+    @property
+    def allocated_resource(self):
+        """Gets the allocated_resource of this Show2dModelTrainingJobResponse.
+
+        :return: The allocated_resource of this Show2dModelTrainingJobResponse.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.TrainingAllocatedResource`
+        """
+        return self._allocated_resource
+
+    @allocated_resource.setter
+    def allocated_resource(self, allocated_resource):
+        """Sets the allocated_resource of this Show2dModelTrainingJobResponse.
+
+        :param allocated_resource: The allocated_resource of this Show2dModelTrainingJobResponse.
+        :type allocated_resource: :class:`huaweicloudsdkmetastudio.v1.TrainingAllocatedResource`
+        """
+        self._allocated_resource = allocated_resource
 
     @property
     def x_request_id(self):

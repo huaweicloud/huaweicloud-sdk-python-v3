@@ -17,24 +17,24 @@ class PushEventsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'x_enterprise_prject_id': 'str',
+        'enterprise_project_id': 'str',
         'action': 'str',
         'body': 'EventList'
     }
 
     attribute_map = {
-        'x_enterprise_prject_id': 'x-enterprise-prject-id',
+        'enterprise_project_id': 'enterprise-project-id',
         'action': 'action',
         'body': 'body'
     }
 
-    def __init__(self, x_enterprise_prject_id=None, action=None, body=None):
+    def __init__(self, enterprise_project_id=None, action=None, body=None):
         """PushEventsRequest
 
         The model defined in huaweicloud sdk
 
-        :param x_enterprise_prject_id: 告警所属的企业项目id。
-        :type x_enterprise_prject_id: str
+        :param enterprise_project_id: 告警所属的企业项目id。
+        :type enterprise_project_id: str
         :param action: 接口请求动作。action&#x3D;clear代表清除告警，不传或者传其他值默认为上报动作。
         :type action: str
         :param body: Body of the PushEventsRequest
@@ -43,39 +43,39 @@ class PushEventsRequest:
         
         
 
-        self._x_enterprise_prject_id = None
+        self._enterprise_project_id = None
         self._action = None
         self._body = None
         self.discriminator = None
 
-        if x_enterprise_prject_id is not None:
-            self.x_enterprise_prject_id = x_enterprise_prject_id
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if action is not None:
             self.action = action
         if body is not None:
             self.body = body
 
     @property
-    def x_enterprise_prject_id(self):
-        """Gets the x_enterprise_prject_id of this PushEventsRequest.
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this PushEventsRequest.
 
         告警所属的企业项目id。
 
-        :return: The x_enterprise_prject_id of this PushEventsRequest.
+        :return: The enterprise_project_id of this PushEventsRequest.
         :rtype: str
         """
-        return self._x_enterprise_prject_id
+        return self._enterprise_project_id
 
-    @x_enterprise_prject_id.setter
-    def x_enterprise_prject_id(self, x_enterprise_prject_id):
-        """Sets the x_enterprise_prject_id of this PushEventsRequest.
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this PushEventsRequest.
 
         告警所属的企业项目id。
 
-        :param x_enterprise_prject_id: The x_enterprise_prject_id of this PushEventsRequest.
-        :type x_enterprise_prject_id: str
+        :param enterprise_project_id: The enterprise_project_id of this PushEventsRequest.
+        :type enterprise_project_id: str
         """
-        self._x_enterprise_prject_id = x_enterprise_prject_id
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def action(self):

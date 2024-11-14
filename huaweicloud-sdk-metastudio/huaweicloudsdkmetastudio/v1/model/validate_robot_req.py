@@ -63,8 +63,7 @@ class ValidateRobotReq:
         self._mobvoi_config = None
         self.discriminator = None
 
-        if app_type is not None:
-            self.app_type = app_type
+        self.app_type = app_type
         if huawei_ei_cbs is not None:
             self.huawei_ei_cbs = huawei_ei_cbs
         if iflytek_aiui_config is not None:

@@ -20,7 +20,7 @@ class ImageAssetMeta:
         'codec': 'str',
         'width': 'int',
         'height': 'int',
-        'size': 'float',
+        'size': 'int',
         'mode': 'str',
         'error_info': 'ErrorResponse'
     }
@@ -46,7 +46,7 @@ class ImageAssetMeta:
         :param height: **参数解释**： 图片高度。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及。
         :type height: int
         :param size: **参数解释**： 图片大小。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及。
-        :type size: float
+        :type size: int
         :param mode: **参数解释**： 图片形态。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： * Horizontal：横向 * Vertical：纵向  **默认取值**： 不涉及。
         :type mode: str
         :param error_info: 
@@ -149,7 +149,7 @@ class ImageAssetMeta:
         **参数解释**： 图片大小。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及。
 
         :return: The size of this ImageAssetMeta.
-        :rtype: float
+        :rtype: int
         """
         return self._size
 
@@ -160,7 +160,7 @@ class ImageAssetMeta:
         **参数解释**： 图片大小。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及。
 
         :param size: The size of this ImageAssetMeta.
-        :type size: float
+        :type size: int
         """
         self._size = size
 

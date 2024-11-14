@@ -17,20 +17,80 @@ class ListSharedTagsRequest:
     sensitive_list = []
 
     openapi_types = {
+        'limit': 'int',
+        'offset': 'int'
     }
 
     attribute_map = {
+        'limit': 'limit',
+        'offset': 'offset'
     }
 
-    def __init__(self):
+    def __init__(self, limit=None, offset=None):
         """ListSharedTagsRequest
 
         The model defined in huaweicloud sdk
 
+        :param limit: 返回的标签个数
+        :type limit: int
+        :param offset: 标签查询个数的偏移量
+        :type offset: int
         """
         
         
+
+        self._limit = None
+        self._offset = None
         self.discriminator = None
+
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
+
+    @property
+    def limit(self):
+        """Gets the limit of this ListSharedTagsRequest.
+
+        返回的标签个数
+
+        :return: The limit of this ListSharedTagsRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListSharedTagsRequest.
+
+        返回的标签个数
+
+        :param limit: The limit of this ListSharedTagsRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def offset(self):
+        """Gets the offset of this ListSharedTagsRequest.
+
+        标签查询个数的偏移量
+
+        :return: The offset of this ListSharedTagsRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ListSharedTagsRequest.
+
+        标签查询个数的偏移量
+
+        :param offset: The offset of this ListSharedTagsRequest.
+        :type offset: int
+        """
+        self._offset = offset
 
     def to_dict(self):
         """Returns the model properties as a dict"""

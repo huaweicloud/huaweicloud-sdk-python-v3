@@ -21,6 +21,7 @@ class ActionSampleInfo:
         'action_name_en': 'str',
         'action_tag': 'str',
         'catalog': 'str',
+        'recommended_value': 'int',
         'is_selected': 'bool',
         'sample_download_url': 'str'
     }
@@ -30,11 +31,12 @@ class ActionSampleInfo:
         'action_name_en': 'action_name_en',
         'action_tag': 'action_tag',
         'catalog': 'catalog',
+        'recommended_value': 'recommended_value',
         'is_selected': 'is_selected',
         'sample_download_url': 'sample_download_url'
     }
 
-    def __init__(self, action_name_zh=None, action_name_en=None, action_tag=None, catalog=None, is_selected=None, sample_download_url=None):
+    def __init__(self, action_name_zh=None, action_name_en=None, action_tag=None, catalog=None, recommended_value=None, is_selected=None, sample_download_url=None):
         """ActionSampleInfo
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class ActionSampleInfo:
         :type action_tag: str
         :param catalog: 动作分类名称。
         :type catalog: str
+        :param recommended_value: 推荐等级。
+        :type recommended_value: int
         :param is_selected: 是否选择此动作。
         :type is_selected: bool
         :param sample_download_url: 原子动作样例文件下载地址。24小时内有效。
@@ -59,6 +63,7 @@ class ActionSampleInfo:
         self._action_name_en = None
         self._action_tag = None
         self._catalog = None
+        self._recommended_value = None
         self._is_selected = None
         self._sample_download_url = None
         self.discriminator = None
@@ -70,6 +75,8 @@ class ActionSampleInfo:
         self.action_tag = action_tag
         if catalog is not None:
             self.catalog = catalog
+        if recommended_value is not None:
+            self.recommended_value = recommended_value
         if is_selected is not None:
             self.is_selected = is_selected
         if sample_download_url is not None:
@@ -162,6 +169,28 @@ class ActionSampleInfo:
         :type catalog: str
         """
         self._catalog = catalog
+
+    @property
+    def recommended_value(self):
+        """Gets the recommended_value of this ActionSampleInfo.
+
+        推荐等级。
+
+        :return: The recommended_value of this ActionSampleInfo.
+        :rtype: int
+        """
+        return self._recommended_value
+
+    @recommended_value.setter
+    def recommended_value(self, recommended_value):
+        """Sets the recommended_value of this ActionSampleInfo.
+
+        推荐等级。
+
+        :param recommended_value: The recommended_value of this ActionSampleInfo.
+        :type recommended_value: int
+        """
+        self._recommended_value = recommended_value
 
     @property
     def is_selected(self):

@@ -41,7 +41,7 @@ class FilesCreateReq:
 
         :param file_name: **参数解释**： 文件名。 **约束限制**： 不区分大小写。 **取值范围**： 字符长度1-256位。 **默认取值**： 不涉及
         :type file_name: str
-        :param file_md5: **参数解释**： 文件内容MD5值。按照RFC 1864标准计算出消息体的MD5摘要字符串，即消息体128-bit MD5值经过base64编码后得到的字符串。 **约束限制**： 不涉及 **取值范围**： 字符长度24位。 **默认取值**： 不涉及
+        :param file_md5: **参数解释**： 文件内容MD5值。按照RFC 1864标准计算出消息体的MD5摘要字符串，即消息体128-bit MD5值经过base64编码后得到的字符串。 md5值获取详情请参考[使用Java代码生成文件内容的MD5值](metastudio_02_0052.xml)。 **约束限制**： 不涉及 **取值范围**： 字符长度24位。 **默认取值**： 不涉及
         :type file_md5: str
         :param file_size: **参数解释**： 文件总的大小。 **约束限制**： 最大支持5GB  **默认取值**： 不涉及
         :type file_size: int
@@ -96,7 +96,7 @@ class FilesCreateReq:
     def file_md5(self):
         """Gets the file_md5 of this FilesCreateReq.
 
-        **参数解释**： 文件内容MD5值。按照RFC 1864标准计算出消息体的MD5摘要字符串，即消息体128-bit MD5值经过base64编码后得到的字符串。 **约束限制**： 不涉及 **取值范围**： 字符长度24位。 **默认取值**： 不涉及
+        **参数解释**： 文件内容MD5值。按照RFC 1864标准计算出消息体的MD5摘要字符串，即消息体128-bit MD5值经过base64编码后得到的字符串。 md5值获取详情请参考[使用Java代码生成文件内容的MD5值](metastudio_02_0052.xml)。 **约束限制**： 不涉及 **取值范围**： 字符长度24位。 **默认取值**： 不涉及
 
         :return: The file_md5 of this FilesCreateReq.
         :rtype: str
@@ -107,7 +107,7 @@ class FilesCreateReq:
     def file_md5(self, file_md5):
         """Sets the file_md5 of this FilesCreateReq.
 
-        **参数解释**： 文件内容MD5值。按照RFC 1864标准计算出消息体的MD5摘要字符串，即消息体128-bit MD5值经过base64编码后得到的字符串。 **约束限制**： 不涉及 **取值范围**： 字符长度24位。 **默认取值**： 不涉及
+        **参数解释**： 文件内容MD5值。按照RFC 1864标准计算出消息体的MD5摘要字符串，即消息体128-bit MD5值经过base64编码后得到的字符串。 md5值获取详情请参考[使用Java代码生成文件内容的MD5值](metastudio_02_0052.xml)。 **约束限制**： 不涉及 **取值范围**： 字符长度24位。 **默认取值**： 不涉及
 
         :param file_md5: The file_md5 of this FilesCreateReq.
         :type file_md5: str

@@ -300,6 +300,73 @@ class DdsClient(Client):
 
         return http_info
 
+    def batch_delete_backup(self, request):
+        """批量删除手动备份
+
+        批量删除数据库实例的手动备份。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteBackup
+        :type request: :class:`huaweicloudsdkdds.v3.BatchDeleteBackupRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.BatchDeleteBackupResponse`
+        """
+        http_info = self._batch_delete_backup_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_backup_invoker(self, request):
+        http_info = self._batch_delete_backup_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_backup_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/backups",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteBackupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_tag_action(self, request):
         """批量添加或删除资源标签
 
@@ -367,6 +434,71 @@ class DdsClient(Client):
 
         return http_info
 
+    def batch_upgrade_database_version(self, request):
+        """批量数据库补丁升级
+
+        批量升级数据库补丁版本。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchUpgradeDatabaseVersion
+        :type request: :class:`huaweicloudsdkdds.v3.BatchUpgradeDatabaseVersionRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.BatchUpgradeDatabaseVersionResponse`
+        """
+        http_info = self._batch_upgrade_database_version_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_upgrade_database_version_invoker(self, request):
+        http_info = self._batch_upgrade_database_version_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_upgrade_database_version_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/db-upgrade",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchUpgradeDatabaseVersionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def cancel_eip(self, request):
         """解绑弹性公网IP
 
@@ -403,6 +535,71 @@ class DdsClient(Client):
         path_params = {}
         if 'node_id' in local_var_params:
             path_params['node_id'] = local_var_params['node_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def cancel_scheduled_task(self, request):
+        """取消定时任务
+
+        根据任务ID取消定时任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CancelScheduledTask
+        :type request: :class:`huaweicloudsdkdds.v3.CancelScheduledTaskRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.CancelScheduledTaskResponse`
+        """
+        http_info = self._cancel_scheduled_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def cancel_scheduled_task_invoker(self, request):
+        http_info = self._cancel_scheduled_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _cancel_scheduled_task_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/scheduled-jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelScheduledTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
 
         query_params = []
 
@@ -3773,6 +3970,83 @@ class DdsClient(Client):
 
         return http_info
 
+    def list_scheduled_tasks(self, request):
+        """查询定时任务
+
+        根据指定条件查询定时任务列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListScheduledTasks
+        :type request: :class:`huaweicloudsdkdds.v3.ListScheduledTasksRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.ListScheduledTasksResponse`
+        """
+        http_info = self._list_scheduled_tasks_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_scheduled_tasks_invoker(self, request):
+        http_info = self._list_scheduled_tasks_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_scheduled_tasks_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/scheduled-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListScheduledTasksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'job_name' in local_var_params:
+            query_params.append(('job_name', local_var_params['job_name']))
+        if 'job_status' in local_var_params:
+            query_params.append(('job_status', local_var_params['job_status']))
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_sessions(self, request):
         """查询实例节点会话
 
@@ -4802,6 +5076,71 @@ class DdsClient(Client):
 
         return http_info
 
+    def set_auto_enlarge_policies(self, request):
+        """设置磁盘自动扩容策略
+
+        设置磁盘自动扩容策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SetAutoEnlargePolicies
+        :type request: :class:`huaweicloudsdkdds.v3.SetAutoEnlargePoliciesRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.SetAutoEnlargePoliciesResponse`
+        """
+        http_info = self._set_auto_enlarge_policies_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_auto_enlarge_policies_invoker(self, request):
+        http_info = self._set_auto_enlarge_policies_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _set_auto_enlarge_policies_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/auto-enlarge-volume-policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetAutoEnlargePoliciesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def set_backup_policy(self, request):
         """设置自动备份策略
 
@@ -5110,6 +5449,71 @@ class DdsClient(Client):
         header_params = {}
         if 'x_language' in local_var_params:
             header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_auto_enlarge_policy(self, request):
+        """查询磁盘自动扩容策略
+
+        查询磁盘自动扩容策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAutoEnlargePolicy
+        :type request: :class:`huaweicloudsdkdds.v3.ShowAutoEnlargePolicyRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.ShowAutoEnlargePolicyResponse`
+        """
+        http_info = self._show_auto_enlarge_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_auto_enlarge_policy_invoker(self, request):
+        http_info = self._show_auto_enlarge_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_auto_enlarge_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/auto-enlarge-volume-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAutoEnlargePolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
 
         form_params = {}
 
@@ -5711,6 +6115,75 @@ class DdsClient(Client):
         query_params = []
         if 'entity_id' in local_var_params:
             query_params.append(('entity_id', local_var_params['entity_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_instance_configuration_modify_history(self, request):
+        """查询实例参数的修改历史
+
+        查询实例参数的修改历史。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowInstanceConfigurationModifyHistory
+        :type request: :class:`huaweicloudsdkdds.v3.ShowInstanceConfigurationModifyHistoryRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.ShowInstanceConfigurationModifyHistoryResponse`
+        """
+        http_info = self._show_instance_configuration_modify_history_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_instance_configuration_modify_history_invoker(self, request):
+        http_info = self._show_instance_configuration_modify_history_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_instance_configuration_modify_history_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/configuration-histories",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInstanceConfigurationModifyHistoryResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -7589,6 +8062,71 @@ class DdsClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def validate_configuration_name(self, request):
+        """校验参数模板名称是否存在
+
+        校验参数模板名称是否存在。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ValidateConfigurationName
+        :type request: :class:`huaweicloudsdkdds.v3.ValidateConfigurationNameRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.ValidateConfigurationNameResponse`
+        """
+        http_info = self._validate_configuration_name_http_info(request)
+        return self._call_api(**http_info)
+
+    def validate_configuration_name_invoker(self, request):
+        http_info = self._validate_configuration_name_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _validate_configuration_name_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/configurations/name-validation",
+            "request_type": request.__class__.__name__,
+            "response_type": "ValidateConfigurationNameResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

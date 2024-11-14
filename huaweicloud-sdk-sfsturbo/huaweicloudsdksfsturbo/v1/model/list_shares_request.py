@@ -31,9 +31,9 @@ class ListSharesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param limit: 返回的文件系统个数，最大值为200。
+        :param limit: 设置返回的文件系统个数的最大值，不填默认为1000个
         :type limit: int
-        :param offset: 文件系统查询个数的偏移量。
+        :param offset: 设置返回的文件系统的偏移量。
         :type offset: int
         """
         
@@ -52,7 +52,7 @@ class ListSharesRequest:
     def limit(self):
         """Gets the limit of this ListSharesRequest.
 
-        返回的文件系统个数，最大值为200。
+        设置返回的文件系统个数的最大值，不填默认为1000个
 
         :return: The limit of this ListSharesRequest.
         :rtype: int
@@ -63,7 +63,7 @@ class ListSharesRequest:
     def limit(self, limit):
         """Sets the limit of this ListSharesRequest.
 
-        返回的文件系统个数，最大值为200。
+        设置返回的文件系统个数的最大值，不填默认为1000个
 
         :param limit: The limit of this ListSharesRequest.
         :type limit: int
@@ -74,7 +74,7 @@ class ListSharesRequest:
     def offset(self):
         """Gets the offset of this ListSharesRequest.
 
-        文件系统查询个数的偏移量。
+        设置返回的文件系统的偏移量。
 
         :return: The offset of this ListSharesRequest.
         :rtype: int
@@ -85,7 +85,7 @@ class ListSharesRequest:
     def offset(self, offset):
         """Sets the offset of this ListSharesRequest.
 
-        文件系统查询个数的偏移量。
+        设置返回的文件系统的偏移量。
 
         :param offset: The offset of this ListSharesRequest.
         :type offset: int

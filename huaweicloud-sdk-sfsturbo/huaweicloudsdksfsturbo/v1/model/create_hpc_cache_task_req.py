@@ -21,7 +21,8 @@ class CreateHpcCacheTaskReq:
         'src_target': 'str',
         'src_prefix': 'str',
         'dest_target': 'str',
-        'dest_prefix': 'str'
+        'dest_prefix': 'str',
+        'attributes': 'ObsTargetAttributes'
     }
 
     attribute_map = {
@@ -29,24 +30,27 @@ class CreateHpcCacheTaskReq:
         'src_target': 'src_target',
         'src_prefix': 'src_prefix',
         'dest_target': 'dest_target',
-        'dest_prefix': 'dest_prefix'
+        'dest_prefix': 'dest_prefix',
+        'attributes': 'attributes'
     }
 
-    def __init__(self, type=None, src_target=None, src_prefix=None, dest_target=None, dest_prefix=None):
+    def __init__(self, type=None, src_target=None, src_prefix=None, dest_target=None, dest_prefix=None, attributes=None):
         """CreateHpcCacheTaskReq
 
         The model defined in huaweicloud sdk
 
-        :param type: 任务类型，当前支持import(附加元数据导入)，import_metadata(快速导入)，preload(数据预热)，export(导出)。 附加元数据导入方式会导入OBS对象的元数据（名称、大小、最后修改时间）以及来源于SFS Turbo HPC型导出时的附加元数据（如uid、gid、mode）。 快速导入方式仅会导入OBS对象的元数据（名称、大小、最后修改时间），不会导入其它附加元数据（如uid、gid、mode），SFS Turbo会生成默认的附加元数据（uid:0、gid:0、目录权限:755、文件权限:644）。 数据预热功能会同时导入元数据和数据内容，数据预热中的元数据导入采用快速导入方式，不会导入其它附加元数据（如uid、gid、mode）。 数据导出功能会将您在联动目录里创建的文件，以及对从OBS导入后又做过修改的文件导出存储到OBS桶里。
+        :param type: 任务类型，当前支持import(附加元数据导入)，import_metadata(快速导入)，preload(数据预热)，export(导出)。  附加元数据导入方式会导入OBS对象的元数据（名称、大小、最后修改时间）以及来源于SFS Turbo 导出时的附加元数据（如uid、gid、mode）。  快速导入方式仅会导入OBS对象的元数据（名称、大小、最后修改时间），不会导入其它附加元数据（如uid、gid、mode），SFS Turbo会生成默认的附加元数据。  数据预热功能会同时导入元数据和数据内容，数据预热中的元数据导入采用快速导入方式，不会导入其它附加元数据（如uid、gid、mode）。  数据导出功能会将您在联动目录里创建的文件，以及对从OBS导入后又做过修改的文件导出存储到OBS桶里。 
         :type type: str
         :param src_target: 联动目录名称
         :type src_target: str
-        :param src_prefix: 导入导出任务的源端路径前缀，导入时不需要包含OBS桶名，导出时不需要包含联动目录名称。 对于数据预热导入，携带源端路径前缀时必须是以“/”结尾的目录或具体到某个对象。 如果不带该字段，导入时会导入绑定OBS桶内的所有对象，导出时会导出联动目录下的所有文件。
+        :param src_prefix: 导入导出任务的源端路径前缀，导入时不需要包含OBS桶名，导出时不需要包含联动目录名称。  对于数据预热导入，携带源端路径前缀时必须是以“/”结尾的目录或具体到某个对象。  如果不带该字段，导入时会导入绑定OBS桶内的所有对象，导出时会导出联动目录下的所有文件。 
         :type src_prefix: str
         :param dest_target: 目前只支持和src_target保持一致
         :type dest_target: str
         :param dest_prefix: 目前只支持和src_prefix保持一致
         :type dest_prefix: str
+        :param attributes: 
+        :type attributes: :class:`huaweicloudsdksfsturbo.v1.ObsTargetAttributes`
         """
         
         
@@ -56,6 +60,7 @@ class CreateHpcCacheTaskReq:
         self._src_prefix = None
         self._dest_target = None
         self._dest_prefix = None
+        self._attributes = None
         self.discriminator = None
 
         self.type = type
@@ -65,12 +70,14 @@ class CreateHpcCacheTaskReq:
         self.dest_target = dest_target
         if dest_prefix is not None:
             self.dest_prefix = dest_prefix
+        if attributes is not None:
+            self.attributes = attributes
 
     @property
     def type(self):
         """Gets the type of this CreateHpcCacheTaskReq.
 
-        任务类型，当前支持import(附加元数据导入)，import_metadata(快速导入)，preload(数据预热)，export(导出)。 附加元数据导入方式会导入OBS对象的元数据（名称、大小、最后修改时间）以及来源于SFS Turbo HPC型导出时的附加元数据（如uid、gid、mode）。 快速导入方式仅会导入OBS对象的元数据（名称、大小、最后修改时间），不会导入其它附加元数据（如uid、gid、mode），SFS Turbo会生成默认的附加元数据（uid:0、gid:0、目录权限:755、文件权限:644）。 数据预热功能会同时导入元数据和数据内容，数据预热中的元数据导入采用快速导入方式，不会导入其它附加元数据（如uid、gid、mode）。 数据导出功能会将您在联动目录里创建的文件，以及对从OBS导入后又做过修改的文件导出存储到OBS桶里。
+        任务类型，当前支持import(附加元数据导入)，import_metadata(快速导入)，preload(数据预热)，export(导出)。  附加元数据导入方式会导入OBS对象的元数据（名称、大小、最后修改时间）以及来源于SFS Turbo 导出时的附加元数据（如uid、gid、mode）。  快速导入方式仅会导入OBS对象的元数据（名称、大小、最后修改时间），不会导入其它附加元数据（如uid、gid、mode），SFS Turbo会生成默认的附加元数据。  数据预热功能会同时导入元数据和数据内容，数据预热中的元数据导入采用快速导入方式，不会导入其它附加元数据（如uid、gid、mode）。  数据导出功能会将您在联动目录里创建的文件，以及对从OBS导入后又做过修改的文件导出存储到OBS桶里。 
 
         :return: The type of this CreateHpcCacheTaskReq.
         :rtype: str
@@ -81,7 +88,7 @@ class CreateHpcCacheTaskReq:
     def type(self, type):
         """Sets the type of this CreateHpcCacheTaskReq.
 
-        任务类型，当前支持import(附加元数据导入)，import_metadata(快速导入)，preload(数据预热)，export(导出)。 附加元数据导入方式会导入OBS对象的元数据（名称、大小、最后修改时间）以及来源于SFS Turbo HPC型导出时的附加元数据（如uid、gid、mode）。 快速导入方式仅会导入OBS对象的元数据（名称、大小、最后修改时间），不会导入其它附加元数据（如uid、gid、mode），SFS Turbo会生成默认的附加元数据（uid:0、gid:0、目录权限:755、文件权限:644）。 数据预热功能会同时导入元数据和数据内容，数据预热中的元数据导入采用快速导入方式，不会导入其它附加元数据（如uid、gid、mode）。 数据导出功能会将您在联动目录里创建的文件，以及对从OBS导入后又做过修改的文件导出存储到OBS桶里。
+        任务类型，当前支持import(附加元数据导入)，import_metadata(快速导入)，preload(数据预热)，export(导出)。  附加元数据导入方式会导入OBS对象的元数据（名称、大小、最后修改时间）以及来源于SFS Turbo 导出时的附加元数据（如uid、gid、mode）。  快速导入方式仅会导入OBS对象的元数据（名称、大小、最后修改时间），不会导入其它附加元数据（如uid、gid、mode），SFS Turbo会生成默认的附加元数据。  数据预热功能会同时导入元数据和数据内容，数据预热中的元数据导入采用快速导入方式，不会导入其它附加元数据（如uid、gid、mode）。  数据导出功能会将您在联动目录里创建的文件，以及对从OBS导入后又做过修改的文件导出存储到OBS桶里。 
 
         :param type: The type of this CreateHpcCacheTaskReq.
         :type type: str
@@ -114,7 +121,7 @@ class CreateHpcCacheTaskReq:
     def src_prefix(self):
         """Gets the src_prefix of this CreateHpcCacheTaskReq.
 
-        导入导出任务的源端路径前缀，导入时不需要包含OBS桶名，导出时不需要包含联动目录名称。 对于数据预热导入，携带源端路径前缀时必须是以“/”结尾的目录或具体到某个对象。 如果不带该字段，导入时会导入绑定OBS桶内的所有对象，导出时会导出联动目录下的所有文件。
+        导入导出任务的源端路径前缀，导入时不需要包含OBS桶名，导出时不需要包含联动目录名称。  对于数据预热导入，携带源端路径前缀时必须是以“/”结尾的目录或具体到某个对象。  如果不带该字段，导入时会导入绑定OBS桶内的所有对象，导出时会导出联动目录下的所有文件。 
 
         :return: The src_prefix of this CreateHpcCacheTaskReq.
         :rtype: str
@@ -125,7 +132,7 @@ class CreateHpcCacheTaskReq:
     def src_prefix(self, src_prefix):
         """Sets the src_prefix of this CreateHpcCacheTaskReq.
 
-        导入导出任务的源端路径前缀，导入时不需要包含OBS桶名，导出时不需要包含联动目录名称。 对于数据预热导入，携带源端路径前缀时必须是以“/”结尾的目录或具体到某个对象。 如果不带该字段，导入时会导入绑定OBS桶内的所有对象，导出时会导出联动目录下的所有文件。
+        导入导出任务的源端路径前缀，导入时不需要包含OBS桶名，导出时不需要包含联动目录名称。  对于数据预热导入，携带源端路径前缀时必须是以“/”结尾的目录或具体到某个对象。  如果不带该字段，导入时会导入绑定OBS桶内的所有对象，导出时会导出联动目录下的所有文件。 
 
         :param src_prefix: The src_prefix of this CreateHpcCacheTaskReq.
         :type src_prefix: str
@@ -175,6 +182,24 @@ class CreateHpcCacheTaskReq:
         :type dest_prefix: str
         """
         self._dest_prefix = dest_prefix
+
+    @property
+    def attributes(self):
+        """Gets the attributes of this CreateHpcCacheTaskReq.
+
+        :return: The attributes of this CreateHpcCacheTaskReq.
+        :rtype: :class:`huaweicloudsdksfsturbo.v1.ObsTargetAttributes`
+        """
+        return self._attributes
+
+    @attributes.setter
+    def attributes(self, attributes):
+        """Sets the attributes of this CreateHpcCacheTaskReq.
+
+        :param attributes: The attributes of this CreateHpcCacheTaskReq.
+        :type attributes: :class:`huaweicloudsdksfsturbo.v1.ObsTargetAttributes`
+        """
+        self._attributes = attributes
 
     def to_dict(self):
         """Returns the model properties as a dict"""

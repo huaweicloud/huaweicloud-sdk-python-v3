@@ -35,9 +35,9 @@ class OnePermRuleRequestInfo:
 
         :param ip_cidr: 授权对象的IP地址或网段，设置后不支持修改
         :type ip_cidr: str
-        :param rw_type: -| 授权对象的读写权限 rw：默认选项，以读写的方式共享 ro：以只读的方式共享
+        :param rw_type: 授权对象的读写权限   - rw：默认选项，以读写的方式共享   - ro：以只读的方式共享   - none: 没有权限
         :type rw_type: str
-        :param user_type: -| 授权对象的系统用户对文件系统的访问权限。取值如下： no_root_squash：客户端使用的是root用户时，映射到NFS服务器的用户依然为root用户。 root_squash：客户端使用的是root用户时，映射到NFS服务器的用户为NFS的匿名用户（nfsnobody）。 all_squash：默认选项。所有访问NFS服务器的客户端的用户都映射为匿名用户。
+        :param user_type: 授权对象的系统用户对文件系统的访问权限。取值如下：  - no_root_squash：默认选项。客户端使用包括root用户在内的任何用户，NFS服务器都保持客户端使用的用户，不做映射。  - root_squash：客户端使用的是root用户时，映射到NFS服务器的用户为NFS的匿名用户（nfsnobody）。客户端使用非root用户时，NFS服务器保持客户端使用的用户，不做映射。  - all_squash：所有访问NFS服务器的客户端的用户都映射为匿名用户。
         :type user_type: str
         """
         
@@ -81,7 +81,7 @@ class OnePermRuleRequestInfo:
     def rw_type(self):
         """Gets the rw_type of this OnePermRuleRequestInfo.
 
-        -| 授权对象的读写权限 rw：默认选项，以读写的方式共享 ro：以只读的方式共享
+        授权对象的读写权限   - rw：默认选项，以读写的方式共享   - ro：以只读的方式共享   - none: 没有权限
 
         :return: The rw_type of this OnePermRuleRequestInfo.
         :rtype: str
@@ -92,7 +92,7 @@ class OnePermRuleRequestInfo:
     def rw_type(self, rw_type):
         """Sets the rw_type of this OnePermRuleRequestInfo.
 
-        -| 授权对象的读写权限 rw：默认选项，以读写的方式共享 ro：以只读的方式共享
+        授权对象的读写权限   - rw：默认选项，以读写的方式共享   - ro：以只读的方式共享   - none: 没有权限
 
         :param rw_type: The rw_type of this OnePermRuleRequestInfo.
         :type rw_type: str
@@ -103,7 +103,7 @@ class OnePermRuleRequestInfo:
     def user_type(self):
         """Gets the user_type of this OnePermRuleRequestInfo.
 
-        -| 授权对象的系统用户对文件系统的访问权限。取值如下： no_root_squash：客户端使用的是root用户时，映射到NFS服务器的用户依然为root用户。 root_squash：客户端使用的是root用户时，映射到NFS服务器的用户为NFS的匿名用户（nfsnobody）。 all_squash：默认选项。所有访问NFS服务器的客户端的用户都映射为匿名用户。
+        授权对象的系统用户对文件系统的访问权限。取值如下：  - no_root_squash：默认选项。客户端使用包括root用户在内的任何用户，NFS服务器都保持客户端使用的用户，不做映射。  - root_squash：客户端使用的是root用户时，映射到NFS服务器的用户为NFS的匿名用户（nfsnobody）。客户端使用非root用户时，NFS服务器保持客户端使用的用户，不做映射。  - all_squash：所有访问NFS服务器的客户端的用户都映射为匿名用户。
 
         :return: The user_type of this OnePermRuleRequestInfo.
         :rtype: str
@@ -114,7 +114,7 @@ class OnePermRuleRequestInfo:
     def user_type(self, user_type):
         """Sets the user_type of this OnePermRuleRequestInfo.
 
-        -| 授权对象的系统用户对文件系统的访问权限。取值如下： no_root_squash：客户端使用的是root用户时，映射到NFS服务器的用户依然为root用户。 root_squash：客户端使用的是root用户时，映射到NFS服务器的用户为NFS的匿名用户（nfsnobody）。 all_squash：默认选项。所有访问NFS服务器的客户端的用户都映射为匿名用户。
+        授权对象的系统用户对文件系统的访问权限。取值如下：  - no_root_squash：默认选项。客户端使用包括root用户在内的任何用户，NFS服务器都保持客户端使用的用户，不做映射。  - root_squash：客户端使用的是root用户时，映射到NFS服务器的用户为NFS的匿名用户（nfsnobody）。客户端使用非root用户时，NFS服务器保持客户端使用的用户，不做映射。  - all_squash：所有访问NFS服务器的客户端的用户都映射为匿名用户。
 
         :param user_type: The user_type of this OnePermRuleRequestInfo.
         :type user_type: str

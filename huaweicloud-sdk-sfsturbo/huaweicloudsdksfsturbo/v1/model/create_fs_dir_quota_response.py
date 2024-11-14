@@ -44,9 +44,9 @@ class CreateFsDirQuotaResponse(SdkResponse):
         :type capacity: int
         :param inode: 目录的inode数量限制
         :type inode: int
-        :param used_capacity: 目录已使用的容量大小，单位：MB。仅SFSTurbo HPC型返回该字段
+        :param used_capacity: 目录已使用的容量大小，单位：MB。仅SFSTurbo 20MB/s/TiB、40MB/s/TiB、125MB/s/TiB、250MB/s/TiB、500MB/s/TiB、1000MB/s/TiB返回该字段
         :type used_capacity: int
-        :param used_inode: 目录的已使用的inode数量。仅SFSTurbo HPC型返回该字段
+        :param used_inode: 目录的已使用的inode数量。仅SFSTurbo 20MB/s/TiB、40MB/s/TiB、125MB/s/TiB、250MB/s/TiB、500MB/s/TiB、1000MB/s/TiB返回该字段
         :type used_inode: int
         """
         
@@ -140,7 +140,7 @@ class CreateFsDirQuotaResponse(SdkResponse):
     def used_capacity(self):
         """Gets the used_capacity of this CreateFsDirQuotaResponse.
 
-        目录已使用的容量大小，单位：MB。仅SFSTurbo HPC型返回该字段
+        目录已使用的容量大小，单位：MB。仅SFSTurbo 20MB/s/TiB、40MB/s/TiB、125MB/s/TiB、250MB/s/TiB、500MB/s/TiB、1000MB/s/TiB返回该字段
 
         :return: The used_capacity of this CreateFsDirQuotaResponse.
         :rtype: int
@@ -151,7 +151,7 @@ class CreateFsDirQuotaResponse(SdkResponse):
     def used_capacity(self, used_capacity):
         """Sets the used_capacity of this CreateFsDirQuotaResponse.
 
-        目录已使用的容量大小，单位：MB。仅SFSTurbo HPC型返回该字段
+        目录已使用的容量大小，单位：MB。仅SFSTurbo 20MB/s/TiB、40MB/s/TiB、125MB/s/TiB、250MB/s/TiB、500MB/s/TiB、1000MB/s/TiB返回该字段
 
         :param used_capacity: The used_capacity of this CreateFsDirQuotaResponse.
         :type used_capacity: int
@@ -162,7 +162,7 @@ class CreateFsDirQuotaResponse(SdkResponse):
     def used_inode(self):
         """Gets the used_inode of this CreateFsDirQuotaResponse.
 
-        目录的已使用的inode数量。仅SFSTurbo HPC型返回该字段
+        目录的已使用的inode数量。仅SFSTurbo 20MB/s/TiB、40MB/s/TiB、125MB/s/TiB、250MB/s/TiB、500MB/s/TiB、1000MB/s/TiB返回该字段
 
         :return: The used_inode of this CreateFsDirQuotaResponse.
         :rtype: int
@@ -173,7 +173,7 @@ class CreateFsDirQuotaResponse(SdkResponse):
     def used_inode(self, used_inode):
         """Sets the used_inode of this CreateFsDirQuotaResponse.
 
-        目录的已使用的inode数量。仅SFSTurbo HPC型返回该字段
+        目录的已使用的inode数量。仅SFSTurbo 20MB/s/TiB、40MB/s/TiB、125MB/s/TiB、250MB/s/TiB、500MB/s/TiB、1000MB/s/TiB返回该字段
 
         :param used_inode: The used_inode of this CreateFsDirQuotaResponse.
         :type used_inode: int

@@ -22,7 +22,11 @@ class CreateLdapConfigRequestBody:
         'user_dn': 'str',
         'password': 'str',
         'vpc_id': 'str',
-        'filter_condition': 'str'
+        'filter_condition': 'str',
+        'backup_url': 'str',
+        'schema': 'str',
+        'search_timeout': 'int',
+        'allow_local_user': 'str'
     }
 
     attribute_map = {
@@ -31,15 +35,19 @@ class CreateLdapConfigRequestBody:
         'user_dn': 'user_dn',
         'password': 'password',
         'vpc_id': 'vpc_id',
-        'filter_condition': 'filter_condition'
+        'filter_condition': 'filter_condition',
+        'backup_url': 'backup_url',
+        'schema': 'schema',
+        'search_timeout': 'search_timeout',
+        'allow_local_user': 'allow_local_user'
     }
 
-    def __init__(self, url=None, base_dn=None, user_dn=None, password=None, vpc_id=None, filter_condition=None):
+    def __init__(self, url=None, base_dn=None, user_dn=None, password=None, vpc_id=None, filter_condition=None, backup_url=None, schema=None, search_timeout=None, allow_local_user=None):
         """CreateLdapConfigRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param url: ldap服务器的url
+        :param url: ldap服务器的url，固定格式为 ldap://{ip_address}:{port_number} 或 ldaps://{ip_address}:{port_number}，例如ldap://192.168.xx.xx:60000
         :type url: str
         :param base_dn: 数据库中的域
         :type base_dn: str
@@ -51,6 +59,14 @@ class CreateLdapConfigRequestBody:
         :type vpc_id: str
         :param filter_condition: 过滤条件。保留字段，暂不支持
         :type filter_condition: str
+        :param backup_url: ldap备节点的url，固定格式为 ldap://{ip_address}:{port_number} 或 ldaps://{ip_address}:{port_number}，例如ldap://192.168.xx.xx:60000
+        :type backup_url: str
+        :param schema: ldap的schema，不填写则默认为RFC2307
+        :type schema: str
+        :param search_timeout: ldap搜索的超时时间，单位为秒。不填写则默认为3秒
+        :type search_timeout: int
+        :param allow_local_user: 访问ldap服务器失败后是否允许使用本地用户鉴权
+        :type allow_local_user: str
         """
         
         
@@ -61,6 +77,10 @@ class CreateLdapConfigRequestBody:
         self._password = None
         self._vpc_id = None
         self._filter_condition = None
+        self._backup_url = None
+        self._schema = None
+        self._search_timeout = None
+        self._allow_local_user = None
         self.discriminator = None
 
         self.url = url
@@ -73,12 +93,20 @@ class CreateLdapConfigRequestBody:
             self.vpc_id = vpc_id
         if filter_condition is not None:
             self.filter_condition = filter_condition
+        if backup_url is not None:
+            self.backup_url = backup_url
+        if schema is not None:
+            self.schema = schema
+        if search_timeout is not None:
+            self.search_timeout = search_timeout
+        if allow_local_user is not None:
+            self.allow_local_user = allow_local_user
 
     @property
     def url(self):
         """Gets the url of this CreateLdapConfigRequestBody.
 
-        ldap服务器的url
+        ldap服务器的url，固定格式为 ldap://{ip_address}:{port_number} 或 ldaps://{ip_address}:{port_number}，例如ldap://192.168.xx.xx:60000
 
         :return: The url of this CreateLdapConfigRequestBody.
         :rtype: str
@@ -89,7 +117,7 @@ class CreateLdapConfigRequestBody:
     def url(self, url):
         """Sets the url of this CreateLdapConfigRequestBody.
 
-        ldap服务器的url
+        ldap服务器的url，固定格式为 ldap://{ip_address}:{port_number} 或 ldaps://{ip_address}:{port_number}，例如ldap://192.168.xx.xx:60000
 
         :param url: The url of this CreateLdapConfigRequestBody.
         :type url: str
@@ -205,6 +233,94 @@ class CreateLdapConfigRequestBody:
         :type filter_condition: str
         """
         self._filter_condition = filter_condition
+
+    @property
+    def backup_url(self):
+        """Gets the backup_url of this CreateLdapConfigRequestBody.
+
+        ldap备节点的url，固定格式为 ldap://{ip_address}:{port_number} 或 ldaps://{ip_address}:{port_number}，例如ldap://192.168.xx.xx:60000
+
+        :return: The backup_url of this CreateLdapConfigRequestBody.
+        :rtype: str
+        """
+        return self._backup_url
+
+    @backup_url.setter
+    def backup_url(self, backup_url):
+        """Sets the backup_url of this CreateLdapConfigRequestBody.
+
+        ldap备节点的url，固定格式为 ldap://{ip_address}:{port_number} 或 ldaps://{ip_address}:{port_number}，例如ldap://192.168.xx.xx:60000
+
+        :param backup_url: The backup_url of this CreateLdapConfigRequestBody.
+        :type backup_url: str
+        """
+        self._backup_url = backup_url
+
+    @property
+    def schema(self):
+        """Gets the schema of this CreateLdapConfigRequestBody.
+
+        ldap的schema，不填写则默认为RFC2307
+
+        :return: The schema of this CreateLdapConfigRequestBody.
+        :rtype: str
+        """
+        return self._schema
+
+    @schema.setter
+    def schema(self, schema):
+        """Sets the schema of this CreateLdapConfigRequestBody.
+
+        ldap的schema，不填写则默认为RFC2307
+
+        :param schema: The schema of this CreateLdapConfigRequestBody.
+        :type schema: str
+        """
+        self._schema = schema
+
+    @property
+    def search_timeout(self):
+        """Gets the search_timeout of this CreateLdapConfigRequestBody.
+
+        ldap搜索的超时时间，单位为秒。不填写则默认为3秒
+
+        :return: The search_timeout of this CreateLdapConfigRequestBody.
+        :rtype: int
+        """
+        return self._search_timeout
+
+    @search_timeout.setter
+    def search_timeout(self, search_timeout):
+        """Sets the search_timeout of this CreateLdapConfigRequestBody.
+
+        ldap搜索的超时时间，单位为秒。不填写则默认为3秒
+
+        :param search_timeout: The search_timeout of this CreateLdapConfigRequestBody.
+        :type search_timeout: int
+        """
+        self._search_timeout = search_timeout
+
+    @property
+    def allow_local_user(self):
+        """Gets the allow_local_user of this CreateLdapConfigRequestBody.
+
+        访问ldap服务器失败后是否允许使用本地用户鉴权
+
+        :return: The allow_local_user of this CreateLdapConfigRequestBody.
+        :rtype: str
+        """
+        return self._allow_local_user
+
+    @allow_local_user.setter
+    def allow_local_user(self, allow_local_user):
+        """Sets the allow_local_user of this CreateLdapConfigRequestBody.
+
+        访问ldap服务器失败后是否允许使用本地用户鉴权
+
+        :param allow_local_user: The allow_local_user of this CreateLdapConfigRequestBody.
+        :type allow_local_user: str
+        """
+        self._allow_local_user = allow_local_user
 
     def to_dict(self):
         """Returns the model properties as a dict"""

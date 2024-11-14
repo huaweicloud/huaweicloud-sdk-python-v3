@@ -66,8 +66,7 @@ class ListPromInstanceRequest:
             self.cce_cluster_enable = cce_cluster_enable
         if prom_status is not None:
             self.prom_status = prom_status
-        if enterprise_project_id is not None:
-            self.enterprise_project_id = enterprise_project_id
+        self.enterprise_project_id = enterprise_project_id
 
     @property
     def prom_id(self):

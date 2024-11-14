@@ -33,11 +33,11 @@ class VoiceProperties:
 
         The model defined in huaweicloud sdk
 
-        :param job_tag: 任务标签。   * ECOMMERCE: 电商   * NEWS: 新闻   * MARKETING: 营销
+        :param job_tag: 任务标签，为Flexus版声音的配置。   * ECOMMERCE: 电商   * NEWS: 新闻   * MARKETING: 营销
         :type job_tag: str
-        :param sex: 语音性别,是男性声音还是女性声音。 * FEMALE: 女性 * MALE: 男性
+        :param sex: 语音性别，是男性声音还是女性声音，为Flexus版声音的配置。 * FEMALE: 女性 * MALE: 男性
         :type sex: str
-        :param language: 训练语言,当前仅支持中文。 * CN: 中文 * EN: 英文
+        :param language: 训练语言，当前仅支持中文，为Flexus版声音的配置。 * CN: 中文 * EN: 英文
         :type language: str
         """
         
@@ -56,7 +56,7 @@ class VoiceProperties:
     def job_tag(self):
         """Gets the job_tag of this VoiceProperties.
 
-        任务标签。   * ECOMMERCE: 电商   * NEWS: 新闻   * MARKETING: 营销
+        任务标签，为Flexus版声音的配置。   * ECOMMERCE: 电商   * NEWS: 新闻   * MARKETING: 营销
 
         :return: The job_tag of this VoiceProperties.
         :rtype: str
@@ -67,7 +67,7 @@ class VoiceProperties:
     def job_tag(self, job_tag):
         """Sets the job_tag of this VoiceProperties.
 
-        任务标签。   * ECOMMERCE: 电商   * NEWS: 新闻   * MARKETING: 营销
+        任务标签，为Flexus版声音的配置。   * ECOMMERCE: 电商   * NEWS: 新闻   * MARKETING: 营销
 
         :param job_tag: The job_tag of this VoiceProperties.
         :type job_tag: str
@@ -78,7 +78,7 @@ class VoiceProperties:
     def sex(self):
         """Gets the sex of this VoiceProperties.
 
-        语音性别,是男性声音还是女性声音。 * FEMALE: 女性 * MALE: 男性
+        语音性别，是男性声音还是女性声音，为Flexus版声音的配置。 * FEMALE: 女性 * MALE: 男性
 
         :return: The sex of this VoiceProperties.
         :rtype: str
@@ -89,7 +89,7 @@ class VoiceProperties:
     def sex(self, sex):
         """Sets the sex of this VoiceProperties.
 
-        语音性别,是男性声音还是女性声音。 * FEMALE: 女性 * MALE: 男性
+        语音性别，是男性声音还是女性声音，为Flexus版声音的配置。 * FEMALE: 女性 * MALE: 男性
 
         :param sex: The sex of this VoiceProperties.
         :type sex: str
@@ -100,7 +100,7 @@ class VoiceProperties:
     def language(self):
         """Gets the language of this VoiceProperties.
 
-        训练语言,当前仅支持中文。 * CN: 中文 * EN: 英文
+        训练语言，当前仅支持中文，为Flexus版声音的配置。 * CN: 中文 * EN: 英文
 
         :return: The language of this VoiceProperties.
         :rtype: str
@@ -111,7 +111,7 @@ class VoiceProperties:
     def language(self, language):
         """Sets the language of this VoiceProperties.
 
-        训练语言,当前仅支持中文。 * CN: 中文 * EN: 英文
+        训练语言，当前仅支持中文，为Flexus版声音的配置。 * CN: 中文 * EN: 英文
 
         :param language: The language of this VoiceProperties.
         :type language: str

@@ -21,6 +21,7 @@ class ActionBasicSampleInfo:
         'action_name_en': 'str',
         'action_tag': 'str',
         'catalog': 'str',
+        'recommended_value': 'int',
         'is_selected': 'bool'
     }
 
@@ -29,10 +30,11 @@ class ActionBasicSampleInfo:
         'action_name_en': 'action_name_en',
         'action_tag': 'action_tag',
         'catalog': 'catalog',
+        'recommended_value': 'recommended_value',
         'is_selected': 'is_selected'
     }
 
-    def __init__(self, action_name_zh=None, action_name_en=None, action_tag=None, catalog=None, is_selected=None):
+    def __init__(self, action_name_zh=None, action_name_en=None, action_tag=None, catalog=None, recommended_value=None, is_selected=None):
         """ActionBasicSampleInfo
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class ActionBasicSampleInfo:
         :type action_tag: str
         :param catalog: 原子动作标签。
         :type catalog: str
+        :param recommended_value: 推荐等级。
+        :type recommended_value: int
         :param is_selected: 是否选择此动作。
         :type is_selected: bool
         """
@@ -55,6 +59,7 @@ class ActionBasicSampleInfo:
         self._action_name_en = None
         self._action_tag = None
         self._catalog = None
+        self._recommended_value = None
         self._is_selected = None
         self.discriminator = None
 
@@ -65,6 +70,8 @@ class ActionBasicSampleInfo:
         self.action_tag = action_tag
         if catalog is not None:
             self.catalog = catalog
+        if recommended_value is not None:
+            self.recommended_value = recommended_value
         if is_selected is not None:
             self.is_selected = is_selected
 
@@ -155,6 +162,28 @@ class ActionBasicSampleInfo:
         :type catalog: str
         """
         self._catalog = catalog
+
+    @property
+    def recommended_value(self):
+        """Gets the recommended_value of this ActionBasicSampleInfo.
+
+        推荐等级。
+
+        :return: The recommended_value of this ActionBasicSampleInfo.
+        :rtype: int
+        """
+        return self._recommended_value
+
+    @recommended_value.setter
+    def recommended_value(self, recommended_value):
+        """Sets the recommended_value of this ActionBasicSampleInfo.
+
+        推荐等级。
+
+        :param recommended_value: The recommended_value of this ActionBasicSampleInfo.
+        :type recommended_value: int
+        """
+        self._recommended_value = recommended_value
 
     @property
     def is_selected(self):

@@ -19,18 +19,16 @@ class ReqUpdateHpcCacheData:
     openapi_types = {
         'gc_time': 'int',
         'ck_time': 'int',
-        'nas': 'list[ConfigNasTarget]',
-        'obs': 'list[ConfigObsTarget]'
+        'nas': 'list[ConfigNasTarget]'
     }
 
     attribute_map = {
         'gc_time': 'gc_time',
         'ck_time': 'ck_time',
-        'nas': 'nas',
-        'obs': 'obs'
+        'nas': 'nas'
     }
 
-    def __init__(self, gc_time=None, ck_time=None, nas=None, obs=None):
+    def __init__(self, gc_time=None, ck_time=None, nas=None):
         """ReqUpdateHpcCacheData
 
         The model defined in huaweicloud sdk
@@ -39,10 +37,8 @@ class ReqUpdateHpcCacheData:
         :type gc_time: int
         :param ck_time: 后端校验时间。单位：秒。指定时间间隔进行线上缓存文件与后端存储文件比较，存在变化则自动更新。0表示文件进行实时校验。
         :type ck_time: int
-        :param nas: 配置 nas 后端的信息, 和 obs 字段为二选一的关系
+        :param nas: 配置 nas 后端的信息
         :type nas: list[:class:`huaweicloudsdksfsturbo.v1.ConfigNasTarget`]
-        :param obs: 配置 obs 后端的信息, 和 nas 字段为二选一的关系
-        :type obs: list[:class:`huaweicloudsdksfsturbo.v1.ConfigObsTarget`]
         """
         
         
@@ -50,15 +46,12 @@ class ReqUpdateHpcCacheData:
         self._gc_time = None
         self._ck_time = None
         self._nas = None
-        self._obs = None
         self.discriminator = None
 
         self.gc_time = gc_time
         self.ck_time = ck_time
         if nas is not None:
             self.nas = nas
-        if obs is not None:
-            self.obs = obs
 
     @property
     def gc_time(self):
@@ -108,7 +101,7 @@ class ReqUpdateHpcCacheData:
     def nas(self):
         """Gets the nas of this ReqUpdateHpcCacheData.
 
-        配置 nas 后端的信息, 和 obs 字段为二选一的关系
+        配置 nas 后端的信息
 
         :return: The nas of this ReqUpdateHpcCacheData.
         :rtype: list[:class:`huaweicloudsdksfsturbo.v1.ConfigNasTarget`]
@@ -119,34 +112,12 @@ class ReqUpdateHpcCacheData:
     def nas(self, nas):
         """Sets the nas of this ReqUpdateHpcCacheData.
 
-        配置 nas 后端的信息, 和 obs 字段为二选一的关系
+        配置 nas 后端的信息
 
         :param nas: The nas of this ReqUpdateHpcCacheData.
         :type nas: list[:class:`huaweicloudsdksfsturbo.v1.ConfigNasTarget`]
         """
         self._nas = nas
-
-    @property
-    def obs(self):
-        """Gets the obs of this ReqUpdateHpcCacheData.
-
-        配置 obs 后端的信息, 和 nas 字段为二选一的关系
-
-        :return: The obs of this ReqUpdateHpcCacheData.
-        :rtype: list[:class:`huaweicloudsdksfsturbo.v1.ConfigObsTarget`]
-        """
-        return self._obs
-
-    @obs.setter
-    def obs(self, obs):
-        """Sets the obs of this ReqUpdateHpcCacheData.
-
-        配置 obs 后端的信息, 和 nas 字段为二选一的关系
-
-        :param obs: The obs of this ReqUpdateHpcCacheData.
-        :type obs: list[:class:`huaweicloudsdksfsturbo.v1.ConfigObsTarget`]
-        """
-        self._obs = obs
 
     def to_dict(self):
         """Returns the model properties as a dict"""
