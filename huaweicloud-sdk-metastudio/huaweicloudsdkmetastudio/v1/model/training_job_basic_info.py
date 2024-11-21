@@ -77,7 +77,7 @@ class TrainingJobBasicInfo:
         :type last_update_time: str
         :param create_time: 创建时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”
         :type create_time: str
-        :param contact: 分身数字人训练任务创建者联系方式，如手机或邮箱等。
+        :param contact: 分身数字人训练任务创建者的手机号。
         :type contact: str
         :param batch_name: 分身数字人训练任务的批次名称。
         :type batch_name: str
@@ -330,7 +330,7 @@ class TrainingJobBasicInfo:
     def contact(self):
         """Gets the contact of this TrainingJobBasicInfo.
 
-        分身数字人训练任务创建者联系方式，如手机或邮箱等。
+        分身数字人训练任务创建者的手机号。
 
         :return: The contact of this TrainingJobBasicInfo.
         :rtype: str
@@ -341,7 +341,7 @@ class TrainingJobBasicInfo:
     def contact(self, contact):
         """Sets the contact of this TrainingJobBasicInfo.
 
-        分身数字人训练任务创建者联系方式，如手机或邮箱等。
+        分身数字人训练任务创建者的手机号。
 
         :param contact: The contact of this TrainingJobBasicInfo.
         :type contact: str

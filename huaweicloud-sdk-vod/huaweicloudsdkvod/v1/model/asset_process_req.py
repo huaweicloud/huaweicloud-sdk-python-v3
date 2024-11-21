@@ -18,7 +18,6 @@ class AssetProcessReq:
 
     openapi_types = {
         'asset_id': 'str',
-        'hls_storage_type': 'str',
         'template_group_name': 'str',
         'auto_encrypt': 'int',
         'thumbnail': 'Thumbnail',
@@ -27,23 +26,20 @@ class AssetProcessReq:
 
     attribute_map = {
         'asset_id': 'asset_id',
-        'hls_storage_type': 'hls_storage_type',
         'template_group_name': 'template_group_name',
         'auto_encrypt': 'auto_encrypt',
         'thumbnail': 'thumbnail',
         'subtitle_id': 'subtitle_id'
     }
 
-    def __init__(self, asset_id=None, hls_storage_type=None, template_group_name=None, auto_encrypt=None, thumbnail=None, subtitle_id=None):
+    def __init__(self, asset_id=None, template_group_name=None, auto_encrypt=None, thumbnail=None, subtitle_id=None):
         """AssetProcessReq
 
         The model defined in huaweicloud sdk
 
         :param asset_id: 媒资ID。
         :type asset_id: str
-        :param hls_storage_type: hls的音视频流存储方式。  取值如下： - composite：存储在同一文件中。 - separate：存储在不同文件中。
-        :type hls_storage_type: str
-        :param template_group_name: 转码模板组名称。   若不为空，则使用指定的转码模板对上传的音视频进行转码，您可以在视频点播控制台配置转码模板，具体请参见[转码设置](https://support.huaweicloud.com/usermanual-vod/vod_01_0072.html)。
+        :param template_group_name: 转码模板组名称。 若不为空，则使用指定的转码模板对上传的音视频进行转码，您可以在视频点播控制台配置转码模板，具体请参见[转码设置](https://support.huaweicloud.com/usermanual-vod/vod_01_0072.html)。
         :type template_group_name: str
         :param auto_encrypt: 是否自动加密。  取值如下： - 0：表示不加密。 - 1：表示需要加密。  默认值：0。  加密与转码必须要一起进行，当需要加密时，转码参数不能为空，且转码输出格式必须要为HLS。
         :type auto_encrypt: int
@@ -56,7 +52,6 @@ class AssetProcessReq:
         
 
         self._asset_id = None
-        self._hls_storage_type = None
         self._template_group_name = None
         self._auto_encrypt = None
         self._thumbnail = None
@@ -64,8 +59,6 @@ class AssetProcessReq:
         self.discriminator = None
 
         self.asset_id = asset_id
-        if hls_storage_type is not None:
-            self.hls_storage_type = hls_storage_type
         if template_group_name is not None:
             self.template_group_name = template_group_name
         if auto_encrypt is not None:
@@ -98,32 +91,10 @@ class AssetProcessReq:
         self._asset_id = asset_id
 
     @property
-    def hls_storage_type(self):
-        """Gets the hls_storage_type of this AssetProcessReq.
-
-        hls的音视频流存储方式。  取值如下： - composite：存储在同一文件中。 - separate：存储在不同文件中。
-
-        :return: The hls_storage_type of this AssetProcessReq.
-        :rtype: str
-        """
-        return self._hls_storage_type
-
-    @hls_storage_type.setter
-    def hls_storage_type(self, hls_storage_type):
-        """Sets the hls_storage_type of this AssetProcessReq.
-
-        hls的音视频流存储方式。  取值如下： - composite：存储在同一文件中。 - separate：存储在不同文件中。
-
-        :param hls_storage_type: The hls_storage_type of this AssetProcessReq.
-        :type hls_storage_type: str
-        """
-        self._hls_storage_type = hls_storage_type
-
-    @property
     def template_group_name(self):
         """Gets the template_group_name of this AssetProcessReq.
 
-        转码模板组名称。   若不为空，则使用指定的转码模板对上传的音视频进行转码，您可以在视频点播控制台配置转码模板，具体请参见[转码设置](https://support.huaweicloud.com/usermanual-vod/vod_01_0072.html)。
+        转码模板组名称。 若不为空，则使用指定的转码模板对上传的音视频进行转码，您可以在视频点播控制台配置转码模板，具体请参见[转码设置](https://support.huaweicloud.com/usermanual-vod/vod_01_0072.html)。
 
         :return: The template_group_name of this AssetProcessReq.
         :rtype: str
@@ -134,7 +105,7 @@ class AssetProcessReq:
     def template_group_name(self, template_group_name):
         """Sets the template_group_name of this AssetProcessReq.
 
-        转码模板组名称。   若不为空，则使用指定的转码模板对上传的音视频进行转码，您可以在视频点播控制台配置转码模板，具体请参见[转码设置](https://support.huaweicloud.com/usermanual-vod/vod_01_0072.html)。
+        转码模板组名称。 若不为空，则使用指定的转码模板对上传的音视频进行转码，您可以在视频点播控制台配置转码模板，具体请参见[转码设置](https://support.huaweicloud.com/usermanual-vod/vod_01_0072.html)。
 
         :param template_group_name: The template_group_name of this AssetProcessReq.
         :type template_group_name: str

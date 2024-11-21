@@ -59,7 +59,7 @@ class Create2dModelTrainingJobReq:
 
         :param name: 分身数字人模型名称。该名称会作为资产库中分身数字人模型资产名称。
         :type name: str
-        :param contact: 分身数字人训练任务创建者联系方式，如手机或邮箱等。
+        :param contact: 分身数字人训练任务创建者的手机号。
         :type contact: str
         :param command_message: 命令类型： * UPDATE_VIDEO: 更新视频 * UPLOAD_VIDEO：上传视频 * CONFIRM_ACTION_VIDEO: 确认动作编排视频 * GET_ACTION_VIDEO_MULTIPART: 获取动作编排视频分片
         :type command_message: str
@@ -164,7 +164,7 @@ class Create2dModelTrainingJobReq:
     def contact(self):
         """Gets the contact of this Create2dModelTrainingJobReq.
 
-        分身数字人训练任务创建者联系方式，如手机或邮箱等。
+        分身数字人训练任务创建者的手机号。
 
         :return: The contact of this Create2dModelTrainingJobReq.
         :rtype: str
@@ -175,7 +175,7 @@ class Create2dModelTrainingJobReq:
     def contact(self, contact):
         """Sets the contact of this Create2dModelTrainingJobReq.
 
-        分身数字人训练任务创建者联系方式，如手机或邮箱等。
+        分身数字人训练任务创建者的手机号。
 
         :param contact: The contact of this Create2dModelTrainingJobReq.
         :type contact: str

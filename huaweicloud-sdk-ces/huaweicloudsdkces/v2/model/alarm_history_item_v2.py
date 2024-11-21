@@ -26,6 +26,9 @@ class AlarmHistoryItemV2:
         'action_enabled': 'bool',
         'begin_time': 'datetime',
         'end_time': 'datetime',
+        'first_alarm_time': 'datetime',
+        'last_alarm_time': 'datetime',
+        'alarm_recovery_time': 'datetime',
         'metric': 'Metric',
         'condition': 'AlarmCondition',
         'additional_info': 'AdditionalInfo',
@@ -44,6 +47,9 @@ class AlarmHistoryItemV2:
         'action_enabled': 'action_enabled',
         'begin_time': 'begin_time',
         'end_time': 'end_time',
+        'first_alarm_time': 'first_alarm_time',
+        'last_alarm_time': 'last_alarm_time',
+        'alarm_recovery_time': 'alarm_recovery_time',
         'metric': 'metric',
         'condition': 'condition',
         'additional_info': 'additional_info',
@@ -52,7 +58,7 @@ class AlarmHistoryItemV2:
         'data_points': 'data_points'
     }
 
-    def __init__(self, record_id=None, alarm_id=None, name=None, status=None, level=None, type=None, action_enabled=None, begin_time=None, end_time=None, metric=None, condition=None, additional_info=None, alarm_actions=None, ok_actions=None, data_points=None):
+    def __init__(self, record_id=None, alarm_id=None, name=None, status=None, level=None, type=None, action_enabled=None, begin_time=None, end_time=None, first_alarm_time=None, last_alarm_time=None, alarm_recovery_time=None, metric=None, condition=None, additional_info=None, alarm_actions=None, ok_actions=None, data_points=None):
         """AlarmHistoryItemV2
 
         The model defined in huaweicloud sdk
@@ -75,6 +81,12 @@ class AlarmHistoryItemV2:
         :type begin_time: datetime
         :param end_time: 结束时间，UTC时间
         :type end_time: datetime
+        :param first_alarm_time: 第一次告警时间戳，UTC时间
+        :type first_alarm_time: datetime
+        :param last_alarm_time: 最后一次告警时间，UTC时间
+        :type last_alarm_time: datetime
+        :param alarm_recovery_time: 告警恢复时间，UTC时间
+        :type alarm_recovery_time: datetime
         :param metric: 
         :type metric: :class:`huaweicloudsdkces.v2.Metric`
         :param condition: 
@@ -100,6 +112,9 @@ class AlarmHistoryItemV2:
         self._action_enabled = None
         self._begin_time = None
         self._end_time = None
+        self._first_alarm_time = None
+        self._last_alarm_time = None
+        self._alarm_recovery_time = None
         self._metric = None
         self._condition = None
         self._additional_info = None
@@ -126,6 +141,12 @@ class AlarmHistoryItemV2:
             self.begin_time = begin_time
         if end_time is not None:
             self.end_time = end_time
+        if first_alarm_time is not None:
+            self.first_alarm_time = first_alarm_time
+        if last_alarm_time is not None:
+            self.last_alarm_time = last_alarm_time
+        if alarm_recovery_time is not None:
+            self.alarm_recovery_time = alarm_recovery_time
         if metric is not None:
             self.metric = metric
         if condition is not None:
@@ -332,6 +353,72 @@ class AlarmHistoryItemV2:
         :type end_time: datetime
         """
         self._end_time = end_time
+
+    @property
+    def first_alarm_time(self):
+        """Gets the first_alarm_time of this AlarmHistoryItemV2.
+
+        第一次告警时间戳，UTC时间
+
+        :return: The first_alarm_time of this AlarmHistoryItemV2.
+        :rtype: datetime
+        """
+        return self._first_alarm_time
+
+    @first_alarm_time.setter
+    def first_alarm_time(self, first_alarm_time):
+        """Sets the first_alarm_time of this AlarmHistoryItemV2.
+
+        第一次告警时间戳，UTC时间
+
+        :param first_alarm_time: The first_alarm_time of this AlarmHistoryItemV2.
+        :type first_alarm_time: datetime
+        """
+        self._first_alarm_time = first_alarm_time
+
+    @property
+    def last_alarm_time(self):
+        """Gets the last_alarm_time of this AlarmHistoryItemV2.
+
+        最后一次告警时间，UTC时间
+
+        :return: The last_alarm_time of this AlarmHistoryItemV2.
+        :rtype: datetime
+        """
+        return self._last_alarm_time
+
+    @last_alarm_time.setter
+    def last_alarm_time(self, last_alarm_time):
+        """Sets the last_alarm_time of this AlarmHistoryItemV2.
+
+        最后一次告警时间，UTC时间
+
+        :param last_alarm_time: The last_alarm_time of this AlarmHistoryItemV2.
+        :type last_alarm_time: datetime
+        """
+        self._last_alarm_time = last_alarm_time
+
+    @property
+    def alarm_recovery_time(self):
+        """Gets the alarm_recovery_time of this AlarmHistoryItemV2.
+
+        告警恢复时间，UTC时间
+
+        :return: The alarm_recovery_time of this AlarmHistoryItemV2.
+        :rtype: datetime
+        """
+        return self._alarm_recovery_time
+
+    @alarm_recovery_time.setter
+    def alarm_recovery_time(self, alarm_recovery_time):
+        """Sets the alarm_recovery_time of this AlarmHistoryItemV2.
+
+        告警恢复时间，UTC时间
+
+        :param alarm_recovery_time: The alarm_recovery_time of this AlarmHistoryItemV2.
+        :type alarm_recovery_time: datetime
+        """
+        self._alarm_recovery_time = alarm_recovery_time
 
     @property
     def metric(self):

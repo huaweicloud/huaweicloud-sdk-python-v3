@@ -69,7 +69,7 @@ class ListVaultRequest:
         :type policy_id: str
         :param status: 状态
         :type status: str
-        :param resource_ids: 资源id，支持多资源，以英文逗号分割
+        :param resource_ids: 资源id，支持多资源，以英文逗号分隔
         :type resource_ids: str
         """
         
@@ -335,7 +335,7 @@ class ListVaultRequest:
     def resource_ids(self):
         """Gets the resource_ids of this ListVaultRequest.
 
-        资源id，支持多资源，以英文逗号分割
+        资源id，支持多资源，以英文逗号分隔
 
         :return: The resource_ids of this ListVaultRequest.
         :rtype: str
@@ -346,7 +346,7 @@ class ListVaultRequest:
     def resource_ids(self, resource_ids):
         """Sets the resource_ids of this ListVaultRequest.
 
-        资源id，支持多资源，以英文逗号分割
+        资源id，支持多资源，以英文逗号分隔
 
         :param resource_ids: The resource_ids of this ListVaultRequest.
         :type resource_ids: str

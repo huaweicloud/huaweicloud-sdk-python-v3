@@ -21,7 +21,8 @@ class ListHotQuestionRequest:
         'offset': 'int',
         'limit': 'int',
         'sort_dir': 'str',
-        'robot_id': 'str'
+        'robot_id': 'str',
+        'language': 'str'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class ListHotQuestionRequest:
         'offset': 'offset',
         'limit': 'limit',
         'sort_dir': 'sort_dir',
-        'robot_id': 'robot_id'
+        'robot_id': 'robot_id',
+        'language': 'language'
     }
 
-    def __init__(self, x_app_user_id=None, offset=None, limit=None, sort_dir=None, robot_id=None):
+    def __init__(self, x_app_user_id=None, offset=None, limit=None, sort_dir=None, robot_id=None, language=None):
         """ListHotQuestionRequest
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class ListHotQuestionRequest:
         :type sort_dir: str
         :param robot_id: 机器人ID。
         :type robot_id: str
+        :param language: 智能交互语言  * CN:中文  * EN:英文
+        :type language: str
         """
         
         
@@ -56,6 +60,7 @@ class ListHotQuestionRequest:
         self._limit = None
         self._sort_dir = None
         self._robot_id = None
+        self._language = None
         self.discriminator = None
 
         if x_app_user_id is not None:
@@ -67,6 +72,8 @@ class ListHotQuestionRequest:
         if sort_dir is not None:
             self.sort_dir = sort_dir
         self.robot_id = robot_id
+        if language is not None:
+            self.language = language
 
     @property
     def x_app_user_id(self):
@@ -177,6 +184,28 @@ class ListHotQuestionRequest:
         :type robot_id: str
         """
         self._robot_id = robot_id
+
+    @property
+    def language(self):
+        """Gets the language of this ListHotQuestionRequest.
+
+        智能交互语言  * CN:中文  * EN:英文
+
+        :return: The language of this ListHotQuestionRequest.
+        :rtype: str
+        """
+        return self._language
+
+    @language.setter
+    def language(self, language):
+        """Sets the language of this ListHotQuestionRequest.
+
+        智能交互语言  * CN:中文  * EN:英文
+
+        :param language: The language of this ListHotQuestionRequest.
+        :type language: str
+        """
+        self._language = language
 
     def to_dict(self):
         """Returns the model properties as a dict"""

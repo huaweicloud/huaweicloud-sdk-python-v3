@@ -49,7 +49,7 @@ class ListHotWordsRequest:
         :type robot_id: str
         :param region: sis服务所在区域
         :type region: int
-        :param language: 智能交互语言  * zh_CN:简体中文  * en_US:英语
+        :param language: 智能交互语言  * zh_CN：简体中文（已下线，请使用CN）  * en_US：英语（已下线，请使用EN）  * CN: 中文  * EN: 英文
         :type language: str
         """
         
@@ -189,7 +189,7 @@ class ListHotWordsRequest:
     def language(self):
         """Gets the language of this ListHotWordsRequest.
 
-        智能交互语言  * zh_CN:简体中文  * en_US:英语
+        智能交互语言  * zh_CN：简体中文（已下线，请使用CN）  * en_US：英语（已下线，请使用EN）  * CN: 中文  * EN: 英文
 
         :return: The language of this ListHotWordsRequest.
         :rtype: str
@@ -200,7 +200,7 @@ class ListHotWordsRequest:
     def language(self, language):
         """Sets the language of this ListHotWordsRequest.
 
-        智能交互语言  * zh_CN:简体中文  * en_US:英语
+        智能交互语言  * zh_CN：简体中文（已下线，请使用CN）  * en_US：英语（已下线，请使用EN）  * CN: 中文  * EN: 英文
 
         :param language: The language of this ListHotWordsRequest.
         :type language: str

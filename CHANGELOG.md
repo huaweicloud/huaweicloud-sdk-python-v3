@@ -1,3 +1,372 @@
+# 3.1.123 2024-11-21
+
+### HuaweiCloud SDK AOM
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **PushEvents**
+    - changes of request param
+      - `+ enterprise-project-id`
+      - `- x-enterprise-prject-id`
+  - **ListPromInstance**
+    - changes of request param
+      - `* Enterprise-Project-Id: optional -> required`
+
+### HuaweiCloud SDK CloudRTC
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the APIs `ShowUrlAuth`, `UpdateUrlAuth`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `ListWorkspacesForUser`
+- _Bug Fix_
+  - None
+- _Change_
+  - **DebugDataconnection**
+    - changes of request param
+      - `+ supportService`
+  - **CreateConnections**
+    - changes of request param
+      - `+ data_source_vos.supportService`
+  - **UpdateDataconnection**
+    - changes of request param
+      - `+ data_source_vos.supportService`
+
+### HuaweiCloud SDK DDS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `ValidateConfigurationName`
+    - `ShowInstanceConfigurationModifyHistory`
+    - `SetAutoEnlargePolicies`
+    - `BatchDeleteBackup`
+    - `ShowAutoEnlargePolicy`
+    - `ListScheduledTasks`
+    - `CancelScheduledTask`
+    - `BatchUpgradeDatabaseVersion`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DWS
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the APIs `StartCluster`, `StopCluster`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK EVS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the APIs `ChangeVolumeChargeMode`, `UnsubscribePostpaidVolume`
+  - **RetypeVolume**
+    - changes of request param
+      - `+ os-retype.iops`
+      - `+ os-retype.throughput`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowFunctionTrigger**
+    - changes of response param
+      - `+ event_data.Key_encode`
+      - `+ event_data.agency`
+      - `+ event_data.channel_name`
+      - `+ event_data.channel_id`
+      - `+ event_data.source_name`
+      - `+ event_data.created_time`
+      - `+ event_data.status`
+      - `+ event_data.trigger_name`
+      - `+ event_data.event_types`
+  - **UpdateTrigger**
+    - changes of response param
+      - `+ event_data.Key_encode`
+      - `+ event_data.agency`
+      - `+ event_data.channel_name`
+      - `+ event_data.channel_id`
+      - `+ event_data.source_name`
+      - `+ event_data.created_time`
+      - `+ event_data.status`
+      - `+ event_data.trigger_name`
+      - `+ event_data.event_types`
+  - **CreateFunctionTrigger**
+    - changes of request param
+      - `+ event_data.channel_id`
+      - `+ event_data.event_types`
+      - `+ event_data.status: enum value [ACTIVE,DISABLE]`
+    - changes of response param
+      - `+ event_data.Key_encode`
+      - `+ event_data.agency`
+      - `+ event_data.channel_name`
+      - `+ event_data.channel_id`
+      - `+ event_data.source_name`
+      - `+ event_data.created_time`
+      - `+ event_data.status`
+      - `+ event_data.trigger_name`
+      - `+ event_data.event_types`
+  - **ListFunctionTriggers**
+    - changes of response param
+      - `+ event_data.Key_encode`
+      - `+ event_data.agency`
+      - `+ event_data.channel_name`
+      - `+ event_data.channel_id`
+      - `+ event_data.source_name`
+      - `+ event_data.created_time`
+      - `+ event_data.status`
+      - `+ event_data.trigger_name`
+      - `+ event_data.event_types`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `ShowBackupPolicies`
+    - `ApplyConfigurationToInstances`
+    - `UpdateInstanceConfigurations`
+    - `CreateDbCacheMapping`
+    - `DeleteDbCacheMapping`
+    - `UpdateDbCacheRule`
+    - `CreateDbCacheRule`
+    - `DeleteDbCacheRule`
+    - `ListDbCacheMappings`
+    - `ListDbCacheRules`
+    - `ShowSecondLevelMonitoringStatus`
+    - `SwitchSecondLevelMonitoring`
+    - `SetInstanceDataDump`
+    - `ListInstanceMaintenanceWindow`
+    - `ModifyInstanceMaintenanceWindow`
+    - `ListNosqlTaskList`
+    - `CancelInstanceScheduleWindow`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateLimitTask**
+    - changes of response param
+      - `+ job_id`
+      - `- jobId`
+      - `* key_words: list<string> -> string`
+  - **UpdateLimitTask**
+    - changes of response param
+      - `+ job_id`
+      - `- jobId`
+
+### HuaweiCloud SDK HSS
+
+- _API Version_
+  - V5
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListApps**
+    - changes of request param
+      - `* host_id: required -> optional`
+
+### HuaweiCloud SDK Meeting
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `CheckCallNumberInConf`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK MetaStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the APIs `CreateBeautyPreviewJob`, `ShowBeautyPreviewJob`, `StartBeautyPreviewJob`
+- _Bug Fix_
+  - None
+- _Change_
+  - **List2dModelTrainingJob**
+    - changes of response param
+      - `+ jobs.is_only_human_model`
+      - `+ jobs.state: enum value [WAIT_ASSET_SYNC]`
+  - **Create2dModelTrainingJob**
+    - changes of request param
+      - `+ beauty_level`
+      - `+ is_only_human_model`
+    - changes of response param
+      - `+ post_beauty_image_upload_url`
+      - `+ pre_beauty_image_upload_url`
+  - **Update2dModelTrainingJob**
+    - changes of request param
+      - `+ beauty_level`
+      - `+ samples_basic_info.recommended_value`
+    - changes of response param
+      - `+ post_beauty_image_upload_url`
+      - `+ pre_beauty_image_upload_url`
+  - **Show2dModelTrainingJob**
+    - changes of response param
+      - `+ allocated_resource`
+      - `+ pre_beauty_image_download_url`
+      - `+ post_beauty_image_download_url`
+      - `+ inference_data_process_chat_action_mark_info`
+      - `+ is_only_human_model`
+      - `+ traning_video_mark_info`
+      - `+ beauty_level`
+      - `+ state: enum value [WAIT_ASSET_SYNC]`
+      - `+ samples.recommended_value`
+      - `+ inference_data_process_video_mark_info.chat_video_start_time`
+      - `+ inference_data_process_video_mark_info.chat_video_end_time`
+  - **ShowAsset**
+    - changes of response param
+      - `* asset_extra_meta.image_meta.size: number -> integer`
+  - **UpdateDigitalAsset**
+    - changes of request param
+      - `* asset_extra_meta.image_meta.size: number -> integer`
+    - changes of response param
+      - `* asset_extra_meta.image_meta.size: number -> integer`
+  - **CreateDigitalAsset**
+    - changes of request param
+      - `* asset_extra_meta.image_meta.size: number -> integer`
+  - **ListAssets**
+    - changes of response param
+      - `* assets.asset_extra_meta.image_meta.size: number -> integer`
+
+### HuaweiCloud SDK SFSTurbo
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the APIs `UpdateObsTargetAttributes`, `UpdateObsTargetPolicy`, `DeleteHpcCacheTask`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateHpcCacheTask**
+    - changes of request param
+      - `+ attributes`
+  - **ShowHpcCacheTask**
+    - changes of response param
+      - `+ status: enum value [SUCCESS,DOING,FAIL]`
+  - **ShowLdapConfig**
+    - changes of response param
+      - `+ schema`
+      - `+ search_timeout`
+      - `+ backup_url`
+      - `+ allow_local_user`
+  - **UpdateLdapConfig**
+    - changes of request param
+      - `+ backup_url`
+      - `+ schema`
+      - `+ search_timeout`
+      - `+ allow_local_user`
+  - **CreateLdapConfig**
+    - changes of request param
+      - `+ backup_url`
+      - `+ schema`
+      - `+ search_timeout`
+      - `+ allow_local_user`
+  - **ShowShare**
+    - changes of response param
+      - `+ optional_endpoint`
+      - `+ statusDetail`
+      - `+ features`
+      - `+ instanceId`
+      - `+ instanceType`
+      - `+ hpc_bw`
+  - **ListSharedTags**
+    - changes of request param
+      - `+ limit`
+      - `+ offset`
+  - **ListHpcCacheTasks**
+    - changes of request param
+      - `+ start_time`
+      - `+ end_time`
+    - changes of response param
+      - `+ tasks.status: enum value [SUCCESS,DOING,FAIL]`
+  - **ShowBackendTargetInfo**
+    - changes of response param
+      - `+ obs.policy`
+      - `+ obs.attributes`
+  - **ListPermRules**
+    - changes of request param
+      - `+ limit`
+      - `+ offset`
+  - **ShowJobDetail**
+    - changes of response param
+      - `+ status: enum value [success,failed,waiting,running]`
+  - **ListShares**
+    - changes of response param
+      - `+ optional_endpoint`
+      - `+ statusDetail`
+      - `+ features`
+      - `+ instanceId`
+      - `+ instanceType`
+      - `+ hpc_bw`
+      - `+ shares.optional_endpoint`
+      - `+ shares.hpc_bw`
+      - `+ shares.instanceId`
+      - `+ shares.instanceType`
+      - `+ shares.statusDetail`
+      - `+ shares.features`
+  - **CreateBackendTarget**
+    - changes of request param
+      - `+ obs.policy`
+      - `+ obs.attributes`
+    - changes of response param
+      - `+ obs.policy`
+      - `+ obs.attributes`
+  - **ListBackendTargets**
+    - changes of response param
+      - `+ targets.obs.policy`
+      - `+ targets.obs.attributes`
+  - **SetHpcCacheBackend**
+    - changes of request param
+      - `- update_hpc_cache.data.obs`
+
 # 3.1.122 2024-11-14
 
 ### HuaweiCloud SDK AOM

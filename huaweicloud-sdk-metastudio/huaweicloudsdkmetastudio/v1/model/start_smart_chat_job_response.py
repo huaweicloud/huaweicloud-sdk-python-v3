@@ -23,10 +23,12 @@ class StartSmartChatJobResponse(SdkResponse):
         'rtc_room_info': 'RTCRoomInfoList',
         'chat_subtitle_config': 'SmartChatSubtitleConfig',
         'video_config': 'SmartChatVideoConfig',
+        'voice_config_list': 'list[SmartChatVoiceConfig]',
         'chat_video_type': 'str',
         'region': 'str',
         'chat_access_address': 'str',
         'is_transparent': 'bool',
+        'default_language': 'str',
         'x_request_id': 'str'
     }
 
@@ -36,14 +38,16 @@ class StartSmartChatJobResponse(SdkResponse):
         'rtc_room_info': 'rtc_room_info',
         'chat_subtitle_config': 'chat_subtitle_config',
         'video_config': 'video_config',
+        'voice_config_list': 'voice_config_list',
         'chat_video_type': 'chat_video_type',
         'region': 'region',
         'chat_access_address': 'chat_access_address',
         'is_transparent': 'is_transparent',
+        'default_language': 'default_language',
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, job_id=None, language=None, rtc_room_info=None, chat_subtitle_config=None, video_config=None, chat_video_type=None, region=None, chat_access_address=None, is_transparent=None, x_request_id=None):
+    def __init__(self, job_id=None, language=None, rtc_room_info=None, chat_subtitle_config=None, video_config=None, voice_config_list=None, chat_video_type=None, region=None, chat_access_address=None, is_transparent=None, default_language=None, x_request_id=None):
         """StartSmartChatJobResponse
 
         The model defined in huaweicloud sdk
@@ -58,6 +62,8 @@ class StartSmartChatJobResponse(SdkResponse):
         :type chat_subtitle_config: :class:`huaweicloudsdkmetastudio.v1.SmartChatSubtitleConfig`
         :param video_config: 
         :type video_config: :class:`huaweicloudsdkmetastudio.v1.SmartChatVideoConfig`
+        :param voice_config_list: 语音配置参数列表。
+        :type voice_config_list: list[:class:`huaweicloudsdkmetastudio.v1.SmartChatVoiceConfig`]
         :param chat_video_type: 智能交互对话端配置。 * COMPUTER: 电脑端 * MOBILE: 手机端 * HUB: 大屏
         :type chat_video_type: str
         :param region: 算力所在region。 * cn-north-4: 北京4 * cn-southwest-2: 贵阳1
@@ -66,6 +72,8 @@ class StartSmartChatJobResponse(SdkResponse):
         :type chat_access_address: str
         :param is_transparent: 是否透明背景
         :type is_transparent: bool
+        :param default_language: 默认语言，智能交互接口使用。默认值CN。 * CN：中文。 * EN：英文。
+        :type default_language: str
         :param x_request_id: 
         :type x_request_id: str
         """
@@ -77,10 +85,12 @@ class StartSmartChatJobResponse(SdkResponse):
         self._rtc_room_info = None
         self._chat_subtitle_config = None
         self._video_config = None
+        self._voice_config_list = None
         self._chat_video_type = None
         self._region = None
         self._chat_access_address = None
         self._is_transparent = None
+        self._default_language = None
         self._x_request_id = None
         self.discriminator = None
 
@@ -94,6 +104,8 @@ class StartSmartChatJobResponse(SdkResponse):
             self.chat_subtitle_config = chat_subtitle_config
         if video_config is not None:
             self.video_config = video_config
+        if voice_config_list is not None:
+            self.voice_config_list = voice_config_list
         if chat_video_type is not None:
             self.chat_video_type = chat_video_type
         if region is not None:
@@ -102,6 +114,8 @@ class StartSmartChatJobResponse(SdkResponse):
             self.chat_access_address = chat_access_address
         if is_transparent is not None:
             self.is_transparent = is_transparent
+        if default_language is not None:
+            self.default_language = default_language
         if x_request_id is not None:
             self.x_request_id = x_request_id
 
@@ -200,6 +214,28 @@ class StartSmartChatJobResponse(SdkResponse):
         self._video_config = video_config
 
     @property
+    def voice_config_list(self):
+        """Gets the voice_config_list of this StartSmartChatJobResponse.
+
+        语音配置参数列表。
+
+        :return: The voice_config_list of this StartSmartChatJobResponse.
+        :rtype: list[:class:`huaweicloudsdkmetastudio.v1.SmartChatVoiceConfig`]
+        """
+        return self._voice_config_list
+
+    @voice_config_list.setter
+    def voice_config_list(self, voice_config_list):
+        """Sets the voice_config_list of this StartSmartChatJobResponse.
+
+        语音配置参数列表。
+
+        :param voice_config_list: The voice_config_list of this StartSmartChatJobResponse.
+        :type voice_config_list: list[:class:`huaweicloudsdkmetastudio.v1.SmartChatVoiceConfig`]
+        """
+        self._voice_config_list = voice_config_list
+
+    @property
     def chat_video_type(self):
         """Gets the chat_video_type of this StartSmartChatJobResponse.
 
@@ -286,6 +322,28 @@ class StartSmartChatJobResponse(SdkResponse):
         :type is_transparent: bool
         """
         self._is_transparent = is_transparent
+
+    @property
+    def default_language(self):
+        """Gets the default_language of this StartSmartChatJobResponse.
+
+        默认语言，智能交互接口使用。默认值CN。 * CN：中文。 * EN：英文。
+
+        :return: The default_language of this StartSmartChatJobResponse.
+        :rtype: str
+        """
+        return self._default_language
+
+    @default_language.setter
+    def default_language(self, default_language):
+        """Sets the default_language of this StartSmartChatJobResponse.
+
+        默认语言，智能交互接口使用。默认值CN。 * CN：中文。 * EN：英文。
+
+        :param default_language: The default_language of this StartSmartChatJobResponse.
+        :type default_language: str
+        """
+        self._default_language = default_language
 
     @property
     def x_request_id(self):

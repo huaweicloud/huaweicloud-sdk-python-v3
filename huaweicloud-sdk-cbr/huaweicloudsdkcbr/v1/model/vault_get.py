@@ -34,6 +34,7 @@ class VaultGet:
         'smn_notify': 'bool',
         'threshold': 'int',
         'sys_lock_source_service': 'str',
+        'locked': 'bool',
         'updated_at': 'str',
         'version': 'str'
     }
@@ -56,11 +57,12 @@ class VaultGet:
         'smn_notify': 'smn_notify',
         'threshold': 'threshold',
         'sys_lock_source_service': 'sys_lock_source_service',
+        'locked': 'locked',
         'updated_at': 'updated_at',
         'version': 'version'
     }
 
-    def __init__(self, billing=None, description=None, id=None, name=None, project_id=None, provider_id=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, user_id=None, created_at=None, auto_expand=None, smn_notify=None, threshold=None, sys_lock_source_service=None, updated_at=None, version=None):
+    def __init__(self, billing=None, description=None, id=None, name=None, project_id=None, provider_id=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, user_id=None, created_at=None, auto_expand=None, smn_notify=None, threshold=None, sys_lock_source_service=None, locked=None, updated_at=None, version=None):
         """VaultGet
 
         The model defined in huaweicloud sdk
@@ -99,6 +101,8 @@ class VaultGet:
         :type threshold: int
         :param sys_lock_source_service: 用于标识SMB服务
         :type sys_lock_source_service: str
+        :param locked: 用于标识该存储库是否已锁定
+        :type locked: bool
         :param updated_at: 更新时间,例如:\&quot;2020-02-05T10:38:34.209782\&quot;
         :type updated_at: str
         :param version: 版本
@@ -124,6 +128,7 @@ class VaultGet:
         self._smn_notify = None
         self._threshold = None
         self._sys_lock_source_service = None
+        self._locked = None
         self._updated_at = None
         self._version = None
         self.discriminator = None
@@ -156,6 +161,8 @@ class VaultGet:
             self.threshold = threshold
         if sys_lock_source_service is not None:
             self.sys_lock_source_service = sys_lock_source_service
+        if locked is not None:
+            self.locked = locked
         self.updated_at = updated_at
         if version is not None:
             self.version = version
@@ -525,6 +532,28 @@ class VaultGet:
         :type sys_lock_source_service: str
         """
         self._sys_lock_source_service = sys_lock_source_service
+
+    @property
+    def locked(self):
+        """Gets the locked of this VaultGet.
+
+        用于标识该存储库是否已锁定
+
+        :return: The locked of this VaultGet.
+        :rtype: bool
+        """
+        return self._locked
+
+    @locked.setter
+    def locked(self, locked):
+        """Sets the locked of this VaultGet.
+
+        用于标识该存储库是否已锁定
+
+        :param locked: The locked of this VaultGet.
+        :type locked: bool
+        """
+        self._locked = locked
 
     @property
     def updated_at(self):

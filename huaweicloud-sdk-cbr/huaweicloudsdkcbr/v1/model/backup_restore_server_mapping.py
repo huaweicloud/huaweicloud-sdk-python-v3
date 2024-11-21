@@ -31,7 +31,7 @@ class BackupRestoreServerMapping:
 
         The model defined in huaweicloud sdk
 
-        :param backup_id: 卷备份ID，可以通过控制台或者“查询指定备份”接口获取。
+        :param backup_id: 卷备份ID，可以通过控制台查看云服务器备份详情中磁盘级备份的ID；或“查询指定备份”接口，获取备份中children内的磁盘级备份的ID。
         :type backup_id: str
         :param volume_id: 待恢复目标卷ID
         :type volume_id: str
@@ -50,7 +50,7 @@ class BackupRestoreServerMapping:
     def backup_id(self):
         """Gets the backup_id of this BackupRestoreServerMapping.
 
-        卷备份ID，可以通过控制台或者“查询指定备份”接口获取。
+        卷备份ID，可以通过控制台查看云服务器备份详情中磁盘级备份的ID；或“查询指定备份”接口，获取备份中children内的磁盘级备份的ID。
 
         :return: The backup_id of this BackupRestoreServerMapping.
         :rtype: str
@@ -61,7 +61,7 @@ class BackupRestoreServerMapping:
     def backup_id(self, backup_id):
         """Sets the backup_id of this BackupRestoreServerMapping.
 
-        卷备份ID，可以通过控制台或者“查询指定备份”接口获取。
+        卷备份ID，可以通过控制台查看云服务器备份详情中磁盘级备份的ID；或“查询指定备份”接口，获取备份中children内的磁盘级备份的ID。
 
         :param backup_id: The backup_id of this BackupRestoreServerMapping.
         :type backup_id: str

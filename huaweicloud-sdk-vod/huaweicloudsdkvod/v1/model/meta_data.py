@@ -23,6 +23,7 @@ class MetaData:
         'video_size': 'int',
         'width': 'int',
         'hight': 'int',
+        'height': 'int',
         'bit_rate': 'int',
         'frame_rate': 'int',
         'quality': 'str',
@@ -36,13 +37,14 @@ class MetaData:
         'video_size': 'video_size',
         'width': 'width',
         'hight': 'hight',
+        'height': 'height',
         'bit_rate': 'bit_rate',
         'frame_rate': 'frame_rate',
         'quality': 'quality',
         'audio_channels': 'audio_channels'
     }
 
-    def __init__(self, pack_type=None, codec=None, duration=None, video_size=None, width=None, hight=None, bit_rate=None, frame_rate=None, quality=None, audio_channels=None):
+    def __init__(self, pack_type=None, codec=None, duration=None, video_size=None, width=None, hight=None, height=None, bit_rate=None, frame_rate=None, quality=None, audio_channels=None):
         """MetaData
 
         The model defined in huaweicloud sdk
@@ -57,8 +59,10 @@ class MetaData:
         :type video_size: int
         :param width: 视频宽度（单位：像素）。 - 编码为H.264的取值范围：[32,3840]之间2的倍数。 - 编码为H.265的取值范围：[320,3840]之间4的倍数。
         :type width: int
-        :param hight: 视频高度（单位：像素）。 - 编码为H.264的取值范围：[32,2160]之间2的倍数 。 - 编码为H.265的取值范围：[240,2160]之间4的倍数。
+        :param hight: 视频高度（单位：像素）。该字段会逐渐废弃，请使用height字段。 - 编码为H.264的取值范围：[32,2160]之间2的倍数 。 - 编码为H.265的取值范围：[240,2160]之间4的倍数。
         :type hight: int
+        :param height: 视频高度（单位：像素）。 - 编码为H.264的取值范围：[32,2160]之间2的倍数 。 - 编码为H.265的取值范围：[240,2160]之间4的倍数。
+        :type height: int
         :param bit_rate: 视频平均码率。
         :type bit_rate: int
         :param frame_rate: 帧率（单位：帧每秒）。  取值如下： - FRAMERATE_AUTO &#x3D; 1, - FRAMERATE_10 &#x3D; 2, - FRAMERATE_15 &#x3D; 3, - FRAMERATE_2397 &#x3D; 4, // 23.97 fps - FRAMERATE_24 &#x3D; 5, - FRAMERATE_25 &#x3D; 6, - FRAMERATE_2997 &#x3D; 7, // 29.97 fps - FRAMERATE_30 &#x3D; 8, - FRAMERATE_50 &#x3D; 9, - FRAMERATE_60 &#x3D; 10  默认值：1。  单位：帧每秒。
@@ -77,6 +81,7 @@ class MetaData:
         self._video_size = None
         self._width = None
         self._hight = None
+        self._height = None
         self._bit_rate = None
         self._frame_rate = None
         self._quality = None
@@ -95,6 +100,8 @@ class MetaData:
             self.width = width
         if hight is not None:
             self.hight = hight
+        if height is not None:
+            self.height = height
         if bit_rate is not None:
             self.bit_rate = bit_rate
         if frame_rate is not None:
@@ -218,7 +225,7 @@ class MetaData:
     def hight(self):
         """Gets the hight of this MetaData.
 
-        视频高度（单位：像素）。 - 编码为H.264的取值范围：[32,2160]之间2的倍数 。 - 编码为H.265的取值范围：[240,2160]之间4的倍数。
+        视频高度（单位：像素）。该字段会逐渐废弃，请使用height字段。 - 编码为H.264的取值范围：[32,2160]之间2的倍数 。 - 编码为H.265的取值范围：[240,2160]之间4的倍数。
 
         :return: The hight of this MetaData.
         :rtype: int
@@ -229,12 +236,34 @@ class MetaData:
     def hight(self, hight):
         """Sets the hight of this MetaData.
 
-        视频高度（单位：像素）。 - 编码为H.264的取值范围：[32,2160]之间2的倍数 。 - 编码为H.265的取值范围：[240,2160]之间4的倍数。
+        视频高度（单位：像素）。该字段会逐渐废弃，请使用height字段。 - 编码为H.264的取值范围：[32,2160]之间2的倍数 。 - 编码为H.265的取值范围：[240,2160]之间4的倍数。
 
         :param hight: The hight of this MetaData.
         :type hight: int
         """
         self._hight = hight
+
+    @property
+    def height(self):
+        """Gets the height of this MetaData.
+
+        视频高度（单位：像素）。 - 编码为H.264的取值范围：[32,2160]之间2的倍数 。 - 编码为H.265的取值范围：[240,2160]之间4的倍数。
+
+        :return: The height of this MetaData.
+        :rtype: int
+        """
+        return self._height
+
+    @height.setter
+    def height(self, height):
+        """Sets the height of this MetaData.
+
+        视频高度（单位：像素）。 - 编码为H.264的取值范围：[32,2160]之间2的倍数 。 - 编码为H.265的取值范围：[240,2160]之间4的倍数。
+
+        :param height: The height of this MetaData.
+        :type height: int
+        """
+        self._height = height
 
     @property
     def bit_rate(self):

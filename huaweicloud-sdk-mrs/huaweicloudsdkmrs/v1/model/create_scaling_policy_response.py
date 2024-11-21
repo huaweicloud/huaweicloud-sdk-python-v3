@@ -18,47 +18,51 @@ class CreateScalingPolicyResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'str'
+        'result': 'str'
     }
 
     attribute_map = {
-        'body': 'body'
+        'result': 'result'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, result=None):
         """CreateScalingPolicyResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: str
+        :param result: 操作结果。 - succeeded：操作成功 - 操作失败时返回的错误码信息如[错误码](https://support.huaweicloud.com/api-mrs/ErrorCode.html)所示。
+        :type result: str
         """
         
         super(CreateScalingPolicyResponse, self).__init__()
 
-        self._body = None
+        self._result = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if result is not None:
+            self.result = result
 
     @property
-    def body(self):
-        """Gets the body of this CreateScalingPolicyResponse.
+    def result(self):
+        """Gets the result of this CreateScalingPolicyResponse.
 
-        :return: The body of this CreateScalingPolicyResponse.
+        操作结果。 - succeeded：操作成功 - 操作失败时返回的错误码信息如[错误码](https://support.huaweicloud.com/api-mrs/ErrorCode.html)所示。
+
+        :return: The result of this CreateScalingPolicyResponse.
         :rtype: str
         """
-        return self._body
+        return self._result
 
-    @body.setter
-    def body(self, body):
-        """Sets the body of this CreateScalingPolicyResponse.
+    @result.setter
+    def result(self, result):
+        """Sets the result of this CreateScalingPolicyResponse.
 
-        :param body: The body of this CreateScalingPolicyResponse.
-        :type body: str
+        操作结果。 - succeeded：操作成功 - 操作失败时返回的错误码信息如[错误码](https://support.huaweicloud.com/api-mrs/ErrorCode.html)所示。
+
+        :param result: The result of this CreateScalingPolicyResponse.
+        :type result: str
         """
-        self._body = body
+        self._result = result
 
     def to_dict(self):
         """Returns the model properties as a dict"""

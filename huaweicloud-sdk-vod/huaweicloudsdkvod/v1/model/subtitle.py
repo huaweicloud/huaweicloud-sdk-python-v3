@@ -20,6 +20,7 @@ class Subtitle:
         'id': 'int',
         'type': 'str',
         'language': 'str',
+        'name': 'str',
         'md5': 'str',
         'description': 'str'
     }
@@ -28,11 +29,12 @@ class Subtitle:
         'id': 'id',
         'type': 'type',
         'language': 'language',
+        'name': 'name',
         'md5': 'md5',
         'description': 'description'
     }
 
-    def __init__(self, id=None, type=None, language=None, md5=None, description=None):
+    def __init__(self, id=None, type=None, language=None, name=None, md5=None, description=None):
         """Subtitle
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class Subtitle:
         :type type: str
         :param language: 字幕语言类型。  取值如下： - CN：表示中文字幕。 - EN：表示英文字幕。
         :type language: str
+        :param name: subtitle name
+        :type name: str
         :param md5: 字幕文件的MD5值。
         :type md5: str
         :param description: 字幕描述。
@@ -54,6 +58,7 @@ class Subtitle:
         self._id = None
         self._type = None
         self._language = None
+        self._name = None
         self._md5 = None
         self._description = None
         self.discriminator = None
@@ -61,6 +66,8 @@ class Subtitle:
         self.id = id
         self.type = type
         self.language = language
+        if name is not None:
+            self.name = name
         if md5 is not None:
             self.md5 = md5
         if description is not None:
@@ -131,6 +138,28 @@ class Subtitle:
         :type language: str
         """
         self._language = language
+
+    @property
+    def name(self):
+        """Gets the name of this Subtitle.
+
+        subtitle name
+
+        :return: The name of this Subtitle.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this Subtitle.
+
+        subtitle name
+
+        :param name: The name of this Subtitle.
+        :type name: str
+        """
+        self._name = name
 
     @property
     def md5(self):

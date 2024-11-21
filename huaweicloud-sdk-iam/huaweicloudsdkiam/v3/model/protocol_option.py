@@ -38,7 +38,8 @@ class ProtocolOption:
         self._mapping_id = None
         self.discriminator = None
 
-        self.mapping_id = mapping_id
+        if mapping_id is not None:
+            self.mapping_id = mapping_id
 
     @property
     def mapping_id(self):

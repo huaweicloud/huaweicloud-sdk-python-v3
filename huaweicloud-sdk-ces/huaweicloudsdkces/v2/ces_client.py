@@ -1672,6 +1672,8 @@ class CesClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'order_by' in local_var_params:
+            query_params.append(('order_by', local_var_params['order_by']))
 
         header_params = {}
 

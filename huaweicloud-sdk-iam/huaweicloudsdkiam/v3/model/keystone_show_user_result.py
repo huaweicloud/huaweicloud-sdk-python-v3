@@ -25,7 +25,8 @@ class KeystoneShowUserResult:
         'password_expires_at': 'str',
         'links': 'Links',
         'id': 'str',
-        'enabled': 'bool'
+        'enabled': 'bool',
+        'access_mode': 'str'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class KeystoneShowUserResult:
         'password_expires_at': 'password_expires_at',
         'links': 'links',
         'id': 'id',
-        'enabled': 'enabled'
+        'enabled': 'enabled',
+        'access_mode': 'access_mode'
     }
 
-    def __init__(self, pwd_status=None, domain_id=None, last_project_id=None, name=None, description=None, password_expires_at=None, links=None, id=None, enabled=None):
+    def __init__(self, pwd_status=None, domain_id=None, last_project_id=None, name=None, description=None, password_expires_at=None, links=None, id=None, enabled=None, access_mode=None):
         """KeystoneShowUserResult
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class KeystoneShowUserResult:
         :type id: str
         :param enabled: IAM用户是否启用。true表示启用，false表示停用，默认为true。
         :type enabled: bool
+        :param access_mode: IAM用户访问方式。 - default：默认访问模式，编程访问和管理控制台访问。 - programmatic：编程访问。 - console：管理控制台访问。
+        :type access_mode: str
         """
         
         
@@ -76,6 +80,7 @@ class KeystoneShowUserResult:
         self._links = None
         self._id = None
         self._enabled = None
+        self._access_mode = None
         self.discriminator = None
 
         if pwd_status is not None:
@@ -90,6 +95,8 @@ class KeystoneShowUserResult:
         self.links = links
         self.id = id
         self.enabled = enabled
+        if access_mode is not None:
+            self.access_mode = access_mode
 
     @property
     def pwd_status(self):
@@ -284,6 +291,28 @@ class KeystoneShowUserResult:
         :type enabled: bool
         """
         self._enabled = enabled
+
+    @property
+    def access_mode(self):
+        """Gets the access_mode of this KeystoneShowUserResult.
+
+        IAM用户访问方式。 - default：默认访问模式，编程访问和管理控制台访问。 - programmatic：编程访问。 - console：管理控制台访问。
+
+        :return: The access_mode of this KeystoneShowUserResult.
+        :rtype: str
+        """
+        return self._access_mode
+
+    @access_mode.setter
+    def access_mode(self, access_mode):
+        """Sets the access_mode of this KeystoneShowUserResult.
+
+        IAM用户访问方式。 - default：默认访问模式，编程访问和管理控制台访问。 - programmatic：编程访问。 - console：管理控制台访问。
+
+        :param access_mode: The access_mode of this KeystoneShowUserResult.
+        :type access_mode: str
+        """
+        self._access_mode = access_mode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

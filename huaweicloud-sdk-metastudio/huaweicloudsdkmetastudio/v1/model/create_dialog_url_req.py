@@ -31,7 +31,7 @@ class CreateDialogUrlReq:
 
         The model defined in huaweicloud sdk
 
-        :param room_id: 智能交互对话ID。
+        :param room_id: 智能交互对话ID，获取方法请参考[创建智能交互对话直播间](CreateSmartChatRoom.xml)。
         :type room_id: str
         :param robot_id: 应用ID。
         :type robot_id: str
@@ -50,7 +50,7 @@ class CreateDialogUrlReq:
     def room_id(self):
         """Gets the room_id of this CreateDialogUrlReq.
 
-        智能交互对话ID。
+        智能交互对话ID，获取方法请参考[创建智能交互对话直播间](CreateSmartChatRoom.xml)。
 
         :return: The room_id of this CreateDialogUrlReq.
         :rtype: str
@@ -61,7 +61,7 @@ class CreateDialogUrlReq:
     def room_id(self, room_id):
         """Sets the room_id of this CreateDialogUrlReq.
 
-        智能交互对话ID。
+        智能交互对话ID，获取方法请参考[创建智能交互对话直播间](CreateSmartChatRoom.xml)。
 
         :param room_id: The room_id of this CreateDialogUrlReq.
         :type room_id: str

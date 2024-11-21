@@ -23,7 +23,8 @@ class VaultUpdate:
         'bind_rules': 'VaultBindRules',
         'auto_expand': 'bool',
         'smn_notify': 'bool',
-        'threshold': 'int'
+        'threshold': 'int',
+        'locked': 'bool'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class VaultUpdate:
         'bind_rules': 'bind_rules',
         'auto_expand': 'auto_expand',
         'smn_notify': 'smn_notify',
-        'threshold': 'threshold'
+        'threshold': 'threshold',
+        'locked': 'locked'
     }
 
-    def __init__(self, billing=None, name=None, auto_bind=None, bind_rules=None, auto_expand=None, smn_notify=None, threshold=None):
+    def __init__(self, billing=None, name=None, auto_bind=None, bind_rules=None, auto_expand=None, smn_notify=None, threshold=None, locked=None):
         """VaultUpdate
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class VaultUpdate:
         :type smn_notify: bool
         :param threshold: 存储库容量阈值，存储库已用容量和总容量的百分比超过该值，若smn_notify为开，将发送相关通知。
         :type threshold: int
+        :param locked: 用于标识当前存储库是否已锁定
+        :type locked: bool
         """
         
         
@@ -66,6 +70,7 @@ class VaultUpdate:
         self._auto_expand = None
         self._smn_notify = None
         self._threshold = None
+        self._locked = None
         self.discriminator = None
 
         if billing is not None:
@@ -82,6 +87,8 @@ class VaultUpdate:
             self.smn_notify = smn_notify
         if threshold is not None:
             self.threshold = threshold
+        if locked is not None:
+            self.locked = locked
 
     @property
     def billing(self):
@@ -228,6 +235,28 @@ class VaultUpdate:
         :type threshold: int
         """
         self._threshold = threshold
+
+    @property
+    def locked(self):
+        """Gets the locked of this VaultUpdate.
+
+        用于标识当前存储库是否已锁定
+
+        :return: The locked of this VaultUpdate.
+        :rtype: bool
+        """
+        return self._locked
+
+    @locked.setter
+    def locked(self, locked):
+        """Sets the locked of this VaultUpdate.
+
+        用于标识当前存储库是否已锁定
+
+        :param locked: The locked of this VaultUpdate.
+        :type locked: bool
+        """
+        self._locked = locked
 
     def to_dict(self):
         """Returns the model properties as a dict"""

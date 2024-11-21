@@ -26,7 +26,8 @@ class ListAlarmHistoriesRequest:
         '_from': 'str',
         'to': 'str',
         'offset': 'int',
-        'limit': 'int'
+        'limit': 'int',
+        'order_by': 'str'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class ListAlarmHistoriesRequest:
         '_from': 'from',
         'to': 'to',
         'offset': 'offset',
-        'limit': 'limit'
+        'limit': 'limit',
+        'order_by': 'order_by'
     }
 
-    def __init__(self, alarm_id=None, name=None, status=None, level=None, namespace=None, resource_id=None, _from=None, to=None, offset=None, limit=None):
+    def __init__(self, alarm_id=None, name=None, status=None, level=None, namespace=None, resource_id=None, _from=None, to=None, offset=None, limit=None, order_by=None):
         """ListAlarmHistoriesRequest
 
         The model defined in huaweicloud sdk
@@ -67,6 +69,8 @@ class ListAlarmHistoriesRequest:
         :type offset: int
         :param limit: 分页大小
         :type limit: int
+        :param order_by: 按关键字排序, 默认为update_time, {first_alarm_time: 告警产生时间, update_time: 更新时间, alarm_level: 告警级别, record_id：表记录主键} 
+        :type order_by: str
         """
         
         
@@ -81,6 +85,7 @@ class ListAlarmHistoriesRequest:
         self._to = None
         self._offset = None
         self._limit = None
+        self._order_by = None
         self.discriminator = None
 
         if alarm_id is not None:
@@ -103,6 +108,8 @@ class ListAlarmHistoriesRequest:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+        if order_by is not None:
+            self.order_by = order_by
 
     @property
     def alarm_id(self):
@@ -323,6 +330,28 @@ class ListAlarmHistoriesRequest:
         :type limit: int
         """
         self._limit = limit
+
+    @property
+    def order_by(self):
+        """Gets the order_by of this ListAlarmHistoriesRequest.
+
+        按关键字排序, 默认为update_time, {first_alarm_time: 告警产生时间, update_time: 更新时间, alarm_level: 告警级别, record_id：表记录主键} 
+
+        :return: The order_by of this ListAlarmHistoriesRequest.
+        :rtype: str
+        """
+        return self._order_by
+
+    @order_by.setter
+    def order_by(self, order_by):
+        """Sets the order_by of this ListAlarmHistoriesRequest.
+
+        按关键字排序, 默认为update_time, {first_alarm_time: 告警产生时间, update_time: 更新时间, alarm_level: 告警级别, record_id：表记录主键} 
+
+        :param order_by: The order_by of this ListAlarmHistoriesRequest.
+        :type order_by: str
+        """
+        self._order_by = order_by
 
     def to_dict(self):
         """Returns the model properties as a dict"""

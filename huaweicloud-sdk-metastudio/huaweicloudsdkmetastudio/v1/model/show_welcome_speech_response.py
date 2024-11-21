@@ -20,6 +20,8 @@ class ShowWelcomeSpeechResponse(SdkResponse):
     openapi_types = {
         'welcome_speech_id': 'str',
         'welcome_speech': 'str',
+        'enable_welcome_speech': 'bool',
+        'language': 'LanguageEnum',
         'robot_id': 'str',
         'create_time': 'str',
         'update_time': 'str',
@@ -29,13 +31,15 @@ class ShowWelcomeSpeechResponse(SdkResponse):
     attribute_map = {
         'welcome_speech_id': 'welcome_speech_id',
         'welcome_speech': 'welcome_speech',
+        'enable_welcome_speech': 'enable_welcome_speech',
+        'language': 'language',
         'robot_id': 'robot_id',
         'create_time': 'create_time',
         'update_time': 'update_time',
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, welcome_speech_id=None, welcome_speech=None, robot_id=None, create_time=None, update_time=None, x_request_id=None):
+    def __init__(self, welcome_speech_id=None, welcome_speech=None, enable_welcome_speech=None, language=None, robot_id=None, create_time=None, update_time=None, x_request_id=None):
         """ShowWelcomeSpeechResponse
 
         The model defined in huaweicloud sdk
@@ -44,6 +48,10 @@ class ShowWelcomeSpeechResponse(SdkResponse):
         :type welcome_speech_id: str
         :param welcome_speech: 欢迎词。
         :type welcome_speech: str
+        :param enable_welcome_speech: 欢迎词功能开关。
+        :type enable_welcome_speech: bool
+        :param language: 
+        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
         :param robot_id: 应用ID。
         :type robot_id: str
         :param create_time: 创建时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
@@ -58,6 +66,8 @@ class ShowWelcomeSpeechResponse(SdkResponse):
 
         self._welcome_speech_id = None
         self._welcome_speech = None
+        self._enable_welcome_speech = None
+        self._language = None
         self._robot_id = None
         self._create_time = None
         self._update_time = None
@@ -68,6 +78,10 @@ class ShowWelcomeSpeechResponse(SdkResponse):
             self.welcome_speech_id = welcome_speech_id
         if welcome_speech is not None:
             self.welcome_speech = welcome_speech
+        if enable_welcome_speech is not None:
+            self.enable_welcome_speech = enable_welcome_speech
+        if language is not None:
+            self.language = language
         if robot_id is not None:
             self.robot_id = robot_id
         if create_time is not None:
@@ -120,6 +134,46 @@ class ShowWelcomeSpeechResponse(SdkResponse):
         :type welcome_speech: str
         """
         self._welcome_speech = welcome_speech
+
+    @property
+    def enable_welcome_speech(self):
+        """Gets the enable_welcome_speech of this ShowWelcomeSpeechResponse.
+
+        欢迎词功能开关。
+
+        :return: The enable_welcome_speech of this ShowWelcomeSpeechResponse.
+        :rtype: bool
+        """
+        return self._enable_welcome_speech
+
+    @enable_welcome_speech.setter
+    def enable_welcome_speech(self, enable_welcome_speech):
+        """Sets the enable_welcome_speech of this ShowWelcomeSpeechResponse.
+
+        欢迎词功能开关。
+
+        :param enable_welcome_speech: The enable_welcome_speech of this ShowWelcomeSpeechResponse.
+        :type enable_welcome_speech: bool
+        """
+        self._enable_welcome_speech = enable_welcome_speech
+
+    @property
+    def language(self):
+        """Gets the language of this ShowWelcomeSpeechResponse.
+
+        :return: The language of this ShowWelcomeSpeechResponse.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        """
+        return self._language
+
+    @language.setter
+    def language(self, language):
+        """Sets the language of this ShowWelcomeSpeechResponse.
+
+        :param language: The language of this ShowWelcomeSpeechResponse.
+        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        """
+        self._language = language
 
     @property
     def robot_id(self):

@@ -37,9 +37,9 @@ class Common:
 
         The model defined in huaweicloud sdk
 
-        :param pvc: pvc开关。
+        :param pvc: 高清低码开关。
         :type pvc: str
-        :param pvc_version: pvc版本。
+        :param pvc_version: 高清低码版本。
         :type pvc_version: str
         :param video_codec: 视频编码格式。
         :type video_codec: str
@@ -72,7 +72,7 @@ class Common:
     def pvc(self):
         """Gets the pvc of this Common.
 
-        pvc开关。
+        高清低码开关。
 
         :return: The pvc of this Common.
         :rtype: str
@@ -83,7 +83,7 @@ class Common:
     def pvc(self, pvc):
         """Sets the pvc of this Common.
 
-        pvc开关。
+        高清低码开关。
 
         :param pvc: The pvc of this Common.
         :type pvc: str
@@ -94,7 +94,7 @@ class Common:
     def pvc_version(self):
         """Gets the pvc_version of this Common.
 
-        pvc版本。
+        高清低码版本。
 
         :return: The pvc_version of this Common.
         :rtype: str
@@ -105,7 +105,7 @@ class Common:
     def pvc_version(self, pvc_version):
         """Sets the pvc_version of this Common.
 
-        pvc版本。
+        高清低码版本。
 
         :param pvc_version: The pvc_version of this Common.
         :type pvc_version: str

@@ -10,6 +10,8 @@ class LtsRegion:
                         "https://lts.cn-east-2.myhuaweicloud.com")
     CN_EAST_3 = Region("cn-east-3",
                         "https://lts.cn-east-3.myhuaweicloud.com")
+    CN_EAST_5 = Region("cn-east-5",
+                        "https://lts.cn-east-5.myhuaweicloud.com")
     CN_NORTH_1 = Region("cn-north-1",
                         "https://lts.cn-north-1.myhuaweicloud.com")
     CN_NORTH_2 = Region("cn-north-2",
@@ -58,6 +60,7 @@ class LtsRegion:
     static_fields = {
         "cn-east-2": CN_EAST_2,
         "cn-east-3": CN_EAST_3,
+        "cn-east-5": CN_EAST_5,
         "cn-north-1": CN_NORTH_1,
         "cn-north-2": CN_NORTH_2,
         "cn-north-4": CN_NORTH_4,

@@ -21,7 +21,8 @@ class CreateTtsAuditionRequestBody:
         'emotion': 'str',
         'speed': 'int',
         'pitch': 'int',
-        'volume': 'int'
+        'volume': 'int',
+        'business_type': 'str'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class CreateTtsAuditionRequestBody:
         'emotion': 'emotion',
         'speed': 'speed',
         'pitch': 'pitch',
-        'volume': 'volume'
+        'volume': 'volume',
+        'business_type': 'business_type'
     }
 
-    def __init__(self, text=None, emotion=None, speed=None, pitch=None, volume=None):
+    def __init__(self, text=None, emotion=None, speed=None, pitch=None, volume=None, business_type=None):
         """CreateTtsAuditionRequestBody
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class CreateTtsAuditionRequestBody:
         :type pitch: int
         :param volume: 音量。 默认值140，最小值90，最大值240。
         :type volume: int
+        :param business_type: 业务场景，多个入口调用试听接口时的业务场景
+        :type business_type: str
         """
         
         
@@ -56,6 +60,7 @@ class CreateTtsAuditionRequestBody:
         self._speed = None
         self._pitch = None
         self._volume = None
+        self._business_type = None
         self.discriminator = None
 
         self.text = text
@@ -66,6 +71,8 @@ class CreateTtsAuditionRequestBody:
             self.pitch = pitch
         if volume is not None:
             self.volume = volume
+        if business_type is not None:
+            self.business_type = business_type
 
     @property
     def text(self):
@@ -176,6 +183,28 @@ class CreateTtsAuditionRequestBody:
         :type volume: int
         """
         self._volume = volume
+
+    @property
+    def business_type(self):
+        """Gets the business_type of this CreateTtsAuditionRequestBody.
+
+        业务场景，多个入口调用试听接口时的业务场景
+
+        :return: The business_type of this CreateTtsAuditionRequestBody.
+        :rtype: str
+        """
+        return self._business_type
+
+    @business_type.setter
+    def business_type(self, business_type):
+        """Sets the business_type of this CreateTtsAuditionRequestBody.
+
+        业务场景，多个入口调用试听接口时的业务场景
+
+        :param business_type: The business_type of this CreateTtsAuditionRequestBody.
+        :type business_type: str
+        """
+        self._business_type = business_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

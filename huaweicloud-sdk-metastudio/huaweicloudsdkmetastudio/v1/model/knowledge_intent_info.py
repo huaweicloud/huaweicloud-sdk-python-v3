@@ -41,7 +41,7 @@ class KnowledgeIntentInfo:
 
         :param intent_id: 意图ID。
         :type intent_id: str
-        :param name: 你是谁。
+        :param name: 主题。
         :type name: str
         :param identify: 意图标识。
         :type identify: str
@@ -102,7 +102,7 @@ class KnowledgeIntentInfo:
     def name(self):
         """Gets the name of this KnowledgeIntentInfo.
 
-        你是谁。
+        主题。
 
         :return: The name of this KnowledgeIntentInfo.
         :rtype: str
@@ -113,7 +113,7 @@ class KnowledgeIntentInfo:
     def name(self, name):
         """Sets the name of this KnowledgeIntentInfo.
 
-        你是谁。
+        主题。
 
         :param name: The name of this KnowledgeIntentInfo.
         :type name: str

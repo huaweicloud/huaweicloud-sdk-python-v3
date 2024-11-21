@@ -20,6 +20,7 @@ class KeystoneCreateUserResult:
         'domain_id': 'str',
         'name': 'str',
         'description': 'str',
+        'pwd_status': 'bool',
         'password_expires_at': 'str',
         'links': 'LinksSelf',
         'id': 'str',
@@ -30,13 +31,14 @@ class KeystoneCreateUserResult:
         'domain_id': 'domain_id',
         'name': 'name',
         'description': 'description',
+        'pwd_status': 'pwd_status',
         'password_expires_at': 'password_expires_at',
         'links': 'links',
         'id': 'id',
         'enabled': 'enabled'
     }
 
-    def __init__(self, domain_id=None, name=None, description=None, password_expires_at=None, links=None, id=None, enabled=None):
+    def __init__(self, domain_id=None, name=None, description=None, pwd_status=None, password_expires_at=None, links=None, id=None, enabled=None):
         """KeystoneCreateUserResult
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class KeystoneCreateUserResult:
         :type name: str
         :param description: IAM用户描述信息。
         :type description: str
+        :param pwd_status: IAM用户密码状态。true：需要修改密码，false：正常；如果密码未设置，此字段可能不返回。
+        :type pwd_status: bool
         :param password_expires_at: IAM用户密码过期时间（UTC时间），“null”表示密码不过期。
         :type password_expires_at: str
         :param links: 
@@ -62,6 +66,7 @@ class KeystoneCreateUserResult:
         self._domain_id = None
         self._name = None
         self._description = None
+        self._pwd_status = None
         self._password_expires_at = None
         self._links = None
         self._id = None
@@ -72,6 +77,8 @@ class KeystoneCreateUserResult:
         self.name = name
         if description is not None:
             self.description = description
+        if pwd_status is not None:
+            self.pwd_status = pwd_status
         self.password_expires_at = password_expires_at
         self.links = links
         self.id = id
@@ -142,6 +149,28 @@ class KeystoneCreateUserResult:
         :type description: str
         """
         self._description = description
+
+    @property
+    def pwd_status(self):
+        """Gets the pwd_status of this KeystoneCreateUserResult.
+
+        IAM用户密码状态。true：需要修改密码，false：正常；如果密码未设置，此字段可能不返回。
+
+        :return: The pwd_status of this KeystoneCreateUserResult.
+        :rtype: bool
+        """
+        return self._pwd_status
+
+    @pwd_status.setter
+    def pwd_status(self, pwd_status):
+        """Sets the pwd_status of this KeystoneCreateUserResult.
+
+        IAM用户密码状态。true：需要修改密码，false：正常；如果密码未设置，此字段可能不返回。
+
+        :param pwd_status: The pwd_status of this KeystoneCreateUserResult.
+        :type pwd_status: bool
+        """
+        self._pwd_status = pwd_status
 
     @property
     def password_expires_at(self):

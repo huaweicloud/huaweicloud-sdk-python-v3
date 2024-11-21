@@ -35,7 +35,7 @@ class StopSmartChatJobRequest:
 
         :param x_app_user_id: 第三方用户ID。不允许输入中文。
         :type x_app_user_id: str
-        :param room_id: 智能交互对话ID，获取方法请参考[[创建智能交互对话直播间](https://support.huaweicloud.com/api-metastudio/CreateSmartChatRoom.html)](tag:hc,hk)[“创建智能交互对话直播间”](tag:cmcc)。
+        :param room_id: 智能交互对话ID，获取方法请参考[创建智能交互对话直播间](CreateSmartChatRoom.xml)。
         :type room_id: str
         :param job_id: 任务ID。
         :type job_id: str
@@ -79,7 +79,7 @@ class StopSmartChatJobRequest:
     def room_id(self):
         """Gets the room_id of this StopSmartChatJobRequest.
 
-        智能交互对话ID，获取方法请参考[[创建智能交互对话直播间](https://support.huaweicloud.com/api-metastudio/CreateSmartChatRoom.html)](tag:hc,hk)[“创建智能交互对话直播间”](tag:cmcc)。
+        智能交互对话ID，获取方法请参考[创建智能交互对话直播间](CreateSmartChatRoom.xml)。
 
         :return: The room_id of this StopSmartChatJobRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class StopSmartChatJobRequest:
     def room_id(self, room_id):
         """Sets the room_id of this StopSmartChatJobRequest.
 
-        智能交互对话ID，获取方法请参考[[创建智能交互对话直播间](https://support.huaweicloud.com/api-metastudio/CreateSmartChatRoom.html)](tag:hc,hk)[“创建智能交互对话直播间”](tag:cmcc)。
+        智能交互对话ID，获取方法请参考[创建智能交互对话直播间](CreateSmartChatRoom.xml)。
 
         :param room_id: The room_id of this StopSmartChatJobRequest.
         :type room_id: str

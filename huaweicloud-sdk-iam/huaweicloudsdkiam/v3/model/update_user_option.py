@@ -17,6 +17,10 @@ class UpdateUserOption:
     sensitive_list = []
 
     openapi_types = {
+        'create_time': 'str',
+        'xdomain_id': 'str',
+        'xdomain_type': 'str',
+        'is_domain_owner': 'bool',
         'access_mode': 'str',
         'name': 'str',
         'password': 'str',
@@ -31,6 +35,10 @@ class UpdateUserOption:
     }
 
     attribute_map = {
+        'create_time': 'create_time',
+        'xdomain_id': 'xdomain_id',
+        'xdomain_type': 'xdomain_type',
+        'is_domain_owner': 'is_domain_owner',
         'access_mode': 'access_mode',
         'name': 'name',
         'password': 'password',
@@ -44,11 +52,19 @@ class UpdateUserOption:
         'description': 'description'
     }
 
-    def __init__(self, access_mode=None, name=None, password=None, email=None, areacode=None, phone=None, enabled=None, pwd_status=None, xuser_type=None, xuser_id=None, description=None):
+    def __init__(self, create_time=None, xdomain_id=None, xdomain_type=None, is_domain_owner=None, access_mode=None, name=None, password=None, email=None, areacode=None, phone=None, enabled=None, pwd_status=None, xuser_type=None, xuser_id=None, description=None):
         """UpdateUserOption
 
         The model defined in huaweicloud sdk
 
+        :param create_time: 
+        :type create_time: str
+        :param xdomain_id: IAM用户在外部系统中的ID。 &gt;外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。
+        :type xdomain_id: str
+        :param xdomain_type: IAM用户在外部系统中的类型。 &gt;外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。 
+        :type xdomain_type: str
+        :param is_domain_owner: IAM用户是否为账号管理员。
+        :type is_domain_owner: bool
         :param access_mode: IAM用户访问方式。 - default：默认访问模式，编程访问和管理控制台访问。 - programmatic：编程访问。 - console：管理控制台访问。
         :type access_mode: str
         :param name: 新IAM用户名，长度1~64之间，只能包含如下字符：大小写字母、空格、数字或特殊字符（-_.）且不能以数字开头。
@@ -75,6 +91,10 @@ class UpdateUserOption:
         
         
 
+        self._create_time = None
+        self._xdomain_id = None
+        self._xdomain_type = None
+        self._is_domain_owner = None
         self._access_mode = None
         self._name = None
         self._password = None
@@ -88,6 +108,14 @@ class UpdateUserOption:
         self._description = None
         self.discriminator = None
 
+        if create_time is not None:
+            self.create_time = create_time
+        if xdomain_id is not None:
+            self.xdomain_id = xdomain_id
+        if xdomain_type is not None:
+            self.xdomain_type = xdomain_type
+        if is_domain_owner is not None:
+            self.is_domain_owner = is_domain_owner
         if access_mode is not None:
             self.access_mode = access_mode
         if name is not None:
@@ -110,6 +138,94 @@ class UpdateUserOption:
             self.xuser_id = xuser_id
         if description is not None:
             self.description = description
+
+    @property
+    def create_time(self):
+        """Gets the create_time of this UpdateUserOption.
+
+        
+
+        :return: The create_time of this UpdateUserOption.
+        :rtype: str
+        """
+        return self._create_time
+
+    @create_time.setter
+    def create_time(self, create_time):
+        """Sets the create_time of this UpdateUserOption.
+
+        
+
+        :param create_time: The create_time of this UpdateUserOption.
+        :type create_time: str
+        """
+        self._create_time = create_time
+
+    @property
+    def xdomain_id(self):
+        """Gets the xdomain_id of this UpdateUserOption.
+
+        IAM用户在外部系统中的ID。 >外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。
+
+        :return: The xdomain_id of this UpdateUserOption.
+        :rtype: str
+        """
+        return self._xdomain_id
+
+    @xdomain_id.setter
+    def xdomain_id(self, xdomain_id):
+        """Sets the xdomain_id of this UpdateUserOption.
+
+        IAM用户在外部系统中的ID。 >外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。
+
+        :param xdomain_id: The xdomain_id of this UpdateUserOption.
+        :type xdomain_id: str
+        """
+        self._xdomain_id = xdomain_id
+
+    @property
+    def xdomain_type(self):
+        """Gets the xdomain_type of this UpdateUserOption.
+
+        IAM用户在外部系统中的类型。 >外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。 
+
+        :return: The xdomain_type of this UpdateUserOption.
+        :rtype: str
+        """
+        return self._xdomain_type
+
+    @xdomain_type.setter
+    def xdomain_type(self, xdomain_type):
+        """Sets the xdomain_type of this UpdateUserOption.
+
+        IAM用户在外部系统中的类型。 >外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。 
+
+        :param xdomain_type: The xdomain_type of this UpdateUserOption.
+        :type xdomain_type: str
+        """
+        self._xdomain_type = xdomain_type
+
+    @property
+    def is_domain_owner(self):
+        """Gets the is_domain_owner of this UpdateUserOption.
+
+        IAM用户是否为账号管理员。
+
+        :return: The is_domain_owner of this UpdateUserOption.
+        :rtype: bool
+        """
+        return self._is_domain_owner
+
+    @is_domain_owner.setter
+    def is_domain_owner(self, is_domain_owner):
+        """Sets the is_domain_owner of this UpdateUserOption.
+
+        IAM用户是否为账号管理员。
+
+        :param is_domain_owner: The is_domain_owner of this UpdateUserOption.
+        :type is_domain_owner: bool
+        """
+        self._is_domain_owner = is_domain_owner
 
     @property
     def access_mode(self):

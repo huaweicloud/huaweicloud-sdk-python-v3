@@ -29,7 +29,8 @@ class VaultOrder:
         'threshold': 'int',
         'smn_notify': 'bool',
         'parameters': 'VaultCreateParameters',
-        'auto_expand': 'bool'
+        'auto_expand': 'bool',
+        'locked': 'bool'
     }
 
     attribute_map = {
@@ -45,10 +46,11 @@ class VaultOrder:
         'threshold': 'threshold',
         'smn_notify': 'smn_notify',
         'parameters': 'parameters',
-        'auto_expand': 'auto_expand'
+        'auto_expand': 'auto_expand',
+        'locked': 'locked'
     }
 
-    def __init__(self, name=None, billing=None, resources=None, description=None, backup_policy_id=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, threshold=None, smn_notify=None, parameters=None, auto_expand=None):
+    def __init__(self, name=None, billing=None, resources=None, description=None, backup_policy_id=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, threshold=None, smn_notify=None, parameters=None, auto_expand=None, locked=None):
         """VaultOrder
 
         The model defined in huaweicloud sdk
@@ -79,6 +81,8 @@ class VaultOrder:
         :type parameters: :class:`huaweicloudsdkcbr.v1.VaultCreateParameters`
         :param auto_expand: 是否开启存储库自动扩容能力（只支持按需存储库）。
         :type auto_expand: bool
+        :param locked: 用于标识当前存储库是否已锁定
+        :type locked: bool
         """
         
         
@@ -96,6 +100,7 @@ class VaultOrder:
         self._smn_notify = None
         self._parameters = None
         self._auto_expand = None
+        self._locked = None
         self.discriminator = None
 
         if name is not None:
@@ -122,6 +127,8 @@ class VaultOrder:
             self.parameters = parameters
         if auto_expand is not None:
             self.auto_expand = auto_expand
+        if locked is not None:
+            self.locked = locked
 
     @property
     def name(self):
@@ -396,6 +403,28 @@ class VaultOrder:
         :type auto_expand: bool
         """
         self._auto_expand = auto_expand
+
+    @property
+    def locked(self):
+        """Gets the locked of this VaultOrder.
+
+        用于标识当前存储库是否已锁定
+
+        :return: The locked of this VaultOrder.
+        :rtype: bool
+        """
+        return self._locked
+
+    @locked.setter
+    def locked(self, locked):
+        """Sets the locked of this VaultOrder.
+
+        用于标识当前存储库是否已锁定
+
+        :param locked: The locked of this VaultOrder.
+        :type locked: bool
+        """
+        self._locked = locked
 
     def to_dict(self):
         """Returns the model properties as a dict"""

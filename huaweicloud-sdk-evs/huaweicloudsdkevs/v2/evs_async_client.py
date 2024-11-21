@@ -800,6 +800,8 @@ class EvsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_client_token' in local_var_params:
+            header_params['X-Client-Token'] = local_var_params['x_client_token']
 
         form_params = {}
 

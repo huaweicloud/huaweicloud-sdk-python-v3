@@ -11,6 +11,7 @@ from huaweicloudsdkrgc.v1.model.create_account_response import CreateAccountResp
 from huaweicloudsdkrgc.v1.model.create_managed_account_request import CreateManagedAccountRequest
 from huaweicloudsdkrgc.v1.model.disable_control_request import DisableControlRequest
 from huaweicloudsdkrgc.v1.model.disable_control_response import DisableControlResponse
+from huaweicloudsdkrgc.v1.model.enable_control_parameters import EnableControlParameters
 from huaweicloudsdkrgc.v1.model.enable_control_request import EnableControlRequest
 from huaweicloudsdkrgc.v1.model.enable_control_response import EnableControlResponse
 from huaweicloudsdkrgc.v1.model.enabled_control import EnabledControl

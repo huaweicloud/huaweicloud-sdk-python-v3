@@ -23,7 +23,8 @@ class ThirdPartyModelConfig:
         'is_stream': 'bool',
         'chat_rounds': 'int',
         'sis_region': 'int',
-        'sis_project_id': 'str'
+        'sis_project_id': 'str',
+        'enable_hot_words': 'bool'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class ThirdPartyModelConfig:
         'is_stream': 'is_stream',
         'chat_rounds': 'chat_rounds',
         'sis_region': 'sis_region',
-        'sis_project_id': 'sis_project_id'
+        'sis_project_id': 'sis_project_id',
+        'enable_hot_words': 'enable_hot_words'
     }
 
-    def __init__(self, app_id=None, app_key=None, llm_url=None, is_stream=None, chat_rounds=None, sis_region=None, sis_project_id=None):
+    def __init__(self, app_id=None, app_key=None, llm_url=None, is_stream=None, chat_rounds=None, sis_region=None, sis_project_id=None, enable_hot_words=None):
         """ThirdPartyModelConfig
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class ThirdPartyModelConfig:
         :type sis_region: int
         :param sis_project_id: SIS所在区域的projectId
         :type sis_project_id: str
+        :param enable_hot_words: 是否开启热词
+        :type enable_hot_words: bool
         """
         
         
@@ -66,6 +70,7 @@ class ThirdPartyModelConfig:
         self._chat_rounds = None
         self._sis_region = None
         self._sis_project_id = None
+        self._enable_hot_words = None
         self.discriminator = None
 
         if app_id is not None:
@@ -82,6 +87,8 @@ class ThirdPartyModelConfig:
             self.sis_region = sis_region
         if sis_project_id is not None:
             self.sis_project_id = sis_project_id
+        if enable_hot_words is not None:
+            self.enable_hot_words = enable_hot_words
 
     @property
     def app_id(self):
@@ -236,6 +243,28 @@ class ThirdPartyModelConfig:
         :type sis_project_id: str
         """
         self._sis_project_id = sis_project_id
+
+    @property
+    def enable_hot_words(self):
+        """Gets the enable_hot_words of this ThirdPartyModelConfig.
+
+        是否开启热词
+
+        :return: The enable_hot_words of this ThirdPartyModelConfig.
+        :rtype: bool
+        """
+        return self._enable_hot_words
+
+    @enable_hot_words.setter
+    def enable_hot_words(self, enable_hot_words):
+        """Sets the enable_hot_words of this ThirdPartyModelConfig.
+
+        是否开启热词
+
+        :param enable_hot_words: The enable_hot_words of this ThirdPartyModelConfig.
+        :type enable_hot_words: bool
+        """
+        self._enable_hot_words = enable_hot_words
 
     def to_dict(self):
         """Returns the model properties as a dict"""

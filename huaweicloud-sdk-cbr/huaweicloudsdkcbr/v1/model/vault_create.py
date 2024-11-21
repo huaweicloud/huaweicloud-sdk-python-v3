@@ -31,7 +31,8 @@ class VaultCreate:
         'smn_notify': 'bool',
         'backup_name_prefix': 'str',
         'demand_billing': 'bool',
-        'sys_lock_source_service': 'str'
+        'sys_lock_source_service': 'str',
+        'locked': 'bool'
     }
 
     attribute_map = {
@@ -49,10 +50,11 @@ class VaultCreate:
         'smn_notify': 'smn_notify',
         'backup_name_prefix': 'backup_name_prefix',
         'demand_billing': 'demand_billing',
-        'sys_lock_source_service': 'sys_lock_source_service'
+        'sys_lock_source_service': 'sys_lock_source_service',
+        'locked': 'locked'
     }
 
-    def __init__(self, backup_policy_id=None, billing=None, description=None, name=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, auto_expand=None, threshold=None, smn_notify=None, backup_name_prefix=None, demand_billing=None, sys_lock_source_service=None):
+    def __init__(self, backup_policy_id=None, billing=None, description=None, name=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, auto_expand=None, threshold=None, smn_notify=None, backup_name_prefix=None, demand_billing=None, sys_lock_source_service=None, locked=None):
         """VaultCreate
 
         The model defined in huaweicloud sdk
@@ -87,6 +89,8 @@ class VaultCreate:
         :type demand_billing: bool
         :param sys_lock_source_service: 用于标识SMB服务，您可以设置为SMB或者空
         :type sys_lock_source_service: str
+        :param locked: 用于标识该存储库是否已锁定
+        :type locked: bool
         """
         
         
@@ -106,6 +110,7 @@ class VaultCreate:
         self._backup_name_prefix = None
         self._demand_billing = None
         self._sys_lock_source_service = None
+        self._locked = None
         self.discriminator = None
 
         if backup_policy_id is not None:
@@ -135,6 +140,8 @@ class VaultCreate:
             self.demand_billing = demand_billing
         if sys_lock_source_service is not None:
             self.sys_lock_source_service = sys_lock_source_service
+        if locked is not None:
+            self.locked = locked
 
     @property
     def backup_policy_id(self):
@@ -457,6 +464,28 @@ class VaultCreate:
         :type sys_lock_source_service: str
         """
         self._sys_lock_source_service = sys_lock_source_service
+
+    @property
+    def locked(self):
+        """Gets the locked of this VaultCreate.
+
+        用于标识该存储库是否已锁定
+
+        :return: The locked of this VaultCreate.
+        :rtype: bool
+        """
+        return self._locked
+
+    @locked.setter
+    def locked(self, locked):
+        """Sets the locked of this VaultCreate.
+
+        用于标识该存储库是否已锁定
+
+        :param locked: The locked of this VaultCreate.
+        :type locked: bool
+        """
+        self._locked = locked
 
     def to_dict(self):
         """Returns the model properties as a dict"""

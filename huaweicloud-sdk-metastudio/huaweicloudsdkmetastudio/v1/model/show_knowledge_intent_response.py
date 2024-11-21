@@ -44,7 +44,7 @@ class ShowKnowledgeIntentResponse(SdkResponse):
 
         :param intent_id: 意图ID。
         :type intent_id: str
-        :param name: 你是谁。
+        :param name: 主题。
         :type name: str
         :param identify: 意图标识。
         :type identify: str
@@ -110,7 +110,7 @@ class ShowKnowledgeIntentResponse(SdkResponse):
     def name(self):
         """Gets the name of this ShowKnowledgeIntentResponse.
 
-        你是谁。
+        主题。
 
         :return: The name of this ShowKnowledgeIntentResponse.
         :rtype: str
@@ -121,7 +121,7 @@ class ShowKnowledgeIntentResponse(SdkResponse):
     def name(self, name):
         """Sets the name of this ShowKnowledgeIntentResponse.
 
-        你是谁。
+        主题。
 
         :param name: The name of this ShowKnowledgeIntentResponse.
         :type name: str

@@ -20,17 +20,19 @@ class ListWelcomeSpeechRequest:
         'x_app_user_id': 'str',
         'offset': 'int',
         'limit': 'int',
-        'robot_id': 'str'
+        'robot_id': 'str',
+        'language': 'str'
     }
 
     attribute_map = {
         'x_app_user_id': 'X-App-UserId',
         'offset': 'offset',
         'limit': 'limit',
-        'robot_id': 'robot_id'
+        'robot_id': 'robot_id',
+        'language': 'language'
     }
 
-    def __init__(self, x_app_user_id=None, offset=None, limit=None, robot_id=None):
+    def __init__(self, x_app_user_id=None, offset=None, limit=None, robot_id=None, language=None):
         """ListWelcomeSpeechRequest
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class ListWelcomeSpeechRequest:
         :type limit: int
         :param robot_id: 应用ID。
         :type robot_id: str
+        :param language: 智能交互语言  * CN:中文  * EN:英文
+        :type language: str
         """
         
         
@@ -51,6 +55,7 @@ class ListWelcomeSpeechRequest:
         self._offset = None
         self._limit = None
         self._robot_id = None
+        self._language = None
         self.discriminator = None
 
         if x_app_user_id is not None:
@@ -60,6 +65,8 @@ class ListWelcomeSpeechRequest:
         if limit is not None:
             self.limit = limit
         self.robot_id = robot_id
+        if language is not None:
+            self.language = language
 
     @property
     def x_app_user_id(self):
@@ -148,6 +155,28 @@ class ListWelcomeSpeechRequest:
         :type robot_id: str
         """
         self._robot_id = robot_id
+
+    @property
+    def language(self):
+        """Gets the language of this ListWelcomeSpeechRequest.
+
+        智能交互语言  * CN:中文  * EN:英文
+
+        :return: The language of this ListWelcomeSpeechRequest.
+        :rtype: str
+        """
+        return self._language
+
+    @language.setter
+    def language(self, language):
+        """Sets the language of this ListWelcomeSpeechRequest.
+
+        智能交互语言  * CN:中文  * EN:英文
+
+        :param language: The language of this ListWelcomeSpeechRequest.
+        :type language: str
+        """
+        self._language = language
 
     def to_dict(self):
         """Returns the model properties as a dict"""

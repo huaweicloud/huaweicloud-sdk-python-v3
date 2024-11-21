@@ -61,7 +61,7 @@ class VideoTypeRef:
         :type category_id: int
         :param tags: 视频标签。  单个标签不超过16个字节，最多不超过16个标签。  多个用逗号分隔，UTF8编码。
         :type tags: str
-        :param auto_publish: 是否自动发布。  取值如下： - 0：表示不自动发布。 - 1：表示自动发布。  默认值：0。
+        :param auto_publish: 是否自动发布。  取值如下： - 0：表示不自动发布。 - 1：表示自动发布。  默认值：1。
         :type auto_publish: int
         :param template_group_name: 转码模板组名称。  若不为空，则使用指定的转码模板对上传的音视频进行转码，您可以在视频点播控制台配置转码模板，具体请参见[转码设置](https://support.huaweicloud.com/usermanual-vod/vod_01_0072.html)。  &gt; 若同时设置了“**template_group_name**”和“**workflow_name**”字段，则“**template_group_name**”字段生效。
         :type template_group_name: str
@@ -230,7 +230,7 @@ class VideoTypeRef:
     def auto_publish(self):
         """Gets the auto_publish of this VideoTypeRef.
 
-        是否自动发布。  取值如下： - 0：表示不自动发布。 - 1：表示自动发布。  默认值：0。
+        是否自动发布。  取值如下： - 0：表示不自动发布。 - 1：表示自动发布。  默认值：1。
 
         :return: The auto_publish of this VideoTypeRef.
         :rtype: int
@@ -241,7 +241,7 @@ class VideoTypeRef:
     def auto_publish(self, auto_publish):
         """Sets the auto_publish of this VideoTypeRef.
 
-        是否自动发布。  取值如下： - 0：表示不自动发布。 - 1：表示自动发布。  默认值：0。
+        是否自动发布。  取值如下： - 0：表示不自动发布。 - 1：表示自动发布。  默认值：1。
 
         :param auto_publish: The auto_publish of this VideoTypeRef.
         :type auto_publish: int

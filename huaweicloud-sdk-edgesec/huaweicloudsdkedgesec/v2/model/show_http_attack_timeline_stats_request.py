@@ -81,8 +81,7 @@ class ShowHttpAttackTimelineStatsRequest:
         self.group_by = group_by
         if group_by_value is not None:
             self.group_by_value = group_by_value
-        if interval is not None:
-            self.interval = interval
+        self.interval = interval
         self.start_time = start_time
         self.end_time = end_time
 

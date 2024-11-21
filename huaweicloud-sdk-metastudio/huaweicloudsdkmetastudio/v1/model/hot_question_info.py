@@ -19,6 +19,7 @@ class HotQuestionInfo:
     openapi_types = {
         'hot_question_id': 'str',
         'hot_question': 'str',
+        'language': 'LanguageEnum',
         'robot_id': 'str',
         'create_time': 'str',
         'update_time': 'str'
@@ -27,12 +28,13 @@ class HotQuestionInfo:
     attribute_map = {
         'hot_question_id': 'hot_question_id',
         'hot_question': 'hot_question',
+        'language': 'language',
         'robot_id': 'robot_id',
         'create_time': 'create_time',
         'update_time': 'update_time'
     }
 
-    def __init__(self, hot_question_id=None, hot_question=None, robot_id=None, create_time=None, update_time=None):
+    def __init__(self, hot_question_id=None, hot_question=None, language=None, robot_id=None, create_time=None, update_time=None):
         """HotQuestionInfo
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class HotQuestionInfo:
         :type hot_question_id: str
         :param hot_question: 热点问题。
         :type hot_question: str
+        :param language: 
+        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
         :param robot_id: 机器人ID。
         :type robot_id: str
         :param create_time: 创建时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
@@ -53,6 +57,7 @@ class HotQuestionInfo:
 
         self._hot_question_id = None
         self._hot_question = None
+        self._language = None
         self._robot_id = None
         self._create_time = None
         self._update_time = None
@@ -62,6 +67,8 @@ class HotQuestionInfo:
             self.hot_question_id = hot_question_id
         if hot_question is not None:
             self.hot_question = hot_question
+        if language is not None:
+            self.language = language
         if robot_id is not None:
             self.robot_id = robot_id
         if create_time is not None:
@@ -112,6 +119,24 @@ class HotQuestionInfo:
         :type hot_question: str
         """
         self._hot_question = hot_question
+
+    @property
+    def language(self):
+        """Gets the language of this HotQuestionInfo.
+
+        :return: The language of this HotQuestionInfo.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        """
+        return self._language
+
+    @language.setter
+    def language(self, language):
+        """Sets the language of this HotQuestionInfo.
+
+        :param language: The language of this HotQuestionInfo.
+        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        """
+        self._language = language
 
     @property
     def robot_id(self):

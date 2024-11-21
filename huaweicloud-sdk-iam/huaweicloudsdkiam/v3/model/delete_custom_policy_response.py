@@ -18,20 +18,51 @@ class DeleteCustomPolicyResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'message': 'str'
     }
 
     attribute_map = {
+        'message': 'message'
     }
 
-    def __init__(self):
+    def __init__(self, message=None):
         """DeleteCustomPolicyResponse
 
         The model defined in huaweicloud sdk
 
+        :param message: 
+        :type message: str
         """
         
         super(DeleteCustomPolicyResponse, self).__init__()
+
+        self._message = None
         self.discriminator = None
+
+        if message is not None:
+            self.message = message
+
+    @property
+    def message(self):
+        """Gets the message of this DeleteCustomPolicyResponse.
+
+        
+
+        :return: The message of this DeleteCustomPolicyResponse.
+        :rtype: str
+        """
+        return self._message
+
+    @message.setter
+    def message(self, message):
+        """Sets the message of this DeleteCustomPolicyResponse.
+
+        
+
+        :param message: The message of this DeleteCustomPolicyResponse.
+        :type message: str
+        """
+        self._message = message
 
     def to_dict(self):
         """Returns the model properties as a dict"""

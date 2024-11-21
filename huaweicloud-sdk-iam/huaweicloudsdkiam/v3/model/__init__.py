@@ -11,12 +11,14 @@ from huaweicloudsdkiam.v3.model.agency_assumedby_user import AgencyAssumedbyUser
 from huaweicloudsdkiam.v3.model.agency_assumedby_user_domain import AgencyAssumedbyUserDomain
 from huaweicloudsdkiam.v3.model.agency_auth import AgencyAuth
 from huaweicloudsdkiam.v3.model.agency_auth_identity import AgencyAuthIdentity
+from huaweicloudsdkiam.v3.model.agency_create_result import AgencyCreateResult
+from huaweicloudsdkiam.v3.model.agency_list_result import AgencyListResult
 from huaweicloudsdkiam.v3.model.agency_policy import AgencyPolicy
 from huaweicloudsdkiam.v3.model.agency_policy_resource import AgencyPolicyResource
 from huaweicloudsdkiam.v3.model.agency_policy_role_option import AgencyPolicyRoleOption
 from huaweicloudsdkiam.v3.model.agency_policy_role_result import AgencyPolicyRoleResult
 from huaweicloudsdkiam.v3.model.agency_policy_statement import AgencyPolicyStatement
-from huaweicloudsdkiam.v3.model.agency_result import AgencyResult
+from huaweicloudsdkiam.v3.model.agency_show_result import AgencyShowResult
 from huaweicloudsdkiam.v3.model.agency_token_assumerole import AgencyTokenAssumerole
 from huaweicloudsdkiam.v3.model.agency_token_auth import AgencyTokenAuth
 from huaweicloudsdkiam.v3.model.agency_token_domain import AgencyTokenDomain
@@ -29,6 +31,7 @@ from huaweicloudsdkiam.v3.model.agency_token_scope_domain import AgencyTokenScop
 from huaweicloudsdkiam.v3.model.agency_token_scope_project import AgencyTokenScopeProject
 from huaweicloudsdkiam.v3.model.agency_token_user import AgencyTokenUser
 from huaweicloudsdkiam.v3.model.agency_token_user_domain import AgencyTokenUserDomain
+from huaweicloudsdkiam.v3.model.agency_update_result import AgencyUpdateResult
 from huaweicloudsdkiam.v3.model.allow_address_netmasks_option import AllowAddressNetmasksOption
 from huaweicloudsdkiam.v3.model.allow_address_netmasks_result import AllowAddressNetmasksResult
 from huaweicloudsdkiam.v3.model.allow_ip_ranges_option import AllowIpRangesOption
@@ -143,6 +146,7 @@ from huaweicloudsdkiam.v3.model.identityprovider_option import IdentityproviderO
 from huaweicloudsdkiam.v3.model.identityproviders_links import IdentityprovidersLinks
 from huaweicloudsdkiam.v3.model.identityproviders_result import IdentityprovidersResult
 from huaweicloudsdkiam.v3.model.idp_id_info import IdpIdInfo
+from huaweicloudsdkiam.v3.model.inherited_role_result import InheritedRoleResult
 from huaweicloudsdkiam.v3.model.keystone_add_user_to_group_request import KeystoneAddUserToGroupRequest
 from huaweicloudsdkiam.v3.model.keystone_add_user_to_group_response import KeystoneAddUserToGroupResponse
 from huaweicloudsdkiam.v3.model.keystone_associate_group_with_domain_permission_request import KeystoneAssociateGroupWithDomainPermissionRequest
@@ -484,6 +488,7 @@ from huaweicloudsdkiam.v3.model.token_user_result import TokenUserResult
 from huaweicloudsdkiam.v3.model.unbind_mfa_device import UnbindMfaDevice
 from huaweicloudsdkiam.v3.model.unscoped_token_info import UnscopedTokenInfo
 from huaweicloudsdkiam.v3.model.unscoped_token_info_catalog import UnscopedTokenInfoCatalog
+from huaweicloudsdkiam.v3.model.unscoped_token_info_catalog_endpoints import UnscopedTokenInfoCatalogEndpoints
 from huaweicloudsdkiam.v3.model.unscoped_token_info_roles import UnscopedTokenInfoRoles
 from huaweicloudsdkiam.v3.model.update_agency_custom_policy_request import UpdateAgencyCustomPolicyRequest
 from huaweicloudsdkiam.v3.model.update_agency_custom_policy_request_body import UpdateAgencyCustomPolicyRequestBody

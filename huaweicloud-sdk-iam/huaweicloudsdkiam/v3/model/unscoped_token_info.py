@@ -22,7 +22,7 @@ class UnscopedTokenInfo:
         'issued_at': 'str',
         'user': 'FederationUserBody',
         'roles': 'list[UnscopedTokenInfoRoles]',
-        'catalog': 'list[UnscopedTokenInfoCatalog]'
+        'catalog': 'UnscopedTokenInfoCatalog'
     }
 
     attribute_map = {
@@ -49,8 +49,8 @@ class UnscopedTokenInfo:
         :type user: :class:`huaweicloudsdkiam.v3.FederationUserBody`
         :param roles: roles信息。
         :type roles: list[:class:`huaweicloudsdkiam.v3.UnscopedTokenInfoRoles`]
-        :param catalog: catalog信息。
-        :type catalog: list[:class:`huaweicloudsdkiam.v3.UnscopedTokenInfoCatalog`]
+        :param catalog: 
+        :type catalog: :class:`huaweicloudsdkiam.v3.UnscopedTokenInfoCatalog`
         """
         
         
@@ -182,10 +182,8 @@ class UnscopedTokenInfo:
     def catalog(self):
         """Gets the catalog of this UnscopedTokenInfo.
 
-        catalog信息。
-
         :return: The catalog of this UnscopedTokenInfo.
-        :rtype: list[:class:`huaweicloudsdkiam.v3.UnscopedTokenInfoCatalog`]
+        :rtype: :class:`huaweicloudsdkiam.v3.UnscopedTokenInfoCatalog`
         """
         return self._catalog
 
@@ -193,10 +191,8 @@ class UnscopedTokenInfo:
     def catalog(self, catalog):
         """Sets the catalog of this UnscopedTokenInfo.
 
-        catalog信息。
-
         :param catalog: The catalog of this UnscopedTokenInfo.
-        :type catalog: list[:class:`huaweicloudsdkiam.v3.UnscopedTokenInfoCatalog`]
+        :type catalog: :class:`huaweicloudsdkiam.v3.UnscopedTokenInfoCatalog`
         """
         self._catalog = catalog
 

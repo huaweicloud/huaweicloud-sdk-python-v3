@@ -18,7 +18,7 @@ class CreateAgencyResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'agency': 'AgencyResult'
+        'agency': 'AgencyCreateResult'
     }
 
     attribute_map = {
@@ -31,7 +31,7 @@ class CreateAgencyResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param agency: 
-        :type agency: :class:`huaweicloudsdkiam.v3.AgencyResult`
+        :type agency: :class:`huaweicloudsdkiam.v3.AgencyCreateResult`
         """
         
         super(CreateAgencyResponse, self).__init__()
@@ -47,7 +47,7 @@ class CreateAgencyResponse(SdkResponse):
         """Gets the agency of this CreateAgencyResponse.
 
         :return: The agency of this CreateAgencyResponse.
-        :rtype: :class:`huaweicloudsdkiam.v3.AgencyResult`
+        :rtype: :class:`huaweicloudsdkiam.v3.AgencyCreateResult`
         """
         return self._agency
 
@@ -56,7 +56,7 @@ class CreateAgencyResponse(SdkResponse):
         """Sets the agency of this CreateAgencyResponse.
 
         :param agency: The agency of this CreateAgencyResponse.
-        :type agency: :class:`huaweicloudsdkiam.v3.AgencyResult`
+        :type agency: :class:`huaweicloudsdkiam.v3.AgencyCreateResult`
         """
         self._agency = agency
 

@@ -40,6 +40,7 @@ class ClusterSpec:
         'support_istio': 'bool',
         'enable_master_volume_encryption': 'bool',
         'enable_dist_mgt': 'bool',
+        'deletion_protection': 'bool',
         'configurations_override': 'list[PackageConfiguration]'
     }
 
@@ -67,10 +68,11 @@ class ClusterSpec:
         'support_istio': 'supportIstio',
         'enable_master_volume_encryption': 'enableMasterVolumeEncryption',
         'enable_dist_mgt': 'enableDistMgt',
+        'deletion_protection': 'deletionProtection',
         'configurations_override': 'configurationsOverride'
     }
 
-    def __init__(self, category=None, type=None, flavor=None, version=None, platform_version=None, description=None, custom_san=None, ipv6enable=None, host_network=None, container_network=None, eni_network=None, service_network=None, authentication=None, billing_mode=None, masters=None, kubernetes_svc_ip_range=None, cluster_tags=None, kube_proxy_mode=None, az=None, extend_param=None, support_istio=None, enable_master_volume_encryption=None, enable_dist_mgt=None, configurations_override=None):
+    def __init__(self, category=None, type=None, flavor=None, version=None, platform_version=None, description=None, custom_san=None, ipv6enable=None, host_network=None, container_network=None, eni_network=None, service_network=None, authentication=None, billing_mode=None, masters=None, kubernetes_svc_ip_range=None, cluster_tags=None, kube_proxy_mode=None, az=None, extend_param=None, support_istio=None, enable_master_volume_encryption=None, enable_dist_mgt=None, deletion_protection=None, configurations_override=None):
         """ClusterSpec
 
         The model defined in huaweicloud sdk
@@ -121,6 +123,8 @@ class ClusterSpec:
         :type enable_master_volume_encryption: bool
         :param enable_dist_mgt: 集群开启对分布式云支持。创建CCE Turbo集群时，可在创建集群过程中，开启对分布式云(cloudpond)支持。
         :type enable_dist_mgt: bool
+        :param deletion_protection: 集群删除保护，默认为false关闭，如果开启后用户将无法删除该集群。
+        :type deletion_protection: bool
         :param configurations_override: 覆盖集群默认组件配置  若指定了不支持的组件或组件不支持的参数，该配置项将被忽略。  当前支持的可配置组件及其参数详见 [[配置管理](https://support.huaweicloud.com/usermanual-cce/cce_10_0213.html)](tag:hws) [[配置管理](https://support.huaweicloud.com/intl/zh-cn/usermanual-cce/cce_10_0213.html)](tag:hws_hk) 
         :type configurations_override: list[:class:`huaweicloudsdkcce.v3.PackageConfiguration`]
         """
@@ -150,6 +154,7 @@ class ClusterSpec:
         self._support_istio = None
         self._enable_master_volume_encryption = None
         self._enable_dist_mgt = None
+        self._deletion_protection = None
         self._configurations_override = None
         self.discriminator = None
 
@@ -196,6 +201,8 @@ class ClusterSpec:
             self.enable_master_volume_encryption = enable_master_volume_encryption
         if enable_dist_mgt is not None:
             self.enable_dist_mgt = enable_dist_mgt
+        if deletion_protection is not None:
+            self.deletion_protection = deletion_protection
         if configurations_override is not None:
             self.configurations_override = configurations_override
 
@@ -680,6 +687,28 @@ class ClusterSpec:
         :type enable_dist_mgt: bool
         """
         self._enable_dist_mgt = enable_dist_mgt
+
+    @property
+    def deletion_protection(self):
+        """Gets the deletion_protection of this ClusterSpec.
+
+        集群删除保护，默认为false关闭，如果开启后用户将无法删除该集群。
+
+        :return: The deletion_protection of this ClusterSpec.
+        :rtype: bool
+        """
+        return self._deletion_protection
+
+    @deletion_protection.setter
+    def deletion_protection(self, deletion_protection):
+        """Sets the deletion_protection of this ClusterSpec.
+
+        集群删除保护，默认为false关闭，如果开启后用户将无法删除该集群。
+
+        :param deletion_protection: The deletion_protection of this ClusterSpec.
+        :type deletion_protection: bool
+        """
+        self._deletion_protection = deletion_protection
 
     @property
     def configurations_override(self):

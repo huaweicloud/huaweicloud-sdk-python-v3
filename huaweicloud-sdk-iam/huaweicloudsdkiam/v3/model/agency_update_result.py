@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class AgencyResult:
+class AgencyUpdateResult:
 
     """
     Attributes:
@@ -23,9 +23,7 @@ class AgencyResult:
         'expire_time': 'str',
         'id': 'str',
         'name': 'str',
-        'trust_domain_id': 'str',
-        'trust_domain_name': 'str',
-        'agency_urn': 'str'
+        'trust_domain_id': 'str'
     }
 
     attribute_map = {
@@ -35,13 +33,11 @@ class AgencyResult:
         'expire_time': 'expire_time',
         'id': 'id',
         'name': 'name',
-        'trust_domain_id': 'trust_domain_id',
-        'trust_domain_name': 'trust_domain_name',
-        'agency_urn': 'agency_urn'
+        'trust_domain_id': 'trust_domain_id'
     }
 
-    def __init__(self, create_time=None, description=None, domain_id=None, expire_time=None, id=None, name=None, trust_domain_id=None, trust_domain_name=None, agency_urn=None):
-        """AgencyResult
+    def __init__(self, create_time=None, description=None, domain_id=None, expire_time=None, id=None, name=None, trust_domain_id=None):
+        """AgencyUpdateResult
 
         The model defined in huaweicloud sdk
 
@@ -59,10 +55,6 @@ class AgencyResult:
         :type name: str
         :param trust_domain_id: 被委托方账号ID。
         :type trust_domain_id: str
-        :param trust_domain_name: 被委托方账号名。
-        :type trust_domain_name: str
-        :param agency_urn: 委托URN。
-        :type agency_urn: str
         """
         
         
@@ -74,8 +66,6 @@ class AgencyResult:
         self._id = None
         self._name = None
         self._trust_domain_id = None
-        self._trust_domain_name = None
-        self._agency_urn = None
         self.discriminator = None
 
         self.create_time = create_time
@@ -87,208 +77,160 @@ class AgencyResult:
         self.name = name
         if trust_domain_id is not None:
             self.trust_domain_id = trust_domain_id
-        if trust_domain_name is not None:
-            self.trust_domain_name = trust_domain_name
-        if agency_urn is not None:
-            self.agency_urn = agency_urn
 
     @property
     def create_time(self):
-        """Gets the create_time of this AgencyResult.
+        """Gets the create_time of this AgencyUpdateResult.
 
         委托创建时间。
 
-        :return: The create_time of this AgencyResult.
+        :return: The create_time of this AgencyUpdateResult.
         :rtype: str
         """
         return self._create_time
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AgencyResult.
+        """Sets the create_time of this AgencyUpdateResult.
 
         委托创建时间。
 
-        :param create_time: The create_time of this AgencyResult.
+        :param create_time: The create_time of this AgencyUpdateResult.
         :type create_time: str
         """
         self._create_time = create_time
 
     @property
     def description(self):
-        """Gets the description of this AgencyResult.
+        """Gets the description of this AgencyUpdateResult.
 
         委托描述信息。
 
-        :return: The description of this AgencyResult.
+        :return: The description of this AgencyUpdateResult.
         :rtype: str
         """
         return self._description
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AgencyResult.
+        """Sets the description of this AgencyUpdateResult.
 
         委托描述信息。
 
-        :param description: The description of this AgencyResult.
+        :param description: The description of this AgencyUpdateResult.
         :type description: str
         """
         self._description = description
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this AgencyResult.
+        """Gets the domain_id of this AgencyUpdateResult.
 
         委托方账号ID。
 
-        :return: The domain_id of this AgencyResult.
+        :return: The domain_id of this AgencyUpdateResult.
         :rtype: str
         """
         return self._domain_id
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this AgencyResult.
+        """Sets the domain_id of this AgencyUpdateResult.
 
         委托方账号ID。
 
-        :param domain_id: The domain_id of this AgencyResult.
+        :param domain_id: The domain_id of this AgencyUpdateResult.
         :type domain_id: str
         """
         self._domain_id = domain_id
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this AgencyResult.
+        """Gets the expire_time of this AgencyUpdateResult.
 
         委托过期时间。“null”表示不过期。
 
-        :return: The expire_time of this AgencyResult.
+        :return: The expire_time of this AgencyUpdateResult.
         :rtype: str
         """
         return self._expire_time
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this AgencyResult.
+        """Sets the expire_time of this AgencyUpdateResult.
 
         委托过期时间。“null”表示不过期。
 
-        :param expire_time: The expire_time of this AgencyResult.
+        :param expire_time: The expire_time of this AgencyUpdateResult.
         :type expire_time: str
         """
         self._expire_time = expire_time
 
     @property
     def id(self):
-        """Gets the id of this AgencyResult.
+        """Gets the id of this AgencyUpdateResult.
 
         委托ID。
 
-        :return: The id of this AgencyResult.
+        :return: The id of this AgencyUpdateResult.
         :rtype: str
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AgencyResult.
+        """Sets the id of this AgencyUpdateResult.
 
         委托ID。
 
-        :param id: The id of this AgencyResult.
+        :param id: The id of this AgencyUpdateResult.
         :type id: str
         """
         self._id = id
 
     @property
     def name(self):
-        """Gets the name of this AgencyResult.
+        """Gets the name of this AgencyUpdateResult.
 
         委托名。
 
-        :return: The name of this AgencyResult.
+        :return: The name of this AgencyUpdateResult.
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AgencyResult.
+        """Sets the name of this AgencyUpdateResult.
 
         委托名。
 
-        :param name: The name of this AgencyResult.
+        :param name: The name of this AgencyUpdateResult.
         :type name: str
         """
         self._name = name
 
     @property
     def trust_domain_id(self):
-        """Gets the trust_domain_id of this AgencyResult.
+        """Gets the trust_domain_id of this AgencyUpdateResult.
 
         被委托方账号ID。
 
-        :return: The trust_domain_id of this AgencyResult.
+        :return: The trust_domain_id of this AgencyUpdateResult.
         :rtype: str
         """
         return self._trust_domain_id
 
     @trust_domain_id.setter
     def trust_domain_id(self, trust_domain_id):
-        """Sets the trust_domain_id of this AgencyResult.
+        """Sets the trust_domain_id of this AgencyUpdateResult.
 
         被委托方账号ID。
 
-        :param trust_domain_id: The trust_domain_id of this AgencyResult.
+        :param trust_domain_id: The trust_domain_id of this AgencyUpdateResult.
         :type trust_domain_id: str
         """
         self._trust_domain_id = trust_domain_id
-
-    @property
-    def trust_domain_name(self):
-        """Gets the trust_domain_name of this AgencyResult.
-
-        被委托方账号名。
-
-        :return: The trust_domain_name of this AgencyResult.
-        :rtype: str
-        """
-        return self._trust_domain_name
-
-    @trust_domain_name.setter
-    def trust_domain_name(self, trust_domain_name):
-        """Sets the trust_domain_name of this AgencyResult.
-
-        被委托方账号名。
-
-        :param trust_domain_name: The trust_domain_name of this AgencyResult.
-        :type trust_domain_name: str
-        """
-        self._trust_domain_name = trust_domain_name
-
-    @property
-    def agency_urn(self):
-        """Gets the agency_urn of this AgencyResult.
-
-        委托URN。
-
-        :return: The agency_urn of this AgencyResult.
-        :rtype: str
-        """
-        return self._agency_urn
-
-    @agency_urn.setter
-    def agency_urn(self, agency_urn):
-        """Sets the agency_urn of this AgencyResult.
-
-        委托URN。
-
-        :param agency_urn: The agency_urn of this AgencyResult.
-        :type agency_urn: str
-        """
-        self._agency_urn = agency_urn
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -332,7 +274,7 @@ class AgencyResult:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AgencyResult):
+        if not isinstance(other, AgencyUpdateResult):
             return False
 
         return self.__dict__ == other.__dict__

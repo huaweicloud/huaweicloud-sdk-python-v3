@@ -21,7 +21,8 @@ class MobvoiConfig:
         'app_secret': 'str',
         'role_id': 'str',
         'sis_region': 'int',
-        'sis_project_id': 'str'
+        'sis_project_id': 'str',
+        'enable_hot_words': 'bool'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class MobvoiConfig:
         'app_secret': 'app_secret',
         'role_id': 'role_id',
         'sis_region': 'sis_region',
-        'sis_project_id': 'sis_project_id'
+        'sis_project_id': 'sis_project_id',
+        'enable_hot_words': 'enable_hot_words'
     }
 
-    def __init__(self, app_key=None, app_secret=None, role_id=None, sis_region=None, sis_project_id=None):
+    def __init__(self, app_key=None, app_secret=None, role_id=None, sis_region=None, sis_project_id=None, enable_hot_words=None):
         """MobvoiConfig
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class MobvoiConfig:
         :type sis_region: int
         :param sis_project_id: SIS所在区域的projectId
         :type sis_project_id: str
+        :param enable_hot_words: 是否开启热词
+        :type enable_hot_words: bool
         """
         
         
@@ -56,6 +60,7 @@ class MobvoiConfig:
         self._role_id = None
         self._sis_region = None
         self._sis_project_id = None
+        self._enable_hot_words = None
         self.discriminator = None
 
         if app_key is not None:
@@ -68,6 +73,8 @@ class MobvoiConfig:
             self.sis_region = sis_region
         if sis_project_id is not None:
             self.sis_project_id = sis_project_id
+        if enable_hot_words is not None:
+            self.enable_hot_words = enable_hot_words
 
     @property
     def app_key(self):
@@ -178,6 +185,28 @@ class MobvoiConfig:
         :type sis_project_id: str
         """
         self._sis_project_id = sis_project_id
+
+    @property
+    def enable_hot_words(self):
+        """Gets the enable_hot_words of this MobvoiConfig.
+
+        是否开启热词
+
+        :return: The enable_hot_words of this MobvoiConfig.
+        :rtype: bool
+        """
+        return self._enable_hot_words
+
+    @enable_hot_words.setter
+    def enable_hot_words(self, enable_hot_words):
+        """Sets the enable_hot_words of this MobvoiConfig.
+
+        是否开启热词
+
+        :param enable_hot_words: The enable_hot_words of this MobvoiConfig.
+        :type enable_hot_words: bool
+        """
+        self._enable_hot_words = enable_hot_words
 
     def to_dict(self):
         """Returns the model properties as a dict"""

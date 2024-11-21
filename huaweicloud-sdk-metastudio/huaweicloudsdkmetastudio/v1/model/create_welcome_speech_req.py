@@ -18,15 +18,17 @@ class CreateWelcomeSpeechReq:
 
     openapi_types = {
         'robot_id': 'str',
-        'welcome_speech': 'str'
+        'welcome_speech': 'str',
+        'language': 'LanguageEnum'
     }
 
     attribute_map = {
         'robot_id': 'robot_id',
-        'welcome_speech': 'welcome_speech'
+        'welcome_speech': 'welcome_speech',
+        'language': 'language'
     }
 
-    def __init__(self, robot_id=None, welcome_speech=None):
+    def __init__(self, robot_id=None, welcome_speech=None, language=None):
         """CreateWelcomeSpeechReq
 
         The model defined in huaweicloud sdk
@@ -35,16 +37,21 @@ class CreateWelcomeSpeechReq:
         :type robot_id: str
         :param welcome_speech: 欢迎词。
         :type welcome_speech: str
+        :param language: 
+        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
         """
         
         
 
         self._robot_id = None
         self._welcome_speech = None
+        self._language = None
         self.discriminator = None
 
         self.robot_id = robot_id
         self.welcome_speech = welcome_speech
+        if language is not None:
+            self.language = language
 
     @property
     def robot_id(self):
@@ -89,6 +96,24 @@ class CreateWelcomeSpeechReq:
         :type welcome_speech: str
         """
         self._welcome_speech = welcome_speech
+
+    @property
+    def language(self):
+        """Gets the language of this CreateWelcomeSpeechReq.
+
+        :return: The language of this CreateWelcomeSpeechReq.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        """
+        return self._language
+
+    @language.setter
+    def language(self, language):
+        """Sets the language of this CreateWelcomeSpeechReq.
+
+        :param language: The language of this CreateWelcomeSpeechReq.
+        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        """
+        self._language = language
 
     def to_dict(self):
         """Returns the model properties as a dict"""

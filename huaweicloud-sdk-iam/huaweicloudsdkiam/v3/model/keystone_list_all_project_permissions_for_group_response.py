@@ -19,17 +19,15 @@ class KeystoneListAllProjectPermissionsForGroupResponse(SdkResponse):
 
     openapi_types = {
         'links': 'Links',
-        'roles': 'list[RoleResult]',
-        'total_number': 'int'
+        'roles': 'list[InheritedRoleResult]'
     }
 
     attribute_map = {
         'links': 'links',
-        'roles': 'roles',
-        'total_number': 'total_number'
+        'roles': 'roles'
     }
 
-    def __init__(self, links=None, roles=None, total_number=None):
+    def __init__(self, links=None, roles=None):
         """KeystoneListAllProjectPermissionsForGroupResponse
 
         The model defined in huaweicloud sdk
@@ -37,24 +35,19 @@ class KeystoneListAllProjectPermissionsForGroupResponse(SdkResponse):
         :param links: 
         :type links: :class:`huaweicloudsdkiam.v3.Links`
         :param roles: 权限信息列表。
-        :type roles: list[:class:`huaweicloudsdkiam.v3.RoleResult`]
-        :param total_number: 在查询参数存在domain_id时，返回自定义策略总数
-        :type total_number: int
+        :type roles: list[:class:`huaweicloudsdkiam.v3.InheritedRoleResult`]
         """
         
         super(KeystoneListAllProjectPermissionsForGroupResponse, self).__init__()
 
         self._links = None
         self._roles = None
-        self._total_number = None
         self.discriminator = None
 
         if links is not None:
             self.links = links
         if roles is not None:
             self.roles = roles
-        if total_number is not None:
-            self.total_number = total_number
 
     @property
     def links(self):
@@ -81,7 +74,7 @@ class KeystoneListAllProjectPermissionsForGroupResponse(SdkResponse):
         权限信息列表。
 
         :return: The roles of this KeystoneListAllProjectPermissionsForGroupResponse.
-        :rtype: list[:class:`huaweicloudsdkiam.v3.RoleResult`]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.InheritedRoleResult`]
         """
         return self._roles
 
@@ -92,31 +85,9 @@ class KeystoneListAllProjectPermissionsForGroupResponse(SdkResponse):
         权限信息列表。
 
         :param roles: The roles of this KeystoneListAllProjectPermissionsForGroupResponse.
-        :type roles: list[:class:`huaweicloudsdkiam.v3.RoleResult`]
+        :type roles: list[:class:`huaweicloudsdkiam.v3.InheritedRoleResult`]
         """
         self._roles = roles
-
-    @property
-    def total_number(self):
-        """Gets the total_number of this KeystoneListAllProjectPermissionsForGroupResponse.
-
-        在查询参数存在domain_id时，返回自定义策略总数
-
-        :return: The total_number of this KeystoneListAllProjectPermissionsForGroupResponse.
-        :rtype: int
-        """
-        return self._total_number
-
-    @total_number.setter
-    def total_number(self, total_number):
-        """Sets the total_number of this KeystoneListAllProjectPermissionsForGroupResponse.
-
-        在查询参数存在domain_id时，返回自定义策略总数
-
-        :param total_number: The total_number of this KeystoneListAllProjectPermissionsForGroupResponse.
-        :type total_number: int
-        """
-        self._total_number = total_number
 
     def to_dict(self):
         """Returns the model properties as a dict"""

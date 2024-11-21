@@ -18,7 +18,7 @@ class ListNosqlTaskListResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'total_count': 'str',
+        'total_count': 'int',
         'schedules': 'list[ScheduleDetailInfo]'
     }
 
@@ -33,7 +33,7 @@ class ListNosqlTaskListResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param total_count: 记录总数。
-        :type total_count: str
+        :type total_count: int
         :param schedules: 任务详情。
         :type schedules: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ScheduleDetailInfo`]
         """
@@ -56,7 +56,7 @@ class ListNosqlTaskListResponse(SdkResponse):
         记录总数。
 
         :return: The total_count of this ListNosqlTaskListResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._total_count
 
@@ -67,7 +67,7 @@ class ListNosqlTaskListResponse(SdkResponse):
         记录总数。
 
         :param total_count: The total_count of this ListNosqlTaskListResponse.
-        :type total_count: str
+        :type total_count: int
         """
         self._total_count = total_count
 

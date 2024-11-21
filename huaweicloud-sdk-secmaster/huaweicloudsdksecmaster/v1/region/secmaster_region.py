@@ -46,6 +46,10 @@ class SecMasterRegion:
                         "https://secmaster.tr-west-1.myhuaweicloud.com")
     AF_NORTH_1 = Region("af-north-1",
                         "https://secmaster.af-north-1.myhuaweicloud.com")
+    AF_SOUTH_1 = Region("af-south-1",
+                        "https://secmaster.af-south-1.myhuaweicloud.com")
+    LA_SOUTH_2 = Region("la-south-2",
+                        "https://secmaster.la-south-2.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
@@ -68,6 +72,8 @@ class SecMasterRegion:
         "ap-southeast-4": AP_SOUTHEAST_4,
         "tr-west-1": TR_WEST_1,
         "af-north-1": AF_NORTH_1,
+        "af-south-1": AF_SOUTH_1,
+        "la-south-2": LA_SOUTH_2,
     }
 
     @classmethod

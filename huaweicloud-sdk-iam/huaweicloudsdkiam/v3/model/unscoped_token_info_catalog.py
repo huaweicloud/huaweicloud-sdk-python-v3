@@ -18,56 +18,56 @@ class UnscopedTokenInfoCatalog:
 
     openapi_types = {
         'id': 'str',
-        'interface': 'str',
-        'region': 'str',
-        'region_id': 'str',
-        'url': 'str'
+        'name': 'str',
+        'type': 'str',
+        'endpoints': 'list[UnscopedTokenInfoCatalogEndpoints]',
+        'description': 'object'
     }
 
     attribute_map = {
         'id': 'id',
-        'interface': 'interface',
-        'region': 'region',
-        'region_id': 'region_id',
-        'url': 'url'
+        'name': 'name',
+        'type': 'type',
+        'endpoints': 'endpoints',
+        'description': 'description'
     }
 
-    def __init__(self, id=None, interface=None, region=None, region_id=None, url=None):
+    def __init__(self, id=None, name=None, type=None, endpoints=None, description=None):
         """UnscopedTokenInfoCatalog
 
         The model defined in huaweicloud sdk
 
         :param id: 终端节点ID。
         :type id: str
-        :param interface: 接口类型，描述接口在该终端节点的可见性。值为“public”，表示该接口为公开接口。
-        :type interface: str
-        :param region: 终端节点所属区域。
-        :type region: str
-        :param region_id: 终端节点所属区域ID。
-        :type region_id: str
-        :param url: 终端节点的URL。
-        :type url: str
+        :param name: 服务名称。
+        :type name: str
+        :param type: 该接口所属服务。
+        :type type: str
+        :param endpoints: 
+        :type endpoints: list[:class:`huaweicloudsdkiam.v3.UnscopedTokenInfoCatalogEndpoints`]
+        :param description: 
+        :type description: object
         """
         
         
 
         self._id = None
-        self._interface = None
-        self._region = None
-        self._region_id = None
-        self._url = None
+        self._name = None
+        self._type = None
+        self._endpoints = None
+        self._description = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
-        if interface is not None:
-            self.interface = interface
-        if region is not None:
-            self.region = region
-        if region_id is not None:
-            self.region_id = region_id
-        if url is not None:
-            self.url = url
+        if name is not None:
+            self.name = name
+        if type is not None:
+            self.type = type
+        if endpoints is not None:
+            self.endpoints = endpoints
+        if description is not None:
+            self.description = description
 
     @property
     def id(self):
@@ -92,92 +92,84 @@ class UnscopedTokenInfoCatalog:
         self._id = id
 
     @property
-    def interface(self):
-        """Gets the interface of this UnscopedTokenInfoCatalog.
+    def name(self):
+        """Gets the name of this UnscopedTokenInfoCatalog.
 
-        接口类型，描述接口在该终端节点的可见性。值为“public”，表示该接口为公开接口。
+        服务名称。
 
-        :return: The interface of this UnscopedTokenInfoCatalog.
+        :return: The name of this UnscopedTokenInfoCatalog.
         :rtype: str
         """
-        return self._interface
+        return self._name
 
-    @interface.setter
-    def interface(self, interface):
-        """Sets the interface of this UnscopedTokenInfoCatalog.
+    @name.setter
+    def name(self, name):
+        """Sets the name of this UnscopedTokenInfoCatalog.
 
-        接口类型，描述接口在该终端节点的可见性。值为“public”，表示该接口为公开接口。
+        服务名称。
 
-        :param interface: The interface of this UnscopedTokenInfoCatalog.
-        :type interface: str
+        :param name: The name of this UnscopedTokenInfoCatalog.
+        :type name: str
         """
-        self._interface = interface
+        self._name = name
 
     @property
-    def region(self):
-        """Gets the region of this UnscopedTokenInfoCatalog.
+    def type(self):
+        """Gets the type of this UnscopedTokenInfoCatalog.
 
-        终端节点所属区域。
+        该接口所属服务。
 
-        :return: The region of this UnscopedTokenInfoCatalog.
+        :return: The type of this UnscopedTokenInfoCatalog.
         :rtype: str
         """
-        return self._region
+        return self._type
 
-    @region.setter
-    def region(self, region):
-        """Sets the region of this UnscopedTokenInfoCatalog.
+    @type.setter
+    def type(self, type):
+        """Sets the type of this UnscopedTokenInfoCatalog.
 
-        终端节点所属区域。
+        该接口所属服务。
 
-        :param region: The region of this UnscopedTokenInfoCatalog.
-        :type region: str
+        :param type: The type of this UnscopedTokenInfoCatalog.
+        :type type: str
         """
-        self._region = region
+        self._type = type
 
     @property
-    def region_id(self):
-        """Gets the region_id of this UnscopedTokenInfoCatalog.
+    def endpoints(self):
+        """Gets the endpoints of this UnscopedTokenInfoCatalog.
 
-        终端节点所属区域ID。
-
-        :return: The region_id of this UnscopedTokenInfoCatalog.
-        :rtype: str
+        :return: The endpoints of this UnscopedTokenInfoCatalog.
+        :rtype: list[:class:`huaweicloudsdkiam.v3.UnscopedTokenInfoCatalogEndpoints`]
         """
-        return self._region_id
+        return self._endpoints
 
-    @region_id.setter
-    def region_id(self, region_id):
-        """Sets the region_id of this UnscopedTokenInfoCatalog.
+    @endpoints.setter
+    def endpoints(self, endpoints):
+        """Sets the endpoints of this UnscopedTokenInfoCatalog.
 
-        终端节点所属区域ID。
-
-        :param region_id: The region_id of this UnscopedTokenInfoCatalog.
-        :type region_id: str
+        :param endpoints: The endpoints of this UnscopedTokenInfoCatalog.
+        :type endpoints: list[:class:`huaweicloudsdkiam.v3.UnscopedTokenInfoCatalogEndpoints`]
         """
-        self._region_id = region_id
+        self._endpoints = endpoints
 
     @property
-    def url(self):
-        """Gets the url of this UnscopedTokenInfoCatalog.
+    def description(self):
+        """Gets the description of this UnscopedTokenInfoCatalog.
 
-        终端节点的URL。
-
-        :return: The url of this UnscopedTokenInfoCatalog.
-        :rtype: str
+        :return: The description of this UnscopedTokenInfoCatalog.
+        :rtype: object
         """
-        return self._url
+        return self._description
 
-    @url.setter
-    def url(self, url):
-        """Sets the url of this UnscopedTokenInfoCatalog.
+    @description.setter
+    def description(self, description):
+        """Sets the description of this UnscopedTokenInfoCatalog.
 
-        终端节点的URL。
-
-        :param url: The url of this UnscopedTokenInfoCatalog.
-        :type url: str
+        :param description: The description of this UnscopedTokenInfoCatalog.
+        :type description: object
         """
-        self._url = url
+        self._description = description
 
     def to_dict(self):
         """Returns the model properties as a dict"""

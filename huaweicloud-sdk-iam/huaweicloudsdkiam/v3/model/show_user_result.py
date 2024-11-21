@@ -34,7 +34,9 @@ class ShowUserResult:
         'pwd_strength': 'str',
         'is_domain_owner': 'bool',
         'access_mode': 'str',
-        'description': 'str'
+        'description': 'str',
+        'pwd_create_time': 'str',
+        'modify_pwd_time': 'str'
     }
 
     attribute_map = {
@@ -55,10 +57,12 @@ class ShowUserResult:
         'pwd_strength': 'pwd_strength',
         'is_domain_owner': 'is_domain_owner',
         'access_mode': 'access_mode',
-        'description': 'description'
+        'description': 'description',
+        'pwd_create_time': 'pwd_create_time',
+        'modify_pwd_time': 'modify_pwd_time'
     }
 
-    def __init__(self, enabled=None, id=None, domain_id=None, name=None, links=None, xuser_id=None, xuser_type=None, areacode=None, email=None, phone=None, pwd_status=None, update_time=None, create_time=None, last_login_time=None, pwd_strength=None, is_domain_owner=None, access_mode=None, description=None):
+    def __init__(self, enabled=None, id=None, domain_id=None, name=None, links=None, xuser_id=None, xuser_type=None, areacode=None, email=None, phone=None, pwd_status=None, update_time=None, create_time=None, last_login_time=None, pwd_strength=None, is_domain_owner=None, access_mode=None, description=None, pwd_create_time=None, modify_pwd_time=None):
         """ShowUserResult
 
         The model defined in huaweicloud sdk
@@ -99,6 +103,10 @@ class ShowUserResult:
         :type access_mode: str
         :param description: IAM用户描述信息
         :type description: str
+        :param pwd_create_time: IAM用户密码创建更新时间。
+        :type pwd_create_time: str
+        :param modify_pwd_time: IAM用户更新时间。
+        :type modify_pwd_time: str
         """
         
         
@@ -121,6 +129,8 @@ class ShowUserResult:
         self._is_domain_owner = None
         self._access_mode = None
         self._description = None
+        self._pwd_create_time = None
+        self._modify_pwd_time = None
         self.discriminator = None
 
         self.enabled = enabled
@@ -151,6 +161,10 @@ class ShowUserResult:
         self.is_domain_owner = is_domain_owner
         self.access_mode = access_mode
         self.description = description
+        if pwd_create_time is not None:
+            self.pwd_create_time = pwd_create_time
+        if modify_pwd_time is not None:
+            self.modify_pwd_time = modify_pwd_time
 
     @property
     def enabled(self):
@@ -543,6 +557,50 @@ class ShowUserResult:
         :type description: str
         """
         self._description = description
+
+    @property
+    def pwd_create_time(self):
+        """Gets the pwd_create_time of this ShowUserResult.
+
+        IAM用户密码创建更新时间。
+
+        :return: The pwd_create_time of this ShowUserResult.
+        :rtype: str
+        """
+        return self._pwd_create_time
+
+    @pwd_create_time.setter
+    def pwd_create_time(self, pwd_create_time):
+        """Sets the pwd_create_time of this ShowUserResult.
+
+        IAM用户密码创建更新时间。
+
+        :param pwd_create_time: The pwd_create_time of this ShowUserResult.
+        :type pwd_create_time: str
+        """
+        self._pwd_create_time = pwd_create_time
+
+    @property
+    def modify_pwd_time(self):
+        """Gets the modify_pwd_time of this ShowUserResult.
+
+        IAM用户更新时间。
+
+        :return: The modify_pwd_time of this ShowUserResult.
+        :rtype: str
+        """
+        return self._modify_pwd_time
+
+    @modify_pwd_time.setter
+    def modify_pwd_time(self, modify_pwd_time):
+        """Sets the modify_pwd_time of this ShowUserResult.
+
+        IAM用户更新时间。
+
+        :param modify_pwd_time: The modify_pwd_time of this ShowUserResult.
+        :type modify_pwd_time: str
+        """
+        self._modify_pwd_time = modify_pwd_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

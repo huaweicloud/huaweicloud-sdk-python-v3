@@ -18,15 +18,17 @@ class UpdateWelcomeSpeechSwitchReq:
 
     openapi_types = {
         'robot_id': 'str',
-        'enable_welcome_speech': 'bool'
+        'enable_welcome_speech': 'bool',
+        'language': 'LanguageEnum'
     }
 
     attribute_map = {
         'robot_id': 'robot_id',
-        'enable_welcome_speech': 'enable_welcome_speech'
+        'enable_welcome_speech': 'enable_welcome_speech',
+        'language': 'language'
     }
 
-    def __init__(self, robot_id=None, enable_welcome_speech=None):
+    def __init__(self, robot_id=None, enable_welcome_speech=None, language=None):
         """UpdateWelcomeSpeechSwitchReq
 
         The model defined in huaweicloud sdk
@@ -35,16 +37,21 @@ class UpdateWelcomeSpeechSwitchReq:
         :type robot_id: str
         :param enable_welcome_speech: 欢迎词功能开关。
         :type enable_welcome_speech: bool
+        :param language: 
+        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
         """
         
         
 
         self._robot_id = None
         self._enable_welcome_speech = None
+        self._language = None
         self.discriminator = None
 
         self.robot_id = robot_id
         self.enable_welcome_speech = enable_welcome_speech
+        if language is not None:
+            self.language = language
 
     @property
     def robot_id(self):
@@ -89,6 +96,24 @@ class UpdateWelcomeSpeechSwitchReq:
         :type enable_welcome_speech: bool
         """
         self._enable_welcome_speech = enable_welcome_speech
+
+    @property
+    def language(self):
+        """Gets the language of this UpdateWelcomeSpeechSwitchReq.
+
+        :return: The language of this UpdateWelcomeSpeechSwitchReq.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        """
+        return self._language
+
+    @language.setter
+    def language(self, language):
+        """Sets the language of this UpdateWelcomeSpeechSwitchReq.
+
+        :param language: The language of this UpdateWelcomeSpeechSwitchReq.
+        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        """
+        self._language = language
 
     def to_dict(self):
         """Returns the model properties as a dict"""

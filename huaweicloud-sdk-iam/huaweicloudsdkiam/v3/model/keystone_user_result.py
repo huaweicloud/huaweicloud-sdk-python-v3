@@ -27,7 +27,8 @@ class KeystoneUserResult:
         'id': 'str',
         'enabled': 'bool',
         'pwd_strength': 'str',
-        'extra': 'KeystoneUserResultExtra'
+        'extra': 'KeystoneUserResultExtra',
+        'access_mode': 'str'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class KeystoneUserResult:
         'id': 'id',
         'enabled': 'enabled',
         'pwd_strength': 'pwd_strength',
-        'extra': 'extra'
+        'extra': 'extra',
+        'access_mode': 'access_mode'
     }
 
-    def __init__(self, pwd_status=None, domain_id=None, last_project_id=None, name=None, description=None, password_expires_at=None, links=None, id=None, enabled=None, pwd_strength=None, extra=None):
+    def __init__(self, pwd_status=None, domain_id=None, last_project_id=None, name=None, description=None, password_expires_at=None, links=None, id=None, enabled=None, pwd_strength=None, extra=None, access_mode=None):
         """KeystoneUserResult
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class KeystoneUserResult:
         :type pwd_strength: str
         :param extra: 
         :type extra: :class:`huaweicloudsdkiam.v3.KeystoneUserResultExtra`
+        :param access_mode: IAM用户访问方式。 - default：默认访问模式，编程访问和管理控制台访问。 - programmatic：编程访问。 - console：管理控制台访问。
+        :type access_mode: str
         """
         
         
@@ -86,6 +90,7 @@ class KeystoneUserResult:
         self._enabled = None
         self._pwd_strength = None
         self._extra = None
+        self._access_mode = None
         self.discriminator = None
 
         if pwd_status is not None:
@@ -104,6 +109,8 @@ class KeystoneUserResult:
             self.pwd_strength = pwd_strength
         if extra is not None:
             self.extra = extra
+        if access_mode is not None:
+            self.access_mode = access_mode
 
     @property
     def pwd_status(self):
@@ -338,6 +345,28 @@ class KeystoneUserResult:
         :type extra: :class:`huaweicloudsdkiam.v3.KeystoneUserResultExtra`
         """
         self._extra = extra
+
+    @property
+    def access_mode(self):
+        """Gets the access_mode of this KeystoneUserResult.
+
+        IAM用户访问方式。 - default：默认访问模式，编程访问和管理控制台访问。 - programmatic：编程访问。 - console：管理控制台访问。
+
+        :return: The access_mode of this KeystoneUserResult.
+        :rtype: str
+        """
+        return self._access_mode
+
+    @access_mode.setter
+    def access_mode(self, access_mode):
+        """Sets the access_mode of this KeystoneUserResult.
+
+        IAM用户访问方式。 - default：默认访问模式，编程访问和管理控制台访问。 - programmatic：编程访问。 - console：管理控制台访问。
+
+        :param access_mode: The access_mode of this KeystoneUserResult.
+        :type access_mode: str
+        """
+        self._access_mode = access_mode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

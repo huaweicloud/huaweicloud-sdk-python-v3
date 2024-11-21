@@ -2128,7 +2128,7 @@ class IDMEClassicAPIAsyncClient(Client):
     def _create_multi_view_http_info(self, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/rdm_{identifier}_app/publicservices/api/MultiViewModel/create",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{mvModelName}/create",
             "request_type": request.__class__.__name__,
             "response_type": "CreateMultiViewResponse"
             }
@@ -2140,6 +2140,8 @@ class IDMEClassicAPIAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'mv_model_name' in local_var_params:
+            path_params['mvModelName'] = local_var_params['mv_model_name']
         if 'identifier' in local_var_params:
             path_params['identifier'] = local_var_params['identifier']
 
@@ -2402,7 +2404,7 @@ class IDMEClassicAPIAsyncClient(Client):
     def _delete_by_condition_multi_view_http_info(self, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/rdm_{identifier}_app/publicservices/api/MultiViewModel/deleteByCondition",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{mvModelName}/deleteByCondition",
             "request_type": request.__class__.__name__,
             "response_type": "DeleteByConditionMultiViewResponse"
             }
@@ -2414,6 +2416,8 @@ class IDMEClassicAPIAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'mv_model_name' in local_var_params:
+            path_params['mvModelName'] = local_var_params['mv_model_name']
         if 'identifier' in local_var_params:
             path_params['identifier'] = local_var_params['identifier']
 
@@ -2694,6 +2698,75 @@ class IDMEClassicAPIAsyncClient(Client):
             path_params['identifier'] = local_var_params['identifier']
         if 'model_name' in local_var_params:
             path_params['modelName'] = local_var_params['model_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_multi_view_async(self, request):
+        """删除模型
+
+        删除多视图对象。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteMultiView
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.DeleteMultiViewRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.DeleteMultiViewResponse`
+        """
+        http_info = self._delete_multi_view_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_multi_view_async_invoker(self, request):
+        http_info = self._delete_multi_view_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_multi_view_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{mvModelName}/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteMultiViewResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'mv_model_name' in local_var_params:
+            path_params['mvModelName'] = local_var_params['mv_model_name']
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
 
         query_params = []
 
@@ -4084,7 +4157,7 @@ class IDMEClassicAPIAsyncClient(Client):
         """刷新树形节点
 
         调用该接口刷新指定数据实例对应的节点全路径。在调用该接口前请确保数据模型具有“树形结构”功能。
-        调用该接口时，如果未指定数据实例或指定的数据实例为父节点，则刷新整颗树的所有节点全路径。
+        调用该接口时，如果未指定数据实例或指定的数据实例为父节点，则刷新整棵树的所有节点全路径。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

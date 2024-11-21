@@ -15,31 +15,61 @@ class CreateVolumeRequest:
                             and the value is json key in definition.
     """
     sensitive_list = []
+    sensitive_list.append('x_client_token')
 
     openapi_types = {
+        'x_client_token': 'str',
         'body': 'CreateVolumeRequestBody'
     }
 
     attribute_map = {
+        'x_client_token': 'X-Client-Token',
         'body': 'body'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, x_client_token=None, body=None):
         """CreateVolumeRequest
 
         The model defined in huaweicloud sdk
 
+        :param x_client_token: 请求的幂等标识。
+        :type x_client_token: str
         :param body: Body of the CreateVolumeRequest
         :type body: :class:`huaweicloudsdkevs.v2.CreateVolumeRequestBody`
         """
         
         
 
+        self._x_client_token = None
         self._body = None
         self.discriminator = None
 
+        if x_client_token is not None:
+            self.x_client_token = x_client_token
         if body is not None:
             self.body = body
+
+    @property
+    def x_client_token(self):
+        """Gets the x_client_token of this CreateVolumeRequest.
+
+        请求的幂等标识。
+
+        :return: The x_client_token of this CreateVolumeRequest.
+        :rtype: str
+        """
+        return self._x_client_token
+
+    @x_client_token.setter
+    def x_client_token(self, x_client_token):
+        """Sets the x_client_token of this CreateVolumeRequest.
+
+        请求的幂等标识。
+
+        :param x_client_token: The x_client_token of this CreateVolumeRequest.
+        :type x_client_token: str
+        """
+        self._x_client_token = x_client_token
 
     @property
     def body(self):

@@ -11,6 +11,8 @@ class LanguageEnum:
     """
     ZH_CN = "zh_CN"
     EN_US = "en_US"
+    CN = "CN"
+    EN = "EN"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

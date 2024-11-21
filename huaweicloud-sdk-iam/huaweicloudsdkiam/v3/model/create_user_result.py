@@ -34,7 +34,8 @@ class CreateUserResult:
         'xdomain_id': 'str',
         'xdomain_type': 'str',
         'id': 'str',
-        'password_expires_at': 'str'
+        'password_expires_at': 'str',
+        'default_project_id': 'str'
     }
 
     attribute_map = {
@@ -55,10 +56,11 @@ class CreateUserResult:
         'xdomain_id': 'xdomain_id',
         'xdomain_type': 'xdomain_type',
         'id': 'id',
-        'password_expires_at': 'password_expires_at'
+        'password_expires_at': 'password_expires_at',
+        'default_project_id': 'default_project_id'
     }
 
-    def __init__(self, access_mode=None, status=None, pwd_status=None, xuser_id=None, xuser_type=None, description=None, name=None, phone=None, is_domain_owner=None, domain_id=None, enabled=None, areacode=None, email=None, create_time=None, xdomain_id=None, xdomain_type=None, id=None, password_expires_at=None):
+    def __init__(self, access_mode=None, status=None, pwd_status=None, xuser_id=None, xuser_type=None, description=None, name=None, phone=None, is_domain_owner=None, domain_id=None, enabled=None, areacode=None, email=None, create_time=None, xdomain_id=None, xdomain_type=None, id=None, password_expires_at=None, default_project_id=None):
         """CreateUserResult
 
         The model defined in huaweicloud sdk
@@ -99,6 +101,8 @@ class CreateUserResult:
         :type id: str
         :param password_expires_at: 密码过期时间（UTC时间），“null”表示密码不过期。
         :type password_expires_at: str
+        :param default_project_id: 用户默认的项目ID。
+        :type default_project_id: str
         """
         
         
@@ -121,6 +125,7 @@ class CreateUserResult:
         self._xdomain_type = None
         self._id = None
         self._password_expires_at = None
+        self._default_project_id = None
         self.discriminator = None
 
         if access_mode is not None:
@@ -155,6 +160,8 @@ class CreateUserResult:
         self.id = id
         if password_expires_at is not None:
             self.password_expires_at = password_expires_at
+        if default_project_id is not None:
+            self.default_project_id = default_project_id
 
     @property
     def access_mode(self):
@@ -551,6 +558,28 @@ class CreateUserResult:
         :type password_expires_at: str
         """
         self._password_expires_at = password_expires_at
+
+    @property
+    def default_project_id(self):
+        """Gets the default_project_id of this CreateUserResult.
+
+        用户默认的项目ID。
+
+        :return: The default_project_id of this CreateUserResult.
+        :rtype: str
+        """
+        return self._default_project_id
+
+    @default_project_id.setter
+    def default_project_id(self, default_project_id):
+        """Sets the default_project_id of this CreateUserResult.
+
+        用户默认的项目ID。
+
+        :param default_project_id: The default_project_id of this CreateUserResult.
+        :type default_project_id: str
+        """
+        self._default_project_id = default_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -17,29 +17,36 @@ class UpdateWelcomeSpeechReq:
     sensitive_list = []
 
     openapi_types = {
-        'welcome_speech': 'str'
+        'welcome_speech': 'str',
+        'enable_welcome_speech': 'bool'
     }
 
     attribute_map = {
-        'welcome_speech': 'welcome_speech'
+        'welcome_speech': 'welcome_speech',
+        'enable_welcome_speech': 'enable_welcome_speech'
     }
 
-    def __init__(self, welcome_speech=None):
+    def __init__(self, welcome_speech=None, enable_welcome_speech=None):
         """UpdateWelcomeSpeechReq
 
         The model defined in huaweicloud sdk
 
         :param welcome_speech: 欢迎词。
         :type welcome_speech: str
+        :param enable_welcome_speech: 欢迎词功能开关。
+        :type enable_welcome_speech: bool
         """
         
         
 
         self._welcome_speech = None
+        self._enable_welcome_speech = None
         self.discriminator = None
 
         if welcome_speech is not None:
             self.welcome_speech = welcome_speech
+        if enable_welcome_speech is not None:
+            self.enable_welcome_speech = enable_welcome_speech
 
     @property
     def welcome_speech(self):
@@ -62,6 +69,28 @@ class UpdateWelcomeSpeechReq:
         :type welcome_speech: str
         """
         self._welcome_speech = welcome_speech
+
+    @property
+    def enable_welcome_speech(self):
+        """Gets the enable_welcome_speech of this UpdateWelcomeSpeechReq.
+
+        欢迎词功能开关。
+
+        :return: The enable_welcome_speech of this UpdateWelcomeSpeechReq.
+        :rtype: bool
+        """
+        return self._enable_welcome_speech
+
+    @enable_welcome_speech.setter
+    def enable_welcome_speech(self, enable_welcome_speech):
+        """Sets the enable_welcome_speech of this UpdateWelcomeSpeechReq.
+
+        欢迎词功能开关。
+
+        :param enable_welcome_speech: The enable_welcome_speech of this UpdateWelcomeSpeechReq.
+        :type enable_welcome_speech: bool
+        """
+        self._enable_welcome_speech = enable_welcome_speech
 
     def to_dict(self):
         """Returns the model properties as a dict"""

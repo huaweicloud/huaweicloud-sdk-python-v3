@@ -75,7 +75,7 @@ class QueryRequestVo:
         :type order_by_table_alias: str
         :param public_data: **参数解释：**  多租查询参数。  **约束限制：**  不涉及。  **取值范围：**  - EXCLUDE_PUBLIC_DATA：不包括公共数据。 - INCLUDE_PUBLIC_DATA：包括公共数据。 - ONLY_NEED_PUBLIC_DATA：只有公共数据。  **默认取值：**  不涉及。 
         :type public_data: str
-        :param sort: **参数解释：**  排序方向。  **约束限制：**  不涉及。  **取值范围：**  - ASC：表示升序。 - DESC：表示降序。 不涉及。  **默认取值：**  ASC。 
+        :param sort: **参数解释：**  排序方向。  **约束限制：**  不涉及。  **取值范围：**  - ASC：表示升序。 - DESC：表示降序。  **默认取值：**  ASC。 
         :type sort: str
         :param sorts: **参数解释：**  排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type sorts: list[:class:`huaweicloudsdkidmeclassicapi.v1.SortInfoVo`]
@@ -363,7 +363,7 @@ class QueryRequestVo:
     def sort(self):
         """Gets the sort of this QueryRequestVo.
 
-        **参数解释：**  排序方向。  **约束限制：**  不涉及。  **取值范围：**  - ASC：表示升序。 - DESC：表示降序。 不涉及。  **默认取值：**  ASC。 
+        **参数解释：**  排序方向。  **约束限制：**  不涉及。  **取值范围：**  - ASC：表示升序。 - DESC：表示降序。  **默认取值：**  ASC。 
 
         :return: The sort of this QueryRequestVo.
         :rtype: str
@@ -374,7 +374,7 @@ class QueryRequestVo:
     def sort(self, sort):
         """Sets the sort of this QueryRequestVo.
 
-        **参数解释：**  排序方向。  **约束限制：**  不涉及。  **取值范围：**  - ASC：表示升序。 - DESC：表示降序。 不涉及。  **默认取值：**  ASC。 
+        **参数解释：**  排序方向。  **约束限制：**  不涉及。  **取值范围：**  - ASC：表示升序。 - DESC：表示降序。  **默认取值：**  ASC。 
 
         :param sort: The sort of this QueryRequestVo.
         :type sort: str

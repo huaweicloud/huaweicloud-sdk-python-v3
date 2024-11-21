@@ -21,6 +21,7 @@ class VoiceModelAssetMeta:
         'model_type': 'str',
         'sex': 'str',
         'language': 'str',
+        'languages': 'list[Language]',
         'speed_ratio': 'float',
         'volume_ratio': 'float',
         'is_realtime_voice': 'bool',
@@ -36,6 +37,7 @@ class VoiceModelAssetMeta:
         'model_type': 'model_type',
         'sex': 'sex',
         'language': 'language',
+        'languages': 'languages',
         'speed_ratio': 'speed_ratio',
         'volume_ratio': 'volume_ratio',
         'is_realtime_voice': 'is_realtime_voice',
@@ -46,7 +48,7 @@ class VoiceModelAssetMeta:
         'is_flexus': 'is_flexus'
     }
 
-    def __init__(self, order=None, model_type=None, sex=None, language=None, speed_ratio=None, volume_ratio=None, is_realtime_voice=None, style=None, voice_capability=None, external_voice_meta=None, is_support_vc_process=None, is_flexus=None):
+    def __init__(self, order=None, model_type=None, sex=None, language=None, languages=None, speed_ratio=None, volume_ratio=None, is_realtime_voice=None, style=None, voice_capability=None, external_voice_meta=None, is_support_vc_process=None, is_flexus=None):
         """VoiceModelAssetMeta
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class VoiceModelAssetMeta:
         :type sex: str
         :param language: **参数解释**： 声音语言。 **约束限制**： 不涉及。 **取值范围**： * UNKNOW：未知 * CN：中文 * EN：英文 * GER：德语 * fr：法语 * Kr：韩语 * por：葡萄牙语 * JPN：日语 * Ita：意大利语 * ESP：西班牙语 * DBH：东北话 * GT：港台 * GXH：广西话 * HBH：湖北话 * SXH：陕西话 * SCH：四川话 * YY：粤语 * Russian: 俄罗斯语 * Filipino: 菲律宾语 * Dutch: 荷兰语 * Indonesian: 印尼语 * Vietnamese: 越南语 * Arabic: 阿拉伯语 * Turkish: 土耳其语 * Malay: 马来语 * Thai: 泰语 * Finnish: 芬兰语
         :type language: str
+        :param languages: 
+        :type languages: list[:class:`huaweicloudsdkmetastudio.v1.Language`]
         :param speed_ratio: **参数解释**： 语速缩放比例。 **约束限制**： 不涉及
         :type speed_ratio: float
         :param volume_ratio: **参数解释**： 音量缩放比例。 **约束限制**： 不涉及
@@ -83,6 +87,7 @@ class VoiceModelAssetMeta:
         self._model_type = None
         self._sex = None
         self._language = None
+        self._languages = None
         self._speed_ratio = None
         self._volume_ratio = None
         self._is_realtime_voice = None
@@ -101,6 +106,8 @@ class VoiceModelAssetMeta:
             self.sex = sex
         if language is not None:
             self.language = language
+        if languages is not None:
+            self.languages = languages
         if speed_ratio is not None:
             self.speed_ratio = speed_ratio
         if volume_ratio is not None:
@@ -205,6 +212,24 @@ class VoiceModelAssetMeta:
         :type language: str
         """
         self._language = language
+
+    @property
+    def languages(self):
+        """Gets the languages of this VoiceModelAssetMeta.
+
+        :return: The languages of this VoiceModelAssetMeta.
+        :rtype: list[:class:`huaweicloudsdkmetastudio.v1.Language`]
+        """
+        return self._languages
+
+    @languages.setter
+    def languages(self, languages):
+        """Sets the languages of this VoiceModelAssetMeta.
+
+        :param languages: The languages of this VoiceModelAssetMeta.
+        :type languages: list[:class:`huaweicloudsdkmetastudio.v1.Language`]
+        """
+        self._languages = languages
 
     @property
     def speed_ratio(self):

@@ -18,17 +18,15 @@ class RulesLocal:
 
     openapi_types = {
         'user': 'RulesLocalUser',
-        'group': 'RulesLocalGroup',
-        'groups': 'str'
+        'group': 'RulesLocalGroup'
     }
 
     attribute_map = {
         'user': 'user',
-        'group': 'group',
-        'groups': 'groups'
+        'group': 'group'
     }
 
-    def __init__(self, user=None, group=None, groups=None):
+    def __init__(self, user=None, group=None):
         """RulesLocal
 
         The model defined in huaweicloud sdk
@@ -37,23 +35,18 @@ class RulesLocal:
         :type user: :class:`huaweicloudsdkiam.v3.RulesLocalUser`
         :param group: 
         :type group: :class:`huaweicloudsdkiam.v3.RulesLocalGroup`
-        :param groups: 联邦用户在本系统中所属用户组列表
-        :type groups: str
         """
         
         
 
         self._user = None
         self._group = None
-        self._groups = None
         self.discriminator = None
 
         if user is not None:
             self.user = user
         if group is not None:
             self.group = group
-        if groups is not None:
-            self.groups = groups
 
     @property
     def user(self):
@@ -90,28 +83,6 @@ class RulesLocal:
         :type group: :class:`huaweicloudsdkiam.v3.RulesLocalGroup`
         """
         self._group = group
-
-    @property
-    def groups(self):
-        """Gets the groups of this RulesLocal.
-
-        联邦用户在本系统中所属用户组列表
-
-        :return: The groups of this RulesLocal.
-        :rtype: str
-        """
-        return self._groups
-
-    @groups.setter
-    def groups(self, groups):
-        """Sets the groups of this RulesLocal.
-
-        联邦用户在本系统中所属用户组列表
-
-        :param groups: The groups of this RulesLocal.
-        :type groups: str
-        """
-        self._groups = groups
 
     def to_dict(self):
         """Returns the model properties as a dict"""

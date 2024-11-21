@@ -1,3 +1,372 @@
+# 3.1.123 2024-11-21
+
+### HuaweiCloud SDK AOM
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **PushEvents**
+    - 请求参数变更
+      - `+ enterprise-project-id`
+      - `- x-enterprise-prject-id`
+  - **ListPromInstance**
+    - 请求参数变更
+      - `* Enterprise-Project-Id: optional -> required`
+
+### HuaweiCloud SDK CloudRTC
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`ShowUrlAuth`、`UpdateUrlAuth`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`ListWorkspacesForUser`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **DebugDataconnection**
+    - 请求参数变更
+      - `+ supportService`
+  - **CreateConnections**
+    - 请求参数变更
+      - `+ data_source_vos.supportService`
+  - **UpdateDataconnection**
+    - 请求参数变更
+      - `+ data_source_vos.supportService`
+
+### HuaweiCloud SDK DDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `ValidateConfigurationName`
+    - `ShowInstanceConfigurationModifyHistory`
+    - `SetAutoEnlargePolicies`
+    - `BatchDeleteBackup`
+    - `ShowAutoEnlargePolicy`
+    - `ListScheduledTasks`
+    - `CancelScheduledTask`
+    - `BatchUpgradeDatabaseVersion`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DWS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`StartCluster`、`StopCluster`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK EVS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`ChangeVolumeChargeMode`、`UnsubscribePostpaidVolume`
+  - **RetypeVolume**
+    - 请求参数变更
+      - `+ os-retype.iops`
+      - `+ os-retype.throughput`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowFunctionTrigger**
+    - 响应参数变更
+      - `+ event_data.Key_encode`
+      - `+ event_data.agency`
+      - `+ event_data.channel_name`
+      - `+ event_data.channel_id`
+      - `+ event_data.source_name`
+      - `+ event_data.created_time`
+      - `+ event_data.status`
+      - `+ event_data.trigger_name`
+      - `+ event_data.event_types`
+  - **UpdateTrigger**
+    - 响应参数变更
+      - `+ event_data.Key_encode`
+      - `+ event_data.agency`
+      - `+ event_data.channel_name`
+      - `+ event_data.channel_id`
+      - `+ event_data.source_name`
+      - `+ event_data.created_time`
+      - `+ event_data.status`
+      - `+ event_data.trigger_name`
+      - `+ event_data.event_types`
+  - **CreateFunctionTrigger**
+    - 请求参数变更
+      - `+ event_data.channel_id`
+      - `+ event_data.event_types`
+      - `+ event_data.status: enum value [ACTIVE,DISABLE]`
+    - 响应参数变更
+      - `+ event_data.Key_encode`
+      - `+ event_data.agency`
+      - `+ event_data.channel_name`
+      - `+ event_data.channel_id`
+      - `+ event_data.source_name`
+      - `+ event_data.created_time`
+      - `+ event_data.status`
+      - `+ event_data.trigger_name`
+      - `+ event_data.event_types`
+  - **ListFunctionTriggers**
+    - 响应参数变更
+      - `+ event_data.Key_encode`
+      - `+ event_data.agency`
+      - `+ event_data.channel_name`
+      - `+ event_data.channel_id`
+      - `+ event_data.source_name`
+      - `+ event_data.created_time`
+      - `+ event_data.status`
+      - `+ event_data.trigger_name`
+      - `+ event_data.event_types`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `ShowBackupPolicies`
+    - `ApplyConfigurationToInstances`
+    - `UpdateInstanceConfigurations`
+    - `CreateDbCacheMapping`
+    - `DeleteDbCacheMapping`
+    - `UpdateDbCacheRule`
+    - `CreateDbCacheRule`
+    - `DeleteDbCacheRule`
+    - `ListDbCacheMappings`
+    - `ListDbCacheRules`
+    - `ShowSecondLevelMonitoringStatus`
+    - `SwitchSecondLevelMonitoring`
+    - `SetInstanceDataDump`
+    - `ListInstanceMaintenanceWindow`
+    - `ModifyInstanceMaintenanceWindow`
+    - `ListNosqlTaskList`
+    - `CancelInstanceScheduleWindow`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateLimitTask**
+    - 响应参数变更
+      - `+ job_id`
+      - `- jobId`
+      - `* key_words: list<string> -> string`
+  - **UpdateLimitTask**
+    - 响应参数变更
+      - `+ job_id`
+      - `- jobId`
+
+### HuaweiCloud SDK HSS
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListApps**
+    - 请求参数变更
+      - `* host_id: required -> optional`
+
+### HuaweiCloud SDK Meeting
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`CheckCallNumberInConf`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK MetaStudio
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`CreateBeautyPreviewJob`、`ShowBeautyPreviewJob`、`StartBeautyPreviewJob`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **List2dModelTrainingJob**
+    - 响应参数变更
+      - `+ jobs.is_only_human_model`
+      - `+ jobs.state: enum value [WAIT_ASSET_SYNC]`
+  - **Create2dModelTrainingJob**
+    - 请求参数变更
+      - `+ beauty_level`
+      - `+ is_only_human_model`
+    - 响应参数变更
+      - `+ post_beauty_image_upload_url`
+      - `+ pre_beauty_image_upload_url`
+  - **Update2dModelTrainingJob**
+    - 请求参数变更
+      - `+ beauty_level`
+      - `+ samples_basic_info.recommended_value`
+    - 响应参数变更
+      - `+ post_beauty_image_upload_url`
+      - `+ pre_beauty_image_upload_url`
+  - **Show2dModelTrainingJob**
+    - 响应参数变更
+      - `+ allocated_resource`
+      - `+ pre_beauty_image_download_url`
+      - `+ post_beauty_image_download_url`
+      - `+ inference_data_process_chat_action_mark_info`
+      - `+ is_only_human_model`
+      - `+ traning_video_mark_info`
+      - `+ beauty_level`
+      - `+ state: enum value [WAIT_ASSET_SYNC]`
+      - `+ samples.recommended_value`
+      - `+ inference_data_process_video_mark_info.chat_video_start_time`
+      - `+ inference_data_process_video_mark_info.chat_video_end_time`
+  - **ShowAsset**
+    - 响应参数变更
+      - `* asset_extra_meta.image_meta.size: number -> integer`
+  - **UpdateDigitalAsset**
+    - 请求参数变更
+      - `* asset_extra_meta.image_meta.size: number -> integer`
+    - 响应参数变更
+      - `* asset_extra_meta.image_meta.size: number -> integer`
+  - **CreateDigitalAsset**
+    - 请求参数变更
+      - `* asset_extra_meta.image_meta.size: number -> integer`
+  - **ListAssets**
+    - 响应参数变更
+      - `* assets.asset_extra_meta.image_meta.size: number -> integer`
+
+### HuaweiCloud SDK SFSTurbo
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`UpdateObsTargetAttributes`、`UpdateObsTargetPolicy`、`DeleteHpcCacheTask`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateHpcCacheTask**
+    - 请求参数变更
+      - `+ attributes`
+  - **ShowHpcCacheTask**
+    - 响应参数变更
+      - `+ status: enum value [SUCCESS,DOING,FAIL]`
+  - **ShowLdapConfig**
+    - 响应参数变更
+      - `+ schema`
+      - `+ search_timeout`
+      - `+ backup_url`
+      - `+ allow_local_user`
+  - **UpdateLdapConfig**
+    - 请求参数变更
+      - `+ backup_url`
+      - `+ schema`
+      - `+ search_timeout`
+      - `+ allow_local_user`
+  - **CreateLdapConfig**
+    - 请求参数变更
+      - `+ backup_url`
+      - `+ schema`
+      - `+ search_timeout`
+      - `+ allow_local_user`
+  - **ShowShare**
+    - 响应参数变更
+      - `+ optional_endpoint`
+      - `+ statusDetail`
+      - `+ features`
+      - `+ instanceId`
+      - `+ instanceType`
+      - `+ hpc_bw`
+  - **ListSharedTags**
+    - 请求参数变更
+      - `+ limit`
+      - `+ offset`
+  - **ListHpcCacheTasks**
+    - 请求参数变更
+      - `+ start_time`
+      - `+ end_time`
+    - 响应参数变更
+      - `+ tasks.status: enum value [SUCCESS,DOING,FAIL]`
+  - **ShowBackendTargetInfo**
+    - 响应参数变更
+      - `+ obs.policy`
+      - `+ obs.attributes`
+  - **ListPermRules**
+    - 请求参数变更
+      - `+ limit`
+      - `+ offset`
+  - **ShowJobDetail**
+    - 响应参数变更
+      - `+ status: enum value [success,failed,waiting,running]`
+  - **ListShares**
+    - 响应参数变更
+      - `+ optional_endpoint`
+      - `+ statusDetail`
+      - `+ features`
+      - `+ instanceId`
+      - `+ instanceType`
+      - `+ hpc_bw`
+      - `+ shares.optional_endpoint`
+      - `+ shares.hpc_bw`
+      - `+ shares.instanceId`
+      - `+ shares.instanceType`
+      - `+ shares.statusDetail`
+      - `+ shares.features`
+  - **CreateBackendTarget**
+    - 请求参数变更
+      - `+ obs.policy`
+      - `+ obs.attributes`
+    - 响应参数变更
+      - `+ obs.policy`
+      - `+ obs.attributes`
+  - **ListBackendTargets**
+    - 响应参数变更
+      - `+ targets.obs.policy`
+      - `+ targets.obs.attributes`
+  - **SetHpcCacheBackend**
+    - 请求参数变更
+      - `- update_hpc_cache.data.obs`
+
 # 3.1.122 2024-11-14
 
 ### HuaweiCloud SDK AOM

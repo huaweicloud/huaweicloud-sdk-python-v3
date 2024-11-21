@@ -18,7 +18,7 @@ class ListAgenciesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'agencies': 'list[AgencyResult]'
+        'agencies': 'list[AgencyListResult]'
     }
 
     attribute_map = {
@@ -31,7 +31,7 @@ class ListAgenciesResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param agencies: 委托信息列表。
-        :type agencies: list[:class:`huaweicloudsdkiam.v3.AgencyResult`]
+        :type agencies: list[:class:`huaweicloudsdkiam.v3.AgencyListResult`]
         """
         
         super(ListAgenciesResponse, self).__init__()
@@ -49,7 +49,7 @@ class ListAgenciesResponse(SdkResponse):
         委托信息列表。
 
         :return: The agencies of this ListAgenciesResponse.
-        :rtype: list[:class:`huaweicloudsdkiam.v3.AgencyResult`]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.AgencyListResult`]
         """
         return self._agencies
 
@@ -60,7 +60,7 @@ class ListAgenciesResponse(SdkResponse):
         委托信息列表。
 
         :param agencies: The agencies of this ListAgenciesResponse.
-        :type agencies: list[:class:`huaweicloudsdkiam.v3.AgencyResult`]
+        :type agencies: list[:class:`huaweicloudsdkiam.v3.AgencyListResult`]
         """
         self._agencies = agencies
 

@@ -21,7 +21,8 @@ class ClusterInformationSpec:
         'custom_san': 'list[str]',
         'container_network': 'ContainerNetworkUpdate',
         'eni_network': 'EniNetworkUpdate',
-        'host_network': 'ClusterInformationSpecHostNetwork'
+        'host_network': 'ClusterInformationSpecHostNetwork',
+        'deletion_protection': 'bool'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class ClusterInformationSpec:
         'custom_san': 'customSan',
         'container_network': 'containerNetwork',
         'eni_network': 'eniNetwork',
-        'host_network': 'hostNetwork'
+        'host_network': 'hostNetwork',
+        'deletion_protection': 'deletionProtection'
     }
 
-    def __init__(self, description=None, custom_san=None, container_network=None, eni_network=None, host_network=None):
+    def __init__(self, description=None, custom_san=None, container_network=None, eni_network=None, host_network=None, deletion_protection=None):
         """ClusterInformationSpec
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class ClusterInformationSpec:
         :type eni_network: :class:`huaweicloudsdkcce.v3.EniNetworkUpdate`
         :param host_network: 
         :type host_network: :class:`huaweicloudsdkcce.v3.ClusterInformationSpecHostNetwork`
+        :param deletion_protection: 集群删除保护，默认为false关闭，如果开启后用户将无法删除该集群。
+        :type deletion_protection: bool
         """
         
         
@@ -56,6 +60,7 @@ class ClusterInformationSpec:
         self._container_network = None
         self._eni_network = None
         self._host_network = None
+        self._deletion_protection = None
         self.discriminator = None
 
         if description is not None:
@@ -68,6 +73,8 @@ class ClusterInformationSpec:
             self.eni_network = eni_network
         if host_network is not None:
             self.host_network = host_network
+        if deletion_protection is not None:
+            self.deletion_protection = deletion_protection
 
     @property
     def description(self):
@@ -166,6 +173,28 @@ class ClusterInformationSpec:
         :type host_network: :class:`huaweicloudsdkcce.v3.ClusterInformationSpecHostNetwork`
         """
         self._host_network = host_network
+
+    @property
+    def deletion_protection(self):
+        """Gets the deletion_protection of this ClusterInformationSpec.
+
+        集群删除保护，默认为false关闭，如果开启后用户将无法删除该集群。
+
+        :return: The deletion_protection of this ClusterInformationSpec.
+        :rtype: bool
+        """
+        return self._deletion_protection
+
+    @deletion_protection.setter
+    def deletion_protection(self, deletion_protection):
+        """Sets the deletion_protection of this ClusterInformationSpec.
+
+        集群删除保护，默认为false关闭，如果开启后用户将无法删除该集群。
+
+        :param deletion_protection: The deletion_protection of this ClusterInformationSpec.
+        :type deletion_protection: bool
+        """
+        self._deletion_protection = deletion_protection
 
     def to_dict(self):
         """Returns the model properties as a dict"""

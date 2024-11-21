@@ -3279,6 +3279,8 @@ class MetaStudioClient(Client):
             query_params.append(('sort_dir', local_var_params['sort_dir']))
         if 'robot_id' in local_var_params:
             query_params.append(('robot_id', local_var_params['robot_id']))
+        if 'language' in local_var_params:
+            query_params.append(('language', local_var_params['language']))
 
         header_params = {}
         if 'x_app_user_id' in local_var_params:
@@ -5259,6 +5261,692 @@ class MetaStudioClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_pacify_words(self, request):
+        """创建安抚话术
+
+        该接口用于创建安抚话术。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreatePacifyWords
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreatePacifyWordsRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreatePacifyWordsResponse`
+        """
+        http_info = self._create_pacify_words_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_pacify_words_invoker(self, request):
+        http_info = self._create_pacify_words_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_pacify_words_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-human-chat/pacify-words",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePacifyWordsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_pacify_words(self, request):
+        """删除安抚话术
+
+        该接口用于删除安抚话术。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeletePacifyWords
+        :type request: :class:`huaweicloudsdkmetastudio.v1.DeletePacifyWordsRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.DeletePacifyWordsResponse`
+        """
+        http_info = self._delete_pacify_words_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_pacify_words_invoker(self, request):
+        http_info = self._delete_pacify_words_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_pacify_words_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/digital-human-chat/pacify-words/{pacify_words_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePacifyWordsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'pacify_words_id' in local_var_params:
+            path_params['pacify_words_id'] = local_var_params['pacify_words_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_pacify_words(self, request):
+        """查询安抚话术列表
+
+        该接口用于查询安抚话术列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListPacifyWords
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ListPacifyWordsRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListPacifyWordsResponse`
+        """
+        http_info = self._list_pacify_words_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_pacify_words_invoker(self, request):
+        http_info = self._list_pacify_words_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_pacify_words_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human-chat/pacify-words",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPacifyWordsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'robot_id' in local_var_params:
+            query_params.append(('robot_id', local_var_params['robot_id']))
+        if 'language' in local_var_params:
+            query_params.append(('language', local_var_params['language']))
+        if 'pacify_words_type' in local_var_params:
+            query_params.append(('pacify_words_type', local_var_params['pacify_words_type']))
+        if 'intent' in local_var_params:
+            query_params.append(('intent', local_var_params['intent']))
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_pacify_words(self, request):
+        """查询安抚话术详情
+
+        该接口用于查询安抚话术详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowPacifyWords
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowPacifyWordsRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowPacifyWordsResponse`
+        """
+        http_info = self._show_pacify_words_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_pacify_words_invoker(self, request):
+        http_info = self._show_pacify_words_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_pacify_words_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human-chat/pacify-words/{pacify_words_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPacifyWordsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'pacify_words_id' in local_var_params:
+            path_params['pacify_words_id'] = local_var_params['pacify_words_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_pacify_words_intent(self, request):
+        """查询安抚话术意图
+
+        该接口用于查询安抚话术意图。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowPacifyWordsIntent
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowPacifyWordsIntentRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowPacifyWordsIntentResponse`
+        """
+        http_info = self._show_pacify_words_intent_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_pacify_words_intent_invoker(self, request):
+        http_info = self._show_pacify_words_intent_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_pacify_words_intent_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human-chat/pacify-words-intent",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPacifyWordsIntentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'robot_id' in local_var_params:
+            query_params.append(('robot_id', local_var_params['robot_id']))
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_pacify_words_switch(self, request):
+        """查询安抚话术功能开关
+
+        该接口用于查询安抚话术功能开关。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowPacifyWordsSwitch
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowPacifyWordsSwitchRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowPacifyWordsSwitchResponse`
+        """
+        http_info = self._show_pacify_words_switch_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_pacify_words_switch_invoker(self, request):
+        http_info = self._show_pacify_words_switch_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_pacify_words_switch_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human-chat/pacify-words-switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPacifyWordsSwitchResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'robot_id' in local_var_params:
+            query_params.append(('robot_id', local_var_params['robot_id']))
+        if 'language' in local_var_params:
+            query_params.append(('language', local_var_params['language']))
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_pacify_words_trigger_time(self, request):
+        """查询安抚话术等待触发时长
+
+        该接口用于查询等待触发时长。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowPacifyWordsTriggerTime
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowPacifyWordsTriggerTimeRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowPacifyWordsTriggerTimeResponse`
+        """
+        http_info = self._show_pacify_words_trigger_time_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_pacify_words_trigger_time_invoker(self, request):
+        http_info = self._show_pacify_words_trigger_time_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_pacify_words_trigger_time_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human-chat/pacify-words-time",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPacifyWordsTriggerTimeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'robot_id' in local_var_params:
+            query_params.append(('robot_id', local_var_params['robot_id']))
+        if 'language' in local_var_params:
+            query_params.append(('language', local_var_params['language']))
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_pacify_words(self, request):
+        """修改安抚话术
+
+        该接口用于修改安抚话术。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdatePacifyWords
+        :type request: :class:`huaweicloudsdkmetastudio.v1.UpdatePacifyWordsRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdatePacifyWordsResponse`
+        """
+        http_info = self._update_pacify_words_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_pacify_words_invoker(self, request):
+        http_info = self._update_pacify_words_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_pacify_words_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/digital-human-chat/pacify-words/{pacify_words_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePacifyWordsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'pacify_words_id' in local_var_params:
+            path_params['pacify_words_id'] = local_var_params['pacify_words_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_pacify_words_switch(self, request):
+        """修改安抚话术功能开关
+
+        该接口用于修改安抚话术功能开关。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdatePacifyWordsSwitch
+        :type request: :class:`huaweicloudsdkmetastudio.v1.UpdatePacifyWordsSwitchRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdatePacifyWordsSwitchResponse`
+        """
+        http_info = self._update_pacify_words_switch_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_pacify_words_switch_invoker(self, request):
+        http_info = self._update_pacify_words_switch_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_pacify_words_switch_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/digital-human-chat/pacify-words-switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePacifyWordsSwitchResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_pacify_words_trigger_time(self, request):
+        """修改安抚话术等待触发时长
+
+        该接口用于修改安抚话术等待触发时长。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdatePacifyWordsTriggerTime
+        :type request: :class:`huaweicloudsdkmetastudio.v1.UpdatePacifyWordsTriggerTimeRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdatePacifyWordsTriggerTimeResponse`
+        """
+        http_info = self._update_pacify_words_trigger_time_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_pacify_words_trigger_time_invoker(self, request):
+        http_info = self._update_pacify_words_trigger_time_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_pacify_words_trigger_time_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/digital-human-chat/pacify-words-time",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePacifyWordsTriggerTimeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -7976,6 +8664,140 @@ class MetaStudioClient(Client):
 
         return http_info
 
+    def create_subtitle_file(self, request):
+        """创建分身数字人视频字幕文件
+
+        该接口用于创建分身数字人视频字幕文件任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateSubtitleFile
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateSubtitleFileRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateSubtitleFileResponse`
+        """
+        http_info = self._create_subtitle_file_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_subtitle_file_invoker(self, request):
+        http_info = self._create_subtitle_file_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_subtitle_file_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/subtitle-files",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSubtitleFileResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_subtitle_file(self, request):
+        """查询分身数字人视频字幕文件任务详情
+
+        该接口用于查询分身数字人视频字幕文件任务详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowSubtitleFile
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowSubtitleFileRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowSubtitleFileResponse`
+        """
+        http_info = self._show_subtitle_file_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_subtitle_file_invoker(self, request):
+        http_info = self._show_subtitle_file_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_subtitle_file_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/subtitle-files/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSubtitleFileResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_facial_animations(self, request):
         """创建语音驱动表情动画任务
 
@@ -9802,6 +10624,73 @@ class MetaStudioClient(Client):
 
         return http_info
 
+    def create_async_tts_job(self, request):
+        """创建TTS语音异步任务
+
+        该接口用于对外生成音频文件
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateAsyncTtsJob
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateAsyncTtsJobRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateAsyncTtsJobResponse`
+        """
+        http_info = self._create_async_tts_job_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_async_tts_job_invoker(self, request):
+        http_info = self._create_async_tts_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_async_tts_job_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/ttsc/async-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAsyncTtsJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_tts_audition(self, request):
         """创建TTS试听任务
 
@@ -9854,6 +10743,73 @@ class MetaStudioClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_async_tts_job(self, request):
+        """获取音频语音文件
+
+        该接口用于获取TTS音频文件下载链接。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAsyncTtsJob
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowAsyncTtsJobRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowAsyncTtsJobResponse`
+        """
+        http_info = self._show_async_tts_job_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_async_tts_job_invoker(self, request):
+        http_info = self._show_async_tts_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_async_tts_job_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/ttsc/async-jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAsyncTtsJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -10873,6 +11829,8 @@ class MetaStudioClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'robot_id' in local_var_params:
             query_params.append(('robot_id', local_var_params['robot_id']))
+        if 'language' in local_var_params:
+            query_params.append(('language', local_var_params['language']))
 
         header_params = {}
         if 'x_app_user_id' in local_var_params:
@@ -11007,6 +11965,8 @@ class MetaStudioClient(Client):
         query_params = []
         if 'robot_id' in local_var_params:
             query_params.append(('robot_id', local_var_params['robot_id']))
+        if 'language' in local_var_params:
+            query_params.append(('language', local_var_params['language']))
 
         header_params = {}
         if 'x_app_user_id' in local_var_params:

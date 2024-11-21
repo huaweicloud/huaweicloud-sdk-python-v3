@@ -18,15 +18,17 @@ class ControlOperateReqBody:
 
     openapi_types = {
         'identifier': 'str',
-        'target_identifier': 'str'
+        'target_identifier': 'str',
+        'parameters': 'list[EnableControlParameters]'
     }
 
     attribute_map = {
         'identifier': 'identifier',
-        'target_identifier': 'target_identifier'
+        'target_identifier': 'target_identifier',
+        'parameters': 'parameters'
     }
 
-    def __init__(self, identifier=None, target_identifier=None):
+    def __init__(self, identifier=None, target_identifier=None, parameters=None):
         """ControlOperateReqBody
 
         The model defined in huaweicloud sdk
@@ -35,16 +37,21 @@ class ControlOperateReqBody:
         :type identifier: str
         :param target_identifier: 组织单元的ID信息。
         :type target_identifier: str
+        :param parameters: 策略参数。
+        :type parameters: list[:class:`huaweicloudsdkrgc.v1.EnableControlParameters`]
         """
         
         
 
         self._identifier = None
         self._target_identifier = None
+        self._parameters = None
         self.discriminator = None
 
         self.identifier = identifier
         self.target_identifier = target_identifier
+        if parameters is not None:
+            self.parameters = parameters
 
     @property
     def identifier(self):
@@ -89,6 +96,28 @@ class ControlOperateReqBody:
         :type target_identifier: str
         """
         self._target_identifier = target_identifier
+
+    @property
+    def parameters(self):
+        """Gets the parameters of this ControlOperateReqBody.
+
+        策略参数。
+
+        :return: The parameters of this ControlOperateReqBody.
+        :rtype: list[:class:`huaweicloudsdkrgc.v1.EnableControlParameters`]
+        """
+        return self._parameters
+
+    @parameters.setter
+    def parameters(self, parameters):
+        """Sets the parameters of this ControlOperateReqBody.
+
+        策略参数。
+
+        :param parameters: The parameters of this ControlOperateReqBody.
+        :type parameters: list[:class:`huaweicloudsdkrgc.v1.EnableControlParameters`]
+        """
+        self._parameters = parameters
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -18,15 +18,17 @@ class CreateHotQuestionReq:
 
     openapi_types = {
         'robot_id': 'str',
-        'hot_question': 'str'
+        'hot_question': 'str',
+        'language': 'LanguageEnum'
     }
 
     attribute_map = {
         'robot_id': 'robot_id',
-        'hot_question': 'hot_question'
+        'hot_question': 'hot_question',
+        'language': 'language'
     }
 
-    def __init__(self, robot_id=None, hot_question=None):
+    def __init__(self, robot_id=None, hot_question=None, language=None):
         """CreateHotQuestionReq
 
         The model defined in huaweicloud sdk
@@ -35,16 +37,21 @@ class CreateHotQuestionReq:
         :type robot_id: str
         :param hot_question: 热点问题。
         :type hot_question: str
+        :param language: 
+        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
         """
         
         
 
         self._robot_id = None
         self._hot_question = None
+        self._language = None
         self.discriminator = None
 
         self.robot_id = robot_id
         self.hot_question = hot_question
+        if language is not None:
+            self.language = language
 
     @property
     def robot_id(self):
@@ -89,6 +96,24 @@ class CreateHotQuestionReq:
         :type hot_question: str
         """
         self._hot_question = hot_question
+
+    @property
+    def language(self):
+        """Gets the language of this CreateHotQuestionReq.
+
+        :return: The language of this CreateHotQuestionReq.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        """
+        return self._language
+
+    @language.setter
+    def language(self, language):
+        """Sets the language of this CreateHotQuestionReq.
+
+        :param language: The language of this CreateHotQuestionReq.
+        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        """
+        self._language = language
 
     def to_dict(self):
         """Returns the model properties as a dict"""
