@@ -17,28 +17,35 @@ class AgentAddPathReq:
     sensitive_list = []
 
     openapi_types = {
-        'add_path': 'list[str]'
+        'add_path': 'list[str]',
+        'exclude_path': 'list[ExcludePath]'
     }
 
     attribute_map = {
-        'add_path': 'add_path'
+        'add_path': 'add_path',
+        'exclude_path': 'exclude_path'
     }
 
-    def __init__(self, add_path=None):
+    def __init__(self, add_path=None, exclude_path=None):
         """AgentAddPathReq
 
         The model defined in huaweicloud sdk
 
         :param add_path: 增加备份路径详情
         :type add_path: list[str]
+        :param exclude_path: 增加排除目录 &gt; 该特性目前处于公测阶段，部分region可能无法使用。
+        :type exclude_path: list[:class:`huaweicloudsdkcbr.v1.ExcludePath`]
         """
         
         
 
         self._add_path = None
+        self._exclude_path = None
         self.discriminator = None
 
         self.add_path = add_path
+        if exclude_path is not None:
+            self.exclude_path = exclude_path
 
     @property
     def add_path(self):
@@ -61,6 +68,28 @@ class AgentAddPathReq:
         :type add_path: list[str]
         """
         self._add_path = add_path
+
+    @property
+    def exclude_path(self):
+        """Gets the exclude_path of this AgentAddPathReq.
+
+        增加排除目录 > 该特性目前处于公测阶段，部分region可能无法使用。
+
+        :return: The exclude_path of this AgentAddPathReq.
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.ExcludePath`]
+        """
+        return self._exclude_path
+
+    @exclude_path.setter
+    def exclude_path(self, exclude_path):
+        """Sets the exclude_path of this AgentAddPathReq.
+
+        增加排除目录 > 该特性目前处于公测阶段，部分region可能无法使用。
+
+        :param exclude_path: The exclude_path of this AgentAddPathReq.
+        :type exclude_path: list[:class:`huaweicloudsdkcbr.v1.ExcludePath`]
+        """
+        self._exclude_path = exclude_path
 
     def to_dict(self):
         """Returns the model properties as a dict"""

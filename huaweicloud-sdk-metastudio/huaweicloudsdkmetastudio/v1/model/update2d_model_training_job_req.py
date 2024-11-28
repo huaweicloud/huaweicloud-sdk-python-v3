@@ -22,7 +22,6 @@ class Update2dModelTrainingJobReq:
         'command_message': 'str',
         'video_multipart_count': 'int',
         'action_video_multipart_count': 'int',
-        'beauty_level': 'int',
         'is_background_replacement': 'bool',
         'batch_name': 'str',
         'tags': 'list[str]',
@@ -37,7 +36,6 @@ class Update2dModelTrainingJobReq:
         'command_message': 'command_message',
         'video_multipart_count': 'video_multipart_count',
         'action_video_multipart_count': 'action_video_multipart_count',
-        'beauty_level': 'beauty_level',
         'is_background_replacement': 'is_background_replacement',
         'batch_name': 'batch_name',
         'tags': 'tags',
@@ -46,7 +44,7 @@ class Update2dModelTrainingJobReq:
         'audio_source_type': 'audio_source_type'
     }
 
-    def __init__(self, name=None, contact=None, command_message=None, video_multipart_count=None, action_video_multipart_count=None, beauty_level=None, is_background_replacement=None, batch_name=None, tags=None, samples_basic_info=None, supported_service=None, audio_source_type=None):
+    def __init__(self, name=None, contact=None, command_message=None, video_multipart_count=None, action_video_multipart_count=None, is_background_replacement=None, batch_name=None, tags=None, samples_basic_info=None, supported_service=None, audio_source_type=None):
         """Update2dModelTrainingJobReq
 
         The model defined in huaweicloud sdk
@@ -61,8 +59,6 @@ class Update2dModelTrainingJobReq:
         :type video_multipart_count: int
         :param action_video_multipart_count: 动作视频上传分片数。
         :type action_video_multipart_count: int
-        :param beauty_level: 美白等级。默认值0，不美白。
-        :type beauty_level: int
         :param is_background_replacement: 分身数字人是否需要背景替换。需要背景替换的分身数字人训练视频需要绿幕拍摄。
         :type is_background_replacement: bool
         :param batch_name: 分身数字人训练任务的批次名称。
@@ -84,7 +80,6 @@ class Update2dModelTrainingJobReq:
         self._command_message = None
         self._video_multipart_count = None
         self._action_video_multipart_count = None
-        self._beauty_level = None
         self._is_background_replacement = None
         self._batch_name = None
         self._tags = None
@@ -103,8 +98,6 @@ class Update2dModelTrainingJobReq:
             self.video_multipart_count = video_multipart_count
         if action_video_multipart_count is not None:
             self.action_video_multipart_count = action_video_multipart_count
-        if beauty_level is not None:
-            self.beauty_level = beauty_level
         if is_background_replacement is not None:
             self.is_background_replacement = is_background_replacement
         if batch_name is not None:
@@ -227,28 +220,6 @@ class Update2dModelTrainingJobReq:
         :type action_video_multipart_count: int
         """
         self._action_video_multipart_count = action_video_multipart_count
-
-    @property
-    def beauty_level(self):
-        """Gets the beauty_level of this Update2dModelTrainingJobReq.
-
-        美白等级。默认值0，不美白。
-
-        :return: The beauty_level of this Update2dModelTrainingJobReq.
-        :rtype: int
-        """
-        return self._beauty_level
-
-    @beauty_level.setter
-    def beauty_level(self, beauty_level):
-        """Sets the beauty_level of this Update2dModelTrainingJobReq.
-
-        美白等级。默认值0，不美白。
-
-        :param beauty_level: The beauty_level of this Update2dModelTrainingJobReq.
-        :type beauty_level: int
-        """
-        self._beauty_level = beauty_level
 
     @property
     def is_background_replacement(self):

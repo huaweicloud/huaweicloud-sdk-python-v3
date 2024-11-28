@@ -23,7 +23,8 @@ class NodeSpecUpdate:
         'initialized_conditions': 'list[str]',
         'login': 'Login',
         'server_enterprise_project_id': 'str',
-        'node_nic_spec_update': 'NodeSpecUpdateNodeNicSpecUpdate'
+        'node_nic_spec_update': 'NodeSpecUpdateNodeNicSpecUpdate',
+        'security_reinforcement_type': 'str'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class NodeSpecUpdate:
         'initialized_conditions': 'initializedConditions',
         'login': 'login',
         'server_enterprise_project_id': 'serverEnterpriseProjectID',
-        'node_nic_spec_update': 'nodeNicSpecUpdate'
+        'node_nic_spec_update': 'nodeNicSpecUpdate',
+        'security_reinforcement_type': 'securityReinforcementType'
     }
 
-    def __init__(self, taints=None, k8s_tags=None, user_tags=None, initialized_conditions=None, login=None, server_enterprise_project_id=None, node_nic_spec_update=None):
+    def __init__(self, taints=None, k8s_tags=None, user_tags=None, initialized_conditions=None, login=None, server_enterprise_project_id=None, node_nic_spec_update=None, security_reinforcement_type=None):
         """NodeSpecUpdate
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class NodeSpecUpdate:
         :type server_enterprise_project_id: str
         :param node_nic_spec_update: 
         :type node_nic_spec_update: :class:`huaweicloudsdkcce.v3.NodeSpecUpdateNodeNicSpecUpdate`
+        :param security_reinforcement_type: **参数解释**： 指定节点安全加固类型，当前仅支持HCE2.0镜像等保2.0三级安全加固。 等保加固会对身份鉴别、访问控制、安全审计、入侵防范、恶意代码防范进行检查并加固。详情请参见[Huawei Cloud EulerOS 2.0等保2.0三级版镜像概述](https://support.huaweicloud.com/productdesc-hce/hce_sec_0001.html)。 若未指定此参数，则尝试用原有的值补全。如：原先HCE2.0镜像已配置安全加固，更新节点池时未指定此参数，则仍旧保持安全加固配置，若要取消，需显式指定参数值为\&quot;null\&quot;。 **约束限制**： 不涉及 **取值范围**： 取值范围：[&#39;null&#39;, cybersecurity]; **默认取值**： 不涉及
+        :type security_reinforcement_type: str
         """
         
         
@@ -66,6 +70,7 @@ class NodeSpecUpdate:
         self._login = None
         self._server_enterprise_project_id = None
         self._node_nic_spec_update = None
+        self._security_reinforcement_type = None
         self.discriminator = None
 
         self.taints = taints
@@ -79,6 +84,8 @@ class NodeSpecUpdate:
             self.server_enterprise_project_id = server_enterprise_project_id
         if node_nic_spec_update is not None:
             self.node_nic_spec_update = node_nic_spec_update
+        if security_reinforcement_type is not None:
+            self.security_reinforcement_type = security_reinforcement_type
 
     @property
     def taints(self):
@@ -225,6 +232,28 @@ class NodeSpecUpdate:
         :type node_nic_spec_update: :class:`huaweicloudsdkcce.v3.NodeSpecUpdateNodeNicSpecUpdate`
         """
         self._node_nic_spec_update = node_nic_spec_update
+
+    @property
+    def security_reinforcement_type(self):
+        """Gets the security_reinforcement_type of this NodeSpecUpdate.
+
+        **参数解释**： 指定节点安全加固类型，当前仅支持HCE2.0镜像等保2.0三级安全加固。 等保加固会对身份鉴别、访问控制、安全审计、入侵防范、恶意代码防范进行检查并加固。详情请参见[Huawei Cloud EulerOS 2.0等保2.0三级版镜像概述](https://support.huaweicloud.com/productdesc-hce/hce_sec_0001.html)。 若未指定此参数，则尝试用原有的值补全。如：原先HCE2.0镜像已配置安全加固，更新节点池时未指定此参数，则仍旧保持安全加固配置，若要取消，需显式指定参数值为\"null\"。 **约束限制**： 不涉及 **取值范围**： 取值范围：['null', cybersecurity]; **默认取值**： 不涉及
+
+        :return: The security_reinforcement_type of this NodeSpecUpdate.
+        :rtype: str
+        """
+        return self._security_reinforcement_type
+
+    @security_reinforcement_type.setter
+    def security_reinforcement_type(self, security_reinforcement_type):
+        """Sets the security_reinforcement_type of this NodeSpecUpdate.
+
+        **参数解释**： 指定节点安全加固类型，当前仅支持HCE2.0镜像等保2.0三级安全加固。 等保加固会对身份鉴别、访问控制、安全审计、入侵防范、恶意代码防范进行检查并加固。详情请参见[Huawei Cloud EulerOS 2.0等保2.0三级版镜像概述](https://support.huaweicloud.com/productdesc-hce/hce_sec_0001.html)。 若未指定此参数，则尝试用原有的值补全。如：原先HCE2.0镜像已配置安全加固，更新节点池时未指定此参数，则仍旧保持安全加固配置，若要取消，需显式指定参数值为\"null\"。 **约束限制**： 不涉及 **取值范围**： 取值范围：['null', cybersecurity]; **默认取值**： 不涉及
+
+        :param security_reinforcement_type: The security_reinforcement_type of this NodeSpecUpdate.
+        :type security_reinforcement_type: str
+        """
+        self._security_reinforcement_type = security_reinforcement_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

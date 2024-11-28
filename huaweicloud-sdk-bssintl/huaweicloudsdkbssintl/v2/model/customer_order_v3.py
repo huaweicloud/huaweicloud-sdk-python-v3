@@ -32,7 +32,8 @@ class CustomerOrderV3:
         'currency': 'str',
         'contract_id': 'str',
         'amount_info': 'AmountInfomationV2',
-        'user_name': 'str'
+        'user_name': 'str',
+        'pending_payment_end_time': 'str'
     }
 
     attribute_map = {
@@ -51,10 +52,11 @@ class CustomerOrderV3:
         'currency': 'currency',
         'contract_id': 'contract_id',
         'amount_info': 'amount_info',
-        'user_name': 'user_name'
+        'user_name': 'user_name',
+        'pending_payment_end_time': 'pending_payment_end_time'
     }
 
-    def __init__(self, order_id=None, customer_id=None, service_type_code=None, service_type_name=None, source_type=None, status=None, order_type=None, amount_after_discount=None, official_amount=None, measure_id=None, create_time=None, payment_time=None, currency=None, contract_id=None, amount_info=None, user_name=None):
+    def __init__(self, order_id=None, customer_id=None, service_type_code=None, service_type_name=None, source_type=None, status=None, order_type=None, amount_after_discount=None, official_amount=None, measure_id=None, create_time=None, payment_time=None, currency=None, contract_id=None, amount_info=None, user_name=None, pending_payment_end_time=None):
         """CustomerOrderV3
 
         The model defined in huaweicloud sdk
@@ -91,6 +93,8 @@ class CustomerOrderV3:
         :type amount_info: :class:`huaweicloudsdkbssintl.v2.AmountInfomationV2`
         :param user_name: 订单创建者名称。 如果是客户自己下单，则此处返回下单操作员的登录名称；如果是运营人员从后台下单，则此处返回“运营人员”；如果是运营系统自动触发下单，则此处返回“运营系统”。
         :type user_name: str
+        :param pending_payment_end_time: 订单待付款截止时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。
+        :type pending_payment_end_time: str
         """
         
         
@@ -111,6 +115,7 @@ class CustomerOrderV3:
         self._contract_id = None
         self._amount_info = None
         self._user_name = None
+        self._pending_payment_end_time = None
         self.discriminator = None
 
         if order_id is not None:
@@ -145,6 +150,8 @@ class CustomerOrderV3:
             self.amount_info = amount_info
         if user_name is not None:
             self.user_name = user_name
+        if pending_payment_end_time is not None:
+            self.pending_payment_end_time = pending_payment_end_time
 
     @property
     def order_id(self):
@@ -493,6 +500,28 @@ class CustomerOrderV3:
         :type user_name: str
         """
         self._user_name = user_name
+
+    @property
+    def pending_payment_end_time(self):
+        """Gets the pending_payment_end_time of this CustomerOrderV3.
+
+        订单待付款截止时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。
+
+        :return: The pending_payment_end_time of this CustomerOrderV3.
+        :rtype: str
+        """
+        return self._pending_payment_end_time
+
+    @pending_payment_end_time.setter
+    def pending_payment_end_time(self, pending_payment_end_time):
+        """Sets the pending_payment_end_time of this CustomerOrderV3.
+
+        订单待付款截止时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。
+
+        :param pending_payment_end_time: The pending_payment_end_time of this CustomerOrderV3.
+        :type pending_payment_end_time: str
+        """
+        self._pending_payment_end_time = pending_payment_end_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -41,7 +41,7 @@ class CbcProductInfoUpdate:
         :type resource_size: int
         :param resource_size_measure_id: 资源容量度量标识，枚举值17：GB
         :type resource_size_measure_id: int
-        :param resource_spec_code: 用户购买云服务产品的资源规格 Enum: [vault.backup.server.normal，vault.backup.turbo.normal, vault.backup.database.normal，vault.backup.volume.normal，vault.backup.rds.normal，vault.replication.server.normal，vault.hybrid.server.normal]
+        :param resource_spec_code: 用户购买云服务产品的资源规格 Enum:  - vault.backup.server.normal - vault.backup.turbo.normal - vault.backup.database.normal - vault.backup.volume.normal - vault.backup.rds.normal - vault.replication.server.normal - vault.hybrid.server.normal
         :type resource_spec_code: str
         """
         
@@ -129,7 +129,7 @@ class CbcProductInfoUpdate:
     def resource_spec_code(self):
         """Gets the resource_spec_code of this CbcProductInfoUpdate.
 
-        用户购买云服务产品的资源规格 Enum: [vault.backup.server.normal，vault.backup.turbo.normal, vault.backup.database.normal，vault.backup.volume.normal，vault.backup.rds.normal，vault.replication.server.normal，vault.hybrid.server.normal]
+        用户购买云服务产品的资源规格 Enum:  - vault.backup.server.normal - vault.backup.turbo.normal - vault.backup.database.normal - vault.backup.volume.normal - vault.backup.rds.normal - vault.replication.server.normal - vault.hybrid.server.normal
 
         :return: The resource_spec_code of this CbcProductInfoUpdate.
         :rtype: str
@@ -140,7 +140,7 @@ class CbcProductInfoUpdate:
     def resource_spec_code(self, resource_spec_code):
         """Sets the resource_spec_code of this CbcProductInfoUpdate.
 
-        用户购买云服务产品的资源规格 Enum: [vault.backup.server.normal，vault.backup.turbo.normal, vault.backup.database.normal，vault.backup.volume.normal，vault.backup.rds.normal，vault.replication.server.normal，vault.hybrid.server.normal]
+        用户购买云服务产品的资源规格 Enum:  - vault.backup.server.normal - vault.backup.turbo.normal - vault.backup.database.normal - vault.backup.volume.normal - vault.backup.rds.normal - vault.replication.server.normal - vault.hybrid.server.normal
 
         :param resource_spec_code: The resource_spec_code of this CbcProductInfoUpdate.
         :type resource_spec_code: str

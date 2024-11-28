@@ -33,9 +33,9 @@ class UpdateSecretEventRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param state: 事件通知状态，取值如下。  ENABLED：表示启用状态 DISABLED：表示禁用状态 
+        :param state: 事件通知状态，取值如下。  ENABLED：表示启用状态 DISABLED：表示禁用状态
         :type state: str
-        :param event_types: 本次事件通知的基础事件列表，基础事件类型如下。  SECRET_VERSION_CREATED：版本创建 SECRET_VERSION_EXPIRED：版本过期 SECRET_ROTATED：凭据轮转 SECRET_DELETED：凭据删除  列表包含的基础事件类型不能重复。 
+        :param event_types: 本次事件通知的基础事件列表，基础事件类型如下。  - SECRET_VERSION_CREATED:版本创建 - SECRET_VERSION_EXPIRED:版本过期 - SECRET_ROTATED:凭据轮转成功 - SECRET_DELETED:凭据删除 - SECRET_ROTATED_FAILED:凭据轮转失败  列表包含的基础事件类型不能重复。
         :type event_types: list[str]
         :param notification: 
         :type notification: :class:`huaweicloudsdkcsms.v1.Notification`
@@ -59,7 +59,7 @@ class UpdateSecretEventRequestBody:
     def state(self):
         """Gets the state of this UpdateSecretEventRequestBody.
 
-        事件通知状态，取值如下。  ENABLED：表示启用状态 DISABLED：表示禁用状态 
+        事件通知状态，取值如下。  ENABLED：表示启用状态 DISABLED：表示禁用状态
 
         :return: The state of this UpdateSecretEventRequestBody.
         :rtype: str
@@ -70,7 +70,7 @@ class UpdateSecretEventRequestBody:
     def state(self, state):
         """Sets the state of this UpdateSecretEventRequestBody.
 
-        事件通知状态，取值如下。  ENABLED：表示启用状态 DISABLED：表示禁用状态 
+        事件通知状态，取值如下。  ENABLED：表示启用状态 DISABLED：表示禁用状态
 
         :param state: The state of this UpdateSecretEventRequestBody.
         :type state: str
@@ -81,7 +81,7 @@ class UpdateSecretEventRequestBody:
     def event_types(self):
         """Gets the event_types of this UpdateSecretEventRequestBody.
 
-        本次事件通知的基础事件列表，基础事件类型如下。  SECRET_VERSION_CREATED：版本创建 SECRET_VERSION_EXPIRED：版本过期 SECRET_ROTATED：凭据轮转 SECRET_DELETED：凭据删除  列表包含的基础事件类型不能重复。 
+        本次事件通知的基础事件列表，基础事件类型如下。  - SECRET_VERSION_CREATED:版本创建 - SECRET_VERSION_EXPIRED:版本过期 - SECRET_ROTATED:凭据轮转成功 - SECRET_DELETED:凭据删除 - SECRET_ROTATED_FAILED:凭据轮转失败  列表包含的基础事件类型不能重复。
 
         :return: The event_types of this UpdateSecretEventRequestBody.
         :rtype: list[str]
@@ -92,7 +92,7 @@ class UpdateSecretEventRequestBody:
     def event_types(self, event_types):
         """Sets the event_types of this UpdateSecretEventRequestBody.
 
-        本次事件通知的基础事件列表，基础事件类型如下。  SECRET_VERSION_CREATED：版本创建 SECRET_VERSION_EXPIRED：版本过期 SECRET_ROTATED：凭据轮转 SECRET_DELETED：凭据删除  列表包含的基础事件类型不能重复。 
+        本次事件通知的基础事件列表，基础事件类型如下。  - SECRET_VERSION_CREATED:版本创建 - SECRET_VERSION_EXPIRED:版本过期 - SECRET_ROTATED:凭据轮转成功 - SECRET_DELETED:凭据删除 - SECRET_ROTATED_FAILED:凭据轮转失败  列表包含的基础事件类型不能重复。
 
         :param event_types: The event_types of this UpdateSecretEventRequestBody.
         :type event_types: list[str]

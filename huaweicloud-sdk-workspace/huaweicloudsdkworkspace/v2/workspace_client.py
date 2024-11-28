@@ -2479,6 +2479,1032 @@ class WorkspaceClient(Client):
 
         return http_info
 
+    def add_desktop_pool_volumes(self, request):
+        """桌面池批量添加磁盘
+
+        桌面池批量添加磁盘。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AddDesktopPoolVolumes
+        :type request: :class:`huaweicloudsdkworkspace.v2.AddDesktopPoolVolumesRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.AddDesktopPoolVolumesResponse`
+        """
+        http_info = self._add_desktop_pool_volumes_http_info(request)
+        return self._call_api(**http_info)
+
+    def add_desktop_pool_volumes_invoker(self, request):
+        http_info = self._add_desktop_pool_volumes_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_desktop_pool_volumes_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/desktop-pools/{pool_id}/volumes/batch-add",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddDesktopPoolVolumesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'pool_id' in local_var_params:
+            path_params['pool_id'] = local_var_params['pool_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'service_transaction_id' in local_var_params:
+            header_params['Service-Transaction-Id'] = local_var_params['service_transaction_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_desktop_pool(self, request):
+        """创建桌面池
+
+        创建桌面池，可将此桌面池分配给用户、用户组，用户登录时会绑定其中一个桌面。
+        注:需通过开通委托功能接口先对云服务进行授权才可以使用该功能
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateDesktopPool
+        :type request: :class:`huaweicloudsdkworkspace.v2.CreateDesktopPoolRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.CreateDesktopPoolResponse`
+        """
+        http_info = self._create_desktop_pool_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_desktop_pool_invoker(self, request):
+        http_info = self._create_desktop_pool_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_desktop_pool_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/desktop-pools",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDesktopPoolResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'service_transaction_id' in local_var_params:
+            header_params['Service-Transaction-Id'] = local_var_params['service_transaction_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_desktop_pool_authorized_objects(self, request):
+        """桌面池授权用户、用户组
+
+        该接口用于桌面池授权用户、用户组。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateDesktopPoolAuthorizedObjects
+        :type request: :class:`huaweicloudsdkworkspace.v2.CreateDesktopPoolAuthorizedObjectsRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.CreateDesktopPoolAuthorizedObjectsResponse`
+        """
+        http_info = self._create_desktop_pool_authorized_objects_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_desktop_pool_authorized_objects_invoker(self, request):
+        http_info = self._create_desktop_pool_authorized_objects_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_desktop_pool_authorized_objects_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/desktop-pools/{pool_id}/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDesktopPoolAuthorizedObjectsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'pool_id' in local_var_params:
+            path_params['pool_id'] = local_var_params['pool_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_desktop_pool(self, request):
+        """删除桌面池
+
+        当桌面池内无桌面时可删除桌面池，桌面池删除后无法恢复。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteDesktopPool
+        :type request: :class:`huaweicloudsdkworkspace.v2.DeleteDesktopPoolRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.DeleteDesktopPoolResponse`
+        """
+        http_info = self._delete_desktop_pool_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_desktop_pool_invoker(self, request):
+        http_info = self._delete_desktop_pool_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_desktop_pool_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/desktop-pools/{pool_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDesktopPoolResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'pool_id' in local_var_params:
+            path_params['pool_id'] = local_var_params['pool_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_desktop_pool_volumes(self, request):
+        """桌面池批量删除磁盘
+
+        桌面池批量删除磁盘。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteDesktopPoolVolumes
+        :type request: :class:`huaweicloudsdkworkspace.v2.DeleteDesktopPoolVolumesRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.DeleteDesktopPoolVolumesResponse`
+        """
+        http_info = self._delete_desktop_pool_volumes_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_desktop_pool_volumes_invoker(self, request):
+        http_info = self._delete_desktop_pool_volumes_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_desktop_pool_volumes_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/desktop-pools/{pool_id}/volumes/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDesktopPoolVolumesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'pool_id' in local_var_params:
+            path_params['pool_id'] = local_var_params['pool_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def execute_desktop_pool_action(self, request):
+        """操作桌面池
+
+        操作桌面池，用于桌面池里面的桌面批量开机、关机、重启和休眠。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExecuteDesktopPoolAction
+        :type request: :class:`huaweicloudsdkworkspace.v2.ExecuteDesktopPoolActionRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ExecuteDesktopPoolActionResponse`
+        """
+        http_info = self._execute_desktop_pool_action_http_info(request)
+        return self._call_api(**http_info)
+
+    def execute_desktop_pool_action_invoker(self, request):
+        http_info = self._execute_desktop_pool_action_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_desktop_pool_action_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/desktop-pools/{pool_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteDesktopPoolActionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'pool_id' in local_var_params:
+            path_params['pool_id'] = local_var_params['pool_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def expand_desktop_pool(self, request):
+        """扩容桌面池
+
+        扩容桌面池。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExpandDesktopPool
+        :type request: :class:`huaweicloudsdkworkspace.v2.ExpandDesktopPoolRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ExpandDesktopPoolResponse`
+        """
+        http_info = self._expand_desktop_pool_http_info(request)
+        return self._call_api(**http_info)
+
+    def expand_desktop_pool_invoker(self, request):
+        http_info = self._expand_desktop_pool_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _expand_desktop_pool_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/desktop-pools/{pool_id}/expand",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExpandDesktopPoolResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'pool_id' in local_var_params:
+            path_params['pool_id'] = local_var_params['pool_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'service_transaction_id' in local_var_params:
+            header_params['Service-Transaction-Id'] = local_var_params['service_transaction_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def expand_desktop_pool_volumes(self, request):
+        """桌面池批量扩容磁盘
+
+        桌面池批量扩容磁盘。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExpandDesktopPoolVolumes
+        :type request: :class:`huaweicloudsdkworkspace.v2.ExpandDesktopPoolVolumesRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ExpandDesktopPoolVolumesResponse`
+        """
+        http_info = self._expand_desktop_pool_volumes_http_info(request)
+        return self._call_api(**http_info)
+
+    def expand_desktop_pool_volumes_invoker(self, request):
+        http_info = self._expand_desktop_pool_volumes_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _expand_desktop_pool_volumes_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/desktop-pools/{pool_id}/volumes/batch-expand",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExpandDesktopPoolVolumesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'pool_id' in local_var_params:
+            path_params['pool_id'] = local_var_params['pool_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'service_transaction_id' in local_var_params:
+            header_params['Service-Transaction-Id'] = local_var_params['service_transaction_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_desktop_pool_authorized_objects(self, request):
+        """查询桌面池授权的用户、用户组
+
+        该接口用于查询指定桌面池授权的用户、用户组。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListDesktopPoolAuthorizedObjects
+        :type request: :class:`huaweicloudsdkworkspace.v2.ListDesktopPoolAuthorizedObjectsRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ListDesktopPoolAuthorizedObjectsResponse`
+        """
+        http_info = self._list_desktop_pool_authorized_objects_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_desktop_pool_authorized_objects_invoker(self, request):
+        http_info = self._list_desktop_pool_authorized_objects_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_desktop_pool_authorized_objects_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/desktop-pools/{pool_id}/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDesktopPoolAuthorizedObjectsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'pool_id' in local_var_params:
+            path_params['pool_id'] = local_var_params['pool_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_desktop_pools(self, request):
+        """查询桌面池列表
+
+        该接口用于查询桌面池列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListDesktopPools
+        :type request: :class:`huaweicloudsdkworkspace.v2.ListDesktopPoolsRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ListDesktopPoolsResponse`
+        """
+        http_info = self._list_desktop_pools_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_desktop_pools_invoker(self, request):
+        http_info = self._list_desktop_pools_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_desktop_pools_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/desktop-pools",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDesktopPoolsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'in_maintenance_mode' in local_var_params:
+            query_params.append(('in_maintenance_mode', local_var_params['in_maintenance_mode']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_pool_desktops_detail(self, request):
+        """查询桌面池下的桌面信息
+
+        该接口用于查询桌面池下的桌面信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListPoolDesktopsDetail
+        :type request: :class:`huaweicloudsdkworkspace.v2.ListPoolDesktopsDetailRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ListPoolDesktopsDetailResponse`
+        """
+        http_info = self._list_pool_desktops_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_pool_desktops_detail_invoker(self, request):
+        http_info = self._list_pool_desktops_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_pool_desktops_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/desktop-pools/{pool_id}/desktops",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPoolDesktopsDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'pool_id' in local_var_params:
+            path_params['pool_id'] = local_var_params['pool_id']
+
+        query_params = []
+        if 'inconsistent_type' in local_var_params:
+            query_params.append(('inconsistent_type', local_var_params['inconsistent_type']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def rebuild_desktop_pool(self, request):
+        """桌面池重建系统盘
+
+        桌面池重建系统盘。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RebuildDesktopPool
+        :type request: :class:`huaweicloudsdkworkspace.v2.RebuildDesktopPoolRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.RebuildDesktopPoolResponse`
+        """
+        http_info = self._rebuild_desktop_pool_http_info(request)
+        return self._call_api(**http_info)
+
+    def rebuild_desktop_pool_invoker(self, request):
+        http_info = self._rebuild_desktop_pool_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _rebuild_desktop_pool_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/desktop-pools/{pool_id}/rebuild",
+            "request_type": request.__class__.__name__,
+            "response_type": "RebuildDesktopPoolResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'pool_id' in local_var_params:
+            path_params['pool_id'] = local_var_params['pool_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'service_transaction_id' in local_var_params:
+            header_params['Service-Transaction-Id'] = local_var_params['service_transaction_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def resize_desktop_pool(self, request):
+        """桌面池变更规格
+
+        桌面池变更规格
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ResizeDesktopPool
+        :type request: :class:`huaweicloudsdkworkspace.v2.ResizeDesktopPoolRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ResizeDesktopPoolResponse`
+        """
+        http_info = self._resize_desktop_pool_http_info(request)
+        return self._call_api(**http_info)
+
+    def resize_desktop_pool_invoker(self, request):
+        http_info = self._resize_desktop_pool_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _resize_desktop_pool_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/desktop-pools/{pool_id}/resize",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResizeDesktopPoolResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'pool_id' in local_var_params:
+            path_params['pool_id'] = local_var_params['pool_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'service_transaction_id' in local_var_params:
+            header_params['Service-Transaction-Id'] = local_var_params['service_transaction_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_desktop_pool_detail(self, request):
+        """查询桌面池详情
+
+        指定桌面池Id查询详细信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowDesktopPoolDetail
+        :type request: :class:`huaweicloudsdkworkspace.v2.ShowDesktopPoolDetailRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ShowDesktopPoolDetailResponse`
+        """
+        http_info = self._show_desktop_pool_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_desktop_pool_detail_invoker(self, request):
+        http_info = self._show_desktop_pool_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_desktop_pool_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/desktop-pools/{pool_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDesktopPoolDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'pool_id' in local_var_params:
+            path_params['pool_id'] = local_var_params['pool_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_desktop_pool(self, request):
+        """修改桌面池属性
+
+        修改桌面池属性。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateDesktopPool
+        :type request: :class:`huaweicloudsdkworkspace.v2.UpdateDesktopPoolRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateDesktopPoolResponse`
+        """
+        http_info = self._update_desktop_pool_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_desktop_pool_invoker(self, request):
+        http_info = self._update_desktop_pool_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_desktop_pool_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/desktop-pools/{pool_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDesktopPoolResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'pool_id' in local_var_params:
+            path_params['pool_id'] = local_var_params['pool_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_unused_desktops(self, request):
         """查询在指定时间段未使用的桌面
 
@@ -6013,6 +7039,71 @@ class WorkspaceClient(Client):
         path_params = {}
         if 'user_id' in local_var_params:
             path_params['user_id'] = local_var_params['user_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_user(self, request):
+        """批量删除用户
+
+        该接口用于批量删除桌面用户。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteUser
+        :type request: :class:`huaweicloudsdkworkspace.v2.BatchDeleteUserRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.BatchDeleteUserResponse`
+        """
+        http_info = self._batch_delete_user_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_user_invoker(self, request):
+        http_info = self._batch_delete_user_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_user_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/users/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteUserResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
 
         query_params = []
 

@@ -17,20 +17,80 @@ class ListSupportRegionsRequest:
     sensitive_list = []
 
     openapi_types = {
+        'limit': 'int',
+        'offset': 'int'
     }
 
     attribute_map = {
+        'limit': 'limit',
+        'offset': 'offset'
     }
 
-    def __init__(self):
+    def __init__(self, limit=None, offset=None):
         """ListSupportRegionsRequest
 
         The model defined in huaweicloud sdk
 
+        :param limit: 指定查询返回记录条数，默认值10。
+        :type limit: int
+        :param offset: 索引位置，从offset指定的下一条数据开始查询。
+        :type offset: int
         """
         
         
+
+        self._limit = None
+        self._offset = None
         self.discriminator = None
+
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
+
+    @property
+    def limit(self):
+        """Gets the limit of this ListSupportRegionsRequest.
+
+        指定查询返回记录条数，默认值10。
+
+        :return: The limit of this ListSupportRegionsRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListSupportRegionsRequest.
+
+        指定查询返回记录条数，默认值10。
+
+        :param limit: The limit of this ListSupportRegionsRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def offset(self):
+        """Gets the offset of this ListSupportRegionsRequest.
+
+        索引位置，从offset指定的下一条数据开始查询。
+
+        :return: The offset of this ListSupportRegionsRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ListSupportRegionsRequest.
+
+        索引位置，从offset指定的下一条数据开始查询。
+
+        :param offset: The offset of this ListSupportRegionsRequest.
+        :type offset: int
+        """
+        self._offset = offset
 
     def to_dict(self):
         """Returns the model properties as a dict"""

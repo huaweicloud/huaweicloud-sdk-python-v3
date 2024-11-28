@@ -58,7 +58,6 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         'inference_data_process_eye_correction_mark_info': 'InferenceEyeCorrectionMarkInfo',
         'is_background_replacement': 'bool',
         'worker_type': 'list[str]',
-        'beauty_level': 'int',
         'voice_train_job_id': 'str',
         'flexus_retry_count': 'int',
         'audio_source_type': 'str',
@@ -108,7 +107,6 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         'inference_data_process_eye_correction_mark_info': 'inference_data_process_eye_correction_mark_info',
         'is_background_replacement': 'is_background_replacement',
         'worker_type': 'worker_type',
-        'beauty_level': 'beauty_level',
         'voice_train_job_id': 'voice_train_job_id',
         'flexus_retry_count': 'flexus_retry_count',
         'audio_source_type': 'audio_source_type',
@@ -117,7 +115,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, job_id=None, name=None, state=None, asset_id=None, project_id=None, cover_download_url=None, last_update_time=None, create_time=None, contact=None, batch_name=None, tags=None, model_version=None, matting_type=None, model_resolution=None, app_user_id=None, is_flexus=None, is_only_human_model=None, training_video_download_url=None, id_card_image1_download_url=None, id_card_image2_download_url=None, grant_file_download_url=None, pre_beauty_image_download_url=None, action_video_download_url=None, post_beauty_image_download_url=None, audio_file_download_url=None, operation_logs=None, verify_video_matting_info=None, comment_logs=None, samples=None, is_mask_file_uploaded=None, mask_file_download_url=None, verify_video_download_url=None, markable_video_download_url=None, traning_video_mark_info=None, inference_data_process_video_mark_info=None, inference_data_process_action_mark_info=None, inference_data_process_chat_action_mark_info=None, inference_data_process_eye_correction_mark_info=None, is_background_replacement=None, worker_type=None, beauty_level=None, voice_train_job_id=None, flexus_retry_count=None, audio_source_type=None, supported_service=None, allocated_resource=None, x_request_id=None):
+    def __init__(self, job_id=None, name=None, state=None, asset_id=None, project_id=None, cover_download_url=None, last_update_time=None, create_time=None, contact=None, batch_name=None, tags=None, model_version=None, matting_type=None, model_resolution=None, app_user_id=None, is_flexus=None, is_only_human_model=None, training_video_download_url=None, id_card_image1_download_url=None, id_card_image2_download_url=None, grant_file_download_url=None, pre_beauty_image_download_url=None, action_video_download_url=None, post_beauty_image_download_url=None, audio_file_download_url=None, operation_logs=None, verify_video_matting_info=None, comment_logs=None, samples=None, is_mask_file_uploaded=None, mask_file_download_url=None, verify_video_download_url=None, markable_video_download_url=None, traning_video_mark_info=None, inference_data_process_video_mark_info=None, inference_data_process_action_mark_info=None, inference_data_process_chat_action_mark_info=None, inference_data_process_eye_correction_mark_info=None, is_background_replacement=None, worker_type=None, voice_train_job_id=None, flexus_retry_count=None, audio_source_type=None, supported_service=None, allocated_resource=None, x_request_id=None):
         """Show2dModelTrainingJobResponse
 
         The model defined in huaweicloud sdk
@@ -202,8 +200,6 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         :type is_background_replacement: bool
         :param worker_type: 转编译任务机型
         :type worker_type: list[str]
-        :param beauty_level: 美白等级。默认值0，不美白。
-        :type beauty_level: int
         :param voice_train_job_id: 声音训练任务id。
         :type voice_train_job_id: str
         :param flexus_retry_count: flexus版本任务剩余可以重训的次数，每重训一次减1，减到0时不可再重训。
@@ -260,7 +256,6 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         self._inference_data_process_eye_correction_mark_info = None
         self._is_background_replacement = None
         self._worker_type = None
-        self._beauty_level = None
         self._voice_train_job_id = None
         self._flexus_retry_count = None
         self._audio_source_type = None
@@ -346,8 +341,6 @@ class Show2dModelTrainingJobResponse(SdkResponse):
             self.is_background_replacement = is_background_replacement
         if worker_type is not None:
             self.worker_type = worker_type
-        if beauty_level is not None:
-            self.beauty_level = beauty_level
         if voice_train_job_id is not None:
             self.voice_train_job_id = voice_train_job_id
         if flexus_retry_count is not None:
@@ -1220,28 +1213,6 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         :type worker_type: list[str]
         """
         self._worker_type = worker_type
-
-    @property
-    def beauty_level(self):
-        """Gets the beauty_level of this Show2dModelTrainingJobResponse.
-
-        美白等级。默认值0，不美白。
-
-        :return: The beauty_level of this Show2dModelTrainingJobResponse.
-        :rtype: int
-        """
-        return self._beauty_level
-
-    @beauty_level.setter
-    def beauty_level(self, beauty_level):
-        """Sets the beauty_level of this Show2dModelTrainingJobResponse.
-
-        美白等级。默认值0，不美白。
-
-        :param beauty_level: The beauty_level of this Show2dModelTrainingJobResponse.
-        :type beauty_level: int
-        """
-        self._beauty_level = beauty_level
 
     @property
     def voice_train_job_id(self):

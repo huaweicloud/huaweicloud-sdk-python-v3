@@ -17,28 +17,42 @@ class ListOrganizationPoliciesRequest:
     sensitive_list = []
 
     openapi_types = {
-        'operation_type': 'str'
+        'operation_type': 'str',
+        'limit': 'int',
+        'offset': 'int'
     }
 
     attribute_map = {
-        'operation_type': 'operation_type'
+        'operation_type': 'operation_type',
+        'limit': 'limit',
+        'offset': 'offset'
     }
 
-    def __init__(self, operation_type=None):
+    def __init__(self, operation_type=None, limit=None, offset=None):
         """ListOrganizationPoliciesRequest
 
         The model defined in huaweicloud sdk
 
         :param operation_type: 组织策略类型
         :type operation_type: str
+        :param limit: 每页显示的条目数量，正整数
+        :type limit: int
+        :param offset: 偏移值，正整数
+        :type offset: int
         """
         
         
 
         self._operation_type = None
+        self._limit = None
+        self._offset = None
         self.discriminator = None
 
         self.operation_type = operation_type
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
 
     @property
     def operation_type(self):
@@ -61,6 +75,50 @@ class ListOrganizationPoliciesRequest:
         :type operation_type: str
         """
         self._operation_type = operation_type
+
+    @property
+    def limit(self):
+        """Gets the limit of this ListOrganizationPoliciesRequest.
+
+        每页显示的条目数量，正整数
+
+        :return: The limit of this ListOrganizationPoliciesRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListOrganizationPoliciesRequest.
+
+        每页显示的条目数量，正整数
+
+        :param limit: The limit of this ListOrganizationPoliciesRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def offset(self):
+        """Gets the offset of this ListOrganizationPoliciesRequest.
+
+        偏移值，正整数
+
+        :return: The offset of this ListOrganizationPoliciesRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ListOrganizationPoliciesRequest.
+
+        偏移值，正整数
+
+        :param offset: The offset of this ListOrganizationPoliciesRequest.
+        :type offset: int
+        """
+        self._offset = offset
 
     def to_dict(self):
         """Returns the model properties as a dict"""

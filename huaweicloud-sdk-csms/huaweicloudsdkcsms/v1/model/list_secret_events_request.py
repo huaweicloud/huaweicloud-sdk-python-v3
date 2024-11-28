@@ -33,7 +33,7 @@ class ListSecretEventsRequest:
 
         :param limit: 每页返回的个数。  默认值：50。
         :type limit: str
-        :param marker: 分页查询起始的资源id，为空时为查询第一页
+        :param marker: 分页查询起始的事件名称，为空时为查询第一页
         :type marker: str
         """
         
@@ -74,7 +74,7 @@ class ListSecretEventsRequest:
     def marker(self):
         """Gets the marker of this ListSecretEventsRequest.
 
-        分页查询起始的资源id，为空时为查询第一页
+        分页查询起始的事件名称，为空时为查询第一页
 
         :return: The marker of this ListSecretEventsRequest.
         :rtype: str
@@ -85,7 +85,7 @@ class ListSecretEventsRequest:
     def marker(self, marker):
         """Sets the marker of this ListSecretEventsRequest.
 
-        分页查询起始的资源id，为空时为查询第一页
+        分页查询起始的事件名称，为空时为查询第一页
 
         :param marker: The marker of this ListSecretEventsRequest.
         :type marker: str

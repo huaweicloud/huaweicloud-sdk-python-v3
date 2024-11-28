@@ -47,7 +47,7 @@ class LargeFilesCreateReq:
         :type file_type: str
         :param asset_id: 资产ID。
         :type asset_id: str
-        :param asset_file_category: 文件在资产中的分类。每种资产类型包含的文件分类不同。 * MAIN：主文件 * OTHER：其他文件
+        :param asset_file_category: 文件在资产中的分类。每种资产类型包含的文件分类不同。 * MAIN：主文件 * OTHER：其他文件 * PACKAGE：打包后的资产文件
         :type asset_file_category: str
         :param file_multipart_count: ORI4K文件分段上传数量，默认值为1
         :type file_multipart_count: int
@@ -164,7 +164,7 @@ class LargeFilesCreateReq:
     def asset_file_category(self):
         """Gets the asset_file_category of this LargeFilesCreateReq.
 
-        文件在资产中的分类。每种资产类型包含的文件分类不同。 * MAIN：主文件 * OTHER：其他文件
+        文件在资产中的分类。每种资产类型包含的文件分类不同。 * MAIN：主文件 * OTHER：其他文件 * PACKAGE：打包后的资产文件
 
         :return: The asset_file_category of this LargeFilesCreateReq.
         :rtype: str
@@ -175,7 +175,7 @@ class LargeFilesCreateReq:
     def asset_file_category(self, asset_file_category):
         """Sets the asset_file_category of this LargeFilesCreateReq.
 
-        文件在资产中的分类。每种资产类型包含的文件分类不同。 * MAIN：主文件 * OTHER：其他文件
+        文件在资产中的分类。每种资产类型包含的文件分类不同。 * MAIN：主文件 * OTHER：其他文件 * PACKAGE：打包后的资产文件
 
         :param asset_file_category: The asset_file_category of this LargeFilesCreateReq.
         :type asset_file_category: str

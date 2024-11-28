@@ -168,6 +168,7 @@ from huaweicloudsdkcce.v3.model.download_chart_request import DownloadChartReque
 from huaweicloudsdkcce.v3.model.download_chart_response import DownloadChartResponse
 from huaweicloudsdkcce.v3.model.eip_spec import EipSpec
 from huaweicloudsdkcce.v3.model.eip_spec_bandwidth import EipSpecBandwidth
+from huaweicloudsdkcce.v3.model.encryption_config import EncryptionConfig
 from huaweicloudsdkcce.v3.model.eni_network import EniNetwork
 from huaweicloudsdkcce.v3.model.eni_network_update import EniNetworkUpdate
 from huaweicloudsdkcce.v3.model.extension_scale_group import ExtensionScaleGroup

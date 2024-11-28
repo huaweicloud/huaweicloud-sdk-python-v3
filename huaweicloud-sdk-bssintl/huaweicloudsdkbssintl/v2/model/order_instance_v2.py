@@ -33,7 +33,10 @@ class OrderInstanceV2:
         'status': 'int',
         'effective_time': 'str',
         'expire_time': 'str',
-        'expire_policy': 'int'
+        'expire_policy': 'int',
+        'product_spec_desc': 'str',
+        'spec_size': 'decimal.Decimal',
+        'spec_size_measure_id': 'int'
     }
 
     attribute_map = {
@@ -53,10 +56,13 @@ class OrderInstanceV2:
         'status': 'status',
         'effective_time': 'effective_time',
         'expire_time': 'expire_time',
-        'expire_policy': 'expire_policy'
+        'expire_policy': 'expire_policy',
+        'product_spec_desc': 'product_spec_desc',
+        'spec_size': 'spec_size',
+        'spec_size_measure_id': 'spec_size_measure_id'
     }
 
-    def __init__(self, id=None, resource_id=None, resource_name=None, region_code=None, service_type_code=None, resource_type_code=None, resource_type_name=None, service_type_name=None, resource_spec_code=None, project_id=None, product_id=None, parent_resource_id=None, is_main_resource=None, status=None, effective_time=None, expire_time=None, expire_policy=None):
+    def __init__(self, id=None, resource_id=None, resource_name=None, region_code=None, service_type_code=None, resource_type_code=None, resource_type_name=None, service_type_name=None, resource_spec_code=None, project_id=None, product_id=None, parent_resource_id=None, is_main_resource=None, status=None, effective_time=None, expire_time=None, expire_policy=None, product_spec_desc=None, spec_size=None, spec_size_measure_id=None):
         """OrderInstanceV2
 
         The model defined in huaweicloud sdk
@@ -95,6 +101,12 @@ class OrderInstanceV2:
         :type expire_time: str
         :param expire_policy: 资源到期后的扣费策略： 0：到期进入宽限期1：到期转按需2：到期后自动删除（从生效中直接删除）3：到期后自动续费4：到期后冻结5：到期后删除（从保留期删除）  说明： 只有“3”表示该资源是自动续订，其他情况下，都是非自动续订下的到期策略。
         :type expire_policy: int
+        :param product_spec_desc: 产品规格描述
+        :type product_spec_desc: str
+        :param spec_size: 线性大小
+        :type spec_size: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
+        :param spec_size_measure_id: 线性大小单位
+        :type spec_size_measure_id: int
         """
         
         
@@ -116,6 +128,9 @@ class OrderInstanceV2:
         self._effective_time = None
         self._expire_time = None
         self._expire_policy = None
+        self._product_spec_desc = None
+        self._spec_size = None
+        self._spec_size_measure_id = None
         self.discriminator = None
 
         if id is not None:
@@ -152,6 +167,12 @@ class OrderInstanceV2:
             self.expire_time = expire_time
         if expire_policy is not None:
             self.expire_policy = expire_policy
+        if product_spec_desc is not None:
+            self.product_spec_desc = product_spec_desc
+        if spec_size is not None:
+            self.spec_size = spec_size
+        if spec_size_measure_id is not None:
+            self.spec_size_measure_id = spec_size_measure_id
 
     @property
     def id(self):
@@ -526,6 +547,72 @@ class OrderInstanceV2:
         :type expire_policy: int
         """
         self._expire_policy = expire_policy
+
+    @property
+    def product_spec_desc(self):
+        """Gets the product_spec_desc of this OrderInstanceV2.
+
+        产品规格描述
+
+        :return: The product_spec_desc of this OrderInstanceV2.
+        :rtype: str
+        """
+        return self._product_spec_desc
+
+    @product_spec_desc.setter
+    def product_spec_desc(self, product_spec_desc):
+        """Sets the product_spec_desc of this OrderInstanceV2.
+
+        产品规格描述
+
+        :param product_spec_desc: The product_spec_desc of this OrderInstanceV2.
+        :type product_spec_desc: str
+        """
+        self._product_spec_desc = product_spec_desc
+
+    @property
+    def spec_size(self):
+        """Gets the spec_size of this OrderInstanceV2.
+
+        线性大小
+
+        :return: The spec_size of this OrderInstanceV2.
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
+        """
+        return self._spec_size
+
+    @spec_size.setter
+    def spec_size(self, spec_size):
+        """Sets the spec_size of this OrderInstanceV2.
+
+        线性大小
+
+        :param spec_size: The spec_size of this OrderInstanceV2.
+        :type spec_size: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
+        """
+        self._spec_size = spec_size
+
+    @property
+    def spec_size_measure_id(self):
+        """Gets the spec_size_measure_id of this OrderInstanceV2.
+
+        线性大小单位
+
+        :return: The spec_size_measure_id of this OrderInstanceV2.
+        :rtype: int
+        """
+        return self._spec_size_measure_id
+
+    @spec_size_measure_id.setter
+    def spec_size_measure_id(self, spec_size_measure_id):
+        """Sets the spec_size_measure_id of this OrderInstanceV2.
+
+        线性大小单位
+
+        :param spec_size_measure_id: The spec_size_measure_id of this OrderInstanceV2.
+        :type spec_size_measure_id: int
+        """
+        self._spec_size_measure_id = spec_size_measure_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -6,8 +6,12 @@ from huaweicloudsdkkms.v2.kms_client import KmsClient
 from huaweicloudsdkkms.v2.kms_async_client import KmsAsyncClient
 
 from huaweicloudsdkkms.v2.model.action_resources import ActionResources
+from huaweicloudsdkkms.v2.model.alias_entity import AliasEntity
 from huaweicloudsdkkms.v2.model.api_link import ApiLink
 from huaweicloudsdkkms.v2.model.api_version_detail import ApiVersionDetail
+from huaweicloudsdkkms.v2.model.associate_alias_request import AssociateAliasRequest
+from huaweicloudsdkkms.v2.model.associate_alias_request_body import AssociateAliasRequestBody
+from huaweicloudsdkkms.v2.model.associate_alias_response import AssociateAliasResponse
 from huaweicloudsdkkms.v2.model.batch_create_kms_tags_request import BatchCreateKmsTagsRequest
 from huaweicloudsdkkms.v2.model.batch_create_kms_tags_request_body import BatchCreateKmsTagsRequestBody
 from huaweicloudsdkkms.v2.model.batch_create_kms_tags_response import BatchCreateKmsTagsResponse
@@ -17,6 +21,9 @@ from huaweicloudsdkkms.v2.model.cancel_key_deletion_request import CancelKeyDele
 from huaweicloudsdkkms.v2.model.cancel_key_deletion_response import CancelKeyDeletionResponse
 from huaweicloudsdkkms.v2.model.cancel_self_grant_request import CancelSelfGrantRequest
 from huaweicloudsdkkms.v2.model.cancel_self_grant_response import CancelSelfGrantResponse
+from huaweicloudsdkkms.v2.model.create_alias_request import CreateAliasRequest
+from huaweicloudsdkkms.v2.model.create_alias_request_body import CreateAliasRequestBody
+from huaweicloudsdkkms.v2.model.create_alias_response import CreateAliasResponse
 from huaweicloudsdkkms.v2.model.create_datakey_request import CreateDatakeyRequest
 from huaweicloudsdkkms.v2.model.create_datakey_request_body import CreateDatakeyRequestBody
 from huaweicloudsdkkms.v2.model.create_datakey_response import CreateDatakeyResponse
@@ -44,6 +51,9 @@ from huaweicloudsdkkms.v2.model.decrypt_data_response import DecryptDataResponse
 from huaweicloudsdkkms.v2.model.decrypt_datakey_request import DecryptDatakeyRequest
 from huaweicloudsdkkms.v2.model.decrypt_datakey_request_body import DecryptDatakeyRequestBody
 from huaweicloudsdkkms.v2.model.decrypt_datakey_response import DecryptDatakeyResponse
+from huaweicloudsdkkms.v2.model.delete_alias_request import DeleteAliasRequest
+from huaweicloudsdkkms.v2.model.delete_alias_request_body import DeleteAliasRequestBody
+from huaweicloudsdkkms.v2.model.delete_alias_response import DeleteAliasResponse
 from huaweicloudsdkkms.v2.model.delete_imported_key_material_request import DeleteImportedKeyMaterialRequest
 from huaweicloudsdkkms.v2.model.delete_imported_key_material_response import DeleteImportedKeyMaterialResponse
 from huaweicloudsdkkms.v2.model.delete_key_request import DeleteKeyRequest
@@ -87,6 +97,9 @@ from huaweicloudsdkkms.v2.model.key_status_info import KeyStatusInfo
 from huaweicloudsdkkms.v2.model.key_store_state_info import KeyStoreStateInfo
 from huaweicloudsdkkms.v2.model.keystore_details import KeystoreDetails
 from huaweicloudsdkkms.v2.model.keystore_info import KeystoreInfo
+from huaweicloudsdkkms.v2.model.list_alias_response_body import ListAliasResponseBody
+from huaweicloudsdkkms.v2.model.list_aliases_request import ListAliasesRequest
+from huaweicloudsdkkms.v2.model.list_aliases_response import ListAliasesResponse
 from huaweicloudsdkkms.v2.model.list_grants_request import ListGrantsRequest
 from huaweicloudsdkkms.v2.model.list_grants_request_body import ListGrantsRequestBody
 from huaweicloudsdkkms.v2.model.list_grants_response import ListGrantsResponse
@@ -108,6 +121,7 @@ from huaweicloudsdkkms.v2.model.list_retirable_grants_response import ListRetira
 from huaweicloudsdkkms.v2.model.list_support_regions_request import ListSupportRegionsRequest
 from huaweicloudsdkkms.v2.model.list_support_regions_response import ListSupportRegionsResponse
 from huaweicloudsdkkms.v2.model.operate_key_request_body import OperateKeyRequestBody
+from huaweicloudsdkkms.v2.model.page_info import PageInfo
 from huaweicloudsdkkms.v2.model.quotas import Quotas
 from huaweicloudsdkkms.v2.model.replicate_key_request import ReplicateKeyRequest
 from huaweicloudsdkkms.v2.model.replicate_key_request_body import ReplicateKeyRequestBody

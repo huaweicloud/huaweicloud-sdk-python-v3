@@ -21,6 +21,7 @@ class AssetSummary:
         'title': 'str',
         'description': 'str',
         'duration': 'int',
+        'duration_ms': 'int',
         'size': 'int',
         'original_url': 'str',
         'category': 'str',
@@ -39,6 +40,7 @@ class AssetSummary:
         'title': 'title',
         'description': 'description',
         'duration': 'duration',
+        'duration_ms': 'duration_ms',
         'size': 'size',
         'original_url': 'original_url',
         'category': 'category',
@@ -52,7 +54,7 @@ class AssetSummary:
         'media_type': 'media_type'
     }
 
-    def __init__(self, asset_id=None, title=None, description=None, duration=None, size=None, original_url=None, category=None, covers=None, create_time=None, asset_status=None, transcode_status=None, thumbnail_status=None, review_status=None, exec_desc=None, media_type=None):
+    def __init__(self, asset_id=None, title=None, description=None, duration=None, duration_ms=None, size=None, original_url=None, category=None, covers=None, create_time=None, asset_status=None, transcode_status=None, thumbnail_status=None, review_status=None, exec_desc=None, media_type=None):
         """AssetSummary
 
         The model defined in huaweicloud sdk
@@ -65,6 +67,8 @@ class AssetSummary:
         :type description: str
         :param duration: 媒资时长。  单位：秒。
         :type duration: int
+        :param duration_ms: 视频时长，单位毫秒。
+        :type duration_ms: int
         :param size: 媒资大小。  单位：字节。
         :type size: int
         :param original_url: 原始播放url。
@@ -95,6 +99,7 @@ class AssetSummary:
         self._title = None
         self._description = None
         self._duration = None
+        self._duration_ms = None
         self._size = None
         self._original_url = None
         self._category = None
@@ -113,6 +118,8 @@ class AssetSummary:
         if description is not None:
             self.description = description
         self.duration = duration
+        if duration_ms is not None:
+            self.duration_ms = duration_ms
         self.size = size
         if original_url is not None:
             self.original_url = original_url
@@ -221,6 +228,28 @@ class AssetSummary:
         :type duration: int
         """
         self._duration = duration
+
+    @property
+    def duration_ms(self):
+        """Gets the duration_ms of this AssetSummary.
+
+        视频时长，单位毫秒。
+
+        :return: The duration_ms of this AssetSummary.
+        :rtype: int
+        """
+        return self._duration_ms
+
+    @duration_ms.setter
+    def duration_ms(self, duration_ms):
+        """Sets the duration_ms of this AssetSummary.
+
+        视频时长，单位毫秒。
+
+        :param duration_ms: The duration_ms of this AssetSummary.
+        :type duration_ms: int
+        """
+        self._duration_ms = duration_ms
 
     @property
     def size(self):

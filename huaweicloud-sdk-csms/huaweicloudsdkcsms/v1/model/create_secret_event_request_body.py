@@ -35,11 +35,11 @@ class CreateSecretEventRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param name: 新创建事件通知的名称。  约束：取值范围为1到64个字符，满足正则匹配“^[a-zA-Z0-9_-]{1,64}$”。 
+        :param name: 新创建事件通知的名称。  约束：取值范围为1到64个字符，满足正则匹配“^[a-zA-Z0-9_-]{1,64}$”。
         :type name: str
-        :param event_types: 本次事件通知的基础事件列表，基础事件类型如下。  SECRET_VERSION_CREATED：版本创建 SECRET_VERSION_EXPIRED：版本过期 SECRET_ROTATED：凭据轮转 SECRET_DELETED：凭据删除  列表包含的基础事件类型不能重复。 
+        :param event_types: 本次事件通知的基础事件列表，基础事件类型如下。  - SECRET_VERSION_CREATED：版本创建 - SECRET_VERSION_EXPIRED：版本过期 - SECRET_ROTATED：凭据轮转 - SECRET_DELETED：凭据删除 - SECRET_ROTATED_FAILED:凭据轮转失败  列表包含的基础事件类型不能重复。
         :type event_types: list[str]
-        :param state: 控制事件是否生效，只有启用状态才能触发包含的基础事件类型  ENABLED：启用 DISABLED：禁用 
+        :param state: 控制事件是否生效，只有启用状态才能触发包含的基础事件类型  ENABLED：启用 DISABLED：禁用
         :type state: str
         :param notification: 
         :type notification: :class:`huaweicloudsdkcsms.v1.Notification`
@@ -62,7 +62,7 @@ class CreateSecretEventRequestBody:
     def name(self):
         """Gets the name of this CreateSecretEventRequestBody.
 
-        新创建事件通知的名称。  约束：取值范围为1到64个字符，满足正则匹配“^[a-zA-Z0-9_-]{1,64}$”。 
+        新创建事件通知的名称。  约束：取值范围为1到64个字符，满足正则匹配“^[a-zA-Z0-9_-]{1,64}$”。
 
         :return: The name of this CreateSecretEventRequestBody.
         :rtype: str
@@ -73,7 +73,7 @@ class CreateSecretEventRequestBody:
     def name(self, name):
         """Sets the name of this CreateSecretEventRequestBody.
 
-        新创建事件通知的名称。  约束：取值范围为1到64个字符，满足正则匹配“^[a-zA-Z0-9_-]{1,64}$”。 
+        新创建事件通知的名称。  约束：取值范围为1到64个字符，满足正则匹配“^[a-zA-Z0-9_-]{1,64}$”。
 
         :param name: The name of this CreateSecretEventRequestBody.
         :type name: str
@@ -84,7 +84,7 @@ class CreateSecretEventRequestBody:
     def event_types(self):
         """Gets the event_types of this CreateSecretEventRequestBody.
 
-        本次事件通知的基础事件列表，基础事件类型如下。  SECRET_VERSION_CREATED：版本创建 SECRET_VERSION_EXPIRED：版本过期 SECRET_ROTATED：凭据轮转 SECRET_DELETED：凭据删除  列表包含的基础事件类型不能重复。 
+        本次事件通知的基础事件列表，基础事件类型如下。  - SECRET_VERSION_CREATED：版本创建 - SECRET_VERSION_EXPIRED：版本过期 - SECRET_ROTATED：凭据轮转 - SECRET_DELETED：凭据删除 - SECRET_ROTATED_FAILED:凭据轮转失败  列表包含的基础事件类型不能重复。
 
         :return: The event_types of this CreateSecretEventRequestBody.
         :rtype: list[str]
@@ -95,7 +95,7 @@ class CreateSecretEventRequestBody:
     def event_types(self, event_types):
         """Sets the event_types of this CreateSecretEventRequestBody.
 
-        本次事件通知的基础事件列表，基础事件类型如下。  SECRET_VERSION_CREATED：版本创建 SECRET_VERSION_EXPIRED：版本过期 SECRET_ROTATED：凭据轮转 SECRET_DELETED：凭据删除  列表包含的基础事件类型不能重复。 
+        本次事件通知的基础事件列表，基础事件类型如下。  - SECRET_VERSION_CREATED：版本创建 - SECRET_VERSION_EXPIRED：版本过期 - SECRET_ROTATED：凭据轮转 - SECRET_DELETED：凭据删除 - SECRET_ROTATED_FAILED:凭据轮转失败  列表包含的基础事件类型不能重复。
 
         :param event_types: The event_types of this CreateSecretEventRequestBody.
         :type event_types: list[str]
@@ -106,7 +106,7 @@ class CreateSecretEventRequestBody:
     def state(self):
         """Gets the state of this CreateSecretEventRequestBody.
 
-        控制事件是否生效，只有启用状态才能触发包含的基础事件类型  ENABLED：启用 DISABLED：禁用 
+        控制事件是否生效，只有启用状态才能触发包含的基础事件类型  ENABLED：启用 DISABLED：禁用
 
         :return: The state of this CreateSecretEventRequestBody.
         :rtype: str
@@ -117,7 +117,7 @@ class CreateSecretEventRequestBody:
     def state(self, state):
         """Sets the state of this CreateSecretEventRequestBody.
 
-        控制事件是否生效，只有启用状态才能触发包含的基础事件类型  ENABLED：启用 DISABLED：禁用 
+        控制事件是否生效，只有启用状态才能触发包含的基础事件类型  ENABLED：启用 DISABLED：禁用
 
         :param state: The state of this CreateSecretEventRequestBody.
         :type state: str

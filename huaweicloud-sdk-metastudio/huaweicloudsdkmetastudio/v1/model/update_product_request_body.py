@@ -51,7 +51,7 @@ class UpdateProductRequestBody:
         :type cover: :class:`huaweicloudsdkmetastudio.v1.ProductCoverInfo`
         :param text_list: 文本列表
         :type text_list: list[:class:`huaweicloudsdkmetastudio.v1.ProductTextInfo`]
-        :param asset_list: 素材资产列表
+        :param asset_list: 资产列表,仅支持图片、视频、音频资产
         :type asset_list: list[:class:`huaweicloudsdkmetastudio.v1.ProductMediaInfo`]
         :param state: 商品状态枚举 * ACTIVED：已激活 * UNACTIVED：未激活
         :type state: str
@@ -192,7 +192,7 @@ class UpdateProductRequestBody:
     def asset_list(self):
         """Gets the asset_list of this UpdateProductRequestBody.
 
-        素材资产列表
+        资产列表,仅支持图片、视频、音频资产
 
         :return: The asset_list of this UpdateProductRequestBody.
         :rtype: list[:class:`huaweicloudsdkmetastudio.v1.ProductMediaInfo`]
@@ -203,7 +203,7 @@ class UpdateProductRequestBody:
     def asset_list(self, asset_list):
         """Sets the asset_list of this UpdateProductRequestBody.
 
-        素材资产列表
+        资产列表,仅支持图片、视频、音频资产
 
         :param asset_list: The asset_list of this UpdateProductRequestBody.
         :type asset_list: list[:class:`huaweicloudsdkmetastudio.v1.ProductMediaInfo`]

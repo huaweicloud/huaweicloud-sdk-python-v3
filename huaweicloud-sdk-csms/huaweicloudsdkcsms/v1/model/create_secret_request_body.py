@@ -27,7 +27,8 @@ class CreateSecretRequestBody:
         'rotation_period': 'str',
         'rotation_config': 'str',
         'event_subscriptions': 'list[str]',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'rotation_func_urn': 'str'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class CreateSecretRequestBody:
         'rotation_period': 'rotation_period',
         'rotation_config': 'rotation_config',
         'event_subscriptions': 'event_subscriptions',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'rotation_func_urn': 'rotation_func_urn'
     }
 
-    def __init__(self, name=None, kms_key_id=None, description=None, secret_binary=None, secret_string=None, secret_type=None, auto_rotation=None, rotation_period=None, rotation_config=None, event_subscriptions=None, enterprise_project_id=None):
+    def __init__(self, name=None, kms_key_id=None, description=None, secret_binary=None, secret_string=None, secret_type=None, auto_rotation=None, rotation_period=None, rotation_config=None, event_subscriptions=None, enterprise_project_id=None, rotation_func_urn=None):
         """CreateSecretRequestBody
 
         The model defined in huaweicloud sdk
@@ -55,22 +57,24 @@ class CreateSecretRequestBody:
         :type kms_key_id: str
         :param description: 凭据的描述信息。  约束：2048字节。
         :type description: str
-        :param secret_binary: 二进制类型凭据在base64编码后的明文，凭据管理服务将其加密后，存入凭据的初始版本中。  类型：base64编码的二进制数据对象。  约束：secret_binary和secret_string必须且只能设置一个，最大32K。 当secret_type为RDS时。凭据值格式为： \&quot;{&#39;users&#39;:[{&#39;name&#39;:&#39;&#39;,&#39;password&#39;:&#39;&#39;}]}\&quot; 其中name为RDS实例账号名称，password为RDS实例账号口令
+        :param secret_binary: 二进制类型凭据在base64编码后的明文，凭据管理服务将其加密后，存入凭据的初始版本中。  类型：base64编码的二进制数据对象。  约束：secret_binary和secret_string必须且只能设置一个，最大32K。
         :type secret_binary: str
         :param secret_string: 文本类型凭据的明文，凭据管理服务将其加密后，存入凭据的初始版本中。  约束：secret_binary和secret_string必须且只能设置一个，最大32K。
         :type secret_string: str
-        :param secret_type: 凭据类型  取值 ： COMMON ：通用凭据(默认)。用于应用系统中的各种敏感信息储存。         RDS ：RDS凭据 。专门针对RDS的凭据，用于存储RDS的账号信息。
+        :param secret_type: 凭据类型   - COMMON：通用凭据(默认)。用于应用系统中的各种敏感信息储存。  - RDS：RDS凭据 。专门针对RDS的凭据，用于存储RDS的账号信息。（已不支持，使用RDS-FG替代）  - RDS-FG：RDS凭据 。专门针对RDS的凭据，用于存储RDS的账号信息。  - GaussDB-FG：GaussDB凭据。专门针对GaussDB的凭据，用于存储GaussDB的账号信息。
         :type secret_type: str
         :param auto_rotation: 自动轮转  取值：true 开启 ,false 关闭 (默认)
         :type auto_rotation: bool
         :param rotation_period: 轮转周期  约束：6小时-8,760小时 （365天）  类型：Integer[unit] ，Integer表示时间长度 。unit表示时间单位，d（天）、h（小时）、m（分钟）、s（秒）。例如 1d 表示一天，24h也表示一天  说明：当开启自动轮转时，必须填写该值
         :type rotation_period: str
-        :param rotation_config: 轮转配置  约束：范围不超过1024个字符。  当secret_type为RDS时，配置为{\&quot;rds_instance_id\&quot;:\&quot;\&quot;,\&quot;Secret_sub_type\&quot;:\&quot;\&quot;}  说明：当secret_type为RDS时，必须填写该值  rds_instance_id为RDS的实例ID,Secret_sub_type为轮转子类型，取值为：SingleUser，MultiUser。  SingleUser：指定轮转类型为单用户模式轮转，每次轮转将指定账号重置为新的口令。  MultiUser：指定轮转类型为双用户模式轮转，SYSCURRENT和SYSPREVIOUS分别引用其中一个账号。凭据轮转时，SYSPREVIOUS引用的账号口令会被重置为新的随机口令，随后凭据交换SYSCURRENT和SYSPREVIOUS对RDS账号的引用。
+        :param rotation_config: 轮转配置  约束：范围不超过1024个字符。  当secret_type为RDS-FG、GaussDB-FG时，配置为{\&quot;InstanceId\&quot;:\&quot;\&quot;,\&quot;SecretSubType\&quot;:\&quot;\&quot;}  说明：当secret_type为RDS-FG、GaussDB-FG时，必须填写该值  InstanceId为实例ID,SecretSubType为轮转子类型，取值为：SingleUser，MultiUser。  SingleUser：指定轮转类型为单用户模式轮转，每次轮转将指定账号重置为新的口令。  MultiUser：指定轮转类型为双用户模式轮转，SYSCURRENT和SYSPREVIOUS分别引用其中一个账号。凭据轮转时，SYSPREVIOUS引用的账号口令会被重置为新的随机口令，随后凭据交换SYSCURRENT和SYSPREVIOUS对账号的引用。
         :type rotation_config: str
         :param event_subscriptions: 凭据订阅的事件列表，当前最大可订阅一个事件。当事件包含的基础事件触发时，通知消息将发送到事件对应的通知主题。
         :type event_subscriptions: list[str]
         :param enterprise_project_id: 该参数针对企业用户使用。如果您是企业用户，且已创建企业项目，则请从下拉列表中为密钥选择需要绑定的企业项目，默认项目为“default”。 未开通企业管理的用户页面则没有“企业项目”参数项，无需进行配置。
         :type enterprise_project_id: str
+        :param rotation_func_urn: FunctionGraph函数的urn。
+        :type rotation_func_urn: str
         """
         
         
@@ -86,6 +90,7 @@ class CreateSecretRequestBody:
         self._rotation_config = None
         self._event_subscriptions = None
         self._enterprise_project_id = None
+        self._rotation_func_urn = None
         self.discriminator = None
 
         self.name = name
@@ -109,6 +114,8 @@ class CreateSecretRequestBody:
             self.event_subscriptions = event_subscriptions
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if rotation_func_urn is not None:
+            self.rotation_func_urn = rotation_func_urn
 
     @property
     def name(self):
@@ -180,7 +187,7 @@ class CreateSecretRequestBody:
     def secret_binary(self):
         """Gets the secret_binary of this CreateSecretRequestBody.
 
-        二进制类型凭据在base64编码后的明文，凭据管理服务将其加密后，存入凭据的初始版本中。  类型：base64编码的二进制数据对象。  约束：secret_binary和secret_string必须且只能设置一个，最大32K。 当secret_type为RDS时。凭据值格式为： \"{'users':[{'name':'','password':''}]}\" 其中name为RDS实例账号名称，password为RDS实例账号口令
+        二进制类型凭据在base64编码后的明文，凭据管理服务将其加密后，存入凭据的初始版本中。  类型：base64编码的二进制数据对象。  约束：secret_binary和secret_string必须且只能设置一个，最大32K。
 
         :return: The secret_binary of this CreateSecretRequestBody.
         :rtype: str
@@ -191,7 +198,7 @@ class CreateSecretRequestBody:
     def secret_binary(self, secret_binary):
         """Sets the secret_binary of this CreateSecretRequestBody.
 
-        二进制类型凭据在base64编码后的明文，凭据管理服务将其加密后，存入凭据的初始版本中。  类型：base64编码的二进制数据对象。  约束：secret_binary和secret_string必须且只能设置一个，最大32K。 当secret_type为RDS时。凭据值格式为： \"{'users':[{'name':'','password':''}]}\" 其中name为RDS实例账号名称，password为RDS实例账号口令
+        二进制类型凭据在base64编码后的明文，凭据管理服务将其加密后，存入凭据的初始版本中。  类型：base64编码的二进制数据对象。  约束：secret_binary和secret_string必须且只能设置一个，最大32K。
 
         :param secret_binary: The secret_binary of this CreateSecretRequestBody.
         :type secret_binary: str
@@ -224,7 +231,7 @@ class CreateSecretRequestBody:
     def secret_type(self):
         """Gets the secret_type of this CreateSecretRequestBody.
 
-        凭据类型  取值 ： COMMON ：通用凭据(默认)。用于应用系统中的各种敏感信息储存。         RDS ：RDS凭据 。专门针对RDS的凭据，用于存储RDS的账号信息。
+        凭据类型   - COMMON：通用凭据(默认)。用于应用系统中的各种敏感信息储存。  - RDS：RDS凭据 。专门针对RDS的凭据，用于存储RDS的账号信息。（已不支持，使用RDS-FG替代）  - RDS-FG：RDS凭据 。专门针对RDS的凭据，用于存储RDS的账号信息。  - GaussDB-FG：GaussDB凭据。专门针对GaussDB的凭据，用于存储GaussDB的账号信息。
 
         :return: The secret_type of this CreateSecretRequestBody.
         :rtype: str
@@ -235,7 +242,7 @@ class CreateSecretRequestBody:
     def secret_type(self, secret_type):
         """Sets the secret_type of this CreateSecretRequestBody.
 
-        凭据类型  取值 ： COMMON ：通用凭据(默认)。用于应用系统中的各种敏感信息储存。         RDS ：RDS凭据 。专门针对RDS的凭据，用于存储RDS的账号信息。
+        凭据类型   - COMMON：通用凭据(默认)。用于应用系统中的各种敏感信息储存。  - RDS：RDS凭据 。专门针对RDS的凭据，用于存储RDS的账号信息。（已不支持，使用RDS-FG替代）  - RDS-FG：RDS凭据 。专门针对RDS的凭据，用于存储RDS的账号信息。  - GaussDB-FG：GaussDB凭据。专门针对GaussDB的凭据，用于存储GaussDB的账号信息。
 
         :param secret_type: The secret_type of this CreateSecretRequestBody.
         :type secret_type: str
@@ -290,7 +297,7 @@ class CreateSecretRequestBody:
     def rotation_config(self):
         """Gets the rotation_config of this CreateSecretRequestBody.
 
-        轮转配置  约束：范围不超过1024个字符。  当secret_type为RDS时，配置为{\"rds_instance_id\":\"\",\"Secret_sub_type\":\"\"}  说明：当secret_type为RDS时，必须填写该值  rds_instance_id为RDS的实例ID,Secret_sub_type为轮转子类型，取值为：SingleUser，MultiUser。  SingleUser：指定轮转类型为单用户模式轮转，每次轮转将指定账号重置为新的口令。  MultiUser：指定轮转类型为双用户模式轮转，SYSCURRENT和SYSPREVIOUS分别引用其中一个账号。凭据轮转时，SYSPREVIOUS引用的账号口令会被重置为新的随机口令，随后凭据交换SYSCURRENT和SYSPREVIOUS对RDS账号的引用。
+        轮转配置  约束：范围不超过1024个字符。  当secret_type为RDS-FG、GaussDB-FG时，配置为{\"InstanceId\":\"\",\"SecretSubType\":\"\"}  说明：当secret_type为RDS-FG、GaussDB-FG时，必须填写该值  InstanceId为实例ID,SecretSubType为轮转子类型，取值为：SingleUser，MultiUser。  SingleUser：指定轮转类型为单用户模式轮转，每次轮转将指定账号重置为新的口令。  MultiUser：指定轮转类型为双用户模式轮转，SYSCURRENT和SYSPREVIOUS分别引用其中一个账号。凭据轮转时，SYSPREVIOUS引用的账号口令会被重置为新的随机口令，随后凭据交换SYSCURRENT和SYSPREVIOUS对账号的引用。
 
         :return: The rotation_config of this CreateSecretRequestBody.
         :rtype: str
@@ -301,7 +308,7 @@ class CreateSecretRequestBody:
     def rotation_config(self, rotation_config):
         """Sets the rotation_config of this CreateSecretRequestBody.
 
-        轮转配置  约束：范围不超过1024个字符。  当secret_type为RDS时，配置为{\"rds_instance_id\":\"\",\"Secret_sub_type\":\"\"}  说明：当secret_type为RDS时，必须填写该值  rds_instance_id为RDS的实例ID,Secret_sub_type为轮转子类型，取值为：SingleUser，MultiUser。  SingleUser：指定轮转类型为单用户模式轮转，每次轮转将指定账号重置为新的口令。  MultiUser：指定轮转类型为双用户模式轮转，SYSCURRENT和SYSPREVIOUS分别引用其中一个账号。凭据轮转时，SYSPREVIOUS引用的账号口令会被重置为新的随机口令，随后凭据交换SYSCURRENT和SYSPREVIOUS对RDS账号的引用。
+        轮转配置  约束：范围不超过1024个字符。  当secret_type为RDS-FG、GaussDB-FG时，配置为{\"InstanceId\":\"\",\"SecretSubType\":\"\"}  说明：当secret_type为RDS-FG、GaussDB-FG时，必须填写该值  InstanceId为实例ID,SecretSubType为轮转子类型，取值为：SingleUser，MultiUser。  SingleUser：指定轮转类型为单用户模式轮转，每次轮转将指定账号重置为新的口令。  MultiUser：指定轮转类型为双用户模式轮转，SYSCURRENT和SYSPREVIOUS分别引用其中一个账号。凭据轮转时，SYSPREVIOUS引用的账号口令会被重置为新的随机口令，随后凭据交换SYSCURRENT和SYSPREVIOUS对账号的引用。
 
         :param rotation_config: The rotation_config of this CreateSecretRequestBody.
         :type rotation_config: str
@@ -351,6 +358,28 @@ class CreateSecretRequestBody:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def rotation_func_urn(self):
+        """Gets the rotation_func_urn of this CreateSecretRequestBody.
+
+        FunctionGraph函数的urn。
+
+        :return: The rotation_func_urn of this CreateSecretRequestBody.
+        :rtype: str
+        """
+        return self._rotation_func_urn
+
+    @rotation_func_urn.setter
+    def rotation_func_urn(self, rotation_func_urn):
+        """Sets the rotation_func_urn of this CreateSecretRequestBody.
+
+        FunctionGraph函数的urn。
+
+        :param rotation_func_urn: The rotation_func_urn of this CreateSecretRequestBody.
+        :type rotation_func_urn: str
+        """
+        self._rotation_func_urn = rotation_func_urn
 
     def to_dict(self):
         """Returns the model properties as a dict"""

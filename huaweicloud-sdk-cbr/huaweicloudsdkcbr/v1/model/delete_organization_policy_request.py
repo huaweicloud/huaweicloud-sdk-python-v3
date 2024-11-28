@@ -29,7 +29,7 @@ class DeleteOrganizationPolicyRequest:
 
         The model defined in huaweicloud sdk
 
-        :param organization_policy_id: 资源策略ID
+        :param organization_policy_id: 组织策略ID
         :type organization_policy_id: str
         """
         
@@ -44,7 +44,7 @@ class DeleteOrganizationPolicyRequest:
     def organization_policy_id(self):
         """Gets the organization_policy_id of this DeleteOrganizationPolicyRequest.
 
-        资源策略ID
+        组织策略ID
 
         :return: The organization_policy_id of this DeleteOrganizationPolicyRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class DeleteOrganizationPolicyRequest:
     def organization_policy_id(self, organization_policy_id):
         """Sets the organization_policy_id of this DeleteOrganizationPolicyRequest.
 
-        资源策略ID
+        组织策略ID
 
         :param organization_policy_id: The organization_policy_id of this DeleteOrganizationPolicyRequest.
         :type organization_policy_id: str

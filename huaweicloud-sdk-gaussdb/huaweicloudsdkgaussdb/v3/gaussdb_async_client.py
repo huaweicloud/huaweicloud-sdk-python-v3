@@ -2220,6 +2220,75 @@ class GaussDBAsyncClient(Client):
 
         return http_info
 
+    def download_slow_log_file_async(self, request):
+        """获取慢日志下载链接
+
+        获取慢日志下载链接
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DownloadSlowLogFile
+        :type request: :class:`huaweicloudsdkgaussdb.v3.DownloadSlowLogFileRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.DownloadSlowLogFileResponse`
+        """
+        http_info = self._download_slow_log_file_http_info(request)
+        return self._call_api(**http_info)
+
+    def download_slow_log_file_async_invoker(self, request):
+        http_info = self._download_slow_log_file_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _download_slow_log_file_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/{node_id}/slowlog-download",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadSlowLogFileResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'node_id' in local_var_params:
+            path_params['node_id'] = local_var_params['node_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def expand_gauss_my_sql_instance_volume_async(self, request):
         """包周期存储扩容
 
@@ -6721,6 +6790,73 @@ class GaussDBAsyncClient(Client):
 
         return http_info
 
+    def show_multi_tenant_async(self, request):
+        """查询多租特性开关状态
+
+        查询多租特性开关状态。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowMultiTenant
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowMultiTenantRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowMultiTenantResponse`
+        """
+        http_info = self._show_multi_tenant_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_multi_tenant_async_invoker(self, request):
+        http_info = self._show_multi_tenant_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_multi_tenant_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/multi-tenant",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMultiTenantResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_proxy_configurations_async(self, request):
         """查询数据库代理内核参数。
 
@@ -7062,6 +7198,75 @@ class GaussDBAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_slow_log_statistics_async(self, request):
+        """查询慢日志统计信息
+
+        查询慢日志统计信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowSlowLogStatistics
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowSlowLogStatisticsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowSlowLogStatisticsResponse`
+        """
+        http_info = self._show_slow_log_statistics_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_slow_log_statistics_async_invoker(self, request):
+        http_info = self._show_slow_log_statistics_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_slow_log_statistics_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/slow-logs/statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSlowLogStatisticsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -8622,6 +8827,75 @@ class GaussDBAsyncClient(Client):
             "resource_path": "/v3/{project_id}/instances/{instance_id}/monitor-policy",
             "request_type": request.__class__.__name__,
             "response_type": "UpdateInstanceMonitorResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_multi_tenant_async(self, request):
+        """开启或者关闭多租特性
+
+        开启或者关闭多租特性。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateMultiTenant
+        :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateMultiTenantRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateMultiTenantResponse`
+        """
+        http_info = self._update_multi_tenant_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_multi_tenant_async_invoker(self, request):
+        http_info = self._update_multi_tenant_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_multi_tenant_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/multi-tenant",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateMultiTenantResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

@@ -62,7 +62,7 @@ class ShowProductResponse(SdkResponse):
         :type cover: :class:`huaweicloudsdkmetastudio.v1.ProductCoverDetailInfo`
         :param text_list: 文本列表
         :type text_list: list[:class:`huaweicloudsdkmetastudio.v1.ProductTextInfo`]
-        :param asset_list: 素材资产列表
+        :param asset_list: 资产列表,仅支持图片、视频、音频资产
         :type asset_list: list[:class:`huaweicloudsdkmetastudio.v1.ProductMediaDetailInfo`]
         :param create_time: 商品创建时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
         :type create_time: str
@@ -244,7 +244,7 @@ class ShowProductResponse(SdkResponse):
     def asset_list(self):
         """Gets the asset_list of this ShowProductResponse.
 
-        素材资产列表
+        资产列表,仅支持图片、视频、音频资产
 
         :return: The asset_list of this ShowProductResponse.
         :rtype: list[:class:`huaweicloudsdkmetastudio.v1.ProductMediaDetailInfo`]
@@ -255,7 +255,7 @@ class ShowProductResponse(SdkResponse):
     def asset_list(self, asset_list):
         """Sets the asset_list of this ShowProductResponse.
 
-        素材资产列表
+        资产列表,仅支持图片、视频、音频资产
 
         :param asset_list: The asset_list of this ShowProductResponse.
         :type asset_list: list[:class:`huaweicloudsdkmetastudio.v1.ProductMediaDetailInfo`]

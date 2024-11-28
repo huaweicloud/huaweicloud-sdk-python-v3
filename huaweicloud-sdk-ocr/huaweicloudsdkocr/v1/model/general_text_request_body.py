@@ -23,7 +23,8 @@ class GeneralTextRequestBody:
         'quick_mode': 'bool',
         'character_mode': 'bool',
         'language': 'str',
-        'single_orientation_mode': 'bool'
+        'single_orientation_mode': 'bool',
+        'pdf_page_number': 'int'
     }
 
     attribute_map = {
@@ -33,15 +34,16 @@ class GeneralTextRequestBody:
         'quick_mode': 'quick_mode',
         'character_mode': 'character_mode',
         'language': 'language',
-        'single_orientation_mode': 'single_orientation_mode'
+        'single_orientation_mode': 'single_orientation_mode',
+        'pdf_page_number': 'pdf_page_number'
     }
 
-    def __init__(self, image=None, url=None, detect_direction=None, quick_mode=None, character_mode=None, language=None, single_orientation_mode=None):
+    def __init__(self, image=None, url=None, detect_direction=None, quick_mode=None, character_mode=None, language=None, single_orientation_mode=None, pdf_page_number=None):
         """GeneralTextRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param image: 与url二选一  图像数据，base64编码，要求base64编码后大小不超过10MB。图片最小边不小于15px，最长边不超过4096px。支持JPEG、JPG、PNG、BMP、TIFF格式。  图片文件Base64编码字符串，[点击[这里](https://support.huaweicloud.com/ocr_faq/ocr_01_0032.html)](tag:hc)[点击[这里](https://support.huaweicloud.com/intl/zh-cn/ocr_faq/ocr_01_0032.html)](tag:hk)查看详细获取方式。     
+        :param image: 与url二选一  图像数据，base64编码，要求base64编码后大小不超过10MB。图片最小边不小于15px，最长边不超过4096px。支持JPEG、JPG、PNG、BMP、GIF、TIFF、WEBP、PCX、ICO、PSD、PDF格式。  图片文件Base64编码字符串，[点击[这里](https://support.huaweicloud.com/ocr_faq/ocr_01_0032.html)](tag:hc)[点击[这里](https://support.huaweicloud.com/intl/zh-cn/ocr_faq/ocr_01_0032.html)](tag:hk)查看详细获取方式。     
         :type image: str
         :param url: 与image二选一 图片的URL路径，目前支持： - 公网http/https url - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，[详情参见[配置OBS访问权限](https://support.huaweicloud.com/api-ocr/ocr_03_0132.html)。](tag:hc)[详情参见[配置OBS访问权限](https://support.huaweicloud.com/intl/zh-cn/api-ocr/ocr_03_0132.html)。](tag:hk)  &gt; 说明： - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 - url中不能存在中文字符，若存在，中文需要进行utf8编码。 
         :type url: str
@@ -55,6 +57,8 @@ class GeneralTextRequestBody:
         :type language: str
         :param single_orientation_mode: 单朝向模式开关。可选值包括： - true：打开单朝向模式 - false：关闭单朝向模式  未传入该参数时默认为false，即默认图片中的字段为多朝向。 
         :type single_orientation_mode: bool
+        :param pdf_page_number: 指定PDF页码识别。传入该参数时，则识别指定页码的内容。如果不传该参数，则默认识别第1页。 
+        :type pdf_page_number: int
         """
         
         
@@ -66,6 +70,7 @@ class GeneralTextRequestBody:
         self._character_mode = None
         self._language = None
         self._single_orientation_mode = None
+        self._pdf_page_number = None
         self.discriminator = None
 
         if image is not None:
@@ -82,12 +87,14 @@ class GeneralTextRequestBody:
             self.language = language
         if single_orientation_mode is not None:
             self.single_orientation_mode = single_orientation_mode
+        if pdf_page_number is not None:
+            self.pdf_page_number = pdf_page_number
 
     @property
     def image(self):
         """Gets the image of this GeneralTextRequestBody.
 
-        与url二选一  图像数据，base64编码，要求base64编码后大小不超过10MB。图片最小边不小于15px，最长边不超过4096px。支持JPEG、JPG、PNG、BMP、TIFF格式。  图片文件Base64编码字符串，[点击[这里](https://support.huaweicloud.com/ocr_faq/ocr_01_0032.html)](tag:hc)[点击[这里](https://support.huaweicloud.com/intl/zh-cn/ocr_faq/ocr_01_0032.html)](tag:hk)查看详细获取方式。     
+        与url二选一  图像数据，base64编码，要求base64编码后大小不超过10MB。图片最小边不小于15px，最长边不超过4096px。支持JPEG、JPG、PNG、BMP、GIF、TIFF、WEBP、PCX、ICO、PSD、PDF格式。  图片文件Base64编码字符串，[点击[这里](https://support.huaweicloud.com/ocr_faq/ocr_01_0032.html)](tag:hc)[点击[这里](https://support.huaweicloud.com/intl/zh-cn/ocr_faq/ocr_01_0032.html)](tag:hk)查看详细获取方式。     
 
         :return: The image of this GeneralTextRequestBody.
         :rtype: str
@@ -98,7 +105,7 @@ class GeneralTextRequestBody:
     def image(self, image):
         """Sets the image of this GeneralTextRequestBody.
 
-        与url二选一  图像数据，base64编码，要求base64编码后大小不超过10MB。图片最小边不小于15px，最长边不超过4096px。支持JPEG、JPG、PNG、BMP、TIFF格式。  图片文件Base64编码字符串，[点击[这里](https://support.huaweicloud.com/ocr_faq/ocr_01_0032.html)](tag:hc)[点击[这里](https://support.huaweicloud.com/intl/zh-cn/ocr_faq/ocr_01_0032.html)](tag:hk)查看详细获取方式。     
+        与url二选一  图像数据，base64编码，要求base64编码后大小不超过10MB。图片最小边不小于15px，最长边不超过4096px。支持JPEG、JPG、PNG、BMP、GIF、TIFF、WEBP、PCX、ICO、PSD、PDF格式。  图片文件Base64编码字符串，[点击[这里](https://support.huaweicloud.com/ocr_faq/ocr_01_0032.html)](tag:hc)[点击[这里](https://support.huaweicloud.com/intl/zh-cn/ocr_faq/ocr_01_0032.html)](tag:hk)查看详细获取方式。     
 
         :param image: The image of this GeneralTextRequestBody.
         :type image: str
@@ -236,6 +243,28 @@ class GeneralTextRequestBody:
         :type single_orientation_mode: bool
         """
         self._single_orientation_mode = single_orientation_mode
+
+    @property
+    def pdf_page_number(self):
+        """Gets the pdf_page_number of this GeneralTextRequestBody.
+
+        指定PDF页码识别。传入该参数时，则识别指定页码的内容。如果不传该参数，则默认识别第1页。 
+
+        :return: The pdf_page_number of this GeneralTextRequestBody.
+        :rtype: int
+        """
+        return self._pdf_page_number
+
+    @pdf_page_number.setter
+    def pdf_page_number(self, pdf_page_number):
+        """Sets the pdf_page_number of this GeneralTextRequestBody.
+
+        指定PDF页码识别。传入该参数时，则识别指定页码的内容。如果不传该参数，则默认识别第1页。 
+
+        :param pdf_page_number: The pdf_page_number of this GeneralTextRequestBody.
+        :type pdf_page_number: int
+        """
+        self._pdf_page_number = pdf_page_number
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -27,7 +27,8 @@ class ReinstallNodeSpec:
         'lifecycle': 'NodeLifecycleConfig',
         'initialized_conditions': 'list[str]',
         'extend_param': 'ReinstallExtendParam',
-        'hostname_config': 'HostnameConfig'
+        'hostname_config': 'HostnameConfig',
+        'security_reinforcement_type': 'str'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class ReinstallNodeSpec:
         'lifecycle': 'lifecycle',
         'initialized_conditions': 'initializedConditions',
         'extend_param': 'extendParam',
-        'hostname_config': 'hostnameConfig'
+        'hostname_config': 'hostnameConfig',
+        'security_reinforcement_type': 'securityReinforcementType'
     }
 
-    def __init__(self, os=None, login=None, name=None, server_config=None, volume_config=None, runtime_config=None, k8s_options=None, lifecycle=None, initialized_conditions=None, extend_param=None, hostname_config=None):
+    def __init__(self, os=None, login=None, name=None, server_config=None, volume_config=None, runtime_config=None, k8s_options=None, lifecycle=None, initialized_conditions=None, extend_param=None, hostname_config=None, security_reinforcement_type=None):
         """ReinstallNodeSpec
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class ReinstallNodeSpec:
         :type extend_param: :class:`huaweicloudsdkcce.v3.ReinstallExtendParam`
         :param hostname_config: 
         :type hostname_config: :class:`huaweicloudsdkcce.v3.HostnameConfig`
+        :param security_reinforcement_type: **参数解释**： 指定节点安全加固类型，当前仅支持HCE2.0镜像等保2.0三级安全加固。 等保加固会对身份鉴别、访问控制、安全审计、入侵防范、恶意代码防范进行检查并加固。详情请参见[Huawei Cloud EulerOS 2.0等保2.0三级版镜像概述](https://support.huaweicloud.com/productdesc-hce/hce_sec_0001.html)。 若未指定此参数，则尝试用原有的值补全。如：原先HCE2.0镜像已配置安全加固，更新节点池时未指定此参数，则仍旧保持安全加固配置，若要取消，需显式指定参数值为\&quot;null\&quot;。 **约束限制**： 不涉及 **取值范围**： 取值范围：[&#39;null&#39;, cybersecurity]; **默认取值**： 不涉及
+        :type security_reinforcement_type: str
         """
         
         
@@ -86,6 +90,7 @@ class ReinstallNodeSpec:
         self._initialized_conditions = None
         self._extend_param = None
         self._hostname_config = None
+        self._security_reinforcement_type = None
         self.discriminator = None
 
         self.os = os
@@ -108,6 +113,8 @@ class ReinstallNodeSpec:
             self.extend_param = extend_param
         if hostname_config is not None:
             self.hostname_config = hostname_config
+        if security_reinforcement_type is not None:
+            self.security_reinforcement_type = security_reinforcement_type
 
     @property
     def os(self):
@@ -318,6 +325,28 @@ class ReinstallNodeSpec:
         :type hostname_config: :class:`huaweicloudsdkcce.v3.HostnameConfig`
         """
         self._hostname_config = hostname_config
+
+    @property
+    def security_reinforcement_type(self):
+        """Gets the security_reinforcement_type of this ReinstallNodeSpec.
+
+        **参数解释**： 指定节点安全加固类型，当前仅支持HCE2.0镜像等保2.0三级安全加固。 等保加固会对身份鉴别、访问控制、安全审计、入侵防范、恶意代码防范进行检查并加固。详情请参见[Huawei Cloud EulerOS 2.0等保2.0三级版镜像概述](https://support.huaweicloud.com/productdesc-hce/hce_sec_0001.html)。 若未指定此参数，则尝试用原有的值补全。如：原先HCE2.0镜像已配置安全加固，更新节点池时未指定此参数，则仍旧保持安全加固配置，若要取消，需显式指定参数值为\"null\"。 **约束限制**： 不涉及 **取值范围**： 取值范围：['null', cybersecurity]; **默认取值**： 不涉及
+
+        :return: The security_reinforcement_type of this ReinstallNodeSpec.
+        :rtype: str
+        """
+        return self._security_reinforcement_type
+
+    @security_reinforcement_type.setter
+    def security_reinforcement_type(self, security_reinforcement_type):
+        """Sets the security_reinforcement_type of this ReinstallNodeSpec.
+
+        **参数解释**： 指定节点安全加固类型，当前仅支持HCE2.0镜像等保2.0三级安全加固。 等保加固会对身份鉴别、访问控制、安全审计、入侵防范、恶意代码防范进行检查并加固。详情请参见[Huawei Cloud EulerOS 2.0等保2.0三级版镜像概述](https://support.huaweicloud.com/productdesc-hce/hce_sec_0001.html)。 若未指定此参数，则尝试用原有的值补全。如：原先HCE2.0镜像已配置安全加固，更新节点池时未指定此参数，则仍旧保持安全加固配置，若要取消，需显式指定参数值为\"null\"。 **约束限制**： 不涉及 **取值范围**： 取值范围：['null', cybersecurity]; **默认取值**： 不涉及
+
+        :param security_reinforcement_type: The security_reinforcement_type of this ReinstallNodeSpec.
+        :type security_reinforcement_type: str
+        """
+        self._security_reinforcement_type = security_reinforcement_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

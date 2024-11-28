@@ -229,6 +229,7 @@ from huaweicloudsdkbss.v2.model.period_product_info import PeriodProductInfo
 from huaweicloudsdkbss.v2.model.period_product_official_rating_result import PeriodProductOfficialRatingResult
 from huaweicloudsdkbss.v2.model.period_product_rating_result import PeriodProductRatingResult
 from huaweicloudsdkbss.v2.model.period_to_on_demand_req import PeriodToOnDemandReq
+from huaweicloudsdkbss.v2.model.product_object import ProductObject
 from huaweicloudsdkbss.v2.model.province import Province
 from huaweicloudsdkbss.v2.model.query_coupon_quotas_req_ext import QueryCouponQuotasReqExt
 from huaweicloudsdkbss.v2.model.query_customer_on_demand_resources_req import QueryCustomerOnDemandResourcesReq

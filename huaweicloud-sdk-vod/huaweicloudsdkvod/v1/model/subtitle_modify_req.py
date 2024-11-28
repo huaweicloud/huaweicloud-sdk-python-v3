@@ -19,6 +19,8 @@ class SubtitleModifyReq:
     openapi_types = {
         'asset_id': 'str',
         'default_language': 'str',
+        'repackage_mode': 'str',
+        'delete_mode': 'str',
         'add_subtitles': 'list[AddSubtitle]',
         'delete_subtitles': 'list[DeleteSubtitle]'
     }
@@ -26,11 +28,13 @@ class SubtitleModifyReq:
     attribute_map = {
         'asset_id': 'asset_id',
         'default_language': 'default_language',
+        'repackage_mode': 'repackage_mode',
+        'delete_mode': 'delete_mode',
         'add_subtitles': 'add_subtitles',
         'delete_subtitles': 'delete_subtitles'
     }
 
-    def __init__(self, asset_id=None, default_language=None, add_subtitles=None, delete_subtitles=None):
+    def __init__(self, asset_id=None, default_language=None, repackage_mode=None, delete_mode=None, add_subtitles=None, delete_subtitles=None):
         """SubtitleModifyReq
 
         The model defined in huaweicloud sdk
@@ -39,6 +43,10 @@ class SubtitleModifyReq:
         :type asset_id: str
         :param default_language: 字幕默认语言(字幕必须存在)
         :type default_language: str
+        :param repackage_mode: 外挂模式，不传默认取值为0  取值如下： -0：表示添加的字幕会外挂上历史产物 -1：表示添加的字幕不会外挂上历史产物
+        :type repackage_mode: str
+        :param delete_mode: 删除模式，不传默认取值为0  取值如下： -0：表示删除字幕会清除历史产物携带的字幕信息 -1：表示删除字幕不清除历史产物携带的字幕信息
+        :type delete_mode: str
         :param add_subtitles: 需新增或修改的字幕
         :type add_subtitles: list[:class:`huaweicloudsdkvod.v1.AddSubtitle`]
         :param delete_subtitles: 需删除的字幕，language不能与add_subtitles重复
@@ -49,6 +57,8 @@ class SubtitleModifyReq:
 
         self._asset_id = None
         self._default_language = None
+        self._repackage_mode = None
+        self._delete_mode = None
         self._add_subtitles = None
         self._delete_subtitles = None
         self.discriminator = None
@@ -56,6 +66,10 @@ class SubtitleModifyReq:
         self.asset_id = asset_id
         if default_language is not None:
             self.default_language = default_language
+        if repackage_mode is not None:
+            self.repackage_mode = repackage_mode
+        if delete_mode is not None:
+            self.delete_mode = delete_mode
         if add_subtitles is not None:
             self.add_subtitles = add_subtitles
         if delete_subtitles is not None:
@@ -104,6 +118,50 @@ class SubtitleModifyReq:
         :type default_language: str
         """
         self._default_language = default_language
+
+    @property
+    def repackage_mode(self):
+        """Gets the repackage_mode of this SubtitleModifyReq.
+
+        外挂模式，不传默认取值为0  取值如下： -0：表示添加的字幕会外挂上历史产物 -1：表示添加的字幕不会外挂上历史产物
+
+        :return: The repackage_mode of this SubtitleModifyReq.
+        :rtype: str
+        """
+        return self._repackage_mode
+
+    @repackage_mode.setter
+    def repackage_mode(self, repackage_mode):
+        """Sets the repackage_mode of this SubtitleModifyReq.
+
+        外挂模式，不传默认取值为0  取值如下： -0：表示添加的字幕会外挂上历史产物 -1：表示添加的字幕不会外挂上历史产物
+
+        :param repackage_mode: The repackage_mode of this SubtitleModifyReq.
+        :type repackage_mode: str
+        """
+        self._repackage_mode = repackage_mode
+
+    @property
+    def delete_mode(self):
+        """Gets the delete_mode of this SubtitleModifyReq.
+
+        删除模式，不传默认取值为0  取值如下： -0：表示删除字幕会清除历史产物携带的字幕信息 -1：表示删除字幕不清除历史产物携带的字幕信息
+
+        :return: The delete_mode of this SubtitleModifyReq.
+        :rtype: str
+        """
+        return self._delete_mode
+
+    @delete_mode.setter
+    def delete_mode(self, delete_mode):
+        """Sets the delete_mode of this SubtitleModifyReq.
+
+        删除模式，不传默认取值为0  取值如下： -0：表示删除字幕会清除历史产物携带的字幕信息 -1：表示删除字幕不清除历史产物携带的字幕信息
+
+        :param delete_mode: The delete_mode of this SubtitleModifyReq.
+        :type delete_mode: str
+        """
+        self._delete_mode = delete_mode
 
     @property
     def add_subtitles(self):

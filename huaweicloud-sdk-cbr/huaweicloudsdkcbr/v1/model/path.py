@@ -20,17 +20,19 @@ class Path:
         'id': 'str',
         'status': 'str',
         'agent_id': 'str',
-        'dir_path': 'str'
+        'dir_path': 'str',
+        'exclude_paths': 'str'
     }
 
     attribute_map = {
         'id': 'id',
         'status': 'status',
         'agent_id': 'agent_id',
-        'dir_path': 'dir_path'
+        'dir_path': 'dir_path',
+        'exclude_paths': 'exclude_paths'
     }
 
-    def __init__(self, id=None, status=None, agent_id=None, dir_path=None):
+    def __init__(self, id=None, status=None, agent_id=None, dir_path=None, exclude_paths=None):
         """Path
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class Path:
         :type agent_id: str
         :param dir_path: 路径详情
         :type dir_path: str
+        :param exclude_paths: 排除目录列表，多个路径之间以英文逗号分隔 &gt; 该特性目前处于公测阶段，部分region可能无法使用。 
+        :type exclude_paths: str
         """
         
         
@@ -51,6 +55,7 @@ class Path:
         self._status = None
         self._agent_id = None
         self._dir_path = None
+        self._exclude_paths = None
         self.discriminator = None
 
         if id is not None:
@@ -61,6 +66,8 @@ class Path:
             self.agent_id = agent_id
         if dir_path is not None:
             self.dir_path = dir_path
+        if exclude_paths is not None:
+            self.exclude_paths = exclude_paths
 
     @property
     def id(self):
@@ -149,6 +156,28 @@ class Path:
         :type dir_path: str
         """
         self._dir_path = dir_path
+
+    @property
+    def exclude_paths(self):
+        """Gets the exclude_paths of this Path.
+
+        排除目录列表，多个路径之间以英文逗号分隔 > 该特性目前处于公测阶段，部分region可能无法使用。 
+
+        :return: The exclude_paths of this Path.
+        :rtype: str
+        """
+        return self._exclude_paths
+
+    @exclude_paths.setter
+    def exclude_paths(self, exclude_paths):
+        """Sets the exclude_paths of this Path.
+
+        排除目录列表，多个路径之间以英文逗号分隔 > 该特性目前处于公测阶段，部分region可能无法使用。 
+
+        :param exclude_paths: The exclude_paths of this Path.
+        :type exclude_paths: str
+        """
+        self._exclude_paths = exclude_paths
 
     def to_dict(self):
         """Returns the model properties as a dict"""

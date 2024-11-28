@@ -26,7 +26,6 @@ class Create2dModelTrainingJobReq:
         'batch_name': 'str',
         'tags': 'list[str]',
         'model_version': 'str',
-        'beauty_level': 'int',
         'is_flexus': 'bool',
         'is_only_human_model': 'bool',
         'audio_source_type': 'str',
@@ -44,7 +43,6 @@ class Create2dModelTrainingJobReq:
         'batch_name': 'batch_name',
         'tags': 'tags',
         'model_version': 'model_version',
-        'beauty_level': 'beauty_level',
         'is_flexus': 'is_flexus',
         'is_only_human_model': 'is_only_human_model',
         'audio_source_type': 'audio_source_type',
@@ -52,7 +50,7 @@ class Create2dModelTrainingJobReq:
         'supported_service': 'supported_service'
     }
 
-    def __init__(self, name=None, contact=None, command_message=None, video_multipart_count=None, action_video_multipart_count=None, is_background_replacement=None, batch_name=None, tags=None, model_version=None, beauty_level=None, is_flexus=None, is_only_human_model=None, audio_source_type=None, voice_properties=None, supported_service=None):
+    def __init__(self, name=None, contact=None, command_message=None, video_multipart_count=None, action_video_multipart_count=None, is_background_replacement=None, batch_name=None, tags=None, model_version=None, is_flexus=None, is_only_human_model=None, audio_source_type=None, voice_properties=None, supported_service=None):
         """Create2dModelTrainingJobReq
 
         The model defined in huaweicloud sdk
@@ -75,8 +73,6 @@ class Create2dModelTrainingJobReq:
         :type tags: list[str]
         :param model_version: 分身数字人模型版本。默认是V3.2版本模型。 * V3.2：V3.2版本模型 &gt; * V3和V2版本已废弃不用
         :type model_version: str
-        :param beauty_level: 美白等级。默认值0，不美白。
-        :type beauty_level: int
         :param is_flexus: 是否是基础版的形象训练
         :type is_flexus: bool
         :param is_only_human_model: 是否只训练形象模型，不训练声音模型。仅Flexus版本时有效，默认false。
@@ -100,7 +96,6 @@ class Create2dModelTrainingJobReq:
         self._batch_name = None
         self._tags = None
         self._model_version = None
-        self._beauty_level = None
         self._is_flexus = None
         self._is_only_human_model = None
         self._audio_source_type = None
@@ -125,8 +120,6 @@ class Create2dModelTrainingJobReq:
             self.tags = tags
         if model_version is not None:
             self.model_version = model_version
-        if beauty_level is not None:
-            self.beauty_level = beauty_level
         if is_flexus is not None:
             self.is_flexus = is_flexus
         if is_only_human_model is not None:
@@ -335,28 +328,6 @@ class Create2dModelTrainingJobReq:
         :type model_version: str
         """
         self._model_version = model_version
-
-    @property
-    def beauty_level(self):
-        """Gets the beauty_level of this Create2dModelTrainingJobReq.
-
-        美白等级。默认值0，不美白。
-
-        :return: The beauty_level of this Create2dModelTrainingJobReq.
-        :rtype: int
-        """
-        return self._beauty_level
-
-    @beauty_level.setter
-    def beauty_level(self, beauty_level):
-        """Sets the beauty_level of this Create2dModelTrainingJobReq.
-
-        美白等级。默认值0，不美白。
-
-        :param beauty_level: The beauty_level of this Create2dModelTrainingJobReq.
-        :type beauty_level: int
-        """
-        self._beauty_level = beauty_level
 
     @property
     def is_flexus(self):

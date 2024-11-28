@@ -99,6 +99,71 @@ class CsmsClient(Client):
 
         return http_info
 
+    def create_agency(self, request):
+        """创建服务委托
+
+        创建服务委托。用于创建凭据管理服务相关委托和函数工作流相关委托。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateAgency
+        :type request: :class:`huaweicloudsdkcsms.v1.CreateAgencyRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.CreateAgencyResponse`
+        """
+        http_info = self._create_agency_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_agency_invoker(self, request):
+        http_info = self._create_agency_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_agency_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/csms/agencies",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAgencyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_secret(self, request):
         """创建凭据
 
@@ -799,10 +864,6 @@ class CsmsClient(Client):
         path_params = {}
 
         query_params = []
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'marker' in local_var_params:
-            query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
 
@@ -1065,6 +1126,79 @@ class CsmsClient(Client):
             path_params['secret_id'] = local_var_params['secret_id']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_secret_task(self, request):
+        """查询任务列表
+
+        查询任务列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSecretTask
+        :type request: :class:`huaweicloudsdkcsms.v1.ListSecretTaskRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.ListSecretTaskResponse`
+        """
+        http_info = self._list_secret_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_secret_task_invoker(self, request):
+        http_info = self._list_secret_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_secret_task_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/csms/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecretTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'secret_name' in local_var_params:
+            query_params.append(('secret_name', local_var_params['secret_name']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'task_id' in local_var_params:
+            query_params.append(('task_id', local_var_params['task_id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
 
@@ -1360,6 +1494,71 @@ class CsmsClient(Client):
 
         return http_info
 
+    def show_agency(self, request):
+        """查看是否有服务委托
+
+        查看是否有服务委托
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAgency
+        :type request: :class:`huaweicloudsdkcsms.v1.ShowAgencyRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.ShowAgencyResponse`
+        """
+        http_info = self._show_agency_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_agency_invoker(self, request):
+        http_info = self._show_agency_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_agency_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/csms/agencies",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAgencyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'secret_type' in local_var_params:
+            query_params.append(('secret_type', local_var_params['secret_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_secret(self, request):
         """查询凭据
 
@@ -1463,6 +1662,75 @@ class CsmsClient(Client):
             path_params['event_name'] = local_var_params['event_name']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_secret_function_templates(self, request):
+        """获取凭据轮转函数模板
+
+        获取凭据轮转函数模板。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowSecretFunctionTemplates
+        :type request: :class:`huaweicloudsdkcsms.v1.ShowSecretFunctionTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.ShowSecretFunctionTemplatesResponse`
+        """
+        http_info = self._show_secret_function_templates_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_secret_function_templates_invoker(self, request):
+        http_info = self._show_secret_function_templates_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_secret_function_templates_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/csms/function-templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSecretFunctionTemplatesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'secret_type' in local_var_params:
+            query_params.append(('secret_type', local_var_params['secret_type']))
+        if 'secret_sub_type' in local_var_params:
+            query_params.append(('secret_sub_type', local_var_params['secret_sub_type']))
+        if 'engine' in local_var_params:
+            query_params.append(('engine', local_var_params['engine']))
 
         header_params = {}
 

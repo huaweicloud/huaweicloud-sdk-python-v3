@@ -35,7 +35,8 @@ class TrainingJobInfo:
         'tag': 'JobTag',
         'phone': 'str',
         'dhtms_job_id': 'str',
-        'batch_name': 'str'
+        'batch_name': 'str',
+        'allocated_resource': 'VoiceTrainingAllocatedResource'
     }
 
     attribute_map = {
@@ -57,10 +58,11 @@ class TrainingJobInfo:
         'tag': 'tag',
         'phone': 'phone',
         'dhtms_job_id': 'dhtms_job_id',
-        'batch_name': 'batch_name'
+        'batch_name': 'batch_name',
+        'allocated_resource': 'allocated_resource'
     }
 
-    def __init__(self, job_type=None, job_id=None, app_user_id=None, voice_name=None, sex=None, language=None, state=None, reject_times=None, asset_id=None, job_failed_code=None, job_failed_reason=None, create_time=None, lastupdate_time=None, voice_authorization_url=None, create_type=None, tag=None, phone=None, dhtms_job_id=None, batch_name=None):
+    def __init__(self, job_type=None, job_id=None, app_user_id=None, voice_name=None, sex=None, language=None, state=None, reject_times=None, asset_id=None, job_failed_code=None, job_failed_reason=None, create_time=None, lastupdate_time=None, voice_authorization_url=None, create_type=None, tag=None, phone=None, dhtms_job_id=None, batch_name=None, allocated_resource=None):
         """TrainingJobInfo
 
         The model defined in huaweicloud sdk
@@ -103,6 +105,8 @@ class TrainingJobInfo:
         :type dhtms_job_id: str
         :param batch_name: 批次名称
         :type batch_name: str
+        :param allocated_resource: 
+        :type allocated_resource: :class:`huaweicloudsdkmetastudio.v1.VoiceTrainingAllocatedResource`
         """
         
         
@@ -126,6 +130,7 @@ class TrainingJobInfo:
         self._phone = None
         self._dhtms_job_id = None
         self._batch_name = None
+        self._allocated_resource = None
         self.discriminator = None
 
         if job_type is not None:
@@ -166,6 +171,8 @@ class TrainingJobInfo:
             self.dhtms_job_id = dhtms_job_id
         if batch_name is not None:
             self.batch_name = batch_name
+        if allocated_resource is not None:
+            self.allocated_resource = allocated_resource
 
     @property
     def job_type(self):
@@ -568,6 +575,24 @@ class TrainingJobInfo:
         :type batch_name: str
         """
         self._batch_name = batch_name
+
+    @property
+    def allocated_resource(self):
+        """Gets the allocated_resource of this TrainingJobInfo.
+
+        :return: The allocated_resource of this TrainingJobInfo.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.VoiceTrainingAllocatedResource`
+        """
+        return self._allocated_resource
+
+    @allocated_resource.setter
+    def allocated_resource(self, allocated_resource):
+        """Sets the allocated_resource of this TrainingJobInfo.
+
+        :param allocated_resource: The allocated_resource of this TrainingJobInfo.
+        :type allocated_resource: :class:`huaweicloudsdkmetastudio.v1.VoiceTrainingAllocatedResource`
+        """
+        self._allocated_resource = allocated_resource
 
     def to_dict(self):
         """Returns the model properties as a dict"""

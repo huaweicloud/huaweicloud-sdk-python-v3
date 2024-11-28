@@ -42,9 +42,13 @@ from huaweicloudsdkcbr.v1.model.billing_create import BillingCreate
 from huaweicloudsdkcbr.v1.model.billing_update import BillingUpdate
 from huaweicloudsdkcbr.v1.model.bind_rules_tags import BindRulesTags
 from huaweicloudsdkcbr.v1.model.bulk_create_and_delete_vault_tags_req import BulkCreateAndDeleteVaultTagsReq
+from huaweicloudsdkcbr.v1.model.cbc_order_change import CbcOrderChange
 from huaweicloudsdkcbr.v1.model.cbc_order_result import CbcOrderResult
+from huaweicloudsdkcbr.v1.model.cbc_product_info_order_change import CbcProductInfoOrderChange
 from huaweicloudsdkcbr.v1.model.cbc_product_info_update import CbcProductInfoUpdate
 from huaweicloudsdkcbr.v1.model.cbc_update import CbcUpdate
+from huaweicloudsdkcbr.v1.model.change_order_request import ChangeOrderRequest
+from huaweicloudsdkcbr.v1.model.change_order_response import ChangeOrderResponse
 from huaweicloudsdkcbr.v1.model.check_agent_request import CheckAgentRequest
 from huaweicloudsdkcbr.v1.model.check_agent_response import CheckAgentResponse
 from huaweicloudsdkcbr.v1.model.checkpoint_create import CheckpointCreate
@@ -91,6 +95,7 @@ from huaweicloudsdkcbr.v1.model.disassociate_vault_policy_response import Disass
 from huaweicloudsdkcbr.v1.model.domain_migrate import DomainMigrate
 from huaweicloudsdkcbr.v1.model.domain_migrate_project_status import DomainMigrateProjectStatus
 from huaweicloudsdkcbr.v1.model.domain_projects_info import DomainProjectsInfo
+from huaweicloudsdkcbr.v1.model.exclude_path import ExcludePath
 from huaweicloudsdkcbr.v1.model.image_data import ImageData
 from huaweicloudsdkcbr.v1.model.import_backup_request import ImportBackupRequest
 from huaweicloudsdkcbr.v1.model.import_backup_response import ImportBackupResponse

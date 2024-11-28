@@ -4,9 +4,13 @@ from __future__ import absolute_import
 
 # import models into model package
 from huaweicloudsdkcsms.v1.model.action_resources import ActionResources
+from huaweicloudsdkcsms.v1.model.agency import Agency
 from huaweicloudsdkcsms.v1.model.batch_create_or_delete_tags_request import BatchCreateOrDeleteTagsRequest
 from huaweicloudsdkcsms.v1.model.batch_create_or_delete_tags_request_body import BatchCreateOrDeleteTagsRequestBody
 from huaweicloudsdkcsms.v1.model.batch_create_or_delete_tags_response import BatchCreateOrDeleteTagsResponse
+from huaweicloudsdkcsms.v1.model.create_agency_request import CreateAgencyRequest
+from huaweicloudsdkcsms.v1.model.create_agency_request_body import CreateAgencyRequestBody
+from huaweicloudsdkcsms.v1.model.create_agency_response import CreateAgencyResponse
 from huaweicloudsdkcsms.v1.model.create_secret_event_request import CreateSecretEventRequest
 from huaweicloudsdkcsms.v1.model.create_secret_event_request_body import CreateSecretEventRequestBody
 from huaweicloudsdkcsms.v1.model.create_secret_event_response import CreateSecretEventResponse
@@ -44,6 +48,8 @@ from huaweicloudsdkcsms.v1.model.list_secret_events_request import ListSecretEve
 from huaweicloudsdkcsms.v1.model.list_secret_events_response import ListSecretEventsResponse
 from huaweicloudsdkcsms.v1.model.list_secret_tags_request import ListSecretTagsRequest
 from huaweicloudsdkcsms.v1.model.list_secret_tags_response import ListSecretTagsResponse
+from huaweicloudsdkcsms.v1.model.list_secret_task_request import ListSecretTaskRequest
+from huaweicloudsdkcsms.v1.model.list_secret_task_response import ListSecretTaskResponse
 from huaweicloudsdkcsms.v1.model.list_secret_versions_request import ListSecretVersionsRequest
 from huaweicloudsdkcsms.v1.model.list_secret_versions_response import ListSecretVersionsResponse
 from huaweicloudsdkcsms.v1.model.list_secrets_request import ListSecretsRequest
@@ -56,8 +62,13 @@ from huaweicloudsdkcsms.v1.model.restore_secret_response import RestoreSecretRes
 from huaweicloudsdkcsms.v1.model.rotate_secret_request import RotateSecretRequest
 from huaweicloudsdkcsms.v1.model.rotate_secret_response import RotateSecretResponse
 from huaweicloudsdkcsms.v1.model.secret import Secret
+from huaweicloudsdkcsms.v1.model.secret_task import SecretTask
+from huaweicloudsdkcsms.v1.model.show_agency_request import ShowAgencyRequest
+from huaweicloudsdkcsms.v1.model.show_agency_response import ShowAgencyResponse
 from huaweicloudsdkcsms.v1.model.show_secret_event_request import ShowSecretEventRequest
 from huaweicloudsdkcsms.v1.model.show_secret_event_response import ShowSecretEventResponse
+from huaweicloudsdkcsms.v1.model.show_secret_function_templates_request import ShowSecretFunctionTemplatesRequest
+from huaweicloudsdkcsms.v1.model.show_secret_function_templates_response import ShowSecretFunctionTemplatesResponse
 from huaweicloudsdkcsms.v1.model.show_secret_request import ShowSecretRequest
 from huaweicloudsdkcsms.v1.model.show_secret_response import ShowSecretResponse
 from huaweicloudsdkcsms.v1.model.show_secret_stage_request import ShowSecretStageRequest

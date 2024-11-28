@@ -4,6 +4,7 @@ from __future__ import absolute_import
 
 # import models into model package
 from huaweicloudsdkrds.v3.model.ad_domain_info import ADDomainInfo
+from huaweicloudsdkrds.v3.model.add_copy_database_request_body import AddCopyDatabaseRequestBody
 from huaweicloudsdkrds.v3.model.add_log_config_response_body import AddLogConfigResponseBody
 from huaweicloudsdkrds.v3.model.add_log_configs import AddLogConfigs
 from huaweicloudsdkrds.v3.model.add_msdtc_request_body import AddMsdtcRequestBody
@@ -75,6 +76,8 @@ from huaweicloudsdkrds.v3.model.configuration_summary import ConfigurationSummar
 from huaweicloudsdkrds.v3.model.configuration_summary_for_create import ConfigurationSummaryForCreate
 from huaweicloudsdkrds.v3.model.copy_configuration_request import CopyConfigurationRequest
 from huaweicloudsdkrds.v3.model.copy_configuration_response import CopyConfigurationResponse
+from huaweicloudsdkrds.v3.model.copy_database_request import CopyDatabaseRequest
+from huaweicloudsdkrds.v3.model.copy_database_response import CopyDatabaseResponse
 from huaweicloudsdkrds.v3.model.create_configuration_request import CreateConfigurationRequest
 from huaweicloudsdkrds.v3.model.create_configuration_response import CreateConfigurationResponse
 from huaweicloudsdkrds.v3.model.create_database_request import CreateDatabaseRequest
@@ -150,6 +153,9 @@ from huaweicloudsdkrds.v3.model.delete_log_lts_configs_request import DeleteLogL
 from huaweicloudsdkrds.v3.model.delete_log_lts_configs_response import DeleteLogLtsConfigsResponse
 from huaweicloudsdkrds.v3.model.delete_manual_backup_request import DeleteManualBackupRequest
 from huaweicloudsdkrds.v3.model.delete_manual_backup_response import DeleteManualBackupResponse
+from huaweicloudsdkrds.v3.model.delete_msdtc_local_host_request import DeleteMsdtcLocalHostRequest
+from huaweicloudsdkrds.v3.model.delete_msdtc_local_host_request_body import DeleteMsdtcLocalHostRequestBody
+from huaweicloudsdkrds.v3.model.delete_msdtc_local_host_response import DeleteMsdtcLocalHostResponse
 from huaweicloudsdkrds.v3.model.delete_postgresql_database_request import DeletePostgresqlDatabaseRequest
 from huaweicloudsdkrds.v3.model.delete_postgresql_database_response import DeletePostgresqlDatabaseResponse
 from huaweicloudsdkrds.v3.model.delete_postgresql_db_user_request import DeletePostgresqlDbUserRequest

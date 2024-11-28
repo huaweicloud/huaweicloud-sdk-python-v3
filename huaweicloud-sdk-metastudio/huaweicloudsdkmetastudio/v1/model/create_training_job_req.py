@@ -25,7 +25,9 @@ class CreateTrainingJobReq:
         'create_type': 'CreateType',
         'phone': 'str',
         'dhtms_job_id': 'str',
-        'batch_name': 'str'
+        'batch_name': 'str',
+        'output_language': 'str',
+        'custom_text': 'str'
     }
 
     attribute_map = {
@@ -37,10 +39,12 @@ class CreateTrainingJobReq:
         'create_type': 'create_type',
         'phone': 'phone',
         'dhtms_job_id': 'dhtms_job_id',
-        'batch_name': 'batch_name'
+        'batch_name': 'batch_name',
+        'output_language': 'output_language',
+        'custom_text': 'custom_text'
     }
 
-    def __init__(self, tag=None, description=None, sex=None, voice_name=None, language=None, create_type=None, phone=None, dhtms_job_id=None, batch_name=None):
+    def __init__(self, tag=None, description=None, sex=None, voice_name=None, language=None, create_type=None, phone=None, dhtms_job_id=None, batch_name=None, output_language=None, custom_text=None):
         """CreateTrainingJobReq
 
         The model defined in huaweicloud sdk
@@ -63,6 +67,10 @@ class CreateTrainingJobReq:
         :type dhtms_job_id: str
         :param batch_name: 批次名称
         :type batch_name: str
+        :param output_language: 模型输出语言类型
+        :type output_language: str
+        :param custom_text: 自定义试听文本
+        :type custom_text: str
         """
         
         
@@ -76,6 +84,8 @@ class CreateTrainingJobReq:
         self._phone = None
         self._dhtms_job_id = None
         self._batch_name = None
+        self._output_language = None
+        self._custom_text = None
         self.discriminator = None
 
         if tag is not None:
@@ -95,6 +105,10 @@ class CreateTrainingJobReq:
             self.dhtms_job_id = dhtms_job_id
         if batch_name is not None:
             self.batch_name = batch_name
+        if output_language is not None:
+            self.output_language = output_language
+        if custom_text is not None:
+            self.custom_text = custom_text
 
     @property
     def tag(self):
@@ -285,6 +299,50 @@ class CreateTrainingJobReq:
         :type batch_name: str
         """
         self._batch_name = batch_name
+
+    @property
+    def output_language(self):
+        """Gets the output_language of this CreateTrainingJobReq.
+
+        模型输出语言类型
+
+        :return: The output_language of this CreateTrainingJobReq.
+        :rtype: str
+        """
+        return self._output_language
+
+    @output_language.setter
+    def output_language(self, output_language):
+        """Sets the output_language of this CreateTrainingJobReq.
+
+        模型输出语言类型
+
+        :param output_language: The output_language of this CreateTrainingJobReq.
+        :type output_language: str
+        """
+        self._output_language = output_language
+
+    @property
+    def custom_text(self):
+        """Gets the custom_text of this CreateTrainingJobReq.
+
+        自定义试听文本
+
+        :return: The custom_text of this CreateTrainingJobReq.
+        :rtype: str
+        """
+        return self._custom_text
+
+    @custom_text.setter
+    def custom_text(self, custom_text):
+        """Sets the custom_text of this CreateTrainingJobReq.
+
+        自定义试听文本
+
+        :param custom_text: The custom_text of this CreateTrainingJobReq.
+        :type custom_text: str
+        """
+        self._custom_text = custom_text
 
     def to_dict(self):
         """Returns the model properties as a dict"""

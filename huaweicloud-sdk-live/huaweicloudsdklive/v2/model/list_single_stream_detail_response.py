@@ -23,7 +23,6 @@ class ListSingleStreamDetailResponse(SdkResponse):
         'stream': 'str',
         'video_framerate': 'list[StreamDetail]',
         'video_bitrate': 'list[StreamDetail]',
-        'audio_framerate': 'list[StreamDetail]',
         'x_request_id': 'str'
     }
 
@@ -33,11 +32,10 @@ class ListSingleStreamDetailResponse(SdkResponse):
         'stream': 'stream',
         'video_framerate': 'video_framerate',
         'video_bitrate': 'video_bitrate',
-        'audio_framerate': 'audio_framerate',
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, publish_domain=None, app=None, stream=None, video_framerate=None, video_bitrate=None, audio_framerate=None, x_request_id=None):
+    def __init__(self, publish_domain=None, app=None, stream=None, video_framerate=None, video_bitrate=None, x_request_id=None):
         """ListSingleStreamDetailResponse
 
         The model defined in huaweicloud sdk
@@ -52,8 +50,6 @@ class ListSingleStreamDetailResponse(SdkResponse):
         :type video_framerate: list[:class:`huaweicloudsdklive.v2.StreamDetail`]
         :param video_bitrate: 展示流视频码率情况，码率单位为Kbps。  如果出现断流则会出现多个时间段流信息，如： &#x60;&#x60;&#x60; \&quot;video_bitrate\&quot;: [     {       \&quot;start_time\&quot;: \&quot;2022-02-04T07:00:00Z\&quot;,       \&quot;end_time\&quot;: \&quot;2022-02-04T07:00:02Z\&quot;,       \&quot;data_list\&quot;: [         1326,         1268,         775       ]     },     {       \&quot;start_time\&quot;: \&quot;2022-02-04T07:00:05Z\&quot;,       \&quot;end_time\&quot;: \&quot;2022-02-04T07:00:07Z\&quot;,       \&quot;data_list\&quot;: [         1021,         2022       ]     }   ] 
         :type video_bitrate: list[:class:`huaweicloudsdklive.v2.StreamDetail`]
-        :param audio_framerate: 展示流音频帧率情况，帧率单位为fps。  如果出现断流则会出现多个时间段流信息，如： &#x60;&#x60;&#x60; \&quot;audio_framerate\&quot;: [     {       \&quot;start_time\&quot;: \&quot;2022-02-04T07:00:00Z\&quot;,       \&quot;end_time\&quot;: \&quot;2022-02-04T07:00:02Z\&quot;,       \&quot;data_list\&quot;: [         10,         17       ]     },     {       \&quot;start_time\&quot;: \&quot;2022-02-04T07:00:05Z\&quot;,       \&quot;end_time\&quot;: \&quot;2022-02-04T07:00:06Z\&quot;,       \&quot;data_list\&quot;: [         31,         33       ]     }   ] 
-        :type audio_framerate: list[:class:`huaweicloudsdklive.v2.StreamDetail`]
         :param x_request_id: 
         :type x_request_id: str
         """
@@ -65,7 +61,6 @@ class ListSingleStreamDetailResponse(SdkResponse):
         self._stream = None
         self._video_framerate = None
         self._video_bitrate = None
-        self._audio_framerate = None
         self._x_request_id = None
         self.discriminator = None
 
@@ -79,8 +74,6 @@ class ListSingleStreamDetailResponse(SdkResponse):
             self.video_framerate = video_framerate
         if video_bitrate is not None:
             self.video_bitrate = video_bitrate
-        if audio_framerate is not None:
-            self.audio_framerate = audio_framerate
         if x_request_id is not None:
             self.x_request_id = x_request_id
 
@@ -193,28 +186,6 @@ class ListSingleStreamDetailResponse(SdkResponse):
         :type video_bitrate: list[:class:`huaweicloudsdklive.v2.StreamDetail`]
         """
         self._video_bitrate = video_bitrate
-
-    @property
-    def audio_framerate(self):
-        """Gets the audio_framerate of this ListSingleStreamDetailResponse.
-
-        展示流音频帧率情况，帧率单位为fps。  如果出现断流则会出现多个时间段流信息，如： ``` \"audio_framerate\": [     {       \"start_time\": \"2022-02-04T07:00:00Z\",       \"end_time\": \"2022-02-04T07:00:02Z\",       \"data_list\": [         10,         17       ]     },     {       \"start_time\": \"2022-02-04T07:00:05Z\",       \"end_time\": \"2022-02-04T07:00:06Z\",       \"data_list\": [         31,         33       ]     }   ] 
-
-        :return: The audio_framerate of this ListSingleStreamDetailResponse.
-        :rtype: list[:class:`huaweicloudsdklive.v2.StreamDetail`]
-        """
-        return self._audio_framerate
-
-    @audio_framerate.setter
-    def audio_framerate(self, audio_framerate):
-        """Sets the audio_framerate of this ListSingleStreamDetailResponse.
-
-        展示流音频帧率情况，帧率单位为fps。  如果出现断流则会出现多个时间段流信息，如： ``` \"audio_framerate\": [     {       \"start_time\": \"2022-02-04T07:00:00Z\",       \"end_time\": \"2022-02-04T07:00:02Z\",       \"data_list\": [         10,         17       ]     },     {       \"start_time\": \"2022-02-04T07:00:05Z\",       \"end_time\": \"2022-02-04T07:00:06Z\",       \"data_list\": [         31,         33       ]     }   ] 
-
-        :param audio_framerate: The audio_framerate of this ListSingleStreamDetailResponse.
-        :type audio_framerate: list[:class:`huaweicloudsdklive.v2.StreamDetail`]
-        """
-        self._audio_framerate = audio_framerate
 
     @property
     def x_request_id(self):

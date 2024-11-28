@@ -17,28 +17,36 @@ class AddMembersReq:
     sensitive_list = []
 
     openapi_types = {
-        'members': 'list[str]'
+        'members': 'list[str]',
+        'domains': 'list[str]'
     }
 
     attribute_map = {
-        'members': 'members'
+        'members': 'members',
+        'domains': 'domains'
     }
 
-    def __init__(self, members=None):
+    def __init__(self, members=None, domains=None):
         """AddMembersReq
 
         The model defined in huaweicloud sdk
 
         :param members: 列表，待添加备份共享成员的project_id。
         :type members: list[str]
+        :param domains: 列表，待添加备份共享成员的domain_id。 &gt; 该特性目前属于公测阶段，部分region可能无法使用.
+        :type domains: list[str]
         """
         
         
 
         self._members = None
+        self._domains = None
         self.discriminator = None
 
-        self.members = members
+        if members is not None:
+            self.members = members
+        if domains is not None:
+            self.domains = domains
 
     @property
     def members(self):
@@ -61,6 +69,28 @@ class AddMembersReq:
         :type members: list[str]
         """
         self._members = members
+
+    @property
+    def domains(self):
+        """Gets the domains of this AddMembersReq.
+
+        列表，待添加备份共享成员的domain_id。 > 该特性目前属于公测阶段，部分region可能无法使用.
+
+        :return: The domains of this AddMembersReq.
+        :rtype: list[str]
+        """
+        return self._domains
+
+    @domains.setter
+    def domains(self, domains):
+        """Sets the domains of this AddMembersReq.
+
+        列表，待添加备份共享成员的domain_id。 > 该特性目前属于公测阶段，部分region可能无法使用.
+
+        :param domains: The domains of this AddMembersReq.
+        :type domains: list[str]
+        """
+        self._domains = domains
 
     def to_dict(self):
         """Returns the model properties as a dict"""

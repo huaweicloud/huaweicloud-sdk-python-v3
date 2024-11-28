@@ -1,0 +1,13 @@
+# coding: utf-8
+
+from __future__ import absolute_import
+
+# import models into model package
+from huaweicloudsdkcodeartsinspector.v2.model.create_cbc_order_request_body import CreateCbcOrderRequestBody
+from huaweicloudsdkcodeartsinspector.v2.model.create_purchase_order_request import CreatePurchaseOrderRequest
+from huaweicloudsdkcodeartsinspector.v2.model.create_purchase_order_response import CreatePurchaseOrderResponse
+from huaweicloudsdkcodeartsinspector.v2.model.product_info import ProductInfo
+from huaweicloudsdkcodeartsinspector.v2.model.update_cbc_order_request_body import UpdateCbcOrderRequestBody
+from huaweicloudsdkcodeartsinspector.v2.model.update_cbc_order_request_body_product_info import UpdateCbcOrderRequestBodyProductInfo
+from huaweicloudsdkcodeartsinspector.v2.model.update_purchase_order_request import UpdatePurchaseOrderRequest
+from huaweicloudsdkcodeartsinspector.v2.model.update_purchase_order_response import UpdatePurchaseOrderResponse

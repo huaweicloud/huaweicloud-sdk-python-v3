@@ -40,7 +40,8 @@ class BackupResp:
         'enterprise_project_id': 'str',
         'provider_id': 'str',
         'children': 'list[BackupResp]',
-        'incremental': 'bool'
+        'incremental': 'bool',
+        'version': 'int'
     }
 
     attribute_map = {
@@ -67,10 +68,11 @@ class BackupResp:
         'enterprise_project_id': 'enterprise_project_id',
         'provider_id': 'provider_id',
         'children': 'children',
-        'incremental': 'incremental'
+        'incremental': 'incremental',
+        'version': 'version'
     }
 
-    def __init__(self, checkpoint_id=None, created_at=None, description=None, expired_at=None, extend_info=None, id=None, image_type=None, name=None, parent_id=None, project_id=None, protected_at=None, resource_az=None, resource_id=None, resource_name=None, resource_size=None, resource_type=None, status=None, updated_at=None, vault_id=None, replication_records=None, enterprise_project_id=None, provider_id=None, children=None, incremental=None):
+    def __init__(self, checkpoint_id=None, created_at=None, description=None, expired_at=None, extend_info=None, id=None, image_type=None, name=None, parent_id=None, project_id=None, protected_at=None, resource_az=None, resource_id=None, resource_name=None, resource_size=None, resource_type=None, status=None, updated_at=None, vault_id=None, replication_records=None, enterprise_project_id=None, provider_id=None, children=None, incremental=None, version=None):
         """BackupResp
 
         The model defined in huaweicloud sdk
@@ -87,7 +89,7 @@ class BackupResp:
         :type extend_info: :class:`huaweicloudsdkcbr.v1.BackupExtendInfo`
         :param id: 备份ID
         :type id: str
-        :param image_type: 备份类型
+        :param image_type: [备份类型。取值为backup和replication。](tag:hws,hws_hk,ocb) [备份类型。取值为backup。](tag:g42,hk_g42,sbc,dt,fcs_vm,ctc,tm,tlf,cmcc,hcso_dt)
         :type image_type: str
         :param name: 备份名称
         :type name: str
@@ -105,9 +107,9 @@ class BackupResp:
         :type resource_name: str
         :param resource_size: 资源大小，单位为GB
         :type resource_size: int
-        :param resource_type: 资源类型: 云服务器: OS::Nova::Server, 云硬盘: OS::Cinder::Volume, 云桌面：OS::Workspace::DesktopV2
+        :param resource_type: [资源类型: OS::Nova::Server, OS::Cinder::Volume, OS::Ironic::BareMetalServer, OS::Native::Server, OS::Sfs::Turbo, OS::Workspace::DesktopV2](tag:hws,hws_hk) [资源类型: OS::Nova::Server, OS::Cinder::Volume, OS::Sfs::Turbo](tag:hk_g42,sbc,dt) [资源类型: OS::Nova::Server, OS::Cinder::Volume, OS::Ironic::BareMetalServer, OS::Sfs::Turbo](tag:fcs_vm,ctc,ocb,tm) [资源类型: OS::Nova::Server, OS::Cinder::Volume](tag:tlf,cmcc,hcso_dt) [资源类型: OS::Nova::Server, OS::Cinder::Volume, OS::Sfs::Turbo, OS::Workspace::DesktopV2](tag:g42)
         :type resource_type: str
-        :param status: 备份状态
+        :param status: 备份状态 - available: 可用 - protecting: 保护中 - deleting: 删除中 - restoring: 恢复中 - error: 异常 - waiting_protect: 等待保护 - waiting_delete: 等待删除 - waiting_restore: 等待恢复
         :type status: str
         :param updated_at: 更新时间，例如:\&quot;2020-02-05T10:38:34.209782\&quot;
         :type updated_at: datetime
@@ -117,12 +119,14 @@ class BackupResp:
         :type replication_records: list[:class:`huaweicloudsdkcbr.v1.ReplicationRecordGet`]
         :param enterprise_project_id: 企业项目id,默认为‘0’。
         :type enterprise_project_id: str
-        :param provider_id: 备份提供商ID，用于区分备份对象。当前取值包含  0daac4c5-6707-4851-97ba-169e36266b66，该值代表备份对象为云服务器。d1603440-187d-4516-af25-121250c7cc97，该值代表备份对象为云硬盘。3f3c3220-245c-4805-b811-758870015881， 该值代表备份对象为SFS Turbo。a13639de-00be-4e94-af30-26912d75e4a2，该值代表备份对象为混合云VMware备份。
+        :param provider_id: 备份提供商ID，用于区分备份对象。当前取值包含： [0daac4c5-6707-4851-97ba-169e36266b66，该值代表备份对象为云服务器。d1603440-187d-4516-af25-121250c7cc97，该值代表备份对象为云硬盘。3f3c3220-245c-4805-b811-758870015881， 该值代表备份对象为SFS Turbo。a13639de-00be-4e94-af30-26912d75e4a2，该值代表备份对象为混合云VMware备份。](tag:hws,hws_hk) [0daac4c5-6707-4851-97ba-169e36266b66，该值代表备份对象为云服务器。d1603440-187d-4516-af25-121250c7cc97，该值代表备份对象为云硬盘。3f3c3220-245c-4805-b811-758870015881，该值代表备份对象为SFS Turbo。](tag:ocb,tlf,sbc,fcs_vm,g42,tm,dt,cmcc) [0daac4c5-6707-4851-97ba-169e36266b66，该值代表备份对象为云服务器。d1603440-187d-4516-af25-121250c7cc97，该值代表备份对象为云硬盘。3f3c3220-245c-4805-b811-758870015881，该值代表备份对象为SFS Turbo。86a80900-71bf-4961-956a-d52df944f84a，该值代表备份对象为Workspace。](tag:ctc) [0daac4c5-6707-4851-97ba-169e36266b66，该值代表备份对象为云服务器。d1603440-187d-4516-af25-121250c7cc97，该值代表备份对象为云硬盘。](tag:hcso_dt)
         :type provider_id: str
         :param children: 子副本列表
         :type children: list[:class:`huaweicloudsdkcbr.v1.BackupResp`]
         :param incremental: 是否是增备
         :type incremental: bool
+        :param version: 备份副本快照类型
+        :type version: int
         """
         
         
@@ -151,6 +155,7 @@ class BackupResp:
         self._provider_id = None
         self._children = None
         self._incremental = None
+        self._version = None
         self.discriminator = None
 
         self.checkpoint_id = checkpoint_id
@@ -181,6 +186,8 @@ class BackupResp:
             self.children = children
         if incremental is not None:
             self.incremental = incremental
+        if version is not None:
+            self.version = version
 
     @property
     def checkpoint_id(self):
@@ -314,7 +321,7 @@ class BackupResp:
     def image_type(self):
         """Gets the image_type of this BackupResp.
 
-        备份类型
+        [备份类型。取值为backup和replication。](tag:hws,hws_hk,ocb) [备份类型。取值为backup。](tag:g42,hk_g42,sbc,dt,fcs_vm,ctc,tm,tlf,cmcc,hcso_dt)
 
         :return: The image_type of this BackupResp.
         :rtype: str
@@ -325,7 +332,7 @@ class BackupResp:
     def image_type(self, image_type):
         """Sets the image_type of this BackupResp.
 
-        备份类型
+        [备份类型。取值为backup和replication。](tag:hws,hws_hk,ocb) [备份类型。取值为backup。](tag:g42,hk_g42,sbc,dt,fcs_vm,ctc,tm,tlf,cmcc,hcso_dt)
 
         :param image_type: The image_type of this BackupResp.
         :type image_type: str
@@ -512,7 +519,7 @@ class BackupResp:
     def resource_type(self):
         """Gets the resource_type of this BackupResp.
 
-        资源类型: 云服务器: OS::Nova::Server, 云硬盘: OS::Cinder::Volume, 云桌面：OS::Workspace::DesktopV2
+        [资源类型: OS::Nova::Server, OS::Cinder::Volume, OS::Ironic::BareMetalServer, OS::Native::Server, OS::Sfs::Turbo, OS::Workspace::DesktopV2](tag:hws,hws_hk) [资源类型: OS::Nova::Server, OS::Cinder::Volume, OS::Sfs::Turbo](tag:hk_g42,sbc,dt) [资源类型: OS::Nova::Server, OS::Cinder::Volume, OS::Ironic::BareMetalServer, OS::Sfs::Turbo](tag:fcs_vm,ctc,ocb,tm) [资源类型: OS::Nova::Server, OS::Cinder::Volume](tag:tlf,cmcc,hcso_dt) [资源类型: OS::Nova::Server, OS::Cinder::Volume, OS::Sfs::Turbo, OS::Workspace::DesktopV2](tag:g42)
 
         :return: The resource_type of this BackupResp.
         :rtype: str
@@ -523,7 +530,7 @@ class BackupResp:
     def resource_type(self, resource_type):
         """Sets the resource_type of this BackupResp.
 
-        资源类型: 云服务器: OS::Nova::Server, 云硬盘: OS::Cinder::Volume, 云桌面：OS::Workspace::DesktopV2
+        [资源类型: OS::Nova::Server, OS::Cinder::Volume, OS::Ironic::BareMetalServer, OS::Native::Server, OS::Sfs::Turbo, OS::Workspace::DesktopV2](tag:hws,hws_hk) [资源类型: OS::Nova::Server, OS::Cinder::Volume, OS::Sfs::Turbo](tag:hk_g42,sbc,dt) [资源类型: OS::Nova::Server, OS::Cinder::Volume, OS::Ironic::BareMetalServer, OS::Sfs::Turbo](tag:fcs_vm,ctc,ocb,tm) [资源类型: OS::Nova::Server, OS::Cinder::Volume](tag:tlf,cmcc,hcso_dt) [资源类型: OS::Nova::Server, OS::Cinder::Volume, OS::Sfs::Turbo, OS::Workspace::DesktopV2](tag:g42)
 
         :param resource_type: The resource_type of this BackupResp.
         :type resource_type: str
@@ -534,7 +541,7 @@ class BackupResp:
     def status(self):
         """Gets the status of this BackupResp.
 
-        备份状态
+        备份状态 - available: 可用 - protecting: 保护中 - deleting: 删除中 - restoring: 恢复中 - error: 异常 - waiting_protect: 等待保护 - waiting_delete: 等待删除 - waiting_restore: 等待恢复
 
         :return: The status of this BackupResp.
         :rtype: str
@@ -545,7 +552,7 @@ class BackupResp:
     def status(self, status):
         """Sets the status of this BackupResp.
 
-        备份状态
+        备份状态 - available: 可用 - protecting: 保护中 - deleting: 删除中 - restoring: 恢复中 - error: 异常 - waiting_protect: 等待保护 - waiting_delete: 等待删除 - waiting_restore: 等待恢复
 
         :param status: The status of this BackupResp.
         :type status: str
@@ -644,7 +651,7 @@ class BackupResp:
     def provider_id(self):
         """Gets the provider_id of this BackupResp.
 
-        备份提供商ID，用于区分备份对象。当前取值包含  0daac4c5-6707-4851-97ba-169e36266b66，该值代表备份对象为云服务器。d1603440-187d-4516-af25-121250c7cc97，该值代表备份对象为云硬盘。3f3c3220-245c-4805-b811-758870015881， 该值代表备份对象为SFS Turbo。a13639de-00be-4e94-af30-26912d75e4a2，该值代表备份对象为混合云VMware备份。
+        备份提供商ID，用于区分备份对象。当前取值包含： [0daac4c5-6707-4851-97ba-169e36266b66，该值代表备份对象为云服务器。d1603440-187d-4516-af25-121250c7cc97，该值代表备份对象为云硬盘。3f3c3220-245c-4805-b811-758870015881， 该值代表备份对象为SFS Turbo。a13639de-00be-4e94-af30-26912d75e4a2，该值代表备份对象为混合云VMware备份。](tag:hws,hws_hk) [0daac4c5-6707-4851-97ba-169e36266b66，该值代表备份对象为云服务器。d1603440-187d-4516-af25-121250c7cc97，该值代表备份对象为云硬盘。3f3c3220-245c-4805-b811-758870015881，该值代表备份对象为SFS Turbo。](tag:ocb,tlf,sbc,fcs_vm,g42,tm,dt,cmcc) [0daac4c5-6707-4851-97ba-169e36266b66，该值代表备份对象为云服务器。d1603440-187d-4516-af25-121250c7cc97，该值代表备份对象为云硬盘。3f3c3220-245c-4805-b811-758870015881，该值代表备份对象为SFS Turbo。86a80900-71bf-4961-956a-d52df944f84a，该值代表备份对象为Workspace。](tag:ctc) [0daac4c5-6707-4851-97ba-169e36266b66，该值代表备份对象为云服务器。d1603440-187d-4516-af25-121250c7cc97，该值代表备份对象为云硬盘。](tag:hcso_dt)
 
         :return: The provider_id of this BackupResp.
         :rtype: str
@@ -655,7 +662,7 @@ class BackupResp:
     def provider_id(self, provider_id):
         """Sets the provider_id of this BackupResp.
 
-        备份提供商ID，用于区分备份对象。当前取值包含  0daac4c5-6707-4851-97ba-169e36266b66，该值代表备份对象为云服务器。d1603440-187d-4516-af25-121250c7cc97，该值代表备份对象为云硬盘。3f3c3220-245c-4805-b811-758870015881， 该值代表备份对象为SFS Turbo。a13639de-00be-4e94-af30-26912d75e4a2，该值代表备份对象为混合云VMware备份。
+        备份提供商ID，用于区分备份对象。当前取值包含： [0daac4c5-6707-4851-97ba-169e36266b66，该值代表备份对象为云服务器。d1603440-187d-4516-af25-121250c7cc97，该值代表备份对象为云硬盘。3f3c3220-245c-4805-b811-758870015881， 该值代表备份对象为SFS Turbo。a13639de-00be-4e94-af30-26912d75e4a2，该值代表备份对象为混合云VMware备份。](tag:hws,hws_hk) [0daac4c5-6707-4851-97ba-169e36266b66，该值代表备份对象为云服务器。d1603440-187d-4516-af25-121250c7cc97，该值代表备份对象为云硬盘。3f3c3220-245c-4805-b811-758870015881，该值代表备份对象为SFS Turbo。](tag:ocb,tlf,sbc,fcs_vm,g42,tm,dt,cmcc) [0daac4c5-6707-4851-97ba-169e36266b66，该值代表备份对象为云服务器。d1603440-187d-4516-af25-121250c7cc97，该值代表备份对象为云硬盘。3f3c3220-245c-4805-b811-758870015881，该值代表备份对象为SFS Turbo。86a80900-71bf-4961-956a-d52df944f84a，该值代表备份对象为Workspace。](tag:ctc) [0daac4c5-6707-4851-97ba-169e36266b66，该值代表备份对象为云服务器。d1603440-187d-4516-af25-121250c7cc97，该值代表备份对象为云硬盘。](tag:hcso_dt)
 
         :param provider_id: The provider_id of this BackupResp.
         :type provider_id: str
@@ -705,6 +712,28 @@ class BackupResp:
         :type incremental: bool
         """
         self._incremental = incremental
+
+    @property
+    def version(self):
+        """Gets the version of this BackupResp.
+
+        备份副本快照类型
+
+        :return: The version of this BackupResp.
+        :rtype: int
+        """
+        return self._version
+
+    @version.setter
+    def version(self, version):
+        """Sets the version of this BackupResp.
+
+        备份副本快照类型
+
+        :param version: The version of this BackupResp.
+        :type version: int
+        """
+        self._version = version
 
     def to_dict(self):
         """Returns the model properties as a dict"""

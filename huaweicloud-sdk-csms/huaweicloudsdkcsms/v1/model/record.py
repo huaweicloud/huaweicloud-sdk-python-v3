@@ -47,21 +47,21 @@ class Record:
 
         :param event_name: 凭据名称。
         :type event_name: str
-        :param trigger_event_type: 凭据类型  取值 ： COMMON ：通用凭据 RDS ：RDS凭据 
+        :param trigger_event_type: 事件类型。 - SECRET_VERSION_CREATED:版本创建 - SECRET_VERSION_EXPIRED:版本过期 - SECRET_ROTATED:凭据轮转成功 - SECRET_DELETED:凭据删除 - SECRET_ROTATED_FAILED:凭据轮转失败
         :type trigger_event_type: str
-        :param create_time: 事件通知记录的创建时间，时间戳，即从1970年1月1日至该时间的总秒数。 
+        :param create_time: 事件通知记录的创建时间，时间戳，即从1970年1月1日至该时间的总秒数。
         :type create_time: int
         :param secret_name: 凭据名称。
         :type secret_name: str
-        :param secret_type: 凭据类型  取值 ： COMMON ：通用凭据(默认)。用于应用系统中的各种敏感信息储存。         RDS ：RDS凭据 。专门针对RDS的凭据，用于存储RDS的账号信息。 
+        :param secret_type: 凭据类型  - COMMON：通用凭据(默认)。用于应用系统中的各种敏感信息储存。 - RDS：RDS凭据 。专门针对RDS的凭据，用于存储RDS的账号信息。（已不支持，使用RDS-FG替代） - RDS-FG：RDS凭据 。专门针对RDS的凭据，用于存储RDS的账号信息。 - GaussDB-FG：GaussDB凭据。专门针对GaussDB的凭据，用于存储GaussDB的账号信息。
         :type secret_type: str
         :param notification_target_name: 事件通知的对象名称。
         :type notification_target_name: str
         :param notification_target_id: 事件通知的对象ID。
         :type notification_target_id: str
-        :param notification_content: 凭据的描述信息。
+        :param notification_content: 事件通知的内容。
         :type notification_content: str
-        :param notification_status: 凭据类型  取值 ： SUCCESS ：事件通知成功。         FAIL ：事件通知失败。         INVALID ：事件通知配置主题信息无效或不正确，无法触发通知。 
+        :param notification_status: 事件通知状态。  - SUCCESS：事件通知成功。 - FAIL：事件通知失败。 - INVALID：事件通知配置主题信息无效或不正确，无法触发通知。
         :type notification_status: str
         """
         
@@ -123,7 +123,7 @@ class Record:
     def trigger_event_type(self):
         """Gets the trigger_event_type of this Record.
 
-        凭据类型  取值 ： COMMON ：通用凭据 RDS ：RDS凭据 
+        事件类型。 - SECRET_VERSION_CREATED:版本创建 - SECRET_VERSION_EXPIRED:版本过期 - SECRET_ROTATED:凭据轮转成功 - SECRET_DELETED:凭据删除 - SECRET_ROTATED_FAILED:凭据轮转失败
 
         :return: The trigger_event_type of this Record.
         :rtype: str
@@ -134,7 +134,7 @@ class Record:
     def trigger_event_type(self, trigger_event_type):
         """Sets the trigger_event_type of this Record.
 
-        凭据类型  取值 ： COMMON ：通用凭据 RDS ：RDS凭据 
+        事件类型。 - SECRET_VERSION_CREATED:版本创建 - SECRET_VERSION_EXPIRED:版本过期 - SECRET_ROTATED:凭据轮转成功 - SECRET_DELETED:凭据删除 - SECRET_ROTATED_FAILED:凭据轮转失败
 
         :param trigger_event_type: The trigger_event_type of this Record.
         :type trigger_event_type: str
@@ -145,7 +145,7 @@ class Record:
     def create_time(self):
         """Gets the create_time of this Record.
 
-        事件通知记录的创建时间，时间戳，即从1970年1月1日至该时间的总秒数。 
+        事件通知记录的创建时间，时间戳，即从1970年1月1日至该时间的总秒数。
 
         :return: The create_time of this Record.
         :rtype: int
@@ -156,7 +156,7 @@ class Record:
     def create_time(self, create_time):
         """Sets the create_time of this Record.
 
-        事件通知记录的创建时间，时间戳，即从1970年1月1日至该时间的总秒数。 
+        事件通知记录的创建时间，时间戳，即从1970年1月1日至该时间的总秒数。
 
         :param create_time: The create_time of this Record.
         :type create_time: int
@@ -189,7 +189,7 @@ class Record:
     def secret_type(self):
         """Gets the secret_type of this Record.
 
-        凭据类型  取值 ： COMMON ：通用凭据(默认)。用于应用系统中的各种敏感信息储存。         RDS ：RDS凭据 。专门针对RDS的凭据，用于存储RDS的账号信息。 
+        凭据类型  - COMMON：通用凭据(默认)。用于应用系统中的各种敏感信息储存。 - RDS：RDS凭据 。专门针对RDS的凭据，用于存储RDS的账号信息。（已不支持，使用RDS-FG替代） - RDS-FG：RDS凭据 。专门针对RDS的凭据，用于存储RDS的账号信息。 - GaussDB-FG：GaussDB凭据。专门针对GaussDB的凭据，用于存储GaussDB的账号信息。
 
         :return: The secret_type of this Record.
         :rtype: str
@@ -200,7 +200,7 @@ class Record:
     def secret_type(self, secret_type):
         """Sets the secret_type of this Record.
 
-        凭据类型  取值 ： COMMON ：通用凭据(默认)。用于应用系统中的各种敏感信息储存。         RDS ：RDS凭据 。专门针对RDS的凭据，用于存储RDS的账号信息。 
+        凭据类型  - COMMON：通用凭据(默认)。用于应用系统中的各种敏感信息储存。 - RDS：RDS凭据 。专门针对RDS的凭据，用于存储RDS的账号信息。（已不支持，使用RDS-FG替代） - RDS-FG：RDS凭据 。专门针对RDS的凭据，用于存储RDS的账号信息。 - GaussDB-FG：GaussDB凭据。专门针对GaussDB的凭据，用于存储GaussDB的账号信息。
 
         :param secret_type: The secret_type of this Record.
         :type secret_type: str
@@ -255,7 +255,7 @@ class Record:
     def notification_content(self):
         """Gets the notification_content of this Record.
 
-        凭据的描述信息。
+        事件通知的内容。
 
         :return: The notification_content of this Record.
         :rtype: str
@@ -266,7 +266,7 @@ class Record:
     def notification_content(self, notification_content):
         """Sets the notification_content of this Record.
 
-        凭据的描述信息。
+        事件通知的内容。
 
         :param notification_content: The notification_content of this Record.
         :type notification_content: str
@@ -277,7 +277,7 @@ class Record:
     def notification_status(self):
         """Gets the notification_status of this Record.
 
-        凭据类型  取值 ： SUCCESS ：事件通知成功。         FAIL ：事件通知失败。         INVALID ：事件通知配置主题信息无效或不正确，无法触发通知。 
+        事件通知状态。  - SUCCESS：事件通知成功。 - FAIL：事件通知失败。 - INVALID：事件通知配置主题信息无效或不正确，无法触发通知。
 
         :return: The notification_status of this Record.
         :rtype: str
@@ -288,7 +288,7 @@ class Record:
     def notification_status(self, notification_status):
         """Sets the notification_status of this Record.
 
-        凭据类型  取值 ： SUCCESS ：事件通知成功。         FAIL ：事件通知失败。         INVALID ：事件通知配置主题信息无效或不正确，无法触发通知。 
+        事件通知状态。  - SUCCESS：事件通知成功。 - FAIL：事件通知失败。 - INVALID：事件通知配置主题信息无效或不正确，无法触发通知。
 
         :param notification_status: The notification_status of this Record.
         :type notification_status: str

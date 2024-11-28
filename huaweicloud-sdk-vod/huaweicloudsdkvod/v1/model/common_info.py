@@ -93,8 +93,10 @@ class CommonInfo:
         self._hls_segment_type = None
         self.discriminator = None
 
-        self.pvc = pvc
-        self.video_codec = video_codec
+        if pvc is not None:
+            self.pvc = pvc
+        if video_codec is not None:
+            self.video_codec = video_codec
         if audio_codec is not None:
             self.audio_codec = audio_codec
         if is_black_cut is not None:

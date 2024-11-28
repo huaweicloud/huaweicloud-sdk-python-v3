@@ -19,15 +19,17 @@ class RotateSecretResponse(SdkResponse):
 
     openapi_types = {
         'version_id': 'str',
-        'secret_name': 'str'
+        'secret_name': 'str',
+        'rotation_task_id': 'str'
     }
 
     attribute_map = {
         'version_id': 'version_id',
-        'secret_name': 'secret_name'
+        'secret_name': 'secret_name',
+        'rotation_task_id': 'rotation_task_id'
     }
 
-    def __init__(self, version_id=None, secret_name=None):
+    def __init__(self, version_id=None, secret_name=None, rotation_task_id=None):
         """RotateSecretResponse
 
         The model defined in huaweicloud sdk
@@ -36,18 +38,23 @@ class RotateSecretResponse(SdkResponse):
         :type version_id: str
         :param secret_name: 凭据的名称。
         :type secret_name: str
+        :param rotation_task_id: 凭据轮转任务ID。
+        :type rotation_task_id: str
         """
         
         super(RotateSecretResponse, self).__init__()
 
         self._version_id = None
         self._secret_name = None
+        self._rotation_task_id = None
         self.discriminator = None
 
         if version_id is not None:
             self.version_id = version_id
         if secret_name is not None:
             self.secret_name = secret_name
+        if rotation_task_id is not None:
+            self.rotation_task_id = rotation_task_id
 
     @property
     def version_id(self):
@@ -92,6 +99,28 @@ class RotateSecretResponse(SdkResponse):
         :type secret_name: str
         """
         self._secret_name = secret_name
+
+    @property
+    def rotation_task_id(self):
+        """Gets the rotation_task_id of this RotateSecretResponse.
+
+        凭据轮转任务ID。
+
+        :return: The rotation_task_id of this RotateSecretResponse.
+        :rtype: str
+        """
+        return self._rotation_task_id
+
+    @rotation_task_id.setter
+    def rotation_task_id(self, rotation_task_id):
+        """Sets the rotation_task_id of this RotateSecretResponse.
+
+        凭据轮转任务ID。
+
+        :param rotation_task_id: The rotation_task_id of this RotateSecretResponse.
+        :type rotation_task_id: str
+        """
+        self._rotation_task_id = rotation_task_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

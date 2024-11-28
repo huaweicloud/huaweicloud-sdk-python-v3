@@ -32,7 +32,8 @@ class Secret:
         'rotation_time': 'int',
         'next_rotation_time': 'int',
         'event_subscriptions': 'list[str]',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'rotation_func_urn': 'str'
     }
 
     attribute_map = {
@@ -51,10 +52,11 @@ class Secret:
         'rotation_time': 'rotation_time',
         'next_rotation_time': 'next_rotation_time',
         'event_subscriptions': 'event_subscriptions',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'rotation_func_urn': 'rotation_func_urn'
     }
 
-    def __init__(self, id=None, name=None, state=None, kms_key_id=None, description=None, create_time=None, update_time=None, scheduled_delete_time=None, secret_type=None, auto_rotation=None, rotation_period=None, rotation_config=None, rotation_time=None, next_rotation_time=None, event_subscriptions=None, enterprise_project_id=None):
+    def __init__(self, id=None, name=None, state=None, kms_key_id=None, description=None, create_time=None, update_time=None, scheduled_delete_time=None, secret_type=None, auto_rotation=None, rotation_period=None, rotation_config=None, rotation_time=None, next_rotation_time=None, event_subscriptions=None, enterprise_project_id=None, rotation_func_urn=None):
         """Secret
 
         The model defined in huaweicloud sdk
@@ -75,13 +77,13 @@ class Secret:
         :type update_time: int
         :param scheduled_delete_time: 凭据计划删除时间，时间戳，即从1970年1月1日至该时间的总秒数。  凭据不在删除计划中时，本项值为null。
         :type scheduled_delete_time: int
-        :param secret_type: 凭据类型  取值 ： COMMON ：通用凭据(默认)。用于应用系统中的各种敏感信息储存。         RDS ：RDS凭据 。专门针对RDS的凭据，用于存储RDS的账号信息。
+        :param secret_type: 凭据类型  - COMMON：通用凭据(默认)。用于应用系统中的各种敏感信息储存。 - RDS：RDS凭据 。专门针对RDS的凭据，用于存储RDS的账号信息。（已不支持，使用RDS-FG替代） - RDS-FG：RDS凭据 。专门针对RDS的凭据，用于存储RDS的账号信息。 - GaussDB-FG：GaussDB凭据。专门针对GaussDB的凭据，用于存储GaussDB的账号信息。
         :type secret_type: str
         :param auto_rotation: 自动轮转  取值：true 开启, false 关闭(默认)
         :type auto_rotation: bool
         :param rotation_period: 轮转周期  约束：6小时-8,760小时 （365天）  类型：Integer[unit] ，Integer表示时间长度 。unit表示时间单位，d（天）、h（小时）、m（分钟）、s（秒）。例如 1d 表示一天，24h也表示一天  说明：当开启自动轮转时，必须填写该值
         :type rotation_period: str
-        :param rotation_config: 轮转配置  约束：范围不超过1024个字符。  当secret_type为RDS时，配置为{\&quot;RDSInstanceId\&quot;:\&quot;\&quot;,\&quot;SecretSubType\&quot;:\&quot;\&quot;}  说明：当secret_type为RDS时，必须填写该值  RDSInstanceId为RDS的实例ID,SecretSubType为轮转子类型，取值为：SingleUser，MultiUser。  SingleUser：指定轮转类型为单用户模式轮转，每次轮转将指定账号重置为新的口令。  MultiUser：指定轮转类型为双用户模式轮转，SYSCURRENT和SYSPREVIOUS分别引用其中一个账号。凭据轮转时，SYSPREVIOUS引用的账号口令会被重置为新的随机口令，随后凭据交换SYSCURRENT和SYSPREVIOUS对RDS账号的引用。
+        :param rotation_config: 轮转配置  约束：范围不超过1024个字符。  当secret_type为RDS-FG、GaussDB-FG时，配置为{\&quot;InstanceId\&quot;:\&quot;\&quot;,\&quot;SecretSubType\&quot;:\&quot;\&quot;}  说明：当secret_type为RDS-FG、GaussDB-FG时，必须填写该值  InstanceId为实例ID,SecretSubType为轮转子类型，取值为：SingleUser，MultiUser。  SingleUser：指定轮转类型为单用户模式轮转，每次轮转将指定账号重置为新的口令。  MultiUser：指定轮转类型为双用户模式轮转，SYSCURRENT和SYSPREVIOUS分别引用其中一个账号。凭据轮转时，SYSPREVIOUS引用的账号口令会被重置为新的随机口令，随后凭据交换SYSCURRENT和SYSPREVIOUS对账号的引用。
         :type rotation_config: str
         :param rotation_time: 轮转时间戳
         :type rotation_time: int
@@ -91,6 +93,8 @@ class Secret:
         :type event_subscriptions: list[str]
         :param enterprise_project_id: 企业项目ID
         :type enterprise_project_id: str
+        :param rotation_func_urn: FunctionGraph函数的urn。
+        :type rotation_func_urn: str
         """
         
         
@@ -111,6 +115,7 @@ class Secret:
         self._next_rotation_time = None
         self._event_subscriptions = None
         self._enterprise_project_id = None
+        self._rotation_func_urn = None
         self.discriminator = None
 
         if id is not None:
@@ -145,6 +150,8 @@ class Secret:
             self.event_subscriptions = event_subscriptions
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if rotation_func_urn is not None:
+            self.rotation_func_urn = rotation_func_urn
 
     @property
     def id(self):
@@ -326,7 +333,7 @@ class Secret:
     def secret_type(self):
         """Gets the secret_type of this Secret.
 
-        凭据类型  取值 ： COMMON ：通用凭据(默认)。用于应用系统中的各种敏感信息储存。         RDS ：RDS凭据 。专门针对RDS的凭据，用于存储RDS的账号信息。
+        凭据类型  - COMMON：通用凭据(默认)。用于应用系统中的各种敏感信息储存。 - RDS：RDS凭据 。专门针对RDS的凭据，用于存储RDS的账号信息。（已不支持，使用RDS-FG替代） - RDS-FG：RDS凭据 。专门针对RDS的凭据，用于存储RDS的账号信息。 - GaussDB-FG：GaussDB凭据。专门针对GaussDB的凭据，用于存储GaussDB的账号信息。
 
         :return: The secret_type of this Secret.
         :rtype: str
@@ -337,7 +344,7 @@ class Secret:
     def secret_type(self, secret_type):
         """Sets the secret_type of this Secret.
 
-        凭据类型  取值 ： COMMON ：通用凭据(默认)。用于应用系统中的各种敏感信息储存。         RDS ：RDS凭据 。专门针对RDS的凭据，用于存储RDS的账号信息。
+        凭据类型  - COMMON：通用凭据(默认)。用于应用系统中的各种敏感信息储存。 - RDS：RDS凭据 。专门针对RDS的凭据，用于存储RDS的账号信息。（已不支持，使用RDS-FG替代） - RDS-FG：RDS凭据 。专门针对RDS的凭据，用于存储RDS的账号信息。 - GaussDB-FG：GaussDB凭据。专门针对GaussDB的凭据，用于存储GaussDB的账号信息。
 
         :param secret_type: The secret_type of this Secret.
         :type secret_type: str
@@ -392,7 +399,7 @@ class Secret:
     def rotation_config(self):
         """Gets the rotation_config of this Secret.
 
-        轮转配置  约束：范围不超过1024个字符。  当secret_type为RDS时，配置为{\"RDSInstanceId\":\"\",\"SecretSubType\":\"\"}  说明：当secret_type为RDS时，必须填写该值  RDSInstanceId为RDS的实例ID,SecretSubType为轮转子类型，取值为：SingleUser，MultiUser。  SingleUser：指定轮转类型为单用户模式轮转，每次轮转将指定账号重置为新的口令。  MultiUser：指定轮转类型为双用户模式轮转，SYSCURRENT和SYSPREVIOUS分别引用其中一个账号。凭据轮转时，SYSPREVIOUS引用的账号口令会被重置为新的随机口令，随后凭据交换SYSCURRENT和SYSPREVIOUS对RDS账号的引用。
+        轮转配置  约束：范围不超过1024个字符。  当secret_type为RDS-FG、GaussDB-FG时，配置为{\"InstanceId\":\"\",\"SecretSubType\":\"\"}  说明：当secret_type为RDS-FG、GaussDB-FG时，必须填写该值  InstanceId为实例ID,SecretSubType为轮转子类型，取值为：SingleUser，MultiUser。  SingleUser：指定轮转类型为单用户模式轮转，每次轮转将指定账号重置为新的口令。  MultiUser：指定轮转类型为双用户模式轮转，SYSCURRENT和SYSPREVIOUS分别引用其中一个账号。凭据轮转时，SYSPREVIOUS引用的账号口令会被重置为新的随机口令，随后凭据交换SYSCURRENT和SYSPREVIOUS对账号的引用。
 
         :return: The rotation_config of this Secret.
         :rtype: str
@@ -403,7 +410,7 @@ class Secret:
     def rotation_config(self, rotation_config):
         """Sets the rotation_config of this Secret.
 
-        轮转配置  约束：范围不超过1024个字符。  当secret_type为RDS时，配置为{\"RDSInstanceId\":\"\",\"SecretSubType\":\"\"}  说明：当secret_type为RDS时，必须填写该值  RDSInstanceId为RDS的实例ID,SecretSubType为轮转子类型，取值为：SingleUser，MultiUser。  SingleUser：指定轮转类型为单用户模式轮转，每次轮转将指定账号重置为新的口令。  MultiUser：指定轮转类型为双用户模式轮转，SYSCURRENT和SYSPREVIOUS分别引用其中一个账号。凭据轮转时，SYSPREVIOUS引用的账号口令会被重置为新的随机口令，随后凭据交换SYSCURRENT和SYSPREVIOUS对RDS账号的引用。
+        轮转配置  约束：范围不超过1024个字符。  当secret_type为RDS-FG、GaussDB-FG时，配置为{\"InstanceId\":\"\",\"SecretSubType\":\"\"}  说明：当secret_type为RDS-FG、GaussDB-FG时，必须填写该值  InstanceId为实例ID,SecretSubType为轮转子类型，取值为：SingleUser，MultiUser。  SingleUser：指定轮转类型为单用户模式轮转，每次轮转将指定账号重置为新的口令。  MultiUser：指定轮转类型为双用户模式轮转，SYSCURRENT和SYSPREVIOUS分别引用其中一个账号。凭据轮转时，SYSPREVIOUS引用的账号口令会被重置为新的随机口令，随后凭据交换SYSCURRENT和SYSPREVIOUS对账号的引用。
 
         :param rotation_config: The rotation_config of this Secret.
         :type rotation_config: str
@@ -497,6 +504,28 @@ class Secret:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def rotation_func_urn(self):
+        """Gets the rotation_func_urn of this Secret.
+
+        FunctionGraph函数的urn。
+
+        :return: The rotation_func_urn of this Secret.
+        :rtype: str
+        """
+        return self._rotation_func_urn
+
+    @rotation_func_urn.setter
+    def rotation_func_urn(self, rotation_func_urn):
+        """Sets the rotation_func_urn of this Secret.
+
+        FunctionGraph函数的urn。
+
+        :param rotation_func_urn: The rotation_func_urn of this Secret.
+        :type rotation_func_urn: str
+        """
+        self._rotation_func_urn = rotation_func_urn
 
     def to_dict(self):
         """Returns the model properties as a dict"""

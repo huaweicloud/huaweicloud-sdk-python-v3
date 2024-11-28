@@ -18,7 +18,7 @@ class ComputeFlavorGroup:
 
     openapi_types = {
         'group_type': 'str',
-        'compute_flavors': 'ComputeFlavor'
+        'compute_flavors': 'list[ComputeFlavor]'
     }
 
     attribute_map = {
@@ -33,8 +33,8 @@ class ComputeFlavorGroup:
 
         :param group_type: 性能规格，包含以下状态：  normal：通用增强型。 normal2：通用增强Ⅱ型。 armFlavors：鲲鹏通用增强型。 dedicicateNormal（dedicatedNormalLocalssd）：x86独享型。 armLocalssd：鲲鹏通用型。 normalLocalssd：x86通用型。 general：通用型。 dedicated 对于PostgreSQL引擎：独享型
         :type group_type: str
-        :param compute_flavors: 
-        :type compute_flavors: :class:`huaweicloudsdkrds.v3.ComputeFlavor`
+        :param compute_flavors: 计算规格列表
+        :type compute_flavors: list[:class:`huaweicloudsdkrds.v3.ComputeFlavor`]
         """
         
         
@@ -72,8 +72,10 @@ class ComputeFlavorGroup:
     def compute_flavors(self):
         """Gets the compute_flavors of this ComputeFlavorGroup.
 
+        计算规格列表
+
         :return: The compute_flavors of this ComputeFlavorGroup.
-        :rtype: :class:`huaweicloudsdkrds.v3.ComputeFlavor`
+        :rtype: list[:class:`huaweicloudsdkrds.v3.ComputeFlavor`]
         """
         return self._compute_flavors
 
@@ -81,8 +83,10 @@ class ComputeFlavorGroup:
     def compute_flavors(self, compute_flavors):
         """Sets the compute_flavors of this ComputeFlavorGroup.
 
+        计算规格列表
+
         :param compute_flavors: The compute_flavors of this ComputeFlavorGroup.
-        :type compute_flavors: :class:`huaweicloudsdkrds.v3.ComputeFlavor`
+        :type compute_flavors: list[:class:`huaweicloudsdkrds.v3.ComputeFlavor`]
         """
         self._compute_flavors = compute_flavors
 

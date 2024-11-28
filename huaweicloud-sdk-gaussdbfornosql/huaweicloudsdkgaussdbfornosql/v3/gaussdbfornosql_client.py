@@ -3884,6 +3884,79 @@ class GaussDBforNoSQLClient(Client):
 
         return http_info
 
+    def list_redis_pitr_restore_time(self, request):
+        """查询Redis可恢复时间点
+
+        查询Redis可恢复时间点。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListRedisPitrRestoreTime
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListRedisPitrRestoreTimeRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListRedisPitrRestoreTimeResponse`
+        """
+        http_info = self._list_redis_pitr_restore_time_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_redis_pitr_restore_time_invoker(self, request):
+        http_info = self._list_redis_pitr_restore_time_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_redis_pitr_restore_time_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/redis/instances/{instance_id}/pitr/restorable-time-periods",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRedisPitrRestoreTimeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_redis_slow_logs(self, request):
         """查询GeminiDB(for Redis)数据库慢日志
 
@@ -5311,6 +5384,73 @@ class GaussDBforNoSQLClient(Client):
 
         return http_info
 
+    def restore_redis_pitr(self, request):
+        """恢复当前Redis实例到指定时间点
+
+        恢复当前Redis实例到指定时间点。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RestoreRedisPitr
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.RestoreRedisPitrRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.RestoreRedisPitrResponse`
+        """
+        http_info = self._restore_redis_pitr_http_info(request)
+        return self._call_api(**http_info)
+
+    def restore_redis_pitr_invoker(self, request):
+        http_info = self._restore_redis_pitr_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _restore_redis_pitr_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/redis/instances/{instance_id}/pitr",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestoreRedisPitrResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def save_lts_configs(self, request):
         """关联LTS日志流
 
@@ -5614,6 +5754,73 @@ class GaussDBforNoSQLClient(Client):
         collection_formats = {}
 
         path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def set_redis_pitr_policy(self, request):
+        """设置Redis恢复到指定时间点策略
+
+        设置Redis恢复到指定时间点策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SetRedisPitrPolicy
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.SetRedisPitrPolicyRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.SetRedisPitrPolicyResponse`
+        """
+        http_info = self._set_redis_pitr_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_redis_pitr_policy_invoker(self, request):
+        http_info = self._set_redis_pitr_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _set_redis_pitr_policy_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/redis/instances/{instance_id}/pitr/policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetRedisPitrPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
 
@@ -7077,6 +7284,136 @@ class GaussDBforNoSQLClient(Client):
 
         return http_info
 
+    def show_redis_pitr_info(self, request):
+        """查询Redis实例指定时间点恢复所占用的存储空间
+
+        查询Redis实例指定时间点恢复所占用的存储空间。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowRedisPitrInfo
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowRedisPitrInfoRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowRedisPitrInfoResponse`
+        """
+        http_info = self._show_redis_pitr_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_redis_pitr_info_invoker(self, request):
+        http_info = self._show_redis_pitr_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_redis_pitr_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/redis/instances/{instance_id}/pitr",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRedisPitrInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_redis_pitr_policy(self, request):
+        """查询Redis恢复到指定时间点策略
+
+        查询Redis恢复到指定时间点策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowRedisPitrPolicy
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowRedisPitrPolicyRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowRedisPitrPolicyResponse`
+        """
+        http_info = self._show_redis_pitr_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_redis_pitr_policy_invoker(self, request):
+        http_info = self._show_redis_pitr_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_redis_pitr_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/redis/instances/{instance_id}/pitr/policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRedisPitrPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_restorable_list(self, request):
         """查询可恢复的实例列表
 
@@ -7312,6 +7649,73 @@ class GaussDBforNoSQLClient(Client):
         path_params = {}
         if 'instance_id' in local_var_params:
             path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def stop_backup(self, request):
+        """停止备份
+
+        支持紧急情况下停止备份功能。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for StopBackup
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.StopBackupRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.StopBackupResponse`
+        """
+        http_info = self._stop_backup_http_info(request)
+        return self._call_api(**http_info)
+
+    def stop_backup_invoker(self, request):
+        http_info = self._stop_backup_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _stop_backup_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/backups/{backup_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopBackupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'backup_id' in local_var_params:
+            path_params['backup_id'] = local_var_params['backup_id']
 
         query_params = []
 

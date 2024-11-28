@@ -65,7 +65,7 @@ class ListProductsRequest:
         :type name: str
         :param tag: 按标签模糊查询。
         :type tag: str
-        :param state: 按状态查询，多状态使用英文逗号分割。
+        :param state: 按状态查询，多状态使用英文逗号分隔。
         :type state: str
         """
         
@@ -306,7 +306,7 @@ class ListProductsRequest:
     def state(self):
         """Gets the state of this ListProductsRequest.
 
-        按状态查询，多状态使用英文逗号分割。
+        按状态查询，多状态使用英文逗号分隔。
 
         :return: The state of this ListProductsRequest.
         :rtype: str
@@ -317,7 +317,7 @@ class ListProductsRequest:
     def state(self, state):
         """Sets the state of this ListProductsRequest.
 
-        按状态查询，多状态使用英文逗号分割。
+        按状态查询，多状态使用英文逗号分隔。
 
         :param state: The state of this ListProductsRequest.
         :type state: str

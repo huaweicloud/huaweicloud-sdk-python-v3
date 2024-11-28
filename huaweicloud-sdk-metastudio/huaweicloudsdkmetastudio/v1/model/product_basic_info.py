@@ -49,7 +49,7 @@ class ProductBasicInfo:
         :type cover: :class:`huaweicloudsdkmetastudio.v1.ProductCoverInfo`
         :param text_list: 文本列表
         :type text_list: list[:class:`huaweicloudsdkmetastudio.v1.ProductTextInfo`]
-        :param asset_list: 素材资产列表
+        :param asset_list: 资产列表,仅支持图片、视频、音频资产
         :type asset_list: list[:class:`huaweicloudsdkmetastudio.v1.ProductMediaInfo`]
         """
         
@@ -185,7 +185,7 @@ class ProductBasicInfo:
     def asset_list(self):
         """Gets the asset_list of this ProductBasicInfo.
 
-        素材资产列表
+        资产列表,仅支持图片、视频、音频资产
 
         :return: The asset_list of this ProductBasicInfo.
         :rtype: list[:class:`huaweicloudsdkmetastudio.v1.ProductMediaInfo`]
@@ -196,7 +196,7 @@ class ProductBasicInfo:
     def asset_list(self, asset_list):
         """Sets the asset_list of this ProductBasicInfo.
 
-        素材资产列表
+        资产列表,仅支持图片、视频、音频资产
 
         :param asset_list: The asset_list of this ProductBasicInfo.
         :type asset_list: list[:class:`huaweicloudsdkmetastudio.v1.ProductMediaInfo`]

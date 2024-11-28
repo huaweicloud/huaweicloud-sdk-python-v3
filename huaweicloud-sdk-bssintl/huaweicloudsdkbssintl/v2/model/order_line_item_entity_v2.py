@@ -33,7 +33,8 @@ class OrderLineItemEntityV2:
         'currency': 'str',
         'category_code': 'str',
         'product_owner_service': 'str',
-        'commercial_resource': 'str'
+        'commercial_resource': 'str',
+        'base_product_info': 'ProductObject'
     }
 
     attribute_map = {
@@ -53,10 +54,11 @@ class OrderLineItemEntityV2:
         'currency': 'currency',
         'category_code': 'category_code',
         'product_owner_service': 'product_owner_service',
-        'commercial_resource': 'commercial_resource'
+        'commercial_resource': 'commercial_resource',
+        'base_product_info': 'base_product_info'
     }
 
-    def __init__(self, order_line_item_id=None, service_type_code=None, service_type_name=None, product_id=None, product_spec_desc=None, period_type=None, period_num=None, effective_time=None, expire_time=None, subscription_num=None, amount_after_discount=None, official_amount=None, amount_info=None, currency=None, category_code=None, product_owner_service=None, commercial_resource=None):
+    def __init__(self, order_line_item_id=None, service_type_code=None, service_type_name=None, product_id=None, product_spec_desc=None, period_type=None, period_num=None, effective_time=None, expire_time=None, subscription_num=None, amount_after_discount=None, official_amount=None, amount_info=None, currency=None, category_code=None, product_owner_service=None, commercial_resource=None, base_product_info=None):
         """OrderLineItemEntityV2
 
         The model defined in huaweicloud sdk
@@ -95,6 +97,8 @@ class OrderLineItemEntityV2:
         :type product_owner_service: str
         :param commercial_resource: 商务归属的资源类型编码。 资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
         :type commercial_resource: str
+        :param base_product_info: 
+        :type base_product_info: :class:`huaweicloudsdkbssintl.v2.ProductObject`
         """
         
         
@@ -116,6 +120,7 @@ class OrderLineItemEntityV2:
         self._category_code = None
         self._product_owner_service = None
         self._commercial_resource = None
+        self._base_product_info = None
         self.discriminator = None
 
         if order_line_item_id is not None:
@@ -152,6 +157,8 @@ class OrderLineItemEntityV2:
             self.product_owner_service = product_owner_service
         if commercial_resource is not None:
             self.commercial_resource = commercial_resource
+        if base_product_info is not None:
+            self.base_product_info = base_product_info
 
     @property
     def order_line_item_id(self):
@@ -522,6 +529,24 @@ class OrderLineItemEntityV2:
         :type commercial_resource: str
         """
         self._commercial_resource = commercial_resource
+
+    @property
+    def base_product_info(self):
+        """Gets the base_product_info of this OrderLineItemEntityV2.
+
+        :return: The base_product_info of this OrderLineItemEntityV2.
+        :rtype: :class:`huaweicloudsdkbssintl.v2.ProductObject`
+        """
+        return self._base_product_info
+
+    @base_product_info.setter
+    def base_product_info(self, base_product_info):
+        """Sets the base_product_info of this OrderLineItemEntityV2.
+
+        :param base_product_info: The base_product_info of this OrderLineItemEntityV2.
+        :type base_product_info: :class:`huaweicloudsdkbssintl.v2.ProductObject`
+        """
+        self._base_product_info = base_product_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

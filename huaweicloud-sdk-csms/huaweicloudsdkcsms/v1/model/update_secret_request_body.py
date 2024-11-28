@@ -21,7 +21,8 @@ class UpdateSecretRequestBody:
         'description': 'str',
         'auto_rotation': 'bool',
         'rotation_period': 'str',
-        'event_subscriptions': 'list[str]'
+        'event_subscriptions': 'list[str]',
+        'rotation_func_urn': 'str'
     }
 
     attribute_map = {
@@ -29,24 +30,27 @@ class UpdateSecretRequestBody:
         'description': 'description',
         'auto_rotation': 'auto_rotation',
         'rotation_period': 'rotation_period',
-        'event_subscriptions': 'event_subscriptions'
+        'event_subscriptions': 'event_subscriptions',
+        'rotation_func_urn': 'rotation_func_urn'
     }
 
-    def __init__(self, kms_key_id=None, description=None, auto_rotation=None, rotation_period=None, event_subscriptions=None):
+    def __init__(self, kms_key_id=None, description=None, auto_rotation=None, rotation_period=None, event_subscriptions=None, rotation_func_urn=None):
         """UpdateSecretRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param kms_key_id: 用于加密保护凭据值的KMS主密钥ID。更新凭据的主密钥后，仅新创建的凭据版本使用更新后的主密钥ID加密，之前的凭据版本依旧使用之前的主密钥ID解密。 
+        :param kms_key_id: 用于加密保护凭据值的KMS主密钥ID。更新凭据的主密钥后，仅新创建的凭据版本使用更新后的主密钥ID加密，之前的凭据版本依旧使用之前的主密钥ID解密。
         :type kms_key_id: str
-        :param description: 凭据的描述信息。 约束：2048字节。 
+        :param description: 凭据的描述信息。 约束：2048字节。
         :type description: str
-        :param auto_rotation: 自动轮转  取值：true 开启 false 关 
+        :param auto_rotation: 自动轮转  取值：true 开启 false 关
         :type auto_rotation: bool
-        :param rotation_period: 轮转周期  约束：6小时-8,760小时 （365天）  类型：Integer[unit] ，Integer表示时间长度 。unit表示时间单位，d（天）、h（小时）、m（分钟）、s（秒）。例如 1d 表示一天，24h也表示一天  说明：当开启自动轮转时，必须填写该值 
+        :param rotation_period: 轮转周期  约束：6小时-8,760小时 （365天）  类型：Integer[unit] ，Integer表示时间长度 。unit表示时间单位，d（天）、h（小时）、m（分钟）、s（秒）。例如 1d 表示一天，24h也表示一天  说明：当开启自动轮转时，必须填写该值
         :type rotation_period: str
-        :param event_subscriptions: 凭据订阅的事件列表，当前最大可订阅一个事件。当事件包含的基础事件触发时，通知消息将发送到事件对应的通知主题。 
+        :param event_subscriptions: 凭据订阅的事件列表，当前最大可订阅一个事件。当事件包含的基础事件触发时，通知消息将发送到事件对应的通知主题。
         :type event_subscriptions: list[str]
+        :param rotation_func_urn: FunctionGraph函数的urn。
+        :type rotation_func_urn: str
         """
         
         
@@ -56,6 +60,7 @@ class UpdateSecretRequestBody:
         self._auto_rotation = None
         self._rotation_period = None
         self._event_subscriptions = None
+        self._rotation_func_urn = None
         self.discriminator = None
 
         if kms_key_id is not None:
@@ -68,12 +73,14 @@ class UpdateSecretRequestBody:
             self.rotation_period = rotation_period
         if event_subscriptions is not None:
             self.event_subscriptions = event_subscriptions
+        if rotation_func_urn is not None:
+            self.rotation_func_urn = rotation_func_urn
 
     @property
     def kms_key_id(self):
         """Gets the kms_key_id of this UpdateSecretRequestBody.
 
-        用于加密保护凭据值的KMS主密钥ID。更新凭据的主密钥后，仅新创建的凭据版本使用更新后的主密钥ID加密，之前的凭据版本依旧使用之前的主密钥ID解密。 
+        用于加密保护凭据值的KMS主密钥ID。更新凭据的主密钥后，仅新创建的凭据版本使用更新后的主密钥ID加密，之前的凭据版本依旧使用之前的主密钥ID解密。
 
         :return: The kms_key_id of this UpdateSecretRequestBody.
         :rtype: str
@@ -84,7 +91,7 @@ class UpdateSecretRequestBody:
     def kms_key_id(self, kms_key_id):
         """Sets the kms_key_id of this UpdateSecretRequestBody.
 
-        用于加密保护凭据值的KMS主密钥ID。更新凭据的主密钥后，仅新创建的凭据版本使用更新后的主密钥ID加密，之前的凭据版本依旧使用之前的主密钥ID解密。 
+        用于加密保护凭据值的KMS主密钥ID。更新凭据的主密钥后，仅新创建的凭据版本使用更新后的主密钥ID加密，之前的凭据版本依旧使用之前的主密钥ID解密。
 
         :param kms_key_id: The kms_key_id of this UpdateSecretRequestBody.
         :type kms_key_id: str
@@ -95,7 +102,7 @@ class UpdateSecretRequestBody:
     def description(self):
         """Gets the description of this UpdateSecretRequestBody.
 
-        凭据的描述信息。 约束：2048字节。 
+        凭据的描述信息。 约束：2048字节。
 
         :return: The description of this UpdateSecretRequestBody.
         :rtype: str
@@ -106,7 +113,7 @@ class UpdateSecretRequestBody:
     def description(self, description):
         """Sets the description of this UpdateSecretRequestBody.
 
-        凭据的描述信息。 约束：2048字节。 
+        凭据的描述信息。 约束：2048字节。
 
         :param description: The description of this UpdateSecretRequestBody.
         :type description: str
@@ -117,7 +124,7 @@ class UpdateSecretRequestBody:
     def auto_rotation(self):
         """Gets the auto_rotation of this UpdateSecretRequestBody.
 
-        自动轮转  取值：true 开启 false 关 
+        自动轮转  取值：true 开启 false 关
 
         :return: The auto_rotation of this UpdateSecretRequestBody.
         :rtype: bool
@@ -128,7 +135,7 @@ class UpdateSecretRequestBody:
     def auto_rotation(self, auto_rotation):
         """Sets the auto_rotation of this UpdateSecretRequestBody.
 
-        自动轮转  取值：true 开启 false 关 
+        自动轮转  取值：true 开启 false 关
 
         :param auto_rotation: The auto_rotation of this UpdateSecretRequestBody.
         :type auto_rotation: bool
@@ -139,7 +146,7 @@ class UpdateSecretRequestBody:
     def rotation_period(self):
         """Gets the rotation_period of this UpdateSecretRequestBody.
 
-        轮转周期  约束：6小时-8,760小时 （365天）  类型：Integer[unit] ，Integer表示时间长度 。unit表示时间单位，d（天）、h（小时）、m（分钟）、s（秒）。例如 1d 表示一天，24h也表示一天  说明：当开启自动轮转时，必须填写该值 
+        轮转周期  约束：6小时-8,760小时 （365天）  类型：Integer[unit] ，Integer表示时间长度 。unit表示时间单位，d（天）、h（小时）、m（分钟）、s（秒）。例如 1d 表示一天，24h也表示一天  说明：当开启自动轮转时，必须填写该值
 
         :return: The rotation_period of this UpdateSecretRequestBody.
         :rtype: str
@@ -150,7 +157,7 @@ class UpdateSecretRequestBody:
     def rotation_period(self, rotation_period):
         """Sets the rotation_period of this UpdateSecretRequestBody.
 
-        轮转周期  约束：6小时-8,760小时 （365天）  类型：Integer[unit] ，Integer表示时间长度 。unit表示时间单位，d（天）、h（小时）、m（分钟）、s（秒）。例如 1d 表示一天，24h也表示一天  说明：当开启自动轮转时，必须填写该值 
+        轮转周期  约束：6小时-8,760小时 （365天）  类型：Integer[unit] ，Integer表示时间长度 。unit表示时间单位，d（天）、h（小时）、m（分钟）、s（秒）。例如 1d 表示一天，24h也表示一天  说明：当开启自动轮转时，必须填写该值
 
         :param rotation_period: The rotation_period of this UpdateSecretRequestBody.
         :type rotation_period: str
@@ -161,7 +168,7 @@ class UpdateSecretRequestBody:
     def event_subscriptions(self):
         """Gets the event_subscriptions of this UpdateSecretRequestBody.
 
-        凭据订阅的事件列表，当前最大可订阅一个事件。当事件包含的基础事件触发时，通知消息将发送到事件对应的通知主题。 
+        凭据订阅的事件列表，当前最大可订阅一个事件。当事件包含的基础事件触发时，通知消息将发送到事件对应的通知主题。
 
         :return: The event_subscriptions of this UpdateSecretRequestBody.
         :rtype: list[str]
@@ -172,12 +179,34 @@ class UpdateSecretRequestBody:
     def event_subscriptions(self, event_subscriptions):
         """Sets the event_subscriptions of this UpdateSecretRequestBody.
 
-        凭据订阅的事件列表，当前最大可订阅一个事件。当事件包含的基础事件触发时，通知消息将发送到事件对应的通知主题。 
+        凭据订阅的事件列表，当前最大可订阅一个事件。当事件包含的基础事件触发时，通知消息将发送到事件对应的通知主题。
 
         :param event_subscriptions: The event_subscriptions of this UpdateSecretRequestBody.
         :type event_subscriptions: list[str]
         """
         self._event_subscriptions = event_subscriptions
+
+    @property
+    def rotation_func_urn(self):
+        """Gets the rotation_func_urn of this UpdateSecretRequestBody.
+
+        FunctionGraph函数的urn。
+
+        :return: The rotation_func_urn of this UpdateSecretRequestBody.
+        :rtype: str
+        """
+        return self._rotation_func_urn
+
+    @rotation_func_urn.setter
+    def rotation_func_urn(self, rotation_func_urn):
+        """Sets the rotation_func_urn of this UpdateSecretRequestBody.
+
+        FunctionGraph函数的urn。
+
+        :param rotation_func_urn: The rotation_func_urn of this UpdateSecretRequestBody.
+        :type rotation_func_urn: str
+        """
+        self._rotation_func_urn = rotation_func_urn
 
     def to_dict(self):
         """Returns the model properties as a dict"""

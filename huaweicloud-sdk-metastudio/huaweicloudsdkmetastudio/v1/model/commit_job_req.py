@@ -23,7 +23,9 @@ class CommitJobReq:
         'voice_name': 'str',
         'language': 'str',
         'phone': 'str',
-        'app_user_id': 'str'
+        'app_user_id': 'str',
+        'output_language': 'str',
+        'custom_text': 'str'
     }
 
     attribute_map = {
@@ -33,10 +35,12 @@ class CommitJobReq:
         'voice_name': 'voice_name',
         'language': 'language',
         'phone': 'phone',
-        'app_user_id': 'app_user_id'
+        'app_user_id': 'app_user_id',
+        'output_language': 'output_language',
+        'custom_text': 'custom_text'
     }
 
-    def __init__(self, tag=None, description=None, sex=None, voice_name=None, language=None, phone=None, app_user_id=None):
+    def __init__(self, tag=None, description=None, sex=None, voice_name=None, language=None, phone=None, app_user_id=None, output_language=None, custom_text=None):
         """CommitJobReq
 
         The model defined in huaweicloud sdk
@@ -55,6 +59,10 @@ class CommitJobReq:
         :type phone: str
         :param app_user_id: 第三方用户id
         :type app_user_id: str
+        :param output_language: 模型输出语言类型
+        :type output_language: str
+        :param custom_text: 自定义试听文本
+        :type custom_text: str
         """
         
         
@@ -66,6 +74,8 @@ class CommitJobReq:
         self._language = None
         self._phone = None
         self._app_user_id = None
+        self._output_language = None
+        self._custom_text = None
         self.discriminator = None
 
         if tag is not None:
@@ -82,6 +92,10 @@ class CommitJobReq:
             self.phone = phone
         if app_user_id is not None:
             self.app_user_id = app_user_id
+        if output_language is not None:
+            self.output_language = output_language
+        if custom_text is not None:
+            self.custom_text = custom_text
 
     @property
     def tag(self):
@@ -232,6 +246,50 @@ class CommitJobReq:
         :type app_user_id: str
         """
         self._app_user_id = app_user_id
+
+    @property
+    def output_language(self):
+        """Gets the output_language of this CommitJobReq.
+
+        模型输出语言类型
+
+        :return: The output_language of this CommitJobReq.
+        :rtype: str
+        """
+        return self._output_language
+
+    @output_language.setter
+    def output_language(self, output_language):
+        """Sets the output_language of this CommitJobReq.
+
+        模型输出语言类型
+
+        :param output_language: The output_language of this CommitJobReq.
+        :type output_language: str
+        """
+        self._output_language = output_language
+
+    @property
+    def custom_text(self):
+        """Gets the custom_text of this CommitJobReq.
+
+        自定义试听文本
+
+        :return: The custom_text of this CommitJobReq.
+        :rtype: str
+        """
+        return self._custom_text
+
+    @custom_text.setter
+    def custom_text(self, custom_text):
+        """Sets the custom_text of this CommitJobReq.
+
+        自定义试听文本
+
+        :param custom_text: The custom_text of this CommitJobReq.
+        :type custom_text: str
+        """
+        self._custom_text = custom_text
 
     def to_dict(self):
         """Returns the model properties as a dict"""

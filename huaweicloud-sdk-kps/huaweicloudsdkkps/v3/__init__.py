@@ -12,6 +12,10 @@ from huaweicloudsdkkps.v3.model.auth import Auth
 from huaweicloudsdkkps.v3.model.batch_associate_keypair_request import BatchAssociateKeypairRequest
 from huaweicloudsdkkps.v3.model.batch_associate_keypair_request_body import BatchAssociateKeypairRequestBody
 from huaweicloudsdkkps.v3.model.batch_associate_keypair_response import BatchAssociateKeypairResponse
+from huaweicloudsdkkps.v3.model.batch_export_private_key_request import BatchExportPrivateKeyRequest
+from huaweicloudsdkkps.v3.model.batch_export_private_key_response import BatchExportPrivateKeyResponse
+from huaweicloudsdkkps.v3.model.batch_import_keypair_request import BatchImportKeypairRequest
+from huaweicloudsdkkps.v3.model.batch_import_keypair_response import BatchImportKeypairResponse
 from huaweicloudsdkkps.v3.model.clear_private_key_request import ClearPrivateKeyRequest
 from huaweicloudsdkkps.v3.model.clear_private_key_response import ClearPrivateKeyResponse
 from huaweicloudsdkkps.v3.model.create_keypair_action import CreateKeypairAction
@@ -19,6 +23,7 @@ from huaweicloudsdkkps.v3.model.create_keypair_request import CreateKeypairReque
 from huaweicloudsdkkps.v3.model.create_keypair_request_body import CreateKeypairRequestBody
 from huaweicloudsdkkps.v3.model.create_keypair_resp import CreateKeypairResp
 from huaweicloudsdkkps.v3.model.create_keypair_response import CreateKeypairResponse
+from huaweicloudsdkkps.v3.model.create_keypair_response_body import CreateKeypairResponseBody
 from huaweicloudsdkkps.v3.model.delete_all_failed_task_request import DeleteAllFailedTaskRequest
 from huaweicloudsdkkps.v3.model.delete_all_failed_task_response import DeleteAllFailedTaskResponse
 from huaweicloudsdkkps.v3.model.delete_failed_task_request import DeleteFailedTaskRequest
@@ -35,6 +40,7 @@ from huaweicloudsdkkps.v3.model.export_private_key_keypair_bean import ExportPri
 from huaweicloudsdkkps.v3.model.export_private_key_request import ExportPrivateKeyRequest
 from huaweicloudsdkkps.v3.model.export_private_key_request_body import ExportPrivateKeyRequestBody
 from huaweicloudsdkkps.v3.model.export_private_key_response import ExportPrivateKeyResponse
+from huaweicloudsdkkps.v3.model.failed_keypair import FailedKeypair
 from huaweicloudsdkkps.v3.model.failed_tasks import FailedTasks
 from huaweicloudsdkkps.v3.model.import_private_key_action import ImportPrivateKeyAction
 from huaweicloudsdkkps.v3.model.import_private_key_keypair_bean import ImportPrivateKeyKeypairBean

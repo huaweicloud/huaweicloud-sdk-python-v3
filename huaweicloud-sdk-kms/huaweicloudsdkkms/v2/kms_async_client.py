@@ -32,6 +32,72 @@ class KmsAsyncClient(Client):
 
         return client_builder
 
+    def associate_alias_async(self, request):
+        """associate_alias
+
+        关联别名。
+        你可以将别名从原密钥关联到另一个新的密钥
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AssociateAlias
+        :type request: :class:`huaweicloudsdkkms.v2.AssociateAliasRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.AssociateAliasResponse`
+        """
+        http_info = self._associate_alias_http_info(request)
+        return self._call_api(**http_info)
+
+    def associate_alias_async_invoker(self, request):
+        http_info = self._associate_alias_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _associate_alias_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/alias/associate",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateAliasResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_create_kms_tags_async(self, request):
         """批量添加删除密钥标签
 
@@ -290,6 +356,70 @@ class KmsAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_alias_async(self, request):
+        """create_alias
+
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateAlias
+        :type request: :class:`huaweicloudsdkkms.v2.CreateAliasRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.CreateAliasResponse`
+        """
+        http_info = self._create_alias_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_alias_async_invoker(self, request):
+        http_info = self._create_alias_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_alias_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/aliases",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAliasResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -948,6 +1078,71 @@ class KmsAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_alias_async(self, request):
+        """delete_alias
+
+        删除别名
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteAlias
+        :type request: :class:`huaweicloudsdkkms.v2.DeleteAliasRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.DeleteAliasResponse`
+        """
+        http_info = self._delete_alias_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_alias_async_invoker(self, request):
+        http_info = self._delete_alias_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_alias_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/{project_id}/kms/aliases",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAliasResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -1879,6 +2074,75 @@ class KmsAsyncClient(Client):
 
         return http_info
 
+    def list_aliases_async(self, request):
+        """list_aliases
+
+        查询一个密钥关联的所有别名
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAliases
+        :type request: :class:`huaweicloudsdkkms.v2.ListAliasesRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.ListAliasesResponse`
+        """
+        http_info = self._list_aliases_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_aliases_async_invoker(self, request):
+        http_info = self._list_aliases_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_aliases_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/kms/aliases",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAliasesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'key_id' in local_var_params:
+            query_params.append(('key_id', local_var_params['key_id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_grants_async(self, request):
         """查询授权列表
 
@@ -2372,6 +2636,10 @@ class KmsAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
 

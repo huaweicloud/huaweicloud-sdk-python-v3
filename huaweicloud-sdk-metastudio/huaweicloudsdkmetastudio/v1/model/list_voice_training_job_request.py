@@ -26,7 +26,8 @@ class ListVoiceTrainingJobRequest:
         'job_id': 'str',
         'voice_name': 'str',
         'tag': 'str',
-        'job_type': 'str'
+        'job_type': 'str',
+        'batch_name': 'str'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class ListVoiceTrainingJobRequest:
         'job_id': 'job_id',
         'voice_name': 'voice_name',
         'tag': 'tag',
-        'job_type': 'job_type'
+        'job_type': 'job_type',
+        'batch_name': 'batch_name'
     }
 
-    def __init__(self, offset=None, limit=None, create_until=None, create_since=None, x_app_user_id=None, state=None, job_id=None, voice_name=None, tag=None, job_type=None):
+    def __init__(self, offset=None, limit=None, create_until=None, create_since=None, x_app_user_id=None, state=None, job_id=None, voice_name=None, tag=None, job_type=None, batch_name=None):
         """ListVoiceTrainingJobRequest
 
         The model defined in huaweicloud sdk
@@ -67,6 +69,8 @@ class ListVoiceTrainingJobRequest:
         :type tag: str
         :param job_type: 训练类型。 * BASIC: 基础版(20句话) * MIDDLE: 进阶版(100句话) * ADVANCE: 高级版 * THIRD_PARTY: 第三方出门问问训练版 * THIRD_PARTY_LJZN: 第三方逻辑智能训练版 * FLEXUS: Flexus版---用的是大模型特征提取
         :type job_type: str
+        :param batch_name: 批次名称。
+        :type batch_name: str
         """
         
         
@@ -81,6 +85,7 @@ class ListVoiceTrainingJobRequest:
         self._voice_name = None
         self._tag = None
         self._job_type = None
+        self._batch_name = None
         self.discriminator = None
 
         if offset is not None:
@@ -103,6 +108,8 @@ class ListVoiceTrainingJobRequest:
             self.tag = tag
         if job_type is not None:
             self.job_type = job_type
+        if batch_name is not None:
+            self.batch_name = batch_name
 
     @property
     def offset(self):
@@ -323,6 +330,28 @@ class ListVoiceTrainingJobRequest:
         :type job_type: str
         """
         self._job_type = job_type
+
+    @property
+    def batch_name(self):
+        """Gets the batch_name of this ListVoiceTrainingJobRequest.
+
+        批次名称。
+
+        :return: The batch_name of this ListVoiceTrainingJobRequest.
+        :rtype: str
+        """
+        return self._batch_name
+
+    @batch_name.setter
+    def batch_name(self, batch_name):
+        """Sets the batch_name of this ListVoiceTrainingJobRequest.
+
+        批次名称。
+
+        :param batch_name: The batch_name of this ListVoiceTrainingJobRequest.
+        :type batch_name: str
+        """
+        self._batch_name = batch_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

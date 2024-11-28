@@ -37,7 +37,8 @@ class NodeExtendParam:
         'agency_name': 'str',
         'kube_reserved_mem': 'int',
         'system_reserved_mem': 'int',
-        'init_node_password': 'str'
+        'init_node_password': 'str',
+        'security_reinforcement_type': 'str'
     }
 
     attribute_map = {
@@ -61,10 +62,11 @@ class NodeExtendParam:
         'agency_name': 'agency_name',
         'kube_reserved_mem': 'kubeReservedMem',
         'system_reserved_mem': 'systemReservedMem',
-        'init_node_password': 'init-node-password'
+        'init_node_password': 'init-node-password',
+        'security_reinforcement_type': 'securityReinforcementType'
     }
 
-    def __init__(self, ecsperformancetype=None, order_id=None, product_id=None, max_pods=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, docker_lvm_config_override=None, docker_base_size=None, public_key=None, alpha_cce_pre_install=None, alpha_cce_post_install=None, alpha_cce_node_image_id=None, nic_multiqueue=None, nic_threshold=None, charging_mode=None, agency_name=None, kube_reserved_mem=None, system_reserved_mem=None, init_node_password=None):
+    def __init__(self, ecsperformancetype=None, order_id=None, product_id=None, max_pods=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, docker_lvm_config_override=None, docker_base_size=None, public_key=None, alpha_cce_pre_install=None, alpha_cce_post_install=None, alpha_cce_node_image_id=None, nic_multiqueue=None, nic_threshold=None, charging_mode=None, agency_name=None, kube_reserved_mem=None, system_reserved_mem=None, init_node_password=None, security_reinforcement_type=None):
         """NodeExtendParam
 
         The model defined in huaweicloud sdk
@@ -111,6 +113,8 @@ class NodeExtendParam:
         :type system_reserved_mem: int
         :param init_node_password: 节点密码，作为响应参数时，固定展示星号。
         :type init_node_password: str
+        :param security_reinforcement_type: **参数解释**： 指定节点安全加固类型，当前仅支持HCE2.0镜像等保2.0三级安全加固。 等保加固会对身份鉴别、访问控制、安全审计、入侵防范、恶意代码防范进行检查并加固。详情请参见[Huawei Cloud EulerOS 2.0等保2.0三级版镜像概述](https://support.huaweicloud.com/productdesc-hce/hce_sec_0001.html)。 若未指定此参数，则尝试用原有的值补全。如：原先HCE2.0镜像已配置安全加固，更新节点池时未指定此参数，则仍旧保持安全加固配置，若要取消，需显式指定参数值为\&quot;null\&quot;。 **约束限制**： 不涉及 **取值范围**： 取值范围：[&#39;null&#39;, cybersecurity]; **默认取值**： 不涉及
+        :type security_reinforcement_type: str
         """
         
         
@@ -136,6 +140,7 @@ class NodeExtendParam:
         self._kube_reserved_mem = None
         self._system_reserved_mem = None
         self._init_node_password = None
+        self._security_reinforcement_type = None
         self.discriminator = None
 
         if ecsperformancetype is not None:
@@ -180,6 +185,8 @@ class NodeExtendParam:
             self.system_reserved_mem = system_reserved_mem
         if init_node_password is not None:
             self.init_node_password = init_node_password
+        if security_reinforcement_type is not None:
+            self.security_reinforcement_type = security_reinforcement_type
 
     @property
     def ecsperformancetype(self):
@@ -642,6 +649,28 @@ class NodeExtendParam:
         :type init_node_password: str
         """
         self._init_node_password = init_node_password
+
+    @property
+    def security_reinforcement_type(self):
+        """Gets the security_reinforcement_type of this NodeExtendParam.
+
+        **参数解释**： 指定节点安全加固类型，当前仅支持HCE2.0镜像等保2.0三级安全加固。 等保加固会对身份鉴别、访问控制、安全审计、入侵防范、恶意代码防范进行检查并加固。详情请参见[Huawei Cloud EulerOS 2.0等保2.0三级版镜像概述](https://support.huaweicloud.com/productdesc-hce/hce_sec_0001.html)。 若未指定此参数，则尝试用原有的值补全。如：原先HCE2.0镜像已配置安全加固，更新节点池时未指定此参数，则仍旧保持安全加固配置，若要取消，需显式指定参数值为\"null\"。 **约束限制**： 不涉及 **取值范围**： 取值范围：['null', cybersecurity]; **默认取值**： 不涉及
+
+        :return: The security_reinforcement_type of this NodeExtendParam.
+        :rtype: str
+        """
+        return self._security_reinforcement_type
+
+    @security_reinforcement_type.setter
+    def security_reinforcement_type(self, security_reinforcement_type):
+        """Sets the security_reinforcement_type of this NodeExtendParam.
+
+        **参数解释**： 指定节点安全加固类型，当前仅支持HCE2.0镜像等保2.0三级安全加固。 等保加固会对身份鉴别、访问控制、安全审计、入侵防范、恶意代码防范进行检查并加固。详情请参见[Huawei Cloud EulerOS 2.0等保2.0三级版镜像概述](https://support.huaweicloud.com/productdesc-hce/hce_sec_0001.html)。 若未指定此参数，则尝试用原有的值补全。如：原先HCE2.0镜像已配置安全加固，更新节点池时未指定此参数，则仍旧保持安全加固配置，若要取消，需显式指定参数值为\"null\"。 **约束限制**： 不涉及 **取值范围**： 取值范围：['null', cybersecurity]; **默认取值**： 不涉及
+
+        :param security_reinforcement_type: The security_reinforcement_type of this NodeExtendParam.
+        :type security_reinforcement_type: str
+        """
+        self._security_reinforcement_type = security_reinforcement_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""
