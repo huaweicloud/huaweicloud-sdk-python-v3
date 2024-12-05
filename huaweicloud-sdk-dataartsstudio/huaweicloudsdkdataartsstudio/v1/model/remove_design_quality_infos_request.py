@@ -39,7 +39,7 @@ class RemoveDesignQualityInfosRequest:
         :type workspace: str
         :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
         :type x_project_id: str
-        :param table_id: 表的ID，填写String类型替代Long类型。
+        :param table_id: 表的ID，ID字符串。
         :type table_id: str
         :param table_type: 表类型，默认值是业务表。TABLE_MODEL(业务表(逻辑实体/物理表))、AGGREGATION_LOGIC_TABLE(汇总表)、FACT_LOGIC_TABLE(事实表)、DIMENSION_LOGIC_TABLE(维度表)。 - TABLE_MODEL - AGGREGATION_LOGIC_TABLE - FACT_LOGIC_TABLE - DIMENSION_LOGIC_TABLE
         :type table_type: str
@@ -107,7 +107,7 @@ class RemoveDesignQualityInfosRequest:
     def table_id(self):
         """Gets the table_id of this RemoveDesignQualityInfosRequest.
 
-        表的ID，填写String类型替代Long类型。
+        表的ID，ID字符串。
 
         :return: The table_id of this RemoveDesignQualityInfosRequest.
         :rtype: str
@@ -118,7 +118,7 @@ class RemoveDesignQualityInfosRequest:
     def table_id(self, table_id):
         """Sets the table_id of this RemoveDesignQualityInfosRequest.
 
-        表的ID，填写String类型替代Long类型。
+        表的ID，ID字符串。
 
         :param table_id: The table_id of this RemoveDesignQualityInfosRequest.
         :type table_id: str

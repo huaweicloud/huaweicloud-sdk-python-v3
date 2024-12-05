@@ -103,7 +103,7 @@ class BizMetricVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码，更新时必填，创建时为空，填写String类型替代Long类型。
+        :param id: 编码，更新时必填，创建时为空，ID字符串。
         :type id: str
         :param name: 指标名称。
         :type name: str
@@ -115,7 +115,7 @@ class BizMetricVO:
         :type biz_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
         :param status: 
         :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
-        :param biz_catalog_id: 归属的流程架构的ID，填写String类型替代Long类型。
+        :param biz_catalog_id: 归属的流程架构的ID，ID字符串。
         :type biz_catalog_id: str
         :param biz_catalog_path: 归属的流程架构路径，只读。
         :type biz_catalog_path: str
@@ -137,7 +137,7 @@ class BizMetricVO:
         :type interval_type: str
         :param apply_scenario: 应用场景。
         :type apply_scenario: str
-        :param technical_metric: 关联技术指标，填写String类型替代Long类型。
+        :param technical_metric: 关联技术指标，ID字符串。
         :type technical_metric: str
         :param technical_metric_name: 关联技术指标名称，只读。
         :type technical_metric_name: str
@@ -295,7 +295,7 @@ class BizMetricVO:
     def id(self):
         """Gets the id of this BizMetricVO.
 
-        编码，更新时必填，创建时为空，填写String类型替代Long类型。
+        编码，更新时必填，创建时为空，ID字符串。
 
         :return: The id of this BizMetricVO.
         :rtype: str
@@ -306,7 +306,7 @@ class BizMetricVO:
     def id(self, id):
         """Sets the id of this BizMetricVO.
 
-        编码，更新时必填，创建时为空，填写String类型替代Long类型。
+        编码，更新时必填，创建时为空，ID字符串。
 
         :param id: The id of this BizMetricVO.
         :type id: str
@@ -419,7 +419,7 @@ class BizMetricVO:
     def biz_catalog_id(self):
         """Gets the biz_catalog_id of this BizMetricVO.
 
-        归属的流程架构的ID，填写String类型替代Long类型。
+        归属的流程架构的ID，ID字符串。
 
         :return: The biz_catalog_id of this BizMetricVO.
         :rtype: str
@@ -430,7 +430,7 @@ class BizMetricVO:
     def biz_catalog_id(self, biz_catalog_id):
         """Sets the biz_catalog_id of this BizMetricVO.
 
-        归属的流程架构的ID，填写String类型替代Long类型。
+        归属的流程架构的ID，ID字符串。
 
         :param biz_catalog_id: The biz_catalog_id of this BizMetricVO.
         :type biz_catalog_id: str
@@ -661,7 +661,7 @@ class BizMetricVO:
     def technical_metric(self):
         """Gets the technical_metric of this BizMetricVO.
 
-        关联技术指标，填写String类型替代Long类型。
+        关联技术指标，ID字符串。
 
         :return: The technical_metric of this BizMetricVO.
         :rtype: str
@@ -672,7 +672,7 @@ class BizMetricVO:
     def technical_metric(self, technical_metric):
         """Sets the technical_metric of this BizMetricVO.
 
-        关联技术指标，填写String类型替代Long类型。
+        关联技术指标，ID字符串。
 
         :param technical_metric: The technical_metric of this BizMetricVO.
         :type technical_metric: str

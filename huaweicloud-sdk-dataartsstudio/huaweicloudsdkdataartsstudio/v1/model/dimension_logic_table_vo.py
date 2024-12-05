@@ -151,23 +151,23 @@ class DimensionLogicTableVO:
         :type tb_name: str
         :param tb_logic_name: 逻辑实体名。
         :type tb_logic_name: str
-        :param l1_id: 主题域分组ID，只读，填写String类型替代Long类型。
+        :param l1_id: 主题域分组ID，只读，ID字符串。
         :type l1_id: str
         :param l2_id: 主题域ID，只读，创建和更新时无需填写。
         :type l2_id: str
-        :param l3_id: 业务对象ID，填写String类型替代Long类型。
+        :param l3_id: 业务对象ID，ID字符串。
         :type l3_id: str
         :param create_by: 创建人。
         :type create_by: str
         :param description: 描述。
         :type description: str
-        :param dimension_id: 所属维度ID，填写String类型替代Long类型。
+        :param dimension_id: 所属维度ID，ID字符串。
         :type dimension_id: str
         :param owner: 资产责任人。
         :type owner: str
         :param dimension_type: 维度类型。 枚举值：   - COMMON: 普通维度   - LOOKUP: 码表维度   - HIERARCHIES: 层级维度 
         :type dimension_type: str
-        :param code_table_id: 引用码表ID，填写String类型替代Long类型。
+        :param code_table_id: 引用码表ID，ID字符串。
         :type code_table_id: str
         :param code_table: 
         :type code_table: :class:`huaweicloudsdkdataartsstudio.v1.CodeTableVO`
@@ -243,7 +243,7 @@ class DimensionLogicTableVO:
         :type distribute: str
         :param distribute_column: DISTRIBUTE BY HASH column.
         :type distribute_column: str
-        :param quality_id: 质量ID，填写String类型替代Long类型。
+        :param quality_id: 质量ID，ID字符串。
         :type quality_id: str
         :param alias: 别名。
         :type alias: str
@@ -253,9 +253,9 @@ class DimensionLogicTableVO:
         :type obs_location: str
         :param configs: 其他配置
         :type configs: str
-        :param dev_version: 开发环境版本，填写String类型替代Long类型。
+        :param dev_version: 开发环境版本，ID字符串。
         :type dev_version: str
-        :param prod_version: 生产环境版本，填写String类型替代Long类型
+        :param prod_version: 生产环境版本，ID字符串
         :type prod_version: str
         :param dev_version_name: 开发环境版本名称
         :type dev_version_name: str
@@ -517,7 +517,7 @@ class DimensionLogicTableVO:
     def l1_id(self):
         """Gets the l1_id of this DimensionLogicTableVO.
 
-        主题域分组ID，只读，填写String类型替代Long类型。
+        主题域分组ID，只读，ID字符串。
 
         :return: The l1_id of this DimensionLogicTableVO.
         :rtype: str
@@ -528,7 +528,7 @@ class DimensionLogicTableVO:
     def l1_id(self, l1_id):
         """Sets the l1_id of this DimensionLogicTableVO.
 
-        主题域分组ID，只读，填写String类型替代Long类型。
+        主题域分组ID，只读，ID字符串。
 
         :param l1_id: The l1_id of this DimensionLogicTableVO.
         :type l1_id: str
@@ -561,7 +561,7 @@ class DimensionLogicTableVO:
     def l3_id(self):
         """Gets the l3_id of this DimensionLogicTableVO.
 
-        业务对象ID，填写String类型替代Long类型。
+        业务对象ID，ID字符串。
 
         :return: The l3_id of this DimensionLogicTableVO.
         :rtype: str
@@ -572,7 +572,7 @@ class DimensionLogicTableVO:
     def l3_id(self, l3_id):
         """Sets the l3_id of this DimensionLogicTableVO.
 
-        业务对象ID，填写String类型替代Long类型。
+        业务对象ID，ID字符串。
 
         :param l3_id: The l3_id of this DimensionLogicTableVO.
         :type l3_id: str
@@ -627,7 +627,7 @@ class DimensionLogicTableVO:
     def dimension_id(self):
         """Gets the dimension_id of this DimensionLogicTableVO.
 
-        所属维度ID，填写String类型替代Long类型。
+        所属维度ID，ID字符串。
 
         :return: The dimension_id of this DimensionLogicTableVO.
         :rtype: str
@@ -638,7 +638,7 @@ class DimensionLogicTableVO:
     def dimension_id(self, dimension_id):
         """Sets the dimension_id of this DimensionLogicTableVO.
 
-        所属维度ID，填写String类型替代Long类型。
+        所属维度ID，ID字符串。
 
         :param dimension_id: The dimension_id of this DimensionLogicTableVO.
         :type dimension_id: str
@@ -693,7 +693,7 @@ class DimensionLogicTableVO:
     def code_table_id(self):
         """Gets the code_table_id of this DimensionLogicTableVO.
 
-        引用码表ID，填写String类型替代Long类型。
+        引用码表ID，ID字符串。
 
         :return: The code_table_id of this DimensionLogicTableVO.
         :rtype: str
@@ -704,7 +704,7 @@ class DimensionLogicTableVO:
     def code_table_id(self, code_table_id):
         """Sets the code_table_id of this DimensionLogicTableVO.
 
-        引用码表ID，填写String类型替代Long类型。
+        引用码表ID，ID字符串。
 
         :param code_table_id: The code_table_id of this DimensionLogicTableVO.
         :type code_table_id: str
@@ -1481,7 +1481,7 @@ class DimensionLogicTableVO:
     def quality_id(self):
         """Gets the quality_id of this DimensionLogicTableVO.
 
-        质量ID，填写String类型替代Long类型。
+        质量ID，ID字符串。
 
         :return: The quality_id of this DimensionLogicTableVO.
         :rtype: str
@@ -1492,7 +1492,7 @@ class DimensionLogicTableVO:
     def quality_id(self, quality_id):
         """Sets the quality_id of this DimensionLogicTableVO.
 
-        质量ID，填写String类型替代Long类型。
+        质量ID，ID字符串。
 
         :param quality_id: The quality_id of this DimensionLogicTableVO.
         :type quality_id: str
@@ -1591,7 +1591,7 @@ class DimensionLogicTableVO:
     def dev_version(self):
         """Gets the dev_version of this DimensionLogicTableVO.
 
-        开发环境版本，填写String类型替代Long类型。
+        开发环境版本，ID字符串。
 
         :return: The dev_version of this DimensionLogicTableVO.
         :rtype: str
@@ -1602,7 +1602,7 @@ class DimensionLogicTableVO:
     def dev_version(self, dev_version):
         """Sets the dev_version of this DimensionLogicTableVO.
 
-        开发环境版本，填写String类型替代Long类型。
+        开发环境版本，ID字符串。
 
         :param dev_version: The dev_version of this DimensionLogicTableVO.
         :type dev_version: str
@@ -1613,7 +1613,7 @@ class DimensionLogicTableVO:
     def prod_version(self):
         """Gets the prod_version of this DimensionLogicTableVO.
 
-        生产环境版本，填写String类型替代Long类型
+        生产环境版本，ID字符串
 
         :return: The prod_version of this DimensionLogicTableVO.
         :rtype: str
@@ -1624,7 +1624,7 @@ class DimensionLogicTableVO:
     def prod_version(self, prod_version):
         """Sets the prod_version of this DimensionLogicTableVO.
 
-        生产环境版本，填写String类型替代Long类型
+        生产环境版本，ID字符串
 
         :param prod_version: The prod_version of this DimensionLogicTableVO.
         :type prod_version: str

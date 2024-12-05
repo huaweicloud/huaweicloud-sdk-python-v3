@@ -27,7 +27,8 @@ class CompareJobInfo:
         'report_remain_seconds': 'int',
         'compare_job_tag': 'dict(str, str)',
         'options': 'dict(str, str)',
-        'error_msg': 'str'
+        'error_msg': 'str',
+        'dynamic_compare_delay': 'int'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class CompareJobInfo:
         'report_remain_seconds': 'report_remain_seconds',
         'compare_job_tag': 'compare_job_tag',
         'options': 'options',
-        'error_msg': 'error_msg'
+        'error_msg': 'error_msg',
+        'dynamic_compare_delay': 'dynamic_compare_delay'
     }
 
-    def __init__(self, id=None, type=None, start_time=None, end_time=None, status=None, compute_type=None, export_status=None, report_remain_seconds=None, compare_job_tag=None, options=None, error_msg=None):
+    def __init__(self, id=None, type=None, start_time=None, end_time=None, status=None, compute_type=None, export_status=None, report_remain_seconds=None, compare_job_tag=None, options=None, error_msg=None, dynamic_compare_delay=None):
         """CompareJobInfo
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class CompareJobInfo:
         :type options: dict(str, str)
         :param error_msg: 失败原因。
         :type error_msg: str
+        :param dynamic_compare_delay: 动态比对时延。
+        :type dynamic_compare_delay: int
         """
         
         
@@ -86,6 +90,7 @@ class CompareJobInfo:
         self._compare_job_tag = None
         self._options = None
         self._error_msg = None
+        self._dynamic_compare_delay = None
         self.discriminator = None
 
         if id is not None:
@@ -110,6 +115,8 @@ class CompareJobInfo:
             self.options = options
         if error_msg is not None:
             self.error_msg = error_msg
+        if dynamic_compare_delay is not None:
+            self.dynamic_compare_delay = dynamic_compare_delay
 
     @property
     def id(self):
@@ -352,6 +359,28 @@ class CompareJobInfo:
         :type error_msg: str
         """
         self._error_msg = error_msg
+
+    @property
+    def dynamic_compare_delay(self):
+        """Gets the dynamic_compare_delay of this CompareJobInfo.
+
+        动态比对时延。
+
+        :return: The dynamic_compare_delay of this CompareJobInfo.
+        :rtype: int
+        """
+        return self._dynamic_compare_delay
+
+    @dynamic_compare_delay.setter
+    def dynamic_compare_delay(self, dynamic_compare_delay):
+        """Sets the dynamic_compare_delay of this CompareJobInfo.
+
+        动态比对时延。
+
+        :param dynamic_compare_delay: The dynamic_compare_delay of this CompareJobInfo.
+        :type dynamic_compare_delay: int
+        """
+        self._dynamic_compare_delay = dynamic_compare_delay
 
     def to_dict(self):
         """Returns the model properties as a dict"""

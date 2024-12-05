@@ -1751,6 +1751,8 @@ class GslClient(Client):
             query_params.append(('online_carrier', local_var_params['online_carrier']))
         if 'sim_card_id' in local_var_params:
             query_params.append(('sim_card_id', local_var_params['sim_card_id']))
+        if 'order_id' in local_var_params:
+            query_params.append(('order_id', local_var_params['order_id']))
         if 'version' in local_var_params:
             query_params.append(('version', local_var_params['version']))
         if 'limit' in local_var_params:

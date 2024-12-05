@@ -161,17 +161,17 @@ class AggregationLogicTableVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 汇总表的唯一系统ID，更新时必填，创建时不须填写，填写String类型替代Long类型。
+        :param id: 汇总表的唯一系统ID，更新时必填，创建时不须填写，ID字符串。
         :type id: str
         :param tb_name: 汇总表英文名称，对应实际的物理表名。
         :type tb_name: str
         :param tb_logic_name: 汇总表的中文名，用于展示使用。
         :type tb_logic_name: str
-        :param l1_id: 主题域分组ID，只读，创建和更新时无需填写，填写String类型替代Long类型。
+        :param l1_id: 主题域分组ID，只读，创建和更新时无需填写，ID字符串。
         :type l1_id: str
         :param l2_id: 主题域ID，只读，创建和更新时无需填写。
         :type l2_id: str
-        :param l3_id: 汇总表所属主题的ID，必填，填写String类型替代Long类型。
+        :param l3_id: 汇总表所属主题的ID，必填，ID字符串。
         :type l3_id: str
         :param description: 汇总表描述信息。
         :type description: str
@@ -259,7 +259,7 @@ class AggregationLogicTableVO:
         :type table_type: str
         :param dlf_task_id: DLF作业ID。
         :type dlf_task_id: str
-        :param quality_id: 质量ID，填写String类型替代Long类型。
+        :param quality_id: 质量ID，ID字符串。
         :type quality_id: str
         :param reversed: 是否是逆向的，只读。
         :type reversed: bool
@@ -285,9 +285,9 @@ class AggregationLogicTableVO:
         :type api_id: str
         :param sql: 汇总表绑定的SQL。
         :type sql: str
-        :param dev_version: 开发环境版本，填写String类型替代Long类型。
+        :param dev_version: 开发环境版本，ID字符串。
         :type dev_version: str
-        :param prod_version: 生产环境版本，填写String类型替代Long类型。
+        :param prod_version: 生产环境版本，ID字符串。
         :type prod_version: str
         :param dev_version_name: 开发环境版本名称
         :type dev_version_name: str
@@ -500,7 +500,7 @@ class AggregationLogicTableVO:
     def id(self):
         """Gets the id of this AggregationLogicTableVO.
 
-        汇总表的唯一系统ID，更新时必填，创建时不须填写，填写String类型替代Long类型。
+        汇总表的唯一系统ID，更新时必填，创建时不须填写，ID字符串。
 
         :return: The id of this AggregationLogicTableVO.
         :rtype: str
@@ -511,7 +511,7 @@ class AggregationLogicTableVO:
     def id(self, id):
         """Sets the id of this AggregationLogicTableVO.
 
-        汇总表的唯一系统ID，更新时必填，创建时不须填写，填写String类型替代Long类型。
+        汇总表的唯一系统ID，更新时必填，创建时不须填写，ID字符串。
 
         :param id: The id of this AggregationLogicTableVO.
         :type id: str
@@ -566,7 +566,7 @@ class AggregationLogicTableVO:
     def l1_id(self):
         """Gets the l1_id of this AggregationLogicTableVO.
 
-        主题域分组ID，只读，创建和更新时无需填写，填写String类型替代Long类型。
+        主题域分组ID，只读，创建和更新时无需填写，ID字符串。
 
         :return: The l1_id of this AggregationLogicTableVO.
         :rtype: str
@@ -577,7 +577,7 @@ class AggregationLogicTableVO:
     def l1_id(self, l1_id):
         """Sets the l1_id of this AggregationLogicTableVO.
 
-        主题域分组ID，只读，创建和更新时无需填写，填写String类型替代Long类型。
+        主题域分组ID，只读，创建和更新时无需填写，ID字符串。
 
         :param l1_id: The l1_id of this AggregationLogicTableVO.
         :type l1_id: str
@@ -610,7 +610,7 @@ class AggregationLogicTableVO:
     def l3_id(self):
         """Gets the l3_id of this AggregationLogicTableVO.
 
-        汇总表所属主题的ID，必填，填写String类型替代Long类型。
+        汇总表所属主题的ID，必填，ID字符串。
 
         :return: The l3_id of this AggregationLogicTableVO.
         :rtype: str
@@ -621,7 +621,7 @@ class AggregationLogicTableVO:
     def l3_id(self, l3_id):
         """Sets the l3_id of this AggregationLogicTableVO.
 
-        汇总表所属主题的ID，必填，填写String类型替代Long类型。
+        汇总表所属主题的ID，必填，ID字符串。
 
         :param l3_id: The l3_id of this AggregationLogicTableVO.
         :type l3_id: str
@@ -1518,7 +1518,7 @@ class AggregationLogicTableVO:
     def quality_id(self):
         """Gets the quality_id of this AggregationLogicTableVO.
 
-        质量ID，填写String类型替代Long类型。
+        质量ID，ID字符串。
 
         :return: The quality_id of this AggregationLogicTableVO.
         :rtype: str
@@ -1529,7 +1529,7 @@ class AggregationLogicTableVO:
     def quality_id(self, quality_id):
         """Sets the quality_id of this AggregationLogicTableVO.
 
-        质量ID，填写String类型替代Long类型。
+        质量ID，ID字符串。
 
         :param quality_id: The quality_id of this AggregationLogicTableVO.
         :type quality_id: str
@@ -1804,7 +1804,7 @@ class AggregationLogicTableVO:
     def dev_version(self):
         """Gets the dev_version of this AggregationLogicTableVO.
 
-        开发环境版本，填写String类型替代Long类型。
+        开发环境版本，ID字符串。
 
         :return: The dev_version of this AggregationLogicTableVO.
         :rtype: str
@@ -1815,7 +1815,7 @@ class AggregationLogicTableVO:
     def dev_version(self, dev_version):
         """Sets the dev_version of this AggregationLogicTableVO.
 
-        开发环境版本，填写String类型替代Long类型。
+        开发环境版本，ID字符串。
 
         :param dev_version: The dev_version of this AggregationLogicTableVO.
         :type dev_version: str
@@ -1826,7 +1826,7 @@ class AggregationLogicTableVO:
     def prod_version(self):
         """Gets the prod_version of this AggregationLogicTableVO.
 
-        生产环境版本，填写String类型替代Long类型。
+        生产环境版本，ID字符串。
 
         :return: The prod_version of this AggregationLogicTableVO.
         :rtype: str
@@ -1837,7 +1837,7 @@ class AggregationLogicTableVO:
     def prod_version(self, prod_version):
         """Sets the prod_version of this AggregationLogicTableVO.
 
-        生产环境版本，填写String类型替代Long类型。
+        生产环境版本，ID字符串。
 
         :param prod_version: The prod_version of this AggregationLogicTableVO.
         :type prod_version: str

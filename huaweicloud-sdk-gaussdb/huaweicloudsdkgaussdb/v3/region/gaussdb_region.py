@@ -34,6 +34,12 @@ class GaussDBRegion:
                         "https://gaussdbformysql.ap-southeast-2.myhuaweicloud.com")
     AF_SOUTH_1 = Region("af-south-1",
                         "https://gaussdb-mysql.af-south-1.myhuaweicloud.com")
+    CN_SOUTH_4 = Region("cn-south-4",
+                        "https://gaussdb.cn-south-4.myhuaweicloud.com")
+    CN_NORTH_11 = Region("cn-north-11",
+                        "https://gaussdbformysql.cn-north-11.myhuaweicloud.com")
+    ME_EAST_1 = Region("me-east-1",
+                        "https://gaussdbformysql.me-east-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
@@ -50,6 +56,9 @@ class GaussDBRegion:
         "ap-southeast-1": AP_SOUTHEAST_1,
         "ap-southeast-2": AP_SOUTHEAST_2,
         "af-south-1": AF_SOUTH_1,
+        "cn-south-4": CN_SOUTH_4,
+        "cn-north-11": CN_NORTH_11,
+        "me-east-1": ME_EAST_1,
     }
 
     @classmethod

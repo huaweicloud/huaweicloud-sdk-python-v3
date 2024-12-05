@@ -19,6 +19,7 @@ class ShowScriptResponse(SdkResponse):
 
     openapi_types = {
         'name': 'str',
+        'id': 'str',
         'type': 'str',
         'directory': 'str',
         'content': 'str',
@@ -34,6 +35,7 @@ class ShowScriptResponse(SdkResponse):
 
     attribute_map = {
         'name': 'name',
+        'id': 'id',
         'type': 'type',
         'directory': 'directory',
         'content': 'content',
@@ -47,13 +49,15 @@ class ShowScriptResponse(SdkResponse):
         'approvers': 'approvers'
     }
 
-    def __init__(self, name=None, type=None, directory=None, content=None, connection_name=None, database=None, queue_name=None, configuration=None, description=None, owner=None, target_status=None, approvers=None):
+    def __init__(self, name=None, id=None, type=None, directory=None, content=None, connection_name=None, database=None, queue_name=None, configuration=None, description=None, owner=None, target_status=None, approvers=None):
         """ShowScriptResponse
 
         The model defined in huaweicloud sdk
 
-        :param name: 
+        :param name: 脚本名称。
         :type name: str
+        :param id: 脚本ID
+        :type id: str
         :param type: 脚本类型： - FlinkSQL - DLISQL - SparkSQL - HiveSQL - DWSSQL - RDSSQL - Shell - PRESTO - ClickHouseSQL - HetuEngineSQL - PYTHON - ImpalaSQL - SparkPython
         :type type: str
         :param directory: 脚本关联的目录。通过DataArts Studio管理控制台 &gt; 数据开发，左侧列表选择“数据开发 &gt; 脚本开发”。在脚本的目录树上，可以查看到当前已经创建的目录，默认在根目录/。
@@ -81,6 +85,7 @@ class ShowScriptResponse(SdkResponse):
         super(ShowScriptResponse, self).__init__()
 
         self._name = None
+        self._id = None
         self._type = None
         self._directory = None
         self._content = None
@@ -96,6 +101,8 @@ class ShowScriptResponse(SdkResponse):
 
         if name is not None:
             self.name = name
+        if id is not None:
+            self.id = id
         if type is not None:
             self.type = type
         if directory is not None:
@@ -123,6 +130,8 @@ class ShowScriptResponse(SdkResponse):
     def name(self):
         """Gets the name of this ShowScriptResponse.
 
+        脚本名称。
+
         :return: The name of this ShowScriptResponse.
         :rtype: str
         """
@@ -132,10 +141,34 @@ class ShowScriptResponse(SdkResponse):
     def name(self, name):
         """Sets the name of this ShowScriptResponse.
 
+        脚本名称。
+
         :param name: The name of this ShowScriptResponse.
         :type name: str
         """
         self._name = name
+
+    @property
+    def id(self):
+        """Gets the id of this ShowScriptResponse.
+
+        脚本ID
+
+        :return: The id of this ShowScriptResponse.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this ShowScriptResponse.
+
+        脚本ID
+
+        :param id: The id of this ShowScriptResponse.
+        :type id: str
+        """
+        self._id = id
 
     @property
     def type(self):

@@ -23,7 +23,9 @@ class ApigDataSourceVo:
         'agent_id': 'str',
         'agent_name': 'str',
         'env_type': 'int',
-        'support_service': 'int'
+        'support_service': 'int',
+        'dw_category': 'str',
+        'description': 'str'
     }
 
     attribute_map = {
@@ -33,10 +35,12 @@ class ApigDataSourceVo:
         'agent_id': 'agent_id',
         'agent_name': 'agent_name',
         'env_type': 'env_type',
-        'support_service': 'supportService'
+        'support_service': 'supportService',
+        'dw_category': 'dw_category',
+        'description': 'description'
     }
 
-    def __init__(self, dw_name=None, dw_type=None, dw_config=None, agent_id=None, agent_name=None, env_type=None, support_service=None):
+    def __init__(self, dw_name=None, dw_type=None, dw_config=None, agent_id=None, agent_name=None, env_type=None, support_service=None, dw_category=None, description=None):
         """ApigDataSourceVo
 
         The model defined in huaweicloud sdk
@@ -55,6 +59,10 @@ class ApigDataSourceVo:
         :type env_type: int
         :param support_service: 1：cdm 2：数据架构 4:数据开发 8：数据质量 16：数据目录 32：数据安全 64：数据服务
         :type support_service: int
+        :param dw_category: 标签信息
+        :type dw_category: str
+        :param description: 连接描述信息
+        :type description: str
         """
         
         
@@ -66,6 +74,8 @@ class ApigDataSourceVo:
         self._agent_name = None
         self._env_type = None
         self._support_service = None
+        self._dw_category = None
+        self._description = None
         self.discriminator = None
 
         self.dw_name = dw_name
@@ -79,6 +89,10 @@ class ApigDataSourceVo:
             self.env_type = env_type
         if support_service is not None:
             self.support_service = support_service
+        if dw_category is not None:
+            self.dw_category = dw_category
+        if description is not None:
+            self.description = description
 
     @property
     def dw_name(self):
@@ -233,6 +247,50 @@ class ApigDataSourceVo:
         :type support_service: int
         """
         self._support_service = support_service
+
+    @property
+    def dw_category(self):
+        """Gets the dw_category of this ApigDataSourceVo.
+
+        标签信息
+
+        :return: The dw_category of this ApigDataSourceVo.
+        :rtype: str
+        """
+        return self._dw_category
+
+    @dw_category.setter
+    def dw_category(self, dw_category):
+        """Sets the dw_category of this ApigDataSourceVo.
+
+        标签信息
+
+        :param dw_category: The dw_category of this ApigDataSourceVo.
+        :type dw_category: str
+        """
+        self._dw_category = dw_category
+
+    @property
+    def description(self):
+        """Gets the description of this ApigDataSourceVo.
+
+        连接描述信息
+
+        :return: The description of this ApigDataSourceVo.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this ApigDataSourceVo.
+
+        连接描述信息
+
+        :param description: The description of this ApigDataSourceVo.
+        :type description: str
+        """
+        self._description = description
 
     def to_dict(self):
         """Returns the model properties as a dict"""

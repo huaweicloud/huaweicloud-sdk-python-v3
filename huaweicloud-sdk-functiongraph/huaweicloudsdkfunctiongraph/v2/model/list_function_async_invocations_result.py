@@ -22,7 +22,7 @@ class ListFunctionAsyncInvocationsResult:
         'error_message': 'str',
         'error_code': 'int',
         'start_time': 'datetime',
-        'end_time': 'datetime'
+        'end_time': 'str'
     }
 
     attribute_map = {
@@ -50,7 +50,7 @@ class ListFunctionAsyncInvocationsResult:
         :param start_time: 异步调用开始时间（格式为YYYY-MM-DD&#39;T&#39;HH:mm:ss,UTC时间）。
         :type start_time: datetime
         :param end_time: 异步调用结束时间（格式为YYYY-MM-DD&#39;T&#39;HH:mm:ss,UTC时间）。
-        :type end_time: datetime
+        :type end_time: str
         """
         
         
@@ -193,7 +193,7 @@ class ListFunctionAsyncInvocationsResult:
         异步调用结束时间（格式为YYYY-MM-DD'T'HH:mm:ss,UTC时间）。
 
         :return: The end_time of this ListFunctionAsyncInvocationsResult.
-        :rtype: datetime
+        :rtype: str
         """
         return self._end_time
 
@@ -204,7 +204,7 @@ class ListFunctionAsyncInvocationsResult:
         异步调用结束时间（格式为YYYY-MM-DD'T'HH:mm:ss,UTC时间）。
 
         :param end_time: The end_time of this ListFunctionAsyncInvocationsResult.
-        :type end_time: datetime
+        :type end_time: str
         """
         self._end_time = end_time
 

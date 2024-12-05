@@ -37,9 +37,9 @@ class CodeTableFieldValueVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 码表字段ID，填写String类型替代Long类型。
+        :param id: 码表字段ID，ID字符串。
         :type id: str
-        :param fd_id: 所属码表属性ID，填写String类型替代Long类型。
+        :param fd_id: 所属码表属性ID，ID字符串。
         :type fd_id: str
         :param fd_value: 码表属性值。
         :type fd_value: str
@@ -73,7 +73,7 @@ class CodeTableFieldValueVO:
     def id(self):
         """Gets the id of this CodeTableFieldValueVO.
 
-        码表字段ID，填写String类型替代Long类型。
+        码表字段ID，ID字符串。
 
         :return: The id of this CodeTableFieldValueVO.
         :rtype: str
@@ -84,7 +84,7 @@ class CodeTableFieldValueVO:
     def id(self, id):
         """Sets the id of this CodeTableFieldValueVO.
 
-        码表字段ID，填写String类型替代Long类型。
+        码表字段ID，ID字符串。
 
         :param id: The id of this CodeTableFieldValueVO.
         :type id: str
@@ -95,7 +95,7 @@ class CodeTableFieldValueVO:
     def fd_id(self):
         """Gets the fd_id of this CodeTableFieldValueVO.
 
-        所属码表属性ID，填写String类型替代Long类型。
+        所属码表属性ID，ID字符串。
 
         :return: The fd_id of this CodeTableFieldValueVO.
         :rtype: str
@@ -106,7 +106,7 @@ class CodeTableFieldValueVO:
     def fd_id(self, fd_id):
         """Sets the fd_id of this CodeTableFieldValueVO.
 
-        所属码表属性ID，填写String类型替代Long类型。
+        所属码表属性ID，ID字符串。
 
         :param fd_id: The fd_id of this CodeTableFieldValueVO.
         :type fd_id: str

@@ -1,3 +1,386 @@
+# 3.1.125 2024-12-05
+
+### HuaweiCloud SDK AOS
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **EstimateExecutionPlanPrice**
+    - changes of response param
+      - `+ items.resource_price.best_discount_type`
+      - `+ items.resource_price.best_discount_price`
+      - `+ items.resource_price.official_website_discount_price`
+
+### HuaweiCloud SDK CES
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListAlarmHistories**
+    - changes of request param
+      - `+ record_id`
+
+### HuaweiCloud SDK CTS
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListTraces**
+    - changes of response param
+      - `+ traces.read_only`
+      - `+ traces.operation_id`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `BatchCreateDesignTableModelsFromLogic`
+    - `ShowDesignOperationResult`
+    - `CompareDesignVersions`
+    - `BatchCreateSecurityPermissionSetMembers`
+    - `BatchCreateSecurityPermissionSetPermissions`
+    - `UpdateDesignCompoundMetric`
+    - `CreateDesignCompoundMetric`
+    - `DeleteDesignCompoundMetric`
+    - `UpdateDesignDimension`
+    - `CreateDesignDimension`
+    - `DeleteDesignDimension`
+    - `DeleteDesignDimensionLogicTable`
+    - `UpdateDesignDerivativeIndex`
+    - `CreateDesignDerivativeIndex`
+    - `DeleteDesignDerivativeIndex`
+    - `DeleteDesignFactLogicTable`
+- _Bug Fix_
+  - None
+- _Change_
+  - **DeleteDesignLatestApproval**
+    - changes of response param
+      - `* data.value: string -> integer`
+  - **DebugDataconnection**
+    - changes of request param
+      - `+ dw_category`
+      - `+ description`
+  - **DeleteCatalog**
+    - changes of response param
+      - `* data.value: string -> integer`
+  - **DeleteStandardTemplate**
+    - changes of response param
+      - `* data.value: string -> integer`
+  - **DeleteApprover**
+    - changes of response param
+      - `* data.value: string -> integer`
+  - **DeleteDirectory**
+    - changes of response param
+      - `* data.value: string -> integer`
+  - **ListDirectories**
+    - changes of response param
+      - `* data.value.from_public: string -> boolean`
+  - **UpdateDirectory**
+    - changes of request param
+      - `* from_public: string -> boolean`
+    - changes of response param
+      - `* data.value.from_public: string -> boolean`
+  - **CreateDirectory**
+    - changes of request param
+      - `* from_public: string -> boolean`
+    - changes of response param
+      - `* data.value.from_public: string -> boolean`
+  - **ListDataconnections**
+    - changes of response param
+      - `+ total_size`
+  - **CreateConnections**
+    - changes of request param
+      - `+ mode`
+      - `+ visible`
+      - `+ data_source_vos.dw_category`
+      - `+ data_source_vos.description`
+  - **ShowDataconnection**
+    - changes of response param
+      - `+ description`
+  - **UpdateDataconnection**
+    - changes of request param
+      - `+ mode`
+      - `+ visible`
+      - `+ data_source_vos.dw_category`
+      - `+ data_source_vos.description`
+  - **CreateSecurityPermissionSetMember**
+    - changes of request param
+      - `+ auto_sync`
+  - **CreateSecurityPermissionSetPermission**
+    - changes of request param
+      - `+ auto_sync`
+  - **DeleteWorkspaces**
+    - changes of response param
+      - `* data.value: string -> integer`
+  - **DeleteStandard**
+    - changes of response param
+      - `* data.value: string -> integer`
+  - **DeleteCodeTable**
+    - changes of response param
+      - `* data.value: string -> integer`
+  - **DeleteSubject**
+    - changes of response param
+      - `* data.value: string -> integer`
+  - **DeleteBizMetric**
+    - changes of response param
+      - `* data.value: string -> integer`
+  - **DeleteDesignAtomicIndex**
+    - changes of response param
+      - `* data.value: string -> integer`
+  - **DeleteDesignAggregationLogicTable**
+    - changes of response param
+      - `* data.value: string -> integer`
+  - **DeleteSubjectNew**
+    - changes of response param
+      - `* data.value: string -> integer`
+  - **DeleteTableModel**
+    - changes of response param
+      - `* data.value: string -> integer`
+
+### HuaweiCloud SDK DC
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `ListGlobalDcGateway`
+    - `CreateGlobalDcGateway`
+    - `ShowGlobalDcGateway`
+    - `UpdateGlobalDcGateway`
+    - `DeleteGlobalDcGateway`
+    - `ListRmsGlobalDcGateway`
+    - `ShowRmsGlobalDcGateway`
+    - `ShowConnectGateway`
+    - `UpdateConnectGateway`
+    - `DeleteConnectGateway`
+    - `ListConnectGateways`
+    - `CreateConnectGateway`
+    - `ListGdgwRouteTables`
+    - `UpdateGdgwRouteTable`
+    - `ListPeerLinks`
+    - `CreatePeerLink`
+    - `ShowPeerLink`
+    - `UpdatePeerLink`
+    - `DeletePeerLink`
+    - `ListGlobalEips`
+    - `BindGlobalEips`
+    - `UnbindGlobalEips`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowVirtualInterface**
+    - changes of response param
+      - `- virtual_interface.update_time`
+  - **UpdateVirtualInterface**
+    - changes of response param
+      - `- virtual_interface.update_time`
+  - **ListVirtualInterfaces**
+    - changes of response param
+      - `- virtual_interfaces.update_time`
+  - **CreateVirtualInterface**
+    - changes of response param
+      - `- virtual_interface.update_time`
+
+### HuaweiCloud SDK DDS
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowInstanceConfigurationModifyHistory**
+    - changes of request param
+      - `+ entity_id`
+
+### HuaweiCloud SDK DGC
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowScript**
+    - changes of response param
+      - `+ id`
+  - **UpdateScript**
+    - changes of request param
+      - `+ id`
+  - **CreateScript**
+    - changes of request param
+      - `+ id`
+  - **ListScripts**
+    - changes of response param
+      - `+ id`
+      - `+ scripts.id`
+
+### HuaweiCloud SDK DRS
+
+- _API Version_
+  - V5
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListAsyncJobDetail**
+    - changes of response param
+      - `+ jobs.compare_result.data_compare_task_list.dynamic_compare_delay`
+  - **ShowJobDetail**
+    - changes of response param
+      - `+ job.compare_result.data_compare_task_list.dynamic_compare_delay`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListAsyncInvocations**
+    - changes of response param
+      - `* invocations.end_time: date-time -> string`
+  - **ListActiveAsyncInvocations**
+    - changes of response param
+      - `* invocations.end_time: date-time -> string`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `SwitchOver`
+    - `BatchDeleteManualBackup`
+    - `ShowDisasterRecoverySettings`
+    - `SetDisasterRecoverySettings`
+    - `ShowRedisHotKeys`
+    - `ShowRedisDisabledCommands`
+    - `SaveRedisDisabledCommands`
+    - `DeleteRedisDisabledCommands`
+    - `ListInstanceSessions`
+    - `ClearInstanceSessions`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK GSL
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListSimDeviceMultiply**
+    - changes of request param
+      - `+ order_id`
+    - changes of response param
+      - `+ sim_cards.iccid_mobile`
+      - `+ sim_cards.iccid_unicom`
+      - `+ sim_cards.iccid_telcom`
+      - `+ sim_cards.order_id`
+
+### HuaweiCloud SDK HSS
+
+- _API Version_
+  - V5
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListCceClusterConfig**
+    - changes of response param
+      - `- data_list.auto_upgrade`
+      - `- data_list.vpc_id`
+
+### HuaweiCloud SDK IAM
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the API `KeystoneListFederationProjects`
+- _Bug Fix_
+  - None
+- _Change_
+  - **KeystoneListUsersForGroupByAdmin**
+    - changes of response param
+      - `- users.extra`
+  - **UpdateUser**
+    - changes of request param
+      - `- user.create_time`
+      - `- user.xdomain_id`
+      - `- user.xdomain_type`
+      - `- user.is_domain_owner`
+    - changes of response param
+      - `+ user.create_time`
+      - `+ user.xdomain_id`
+      - `+ user.xdomain_type`
+      - `+ user.is_domain_owner`
+  - **KeystoneUpdateUserByAdmin**
+    - changes of response param
+      - `- user.extra`
+  - **CreateUnscopedTokenWithIdToken**
+    - changes of response param
+      - `* token.catalog: object -> list<object>`
+
+### HuaweiCloud SDK Meeting
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `ListOnlineConfAttendee`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK SFSTurbo
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `ListSharesByTag`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK WAF
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateInstance**
+    - changes of request param
+      - `+ tags`
+
 # 3.1.124 2024-11-28
 
 ### HuaweiCloud SDK BSS

@@ -18,51 +18,20 @@ class DeleteTemplateVersionResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'str'
     }
 
     attribute_map = {
-        'body': 'body'
     }
 
-    def __init__(self, body=None):
+    def __init__(self):
         """DeleteTemplateVersionResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 空响应体
-        :type body: str
         """
         
         super(DeleteTemplateVersionResponse, self).__init__()
-
-        self._body = None
         self.discriminator = None
-
-        if body is not None:
-            self.body = body
-
-    @property
-    def body(self):
-        """Gets the body of this DeleteTemplateVersionResponse.
-
-        空响应体
-
-        :return: The body of this DeleteTemplateVersionResponse.
-        :rtype: str
-        """
-        return self._body
-
-    @body.setter
-    def body(self, body):
-        """Sets the body of this DeleteTemplateVersionResponse.
-
-        空响应体
-
-        :param body: The body of this DeleteTemplateVersionResponse.
-        :type body: str
-        """
-        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

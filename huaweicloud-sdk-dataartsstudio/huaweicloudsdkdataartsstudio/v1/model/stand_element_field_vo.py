@@ -75,7 +75,7 @@ class StandElementFieldVO:
         :type label: str
         :param disabled: 是否禁用。
         :type disabled: bool
-        :param id: 数据标准ID，填写String类型替代Long类型。
+        :param id: 数据标准ID，ID字符串。
         :type id: str
         :param actived: 是否显示，系统默认项必然显示不允许修改。true表示使用数据标准时体现（增改查的时候可以操作该属性），false表示使用数据标准时不体现。
         :type actived: bool
@@ -294,7 +294,7 @@ class StandElementFieldVO:
     def id(self):
         """Gets the id of this StandElementFieldVO.
 
-        数据标准ID，填写String类型替代Long类型。
+        数据标准ID，ID字符串。
 
         :return: The id of this StandElementFieldVO.
         :rtype: str
@@ -305,7 +305,7 @@ class StandElementFieldVO:
     def id(self, id):
         """Sets the id of this StandElementFieldVO.
 
-        数据标准ID，填写String类型替代Long类型。
+        数据标准ID，ID字符串。
 
         :param id: The id of this StandElementFieldVO.
         :type id: str

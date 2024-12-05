@@ -1,3 +1,386 @@
+# 3.1.125 2024-12-05
+
+### HuaweiCloud SDK AOS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **EstimateExecutionPlanPrice**
+    - 响应参数变更
+      - `+ items.resource_price.best_discount_type`
+      - `+ items.resource_price.best_discount_price`
+      - `+ items.resource_price.official_website_discount_price`
+
+### HuaweiCloud SDK CES
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListAlarmHistories**
+    - 请求参数变更
+      - `+ record_id`
+
+### HuaweiCloud SDK CTS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListTraces**
+    - 响应参数变更
+      - `+ traces.read_only`
+      - `+ traces.operation_id`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `BatchCreateDesignTableModelsFromLogic`
+    - `ShowDesignOperationResult`
+    - `CompareDesignVersions`
+    - `BatchCreateSecurityPermissionSetMembers`
+    - `BatchCreateSecurityPermissionSetPermissions`
+    - `UpdateDesignCompoundMetric`
+    - `CreateDesignCompoundMetric`
+    - `DeleteDesignCompoundMetric`
+    - `UpdateDesignDimension`
+    - `CreateDesignDimension`
+    - `DeleteDesignDimension`
+    - `DeleteDesignDimensionLogicTable`
+    - `UpdateDesignDerivativeIndex`
+    - `CreateDesignDerivativeIndex`
+    - `DeleteDesignDerivativeIndex`
+    - `DeleteDesignFactLogicTable`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **DeleteDesignLatestApproval**
+    - 响应参数变更
+      - `* data.value: string -> integer`
+  - **DebugDataconnection**
+    - 请求参数变更
+      - `+ dw_category`
+      - `+ description`
+  - **DeleteCatalog**
+    - 响应参数变更
+      - `* data.value: string -> integer`
+  - **DeleteStandardTemplate**
+    - 响应参数变更
+      - `* data.value: string -> integer`
+  - **DeleteApprover**
+    - 响应参数变更
+      - `* data.value: string -> integer`
+  - **DeleteDirectory**
+    - 响应参数变更
+      - `* data.value: string -> integer`
+  - **ListDirectories**
+    - 响应参数变更
+      - `* data.value.from_public: string -> boolean`
+  - **UpdateDirectory**
+    - 请求参数变更
+      - `* from_public: string -> boolean`
+    - 响应参数变更
+      - `* data.value.from_public: string -> boolean`
+  - **CreateDirectory**
+    - 请求参数变更
+      - `* from_public: string -> boolean`
+    - 响应参数变更
+      - `* data.value.from_public: string -> boolean`
+  - **ListDataconnections**
+    - 响应参数变更
+      - `+ total_size`
+  - **CreateConnections**
+    - 请求参数变更
+      - `+ mode`
+      - `+ visible`
+      - `+ data_source_vos.dw_category`
+      - `+ data_source_vos.description`
+  - **ShowDataconnection**
+    - 响应参数变更
+      - `+ description`
+  - **UpdateDataconnection**
+    - 请求参数变更
+      - `+ mode`
+      - `+ visible`
+      - `+ data_source_vos.dw_category`
+      - `+ data_source_vos.description`
+  - **CreateSecurityPermissionSetMember**
+    - 请求参数变更
+      - `+ auto_sync`
+  - **CreateSecurityPermissionSetPermission**
+    - 请求参数变更
+      - `+ auto_sync`
+  - **DeleteWorkspaces**
+    - 响应参数变更
+      - `* data.value: string -> integer`
+  - **DeleteStandard**
+    - 响应参数变更
+      - `* data.value: string -> integer`
+  - **DeleteCodeTable**
+    - 响应参数变更
+      - `* data.value: string -> integer`
+  - **DeleteSubject**
+    - 响应参数变更
+      - `* data.value: string -> integer`
+  - **DeleteBizMetric**
+    - 响应参数变更
+      - `* data.value: string -> integer`
+  - **DeleteDesignAtomicIndex**
+    - 响应参数变更
+      - `* data.value: string -> integer`
+  - **DeleteDesignAggregationLogicTable**
+    - 响应参数变更
+      - `* data.value: string -> integer`
+  - **DeleteSubjectNew**
+    - 响应参数变更
+      - `* data.value: string -> integer`
+  - **DeleteTableModel**
+    - 响应参数变更
+      - `* data.value: string -> integer`
+
+### HuaweiCloud SDK DC
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `ListGlobalDcGateway`
+    - `CreateGlobalDcGateway`
+    - `ShowGlobalDcGateway`
+    - `UpdateGlobalDcGateway`
+    - `DeleteGlobalDcGateway`
+    - `ListRmsGlobalDcGateway`
+    - `ShowRmsGlobalDcGateway`
+    - `ShowConnectGateway`
+    - `UpdateConnectGateway`
+    - `DeleteConnectGateway`
+    - `ListConnectGateways`
+    - `CreateConnectGateway`
+    - `ListGdgwRouteTables`
+    - `UpdateGdgwRouteTable`
+    - `ListPeerLinks`
+    - `CreatePeerLink`
+    - `ShowPeerLink`
+    - `UpdatePeerLink`
+    - `DeletePeerLink`
+    - `ListGlobalEips`
+    - `BindGlobalEips`
+    - `UnbindGlobalEips`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowVirtualInterface**
+    - 响应参数变更
+      - `- virtual_interface.update_time`
+  - **UpdateVirtualInterface**
+    - 响应参数变更
+      - `- virtual_interface.update_time`
+  - **ListVirtualInterfaces**
+    - 响应参数变更
+      - `- virtual_interfaces.update_time`
+  - **CreateVirtualInterface**
+    - 响应参数变更
+      - `- virtual_interface.update_time`
+
+### HuaweiCloud SDK DDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowInstanceConfigurationModifyHistory**
+    - 请求参数变更
+      - `+ entity_id`
+
+### HuaweiCloud SDK DGC
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowScript**
+    - 响应参数变更
+      - `+ id`
+  - **UpdateScript**
+    - 请求参数变更
+      - `+ id`
+  - **CreateScript**
+    - 请求参数变更
+      - `+ id`
+  - **ListScripts**
+    - 响应参数变更
+      - `+ id`
+      - `+ scripts.id`
+
+### HuaweiCloud SDK DRS
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListAsyncJobDetail**
+    - 响应参数变更
+      - `+ jobs.compare_result.data_compare_task_list.dynamic_compare_delay`
+  - **ShowJobDetail**
+    - 响应参数变更
+      - `+ job.compare_result.data_compare_task_list.dynamic_compare_delay`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListAsyncInvocations**
+    - 响应参数变更
+      - `* invocations.end_time: date-time -> string`
+  - **ListActiveAsyncInvocations**
+    - 响应参数变更
+      - `* invocations.end_time: date-time -> string`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `SwitchOver`
+    - `BatchDeleteManualBackup`
+    - `ShowDisasterRecoverySettings`
+    - `SetDisasterRecoverySettings`
+    - `ShowRedisHotKeys`
+    - `ShowRedisDisabledCommands`
+    - `SaveRedisDisabledCommands`
+    - `DeleteRedisDisabledCommands`
+    - `ListInstanceSessions`
+    - `ClearInstanceSessions`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK GSL
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListSimDeviceMultiply**
+    - 请求参数变更
+      - `+ order_id`
+    - 响应参数变更
+      - `+ sim_cards.iccid_mobile`
+      - `+ sim_cards.iccid_unicom`
+      - `+ sim_cards.iccid_telcom`
+      - `+ sim_cards.order_id`
+
+### HuaweiCloud SDK HSS
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListCceClusterConfig**
+    - 响应参数变更
+      - `- data_list.auto_upgrade`
+      - `- data_list.vpc_id`
+
+### HuaweiCloud SDK IAM
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`KeystoneListFederationProjects`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **KeystoneListUsersForGroupByAdmin**
+    - 响应参数变更
+      - `- users.extra`
+  - **UpdateUser**
+    - 请求参数变更
+      - `- user.create_time`
+      - `- user.xdomain_id`
+      - `- user.xdomain_type`
+      - `- user.is_domain_owner`
+    - 响应参数变更
+      - `+ user.create_time`
+      - `+ user.xdomain_id`
+      - `+ user.xdomain_type`
+      - `+ user.is_domain_owner`
+  - **KeystoneUpdateUserByAdmin**
+    - 响应参数变更
+      - `- user.extra`
+  - **CreateUnscopedTokenWithIdToken**
+    - 响应参数变更
+      - `* token.catalog: object -> list<object>`
+
+### HuaweiCloud SDK Meeting
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`ListOnlineConfAttendee`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK SFSTurbo
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`ListSharesByTag`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK WAF
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateInstance**
+    - 请求参数变更
+      - `+ tags`
+
 # 3.1.124 2024-11-28
 
 ### HuaweiCloud SDK BSS

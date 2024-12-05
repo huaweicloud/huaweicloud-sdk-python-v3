@@ -47,7 +47,7 @@ class ImageRiskConfigsInfoResponseInfo:
         :type check_name: str
         :param check_type: 基线类型
         :type check_type: str
-        :param standard: 标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 华为标准   - qt_standard : 青腾标准
+        :param standard: 标准类型，包含如下:     - cn_standard : 等保合规标准     - hw_standard : 云安全实践标准
         :type standard: str
         :param check_rule_num: 检查项数量
         :type check_rule_num: int
@@ -153,7 +153,7 @@ class ImageRiskConfigsInfoResponseInfo:
     def standard(self):
         """Gets the standard of this ImageRiskConfigsInfoResponseInfo.
 
-        标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 华为标准   - qt_standard : 青腾标准
+        标准类型，包含如下:     - cn_standard : 等保合规标准     - hw_standard : 云安全实践标准
 
         :return: The standard of this ImageRiskConfigsInfoResponseInfo.
         :rtype: str
@@ -164,7 +164,7 @@ class ImageRiskConfigsInfoResponseInfo:
     def standard(self, standard):
         """Sets the standard of this ImageRiskConfigsInfoResponseInfo.
 
-        标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 华为标准   - qt_standard : 青腾标准
+        标准类型，包含如下:     - cn_standard : 等保合规标准     - hw_standard : 云安全实践标准
 
         :param standard: The standard of this ImageRiskConfigsInfoResponseInfo.
         :type standard: str

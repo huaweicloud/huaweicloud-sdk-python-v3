@@ -59,7 +59,7 @@ class SearchApprovalsRequest:
         :type workspace: str
         :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
         :type x_project_id: str
-        :param biz_id: 业务定义ID，填写String类型替代Long类型。
+        :param biz_id: 业务定义ID，ID字符串。
         :type biz_id: str
         :param name: 按名称或编码模糊查询。
         :type name: str
@@ -179,7 +179,7 @@ class SearchApprovalsRequest:
     def biz_id(self):
         """Gets the biz_id of this SearchApprovalsRequest.
 
-        业务定义ID，填写String类型替代Long类型。
+        业务定义ID，ID字符串。
 
         :return: The biz_id of this SearchApprovalsRequest.
         :rtype: str
@@ -190,7 +190,7 @@ class SearchApprovalsRequest:
     def biz_id(self, biz_id):
         """Sets the biz_id of this SearchApprovalsRequest.
 
-        业务定义ID，填写String类型替代Long类型。
+        业务定义ID，ID字符串。
 
         :param biz_id: The biz_id of this SearchApprovalsRequest.
         :type biz_id: str

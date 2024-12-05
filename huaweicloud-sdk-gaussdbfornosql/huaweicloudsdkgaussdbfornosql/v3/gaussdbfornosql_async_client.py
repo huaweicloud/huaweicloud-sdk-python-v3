@@ -166,6 +166,73 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         return http_info
 
+    def batch_delete_manual_backup_async(self, request):
+        """批量删除手动备份
+
+        批量删除数据库实例的手动备份。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteManualBackup
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.BatchDeleteManualBackupRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.BatchDeleteManualBackupResponse`
+        """
+        http_info = self._batch_delete_manual_backup_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_manual_backup_async_invoker(self, request):
+        http_info = self._batch_delete_manual_backup_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_manual_backup_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/backups",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteManualBackupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_tag_action_async(self, request):
         """批量添加或删除资源标签
 
@@ -475,6 +542,73 @@ class GaussDBforNoSQLAsyncClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def clear_instance_sessions_async(self, request):
+        """关闭实例所有节点会话
+
+        关闭实例所有节点会话。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ClearInstanceSessions
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ClearInstanceSessionsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ClearInstanceSessionsResponse`
+        """
+        http_info = self._clear_instance_sessions_http_info(request)
+        return self._call_api(**http_info)
+
+    def clear_instance_sessions_async_invoker(self, request):
+        http_info = self._clear_instance_sessions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _clear_instance_sessions_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/sessions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ClearInstanceSessionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'node_id' in local_var_params:
+            query_params.append(('node_id', local_var_params['node_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -1814,6 +1948,73 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         return http_info
 
+    def delete_redis_disabled_commands_async(self, request):
+        """删除Redis禁用命令
+
+        删除Redis禁用命令。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteRedisDisabledCommands
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.DeleteRedisDisabledCommandsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.DeleteRedisDisabledCommandsResponse`
+        """
+        http_info = self._delete_redis_disabled_commands_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_redis_disabled_commands_async_invoker(self, request):
+        http_info = self._delete_redis_disabled_commands_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_redis_disabled_commands_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/redis/instances/{instance_id}/disabled-commands",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRedisDisabledCommandsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def expand_instance_node_async(self, request):
         """扩容指定集群实例的节点数量
 
@@ -2911,9 +3112,9 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def list_instance_maintenance_window_async(self, request):
-        """list_instance_maintenance_window
+        """查询实例可维护时间段
 
-        查询实例可维护时间段
+        查询实例可维护时间段。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2948,6 +3149,73 @@ class GaussDBforNoSQLAsyncClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_instance_sessions_async(self, request):
+        """获取实例的会话
+
+        获取实例的会话。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListInstanceSessions
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstanceSessionsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstanceSessionsResponse`
+        """
+        http_info = self._list_instance_sessions_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_instance_sessions_async_invoker(self, request):
+        http_info = self._list_instance_sessions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_instance_sessions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/sessions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstanceSessionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'node_id' in local_var_params:
+            query_params.append(('node_id', local_var_params['node_id']))
 
         header_params = {}
 
@@ -4447,7 +4715,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def modify_instance_maintenance_window_async(self, request):
-        """查询实例可维护时间段
+        """设置实例可维护时间段
 
         设置指定实例可维护时间段。
         
@@ -5520,6 +5788,73 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         return http_info
 
+    def save_redis_disabled_commands_async(self, request):
+        """设置Redis禁用命令
+
+        设置Redis禁用命令。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SaveRedisDisabledCommands
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.SaveRedisDisabledCommandsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.SaveRedisDisabledCommandsResponse`
+        """
+        http_info = self._save_redis_disabled_commands_http_info(request)
+        return self._call_api(**http_info)
+
+    def save_redis_disabled_commands_async_invoker(self, request):
+        http_info = self._save_redis_disabled_commands_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _save_redis_disabled_commands_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/redis/instances/{instance_id}/disabled-commands",
+            "request_type": request.__class__.__name__,
+            "response_type": "SaveRedisDisabledCommandsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def set_auto_enlarge_policy_async(self, request):
         """设置磁盘自动扩容策略
 
@@ -5621,6 +5956,71 @@ class GaussDBforNoSQLAsyncClient(Client):
         path_params = {}
         if 'instance_id' in local_var_params:
             path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def set_disaster_recovery_settings_async(self, request):
+        """设置实例容灾切换的故障节点比例
+
+        设置实例容灾切换的故障节点比例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SetDisasterRecoverySettings
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.SetDisasterRecoverySettingsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.SetDisasterRecoverySettingsResponse`
+        """
+        http_info = self._set_disaster_recovery_settings_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_disaster_recovery_settings_async_invoker(self, request):
+        http_info = self._set_disaster_recovery_settings_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_disaster_recovery_settings_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/disaster-recovery/settings",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetDisasterRecoverySettingsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
 
         query_params = []
 
@@ -6382,6 +6782,75 @@ class GaussDBforNoSQLAsyncClient(Client):
             path_params['config_id'] = local_var_params['config_id']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_disaster_recovery_settings_async(self, request):
+        """查询实例容灾切换的故障节点比例
+
+        查询实例容灾切换的故障节点比例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowDisasterRecoverySettings
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowDisasterRecoverySettingsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowDisasterRecoverySettingsResponse`
+        """
+        http_info = self._show_disaster_recovery_settings_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_disaster_recovery_settings_async_invoker(self, request):
+        http_info = self._show_disaster_recovery_settings_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_disaster_recovery_settings_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/disaster-recovery/settings",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDisasterRecoverySettingsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -7284,6 +7753,146 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         return http_info
 
+    def show_redis_disabled_commands_async(self, request):
+        """查询Redis禁用命令
+
+        查询Redis禁用命令。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowRedisDisabledCommands
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowRedisDisabledCommandsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowRedisDisabledCommandsResponse`
+        """
+        http_info = self._show_redis_disabled_commands_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_redis_disabled_commands_async_invoker(self, request):
+        http_info = self._show_redis_disabled_commands_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_redis_disabled_commands_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/redis/instances/{instance_id}/disabled-commands",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRedisDisabledCommandsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_redis_hot_keys_async(self, request):
+        """查询Redis实例的热key
+
+        支持查询Redis实例的热key。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowRedisHotKeys
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowRedisHotKeysRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowRedisHotKeysResponse`
+        """
+        http_info = self._show_redis_hot_keys_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_redis_hot_keys_async_invoker(self, request):
+        http_info = self._show_redis_hot_keys_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_redis_hot_keys_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/hot-keys",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRedisHotKeysResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_redis_pitr_info_async(self, request):
         """查询Redis实例指定时间点恢复所占用的存储空间
 
@@ -7793,6 +8402,71 @@ class GaussDBforNoSQLAsyncClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def switch_over_async(self, request):
+        """Redis主备切换
+
+        切换实例下的主备节点
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SwitchOver
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.SwitchOverRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.SwitchOverResponse`
+        """
+        http_info = self._switch_over_http_info(request)
+        return self._call_api(**http_info)
+
+    def switch_over_async_invoker(self, request):
+        http_info = self._switch_over_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _switch_over_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instance/{instance_id}/switchover",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchOverResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

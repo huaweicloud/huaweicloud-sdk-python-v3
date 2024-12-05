@@ -22,7 +22,6 @@ class VirtualInterface:
         'admin_state_up': 'bool',
         'bandwidth': 'int',
         'create_time': 'datetime',
-        'update_time': 'datetime',
         'description': 'str',
         'direct_connect_id': 'str',
         'service_type': 'str',
@@ -62,7 +61,6 @@ class VirtualInterface:
         'admin_state_up': 'admin_state_up',
         'bandwidth': 'bandwidth',
         'create_time': 'create_time',
-        'update_time': 'update_time',
         'description': 'description',
         'direct_connect_id': 'direct_connect_id',
         'service_type': 'service_type',
@@ -96,7 +94,7 @@ class VirtualInterface:
         'extend_attribute': 'extend_attribute'
     }
 
-    def __init__(self, id=None, name=None, admin_state_up=None, bandwidth=None, create_time=None, update_time=None, description=None, direct_connect_id=None, service_type=None, status=None, tenant_id=None, type=None, vgw_id=None, vlan=None, route_limit=None, enable_nqa=None, enable_bfd=None, lag_id=None, device_id=None, enterprise_project_id=None, tags=None, local_gateway_v4_ip=None, remote_gateway_v4_ip=None, ies_id=None, reason=None, rate_limit=None, address_family=None, local_gateway_v6_ip=None, remote_gateway_v6_ip=None, lgw_id=None, gateway_id=None, remote_ep_group=None, service_ep_group=None, bgp_route_limit=None, priority=None, vif_peers=None, extend_attribute=None):
+    def __init__(self, id=None, name=None, admin_state_up=None, bandwidth=None, create_time=None, description=None, direct_connect_id=None, service_type=None, status=None, tenant_id=None, type=None, vgw_id=None, vlan=None, route_limit=None, enable_nqa=None, enable_bfd=None, lag_id=None, device_id=None, enterprise_project_id=None, tags=None, local_gateway_v4_ip=None, remote_gateway_v4_ip=None, ies_id=None, reason=None, rate_limit=None, address_family=None, local_gateway_v6_ip=None, remote_gateway_v6_ip=None, lgw_id=None, gateway_id=None, remote_ep_group=None, service_ep_group=None, bgp_route_limit=None, priority=None, vif_peers=None, extend_attribute=None):
         """VirtualInterface
 
         The model defined in huaweicloud sdk
@@ -111,8 +109,6 @@ class VirtualInterface:
         :type bandwidth: int
         :param create_time: 虚拟接口创建时间
         :type create_time: datetime
-        :param update_time: 虚拟接口更新时间
-        :type update_time: datetime
         :param description: 虚拟接口的描述
         :type description: str
         :param direct_connect_id: 物理专线的ID
@@ -184,7 +180,6 @@ class VirtualInterface:
         self._admin_state_up = None
         self._bandwidth = None
         self._create_time = None
-        self._update_time = None
         self._description = None
         self._direct_connect_id = None
         self._service_type = None
@@ -228,8 +223,6 @@ class VirtualInterface:
             self.bandwidth = bandwidth
         if create_time is not None:
             self.create_time = create_time
-        if update_time is not None:
-            self.update_time = update_time
         if description is not None:
             self.description = description
         if direct_connect_id is not None:
@@ -402,28 +395,6 @@ class VirtualInterface:
         :type create_time: datetime
         """
         self._create_time = create_time
-
-    @property
-    def update_time(self):
-        """Gets the update_time of this VirtualInterface.
-
-        虚拟接口更新时间
-
-        :return: The update_time of this VirtualInterface.
-        :rtype: datetime
-        """
-        return self._update_time
-
-    @update_time.setter
-    def update_time(self, update_time):
-        """Sets the update_time of this VirtualInterface.
-
-        虚拟接口更新时间
-
-        :param update_time: The update_time of this VirtualInterface.
-        :type update_time: datetime
-        """
-        self._update_time = update_time
 
     @property
     def description(self):

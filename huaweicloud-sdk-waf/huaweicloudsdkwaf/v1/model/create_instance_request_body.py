@@ -29,7 +29,8 @@ class CreateInstanceRequestBody:
         'security_group': 'list[str]',
         'count': 'int',
         'res_tenant': 'bool',
-        'anti_affinity': 'bool'
+        'anti_affinity': 'bool',
+        'tags': 'list[TmsResourceTag]'
     }
 
     attribute_map = {
@@ -45,10 +46,11 @@ class CreateInstanceRequestBody:
         'security_group': 'security_group',
         'count': 'count',
         'res_tenant': 'res_tenant',
-        'anti_affinity': 'anti_affinity'
+        'anti_affinity': 'anti_affinity',
+        'tags': 'tags'
     }
 
-    def __init__(self, chargemode=None, region=None, available_zone=None, arch=None, instancename=None, specification=None, cpu_flavor=None, vpc_id=None, subnet_id=None, security_group=None, count=None, res_tenant=None, anti_affinity=None):
+    def __init__(self, chargemode=None, region=None, available_zone=None, arch=None, instancename=None, specification=None, cpu_flavor=None, vpc_id=None, subnet_id=None, security_group=None, count=None, res_tenant=None, anti_affinity=None, tags=None):
         """CreateInstanceRequestBody
 
         The model defined in huaweicloud sdk
@@ -79,6 +81,8 @@ class CreateInstanceRequestBody:
         :type res_tenant: bool
         :param anti_affinity: 是否开启反亲和。仅资源租户独享实例支持该特性。
         :type anti_affinity: bool
+        :param tags: TMS标签信息
+        :type tags: list[:class:`huaweicloudsdkwaf.v1.TmsResourceTag`]
         """
         
         
@@ -96,6 +100,7 @@ class CreateInstanceRequestBody:
         self._count = None
         self._res_tenant = None
         self._anti_affinity = None
+        self._tags = None
         self.discriminator = None
 
         if chargemode is not None:
@@ -115,6 +120,8 @@ class CreateInstanceRequestBody:
             self.res_tenant = res_tenant
         if anti_affinity is not None:
             self.anti_affinity = anti_affinity
+        if tags is not None:
+            self.tags = tags
 
     @property
     def chargemode(self):
@@ -401,6 +408,28 @@ class CreateInstanceRequestBody:
         :type anti_affinity: bool
         """
         self._anti_affinity = anti_affinity
+
+    @property
+    def tags(self):
+        """Gets the tags of this CreateInstanceRequestBody.
+
+        TMS标签信息
+
+        :return: The tags of this CreateInstanceRequestBody.
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.TmsResourceTag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this CreateInstanceRequestBody.
+
+        TMS标签信息
+
+        :param tags: The tags of this CreateInstanceRequestBody.
+        :type tags: list[:class:`huaweicloudsdkwaf.v1.TmsResourceTag`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

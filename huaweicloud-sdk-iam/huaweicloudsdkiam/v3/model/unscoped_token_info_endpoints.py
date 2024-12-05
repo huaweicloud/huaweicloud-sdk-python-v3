@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class UnscopedTokenInfoCatalogEndpoints:
+class UnscopedTokenInfoEndpoints:
 
     """
     Attributes:
@@ -33,7 +33,7 @@ class UnscopedTokenInfoCatalogEndpoints:
     }
 
     def __init__(self, id=None, interface=None, region=None, region_id=None, url=None):
-        """UnscopedTokenInfoCatalogEndpoints
+        """UnscopedTokenInfoEndpoints
 
         The model defined in huaweicloud sdk
 
@@ -71,110 +71,110 @@ class UnscopedTokenInfoCatalogEndpoints:
 
     @property
     def id(self):
-        """Gets the id of this UnscopedTokenInfoCatalogEndpoints.
+        """Gets the id of this UnscopedTokenInfoEndpoints.
 
         终端节点ID。
 
-        :return: The id of this UnscopedTokenInfoCatalogEndpoints.
+        :return: The id of this UnscopedTokenInfoEndpoints.
         :rtype: str
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UnscopedTokenInfoCatalogEndpoints.
+        """Sets the id of this UnscopedTokenInfoEndpoints.
 
         终端节点ID。
 
-        :param id: The id of this UnscopedTokenInfoCatalogEndpoints.
+        :param id: The id of this UnscopedTokenInfoEndpoints.
         :type id: str
         """
         self._id = id
 
     @property
     def interface(self):
-        """Gets the interface of this UnscopedTokenInfoCatalogEndpoints.
+        """Gets the interface of this UnscopedTokenInfoEndpoints.
 
         接口类型，描述接口在该终端节点的可见性。值为“public”，表示该接口为公开接口。
 
-        :return: The interface of this UnscopedTokenInfoCatalogEndpoints.
+        :return: The interface of this UnscopedTokenInfoEndpoints.
         :rtype: str
         """
         return self._interface
 
     @interface.setter
     def interface(self, interface):
-        """Sets the interface of this UnscopedTokenInfoCatalogEndpoints.
+        """Sets the interface of this UnscopedTokenInfoEndpoints.
 
         接口类型，描述接口在该终端节点的可见性。值为“public”，表示该接口为公开接口。
 
-        :param interface: The interface of this UnscopedTokenInfoCatalogEndpoints.
+        :param interface: The interface of this UnscopedTokenInfoEndpoints.
         :type interface: str
         """
         self._interface = interface
 
     @property
     def region(self):
-        """Gets the region of this UnscopedTokenInfoCatalogEndpoints.
+        """Gets the region of this UnscopedTokenInfoEndpoints.
 
         终端节点所属区域。
 
-        :return: The region of this UnscopedTokenInfoCatalogEndpoints.
+        :return: The region of this UnscopedTokenInfoEndpoints.
         :rtype: str
         """
         return self._region
 
     @region.setter
     def region(self, region):
-        """Sets the region of this UnscopedTokenInfoCatalogEndpoints.
+        """Sets the region of this UnscopedTokenInfoEndpoints.
 
         终端节点所属区域。
 
-        :param region: The region of this UnscopedTokenInfoCatalogEndpoints.
+        :param region: The region of this UnscopedTokenInfoEndpoints.
         :type region: str
         """
         self._region = region
 
     @property
     def region_id(self):
-        """Gets the region_id of this UnscopedTokenInfoCatalogEndpoints.
+        """Gets the region_id of this UnscopedTokenInfoEndpoints.
 
         终端节点所属区域ID。
 
-        :return: The region_id of this UnscopedTokenInfoCatalogEndpoints.
+        :return: The region_id of this UnscopedTokenInfoEndpoints.
         :rtype: str
         """
         return self._region_id
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this UnscopedTokenInfoCatalogEndpoints.
+        """Sets the region_id of this UnscopedTokenInfoEndpoints.
 
         终端节点所属区域ID。
 
-        :param region_id: The region_id of this UnscopedTokenInfoCatalogEndpoints.
+        :param region_id: The region_id of this UnscopedTokenInfoEndpoints.
         :type region_id: str
         """
         self._region_id = region_id
 
     @property
     def url(self):
-        """Gets the url of this UnscopedTokenInfoCatalogEndpoints.
+        """Gets the url of this UnscopedTokenInfoEndpoints.
 
         终端节点的URL。
 
-        :return: The url of this UnscopedTokenInfoCatalogEndpoints.
+        :return: The url of this UnscopedTokenInfoEndpoints.
         :rtype: str
         """
         return self._url
 
     @url.setter
     def url(self, url):
-        """Sets the url of this UnscopedTokenInfoCatalogEndpoints.
+        """Sets the url of this UnscopedTokenInfoEndpoints.
 
         终端节点的URL。
 
-        :param url: The url of this UnscopedTokenInfoCatalogEndpoints.
+        :param url: The url of this UnscopedTokenInfoEndpoints.
         :type url: str
         """
         self._url = url
@@ -221,7 +221,7 @@ class UnscopedTokenInfoCatalogEndpoints:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, UnscopedTokenInfoCatalogEndpoints):
+        if not isinstance(other, UnscopedTokenInfoEndpoints):
             return False
 
         return self.__dict__ == other.__dict__

@@ -47,7 +47,7 @@ class SubjectParamsVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码。更新时必填，创建时可以为空，填写String类型替代Long类型。
+        :param id: 编码。更新时必填，创建时可以为空，ID字符串。
         :type id: str
         :param name_ch: 中文名称。
         :type name_ch: str
@@ -63,7 +63,7 @@ class SubjectParamsVO:
         :type data_owner_list: str
         :param level: 层级。取值范围1-7。
         :type level: int
-        :param parent_id: 上层主题ID，首层则为空，填写String类型替代Long类型。
+        :param parent_id: 上层主题ID，首层则为空，ID字符串。
         :type parent_id: str
         :param self_defined_fields: 自定义项。主题的自定义属性。
         :type self_defined_fields: list[:class:`huaweicloudsdkdataartsstudio.v1.SelfDefinedFieldVO`]
@@ -104,7 +104,7 @@ class SubjectParamsVO:
     def id(self):
         """Gets the id of this SubjectParamsVO.
 
-        编码。更新时必填，创建时可以为空，填写String类型替代Long类型。
+        编码。更新时必填，创建时可以为空，ID字符串。
 
         :return: The id of this SubjectParamsVO.
         :rtype: str
@@ -115,7 +115,7 @@ class SubjectParamsVO:
     def id(self, id):
         """Sets the id of this SubjectParamsVO.
 
-        编码。更新时必填，创建时可以为空，填写String类型替代Long类型。
+        编码。更新时必填，创建时可以为空，ID字符串。
 
         :param id: The id of this SubjectParamsVO.
         :type id: str
@@ -280,7 +280,7 @@ class SubjectParamsVO:
     def parent_id(self):
         """Gets the parent_id of this SubjectParamsVO.
 
-        上层主题ID，首层则为空，填写String类型替代Long类型。
+        上层主题ID，首层则为空，ID字符串。
 
         :return: The parent_id of this SubjectParamsVO.
         :rtype: str
@@ -291,7 +291,7 @@ class SubjectParamsVO:
     def parent_id(self, parent_id):
         """Sets the parent_id of this SubjectParamsVO.
 
-        上层主题ID，首层则为空，填写String类型替代Long类型。
+        上层主题ID，首层则为空，ID字符串。
 
         :param parent_id: The parent_id of this SubjectParamsVO.
         :type parent_id: str

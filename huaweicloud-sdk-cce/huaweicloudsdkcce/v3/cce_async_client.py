@@ -5867,9 +5867,9 @@ class CceAsyncClient(Client):
         return http_info
 
     def upgrade_node_pool_async(self, request):
-        """节点池升级
+        """同步节点池
 
-        该API用于节点池升级。
+        该API用于同步节点池中已有节点的配置
         
         Please refer to HUAWEI cloud API Explorer for details.
 

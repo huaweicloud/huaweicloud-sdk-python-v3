@@ -37,7 +37,7 @@ class CountTableModelsRequest:
         :type workspace: str
         :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
         :type x_project_id: str
-        :param model_id: 依据关系建模的模型ID查询统计信息，填写String类型替代Long类型。
+        :param model_id: 依据关系建模的模型ID查询统计信息，ID字符串。
         :type model_id: str
         """
         
@@ -102,7 +102,7 @@ class CountTableModelsRequest:
     def model_id(self):
         """Gets the model_id of this CountTableModelsRequest.
 
-        依据关系建模的模型ID查询统计信息，填写String类型替代Long类型。
+        依据关系建模的模型ID查询统计信息，ID字符串。
 
         :return: The model_id of this CountTableModelsRequest.
         :rtype: str
@@ -113,7 +113,7 @@ class CountTableModelsRequest:
     def model_id(self, model_id):
         """Sets the model_id of this CountTableModelsRequest.
 
-        依据关系建模的模型ID查询统计信息，填写String类型替代Long类型。
+        依据关系建模的模型ID查询统计信息，ID字符串。
 
         :param model_id: The model_id of this CountTableModelsRequest.
         :type model_id: str

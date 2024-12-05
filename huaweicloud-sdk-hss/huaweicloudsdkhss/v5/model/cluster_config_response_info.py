@@ -24,9 +24,7 @@ class ClusterConfigResponseInfo:
         'node_total_num': 'int',
         'cluster_name': 'str',
         'charging_mode': 'str',
-        'auto_upgrade': 'bool',
         'prefer_packet_cycle': 'int',
-        'vpc_id': 'str',
         'protect_type': 'str',
         'protect_status': 'str',
         'cluster_type': 'str',
@@ -41,16 +39,14 @@ class ClusterConfigResponseInfo:
         'node_total_num': 'node_total_num',
         'cluster_name': 'cluster_name',
         'charging_mode': 'charging_mode',
-        'auto_upgrade': 'auto_upgrade',
         'prefer_packet_cycle': 'prefer_packet_cycle',
-        'vpc_id': 'vpc_id',
         'protect_type': 'protect_type',
         'protect_status': 'protect_status',
         'cluster_type': 'cluster_type',
         'fail_reason': 'fail_reason'
     }
 
-    def __init__(self, cluster_id=None, protect_node_num=None, protect_interrupt_node_num=None, unprotect_node_num=None, node_total_num=None, cluster_name=None, charging_mode=None, auto_upgrade=None, prefer_packet_cycle=None, vpc_id=None, protect_type=None, protect_status=None, cluster_type=None, fail_reason=None):
+    def __init__(self, cluster_id=None, protect_node_num=None, protect_interrupt_node_num=None, unprotect_node_num=None, node_total_num=None, cluster_name=None, charging_mode=None, prefer_packet_cycle=None, protect_type=None, protect_status=None, cluster_type=None, fail_reason=None):
         """ClusterConfigResponseInfo
 
         The model defined in huaweicloud sdk
@@ -67,19 +63,15 @@ class ClusterConfigResponseInfo:
         :type node_total_num: int
         :param cluster_name: 集群名称
         :type cluster_name: str
-        :param charging_mode: 付费模式 | on_demand 按需 free 免费
+        :param charging_mode: 付费模式：   on_demand 按需   free 免费
         :type charging_mode: str
-        :param auto_upgrade: 开启agent自动升级
-        :type auto_upgrade: bool
         :param prefer_packet_cycle: 优先使用包周期配额；默认0
         :type prefer_packet_cycle: int
-        :param vpc_id: vpc id
-        :type vpc_id: str
-        :param protect_type: cce protection type
+        :param protect_type: cce集群防护类型
         :type protect_type: str
-        :param protect_status: protection status
+        :param protect_status: 防护状态：   protecting 防护中   part_protect  部分防护   creating 开启中   error_protect 防护异常   unprotect 未防护   wait_protect 待防护
         :type protect_status: str
-        :param cluster_type: cluster type
+        :param cluster_type: 集群类型
         :type cluster_type: str
         :param fail_reason: fail reason
         :type fail_reason: str
@@ -94,9 +86,7 @@ class ClusterConfigResponseInfo:
         self._node_total_num = None
         self._cluster_name = None
         self._charging_mode = None
-        self._auto_upgrade = None
         self._prefer_packet_cycle = None
-        self._vpc_id = None
         self._protect_type = None
         self._protect_status = None
         self._cluster_type = None
@@ -117,12 +107,8 @@ class ClusterConfigResponseInfo:
             self.cluster_name = cluster_name
         if charging_mode is not None:
             self.charging_mode = charging_mode
-        if auto_upgrade is not None:
-            self.auto_upgrade = auto_upgrade
         if prefer_packet_cycle is not None:
             self.prefer_packet_cycle = prefer_packet_cycle
-        if vpc_id is not None:
-            self.vpc_id = vpc_id
         if protect_type is not None:
             self.protect_type = protect_type
         if protect_status is not None:
@@ -268,7 +254,7 @@ class ClusterConfigResponseInfo:
     def charging_mode(self):
         """Gets the charging_mode of this ClusterConfigResponseInfo.
 
-        付费模式 | on_demand 按需 free 免费
+        付费模式：   on_demand 按需   free 免费
 
         :return: The charging_mode of this ClusterConfigResponseInfo.
         :rtype: str
@@ -279,34 +265,12 @@ class ClusterConfigResponseInfo:
     def charging_mode(self, charging_mode):
         """Sets the charging_mode of this ClusterConfigResponseInfo.
 
-        付费模式 | on_demand 按需 free 免费
+        付费模式：   on_demand 按需   free 免费
 
         :param charging_mode: The charging_mode of this ClusterConfigResponseInfo.
         :type charging_mode: str
         """
         self._charging_mode = charging_mode
-
-    @property
-    def auto_upgrade(self):
-        """Gets the auto_upgrade of this ClusterConfigResponseInfo.
-
-        开启agent自动升级
-
-        :return: The auto_upgrade of this ClusterConfigResponseInfo.
-        :rtype: bool
-        """
-        return self._auto_upgrade
-
-    @auto_upgrade.setter
-    def auto_upgrade(self, auto_upgrade):
-        """Sets the auto_upgrade of this ClusterConfigResponseInfo.
-
-        开启agent自动升级
-
-        :param auto_upgrade: The auto_upgrade of this ClusterConfigResponseInfo.
-        :type auto_upgrade: bool
-        """
-        self._auto_upgrade = auto_upgrade
 
     @property
     def prefer_packet_cycle(self):
@@ -331,32 +295,10 @@ class ClusterConfigResponseInfo:
         self._prefer_packet_cycle = prefer_packet_cycle
 
     @property
-    def vpc_id(self):
-        """Gets the vpc_id of this ClusterConfigResponseInfo.
-
-        vpc id
-
-        :return: The vpc_id of this ClusterConfigResponseInfo.
-        :rtype: str
-        """
-        return self._vpc_id
-
-    @vpc_id.setter
-    def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ClusterConfigResponseInfo.
-
-        vpc id
-
-        :param vpc_id: The vpc_id of this ClusterConfigResponseInfo.
-        :type vpc_id: str
-        """
-        self._vpc_id = vpc_id
-
-    @property
     def protect_type(self):
         """Gets the protect_type of this ClusterConfigResponseInfo.
 
-        cce protection type
+        cce集群防护类型
 
         :return: The protect_type of this ClusterConfigResponseInfo.
         :rtype: str
@@ -367,7 +309,7 @@ class ClusterConfigResponseInfo:
     def protect_type(self, protect_type):
         """Sets the protect_type of this ClusterConfigResponseInfo.
 
-        cce protection type
+        cce集群防护类型
 
         :param protect_type: The protect_type of this ClusterConfigResponseInfo.
         :type protect_type: str
@@ -378,7 +320,7 @@ class ClusterConfigResponseInfo:
     def protect_status(self):
         """Gets the protect_status of this ClusterConfigResponseInfo.
 
-        protection status
+        防护状态：   protecting 防护中   part_protect  部分防护   creating 开启中   error_protect 防护异常   unprotect 未防护   wait_protect 待防护
 
         :return: The protect_status of this ClusterConfigResponseInfo.
         :rtype: str
@@ -389,7 +331,7 @@ class ClusterConfigResponseInfo:
     def protect_status(self, protect_status):
         """Sets the protect_status of this ClusterConfigResponseInfo.
 
-        protection status
+        防护状态：   protecting 防护中   part_protect  部分防护   creating 开启中   error_protect 防护异常   unprotect 未防护   wait_protect 待防护
 
         :param protect_status: The protect_status of this ClusterConfigResponseInfo.
         :type protect_status: str
@@ -400,7 +342,7 @@ class ClusterConfigResponseInfo:
     def cluster_type(self):
         """Gets the cluster_type of this ClusterConfigResponseInfo.
 
-        cluster type
+        集群类型
 
         :return: The cluster_type of this ClusterConfigResponseInfo.
         :rtype: str
@@ -411,7 +353,7 @@ class ClusterConfigResponseInfo:
     def cluster_type(self, cluster_type):
         """Sets the cluster_type of this ClusterConfigResponseInfo.
 
-        cluster type
+        集群类型
 
         :param cluster_type: The cluster_type of this ClusterConfigResponseInfo.
         :type cluster_type: str

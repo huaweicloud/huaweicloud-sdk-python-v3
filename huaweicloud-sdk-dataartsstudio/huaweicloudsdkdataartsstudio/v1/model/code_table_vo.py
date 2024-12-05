@@ -55,7 +55,7 @@ class CodeTableVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 码表ID，填写String类型替代Long类型。
+        :param id: 码表ID，ID字符串。
         :type id: str
         :param name_en: 表名称，英文名。
         :type name_en: str
@@ -63,7 +63,7 @@ class CodeTableVO:
         :type name_ch: str
         :param tb_version: 表版本。
         :type tb_version: int
-        :param directory_id: 目录ID，填写String类型替代Long类型。
+        :param directory_id: 目录ID，ID字符串。
         :type directory_id: str
         :param directory_path: 目录树。
         :type directory_path: str
@@ -132,7 +132,7 @@ class CodeTableVO:
     def id(self):
         """Gets the id of this CodeTableVO.
 
-        码表ID，填写String类型替代Long类型。
+        码表ID，ID字符串。
 
         :return: The id of this CodeTableVO.
         :rtype: str
@@ -143,7 +143,7 @@ class CodeTableVO:
     def id(self, id):
         """Sets the id of this CodeTableVO.
 
-        码表ID，填写String类型替代Long类型。
+        码表ID，ID字符串。
 
         :param id: The id of this CodeTableVO.
         :type id: str
@@ -220,7 +220,7 @@ class CodeTableVO:
     def directory_id(self):
         """Gets the directory_id of this CodeTableVO.
 
-        目录ID，填写String类型替代Long类型。
+        目录ID，ID字符串。
 
         :return: The directory_id of this CodeTableVO.
         :rtype: str
@@ -231,7 +231,7 @@ class CodeTableVO:
     def directory_id(self, directory_id):
         """Sets the directory_id of this CodeTableVO.
 
-        目录ID，填写String类型替代Long类型。
+        目录ID，ID字符串。
 
         :param directory_id: The directory_id of this CodeTableVO.
         :type directory_id: str

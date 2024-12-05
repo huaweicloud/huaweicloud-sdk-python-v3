@@ -29,6 +29,7 @@ class ShowDataconnectionResponse(SdkResponse):
         'create_user': 'str',
         'create_time': 'float',
         'dw_catagory': 'str',
+        'description': 'str',
         'update_type': 'int'
     }
 
@@ -44,10 +45,11 @@ class ShowDataconnectionResponse(SdkResponse):
         'create_user': 'create_user',
         'create_time': 'create_time',
         'dw_catagory': 'dw_catagory',
+        'description': 'description',
         'update_type': 'update_type'
     }
 
-    def __init__(self, dw_name=None, dw_type=None, dw_config=None, agent_id=None, agent_name=None, env_type=None, qualified_name=None, dw_id=None, create_user=None, create_time=None, dw_catagory=None, update_type=None):
+    def __init__(self, dw_name=None, dw_type=None, dw_config=None, agent_id=None, agent_name=None, env_type=None, qualified_name=None, dw_id=None, create_user=None, create_time=None, dw_catagory=None, description=None, update_type=None):
         """ShowDataconnectionResponse
 
         The model defined in huaweicloud sdk
@@ -74,6 +76,8 @@ class ShowDataconnectionResponse(SdkResponse):
         :type create_time: float
         :param dw_catagory: 数据连接类别
         :type dw_catagory: str
+        :param description: 连接描述信息
+        :type description: str
         :param update_type: 0：创建 1：更新。默认为0
         :type update_type: int
         """
@@ -91,6 +95,7 @@ class ShowDataconnectionResponse(SdkResponse):
         self._create_user = None
         self._create_time = None
         self._dw_catagory = None
+        self._description = None
         self._update_type = None
         self.discriminator = None
 
@@ -116,6 +121,8 @@ class ShowDataconnectionResponse(SdkResponse):
             self.create_time = create_time
         if dw_catagory is not None:
             self.dw_catagory = dw_catagory
+        if description is not None:
+            self.description = description
         if update_type is not None:
             self.update_type = update_type
 
@@ -360,6 +367,28 @@ class ShowDataconnectionResponse(SdkResponse):
         :type dw_catagory: str
         """
         self._dw_catagory = dw_catagory
+
+    @property
+    def description(self):
+        """Gets the description of this ShowDataconnectionResponse.
+
+        连接描述信息
+
+        :return: The description of this ShowDataconnectionResponse.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this ShowDataconnectionResponse.
+
+        连接描述信息
+
+        :param description: The description of this ShowDataconnectionResponse.
+        :type description: str
+        """
+        self._description = description
 
     @property
     def update_type(self):

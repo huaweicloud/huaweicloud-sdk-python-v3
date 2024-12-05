@@ -45,13 +45,13 @@ class TagRecordVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码，填写String类型替代Long类型。
+        :param id: 编码，ID字符串。
         :type id: str
-        :param tag_id: 标签ID，填写String类型替代Long类型。
+        :param tag_id: 标签ID，ID字符串。
         :type tag_id: str
         :param tag_name: 标签名称。
         :type tag_name: str
-        :param biz_id: 实体ID，填写String类型替代Long类型。
+        :param biz_id: 实体ID，ID字符串。
         :type biz_id: str
         :param biz_type: 
         :type biz_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
@@ -98,7 +98,7 @@ class TagRecordVO:
     def id(self):
         """Gets the id of this TagRecordVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :return: The id of this TagRecordVO.
         :rtype: str
@@ -109,7 +109,7 @@ class TagRecordVO:
     def id(self, id):
         """Sets the id of this TagRecordVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :param id: The id of this TagRecordVO.
         :type id: str
@@ -120,7 +120,7 @@ class TagRecordVO:
     def tag_id(self):
         """Gets the tag_id of this TagRecordVO.
 
-        标签ID，填写String类型替代Long类型。
+        标签ID，ID字符串。
 
         :return: The tag_id of this TagRecordVO.
         :rtype: str
@@ -131,7 +131,7 @@ class TagRecordVO:
     def tag_id(self, tag_id):
         """Sets the tag_id of this TagRecordVO.
 
-        标签ID，填写String类型替代Long类型。
+        标签ID，ID字符串。
 
         :param tag_id: The tag_id of this TagRecordVO.
         :type tag_id: str
@@ -164,7 +164,7 @@ class TagRecordVO:
     def biz_id(self):
         """Gets the biz_id of this TagRecordVO.
 
-        实体ID，填写String类型替代Long类型。
+        实体ID，ID字符串。
 
         :return: The biz_id of this TagRecordVO.
         :rtype: str
@@ -175,7 +175,7 @@ class TagRecordVO:
     def biz_id(self, biz_id):
         """Sets the biz_id of this TagRecordVO.
 
-        实体ID，填写String类型替代Long类型。
+        实体ID，ID字符串。
 
         :param biz_id: The biz_id of this TagRecordVO.
         :type biz_id: str

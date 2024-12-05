@@ -145,17 +145,17 @@ class FactLogicTableVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 事实表ID，填写String类型替代Long类型。
+        :param id: 事实表ID，ID字符串。
         :type id: str
         :param tb_name: 表名称。
         :type tb_name: str
         :param tb_logic_name: 逻辑实体名。
         :type tb_logic_name: str
-        :param l1_id: 主题域分组ID，只读，填写String类型替代Long类型。
+        :param l1_id: 主题域分组ID，只读，ID字符串。
         :type l1_id: str
         :param l2_id: 主题域ID，只读，创建和更新时无需填写。
         :type l2_id: str
-        :param l3_id: 业务对象guid，填写String类型替代Long类型。
+        :param l3_id: 业务对象guid，ID字符串。
         :type l3_id: str
         :param description: 描述。
         :type description: str
@@ -243,7 +243,7 @@ class FactLogicTableVO:
         :type data_quality: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         :param summary_status: 
         :type summary_status: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
-        :param quality_id: 质量ID，填写String类型替代Long类型。
+        :param quality_id: 质量ID，ID字符串。
         :type quality_id: str
         :param alias: 别名。
         :type alias: str
@@ -251,9 +251,9 @@ class FactLogicTableVO:
         :type self_defined_fields: list[:class:`huaweicloudsdkdataartsstudio.v1.SelfDefinedFieldVO`]
         :param obs_location: 外表路径
         :type obs_location: str
-        :param dev_version: 开发环境版本，填写String类型替代Long类型。
+        :param dev_version: 开发环境版本，ID字符串。
         :type dev_version: str
-        :param prod_version: 生产环境版本，填写String类型替代Long类型。
+        :param prod_version: 生产环境版本，ID字符串。
         :type prod_version: str
         :param dev_version_name: 开发环境版本名称
         :type dev_version_name: str
@@ -444,7 +444,7 @@ class FactLogicTableVO:
     def id(self):
         """Gets the id of this FactLogicTableVO.
 
-        事实表ID，填写String类型替代Long类型。
+        事实表ID，ID字符串。
 
         :return: The id of this FactLogicTableVO.
         :rtype: str
@@ -455,7 +455,7 @@ class FactLogicTableVO:
     def id(self, id):
         """Sets the id of this FactLogicTableVO.
 
-        事实表ID，填写String类型替代Long类型。
+        事实表ID，ID字符串。
 
         :param id: The id of this FactLogicTableVO.
         :type id: str
@@ -510,7 +510,7 @@ class FactLogicTableVO:
     def l1_id(self):
         """Gets the l1_id of this FactLogicTableVO.
 
-        主题域分组ID，只读，填写String类型替代Long类型。
+        主题域分组ID，只读，ID字符串。
 
         :return: The l1_id of this FactLogicTableVO.
         :rtype: str
@@ -521,7 +521,7 @@ class FactLogicTableVO:
     def l1_id(self, l1_id):
         """Sets the l1_id of this FactLogicTableVO.
 
-        主题域分组ID，只读，填写String类型替代Long类型。
+        主题域分组ID，只读，ID字符串。
 
         :param l1_id: The l1_id of this FactLogicTableVO.
         :type l1_id: str
@@ -554,7 +554,7 @@ class FactLogicTableVO:
     def l3_id(self):
         """Gets the l3_id of this FactLogicTableVO.
 
-        业务对象guid，填写String类型替代Long类型。
+        业务对象guid，ID字符串。
 
         :return: The l3_id of this FactLogicTableVO.
         :rtype: str
@@ -565,7 +565,7 @@ class FactLogicTableVO:
     def l3_id(self, l3_id):
         """Sets the l3_id of this FactLogicTableVO.
 
-        业务对象guid，填写String类型替代Long类型。
+        业务对象guid，ID字符串。
 
         :param l3_id: The l3_id of this FactLogicTableVO.
         :type l3_id: str
@@ -1482,7 +1482,7 @@ class FactLogicTableVO:
     def quality_id(self):
         """Gets the quality_id of this FactLogicTableVO.
 
-        质量ID，填写String类型替代Long类型。
+        质量ID，ID字符串。
 
         :return: The quality_id of this FactLogicTableVO.
         :rtype: str
@@ -1493,7 +1493,7 @@ class FactLogicTableVO:
     def quality_id(self, quality_id):
         """Sets the quality_id of this FactLogicTableVO.
 
-        质量ID，填写String类型替代Long类型。
+        质量ID，ID字符串。
 
         :param quality_id: The quality_id of this FactLogicTableVO.
         :type quality_id: str
@@ -1570,7 +1570,7 @@ class FactLogicTableVO:
     def dev_version(self):
         """Gets the dev_version of this FactLogicTableVO.
 
-        开发环境版本，填写String类型替代Long类型。
+        开发环境版本，ID字符串。
 
         :return: The dev_version of this FactLogicTableVO.
         :rtype: str
@@ -1581,7 +1581,7 @@ class FactLogicTableVO:
     def dev_version(self, dev_version):
         """Sets the dev_version of this FactLogicTableVO.
 
-        开发环境版本，填写String类型替代Long类型。
+        开发环境版本，ID字符串。
 
         :param dev_version: The dev_version of this FactLogicTableVO.
         :type dev_version: str
@@ -1592,7 +1592,7 @@ class FactLogicTableVO:
     def prod_version(self):
         """Gets the prod_version of this FactLogicTableVO.
 
-        生产环境版本，填写String类型替代Long类型。
+        生产环境版本，ID字符串。
 
         :return: The prod_version of this FactLogicTableVO.
         :rtype: str
@@ -1603,7 +1603,7 @@ class FactLogicTableVO:
     def prod_version(self, prod_version):
         """Sets the prod_version of this FactLogicTableVO.
 
-        生产环境版本，填写String类型替代Long类型。
+        生产环境版本，ID字符串。
 
         :param prod_version: The prod_version of this FactLogicTableVO.
         :type prod_version: str

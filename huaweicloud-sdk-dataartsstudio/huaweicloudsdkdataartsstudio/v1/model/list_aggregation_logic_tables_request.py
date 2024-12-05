@@ -77,7 +77,7 @@ class ListAggregationLogicTablesRequest:
         :type sync_status: str
         :param sync_key: 同步任务类型枚举。 枚举值：   - BUSINESS_ASSET: 同步业务资产   - DATA_QUALITY: 创建质量作业   - TECHNICAL_ASSET: 同步技术资产   - META_DATA_LINK: 资产关联   - PHYSICAL_TABLE: 创建表（生产环境）   - DEV_PHYSICAL_TABLE: 创建表（开发环境）   - DLF_TASK: 创建数据开发作业   - MATERIALIZATION: 数值落库（码表）   - PUBLISH_TO_DLM: 发布数据服务API   - SUMMARY_STATUS: 整体状态 
         :type sync_key: list[str]
-        :param l3_id: 业务对象l3的ID，填写String类型替代Long类型。
+        :param l3_id: 业务对象l3的ID，ID字符串。
         :type l3_id: str
         :param begin_time: 时间过滤左边界，与end_time一起使用，只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type begin_time: str
@@ -347,7 +347,7 @@ class ListAggregationLogicTablesRequest:
     def l3_id(self):
         """Gets the l3_id of this ListAggregationLogicTablesRequest.
 
-        业务对象l3的ID，填写String类型替代Long类型。
+        业务对象l3的ID，ID字符串。
 
         :return: The l3_id of this ListAggregationLogicTablesRequest.
         :rtype: str
@@ -358,7 +358,7 @@ class ListAggregationLogicTablesRequest:
     def l3_id(self, l3_id):
         """Sets the l3_id of this ListAggregationLogicTablesRequest.
 
-        业务对象l3的ID，填写String类型替代Long类型。
+        业务对象l3的ID，ID字符串。
 
         :param l3_id: The l3_id of this ListAggregationLogicTablesRequest.
         :type l3_id: str

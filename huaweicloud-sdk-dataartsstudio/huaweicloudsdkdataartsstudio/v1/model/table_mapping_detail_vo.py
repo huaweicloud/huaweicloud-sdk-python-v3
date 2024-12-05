@@ -63,11 +63,11 @@ class TableMappingDetailVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码，填写String类型替代Long类型。
+        :param id: 编码，ID字符串。
         :type id: str
         :param mapping_id: 名称。
         :type mapping_id: str
-        :param target_attr_id: 目的字段ID，填写String类型替代Long类型。
+        :param target_attr_id: 目的字段ID，ID字符串。
         :type target_attr_id: str
         :param target_attr_name: 目的字段排序。
         :type target_attr_name: str
@@ -77,15 +77,15 @@ class TableMappingDetailVO:
         :type src_table_names: list[str]
         :param src_table_db_names: 源表db名称数组，只读。
         :type src_table_db_names: list[str]
-        :param src_table_model_ids: 源表在关系建模中的模型ID数组，只读，填写String类型替代Long类型。
+        :param src_table_model_ids: 源表在关系建模中的模型ID数组，只读，ID字符串。
         :type src_table_model_ids: list[str]
-        :param src_table_id_list: 源表ID数组，只读，填写String类型替代Long类型。
+        :param src_table_id_list: 源表ID数组，只读，ID字符串。
         :type src_table_id_list: list[str]
         :param src_attr_ids: 源表字段ID。
         :type src_attr_ids: str
         :param src_attr_names: 源表字段名称数组，只读。
         :type src_attr_names: list[str]
-        :param src_attr_id_list: 源表字段ID数组，只读，填写String类型替代Long类型。
+        :param src_attr_id_list: 源表字段ID数组，只读，ID字符串。
         :type src_attr_id_list: list[str]
         :param remark: 备注。
         :type remark: str
@@ -163,7 +163,7 @@ class TableMappingDetailVO:
     def id(self):
         """Gets the id of this TableMappingDetailVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :return: The id of this TableMappingDetailVO.
         :rtype: str
@@ -174,7 +174,7 @@ class TableMappingDetailVO:
     def id(self, id):
         """Sets the id of this TableMappingDetailVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :param id: The id of this TableMappingDetailVO.
         :type id: str
@@ -207,7 +207,7 @@ class TableMappingDetailVO:
     def target_attr_id(self):
         """Gets the target_attr_id of this TableMappingDetailVO.
 
-        目的字段ID，填写String类型替代Long类型。
+        目的字段ID，ID字符串。
 
         :return: The target_attr_id of this TableMappingDetailVO.
         :rtype: str
@@ -218,7 +218,7 @@ class TableMappingDetailVO:
     def target_attr_id(self, target_attr_id):
         """Sets the target_attr_id of this TableMappingDetailVO.
 
-        目的字段ID，填写String类型替代Long类型。
+        目的字段ID，ID字符串。
 
         :param target_attr_id: The target_attr_id of this TableMappingDetailVO.
         :type target_attr_id: str
@@ -317,7 +317,7 @@ class TableMappingDetailVO:
     def src_table_model_ids(self):
         """Gets the src_table_model_ids of this TableMappingDetailVO.
 
-        源表在关系建模中的模型ID数组，只读，填写String类型替代Long类型。
+        源表在关系建模中的模型ID数组，只读，ID字符串。
 
         :return: The src_table_model_ids of this TableMappingDetailVO.
         :rtype: list[str]
@@ -328,7 +328,7 @@ class TableMappingDetailVO:
     def src_table_model_ids(self, src_table_model_ids):
         """Sets the src_table_model_ids of this TableMappingDetailVO.
 
-        源表在关系建模中的模型ID数组，只读，填写String类型替代Long类型。
+        源表在关系建模中的模型ID数组，只读，ID字符串。
 
         :param src_table_model_ids: The src_table_model_ids of this TableMappingDetailVO.
         :type src_table_model_ids: list[str]
@@ -339,7 +339,7 @@ class TableMappingDetailVO:
     def src_table_id_list(self):
         """Gets the src_table_id_list of this TableMappingDetailVO.
 
-        源表ID数组，只读，填写String类型替代Long类型。
+        源表ID数组，只读，ID字符串。
 
         :return: The src_table_id_list of this TableMappingDetailVO.
         :rtype: list[str]
@@ -350,7 +350,7 @@ class TableMappingDetailVO:
     def src_table_id_list(self, src_table_id_list):
         """Sets the src_table_id_list of this TableMappingDetailVO.
 
-        源表ID数组，只读，填写String类型替代Long类型。
+        源表ID数组，只读，ID字符串。
 
         :param src_table_id_list: The src_table_id_list of this TableMappingDetailVO.
         :type src_table_id_list: list[str]
@@ -405,7 +405,7 @@ class TableMappingDetailVO:
     def src_attr_id_list(self):
         """Gets the src_attr_id_list of this TableMappingDetailVO.
 
-        源表字段ID数组，只读，填写String类型替代Long类型。
+        源表字段ID数组，只读，ID字符串。
 
         :return: The src_attr_id_list of this TableMappingDetailVO.
         :rtype: list[str]
@@ -416,7 +416,7 @@ class TableMappingDetailVO:
     def src_attr_id_list(self, src_attr_id_list):
         """Sets the src_attr_id_list of this TableMappingDetailVO.
 
-        源表字段ID数组，只读，填写String类型替代Long类型。
+        源表字段ID数组，只读，ID字符串。
 
         :param src_attr_id_list: The src_attr_id_list of this TableMappingDetailVO.
         :type src_attr_id_list: list[str]

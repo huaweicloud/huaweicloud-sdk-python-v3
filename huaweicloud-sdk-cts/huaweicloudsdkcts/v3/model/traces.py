@@ -39,7 +39,9 @@ class Traces:
         'endpoint': 'str',
         'resource_url': 'str',
         'enterprise_project_id': 'str',
-        'resource_account_id': 'str'
+        'resource_account_id': 'str',
+        'read_only': 'bool',
+        'operation_id': 'str'
     }
 
     attribute_map = {
@@ -65,10 +67,12 @@ class Traces:
         'endpoint': 'endpoint',
         'resource_url': 'resource_url',
         'enterprise_project_id': 'enterprise_project_id',
-        'resource_account_id': 'resource_account_id'
+        'resource_account_id': 'resource_account_id',
+        'read_only': 'read_only',
+        'operation_id': 'operation_id'
     }
 
-    def __init__(self, resource_id=None, trace_name=None, trace_rating=None, trace_type=None, request=None, response=None, code=None, api_version=None, message=None, record_time=None, trace_id=None, time=None, user=None, service_type=None, resource_type=None, source_ip=None, resource_name=None, request_id=None, location_info=None, endpoint=None, resource_url=None, enterprise_project_id=None, resource_account_id=None):
+    def __init__(self, resource_id=None, trace_name=None, trace_rating=None, trace_type=None, request=None, response=None, code=None, api_version=None, message=None, record_time=None, trace_id=None, time=None, user=None, service_type=None, resource_type=None, source_ip=None, resource_name=None, request_id=None, location_info=None, endpoint=None, resource_url=None, enterprise_project_id=None, resource_account_id=None, read_only=None, operation_id=None):
         """Traces
 
         The model defined in huaweicloud sdk
@@ -119,6 +123,10 @@ class Traces:
         :type enterprise_project_id: str
         :param resource_account_id: 标识资源所在的账号ID。仅在跨租户操作资源时有值。
         :type resource_account_id: str
+        :param read_only: 标识用户请求是不是只读。
+        :type read_only: bool
+        :param operation_id: 记录事件对应的操作ID。
+        :type operation_id: str
         """
         
         
@@ -146,6 +154,8 @@ class Traces:
         self._resource_url = None
         self._enterprise_project_id = None
         self._resource_account_id = None
+        self._read_only = None
+        self._operation_id = None
         self.discriminator = None
 
         if resource_id is not None:
@@ -194,6 +204,10 @@ class Traces:
             self.enterprise_project_id = enterprise_project_id
         if resource_account_id is not None:
             self.resource_account_id = resource_account_id
+        if read_only is not None:
+            self.read_only = read_only
+        if operation_id is not None:
+            self.operation_id = operation_id
 
     @property
     def resource_id(self):
@@ -696,6 +710,50 @@ class Traces:
         :type resource_account_id: str
         """
         self._resource_account_id = resource_account_id
+
+    @property
+    def read_only(self):
+        """Gets the read_only of this Traces.
+
+        标识用户请求是不是只读。
+
+        :return: The read_only of this Traces.
+        :rtype: bool
+        """
+        return self._read_only
+
+    @read_only.setter
+    def read_only(self, read_only):
+        """Sets the read_only of this Traces.
+
+        标识用户请求是不是只读。
+
+        :param read_only: The read_only of this Traces.
+        :type read_only: bool
+        """
+        self._read_only = read_only
+
+    @property
+    def operation_id(self):
+        """Gets the operation_id of this Traces.
+
+        记录事件对应的操作ID。
+
+        :return: The operation_id of this Traces.
+        :rtype: str
+        """
+        return self._operation_id
+
+    @operation_id.setter
+    def operation_id(self, operation_id):
+        """Sets the operation_id of this Traces.
+
+        记录事件对应的操作ID。
+
+        :param operation_id: The operation_id of this Traces.
+        :type operation_id: str
+        """
+        self._operation_id = operation_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

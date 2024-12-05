@@ -35,7 +35,7 @@ class CatalogLevelVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编号，填写String类型替代Long类型。
+        :param id: 编号，ID字符串。
         :type id: str
         :param level: 层级。取值范围为1-7。
         :type level: int
@@ -66,7 +66,7 @@ class CatalogLevelVO:
     def id(self):
         """Gets the id of this CatalogLevelVO.
 
-        编号，填写String类型替代Long类型。
+        编号，ID字符串。
 
         :return: The id of this CatalogLevelVO.
         :rtype: str
@@ -77,7 +77,7 @@ class CatalogLevelVO:
     def id(self, id):
         """Sets the id of this CatalogLevelVO.
 
-        编号，填写String类型替代Long类型。
+        编号，ID字符串。
 
         :param id: The id of this CatalogLevelVO.
         :type id: str

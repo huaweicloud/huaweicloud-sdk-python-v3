@@ -39,7 +39,7 @@ class MappingSourceFieldVO:
 
         The model defined in huaweicloud sdk
 
-        :param target_field_id: 目标字段ID，当前表的某个字段，填写String类型替代Long类型。
+        :param target_field_id: 目标字段ID，当前表的某个字段，ID字符串。
         :type target_field_id: str
         :param target_field_name: 目标字段编码。
         :type target_field_name: str
@@ -79,7 +79,7 @@ class MappingSourceFieldVO:
     def target_field_id(self):
         """Gets the target_field_id of this MappingSourceFieldVO.
 
-        目标字段ID，当前表的某个字段，填写String类型替代Long类型。
+        目标字段ID，当前表的某个字段，ID字符串。
 
         :return: The target_field_id of this MappingSourceFieldVO.
         :rtype: str
@@ -90,7 +90,7 @@ class MappingSourceFieldVO:
     def target_field_id(self, target_field_id):
         """Sets the target_field_id of this MappingSourceFieldVO.
 
-        目标字段ID，当前表的某个字段，填写String类型替代Long类型。
+        目标字段ID，当前表的某个字段，ID字符串。
 
         :param target_field_id: The target_field_id of this MappingSourceFieldVO.
         :type target_field_id: str

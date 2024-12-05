@@ -101,7 +101,7 @@ class DimensionVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码，填写String类型替代Long类型。
+        :param id: 编码，ID字符串。
         :type id: str
         :param name_en: 字段名。
         :type name_en: str
@@ -115,15 +115,15 @@ class DimensionVO:
         :type create_by: str
         :param update_by: 更新人。
         :type update_by: str
-        :param code_table_id: 引用码表ID，填写String类型替代Long类型。
+        :param code_table_id: 引用码表ID，ID字符串。
         :type code_table_id: str
         :param code_table: 
         :type code_table: :class:`huaweicloudsdkdataartsstudio.v1.CodeTableVO`
-        :param l1_id: 主题域分组ID，只读，填写String类型替代Long类型。
+        :param l1_id: 主题域分组ID，只读，ID字符串。
         :type l1_id: str
         :param l2_id: 主题域ID，只读，创建和更新时无需填写。
         :type l2_id: str
-        :param l3_id: 业务对象ID，填写String类型替代Long类型。
+        :param l3_id: 业务对象ID，ID字符串。
         :type l3_id: str
         :param hierarchies: 层级属性。
         :type hierarchies: list[:class:`huaweicloudsdkdataartsstudio.v1.DimensionHierarchiesVO`]
@@ -165,9 +165,9 @@ class DimensionVO:
         :type self_defined_fields: list[:class:`huaweicloudsdkdataartsstudio.v1.SelfDefinedFieldVO`]
         :param configs: 其他配置
         :type configs: str
-        :param dev_version: 开发环境版本，填写String类型替代Long类型。
+        :param dev_version: 开发环境版本，ID字符串。
         :type dev_version: str
-        :param prod_version: 生产环境版本，填写String类型替代Long类型。
+        :param prod_version: 生产环境版本，ID字符串。
         :type prod_version: str
         :param dev_version_name: 开发环境版本名称
         :type dev_version_name: str
@@ -292,7 +292,7 @@ class DimensionVO:
     def id(self):
         """Gets the id of this DimensionVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :return: The id of this DimensionVO.
         :rtype: str
@@ -303,7 +303,7 @@ class DimensionVO:
     def id(self, id):
         """Sets the id of this DimensionVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :param id: The id of this DimensionVO.
         :type id: str
@@ -446,7 +446,7 @@ class DimensionVO:
     def code_table_id(self):
         """Gets the code_table_id of this DimensionVO.
 
-        引用码表ID，填写String类型替代Long类型。
+        引用码表ID，ID字符串。
 
         :return: The code_table_id of this DimensionVO.
         :rtype: str
@@ -457,7 +457,7 @@ class DimensionVO:
     def code_table_id(self, code_table_id):
         """Sets the code_table_id of this DimensionVO.
 
-        引用码表ID，填写String类型替代Long类型。
+        引用码表ID，ID字符串。
 
         :param code_table_id: The code_table_id of this DimensionVO.
         :type code_table_id: str
@@ -486,7 +486,7 @@ class DimensionVO:
     def l1_id(self):
         """Gets the l1_id of this DimensionVO.
 
-        主题域分组ID，只读，填写String类型替代Long类型。
+        主题域分组ID，只读，ID字符串。
 
         :return: The l1_id of this DimensionVO.
         :rtype: str
@@ -497,7 +497,7 @@ class DimensionVO:
     def l1_id(self, l1_id):
         """Sets the l1_id of this DimensionVO.
 
-        主题域分组ID，只读，填写String类型替代Long类型。
+        主题域分组ID，只读，ID字符串。
 
         :param l1_id: The l1_id of this DimensionVO.
         :type l1_id: str
@@ -530,7 +530,7 @@ class DimensionVO:
     def l3_id(self):
         """Gets the l3_id of this DimensionVO.
 
-        业务对象ID，填写String类型替代Long类型。
+        业务对象ID，ID字符串。
 
         :return: The l3_id of this DimensionVO.
         :rtype: str
@@ -541,7 +541,7 @@ class DimensionVO:
     def l3_id(self, l3_id):
         """Sets the l3_id of this DimensionVO.
 
-        业务对象ID，填写String类型替代Long类型。
+        业务对象ID，ID字符串。
 
         :param l3_id: The l3_id of this DimensionVO.
         :type l3_id: str
@@ -976,7 +976,7 @@ class DimensionVO:
     def dev_version(self):
         """Gets the dev_version of this DimensionVO.
 
-        开发环境版本，填写String类型替代Long类型。
+        开发环境版本，ID字符串。
 
         :return: The dev_version of this DimensionVO.
         :rtype: str
@@ -987,7 +987,7 @@ class DimensionVO:
     def dev_version(self, dev_version):
         """Sets the dev_version of this DimensionVO.
 
-        开发环境版本，填写String类型替代Long类型。
+        开发环境版本，ID字符串。
 
         :param dev_version: The dev_version of this DimensionVO.
         :type dev_version: str
@@ -998,7 +998,7 @@ class DimensionVO:
     def prod_version(self):
         """Gets the prod_version of this DimensionVO.
 
-        生产环境版本，填写String类型替代Long类型。
+        生产环境版本，ID字符串。
 
         :return: The prod_version of this DimensionVO.
         :rtype: str
@@ -1009,7 +1009,7 @@ class DimensionVO:
     def prod_version(self, prod_version):
         """Sets the prod_version of this DimensionVO.
 
-        生产环境版本，填写String类型替代Long类型。
+        生产环境版本，ID字符串。
 
         :param prod_version: The prod_version of this DimensionVO.
         :type prod_version: str

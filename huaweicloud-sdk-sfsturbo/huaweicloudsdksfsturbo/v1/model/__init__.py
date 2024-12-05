@@ -84,6 +84,9 @@ from huaweicloudsdksfsturbo.v1.model.list_perm_rules_request import ListPermRule
 from huaweicloudsdksfsturbo.v1.model.list_perm_rules_response import ListPermRulesResponse
 from huaweicloudsdksfsturbo.v1.model.list_shared_tags_request import ListSharedTagsRequest
 from huaweicloudsdksfsturbo.v1.model.list_shared_tags_response import ListSharedTagsResponse
+from huaweicloudsdksfsturbo.v1.model.list_shares_by_tag_request import ListSharesByTagRequest
+from huaweicloudsdksfsturbo.v1.model.list_shares_by_tag_request_body import ListSharesByTagRequestBody
+from huaweicloudsdksfsturbo.v1.model.list_shares_by_tag_response import ListSharesByTagResponse
 from huaweicloudsdksfsturbo.v1.model.list_shares_request import ListSharesRequest
 from huaweicloudsdksfsturbo.v1.model.list_shares_response import ListSharesResponse
 from huaweicloudsdksfsturbo.v1.model.metadata import Metadata

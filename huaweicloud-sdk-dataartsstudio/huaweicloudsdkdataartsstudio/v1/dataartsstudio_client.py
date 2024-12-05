@@ -583,6 +583,219 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def batch_create_design_table_models_from_logic(self, request):
+        """转换逻辑模型为物理模型
+
+        转换逻辑模型为物理模型，转换成功则显示转换后的目标模型信息。
+        异常：目标模型信息的“id”等属性为null时，则需要调用《获取操作结果》接口查看具体报错信息：GET https://{endpoint}/v1/{project_id}/design/operation-results?operation_type&#x3D;TRANSFORM_LOGIC_MODEL&amp;operation_id&#x3D;{model_id}，其中{model_id}为本接口的路径参数。
+        约束与限制：
+          1、target_model_id与target_model_name不对应时，target_model_id优先级高于target_model_name。
+          2、target_model_id与dw_type不对应时，会找不到模型，提示：模型不存在。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchCreateDesignTableModelsFromLogic
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.BatchCreateDesignTableModelsFromLogicRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BatchCreateDesignTableModelsFromLogicResponse`
+        """
+        http_info = self._batch_create_design_table_models_from_logic_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_create_design_table_models_from_logic_invoker(self, request):
+        http_info = self._batch_create_design_table_models_from_logic_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_create_design_table_models_from_logic_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/design/workspaces/{model_id}/transform",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateDesignTableModelsFromLogicResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'model_id' in local_var_params:
+            path_params['model_id'] = local_var_params['model_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_create_security_permission_set_members(self, request):
+        """批量添加权限集成员
+
+        批量添加权限集成员
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchCreateSecurityPermissionSetMembers
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.BatchCreateSecurityPermissionSetMembersRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BatchCreateSecurityPermissionSetMembersResponse`
+        """
+        http_info = self._batch_create_security_permission_set_members_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_create_security_permission_set_members_invoker(self, request):
+        http_info = self._batch_create_security_permission_set_members_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_create_security_permission_set_members_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/security/permission-sets/{permission_set_id}/members/batch-create",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateSecurityPermissionSetMembersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'permission_set_id' in local_var_params:
+            path_params['permission_set_id'] = local_var_params['permission_set_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_create_security_permission_set_permissions(self, request):
+        """批量添加权限集的权限
+
+        批量添加权限集的权限
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchCreateSecurityPermissionSetPermissions
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.BatchCreateSecurityPermissionSetPermissionsRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BatchCreateSecurityPermissionSetPermissionsResponse`
+        """
+        http_info = self._batch_create_security_permission_set_permissions_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_create_security_permission_set_permissions_invoker(self, request):
+        http_info = self._batch_create_security_permission_set_permissions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_create_security_permission_set_permissions_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/security/permission-sets/{permission_set_id}/permissions/batch-append",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateSecurityPermissionSetPermissionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'permission_set_id' in local_var_params:
+            path_params['permission_set_id'] = local_var_params['permission_set_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_delete_security_data_classification_rule(self, request):
         """批量删除识别规则接口
 
@@ -1730,6 +1943,76 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def compare_design_versions(self, request):
+        """比较版本信息
+
+        通过两个版本id，比较两者差异。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CompareDesignVersions
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.CompareDesignVersionsRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CompareDesignVersionsResponse`
+        """
+        http_info = self._compare_design_versions_http_info(request)
+        return self._call_api(**http_info)
+
+    def compare_design_versions_invoker(self, request):
+        http_info = self._compare_design_versions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _compare_design_versions_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/design/versions/compare",
+            "request_type": request.__class__.__name__,
+            "response_type": "CompareDesignVersionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'ids' in local_var_params:
+            query_params.append(('ids', local_var_params['ids']))
+            collection_formats['ids'] = 'csv'
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def confirm_approvals(self, request):
         """审批单处理
 
@@ -2651,6 +2934,213 @@ class DataArtsStudioClient(Client):
             "resource_path": "/v2/{project_id}/design/atomic-indexs",
             "request_type": request.__class__.__name__,
             "response_type": "CreateDesignAtomicIndexResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_design_compound_metric(self, request):
+        """新建复合指标
+
+        根据参数，新建复合指标。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateDesignCompoundMetric
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateDesignCompoundMetricRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateDesignCompoundMetricResponse`
+        """
+        http_info = self._create_design_compound_metric_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_design_compound_metric_invoker(self, request):
+        http_info = self._create_design_compound_metric_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_design_compound_metric_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/design/compound-metrics",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDesignCompoundMetricResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_design_derivative_index(self, request):
+        """新建衍生指标
+
+        根据参数，新建衍生指标指标。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateDesignDerivativeIndex
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateDesignDerivativeIndexRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateDesignDerivativeIndexResponse`
+        """
+        http_info = self._create_design_derivative_index_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_design_derivative_index_invoker(self, request):
+        http_info = self._create_design_derivative_index_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_design_derivative_index_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/design/derivative-indexs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDesignDerivativeIndexResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_design_dimension(self, request):
+        """新建维度
+
+        根据参数新建维度。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateDesignDimension
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateDesignDimensionRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateDesignDimensionResponse`
+        """
+        http_info = self._create_design_dimension_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_design_dimension_invoker(self, request):
+        http_info = self._create_design_dimension_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_design_dimension_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/design/dimensions",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDesignDimensionResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -5099,6 +5589,351 @@ class DataArtsStudioClient(Client):
             "resource_path": "/v2/{project_id}/design/atomic-indexs",
             "request_type": request.__class__.__name__,
             "response_type": "DeleteDesignAtomicIndexResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_design_compound_metric(self, request):
+        """删除复合指标
+
+        根据ID集合删除复合指标。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteDesignCompoundMetric
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.DeleteDesignCompoundMetricRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteDesignCompoundMetricResponse`
+        """
+        http_info = self._delete_design_compound_metric_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_design_compound_metric_invoker(self, request):
+        http_info = self._delete_design_compound_metric_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_design_compound_metric_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/design/compound-metrics",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDesignCompoundMetricResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_design_derivative_index(self, request):
+        """删除衍生指标
+
+        根据衍生指标ID，删除衍生指标。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteDesignDerivativeIndex
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.DeleteDesignDerivativeIndexRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteDesignDerivativeIndexResponse`
+        """
+        http_info = self._delete_design_derivative_index_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_design_derivative_index_invoker(self, request):
+        http_info = self._delete_design_derivative_index_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_design_derivative_index_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/design/derivative-indexs",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDesignDerivativeIndexResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_design_dimension(self, request):
+        """删除维度
+
+        根据传入的维度ID，删除维度。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteDesignDimension
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.DeleteDesignDimensionRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteDesignDimensionResponse`
+        """
+        http_info = self._delete_design_dimension_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_design_dimension_invoker(self, request):
+        http_info = self._delete_design_dimension_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_design_dimension_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/design/dimensions",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDesignDimensionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_design_dimension_logic_table(self, request):
+        """删除维度表
+
+        根据维度表ID，删除维度表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteDesignDimensionLogicTable
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.DeleteDesignDimensionLogicTableRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteDesignDimensionLogicTableResponse`
+        """
+        http_info = self._delete_design_dimension_logic_table_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_design_dimension_logic_table_invoker(self, request):
+        http_info = self._delete_design_dimension_logic_table_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_design_dimension_logic_table_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/design/dimension-logic-tables",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDesignDimensionLogicTableResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_design_fact_logic_table(self, request):
+        """删除事实表
+
+        根据ID集合删除事实表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteDesignFactLogicTable
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.DeleteDesignFactLogicTableRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteDesignFactLogicTableResponse`
+        """
+        http_info = self._delete_design_fact_logic_table_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_design_fact_logic_table_invoker(self, request):
+        http_info = self._delete_design_fact_logic_table_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_design_fact_logic_table_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/design/fact-logic-tables",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDesignFactLogicTableResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -16672,6 +17507,81 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def show_design_operation_result(self, request):
+        """获取操作结果
+
+        获取批量操作的结果，如逻辑模型转物理模型和逆向数据库操作。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowDesignOperationResult
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowDesignOperationResultRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowDesignOperationResultResponse`
+        """
+        http_info = self._show_design_operation_result_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_design_operation_result_invoker(self, request):
+        http_info = self._show_design_operation_result_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_design_operation_result_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/design/operation-results",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDesignOperationResultResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'operation_type' in local_var_params:
+            query_params.append(('operation_type', local_var_params['operation_type']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'operation_id' in local_var_params:
+            query_params.append(('operation_id', local_var_params['operation_id']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_dimension_by_id(self, request):
         """查看维度详情
 
@@ -19963,6 +20873,213 @@ class DataArtsStudioClient(Client):
             "resource_path": "/v2/{project_id}/design/atomic-indexs",
             "request_type": request.__class__.__name__,
             "response_type": "UpdateDesignAtomicIndexResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_design_compound_metric(self, request):
+        """更新复合指标
+
+        根据参数，更新复合指标。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateDesignCompoundMetric
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.UpdateDesignCompoundMetricRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateDesignCompoundMetricResponse`
+        """
+        http_info = self._update_design_compound_metric_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_design_compound_metric_invoker(self, request):
+        http_info = self._update_design_compound_metric_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_design_compound_metric_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/design/compound-metrics",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDesignCompoundMetricResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_design_derivative_index(self, request):
+        """更新衍生指标
+
+        根据传入参数，更新衍生指标。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateDesignDerivativeIndex
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.UpdateDesignDerivativeIndexRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateDesignDerivativeIndexResponse`
+        """
+        http_info = self._update_design_derivative_index_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_design_derivative_index_invoker(self, request):
+        http_info = self._update_design_derivative_index_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_design_derivative_index_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/design/derivative-indexs",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDesignDerivativeIndexResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_design_dimension(self, request):
+        """更新维度
+
+        根据参数，更新维度信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateDesignDimension
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.UpdateDesignDimensionRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateDesignDimensionResponse`
+        """
+        http_info = self._update_design_dimension_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_design_dimension_invoker(self, request):
+        http_info = self._update_design_dimension_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_design_dimension_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/design/dimensions",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDesignDimensionResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

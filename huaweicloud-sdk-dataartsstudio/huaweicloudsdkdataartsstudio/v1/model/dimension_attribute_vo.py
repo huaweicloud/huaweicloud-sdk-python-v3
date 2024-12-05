@@ -75,11 +75,11 @@ class DimensionAttributeVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码，填写String类型替代Long类型。
+        :param id: 编码，ID字符串。
         :type id: str
-        :param dimension_id: 维度ID，只读，填写String类型替代Long类型。
+        :param dimension_id: 维度ID，只读，ID字符串。
         :type dimension_id: str
-        :param code_table_field_id: 码表属性ID，填写String类型替代Long类型。
+        :param code_table_field_id: 码表属性ID，ID字符串。
         :type code_table_field_id: str
         :param name_en: 字段名。
         :type name_en: str
@@ -105,7 +105,7 @@ class DimensionAttributeVO:
         :type ordinal: int
         :param not_null: 是否不为空。
         :type not_null: bool
-        :param stand_row_id: 关联的数据标准的ID，填写String类型替代Long类型。
+        :param stand_row_id: 关联的数据标准的ID，ID字符串。
         :type stand_row_id: str
         :param stand_row_name: 关联的数据标准名称，只读。
         :type stand_row_name: str
@@ -201,7 +201,7 @@ class DimensionAttributeVO:
     def id(self):
         """Gets the id of this DimensionAttributeVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :return: The id of this DimensionAttributeVO.
         :rtype: str
@@ -212,7 +212,7 @@ class DimensionAttributeVO:
     def id(self, id):
         """Sets the id of this DimensionAttributeVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :param id: The id of this DimensionAttributeVO.
         :type id: str
@@ -223,7 +223,7 @@ class DimensionAttributeVO:
     def dimension_id(self):
         """Gets the dimension_id of this DimensionAttributeVO.
 
-        维度ID，只读，填写String类型替代Long类型。
+        维度ID，只读，ID字符串。
 
         :return: The dimension_id of this DimensionAttributeVO.
         :rtype: str
@@ -234,7 +234,7 @@ class DimensionAttributeVO:
     def dimension_id(self, dimension_id):
         """Sets the dimension_id of this DimensionAttributeVO.
 
-        维度ID，只读，填写String类型替代Long类型。
+        维度ID，只读，ID字符串。
 
         :param dimension_id: The dimension_id of this DimensionAttributeVO.
         :type dimension_id: str
@@ -245,7 +245,7 @@ class DimensionAttributeVO:
     def code_table_field_id(self):
         """Gets the code_table_field_id of this DimensionAttributeVO.
 
-        码表属性ID，填写String类型替代Long类型。
+        码表属性ID，ID字符串。
 
         :return: The code_table_field_id of this DimensionAttributeVO.
         :rtype: str
@@ -256,7 +256,7 @@ class DimensionAttributeVO:
     def code_table_field_id(self, code_table_field_id):
         """Sets the code_table_field_id of this DimensionAttributeVO.
 
-        码表属性ID，填写String类型替代Long类型。
+        码表属性ID，ID字符串。
 
         :param code_table_field_id: The code_table_field_id of this DimensionAttributeVO.
         :type code_table_field_id: str
@@ -527,7 +527,7 @@ class DimensionAttributeVO:
     def stand_row_id(self):
         """Gets the stand_row_id of this DimensionAttributeVO.
 
-        关联的数据标准的ID，填写String类型替代Long类型。
+        关联的数据标准的ID，ID字符串。
 
         :return: The stand_row_id of this DimensionAttributeVO.
         :rtype: str
@@ -538,7 +538,7 @@ class DimensionAttributeVO:
     def stand_row_id(self, stand_row_id):
         """Sets the stand_row_id of this DimensionAttributeVO.
 
-        关联的数据标准的ID，填写String类型替代Long类型。
+        关联的数据标准的ID，ID字符串。
 
         :param stand_row_id: The stand_row_id of this DimensionAttributeVO.
         :type stand_row_id: str

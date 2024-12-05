@@ -59,7 +59,7 @@ class WorkspaceVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编号，填写String类型替代Long类型。
+        :param id: 编号，ID字符串。
         :type id: str
         :param name: 工作区名字。
         :type name: str
@@ -148,7 +148,7 @@ class WorkspaceVO:
     def id(self):
         """Gets the id of this WorkspaceVO.
 
-        编号，填写String类型替代Long类型。
+        编号，ID字符串。
 
         :return: The id of this WorkspaceVO.
         :rtype: str
@@ -159,7 +159,7 @@ class WorkspaceVO:
     def id(self, id):
         """Sets the id of this WorkspaceVO.
 
-        编号，填写String类型替代Long类型。
+        编号，ID字符串。
 
         :param id: The id of this WorkspaceVO.
         :type id: str

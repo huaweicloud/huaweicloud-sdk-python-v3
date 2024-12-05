@@ -79,9 +79,9 @@ class ListDimensionLogicTablesRequest:
         :type sync_status: str
         :param sync_key: 同步任务类型枚举。 枚举值：   - BUSINESS_ASSET: 同步业务资产   - DATA_QUALITY: 创建质量作业   - TECHNICAL_ASSET: 同步技术资产   - META_DATA_LINK: 资产关联   - PHYSICAL_TABLE: 创建表（生产环境）   - DEV_PHYSICAL_TABLE: 创建表（开发环境）   - DLF_TASK: 创建数据开发作业   - MATERIALIZATION: 数值落库（码表）   - PUBLISH_TO_DLM: 发布数据服务API   - SUMMARY_STATUS: 整体状态 
         :type sync_key: list[str]
-        :param l2_id: 主题域l2的ID，填写String类型替代Long类型。
+        :param l2_id: 主题域l2的ID，ID字符串。
         :type l2_id: str
-        :param dimension_id: 依据维度ID查维度属性，填写String类型替代Long类型。
+        :param dimension_id: 依据维度ID查维度属性，ID字符串。
         :type dimension_id: str
         :param begin_time: 时间过滤左边界，与end_time一起使用，只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type begin_time: str
@@ -354,7 +354,7 @@ class ListDimensionLogicTablesRequest:
     def l2_id(self):
         """Gets the l2_id of this ListDimensionLogicTablesRequest.
 
-        主题域l2的ID，填写String类型替代Long类型。
+        主题域l2的ID，ID字符串。
 
         :return: The l2_id of this ListDimensionLogicTablesRequest.
         :rtype: str
@@ -365,7 +365,7 @@ class ListDimensionLogicTablesRequest:
     def l2_id(self, l2_id):
         """Sets the l2_id of this ListDimensionLogicTablesRequest.
 
-        主题域l2的ID，填写String类型替代Long类型。
+        主题域l2的ID，ID字符串。
 
         :param l2_id: The l2_id of this ListDimensionLogicTablesRequest.
         :type l2_id: str
@@ -376,7 +376,7 @@ class ListDimensionLogicTablesRequest:
     def dimension_id(self):
         """Gets the dimension_id of this ListDimensionLogicTablesRequest.
 
-        依据维度ID查维度属性，填写String类型替代Long类型。
+        依据维度ID查维度属性，ID字符串。
 
         :return: The dimension_id of this ListDimensionLogicTablesRequest.
         :rtype: str
@@ -387,7 +387,7 @@ class ListDimensionLogicTablesRequest:
     def dimension_id(self, dimension_id):
         """Sets the dimension_id of this ListDimensionLogicTablesRequest.
 
-        依据维度ID查维度属性，填写String类型替代Long类型。
+        依据维度ID查维度属性，ID字符串。
 
         :param dimension_id: The dimension_id of this ListDimensionLogicTablesRequest.
         :type dimension_id: str

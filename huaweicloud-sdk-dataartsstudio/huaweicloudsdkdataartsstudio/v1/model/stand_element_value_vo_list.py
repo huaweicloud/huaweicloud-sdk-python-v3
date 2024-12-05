@@ -55,13 +55,13 @@ class StandElementValueVOList:
 
         :param values: 属性信息。
         :type values: list[:class:`huaweicloudsdkdataartsstudio.v1.StandElementValueVO`]
-        :param id: 数据标准的ID，填写String类型替代Long类型。
+        :param id: 数据标准的ID，ID字符串。
         :type id: str
-        :param directory_id: 标准所属目录，填写String类型替代Long类型。
+        :param directory_id: 标准所属目录，ID字符串。
         :type directory_id: str
         :param directory_path: 目录树。
         :type directory_path: str
-        :param row_id: 标准行的ID，填写String类型替代Long类型。
+        :param row_id: 标准行的ID，ID字符串。
         :type row_id: str
         :param status: 
         :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
@@ -149,7 +149,7 @@ class StandElementValueVOList:
     def id(self):
         """Gets the id of this StandElementValueVOList.
 
-        数据标准的ID，填写String类型替代Long类型。
+        数据标准的ID，ID字符串。
 
         :return: The id of this StandElementValueVOList.
         :rtype: str
@@ -160,7 +160,7 @@ class StandElementValueVOList:
     def id(self, id):
         """Sets the id of this StandElementValueVOList.
 
-        数据标准的ID，填写String类型替代Long类型。
+        数据标准的ID，ID字符串。
 
         :param id: The id of this StandElementValueVOList.
         :type id: str
@@ -171,7 +171,7 @@ class StandElementValueVOList:
     def directory_id(self):
         """Gets the directory_id of this StandElementValueVOList.
 
-        标准所属目录，填写String类型替代Long类型。
+        标准所属目录，ID字符串。
 
         :return: The directory_id of this StandElementValueVOList.
         :rtype: str
@@ -182,7 +182,7 @@ class StandElementValueVOList:
     def directory_id(self, directory_id):
         """Sets the directory_id of this StandElementValueVOList.
 
-        标准所属目录，填写String类型替代Long类型。
+        标准所属目录，ID字符串。
 
         :param directory_id: The directory_id of this StandElementValueVOList.
         :type directory_id: str
@@ -215,7 +215,7 @@ class StandElementValueVOList:
     def row_id(self):
         """Gets the row_id of this StandElementValueVOList.
 
-        标准行的ID，填写String类型替代Long类型。
+        标准行的ID，ID字符串。
 
         :return: The row_id of this StandElementValueVOList.
         :rtype: str
@@ -226,7 +226,7 @@ class StandElementValueVOList:
     def row_id(self, row_id):
         """Sets the row_id of this StandElementValueVOList.
 
-        标准行的ID，填写String类型替代Long类型。
+        标准行的ID，ID字符串。
 
         :param row_id: The row_id of this StandElementValueVOList.
         :type row_id: str

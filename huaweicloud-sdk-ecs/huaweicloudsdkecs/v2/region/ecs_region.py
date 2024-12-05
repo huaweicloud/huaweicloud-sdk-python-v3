@@ -64,6 +64,8 @@ class EcsRegion:
                         "https://ecs.af-north-1.myhuaweicloud.com")
     RU_MOSCOW_1 = Region("ru-moscow-1",
                         "https://ecs.ru-moscow-1.myhuaweicloud.com")
+    AP_SOUTHEAST_5 = Region("ap-southeast-5",
+                        "https://ecs.ap-southeast-5.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-1": CN_NORTH_1,
@@ -95,6 +97,7 @@ class EcsRegion:
         "my-kualalumpur-1": MY_KUALALUMPUR_1,
         "af-north-1": AF_NORTH_1,
         "ru-moscow-1": RU_MOSCOW_1,
+        "ap-southeast-5": AP_SOUTHEAST_5,
     }
 
     @classmethod

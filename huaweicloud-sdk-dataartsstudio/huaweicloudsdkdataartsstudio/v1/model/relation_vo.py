@@ -57,11 +57,11 @@ class RelationVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码，填写String类型替代Long类型。
+        :param id: 编码，ID字符串。
         :type id: str
-        :param source_table_id: 源表ID，填写String类型替代Long类型。
+        :param source_table_id: 源表ID，ID字符串。
         :type source_table_id: str
-        :param target_table_id: 目标表ID，填写String类型替代Long类型。
+        :param target_table_id: 目标表ID，ID字符串。
         :type target_table_id: str
         :param name: 关系名称。
         :type name: str
@@ -142,7 +142,7 @@ class RelationVO:
     def id(self):
         """Gets the id of this RelationVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :return: The id of this RelationVO.
         :rtype: str
@@ -153,7 +153,7 @@ class RelationVO:
     def id(self, id):
         """Sets the id of this RelationVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :param id: The id of this RelationVO.
         :type id: str
@@ -164,7 +164,7 @@ class RelationVO:
     def source_table_id(self):
         """Gets the source_table_id of this RelationVO.
 
-        源表ID，填写String类型替代Long类型。
+        源表ID，ID字符串。
 
         :return: The source_table_id of this RelationVO.
         :rtype: str
@@ -175,7 +175,7 @@ class RelationVO:
     def source_table_id(self, source_table_id):
         """Sets the source_table_id of this RelationVO.
 
-        源表ID，填写String类型替代Long类型。
+        源表ID，ID字符串。
 
         :param source_table_id: The source_table_id of this RelationVO.
         :type source_table_id: str
@@ -186,7 +186,7 @@ class RelationVO:
     def target_table_id(self):
         """Gets the target_table_id of this RelationVO.
 
-        目标表ID，填写String类型替代Long类型。
+        目标表ID，ID字符串。
 
         :return: The target_table_id of this RelationVO.
         :rtype: str
@@ -197,7 +197,7 @@ class RelationVO:
     def target_table_id(self, target_table_id):
         """Sets the target_table_id of this RelationVO.
 
-        目标表ID，填写String类型替代Long类型。
+        目标表ID，ID字符串。
 
         :param target_table_id: The target_table_id of this RelationVO.
         :type target_table_id: str

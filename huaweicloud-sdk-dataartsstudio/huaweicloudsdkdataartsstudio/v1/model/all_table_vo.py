@@ -127,7 +127,7 @@ class AllTableVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: l1的ID，填写String类型替代Long类型。
+        :param id: l1的ID，ID字符串。
         :type id: str
         :param name: l1名称。
         :type name: str
@@ -179,11 +179,11 @@ class AllTableVO:
         :type l2: str
         :param l3: 业务对象中文名，只读，创建和更新时无需填写。
         :type l3: str
-        :param l1_id: 主题域分组ID，只读，填写String类型替代Long类型。
+        :param l1_id: 主题域分组ID，只读，ID字符串。
         :type l1_id: str
         :param l2_id: 主题域ID，只读，创建和更新时无需填写。
         :type l2_id: str
-        :param l3_id: 业务对象ID，只读，填写String类型替代Long类型。
+        :param l3_id: 业务对象ID，只读，ID字符串。
         :type l3_id: str
         :param new_biz: 
         :type new_biz: :class:`huaweicloudsdkdataartsstudio.v1.BizVersionManageVO`
@@ -207,7 +207,7 @@ class AllTableVO:
         :type publish_to_dlm: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         :param summary_status: 
         :type summary_status: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
-        :param standard_count: 标准数量，只读，填写String类型替代Long类型。
+        :param standard_count: 标准数量，只读，ID字符串。
         :type standard_count: str
         :param alias: 别名。
         :type alias: str
@@ -217,9 +217,9 @@ class AllTableVO:
         :type workspace_id: str
         :param workspace_name: 工作空间名称。
         :type workspace_name: str
-        :param dev_version: 开发环境版本，填写String类型替代Long类型。
+        :param dev_version: 开发环境版本，ID字符串。
         :type dev_version: str
-        :param prod_version: 生产环境版本，填写String类型替代Long类型。
+        :param prod_version: 生产环境版本，ID字符串。
         :type prod_version: str
         :param dev_version_name: 开发环境版本名称
         :type dev_version_name: str
@@ -388,7 +388,7 @@ class AllTableVO:
     def id(self):
         """Gets the id of this AllTableVO.
 
-        l1的ID，填写String类型替代Long类型。
+        l1的ID，ID字符串。
 
         :return: The id of this AllTableVO.
         :rtype: str
@@ -399,7 +399,7 @@ class AllTableVO:
     def id(self, id):
         """Sets the id of this AllTableVO.
 
-        l1的ID，填写String类型替代Long类型。
+        l1的ID，ID字符串。
 
         :param id: The id of this AllTableVO.
         :type id: str
@@ -952,7 +952,7 @@ class AllTableVO:
     def l1_id(self):
         """Gets the l1_id of this AllTableVO.
 
-        主题域分组ID，只读，填写String类型替代Long类型。
+        主题域分组ID，只读，ID字符串。
 
         :return: The l1_id of this AllTableVO.
         :rtype: str
@@ -963,7 +963,7 @@ class AllTableVO:
     def l1_id(self, l1_id):
         """Sets the l1_id of this AllTableVO.
 
-        主题域分组ID，只读，填写String类型替代Long类型。
+        主题域分组ID，只读，ID字符串。
 
         :param l1_id: The l1_id of this AllTableVO.
         :type l1_id: str
@@ -996,7 +996,7 @@ class AllTableVO:
     def l3_id(self):
         """Gets the l3_id of this AllTableVO.
 
-        业务对象ID，只读，填写String类型替代Long类型。
+        业务对象ID，只读，ID字符串。
 
         :return: The l3_id of this AllTableVO.
         :rtype: str
@@ -1007,7 +1007,7 @@ class AllTableVO:
     def l3_id(self, l3_id):
         """Sets the l3_id of this AllTableVO.
 
-        业务对象ID，只读，填写String类型替代Long类型。
+        业务对象ID，只读，ID字符串。
 
         :param l3_id: The l3_id of this AllTableVO.
         :type l3_id: str
@@ -1216,7 +1216,7 @@ class AllTableVO:
     def standard_count(self):
         """Gets the standard_count of this AllTableVO.
 
-        标准数量，只读，填写String类型替代Long类型。
+        标准数量，只读，ID字符串。
 
         :return: The standard_count of this AllTableVO.
         :rtype: str
@@ -1227,7 +1227,7 @@ class AllTableVO:
     def standard_count(self, standard_count):
         """Sets the standard_count of this AllTableVO.
 
-        标准数量，只读，填写String类型替代Long类型。
+        标准数量，只读，ID字符串。
 
         :param standard_count: The standard_count of this AllTableVO.
         :type standard_count: str
@@ -1326,7 +1326,7 @@ class AllTableVO:
     def dev_version(self):
         """Gets the dev_version of this AllTableVO.
 
-        开发环境版本，填写String类型替代Long类型。
+        开发环境版本，ID字符串。
 
         :return: The dev_version of this AllTableVO.
         :rtype: str
@@ -1337,7 +1337,7 @@ class AllTableVO:
     def dev_version(self, dev_version):
         """Sets the dev_version of this AllTableVO.
 
-        开发环境版本，填写String类型替代Long类型。
+        开发环境版本，ID字符串。
 
         :param dev_version: The dev_version of this AllTableVO.
         :type dev_version: str
@@ -1348,7 +1348,7 @@ class AllTableVO:
     def prod_version(self):
         """Gets the prod_version of this AllTableVO.
 
-        生产环境版本，填写String类型替代Long类型。
+        生产环境版本，ID字符串。
 
         :return: The prod_version of this AllTableVO.
         :rtype: str
@@ -1359,7 +1359,7 @@ class AllTableVO:
     def prod_version(self, prod_version):
         """Sets the prod_version of this AllTableVO.
 
-        生产环境版本，填写String类型替代Long类型。
+        生产环境版本，ID字符串。
 
         :param prod_version: The prod_version of this AllTableVO.
         :type prod_version: str

@@ -22,7 +22,11 @@ class SimDeviceMultiplyVO:
         'online_carrier': 'int',
         'network_switch_policy_id': 'int',
         'policy_name': 'str',
-        'version': 'int'
+        'version': 'int',
+        'iccid_mobile': 'str',
+        'iccid_unicom': 'str',
+        'iccid_telcom': 'str',
+        'order_id': 'int'
     }
 
     attribute_map = {
@@ -31,10 +35,14 @@ class SimDeviceMultiplyVO:
         'online_carrier': 'online_carrier',
         'network_switch_policy_id': 'network_switch_policy_id',
         'policy_name': 'policy_name',
-        'version': 'version'
+        'version': 'version',
+        'iccid_mobile': 'iccid_mobile',
+        'iccid_unicom': 'iccid_unicom',
+        'iccid_telcom': 'iccid_telcom',
+        'order_id': 'order_id'
     }
 
-    def __init__(self, sim_card_id=None, cid=None, online_carrier=None, network_switch_policy_id=None, policy_name=None, version=None):
+    def __init__(self, sim_card_id=None, cid=None, online_carrier=None, network_switch_policy_id=None, policy_name=None, version=None, iccid_mobile=None, iccid_unicom=None, iccid_telcom=None, order_id=None):
         """SimDeviceMultiplyVO
 
         The model defined in huaweicloud sdk
@@ -51,6 +59,14 @@ class SimDeviceMultiplyVO:
         :type policy_name: str
         :param version: 版本信息
         :type version: int
+        :param iccid_mobile: 移动网络iccid
+        :type iccid_mobile: str
+        :param iccid_unicom: 联通网络iccid
+        :type iccid_unicom: str
+        :param iccid_telcom: 电信网络iccid
+        :type iccid_telcom: str
+        :param order_id: 批次号
+        :type order_id: int
         """
         
         
@@ -61,6 +77,10 @@ class SimDeviceMultiplyVO:
         self._network_switch_policy_id = None
         self._policy_name = None
         self._version = None
+        self._iccid_mobile = None
+        self._iccid_unicom = None
+        self._iccid_telcom = None
+        self._order_id = None
         self.discriminator = None
 
         if sim_card_id is not None:
@@ -75,6 +95,14 @@ class SimDeviceMultiplyVO:
             self.policy_name = policy_name
         if version is not None:
             self.version = version
+        if iccid_mobile is not None:
+            self.iccid_mobile = iccid_mobile
+        if iccid_unicom is not None:
+            self.iccid_unicom = iccid_unicom
+        if iccid_telcom is not None:
+            self.iccid_telcom = iccid_telcom
+        if order_id is not None:
+            self.order_id = order_id
 
     @property
     def sim_card_id(self):
@@ -207,6 +235,94 @@ class SimDeviceMultiplyVO:
         :type version: int
         """
         self._version = version
+
+    @property
+    def iccid_mobile(self):
+        """Gets the iccid_mobile of this SimDeviceMultiplyVO.
+
+        移动网络iccid
+
+        :return: The iccid_mobile of this SimDeviceMultiplyVO.
+        :rtype: str
+        """
+        return self._iccid_mobile
+
+    @iccid_mobile.setter
+    def iccid_mobile(self, iccid_mobile):
+        """Sets the iccid_mobile of this SimDeviceMultiplyVO.
+
+        移动网络iccid
+
+        :param iccid_mobile: The iccid_mobile of this SimDeviceMultiplyVO.
+        :type iccid_mobile: str
+        """
+        self._iccid_mobile = iccid_mobile
+
+    @property
+    def iccid_unicom(self):
+        """Gets the iccid_unicom of this SimDeviceMultiplyVO.
+
+        联通网络iccid
+
+        :return: The iccid_unicom of this SimDeviceMultiplyVO.
+        :rtype: str
+        """
+        return self._iccid_unicom
+
+    @iccid_unicom.setter
+    def iccid_unicom(self, iccid_unicom):
+        """Sets the iccid_unicom of this SimDeviceMultiplyVO.
+
+        联通网络iccid
+
+        :param iccid_unicom: The iccid_unicom of this SimDeviceMultiplyVO.
+        :type iccid_unicom: str
+        """
+        self._iccid_unicom = iccid_unicom
+
+    @property
+    def iccid_telcom(self):
+        """Gets the iccid_telcom of this SimDeviceMultiplyVO.
+
+        电信网络iccid
+
+        :return: The iccid_telcom of this SimDeviceMultiplyVO.
+        :rtype: str
+        """
+        return self._iccid_telcom
+
+    @iccid_telcom.setter
+    def iccid_telcom(self, iccid_telcom):
+        """Sets the iccid_telcom of this SimDeviceMultiplyVO.
+
+        电信网络iccid
+
+        :param iccid_telcom: The iccid_telcom of this SimDeviceMultiplyVO.
+        :type iccid_telcom: str
+        """
+        self._iccid_telcom = iccid_telcom
+
+    @property
+    def order_id(self):
+        """Gets the order_id of this SimDeviceMultiplyVO.
+
+        批次号
+
+        :return: The order_id of this SimDeviceMultiplyVO.
+        :rtype: int
+        """
+        return self._order_id
+
+    @order_id.setter
+    def order_id(self, order_id):
+        """Sets the order_id of this SimDeviceMultiplyVO.
+
+        批次号
+
+        :param order_id: The order_id of this SimDeviceMultiplyVO.
+        :type order_id: int
+        """
+        self._order_id = order_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

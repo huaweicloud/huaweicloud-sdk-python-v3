@@ -175,11 +175,11 @@ class TableModelUpdateVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码，填写String类型替代Long类型。
+        :param id: 编码，ID字符串。
         :type id: str
-        :param model_id: 所属关系建模的模型ID，填写String类型替代Long类型。
+        :param model_id: 所属关系建模的模型ID，ID字符串。
         :type model_id: str
-        :param parent_table_id: 父表ID，填写String类型替代Long类型。
+        :param parent_table_id: 父表ID，ID字符串。
         :type parent_table_id: str
         :param parent_table_name: 父表名称，只读。
         :type parent_table_name: str
@@ -223,9 +223,9 @@ class TableModelUpdateVO:
         :type description: str
         :param status: 
         :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
-        :param logic_tb_id: 逻辑实体的ID，填写String类型替代Long类型。
+        :param logic_tb_id: 逻辑实体的ID，ID字符串。
         :type logic_tb_id: str
-        :param biz_catalog_id: 归属的业务分类的ID，填写String类型替代Long类型。
+        :param biz_catalog_id: 归属的业务分类的ID，ID字符串。
         :type biz_catalog_id: str
         :param catalog_path: 归属的业务分类的路径，格式： {\&quot;l1Id\&quot;:\&quot;958408897973161984\&quot;,\&quot;l2Id\&quot;:\&quot;958408897973161985\&quot;,\&quot;l3Id\&quot;:\&quot;958408897973161986\&quot;}。
         :type catalog_path: str
@@ -259,11 +259,11 @@ class TableModelUpdateVO:
         :type l2: str
         :param l3: 业务对象中文名，只读，创建和更新时无需填写。
         :type l3: str
-        :param l1_id: 主题域分组ID，只读，填写String类型替代Long类型。
+        :param l1_id: 主题域分组ID，只读，ID字符串。
         :type l1_id: str
         :param l2_id: 主题域ID，只读，创建和更新时无需填写。
         :type l2_id: str
-        :param l3_id: 业务对象ID，只读，填写String类型替代Long类型。
+        :param l3_id: 业务对象ID，只读，ID字符串。
         :type l3_id: str
         :param partition_conf: 分区表达式
         :type partition_conf: str
@@ -283,7 +283,7 @@ class TableModelUpdateVO:
         :type dirty_out_suffix: str
         :param quality_owner: 质量责任人。
         :type quality_owner: str
-        :param quality_id: 质量ID，填写String类型替代Long类型。
+        :param quality_id: 质量ID，ID字符串。
         :type quality_id: str
         :param distribute: DISTRIBUTE BY [HASH(column)|REPLICATION]。 枚举值：   - HASH: 对指定的列进行Hash，通过映射，把数据分布到指定DN   - REPLICATION: 表的每一行存在所有数据节点（DN）中，即每个数据节点都有完整的表数据 
         :type distribute: str
@@ -309,9 +309,9 @@ class TableModelUpdateVO:
         :type alias: str
         :param self_defined_fields: 自定义项。
         :type self_defined_fields: list[:class:`huaweicloudsdkdataartsstudio.v1.SelfDefinedFieldVO`]
-        :param dev_version: 开发环境版本，填写String类型替代Long类型。
+        :param dev_version: 开发环境版本，ID字符串。
         :type dev_version: str
-        :param prod_version: 生产环境版本，填写String类型替代Long类型。
+        :param prod_version: 生产环境版本，ID字符串。
         :type prod_version: str
         :param dev_version_name: 开发环境版本名称
         :type dev_version_name: str
@@ -549,7 +549,7 @@ class TableModelUpdateVO:
     def id(self):
         """Gets the id of this TableModelUpdateVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :return: The id of this TableModelUpdateVO.
         :rtype: str
@@ -560,7 +560,7 @@ class TableModelUpdateVO:
     def id(self, id):
         """Sets the id of this TableModelUpdateVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :param id: The id of this TableModelUpdateVO.
         :type id: str
@@ -571,7 +571,7 @@ class TableModelUpdateVO:
     def model_id(self):
         """Gets the model_id of this TableModelUpdateVO.
 
-        所属关系建模的模型ID，填写String类型替代Long类型。
+        所属关系建模的模型ID，ID字符串。
 
         :return: The model_id of this TableModelUpdateVO.
         :rtype: str
@@ -582,7 +582,7 @@ class TableModelUpdateVO:
     def model_id(self, model_id):
         """Sets the model_id of this TableModelUpdateVO.
 
-        所属关系建模的模型ID，填写String类型替代Long类型。
+        所属关系建模的模型ID，ID字符串。
 
         :param model_id: The model_id of this TableModelUpdateVO.
         :type model_id: str
@@ -593,7 +593,7 @@ class TableModelUpdateVO:
     def parent_table_id(self):
         """Gets the parent_table_id of this TableModelUpdateVO.
 
-        父表ID，填写String类型替代Long类型。
+        父表ID，ID字符串。
 
         :return: The parent_table_id of this TableModelUpdateVO.
         :rtype: str
@@ -604,7 +604,7 @@ class TableModelUpdateVO:
     def parent_table_id(self, parent_table_id):
         """Sets the parent_table_id of this TableModelUpdateVO.
 
-        父表ID，填写String类型替代Long类型。
+        父表ID，ID字符串。
 
         :param parent_table_id: The parent_table_id of this TableModelUpdateVO.
         :type parent_table_id: str
@@ -1069,7 +1069,7 @@ class TableModelUpdateVO:
     def logic_tb_id(self):
         """Gets the logic_tb_id of this TableModelUpdateVO.
 
-        逻辑实体的ID，填写String类型替代Long类型。
+        逻辑实体的ID，ID字符串。
 
         :return: The logic_tb_id of this TableModelUpdateVO.
         :rtype: str
@@ -1080,7 +1080,7 @@ class TableModelUpdateVO:
     def logic_tb_id(self, logic_tb_id):
         """Sets the logic_tb_id of this TableModelUpdateVO.
 
-        逻辑实体的ID，填写String类型替代Long类型。
+        逻辑实体的ID，ID字符串。
 
         :param logic_tb_id: The logic_tb_id of this TableModelUpdateVO.
         :type logic_tb_id: str
@@ -1091,7 +1091,7 @@ class TableModelUpdateVO:
     def biz_catalog_id(self):
         """Gets the biz_catalog_id of this TableModelUpdateVO.
 
-        归属的业务分类的ID，填写String类型替代Long类型。
+        归属的业务分类的ID，ID字符串。
 
         :return: The biz_catalog_id of this TableModelUpdateVO.
         :rtype: str
@@ -1102,7 +1102,7 @@ class TableModelUpdateVO:
     def biz_catalog_id(self, biz_catalog_id):
         """Sets the biz_catalog_id of this TableModelUpdateVO.
 
-        归属的业务分类的ID，填写String类型替代Long类型。
+        归属的业务分类的ID，ID字符串。
 
         :param biz_catalog_id: The biz_catalog_id of this TableModelUpdateVO.
         :type biz_catalog_id: str
@@ -1457,7 +1457,7 @@ class TableModelUpdateVO:
     def l1_id(self):
         """Gets the l1_id of this TableModelUpdateVO.
 
-        主题域分组ID，只读，填写String类型替代Long类型。
+        主题域分组ID，只读，ID字符串。
 
         :return: The l1_id of this TableModelUpdateVO.
         :rtype: str
@@ -1468,7 +1468,7 @@ class TableModelUpdateVO:
     def l1_id(self, l1_id):
         """Sets the l1_id of this TableModelUpdateVO.
 
-        主题域分组ID，只读，填写String类型替代Long类型。
+        主题域分组ID，只读，ID字符串。
 
         :param l1_id: The l1_id of this TableModelUpdateVO.
         :type l1_id: str
@@ -1501,7 +1501,7 @@ class TableModelUpdateVO:
     def l3_id(self):
         """Gets the l3_id of this TableModelUpdateVO.
 
-        业务对象ID，只读，填写String类型替代Long类型。
+        业务对象ID，只读，ID字符串。
 
         :return: The l3_id of this TableModelUpdateVO.
         :rtype: str
@@ -1512,7 +1512,7 @@ class TableModelUpdateVO:
     def l3_id(self, l3_id):
         """Sets the l3_id of this TableModelUpdateVO.
 
-        业务对象ID，只读，填写String类型替代Long类型。
+        业务对象ID，只读，ID字符串。
 
         :param l3_id: The l3_id of this TableModelUpdateVO.
         :type l3_id: str
@@ -1721,7 +1721,7 @@ class TableModelUpdateVO:
     def quality_id(self):
         """Gets the quality_id of this TableModelUpdateVO.
 
-        质量ID，填写String类型替代Long类型。
+        质量ID，ID字符串。
 
         :return: The quality_id of this TableModelUpdateVO.
         :rtype: str
@@ -1732,7 +1732,7 @@ class TableModelUpdateVO:
     def quality_id(self, quality_id):
         """Sets the quality_id of this TableModelUpdateVO.
 
-        质量ID，填写String类型替代Long类型。
+        质量ID，ID字符串。
 
         :param quality_id: The quality_id of this TableModelUpdateVO.
         :type quality_id: str
@@ -1979,7 +1979,7 @@ class TableModelUpdateVO:
     def dev_version(self):
         """Gets the dev_version of this TableModelUpdateVO.
 
-        开发环境版本，填写String类型替代Long类型。
+        开发环境版本，ID字符串。
 
         :return: The dev_version of this TableModelUpdateVO.
         :rtype: str
@@ -1990,7 +1990,7 @@ class TableModelUpdateVO:
     def dev_version(self, dev_version):
         """Sets the dev_version of this TableModelUpdateVO.
 
-        开发环境版本，填写String类型替代Long类型。
+        开发环境版本，ID字符串。
 
         :param dev_version: The dev_version of this TableModelUpdateVO.
         :type dev_version: str
@@ -2001,7 +2001,7 @@ class TableModelUpdateVO:
     def prod_version(self):
         """Gets the prod_version of this TableModelUpdateVO.
 
-        生产环境版本，填写String类型替代Long类型。
+        生产环境版本，ID字符串。
 
         :return: The prod_version of this TableModelUpdateVO.
         :rtype: str
@@ -2012,7 +2012,7 @@ class TableModelUpdateVO:
     def prod_version(self, prod_version):
         """Sets the prod_version of this TableModelUpdateVO.
 
-        生产环境版本，填写String类型替代Long类型。
+        生产环境版本，ID字符串。
 
         :param prod_version: The prod_version of this TableModelUpdateVO.
         :type prod_version: str

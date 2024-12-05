@@ -284,6 +284,7 @@ from huaweicloudsdkwaf.v1.model.simple_premium_waf_host import SimplePremiumWafH
 from huaweicloudsdkwaf.v1.model.statistics_timeline_item import StatisticsTimelineItem
 from huaweicloudsdkwaf.v1.model.time_line_item import TimeLineItem
 from huaweicloudsdkwaf.v1.model.timeout_config import TimeoutConfig
+from huaweicloudsdkwaf.v1.model.tms_resource_tag import TmsResourceTag
 from huaweicloudsdkwaf.v1.model.traffic_mark import TrafficMark
 from huaweicloudsdkwaf.v1.model.update_alert_notice_config_request import UpdateAlertNoticeConfigRequest
 from huaweicloudsdkwaf.v1.model.update_alert_notice_config_request_body import UpdateAlertNoticeConfigRequestBody

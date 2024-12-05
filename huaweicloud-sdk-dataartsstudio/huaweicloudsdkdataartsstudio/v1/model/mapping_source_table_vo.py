@@ -39,9 +39,9 @@ class MappingSourceTableVO:
 
         The model defined in huaweicloud sdk
 
-        :param table1_id: 表1ID，填写String类型替代Long类型。
+        :param table1_id: 表1ID，ID字符串。
         :type table1_id: str
-        :param table2_id: 表2ID，填写String类型替代Long类型。
+        :param table2_id: 表2ID，ID字符串。
         :type table2_id: str
         :param table1_name: 表1名称。
         :type table1_name: str
@@ -76,7 +76,7 @@ class MappingSourceTableVO:
     def table1_id(self):
         """Gets the table1_id of this MappingSourceTableVO.
 
-        表1ID，填写String类型替代Long类型。
+        表1ID，ID字符串。
 
         :return: The table1_id of this MappingSourceTableVO.
         :rtype: str
@@ -87,7 +87,7 @@ class MappingSourceTableVO:
     def table1_id(self, table1_id):
         """Sets the table1_id of this MappingSourceTableVO.
 
-        表1ID，填写String类型替代Long类型。
+        表1ID，ID字符串。
 
         :param table1_id: The table1_id of this MappingSourceTableVO.
         :type table1_id: str
@@ -98,7 +98,7 @@ class MappingSourceTableVO:
     def table2_id(self):
         """Gets the table2_id of this MappingSourceTableVO.
 
-        表2ID，填写String类型替代Long类型。
+        表2ID，ID字符串。
 
         :return: The table2_id of this MappingSourceTableVO.
         :rtype: str
@@ -109,7 +109,7 @@ class MappingSourceTableVO:
     def table2_id(self, table2_id):
         """Sets the table2_id of this MappingSourceTableVO.
 
-        表2ID，填写String类型替代Long类型。
+        表2ID，ID字符串。
 
         :param table2_id: The table2_id of this MappingSourceTableVO.
         :type table2_id: str

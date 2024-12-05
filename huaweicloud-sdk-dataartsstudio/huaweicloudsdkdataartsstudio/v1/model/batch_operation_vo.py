@@ -59,15 +59,15 @@ class BatchOperationVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 批量审批ID，填写String类型替代Long类型。
+        :param id: 批量审批ID，ID字符串。
         :type id: str
         :param tenant_id: 项目ID。
         :type tenant_id: str
-        :param group_id: 组ID，填写String类型替代Long类型。
+        :param group_id: 组ID，ID字符串。
         :type group_id: str
         :param biz_name: 业务名。
         :type biz_name: str
-        :param biz_id: 业务ID，填写String类型替代Long类型。
+        :param biz_id: 业务ID，ID字符串。
         :type biz_id: str
         :param operation_status: 操作结果类型枚举。RUNNING(运行中)、SUCCESS(操作成功)、FAILED(操作失败)。 枚举值：   - RUNNING: 运行中   - SUCCESS: 操作成功   - FAILED: 操作失败 
         :type operation_status: str
@@ -150,7 +150,7 @@ class BatchOperationVO:
     def id(self):
         """Gets the id of this BatchOperationVO.
 
-        批量审批ID，填写String类型替代Long类型。
+        批量审批ID，ID字符串。
 
         :return: The id of this BatchOperationVO.
         :rtype: str
@@ -161,7 +161,7 @@ class BatchOperationVO:
     def id(self, id):
         """Sets the id of this BatchOperationVO.
 
-        批量审批ID，填写String类型替代Long类型。
+        批量审批ID，ID字符串。
 
         :param id: The id of this BatchOperationVO.
         :type id: str
@@ -194,7 +194,7 @@ class BatchOperationVO:
     def group_id(self):
         """Gets the group_id of this BatchOperationVO.
 
-        组ID，填写String类型替代Long类型。
+        组ID，ID字符串。
 
         :return: The group_id of this BatchOperationVO.
         :rtype: str
@@ -205,7 +205,7 @@ class BatchOperationVO:
     def group_id(self, group_id):
         """Sets the group_id of this BatchOperationVO.
 
-        组ID，填写String类型替代Long类型。
+        组ID，ID字符串。
 
         :param group_id: The group_id of this BatchOperationVO.
         :type group_id: str
@@ -238,7 +238,7 @@ class BatchOperationVO:
     def biz_id(self):
         """Gets the biz_id of this BatchOperationVO.
 
-        业务ID，填写String类型替代Long类型。
+        业务ID，ID字符串。
 
         :return: The biz_id of this BatchOperationVO.
         :rtype: str
@@ -249,7 +249,7 @@ class BatchOperationVO:
     def biz_id(self, biz_id):
         """Sets the biz_id of this BatchOperationVO.
 
-        业务ID，填写String类型替代Long类型。
+        业务ID，ID字符串。
 
         :param biz_id: The biz_id of this BatchOperationVO.
         :type biz_id: str

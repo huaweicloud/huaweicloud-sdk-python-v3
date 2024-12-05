@@ -2797,7 +2797,7 @@ class AosClient(Client):
 
         删除资源栈实例（DeleteStackInstance）
         
-        此API用于删除指定资源栈集下指定局点（region）或指定成员账户（domain_id）的资源栈实例，并返回资源栈集操作ID（stack_set_operation_id）
+        此API用于删除指定资源栈集下指定局点（region）或指定成员账号（domain_id）的资源栈实例，并返回资源栈集操作ID（stack_set_operation_id）
         
         **请谨慎操作，删除资源栈实例将会删除与该资源栈实例相关的堆栈以及堆栈所管理的一切资源。**
         
@@ -2872,7 +2872,7 @@ class AosClient(Client):
 
         删除资源栈实例-被废弃（DeleteStackInstanceDeprecated）
         
-        此API用于删除指定资源栈集下指定局点（region）或指定成员账户（domain_id）的资源栈实例，并返回资源栈集操作ID（stack_set_operation_id）
+        此API用于删除指定资源栈集下指定局点（region）或指定成员账号（domain_id）的资源栈实例，并返回资源栈集操作ID（stack_set_operation_id）
         
         **请谨慎操作，删除资源栈实例将会删除与该资源栈实例相关的堆栈以及堆栈所管理的一切资源。**
         
@@ -3105,9 +3105,9 @@ class AosClient(Client):
 
         列举资源栈实例（ListStackInstances）
         
-        此API用于列举指定资源栈集下指定局点（region）或指定成员账户（stack_domain_id）或全部资源栈实例
+        此API用于列举指定资源栈集下指定局点（region）或指定成员账号（stack_domain_id）或全部资源栈实例
         
-        * 可以使用filter作为过滤器，过滤出指定局点（region）或指定成员账户（stack_domain_id）下的资源栈实例
+        * 可以使用filter作为过滤器，过滤出指定局点（region）或指定成员账号（stack_domain_id）下的资源栈实例
         * 可以使用sort_key和sort_dir两个关键字对返回结果按创建时间（create_time）进行排序。给予的sort_key和sort_dir数量须一致，否则返回400。如果未给予sort_key和sort_dir，则默认按照创建时间降序排序。
         * 如果指定资源栈集下没有任何资源栈实例，则返回空list
         

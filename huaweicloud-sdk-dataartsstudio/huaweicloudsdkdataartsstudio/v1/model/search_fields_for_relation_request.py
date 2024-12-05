@@ -45,7 +45,7 @@ class SearchFieldsForRelationRequest:
         :type limit: int
         :param offset: 查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
         :type offset: int
-        :param model_id: 所属关系建模的模型ID，填写String类型替代Long类型。
+        :param model_id: 所属关系建模的模型ID，ID字符串。
         :type model_id: str
         """
         
@@ -159,7 +159,7 @@ class SearchFieldsForRelationRequest:
     def model_id(self):
         """Gets the model_id of this SearchFieldsForRelationRequest.
 
-        所属关系建模的模型ID，填写String类型替代Long类型。
+        所属关系建模的模型ID，ID字符串。
 
         :return: The model_id of this SearchFieldsForRelationRequest.
         :rtype: str
@@ -170,7 +170,7 @@ class SearchFieldsForRelationRequest:
     def model_id(self, model_id):
         """Sets the model_id of this SearchFieldsForRelationRequest.
 
-        所属关系建模的模型ID，填写String类型替代Long类型。
+        所属关系建模的模型ID，ID字符串。
 
         :param model_id: The model_id of this SearchFieldsForRelationRequest.
         :type model_id: str

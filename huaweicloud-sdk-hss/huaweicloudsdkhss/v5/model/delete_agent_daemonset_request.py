@@ -41,7 +41,7 @@ class DeleteAgentDaemonsetRequest:
         :type enterprise_project_id: str
         :param cluster_id: 集群id
         :type cluster_id: str
-        :param invoked_service: 调用服务，标识cce免费体检报告，cce调用传参为cce |    - hss： hss服务    - cce： cce服务
+        :param invoked_service: 调用服务,默认hss，cce集成防护调用场景使用，包括:    - hss： hss服务    - cce： cce服务，cce集成防护调用需要传参cce
         :type invoked_service: str
         """
         
@@ -130,7 +130,7 @@ class DeleteAgentDaemonsetRequest:
     def invoked_service(self):
         """Gets the invoked_service of this DeleteAgentDaemonsetRequest.
 
-        调用服务，标识cce免费体检报告，cce调用传参为cce |    - hss： hss服务    - cce： cce服务
+        调用服务,默认hss，cce集成防护调用场景使用，包括:    - hss： hss服务    - cce： cce服务，cce集成防护调用需要传参cce
 
         :return: The invoked_service of this DeleteAgentDaemonsetRequest.
         :rtype: str
@@ -141,7 +141,7 @@ class DeleteAgentDaemonsetRequest:
     def invoked_service(self, invoked_service):
         """Sets the invoked_service of this DeleteAgentDaemonsetRequest.
 
-        调用服务，标识cce免费体检报告，cce调用传参为cce |    - hss： hss服务    - cce： cce服务
+        调用服务,默认hss，cce集成防护调用场景使用，包括:    - hss： hss服务    - cce： cce服务，cce集成防护调用需要传参cce
 
         :param invoked_service: The invoked_service of this DeleteAgentDaemonsetRequest.
         :type invoked_service: str

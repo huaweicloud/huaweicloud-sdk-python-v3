@@ -47,13 +47,13 @@ class RelationMappingVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码，填写String类型替代Long类型。
+        :param id: 编码，ID字符串。
         :type id: str
-        :param relation_id: 关系ID，填写String类型替代Long类型。
+        :param relation_id: 关系ID，ID字符串。
         :type relation_id: str
-        :param source_field_id: 源字段ID，填写String类型替代Long类型。
+        :param source_field_id: 源字段ID，ID字符串。
         :type source_field_id: str
-        :param target_field_id: 目标字段ID，填写String类型替代Long类型。
+        :param target_field_id: 目标字段ID，ID字符串。
         :type target_field_id: str
         :param source_field_name: 源表名称。
         :type source_field_name: str
@@ -108,7 +108,7 @@ class RelationMappingVO:
     def id(self):
         """Gets the id of this RelationMappingVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :return: The id of this RelationMappingVO.
         :rtype: str
@@ -119,7 +119,7 @@ class RelationMappingVO:
     def id(self, id):
         """Sets the id of this RelationMappingVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :param id: The id of this RelationMappingVO.
         :type id: str
@@ -130,7 +130,7 @@ class RelationMappingVO:
     def relation_id(self):
         """Gets the relation_id of this RelationMappingVO.
 
-        关系ID，填写String类型替代Long类型。
+        关系ID，ID字符串。
 
         :return: The relation_id of this RelationMappingVO.
         :rtype: str
@@ -141,7 +141,7 @@ class RelationMappingVO:
     def relation_id(self, relation_id):
         """Sets the relation_id of this RelationMappingVO.
 
-        关系ID，填写String类型替代Long类型。
+        关系ID，ID字符串。
 
         :param relation_id: The relation_id of this RelationMappingVO.
         :type relation_id: str
@@ -152,7 +152,7 @@ class RelationMappingVO:
     def source_field_id(self):
         """Gets the source_field_id of this RelationMappingVO.
 
-        源字段ID，填写String类型替代Long类型。
+        源字段ID，ID字符串。
 
         :return: The source_field_id of this RelationMappingVO.
         :rtype: str
@@ -163,7 +163,7 @@ class RelationMappingVO:
     def source_field_id(self, source_field_id):
         """Sets the source_field_id of this RelationMappingVO.
 
-        源字段ID，填写String类型替代Long类型。
+        源字段ID，ID字符串。
 
         :param source_field_id: The source_field_id of this RelationMappingVO.
         :type source_field_id: str
@@ -174,7 +174,7 @@ class RelationMappingVO:
     def target_field_id(self):
         """Gets the target_field_id of this RelationMappingVO.
 
-        目标字段ID，填写String类型替代Long类型。
+        目标字段ID，ID字符串。
 
         :return: The target_field_id of this RelationMappingVO.
         :rtype: str
@@ -185,7 +185,7 @@ class RelationMappingVO:
     def target_field_id(self, target_field_id):
         """Sets the target_field_id of this RelationMappingVO.
 
-        目标字段ID，填写String类型替代Long类型。
+        目标字段ID，ID字符串。
 
         :param target_field_id: The target_field_id of this RelationMappingVO.
         :type target_field_id: str

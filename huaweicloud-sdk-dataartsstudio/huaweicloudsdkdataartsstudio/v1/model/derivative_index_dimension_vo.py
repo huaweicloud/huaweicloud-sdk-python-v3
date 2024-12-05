@@ -65,9 +65,9 @@ class DerivativeIndexDimensionVO:
         :type group_id: str
         :param role: 维度角色。
         :type role: str
-        :param dimension_id: 维度ID，填写String类型替代Long类型。
+        :param dimension_id: 维度ID，ID字符串。
         :type dimension_id: str
-        :param hierarchies_id: 维度层级ID，填写String类型替代Long类型。
+        :param hierarchies_id: 维度层级ID，ID字符串。
         :type hierarchies_id: str
         :param ordinal: 序号，只读。
         :type ordinal: int
@@ -85,15 +85,15 @@ class DerivativeIndexDimensionVO:
         :type l2: str
         :param l3: 业务对象中文名，只读，创建和更新时无需填写。
         :type l3: str
-        :param l1_id: 主题域分组ID，只读，填写String类型替代Long类型。
+        :param l1_id: 主题域分组ID，只读，ID字符串。
         :type l1_id: str
         :param l2_id: 主题域ID，只读，创建和更新时无需填写。
         :type l2_id: str
-        :param l3_id: 业务对象ID，只读，填写String类型替代Long类型。
+        :param l3_id: 业务对象ID，只读，ID字符串。
         :type l3_id: str
         :param dw_type: 数据连接类型。
         :type dw_type: str
-        :param id: 层级的ID，只读，填写String类型替代Long类型。
+        :param id: 层级的ID，只读，ID字符串。
         :type id: str
         """
         
@@ -199,7 +199,7 @@ class DerivativeIndexDimensionVO:
     def dimension_id(self):
         """Gets the dimension_id of this DerivativeIndexDimensionVO.
 
-        维度ID，填写String类型替代Long类型。
+        维度ID，ID字符串。
 
         :return: The dimension_id of this DerivativeIndexDimensionVO.
         :rtype: str
@@ -210,7 +210,7 @@ class DerivativeIndexDimensionVO:
     def dimension_id(self, dimension_id):
         """Sets the dimension_id of this DerivativeIndexDimensionVO.
 
-        维度ID，填写String类型替代Long类型。
+        维度ID，ID字符串。
 
         :param dimension_id: The dimension_id of this DerivativeIndexDimensionVO.
         :type dimension_id: str
@@ -221,7 +221,7 @@ class DerivativeIndexDimensionVO:
     def hierarchies_id(self):
         """Gets the hierarchies_id of this DerivativeIndexDimensionVO.
 
-        维度层级ID，填写String类型替代Long类型。
+        维度层级ID，ID字符串。
 
         :return: The hierarchies_id of this DerivativeIndexDimensionVO.
         :rtype: str
@@ -232,7 +232,7 @@ class DerivativeIndexDimensionVO:
     def hierarchies_id(self, hierarchies_id):
         """Sets the hierarchies_id of this DerivativeIndexDimensionVO.
 
-        维度层级ID，填写String类型替代Long类型。
+        维度层级ID，ID字符串。
 
         :param hierarchies_id: The hierarchies_id of this DerivativeIndexDimensionVO.
         :type hierarchies_id: str
@@ -415,7 +415,7 @@ class DerivativeIndexDimensionVO:
     def l1_id(self):
         """Gets the l1_id of this DerivativeIndexDimensionVO.
 
-        主题域分组ID，只读，填写String类型替代Long类型。
+        主题域分组ID，只读，ID字符串。
 
         :return: The l1_id of this DerivativeIndexDimensionVO.
         :rtype: str
@@ -426,7 +426,7 @@ class DerivativeIndexDimensionVO:
     def l1_id(self, l1_id):
         """Sets the l1_id of this DerivativeIndexDimensionVO.
 
-        主题域分组ID，只读，填写String类型替代Long类型。
+        主题域分组ID，只读，ID字符串。
 
         :param l1_id: The l1_id of this DerivativeIndexDimensionVO.
         :type l1_id: str
@@ -459,7 +459,7 @@ class DerivativeIndexDimensionVO:
     def l3_id(self):
         """Gets the l3_id of this DerivativeIndexDimensionVO.
 
-        业务对象ID，只读，填写String类型替代Long类型。
+        业务对象ID，只读，ID字符串。
 
         :return: The l3_id of this DerivativeIndexDimensionVO.
         :rtype: str
@@ -470,7 +470,7 @@ class DerivativeIndexDimensionVO:
     def l3_id(self, l3_id):
         """Sets the l3_id of this DerivativeIndexDimensionVO.
 
-        业务对象ID，只读，填写String类型替代Long类型。
+        业务对象ID，只读，ID字符串。
 
         :param l3_id: The l3_id of this DerivativeIndexDimensionVO.
         :type l3_id: str
@@ -503,7 +503,7 @@ class DerivativeIndexDimensionVO:
     def id(self):
         """Gets the id of this DerivativeIndexDimensionVO.
 
-        层级的ID，只读，填写String类型替代Long类型。
+        层级的ID，只读，ID字符串。
 
         :return: The id of this DerivativeIndexDimensionVO.
         :rtype: str
@@ -514,7 +514,7 @@ class DerivativeIndexDimensionVO:
     def id(self, id):
         """Sets the id of this DerivativeIndexDimensionVO.
 
-        层级的ID，只读，填写String类型替代Long类型。
+        层级的ID，只读，ID字符串。
 
         :param id: The id of this DerivativeIndexDimensionVO.
         :type id: str

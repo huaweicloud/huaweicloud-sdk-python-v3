@@ -17,7 +17,7 @@ class DeleteResultData:
     sensitive_list = []
 
     openapi_types = {
-        'value': 'str'
+        'value': 'int'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class DeleteResultData:
         The model defined in huaweicloud sdk
 
         :param value: 成功删除的对象个数
-        :type value: str
+        :type value: int
         """
         
         
@@ -48,7 +48,7 @@ class DeleteResultData:
         成功删除的对象个数
 
         :return: The value of this DeleteResultData.
-        :rtype: str
+        :rtype: int
         """
         return self._value
 
@@ -59,7 +59,7 @@ class DeleteResultData:
         成功删除的对象个数
 
         :param value: The value of this DeleteResultData.
-        :type value: str
+        :type value: int
         """
         self._value = value
 

@@ -35,11 +35,11 @@ class LinkAttributeAndElementVO:
 
         The model defined in huaweicloud sdk
 
-        :param ids: 属性ID列表，填写String类型替代Long类型。
+        :param ids: 属性ID列表，ID字符串。
         :type ids: list[str]
-        :param stand_row_id: 关联的数据标准的ID，填写String类型替代Long类型。
+        :param stand_row_id: 关联的数据标准的ID，ID字符串。
         :type stand_row_id: str
-        :param table_id: 表ID，填写String类型替代Long类型。
+        :param table_id: 表ID，ID字符串。
         :type table_id: str
         :param biz_type: 表类型，默认是TABLE_MODEL。 枚举值：   - TABLE_MODEL: 关系模型（逻辑模型/物理模型）   - AGGREGATION_LOGIC_TABLE: 汇总表   - FACT_LOGIC_TABLE: 事实表   - DIMENSION: 维度   - DIMENSION_LOGIC_TABLE: 维度表 
         :type biz_type: str
@@ -62,7 +62,7 @@ class LinkAttributeAndElementVO:
     def ids(self):
         """Gets the ids of this LinkAttributeAndElementVO.
 
-        属性ID列表，填写String类型替代Long类型。
+        属性ID列表，ID字符串。
 
         :return: The ids of this LinkAttributeAndElementVO.
         :rtype: list[str]
@@ -73,7 +73,7 @@ class LinkAttributeAndElementVO:
     def ids(self, ids):
         """Sets the ids of this LinkAttributeAndElementVO.
 
-        属性ID列表，填写String类型替代Long类型。
+        属性ID列表，ID字符串。
 
         :param ids: The ids of this LinkAttributeAndElementVO.
         :type ids: list[str]
@@ -84,7 +84,7 @@ class LinkAttributeAndElementVO:
     def stand_row_id(self):
         """Gets the stand_row_id of this LinkAttributeAndElementVO.
 
-        关联的数据标准的ID，填写String类型替代Long类型。
+        关联的数据标准的ID，ID字符串。
 
         :return: The stand_row_id of this LinkAttributeAndElementVO.
         :rtype: str
@@ -95,7 +95,7 @@ class LinkAttributeAndElementVO:
     def stand_row_id(self, stand_row_id):
         """Sets the stand_row_id of this LinkAttributeAndElementVO.
 
-        关联的数据标准的ID，填写String类型替代Long类型。
+        关联的数据标准的ID，ID字符串。
 
         :param stand_row_id: The stand_row_id of this LinkAttributeAndElementVO.
         :type stand_row_id: str
@@ -106,7 +106,7 @@ class LinkAttributeAndElementVO:
     def table_id(self):
         """Gets the table_id of this LinkAttributeAndElementVO.
 
-        表ID，填写String类型替代Long类型。
+        表ID，ID字符串。
 
         :return: The table_id of this LinkAttributeAndElementVO.
         :rtype: str
@@ -117,7 +117,7 @@ class LinkAttributeAndElementVO:
     def table_id(self, table_id):
         """Sets the table_id of this LinkAttributeAndElementVO.
 
-        表ID，填写String类型替代Long类型。
+        表ID，ID字符串。
 
         :param table_id: The table_id of this LinkAttributeAndElementVO.
         :type table_id: str

@@ -81,7 +81,7 @@ class DerivativeIndexVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码，填写String类型替代Long类型。
+        :param id: 编码，ID字符串。
         :type id: str
         :param name_en: 字段名。
         :type name_en: str
@@ -93,19 +93,19 @@ class DerivativeIndexVO:
         :type create_by: str
         :param data_type: 字段类型。
         :type data_type: str
-        :param l1_id: 主题域分组ID，只读，填写String类型替代Long类型。
+        :param l1_id: 主题域分组ID，只读，ID字符串。
         :type l1_id: str
         :param l2_id: 主题域ID，只读，创建和更新时无需填写。
         :type l2_id: str
-        :param l3_id: 业务对象guid，填写String类型替代Long类型。
+        :param l3_id: 业务对象guid，ID字符串。
         :type l3_id: str
         :param status: 
         :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
-        :param atomic_index_id: 原子指标ID，填写String类型替代Long类型。
+        :param atomic_index_id: 原子指标ID，ID字符串。
         :type atomic_index_id: str
-        :param time_condition_id: 时间限定ID，填写String类型替代Long类型。
+        :param time_condition_id: 时间限定ID，ID字符串。
         :type time_condition_id: str
-        :param time_field_id: 时间限定关联字段ID，填写String类型替代Long类型。
+        :param time_field_id: 时间限定关联字段ID，ID字符串。
         :type time_field_id: str
         :param time_field_name: 时间限定关联字段名称，只读。
         :type time_field_name: str
@@ -129,7 +129,7 @@ class DerivativeIndexVO:
         :type l2: str
         :param l3: 业务对象中文名，只读，创建和更新时无需填写。
         :type l3: str
-        :param summary_table_id: 汇总表ID，只读，填写String类型替代Long类型。
+        :param summary_table_id: 汇总表ID，只读，ID字符串。
         :type summary_table_id: str
         :param approval_info: 
         :type approval_info: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalVO`
@@ -223,7 +223,7 @@ class DerivativeIndexVO:
     def id(self):
         """Gets the id of this DerivativeIndexVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :return: The id of this DerivativeIndexVO.
         :rtype: str
@@ -234,7 +234,7 @@ class DerivativeIndexVO:
     def id(self, id):
         """Sets the id of this DerivativeIndexVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :param id: The id of this DerivativeIndexVO.
         :type id: str
@@ -355,7 +355,7 @@ class DerivativeIndexVO:
     def l1_id(self):
         """Gets the l1_id of this DerivativeIndexVO.
 
-        主题域分组ID，只读，填写String类型替代Long类型。
+        主题域分组ID，只读，ID字符串。
 
         :return: The l1_id of this DerivativeIndexVO.
         :rtype: str
@@ -366,7 +366,7 @@ class DerivativeIndexVO:
     def l1_id(self, l1_id):
         """Sets the l1_id of this DerivativeIndexVO.
 
-        主题域分组ID，只读，填写String类型替代Long类型。
+        主题域分组ID，只读，ID字符串。
 
         :param l1_id: The l1_id of this DerivativeIndexVO.
         :type l1_id: str
@@ -399,7 +399,7 @@ class DerivativeIndexVO:
     def l3_id(self):
         """Gets the l3_id of this DerivativeIndexVO.
 
-        业务对象guid，填写String类型替代Long类型。
+        业务对象guid，ID字符串。
 
         :return: The l3_id of this DerivativeIndexVO.
         :rtype: str
@@ -410,7 +410,7 @@ class DerivativeIndexVO:
     def l3_id(self, l3_id):
         """Sets the l3_id of this DerivativeIndexVO.
 
-        业务对象guid，填写String类型替代Long类型。
+        业务对象guid，ID字符串。
 
         :param l3_id: The l3_id of this DerivativeIndexVO.
         :type l3_id: str
@@ -439,7 +439,7 @@ class DerivativeIndexVO:
     def atomic_index_id(self):
         """Gets the atomic_index_id of this DerivativeIndexVO.
 
-        原子指标ID，填写String类型替代Long类型。
+        原子指标ID，ID字符串。
 
         :return: The atomic_index_id of this DerivativeIndexVO.
         :rtype: str
@@ -450,7 +450,7 @@ class DerivativeIndexVO:
     def atomic_index_id(self, atomic_index_id):
         """Sets the atomic_index_id of this DerivativeIndexVO.
 
-        原子指标ID，填写String类型替代Long类型。
+        原子指标ID，ID字符串。
 
         :param atomic_index_id: The atomic_index_id of this DerivativeIndexVO.
         :type atomic_index_id: str
@@ -461,7 +461,7 @@ class DerivativeIndexVO:
     def time_condition_id(self):
         """Gets the time_condition_id of this DerivativeIndexVO.
 
-        时间限定ID，填写String类型替代Long类型。
+        时间限定ID，ID字符串。
 
         :return: The time_condition_id of this DerivativeIndexVO.
         :rtype: str
@@ -472,7 +472,7 @@ class DerivativeIndexVO:
     def time_condition_id(self, time_condition_id):
         """Sets the time_condition_id of this DerivativeIndexVO.
 
-        时间限定ID，填写String类型替代Long类型。
+        时间限定ID，ID字符串。
 
         :param time_condition_id: The time_condition_id of this DerivativeIndexVO.
         :type time_condition_id: str
@@ -483,7 +483,7 @@ class DerivativeIndexVO:
     def time_field_id(self):
         """Gets the time_field_id of this DerivativeIndexVO.
 
-        时间限定关联字段ID，填写String类型替代Long类型。
+        时间限定关联字段ID，ID字符串。
 
         :return: The time_field_id of this DerivativeIndexVO.
         :rtype: str
@@ -494,7 +494,7 @@ class DerivativeIndexVO:
     def time_field_id(self, time_field_id):
         """Sets the time_field_id of this DerivativeIndexVO.
 
-        时间限定关联字段ID，填写String类型替代Long类型。
+        时间限定关联字段ID，ID字符串。
 
         :param time_field_id: The time_field_id of this DerivativeIndexVO.
         :type time_field_id: str
@@ -739,7 +739,7 @@ class DerivativeIndexVO:
     def summary_table_id(self):
         """Gets the summary_table_id of this DerivativeIndexVO.
 
-        汇总表ID，只读，填写String类型替代Long类型。
+        汇总表ID，只读，ID字符串。
 
         :return: The summary_table_id of this DerivativeIndexVO.
         :rtype: str
@@ -750,7 +750,7 @@ class DerivativeIndexVO:
     def summary_table_id(self, summary_table_id):
         """Sets the summary_table_id of this DerivativeIndexVO.
 
-        汇总表ID，只读，填写String类型替代Long类型。
+        汇总表ID，只读，ID字符串。
 
         :param summary_table_id: The summary_table_id of this DerivativeIndexVO.
         :type summary_table_id: str

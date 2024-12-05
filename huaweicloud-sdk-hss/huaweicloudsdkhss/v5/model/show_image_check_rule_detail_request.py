@@ -67,7 +67,7 @@ class ShowImageCheckRuleDetailRequest:
         :type check_type: str
         :param check_rule_id: 检查项id
         :type check_rule_id: str
-        :param standard: 标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 华为标准   - qt_standard : 青腾标准
+        :param standard: 标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 云安全实践标准
         :type standard: str
         :param instance_id: 企业仓库实例ID，swr共享版无需使用该参数
         :type instance_id: str
@@ -308,7 +308,7 @@ class ShowImageCheckRuleDetailRequest:
     def standard(self):
         """Gets the standard of this ShowImageCheckRuleDetailRequest.
 
-        标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 华为标准   - qt_standard : 青腾标准
+        标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 云安全实践标准
 
         :return: The standard of this ShowImageCheckRuleDetailRequest.
         :rtype: str
@@ -319,7 +319,7 @@ class ShowImageCheckRuleDetailRequest:
     def standard(self, standard):
         """Sets the standard of this ShowImageCheckRuleDetailRequest.
 
-        标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 华为标准   - qt_standard : 青腾标准
+        标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 云安全实践标准
 
         :param standard: The standard of this ShowImageCheckRuleDetailRequest.
         :type standard: str

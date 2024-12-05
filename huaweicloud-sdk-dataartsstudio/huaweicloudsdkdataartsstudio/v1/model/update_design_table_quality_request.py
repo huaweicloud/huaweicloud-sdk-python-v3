@@ -39,7 +39,7 @@ class UpdateDesignTableQualityRequest:
         :type workspace: str
         :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
         :type x_project_id: str
-        :param table_id: 表的ID，填写String类型替代Long类型。
+        :param table_id: 表的ID，ID字符串。
         :type table_id: str
         :param body: Body of the UpdateDesignTableQualityRequest
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.UpdateDesignTableQualityParam`
@@ -108,7 +108,7 @@ class UpdateDesignTableQualityRequest:
     def table_id(self):
         """Gets the table_id of this UpdateDesignTableQualityRequest.
 
-        表的ID，填写String类型替代Long类型。
+        表的ID，ID字符串。
 
         :return: The table_id of this UpdateDesignTableQualityRequest.
         :rtype: str
@@ -119,7 +119,7 @@ class UpdateDesignTableQualityRequest:
     def table_id(self, table_id):
         """Sets the table_id of this UpdateDesignTableQualityRequest.
 
-        表的ID，填写String类型替代Long类型。
+        表的ID，ID字符串。
 
         :param table_id: The table_id of this UpdateDesignTableQualityRequest.
         :type table_id: str

@@ -43,7 +43,7 @@ class TagVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码，填写String类型替代Long类型。
+        :param id: 编码，ID字符串。
         :type id: str
         :param name: 标签名。
         :type name: str
@@ -93,7 +93,7 @@ class TagVO:
     def id(self):
         """Gets the id of this TagVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :return: The id of this TagVO.
         :rtype: str
@@ -104,7 +104,7 @@ class TagVO:
     def id(self, id):
         """Sets the id of this TagVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :param id: The id of this TagVO.
         :type id: str

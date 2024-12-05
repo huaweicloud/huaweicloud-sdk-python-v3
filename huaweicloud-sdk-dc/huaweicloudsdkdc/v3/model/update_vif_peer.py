@@ -48,12 +48,10 @@ class UpdateVifPeer:
         self._remote_ep_group = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
+        self.name = name
         if description is not None:
             self.description = description
-        if remote_ep_group is not None:
-            self.remote_ep_group = remote_ep_group
+        self.remote_ep_group = remote_ep_group
 
     @property
     def name(self):

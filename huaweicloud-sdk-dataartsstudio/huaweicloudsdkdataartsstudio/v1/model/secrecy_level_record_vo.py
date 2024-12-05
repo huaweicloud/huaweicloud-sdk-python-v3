@@ -51,9 +51,9 @@ class SecrecyLevelRecordVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 属性关联密级的ID，填写String类型替代Long类型。
+        :param id: 属性关联密级的ID，ID字符串。
         :type id: str
-        :param secrecy_level_id: 密级的ID，填写String类型替代Long类型。
+        :param secrecy_level_id: 密级的ID，ID字符串。
         :type secrecy_level_id: str
         :param secrecy_level_name: 密级名称。
         :type secrecy_level_name: str
@@ -63,7 +63,7 @@ class SecrecyLevelRecordVO:
         :type slevel: int
         :param description: 密级描述。
         :type description: str
-        :param biz_id: 业务对象ID，填写String类型替代Long类型。
+        :param biz_id: 业务对象ID，ID字符串。
         :type biz_id: str
         :param biz_type: 
         :type biz_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
@@ -119,7 +119,7 @@ class SecrecyLevelRecordVO:
     def id(self):
         """Gets the id of this SecrecyLevelRecordVO.
 
-        属性关联密级的ID，填写String类型替代Long类型。
+        属性关联密级的ID，ID字符串。
 
         :return: The id of this SecrecyLevelRecordVO.
         :rtype: str
@@ -130,7 +130,7 @@ class SecrecyLevelRecordVO:
     def id(self, id):
         """Sets the id of this SecrecyLevelRecordVO.
 
-        属性关联密级的ID，填写String类型替代Long类型。
+        属性关联密级的ID，ID字符串。
 
         :param id: The id of this SecrecyLevelRecordVO.
         :type id: str
@@ -141,7 +141,7 @@ class SecrecyLevelRecordVO:
     def secrecy_level_id(self):
         """Gets the secrecy_level_id of this SecrecyLevelRecordVO.
 
-        密级的ID，填写String类型替代Long类型。
+        密级的ID，ID字符串。
 
         :return: The secrecy_level_id of this SecrecyLevelRecordVO.
         :rtype: str
@@ -152,7 +152,7 @@ class SecrecyLevelRecordVO:
     def secrecy_level_id(self, secrecy_level_id):
         """Sets the secrecy_level_id of this SecrecyLevelRecordVO.
 
-        密级的ID，填写String类型替代Long类型。
+        密级的ID，ID字符串。
 
         :param secrecy_level_id: The secrecy_level_id of this SecrecyLevelRecordVO.
         :type secrecy_level_id: str
@@ -251,7 +251,7 @@ class SecrecyLevelRecordVO:
     def biz_id(self):
         """Gets the biz_id of this SecrecyLevelRecordVO.
 
-        业务对象ID，填写String类型替代Long类型。
+        业务对象ID，ID字符串。
 
         :return: The biz_id of this SecrecyLevelRecordVO.
         :rtype: str
@@ -262,7 +262,7 @@ class SecrecyLevelRecordVO:
     def biz_id(self, biz_id):
         """Sets the biz_id of this SecrecyLevelRecordVO.
 
-        业务对象ID，填写String类型替代Long类型。
+        业务对象ID，ID字符串。
 
         :param biz_id: The biz_id of this SecrecyLevelRecordVO.
         :type biz_id: str

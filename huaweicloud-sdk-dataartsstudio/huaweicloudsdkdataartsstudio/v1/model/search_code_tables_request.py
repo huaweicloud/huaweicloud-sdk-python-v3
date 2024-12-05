@@ -59,7 +59,7 @@ class SearchCodeTablesRequest:
         :type create_by: str
         :param approver: 按审核人查询。
         :type approver: str
-        :param directory_id: 目录ID，填写String类型替代Long类型。
+        :param directory_id: 目录ID，ID字符串。
         :type directory_id: str
         :param status: 业务状态。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审批   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审批   - OFFLINE: 已下线   - REJECT: 已驳回 
         :type status: str
@@ -224,7 +224,7 @@ class SearchCodeTablesRequest:
     def directory_id(self):
         """Gets the directory_id of this SearchCodeTablesRequest.
 
-        目录ID，填写String类型替代Long类型。
+        目录ID，ID字符串。
 
         :return: The directory_id of this SearchCodeTablesRequest.
         :rtype: str
@@ -235,7 +235,7 @@ class SearchCodeTablesRequest:
     def directory_id(self, directory_id):
         """Sets the directory_id of this SearchCodeTablesRequest.
 
-        目录ID，填写String类型替代Long类型。
+        目录ID，ID字符串。
 
         :param directory_id: The directory_id of this SearchCodeTablesRequest.
         :type directory_id: str

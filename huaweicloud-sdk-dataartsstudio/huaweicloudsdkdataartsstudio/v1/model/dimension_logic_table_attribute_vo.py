@@ -67,13 +67,13 @@ class DimensionLogicTableAttributeVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 维度表ID，填写String类型替代Long类型。
+        :param id: 维度表ID，ID字符串。
         :type id: str
         :param dimension_logic_table_id: 所属维表ID。
         :type dimension_logic_table_id: str
         :param ordinal: 序号
         :type ordinal: int
-        :param dimension_attribute_id: 维度属性ID，填写String类型替代Long类型。
+        :param dimension_attribute_id: 维度属性ID，ID字符串。
         :type dimension_attribute_id: str
         :param name_en: 字段名，只读。
         :type name_en: str
@@ -95,7 +95,7 @@ class DimensionLogicTableAttributeVO:
         :type is_partition_key: bool
         :param not_null: 是否不为空。
         :type not_null: bool
-        :param stand_row_id: 关联的数据标准的ID，填写String类型替代Long类型。
+        :param stand_row_id: 关联的数据标准的ID，ID字符串。
         :type stand_row_id: str
         :param stand_row_name: 关联的数据标准名称，只读。
         :type stand_row_name: str
@@ -176,7 +176,7 @@ class DimensionLogicTableAttributeVO:
     def id(self):
         """Gets the id of this DimensionLogicTableAttributeVO.
 
-        维度表ID，填写String类型替代Long类型。
+        维度表ID，ID字符串。
 
         :return: The id of this DimensionLogicTableAttributeVO.
         :rtype: str
@@ -187,7 +187,7 @@ class DimensionLogicTableAttributeVO:
     def id(self, id):
         """Sets the id of this DimensionLogicTableAttributeVO.
 
-        维度表ID，填写String类型替代Long类型。
+        维度表ID，ID字符串。
 
         :param id: The id of this DimensionLogicTableAttributeVO.
         :type id: str
@@ -242,7 +242,7 @@ class DimensionLogicTableAttributeVO:
     def dimension_attribute_id(self):
         """Gets the dimension_attribute_id of this DimensionLogicTableAttributeVO.
 
-        维度属性ID，填写String类型替代Long类型。
+        维度属性ID，ID字符串。
 
         :return: The dimension_attribute_id of this DimensionLogicTableAttributeVO.
         :rtype: str
@@ -253,7 +253,7 @@ class DimensionLogicTableAttributeVO:
     def dimension_attribute_id(self, dimension_attribute_id):
         """Sets the dimension_attribute_id of this DimensionLogicTableAttributeVO.
 
-        维度属性ID，填写String类型替代Long类型。
+        维度属性ID，ID字符串。
 
         :param dimension_attribute_id: The dimension_attribute_id of this DimensionLogicTableAttributeVO.
         :type dimension_attribute_id: str
@@ -480,7 +480,7 @@ class DimensionLogicTableAttributeVO:
     def stand_row_id(self):
         """Gets the stand_row_id of this DimensionLogicTableAttributeVO.
 
-        关联的数据标准的ID，填写String类型替代Long类型。
+        关联的数据标准的ID，ID字符串。
 
         :return: The stand_row_id of this DimensionLogicTableAttributeVO.
         :rtype: str
@@ -491,7 +491,7 @@ class DimensionLogicTableAttributeVO:
     def stand_row_id(self, stand_row_id):
         """Sets the stand_row_id of this DimensionLogicTableAttributeVO.
 
-        关联的数据标准的ID，填写String类型替代Long类型。
+        关联的数据标准的ID，ID字符串。
 
         :param stand_row_id: The stand_row_id of this DimensionLogicTableAttributeVO.
         :type stand_row_id: str

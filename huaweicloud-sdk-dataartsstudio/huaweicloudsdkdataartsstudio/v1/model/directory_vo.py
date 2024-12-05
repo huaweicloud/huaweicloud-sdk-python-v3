@@ -25,7 +25,7 @@ class DirectoryVO:
         'prev_id': 'str',
         'root_id': 'str',
         'qualified_name': 'str',
-        'from_public': 'str',
+        'from_public': 'bool',
         'create_time': 'datetime',
         'update_time': 'datetime',
         'create_by': 'str',
@@ -74,7 +74,7 @@ class DirectoryVO:
         :param qualified_name: 目录的资产名称，只读。
         :type qualified_name: str
         :param from_public: 是否来自公共层，只读。
-        :type from_public: str
+        :type from_public: bool
         :param create_time: 创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
         :param update_time: 更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
@@ -83,7 +83,7 @@ class DirectoryVO:
         :type create_by: str
         :param update_by: 更新人，只读。
         :type update_by: str
-        :param ref_id: 关联的主题ID，填写String类型替代Long类型。
+        :param ref_id: 关联的主题ID，ID字符串。
         :type ref_id: str
         :param children: 子目录。
         :type children: list[:class:`huaweicloudsdkdataartsstudio.v1.DirectoryVO`]
@@ -318,7 +318,7 @@ class DirectoryVO:
         是否来自公共层，只读。
 
         :return: The from_public of this DirectoryVO.
-        :rtype: str
+        :rtype: bool
         """
         return self._from_public
 
@@ -329,7 +329,7 @@ class DirectoryVO:
         是否来自公共层，只读。
 
         :param from_public: The from_public of this DirectoryVO.
-        :type from_public: str
+        :type from_public: bool
         """
         self._from_public = from_public
 
@@ -425,7 +425,7 @@ class DirectoryVO:
     def ref_id(self):
         """Gets the ref_id of this DirectoryVO.
 
-        关联的主题ID，填写String类型替代Long类型。
+        关联的主题ID，ID字符串。
 
         :return: The ref_id of this DirectoryVO.
         :rtype: str
@@ -436,7 +436,7 @@ class DirectoryVO:
     def ref_id(self, ref_id):
         """Sets the ref_id of this DirectoryVO.
 
-        关联的主题ID，填写String类型替代Long类型。
+        关联的主题ID，ID字符串。
 
         :param ref_id: The ref_id of this DirectoryVO.
         :type ref_id: str

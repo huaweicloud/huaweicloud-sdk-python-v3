@@ -32,6 +32,586 @@ class DcAsyncClient(Client):
 
         return client_builder
 
+    def bind_global_eips_async(self, request):
+        """绑定GEIP操作
+
+        绑定GEIP操作
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BindGlobalEips
+        :type request: :class:`huaweicloudsdkdc.v3.BindGlobalEipsRequest`
+        :rtype: :class:`huaweicloudsdkdc.v3.BindGlobalEipsResponse`
+        """
+        http_info = self._bind_global_eips_http_info(request)
+        return self._call_api(**http_info)
+
+    def bind_global_eips_async_invoker(self, request):
+        http_info = self._bind_global_eips_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _bind_global_eips_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/dcaas/connect-gateways/{connect_gateway_id}/binding-global-eips",
+            "request_type": request.__class__.__name__,
+            "response_type": "BindGlobalEipsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'connect_gateway_id' in local_var_params:
+            path_params['connect_gateway_id'] = local_var_params['connect_gateway_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=utf-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_global_eips_async(self, request):
+        """查询已经绑定的GEIP列表
+
+        查询已经绑定的GEIP列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListGlobalEips
+        :type request: :class:`huaweicloudsdkdc.v3.ListGlobalEipsRequest`
+        :rtype: :class:`huaweicloudsdkdc.v3.ListGlobalEipsResponse`
+        """
+        http_info = self._list_global_eips_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_global_eips_async_invoker(self, request):
+        http_info = self._list_global_eips_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_global_eips_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/dcaas/connect-gateways/{connect_gateway_id}/binding-global-eips",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGlobalEipsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'connect_gateway_id' in local_var_params:
+            path_params['connect_gateway_id'] = local_var_params['connect_gateway_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'page_reverse' in local_var_params:
+            query_params.append(('page_reverse', local_var_params['page_reverse']))
+        if 'fields' in local_var_params:
+            query_params.append(('fields', local_var_params['fields']))
+            collection_formats['fields'] = 'multi'
+        if 'ext_fields' in local_var_params:
+            query_params.append(('ext_fields', local_var_params['ext_fields']))
+            collection_formats['ext_fields'] = 'multi'
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+            collection_formats['sort_dir'] = 'multi'
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+            collection_formats['status'] = 'multi'
+        if 'global_eip_id' in local_var_params:
+            query_params.append(('global_eip_id', local_var_params['global_eip_id']))
+            collection_formats['global_eip_id'] = 'multi'
+        if 'global_eip_segment_id' in local_var_params:
+            query_params.append(('global_eip_segment_id', local_var_params['global_eip_segment_id']))
+            collection_formats['global_eip_segment_id'] = 'multi'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def unbind_global_eips_async(self, request):
+        """解绑GEIP
+
+        解绑GEIP
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UnbindGlobalEips
+        :type request: :class:`huaweicloudsdkdc.v3.UnbindGlobalEipsRequest`
+        :rtype: :class:`huaweicloudsdkdc.v3.UnbindGlobalEipsResponse`
+        """
+        http_info = self._unbind_global_eips_http_info(request)
+        return self._call_api(**http_info)
+
+    def unbind_global_eips_async_invoker(self, request):
+        http_info = self._unbind_global_eips_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _unbind_global_eips_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/dcaas/connect-gateways/{connect_gateway_id}/unbinding-global-eips",
+            "request_type": request.__class__.__name__,
+            "response_type": "UnbindGlobalEipsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'connect_gateway_id' in local_var_params:
+            path_params['connect_gateway_id'] = local_var_params['connect_gateway_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=utf-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_connect_gateway_async(self, request):
+        """创建互联网关
+
+        创建互联网关
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateConnectGateway
+        :type request: :class:`huaweicloudsdkdc.v3.CreateConnectGatewayRequest`
+        :rtype: :class:`huaweicloudsdkdc.v3.CreateConnectGatewayResponse`
+        """
+        http_info = self._create_connect_gateway_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_connect_gateway_async_invoker(self, request):
+        http_info = self._create_connect_gateway_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_connect_gateway_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/dcaas/connect-gateways",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateConnectGatewayResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_connect_gateway_async(self, request):
+        """删除互联网关
+
+        删除互联网关
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteConnectGateway
+        :type request: :class:`huaweicloudsdkdc.v3.DeleteConnectGatewayRequest`
+        :rtype: :class:`huaweicloudsdkdc.v3.DeleteConnectGatewayResponse`
+        """
+        http_info = self._delete_connect_gateway_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_connect_gateway_async_invoker(self, request):
+        http_info = self._delete_connect_gateway_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_connect_gateway_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/dcaas/connect-gateways/{connect_gateway_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteConnectGatewayResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'connect_gateway_id' in local_var_params:
+            path_params['connect_gateway_id'] = local_var_params['connect_gateway_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_connect_gateways_async(self, request):
+        """查询互联网关列表信息
+
+        查询互联网关列表信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListConnectGateways
+        :type request: :class:`huaweicloudsdkdc.v3.ListConnectGatewaysRequest`
+        :rtype: :class:`huaweicloudsdkdc.v3.ListConnectGatewaysResponse`
+        """
+        http_info = self._list_connect_gateways_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_connect_gateways_async_invoker(self, request):
+        http_info = self._list_connect_gateways_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_connect_gateways_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/dcaas/connect-gateways",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListConnectGatewaysResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'page_reverse' in local_var_params:
+            query_params.append(('page_reverse', local_var_params['page_reverse']))
+        if 'fields' in local_var_params:
+            query_params.append(('fields', local_var_params['fields']))
+            collection_formats['fields'] = 'multi'
+        if 'ext_fields' in local_var_params:
+            query_params.append(('ext_fields', local_var_params['ext_fields']))
+            collection_formats['ext_fields'] = 'multi'
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+            collection_formats['sort_dir'] = 'multi'
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+            collection_formats['id'] = 'multi'
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+            collection_formats['name'] = 'csv'
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+            collection_formats['status'] = 'multi'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_connect_gateway_async(self, request):
+        """查询互联网关详细信息
+
+        查询互联网关详细信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowConnectGateway
+        :type request: :class:`huaweicloudsdkdc.v3.ShowConnectGatewayRequest`
+        :rtype: :class:`huaweicloudsdkdc.v3.ShowConnectGatewayResponse`
+        """
+        http_info = self._show_connect_gateway_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_connect_gateway_async_invoker(self, request):
+        http_info = self._show_connect_gateway_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_connect_gateway_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/dcaas/connect-gateways/{connect_gateway_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowConnectGatewayResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'connect_gateway_id' in local_var_params:
+            path_params['connect_gateway_id'] = local_var_params['connect_gateway_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_connect_gateway_async(self, request):
+        """更新互联网关
+
+        更新互联网关
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateConnectGateway
+        :type request: :class:`huaweicloudsdkdc.v3.UpdateConnectGatewayRequest`
+        :rtype: :class:`huaweicloudsdkdc.v3.UpdateConnectGatewayResponse`
+        """
+        http_info = self._update_connect_gateway_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_connect_gateway_async_invoker(self, request):
+        http_info = self._update_connect_gateway_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_connect_gateway_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/dcaas/connect-gateways/{connect_gateway_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateConnectGatewayResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'connect_gateway_id' in local_var_params:
+            path_params['connect_gateway_id'] = local_var_params['connect_gateway_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_hosted_direct_connect_async(self, request):
         """创建托管专线连接
 
@@ -667,6 +1247,1073 @@ class DcAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_gdgw_route_tables_async(self, request):
+        """查询全球接入网关路由表
+
+        查询全球接入网关路由表，返回查询到的全球接入网关路由表的详细信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListGdgwRouteTables
+        :type request: :class:`huaweicloudsdkdc.v3.ListGdgwRouteTablesRequest`
+        :rtype: :class:`huaweicloudsdkdc.v3.ListGdgwRouteTablesResponse`
+        """
+        http_info = self._list_gdgw_route_tables_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_gdgw_route_tables_async_invoker(self, request):
+        http_info = self._list_gdgw_route_tables_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_gdgw_route_tables_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/dcaas/gdgw/{gdgw_id}/routetables",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGdgwRouteTablesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'gdgw_id' in local_var_params:
+            path_params['gdgw_id'] = local_var_params['gdgw_id']
+
+        query_params = []
+        if 'fields' in local_var_params:
+            query_params.append(('fields', local_var_params['fields']))
+            collection_formats['fields'] = 'multi'
+        if 'ext_fields' in local_var_params:
+            query_params.append(('ext_fields', local_var_params['ext_fields']))
+            collection_formats['ext_fields'] = 'multi'
+        if 'nexthop' in local_var_params:
+            query_params.append(('nexthop', local_var_params['nexthop']))
+            collection_formats['nexthop'] = 'multi'
+        if 'destination' in local_var_params:
+            query_params.append(('destination', local_var_params['destination']))
+            collection_formats['destination'] = 'multi'
+        if 'address_family' in local_var_params:
+            query_params.append(('address_family', local_var_params['address_family']))
+            collection_formats['address_family'] = 'multi'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_gdgw_route_table_async(self, request):
+        """修改全球接入网关路由表
+
+        修改全球接入网关路由表，返回修改全球接入网关路由表的结果。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateGdgwRouteTable
+        :type request: :class:`huaweicloudsdkdc.v3.UpdateGdgwRouteTableRequest`
+        :rtype: :class:`huaweicloudsdkdc.v3.UpdateGdgwRouteTableResponse`
+        """
+        http_info = self._update_gdgw_route_table_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_gdgw_route_table_async_invoker(self, request):
+        http_info = self._update_gdgw_route_table_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_gdgw_route_table_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/dcaas/gdgw/{gdgw_id}/routetables",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateGdgwRouteTableResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'gdgw_id' in local_var_params:
+            path_params['gdgw_id'] = local_var_params['gdgw_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=utf-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_global_dc_gateway_async(self, request):
+        """创建全球接入网关
+
+        创建全球接入网关，返回创建全球接入网关的结果。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateGlobalDcGateway
+        :type request: :class:`huaweicloudsdkdc.v3.CreateGlobalDcGatewayRequest`
+        :rtype: :class:`huaweicloudsdkdc.v3.CreateGlobalDcGatewayResponse`
+        """
+        http_info = self._create_global_dc_gateway_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_global_dc_gateway_async_invoker(self, request):
+        http_info = self._create_global_dc_gateway_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_global_dc_gateway_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/dcaas/global-dc-gateways",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateGlobalDcGatewayResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=utf-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_peer_link_async(self, request):
+        """创建全球接入网关对等链接
+
+        创建全球接入网关对等链接，返回创建全球接入网关对等链接的结果。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreatePeerLink
+        :type request: :class:`huaweicloudsdkdc.v3.CreatePeerLinkRequest`
+        :rtype: :class:`huaweicloudsdkdc.v3.CreatePeerLinkResponse`
+        """
+        http_info = self._create_peer_link_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_peer_link_async_invoker(self, request):
+        http_info = self._create_peer_link_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_peer_link_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/dcaas/global-dc-gateways/{global_dc_gateway_id}/peer-links",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePeerLinkResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'global_dc_gateway_id' in local_var_params:
+            path_params['global_dc_gateway_id'] = local_var_params['global_dc_gateway_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=utf-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_global_dc_gateway_async(self, request):
+        """删除全球接入网关
+
+        根据ID删除全球接入网关，返回删除全球接入网关的结果。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteGlobalDcGateway
+        :type request: :class:`huaweicloudsdkdc.v3.DeleteGlobalDcGatewayRequest`
+        :rtype: :class:`huaweicloudsdkdc.v3.DeleteGlobalDcGatewayResponse`
+        """
+        http_info = self._delete_global_dc_gateway_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_global_dc_gateway_async_invoker(self, request):
+        http_info = self._delete_global_dc_gateway_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_global_dc_gateway_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/dcaas/global-dc-gateways/{global_dc_gateway_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteGlobalDcGatewayResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'global_dc_gateway_id' in local_var_params:
+            path_params['global_dc_gateway_id'] = local_var_params['global_dc_gateway_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_peer_link_async(self, request):
+        """删除全球接入网关对等链接
+
+        根据ID删除全球接入网关对等链接，返回删除全球接入网关对等链接的结果。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeletePeerLink
+        :type request: :class:`huaweicloudsdkdc.v3.DeletePeerLinkRequest`
+        :rtype: :class:`huaweicloudsdkdc.v3.DeletePeerLinkResponse`
+        """
+        http_info = self._delete_peer_link_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_peer_link_async_invoker(self, request):
+        http_info = self._delete_peer_link_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_peer_link_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/dcaas/global-dc-gateways/{global_dc_gateway_id}/peer-links/{peer_link_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePeerLinkResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'global_dc_gateway_id' in local_var_params:
+            path_params['global_dc_gateway_id'] = local_var_params['global_dc_gateway_id']
+        if 'peer_link_id' in local_var_params:
+            path_params['peer_link_id'] = local_var_params['peer_link_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_global_dc_gateway_async(self, request):
+        """查询全球接入网关列表
+
+        查询 全球接入网关列表，返回列表中包含全球接入网关的详细信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListGlobalDcGateway
+        :type request: :class:`huaweicloudsdkdc.v3.ListGlobalDcGatewayRequest`
+        :rtype: :class:`huaweicloudsdkdc.v3.ListGlobalDcGatewayResponse`
+        """
+        http_info = self._list_global_dc_gateway_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_global_dc_gateway_async_invoker(self, request):
+        http_info = self._list_global_dc_gateway_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_global_dc_gateway_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/dcaas/global-dc-gateways",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGlobalDcGatewayResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'fields' in local_var_params:
+            query_params.append(('fields', local_var_params['fields']))
+            collection_formats['fields'] = 'multi'
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+            collection_formats['sort_dir'] = 'multi'
+        if 'hosting_id' in local_var_params:
+            query_params.append(('hosting_id', local_var_params['hosting_id']))
+            collection_formats['hosting_id'] = 'multi'
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+            collection_formats['enterprise_project_id'] = 'csv'
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+            collection_formats['id'] = 'multi'
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+            collection_formats['name'] = 'csv'
+        if 'global_center_network_id' in local_var_params:
+            query_params.append(('global_center_network_id', local_var_params['global_center_network_id']))
+            collection_formats['global_center_network_id'] = 'multi'
+        if 'site_network_id' in local_var_params:
+            query_params.append(('site_network_id', local_var_params['site_network_id']))
+            collection_formats['site_network_id'] = 'multi'
+        if 'cloud_connection_id' in local_var_params:
+            query_params.append(('cloud_connection_id', local_var_params['cloud_connection_id']))
+            collection_formats['cloud_connection_id'] = 'multi'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_peer_links_async(self, request):
+        """查询全球接入网关对等链接
+
+        查询全球接入网关对等链接，返回查询到的全球接入网关对等链接的详细信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListPeerLinks
+        :type request: :class:`huaweicloudsdkdc.v3.ListPeerLinksRequest`
+        :rtype: :class:`huaweicloudsdkdc.v3.ListPeerLinksResponse`
+        """
+        http_info = self._list_peer_links_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_peer_links_async_invoker(self, request):
+        http_info = self._list_peer_links_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_peer_links_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/dcaas/global-dc-gateways/{global_dc_gateway_id}/peer-links",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPeerLinksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'global_dc_gateway_id' in local_var_params:
+            path_params['global_dc_gateway_id'] = local_var_params['global_dc_gateway_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'page_reverse' in local_var_params:
+            query_params.append(('page_reverse', local_var_params['page_reverse']))
+        if 'fields' in local_var_params:
+            query_params.append(('fields', local_var_params['fields']))
+            collection_formats['fields'] = 'multi'
+        if 'ext_fields' in local_var_params:
+            query_params.append(('ext_fields', local_var_params['ext_fields']))
+            collection_formats['ext_fields'] = 'multi'
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+            collection_formats['sort_dir'] = 'multi'
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+            collection_formats['id'] = 'multi'
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+            collection_formats['name'] = 'csv'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_rms_global_dc_gateway_async(self, request):
+        """查询RMS全球接入网关
+
+        根据类型、domain_id、region_id,资源类型查询资源，返回查询到的资源的详细信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListRmsGlobalDcGateway
+        :type request: :class:`huaweicloudsdkdc.v3.ListRmsGlobalDcGatewayRequest`
+        :rtype: :class:`huaweicloudsdkdc.v3.ListRmsGlobalDcGatewayResponse`
+        """
+        http_info = self._list_rms_global_dc_gateway_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_rms_global_dc_gateway_async_invoker(self, request):
+        http_info = self._list_rms_global_dc_gateway_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_rms_global_dc_gateway_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/providers/{rp_name}/domains/{domain_id}/regions/{region_id}/{resource_type}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRmsGlobalDcGatewayResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'rp_name' in local_var_params:
+            path_params['rp_name'] = local_var_params['rp_name']
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+        if 'region_id' in local_var_params:
+            path_params['region_id'] = local_var_params['region_id']
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'page_reverse' in local_var_params:
+            query_params.append(('page_reverse', local_var_params['page_reverse']))
+        if 'fields' in local_var_params:
+            query_params.append(('fields', local_var_params['fields']))
+            collection_formats['fields'] = 'multi'
+        if 'ext_fields' in local_var_params:
+            query_params.append(('ext_fields', local_var_params['ext_fields']))
+            collection_formats['ext_fields'] = 'multi'
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+            collection_formats['sort_dir'] = 'multi'
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+            collection_formats['id'] = 'multi'
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+            collection_formats['name'] = 'csv'
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+            collection_formats['status'] = 'multi'
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+            collection_formats['enterprise_project_id'] = 'csv'
+        if 'global_center_network_id' in local_var_params:
+            query_params.append(('global_center_network_id', local_var_params['global_center_network_id']))
+            collection_formats['global_center_network_id'] = 'multi'
+        if 'site_network_id' in local_var_params:
+            query_params.append(('site_network_id', local_var_params['site_network_id']))
+            collection_formats['site_network_id'] = 'multi'
+        if 'cloud_connection_id' in local_var_params:
+            query_params.append(('cloud_connection_id', local_var_params['cloud_connection_id']))
+            collection_formats['cloud_connection_id'] = 'multi'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_global_dc_gateway_async(self, request):
+        """查询全球接入网关详情
+
+        根据ID查询全球接入网关，返回查询到的全球接入网关的详细信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowGlobalDcGateway
+        :type request: :class:`huaweicloudsdkdc.v3.ShowGlobalDcGatewayRequest`
+        :rtype: :class:`huaweicloudsdkdc.v3.ShowGlobalDcGatewayResponse`
+        """
+        http_info = self._show_global_dc_gateway_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_global_dc_gateway_async_invoker(self, request):
+        http_info = self._show_global_dc_gateway_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_global_dc_gateway_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/dcaas/global-dc-gateways/{global_dc_gateway_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowGlobalDcGatewayResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'global_dc_gateway_id' in local_var_params:
+            path_params['global_dc_gateway_id'] = local_var_params['global_dc_gateway_id']
+
+        query_params = []
+        if 'fields' in local_var_params:
+            query_params.append(('fields', local_var_params['fields']))
+            collection_formats['fields'] = 'multi'
+        if 'ext_fields' in local_var_params:
+            query_params.append(('ext_fields', local_var_params['ext_fields']))
+            collection_formats['ext_fields'] = 'multi'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_peer_link_async(self, request):
+        """查询全球接入网关对等链接
+
+        根据ID查询全球接入网关对等链接，返回查询到的全球接入网关对等链接的详细信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowPeerLink
+        :type request: :class:`huaweicloudsdkdc.v3.ShowPeerLinkRequest`
+        :rtype: :class:`huaweicloudsdkdc.v3.ShowPeerLinkResponse`
+        """
+        http_info = self._show_peer_link_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_peer_link_async_invoker(self, request):
+        http_info = self._show_peer_link_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_peer_link_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/dcaas/global-dc-gateways/{global_dc_gateway_id}/peer-links/{peer_link_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPeerLinkResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'global_dc_gateway_id' in local_var_params:
+            path_params['global_dc_gateway_id'] = local_var_params['global_dc_gateway_id']
+        if 'peer_link_id' in local_var_params:
+            path_params['peer_link_id'] = local_var_params['peer_link_id']
+
+        query_params = []
+        if 'fields' in local_var_params:
+            query_params.append(('fields', local_var_params['fields']))
+            collection_formats['fields'] = 'multi'
+        if 'ext_fields' in local_var_params:
+            query_params.append(('ext_fields', local_var_params['ext_fields']))
+            collection_formats['ext_fields'] = 'multi'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_rms_global_dc_gateway_async(self, request):
+        """查询RMS全球接入网关
+
+        根据类型、domain_id、region_id,资源类型，全球接入网关ID查询资源,返回查询到的资源的详细信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowRmsGlobalDcGateway
+        :type request: :class:`huaweicloudsdkdc.v3.ShowRmsGlobalDcGatewayRequest`
+        :rtype: :class:`huaweicloudsdkdc.v3.ShowRmsGlobalDcGatewayResponse`
+        """
+        http_info = self._show_rms_global_dc_gateway_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_rms_global_dc_gateway_async_invoker(self, request):
+        http_info = self._show_rms_global_dc_gateway_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_rms_global_dc_gateway_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/providers/{rp_name}/domains/{domain_id}/regions/{region_id}/{resource_type}/{global_dc_gateway_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRmsGlobalDcGatewayResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'rp_name' in local_var_params:
+            path_params['rp_name'] = local_var_params['rp_name']
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+        if 'region_id' in local_var_params:
+            path_params['region_id'] = local_var_params['region_id']
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+        if 'global_dc_gateway_id' in local_var_params:
+            path_params['global_dc_gateway_id'] = local_var_params['global_dc_gateway_id']
+
+        query_params = []
+        if 'fields' in local_var_params:
+            query_params.append(('fields', local_var_params['fields']))
+            collection_formats['fields'] = 'multi'
+        if 'ext_fields' in local_var_params:
+            query_params.append(('ext_fields', local_var_params['ext_fields']))
+            collection_formats['ext_fields'] = 'multi'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_global_dc_gateway_async(self, request):
+        """修改全球接入网关
+
+        根据ID修改全球接入网关，返回修改全球接入网关的结果。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateGlobalDcGateway
+        :type request: :class:`huaweicloudsdkdc.v3.UpdateGlobalDcGatewayRequest`
+        :rtype: :class:`huaweicloudsdkdc.v3.UpdateGlobalDcGatewayResponse`
+        """
+        http_info = self._update_global_dc_gateway_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_global_dc_gateway_async_invoker(self, request):
+        http_info = self._update_global_dc_gateway_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_global_dc_gateway_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/dcaas/global-dc-gateways/{global_dc_gateway_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateGlobalDcGatewayResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'global_dc_gateway_id' in local_var_params:
+            path_params['global_dc_gateway_id'] = local_var_params['global_dc_gateway_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=utf-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_peer_link_async(self, request):
+        """修改全球接入网关对等链接
+
+        根据ID修改全球接入网关对等链接，返回修改全球接入网关对等链接的结果。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdatePeerLink
+        :type request: :class:`huaweicloudsdkdc.v3.UpdatePeerLinkRequest`
+        :rtype: :class:`huaweicloudsdkdc.v3.UpdatePeerLinkResponse`
+        """
+        http_info = self._update_peer_link_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_peer_link_async_invoker(self, request):
+        http_info = self._update_peer_link_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_peer_link_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/dcaas/global-dc-gateways/{global_dc_gateway_id}/peer-links/{peer_link_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePeerLinkResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'global_dc_gateway_id' in local_var_params:
+            path_params['global_dc_gateway_id'] = local_var_params['global_dc_gateway_id']
+        if 'peer_link_id' in local_var_params:
+            path_params['peer_link_id'] = local_var_params['peer_link_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=utf-8'])
 
         auth_settings = []
 

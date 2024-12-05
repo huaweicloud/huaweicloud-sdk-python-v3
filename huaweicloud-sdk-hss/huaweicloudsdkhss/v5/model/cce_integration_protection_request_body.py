@@ -39,15 +39,15 @@ class CceIntegrationProtectionRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_type: cce集群类型 | existing 存量集群 adding 新增集群
+        :param cluster_type: cce集群类型：   existing 存量集群   adding 新增集群
         :type cluster_type: str
         :param cluster_id: 集群id
         :type cluster_id: str
         :param cluster_name: 集群名称
         :type cluster_name: str
-        :param charging_mode: 付费模式 | on_demand 按需 free_security_check 免费安全体检
+        :param charging_mode: 付费模式：   on_demand 按需   free_security_check 免费安全体检
         :type charging_mode: str
-        :param cce_protection_type: cce防护类型 | cluster_level 集群级别防护 node_level 节点级别防护
+        :param cce_protection_type: cce防护类型：   cluster_level 集群级别防护   node_level 节点级别防护
         :type cce_protection_type: str
         :param prefer_packet_cycle: 优先使用包周期配额；默认false
         :type prefer_packet_cycle: bool
@@ -79,7 +79,7 @@ class CceIntegrationProtectionRequestBody:
     def cluster_type(self):
         """Gets the cluster_type of this CceIntegrationProtectionRequestBody.
 
-        cce集群类型 | existing 存量集群 adding 新增集群
+        cce集群类型：   existing 存量集群   adding 新增集群
 
         :return: The cluster_type of this CceIntegrationProtectionRequestBody.
         :rtype: str
@@ -90,7 +90,7 @@ class CceIntegrationProtectionRequestBody:
     def cluster_type(self, cluster_type):
         """Sets the cluster_type of this CceIntegrationProtectionRequestBody.
 
-        cce集群类型 | existing 存量集群 adding 新增集群
+        cce集群类型：   existing 存量集群   adding 新增集群
 
         :param cluster_type: The cluster_type of this CceIntegrationProtectionRequestBody.
         :type cluster_type: str
@@ -145,7 +145,7 @@ class CceIntegrationProtectionRequestBody:
     def charging_mode(self):
         """Gets the charging_mode of this CceIntegrationProtectionRequestBody.
 
-        付费模式 | on_demand 按需 free_security_check 免费安全体检
+        付费模式：   on_demand 按需   free_security_check 免费安全体检
 
         :return: The charging_mode of this CceIntegrationProtectionRequestBody.
         :rtype: str
@@ -156,7 +156,7 @@ class CceIntegrationProtectionRequestBody:
     def charging_mode(self, charging_mode):
         """Sets the charging_mode of this CceIntegrationProtectionRequestBody.
 
-        付费模式 | on_demand 按需 free_security_check 免费安全体检
+        付费模式：   on_demand 按需   free_security_check 免费安全体检
 
         :param charging_mode: The charging_mode of this CceIntegrationProtectionRequestBody.
         :type charging_mode: str
@@ -167,7 +167,7 @@ class CceIntegrationProtectionRequestBody:
     def cce_protection_type(self):
         """Gets the cce_protection_type of this CceIntegrationProtectionRequestBody.
 
-        cce防护类型 | cluster_level 集群级别防护 node_level 节点级别防护
+        cce防护类型：   cluster_level 集群级别防护   node_level 节点级别防护
 
         :return: The cce_protection_type of this CceIntegrationProtectionRequestBody.
         :rtype: str
@@ -178,7 +178,7 @@ class CceIntegrationProtectionRequestBody:
     def cce_protection_type(self, cce_protection_type):
         """Sets the cce_protection_type of this CceIntegrationProtectionRequestBody.
 
-        cce防护类型 | cluster_level 集群级别防护 node_level 节点级别防护
+        cce防护类型：   cluster_level 集群级别防护   node_level 节点级别防护
 
         :param cce_protection_type: The cce_protection_type of this CceIntegrationProtectionRequestBody.
         :type cce_protection_type: str

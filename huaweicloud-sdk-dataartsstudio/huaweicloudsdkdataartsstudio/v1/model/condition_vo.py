@@ -53,7 +53,7 @@ class ConditionVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码，填写String类型替代Long类型。
+        :param id: 编码，ID字符串。
         :type id: str
         :param name_en: 字段名
         :type name_en: str
@@ -127,7 +127,7 @@ class ConditionVO:
     def id(self):
         """Gets the id of this ConditionVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :return: The id of this ConditionVO.
         :rtype: str
@@ -138,7 +138,7 @@ class ConditionVO:
     def id(self, id):
         """Sets the id of this ConditionVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :param id: The id of this ConditionVO.
         :type id: str

@@ -39,7 +39,7 @@ class CountStandardsRequest:
         :type workspace: str
         :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
         :type x_project_id: str
-        :param id: 实体ID，填写String类型替代Long类型。
+        :param id: 实体ID，ID字符串。
         :type id: str
         :param biz_type: 按业务类型查询，可选业务类型有：ATOMIC_INDEX（原子指标）、DERIVATIVE_INDEX（衍生指标）、DIMENSION（维度）、TIME_CONDITION（时间限定）、DIMENSION_LOGIC_TABLE（维度表）、FACT_LOGIC_TABLE（事实表）、AGGREGATION_LOGIC_TABLE（汇总表）、TABLE_MODEL（关系建模表）、CODE_TABLE（码表）、STANDARD_ELEMENT）（数据标准）、BIZ_METRIC（业务指标）、COMPOUND_METRIC（复合指标）、SUBJECT（主题）、ATOMIC_METRIC（原子指标（新））、DERIVED_METRIC（衍生指标（新））、COMPOSITE_METRIC（复合指标（新））。
         :type biz_type: str
@@ -108,7 +108,7 @@ class CountStandardsRequest:
     def id(self):
         """Gets the id of this CountStandardsRequest.
 
-        实体ID，填写String类型替代Long类型。
+        实体ID，ID字符串。
 
         :return: The id of this CountStandardsRequest.
         :rtype: str
@@ -119,7 +119,7 @@ class CountStandardsRequest:
     def id(self, id):
         """Sets the id of this CountStandardsRequest.
 
-        实体ID，填写String类型替代Long类型。
+        实体ID，ID字符串。
 
         :param id: The id of this CountStandardsRequest.
         :type id: str

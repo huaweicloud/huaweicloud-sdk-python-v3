@@ -41,7 +41,7 @@ class DimensionHierarchiesVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码，填写String类型替代Long类型。
+        :param id: 编码，ID字符串。
         :type id: str
         :param name: 层级名称。
         :type name: str
@@ -87,7 +87,7 @@ class DimensionHierarchiesVO:
     def id(self):
         """Gets the id of this DimensionHierarchiesVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :return: The id of this DimensionHierarchiesVO.
         :rtype: str
@@ -98,7 +98,7 @@ class DimensionHierarchiesVO:
     def id(self, id):
         """Sets the id of this DimensionHierarchiesVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :param id: The id of this DimensionHierarchiesVO.
         :type id: str

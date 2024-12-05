@@ -29,7 +29,8 @@ class PermissionSetPermissionCreateDTO:
         'table_name': 'str',
         'column_name': 'str',
         'row_level_security': 'str',
-        'url': 'str'
+        'url': 'str',
+        'auto_sync': 'bool'
     }
 
     attribute_map = {
@@ -45,10 +46,11 @@ class PermissionSetPermissionCreateDTO:
         'table_name': 'table_name',
         'column_name': 'column_name',
         'row_level_security': 'row_level_security',
-        'url': 'url'
+        'url': 'url',
+        'auto_sync': 'auto_sync'
     }
 
-    def __init__(self, dw_id=None, permission_type=None, permission_actions=None, cluster_id=None, cluster_name=None, datasource_type=None, database_name=None, schema_name=None, namespace=None, table_name=None, column_name=None, row_level_security=None, url=None):
+    def __init__(self, dw_id=None, permission_type=None, permission_actions=None, cluster_id=None, cluster_name=None, datasource_type=None, database_name=None, schema_name=None, namespace=None, table_name=None, column_name=None, row_level_security=None, url=None, auto_sync=None):
         """PermissionSetPermissionCreateDTO
 
         The model defined in huaweicloud sdk
@@ -79,6 +81,8 @@ class PermissionSetPermissionCreateDTO:
         :type row_level_security: str
         :param url: url路径名称, MRS存算分离或者HIVE指定location场景下使用。
         :type url: str
+        :param auto_sync: 是否自动触发同步, 默认false
+        :type auto_sync: bool
         """
         
         
@@ -96,6 +100,7 @@ class PermissionSetPermissionCreateDTO:
         self._column_name = None
         self._row_level_security = None
         self._url = None
+        self._auto_sync = None
         self.discriminator = None
 
         if dw_id is not None:
@@ -124,6 +129,8 @@ class PermissionSetPermissionCreateDTO:
             self.row_level_security = row_level_security
         if url is not None:
             self.url = url
+        if auto_sync is not None:
+            self.auto_sync = auto_sync
 
     @property
     def dw_id(self):
@@ -410,6 +417,28 @@ class PermissionSetPermissionCreateDTO:
         :type url: str
         """
         self._url = url
+
+    @property
+    def auto_sync(self):
+        """Gets the auto_sync of this PermissionSetPermissionCreateDTO.
+
+        是否自动触发同步, 默认false
+
+        :return: The auto_sync of this PermissionSetPermissionCreateDTO.
+        :rtype: bool
+        """
+        return self._auto_sync
+
+    @auto_sync.setter
+    def auto_sync(self, auto_sync):
+        """Sets the auto_sync of this PermissionSetPermissionCreateDTO.
+
+        是否自动触发同步, 默认false
+
+        :param auto_sync: The auto_sync of this PermissionSetPermissionCreateDTO.
+        :type auto_sync: bool
+        """
+        self._auto_sync = auto_sync
 
     def to_dict(self):
         """Returns the model properties as a dict"""

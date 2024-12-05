@@ -18,6 +18,7 @@ class ListAlarmHistoriesRequest:
 
     openapi_types = {
         'alarm_id': 'str',
+        'record_id': 'str',
         'name': 'str',
         'status': 'str',
         'level': 'int',
@@ -32,6 +33,7 @@ class ListAlarmHistoriesRequest:
 
     attribute_map = {
         'alarm_id': 'alarm_id',
+        'record_id': 'record_id',
         'name': 'name',
         'status': 'status',
         'level': 'level',
@@ -44,13 +46,15 @@ class ListAlarmHistoriesRequest:
         'order_by': 'order_by'
     }
 
-    def __init__(self, alarm_id=None, name=None, status=None, level=None, namespace=None, resource_id=None, _from=None, to=None, offset=None, limit=None, order_by=None):
+    def __init__(self, alarm_id=None, record_id=None, name=None, status=None, level=None, namespace=None, resource_id=None, _from=None, to=None, offset=None, limit=None, order_by=None):
         """ListAlarmHistoriesRequest
 
         The model defined in huaweicloud sdk
 
         :param alarm_id: 告警ID,以al开头，后跟22位由字母或数字组成的字符串
         :type alarm_id: str
+        :param record_id: 告警记录ID,以ah开头，后跟22位由字母或数字组成的字符串
+        :type record_id: str
         :param name: 告警规则名称
         :type name: str
         :param status: 告警规则状态, ok为正常，alarm为告警，invalid为已失效
@@ -76,6 +80,7 @@ class ListAlarmHistoriesRequest:
         
 
         self._alarm_id = None
+        self._record_id = None
         self._name = None
         self._status = None
         self._level = None
@@ -90,6 +95,8 @@ class ListAlarmHistoriesRequest:
 
         if alarm_id is not None:
             self.alarm_id = alarm_id
+        if record_id is not None:
+            self.record_id = record_id
         if name is not None:
             self.name = name
         if status is not None:
@@ -132,6 +139,28 @@ class ListAlarmHistoriesRequest:
         :type alarm_id: str
         """
         self._alarm_id = alarm_id
+
+    @property
+    def record_id(self):
+        """Gets the record_id of this ListAlarmHistoriesRequest.
+
+        告警记录ID,以ah开头，后跟22位由字母或数字组成的字符串
+
+        :return: The record_id of this ListAlarmHistoriesRequest.
+        :rtype: str
+        """
+        return self._record_id
+
+    @record_id.setter
+    def record_id(self, record_id):
+        """Sets the record_id of this ListAlarmHistoriesRequest.
+
+        告警记录ID,以ah开头，后跟22位由字母或数字组成的字符串
+
+        :param record_id: The record_id of this ListAlarmHistoriesRequest.
+        :type record_id: str
+        """
+        self._record_id = record_id
 
     @property
     def name(self):

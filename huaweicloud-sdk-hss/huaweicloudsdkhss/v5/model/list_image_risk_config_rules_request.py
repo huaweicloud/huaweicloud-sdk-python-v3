@@ -73,7 +73,7 @@ class ListImageRiskConfigRulesRequest:
         :type image_version: str
         :param check_name: 基线名称
         :type check_name: str
-        :param standard: 标准类型，包含如下: - cn_standard : 等保合规标准 - hw_standard : 华为标准 - qt_standard : 青腾标准
+        :param standard: 标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 云安全实践标准
         :type standard: str
         :param result_type: 结果类型，包含如下： - pass ： 已通过 - failed : 未通过
         :type result_type: str
@@ -331,7 +331,7 @@ class ListImageRiskConfigRulesRequest:
     def standard(self):
         """Gets the standard of this ListImageRiskConfigRulesRequest.
 
-        标准类型，包含如下: - cn_standard : 等保合规标准 - hw_standard : 华为标准 - qt_standard : 青腾标准
+        标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 云安全实践标准
 
         :return: The standard of this ListImageRiskConfigRulesRequest.
         :rtype: str
@@ -342,7 +342,7 @@ class ListImageRiskConfigRulesRequest:
     def standard(self, standard):
         """Sets the standard of this ListImageRiskConfigRulesRequest.
 
-        标准类型，包含如下: - cn_standard : 等保合规标准 - hw_standard : 华为标准 - qt_standard : 青腾标准
+        标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 云安全实践标准
 
         :param standard: The standard of this ListImageRiskConfigRulesRequest.
         :type standard: str

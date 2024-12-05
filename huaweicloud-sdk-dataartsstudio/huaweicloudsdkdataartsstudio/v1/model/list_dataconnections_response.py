@@ -20,16 +20,18 @@ class ListDataconnectionsResponse(SdkResponse):
     openapi_types = {
         'count': 'int',
         'max_records': 'int',
+        'total_size': 'int',
         'data_connection_lists': 'list[ApigDataSourceView]'
     }
 
     attribute_map = {
         'count': 'count',
         'max_records': 'max_records',
+        'total_size': 'total_size',
         'data_connection_lists': 'data_connection_lists'
     }
 
-    def __init__(self, count=None, max_records=None, data_connection_lists=None):
+    def __init__(self, count=None, max_records=None, total_size=None, data_connection_lists=None):
         """ListDataconnectionsResponse
 
         The model defined in huaweicloud sdk
@@ -38,6 +40,8 @@ class ListDataconnectionsResponse(SdkResponse):
         :type count: int
         :param max_records: 返回记录总数，一个工作空间最多只能创建50条数据连接
         :type max_records: int
+        :param total_size: 返回当前空间内创建连接的总数
+        :type total_size: int
         :param data_connection_lists: 返回数据连接列表
         :type data_connection_lists: list[:class:`huaweicloudsdkdataartsstudio.v1.ApigDataSourceView`]
         """
@@ -46,6 +50,7 @@ class ListDataconnectionsResponse(SdkResponse):
 
         self._count = None
         self._max_records = None
+        self._total_size = None
         self._data_connection_lists = None
         self.discriminator = None
 
@@ -53,6 +58,8 @@ class ListDataconnectionsResponse(SdkResponse):
             self.count = count
         if max_records is not None:
             self.max_records = max_records
+        if total_size is not None:
+            self.total_size = total_size
         if data_connection_lists is not None:
             self.data_connection_lists = data_connection_lists
 
@@ -99,6 +106,28 @@ class ListDataconnectionsResponse(SdkResponse):
         :type max_records: int
         """
         self._max_records = max_records
+
+    @property
+    def total_size(self):
+        """Gets the total_size of this ListDataconnectionsResponse.
+
+        返回当前空间内创建连接的总数
+
+        :return: The total_size of this ListDataconnectionsResponse.
+        :rtype: int
+        """
+        return self._total_size
+
+    @total_size.setter
+    def total_size(self, total_size):
+        """Sets the total_size of this ListDataconnectionsResponse.
+
+        返回当前空间内创建连接的总数
+
+        :param total_size: The total_size of this ListDataconnectionsResponse.
+        :type total_size: int
+        """
+        self._total_size = total_size
 
     @property
     def data_connection_lists(self):

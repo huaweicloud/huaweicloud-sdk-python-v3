@@ -115,11 +115,11 @@ class CatalogVO:
         :type ordinal: int
         :param owner: 责任人。
         :type owner: str
-        :param parent_id: 父目录ID，木有则为根目录，填写String类型替代Long类型。
+        :param parent_id: 父目录ID，木有则为根目录，ID字符串。
         :type parent_id: str
-        :param swap_order_id: 同层排序，目标节点的ID，填写String类型替代Long类型。
+        :param swap_order_id: 同层排序，目标节点的ID，ID字符串。
         :type swap_order_id: str
-        :param id: 主题ID，填写String类型替代Long类型。
+        :param id: 主题ID，ID字符串。
         :type id: str
         :param qualified_id: 认证ID，自动生成。
         :type qualified_id: str
@@ -578,7 +578,7 @@ class CatalogVO:
     def parent_id(self):
         """Gets the parent_id of this CatalogVO.
 
-        父目录ID，木有则为根目录，填写String类型替代Long类型。
+        父目录ID，木有则为根目录，ID字符串。
 
         :return: The parent_id of this CatalogVO.
         :rtype: str
@@ -589,7 +589,7 @@ class CatalogVO:
     def parent_id(self, parent_id):
         """Sets the parent_id of this CatalogVO.
 
-        父目录ID，木有则为根目录，填写String类型替代Long类型。
+        父目录ID，木有则为根目录，ID字符串。
 
         :param parent_id: The parent_id of this CatalogVO.
         :type parent_id: str
@@ -600,7 +600,7 @@ class CatalogVO:
     def swap_order_id(self):
         """Gets the swap_order_id of this CatalogVO.
 
-        同层排序，目标节点的ID，填写String类型替代Long类型。
+        同层排序，目标节点的ID，ID字符串。
 
         :return: The swap_order_id of this CatalogVO.
         :rtype: str
@@ -611,7 +611,7 @@ class CatalogVO:
     def swap_order_id(self, swap_order_id):
         """Sets the swap_order_id of this CatalogVO.
 
-        同层排序，目标节点的ID，填写String类型替代Long类型。
+        同层排序，目标节点的ID，ID字符串。
 
         :param swap_order_id: The swap_order_id of this CatalogVO.
         :type swap_order_id: str
@@ -622,7 +622,7 @@ class CatalogVO:
     def id(self):
         """Gets the id of this CatalogVO.
 
-        主题ID，填写String类型替代Long类型。
+        主题ID，ID字符串。
 
         :return: The id of this CatalogVO.
         :rtype: str
@@ -633,7 +633,7 @@ class CatalogVO:
     def id(self, id):
         """Sets the id of this CatalogVO.
 
-        主题ID，填写String类型替代Long类型。
+        主题ID，ID字符串。
 
         :param id: The id of this CatalogVO.
         :type id: str

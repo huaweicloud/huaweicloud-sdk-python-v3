@@ -75,7 +75,7 @@ class AtomicIndexVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码，填写String类型替代Long类型。
+        :param id: 编码，ID字符串。
         :type id: str
         :param name_en: 原子指标英文名。
         :type name_en: str
@@ -87,21 +87,21 @@ class AtomicIndexVO:
         :type create_by: str
         :param cal_exp: 计算表达式，形如&#39;sum(${fact_column_id})&#39;，其中fact_column_id表示引用事实表中的字段ID
         :type cal_exp: str
-        :param cal_fn_ids: 引用函数ID，填写String类型替代Long类型。
+        :param cal_fn_ids: 引用函数ID，ID字符串。
         :type cal_fn_ids: list[str]
-        :param l1_id: 主题域分组ID，只读，填写String类型替代Long类型。
+        :param l1_id: 主题域分组ID，只读，ID字符串。
         :type l1_id: str
         :param l2_id: 主题域ID，只读，创建和更新时无需填写。
         :type l2_id: str
-        :param l3_id: 业务对象guid，填写String类型替代Long类型。
+        :param l3_id: 业务对象guid，ID字符串。
         :type l3_id: str
-        :param table_id: 事实表ID，填写String类型替代Long类型。
+        :param table_id: 事实表ID，ID字符串。
         :type table_id: str
         :param tb_name: 事实表名称。
         :type tb_name: str
         :param dw_type: 数据连接类型，对应表所在的数仓类型，取值可以为DLI、DWS、MRS_HIVE、POSTGRESQL、MRS_SPARK、CLICKHOUSE、MYSQL、ORACLE和DORIS等。
         :type dw_type: str
-        :param field_ids: 字段ID信息，填写String类型替代Long类型。
+        :param field_ids: 字段ID信息，ID字符串。
         :type field_ids: list[str]
         :param field_names: 字段名称信息。
         :type field_names: list[str]
@@ -200,7 +200,7 @@ class AtomicIndexVO:
     def id(self):
         """Gets the id of this AtomicIndexVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :return: The id of this AtomicIndexVO.
         :rtype: str
@@ -211,7 +211,7 @@ class AtomicIndexVO:
     def id(self, id):
         """Sets the id of this AtomicIndexVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :param id: The id of this AtomicIndexVO.
         :type id: str
@@ -332,7 +332,7 @@ class AtomicIndexVO:
     def cal_fn_ids(self):
         """Gets the cal_fn_ids of this AtomicIndexVO.
 
-        引用函数ID，填写String类型替代Long类型。
+        引用函数ID，ID字符串。
 
         :return: The cal_fn_ids of this AtomicIndexVO.
         :rtype: list[str]
@@ -343,7 +343,7 @@ class AtomicIndexVO:
     def cal_fn_ids(self, cal_fn_ids):
         """Sets the cal_fn_ids of this AtomicIndexVO.
 
-        引用函数ID，填写String类型替代Long类型。
+        引用函数ID，ID字符串。
 
         :param cal_fn_ids: The cal_fn_ids of this AtomicIndexVO.
         :type cal_fn_ids: list[str]
@@ -354,7 +354,7 @@ class AtomicIndexVO:
     def l1_id(self):
         """Gets the l1_id of this AtomicIndexVO.
 
-        主题域分组ID，只读，填写String类型替代Long类型。
+        主题域分组ID，只读，ID字符串。
 
         :return: The l1_id of this AtomicIndexVO.
         :rtype: str
@@ -365,7 +365,7 @@ class AtomicIndexVO:
     def l1_id(self, l1_id):
         """Sets the l1_id of this AtomicIndexVO.
 
-        主题域分组ID，只读，填写String类型替代Long类型。
+        主题域分组ID，只读，ID字符串。
 
         :param l1_id: The l1_id of this AtomicIndexVO.
         :type l1_id: str
@@ -398,7 +398,7 @@ class AtomicIndexVO:
     def l3_id(self):
         """Gets the l3_id of this AtomicIndexVO.
 
-        业务对象guid，填写String类型替代Long类型。
+        业务对象guid，ID字符串。
 
         :return: The l3_id of this AtomicIndexVO.
         :rtype: str
@@ -409,7 +409,7 @@ class AtomicIndexVO:
     def l3_id(self, l3_id):
         """Sets the l3_id of this AtomicIndexVO.
 
-        业务对象guid，填写String类型替代Long类型。
+        业务对象guid，ID字符串。
 
         :param l3_id: The l3_id of this AtomicIndexVO.
         :type l3_id: str
@@ -420,7 +420,7 @@ class AtomicIndexVO:
     def table_id(self):
         """Gets the table_id of this AtomicIndexVO.
 
-        事实表ID，填写String类型替代Long类型。
+        事实表ID，ID字符串。
 
         :return: The table_id of this AtomicIndexVO.
         :rtype: str
@@ -431,7 +431,7 @@ class AtomicIndexVO:
     def table_id(self, table_id):
         """Sets the table_id of this AtomicIndexVO.
 
-        事实表ID，填写String类型替代Long类型。
+        事实表ID，ID字符串。
 
         :param table_id: The table_id of this AtomicIndexVO.
         :type table_id: str
@@ -486,7 +486,7 @@ class AtomicIndexVO:
     def field_ids(self):
         """Gets the field_ids of this AtomicIndexVO.
 
-        字段ID信息，填写String类型替代Long类型。
+        字段ID信息，ID字符串。
 
         :return: The field_ids of this AtomicIndexVO.
         :rtype: list[str]
@@ -497,7 +497,7 @@ class AtomicIndexVO:
     def field_ids(self, field_ids):
         """Sets the field_ids of this AtomicIndexVO.
 
-        字段ID信息，填写String类型替代Long类型。
+        字段ID信息，ID字符串。
 
         :param field_ids: The field_ids of this AtomicIndexVO.
         :type field_ids: list[str]

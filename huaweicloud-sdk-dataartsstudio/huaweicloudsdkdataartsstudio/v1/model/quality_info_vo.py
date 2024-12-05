@@ -59,15 +59,15 @@ class QualityInfoVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码ID，填写String类型替代Long类型。
+        :param id: 编码ID，ID字符串。
         :type id: str
-        :param table_id: 表ID，只读，填写String类型替代Long类型。
+        :param table_id: 表ID，只读，ID字符串。
         :type table_id: str
-        :param attr_id: 属性ID，只读，填写String类型替代Long类型。
+        :param attr_id: 属性ID，只读，ID字符串。
         :type attr_id: str
         :param biz_type: 
         :type biz_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
-        :param data_quality_id: 质量ID，填写String类型替代Long类型。
+        :param data_quality_id: 质量ID，ID字符串。
         :type data_quality_id: str
         :param show_control: 是否要显示正则表达式。
         :type show_control: int
@@ -149,7 +149,7 @@ class QualityInfoVO:
     def id(self):
         """Gets the id of this QualityInfoVO.
 
-        编码ID，填写String类型替代Long类型。
+        编码ID，ID字符串。
 
         :return: The id of this QualityInfoVO.
         :rtype: str
@@ -160,7 +160,7 @@ class QualityInfoVO:
     def id(self, id):
         """Sets the id of this QualityInfoVO.
 
-        编码ID，填写String类型替代Long类型。
+        编码ID，ID字符串。
 
         :param id: The id of this QualityInfoVO.
         :type id: str
@@ -171,7 +171,7 @@ class QualityInfoVO:
     def table_id(self):
         """Gets the table_id of this QualityInfoVO.
 
-        表ID，只读，填写String类型替代Long类型。
+        表ID，只读，ID字符串。
 
         :return: The table_id of this QualityInfoVO.
         :rtype: str
@@ -182,7 +182,7 @@ class QualityInfoVO:
     def table_id(self, table_id):
         """Sets the table_id of this QualityInfoVO.
 
-        表ID，只读，填写String类型替代Long类型。
+        表ID，只读，ID字符串。
 
         :param table_id: The table_id of this QualityInfoVO.
         :type table_id: str
@@ -193,7 +193,7 @@ class QualityInfoVO:
     def attr_id(self):
         """Gets the attr_id of this QualityInfoVO.
 
-        属性ID，只读，填写String类型替代Long类型。
+        属性ID，只读，ID字符串。
 
         :return: The attr_id of this QualityInfoVO.
         :rtype: str
@@ -204,7 +204,7 @@ class QualityInfoVO:
     def attr_id(self, attr_id):
         """Sets the attr_id of this QualityInfoVO.
 
-        属性ID，只读，填写String类型替代Long类型。
+        属性ID，只读，ID字符串。
 
         :param attr_id: The attr_id of this QualityInfoVO.
         :type attr_id: str
@@ -233,7 +233,7 @@ class QualityInfoVO:
     def data_quality_id(self):
         """Gets the data_quality_id of this QualityInfoVO.
 
-        质量ID，填写String类型替代Long类型。
+        质量ID，ID字符串。
 
         :return: The data_quality_id of this QualityInfoVO.
         :rtype: str
@@ -244,7 +244,7 @@ class QualityInfoVO:
     def data_quality_id(self, data_quality_id):
         """Sets the data_quality_id of this QualityInfoVO.
 
-        质量ID，填写String类型替代Long类型。
+        质量ID，ID字符串。
 
         :param data_quality_id: The data_quality_id of this QualityInfoVO.
         :type data_quality_id: str

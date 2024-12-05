@@ -35,9 +35,9 @@ class StatisticStandardCoverageVO:
 
         The model defined in huaweicloud sdk
 
-        :param all_col_num: 字段总数，填写String类型替代Long类型。
+        :param all_col_num: 字段总数，ID字符串。
         :type all_col_num: str
-        :param col_num: 关联标准字段数，填写String类型替代Long类型。
+        :param col_num: 关联标准字段数，ID字符串。
         :type col_num: str
         :param coverage: 标准覆盖率。
         :type coverage: float
@@ -66,7 +66,7 @@ class StatisticStandardCoverageVO:
     def all_col_num(self):
         """Gets the all_col_num of this StatisticStandardCoverageVO.
 
-        字段总数，填写String类型替代Long类型。
+        字段总数，ID字符串。
 
         :return: The all_col_num of this StatisticStandardCoverageVO.
         :rtype: str
@@ -77,7 +77,7 @@ class StatisticStandardCoverageVO:
     def all_col_num(self, all_col_num):
         """Sets the all_col_num of this StatisticStandardCoverageVO.
 
-        字段总数，填写String类型替代Long类型。
+        字段总数，ID字符串。
 
         :param all_col_num: The all_col_num of this StatisticStandardCoverageVO.
         :type all_col_num: str
@@ -88,7 +88,7 @@ class StatisticStandardCoverageVO:
     def col_num(self):
         """Gets the col_num of this StatisticStandardCoverageVO.
 
-        关联标准字段数，填写String类型替代Long类型。
+        关联标准字段数，ID字符串。
 
         :return: The col_num of this StatisticStandardCoverageVO.
         :rtype: str
@@ -99,7 +99,7 @@ class StatisticStandardCoverageVO:
     def col_num(self, col_num):
         """Sets the col_num of this StatisticStandardCoverageVO.
 
-        关联标准字段数，填写String类型替代Long类型。
+        关联标准字段数，ID字符串。
 
         :param col_num: The col_num of this StatisticStandardCoverageVO.
         :type col_num: str

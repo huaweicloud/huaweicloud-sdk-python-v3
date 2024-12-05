@@ -41,7 +41,7 @@ class Environment:
         :type domain_id: str
         :param project_id: 租户项目ID，用来标识事件所属项目区域。
         :type project_id: str
-        :param region_id: 数据源产品所在区域，具体取值范围查看华为云地区和终端节点定义。
+        :param region_id: 数据源产品所在区域。
         :type region_id: str
         """
         
@@ -130,7 +130,7 @@ class Environment:
     def region_id(self):
         """Gets the region_id of this Environment.
 
-        数据源产品所在区域，具体取值范围查看华为云地区和终端节点定义。
+        数据源产品所在区域。
 
         :return: The region_id of this Environment.
         :rtype: str
@@ -141,7 +141,7 @@ class Environment:
     def region_id(self, region_id):
         """Sets the region_id of this Environment.
 
-        数据源产品所在区域，具体取值范围查看华为云地区和终端节点定义。
+        数据源产品所在区域。
 
         :param region_id: The region_id of this Environment.
         :type region_id: str

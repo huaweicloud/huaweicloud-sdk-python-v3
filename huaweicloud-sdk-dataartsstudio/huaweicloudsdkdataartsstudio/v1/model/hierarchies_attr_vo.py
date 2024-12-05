@@ -49,11 +49,11 @@ class HierarchiesAttrVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码，填写String类型替代Long类型。
+        :param id: 编码，ID字符串。
         :type id: str
-        :param hierarchies_id: 层级ID，填写String类型替代Long类型。
+        :param hierarchies_id: 层级ID，ID字符串。
         :type hierarchies_id: str
-        :param attr_id: 属性ID，填写String类型替代Long类型。
+        :param attr_id: 属性ID，ID字符串。
         :type attr_id: str
         :param level: 层次。
         :type level: int
@@ -61,7 +61,7 @@ class HierarchiesAttrVO:
         :type attr_name_en: str
         :param attr_name_ch: 引用属性名称，只读。
         :type attr_name_ch: str
-        :param detail_attr_ids: 详情属性ID，填写String类型替代Long类型。
+        :param detail_attr_ids: 详情属性ID，ID字符串。
         :type detail_attr_ids: list[str]
         :param detail_attr_name_ens: 详情属性英文。
         :type detail_attr_name_ens: list[str]
@@ -115,7 +115,7 @@ class HierarchiesAttrVO:
     def id(self):
         """Gets the id of this HierarchiesAttrVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :return: The id of this HierarchiesAttrVO.
         :rtype: str
@@ -126,7 +126,7 @@ class HierarchiesAttrVO:
     def id(self, id):
         """Sets the id of this HierarchiesAttrVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :param id: The id of this HierarchiesAttrVO.
         :type id: str
@@ -137,7 +137,7 @@ class HierarchiesAttrVO:
     def hierarchies_id(self):
         """Gets the hierarchies_id of this HierarchiesAttrVO.
 
-        层级ID，填写String类型替代Long类型。
+        层级ID，ID字符串。
 
         :return: The hierarchies_id of this HierarchiesAttrVO.
         :rtype: str
@@ -148,7 +148,7 @@ class HierarchiesAttrVO:
     def hierarchies_id(self, hierarchies_id):
         """Sets the hierarchies_id of this HierarchiesAttrVO.
 
-        层级ID，填写String类型替代Long类型。
+        层级ID，ID字符串。
 
         :param hierarchies_id: The hierarchies_id of this HierarchiesAttrVO.
         :type hierarchies_id: str
@@ -159,7 +159,7 @@ class HierarchiesAttrVO:
     def attr_id(self):
         """Gets the attr_id of this HierarchiesAttrVO.
 
-        属性ID，填写String类型替代Long类型。
+        属性ID，ID字符串。
 
         :return: The attr_id of this HierarchiesAttrVO.
         :rtype: str
@@ -170,7 +170,7 @@ class HierarchiesAttrVO:
     def attr_id(self, attr_id):
         """Sets the attr_id of this HierarchiesAttrVO.
 
-        属性ID，填写String类型替代Long类型。
+        属性ID，ID字符串。
 
         :param attr_id: The attr_id of this HierarchiesAttrVO.
         :type attr_id: str
@@ -247,7 +247,7 @@ class HierarchiesAttrVO:
     def detail_attr_ids(self):
         """Gets the detail_attr_ids of this HierarchiesAttrVO.
 
-        详情属性ID，填写String类型替代Long类型。
+        详情属性ID，ID字符串。
 
         :return: The detail_attr_ids of this HierarchiesAttrVO.
         :rtype: list[str]
@@ -258,7 +258,7 @@ class HierarchiesAttrVO:
     def detail_attr_ids(self, detail_attr_ids):
         """Sets the detail_attr_ids of this HierarchiesAttrVO.
 
-        详情属性ID，填写String类型替代Long类型。
+        详情属性ID，ID字符串。
 
         :param detail_attr_ids: The detail_attr_ids of this HierarchiesAttrVO.
         :type detail_attr_ids: list[str]

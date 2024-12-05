@@ -24,7 +24,7 @@ class ScopedTokenInfo:
         'domain': 'DomainInfo',
         'project': 'ProjectInfo',
         'roles': 'list[ScopedTokenInfoRoles]',
-        'catalog': 'list[UnscopedTokenInfoCatalogEndpoints]'
+        'catalog': 'list[UnscopedTokenInfoEndpoints]'
     }
 
     attribute_map = {
@@ -58,7 +58,7 @@ class ScopedTokenInfo:
         :param roles: roles信息。
         :type roles: list[:class:`huaweicloudsdkiam.v3.ScopedTokenInfoRoles`]
         :param catalog: catalog信息
-        :type catalog: list[:class:`huaweicloudsdkiam.v3.UnscopedTokenInfoCatalogEndpoints`]
+        :type catalog: list[:class:`huaweicloudsdkiam.v3.UnscopedTokenInfoEndpoints`]
         """
         
         
@@ -233,7 +233,7 @@ class ScopedTokenInfo:
         catalog信息
 
         :return: The catalog of this ScopedTokenInfo.
-        :rtype: list[:class:`huaweicloudsdkiam.v3.UnscopedTokenInfoCatalogEndpoints`]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.UnscopedTokenInfoEndpoints`]
         """
         return self._catalog
 
@@ -244,7 +244,7 @@ class ScopedTokenInfo:
         catalog信息
 
         :param catalog: The catalog of this ScopedTokenInfo.
-        :type catalog: list[:class:`huaweicloudsdkiam.v3.UnscopedTokenInfoCatalogEndpoints`]
+        :type catalog: list[:class:`huaweicloudsdkiam.v3.UnscopedTokenInfoEndpoints`]
         """
         self._catalog = catalog
 

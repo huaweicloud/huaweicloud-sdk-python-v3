@@ -18,23 +18,27 @@ class ShowInstanceConfigurationModifyHistoryRequest:
 
     openapi_types = {
         'instance_id': 'str',
+        'entity_id': 'str',
         'offset': 'int',
         'limit': 'int'
     }
 
     attribute_map = {
         'instance_id': 'instance_id',
+        'entity_id': 'entity_id',
         'offset': 'offset',
         'limit': 'limit'
     }
 
-    def __init__(self, instance_id=None, offset=None, limit=None):
+    def __init__(self, instance_id=None, entity_id=None, offset=None, limit=None):
         """ShowInstanceConfigurationModifyHistoryRequest
 
         The model defined in huaweicloud sdk
 
         :param instance_id: 实例ID。
         :type instance_id: str
+        :param entity_id: 实例ID或组ID或节点ID。可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
+        :type entity_id: str
         :param offset: 索引位置，偏移量。  从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。 取值必须为数字，不能为负数。
         :type offset: int
         :param limit: 查询个数上限值。 - 取值范围: 1~100。 - 不传该参数时，默认查询前100条信息。
@@ -44,11 +48,13 @@ class ShowInstanceConfigurationModifyHistoryRequest:
         
 
         self._instance_id = None
+        self._entity_id = None
         self._offset = None
         self._limit = None
         self.discriminator = None
 
         self.instance_id = instance_id
+        self.entity_id = entity_id
         if offset is not None:
             self.offset = offset
         if limit is not None:
@@ -75,6 +81,28 @@ class ShowInstanceConfigurationModifyHistoryRequest:
         :type instance_id: str
         """
         self._instance_id = instance_id
+
+    @property
+    def entity_id(self):
+        """Gets the entity_id of this ShowInstanceConfigurationModifyHistoryRequest.
+
+        实例ID或组ID或节点ID。可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
+
+        :return: The entity_id of this ShowInstanceConfigurationModifyHistoryRequest.
+        :rtype: str
+        """
+        return self._entity_id
+
+    @entity_id.setter
+    def entity_id(self, entity_id):
+        """Sets the entity_id of this ShowInstanceConfigurationModifyHistoryRequest.
+
+        实例ID或组ID或节点ID。可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
+
+        :param entity_id: The entity_id of this ShowInstanceConfigurationModifyHistoryRequest.
+        :type entity_id: str
+        """
+        self._entity_id = entity_id
 
     @property
     def offset(self):

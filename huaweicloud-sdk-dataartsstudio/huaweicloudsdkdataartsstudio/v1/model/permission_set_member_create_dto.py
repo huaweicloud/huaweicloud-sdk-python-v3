@@ -20,17 +20,19 @@ class PermissionSetMemberCreateDTO:
         'member_type': 'str',
         'member_id': 'str',
         'member_name': 'str',
-        'workspace': 'str'
+        'workspace': 'str',
+        'auto_sync': 'bool'
     }
 
     attribute_map = {
         'member_type': 'member_type',
         'member_id': 'member_id',
         'member_name': 'member_name',
-        'workspace': 'workspace'
+        'workspace': 'workspace',
+        'auto_sync': 'auto_sync'
     }
 
-    def __init__(self, member_type=None, member_id=None, member_name=None, workspace=None):
+    def __init__(self, member_type=None, member_id=None, member_name=None, workspace=None, auto_sync=None):
         """PermissionSetMemberCreateDTO
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class PermissionSetMemberCreateDTO:
         :type member_name: str
         :param workspace: 工作空间
         :type workspace: str
+        :param auto_sync: 是否自动触发同步, 默认false
+        :type auto_sync: bool
         """
         
         
@@ -51,6 +55,7 @@ class PermissionSetMemberCreateDTO:
         self._member_id = None
         self._member_name = None
         self._workspace = None
+        self._auto_sync = None
         self.discriminator = None
 
         if member_type is not None:
@@ -61,6 +66,8 @@ class PermissionSetMemberCreateDTO:
             self.member_name = member_name
         if workspace is not None:
             self.workspace = workspace
+        if auto_sync is not None:
+            self.auto_sync = auto_sync
 
     @property
     def member_type(self):
@@ -149,6 +156,28 @@ class PermissionSetMemberCreateDTO:
         :type workspace: str
         """
         self._workspace = workspace
+
+    @property
+    def auto_sync(self):
+        """Gets the auto_sync of this PermissionSetMemberCreateDTO.
+
+        是否自动触发同步, 默认false
+
+        :return: The auto_sync of this PermissionSetMemberCreateDTO.
+        :rtype: bool
+        """
+        return self._auto_sync
+
+    @auto_sync.setter
+    def auto_sync(self, auto_sync):
+        """Sets the auto_sync of this PermissionSetMemberCreateDTO.
+
+        是否自动触发同步, 默认false
+
+        :param auto_sync: The auto_sync of this PermissionSetMemberCreateDTO.
+        :type auto_sync: bool
+        """
+        self._auto_sync = auto_sync
 
     def to_dict(self):
         """Returns the model properties as a dict"""

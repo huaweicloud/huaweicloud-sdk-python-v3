@@ -69,9 +69,9 @@ class AggregationLogicTableAttributeVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码，填写String类型替代Long类型。
+        :param id: 编码，ID字符串。
         :type id: str
-        :param aggregation_logic_table_id: 所属汇总表ID，填写String类型替代Long类型。
+        :param aggregation_logic_table_id: 所属汇总表ID，ID字符串。
         :type aggregation_logic_table_id: str
         :param ordinal: 序号。
         :type ordinal: int
@@ -103,7 +103,7 @@ class AggregationLogicTableAttributeVO:
         :type ref_name_ch: str
         :param ref_name_en: 属性关联对象的英文名
         :type ref_name_en: str
-        :param stand_row_id: 关联的数据标准的ID，填写String类型替代Long类型。
+        :param stand_row_id: 关联的数据标准的ID，ID字符串。
         :type stand_row_id: str
         :param stand_row_name: 关联的数据标准名称，只读。
         :type stand_row_name: str
@@ -180,7 +180,7 @@ class AggregationLogicTableAttributeVO:
     def id(self):
         """Gets the id of this AggregationLogicTableAttributeVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :return: The id of this AggregationLogicTableAttributeVO.
         :rtype: str
@@ -191,7 +191,7 @@ class AggregationLogicTableAttributeVO:
     def id(self, id):
         """Sets the id of this AggregationLogicTableAttributeVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :param id: The id of this AggregationLogicTableAttributeVO.
         :type id: str
@@ -202,7 +202,7 @@ class AggregationLogicTableAttributeVO:
     def aggregation_logic_table_id(self):
         """Gets the aggregation_logic_table_id of this AggregationLogicTableAttributeVO.
 
-        所属汇总表ID，填写String类型替代Long类型。
+        所属汇总表ID，ID字符串。
 
         :return: The aggregation_logic_table_id of this AggregationLogicTableAttributeVO.
         :rtype: str
@@ -213,7 +213,7 @@ class AggregationLogicTableAttributeVO:
     def aggregation_logic_table_id(self, aggregation_logic_table_id):
         """Sets the aggregation_logic_table_id of this AggregationLogicTableAttributeVO.
 
-        所属汇总表ID，填写String类型替代Long类型。
+        所属汇总表ID，ID字符串。
 
         :param aggregation_logic_table_id: The aggregation_logic_table_id of this AggregationLogicTableAttributeVO.
         :type aggregation_logic_table_id: str
@@ -546,7 +546,7 @@ class AggregationLogicTableAttributeVO:
     def stand_row_id(self):
         """Gets the stand_row_id of this AggregationLogicTableAttributeVO.
 
-        关联的数据标准的ID，填写String类型替代Long类型。
+        关联的数据标准的ID，ID字符串。
 
         :return: The stand_row_id of this AggregationLogicTableAttributeVO.
         :rtype: str
@@ -557,7 +557,7 @@ class AggregationLogicTableAttributeVO:
     def stand_row_id(self, stand_row_id):
         """Sets the stand_row_id of this AggregationLogicTableAttributeVO.
 
-        关联的数据标准的ID，填写String类型替代Long类型。
+        关联的数据标准的ID，ID字符串。
 
         :param stand_row_id: The stand_row_id of this AggregationLogicTableAttributeVO.
         :type stand_row_id: str

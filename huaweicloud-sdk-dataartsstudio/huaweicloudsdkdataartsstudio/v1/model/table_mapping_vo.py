@@ -57,15 +57,15 @@ class TableMappingVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码，填写String类型替代Long类型。
+        :param id: 编码，ID字符串。
         :type id: str
         :param name: 名称。
         :type name: str
         :param description: 描述。
         :type description: str
-        :param target_table_id: 目的表ID，填写String类型替代Long类型。
+        :param target_table_id: 目的表ID，ID字符串。
         :type target_table_id: str
-        :param src_model_id: 来源表在关系建模中的模型ID，填写String类型替代Long类型。
+        :param src_model_id: 来源表在关系建模中的模型ID，ID字符串。
         :type src_model_id: str
         :param src_model_name: 来源模型名称。
         :type src_model_name: str
@@ -142,7 +142,7 @@ class TableMappingVO:
     def id(self):
         """Gets the id of this TableMappingVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :return: The id of this TableMappingVO.
         :rtype: str
@@ -153,7 +153,7 @@ class TableMappingVO:
     def id(self, id):
         """Sets the id of this TableMappingVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :param id: The id of this TableMappingVO.
         :type id: str
@@ -208,7 +208,7 @@ class TableMappingVO:
     def target_table_id(self):
         """Gets the target_table_id of this TableMappingVO.
 
-        目的表ID，填写String类型替代Long类型。
+        目的表ID，ID字符串。
 
         :return: The target_table_id of this TableMappingVO.
         :rtype: str
@@ -219,7 +219,7 @@ class TableMappingVO:
     def target_table_id(self, target_table_id):
         """Sets the target_table_id of this TableMappingVO.
 
-        目的表ID，填写String类型替代Long类型。
+        目的表ID，ID字符串。
 
         :param target_table_id: The target_table_id of this TableMappingVO.
         :type target_table_id: str
@@ -230,7 +230,7 @@ class TableMappingVO:
     def src_model_id(self):
         """Gets the src_model_id of this TableMappingVO.
 
-        来源表在关系建模中的模型ID，填写String类型替代Long类型。
+        来源表在关系建模中的模型ID，ID字符串。
 
         :return: The src_model_id of this TableMappingVO.
         :rtype: str
@@ -241,7 +241,7 @@ class TableMappingVO:
     def src_model_id(self, src_model_id):
         """Sets the src_model_id of this TableMappingVO.
 
-        来源表在关系建模中的模型ID，填写String类型替代Long类型。
+        来源表在关系建模中的模型ID，ID字符串。
 
         :param src_model_id: The src_model_id of this TableMappingVO.
         :type src_model_id: str

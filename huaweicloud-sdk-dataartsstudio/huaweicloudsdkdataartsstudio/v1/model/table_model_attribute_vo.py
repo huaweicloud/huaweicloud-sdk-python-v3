@@ -87,7 +87,7 @@ class TableModelAttributeVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码，填写String类型替代Long类型。
+        :param id: 编码，ID字符串。
         :type id: str
         :param name_en: 字段名。
         :type name_en: str
@@ -119,7 +119,7 @@ class TableModelAttributeVO:
         :type not_null: bool
         :param ordinal: 序号。
         :type ordinal: int
-        :param table_model_id: 所属关系建模的模型ID，填写String类型替代Long类型。
+        :param table_model_id: 所属关系建模的模型ID，ID字符串。
         :type table_model_id: str
         :param create_time: 创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
@@ -129,7 +129,7 @@ class TableModelAttributeVO:
         :type tags: list[:class:`huaweicloudsdkdataartsstudio.v1.TagVO`]
         :param secrecy_levels: 密级
         :type secrecy_levels: list[:class:`huaweicloudsdkdataartsstudio.v1.SecrecyLevelVO`]
-        :param stand_row_id: 关联的数据标准的ID，填写String类型替代Long类型。
+        :param stand_row_id: 关联的数据标准的ID，ID字符串。
         :type stand_row_id: str
         :param stand_row_name: 关联的数据标准名称，只读。
         :type stand_row_name: str
@@ -141,7 +141,7 @@ class TableModelAttributeVO:
         :type self_defined_fields: list[:class:`huaweicloudsdkdataartsstudio.v1.SelfDefinedFieldVO`]
         :param code: 逻辑属性编码
         :type code: str
-        :param related_logic_attr_id: 关联逻辑属性ID，填写String类型替代Long类型。
+        :param related_logic_attr_id: 关联逻辑属性ID，ID字符串。
         :type related_logic_attr_id: str
         :param related_logic_attr_name: 关联逻辑实体属性中文名称
         :type related_logic_attr_name: str
@@ -244,7 +244,7 @@ class TableModelAttributeVO:
     def id(self):
         """Gets the id of this TableModelAttributeVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :return: The id of this TableModelAttributeVO.
         :rtype: str
@@ -255,7 +255,7 @@ class TableModelAttributeVO:
     def id(self, id):
         """Sets the id of this TableModelAttributeVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :param id: The id of this TableModelAttributeVO.
         :type id: str
@@ -592,7 +592,7 @@ class TableModelAttributeVO:
     def table_model_id(self):
         """Gets the table_model_id of this TableModelAttributeVO.
 
-        所属关系建模的模型ID，填写String类型替代Long类型。
+        所属关系建模的模型ID，ID字符串。
 
         :return: The table_model_id of this TableModelAttributeVO.
         :rtype: str
@@ -603,7 +603,7 @@ class TableModelAttributeVO:
     def table_model_id(self, table_model_id):
         """Sets the table_model_id of this TableModelAttributeVO.
 
-        所属关系建模的模型ID，填写String类型替代Long类型。
+        所属关系建模的模型ID，ID字符串。
 
         :param table_model_id: The table_model_id of this TableModelAttributeVO.
         :type table_model_id: str
@@ -702,7 +702,7 @@ class TableModelAttributeVO:
     def stand_row_id(self):
         """Gets the stand_row_id of this TableModelAttributeVO.
 
-        关联的数据标准的ID，填写String类型替代Long类型。
+        关联的数据标准的ID，ID字符串。
 
         :return: The stand_row_id of this TableModelAttributeVO.
         :rtype: str
@@ -713,7 +713,7 @@ class TableModelAttributeVO:
     def stand_row_id(self, stand_row_id):
         """Sets the stand_row_id of this TableModelAttributeVO.
 
-        关联的数据标准的ID，填写String类型替代Long类型。
+        关联的数据标准的ID，ID字符串。
 
         :param stand_row_id: The stand_row_id of this TableModelAttributeVO.
         :type stand_row_id: str
@@ -834,7 +834,7 @@ class TableModelAttributeVO:
     def related_logic_attr_id(self):
         """Gets the related_logic_attr_id of this TableModelAttributeVO.
 
-        关联逻辑属性ID，填写String类型替代Long类型。
+        关联逻辑属性ID，ID字符串。
 
         :return: The related_logic_attr_id of this TableModelAttributeVO.
         :rtype: str
@@ -845,7 +845,7 @@ class TableModelAttributeVO:
     def related_logic_attr_id(self, related_logic_attr_id):
         """Sets the related_logic_attr_id of this TableModelAttributeVO.
 
-        关联逻辑属性ID，填写String类型替代Long类型。
+        关联逻辑属性ID，ID字符串。
 
         :param related_logic_attr_id: The related_logic_attr_id of this TableModelAttributeVO.
         :type related_logic_attr_id: str

@@ -45,9 +45,9 @@ class BizDatasourceRelationVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码，填写String类型替代Long类型。
+        :param id: 编码，ID字符串。
         :type id: str
-        :param biz_id: 业务对象信息，填写String类型替代Long类型。
+        :param biz_id: 业务对象信息，ID字符串。
         :type biz_id: str
         :param biz_type: 
         :type biz_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
@@ -99,7 +99,7 @@ class BizDatasourceRelationVO:
     def id(self):
         """Gets the id of this BizDatasourceRelationVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :return: The id of this BizDatasourceRelationVO.
         :rtype: str
@@ -110,7 +110,7 @@ class BizDatasourceRelationVO:
     def id(self, id):
         """Sets the id of this BizDatasourceRelationVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :param id: The id of this BizDatasourceRelationVO.
         :type id: str
@@ -121,7 +121,7 @@ class BizDatasourceRelationVO:
     def biz_id(self):
         """Gets the biz_id of this BizDatasourceRelationVO.
 
-        业务对象信息，填写String类型替代Long类型。
+        业务对象信息，ID字符串。
 
         :return: The biz_id of this BizDatasourceRelationVO.
         :rtype: str
@@ -132,7 +132,7 @@ class BizDatasourceRelationVO:
     def biz_id(self, biz_id):
         """Sets the biz_id of this BizDatasourceRelationVO.
 
-        业务对象信息，填写String类型替代Long类型。
+        业务对象信息，ID字符串。
 
         :param biz_id: The biz_id of this BizDatasourceRelationVO.
         :type biz_id: str

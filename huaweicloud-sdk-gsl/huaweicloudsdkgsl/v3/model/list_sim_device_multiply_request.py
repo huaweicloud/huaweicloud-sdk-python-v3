@@ -20,6 +20,7 @@ class ListSimDeviceMultiplyRequest:
         'cid': 'str',
         'online_carrier': 'int',
         'sim_card_id': 'int',
+        'order_id': 'int',
         'version': 'int',
         'limit': 'int',
         'offset': 'int'
@@ -29,12 +30,13 @@ class ListSimDeviceMultiplyRequest:
         'cid': 'cid',
         'online_carrier': 'online_carrier',
         'sim_card_id': 'sim_card_id',
+        'order_id': 'order_id',
         'version': 'version',
         'limit': 'limit',
         'offset': 'offset'
     }
 
-    def __init__(self, cid=None, online_carrier=None, sim_card_id=None, version=None, limit=None, offset=None):
+    def __init__(self, cid=None, online_carrier=None, sim_card_id=None, order_id=None, version=None, limit=None, offset=None):
         """ListSimDeviceMultiplyRequest
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class ListSimDeviceMultiplyRequest:
         :type online_carrier: int
         :param sim_card_id: sim卡id
         :type sim_card_id: int
+        :param order_id: 批次号
+        :type order_id: int
         :param version: 三网卡版本信息
         :type version: int
         :param limit: 分页查询时每页显示的记录数，默认值为10，取值范围为10-500的整数
@@ -58,6 +62,7 @@ class ListSimDeviceMultiplyRequest:
         self._cid = None
         self._online_carrier = None
         self._sim_card_id = None
+        self._order_id = None
         self._version = None
         self._limit = None
         self._offset = None
@@ -69,6 +74,8 @@ class ListSimDeviceMultiplyRequest:
             self.online_carrier = online_carrier
         if sim_card_id is not None:
             self.sim_card_id = sim_card_id
+        if order_id is not None:
+            self.order_id = order_id
         if version is not None:
             self.version = version
         if limit is not None:
@@ -141,6 +148,28 @@ class ListSimDeviceMultiplyRequest:
         :type sim_card_id: int
         """
         self._sim_card_id = sim_card_id
+
+    @property
+    def order_id(self):
+        """Gets the order_id of this ListSimDeviceMultiplyRequest.
+
+        批次号
+
+        :return: The order_id of this ListSimDeviceMultiplyRequest.
+        :rtype: int
+        """
+        return self._order_id
+
+    @order_id.setter
+    def order_id(self, order_id):
+        """Sets the order_id of this ListSimDeviceMultiplyRequest.
+
+        批次号
+
+        :param order_id: The order_id of this ListSimDeviceMultiplyRequest.
+        :type order_id: int
+        """
+        self._order_id = order_id
 
     @property
     def version(self):

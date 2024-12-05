@@ -49,11 +49,11 @@ class CommonConditionVO:
         :type field_names: list[str]
         :param cal_exp: 计算表达式，形如&#39;${table_id.column_id} &gt; 1&#39;，其中table_id表示引用字段所属表ID，column_id表示引用字段ID。
         :type cal_exp: str
-        :param cal_fn_ids: 引用函数ID，填写String类型替代Long类型。
+        :param cal_fn_ids: 引用函数ID，ID字符串。
         :type cal_fn_ids: list[str]
         :param front_configs: 前端表达式配置，用于前端数据恢复。
         :type front_configs: str
-        :param id: 通用限定ID，只读，填写String类型替代Long类型。
+        :param id: 通用限定ID，只读，ID字符串。
         :type id: str
         """
         
@@ -171,7 +171,7 @@ class CommonConditionVO:
     def cal_fn_ids(self):
         """Gets the cal_fn_ids of this CommonConditionVO.
 
-        引用函数ID，填写String类型替代Long类型。
+        引用函数ID，ID字符串。
 
         :return: The cal_fn_ids of this CommonConditionVO.
         :rtype: list[str]
@@ -182,7 +182,7 @@ class CommonConditionVO:
     def cal_fn_ids(self, cal_fn_ids):
         """Sets the cal_fn_ids of this CommonConditionVO.
 
-        引用函数ID，填写String类型替代Long类型。
+        引用函数ID，ID字符串。
 
         :param cal_fn_ids: The cal_fn_ids of this CommonConditionVO.
         :type cal_fn_ids: list[str]
@@ -215,7 +215,7 @@ class CommonConditionVO:
     def id(self):
         """Gets the id of this CommonConditionVO.
 
-        通用限定ID，只读，填写String类型替代Long类型。
+        通用限定ID，只读，ID字符串。
 
         :return: The id of this CommonConditionVO.
         :rtype: str
@@ -226,7 +226,7 @@ class CommonConditionVO:
     def id(self, id):
         """Sets the id of this CommonConditionVO.
 
-        通用限定ID，只读，填写String类型替代Long类型。
+        通用限定ID，只读，ID字符串。
 
         :param id: The id of this CommonConditionVO.
         :type id: str

@@ -71,7 +71,7 @@ class ApprovalVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 审批单ID，填写String类型替代Long类型。
+        :param id: 审批单ID，ID字符串。
         :type id: str
         :param tenant_id: 项目ID，获取方式参考接口路径参数“project_id”。
         :type tenant_id: str
@@ -79,7 +79,7 @@ class ApprovalVO:
         :type name_ch: str
         :param name_en: 业务英文名。
         :type name_en: str
-        :param biz_id: 业务ID，填写String类型替代Long类型。
+        :param biz_id: 业务ID，ID字符串。
         :type biz_id: str
         :param biz_type: 
         :type biz_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
@@ -192,7 +192,7 @@ class ApprovalVO:
     def id(self):
         """Gets the id of this ApprovalVO.
 
-        审批单ID，填写String类型替代Long类型。
+        审批单ID，ID字符串。
 
         :return: The id of this ApprovalVO.
         :rtype: str
@@ -203,7 +203,7 @@ class ApprovalVO:
     def id(self, id):
         """Sets the id of this ApprovalVO.
 
-        审批单ID，填写String类型替代Long类型。
+        审批单ID，ID字符串。
 
         :param id: The id of this ApprovalVO.
         :type id: str
@@ -280,7 +280,7 @@ class ApprovalVO:
     def biz_id(self):
         """Gets the biz_id of this ApprovalVO.
 
-        业务ID，填写String类型替代Long类型。
+        业务ID，ID字符串。
 
         :return: The biz_id of this ApprovalVO.
         :rtype: str
@@ -291,7 +291,7 @@ class ApprovalVO:
     def biz_id(self, biz_id):
         """Sets the biz_id of this ApprovalVO.
 
-        业务ID，填写String类型替代Long类型。
+        业务ID，ID字符串。
 
         :param biz_id: The biz_id of this ApprovalVO.
         :type biz_id: str

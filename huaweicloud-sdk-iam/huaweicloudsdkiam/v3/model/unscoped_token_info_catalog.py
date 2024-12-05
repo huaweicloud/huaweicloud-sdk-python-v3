@@ -20,19 +20,17 @@ class UnscopedTokenInfoCatalog:
         'id': 'str',
         'name': 'str',
         'type': 'str',
-        'endpoints': 'list[UnscopedTokenInfoCatalogEndpoints]',
-        'description': 'object'
+        'endpoints': 'list[UnscopedTokenInfoEndpoints]'
     }
 
     attribute_map = {
         'id': 'id',
         'name': 'name',
         'type': 'type',
-        'endpoints': 'endpoints',
-        'description': 'description'
+        'endpoints': 'endpoints'
     }
 
-    def __init__(self, id=None, name=None, type=None, endpoints=None, description=None):
+    def __init__(self, id=None, name=None, type=None, endpoints=None):
         """UnscopedTokenInfoCatalog
 
         The model defined in huaweicloud sdk
@@ -44,9 +42,7 @@ class UnscopedTokenInfoCatalog:
         :param type: 该接口所属服务。
         :type type: str
         :param endpoints: 
-        :type endpoints: list[:class:`huaweicloudsdkiam.v3.UnscopedTokenInfoCatalogEndpoints`]
-        :param description: 
-        :type description: object
+        :type endpoints: list[:class:`huaweicloudsdkiam.v3.UnscopedTokenInfoEndpoints`]
         """
         
         
@@ -55,7 +51,6 @@ class UnscopedTokenInfoCatalog:
         self._name = None
         self._type = None
         self._endpoints = None
-        self._description = None
         self.discriminator = None
 
         if id is not None:
@@ -66,8 +61,6 @@ class UnscopedTokenInfoCatalog:
             self.type = type
         if endpoints is not None:
             self.endpoints = endpoints
-        if description is not None:
-            self.description = description
 
     @property
     def id(self):
@@ -140,7 +133,7 @@ class UnscopedTokenInfoCatalog:
         """Gets the endpoints of this UnscopedTokenInfoCatalog.
 
         :return: The endpoints of this UnscopedTokenInfoCatalog.
-        :rtype: list[:class:`huaweicloudsdkiam.v3.UnscopedTokenInfoCatalogEndpoints`]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.UnscopedTokenInfoEndpoints`]
         """
         return self._endpoints
 
@@ -149,27 +142,9 @@ class UnscopedTokenInfoCatalog:
         """Sets the endpoints of this UnscopedTokenInfoCatalog.
 
         :param endpoints: The endpoints of this UnscopedTokenInfoCatalog.
-        :type endpoints: list[:class:`huaweicloudsdkiam.v3.UnscopedTokenInfoCatalogEndpoints`]
+        :type endpoints: list[:class:`huaweicloudsdkiam.v3.UnscopedTokenInfoEndpoints`]
         """
         self._endpoints = endpoints
-
-    @property
-    def description(self):
-        """Gets the description of this UnscopedTokenInfoCatalog.
-
-        :return: The description of this UnscopedTokenInfoCatalog.
-        :rtype: object
-        """
-        return self._description
-
-    @description.setter
-    def description(self, description):
-        """Sets the description of this UnscopedTokenInfoCatalog.
-
-        :param description: The description of this UnscopedTokenInfoCatalog.
-        :type description: object
-        """
-        self._description = description
 
     def to_dict(self):
         """Returns the model properties as a dict"""

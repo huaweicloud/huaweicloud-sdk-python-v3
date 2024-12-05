@@ -71,17 +71,17 @@ class ListDerivativeIndexesRequest:
         :type approver: str
         :param status: 业务状态。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审批   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审批   - OFFLINE: 已下线   - REJECT: 已驳回 
         :type status: str
-        :param dimension_id: 依据维度ID查维度属性，填写String类型替代Long类型。
+        :param dimension_id: 依据维度ID查维度属性，ID字符串。
         :type dimension_id: str
         :param dimension_group: 依据维度颗粒度查维度属性。
         :type dimension_group: str
-        :param atomic_index_id: 依据原子指标ID查维度属性，填写String类型替代Long类型。
+        :param atomic_index_id: 依据原子指标ID查维度属性，ID字符串。
         :type atomic_index_id: str
         :param all_metrics: 是否查询复合指标
         :type all_metrics: bool
         :param dw_type: 数据连接类型
         :type dw_type: str
-        :param l3_id: 业务对象l3的ID，填写String类型替代Long类型。
+        :param l3_id: 业务对象l3的ID，ID字符串。
         :type l3_id: str
         :param begin_time: 时间过滤左边界，与end_time一起使用，只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type begin_time: str
@@ -281,7 +281,7 @@ class ListDerivativeIndexesRequest:
     def dimension_id(self):
         """Gets the dimension_id of this ListDerivativeIndexesRequest.
 
-        依据维度ID查维度属性，填写String类型替代Long类型。
+        依据维度ID查维度属性，ID字符串。
 
         :return: The dimension_id of this ListDerivativeIndexesRequest.
         :rtype: str
@@ -292,7 +292,7 @@ class ListDerivativeIndexesRequest:
     def dimension_id(self, dimension_id):
         """Sets the dimension_id of this ListDerivativeIndexesRequest.
 
-        依据维度ID查维度属性，填写String类型替代Long类型。
+        依据维度ID查维度属性，ID字符串。
 
         :param dimension_id: The dimension_id of this ListDerivativeIndexesRequest.
         :type dimension_id: str
@@ -325,7 +325,7 @@ class ListDerivativeIndexesRequest:
     def atomic_index_id(self):
         """Gets the atomic_index_id of this ListDerivativeIndexesRequest.
 
-        依据原子指标ID查维度属性，填写String类型替代Long类型。
+        依据原子指标ID查维度属性，ID字符串。
 
         :return: The atomic_index_id of this ListDerivativeIndexesRequest.
         :rtype: str
@@ -336,7 +336,7 @@ class ListDerivativeIndexesRequest:
     def atomic_index_id(self, atomic_index_id):
         """Sets the atomic_index_id of this ListDerivativeIndexesRequest.
 
-        依据原子指标ID查维度属性，填写String类型替代Long类型。
+        依据原子指标ID查维度属性，ID字符串。
 
         :param atomic_index_id: The atomic_index_id of this ListDerivativeIndexesRequest.
         :type atomic_index_id: str
@@ -391,7 +391,7 @@ class ListDerivativeIndexesRequest:
     def l3_id(self):
         """Gets the l3_id of this ListDerivativeIndexesRequest.
 
-        业务对象l3的ID，填写String类型替代Long类型。
+        业务对象l3的ID，ID字符串。
 
         :return: The l3_id of this ListDerivativeIndexesRequest.
         :rtype: str
@@ -402,7 +402,7 @@ class ListDerivativeIndexesRequest:
     def l3_id(self, l3_id):
         """Sets the l3_id of this ListDerivativeIndexesRequest.
 
-        业务对象l3的ID，填写String类型替代Long类型。
+        业务对象l3的ID，ID字符串。
 
         :param l3_id: The l3_id of this ListDerivativeIndexesRequest.
         :type l3_id: str

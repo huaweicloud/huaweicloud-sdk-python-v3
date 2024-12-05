@@ -89,7 +89,7 @@ class CompoundMetricVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码，填写String类型替代Long类型。
+        :param id: 编码，ID字符串。
         :type id: str
         :param name_en: 字段名。
         :type name_en: str
@@ -107,23 +107,23 @@ class CompoundMetricVO:
         :type compound_type: str
         :param comparison_type: 比较类型。 枚举值：   - YEAR_TO_YEAR: 年同比   - MONTH_TO_MONTH: 月同比   - WEEK_TO_WEEK: 周同比 
         :type comparison_type: str
-        :param metric_ids: 指标信息，填写String类型替代Long类型。
+        :param metric_ids: 指标信息，ID字符串。
         :type metric_ids: list[str]
         :param metric_names: 指标名称信息。
         :type metric_names: list[str]
-        :param compound_metric_ids: 复合指标信息，填写String类型替代Long类型。
+        :param compound_metric_ids: 复合指标信息，ID字符串。
         :type compound_metric_ids: list[str]
         :param compound_metric_names: 复合指标名称信息
         :type compound_metric_names: list[str]
-        :param cal_fn_ids: 引用函数ID，填写String类型替代Long类型。
+        :param cal_fn_ids: 引用函数ID，ID字符串。
         :type cal_fn_ids: list[str]
         :param cal_exp: 计算表达式，形如${index_id} + ${compound#index_id}，其中index_id代表引用的衍生指标ID，compound#index_id代表引用的复合指标ID。
         :type cal_exp: str
-        :param l1_id: 主题域分组ID，只读，填写String类型替代Long类型。
+        :param l1_id: 主题域分组ID，只读，ID字符串。
         :type l1_id: str
         :param l2_id: 主题域ID，只读，创建和更新时无需填写。
         :type l2_id: str
-        :param l3_id: 业务对象ID，填写String类型替代Long类型。
+        :param l3_id: 业务对象ID，ID字符串。
         :type l3_id: str
         :param data_type: 字段类型。
         :type data_type: str
@@ -149,7 +149,7 @@ class CompoundMetricVO:
         :type l2: str
         :param l3: 业务对象中文名，只读，创建和更新时无需填写。
         :type l3: str
-        :param summary_table_id: 汇总表ID，只读，填写String类型替代Long类型。
+        :param summary_table_id: 汇总表ID，只读，ID字符串。
         :type summary_table_id: str
         """
         
@@ -199,11 +199,11 @@ class CompoundMetricVO:
             self.group_name = group_name
         if group_code is not None:
             self.group_code = group_code
-        if compound_type is not None:
-            self.compound_type = compound_type
+        self.compound_type = compound_type
         if comparison_type is not None:
             self.comparison_type = comparison_type
-        self.metric_ids = metric_ids
+        if metric_ids is not None:
+            self.metric_ids = metric_ids
         if metric_names is not None:
             self.metric_names = metric_names
         if compound_metric_ids is not None:
@@ -212,15 +212,14 @@ class CompoundMetricVO:
             self.compound_metric_names = compound_metric_names
         if cal_fn_ids is not None:
             self.cal_fn_ids = cal_fn_ids
-        self.cal_exp = cal_exp
+        if cal_exp is not None:
+            self.cal_exp = cal_exp
         if l1_id is not None:
             self.l1_id = l1_id
         if l2_id is not None:
             self.l2_id = l2_id
-        if l3_id is not None:
-            self.l3_id = l3_id
-        if data_type is not None:
-            self.data_type = data_type
+        self.l3_id = l3_id
+        self.data_type = data_type
         if create_by is not None:
             self.create_by = create_by
         if update_by is not None:
@@ -250,7 +249,7 @@ class CompoundMetricVO:
     def id(self):
         """Gets the id of this CompoundMetricVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :return: The id of this CompoundMetricVO.
         :rtype: str
@@ -261,7 +260,7 @@ class CompoundMetricVO:
     def id(self, id):
         """Sets the id of this CompoundMetricVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :param id: The id of this CompoundMetricVO.
         :type id: str
@@ -448,7 +447,7 @@ class CompoundMetricVO:
     def metric_ids(self):
         """Gets the metric_ids of this CompoundMetricVO.
 
-        指标信息，填写String类型替代Long类型。
+        指标信息，ID字符串。
 
         :return: The metric_ids of this CompoundMetricVO.
         :rtype: list[str]
@@ -459,7 +458,7 @@ class CompoundMetricVO:
     def metric_ids(self, metric_ids):
         """Sets the metric_ids of this CompoundMetricVO.
 
-        指标信息，填写String类型替代Long类型。
+        指标信息，ID字符串。
 
         :param metric_ids: The metric_ids of this CompoundMetricVO.
         :type metric_ids: list[str]
@@ -492,7 +491,7 @@ class CompoundMetricVO:
     def compound_metric_ids(self):
         """Gets the compound_metric_ids of this CompoundMetricVO.
 
-        复合指标信息，填写String类型替代Long类型。
+        复合指标信息，ID字符串。
 
         :return: The compound_metric_ids of this CompoundMetricVO.
         :rtype: list[str]
@@ -503,7 +502,7 @@ class CompoundMetricVO:
     def compound_metric_ids(self, compound_metric_ids):
         """Sets the compound_metric_ids of this CompoundMetricVO.
 
-        复合指标信息，填写String类型替代Long类型。
+        复合指标信息，ID字符串。
 
         :param compound_metric_ids: The compound_metric_ids of this CompoundMetricVO.
         :type compound_metric_ids: list[str]
@@ -536,7 +535,7 @@ class CompoundMetricVO:
     def cal_fn_ids(self):
         """Gets the cal_fn_ids of this CompoundMetricVO.
 
-        引用函数ID，填写String类型替代Long类型。
+        引用函数ID，ID字符串。
 
         :return: The cal_fn_ids of this CompoundMetricVO.
         :rtype: list[str]
@@ -547,7 +546,7 @@ class CompoundMetricVO:
     def cal_fn_ids(self, cal_fn_ids):
         """Sets the cal_fn_ids of this CompoundMetricVO.
 
-        引用函数ID，填写String类型替代Long类型。
+        引用函数ID，ID字符串。
 
         :param cal_fn_ids: The cal_fn_ids of this CompoundMetricVO.
         :type cal_fn_ids: list[str]
@@ -580,7 +579,7 @@ class CompoundMetricVO:
     def l1_id(self):
         """Gets the l1_id of this CompoundMetricVO.
 
-        主题域分组ID，只读，填写String类型替代Long类型。
+        主题域分组ID，只读，ID字符串。
 
         :return: The l1_id of this CompoundMetricVO.
         :rtype: str
@@ -591,7 +590,7 @@ class CompoundMetricVO:
     def l1_id(self, l1_id):
         """Sets the l1_id of this CompoundMetricVO.
 
-        主题域分组ID，只读，填写String类型替代Long类型。
+        主题域分组ID，只读，ID字符串。
 
         :param l1_id: The l1_id of this CompoundMetricVO.
         :type l1_id: str
@@ -624,7 +623,7 @@ class CompoundMetricVO:
     def l3_id(self):
         """Gets the l3_id of this CompoundMetricVO.
 
-        业务对象ID，填写String类型替代Long类型。
+        业务对象ID，ID字符串。
 
         :return: The l3_id of this CompoundMetricVO.
         :rtype: str
@@ -635,7 +634,7 @@ class CompoundMetricVO:
     def l3_id(self, l3_id):
         """Sets the l3_id of this CompoundMetricVO.
 
-        业务对象ID，填写String类型替代Long类型。
+        业务对象ID，ID字符串。
 
         :param l3_id: The l3_id of this CompoundMetricVO.
         :type l3_id: str
@@ -894,7 +893,7 @@ class CompoundMetricVO:
     def summary_table_id(self):
         """Gets the summary_table_id of this CompoundMetricVO.
 
-        汇总表ID，只读，填写String类型替代Long类型。
+        汇总表ID，只读，ID字符串。
 
         :return: The summary_table_id of this CompoundMetricVO.
         :rtype: str
@@ -905,7 +904,7 @@ class CompoundMetricVO:
     def summary_table_id(self, summary_table_id):
         """Sets the summary_table_id of this CompoundMetricVO.
 
-        汇总表ID，只读，填写String类型替代Long类型。
+        汇总表ID，只读，ID字符串。
 
         :param summary_table_id: The summary_table_id of this CompoundMetricVO.
         :type summary_table_id: str

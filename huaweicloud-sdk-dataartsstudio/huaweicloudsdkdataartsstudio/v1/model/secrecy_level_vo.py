@@ -47,7 +47,7 @@ class SecrecyLevelVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 密级ID，填写String类型替代Long类型。
+        :param id: 密级ID，ID字符串。
         :type id: str
         :param uuid: 数据安全主键。
         :type uuid: str
@@ -107,7 +107,7 @@ class SecrecyLevelVO:
     def id(self):
         """Gets the id of this SecrecyLevelVO.
 
-        密级ID，填写String类型替代Long类型。
+        密级ID，ID字符串。
 
         :return: The id of this SecrecyLevelVO.
         :rtype: str
@@ -118,7 +118,7 @@ class SecrecyLevelVO:
     def id(self, id):
         """Sets the id of this SecrecyLevelVO.
 
-        密级ID，填写String类型替代Long类型。
+        密级ID，ID字符串。
 
         :param id: The id of this SecrecyLevelVO.
         :type id: str

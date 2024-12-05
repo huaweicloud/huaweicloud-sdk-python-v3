@@ -67,9 +67,9 @@ class ListCompoundMetricsRequest:
         :type status: str
         :param dimension_group: 依据维度颗粒度查维度属性。
         :type dimension_group: str
-        :param atomic_index_id: 依据原子指标ID查维度属性，填写String类型替代Long类型。
+        :param atomic_index_id: 依据原子指标ID查维度属性，ID字符串。
         :type atomic_index_id: str
-        :param l3_id: 业务对象l3的ID，填写String类型替代Long类型。
+        :param l3_id: 业务对象l3的ID，ID字符串。
         :type l3_id: str
         :param begin_time: 时间过滤左边界，与end_time一起使用，只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type begin_time: str
@@ -282,7 +282,7 @@ class ListCompoundMetricsRequest:
     def atomic_index_id(self):
         """Gets the atomic_index_id of this ListCompoundMetricsRequest.
 
-        依据原子指标ID查维度属性，填写String类型替代Long类型。
+        依据原子指标ID查维度属性，ID字符串。
 
         :return: The atomic_index_id of this ListCompoundMetricsRequest.
         :rtype: str
@@ -293,7 +293,7 @@ class ListCompoundMetricsRequest:
     def atomic_index_id(self, atomic_index_id):
         """Sets the atomic_index_id of this ListCompoundMetricsRequest.
 
-        依据原子指标ID查维度属性，填写String类型替代Long类型。
+        依据原子指标ID查维度属性，ID字符串。
 
         :param atomic_index_id: The atomic_index_id of this ListCompoundMetricsRequest.
         :type atomic_index_id: str
@@ -304,7 +304,7 @@ class ListCompoundMetricsRequest:
     def l3_id(self):
         """Gets the l3_id of this ListCompoundMetricsRequest.
 
-        业务对象l3的ID，填写String类型替代Long类型。
+        业务对象l3的ID，ID字符串。
 
         :return: The l3_id of this ListCompoundMetricsRequest.
         :rtype: str
@@ -315,7 +315,7 @@ class ListCompoundMetricsRequest:
     def l3_id(self, l3_id):
         """Sets the l3_id of this ListCompoundMetricsRequest.
 
-        业务对象l3的ID，填写String类型替代Long类型。
+        业务对象l3的ID，ID字符串。
 
         :param l3_id: The l3_id of this ListCompoundMetricsRequest.
         :type l3_id: str

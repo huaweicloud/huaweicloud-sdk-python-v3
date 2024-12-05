@@ -25,8 +25,7 @@ class KeystoneUpdateUserByAdminResult:
         'password_expires_at': 'str',
         'links': 'LinksSelf',
         'id': 'str',
-        'enabled': 'bool',
-        'extra': 'KeystoneUserResultExtra'
+        'enabled': 'bool'
     }
 
     attribute_map = {
@@ -38,11 +37,10 @@ class KeystoneUpdateUserByAdminResult:
         'password_expires_at': 'password_expires_at',
         'links': 'links',
         'id': 'id',
-        'enabled': 'enabled',
-        'extra': 'extra'
+        'enabled': 'enabled'
     }
 
-    def __init__(self, pwd_status=None, domain_id=None, last_project_id=None, name=None, description=None, password_expires_at=None, links=None, id=None, enabled=None, extra=None):
+    def __init__(self, pwd_status=None, domain_id=None, last_project_id=None, name=None, description=None, password_expires_at=None, links=None, id=None, enabled=None):
         """KeystoneUpdateUserByAdminResult
 
         The model defined in huaweicloud sdk
@@ -65,8 +63,6 @@ class KeystoneUpdateUserByAdminResult:
         :type id: str
         :param enabled: IAM用户是否启用。true表示启用，false表示停用，默认为true。
         :type enabled: bool
-        :param extra: 
-        :type extra: :class:`huaweicloudsdkiam.v3.KeystoneUserResultExtra`
         """
         
         
@@ -80,7 +76,6 @@ class KeystoneUpdateUserByAdminResult:
         self._links = None
         self._id = None
         self._enabled = None
-        self._extra = None
         self.discriminator = None
 
         if pwd_status is not None:
@@ -95,8 +90,6 @@ class KeystoneUpdateUserByAdminResult:
         self.links = links
         self.id = id
         self.enabled = enabled
-        if extra is not None:
-            self.extra = extra
 
     @property
     def pwd_status(self):
@@ -291,24 +284,6 @@ class KeystoneUpdateUserByAdminResult:
         :type enabled: bool
         """
         self._enabled = enabled
-
-    @property
-    def extra(self):
-        """Gets the extra of this KeystoneUpdateUserByAdminResult.
-
-        :return: The extra of this KeystoneUpdateUserByAdminResult.
-        :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUserResultExtra`
-        """
-        return self._extra
-
-    @extra.setter
-    def extra(self, extra):
-        """Sets the extra of this KeystoneUpdateUserByAdminResult.
-
-        :param extra: The extra of this KeystoneUpdateUserByAdminResult.
-        :type extra: :class:`huaweicloudsdkiam.v3.KeystoneUserResultExtra`
-        """
-        self._extra = extra
 
     def to_dict(self):
         """Returns the model properties as a dict"""

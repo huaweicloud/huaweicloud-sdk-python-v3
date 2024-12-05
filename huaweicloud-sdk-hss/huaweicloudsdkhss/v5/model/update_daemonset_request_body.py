@@ -55,13 +55,13 @@ class UpdateDaemonsetRequestBody:
         :type runtime_info: list[:class:`huaweicloudsdkhss.v5.RuntimeRequestBody`]
         :param schedule_info: 
         :type schedule_info: :class:`huaweicloudsdkhss.v5.UpdateDaemonsetRequestBodyScheduleInfo`
-        :param invoked_service: 调用服务，标识cce免费体检报告，cce调用传参为cce:   - hss：hss服务    - cce：cce服务
+        :param invoked_service: 调用服务，默认hss，cce集成防护调用场景使用:   - hss：hss服务    - cce：cce服务
         :type invoked_service: str
-        :param charging_mode: 付费模式:   - on_demand:按需    - free_security_check:免费安全体检
+        :param charging_mode: 付费模式，cce集成防护调用场景使用:   - on_demand:按需    - free_security_check:免费安全体检
         :type charging_mode: str
-        :param cce_protection_type: cce防护类型:   - cluster_level:集群级别防护    - node_level:节点级别防护
+        :param cce_protection_type: cce防护类型，cce集成防护调用场景使用:   - cluster_level:集群级别防护    - node_level:节点级别防护
         :type cce_protection_type: str
-        :param prefer_packet_cycle: 优先使用包周期配额；默认false
+        :param prefer_packet_cycle: 优先使用包周期配额，cce集成防护调用场景使用，默认false
         :type prefer_packet_cycle: bool
         """
         
@@ -207,7 +207,7 @@ class UpdateDaemonsetRequestBody:
     def invoked_service(self):
         """Gets the invoked_service of this UpdateDaemonsetRequestBody.
 
-        调用服务，标识cce免费体检报告，cce调用传参为cce:   - hss：hss服务    - cce：cce服务
+        调用服务，默认hss，cce集成防护调用场景使用:   - hss：hss服务    - cce：cce服务
 
         :return: The invoked_service of this UpdateDaemonsetRequestBody.
         :rtype: str
@@ -218,7 +218,7 @@ class UpdateDaemonsetRequestBody:
     def invoked_service(self, invoked_service):
         """Sets the invoked_service of this UpdateDaemonsetRequestBody.
 
-        调用服务，标识cce免费体检报告，cce调用传参为cce:   - hss：hss服务    - cce：cce服务
+        调用服务，默认hss，cce集成防护调用场景使用:   - hss：hss服务    - cce：cce服务
 
         :param invoked_service: The invoked_service of this UpdateDaemonsetRequestBody.
         :type invoked_service: str
@@ -229,7 +229,7 @@ class UpdateDaemonsetRequestBody:
     def charging_mode(self):
         """Gets the charging_mode of this UpdateDaemonsetRequestBody.
 
-        付费模式:   - on_demand:按需    - free_security_check:免费安全体检
+        付费模式，cce集成防护调用场景使用:   - on_demand:按需    - free_security_check:免费安全体检
 
         :return: The charging_mode of this UpdateDaemonsetRequestBody.
         :rtype: str
@@ -240,7 +240,7 @@ class UpdateDaemonsetRequestBody:
     def charging_mode(self, charging_mode):
         """Sets the charging_mode of this UpdateDaemonsetRequestBody.
 
-        付费模式:   - on_demand:按需    - free_security_check:免费安全体检
+        付费模式，cce集成防护调用场景使用:   - on_demand:按需    - free_security_check:免费安全体检
 
         :param charging_mode: The charging_mode of this UpdateDaemonsetRequestBody.
         :type charging_mode: str
@@ -251,7 +251,7 @@ class UpdateDaemonsetRequestBody:
     def cce_protection_type(self):
         """Gets the cce_protection_type of this UpdateDaemonsetRequestBody.
 
-        cce防护类型:   - cluster_level:集群级别防护    - node_level:节点级别防护
+        cce防护类型，cce集成防护调用场景使用:   - cluster_level:集群级别防护    - node_level:节点级别防护
 
         :return: The cce_protection_type of this UpdateDaemonsetRequestBody.
         :rtype: str
@@ -262,7 +262,7 @@ class UpdateDaemonsetRequestBody:
     def cce_protection_type(self, cce_protection_type):
         """Sets the cce_protection_type of this UpdateDaemonsetRequestBody.
 
-        cce防护类型:   - cluster_level:集群级别防护    - node_level:节点级别防护
+        cce防护类型，cce集成防护调用场景使用:   - cluster_level:集群级别防护    - node_level:节点级别防护
 
         :param cce_protection_type: The cce_protection_type of this UpdateDaemonsetRequestBody.
         :type cce_protection_type: str
@@ -273,7 +273,7 @@ class UpdateDaemonsetRequestBody:
     def prefer_packet_cycle(self):
         """Gets the prefer_packet_cycle of this UpdateDaemonsetRequestBody.
 
-        优先使用包周期配额；默认false
+        优先使用包周期配额，cce集成防护调用场景使用，默认false
 
         :return: The prefer_packet_cycle of this UpdateDaemonsetRequestBody.
         :rtype: bool
@@ -284,7 +284,7 @@ class UpdateDaemonsetRequestBody:
     def prefer_packet_cycle(self, prefer_packet_cycle):
         """Sets the prefer_packet_cycle of this UpdateDaemonsetRequestBody.
 
-        优先使用包周期配额；默认false
+        优先使用包周期配额，cce集成防护调用场景使用，默认false
 
         :param prefer_packet_cycle: The prefer_packet_cycle of this UpdateDaemonsetRequestBody.
         :type prefer_packet_cycle: bool

@@ -43,11 +43,11 @@ class BizVersionManageVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: ID信息，填写String类型替代Long类型。
+        :param id: ID信息，ID字符串。
         :type id: str
         :param biz_type: 
         :type biz_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
-        :param biz_id: 业务ID，填写String类型替代Long类型。
+        :param biz_id: 业务ID，ID字符串。
         :type biz_id: str
         :param biz_info: 业务对象信息。
         :type biz_info: str
@@ -94,7 +94,7 @@ class BizVersionManageVO:
     def id(self):
         """Gets the id of this BizVersionManageVO.
 
-        ID信息，填写String类型替代Long类型。
+        ID信息，ID字符串。
 
         :return: The id of this BizVersionManageVO.
         :rtype: str
@@ -105,7 +105,7 @@ class BizVersionManageVO:
     def id(self, id):
         """Sets the id of this BizVersionManageVO.
 
-        ID信息，填写String类型替代Long类型。
+        ID信息，ID字符串。
 
         :param id: The id of this BizVersionManageVO.
         :type id: str
@@ -134,7 +134,7 @@ class BizVersionManageVO:
     def biz_id(self):
         """Gets the biz_id of this BizVersionManageVO.
 
-        业务ID，填写String类型替代Long类型。
+        业务ID，ID字符串。
 
         :return: The biz_id of this BizVersionManageVO.
         :rtype: str
@@ -145,7 +145,7 @@ class BizVersionManageVO:
     def biz_id(self, biz_id):
         """Sets the biz_id of this BizVersionManageVO.
 
-        业务ID，填写String类型替代Long类型。
+        业务ID，ID字符串。
 
         :param biz_id: The biz_id of this BizVersionManageVO.
         :type biz_id: str

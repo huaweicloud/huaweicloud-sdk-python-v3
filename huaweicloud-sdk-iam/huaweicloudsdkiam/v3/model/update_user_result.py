@@ -30,7 +30,11 @@ class UpdateUserResult:
         'email': 'str',
         'id': 'str',
         'links': 'LinksSelf',
-        'password_expires_at': 'str'
+        'password_expires_at': 'str',
+        'create_time': 'str',
+        'xdomain_id': 'str',
+        'xdomain_type': 'str',
+        'is_domain_owner': 'bool'
     }
 
     attribute_map = {
@@ -47,10 +51,14 @@ class UpdateUserResult:
         'email': 'email',
         'id': 'id',
         'links': 'links',
-        'password_expires_at': 'password_expires_at'
+        'password_expires_at': 'password_expires_at',
+        'create_time': 'create_time',
+        'xdomain_id': 'xdomain_id',
+        'xdomain_type': 'xdomain_type',
+        'is_domain_owner': 'is_domain_owner'
     }
 
-    def __init__(self, access_mode=None, pwd_status=None, xuser_id=None, xuser_type=None, description=None, name=None, phone=None, domain_id=None, enabled=None, areacode=None, email=None, id=None, links=None, password_expires_at=None):
+    def __init__(self, access_mode=None, pwd_status=None, xuser_id=None, xuser_type=None, description=None, name=None, phone=None, domain_id=None, enabled=None, areacode=None, email=None, id=None, links=None, password_expires_at=None, create_time=None, xdomain_id=None, xdomain_type=None, is_domain_owner=None):
         """UpdateUserResult
 
         The model defined in huaweicloud sdk
@@ -83,6 +91,14 @@ class UpdateUserResult:
         :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
         :param password_expires_at: 密码过期时间（UTC时间），“null”表示密码不过期。
         :type password_expires_at: str
+        :param create_time: UTC时间，格式为YYYY-MM-DDTHH:mm:ss.ssssss，日期和时间戳格式如：2023-06-28T08:56:33.710000。
+        :type create_time: str
+        :param xdomain_id: IAM用户在外部系统中的ID。 &gt;外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。
+        :type xdomain_id: str
+        :param xdomain_type: IAM用户在外部系统中的类型。 &gt;外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。 
+        :type xdomain_type: str
+        :param is_domain_owner: IAM用户是否为账号管理员。
+        :type is_domain_owner: bool
         """
         
         
@@ -101,6 +117,10 @@ class UpdateUserResult:
         self._id = None
         self._links = None
         self._password_expires_at = None
+        self._create_time = None
+        self._xdomain_id = None
+        self._xdomain_type = None
+        self._is_domain_owner = None
         self.discriminator = None
 
         if access_mode is not None:
@@ -126,6 +146,14 @@ class UpdateUserResult:
         self.links = links
         if password_expires_at is not None:
             self.password_expires_at = password_expires_at
+        if create_time is not None:
+            self.create_time = create_time
+        if xdomain_id is not None:
+            self.xdomain_id = xdomain_id
+        if xdomain_type is not None:
+            self.xdomain_type = xdomain_type
+        if is_domain_owner is not None:
+            self.is_domain_owner = is_domain_owner
 
     @property
     def access_mode(self):
@@ -430,6 +458,94 @@ class UpdateUserResult:
         :type password_expires_at: str
         """
         self._password_expires_at = password_expires_at
+
+    @property
+    def create_time(self):
+        """Gets the create_time of this UpdateUserResult.
+
+        UTC时间，格式为YYYY-MM-DDTHH:mm:ss.ssssss，日期和时间戳格式如：2023-06-28T08:56:33.710000。
+
+        :return: The create_time of this UpdateUserResult.
+        :rtype: str
+        """
+        return self._create_time
+
+    @create_time.setter
+    def create_time(self, create_time):
+        """Sets the create_time of this UpdateUserResult.
+
+        UTC时间，格式为YYYY-MM-DDTHH:mm:ss.ssssss，日期和时间戳格式如：2023-06-28T08:56:33.710000。
+
+        :param create_time: The create_time of this UpdateUserResult.
+        :type create_time: str
+        """
+        self._create_time = create_time
+
+    @property
+    def xdomain_id(self):
+        """Gets the xdomain_id of this UpdateUserResult.
+
+        IAM用户在外部系统中的ID。 >外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。
+
+        :return: The xdomain_id of this UpdateUserResult.
+        :rtype: str
+        """
+        return self._xdomain_id
+
+    @xdomain_id.setter
+    def xdomain_id(self, xdomain_id):
+        """Sets the xdomain_id of this UpdateUserResult.
+
+        IAM用户在外部系统中的ID。 >外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。
+
+        :param xdomain_id: The xdomain_id of this UpdateUserResult.
+        :type xdomain_id: str
+        """
+        self._xdomain_id = xdomain_id
+
+    @property
+    def xdomain_type(self):
+        """Gets the xdomain_type of this UpdateUserResult.
+
+        IAM用户在外部系统中的类型。 >外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。 
+
+        :return: The xdomain_type of this UpdateUserResult.
+        :rtype: str
+        """
+        return self._xdomain_type
+
+    @xdomain_type.setter
+    def xdomain_type(self, xdomain_type):
+        """Sets the xdomain_type of this UpdateUserResult.
+
+        IAM用户在外部系统中的类型。 >外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。 
+
+        :param xdomain_type: The xdomain_type of this UpdateUserResult.
+        :type xdomain_type: str
+        """
+        self._xdomain_type = xdomain_type
+
+    @property
+    def is_domain_owner(self):
+        """Gets the is_domain_owner of this UpdateUserResult.
+
+        IAM用户是否为账号管理员。
+
+        :return: The is_domain_owner of this UpdateUserResult.
+        :rtype: bool
+        """
+        return self._is_domain_owner
+
+    @is_domain_owner.setter
+    def is_domain_owner(self, is_domain_owner):
+        """Sets the is_domain_owner of this UpdateUserResult.
+
+        IAM用户是否为账号管理员。
+
+        :param is_domain_owner: The is_domain_owner of this UpdateUserResult.
+        :type is_domain_owner: bool
+        """
+        self._is_domain_owner = is_domain_owner
 
     def to_dict(self):
         """Returns the model properties as a dict"""

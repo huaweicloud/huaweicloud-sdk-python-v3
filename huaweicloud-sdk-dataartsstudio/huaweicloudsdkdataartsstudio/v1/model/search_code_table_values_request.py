@@ -41,7 +41,7 @@ class SearchCodeTableValuesRequest:
         :type workspace: str
         :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
         :type x_project_id: str
-        :param id: 实体ID，填写String类型替代Long类型。
+        :param id: 实体ID，ID字符串。
         :type id: str
         :param limit: 每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
         :type limit: int
@@ -115,7 +115,7 @@ class SearchCodeTableValuesRequest:
     def id(self):
         """Gets the id of this SearchCodeTableValuesRequest.
 
-        实体ID，填写String类型替代Long类型。
+        实体ID，ID字符串。
 
         :return: The id of this SearchCodeTableValuesRequest.
         :rtype: str
@@ -126,7 +126,7 @@ class SearchCodeTableValuesRequest:
     def id(self, id):
         """Sets the id of this SearchCodeTableValuesRequest.
 
-        实体ID，填写String类型替代Long类型。
+        实体ID，ID字符串。
 
         :param id: The id of this SearchCodeTableValuesRequest.
         :type id: str

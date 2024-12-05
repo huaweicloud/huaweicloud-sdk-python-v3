@@ -67,9 +67,9 @@ class SearchAtomicIndexesRequest:
         :type begin_time: str
         :param end_time: 时间过滤右边界，与begin_time一起使用只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type end_time: str
-        :param l3_id: 业务对象l3的ID，填写String类型替代Long类型。
+        :param l3_id: 业务对象l3的ID，ID字符串。
         :type l3_id: str
-        :param table_id: 关联表的ID，填写String类型替代Long类型。
+        :param table_id: 关联表的ID，ID字符串。
         :type table_id: str
         :param limit: 每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
         :type limit: int
@@ -297,7 +297,7 @@ class SearchAtomicIndexesRequest:
     def l3_id(self):
         """Gets the l3_id of this SearchAtomicIndexesRequest.
 
-        业务对象l3的ID，填写String类型替代Long类型。
+        业务对象l3的ID，ID字符串。
 
         :return: The l3_id of this SearchAtomicIndexesRequest.
         :rtype: str
@@ -308,7 +308,7 @@ class SearchAtomicIndexesRequest:
     def l3_id(self, l3_id):
         """Sets the l3_id of this SearchAtomicIndexesRequest.
 
-        业务对象l3的ID，填写String类型替代Long类型。
+        业务对象l3的ID，ID字符串。
 
         :param l3_id: The l3_id of this SearchAtomicIndexesRequest.
         :type l3_id: str
@@ -319,7 +319,7 @@ class SearchAtomicIndexesRequest:
     def table_id(self):
         """Gets the table_id of this SearchAtomicIndexesRequest.
 
-        关联表的ID，填写String类型替代Long类型。
+        关联表的ID，ID字符串。
 
         :return: The table_id of this SearchAtomicIndexesRequest.
         :rtype: str
@@ -330,7 +330,7 @@ class SearchAtomicIndexesRequest:
     def table_id(self, table_id):
         """Sets the table_id of this SearchAtomicIndexesRequest.
 
-        关联表的ID，填写String类型替代Long类型。
+        关联表的ID，ID字符串。
 
         :param table_id: The table_id of this SearchAtomicIndexesRequest.
         :type table_id: str

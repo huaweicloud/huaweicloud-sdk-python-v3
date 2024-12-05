@@ -45,9 +45,9 @@ class MetricMonitorVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码，填写String类型替代Long类型。
+        :param id: 编码，ID字符串。
         :type id: str
-        :param other_metric_ids: 其他指标ID，填写String类型替代Long类型。
+        :param other_metric_ids: 其他指标ID，ID字符串。
         :type other_metric_ids: list[str]
         :param other_metric_names: 其他指标名称，只读。
         :type other_metric_names: list[str]
@@ -57,7 +57,7 @@ class MetricMonitorVO:
         :type other_compound_metric_names: list[str]
         :param expression: 告警表达式。
         :type expression: str
-        :param metric_id: 挂载指ID，填写String类型替代Long类型。
+        :param metric_id: 挂载指ID，ID字符串。
         :type metric_id: str
         :param front_configs: 前端表达式配置，用于前端数据恢复。
         :type front_configs: str
@@ -101,7 +101,7 @@ class MetricMonitorVO:
     def id(self):
         """Gets the id of this MetricMonitorVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :return: The id of this MetricMonitorVO.
         :rtype: str
@@ -112,7 +112,7 @@ class MetricMonitorVO:
     def id(self, id):
         """Sets the id of this MetricMonitorVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :param id: The id of this MetricMonitorVO.
         :type id: str
@@ -123,7 +123,7 @@ class MetricMonitorVO:
     def other_metric_ids(self):
         """Gets the other_metric_ids of this MetricMonitorVO.
 
-        其他指标ID，填写String类型替代Long类型。
+        其他指标ID，ID字符串。
 
         :return: The other_metric_ids of this MetricMonitorVO.
         :rtype: list[str]
@@ -134,7 +134,7 @@ class MetricMonitorVO:
     def other_metric_ids(self, other_metric_ids):
         """Sets the other_metric_ids of this MetricMonitorVO.
 
-        其他指标ID，填写String类型替代Long类型。
+        其他指标ID，ID字符串。
 
         :param other_metric_ids: The other_metric_ids of this MetricMonitorVO.
         :type other_metric_ids: list[str]
@@ -233,7 +233,7 @@ class MetricMonitorVO:
     def metric_id(self):
         """Gets the metric_id of this MetricMonitorVO.
 
-        挂载指ID，填写String类型替代Long类型。
+        挂载指ID，ID字符串。
 
         :return: The metric_id of this MetricMonitorVO.
         :rtype: str
@@ -244,7 +244,7 @@ class MetricMonitorVO:
     def metric_id(self, metric_id):
         """Sets the metric_id of this MetricMonitorVO.
 
-        挂载指ID，填写String类型替代Long类型。
+        挂载指ID，ID字符串。
 
         :param metric_id: The metric_id of this MetricMonitorVO.
         :type metric_id: str

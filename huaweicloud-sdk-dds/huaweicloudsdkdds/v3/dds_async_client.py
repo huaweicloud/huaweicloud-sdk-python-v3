@@ -6180,6 +6180,8 @@ class DdsAsyncClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
+        if 'entity_id' in local_var_params:
+            query_params.append(('entity_id', local_var_params['entity_id']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:

@@ -27,7 +27,6 @@ class KeystoneUserResult:
         'id': 'str',
         'enabled': 'bool',
         'pwd_strength': 'str',
-        'extra': 'KeystoneUserResultExtra',
         'access_mode': 'str'
     }
 
@@ -42,11 +41,10 @@ class KeystoneUserResult:
         'id': 'id',
         'enabled': 'enabled',
         'pwd_strength': 'pwd_strength',
-        'extra': 'extra',
         'access_mode': 'access_mode'
     }
 
-    def __init__(self, pwd_status=None, domain_id=None, last_project_id=None, name=None, description=None, password_expires_at=None, links=None, id=None, enabled=None, pwd_strength=None, extra=None, access_mode=None):
+    def __init__(self, pwd_status=None, domain_id=None, last_project_id=None, name=None, description=None, password_expires_at=None, links=None, id=None, enabled=None, pwd_strength=None, access_mode=None):
         """KeystoneUserResult
 
         The model defined in huaweicloud sdk
@@ -71,8 +69,6 @@ class KeystoneUserResult:
         :type enabled: bool
         :param pwd_strength: IAM用户的密码强度。high：密码强度高；mid：密码强度中等；low：密码强度低。
         :type pwd_strength: str
-        :param extra: 
-        :type extra: :class:`huaweicloudsdkiam.v3.KeystoneUserResultExtra`
         :param access_mode: IAM用户访问方式。 - default：默认访问模式，编程访问和管理控制台访问。 - programmatic：编程访问。 - console：管理控制台访问。
         :type access_mode: str
         """
@@ -89,7 +85,6 @@ class KeystoneUserResult:
         self._id = None
         self._enabled = None
         self._pwd_strength = None
-        self._extra = None
         self._access_mode = None
         self.discriminator = None
 
@@ -107,8 +102,6 @@ class KeystoneUserResult:
         self.enabled = enabled
         if pwd_strength is not None:
             self.pwd_strength = pwd_strength
-        if extra is not None:
-            self.extra = extra
         if access_mode is not None:
             self.access_mode = access_mode
 
@@ -327,24 +320,6 @@ class KeystoneUserResult:
         :type pwd_strength: str
         """
         self._pwd_strength = pwd_strength
-
-    @property
-    def extra(self):
-        """Gets the extra of this KeystoneUserResult.
-
-        :return: The extra of this KeystoneUserResult.
-        :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUserResultExtra`
-        """
-        return self._extra
-
-    @extra.setter
-    def extra(self, extra):
-        """Sets the extra of this KeystoneUserResult.
-
-        :param extra: The extra of this KeystoneUserResult.
-        :type extra: :class:`huaweicloudsdkiam.v3.KeystoneUserResultExtra`
-        """
-        self._extra = extra
 
     @property
     def access_mode(self):

@@ -17,29 +17,87 @@ class ApigDataSourcesVo:
     sensitive_list = []
 
     openapi_types = {
+        'mode': 'int',
+        'visible': 'int',
         'data_source_vos': 'list[ApigDataSourceVo]'
     }
 
     attribute_map = {
+        'mode': 'mode',
+        'visible': 'visible',
         'data_source_vos': 'data_source_vos'
     }
 
-    def __init__(self, data_source_vos=None):
+    def __init__(self, mode=None, visible=None, data_source_vos=None):
         """ApigDataSourcesVo
 
         The model defined in huaweicloud sdk
 
+        :param mode: 企业模式空间下的数据连接还是简单模式空间下的连接,0:简单模式，1：企业模式
+        :type mode: int
+        :param visible: 连接是否可见,0：不可见，1：可见
+        :type visible: int
         :param data_source_vos: 数据源结构体
         :type data_source_vos: list[:class:`huaweicloudsdkdataartsstudio.v1.ApigDataSourceVo`]
         """
         
         
 
+        self._mode = None
+        self._visible = None
         self._data_source_vos = None
         self.discriminator = None
 
+        if mode is not None:
+            self.mode = mode
+        if visible is not None:
+            self.visible = visible
         if data_source_vos is not None:
             self.data_source_vos = data_source_vos
+
+    @property
+    def mode(self):
+        """Gets the mode of this ApigDataSourcesVo.
+
+        企业模式空间下的数据连接还是简单模式空间下的连接,0:简单模式，1：企业模式
+
+        :return: The mode of this ApigDataSourcesVo.
+        :rtype: int
+        """
+        return self._mode
+
+    @mode.setter
+    def mode(self, mode):
+        """Sets the mode of this ApigDataSourcesVo.
+
+        企业模式空间下的数据连接还是简单模式空间下的连接,0:简单模式，1：企业模式
+
+        :param mode: The mode of this ApigDataSourcesVo.
+        :type mode: int
+        """
+        self._mode = mode
+
+    @property
+    def visible(self):
+        """Gets the visible of this ApigDataSourcesVo.
+
+        连接是否可见,0：不可见，1：可见
+
+        :return: The visible of this ApigDataSourcesVo.
+        :rtype: int
+        """
+        return self._visible
+
+    @visible.setter
+    def visible(self, visible):
+        """Sets the visible of this ApigDataSourcesVo.
+
+        连接是否可见,0：不可见，1：可见
+
+        :param visible: The visible of this ApigDataSourcesVo.
+        :type visible: int
+        """
+        self._visible = visible
 
     @property
     def data_source_vos(self):

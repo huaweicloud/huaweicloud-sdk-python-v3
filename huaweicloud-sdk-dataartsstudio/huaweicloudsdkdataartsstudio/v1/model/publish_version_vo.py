@@ -77,7 +77,7 @@ class PublishVersionVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 版本ID，填写String类型替代Long类型。
+        :param id: 版本ID，ID字符串。
         :type id: str
         :param version_name: 版本名称。
         :type version_name: str
@@ -85,7 +85,7 @@ class PublishVersionVO:
         :type version_tag: str
         :param description: 版本描述。
         :type description: str
-        :param biz_id: 业务对象ID，填写String类型替代Long类型。
+        :param biz_id: 业务对象ID，ID字符串。
         :type biz_id: str
         :param biz_type: 
         :type biz_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
@@ -212,7 +212,7 @@ class PublishVersionVO:
     def id(self):
         """Gets the id of this PublishVersionVO.
 
-        版本ID，填写String类型替代Long类型。
+        版本ID，ID字符串。
 
         :return: The id of this PublishVersionVO.
         :rtype: str
@@ -223,7 +223,7 @@ class PublishVersionVO:
     def id(self, id):
         """Sets the id of this PublishVersionVO.
 
-        版本ID，填写String类型替代Long类型。
+        版本ID，ID字符串。
 
         :param id: The id of this PublishVersionVO.
         :type id: str
@@ -300,7 +300,7 @@ class PublishVersionVO:
     def biz_id(self):
         """Gets the biz_id of this PublishVersionVO.
 
-        业务对象ID，填写String类型替代Long类型。
+        业务对象ID，ID字符串。
 
         :return: The biz_id of this PublishVersionVO.
         :rtype: str
@@ -311,7 +311,7 @@ class PublishVersionVO:
     def biz_id(self, biz_id):
         """Sets the biz_id of this PublishVersionVO.
 
-        业务对象ID，填写String类型替代Long类型。
+        业务对象ID，ID字符串。
 
         :param biz_id: The biz_id of this PublishVersionVO.
         :type biz_id: str

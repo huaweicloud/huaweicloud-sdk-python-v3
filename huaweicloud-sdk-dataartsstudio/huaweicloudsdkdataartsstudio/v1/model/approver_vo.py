@@ -51,7 +51,7 @@ class ApproverVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 审批单ID，填写String类型替代Long类型。
+        :param id: 审批单ID，ID字符串。
         :type id: str
         :param approver_name: 审批人姓名。
         :type approver_name: str
@@ -122,7 +122,7 @@ class ApproverVO:
     def id(self):
         """Gets the id of this ApproverVO.
 
-        审批单ID，填写String类型替代Long类型。
+        审批单ID，ID字符串。
 
         :return: The id of this ApproverVO.
         :rtype: str
@@ -133,7 +133,7 @@ class ApproverVO:
     def id(self, id):
         """Sets the id of this ApproverVO.
 
-        审批单ID，填写String类型替代Long类型。
+        审批单ID，ID字符串。
 
         :param id: The id of this ApproverVO.
         :type id: str

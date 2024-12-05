@@ -73,13 +73,13 @@ class FactTableAttributeVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码，填写String类型替代Long类型。
+        :param id: 编码，ID字符串。
         :type id: str
-        :param fact_logic_table_id: 所属事实表ID，只读，填写String类型替代Long类型。
+        :param fact_logic_table_id: 所属事实表ID，只读，ID字符串。
         :type fact_logic_table_id: str
         :param ordinal: 序号。
         :type ordinal: int
-        :param dimension_id: 维度ID，填写String类型替代Long类型。
+        :param dimension_id: 维度ID，ID字符串。
         :type dimension_id: str
         :param role: 维度角色。
         :type role: str
@@ -109,7 +109,7 @@ class FactTableAttributeVO:
         :type not_null: bool
         :param attribute_type: 
         :type attribute_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
-        :param stand_row_id: 关联的数据标准的ID，填写String类型替代Long类型。
+        :param stand_row_id: 关联的数据标准的ID，ID字符串。
         :type stand_row_id: str
         :param stand_row_name: 关联的数据标准名称，只读。
         :type stand_row_name: str
@@ -193,7 +193,7 @@ class FactTableAttributeVO:
     def id(self):
         """Gets the id of this FactTableAttributeVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :return: The id of this FactTableAttributeVO.
         :rtype: str
@@ -204,7 +204,7 @@ class FactTableAttributeVO:
     def id(self, id):
         """Sets the id of this FactTableAttributeVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :param id: The id of this FactTableAttributeVO.
         :type id: str
@@ -215,7 +215,7 @@ class FactTableAttributeVO:
     def fact_logic_table_id(self):
         """Gets the fact_logic_table_id of this FactTableAttributeVO.
 
-        所属事实表ID，只读，填写String类型替代Long类型。
+        所属事实表ID，只读，ID字符串。
 
         :return: The fact_logic_table_id of this FactTableAttributeVO.
         :rtype: str
@@ -226,7 +226,7 @@ class FactTableAttributeVO:
     def fact_logic_table_id(self, fact_logic_table_id):
         """Sets the fact_logic_table_id of this FactTableAttributeVO.
 
-        所属事实表ID，只读，填写String类型替代Long类型。
+        所属事实表ID，只读，ID字符串。
 
         :param fact_logic_table_id: The fact_logic_table_id of this FactTableAttributeVO.
         :type fact_logic_table_id: str
@@ -259,7 +259,7 @@ class FactTableAttributeVO:
     def dimension_id(self):
         """Gets the dimension_id of this FactTableAttributeVO.
 
-        维度ID，填写String类型替代Long类型。
+        维度ID，ID字符串。
 
         :return: The dimension_id of this FactTableAttributeVO.
         :rtype: str
@@ -270,7 +270,7 @@ class FactTableAttributeVO:
     def dimension_id(self, dimension_id):
         """Sets the dimension_id of this FactTableAttributeVO.
 
-        维度ID，填写String类型替代Long类型。
+        维度ID，ID字符串。
 
         :param dimension_id: The dimension_id of this FactTableAttributeVO.
         :type dimension_id: str
@@ -577,7 +577,7 @@ class FactTableAttributeVO:
     def stand_row_id(self):
         """Gets the stand_row_id of this FactTableAttributeVO.
 
-        关联的数据标准的ID，填写String类型替代Long类型。
+        关联的数据标准的ID，ID字符串。
 
         :return: The stand_row_id of this FactTableAttributeVO.
         :rtype: str
@@ -588,7 +588,7 @@ class FactTableAttributeVO:
     def stand_row_id(self, stand_row_id):
         """Sets the stand_row_id of this FactTableAttributeVO.
 
-        关联的数据标准的ID，填写String类型替代Long类型。
+        关联的数据标准的ID，ID字符串。
 
         :param stand_row_id: The stand_row_id of this FactTableAttributeVO.
         :type stand_row_id: str

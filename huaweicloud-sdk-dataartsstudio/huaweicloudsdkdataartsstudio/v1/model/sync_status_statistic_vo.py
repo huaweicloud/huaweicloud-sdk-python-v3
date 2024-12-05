@@ -35,13 +35,13 @@ class SyncStatusStatisticVO:
 
         The model defined in huaweicloud sdk
 
-        :param success: 成功数，填写String类型替代Long类型。
+        :param success: 成功数，ID字符串。
         :type success: str
-        :param failed: 失败数，填写String类型替代Long类型。
+        :param failed: 失败数，ID字符串。
         :type failed: str
-        :param running: 同步中，填写String类型替代Long类型。
+        :param running: 同步中，ID字符串。
         :type running: str
-        :param other: 未同步数，填写String类型替代Long类型。
+        :param other: 未同步数，ID字符串。
         :type other: str
         """
         
@@ -66,7 +66,7 @@ class SyncStatusStatisticVO:
     def success(self):
         """Gets the success of this SyncStatusStatisticVO.
 
-        成功数，填写String类型替代Long类型。
+        成功数，ID字符串。
 
         :return: The success of this SyncStatusStatisticVO.
         :rtype: str
@@ -77,7 +77,7 @@ class SyncStatusStatisticVO:
     def success(self, success):
         """Sets the success of this SyncStatusStatisticVO.
 
-        成功数，填写String类型替代Long类型。
+        成功数，ID字符串。
 
         :param success: The success of this SyncStatusStatisticVO.
         :type success: str
@@ -88,7 +88,7 @@ class SyncStatusStatisticVO:
     def failed(self):
         """Gets the failed of this SyncStatusStatisticVO.
 
-        失败数，填写String类型替代Long类型。
+        失败数，ID字符串。
 
         :return: The failed of this SyncStatusStatisticVO.
         :rtype: str
@@ -99,7 +99,7 @@ class SyncStatusStatisticVO:
     def failed(self, failed):
         """Sets the failed of this SyncStatusStatisticVO.
 
-        失败数，填写String类型替代Long类型。
+        失败数，ID字符串。
 
         :param failed: The failed of this SyncStatusStatisticVO.
         :type failed: str
@@ -110,7 +110,7 @@ class SyncStatusStatisticVO:
     def running(self):
         """Gets the running of this SyncStatusStatisticVO.
 
-        同步中，填写String类型替代Long类型。
+        同步中，ID字符串。
 
         :return: The running of this SyncStatusStatisticVO.
         :rtype: str
@@ -121,7 +121,7 @@ class SyncStatusStatisticVO:
     def running(self, running):
         """Sets the running of this SyncStatusStatisticVO.
 
-        同步中，填写String类型替代Long类型。
+        同步中，ID字符串。
 
         :param running: The running of this SyncStatusStatisticVO.
         :type running: str
@@ -132,7 +132,7 @@ class SyncStatusStatisticVO:
     def other(self):
         """Gets the other of this SyncStatusStatisticVO.
 
-        未同步数，填写String类型替代Long类型。
+        未同步数，ID字符串。
 
         :return: The other of this SyncStatusStatisticVO.
         :rtype: str
@@ -143,7 +143,7 @@ class SyncStatusStatisticVO:
     def other(self, other):
         """Sets the other of this SyncStatusStatisticVO.
 
-        未同步数，填写String类型替代Long类型。
+        未同步数，ID字符串。
 
         :param other: The other of this SyncStatusStatisticVO.
         :type other: str

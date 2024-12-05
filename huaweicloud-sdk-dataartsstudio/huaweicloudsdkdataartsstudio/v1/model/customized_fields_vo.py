@@ -51,7 +51,7 @@ class CustomizedFieldsVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码，填写String类型替代Long类型。
+        :param id: 编码，ID字符串。
         :type id: str
         :param name_ch: 自定义项中文名称。
         :type name_ch: str
@@ -118,7 +118,7 @@ class CustomizedFieldsVO:
     def id(self):
         """Gets the id of this CustomizedFieldsVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :return: The id of this CustomizedFieldsVO.
         :rtype: str
@@ -129,7 +129,7 @@ class CustomizedFieldsVO:
     def id(self, id):
         """Sets the id of this CustomizedFieldsVO.
 
-        编码，填写String类型替代Long类型。
+        编码，ID字符串。
 
         :param id: The id of this CustomizedFieldsVO.
         :type id: str
