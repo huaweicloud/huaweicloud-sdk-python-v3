@@ -27,7 +27,8 @@ class ListVpcChannelsV2Request:
         'member_host': 'str',
         'member_port': 'int',
         'member_group_name': 'str',
-        'member_group_id': 'str'
+        'member_group_id': 'str',
+        'vpc_channel_type': 'str'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class ListVpcChannelsV2Request:
         'member_host': 'member_host',
         'member_port': 'member_port',
         'member_group_name': 'member_group_name',
-        'member_group_id': 'member_group_id'
+        'member_group_id': 'member_group_id',
+        'vpc_channel_type': 'vpc_channel_type'
     }
 
-    def __init__(self, instance_id=None, offset=None, limit=None, id=None, name=None, dict_code=None, precise_search=None, member_host=None, member_port=None, member_group_name=None, member_group_id=None):
+    def __init__(self, instance_id=None, offset=None, limit=None, id=None, name=None, dict_code=None, precise_search=None, member_host=None, member_port=None, member_group_name=None, member_group_id=None, vpc_channel_type=None):
         """ListVpcChannelsV2Request
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class ListVpcChannelsV2Request:
         :type member_group_name: str
         :param member_group_id: 后端服务器组编号
         :type member_group_id: str
+        :param vpc_channel_type: vpc通道类型： - builtin：服务器类型 - microservice： 微服务类型 - reference：引用负载通道类型
+        :type vpc_channel_type: str
         """
         
         
@@ -86,6 +90,7 @@ class ListVpcChannelsV2Request:
         self._member_port = None
         self._member_group_name = None
         self._member_group_id = None
+        self._vpc_channel_type = None
         self.discriminator = None
 
         self.instance_id = instance_id
@@ -109,6 +114,8 @@ class ListVpcChannelsV2Request:
             self.member_group_name = member_group_name
         if member_group_id is not None:
             self.member_group_id = member_group_id
+        if vpc_channel_type is not None:
+            self.vpc_channel_type = vpc_channel_type
 
     @property
     def instance_id(self):
@@ -351,6 +358,28 @@ class ListVpcChannelsV2Request:
         :type member_group_id: str
         """
         self._member_group_id = member_group_id
+
+    @property
+    def vpc_channel_type(self):
+        """Gets the vpc_channel_type of this ListVpcChannelsV2Request.
+
+        vpc通道类型： - builtin：服务器类型 - microservice： 微服务类型 - reference：引用负载通道类型
+
+        :return: The vpc_channel_type of this ListVpcChannelsV2Request.
+        :rtype: str
+        """
+        return self._vpc_channel_type
+
+    @vpc_channel_type.setter
+    def vpc_channel_type(self, vpc_channel_type):
+        """Sets the vpc_channel_type of this ListVpcChannelsV2Request.
+
+        vpc通道类型： - builtin：服务器类型 - microservice： 微服务类型 - reference：引用负载通道类型
+
+        :param vpc_channel_type: The vpc_channel_type of this ListVpcChannelsV2Request.
+        :type vpc_channel_type: str
+        """
+        self._vpc_channel_type = vpc_channel_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

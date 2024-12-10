@@ -33,7 +33,7 @@ class TmsKeyValues:
 
         :param key: 键。  支持可用 UTF-8 格式表示的字母(包含中文)、数字和空格，以及以下字符： _ . : &#x3D; + - @； \\_sys\\_开头属于系统标签，租户不能输入
         :type key: str
-        :param values: 值。  支持可用 UTF-8 格式表示的字母(包含中文)、数字和空格，以及以下字符： _ . : / &#x3D; + - @
+        :param values: 值。            支持可用 UTF-8 格式表示的字母(包含中文)、数字和空格，以及以下字符： _ . : / &#x3D; + - @
         :type values: list[str]
         """
         
@@ -74,7 +74,7 @@ class TmsKeyValues:
     def values(self):
         """Gets the values of this TmsKeyValues.
 
-        值。  支持可用 UTF-8 格式表示的字母(包含中文)、数字和空格，以及以下字符： _ . : / = + - @
+        值。            支持可用 UTF-8 格式表示的字母(包含中文)、数字和空格，以及以下字符： _ . : / = + - @
 
         :return: The values of this TmsKeyValues.
         :rtype: list[str]
@@ -85,7 +85,7 @@ class TmsKeyValues:
     def values(self, values):
         """Sets the values of this TmsKeyValues.
 
-        值。  支持可用 UTF-8 格式表示的字母(包含中文)、数字和空格，以及以下字符： _ . : / = + - @
+        值。            支持可用 UTF-8 格式表示的字母(包含中文)、数字和空格，以及以下字符： _ . : / = + - @
 
         :param values: The values of this TmsKeyValues.
         :type values: list[str]

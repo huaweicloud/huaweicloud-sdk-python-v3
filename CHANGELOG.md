@@ -1,3 +1,253 @@
+# 3.1.126 2024-12-10
+
+### HuaweiCloud SDK APIG
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **AssociateCertificateV2**
+    - changes of response param
+      - `+ ssl_infos`
+  - **ShowDetailsOfCertificateV2**
+    - changes of response param
+      - `+ algorithm_type`
+  - **UpdateCertificateV2**
+    - changes of request param
+      - `+ algorithm_type`
+      - `+ cert_content_sign`
+      - `+ private_key_sign`
+    - changes of response param
+      - `+ algorithm_type`
+  - **ShowPlugin**
+    - changes of response param
+      - `+ plugin_type: enum value [proxy_mirror]`
+  - **UpdatePlugin**
+    - changes of request param
+      - `+ plugin_type: enum value [proxy_mirror]`
+    - changes of response param
+      - `+ plugin_type: enum value [proxy_mirror]`
+  - **ShowDetailsOfApiGroupV2**
+    - changes of response param
+      - `+ url_domains.ssl_infos`
+  - **UpdateApiGroupV2**
+    - changes of response param
+      - `+ url_domains.ssl_infos`
+  - **ListApisBindedToRequestThrottlingPolicyV2**
+    - changes of request param
+      - `- tags`
+  - **ShowDetailsOfMemberGroup**
+    - changes of response param
+      - `+ reference_vpc_channel_id`
+  - **UpdateMemberGroup**
+    - changes of request param
+      - `+ reference_vpc_channel_id`
+    - changes of response param
+      - `+ reference_vpc_channel_id`
+  - **CreateCertificateV2**
+    - changes of request param
+      - `+ algorithm_type`
+      - `+ cert_content_sign`
+      - `+ private_key_sign`
+    - changes of response param
+      - `+ algorithm_type`
+  - **ListCertificatesV2**
+    - changes of request param
+      - `+ algorithm_type`
+    - changes of response param
+      - `+ certs.algorithm_type`
+  - **CreatePlugin**
+    - changes of request param
+      - `+ plugin_type: enum value [proxy_mirror]`
+    - changes of response param
+      - `+ plugin_type: enum value [proxy_mirror]`
+  - **ListPlugins**
+    - changes of response param
+      - `+ plugins.plugin_type: enum value [proxy_mirror]`
+  - **AttachApiToPlugin**
+    - changes of response param
+      - `+ attached_plugins.plugin_type: enum value [proxy_mirror]`
+  - **AttachPluginToApi**
+    - changes of response param
+      - `+ attached_plugins.plugin_type: enum value [proxy_mirror]`
+  - **ListApiAttachedPlugins**
+    - changes of response param
+      - `+ plugins.plugin_type: enum value [proxy_mirror]`
+  - **ListApiAttachablePlugins**
+    - changes of response param
+      - `+ plugins.plugin_type: enum value [proxy_mirror]`
+  - **CreateApiGroupV2**
+    - changes of response param
+      - `+ url_domains.ssl_infos`
+  - **ListApiGroupsV2**
+    - changes of response param
+      - `+ groups.url_domains.ssl_infos`
+  - **ShowDetailsOfApiV2**
+    - changes of response param
+      - `+ policy_https.enable_sm_channel`
+      - `+ backend_api.enable_sm_channel`
+      - `+ api_group_info.url_domains.ssl_infos`
+  - **UpdateApiV2**
+    - changes of request param
+      - `+ policy_https.enable_sm_channel`
+      - `+ backend_api.enable_sm_channel`
+    - changes of response param
+      - `+ policy_https.enable_sm_channel`
+      - `+ backend_api.enable_sm_channel`
+      - `+ api_group_info.url_domains.ssl_infos`
+  - **ListApiVersionDetailV2**
+    - changes of response param
+      - `+ policy_https.enable_sm_channel`
+      - `+ backend_api.enable_sm_channel`
+      - `+ api_group_info.url_domains.ssl_infos`
+  - **ListMemberGroups**
+    - changes of response param
+      - `+ reference_vpc_channel_id`
+      - `+ member_groups.reference_vpc_channel_id`
+  - **CreateMemberGroup**
+    - changes of request param
+      - `+ member_groups.reference_vpc_channel_id`
+    - changes of response param
+      - `+ reference_vpc_channel_id`
+      - `+ member_groups.reference_vpc_channel_id`
+  - **CreateOrder**
+    - changes of request param
+      - `+ payment_mode: enum value [ALL_UPFRONT]`
+  - **ImportMicroservice**
+    - changes of request param
+      - `+ cce_service_info`
+  - **CreateApiV2**
+    - changes of request param
+      - `+ policy_https.enable_sm_channel`
+      - `+ backend_api.enable_sm_channel`
+    - changes of response param
+      - `+ policy_https.enable_sm_channel`
+      - `+ backend_api.enable_sm_channel`
+      - `+ api_group_info.url_domains.ssl_infos`
+  - **ListApisV2**
+    - changes of response param
+      - `+ apis.backend_api.enable_sm_channel`
+      - `+ apis.api_group_info.url_domains.ssl_infos`
+  - **ShowDetailsOfVpcChannelV2**
+    - changes of response param
+      - `+ vpc_channel_type`
+      - `+ reference_vpc_channel_id`
+      - `+ member_groups.reference_vpc_channel_id`
+      - `+ microservice_info.cce_service_info`
+  - **UpdateVpcChannelV2**
+    - changes of request param
+      - `+ vpc_channel_type`
+      - `+ member_groups.reference_vpc_channel_id`
+      - `+ microservice_info.cce_service_info`
+    - changes of response param
+      - `+ vpc_channel_type`
+      - `+ reference_vpc_channel_id`
+      - `+ member_groups.reference_vpc_channel_id`
+      - `+ microservice_info.cce_service_info`
+  - **CreateVpcChannelV2**
+    - changes of request param
+      - `+ vpc_channel_type`
+      - `+ member_groups.reference_vpc_channel_id`
+      - `+ microservice_info.cce_service_info`
+    - changes of response param
+      - `+ vpc_channel_type`
+      - `+ reference_vpc_channel_id`
+      - `+ member_groups.reference_vpc_channel_id`
+      - `+ microservice_info.cce_service_info`
+  - **ListVpcChannelsV2**
+    - changes of request param
+      - `+ vpc_channel_type`
+    - changes of response param
+      - `+ vpc_channel_type`
+      - `+ vpc_channels.vpc_channel_type`
+      - `+ reference_vpc_channel_id`
+      - `+ vpc_channels.member_groups.reference_vpc_channel_id`
+      - `+ vpc_channels.microservice_info.cce_service_info`
+
+### HuaweiCloud SDK CCE
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpgradeNodePool**
+    - changes of response param
+      - `+ jobid`
+      - `- metadata`
+      - `- apiVersion`
+      - `- kind`
+      - `- spec`
+      - `- status`
+
+### HuaweiCloud SDK CSMS
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ListUsers`
+    - `ListGrants`
+    - `UpdateGrant`
+    - `CreateGrants`
+    - `DeleteGrant`
+    - `GenerateRandomPassword`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DBSS
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListRdsDatabases**
+    - changes of request param
+      - `+ db_type: enum value [ORACLE,DAMENG,KINGBASE]`
+  - **SwitchAuditDatabase**
+    - changes of response param
+      - `+ status`
+      - `- result`
+
+### HuaweiCloud SDK IMS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListImages**
+    - changes of response param
+      - `+ images.__support_kvm_hi1822_hisriov`
+      - `+ images.__support_kvm_hi1822_hivirtionet`
+  - **UpdateImage**
+    - changes of response param
+      - `+ __support_kvm_hi1822_hisriov`
+      - `+ __support_kvm_hi1822_hivirtionet`
+
+### HuaweiCloud SDK SWR
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the APIs `ShowShareFeatureGates`, `ShowDomainResourceReports`, `ShowDomainOverview`, `CreateRepoTag`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.1.125 2024-12-05
 
 ### HuaweiCloud SDK AOS

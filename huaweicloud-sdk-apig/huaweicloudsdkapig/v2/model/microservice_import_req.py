@@ -26,6 +26,7 @@ class MicroserviceImportReq:
         'cors': 'bool',
         'cse_info': 'MicroServiceInfoCSECreate',
         'cce_info': 'MicroServiceInfoCCECreate',
+        'cce_service_info': 'MicroServiceInfoCCEServiceCreate',
         'nacos_info': 'MicroServiceInfoNacosBase'
     }
 
@@ -39,10 +40,11 @@ class MicroserviceImportReq:
         'cors': 'cors',
         'cse_info': 'cse_info',
         'cce_info': 'cce_info',
+        'cce_service_info': 'cce_service_info',
         'nacos_info': 'nacos_info'
     }
 
-    def __init__(self, group_info=None, service_type=None, protocol=None, apis=None, backend_timeout=None, auth_type=None, cors=None, cse_info=None, cce_info=None, nacos_info=None):
+    def __init__(self, group_info=None, service_type=None, protocol=None, apis=None, backend_timeout=None, auth_type=None, cors=None, cse_info=None, cce_info=None, cce_service_info=None, nacos_info=None):
         """MicroserviceImportReq
 
         The model defined in huaweicloud sdk
@@ -65,6 +67,8 @@ class MicroserviceImportReq:
         :type cse_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCSECreate`
         :param cce_info: 
         :type cce_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCCECreate`
+        :param cce_service_info: 
+        :type cce_service_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCCEServiceCreate`
         :param nacos_info: 
         :type nacos_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoNacosBase`
         """
@@ -80,6 +84,7 @@ class MicroserviceImportReq:
         self._cors = None
         self._cse_info = None
         self._cce_info = None
+        self._cce_service_info = None
         self._nacos_info = None
         self.discriminator = None
 
@@ -98,6 +103,8 @@ class MicroserviceImportReq:
             self.cse_info = cse_info
         if cce_info is not None:
             self.cce_info = cce_info
+        if cce_service_info is not None:
+            self.cce_service_info = cce_service_info
         if nacos_info is not None:
             self.nacos_info = nacos_info
 
@@ -286,6 +293,24 @@ class MicroserviceImportReq:
         :type cce_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCCECreate`
         """
         self._cce_info = cce_info
+
+    @property
+    def cce_service_info(self):
+        """Gets the cce_service_info of this MicroserviceImportReq.
+
+        :return: The cce_service_info of this MicroserviceImportReq.
+        :rtype: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCCEServiceCreate`
+        """
+        return self._cce_service_info
+
+    @cce_service_info.setter
+    def cce_service_info(self, cce_service_info):
+        """Sets the cce_service_info of this MicroserviceImportReq.
+
+        :param cce_service_info: The cce_service_info of this MicroserviceImportReq.
+        :type cce_service_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCCEServiceCreate`
+        """
+        self._cce_service_info = cce_service_info
 
     @property
     def nacos_info(self):

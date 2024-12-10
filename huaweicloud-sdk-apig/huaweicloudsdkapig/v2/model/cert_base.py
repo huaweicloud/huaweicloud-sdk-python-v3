@@ -28,7 +28,8 @@ class CertBase:
         'signature_algorithm': 'str',
         'create_time': 'datetime',
         'update_time': 'datetime',
-        'is_has_trusted_root_ca': 'bool'
+        'is_has_trusted_root_ca': 'bool',
+        'algorithm_type': 'str'
     }
 
     attribute_map = {
@@ -43,10 +44,11 @@ class CertBase:
         'signature_algorithm': 'signature_algorithm',
         'create_time': 'create_time',
         'update_time': 'update_time',
-        'is_has_trusted_root_ca': 'is_has_trusted_root_ca'
+        'is_has_trusted_root_ca': 'is_has_trusted_root_ca',
+        'algorithm_type': 'algorithm_type'
     }
 
-    def __init__(self, id=None, name=None, type=None, instance_id=None, project_id=None, common_name=None, san=None, not_after=None, signature_algorithm=None, create_time=None, update_time=None, is_has_trusted_root_ca=None):
+    def __init__(self, id=None, name=None, type=None, instance_id=None, project_id=None, common_name=None, san=None, not_after=None, signature_algorithm=None, create_time=None, update_time=None, is_has_trusted_root_ca=None, algorithm_type=None):
         """CertBase
 
         The model defined in huaweicloud sdk
@@ -75,6 +77,8 @@ class CertBase:
         :type update_time: datetime
         :param is_has_trusted_root_ca: 是否存在信任的根证书CA。当绑定证书存在trusted_root_ca时为true。
         :type is_has_trusted_root_ca: bool
+        :param algorithm_type: 证书算法类型： - RSA - ECC - SM2
+        :type algorithm_type: str
         """
         
         
@@ -91,6 +95,7 @@ class CertBase:
         self._create_time = None
         self._update_time = None
         self._is_has_trusted_root_ca = None
+        self._algorithm_type = None
         self.discriminator = None
 
         if id is not None:
@@ -117,6 +122,8 @@ class CertBase:
             self.update_time = update_time
         if is_has_trusted_root_ca is not None:
             self.is_has_trusted_root_ca = is_has_trusted_root_ca
+        if algorithm_type is not None:
+            self.algorithm_type = algorithm_type
 
     @property
     def id(self):
@@ -381,6 +388,28 @@ class CertBase:
         :type is_has_trusted_root_ca: bool
         """
         self._is_has_trusted_root_ca = is_has_trusted_root_ca
+
+    @property
+    def algorithm_type(self):
+        """Gets the algorithm_type of this CertBase.
+
+        证书算法类型： - RSA - ECC - SM2
+
+        :return: The algorithm_type of this CertBase.
+        :rtype: str
+        """
+        return self._algorithm_type
+
+    @algorithm_type.setter
+    def algorithm_type(self, algorithm_type):
+        """Sets the algorithm_type of this CertBase.
+
+        证书算法类型： - RSA - ECC - SM2
+
+        :param algorithm_type: The algorithm_type of this CertBase.
+        :type algorithm_type: str
+        """
+        self._algorithm_type = algorithm_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

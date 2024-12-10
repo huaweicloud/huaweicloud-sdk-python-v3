@@ -13,6 +13,9 @@ from huaweicloudsdkcsms.v1.model.batch_create_or_delete_tags_response import Bat
 from huaweicloudsdkcsms.v1.model.create_agency_request import CreateAgencyRequest
 from huaweicloudsdkcsms.v1.model.create_agency_request_body import CreateAgencyRequestBody
 from huaweicloudsdkcsms.v1.model.create_agency_response import CreateAgencyResponse
+from huaweicloudsdkcsms.v1.model.create_grants_request import CreateGrantsRequest
+from huaweicloudsdkcsms.v1.model.create_grants_response import CreateGrantsResponse
+from huaweicloudsdkcsms.v1.model.create_password_request_body import CreatePasswordRequestBody
 from huaweicloudsdkcsms.v1.model.create_secret_event_request import CreateSecretEventRequest
 from huaweicloudsdkcsms.v1.model.create_secret_event_request_body import CreateSecretEventRequestBody
 from huaweicloudsdkcsms.v1.model.create_secret_event_response import CreateSecretEventResponse
@@ -25,6 +28,8 @@ from huaweicloudsdkcsms.v1.model.create_secret_tag_response import CreateSecretT
 from huaweicloudsdkcsms.v1.model.create_secret_version_request import CreateSecretVersionRequest
 from huaweicloudsdkcsms.v1.model.create_secret_version_request_body import CreateSecretVersionRequestBody
 from huaweicloudsdkcsms.v1.model.create_secret_version_response import CreateSecretVersionResponse
+from huaweicloudsdkcsms.v1.model.delete_grant_request import DeleteGrantRequest
+from huaweicloudsdkcsms.v1.model.delete_grant_response import DeleteGrantResponse
 from huaweicloudsdkcsms.v1.model.delete_secret_event_request import DeleteSecretEventRequest
 from huaweicloudsdkcsms.v1.model.delete_secret_event_response import DeleteSecretEventResponse
 from huaweicloudsdkcsms.v1.model.delete_secret_for_schedule_request import DeleteSecretForScheduleRequest
@@ -39,6 +44,14 @@ from huaweicloudsdkcsms.v1.model.delete_secret_tag_response import DeleteSecretT
 from huaweicloudsdkcsms.v1.model.download_secret_blob_request import DownloadSecretBlobRequest
 from huaweicloudsdkcsms.v1.model.download_secret_blob_response import DownloadSecretBlobResponse
 from huaweicloudsdkcsms.v1.model.event import Event
+from huaweicloudsdkcsms.v1.model.generate_random_password_request import GenerateRandomPasswordRequest
+from huaweicloudsdkcsms.v1.model.generate_random_password_response import GenerateRandomPasswordResponse
+from huaweicloudsdkcsms.v1.model.grant_dto import GrantDTO
+from huaweicloudsdkcsms.v1.model.grant_data import GrantData
+from huaweicloudsdkcsms.v1.model.grant_secret_req_body import GrantSecretReqBody
+from huaweicloudsdkcsms.v1.model.grant_user_info import GrantUserInfo
+from huaweicloudsdkcsms.v1.model.list_grants_request import ListGrantsRequest
+from huaweicloudsdkcsms.v1.model.list_grants_response import ListGrantsResponse
 from huaweicloudsdkcsms.v1.model.list_notification_records_request import ListNotificationRecordsRequest
 from huaweicloudsdkcsms.v1.model.list_notification_records_response import ListNotificationRecordsResponse
 from huaweicloudsdkcsms.v1.model.list_project_secrets_tags_request import ListProjectSecretsTagsRequest
@@ -56,6 +69,8 @@ from huaweicloudsdkcsms.v1.model.list_secret_versions_request import ListSecretV
 from huaweicloudsdkcsms.v1.model.list_secret_versions_response import ListSecretVersionsResponse
 from huaweicloudsdkcsms.v1.model.list_secrets_request import ListSecretsRequest
 from huaweicloudsdkcsms.v1.model.list_secrets_response import ListSecretsResponse
+from huaweicloudsdkcsms.v1.model.list_users_request import ListUsersRequest
+from huaweicloudsdkcsms.v1.model.list_users_response import ListUsersResponse
 from huaweicloudsdkcsms.v1.model.notification import Notification
 from huaweicloudsdkcsms.v1.model.page_info import PageInfo
 from huaweicloudsdkcsms.v1.model.record import Record
@@ -83,6 +98,8 @@ from huaweicloudsdkcsms.v1.model.tag import Tag
 from huaweicloudsdkcsms.v1.model.tag_item import TagItem
 from huaweicloudsdkcsms.v1.model.tag_matches import TagMatches
 from huaweicloudsdkcsms.v1.model.tag_response import TagResponse
+from huaweicloudsdkcsms.v1.model.update_grant_request import UpdateGrantRequest
+from huaweicloudsdkcsms.v1.model.update_grant_response import UpdateGrantResponse
 from huaweicloudsdkcsms.v1.model.update_secret_event_request import UpdateSecretEventRequest
 from huaweicloudsdkcsms.v1.model.update_secret_event_request_body import UpdateSecretEventRequestBody
 from huaweicloudsdkcsms.v1.model.update_secret_event_response import UpdateSecretEventResponse
@@ -98,6 +115,8 @@ from huaweicloudsdkcsms.v1.model.update_version_response import UpdateVersionRes
 from huaweicloudsdkcsms.v1.model.upload_secret_blob_request import UploadSecretBlobRequest
 from huaweicloudsdkcsms.v1.model.upload_secret_blob_request_body import UploadSecretBlobRequestBody
 from huaweicloudsdkcsms.v1.model.upload_secret_blob_response import UploadSecretBlobResponse
+from huaweicloudsdkcsms.v1.model.user_org_relation_list_result import UserOrgRelationListResult
+from huaweicloudsdkcsms.v1.model.users_details_result import UsersDetailsResult
 from huaweicloudsdkcsms.v1.model.version import Version
 from huaweicloudsdkcsms.v1.model.version_metadata import VersionMetadata
 

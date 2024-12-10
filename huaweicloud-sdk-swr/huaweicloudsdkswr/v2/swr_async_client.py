@@ -438,6 +438,75 @@ class SwrAsyncClient(Client):
 
         return http_info
 
+    def create_repo_tag_async(self, request):
+        """创建镜像tag
+
+        创建镜像tag
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateRepoTag
+        :type request: :class:`huaweicloudsdkswr.v2.CreateRepoTagRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.CreateRepoTagResponse`
+        """
+        http_info = self._create_repo_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_repo_tag_async_invoker(self, request):
+        http_info = self._create_repo_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_repo_tag_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/manage/namespaces/{namespace}/repos/{repository}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRepoTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'namespace' in local_var_params:
+            path_params['namespace'] = local_var_params['namespace']
+        if 'repository' in local_var_params:
+            path_params['repository'] = local_var_params['repository']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_retention_async(self, request):
         """创建镜像老化规则
 
@@ -2096,6 +2165,136 @@ class SwrAsyncClient(Client):
 
         return http_info
 
+    def show_domain_overview_async(self, request):
+        """获取租户总览信息
+
+        获取租户总览信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowDomainOverview
+        :type request: :class:`huaweicloudsdkswr.v2.ShowDomainOverviewRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.ShowDomainOverviewResponse`
+        """
+        http_info = self._show_domain_overview_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_domain_overview_async_invoker(self, request):
+        http_info = self._show_domain_overview_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_domain_overview_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/manage/overview",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDomainOverviewResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_domain_resource_reports_async(self, request):
+        """获取租户资源统计信息
+
+        获取租户资源统计信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowDomainResourceReports
+        :type request: :class:`huaweicloudsdkswr.v2.ShowDomainResourceReportsRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.ShowDomainResourceReportsResponse`
+        """
+        http_info = self._show_domain_resource_reports_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_domain_resource_reports_async_invoker(self, request):
+        http_info = self._show_domain_resource_reports_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_domain_resource_reports_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/manage/reports/{resource_type}/{frequency}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDomainResourceReportsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+        if 'frequency' in local_var_params:
+            path_params['frequency'] = local_var_params['frequency']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_namespace_async(self, request):
         """获取组织详情
 
@@ -2333,6 +2532,69 @@ class SwrAsyncClient(Client):
             path_params['repository'] = local_var_params['repository']
         if 'retention_id' in local_var_params:
             path_params['retention_id'] = local_var_params['retention_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_share_feature_gates_async(self, request):
+        """查询服务特性开关信息
+
+        查询服务特性开关信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowShareFeatureGates
+        :type request: :class:`huaweicloudsdkswr.v2.ShowShareFeatureGatesRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.ShowShareFeatureGatesResponse`
+        """
+        http_info = self._show_share_feature_gates_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_share_feature_gates_async_invoker(self, request):
+        http_info = self._show_share_feature_gates_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_share_feature_gates_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/manage/projects/{project_id}/feature-gates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowShareFeatureGatesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
 
         query_params = []
 

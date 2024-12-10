@@ -30,6 +30,7 @@ class ShowDetailsOfCertificateV2Response(SdkResponse):
         'create_time': 'datetime',
         'update_time': 'datetime',
         'is_has_trusted_root_ca': 'bool',
+        'algorithm_type': 'str',
         'version': 'int',
         'organization': 'list[str]',
         'organizational_unit': 'list[str]',
@@ -54,6 +55,7 @@ class ShowDetailsOfCertificateV2Response(SdkResponse):
         'create_time': 'create_time',
         'update_time': 'update_time',
         'is_has_trusted_root_ca': 'is_has_trusted_root_ca',
+        'algorithm_type': 'algorithm_type',
         'version': 'version',
         'organization': 'organization',
         'organizational_unit': 'organizational_unit',
@@ -65,7 +67,7 @@ class ShowDetailsOfCertificateV2Response(SdkResponse):
         'issuer': 'issuer'
     }
 
-    def __init__(self, id=None, name=None, type=None, instance_id=None, project_id=None, common_name=None, san=None, not_after=None, signature_algorithm=None, create_time=None, update_time=None, is_has_trusted_root_ca=None, version=None, organization=None, organizational_unit=None, locality=None, state=None, country=None, not_before=None, serial_number=None, issuer=None):
+    def __init__(self, id=None, name=None, type=None, instance_id=None, project_id=None, common_name=None, san=None, not_after=None, signature_algorithm=None, create_time=None, update_time=None, is_has_trusted_root_ca=None, algorithm_type=None, version=None, organization=None, organizational_unit=None, locality=None, state=None, country=None, not_before=None, serial_number=None, issuer=None):
         """ShowDetailsOfCertificateV2Response
 
         The model defined in huaweicloud sdk
@@ -94,6 +96,8 @@ class ShowDetailsOfCertificateV2Response(SdkResponse):
         :type update_time: datetime
         :param is_has_trusted_root_ca: 是否存在信任的根证书CA。当绑定证书存在trusted_root_ca时为true。
         :type is_has_trusted_root_ca: bool
+        :param algorithm_type: 证书算法类型： - RSA - ECC - SM2
+        :type algorithm_type: str
         :param version: 版本
         :type version: int
         :param organization: 公司、组织
@@ -128,6 +132,7 @@ class ShowDetailsOfCertificateV2Response(SdkResponse):
         self._create_time = None
         self._update_time = None
         self._is_has_trusted_root_ca = None
+        self._algorithm_type = None
         self._version = None
         self._organization = None
         self._organizational_unit = None
@@ -163,6 +168,8 @@ class ShowDetailsOfCertificateV2Response(SdkResponse):
             self.update_time = update_time
         if is_has_trusted_root_ca is not None:
             self.is_has_trusted_root_ca = is_has_trusted_root_ca
+        if algorithm_type is not None:
+            self.algorithm_type = algorithm_type
         if version is not None:
             self.version = version
         if organization is not None:
@@ -445,6 +452,28 @@ class ShowDetailsOfCertificateV2Response(SdkResponse):
         :type is_has_trusted_root_ca: bool
         """
         self._is_has_trusted_root_ca = is_has_trusted_root_ca
+
+    @property
+    def algorithm_type(self):
+        """Gets the algorithm_type of this ShowDetailsOfCertificateV2Response.
+
+        证书算法类型： - RSA - ECC - SM2
+
+        :return: The algorithm_type of this ShowDetailsOfCertificateV2Response.
+        :rtype: str
+        """
+        return self._algorithm_type
+
+    @algorithm_type.setter
+    def algorithm_type(self, algorithm_type):
+        """Sets the algorithm_type of this ShowDetailsOfCertificateV2Response.
+
+        证书算法类型： - RSA - ECC - SM2
+
+        :param algorithm_type: The algorithm_type of this ShowDetailsOfCertificateV2Response.
+        :type algorithm_type: str
+        """
+        self._algorithm_type = algorithm_type
 
     @property
     def version(self):

@@ -21,6 +21,9 @@ from huaweicloudsdkswr.v2.model.create_repo_domains_response import CreateRepoDo
 from huaweicloudsdkswr.v2.model.create_repo_request import CreateRepoRequest
 from huaweicloudsdkswr.v2.model.create_repo_request_body import CreateRepoRequestBody
 from huaweicloudsdkswr.v2.model.create_repo_response import CreateRepoResponse
+from huaweicloudsdkswr.v2.model.create_repo_tag_request import CreateRepoTagRequest
+from huaweicloudsdkswr.v2.model.create_repo_tag_request_body import CreateRepoTagRequestBody
+from huaweicloudsdkswr.v2.model.create_repo_tag_response import CreateRepoTagResponse
 from huaweicloudsdkswr.v2.model.create_retention_request import CreateRetentionRequest
 from huaweicloudsdkswr.v2.model.create_retention_request_body import CreateRetentionRequestBody
 from huaweicloudsdkswr.v2.model.create_retention_response import CreateRetentionResponse
@@ -74,6 +77,7 @@ from huaweicloudsdkswr.v2.model.list_shared_repos_details_request import ListSha
 from huaweicloudsdkswr.v2.model.list_shared_repos_details_response import ListSharedReposDetailsResponse
 from huaweicloudsdkswr.v2.model.list_triggers_details_request import ListTriggersDetailsRequest
 from huaweicloudsdkswr.v2.model.list_triggers_details_response import ListTriggersDetailsResponse
+from huaweicloudsdkswr.v2.model.report_data import ReportData
 from huaweicloudsdkswr.v2.model.retention import Retention
 from huaweicloudsdkswr.v2.model.retention_log import RetentionLog
 from huaweicloudsdkswr.v2.model.rule import Rule
@@ -81,6 +85,10 @@ from huaweicloudsdkswr.v2.model.show_access_domain_request import ShowAccessDoma
 from huaweicloudsdkswr.v2.model.show_access_domain_response import ShowAccessDomainResponse
 from huaweicloudsdkswr.v2.model.show_api_version_request import ShowApiVersionRequest
 from huaweicloudsdkswr.v2.model.show_api_version_response import ShowApiVersionResponse
+from huaweicloudsdkswr.v2.model.show_domain_overview_request import ShowDomainOverviewRequest
+from huaweicloudsdkswr.v2.model.show_domain_overview_response import ShowDomainOverviewResponse
+from huaweicloudsdkswr.v2.model.show_domain_resource_reports_request import ShowDomainResourceReportsRequest
+from huaweicloudsdkswr.v2.model.show_domain_resource_reports_response import ShowDomainResourceReportsResponse
 from huaweicloudsdkswr.v2.model.show_namespace import ShowNamespace
 from huaweicloudsdkswr.v2.model.show_namespace_auth_request import ShowNamespaceAuthRequest
 from huaweicloudsdkswr.v2.model.show_namespace_auth_response import ShowNamespaceAuthResponse
@@ -94,6 +102,8 @@ from huaweicloudsdkswr.v2.model.show_repository_request import ShowRepositoryReq
 from huaweicloudsdkswr.v2.model.show_repository_response import ShowRepositoryResponse
 from huaweicloudsdkswr.v2.model.show_retention_request import ShowRetentionRequest
 from huaweicloudsdkswr.v2.model.show_retention_response import ShowRetentionResponse
+from huaweicloudsdkswr.v2.model.show_share_feature_gates_request import ShowShareFeatureGatesRequest
+from huaweicloudsdkswr.v2.model.show_share_feature_gates_response import ShowShareFeatureGatesResponse
 from huaweicloudsdkswr.v2.model.show_sync_job_request import ShowSyncJobRequest
 from huaweicloudsdkswr.v2.model.show_sync_job_response import ShowSyncJobResponse
 from huaweicloudsdkswr.v2.model.show_trigger_request import ShowTriggerRequest

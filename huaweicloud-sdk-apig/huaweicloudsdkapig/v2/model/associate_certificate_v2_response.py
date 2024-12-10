@@ -27,7 +27,8 @@ class AssociateCertificateV2Response(SdkResponse):
         'ingress_http_port': 'int',
         'ingress_https_port': 'int',
         'ssl_name': 'str',
-        'ssl_id': 'str'
+        'ssl_id': 'str',
+        'ssl_infos': 'list[SslInfo]'
     }
 
     attribute_map = {
@@ -40,10 +41,11 @@ class AssociateCertificateV2Response(SdkResponse):
         'ingress_http_port': 'ingress_http_port',
         'ingress_https_port': 'ingress_https_port',
         'ssl_name': 'ssl_name',
-        'ssl_id': 'ssl_id'
+        'ssl_id': 'ssl_id',
+        'ssl_infos': 'ssl_infos'
     }
 
-    def __init__(self, url_domain=None, id=None, status=None, min_ssl_version=None, is_http_redirect_to_https=None, verified_client_certificate_enabled=None, ingress_http_port=None, ingress_https_port=None, ssl_name=None, ssl_id=None):
+    def __init__(self, url_domain=None, id=None, status=None, min_ssl_version=None, is_http_redirect_to_https=None, verified_client_certificate_enabled=None, ingress_http_port=None, ingress_https_port=None, ssl_name=None, ssl_id=None, ssl_infos=None):
         """AssociateCertificateV2Response
 
         The model defined in huaweicloud sdk
@@ -60,14 +62,16 @@ class AssociateCertificateV2Response(SdkResponse):
         :type is_http_redirect_to_https: bool
         :param verified_client_certificate_enabled: 是否开启客户端证书校验。只有绑定证书时，该参数才生效。当绑定证书存在trusted_root_ca时，默认开启；当绑定证书不存在trusted_root_ca时，默认关闭。
         :type verified_client_certificate_enabled: bool
-        :param ingress_http_port: 访问该域名绑定的http协议入方向端口，-1表示无端口且协议不支持，可使用80默认端口，其他有效端口允许的取值范围为1024~49151，需为实例已开放的HTTP协议的自定义入方向端口。  当创建域名时，该参数未填表示用默认80端口；若填写该参数，则必须同时填写https_port；若要http_port和https_port同时使用默认端口，则两个参数都不填。  当修改域名时，该参数未填表示不修改该端口。 
+        :param ingress_http_port: 访问该域名绑定的http协议入方向端口，-1表示无端口且协议不支持，可使用80默认端口，其他有效端口允许的取值范围为1024~49151，需为实例已开放的HTTP协议的自定义入方向端口。  当创建域名时，该参数未填表示用默认80端口；如果填写该参数，则必须同时填写https_port；如果要http_port和https_port同时使用默认端口，则两个参数都不填。  当修改域名时，该参数未填表示不修改该端口。 
         :type ingress_http_port: int
-        :param ingress_https_port: 访问该域名绑定的http协议入方向端口，-1表示无端口且协议不支持，可使用443默认端口，其他有效端口允许的取值范围为1024~49151，需为实例已开放的HTTPS协议的自定义入方向端口。  当创建域名时，该参数未填表示用默认443端口；若填写该参数，则必须同时填写http_port；若要http_port和https_port同时使用默认端口，则两个参数都不填。  当修改域名时，该参数未填表示不修改该端口。 
+        :param ingress_https_port: 访问该域名绑定的https协议入方向端口，-1表示无端口且协议不支持，可使用443默认端口，其他有效端口允许的取值范围为1024~49151，需为实例已开放的HTTPS协议的自定义入方向端口。  当创建域名时，该参数未填表示用默认443端口；如果填写该参数，则必须同时填写http_port；如果要http_port和https_port同时使用默认端口，则两个参数都不填。  当修改域名时，该参数未填表示不修改该端口。 
         :type ingress_https_port: int
         :param ssl_name: 证书的名称
         :type ssl_name: str
         :param ssl_id: 证书的编号
         :type ssl_id: str
+        :param ssl_infos: SSL证书列表。
+        :type ssl_infos: list[:class:`huaweicloudsdkapig.v2.SslInfo`]
         """
         
         super(AssociateCertificateV2Response, self).__init__()
@@ -82,6 +86,7 @@ class AssociateCertificateV2Response(SdkResponse):
         self._ingress_https_port = None
         self._ssl_name = None
         self._ssl_id = None
+        self._ssl_infos = None
         self.discriminator = None
 
         self.url_domain = url_domain
@@ -98,6 +103,8 @@ class AssociateCertificateV2Response(SdkResponse):
             self.ingress_https_port = ingress_https_port
         self.ssl_name = ssl_name
         self.ssl_id = ssl_id
+        if ssl_infos is not None:
+            self.ssl_infos = ssl_infos
 
     @property
     def url_domain(self):
@@ -235,7 +242,7 @@ class AssociateCertificateV2Response(SdkResponse):
     def ingress_http_port(self):
         """Gets the ingress_http_port of this AssociateCertificateV2Response.
 
-        访问该域名绑定的http协议入方向端口，-1表示无端口且协议不支持，可使用80默认端口，其他有效端口允许的取值范围为1024~49151，需为实例已开放的HTTP协议的自定义入方向端口。  当创建域名时，该参数未填表示用默认80端口；若填写该参数，则必须同时填写https_port；若要http_port和https_port同时使用默认端口，则两个参数都不填。  当修改域名时，该参数未填表示不修改该端口。 
+        访问该域名绑定的http协议入方向端口，-1表示无端口且协议不支持，可使用80默认端口，其他有效端口允许的取值范围为1024~49151，需为实例已开放的HTTP协议的自定义入方向端口。  当创建域名时，该参数未填表示用默认80端口；如果填写该参数，则必须同时填写https_port；如果要http_port和https_port同时使用默认端口，则两个参数都不填。  当修改域名时，该参数未填表示不修改该端口。 
 
         :return: The ingress_http_port of this AssociateCertificateV2Response.
         :rtype: int
@@ -246,7 +253,7 @@ class AssociateCertificateV2Response(SdkResponse):
     def ingress_http_port(self, ingress_http_port):
         """Sets the ingress_http_port of this AssociateCertificateV2Response.
 
-        访问该域名绑定的http协议入方向端口，-1表示无端口且协议不支持，可使用80默认端口，其他有效端口允许的取值范围为1024~49151，需为实例已开放的HTTP协议的自定义入方向端口。  当创建域名时，该参数未填表示用默认80端口；若填写该参数，则必须同时填写https_port；若要http_port和https_port同时使用默认端口，则两个参数都不填。  当修改域名时，该参数未填表示不修改该端口。 
+        访问该域名绑定的http协议入方向端口，-1表示无端口且协议不支持，可使用80默认端口，其他有效端口允许的取值范围为1024~49151，需为实例已开放的HTTP协议的自定义入方向端口。  当创建域名时，该参数未填表示用默认80端口；如果填写该参数，则必须同时填写https_port；如果要http_port和https_port同时使用默认端口，则两个参数都不填。  当修改域名时，该参数未填表示不修改该端口。 
 
         :param ingress_http_port: The ingress_http_port of this AssociateCertificateV2Response.
         :type ingress_http_port: int
@@ -257,7 +264,7 @@ class AssociateCertificateV2Response(SdkResponse):
     def ingress_https_port(self):
         """Gets the ingress_https_port of this AssociateCertificateV2Response.
 
-        访问该域名绑定的http协议入方向端口，-1表示无端口且协议不支持，可使用443默认端口，其他有效端口允许的取值范围为1024~49151，需为实例已开放的HTTPS协议的自定义入方向端口。  当创建域名时，该参数未填表示用默认443端口；若填写该参数，则必须同时填写http_port；若要http_port和https_port同时使用默认端口，则两个参数都不填。  当修改域名时，该参数未填表示不修改该端口。 
+        访问该域名绑定的https协议入方向端口，-1表示无端口且协议不支持，可使用443默认端口，其他有效端口允许的取值范围为1024~49151，需为实例已开放的HTTPS协议的自定义入方向端口。  当创建域名时，该参数未填表示用默认443端口；如果填写该参数，则必须同时填写http_port；如果要http_port和https_port同时使用默认端口，则两个参数都不填。  当修改域名时，该参数未填表示不修改该端口。 
 
         :return: The ingress_https_port of this AssociateCertificateV2Response.
         :rtype: int
@@ -268,7 +275,7 @@ class AssociateCertificateV2Response(SdkResponse):
     def ingress_https_port(self, ingress_https_port):
         """Sets the ingress_https_port of this AssociateCertificateV2Response.
 
-        访问该域名绑定的http协议入方向端口，-1表示无端口且协议不支持，可使用443默认端口，其他有效端口允许的取值范围为1024~49151，需为实例已开放的HTTPS协议的自定义入方向端口。  当创建域名时，该参数未填表示用默认443端口；若填写该参数，则必须同时填写http_port；若要http_port和https_port同时使用默认端口，则两个参数都不填。  当修改域名时，该参数未填表示不修改该端口。 
+        访问该域名绑定的https协议入方向端口，-1表示无端口且协议不支持，可使用443默认端口，其他有效端口允许的取值范围为1024~49151，需为实例已开放的HTTPS协议的自定义入方向端口。  当创建域名时，该参数未填表示用默认443端口；如果填写该参数，则必须同时填写http_port；如果要http_port和https_port同时使用默认端口，则两个参数都不填。  当修改域名时，该参数未填表示不修改该端口。 
 
         :param ingress_https_port: The ingress_https_port of this AssociateCertificateV2Response.
         :type ingress_https_port: int
@@ -318,6 +325,28 @@ class AssociateCertificateV2Response(SdkResponse):
         :type ssl_id: str
         """
         self._ssl_id = ssl_id
+
+    @property
+    def ssl_infos(self):
+        """Gets the ssl_infos of this AssociateCertificateV2Response.
+
+        SSL证书列表。
+
+        :return: The ssl_infos of this AssociateCertificateV2Response.
+        :rtype: list[:class:`huaweicloudsdkapig.v2.SslInfo`]
+        """
+        return self._ssl_infos
+
+    @ssl_infos.setter
+    def ssl_infos(self, ssl_infos):
+        """Sets the ssl_infos of this AssociateCertificateV2Response.
+
+        SSL证书列表。
+
+        :param ssl_infos: The ssl_infos of this AssociateCertificateV2Response.
+        :type ssl_infos: list[:class:`huaweicloudsdkapig.v2.SslInfo`]
+        """
+        self._ssl_infos = ssl_infos
 
     def to_dict(self):
         """Returns the model properties as a dict"""

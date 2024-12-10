@@ -60,6 +60,8 @@ class NatRegion:
                         "https://nat.my-kualalumpur-1.myhuaweicloud.com")
     RU_MOSCOW_1 = Region("ru-moscow-1",
                         "https://nat.ru-moscow-1.myhuaweicloud.com")
+    AP_SOUTHEAST_5 = Region("ap-southeast-5",
+                        "https://nat.ap-southeast-5.myhuaweicloud.com")
 
     static_fields = {
         "af-south-1": AF_SOUTH_1,
@@ -89,6 +91,7 @@ class NatRegion:
         "eu-west-101": EU_WEST_101,
         "my-kualalumpur-1": MY_KUALALUMPUR_1,
         "ru-moscow-1": RU_MOSCOW_1,
+        "ap-southeast-5": AP_SOUTHEAST_5,
     }
 
     @classmethod

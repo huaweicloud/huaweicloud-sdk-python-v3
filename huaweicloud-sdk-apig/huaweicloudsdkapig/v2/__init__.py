@@ -459,6 +459,9 @@ from huaweicloudsdkapig.v2.model.micro_service_info import MicroServiceInfo
 from huaweicloudsdkapig.v2.model.micro_service_info_cce import MicroServiceInfoCCE
 from huaweicloudsdkapig.v2.model.micro_service_info_cce_base import MicroServiceInfoCCEBase
 from huaweicloudsdkapig.v2.model.micro_service_info_cce_create import MicroServiceInfoCCECreate
+from huaweicloudsdkapig.v2.model.micro_service_info_cce_service import MicroServiceInfoCCEService
+from huaweicloudsdkapig.v2.model.micro_service_info_cce_service_base import MicroServiceInfoCCEServiceBase
+from huaweicloudsdkapig.v2.model.micro_service_info_cce_service_create import MicroServiceInfoCCEServiceCreate
 from huaweicloudsdkapig.v2.model.micro_service_info_cse import MicroServiceInfoCSE
 from huaweicloudsdkapig.v2.model.micro_service_info_cse_base import MicroServiceInfoCSEBase
 from huaweicloudsdkapig.v2.model.micro_service_info_cse_create import MicroServiceInfoCSECreate
@@ -561,6 +564,7 @@ from huaweicloudsdkapig.v2.model.sign_api_binding_result import SignApiBindingRe
 from huaweicloudsdkapig.v2.model.signature import Signature
 from huaweicloudsdkapig.v2.model.signature_with_bind_num import SignatureWithBindNum
 from huaweicloudsdkapig.v2.model.sl_domain_access_setting import SlDomainAccessSetting
+from huaweicloudsdkapig.v2.model.ssl_info import SslInfo
 from huaweicloudsdkapig.v2.model.statistics_api import StatisticsAPI
 from huaweicloudsdkapig.v2.model.statistics_group import StatisticsGroup
 from huaweicloudsdkapig.v2.model.success import Success

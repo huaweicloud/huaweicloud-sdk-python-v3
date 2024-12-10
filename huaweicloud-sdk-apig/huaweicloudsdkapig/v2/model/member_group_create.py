@@ -23,7 +23,8 @@ class MemberGroupCreate:
         'dict_code': 'str',
         'microservice_version': 'str',
         'microservice_port': 'int',
-        'microservice_labels': 'list[MicroserviceLabel]'
+        'microservice_labels': 'list[MicroserviceLabel]',
+        'reference_vpc_channel_id': 'str'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class MemberGroupCreate:
         'dict_code': 'dict_code',
         'microservice_version': 'microservice_version',
         'microservice_port': 'microservice_port',
-        'microservice_labels': 'microservice_labels'
+        'microservice_labels': 'microservice_labels',
+        'reference_vpc_channel_id': 'reference_vpc_channel_id'
     }
 
-    def __init__(self, member_group_name=None, member_group_remark=None, member_group_weight=None, dict_code=None, microservice_version=None, microservice_port=None, microservice_labels=None):
+    def __init__(self, member_group_name=None, member_group_remark=None, member_group_weight=None, dict_code=None, microservice_version=None, microservice_port=None, microservice_labels=None, reference_vpc_channel_id=None):
         """MemberGroupCreate
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class MemberGroupCreate:
         :type microservice_port: int
         :param microservice_labels: VPC通道后端服务器组的标签，仅VPC通道类型为微服务时支持。
         :type microservice_labels: list[:class:`huaweicloudsdkapig.v2.MicroserviceLabel`]
+        :param reference_vpc_channel_id: 引用的负载通道编号，仅VPC通道类型为引用类型（vpc_channel_type&#x3D;reference）时支持。
+        :type reference_vpc_channel_id: str
         """
         
         
@@ -66,6 +70,7 @@ class MemberGroupCreate:
         self._microservice_version = None
         self._microservice_port = None
         self._microservice_labels = None
+        self._reference_vpc_channel_id = None
         self.discriminator = None
 
         self.member_group_name = member_group_name
@@ -81,6 +86,8 @@ class MemberGroupCreate:
             self.microservice_port = microservice_port
         if microservice_labels is not None:
             self.microservice_labels = microservice_labels
+        if reference_vpc_channel_id is not None:
+            self.reference_vpc_channel_id = reference_vpc_channel_id
 
     @property
     def member_group_name(self):
@@ -235,6 +242,28 @@ class MemberGroupCreate:
         :type microservice_labels: list[:class:`huaweicloudsdkapig.v2.MicroserviceLabel`]
         """
         self._microservice_labels = microservice_labels
+
+    @property
+    def reference_vpc_channel_id(self):
+        """Gets the reference_vpc_channel_id of this MemberGroupCreate.
+
+        引用的负载通道编号，仅VPC通道类型为引用类型（vpc_channel_type=reference）时支持。
+
+        :return: The reference_vpc_channel_id of this MemberGroupCreate.
+        :rtype: str
+        """
+        return self._reference_vpc_channel_id
+
+    @reference_vpc_channel_id.setter
+    def reference_vpc_channel_id(self, reference_vpc_channel_id):
+        """Sets the reference_vpc_channel_id of this MemberGroupCreate.
+
+        引用的负载通道编号，仅VPC通道类型为引用类型（vpc_channel_type=reference）时支持。
+
+        :param reference_vpc_channel_id: The reference_vpc_channel_id of this MemberGroupCreate.
+        :type reference_vpc_channel_id: str
+        """
+        self._reference_vpc_channel_id = reference_vpc_channel_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

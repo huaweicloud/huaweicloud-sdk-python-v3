@@ -29,6 +29,7 @@ class ApiPolicyHttpResp:
         'req_uri': 'str',
         'timeout': 'int',
         'retry_count': 'str',
+        'enable_sm_channel': 'bool',
         'vpc_channel_info': 'VpcInfo',
         'vpc_channel_status': 'int'
     }
@@ -46,11 +47,12 @@ class ApiPolicyHttpResp:
         'req_uri': 'req_uri',
         'timeout': 'timeout',
         'retry_count': 'retry_count',
+        'enable_sm_channel': 'enable_sm_channel',
         'vpc_channel_info': 'vpc_channel_info',
         'vpc_channel_status': 'vpc_channel_status'
     }
 
-    def __init__(self, id=None, effect_mode=None, name=None, backend_params=None, conditions=None, authorizer_id=None, url_domain=None, req_protocol=None, req_method=None, req_uri=None, timeout=None, retry_count=None, vpc_channel_info=None, vpc_channel_status=None):
+    def __init__(self, id=None, effect_mode=None, name=None, backend_params=None, conditions=None, authorizer_id=None, url_domain=None, req_protocol=None, req_method=None, req_uri=None, timeout=None, retry_count=None, enable_sm_channel=None, vpc_channel_info=None, vpc_channel_status=None):
         """ApiPolicyHttpResp
 
         The model defined in huaweicloud sdk
@@ -79,6 +81,8 @@ class ApiPolicyHttpResp:
         :type timeout: int
         :param retry_count: 请求后端服务的重试次数，默认为-1，范围[-1,10]。  当该值为-1时，幂等的接口会重试1次，非幂等的不会重试。POST，PATCH方法为非幂等；GET，HEAD，PUT，OPTIONS和DELETE等方法为幂等的。
         :type retry_count: str
+        :param enable_sm_channel: 是否启用SM商密通道。  仅实例支持SM系列商密算法的实例时支持开启。
+        :type enable_sm_channel: bool
         :param vpc_channel_info: 
         :type vpc_channel_info: :class:`huaweicloudsdkapig.v2.VpcInfo`
         :param vpc_channel_status: 是否使用VPC通道： - 1： 使用VPC通道 - 2：不使用VPC通道
@@ -99,6 +103,7 @@ class ApiPolicyHttpResp:
         self._req_uri = None
         self._timeout = None
         self._retry_count = None
+        self._enable_sm_channel = None
         self._vpc_channel_info = None
         self._vpc_channel_status = None
         self.discriminator = None
@@ -121,6 +126,8 @@ class ApiPolicyHttpResp:
             self.timeout = timeout
         if retry_count is not None:
             self.retry_count = retry_count
+        if enable_sm_channel is not None:
+            self.enable_sm_channel = enable_sm_channel
         if vpc_channel_info is not None:
             self.vpc_channel_info = vpc_channel_info
         if vpc_channel_status is not None:
@@ -389,6 +396,28 @@ class ApiPolicyHttpResp:
         :type retry_count: str
         """
         self._retry_count = retry_count
+
+    @property
+    def enable_sm_channel(self):
+        """Gets the enable_sm_channel of this ApiPolicyHttpResp.
+
+        是否启用SM商密通道。  仅实例支持SM系列商密算法的实例时支持开启。
+
+        :return: The enable_sm_channel of this ApiPolicyHttpResp.
+        :rtype: bool
+        """
+        return self._enable_sm_channel
+
+    @enable_sm_channel.setter
+    def enable_sm_channel(self, enable_sm_channel):
+        """Sets the enable_sm_channel of this ApiPolicyHttpResp.
+
+        是否启用SM商密通道。  仅实例支持SM系列商密算法的实例时支持开启。
+
+        :param enable_sm_channel: The enable_sm_channel of this ApiPolicyHttpResp.
+        :type enable_sm_channel: bool
+        """
+        self._enable_sm_channel = enable_sm_channel
 
     @property
     def vpc_channel_info(self):

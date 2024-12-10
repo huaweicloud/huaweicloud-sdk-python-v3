@@ -23,7 +23,8 @@ class ListCertificatesV2Request:
         'common_name': 'str',
         'signature_algorithm': 'str',
         'type': 'str',
-        'instance_id': 'str'
+        'instance_id': 'str',
+        'algorithm_type': 'str'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class ListCertificatesV2Request:
         'common_name': 'common_name',
         'signature_algorithm': 'signature_algorithm',
         'type': 'type',
-        'instance_id': 'instance_id'
+        'instance_id': 'instance_id',
+        'algorithm_type': 'algorithm_type'
     }
 
-    def __init__(self, offset=None, limit=None, name=None, common_name=None, signature_algorithm=None, type=None, instance_id=None):
+    def __init__(self, offset=None, limit=None, name=None, common_name=None, signature_algorithm=None, type=None, instance_id=None, algorithm_type=None):
         """ListCertificatesV2Request
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class ListCertificatesV2Request:
         :type type: str
         :param instance_id: 证书所属实例ID
         :type instance_id: str
+        :param algorithm_type: 证书算法类型： - RSA。 - ECC。 - SM2。
+        :type algorithm_type: str
         """
         
         
@@ -66,6 +70,7 @@ class ListCertificatesV2Request:
         self._signature_algorithm = None
         self._type = None
         self._instance_id = None
+        self._algorithm_type = None
         self.discriminator = None
 
         if offset is not None:
@@ -81,6 +86,8 @@ class ListCertificatesV2Request:
         if type is not None:
             self.type = type
         self.instance_id = instance_id
+        if algorithm_type is not None:
+            self.algorithm_type = algorithm_type
 
     @property
     def offset(self):
@@ -235,6 +242,28 @@ class ListCertificatesV2Request:
         :type instance_id: str
         """
         self._instance_id = instance_id
+
+    @property
+    def algorithm_type(self):
+        """Gets the algorithm_type of this ListCertificatesV2Request.
+
+        证书算法类型： - RSA。 - ECC。 - SM2。
+
+        :return: The algorithm_type of this ListCertificatesV2Request.
+        :rtype: str
+        """
+        return self._algorithm_type
+
+    @algorithm_type.setter
+    def algorithm_type(self, algorithm_type):
+        """Sets the algorithm_type of this ListCertificatesV2Request.
+
+        证书算法类型： - RSA。 - ECC。 - SM2。
+
+        :param algorithm_type: The algorithm_type of this ListCertificatesV2Request.
+        :type algorithm_type: str
+        """
+        self._algorithm_type = algorithm_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

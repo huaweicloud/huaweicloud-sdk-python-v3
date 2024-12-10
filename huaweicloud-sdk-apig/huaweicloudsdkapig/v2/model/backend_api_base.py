@@ -27,6 +27,7 @@ class BackendApiBase:
         'timeout': 'int',
         'enable_client_ssl': 'bool',
         'retry_count': 'str',
+        'enable_sm_channel': 'bool',
         'id': 'str',
         'status': 'int',
         'register_time': 'datetime',
@@ -44,13 +45,14 @@ class BackendApiBase:
         'timeout': 'timeout',
         'enable_client_ssl': 'enable_client_ssl',
         'retry_count': 'retry_count',
+        'enable_sm_channel': 'enable_sm_channel',
         'id': 'id',
         'status': 'status',
         'register_time': 'register_time',
         'update_time': 'update_time'
     }
 
-    def __init__(self, authorizer_id=None, url_domain=None, req_protocol=None, remark=None, req_method=None, version=None, req_uri=None, timeout=None, enable_client_ssl=None, retry_count=None, id=None, status=None, register_time=None, update_time=None):
+    def __init__(self, authorizer_id=None, url_domain=None, req_protocol=None, remark=None, req_method=None, version=None, req_uri=None, timeout=None, enable_client_ssl=None, retry_count=None, enable_sm_channel=None, id=None, status=None, register_time=None, update_time=None):
         """BackendApiBase
 
         The model defined in huaweicloud sdk
@@ -75,6 +77,8 @@ class BackendApiBase:
         :type enable_client_ssl: bool
         :param retry_count: 请求后端服务的重试次数，默认为-1，范围[-1,10]。  当该值为-1时，幂等的接口会重试1次，非幂等的不会重试。POST，PATCH方法为非幂等；GET，HEAD，PUT，OPTIONS和DELETE等方法为幂等的。
         :type retry_count: str
+        :param enable_sm_channel: 是否启用SM商密通道。  仅实例支持SM系列商密算法的实例时支持开启。
+        :type enable_sm_channel: bool
         :param id: 编号
         :type id: str
         :param status: 后端状态   - 1： 有效
@@ -97,6 +101,7 @@ class BackendApiBase:
         self._timeout = None
         self._enable_client_ssl = None
         self._retry_count = None
+        self._enable_sm_channel = None
         self._id = None
         self._status = None
         self._register_time = None
@@ -119,6 +124,8 @@ class BackendApiBase:
             self.enable_client_ssl = enable_client_ssl
         if retry_count is not None:
             self.retry_count = retry_count
+        if enable_sm_channel is not None:
+            self.enable_sm_channel = enable_sm_channel
         if id is not None:
             self.id = id
         if status is not None:
@@ -347,6 +354,28 @@ class BackendApiBase:
         :type retry_count: str
         """
         self._retry_count = retry_count
+
+    @property
+    def enable_sm_channel(self):
+        """Gets the enable_sm_channel of this BackendApiBase.
+
+        是否启用SM商密通道。  仅实例支持SM系列商密算法的实例时支持开启。
+
+        :return: The enable_sm_channel of this BackendApiBase.
+        :rtype: bool
+        """
+        return self._enable_sm_channel
+
+    @enable_sm_channel.setter
+    def enable_sm_channel(self, enable_sm_channel):
+        """Sets the enable_sm_channel of this BackendApiBase.
+
+        是否启用SM商密通道。  仅实例支持SM系列商密算法的实例时支持开启。
+
+        :param enable_sm_channel: The enable_sm_channel of this BackendApiBase.
+        :type enable_sm_channel: bool
+        """
+        self._enable_sm_channel = enable_sm_channel
 
     @property
     def id(self):

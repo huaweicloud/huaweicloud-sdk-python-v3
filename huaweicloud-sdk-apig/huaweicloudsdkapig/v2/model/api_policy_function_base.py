@@ -47,9 +47,9 @@ class ApiPolicyFunctionBase:
         :type invocation_type: str
         :param network_type: 对接函数的网络架构类型 - V1：非VPC网络架构 - V2：VPC网络架构
         :type network_type: str
-        :param version: 函数版本  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
+        :param version: 函数版本   当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
         :type version: str
-        :param alias_urn: 函数别名URN  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
+        :param alias_urn: 函数别名URN   当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
         :type alias_urn: str
         :param timeout: API网关请求后端服务的超时时间。函数网络架构为V1时最大超时时间为60000，V2最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000。  单位：毫秒。
         :type timeout: int
@@ -150,7 +150,7 @@ class ApiPolicyFunctionBase:
     def version(self):
         """Gets the version of this ApiPolicyFunctionBase.
 
-        函数版本  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
+        函数版本   当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
 
         :return: The version of this ApiPolicyFunctionBase.
         :rtype: str
@@ -161,7 +161,7 @@ class ApiPolicyFunctionBase:
     def version(self, version):
         """Sets the version of this ApiPolicyFunctionBase.
 
-        函数版本  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
+        函数版本   当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
 
         :param version: The version of this ApiPolicyFunctionBase.
         :type version: str
@@ -172,7 +172,7 @@ class ApiPolicyFunctionBase:
     def alias_urn(self):
         """Gets the alias_urn of this ApiPolicyFunctionBase.
 
-        函数别名URN  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
+        函数别名URN   当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
 
         :return: The alias_urn of this ApiPolicyFunctionBase.
         :rtype: str
@@ -183,7 +183,7 @@ class ApiPolicyFunctionBase:
     def alias_urn(self, alias_urn):
         """Sets the alias_urn of this ApiPolicyFunctionBase.
 
-        函数别名URN  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
+        函数别名URN   当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
 
         :param alias_urn: The alias_urn of this ApiPolicyFunctionBase.
         :type alias_urn: str

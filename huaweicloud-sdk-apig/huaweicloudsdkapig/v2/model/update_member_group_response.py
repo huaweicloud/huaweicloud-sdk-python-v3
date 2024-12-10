@@ -25,6 +25,7 @@ class UpdateMemberGroupResponse(SdkResponse):
         'microservice_version': 'str',
         'microservice_port': 'int',
         'microservice_labels': 'list[MicroserviceLabel]',
+        'reference_vpc_channel_id': 'str',
         'member_group_id': 'str',
         'create_time': 'datetime',
         'update_time': 'datetime'
@@ -38,12 +39,13 @@ class UpdateMemberGroupResponse(SdkResponse):
         'microservice_version': 'microservice_version',
         'microservice_port': 'microservice_port',
         'microservice_labels': 'microservice_labels',
+        'reference_vpc_channel_id': 'reference_vpc_channel_id',
         'member_group_id': 'member_group_id',
         'create_time': 'create_time',
         'update_time': 'update_time'
     }
 
-    def __init__(self, member_group_name=None, member_group_remark=None, member_group_weight=None, dict_code=None, microservice_version=None, microservice_port=None, microservice_labels=None, member_group_id=None, create_time=None, update_time=None):
+    def __init__(self, member_group_name=None, member_group_remark=None, member_group_weight=None, dict_code=None, microservice_version=None, microservice_port=None, microservice_labels=None, reference_vpc_channel_id=None, member_group_id=None, create_time=None, update_time=None):
         """UpdateMemberGroupResponse
 
         The model defined in huaweicloud sdk
@@ -62,6 +64,8 @@ class UpdateMemberGroupResponse(SdkResponse):
         :type microservice_port: int
         :param microservice_labels: VPC通道后端服务器组的标签，仅VPC通道类型为微服务时支持。
         :type microservice_labels: list[:class:`huaweicloudsdkapig.v2.MicroserviceLabel`]
+        :param reference_vpc_channel_id: 引用的负载通道编号，仅VPC通道类型为引用类型（vpc_channel_type&#x3D;reference）时支持。
+        :type reference_vpc_channel_id: str
         :param member_group_id: VPC通道后端服务器组编号
         :type member_group_id: str
         :param create_time: VPC通道后端服务器组创建时间
@@ -79,6 +83,7 @@ class UpdateMemberGroupResponse(SdkResponse):
         self._microservice_version = None
         self._microservice_port = None
         self._microservice_labels = None
+        self._reference_vpc_channel_id = None
         self._member_group_id = None
         self._create_time = None
         self._update_time = None
@@ -97,6 +102,8 @@ class UpdateMemberGroupResponse(SdkResponse):
             self.microservice_port = microservice_port
         if microservice_labels is not None:
             self.microservice_labels = microservice_labels
+        if reference_vpc_channel_id is not None:
+            self.reference_vpc_channel_id = reference_vpc_channel_id
         if member_group_id is not None:
             self.member_group_id = member_group_id
         if create_time is not None:
@@ -257,6 +264,28 @@ class UpdateMemberGroupResponse(SdkResponse):
         :type microservice_labels: list[:class:`huaweicloudsdkapig.v2.MicroserviceLabel`]
         """
         self._microservice_labels = microservice_labels
+
+    @property
+    def reference_vpc_channel_id(self):
+        """Gets the reference_vpc_channel_id of this UpdateMemberGroupResponse.
+
+        引用的负载通道编号，仅VPC通道类型为引用类型（vpc_channel_type=reference）时支持。
+
+        :return: The reference_vpc_channel_id of this UpdateMemberGroupResponse.
+        :rtype: str
+        """
+        return self._reference_vpc_channel_id
+
+    @reference_vpc_channel_id.setter
+    def reference_vpc_channel_id(self, reference_vpc_channel_id):
+        """Sets the reference_vpc_channel_id of this UpdateMemberGroupResponse.
+
+        引用的负载通道编号，仅VPC通道类型为引用类型（vpc_channel_type=reference）时支持。
+
+        :param reference_vpc_channel_id: The reference_vpc_channel_id of this UpdateMemberGroupResponse.
+        :type reference_vpc_channel_id: str
+        """
+        self._reference_vpc_channel_id = reference_vpc_channel_id
 
     @property
     def member_group_id(self):

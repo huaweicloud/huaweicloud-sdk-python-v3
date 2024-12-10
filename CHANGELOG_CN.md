@@ -1,3 +1,253 @@
+# 3.1.126 2024-12-10
+
+### HuaweiCloud SDK APIG
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **AssociateCertificateV2**
+    - 响应参数变更
+      - `+ ssl_infos`
+  - **ShowDetailsOfCertificateV2**
+    - 响应参数变更
+      - `+ algorithm_type`
+  - **UpdateCertificateV2**
+    - 请求参数变更
+      - `+ algorithm_type`
+      - `+ cert_content_sign`
+      - `+ private_key_sign`
+    - 响应参数变更
+      - `+ algorithm_type`
+  - **ShowPlugin**
+    - 响应参数变更
+      - `+ plugin_type: enum value [proxy_mirror]`
+  - **UpdatePlugin**
+    - 请求参数变更
+      - `+ plugin_type: enum value [proxy_mirror]`
+    - 响应参数变更
+      - `+ plugin_type: enum value [proxy_mirror]`
+  - **ShowDetailsOfApiGroupV2**
+    - 响应参数变更
+      - `+ url_domains.ssl_infos`
+  - **UpdateApiGroupV2**
+    - 响应参数变更
+      - `+ url_domains.ssl_infos`
+  - **ListApisBindedToRequestThrottlingPolicyV2**
+    - 请求参数变更
+      - `- tags`
+  - **ShowDetailsOfMemberGroup**
+    - 响应参数变更
+      - `+ reference_vpc_channel_id`
+  - **UpdateMemberGroup**
+    - 请求参数变更
+      - `+ reference_vpc_channel_id`
+    - 响应参数变更
+      - `+ reference_vpc_channel_id`
+  - **CreateCertificateV2**
+    - 请求参数变更
+      - `+ algorithm_type`
+      - `+ cert_content_sign`
+      - `+ private_key_sign`
+    - 响应参数变更
+      - `+ algorithm_type`
+  - **ListCertificatesV2**
+    - 请求参数变更
+      - `+ algorithm_type`
+    - 响应参数变更
+      - `+ certs.algorithm_type`
+  - **CreatePlugin**
+    - 请求参数变更
+      - `+ plugin_type: enum value [proxy_mirror]`
+    - 响应参数变更
+      - `+ plugin_type: enum value [proxy_mirror]`
+  - **ListPlugins**
+    - 响应参数变更
+      - `+ plugins.plugin_type: enum value [proxy_mirror]`
+  - **AttachApiToPlugin**
+    - 响应参数变更
+      - `+ attached_plugins.plugin_type: enum value [proxy_mirror]`
+  - **AttachPluginToApi**
+    - 响应参数变更
+      - `+ attached_plugins.plugin_type: enum value [proxy_mirror]`
+  - **ListApiAttachedPlugins**
+    - 响应参数变更
+      - `+ plugins.plugin_type: enum value [proxy_mirror]`
+  - **ListApiAttachablePlugins**
+    - 响应参数变更
+      - `+ plugins.plugin_type: enum value [proxy_mirror]`
+  - **CreateApiGroupV2**
+    - 响应参数变更
+      - `+ url_domains.ssl_infos`
+  - **ListApiGroupsV2**
+    - 响应参数变更
+      - `+ groups.url_domains.ssl_infos`
+  - **ShowDetailsOfApiV2**
+    - 响应参数变更
+      - `+ policy_https.enable_sm_channel`
+      - `+ backend_api.enable_sm_channel`
+      - `+ api_group_info.url_domains.ssl_infos`
+  - **UpdateApiV2**
+    - 请求参数变更
+      - `+ policy_https.enable_sm_channel`
+      - `+ backend_api.enable_sm_channel`
+    - 响应参数变更
+      - `+ policy_https.enable_sm_channel`
+      - `+ backend_api.enable_sm_channel`
+      - `+ api_group_info.url_domains.ssl_infos`
+  - **ListApiVersionDetailV2**
+    - 响应参数变更
+      - `+ policy_https.enable_sm_channel`
+      - `+ backend_api.enable_sm_channel`
+      - `+ api_group_info.url_domains.ssl_infos`
+  - **ListMemberGroups**
+    - 响应参数变更
+      - `+ reference_vpc_channel_id`
+      - `+ member_groups.reference_vpc_channel_id`
+  - **CreateMemberGroup**
+    - 请求参数变更
+      - `+ member_groups.reference_vpc_channel_id`
+    - 响应参数变更
+      - `+ reference_vpc_channel_id`
+      - `+ member_groups.reference_vpc_channel_id`
+  - **CreateOrder**
+    - 请求参数变更
+      - `+ payment_mode: enum value [ALL_UPFRONT]`
+  - **ImportMicroservice**
+    - 请求参数变更
+      - `+ cce_service_info`
+  - **CreateApiV2**
+    - 请求参数变更
+      - `+ policy_https.enable_sm_channel`
+      - `+ backend_api.enable_sm_channel`
+    - 响应参数变更
+      - `+ policy_https.enable_sm_channel`
+      - `+ backend_api.enable_sm_channel`
+      - `+ api_group_info.url_domains.ssl_infos`
+  - **ListApisV2**
+    - 响应参数变更
+      - `+ apis.backend_api.enable_sm_channel`
+      - `+ apis.api_group_info.url_domains.ssl_infos`
+  - **ShowDetailsOfVpcChannelV2**
+    - 响应参数变更
+      - `+ vpc_channel_type`
+      - `+ reference_vpc_channel_id`
+      - `+ member_groups.reference_vpc_channel_id`
+      - `+ microservice_info.cce_service_info`
+  - **UpdateVpcChannelV2**
+    - 请求参数变更
+      - `+ vpc_channel_type`
+      - `+ member_groups.reference_vpc_channel_id`
+      - `+ microservice_info.cce_service_info`
+    - 响应参数变更
+      - `+ vpc_channel_type`
+      - `+ reference_vpc_channel_id`
+      - `+ member_groups.reference_vpc_channel_id`
+      - `+ microservice_info.cce_service_info`
+  - **CreateVpcChannelV2**
+    - 请求参数变更
+      - `+ vpc_channel_type`
+      - `+ member_groups.reference_vpc_channel_id`
+      - `+ microservice_info.cce_service_info`
+    - 响应参数变更
+      - `+ vpc_channel_type`
+      - `+ reference_vpc_channel_id`
+      - `+ member_groups.reference_vpc_channel_id`
+      - `+ microservice_info.cce_service_info`
+  - **ListVpcChannelsV2**
+    - 请求参数变更
+      - `+ vpc_channel_type`
+    - 响应参数变更
+      - `+ vpc_channel_type`
+      - `+ vpc_channels.vpc_channel_type`
+      - `+ reference_vpc_channel_id`
+      - `+ vpc_channels.member_groups.reference_vpc_channel_id`
+      - `+ vpc_channels.microservice_info.cce_service_info`
+
+### HuaweiCloud SDK CCE
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpgradeNodePool**
+    - 响应参数变更
+      - `+ jobid`
+      - `- metadata`
+      - `- apiVersion`
+      - `- kind`
+      - `- spec`
+      - `- status`
+
+### HuaweiCloud SDK CSMS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `ListUsers`
+    - `ListGrants`
+    - `UpdateGrant`
+    - `CreateGrants`
+    - `DeleteGrant`
+    - `GenerateRandomPassword`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DBSS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListRdsDatabases**
+    - 请求参数变更
+      - `+ db_type: enum value [ORACLE,DAMENG,KINGBASE]`
+  - **SwitchAuditDatabase**
+    - 响应参数变更
+      - `+ status`
+      - `- result`
+
+### HuaweiCloud SDK IMS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListImages**
+    - 响应参数变更
+      - `+ images.__support_kvm_hi1822_hisriov`
+      - `+ images.__support_kvm_hi1822_hivirtionet`
+  - **UpdateImage**
+    - 响应参数变更
+      - `+ __support_kvm_hi1822_hisriov`
+      - `+ __support_kvm_hi1822_hivirtionet`
+
+### HuaweiCloud SDK SWR
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`ShowShareFeatureGates`、`ShowDomainResourceReports`、`ShowDomainOverview`、`CreateRepoTag`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
 # 3.1.125 2024-12-05
 
 ### HuaweiCloud SDK AOS

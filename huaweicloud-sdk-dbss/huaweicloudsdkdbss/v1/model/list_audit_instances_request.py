@@ -31,9 +31,9 @@ class ListAuditInstancesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param offset: 偏移量
+        :param offset: 偏移量，默认0。
         :type offset: str
-        :param limit: 查询记录数
+        :param limit: 查询记录数，默认100，最大1000。
         :type limit: str
         """
         
@@ -52,7 +52,7 @@ class ListAuditInstancesRequest:
     def offset(self):
         """Gets the offset of this ListAuditInstancesRequest.
 
-        偏移量
+        偏移量，默认0。
 
         :return: The offset of this ListAuditInstancesRequest.
         :rtype: str
@@ -63,7 +63,7 @@ class ListAuditInstancesRequest:
     def offset(self, offset):
         """Sets the offset of this ListAuditInstancesRequest.
 
-        偏移量
+        偏移量，默认0。
 
         :param offset: The offset of this ListAuditInstancesRequest.
         :type offset: str
@@ -74,7 +74,7 @@ class ListAuditInstancesRequest:
     def limit(self):
         """Gets the limit of this ListAuditInstancesRequest.
 
-        查询记录数
+        查询记录数，默认100，最大1000。
 
         :return: The limit of this ListAuditInstancesRequest.
         :rtype: str
@@ -85,7 +85,7 @@ class ListAuditInstancesRequest:
     def limit(self, limit):
         """Sets the limit of this ListAuditInstancesRequest.
 
-        查询记录数
+        查询记录数，默认100，最大1000。
 
         :param limit: The limit of this ListAuditInstancesRequest.
         :type limit: str

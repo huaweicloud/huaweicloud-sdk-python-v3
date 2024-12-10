@@ -22,7 +22,10 @@ class CertificateForm:
         'private_key': 'str',
         'type': 'str',
         'instance_id': 'str',
-        'trusted_root_ca': 'str'
+        'trusted_root_ca': 'str',
+        'algorithm_type': 'str',
+        'cert_content_sign': 'str',
+        'private_key_sign': 'str'
     }
 
     attribute_map = {
@@ -31,10 +34,13 @@ class CertificateForm:
         'private_key': 'private_key',
         'type': 'type',
         'instance_id': 'instance_id',
-        'trusted_root_ca': 'trusted_root_ca'
+        'trusted_root_ca': 'trusted_root_ca',
+        'algorithm_type': 'algorithm_type',
+        'cert_content_sign': 'cert_content_sign',
+        'private_key_sign': 'private_key_sign'
     }
 
-    def __init__(self, name=None, cert_content=None, private_key=None, type=None, instance_id=None, trusted_root_ca=None):
+    def __init__(self, name=None, cert_content=None, private_key=None, type=None, instance_id=None, trusted_root_ca=None, algorithm_type=None, cert_content_sign=None, private_key_sign=None):
         """CertificateForm
 
         The model defined in huaweicloud sdk
@@ -51,6 +57,12 @@ class CertificateForm:
         :type instance_id: str
         :param trusted_root_ca: 信任的根证书CA
         :type trusted_root_ca: str
+        :param algorithm_type: 证书算法类型： - RSA - ECC - SM2
+        :type algorithm_type: str
+        :param cert_content_sign: 签名类型证书内容，仅algorithm_type&#x3D;SM2时必填。
+        :type cert_content_sign: str
+        :param private_key_sign: 签名类型私钥内容，仅algorithm_type&#x3D;SM2时必填。
+        :type private_key_sign: str
         """
         
         
@@ -61,6 +73,9 @@ class CertificateForm:
         self._type = None
         self._instance_id = None
         self._trusted_root_ca = None
+        self._algorithm_type = None
+        self._cert_content_sign = None
+        self._private_key_sign = None
         self.discriminator = None
 
         self.name = name
@@ -72,6 +87,12 @@ class CertificateForm:
             self.instance_id = instance_id
         if trusted_root_ca is not None:
             self.trusted_root_ca = trusted_root_ca
+        if algorithm_type is not None:
+            self.algorithm_type = algorithm_type
+        if cert_content_sign is not None:
+            self.cert_content_sign = cert_content_sign
+        if private_key_sign is not None:
+            self.private_key_sign = private_key_sign
 
     @property
     def name(self):
@@ -204,6 +225,72 @@ class CertificateForm:
         :type trusted_root_ca: str
         """
         self._trusted_root_ca = trusted_root_ca
+
+    @property
+    def algorithm_type(self):
+        """Gets the algorithm_type of this CertificateForm.
+
+        证书算法类型： - RSA - ECC - SM2
+
+        :return: The algorithm_type of this CertificateForm.
+        :rtype: str
+        """
+        return self._algorithm_type
+
+    @algorithm_type.setter
+    def algorithm_type(self, algorithm_type):
+        """Sets the algorithm_type of this CertificateForm.
+
+        证书算法类型： - RSA - ECC - SM2
+
+        :param algorithm_type: The algorithm_type of this CertificateForm.
+        :type algorithm_type: str
+        """
+        self._algorithm_type = algorithm_type
+
+    @property
+    def cert_content_sign(self):
+        """Gets the cert_content_sign of this CertificateForm.
+
+        签名类型证书内容，仅algorithm_type=SM2时必填。
+
+        :return: The cert_content_sign of this CertificateForm.
+        :rtype: str
+        """
+        return self._cert_content_sign
+
+    @cert_content_sign.setter
+    def cert_content_sign(self, cert_content_sign):
+        """Sets the cert_content_sign of this CertificateForm.
+
+        签名类型证书内容，仅algorithm_type=SM2时必填。
+
+        :param cert_content_sign: The cert_content_sign of this CertificateForm.
+        :type cert_content_sign: str
+        """
+        self._cert_content_sign = cert_content_sign
+
+    @property
+    def private_key_sign(self):
+        """Gets the private_key_sign of this CertificateForm.
+
+        签名类型私钥内容，仅algorithm_type=SM2时必填。
+
+        :return: The private_key_sign of this CertificateForm.
+        :rtype: str
+        """
+        return self._private_key_sign
+
+    @private_key_sign.setter
+    def private_key_sign(self, private_key_sign):
+        """Sets the private_key_sign of this CertificateForm.
+
+        签名类型私钥内容，仅algorithm_type=SM2时必填。
+
+        :param private_key_sign: The private_key_sign of this CertificateForm.
+        :type private_key_sign: str
+        """
+        self._private_key_sign = private_key_sign
 
     def to_dict(self):
         """Returns the model properties as a dict"""

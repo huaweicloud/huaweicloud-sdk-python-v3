@@ -22,6 +22,7 @@ class VpcCreate:
         'balance_strategy': 'int',
         'member_type': 'str',
         'type': 'int',
+        'vpc_channel_type': 'str',
         'dict_code': 'str',
         'member_groups': 'list[MemberGroupCreate]',
         'members': 'list[MemberInfo]',
@@ -35,6 +36,7 @@ class VpcCreate:
         'balance_strategy': 'balance_strategy',
         'member_type': 'member_type',
         'type': 'type',
+        'vpc_channel_type': 'vpc_channel_type',
         'dict_code': 'dict_code',
         'member_groups': 'member_groups',
         'members': 'members',
@@ -42,7 +44,7 @@ class VpcCreate:
         'microservice_info': 'microservice_info'
     }
 
-    def __init__(self, name=None, port=None, balance_strategy=None, member_type=None, type=None, dict_code=None, member_groups=None, members=None, vpc_health_config=None, microservice_info=None):
+    def __init__(self, name=None, port=None, balance_strategy=None, member_type=None, type=None, vpc_channel_type=None, dict_code=None, member_groups=None, members=None, vpc_health_config=None, microservice_info=None):
         """VpcCreate
 
         The model defined in huaweicloud sdk
@@ -55,13 +57,15 @@ class VpcCreate:
         :type balance_strategy: int
         :param member_type: VPC通道的成员类型。 - ip - ecs
         :type member_type: str
-        :param type: vpc通道类型，默认为服务器类型。 - 2：服务器类型 - 3：微服务类型
+        :param type: vpc通道类型，默认为服务器类型。 - 2：服务器类型 - 3：微服务类型  当vpc_channel_type字段为空时，负载通道类型由type字段控制： 当type不为3或microservice_info为空，VCP通道类型默认为服务器类型。 当type&#x3D;3，microservice_info不为空，VPC通道类型为微服务类型。  修改负载通道时vpc通道类型不会修改，直接使用原有的vpc通道类型。  此字段待废弃，请使用vpc_channel_type字段指定负载通道类型。
         :type type: int
+        :param vpc_channel_type: vpc通道类型。 - builtin：服务器类型 - microservice： 微服务类型 - reference：引用负载通道类型  当vpc_channel_type为空时，负载通道类型取决于type字段的取值。 当vpc_channel_type不为空，但type字段非空或不为0时，当vpc_channel_type的指定类型与type字段指定的类型冲突时会校验报错。 当vpc_channel_type不为空，且type字段为空或等于0时，直接使用vpc_channel_type字段的值指定负载通道类型。  修改负载通道时vpc通道类型不会修改，直接使用原有的vpc通道类型。
+        :type vpc_channel_type: str
         :param dict_code: VPC通道的字典编码  支持英文，数字，特殊字符（-_.）  暂不支持
         :type dict_code: str
         :param member_groups: VPC通道后端服务器组列表。当microservice_info中service_type为NACOS类型时，服务器组的权重不支持手动设置。
         :type member_groups: list[:class:`huaweicloudsdkapig.v2.MemberGroupCreate`]
-        :param members: VPC后端实例列表。
+        :param members: VPC后端实例列表。  对于引用负载通道类型的负载通道，不会使用此字段新增或更新后端实例。
         :type members: list[:class:`huaweicloudsdkapig.v2.MemberInfo`]
         :param vpc_health_config: 
         :type vpc_health_config: :class:`huaweicloudsdkapig.v2.VpcHealthConfig`
@@ -76,6 +80,7 @@ class VpcCreate:
         self._balance_strategy = None
         self._member_type = None
         self._type = None
+        self._vpc_channel_type = None
         self._dict_code = None
         self._member_groups = None
         self._members = None
@@ -89,6 +94,8 @@ class VpcCreate:
         self.member_type = member_type
         if type is not None:
             self.type = type
+        if vpc_channel_type is not None:
+            self.vpc_channel_type = vpc_channel_type
         if dict_code is not None:
             self.dict_code = dict_code
         if member_groups is not None:
@@ -192,7 +199,7 @@ class VpcCreate:
     def type(self):
         """Gets the type of this VpcCreate.
 
-        vpc通道类型，默认为服务器类型。 - 2：服务器类型 - 3：微服务类型
+        vpc通道类型，默认为服务器类型。 - 2：服务器类型 - 3：微服务类型  当vpc_channel_type字段为空时，负载通道类型由type字段控制： 当type不为3或microservice_info为空，VCP通道类型默认为服务器类型。 当type=3，microservice_info不为空，VPC通道类型为微服务类型。  修改负载通道时vpc通道类型不会修改，直接使用原有的vpc通道类型。  此字段待废弃，请使用vpc_channel_type字段指定负载通道类型。
 
         :return: The type of this VpcCreate.
         :rtype: int
@@ -203,12 +210,34 @@ class VpcCreate:
     def type(self, type):
         """Sets the type of this VpcCreate.
 
-        vpc通道类型，默认为服务器类型。 - 2：服务器类型 - 3：微服务类型
+        vpc通道类型，默认为服务器类型。 - 2：服务器类型 - 3：微服务类型  当vpc_channel_type字段为空时，负载通道类型由type字段控制： 当type不为3或microservice_info为空，VCP通道类型默认为服务器类型。 当type=3，microservice_info不为空，VPC通道类型为微服务类型。  修改负载通道时vpc通道类型不会修改，直接使用原有的vpc通道类型。  此字段待废弃，请使用vpc_channel_type字段指定负载通道类型。
 
         :param type: The type of this VpcCreate.
         :type type: int
         """
         self._type = type
+
+    @property
+    def vpc_channel_type(self):
+        """Gets the vpc_channel_type of this VpcCreate.
+
+        vpc通道类型。 - builtin：服务器类型 - microservice： 微服务类型 - reference：引用负载通道类型  当vpc_channel_type为空时，负载通道类型取决于type字段的取值。 当vpc_channel_type不为空，但type字段非空或不为0时，当vpc_channel_type的指定类型与type字段指定的类型冲突时会校验报错。 当vpc_channel_type不为空，且type字段为空或等于0时，直接使用vpc_channel_type字段的值指定负载通道类型。  修改负载通道时vpc通道类型不会修改，直接使用原有的vpc通道类型。
+
+        :return: The vpc_channel_type of this VpcCreate.
+        :rtype: str
+        """
+        return self._vpc_channel_type
+
+    @vpc_channel_type.setter
+    def vpc_channel_type(self, vpc_channel_type):
+        """Sets the vpc_channel_type of this VpcCreate.
+
+        vpc通道类型。 - builtin：服务器类型 - microservice： 微服务类型 - reference：引用负载通道类型  当vpc_channel_type为空时，负载通道类型取决于type字段的取值。 当vpc_channel_type不为空，但type字段非空或不为0时，当vpc_channel_type的指定类型与type字段指定的类型冲突时会校验报错。 当vpc_channel_type不为空，且type字段为空或等于0时，直接使用vpc_channel_type字段的值指定负载通道类型。  修改负载通道时vpc通道类型不会修改，直接使用原有的vpc通道类型。
+
+        :param vpc_channel_type: The vpc_channel_type of this VpcCreate.
+        :type vpc_channel_type: str
+        """
+        self._vpc_channel_type = vpc_channel_type
 
     @property
     def dict_code(self):
@@ -258,7 +287,7 @@ class VpcCreate:
     def members(self):
         """Gets the members of this VpcCreate.
 
-        VPC后端实例列表。
+        VPC后端实例列表。  对于引用负载通道类型的负载通道，不会使用此字段新增或更新后端实例。
 
         :return: The members of this VpcCreate.
         :rtype: list[:class:`huaweicloudsdkapig.v2.MemberInfo`]
@@ -269,7 +298,7 @@ class VpcCreate:
     def members(self, members):
         """Sets the members of this VpcCreate.
 
-        VPC后端实例列表。
+        VPC后端实例列表。  对于引用负载通道类型的负载通道，不会使用此字段新增或更新后端实例。
 
         :param members: The members of this VpcCreate.
         :type members: list[:class:`huaweicloudsdkapig.v2.MemberInfo`]

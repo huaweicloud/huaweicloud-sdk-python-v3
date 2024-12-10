@@ -18,155 +18,51 @@ class UpgradeNodePoolResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'kind': 'str',
-        'api_version': 'str',
-        'metadata': 'JobMetadata',
-        'spec': 'JobSpec',
-        'status': 'JobStatus'
+        'jobid': 'str'
     }
 
     attribute_map = {
-        'kind': 'kind',
-        'api_version': 'apiVersion',
-        'metadata': 'metadata',
-        'spec': 'spec',
-        'status': 'status'
+        'jobid': 'jobid'
     }
 
-    def __init__(self, kind=None, api_version=None, metadata=None, spec=None, status=None):
+    def __init__(self, jobid=None):
         """UpgradeNodePoolResponse
 
         The model defined in huaweicloud sdk
 
-        :param kind: API类型，固定值“Job”，该值不可修改。
-        :type kind: str
-        :param api_version: API版本，固定值“v3”，该值不可修改。
-        :type api_version: str
-        :param metadata: 
-        :type metadata: :class:`huaweicloudsdkcce.v3.JobMetadata`
-        :param spec: 
-        :type spec: :class:`huaweicloudsdkcce.v3.JobSpec`
-        :param status: 
-        :type status: :class:`huaweicloudsdkcce.v3.JobStatus`
+        :param jobid: Job ID returned after the job is delivered. The job ID can be used to query the job execution status.
+        :type jobid: str
         """
         
         super(UpgradeNodePoolResponse, self).__init__()
 
-        self._kind = None
-        self._api_version = None
-        self._metadata = None
-        self._spec = None
-        self._status = None
+        self._jobid = None
         self.discriminator = None
 
-        if kind is not None:
-            self.kind = kind
-        if api_version is not None:
-            self.api_version = api_version
-        if metadata is not None:
-            self.metadata = metadata
-        if spec is not None:
-            self.spec = spec
-        if status is not None:
-            self.status = status
+        if jobid is not None:
+            self.jobid = jobid
 
     @property
-    def kind(self):
-        """Gets the kind of this UpgradeNodePoolResponse.
+    def jobid(self):
+        """Gets the jobid of this UpgradeNodePoolResponse.
 
-        API类型，固定值“Job”，该值不可修改。
+        Job ID returned after the job is delivered. The job ID can be used to query the job execution status.
 
-        :return: The kind of this UpgradeNodePoolResponse.
+        :return: The jobid of this UpgradeNodePoolResponse.
         :rtype: str
         """
-        return self._kind
+        return self._jobid
 
-    @kind.setter
-    def kind(self, kind):
-        """Sets the kind of this UpgradeNodePoolResponse.
+    @jobid.setter
+    def jobid(self, jobid):
+        """Sets the jobid of this UpgradeNodePoolResponse.
 
-        API类型，固定值“Job”，该值不可修改。
+        Job ID returned after the job is delivered. The job ID can be used to query the job execution status.
 
-        :param kind: The kind of this UpgradeNodePoolResponse.
-        :type kind: str
+        :param jobid: The jobid of this UpgradeNodePoolResponse.
+        :type jobid: str
         """
-        self._kind = kind
-
-    @property
-    def api_version(self):
-        """Gets the api_version of this UpgradeNodePoolResponse.
-
-        API版本，固定值“v3”，该值不可修改。
-
-        :return: The api_version of this UpgradeNodePoolResponse.
-        :rtype: str
-        """
-        return self._api_version
-
-    @api_version.setter
-    def api_version(self, api_version):
-        """Sets the api_version of this UpgradeNodePoolResponse.
-
-        API版本，固定值“v3”，该值不可修改。
-
-        :param api_version: The api_version of this UpgradeNodePoolResponse.
-        :type api_version: str
-        """
-        self._api_version = api_version
-
-    @property
-    def metadata(self):
-        """Gets the metadata of this UpgradeNodePoolResponse.
-
-        :return: The metadata of this UpgradeNodePoolResponse.
-        :rtype: :class:`huaweicloudsdkcce.v3.JobMetadata`
-        """
-        return self._metadata
-
-    @metadata.setter
-    def metadata(self, metadata):
-        """Sets the metadata of this UpgradeNodePoolResponse.
-
-        :param metadata: The metadata of this UpgradeNodePoolResponse.
-        :type metadata: :class:`huaweicloudsdkcce.v3.JobMetadata`
-        """
-        self._metadata = metadata
-
-    @property
-    def spec(self):
-        """Gets the spec of this UpgradeNodePoolResponse.
-
-        :return: The spec of this UpgradeNodePoolResponse.
-        :rtype: :class:`huaweicloudsdkcce.v3.JobSpec`
-        """
-        return self._spec
-
-    @spec.setter
-    def spec(self, spec):
-        """Sets the spec of this UpgradeNodePoolResponse.
-
-        :param spec: The spec of this UpgradeNodePoolResponse.
-        :type spec: :class:`huaweicloudsdkcce.v3.JobSpec`
-        """
-        self._spec = spec
-
-    @property
-    def status(self):
-        """Gets the status of this UpgradeNodePoolResponse.
-
-        :return: The status of this UpgradeNodePoolResponse.
-        :rtype: :class:`huaweicloudsdkcce.v3.JobStatus`
-        """
-        return self._status
-
-    @status.setter
-    def status(self, status):
-        """Sets the status of this UpgradeNodePoolResponse.
-
-        :param status: The status of this UpgradeNodePoolResponse.
-        :type status: :class:`huaweicloudsdkcce.v3.JobStatus`
-        """
-        self._status = status
+        self._jobid = jobid
 
     def to_dict(self):
         """Returns the model properties as a dict"""

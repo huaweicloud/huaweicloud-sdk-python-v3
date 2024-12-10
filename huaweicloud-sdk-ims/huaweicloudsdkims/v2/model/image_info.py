@@ -76,7 +76,9 @@ class ImageInfo:
         'active_at': 'str',
         'support_agent_list': 'str',
         'image_displayname': 'str',
-        'support_amd': 'str'
+        'support_amd': 'str',
+        'support_kvm_hi1822_hisriov': 'str',
+        'support_kvm_hi1822_hivirtionet': 'str'
     }
 
     attribute_map = {
@@ -139,10 +141,12 @@ class ImageInfo:
         'active_at': 'active_at',
         'support_agent_list': '__support_agent_list',
         'image_displayname': '__image_displayname',
-        'support_amd': '__support_amd'
+        'support_amd': '__support_amd',
+        'support_kvm_hi1822_hisriov': '__support_kvm_hi1822_hisriov',
+        'support_kvm_hi1822_hivirtionet': '__support_kvm_hi1822_hivirtionet'
     }
 
-    def __init__(self, backup_id=None, data_origin=None, description=None, image_size=None, image_source_type=None, imagetype=None, isregistered=None, originalimagename=None, os_bit=None, os_type=None, os_version=None, platform=None, productcode=None, support_diskintensive=None, support_highperformance=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_infiniband=None, support_largememory=None, support_xen=None, support_xen_gpu_type=None, support_xen_hana=None, system_support_market=None, checksum=None, container_format=None, created_at=None, disk_format=None, enterprise_project_id=None, file=None, id=None, min_disk=None, min_ram=None, name=None, owner=None, protected=None, schema=None, _self=None, size=None, status=None, tags=None, updated_at=None, virtual_env_type=None, virtual_size=None, visibility=None, support_fc_inject=None, hw_firmware_type=None, support_arm=None, max_ram=None, system__cmkid=None, os_feature_list=None, account_code=None, hw_vif_multiqueue_enabled=None, is_offshelved=None, lazyloading=None, root_origin=None, sequence_num=None, active_at=None, support_agent_list=None, image_displayname=None, support_amd=None):
+    def __init__(self, backup_id=None, data_origin=None, description=None, image_size=None, image_source_type=None, imagetype=None, isregistered=None, originalimagename=None, os_bit=None, os_type=None, os_version=None, platform=None, productcode=None, support_diskintensive=None, support_highperformance=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_infiniband=None, support_largememory=None, support_xen=None, support_xen_gpu_type=None, support_xen_hana=None, system_support_market=None, checksum=None, container_format=None, created_at=None, disk_format=None, enterprise_project_id=None, file=None, id=None, min_disk=None, min_ram=None, name=None, owner=None, protected=None, schema=None, _self=None, size=None, status=None, tags=None, updated_at=None, virtual_env_type=None, virtual_size=None, visibility=None, support_fc_inject=None, hw_firmware_type=None, support_arm=None, max_ram=None, system__cmkid=None, os_feature_list=None, account_code=None, hw_vif_multiqueue_enabled=None, is_offshelved=None, lazyloading=None, root_origin=None, sequence_num=None, active_at=None, support_agent_list=None, image_displayname=None, support_amd=None, support_kvm_hi1822_hisriov=None, support_kvm_hi1822_hivirtionet=None):
         """ImageInfo
 
         The model defined in huaweicloud sdk
@@ -267,6 +271,10 @@ class ImageInfo:
         :type image_displayname: str
         :param support_amd: 是否是AMD架构类型的镜像。取值为“true”或者“false”。
         :type support_amd: str
+        :param support_kvm_hi1822_hisriov: 如果镜像支持sriov直通，取值为true，否则无需增加该属性。
+        :type support_kvm_hi1822_hisriov: str
+        :param support_kvm_hi1822_hivirtionet: 如果镜像支持Virtio-net直通规格，取值为true，否则无需增加该属性。
+        :type support_kvm_hi1822_hivirtionet: str
         """
         
         
@@ -331,6 +339,8 @@ class ImageInfo:
         self._support_agent_list = None
         self._image_displayname = None
         self._support_amd = None
+        self._support_kvm_hi1822_hisriov = None
+        self._support_kvm_hi1822_hivirtionet = None
         self.discriminator = None
 
         if backup_id is not None:
@@ -433,6 +443,10 @@ class ImageInfo:
             self.image_displayname = image_displayname
         if support_amd is not None:
             self.support_amd = support_amd
+        if support_kvm_hi1822_hisriov is not None:
+            self.support_kvm_hi1822_hisriov = support_kvm_hi1822_hisriov
+        if support_kvm_hi1822_hivirtionet is not None:
+            self.support_kvm_hi1822_hivirtionet = support_kvm_hi1822_hivirtionet
 
     @property
     def backup_id(self):
@@ -1753,6 +1767,50 @@ class ImageInfo:
         :type support_amd: str
         """
         self._support_amd = support_amd
+
+    @property
+    def support_kvm_hi1822_hisriov(self):
+        """Gets the support_kvm_hi1822_hisriov of this ImageInfo.
+
+        如果镜像支持sriov直通，取值为true，否则无需增加该属性。
+
+        :return: The support_kvm_hi1822_hisriov of this ImageInfo.
+        :rtype: str
+        """
+        return self._support_kvm_hi1822_hisriov
+
+    @support_kvm_hi1822_hisriov.setter
+    def support_kvm_hi1822_hisriov(self, support_kvm_hi1822_hisriov):
+        """Sets the support_kvm_hi1822_hisriov of this ImageInfo.
+
+        如果镜像支持sriov直通，取值为true，否则无需增加该属性。
+
+        :param support_kvm_hi1822_hisriov: The support_kvm_hi1822_hisriov of this ImageInfo.
+        :type support_kvm_hi1822_hisriov: str
+        """
+        self._support_kvm_hi1822_hisriov = support_kvm_hi1822_hisriov
+
+    @property
+    def support_kvm_hi1822_hivirtionet(self):
+        """Gets the support_kvm_hi1822_hivirtionet of this ImageInfo.
+
+        如果镜像支持Virtio-net直通规格，取值为true，否则无需增加该属性。
+
+        :return: The support_kvm_hi1822_hivirtionet of this ImageInfo.
+        :rtype: str
+        """
+        return self._support_kvm_hi1822_hivirtionet
+
+    @support_kvm_hi1822_hivirtionet.setter
+    def support_kvm_hi1822_hivirtionet(self, support_kvm_hi1822_hivirtionet):
+        """Sets the support_kvm_hi1822_hivirtionet of this ImageInfo.
+
+        如果镜像支持Virtio-net直通规格，取值为true，否则无需增加该属性。
+
+        :param support_kvm_hi1822_hivirtionet: The support_kvm_hi1822_hivirtionet of this ImageInfo.
+        :type support_kvm_hi1822_hivirtionet: str
+        """
+        self._support_kvm_hi1822_hivirtionet = support_kvm_hi1822_hivirtionet
 
     def to_dict(self):
         """Returns the model properties as a dict"""

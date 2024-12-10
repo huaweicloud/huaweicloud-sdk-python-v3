@@ -164,6 +164,71 @@ class CsmsClient(Client):
 
         return http_info
 
+    def create_grants(self, request):
+        """授权操作
+
+        授权操作
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateGrants
+        :type request: :class:`huaweicloudsdkcsms.v1.CreateGrantsRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.CreateGrantsResponse`
+        """
+        http_info = self._create_grants_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_grants_invoker(self, request):
+        http_info = self._create_grants_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_grants_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/csms/grants",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateGrantsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_secret(self, request):
         """创建凭据
 
@@ -418,6 +483,73 @@ class CsmsClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_grant(self, request):
+        """删除授权
+
+        删除授权
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteGrant
+        :type request: :class:`huaweicloudsdkcsms.v1.DeleteGrantRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.DeleteGrantResponse`
+        """
+        http_info = self._delete_grant_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_grant_invoker(self, request):
+        http_info = self._delete_grant_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_grant_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/csms/grants",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteGrantResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'grantee_user' in local_var_params:
+            query_params.append(('grantee_user', local_var_params['grantee_user']))
+        if 'resource_id' in local_var_params:
+            query_params.append(('resource_id', local_var_params['resource_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -801,6 +933,136 @@ class CsmsClient(Client):
             path_params['secret_name'] = local_var_params['secret_name']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def generate_random_password(self, request):
+        """generate_random_password
+
+        生成随机密码
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for GenerateRandomPassword
+        :type request: :class:`huaweicloudsdkcsms.v1.GenerateRandomPasswordRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.GenerateRandomPasswordResponse`
+        """
+        http_info = self._generate_random_password_http_info(request)
+        return self._call_api(**http_info)
+
+    def generate_random_password_invoker(self, request):
+        http_info = self._generate_random_password_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _generate_random_password_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/csms/generate-password",
+            "request_type": request.__class__.__name__,
+            "response_type": "GenerateRandomPasswordResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_grants(self, request):
+        """授权列表
+
+        授权列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListGrants
+        :type request: :class:`huaweicloudsdkcsms.v1.ListGrantsRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.ListGrantsResponse`
+        """
+        http_info = self._list_grants_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_grants_invoker(self, request):
+        http_info = self._list_grants_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_grants_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/csms/grants",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGrantsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'resource_id' in local_var_params:
+            query_params.append(('resource_id', local_var_params['resource_id']))
 
         header_params = {}
 
@@ -1364,6 +1626,77 @@ class CsmsClient(Client):
 
         return http_info
 
+    def list_users(self, request):
+        """查询用户列表
+
+        查询用户列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListUsers
+        :type request: :class:`huaweicloudsdkcsms.v1.ListUsersRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.ListUsersResponse`
+        """
+        http_info = self._list_users_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_users_invoker(self, request):
+        http_info = self._list_users_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_users_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/csms/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUsersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'org_id' in local_var_params:
+            query_params.append(('org_id', local_var_params['org_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'user_name' in local_var_params:
+            query_params.append(('user_name', local_var_params['user_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def restore_secret(self, request):
         """取消凭据的定时删除任务
 
@@ -1879,6 +2212,73 @@ class CsmsClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_grant(self, request):
+        """更新授权
+
+        更新授权
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateGrant
+        :type request: :class:`huaweicloudsdkcsms.v1.UpdateGrantRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.UpdateGrantResponse`
+        """
+        http_info = self._update_grant_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_grant_invoker(self, request):
+        http_info = self._update_grant_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_grant_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/csms/grants",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateGrantResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'resource_id' in local_var_params:
+            query_params.append(('resource_id', local_var_params['resource_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 

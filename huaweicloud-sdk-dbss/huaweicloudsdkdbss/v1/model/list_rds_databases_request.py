@@ -33,7 +33,7 @@ class ListRdsDatabasesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param db_type: 数据库类型 - MYSQL - ORACLE - POSTGRESQL - SQLSERVER - DAMENG - TAURUS - DWS - KINGBASE - MARIADB - GAUSSDBOPENGAUSS
+        :param db_type: 数据库类型 - MYSQL - POSTGRESQL - SQLSERVER - TAURUS - DWS - MARIADB - GAUSSDBOPENGAUSS
         :type db_type: str
         :param offset: 偏移量，从第一条数据偏移offset条数据后开始查询，默认为0。
         :type offset: str
@@ -58,7 +58,7 @@ class ListRdsDatabasesRequest:
     def db_type(self):
         """Gets the db_type of this ListRdsDatabasesRequest.
 
-        数据库类型 - MYSQL - ORACLE - POSTGRESQL - SQLSERVER - DAMENG - TAURUS - DWS - KINGBASE - MARIADB - GAUSSDBOPENGAUSS
+        数据库类型 - MYSQL - POSTGRESQL - SQLSERVER - TAURUS - DWS - MARIADB - GAUSSDBOPENGAUSS
 
         :return: The db_type of this ListRdsDatabasesRequest.
         :rtype: str
@@ -69,7 +69,7 @@ class ListRdsDatabasesRequest:
     def db_type(self, db_type):
         """Sets the db_type of this ListRdsDatabasesRequest.
 
-        数据库类型 - MYSQL - ORACLE - POSTGRESQL - SQLSERVER - DAMENG - TAURUS - DWS - KINGBASE - MARIADB - GAUSSDBOPENGAUSS
+        数据库类型 - MYSQL - POSTGRESQL - SQLSERVER - TAURUS - DWS - MARIADB - GAUSSDBOPENGAUSS
 
         :param db_type: The db_type of this ListRdsDatabasesRequest.
         :type db_type: str

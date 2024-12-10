@@ -51,15 +51,15 @@ class InstanceOrderReq:
 
         :param product_id: 产品编号
         :type product_id: str
-        :param charging_mode: 计费模式。
+        :param charging_mode: 计费模式： - 0：按需 - 1：包周期 
         :type charging_mode: int
-        :param payment_mode: 支付模式。
+        :param payment_mode: 支付模式： - ALL_UPFRONT：全预付 
         :type payment_mode: str
-        :param period_type: 订购周期类型： - 2：月 - 3：年
+        :param period_type: 订购周期类型： - 2：月 - 3：年 
         :type period_type: int
-        :param period_num: 订购周期数
+        :param period_num: 订购周期数：1-9 
         :type period_num: int
-        :param is_auto_renew: 是否支持自动续费
+        :param is_auto_renew: 是否支持自动续费： - 0：不自动续费 - 1：自动续费 
         :type is_auto_renew: int
         :param promotion_id: 促销产品编号
         :type promotion_id: str
@@ -137,7 +137,7 @@ class InstanceOrderReq:
     def charging_mode(self):
         """Gets the charging_mode of this InstanceOrderReq.
 
-        计费模式。
+        计费模式： - 0：按需 - 1：包周期 
 
         :return: The charging_mode of this InstanceOrderReq.
         :rtype: int
@@ -148,7 +148,7 @@ class InstanceOrderReq:
     def charging_mode(self, charging_mode):
         """Sets the charging_mode of this InstanceOrderReq.
 
-        计费模式。
+        计费模式： - 0：按需 - 1：包周期 
 
         :param charging_mode: The charging_mode of this InstanceOrderReq.
         :type charging_mode: int
@@ -159,7 +159,7 @@ class InstanceOrderReq:
     def payment_mode(self):
         """Gets the payment_mode of this InstanceOrderReq.
 
-        支付模式。
+        支付模式： - ALL_UPFRONT：全预付 
 
         :return: The payment_mode of this InstanceOrderReq.
         :rtype: str
@@ -170,7 +170,7 @@ class InstanceOrderReq:
     def payment_mode(self, payment_mode):
         """Sets the payment_mode of this InstanceOrderReq.
 
-        支付模式。
+        支付模式： - ALL_UPFRONT：全预付 
 
         :param payment_mode: The payment_mode of this InstanceOrderReq.
         :type payment_mode: str
@@ -181,7 +181,7 @@ class InstanceOrderReq:
     def period_type(self):
         """Gets the period_type of this InstanceOrderReq.
 
-        订购周期类型： - 2：月 - 3：年
+        订购周期类型： - 2：月 - 3：年 
 
         :return: The period_type of this InstanceOrderReq.
         :rtype: int
@@ -192,7 +192,7 @@ class InstanceOrderReq:
     def period_type(self, period_type):
         """Sets the period_type of this InstanceOrderReq.
 
-        订购周期类型： - 2：月 - 3：年
+        订购周期类型： - 2：月 - 3：年 
 
         :param period_type: The period_type of this InstanceOrderReq.
         :type period_type: int
@@ -203,7 +203,7 @@ class InstanceOrderReq:
     def period_num(self):
         """Gets the period_num of this InstanceOrderReq.
 
-        订购周期数
+        订购周期数：1-9 
 
         :return: The period_num of this InstanceOrderReq.
         :rtype: int
@@ -214,7 +214,7 @@ class InstanceOrderReq:
     def period_num(self, period_num):
         """Sets the period_num of this InstanceOrderReq.
 
-        订购周期数
+        订购周期数：1-9 
 
         :param period_num: The period_num of this InstanceOrderReq.
         :type period_num: int
@@ -225,7 +225,7 @@ class InstanceOrderReq:
     def is_auto_renew(self):
         """Gets the is_auto_renew of this InstanceOrderReq.
 
-        是否支持自动续费
+        是否支持自动续费： - 0：不自动续费 - 1：自动续费 
 
         :return: The is_auto_renew of this InstanceOrderReq.
         :rtype: int
@@ -236,7 +236,7 @@ class InstanceOrderReq:
     def is_auto_renew(self, is_auto_renew):
         """Sets the is_auto_renew of this InstanceOrderReq.
 
-        是否支持自动续费
+        是否支持自动续费： - 0：不自动续费 - 1：自动续费 
 
         :param is_auto_renew: The is_auto_renew of this InstanceOrderReq.
         :type is_auto_renew: int

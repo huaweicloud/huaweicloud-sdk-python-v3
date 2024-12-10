@@ -24,8 +24,7 @@ class ListApisBindedToRequestThrottlingPolicyV2Request:
         'env_id': 'str',
         'group_id': 'str',
         'api_id': 'str',
-        'api_name': 'str',
-        'tags': 'str'
+        'api_name': 'str'
     }
 
     attribute_map = {
@@ -36,11 +35,10 @@ class ListApisBindedToRequestThrottlingPolicyV2Request:
         'env_id': 'env_id',
         'group_id': 'group_id',
         'api_id': 'api_id',
-        'api_name': 'api_name',
-        'tags': 'tags'
+        'api_name': 'api_name'
     }
 
-    def __init__(self, instance_id=None, offset=None, limit=None, throttle_id=None, env_id=None, group_id=None, api_id=None, api_name=None, tags=None):
+    def __init__(self, instance_id=None, offset=None, limit=None, throttle_id=None, env_id=None, group_id=None, api_id=None, api_name=None):
         """ListApisBindedToRequestThrottlingPolicyV2Request
 
         The model defined in huaweicloud sdk
@@ -61,8 +59,6 @@ class ListApisBindedToRequestThrottlingPolicyV2Request:
         :type api_id: str
         :param api_name: API名称
         :type api_name: str
-        :param tags: API标签，该参数可指定多个，多个不同的参数值为或关系；不指定或为空时，表示不筛选标签；指定为#no_tags#时，表示筛选无标签API。
-        :type tags: str
         """
         
         
@@ -75,7 +71,6 @@ class ListApisBindedToRequestThrottlingPolicyV2Request:
         self._group_id = None
         self._api_id = None
         self._api_name = None
-        self._tags = None
         self.discriminator = None
 
         self.instance_id = instance_id
@@ -92,8 +87,6 @@ class ListApisBindedToRequestThrottlingPolicyV2Request:
             self.api_id = api_id
         if api_name is not None:
             self.api_name = api_name
-        if tags is not None:
-            self.tags = tags
 
     @property
     def instance_id(self):
@@ -270,28 +263,6 @@ class ListApisBindedToRequestThrottlingPolicyV2Request:
         :type api_name: str
         """
         self._api_name = api_name
-
-    @property
-    def tags(self):
-        """Gets the tags of this ListApisBindedToRequestThrottlingPolicyV2Request.
-
-        API标签，该参数可指定多个，多个不同的参数值为或关系；不指定或为空时，表示不筛选标签；指定为#no_tags#时，表示筛选无标签API。
-
-        :return: The tags of this ListApisBindedToRequestThrottlingPolicyV2Request.
-        :rtype: str
-        """
-        return self._tags
-
-    @tags.setter
-    def tags(self, tags):
-        """Sets the tags of this ListApisBindedToRequestThrottlingPolicyV2Request.
-
-        API标签，该参数可指定多个，多个不同的参数值为或关系；不指定或为空时，表示不筛选标签；指定为#no_tags#时，表示筛选无标签API。
-
-        :param tags: The tags of this ListApisBindedToRequestThrottlingPolicyV2Request.
-        :type tags: str
-        """
-        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

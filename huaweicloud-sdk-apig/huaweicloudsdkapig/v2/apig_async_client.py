@@ -11571,8 +11571,6 @@ class ApigAsyncClient(Client):
             query_params.append(('api_id', local_var_params['api_id']))
         if 'api_name' in local_var_params:
             query_params.append(('api_name', local_var_params['api_name']))
-        if 'tags' in local_var_params:
-            query_params.append(('tags', local_var_params['tags']))
 
         header_params = {}
 
@@ -13623,6 +13621,8 @@ class ApigAsyncClient(Client):
             query_params.append(('type', local_var_params['type']))
         if 'instance_id' in local_var_params:
             query_params.append(('instance_id', local_var_params['instance_id']))
+        if 'algorithm_type' in local_var_params:
+            query_params.append(('algorithm_type', local_var_params['algorithm_type']))
 
         header_params = {}
 
@@ -13789,6 +13789,8 @@ class ApigAsyncClient(Client):
         
         如果指定地址的后端实例已存在，则更新对应后端实例信息。如果请求体中包含多个重复地址的后端实例定义，则使用第一个定义。
         
+        引用负载通道类型的负载通道不支持添加或更新后端实例。
+        
         Please refer to HUAWEI cloud API Explorer for details.
 
 
@@ -13858,6 +13860,8 @@ class ApigAsyncClient(Client):
 
         批量修改后端服务器状态不可用。
         
+        引用负载通道类型的负载通道不支持修改后端服务器状态不可用。
+        
         Please refer to HUAWEI cloud API Explorer for details.
 
 
@@ -13926,6 +13930,8 @@ class ApigAsyncClient(Client):
         """批量修改后端服务器状态可用
 
         批量修改后端服务器状态可用。
+        
+        引用负载通道类型的负载通道不支持修改后端服务器状态可用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -14134,6 +14140,8 @@ class ApigAsyncClient(Client):
         """删除后端实例
 
         删除指定VPC通道中的后端实例
+        
+        引用负载通道类型的负载通道不支持删除后端实例。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -14549,6 +14557,8 @@ class ApigAsyncClient(Client):
             query_params.append(('member_group_name', local_var_params['member_group_name']))
         if 'member_group_id' in local_var_params:
             query_params.append(('member_group_id', local_var_params['member_group_id']))
+        if 'vpc_channel_type' in local_var_params:
+            query_params.append(('vpc_channel_type', local_var_params['vpc_channel_type']))
 
         header_params = {}
 
@@ -14716,6 +14726,8 @@ class ApigAsyncClient(Client):
         """更新后端实例
 
         更新指定的VPC通道的后端实例。更新时，使用传入的请求参数对对应云服务组的后端实例进行全量覆盖修改。如果未指定修改的云服务器组，则进行全量覆盖。
+        
+        引用负载通道类型的负载通道不支持更新后端实例。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
