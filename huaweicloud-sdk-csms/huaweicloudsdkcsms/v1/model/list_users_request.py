@@ -20,17 +20,17 @@ class ListUsersRequest:
         'org_id': 'str',
         'offset': 'int',
         'limit': 'int',
-        'user_name': 'str'
+        'user_info': 'str'
     }
 
     attribute_map = {
         'org_id': 'org_id',
         'offset': 'offset',
         'limit': 'limit',
-        'user_name': 'user_name'
+        'user_info': 'user_info'
     }
 
-    def __init__(self, org_id=None, offset=None, limit=None, user_name=None):
+    def __init__(self, org_id=None, offset=None, limit=None, user_info=None):
         """ListUsersRequest
 
         The model defined in huaweicloud sdk
@@ -41,8 +41,8 @@ class ListUsersRequest:
         :type offset: int
         :param limit: 每页多少条。最小值：10。最大值：100
         :type limit: int
-        :param user_name: 最长64位，用户名，支持模糊查询
-        :type user_name: str
+        :param user_info: 最长64位，用户名，支持模糊查询
+        :type user_info: str
         """
         
         
@@ -50,15 +50,15 @@ class ListUsersRequest:
         self._org_id = None
         self._offset = None
         self._limit = None
-        self._user_name = None
+        self._user_info = None
         self.discriminator = None
 
         if org_id is not None:
             self.org_id = org_id
         self.offset = offset
         self.limit = limit
-        if user_name is not None:
-            self.user_name = user_name
+        if user_info is not None:
+            self.user_info = user_info
 
     @property
     def org_id(self):
@@ -127,26 +127,26 @@ class ListUsersRequest:
         self._limit = limit
 
     @property
-    def user_name(self):
-        """Gets the user_name of this ListUsersRequest.
+    def user_info(self):
+        """Gets the user_info of this ListUsersRequest.
 
         最长64位，用户名，支持模糊查询
 
-        :return: The user_name of this ListUsersRequest.
+        :return: The user_info of this ListUsersRequest.
         :rtype: str
         """
-        return self._user_name
+        return self._user_info
 
-    @user_name.setter
-    def user_name(self, user_name):
-        """Sets the user_name of this ListUsersRequest.
+    @user_info.setter
+    def user_info(self, user_info):
+        """Sets the user_info of this ListUsersRequest.
 
         最长64位，用户名，支持模糊查询
 
-        :param user_name: The user_name of this ListUsersRequest.
-        :type user_name: str
+        :param user_info: The user_info of this ListUsersRequest.
+        :type user_info: str
         """
-        self._user_name = user_name
+        self._user_info = user_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

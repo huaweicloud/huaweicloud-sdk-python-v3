@@ -19,7 +19,7 @@ class UpdateLivePlatformRequest:
     openapi_types = {
         'x_app_user_id': 'str',
         'platform_id': 'str',
-        'body': 'CreateLivePlatformReq'
+        'body': 'UpdateLivePlatformReq'
     }
 
     attribute_map = {
@@ -38,7 +38,7 @@ class UpdateLivePlatformRequest:
         :param platform_id: 直播平台ID。
         :type platform_id: str
         :param body: Body of the UpdateLivePlatformRequest
-        :type body: :class:`huaweicloudsdkmetastudio.v1.CreateLivePlatformReq`
+        :type body: :class:`huaweicloudsdkmetastudio.v1.UpdateLivePlatformReq`
         """
         
         
@@ -103,7 +103,7 @@ class UpdateLivePlatformRequest:
         """Gets the body of this UpdateLivePlatformRequest.
 
         :return: The body of this UpdateLivePlatformRequest.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateLivePlatformReq`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateLivePlatformReq`
         """
         return self._body
 
@@ -112,7 +112,7 @@ class UpdateLivePlatformRequest:
         """Sets the body of this UpdateLivePlatformRequest.
 
         :param body: The body of this UpdateLivePlatformRequest.
-        :type body: :class:`huaweicloudsdkmetastudio.v1.CreateLivePlatformReq`
+        :type body: :class:`huaweicloudsdkmetastudio.v1.UpdateLivePlatformReq`
         """
         self._body = body
 

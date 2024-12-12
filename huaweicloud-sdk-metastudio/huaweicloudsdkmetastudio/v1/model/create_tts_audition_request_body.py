@@ -41,13 +41,13 @@ class CreateTtsAuditionRequestBody:
 
         :param text: 待合成文本。
         :type text: str
-        :param emotion: 音色ID。
+        :param emotion: 音色ID，获取方式详见[获取音色ID](metastudio_02_0054.xml)。
         :type emotion: str
-        :param speed: 语速。 默认值100，最小值50，最大值200。 &gt; * 当取值为“100”时，表示一个成年人正常的语速，约为250字/分钟。 &gt; * 50表示0.5倍语速，100表示正常语速，200表示2倍语速。
+        :param speed: 语速。 * 当取值为“100”时，表示一个成年人正常的语速，约为250字/分钟。 * 50表示0.5倍语速，100表示正常语速，200表示2倍语速。
         :type speed: int
-        :param pitch: 音高。 默认值100，最小值50，最大值200。
+        :param pitch: 音高。
         :type pitch: int
-        :param volume: 音量。 默认值140，最小值90，最大值240。
+        :param volume: 音量。
         :type volume: int
         :param business_type: 业务场景，多个入口调用试听接口时的业务场景
         :type business_type: str
@@ -100,7 +100,7 @@ class CreateTtsAuditionRequestBody:
     def emotion(self):
         """Gets the emotion of this CreateTtsAuditionRequestBody.
 
-        音色ID。
+        音色ID，获取方式详见[获取音色ID](metastudio_02_0054.xml)。
 
         :return: The emotion of this CreateTtsAuditionRequestBody.
         :rtype: str
@@ -111,7 +111,7 @@ class CreateTtsAuditionRequestBody:
     def emotion(self, emotion):
         """Sets the emotion of this CreateTtsAuditionRequestBody.
 
-        音色ID。
+        音色ID，获取方式详见[获取音色ID](metastudio_02_0054.xml)。
 
         :param emotion: The emotion of this CreateTtsAuditionRequestBody.
         :type emotion: str
@@ -122,7 +122,7 @@ class CreateTtsAuditionRequestBody:
     def speed(self):
         """Gets the speed of this CreateTtsAuditionRequestBody.
 
-        语速。 默认值100，最小值50，最大值200。 > * 当取值为“100”时，表示一个成年人正常的语速，约为250字/分钟。 > * 50表示0.5倍语速，100表示正常语速，200表示2倍语速。
+        语速。 * 当取值为“100”时，表示一个成年人正常的语速，约为250字/分钟。 * 50表示0.5倍语速，100表示正常语速，200表示2倍语速。
 
         :return: The speed of this CreateTtsAuditionRequestBody.
         :rtype: int
@@ -133,7 +133,7 @@ class CreateTtsAuditionRequestBody:
     def speed(self, speed):
         """Sets the speed of this CreateTtsAuditionRequestBody.
 
-        语速。 默认值100，最小值50，最大值200。 > * 当取值为“100”时，表示一个成年人正常的语速，约为250字/分钟。 > * 50表示0.5倍语速，100表示正常语速，200表示2倍语速。
+        语速。 * 当取值为“100”时，表示一个成年人正常的语速，约为250字/分钟。 * 50表示0.5倍语速，100表示正常语速，200表示2倍语速。
 
         :param speed: The speed of this CreateTtsAuditionRequestBody.
         :type speed: int
@@ -144,7 +144,7 @@ class CreateTtsAuditionRequestBody:
     def pitch(self):
         """Gets the pitch of this CreateTtsAuditionRequestBody.
 
-        音高。 默认值100，最小值50，最大值200。
+        音高。
 
         :return: The pitch of this CreateTtsAuditionRequestBody.
         :rtype: int
@@ -155,7 +155,7 @@ class CreateTtsAuditionRequestBody:
     def pitch(self, pitch):
         """Sets the pitch of this CreateTtsAuditionRequestBody.
 
-        音高。 默认值100，最小值50，最大值200。
+        音高。
 
         :param pitch: The pitch of this CreateTtsAuditionRequestBody.
         :type pitch: int
@@ -166,7 +166,7 @@ class CreateTtsAuditionRequestBody:
     def volume(self):
         """Gets the volume of this CreateTtsAuditionRequestBody.
 
-        音量。 默认值140，最小值90，最大值240。
+        音量。
 
         :return: The volume of this CreateTtsAuditionRequestBody.
         :rtype: int
@@ -177,7 +177,7 @@ class CreateTtsAuditionRequestBody:
     def volume(self, volume):
         """Sets the volume of this CreateTtsAuditionRequestBody.
 
-        音量。 默认值140，最小值90，最大值240。
+        音量。
 
         :param volume: The volume of this CreateTtsAuditionRequestBody.
         :type volume: int

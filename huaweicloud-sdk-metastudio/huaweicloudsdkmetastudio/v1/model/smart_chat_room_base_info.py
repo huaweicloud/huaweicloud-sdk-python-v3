@@ -25,6 +25,8 @@ class SmartChatRoomBaseInfo:
         'model_infos': 'ModelInfo',
         'voice_config': 'VoiceConfig',
         'concurrency': 'int',
+        'voice_config_list': 'list[VoiceConfigRsp]',
+        'default_language': 'str',
         'create_time': 'str',
         'update_time': 'str'
     }
@@ -38,11 +40,13 @@ class SmartChatRoomBaseInfo:
         'model_infos': 'model_infos',
         'voice_config': 'voice_config',
         'concurrency': 'concurrency',
+        'voice_config_list': 'voice_config_list',
+        'default_language': 'default_language',
         'create_time': 'create_time',
         'update_time': 'update_time'
     }
 
-    def __init__(self, room_id=None, room_name=None, room_description=None, robot_id=None, cover_url=None, model_infos=None, voice_config=None, concurrency=None, create_time=None, update_time=None):
+    def __init__(self, room_id=None, room_name=None, room_description=None, robot_id=None, cover_url=None, model_infos=None, voice_config=None, concurrency=None, voice_config_list=None, default_language=None, create_time=None, update_time=None):
         """SmartChatRoomBaseInfo
 
         The model defined in huaweicloud sdk
@@ -63,6 +67,10 @@ class SmartChatRoomBaseInfo:
         :type voice_config: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
         :param concurrency: **参数解释**： 并发路数。
         :type concurrency: int
+        :param voice_config_list: 语音配置参数列表。
+        :type voice_config_list: list[:class:`huaweicloudsdkmetastudio.v1.VoiceConfigRsp`]
+        :param default_language: 默认语言，智能交互接口使用。默认值CN。 * CN：简体中文。 * EN：英语。
+        :type default_language: str
         :param create_time: 创建时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
         :type create_time: str
         :param update_time: 更新时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
@@ -79,6 +87,8 @@ class SmartChatRoomBaseInfo:
         self._model_infos = None
         self._voice_config = None
         self._concurrency = None
+        self._voice_config_list = None
+        self._default_language = None
         self._create_time = None
         self._update_time = None
         self.discriminator = None
@@ -99,6 +109,10 @@ class SmartChatRoomBaseInfo:
             self.voice_config = voice_config
         if concurrency is not None:
             self.concurrency = concurrency
+        if voice_config_list is not None:
+            self.voice_config_list = voice_config_list
+        if default_language is not None:
+            self.default_language = default_language
         if create_time is not None:
             self.create_time = create_time
         if update_time is not None:
@@ -271,6 +285,50 @@ class SmartChatRoomBaseInfo:
         :type concurrency: int
         """
         self._concurrency = concurrency
+
+    @property
+    def voice_config_list(self):
+        """Gets the voice_config_list of this SmartChatRoomBaseInfo.
+
+        语音配置参数列表。
+
+        :return: The voice_config_list of this SmartChatRoomBaseInfo.
+        :rtype: list[:class:`huaweicloudsdkmetastudio.v1.VoiceConfigRsp`]
+        """
+        return self._voice_config_list
+
+    @voice_config_list.setter
+    def voice_config_list(self, voice_config_list):
+        """Sets the voice_config_list of this SmartChatRoomBaseInfo.
+
+        语音配置参数列表。
+
+        :param voice_config_list: The voice_config_list of this SmartChatRoomBaseInfo.
+        :type voice_config_list: list[:class:`huaweicloudsdkmetastudio.v1.VoiceConfigRsp`]
+        """
+        self._voice_config_list = voice_config_list
+
+    @property
+    def default_language(self):
+        """Gets the default_language of this SmartChatRoomBaseInfo.
+
+        默认语言，智能交互接口使用。默认值CN。 * CN：简体中文。 * EN：英语。
+
+        :return: The default_language of this SmartChatRoomBaseInfo.
+        :rtype: str
+        """
+        return self._default_language
+
+    @default_language.setter
+    def default_language(self, default_language):
+        """Sets the default_language of this SmartChatRoomBaseInfo.
+
+        默认语言，智能交互接口使用。默认值CN。 * CN：简体中文。 * EN：英语。
+
+        :param default_language: The default_language of this SmartChatRoomBaseInfo.
+        :type default_language: str
+        """
+        self._default_language = default_language
 
     @property
     def create_time(self):

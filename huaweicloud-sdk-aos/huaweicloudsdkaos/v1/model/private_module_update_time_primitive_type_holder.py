@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class SyncNodePoolResp:
+class PrivateModuleUpdateTimePrimitiveTypeHolder:
 
     """
     Attributes:
@@ -17,20 +17,51 @@ class SyncNodePoolResp:
     sensitive_list = []
 
     openapi_types = {
+        'update_time': 'str'
     }
 
     attribute_map = {
+        'update_time': 'update_time'
     }
 
-    def __init__(self):
-        """SyncNodePoolResp
+    def __init__(self, update_time=None):
+        """PrivateModuleUpdateTimePrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
+        :param update_time: 私有模块（private-module）的更新时间，格式为YYYY-MM-DDTHH:mm:ss.SSSZ，精确到毫秒，UTC时区，即，如1970-01-01T00:00:00.000Z。
+        :type update_time: str
         """
         
         
+
+        self._update_time = None
         self.discriminator = None
+
+        if update_time is not None:
+            self.update_time = update_time
+
+    @property
+    def update_time(self):
+        """Gets the update_time of this PrivateModuleUpdateTimePrimitiveTypeHolder.
+
+        私有模块（private-module）的更新时间，格式为YYYY-MM-DDTHH:mm:ss.SSSZ，精确到毫秒，UTC时区，即，如1970-01-01T00:00:00.000Z。
+
+        :return: The update_time of this PrivateModuleUpdateTimePrimitiveTypeHolder.
+        :rtype: str
+        """
+        return self._update_time
+
+    @update_time.setter
+    def update_time(self, update_time):
+        """Sets the update_time of this PrivateModuleUpdateTimePrimitiveTypeHolder.
+
+        私有模块（private-module）的更新时间，格式为YYYY-MM-DDTHH:mm:ss.SSSZ，精确到毫秒，UTC时区，即，如1970-01-01T00:00:00.000Z。
+
+        :param update_time: The update_time of this PrivateModuleUpdateTimePrimitiveTypeHolder.
+        :type update_time: str
+        """
+        self._update_time = update_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -74,7 +105,7 @@ class SyncNodePoolResp:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, SyncNodePoolResp):
+        if not isinstance(other, PrivateModuleUpdateTimePrimitiveTypeHolder):
             return False
 
         return self.__dict__ == other.__dict__

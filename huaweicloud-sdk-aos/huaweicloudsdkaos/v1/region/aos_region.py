@@ -26,6 +26,8 @@ class AosRegion:
                         "https://rfs.ap-southeast-1.myhuaweicloud.com")
     AP_SOUTHEAST_4 = Region("ap-southeast-4",
                         "https://rfs.ap-southeast-4.myhuaweicloud.com")
+    MY_KUALALUMPUR_1 = Region("my-kualalumpur-1",
+                        "https://rfs.my-kualalumpur-1.myhuaweicloud.com")
     ME_EAST_1 = Region("me-east-1",
                         "https://rfs.me-east-1.myhuaweicloud.com")
     TR_WEST_1 = Region("tr-west-1",
@@ -60,6 +62,7 @@ class AosRegion:
         "ap-southeast-2": AP_SOUTHEAST_2,
         "ap-southeast-1": AP_SOUTHEAST_1,
         "ap-southeast-4": AP_SOUTHEAST_4,
+        "my-kualalumpur-1": MY_KUALALUMPUR_1,
         "me-east-1": ME_EAST_1,
         "tr-west-1": TR_WEST_1,
         "la-south-2": LA_SOUTH_2,

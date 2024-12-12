@@ -1590,6 +1590,791 @@ class AosClient(Client):
 
         return http_info
 
+    def create_private_module(self, request):
+        """创建私有模块
+
+        创建私有模块（CreatePrivateModule）
+        
+        创建一个私有的空模块。如果用户给予了module_version与module_uri，则在创建私有模块的同时，在私有模块下创建一个私有模块版本。
+          * 模块允许用户将可复用的代码编辑在一起供模块使用。
+          * 如果同名私有模块在当前账户中已经存在，则会返回失败。
+          * 版本号遵循语义化版本号（Semantic Version），为用户自定义。
+          * 资源编排服务只会对模块进行浅校验，如文件大小、是否可以解压、文件数量等。并不会深度校验，即不会做语法类校验。
+        
+        以HCL格式的模板为例，模板中引用私有模块的语法如下：
+        &#x60;&#x60;&#x60;
+        module \&quot;my_hello_word_module\&quot; {
+          source &#x3D; \&quot;rf://rfs.{region_id}.myhuaweicloud.com/private/{domain_id}/{module_name}?version&#x3D;&#x3D;{module_version}\&quot;
+        }
+        &#x60;&#x60;&#x60;
+        
+        以JSON格式的模板为例，模板中引用私有模块的语法如下：
+        &#x60;&#x60;&#x60;
+        {
+          \&quot;module\&quot;: {
+            \&quot;my_hello_word_module\&quot;: {
+              \&quot;source\&quot;: \&quot;rf://rfs.{region_id}.myhuaweicloud.com/private/{domain_id}/{module_name}?version&#x3D;&#x3D;{module_version}\&quot;
+            }
+          }
+        }
+        &#x60;&#x60;&#x60;
+        对应上述两个例子中的模块链接（source字段的内容）可以调用ShowPrivateModuleVersionMetadata返回的module_source字段中获取
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreatePrivateModule
+        :type request: :class:`huaweicloudsdkaos.v1.CreatePrivateModuleRequest`
+        :rtype: :class:`huaweicloudsdkaos.v1.CreatePrivateModuleResponse`
+        """
+        http_info = self._create_private_module_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_private_module_invoker(self, request):
+        http_info = self._create_private_module_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_private_module_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/private-modules",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePrivateModuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'client_request_id' in local_var_params:
+            header_params['Client-Request-Id'] = local_var_params['client_request_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['token']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_private_module_version(self, request):
+        """创建私有模块版本
+
+        创建私有模块版本（CreatePrivateModuleVersion）
+        
+        创建新的私有模块版本
+        
+          * 模块的版本号需遵循语义化版本号（Semantic Version），为用户自定义。
+          * 如果module_name和module_id同时存在，则资源编排服务会检查是否两个匹配，如果不匹配则会返回400。
+          * 资源编排服务只会对模块进行浅校验，如文件大小、是否可以解压、文件数量等。并不会深度校验，即不会做语法类校验。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreatePrivateModuleVersion
+        :type request: :class:`huaweicloudsdkaos.v1.CreatePrivateModuleVersionRequest`
+        :rtype: :class:`huaweicloudsdkaos.v1.CreatePrivateModuleVersionResponse`
+        """
+        http_info = self._create_private_module_version_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_private_module_version_invoker(self, request):
+        http_info = self._create_private_module_version_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_private_module_version_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/private-modules/{module_name}/versions",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePrivateModuleVersionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'module_name' in local_var_params:
+            path_params['module_name'] = local_var_params['module_name']
+
+        query_params = []
+
+        header_params = {}
+        if 'client_request_id' in local_var_params:
+            header_params['Client-Request-Id'] = local_var_params['client_request_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['token']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_private_module(self, request):
+        """删除私有模块
+
+        删除私有模块（DeletePrivateModule）
+        
+        删除某个私有模块以及私有模块下的全部模块版本
+        
+          * 如果module_name和module_id同时存在，则资源编排服务会检查是否两个匹配，如果不匹配则会返回400。
+        
+        **请谨慎操作，删除私有模块将会删除该私有模块下的所有的模块版本。**
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeletePrivateModule
+        :type request: :class:`huaweicloudsdkaos.v1.DeletePrivateModuleRequest`
+        :rtype: :class:`huaweicloudsdkaos.v1.DeletePrivateModuleResponse`
+        """
+        http_info = self._delete_private_module_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_private_module_invoker(self, request):
+        http_info = self._delete_private_module_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_private_module_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/private-modules/{module_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePrivateModuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'module_name' in local_var_params:
+            path_params['module_name'] = local_var_params['module_name']
+
+        query_params = []
+        if 'module_id' in local_var_params:
+            query_params.append(('module_id', local_var_params['module_id']))
+
+        header_params = {}
+        if 'client_request_id' in local_var_params:
+            header_params['Client-Request-Id'] = local_var_params['client_request_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['token']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_private_module_version(self, request):
+        """删除私有模块版本
+
+        删除私有模块版本（DeletePrivateModuleVersion）
+        
+        删除某个私有模块版本
+        
+          * 如果module_name和module_id同时存在，则资源编排服务会检查是否两个匹配，如果不匹配则会返回400。
+        
+        **请谨慎操作**
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeletePrivateModuleVersion
+        :type request: :class:`huaweicloudsdkaos.v1.DeletePrivateModuleVersionRequest`
+        :rtype: :class:`huaweicloudsdkaos.v1.DeletePrivateModuleVersionResponse`
+        """
+        http_info = self._delete_private_module_version_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_private_module_version_invoker(self, request):
+        http_info = self._delete_private_module_version_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_private_module_version_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/private-modules/{module_name}/versions/{module_version}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePrivateModuleVersionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'module_name' in local_var_params:
+            path_params['module_name'] = local_var_params['module_name']
+        if 'module_version' in local_var_params:
+            path_params['module_version'] = local_var_params['module_version']
+
+        query_params = []
+        if 'module_id' in local_var_params:
+            query_params.append(('module_id', local_var_params['module_id']))
+
+        header_params = {}
+        if 'client_request_id' in local_var_params:
+            header_params['Client-Request-Id'] = local_var_params['client_request_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['token']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_private_module_versions(self, request):
+        """列举私有模块版本
+
+        列举私有模块版本（ListPrivateModuleVersions）
+        
+        列举所选择的私有模块中所有的模块版本信息。
+        
+          * 可以使用sort_key和sort_dir两个关键字对返回结果按创建时间（create_time）进行排序。给予的sort_key和sort_dir数量须一致，否则返回400。如果未给予sort_key和sort_dir，则默认按照创建时间降序排序。
+          * 如果module_name和module_id同时存在，则资源编排服务会检查是否两个匹配，如果不匹配则会返回400。
+          * 如果模块不存在则返回404。
+        
+        ListPrivateModuleVersions返回的只有摘要信息（具体摘要信息见ListPrivateModuleVersionsResponseBody），如果用户需要详细的模块版本元数据请调用ShowPrivateModuleVersionMetadata
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListPrivateModuleVersions
+        :type request: :class:`huaweicloudsdkaos.v1.ListPrivateModuleVersionsRequest`
+        :rtype: :class:`huaweicloudsdkaos.v1.ListPrivateModuleVersionsResponse`
+        """
+        http_info = self._list_private_module_versions_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_private_module_versions_invoker(self, request):
+        http_info = self._list_private_module_versions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_private_module_versions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/private-modules/{module_name}/versions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPrivateModuleVersionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'module_name' in local_var_params:
+            path_params['module_name'] = local_var_params['module_name']
+
+        query_params = []
+        if 'module_id' in local_var_params:
+            query_params.append(('module_id', local_var_params['module_id']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+            collection_formats['sort_key'] = 'multi'
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+            collection_formats['sort_dir'] = 'multi'
+
+        header_params = {}
+        if 'client_request_id' in local_var_params:
+            header_params['Client-Request-Id'] = local_var_params['client_request_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['token']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_private_modules(self, request):
+        """列举私有模块
+
+        列举私有模块（ListPrivateModules）
+        
+        列举当前局点下用户所有的私有模块。
+        
+          * 可以使用sort_key和sort_dir两个关键字对返回结果按创建时间（create_time）进行排序。给予的sort_key和sort_dir数量须一致，否则返回400。如果未给予sort_key和sort_dir，则默认按照创建时间降序排序。
+          * 如果当前用户下没有任何私有模块，则返回空list。
+          * 如果需要某个模块的所有版本信息，可以调用ListModuleVersions。
+        
+        ListPrivateModules返回的只有摘要信息（具体摘要信息见ListPrivateModulesResponseBody），如果用户需要详细的模块元数据请调用ShowPrivateModuleMetadata
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListPrivateModules
+        :type request: :class:`huaweicloudsdkaos.v1.ListPrivateModulesRequest`
+        :rtype: :class:`huaweicloudsdkaos.v1.ListPrivateModulesResponse`
+        """
+        http_info = self._list_private_modules_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_private_modules_invoker(self, request):
+        http_info = self._list_private_modules_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_private_modules_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/private-modules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPrivateModulesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+            collection_formats['sort_key'] = 'multi'
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+            collection_formats['sort_dir'] = 'multi'
+
+        header_params = {}
+        if 'client_request_id' in local_var_params:
+            header_params['Client-Request-Id'] = local_var_params['client_request_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['token']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_private_module_metadata(self, request):
+        """获取私有模块元数据
+
+        获取私有模块元数据（ShowPrivateModuleMetadata）
+        
+        获取当前私有模块的元数据信息
+        
+          * 具体返回的信息见ShowPrivateModuleMetadataResponseBody，如果想查看私有模块下全部模块版本，请调用ListPrivateModuleVersions。
+          * 如果module_name和module_id同时存在，则资源编排服务会检查是否两个匹配，如果不匹配则会返回400。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowPrivateModuleMetadata
+        :type request: :class:`huaweicloudsdkaos.v1.ShowPrivateModuleMetadataRequest`
+        :rtype: :class:`huaweicloudsdkaos.v1.ShowPrivateModuleMetadataResponse`
+        """
+        http_info = self._show_private_module_metadata_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_private_module_metadata_invoker(self, request):
+        http_info = self._show_private_module_metadata_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_private_module_metadata_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/private-modules/{module_name}/metadata",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPrivateModuleMetadataResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'module_name' in local_var_params:
+            path_params['module_name'] = local_var_params['module_name']
+
+        query_params = []
+        if 'module_id' in local_var_params:
+            query_params.append(('module_id', local_var_params['module_id']))
+
+        header_params = {}
+        if 'client_request_id' in local_var_params:
+            header_params['Client-Request-Id'] = local_var_params['client_request_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['token']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_private_module_version_content(self, request):
+        """获取私有模块版本内容
+
+        获取私有模块版本内容（ShowPrivateModuleVersionContent）
+        
+        获取指定私有模块对应版本的内容。
+        
+          * 如果获取成功，则以临时重定向形式返回模块下载链接（OBS Pre Signed地址，有效期为5分钟），大多数的客户端会进行自动重定向并下载模块；
+          * 如果未进行自动重定向，请参考HTTP的重定向规则获取模块下载链接，手动下载模块。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowPrivateModuleVersionContent
+        :type request: :class:`huaweicloudsdkaos.v1.ShowPrivateModuleVersionContentRequest`
+        :rtype: :class:`huaweicloudsdkaos.v1.ShowPrivateModuleVersionContentResponse`
+        """
+        http_info = self._show_private_module_version_content_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_private_module_version_content_invoker(self, request):
+        http_info = self._show_private_module_version_content_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_private_module_version_content_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/private-modules/{module_name}/versions/{module_version}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPrivateModuleVersionContentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'module_name' in local_var_params:
+            path_params['module_name'] = local_var_params['module_name']
+        if 'module_version' in local_var_params:
+            path_params['module_version'] = local_var_params['module_version']
+
+        query_params = []
+        if 'module_id' in local_var_params:
+            query_params.append(('module_id', local_var_params['module_id']))
+
+        header_params = {}
+        if 'client_request_id' in local_var_params:
+            header_params['Client-Request-Id'] = local_var_params['client_request_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["Location", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['token']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_private_module_version_metadata(self, request):
+        """获取私有模块版本元数据
+
+        获取私有模块版本元数据（ShowPrivateModuleVersionMetadata）
+        
+        获取当前私有模块对应的版本的元数据信息
+        
+          * 具体返回的信息见ShowPrivateModuleVersionMetadataResponseBody。
+          * 如果module_name和module_id同时存在，则资源编排服务会检查是否两个匹配，如果不匹配则会返回400。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowPrivateModuleVersionMetadata
+        :type request: :class:`huaweicloudsdkaos.v1.ShowPrivateModuleVersionMetadataRequest`
+        :rtype: :class:`huaweicloudsdkaos.v1.ShowPrivateModuleVersionMetadataResponse`
+        """
+        http_info = self._show_private_module_version_metadata_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_private_module_version_metadata_invoker(self, request):
+        http_info = self._show_private_module_version_metadata_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_private_module_version_metadata_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/private-modules/{module_name}/versions/{module_version}/metadata",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPrivateModuleVersionMetadataResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'module_name' in local_var_params:
+            path_params['module_name'] = local_var_params['module_name']
+        if 'module_version' in local_var_params:
+            path_params['module_version'] = local_var_params['module_version']
+
+        query_params = []
+        if 'module_id' in local_var_params:
+            query_params.append(('module_id', local_var_params['module_id']))
+
+        header_params = {}
+        if 'client_request_id' in local_var_params:
+            header_params['Client-Request-Id'] = local_var_params['client_request_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['token']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_private_module_metadata(self, request):
+        """更新私有模块元数据
+
+        更新私有模块元数据（UpdatePrivateModuleMetadata）
+        
+        更新当前私有模块的元数据信息
+        
+          * 目前只支持更新私有模块的描述
+          * 如果需要创建新的版本，请调用CreatePrivateModuleVersion
+          * 更新为增量更新，即如果某个参数不提供，则保持原始值
+          * 如果请求中没有需要被更新的参数，则返回400。注意：即使更新原始值和目标值一致也被认为是有效更新
+          * 更新后私有模块的更新时间（update_time）也会被更新
+          * 如果module_name和module_id同时存在，则资源编排服务会检查是否两个匹配，如果不匹配则会返回400。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdatePrivateModuleMetadata
+        :type request: :class:`huaweicloudsdkaos.v1.UpdatePrivateModuleMetadataRequest`
+        :rtype: :class:`huaweicloudsdkaos.v1.UpdatePrivateModuleMetadataResponse`
+        """
+        http_info = self._update_private_module_metadata_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_private_module_metadata_invoker(self, request):
+        http_info = self._update_private_module_metadata_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_private_module_metadata_http_info(cls, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v1/private-modules/{module_name}/metadata",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePrivateModuleMetadataResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'module_name' in local_var_params:
+            path_params['module_name'] = local_var_params['module_name']
+
+        query_params = []
+
+        header_params = {}
+        if 'client_request_id' in local_var_params:
+            header_params['Client-Request-Id'] = local_var_params['client_request_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['token']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def continue_deploy_stack(self, request):
         """继续部署资源栈
 

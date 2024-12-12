@@ -23,8 +23,10 @@ class UpdateSmartChatRoomResponse(SdkResponse):
         'video_config': 'VideoConfig',
         'model_asset_id': 'str',
         'voice_config': 'VoiceConfig',
+        'voice_config_list': 'list[ChatVoiceConfig]',
         'robot_id': 'str',
         'concurrency': 'int',
+        'default_language': 'str',
         'background_config': 'BackgroundConfigInfo',
         'layer_config': 'list[LayerConfig]',
         'review_config': 'ReviewConfig',
@@ -43,8 +45,10 @@ class UpdateSmartChatRoomResponse(SdkResponse):
         'video_config': 'video_config',
         'model_asset_id': 'model_asset_id',
         'voice_config': 'voice_config',
+        'voice_config_list': 'voice_config_list',
         'robot_id': 'robot_id',
         'concurrency': 'concurrency',
+        'default_language': 'default_language',
         'background_config': 'background_config',
         'layer_config': 'layer_config',
         'review_config': 'review_config',
@@ -57,7 +61,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, room_name=None, room_description=None, video_config=None, model_asset_id=None, voice_config=None, robot_id=None, concurrency=None, background_config=None, layer_config=None, review_config=None, chat_subtitle_config=None, chat_video_type=None, room_id=None, create_time=None, update_time=None, cover_url=None, x_request_id=None):
+    def __init__(self, room_name=None, room_description=None, video_config=None, model_asset_id=None, voice_config=None, voice_config_list=None, robot_id=None, concurrency=None, default_language=None, background_config=None, layer_config=None, review_config=None, chat_subtitle_config=None, chat_video_type=None, room_id=None, create_time=None, update_time=None, cover_url=None, x_request_id=None):
         """UpdateSmartChatRoomResponse
 
         The model defined in huaweicloud sdk
@@ -72,10 +76,14 @@ class UpdateSmartChatRoomResponse(SdkResponse):
         :type model_asset_id: str
         :param voice_config: 
         :type voice_config: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
+        :param voice_config_list: 语音配置参数列表。
+        :type voice_config_list: list[:class:`huaweicloudsdkmetastudio.v1.ChatVoiceConfig`]
         :param robot_id: 机器人ID。获取方法请参考[创建应用](CreateRobot.xml)。
         :type robot_id: str
         :param concurrency: **参数解释**： 并发路数。
         :type concurrency: int
+        :param default_language: 默认语言，智能交互接口使用。默认值CN。 * CN：简体中文。 * EN：英语。
+        :type default_language: str
         :param background_config: 
         :type background_config: :class:`huaweicloudsdkmetastudio.v1.BackgroundConfigInfo`
         :param layer_config: 图层配置。
@@ -105,8 +113,10 @@ class UpdateSmartChatRoomResponse(SdkResponse):
         self._video_config = None
         self._model_asset_id = None
         self._voice_config = None
+        self._voice_config_list = None
         self._robot_id = None
         self._concurrency = None
+        self._default_language = None
         self._background_config = None
         self._layer_config = None
         self._review_config = None
@@ -128,10 +138,14 @@ class UpdateSmartChatRoomResponse(SdkResponse):
             self.model_asset_id = model_asset_id
         if voice_config is not None:
             self.voice_config = voice_config
+        if voice_config_list is not None:
+            self.voice_config_list = voice_config_list
         if robot_id is not None:
             self.robot_id = robot_id
         if concurrency is not None:
             self.concurrency = concurrency
+        if default_language is not None:
+            self.default_language = default_language
         if background_config is not None:
             self.background_config = background_config
         if layer_config is not None:
@@ -256,6 +270,28 @@ class UpdateSmartChatRoomResponse(SdkResponse):
         self._voice_config = voice_config
 
     @property
+    def voice_config_list(self):
+        """Gets the voice_config_list of this UpdateSmartChatRoomResponse.
+
+        语音配置参数列表。
+
+        :return: The voice_config_list of this UpdateSmartChatRoomResponse.
+        :rtype: list[:class:`huaweicloudsdkmetastudio.v1.ChatVoiceConfig`]
+        """
+        return self._voice_config_list
+
+    @voice_config_list.setter
+    def voice_config_list(self, voice_config_list):
+        """Sets the voice_config_list of this UpdateSmartChatRoomResponse.
+
+        语音配置参数列表。
+
+        :param voice_config_list: The voice_config_list of this UpdateSmartChatRoomResponse.
+        :type voice_config_list: list[:class:`huaweicloudsdkmetastudio.v1.ChatVoiceConfig`]
+        """
+        self._voice_config_list = voice_config_list
+
+    @property
     def robot_id(self):
         """Gets the robot_id of this UpdateSmartChatRoomResponse.
 
@@ -298,6 +334,28 @@ class UpdateSmartChatRoomResponse(SdkResponse):
         :type concurrency: int
         """
         self._concurrency = concurrency
+
+    @property
+    def default_language(self):
+        """Gets the default_language of this UpdateSmartChatRoomResponse.
+
+        默认语言，智能交互接口使用。默认值CN。 * CN：简体中文。 * EN：英语。
+
+        :return: The default_language of this UpdateSmartChatRoomResponse.
+        :rtype: str
+        """
+        return self._default_language
+
+    @default_language.setter
+    def default_language(self, default_language):
+        """Sets the default_language of this UpdateSmartChatRoomResponse.
+
+        默认语言，智能交互接口使用。默认值CN。 * CN：简体中文。 * EN：英语。
+
+        :param default_language: The default_language of this UpdateSmartChatRoomResponse.
+        :type default_language: str
+        """
+        self._default_language = default_language
 
     @property
     def background_config(self):

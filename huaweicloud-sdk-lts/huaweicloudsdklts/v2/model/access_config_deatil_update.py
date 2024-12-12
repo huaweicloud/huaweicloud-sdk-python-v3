@@ -35,7 +35,15 @@ class AccessConfigDeatilUpdate:
         'log_envs': 'dict(str, str)',
         'include_k8s_labels': 'dict(str, str)',
         'exclude_k8s_labels': 'dict(str, str)',
-        'log_k8s': 'dict(str, str)'
+        'log_k8s': 'dict(str, str)',
+        'system_fields': 'list[str]',
+        'custom_key_value': 'dict(str, str)',
+        'include_labels_logical': 'str',
+        'exclude_labels_logical': 'str',
+        'include_k8s_labels_logical': 'str',
+        'exclude_k8s_labels_logical': 'str',
+        'include_envs_logical': 'str',
+        'exclude_envs_logical': 'str'
     }
 
     attribute_map = {
@@ -57,10 +65,18 @@ class AccessConfigDeatilUpdate:
         'log_envs': 'logEnvs',
         'include_k8s_labels': 'includeK8sLabels',
         'exclude_k8s_labels': 'excludeK8sLabels',
-        'log_k8s': 'logK8s'
+        'log_k8s': 'logK8s',
+        'system_fields': 'system_fields',
+        'custom_key_value': 'custom_key_value',
+        'include_labels_logical': 'includeLabelsLogical',
+        'exclude_labels_logical': 'excludeLabelsLogical',
+        'include_k8s_labels_logical': 'includeK8sLabelsLogical',
+        'exclude_k8s_labels_logical': 'excludeK8sLabelsLogical',
+        'include_envs_logical': 'includeEnvsLogical',
+        'exclude_envs_logical': 'excludeEnvsLogical'
     }
 
-    def __init__(self, paths=None, black_paths=None, format=None, windows_log_info=None, stdout=None, stderr=None, path_type=None, namespace_regex=None, pod_name_regex=None, container_name_regex=None, include_labels=None, exclude_labels=None, include_envs=None, exclude_envs=None, log_labels=None, log_envs=None, include_k8s_labels=None, exclude_k8s_labels=None, log_k8s=None):
+    def __init__(self, paths=None, black_paths=None, format=None, windows_log_info=None, stdout=None, stderr=None, path_type=None, namespace_regex=None, pod_name_regex=None, container_name_regex=None, include_labels=None, exclude_labels=None, include_envs=None, exclude_envs=None, log_labels=None, log_envs=None, include_k8s_labels=None, exclude_k8s_labels=None, log_k8s=None, system_fields=None, custom_key_value=None, include_labels_logical=None, exclude_labels_logical=None, include_k8s_labels_logical=None, exclude_k8s_labels_logical=None, include_envs_logical=None, exclude_envs_logical=None):
         """AccessConfigDeatilUpdate
 
         The model defined in huaweicloud sdk
@@ -103,6 +119,22 @@ class AccessConfigDeatilUpdate:
         :type exclude_k8s_labels: dict(str, str)
         :param log_k8s: K8s Label日志标签，最多支持创建30个，keyname不支持重名，仅CCE接入类型时使用
         :type log_k8s: dict(str, str)
+        :param system_fields: 系统内置字段：配置日志接入规则时，可以配置系统内置字段，上报日志后，每条日志数据的标签数据中将会有系统字段 采集场景为主机文件的内置字段为：hostName、hostId、hostIP、pathFile、hostIPv6、category、collectTime、__host_group__ 采集场景为K8S集群容器文件的内置字段为：hostName、hostId、hostIP、pathFile、hostIPv6、clusterId、podName、appName、containerName、nameSpace、category、collectTime、__host_group__、serviceID、podIp、clusterName、workloadType 若修改时传入此字段，将覆盖原有配置
+        :type system_fields: list[str]
+        :param custom_key_value: 自定义键值对：配置日志接入规则时，可以配置自定义键值对规则，上报日志后，每条日志数据的标签数据中将会有用户自定义的键值对字段，键值对数量不超过20 键的长度限制为128，允许的字符有a-zA-Z0-9_- 值的长度限制为1024 若修改时传入此字段，将覆盖原有配置
+        :type custom_key_value: dict(str, str)
+        :param include_labels_logical: 容器 Label白名单，可选为AND，OR，不配置时默认为OR；当存在多个值时的处理逻辑，AND表示同时满足才会生效，OR表示有一项满足就会生效
+        :type include_labels_logical: str
+        :param exclude_labels_logical: 容器 Label黑名单，可选为AND，OR，不配置时默认为OR；当存在多个值时的处理逻辑，AND表示同时满足才会生效，OR表示有一项满足就会生效
+        :type exclude_labels_logical: str
+        :param include_k8s_labels_logical: K8S Label白名单，可选为AND，OR，不配置时默认为OR；当存在多个值时的处理逻辑，AND表示同时满足才会生效，OR表示有一项满足就会生效
+        :type include_k8s_labels_logical: str
+        :param exclude_k8s_labels_logical: K8S Label黑名单，可选为AND，OR，不配置时默认为OR；当存在多个值时的处理逻辑，AND表示同时满足才会生效，OR表示有一项满足就会生效
+        :type exclude_k8s_labels_logical: str
+        :param include_envs_logical: 环境变量白名单，可选为AND，OR，不配置时默认为OR；当存在多个值时的处理逻辑，AND表示同时满足才会生效，OR表示有一项满足就会生效
+        :type include_envs_logical: str
+        :param exclude_envs_logical: 环境变量黑名单，可选为AND，OR，不配置时默认为OR；当存在多个值时的处理逻辑，AND表示同时满足才会生效，OR表示有一项满足就会生效
+        :type exclude_envs_logical: str
         """
         
         
@@ -126,6 +158,14 @@ class AccessConfigDeatilUpdate:
         self._include_k8s_labels = None
         self._exclude_k8s_labels = None
         self._log_k8s = None
+        self._system_fields = None
+        self._custom_key_value = None
+        self._include_labels_logical = None
+        self._exclude_labels_logical = None
+        self._include_k8s_labels_logical = None
+        self._exclude_k8s_labels_logical = None
+        self._include_envs_logical = None
+        self._exclude_envs_logical = None
         self.discriminator = None
 
         if paths is not None:
@@ -166,6 +206,22 @@ class AccessConfigDeatilUpdate:
             self.exclude_k8s_labels = exclude_k8s_labels
         if log_k8s is not None:
             self.log_k8s = log_k8s
+        if system_fields is not None:
+            self.system_fields = system_fields
+        if custom_key_value is not None:
+            self.custom_key_value = custom_key_value
+        if include_labels_logical is not None:
+            self.include_labels_logical = include_labels_logical
+        if exclude_labels_logical is not None:
+            self.exclude_labels_logical = exclude_labels_logical
+        if include_k8s_labels_logical is not None:
+            self.include_k8s_labels_logical = include_k8s_labels_logical
+        if exclude_k8s_labels_logical is not None:
+            self.exclude_k8s_labels_logical = exclude_k8s_labels_logical
+        if include_envs_logical is not None:
+            self.include_envs_logical = include_envs_logical
+        if exclude_envs_logical is not None:
+            self.exclude_envs_logical = exclude_envs_logical
 
     @property
     def paths(self):
@@ -576,6 +632,182 @@ class AccessConfigDeatilUpdate:
         :type log_k8s: dict(str, str)
         """
         self._log_k8s = log_k8s
+
+    @property
+    def system_fields(self):
+        """Gets the system_fields of this AccessConfigDeatilUpdate.
+
+        系统内置字段：配置日志接入规则时，可以配置系统内置字段，上报日志后，每条日志数据的标签数据中将会有系统字段 采集场景为主机文件的内置字段为：hostName、hostId、hostIP、pathFile、hostIPv6、category、collectTime、__host_group__ 采集场景为K8S集群容器文件的内置字段为：hostName、hostId、hostIP、pathFile、hostIPv6、clusterId、podName、appName、containerName、nameSpace、category、collectTime、__host_group__、serviceID、podIp、clusterName、workloadType 若修改时传入此字段，将覆盖原有配置
+
+        :return: The system_fields of this AccessConfigDeatilUpdate.
+        :rtype: list[str]
+        """
+        return self._system_fields
+
+    @system_fields.setter
+    def system_fields(self, system_fields):
+        """Sets the system_fields of this AccessConfigDeatilUpdate.
+
+        系统内置字段：配置日志接入规则时，可以配置系统内置字段，上报日志后，每条日志数据的标签数据中将会有系统字段 采集场景为主机文件的内置字段为：hostName、hostId、hostIP、pathFile、hostIPv6、category、collectTime、__host_group__ 采集场景为K8S集群容器文件的内置字段为：hostName、hostId、hostIP、pathFile、hostIPv6、clusterId、podName、appName、containerName、nameSpace、category、collectTime、__host_group__、serviceID、podIp、clusterName、workloadType 若修改时传入此字段，将覆盖原有配置
+
+        :param system_fields: The system_fields of this AccessConfigDeatilUpdate.
+        :type system_fields: list[str]
+        """
+        self._system_fields = system_fields
+
+    @property
+    def custom_key_value(self):
+        """Gets the custom_key_value of this AccessConfigDeatilUpdate.
+
+        自定义键值对：配置日志接入规则时，可以配置自定义键值对规则，上报日志后，每条日志数据的标签数据中将会有用户自定义的键值对字段，键值对数量不超过20 键的长度限制为128，允许的字符有a-zA-Z0-9_- 值的长度限制为1024 若修改时传入此字段，将覆盖原有配置
+
+        :return: The custom_key_value of this AccessConfigDeatilUpdate.
+        :rtype: dict(str, str)
+        """
+        return self._custom_key_value
+
+    @custom_key_value.setter
+    def custom_key_value(self, custom_key_value):
+        """Sets the custom_key_value of this AccessConfigDeatilUpdate.
+
+        自定义键值对：配置日志接入规则时，可以配置自定义键值对规则，上报日志后，每条日志数据的标签数据中将会有用户自定义的键值对字段，键值对数量不超过20 键的长度限制为128，允许的字符有a-zA-Z0-9_- 值的长度限制为1024 若修改时传入此字段，将覆盖原有配置
+
+        :param custom_key_value: The custom_key_value of this AccessConfigDeatilUpdate.
+        :type custom_key_value: dict(str, str)
+        """
+        self._custom_key_value = custom_key_value
+
+    @property
+    def include_labels_logical(self):
+        """Gets the include_labels_logical of this AccessConfigDeatilUpdate.
+
+        容器 Label白名单，可选为AND，OR，不配置时默认为OR；当存在多个值时的处理逻辑，AND表示同时满足才会生效，OR表示有一项满足就会生效
+
+        :return: The include_labels_logical of this AccessConfigDeatilUpdate.
+        :rtype: str
+        """
+        return self._include_labels_logical
+
+    @include_labels_logical.setter
+    def include_labels_logical(self, include_labels_logical):
+        """Sets the include_labels_logical of this AccessConfigDeatilUpdate.
+
+        容器 Label白名单，可选为AND，OR，不配置时默认为OR；当存在多个值时的处理逻辑，AND表示同时满足才会生效，OR表示有一项满足就会生效
+
+        :param include_labels_logical: The include_labels_logical of this AccessConfigDeatilUpdate.
+        :type include_labels_logical: str
+        """
+        self._include_labels_logical = include_labels_logical
+
+    @property
+    def exclude_labels_logical(self):
+        """Gets the exclude_labels_logical of this AccessConfigDeatilUpdate.
+
+        容器 Label黑名单，可选为AND，OR，不配置时默认为OR；当存在多个值时的处理逻辑，AND表示同时满足才会生效，OR表示有一项满足就会生效
+
+        :return: The exclude_labels_logical of this AccessConfigDeatilUpdate.
+        :rtype: str
+        """
+        return self._exclude_labels_logical
+
+    @exclude_labels_logical.setter
+    def exclude_labels_logical(self, exclude_labels_logical):
+        """Sets the exclude_labels_logical of this AccessConfigDeatilUpdate.
+
+        容器 Label黑名单，可选为AND，OR，不配置时默认为OR；当存在多个值时的处理逻辑，AND表示同时满足才会生效，OR表示有一项满足就会生效
+
+        :param exclude_labels_logical: The exclude_labels_logical of this AccessConfigDeatilUpdate.
+        :type exclude_labels_logical: str
+        """
+        self._exclude_labels_logical = exclude_labels_logical
+
+    @property
+    def include_k8s_labels_logical(self):
+        """Gets the include_k8s_labels_logical of this AccessConfigDeatilUpdate.
+
+        K8S Label白名单，可选为AND，OR，不配置时默认为OR；当存在多个值时的处理逻辑，AND表示同时满足才会生效，OR表示有一项满足就会生效
+
+        :return: The include_k8s_labels_logical of this AccessConfigDeatilUpdate.
+        :rtype: str
+        """
+        return self._include_k8s_labels_logical
+
+    @include_k8s_labels_logical.setter
+    def include_k8s_labels_logical(self, include_k8s_labels_logical):
+        """Sets the include_k8s_labels_logical of this AccessConfigDeatilUpdate.
+
+        K8S Label白名单，可选为AND，OR，不配置时默认为OR；当存在多个值时的处理逻辑，AND表示同时满足才会生效，OR表示有一项满足就会生效
+
+        :param include_k8s_labels_logical: The include_k8s_labels_logical of this AccessConfigDeatilUpdate.
+        :type include_k8s_labels_logical: str
+        """
+        self._include_k8s_labels_logical = include_k8s_labels_logical
+
+    @property
+    def exclude_k8s_labels_logical(self):
+        """Gets the exclude_k8s_labels_logical of this AccessConfigDeatilUpdate.
+
+        K8S Label黑名单，可选为AND，OR，不配置时默认为OR；当存在多个值时的处理逻辑，AND表示同时满足才会生效，OR表示有一项满足就会生效
+
+        :return: The exclude_k8s_labels_logical of this AccessConfigDeatilUpdate.
+        :rtype: str
+        """
+        return self._exclude_k8s_labels_logical
+
+    @exclude_k8s_labels_logical.setter
+    def exclude_k8s_labels_logical(self, exclude_k8s_labels_logical):
+        """Sets the exclude_k8s_labels_logical of this AccessConfigDeatilUpdate.
+
+        K8S Label黑名单，可选为AND，OR，不配置时默认为OR；当存在多个值时的处理逻辑，AND表示同时满足才会生效，OR表示有一项满足就会生效
+
+        :param exclude_k8s_labels_logical: The exclude_k8s_labels_logical of this AccessConfigDeatilUpdate.
+        :type exclude_k8s_labels_logical: str
+        """
+        self._exclude_k8s_labels_logical = exclude_k8s_labels_logical
+
+    @property
+    def include_envs_logical(self):
+        """Gets the include_envs_logical of this AccessConfigDeatilUpdate.
+
+        环境变量白名单，可选为AND，OR，不配置时默认为OR；当存在多个值时的处理逻辑，AND表示同时满足才会生效，OR表示有一项满足就会生效
+
+        :return: The include_envs_logical of this AccessConfigDeatilUpdate.
+        :rtype: str
+        """
+        return self._include_envs_logical
+
+    @include_envs_logical.setter
+    def include_envs_logical(self, include_envs_logical):
+        """Sets the include_envs_logical of this AccessConfigDeatilUpdate.
+
+        环境变量白名单，可选为AND，OR，不配置时默认为OR；当存在多个值时的处理逻辑，AND表示同时满足才会生效，OR表示有一项满足就会生效
+
+        :param include_envs_logical: The include_envs_logical of this AccessConfigDeatilUpdate.
+        :type include_envs_logical: str
+        """
+        self._include_envs_logical = include_envs_logical
+
+    @property
+    def exclude_envs_logical(self):
+        """Gets the exclude_envs_logical of this AccessConfigDeatilUpdate.
+
+        环境变量黑名单，可选为AND，OR，不配置时默认为OR；当存在多个值时的处理逻辑，AND表示同时满足才会生效，OR表示有一项满足就会生效
+
+        :return: The exclude_envs_logical of this AccessConfigDeatilUpdate.
+        :rtype: str
+        """
+        return self._exclude_envs_logical
+
+    @exclude_envs_logical.setter
+    def exclude_envs_logical(self, exclude_envs_logical):
+        """Sets the exclude_envs_logical of this AccessConfigDeatilUpdate.
+
+        环境变量黑名单，可选为AND，OR，不配置时默认为OR；当存在多个值时的处理逻辑，AND表示同时满足才会生效，OR表示有一项满足就会生效
+
+        :param exclude_envs_logical: The exclude_envs_logical of this AccessConfigDeatilUpdate.
+        :type exclude_envs_logical: str
+        """
+        self._exclude_envs_logical = exclude_envs_logical
 
     def to_dict(self):
         """Returns the model properties as a dict"""

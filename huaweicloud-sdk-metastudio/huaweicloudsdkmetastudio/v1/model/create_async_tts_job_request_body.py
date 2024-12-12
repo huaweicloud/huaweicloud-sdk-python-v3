@@ -47,21 +47,21 @@ class CreateAsyncTtsJobRequestBody:
 
         :param text: 待合成文本
         :type text: str
-        :param voice_asset_id: 音色ID
+        :param voice_asset_id: 音色ID，获取方式详见[获取音色ID](metastudio_02_0054.xml)。
         :type voice_asset_id: str
-        :param speed: 语速。 默认值100，最小值50，最大值200。 &gt; * 当取值为“100”时，表示一个成年人正常的语速，约为250字/分钟。 &gt; * 50表示0.5倍语速，100表示正常语速，200表示2倍语速。
+        :param speed: 语速。 * 当取值为“100”时，表示一个成年人正常的语速，约为250字/分钟。 * 50表示0.5倍语速，100表示正常语速，200表示2倍语速。
         :type speed: int
-        :param pitch: 音高。 默认值100，最小值50，最大值200。
+        :param pitch: 音高。
         :type pitch: int
-        :param volume: 音量。 默认值140，最小值90，最大值240。
+        :param volume: 音量。
         :type volume: int
         :param audio_format: 输出音频文件格式。默认WAV。 * WAV：wav格式。 * MP3：mp3格式。
         :type audio_format: str
-        :param need_timestamp: 是否需要时间戳 false不需要；true：需要返回时间戳信息；默认false
+        :param need_timestamp: 是否需要时间戳。false为不需要，true为需要返回时间戳信息。默认值为false。
         :type need_timestamp: bool
         :param silence_flag: 异常时是否返回静默音频流
         :type silence_flag: bool
-        :param silence_time_ms: 异常时返回的静默音频流时长,单位毫秒
+        :param silence_time_ms: 异常时返回的静默音频流时长，单位毫秒。
         :type silence_time_ms: int
         """
         
@@ -121,7 +121,7 @@ class CreateAsyncTtsJobRequestBody:
     def voice_asset_id(self):
         """Gets the voice_asset_id of this CreateAsyncTtsJobRequestBody.
 
-        音色ID
+        音色ID，获取方式详见[获取音色ID](metastudio_02_0054.xml)。
 
         :return: The voice_asset_id of this CreateAsyncTtsJobRequestBody.
         :rtype: str
@@ -132,7 +132,7 @@ class CreateAsyncTtsJobRequestBody:
     def voice_asset_id(self, voice_asset_id):
         """Sets the voice_asset_id of this CreateAsyncTtsJobRequestBody.
 
-        音色ID
+        音色ID，获取方式详见[获取音色ID](metastudio_02_0054.xml)。
 
         :param voice_asset_id: The voice_asset_id of this CreateAsyncTtsJobRequestBody.
         :type voice_asset_id: str
@@ -143,7 +143,7 @@ class CreateAsyncTtsJobRequestBody:
     def speed(self):
         """Gets the speed of this CreateAsyncTtsJobRequestBody.
 
-        语速。 默认值100，最小值50，最大值200。 > * 当取值为“100”时，表示一个成年人正常的语速，约为250字/分钟。 > * 50表示0.5倍语速，100表示正常语速，200表示2倍语速。
+        语速。 * 当取值为“100”时，表示一个成年人正常的语速，约为250字/分钟。 * 50表示0.5倍语速，100表示正常语速，200表示2倍语速。
 
         :return: The speed of this CreateAsyncTtsJobRequestBody.
         :rtype: int
@@ -154,7 +154,7 @@ class CreateAsyncTtsJobRequestBody:
     def speed(self, speed):
         """Sets the speed of this CreateAsyncTtsJobRequestBody.
 
-        语速。 默认值100，最小值50，最大值200。 > * 当取值为“100”时，表示一个成年人正常的语速，约为250字/分钟。 > * 50表示0.5倍语速，100表示正常语速，200表示2倍语速。
+        语速。 * 当取值为“100”时，表示一个成年人正常的语速，约为250字/分钟。 * 50表示0.5倍语速，100表示正常语速，200表示2倍语速。
 
         :param speed: The speed of this CreateAsyncTtsJobRequestBody.
         :type speed: int
@@ -165,7 +165,7 @@ class CreateAsyncTtsJobRequestBody:
     def pitch(self):
         """Gets the pitch of this CreateAsyncTtsJobRequestBody.
 
-        音高。 默认值100，最小值50，最大值200。
+        音高。
 
         :return: The pitch of this CreateAsyncTtsJobRequestBody.
         :rtype: int
@@ -176,7 +176,7 @@ class CreateAsyncTtsJobRequestBody:
     def pitch(self, pitch):
         """Sets the pitch of this CreateAsyncTtsJobRequestBody.
 
-        音高。 默认值100，最小值50，最大值200。
+        音高。
 
         :param pitch: The pitch of this CreateAsyncTtsJobRequestBody.
         :type pitch: int
@@ -187,7 +187,7 @@ class CreateAsyncTtsJobRequestBody:
     def volume(self):
         """Gets the volume of this CreateAsyncTtsJobRequestBody.
 
-        音量。 默认值140，最小值90，最大值240。
+        音量。
 
         :return: The volume of this CreateAsyncTtsJobRequestBody.
         :rtype: int
@@ -198,7 +198,7 @@ class CreateAsyncTtsJobRequestBody:
     def volume(self, volume):
         """Sets the volume of this CreateAsyncTtsJobRequestBody.
 
-        音量。 默认值140，最小值90，最大值240。
+        音量。
 
         :param volume: The volume of this CreateAsyncTtsJobRequestBody.
         :type volume: int
@@ -231,7 +231,7 @@ class CreateAsyncTtsJobRequestBody:
     def need_timestamp(self):
         """Gets the need_timestamp of this CreateAsyncTtsJobRequestBody.
 
-        是否需要时间戳 false不需要；true：需要返回时间戳信息；默认false
+        是否需要时间戳。false为不需要，true为需要返回时间戳信息。默认值为false。
 
         :return: The need_timestamp of this CreateAsyncTtsJobRequestBody.
         :rtype: bool
@@ -242,7 +242,7 @@ class CreateAsyncTtsJobRequestBody:
     def need_timestamp(self, need_timestamp):
         """Sets the need_timestamp of this CreateAsyncTtsJobRequestBody.
 
-        是否需要时间戳 false不需要；true：需要返回时间戳信息；默认false
+        是否需要时间戳。false为不需要，true为需要返回时间戳信息。默认值为false。
 
         :param need_timestamp: The need_timestamp of this CreateAsyncTtsJobRequestBody.
         :type need_timestamp: bool
@@ -275,7 +275,7 @@ class CreateAsyncTtsJobRequestBody:
     def silence_time_ms(self):
         """Gets the silence_time_ms of this CreateAsyncTtsJobRequestBody.
 
-        异常时返回的静默音频流时长,单位毫秒
+        异常时返回的静默音频流时长，单位毫秒。
 
         :return: The silence_time_ms of this CreateAsyncTtsJobRequestBody.
         :rtype: int
@@ -286,7 +286,7 @@ class CreateAsyncTtsJobRequestBody:
     def silence_time_ms(self, silence_time_ms):
         """Sets the silence_time_ms of this CreateAsyncTtsJobRequestBody.
 
-        异常时返回的静默音频流时长,单位毫秒
+        异常时返回的静默音频流时长，单位毫秒。
 
         :param silence_time_ms: The silence_time_ms of this CreateAsyncTtsJobRequestBody.
         :type silence_time_ms: int

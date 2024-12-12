@@ -1,3 +1,298 @@
+# 3.1.127 2024-12-12
+
+### HuaweiCloud SDK AOS
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ListPrivateModules`
+    - `CreatePrivateModule`
+    - `DeletePrivateModule`
+    - `ShowPrivateModuleMetadata`
+    - `UpdatePrivateModuleMetadata`
+    - `ListPrivateModuleVersions`
+    - `CreatePrivateModuleVersion`
+    - `ShowPrivateModuleVersionContent`
+    - `DeletePrivateModuleVersion`
+    - `ShowPrivateModuleVersionMetadata`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CCE
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the API `SyncNodePool`
+
+### HuaweiCloud SDK CDN
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowDomainFullConfig**
+    - changes of response param
+      - `+ configs.cache_rules.force_cache`
+  - **UpdateDomainFullConfig**
+    - changes of request param
+      - `+ configs.cache_rules.force_cache`
+
+### HuaweiCloud SDK CSMS
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListUsers**
+    - changes of request param
+      - `+ user_info`
+      - `- user_name`
+
+### HuaweiCloud SDK DAS
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowInstanceHealthReport**
+    - changes of response param
+      - `+ disk_stat.analyze_success`
+      - `+ disk_stat.error_message`
+      - `+ performance_stat.analyze_success`
+      - `+ performance_stat.error_message`
+
+### HuaweiCloud SDK DC
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateVifPeer**
+    - changes of response param
+      - `+ request_id`
+  - **CreateVifPeer**
+    - changes of response param
+      - `+ request_id`
+
+### HuaweiCloud SDK DDS
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ResizeInstance**
+    - changes of request param
+      - `+ resize.target_ids`
+
+### HuaweiCloud SDK GaussDB
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateStarrocksInstance**
+    - changes of request param
+      - `+ pay_info`
+      - `+ region_code`
+
+### HuaweiCloud SDK LTS
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the API `ListLogContext`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateLogStreamIndex**
+    - changes of request param
+      - `+ fields.ltsSubFieldsInfoList`
+      - `+ fields.fieldType: enum value [json]`
+  - **ListAccessConfig**
+    - changes of response param
+      - `+ result.access_config_detail.repeat_collect`
+      - `+ result.access_config_detail.system_fields`
+      - `+ result.access_config_detail.custom_key_value`
+      - `+ result.access_config_detail.includeLabelsLogical`
+      - `+ result.access_config_detail.excludeLabelsLogical`
+      - `+ result.access_config_detail.includeK8sLabelsLogical`
+      - `+ result.access_config_detail.excludeK8sLabelsLogical`
+      - `+ result.access_config_detail.includeEnvsLogical`
+      - `+ result.access_config_detail.excludeEnvsLogical`
+  - **UpdateAccessConfig**
+    - changes of request param
+      - `+ access_config_detail.system_fields`
+      - `+ access_config_detail.custom_key_value`
+      - `+ access_config_detail.includeLabelsLogical`
+      - `+ access_config_detail.excludeLabelsLogical`
+      - `+ access_config_detail.includeK8sLabelsLogical`
+      - `+ access_config_detail.excludeK8sLabelsLogical`
+      - `+ access_config_detail.includeEnvsLogical`
+      - `+ access_config_detail.excludeEnvsLogical`
+    - changes of response param
+      - `+ access_config_detail.repeat_collect`
+      - `+ access_config_detail.system_fields`
+      - `+ access_config_detail.custom_key_value`
+      - `+ access_config_detail.includeLabelsLogical`
+      - `+ access_config_detail.excludeLabelsLogical`
+      - `+ access_config_detail.includeK8sLabelsLogical`
+      - `+ access_config_detail.excludeK8sLabelsLogical`
+      - `+ access_config_detail.includeEnvsLogical`
+      - `+ access_config_detail.excludeEnvsLogical`
+  - **CreateAccessConfig**
+    - changes of request param
+      - `+ access_config_detail.repeat_collect`
+      - `+ access_config_detail.system_fields`
+      - `+ access_config_detail.custom_key_value`
+      - `+ access_config_detail.includeLabelsLogical`
+      - `+ access_config_detail.excludeLabelsLogical`
+      - `+ access_config_detail.includeK8sLabelsLogical`
+      - `+ access_config_detail.excludeK8sLabelsLogical`
+      - `+ access_config_detail.includeEnvsLogical`
+      - `+ access_config_detail.excludeEnvsLogical`
+    - changes of response param
+      - `+ access_config_detail.repeat_collect`
+      - `+ access_config_detail.system_fields`
+      - `+ access_config_detail.custom_key_value`
+      - `+ access_config_detail.includeLabelsLogical`
+      - `+ access_config_detail.excludeLabelsLogical`
+      - `+ access_config_detail.includeK8sLabelsLogical`
+      - `+ access_config_detail.excludeK8sLabelsLogical`
+      - `+ access_config_detail.includeEnvsLogical`
+      - `+ access_config_detail.excludeEnvsLogical`
+  - **DeleteAccessConfig**
+    - changes of response param
+      - `+ result.access_config_detail.repeat_collect`
+      - `+ result.access_config_detail.system_fields`
+      - `+ result.access_config_detail.custom_key_value`
+      - `+ result.access_config_detail.includeLabelsLogical`
+      - `+ result.access_config_detail.excludeLabelsLogical`
+      - `+ result.access_config_detail.includeK8sLabelsLogical`
+      - `+ result.access_config_detail.excludeK8sLabelsLogical`
+      - `+ result.access_config_detail.includeEnvsLogical`
+      - `+ result.access_config_detail.excludeEnvsLogical`
+
+### HuaweiCloud SDK MetaStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateLivePlatform**
+    - changes of request param
+      - `* auth_config: object<CustomPlatformAuthConfig> -> object<UpdateCustomPlatformAuthConfig>`
+      - `* body: object<CreateLivePlatformReq> -> object<UpdateLivePlatformReq>`
+  - **Show2dModelTrainingJob**
+    - changes of response param
+      - `+ operation_logs.error_code`
+  - **ListSmartChatRooms**
+    - changes of response param
+      - `+ smart_chat_rooms.voice_config_list`
+      - `+ smart_chat_rooms.default_language`
+  - **CreateSmartChatRoom**
+    - changes of request param
+      - `+ voice_config_list`
+      - `+ default_language`
+      - `+ video_config.is_end_at_first_frame`
+  - **ShowSmartChatRoom**
+    - changes of response param
+      - `+ default_language`
+      - `+ voice_config_list`
+      - `+ video_config.is_end_at_first_frame`
+  - **UpdateSmartChatRoom**
+    - changes of request param
+      - `+ voice_config_list`
+      - `+ default_language`
+      - `+ video_config.is_end_at_first_frame`
+    - changes of response param
+      - `+ default_language`
+      - `+ voice_config_list`
+      - `+ video_config.is_end_at_first_frame`
+  - **ShowVoiceTrainingJob**
+    - changes of response param
+      - `+ output_language`
+  - **ShowAsset**
+    - changes of response param
+      - `+ asset_extra_meta.image_meta.frame_rate`
+      - `+ asset_extra_meta.image_meta.duration`
+  - **UpdateDigitalAsset**
+    - changes of request param
+      - `+ asset_extra_meta.image_meta.frame_rate`
+      - `+ asset_extra_meta.image_meta.duration`
+    - changes of response param
+      - `+ asset_extra_meta.image_meta.frame_rate`
+      - `+ asset_extra_meta.image_meta.duration`
+  - **StartSmartLive**
+    - changes of request param
+      - `+ video_config.is_end_at_first_frame`
+  - **ListVoiceTrainingJob**
+    - changes of response param
+      - `+ output_language`
+      - `+ jobs.output_language`
+  - **CreateDigitalAsset**
+    - changes of request param
+      - `+ asset_extra_meta.image_meta.frame_rate`
+      - `+ asset_extra_meta.image_meta.duration`
+  - **ListAssets**
+    - changes of response param
+      - `+ assets.asset_extra_meta.image_meta.frame_rate`
+      - `+ assets.asset_extra_meta.image_meta.duration`
+  - **Create2DDigitalHumanVideo**
+    - changes of request param
+      - `+ video_config.is_end_at_first_frame`
+  - **Show2DDigitalHumanVideo**
+    - changes of response param
+      - `+ video_config.is_end_at_first_frame`
+  - **CreateSmartLiveRoom**
+    - changes of request param
+      - `+ video_config.is_end_at_first_frame`
+  - **ShowSmartLiveRoom**
+    - changes of response param
+      - `+ video_config.is_end_at_first_frame`
+  - **UpdateSmartLiveRoom**
+    - changes of request param
+      - `+ video_config.is_end_at_first_frame`
+    - changes of response param
+      - `+ video_config.is_end_at_first_frame`
+  - **CreateVideoScripts**
+    - changes of request param
+      - `+ video_config.is_end_at_first_frame`
+  - **ShowVideoScript**
+    - changes of response param
+      - `+ video_config.is_end_at_first_frame`
+  - **UpdateVideoScript**
+    - changes of request param
+      - `+ video_config.is_end_at_first_frame`
+
 # 3.1.126 2024-12-10
 
 ### HuaweiCloud SDK APIG

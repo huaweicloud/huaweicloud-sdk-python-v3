@@ -22,6 +22,8 @@ class ImageAssetMeta:
         'height': 'int',
         'size': 'int',
         'mode': 'str',
+        'frame_rate': 'str',
+        'duration': 'int',
         'error_info': 'ErrorResponse'
     }
 
@@ -31,10 +33,12 @@ class ImageAssetMeta:
         'height': 'height',
         'size': 'size',
         'mode': 'mode',
+        'frame_rate': 'frame_rate',
+        'duration': 'duration',
         'error_info': 'error_info'
     }
 
-    def __init__(self, codec=None, width=None, height=None, size=None, mode=None, error_info=None):
+    def __init__(self, codec=None, width=None, height=None, size=None, mode=None, frame_rate=None, duration=None, error_info=None):
         """ImageAssetMeta
 
         The model defined in huaweicloud sdk
@@ -49,6 +53,10 @@ class ImageAssetMeta:
         :type size: int
         :param mode: **参数解释**： 图片形态。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： * Horizontal：横向 * Vertical：纵向  **默认取值**： 不涉及。
         :type mode: str
+        :param frame_rate: **参数解释**： 视频帧率。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： 字符长度0-32位。 **默认取值**： 不涉及
+        :type frame_rate: str
+        :param duration: **参数解释**： 时长,单位秒。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
+        :type duration: int
         :param error_info: 
         :type error_info: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
         """
@@ -60,6 +68,8 @@ class ImageAssetMeta:
         self._height = None
         self._size = None
         self._mode = None
+        self._frame_rate = None
+        self._duration = None
         self._error_info = None
         self.discriminator = None
 
@@ -73,6 +83,10 @@ class ImageAssetMeta:
             self.size = size
         if mode is not None:
             self.mode = mode
+        if frame_rate is not None:
+            self.frame_rate = frame_rate
+        if duration is not None:
+            self.duration = duration
         if error_info is not None:
             self.error_info = error_info
 
@@ -185,6 +199,50 @@ class ImageAssetMeta:
         :type mode: str
         """
         self._mode = mode
+
+    @property
+    def frame_rate(self):
+        """Gets the frame_rate of this ImageAssetMeta.
+
+        **参数解释**： 视频帧率。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： 字符长度0-32位。 **默认取值**： 不涉及
+
+        :return: The frame_rate of this ImageAssetMeta.
+        :rtype: str
+        """
+        return self._frame_rate
+
+    @frame_rate.setter
+    def frame_rate(self, frame_rate):
+        """Sets the frame_rate of this ImageAssetMeta.
+
+        **参数解释**： 视频帧率。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： 字符长度0-32位。 **默认取值**： 不涉及
+
+        :param frame_rate: The frame_rate of this ImageAssetMeta.
+        :type frame_rate: str
+        """
+        self._frame_rate = frame_rate
+
+    @property
+    def duration(self):
+        """Gets the duration of this ImageAssetMeta.
+
+        **参数解释**： 时长,单位秒。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
+
+        :return: The duration of this ImageAssetMeta.
+        :rtype: int
+        """
+        return self._duration
+
+    @duration.setter
+    def duration(self, duration):
+        """Sets the duration of this ImageAssetMeta.
+
+        **参数解释**： 时长,单位秒。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
+
+        :param duration: The duration of this ImageAssetMeta.
+        :type duration: int
+        """
+        self._duration = duration
 
     @property
     def error_info(self):

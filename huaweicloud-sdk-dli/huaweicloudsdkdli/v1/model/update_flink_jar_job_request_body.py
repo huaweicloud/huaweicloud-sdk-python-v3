@@ -101,11 +101,11 @@ class UpdateFlinkJarJobRequestBody:
         :type entrypoint_args: str
         :param restart_when_exception: 是否开启异常重启功能，默认值为“false”。
         :type restart_when_exception: bool
-        :param entrypoint: 用户已上传到DLI资源管理系统的资源包名，用户自定义作业主类所在的jar包。
+        :param entrypoint: 选择Jar作业程序包。 Jar包的管理方式： 上传OBS管理程序包：提前将对应的Jar包上传至OBS桶中。并在此处选择对应的OBS路径。 上传DLI管理程序包：提前将对应的Jar包上传至OBS桶中，并在DLI管理控制台的“数据管理&gt;程序包管理”中创建程序包。 Flink1.15版本不推荐DLI管理程序包，Flink1.15版本以上不再支持DLI管理程序包。
         :type entrypoint: str
-        :param dependency_jars: 用户已上传到DLI资源管理系统的资源包名，用户自定义作业的其他依赖包。示例[Group/test.jar,myGroup/test1.jar]
+        :param dependency_jars: 用户自定义的依赖程序包。依赖的相关程序包将会被放置到集群classpath下。 依赖程序包的管理方式： 上传OBS管理依赖程序包：提前将对应的Jar包上传至OBS桶中。并在此处选择对应的OBS路径。 上传DLI管理依赖程序包：提前将对应的Jar包上传至OBS桶中，并在DLI管理控制台的“数据管理&gt;程序包管理”中创建程序包。 Flink1.15版本不推荐DLI管理依赖程序包，Flink1.15版本以上不再支持DLI管理依赖程序包。
         :type dependency_jars: list[str]
-        :param dependency_files: 用户已上传到DLI资源管理系统的资源包名，用户自定义作业的依赖文件。
+        :param dependency_files: 用户自定义的依赖文件。 依赖文件的管理方式： 上传OBS管理依赖文件：提前将对应的依赖文件上传至OBS桶中。并在此处选择对应的OBS路径。 上传DLI管理依赖文件：提前将对应的依赖文件上传至OBS桶中，并在DLI管理控制台的“数据管理&gt;程序包管理”中创建程序包 Flink1.15版本不推荐DLI管理依赖依赖文件，Flink1.15版本以上不再支持DLI管理依赖依赖文件。
         :type dependency_files: list[str]
         :param tm_cus: 每个taskmanager的CU数，默认值为“1”。
         :type tm_cus: int
@@ -477,7 +477,7 @@ class UpdateFlinkJarJobRequestBody:
     def entrypoint(self):
         """Gets the entrypoint of this UpdateFlinkJarJobRequestBody.
 
-        用户已上传到DLI资源管理系统的资源包名，用户自定义作业主类所在的jar包。
+        选择Jar作业程序包。 Jar包的管理方式： 上传OBS管理程序包：提前将对应的Jar包上传至OBS桶中。并在此处选择对应的OBS路径。 上传DLI管理程序包：提前将对应的Jar包上传至OBS桶中，并在DLI管理控制台的“数据管理>程序包管理”中创建程序包。 Flink1.15版本不推荐DLI管理程序包，Flink1.15版本以上不再支持DLI管理程序包。
 
         :return: The entrypoint of this UpdateFlinkJarJobRequestBody.
         :rtype: str
@@ -488,7 +488,7 @@ class UpdateFlinkJarJobRequestBody:
     def entrypoint(self, entrypoint):
         """Sets the entrypoint of this UpdateFlinkJarJobRequestBody.
 
-        用户已上传到DLI资源管理系统的资源包名，用户自定义作业主类所在的jar包。
+        选择Jar作业程序包。 Jar包的管理方式： 上传OBS管理程序包：提前将对应的Jar包上传至OBS桶中。并在此处选择对应的OBS路径。 上传DLI管理程序包：提前将对应的Jar包上传至OBS桶中，并在DLI管理控制台的“数据管理>程序包管理”中创建程序包。 Flink1.15版本不推荐DLI管理程序包，Flink1.15版本以上不再支持DLI管理程序包。
 
         :param entrypoint: The entrypoint of this UpdateFlinkJarJobRequestBody.
         :type entrypoint: str
@@ -499,7 +499,7 @@ class UpdateFlinkJarJobRequestBody:
     def dependency_jars(self):
         """Gets the dependency_jars of this UpdateFlinkJarJobRequestBody.
 
-        用户已上传到DLI资源管理系统的资源包名，用户自定义作业的其他依赖包。示例[Group/test.jar,myGroup/test1.jar]
+        用户自定义的依赖程序包。依赖的相关程序包将会被放置到集群classpath下。 依赖程序包的管理方式： 上传OBS管理依赖程序包：提前将对应的Jar包上传至OBS桶中。并在此处选择对应的OBS路径。 上传DLI管理依赖程序包：提前将对应的Jar包上传至OBS桶中，并在DLI管理控制台的“数据管理>程序包管理”中创建程序包。 Flink1.15版本不推荐DLI管理依赖程序包，Flink1.15版本以上不再支持DLI管理依赖程序包。
 
         :return: The dependency_jars of this UpdateFlinkJarJobRequestBody.
         :rtype: list[str]
@@ -510,7 +510,7 @@ class UpdateFlinkJarJobRequestBody:
     def dependency_jars(self, dependency_jars):
         """Sets the dependency_jars of this UpdateFlinkJarJobRequestBody.
 
-        用户已上传到DLI资源管理系统的资源包名，用户自定义作业的其他依赖包。示例[Group/test.jar,myGroup/test1.jar]
+        用户自定义的依赖程序包。依赖的相关程序包将会被放置到集群classpath下。 依赖程序包的管理方式： 上传OBS管理依赖程序包：提前将对应的Jar包上传至OBS桶中。并在此处选择对应的OBS路径。 上传DLI管理依赖程序包：提前将对应的Jar包上传至OBS桶中，并在DLI管理控制台的“数据管理>程序包管理”中创建程序包。 Flink1.15版本不推荐DLI管理依赖程序包，Flink1.15版本以上不再支持DLI管理依赖程序包。
 
         :param dependency_jars: The dependency_jars of this UpdateFlinkJarJobRequestBody.
         :type dependency_jars: list[str]
@@ -521,7 +521,7 @@ class UpdateFlinkJarJobRequestBody:
     def dependency_files(self):
         """Gets the dependency_files of this UpdateFlinkJarJobRequestBody.
 
-        用户已上传到DLI资源管理系统的资源包名，用户自定义作业的依赖文件。
+        用户自定义的依赖文件。 依赖文件的管理方式： 上传OBS管理依赖文件：提前将对应的依赖文件上传至OBS桶中。并在此处选择对应的OBS路径。 上传DLI管理依赖文件：提前将对应的依赖文件上传至OBS桶中，并在DLI管理控制台的“数据管理>程序包管理”中创建程序包 Flink1.15版本不推荐DLI管理依赖依赖文件，Flink1.15版本以上不再支持DLI管理依赖依赖文件。
 
         :return: The dependency_files of this UpdateFlinkJarJobRequestBody.
         :rtype: list[str]
@@ -532,7 +532,7 @@ class UpdateFlinkJarJobRequestBody:
     def dependency_files(self, dependency_files):
         """Sets the dependency_files of this UpdateFlinkJarJobRequestBody.
 
-        用户已上传到DLI资源管理系统的资源包名，用户自定义作业的依赖文件。
+        用户自定义的依赖文件。 依赖文件的管理方式： 上传OBS管理依赖文件：提前将对应的依赖文件上传至OBS桶中。并在此处选择对应的OBS路径。 上传DLI管理依赖文件：提前将对应的依赖文件上传至OBS桶中，并在DLI管理控制台的“数据管理>程序包管理”中创建程序包 Flink1.15版本不推荐DLI管理依赖依赖文件，Flink1.15版本以上不再支持DLI管理依赖依赖文件。
 
         :param dependency_files: The dependency_files of this UpdateFlinkJarJobRequestBody.
         :type dependency_files: list[str]

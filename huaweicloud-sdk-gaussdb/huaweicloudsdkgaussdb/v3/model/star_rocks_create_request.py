@@ -31,7 +31,9 @@ class StarRocksCreateRequest:
         'az_code': 'str',
         'time_zone': 'str',
         'tags_info': 'StarRocksCreateRequestTagsInfo',
-        'security_group_id': 'str'
+        'security_group_id': 'str',
+        'pay_info': 'StarRocksCreateRequestPayInfo',
+        'region_code': 'str'
     }
 
     attribute_map = {
@@ -49,10 +51,12 @@ class StarRocksCreateRequest:
         'az_code': 'az_code',
         'time_zone': 'time_zone',
         'tags_info': 'tags_info',
-        'security_group_id': 'security_group_id'
+        'security_group_id': 'security_group_id',
+        'pay_info': 'pay_info',
+        'region_code': 'region_code'
     }
 
-    def __init__(self, name=None, engine=None, ha=None, fe_flavor_id=None, be_flavor_id=None, db_root_pwd=None, fe_count=None, be_count=None, az_mode=None, fe_volume=None, be_volume=None, az_code=None, time_zone=None, tags_info=None, security_group_id=None):
+    def __init__(self, name=None, engine=None, ha=None, fe_flavor_id=None, be_flavor_id=None, db_root_pwd=None, fe_count=None, be_count=None, az_mode=None, fe_volume=None, be_volume=None, az_code=None, time_zone=None, tags_info=None, security_group_id=None, pay_info=None, region_code=None):
         """StarRocksCreateRequest
 
         The model defined in huaweicloud sdk
@@ -87,6 +91,10 @@ class StarRocksCreateRequest:
         :type tags_info: :class:`huaweicloudsdkgaussdb.v3.StarRocksCreateRequestTagsInfo`
         :param security_group_id: 实例安全组ID。默认与Taurus安全组ID一致。
         :type security_group_id: str
+        :param pay_info: 
+        :type pay_info: :class:`huaweicloudsdkgaussdb.v3.StarRocksCreateRequestPayInfo`
+        :param region_code: 可用区。包周期场景必填。
+        :type region_code: str
         """
         
         
@@ -106,6 +114,8 @@ class StarRocksCreateRequest:
         self._time_zone = None
         self._tags_info = None
         self._security_group_id = None
+        self._pay_info = None
+        self._region_code = None
         self.discriminator = None
 
         self.name = name
@@ -125,6 +135,10 @@ class StarRocksCreateRequest:
         self.tags_info = tags_info
         if security_group_id is not None:
             self.security_group_id = security_group_id
+        if pay_info is not None:
+            self.pay_info = pay_info
+        if region_code is not None:
+            self.region_code = region_code
 
     @property
     def name(self):
@@ -435,6 +449,46 @@ class StarRocksCreateRequest:
         :type security_group_id: str
         """
         self._security_group_id = security_group_id
+
+    @property
+    def pay_info(self):
+        """Gets the pay_info of this StarRocksCreateRequest.
+
+        :return: The pay_info of this StarRocksCreateRequest.
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.StarRocksCreateRequestPayInfo`
+        """
+        return self._pay_info
+
+    @pay_info.setter
+    def pay_info(self, pay_info):
+        """Sets the pay_info of this StarRocksCreateRequest.
+
+        :param pay_info: The pay_info of this StarRocksCreateRequest.
+        :type pay_info: :class:`huaweicloudsdkgaussdb.v3.StarRocksCreateRequestPayInfo`
+        """
+        self._pay_info = pay_info
+
+    @property
+    def region_code(self):
+        """Gets the region_code of this StarRocksCreateRequest.
+
+        可用区。包周期场景必填。
+
+        :return: The region_code of this StarRocksCreateRequest.
+        :rtype: str
+        """
+        return self._region_code
+
+    @region_code.setter
+    def region_code(self, region_code):
+        """Sets the region_code of this StarRocksCreateRequest.
+
+        可用区。包周期场景必填。
+
+        :param region_code: The region_code of this StarRocksCreateRequest.
+        :type region_code: str
+        """
+        self._region_code = region_code
 
     def to_dict(self):
         """Returns the model properties as a dict"""

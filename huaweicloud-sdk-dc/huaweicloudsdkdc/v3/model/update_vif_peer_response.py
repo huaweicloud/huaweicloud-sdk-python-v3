@@ -18,29 +18,58 @@ class UpdateVifPeerResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'request_id': 'str',
         'vif_peer': 'VifPeer'
     }
 
     attribute_map = {
+        'request_id': 'request_id',
         'vif_peer': 'vif_peer'
     }
 
-    def __init__(self, vif_peer=None):
+    def __init__(self, request_id=None, vif_peer=None):
         """UpdateVifPeerResponse
 
         The model defined in huaweicloud sdk
 
+        :param request_id: 请求ID
+        :type request_id: str
         :param vif_peer: 
         :type vif_peer: :class:`huaweicloudsdkdc.v3.VifPeer`
         """
         
         super(UpdateVifPeerResponse, self).__init__()
 
+        self._request_id = None
         self._vif_peer = None
         self.discriminator = None
 
+        if request_id is not None:
+            self.request_id = request_id
         if vif_peer is not None:
             self.vif_peer = vif_peer
+
+    @property
+    def request_id(self):
+        """Gets the request_id of this UpdateVifPeerResponse.
+
+        请求ID
+
+        :return: The request_id of this UpdateVifPeerResponse.
+        :rtype: str
+        """
+        return self._request_id
+
+    @request_id.setter
+    def request_id(self, request_id):
+        """Sets the request_id of this UpdateVifPeerResponse.
+
+        请求ID
+
+        :param request_id: The request_id of this UpdateVifPeerResponse.
+        :type request_id: str
+        """
+        self._request_id = request_id
 
     @property
     def vif_peer(self):

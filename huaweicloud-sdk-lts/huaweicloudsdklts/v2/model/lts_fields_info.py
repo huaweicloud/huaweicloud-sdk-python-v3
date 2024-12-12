@@ -23,7 +23,8 @@ class LTSFieldsInfo:
         'include_chinese': 'bool',
         'tokenizer': 'str',
         'quick_analysis': 'bool',
-        'ascii': 'list[str]'
+        'ascii': 'list[str]',
+        'lts_sub_fields_info_list': 'list[LTSSubFieldsInfo]'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class LTSFieldsInfo:
         'include_chinese': 'includeChinese',
         'tokenizer': 'tokenizer',
         'quick_analysis': 'quickAnalysis',
-        'ascii': 'ascii'
+        'ascii': 'ascii',
+        'lts_sub_fields_info_list': 'ltsSubFieldsInfoList'
     }
 
-    def __init__(self, field_type=None, field_name=None, case_sensitive=None, include_chinese=None, tokenizer=None, quick_analysis=None, ascii=None):
+    def __init__(self, field_type=None, field_name=None, case_sensitive=None, include_chinese=None, tokenizer=None, quick_analysis=None, ascii=None, lts_sub_fields_info_list=None):
         """LTSFieldsInfo
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class LTSFieldsInfo:
         :type quick_analysis: bool
         :param ascii: 特殊分词符
         :type ascii: list[str]
+        :param lts_sub_fields_info_list: json字段信息
+        :type lts_sub_fields_info_list: list[:class:`huaweicloudsdklts.v2.LTSSubFieldsInfo`]
         """
         
         
@@ -66,6 +70,7 @@ class LTSFieldsInfo:
         self._tokenizer = None
         self._quick_analysis = None
         self._ascii = None
+        self._lts_sub_fields_info_list = None
         self.discriminator = None
 
         self.field_type = field_type
@@ -79,6 +84,8 @@ class LTSFieldsInfo:
             self.quick_analysis = quick_analysis
         if ascii is not None:
             self.ascii = ascii
+        if lts_sub_fields_info_list is not None:
+            self.lts_sub_fields_info_list = lts_sub_fields_info_list
 
     @property
     def field_type(self):
@@ -233,6 +240,28 @@ class LTSFieldsInfo:
         :type ascii: list[str]
         """
         self._ascii = ascii
+
+    @property
+    def lts_sub_fields_info_list(self):
+        """Gets the lts_sub_fields_info_list of this LTSFieldsInfo.
+
+        json字段信息
+
+        :return: The lts_sub_fields_info_list of this LTSFieldsInfo.
+        :rtype: list[:class:`huaweicloudsdklts.v2.LTSSubFieldsInfo`]
+        """
+        return self._lts_sub_fields_info_list
+
+    @lts_sub_fields_info_list.setter
+    def lts_sub_fields_info_list(self, lts_sub_fields_info_list):
+        """Sets the lts_sub_fields_info_list of this LTSFieldsInfo.
+
+        json字段信息
+
+        :param lts_sub_fields_info_list: The lts_sub_fields_info_list of this LTSFieldsInfo.
+        :type lts_sub_fields_info_list: list[:class:`huaweicloudsdklts.v2.LTSSubFieldsInfo`]
+        """
+        self._lts_sub_fields_info_list = lts_sub_fields_info_list
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -23,6 +23,7 @@ class CacheRules:
         'ttl_unit': 'str',
         'priority': 'int',
         'follow_origin': 'str',
+        'force_cache': 'str',
         'url_parameter_type': 'str',
         'url_parameter_value': 'str'
     }
@@ -34,11 +35,12 @@ class CacheRules:
         'ttl_unit': 'ttl_unit',
         'priority': 'priority',
         'follow_origin': 'follow_origin',
+        'force_cache': 'force_cache',
         'url_parameter_type': 'url_parameter_type',
         'url_parameter_value': 'url_parameter_value'
     }
 
-    def __init__(self, match_type=None, match_value=None, ttl=None, ttl_unit=None, priority=None, follow_origin=None, url_parameter_type=None, url_parameter_value=None):
+    def __init__(self, match_type=None, match_value=None, ttl=None, ttl_unit=None, priority=None, follow_origin=None, force_cache=None, url_parameter_type=None, url_parameter_value=None):
         """CacheRules
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class CacheRules:
         :type priority: int
         :param follow_origin: 缓存遵循源站开关，on：打开，off：关闭。  &gt; 默认值为off。
         :type follow_origin: str
+        :param force_cache: 强制缓存：CDN节点缓存过期时间是否忽略源站响应头Cache-Control中的no-cache、private、no-store字段，默认关闭强制缓存功能。强制缓存与缓存过期时间来源功能配合使用，具体使用限制及配置效果请参考CDN用户指南的配置节点缓存规则章节。on：打开强制缓存，off：关闭强制缓存
+        :type force_cache: str
         :param url_parameter_type: URL参数： - del_params：忽略指定URL参数， - reserve_params：保留指定URL参数， - ignore_url_params：忽略全部URL参数， - full_url：使用完整URL参数。   &gt; 不传此参数时，默认为full_url。
         :type url_parameter_type: str
         :param url_parameter_value: URL参数值，最多设置10条，以\&quot;,\&quot;分隔。  &gt; 当url_parameter_type为del_params或reserve_params时必填。
@@ -69,6 +73,7 @@ class CacheRules:
         self._ttl_unit = None
         self._priority = None
         self._follow_origin = None
+        self._force_cache = None
         self._url_parameter_type = None
         self._url_parameter_value = None
         self.discriminator = None
@@ -83,6 +88,8 @@ class CacheRules:
         self.priority = priority
         if follow_origin is not None:
             self.follow_origin = follow_origin
+        if force_cache is not None:
+            self.force_cache = force_cache
         if url_parameter_type is not None:
             self.url_parameter_type = url_parameter_type
         if url_parameter_value is not None:
@@ -219,6 +226,28 @@ class CacheRules:
         :type follow_origin: str
         """
         self._follow_origin = follow_origin
+
+    @property
+    def force_cache(self):
+        """Gets the force_cache of this CacheRules.
+
+        强制缓存：CDN节点缓存过期时间是否忽略源站响应头Cache-Control中的no-cache、private、no-store字段，默认关闭强制缓存功能。强制缓存与缓存过期时间来源功能配合使用，具体使用限制及配置效果请参考CDN用户指南的配置节点缓存规则章节。on：打开强制缓存，off：关闭强制缓存
+
+        :return: The force_cache of this CacheRules.
+        :rtype: str
+        """
+        return self._force_cache
+
+    @force_cache.setter
+    def force_cache(self, force_cache):
+        """Sets the force_cache of this CacheRules.
+
+        强制缓存：CDN节点缓存过期时间是否忽略源站响应头Cache-Control中的no-cache、private、no-store字段，默认关闭强制缓存功能。强制缓存与缓存过期时间来源功能配合使用，具体使用限制及配置效果请参考CDN用户指南的配置节点缓存规则章节。on：打开强制缓存，off：关闭强制缓存
+
+        :param force_cache: The force_cache of this CacheRules.
+        :type force_cache: str
+        """
+        self._force_cache = force_cache
 
     @property
     def url_parameter_type(self):

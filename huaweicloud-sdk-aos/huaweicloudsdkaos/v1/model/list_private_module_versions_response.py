@@ -6,7 +6,7 @@ from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class SyncNodePoolResponse(SdkResponse):
+class ListPrivateModuleVersionsResponse(SdkResponse):
 
     """
     Attributes:
@@ -18,47 +18,51 @@ class SyncNodePoolResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'str'
+        'versions': 'list[PrivateModuleVersionSummary]'
     }
 
     attribute_map = {
-        'body': 'body'
+        'versions': 'versions'
     }
 
-    def __init__(self, body=None):
-        """SyncNodePoolResponse
+    def __init__(self, versions=None):
+        """ListPrivateModuleVersionsResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: str
+        :param versions: 私有模块版本的列表。默认以创建时间升序排序。
+        :type versions: list[:class:`huaweicloudsdkaos.v1.PrivateModuleVersionSummary`]
         """
         
-        super(SyncNodePoolResponse, self).__init__()
+        super(ListPrivateModuleVersionsResponse, self).__init__()
 
-        self._body = None
+        self._versions = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if versions is not None:
+            self.versions = versions
 
     @property
-    def body(self):
-        """Gets the body of this SyncNodePoolResponse.
+    def versions(self):
+        """Gets the versions of this ListPrivateModuleVersionsResponse.
 
-        :return: The body of this SyncNodePoolResponse.
-        :rtype: str
+        私有模块版本的列表。默认以创建时间升序排序。
+
+        :return: The versions of this ListPrivateModuleVersionsResponse.
+        :rtype: list[:class:`huaweicloudsdkaos.v1.PrivateModuleVersionSummary`]
         """
-        return self._body
+        return self._versions
 
-    @body.setter
-    def body(self, body):
-        """Sets the body of this SyncNodePoolResponse.
+    @versions.setter
+    def versions(self, versions):
+        """Sets the versions of this ListPrivateModuleVersionsResponse.
 
-        :param body: The body of this SyncNodePoolResponse.
-        :type body: str
+        私有模块版本的列表。默认以创建时间升序排序。
+
+        :param versions: The versions of this ListPrivateModuleVersionsResponse.
+        :type versions: list[:class:`huaweicloudsdkaos.v1.PrivateModuleVersionSummary`]
         """
-        self._body = body
+        self._versions = versions
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -102,7 +106,7 @@ class SyncNodePoolResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, SyncNodePoolResponse):
+        if not isinstance(other, ListPrivateModuleVersionsResponse):
             return False
 
         return self.__dict__ == other.__dict__

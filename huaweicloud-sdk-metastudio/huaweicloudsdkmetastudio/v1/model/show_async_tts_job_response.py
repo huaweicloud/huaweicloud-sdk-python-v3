@@ -38,7 +38,7 @@ class ShowAsyncTtsJobResponse(SdkResponse):
         :type state: str
         :param audio_file_url: 音频文件下载链接，有效期为1个小时。
         :type audio_file_url: str
-        :param audio_info_file_url: 音频信息文件下载链接，有效期为1个小时。
+        :param audio_info_file_url: 字幕文件下载链接，有效期为1个小时。
         :type audio_info_file_url: str
         """
         
@@ -104,7 +104,7 @@ class ShowAsyncTtsJobResponse(SdkResponse):
     def audio_info_file_url(self):
         """Gets the audio_info_file_url of this ShowAsyncTtsJobResponse.
 
-        音频信息文件下载链接，有效期为1个小时。
+        字幕文件下载链接，有效期为1个小时。
 
         :return: The audio_info_file_url of this ShowAsyncTtsJobResponse.
         :rtype: str
@@ -115,7 +115,7 @@ class ShowAsyncTtsJobResponse(SdkResponse):
     def audio_info_file_url(self, audio_info_file_url):
         """Sets the audio_info_file_url of this ShowAsyncTtsJobResponse.
 
-        音频信息文件下载链接，有效期为1个小时。
+        字幕文件下载链接，有效期为1个小时。
 
         :param audio_info_file_url: The audio_info_file_url of this ShowAsyncTtsJobResponse.
         :type audio_info_file_url: str

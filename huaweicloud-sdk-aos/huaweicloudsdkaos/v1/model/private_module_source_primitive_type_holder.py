@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class SyncNodePoolRequest:
+class PrivateModuleSourcePrimitiveTypeHolder:
 
     """
     Attributes:
@@ -17,78 +17,51 @@ class SyncNodePoolRequest:
     sensitive_list = []
 
     openapi_types = {
-        'cluster_id': 'str',
-        'nodepool_id': 'str'
+        'module_source': 'str'
     }
 
     attribute_map = {
-        'cluster_id': 'cluster_id',
-        'nodepool_id': 'nodepool_id'
+        'module_source': 'module_source'
     }
 
-    def __init__(self, cluster_id=None, nodepool_id=None):
-        """SyncNodePoolRequest
+    def __init__(self, module_source=None):
+        """PrivateModuleSourcePrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
-        :type cluster_id: str
-        :param nodepool_id: 节点池ID
-        :type nodepool_id: str
+        :param module_source: 在模板中使用模块需要定义如下格式：   module \&quot;my_hello_word_module\&quot; {     source &#x3D; {module_source}   }  其中{module_source}为本参数
+        :type module_source: str
         """
         
         
 
-        self._cluster_id = None
-        self._nodepool_id = None
+        self._module_source = None
         self.discriminator = None
 
-        self.cluster_id = cluster_id
-        self.nodepool_id = nodepool_id
+        if module_source is not None:
+            self.module_source = module_source
 
     @property
-    def cluster_id(self):
-        """Gets the cluster_id of this SyncNodePoolRequest.
+    def module_source(self):
+        """Gets the module_source of this PrivateModuleSourcePrimitiveTypeHolder.
 
-        集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        在模板中使用模块需要定义如下格式：   module \"my_hello_word_module\" {     source = {module_source}   }  其中{module_source}为本参数
 
-        :return: The cluster_id of this SyncNodePoolRequest.
+        :return: The module_source of this PrivateModuleSourcePrimitiveTypeHolder.
         :rtype: str
         """
-        return self._cluster_id
+        return self._module_source
 
-    @cluster_id.setter
-    def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this SyncNodePoolRequest.
+    @module_source.setter
+    def module_source(self, module_source):
+        """Sets the module_source of this PrivateModuleSourcePrimitiveTypeHolder.
 
-        集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        在模板中使用模块需要定义如下格式：   module \"my_hello_word_module\" {     source = {module_source}   }  其中{module_source}为本参数
 
-        :param cluster_id: The cluster_id of this SyncNodePoolRequest.
-        :type cluster_id: str
+        :param module_source: The module_source of this PrivateModuleSourcePrimitiveTypeHolder.
+        :type module_source: str
         """
-        self._cluster_id = cluster_id
-
-    @property
-    def nodepool_id(self):
-        """Gets the nodepool_id of this SyncNodePoolRequest.
-
-        节点池ID
-
-        :return: The nodepool_id of this SyncNodePoolRequest.
-        :rtype: str
-        """
-        return self._nodepool_id
-
-    @nodepool_id.setter
-    def nodepool_id(self, nodepool_id):
-        """Sets the nodepool_id of this SyncNodePoolRequest.
-
-        节点池ID
-
-        :param nodepool_id: The nodepool_id of this SyncNodePoolRequest.
-        :type nodepool_id: str
-        """
-        self._nodepool_id = nodepool_id
+        self._module_source = module_source
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -132,7 +105,7 @@ class SyncNodePoolRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, SyncNodePoolRequest):
+        if not isinstance(other, PrivateModuleSourcePrimitiveTypeHolder):
             return False
 
         return self.__dict__ == other.__dict__

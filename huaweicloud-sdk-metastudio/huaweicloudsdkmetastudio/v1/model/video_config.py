@@ -27,7 +27,8 @@ class VideoConfig:
         'subtitle_config': 'SubtitleConfig',
         'dx': 'int',
         'dy': 'int',
-        'is_enable_super_resolution': 'bool'
+        'is_enable_super_resolution': 'bool',
+        'is_end_at_first_frame': 'bool'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class VideoConfig:
         'subtitle_config': 'subtitle_config',
         'dx': 'dx',
         'dy': 'dy',
-        'is_enable_super_resolution': 'is_enable_super_resolution'
+        'is_enable_super_resolution': 'is_enable_super_resolution',
+        'is_end_at_first_frame': 'is_end_at_first_frame'
     }
 
-    def __init__(self, clip_mode=None, codec=None, bitrate=None, width=None, height=None, frame_rate=None, is_subtitle_enable=None, subtitle_config=None, dx=None, dy=None, is_enable_super_resolution=None):
+    def __init__(self, clip_mode=None, codec=None, bitrate=None, width=None, height=None, frame_rate=None, is_subtitle_enable=None, subtitle_config=None, dx=None, dy=None, is_enable_super_resolution=None, is_end_at_first_frame=None):
         """VideoConfig
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class VideoConfig:
         :type dy: int
         :param is_enable_super_resolution: **参数解释**： 视频是否开启超分。 **约束限制**： 仅分身数字人视频制作支持。 **取值范围** * true: 开启 * false: 不开启
         :type is_enable_super_resolution: bool
+        :param is_end_at_first_frame: **参数解释**： 视频结束帧是否跟起始帧相同。需要多个数字人视频无缝拼接时设置成true。 **约束限制**： 仅分身数字人视频制作支持。 **取值范围** * true: 开启 * false: 不开启
+        :type is_end_at_first_frame: bool
         """
         
         
@@ -86,6 +90,7 @@ class VideoConfig:
         self._dx = None
         self._dy = None
         self._is_enable_super_resolution = None
+        self._is_end_at_first_frame = None
         self.discriminator = None
 
         if clip_mode is not None:
@@ -106,6 +111,8 @@ class VideoConfig:
             self.dy = dy
         if is_enable_super_resolution is not None:
             self.is_enable_super_resolution = is_enable_super_resolution
+        if is_end_at_first_frame is not None:
+            self.is_end_at_first_frame = is_end_at_first_frame
 
     @property
     def clip_mode(self):
@@ -344,6 +351,28 @@ class VideoConfig:
         :type is_enable_super_resolution: bool
         """
         self._is_enable_super_resolution = is_enable_super_resolution
+
+    @property
+    def is_end_at_first_frame(self):
+        """Gets the is_end_at_first_frame of this VideoConfig.
+
+        **参数解释**： 视频结束帧是否跟起始帧相同。需要多个数字人视频无缝拼接时设置成true。 **约束限制**： 仅分身数字人视频制作支持。 **取值范围** * true: 开启 * false: 不开启
+
+        :return: The is_end_at_first_frame of this VideoConfig.
+        :rtype: bool
+        """
+        return self._is_end_at_first_frame
+
+    @is_end_at_first_frame.setter
+    def is_end_at_first_frame(self, is_end_at_first_frame):
+        """Sets the is_end_at_first_frame of this VideoConfig.
+
+        **参数解释**： 视频结束帧是否跟起始帧相同。需要多个数字人视频无缝拼接时设置成true。 **约束限制**： 仅分身数字人视频制作支持。 **取值范围** * true: 开启 * false: 不开启
+
+        :param is_end_at_first_frame: The is_end_at_first_frame of this VideoConfig.
+        :type is_end_at_first_frame: bool
+        """
+        self._is_end_at_first_frame = is_end_at_first_frame
 
     def to_dict(self):
         """Returns the model properties as a dict"""

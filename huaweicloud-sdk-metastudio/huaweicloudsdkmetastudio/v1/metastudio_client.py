@@ -10965,7 +10965,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_async_tts_job(self, request):
-        """创建TTS语音异步任务
+        """创建TTS异步任务
 
         该接口用于对外生成音频文件
         
@@ -11109,7 +11109,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_async_tts_job(self, request):
-        """获取音频语音文件
+        """获取TTS异步任务
 
         该接口用于获取TTS音频文件下载链接。
         

@@ -1,3 +1,298 @@
+# 3.1.127 2024-12-12
+
+### HuaweiCloud SDK AOS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `ListPrivateModules`
+    - `CreatePrivateModule`
+    - `DeletePrivateModule`
+    - `ShowPrivateModuleMetadata`
+    - `UpdatePrivateModuleMetadata`
+    - `ListPrivateModuleVersions`
+    - `CreatePrivateModuleVersion`
+    - `ShowPrivateModuleVersionContent`
+    - `DeletePrivateModuleVersion`
+    - `ShowPrivateModuleVersionMetadata`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CCE
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`SyncNodePool`
+
+### HuaweiCloud SDK CDN
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowDomainFullConfig**
+    - 响应参数变更
+      - `+ configs.cache_rules.force_cache`
+  - **UpdateDomainFullConfig**
+    - 请求参数变更
+      - `+ configs.cache_rules.force_cache`
+
+### HuaweiCloud SDK CSMS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListUsers**
+    - 请求参数变更
+      - `+ user_info`
+      - `- user_name`
+
+### HuaweiCloud SDK DAS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowInstanceHealthReport**
+    - 响应参数变更
+      - `+ disk_stat.analyze_success`
+      - `+ disk_stat.error_message`
+      - `+ performance_stat.analyze_success`
+      - `+ performance_stat.error_message`
+
+### HuaweiCloud SDK DC
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateVifPeer**
+    - 响应参数变更
+      - `+ request_id`
+  - **CreateVifPeer**
+    - 响应参数变更
+      - `+ request_id`
+
+### HuaweiCloud SDK DDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ResizeInstance**
+    - 请求参数变更
+      - `+ resize.target_ids`
+
+### HuaweiCloud SDK GaussDB
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateStarrocksInstance**
+    - 请求参数变更
+      - `+ pay_info`
+      - `+ region_code`
+
+### HuaweiCloud SDK LTS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`ListLogContext`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateLogStreamIndex**
+    - 请求参数变更
+      - `+ fields.ltsSubFieldsInfoList`
+      - `+ fields.fieldType: enum value [json]`
+  - **ListAccessConfig**
+    - 响应参数变更
+      - `+ result.access_config_detail.repeat_collect`
+      - `+ result.access_config_detail.system_fields`
+      - `+ result.access_config_detail.custom_key_value`
+      - `+ result.access_config_detail.includeLabelsLogical`
+      - `+ result.access_config_detail.excludeLabelsLogical`
+      - `+ result.access_config_detail.includeK8sLabelsLogical`
+      - `+ result.access_config_detail.excludeK8sLabelsLogical`
+      - `+ result.access_config_detail.includeEnvsLogical`
+      - `+ result.access_config_detail.excludeEnvsLogical`
+  - **UpdateAccessConfig**
+    - 请求参数变更
+      - `+ access_config_detail.system_fields`
+      - `+ access_config_detail.custom_key_value`
+      - `+ access_config_detail.includeLabelsLogical`
+      - `+ access_config_detail.excludeLabelsLogical`
+      - `+ access_config_detail.includeK8sLabelsLogical`
+      - `+ access_config_detail.excludeK8sLabelsLogical`
+      - `+ access_config_detail.includeEnvsLogical`
+      - `+ access_config_detail.excludeEnvsLogical`
+    - 响应参数变更
+      - `+ access_config_detail.repeat_collect`
+      - `+ access_config_detail.system_fields`
+      - `+ access_config_detail.custom_key_value`
+      - `+ access_config_detail.includeLabelsLogical`
+      - `+ access_config_detail.excludeLabelsLogical`
+      - `+ access_config_detail.includeK8sLabelsLogical`
+      - `+ access_config_detail.excludeK8sLabelsLogical`
+      - `+ access_config_detail.includeEnvsLogical`
+      - `+ access_config_detail.excludeEnvsLogical`
+  - **CreateAccessConfig**
+    - 请求参数变更
+      - `+ access_config_detail.repeat_collect`
+      - `+ access_config_detail.system_fields`
+      - `+ access_config_detail.custom_key_value`
+      - `+ access_config_detail.includeLabelsLogical`
+      - `+ access_config_detail.excludeLabelsLogical`
+      - `+ access_config_detail.includeK8sLabelsLogical`
+      - `+ access_config_detail.excludeK8sLabelsLogical`
+      - `+ access_config_detail.includeEnvsLogical`
+      - `+ access_config_detail.excludeEnvsLogical`
+    - 响应参数变更
+      - `+ access_config_detail.repeat_collect`
+      - `+ access_config_detail.system_fields`
+      - `+ access_config_detail.custom_key_value`
+      - `+ access_config_detail.includeLabelsLogical`
+      - `+ access_config_detail.excludeLabelsLogical`
+      - `+ access_config_detail.includeK8sLabelsLogical`
+      - `+ access_config_detail.excludeK8sLabelsLogical`
+      - `+ access_config_detail.includeEnvsLogical`
+      - `+ access_config_detail.excludeEnvsLogical`
+  - **DeleteAccessConfig**
+    - 响应参数变更
+      - `+ result.access_config_detail.repeat_collect`
+      - `+ result.access_config_detail.system_fields`
+      - `+ result.access_config_detail.custom_key_value`
+      - `+ result.access_config_detail.includeLabelsLogical`
+      - `+ result.access_config_detail.excludeLabelsLogical`
+      - `+ result.access_config_detail.includeK8sLabelsLogical`
+      - `+ result.access_config_detail.excludeK8sLabelsLogical`
+      - `+ result.access_config_detail.includeEnvsLogical`
+      - `+ result.access_config_detail.excludeEnvsLogical`
+
+### HuaweiCloud SDK MetaStudio
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateLivePlatform**
+    - 请求参数变更
+      - `* auth_config: object<CustomPlatformAuthConfig> -> object<UpdateCustomPlatformAuthConfig>`
+      - `* body: object<CreateLivePlatformReq> -> object<UpdateLivePlatformReq>`
+  - **Show2dModelTrainingJob**
+    - 响应参数变更
+      - `+ operation_logs.error_code`
+  - **ListSmartChatRooms**
+    - 响应参数变更
+      - `+ smart_chat_rooms.voice_config_list`
+      - `+ smart_chat_rooms.default_language`
+  - **CreateSmartChatRoom**
+    - 请求参数变更
+      - `+ voice_config_list`
+      - `+ default_language`
+      - `+ video_config.is_end_at_first_frame`
+  - **ShowSmartChatRoom**
+    - 响应参数变更
+      - `+ default_language`
+      - `+ voice_config_list`
+      - `+ video_config.is_end_at_first_frame`
+  - **UpdateSmartChatRoom**
+    - 请求参数变更
+      - `+ voice_config_list`
+      - `+ default_language`
+      - `+ video_config.is_end_at_first_frame`
+    - 响应参数变更
+      - `+ default_language`
+      - `+ voice_config_list`
+      - `+ video_config.is_end_at_first_frame`
+  - **ShowVoiceTrainingJob**
+    - 响应参数变更
+      - `+ output_language`
+  - **ShowAsset**
+    - 响应参数变更
+      - `+ asset_extra_meta.image_meta.frame_rate`
+      - `+ asset_extra_meta.image_meta.duration`
+  - **UpdateDigitalAsset**
+    - 请求参数变更
+      - `+ asset_extra_meta.image_meta.frame_rate`
+      - `+ asset_extra_meta.image_meta.duration`
+    - 响应参数变更
+      - `+ asset_extra_meta.image_meta.frame_rate`
+      - `+ asset_extra_meta.image_meta.duration`
+  - **StartSmartLive**
+    - 请求参数变更
+      - `+ video_config.is_end_at_first_frame`
+  - **ListVoiceTrainingJob**
+    - 响应参数变更
+      - `+ output_language`
+      - `+ jobs.output_language`
+  - **CreateDigitalAsset**
+    - 请求参数变更
+      - `+ asset_extra_meta.image_meta.frame_rate`
+      - `+ asset_extra_meta.image_meta.duration`
+  - **ListAssets**
+    - 响应参数变更
+      - `+ assets.asset_extra_meta.image_meta.frame_rate`
+      - `+ assets.asset_extra_meta.image_meta.duration`
+  - **Create2DDigitalHumanVideo**
+    - 请求参数变更
+      - `+ video_config.is_end_at_first_frame`
+  - **Show2DDigitalHumanVideo**
+    - 响应参数变更
+      - `+ video_config.is_end_at_first_frame`
+  - **CreateSmartLiveRoom**
+    - 请求参数变更
+      - `+ video_config.is_end_at_first_frame`
+  - **ShowSmartLiveRoom**
+    - 响应参数变更
+      - `+ video_config.is_end_at_first_frame`
+  - **UpdateSmartLiveRoom**
+    - 请求参数变更
+      - `+ video_config.is_end_at_first_frame`
+    - 响应参数变更
+      - `+ video_config.is_end_at_first_frame`
+  - **CreateVideoScripts**
+    - 请求参数变更
+      - `+ video_config.is_end_at_first_frame`
+  - **ShowVideoScript**
+    - 响应参数变更
+      - `+ video_config.is_end_at_first_frame`
+  - **UpdateVideoScript**
+    - 请求参数变更
+      - `+ video_config.is_end_at_first_frame`
+
 # 3.1.126 2024-12-10
 
 ### HuaweiCloud SDK APIG

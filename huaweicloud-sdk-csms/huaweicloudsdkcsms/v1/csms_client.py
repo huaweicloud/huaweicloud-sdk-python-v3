@@ -1668,8 +1668,8 @@ class CsmsClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
-        if 'user_name' in local_var_params:
-            query_params.append(('user_name', local_var_params['user_name']))
+        if 'user_info' in local_var_params:
+            query_params.append(('user_info', local_var_params['user_info']))
 
         header_params = {}
 

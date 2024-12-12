@@ -28,7 +28,7 @@ class CreateSmartLiveRoomReqBaseInfo:
         'output_urls': 'list[str]',
         'stream_keys': 'list[str]',
         'backup_model_asset_ids': 'list[str]',
-        'live_event_callback_config': 'LiveEventCallBackConfig',
+        'live_event_callback_config': 'LiveRoomEventCallBackConfig',
         'rtc_callback_config': 'RTCLiveEventCallBackConfig',
         'review_config': 'ReviewConfig',
         'shared_config': 'SharedConfig',
@@ -86,7 +86,7 @@ class CreateSmartLiveRoomReqBaseInfo:
         :param backup_model_asset_ids: **参数解释**： 主播轮换时备选主播数字人资产ID（仅形象资产，不包含声音）。  **约束限制**： 不涉及 **取值范围**： 当前最大支持5个备选主播。 数字人资产ID，字符长度0-64位。 **默认取值**： 不涉及
         :type backup_model_asset_ids: list[str]
         :param live_event_callback_config: 
-        :type live_event_callback_config: :class:`huaweicloudsdkmetastudio.v1.LiveEventCallBackConfig`
+        :type live_event_callback_config: :class:`huaweicloudsdkmetastudio.v1.LiveRoomEventCallBackConfig`
         :param rtc_callback_config: 
         :type rtc_callback_config: :class:`huaweicloudsdkmetastudio.v1.RTCLiveEventCallBackConfig`
         :param review_config: 
@@ -394,7 +394,7 @@ class CreateSmartLiveRoomReqBaseInfo:
         """Gets the live_event_callback_config of this CreateSmartLiveRoomReqBaseInfo.
 
         :return: The live_event_callback_config of this CreateSmartLiveRoomReqBaseInfo.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.LiveEventCallBackConfig`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.LiveRoomEventCallBackConfig`
         """
         return self._live_event_callback_config
 
@@ -403,7 +403,7 @@ class CreateSmartLiveRoomReqBaseInfo:
         """Sets the live_event_callback_config of this CreateSmartLiveRoomReqBaseInfo.
 
         :param live_event_callback_config: The live_event_callback_config of this CreateSmartLiveRoomReqBaseInfo.
-        :type live_event_callback_config: :class:`huaweicloudsdkmetastudio.v1.LiveEventCallBackConfig`
+        :type live_event_callback_config: :class:`huaweicloudsdkmetastudio.v1.LiveRoomEventCallBackConfig`
         """
         self._live_event_callback_config = live_event_callback_config
 

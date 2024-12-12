@@ -115,7 +115,7 @@ class UpdateFlinkSqlJobRequestBody:
         :type edge_group_ids: list[str]
         :param dirty_data_strategy: 作业脏数据策略。 “2”：保存； “1”：抛出异常； “0”：忽略； 默认值为“0”。
         :type dirty_data_strategy: str
-        :param udf_jar_url: 用户已上传到DLI资源管理系统的资源包名，用户sql作业的udf jar通过该参数传入。
+        :param udf_jar_url: 用户自定义UDF文件，在后续作业中可以调用插入Jar包中的自定义函数。 UDF Jar包的管理方式： 上传OBS管理UDF Jar包：提前将对应的Jar包上传至OBS桶中。并在此处选择对应的OBS路径。 上传DLI管理UDF Jar包：提前将对应的Jar包上传至OBS桶中，并在DLI管理控制台的“数据管理&gt;程序包管理”中创建程序包。 Flink1.15版本不再支持DLI管理UDF Jar包。
         :type udf_jar_url: str
         :param manager_cu_number: 用户为作业选择的管理单元（jobmanager）CU数量，默认值为“1”。
         :type manager_cu_number: int
@@ -601,7 +601,7 @@ class UpdateFlinkSqlJobRequestBody:
     def udf_jar_url(self):
         """Gets the udf_jar_url of this UpdateFlinkSqlJobRequestBody.
 
-        用户已上传到DLI资源管理系统的资源包名，用户sql作业的udf jar通过该参数传入。
+        用户自定义UDF文件，在后续作业中可以调用插入Jar包中的自定义函数。 UDF Jar包的管理方式： 上传OBS管理UDF Jar包：提前将对应的Jar包上传至OBS桶中。并在此处选择对应的OBS路径。 上传DLI管理UDF Jar包：提前将对应的Jar包上传至OBS桶中，并在DLI管理控制台的“数据管理>程序包管理”中创建程序包。 Flink1.15版本不再支持DLI管理UDF Jar包。
 
         :return: The udf_jar_url of this UpdateFlinkSqlJobRequestBody.
         :rtype: str
@@ -612,7 +612,7 @@ class UpdateFlinkSqlJobRequestBody:
     def udf_jar_url(self, udf_jar_url):
         """Sets the udf_jar_url of this UpdateFlinkSqlJobRequestBody.
 
-        用户已上传到DLI资源管理系统的资源包名，用户sql作业的udf jar通过该参数传入。
+        用户自定义UDF文件，在后续作业中可以调用插入Jar包中的自定义函数。 UDF Jar包的管理方式： 上传OBS管理UDF Jar包：提前将对应的Jar包上传至OBS桶中。并在此处选择对应的OBS路径。 上传DLI管理UDF Jar包：提前将对应的Jar包上传至OBS桶中，并在DLI管理控制台的“数据管理>程序包管理”中创建程序包。 Flink1.15版本不再支持DLI管理UDF Jar包。
 
         :param udf_jar_url: The udf_jar_url of this UpdateFlinkSqlJobRequestBody.
         :type udf_jar_url: str

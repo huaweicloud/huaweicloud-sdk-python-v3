@@ -464,9 +464,6 @@ from huaweicloudsdkcce.v3.model.storage_groups import StorageGroups
 from huaweicloudsdkcce.v3.model.storage_selectors import StorageSelectors
 from huaweicloudsdkcce.v3.model.storage_selectors_match_labels import StorageSelectorsMatchLabels
 from huaweicloudsdkcce.v3.model.support_versions import SupportVersions
-from huaweicloudsdkcce.v3.model.sync_node_pool_request import SyncNodePoolRequest
-from huaweicloudsdkcce.v3.model.sync_node_pool_resp import SyncNodePoolResp
-from huaweicloudsdkcce.v3.model.sync_node_pool_response import SyncNodePoolResponse
 from huaweicloudsdkcce.v3.model.sync_node_request import SyncNodeRequest
 from huaweicloudsdkcce.v3.model.sync_node_resp import SyncNodeResp
 from huaweicloudsdkcce.v3.model.sync_node_response import SyncNodeResponse

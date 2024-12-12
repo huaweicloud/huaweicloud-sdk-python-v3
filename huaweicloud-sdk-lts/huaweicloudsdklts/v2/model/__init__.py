@@ -163,6 +163,7 @@ from huaweicloudsdklts.v2.model.lts_access_config_info_respon200 import LTSAcces
 from huaweicloudsdklts.v2.model.lts_fields_info import LTSFieldsInfo
 from huaweicloudsdklts.v2.model.lts_full_text_index_info import LTSFullTextIndexInfo
 from huaweicloudsdklts.v2.model.lts_index_config_info import LTSIndexConfigInfo
+from huaweicloudsdklts.v2.model.lts_sub_fields_info import LTSSubFieldsInfo
 from huaweicloudsdklts.v2.model.list_access_config_request import ListAccessConfigRequest
 from huaweicloudsdklts.v2.model.list_access_config_response import ListAccessConfigResponse
 from huaweicloudsdklts.v2.model.list_active_or_history_alarms_request import ListActiveOrHistoryAlarmsRequest
@@ -186,6 +187,9 @@ from huaweicloudsdklts.v2.model.list_host_request import ListHostRequest
 from huaweicloudsdklts.v2.model.list_host_response import ListHostResponse
 from huaweicloudsdklts.v2.model.list_keywords_alarm_rules_request import ListKeywordsAlarmRulesRequest
 from huaweicloudsdklts.v2.model.list_keywords_alarm_rules_response import ListKeywordsAlarmRulesResponse
+from huaweicloudsdklts.v2.model.list_log_context_request import ListLogContextRequest
+from huaweicloudsdklts.v2.model.list_log_context_request_body import ListLogContextRequestBody
+from huaweicloudsdklts.v2.model.list_log_context_response import ListLogContextResponse
 from huaweicloudsdklts.v2.model.list_log_groups_request import ListLogGroupsRequest
 from huaweicloudsdklts.v2.model.list_log_groups_response import ListLogGroupsResponse
 from huaweicloudsdklts.v2.model.list_log_histogram_request import ListLogHistogramRequest

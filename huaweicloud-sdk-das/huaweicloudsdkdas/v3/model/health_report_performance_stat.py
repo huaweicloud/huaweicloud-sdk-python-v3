@@ -18,15 +18,19 @@ class HealthReportPerformanceStat:
 
     openapi_types = {
         'peak_stats': 'list[HealthReportSingleValueStat]',
-        'ratio_stats': 'list[HealthReportRatioStat]'
+        'ratio_stats': 'list[HealthReportRatioStat]',
+        'analyze_success': 'bool',
+        'error_message': 'str'
     }
 
     attribute_map = {
         'peak_stats': 'peak_stats',
-        'ratio_stats': 'ratio_stats'
+        'ratio_stats': 'ratio_stats',
+        'analyze_success': 'analyze_success',
+        'error_message': 'error_message'
     }
 
-    def __init__(self, peak_stats=None, ratio_stats=None):
+    def __init__(self, peak_stats=None, ratio_stats=None, analyze_success=None, error_message=None):
         """HealthReportPerformanceStat
 
         The model defined in huaweicloud sdk
@@ -35,16 +39,24 @@ class HealthReportPerformanceStat:
         :type peak_stats: list[:class:`huaweicloudsdkdas.v3.HealthReportSingleValueStat`]
         :param ratio_stats: 比率值数据列表。
         :type ratio_stats: list[:class:`huaweicloudsdkdas.v3.HealthReportRatioStat`]
+        :param analyze_success: 统计分析是否成功。
+        :type analyze_success: bool
+        :param error_message: 错误信息。
+        :type error_message: str
         """
         
         
 
         self._peak_stats = None
         self._ratio_stats = None
+        self._analyze_success = None
+        self._error_message = None
         self.discriminator = None
 
         self.peak_stats = peak_stats
         self.ratio_stats = ratio_stats
+        self.analyze_success = analyze_success
+        self.error_message = error_message
 
     @property
     def peak_stats(self):
@@ -89,6 +101,50 @@ class HealthReportPerformanceStat:
         :type ratio_stats: list[:class:`huaweicloudsdkdas.v3.HealthReportRatioStat`]
         """
         self._ratio_stats = ratio_stats
+
+    @property
+    def analyze_success(self):
+        """Gets the analyze_success of this HealthReportPerformanceStat.
+
+        统计分析是否成功。
+
+        :return: The analyze_success of this HealthReportPerformanceStat.
+        :rtype: bool
+        """
+        return self._analyze_success
+
+    @analyze_success.setter
+    def analyze_success(self, analyze_success):
+        """Sets the analyze_success of this HealthReportPerformanceStat.
+
+        统计分析是否成功。
+
+        :param analyze_success: The analyze_success of this HealthReportPerformanceStat.
+        :type analyze_success: bool
+        """
+        self._analyze_success = analyze_success
+
+    @property
+    def error_message(self):
+        """Gets the error_message of this HealthReportPerformanceStat.
+
+        错误信息。
+
+        :return: The error_message of this HealthReportPerformanceStat.
+        :rtype: str
+        """
+        return self._error_message
+
+    @error_message.setter
+    def error_message(self, error_message):
+        """Sets the error_message of this HealthReportPerformanceStat.
+
+        错误信息。
+
+        :param error_message: The error_message of this HealthReportPerformanceStat.
+        :type error_message: str
+        """
+        self._error_message = error_message
 
     def to_dict(self):
         """Returns the model properties as a dict"""

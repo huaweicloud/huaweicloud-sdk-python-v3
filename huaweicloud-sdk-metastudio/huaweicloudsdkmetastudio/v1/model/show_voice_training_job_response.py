@@ -37,7 +37,8 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
         'phone': 'str',
         'dhtms_job_id': 'str',
         'batch_name': 'str',
-        'allocated_resource': 'VoiceTrainingAllocatedResource'
+        'allocated_resource': 'VoiceTrainingAllocatedResource',
+        'output_language': 'str'
     }
 
     attribute_map = {
@@ -60,10 +61,11 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
         'phone': 'phone',
         'dhtms_job_id': 'dhtms_job_id',
         'batch_name': 'batch_name',
-        'allocated_resource': 'allocated_resource'
+        'allocated_resource': 'allocated_resource',
+        'output_language': 'output_language'
     }
 
-    def __init__(self, job_type=None, job_id=None, app_user_id=None, voice_name=None, sex=None, language=None, state=None, reject_times=None, asset_id=None, job_failed_code=None, job_failed_reason=None, create_time=None, lastupdate_time=None, voice_authorization_url=None, create_type=None, tag=None, phone=None, dhtms_job_id=None, batch_name=None, allocated_resource=None):
+    def __init__(self, job_type=None, job_id=None, app_user_id=None, voice_name=None, sex=None, language=None, state=None, reject_times=None, asset_id=None, job_failed_code=None, job_failed_reason=None, create_time=None, lastupdate_time=None, voice_authorization_url=None, create_type=None, tag=None, phone=None, dhtms_job_id=None, batch_name=None, allocated_resource=None, output_language=None):
         """ShowVoiceTrainingJobResponse
 
         The model defined in huaweicloud sdk
@@ -108,6 +110,8 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
         :type batch_name: str
         :param allocated_resource: 
         :type allocated_resource: :class:`huaweicloudsdkmetastudio.v1.VoiceTrainingAllocatedResource`
+        :param output_language: 模型输出语言类型
+        :type output_language: str
         """
         
         super(ShowVoiceTrainingJobResponse, self).__init__()
@@ -132,6 +136,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
         self._dhtms_job_id = None
         self._batch_name = None
         self._allocated_resource = None
+        self._output_language = None
         self.discriminator = None
 
         if job_type is not None:
@@ -174,6 +179,8 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
             self.batch_name = batch_name
         if allocated_resource is not None:
             self.allocated_resource = allocated_resource
+        if output_language is not None:
+            self.output_language = output_language
 
     @property
     def job_type(self):
@@ -594,6 +601,28 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
         :type allocated_resource: :class:`huaweicloudsdkmetastudio.v1.VoiceTrainingAllocatedResource`
         """
         self._allocated_resource = allocated_resource
+
+    @property
+    def output_language(self):
+        """Gets the output_language of this ShowVoiceTrainingJobResponse.
+
+        模型输出语言类型
+
+        :return: The output_language of this ShowVoiceTrainingJobResponse.
+        :rtype: str
+        """
+        return self._output_language
+
+    @output_language.setter
+    def output_language(self, output_language):
+        """Sets the output_language of this ShowVoiceTrainingJobResponse.
+
+        模型输出语言类型
+
+        :param output_language: The output_language of this ShowVoiceTrainingJobResponse.
+        :type output_language: str
+        """
+        self._output_language = output_language
 
     def to_dict(self):
         """Returns the model properties as a dict"""
