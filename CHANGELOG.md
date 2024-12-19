@@ -1,3 +1,384 @@
+# 3.1.128 2024-12-19
+
+### HuaweiCloud SDK AAD
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the APIs `AddWafWhiteIpRule`, `DeleteWafWhiteIpRule`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK AS
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListScalingActivityLogs**
+    - changes of response param
+      - `+ scaling_activity_log.status: enum value [DOING]`
+      - `- scaling_activity_log.status: enum value [DING]`
+  - **ListScalingActivityV2Logs**
+    - changes of response param
+      - `+ scaling_activity_log.status: enum value [DOING]`
+      - `- scaling_activity_log.status: enum value [DING]`
+
+### HuaweiCloud SDK CAE
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListComponentSnapshots**
+    - changes of response param
+      - `+ items.context.runtime: enum value [Java21]`
+  - **ShowComponent**
+    - changes of response param
+      - `+ spec.runtime: enum value [Java21]`
+  - **UpdateComponent**
+    - changes of request param
+      - `+ spec.runtime: enum value [Java21]`
+  - **CreateComponent**
+    - changes of request param
+      - `+ spec.runtime: enum value [Java21]`
+    - changes of response param
+      - `+ spec.runtime: enum value [Java21]`
+  - **ListComponents**
+    - changes of response param
+      - `+ items.spec.runtime: enum value [Java21]`
+  - **CreateComponentWithConfiguration**
+    - changes of request param
+      - `+ spec.runtime: enum value [Java21]`
+    - changes of response param
+      - `+ spec.runtime: enum value [Java21]`
+
+### HuaweiCloud SDK CCE
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowAddonInstance**
+    - changes of response param
+      - `+ status.currentVersion.supportVersions.category`
+  - **UpdateAddonInstance**
+    - changes of response param
+      - `+ status.currentVersion.supportVersions.category`
+  - **RollbackAddonInstance**
+    - changes of response param
+      - `+ status.currentVersion.supportVersions.category`
+  - **ShowAutopilotAddonInstance**
+    - changes of response param
+      - `+ status.currentVersion.supportVersions.category`
+  - **UpdateAutopilotAddonInstance**
+    - changes of response param
+      - `+ status.currentVersion.supportVersions.category`
+  - **RollbackAutopilotAddonInstance**
+    - changes of response param
+      - `+ status.currentVersion.supportVersions.category`
+  - **CreateAddonInstance**
+    - changes of response param
+      - `+ status.currentVersion.supportVersions.category`
+  - **ListAddonInstances**
+    - changes of response param
+      - `+ items.status.currentVersion.supportVersions.category`
+  - **ListAddonTemplates**
+    - changes of response param
+      - `+ items.spec.versions.supportVersions.category`
+  - **CreateAutopilotAddonInstance**
+    - changes of response param
+      - `+ status.currentVersion.supportVersions.category`
+  - **ListAutopilotAddonInstances**
+    - changes of response param
+      - `+ items.status.currentVersion.supportVersions.category`
+  - **ListAutopilotAddonTemplates**
+    - changes of response param
+      - `+ items.spec.versions.supportVersions.category`
+
+### HuaweiCloud SDK CodeArtsPipeline
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowPipelineRunDetail**
+    - changes of response param
+      - `* stages.jobs.async: string -> boolean`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `RetryFactoryJobInstance`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DC
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the APIs `ListDirectConnectLocations`, `ShowDirectConnectLocation`
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the APIs `ListRmsGlobalDcGateway`, `ShowRmsGlobalDcGateway`
+  - **ListGlobalDcGateways**
+    - changes of request param
+      - `+ status`
+      - `- hosting_id`
+  - **ShowGlobalDcGateway**
+    - changes of request param
+      - `+ limit`
+      - `+ enterprise_project_id`
+  - **UpdateVifPeer**
+    - changes of response param
+      - `- request_id`
+  - **CreateVifPeer**
+    - changes of response param
+      - `- request_id`
+  - **ListGdgwRouteTables**
+    - changes of request param
+      - `- fields`
+      - `- ext_fields`
+  - **ListGlobalEips**
+    - changes of response param
+      - `+ global_eips.status: enum value [ACTIVE,ERROR]`
+      - `+ global_eips.type: enum value [IP_ADDRESS,IP_SEGMENT]`
+  - **BindGlobalEips**
+    - changes of response param
+      - `+ global_eips.status: enum value [ACTIVE,ERROR]`
+      - `+ global_eips.type: enum value [IP_ADDRESS,IP_SEGMENT]`
+  - **UnbindGlobalEips**
+    - changes of response param
+      - `+ global_eips.status: enum value [ACTIVE,ERROR]`
+      - `+ global_eips.type: enum value [IP_ADDRESS,IP_SEGMENT]`
+  - **ShowDirectConnect**
+    - changes of response param
+      - `+ direct_connect.status: enum value [LEASED_LINE_DELIVERY]`
+  - **UpdateDirectConnect**
+    - changes of request param
+      - `+ direct_connect.status: enum value [APPLY]`
+    - changes of response param
+      - `+ direct_connect.status: enum value [LEASED_LINE_DELIVERY]`
+  - **ListDirectConnects**
+    - changes of response param
+      - `+ direct_connects.status: enum value [LEASED_LINE_DELIVERY]`
+  - **ListHostedDirectConnects**
+    - changes of response param
+      - `* hosted_connects.apply_time: string -> date-time`
+      - `* hosted_connects.create_time: string -> date-time`
+  - **CreateHostedDirectConnect**
+    - changes of response param
+      - `* hosted_connect.apply_time: string -> date-time`
+      - `* hosted_connect.create_time: string -> date-time`
+  - **ShowHostedDirectConnect**
+    - changes of response param
+      - `* hosted_connect.apply_time: string -> date-time`
+      - `* hosted_connect.create_time: string -> date-time`
+  - **UpdateHostedDirectConnect**
+    - changes of response param
+      - `* hosted_connect.apply_time: string -> date-time`
+      - `* hosted_connect.create_time: string -> date-time`
+  - **ShowVirtualGateway**
+    - changes of response param
+      - `+ virtual_gateway.enterprise_router_id`
+  - **UpdateVirtualGateway**
+    - changes of response param
+      - `+ virtual_gateway.enterprise_router_id`
+  - **ListVirtualGateways**
+    - changes of response param
+      - `+ virtual_gateways.enterprise_router_id`
+  - **CreateVirtualGateway**
+    - changes of request param
+      - `+ virtual_gateway.enterprise_router_id`
+    - changes of response param
+      - `+ virtual_gateway.enterprise_router_id`
+  - **ShowVirtualInterface**
+    - changes of response param
+      - `+ virtual_interface.update_time`
+  - **UpdateVirtualInterface**
+    - changes of response param
+      - `+ virtual_interface.update_time`
+  - **ListVirtualInterfaces**
+    - changes of response param
+      - `+ virtual_interfaces.update_time`
+  - **CreateVirtualInterface**
+    - changes of request param
+      - `- virtual_interface.service_type: enum value [vpc]`
+    - changes of response param
+      - `+ virtual_interface.update_time`
+
+### HuaweiCloud SDK DCS
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the following APIs:
+    - `ShowBandwidths`
+    - `UpdateBandwidth`
+    - `ShowInstanceBandwidthAutoScalingPolicy`
+    - `UpdateInstanceBandwidthAutoScalingPolicy`
+    - `DeleteInstanceBandwidthAutoScalingPolicy`
+    - `UpdatePublicIp`
+    - `DeletePublicIp`
+    - `ChangeNodesStartStopStatus`
+    - `ShowInstanceVersion`
+    - `UpgradeInstanceMinorVersion`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DWS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ResizeCluster**
+    - changes of request param
+      - `+ scale_out.subnet_id`
+  - **CreateSnapshotPolicy**
+    - changes of request param
+      - `* backup_strategies: object<BackupStrategyDetail> -> list<BackupStrategyRequest>`
+      - `* body: object<BackupPolicy> -> object<CreateSnapshotPolicyRequestBody>`
+  - **ResizeClusterWithExistedNodes**
+    - changes of request param
+      - `+ scale_out.subnet_id`
+
+### HuaweiCloud SDK EVS
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the API `UnsubscribePostpaidVolume`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CinderListQuotas**
+    - changes of response param
+      - `+ quota_set.gigabytes_ESSD`
+      - `+ quota_set.snapshots_ESSD`
+      - `+ quota_set.volumes_ESSD`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `ListRestorableInstancesDetails`
+    - `ListRecycleInstancesDetails`
+    - `ShowParameterGroupDetail`
+    - `ShowSourceInstanceDetail`
+    - `AllowDbRolePrivileges`
+    - `ListDatabaseRoles`
+    - `CreateDbRole`
+    - `ListDatastoresDetails`
+    - `ListDatabaseInstances`
+    - `ListParameterGroupTemplates`
+    - `ShowInstanceParamGroupDetail`
+    - `ShowUpgradeCandidateVersionsDetails`
+    - `BatchShowUpgradeCandidateVersions`
+    - `ListFlavorsDetails`
+    - `ListBackupsDetails`
+    - `SyncLimitData`
+    - `DeleteDatabaseSchema`
+    - `CreateDatabaseInstance`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowUpgradeCandidateVersions**
+    - changes of response param
+      - `* hotfix_upgrade_infos: object<HotfixUpgradeInfos> -> list<HotfixUpgradeInfos>`
+      - `* hotfix_rollback_infos: object<HotfixRollbackInfos> -> list<HotfixRollbackInfos>`
+
+### HuaweiCloud SDK IMS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ImportImageQuick**
+    - changes of request param
+      - `+ license_type`
+
+### HuaweiCloud SDK IoTEdge
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the API `ListPropertyActiveControls`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK OCR
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **RecognizeAutoClassification**
+    - changes of request param
+      - `+ pdf_page_number`
+  - **RecognizeSmartDocumentRecognizer**
+    - changes of request param
+      - `+ erase_seal`
+
+### HuaweiCloud SDK RDS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the API `ListUpdateBackupEnhancePolicy`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK SCM
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListCertificates**
+    - changes of request param
+      - `+ owned_by_self`
+
 # 3.1.127 2024-12-12
 
 ### HuaweiCloud SDK AOS

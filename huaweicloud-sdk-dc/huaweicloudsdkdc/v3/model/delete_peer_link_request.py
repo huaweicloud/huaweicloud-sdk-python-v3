@@ -31,9 +31,9 @@ class DeletePeerLinkRequest:
 
         The model defined in huaweicloud sdk
 
-        :param global_dc_gateway_id: 全球接入网关ID
+        :param global_dc_gateway_id: 全域接入网关ID
         :type global_dc_gateway_id: str
-        :param peer_link_id: 全球接入网关对等体
+        :param peer_link_id: 全域接入网关对等体
         :type peer_link_id: str
         """
         
@@ -50,7 +50,7 @@ class DeletePeerLinkRequest:
     def global_dc_gateway_id(self):
         """Gets the global_dc_gateway_id of this DeletePeerLinkRequest.
 
-        全球接入网关ID
+        全域接入网关ID
 
         :return: The global_dc_gateway_id of this DeletePeerLinkRequest.
         :rtype: str
@@ -61,7 +61,7 @@ class DeletePeerLinkRequest:
     def global_dc_gateway_id(self, global_dc_gateway_id):
         """Sets the global_dc_gateway_id of this DeletePeerLinkRequest.
 
-        全球接入网关ID
+        全域接入网关ID
 
         :param global_dc_gateway_id: The global_dc_gateway_id of this DeletePeerLinkRequest.
         :type global_dc_gateway_id: str
@@ -72,7 +72,7 @@ class DeletePeerLinkRequest:
     def peer_link_id(self):
         """Gets the peer_link_id of this DeletePeerLinkRequest.
 
-        全球接入网关对等体
+        全域接入网关对等体
 
         :return: The peer_link_id of this DeletePeerLinkRequest.
         :rtype: str
@@ -83,7 +83,7 @@ class DeletePeerLinkRequest:
     def peer_link_id(self, peer_link_id):
         """Sets the peer_link_id of this DeletePeerLinkRequest.
 
-        全球接入网关对等体
+        全域接入网关对等体
 
         :param peer_link_id: The peer_link_id of this DeletePeerLinkRequest.
         :type peer_link_id: str

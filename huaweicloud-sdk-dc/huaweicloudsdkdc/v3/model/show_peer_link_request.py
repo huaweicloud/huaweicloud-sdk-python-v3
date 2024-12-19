@@ -17,92 +17,48 @@ class ShowPeerLinkRequest:
     sensitive_list = []
 
     openapi_types = {
-        'global_dc_gateway_id': 'str',
-        'peer_link_id': 'str',
         'fields': 'list[str]',
-        'ext_fields': 'list[str]'
+        'ext_fields': 'list[str]',
+        'global_dc_gateway_id': 'str',
+        'peer_link_id': 'str'
     }
 
     attribute_map = {
-        'global_dc_gateway_id': 'global_dc_gateway_id',
-        'peer_link_id': 'peer_link_id',
         'fields': 'fields',
-        'ext_fields': 'ext_fields'
+        'ext_fields': 'ext_fields',
+        'global_dc_gateway_id': 'global_dc_gateway_id',
+        'peer_link_id': 'peer_link_id'
     }
 
-    def __init__(self, global_dc_gateway_id=None, peer_link_id=None, fields=None, ext_fields=None):
+    def __init__(self, fields=None, ext_fields=None, global_dc_gateway_id=None, peer_link_id=None):
         """ShowPeerLinkRequest
 
         The model defined in huaweicloud sdk
 
-        :param global_dc_gateway_id: 全球接入网关ID
-        :type global_dc_gateway_id: str
-        :param peer_link_id: 全球接入网关对等体
-        :type peer_link_id: str
         :param fields: 显示字段列表
         :type fields: list[str]
         :param ext_fields: show response ext-fields
         :type ext_fields: list[str]
+        :param global_dc_gateway_id: 全域接入网关ID
+        :type global_dc_gateway_id: str
+        :param peer_link_id: 全域接入网关对等体
+        :type peer_link_id: str
         """
         
         
 
-        self._global_dc_gateway_id = None
-        self._peer_link_id = None
         self._fields = None
         self._ext_fields = None
+        self._global_dc_gateway_id = None
+        self._peer_link_id = None
         self.discriminator = None
 
-        self.global_dc_gateway_id = global_dc_gateway_id
-        self.peer_link_id = peer_link_id
         if fields is not None:
             self.fields = fields
         if ext_fields is not None:
             self.ext_fields = ext_fields
-
-    @property
-    def global_dc_gateway_id(self):
-        """Gets the global_dc_gateway_id of this ShowPeerLinkRequest.
-
-        全球接入网关ID
-
-        :return: The global_dc_gateway_id of this ShowPeerLinkRequest.
-        :rtype: str
-        """
-        return self._global_dc_gateway_id
-
-    @global_dc_gateway_id.setter
-    def global_dc_gateway_id(self, global_dc_gateway_id):
-        """Sets the global_dc_gateway_id of this ShowPeerLinkRequest.
-
-        全球接入网关ID
-
-        :param global_dc_gateway_id: The global_dc_gateway_id of this ShowPeerLinkRequest.
-        :type global_dc_gateway_id: str
-        """
-        self._global_dc_gateway_id = global_dc_gateway_id
-
-    @property
-    def peer_link_id(self):
-        """Gets the peer_link_id of this ShowPeerLinkRequest.
-
-        全球接入网关对等体
-
-        :return: The peer_link_id of this ShowPeerLinkRequest.
-        :rtype: str
-        """
-        return self._peer_link_id
-
-    @peer_link_id.setter
-    def peer_link_id(self, peer_link_id):
-        """Sets the peer_link_id of this ShowPeerLinkRequest.
-
-        全球接入网关对等体
-
-        :param peer_link_id: The peer_link_id of this ShowPeerLinkRequest.
-        :type peer_link_id: str
-        """
-        self._peer_link_id = peer_link_id
+        self.global_dc_gateway_id = global_dc_gateway_id
+        self.peer_link_id = peer_link_id
 
     @property
     def fields(self):
@@ -147,6 +103,50 @@ class ShowPeerLinkRequest:
         :type ext_fields: list[str]
         """
         self._ext_fields = ext_fields
+
+    @property
+    def global_dc_gateway_id(self):
+        """Gets the global_dc_gateway_id of this ShowPeerLinkRequest.
+
+        全域接入网关ID
+
+        :return: The global_dc_gateway_id of this ShowPeerLinkRequest.
+        :rtype: str
+        """
+        return self._global_dc_gateway_id
+
+    @global_dc_gateway_id.setter
+    def global_dc_gateway_id(self, global_dc_gateway_id):
+        """Sets the global_dc_gateway_id of this ShowPeerLinkRequest.
+
+        全域接入网关ID
+
+        :param global_dc_gateway_id: The global_dc_gateway_id of this ShowPeerLinkRequest.
+        :type global_dc_gateway_id: str
+        """
+        self._global_dc_gateway_id = global_dc_gateway_id
+
+    @property
+    def peer_link_id(self):
+        """Gets the peer_link_id of this ShowPeerLinkRequest.
+
+        全域接入网关对等体
+
+        :return: The peer_link_id of this ShowPeerLinkRequest.
+        :rtype: str
+        """
+        return self._peer_link_id
+
+    @peer_link_id.setter
+    def peer_link_id(self, peer_link_id):
+        """Sets the peer_link_id of this ShowPeerLinkRequest.
+
+        全域接入网关对等体
+
+        :param peer_link_id: The peer_link_id of this ShowPeerLinkRequest.
+        :type peer_link_id: str
+        """
+        self._peer_link_id = peer_link_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

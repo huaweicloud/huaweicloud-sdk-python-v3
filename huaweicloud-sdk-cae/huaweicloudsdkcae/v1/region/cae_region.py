@@ -7,15 +7,20 @@ class CaeRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("CAE")
 
     CN_NORTH_4 = Region("cn-north-4",
-                        "https://cae.cn-north-4.myhuaweicloud.com")
+                        "https://cae.cn-north-4.myhuaweicloud.com",
+                        "https://cae.cn-north-4.myhuaweicloud.cn")
     CN_EAST_3 = Region("cn-east-3",
-                        "https://cae.cn-east-3.myhuaweicloud.com")
+                        "https://cae.cn-east-3.myhuaweicloud.com",
+                        "https://cae.cn-east-3.myhuaweicloud.cn")
     CN_SOUTH_1 = Region("cn-south-1",
-                        "https://cae.cn-south-1.myhuaweicloud.com")
+                        "https://cae.cn-south-1.myhuaweicloud.com",
+                        "https://cae.cn-south-1.myhuaweicloud.cn")
     AP_SOUTHEAST_3 = Region("ap-southeast-3",
-                        "https://cae.ap-southeast-3.myhuaweicloud.com")
+                        "https://cae.ap-southeast-3.myhuaweicloud.com",
+                        "https://cae.ap-southeast-3.myhuaweicloud.cn")
     AF_SOUTH_1 = Region("af-south-1",
-                        "https://cae.af-south-1.myhuaweicloud.com")
+                        "https://cae.af-south-1.myhuaweicloud.com",
+                        "https://cae.af-south-1.myhuaweicloud.cn")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,

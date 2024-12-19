@@ -39,9 +39,9 @@ class UpdateVirtualGateway:
         :type name: str
         :param description: 虚拟网关的描述信息
         :type description: str
-        :param local_ep_group: 虚拟网关到访问云上服务IPv4子网列表，通常是vpc的cidrs
+        :param local_ep_group: 虚拟网关到访问云上服务IPv4子网列表，通常是vpc的cidrs[，当虚拟网关接入VPC时该列表才允许更新。](tag:dt)
         :type local_ep_group: list[str]
-        :param local_ep_group_ipv6: 虚拟网关到访问云上服务IPv6子网列表，通常是vpc的cidrs
+        :param local_ep_group_ipv6: 虚拟网关到访问云上服务IPv6子网列表，通常是vpc的cidrs。[（预留字段，暂不支持）](tag:dt)
         :type local_ep_group_ipv6: list[str]
         """
         
@@ -110,7 +110,7 @@ class UpdateVirtualGateway:
     def local_ep_group(self):
         """Gets the local_ep_group of this UpdateVirtualGateway.
 
-        虚拟网关到访问云上服务IPv4子网列表，通常是vpc的cidrs
+        虚拟网关到访问云上服务IPv4子网列表，通常是vpc的cidrs[，当虚拟网关接入VPC时该列表才允许更新。](tag:dt)
 
         :return: The local_ep_group of this UpdateVirtualGateway.
         :rtype: list[str]
@@ -121,7 +121,7 @@ class UpdateVirtualGateway:
     def local_ep_group(self, local_ep_group):
         """Sets the local_ep_group of this UpdateVirtualGateway.
 
-        虚拟网关到访问云上服务IPv4子网列表，通常是vpc的cidrs
+        虚拟网关到访问云上服务IPv4子网列表，通常是vpc的cidrs[，当虚拟网关接入VPC时该列表才允许更新。](tag:dt)
 
         :param local_ep_group: The local_ep_group of this UpdateVirtualGateway.
         :type local_ep_group: list[str]
@@ -132,7 +132,7 @@ class UpdateVirtualGateway:
     def local_ep_group_ipv6(self):
         """Gets the local_ep_group_ipv6 of this UpdateVirtualGateway.
 
-        虚拟网关到访问云上服务IPv6子网列表，通常是vpc的cidrs
+        虚拟网关到访问云上服务IPv6子网列表，通常是vpc的cidrs。[（预留字段，暂不支持）](tag:dt)
 
         :return: The local_ep_group_ipv6 of this UpdateVirtualGateway.
         :rtype: list[str]
@@ -143,7 +143,7 @@ class UpdateVirtualGateway:
     def local_ep_group_ipv6(self, local_ep_group_ipv6):
         """Sets the local_ep_group_ipv6 of this UpdateVirtualGateway.
 
-        虚拟网关到访问云上服务IPv6子网列表，通常是vpc的cidrs
+        虚拟网关到访问云上服务IPv6子网列表，通常是vpc的cidrs。[（预留字段，暂不支持）](tag:dt)
 
         :param local_ep_group_ipv6: The local_ep_group_ipv6 of this UpdateVirtualGateway.
         :type local_ep_group_ipv6: list[str]

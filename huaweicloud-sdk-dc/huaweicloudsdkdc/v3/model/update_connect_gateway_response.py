@@ -18,20 +18,76 @@ class UpdateConnectGatewayResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'request_id': 'str',
+        'connect_gateway': 'ConnectGatewayResponse'
     }
 
     attribute_map = {
+        'request_id': 'request_id',
+        'connect_gateway': 'connect_gateway'
     }
 
-    def __init__(self):
+    def __init__(self, request_id=None, connect_gateway=None):
         """UpdateConnectGatewayResponse
 
         The model defined in huaweicloud sdk
 
+        :param request_id: 请求ID
+        :type request_id: str
+        :param connect_gateway: 
+        :type connect_gateway: :class:`huaweicloudsdkdc.v3.ConnectGatewayResponse`
         """
         
         super(UpdateConnectGatewayResponse, self).__init__()
+
+        self._request_id = None
+        self._connect_gateway = None
         self.discriminator = None
+
+        if request_id is not None:
+            self.request_id = request_id
+        if connect_gateway is not None:
+            self.connect_gateway = connect_gateway
+
+    @property
+    def request_id(self):
+        """Gets the request_id of this UpdateConnectGatewayResponse.
+
+        请求ID
+
+        :return: The request_id of this UpdateConnectGatewayResponse.
+        :rtype: str
+        """
+        return self._request_id
+
+    @request_id.setter
+    def request_id(self, request_id):
+        """Sets the request_id of this UpdateConnectGatewayResponse.
+
+        请求ID
+
+        :param request_id: The request_id of this UpdateConnectGatewayResponse.
+        :type request_id: str
+        """
+        self._request_id = request_id
+
+    @property
+    def connect_gateway(self):
+        """Gets the connect_gateway of this UpdateConnectGatewayResponse.
+
+        :return: The connect_gateway of this UpdateConnectGatewayResponse.
+        :rtype: :class:`huaweicloudsdkdc.v3.ConnectGatewayResponse`
+        """
+        return self._connect_gateway
+
+    @connect_gateway.setter
+    def connect_gateway(self, connect_gateway):
+        """Sets the connect_gateway of this UpdateConnectGatewayResponse.
+
+        :param connect_gateway: The connect_gateway of this UpdateConnectGatewayResponse.
+        :type connect_gateway: :class:`huaweicloudsdkdc.v3.ConnectGatewayResponse`
+        """
+        self._connect_gateway = connect_gateway
 
     def to_dict(self):
         """Returns the model properties as a dict"""

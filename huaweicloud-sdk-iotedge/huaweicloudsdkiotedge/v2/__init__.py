@@ -7,6 +7,7 @@ from huaweicloudsdkiotedge.v2.iotedge_async_client import IoTEdgeAsyncClient
 
 from huaweicloudsdkiotedge.v2.model.access_roma_brief_info import AccessRomaBriefInfo
 from huaweicloudsdkiotedge.v2.model.access_roma_info import AccessRomaInfo
+from huaweicloudsdkiotedge.v2.model.active_control_rsp_dto import ActiveControlRspDTO
 from huaweicloudsdkiotedge.v2.model.active_standby_config_dto import ActiveStandbyConfigDTO
 from huaweicloudsdkiotedge.v2.model.add_app_configs_templates_request import AddAppConfigsTemplatesRequest
 from huaweicloudsdkiotedge.v2.model.add_app_configs_templates_response import AddAppConfigsTemplatesResponse
@@ -155,6 +156,8 @@ from huaweicloudsdkiotedge.v2.model.list_na_authorized_nodes_request import List
 from huaweicloudsdkiotedge.v2.model.list_na_authorized_nodes_response import ListNaAuthorizedNodesResponse
 from huaweicloudsdkiotedge.v2.model.list_nas_request import ListNasRequest
 from huaweicloudsdkiotedge.v2.model.list_nas_response import ListNasResponse
+from huaweicloudsdkiotedge.v2.model.list_property_active_controls_request import ListPropertyActiveControlsRequest
+from huaweicloudsdkiotedge.v2.model.list_property_active_controls_response import ListPropertyActiveControlsResponse
 from huaweicloudsdkiotedge.v2.model.list_routes_request import ListRoutesRequest
 from huaweicloudsdkiotedge.v2.model.list_routes_response import ListRoutesResponse
 from huaweicloudsdkiotedge.v2.model.log_config_dto import LogConfigDTO

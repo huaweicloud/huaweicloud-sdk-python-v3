@@ -495,6 +495,73 @@ class DcsClient(Client):
 
         return http_info
 
+    def change_nodes_start_stop_status(self, request):
+        """指定实例节点启停开关
+
+        实例节点启停。执行节点关机操作前的24小时内，需要对实例（单机实例除外）进行数据备份。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ChangeNodesStartStopStatus
+        :type request: :class:`huaweicloudsdkdcs.v2.ChangeNodesStartStopStatusRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.ChangeNodesStartStopStatusResponse`
+        """
+        http_info = self._change_nodes_start_stop_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def change_nodes_start_stop_status_invoker(self, request):
+        http_info = self._change_nodes_start_stop_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_nodes_start_stop_status_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/nodes/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeNodesStartStopStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def copy_instance(self, request):
         """备份指定实例
 
@@ -1897,6 +1964,71 @@ class DcsClient(Client):
 
         return http_info
 
+    def delete_instance_bandwidth_auto_scaling_policy(self, request):
+        """删除实例带宽弹性伸缩策略
+
+        删除实例带宽弹性伸缩策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteInstanceBandwidthAutoScalingPolicy
+        :type request: :class:`huaweicloudsdkdcs.v2.DeleteInstanceBandwidthAutoScalingPolicyRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.DeleteInstanceBandwidthAutoScalingPolicyResponse`
+        """
+        http_info = self._delete_instance_bandwidth_auto_scaling_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_instance_bandwidth_auto_scaling_policy_invoker(self, request):
+        http_info = self._delete_instance_bandwidth_auto_scaling_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_instance_bandwidth_auto_scaling_policy_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/autoscaling-policy/bandwidth",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteInstanceBandwidthAutoScalingPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_ip_from_domain_name(self, request):
         """域名摘除IP
 
@@ -2017,6 +2149,71 @@ class DcsClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_public_ip(self, request):
+        """关闭实例公网访问
+
+        关闭实例公网访问。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeletePublicIp
+        :type request: :class:`huaweicloudsdkdcs.v2.DeletePublicIpRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.DeletePublicIpResponse`
+        """
+        http_info = self._delete_public_ip_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_public_ip_invoker(self, request):
+        http_info = self._delete_public_ip_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_public_ip_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/public-ip",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePublicIpResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -5330,6 +5527,71 @@ class DcsClient(Client):
 
         return http_info
 
+    def show_bandwidths(self, request):
+        """获取实例分片带宽
+
+        获取实例各个分片带宽。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowBandwidths
+        :type request: :class:`huaweicloudsdkdcs.v2.ShowBandwidthsRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.ShowBandwidthsResponse`
+        """
+        http_info = self._show_bandwidths_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_bandwidths_invoker(self, request):
+        http_info = self._show_bandwidths_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_bandwidths_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/bandwidths",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBandwidthsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_bigkey_autoscan_config(self, request):
         """查询大key自动分析配置
 
@@ -5994,6 +6256,71 @@ class DcsClient(Client):
 
         return http_info
 
+    def show_instance_bandwidth_auto_scaling_policy(self, request):
+        """查询实例带宽弹性伸缩策略
+
+        查询实例带宽弹性伸缩策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowInstanceBandwidthAutoScalingPolicy
+        :type request: :class:`huaweicloudsdkdcs.v2.ShowInstanceBandwidthAutoScalingPolicyRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.ShowInstanceBandwidthAutoScalingPolicyResponse`
+        """
+        http_info = self._show_instance_bandwidth_auto_scaling_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_instance_bandwidth_auto_scaling_policy_invoker(self, request):
+        http_info = self._show_instance_bandwidth_auto_scaling_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_instance_bandwidth_auto_scaling_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/autoscaling-policy/bandwidth",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInstanceBandwidthAutoScalingPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_instance_ssl_detail(self, request):
         """查询实例SSL信息
 
@@ -6019,6 +6346,71 @@ class DcsClient(Client):
             "resource_path": "/v2/{project_id}/instances/{instance_id}/ssl",
             "request_type": request.__class__.__name__,
             "response_type": "ShowInstanceSslDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_instance_version(self, request):
+        """根据实例ID获取实例内核版本信息
+
+        获取对应实例内核版本号。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowInstanceVersion
+        :type request: :class:`huaweicloudsdkdcs.v2.ShowInstanceVersionRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.ShowInstanceVersionResponse`
+        """
+        http_info = self._show_instance_version_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_instance_version_invoker(self, request):
+        http_info = self._show_instance_version_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_instance_version_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/version",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInstanceVersionResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -6920,6 +7312,73 @@ class DcsClient(Client):
 
         return http_info
 
+    def update_bandwidth(self, request):
+        """修改实例分片带宽
+
+        修改实例分片带宽。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateBandwidth
+        :type request: :class:`huaweicloudsdkdcs.v2.UpdateBandwidthRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.UpdateBandwidthResponse`
+        """
+        http_info = self._update_bandwidth_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_bandwidth_invoker(self, request):
+        http_info = self._update_bandwidth_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_bandwidth_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/bandwidths",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateBandwidthResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_bigkey_autoscan_config(self, request):
         """设置大key自动分析配置
 
@@ -7454,6 +7913,73 @@ class DcsClient(Client):
 
         return http_info
 
+    def update_instance_bandwidth_auto_scaling_policy(self, request):
+        """更新实例带宽弹性伸缩策略
+
+        更新实例带宽弹性伸缩策略。暂不支持实例带宽自动回缩。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateInstanceBandwidthAutoScalingPolicy
+        :type request: :class:`huaweicloudsdkdcs.v2.UpdateInstanceBandwidthAutoScalingPolicyRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.UpdateInstanceBandwidthAutoScalingPolicyResponse`
+        """
+        http_info = self._update_instance_bandwidth_auto_scaling_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_instance_bandwidth_auto_scaling_policy_invoker(self, request):
+        http_info = self._update_instance_bandwidth_auto_scaling_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_instance_bandwidth_auto_scaling_policy_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/autoscaling-policy/bandwidth",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateInstanceBandwidthAutoScalingPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_instance_config(self, request):
         """异步修改实例配置参数
 
@@ -7655,6 +8181,73 @@ class DcsClient(Client):
 
         return http_info
 
+    def update_public_ip(self, request):
+        """开启/修改实例公网访问
+
+        开启/修改实例公网访问。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdatePublicIp
+        :type request: :class:`huaweicloudsdkdcs.v2.UpdatePublicIpRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.UpdatePublicIpResponse`
+        """
+        http_info = self._update_public_ip_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_public_ip_invoker(self, request):
+        http_info = self._update_public_ip_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_public_ip_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/public-ip",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePublicIpResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_slave_priority(self, request):
         """设置备节点优先级
 
@@ -7751,6 +8344,73 @@ class DcsClient(Client):
             "resource_path": "/v2/{project_id}/instances/{instance_id}/ssl",
             "request_type": request.__class__.__name__,
             "response_type": "UpdateSslSwitchResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def upgrade_instance_minor_version(self, request):
+        """升级实例小版本
+
+        升级实例小版本。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpgradeInstanceMinorVersion
+        :type request: :class:`huaweicloudsdkdcs.v2.UpgradeInstanceMinorVersionRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.UpgradeInstanceMinorVersionResponse`
+        """
+        http_info = self._upgrade_instance_minor_version_http_info(request)
+        return self._call_api(**http_info)
+
+    def upgrade_instance_minor_version_invoker(self, request):
+        http_info = self._upgrade_instance_minor_version_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _upgrade_instance_minor_version_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/minor-version/upgrade",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpgradeInstanceMinorVersionResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

@@ -31,7 +31,7 @@ class UpdateGdgwRouteTableRequest:
 
         The model defined in huaweicloud sdk
 
-        :param gdgw_id: 全球接入网关ID
+        :param gdgw_id: 全域接入网关ID
         :type gdgw_id: str
         :param body: Body of the UpdateGdgwRouteTableRequest
         :type body: :class:`huaweicloudsdkdc.v3.UpdateGdgwRoutetableRequestBody`
@@ -51,7 +51,7 @@ class UpdateGdgwRouteTableRequest:
     def gdgw_id(self):
         """Gets the gdgw_id of this UpdateGdgwRouteTableRequest.
 
-        全球接入网关ID
+        全域接入网关ID
 
         :return: The gdgw_id of this UpdateGdgwRouteTableRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class UpdateGdgwRouteTableRequest:
     def gdgw_id(self, gdgw_id):
         """Sets the gdgw_id of this UpdateGdgwRouteTableRequest.
 
-        全球接入网关ID
+        全域接入网关ID
 
         :param gdgw_id: The gdgw_id of this UpdateGdgwRouteTableRequest.
         :type gdgw_id: str

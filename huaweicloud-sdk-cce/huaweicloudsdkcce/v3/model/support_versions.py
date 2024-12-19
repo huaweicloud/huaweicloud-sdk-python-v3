@@ -18,15 +18,17 @@ class SupportVersions:
 
     openapi_types = {
         'cluster_type': 'str',
-        'cluster_version': 'list[str]'
+        'cluster_version': 'list[str]',
+        'category': 'list[str]'
     }
 
     attribute_map = {
         'cluster_type': 'clusterType',
-        'cluster_version': 'clusterVersion'
+        'cluster_version': 'clusterVersion',
+        'category': 'category'
     }
 
-    def __init__(self, cluster_type=None, cluster_version=None):
+    def __init__(self, cluster_type=None, cluster_version=None, category=None):
         """SupportVersions
 
         The model defined in huaweicloud sdk
@@ -35,16 +37,21 @@ class SupportVersions:
         :type cluster_type: str
         :param cluster_version: 支持的集群版本（正则表达式）
         :type cluster_version: list[str]
+        :param category: 作用的集群类型 **取值范围：** - CCE：CCE Standard集群 - Turbo：CCE Turbo集群 - Autopilot：CCE Autopilot集群  **默认取值** 为空时默认为CCE Standard，CCE Turbo集群
+        :type category: list[str]
         """
         
         
 
         self._cluster_type = None
         self._cluster_version = None
+        self._category = None
         self.discriminator = None
 
         self.cluster_type = cluster_type
         self.cluster_version = cluster_version
+        if category is not None:
+            self.category = category
 
     @property
     def cluster_type(self):
@@ -89,6 +96,28 @@ class SupportVersions:
         :type cluster_version: list[str]
         """
         self._cluster_version = cluster_version
+
+    @property
+    def category(self):
+        """Gets the category of this SupportVersions.
+
+        作用的集群类型 **取值范围：** - CCE：CCE Standard集群 - Turbo：CCE Turbo集群 - Autopilot：CCE Autopilot集群  **默认取值** 为空时默认为CCE Standard，CCE Turbo集群
+
+        :return: The category of this SupportVersions.
+        :rtype: list[str]
+        """
+        return self._category
+
+    @category.setter
+    def category(self, category):
+        """Sets the category of this SupportVersions.
+
+        作用的集群类型 **取值范围：** - CCE：CCE Standard集群 - Turbo：CCE Turbo集群 - Autopilot：CCE Autopilot集群  **默认取值** 为空时默认为CCE Standard，CCE Turbo集群
+
+        :param category: The category of this SupportVersions.
+        :type category: list[str]
+        """
+        self._category = category
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -18,6 +18,7 @@ class CreateVirtualGateway:
 
     openapi_types = {
         'vpc_id': 'str',
+        'enterprise_router_id': 'str',
         'name': 'str',
         'description': 'str',
         'local_ep_group': 'list[str]',
@@ -29,6 +30,7 @@ class CreateVirtualGateway:
 
     attribute_map = {
         'vpc_id': 'vpc_id',
+        'enterprise_router_id': 'enterprise_router_id',
         'name': 'name',
         'description': 'description',
         'local_ep_group': 'local_ep_group',
@@ -38,22 +40,24 @@ class CreateVirtualGateway:
         'tags': 'tags'
     }
 
-    def __init__(self, vpc_id=None, name=None, description=None, local_ep_group=None, local_ep_group_ipv6=None, bgp_asn=None, enterprise_project_id=None, tags=None):
+    def __init__(self, vpc_id=None, enterprise_router_id=None, name=None, description=None, local_ep_group=None, local_ep_group_ipv6=None, bgp_asn=None, enterprise_project_id=None, tags=None):
         """CreateVirtualGateway
 
         The model defined in huaweicloud sdk
 
-        :param vpc_id: 虚拟网关接入的VPC的ID
+        :param vpc_id: 虚拟网关接入的VPC的ID[，当选择创建接入VPC的虚拟网关时必选。](tag:dt)
         :type vpc_id: str
+        :param enterprise_router_id: 虚拟网关接入的ER的ID，当选择创建接入ER的虚拟网关时必选。
+        :type enterprise_router_id: str
         :param name: 虚拟网关名字
         :type name: str
         :param description: 虚拟网关的描述信息
         :type description: str
-        :param local_ep_group: 虚拟网关到访问云上服务IPv4子网列表，通常是vpc的cidrs
+        :param local_ep_group: 虚拟网关到访问云上服务IPv4子网列表，通常是vpc的cidrs[，当选择创建接入VPC的虚拟网关时必选。](tag:dt)
         :type local_ep_group: list[str]
         :param local_ep_group_ipv6: 预留字段用于虚拟网关到访问云上服务IPv6子网列表，通常是vpc的cidrs
         :type local_ep_group_ipv6: list[str]
-        :param bgp_asn: 虚拟网关本地的BGP自冶域号(asn)
+        :param bgp_asn: 虚拟网关本地的BGP自治域号(asn)
         :type bgp_asn: int
         :param enterprise_project_id: 实例所属企业项目ID
         :type enterprise_project_id: str
@@ -64,6 +68,7 @@ class CreateVirtualGateway:
         
 
         self._vpc_id = None
+        self._enterprise_router_id = None
         self._name = None
         self._description = None
         self._local_ep_group = None
@@ -74,6 +79,8 @@ class CreateVirtualGateway:
         self.discriminator = None
 
         self.vpc_id = vpc_id
+        if enterprise_router_id is not None:
+            self.enterprise_router_id = enterprise_router_id
         if name is not None:
             self.name = name
         if description is not None:
@@ -92,7 +99,7 @@ class CreateVirtualGateway:
     def vpc_id(self):
         """Gets the vpc_id of this CreateVirtualGateway.
 
-        虚拟网关接入的VPC的ID
+        虚拟网关接入的VPC的ID[，当选择创建接入VPC的虚拟网关时必选。](tag:dt)
 
         :return: The vpc_id of this CreateVirtualGateway.
         :rtype: str
@@ -103,12 +110,34 @@ class CreateVirtualGateway:
     def vpc_id(self, vpc_id):
         """Sets the vpc_id of this CreateVirtualGateway.
 
-        虚拟网关接入的VPC的ID
+        虚拟网关接入的VPC的ID[，当选择创建接入VPC的虚拟网关时必选。](tag:dt)
 
         :param vpc_id: The vpc_id of this CreateVirtualGateway.
         :type vpc_id: str
         """
         self._vpc_id = vpc_id
+
+    @property
+    def enterprise_router_id(self):
+        """Gets the enterprise_router_id of this CreateVirtualGateway.
+
+        虚拟网关接入的ER的ID，当选择创建接入ER的虚拟网关时必选。
+
+        :return: The enterprise_router_id of this CreateVirtualGateway.
+        :rtype: str
+        """
+        return self._enterprise_router_id
+
+    @enterprise_router_id.setter
+    def enterprise_router_id(self, enterprise_router_id):
+        """Sets the enterprise_router_id of this CreateVirtualGateway.
+
+        虚拟网关接入的ER的ID，当选择创建接入ER的虚拟网关时必选。
+
+        :param enterprise_router_id: The enterprise_router_id of this CreateVirtualGateway.
+        :type enterprise_router_id: str
+        """
+        self._enterprise_router_id = enterprise_router_id
 
     @property
     def name(self):
@@ -158,7 +187,7 @@ class CreateVirtualGateway:
     def local_ep_group(self):
         """Gets the local_ep_group of this CreateVirtualGateway.
 
-        虚拟网关到访问云上服务IPv4子网列表，通常是vpc的cidrs
+        虚拟网关到访问云上服务IPv4子网列表，通常是vpc的cidrs[，当选择创建接入VPC的虚拟网关时必选。](tag:dt)
 
         :return: The local_ep_group of this CreateVirtualGateway.
         :rtype: list[str]
@@ -169,7 +198,7 @@ class CreateVirtualGateway:
     def local_ep_group(self, local_ep_group):
         """Sets the local_ep_group of this CreateVirtualGateway.
 
-        虚拟网关到访问云上服务IPv4子网列表，通常是vpc的cidrs
+        虚拟网关到访问云上服务IPv4子网列表，通常是vpc的cidrs[，当选择创建接入VPC的虚拟网关时必选。](tag:dt)
 
         :param local_ep_group: The local_ep_group of this CreateVirtualGateway.
         :type local_ep_group: list[str]
@@ -202,7 +231,7 @@ class CreateVirtualGateway:
     def bgp_asn(self):
         """Gets the bgp_asn of this CreateVirtualGateway.
 
-        虚拟网关本地的BGP自冶域号(asn)
+        虚拟网关本地的BGP自治域号(asn)
 
         :return: The bgp_asn of this CreateVirtualGateway.
         :rtype: int
@@ -213,7 +242,7 @@ class CreateVirtualGateway:
     def bgp_asn(self, bgp_asn):
         """Sets the bgp_asn of this CreateVirtualGateway.
 
-        虚拟网关本地的BGP自冶域号(asn)
+        虚拟网关本地的BGP自治域号(asn)
 
         :param bgp_asn: The bgp_asn of this CreateVirtualGateway.
         :type bgp_asn: int

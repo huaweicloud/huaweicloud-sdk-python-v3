@@ -94,8 +94,7 @@ class CreateWholeImageRequestBody:
             self.enterprise_project_id = enterprise_project_id
         if image_tags is not None:
             self.image_tags = image_tags
-        if instance_id is not None:
-            self.instance_id = instance_id
+        self.instance_id = instance_id
         self.name = name
         if tags is not None:
             self.tags = tags

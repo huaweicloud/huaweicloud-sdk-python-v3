@@ -79,13 +79,13 @@ class CreateVirtualInterface:
         :type name: str
         :param description: 虚拟接口描述信息
         :type description: str
-        :param direct_connect_id: 虚拟接口关联的物理专线ID
+        :param direct_connect_id: 虚拟接口关联的物理专线ID。在创建虚拟接口时，需要关联direct_connect_id或lag_id，当LAG功能在当前局点不支持时，该参数为必选。
         :type direct_connect_id: str
         :param type: 虚拟接口的类型,private
         :type type: str
         :param service_type: 接入网关类型：VGW/GDGW/LGW
         :type service_type: str
-        :param vlan: 对接客户侧vlan
+        :param vlan: 对接客户侧vlan。当关联物理连接选择托管专线时，vlan需要和托管专线保持一致。
         :type vlan: int
         :param bandwidth: 虚拟接口接入带宽
         :type bandwidth: int
@@ -99,7 +99,7 @@ class CreateVirtualInterface:
         :type local_gateway_v6_ip: str
         :param remote_gateway_v6_ip: 客户侧网关IPv6接口地址,如果address_family是IPv6，是必选参数
         :type remote_gateway_v6_ip: str
-        :param vgw_id: 虚拟风关连接的虚拟网关的ID
+        :param vgw_id: 虚拟接口连接的虚拟网关的ID
         :type vgw_id: str
         :param route_mode: 路由模式：static/bgp
         :type route_mode: str
@@ -111,9 +111,9 @@ class CreateVirtualInterface:
         :type remote_ep_group: list[str]
         :param service_ep_group: 访问公网服务的子网列表
         :type service_ep_group: list[str]
-        :param enable_bfd: 是否使能bfd功能：true或false
+        :param enable_bfd: 是否使能bfd功能：true或false。[（预留字段暂不支持）](tag:dt)
         :type enable_bfd: bool
-        :param enable_nqa: 是否使能nqa功能：true或false
+        :param enable_nqa: 是否使能nqa功能：true或false。[（预留字段暂不支持）](tag:dt)
         :type enable_nqa: bool
         :param lag_id: 虚拟接口关联的链路聚合组ID
         :type lag_id: str
@@ -244,7 +244,7 @@ class CreateVirtualInterface:
     def direct_connect_id(self):
         """Gets the direct_connect_id of this CreateVirtualInterface.
 
-        虚拟接口关联的物理专线ID
+        虚拟接口关联的物理专线ID。在创建虚拟接口时，需要关联direct_connect_id或lag_id，当LAG功能在当前局点不支持时，该参数为必选。
 
         :return: The direct_connect_id of this CreateVirtualInterface.
         :rtype: str
@@ -255,7 +255,7 @@ class CreateVirtualInterface:
     def direct_connect_id(self, direct_connect_id):
         """Sets the direct_connect_id of this CreateVirtualInterface.
 
-        虚拟接口关联的物理专线ID
+        虚拟接口关联的物理专线ID。在创建虚拟接口时，需要关联direct_connect_id或lag_id，当LAG功能在当前局点不支持时，该参数为必选。
 
         :param direct_connect_id: The direct_connect_id of this CreateVirtualInterface.
         :type direct_connect_id: str
@@ -310,7 +310,7 @@ class CreateVirtualInterface:
     def vlan(self):
         """Gets the vlan of this CreateVirtualInterface.
 
-        对接客户侧vlan
+        对接客户侧vlan。当关联物理连接选择托管专线时，vlan需要和托管专线保持一致。
 
         :return: The vlan of this CreateVirtualInterface.
         :rtype: int
@@ -321,7 +321,7 @@ class CreateVirtualInterface:
     def vlan(self, vlan):
         """Sets the vlan of this CreateVirtualInterface.
 
-        对接客户侧vlan
+        对接客户侧vlan。当关联物理连接选择托管专线时，vlan需要和托管专线保持一致。
 
         :param vlan: The vlan of this CreateVirtualInterface.
         :type vlan: int
@@ -464,7 +464,7 @@ class CreateVirtualInterface:
     def vgw_id(self):
         """Gets the vgw_id of this CreateVirtualInterface.
 
-        虚拟风关连接的虚拟网关的ID
+        虚拟接口连接的虚拟网关的ID
 
         :return: The vgw_id of this CreateVirtualInterface.
         :rtype: str
@@ -475,7 +475,7 @@ class CreateVirtualInterface:
     def vgw_id(self, vgw_id):
         """Sets the vgw_id of this CreateVirtualInterface.
 
-        虚拟风关连接的虚拟网关的ID
+        虚拟接口连接的虚拟网关的ID
 
         :param vgw_id: The vgw_id of this CreateVirtualInterface.
         :type vgw_id: str
@@ -596,7 +596,7 @@ class CreateVirtualInterface:
     def enable_bfd(self):
         """Gets the enable_bfd of this CreateVirtualInterface.
 
-        是否使能bfd功能：true或false
+        是否使能bfd功能：true或false。[（预留字段暂不支持）](tag:dt)
 
         :return: The enable_bfd of this CreateVirtualInterface.
         :rtype: bool
@@ -607,7 +607,7 @@ class CreateVirtualInterface:
     def enable_bfd(self, enable_bfd):
         """Sets the enable_bfd of this CreateVirtualInterface.
 
-        是否使能bfd功能：true或false
+        是否使能bfd功能：true或false。[（预留字段暂不支持）](tag:dt)
 
         :param enable_bfd: The enable_bfd of this CreateVirtualInterface.
         :type enable_bfd: bool
@@ -618,7 +618,7 @@ class CreateVirtualInterface:
     def enable_nqa(self):
         """Gets the enable_nqa of this CreateVirtualInterface.
 
-        是否使能nqa功能：true或false
+        是否使能nqa功能：true或false。[（预留字段暂不支持）](tag:dt)
 
         :return: The enable_nqa of this CreateVirtualInterface.
         :rtype: bool
@@ -629,7 +629,7 @@ class CreateVirtualInterface:
     def enable_nqa(self, enable_nqa):
         """Sets the enable_nqa of this CreateVirtualInterface.
 
-        是否使能nqa功能：true或false
+        是否使能nqa功能：true或false。[（预留字段暂不支持）](tag:dt)
 
         :param enable_nqa: The enable_nqa of this CreateVirtualInterface.
         :type enable_nqa: bool

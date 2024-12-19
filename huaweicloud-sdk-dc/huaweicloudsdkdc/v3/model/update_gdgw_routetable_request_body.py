@@ -18,7 +18,7 @@ class UpdateGdgwRoutetableRequestBody:
 
     openapi_types = {
         'dry_run': 'bool',
-        'gdgw_routetable': 'UpdateGdgwRoutetableRequestBodyGdgwRoutetable'
+        'gdgw_routetable': 'GdgwRouteTableRequest'
     }
 
     attribute_map = {
@@ -31,10 +31,10 @@ class UpdateGdgwRoutetableRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param dry_run: 空运行：true-是，false-否
+        :param dry_run: 是否dry run模式执行
         :type dry_run: bool
         :param gdgw_routetable: 
-        :type gdgw_routetable: :class:`huaweicloudsdkdc.v3.UpdateGdgwRoutetableRequestBodyGdgwRoutetable`
+        :type gdgw_routetable: :class:`huaweicloudsdkdc.v3.GdgwRouteTableRequest`
         """
         
         
@@ -52,7 +52,7 @@ class UpdateGdgwRoutetableRequestBody:
     def dry_run(self):
         """Gets the dry_run of this UpdateGdgwRoutetableRequestBody.
 
-        空运行：true-是，false-否
+        是否dry run模式执行
 
         :return: The dry_run of this UpdateGdgwRoutetableRequestBody.
         :rtype: bool
@@ -63,7 +63,7 @@ class UpdateGdgwRoutetableRequestBody:
     def dry_run(self, dry_run):
         """Sets the dry_run of this UpdateGdgwRoutetableRequestBody.
 
-        空运行：true-是，false-否
+        是否dry run模式执行
 
         :param dry_run: The dry_run of this UpdateGdgwRoutetableRequestBody.
         :type dry_run: bool
@@ -75,7 +75,7 @@ class UpdateGdgwRoutetableRequestBody:
         """Gets the gdgw_routetable of this UpdateGdgwRoutetableRequestBody.
 
         :return: The gdgw_routetable of this UpdateGdgwRoutetableRequestBody.
-        :rtype: :class:`huaweicloudsdkdc.v3.UpdateGdgwRoutetableRequestBodyGdgwRoutetable`
+        :rtype: :class:`huaweicloudsdkdc.v3.GdgwRouteTableRequest`
         """
         return self._gdgw_routetable
 
@@ -84,7 +84,7 @@ class UpdateGdgwRoutetableRequestBody:
         """Sets the gdgw_routetable of this UpdateGdgwRoutetableRequestBody.
 
         :param gdgw_routetable: The gdgw_routetable of this UpdateGdgwRoutetableRequestBody.
-        :type gdgw_routetable: :class:`huaweicloudsdkdc.v3.UpdateGdgwRoutetableRequestBodyGdgwRoutetable`
+        :type gdgw_routetable: :class:`huaweicloudsdkdc.v3.GdgwRouteTableRequest`
         """
         self._gdgw_routetable = gdgw_routetable
 

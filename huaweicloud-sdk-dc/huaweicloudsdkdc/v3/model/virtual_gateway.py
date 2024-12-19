@@ -19,6 +19,7 @@ class VirtualGateway:
     openapi_types = {
         'id': 'str',
         'vpc_id': 'str',
+        'enterprise_router_id': 'str',
         'tenant_id': 'str',
         'name': 'str',
         'description': 'str',
@@ -38,6 +39,7 @@ class VirtualGateway:
     attribute_map = {
         'id': 'id',
         'vpc_id': 'vpc_id',
+        'enterprise_router_id': 'enterprise_router_id',
         'tenant_id': 'tenant_id',
         'name': 'name',
         'description': 'description',
@@ -54,7 +56,7 @@ class VirtualGateway:
         'tags': 'tags'
     }
 
-    def __init__(self, id=None, vpc_id=None, tenant_id=None, name=None, description=None, type=None, local_ep_group=None, local_ep_group_ipv6=None, admin_state_up=None, status=None, bgp_asn=None, enterprise_project_id=None, device_id=None, redundant_device_id=None, public_border_group=None, tags=None):
+    def __init__(self, id=None, vpc_id=None, enterprise_router_id=None, tenant_id=None, name=None, description=None, type=None, local_ep_group=None, local_ep_group_ipv6=None, admin_state_up=None, status=None, bgp_asn=None, enterprise_project_id=None, device_id=None, redundant_device_id=None, public_border_group=None, tags=None):
         """VirtualGateway
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class VirtualGateway:
         :type id: str
         :param vpc_id: 虚拟网关接入的VPC的ID
         :type vpc_id: str
+        :param enterprise_router_id: 虚拟网关接入的ER的ID
+        :type enterprise_router_id: str
         :param tenant_id: 实例所属项目ID。
         :type tenant_id: str
         :param name: 虚拟网关的名字
@@ -97,6 +101,7 @@ class VirtualGateway:
 
         self._id = None
         self._vpc_id = None
+        self._enterprise_router_id = None
         self._tenant_id = None
         self._name = None
         self._description = None
@@ -117,6 +122,8 @@ class VirtualGateway:
             self.id = id
         if vpc_id is not None:
             self.vpc_id = vpc_id
+        if enterprise_router_id is not None:
+            self.enterprise_router_id = enterprise_router_id
         if tenant_id is not None:
             self.tenant_id = tenant_id
         if name is not None:
@@ -189,6 +196,28 @@ class VirtualGateway:
         :type vpc_id: str
         """
         self._vpc_id = vpc_id
+
+    @property
+    def enterprise_router_id(self):
+        """Gets the enterprise_router_id of this VirtualGateway.
+
+        虚拟网关接入的ER的ID
+
+        :return: The enterprise_router_id of this VirtualGateway.
+        :rtype: str
+        """
+        return self._enterprise_router_id
+
+    @enterprise_router_id.setter
+    def enterprise_router_id(self, enterprise_router_id):
+        """Sets the enterprise_router_id of this VirtualGateway.
+
+        虚拟网关接入的ER的ID
+
+        :param enterprise_router_id: The enterprise_router_id of this VirtualGateway.
+        :type enterprise_router_id: str
+        """
+        self._enterprise_router_id = enterprise_router_id
 
     @property
     def tenant_id(self):

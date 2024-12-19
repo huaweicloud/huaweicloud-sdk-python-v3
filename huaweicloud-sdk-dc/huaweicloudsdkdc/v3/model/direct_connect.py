@@ -151,11 +151,11 @@ class DirectConnect:
         :type admin_state_up: bool
         :param vlan: 为托管hosted物理专线分配的vlan。
         :type vlan: int
-        :param status: 资源状态，合法值是： ACTIVE：专线已经开通完成且线路处于正常状态 DOWN：专线对应的端口处于down的状态，可能存在线路故障等异常。 BUILD：申请专线正在施工建设中 ERROR：专线配置异常，请联系客服解决相关问题。 PENDING_DELETE：正在删除 DELETED：已删除 APPLY：申请开通 DENY：客户需求无法满足，拒绝工勘。 PENDING_PAY：待支付 PAID：已支付 PENDING_SURVEY：待工勘
+        :param status: 资源状态，合法值是： ACTIVE：专线已经开通完成且线路处于正常状态 DOWN：专线对应的端口处于down的状态，可能存在线路故障等异常。 BUILD：申请专线正在施工建设中 ERROR：专线配置异常，请联系客服解决相关问题。 PENDING_DELETE：正在删除 DELETED：已删除 APPLY：申请开通 DENY：客户需求无法满足，拒绝工勘。 PENDING_PAY：待支付 PAID：已支付 PENDING_SURVEY：待工勘 LEASED_LINE_DELIVERY：运营商施工
         :type status: str
-        :param apply_time: 物理专线的申请时间
+        :param apply_time: 物理专线的申请时间。采用UTC时间格式，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ
         :type apply_time: datetime
-        :param create_time: 物理专线的创建时间
+        :param create_time: 物理专线的创建时间。采用UTC时间格式，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ
         :type create_time: datetime
         :param provider_status: 物理专线的运营商操作状态，合法值是：ACTIVE， DOWN
         :type provider_status: str
@@ -175,11 +175,11 @@ class DirectConnect:
         :type period_num: int
         :param vgw_type: 专线要求的网关类型
         :type vgw_type: str
-        :param lag_id: 物理专线归属的链路聚合组(lag）的ID
+        :param lag_id: 物理专线归属的链路聚合组（lag）的ID
         :type lag_id: str
-        :param signed_agreement_status: 专线协议的签暑状态
+        :param signed_agreement_status: 专线协议的签署状态
         :type signed_agreement_status: str
-        :param signed_agreement_time: 专线协议的签暑时间
+        :param signed_agreement_time: 专线协议的签署时间。采用UTC时间格式，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ
         :type signed_agreement_time: datetime
         :param enterprise_project_id: 实例所属企业项目ID
         :type enterprise_project_id: str
@@ -189,7 +189,7 @@ class DirectConnect:
         :type locales: :class:`huaweicloudsdkdc.v3.LocalesBody`
         :param support_feature: 用户专线可支持的特性列表[（功能暂不支持）](tag:dt)
         :type support_feature: list[str]
-        :param ies_id: 归属的IES站点的ID[（功能暂不支持）](tag:dt)
+        :param ies_id: 归属的CloudPond站点的ID[（功能暂不支持）](tag:dt)
         :type ies_id: str
         :param reason: 如果专线资源的状态是Error的情况下，该参数会显示相关错误信息。[（功能暂不支持）](tag:dt)
         :type reason: str
@@ -697,7 +697,7 @@ class DirectConnect:
     def status(self):
         """Gets the status of this DirectConnect.
 
-        资源状态，合法值是： ACTIVE：专线已经开通完成且线路处于正常状态 DOWN：专线对应的端口处于down的状态，可能存在线路故障等异常。 BUILD：申请专线正在施工建设中 ERROR：专线配置异常，请联系客服解决相关问题。 PENDING_DELETE：正在删除 DELETED：已删除 APPLY：申请开通 DENY：客户需求无法满足，拒绝工勘。 PENDING_PAY：待支付 PAID：已支付 PENDING_SURVEY：待工勘
+        资源状态，合法值是： ACTIVE：专线已经开通完成且线路处于正常状态 DOWN：专线对应的端口处于down的状态，可能存在线路故障等异常。 BUILD：申请专线正在施工建设中 ERROR：专线配置异常，请联系客服解决相关问题。 PENDING_DELETE：正在删除 DELETED：已删除 APPLY：申请开通 DENY：客户需求无法满足，拒绝工勘。 PENDING_PAY：待支付 PAID：已支付 PENDING_SURVEY：待工勘 LEASED_LINE_DELIVERY：运营商施工
 
         :return: The status of this DirectConnect.
         :rtype: str
@@ -708,7 +708,7 @@ class DirectConnect:
     def status(self, status):
         """Sets the status of this DirectConnect.
 
-        资源状态，合法值是： ACTIVE：专线已经开通完成且线路处于正常状态 DOWN：专线对应的端口处于down的状态，可能存在线路故障等异常。 BUILD：申请专线正在施工建设中 ERROR：专线配置异常，请联系客服解决相关问题。 PENDING_DELETE：正在删除 DELETED：已删除 APPLY：申请开通 DENY：客户需求无法满足，拒绝工勘。 PENDING_PAY：待支付 PAID：已支付 PENDING_SURVEY：待工勘
+        资源状态，合法值是： ACTIVE：专线已经开通完成且线路处于正常状态 DOWN：专线对应的端口处于down的状态，可能存在线路故障等异常。 BUILD：申请专线正在施工建设中 ERROR：专线配置异常，请联系客服解决相关问题。 PENDING_DELETE：正在删除 DELETED：已删除 APPLY：申请开通 DENY：客户需求无法满足，拒绝工勘。 PENDING_PAY：待支付 PAID：已支付 PENDING_SURVEY：待工勘 LEASED_LINE_DELIVERY：运营商施工
 
         :param status: The status of this DirectConnect.
         :type status: str
@@ -719,7 +719,7 @@ class DirectConnect:
     def apply_time(self):
         """Gets the apply_time of this DirectConnect.
 
-        物理专线的申请时间
+        物理专线的申请时间。采用UTC时间格式，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ
 
         :return: The apply_time of this DirectConnect.
         :rtype: datetime
@@ -730,7 +730,7 @@ class DirectConnect:
     def apply_time(self, apply_time):
         """Sets the apply_time of this DirectConnect.
 
-        物理专线的申请时间
+        物理专线的申请时间。采用UTC时间格式，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ
 
         :param apply_time: The apply_time of this DirectConnect.
         :type apply_time: datetime
@@ -741,7 +741,7 @@ class DirectConnect:
     def create_time(self):
         """Gets the create_time of this DirectConnect.
 
-        物理专线的创建时间
+        物理专线的创建时间。采用UTC时间格式，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ
 
         :return: The create_time of this DirectConnect.
         :rtype: datetime
@@ -752,7 +752,7 @@ class DirectConnect:
     def create_time(self, create_time):
         """Sets the create_time of this DirectConnect.
 
-        物理专线的创建时间
+        物理专线的创建时间。采用UTC时间格式，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ
 
         :param create_time: The create_time of this DirectConnect.
         :type create_time: datetime
@@ -961,7 +961,7 @@ class DirectConnect:
     def lag_id(self):
         """Gets the lag_id of this DirectConnect.
 
-        物理专线归属的链路聚合组(lag）的ID
+        物理专线归属的链路聚合组（lag）的ID
 
         :return: The lag_id of this DirectConnect.
         :rtype: str
@@ -972,7 +972,7 @@ class DirectConnect:
     def lag_id(self, lag_id):
         """Sets the lag_id of this DirectConnect.
 
-        物理专线归属的链路聚合组(lag）的ID
+        物理专线归属的链路聚合组（lag）的ID
 
         :param lag_id: The lag_id of this DirectConnect.
         :type lag_id: str
@@ -983,7 +983,7 @@ class DirectConnect:
     def signed_agreement_status(self):
         """Gets the signed_agreement_status of this DirectConnect.
 
-        专线协议的签暑状态
+        专线协议的签署状态
 
         :return: The signed_agreement_status of this DirectConnect.
         :rtype: str
@@ -994,7 +994,7 @@ class DirectConnect:
     def signed_agreement_status(self, signed_agreement_status):
         """Sets the signed_agreement_status of this DirectConnect.
 
-        专线协议的签暑状态
+        专线协议的签署状态
 
         :param signed_agreement_status: The signed_agreement_status of this DirectConnect.
         :type signed_agreement_status: str
@@ -1005,7 +1005,7 @@ class DirectConnect:
     def signed_agreement_time(self):
         """Gets the signed_agreement_time of this DirectConnect.
 
-        专线协议的签暑时间
+        专线协议的签署时间。采用UTC时间格式，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ
 
         :return: The signed_agreement_time of this DirectConnect.
         :rtype: datetime
@@ -1016,7 +1016,7 @@ class DirectConnect:
     def signed_agreement_time(self, signed_agreement_time):
         """Sets the signed_agreement_time of this DirectConnect.
 
-        专线协议的签暑时间
+        专线协议的签署时间。采用UTC时间格式，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ
 
         :param signed_agreement_time: The signed_agreement_time of this DirectConnect.
         :type signed_agreement_time: datetime
@@ -1111,7 +1111,7 @@ class DirectConnect:
     def ies_id(self):
         """Gets the ies_id of this DirectConnect.
 
-        归属的IES站点的ID[（功能暂不支持）](tag:dt)
+        归属的CloudPond站点的ID[（功能暂不支持）](tag:dt)
 
         :return: The ies_id of this DirectConnect.
         :rtype: str
@@ -1122,7 +1122,7 @@ class DirectConnect:
     def ies_id(self, ies_id):
         """Sets the ies_id of this DirectConnect.
 
-        归属的IES站点的ID[（功能暂不支持）](tag:dt)
+        归属的CloudPond站点的ID[（功能暂不支持）](tag:dt)
 
         :param ies_id: The ies_id of this DirectConnect.
         :type ies_id: str

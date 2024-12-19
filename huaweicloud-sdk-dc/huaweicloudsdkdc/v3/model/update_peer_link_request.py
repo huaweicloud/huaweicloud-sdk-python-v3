@@ -19,7 +19,7 @@ class UpdatePeerLinkRequest:
     openapi_types = {
         'global_dc_gateway_id': 'str',
         'peer_link_id': 'str',
-        'body': 'UpdatePeerLinkRequestBody'
+        'body': 'UpdateExternalPeerLinkRequestBody'
     }
 
     attribute_map = {
@@ -33,12 +33,12 @@ class UpdatePeerLinkRequest:
 
         The model defined in huaweicloud sdk
 
-        :param global_dc_gateway_id: 全球接入网关ID
+        :param global_dc_gateway_id: 全域接入网关ID
         :type global_dc_gateway_id: str
-        :param peer_link_id: 全球接入网关对等体
+        :param peer_link_id: 全域接入网关对等体
         :type peer_link_id: str
         :param body: Body of the UpdatePeerLinkRequest
-        :type body: :class:`huaweicloudsdkdc.v3.UpdatePeerLinkRequestBody`
+        :type body: :class:`huaweicloudsdkdc.v3.UpdateExternalPeerLinkRequestBody`
         """
         
         
@@ -57,7 +57,7 @@ class UpdatePeerLinkRequest:
     def global_dc_gateway_id(self):
         """Gets the global_dc_gateway_id of this UpdatePeerLinkRequest.
 
-        全球接入网关ID
+        全域接入网关ID
 
         :return: The global_dc_gateway_id of this UpdatePeerLinkRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class UpdatePeerLinkRequest:
     def global_dc_gateway_id(self, global_dc_gateway_id):
         """Sets the global_dc_gateway_id of this UpdatePeerLinkRequest.
 
-        全球接入网关ID
+        全域接入网关ID
 
         :param global_dc_gateway_id: The global_dc_gateway_id of this UpdatePeerLinkRequest.
         :type global_dc_gateway_id: str
@@ -79,7 +79,7 @@ class UpdatePeerLinkRequest:
     def peer_link_id(self):
         """Gets the peer_link_id of this UpdatePeerLinkRequest.
 
-        全球接入网关对等体
+        全域接入网关对等体
 
         :return: The peer_link_id of this UpdatePeerLinkRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class UpdatePeerLinkRequest:
     def peer_link_id(self, peer_link_id):
         """Sets the peer_link_id of this UpdatePeerLinkRequest.
 
-        全球接入网关对等体
+        全域接入网关对等体
 
         :param peer_link_id: The peer_link_id of this UpdatePeerLinkRequest.
         :type peer_link_id: str
@@ -102,7 +102,7 @@ class UpdatePeerLinkRequest:
         """Gets the body of this UpdatePeerLinkRequest.
 
         :return: The body of this UpdatePeerLinkRequest.
-        :rtype: :class:`huaweicloudsdkdc.v3.UpdatePeerLinkRequestBody`
+        :rtype: :class:`huaweicloudsdkdc.v3.UpdateExternalPeerLinkRequestBody`
         """
         return self._body
 
@@ -111,7 +111,7 @@ class UpdatePeerLinkRequest:
         """Sets the body of this UpdatePeerLinkRequest.
 
         :param body: The body of this UpdatePeerLinkRequest.
-        :type body: :class:`huaweicloudsdkdc.v3.UpdatePeerLinkRequestBody`
+        :type body: :class:`huaweicloudsdkdc.v3.UpdateExternalPeerLinkRequestBody`
         """
         self._body = body
 

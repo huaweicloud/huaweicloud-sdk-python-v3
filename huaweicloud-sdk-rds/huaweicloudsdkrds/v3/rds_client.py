@@ -5614,6 +5614,73 @@ class RdsClient(Client):
 
         return http_info
 
+    def list_update_backup_enhance_policy(self, request):
+        """查询高级备份策略
+
+        查询高级备份策略，可查看自定义稀疏备份等
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListUpdateBackupEnhancePolicy
+        :type request: :class:`huaweicloudsdkrds.v3.ListUpdateBackupEnhancePolicyRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListUpdateBackupEnhancePolicyResponse`
+        """
+        http_info = self._list_update_backup_enhance_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_update_backup_enhance_policy_invoker(self, request):
+        http_info = self._list_update_backup_enhance_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_update_backup_enhance_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/backups/enhance-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUpdateBackupEnhancePolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'time_zone' in local_var_params:
+            query_params.append(('time_zone', local_var_params['time_zone']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_upgrade_histories(self, request):
         """list_upgrade_histories
 

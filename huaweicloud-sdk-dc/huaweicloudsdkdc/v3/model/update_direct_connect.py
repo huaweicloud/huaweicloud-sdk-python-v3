@@ -43,11 +43,11 @@ class UpdateDirectConnect:
         :type name: str
         :param description: 物理专线的描述信息
         :type description: str
-        :param bandwidth: 指定托管专线接入带宽,单位Mbps
+        :param bandwidth: 指定托管专线接入带宽,单位Mbps。[注：标准或运营专线的带宽不能降低！](tag:dt)
         :type bandwidth: int
         :param peer_location: 物理专线对端所在的物理位置，省/市/街道或IDC名字
         :type peer_location: str
-        :param status: 更新资源状态，合法值是：PENDING_PAY
+        :param status: 更新资源状态，合法值是：PENDING_PAY,APPLY
         :type status: str
         :param provider_status: 更新运营商状态，合法值是：ACTIVE,DOWN
         :type provider_status: str
@@ -124,7 +124,7 @@ class UpdateDirectConnect:
     def bandwidth(self):
         """Gets the bandwidth of this UpdateDirectConnect.
 
-        指定托管专线接入带宽,单位Mbps
+        指定托管专线接入带宽,单位Mbps。[注：标准或运营专线的带宽不能降低！](tag:dt)
 
         :return: The bandwidth of this UpdateDirectConnect.
         :rtype: int
@@ -135,7 +135,7 @@ class UpdateDirectConnect:
     def bandwidth(self, bandwidth):
         """Sets the bandwidth of this UpdateDirectConnect.
 
-        指定托管专线接入带宽,单位Mbps
+        指定托管专线接入带宽,单位Mbps。[注：标准或运营专线的带宽不能降低！](tag:dt)
 
         :param bandwidth: The bandwidth of this UpdateDirectConnect.
         :type bandwidth: int
@@ -168,7 +168,7 @@ class UpdateDirectConnect:
     def status(self):
         """Gets the status of this UpdateDirectConnect.
 
-        更新资源状态，合法值是：PENDING_PAY
+        更新资源状态，合法值是：PENDING_PAY,APPLY
 
         :return: The status of this UpdateDirectConnect.
         :rtype: str
@@ -179,7 +179,7 @@ class UpdateDirectConnect:
     def status(self, status):
         """Sets the status of this UpdateDirectConnect.
 
-        更新资源状态，合法值是：PENDING_PAY
+        更新资源状态，合法值是：PENDING_PAY,APPLY
 
         :param status: The status of this UpdateDirectConnect.
         :type status: str

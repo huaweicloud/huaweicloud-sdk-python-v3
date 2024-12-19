@@ -18,7 +18,7 @@ class CreateSnapshotPolicyRequest:
 
     openapi_types = {
         'cluster_id': 'str',
-        'body': 'BackupPolicy'
+        'body': 'CreateSnapshotPolicyRequestBody'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class CreateSnapshotPolicyRequest:
         :param cluster_id: 集群ID
         :type cluster_id: str
         :param body: Body of the CreateSnapshotPolicyRequest
-        :type body: :class:`huaweicloudsdkdws.v2.BackupPolicy`
+        :type body: :class:`huaweicloudsdkdws.v2.CreateSnapshotPolicyRequestBody`
         """
         
         
@@ -74,7 +74,7 @@ class CreateSnapshotPolicyRequest:
         """Gets the body of this CreateSnapshotPolicyRequest.
 
         :return: The body of this CreateSnapshotPolicyRequest.
-        :rtype: :class:`huaweicloudsdkdws.v2.BackupPolicy`
+        :rtype: :class:`huaweicloudsdkdws.v2.CreateSnapshotPolicyRequestBody`
         """
         return self._body
 
@@ -83,7 +83,7 @@ class CreateSnapshotPolicyRequest:
         """Sets the body of this CreateSnapshotPolicyRequest.
 
         :param body: The body of this CreateSnapshotPolicyRequest.
-        :type body: :class:`huaweicloudsdkdws.v2.BackupPolicy`
+        :type body: :class:`huaweicloudsdkdws.v2.CreateSnapshotPolicyRequestBody`
         """
         self._body = body
 

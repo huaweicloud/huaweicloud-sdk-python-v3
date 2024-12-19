@@ -23,7 +23,8 @@ class ListCertificatesRequest:
         'sort_key': 'str',
         'status': 'str',
         'enterprise_project_id': 'str',
-        'deploy_support': 'bool'
+        'deploy_support': 'bool',
+        'owned_by_self': 'bool'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class ListCertificatesRequest:
         'sort_key': 'sort_key',
         'status': 'status',
         'enterprise_project_id': 'enterprise_project_id',
-        'deploy_support': 'deploy_support'
+        'deploy_support': 'deploy_support',
+        'owned_by_self': 'owned_by_self'
     }
 
-    def __init__(self, limit=None, offset=None, sort_dir=None, sort_key=None, status=None, enterprise_project_id=None, deploy_support=None):
+    def __init__(self, limit=None, offset=None, sort_dir=None, sort_key=None, status=None, enterprise_project_id=None, deploy_support=None, owned_by_self=None):
         """ListCertificatesRequest
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class ListCertificatesRequest:
         :type enterprise_project_id: str
         :param deploy_support: 是否支持部署。
         :type deploy_support: bool
+        :param owned_by_self: 过滤资源是否属于当前租户，取值如下： - true：只查属于当前租户的资源，不包括共享资源。 - false：查询当前租户及共享给该租户的资源。
+        :type owned_by_self: bool
         """
         
         
@@ -66,6 +70,7 @@ class ListCertificatesRequest:
         self._status = None
         self._enterprise_project_id = None
         self._deploy_support = None
+        self._owned_by_self = None
         self.discriminator = None
 
         if limit is not None:
@@ -82,6 +87,8 @@ class ListCertificatesRequest:
             self.enterprise_project_id = enterprise_project_id
         if deploy_support is not None:
             self.deploy_support = deploy_support
+        if owned_by_self is not None:
+            self.owned_by_self = owned_by_self
 
     @property
     def limit(self):
@@ -236,6 +243,28 @@ class ListCertificatesRequest:
         :type deploy_support: bool
         """
         self._deploy_support = deploy_support
+
+    @property
+    def owned_by_self(self):
+        """Gets the owned_by_self of this ListCertificatesRequest.
+
+        过滤资源是否属于当前租户，取值如下： - true：只查属于当前租户的资源，不包括共享资源。 - false：查询当前租户及共享给该租户的资源。
+
+        :return: The owned_by_self of this ListCertificatesRequest.
+        :rtype: bool
+        """
+        return self._owned_by_self
+
+    @owned_by_self.setter
+    def owned_by_self(self, owned_by_self):
+        """Sets the owned_by_self of this ListCertificatesRequest.
+
+        过滤资源是否属于当前租户，取值如下： - true：只查属于当前租户的资源，不包括共享资源。 - false：查询当前租户及共享给该租户的资源。
+
+        :param owned_by_self: The owned_by_self of this ListCertificatesRequest.
+        :type owned_by_self: bool
+        """
+        self._owned_by_self = owned_by_self
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -53,9 +53,9 @@ class SwitchoverTestRecord:
         :type resource_type: str
         :param operation: shutdown, undo_shutdown表示倒换测试操作类型
         :type operation: str
-        :param start_time: 倒换测试操作的开始时间
+        :param start_time: 倒换测试操作的开始时间。采用UTC时间格式，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ
         :type start_time: datetime
-        :param end_time: 倒换测试操作的结束时间
+        :param end_time: 倒换测试操作的结束时间。采用UTC时间格式，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ
         :type end_time: datetime
         :param operate_status: 倒换测试状态记录 STARTING: 初始状态 INPROGRESS: 配置下发中 COMPLETE: 配置下发完成 ERROR: 配置下发失败
         :type operate_status: str
@@ -204,7 +204,7 @@ class SwitchoverTestRecord:
     def start_time(self):
         """Gets the start_time of this SwitchoverTestRecord.
 
-        倒换测试操作的开始时间
+        倒换测试操作的开始时间。采用UTC时间格式，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ
 
         :return: The start_time of this SwitchoverTestRecord.
         :rtype: datetime
@@ -215,7 +215,7 @@ class SwitchoverTestRecord:
     def start_time(self, start_time):
         """Sets the start_time of this SwitchoverTestRecord.
 
-        倒换测试操作的开始时间
+        倒换测试操作的开始时间。采用UTC时间格式，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ
 
         :param start_time: The start_time of this SwitchoverTestRecord.
         :type start_time: datetime
@@ -226,7 +226,7 @@ class SwitchoverTestRecord:
     def end_time(self):
         """Gets the end_time of this SwitchoverTestRecord.
 
-        倒换测试操作的结束时间
+        倒换测试操作的结束时间。采用UTC时间格式，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ
 
         :return: The end_time of this SwitchoverTestRecord.
         :rtype: datetime
@@ -237,7 +237,7 @@ class SwitchoverTestRecord:
     def end_time(self, end_time):
         """Sets the end_time of this SwitchoverTestRecord.
 
-        倒换测试操作的结束时间
+        倒换测试操作的结束时间。采用UTC时间格式，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ
 
         :param end_time: The end_time of this SwitchoverTestRecord.
         :type end_time: datetime

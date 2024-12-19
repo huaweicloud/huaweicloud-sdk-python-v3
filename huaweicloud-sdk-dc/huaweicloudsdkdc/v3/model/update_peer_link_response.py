@@ -19,17 +19,15 @@ class UpdatePeerLinkResponse(SdkResponse):
 
     openapi_types = {
         'request_id': 'str',
-        'peer_link': 'ExternalUpdatePeerLink',
-        'x_request_id': 'str'
+        'peer_link': 'ExternalUpdatePeerLink'
     }
 
     attribute_map = {
         'request_id': 'request_id',
-        'peer_link': 'peer_link',
-        'x_request_id': 'X-Request-Id'
+        'peer_link': 'peer_link'
     }
 
-    def __init__(self, request_id=None, peer_link=None, x_request_id=None):
+    def __init__(self, request_id=None, peer_link=None):
         """UpdatePeerLinkResponse
 
         The model defined in huaweicloud sdk
@@ -38,23 +36,18 @@ class UpdatePeerLinkResponse(SdkResponse):
         :type request_id: str
         :param peer_link: 
         :type peer_link: :class:`huaweicloudsdkdc.v3.ExternalUpdatePeerLink`
-        :param x_request_id: 
-        :type x_request_id: str
         """
         
         super(UpdatePeerLinkResponse, self).__init__()
 
         self._request_id = None
         self._peer_link = None
-        self._x_request_id = None
         self.discriminator = None
 
         if request_id is not None:
             self.request_id = request_id
         if peer_link is not None:
             self.peer_link = peer_link
-        if x_request_id is not None:
-            self.x_request_id = x_request_id
 
     @property
     def request_id(self):
@@ -95,24 +88,6 @@ class UpdatePeerLinkResponse(SdkResponse):
         :type peer_link: :class:`huaweicloudsdkdc.v3.ExternalUpdatePeerLink`
         """
         self._peer_link = peer_link
-
-    @property
-    def x_request_id(self):
-        """Gets the x_request_id of this UpdatePeerLinkResponse.
-
-        :return: The x_request_id of this UpdatePeerLinkResponse.
-        :rtype: str
-        """
-        return self._x_request_id
-
-    @x_request_id.setter
-    def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdatePeerLinkResponse.
-
-        :param x_request_id: The x_request_id of this UpdatePeerLinkResponse.
-        :type x_request_id: str
-        """
-        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

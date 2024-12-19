@@ -53,11 +53,11 @@ class ListGlobalEipsRequest:
 
         :param limit: 每页返回的个数。 取值范围：1~2000。
         :type limit: int
-        :param offset: 
+        :param offset: 分页偏移量
         :type offset: int
         :param marker: 上一页最后一条资源记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
         :type marker: str
-        :param page_reverse: 
+        :param page_reverse: 分页参数
         :type page_reverse: bool
         :param fields: 显示字段列表
         :type fields: list[str]
@@ -143,6 +143,8 @@ class ListGlobalEipsRequest:
     def offset(self):
         """Gets the offset of this ListGlobalEipsRequest.
 
+        分页偏移量
+
         :return: The offset of this ListGlobalEipsRequest.
         :rtype: int
         """
@@ -151,6 +153,8 @@ class ListGlobalEipsRequest:
     @offset.setter
     def offset(self, offset):
         """Sets the offset of this ListGlobalEipsRequest.
+
+        分页偏移量
 
         :param offset: The offset of this ListGlobalEipsRequest.
         :type offset: int
@@ -183,6 +187,8 @@ class ListGlobalEipsRequest:
     def page_reverse(self):
         """Gets the page_reverse of this ListGlobalEipsRequest.
 
+        分页参数
+
         :return: The page_reverse of this ListGlobalEipsRequest.
         :rtype: bool
         """
@@ -191,6 +197,8 @@ class ListGlobalEipsRequest:
     @page_reverse.setter
     def page_reverse(self, page_reverse):
         """Sets the page_reverse of this ListGlobalEipsRequest.
+
+        分页参数
 
         :param page_reverse: The page_reverse of this ListGlobalEipsRequest.
         :type page_reverse: bool

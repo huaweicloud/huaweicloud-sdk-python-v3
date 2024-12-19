@@ -18,75 +18,52 @@ class ListPeerLinksResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'request_id': 'str',
-        'peer_links': 'list[ExternalListPeerLinks]',
+        'peer_links': 'list[PeerLinkEntry]',
         'page_info': 'PageInfo',
-        'x_request_id': 'str'
+        'request_id': 'str'
     }
 
     attribute_map = {
-        'request_id': 'request_id',
         'peer_links': 'peer_links',
         'page_info': 'page_info',
-        'x_request_id': 'X-Request-Id'
+        'request_id': 'request_id'
     }
 
-    def __init__(self, request_id=None, peer_links=None, page_info=None, x_request_id=None):
+    def __init__(self, peer_links=None, page_info=None, request_id=None):
         """ListPeerLinksResponse
 
         The model defined in huaweicloud sdk
 
-        :param request_id: 
-        :type request_id: str
-        :param peer_links: 
-        :type peer_links: list[:class:`huaweicloudsdkdc.v3.ExternalListPeerLinks`]
+        :param peer_links: 专线关联连接列表。
+        :type peer_links: list[:class:`huaweicloudsdkdc.v3.PeerLinkEntry`]
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkdc.v3.PageInfo`
-        :param x_request_id: 
-        :type x_request_id: str
+        :param request_id: 请求ID。
+        :type request_id: str
         """
         
         super(ListPeerLinksResponse, self).__init__()
 
-        self._request_id = None
         self._peer_links = None
         self._page_info = None
-        self._x_request_id = None
+        self._request_id = None
         self.discriminator = None
 
-        if request_id is not None:
-            self.request_id = request_id
         if peer_links is not None:
             self.peer_links = peer_links
         if page_info is not None:
             self.page_info = page_info
-        if x_request_id is not None:
-            self.x_request_id = x_request_id
-
-    @property
-    def request_id(self):
-        """Gets the request_id of this ListPeerLinksResponse.
-
-        :return: The request_id of this ListPeerLinksResponse.
-        :rtype: str
-        """
-        return self._request_id
-
-    @request_id.setter
-    def request_id(self, request_id):
-        """Sets the request_id of this ListPeerLinksResponse.
-
-        :param request_id: The request_id of this ListPeerLinksResponse.
-        :type request_id: str
-        """
-        self._request_id = request_id
+        if request_id is not None:
+            self.request_id = request_id
 
     @property
     def peer_links(self):
         """Gets the peer_links of this ListPeerLinksResponse.
 
+        专线关联连接列表。
+
         :return: The peer_links of this ListPeerLinksResponse.
-        :rtype: list[:class:`huaweicloudsdkdc.v3.ExternalListPeerLinks`]
+        :rtype: list[:class:`huaweicloudsdkdc.v3.PeerLinkEntry`]
         """
         return self._peer_links
 
@@ -94,8 +71,10 @@ class ListPeerLinksResponse(SdkResponse):
     def peer_links(self, peer_links):
         """Sets the peer_links of this ListPeerLinksResponse.
 
+        专线关联连接列表。
+
         :param peer_links: The peer_links of this ListPeerLinksResponse.
-        :type peer_links: list[:class:`huaweicloudsdkdc.v3.ExternalListPeerLinks`]
+        :type peer_links: list[:class:`huaweicloudsdkdc.v3.PeerLinkEntry`]
         """
         self._peer_links = peer_links
 
@@ -118,22 +97,26 @@ class ListPeerLinksResponse(SdkResponse):
         self._page_info = page_info
 
     @property
-    def x_request_id(self):
-        """Gets the x_request_id of this ListPeerLinksResponse.
+    def request_id(self):
+        """Gets the request_id of this ListPeerLinksResponse.
 
-        :return: The x_request_id of this ListPeerLinksResponse.
+        请求ID。
+
+        :return: The request_id of this ListPeerLinksResponse.
         :rtype: str
         """
-        return self._x_request_id
+        return self._request_id
 
-    @x_request_id.setter
-    def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListPeerLinksResponse.
+    @request_id.setter
+    def request_id(self, request_id):
+        """Sets the request_id of this ListPeerLinksResponse.
 
-        :param x_request_id: The x_request_id of this ListPeerLinksResponse.
-        :type x_request_id: str
+        请求ID。
+
+        :param request_id: The request_id of this ListPeerLinksResponse.
+        :type request_id: str
         """
-        self._x_request_id = x_request_id
+        self._request_id = request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

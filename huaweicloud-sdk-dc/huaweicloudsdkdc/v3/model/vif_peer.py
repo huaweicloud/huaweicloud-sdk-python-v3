@@ -101,7 +101,7 @@ class VifPeer:
         :type status: str
         :param vif_id: vif对等体对应的虚拟接口ID
         :type vif_id: str
-        :param receive_route_num: 路由模式为bgp：receive_route_num值为接收搭配BGP的路由数目； 路由模式为static：该字段无意义，值为-1； 注：若早期接入华为云的部分用户无法获取该字段信息，如需要请联系客服迁移专线端口。
+        :param receive_route_num: 路由模式为bgp：receive_route_num值为接收搭配BGP的路由数目； 路由模式为static：该字段无意义，值为-1； 注：若早期接入云的部分用户无法获取该字段信息，如需要请联系客服迁移专线端口。
         :type receive_route_num: int
         :param enable_nqa: 是否使能nqa功能：true或false
         :type enable_nqa: bool
@@ -552,7 +552,7 @@ class VifPeer:
     def receive_route_num(self):
         """Gets the receive_route_num of this VifPeer.
 
-        路由模式为bgp：receive_route_num值为接收搭配BGP的路由数目； 路由模式为static：该字段无意义，值为-1； 注：若早期接入华为云的部分用户无法获取该字段信息，如需要请联系客服迁移专线端口。
+        路由模式为bgp：receive_route_num值为接收搭配BGP的路由数目； 路由模式为static：该字段无意义，值为-1； 注：若早期接入云的部分用户无法获取该字段信息，如需要请联系客服迁移专线端口。
 
         :return: The receive_route_num of this VifPeer.
         :rtype: int
@@ -563,7 +563,7 @@ class VifPeer:
     def receive_route_num(self, receive_route_num):
         """Sets the receive_route_num of this VifPeer.
 
-        路由模式为bgp：receive_route_num值为接收搭配BGP的路由数目； 路由模式为static：该字段无意义，值为-1； 注：若早期接入华为云的部分用户无法获取该字段信息，如需要请联系客服迁移专线端口。
+        路由模式为bgp：receive_route_num值为接收搭配BGP的路由数目； 路由模式为static：该字段无意义，值为-1； 注：若早期接入云的部分用户无法获取该字段信息，如需要请联系客服迁移专线端口。
 
         :param receive_route_num: The receive_route_num of this VifPeer.
         :type receive_route_num: int

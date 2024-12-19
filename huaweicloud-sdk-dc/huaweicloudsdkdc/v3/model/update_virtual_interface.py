@@ -51,11 +51,11 @@ class UpdateVirtualInterface:
         :type bandwidth: int
         :param remote_ep_group: 远端子网列表，记录租户侧的cidrs
         :type remote_ep_group: list[str]
-        :param service_ep_group: 用于公网专线,用户访问公网服务地址列表
+        :param service_ep_group: 用于公网专线,用户访问公网服务地址列表。[（预留字段，暂不支持）](tag:dt)
         :type service_ep_group: list[str]
-        :param enable_bfd: 是否使能bfd功能：true或false
+        :param enable_bfd: 是否使能bfd功能：true或false。[（预留字段，暂不支持）](tag:dt)
         :type enable_bfd: bool
-        :param enable_nqa: 是否使能nqa功能：true或false
+        :param enable_nqa: 是否使能nqa功能：true或false。[（预留字段，暂不支持）](tag:dt)
         :type enable_nqa: bool
         :param status: 对其他租户创建的虚拟接口进行确认,可以是ACCEPTED和REJECTED
         :type status: str
@@ -182,7 +182,7 @@ class UpdateVirtualInterface:
     def service_ep_group(self):
         """Gets the service_ep_group of this UpdateVirtualInterface.
 
-        用于公网专线,用户访问公网服务地址列表
+        用于公网专线,用户访问公网服务地址列表。[（预留字段，暂不支持）](tag:dt)
 
         :return: The service_ep_group of this UpdateVirtualInterface.
         :rtype: list[str]
@@ -193,7 +193,7 @@ class UpdateVirtualInterface:
     def service_ep_group(self, service_ep_group):
         """Sets the service_ep_group of this UpdateVirtualInterface.
 
-        用于公网专线,用户访问公网服务地址列表
+        用于公网专线,用户访问公网服务地址列表。[（预留字段，暂不支持）](tag:dt)
 
         :param service_ep_group: The service_ep_group of this UpdateVirtualInterface.
         :type service_ep_group: list[str]
@@ -204,7 +204,7 @@ class UpdateVirtualInterface:
     def enable_bfd(self):
         """Gets the enable_bfd of this UpdateVirtualInterface.
 
-        是否使能bfd功能：true或false
+        是否使能bfd功能：true或false。[（预留字段，暂不支持）](tag:dt)
 
         :return: The enable_bfd of this UpdateVirtualInterface.
         :rtype: bool
@@ -215,7 +215,7 @@ class UpdateVirtualInterface:
     def enable_bfd(self, enable_bfd):
         """Sets the enable_bfd of this UpdateVirtualInterface.
 
-        是否使能bfd功能：true或false
+        是否使能bfd功能：true或false。[（预留字段，暂不支持）](tag:dt)
 
         :param enable_bfd: The enable_bfd of this UpdateVirtualInterface.
         :type enable_bfd: bool
@@ -226,7 +226,7 @@ class UpdateVirtualInterface:
     def enable_nqa(self):
         """Gets the enable_nqa of this UpdateVirtualInterface.
 
-        是否使能nqa功能：true或false
+        是否使能nqa功能：true或false。[（预留字段，暂不支持）](tag:dt)
 
         :return: The enable_nqa of this UpdateVirtualInterface.
         :rtype: bool
@@ -237,7 +237,7 @@ class UpdateVirtualInterface:
     def enable_nqa(self, enable_nqa):
         """Sets the enable_nqa of this UpdateVirtualInterface.
 
-        是否使能nqa功能：true或false
+        是否使能nqa功能：true或false。[（预留字段，暂不支持）](tag:dt)
 
         :param enable_nqa: The enable_nqa of this UpdateVirtualInterface.
         :type enable_nqa: bool

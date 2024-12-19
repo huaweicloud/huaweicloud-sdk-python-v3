@@ -22,11 +22,11 @@ class ShowGdgwRoutetable:
         'gateway_id': 'str',
         'destination': 'str',
         'nexthop': 'str',
-        'type': 'str',
         'obtain_mode': 'str',
         'status': 'str',
-        'address_family': 'str',
-        'description': 'str'
+        'address_family': 'AddressFamily',
+        'description': 'str',
+        'type': 'RouteTypeOfGdgw'
     }
 
     attribute_map = {
@@ -35,38 +35,38 @@ class ShowGdgwRoutetable:
         'gateway_id': 'gateway_id',
         'destination': 'destination',
         'nexthop': 'nexthop',
-        'type': 'type',
         'obtain_mode': 'obtain_mode',
         'status': 'status',
         'address_family': 'address_family',
-        'description': 'description'
+        'description': 'description',
+        'type': 'type'
     }
 
-    def __init__(self, id=None, tenant_id=None, gateway_id=None, destination=None, nexthop=None, type=None, obtain_mode=None, status=None, address_family=None, description=None):
+    def __init__(self, id=None, tenant_id=None, gateway_id=None, destination=None, nexthop=None, obtain_mode=None, status=None, address_family=None, description=None, type=None):
         """ShowGdgwRoutetable
 
         The model defined in huaweicloud sdk
 
-        :param id: 唯一ID
+        :param id: 路由id
         :type id: str
-        :param tenant_id: 租户ID
+        :param tenant_id: 租户id
         :type tenant_id: str
-        :param gateway_id: 网关ID
+        :param gateway_id: 网关id
         :type gateway_id: str
-        :param destination: 描述信息
+        :param destination: 路由子网
         :type destination: str
-        :param nexthop: 下一跳ID
+        :param nexthop: 下一跳id
         :type nexthop: str
-        :param type: 类型
-        :type type: str
-        :param obtain_mode: 获得模式
+        :param obtain_mode: 路由类型: - customized: 默认路由 - specific: 自定义路由 - bgp: 动态路由
         :type obtain_mode: str
-        :param status: 状态：ACTIVE-正常，ERROR-异常
+        :param status: 路由状态: - ACTIVE: 下发正常 - ERROR: 下发失败 - PENDING_CREATE: 待下发
         :type status: str
-        :param address_family: 地址簇：ipv4 | ipv6
-        :type address_family: str
-        :param description: 描述信息
+        :param address_family: 
+        :type address_family: :class:`huaweicloudsdkdc.v3.AddressFamily`
+        :param description: 路由描述
         :type description: str
+        :param type: 
+        :type type: :class:`huaweicloudsdkdc.v3.RouteTypeOfGdgw`
         """
         
         
@@ -76,39 +76,31 @@ class ShowGdgwRoutetable:
         self._gateway_id = None
         self._destination = None
         self._nexthop = None
-        self._type = None
         self._obtain_mode = None
         self._status = None
         self._address_family = None
         self._description = None
+        self._type = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
-        if tenant_id is not None:
-            self.tenant_id = tenant_id
+        self.id = id
+        self.tenant_id = tenant_id
         if gateway_id is not None:
             self.gateway_id = gateway_id
-        if destination is not None:
-            self.destination = destination
-        if nexthop is not None:
-            self.nexthop = nexthop
-        if type is not None:
-            self.type = type
-        if obtain_mode is not None:
-            self.obtain_mode = obtain_mode
-        if status is not None:
-            self.status = status
-        if address_family is not None:
-            self.address_family = address_family
+        self.destination = destination
+        self.nexthop = nexthop
+        self.obtain_mode = obtain_mode
+        self.status = status
+        self.address_family = address_family
         if description is not None:
             self.description = description
+        self.type = type
 
     @property
     def id(self):
         """Gets the id of this ShowGdgwRoutetable.
 
-        唯一ID
+        路由id
 
         :return: The id of this ShowGdgwRoutetable.
         :rtype: str
@@ -119,7 +111,7 @@ class ShowGdgwRoutetable:
     def id(self, id):
         """Sets the id of this ShowGdgwRoutetable.
 
-        唯一ID
+        路由id
 
         :param id: The id of this ShowGdgwRoutetable.
         :type id: str
@@ -130,7 +122,7 @@ class ShowGdgwRoutetable:
     def tenant_id(self):
         """Gets the tenant_id of this ShowGdgwRoutetable.
 
-        租户ID
+        租户id
 
         :return: The tenant_id of this ShowGdgwRoutetable.
         :rtype: str
@@ -141,7 +133,7 @@ class ShowGdgwRoutetable:
     def tenant_id(self, tenant_id):
         """Sets the tenant_id of this ShowGdgwRoutetable.
 
-        租户ID
+        租户id
 
         :param tenant_id: The tenant_id of this ShowGdgwRoutetable.
         :type tenant_id: str
@@ -152,7 +144,7 @@ class ShowGdgwRoutetable:
     def gateway_id(self):
         """Gets the gateway_id of this ShowGdgwRoutetable.
 
-        网关ID
+        网关id
 
         :return: The gateway_id of this ShowGdgwRoutetable.
         :rtype: str
@@ -163,7 +155,7 @@ class ShowGdgwRoutetable:
     def gateway_id(self, gateway_id):
         """Sets the gateway_id of this ShowGdgwRoutetable.
 
-        网关ID
+        网关id
 
         :param gateway_id: The gateway_id of this ShowGdgwRoutetable.
         :type gateway_id: str
@@ -174,7 +166,7 @@ class ShowGdgwRoutetable:
     def destination(self):
         """Gets the destination of this ShowGdgwRoutetable.
 
-        描述信息
+        路由子网
 
         :return: The destination of this ShowGdgwRoutetable.
         :rtype: str
@@ -185,7 +177,7 @@ class ShowGdgwRoutetable:
     def destination(self, destination):
         """Sets the destination of this ShowGdgwRoutetable.
 
-        描述信息
+        路由子网
 
         :param destination: The destination of this ShowGdgwRoutetable.
         :type destination: str
@@ -196,7 +188,7 @@ class ShowGdgwRoutetable:
     def nexthop(self):
         """Gets the nexthop of this ShowGdgwRoutetable.
 
-        下一跳ID
+        下一跳id
 
         :return: The nexthop of this ShowGdgwRoutetable.
         :rtype: str
@@ -207,7 +199,7 @@ class ShowGdgwRoutetable:
     def nexthop(self, nexthop):
         """Sets the nexthop of this ShowGdgwRoutetable.
 
-        下一跳ID
+        下一跳id
 
         :param nexthop: The nexthop of this ShowGdgwRoutetable.
         :type nexthop: str
@@ -215,32 +207,10 @@ class ShowGdgwRoutetable:
         self._nexthop = nexthop
 
     @property
-    def type(self):
-        """Gets the type of this ShowGdgwRoutetable.
-
-        类型
-
-        :return: The type of this ShowGdgwRoutetable.
-        :rtype: str
-        """
-        return self._type
-
-    @type.setter
-    def type(self, type):
-        """Sets the type of this ShowGdgwRoutetable.
-
-        类型
-
-        :param type: The type of this ShowGdgwRoutetable.
-        :type type: str
-        """
-        self._type = type
-
-    @property
     def obtain_mode(self):
         """Gets the obtain_mode of this ShowGdgwRoutetable.
 
-        获得模式
+        路由类型: - customized: 默认路由 - specific: 自定义路由 - bgp: 动态路由
 
         :return: The obtain_mode of this ShowGdgwRoutetable.
         :rtype: str
@@ -251,7 +221,7 @@ class ShowGdgwRoutetable:
     def obtain_mode(self, obtain_mode):
         """Sets the obtain_mode of this ShowGdgwRoutetable.
 
-        获得模式
+        路由类型: - customized: 默认路由 - specific: 自定义路由 - bgp: 动态路由
 
         :param obtain_mode: The obtain_mode of this ShowGdgwRoutetable.
         :type obtain_mode: str
@@ -262,7 +232,7 @@ class ShowGdgwRoutetable:
     def status(self):
         """Gets the status of this ShowGdgwRoutetable.
 
-        状态：ACTIVE-正常，ERROR-异常
+        路由状态: - ACTIVE: 下发正常 - ERROR: 下发失败 - PENDING_CREATE: 待下发
 
         :return: The status of this ShowGdgwRoutetable.
         :rtype: str
@@ -273,7 +243,7 @@ class ShowGdgwRoutetable:
     def status(self, status):
         """Sets the status of this ShowGdgwRoutetable.
 
-        状态：ACTIVE-正常，ERROR-异常
+        路由状态: - ACTIVE: 下发正常 - ERROR: 下发失败 - PENDING_CREATE: 待下发
 
         :param status: The status of this ShowGdgwRoutetable.
         :type status: str
@@ -284,10 +254,8 @@ class ShowGdgwRoutetable:
     def address_family(self):
         """Gets the address_family of this ShowGdgwRoutetable.
 
-        地址簇：ipv4 | ipv6
-
         :return: The address_family of this ShowGdgwRoutetable.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdc.v3.AddressFamily`
         """
         return self._address_family
 
@@ -295,10 +263,8 @@ class ShowGdgwRoutetable:
     def address_family(self, address_family):
         """Sets the address_family of this ShowGdgwRoutetable.
 
-        地址簇：ipv4 | ipv6
-
         :param address_family: The address_family of this ShowGdgwRoutetable.
-        :type address_family: str
+        :type address_family: :class:`huaweicloudsdkdc.v3.AddressFamily`
         """
         self._address_family = address_family
 
@@ -306,7 +272,7 @@ class ShowGdgwRoutetable:
     def description(self):
         """Gets the description of this ShowGdgwRoutetable.
 
-        描述信息
+        路由描述
 
         :return: The description of this ShowGdgwRoutetable.
         :rtype: str
@@ -317,12 +283,30 @@ class ShowGdgwRoutetable:
     def description(self, description):
         """Sets the description of this ShowGdgwRoutetable.
 
-        描述信息
+        路由描述
 
         :param description: The description of this ShowGdgwRoutetable.
         :type description: str
         """
         self._description = description
+
+    @property
+    def type(self):
+        """Gets the type of this ShowGdgwRoutetable.
+
+        :return: The type of this ShowGdgwRoutetable.
+        :rtype: :class:`huaweicloudsdkdc.v3.RouteTypeOfGdgw`
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this ShowGdgwRoutetable.
+
+        :param type: The type of this ShowGdgwRoutetable.
+        :type type: :class:`huaweicloudsdkdc.v3.RouteTypeOfGdgw`
+        """
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

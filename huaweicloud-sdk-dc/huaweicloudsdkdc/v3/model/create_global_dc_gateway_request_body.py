@@ -17,65 +17,35 @@ class CreateGlobalDcGatewayRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'dry_run': 'bool',
-        'global_dc_gateway': 'CreateGlobalDcGatewayRequestBodyGlobalDcGateway'
+        'global_dc_gateway': 'CreateGlobalDcGateway'
     }
 
     attribute_map = {
-        'dry_run': 'dry_run',
         'global_dc_gateway': 'global_dc_gateway'
     }
 
-    def __init__(self, dry_run=None, global_dc_gateway=None):
+    def __init__(self, global_dc_gateway=None):
         """CreateGlobalDcGatewayRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param dry_run: 空运行 - true 是 - false 否
-        :type dry_run: bool
         :param global_dc_gateway: 
-        :type global_dc_gateway: :class:`huaweicloudsdkdc.v3.CreateGlobalDcGatewayRequestBodyGlobalDcGateway`
+        :type global_dc_gateway: :class:`huaweicloudsdkdc.v3.CreateGlobalDcGateway`
         """
         
         
 
-        self._dry_run = None
         self._global_dc_gateway = None
         self.discriminator = None
 
-        if dry_run is not None:
-            self.dry_run = dry_run
-        if global_dc_gateway is not None:
-            self.global_dc_gateway = global_dc_gateway
-
-    @property
-    def dry_run(self):
-        """Gets the dry_run of this CreateGlobalDcGatewayRequestBody.
-
-        空运行 - true 是 - false 否
-
-        :return: The dry_run of this CreateGlobalDcGatewayRequestBody.
-        :rtype: bool
-        """
-        return self._dry_run
-
-    @dry_run.setter
-    def dry_run(self, dry_run):
-        """Sets the dry_run of this CreateGlobalDcGatewayRequestBody.
-
-        空运行 - true 是 - false 否
-
-        :param dry_run: The dry_run of this CreateGlobalDcGatewayRequestBody.
-        :type dry_run: bool
-        """
-        self._dry_run = dry_run
+        self.global_dc_gateway = global_dc_gateway
 
     @property
     def global_dc_gateway(self):
         """Gets the global_dc_gateway of this CreateGlobalDcGatewayRequestBody.
 
         :return: The global_dc_gateway of this CreateGlobalDcGatewayRequestBody.
-        :rtype: :class:`huaweicloudsdkdc.v3.CreateGlobalDcGatewayRequestBodyGlobalDcGateway`
+        :rtype: :class:`huaweicloudsdkdc.v3.CreateGlobalDcGateway`
         """
         return self._global_dc_gateway
 
@@ -84,7 +54,7 @@ class CreateGlobalDcGatewayRequestBody:
         """Sets the global_dc_gateway of this CreateGlobalDcGatewayRequestBody.
 
         :param global_dc_gateway: The global_dc_gateway of this CreateGlobalDcGatewayRequestBody.
-        :type global_dc_gateway: :class:`huaweicloudsdkdc.v3.CreateGlobalDcGatewayRequestBodyGlobalDcGateway`
+        :type global_dc_gateway: :class:`huaweicloudsdkdc.v3.CreateGlobalDcGateway`
         """
         self._global_dc_gateway = global_dc_gateway
 

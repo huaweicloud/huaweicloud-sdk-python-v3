@@ -49,27 +49,27 @@ class ExternalUpdatePeerLink:
 
         The model defined in huaweicloud sdk
 
-        :param id: 
+        :param id: 关联连接的ID
         :type id: str
-        :param tenant_id: 
+        :param tenant_id: 关联连接归属的租户ID
         :type tenant_id: str
-        :param name: 
+        :param name: 关联连接的名字
         :type name: str
-        :param description: 
+        :param description: 关联连接的描述信息
         :type description: str
-        :param global_dc_gateway_id: 
+        :param global_dc_gateway_id: 关联连接归属的接入网关ID
         :type global_dc_gateway_id: str
         :param bandwidth_info: 
         :type bandwidth_info: :class:`huaweicloudsdkdc.v3.BandwidthInfoExternal`
         :param peer_site: 
         :type peer_site: :class:`huaweicloudsdkdc.v3.PeerSiteExternal`
-        :param status: 
+        :param status: 关联连接的状态
         :type status: str
-        :param reason: 
+        :param reason: 失败原因
         :type reason: str
-        :param created_time: 
+        :param created_time: 创建时间
         :type created_time: datetime
-        :param updated_time: 
+        :param updated_time: 更新时间
         :type updated_time: datetime
         """
         
@@ -115,6 +115,8 @@ class ExternalUpdatePeerLink:
     def id(self):
         """Gets the id of this ExternalUpdatePeerLink.
 
+        关联连接的ID
+
         :return: The id of this ExternalUpdatePeerLink.
         :rtype: str
         """
@@ -123,6 +125,8 @@ class ExternalUpdatePeerLink:
     @id.setter
     def id(self, id):
         """Sets the id of this ExternalUpdatePeerLink.
+
+        关联连接的ID
 
         :param id: The id of this ExternalUpdatePeerLink.
         :type id: str
@@ -133,6 +137,8 @@ class ExternalUpdatePeerLink:
     def tenant_id(self):
         """Gets the tenant_id of this ExternalUpdatePeerLink.
 
+        关联连接归属的租户ID
+
         :return: The tenant_id of this ExternalUpdatePeerLink.
         :rtype: str
         """
@@ -141,6 +147,8 @@ class ExternalUpdatePeerLink:
     @tenant_id.setter
     def tenant_id(self, tenant_id):
         """Sets the tenant_id of this ExternalUpdatePeerLink.
+
+        关联连接归属的租户ID
 
         :param tenant_id: The tenant_id of this ExternalUpdatePeerLink.
         :type tenant_id: str
@@ -151,6 +159,8 @@ class ExternalUpdatePeerLink:
     def name(self):
         """Gets the name of this ExternalUpdatePeerLink.
 
+        关联连接的名字
+
         :return: The name of this ExternalUpdatePeerLink.
         :rtype: str
         """
@@ -159,6 +169,8 @@ class ExternalUpdatePeerLink:
     @name.setter
     def name(self, name):
         """Sets the name of this ExternalUpdatePeerLink.
+
+        关联连接的名字
 
         :param name: The name of this ExternalUpdatePeerLink.
         :type name: str
@@ -169,6 +181,8 @@ class ExternalUpdatePeerLink:
     def description(self):
         """Gets the description of this ExternalUpdatePeerLink.
 
+        关联连接的描述信息
+
         :return: The description of this ExternalUpdatePeerLink.
         :rtype: str
         """
@@ -177,6 +191,8 @@ class ExternalUpdatePeerLink:
     @description.setter
     def description(self, description):
         """Sets the description of this ExternalUpdatePeerLink.
+
+        关联连接的描述信息
 
         :param description: The description of this ExternalUpdatePeerLink.
         :type description: str
@@ -187,6 +203,8 @@ class ExternalUpdatePeerLink:
     def global_dc_gateway_id(self):
         """Gets the global_dc_gateway_id of this ExternalUpdatePeerLink.
 
+        关联连接归属的接入网关ID
+
         :return: The global_dc_gateway_id of this ExternalUpdatePeerLink.
         :rtype: str
         """
@@ -195,6 +213,8 @@ class ExternalUpdatePeerLink:
     @global_dc_gateway_id.setter
     def global_dc_gateway_id(self, global_dc_gateway_id):
         """Sets the global_dc_gateway_id of this ExternalUpdatePeerLink.
+
+        关联连接归属的接入网关ID
 
         :param global_dc_gateway_id: The global_dc_gateway_id of this ExternalUpdatePeerLink.
         :type global_dc_gateway_id: str
@@ -241,6 +261,8 @@ class ExternalUpdatePeerLink:
     def status(self):
         """Gets the status of this ExternalUpdatePeerLink.
 
+        关联连接的状态
+
         :return: The status of this ExternalUpdatePeerLink.
         :rtype: str
         """
@@ -249,6 +271,8 @@ class ExternalUpdatePeerLink:
     @status.setter
     def status(self, status):
         """Sets the status of this ExternalUpdatePeerLink.
+
+        关联连接的状态
 
         :param status: The status of this ExternalUpdatePeerLink.
         :type status: str
@@ -259,6 +283,8 @@ class ExternalUpdatePeerLink:
     def reason(self):
         """Gets the reason of this ExternalUpdatePeerLink.
 
+        失败原因
+
         :return: The reason of this ExternalUpdatePeerLink.
         :rtype: str
         """
@@ -267,6 +293,8 @@ class ExternalUpdatePeerLink:
     @reason.setter
     def reason(self, reason):
         """Sets the reason of this ExternalUpdatePeerLink.
+
+        失败原因
 
         :param reason: The reason of this ExternalUpdatePeerLink.
         :type reason: str
@@ -277,6 +305,8 @@ class ExternalUpdatePeerLink:
     def created_time(self):
         """Gets the created_time of this ExternalUpdatePeerLink.
 
+        创建时间
+
         :return: The created_time of this ExternalUpdatePeerLink.
         :rtype: datetime
         """
@@ -285,6 +315,8 @@ class ExternalUpdatePeerLink:
     @created_time.setter
     def created_time(self, created_time):
         """Sets the created_time of this ExternalUpdatePeerLink.
+
+        创建时间
 
         :param created_time: The created_time of this ExternalUpdatePeerLink.
         :type created_time: datetime
@@ -295,6 +327,8 @@ class ExternalUpdatePeerLink:
     def updated_time(self):
         """Gets the updated_time of this ExternalUpdatePeerLink.
 
+        更新时间
+
         :return: The updated_time of this ExternalUpdatePeerLink.
         :rtype: datetime
         """
@@ -303,6 +337,8 @@ class ExternalUpdatePeerLink:
     @updated_time.setter
     def updated_time(self, updated_time):
         """Sets the updated_time of this ExternalUpdatePeerLink.
+
+        更新时间
 
         :param updated_time: The updated_time of this ExternalUpdatePeerLink.
         :type updated_time: datetime

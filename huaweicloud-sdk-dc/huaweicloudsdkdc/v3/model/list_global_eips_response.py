@@ -19,17 +19,15 @@ class ListGlobalEipsResponse(SdkResponse):
 
     openapi_types = {
         'request_id': 'str',
-        'global_eips': 'list[ListBindingGeip]',
-        'x_request_id': 'str'
+        'global_eips': 'list[ListBindingGeip]'
     }
 
     attribute_map = {
         'request_id': 'request_id',
-        'global_eips': 'global_eips',
-        'x_request_id': 'X-Request-Id'
+        'global_eips': 'global_eips'
     }
 
-    def __init__(self, request_id=None, global_eips=None, x_request_id=None):
+    def __init__(self, request_id=None, global_eips=None):
         """ListGlobalEipsResponse
 
         The model defined in huaweicloud sdk
@@ -38,23 +36,18 @@ class ListGlobalEipsResponse(SdkResponse):
         :type request_id: str
         :param global_eips: 全局弹性公网IP
         :type global_eips: list[:class:`huaweicloudsdkdc.v3.ListBindingGeip`]
-        :param x_request_id: 
-        :type x_request_id: str
         """
         
         super(ListGlobalEipsResponse, self).__init__()
 
         self._request_id = None
         self._global_eips = None
-        self._x_request_id = None
         self.discriminator = None
 
         if request_id is not None:
             self.request_id = request_id
         if global_eips is not None:
             self.global_eips = global_eips
-        if x_request_id is not None:
-            self.x_request_id = x_request_id
 
     @property
     def request_id(self):
@@ -99,24 +92,6 @@ class ListGlobalEipsResponse(SdkResponse):
         :type global_eips: list[:class:`huaweicloudsdkdc.v3.ListBindingGeip`]
         """
         self._global_eips = global_eips
-
-    @property
-    def x_request_id(self):
-        """Gets the x_request_id of this ListGlobalEipsResponse.
-
-        :return: The x_request_id of this ListGlobalEipsResponse.
-        :rtype: str
-        """
-        return self._x_request_id
-
-    @x_request_id.setter
-    def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListGlobalEipsResponse.
-
-        :param x_request_id: The x_request_id of this ListGlobalEipsResponse.
-        :type x_request_id: str
-        """
-        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

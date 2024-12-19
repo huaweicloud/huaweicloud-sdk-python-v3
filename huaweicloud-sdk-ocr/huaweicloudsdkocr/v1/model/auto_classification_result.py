@@ -43,7 +43,7 @@ class AutoClassificationResult:
         :type content: object
         :param type: 对应票证的类别。         
         :type type: str
-        :param location: 文字块的区域位置信息，列表形式，包含文字区域四个顶点的二维坐标（x,y）;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
+        :param location: 票证的区域位置信息，列表形式，包含票证区域四个顶点的二维坐标（x,y）;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
         :type location: list[list[int]]
         :param seal_mark: 对应票证中是否含有印章。可选值包括： -  true：该票证中含有印章。 -  false：该票证中不含有印章。 
         :type seal_mark: bool
@@ -131,7 +131,7 @@ class AutoClassificationResult:
     def location(self):
         """Gets the location of this AutoClassificationResult.
 
-        文字块的区域位置信息，列表形式，包含文字区域四个顶点的二维坐标（x,y）;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
+        票证的区域位置信息，列表形式，包含票证区域四个顶点的二维坐标（x,y）;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
         :return: The location of this AutoClassificationResult.
         :rtype: list[list[int]]
@@ -142,7 +142,7 @@ class AutoClassificationResult:
     def location(self, location):
         """Sets the location of this AutoClassificationResult.
 
-        文字块的区域位置信息，列表形式，包含文字区域四个顶点的二维坐标（x,y）;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
+        票证的区域位置信息，列表形式，包含票证区域四个顶点的二维坐标（x,y）;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
         :param location: The location of this AutoClassificationResult.
         :type location: list[list[int]]

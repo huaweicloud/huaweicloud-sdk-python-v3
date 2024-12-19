@@ -18,7 +18,7 @@ class CreatePeerLinkRequest:
 
     openapi_types = {
         'global_dc_gateway_id': 'str',
-        'body': 'CreatePeerLinkRequestBody'
+        'body': 'CreateExternalPeerLinkRequestBody'
     }
 
     attribute_map = {
@@ -31,10 +31,10 @@ class CreatePeerLinkRequest:
 
         The model defined in huaweicloud sdk
 
-        :param global_dc_gateway_id: 全球接入网关ID
+        :param global_dc_gateway_id: 全域接入网关ID
         :type global_dc_gateway_id: str
         :param body: Body of the CreatePeerLinkRequest
-        :type body: :class:`huaweicloudsdkdc.v3.CreatePeerLinkRequestBody`
+        :type body: :class:`huaweicloudsdkdc.v3.CreateExternalPeerLinkRequestBody`
         """
         
         
@@ -51,7 +51,7 @@ class CreatePeerLinkRequest:
     def global_dc_gateway_id(self):
         """Gets the global_dc_gateway_id of this CreatePeerLinkRequest.
 
-        全球接入网关ID
+        全域接入网关ID
 
         :return: The global_dc_gateway_id of this CreatePeerLinkRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class CreatePeerLinkRequest:
     def global_dc_gateway_id(self, global_dc_gateway_id):
         """Sets the global_dc_gateway_id of this CreatePeerLinkRequest.
 
-        全球接入网关ID
+        全域接入网关ID
 
         :param global_dc_gateway_id: The global_dc_gateway_id of this CreatePeerLinkRequest.
         :type global_dc_gateway_id: str
@@ -74,7 +74,7 @@ class CreatePeerLinkRequest:
         """Gets the body of this CreatePeerLinkRequest.
 
         :return: The body of this CreatePeerLinkRequest.
-        :rtype: :class:`huaweicloudsdkdc.v3.CreatePeerLinkRequestBody`
+        :rtype: :class:`huaweicloudsdkdc.v3.CreateExternalPeerLinkRequestBody`
         """
         return self._body
 
@@ -83,7 +83,7 @@ class CreatePeerLinkRequest:
         """Sets the body of this CreatePeerLinkRequest.
 
         :param body: The body of this CreatePeerLinkRequest.
-        :type body: :class:`huaweicloudsdkdc.v3.CreatePeerLinkRequestBody`
+        :type body: :class:`huaweicloudsdkdc.v3.CreateExternalPeerLinkRequestBody`
         """
         self._body = body
 

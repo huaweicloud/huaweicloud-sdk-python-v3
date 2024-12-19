@@ -17,7 +17,6 @@ class PeerSiteExternal:
     sensitive_list = []
 
     openapi_types = {
-        'type': 'str',
         'gateway_id': 'str',
         'link_id': 'str',
         'region_id': 'str',
@@ -26,7 +25,6 @@ class PeerSiteExternal:
     }
 
     attribute_map = {
-        'type': 'type',
         'gateway_id': 'gateway_id',
         'link_id': 'link_id',
         'region_id': 'region_id',
@@ -34,14 +32,12 @@ class PeerSiteExternal:
         'site_code': 'site_code'
     }
 
-    def __init__(self, type=None, gateway_id=None, link_id=None, region_id=None, project_id=None, site_code=None):
+    def __init__(self, gateway_id=None, link_id=None, region_id=None, project_id=None, site_code=None):
         """PeerSiteExternal
 
         The model defined in huaweicloud sdk
 
-        :param type: 类型
-        :type type: str
-        :param gateway_id: 网关ID
+        :param gateway_id: 全域接入网关ID
         :type gateway_id: str
         :param link_id: 连接ID
         :type link_id: str
@@ -49,13 +45,12 @@ class PeerSiteExternal:
         :type region_id: str
         :param project_id: 项目ID
         :type project_id: str
-        :param site_code: 站点编码
+        :param site_code: 网点编码
         :type site_code: str
         """
         
         
 
-        self._type = None
         self._gateway_id = None
         self._link_id = None
         self._region_id = None
@@ -63,8 +58,6 @@ class PeerSiteExternal:
         self._site_code = None
         self.discriminator = None
 
-        if type is not None:
-            self.type = type
         if gateway_id is not None:
             self.gateway_id = gateway_id
         if link_id is not None:
@@ -77,32 +70,10 @@ class PeerSiteExternal:
             self.site_code = site_code
 
     @property
-    def type(self):
-        """Gets the type of this PeerSiteExternal.
-
-        类型
-
-        :return: The type of this PeerSiteExternal.
-        :rtype: str
-        """
-        return self._type
-
-    @type.setter
-    def type(self, type):
-        """Sets the type of this PeerSiteExternal.
-
-        类型
-
-        :param type: The type of this PeerSiteExternal.
-        :type type: str
-        """
-        self._type = type
-
-    @property
     def gateway_id(self):
         """Gets the gateway_id of this PeerSiteExternal.
 
-        网关ID
+        全域接入网关ID
 
         :return: The gateway_id of this PeerSiteExternal.
         :rtype: str
@@ -113,7 +84,7 @@ class PeerSiteExternal:
     def gateway_id(self, gateway_id):
         """Sets the gateway_id of this PeerSiteExternal.
 
-        网关ID
+        全域接入网关ID
 
         :param gateway_id: The gateway_id of this PeerSiteExternal.
         :type gateway_id: str
@@ -190,7 +161,7 @@ class PeerSiteExternal:
     def site_code(self):
         """Gets the site_code of this PeerSiteExternal.
 
-        站点编码
+        网点编码
 
         :return: The site_code of this PeerSiteExternal.
         :rtype: str
@@ -201,7 +172,7 @@ class PeerSiteExternal:
     def site_code(self, site_code):
         """Sets the site_code of this PeerSiteExternal.
 
-        站点编码
+        网点编码
 
         :param site_code: The site_code of this PeerSiteExternal.
         :type site_code: str

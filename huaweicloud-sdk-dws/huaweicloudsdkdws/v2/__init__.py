@@ -27,8 +27,8 @@ from huaweicloudsdkdws.v2.model.associate_elb_request import AssociateElbRequest
 from huaweicloudsdkdws.v2.model.associate_elb_response import AssociateElbResponse
 from huaweicloudsdkdws.v2.model.audit_dump_record import AuditDumpRecord
 from huaweicloudsdkdws.v2.model.availability_zone import AvailabilityZone
-from huaweicloudsdkdws.v2.model.backup_policy import BackupPolicy
 from huaweicloudsdkdws.v2.model.backup_strategy_detail import BackupStrategyDetail
+from huaweicloudsdkdws.v2.model.backup_strategy_request import BackupStrategyRequest
 from huaweicloudsdkdws.v2.model.batch_create_cluster_cn_request import BatchCreateClusterCnRequest
 from huaweicloudsdkdws.v2.model.batch_create_cluster_cn_response import BatchCreateClusterCnResponse
 from huaweicloudsdkdws.v2.model.batch_create_cn import BatchCreateCn
@@ -115,6 +115,7 @@ from huaweicloudsdkdws.v2.model.create_logical_cluster_request import CreateLogi
 from huaweicloudsdkdws.v2.model.create_logical_cluster_request_body import CreateLogicalClusterRequestBody
 from huaweicloudsdkdws.v2.model.create_logical_cluster_response import CreateLogicalClusterResponse
 from huaweicloudsdkdws.v2.model.create_snapshot_policy_request import CreateSnapshotPolicyRequest
+from huaweicloudsdkdws.v2.model.create_snapshot_policy_request_body import CreateSnapshotPolicyRequestBody
 from huaweicloudsdkdws.v2.model.create_snapshot_policy_response import CreateSnapshotPolicyResponse
 from huaweicloudsdkdws.v2.model.create_snapshot_request import CreateSnapshotRequest
 from huaweicloudsdkdws.v2.model.create_snapshot_request_body import CreateSnapshotRequestBody

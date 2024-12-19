@@ -18,17 +18,15 @@ class BandwidthInfoExternal:
 
     openapi_types = {
         'bandwidth_size': 'int',
-        'gcb_id': 'str',
-        'freeze_status': 'str'
+        'gcb_id': 'str'
     }
 
     attribute_map = {
         'bandwidth_size': 'bandwidth_size',
-        'gcb_id': 'gcb_id',
-        'freeze_status': 'freeze_status'
+        'gcb_id': 'gcb_id'
     }
 
-    def __init__(self, bandwidth_size=None, gcb_id=None, freeze_status=None):
+    def __init__(self, bandwidth_size=None, gcb_id=None):
         """BandwidthInfoExternal
 
         The model defined in huaweicloud sdk
@@ -37,23 +35,18 @@ class BandwidthInfoExternal:
         :type bandwidth_size: int
         :param gcb_id: 带宽包ID
         :type gcb_id: str
-        :param freeze_status: 冻结状态
-        :type freeze_status: str
         """
         
         
 
         self._bandwidth_size = None
         self._gcb_id = None
-        self._freeze_status = None
         self.discriminator = None
 
         if bandwidth_size is not None:
             self.bandwidth_size = bandwidth_size
         if gcb_id is not None:
             self.gcb_id = gcb_id
-        if freeze_status is not None:
-            self.freeze_status = freeze_status
 
     @property
     def bandwidth_size(self):
@@ -98,28 +91,6 @@ class BandwidthInfoExternal:
         :type gcb_id: str
         """
         self._gcb_id = gcb_id
-
-    @property
-    def freeze_status(self):
-        """Gets the freeze_status of this BandwidthInfoExternal.
-
-        冻结状态
-
-        :return: The freeze_status of this BandwidthInfoExternal.
-        :rtype: str
-        """
-        return self._freeze_status
-
-    @freeze_status.setter
-    def freeze_status(self, freeze_status):
-        """Sets the freeze_status of this BandwidthInfoExternal.
-
-        冻结状态
-
-        :param freeze_status: The freeze_status of this BandwidthInfoExternal.
-        :type freeze_status: str
-        """
-        self._freeze_status = freeze_status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

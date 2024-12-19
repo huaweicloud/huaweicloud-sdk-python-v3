@@ -1,3 +1,384 @@
+# 3.1.128 2024-12-19
+
+### HuaweiCloud SDK AAD
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`AddWafWhiteIpRule`、`DeleteWafWhiteIpRule`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK AS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListScalingActivityLogs**
+    - 响应参数变更
+      - `+ scaling_activity_log.status: enum value [DOING]`
+      - `- scaling_activity_log.status: enum value [DING]`
+  - **ListScalingActivityV2Logs**
+    - 响应参数变更
+      - `+ scaling_activity_log.status: enum value [DOING]`
+      - `- scaling_activity_log.status: enum value [DING]`
+
+### HuaweiCloud SDK CAE
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListComponentSnapshots**
+    - 响应参数变更
+      - `+ items.context.runtime: enum value [Java21]`
+  - **ShowComponent**
+    - 响应参数变更
+      - `+ spec.runtime: enum value [Java21]`
+  - **UpdateComponent**
+    - 请求参数变更
+      - `+ spec.runtime: enum value [Java21]`
+  - **CreateComponent**
+    - 请求参数变更
+      - `+ spec.runtime: enum value [Java21]`
+    - 响应参数变更
+      - `+ spec.runtime: enum value [Java21]`
+  - **ListComponents**
+    - 响应参数变更
+      - `+ items.spec.runtime: enum value [Java21]`
+  - **CreateComponentWithConfiguration**
+    - 请求参数变更
+      - `+ spec.runtime: enum value [Java21]`
+    - 响应参数变更
+      - `+ spec.runtime: enum value [Java21]`
+
+### HuaweiCloud SDK CCE
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowAddonInstance**
+    - 响应参数变更
+      - `+ status.currentVersion.supportVersions.category`
+  - **UpdateAddonInstance**
+    - 响应参数变更
+      - `+ status.currentVersion.supportVersions.category`
+  - **RollbackAddonInstance**
+    - 响应参数变更
+      - `+ status.currentVersion.supportVersions.category`
+  - **ShowAutopilotAddonInstance**
+    - 响应参数变更
+      - `+ status.currentVersion.supportVersions.category`
+  - **UpdateAutopilotAddonInstance**
+    - 响应参数变更
+      - `+ status.currentVersion.supportVersions.category`
+  - **RollbackAutopilotAddonInstance**
+    - 响应参数变更
+      - `+ status.currentVersion.supportVersions.category`
+  - **CreateAddonInstance**
+    - 响应参数变更
+      - `+ status.currentVersion.supportVersions.category`
+  - **ListAddonInstances**
+    - 响应参数变更
+      - `+ items.status.currentVersion.supportVersions.category`
+  - **ListAddonTemplates**
+    - 响应参数变更
+      - `+ items.spec.versions.supportVersions.category`
+  - **CreateAutopilotAddonInstance**
+    - 响应参数变更
+      - `+ status.currentVersion.supportVersions.category`
+  - **ListAutopilotAddonInstances**
+    - 响应参数变更
+      - `+ items.status.currentVersion.supportVersions.category`
+  - **ListAutopilotAddonTemplates**
+    - 响应参数变更
+      - `+ items.spec.versions.supportVersions.category`
+
+### HuaweiCloud SDK CodeArtsPipeline
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowPipelineRunDetail**
+    - 响应参数变更
+      - `* stages.jobs.async: string -> boolean`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`RetryFactoryJobInstance`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DC
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`ListDirectConnectLocations`、`ShowDirectConnectLocation`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`ListRmsGlobalDcGateway`、`ShowRmsGlobalDcGateway`
+  - **ListGlobalDcGateways**
+    - 请求参数变更
+      - `+ status`
+      - `- hosting_id`
+  - **ShowGlobalDcGateway**
+    - 请求参数变更
+      - `+ limit`
+      - `+ enterprise_project_id`
+  - **UpdateVifPeer**
+    - 响应参数变更
+      - `- request_id`
+  - **CreateVifPeer**
+    - 响应参数变更
+      - `- request_id`
+  - **ListGdgwRouteTables**
+    - 请求参数变更
+      - `- fields`
+      - `- ext_fields`
+  - **ListGlobalEips**
+    - 响应参数变更
+      - `+ global_eips.status: enum value [ACTIVE,ERROR]`
+      - `+ global_eips.type: enum value [IP_ADDRESS,IP_SEGMENT]`
+  - **BindGlobalEips**
+    - 响应参数变更
+      - `+ global_eips.status: enum value [ACTIVE,ERROR]`
+      - `+ global_eips.type: enum value [IP_ADDRESS,IP_SEGMENT]`
+  - **UnbindGlobalEips**
+    - 响应参数变更
+      - `+ global_eips.status: enum value [ACTIVE,ERROR]`
+      - `+ global_eips.type: enum value [IP_ADDRESS,IP_SEGMENT]`
+  - **ShowDirectConnect**
+    - 响应参数变更
+      - `+ direct_connect.status: enum value [LEASED_LINE_DELIVERY]`
+  - **UpdateDirectConnect**
+    - 请求参数变更
+      - `+ direct_connect.status: enum value [APPLY]`
+    - 响应参数变更
+      - `+ direct_connect.status: enum value [LEASED_LINE_DELIVERY]`
+  - **ListDirectConnects**
+    - 响应参数变更
+      - `+ direct_connects.status: enum value [LEASED_LINE_DELIVERY]`
+  - **ListHostedDirectConnects**
+    - 响应参数变更
+      - `* hosted_connects.apply_time: string -> date-time`
+      - `* hosted_connects.create_time: string -> date-time`
+  - **CreateHostedDirectConnect**
+    - 响应参数变更
+      - `* hosted_connect.apply_time: string -> date-time`
+      - `* hosted_connect.create_time: string -> date-time`
+  - **ShowHostedDirectConnect**
+    - 响应参数变更
+      - `* hosted_connect.apply_time: string -> date-time`
+      - `* hosted_connect.create_time: string -> date-time`
+  - **UpdateHostedDirectConnect**
+    - 响应参数变更
+      - `* hosted_connect.apply_time: string -> date-time`
+      - `* hosted_connect.create_time: string -> date-time`
+  - **ShowVirtualGateway**
+    - 响应参数变更
+      - `+ virtual_gateway.enterprise_router_id`
+  - **UpdateVirtualGateway**
+    - 响应参数变更
+      - `+ virtual_gateway.enterprise_router_id`
+  - **ListVirtualGateways**
+    - 响应参数变更
+      - `+ virtual_gateways.enterprise_router_id`
+  - **CreateVirtualGateway**
+    - 请求参数变更
+      - `+ virtual_gateway.enterprise_router_id`
+    - 响应参数变更
+      - `+ virtual_gateway.enterprise_router_id`
+  - **ShowVirtualInterface**
+    - 响应参数变更
+      - `+ virtual_interface.update_time`
+  - **UpdateVirtualInterface**
+    - 响应参数变更
+      - `+ virtual_interface.update_time`
+  - **ListVirtualInterfaces**
+    - 响应参数变更
+      - `+ virtual_interfaces.update_time`
+  - **CreateVirtualInterface**
+    - 请求参数变更
+      - `- virtual_interface.service_type: enum value [vpc]`
+    - 响应参数变更
+      - `+ virtual_interface.update_time`
+
+### HuaweiCloud SDK DCS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持以下接口：
+    - `ShowBandwidths`
+    - `UpdateBandwidth`
+    - `ShowInstanceBandwidthAutoScalingPolicy`
+    - `UpdateInstanceBandwidthAutoScalingPolicy`
+    - `DeleteInstanceBandwidthAutoScalingPolicy`
+    - `UpdatePublicIp`
+    - `DeletePublicIp`
+    - `ChangeNodesStartStopStatus`
+    - `ShowInstanceVersion`
+    - `UpgradeInstanceMinorVersion`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DWS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ResizeCluster**
+    - 请求参数变更
+      - `+ scale_out.subnet_id`
+  - **CreateSnapshotPolicy**
+    - 请求参数变更
+      - `* backup_strategies: object<BackupStrategyDetail> -> list<BackupStrategyRequest>`
+      - `* body: object<BackupPolicy> -> object<CreateSnapshotPolicyRequestBody>`
+  - **ResizeClusterWithExistedNodes**
+    - 请求参数变更
+      - `+ scale_out.subnet_id`
+
+### HuaweiCloud SDK EVS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`UnsubscribePostpaidVolume`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CinderListQuotas**
+    - 响应参数变更
+      - `+ quota_set.gigabytes_ESSD`
+      - `+ quota_set.snapshots_ESSD`
+      - `+ quota_set.volumes_ESSD`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `ListRestorableInstancesDetails`
+    - `ListRecycleInstancesDetails`
+    - `ShowParameterGroupDetail`
+    - `ShowSourceInstanceDetail`
+    - `AllowDbRolePrivileges`
+    - `ListDatabaseRoles`
+    - `CreateDbRole`
+    - `ListDatastoresDetails`
+    - `ListDatabaseInstances`
+    - `ListParameterGroupTemplates`
+    - `ShowInstanceParamGroupDetail`
+    - `ShowUpgradeCandidateVersionsDetails`
+    - `BatchShowUpgradeCandidateVersions`
+    - `ListFlavorsDetails`
+    - `ListBackupsDetails`
+    - `SyncLimitData`
+    - `DeleteDatabaseSchema`
+    - `CreateDatabaseInstance`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowUpgradeCandidateVersions**
+    - 响应参数变更
+      - `* hotfix_upgrade_infos: object<HotfixUpgradeInfos> -> list<HotfixUpgradeInfos>`
+      - `* hotfix_rollback_infos: object<HotfixRollbackInfos> -> list<HotfixRollbackInfos>`
+
+### HuaweiCloud SDK IMS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ImportImageQuick**
+    - 请求参数变更
+      - `+ license_type`
+
+### HuaweiCloud SDK IoTEdge
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`ListPropertyActiveControls`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK OCR
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RecognizeAutoClassification**
+    - 请求参数变更
+      - `+ pdf_page_number`
+  - **RecognizeSmartDocumentRecognizer**
+    - 请求参数变更
+      - `+ erase_seal`
+
+### HuaweiCloud SDK RDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`ListUpdateBackupEnhancePolicy`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK SCM
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListCertificates**
+    - 请求参数变更
+      - `+ owned_by_self`
+
 # 3.1.127 2024-12-12
 
 ### HuaweiCloud SDK AOS

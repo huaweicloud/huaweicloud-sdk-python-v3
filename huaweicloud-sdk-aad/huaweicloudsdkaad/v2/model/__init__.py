@@ -4,6 +4,9 @@ from __future__ import absolute_import
 
 # import models into model package
 from huaweicloudsdkaad.v2.model.action_info import ActionInfo
+from huaweicloudsdkaad.v2.model.add_waf_white_ip_rule_request import AddWafWhiteIpRuleRequest
+from huaweicloudsdkaad.v2.model.add_waf_white_ip_rule_response import AddWafWhiteIpRuleResponse
+from huaweicloudsdkaad.v2.model.add_waf_white_ip_rule_v2_request_body import AddWafWhiteIpRuleV2RequestBody
 from huaweicloudsdkaad.v2.model.backend import Backend
 from huaweicloudsdkaad.v2.model.black_white_list_rule import BlackWhiteListRule
 from huaweicloudsdkaad.v2.model.bw_list_ips import BwListIps
@@ -16,6 +19,9 @@ from huaweicloudsdkaad.v2.model.curve import Curve
 from huaweicloudsdkaad.v2.model.delete_domain_request import DeleteDomainRequest
 from huaweicloudsdkaad.v2.model.delete_domain_response import DeleteDomainResponse
 from huaweicloudsdkaad.v2.model.delete_domain_v2_request_body import DeleteDomainV2RequestBody
+from huaweicloudsdkaad.v2.model.delete_waf_white_ip_rule_request import DeleteWafWhiteIpRuleRequest
+from huaweicloudsdkaad.v2.model.delete_waf_white_ip_rule_response import DeleteWafWhiteIpRuleResponse
+from huaweicloudsdkaad.v2.model.delete_waf_white_ip_rule_v2_request_body import DeleteWafWhiteIpRuleV2RequestBody
 from huaweicloudsdkaad.v2.model.detail_info import DetailInfo
 from huaweicloudsdkaad.v2.model.empty_json_response import EmptyJsonResponse
 from huaweicloudsdkaad.v2.model.flow_bps import FlowBps

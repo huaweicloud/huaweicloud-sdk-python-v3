@@ -57,7 +57,7 @@ class ListVirtualGatewaysRequest:
         :type id: list[str]
         :param enterprise_project_id: 根据企业项目ID过滤资源实例
         :type enterprise_project_id: list[str]
-        :param vpc_id: 通过VPC-ID过虑虚拟网关实例
+        :param vpc_id: 通过VPC-ID过滤虚拟网关实例
         :type vpc_id: list[str]
         """
         
@@ -248,7 +248,7 @@ class ListVirtualGatewaysRequest:
     def vpc_id(self):
         """Gets the vpc_id of this ListVirtualGatewaysRequest.
 
-        通过VPC-ID过虑虚拟网关实例
+        通过VPC-ID过滤虚拟网关实例
 
         :return: The vpc_id of this ListVirtualGatewaysRequest.
         :rtype: list[str]
@@ -259,7 +259,7 @@ class ListVirtualGatewaysRequest:
     def vpc_id(self, vpc_id):
         """Sets the vpc_id of this ListVirtualGatewaysRequest.
 
-        通过VPC-ID过虑虚拟网关实例
+        通过VPC-ID过滤虚拟网关实例
 
         :param vpc_id: The vpc_id of this ListVirtualGatewaysRequest.
         :type vpc_id: list[str]

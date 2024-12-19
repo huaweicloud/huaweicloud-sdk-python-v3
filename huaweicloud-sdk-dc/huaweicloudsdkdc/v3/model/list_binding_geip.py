@@ -61,7 +61,7 @@ class ListBindingGeip:
         :type cidr: str
         :param address_family: geip的地址簇
         :type address_family: str
-        :param ie_vtep_ip: IES的集群vtepIp
+        :param ie_vtep_ip: CloudPond的集群vtepIp
         :type ie_vtep_ip: str
         :param created_time: geip绑定时间
         :type created_time: str
@@ -262,7 +262,7 @@ class ListBindingGeip:
     def ie_vtep_ip(self):
         """Gets the ie_vtep_ip of this ListBindingGeip.
 
-        IES的集群vtepIp
+        CloudPond的集群vtepIp
 
         :return: The ie_vtep_ip of this ListBindingGeip.
         :rtype: str
@@ -273,7 +273,7 @@ class ListBindingGeip:
     def ie_vtep_ip(self, ie_vtep_ip):
         """Sets the ie_vtep_ip of this ListBindingGeip.
 
-        IES的集群vtepIp
+        CloudPond的集群vtepIp
 
         :param ie_vtep_ip: The ie_vtep_ip of this ListBindingGeip.
         :type ie_vtep_ip: str

@@ -478,6 +478,8 @@ class ScmAsyncClient(Client):
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'deploy_support' in local_var_params:
             query_params.append(('deploy_support', local_var_params['deploy_support']))
+        if 'owned_by_self' in local_var_params:
+            query_params.append(('owned_by_self', local_var_params['owned_by_self']))
 
         header_params = {}
 

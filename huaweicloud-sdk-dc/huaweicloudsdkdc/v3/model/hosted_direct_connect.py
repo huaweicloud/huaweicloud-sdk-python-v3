@@ -29,8 +29,8 @@ class HostedDirectConnect:
         'admin_state_up': 'bool',
         'vlan': 'int',
         'status': 'str',
-        'apply_time': 'str',
-        'create_time': 'str',
+        'apply_time': 'datetime',
+        'create_time': 'datetime',
         'provider_status': 'str',
         'port_type': 'str',
         'type': 'str'
@@ -65,15 +65,15 @@ class HostedDirectConnect:
         :type id: str
         :param tenant_id: 实例所属项目ID。
         :type tenant_id: str
-        :param name: 物理专线名字
+        :param name: 托管专线名字
         :type name: str
-        :param description: 物理专线的描述信息
+        :param description: 托管专线的描述信息
         :type description: str
-        :param bandwidth: 物理专线接入带宽，单位Mbps。
+        :param bandwidth: 托管专线接入带宽，单位Mbps。
         :type bandwidth: int
         :param location: 专线的接入位置信息
         :type location: str
-        :param peer_location: 物理专线对端所在的物理位置，省/市/街道或IDC名字。
+        :param peer_location: 托管专线对端所在的物理位置，省/市/街道或IDC名字。
         :type peer_location: str
         :param hosting_id: hosted物理专线对应的hosting物理专线的ID
         :type hosting_id: str
@@ -83,17 +83,17 @@ class HostedDirectConnect:
         :type admin_state_up: bool
         :param vlan: hosted物理专线预分配的vlan。
         :type vlan: int
-        :param status: 操作状态，合法值是： BUILD：已开通 ACTIVE：虚拟网关正常 DOWN：专线对应的端口处于down的状态，可能存在线路故障等异常。 ERROR：虚拟网关异常 PENDING_DELETE：删除中 PENDING_UPDATE：更新中 PENDING_CREATE：创建中
+        :param status: 操作状态，合法值是： BUILD：已开通 ACTIVE：托管专线正常 DOWN：专线对应的端口处于down的状态，可能存在线路故障等异常。 ERROR：托管专线异常 PENDING_DELETE：删除中 PENDING_UPDATE：更新中 PENDING_CREATE：创建中
         :type status: str
-        :param apply_time: 物理专线申请时间
-        :type apply_time: str
-        :param create_time: 物理专线创建时间
-        :type create_time: str
-        :param provider_status: 物理专线的运营商操作状态，合法值是：ACTIVE， DOWN
+        :param apply_time: 托管专线申请时间。采用UTC时间格式，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ
+        :type apply_time: datetime
+        :param create_time: 托管专线创建时间。采用UTC时间格式，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ
+        :type create_time: datetime
+        :param provider_status: 托管专线的运营商操作状态，合法值是：ACTIVE， DOWN
         :type provider_status: str
-        :param port_type: 物理专线接入接口的类型，支持1G 10G 40G 100G
+        :param port_type: 托管专线接入接口的类型，支持1G 10G 40G 100G
         :type port_type: str
-        :param type: 物理专线的类型，类型包括标准(standard)，运营专线(hosting)，托管专线（hosted）[，一站式标准（onestop_standard），一站式托管（onestop_hosted）](tag:hws)。
+        :param type: 托管专线的类型，类型包括标准(standard)，运营专线(hosting)，托管专线（hosted）[，一站式标准（onestop_standard），一站式托管（onestop_hosted）](tag:hws)。
         :type type: str
         """
         
@@ -201,7 +201,7 @@ class HostedDirectConnect:
     def name(self):
         """Gets the name of this HostedDirectConnect.
 
-        物理专线名字
+        托管专线名字
 
         :return: The name of this HostedDirectConnect.
         :rtype: str
@@ -212,7 +212,7 @@ class HostedDirectConnect:
     def name(self, name):
         """Sets the name of this HostedDirectConnect.
 
-        物理专线名字
+        托管专线名字
 
         :param name: The name of this HostedDirectConnect.
         :type name: str
@@ -223,7 +223,7 @@ class HostedDirectConnect:
     def description(self):
         """Gets the description of this HostedDirectConnect.
 
-        物理专线的描述信息
+        托管专线的描述信息
 
         :return: The description of this HostedDirectConnect.
         :rtype: str
@@ -234,7 +234,7 @@ class HostedDirectConnect:
     def description(self, description):
         """Sets the description of this HostedDirectConnect.
 
-        物理专线的描述信息
+        托管专线的描述信息
 
         :param description: The description of this HostedDirectConnect.
         :type description: str
@@ -245,7 +245,7 @@ class HostedDirectConnect:
     def bandwidth(self):
         """Gets the bandwidth of this HostedDirectConnect.
 
-        物理专线接入带宽，单位Mbps。
+        托管专线接入带宽，单位Mbps。
 
         :return: The bandwidth of this HostedDirectConnect.
         :rtype: int
@@ -256,7 +256,7 @@ class HostedDirectConnect:
     def bandwidth(self, bandwidth):
         """Sets the bandwidth of this HostedDirectConnect.
 
-        物理专线接入带宽，单位Mbps。
+        托管专线接入带宽，单位Mbps。
 
         :param bandwidth: The bandwidth of this HostedDirectConnect.
         :type bandwidth: int
@@ -289,7 +289,7 @@ class HostedDirectConnect:
     def peer_location(self):
         """Gets the peer_location of this HostedDirectConnect.
 
-        物理专线对端所在的物理位置，省/市/街道或IDC名字。
+        托管专线对端所在的物理位置，省/市/街道或IDC名字。
 
         :return: The peer_location of this HostedDirectConnect.
         :rtype: str
@@ -300,7 +300,7 @@ class HostedDirectConnect:
     def peer_location(self, peer_location):
         """Sets the peer_location of this HostedDirectConnect.
 
-        物理专线对端所在的物理位置，省/市/街道或IDC名字。
+        托管专线对端所在的物理位置，省/市/街道或IDC名字。
 
         :param peer_location: The peer_location of this HostedDirectConnect.
         :type peer_location: str
@@ -399,7 +399,7 @@ class HostedDirectConnect:
     def status(self):
         """Gets the status of this HostedDirectConnect.
 
-        操作状态，合法值是： BUILD：已开通 ACTIVE：虚拟网关正常 DOWN：专线对应的端口处于down的状态，可能存在线路故障等异常。 ERROR：虚拟网关异常 PENDING_DELETE：删除中 PENDING_UPDATE：更新中 PENDING_CREATE：创建中
+        操作状态，合法值是： BUILD：已开通 ACTIVE：托管专线正常 DOWN：专线对应的端口处于down的状态，可能存在线路故障等异常。 ERROR：托管专线异常 PENDING_DELETE：删除中 PENDING_UPDATE：更新中 PENDING_CREATE：创建中
 
         :return: The status of this HostedDirectConnect.
         :rtype: str
@@ -410,7 +410,7 @@ class HostedDirectConnect:
     def status(self, status):
         """Sets the status of this HostedDirectConnect.
 
-        操作状态，合法值是： BUILD：已开通 ACTIVE：虚拟网关正常 DOWN：专线对应的端口处于down的状态，可能存在线路故障等异常。 ERROR：虚拟网关异常 PENDING_DELETE：删除中 PENDING_UPDATE：更新中 PENDING_CREATE：创建中
+        操作状态，合法值是： BUILD：已开通 ACTIVE：托管专线正常 DOWN：专线对应的端口处于down的状态，可能存在线路故障等异常。 ERROR：托管专线异常 PENDING_DELETE：删除中 PENDING_UPDATE：更新中 PENDING_CREATE：创建中
 
         :param status: The status of this HostedDirectConnect.
         :type status: str
@@ -421,10 +421,10 @@ class HostedDirectConnect:
     def apply_time(self):
         """Gets the apply_time of this HostedDirectConnect.
 
-        物理专线申请时间
+        托管专线申请时间。采用UTC时间格式，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ
 
         :return: The apply_time of this HostedDirectConnect.
-        :rtype: str
+        :rtype: datetime
         """
         return self._apply_time
 
@@ -432,10 +432,10 @@ class HostedDirectConnect:
     def apply_time(self, apply_time):
         """Sets the apply_time of this HostedDirectConnect.
 
-        物理专线申请时间
+        托管专线申请时间。采用UTC时间格式，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ
 
         :param apply_time: The apply_time of this HostedDirectConnect.
-        :type apply_time: str
+        :type apply_time: datetime
         """
         self._apply_time = apply_time
 
@@ -443,10 +443,10 @@ class HostedDirectConnect:
     def create_time(self):
         """Gets the create_time of this HostedDirectConnect.
 
-        物理专线创建时间
+        托管专线创建时间。采用UTC时间格式，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ
 
         :return: The create_time of this HostedDirectConnect.
-        :rtype: str
+        :rtype: datetime
         """
         return self._create_time
 
@@ -454,10 +454,10 @@ class HostedDirectConnect:
     def create_time(self, create_time):
         """Sets the create_time of this HostedDirectConnect.
 
-        物理专线创建时间
+        托管专线创建时间。采用UTC时间格式，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ
 
         :param create_time: The create_time of this HostedDirectConnect.
-        :type create_time: str
+        :type create_time: datetime
         """
         self._create_time = create_time
 
@@ -465,7 +465,7 @@ class HostedDirectConnect:
     def provider_status(self):
         """Gets the provider_status of this HostedDirectConnect.
 
-        物理专线的运营商操作状态，合法值是：ACTIVE， DOWN
+        托管专线的运营商操作状态，合法值是：ACTIVE， DOWN
 
         :return: The provider_status of this HostedDirectConnect.
         :rtype: str
@@ -476,7 +476,7 @@ class HostedDirectConnect:
     def provider_status(self, provider_status):
         """Sets the provider_status of this HostedDirectConnect.
 
-        物理专线的运营商操作状态，合法值是：ACTIVE， DOWN
+        托管专线的运营商操作状态，合法值是：ACTIVE， DOWN
 
         :param provider_status: The provider_status of this HostedDirectConnect.
         :type provider_status: str
@@ -487,7 +487,7 @@ class HostedDirectConnect:
     def port_type(self):
         """Gets the port_type of this HostedDirectConnect.
 
-        物理专线接入接口的类型，支持1G 10G 40G 100G
+        托管专线接入接口的类型，支持1G 10G 40G 100G
 
         :return: The port_type of this HostedDirectConnect.
         :rtype: str
@@ -498,7 +498,7 @@ class HostedDirectConnect:
     def port_type(self, port_type):
         """Sets the port_type of this HostedDirectConnect.
 
-        物理专线接入接口的类型，支持1G 10G 40G 100G
+        托管专线接入接口的类型，支持1G 10G 40G 100G
 
         :param port_type: The port_type of this HostedDirectConnect.
         :type port_type: str
@@ -509,7 +509,7 @@ class HostedDirectConnect:
     def type(self):
         """Gets the type of this HostedDirectConnect.
 
-        物理专线的类型，类型包括标准(standard)，运营专线(hosting)，托管专线（hosted）[，一站式标准（onestop_standard），一站式托管（onestop_hosted）](tag:hws)。
+        托管专线的类型，类型包括标准(standard)，运营专线(hosting)，托管专线（hosted）[，一站式标准（onestop_standard），一站式托管（onestop_hosted）](tag:hws)。
 
         :return: The type of this HostedDirectConnect.
         :rtype: str
@@ -520,7 +520,7 @@ class HostedDirectConnect:
     def type(self, type):
         """Sets the type of this HostedDirectConnect.
 
-        物理专线的类型，类型包括标准(standard)，运营专线(hosting)，托管专线（hosted）[，一站式标准（onestop_standard），一站式托管（onestop_hosted）](tag:hws)。
+        托管专线的类型，类型包括标准(standard)，运营专线(hosting)，托管专线（hosted）[，一站式标准（onestop_standard），一站式托管（onestop_hosted）](tag:hws)。
 
         :param type: The type of this HostedDirectConnect.
         :type type: str

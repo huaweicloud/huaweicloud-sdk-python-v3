@@ -29,7 +29,7 @@ class ShowQuotasResponseBodyQuotas:
 
         The model defined in huaweicloud sdk
 
-        :param resources: 
+        :param resources: 不同资源配额使用详情列表
         :type resources: list[:class:`huaweicloudsdkdc.v3.Info`]
         """
         
@@ -45,6 +45,8 @@ class ShowQuotasResponseBodyQuotas:
     def resources(self):
         """Gets the resources of this ShowQuotasResponseBodyQuotas.
 
+        不同资源配额使用详情列表
+
         :return: The resources of this ShowQuotasResponseBodyQuotas.
         :rtype: list[:class:`huaweicloudsdkdc.v3.Info`]
         """
@@ -53,6 +55,8 @@ class ShowQuotasResponseBodyQuotas:
     @resources.setter
     def resources(self, resources):
         """Sets the resources of this ShowQuotasResponseBodyQuotas.
+
+        不同资源配额使用详情列表
 
         :param resources: The resources of this ShowQuotasResponseBodyQuotas.
         :type resources: list[:class:`huaweicloudsdkdc.v3.Info`]

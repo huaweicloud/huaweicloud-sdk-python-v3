@@ -648,6 +648,77 @@ class IoTEdgeClient(Client):
 
         return http_info
 
+    def list_property_active_controls(self, request):
+        """获取属性执行中的控制
+
+        获取属性执行中的控制
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListPropertyActiveControls
+        :type request: :class:`huaweicloudsdkiotedge.v2.ListPropertyActiveControlsRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.ListPropertyActiveControlsResponse`
+        """
+        http_info = self._list_property_active_controls_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_property_active_controls_invoker(self, request):
+        http_info = self._list_property_active_controls_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_property_active_controls_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/devices/{device_id}/active-controls",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPropertyActiveControlsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'edge_node_id' in local_var_params:
+            path_params['edge_node_id'] = local_var_params['edge_node_id']
+        if 'device_id' in local_var_params:
+            path_params['device_id'] = local_var_params['device_id']
+
+        query_params = []
+        if 'service_id' in local_var_params:
+            query_params.append(('service_id', local_var_params['service_id']))
+        if '_property' in local_var_params:
+            query_params.append(('property', local_var_params['_property']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def set_device_control_default_values(self, request):
         """设备控制默认值
 

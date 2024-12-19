@@ -17,28 +17,35 @@ class ScaleOut:
     sensitive_list = []
 
     openapi_types = {
-        'count': 'int'
+        'count': 'int',
+        'subnet_id': 'str'
     }
 
     attribute_map = {
-        'count': 'count'
+        'count': 'count',
+        'subnet_id': 'subnet_id'
     }
 
-    def __init__(self, count=None):
+    def __init__(self, count=None, subnet_id=None):
         """ScaleOut
 
         The model defined in huaweicloud sdk
 
         :param count: 扩容节点数。
         :type count: int
+        :param subnet_id: 指定子网ID。
+        :type subnet_id: str
         """
         
         
 
         self._count = None
+        self._subnet_id = None
         self.discriminator = None
 
         self.count = count
+        if subnet_id is not None:
+            self.subnet_id = subnet_id
 
     @property
     def count(self):
@@ -61,6 +68,28 @@ class ScaleOut:
         :type count: int
         """
         self._count = count
+
+    @property
+    def subnet_id(self):
+        """Gets the subnet_id of this ScaleOut.
+
+        指定子网ID。
+
+        :return: The subnet_id of this ScaleOut.
+        :rtype: str
+        """
+        return self._subnet_id
+
+    @subnet_id.setter
+    def subnet_id(self, subnet_id):
+        """Sets the subnet_id of this ScaleOut.
+
+        指定子网ID。
+
+        :param subnet_id: The subnet_id of this ScaleOut.
+        :type subnet_id: str
+        """
+        self._subnet_id = subnet_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

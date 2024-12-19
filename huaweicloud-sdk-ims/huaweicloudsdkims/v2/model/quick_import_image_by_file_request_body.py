@@ -22,6 +22,7 @@ class QuickImportImageByFileRequestBody:
         'os_version': 'str',
         'image_url': 'str',
         'min_disk': 'int',
+        'license_type': 'str',
         'tags': 'list[str]',
         'type': 'str',
         'enterprise_project_id': 'str',
@@ -36,6 +37,7 @@ class QuickImportImageByFileRequestBody:
         'os_version': 'os_version',
         'image_url': 'image_url',
         'min_disk': 'min_disk',
+        'license_type': 'license_type',
         'tags': 'tags',
         'type': 'type',
         'enterprise_project_id': 'enterprise_project_id',
@@ -44,7 +46,7 @@ class QuickImportImageByFileRequestBody:
         'image_tags': 'image_tags'
     }
 
-    def __init__(self, name=None, description=None, os_version=None, image_url=None, min_disk=None, tags=None, type=None, enterprise_project_id=None, architecture=None, os_type=None, image_tags=None):
+    def __init__(self, name=None, description=None, os_version=None, image_url=None, min_disk=None, license_type=None, tags=None, type=None, enterprise_project_id=None, architecture=None, os_type=None, image_tags=None):
         """QuickImportImageByFileRequestBody
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class QuickImportImageByFileRequestBody:
         :type image_url: str
         :param min_disk: 最小系统盘大小。在使用OBS桶的外部镜像文件制作镜像时生效且为必选字段。取值为1至1024GB。
         :type min_disk: int
+        :param license_type: 操作系统使用的许可证类型。取值范围： platform：华为云官方许可证 byol：自带许可证（Bring Your Own License） 目前仅Windows操作系统支持设置该参数。
+        :type license_type: str
         :param tags: 镜像标签列表。默认为空。 tags和image_tags只能使用一个。
         :type tags: list[str]
         :param type: 制作的镜像类型。系统盘镜像为ECS/BMS，数据盘镜像为DataImage. 制作数据盘镜像时该参数必选.
@@ -80,6 +84,7 @@ class QuickImportImageByFileRequestBody:
         self._os_version = None
         self._image_url = None
         self._min_disk = None
+        self._license_type = None
         self._tags = None
         self._type = None
         self._enterprise_project_id = None
@@ -94,6 +99,8 @@ class QuickImportImageByFileRequestBody:
         self.os_version = os_version
         self.image_url = image_url
         self.min_disk = min_disk
+        if license_type is not None:
+            self.license_type = license_type
         if tags is not None:
             self.tags = tags
         if type is not None:
@@ -216,6 +223,28 @@ class QuickImportImageByFileRequestBody:
         :type min_disk: int
         """
         self._min_disk = min_disk
+
+    @property
+    def license_type(self):
+        """Gets the license_type of this QuickImportImageByFileRequestBody.
+
+        操作系统使用的许可证类型。取值范围： platform：华为云官方许可证 byol：自带许可证（Bring Your Own License） 目前仅Windows操作系统支持设置该参数。
+
+        :return: The license_type of this QuickImportImageByFileRequestBody.
+        :rtype: str
+        """
+        return self._license_type
+
+    @license_type.setter
+    def license_type(self, license_type):
+        """Sets the license_type of this QuickImportImageByFileRequestBody.
+
+        操作系统使用的许可证类型。取值范围： platform：华为云官方许可证 byol：自带许可证（Bring Your Own License） 目前仅Windows操作系统支持设置该参数。
+
+        :param license_type: The license_type of this QuickImportImageByFileRequestBody.
+        :type license_type: str
+        """
+        self._license_type = license_type
 
     @property
     def tags(self):

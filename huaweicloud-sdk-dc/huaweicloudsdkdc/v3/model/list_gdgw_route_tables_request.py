@@ -18,68 +18,54 @@ class ListGdgwRouteTablesRequest:
 
     openapi_types = {
         'gdgw_id': 'str',
-        'fields': 'list[str]',
-        'ext_fields': 'list[str]',
+        'address_family': 'list[str]',
         'nexthop': 'list[str]',
-        'destination': 'list[str]',
-        'address_family': 'list[str]'
+        'destination': 'list[str]'
     }
 
     attribute_map = {
         'gdgw_id': 'gdgw_id',
-        'fields': 'fields',
-        'ext_fields': 'ext_fields',
+        'address_family': 'address_family',
         'nexthop': 'nexthop',
-        'destination': 'destination',
-        'address_family': 'address_family'
+        'destination': 'destination'
     }
 
-    def __init__(self, gdgw_id=None, fields=None, ext_fields=None, nexthop=None, destination=None, address_family=None):
+    def __init__(self, gdgw_id=None, address_family=None, nexthop=None, destination=None):
         """ListGdgwRouteTablesRequest
 
         The model defined in huaweicloud sdk
 
-        :param gdgw_id: 全球接入网关ID
+        :param gdgw_id: 全域接入网关ID
         :type gdgw_id: str
-        :param fields: 显示字段列表
-        :type fields: list[str]
-        :param ext_fields: show response ext-fields
-        :type ext_fields: list[str]
-        :param nexthop: 下一条ID
+        :param address_family: 地址簇
+        :type address_family: list[str]
+        :param nexthop: 下一跳ID
         :type nexthop: list[str]
         :param destination: 目的地址
         :type destination: list[str]
-        :param address_family: 地址簇
-        :type address_family: list[str]
         """
         
         
 
         self._gdgw_id = None
-        self._fields = None
-        self._ext_fields = None
+        self._address_family = None
         self._nexthop = None
         self._destination = None
-        self._address_family = None
         self.discriminator = None
 
         self.gdgw_id = gdgw_id
-        if fields is not None:
-            self.fields = fields
-        if ext_fields is not None:
-            self.ext_fields = ext_fields
+        if address_family is not None:
+            self.address_family = address_family
         if nexthop is not None:
             self.nexthop = nexthop
         if destination is not None:
             self.destination = destination
-        if address_family is not None:
-            self.address_family = address_family
 
     @property
     def gdgw_id(self):
         """Gets the gdgw_id of this ListGdgwRouteTablesRequest.
 
-        全球接入网关ID
+        全域接入网关ID
 
         :return: The gdgw_id of this ListGdgwRouteTablesRequest.
         :rtype: str
@@ -90,7 +76,7 @@ class ListGdgwRouteTablesRequest:
     def gdgw_id(self, gdgw_id):
         """Sets the gdgw_id of this ListGdgwRouteTablesRequest.
 
-        全球接入网关ID
+        全域接入网关ID
 
         :param gdgw_id: The gdgw_id of this ListGdgwRouteTablesRequest.
         :type gdgw_id: str
@@ -98,54 +84,32 @@ class ListGdgwRouteTablesRequest:
         self._gdgw_id = gdgw_id
 
     @property
-    def fields(self):
-        """Gets the fields of this ListGdgwRouteTablesRequest.
+    def address_family(self):
+        """Gets the address_family of this ListGdgwRouteTablesRequest.
 
-        显示字段列表
+        地址簇
 
-        :return: The fields of this ListGdgwRouteTablesRequest.
+        :return: The address_family of this ListGdgwRouteTablesRequest.
         :rtype: list[str]
         """
-        return self._fields
+        return self._address_family
 
-    @fields.setter
-    def fields(self, fields):
-        """Sets the fields of this ListGdgwRouteTablesRequest.
+    @address_family.setter
+    def address_family(self, address_family):
+        """Sets the address_family of this ListGdgwRouteTablesRequest.
 
-        显示字段列表
+        地址簇
 
-        :param fields: The fields of this ListGdgwRouteTablesRequest.
-        :type fields: list[str]
+        :param address_family: The address_family of this ListGdgwRouteTablesRequest.
+        :type address_family: list[str]
         """
-        self._fields = fields
-
-    @property
-    def ext_fields(self):
-        """Gets the ext_fields of this ListGdgwRouteTablesRequest.
-
-        show response ext-fields
-
-        :return: The ext_fields of this ListGdgwRouteTablesRequest.
-        :rtype: list[str]
-        """
-        return self._ext_fields
-
-    @ext_fields.setter
-    def ext_fields(self, ext_fields):
-        """Sets the ext_fields of this ListGdgwRouteTablesRequest.
-
-        show response ext-fields
-
-        :param ext_fields: The ext_fields of this ListGdgwRouteTablesRequest.
-        :type ext_fields: list[str]
-        """
-        self._ext_fields = ext_fields
+        self._address_family = address_family
 
     @property
     def nexthop(self):
         """Gets the nexthop of this ListGdgwRouteTablesRequest.
 
-        下一条ID
+        下一跳ID
 
         :return: The nexthop of this ListGdgwRouteTablesRequest.
         :rtype: list[str]
@@ -156,7 +120,7 @@ class ListGdgwRouteTablesRequest:
     def nexthop(self, nexthop):
         """Sets the nexthop of this ListGdgwRouteTablesRequest.
 
-        下一条ID
+        下一跳ID
 
         :param nexthop: The nexthop of this ListGdgwRouteTablesRequest.
         :type nexthop: list[str]
@@ -184,28 +148,6 @@ class ListGdgwRouteTablesRequest:
         :type destination: list[str]
         """
         self._destination = destination
-
-    @property
-    def address_family(self):
-        """Gets the address_family of this ListGdgwRouteTablesRequest.
-
-        地址簇
-
-        :return: The address_family of this ListGdgwRouteTablesRequest.
-        :rtype: list[str]
-        """
-        return self._address_family
-
-    @address_family.setter
-    def address_family(self, address_family):
-        """Sets the address_family of this ListGdgwRouteTablesRequest.
-
-        地址簇
-
-        :param address_family: The address_family of this ListGdgwRouteTablesRequest.
-        :type address_family: list[str]
-        """
-        self._address_family = address_family
 
     def to_dict(self):
         """Returns the model properties as a dict"""

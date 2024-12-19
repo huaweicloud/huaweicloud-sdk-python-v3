@@ -32,6 +32,9 @@ class QuotaList:
         'gigabytes_ssd': 'QuotaDetailGigabytesSSD',
         'snapshots_ssd': 'QuotaDetailSnapshotsSSD',
         'volumes_ssd': 'QuotaDetailVolumesSSD',
+        'gigabytes_essd': 'QuotaDetailGigabytesESSD',
+        'snapshots_essd': 'QuotaDetailSnapshotsESSD',
+        'volumes_essd': 'QuotaDetailVolumesESSD',
         'gigabytes_gpssd': 'QuotaDetailGigabytesGPSSD',
         'snapshots_gpssd': 'QuotaDetailSnapshotsGPSSD',
         'volumes_gpssd': 'QuotaDetailVolumesGPSSD',
@@ -54,13 +57,16 @@ class QuotaList:
         'gigabytes_ssd': 'gigabytes_SSD',
         'snapshots_ssd': 'snapshots_SSD',
         'volumes_ssd': 'volumes_SSD',
+        'gigabytes_essd': 'gigabytes_ESSD',
+        'snapshots_essd': 'snapshots_ESSD',
+        'volumes_essd': 'volumes_ESSD',
         'gigabytes_gpssd': 'gigabytes_GPSSD',
         'snapshots_gpssd': 'snapshots_GPSSD',
         'volumes_gpssd': 'volumes_GPSSD',
         'per_volume_gigabytes': 'per_volume_gigabytes'
     }
 
-    def __init__(self, backup_gigabytes=None, backups=None, gigabytes=None, id=None, snapshots=None, volumes=None, gigabytes_sata=None, snapshots_sata=None, volumes_sata=None, gigabytes_sas=None, snapshots_sas=None, volumes_sas=None, gigabytes_ssd=None, snapshots_ssd=None, volumes_ssd=None, gigabytes_gpssd=None, snapshots_gpssd=None, volumes_gpssd=None, per_volume_gigabytes=None):
+    def __init__(self, backup_gigabytes=None, backups=None, gigabytes=None, id=None, snapshots=None, volumes=None, gigabytes_sata=None, snapshots_sata=None, volumes_sata=None, gigabytes_sas=None, snapshots_sas=None, volumes_sas=None, gigabytes_ssd=None, snapshots_ssd=None, volumes_ssd=None, gigabytes_essd=None, snapshots_essd=None, volumes_essd=None, gigabytes_gpssd=None, snapshots_gpssd=None, volumes_gpssd=None, per_volume_gigabytes=None):
         """QuotaList
 
         The model defined in huaweicloud sdk
@@ -95,6 +101,12 @@ class QuotaList:
         :type snapshots_ssd: :class:`huaweicloudsdkevs.v2.QuotaDetailSnapshotsSSD`
         :param volumes_ssd: 
         :type volumes_ssd: :class:`huaweicloudsdkevs.v2.QuotaDetailVolumesSSD`
+        :param gigabytes_essd: 
+        :type gigabytes_essd: :class:`huaweicloudsdkevs.v2.QuotaDetailGigabytesESSD`
+        :param snapshots_essd: 
+        :type snapshots_essd: :class:`huaweicloudsdkevs.v2.QuotaDetailSnapshotsESSD`
+        :param volumes_essd: 
+        :type volumes_essd: :class:`huaweicloudsdkevs.v2.QuotaDetailVolumesESSD`
         :param gigabytes_gpssd: 
         :type gigabytes_gpssd: :class:`huaweicloudsdkevs.v2.QuotaDetailGigabytesGPSSD`
         :param snapshots_gpssd: 
@@ -122,6 +134,9 @@ class QuotaList:
         self._gigabytes_ssd = None
         self._snapshots_ssd = None
         self._volumes_ssd = None
+        self._gigabytes_essd = None
+        self._snapshots_essd = None
+        self._volumes_essd = None
         self._gigabytes_gpssd = None
         self._snapshots_gpssd = None
         self._volumes_gpssd = None
@@ -152,6 +167,12 @@ class QuotaList:
             self.snapshots_ssd = snapshots_ssd
         if volumes_ssd is not None:
             self.volumes_ssd = volumes_ssd
+        if gigabytes_essd is not None:
+            self.gigabytes_essd = gigabytes_essd
+        if snapshots_essd is not None:
+            self.snapshots_essd = snapshots_essd
+        if volumes_essd is not None:
+            self.volumes_essd = volumes_essd
         if gigabytes_gpssd is not None:
             self.gigabytes_gpssd = gigabytes_gpssd
         if snapshots_gpssd is not None:
@@ -434,6 +455,60 @@ class QuotaList:
         :type volumes_ssd: :class:`huaweicloudsdkevs.v2.QuotaDetailVolumesSSD`
         """
         self._volumes_ssd = volumes_ssd
+
+    @property
+    def gigabytes_essd(self):
+        """Gets the gigabytes_essd of this QuotaList.
+
+        :return: The gigabytes_essd of this QuotaList.
+        :rtype: :class:`huaweicloudsdkevs.v2.QuotaDetailGigabytesESSD`
+        """
+        return self._gigabytes_essd
+
+    @gigabytes_essd.setter
+    def gigabytes_essd(self, gigabytes_essd):
+        """Sets the gigabytes_essd of this QuotaList.
+
+        :param gigabytes_essd: The gigabytes_essd of this QuotaList.
+        :type gigabytes_essd: :class:`huaweicloudsdkevs.v2.QuotaDetailGigabytesESSD`
+        """
+        self._gigabytes_essd = gigabytes_essd
+
+    @property
+    def snapshots_essd(self):
+        """Gets the snapshots_essd of this QuotaList.
+
+        :return: The snapshots_essd of this QuotaList.
+        :rtype: :class:`huaweicloudsdkevs.v2.QuotaDetailSnapshotsESSD`
+        """
+        return self._snapshots_essd
+
+    @snapshots_essd.setter
+    def snapshots_essd(self, snapshots_essd):
+        """Sets the snapshots_essd of this QuotaList.
+
+        :param snapshots_essd: The snapshots_essd of this QuotaList.
+        :type snapshots_essd: :class:`huaweicloudsdkevs.v2.QuotaDetailSnapshotsESSD`
+        """
+        self._snapshots_essd = snapshots_essd
+
+    @property
+    def volumes_essd(self):
+        """Gets the volumes_essd of this QuotaList.
+
+        :return: The volumes_essd of this QuotaList.
+        :rtype: :class:`huaweicloudsdkevs.v2.QuotaDetailVolumesESSD`
+        """
+        return self._volumes_essd
+
+    @volumes_essd.setter
+    def volumes_essd(self, volumes_essd):
+        """Sets the volumes_essd of this QuotaList.
+
+        :param volumes_essd: The volumes_essd of this QuotaList.
+        :type volumes_essd: :class:`huaweicloudsdkevs.v2.QuotaDetailVolumesESSD`
+        """
+        self._volumes_essd = volumes_essd
 
     @property
     def gigabytes_gpssd(self):

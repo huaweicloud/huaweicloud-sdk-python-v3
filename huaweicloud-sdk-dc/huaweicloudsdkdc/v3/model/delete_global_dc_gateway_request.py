@@ -29,7 +29,7 @@ class DeleteGlobalDcGatewayRequest:
 
         The model defined in huaweicloud sdk
 
-        :param global_dc_gateway_id: 全球接入网关ID
+        :param global_dc_gateway_id: 全域接入网关ID
         :type global_dc_gateway_id: str
         """
         
@@ -44,7 +44,7 @@ class DeleteGlobalDcGatewayRequest:
     def global_dc_gateway_id(self):
         """Gets the global_dc_gateway_id of this DeleteGlobalDcGatewayRequest.
 
-        全球接入网关ID
+        全域接入网关ID
 
         :return: The global_dc_gateway_id of this DeleteGlobalDcGatewayRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class DeleteGlobalDcGatewayRequest:
     def global_dc_gateway_id(self, global_dc_gateway_id):
         """Sets the global_dc_gateway_id of this DeleteGlobalDcGatewayRequest.
 
-        全球接入网关ID
+        全域接入网关ID
 
         :param global_dc_gateway_id: The global_dc_gateway_id of this DeleteGlobalDcGatewayRequest.
         :type global_dc_gateway_id: str

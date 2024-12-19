@@ -20,7 +20,7 @@ class JobRun:
         'id': 'str',
         'category': 'str',
         'sequence': 'int',
-        '_async': 'str',
+        '_async': 'bool',
         'name': 'str',
         'identifier': 'str',
         'depends_on': 'list[str]',
@@ -70,7 +70,7 @@ class JobRun:
         :param sequence: 序列号
         :type sequence: int
         :param _async: 是否异步
-        :type _async: str
+        :type _async: bool
         :param name: 任务名称
         :type name: str
         :param identifier: 任务唯一标识
@@ -233,7 +233,7 @@ class JobRun:
         是否异步
 
         :return: The _async of this JobRun.
-        :rtype: str
+        :rtype: bool
         """
         return self.__async
 
@@ -244,7 +244,7 @@ class JobRun:
         是否异步
 
         :param _async: The _async of this JobRun.
-        :type _async: str
+        :type _async: bool
         """
         self.__async = _async
 

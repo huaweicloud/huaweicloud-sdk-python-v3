@@ -83,12 +83,16 @@ class CreateVifPeer:
         self._vif_id = None
         self.discriminator = None
 
-        self.name = name
+        if name is not None:
+            self.name = name
         if description is not None:
             self.description = description
-        self.address_family = address_family
-        self.local_gateway_ip = local_gateway_ip
-        self.remote_gateway_ip = remote_gateway_ip
+        if address_family is not None:
+            self.address_family = address_family
+        if local_gateway_ip is not None:
+            self.local_gateway_ip = local_gateway_ip
+        if remote_gateway_ip is not None:
+            self.remote_gateway_ip = remote_gateway_ip
         if route_mode is not None:
             self.route_mode = route_mode
         if bgp_asn is not None:
@@ -97,7 +101,8 @@ class CreateVifPeer:
             self.bgp_md5 = bgp_md5
         if remote_ep_group is not None:
             self.remote_ep_group = remote_ep_group
-        self.vif_id = vif_id
+        if vif_id is not None:
+            self.vif_id = vif_id
 
     @property
     def name(self):

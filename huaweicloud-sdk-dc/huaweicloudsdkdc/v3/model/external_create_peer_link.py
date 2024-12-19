@@ -22,7 +22,6 @@ class ExternalCreatePeerLink:
         'name': 'str',
         'description': 'str',
         'global_dc_gateway_id': 'str',
-        'instance_id': 'str',
         'bandwidth_info': 'BandwidthInfoExternal',
         'peer_site': 'PeerSiteExternal',
         'status': 'str',
@@ -37,7 +36,6 @@ class ExternalCreatePeerLink:
         'name': 'name',
         'description': 'description',
         'global_dc_gateway_id': 'global_dc_gateway_id',
-        'instance_id': 'instance_id',
         'bandwidth_info': 'bandwidth_info',
         'peer_site': 'peer_site',
         'status': 'status',
@@ -46,34 +44,32 @@ class ExternalCreatePeerLink:
         'updated_time': 'updated_time'
     }
 
-    def __init__(self, id=None, tenant_id=None, name=None, description=None, global_dc_gateway_id=None, instance_id=None, bandwidth_info=None, peer_site=None, status=None, reason=None, created_time=None, updated_time=None):
+    def __init__(self, id=None, tenant_id=None, name=None, description=None, global_dc_gateway_id=None, bandwidth_info=None, peer_site=None, status=None, reason=None, created_time=None, updated_time=None):
         """ExternalCreatePeerLink
 
         The model defined in huaweicloud sdk
 
-        :param id: 唯一ID
+        :param id: 专线对等连接
         :type id: str
         :param tenant_id: 租户ID
         :type tenant_id: str
         :param name: 名称
         :type name: str
-        :param description: 描述
+        :param description: 描述信息
         :type description: str
-        :param global_dc_gateway_id: 全球接入网关ID
+        :param global_dc_gateway_id: 全域接入网关ID
         :type global_dc_gateway_id: str
-        :param instance_id: 实例ID
-        :type instance_id: str
         :param bandwidth_info: 
         :type bandwidth_info: :class:`huaweicloudsdkdc.v3.BandwidthInfoExternal`
         :param peer_site: 
         :type peer_site: :class:`huaweicloudsdkdc.v3.PeerSiteExternal`
-        :param status: 状态： ACTIVE-正常
+        :param status: &#39;状态信息&#39; - ACTIVE 正常 - ERROR 异常
         :type status: str
-        :param reason: 原因
+        :param reason: 失败原因
         :type reason: str
         :param created_time: 创建时间
         :type created_time: datetime
-        :param updated_time: 修改时间
+        :param updated_time: 更新时间
         :type updated_time: datetime
         """
         
@@ -84,7 +80,6 @@ class ExternalCreatePeerLink:
         self._name = None
         self._description = None
         self._global_dc_gateway_id = None
-        self._instance_id = None
         self._bandwidth_info = None
         self._peer_site = None
         self._status = None
@@ -102,8 +97,6 @@ class ExternalCreatePeerLink:
             self.description = description
         if global_dc_gateway_id is not None:
             self.global_dc_gateway_id = global_dc_gateway_id
-        if instance_id is not None:
-            self.instance_id = instance_id
         if bandwidth_info is not None:
             self.bandwidth_info = bandwidth_info
         self.peer_site = peer_site
@@ -120,7 +113,7 @@ class ExternalCreatePeerLink:
     def id(self):
         """Gets the id of this ExternalCreatePeerLink.
 
-        唯一ID
+        专线对等连接
 
         :return: The id of this ExternalCreatePeerLink.
         :rtype: str
@@ -131,7 +124,7 @@ class ExternalCreatePeerLink:
     def id(self, id):
         """Sets the id of this ExternalCreatePeerLink.
 
-        唯一ID
+        专线对等连接
 
         :param id: The id of this ExternalCreatePeerLink.
         :type id: str
@@ -186,7 +179,7 @@ class ExternalCreatePeerLink:
     def description(self):
         """Gets the description of this ExternalCreatePeerLink.
 
-        描述
+        描述信息
 
         :return: The description of this ExternalCreatePeerLink.
         :rtype: str
@@ -197,7 +190,7 @@ class ExternalCreatePeerLink:
     def description(self, description):
         """Sets the description of this ExternalCreatePeerLink.
 
-        描述
+        描述信息
 
         :param description: The description of this ExternalCreatePeerLink.
         :type description: str
@@ -208,7 +201,7 @@ class ExternalCreatePeerLink:
     def global_dc_gateway_id(self):
         """Gets the global_dc_gateway_id of this ExternalCreatePeerLink.
 
-        全球接入网关ID
+        全域接入网关ID
 
         :return: The global_dc_gateway_id of this ExternalCreatePeerLink.
         :rtype: str
@@ -219,34 +212,12 @@ class ExternalCreatePeerLink:
     def global_dc_gateway_id(self, global_dc_gateway_id):
         """Sets the global_dc_gateway_id of this ExternalCreatePeerLink.
 
-        全球接入网关ID
+        全域接入网关ID
 
         :param global_dc_gateway_id: The global_dc_gateway_id of this ExternalCreatePeerLink.
         :type global_dc_gateway_id: str
         """
         self._global_dc_gateway_id = global_dc_gateway_id
-
-    @property
-    def instance_id(self):
-        """Gets the instance_id of this ExternalCreatePeerLink.
-
-        实例ID
-
-        :return: The instance_id of this ExternalCreatePeerLink.
-        :rtype: str
-        """
-        return self._instance_id
-
-    @instance_id.setter
-    def instance_id(self, instance_id):
-        """Sets the instance_id of this ExternalCreatePeerLink.
-
-        实例ID
-
-        :param instance_id: The instance_id of this ExternalCreatePeerLink.
-        :type instance_id: str
-        """
-        self._instance_id = instance_id
 
     @property
     def bandwidth_info(self):
@@ -288,7 +259,7 @@ class ExternalCreatePeerLink:
     def status(self):
         """Gets the status of this ExternalCreatePeerLink.
 
-        状态： ACTIVE-正常
+        '状态信息' - ACTIVE 正常 - ERROR 异常
 
         :return: The status of this ExternalCreatePeerLink.
         :rtype: str
@@ -299,7 +270,7 @@ class ExternalCreatePeerLink:
     def status(self, status):
         """Sets the status of this ExternalCreatePeerLink.
 
-        状态： ACTIVE-正常
+        '状态信息' - ACTIVE 正常 - ERROR 异常
 
         :param status: The status of this ExternalCreatePeerLink.
         :type status: str
@@ -310,7 +281,7 @@ class ExternalCreatePeerLink:
     def reason(self):
         """Gets the reason of this ExternalCreatePeerLink.
 
-        原因
+        失败原因
 
         :return: The reason of this ExternalCreatePeerLink.
         :rtype: str
@@ -321,7 +292,7 @@ class ExternalCreatePeerLink:
     def reason(self, reason):
         """Sets the reason of this ExternalCreatePeerLink.
 
-        原因
+        失败原因
 
         :param reason: The reason of this ExternalCreatePeerLink.
         :type reason: str
@@ -354,7 +325,7 @@ class ExternalCreatePeerLink:
     def updated_time(self):
         """Gets the updated_time of this ExternalCreatePeerLink.
 
-        修改时间
+        更新时间
 
         :return: The updated_time of this ExternalCreatePeerLink.
         :rtype: datetime
@@ -365,7 +336,7 @@ class ExternalCreatePeerLink:
     def updated_time(self, updated_time):
         """Sets the updated_time of this ExternalCreatePeerLink.
 
-        修改时间
+        更新时间
 
         :param updated_time: The updated_time of this ExternalCreatePeerLink.
         :type updated_time: datetime
