@@ -84,7 +84,7 @@ class DcClient(Client):
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json; charset=utf-8'])
+            ['application/json'])
 
         auth_settings = []
 
@@ -244,7 +244,7 @@ class DcClient(Client):
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json; charset=utf-8'])
+            ['application/json'])
 
         auth_settings = []
 
@@ -1264,7 +1264,7 @@ class DcClient(Client):
     def list_direct_connect_locations(self, request):
         """查询专线接入点位置列表
 
-        查询本区域下所有专线的接入点的信息，分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
+        查询本区域下所有专线的接入点的信息，分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1445,15 +1445,21 @@ class DcClient(Client):
             path_params['gdgw_id'] = local_var_params['gdgw_id']
 
         query_params = []
-        if 'address_family' in local_var_params:
-            query_params.append(('address_family', local_var_params['address_family']))
-            collection_formats['address_family'] = 'multi'
+        if 'fields' in local_var_params:
+            query_params.append(('fields', local_var_params['fields']))
+            collection_formats['fields'] = 'multi'
+        if 'ext_fields' in local_var_params:
+            query_params.append(('ext_fields', local_var_params['ext_fields']))
+            collection_formats['ext_fields'] = 'multi'
         if 'nexthop' in local_var_params:
             query_params.append(('nexthop', local_var_params['nexthop']))
             collection_formats['nexthop'] = 'multi'
         if 'destination' in local_var_params:
             query_params.append(('destination', local_var_params['destination']))
             collection_formats['destination'] = 'multi'
+        if 'address_family' in local_var_params:
+            query_params.append(('address_family', local_var_params['address_family']))
+            collection_formats['address_family'] = 'multi'
 
         header_params = {}
 
@@ -1484,11 +1490,7 @@ class DcClient(Client):
     def update_gdgw_route_table(self, request):
         """修改全域接入网关路由表
 
-        # 支持的修改操作：
-        **注意：新增、删除、修改操作互斥，一次请求只能执行其中一类操作**
-        + 1. 新增下一跳路由
-        + 2. 删除下一跳路由
-        + 3. 修改路由描述
+        支持的修改操作：新增、删除、修改
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1537,7 +1539,7 @@ class DcClient(Client):
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json; charset=utf-8'])
+            ['application/json'])
 
         auth_settings = []
 

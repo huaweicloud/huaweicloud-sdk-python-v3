@@ -21,13 +21,17 @@ class ListVoiceTrainingJobRequest:
         'limit': 'int',
         'create_until': 'str',
         'create_since': 'str',
+        'update_until': 'str',
+        'update_since': 'str',
         'x_app_user_id': 'str',
         'state': 'str',
         'job_id': 'str',
         'voice_name': 'str',
         'tag': 'str',
         'job_type': 'str',
-        'batch_name': 'str'
+        'batch_name': 'str',
+        'sort_key': 'str',
+        'sort_dir': 'str'
     }
 
     attribute_map = {
@@ -35,16 +39,20 @@ class ListVoiceTrainingJobRequest:
         'limit': 'limit',
         'create_until': 'create_until',
         'create_since': 'create_since',
+        'update_until': 'update_until',
+        'update_since': 'update_since',
         'x_app_user_id': 'X-App-UserId',
         'state': 'state',
         'job_id': 'job_id',
         'voice_name': 'voice_name',
         'tag': 'tag',
         'job_type': 'job_type',
-        'batch_name': 'batch_name'
+        'batch_name': 'batch_name',
+        'sort_key': 'sort_key',
+        'sort_dir': 'sort_dir'
     }
 
-    def __init__(self, offset=None, limit=None, create_until=None, create_since=None, x_app_user_id=None, state=None, job_id=None, voice_name=None, tag=None, job_type=None, batch_name=None):
+    def __init__(self, offset=None, limit=None, create_until=None, create_since=None, update_until=None, update_since=None, x_app_user_id=None, state=None, job_id=None, voice_name=None, tag=None, job_type=None, batch_name=None, sort_key=None, sort_dir=None):
         """ListVoiceTrainingJobRequest
 
         The model defined in huaweicloud sdk
@@ -57,6 +65,10 @@ class ListVoiceTrainingJobRequest:
         :type create_until: str
         :param create_since: 过滤创建时间&gt;&#x3D;输入时间的记录。
         :type create_since: str
+        :param update_until: 过滤更新时间&lt;&#x3D;输入时间的记录。
+        :type update_until: str
+        :param update_since: 过滤更新时间&gt;&#x3D;输入时间的记录。
+        :type update_since: str
         :param x_app_user_id: 第三方用户ID。不允许输入中文。
         :type x_app_user_id: str
         :param state: 任务状态，默认所有状态。 可多个状态查询，使用英文逗号分隔。 如state&#x3D;FAILED,WAITING
@@ -71,6 +83,10 @@ class ListVoiceTrainingJobRequest:
         :type job_type: str
         :param batch_name: 批次名称。
         :type batch_name: str
+        :param sort_key: 排序字段，当前支持：ceate_time/update_time
+        :type sort_key: str
+        :param sort_dir: 排序规则：desc(降序)/asc(升序)
+        :type sort_dir: str
         """
         
         
@@ -79,6 +95,8 @@ class ListVoiceTrainingJobRequest:
         self._limit = None
         self._create_until = None
         self._create_since = None
+        self._update_until = None
+        self._update_since = None
         self._x_app_user_id = None
         self._state = None
         self._job_id = None
@@ -86,6 +104,8 @@ class ListVoiceTrainingJobRequest:
         self._tag = None
         self._job_type = None
         self._batch_name = None
+        self._sort_key = None
+        self._sort_dir = None
         self.discriminator = None
 
         if offset is not None:
@@ -96,6 +116,10 @@ class ListVoiceTrainingJobRequest:
             self.create_until = create_until
         if create_since is not None:
             self.create_since = create_since
+        if update_until is not None:
+            self.update_until = update_until
+        if update_since is not None:
+            self.update_since = update_since
         if x_app_user_id is not None:
             self.x_app_user_id = x_app_user_id
         if state is not None:
@@ -110,6 +134,10 @@ class ListVoiceTrainingJobRequest:
             self.job_type = job_type
         if batch_name is not None:
             self.batch_name = batch_name
+        if sort_key is not None:
+            self.sort_key = sort_key
+        if sort_dir is not None:
+            self.sort_dir = sort_dir
 
     @property
     def offset(self):
@@ -198,6 +226,50 @@ class ListVoiceTrainingJobRequest:
         :type create_since: str
         """
         self._create_since = create_since
+
+    @property
+    def update_until(self):
+        """Gets the update_until of this ListVoiceTrainingJobRequest.
+
+        过滤更新时间<=输入时间的记录。
+
+        :return: The update_until of this ListVoiceTrainingJobRequest.
+        :rtype: str
+        """
+        return self._update_until
+
+    @update_until.setter
+    def update_until(self, update_until):
+        """Sets the update_until of this ListVoiceTrainingJobRequest.
+
+        过滤更新时间<=输入时间的记录。
+
+        :param update_until: The update_until of this ListVoiceTrainingJobRequest.
+        :type update_until: str
+        """
+        self._update_until = update_until
+
+    @property
+    def update_since(self):
+        """Gets the update_since of this ListVoiceTrainingJobRequest.
+
+        过滤更新时间>=输入时间的记录。
+
+        :return: The update_since of this ListVoiceTrainingJobRequest.
+        :rtype: str
+        """
+        return self._update_since
+
+    @update_since.setter
+    def update_since(self, update_since):
+        """Sets the update_since of this ListVoiceTrainingJobRequest.
+
+        过滤更新时间>=输入时间的记录。
+
+        :param update_since: The update_since of this ListVoiceTrainingJobRequest.
+        :type update_since: str
+        """
+        self._update_since = update_since
 
     @property
     def x_app_user_id(self):
@@ -352,6 +424,50 @@ class ListVoiceTrainingJobRequest:
         :type batch_name: str
         """
         self._batch_name = batch_name
+
+    @property
+    def sort_key(self):
+        """Gets the sort_key of this ListVoiceTrainingJobRequest.
+
+        排序字段，当前支持：ceate_time/update_time
+
+        :return: The sort_key of this ListVoiceTrainingJobRequest.
+        :rtype: str
+        """
+        return self._sort_key
+
+    @sort_key.setter
+    def sort_key(self, sort_key):
+        """Sets the sort_key of this ListVoiceTrainingJobRequest.
+
+        排序字段，当前支持：ceate_time/update_time
+
+        :param sort_key: The sort_key of this ListVoiceTrainingJobRequest.
+        :type sort_key: str
+        """
+        self._sort_key = sort_key
+
+    @property
+    def sort_dir(self):
+        """Gets the sort_dir of this ListVoiceTrainingJobRequest.
+
+        排序规则：desc(降序)/asc(升序)
+
+        :return: The sort_dir of this ListVoiceTrainingJobRequest.
+        :rtype: str
+        """
+        return self._sort_dir
+
+    @sort_dir.setter
+    def sort_dir(self, sort_dir):
+        """Sets the sort_dir of this ListVoiceTrainingJobRequest.
+
+        排序规则：desc(降序)/asc(升序)
+
+        :param sort_dir: The sort_dir of this ListVoiceTrainingJobRequest.
+        :type sort_dir: str
+        """
+        self._sort_dir = sort_dir
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -27,6 +27,7 @@ class QuickImportImageByFileRequestBody:
         'type': 'str',
         'enterprise_project_id': 'str',
         'architecture': 'str',
+        'hw_firmware_type': 'str',
         'os_type': 'str',
         'image_tags': 'list[ResourceTag]'
     }
@@ -42,11 +43,12 @@ class QuickImportImageByFileRequestBody:
         'type': 'type',
         'enterprise_project_id': 'enterprise_project_id',
         'architecture': 'architecture',
+        'hw_firmware_type': 'hw_firmware_type',
         'os_type': 'os_type',
         'image_tags': 'image_tags'
     }
 
-    def __init__(self, name=None, description=None, os_version=None, image_url=None, min_disk=None, license_type=None, tags=None, type=None, enterprise_project_id=None, architecture=None, os_type=None, image_tags=None):
+    def __init__(self, name=None, description=None, os_version=None, image_url=None, min_disk=None, license_type=None, tags=None, type=None, enterprise_project_id=None, architecture=None, hw_firmware_type=None, os_type=None, image_tags=None):
         """QuickImportImageByFileRequestBody
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class QuickImportImageByFileRequestBody:
         :type enterprise_project_id: str
         :param architecture: 镜像的架构类型。取值包括： x86 arm 默认使用“x86”。
         :type architecture: str
+        :param hw_firmware_type: 云主机云服务器的启动方式。目前支持： bios：表示bios引导启动。 uefi：表示uefi引导启动。
+        :type hw_firmware_type: str
         :param os_type: 操作系统版本。 创建数据盘镜像时该参数取值为Linux或Windows，默认Linux。
         :type os_type: str
         :param image_tags: 新规范的镜像标签列表。默认为空。 tags和image_tags只能使用一个。
@@ -89,6 +93,7 @@ class QuickImportImageByFileRequestBody:
         self._type = None
         self._enterprise_project_id = None
         self._architecture = None
+        self._hw_firmware_type = None
         self._os_type = None
         self._image_tags = None
         self.discriminator = None
@@ -109,6 +114,8 @@ class QuickImportImageByFileRequestBody:
             self.enterprise_project_id = enterprise_project_id
         if architecture is not None:
             self.architecture = architecture
+        if hw_firmware_type is not None:
+            self.hw_firmware_type = hw_firmware_type
         if os_type is not None:
             self.os_type = os_type
         if image_tags is not None:
@@ -333,6 +340,28 @@ class QuickImportImageByFileRequestBody:
         :type architecture: str
         """
         self._architecture = architecture
+
+    @property
+    def hw_firmware_type(self):
+        """Gets the hw_firmware_type of this QuickImportImageByFileRequestBody.
+
+        云主机云服务器的启动方式。目前支持： bios：表示bios引导启动。 uefi：表示uefi引导启动。
+
+        :return: The hw_firmware_type of this QuickImportImageByFileRequestBody.
+        :rtype: str
+        """
+        return self._hw_firmware_type
+
+    @hw_firmware_type.setter
+    def hw_firmware_type(self, hw_firmware_type):
+        """Sets the hw_firmware_type of this QuickImportImageByFileRequestBody.
+
+        云主机云服务器的启动方式。目前支持： bios：表示bios引导启动。 uefi：表示uefi引导启动。
+
+        :param hw_firmware_type: The hw_firmware_type of this QuickImportImageByFileRequestBody.
+        :type hw_firmware_type: str
+        """
+        self._hw_firmware_type = hw_firmware_type
 
     @property
     def os_type(self):

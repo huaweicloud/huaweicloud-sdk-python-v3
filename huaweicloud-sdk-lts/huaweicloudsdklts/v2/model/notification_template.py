@@ -81,7 +81,8 @@ class NotificationTemplate:
         self.name = name
         if type is not None:
             self.type = type
-        self.desc = desc
+        if desc is not None:
+            self.desc = desc
         self.source = source
         self.locale = locale
         self.templates = templates

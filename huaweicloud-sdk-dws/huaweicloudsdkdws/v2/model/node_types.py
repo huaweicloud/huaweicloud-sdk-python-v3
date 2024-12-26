@@ -21,6 +21,7 @@ class NodeTypes:
         'detail': 'list[Detail]',
         'id': 'str',
         'datastore_type': 'str',
+        'architecture': 'str',
         'available_zones': 'list[NodeTypeAvailableZones]',
         'ram': 'int',
         'vcpus': 'int',
@@ -34,6 +35,7 @@ class NodeTypes:
         'detail': 'detail',
         'id': 'id',
         'datastore_type': 'datastore_type',
+        'architecture': 'architecture',
         'available_zones': 'available_zones',
         'ram': 'ram',
         'vcpus': 'vcpus',
@@ -42,7 +44,7 @@ class NodeTypes:
         'elastic_volume_specs': 'elastic_volume_specs'
     }
 
-    def __init__(self, spec_name=None, detail=None, id=None, datastore_type=None, available_zones=None, ram=None, vcpus=None, datastores=None, volume=None, elastic_volume_specs=None):
+    def __init__(self, spec_name=None, detail=None, id=None, datastore_type=None, architecture=None, available_zones=None, ram=None, vcpus=None, datastores=None, volume=None, elastic_volume_specs=None):
         """NodeTypes
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class NodeTypes:
         :type id: str
         :param datastore_type: 产品类型 - dws：云数仓。 - hybrid：实时数仓。 - stream：IoT数仓。
         :type datastore_type: str
+        :param architecture: 架构类型 - x86。 - arm。
+        :type architecture: str
         :param available_zones: 支持的可用区及状态信息。
         :type available_zones: list[:class:`huaweicloudsdkdws.v2.NodeTypeAvailableZones`]
         :param ram: 内存大小。
@@ -75,6 +79,7 @@ class NodeTypes:
         self._detail = None
         self._id = None
         self._datastore_type = None
+        self._architecture = None
         self._available_zones = None
         self._ram = None
         self._vcpus = None
@@ -87,6 +92,7 @@ class NodeTypes:
         self.detail = detail
         self.id = id
         self.datastore_type = datastore_type
+        self.architecture = architecture
         self.available_zones = available_zones
         self.ram = ram
         self.vcpus = vcpus
@@ -181,6 +187,28 @@ class NodeTypes:
         :type datastore_type: str
         """
         self._datastore_type = datastore_type
+
+    @property
+    def architecture(self):
+        """Gets the architecture of this NodeTypes.
+
+        架构类型 - x86。 - arm。
+
+        :return: The architecture of this NodeTypes.
+        :rtype: str
+        """
+        return self._architecture
+
+    @architecture.setter
+    def architecture(self, architecture):
+        """Sets the architecture of this NodeTypes.
+
+        架构类型 - x86。 - arm。
+
+        :param architecture: The architecture of this NodeTypes.
+        :type architecture: str
+        """
+        self._architecture = architecture
 
     @property
     def available_zones(self):

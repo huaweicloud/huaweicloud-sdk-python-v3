@@ -18,7 +18,7 @@ class Policy:
 
     openapi_types = {
         'period': 'str',
-        'retention_days': 'str'
+        'retention_days': 'int'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class Policy:
         :param period: 备份周期的crontab表达式
         :type period: str
         :param retention_days: 保留时长（天）
-        :type retention_days: str
+        :type retention_days: int
         """
         
         
@@ -75,7 +75,7 @@ class Policy:
         保留时长（天）
 
         :return: The retention_days of this Policy.
-        :rtype: str
+        :rtype: int
         """
         return self._retention_days
 
@@ -86,7 +86,7 @@ class Policy:
         保留时长（天）
 
         :param retention_days: The retention_days of this Policy.
-        :type retention_days: str
+        :type retention_days: int
         """
         self._retention_days = retention_days
 

@@ -21,7 +21,8 @@ class PeerSiteExternal:
         'link_id': 'str',
         'region_id': 'str',
         'project_id': 'str',
-        'site_code': 'str'
+        'site_code': 'str',
+        'type': 'str'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class PeerSiteExternal:
         'link_id': 'link_id',
         'region_id': 'region_id',
         'project_id': 'project_id',
-        'site_code': 'site_code'
+        'site_code': 'site_code',
+        'type': 'type'
     }
 
-    def __init__(self, gateway_id=None, link_id=None, region_id=None, project_id=None, site_code=None):
+    def __init__(self, gateway_id=None, link_id=None, region_id=None, project_id=None, site_code=None, type=None):
         """PeerSiteExternal
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class PeerSiteExternal:
         :type project_id: str
         :param site_code: 网点编码
         :type site_code: str
+        :param type: 连接类型
+        :type type: str
         """
         
         
@@ -56,6 +60,7 @@ class PeerSiteExternal:
         self._region_id = None
         self._project_id = None
         self._site_code = None
+        self._type = None
         self.discriminator = None
 
         if gateway_id is not None:
@@ -68,6 +73,8 @@ class PeerSiteExternal:
             self.project_id = project_id
         if site_code is not None:
             self.site_code = site_code
+        if type is not None:
+            self.type = type
 
     @property
     def gateway_id(self):
@@ -178,6 +185,28 @@ class PeerSiteExternal:
         :type site_code: str
         """
         self._site_code = site_code
+
+    @property
+    def type(self):
+        """Gets the type of this PeerSiteExternal.
+
+        连接类型
+
+        :return: The type of this PeerSiteExternal.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this PeerSiteExternal.
+
+        连接类型
+
+        :param type: The type of this PeerSiteExternal.
+        :type type: str
+        """
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

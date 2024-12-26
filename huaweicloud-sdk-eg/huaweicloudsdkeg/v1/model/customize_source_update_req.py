@@ -18,7 +18,7 @@ class CustomizeSourceUpdateReq:
 
     openapi_types = {
         'description': 'str',
-        'detail': 'object'
+        'detail': 'RocketMqDetail'
     }
 
     attribute_map = {
@@ -33,8 +33,8 @@ class CustomizeSourceUpdateReq:
 
         :param description: 事件源描述
         :type description: str
-        :param detail: json格式封装消息实例更新信息：如RabbitMQ实例的虚拟主机vhost字段、队列queue字段、用户密码
-        :type detail: object
+        :param detail: 
+        :type detail: :class:`huaweicloudsdkeg.v1.RocketMqDetail`
         """
         
         
@@ -74,10 +74,8 @@ class CustomizeSourceUpdateReq:
     def detail(self):
         """Gets the detail of this CustomizeSourceUpdateReq.
 
-        json格式封装消息实例更新信息：如RabbitMQ实例的虚拟主机vhost字段、队列queue字段、用户密码
-
         :return: The detail of this CustomizeSourceUpdateReq.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkeg.v1.RocketMqDetail`
         """
         return self._detail
 
@@ -85,10 +83,8 @@ class CustomizeSourceUpdateReq:
     def detail(self, detail):
         """Sets the detail of this CustomizeSourceUpdateReq.
 
-        json格式封装消息实例更新信息：如RabbitMQ实例的虚拟主机vhost字段、队列queue字段、用户密码
-
         :param detail: The detail of this CustomizeSourceUpdateReq.
-        :type detail: object
+        :type detail: :class:`huaweicloudsdkeg.v1.RocketMqDetail`
         """
         self._detail = detail
 

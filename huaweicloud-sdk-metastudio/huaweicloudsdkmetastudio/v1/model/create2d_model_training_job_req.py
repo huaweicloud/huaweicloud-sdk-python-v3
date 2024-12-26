@@ -81,7 +81,7 @@ class Create2dModelTrainingJobReq:
         :type audio_source_type: str
         :param voice_properties: 
         :type voice_properties: :class:`huaweicloudsdkmetastudio.v1.VoiceProperties`
-        :param supported_service: 该任务所生成的模型支持的业务类型，可多选
+        :param supported_service: 该任务所生成的模型支持的业务类型，可多选。  Flexus版数字人仅支持选择“VIDEO_2D”。
         :type supported_service: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
         """
         
@@ -417,7 +417,7 @@ class Create2dModelTrainingJobReq:
     def supported_service(self):
         """Gets the supported_service of this Create2dModelTrainingJobReq.
 
-        该任务所生成的模型支持的业务类型，可多选
+        该任务所生成的模型支持的业务类型，可多选。  Flexus版数字人仅支持选择“VIDEO_2D”。
 
         :return: The supported_service of this Create2dModelTrainingJobReq.
         :rtype: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
@@ -428,7 +428,7 @@ class Create2dModelTrainingJobReq:
     def supported_service(self, supported_service):
         """Sets the supported_service of this Create2dModelTrainingJobReq.
 
-        该任务所生成的模型支持的业务类型，可多选
+        该任务所生成的模型支持的业务类型，可多选。  Flexus版数字人仅支持选择“VIDEO_2D”。
 
         :param supported_service: The supported_service of this Create2dModelTrainingJobReq.
         :type supported_service: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]

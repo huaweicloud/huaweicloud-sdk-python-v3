@@ -29,6 +29,7 @@ class VoiceModelAssetMeta:
         'voice_capability': 'VoiceCapability',
         'external_voice_meta': 'ExternalVoiceAssetMeta',
         'is_support_vc_process': 'bool',
+        'is_support_thai_auto_split': 'bool',
         'is_flexus': 'bool'
     }
 
@@ -45,10 +46,11 @@ class VoiceModelAssetMeta:
         'voice_capability': 'voice_capability',
         'external_voice_meta': 'external_voice_meta',
         'is_support_vc_process': 'is_support_vc_process',
+        'is_support_thai_auto_split': 'is_support_thai_auto_split',
         'is_flexus': 'is_flexus'
     }
 
-    def __init__(self, order=None, model_type=None, sex=None, language=None, languages=None, speed_ratio=None, volume_ratio=None, is_realtime_voice=None, style=None, voice_capability=None, external_voice_meta=None, is_support_vc_process=None, is_flexus=None):
+    def __init__(self, order=None, model_type=None, sex=None, language=None, languages=None, speed_ratio=None, volume_ratio=None, is_realtime_voice=None, style=None, voice_capability=None, external_voice_meta=None, is_support_vc_process=None, is_support_thai_auto_split=None, is_flexus=None):
         """VoiceModelAssetMeta
 
         The model defined in huaweicloud sdk
@@ -77,6 +79,8 @@ class VoiceModelAssetMeta:
         :type external_voice_meta: :class:`huaweicloudsdkmetastudio.v1.ExternalVoiceAssetMeta`
         :param is_support_vc_process: 是否支持vc。
         :type is_support_vc_process: bool
+        :param is_support_thai_auto_split: 是否支持泰语文本自动分句。
+        :type is_support_thai_auto_split: bool
         :param is_flexus: 是否是Flexus版本声音。
         :type is_flexus: bool
         """
@@ -95,6 +99,7 @@ class VoiceModelAssetMeta:
         self._voice_capability = None
         self._external_voice_meta = None
         self._is_support_vc_process = None
+        self._is_support_thai_auto_split = None
         self._is_flexus = None
         self.discriminator = None
 
@@ -122,6 +127,8 @@ class VoiceModelAssetMeta:
             self.external_voice_meta = external_voice_meta
         if is_support_vc_process is not None:
             self.is_support_vc_process = is_support_vc_process
+        if is_support_thai_auto_split is not None:
+            self.is_support_thai_auto_split = is_support_thai_auto_split
         if is_flexus is not None:
             self.is_flexus = is_flexus
 
@@ -380,6 +387,28 @@ class VoiceModelAssetMeta:
         :type is_support_vc_process: bool
         """
         self._is_support_vc_process = is_support_vc_process
+
+    @property
+    def is_support_thai_auto_split(self):
+        """Gets the is_support_thai_auto_split of this VoiceModelAssetMeta.
+
+        是否支持泰语文本自动分句。
+
+        :return: The is_support_thai_auto_split of this VoiceModelAssetMeta.
+        :rtype: bool
+        """
+        return self._is_support_thai_auto_split
+
+    @is_support_thai_auto_split.setter
+    def is_support_thai_auto_split(self, is_support_thai_auto_split):
+        """Sets the is_support_thai_auto_split of this VoiceModelAssetMeta.
+
+        是否支持泰语文本自动分句。
+
+        :param is_support_thai_auto_split: The is_support_thai_auto_split of this VoiceModelAssetMeta.
+        :type is_support_thai_auto_split: bool
+        """
+        self._is_support_thai_auto_split = is_support_thai_auto_split
 
     @property
     def is_flexus(self):

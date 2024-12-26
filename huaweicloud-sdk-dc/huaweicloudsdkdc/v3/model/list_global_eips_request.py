@@ -69,7 +69,7 @@ class ListGlobalEipsRequest:
         :type sort_dir: list[str]
         :param connect_gateway_id: 互联网关ID
         :type connect_gateway_id: str
-        :param status: 根椐资源状态过淲实例
+        :param status: 根椐资源状态过滤实例
         :type status: list[str]
         :param global_eip_id: 全局弹性IP的ID
         :type global_eip_id: list[str]
@@ -319,7 +319,7 @@ class ListGlobalEipsRequest:
     def status(self):
         """Gets the status of this ListGlobalEipsRequest.
 
-        根椐资源状态过淲实例
+        根椐资源状态过滤实例
 
         :return: The status of this ListGlobalEipsRequest.
         :rtype: list[str]
@@ -330,7 +330,7 @@ class ListGlobalEipsRequest:
     def status(self, status):
         """Sets the status of this ListGlobalEipsRequest.
 
-        根椐资源状态过淲实例
+        根椐资源状态过滤实例
 
         :param status: The status of this ListGlobalEipsRequest.
         :type status: list[str]

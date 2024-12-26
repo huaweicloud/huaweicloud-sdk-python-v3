@@ -23,7 +23,8 @@ class ListSubscriptionsRequest:
         'sort': 'str',
         'name': 'str',
         'fuzzy_name': 'str',
-        'connection_id': 'str'
+        'connection_id': 'str',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class ListSubscriptionsRequest:
         'sort': 'sort',
         'name': 'name',
         'fuzzy_name': 'fuzzy_name',
-        'connection_id': 'connection_id'
+        'connection_id': 'connection_id',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, channel_id=None, offset=None, limit=None, sort=None, name=None, fuzzy_name=None, connection_id=None):
+    def __init__(self, channel_id=None, offset=None, limit=None, sort=None, name=None, fuzzy_name=None, connection_id=None, enterprise_project_id=None):
         """ListSubscriptionsRequest
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class ListSubscriptionsRequest:
         :type fuzzy_name: str
         :param connection_id: 目标连接 id
         :type connection_id: str
+        :param enterprise_project_id: 创建订阅时所使用的企业项目id
+        :type enterprise_project_id: str
         """
         
         
@@ -66,6 +70,7 @@ class ListSubscriptionsRequest:
         self._name = None
         self._fuzzy_name = None
         self._connection_id = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         if channel_id is not None:
@@ -82,6 +87,8 @@ class ListSubscriptionsRequest:
             self.fuzzy_name = fuzzy_name
         if connection_id is not None:
             self.connection_id = connection_id
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def channel_id(self):
@@ -236,6 +243,28 @@ class ListSubscriptionsRequest:
         :type connection_id: str
         """
         self._connection_id = connection_id
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListSubscriptionsRequest.
+
+        创建订阅时所使用的企业项目id
+
+        :return: The enterprise_project_id of this ListSubscriptionsRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListSubscriptionsRequest.
+
+        创建订阅时所使用的企业项目id
+
+        :param enterprise_project_id: The enterprise_project_id of this ListSubscriptionsRequest.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

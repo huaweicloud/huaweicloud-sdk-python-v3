@@ -67,7 +67,7 @@ class Update2dModelTrainingJobReq:
         :type tags: list[str]
         :param samples_basic_info: 动作视频样例可修改信息。
         :type samples_basic_info: list[:class:`huaweicloudsdkmetastudio.v1.ActionBasicSampleInfo`]
-        :param supported_service: 该任务所生成的模型支持的业务类型，可多选
+        :param supported_service: 该任务所生成的模型支持的业务类型，可多选。  Flexus版数字人仅支持选择“VIDEO_2D”。
         :type supported_service: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
         :param audio_source_type: 声音来源类型 * VIDEO：视频中抽取音频 * AUDIO：单独上传的音频
         :type audio_source_type: str
@@ -313,7 +313,7 @@ class Update2dModelTrainingJobReq:
     def supported_service(self):
         """Gets the supported_service of this Update2dModelTrainingJobReq.
 
-        该任务所生成的模型支持的业务类型，可多选
+        该任务所生成的模型支持的业务类型，可多选。  Flexus版数字人仅支持选择“VIDEO_2D”。
 
         :return: The supported_service of this Update2dModelTrainingJobReq.
         :rtype: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
@@ -324,7 +324,7 @@ class Update2dModelTrainingJobReq:
     def supported_service(self, supported_service):
         """Sets the supported_service of this Update2dModelTrainingJobReq.
 
-        该任务所生成的模型支持的业务类型，可多选
+        该任务所生成的模型支持的业务类型，可多选。  Flexus版数字人仅支持选择“VIDEO_2D”。
 
         :param supported_service: The supported_service of this Update2dModelTrainingJobReq.
         :type supported_service: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]

@@ -27,7 +27,8 @@ class ListSmartLiveRoomsRequest:
         'start_time': 'str',
         'end_time': 'str',
         'room_type': 'str',
-        'template_own_type': 'str'
+        'template_own_type': 'str',
+        'confirm_state': 'str'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class ListSmartLiveRoomsRequest:
         'start_time': 'start_time',
         'end_time': 'end_time',
         'room_type': 'room_type',
-        'template_own_type': 'template_own_type'
+        'template_own_type': 'template_own_type',
+        'confirm_state': 'confirm_state'
     }
 
-    def __init__(self, x_app_user_id=None, offset=None, limit=None, room_name=None, dh_id=None, model_name=None, live_state=None, start_time=None, end_time=None, room_type=None, template_own_type=None):
+    def __init__(self, x_app_user_id=None, offset=None, limit=None, room_name=None, dh_id=None, model_name=None, live_state=None, start_time=None, end_time=None, room_type=None, template_own_type=None, confirm_state=None):
         """ListSmartLiveRoomsRequest
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class ListSmartLiveRoomsRequest:
         :type room_type: str
         :param template_own_type: 按照自己拥有的和别人分享以及公共的模板进行查询 * OWNED 自己拥有且暂未共享的 * SHARED_TO_OHTERS 分享给别人的 * SHARED_FROM_OHTERS 别人分享给我的 * PUBLIC 公共模板
         :type template_own_type: str
+        :param confirm_state: 直播间确认状态。此状态仅用于特定用户需要人工确认场景。 - unconfirm: 未确认 - confirmed：已确认 - reject： 拒绝
+        :type confirm_state: str
         """
         
         
@@ -86,6 +90,7 @@ class ListSmartLiveRoomsRequest:
         self._end_time = None
         self._room_type = None
         self._template_own_type = None
+        self._confirm_state = None
         self.discriminator = None
 
         if x_app_user_id is not None:
@@ -110,6 +115,8 @@ class ListSmartLiveRoomsRequest:
             self.room_type = room_type
         if template_own_type is not None:
             self.template_own_type = template_own_type
+        if confirm_state is not None:
+            self.confirm_state = confirm_state
 
     @property
     def x_app_user_id(self):
@@ -352,6 +359,28 @@ class ListSmartLiveRoomsRequest:
         :type template_own_type: str
         """
         self._template_own_type = template_own_type
+
+    @property
+    def confirm_state(self):
+        """Gets the confirm_state of this ListSmartLiveRoomsRequest.
+
+        直播间确认状态。此状态仅用于特定用户需要人工确认场景。 - unconfirm: 未确认 - confirmed：已确认 - reject： 拒绝
+
+        :return: The confirm_state of this ListSmartLiveRoomsRequest.
+        :rtype: str
+        """
+        return self._confirm_state
+
+    @confirm_state.setter
+    def confirm_state(self, confirm_state):
+        """Sets the confirm_state of this ListSmartLiveRoomsRequest.
+
+        直播间确认状态。此状态仅用于特定用户需要人工确认场景。 - unconfirm: 未确认 - confirmed：已确认 - reject： 拒绝
+
+        :param confirm_state: The confirm_state of this ListSmartLiveRoomsRequest.
+        :type confirm_state: str
+        """
+        self._confirm_state = confirm_state
 
     def to_dict(self):
         """Returns the model properties as a dict"""

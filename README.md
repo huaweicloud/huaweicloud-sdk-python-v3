@@ -233,6 +233,8 @@ the [CHANGELOG.md](https://github.com/huaweicloud/huaweicloud-sdk-python-v3/blob
     * [7.1 Custom request headers](#71-custom-request-headers-top)
     * [7.2 Retry](#72-retry-top)
 * [8. Upload and download files](#7-upload-and-download-files-top)
+* [9. FAQ](#9-faq-top)
+    * [9.1 How to use in Cloud Service Alliance Scenarios](#91-how-to-use-in-cloud-service-alliance-scenarios-top)
 
 ### 1. Client Configuration [:top:](#user-manual-top)
 
@@ -1025,7 +1027,7 @@ client = VpcClient.new_builder() \
     .with_credentials(credentials) \
     .with_region(VpcRegion.value_of("cn-north-4")) \
     .build()
-    
+
 request = ListVpcsRequest()
 # Retry on connection exception, max retry times is 3, retry interval strategy is immediate retry.
 response = client.list_vpcs_invoker(request).with_retry(
@@ -1068,7 +1070,7 @@ def create_image_watermark(client):
         request.body = body
         response = client.create_image_watermark(request)
         image_file.close()
-        
+
         # Define the method of downloading files.
         def save(stream):
             with open("result.jpg", "wb") as f:
@@ -1095,6 +1097,27 @@ if __name__ == "__main__":
         .with_credentials(credentials) \
         .with_endpoint(endpoint) \
         .build()
-    
+
     create_image_watermark(dsc_client)
+```
+
+### 9. FAQ [:top:](#user-manual-top)
+
+#### 9.1 How to use in Cloud Service Alliance Scenarios [:top:](#user-manual-top)
+
+```python
+# Specify the endpoint, take the endpoint of VPC service in region of eu-west-101 for example
+endpoint = "https://vpc.eu-west-101.myhuaweicloud.com"
+
+# Initialize the credentials, you should provide project_id or domain_id in this way, take initializing BasicCredentials for example
+ak = os.getenv("HUAWEICLOUD_SDK_AK")
+sk = os.getenv("HUAWEICLOUD_SDK_SK")
+project_id = "{your projectId string}"
+basic_credentials = BasicCredentials(ak, sk, project_id)
+
+# Initialize specified service client instance, take initializing the regional service VPC's VpcClient for example
+client = VpcClient.new_builder() \
+    .with_credentials(basic_credentials) \
+    .with_endpoint(endpoint) \
+    .build()
 ```

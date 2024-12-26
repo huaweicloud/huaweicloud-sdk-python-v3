@@ -32,7 +32,8 @@ class RestAttendeeDTO:
         'address': 'str',
         'dept_uuid': 'str',
         'dept_name': 'str',
-        'app_id': 'str'
+        'app_id': 'str',
+        'unique_type': 'int'
     }
 
     attribute_map = {
@@ -51,10 +52,11 @@ class RestAttendeeDTO:
         'address': 'address',
         'dept_uuid': 'deptUUID',
         'dept_name': 'deptName',
-        'app_id': 'appId'
+        'app_id': 'appId',
+        'unique_type': 'uniqueType'
     }
 
-    def __init__(self, user_uuid=None, account_id=None, name=None, role=None, phone=None, phone2=None, phone3=None, email=None, sms=None, is_mute=None, is_auto_invite=None, type=None, address=None, dept_uuid=None, dept_name=None, app_id=None):
+    def __init__(self, user_uuid=None, account_id=None, name=None, role=None, phone=None, phone2=None, phone3=None, email=None, sms=None, is_mute=None, is_auto_invite=None, type=None, address=None, dept_uuid=None, dept_name=None, app_id=None, unique_type=None):
         """RestAttendeeDTO
 
         The model defined in huaweicloud sdk
@@ -91,6 +93,8 @@ class RestAttendeeDTO:
         :type dept_name: str
         :param app_id: App ID。如果是APP ID鉴权场景，此项必填。参考[[App ID的申请](https://support.huaweicloud.com/devg-meeting/meeting_20_0011.html#section1)](tag:hws)[[App ID的申请](https://support.huaweicloud.com/intl/zh-cn/devg-meeting/meeting_20_0011.html#section1)](tag:hk)。
         :type app_id: str
+        :param unique_type: 企业内唯一会场标识, 0标识为普通与会者，1标识为企业内唯一会场; uniqueType 为1， 同时type要指定为customnumber
+        :type unique_type: int
         """
         
         
@@ -111,6 +115,7 @@ class RestAttendeeDTO:
         self._dept_uuid = None
         self._dept_name = None
         self._app_id = None
+        self._unique_type = None
         self.discriminator = None
 
         if user_uuid is not None:
@@ -145,6 +150,8 @@ class RestAttendeeDTO:
             self.dept_name = dept_name
         if app_id is not None:
             self.app_id = app_id
+        if unique_type is not None:
+            self.unique_type = unique_type
 
     @property
     def user_uuid(self):
@@ -497,6 +504,28 @@ class RestAttendeeDTO:
         :type app_id: str
         """
         self._app_id = app_id
+
+    @property
+    def unique_type(self):
+        """Gets the unique_type of this RestAttendeeDTO.
+
+        企业内唯一会场标识, 0标识为普通与会者，1标识为企业内唯一会场; uniqueType 为1， 同时type要指定为customnumber
+
+        :return: The unique_type of this RestAttendeeDTO.
+        :rtype: int
+        """
+        return self._unique_type
+
+    @unique_type.setter
+    def unique_type(self, unique_type):
+        """Sets the unique_type of this RestAttendeeDTO.
+
+        企业内唯一会场标识, 0标识为普通与会者，1标识为企业内唯一会场; uniqueType 为1， 同时type要指定为customnumber
+
+        :param unique_type: The unique_type of this RestAttendeeDTO.
+        :type unique_type: int
+        """
+        self._unique_type = unique_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

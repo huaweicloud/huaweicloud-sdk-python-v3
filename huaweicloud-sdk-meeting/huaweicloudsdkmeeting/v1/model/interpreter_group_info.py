@@ -19,6 +19,7 @@ class InterpreterGroupInfo:
     openapi_types = {
         'group_id': 'str',
         'group_name': 'str',
+        'group_type': 'str',
         'first_language': 'str',
         'second_language': 'str',
         'interpreters': 'list[InterpreterInfo]'
@@ -27,12 +28,13 @@ class InterpreterGroupInfo:
     attribute_map = {
         'group_id': 'groupID',
         'group_name': 'groupName',
+        'group_type': 'groupType',
         'first_language': 'firstLanguage',
         'second_language': 'secondLanguage',
         'interpreters': 'interpreters'
     }
 
-    def __init__(self, group_id=None, group_name=None, first_language=None, second_language=None, interpreters=None):
+    def __init__(self, group_id=None, group_name=None, group_type=None, first_language=None, second_language=None, interpreters=None):
         """InterpreterGroupInfo
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class InterpreterGroupInfo:
         :type group_id: str
         :param group_name: 传译组名称。
         :type group_name: str
+        :param group_type: 传译组类型，MANUAL：人工传译，AI：AI传译。默认MANUAL。
+        :type group_type: str
         :param first_language: 传译组支持的第一种语言。
         :type first_language: str
         :param second_language: 传译组支持的第二种语言。
@@ -53,6 +57,7 @@ class InterpreterGroupInfo:
 
         self._group_id = None
         self._group_name = None
+        self._group_type = None
         self._first_language = None
         self._second_language = None
         self._interpreters = None
@@ -61,6 +66,8 @@ class InterpreterGroupInfo:
         self.group_id = group_id
         if group_name is not None:
             self.group_name = group_name
+        if group_type is not None:
+            self.group_type = group_type
         self.first_language = first_language
         self.second_language = second_language
         if interpreters is not None:
@@ -109,6 +116,28 @@ class InterpreterGroupInfo:
         :type group_name: str
         """
         self._group_name = group_name
+
+    @property
+    def group_type(self):
+        """Gets the group_type of this InterpreterGroupInfo.
+
+        传译组类型，MANUAL：人工传译，AI：AI传译。默认MANUAL。
+
+        :return: The group_type of this InterpreterGroupInfo.
+        :rtype: str
+        """
+        return self._group_type
+
+    @group_type.setter
+    def group_type(self, group_type):
+        """Sets the group_type of this InterpreterGroupInfo.
+
+        传译组类型，MANUAL：人工传译，AI：AI传译。默认MANUAL。
+
+        :param group_type: The group_type of this InterpreterGroupInfo.
+        :type group_type: str
+        """
+        self._group_type = group_type
 
     @property
     def first_language(self):

@@ -43,7 +43,8 @@ class PublicIp:
         self._eip_id = None
         self.discriminator = None
 
-        self.public_bind_type = public_bind_type
+        if public_bind_type is not None:
+            self.public_bind_type = public_bind_type
         if eip_id is not None:
             self.eip_id = eip_id
 

@@ -53,7 +53,7 @@ class ListDirectConnectLocationsRequest:
         :type id: list[str]
         :param name: 根据名字过滤查询，可查询多个名字。
         :type name: list[str]
-        :param status: 根椐资源状态过淲实例
+        :param status: 根椐资源状态过滤实例
         :type status: list[str]
         """
         
@@ -219,7 +219,7 @@ class ListDirectConnectLocationsRequest:
     def status(self):
         """Gets the status of this ListDirectConnectLocationsRequest.
 
-        根椐资源状态过淲实例
+        根椐资源状态过滤实例
 
         :return: The status of this ListDirectConnectLocationsRequest.
         :rtype: list[str]
@@ -230,7 +230,7 @@ class ListDirectConnectLocationsRequest:
     def status(self, status):
         """Sets the status of this ListDirectConnectLocationsRequest.
 
-        根椐资源状态过淲实例
+        根椐资源状态过滤实例
 
         :param status: The status of this ListDirectConnectLocationsRequest.
         :type status: list[str]

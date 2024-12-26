@@ -54,6 +54,8 @@ class DnsRegion:
                         "https://dns.cn-east-5.myhuaweicloud.com")
     CN_EAST_4 = Region("cn-east-4",
                         "https://dns.cn-east-4.myhuaweicloud.com")
+    TR_WEST_1 = Region("tr-west-1",
+                        "https://dns.tr-west-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-east-2": CN_EAST_2,
@@ -80,6 +82,7 @@ class DnsRegion:
         "ap-southeast-5": AP_SOUTHEAST_5,
         "cn-east-5": CN_EAST_5,
         "cn-east-4": CN_EAST_4,
+        "tr-west-1": TR_WEST_1,
     }
 
     @classmethod

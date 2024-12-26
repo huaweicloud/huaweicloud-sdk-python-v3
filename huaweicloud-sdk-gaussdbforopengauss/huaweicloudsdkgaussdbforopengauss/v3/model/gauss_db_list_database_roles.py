@@ -20,7 +20,7 @@ class GaussDBListDatabaseRoles:
         'name': 'str',
         'memberof': 'str',
         'lock_status': 'bool',
-        'attribute': 'object'
+        'attribute': 'GaussDBListDatabaseRolesPriv'
     }
 
     attribute_map = {
@@ -41,8 +41,8 @@ class GaussDBListDatabaseRoles:
         :type memberof: str
         :param lock_status: 用户/角色是否被锁。
         :type lock_status: bool
-        :param attribute: 用户/角色的权限属性。
-        :type attribute: object
+        :param attribute: 
+        :type attribute: :class:`huaweicloudsdkgaussdbforopengauss.v3.GaussDBListDatabaseRolesPriv`
         """
         
         
@@ -131,10 +131,8 @@ class GaussDBListDatabaseRoles:
     def attribute(self):
         """Gets the attribute of this GaussDBListDatabaseRoles.
 
-        用户/角色的权限属性。
-
         :return: The attribute of this GaussDBListDatabaseRoles.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.GaussDBListDatabaseRolesPriv`
         """
         return self._attribute
 
@@ -142,10 +140,8 @@ class GaussDBListDatabaseRoles:
     def attribute(self, attribute):
         """Sets the attribute of this GaussDBListDatabaseRoles.
 
-        用户/角色的权限属性。
-
         :param attribute: The attribute of this GaussDBListDatabaseRoles.
-        :type attribute: object
+        :type attribute: :class:`huaweicloudsdkgaussdbforopengauss.v3.GaussDBListDatabaseRolesPriv`
         """
         self._attribute = attribute
 

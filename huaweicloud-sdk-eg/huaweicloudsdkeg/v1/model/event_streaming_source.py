@@ -19,16 +19,20 @@ class EventStreamingSource:
     openapi_types = {
         'source_kafka': 'SourceKafkaMQParameters',
         'source_mobile_rocketmq': 'SourceMobileMQParameters',
+        'source_community_rocketmq': 'SourceCommunityMQParameters',
+        'source_dms_rocketmq': 'SourceDMSMQParameters',
         'name': 'str'
     }
 
     attribute_map = {
         'source_kafka': 'source_kafka',
         'source_mobile_rocketmq': 'source_mobile_rocketmq',
+        'source_community_rocketmq': 'source_community_rocketmq',
+        'source_dms_rocketmq': 'source_dms_rocketmq',
         'name': 'name'
     }
 
-    def __init__(self, source_kafka=None, source_mobile_rocketmq=None, name=None):
+    def __init__(self, source_kafka=None, source_mobile_rocketmq=None, source_community_rocketmq=None, source_dms_rocketmq=None, name=None):
         """EventStreamingSource
 
         The model defined in huaweicloud sdk
@@ -37,6 +41,10 @@ class EventStreamingSource:
         :type source_kafka: :class:`huaweicloudsdkeg.v1.SourceKafkaMQParameters`
         :param source_mobile_rocketmq: 
         :type source_mobile_rocketmq: :class:`huaweicloudsdkeg.v1.SourceMobileMQParameters`
+        :param source_community_rocketmq: 
+        :type source_community_rocketmq: :class:`huaweicloudsdkeg.v1.SourceCommunityMQParameters`
+        :param source_dms_rocketmq: 
+        :type source_dms_rocketmq: :class:`huaweicloudsdkeg.v1.SourceDMSMQParameters`
         :param name: 事件源类型名称
         :type name: str
         """
@@ -45,6 +53,8 @@ class EventStreamingSource:
 
         self._source_kafka = None
         self._source_mobile_rocketmq = None
+        self._source_community_rocketmq = None
+        self._source_dms_rocketmq = None
         self._name = None
         self.discriminator = None
 
@@ -52,6 +62,10 @@ class EventStreamingSource:
             self.source_kafka = source_kafka
         if source_mobile_rocketmq is not None:
             self.source_mobile_rocketmq = source_mobile_rocketmq
+        if source_community_rocketmq is not None:
+            self.source_community_rocketmq = source_community_rocketmq
+        if source_dms_rocketmq is not None:
+            self.source_dms_rocketmq = source_dms_rocketmq
         if name is not None:
             self.name = name
 
@@ -90,6 +104,42 @@ class EventStreamingSource:
         :type source_mobile_rocketmq: :class:`huaweicloudsdkeg.v1.SourceMobileMQParameters`
         """
         self._source_mobile_rocketmq = source_mobile_rocketmq
+
+    @property
+    def source_community_rocketmq(self):
+        """Gets the source_community_rocketmq of this EventStreamingSource.
+
+        :return: The source_community_rocketmq of this EventStreamingSource.
+        :rtype: :class:`huaweicloudsdkeg.v1.SourceCommunityMQParameters`
+        """
+        return self._source_community_rocketmq
+
+    @source_community_rocketmq.setter
+    def source_community_rocketmq(self, source_community_rocketmq):
+        """Sets the source_community_rocketmq of this EventStreamingSource.
+
+        :param source_community_rocketmq: The source_community_rocketmq of this EventStreamingSource.
+        :type source_community_rocketmq: :class:`huaweicloudsdkeg.v1.SourceCommunityMQParameters`
+        """
+        self._source_community_rocketmq = source_community_rocketmq
+
+    @property
+    def source_dms_rocketmq(self):
+        """Gets the source_dms_rocketmq of this EventStreamingSource.
+
+        :return: The source_dms_rocketmq of this EventStreamingSource.
+        :rtype: :class:`huaweicloudsdkeg.v1.SourceDMSMQParameters`
+        """
+        return self._source_dms_rocketmq
+
+    @source_dms_rocketmq.setter
+    def source_dms_rocketmq(self, source_dms_rocketmq):
+        """Sets the source_dms_rocketmq of this EventStreamingSource.
+
+        :param source_dms_rocketmq: The source_dms_rocketmq of this EventStreamingSource.
+        :type source_dms_rocketmq: :class:`huaweicloudsdkeg.v1.SourceDMSMQParameters`
+        """
+        self._source_dms_rocketmq = source_dms_rocketmq
 
     @property
     def name(self):

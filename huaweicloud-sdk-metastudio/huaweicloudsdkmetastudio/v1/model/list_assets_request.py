@@ -99,7 +99,7 @@ class ListAssetsRequest:
         :type tag: str
         :param tag_combination_type: 标签查询组合方式 INTERSECTION：交集 UNION_SET：并集
         :type tag_combination_type: str
-        :param start_time: 最近直播任务起始时间。格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
+        :param start_time: 起始时间。格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
         :type start_time: str
         :param end_time: 结束时间。格式遵循：RFC 3339 如\&quot;2021-01-10T10:43:17Z\&quot;。
         :type end_time: str
@@ -380,7 +380,7 @@ class ListAssetsRequest:
     def start_time(self):
         """Gets the start_time of this ListAssetsRequest.
 
-        最近直播任务起始时间。格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
+        起始时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
         :return: The start_time of this ListAssetsRequest.
         :rtype: str
@@ -391,7 +391,7 @@ class ListAssetsRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ListAssetsRequest.
 
-        最近直播任务起始时间。格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
+        起始时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
         :param start_time: The start_time of this ListAssetsRequest.
         :type start_time: str

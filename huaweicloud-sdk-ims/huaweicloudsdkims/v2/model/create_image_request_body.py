@@ -34,7 +34,8 @@ class CreateImageRequestBody:
         'type': 'str',
         'is_quick_import': 'bool',
         'architecture': 'str',
-        'volume_id': 'str'
+        'volume_id': 'str',
+        'hw_firmware_type': 'str'
     }
 
     attribute_map = {
@@ -55,10 +56,11 @@ class CreateImageRequestBody:
         'type': 'type',
         'is_quick_import': 'is_quick_import',
         'architecture': 'architecture',
-        'volume_id': 'volume_id'
+        'volume_id': 'volume_id',
+        'hw_firmware_type': 'hw_firmware_type'
     }
 
-    def __init__(self, data_images=None, description=None, enterprise_project_id=None, image_tags=None, instance_id=None, name=None, tags=None, max_ram=None, min_ram=None, os_version=None, image_url=None, min_disk=None, is_config=None, cmk_id=None, type=None, is_quick_import=None, architecture=None, volume_id=None):
+    def __init__(self, data_images=None, description=None, enterprise_project_id=None, image_tags=None, instance_id=None, name=None, tags=None, max_ram=None, min_ram=None, os_version=None, image_url=None, min_disk=None, is_config=None, cmk_id=None, type=None, is_quick_import=None, architecture=None, volume_id=None, hw_firmware_type=None):
         """CreateImageRequestBody
 
         The model defined in huaweicloud sdk
@@ -99,6 +101,8 @@ class CreateImageRequestBody:
         :type architecture: str
         :param volume_id: 数据盘的卷ID。当数据盘创建系统盘镜像时，该参数必选
         :type volume_id: str
+        :param hw_firmware_type: 云主机云服务器的启动方式。目前支持： bios：表示bios引导启动。 uefi：表示uefi引导启动。
+        :type hw_firmware_type: str
         """
         
         
@@ -121,6 +125,7 @@ class CreateImageRequestBody:
         self._is_quick_import = None
         self._architecture = None
         self._volume_id = None
+        self._hw_firmware_type = None
         self.discriminator = None
 
         if data_images is not None:
@@ -157,6 +162,8 @@ class CreateImageRequestBody:
             self.architecture = architecture
         if volume_id is not None:
             self.volume_id = volume_id
+        if hw_firmware_type is not None:
+            self.hw_firmware_type = hw_firmware_type
 
     @property
     def data_images(self):
@@ -553,6 +560,28 @@ class CreateImageRequestBody:
         :type volume_id: str
         """
         self._volume_id = volume_id
+
+    @property
+    def hw_firmware_type(self):
+        """Gets the hw_firmware_type of this CreateImageRequestBody.
+
+        云主机云服务器的启动方式。目前支持： bios：表示bios引导启动。 uefi：表示uefi引导启动。
+
+        :return: The hw_firmware_type of this CreateImageRequestBody.
+        :rtype: str
+        """
+        return self._hw_firmware_type
+
+    @hw_firmware_type.setter
+    def hw_firmware_type(self, hw_firmware_type):
+        """Sets the hw_firmware_type of this CreateImageRequestBody.
+
+        云主机云服务器的启动方式。目前支持： bios：表示bios引导启动。 uefi：表示uefi引导启动。
+
+        :param hw_firmware_type: The hw_firmware_type of this CreateImageRequestBody.
+        :type hw_firmware_type: str
+        """
+        self._hw_firmware_type = hw_firmware_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

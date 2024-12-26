@@ -18,29 +18,35 @@ class CreateTtsAuditionRequestBody:
 
     openapi_types = {
         'text': 'str',
+        'tts_text': 'str',
         'emotion': 'str',
         'speed': 'int',
         'pitch': 'int',
         'volume': 'int',
-        'business_type': 'str'
+        'business_type': 'str',
+        'style': 'str'
     }
 
     attribute_map = {
         'text': 'text',
+        'tts_text': 'tts_text',
         'emotion': 'emotion',
         'speed': 'speed',
         'pitch': 'pitch',
         'volume': 'volume',
-        'business_type': 'business_type'
+        'business_type': 'business_type',
+        'style': 'style'
     }
 
-    def __init__(self, text=None, emotion=None, speed=None, pitch=None, volume=None, business_type=None):
+    def __init__(self, text=None, tts_text=None, emotion=None, speed=None, pitch=None, volume=None, business_type=None, style=None):
         """CreateTtsAuditionRequestBody
 
         The model defined in huaweicloud sdk
 
         :param text: 待合成文本。
         :type text: str
+        :param tts_text: 发送给tts的待合成文本。
+        :type tts_text: str
         :param emotion: 音色ID，获取方式详见[获取音色ID](metastudio_02_0054.xml)。
         :type emotion: str
         :param speed: 语速。 * 当取值为“100”时，表示一个成年人正常的语速，约为250字/分钟。 * 50表示0.5倍语速，100表示正常语速，200表示2倍语速。
@@ -51,19 +57,25 @@ class CreateTtsAuditionRequestBody:
         :type volume: int
         :param business_type: 业务场景，多个入口调用试听接口时的业务场景
         :type business_type: str
+        :param style: 风格情感
+        :type style: str
         """
         
         
 
         self._text = None
+        self._tts_text = None
         self._emotion = None
         self._speed = None
         self._pitch = None
         self._volume = None
         self._business_type = None
+        self._style = None
         self.discriminator = None
 
         self.text = text
+        if tts_text is not None:
+            self.tts_text = tts_text
         self.emotion = emotion
         if speed is not None:
             self.speed = speed
@@ -73,6 +85,8 @@ class CreateTtsAuditionRequestBody:
             self.volume = volume
         if business_type is not None:
             self.business_type = business_type
+        if style is not None:
+            self.style = style
 
     @property
     def text(self):
@@ -95,6 +109,28 @@ class CreateTtsAuditionRequestBody:
         :type text: str
         """
         self._text = text
+
+    @property
+    def tts_text(self):
+        """Gets the tts_text of this CreateTtsAuditionRequestBody.
+
+        发送给tts的待合成文本。
+
+        :return: The tts_text of this CreateTtsAuditionRequestBody.
+        :rtype: str
+        """
+        return self._tts_text
+
+    @tts_text.setter
+    def tts_text(self, tts_text):
+        """Sets the tts_text of this CreateTtsAuditionRequestBody.
+
+        发送给tts的待合成文本。
+
+        :param tts_text: The tts_text of this CreateTtsAuditionRequestBody.
+        :type tts_text: str
+        """
+        self._tts_text = tts_text
 
     @property
     def emotion(self):
@@ -205,6 +241,28 @@ class CreateTtsAuditionRequestBody:
         :type business_type: str
         """
         self._business_type = business_type
+
+    @property
+    def style(self):
+        """Gets the style of this CreateTtsAuditionRequestBody.
+
+        风格情感
+
+        :return: The style of this CreateTtsAuditionRequestBody.
+        :rtype: str
+        """
+        return self._style
+
+    @style.setter
+    def style(self, style):
+        """Sets the style of this CreateTtsAuditionRequestBody.
+
+        风格情感
+
+        :param style: The style of this CreateTtsAuditionRequestBody.
+        :type style: str
+        """
+        self._style = style
 
     def to_dict(self):
         """Returns the model properties as a dict"""

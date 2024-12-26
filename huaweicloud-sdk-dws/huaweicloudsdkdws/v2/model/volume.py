@@ -33,7 +33,7 @@ class Volume:
 
         :param volume: 磁盘名称，取值范围为 SSD（超高IO）,高IO（SAS），普通IO（SATA）
         :type volume: str
-        :param capacity: 磁盘容量
+        :param capacity: 磁盘容量,单位：GB
         :type capacity: int
         """
         
@@ -43,8 +43,7 @@ class Volume:
         self._capacity = None
         self.discriminator = None
 
-        if volume is not None:
-            self.volume = volume
+        self.volume = volume
         if capacity is not None:
             self.capacity = capacity
 
@@ -74,7 +73,7 @@ class Volume:
     def capacity(self):
         """Gets the capacity of this Volume.
 
-        磁盘容量
+        磁盘容量,单位：GB
 
         :return: The capacity of this Volume.
         :rtype: int
@@ -85,7 +84,7 @@ class Volume:
     def capacity(self, capacity):
         """Sets the capacity of this Volume.
 
-        磁盘容量
+        磁盘容量,单位：GB
 
         :param capacity: The capacity of this Volume.
         :type capacity: int

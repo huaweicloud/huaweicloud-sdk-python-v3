@@ -19,16 +19,18 @@ class EventStreamingSink:
     openapi_types = {
         'sink_fg': 'SinkFGParameters',
         'sink_kafka': 'SinkKafkaParameters',
+        'sink_obs': 'SinkObsParameters',
         'name': 'str'
     }
 
     attribute_map = {
         'sink_fg': 'sink_fg',
         'sink_kafka': 'sink_kafka',
+        'sink_obs': 'sink_obs',
         'name': 'name'
     }
 
-    def __init__(self, sink_fg=None, sink_kafka=None, name=None):
+    def __init__(self, sink_fg=None, sink_kafka=None, sink_obs=None, name=None):
         """EventStreamingSink
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class EventStreamingSink:
         :type sink_fg: :class:`huaweicloudsdkeg.v1.SinkFGParameters`
         :param sink_kafka: 
         :type sink_kafka: :class:`huaweicloudsdkeg.v1.SinkKafkaParameters`
+        :param sink_obs: 
+        :type sink_obs: :class:`huaweicloudsdkeg.v1.SinkObsParameters`
         :param name: 事件目标类型名称
         :type name: str
         """
@@ -45,6 +49,7 @@ class EventStreamingSink:
 
         self._sink_fg = None
         self._sink_kafka = None
+        self._sink_obs = None
         self._name = None
         self.discriminator = None
 
@@ -52,6 +57,8 @@ class EventStreamingSink:
             self.sink_fg = sink_fg
         if sink_kafka is not None:
             self.sink_kafka = sink_kafka
+        if sink_obs is not None:
+            self.sink_obs = sink_obs
         if name is not None:
             self.name = name
 
@@ -90,6 +97,24 @@ class EventStreamingSink:
         :type sink_kafka: :class:`huaweicloudsdkeg.v1.SinkKafkaParameters`
         """
         self._sink_kafka = sink_kafka
+
+    @property
+    def sink_obs(self):
+        """Gets the sink_obs of this EventStreamingSink.
+
+        :return: The sink_obs of this EventStreamingSink.
+        :rtype: :class:`huaweicloudsdkeg.v1.SinkObsParameters`
+        """
+        return self._sink_obs
+
+    @sink_obs.setter
+    def sink_obs(self, sink_obs):
+        """Sets the sink_obs of this EventStreamingSink.
+
+        :param sink_obs: The sink_obs of this EventStreamingSink.
+        :type sink_obs: :class:`huaweicloudsdkeg.v1.SinkObsParameters`
+        """
+        self._sink_obs = sink_obs
 
     @property
     def name(self):

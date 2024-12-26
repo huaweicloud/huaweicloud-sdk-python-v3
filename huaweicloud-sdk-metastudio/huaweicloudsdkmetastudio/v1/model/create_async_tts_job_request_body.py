@@ -18,6 +18,7 @@ class CreateAsyncTtsJobRequestBody:
 
     openapi_types = {
         'text': 'str',
+        'tts_text': 'str',
         'voice_asset_id': 'str',
         'speed': 'int',
         'pitch': 'int',
@@ -25,11 +26,16 @@ class CreateAsyncTtsJobRequestBody:
         'audio_format': 'str',
         'need_timestamp': 'bool',
         'silence_flag': 'bool',
-        'silence_time_ms': 'int'
+        'silence_time_ms': 'int',
+        'callback_config': 'TtsCallBackConfig',
+        'gen_srt': 'bool',
+        'srt_len': 'int',
+        'srt_line_limit': 'int'
     }
 
     attribute_map = {
         'text': 'text',
+        'tts_text': 'tts_text',
         'voice_asset_id': 'voice_asset_id',
         'speed': 'speed',
         'pitch': 'pitch',
@@ -37,16 +43,22 @@ class CreateAsyncTtsJobRequestBody:
         'audio_format': 'audio_format',
         'need_timestamp': 'need_timestamp',
         'silence_flag': 'silence_flag',
-        'silence_time_ms': 'silence_time_ms'
+        'silence_time_ms': 'silence_time_ms',
+        'callback_config': 'callback_config',
+        'gen_srt': 'gen_srt',
+        'srt_len': 'srt_len',
+        'srt_line_limit': 'srt_line_limit'
     }
 
-    def __init__(self, text=None, voice_asset_id=None, speed=None, pitch=None, volume=None, audio_format=None, need_timestamp=None, silence_flag=None, silence_time_ms=None):
+    def __init__(self, text=None, tts_text=None, voice_asset_id=None, speed=None, pitch=None, volume=None, audio_format=None, need_timestamp=None, silence_flag=None, silence_time_ms=None, callback_config=None, gen_srt=None, srt_len=None, srt_line_limit=None):
         """CreateAsyncTtsJobRequestBody
 
         The model defined in huaweicloud sdk
 
         :param text: 待合成文本
         :type text: str
+        :param tts_text: 发送给tts的待合成文本
+        :type tts_text: str
         :param voice_asset_id: 音色ID，获取方式详见[获取音色ID](metastudio_02_0054.xml)。
         :type voice_asset_id: str
         :param speed: 语速。 * 当取值为“100”时，表示一个成年人正常的语速，约为250字/分钟。 * 50表示0.5倍语速，100表示正常语速，200表示2倍语速。
@@ -63,11 +75,20 @@ class CreateAsyncTtsJobRequestBody:
         :type silence_flag: bool
         :param silence_time_ms: 异常时返回的静默音频流时长，单位毫秒。
         :type silence_time_ms: int
+        :param callback_config: 
+        :type callback_config: :class:`huaweicloudsdkmetastudio.v1.TtsCallBackConfig`
+        :param gen_srt: 是否开启字幕
+        :type gen_srt: bool
+        :param srt_len: 字幕最大长度限制
+        :type srt_len: int
+        :param srt_line_limit: 字幕行数限制，默认为1
+        :type srt_line_limit: int
         """
         
         
 
         self._text = None
+        self._tts_text = None
         self._voice_asset_id = None
         self._speed = None
         self._pitch = None
@@ -76,9 +97,15 @@ class CreateAsyncTtsJobRequestBody:
         self._need_timestamp = None
         self._silence_flag = None
         self._silence_time_ms = None
+        self._callback_config = None
+        self._gen_srt = None
+        self._srt_len = None
+        self._srt_line_limit = None
         self.discriminator = None
 
         self.text = text
+        if tts_text is not None:
+            self.tts_text = tts_text
         self.voice_asset_id = voice_asset_id
         if speed is not None:
             self.speed = speed
@@ -94,6 +121,14 @@ class CreateAsyncTtsJobRequestBody:
             self.silence_flag = silence_flag
         if silence_time_ms is not None:
             self.silence_time_ms = silence_time_ms
+        if callback_config is not None:
+            self.callback_config = callback_config
+        if gen_srt is not None:
+            self.gen_srt = gen_srt
+        if srt_len is not None:
+            self.srt_len = srt_len
+        if srt_line_limit is not None:
+            self.srt_line_limit = srt_line_limit
 
     @property
     def text(self):
@@ -116,6 +151,28 @@ class CreateAsyncTtsJobRequestBody:
         :type text: str
         """
         self._text = text
+
+    @property
+    def tts_text(self):
+        """Gets the tts_text of this CreateAsyncTtsJobRequestBody.
+
+        发送给tts的待合成文本
+
+        :return: The tts_text of this CreateAsyncTtsJobRequestBody.
+        :rtype: str
+        """
+        return self._tts_text
+
+    @tts_text.setter
+    def tts_text(self, tts_text):
+        """Sets the tts_text of this CreateAsyncTtsJobRequestBody.
+
+        发送给tts的待合成文本
+
+        :param tts_text: The tts_text of this CreateAsyncTtsJobRequestBody.
+        :type tts_text: str
+        """
+        self._tts_text = tts_text
 
     @property
     def voice_asset_id(self):
@@ -292,6 +349,90 @@ class CreateAsyncTtsJobRequestBody:
         :type silence_time_ms: int
         """
         self._silence_time_ms = silence_time_ms
+
+    @property
+    def callback_config(self):
+        """Gets the callback_config of this CreateAsyncTtsJobRequestBody.
+
+        :return: The callback_config of this CreateAsyncTtsJobRequestBody.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.TtsCallBackConfig`
+        """
+        return self._callback_config
+
+    @callback_config.setter
+    def callback_config(self, callback_config):
+        """Sets the callback_config of this CreateAsyncTtsJobRequestBody.
+
+        :param callback_config: The callback_config of this CreateAsyncTtsJobRequestBody.
+        :type callback_config: :class:`huaweicloudsdkmetastudio.v1.TtsCallBackConfig`
+        """
+        self._callback_config = callback_config
+
+    @property
+    def gen_srt(self):
+        """Gets the gen_srt of this CreateAsyncTtsJobRequestBody.
+
+        是否开启字幕
+
+        :return: The gen_srt of this CreateAsyncTtsJobRequestBody.
+        :rtype: bool
+        """
+        return self._gen_srt
+
+    @gen_srt.setter
+    def gen_srt(self, gen_srt):
+        """Sets the gen_srt of this CreateAsyncTtsJobRequestBody.
+
+        是否开启字幕
+
+        :param gen_srt: The gen_srt of this CreateAsyncTtsJobRequestBody.
+        :type gen_srt: bool
+        """
+        self._gen_srt = gen_srt
+
+    @property
+    def srt_len(self):
+        """Gets the srt_len of this CreateAsyncTtsJobRequestBody.
+
+        字幕最大长度限制
+
+        :return: The srt_len of this CreateAsyncTtsJobRequestBody.
+        :rtype: int
+        """
+        return self._srt_len
+
+    @srt_len.setter
+    def srt_len(self, srt_len):
+        """Sets the srt_len of this CreateAsyncTtsJobRequestBody.
+
+        字幕最大长度限制
+
+        :param srt_len: The srt_len of this CreateAsyncTtsJobRequestBody.
+        :type srt_len: int
+        """
+        self._srt_len = srt_len
+
+    @property
+    def srt_line_limit(self):
+        """Gets the srt_line_limit of this CreateAsyncTtsJobRequestBody.
+
+        字幕行数限制，默认为1
+
+        :return: The srt_line_limit of this CreateAsyncTtsJobRequestBody.
+        :rtype: int
+        """
+        return self._srt_line_limit
+
+    @srt_line_limit.setter
+    def srt_line_limit(self, srt_line_limit):
+        """Sets the srt_line_limit of this CreateAsyncTtsJobRequestBody.
+
+        字幕行数限制，默认为1
+
+        :param srt_line_limit: The srt_line_limit of this CreateAsyncTtsJobRequestBody.
+        :type srt_line_limit: int
+        """
+        self._srt_line_limit = srt_line_limit
 
     def to_dict(self):
         """Returns the model properties as a dict"""

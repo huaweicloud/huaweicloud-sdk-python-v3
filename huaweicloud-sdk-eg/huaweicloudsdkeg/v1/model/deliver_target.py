@@ -39,9 +39,9 @@ class DeliverTarget:
         :type deliver_target_id: str
         :param deliver_target_name: 投递目标名称，及事件目标名称
         :type deliver_target_name: str
-        :param deliver_status: 投递状态         SUCCESS Or  FAILED
+        :param deliver_status: 投递状态 SUCCESS Or FAILED
         :type deliver_status: str
-        :param deliver_detail_list: 考虑展示的个数    例如限制只展示最新三条
+        :param deliver_detail_list: 考虑展示的个数 例如限制只展示最新三条
         :type deliver_detail_list: list[:class:`huaweicloudsdkeg.v1.DeliverDetail`]
         """
         
@@ -110,7 +110,7 @@ class DeliverTarget:
     def deliver_status(self):
         """Gets the deliver_status of this DeliverTarget.
 
-        投递状态         SUCCESS Or  FAILED
+        投递状态 SUCCESS Or FAILED
 
         :return: The deliver_status of this DeliverTarget.
         :rtype: str
@@ -121,7 +121,7 @@ class DeliverTarget:
     def deliver_status(self, deliver_status):
         """Sets the deliver_status of this DeliverTarget.
 
-        投递状态         SUCCESS Or  FAILED
+        投递状态 SUCCESS Or FAILED
 
         :param deliver_status: The deliver_status of this DeliverTarget.
         :type deliver_status: str
@@ -132,7 +132,7 @@ class DeliverTarget:
     def deliver_detail_list(self):
         """Gets the deliver_detail_list of this DeliverTarget.
 
-        考虑展示的个数    例如限制只展示最新三条
+        考虑展示的个数 例如限制只展示最新三条
 
         :return: The deliver_detail_list of this DeliverTarget.
         :rtype: list[:class:`huaweicloudsdkeg.v1.DeliverDetail`]
@@ -143,7 +143,7 @@ class DeliverTarget:
     def deliver_detail_list(self, deliver_detail_list):
         """Sets the deliver_detail_list of this DeliverTarget.
 
-        考虑展示的个数    例如限制只展示最新三条
+        考虑展示的个数 例如限制只展示最新三条
 
         :param deliver_detail_list: The deliver_detail_list of this DeliverTarget.
         :type deliver_detail_list: list[:class:`huaweicloudsdkeg.v1.DeliverDetail`]

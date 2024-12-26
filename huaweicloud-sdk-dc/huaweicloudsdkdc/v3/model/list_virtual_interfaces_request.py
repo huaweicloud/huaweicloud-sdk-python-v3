@@ -61,7 +61,7 @@ class ListVirtualInterfacesRequest:
         :type enterprise_project_id: list[str]
         :param id: 根据资源ID过滤实例
         :type id: list[str]
-        :param status: 根椐资源状态过淲实例
+        :param status: 根椐资源状态过滤实例
         :type status: list[str]
         :param direct_connect_id: 根椐物理专线ID过滤查询实例信息
         :type direct_connect_id: list[str]
@@ -262,7 +262,7 @@ class ListVirtualInterfacesRequest:
     def status(self):
         """Gets the status of this ListVirtualInterfacesRequest.
 
-        根椐资源状态过淲实例
+        根椐资源状态过滤实例
 
         :return: The status of this ListVirtualInterfacesRequest.
         :rtype: list[str]
@@ -273,7 +273,7 @@ class ListVirtualInterfacesRequest:
     def status(self, status):
         """Sets the status of this ListVirtualInterfacesRequest.
 
-        根椐资源状态过淲实例
+        根椐资源状态过滤实例
 
         :param status: The status of this ListVirtualInterfacesRequest.
         :type status: list[str]

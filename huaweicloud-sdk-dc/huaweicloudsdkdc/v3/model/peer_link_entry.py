@@ -21,6 +21,7 @@ class PeerLinkEntry:
         'tenant_id': 'str',
         'name': 'str',
         'description': 'str',
+        'reason': 'str',
         'global_dc_gateway_id': 'str',
         'bandwidth_info': 'BandWidthInfo',
         'peer_site': 'PeerSite',
@@ -36,6 +37,7 @@ class PeerLinkEntry:
         'tenant_id': 'tenant_id',
         'name': 'name',
         'description': 'description',
+        'reason': 'reason',
         'global_dc_gateway_id': 'global_dc_gateway_id',
         'bandwidth_info': 'bandwidth_info',
         'peer_site': 'peer_site',
@@ -46,7 +48,7 @@ class PeerLinkEntry:
         'instance_id': 'instance_id'
     }
 
-    def __init__(self, id=None, tenant_id=None, name=None, description=None, global_dc_gateway_id=None, bandwidth_info=None, peer_site=None, status=None, created_time=None, updated_time=None, create_owner=None, instance_id=None):
+    def __init__(self, id=None, tenant_id=None, name=None, description=None, reason=None, global_dc_gateway_id=None, bandwidth_info=None, peer_site=None, status=None, created_time=None, updated_time=None, create_owner=None, instance_id=None):
         """PeerLinkEntry
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class PeerLinkEntry:
         :type name: str
         :param description: 描述信息
         :type description: str
+        :param reason: 失败原因
+        :type reason: str
         :param global_dc_gateway_id: 对应的专线全域接入网关ID
         :type global_dc_gateway_id: str
         :param bandwidth_info: 
@@ -83,6 +87,7 @@ class PeerLinkEntry:
         self._tenant_id = None
         self._name = None
         self._description = None
+        self._reason = None
         self._global_dc_gateway_id = None
         self._bandwidth_info = None
         self._peer_site = None
@@ -101,6 +106,8 @@ class PeerLinkEntry:
             self.name = name
         if description is not None:
             self.description = description
+        if reason is not None:
+            self.reason = reason
         if global_dc_gateway_id is not None:
             self.global_dc_gateway_id = global_dc_gateway_id
         if bandwidth_info is not None:
@@ -205,6 +212,28 @@ class PeerLinkEntry:
         :type description: str
         """
         self._description = description
+
+    @property
+    def reason(self):
+        """Gets the reason of this PeerLinkEntry.
+
+        失败原因
+
+        :return: The reason of this PeerLinkEntry.
+        :rtype: str
+        """
+        return self._reason
+
+    @reason.setter
+    def reason(self, reason):
+        """Sets the reason of this PeerLinkEntry.
+
+        失败原因
+
+        :param reason: The reason of this PeerLinkEntry.
+        :type reason: str
+        """
+        self._reason = reason
 
     @property
     def global_dc_gateway_id(self):

@@ -1,3 +1,731 @@
+# 3.1.129 2024-12-26
+
+### HuaweiCloud SDK BSS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListPayPerUseCustomerResources**
+    - 响应参数变更
+      - `+ data.update_time`
+      - `+ data.enterprise_project`
+  - **ListCustomerselfResourceRecords**
+    - 响应参数变更
+      - `+ fee_records.consume_time`
+  - **ListCustomerselfResourceRecordDetails**
+    - 响应参数变更
+      - `+ monthly_records.consume_time`
+
+### HuaweiCloud SDK BSSINTL
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListPayPerUseCustomerResources**
+    - 响应参数变更
+      - `+ data.update_time`
+      - `+ data.enterprise_project`
+  - **ListCustomerselfResourceRecords**
+    - 响应参数变更
+      - `+ fee_records.consume_time`
+  - **ListCustomerselfResourceRecordDetails**
+    - 响应参数变更
+      - `+ monthly_records.consume_time`
+
+### HuaweiCloud SDK CBR
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListVault**
+    - 响应参数变更
+      - `+ vaults.billing.object_type: enum value [turbo]`
+      - `+ vaults.billing.spec_code: enum value [vault.backup.turbo.normal,vault.backup.database.normal,vault.hybrid.server.normal,vault.replication.server.normal]`
+  - **CreateVault**
+    - 响应参数变更
+      - `+ vault.billing.object_type: enum value [turbo]`
+      - `+ vault.billing.spec_code: enum value [vault.backup.turbo.normal,vault.backup.database.normal,vault.hybrid.server.normal,vault.replication.server.normal]`
+  - **ShowVault**
+    - 响应参数变更
+      - `+ vault.billing.object_type: enum value [turbo]`
+      - `+ vault.billing.spec_code: enum value [vault.backup.turbo.normal,vault.backup.database.normal,vault.hybrid.server.normal,vault.replication.server.normal]`
+  - **UpdateVault**
+    - 响应参数变更
+      - `+ vault.billing.object_type: enum value [turbo]`
+      - `+ vault.billing.spec_code: enum value [vault.backup.turbo.normal,vault.backup.database.normal,vault.hybrid.server.normal,vault.replication.server.normal]`
+  - **ListExternalVault**
+    - 响应参数变更
+      - `+ vaults.billing.object_type: enum value [turbo]`
+      - `+ vaults.billing.spec_code: enum value [vault.backup.turbo.normal,vault.backup.database.normal,vault.hybrid.server.normal,vault.replication.server.normal]`
+  - **ListProtectable**
+    - 响应参数变更
+      - `+ instances.protectable.vault.billing.object_type: enum value [turbo]`
+      - `+ instances.protectable.vault.billing.spec_code: enum value [vault.backup.turbo.normal,vault.backup.database.normal,vault.hybrid.server.normal,vault.replication.server.normal]`
+  - **ShowProtectable**
+    - 响应参数变更
+      - `+ instance.protectable.vault.billing.object_type: enum value [turbo]`
+      - `+ instance.protectable.vault.billing.spec_code: enum value [vault.backup.turbo.normal,vault.backup.database.normal,vault.hybrid.server.normal,vault.replication.server.normal]`
+  - **ShowVaultResourceInstances**
+    - 请求参数变更
+      - `+ object_type: enum value [turbo,workspace,vmware,rds,file]`
+    - 响应参数变更
+      - `+ resources.resource_detail.vault.billing.object_type: enum value [turbo]`
+      - `+ resources.resource_detail.vault.billing.spec_code: enum value [vault.backup.turbo.normal,vault.backup.database.normal,vault.hybrid.server.normal,vault.replication.server.normal]`
+
+### HuaweiCloud SDK CFW
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `ShowDomainSetDetail`
+    - `ListDomainParseIp`
+    - `BatchDeleteDomainSet`
+    - `ListRegions`
+    - `ShowImportStatus`
+    - `ShowAntiVirusSwitch`
+    - `UpdateAntiVirusSwitch`
+    - `ShowAntiVirusRule`
+    - `UpdateAntiVirusRule`
+    - `ShowAlarmConfig`
+    - `UpdateAlarmConfig`
+    - `ListAlarmWhitelist`
+    - `SwitchAutoProtectStatus`
+    - `ShowAutoProtectStatus`
+    - `ListProjectTags`
+    - `ChangeIpsRuleMode`
+    - `UpdateAdvancedIpsRule`
+    - `ListIpsRules`
+    - `ListIpsRules1`
+    - `ShowIpsUpdateTime`
+    - `ListCustomerIps`
+    - `ListResourceTags`
+    - `SaveTags`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`ShowQueues`、`ShowTableData`、`AuthorizeDataConnection`、`DeleteEntity`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DC
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListGdgwRouteTables**
+    - 请求参数变更
+      - `+ fields`
+      - `+ ext_fields`
+  - **ListGlobalDcGateways**
+    - 响应参数变更
+      - `+ global_dc_gateways.reason`
+  - **ShowGlobalDcGateway**
+    - 响应参数变更
+      - `+ global_dc_gateway.reason`
+  - **UpdateGlobalDcGateway**
+    - 响应参数变更
+      - `+ global_dc_gateway.reason`
+  - **ListPeerLinks**
+    - 响应参数变更
+      - `+ peer_links.reason`
+  - **CreatePeerLink**
+    - 响应参数变更
+      - `+ peer_link.instance_id`
+      - `+ peer_link.peer_site.type`
+  - **ShowPeerLink**
+    - 响应参数变更
+      - `+ peer_link.reason`
+  - **UpdatePeerLink**
+    - 响应参数变更
+      - `+ peer_link.peer_site.type`
+
+### HuaweiCloud SDK DWS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListNodeTypes**
+    - 响应参数变更
+      - `+ node_types.architecture`
+  - **CreateClusterV2**
+    - 请求参数变更
+      - `+ cluster.ipv6_enable`
+
+### HuaweiCloud SDK EG
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `DiscoverEventSchemaFromData`
+    - `ListEventSchema`
+    - `CreateEventSchema`
+    - `ShowDetailOfEventSchema`
+    - `UpdateEventSchema`
+    - `DeleteEventSchema`
+    - `ListEventSchemaVersions`
+    - `CreateEventSchemaVersion`
+    - `ShowDetailOfEventSchemaVersion`
+    - `DeleteEventSchemaVersion`
+    - `ShowListOfEventSample`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowDetailOfEvent**
+    - 请求参数变更
+      - `- channel_id`
+  - **ShowDetailOfChannel**
+    - 响应参数变更
+      - `+ enterprise_project_id`
+      - `- eps_id`
+  - **UpdateChannel**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+      - `- eps_id`
+    - 响应参数变更
+      - `+ enterprise_project_id`
+      - `- eps_id`
+  - **UpdateSubscriptionSource**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+  - **OperateSubscription**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+  - **UpdateEventSource**
+    - 请求参数变更
+      - `+ detail.instance_id`
+      - `+ detail.group`
+      - `+ detail.topic`
+      - `+ detail.access_key`
+      - `+ detail.secret_key`
+      - `+ detail.vpc_id`
+      - `+ detail.subnet_id`
+      - `+ detail.namesrv_address`
+      - `+ detail.ssl_enable`
+      - `+ detail.enable_acl`
+      - `* detail: object -> object<RocketMqDetail>`
+  - **CreateChannel**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+      - `- eps_id`
+    - 响应参数变更
+      - `+ enterprise_project_id`
+      - `- eps_id`
+  - **ListChannels**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+      - `- eps_id`
+    - 响应参数变更
+      - `+ enterprise_project_id`
+      - `- eps_id`
+      - `+ items.enterprise_project_id`
+      - `- items.eps_id`
+  - **CreateSubscriptionTarget**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+      - `+ apigw_detail`
+      - `+ retry_times`
+      - `+ provider_type: enum value [APIGW]`
+    - 响应参数变更
+      - `+ smn_detail`
+      - `+ apigw_detail`
+      - `+ retry_times`
+      - `+ kafka_detail`
+      - `+ eg_detail`
+  - **DeleteSubscriptionTarget**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+  - **ShowDetailOfSubscriptionTarget**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+    - 响应参数变更
+      - `+ smn_detail`
+      - `+ apigw_detail`
+      - `+ retry_times`
+      - `+ kafka_detail`
+      - `+ eg_detail`
+  - **UpdateSubscriptionTarget**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+      - `+ apigw_detail`
+      - `+ retry_times`
+      - `+ provider_type: enum value [APIGW]`
+    - 响应参数变更
+      - `+ smn_detail`
+      - `+ apigw_detail`
+      - `+ retry_times`
+      - `+ kafka_detail`
+      - `+ eg_detail`
+  - **ShowDetailOfConnection**
+    - 响应参数变更
+      - `+ kafka_detail.enable_sasl_ssl`
+      - `+ kafka_detail.user_name`
+      - `- kafka_detail.sasl_ssl`
+      - `- kafka_detail.username`
+  - **UpdateConnection**
+    - 响应参数变更
+      - `+ kafka_detail.enable_sasl_ssl`
+      - `+ kafka_detail.user_name`
+      - `- kafka_detail.sasl_ssl`
+      - `- kafka_detail.username`
+  - **CreateEventSource**
+    - 请求参数变更
+      - `+ detail.instance_id`
+      - `+ detail.group`
+      - `+ detail.topic`
+      - `+ detail.access_key`
+      - `+ detail.secret_key`
+      - `+ detail.vpc_id`
+      - `+ detail.subnet_id`
+      - `+ detail.namesrv_address`
+      - `+ detail.ssl_enable`
+      - `+ detail.enable_acl`
+      - `* detail: object -> object<RocketMqDetail>`
+  - **DeleteSubscription**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+  - **ShowDetailOfSubscription**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+    - 响应参数变更
+      - `+ smn_detail`
+      - `+ apigw_detail`
+      - `+ retry_times`
+      - `+ kafka_detail`
+      - `+ eg_detail`
+      - `+ targets.kafka_detail`
+      - `+ targets.smn_detail`
+      - `+ targets.eg_detail`
+      - `+ targets.apigw_detail`
+      - `+ targets.retry_times`
+  - **UpdateSubscription**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+      - `+ targets.apigw_detail`
+      - `+ targets.retry_times`
+      - `+ targets.provider_type: enum value [APIGW]`
+    - 响应参数变更
+      - `+ smn_detail`
+      - `+ apigw_detail`
+      - `+ retry_times`
+      - `+ kafka_detail`
+      - `+ eg_detail`
+      - `+ targets.kafka_detail`
+      - `+ targets.smn_detail`
+      - `+ targets.eg_detail`
+      - `+ targets.apigw_detail`
+      - `+ targets.retry_times`
+  - **CreateConnection**
+    - 请求参数变更
+      - `+ kafka_detail.enable_sasl_ssl`
+      - `+ kafka_detail.user_name`
+      - `- kafka_detail.sasl_ssl`
+      - `- kafka_detail.username`
+    - 响应参数变更
+      - `+ kafka_detail.enable_sasl_ssl`
+      - `+ kafka_detail.user_name`
+      - `- kafka_detail.sasl_ssl`
+      - `- kafka_detail.username`
+  - **ListConnections**
+    - 响应参数变更
+      - `+ items.kafka_detail.enable_sasl_ssl`
+      - `+ items.kafka_detail.user_name`
+      - `- items.kafka_detail.sasl_ssl`
+      - `- items.kafka_detail.username`
+  - **ShowEventStreaming**
+    - 响应参数变更
+      - `+ source.source_community_rocketmq`
+      - `+ source.source_dms_rocketmq`
+      - `+ source.name: enum value [HC.DMS_ROCKETMQ,HC.COMMUNITY_ROCKETMQ,HC.Kafka]`
+      - `- source.name: enum value [HC.DMS]`
+      - `+ sink.sink_obs`
+  - **UpdateEventStreaming**
+    - 请求参数变更
+      - `+ source.source_community_rocketmq`
+      - `+ source.source_dms_rocketmq`
+      - `+ source.name: enum value [HC.DMS_ROCKETMQ,HC.COMMUNITY_ROCKETMQ,HC.Kafka]`
+      - `- source.name: enum value [HC.DMS]`
+      - `+ sink.sink_obs`
+  - **CreateSubscription**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+      - `+ targets.apigw_detail`
+      - `+ targets.retry_times`
+      - `+ targets.provider_type: enum value [APIGW]`
+    - 响应参数变更
+      - `+ smn_detail`
+      - `+ apigw_detail`
+      - `+ retry_times`
+      - `+ kafka_detail`
+      - `+ eg_detail`
+      - `+ targets.kafka_detail`
+      - `+ targets.smn_detail`
+      - `+ targets.eg_detail`
+      - `+ targets.apigw_detail`
+      - `+ targets.retry_times`
+  - **ListSubscriptions**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+    - 响应参数变更
+      - `+ smn_detail`
+      - `+ apigw_detail`
+      - `+ retry_times`
+      - `+ kafka_detail`
+      - `+ eg_detail`
+      - `+ items.targets.kafka_detail`
+      - `+ items.targets.smn_detail`
+      - `+ items.targets.eg_detail`
+      - `+ items.targets.apigw_detail`
+      - `+ items.targets.retry_times`
+  - **ListTriggers**
+    - 响应参数变更
+      - `+ smn_detail`
+      - `+ apigw_detail`
+      - `+ retry_times`
+      - `+ kafka_detail`
+      - `+ eg_detail`
+      - `+ items.targets.kafka_detail`
+      - `+ items.targets.smn_detail`
+      - `+ items.targets.eg_detail`
+      - `+ items.targets.apigw_detail`
+      - `+ items.targets.retry_times`
+  - **ListWorkflowTriggers**
+    - 响应参数变更
+      - `+ smn_detail`
+      - `+ apigw_detail`
+      - `+ retry_times`
+      - `+ kafka_detail`
+      - `+ eg_detail`
+      - `+ items.targets.kafka_detail`
+      - `+ items.targets.smn_detail`
+      - `+ items.targets.eg_detail`
+      - `+ items.targets.apigw_detail`
+      - `+ items.targets.retry_times`
+  - **CreateEventStreaming**
+    - 请求参数变更
+      - `+ source.source_community_rocketmq`
+      - `+ source.source_dms_rocketmq`
+      - `+ source.name: enum value [HC.DMS_ROCKETMQ,HC.COMMUNITY_ROCKETMQ,HC.Kafka]`
+      - `- source.name: enum value [HC.DMS]`
+      - `+ sink.sink_obs`
+  - **ListEventStreaming**
+    - 请求参数变更
+      - `- name`
+      - `- fuzzy_name`
+    - 响应参数变更
+      - `+ items.source.source_community_rocketmq`
+      - `+ items.source.source_dms_rocketmq`
+      - `+ items.source.name: enum value [HC.DMS_ROCKETMQ,HC.COMMUNITY_ROCKETMQ,HC.Kafka]`
+      - `- items.source.name: enum value [HC.DMS]`
+      - `+ items.sink.sink_obs`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **AllowDbRolePrivileges**
+    - 请求参数变更
+      - `+ user.name`
+      - `+ user.schema`
+      - `+ user.readonly`
+      - `+ user.default_privilege_grantee`
+      - `* user: object -> object<GaussDBforOpenGaussRoleAttributes>`
+  - **ListDatabaseRoles**
+    - 响应参数变更
+      - `* total_count: int64 -> int32`
+      - `+ roles.attribute.rolsuper`
+      - `+ roles.attribute.rolinherit`
+      - `+ roles.attribute.rolcreaterole`
+      - `+ roles.attribute.rolcreatedb`
+      - `+ roles.attribute.rolcanlogin`
+      - `+ roles.attribute.rolconnlimit`
+      - `+ roles.attribute.rolreplication`
+      - `+ roles.attribute.rolbypassrls`
+      - `+ roles.attribute.rolpassworddeadline`
+      - `* roles.attribute: object -> object<GaussDBListDatabaseRolesPriv>`
+
+### HuaweiCloud SDK HSS
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 支持接口`ListAgentInstallScript`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK IMS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateImage**
+    - 请求参数变更
+      - `+ hw_firmware_type`
+  - **ImportImageQuick**
+    - 请求参数变更
+      - `+ hw_firmware_type`
+
+### HuaweiCloud SDK LTS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListLogStreams**
+    - 请求参数变更
+      - `- offset`
+      - `- limit`
+  - **CreateLogGroup**
+    - 请求参数变更
+      - `+ log_group_name_alias`
+  - **UpdateLogStream**
+    - 请求参数变更
+      - `- ttl_in_days: enum value [7]`
+  - **UpdateTransfer**
+    - 请求参数变更
+      - `+ log_transfer_info.log_transfer_detail.lts_tags`
+      - `+ log_transfer_info.log_transfer_detail.stream_tags`
+      - `+ log_transfer_info.log_transfer_detail.struct_fields`
+      - `+ log_transfer_info.log_transfer_detail.invalid_field_value`
+    - 响应参数变更
+      - `+ log_transfer_info.log_transfer_detail.lts_tags`
+      - `+ log_transfer_info.log_transfer_detail.stream_tags`
+      - `+ log_transfer_info.log_transfer_detail.struct_fields`
+      - `+ log_transfer_info.log_transfer_detail.invalid_field_value`
+  - **CreateTransfer**
+    - 请求参数变更
+      - `+ log_transfer_info.log_transfer_detail.lts_tags`
+      - `+ log_transfer_info.log_transfer_detail.stream_tags`
+      - `+ log_transfer_info.log_transfer_detail.struct_fields`
+      - `+ log_transfer_info.log_transfer_detail.invalid_field_value`
+    - 响应参数变更
+      - `+ log_transfer_info.log_transfer_detail.lts_tags`
+      - `+ log_transfer_info.log_transfer_detail.stream_tags`
+      - `+ log_transfer_info.log_transfer_detail.struct_fields`
+      - `+ log_transfer_info.log_transfer_detail.invalid_field_value`
+  - **DeleteTransfer**
+    - 响应参数变更
+      - `+ log_transfer_info.log_transfer_detail.lts_tags`
+      - `+ log_transfer_info.log_transfer_detail.stream_tags`
+      - `+ log_transfer_info.log_transfer_detail.struct_fields`
+      - `+ log_transfer_info.log_transfer_detail.invalid_field_value`
+  - **ListTransfers**
+    - 响应参数变更
+      - `+ log_transfers.log_transfer_info.log_transfer_detail.lts_tags`
+      - `+ log_transfers.log_transfer_info.log_transfer_detail.stream_tags`
+      - `+ log_transfers.log_transfer_info.log_transfer_detail.struct_fields`
+      - `+ log_transfers.log_transfer_info.log_transfer_detail.invalid_field_value`
+  - **UpdateAccessConfig**
+    - 请求参数变更
+      - `+ access_config_name`
+
+### HuaweiCloud SDK Meeting
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`SearchCorpDigitalInfoList`、`SearchPrivateCorpDigitalInfo`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **SetInterpreterGroup**
+    - 请求参数变更
+      - `+ interpreterGroups.groupType`
+      - `+ interpreterGroups.interpreters.interpreterId`
+  - **UpdateRecurringMeeting**
+    - 请求参数变更
+      - `+ attendees.uniqueType`
+  - **CreateRecurringMeeting**
+    - 请求参数变更
+      - `+ attendees.uniqueType`
+  - **UpdateMeeting**
+    - 请求参数变更
+      - `+ attendees.uniqueType`
+  - **CreateMeeting**
+    - 请求参数变更
+      - `+ attendees.uniqueType`
+
+### HuaweiCloud SDK MetaStudio
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `ListSmartLiveScriptCommands`
+    - `ListSmartLiveRuleCommands`
+    - `BatchConfirmLiveCommands`
+    - `ConfirmSmartLiveRoom`
+    - `ListTtscVocabularyConfigs`
+    - `CreateTtscVocabularyConfigs`
+    - `DeleteTtscVocabularyConfigs`
+    - `SaveTtscVocabularyConfigs`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateTtsAudition**
+    - 请求参数变更
+      - `+ tts_text`
+      - `+ style`
+  - **CreateAsyncTtsJob**
+    - 请求参数变更
+      - `+ tts_text`
+      - `+ callback_config`
+      - `+ gen_srt`
+      - `+ srt_len`
+      - `+ srt_line_limit`
+  - **ShowVoiceTrainingJob**
+    - 响应参数变更
+      - `+ is_remake`
+      - `+ training_input_source_url`
+  - **ShowAsset**
+    - 响应参数变更
+      - `+ asset_extra_meta.voice_model_meta.is_support_thai_auto_split`
+  - **UpdateDigitalAsset**
+    - 请求参数变更
+      - `+ asset_extra_meta.voice_model_meta.is_support_thai_auto_split`
+    - 响应参数变更
+      - `+ asset_extra_meta.voice_model_meta.is_support_thai_auto_split`
+  - **ListVoiceTrainingJob**
+    - 请求参数变更
+      - `+ update_until`
+      - `+ update_since`
+      - `+ sort_key`
+      - `+ sort_dir`
+    - 响应参数变更
+      - `+ is_remake`
+      - `+ training_input_source_url`
+      - `+ jobs.training_input_source_url`
+      - `+ jobs.is_remake`
+  - **CreateDigitalAsset**
+    - 请求参数变更
+      - `+ asset_extra_meta.voice_model_meta.is_support_thai_auto_split`
+  - **ListAssets**
+    - 响应参数变更
+      - `+ assets.asset_extra_meta.voice_model_meta.is_support_thai_auto_split`
+  - **ListSmartLiveRooms**
+    - 请求参数变更
+      - `+ confirm_state`
+  - **ShowSmartLiveRoom**
+    - 响应参数变更
+      - `+ confirm_state`
+      - `+ script_version`
+  - **UpdateSmartLiveRoom**
+    - 响应参数变更
+      - `+ confirm_state`
+      - `+ script_version`
+
+### HuaweiCloud SDK RDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`ListDrInfos`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListUpdateBackupEnhancePolicy**
+    - 响应参数变更
+      - `* policies.retention_days: string -> int32`
+
+### HuaweiCloud SDK SecMaster
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateDataspace**
+    - 响应参数变更
+      - `+ domain_id`
+      - `+ create_by`
+      - `+ dataspace_name`
+      - `+ update_time`
+      - `+ create_time`
+      - `+ project_id`
+      - `+ dataspace_id`
+      - `+ region_id`
+      - `+ description`
+      - `+ update_by`
+      - `+ dataspace_type`
+
+### HuaweiCloud SDK VPCEP
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`UpgradeEndpointService`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK WAF
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **DeleteIgnoreRule**
+    - 响应参数变更
+      - `* advanced: list<Advanced> -> object<IgnoreAdvanced>`
+  - **CreateIgnoreRule**
+    - 请求参数变更
+      - `* advanced: list<Advanced> -> object<IgnoreAdvanced>`
+    - 响应参数变更
+      - `* advanced: list<Advanced> -> object<IgnoreAdvanced>`
+  - **ListIgnoreRule**
+    - 响应参数变更
+      - `* items.advanced: list<Advanced> -> object<IgnoreAdvanced>`
+
 # 3.1.128 2024-12-19
 
 ### HuaweiCloud SDK AAD

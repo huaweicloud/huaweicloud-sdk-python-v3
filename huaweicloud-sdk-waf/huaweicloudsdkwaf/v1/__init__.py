@@ -7,7 +7,6 @@ from huaweicloudsdkwaf.v1.waf_async_client import WafAsyncClient
 
 from huaweicloudsdkwaf.v1.model.access_progress import AccessProgress
 from huaweicloudsdkwaf.v1.model.action import Action
-from huaweicloudsdkwaf.v1.model.advanced import Advanced
 from huaweicloudsdkwaf.v1.model.alert_notice_config_response import AlertNoticeConfigResponse
 from huaweicloudsdkwaf.v1.model.alter_waf_product_info import AlterWafProductInfo
 from huaweicloudsdkwaf.v1.model.anti_tamper_rule_response_body import AntiTamperRuleResponseBody

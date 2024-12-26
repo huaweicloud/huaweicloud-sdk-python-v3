@@ -148,8 +148,7 @@ class MysqlInstanceRequest:
         self._tde_info = None
         self.discriminator = None
 
-        if charge_info is not None:
-            self.charge_info = charge_info
+        self.charge_info = charge_info
         self.region = region
         self.name = name
         self.datastore = datastore
@@ -162,8 +161,7 @@ class MysqlInstanceRequest:
         if configuration_id is not None:
             self.configuration_id = configuration_id
         self.password = password
-        if backup_strategy is not None:
-            self.backup_strategy = backup_strategy
+        self.backup_strategy = backup_strategy
         if time_zone is not None:
             self.time_zone = time_zone
         self.availability_zone_mode = availability_zone_mode

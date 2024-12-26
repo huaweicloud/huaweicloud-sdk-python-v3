@@ -21,7 +21,7 @@ class CustomizeSourceCreateReq:
         'description': 'str',
         'channel_id': 'str',
         'type': 'str',
-        'detail': 'object'
+        'detail': 'RocketMqDetail'
     }
 
     attribute_map = {
@@ -45,8 +45,8 @@ class CustomizeSourceCreateReq:
         :type channel_id: str
         :param type: 事件源类型
         :type type: str
-        :param detail: json格式封装消息实例链接信息：如RabbitMQ实例的instance_id字段、虚拟主机vhost字段、队列queue字段、用户名、密码等
-        :type detail: object
+        :param detail: 
+        :type detail: :class:`huaweicloudsdkeg.v1.RocketMqDetail`
         """
         
         
@@ -160,10 +160,8 @@ class CustomizeSourceCreateReq:
     def detail(self):
         """Gets the detail of this CustomizeSourceCreateReq.
 
-        json格式封装消息实例链接信息：如RabbitMQ实例的instance_id字段、虚拟主机vhost字段、队列queue字段、用户名、密码等
-
         :return: The detail of this CustomizeSourceCreateReq.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkeg.v1.RocketMqDetail`
         """
         return self._detail
 
@@ -171,10 +169,8 @@ class CustomizeSourceCreateReq:
     def detail(self, detail):
         """Sets the detail of this CustomizeSourceCreateReq.
 
-        json格式封装消息实例链接信息：如RabbitMQ实例的instance_id字段、虚拟主机vhost字段、队列queue字段、用户名、密码等
-
         :param detail: The detail of this CustomizeSourceCreateReq.
-        :type detail: object
+        :type detail: :class:`huaweicloudsdkeg.v1.RocketMqDetail`
         """
         self._detail = detail
 

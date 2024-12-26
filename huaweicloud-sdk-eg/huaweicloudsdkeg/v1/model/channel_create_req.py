@@ -19,7 +19,7 @@ class ChannelCreateReq:
     openapi_types = {
         'name': 'str',
         'description': 'str',
-        'eps_id': 'str',
+        'enterprise_project_id': 'str',
         'cross_account': 'bool',
         'policy': 'dict(str, ChannelCreateReqPolicy)'
     }
@@ -27,12 +27,12 @@ class ChannelCreateReq:
     attribute_map = {
         'name': 'name',
         'description': 'description',
-        'eps_id': 'eps_id',
+        'enterprise_project_id': 'enterprise_project_id',
         'cross_account': 'cross_account',
         'policy': 'policy'
     }
 
-    def __init__(self, name=None, description=None, eps_id=None, cross_account=None, policy=None):
+    def __init__(self, name=None, description=None, enterprise_project_id=None, cross_account=None, policy=None):
         """ChannelCreateReq
 
         The model defined in huaweicloud sdk
@@ -41,8 +41,8 @@ class ChannelCreateReq:
         :type name: str
         :param description: 通道描述
         :type description: str
-        :param eps_id: 企业项目id
-        :type eps_id: str
+        :param enterprise_project_id: 企业项目id
+        :type enterprise_project_id: str
         :param cross_account: 跨账号开关
         :type cross_account: bool
         :param policy: 策略
@@ -53,7 +53,7 @@ class ChannelCreateReq:
 
         self._name = None
         self._description = None
-        self._eps_id = None
+        self._enterprise_project_id = None
         self._cross_account = None
         self._policy = None
         self.discriminator = None
@@ -61,8 +61,8 @@ class ChannelCreateReq:
         self.name = name
         if description is not None:
             self.description = description
-        if eps_id is not None:
-            self.eps_id = eps_id
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if cross_account is not None:
             self.cross_account = cross_account
         if policy is not None:
@@ -113,26 +113,26 @@ class ChannelCreateReq:
         self._description = description
 
     @property
-    def eps_id(self):
-        """Gets the eps_id of this ChannelCreateReq.
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ChannelCreateReq.
 
         企业项目id
 
-        :return: The eps_id of this ChannelCreateReq.
+        :return: The enterprise_project_id of this ChannelCreateReq.
         :rtype: str
         """
-        return self._eps_id
+        return self._enterprise_project_id
 
-    @eps_id.setter
-    def eps_id(self, eps_id):
-        """Sets the eps_id of this ChannelCreateReq.
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ChannelCreateReq.
 
         企业项目id
 
-        :param eps_id: The eps_id of this ChannelCreateReq.
-        :type eps_id: str
+        :param enterprise_project_id: The enterprise_project_id of this ChannelCreateReq.
+        :type enterprise_project_id: str
         """
-        self._eps_id = eps_id
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def cross_account(self):

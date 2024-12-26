@@ -21,6 +21,7 @@ class GlobalDcGatewayEntry:
         'tenant_id': 'str',
         'name': 'str',
         'description': 'str',
+        'reason': 'str',
         'enterprise_project_id': 'str',
         'global_center_network_id': 'str',
         'bgp_asn': 'int',
@@ -42,6 +43,7 @@ class GlobalDcGatewayEntry:
         'tenant_id': 'tenant_id',
         'name': 'name',
         'description': 'description',
+        'reason': 'reason',
         'enterprise_project_id': 'enterprise_project_id',
         'global_center_network_id': 'global_center_network_id',
         'bgp_asn': 'bgp_asn',
@@ -58,7 +60,7 @@ class GlobalDcGatewayEntry:
         'address_family': 'address_family'
     }
 
-    def __init__(self, id=None, tenant_id=None, name=None, description=None, enterprise_project_id=None, global_center_network_id=None, bgp_asn=None, region_id=None, location_name=None, locales=None, current_peer_link_count=None, available_peer_link_count=None, tags=None, admin_state_up=None, status=None, created_time=None, updated_time=None, address_family=None):
+    def __init__(self, id=None, tenant_id=None, name=None, description=None, reason=None, enterprise_project_id=None, global_center_network_id=None, bgp_asn=None, region_id=None, location_name=None, locales=None, current_peer_link_count=None, available_peer_link_count=None, tags=None, admin_state_up=None, status=None, created_time=None, updated_time=None, address_family=None):
         """GlobalDcGatewayEntry
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class GlobalDcGatewayEntry:
         :type name: str
         :param description: 描述信息
         :type description: str
+        :param reason: 失败原因
+        :type reason: str
         :param enterprise_project_id: global-dc-gateway所属的企业项目ID。
         :type enterprise_project_id: str
         :param global_center_network_id: DGW加载的全球中心网络实例的ID
@@ -107,6 +111,7 @@ class GlobalDcGatewayEntry:
         self._tenant_id = None
         self._name = None
         self._description = None
+        self._reason = None
         self._enterprise_project_id = None
         self._global_center_network_id = None
         self._bgp_asn = None
@@ -131,6 +136,8 @@ class GlobalDcGatewayEntry:
             self.name = name
         if description is not None:
             self.description = description
+        if reason is not None:
+            self.reason = reason
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if global_center_network_id is not None:
@@ -247,6 +254,28 @@ class GlobalDcGatewayEntry:
         :type description: str
         """
         self._description = description
+
+    @property
+    def reason(self):
+        """Gets the reason of this GlobalDcGatewayEntry.
+
+        失败原因
+
+        :return: The reason of this GlobalDcGatewayEntry.
+        :rtype: str
+        """
+        return self._reason
+
+    @reason.setter
+    def reason(self, reason):
+        """Sets the reason of this GlobalDcGatewayEntry.
+
+        失败原因
+
+        :param reason: The reason of this GlobalDcGatewayEntry.
+        :type reason: str
+        """
+        self._reason = reason
 
     @property
     def enterprise_project_id(self):

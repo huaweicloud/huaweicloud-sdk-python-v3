@@ -36,7 +36,9 @@ class OrderInstanceV2:
         'expire_policy': 'int',
         'product_spec_desc': 'str',
         'spec_size': 'decimal.Decimal',
-        'spec_size_measure_id': 'int'
+        'spec_size_measure_id': 'int',
+        'update_time': 'str',
+        'enterprise_project': 'EnterpriseProject'
     }
 
     attribute_map = {
@@ -59,10 +61,12 @@ class OrderInstanceV2:
         'expire_policy': 'expire_policy',
         'product_spec_desc': 'product_spec_desc',
         'spec_size': 'spec_size',
-        'spec_size_measure_id': 'spec_size_measure_id'
+        'spec_size_measure_id': 'spec_size_measure_id',
+        'update_time': 'update_time',
+        'enterprise_project': 'enterprise_project'
     }
 
-    def __init__(self, id=None, resource_id=None, resource_name=None, region_code=None, service_type_code=None, resource_type_code=None, resource_type_name=None, service_type_name=None, resource_spec_code=None, project_id=None, product_id=None, parent_resource_id=None, is_main_resource=None, status=None, effective_time=None, expire_time=None, expire_policy=None, product_spec_desc=None, spec_size=None, spec_size_measure_id=None):
+    def __init__(self, id=None, resource_id=None, resource_name=None, region_code=None, service_type_code=None, resource_type_code=None, resource_type_name=None, service_type_name=None, resource_spec_code=None, project_id=None, product_id=None, parent_resource_id=None, is_main_resource=None, status=None, effective_time=None, expire_time=None, expire_policy=None, product_spec_desc=None, spec_size=None, spec_size_measure_id=None, update_time=None, enterprise_project=None):
         """OrderInstanceV2
 
         The model defined in huaweicloud sdk
@@ -107,6 +111,10 @@ class OrderInstanceV2:
         :type spec_size: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param spec_size_measure_id: 线性大小单位
         :type spec_size_measure_id: int
+        :param update_time: |参数名称：资源更新时间。| |参数约束及描述：资源更新时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-12-25T07:32:04Z”。|
+        :type update_time: str
+        :param enterprise_project: 
+        :type enterprise_project: :class:`huaweicloudsdkbssintl.v2.EnterpriseProject`
         """
         
         
@@ -131,6 +139,8 @@ class OrderInstanceV2:
         self._product_spec_desc = None
         self._spec_size = None
         self._spec_size_measure_id = None
+        self._update_time = None
+        self._enterprise_project = None
         self.discriminator = None
 
         if id is not None:
@@ -173,6 +183,10 @@ class OrderInstanceV2:
             self.spec_size = spec_size
         if spec_size_measure_id is not None:
             self.spec_size_measure_id = spec_size_measure_id
+        if update_time is not None:
+            self.update_time = update_time
+        if enterprise_project is not None:
+            self.enterprise_project = enterprise_project
 
     @property
     def id(self):
@@ -613,6 +627,46 @@ class OrderInstanceV2:
         :type spec_size_measure_id: int
         """
         self._spec_size_measure_id = spec_size_measure_id
+
+    @property
+    def update_time(self):
+        """Gets the update_time of this OrderInstanceV2.
+
+        |参数名称：资源更新时间。| |参数约束及描述：资源更新时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-12-25T07:32:04Z”。|
+
+        :return: The update_time of this OrderInstanceV2.
+        :rtype: str
+        """
+        return self._update_time
+
+    @update_time.setter
+    def update_time(self, update_time):
+        """Sets the update_time of this OrderInstanceV2.
+
+        |参数名称：资源更新时间。| |参数约束及描述：资源更新时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-12-25T07:32:04Z”。|
+
+        :param update_time: The update_time of this OrderInstanceV2.
+        :type update_time: str
+        """
+        self._update_time = update_time
+
+    @property
+    def enterprise_project(self):
+        """Gets the enterprise_project of this OrderInstanceV2.
+
+        :return: The enterprise_project of this OrderInstanceV2.
+        :rtype: :class:`huaweicloudsdkbssintl.v2.EnterpriseProject`
+        """
+        return self._enterprise_project
+
+    @enterprise_project.setter
+    def enterprise_project(self, enterprise_project):
+        """Sets the enterprise_project of this OrderInstanceV2.
+
+        :param enterprise_project: The enterprise_project of this OrderInstanceV2.
+        :type enterprise_project: :class:`huaweicloudsdkbssintl.v2.EnterpriseProject`
+        """
+        self._enterprise_project = enterprise_project
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -232,6 +232,8 @@ if __name__ == "__main__":
     * [7.1 自定义请求头](#71-自定义请求头-top)
     * [7.2 请求重试](#72-请求重试-top)
 * [8. 文件上传与下载](#8-文件上传与下载-top)
+* [9. FAQ](#9-faq-top)
+    * [9.1 云联盟场景如何调用](#91-云联盟场景如何调用-top)
 
 ### 1. 客户端连接参数 [:top:](#用户手册-top)
 
@@ -686,7 +688,7 @@ client = IamClient.new_builder() \
 **两种方式对比：**
 
 | 初始化方式 | 优势 | 劣势 |
-| :---- | :---- | :---- | 
+| :---- | :---- | :---- |
 | 指定云服务 Endpoint 方式 | 只要接口已在当前环境发布就可以成功调用 | 需要用户自行查找并填写 projectId 和 endpoint
 | 指定 Region 方式 | 无需指定 projectId 和 endpoint，按照要求配置即可自动获取该值并回填 | 支持的服务和 region 有限制
 
@@ -905,7 +907,7 @@ client = VpcClient.new_builder() \
 
 打开日志开关后，每次请求都会有一条记录，如：
 
-```text 
+```text
 2020-06-16 10:44:02,019 4568 HuaweiCloud-SDK http_handler.py 28 INFO "GET https://vpc.cn-north-1.myhuaweicloud.com/v1/0904f9e1f100d2932f94c01f9aa1cfd7/vpcs" 200 11 0:00:00.543430 b5c927ffdab8401e772e70aa49972037
 ```
 
@@ -998,7 +1000,7 @@ print(response)
 #### 7.2 请求重试 [:top:](#用户手册-top)
 
 `v3.1.97`版本起支持请求重试，需要配置以下参数：
- 
+
 - 重试条件：根据上一次请求的响应或异常来判断是否重试
 - 最大重试次数：当符合重试条件时的最大重试次数，指定范围[1, 10]
 - 重试策略：计算每次重试前的等待时间（毫秒）
@@ -1015,7 +1017,7 @@ client = VpcClient.new_builder() \
     .with_credentials(credentials) \
     .with_region(VpcRegion.value_of("cn-north-4")) \
     .build()
-    
+
 request = ListVpcsRequest()
 # 当发生网络连接异常时进行请求重试，最大重试次数为3，重试间隔策略为立即重试
 response = client.list_vpcs_invoker(request).with_retry(
@@ -1058,7 +1060,7 @@ def create_image_watermark(client):
         request.body = body
         response = client.create_image_watermark(request)
         image_file.close()
-        
+
         # 定义下载文件的方法
         def save(stream):
             with open("result.jpg", "wb") as f:
@@ -1085,6 +1087,27 @@ if __name__ == "__main__":
         .with_credentials(credentials) \
         .with_endpoint(endpoint) \
         .build()
-    
+
     create_image_watermark(dsc_client)
+```
+
+### 9. FAQ [:top:](#用户手册-top)
+
+#### 9.1 云联盟场景如何调用 [:top:](#用户手册-top)
+
+```python
+# 指定终端节点，以 云联盟都柏林节点调用 VPC 服务为例
+endpoint = "https://vpc.eu-west-101.myhuaweicloud.com"
+
+# 初始化客户端认证信息，需要填写相应 project_id/domain_id，以初始化 BasicCredentials 为例
+ak = os.getenv("HUAWEICLOUD_SDK_AK")
+sk = os.getenv("HUAWEICLOUD_SDK_SK")
+project_id = "{your projectId string}"
+basic_credentials = BasicCredentials(ak, sk, project_id)
+
+# 初始化指定云服务的客户端 {Service}Client ，以初始化 Region 级服务 VPC 的 VpcClient 为例
+client = VpcClient.new_builder() \
+    .with_credentials(basic_credentials) \
+    .with_endpoint(endpoint) \
+    .build()
 ```

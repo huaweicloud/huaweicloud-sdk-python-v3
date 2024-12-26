@@ -18,15 +18,17 @@ class ShowDetailOfSubscriptionTargetRequest:
 
     openapi_types = {
         'subscription_id': 'str',
-        'target_id': 'str'
+        'target_id': 'str',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
         'subscription_id': 'subscription_id',
-        'target_id': 'target_id'
+        'target_id': 'target_id',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, subscription_id=None, target_id=None):
+    def __init__(self, subscription_id=None, target_id=None, enterprise_project_id=None):
         """ShowDetailOfSubscriptionTargetRequest
 
         The model defined in huaweicloud sdk
@@ -35,16 +37,21 @@ class ShowDetailOfSubscriptionTargetRequest:
         :type subscription_id: str
         :param target_id: 事件订阅目标ID
         :type target_id: str
+        :param enterprise_project_id: 创建订阅时所使用的企业项目id
+        :type enterprise_project_id: str
         """
         
         
 
         self._subscription_id = None
         self._target_id = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         self.subscription_id = subscription_id
         self.target_id = target_id
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def subscription_id(self):
@@ -89,6 +96,28 @@ class ShowDetailOfSubscriptionTargetRequest:
         :type target_id: str
         """
         self._target_id = target_id
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ShowDetailOfSubscriptionTargetRequest.
+
+        创建订阅时所使用的企业项目id
+
+        :return: The enterprise_project_id of this ShowDetailOfSubscriptionTargetRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ShowDetailOfSubscriptionTargetRequest.
+
+        创建订阅时所使用的企业项目id
+
+        :param enterprise_project_id: The enterprise_project_id of this ShowDetailOfSubscriptionTargetRequest.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

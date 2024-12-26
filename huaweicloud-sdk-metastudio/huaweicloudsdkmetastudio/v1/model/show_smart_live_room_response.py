@@ -43,6 +43,8 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         'cover_url': 'str',
         'thumbnail': 'str',
         'room_state': 'str',
+        'confirm_state': 'str',
+        'script_version': 'str',
         'error_info': 'ErrorResponse',
         'x_request_id': 'str'
     }
@@ -73,11 +75,13 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         'cover_url': 'cover_url',
         'thumbnail': 'thumbnail',
         'room_state': 'room_state',
+        'confirm_state': 'confirm_state',
+        'script_version': 'script_version',
         'error_info': 'error_info',
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, room_name=None, room_description=None, room_type=None, scene_scripts=None, interaction_config=None, interaction_rules=None, play_policy=None, video_config=None, output_urls=None, stream_keys=None, backup_model_asset_ids=None, live_event_callback_config=None, rtc_callback_config=None, review_config=None, shared_config=None, view_mode=None, co_streamer_config=None, priv_data=None, room_id=None, relation_live_platform_info=None, create_time=None, update_time=None, cover_url=None, thumbnail=None, room_state=None, error_info=None, x_request_id=None):
+    def __init__(self, room_name=None, room_description=None, room_type=None, scene_scripts=None, interaction_config=None, interaction_rules=None, play_policy=None, video_config=None, output_urls=None, stream_keys=None, backup_model_asset_ids=None, live_event_callback_config=None, rtc_callback_config=None, review_config=None, shared_config=None, view_mode=None, co_streamer_config=None, priv_data=None, room_id=None, relation_live_platform_info=None, create_time=None, update_time=None, cover_url=None, thumbnail=None, room_state=None, confirm_state=None, script_version=None, error_info=None, x_request_id=None):
         """ShowSmartLiveRoomResponse
 
         The model defined in huaweicloud sdk
@@ -132,6 +136,10 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         :type thumbnail: str
         :param room_state: 直播间配置状态。 - ENABLE: 直播间正常可用。 - DISABLE： 直播间不可用。不可用原因在error_info中说明。 - BLOCKED：直播间被冻结。冻结原因在error_info中说明。
         :type room_state: str
+        :param confirm_state: 直播间确认状态。此状态仅用于特定用户需要人工确认场景。 - UNCONFIRM: 未确认 - CONFIRMED：已确认 - REJECT： 拒绝
+        :type confirm_state: str
+        :param script_version: 直播间剧本版本。调用update接口即更新版本。使用时间戳。
+        :type script_version: str
         :param error_info: 
         :type error_info: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
         :param x_request_id: 
@@ -165,6 +173,8 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         self._cover_url = None
         self._thumbnail = None
         self._room_state = None
+        self._confirm_state = None
+        self._script_version = None
         self._error_info = None
         self._x_request_id = None
         self.discriminator = None
@@ -218,6 +228,10 @@ class ShowSmartLiveRoomResponse(SdkResponse):
             self.thumbnail = thumbnail
         if room_state is not None:
             self.room_state = room_state
+        if confirm_state is not None:
+            self.confirm_state = confirm_state
+        if script_version is not None:
+            self.script_version = script_version
         if error_info is not None:
             self.error_info = error_info
         if x_request_id is not None:
@@ -736,6 +750,50 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         :type room_state: str
         """
         self._room_state = room_state
+
+    @property
+    def confirm_state(self):
+        """Gets the confirm_state of this ShowSmartLiveRoomResponse.
+
+        直播间确认状态。此状态仅用于特定用户需要人工确认场景。 - UNCONFIRM: 未确认 - CONFIRMED：已确认 - REJECT： 拒绝
+
+        :return: The confirm_state of this ShowSmartLiveRoomResponse.
+        :rtype: str
+        """
+        return self._confirm_state
+
+    @confirm_state.setter
+    def confirm_state(self, confirm_state):
+        """Sets the confirm_state of this ShowSmartLiveRoomResponse.
+
+        直播间确认状态。此状态仅用于特定用户需要人工确认场景。 - UNCONFIRM: 未确认 - CONFIRMED：已确认 - REJECT： 拒绝
+
+        :param confirm_state: The confirm_state of this ShowSmartLiveRoomResponse.
+        :type confirm_state: str
+        """
+        self._confirm_state = confirm_state
+
+    @property
+    def script_version(self):
+        """Gets the script_version of this ShowSmartLiveRoomResponse.
+
+        直播间剧本版本。调用update接口即更新版本。使用时间戳。
+
+        :return: The script_version of this ShowSmartLiveRoomResponse.
+        :rtype: str
+        """
+        return self._script_version
+
+    @script_version.setter
+    def script_version(self, script_version):
+        """Sets the script_version of this ShowSmartLiveRoomResponse.
+
+        直播间剧本版本。调用update接口即更新版本。使用时间戳。
+
+        :param script_version: The script_version of this ShowSmartLiveRoomResponse.
+        :type script_version: str
+        """
+        self._script_version = script_version
 
     @property
     def error_info(self):

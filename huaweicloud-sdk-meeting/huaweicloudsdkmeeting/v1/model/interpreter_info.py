@@ -20,17 +20,19 @@ class InterpreterInfo:
         'login_account': 'str',
         'user_id': 'str',
         'call_number': 'str',
-        'name': 'str'
+        'name': 'str',
+        'interpreter_id': 'str'
     }
 
     attribute_map = {
         'login_account': 'loginAccount',
         'user_id': 'userID',
         'call_number': 'callNumber',
-        'name': 'name'
+        'name': 'name',
+        'interpreter_id': 'interpreterId'
     }
 
-    def __init__(self, login_account=None, user_id=None, call_number=None, name=None):
+    def __init__(self, login_account=None, user_id=None, call_number=None, name=None, interpreter_id=None):
         """InterpreterInfo
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class InterpreterInfo:
         :type call_number: str
         :param name: 用户名。
         :type name: str
+        :param interpreter_id: 传译员序号，AI传译组下传译员唯一标识。
+        :type interpreter_id: str
         """
         
         
@@ -51,6 +55,7 @@ class InterpreterInfo:
         self._user_id = None
         self._call_number = None
         self._name = None
+        self._interpreter_id = None
         self.discriminator = None
 
         self.login_account = login_account
@@ -60,6 +65,8 @@ class InterpreterInfo:
             self.call_number = call_number
         if name is not None:
             self.name = name
+        if interpreter_id is not None:
+            self.interpreter_id = interpreter_id
 
     @property
     def login_account(self):
@@ -148,6 +155,28 @@ class InterpreterInfo:
         :type name: str
         """
         self._name = name
+
+    @property
+    def interpreter_id(self):
+        """Gets the interpreter_id of this InterpreterInfo.
+
+        传译员序号，AI传译组下传译员唯一标识。
+
+        :return: The interpreter_id of this InterpreterInfo.
+        :rtype: str
+        """
+        return self._interpreter_id
+
+    @interpreter_id.setter
+    def interpreter_id(self, interpreter_id):
+        """Sets the interpreter_id of this InterpreterInfo.
+
+        传译员序号，AI传译组下传译员唯一标识。
+
+        :param interpreter_id: The interpreter_id of this InterpreterInfo.
+        :type interpreter_id: str
+        """
+        self._interpreter_id = interpreter_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

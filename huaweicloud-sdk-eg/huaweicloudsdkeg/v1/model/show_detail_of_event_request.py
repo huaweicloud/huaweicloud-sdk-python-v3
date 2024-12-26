@@ -17,35 +17,28 @@ class ShowDetailOfEventRequest:
     sensitive_list = []
 
     openapi_types = {
-        'trace_id': 'str',
-        'channel_id': 'str'
+        'trace_id': 'str'
     }
 
     attribute_map = {
-        'trace_id': 'trace_id',
-        'channel_id': 'channel_id'
+        'trace_id': 'trace_id'
     }
 
-    def __init__(self, trace_id=None, channel_id=None):
+    def __init__(self, trace_id=None):
         """ShowDetailOfEventRequest
 
         The model defined in huaweicloud sdk
 
         :param trace_id: 追踪事件的uniqueId
         :type trace_id: str
-        :param channel_id: 指定查询的事件通道ID
-        :type channel_id: str
         """
         
         
 
         self._trace_id = None
-        self._channel_id = None
         self.discriminator = None
 
         self.trace_id = trace_id
-        if channel_id is not None:
-            self.channel_id = channel_id
 
     @property
     def trace_id(self):
@@ -68,28 +61,6 @@ class ShowDetailOfEventRequest:
         :type trace_id: str
         """
         self._trace_id = trace_id
-
-    @property
-    def channel_id(self):
-        """Gets the channel_id of this ShowDetailOfEventRequest.
-
-        指定查询的事件通道ID
-
-        :return: The channel_id of this ShowDetailOfEventRequest.
-        :rtype: str
-        """
-        return self._channel_id
-
-    @channel_id.setter
-    def channel_id(self, channel_id):
-        """Sets the channel_id of this ShowDetailOfEventRequest.
-
-        指定查询的事件通道ID
-
-        :param channel_id: The channel_id of this ShowDetailOfEventRequest.
-        :type channel_id: str
-        """
-        self._channel_id = channel_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

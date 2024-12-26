@@ -273,6 +273,7 @@ class AosAsyncClient(Client):
         * 当执行请求接受后，执行计划状态将变为&#x60;APPLY_IN_PROGRESS&#x60;，后台会进行异步处理。
         * 当执行结束后，执行计划状态将变为&#x60;APPLIED&#x60;。
         * 用户可以调用GetStackMetadata查询资源栈的状态（status）来跟踪资源栈部署情况以及确认本次执行结果是否成功。
+        * 执行执行计划时，用户将模板中定义的资源删除（包括Import定义的资源），会触发实际资源的删除。
         
         如果不希望通过执行计划进行部署操作，也可以选择调用DeployStack进行直接部署
         
@@ -1595,7 +1596,7 @@ class AosAsyncClient(Client):
 
         创建私有模块（CreatePrivateModule）
         
-        创建一个私有的空模块。如果用户给予了module_version与module_uri，则在创建私有模块的同时，在私有模块下创建一个私有模块版本。
+        创建一个空的私有模块。如果用户给予了module_version与module_uri，则在创建私有模块的同时，在私有模块下创建一个私有模块版本。
           * 模块允许用户将可复用的代码编辑在一起供模块使用。
           * 如果同名私有模块在当前账户中已经存在，则会返回失败。
           * 版本号遵循语义化版本号（Semantic Version），为用户自定义。
@@ -2604,7 +2605,7 @@ class AosAsyncClient(Client):
         此API用于删除某个资源栈
         **请谨慎操作，删除资源栈将会删除与该资源栈相关的所有数据和资源，如：执行计划、资源栈事件、资源栈输出、资源等。**
         
-        * 此API会触发删除资源栈，并以最终一致性删除所有数据，用户可以调用GetStackMetadata或ListStacks跟踪资源栈删除情况
+        * 此API会触发删除资源栈，并以最终一致性删除所有数据（包括通过资源栈模板创建以及通过Import模块导入的已有资源），用户可以调用GetStackMetadata或ListStacks跟踪资源栈删除情况
         * 如果资源栈状态处于非终态（状态以&#x60;IN_PROGRESS&#x60;结尾）状态时，则不允许删除。包括但不限于以下状态：
           * 正在部署（DEPLOYMENT_IN_PROGRESS）
           * 正在删除（DELETION_IN_PROGRESS）
@@ -2774,6 +2775,8 @@ class AosAsyncClient(Client):
         * 此API会直接触发部署，如果用户希望先确认部署会发生的时间，请使用执行计划，即使用CreateExecutionPlan以创建执行计划、使用GetExecutionPlan以获取执行计划
         
         * 此API为全量API，即用户每次部署都需要给予所想要使用的template、vars的全量
+        
+        * 部署资源栈时，用户将模板中定义的资源删除（包括Import定义的资源），会触发实际资源的删除。建议通过CreateExecutionPlan查看模板修改后资源栈的部署行为，以避免误操作非预期资源
         
         * 当触发的部署失败时，如果资源栈开启了自动回滚，会触发自动回滚的流程，否则就会停留在部署失败时的状态
         

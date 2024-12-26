@@ -36,7 +36,8 @@ class V2CreateCluster:
         'master_key_name': 'str',
         'crypt_algorithm': 'str',
         'volume': 'Volume',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'ipv6_enable': 'bool'
     }
 
     attribute_map = {
@@ -59,10 +60,11 @@ class V2CreateCluster:
         'master_key_name': 'master_key_name',
         'crypt_algorithm': 'crypt_algorithm',
         'volume': 'volume',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'ipv6_enable': 'ipv6_enable'
     }
 
-    def __init__(self, name=None, flavor=None, num_cn=None, num_node=None, db_name=None, db_password=None, db_port=None, dss_pool_id=None, availability_zones=None, tags=None, vpc_id=None, subnet_id=None, security_group_id=None, public_ip=None, datastore_version=None, master_key_id=None, master_key_name=None, crypt_algorithm=None, volume=None, enterprise_project_id=None):
+    def __init__(self, name=None, flavor=None, num_cn=None, num_node=None, db_name=None, db_password=None, db_port=None, dss_pool_id=None, availability_zones=None, tags=None, vpc_id=None, subnet_id=None, security_group_id=None, public_ip=None, datastore_version=None, master_key_id=None, master_key_name=None, crypt_algorithm=None, volume=None, enterprise_project_id=None, ipv6_enable=None):
         """V2CreateCluster
 
         The model defined in huaweicloud sdk
@@ -107,6 +109,8 @@ class V2CreateCluster:
         :type volume: :class:`huaweicloudsdkdws.v2.Volume`
         :param enterprise_project_id: 企业项目ID，对集群指定企业项目，如果未指定，则使用默认企业项目“default”的ID，即0。
         :type enterprise_project_id: str
+        :param ipv6_enable: 指定网络协议类型，表明是否支持IPv6,默认不使用IPv6。
+        :type ipv6_enable: bool
         """
         
         
@@ -131,6 +135,7 @@ class V2CreateCluster:
         self._crypt_algorithm = None
         self._volume = None
         self._enterprise_project_id = None
+        self._ipv6_enable = None
         self.discriminator = None
 
         self.name = name
@@ -158,10 +163,11 @@ class V2CreateCluster:
             self.master_key_name = master_key_name
         if crypt_algorithm is not None:
             self.crypt_algorithm = crypt_algorithm
-        if volume is not None:
-            self.volume = volume
+        self.volume = volume
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if ipv6_enable is not None:
+            self.ipv6_enable = ipv6_enable
 
     @property
     def name(self):
@@ -594,6 +600,28 @@ class V2CreateCluster:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def ipv6_enable(self):
+        """Gets the ipv6_enable of this V2CreateCluster.
+
+        指定网络协议类型，表明是否支持IPv6,默认不使用IPv6。
+
+        :return: The ipv6_enable of this V2CreateCluster.
+        :rtype: bool
+        """
+        return self._ipv6_enable
+
+    @ipv6_enable.setter
+    def ipv6_enable(self, ipv6_enable):
+        """Sets the ipv6_enable of this V2CreateCluster.
+
+        指定网络协议类型，表明是否支持IPv6,默认不使用IPv6。
+
+        :param ipv6_enable: The ipv6_enable of this V2CreateCluster.
+        :type ipv6_enable: bool
+        """
+        self._ipv6_enable = ipv6_enable
 
     def to_dict(self):
         """Returns the model properties as a dict"""

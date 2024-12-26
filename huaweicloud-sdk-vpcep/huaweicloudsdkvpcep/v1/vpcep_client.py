@@ -1892,6 +1892,72 @@ class VpcepClient(Client):
 
         return http_info
 
+    def upgrade_endpoint_service(self, request):
+        """升级终端节点服务
+
+        升级终端节点服务，使终端节点服务支持创建专业型终端节点实例
+        该接口仅支持在华东二、中东-利雅得、华东-青岛、非洲-开罗局点调用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpgradeEndpointService
+        :type request: :class:`huaweicloudsdkvpcep.v1.UpgradeEndpointServiceRequest`
+        :rtype: :class:`huaweicloudsdkvpcep.v1.UpgradeEndpointServiceResponse`
+        """
+        http_info = self._upgrade_endpoint_service_http_info(request)
+        return self._call_api(**http_info)
+
+    def upgrade_endpoint_service_invoker(self, request):
+        http_info = self._upgrade_endpoint_service_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _upgrade_endpoint_service_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/vpc-endpoint-services/{vpc_endpoint_service_id}/upgrade",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpgradeEndpointServiceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpc_endpoint_service_id' in local_var_params:
+            path_params['vpc_endpoint_service_id'] = local_var_params['vpc_endpoint_service_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_add_or_remove_resource_instance(self, request):
         """批量添加或删除资源标签接口
 

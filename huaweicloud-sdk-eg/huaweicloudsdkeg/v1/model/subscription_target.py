@@ -25,6 +25,8 @@ class SubscriptionTarget:
         'kafka_detail': 'KafkaTargetDetail',
         'smn_detail': 'SmnTargetDetail',
         'eg_detail': 'EgTargetDetail',
+        'apigw_detail': 'ApigwTargetDetail',
+        'retry_times': 'int',
         'transform': 'TransForm',
         'dead_letter_queue': 'DeadLetterQueue'
     }
@@ -38,11 +40,13 @@ class SubscriptionTarget:
         'kafka_detail': 'kafka_detail',
         'smn_detail': 'smn_detail',
         'eg_detail': 'eg_detail',
+        'apigw_detail': 'apigw_detail',
+        'retry_times': 'retry_times',
         'transform': 'transform',
         'dead_letter_queue': 'dead_letter_queue'
     }
 
-    def __init__(self, id=None, name=None, provider_type=None, connection_id=None, detail=None, kafka_detail=None, smn_detail=None, eg_detail=None, transform=None, dead_letter_queue=None):
+    def __init__(self, id=None, name=None, provider_type=None, connection_id=None, detail=None, kafka_detail=None, smn_detail=None, eg_detail=None, apigw_detail=None, retry_times=None, transform=None, dead_letter_queue=None):
         """SubscriptionTarget
 
         The model defined in huaweicloud sdk
@@ -63,6 +67,10 @@ class SubscriptionTarget:
         :type smn_detail: :class:`huaweicloudsdkeg.v1.SmnTargetDetail`
         :param eg_detail: 
         :type eg_detail: :class:`huaweicloudsdkeg.v1.EgTargetDetail`
+        :param apigw_detail: 
+        :type apigw_detail: :class:`huaweicloudsdkeg.v1.ApigwTargetDetail`
+        :param retry_times: 重试次数
+        :type retry_times: int
         :param transform: 
         :type transform: :class:`huaweicloudsdkeg.v1.TransForm`
         :param dead_letter_queue: 
@@ -79,6 +87,8 @@ class SubscriptionTarget:
         self._kafka_detail = None
         self._smn_detail = None
         self._eg_detail = None
+        self._apigw_detail = None
+        self._retry_times = None
         self._transform = None
         self._dead_letter_queue = None
         self.discriminator = None
@@ -97,6 +107,10 @@ class SubscriptionTarget:
             self.smn_detail = smn_detail
         if eg_detail is not None:
             self.eg_detail = eg_detail
+        if apigw_detail is not None:
+            self.apigw_detail = apigw_detail
+        if retry_times is not None:
+            self.retry_times = retry_times
         self.transform = transform
         if dead_letter_queue is not None:
             self.dead_letter_queue = dead_letter_queue
@@ -264,6 +278,46 @@ class SubscriptionTarget:
         :type eg_detail: :class:`huaweicloudsdkeg.v1.EgTargetDetail`
         """
         self._eg_detail = eg_detail
+
+    @property
+    def apigw_detail(self):
+        """Gets the apigw_detail of this SubscriptionTarget.
+
+        :return: The apigw_detail of this SubscriptionTarget.
+        :rtype: :class:`huaweicloudsdkeg.v1.ApigwTargetDetail`
+        """
+        return self._apigw_detail
+
+    @apigw_detail.setter
+    def apigw_detail(self, apigw_detail):
+        """Sets the apigw_detail of this SubscriptionTarget.
+
+        :param apigw_detail: The apigw_detail of this SubscriptionTarget.
+        :type apigw_detail: :class:`huaweicloudsdkeg.v1.ApigwTargetDetail`
+        """
+        self._apigw_detail = apigw_detail
+
+    @property
+    def retry_times(self):
+        """Gets the retry_times of this SubscriptionTarget.
+
+        重试次数
+
+        :return: The retry_times of this SubscriptionTarget.
+        :rtype: int
+        """
+        return self._retry_times
+
+    @retry_times.setter
+    def retry_times(self, retry_times):
+        """Sets the retry_times of this SubscriptionTarget.
+
+        重试次数
+
+        :param retry_times: The retry_times of this SubscriptionTarget.
+        :type retry_times: int
+        """
+        self._retry_times = retry_times
 
     @property
     def transform(self):

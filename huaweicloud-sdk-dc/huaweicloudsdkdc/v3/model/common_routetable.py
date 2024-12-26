@@ -25,7 +25,8 @@ class CommonRoutetable:
         'obtain_mode': 'str',
         'status': 'str',
         'address_family': 'AddressFamily',
-        'description': 'str'
+        'description': 'str',
+        'type': 'str'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class CommonRoutetable:
         'obtain_mode': 'obtain_mode',
         'status': 'status',
         'address_family': 'address_family',
-        'description': 'description'
+        'description': 'description',
+        'type': 'type'
     }
 
-    def __init__(self, id=None, tenant_id=None, gateway_id=None, destination=None, nexthop=None, obtain_mode=None, status=None, address_family=None, description=None):
+    def __init__(self, id=None, tenant_id=None, gateway_id=None, destination=None, nexthop=None, obtain_mode=None, status=None, address_family=None, description=None, type=None):
         """CommonRoutetable
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class CommonRoutetable:
         :type address_family: :class:`huaweicloudsdkdc.v3.AddressFamily`
         :param description: 路由描述
         :type description: str
+        :param type: 下一跳类型: - vif_peer: 虚拟接口对等体 - gdgw: 全域接入网关
+        :type type: str
         """
         
         
@@ -76,6 +80,7 @@ class CommonRoutetable:
         self._status = None
         self._address_family = None
         self._description = None
+        self._type = None
         self.discriminator = None
 
         self.id = id
@@ -89,6 +94,7 @@ class CommonRoutetable:
         self.address_family = address_family
         if description is not None:
             self.description = description
+        self.type = type
 
     @property
     def id(self):
@@ -283,6 +289,28 @@ class CommonRoutetable:
         :type description: str
         """
         self._description = description
+
+    @property
+    def type(self):
+        """Gets the type of this CommonRoutetable.
+
+        下一跳类型: - vif_peer: 虚拟接口对等体 - gdgw: 全域接入网关
+
+        :return: The type of this CommonRoutetable.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this CommonRoutetable.
+
+        下一跳类型: - vif_peer: 虚拟接口对等体 - gdgw: 全域接入网关
+
+        :param type: The type of this CommonRoutetable.
+        :type type: str
+        """
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

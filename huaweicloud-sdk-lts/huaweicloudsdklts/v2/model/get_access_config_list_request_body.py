@@ -58,10 +58,14 @@ class GetAccessConfigListRequestBody:
         self._access_config_tag_list = None
         self.discriminator = None
 
-        self.access_config_name_list = access_config_name_list
-        self.host_group_name_list = host_group_name_list
-        self.log_group_name_list = log_group_name_list
-        self.log_stream_name_list = log_stream_name_list
+        if access_config_name_list is not None:
+            self.access_config_name_list = access_config_name_list
+        if host_group_name_list is not None:
+            self.host_group_name_list = host_group_name_list
+        if log_group_name_list is not None:
+            self.log_group_name_list = log_group_name_list
+        if log_stream_name_list is not None:
+            self.log_stream_name_list = log_stream_name_list
         if access_config_tag_list is not None:
             self.access_config_tag_list = access_config_tag_list
 

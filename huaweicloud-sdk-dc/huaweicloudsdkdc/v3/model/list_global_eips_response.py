@@ -19,15 +19,19 @@ class ListGlobalEipsResponse(SdkResponse):
 
     openapi_types = {
         'request_id': 'str',
-        'global_eips': 'list[ListBindingGeip]'
+        'global_eips': 'list[ListBindingGeip]',
+        'total_count': 'int',
+        'page_info': 'PageInfo'
     }
 
     attribute_map = {
         'request_id': 'request_id',
-        'global_eips': 'global_eips'
+        'global_eips': 'global_eips',
+        'total_count': 'total_count',
+        'page_info': 'page_info'
     }
 
-    def __init__(self, request_id=None, global_eips=None):
+    def __init__(self, request_id=None, global_eips=None, total_count=None, page_info=None):
         """ListGlobalEipsResponse
 
         The model defined in huaweicloud sdk
@@ -36,18 +40,28 @@ class ListGlobalEipsResponse(SdkResponse):
         :type request_id: str
         :param global_eips: 全局弹性公网IP
         :type global_eips: list[:class:`huaweicloudsdkdc.v3.ListBindingGeip`]
+        :param total_count: 总记录数。
+        :type total_count: int
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkdc.v3.PageInfo`
         """
         
         super(ListGlobalEipsResponse, self).__init__()
 
         self._request_id = None
         self._global_eips = None
+        self._total_count = None
+        self._page_info = None
         self.discriminator = None
 
         if request_id is not None:
             self.request_id = request_id
         if global_eips is not None:
             self.global_eips = global_eips
+        if total_count is not None:
+            self.total_count = total_count
+        if page_info is not None:
+            self.page_info = page_info
 
     @property
     def request_id(self):
@@ -92,6 +106,46 @@ class ListGlobalEipsResponse(SdkResponse):
         :type global_eips: list[:class:`huaweicloudsdkdc.v3.ListBindingGeip`]
         """
         self._global_eips = global_eips
+
+    @property
+    def total_count(self):
+        """Gets the total_count of this ListGlobalEipsResponse.
+
+        总记录数。
+
+        :return: The total_count of this ListGlobalEipsResponse.
+        :rtype: int
+        """
+        return self._total_count
+
+    @total_count.setter
+    def total_count(self, total_count):
+        """Sets the total_count of this ListGlobalEipsResponse.
+
+        总记录数。
+
+        :param total_count: The total_count of this ListGlobalEipsResponse.
+        :type total_count: int
+        """
+        self._total_count = total_count
+
+    @property
+    def page_info(self):
+        """Gets the page_info of this ListGlobalEipsResponse.
+
+        :return: The page_info of this ListGlobalEipsResponse.
+        :rtype: :class:`huaweicloudsdkdc.v3.PageInfo`
+        """
+        return self._page_info
+
+    @page_info.setter
+    def page_info(self, page_info):
+        """Sets the page_info of this ListGlobalEipsResponse.
+
+        :param page_info: The page_info of this ListGlobalEipsResponse.
+        :type page_info: :class:`huaweicloudsdkdc.v3.PageInfo`
+        """
+        self._page_info = page_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

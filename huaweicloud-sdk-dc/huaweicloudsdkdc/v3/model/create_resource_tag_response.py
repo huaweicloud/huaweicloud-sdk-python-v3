@@ -18,47 +18,20 @@ class CreateResourceTagResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'str'
     }
 
     attribute_map = {
-        'body': 'body'
     }
 
-    def __init__(self, body=None):
+    def __init__(self):
         """CreateResourceTagResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: str
         """
         
         super(CreateResourceTagResponse, self).__init__()
-
-        self._body = None
         self.discriminator = None
-
-        if body is not None:
-            self.body = body
-
-    @property
-    def body(self):
-        """Gets the body of this CreateResourceTagResponse.
-
-        :return: The body of this CreateResourceTagResponse.
-        :rtype: str
-        """
-        return self._body
-
-    @body.setter
-    def body(self, body):
-        """Sets the body of this CreateResourceTagResponse.
-
-        :param body: The body of this CreateResourceTagResponse.
-        :type body: str
-        """
-        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

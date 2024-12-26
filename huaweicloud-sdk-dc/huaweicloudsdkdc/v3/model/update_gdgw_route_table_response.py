@@ -19,7 +19,7 @@ class UpdateGdgwRouteTableResponse(SdkResponse):
 
     openapi_types = {
         'request_id': 'str',
-        'gdgw_routetable': 'list[ShowGdgwRoutetable]'
+        'gdgw_routetable': 'list[CommonRoutetable]'
     }
 
     attribute_map = {
@@ -35,7 +35,7 @@ class UpdateGdgwRouteTableResponse(SdkResponse):
         :param request_id: 请求id
         :type request_id: str
         :param gdgw_routetable: 全域接入网关路由表
-        :type gdgw_routetable: list[:class:`huaweicloudsdkdc.v3.ShowGdgwRoutetable`]
+        :type gdgw_routetable: list[:class:`huaweicloudsdkdc.v3.CommonRoutetable`]
         """
         
         super(UpdateGdgwRouteTableResponse, self).__init__()
@@ -78,7 +78,7 @@ class UpdateGdgwRouteTableResponse(SdkResponse):
         全域接入网关路由表
 
         :return: The gdgw_routetable of this UpdateGdgwRouteTableResponse.
-        :rtype: list[:class:`huaweicloudsdkdc.v3.ShowGdgwRoutetable`]
+        :rtype: list[:class:`huaweicloudsdkdc.v3.CommonRoutetable`]
         """
         return self._gdgw_routetable
 
@@ -89,7 +89,7 @@ class UpdateGdgwRouteTableResponse(SdkResponse):
         全域接入网关路由表
 
         :param gdgw_routetable: The gdgw_routetable of this UpdateGdgwRouteTableResponse.
-        :type gdgw_routetable: list[:class:`huaweicloudsdkdc.v3.ShowGdgwRoutetable`]
+        :type gdgw_routetable: list[:class:`huaweicloudsdkdc.v3.CommonRoutetable`]
         """
         self._gdgw_routetable = gdgw_routetable
 

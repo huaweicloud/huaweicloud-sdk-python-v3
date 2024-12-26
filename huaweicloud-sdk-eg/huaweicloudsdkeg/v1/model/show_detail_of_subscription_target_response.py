@@ -23,6 +23,11 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
         'provider_type': 'str',
         'connection_id': 'str',
         'detail': 'object',
+        'kafka_detail': 'KafkaTargetDetail',
+        'smn_detail': 'SmnTargetDetail',
+        'eg_detail': 'EgTargetDetail',
+        'apigw_detail': 'ApigwTargetDetail',
+        'retry_times': 'int',
         'transform': 'TransForm',
         'dead_letter_queue': 'DeadLetterQueue',
         'created_time': 'str',
@@ -35,13 +40,18 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
         'provider_type': 'provider_type',
         'connection_id': 'connection_id',
         'detail': 'detail',
+        'kafka_detail': 'kafka_detail',
+        'smn_detail': 'smn_detail',
+        'eg_detail': 'eg_detail',
+        'apigw_detail': 'apigw_detail',
+        'retry_times': 'retry_times',
         'transform': 'transform',
         'dead_letter_queue': 'dead_letter_queue',
         'created_time': 'created_time',
         'updated_time': 'updated_time'
     }
 
-    def __init__(self, id=None, name=None, provider_type=None, connection_id=None, detail=None, transform=None, dead_letter_queue=None, created_time=None, updated_time=None):
+    def __init__(self, id=None, name=None, provider_type=None, connection_id=None, detail=None, kafka_detail=None, smn_detail=None, eg_detail=None, apigw_detail=None, retry_times=None, transform=None, dead_letter_queue=None, created_time=None, updated_time=None):
         """ShowDetailOfSubscriptionTargetResponse
 
         The model defined in huaweicloud sdk
@@ -56,6 +66,16 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
         :type connection_id: str
         :param detail: 订阅的事件目标参数列表
         :type detail: object
+        :param kafka_detail: 
+        :type kafka_detail: :class:`huaweicloudsdkeg.v1.KafkaTargetDetail`
+        :param smn_detail: 
+        :type smn_detail: :class:`huaweicloudsdkeg.v1.SmnTargetDetail`
+        :param eg_detail: 
+        :type eg_detail: :class:`huaweicloudsdkeg.v1.EgTargetDetail`
+        :param apigw_detail: 
+        :type apigw_detail: :class:`huaweicloudsdkeg.v1.ApigwTargetDetail`
+        :param retry_times: 重试次数
+        :type retry_times: int
         :param transform: 
         :type transform: :class:`huaweicloudsdkeg.v1.TransForm`
         :param dead_letter_queue: 
@@ -73,6 +93,11 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
         self._provider_type = None
         self._connection_id = None
         self._detail = None
+        self._kafka_detail = None
+        self._smn_detail = None
+        self._eg_detail = None
+        self._apigw_detail = None
+        self._retry_times = None
         self._transform = None
         self._dead_letter_queue = None
         self._created_time = None
@@ -89,6 +114,16 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
             self.connection_id = connection_id
         if detail is not None:
             self.detail = detail
+        if kafka_detail is not None:
+            self.kafka_detail = kafka_detail
+        if smn_detail is not None:
+            self.smn_detail = smn_detail
+        if eg_detail is not None:
+            self.eg_detail = eg_detail
+        if apigw_detail is not None:
+            self.apigw_detail = apigw_detail
+        if retry_times is not None:
+            self.retry_times = retry_times
         if transform is not None:
             self.transform = transform
         if dead_letter_queue is not None:
@@ -207,6 +242,100 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
         :type detail: object
         """
         self._detail = detail
+
+    @property
+    def kafka_detail(self):
+        """Gets the kafka_detail of this ShowDetailOfSubscriptionTargetResponse.
+
+        :return: The kafka_detail of this ShowDetailOfSubscriptionTargetResponse.
+        :rtype: :class:`huaweicloudsdkeg.v1.KafkaTargetDetail`
+        """
+        return self._kafka_detail
+
+    @kafka_detail.setter
+    def kafka_detail(self, kafka_detail):
+        """Sets the kafka_detail of this ShowDetailOfSubscriptionTargetResponse.
+
+        :param kafka_detail: The kafka_detail of this ShowDetailOfSubscriptionTargetResponse.
+        :type kafka_detail: :class:`huaweicloudsdkeg.v1.KafkaTargetDetail`
+        """
+        self._kafka_detail = kafka_detail
+
+    @property
+    def smn_detail(self):
+        """Gets the smn_detail of this ShowDetailOfSubscriptionTargetResponse.
+
+        :return: The smn_detail of this ShowDetailOfSubscriptionTargetResponse.
+        :rtype: :class:`huaweicloudsdkeg.v1.SmnTargetDetail`
+        """
+        return self._smn_detail
+
+    @smn_detail.setter
+    def smn_detail(self, smn_detail):
+        """Sets the smn_detail of this ShowDetailOfSubscriptionTargetResponse.
+
+        :param smn_detail: The smn_detail of this ShowDetailOfSubscriptionTargetResponse.
+        :type smn_detail: :class:`huaweicloudsdkeg.v1.SmnTargetDetail`
+        """
+        self._smn_detail = smn_detail
+
+    @property
+    def eg_detail(self):
+        """Gets the eg_detail of this ShowDetailOfSubscriptionTargetResponse.
+
+        :return: The eg_detail of this ShowDetailOfSubscriptionTargetResponse.
+        :rtype: :class:`huaweicloudsdkeg.v1.EgTargetDetail`
+        """
+        return self._eg_detail
+
+    @eg_detail.setter
+    def eg_detail(self, eg_detail):
+        """Sets the eg_detail of this ShowDetailOfSubscriptionTargetResponse.
+
+        :param eg_detail: The eg_detail of this ShowDetailOfSubscriptionTargetResponse.
+        :type eg_detail: :class:`huaweicloudsdkeg.v1.EgTargetDetail`
+        """
+        self._eg_detail = eg_detail
+
+    @property
+    def apigw_detail(self):
+        """Gets the apigw_detail of this ShowDetailOfSubscriptionTargetResponse.
+
+        :return: The apigw_detail of this ShowDetailOfSubscriptionTargetResponse.
+        :rtype: :class:`huaweicloudsdkeg.v1.ApigwTargetDetail`
+        """
+        return self._apigw_detail
+
+    @apigw_detail.setter
+    def apigw_detail(self, apigw_detail):
+        """Sets the apigw_detail of this ShowDetailOfSubscriptionTargetResponse.
+
+        :param apigw_detail: The apigw_detail of this ShowDetailOfSubscriptionTargetResponse.
+        :type apigw_detail: :class:`huaweicloudsdkeg.v1.ApigwTargetDetail`
+        """
+        self._apigw_detail = apigw_detail
+
+    @property
+    def retry_times(self):
+        """Gets the retry_times of this ShowDetailOfSubscriptionTargetResponse.
+
+        重试次数
+
+        :return: The retry_times of this ShowDetailOfSubscriptionTargetResponse.
+        :rtype: int
+        """
+        return self._retry_times
+
+    @retry_times.setter
+    def retry_times(self, retry_times):
+        """Sets the retry_times of this ShowDetailOfSubscriptionTargetResponse.
+
+        重试次数
+
+        :param retry_times: The retry_times of this ShowDetailOfSubscriptionTargetResponse.
+        :type retry_times: int
+        """
+        self._retry_times = retry_times
 
     @property
     def transform(self):

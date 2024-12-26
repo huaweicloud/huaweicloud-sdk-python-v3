@@ -655,6 +655,75 @@ class CfwAsyncClient(Client):
 
         return http_info
 
+    def batch_delete_domain_set_async(self, request):
+        """批量删除域名组
+
+        批量删除域名组
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteDomainSet
+        :type request: :class:`huaweicloudsdkcfw.v1.BatchDeleteDomainSetRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.BatchDeleteDomainSetResponse`
+        """
+        http_info = self._batch_delete_domain_set_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_domain_set_async_invoker(self, request):
+        http_info = self._batch_delete_domain_set_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_domain_set_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/domain-sets/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteDomainSetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_delete_service_items_async(self, request):
         """批量删除服务组成员信息
 
@@ -2653,6 +2722,79 @@ class CfwAsyncClient(Client):
 
         return http_info
 
+    def list_domain_parse_ip_async(self, request):
+        """获取域名地址解析结果
+
+        获取域名地址解析结果
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListDomainParseIp
+        :type request: :class:`huaweicloudsdkcfw.v1.ListDomainParseIpRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.ListDomainParseIpResponse`
+        """
+        http_info = self._list_domain_parse_ip_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_domain_parse_ip_async_invoker(self, request):
+        http_info = self._list_domain_parse_ip_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_domain_parse_ip_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/domain/parse-ip-list/{domain_address_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDomainParseIpResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_address_id' in local_var_params:
+            path_params['domain_address_id'] = local_var_params['domain_address_id']
+
+        query_params = []
+        if 'address_type' in local_var_params:
+            query_params.append(('address_type', local_var_params['address_type']))
+        if 'domain_set_id' in local_var_params:
+            query_params.append(('domain_set_id', local_var_params['domain_set_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_domain_sets_async(self, request):
         """查询域名组列表
 
@@ -3263,6 +3405,75 @@ class CfwAsyncClient(Client):
 
         return http_info
 
+    def list_project_tags_async(self, request):
+        """查询标签信息
+
+        查询标签信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListProjectTags
+        :type request: :class:`huaweicloudsdkcfw.v1.ListProjectTagsRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.ListProjectTagsResponse`
+        """
+        http_info = self._list_project_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_project_tags_async_invoker(self, request):
+        http_info = self._list_project_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_project_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/cfw-cfw/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_protected_vpcs_async(self, request):
         """查询防护VPC数
 
@@ -3305,6 +3516,73 @@ class CfwAsyncClient(Client):
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'fw_instance_id' in local_var_params:
             query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_resource_tags_async(self, request):
+        """查询资源标签信息
+
+        查询资源标签信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListResourceTags
+        :type request: :class:`huaweicloudsdkcfw.v1.ListResourceTagsRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.ListResourceTagsResponse`
+        """
+        http_info = self._list_resource_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_resource_tags_async_invoker(self, request):
+        http_info = self._list_resource_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_resource_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/cfw-cfw/{fw_instance_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResourceTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'fw_instance_id' in local_var_params:
+            path_params['fw_instance_id'] = local_var_params['fw_instance_id']
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -3557,6 +3835,351 @@ class CfwAsyncClient(Client):
 
         return http_info
 
+    def save_tags_async(self, request):
+        """保存资源标签接口
+
+        保存资源标签接口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SaveTags
+        :type request: :class:`huaweicloudsdkcfw.v1.SaveTagsRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.SaveTagsResponse`
+        """
+        http_info = self._save_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def save_tags_async_invoker(self, request):
+        http_info = self._save_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _save_tags_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/cfw-cfw/{fw_instance_id}/tags/save",
+            "request_type": request.__class__.__name__,
+            "response_type": "SaveTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'fw_instance_id' in local_var_params:
+            path_params['fw_instance_id'] = local_var_params['fw_instance_id']
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_alarm_config_async(self, request):
+        """获取告警配置信息
+
+        获取告警配置信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAlarmConfig
+        :type request: :class:`huaweicloudsdkcfw.v1.ShowAlarmConfigRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.ShowAlarmConfigResponse`
+        """
+        http_info = self._show_alarm_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_alarm_config_async_invoker(self, request):
+        http_info = self._show_alarm_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_alarm_config_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cfw/alarm/config",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAlarmConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_anti_virus_rule_async(self, request):
+        """获取防火墙反病毒规则信息
+
+        获取防火墙反病毒规则信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAntiVirusRule
+        :type request: :class:`huaweicloudsdkcfw.v1.ShowAntiVirusRuleRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.ShowAntiVirusRuleResponse`
+        """
+        http_info = self._show_anti_virus_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_anti_virus_rule_async_invoker(self, request):
+        http_info = self._show_anti_virus_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_anti_virus_rule_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/anti-virus/rule",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAntiVirusRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'object_id' in local_var_params:
+            query_params.append(('object_id', local_var_params['object_id']))
+        if 'engine_type' in local_var_params:
+            query_params.append(('engine_type', local_var_params['engine_type']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_anti_virus_switch_async(self, request):
+        """查看反病毒开关
+
+        查看反病毒开关
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAntiVirusSwitch
+        :type request: :class:`huaweicloudsdkcfw.v1.ShowAntiVirusSwitchRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.ShowAntiVirusSwitchResponse`
+        """
+        http_info = self._show_anti_virus_switch_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_anti_virus_switch_async_invoker(self, request):
+        http_info = self._show_anti_virus_switch_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_anti_virus_switch_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/anti-virus/switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAntiVirusSwitchResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'object_id' in local_var_params:
+            query_params.append(('object_id', local_var_params['object_id']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_domain_set_detail_async(self, request):
+        """查看域名组详情
+
+        查看域名组详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowDomainSetDetail
+        :type request: :class:`huaweicloudsdkcfw.v1.ShowDomainSetDetailRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.ShowDomainSetDetailResponse`
+        """
+        http_info = self._show_domain_set_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_domain_set_detail_async_invoker(self, request):
+        http_info = self._show_domain_set_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_domain_set_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/domain-set/{domain_set_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDomainSetDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_set_id' in local_var_params:
+            path_params['domain_set_id'] = local_var_params['domain_set_id']
+
+        query_params = []
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_address_set_async(self, request):
         """更新地址组信息
 
@@ -3599,6 +4222,209 @@ class CfwAsyncClient(Client):
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'fw_instance_id' in local_var_params:
             query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_alarm_config_async(self, request):
+        """修改告警配置接口
+
+        修改告警配置接口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateAlarmConfig
+        :type request: :class:`huaweicloudsdkcfw.v1.UpdateAlarmConfigRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.UpdateAlarmConfigResponse`
+        """
+        http_info = self._update_alarm_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_alarm_config_async_invoker(self, request):
+        http_info = self._update_alarm_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_alarm_config_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/cfw/alarm/config",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAlarmConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_anti_virus_rule_async(self, request):
+        """修改反病毒规则
+
+        修改反病毒规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateAntiVirusRule
+        :type request: :class:`huaweicloudsdkcfw.v1.UpdateAntiVirusRuleRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.UpdateAntiVirusRuleResponse`
+        """
+        http_info = self._update_anti_virus_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_anti_virus_rule_async_invoker(self, request):
+        http_info = self._update_anti_virus_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_anti_virus_rule_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/anti-virus/rule",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAntiVirusRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_anti_virus_switch_async(self, request):
+        """修改反病毒开关
+
+        修改反病毒开关
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateAntiVirusSwitch
+        :type request: :class:`huaweicloudsdkcfw.v1.UpdateAntiVirusSwitchRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.UpdateAntiVirusSwitchResponse`
+        """
+        http_info = self._update_anti_virus_switch_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_anti_virus_switch_async_invoker(self, request):
+        http_info = self._update_anti_virus_switch_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_anti_virus_switch_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/anti-virus/switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAntiVirusSwitchResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -4490,6 +5316,73 @@ class CfwAsyncClient(Client):
 
         return http_info
 
+    def list_regions_async(self, request):
+        """查看region列表
+
+        查看region列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListRegions
+        :type request: :class:`huaweicloudsdkcfw.v1.ListRegionsRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.ListRegionsResponse`
+        """
+        http_info = self._list_regions_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_regions_async_invoker(self, request):
+        http_info = self._list_regions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_regions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/regions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRegionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_rule_acl_tags_async(self, request):
         """查询规则标签
 
@@ -4534,6 +5427,73 @@ class CfwAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_import_status_async(self, request):
+        """查看导入状态接口
+
+        查看导入状态接口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowImportStatus
+        :type request: :class:`huaweicloudsdkcfw.v1.ShowImportStatusRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.ShowImportStatusResponse`
+        """
+        http_info = self._show_import_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_import_status_async_invoker(self, request):
+        http_info = self._show_import_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_import_status_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/acl-rule/import-status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowImportStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'object_id' in local_var_params:
+            query_params.append(('object_id', local_var_params['object_id']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -4772,6 +5732,79 @@ class CfwAsyncClient(Client):
 
         return http_info
 
+    def list_alarm_whitelist_async(self, request):
+        """查看eip告警白名单
+
+        查看eip告警白名单
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAlarmWhitelist
+        :type request: :class:`huaweicloudsdkcfw.v1.ListAlarmWhitelistRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.ListAlarmWhitelistResponse`
+        """
+        http_info = self._list_alarm_whitelist_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_alarm_whitelist_async_invoker(self, request):
+        http_info = self._list_alarm_whitelist_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_alarm_whitelist_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eip/alarm-whitelist/{fw_instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAlarmWhitelistResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'fw_instance_id' in local_var_params:
+            path_params['fw_instance_id'] = local_var_params['fw_instance_id']
+
+        query_params = []
+        if 'ip_address' in local_var_params:
+            query_params.append(('ip_address', local_var_params['ip_address']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_eip_count_async(self, request):
         """查询Eip个数
 
@@ -4930,6 +5963,140 @@ class CfwAsyncClient(Client):
 
         return http_info
 
+    def show_auto_protect_status_async(self, request):
+        """获取eip自动防护状态信息
+
+        获取eip自动防护状态信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAutoProtectStatus
+        :type request: :class:`huaweicloudsdkcfw.v1.ShowAutoProtectStatusRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.ShowAutoProtectStatusResponse`
+        """
+        http_info = self._show_auto_protect_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_auto_protect_status_async_invoker(self, request):
+        http_info = self._show_auto_protect_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_auto_protect_status_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eip/auto-protect-status/{object_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAutoProtectStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'object_id' in local_var_params:
+            path_params['object_id'] = local_var_params['object_id']
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def switch_auto_protect_status_async(self, request):
+        """修改eip自动防护开关
+
+        修改eip自动防护开关
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SwitchAutoProtectStatus
+        :type request: :class:`huaweicloudsdkcfw.v1.SwitchAutoProtectStatusRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.SwitchAutoProtectStatusResponse`
+        """
+        http_info = self._switch_auto_protect_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def switch_auto_protect_status_async_invoker(self, request):
+        http_info = self._switch_auto_protect_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _switch_auto_protect_status_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eip/auto-protect-status/switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchAutoProtectStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def change_ips_protect_mode_async(self, request):
         """切换防护模式
 
@@ -4970,6 +6137,73 @@ class CfwAsyncClient(Client):
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'fw_instance_id' in local_var_params:
             query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def change_ips_rule_mode_async(self, request):
+        """改变ips规则模式
+
+        改变ips规则模式
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ChangeIpsRuleMode
+        :type request: :class:`huaweicloudsdkcfw.v1.ChangeIpsRuleModeRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.ChangeIpsRuleModeResponse`
+        """
+        http_info = self._change_ips_rule_mode_http_info(request)
+        return self._call_api(**http_info)
+
+    def change_ips_rule_mode_async_invoker(self, request):
+        http_info = self._change_ips_rule_mode_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _change_ips_rule_mode_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/ips-rule/mode",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeIpsRuleModeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -5068,6 +6302,93 @@ class CfwAsyncClient(Client):
 
         return http_info
 
+    def list_customer_ips_async(self, request):
+        """获取自定义ips规则
+
+        获取自定义ips规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListCustomerIps
+        :type request: :class:`huaweicloudsdkcfw.v1.ListCustomerIpsRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.ListCustomerIpsResponse`
+        """
+        http_info = self._list_customer_ips_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_customer_ips_async_invoker(self, request):
+        http_info = self._list_customer_ips_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_customer_ips_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/ips/custom-rule",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCustomerIpsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'action_type' in local_var_params:
+            query_params.append(('action_type', local_var_params['action_type']))
+        if 'affected_os' in local_var_params:
+            query_params.append(('affected_os', local_var_params['affected_os']))
+        if 'attack_type' in local_var_params:
+            query_params.append(('attack_type', local_var_params['attack_type']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+        if 'ips_name' in local_var_params:
+            query_params.append(('ips_name', local_var_params['ips_name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'object_id' in local_var_params:
+            query_params.append(('object_id', local_var_params['object_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'protocol' in local_var_params:
+            query_params.append(('protocol', local_var_params['protocol']))
+        if 'severity' in local_var_params:
+            query_params.append(('severity', local_var_params['severity']))
+        if 'software' in local_var_params:
+            query_params.append(('software', local_var_params['software']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_ips_protect_mode_async(self, request):
         """查询防护模式
 
@@ -5110,6 +6431,166 @@ class CfwAsyncClient(Client):
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'fw_instance_id' in local_var_params:
             query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ips_rules_async(self, request):
+        """查询频率ips规则信息
+
+        查询频率ips规则信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListIpsRules
+        :type request: :class:`huaweicloudsdkcfw.v1.ListIpsRulesRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.ListIpsRulesResponse`
+        """
+        http_info = self._list_ips_rules_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ips_rules_async_invoker(self, request):
+        http_info = self._list_ips_rules_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ips_rules_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/advanced-ips-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIpsRulesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'object_id' in local_var_params:
+            query_params.append(('object_id', local_var_params['object_id']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ips_rules1_async(self, request):
+        """获取ips规则列表
+
+        获取ips规则列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListIpsRules1
+        :type request: :class:`huaweicloudsdkcfw.v1.ListIpsRules1Request`
+        :rtype: :class:`huaweicloudsdkcfw.v1.ListIpsRules1Response`
+        """
+        http_info = self._list_ips_rules1_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ips_rules1_async_invoker(self, request):
+        http_info = self._list_ips_rules1_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ips_rules1_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/ips-rule",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIpsRules1Response"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'affected_application_like' in local_var_params:
+            query_params.append(('affected_application_like', local_var_params['affected_application_like']))
+        if 'create_time' in local_var_params:
+            query_params.append(('create_time', local_var_params['create_time']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+        if 'ips_cve_like' in local_var_params:
+            query_params.append(('ips_cve_like', local_var_params['ips_cve_like']))
+        if 'ips_group' in local_var_params:
+            query_params.append(('ips_group', local_var_params['ips_group']))
+        if 'ips_id' in local_var_params:
+            query_params.append(('ips_id', local_var_params['ips_id']))
+        if 'ips_level' in local_var_params:
+            query_params.append(('ips_level', local_var_params['ips_level']))
+        if 'ips_name_like' in local_var_params:
+            query_params.append(('ips_name_like', local_var_params['ips_name_like']))
+        if 'ips_rules_type_like' in local_var_params:
+            query_params.append(('ips_rules_type_like', local_var_params['ips_rules_type_like']))
+        if 'ips_status' in local_var_params:
+            query_params.append(('ips_status', local_var_params['ips_status']))
+        if 'is_updated_ips_rule_queried' in local_var_params:
+            query_params.append(('is_updated_ips_rule_queried', local_var_params['is_updated_ips_rule_queried']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'object_id' in local_var_params:
+            query_params.append(('object_id', local_var_params['object_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -5185,6 +6666,142 @@ class CfwAsyncClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_ips_update_time_async(self, request):
+        """获取ips规则细节
+
+        获取ips规则细节
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowIpsUpdateTime
+        :type request: :class:`huaweicloudsdkcfw.v1.ShowIpsUpdateTimeRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.ShowIpsUpdateTimeResponse`
+        """
+        http_info = self._show_ips_update_time_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_ips_update_time_async_invoker(self, request):
+        http_info = self._show_ips_update_time_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_ips_update_time_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/ips-rule/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowIpsUpdateTimeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_advanced_ips_rule_async(self, request):
+        """创建频率ips规则
+
+        创建频率ips规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateAdvancedIpsRule
+        :type request: :class:`huaweicloudsdkcfw.v1.UpdateAdvancedIpsRuleRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.UpdateAdvancedIpsRuleResponse`
+        """
+        http_info = self._update_advanced_ips_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_advanced_ips_rule_async_invoker(self, request):
+        http_info = self._update_advanced_ips_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_advanced_ips_rule_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/advanced-ips-rule",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAdvancedIpsRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

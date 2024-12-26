@@ -18,21 +18,25 @@ class UpdateSubscriptionRequest:
 
     openapi_types = {
         'subscription_id': 'str',
+        'enterprise_project_id': 'str',
         'body': 'SubscriptionUpdateReq'
     }
 
     attribute_map = {
         'subscription_id': 'subscription_id',
+        'enterprise_project_id': 'enterprise_project_id',
         'body': 'body'
     }
 
-    def __init__(self, subscription_id=None, body=None):
+    def __init__(self, subscription_id=None, enterprise_project_id=None, body=None):
         """UpdateSubscriptionRequest
 
         The model defined in huaweicloud sdk
 
         :param subscription_id: 事件订阅ID
         :type subscription_id: str
+        :param enterprise_project_id: 创建订阅时所使用的企业项目id
+        :type enterprise_project_id: str
         :param body: Body of the UpdateSubscriptionRequest
         :type body: :class:`huaweicloudsdkeg.v1.SubscriptionUpdateReq`
         """
@@ -40,10 +44,13 @@ class UpdateSubscriptionRequest:
         
 
         self._subscription_id = None
+        self._enterprise_project_id = None
         self._body = None
         self.discriminator = None
 
         self.subscription_id = subscription_id
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if body is not None:
             self.body = body
 
@@ -68,6 +75,28 @@ class UpdateSubscriptionRequest:
         :type subscription_id: str
         """
         self._subscription_id = subscription_id
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this UpdateSubscriptionRequest.
+
+        创建订阅时所使用的企业项目id
+
+        :return: The enterprise_project_id of this UpdateSubscriptionRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this UpdateSubscriptionRequest.
+
+        创建订阅时所使用的企业项目id
+
+        :param enterprise_project_id: The enterprise_project_id of this UpdateSubscriptionRequest.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def body(self):

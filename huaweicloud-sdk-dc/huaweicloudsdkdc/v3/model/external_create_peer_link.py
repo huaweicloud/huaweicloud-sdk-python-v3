@@ -18,6 +18,7 @@ class ExternalCreatePeerLink:
 
     openapi_types = {
         'id': 'str',
+        'instance_id': 'str',
         'tenant_id': 'str',
         'name': 'str',
         'description': 'str',
@@ -32,6 +33,7 @@ class ExternalCreatePeerLink:
 
     attribute_map = {
         'id': 'id',
+        'instance_id': 'instance_id',
         'tenant_id': 'tenant_id',
         'name': 'name',
         'description': 'description',
@@ -44,13 +46,15 @@ class ExternalCreatePeerLink:
         'updated_time': 'updated_time'
     }
 
-    def __init__(self, id=None, tenant_id=None, name=None, description=None, global_dc_gateway_id=None, bandwidth_info=None, peer_site=None, status=None, reason=None, created_time=None, updated_time=None):
+    def __init__(self, id=None, instance_id=None, tenant_id=None, name=None, description=None, global_dc_gateway_id=None, bandwidth_info=None, peer_site=None, status=None, reason=None, created_time=None, updated_time=None):
         """ExternalCreatePeerLink
 
         The model defined in huaweicloud sdk
 
         :param id: 专线对等连接
         :type id: str
+        :param instance_id: 专线对等连接实例ID
+        :type instance_id: str
         :param tenant_id: 租户ID
         :type tenant_id: str
         :param name: 名称
@@ -76,6 +80,7 @@ class ExternalCreatePeerLink:
         
 
         self._id = None
+        self._instance_id = None
         self._tenant_id = None
         self._name = None
         self._description = None
@@ -90,6 +95,8 @@ class ExternalCreatePeerLink:
 
         if id is not None:
             self.id = id
+        if instance_id is not None:
+            self.instance_id = instance_id
         if tenant_id is not None:
             self.tenant_id = tenant_id
         self.name = name
@@ -130,6 +137,28 @@ class ExternalCreatePeerLink:
         :type id: str
         """
         self._id = id
+
+    @property
+    def instance_id(self):
+        """Gets the instance_id of this ExternalCreatePeerLink.
+
+        专线对等连接实例ID
+
+        :return: The instance_id of this ExternalCreatePeerLink.
+        :rtype: str
+        """
+        return self._instance_id
+
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        """Sets the instance_id of this ExternalCreatePeerLink.
+
+        专线对等连接实例ID
+
+        :param instance_id: The instance_id of this ExternalCreatePeerLink.
+        :type instance_id: str
+        """
+        self._instance_id = instance_id
 
     @property
     def tenant_id(self):

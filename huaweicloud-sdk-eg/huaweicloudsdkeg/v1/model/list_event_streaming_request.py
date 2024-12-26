@@ -18,19 +18,15 @@ class ListEventStreamingRequest:
 
     openapi_types = {
         'offset': 'int',
-        'limit': 'int',
-        'name': 'str',
-        'fuzzy_name': 'str'
+        'limit': 'int'
     }
 
     attribute_map = {
         'offset': 'offset',
-        'limit': 'limit',
-        'name': 'name',
-        'fuzzy_name': 'fuzzy_name'
+        'limit': 'limit'
     }
 
-    def __init__(self, offset=None, limit=None, name=None, fuzzy_name=None):
+    def __init__(self, offset=None, limit=None):
         """ListEventStreamingRequest
 
         The model defined in huaweicloud sdk
@@ -39,28 +35,18 @@ class ListEventStreamingRequest:
         :type offset: int
         :param limit: 每页显示的条目数量，不能小于1或大于1000
         :type limit: int
-        :param name: 指定查询的事件订阅名称，精准匹配
-        :type name: str
-        :param fuzzy_name: 指定查询的事件流名称，模糊匹配
-        :type fuzzy_name: str
         """
         
         
 
         self._offset = None
         self._limit = None
-        self._name = None
-        self._fuzzy_name = None
         self.discriminator = None
 
         if offset is not None:
             self.offset = offset
         if limit is not None:
             self.limit = limit
-        if name is not None:
-            self.name = name
-        if fuzzy_name is not None:
-            self.fuzzy_name = fuzzy_name
 
     @property
     def offset(self):
@@ -105,50 +91,6 @@ class ListEventStreamingRequest:
         :type limit: int
         """
         self._limit = limit
-
-    @property
-    def name(self):
-        """Gets the name of this ListEventStreamingRequest.
-
-        指定查询的事件订阅名称，精准匹配
-
-        :return: The name of this ListEventStreamingRequest.
-        :rtype: str
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        """Sets the name of this ListEventStreamingRequest.
-
-        指定查询的事件订阅名称，精准匹配
-
-        :param name: The name of this ListEventStreamingRequest.
-        :type name: str
-        """
-        self._name = name
-
-    @property
-    def fuzzy_name(self):
-        """Gets the fuzzy_name of this ListEventStreamingRequest.
-
-        指定查询的事件流名称，模糊匹配
-
-        :return: The fuzzy_name of this ListEventStreamingRequest.
-        :rtype: str
-        """
-        return self._fuzzy_name
-
-    @fuzzy_name.setter
-    def fuzzy_name(self, fuzzy_name):
-        """Sets the fuzzy_name of this ListEventStreamingRequest.
-
-        指定查询的事件流名称，模糊匹配
-
-        :param fuzzy_name: The fuzzy_name of this ListEventStreamingRequest.
-        :type fuzzy_name: str
-        """
-        self._fuzzy_name = fuzzy_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

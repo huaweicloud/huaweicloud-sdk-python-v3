@@ -28,7 +28,7 @@ class DeleteIgnoreRuleResponse(SdkResponse):
         'mode': 'int',
         'url_logic': 'str',
         'conditions': 'list[Condition]',
-        'advanced': 'list[Advanced]',
+        'advanced': 'IgnoreAdvanced',
         'domains': 'list[str]'
     }
 
@@ -72,8 +72,8 @@ class DeleteIgnoreRuleResponse(SdkResponse):
         :type url_logic: str
         :param conditions: 条件
         :type conditions: list[:class:`huaweicloudsdkwaf.v1.Condition`]
-        :param advanced: 高级配置项。**当前该参数类型错误，请用户忽略该参数**；正确类型可先参考更新接口，后续将改正。
-        :type advanced: list[:class:`huaweicloudsdkwaf.v1.Advanced`]
+        :param advanced: 
+        :type advanced: :class:`huaweicloudsdkwaf.v1.IgnoreAdvanced`
         :param domains: 防护域名或防护网站
         :type domains: list[str]
         """
@@ -343,10 +343,8 @@ class DeleteIgnoreRuleResponse(SdkResponse):
     def advanced(self):
         """Gets the advanced of this DeleteIgnoreRuleResponse.
 
-        高级配置项。**当前该参数类型错误，请用户忽略该参数**；正确类型可先参考更新接口，后续将改正。
-
         :return: The advanced of this DeleteIgnoreRuleResponse.
-        :rtype: list[:class:`huaweicloudsdkwaf.v1.Advanced`]
+        :rtype: :class:`huaweicloudsdkwaf.v1.IgnoreAdvanced`
         """
         return self._advanced
 
@@ -354,10 +352,8 @@ class DeleteIgnoreRuleResponse(SdkResponse):
     def advanced(self, advanced):
         """Sets the advanced of this DeleteIgnoreRuleResponse.
 
-        高级配置项。**当前该参数类型错误，请用户忽略该参数**；正确类型可先参考更新接口，后续将改正。
-
         :param advanced: The advanced of this DeleteIgnoreRuleResponse.
-        :type advanced: list[:class:`huaweicloudsdkwaf.v1.Advanced`]
+        :type advanced: :class:`huaweicloudsdkwaf.v1.IgnoreAdvanced`
         """
         self._advanced = advanced
 

@@ -31,13 +31,15 @@ class TrainingJobInfo:
         'create_time': 'int',
         'lastupdate_time': 'int',
         'voice_authorization_url': 'str',
+        'training_input_source_url': 'str',
         'create_type': 'CreateType',
         'tag': 'JobTag',
         'phone': 'str',
         'dhtms_job_id': 'str',
         'batch_name': 'str',
         'allocated_resource': 'VoiceTrainingAllocatedResource',
-        'output_language': 'str'
+        'output_language': 'str',
+        'is_remake': 'bool'
     }
 
     attribute_map = {
@@ -55,16 +57,18 @@ class TrainingJobInfo:
         'create_time': 'create_time',
         'lastupdate_time': 'lastupdate_time',
         'voice_authorization_url': 'voice_authorization_url',
+        'training_input_source_url': 'training_input_source_url',
         'create_type': 'create_type',
         'tag': 'tag',
         'phone': 'phone',
         'dhtms_job_id': 'dhtms_job_id',
         'batch_name': 'batch_name',
         'allocated_resource': 'allocated_resource',
-        'output_language': 'output_language'
+        'output_language': 'output_language',
+        'is_remake': 'is_remake'
     }
 
-    def __init__(self, job_type=None, job_id=None, app_user_id=None, voice_name=None, sex=None, language=None, state=None, reject_times=None, asset_id=None, job_failed_code=None, job_failed_reason=None, create_time=None, lastupdate_time=None, voice_authorization_url=None, create_type=None, tag=None, phone=None, dhtms_job_id=None, batch_name=None, allocated_resource=None, output_language=None):
+    def __init__(self, job_type=None, job_id=None, app_user_id=None, voice_name=None, sex=None, language=None, state=None, reject_times=None, asset_id=None, job_failed_code=None, job_failed_reason=None, create_time=None, lastupdate_time=None, voice_authorization_url=None, training_input_source_url=None, create_type=None, tag=None, phone=None, dhtms_job_id=None, batch_name=None, allocated_resource=None, output_language=None, is_remake=None):
         """TrainingJobInfo
 
         The model defined in huaweicloud sdk
@@ -97,6 +101,8 @@ class TrainingJobInfo:
         :type lastupdate_time: int
         :param voice_authorization_url: 用户授权书连接。
         :type voice_authorization_url: str
+        :param training_input_source_url: 用户原始输入数据url。
+        :type training_input_source_url: str
         :param create_type: 
         :type create_type: :class:`huaweicloudsdkmetastudio.v1.CreateType`
         :param tag: 
@@ -111,6 +117,8 @@ class TrainingJobInfo:
         :type allocated_resource: :class:`huaweicloudsdkmetastudio.v1.VoiceTrainingAllocatedResource`
         :param output_language: 模型输出语言类型
         :type output_language: str
+        :param is_remake: 任务是否重做
+        :type is_remake: bool
         """
         
         
@@ -129,6 +137,7 @@ class TrainingJobInfo:
         self._create_time = None
         self._lastupdate_time = None
         self._voice_authorization_url = None
+        self._training_input_source_url = None
         self._create_type = None
         self._tag = None
         self._phone = None
@@ -136,6 +145,7 @@ class TrainingJobInfo:
         self._batch_name = None
         self._allocated_resource = None
         self._output_language = None
+        self._is_remake = None
         self.discriminator = None
 
         if job_type is not None:
@@ -166,6 +176,8 @@ class TrainingJobInfo:
             self.lastupdate_time = lastupdate_time
         if voice_authorization_url is not None:
             self.voice_authorization_url = voice_authorization_url
+        if training_input_source_url is not None:
+            self.training_input_source_url = training_input_source_url
         if create_type is not None:
             self.create_type = create_type
         if tag is not None:
@@ -180,6 +192,8 @@ class TrainingJobInfo:
             self.allocated_resource = allocated_resource
         if output_language is not None:
             self.output_language = output_language
+        if is_remake is not None:
+            self.is_remake = is_remake
 
     @property
     def job_type(self):
@@ -482,6 +496,28 @@ class TrainingJobInfo:
         self._voice_authorization_url = voice_authorization_url
 
     @property
+    def training_input_source_url(self):
+        """Gets the training_input_source_url of this TrainingJobInfo.
+
+        用户原始输入数据url。
+
+        :return: The training_input_source_url of this TrainingJobInfo.
+        :rtype: str
+        """
+        return self._training_input_source_url
+
+    @training_input_source_url.setter
+    def training_input_source_url(self, training_input_source_url):
+        """Sets the training_input_source_url of this TrainingJobInfo.
+
+        用户原始输入数据url。
+
+        :param training_input_source_url: The training_input_source_url of this TrainingJobInfo.
+        :type training_input_source_url: str
+        """
+        self._training_input_source_url = training_input_source_url
+
+    @property
     def create_type(self):
         """Gets the create_type of this TrainingJobInfo.
 
@@ -622,6 +658,28 @@ class TrainingJobInfo:
         :type output_language: str
         """
         self._output_language = output_language
+
+    @property
+    def is_remake(self):
+        """Gets the is_remake of this TrainingJobInfo.
+
+        任务是否重做
+
+        :return: The is_remake of this TrainingJobInfo.
+        :rtype: bool
+        """
+        return self._is_remake
+
+    @is_remake.setter
+    def is_remake(self, is_remake):
+        """Sets the is_remake of this TrainingJobInfo.
+
+        任务是否重做
+
+        :param is_remake: The is_remake of this TrainingJobInfo.
+        :type is_remake: bool
+        """
+        self._is_remake = is_remake
 
     def to_dict(self):
         """Returns the model properties as a dict"""

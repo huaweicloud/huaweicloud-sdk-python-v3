@@ -17,29 +17,58 @@ class OperateSubscriptionRequest:
     sensitive_list = []
 
     openapi_types = {
+        'enterprise_project_id': 'str',
         'body': 'SubscriptionOperateReq'
     }
 
     attribute_map = {
+        'enterprise_project_id': 'enterprise_project_id',
         'body': 'body'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, enterprise_project_id=None, body=None):
         """OperateSubscriptionRequest
 
         The model defined in huaweicloud sdk
 
+        :param enterprise_project_id: 创建订阅时所使用的企业项目id
+        :type enterprise_project_id: str
         :param body: Body of the OperateSubscriptionRequest
         :type body: :class:`huaweicloudsdkeg.v1.SubscriptionOperateReq`
         """
         
         
 
+        self._enterprise_project_id = None
         self._body = None
         self.discriminator = None
 
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if body is not None:
             self.body = body
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this OperateSubscriptionRequest.
+
+        创建订阅时所使用的企业项目id
+
+        :return: The enterprise_project_id of this OperateSubscriptionRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this OperateSubscriptionRequest.
+
+        创建订阅时所使用的企业项目id
+
+        :param enterprise_project_id: The enterprise_project_id of this OperateSubscriptionRequest.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def body(self):

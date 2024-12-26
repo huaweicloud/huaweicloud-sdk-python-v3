@@ -69,7 +69,7 @@ class ListConnectGatewaysRequest:
         :type id: list[str]
         :param name: 根据名字过滤查询，可查询多个名字。
         :type name: list[str]
-        :param status: 根椐资源状态过淲实例
+        :param status: 根椐资源状态过滤实例
         :type status: list[str]
         """
         
@@ -335,7 +335,7 @@ class ListConnectGatewaysRequest:
     def status(self):
         """Gets the status of this ListConnectGatewaysRequest.
 
-        根椐资源状态过淲实例
+        根椐资源状态过滤实例
 
         :return: The status of this ListConnectGatewaysRequest.
         :rtype: list[str]
@@ -346,7 +346,7 @@ class ListConnectGatewaysRequest:
     def status(self, status):
         """Sets the status of this ListConnectGatewaysRequest.
 
-        根椐资源状态过淲实例
+        根椐资源状态过滤实例
 
         :param status: The status of this ListConnectGatewaysRequest.
         :type status: list[str]

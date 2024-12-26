@@ -219,6 +219,7 @@ from huaweicloudsdkrds.v3.model.ha_response import HaResponse
 from huaweicloudsdkrds.v3.model.history_database_info import HistoryDatabaseInfo
 from huaweicloudsdkrds.v3.model.history_database_instance import HistoryDatabaseInstance
 from huaweicloudsdkrds.v3.model.inspection_reports import InspectionReports
+from huaweicloudsdkrds.v3.model.instance_dr_info import InstanceDrInfo
 from huaweicloudsdkrds.v3.model.instance_dr_relation import InstanceDrRelation
 from huaweicloudsdkrds.v3.model.instance_info import InstanceInfo
 from huaweicloudsdkrds.v3.model.instance_lts_basic_info_resp import InstanceLtsBasicInfoResp
@@ -256,6 +257,8 @@ from huaweicloudsdkrds.v3.model.list_datastores_request import ListDatastoresReq
 from huaweicloudsdkrds.v3.model.list_datastores_response import ListDatastoresResponse
 from huaweicloudsdkrds.v3.model.list_db_users_request import ListDbUsersRequest
 from huaweicloudsdkrds.v3.model.list_db_users_response import ListDbUsersResponse
+from huaweicloudsdkrds.v3.model.list_dr_infos_request import ListDrInfosRequest
+from huaweicloudsdkrds.v3.model.list_dr_infos_response import ListDrInfosResponse
 from huaweicloudsdkrds.v3.model.list_dr_relations_request import ListDrRelationsRequest
 from huaweicloudsdkrds.v3.model.list_dr_relations_response import ListDrRelationsResponse
 from huaweicloudsdkrds.v3.model.list_engine_flavors_request import ListEngineFlavorsRequest
@@ -423,6 +426,7 @@ from huaweicloudsdkrds.v3.model.proxy_info_nodes import ProxyInfoNodes
 from huaweicloudsdkrds.v3.model.proxy_node import ProxyNode
 from huaweicloudsdkrds.v3.model.proxy_readonly_instances import ProxyReadonlyInstances
 from huaweicloudsdkrds.v3.model.pwd_reset_request import PwdResetRequest
+from huaweicloudsdkrds.v3.model.query_dr_info_request import QueryDRInfoRequest
 from huaweicloudsdkrds.v3.model.query_proxy_response_v3 import QueryProxyResponseV3
 from huaweicloudsdkrds.v3.model.quotas import Quotas
 from huaweicloudsdkrds.v3.model.readonly_instances import ReadonlyInstances

@@ -380,6 +380,73 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def authorize_data_connection(self, request):
+        """数据连接跨空间授权
+
+        数据连接跨空间授权。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AuthorizeDataConnection
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.AuthorizeDataConnectionRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.AuthorizeDataConnectionResponse`
+        """
+        http_info = self._authorize_data_connection_http_info(request)
+        return self._call_api(**http_info)
+
+    def authorize_data_connection_invoker(self, request):
+        http_info = self._authorize_data_connection_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _authorize_data_connection_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/datasources/authorize_datasource",
+            "request_type": request.__class__.__name__,
+            "response_type": "AuthorizeDataConnectionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'data_connection_id' in local_var_params:
+            query_params.append(('data_connection_id', local_var_params['data_connection_id']))
+        if 'workspace_id' in local_var_params:
+            query_params.append(('workspace_id', local_var_params['workspace_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_approve_apply(self, request):
         """审核申请
 
@@ -6094,6 +6161,73 @@ class DataArtsStudioClient(Client):
             header_params['workspace'] = local_var_params['workspace']
         if 'x_project_id' in local_var_params:
             header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_entity(self, request):
+        """删除资产(邀测)
+
+        根据guid删除资产。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteEntity
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.DeleteEntityRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteEntityResponse`
+        """
+        http_info = self._delete_entity_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_entity_invoker(self, request):
+        http_info = self._delete_entity_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_entity_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/datamap/entities/guid/{guid}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEntityResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'guid' in local_var_params:
+            path_params['guid'] = local_var_params['guid']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance' in local_var_params:
+            header_params['instance'] = local_var_params['instance']
 
         form_params = {}
 
@@ -19135,6 +19269,71 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def show_queues(self, request):
+        """获取队列(邀测)
+
+        队列列表，展示10条数据，该接口功能处于邀测阶段，后续将随功能公测将逐步开放。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowQueues
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowQueuesRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowQueuesResponse`
+        """
+        http_info = self._show_queues_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_queues_invoker(self, request):
+        http_info = self._show_queues_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_queues_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/datamap/entities/queue",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowQueuesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'instance' in local_var_params:
+            header_params['instance'] = local_var_params['instance']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_relation_by_id(self, request):
         """查看关系详情
 
@@ -19723,6 +19922,85 @@ class DataArtsStudioClient(Client):
             header_params['workspace'] = local_var_params['workspace']
         if 'x_project_id' in local_var_params:
             header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_table_data(self, request):
+        """数据预览(邀测)
+
+        表数据预览，展示10条数据，该接口功能处于邀测阶段，后续将随功能公测将逐步开放。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowTableData
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowTableDataRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowTableDataResponse`
+        """
+        http_info = self._show_table_data_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_table_data_invoker(self, request):
+        http_info = self._show_table_data_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_table_data_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/datamap/entities/guid/{guid}/preview",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTableDataResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'guid' in local_var_params:
+            path_params['guid'] = local_var_params['guid']
+
+        query_params = []
+        if 'data_connection_id' in local_var_params:
+            query_params.append(('data_connection_id', local_var_params['data_connection_id']))
+        if 'source_type' in local_var_params:
+            query_params.append(('source_type', local_var_params['source_type']))
+        if 'database' in local_var_params:
+            query_params.append(('database', local_var_params['database']))
+        if 'schema' in local_var_params:
+            query_params.append(('schema', local_var_params['schema']))
+        if 'table' in local_var_params:
+            query_params.append(('table', local_var_params['table']))
+        if 'queue' in local_var_params:
+            query_params.append(('queue', local_var_params['queue']))
+
+        header_params = {}
+        if 'instance' in local_var_params:
+            header_params['instance'] = local_var_params['instance']
 
         form_params = {}
 

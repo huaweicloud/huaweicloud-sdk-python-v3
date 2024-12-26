@@ -18,7 +18,7 @@ class AllowDbRolePrivilegesRequestBody:
 
     openapi_types = {
         'db_name': 'str',
-        'user': 'object'
+        'user': 'GaussDBforOpenGaussRoleAttributes'
     }
 
     attribute_map = {
@@ -33,8 +33,8 @@ class AllowDbRolePrivilegesRequestBody:
 
         :param db_name: 数据库名称。 不能使用模板库，且是已存在的数据库名称。 模板库包括postgres， template0 ，template1，templatea，template_pdb，templatem。
         :type db_name: str
-        :param user: 角色权限信息。
-        :type user: object
+        :param user: 
+        :type user: :class:`huaweicloudsdkgaussdbforopengauss.v3.GaussDBforOpenGaussRoleAttributes`
         """
         
         
@@ -72,10 +72,8 @@ class AllowDbRolePrivilegesRequestBody:
     def user(self):
         """Gets the user of this AllowDbRolePrivilegesRequestBody.
 
-        角色权限信息。
-
         :return: The user of this AllowDbRolePrivilegesRequestBody.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.GaussDBforOpenGaussRoleAttributes`
         """
         return self._user
 
@@ -83,10 +81,8 @@ class AllowDbRolePrivilegesRequestBody:
     def user(self, user):
         """Sets the user of this AllowDbRolePrivilegesRequestBody.
 
-        角色权限信息。
-
         :param user: The user of this AllowDbRolePrivilegesRequestBody.
-        :type user: object
+        :type user: :class:`huaweicloudsdkgaussdbforopengauss.v3.GaussDBforOpenGaussRoleAttributes`
         """
         self._user = user
 

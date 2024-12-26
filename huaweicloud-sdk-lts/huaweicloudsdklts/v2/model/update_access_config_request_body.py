@@ -18,6 +18,7 @@ class UpdateAccessConfigRequestBody:
 
     openapi_types = {
         'access_config_id': 'str',
+        'access_config_name': 'str',
         'access_config_detail': 'AccessConfigDeatilUpdate',
         'host_group_info': 'AccessConfigHostGroupIdList',
         'access_config_tag': 'list[AccessConfigTag]',
@@ -37,6 +38,7 @@ class UpdateAccessConfigRequestBody:
 
     attribute_map = {
         'access_config_id': 'access_config_id',
+        'access_config_name': 'access_config_name',
         'access_config_detail': 'access_config_detail',
         'host_group_info': 'host_group_info',
         'access_config_tag': 'access_config_tag',
@@ -54,13 +56,15 @@ class UpdateAccessConfigRequestBody:
         'component_id': 'component_id'
     }
 
-    def __init__(self, access_config_id=None, access_config_detail=None, host_group_info=None, access_config_tag=None, log_split=None, binary_collect=None, cluster_id=None, incremental_collect=None, encoding_format=None, processor_type=None, demo_log=None, demo_fields=None, processors=None, application_id=None, environment_id=None, component_id=None):
+    def __init__(self, access_config_id=None, access_config_name=None, access_config_detail=None, host_group_info=None, access_config_tag=None, log_split=None, binary_collect=None, cluster_id=None, incremental_collect=None, encoding_format=None, processor_type=None, demo_log=None, demo_fields=None, processors=None, application_id=None, environment_id=None, component_id=None):
         """UpdateAccessConfigRequestBody
 
         The model defined in huaweicloud sdk
 
         :param access_config_id: 日志接入ID
         :type access_config_id: str
+        :param access_config_name: 日志接入名称。 满足正则表达式：^(?!.)(?!)(?!.*?.$)[\\u4e00-\\u9fa5a-zA-Z0-9-.]{1,64}$
+        :type access_config_name: str
         :param access_config_detail: 
         :type access_config_detail: :class:`huaweicloudsdklts.v2.AccessConfigDeatilUpdate`
         :param host_group_info: 
@@ -96,6 +100,7 @@ class UpdateAccessConfigRequestBody:
         
 
         self._access_config_id = None
+        self._access_config_name = None
         self._access_config_detail = None
         self._host_group_info = None
         self._access_config_tag = None
@@ -114,6 +119,8 @@ class UpdateAccessConfigRequestBody:
         self.discriminator = None
 
         self.access_config_id = access_config_id
+        if access_config_name is not None:
+            self.access_config_name = access_config_name
         if access_config_detail is not None:
             self.access_config_detail = access_config_detail
         if host_group_info is not None:
@@ -166,6 +173,28 @@ class UpdateAccessConfigRequestBody:
         :type access_config_id: str
         """
         self._access_config_id = access_config_id
+
+    @property
+    def access_config_name(self):
+        """Gets the access_config_name of this UpdateAccessConfigRequestBody.
+
+        日志接入名称。 满足正则表达式：^(?!.)(?!)(?!.*?.$)[\\u4e00-\\u9fa5a-zA-Z0-9-.]{1,64}$
+
+        :return: The access_config_name of this UpdateAccessConfigRequestBody.
+        :rtype: str
+        """
+        return self._access_config_name
+
+    @access_config_name.setter
+    def access_config_name(self, access_config_name):
+        """Sets the access_config_name of this UpdateAccessConfigRequestBody.
+
+        日志接入名称。 满足正则表达式：^(?!.)(?!)(?!.*?.$)[\\u4e00-\\u9fa5a-zA-Z0-9-.]{1,64}$
+
+        :param access_config_name: The access_config_name of this UpdateAccessConfigRequestBody.
+        :type access_config_name: str
+        """
+        self._access_config_name = access_config_name
 
     @property
     def access_config_detail(self):

@@ -41,7 +41,7 @@ class PeerSite:
 
         :param gateway_id: 对端网关的ID
         :type gateway_id: str
-        :param link_id: 对端网关连接的ID(如：对端为ER时为attachment ID,对端为GDGW时为对端的PeerLink Id)
+        :param link_id: 对端网关连接的ID(如：对端为ER时为attachment ID,对端为GDGW时为对端的PeerLink Id
         :type link_id: str
         :param region_id: 对端网关所在的Region
         :type region_id: str
@@ -102,7 +102,7 @@ class PeerSite:
     def link_id(self):
         """Gets the link_id of this PeerSite.
 
-        对端网关连接的ID(如：对端为ER时为attachment ID,对端为GDGW时为对端的PeerLink Id)
+        对端网关连接的ID(如：对端为ER时为attachment ID,对端为GDGW时为对端的PeerLink Id
 
         :return: The link_id of this PeerSite.
         :rtype: str
@@ -113,7 +113,7 @@ class PeerSite:
     def link_id(self, link_id):
         """Sets the link_id of this PeerSite.
 
-        对端网关连接的ID(如：对端为ER时为attachment ID,对端为GDGW时为对端的PeerLink Id)
+        对端网关连接的ID(如：对端为ER时为attachment ID,对端为GDGW时为对端的PeerLink Id
 
         :param link_id: The link_id of this PeerSite.
         :type link_id: str

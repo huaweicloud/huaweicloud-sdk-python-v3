@@ -45,7 +45,7 @@ class ProviderResponseBody:
         :type type: str
         :param provider_value: 
         :type provider_value: :class:`huaweicloudsdkdc.v3.ProviderValueBody`
-        :param description: 运营商描述信息
+        :param description: 运营商说明
         :type description: str
         """
         
@@ -157,7 +157,7 @@ class ProviderResponseBody:
     def description(self):
         """Gets the description of this ProviderResponseBody.
 
-        运营商描述信息
+        运营商说明
 
         :return: The description of this ProviderResponseBody.
         :rtype: str
@@ -168,7 +168,7 @@ class ProviderResponseBody:
     def description(self, description):
         """Sets the description of this ProviderResponseBody.
 
-        运营商描述信息
+        运营商说明
 
         :param description: The description of this ProviderResponseBody.
         :type description: str

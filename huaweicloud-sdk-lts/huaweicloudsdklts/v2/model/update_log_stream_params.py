@@ -31,7 +31,7 @@ class UpdateLogStreamParams:
 
         The model defined in huaweicloud sdk
 
-        :param ttl_in_days: 日志存储时间（天）。   该参数仅对华东-上海一、华北-北京四、华南-广州用户开放。
+        :param ttl_in_days: 日志存储时间（天）。
         :type ttl_in_days: int
         :param tags: 标签字段信息
         :type tags: list[:class:`huaweicloudsdklts.v2.TagsBody`]
@@ -51,7 +51,7 @@ class UpdateLogStreamParams:
     def ttl_in_days(self):
         """Gets the ttl_in_days of this UpdateLogStreamParams.
 
-        日志存储时间（天）。   该参数仅对华东-上海一、华北-北京四、华南-广州用户开放。
+        日志存储时间（天）。
 
         :return: The ttl_in_days of this UpdateLogStreamParams.
         :rtype: int
@@ -62,7 +62,7 @@ class UpdateLogStreamParams:
     def ttl_in_days(self, ttl_in_days):
         """Sets the ttl_in_days of this UpdateLogStreamParams.
 
-        日志存储时间（天）。   该参数仅对华东-上海一、华北-北京四、华南-广州用户开放。
+        日志存储时间（天）。
 
         :param ttl_in_days: The ttl_in_days of this UpdateLogStreamParams.
         :type ttl_in_days: int

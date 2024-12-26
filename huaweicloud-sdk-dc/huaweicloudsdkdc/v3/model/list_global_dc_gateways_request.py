@@ -71,7 +71,7 @@ class ListGlobalDcGatewaysRequest:
         :type site_network_id: list[str]
         :param cloud_connection_id: 云连接ID
         :type cloud_connection_id: list[str]
-        :param status: 根椐资源状态过淲实例
+        :param status: 根椐资源状态过滤实例
         :type status: list[str]
         :param global_center_network_id: 全球中心网络ID
         :type global_center_network_id: list[str]
@@ -342,7 +342,7 @@ class ListGlobalDcGatewaysRequest:
     def status(self):
         """Gets the status of this ListGlobalDcGatewaysRequest.
 
-        根椐资源状态过淲实例
+        根椐资源状态过滤实例
 
         :return: The status of this ListGlobalDcGatewaysRequest.
         :rtype: list[str]
@@ -353,7 +353,7 @@ class ListGlobalDcGatewaysRequest:
     def status(self, status):
         """Sets the status of this ListGlobalDcGatewaysRequest.
 
-        根椐资源状态过淲实例
+        根椐资源状态过滤实例
 
         :param status: The status of this ListGlobalDcGatewaysRequest.
         :type status: list[str]

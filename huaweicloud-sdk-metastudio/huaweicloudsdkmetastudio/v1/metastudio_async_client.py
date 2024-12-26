@@ -7644,6 +7644,77 @@ class MetaStudioAsyncClient(Client):
 
         return http_info
 
+    def batch_confirm_live_commands_async(self, request):
+        """批量确认命令
+
+        该接口用于批量确认命令列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchConfirmLiveCommands
+        :type request: :class:`huaweicloudsdkmetastudio.v1.BatchConfirmLiveCommandsRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.BatchConfirmLiveCommandsResponse`
+        """
+        http_info = self._batch_confirm_live_commands_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_confirm_live_commands_async_invoker(self, request):
+        http_info = self._batch_confirm_live_commands_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_confirm_live_commands_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/smart-live-rooms/{room_id}/smart-live-jobs/{job_id}/batch-commands-confirm",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchConfirmLiveCommandsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'room_id' in local_var_params:
+            path_params['room_id'] = local_var_params['room_id']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def execute_smart_live_command_async(self, request):
         """控制数字人直播过程
 
@@ -7848,6 +7919,148 @@ class MetaStudioAsyncClient(Client):
             query_params.append(('create_until', local_var_params['create_until']))
         if 'room_name' in local_var_params:
             query_params.append(('room_name', local_var_params['room_name']))
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_smart_live_rule_commands_async(self, request):
+        """查询租户未确认的互动规则命令列表
+
+        该接口用于查询租户未确认的互动规则命令列表，仅限于需要做二次确认的特定用户使用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSmartLiveRuleCommands
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ListSmartLiveRuleCommandsRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListSmartLiveRuleCommandsResponse`
+        """
+        http_info = self._list_smart_live_rule_commands_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_smart_live_rule_commands_async_invoker(self, request):
+        http_info = self._list_smart_live_rule_commands_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_smart_live_rule_commands_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/smart-live-command/rule-commands",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSmartLiveRuleCommandsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'job_id' in local_var_params:
+            query_params.append(('job_id', local_var_params['job_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_smart_live_script_commands_async(self, request):
+        """查询租户未确认的剧本命令列表
+
+        该接口用于查询租户未确认的剧本命令列表，仅限于需要做二次确认的特定用户使用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSmartLiveScriptCommands
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ListSmartLiveScriptCommandsRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListSmartLiveScriptCommandsResponse`
+        """
+        http_info = self._list_smart_live_script_commands_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_smart_live_script_commands_async_invoker(self, request):
+        http_info = self._list_smart_live_script_commands_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_smart_live_script_commands_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/smart-live-command/script-commands",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSmartLiveScriptCommandsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'job_id' in local_var_params:
+            query_params.append(('job_id', local_var_params['job_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
         if 'x_app_user_id' in local_var_params:
@@ -8140,6 +8353,75 @@ class MetaStudioAsyncClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def confirm_smart_live_room_async(self, request):
+        """直播间确认
+
+        该接口用直播间二次确认
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ConfirmSmartLiveRoom
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ConfirmSmartLiveRoomRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ConfirmSmartLiveRoomResponse`
+        """
+        http_info = self._confirm_smart_live_room_http_info(request)
+        return self._call_api(**http_info)
+
+    def confirm_smart_live_room_async_invoker(self, request):
+        http_info = self._confirm_smart_live_room_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _confirm_smart_live_room_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/smart-live-rooms/{room_id}/confirm",
+            "request_type": request.__class__.__name__,
+            "response_type": "ConfirmSmartLiveRoomResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'room_id' in local_var_params:
+            path_params['room_id'] = local_var_params['room_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -8560,6 +8842,8 @@ class MetaStudioAsyncClient(Client):
             query_params.append(('room_type', local_var_params['room_type']))
         if 'template_own_type' in local_var_params:
             query_params.append(('template_own_type', local_var_params['template_own_type']))
+        if 'confirm_state' in local_var_params:
+            query_params.append(('confirm_state', local_var_params['confirm_state']))
 
         header_params = {}
         if 'x_app_user_id' in local_var_params:
@@ -10098,6 +10382,10 @@ class MetaStudioAsyncClient(Client):
             query_params.append(('create_until', local_var_params['create_until']))
         if 'create_since' in local_var_params:
             query_params.append(('create_since', local_var_params['create_since']))
+        if 'update_until' in local_var_params:
+            query_params.append(('update_until', local_var_params['update_until']))
+        if 'update_since' in local_var_params:
+            query_params.append(('update_since', local_var_params['update_since']))
         if 'state' in local_var_params:
             query_params.append(('state', local_var_params['state']))
         if 'job_id' in local_var_params:
@@ -10110,6 +10398,10 @@ class MetaStudioAsyncClient(Client):
             query_params.append(('job_type', local_var_params['job_type']))
         if 'batch_name' in local_var_params:
             query_params.append(('batch_name', local_var_params['batch_name']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
 
         header_params = {}
         if 'x_app_user_id' in local_var_params:
@@ -11073,6 +11365,298 @@ class MetaStudioAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_ttsc_vocabulary_configs_async(self, request):
+        """设置TTS租户级扩展词表配置
+
+        该接口用于设置TTS租户级扩展词表配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateTtscVocabularyConfigs
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateTtscVocabularyConfigsRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateTtscVocabularyConfigsResponse`
+        """
+        http_info = self._create_ttsc_vocabulary_configs_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_ttsc_vocabulary_configs_async_invoker(self, request):
+        http_info = self._create_ttsc_vocabulary_configs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_ttsc_vocabulary_configs_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/ttsc/vocabulary-configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTtscVocabularyConfigsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_ttsc_vocabulary_configs_async(self, request):
+        """删除TTS租户级词表扩展配置
+
+        该接口用于删除TTS租户级词表扩展配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteTtscVocabularyConfigs
+        :type request: :class:`huaweicloudsdkmetastudio.v1.DeleteTtscVocabularyConfigsRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.DeleteTtscVocabularyConfigsResponse`
+        """
+        http_info = self._delete_ttsc_vocabulary_configs_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_ttsc_vocabulary_configs_async_invoker(self, request):
+        http_info = self._delete_ttsc_vocabulary_configs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_ttsc_vocabulary_configs_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/ttsc/vocabulary-configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTtscVocabularyConfigsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ttsc_vocabulary_configs_async(self, request):
+        """获取TTS租户级词表扩展配置
+
+        该接口用于获取TTS租户级词表扩展配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTtscVocabularyConfigs
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ListTtscVocabularyConfigsRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListTtscVocabularyConfigsResponse`
+        """
+        http_info = self._list_ttsc_vocabulary_configs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ttsc_vocabulary_configs_async_invoker(self, request):
+        http_info = self._list_ttsc_vocabulary_configs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ttsc_vocabulary_configs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/ttsc/vocabulary-configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTtscVocabularyConfigsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'search_key' in local_var_params:
+            query_params.append(('search_key', local_var_params['search_key']))
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def save_ttsc_vocabulary_configs_async(self, request):
+        """修改TTS租户级扩展词表配置
+
+        该接口用于修改TTS租户级扩展词表配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SaveTtscVocabularyConfigs
+        :type request: :class:`huaweicloudsdkmetastudio.v1.SaveTtscVocabularyConfigsRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.SaveTtscVocabularyConfigsResponse`
+        """
+        http_info = self._save_ttsc_vocabulary_configs_http_info(request)
+        return self._call_api(**http_info)
+
+    def save_ttsc_vocabulary_configs_async_invoker(self, request):
+        http_info = self._save_ttsc_vocabulary_configs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _save_ttsc_vocabulary_configs_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/ttsc/vocabulary-configs/{vocabulary_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "SaveTtscVocabularyConfigsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vocabulary_id' in local_var_params:
+            path_params['vocabulary_id'] = local_var_params['vocabulary_id']
 
         query_params = []
 

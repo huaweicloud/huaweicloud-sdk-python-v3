@@ -206,7 +206,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         :type flexus_retry_count: int
         :param audio_source_type: 声音来源类型 * VIDEO：视频中抽取音频 * AUDIO：单独上传的音频
         :type audio_source_type: str
-        :param supported_service: 该任务所生成的模型支持的业务类型，可多选
+        :param supported_service: 该任务所生成的模型支持的业务类型，可多选。  Flexus版数字人仅支持选择“VIDEO_2D”。
         :type supported_service: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
         :param allocated_resource: 
         :type allocated_resource: :class:`huaweicloudsdkmetastudio.v1.TrainingAllocatedResource`
@@ -1284,7 +1284,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
     def supported_service(self):
         """Gets the supported_service of this Show2dModelTrainingJobResponse.
 
-        该任务所生成的模型支持的业务类型，可多选
+        该任务所生成的模型支持的业务类型，可多选。  Flexus版数字人仅支持选择“VIDEO_2D”。
 
         :return: The supported_service of this Show2dModelTrainingJobResponse.
         :rtype: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
@@ -1295,7 +1295,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
     def supported_service(self, supported_service):
         """Sets the supported_service of this Show2dModelTrainingJobResponse.
 
-        该任务所生成的模型支持的业务类型，可多选
+        该任务所生成的模型支持的业务类型，可多选。  Flexus版数字人仅支持选择“VIDEO_2D”。
 
         :param supported_service: The supported_service of this Show2dModelTrainingJobResponse.
         :type supported_service: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
