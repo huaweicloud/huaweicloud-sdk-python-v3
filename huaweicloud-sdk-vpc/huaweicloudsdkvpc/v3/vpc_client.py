@@ -5847,6 +5847,8 @@ class VpcClient(Client):
         if 'id' in local_var_params:
             query_params.append(('id', local_var_params['id']))
             collection_formats['id'] = 'multi'
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'name' in local_var_params:
             query_params.append(('name', local_var_params['name']))
             collection_formats['name'] = 'multi'

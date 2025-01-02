@@ -19,7 +19,7 @@ class Auditlog:
     openapi_types = {
         'id': 'str',
         'name': 'str',
-        'size': 'int',
+        'size': 'float',
         'begin_time': 'str',
         'end_time': 'str'
     }
@@ -42,7 +42,7 @@ class Auditlog:
         :param name: 审计日志文件名。
         :type name: str
         :param size: 审计日志大小，单位：KB。
-        :type size: int
+        :type size: float
         :param begin_time: 审计日志开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始，Z指时区偏移量，例如北京时间偏移显示为+0800。
         :type begin_time: str
         :param end_time: 审计日志结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始，Z指时区偏移量，例如北京时间偏移显示为+0800。
@@ -120,7 +120,7 @@ class Auditlog:
         审计日志大小，单位：KB。
 
         :return: The size of this Auditlog.
-        :rtype: int
+        :rtype: float
         """
         return self._size
 
@@ -131,7 +131,7 @@ class Auditlog:
         审计日志大小，单位：KB。
 
         :param size: The size of this Auditlog.
-        :type size: int
+        :type size: float
         """
         self._size = size
 

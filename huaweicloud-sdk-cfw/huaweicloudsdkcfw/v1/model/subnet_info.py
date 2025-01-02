@@ -41,7 +41,7 @@ class SubnetInfo:
 
         The model defined in huaweicloud sdk
 
-        :param availability_zone: 子网所在的可用区标识，从终端节点获取，参考[终端节点](cfw_02_0003.xml)
+        :param availability_zone: 子网所在的可用区标识，从终端节点获取，参考[终端节点](cfw_02_0000.xml)
         :type availability_zone: str
         :param cidr: 功能说明：虚拟私有云下可用子网的范围 取值范围： 10.0.0.0/8~24 172.16.0.0/12~24 192.168.0.0/16~24 不指定cidr时，默认值为空 约束：必须是cidr格式，例如:192.168.0.0/16
         :type cidr: str
@@ -87,7 +87,7 @@ class SubnetInfo:
     def availability_zone(self):
         """Gets the availability_zone of this SubnetInfo.
 
-        子网所在的可用区标识，从终端节点获取，参考[终端节点](cfw_02_0003.xml)
+        子网所在的可用区标识，从终端节点获取，参考[终端节点](cfw_02_0000.xml)
 
         :return: The availability_zone of this SubnetInfo.
         :rtype: str
@@ -98,7 +98,7 @@ class SubnetInfo:
     def availability_zone(self, availability_zone):
         """Sets the availability_zone of this SubnetInfo.
 
-        子网所在的可用区标识，从终端节点获取，参考[终端节点](cfw_02_0003.xml)
+        子网所在的可用区标识，从终端节点获取，参考[终端节点](cfw_02_0000.xml)
 
         :param availability_zone: The availability_zone of this SubnetInfo.
         :type availability_zone: str

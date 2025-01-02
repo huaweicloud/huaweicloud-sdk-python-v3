@@ -20,6 +20,7 @@ class ListAlarmHistoriesRequest:
         'alarm_id': 'str',
         'record_id': 'str',
         'name': 'str',
+        'alarm_type': 'str',
         'status': 'str',
         'level': 'int',
         'namespace': 'str',
@@ -35,6 +36,7 @@ class ListAlarmHistoriesRequest:
         'alarm_id': 'alarm_id',
         'record_id': 'record_id',
         'name': 'name',
+        'alarm_type': 'alarm_type',
         'status': 'status',
         'level': 'level',
         'namespace': 'namespace',
@@ -46,7 +48,7 @@ class ListAlarmHistoriesRequest:
         'order_by': 'order_by'
     }
 
-    def __init__(self, alarm_id=None, record_id=None, name=None, status=None, level=None, namespace=None, resource_id=None, _from=None, to=None, offset=None, limit=None, order_by=None):
+    def __init__(self, alarm_id=None, record_id=None, name=None, alarm_type=None, status=None, level=None, namespace=None, resource_id=None, _from=None, to=None, offset=None, limit=None, order_by=None):
         """ListAlarmHistoriesRequest
 
         The model defined in huaweicloud sdk
@@ -57,6 +59,8 @@ class ListAlarmHistoriesRequest:
         :type record_id: str
         :param name: 告警规则名称
         :type name: str
+        :param alarm_type: 告警类型，event：查询事件类型告警，metric：查询指标类型告警
+        :type alarm_type: str
         :param status: 告警规则状态, ok为正常，alarm为告警，invalid为已失效
         :type status: str
         :param level: 告警级别, 1为紧急，2为重要，3为次要，4为提示
@@ -82,6 +86,7 @@ class ListAlarmHistoriesRequest:
         self._alarm_id = None
         self._record_id = None
         self._name = None
+        self._alarm_type = None
         self._status = None
         self._level = None
         self._namespace = None
@@ -99,6 +104,8 @@ class ListAlarmHistoriesRequest:
             self.record_id = record_id
         if name is not None:
             self.name = name
+        if alarm_type is not None:
+            self.alarm_type = alarm_type
         if status is not None:
             self.status = status
         if level is not None:
@@ -183,6 +190,28 @@ class ListAlarmHistoriesRequest:
         :type name: str
         """
         self._name = name
+
+    @property
+    def alarm_type(self):
+        """Gets the alarm_type of this ListAlarmHistoriesRequest.
+
+        告警类型，event：查询事件类型告警，metric：查询指标类型告警
+
+        :return: The alarm_type of this ListAlarmHistoriesRequest.
+        :rtype: str
+        """
+        return self._alarm_type
+
+    @alarm_type.setter
+    def alarm_type(self, alarm_type):
+        """Sets the alarm_type of this ListAlarmHistoriesRequest.
+
+        告警类型，event：查询事件类型告警，metric：查询指标类型告警
+
+        :param alarm_type: The alarm_type of this ListAlarmHistoriesRequest.
+        :type alarm_type: str
+        """
+        self._alarm_type = alarm_type
 
     @property
     def status(self):

@@ -37,7 +37,7 @@ class GdgwRouteTableRequest:
         :type add_routes: list[:class:`huaweicloudsdkdc.v3.AddGdgwRouteAction`]
         :param del_routes: 需要删除的路由
         :type del_routes: list[:class:`huaweicloudsdkdc.v3.DeleteGdgwRouteAction`]
-        :param update_routes: 需要更新的路 **仅更新该条路由的附加信息，不执行交换机的路由更新操作。当前支持更新：路由描述-description信息**
+        :param update_routes: 需要更新的路由 仅更新该条路由的附加信息，不执行交换机的路由更新操作。当前支持更新：路由描述-description信息
         :type update_routes: list[:class:`huaweicloudsdkdc.v3.UpdateRouteAction`]
         """
         
@@ -103,7 +103,7 @@ class GdgwRouteTableRequest:
     def update_routes(self):
         """Gets the update_routes of this GdgwRouteTableRequest.
 
-        需要更新的路 **仅更新该条路由的附加信息，不执行交换机的路由更新操作。当前支持更新：路由描述-description信息**
+        需要更新的路由 仅更新该条路由的附加信息，不执行交换机的路由更新操作。当前支持更新：路由描述-description信息
 
         :return: The update_routes of this GdgwRouteTableRequest.
         :rtype: list[:class:`huaweicloudsdkdc.v3.UpdateRouteAction`]
@@ -114,7 +114,7 @@ class GdgwRouteTableRequest:
     def update_routes(self, update_routes):
         """Sets the update_routes of this GdgwRouteTableRequest.
 
-        需要更新的路 **仅更新该条路由的附加信息，不执行交换机的路由更新操作。当前支持更新：路由描述-description信息**
+        需要更新的路由 仅更新该条路由的附加信息，不执行交换机的路由更新操作。当前支持更新：路由描述-description信息
 
         :param update_routes: The update_routes of this GdgwRouteTableRequest.
         :type update_routes: list[:class:`huaweicloudsdkdc.v3.UpdateRouteAction`]

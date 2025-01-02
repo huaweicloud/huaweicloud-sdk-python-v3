@@ -34,6 +34,24 @@ class GaussDBforopenGaussRegion:
                         "https://gaussdb-opengauss.af-south-1.myhuaweicloud.com")
     CN_NORTH_9 = Region("cn-north-9",
                         "https://gaussdb-opengauss.cn-north-9.myhuaweicloud.com")
+    CN_SOUTH_2 = Region("cn-south-2",
+                        "https://gaussdb-opengauss.cn-south-2.myhuaweicloud.com")
+    CN_EAST_4 = Region("cn-east-4",
+                        "https://gaussdb.cn-east-4.myhuaweicloud.com")
+    CN_EAST_5 = Region("cn-east-5",
+                        "https://gaussdb.cn-east-5.myhuaweicloud.com")
+    AP_SOUTHEAST_5 = Region("ap-southeast-5",
+                        "https://gaussdb.ap-southeast-5.myhuaweicloud.com")
+    TR_WEST_1 = Region("tr-west-1",
+                        "https://gaussdb.tr-west-1.myhuaweicloud.com")
+    ME_EAST_1 = Region("me-east-1",
+                        "https://gaussdb.me-east-1.myhuaweicloud.com")
+    AF_NORTH_1 = Region("af-north-1",
+                        "https://gaussdb.af-north-1.myhuaweicloud.com")
+    AP_SOUTHEAST_4 = Region("ap-southeast-4",
+                        "https://gaussdb-opengauss.ap-southeast-4.myhuaweicloud.com")
+    CN_EAST_2 = Region("cn-east-2",
+                        "https://gaussdb.cn-east-2.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
@@ -50,6 +68,15 @@ class GaussDBforopenGaussRegion:
         "la-north-2": LA_NORTH_2,
         "af-south-1": AF_SOUTH_1,
         "cn-north-9": CN_NORTH_9,
+        "cn-south-2": CN_SOUTH_2,
+        "cn-east-4": CN_EAST_4,
+        "cn-east-5": CN_EAST_5,
+        "ap-southeast-5": AP_SOUTHEAST_5,
+        "tr-west-1": TR_WEST_1,
+        "me-east-1": ME_EAST_1,
+        "af-north-1": AF_NORTH_1,
+        "ap-southeast-4": AP_SOUTHEAST_4,
+        "cn-east-2": CN_EAST_2,
     }
 
     @classmethod

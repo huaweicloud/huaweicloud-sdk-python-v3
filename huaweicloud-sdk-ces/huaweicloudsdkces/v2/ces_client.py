@@ -1658,6 +1658,8 @@ class CesClient(Client):
             query_params.append(('record_id', local_var_params['record_id']))
         if 'name' in local_var_params:
             query_params.append(('name', local_var_params['name']))
+        if 'alarm_type' in local_var_params:
+            query_params.append(('alarm_type', local_var_params['alarm_type']))
         if 'status' in local_var_params:
             query_params.append(('status', local_var_params['status']))
         if 'level' in local_var_params:

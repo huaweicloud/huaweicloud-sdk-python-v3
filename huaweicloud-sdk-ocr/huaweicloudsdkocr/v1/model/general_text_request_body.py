@@ -55,7 +55,7 @@ class GeneralTextRequestBody:
         :type character_mode: bool
         :param language: 语种选择，可选值可参考表1中英文列。未传入该参数时默认为中英文识别模式。 **表1* 语种选择说明 | 英文 |     中文     | | :--: | :----------: | | auto | 自动语种分类 | |  ms  |    马来语    | |  uk  |   乌克兰语   | |  hi  |    印地语    | |  ru  |     俄语     | |  vi  |    越南语    | |  id  |    印尼语    | |  th  |     泰语     | |  zh  |    中英文    | |  ar  |   阿拉伯语   | |  de  |     德语     | |  la  |    拉丁语    | |  fr  |     法语     | |  it  |   意大利语   | |  es  |   西班牙语   | |  pt  |   葡萄牙语   | |  ro  |  罗马尼亚语  | |  pl  |    波兰语    | |  am  |  阿姆哈拉语  | |  ja  |     日语     | |  ko  |     韩语     | |  tr  |   土耳其语   | |  no  |   挪威语     | |  da  |   丹麦语     | |  sv  |   瑞典语     | |  km  |   柬埔寨语   | |  he  |   希伯来语   | 
         :type language: str
-        :param single_orientation_mode: 单朝向模式开关。可选值包括： - true：打开单朝向模式  - false：关闭单朝向模  图片文字方向一致时，打开该开关可提升识别精度；图片文字方向不一致时，关闭该开关可支持多朝向文字识别。未传入该参数时默认为false，即默认图片中的字段为多朝向。 
+        :param single_orientation_mode: 单朝向模式开关。可选值包括： - true：打开单朝向模式  - false：关闭单朝向模式  图片文字方向一致时，打开该开关可提升识别精度；图片文字方向不一致时，关闭该开关可支持多朝向文字识别。未传入该参数时默认为false，即默认图片中的字段为多朝向。 
         :type single_orientation_mode: bool
         :param pdf_page_number: 指定PDF页码识别。传入该参数时，则识别指定页码的内容。如果不传该参数，则默认识别第1页。 
         :type pdf_page_number: int
@@ -226,7 +226,7 @@ class GeneralTextRequestBody:
     def single_orientation_mode(self):
         """Gets the single_orientation_mode of this GeneralTextRequestBody.
 
-        单朝向模式开关。可选值包括： - true：打开单朝向模式  - false：关闭单朝向模  图片文字方向一致时，打开该开关可提升识别精度；图片文字方向不一致时，关闭该开关可支持多朝向文字识别。未传入该参数时默认为false，即默认图片中的字段为多朝向。 
+        单朝向模式开关。可选值包括： - true：打开单朝向模式  - false：关闭单朝向模式  图片文字方向一致时，打开该开关可提升识别精度；图片文字方向不一致时，关闭该开关可支持多朝向文字识别。未传入该参数时默认为false，即默认图片中的字段为多朝向。 
 
         :return: The single_orientation_mode of this GeneralTextRequestBody.
         :rtype: bool
@@ -237,7 +237,7 @@ class GeneralTextRequestBody:
     def single_orientation_mode(self, single_orientation_mode):
         """Sets the single_orientation_mode of this GeneralTextRequestBody.
 
-        单朝向模式开关。可选值包括： - true：打开单朝向模式  - false：关闭单朝向模  图片文字方向一致时，打开该开关可提升识别精度；图片文字方向不一致时，关闭该开关可支持多朝向文字识别。未传入该参数时默认为false，即默认图片中的字段为多朝向。 
+        单朝向模式开关。可选值包括： - true：打开单朝向模式  - false：关闭单朝向模式  图片文字方向一致时，打开该开关可提升识别精度；图片文字方向不一致时，关闭该开关可支持多朝向文字识别。未传入该参数时默认为false，即默认图片中的字段为多朝向。 
 
         :param single_orientation_mode: The single_orientation_mode of this GeneralTextRequestBody.
         :type single_orientation_mode: bool

@@ -1,3 +1,197 @@
+# 3.1.130 2025-01-02
+
+### HuaweiCloud SDK CES
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateAlarmTemplate**
+    - changes of request param
+      - `+ template_type`
+  - **ListAlarmHistories**
+    - changes of request param
+      - `+ alarm_type`
+
+### HuaweiCloud SDK CFW
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowIpsUpdateTime**
+    - changes of response param
+      - `- trace_id`
+      - `- error_description`
+      - `- job_id`
+      - `- error_code`
+      - `- fail_reason`
+      - `- order_id`
+  - **ListCustomerIps**
+    - changes of response param
+      - `* data: object<PageInfo«CustomerIpsListVO»> -> object<HttpListCustomerIpsResponseData>`
+
+### HuaweiCloud SDK Config
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowRemediationConfiguration**
+    - changes of response param
+      - `+ target_region_id`
+      - `+ target_project_id`
+  - **CreateOrUpdateRemediationConfiguration**
+    - changes of request param
+      - `+ target_region_id`
+      - `+ target_project_id`
+    - changes of response param
+      - `+ target_region_id`
+      - `+ target_project_id`
+  - **CreateTrackerConfig**
+    - changes of request param
+      - `- domain_id`
+      - `- agency_name`
+      - `- channel`
+      - `- retention_period_in_days`
+      - `- frozen_status`
+      - `- selector`
+  - **ShowResourceHistory**
+    - changes of response param
+      - `- provisioning_state`
+      - `- created`
+      - `- region_id`
+      - `- type`
+      - `- project_name`
+      - `- ep_id`
+      - `- tags`
+      - `- provider`
+      - `- project_id`
+      - `- name`
+      - `- checksum`
+      - `- id`
+      - `- state`
+      - `- ep_name`
+      - `- updated`
+      - `- properties`
+      - `- items.resource.state`
+
+### HuaweiCloud SDK DAS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the API `SynchronizeInstances`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DC
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListConnectGateways**
+    - changes of response param
+      - `+ total_count`
+      - `+ page_info`
+  - **ListGlobalDcGateways**
+    - changes of response param
+      - `* global_dc_gateways.current_peer_link_count: string -> integer`
+      - `* global_dc_gateways.available_peer_link_count: string -> integer`
+  - **CreateGlobalDcGateway**
+    - changes of response param
+      - `* global_dc_gateway.current_peer_link_count: string -> integer`
+      - `* global_dc_gateway.available_peer_link_count: string -> integer`
+  - **ShowGlobalDcGateway**
+    - changes of response param
+      - `* global_dc_gateway.current_peer_link_count: string -> integer`
+      - `* global_dc_gateway.available_peer_link_count: string -> integer`
+  - **UpdateGlobalDcGateway**
+    - changes of response param
+      - `* global_dc_gateway.current_peer_link_count: string -> integer`
+      - `* global_dc_gateway.available_peer_link_count: string -> integer`
+
+### HuaweiCloud SDK DWS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **RestoreCluster**
+    - changes of request param
+      - `+ restore.ipv6_enable`
+
+### HuaweiCloud SDK Meeting
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **SetInterpreterGroup**
+    - changes of request param
+      - `+ interpreterGroups.interpreters.interpreterType`
+      - `+ interpreterGroups.interpreters.aiDigitalInfo`
+  - **ShowRecordInfo**
+    - changes of request param
+      - `* segmentOffset: int64 -> int32`
+      - `* segmentLimit: int64 -> int32`
+    - changes of response param
+      - `* data.segmentCount: int32 -> int64`
+      - `* data.segmentList.fileList.beginTime: int32 -> int64`
+      - `* data.segmentList.fileList.endTime: int32 -> int64`
+      - `* data.segmentList.fileList.duration: int32 -> int64`
+      - `* data.segmentList.fileList.fileSize: int32 -> int64`
+
+### HuaweiCloud SDK RDS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the APIs `ListReadOnlyReplayDatabase`, `RestoreLogReplayDatabase`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListAuditlogs**
+    - changes of response param
+      - `* auditlogs.size: int64 -> double`
+  - **ListDrInfos**
+    - changes of response param
+      - `+ instance_dr_infos.build_process`
+
+### HuaweiCloud SDK VPC
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListVpcs**
+    - changes of request param
+      - `+ enterprise_project_id`
+
 # 3.1.129 2024-12-26
 
 ### HuaweiCloud SDK BSS

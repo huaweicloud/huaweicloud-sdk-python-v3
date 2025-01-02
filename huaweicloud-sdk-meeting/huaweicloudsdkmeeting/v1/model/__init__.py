@@ -98,6 +98,7 @@ from huaweicloudsdkmeeting.v1.model.conference_info import ConferenceInfo
 from huaweicloudsdkmeeting.v1.model.corp_admin_dto import CorpAdminDTO
 from huaweicloudsdkmeeting.v1.model.corp_basic_dto import CorpBasicDTO
 from huaweicloudsdkmeeting.v1.model.corp_basic_info_dto import CorpBasicInfoDTO
+from huaweicloudsdkmeeting.v1.model.corp_digital_info import CorpDigitalInfo
 from huaweicloudsdkmeeting.v1.model.create_anonymous_auth_random_request import CreateAnonymousAuthRandomRequest
 from huaweicloudsdkmeeting.v1.model.create_anonymous_auth_random_response import CreateAnonymousAuthRandomResponse
 from huaweicloudsdkmeeting.v1.model.create_auth_random_request import CreateAuthRandomRequest
@@ -158,6 +159,7 @@ from huaweicloudsdkmeeting.v1.model.hang_up_request import HangUpRequest
 from huaweicloudsdkmeeting.v1.model.hang_up_response import HangUpResponse
 from huaweicloudsdkmeeting.v1.model.id_mark_dto import IdMarkDTO
 from huaweicloudsdkmeeting.v1.model.image_moderation_result import ImageModerationResult
+from huaweicloudsdkmeeting.v1.model.interpreter_ai_digital_info import InterpreterAiDigitalInfo
 from huaweicloudsdkmeeting.v1.model.interpreter_group_info import InterpreterGroupInfo
 from huaweicloudsdkmeeting.v1.model.interpreter_info import InterpreterInfo
 from huaweicloudsdkmeeting.v1.model.invite_operate_video_request import InviteOperateVideoRequest

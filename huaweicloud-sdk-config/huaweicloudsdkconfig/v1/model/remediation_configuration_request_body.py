@@ -20,6 +20,8 @@ class RemediationConfigurationRequestBody:
         'automatic': 'bool',
         'target_type': 'str',
         'target_id': 'str',
+        'target_region_id': 'str',
+        'target_project_id': 'str',
         'static_parameter': 'list[RemediationStaticParameter]',
         'resource_parameter': 'RemediationResourceParameter',
         'maximum_attempts': 'int',
@@ -32,6 +34,8 @@ class RemediationConfigurationRequestBody:
         'automatic': 'automatic',
         'target_type': 'target_type',
         'target_id': 'target_id',
+        'target_region_id': 'target_region_id',
+        'target_project_id': 'target_project_id',
         'static_parameter': 'static_parameter',
         'resource_parameter': 'resource_parameter',
         'maximum_attempts': 'maximum_attempts',
@@ -40,7 +44,7 @@ class RemediationConfigurationRequestBody:
         'auth_value': 'auth_value'
     }
 
-    def __init__(self, automatic=None, target_type=None, target_id=None, static_parameter=None, resource_parameter=None, maximum_attempts=None, retry_attempt_seconds=None, auth_type=None, auth_value=None):
+    def __init__(self, automatic=None, target_type=None, target_id=None, target_region_id=None, target_project_id=None, static_parameter=None, resource_parameter=None, maximum_attempts=None, retry_attempt_seconds=None, auth_type=None, auth_value=None):
         """RemediationConfigurationRequestBody
 
         The model defined in huaweicloud sdk
@@ -51,6 +55,10 @@ class RemediationConfigurationRequestBody:
         :type target_type: str
         :param target_id: 修正执行的目标ID。如果修正方式为fgs，则该值为函数工作流的函数urn；如果修正方式为rfs，则该值为资源编排服务的模板name与版本号，两者以/分割，如果没有指定默认V1。
         :type target_id: str
+        :param target_region_id: 修正执行的目标的regionId。如果修正方式为RFS，该字段为空则Config服务会默认配置北京四（中国站）或香港一（国际站）的regionId；如果修正方式为FGS，该字段为空则Config服务会根据实例urn自动配置。
+        :type target_region_id: str
+        :param target_project_id: 修正执行的目标的projectId。如果修正方式为RFS，该字段为空则Config服务会默认配置北京四（中国站）或香港一（国际站）的主projectId；如果修正方式为FGS，该字段为空则Config服务会根据实例urn自动配置。指定target_region_id字段则该字段必选。
+        :type target_project_id: str
         :param static_parameter: 修正执行的静态参数。
         :type static_parameter: list[:class:`huaweicloudsdkconfig.v1.RemediationStaticParameter`]
         :param resource_parameter: 
@@ -70,6 +78,8 @@ class RemediationConfigurationRequestBody:
         self._automatic = None
         self._target_type = None
         self._target_id = None
+        self._target_region_id = None
+        self._target_project_id = None
         self._static_parameter = None
         self._resource_parameter = None
         self._maximum_attempts = None
@@ -82,6 +92,10 @@ class RemediationConfigurationRequestBody:
             self.automatic = automatic
         self.target_type = target_type
         self.target_id = target_id
+        if target_region_id is not None:
+            self.target_region_id = target_region_id
+        if target_project_id is not None:
+            self.target_project_id = target_project_id
         if static_parameter is not None:
             self.static_parameter = static_parameter
         self.resource_parameter = resource_parameter
@@ -159,6 +173,50 @@ class RemediationConfigurationRequestBody:
         :type target_id: str
         """
         self._target_id = target_id
+
+    @property
+    def target_region_id(self):
+        """Gets the target_region_id of this RemediationConfigurationRequestBody.
+
+        修正执行的目标的regionId。如果修正方式为RFS，该字段为空则Config服务会默认配置北京四（中国站）或香港一（国际站）的regionId；如果修正方式为FGS，该字段为空则Config服务会根据实例urn自动配置。
+
+        :return: The target_region_id of this RemediationConfigurationRequestBody.
+        :rtype: str
+        """
+        return self._target_region_id
+
+    @target_region_id.setter
+    def target_region_id(self, target_region_id):
+        """Sets the target_region_id of this RemediationConfigurationRequestBody.
+
+        修正执行的目标的regionId。如果修正方式为RFS，该字段为空则Config服务会默认配置北京四（中国站）或香港一（国际站）的regionId；如果修正方式为FGS，该字段为空则Config服务会根据实例urn自动配置。
+
+        :param target_region_id: The target_region_id of this RemediationConfigurationRequestBody.
+        :type target_region_id: str
+        """
+        self._target_region_id = target_region_id
+
+    @property
+    def target_project_id(self):
+        """Gets the target_project_id of this RemediationConfigurationRequestBody.
+
+        修正执行的目标的projectId。如果修正方式为RFS，该字段为空则Config服务会默认配置北京四（中国站）或香港一（国际站）的主projectId；如果修正方式为FGS，该字段为空则Config服务会根据实例urn自动配置。指定target_region_id字段则该字段必选。
+
+        :return: The target_project_id of this RemediationConfigurationRequestBody.
+        :rtype: str
+        """
+        return self._target_project_id
+
+    @target_project_id.setter
+    def target_project_id(self, target_project_id):
+        """Sets the target_project_id of this RemediationConfigurationRequestBody.
+
+        修正执行的目标的projectId。如果修正方式为RFS，该字段为空则Config服务会默认配置北京四（中国站）或香港一（国际站）的主projectId；如果修正方式为FGS，该字段为空则Config服务会根据实例urn自动配置。指定target_region_id字段则该字段必选。
+
+        :param target_project_id: The target_project_id of this RemediationConfigurationRequestBody.
+        :type target_project_id: str
+        """
+        self._target_project_id = target_project_id
 
     @property
     def static_parameter(self):

@@ -28,8 +28,8 @@ class GlobalDcGatewayEntry:
         'region_id': 'str',
         'location_name': 'str',
         'locales': 'LocalesBody',
-        'current_peer_link_count': 'str',
-        'available_peer_link_count': 'str',
+        'current_peer_link_count': 'int',
+        'available_peer_link_count': 'int',
         'tags': 'list[Tag]',
         'admin_state_up': 'bool',
         'status': 'GlobalDcGatewayStatus',
@@ -88,9 +88,9 @@ class GlobalDcGatewayEntry:
         :param locales: 
         :type locales: :class:`huaweicloudsdkdc.v3.LocalesBody`
         :param current_peer_link_count: 全域接入网关(GDGW)上关联连接的数量，表示DGW挂载ER的数量
-        :type current_peer_link_count: str
+        :type current_peer_link_count: int
         :param available_peer_link_count: 该全域接入网关上GDGW允许创建关联连接（PeerLink）的数量
-        :type available_peer_link_count: str
+        :type available_peer_link_count: int
         :param tags: global-dc-gateway关联TAG。
         :type tags: list[:class:`huaweicloudsdkdc.v3.Tag`]
         :param admin_state_up: 该GDGW的管理状态，true为激活状态、false为冻结状态
@@ -412,7 +412,7 @@ class GlobalDcGatewayEntry:
         全域接入网关(GDGW)上关联连接的数量，表示DGW挂载ER的数量
 
         :return: The current_peer_link_count of this GlobalDcGatewayEntry.
-        :rtype: str
+        :rtype: int
         """
         return self._current_peer_link_count
 
@@ -423,7 +423,7 @@ class GlobalDcGatewayEntry:
         全域接入网关(GDGW)上关联连接的数量，表示DGW挂载ER的数量
 
         :param current_peer_link_count: The current_peer_link_count of this GlobalDcGatewayEntry.
-        :type current_peer_link_count: str
+        :type current_peer_link_count: int
         """
         self._current_peer_link_count = current_peer_link_count
 
@@ -434,7 +434,7 @@ class GlobalDcGatewayEntry:
         该全域接入网关上GDGW允许创建关联连接（PeerLink）的数量
 
         :return: The available_peer_link_count of this GlobalDcGatewayEntry.
-        :rtype: str
+        :rtype: int
         """
         return self._available_peer_link_count
 
@@ -445,7 +445,7 @@ class GlobalDcGatewayEntry:
         该全域接入网关上GDGW允许创建关联连接（PeerLink）的数量
 
         :param available_peer_link_count: The available_peer_link_count of this GlobalDcGatewayEntry.
-        :type available_peer_link_count: str
+        :type available_peer_link_count: int
         """
         self._available_peer_link_count = available_peer_link_count
 

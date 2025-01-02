@@ -20,6 +20,7 @@ class ListVpcsRequest:
         'limit': 'int',
         'marker': 'str',
         'id': 'list[str]',
+        'enterprise_project_id': 'str',
         'name': 'list[str]',
         'description': 'list[str]',
         'cidr': 'list[str]'
@@ -29,12 +30,13 @@ class ListVpcsRequest:
         'limit': 'limit',
         'marker': 'marker',
         'id': 'id',
+        'enterprise_project_id': 'enterprise_project_id',
         'name': 'name',
         'description': 'description',
         'cidr': 'cidr'
     }
 
-    def __init__(self, limit=None, marker=None, id=None, name=None, description=None, cidr=None):
+    def __init__(self, limit=None, marker=None, id=None, enterprise_project_id=None, name=None, description=None, cidr=None):
         """ListVpcsRequest
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class ListVpcsRequest:
         :type marker: str
         :param id: VPC资源ID。可以使用该字段过滤VPC
         :type id: list[str]
+        :param enterprise_project_id: 功能说明：企业项目ID。可以使用该字段过滤某个企业项目下的VPC。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。若需要查询当前用户所有企业项目绑定的VPC，请传参all_granted_eps。
+        :type enterprise_project_id: str
         :param name: VPC的name信息，可以使用该字段过滤VPC
         :type name: list[str]
         :param description: VPC的描述信息。可以使用该字段过滤VPC
@@ -58,6 +62,7 @@ class ListVpcsRequest:
         self._limit = None
         self._marker = None
         self._id = None
+        self._enterprise_project_id = None
         self._name = None
         self._description = None
         self._cidr = None
@@ -69,6 +74,8 @@ class ListVpcsRequest:
             self.marker = marker
         if id is not None:
             self.id = id
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if name is not None:
             self.name = name
         if description is not None:
@@ -141,6 +148,28 @@ class ListVpcsRequest:
         :type id: list[str]
         """
         self._id = id
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListVpcsRequest.
+
+        功能说明：企业项目ID。可以使用该字段过滤某个企业项目下的VPC。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。若需要查询当前用户所有企业项目绑定的VPC，请传参all_granted_eps。
+
+        :return: The enterprise_project_id of this ListVpcsRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListVpcsRequest.
+
+        功能说明：企业项目ID。可以使用该字段过滤某个企业项目下的VPC。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。若需要查询当前用户所有企业项目绑定的VPC，请传参all_granted_eps。
+
+        :param enterprise_project_id: The enterprise_project_id of this ListVpcsRequest.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def name(self):

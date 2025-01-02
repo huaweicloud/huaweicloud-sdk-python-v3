@@ -31,9 +31,9 @@ class ShowResourceDetailResponse(SdkResponse):
         'created': 'str',
         'updated': 'str',
         'provisioning_state': 'str',
-        'state': 'str',
         'tags': 'dict(str, str)',
-        'properties': 'dict(str, object)'
+        'properties': 'dict(str, object)',
+        'state': 'str'
     }
 
     attribute_map = {
@@ -50,12 +50,12 @@ class ShowResourceDetailResponse(SdkResponse):
         'created': 'created',
         'updated': 'updated',
         'provisioning_state': 'provisioning_state',
-        'state': 'state',
         'tags': 'tags',
-        'properties': 'properties'
+        'properties': 'properties',
+        'state': 'state'
     }
 
-    def __init__(self, id=None, name=None, provider=None, type=None, region_id=None, project_id=None, project_name=None, ep_id=None, ep_name=None, checksum=None, created=None, updated=None, provisioning_state=None, state=None, tags=None, properties=None):
+    def __init__(self, id=None, name=None, provider=None, type=None, region_id=None, project_id=None, project_name=None, ep_id=None, ep_name=None, checksum=None, created=None, updated=None, provisioning_state=None, tags=None, properties=None, state=None):
         """ShowResourceDetailResponse
 
         The model defined in huaweicloud sdk
@@ -86,12 +86,12 @@ class ShowResourceDetailResponse(SdkResponse):
         :type updated: str
         :param provisioning_state: 资源操作状态
         :type provisioning_state: str
-        :param state: 资源状态，保有中（Normal）/已删除(Deleted)
-        :type state: str
         :param tags: 资源Tag
         :type tags: dict(str, str)
         :param properties: 资源详细属性
         :type properties: dict(str, object)
+        :param state: 资源状态，保有中（Normal）/已删除(Deleted)
+        :type state: str
         """
         
         super(ShowResourceDetailResponse, self).__init__()
@@ -109,9 +109,9 @@ class ShowResourceDetailResponse(SdkResponse):
         self._created = None
         self._updated = None
         self._provisioning_state = None
-        self._state = None
         self._tags = None
         self._properties = None
+        self._state = None
         self.discriminator = None
 
         if id is not None:
@@ -140,12 +140,12 @@ class ShowResourceDetailResponse(SdkResponse):
             self.updated = updated
         if provisioning_state is not None:
             self.provisioning_state = provisioning_state
-        if state is not None:
-            self.state = state
         if tags is not None:
             self.tags = tags
         if properties is not None:
             self.properties = properties
+        if state is not None:
+            self.state = state
 
     @property
     def id(self):
@@ -434,28 +434,6 @@ class ShowResourceDetailResponse(SdkResponse):
         self._provisioning_state = provisioning_state
 
     @property
-    def state(self):
-        """Gets the state of this ShowResourceDetailResponse.
-
-        资源状态，保有中（Normal）/已删除(Deleted)
-
-        :return: The state of this ShowResourceDetailResponse.
-        :rtype: str
-        """
-        return self._state
-
-    @state.setter
-    def state(self, state):
-        """Sets the state of this ShowResourceDetailResponse.
-
-        资源状态，保有中（Normal）/已删除(Deleted)
-
-        :param state: The state of this ShowResourceDetailResponse.
-        :type state: str
-        """
-        self._state = state
-
-    @property
     def tags(self):
         """Gets the tags of this ShowResourceDetailResponse.
 
@@ -498,6 +476,28 @@ class ShowResourceDetailResponse(SdkResponse):
         :type properties: dict(str, object)
         """
         self._properties = properties
+
+    @property
+    def state(self):
+        """Gets the state of this ShowResourceDetailResponse.
+
+        资源状态，保有中（Normal）/已删除(Deleted)
+
+        :return: The state of this ShowResourceDetailResponse.
+        :rtype: str
+        """
+        return self._state
+
+    @state.setter
+    def state(self, state):
+        """Sets the state of this ShowResourceDetailResponse.
+
+        资源状态，保有中（Normal）/已删除(Deleted)
+
+        :param state: The state of this ShowResourceDetailResponse.
+        :type state: str
+        """
+        self._state = state
 
     def to_dict(self):
         """Returns the model properties as a dict"""

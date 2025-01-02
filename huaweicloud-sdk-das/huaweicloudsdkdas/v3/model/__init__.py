@@ -146,6 +146,9 @@ from huaweicloudsdkdas.v3.model.slow_sql_statistics import SlowSqlStatistics
 from huaweicloudsdkdas.v3.model.slow_sql_template import SlowSqlTemplate
 from huaweicloudsdkdas.v3.model.slow_sql_trend_item import SlowSqlTrendItem
 from huaweicloudsdkdas.v3.model.sql_limit_rule import SqlLimitRule
+from huaweicloudsdkdas.v3.model.synchronize_instances_req import SynchronizeInstancesReq
+from huaweicloudsdkdas.v3.model.synchronize_instances_request import SynchronizeInstancesRequest
+from huaweicloudsdkdas.v3.model.synchronize_instances_response import SynchronizeInstancesResponse
 from huaweicloudsdkdas.v3.model.tb_pos_info import TbPosInfo
 from huaweicloudsdkdas.v3.model.top_risk_info import TopRiskInfo
 from huaweicloudsdkdas.v3.model.top_sql_template import TopSqlTemplate

@@ -23,7 +23,7 @@ class HistoryItem:
         'capture_time': 'str',
         'status': 'str',
         'relations': 'list[ResourceRelation]',
-        'resource': 'ResourceEntity'
+        'resource': 'BaseResourceEntity'
     }
 
     attribute_map = {
@@ -54,7 +54,7 @@ class HistoryItem:
         :param relations: 资源关系列表
         :type relations: list[:class:`huaweicloudsdkconfig.v1.ResourceRelation`]
         :param resource: 
-        :type resource: :class:`huaweicloudsdkconfig.v1.ResourceEntity`
+        :type resource: :class:`huaweicloudsdkconfig.v1.BaseResourceEntity`
         """
         
         
@@ -220,7 +220,7 @@ class HistoryItem:
         """Gets the resource of this HistoryItem.
 
         :return: The resource of this HistoryItem.
-        :rtype: :class:`huaweicloudsdkconfig.v1.ResourceEntity`
+        :rtype: :class:`huaweicloudsdkconfig.v1.BaseResourceEntity`
         """
         return self._resource
 
@@ -229,7 +229,7 @@ class HistoryItem:
         """Sets the resource of this HistoryItem.
 
         :param resource: The resource of this HistoryItem.
-        :type resource: :class:`huaweicloudsdkconfig.v1.ResourceEntity`
+        :type resource: :class:`huaweicloudsdkconfig.v1.BaseResourceEntity`
         """
         self._resource = resource
 

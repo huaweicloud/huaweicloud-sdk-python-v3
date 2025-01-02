@@ -18,23 +18,27 @@ class UpdateAlarmTemplateRequestBody:
 
     openapi_types = {
         'template_name': 'str',
+        'template_type': 'int',
         'template_description': 'str',
         'policies': 'list[Policies]'
     }
 
     attribute_map = {
         'template_name': 'template_name',
+        'template_type': 'template_type',
         'template_description': 'template_description',
         'policies': 'policies'
     }
 
-    def __init__(self, template_name=None, template_description=None, policies=None):
+    def __init__(self, template_name=None, template_type=None, template_description=None, policies=None):
         """UpdateAlarmTemplateRequestBody
 
         The model defined in huaweicloud sdk
 
         :param template_name: 告警模板的名称，以字母或汉字开头，可包含字母、数字、汉字、_、-，长度范围[1,128]
         :type template_name: str
+        :param template_type: 自定义告警模板类型 0：指标 2： 事件
+        :type template_type: int
         :param template_description: 告警模板的描述，长度范围[0,256]，该字段默认值为空字符串
         :type template_description: str
         :param policies: 告警模板策略列表
@@ -44,11 +48,14 @@ class UpdateAlarmTemplateRequestBody:
         
 
         self._template_name = None
+        self._template_type = None
         self._template_description = None
         self._policies = None
         self.discriminator = None
 
         self.template_name = template_name
+        if template_type is not None:
+            self.template_type = template_type
         if template_description is not None:
             self.template_description = template_description
         self.policies = policies
@@ -74,6 +81,28 @@ class UpdateAlarmTemplateRequestBody:
         :type template_name: str
         """
         self._template_name = template_name
+
+    @property
+    def template_type(self):
+        """Gets the template_type of this UpdateAlarmTemplateRequestBody.
+
+        自定义告警模板类型 0：指标 2： 事件
+
+        :return: The template_type of this UpdateAlarmTemplateRequestBody.
+        :rtype: int
+        """
+        return self._template_type
+
+    @template_type.setter
+    def template_type(self, template_type):
+        """Sets the template_type of this UpdateAlarmTemplateRequestBody.
+
+        自定义告警模板类型 0：指标 2： 事件
+
+        :param template_type: The template_type of this UpdateAlarmTemplateRequestBody.
+        :type template_type: int
+        """
+        self._template_type = template_type
 
     @property
     def template_description(self):

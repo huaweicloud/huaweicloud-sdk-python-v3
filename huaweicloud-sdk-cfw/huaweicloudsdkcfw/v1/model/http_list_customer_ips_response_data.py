@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class PageInfoCustomerIpsListVO:
+class HttpListCustomerIpsResponseData:
 
     """
     Attributes:
@@ -19,120 +19,136 @@ class PageInfoCustomerIpsListVO:
     openapi_types = {
         'limit': 'int',
         'offset': 'int',
-        'records': 'list[CustomerIpsListVO]',
-        'total': 'int'
+        'total': 'int',
+        'records': 'list[CustomerIpsListVO]'
     }
 
     attribute_map = {
         'limit': 'limit',
         'offset': 'offset',
-        'records': 'records',
-        'total': 'total'
+        'total': 'total',
+        'records': 'records'
     }
 
-    def __init__(self, limit=None, offset=None, records=None, total=None):
-        """PageInfoCustomerIpsListVO
+    def __init__(self, limit=None, offset=None, total=None, records=None):
+        """HttpListCustomerIpsResponseData
 
         The model defined in huaweicloud sdk
 
-        :param limit: 
+        :param limit: 每页显示个数，范围为1-1024
         :type limit: int
-        :param offset: 
+        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
         :type offset: int
-        :param records: 
-        :type records: list[:class:`huaweicloudsdkcfw.v1.CustomerIpsListVO`]
-        :param total: 
+        :param total: 查询获得自定义ips规则列表总数
         :type total: int
+        :param records: 自定义ips规则记录
+        :type records: list[:class:`huaweicloudsdkcfw.v1.CustomerIpsListVO`]
         """
         
         
 
         self._limit = None
         self._offset = None
-        self._records = None
         self._total = None
+        self._records = None
         self.discriminator = None
 
         if limit is not None:
             self.limit = limit
         if offset is not None:
             self.offset = offset
-        if records is not None:
-            self.records = records
         if total is not None:
             self.total = total
+        if records is not None:
+            self.records = records
 
     @property
     def limit(self):
-        """Gets the limit of this PageInfoCustomerIpsListVO.
+        """Gets the limit of this HttpListCustomerIpsResponseData.
 
-        :return: The limit of this PageInfoCustomerIpsListVO.
+        每页显示个数，范围为1-1024
+
+        :return: The limit of this HttpListCustomerIpsResponseData.
         :rtype: int
         """
         return self._limit
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this PageInfoCustomerIpsListVO.
+        """Sets the limit of this HttpListCustomerIpsResponseData.
 
-        :param limit: The limit of this PageInfoCustomerIpsListVO.
+        每页显示个数，范围为1-1024
+
+        :param limit: The limit of this HttpListCustomerIpsResponseData.
         :type limit: int
         """
         self._limit = limit
 
     @property
     def offset(self):
-        """Gets the offset of this PageInfoCustomerIpsListVO.
+        """Gets the offset of this HttpListCustomerIpsResponseData.
 
-        :return: The offset of this PageInfoCustomerIpsListVO.
+        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+
+        :return: The offset of this HttpListCustomerIpsResponseData.
         :rtype: int
         """
         return self._offset
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this PageInfoCustomerIpsListVO.
+        """Sets the offset of this HttpListCustomerIpsResponseData.
 
-        :param offset: The offset of this PageInfoCustomerIpsListVO.
+        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+
+        :param offset: The offset of this HttpListCustomerIpsResponseData.
         :type offset: int
         """
         self._offset = offset
 
     @property
-    def records(self):
-        """Gets the records of this PageInfoCustomerIpsListVO.
-
-        :return: The records of this PageInfoCustomerIpsListVO.
-        :rtype: list[:class:`huaweicloudsdkcfw.v1.CustomerIpsListVO`]
-        """
-        return self._records
-
-    @records.setter
-    def records(self, records):
-        """Sets the records of this PageInfoCustomerIpsListVO.
-
-        :param records: The records of this PageInfoCustomerIpsListVO.
-        :type records: list[:class:`huaweicloudsdkcfw.v1.CustomerIpsListVO`]
-        """
-        self._records = records
-
-    @property
     def total(self):
-        """Gets the total of this PageInfoCustomerIpsListVO.
+        """Gets the total of this HttpListCustomerIpsResponseData.
 
-        :return: The total of this PageInfoCustomerIpsListVO.
+        查询获得自定义ips规则列表总数
+
+        :return: The total of this HttpListCustomerIpsResponseData.
         :rtype: int
         """
         return self._total
 
     @total.setter
     def total(self, total):
-        """Sets the total of this PageInfoCustomerIpsListVO.
+        """Sets the total of this HttpListCustomerIpsResponseData.
 
-        :param total: The total of this PageInfoCustomerIpsListVO.
+        查询获得自定义ips规则列表总数
+
+        :param total: The total of this HttpListCustomerIpsResponseData.
         :type total: int
         """
         self._total = total
+
+    @property
+    def records(self):
+        """Gets the records of this HttpListCustomerIpsResponseData.
+
+        自定义ips规则记录
+
+        :return: The records of this HttpListCustomerIpsResponseData.
+        :rtype: list[:class:`huaweicloudsdkcfw.v1.CustomerIpsListVO`]
+        """
+        return self._records
+
+    @records.setter
+    def records(self, records):
+        """Sets the records of this HttpListCustomerIpsResponseData.
+
+        自定义ips规则记录
+
+        :param records: The records of this HttpListCustomerIpsResponseData.
+        :type records: list[:class:`huaweicloudsdkcfw.v1.CustomerIpsListVO`]
+        """
+        self._records = records
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -176,7 +192,7 @@ class PageInfoCustomerIpsListVO:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PageInfoCustomerIpsListVO):
+        if not isinstance(other, HttpListCustomerIpsResponseData):
             return False
 
         return self.__dict__ == other.__dict__

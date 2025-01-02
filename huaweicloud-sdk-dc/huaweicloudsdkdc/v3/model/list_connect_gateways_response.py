@@ -19,15 +19,19 @@ class ListConnectGatewaysResponse(SdkResponse):
 
     openapi_types = {
         'request_id': 'str',
-        'connect_gateways': 'list[ConnectGatewayResponse]'
+        'connect_gateways': 'list[ConnectGatewayResponse]',
+        'total_count': 'int',
+        'page_info': 'PageInfo'
     }
 
     attribute_map = {
         'request_id': 'request_id',
-        'connect_gateways': 'connect_gateways'
+        'connect_gateways': 'connect_gateways',
+        'total_count': 'total_count',
+        'page_info': 'page_info'
     }
 
-    def __init__(self, request_id=None, connect_gateways=None):
+    def __init__(self, request_id=None, connect_gateways=None, total_count=None, page_info=None):
         """ListConnectGatewaysResponse
 
         The model defined in huaweicloud sdk
@@ -36,18 +40,28 @@ class ListConnectGatewaysResponse(SdkResponse):
         :type request_id: str
         :param connect_gateways: 
         :type connect_gateways: list[:class:`huaweicloudsdkdc.v3.ConnectGatewayResponse`]
+        :param total_count: 总记录数。
+        :type total_count: int
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkdc.v3.PageInfo`
         """
         
         super(ListConnectGatewaysResponse, self).__init__()
 
         self._request_id = None
         self._connect_gateways = None
+        self._total_count = None
+        self._page_info = None
         self.discriminator = None
 
         if request_id is not None:
             self.request_id = request_id
         if connect_gateways is not None:
             self.connect_gateways = connect_gateways
+        if total_count is not None:
+            self.total_count = total_count
+        if page_info is not None:
+            self.page_info = page_info
 
     @property
     def request_id(self):
@@ -88,6 +102,46 @@ class ListConnectGatewaysResponse(SdkResponse):
         :type connect_gateways: list[:class:`huaweicloudsdkdc.v3.ConnectGatewayResponse`]
         """
         self._connect_gateways = connect_gateways
+
+    @property
+    def total_count(self):
+        """Gets the total_count of this ListConnectGatewaysResponse.
+
+        总记录数。
+
+        :return: The total_count of this ListConnectGatewaysResponse.
+        :rtype: int
+        """
+        return self._total_count
+
+    @total_count.setter
+    def total_count(self, total_count):
+        """Sets the total_count of this ListConnectGatewaysResponse.
+
+        总记录数。
+
+        :param total_count: The total_count of this ListConnectGatewaysResponse.
+        :type total_count: int
+        """
+        self._total_count = total_count
+
+    @property
+    def page_info(self):
+        """Gets the page_info of this ListConnectGatewaysResponse.
+
+        :return: The page_info of this ListConnectGatewaysResponse.
+        :rtype: :class:`huaweicloudsdkdc.v3.PageInfo`
+        """
+        return self._page_info
+
+    @page_info.setter
+    def page_info(self, page_info):
+        """Sets the page_info of this ListConnectGatewaysResponse.
+
+        :param page_info: The page_info of this ListConnectGatewaysResponse.
+        :type page_info: :class:`huaweicloudsdkdc.v3.PageInfo`
+        """
+        self._page_info = page_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

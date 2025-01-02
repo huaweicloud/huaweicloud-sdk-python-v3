@@ -28,6 +28,7 @@ class InstanceDrInfo:
         'master_region': 'str',
         'slave_instance_id': 'str',
         'slave_region': 'str',
+        'build_process': 'str',
         'time': 'int'
     }
 
@@ -43,10 +44,11 @@ class InstanceDrInfo:
         'master_region': 'master_region',
         'slave_instance_id': 'slave_instance_id',
         'slave_region': 'slave_region',
+        'build_process': 'build_process',
         'time': 'time'
     }
 
-    def __init__(self, id=None, status=None, failed_message=None, replica_state=None, wal_write_receive_delay_in_mb=None, wal_write_replay_delay_in_mb=None, wal_receive_replay_delay_in_ms=None, master_instance_id=None, master_region=None, slave_instance_id=None, slave_region=None, time=None):
+    def __init__(self, id=None, status=None, failed_message=None, replica_state=None, wal_write_receive_delay_in_mb=None, wal_write_replay_delay_in_mb=None, wal_receive_replay_delay_in_ms=None, master_instance_id=None, master_region=None, slave_instance_id=None, slave_region=None, build_process=None, time=None):
         """InstanceDrInfo
 
         The model defined in huaweicloud sdk
@@ -73,6 +75,8 @@ class InstanceDrInfo:
         :type slave_instance_id: str
         :param slave_region: 灾备实例所在region
         :type slave_region: str
+        :param build_process: 搭建流程。master表示配置主实例容灾能力流程。slave表示配置灾备实例容灾能力流程。
+        :type build_process: str
         :param time: 灾备搭建时间
         :type time: int
         """
@@ -90,6 +94,7 @@ class InstanceDrInfo:
         self._master_region = None
         self._slave_instance_id = None
         self._slave_region = None
+        self._build_process = None
         self._time = None
         self.discriminator = None
 
@@ -109,6 +114,8 @@ class InstanceDrInfo:
         self.master_region = master_region
         self.slave_instance_id = slave_instance_id
         self.slave_region = slave_region
+        if build_process is not None:
+            self.build_process = build_process
         self.time = time
 
     @property
@@ -352,6 +359,28 @@ class InstanceDrInfo:
         :type slave_region: str
         """
         self._slave_region = slave_region
+
+    @property
+    def build_process(self):
+        """Gets the build_process of this InstanceDrInfo.
+
+        搭建流程。master表示配置主实例容灾能力流程。slave表示配置灾备实例容灾能力流程。
+
+        :return: The build_process of this InstanceDrInfo.
+        :rtype: str
+        """
+        return self._build_process
+
+    @build_process.setter
+    def build_process(self, build_process):
+        """Sets the build_process of this InstanceDrInfo.
+
+        搭建流程。master表示配置主实例容灾能力流程。slave表示配置灾备实例容灾能力流程。
+
+        :param build_process: The build_process of this InstanceDrInfo.
+        :type build_process: str
+        """
+        self._build_process = build_process
 
     @property
     def time(self):

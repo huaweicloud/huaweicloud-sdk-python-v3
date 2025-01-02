@@ -24,7 +24,8 @@ class Restore:
         'availability_zone': 'str',
         'port': 'int',
         'public_ip': 'PublicIp',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'ipv6_enable': 'bool'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class Restore:
         'availability_zone': 'availability_zone',
         'port': 'port',
         'public_ip': 'public_ip',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'ipv6_enable': 'ipv6_enable'
     }
 
-    def __init__(self, name=None, subnet_id=None, security_group_id=None, vpc_id=None, availability_zone=None, port=None, public_ip=None, enterprise_project_id=None):
+    def __init__(self, name=None, subnet_id=None, security_group_id=None, vpc_id=None, availability_zone=None, port=None, public_ip=None, enterprise_project_id=None, ipv6_enable=None):
         """Restore
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class Restore:
         :type public_ip: :class:`huaweicloudsdkdws.v2.PublicIp`
         :param enterprise_project_id: 企业项目ID，对集群指定企业项目，如果未指定，则使用默认企业项目“default”的ID，即0。
         :type enterprise_project_id: str
+        :param ipv6_enable: 指定网络协议类型，表明是否支持IPv6,默认不使用IPv6。
+        :type ipv6_enable: bool
         """
         
         
@@ -71,6 +75,7 @@ class Restore:
         self._port = None
         self._public_ip = None
         self._enterprise_project_id = None
+        self._ipv6_enable = None
         self.discriminator = None
 
         self.name = name
@@ -88,6 +93,8 @@ class Restore:
             self.public_ip = public_ip
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if ipv6_enable is not None:
+            self.ipv6_enable = ipv6_enable
 
     @property
     def name(self):
@@ -260,6 +267,28 @@ class Restore:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def ipv6_enable(self):
+        """Gets the ipv6_enable of this Restore.
+
+        指定网络协议类型，表明是否支持IPv6,默认不使用IPv6。
+
+        :return: The ipv6_enable of this Restore.
+        :rtype: bool
+        """
+        return self._ipv6_enable
+
+    @ipv6_enable.setter
+    def ipv6_enable(self, ipv6_enable):
+        """Sets the ipv6_enable of this Restore.
+
+        指定网络协议类型，表明是否支持IPv6,默认不使用IPv6。
+
+        :param ipv6_enable: The ipv6_enable of this Restore.
+        :type ipv6_enable: bool
+        """
+        self._ipv6_enable = ipv6_enable
 
     def to_dict(self):
         """Returns the model properties as a dict"""

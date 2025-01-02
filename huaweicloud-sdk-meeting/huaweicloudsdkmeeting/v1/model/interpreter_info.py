@@ -21,7 +21,9 @@ class InterpreterInfo:
         'user_id': 'str',
         'call_number': 'str',
         'name': 'str',
-        'interpreter_id': 'str'
+        'interpreter_id': 'str',
+        'interpreter_type': 'str',
+        'ai_digital_info': 'InterpreterAiDigitalInfo'
     }
 
     attribute_map = {
@@ -29,10 +31,12 @@ class InterpreterInfo:
         'user_id': 'userID',
         'call_number': 'callNumber',
         'name': 'name',
-        'interpreter_id': 'interpreterId'
+        'interpreter_id': 'interpreterId',
+        'interpreter_type': 'interpreterType',
+        'ai_digital_info': 'aiDigitalInfo'
     }
 
-    def __init__(self, login_account=None, user_id=None, call_number=None, name=None, interpreter_id=None):
+    def __init__(self, login_account=None, user_id=None, call_number=None, name=None, interpreter_id=None, interpreter_type=None, ai_digital_info=None):
         """InterpreterInfo
 
         The model defined in huaweicloud sdk
@@ -47,6 +51,10 @@ class InterpreterInfo:
         :type name: str
         :param interpreter_id: 传译员序号，AI传译组下传译员唯一标识。
         :type interpreter_id: str
+        :param interpreter_type: 传译员类型，MANUAL：人工传译，AI：AI传译。默认MANUAL。
+        :type interpreter_type: str
+        :param ai_digital_info: 
+        :type ai_digital_info: :class:`huaweicloudsdkmeeting.v1.InterpreterAiDigitalInfo`
         """
         
         
@@ -56,6 +64,8 @@ class InterpreterInfo:
         self._call_number = None
         self._name = None
         self._interpreter_id = None
+        self._interpreter_type = None
+        self._ai_digital_info = None
         self.discriminator = None
 
         self.login_account = login_account
@@ -67,6 +77,10 @@ class InterpreterInfo:
             self.name = name
         if interpreter_id is not None:
             self.interpreter_id = interpreter_id
+        if interpreter_type is not None:
+            self.interpreter_type = interpreter_type
+        if ai_digital_info is not None:
+            self.ai_digital_info = ai_digital_info
 
     @property
     def login_account(self):
@@ -177,6 +191,46 @@ class InterpreterInfo:
         :type interpreter_id: str
         """
         self._interpreter_id = interpreter_id
+
+    @property
+    def interpreter_type(self):
+        """Gets the interpreter_type of this InterpreterInfo.
+
+        传译员类型，MANUAL：人工传译，AI：AI传译。默认MANUAL。
+
+        :return: The interpreter_type of this InterpreterInfo.
+        :rtype: str
+        """
+        return self._interpreter_type
+
+    @interpreter_type.setter
+    def interpreter_type(self, interpreter_type):
+        """Sets the interpreter_type of this InterpreterInfo.
+
+        传译员类型，MANUAL：人工传译，AI：AI传译。默认MANUAL。
+
+        :param interpreter_type: The interpreter_type of this InterpreterInfo.
+        :type interpreter_type: str
+        """
+        self._interpreter_type = interpreter_type
+
+    @property
+    def ai_digital_info(self):
+        """Gets the ai_digital_info of this InterpreterInfo.
+
+        :return: The ai_digital_info of this InterpreterInfo.
+        :rtype: :class:`huaweicloudsdkmeeting.v1.InterpreterAiDigitalInfo`
+        """
+        return self._ai_digital_info
+
+    @ai_digital_info.setter
+    def ai_digital_info(self, ai_digital_info):
+        """Sets the ai_digital_info of this InterpreterInfo.
+
+        :param ai_digital_info: The ai_digital_info of this InterpreterInfo.
+        :type ai_digital_info: :class:`huaweicloudsdkmeeting.v1.InterpreterAiDigitalInfo`
+        """
+        self._ai_digital_info = ai_digital_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""
