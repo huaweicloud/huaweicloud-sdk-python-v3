@@ -1711,6 +1711,8 @@ class KooMessageAsyncClient(Client):
             query_params.append(('end_time', local_var_params['end_time']))
         if 'pub_name' in local_var_params:
             query_params.append(('pub_name', local_var_params['pub_name']))
+        if 'is_bind' in local_var_params:
+            query_params.append(('is_bind', local_var_params['is_bind']))
 
         header_params = {}
 

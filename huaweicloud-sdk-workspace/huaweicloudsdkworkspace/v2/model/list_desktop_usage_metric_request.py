@@ -65,11 +65,11 @@ class ListDesktopUsageMetricRequest:
         :type usage_max_hours: int
         :param sort_field: 按照指标进行排序 * &#x60;desktop_usage&#x60; -  按照桌面使用时长排序 * &#x60;desktop_idle_duration&#x60; -  按照桌面空闲周期排序
         :type sort_field: str
-        :param sort_type: 按照指标进行排序的方向;需配合sort_field起义使用 * &#x60;DESC&#x60; - 降序返回数据 * &#x60;ASC&#x60; -  升序返回数据
+        :param sort_type: 按照指标进行排序的方向;需配合sort_field一起使用 * &#x60;DESC&#x60; - 降序返回数据 * &#x60;ASC&#x60; -  升序返回数据
         :type sort_type: str
         :param offset: 查询的偏移量,默认值0
         :type offset: int
-        :param limit: 单次查询的大小[1-100],默认值10
+        :param limit: limit范围[1-100],默认值0
         :type limit: int
         """
         
@@ -289,7 +289,7 @@ class ListDesktopUsageMetricRequest:
     def sort_type(self):
         """Gets the sort_type of this ListDesktopUsageMetricRequest.
 
-        按照指标进行排序的方向;需配合sort_field起义使用 * `DESC` - 降序返回数据 * `ASC` -  升序返回数据
+        按照指标进行排序的方向;需配合sort_field一起使用 * `DESC` - 降序返回数据 * `ASC` -  升序返回数据
 
         :return: The sort_type of this ListDesktopUsageMetricRequest.
         :rtype: str
@@ -300,7 +300,7 @@ class ListDesktopUsageMetricRequest:
     def sort_type(self, sort_type):
         """Sets the sort_type of this ListDesktopUsageMetricRequest.
 
-        按照指标进行排序的方向;需配合sort_field起义使用 * `DESC` - 降序返回数据 * `ASC` -  升序返回数据
+        按照指标进行排序的方向;需配合sort_field一起使用 * `DESC` - 降序返回数据 * `ASC` -  升序返回数据
 
         :param sort_type: The sort_type of this ListDesktopUsageMetricRequest.
         :type sort_type: str
@@ -333,7 +333,7 @@ class ListDesktopUsageMetricRequest:
     def limit(self):
         """Gets the limit of this ListDesktopUsageMetricRequest.
 
-        单次查询的大小[1-100],默认值10
+        limit范围[1-100],默认值0
 
         :return: The limit of this ListDesktopUsageMetricRequest.
         :rtype: int
@@ -344,7 +344,7 @@ class ListDesktopUsageMetricRequest:
     def limit(self, limit):
         """Sets the limit of this ListDesktopUsageMetricRequest.
 
-        单次查询的大小[1-100],默认值10
+        limit范围[1-100],默认值0
 
         :param limit: The limit of this ListDesktopUsageMetricRequest.
         :type limit: int

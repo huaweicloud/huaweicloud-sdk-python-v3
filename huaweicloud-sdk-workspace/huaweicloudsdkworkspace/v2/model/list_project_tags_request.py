@@ -17,20 +17,109 @@ class ListProjectTagsRequest:
     sensitive_list = []
 
     openapi_types = {
+        'offset': 'int',
+        'limit': 'int',
+        'key': 'str'
     }
 
     attribute_map = {
+        'offset': 'offset',
+        'limit': 'limit',
+        'key': 'key'
     }
 
-    def __init__(self):
+    def __init__(self, offset=None, limit=None, key=None):
         """ListProjectTagsRequest
 
         The model defined in huaweicloud sdk
 
+        :param offset: 用于分页查询，查询的起始记录序号，从0开始。
+        :type offset: int
+        :param limit: 用于分页查询，取值范围0-1000，默认值1000。
+        :type limit: int
+        :param key: 查询指定标签。
+        :type key: str
         """
         
         
+
+        self._offset = None
+        self._limit = None
+        self._key = None
         self.discriminator = None
+
+        if offset is not None:
+            self.offset = offset
+        if limit is not None:
+            self.limit = limit
+        if key is not None:
+            self.key = key
+
+    @property
+    def offset(self):
+        """Gets the offset of this ListProjectTagsRequest.
+
+        用于分页查询，查询的起始记录序号，从0开始。
+
+        :return: The offset of this ListProjectTagsRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ListProjectTagsRequest.
+
+        用于分页查询，查询的起始记录序号，从0开始。
+
+        :param offset: The offset of this ListProjectTagsRequest.
+        :type offset: int
+        """
+        self._offset = offset
+
+    @property
+    def limit(self):
+        """Gets the limit of this ListProjectTagsRequest.
+
+        用于分页查询，取值范围0-1000，默认值1000。
+
+        :return: The limit of this ListProjectTagsRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListProjectTagsRequest.
+
+        用于分页查询，取值范围0-1000，默认值1000。
+
+        :param limit: The limit of this ListProjectTagsRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def key(self):
+        """Gets the key of this ListProjectTagsRequest.
+
+        查询指定标签。
+
+        :return: The key of this ListProjectTagsRequest.
+        :rtype: str
+        """
+        return self._key
+
+    @key.setter
+    def key(self, key):
+        """Sets the key of this ListProjectTagsRequest.
+
+        查询指定标签。
+
+        :param key: The key of this ListProjectTagsRequest.
+        :type key: str
+        """
+        self._key = key
 
     def to_dict(self):
         """Returns the model properties as a dict"""

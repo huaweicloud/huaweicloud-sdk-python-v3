@@ -31,6 +31,7 @@ class ListUserConnectionReq:
         'vm_ip': 'str',
         'connect_flag': 'str',
         'wi_ip': 'str',
+        'public_ip': 'str',
         'update_time': 'datetime',
         'tenant_id': 'str',
         'login_start_time': 'datetime',
@@ -53,6 +54,7 @@ class ListUserConnectionReq:
         'vm_ip': 'vm_ip',
         'connect_flag': 'connect_flag',
         'wi_ip': 'wi_ip',
+        'public_ip': 'public_ip',
         'update_time': 'update_time',
         'tenant_id': 'tenant_id',
         'login_start_time': 'login_start_time',
@@ -60,7 +62,7 @@ class ListUserConnectionReq:
         'virtual_ip': 'virtual_ip'
     }
 
-    def __init__(self, id=None, connect_type=None, user_name=None, machine_sid=None, machine_name=None, failed_reason=None, failed_code=None, client_name=None, client_version=None, client_type=None, agent_version=None, vm_ip=None, connect_flag=None, wi_ip=None, update_time=None, tenant_id=None, login_start_time=None, login_end_time=None, virtual_ip=None):
+    def __init__(self, id=None, connect_type=None, user_name=None, machine_sid=None, machine_name=None, failed_reason=None, failed_code=None, client_name=None, client_version=None, client_type=None, agent_version=None, vm_ip=None, connect_flag=None, wi_ip=None, public_ip=None, update_time=None, tenant_id=None, login_start_time=None, login_end_time=None, virtual_ip=None):
         """ListUserConnectionReq
 
         The model defined in huaweicloud sdk
@@ -93,6 +95,8 @@ class ListUserConnectionReq:
         :type connect_flag: str
         :param wi_ip: 连接IP。
         :type wi_ip: str
+        :param public_ip: 客户端出口ip。
+        :type public_ip: str
         :param update_time: 登录应用开始时间，格式 2022-10-31 08:07:39。
         :type update_time: datetime
         :param tenant_id: 租户id。
@@ -121,6 +125,7 @@ class ListUserConnectionReq:
         self._vm_ip = None
         self._connect_flag = None
         self._wi_ip = None
+        self._public_ip = None
         self._update_time = None
         self._tenant_id = None
         self._login_start_time = None
@@ -156,6 +161,8 @@ class ListUserConnectionReq:
             self.connect_flag = connect_flag
         if wi_ip is not None:
             self.wi_ip = wi_ip
+        if public_ip is not None:
+            self.public_ip = public_ip
         if update_time is not None:
             self.update_time = update_time
         if tenant_id is not None:
@@ -474,6 +481,28 @@ class ListUserConnectionReq:
         :type wi_ip: str
         """
         self._wi_ip = wi_ip
+
+    @property
+    def public_ip(self):
+        """Gets the public_ip of this ListUserConnectionReq.
+
+        客户端出口ip。
+
+        :return: The public_ip of this ListUserConnectionReq.
+        :rtype: str
+        """
+        return self._public_ip
+
+    @public_ip.setter
+    def public_ip(self, public_ip):
+        """Sets the public_ip of this ListUserConnectionReq.
+
+        客户端出口ip。
+
+        :param public_ip: The public_ip of this ListUserConnectionReq.
+        :type public_ip: str
+        """
+        self._public_ip = public_ip
 
     @property
     def update_time(self):

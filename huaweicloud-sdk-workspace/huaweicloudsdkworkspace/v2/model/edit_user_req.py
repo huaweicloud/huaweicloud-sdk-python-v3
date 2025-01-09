@@ -24,6 +24,8 @@ class EditUserReq:
         'account_expires': 'str',
         'enable_change_password': 'bool',
         'next_login_change_password': 'bool',
+        'group_ids': 'list[str]',
+        'alias_name': 'str',
         'password_never_expired': 'bool',
         'disabled': 'bool'
     }
@@ -36,11 +38,13 @@ class EditUserReq:
         'account_expires': 'account_expires',
         'enable_change_password': 'enable_change_password',
         'next_login_change_password': 'next_login_change_password',
+        'group_ids': 'group_ids',
+        'alias_name': 'alias_name',
         'password_never_expired': 'password_never_expired',
         'disabled': 'disabled'
     }
 
-    def __init__(self, description=None, user_email=None, user_phone=None, active_type=None, account_expires=None, enable_change_password=None, next_login_change_password=None, password_never_expired=None, disabled=None):
+    def __init__(self, description=None, user_email=None, user_phone=None, active_type=None, account_expires=None, enable_change_password=None, next_login_change_password=None, group_ids=None, alias_name=None, password_never_expired=None, disabled=None):
         """EditUserReq
 
         The model defined in huaweicloud sdk
@@ -59,6 +63,10 @@ class EditUserReq:
         :type enable_change_password: bool
         :param next_login_change_password: 下次登录是否需要重置密码，true表示需要重置密码，false表示不需要。
         :type next_login_change_password: bool
+        :param group_ids: 用户组的专有ID列表。
+        :type group_ids: list[str]
+        :param alias_name: 别名。
+        :type alias_name: str
         :param password_never_expired: 密码是否永不过期，true表示密码永不过期，false表示密码会过期。
         :type password_never_expired: bool
         :param disabled: 账户是否禁用，true表示被禁用，false表示未禁用。
@@ -74,6 +82,8 @@ class EditUserReq:
         self._account_expires = None
         self._enable_change_password = None
         self._next_login_change_password = None
+        self._group_ids = None
+        self._alias_name = None
         self._password_never_expired = None
         self._disabled = None
         self.discriminator = None
@@ -92,6 +102,10 @@ class EditUserReq:
             self.enable_change_password = enable_change_password
         if next_login_change_password is not None:
             self.next_login_change_password = next_login_change_password
+        if group_ids is not None:
+            self.group_ids = group_ids
+        if alias_name is not None:
+            self.alias_name = alias_name
         if password_never_expired is not None:
             self.password_never_expired = password_never_expired
         if disabled is not None:
@@ -250,6 +264,50 @@ class EditUserReq:
         :type next_login_change_password: bool
         """
         self._next_login_change_password = next_login_change_password
+
+    @property
+    def group_ids(self):
+        """Gets the group_ids of this EditUserReq.
+
+        用户组的专有ID列表。
+
+        :return: The group_ids of this EditUserReq.
+        :rtype: list[str]
+        """
+        return self._group_ids
+
+    @group_ids.setter
+    def group_ids(self, group_ids):
+        """Sets the group_ids of this EditUserReq.
+
+        用户组的专有ID列表。
+
+        :param group_ids: The group_ids of this EditUserReq.
+        :type group_ids: list[str]
+        """
+        self._group_ids = group_ids
+
+    @property
+    def alias_name(self):
+        """Gets the alias_name of this EditUserReq.
+
+        别名。
+
+        :return: The alias_name of this EditUserReq.
+        :rtype: str
+        """
+        return self._alias_name
+
+    @alias_name.setter
+    def alias_name(self, alias_name):
+        """Sets the alias_name of this EditUserReq.
+
+        别名。
+
+        :param alias_name: The alias_name of this EditUserReq.
+        :type alias_name: str
+        """
+        self._alias_name = alias_name
 
     @property
     def password_never_expired(self):

@@ -73,10 +73,8 @@ class RebuildDesktopsReq:
         self._enterprise_project_id = None
         self.discriminator = None
 
-        if desktop_ids is not None:
-            self.desktop_ids = desktop_ids
-        if image_type is not None:
-            self.image_type = image_type
+        self.desktop_ids = desktop_ids
+        self.image_type = image_type
         self.image_id = image_id
         if os_type is not None:
             self.os_type = os_type

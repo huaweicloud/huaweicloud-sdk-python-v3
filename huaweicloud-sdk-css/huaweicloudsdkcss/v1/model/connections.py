@@ -23,7 +23,10 @@ class Connections:
         'specification_name': 'str',
         'created_at': 'str',
         'update_at': 'str',
-        'domain_id': 'str'
+        'domain_id': 'str',
+        'vpcep_ip': 'str',
+        'vpcep_ipv6_address': 'str',
+        'vpcep_dns_name': 'str'
     }
 
     attribute_map = {
@@ -33,10 +36,13 @@ class Connections:
         'specification_name': 'specificationName',
         'created_at': 'created_at',
         'update_at': 'update_at',
-        'domain_id': 'domain_id'
+        'domain_id': 'domain_id',
+        'vpcep_ip': 'vpcepIp',
+        'vpcep_ipv6_address': 'vpcepIpv6Address',
+        'vpcep_dns_name': 'vpcepDnsName'
     }
 
-    def __init__(self, id=None, status=None, max_session=None, specification_name=None, created_at=None, update_at=None, domain_id=None):
+    def __init__(self, id=None, status=None, max_session=None, specification_name=None, created_at=None, update_at=None, domain_id=None, vpcep_ip=None, vpcep_ipv6_address=None, vpcep_dns_name=None):
         """Connections
 
         The model defined in huaweicloud sdk
@@ -55,6 +61,12 @@ class Connections:
         :type update_at: str
         :param domain_id: 拥有者。
         :type domain_id: str
+        :param vpcep_ip: 终端节点IPv4。
+        :type vpcep_ip: str
+        :param vpcep_ipv6_address: 终端节点IPv6。
+        :type vpcep_ipv6_address: str
+        :param vpcep_dns_name: 终端节点内网域名。
+        :type vpcep_dns_name: str
         """
         
         
@@ -66,6 +78,9 @@ class Connections:
         self._created_at = None
         self._update_at = None
         self._domain_id = None
+        self._vpcep_ip = None
+        self._vpcep_ipv6_address = None
+        self._vpcep_dns_name = None
         self.discriminator = None
 
         if id is not None:
@@ -82,6 +97,12 @@ class Connections:
             self.update_at = update_at
         if domain_id is not None:
             self.domain_id = domain_id
+        if vpcep_ip is not None:
+            self.vpcep_ip = vpcep_ip
+        if vpcep_ipv6_address is not None:
+            self.vpcep_ipv6_address = vpcep_ipv6_address
+        if vpcep_dns_name is not None:
+            self.vpcep_dns_name = vpcep_dns_name
 
     @property
     def id(self):
@@ -236,6 +257,72 @@ class Connections:
         :type domain_id: str
         """
         self._domain_id = domain_id
+
+    @property
+    def vpcep_ip(self):
+        """Gets the vpcep_ip of this Connections.
+
+        终端节点IPv4。
+
+        :return: The vpcep_ip of this Connections.
+        :rtype: str
+        """
+        return self._vpcep_ip
+
+    @vpcep_ip.setter
+    def vpcep_ip(self, vpcep_ip):
+        """Sets the vpcep_ip of this Connections.
+
+        终端节点IPv4。
+
+        :param vpcep_ip: The vpcep_ip of this Connections.
+        :type vpcep_ip: str
+        """
+        self._vpcep_ip = vpcep_ip
+
+    @property
+    def vpcep_ipv6_address(self):
+        """Gets the vpcep_ipv6_address of this Connections.
+
+        终端节点IPv6。
+
+        :return: The vpcep_ipv6_address of this Connections.
+        :rtype: str
+        """
+        return self._vpcep_ipv6_address
+
+    @vpcep_ipv6_address.setter
+    def vpcep_ipv6_address(self, vpcep_ipv6_address):
+        """Sets the vpcep_ipv6_address of this Connections.
+
+        终端节点IPv6。
+
+        :param vpcep_ipv6_address: The vpcep_ipv6_address of this Connections.
+        :type vpcep_ipv6_address: str
+        """
+        self._vpcep_ipv6_address = vpcep_ipv6_address
+
+    @property
+    def vpcep_dns_name(self):
+        """Gets the vpcep_dns_name of this Connections.
+
+        终端节点内网域名。
+
+        :return: The vpcep_dns_name of this Connections.
+        :rtype: str
+        """
+        return self._vpcep_dns_name
+
+    @vpcep_dns_name.setter
+    def vpcep_dns_name(self, vpcep_dns_name):
+        """Sets the vpcep_dns_name of this Connections.
+
+        终端节点内网域名。
+
+        :param vpcep_dns_name: The vpcep_dns_name of this Connections.
+        :type vpcep_dns_name: str
+        """
+        self._vpcep_dns_name = vpcep_dns_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

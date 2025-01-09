@@ -19,6 +19,7 @@ class SimpleDesktopInfo:
     openapi_types = {
         'desktop_id': 'str',
         'computer_name': 'str',
+        'os_host_name': 'str',
         'created': 'str',
         'ip_address': 'str',
         'user_name': 'str',
@@ -29,13 +30,18 @@ class SimpleDesktopInfo:
         'enterprise_project_id': 'str',
         'tags': 'list[Tag]',
         'in_maintenance_mode': 'bool',
+        'share_resource_sku': 'str',
+        'desktop_type': 'str',
         'subnet_id': 'str',
-        'bill_resource_id': 'str'
+        'bill_resource_id': 'str',
+        'status': 'str',
+        'task_status': 'str'
     }
 
     attribute_map = {
         'desktop_id': 'desktop_id',
         'computer_name': 'computer_name',
+        'os_host_name': 'os_host_name',
         'created': 'created',
         'ip_address': 'ip_address',
         'user_name': 'user_name',
@@ -46,11 +52,15 @@ class SimpleDesktopInfo:
         'enterprise_project_id': 'enterprise_project_id',
         'tags': 'tags',
         'in_maintenance_mode': 'in_maintenance_mode',
+        'share_resource_sku': 'share_resource_sku',
+        'desktop_type': 'desktop_type',
         'subnet_id': 'subnet_id',
-        'bill_resource_id': 'bill_resource_id'
+        'bill_resource_id': 'bill_resource_id',
+        'status': 'status',
+        'task_status': 'task_status'
     }
 
-    def __init__(self, desktop_id=None, computer_name=None, created=None, ip_address=None, user_name=None, attach_user_infos=None, user_group=None, sid=None, ou_name=None, enterprise_project_id=None, tags=None, in_maintenance_mode=None, subnet_id=None, bill_resource_id=None):
+    def __init__(self, desktop_id=None, computer_name=None, os_host_name=None, created=None, ip_address=None, user_name=None, attach_user_infos=None, user_group=None, sid=None, ou_name=None, enterprise_project_id=None, tags=None, in_maintenance_mode=None, share_resource_sku=None, desktop_type=None, subnet_id=None, bill_resource_id=None, status=None, task_status=None):
         """SimpleDesktopInfo
 
         The model defined in huaweicloud sdk
@@ -59,6 +69,8 @@ class SimpleDesktopInfo:
         :type desktop_id: str
         :param computer_name: 桌面名。
         :type computer_name: str
+        :param os_host_name: 系统计算机名。
+        :type os_host_name: str
         :param created: 创建时间。
         :type created: str
         :param ip_address: 桌面ip地址。
@@ -79,16 +91,25 @@ class SimpleDesktopInfo:
         :type tags: list[:class:`huaweicloudsdkworkspace.v2.Tag`]
         :param in_maintenance_mode: 是否处于管理员维护模式
         :type in_maintenance_mode: bool
+        :param share_resource_sku: 桌面协同资源SKU码
+        :type share_resource_sku: str
+        :param desktop_type: 桌面类型
+        :type desktop_type: str
         :param subnet_id: 桌面的子网ID。
         :type subnet_id: str
         :param bill_resource_id: 桌面计费资源ID。
         :type bill_resource_id: str
+        :param status: 桌面的运行状态。
+        :type status: str
+        :param task_status: 桌面的任务状态。
+        :type task_status: str
         """
         
         
 
         self._desktop_id = None
         self._computer_name = None
+        self._os_host_name = None
         self._created = None
         self._ip_address = None
         self._user_name = None
@@ -99,14 +120,20 @@ class SimpleDesktopInfo:
         self._enterprise_project_id = None
         self._tags = None
         self._in_maintenance_mode = None
+        self._share_resource_sku = None
+        self._desktop_type = None
         self._subnet_id = None
         self._bill_resource_id = None
+        self._status = None
+        self._task_status = None
         self.discriminator = None
 
         if desktop_id is not None:
             self.desktop_id = desktop_id
         if computer_name is not None:
             self.computer_name = computer_name
+        if os_host_name is not None:
+            self.os_host_name = os_host_name
         if created is not None:
             self.created = created
         if ip_address is not None:
@@ -127,10 +154,18 @@ class SimpleDesktopInfo:
             self.tags = tags
         if in_maintenance_mode is not None:
             self.in_maintenance_mode = in_maintenance_mode
+        if share_resource_sku is not None:
+            self.share_resource_sku = share_resource_sku
+        if desktop_type is not None:
+            self.desktop_type = desktop_type
         if subnet_id is not None:
             self.subnet_id = subnet_id
         if bill_resource_id is not None:
             self.bill_resource_id = bill_resource_id
+        if status is not None:
+            self.status = status
+        if task_status is not None:
+            self.task_status = task_status
 
     @property
     def desktop_id(self):
@@ -175,6 +210,28 @@ class SimpleDesktopInfo:
         :type computer_name: str
         """
         self._computer_name = computer_name
+
+    @property
+    def os_host_name(self):
+        """Gets the os_host_name of this SimpleDesktopInfo.
+
+        系统计算机名。
+
+        :return: The os_host_name of this SimpleDesktopInfo.
+        :rtype: str
+        """
+        return self._os_host_name
+
+    @os_host_name.setter
+    def os_host_name(self, os_host_name):
+        """Sets the os_host_name of this SimpleDesktopInfo.
+
+        系统计算机名。
+
+        :param os_host_name: The os_host_name of this SimpleDesktopInfo.
+        :type os_host_name: str
+        """
+        self._os_host_name = os_host_name
 
     @property
     def created(self):
@@ -397,6 +454,50 @@ class SimpleDesktopInfo:
         self._in_maintenance_mode = in_maintenance_mode
 
     @property
+    def share_resource_sku(self):
+        """Gets the share_resource_sku of this SimpleDesktopInfo.
+
+        桌面协同资源SKU码
+
+        :return: The share_resource_sku of this SimpleDesktopInfo.
+        :rtype: str
+        """
+        return self._share_resource_sku
+
+    @share_resource_sku.setter
+    def share_resource_sku(self, share_resource_sku):
+        """Sets the share_resource_sku of this SimpleDesktopInfo.
+
+        桌面协同资源SKU码
+
+        :param share_resource_sku: The share_resource_sku of this SimpleDesktopInfo.
+        :type share_resource_sku: str
+        """
+        self._share_resource_sku = share_resource_sku
+
+    @property
+    def desktop_type(self):
+        """Gets the desktop_type of this SimpleDesktopInfo.
+
+        桌面类型
+
+        :return: The desktop_type of this SimpleDesktopInfo.
+        :rtype: str
+        """
+        return self._desktop_type
+
+    @desktop_type.setter
+    def desktop_type(self, desktop_type):
+        """Sets the desktop_type of this SimpleDesktopInfo.
+
+        桌面类型
+
+        :param desktop_type: The desktop_type of this SimpleDesktopInfo.
+        :type desktop_type: str
+        """
+        self._desktop_type = desktop_type
+
+    @property
     def subnet_id(self):
         """Gets the subnet_id of this SimpleDesktopInfo.
 
@@ -439,6 +540,50 @@ class SimpleDesktopInfo:
         :type bill_resource_id: str
         """
         self._bill_resource_id = bill_resource_id
+
+    @property
+    def status(self):
+        """Gets the status of this SimpleDesktopInfo.
+
+        桌面的运行状态。
+
+        :return: The status of this SimpleDesktopInfo.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this SimpleDesktopInfo.
+
+        桌面的运行状态。
+
+        :param status: The status of this SimpleDesktopInfo.
+        :type status: str
+        """
+        self._status = status
+
+    @property
+    def task_status(self):
+        """Gets the task_status of this SimpleDesktopInfo.
+
+        桌面的任务状态。
+
+        :return: The task_status of this SimpleDesktopInfo.
+        :rtype: str
+        """
+        return self._task_status
+
+    @task_status.setter
+    def task_status(self, task_status):
+        """Sets the task_status of this SimpleDesktopInfo.
+
+        桌面的任务状态。
+
+        :param task_status: The task_status of this SimpleDesktopInfo.
+        :type task_status: str
+        """
+        self._task_status = task_status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

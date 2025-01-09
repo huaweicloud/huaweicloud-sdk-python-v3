@@ -18,21 +18,25 @@ class AddDesktopVolumesReq:
 
     openapi_types = {
         'desktop_id': 'str',
+        'order_id': 'str',
         'volumes': 'list[Volume]'
     }
 
     attribute_map = {
         'desktop_id': 'desktop_id',
+        'order_id': 'order_id',
         'volumes': 'volumes'
     }
 
-    def __init__(self, desktop_id=None, volumes=None):
+    def __init__(self, desktop_id=None, order_id=None, volumes=None):
         """AddDesktopVolumesReq
 
         The model defined in huaweicloud sdk
 
         :param desktop_id: 桌面Id。
         :type desktop_id: str
+        :param order_id: 订单ID，包周期桌面添加磁盘时使用。
+        :type order_id: str
         :param volumes: 待新增的磁盘信息，每个桌面的数据盘数量不超过10个。
         :type volumes: list[:class:`huaweicloudsdkworkspace.v2.Volume`]
         """
@@ -40,11 +44,14 @@ class AddDesktopVolumesReq:
         
 
         self._desktop_id = None
+        self._order_id = None
         self._volumes = None
         self.discriminator = None
 
         if desktop_id is not None:
             self.desktop_id = desktop_id
+        if order_id is not None:
+            self.order_id = order_id
         if volumes is not None:
             self.volumes = volumes
 
@@ -69,6 +76,28 @@ class AddDesktopVolumesReq:
         :type desktop_id: str
         """
         self._desktop_id = desktop_id
+
+    @property
+    def order_id(self):
+        """Gets the order_id of this AddDesktopVolumesReq.
+
+        订单ID，包周期桌面添加磁盘时使用。
+
+        :return: The order_id of this AddDesktopVolumesReq.
+        :rtype: str
+        """
+        return self._order_id
+
+    @order_id.setter
+    def order_id(self, order_id):
+        """Sets the order_id of this AddDesktopVolumesReq.
+
+        订单ID，包周期桌面添加磁盘时使用。
+
+        :param order_id: The order_id of this AddDesktopVolumesReq.
+        :type order_id: str
+        """
+        self._order_id = order_id
 
     @property
     def volumes(self):

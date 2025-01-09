@@ -7,6 +7,7 @@ from huaweicloudsdkdrs.v5.model.action_base_resp import ActionBaseResp
 from huaweicloudsdkdrs.v5.model.action_params import ActionParams
 from huaweicloudsdkdrs.v5.model.action_req import ActionReq
 from huaweicloudsdkdrs.v5.model.add_column_info import AddColumnInfo
+from huaweicloudsdkdrs.v5.model.agency_role import AgencyRole
 from huaweicloudsdkdrs.v5.model.alarm_notify_config import AlarmNotifyConfig
 from huaweicloudsdkdrs.v5.model.api_http_null_resp import ApiHttpNullResp
 from huaweicloudsdkdrs.v5.model.async_action_base_resp import AsyncActionBaseResp
@@ -238,6 +239,8 @@ from huaweicloudsdkdrs.v5.model.schema_object import SchemaObject
 from huaweicloudsdkdrs.v5.model.select_db_table_object_info import SelectDbTableObjectInfo
 from huaweicloudsdkdrs.v5.model.show_actions_request import ShowActionsRequest
 from huaweicloudsdkdrs.v5.model.show_actions_response import ShowActionsResponse
+from huaweicloudsdkdrs.v5.model.show_agency_info_request import ShowAgencyInfoRequest
+from huaweicloudsdkdrs.v5.model.show_agency_info_response import ShowAgencyInfoResponse
 from huaweicloudsdkdrs.v5.model.show_column_info_result_request import ShowColumnInfoResultRequest
 from huaweicloudsdkdrs.v5.model.show_column_info_result_response import ShowColumnInfoResultResponse
 from huaweicloudsdkdrs.v5.model.show_compare_policy_request import ShowComparePolicyRequest
@@ -312,6 +315,9 @@ from huaweicloudsdkdrs.v5.model.task_log_info import TaskLogInfo
 from huaweicloudsdkdrs.v5.model.to_period_req import ToPeriodReq
 from huaweicloudsdkdrs.v5.model.tuning_param_info import TuningParamInfo
 from huaweicloudsdkdrs.v5.model.tuning_parameter import TuningParameter
+from huaweicloudsdkdrs.v5.model.update_agency_policy_request import UpdateAgencyPolicyRequest
+from huaweicloudsdkdrs.v5.model.update_agency_policy_request_body import UpdateAgencyPolicyRequestBody
+from huaweicloudsdkdrs.v5.model.update_agency_policy_response import UpdateAgencyPolicyResponse
 from huaweicloudsdkdrs.v5.model.update_batch_async_jobs_request import UpdateBatchAsyncJobsRequest
 from huaweicloudsdkdrs.v5.model.update_batch_async_jobs_response import UpdateBatchAsyncJobsResponse
 from huaweicloudsdkdrs.v5.model.update_compare_policy_request import UpdateComparePolicyRequest

@@ -32,7 +32,7 @@ class ListDesktopsConnectStatusResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param desktops: 桌面登录信息列表。
+        :param desktops: 桌面连接信息列表。
         :type desktops: list[:class:`huaweicloudsdkworkspace.v2.ConnectDesktopsInfo`]
         :param total_count: 桌面总数。
         :type total_count: int
@@ -53,7 +53,7 @@ class ListDesktopsConnectStatusResponse(SdkResponse):
     def desktops(self):
         """Gets the desktops of this ListDesktopsConnectStatusResponse.
 
-        桌面登录信息列表。
+        桌面连接信息列表。
 
         :return: The desktops of this ListDesktopsConnectStatusResponse.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.ConnectDesktopsInfo`]
@@ -64,7 +64,7 @@ class ListDesktopsConnectStatusResponse(SdkResponse):
     def desktops(self, desktops):
         """Sets the desktops of this ListDesktopsConnectStatusResponse.
 
-        桌面登录信息列表。
+        桌面连接信息列表。
 
         :param desktops: The desktops of this ListDesktopsConnectStatusResponse.
         :type desktops: list[:class:`huaweicloudsdkworkspace.v2.ConnectDesktopsInfo`]

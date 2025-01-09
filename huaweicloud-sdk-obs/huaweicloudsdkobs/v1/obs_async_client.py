@@ -181,6 +181,8 @@ class ObsAsyncClient(Client):
         
         For details about permission control, see the [permission control](https://support.huaweicloud.com/intl/en-us/perms-cfg-obs/obs_40_0001.html) in the *Object Storage Service Permissions Configuration Guide*.
         
+        User-defined domain names currently only allow requests over HTTP. To import a certificate to use HTTPS, you can [submit a service ticket](https://support.huaweicloud.com/intl/en-us/usermanual-ticket/topic_0065264094.html).
+        
         Please refer to HUAWEI cloud API Explorer for details.
 
 
@@ -399,6 +401,8 @@ class ObsAsyncClient(Client):
         This operation configures a custom domain name for a bucket. After the configuration is successful, you can access the bucket using its custom domain name.
         
         Ensure that DNS can resolve the custom domain name to OBS.
+        
+        User-defined domain names currently only allow requests over HTTP. To import a certificate to use HTTPS, you can [submit a service ticket](https://support.huaweicloud.com/intl/en-us/usermanual-ticket/topic_0065264094.html).
         
         Please refer to HUAWEI cloud API Explorer for details.
 

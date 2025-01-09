@@ -32,7 +32,7 @@ class ListAppGroupResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: 总数
+        :param count: 总数。
         :type count: int
         :param items: 应用组列表。
         :type items: list[:class:`huaweicloudsdkworkspaceapp.v1.AppGroup`]
@@ -53,7 +53,7 @@ class ListAppGroupResponse(SdkResponse):
     def count(self):
         """Gets the count of this ListAppGroupResponse.
 
-        总数
+        总数。
 
         :return: The count of this ListAppGroupResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListAppGroupResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this ListAppGroupResponse.
 
-        总数
+        总数。
 
         :param count: The count of this ListAppGroupResponse.
         :type count: int

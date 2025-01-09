@@ -17,36 +17,56 @@ class VolumeDetail:
     sensitive_list = []
 
     openapi_types = {
+        'encrypt_flag': 'str',
+        'kms_key': 'str',
+        'key_alias': 'str',
         'type': 'str',
         'size': 'int',
+        'kms_grant_id': 'str',
         'device': 'str',
         'id': 'str',
         'volume_id': 'str',
         'bill_resource_id': 'str',
         'create_time': 'str',
-        'display_name': 'str'
+        'display_name': 'str',
+        'cluster_id': 'str',
+        'resource_spec_code': 'str'
     }
 
     attribute_map = {
+        'encrypt_flag': 'encrypt_flag',
+        'kms_key': 'kms_key',
+        'key_alias': 'key_alias',
         'type': 'type',
         'size': 'size',
+        'kms_grant_id': 'kms_grant_id',
         'device': 'device',
         'id': 'id',
         'volume_id': 'volume_id',
         'bill_resource_id': 'bill_resource_id',
         'create_time': 'create_time',
-        'display_name': 'display_name'
+        'display_name': 'display_name',
+        'cluster_id': 'cluster_id',
+        'resource_spec_code': 'resource_spec_code'
     }
 
-    def __init__(self, type=None, size=None, device=None, id=None, volume_id=None, bill_resource_id=None, create_time=None, display_name=None):
+    def __init__(self, encrypt_flag=None, kms_key=None, key_alias=None, type=None, size=None, kms_grant_id=None, device=None, id=None, volume_id=None, bill_resource_id=None, create_time=None, display_name=None, cluster_id=None, resource_spec_code=None):
         """VolumeDetail
 
         The model defined in huaweicloud sdk
 
+        :param encrypt_flag: 标识磁盘是否加密，如果为1就是加密。
+        :type encrypt_flag: str
+        :param kms_key: 如果磁盘加密，传递的密钥。
+        :type kms_key: str
+        :param key_alias: 如果磁盘加密，传递的密钥。
+        :type key_alias: str
         :param type: 桌面数据盘对应的磁盘类型，需要与系统所提供的磁盘类型相匹配。  - SAS：高IO。 - SSD：超高IO。
         :type type: str
         :param size: 磁盘容量，单位GB。
         :type size: int
+        :param kms_grant_id: 如果磁盘加密，授权ID。
+        :type kms_grant_id: str
         :param device: 挂载目录。
         :type device: str
         :param id: 磁盘表唯一标识ID。
@@ -59,22 +79,40 @@ class VolumeDetail:
         :type create_time: str
         :param display_name: 磁盘名
         :type display_name: str
+        :param cluster_id: 云服务器系统盘对应的存储池的ID。
+        :type cluster_id: str
+        :param resource_spec_code: 规格
+        :type resource_spec_code: str
         """
         
         
 
+        self._encrypt_flag = None
+        self._kms_key = None
+        self._key_alias = None
         self._type = None
         self._size = None
+        self._kms_grant_id = None
         self._device = None
         self._id = None
         self._volume_id = None
         self._bill_resource_id = None
         self._create_time = None
         self._display_name = None
+        self._cluster_id = None
+        self._resource_spec_code = None
         self.discriminator = None
 
+        if encrypt_flag is not None:
+            self.encrypt_flag = encrypt_flag
+        if kms_key is not None:
+            self.kms_key = kms_key
+        if key_alias is not None:
+            self.key_alias = key_alias
         self.type = type
         self.size = size
+        if kms_grant_id is not None:
+            self.kms_grant_id = kms_grant_id
         if device is not None:
             self.device = device
         if id is not None:
@@ -87,6 +125,76 @@ class VolumeDetail:
             self.create_time = create_time
         if display_name is not None:
             self.display_name = display_name
+        if cluster_id is not None:
+            self.cluster_id = cluster_id
+        if resource_spec_code is not None:
+            self.resource_spec_code = resource_spec_code
+
+    @property
+    def encrypt_flag(self):
+        """Gets the encrypt_flag of this VolumeDetail.
+
+        标识磁盘是否加密，如果为1就是加密。
+
+        :return: The encrypt_flag of this VolumeDetail.
+        :rtype: str
+        """
+        return self._encrypt_flag
+
+    @encrypt_flag.setter
+    def encrypt_flag(self, encrypt_flag):
+        """Sets the encrypt_flag of this VolumeDetail.
+
+        标识磁盘是否加密，如果为1就是加密。
+
+        :param encrypt_flag: The encrypt_flag of this VolumeDetail.
+        :type encrypt_flag: str
+        """
+        self._encrypt_flag = encrypt_flag
+
+    @property
+    def kms_key(self):
+        """Gets the kms_key of this VolumeDetail.
+
+        如果磁盘加密，传递的密钥。
+
+        :return: The kms_key of this VolumeDetail.
+        :rtype: str
+        """
+        return self._kms_key
+
+    @kms_key.setter
+    def kms_key(self, kms_key):
+        """Sets the kms_key of this VolumeDetail.
+
+        如果磁盘加密，传递的密钥。
+
+        :param kms_key: The kms_key of this VolumeDetail.
+        :type kms_key: str
+        """
+        self._kms_key = kms_key
+
+    @property
+    def key_alias(self):
+        """Gets the key_alias of this VolumeDetail.
+
+        如果磁盘加密，传递的密钥。
+
+        :return: The key_alias of this VolumeDetail.
+        :rtype: str
+        """
+        return self._key_alias
+
+    @key_alias.setter
+    def key_alias(self, key_alias):
+        """Sets the key_alias of this VolumeDetail.
+
+        如果磁盘加密，传递的密钥。
+
+        :param key_alias: The key_alias of this VolumeDetail.
+        :type key_alias: str
+        """
+        self._key_alias = key_alias
 
     @property
     def type(self):
@@ -131,6 +239,28 @@ class VolumeDetail:
         :type size: int
         """
         self._size = size
+
+    @property
+    def kms_grant_id(self):
+        """Gets the kms_grant_id of this VolumeDetail.
+
+        如果磁盘加密，授权ID。
+
+        :return: The kms_grant_id of this VolumeDetail.
+        :rtype: str
+        """
+        return self._kms_grant_id
+
+    @kms_grant_id.setter
+    def kms_grant_id(self, kms_grant_id):
+        """Sets the kms_grant_id of this VolumeDetail.
+
+        如果磁盘加密，授权ID。
+
+        :param kms_grant_id: The kms_grant_id of this VolumeDetail.
+        :type kms_grant_id: str
+        """
+        self._kms_grant_id = kms_grant_id
 
     @property
     def device(self):
@@ -263,6 +393,50 @@ class VolumeDetail:
         :type display_name: str
         """
         self._display_name = display_name
+
+    @property
+    def cluster_id(self):
+        """Gets the cluster_id of this VolumeDetail.
+
+        云服务器系统盘对应的存储池的ID。
+
+        :return: The cluster_id of this VolumeDetail.
+        :rtype: str
+        """
+        return self._cluster_id
+
+    @cluster_id.setter
+    def cluster_id(self, cluster_id):
+        """Sets the cluster_id of this VolumeDetail.
+
+        云服务器系统盘对应的存储池的ID。
+
+        :param cluster_id: The cluster_id of this VolumeDetail.
+        :type cluster_id: str
+        """
+        self._cluster_id = cluster_id
+
+    @property
+    def resource_spec_code(self):
+        """Gets the resource_spec_code of this VolumeDetail.
+
+        规格
+
+        :return: The resource_spec_code of this VolumeDetail.
+        :rtype: str
+        """
+        return self._resource_spec_code
+
+    @resource_spec_code.setter
+    def resource_spec_code(self, resource_spec_code):
+        """Sets the resource_spec_code of this VolumeDetail.
+
+        规格
+
+        :param resource_spec_code: The resource_spec_code of this VolumeDetail.
+        :type resource_spec_code: str
+        """
+        self._resource_spec_code = resource_spec_code
 
     def to_dict(self):
         """Returns the model properties as a dict"""

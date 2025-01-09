@@ -24,18 +24,24 @@ class ListDesktopsDetailRequest:
         'sort_type': 'str',
         'computer_name': 'str',
         'desktop_ip': 'str',
+        'sids': 'str',
         'offset': 'int',
         'limit': 'int',
         'desktop_id': 'list[str]',
         'desktop_type': 'str',
+        'login_status': 'str',
         'tag': 'str',
+        'fuzzy_query': 'bool',
         'pool_id': 'str',
         'user_attached': 'bool',
         'enterprise_project_id': 'str',
         'image_id': 'str',
         'charge_mode': 'str',
         'in_maintenance_mode': 'bool',
-        'subnet_id': 'str'
+        'is_share_desktop': 'bool',
+        'subnet_id': 'str',
+        'is_support_internet': 'bool',
+        'availability_zone': 'str'
     }
 
     attribute_map = {
@@ -46,26 +52,32 @@ class ListDesktopsDetailRequest:
         'sort_type': 'sort_type',
         'computer_name': 'computer_name',
         'desktop_ip': 'desktop_ip',
+        'sids': 'sids',
         'offset': 'offset',
         'limit': 'limit',
         'desktop_id': 'desktop_id',
         'desktop_type': 'desktop_type',
+        'login_status': 'login_status',
         'tag': 'tag',
+        'fuzzy_query': 'fuzzy_query',
         'pool_id': 'pool_id',
         'user_attached': 'user_attached',
         'enterprise_project_id': 'enterprise_project_id',
         'image_id': 'image_id',
         'charge_mode': 'charge_mode',
         'in_maintenance_mode': 'in_maintenance_mode',
-        'subnet_id': 'subnet_id'
+        'is_share_desktop': 'is_share_desktop',
+        'subnet_id': 'subnet_id',
+        'is_support_internet': 'is_support_internet',
+        'availability_zone': 'availability_zone'
     }
 
-    def __init__(self, status=None, user_name=None, user_names=None, sort_field=None, sort_type=None, computer_name=None, desktop_ip=None, offset=None, limit=None, desktop_id=None, desktop_type=None, tag=None, pool_id=None, user_attached=None, enterprise_project_id=None, image_id=None, charge_mode=None, in_maintenance_mode=None, subnet_id=None):
+    def __init__(self, status=None, user_name=None, user_names=None, sort_field=None, sort_type=None, computer_name=None, desktop_ip=None, sids=None, offset=None, limit=None, desktop_id=None, desktop_type=None, login_status=None, tag=None, fuzzy_query=None, pool_id=None, user_attached=None, enterprise_project_id=None, image_id=None, charge_mode=None, in_maintenance_mode=None, is_share_desktop=None, subnet_id=None, is_support_internet=None, availability_zone=None):
         """ListDesktopsDetailRequest
 
         The model defined in huaweicloud sdk
 
-        :param status: 桌面状态。  - ACTIVE：运行中。 - SHUTOFF：关机。 - ERROR：异常。
+        :param status: 桌面状态。  - ACTIVE：运行中。 - SHUTOFF：关机。 - ERROR：异常。 - HIBERNATED：休眠。
         :type status: str
         :param user_name: 桌面所属用户，当传user_names时，本字段不生效。
         :type user_name: str
@@ -79,16 +91,22 @@ class ListDesktopsDetailRequest:
         :type computer_name: str
         :param desktop_ip: 桌面IP地址。
         :type desktop_ip: str
+        :param sids: 桌面的sid列表。
+        :type sids: str
         :param offset: 用于分页查询，查询的起始记录序号，从0开始。
         :type offset: int
         :param limit: 用于分页查询，取值范围0-500，默认值500。
         :type limit: int
         :param desktop_id: 桌面ID。
         :type desktop_id: list[str]
-        :param desktop_type: 桌面类型，为空时查所有桌面。 - DEDICATED：普通桌面，包括专享桌面、专属桌面等 - POOLED：池桌面，即桌面池里的桌面 - SHARED: 多用户共享桌面。
+        :param desktop_type: 桌面类型，为空时查所有桌面。 - DEDICATED：普通桌面，包括专享桌面、专属桌面等 - POOLED：池桌面，即桌面池里的桌面
         :type desktop_type: str
+        :param login_status: 桌面的登录状态。  - UNREGISTER：表示桌面未注册时的状态（桌面启动后，会自动注册）。关机后也会出现未注册的状态。 - REGISTERED：表示桌面注册以后，等待用户连接的状态。 - CONNECTED：表示用户已经成功登录，正在使用桌面。 - DISCONNECTED：表示桌面与客户端断开会话后显示的状态，可能为关闭客户端窗口，或客户端与桌面网络断开引起。
+        :type login_status: str
         :param tag: 桌面的标签。样例：  - key1&#x3D;value1。 - key1&#x3D;value1，key2&#x3D;value2。
         :type tag: str
+        :param fuzzy_query: 是不是模糊用户查询。
+        :type fuzzy_query: bool
         :param pool_id: 桌面池ID,多个桌面池ID用逗号隔开。
         :type pool_id: str
         :param user_attached: 是否分配了用户。
@@ -101,8 +119,14 @@ class ListDesktopsDetailRequest:
         :type charge_mode: str
         :param in_maintenance_mode: 按照维护模式过滤
         :type in_maintenance_mode: bool
+        :param is_share_desktop: 是否为协同桌面
+        :type is_share_desktop: bool
         :param subnet_id: 桌面的子网ID。
         :type subnet_id: str
+        :param is_support_internet: 是否支持上网。
+        :type is_support_internet: bool
+        :param availability_zone: 查询可用区
+        :type availability_zone: str
         """
         
         
@@ -114,18 +138,24 @@ class ListDesktopsDetailRequest:
         self._sort_type = None
         self._computer_name = None
         self._desktop_ip = None
+        self._sids = None
         self._offset = None
         self._limit = None
         self._desktop_id = None
         self._desktop_type = None
+        self._login_status = None
         self._tag = None
+        self._fuzzy_query = None
         self._pool_id = None
         self._user_attached = None
         self._enterprise_project_id = None
         self._image_id = None
         self._charge_mode = None
         self._in_maintenance_mode = None
+        self._is_share_desktop = None
         self._subnet_id = None
+        self._is_support_internet = None
+        self._availability_zone = None
         self.discriminator = None
 
         if status is not None:
@@ -142,6 +172,8 @@ class ListDesktopsDetailRequest:
             self.computer_name = computer_name
         if desktop_ip is not None:
             self.desktop_ip = desktop_ip
+        if sids is not None:
+            self.sids = sids
         if offset is not None:
             self.offset = offset
         if limit is not None:
@@ -150,8 +182,12 @@ class ListDesktopsDetailRequest:
             self.desktop_id = desktop_id
         if desktop_type is not None:
             self.desktop_type = desktop_type
+        if login_status is not None:
+            self.login_status = login_status
         if tag is not None:
             self.tag = tag
+        if fuzzy_query is not None:
+            self.fuzzy_query = fuzzy_query
         if pool_id is not None:
             self.pool_id = pool_id
         if user_attached is not None:
@@ -164,14 +200,20 @@ class ListDesktopsDetailRequest:
             self.charge_mode = charge_mode
         if in_maintenance_mode is not None:
             self.in_maintenance_mode = in_maintenance_mode
+        if is_share_desktop is not None:
+            self.is_share_desktop = is_share_desktop
         if subnet_id is not None:
             self.subnet_id = subnet_id
+        if is_support_internet is not None:
+            self.is_support_internet = is_support_internet
+        if availability_zone is not None:
+            self.availability_zone = availability_zone
 
     @property
     def status(self):
         """Gets the status of this ListDesktopsDetailRequest.
 
-        桌面状态。  - ACTIVE：运行中。 - SHUTOFF：关机。 - ERROR：异常。
+        桌面状态。  - ACTIVE：运行中。 - SHUTOFF：关机。 - ERROR：异常。 - HIBERNATED：休眠。
 
         :return: The status of this ListDesktopsDetailRequest.
         :rtype: str
@@ -182,7 +224,7 @@ class ListDesktopsDetailRequest:
     def status(self, status):
         """Sets the status of this ListDesktopsDetailRequest.
 
-        桌面状态。  - ACTIVE：运行中。 - SHUTOFF：关机。 - ERROR：异常。
+        桌面状态。  - ACTIVE：运行中。 - SHUTOFF：关机。 - ERROR：异常。 - HIBERNATED：休眠。
 
         :param status: The status of this ListDesktopsDetailRequest.
         :type status: str
@@ -322,6 +364,28 @@ class ListDesktopsDetailRequest:
         self._desktop_ip = desktop_ip
 
     @property
+    def sids(self):
+        """Gets the sids of this ListDesktopsDetailRequest.
+
+        桌面的sid列表。
+
+        :return: The sids of this ListDesktopsDetailRequest.
+        :rtype: str
+        """
+        return self._sids
+
+    @sids.setter
+    def sids(self, sids):
+        """Sets the sids of this ListDesktopsDetailRequest.
+
+        桌面的sid列表。
+
+        :param sids: The sids of this ListDesktopsDetailRequest.
+        :type sids: str
+        """
+        self._sids = sids
+
+    @property
     def offset(self):
         """Gets the offset of this ListDesktopsDetailRequest.
 
@@ -391,7 +455,7 @@ class ListDesktopsDetailRequest:
     def desktop_type(self):
         """Gets the desktop_type of this ListDesktopsDetailRequest.
 
-        桌面类型，为空时查所有桌面。 - DEDICATED：普通桌面，包括专享桌面、专属桌面等 - POOLED：池桌面，即桌面池里的桌面 - SHARED: 多用户共享桌面。
+        桌面类型，为空时查所有桌面。 - DEDICATED：普通桌面，包括专享桌面、专属桌面等 - POOLED：池桌面，即桌面池里的桌面
 
         :return: The desktop_type of this ListDesktopsDetailRequest.
         :rtype: str
@@ -402,12 +466,34 @@ class ListDesktopsDetailRequest:
     def desktop_type(self, desktop_type):
         """Sets the desktop_type of this ListDesktopsDetailRequest.
 
-        桌面类型，为空时查所有桌面。 - DEDICATED：普通桌面，包括专享桌面、专属桌面等 - POOLED：池桌面，即桌面池里的桌面 - SHARED: 多用户共享桌面。
+        桌面类型，为空时查所有桌面。 - DEDICATED：普通桌面，包括专享桌面、专属桌面等 - POOLED：池桌面，即桌面池里的桌面
 
         :param desktop_type: The desktop_type of this ListDesktopsDetailRequest.
         :type desktop_type: str
         """
         self._desktop_type = desktop_type
+
+    @property
+    def login_status(self):
+        """Gets the login_status of this ListDesktopsDetailRequest.
+
+        桌面的登录状态。  - UNREGISTER：表示桌面未注册时的状态（桌面启动后，会自动注册）。关机后也会出现未注册的状态。 - REGISTERED：表示桌面注册以后，等待用户连接的状态。 - CONNECTED：表示用户已经成功登录，正在使用桌面。 - DISCONNECTED：表示桌面与客户端断开会话后显示的状态，可能为关闭客户端窗口，或客户端与桌面网络断开引起。
+
+        :return: The login_status of this ListDesktopsDetailRequest.
+        :rtype: str
+        """
+        return self._login_status
+
+    @login_status.setter
+    def login_status(self, login_status):
+        """Sets the login_status of this ListDesktopsDetailRequest.
+
+        桌面的登录状态。  - UNREGISTER：表示桌面未注册时的状态（桌面启动后，会自动注册）。关机后也会出现未注册的状态。 - REGISTERED：表示桌面注册以后，等待用户连接的状态。 - CONNECTED：表示用户已经成功登录，正在使用桌面。 - DISCONNECTED：表示桌面与客户端断开会话后显示的状态，可能为关闭客户端窗口，或客户端与桌面网络断开引起。
+
+        :param login_status: The login_status of this ListDesktopsDetailRequest.
+        :type login_status: str
+        """
+        self._login_status = login_status
 
     @property
     def tag(self):
@@ -430,6 +516,28 @@ class ListDesktopsDetailRequest:
         :type tag: str
         """
         self._tag = tag
+
+    @property
+    def fuzzy_query(self):
+        """Gets the fuzzy_query of this ListDesktopsDetailRequest.
+
+        是不是模糊用户查询。
+
+        :return: The fuzzy_query of this ListDesktopsDetailRequest.
+        :rtype: bool
+        """
+        return self._fuzzy_query
+
+    @fuzzy_query.setter
+    def fuzzy_query(self, fuzzy_query):
+        """Sets the fuzzy_query of this ListDesktopsDetailRequest.
+
+        是不是模糊用户查询。
+
+        :param fuzzy_query: The fuzzy_query of this ListDesktopsDetailRequest.
+        :type fuzzy_query: bool
+        """
+        self._fuzzy_query = fuzzy_query
 
     @property
     def pool_id(self):
@@ -564,6 +672,28 @@ class ListDesktopsDetailRequest:
         self._in_maintenance_mode = in_maintenance_mode
 
     @property
+    def is_share_desktop(self):
+        """Gets the is_share_desktop of this ListDesktopsDetailRequest.
+
+        是否为协同桌面
+
+        :return: The is_share_desktop of this ListDesktopsDetailRequest.
+        :rtype: bool
+        """
+        return self._is_share_desktop
+
+    @is_share_desktop.setter
+    def is_share_desktop(self, is_share_desktop):
+        """Sets the is_share_desktop of this ListDesktopsDetailRequest.
+
+        是否为协同桌面
+
+        :param is_share_desktop: The is_share_desktop of this ListDesktopsDetailRequest.
+        :type is_share_desktop: bool
+        """
+        self._is_share_desktop = is_share_desktop
+
+    @property
     def subnet_id(self):
         """Gets the subnet_id of this ListDesktopsDetailRequest.
 
@@ -584,6 +714,50 @@ class ListDesktopsDetailRequest:
         :type subnet_id: str
         """
         self._subnet_id = subnet_id
+
+    @property
+    def is_support_internet(self):
+        """Gets the is_support_internet of this ListDesktopsDetailRequest.
+
+        是否支持上网。
+
+        :return: The is_support_internet of this ListDesktopsDetailRequest.
+        :rtype: bool
+        """
+        return self._is_support_internet
+
+    @is_support_internet.setter
+    def is_support_internet(self, is_support_internet):
+        """Sets the is_support_internet of this ListDesktopsDetailRequest.
+
+        是否支持上网。
+
+        :param is_support_internet: The is_support_internet of this ListDesktopsDetailRequest.
+        :type is_support_internet: bool
+        """
+        self._is_support_internet = is_support_internet
+
+    @property
+    def availability_zone(self):
+        """Gets the availability_zone of this ListDesktopsDetailRequest.
+
+        查询可用区
+
+        :return: The availability_zone of this ListDesktopsDetailRequest.
+        :rtype: str
+        """
+        return self._availability_zone
+
+    @availability_zone.setter
+    def availability_zone(self, availability_zone):
+        """Sets the availability_zone of this ListDesktopsDetailRequest.
+
+        查询可用区
+
+        :param availability_zone: The availability_zone of this ListDesktopsDetailRequest.
+        :type availability_zone: str
+        """
+        self._availability_zone = availability_zone
 
     def to_dict(self):
         """Returns the model properties as a dict"""

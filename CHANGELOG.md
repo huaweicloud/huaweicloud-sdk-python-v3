@@ -1,3 +1,989 @@
+# 3.1.131 2025-01-09
+
+### HuaweiCloud SDK CSS
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowVpcepConnection**
+    - changes of response param
+      - `+ connections.vpcepIp`
+      - `+ connections.vpcepIpv6Address`
+      - `+ connections.vpcepDnsName`
+
+### HuaweiCloud SDK DC
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListGdgwRouteTables**
+    - changes of request param
+      - `+ limit`
+      - `+ marker`
+    - changes of response param
+      - `+ page_info`
+      - `+ gdgw_routetables`
+      - `- gdgw_routetable`
+
+### HuaweiCloud SDK DDM
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `DeleteDdmInstance`
+    - `SwitchSsl`
+    - `ListDdmConfigurations`
+    - `CreateDdmDatabase`
+    - `ShowDdmJobResult`
+    - `ShowConfiguration`
+    - `ListSlowLogs`
+    - `ShowRiskInfo`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowDatabase**
+    - changes of response param
+      - `* database.created: string -> int64`
+      - `* database.updated: string -> int64`
+      - `* database.databases.created: string -> int64`
+      - `* database.databases.updated: string -> int64`
+  - **CreateGroup**
+    - changes of response param
+      - `+ group_id`
+      - `- instance_id`
+
+### HuaweiCloud SDK DRS
+
+- _API Version_
+  - V5
+- _Features_
+  - Support the APIs `ShowAgencyInfo`, `UpdateAgencyPolicy`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK IMS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListImages**
+    - changes of response param
+      - `+ images.os_shutdown_timeout`
+  - **UpdateImage**
+    - changes of response param
+      - `+ os_shutdown_timeout`
+
+### HuaweiCloud SDK KooMessage
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListPortInfos**
+    - changes of request param
+      - `+ is_bind`
+
+### HuaweiCloud SDK Meeting
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the APIs `SearchCorpDigitalInfoList`, `SearchPrivateCorpDigitalInfo`
+
+### HuaweiCloud SDK MetaStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `BatchDeletePacifyWords`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListSmartLiveScriptCommands**
+    - changes of response param
+      - `+ scripts_commands.command_time`
+      - `+ scripts_commands.scene_scripts.shoot_scripts.text`
+  - **ListSmartLiveRooms**
+    - changes of response param
+      - `+ smart_live_rooms.confirm_state`
+  - **ListSmartLiveRuleCommands**
+    - changes of response param
+      - `+ rule_commands.command_time`
+
+### HuaweiCloud SDK MSGSMS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateSignature**
+    - changes of request param
+      - `+ qualification_id`
+  - **ShowSignature**
+    - changes of response param
+      - `+ qualification_id`
+      - `+ qualification_name`
+  - **UpdateTemplate**
+    - changes of request param
+      - `+ flow_status`
+  - **CreateSignature**
+    - changes of request param
+      - `+ qualification_id`
+  - **ListSignatureDetails**
+    - changes of response param
+      - `+ qualification_id`
+      - `+ qualification_name`
+      - `+ results.qualification_id`
+      - `+ results.qualification_name`
+  - **CreateTemplate**
+    - changes of request param
+      - `+ flow_status`
+
+### HuaweiCloud SDK SCM
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `CancelCertificateRequest`
+    - `ListCsr`
+    - `CreateCsr`
+    - `ShowCsr`
+    - `UpdateCsr`
+    - `DeleteCsr`
+    - `UploadCsr`
+    - `ShowCsrPrivateKey`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK VPC
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListSecurityGroupRules**
+    - changes of request param
+      - `+ priority`
+      - `+ ethertype`
+      - `+ remote_address_group_id`
+      - `+ enabled`
+    - changes of response param
+      - `+ security_group_rules.enabled`
+  - **CreateSecurityGroupRule**
+    - changes of request param
+      - `+ security_group_rule.enabled`
+    - changes of response param
+      - `+ security_group_rule.enabled`
+  - **ShowSecurityGroupRule**
+    - changes of response param
+      - `+ security_group_rule.enabled`
+  - **BatchCreateSecurityGroupRules**
+    - changes of request param
+      - `+ security_group_rules.enabled`
+    - changes of response param
+      - `+ security_group_rules.enabled`
+  - **CreateSecurityGroup**
+    - changes of response param
+      - `+ security_group.security_group_rules.enabled`
+  - **ShowSecurityGroup**
+    - changes of response param
+      - `+ security_group.security_group_rules.enabled`
+  - **UpdateSecurityGroup**
+    - changes of response param
+      - `+ security_group.security_group_rules.enabled`
+
+### HuaweiCloud SDK WAF
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListStatistics**
+    - changes of response param
+      - `* num: int32 -> int64`
+
+### HuaweiCloud SDK Workspace
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the following APIs:
+    - `CreateBucketCredential`
+    - `CreateAndAuthorizeBucket`
+    - `ListApps`
+    - `UploadApp`
+    - `DeleteApp`
+    - `UpdateUploadedApp`
+    - `InstallApp`
+    - `ListAppAuthorizations`
+    - `UpdateAppAuthorizations`
+    - `BatchDeleteApps`
+    - `BatchDisableApps`
+    - `BatchEnableApps`
+    - `BatchUpdateAppAuthorizations`
+    - `BatchInstallApps`
+    - `ListAppCatalogs`
+    - `ListJobs`
+    - `BatchDeleteJobs`
+    - `RetryJobs`
+    - `ListAppRule`
+    - `CreateAppRule`
+    - `DeleteAppRule`
+    - `UpdateAppRule`
+    - `BatchDeleteAppRules`
+    - `EnableRuleRestriction`
+    - `DisableRuleRestriction`
+    - `ListRestrictedRule`
+    - `AddRestrictedRule`
+    - `DeleteRestrictedRule`
+    - `ListTenantProfiles`
+    - `UpdateTenantProfile`
+    - `ListScripts`
+    - `CreateScript`
+    - `ShowScriptDetail`
+    - `UpdateScript`
+    - `DeleteScript`
+    - `ExecuteScriptOrCommand`
+    - `ShowScriptRecordDetail`
+    - `ListScriptRecords`
+    - `ListScriptTasks`
+    - `RetryScriptExecution`
+    - `StopScriptExecution`
+    - `ShowAvailableIp`
+    - `ShowDesktopPoolsScriptExecTasks`
+    - `ExecuteDesktopPoolScript`
+    - `SendDesktopPoolNotifications`
+    - `ListInstancesStatus`
+    - `ListDesktopActions`
+    - `ShowDesktopMonitorData`
+    - `ShowRemoteConsoleAddress`
+    - `UpdateDesktopSids`
+    - `RegisterDomain`
+    - `ChangeDesktopToImage`
+    - `BatchDetachInstances`
+    - `ShowDesktopNetworks`
+    - `BatchChangeDesktopNetwork`
+    - `ListDesktopDetachInfo`
+    - `ShowSysprepInfo`
+    - `SetMaintenanceMode`
+    - `BatchAssociateInstances`
+    - `BatchAttachInstances`
+    - `UpdateDesktopUsername`
+    - `SendNotifications`
+    - `ListAgentsInstallCondition`
+    - `BatchInstallAgent`
+    - `ListMarketImages`
+    - `ListInternet`
+    - `ApplyInternet`
+    - `ShowUsingSubnets`
+    - `ListPorts`
+    - `ListNatGateways`
+    - `ListSubnetBandwidths`
+    - `ApplySubnetBandwidth`
+    - `UpdateSubnetBandwidth`
+    - `DeleteSubnetBandwidth`
+    - `ShowSubnetBandwidthControlList`
+    - `UpdateSubnetBandwidthControlList`
+    - `CreateOrder`
+    - `CreateChangeOrder`
+    - `CreateDesktopBatchOrder`
+    - `EstimateChangeImages`
+    - `CreateDesktopPoolChangeOrder`
+    - `EstimateDesktopPoolAddVolume`
+    - `EstimateDesktopPoolChangeImage`
+    - `EstimateDesktopPoolExtendVolume`
+    - `EstimateDesktopPoolResize`
+    - `EstimateAddResources`
+    - `CreateSubnetBandwidthChangeOrder`
+    - `CreateDesktopOrder`
+    - `AddDesktopSubResources`
+    - `DeleteDesktopSubResources`
+    - `BatchCreateDesktopSnapshot`
+    - `BatchDeleteDesktopSnapshot`
+    - `BatchRestoreDesktopSnapshot`
+    - `ListDesktopSnapshot`
+    - `ListDesktopsStatistics`
+    - `ListRunState`
+    - `ListLoginState`
+    - `AddDesktopVolumes`
+    - `ExpandDesktopVolume`
+    - `ListTimeZones`
+    - `ListHistoryOnlineInfo`
+    - `BatchDeleteSubJobs`
+    - `ListOuDetails`
+    - `AddOu`
+    - `UpdateOuInfo`
+    - `DeleteOu`
+    - `ListAdOus`
+    - `ListAdOuUsers`
+    - `ListPolicyGroup`
+    - `CreatePolicyGroup`
+    - `ListPolicyDetailInfoById`
+    - `UpdatePolicyGroup`
+    - `DeletePolicyGroup`
+    - `ListPoliciesOfPolicyGroup`
+    - `UpdatePoliciesOfPolicyGroup`
+    - `ListTargetOfPolicyGroup`
+    - `BatchUpdateTargetOfPolicyGroup`
+    - `ListPolicyGroupInfo`
+    - `ListOriginalPolicyInfo`
+    - `UpdateAccessPolicy`
+    - `ListHourPackagesType`
+    - `ListSharerProducts`
+    - `ListAzs`
+    - `ShowAzDetails`
+    - `ListScreenRecords`
+    - `ShowScreenRecord`
+    - `BatchDeleteScreenRecords`
+    - `ListDownloadAddress`
+    - `ListDesktopOperations`
+    - `SendEmail`
+    - `ListVolumeProductInfo`
+    - `ListAccessAddressBackupConfig`
+    - `UpdateAccessAddressBackupConfig`
+    - `ShowAuthConfig`
+    - `UpdateAuthMethodConfig`
+    - `RunActionsOnWorkspaceJob`
+    - `ShowQuotaDetails`
+    - `ListSiteConfigs`
+    - `AddSite`
+    - `DeleteSite`
+    - `UpdateAccessMode`
+    - `UpdateSubnetIds`
+    - `ListWksEdgeSites`
+    - `ListTenantConfigs`
+    - `UpdateTenantConfig`
+    - `ShowShareSpaceConfig`
+    - `UpdateShareSpaceConfig`
+    - `ListNatMappingConfigs`
+    - `UpdateNatMappingConfigs`
+    - `UpdateEnterpriseId`
+    - `ListAlarms`
+    - `ListAlarmStatistics`
+    - `ShowGrowthRate`
+    - `ListAppUserAccessData`
+    - `ShowUserAccessStages`
+    - `ListUserEvents`
+    - `UpdateDesktop`
+- _Bug Fix_
+  - None
+- _Change_
+  - **BatchLogoffDesktops**
+    - changes of request param
+      - `+ Service-Transaction-Id`
+  - **BatchRunDesktops**
+    - changes of request param
+      - `+ host_id`
+      - `+ project_id`
+    - changes of response param
+      - `+ error_msg`
+      - `+ error_code`
+  - **BatchRebuildDesktopsSystemDisk**
+    - changes of request param
+      - `+ Service-Transaction-Id`
+    - changes of response param
+      - `+ get_job_endpoint`
+      - `+ encoded_authorization_message`
+      - `+ min_provision_time`
+      - `+ periodic_query_time`
+      - `+ max_provision_time`
+  - **ListTerminalsBindingDesktopsConfig**
+    - changes of response param
+      - `+ tc_auto_bind_switch`
+      - `+ tc_auto_bind_max`
+  - **UpdateTerminalsBindingDesktopsConfig**
+    - changes of request param
+      - `+ tc_auto_bind_switch`
+      - `+ tc_auto_bind_max`
+  - **DeleteDesktopVolumes**
+    - changes of request param
+      - `+ Service-Transaction-Id`
+  - **ListHistoryOnlineInfoNew**
+    - changes of request param
+      - `+ client_hour`
+  - **ExpandDesktopPool**
+    - changes of response param
+      - `+ maxProvisionTime`
+      - `+ getJobEndpoint`
+      - `+ periodicQueryTime`
+      - `+ cbcJobId`
+      - `+ minProvisionTime`
+  - **ResizeDesktop**
+    - changes of request param
+      - `+ Service-Transaction-Id`
+      - `+ flavor_id`
+      - `+ dedicated_host_id`
+      - `+ order_id`
+      - `+ extend_param`
+    - changes of response param
+      - `+ error_msg`
+      - `+ maxProvisionTime`
+      - `+ getJobEndpoint`
+      - `+ periodicQueryTime`
+      - `+ error_policy`
+      - `+ cbcJobId`
+      - `+ error_code`
+      - `+ minProvisionTime`
+  - **DetachInstances**
+    - changes of request param
+      - `+ shutoff_after_detach`
+  - **ListProjectTags**
+    - changes of request param
+      - `+ offset`
+      - `+ limit`
+      - `+ key`
+    - changes of response param
+      - `+ totalCount`
+  - **ApplyDesktopsInternet**
+    - changes of request param
+      - `+ Service-Transaction-Id`
+      - `+ inst_info_ids`
+      - `+ order_id`
+    - changes of response param
+      - `+ maxProvisionTime`
+      - `+ getJobEndpoint`
+      - `+ periodicQueryTime`
+      - `+ minProvisionTime`
+  - **ListScheduledTasks**
+    - changes of response param
+      - `+ scheduled_tasks.wait_time`
+  - **CreateScheduledTasks**
+    - changes of request param
+      - `+ wait_time`
+      - `+ task_type: enum value [CREATE_SNAPSHOT]`
+      - `+ apply_objects.object_type: enum value [DESKTOP_TAG]`
+  - **ShowScheduledTasks**
+    - changes of response param
+      - `+ wait_time`
+      - `+ apply_objects.object_type: enum value [DESKTOP_TAG]`
+  - **UpdateScheduledTasks**
+    - changes of request param
+      - `+ wait_time`
+      - `+ apply_objects.object_type: enum value [DESKTOP_TAG]`
+  - **ListScheduledTasksRecords**
+    - changes of request param
+      - `+ offset`
+      - `+ limit`
+    - changes of response param
+      - `+ tasks_records.execute_object_type`
+  - **ListScheduledTasksRecordsDetails**
+    - changes of response param
+      - `+ tasks_records_details.exec_script_id`
+  - **ExpandVolumes**
+    - changes of request param
+      - `+ Service-Transaction-Id`
+      - `+ desktop_type`
+      - `+ desktop_volumes_expansion.order_id`
+    - changes of response param
+      - `+ maxProvisionTime`
+      - `+ getJobEndpoint`
+      - `+ periodicQueryTime`
+      - `+ minProvisionTime`
+  - **ListLoginRecordsNew**
+    - changes of request param
+      - `+ min_network_rtt`
+      - `+ max_network_rtt`
+      - `* limit: string -> int32`
+      - `* offset: string -> int32`
+    - changes of response param
+      - `+ records.tenantId`
+  - **CreateUserGroup**
+    - changes of response param
+      - `+ encoded_authorization_message`
+  - **ListUserGroups**
+    - changes of response param
+      - `+ user_groups.total_desktops`
+  - **ListUsersOfGroup**
+    - changes of response param
+      - `+ users.total_desktops`
+  - **ListImages**
+    - changes of request param
+      - `+ sort_field`
+      - `+ sort_type`
+    - changes of response param
+      - `+ images.os_platform`
+      - `+ images.created_at`
+  - **ListAccessPolicies**
+    - changes of request param
+      - `+ access_control_type`
+    - changes of response param
+      - `+ policies.access_control_type`
+      - `+ policies.ip_list`
+      - `+ policies.ip_total_count`
+  - **CreateAccessPolicy**
+    - changes of request param
+      - `+ policy.access_control_type`
+      - `+ policy.ip_list`
+  - **ListProducts**
+    - changes of request param
+      - `+ flavor_id`
+      - `+ deh_product_id`
+      - `+ is_deh`
+      - `+ products_range`
+    - changes of response param
+      - `+ products.product_desc`
+      - `+ products.package_type`
+      - `+ products.series_type`
+      - `+ products.name`
+      - `+ products.share_space_size`
+      - `* products: list<ProductInfo> -> list<Product>`
+  - **ListUsers**
+    - changes of request param
+      - `+ user_email`
+      - `+ share_space_subscription`
+      - `+ share_space_desktops`
+      - `+ is_query_total_desktops`
+    - changes of response param
+      - `+ users.sid`
+      - `+ users.share_space_subscription`
+      - `+ users.share_space_desktops`
+      - `+ users.group_names`
+  - **UpdateUserInfo**
+    - changes of request param
+      - `+ group_ids`
+      - `+ alias_name`
+  - **ListUserDetail**
+    - changes of response param
+      - `+ user_detail.enable_change_password`
+      - `+ user_detail.share_space_subscription`
+      - `+ user_detail.share_space_desktops`
+      - `- user_detail.enabled_change_password`
+  - **ResizeDesktopPool**
+    - changes of response param
+      - `+ maxProvisionTime`
+      - `+ getJobEndpoint`
+      - `+ periodicQueryTime`
+      - `+ cbcJobId`
+      - `+ minProvisionTime`
+  - **CreateAgencies**
+    - changes of request param
+      - `+ scene`
+      - `* body: object -> object<CreateAgenciesReq>`
+  - **ListAgencies**
+    - changes of request param
+      - `+ scene`
+  - **CreateDesktop**
+    - changes of request param
+      - `+ Service-Transaction-Id`
+      - `+ flavor_id`
+      - `+ share_resource_sku`
+      - `+ desktop_ips`
+      - `+ enterprise_id`
+      - `+ order_id`
+      - `+ ou_name`
+      - `+ vpc_id`
+      - `+ subnet_ids`
+      - `+ scheduler_hints`
+      - `+ desktop_isv`
+      - `+ access_mode`
+      - `+ apply_shared_vpc_dedicated_param`
+      - `+ dedicated_subnets`
+      - `+ adn`
+      - `+ exclusive_host_id`
+      - `+ hour_package_product_id`
+      - `+ hour_package_offering_id`
+      - `+ root_resource_ids`
+      - `+ inst_info_ids`
+      - `+ root_volume.cluster_id`
+      - `+ nics.ip_address`
+      - `+ desktops.os_host_name`
+      - `+ desktops.nics`
+      - `+ desktops.ou_name`
+    - changes of response param
+      - `+ maxProvisionTime`
+      - `+ getJobEndpoint`
+      - `+ periodicQueryTime`
+      - `+ cbcJobId`
+      - `+ minProvisionTime`
+  - **ListDesktops**
+    - changes of request param
+      - `+ sids`
+      - `+ site_id`
+      - `+ is_share_desktop`
+      - `+ status`
+      - `+ desktop_id`
+      - `+ tag`
+      - `* user_name: string -> list<string>`
+    - changes of response param
+      - `+ desktop_infos`
+      - `+ desktops.os_host_name`
+      - `+ desktops.share_resource_sku`
+      - `+ desktops.desktop_type`
+      - `+ desktops.status`
+      - `+ desktops.task_status`
+  - **AttachInstances**
+    - changes of request param
+      - `+ Service-Transaction-Id`
+      - `+ order_id`
+    - changes of response param
+      - `+ get_job_endpoint`
+      - `+ min_provision_time`
+      - `+ periodic_query_time`
+      - `+ max_provision_time`
+  - **ShowDesktopNetwork**
+    - changes of response param
+      - `+ network_infos.security_groups.name`
+      - `* network_infos.security_groups: list<SecurityGroupInfo> -> list<SecurityGroup>`
+  - **AddVolumes**
+    - changes of request param
+      - `+ Service-Transaction-Id`
+      - `+ desktop_type`
+      - `+ desktop_volumes.order_id`
+      - `+ desktop_volumes.volumes.cluster_id`
+  - **ListItaSubJobs**
+    - changes of response param
+      - `+ jobs.host`
+      - `+ jobs.project_id`
+      - `+ jobs.success_result`
+      - `+ jobs.attach_user`
+      - `+ jobs.entity`
+      - `- jobs.message`
+      - `- jobs.desktop_name`
+      - `- jobs.mac_address`
+      - `+ jobs.entities.desktop_name`
+      - `+ jobs.entities.ip_address`
+  - **ShowJob**
+    - changes of response param
+      - `+ sub_jobs.host`
+      - `+ sub_jobs.project_id`
+      - `+ sub_jobs.success_result`
+      - `+ sub_jobs.attach_user`
+      - `+ sub_jobs.entity`
+      - `- sub_jobs.message`
+      - `- sub_jobs.desktop_name`
+      - `- sub_jobs.mac_address`
+      - `+ sub_jobs.entities.desktop_name`
+      - `+ sub_jobs.entities.ip_address`
+  - **ShowAssistAuthConfig**
+    - changes of response param
+      - `+ radius_config_info`
+      - `+ radius_gateway_config_info`
+  - **UpdateAssistAuthMethodConfig**
+    - changes of request param
+      - `+ radius_auth_config`
+      - `+ radius_gateway_config`
+  - **ShowQuotas**
+    - changes of request param
+      - `+ type`
+  - **ListWorkspaces**
+    - changes of response param
+      - `+ is_authorized_install_agent`
+      - `+ enable_user_create_snapshot`
+      - `+ assist_auth_config_info`
+      - `+ site_configs`
+      - `+ is_multi_vpc`
+      - `+ is_config_nat_mapping`
+      - `+ auth_type`
+      - `+ is_support_ipv6`
+      - `+ adn_conflict_network`
+      - `+ internet_access_address_ipv6`
+      - `+ enterprise_project_id`
+      - `+ dedicated_access_address_ipv6`
+      - `+ project_resource_type`
+      - `+ vpc_config_infos`
+      - `+ third_gateway_info`
+      - `+ dc_vnc_vpcep_id`
+      - `+ status: enum value [RECYCLING,RECYCLED,RECYCLE_FAILED]`
+  - **UpdateWorkspace**
+    - changes of request param
+      - `+ operate_type`
+      - `+ auth_type`
+      - `+ third_gateway_info`
+      - `+ adn_conflict_network`
+      - `+ vpc_config_infos`
+      - `+ apply_shared_vpc_dedicated_param`
+      - `+ is_authorized_install_agent`
+      - `+ enable_user_create_snapshot`
+      - `+ is_support_ipv6`
+      - `+ apply_dedicated_standby_network_param.site_id`
+  - **ApplyWorkspace**
+    - changes of request param
+      - `+ auth_type`
+      - `+ third_gateway_info`
+      - `+ apply_shared_vpc_dedicated_param`
+      - `+ availability_zone`
+      - `+ publicip_type`
+      - `+ assist_auth_config`
+      - `+ site_configs`
+      - `+ enterprise_project_id`
+  - **ListMetricsTrend**
+    - changes of request param
+      - `+ period: enum value [MIN,5MIN]`
+  - **CreateDesktopPool**
+    - changes of response param
+      - `+ maxProvisionTime`
+      - `+ getJobEndpoint`
+      - `+ periodicQueryTime`
+      - `+ cbcJobId`
+      - `+ minProvisionTime`
+  - **ShowDesktopDetail**
+    - changes of response param
+      - `+ desktop.os_host_name`
+      - `+ desktop.ipv4`
+      - `+ desktop.ipv6`
+      - `+ desktop.resource_type`
+      - `+ desktop.in_maintenance_mode`
+      - `+ desktop.share_resource_sku`
+      - `+ desktop.join_domain`
+      - `+ desktop.deh_id`
+      - `+ desktop.platform_kind`
+      - `+ desktop.is_support_internet`
+      - `+ desktop.internet_mode_list`
+      - `+ desktop.need_apply_adn`
+      - `+ desktop.desktop_isv`
+      - `+ desktop.creation_type`
+      - `+ desktop.root_resource_id`
+      - `+ desktop.hour_package_info`
+      - `+ desktop.root_volume.encrypt_flag`
+      - `+ desktop.root_volume.kms_key`
+      - `+ desktop.root_volume.key_alias`
+      - `+ desktop.root_volume.kms_grant_id`
+      - `+ desktop.root_volume.cluster_id`
+      - `+ desktop.root_volume.resource_spec_code`
+      - `+ desktop.product.architecture`
+      - `+ desktop.product.cpu_desc`
+      - `+ desktop.product.is_gpu`
+      - `+ desktop.product.package_type`
+      - `+ desktop.product.system_disk_type`
+      - `+ desktop.product.system_disk_size`
+      - `+ desktop.product.gpu_desc`
+      - `+ desktop.product.contain_data_disk`
+      - `+ desktop.product.resource_type`
+      - `+ desktop.product.cloud_service_type`
+      - `+ desktop.product.volume_product_type`
+      - `+ desktop.product.status`
+      - `+ desktop.product.sub_product_list`
+  - **ListDesktopsDetail**
+    - changes of request param
+      - `+ sids`
+      - `+ login_status`
+      - `+ fuzzy_query`
+      - `+ is_share_desktop`
+      - `+ is_support_internet`
+      - `+ availability_zone`
+    - changes of response param
+      - `+ desktops.os_host_name`
+      - `+ desktops.ipv4`
+      - `+ desktops.ipv6`
+      - `+ desktops.resource_type`
+      - `+ desktops.in_maintenance_mode`
+      - `+ desktops.share_resource_sku`
+      - `+ desktops.join_domain`
+      - `+ desktops.deh_id`
+      - `+ desktops.platform_kind`
+      - `+ desktops.is_support_internet`
+      - `+ desktops.internet_mode_list`
+      - `+ desktops.need_apply_adn`
+      - `+ desktops.desktop_isv`
+      - `+ desktops.creation_type`
+      - `+ desktops.root_resource_id`
+      - `+ desktops.hour_package_info`
+      - `+ desktops.root_volume.encrypt_flag`
+      - `+ desktops.root_volume.kms_key`
+      - `+ desktops.root_volume.key_alias`
+      - `+ desktops.root_volume.kms_grant_id`
+      - `+ desktops.root_volume.cluster_id`
+      - `+ desktops.root_volume.resource_spec_code`
+      - `+ desktops.product.architecture`
+      - `+ desktops.product.cpu_desc`
+      - `+ desktops.product.is_gpu`
+      - `+ desktops.product.package_type`
+      - `+ desktops.product.system_disk_type`
+      - `+ desktops.product.system_disk_size`
+      - `+ desktops.product.gpu_desc`
+      - `+ desktops.product.contain_data_disk`
+      - `+ desktops.product.resource_type`
+      - `+ desktops.product.cloud_service_type`
+      - `+ desktops.product.volume_product_type`
+      - `+ desktops.product.status`
+      - `+ desktops.product.sub_product_list`
+  - **ListPoolDesktopsDetail**
+    - changes of response param
+      - `+ pool_desktops.os_host_name`
+      - `+ pool_desktops.ipv4`
+      - `+ pool_desktops.ipv6`
+      - `+ pool_desktops.resource_type`
+      - `+ pool_desktops.in_maintenance_mode`
+      - `+ pool_desktops.share_resource_sku`
+      - `+ pool_desktops.join_domain`
+      - `+ pool_desktops.deh_id`
+      - `+ pool_desktops.platform_kind`
+      - `+ pool_desktops.is_support_internet`
+      - `+ pool_desktops.internet_mode_list`
+      - `+ pool_desktops.need_apply_adn`
+      - `+ pool_desktops.desktop_isv`
+      - `+ pool_desktops.creation_type`
+      - `+ pool_desktops.root_resource_id`
+      - `+ pool_desktops.hour_package_info`
+      - `+ pool_desktops.root_volume.encrypt_flag`
+      - `+ pool_desktops.root_volume.kms_key`
+      - `+ pool_desktops.root_volume.key_alias`
+      - `+ pool_desktops.root_volume.kms_grant_id`
+      - `+ pool_desktops.root_volume.cluster_id`
+      - `+ pool_desktops.root_volume.resource_spec_code`
+      - `+ pool_desktops.product.architecture`
+      - `+ pool_desktops.product.cpu_desc`
+      - `+ pool_desktops.product.is_gpu`
+      - `+ pool_desktops.product.package_type`
+      - `+ pool_desktops.product.system_disk_type`
+      - `+ pool_desktops.product.system_disk_size`
+      - `+ pool_desktops.product.gpu_desc`
+      - `+ pool_desktops.product.contain_data_disk`
+      - `+ pool_desktops.product.resource_type`
+      - `+ pool_desktops.product.cloud_service_type`
+      - `+ pool_desktops.product.volume_product_type`
+      - `+ pool_desktops.product.status`
+      - `+ pool_desktops.product.sub_product_list`
+
+### HuaweiCloud SDK WorkspaceApp
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `DisassociateAppGroup`
+    - `BatchEnableApp`
+    - `BatchDisableApp`
+    - `CreateBucketOrAcl`
+    - `ListAuthorizationMailRecord`
+    - `SendAuthorizationMail`
+    - `SendAuthorizedMail`
+    - `ShowScalingPolicy`
+    - `CreateOrUpdateScalingPolicy`
+    - `DeleteScalingPolicy`
+    - `CountSubJobs`
+    - `ListSubJobs`
+    - `BatchDeleteAppSubJobs`
+    - `BatchReinstallServer`
+    - `BatchChangeServerImage`
+    - `BatchChangeServerMaintainMode`
+    - `BatchUpgradeHdaVersion`
+    - `ListServerHdaDetails`
+    - `ShowAccessAgentLatestVersion`
+    - `ListServerHdaUpgradeRecords`
+    - `ShowServerMetricData`
+    - `ListAccessAgentLatestVersion`
+    - `ShowServerGroupTag`
+    - `ListServerGroupTag`
+    - `CreateServerGroupTags`
+    - `DeleteServerGroupTags`
+    - `BatchCreateServerGroupTags`
+    - `BatchDeleteServerGroupTags`
+    - `ListTenantServerGroups`
+    - `ShowServerGroupRestrict`
+    - `ShowServerGroupState`
+    - `ListScheduleTasks`
+    - `CreateScheduleTask`
+    - `ShowScheduleTask`
+    - `DeleteScheduleTask`
+    - `UpdateScheduleTask`
+    - `BatchDeleteScheduleTask`
+    - `ListTaskExecuteHistory`
+    - `ListTaskExecuteDetail`
+    - `ListFutureExecutions`
+    - `CreateOrder`
+    - `ListAz`
+    - `ListCorpConfigInfo`
+    - `ListTenantProfile`
+    - `InitializeTenant`
+    - `ListImageJobs`
+    - `ListImageSubJobs`
+    - `BatchDeleteImageSubJobs`
+    - `ListSfs3Storage`
+    - `BatchDeletePersistentStorage`
+    - `ListPolicyGroupDetailInfo`
+    - `ListPolicyOfPolicyGroup`
+    - `ShowServer`
+    - `DeleteServer`
+    - `ShowImageServer`
+    - `ShowAppGroupDetail`
+    - `DeleteAppGroup`
+    - `ShowAppDetail`
+    - `DeleteAppIcon`
+    - `DeleteWarehouseApp`
+    - `ShowServerGroup`
+    - `ShowSessionTypes`
+    - `ShowPolicyGroup`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListAppConnection**
+    - changes of request param
+      - `+ public_ip`
+    - changes of response param
+      - `+ items.public_ip`
+      - `+ items.transaction_id`
+      - `+ items.end_time`
+      - `+ items.aps_instance_id`
+      - `+ items.aps_instance_name`
+      - `+ items.aps_host_id`
+      - `+ items.primary_server_group_id`
+      - `+ items.secondary_server_group_id`
+  - **ListUserConnection**
+    - changes of request param
+      - `+ public_ip`
+    - changes of response param
+      - `+ items.public_ip`
+  - **ListSessionByUserName**
+    - changes of response param
+      - `+ session_info_list.public_ip`
+  - **ListSessions**
+    - changes of request param
+      - `+ public_ip`
+    - changes of response param
+      - `+ items.public_ip`
+      - `+ items.primary_server_group_id`
+      - `+ items.secondary_server_group_id`
+  - **AuthorizeObs**
+    - changes of response param
+      - `+ roam_actions`
+      - `+ actions`
+      - `+ policy_statement_id`
+      - `+ policy.statement.policy_statement_id`
+      - `+ policy.statement.actions`
+      - `+ policy.statement.roam_actions`
+      - `- policy.statement.effect`
+      - `- policy.statement.action`
+      - `- policy.statement.resource`
+  - **ListServers**
+    - changes of request param
+      - `+ machine_name`
+      - `+ ip_addr`
+
 # 3.1.130 2025-01-02
 
 ### HuaweiCloud SDK CES

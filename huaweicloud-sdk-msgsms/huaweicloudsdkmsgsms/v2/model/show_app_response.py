@@ -92,7 +92,7 @@ class ShowAppResponse(SdkResponse):
         :type app_key: str
         :param up_link_addr: 上行短信地址
         :type up_link_addr: str
-        :param status: 应用状态   CREATED：待上线。应用暂未创建成功，请稍候。   SUSPENDED：暂停。无法发起业务请求。当客户所发短信内容触发业务违规，或客户申请退订短信业务时，运营经理会将客户短信应用暂停。   LAUNCHED：正常。应用添加成功，可以正常使用。
+        :param status: 应用状态   CREATED：待上线。应用暂未创建成功，请稍候。   SUSPENDED：暂停。无法发起业务请求。当客户所发短信内容触发业务违规，或客户申请退订短信业务时，运营经理会将客户短信应用暂停。   LAUNCHED：正常。应用添加成功，可以正常使用。   PROCESSING：资源待分配。请联系客户经理或通过工单系统申请配置资源。
         :type status: str
         :param industry: 行业类型
         :type industry: int
@@ -413,7 +413,7 @@ class ShowAppResponse(SdkResponse):
     def status(self):
         """Gets the status of this ShowAppResponse.
 
-        应用状态   CREATED：待上线。应用暂未创建成功，请稍候。   SUSPENDED：暂停。无法发起业务请求。当客户所发短信内容触发业务违规，或客户申请退订短信业务时，运营经理会将客户短信应用暂停。   LAUNCHED：正常。应用添加成功，可以正常使用。
+        应用状态   CREATED：待上线。应用暂未创建成功，请稍候。   SUSPENDED：暂停。无法发起业务请求。当客户所发短信内容触发业务违规，或客户申请退订短信业务时，运营经理会将客户短信应用暂停。   LAUNCHED：正常。应用添加成功，可以正常使用。   PROCESSING：资源待分配。请联系客户经理或通过工单系统申请配置资源。
 
         :return: The status of this ShowAppResponse.
         :rtype: str
@@ -424,7 +424,7 @@ class ShowAppResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this ShowAppResponse.
 
-        应用状态   CREATED：待上线。应用暂未创建成功，请稍候。   SUSPENDED：暂停。无法发起业务请求。当客户所发短信内容触发业务违规，或客户申请退订短信业务时，运营经理会将客户短信应用暂停。   LAUNCHED：正常。应用添加成功，可以正常使用。
+        应用状态   CREATED：待上线。应用暂未创建成功，请稍候。   SUSPENDED：暂停。无法发起业务请求。当客户所发短信内容触发业务违规，或客户申请退订短信业务时，运营经理会将客户短信应用暂停。   LAUNCHED：正常。应用添加成功，可以正常使用。   PROCESSING：资源待分配。请联系客户经理或通过工单系统申请配置资源。
 
         :param status: The status of this ShowAppResponse.
         :type status: str

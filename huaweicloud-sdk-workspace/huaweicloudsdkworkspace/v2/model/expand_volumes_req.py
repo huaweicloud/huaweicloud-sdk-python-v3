@@ -18,23 +18,27 @@ class ExpandVolumesReq:
 
     openapi_types = {
         'desktop_id': 'str',
+        'order_id': 'str',
         'volume_id': 'str',
         'new_size': 'int'
     }
 
     attribute_map = {
         'desktop_id': 'desktop_id',
+        'order_id': 'order_id',
         'volume_id': 'volume_id',
         'new_size': 'new_size'
     }
 
-    def __init__(self, desktop_id=None, volume_id=None, new_size=None):
+    def __init__(self, desktop_id=None, order_id=None, volume_id=None, new_size=None):
         """ExpandVolumesReq
 
         The model defined in huaweicloud sdk
 
         :param desktop_id: 桌面ID。
         :type desktop_id: str
+        :param order_id: 订单ID，包周期桌面扩容时使用。
+        :type order_id: str
         :param volume_id: 磁盘ID。
         :type volume_id: str
         :param new_size: 扩容后的磁盘大小，单位为GB。
@@ -44,12 +48,15 @@ class ExpandVolumesReq:
         
 
         self._desktop_id = None
+        self._order_id = None
         self._volume_id = None
         self._new_size = None
         self.discriminator = None
 
         if desktop_id is not None:
             self.desktop_id = desktop_id
+        if order_id is not None:
+            self.order_id = order_id
         if volume_id is not None:
             self.volume_id = volume_id
         if new_size is not None:
@@ -76,6 +83,28 @@ class ExpandVolumesReq:
         :type desktop_id: str
         """
         self._desktop_id = desktop_id
+
+    @property
+    def order_id(self):
+        """Gets the order_id of this ExpandVolumesReq.
+
+        订单ID，包周期桌面扩容时使用。
+
+        :return: The order_id of this ExpandVolumesReq.
+        :rtype: str
+        """
+        return self._order_id
+
+    @order_id.setter
+    def order_id(self, order_id):
+        """Sets the order_id of this ExpandVolumesReq.
+
+        订单ID，包周期桌面扩容时使用。
+
+        :param order_id: The order_id of this ExpandVolumesReq.
+        :type order_id: str
+        """
+        self._order_id = order_id
 
     @property
     def volume_id(self):

@@ -39,7 +39,7 @@ class SaveTtscVocabularyConfigsRequest:
         :type x_request_id: str
         :param x_app_user_id: 第三方用户ID。不允许输入中文。
         :type x_app_user_id: str
-        :param vocabulary_id: 词表id
+        :param vocabulary_id: 自定义读法id
         :type vocabulary_id: str
         :param body: Body of the SaveTtscVocabularyConfigsRequest
         :type body: :class:`huaweicloudsdkmetastudio.v1.SaveTtscVocabularyConfigsRequestBody`
@@ -109,7 +109,7 @@ class SaveTtscVocabularyConfigsRequest:
     def vocabulary_id(self):
         """Gets the vocabulary_id of this SaveTtscVocabularyConfigsRequest.
 
-        词表id
+        自定义读法id
 
         :return: The vocabulary_id of this SaveTtscVocabularyConfigsRequest.
         :rtype: str
@@ -120,7 +120,7 @@ class SaveTtscVocabularyConfigsRequest:
     def vocabulary_id(self, vocabulary_id):
         """Sets the vocabulary_id of this SaveTtscVocabularyConfigsRequest.
 
-        词表id
+        自定义读法id
 
         :param vocabulary_id: The vocabulary_id of this SaveTtscVocabularyConfigsRequest.
         :type vocabulary_id: str

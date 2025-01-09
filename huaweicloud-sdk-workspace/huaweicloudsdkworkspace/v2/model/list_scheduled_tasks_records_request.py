@@ -17,28 +17,42 @@ class ListScheduledTasksRecordsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'task_id': 'str'
+        'task_id': 'str',
+        'offset': 'int',
+        'limit': 'int'
     }
 
     attribute_map = {
-        'task_id': 'task_id'
+        'task_id': 'task_id',
+        'offset': 'offset',
+        'limit': 'limit'
     }
 
-    def __init__(self, task_id=None):
+    def __init__(self, task_id=None, offset=None, limit=None):
         """ListScheduledTasksRecordsRequest
 
         The model defined in huaweicloud sdk
 
         :param task_id: 任务ID。
         :type task_id: str
+        :param offset: 用于分页查询，查询的起始记录序号，从0开始。
+        :type offset: int
+        :param limit: 用于分页查询，返回桌面数量限制。取值范围0-100，默认值是10。
+        :type limit: int
         """
         
         
 
         self._task_id = None
+        self._offset = None
+        self._limit = None
         self.discriminator = None
 
         self.task_id = task_id
+        if offset is not None:
+            self.offset = offset
+        if limit is not None:
+            self.limit = limit
 
     @property
     def task_id(self):
@@ -61,6 +75,50 @@ class ListScheduledTasksRecordsRequest:
         :type task_id: str
         """
         self._task_id = task_id
+
+    @property
+    def offset(self):
+        """Gets the offset of this ListScheduledTasksRecordsRequest.
+
+        用于分页查询，查询的起始记录序号，从0开始。
+
+        :return: The offset of this ListScheduledTasksRecordsRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ListScheduledTasksRecordsRequest.
+
+        用于分页查询，查询的起始记录序号，从0开始。
+
+        :param offset: The offset of this ListScheduledTasksRecordsRequest.
+        :type offset: int
+        """
+        self._offset = offset
+
+    @property
+    def limit(self):
+        """Gets the limit of this ListScheduledTasksRecordsRequest.
+
+        用于分页查询，返回桌面数量限制。取值范围0-100，默认值是10。
+
+        :return: The limit of this ListScheduledTasksRecordsRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListScheduledTasksRecordsRequest.
+
+        用于分页查询，返回桌面数量限制。取值范围0-100，默认值是10。
+
+        :param limit: The limit of this ListScheduledTasksRecordsRequest.
+        :type limit: int
+        """
+        self._limit = limit
 
     def to_dict(self):
         """Returns the model properties as a dict"""

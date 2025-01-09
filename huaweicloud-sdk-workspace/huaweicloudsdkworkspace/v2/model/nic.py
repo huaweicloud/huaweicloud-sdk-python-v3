@@ -17,28 +17,35 @@ class Nic:
     sensitive_list = []
 
     openapi_types = {
-        'subnet_id': 'str'
+        'subnet_id': 'str',
+        'ip_address': 'str'
     }
 
     attribute_map = {
-        'subnet_id': 'subnet_id'
+        'subnet_id': 'subnet_id',
+        'ip_address': 'ip_address'
     }
 
-    def __init__(self, subnet_id=None):
+    def __init__(self, subnet_id=None, ip_address=None):
         """Nic
 
         The model defined in huaweicloud sdk
 
         :param subnet_id: 网卡对应的子网ID。
         :type subnet_id: str
+        :param ip_address: IP地址，不填或空字符串将自动分配。
+        :type ip_address: str
         """
         
         
 
         self._subnet_id = None
+        self._ip_address = None
         self.discriminator = None
 
         self.subnet_id = subnet_id
+        if ip_address is not None:
+            self.ip_address = ip_address
 
     @property
     def subnet_id(self):
@@ -61,6 +68,28 @@ class Nic:
         :type subnet_id: str
         """
         self._subnet_id = subnet_id
+
+    @property
+    def ip_address(self):
+        """Gets the ip_address of this Nic.
+
+        IP地址，不填或空字符串将自动分配。
+
+        :return: The ip_address of this Nic.
+        :rtype: str
+        """
+        return self._ip_address
+
+    @ip_address.setter
+    def ip_address(self, ip_address):
+        """Sets the ip_address of this Nic.
+
+        IP地址，不填或空字符串将自动分配。
+
+        :param ip_address: The ip_address of this Nic.
+        :type ip_address: str
+        """
+        self._ip_address = ip_address
 
     def to_dict(self):
         """Returns the model properties as a dict"""

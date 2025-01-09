@@ -1619,6 +1619,17 @@ class VpcAsyncClient(Client):
             query_params.append(('action', local_var_params['action']))
         if 'remote_ip_prefix' in local_var_params:
             query_params.append(('remote_ip_prefix', local_var_params['remote_ip_prefix']))
+        if 'priority' in local_var_params:
+            query_params.append(('priority', local_var_params['priority']))
+            collection_formats['priority'] = 'csv'
+        if 'ethertype' in local_var_params:
+            query_params.append(('ethertype', local_var_params['ethertype']))
+            collection_formats['ethertype'] = 'csv'
+        if 'remote_address_group_id' in local_var_params:
+            query_params.append(('remote_address_group_id', local_var_params['remote_address_group_id']))
+            collection_formats['remote_address_group_id'] = 'csv'
+        if 'enabled' in local_var_params:
+            query_params.append(('enabled', local_var_params['enabled']))
 
         header_params = {}
 

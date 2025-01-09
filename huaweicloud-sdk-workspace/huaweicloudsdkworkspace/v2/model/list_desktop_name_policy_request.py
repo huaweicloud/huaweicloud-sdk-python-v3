@@ -39,7 +39,7 @@ class ListDesktopNamePolicyRequest:
 
         :param is_contain_user: 是否包含用户名的桌面名称策略。 - true 包含 - false 不包含
         :type is_contain_user: bool
-        :param policy_name: 策略名称，由数字、字母、下划线组成，必须以字母或下划线开头，长度范围为1~30个字符，支持模糊筛选。
+        :param policy_name: 策略名称，由数字、字母、中文、下划线组成，必须以字母或下划线开头，长度范围为1~30个字符，支持模糊筛选。
         :type policy_name: str
         :param policy_id: 策略id。
         :type policy_id: str
@@ -95,7 +95,7 @@ class ListDesktopNamePolicyRequest:
     def policy_name(self):
         """Gets the policy_name of this ListDesktopNamePolicyRequest.
 
-        策略名称，由数字、字母、下划线组成，必须以字母或下划线开头，长度范围为1~30个字符，支持模糊筛选。
+        策略名称，由数字、字母、中文、下划线组成，必须以字母或下划线开头，长度范围为1~30个字符，支持模糊筛选。
 
         :return: The policy_name of this ListDesktopNamePolicyRequest.
         :rtype: str
@@ -106,7 +106,7 @@ class ListDesktopNamePolicyRequest:
     def policy_name(self, policy_name):
         """Sets the policy_name of this ListDesktopNamePolicyRequest.
 
-        策略名称，由数字、字母、下划线组成，必须以字母或下划线开头，长度范围为1~30个字符，支持模糊筛选。
+        策略名称，由数字、字母、中文、下划线组成，必须以字母或下划线开头，长度范围为1~30个字符，支持模糊筛选。
 
         :param policy_name: The policy_name of this ListDesktopNamePolicyRequest.
         :type policy_name: str

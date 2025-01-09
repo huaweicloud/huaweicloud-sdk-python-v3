@@ -48,8 +48,7 @@ class RecordInfoReq:
         self._segment_limit = None
         self.discriminator = None
 
-        if conf_uuid is not None:
-            self.conf_uuid = conf_uuid
+        self.conf_uuid = conf_uuid
         if segment_offset is not None:
             self.segment_offset = segment_offset
         if segment_limit is not None:

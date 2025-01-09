@@ -39,7 +39,8 @@ class UserConnectionInfo:
         'wi_ip': 'str',
         'update_time': 'datetime',
         'tenant_id': 'str',
-        'virtual_ip': 'str'
+        'virtual_ip': 'str',
+        'public_ip': 'str'
     }
 
     attribute_map = {
@@ -65,10 +66,11 @@ class UserConnectionInfo:
         'wi_ip': 'wi_ip',
         'update_time': 'update_time',
         'tenant_id': 'tenant_id',
-        'virtual_ip': 'virtual_ip'
+        'virtual_ip': 'virtual_ip',
+        'public_ip': 'public_ip'
     }
 
-    def __init__(self, id=None, connect_type=None, user_name=None, desktop_group_name=None, pre_conn_time=None, start_time=None, end_time=None, machine_sid=None, machine_name=None, failed_reason=None, failed_code=None, client_mac=None, client_name=None, client_ip=None, client_version=None, client_type=None, agent_version=None, vm_ip=None, connect_flag=None, wi_ip=None, update_time=None, tenant_id=None, virtual_ip=None):
+    def __init__(self, id=None, connect_type=None, user_name=None, desktop_group_name=None, pre_conn_time=None, start_time=None, end_time=None, machine_sid=None, machine_name=None, failed_reason=None, failed_code=None, client_mac=None, client_name=None, client_ip=None, client_version=None, client_type=None, agent_version=None, vm_ip=None, connect_flag=None, wi_ip=None, update_time=None, tenant_id=None, virtual_ip=None, public_ip=None):
         """UserConnectionInfo
 
         The model defined in huaweicloud sdk
@@ -119,6 +121,8 @@ class UserConnectionInfo:
         :type tenant_id: str
         :param virtual_ip: 会话虚拟ip。
         :type virtual_ip: str
+        :param public_ip: 客户端出口ip。
+        :type public_ip: str
         """
         
         
@@ -146,6 +150,7 @@ class UserConnectionInfo:
         self._update_time = None
         self._tenant_id = None
         self._virtual_ip = None
+        self._public_ip = None
         self.discriminator = None
 
         if id is not None:
@@ -194,6 +199,8 @@ class UserConnectionInfo:
             self.tenant_id = tenant_id
         if virtual_ip is not None:
             self.virtual_ip = virtual_ip
+        if public_ip is not None:
+            self.public_ip = public_ip
 
     @property
     def id(self):
@@ -700,6 +707,28 @@ class UserConnectionInfo:
         :type virtual_ip: str
         """
         self._virtual_ip = virtual_ip
+
+    @property
+    def public_ip(self):
+        """Gets the public_ip of this UserConnectionInfo.
+
+        客户端出口ip。
+
+        :return: The public_ip of this UserConnectionInfo.
+        :rtype: str
+        """
+        return self._public_ip
+
+    @public_ip.setter
+    def public_ip(self, public_ip):
+        """Sets the public_ip of this UserConnectionInfo.
+
+        客户端出口ip。
+
+        :param public_ip: The public_ip of this UserConnectionInfo.
+        :type public_ip: str
+        """
+        self._public_ip = public_ip
 
     def to_dict(self):
         """Returns the model properties as a dict"""

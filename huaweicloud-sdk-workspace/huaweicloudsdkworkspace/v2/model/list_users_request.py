@@ -18,29 +18,39 @@ class ListUsersRequest:
 
     openapi_types = {
         'user_name': 'str',
+        'user_email': 'str',
         'limit': 'str',
         'offset': 'str',
         'description': 'str',
         'active_type': 'str',
-        'group_name': 'str'
+        'group_name': 'str',
+        'share_space_subscription': 'bool',
+        'share_space_desktops': 'bool',
+        'is_query_total_desktops': 'bool'
     }
 
     attribute_map = {
         'user_name': 'user_name',
+        'user_email': 'user_email',
         'limit': 'limit',
         'offset': 'offset',
         'description': 'description',
         'active_type': 'active_type',
-        'group_name': 'group_name'
+        'group_name': 'group_name',
+        'share_space_subscription': 'share_space_subscription',
+        'share_space_desktops': 'share_space_desktops',
+        'is_query_total_desktops': 'is_query_total_desktops'
     }
 
-    def __init__(self, user_name=None, limit=None, offset=None, description=None, active_type=None, group_name=None):
+    def __init__(self, user_name=None, user_email=None, limit=None, offset=None, description=None, active_type=None, group_name=None, share_space_subscription=None, share_space_desktops=None, is_query_total_desktops=None):
         """ListUsersRequest
 
         The model defined in huaweicloud sdk
 
         :param user_name: 桌面用户名，长度范围为1-20，不能包含特殊字符，不能以数字开头。
         :type user_name: str
+        :param user_email: 用户邮箱。
+        :type user_email: str
         :param limit: 用于分页查询，返回用户数量限制。如果不指定，则返回所有符合条件的用户。
         :type limit: str
         :param offset: 分页查询起始条数。
@@ -51,20 +61,32 @@ class ListUsersRequest:
         :type active_type: str
         :param group_name: 桌面用户组名，精确匹配。
         :type group_name: str
+        :param share_space_subscription: 用户是否已订阅协同，true/false
+        :type share_space_subscription: bool
+        :param share_space_desktops: 用户是否已绑定协同桌面,true/false
+        :type share_space_desktops: bool
+        :param is_query_total_desktops: 是否查询用户绑定的桌面数,true/false,默认true
+        :type is_query_total_desktops: bool
         """
         
         
 
         self._user_name = None
+        self._user_email = None
         self._limit = None
         self._offset = None
         self._description = None
         self._active_type = None
         self._group_name = None
+        self._share_space_subscription = None
+        self._share_space_desktops = None
+        self._is_query_total_desktops = None
         self.discriminator = None
 
         if user_name is not None:
             self.user_name = user_name
+        if user_email is not None:
+            self.user_email = user_email
         if limit is not None:
             self.limit = limit
         if offset is not None:
@@ -75,6 +97,12 @@ class ListUsersRequest:
             self.active_type = active_type
         if group_name is not None:
             self.group_name = group_name
+        if share_space_subscription is not None:
+            self.share_space_subscription = share_space_subscription
+        if share_space_desktops is not None:
+            self.share_space_desktops = share_space_desktops
+        if is_query_total_desktops is not None:
+            self.is_query_total_desktops = is_query_total_desktops
 
     @property
     def user_name(self):
@@ -97,6 +125,28 @@ class ListUsersRequest:
         :type user_name: str
         """
         self._user_name = user_name
+
+    @property
+    def user_email(self):
+        """Gets the user_email of this ListUsersRequest.
+
+        用户邮箱。
+
+        :return: The user_email of this ListUsersRequest.
+        :rtype: str
+        """
+        return self._user_email
+
+    @user_email.setter
+    def user_email(self, user_email):
+        """Sets the user_email of this ListUsersRequest.
+
+        用户邮箱。
+
+        :param user_email: The user_email of this ListUsersRequest.
+        :type user_email: str
+        """
+        self._user_email = user_email
 
     @property
     def limit(self):
@@ -207,6 +257,72 @@ class ListUsersRequest:
         :type group_name: str
         """
         self._group_name = group_name
+
+    @property
+    def share_space_subscription(self):
+        """Gets the share_space_subscription of this ListUsersRequest.
+
+        用户是否已订阅协同，true/false
+
+        :return: The share_space_subscription of this ListUsersRequest.
+        :rtype: bool
+        """
+        return self._share_space_subscription
+
+    @share_space_subscription.setter
+    def share_space_subscription(self, share_space_subscription):
+        """Sets the share_space_subscription of this ListUsersRequest.
+
+        用户是否已订阅协同，true/false
+
+        :param share_space_subscription: The share_space_subscription of this ListUsersRequest.
+        :type share_space_subscription: bool
+        """
+        self._share_space_subscription = share_space_subscription
+
+    @property
+    def share_space_desktops(self):
+        """Gets the share_space_desktops of this ListUsersRequest.
+
+        用户是否已绑定协同桌面,true/false
+
+        :return: The share_space_desktops of this ListUsersRequest.
+        :rtype: bool
+        """
+        return self._share_space_desktops
+
+    @share_space_desktops.setter
+    def share_space_desktops(self, share_space_desktops):
+        """Sets the share_space_desktops of this ListUsersRequest.
+
+        用户是否已绑定协同桌面,true/false
+
+        :param share_space_desktops: The share_space_desktops of this ListUsersRequest.
+        :type share_space_desktops: bool
+        """
+        self._share_space_desktops = share_space_desktops
+
+    @property
+    def is_query_total_desktops(self):
+        """Gets the is_query_total_desktops of this ListUsersRequest.
+
+        是否查询用户绑定的桌面数,true/false,默认true
+
+        :return: The is_query_total_desktops of this ListUsersRequest.
+        :rtype: bool
+        """
+        return self._is_query_total_desktops
+
+    @is_query_total_desktops.setter
+    def is_query_total_desktops(self, is_query_total_desktops):
+        """Sets the is_query_total_desktops of this ListUsersRequest.
+
+        是否查询用户绑定的桌面数,true/false,默认true
+
+        :param is_query_total_desktops: The is_query_total_desktops of this ListUsersRequest.
+        :type is_query_total_desktops: bool
+        """
+        self._is_query_total_desktops = is_query_total_desktops
 
     def to_dict(self):
         """Returns the model properties as a dict"""

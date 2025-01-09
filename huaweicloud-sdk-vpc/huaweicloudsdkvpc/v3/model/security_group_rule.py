@@ -31,7 +31,8 @@ class SecurityGroupRule:
         'remote_address_group_id': 'str',
         'created_at': 'datetime',
         'updated_at': 'datetime',
-        'project_id': 'str'
+        'project_id': 'str',
+        'enabled': 'bool'
     }
 
     attribute_map = {
@@ -49,10 +50,11 @@ class SecurityGroupRule:
         'remote_address_group_id': 'remote_address_group_id',
         'created_at': 'created_at',
         'updated_at': 'updated_at',
-        'project_id': 'project_id'
+        'project_id': 'project_id',
+        'enabled': 'enabled'
     }
 
-    def __init__(self, id=None, description=None, security_group_id=None, direction=None, protocol=None, ethertype=None, multiport=None, action=None, priority=None, remote_group_id=None, remote_ip_prefix=None, remote_address_group_id=None, created_at=None, updated_at=None, project_id=None):
+    def __init__(self, id=None, description=None, security_group_id=None, direction=None, protocol=None, ethertype=None, multiport=None, action=None, priority=None, remote_group_id=None, remote_ip_prefix=None, remote_address_group_id=None, created_at=None, updated_at=None, project_id=None, enabled=None):
         """SecurityGroupRule
 
         The model defined in huaweicloud sdk
@@ -87,6 +89,8 @@ class SecurityGroupRule:
         :type updated_at: datetime
         :param project_id: 功能说明：安全组规则所属项目ID
         :type project_id: str
+        :param enabled: 功能说明：是否启用安全组规则。 取值范围：true, false。 约束：默认值为true。
+        :type enabled: bool
         """
         
         
@@ -106,6 +110,7 @@ class SecurityGroupRule:
         self._created_at = None
         self._updated_at = None
         self._project_id = None
+        self._enabled = None
         self.discriminator = None
 
         self.id = id
@@ -123,6 +128,7 @@ class SecurityGroupRule:
         self.created_at = created_at
         self.updated_at = updated_at
         self.project_id = project_id
+        self.enabled = enabled
 
     @property
     def id(self):
@@ -453,6 +459,28 @@ class SecurityGroupRule:
         :type project_id: str
         """
         self._project_id = project_id
+
+    @property
+    def enabled(self):
+        """Gets the enabled of this SecurityGroupRule.
+
+        功能说明：是否启用安全组规则。 取值范围：true, false。 约束：默认值为true。
+
+        :return: The enabled of this SecurityGroupRule.
+        :rtype: bool
+        """
+        return self._enabled
+
+    @enabled.setter
+    def enabled(self, enabled):
+        """Sets the enabled of this SecurityGroupRule.
+
+        功能说明：是否启用安全组规则。 取值范围：true, false。 约束：默认值为true。
+
+        :param enabled: The enabled of this SecurityGroupRule.
+        :type enabled: bool
+        """
+        self._enabled = enabled
 
     def to_dict(self):
         """Returns the model properties as a dict"""

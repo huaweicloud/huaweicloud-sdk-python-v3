@@ -27,7 +27,8 @@ class ScheduledTask:
         'enable': 'bool',
         'description': 'str',
         'priority': 'int',
-        'time_zone': 'str'
+        'time_zone': 'str',
+        'wait_time': 'int'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class ScheduledTask:
         'enable': 'enable',
         'description': 'description',
         'priority': 'priority',
-        'time_zone': 'time_zone'
+        'time_zone': 'time_zone',
+        'wait_time': 'wait_time'
     }
 
-    def __init__(self, id=None, task_name=None, task_type=None, scheduled_type=None, life_cycle_type=None, last_status=None, next_execution_time=None, enable=None, description=None, priority=None, time_zone=None):
+    def __init__(self, id=None, task_name=None, task_type=None, scheduled_type=None, life_cycle_type=None, last_status=None, next_execution_time=None, enable=None, description=None, priority=None, time_zone=None, wait_time=None):
         """ScheduledTask
 
         The model defined in huaweicloud sdk
@@ -53,7 +55,7 @@ class ScheduledTask:
         :type id: str
         :param task_name: 任务名称。
         :type task_name: str
-        :param task_type: 任务类型。START：开机，STOP：关机，REBOOT：重启，HIBERNATE：休眠，REBUILD：重建系统盘，EXECUTE_SCRIPT：执行脚本。
+        :param task_type: 任务类型。START：开机，STOP：关机，REBOOT：重启，HIBERNATE：休眠，REBUILD：重建系统盘，EXECUTE_SCRIPT：执行脚本，CREATE_SNAPSHOT：创建快照。
         :type task_type: str
         :param scheduled_type: 执行周期。FIXED_TIME：指定时间，DAY：按天，WEEK：按周，MONTH：按月。
         :type scheduled_type: str
@@ -71,6 +73,8 @@ class ScheduledTask:
         :type priority: int
         :param time_zone: 时区
         :type time_zone: str
+        :param wait_time: 触发式任务触发后，等待时长。
+        :type wait_time: int
         """
         
         
@@ -86,6 +90,7 @@ class ScheduledTask:
         self._description = None
         self._priority = None
         self._time_zone = None
+        self._wait_time = None
         self.discriminator = None
 
         if id is not None:
@@ -110,6 +115,8 @@ class ScheduledTask:
             self.priority = priority
         if time_zone is not None:
             self.time_zone = time_zone
+        if wait_time is not None:
+            self.wait_time = wait_time
 
     @property
     def id(self):
@@ -159,7 +166,7 @@ class ScheduledTask:
     def task_type(self):
         """Gets the task_type of this ScheduledTask.
 
-        任务类型。START：开机，STOP：关机，REBOOT：重启，HIBERNATE：休眠，REBUILD：重建系统盘，EXECUTE_SCRIPT：执行脚本。
+        任务类型。START：开机，STOP：关机，REBOOT：重启，HIBERNATE：休眠，REBUILD：重建系统盘，EXECUTE_SCRIPT：执行脚本，CREATE_SNAPSHOT：创建快照。
 
         :return: The task_type of this ScheduledTask.
         :rtype: str
@@ -170,7 +177,7 @@ class ScheduledTask:
     def task_type(self, task_type):
         """Sets the task_type of this ScheduledTask.
 
-        任务类型。START：开机，STOP：关机，REBOOT：重启，HIBERNATE：休眠，REBUILD：重建系统盘，EXECUTE_SCRIPT：执行脚本。
+        任务类型。START：开机，STOP：关机，REBOOT：重启，HIBERNATE：休眠，REBUILD：重建系统盘，EXECUTE_SCRIPT：执行脚本，CREATE_SNAPSHOT：创建快照。
 
         :param task_type: The task_type of this ScheduledTask.
         :type task_type: str
@@ -352,6 +359,28 @@ class ScheduledTask:
         :type time_zone: str
         """
         self._time_zone = time_zone
+
+    @property
+    def wait_time(self):
+        """Gets the wait_time of this ScheduledTask.
+
+        触发式任务触发后，等待时长。
+
+        :return: The wait_time of this ScheduledTask.
+        :rtype: int
+        """
+        return self._wait_time
+
+    @wait_time.setter
+    def wait_time(self, wait_time):
+        """Sets the wait_time of this ScheduledTask.
+
+        触发式任务触发后，等待时长。
+
+        :param wait_time: The wait_time of this ScheduledTask.
+        :type wait_time: int
+        """
+        self._wait_time = wait_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

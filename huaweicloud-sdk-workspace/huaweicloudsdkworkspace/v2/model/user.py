@@ -18,6 +18,7 @@ class User:
 
     openapi_types = {
         'id': 'str',
+        'sid': 'str',
         'user_name': 'str',
         'user_email': 'str',
         'total_desktops': 'int',
@@ -31,11 +32,15 @@ class User:
         'next_login_change_password': 'bool',
         'description': 'str',
         'locked': 'bool',
-        'disabled': 'bool'
+        'disabled': 'bool',
+        'share_space_subscription': 'bool',
+        'share_space_desktops': 'int',
+        'group_names': 'list[str]'
     }
 
     attribute_map = {
         'id': 'id',
+        'sid': 'sid',
         'user_name': 'user_name',
         'user_email': 'user_email',
         'total_desktops': 'total_desktops',
@@ -49,16 +54,21 @@ class User:
         'next_login_change_password': 'next_login_change_password',
         'description': 'description',
         'locked': 'locked',
-        'disabled': 'disabled'
+        'disabled': 'disabled',
+        'share_space_subscription': 'share_space_subscription',
+        'share_space_desktops': 'share_space_desktops',
+        'group_names': 'group_names'
     }
 
-    def __init__(self, id=None, user_name=None, user_email=None, total_desktops=None, user_phone=None, active_type=None, is_pre_user=None, account_expires=None, password_never_expired=None, account_expired=None, enable_change_password=None, next_login_change_password=None, description=None, locked=None, disabled=None):
+    def __init__(self, id=None, sid=None, user_name=None, user_email=None, total_desktops=None, user_phone=None, active_type=None, is_pre_user=None, account_expires=None, password_never_expired=None, account_expired=None, enable_change_password=None, next_login_change_password=None, description=None, locked=None, disabled=None, share_space_subscription=None, share_space_desktops=None, group_names=None):
         """User
 
         The model defined in huaweicloud sdk
 
         :param id: 用户ID。
         :type id: str
+        :param sid: 用户ID。
+        :type sid: str
         :param user_name: 桌面用户名。
         :type user_name: str
         :param user_email: 用户邮箱。
@@ -87,11 +97,18 @@ class User:
         :type locked: bool
         :param disabled: 账户是否禁用，true表示被禁用，false表示未禁用。
         :type disabled: bool
+        :param share_space_subscription: 用户是否订阅协同，true表示已订阅，false表示未订阅
+        :type share_space_subscription: bool
+        :param share_space_desktops: 用户已绑定协同桌面数
+        :type share_space_desktops: int
+        :param group_names: 加入的组列表。
+        :type group_names: list[str]
         """
         
         
 
         self._id = None
+        self._sid = None
         self._user_name = None
         self._user_email = None
         self._total_desktops = None
@@ -106,10 +123,15 @@ class User:
         self._description = None
         self._locked = None
         self._disabled = None
+        self._share_space_subscription = None
+        self._share_space_desktops = None
+        self._group_names = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
+        if sid is not None:
+            self.sid = sid
         if user_name is not None:
             self.user_name = user_name
         if user_email is not None:
@@ -138,6 +160,12 @@ class User:
             self.locked = locked
         if disabled is not None:
             self.disabled = disabled
+        if share_space_subscription is not None:
+            self.share_space_subscription = share_space_subscription
+        if share_space_desktops is not None:
+            self.share_space_desktops = share_space_desktops
+        if group_names is not None:
+            self.group_names = group_names
 
     @property
     def id(self):
@@ -160,6 +188,28 @@ class User:
         :type id: str
         """
         self._id = id
+
+    @property
+    def sid(self):
+        """Gets the sid of this User.
+
+        用户ID。
+
+        :return: The sid of this User.
+        :rtype: str
+        """
+        return self._sid
+
+    @sid.setter
+    def sid(self, sid):
+        """Sets the sid of this User.
+
+        用户ID。
+
+        :param sid: The sid of this User.
+        :type sid: str
+        """
+        self._sid = sid
 
     @property
     def user_name(self):
@@ -468,6 +518,72 @@ class User:
         :type disabled: bool
         """
         self._disabled = disabled
+
+    @property
+    def share_space_subscription(self):
+        """Gets the share_space_subscription of this User.
+
+        用户是否订阅协同，true表示已订阅，false表示未订阅
+
+        :return: The share_space_subscription of this User.
+        :rtype: bool
+        """
+        return self._share_space_subscription
+
+    @share_space_subscription.setter
+    def share_space_subscription(self, share_space_subscription):
+        """Sets the share_space_subscription of this User.
+
+        用户是否订阅协同，true表示已订阅，false表示未订阅
+
+        :param share_space_subscription: The share_space_subscription of this User.
+        :type share_space_subscription: bool
+        """
+        self._share_space_subscription = share_space_subscription
+
+    @property
+    def share_space_desktops(self):
+        """Gets the share_space_desktops of this User.
+
+        用户已绑定协同桌面数
+
+        :return: The share_space_desktops of this User.
+        :rtype: int
+        """
+        return self._share_space_desktops
+
+    @share_space_desktops.setter
+    def share_space_desktops(self, share_space_desktops):
+        """Sets the share_space_desktops of this User.
+
+        用户已绑定协同桌面数
+
+        :param share_space_desktops: The share_space_desktops of this User.
+        :type share_space_desktops: int
+        """
+        self._share_space_desktops = share_space_desktops
+
+    @property
+    def group_names(self):
+        """Gets the group_names of this User.
+
+        加入的组列表。
+
+        :return: The group_names of this User.
+        :rtype: list[str]
+        """
+        return self._group_names
+
+    @group_names.setter
+    def group_names(self, group_names):
+        """Sets the group_names of this User.
+
+        加入的组列表。
+
+        :param group_names: The group_names of this User.
+        :type group_names: list[str]
+        """
+        self._group_names = group_names
 
     def to_dict(self):
         """Returns the model properties as a dict"""

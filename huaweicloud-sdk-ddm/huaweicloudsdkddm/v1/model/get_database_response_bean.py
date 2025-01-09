@@ -18,9 +18,9 @@ class GetDatabaseResponseBean:
 
     openapi_types = {
         'name': 'str',
-        'created': 'str',
+        'created': 'int',
         'status': 'str',
-        'updated': 'str',
+        'updated': 'int',
         'databases': 'list[GetDatabases]',
         'shard_mode': 'str',
         'shard_number': 'int',
@@ -50,11 +50,11 @@ class GetDatabaseResponseBean:
         :param name: 逻辑库名称。
         :type name: str
         :param created: 逻辑库的创建时间。
-        :type created: str
+        :type created: int
         :param status: 状态。
         :type status: str
         :param updated: DDM实例最后更新时间。
-        :type updated: str
+        :type updated: int
         :param databases: 逻辑库分片的详细信息。
         :type databases: list[:class:`huaweicloudsdkddm.v1.GetDatabases`]
         :param shard_mode: 逻辑库的工作模式。  - cluster表示逻辑库是拆分模式。 - single表示逻辑库是非拆分模式。
@@ -123,7 +123,7 @@ class GetDatabaseResponseBean:
         逻辑库的创建时间。
 
         :return: The created of this GetDatabaseResponseBean.
-        :rtype: str
+        :rtype: int
         """
         return self._created
 
@@ -134,7 +134,7 @@ class GetDatabaseResponseBean:
         逻辑库的创建时间。
 
         :param created: The created of this GetDatabaseResponseBean.
-        :type created: str
+        :type created: int
         """
         self._created = created
 
@@ -167,7 +167,7 @@ class GetDatabaseResponseBean:
         DDM实例最后更新时间。
 
         :return: The updated of this GetDatabaseResponseBean.
-        :rtype: str
+        :rtype: int
         """
         return self._updated
 
@@ -178,7 +178,7 @@ class GetDatabaseResponseBean:
         DDM实例最后更新时间。
 
         :param updated: The updated of this GetDatabaseResponseBean.
-        :type updated: str
+        :type updated: int
         """
         self._updated = updated
 

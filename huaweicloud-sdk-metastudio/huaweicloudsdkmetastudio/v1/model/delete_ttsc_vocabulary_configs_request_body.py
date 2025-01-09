@@ -29,7 +29,7 @@ class DeleteTtscVocabularyConfigsRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param id: 词表id
+        :param id: 自定义读法id
         :type id: list[str]
         """
         
@@ -45,7 +45,7 @@ class DeleteTtscVocabularyConfigsRequestBody:
     def id(self):
         """Gets the id of this DeleteTtscVocabularyConfigsRequestBody.
 
-        词表id
+        自定义读法id
 
         :return: The id of this DeleteTtscVocabularyConfigsRequestBody.
         :rtype: list[str]
@@ -56,7 +56,7 @@ class DeleteTtscVocabularyConfigsRequestBody:
     def id(self, id):
         """Sets the id of this DeleteTtscVocabularyConfigsRequestBody.
 
-        词表id
+        自定义读法id
 
         :param id: The id of this DeleteTtscVocabularyConfigsRequestBody.
         :type id: list[str]

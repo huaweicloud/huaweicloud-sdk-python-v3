@@ -26,7 +26,8 @@ class ScheduledTasksRecords:
         'failed_num': 'int',
         'skip_num': 'int',
         'time_zone': 'str',
-        'execute_task_id': 'str'
+        'execute_task_id': 'str',
+        'execute_object_type': 'str'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class ScheduledTasksRecords:
         'failed_num': 'failed_num',
         'skip_num': 'skip_num',
         'time_zone': 'time_zone',
-        'execute_task_id': 'execute_task_id'
+        'execute_task_id': 'execute_task_id',
+        'execute_object_type': 'execute_object_type'
     }
 
-    def __init__(self, id=None, start_time=None, task_type=None, scheduled_type=None, status=None, success_num=None, failed_num=None, skip_num=None, time_zone=None, execute_task_id=None):
+    def __init__(self, id=None, start_time=None, task_type=None, scheduled_type=None, status=None, success_num=None, failed_num=None, skip_num=None, time_zone=None, execute_task_id=None, execute_object_type=None):
         """ScheduledTasksRecords
 
         The model defined in huaweicloud sdk
@@ -67,6 +69,8 @@ class ScheduledTasksRecords:
         :type time_zone: str
         :param execute_task_id: 执行定时任务的任务id，只有定时执行脚本返回。
         :type execute_task_id: str
+        :param execute_object_type: 执行定时任务的对象类型，只有定时执行脚本返回。
+        :type execute_object_type: str
         """
         
         
@@ -81,6 +85,7 @@ class ScheduledTasksRecords:
         self._skip_num = None
         self._time_zone = None
         self._execute_task_id = None
+        self._execute_object_type = None
         self.discriminator = None
 
         if id is not None:
@@ -103,6 +108,8 @@ class ScheduledTasksRecords:
             self.time_zone = time_zone
         if execute_task_id is not None:
             self.execute_task_id = execute_task_id
+        if execute_object_type is not None:
+            self.execute_object_type = execute_object_type
 
     @property
     def id(self):
@@ -323,6 +330,28 @@ class ScheduledTasksRecords:
         :type execute_task_id: str
         """
         self._execute_task_id = execute_task_id
+
+    @property
+    def execute_object_type(self):
+        """Gets the execute_object_type of this ScheduledTasksRecords.
+
+        执行定时任务的对象类型，只有定时执行脚本返回。
+
+        :return: The execute_object_type of this ScheduledTasksRecords.
+        :rtype: str
+        """
+        return self._execute_object_type
+
+    @execute_object_type.setter
+    def execute_object_type(self, execute_object_type):
+        """Sets the execute_object_type of this ScheduledTasksRecords.
+
+        执行定时任务的对象类型，只有定时执行脚本返回。
+
+        :param execute_object_type: The execute_object_type of this ScheduledTasksRecords.
+        :type execute_object_type: str
+        """
+        self._execute_object_type = execute_object_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

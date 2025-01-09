@@ -26,7 +26,8 @@ class BatchCreateSecurityGroupRulesOption:
         'remote_group_id': 'str',
         'remote_address_group_id': 'str',
         'action': 'str',
-        'priority': 'str'
+        'priority': 'str',
+        'enabled': 'bool'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class BatchCreateSecurityGroupRulesOption:
         'remote_group_id': 'remote_group_id',
         'remote_address_group_id': 'remote_address_group_id',
         'action': 'action',
-        'priority': 'priority'
+        'priority': 'priority',
+        'enabled': 'enabled'
     }
 
-    def __init__(self, description=None, direction=None, ethertype=None, protocol=None, multiport=None, remote_ip_prefix=None, remote_group_id=None, remote_address_group_id=None, action=None, priority=None):
+    def __init__(self, description=None, direction=None, ethertype=None, protocol=None, multiport=None, remote_ip_prefix=None, remote_group_id=None, remote_address_group_id=None, action=None, priority=None, enabled=None):
         """BatchCreateSecurityGroupRulesOption
 
         The model defined in huaweicloud sdk
@@ -67,6 +69,8 @@ class BatchCreateSecurityGroupRulesOption:
         :type action: str
         :param priority: 功能说明：规则在安全组中的优先级 取值范围：1~100，1代表最高优先级 约束：默认值为1
         :type priority: str
+        :param enabled: 功能说明：是否启用安全组规则。 取值范围：true, false。 约束：默认值为true。
+        :type enabled: bool
         """
         
         
@@ -81,6 +85,7 @@ class BatchCreateSecurityGroupRulesOption:
         self._remote_address_group_id = None
         self._action = None
         self._priority = None
+        self._enabled = None
         self.discriminator = None
 
         if description is not None:
@@ -102,6 +107,8 @@ class BatchCreateSecurityGroupRulesOption:
             self.action = action
         if priority is not None:
             self.priority = priority
+        if enabled is not None:
+            self.enabled = enabled
 
     @property
     def description(self):
@@ -322,6 +329,28 @@ class BatchCreateSecurityGroupRulesOption:
         :type priority: str
         """
         self._priority = priority
+
+    @property
+    def enabled(self):
+        """Gets the enabled of this BatchCreateSecurityGroupRulesOption.
+
+        功能说明：是否启用安全组规则。 取值范围：true, false。 约束：默认值为true。
+
+        :return: The enabled of this BatchCreateSecurityGroupRulesOption.
+        :rtype: bool
+        """
+        return self._enabled
+
+    @enabled.setter
+    def enabled(self, enabled):
+        """Sets the enabled of this BatchCreateSecurityGroupRulesOption.
+
+        功能说明：是否启用安全组规则。 取值范围：true, false。 约束：默认值为true。
+
+        :param enabled: The enabled of this BatchCreateSecurityGroupRulesOption.
+        :type enabled: bool
+        """
+        self._enabled = enabled
 
     def to_dict(self):
         """Returns the model properties as a dict"""

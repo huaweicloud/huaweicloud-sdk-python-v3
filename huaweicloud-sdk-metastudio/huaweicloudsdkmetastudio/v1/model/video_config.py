@@ -73,7 +73,7 @@ class VideoConfig:
         :type dy: int
         :param is_enable_super_resolution: **参数解释**： 视频是否开启超分。 **约束限制**： 仅分身数字人视频制作支持。 **取值范围** * true: 开启 * false: 不开启
         :type is_enable_super_resolution: bool
-        :param is_end_at_first_frame: **参数解释**： 视频结束帧是否跟起始帧相同。需要多个数字人视频无缝拼接时设置成true。 **约束限制**： 仅分身数字人视频制作支持。 **取值范围** * true: 开启 * false: 不开启
+        :param is_end_at_first_frame: **参数解释**： 视频结束帧是否跟起始帧相同。需要多个数字人视频无缝拼接时设置成true。 **约束限制**： 仅分身数字人视频制作支持，当视频制作时插入动作标签后此设置将失效。 **取值范围** * true: 开启 * false: 不开启
         :type is_end_at_first_frame: bool
         """
         
@@ -356,7 +356,7 @@ class VideoConfig:
     def is_end_at_first_frame(self):
         """Gets the is_end_at_first_frame of this VideoConfig.
 
-        **参数解释**： 视频结束帧是否跟起始帧相同。需要多个数字人视频无缝拼接时设置成true。 **约束限制**： 仅分身数字人视频制作支持。 **取值范围** * true: 开启 * false: 不开启
+        **参数解释**： 视频结束帧是否跟起始帧相同。需要多个数字人视频无缝拼接时设置成true。 **约束限制**： 仅分身数字人视频制作支持，当视频制作时插入动作标签后此设置将失效。 **取值范围** * true: 开启 * false: 不开启
 
         :return: The is_end_at_first_frame of this VideoConfig.
         :rtype: bool
@@ -367,7 +367,7 @@ class VideoConfig:
     def is_end_at_first_frame(self, is_end_at_first_frame):
         """Sets the is_end_at_first_frame of this VideoConfig.
 
-        **参数解释**： 视频结束帧是否跟起始帧相同。需要多个数字人视频无缝拼接时设置成true。 **约束限制**： 仅分身数字人视频制作支持。 **取值范围** * true: 开启 * false: 不开启
+        **参数解释**： 视频结束帧是否跟起始帧相同。需要多个数字人视频无缝拼接时设置成true。 **约束限制**： 仅分身数字人视频制作支持，当视频制作时插入动作标签后此设置将失效。 **取值范围** * true: 开启 * false: 不开启
 
         :param is_end_at_first_frame: The is_end_at_first_frame of this VideoConfig.
         :type is_end_at_first_frame: bool

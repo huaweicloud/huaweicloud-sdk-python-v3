@@ -36,7 +36,15 @@ class AppConnectionInfo:
         'vm_ip': 'str',
         'wi_ip': 'str',
         'tenant_id': 'str',
-        'virtual_ip': 'str'
+        'virtual_ip': 'str',
+        'public_ip': 'str',
+        'transaction_id': 'str',
+        'end_time': 'datetime',
+        'aps_instance_id': 'str',
+        'aps_instance_name': 'str',
+        'aps_host_id': 'str',
+        'primary_server_group_id': 'str',
+        'secondary_server_group_id': 'str'
     }
 
     attribute_map = {
@@ -59,10 +67,18 @@ class AppConnectionInfo:
         'vm_ip': 'vm_ip',
         'wi_ip': 'wi_ip',
         'tenant_id': 'tenant_id',
-        'virtual_ip': 'virtual_ip'
+        'virtual_ip': 'virtual_ip',
+        'public_ip': 'public_ip',
+        'transaction_id': 'transaction_id',
+        'end_time': 'end_time',
+        'aps_instance_id': 'aps_instance_id',
+        'aps_instance_name': 'aps_instance_name',
+        'aps_host_id': 'aps_host_id',
+        'primary_server_group_id': 'primary_server_group_id',
+        'secondary_server_group_id': 'secondary_server_group_id'
     }
 
-    def __init__(self, id=None, sid=None, machine_name=None, user_name=None, app_group_name=None, app_group_id=None, app_name=None, brokering_time=None, failed_code=None, connection_failure_reason=None, client_mac=None, client_name=None, client_ip=None, client_version=None, client_type=None, agent_version=None, vm_ip=None, wi_ip=None, tenant_id=None, virtual_ip=None):
+    def __init__(self, id=None, sid=None, machine_name=None, user_name=None, app_group_name=None, app_group_id=None, app_name=None, brokering_time=None, failed_code=None, connection_failure_reason=None, client_mac=None, client_name=None, client_ip=None, client_version=None, client_type=None, agent_version=None, vm_ip=None, wi_ip=None, tenant_id=None, virtual_ip=None, public_ip=None, transaction_id=None, end_time=None, aps_instance_id=None, aps_instance_name=None, aps_host_id=None, primary_server_group_id=None, secondary_server_group_id=None):
         """AppConnectionInfo
 
         The model defined in huaweicloud sdk
@@ -107,6 +123,22 @@ class AppConnectionInfo:
         :type tenant_id: str
         :param virtual_ip: 会话虚拟ip。
         :type virtual_ip: str
+        :param public_ip: 客户端出口ip。
+        :type public_ip: str
+        :param transaction_id: 事务id。
+        :type transaction_id: str
+        :param end_time: 登录应用结束时间。
+        :type end_time: datetime
+        :param aps_instance_id: aps服务器ID。
+        :type aps_instance_id: str
+        :param aps_instance_name: aps服务器名称。
+        :type aps_instance_name: str
+        :param aps_host_id: wdh专属主机ID。
+        :type aps_host_id: str
+        :param primary_server_group_id: 主服务器组ID。
+        :type primary_server_group_id: str
+        :param secondary_server_group_id: 主服务器组ID。
+        :type secondary_server_group_id: str
         """
         
         
@@ -131,6 +163,14 @@ class AppConnectionInfo:
         self._wi_ip = None
         self._tenant_id = None
         self._virtual_ip = None
+        self._public_ip = None
+        self._transaction_id = None
+        self._end_time = None
+        self._aps_instance_id = None
+        self._aps_instance_name = None
+        self._aps_host_id = None
+        self._primary_server_group_id = None
+        self._secondary_server_group_id = None
         self.discriminator = None
 
         if id is not None:
@@ -173,6 +213,22 @@ class AppConnectionInfo:
             self.tenant_id = tenant_id
         if virtual_ip is not None:
             self.virtual_ip = virtual_ip
+        if public_ip is not None:
+            self.public_ip = public_ip
+        if transaction_id is not None:
+            self.transaction_id = transaction_id
+        if end_time is not None:
+            self.end_time = end_time
+        if aps_instance_id is not None:
+            self.aps_instance_id = aps_instance_id
+        if aps_instance_name is not None:
+            self.aps_instance_name = aps_instance_name
+        if aps_host_id is not None:
+            self.aps_host_id = aps_host_id
+        if primary_server_group_id is not None:
+            self.primary_server_group_id = primary_server_group_id
+        if secondary_server_group_id is not None:
+            self.secondary_server_group_id = secondary_server_group_id
 
     @property
     def id(self):
@@ -613,6 +669,182 @@ class AppConnectionInfo:
         :type virtual_ip: str
         """
         self._virtual_ip = virtual_ip
+
+    @property
+    def public_ip(self):
+        """Gets the public_ip of this AppConnectionInfo.
+
+        客户端出口ip。
+
+        :return: The public_ip of this AppConnectionInfo.
+        :rtype: str
+        """
+        return self._public_ip
+
+    @public_ip.setter
+    def public_ip(self, public_ip):
+        """Sets the public_ip of this AppConnectionInfo.
+
+        客户端出口ip。
+
+        :param public_ip: The public_ip of this AppConnectionInfo.
+        :type public_ip: str
+        """
+        self._public_ip = public_ip
+
+    @property
+    def transaction_id(self):
+        """Gets the transaction_id of this AppConnectionInfo.
+
+        事务id。
+
+        :return: The transaction_id of this AppConnectionInfo.
+        :rtype: str
+        """
+        return self._transaction_id
+
+    @transaction_id.setter
+    def transaction_id(self, transaction_id):
+        """Sets the transaction_id of this AppConnectionInfo.
+
+        事务id。
+
+        :param transaction_id: The transaction_id of this AppConnectionInfo.
+        :type transaction_id: str
+        """
+        self._transaction_id = transaction_id
+
+    @property
+    def end_time(self):
+        """Gets the end_time of this AppConnectionInfo.
+
+        登录应用结束时间。
+
+        :return: The end_time of this AppConnectionInfo.
+        :rtype: datetime
+        """
+        return self._end_time
+
+    @end_time.setter
+    def end_time(self, end_time):
+        """Sets the end_time of this AppConnectionInfo.
+
+        登录应用结束时间。
+
+        :param end_time: The end_time of this AppConnectionInfo.
+        :type end_time: datetime
+        """
+        self._end_time = end_time
+
+    @property
+    def aps_instance_id(self):
+        """Gets the aps_instance_id of this AppConnectionInfo.
+
+        aps服务器ID。
+
+        :return: The aps_instance_id of this AppConnectionInfo.
+        :rtype: str
+        """
+        return self._aps_instance_id
+
+    @aps_instance_id.setter
+    def aps_instance_id(self, aps_instance_id):
+        """Sets the aps_instance_id of this AppConnectionInfo.
+
+        aps服务器ID。
+
+        :param aps_instance_id: The aps_instance_id of this AppConnectionInfo.
+        :type aps_instance_id: str
+        """
+        self._aps_instance_id = aps_instance_id
+
+    @property
+    def aps_instance_name(self):
+        """Gets the aps_instance_name of this AppConnectionInfo.
+
+        aps服务器名称。
+
+        :return: The aps_instance_name of this AppConnectionInfo.
+        :rtype: str
+        """
+        return self._aps_instance_name
+
+    @aps_instance_name.setter
+    def aps_instance_name(self, aps_instance_name):
+        """Sets the aps_instance_name of this AppConnectionInfo.
+
+        aps服务器名称。
+
+        :param aps_instance_name: The aps_instance_name of this AppConnectionInfo.
+        :type aps_instance_name: str
+        """
+        self._aps_instance_name = aps_instance_name
+
+    @property
+    def aps_host_id(self):
+        """Gets the aps_host_id of this AppConnectionInfo.
+
+        wdh专属主机ID。
+
+        :return: The aps_host_id of this AppConnectionInfo.
+        :rtype: str
+        """
+        return self._aps_host_id
+
+    @aps_host_id.setter
+    def aps_host_id(self, aps_host_id):
+        """Sets the aps_host_id of this AppConnectionInfo.
+
+        wdh专属主机ID。
+
+        :param aps_host_id: The aps_host_id of this AppConnectionInfo.
+        :type aps_host_id: str
+        """
+        self._aps_host_id = aps_host_id
+
+    @property
+    def primary_server_group_id(self):
+        """Gets the primary_server_group_id of this AppConnectionInfo.
+
+        主服务器组ID。
+
+        :return: The primary_server_group_id of this AppConnectionInfo.
+        :rtype: str
+        """
+        return self._primary_server_group_id
+
+    @primary_server_group_id.setter
+    def primary_server_group_id(self, primary_server_group_id):
+        """Sets the primary_server_group_id of this AppConnectionInfo.
+
+        主服务器组ID。
+
+        :param primary_server_group_id: The primary_server_group_id of this AppConnectionInfo.
+        :type primary_server_group_id: str
+        """
+        self._primary_server_group_id = primary_server_group_id
+
+    @property
+    def secondary_server_group_id(self):
+        """Gets the secondary_server_group_id of this AppConnectionInfo.
+
+        主服务器组ID。
+
+        :return: The secondary_server_group_id of this AppConnectionInfo.
+        :rtype: str
+        """
+        return self._secondary_server_group_id
+
+    @secondary_server_group_id.setter
+    def secondary_server_group_id(self, secondary_server_group_id):
+        """Sets the secondary_server_group_id of this AppConnectionInfo.
+
+        主服务器组ID。
+
+        :param secondary_server_group_id: The secondary_server_group_id of this AppConnectionInfo.
+        :type secondary_server_group_id: str
+        """
+        self._secondary_server_group_id = secondary_server_group_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

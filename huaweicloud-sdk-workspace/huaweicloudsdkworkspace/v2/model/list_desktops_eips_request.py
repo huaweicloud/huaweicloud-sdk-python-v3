@@ -43,7 +43,7 @@ class ListDesktopsEipsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 企业项目ID
+        :param enterprise_project_id: 企业项目ID。
         :type enterprise_project_id: str
         :param desktop_id: 桌面ID。
         :type desktop_id: str
@@ -94,7 +94,7 @@ class ListDesktopsEipsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListDesktopsEipsRequest.
 
-        企业项目ID
+        企业项目ID。
 
         :return: The enterprise_project_id of this ListDesktopsEipsRequest.
         :rtype: str
@@ -105,7 +105,7 @@ class ListDesktopsEipsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListDesktopsEipsRequest.
 
-        企业项目ID
+        企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this ListDesktopsEipsRequest.
         :type enterprise_project_id: str

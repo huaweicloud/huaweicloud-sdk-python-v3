@@ -18,29 +18,87 @@ class ListSharesByTagResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'resources': 'list[ListSharesByTagResource]',
+        'total_count': 'int',
         'x_request_id': 'str'
     }
 
     attribute_map = {
+        'resources': 'resources',
+        'total_count': 'total_count',
         'x_request_id': 'X-request-id'
     }
 
-    def __init__(self, x_request_id=None):
+    def __init__(self, resources=None, total_count=None, x_request_id=None):
         """ListSharesByTagResponse
 
         The model defined in huaweicloud sdk
 
+        :param resources: 通过标签查询文件系统的资源列表
+        :type resources: list[:class:`huaweicloudsdksfsturbo.v1.ListSharesByTagResource`]
+        :param total_count: 设置返回的文件系统的偏移量
+        :type total_count: int
         :param x_request_id: 
         :type x_request_id: str
         """
         
         super(ListSharesByTagResponse, self).__init__()
 
+        self._resources = None
+        self._total_count = None
         self._x_request_id = None
         self.discriminator = None
 
+        if resources is not None:
+            self.resources = resources
+        if total_count is not None:
+            self.total_count = total_count
         if x_request_id is not None:
             self.x_request_id = x_request_id
+
+    @property
+    def resources(self):
+        """Gets the resources of this ListSharesByTagResponse.
+
+        通过标签查询文件系统的资源列表
+
+        :return: The resources of this ListSharesByTagResponse.
+        :rtype: list[:class:`huaweicloudsdksfsturbo.v1.ListSharesByTagResource`]
+        """
+        return self._resources
+
+    @resources.setter
+    def resources(self, resources):
+        """Sets the resources of this ListSharesByTagResponse.
+
+        通过标签查询文件系统的资源列表
+
+        :param resources: The resources of this ListSharesByTagResponse.
+        :type resources: list[:class:`huaweicloudsdksfsturbo.v1.ListSharesByTagResource`]
+        """
+        self._resources = resources
+
+    @property
+    def total_count(self):
+        """Gets the total_count of this ListSharesByTagResponse.
+
+        设置返回的文件系统的偏移量
+
+        :return: The total_count of this ListSharesByTagResponse.
+        :rtype: int
+        """
+        return self._total_count
+
+    @total_count.setter
+    def total_count(self, total_count):
+        """Sets the total_count of this ListSharesByTagResponse.
+
+        设置返回的文件系统的偏移量
+
+        :param total_count: The total_count of this ListSharesByTagResponse.
+        :type total_count: int
+        """
+        self._total_count = total_count
 
     @property
     def x_request_id(self):

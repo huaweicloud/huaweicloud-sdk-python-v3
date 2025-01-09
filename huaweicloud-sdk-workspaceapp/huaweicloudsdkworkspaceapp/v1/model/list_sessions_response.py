@@ -32,7 +32,7 @@ class ListSessionsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: 总数
+        :param count: 总数。
         :type count: int
         :param items: 企业的会话列表。
         :type items: list[:class:`huaweicloudsdkworkspaceapp.v1.SessionInfo`]
@@ -53,7 +53,7 @@ class ListSessionsResponse(SdkResponse):
     def count(self):
         """Gets the count of this ListSessionsResponse.
 
-        总数
+        总数。
 
         :return: The count of this ListSessionsResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListSessionsResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this ListSessionsResponse.
 
-        总数
+        总数。
 
         :param count: The count of this ListSessionsResponse.
         :type count: int

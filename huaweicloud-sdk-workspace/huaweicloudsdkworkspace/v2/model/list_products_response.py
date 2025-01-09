@@ -21,7 +21,7 @@ class ListProductsResponse(SdkResponse):
         'os_type': 'str',
         'architecture': 'str',
         'availability_zone': 'str',
-        'products': 'list[ProductInfo]',
+        'products': 'list[Product]',
         'total_count': 'int'
     }
 
@@ -45,7 +45,7 @@ class ListProductsResponse(SdkResponse):
         :param availability_zone: 可用分区。请求参数有availability_zone时，才有此参数。
         :type availability_zone: str
         :param products: 产品列表。
-        :type products: list[:class:`huaweicloudsdkworkspace.v2.ProductInfo`]
+        :type products: list[:class:`huaweicloudsdkworkspace.v2.Product`]
         :param total_count: 对象总数。
         :type total_count: int
         """
@@ -143,7 +143,7 @@ class ListProductsResponse(SdkResponse):
         产品列表。
 
         :return: The products of this ListProductsResponse.
-        :rtype: list[:class:`huaweicloudsdkworkspace.v2.ProductInfo`]
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.Product`]
         """
         return self._products
 
@@ -154,7 +154,7 @@ class ListProductsResponse(SdkResponse):
         产品列表。
 
         :param products: The products of this ListProductsResponse.
-        :type products: list[:class:`huaweicloudsdkworkspace.v2.ProductInfo`]
+        :type products: list[:class:`huaweicloudsdkworkspace.v2.Product`]
         """
         self._products = products
 

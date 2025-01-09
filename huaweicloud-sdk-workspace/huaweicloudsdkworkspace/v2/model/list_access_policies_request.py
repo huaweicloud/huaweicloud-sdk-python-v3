@@ -17,20 +17,24 @@ class ListAccessPoliciesRequest:
     sensitive_list = []
 
     openapi_types = {
+        'access_control_type': 'str',
         'limit': 'int',
         'offset': 'int'
     }
 
     attribute_map = {
+        'access_control_type': 'access_control_type',
         'limit': 'limit',
         'offset': 'offset'
     }
 
-    def __init__(self, limit=None, offset=None):
+    def __init__(self, access_control_type=None, limit=None, offset=None):
         """ListAccessPoliciesRequest
 
         The model defined in huaweicloud sdk
 
+        :param access_control_type: 接入策略控制类型 * ACCESS_TYPE： 接入类型 * IP_WHITE_LIST： IP白名单
+        :type access_control_type: str
         :param limit: 每页数量,范围0-100,默认100。
         :type limit: int
         :param offset: 偏移量,范围0-99,默认0。
@@ -39,14 +43,39 @@ class ListAccessPoliciesRequest:
         
         
 
+        self._access_control_type = None
         self._limit = None
         self._offset = None
         self.discriminator = None
 
+        if access_control_type is not None:
+            self.access_control_type = access_control_type
         if limit is not None:
             self.limit = limit
         if offset is not None:
             self.offset = offset
+
+    @property
+    def access_control_type(self):
+        """Gets the access_control_type of this ListAccessPoliciesRequest.
+
+        接入策略控制类型 * ACCESS_TYPE： 接入类型 * IP_WHITE_LIST： IP白名单
+
+        :return: The access_control_type of this ListAccessPoliciesRequest.
+        :rtype: str
+        """
+        return self._access_control_type
+
+    @access_control_type.setter
+    def access_control_type(self, access_control_type):
+        """Sets the access_control_type of this ListAccessPoliciesRequest.
+
+        接入策略控制类型 * ACCESS_TYPE： 接入类型 * IP_WHITE_LIST： IP白名单
+
+        :param access_control_type: The access_control_type of this ListAccessPoliciesRequest.
+        :type access_control_type: str
+        """
+        self._access_control_type = access_control_type
 
     @property
     def limit(self):

@@ -34,7 +34,8 @@ class SmartLiveRoomBaseInfo:
         'last_job_start_time': 'str',
         'last_job_end_time': 'str',
         'last_job_status': 'str',
-        'priv_data': 'str'
+        'priv_data': 'str',
+        'confirm_state': 'str'
     }
 
     attribute_map = {
@@ -55,10 +56,11 @@ class SmartLiveRoomBaseInfo:
         'last_job_start_time': 'last_job_start_time',
         'last_job_end_time': 'last_job_end_time',
         'last_job_status': 'last_job_status',
-        'priv_data': 'priv_data'
+        'priv_data': 'priv_data',
+        'confirm_state': 'confirm_state'
     }
 
-    def __init__(self, room_id=None, project_id=None, room_name=None, room_type=None, room_state=None, view_mode=None, error_info=None, shared_config=None, room_description=None, cover_url=None, thumbnail=None, model_infos=None, create_time=None, update_time=None, last_job_start_time=None, last_job_end_time=None, last_job_status=None, priv_data=None):
+    def __init__(self, room_id=None, project_id=None, room_name=None, room_type=None, room_state=None, view_mode=None, error_info=None, shared_config=None, room_description=None, cover_url=None, thumbnail=None, model_infos=None, create_time=None, update_time=None, last_job_start_time=None, last_job_end_time=None, last_job_status=None, priv_data=None, confirm_state=None):
         """SmartLiveRoomBaseInfo
 
         The model defined in huaweicloud sdk
@@ -99,6 +101,8 @@ class SmartLiveRoomBaseInfo:
         :type last_job_status: str
         :param priv_data: 私有数据，用户填写，原样带回。
         :type priv_data: str
+        :param confirm_state: 直播间确认状态。此状态仅用于特定用户需要人工确认场景。 - UNCONFIRM: 未确认 - CONFIRMED：已确认 - REJECT： 拒绝
+        :type confirm_state: str
         """
         
         
@@ -121,6 +125,7 @@ class SmartLiveRoomBaseInfo:
         self._last_job_end_time = None
         self._last_job_status = None
         self._priv_data = None
+        self._confirm_state = None
         self.discriminator = None
 
         if room_id is not None:
@@ -159,6 +164,8 @@ class SmartLiveRoomBaseInfo:
             self.last_job_status = last_job_status
         if priv_data is not None:
             self.priv_data = priv_data
+        if confirm_state is not None:
+            self.confirm_state = confirm_state
 
     @property
     def room_id(self):
@@ -547,6 +554,28 @@ class SmartLiveRoomBaseInfo:
         :type priv_data: str
         """
         self._priv_data = priv_data
+
+    @property
+    def confirm_state(self):
+        """Gets the confirm_state of this SmartLiveRoomBaseInfo.
+
+        直播间确认状态。此状态仅用于特定用户需要人工确认场景。 - UNCONFIRM: 未确认 - CONFIRMED：已确认 - REJECT： 拒绝
+
+        :return: The confirm_state of this SmartLiveRoomBaseInfo.
+        :rtype: str
+        """
+        return self._confirm_state
+
+    @confirm_state.setter
+    def confirm_state(self, confirm_state):
+        """Sets the confirm_state of this SmartLiveRoomBaseInfo.
+
+        直播间确认状态。此状态仅用于特定用户需要人工确认场景。 - UNCONFIRM: 未确认 - CONFIRMED：已确认 - REJECT： 拒绝
+
+        :param confirm_state: The confirm_state of this SmartLiveRoomBaseInfo.
+        :type confirm_state: str
+        """
+        self._confirm_state = confirm_state
 
     def to_dict(self):
         """Returns the model properties as a dict"""

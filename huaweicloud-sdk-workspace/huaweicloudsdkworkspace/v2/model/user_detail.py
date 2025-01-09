@@ -34,11 +34,13 @@ class UserDetail:
         'is_pre_user': 'bool',
         'user_expired': 'bool',
         'locked': 'bool',
-        'enabled_change_password': 'bool',
+        'enable_change_password': 'bool',
         'password_never_expired': 'bool',
         'next_login_change_password': 'bool',
         'disabled': 'bool',
         'group_names': 'list[str]',
+        'share_space_subscription': 'bool',
+        'share_space_desktops': 'int',
         'total_desktops': 'int'
     }
 
@@ -60,15 +62,17 @@ class UserDetail:
         'is_pre_user': 'is_pre_user',
         'user_expired': 'user_expired',
         'locked': 'locked',
-        'enabled_change_password': 'enabled_change_password',
+        'enable_change_password': 'enable_change_password',
         'password_never_expired': 'password_never_expired',
         'next_login_change_password': 'next_login_change_password',
         'disabled': 'disabled',
         'group_names': 'group_names',
+        'share_space_subscription': 'share_space_subscription',
+        'share_space_desktops': 'share_space_desktops',
         'total_desktops': 'total_desktops'
     }
 
-    def __init__(self, description=None, id=None, user_name=None, user_email=None, user_phone=None, active_type=None, object_sid=None, sam_account_name=None, user_principal_name=None, full_name=None, distinguished_name=None, account_type=None, when_created=None, account_expires=None, is_pre_user=None, user_expired=None, locked=None, enabled_change_password=None, password_never_expired=None, next_login_change_password=None, disabled=None, group_names=None, total_desktops=None):
+    def __init__(self, description=None, id=None, user_name=None, user_email=None, user_phone=None, active_type=None, object_sid=None, sam_account_name=None, user_principal_name=None, full_name=None, distinguished_name=None, account_type=None, when_created=None, account_expires=None, is_pre_user=None, user_expired=None, locked=None, enable_change_password=None, password_never_expired=None, next_login_change_password=None, disabled=None, group_names=None, share_space_subscription=None, share_space_desktops=None, total_desktops=None):
         """UserDetail
 
         The model defined in huaweicloud sdk
@@ -107,8 +111,8 @@ class UserDetail:
         :type user_expired: bool
         :param locked: 账户是否被锁定，true表示被锁定，false表示未锁定。
         :type locked: bool
-        :param enabled_change_password: 是否允许修改密码，true表示允许修改密码，false表示不允许。
-        :type enabled_change_password: bool
+        :param enable_change_password: 是否允许修改密码，true表示允许修改密码，false表示不允许。
+        :type enable_change_password: bool
         :param password_never_expired: 密码是否永不过期，true表示密码永不过期，false表示密码会过期。
         :type password_never_expired: bool
         :param next_login_change_password: 下次登录是否需要重置密码，true表示需要重置密码，false表示不需要。
@@ -117,6 +121,10 @@ class UserDetail:
         :type disabled: bool
         :param group_names: 加入的组列表。
         :type group_names: list[str]
+        :param share_space_subscription: 用户是否订阅协同，true表示已订阅，false表示未订阅
+        :type share_space_subscription: bool
+        :param share_space_desktops: 用户已绑定协同桌面数
+        :type share_space_desktops: int
         :param total_desktops: 用户绑定桌面云总数。
         :type total_desktops: int
         """
@@ -140,11 +148,13 @@ class UserDetail:
         self._is_pre_user = None
         self._user_expired = None
         self._locked = None
-        self._enabled_change_password = None
+        self._enable_change_password = None
         self._password_never_expired = None
         self._next_login_change_password = None
         self._disabled = None
         self._group_names = None
+        self._share_space_subscription = None
+        self._share_space_desktops = None
         self._total_desktops = None
         self.discriminator = None
 
@@ -182,8 +192,8 @@ class UserDetail:
             self.user_expired = user_expired
         if locked is not None:
             self.locked = locked
-        if enabled_change_password is not None:
-            self.enabled_change_password = enabled_change_password
+        if enable_change_password is not None:
+            self.enable_change_password = enable_change_password
         if password_never_expired is not None:
             self.password_never_expired = password_never_expired
         if next_login_change_password is not None:
@@ -192,6 +202,10 @@ class UserDetail:
             self.disabled = disabled
         if group_names is not None:
             self.group_names = group_names
+        if share_space_subscription is not None:
+            self.share_space_subscription = share_space_subscription
+        if share_space_desktops is not None:
+            self.share_space_desktops = share_space_desktops
         if total_desktops is not None:
             self.total_desktops = total_desktops
 
@@ -570,26 +584,26 @@ class UserDetail:
         self._locked = locked
 
     @property
-    def enabled_change_password(self):
-        """Gets the enabled_change_password of this UserDetail.
+    def enable_change_password(self):
+        """Gets the enable_change_password of this UserDetail.
 
         是否允许修改密码，true表示允许修改密码，false表示不允许。
 
-        :return: The enabled_change_password of this UserDetail.
+        :return: The enable_change_password of this UserDetail.
         :rtype: bool
         """
-        return self._enabled_change_password
+        return self._enable_change_password
 
-    @enabled_change_password.setter
-    def enabled_change_password(self, enabled_change_password):
-        """Sets the enabled_change_password of this UserDetail.
+    @enable_change_password.setter
+    def enable_change_password(self, enable_change_password):
+        """Sets the enable_change_password of this UserDetail.
 
         是否允许修改密码，true表示允许修改密码，false表示不允许。
 
-        :param enabled_change_password: The enabled_change_password of this UserDetail.
-        :type enabled_change_password: bool
+        :param enable_change_password: The enable_change_password of this UserDetail.
+        :type enable_change_password: bool
         """
-        self._enabled_change_password = enabled_change_password
+        self._enable_change_password = enable_change_password
 
     @property
     def password_never_expired(self):
@@ -678,6 +692,50 @@ class UserDetail:
         :type group_names: list[str]
         """
         self._group_names = group_names
+
+    @property
+    def share_space_subscription(self):
+        """Gets the share_space_subscription of this UserDetail.
+
+        用户是否订阅协同，true表示已订阅，false表示未订阅
+
+        :return: The share_space_subscription of this UserDetail.
+        :rtype: bool
+        """
+        return self._share_space_subscription
+
+    @share_space_subscription.setter
+    def share_space_subscription(self, share_space_subscription):
+        """Sets the share_space_subscription of this UserDetail.
+
+        用户是否订阅协同，true表示已订阅，false表示未订阅
+
+        :param share_space_subscription: The share_space_subscription of this UserDetail.
+        :type share_space_subscription: bool
+        """
+        self._share_space_subscription = share_space_subscription
+
+    @property
+    def share_space_desktops(self):
+        """Gets the share_space_desktops of this UserDetail.
+
+        用户已绑定协同桌面数
+
+        :return: The share_space_desktops of this UserDetail.
+        :rtype: int
+        """
+        return self._share_space_desktops
+
+    @share_space_desktops.setter
+    def share_space_desktops(self, share_space_desktops):
+        """Sets the share_space_desktops of this UserDetail.
+
+        用户已绑定协同桌面数
+
+        :param share_space_desktops: The share_space_desktops of this UserDetail.
+        :type share_space_desktops: int
+        """
+        self._share_space_desktops = share_space_desktops
 
     @property
     def total_desktops(self):

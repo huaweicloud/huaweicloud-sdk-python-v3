@@ -58,7 +58,8 @@ class Review:
         self._porn = None
         self.discriminator = None
 
-        self.template_id = template_id
+        if template_id is not None:
+            self.template_id = template_id
         if interval is not None:
             self.interval = interval
         if politics is not None:

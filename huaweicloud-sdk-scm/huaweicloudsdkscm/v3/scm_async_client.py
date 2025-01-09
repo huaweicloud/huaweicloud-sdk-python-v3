@@ -166,6 +166,71 @@ class ScmAsyncClient(Client):
 
         return http_info
 
+    def cancel_certificate_request_async(self, request):
+        """撤回证书申请
+
+        撤回证书申请。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CancelCertificateRequest
+        :type request: :class:`huaweicloudsdkscm.v3.CancelCertificateRequestRequest`
+        :rtype: :class:`huaweicloudsdkscm.v3.CancelCertificateRequestResponse`
+        """
+        http_info = self._cancel_certificate_request_http_info(request)
+        return self._call_api(**http_info)
+
+    def cancel_certificate_request_async_invoker(self, request):
+        http_info = self._cancel_certificate_request_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _cancel_certificate_request_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/scm/certificates/{certificate_id}/cancel-cert",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelCertificateRequestResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'certificate_id' in local_var_params:
+            path_params['certificate_id'] = local_var_params['certificate_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_certificate_async(self, request):
         """删除证书
 
@@ -813,6 +878,469 @@ class ScmAsyncClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_csr_async(self, request):
+        """创建CSR
+
+        创建CSR。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateCsr
+        :type request: :class:`huaweicloudsdkscm.v3.CreateCsrRequest`
+        :rtype: :class:`huaweicloudsdkscm.v3.CreateCsrResponse`
+        """
+        http_info = self._create_csr_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_csr_async_invoker(self, request):
+        http_info = self._create_csr_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_csr_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/scm/csr",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCsrResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_csr_async(self, request):
+        """删除CSR
+
+        删除CSR。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteCsr
+        :type request: :class:`huaweicloudsdkscm.v3.DeleteCsrRequest`
+        :rtype: :class:`huaweicloudsdkscm.v3.DeleteCsrResponse`
+        """
+        http_info = self._delete_csr_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_csr_async_invoker(self, request):
+        http_info = self._delete_csr_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_csr_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/scm/csr/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCsrResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_csr_async(self, request):
+        """查询CSR列表
+
+        查询CSR列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListCsr
+        :type request: :class:`huaweicloudsdkscm.v3.ListCsrRequest`
+        :rtype: :class:`huaweicloudsdkscm.v3.ListCsrResponse`
+        """
+        http_info = self._list_csr_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_csr_async_invoker(self, request):
+        http_info = self._list_csr_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_csr_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/scm/csr",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCsrResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'private_key_algo' in local_var_params:
+            query_params.append(('private_key_algo', local_var_params['private_key_algo']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_csr_async(self, request):
+        """查询CSR
+
+        查询CSR。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowCsr
+        :type request: :class:`huaweicloudsdkscm.v3.ShowCsrRequest`
+        :rtype: :class:`huaweicloudsdkscm.v3.ShowCsrResponse`
+        """
+        http_info = self._show_csr_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_csr_async_invoker(self, request):
+        http_info = self._show_csr_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_csr_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/scm/csr/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCsrResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_csr_private_key_async(self, request):
+        """查询私钥
+
+        查询私钥。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowCsrPrivateKey
+        :type request: :class:`huaweicloudsdkscm.v3.ShowCsrPrivateKeyRequest`
+        :rtype: :class:`huaweicloudsdkscm.v3.ShowCsrPrivateKeyResponse`
+        """
+        http_info = self._show_csr_private_key_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_csr_private_key_async_invoker(self, request):
+        http_info = self._show_csr_private_key_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_csr_private_key_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/scm/csr/{id}/private-key",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCsrPrivateKeyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_csr_async(self, request):
+        """更新CSR
+
+        更新CSR。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateCsr
+        :type request: :class:`huaweicloudsdkscm.v3.UpdateCsrRequest`
+        :rtype: :class:`huaweicloudsdkscm.v3.UpdateCsrResponse`
+        """
+        http_info = self._update_csr_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_csr_async_invoker(self, request):
+        http_info = self._update_csr_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_csr_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/scm/csr/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCsrResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def upload_csr_async(self, request):
+        """上传CSR
+
+        上传CSR。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UploadCsr
+        :type request: :class:`huaweicloudsdkscm.v3.UploadCsrRequest`
+        :rtype: :class:`huaweicloudsdkscm.v3.UploadCsrResponse`
+        """
+        http_info = self._upload_csr_http_info(request)
+        return self._call_api(**http_info)
+
+    def upload_csr_async_invoker(self, request):
+        http_info = self._upload_csr_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _upload_csr_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/scm/csr/upload",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadCsrResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

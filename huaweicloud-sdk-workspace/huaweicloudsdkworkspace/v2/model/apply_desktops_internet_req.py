@@ -18,35 +18,43 @@ class ApplyDesktopsInternetReq:
 
     openapi_types = {
         'desktop_ids': 'list[str]',
+        'inst_info_ids': 'list[str]',
         'eip_type': 'str',
         'eip_charge_mode': 'str',
         'bandwidth_size': 'int',
+        'order_id': 'str',
         'enterprise_project_id': 'str',
         'count': 'int'
     }
 
     attribute_map = {
         'desktop_ids': 'desktop_ids',
+        'inst_info_ids': 'inst_info_ids',
         'eip_type': 'eip_type',
         'eip_charge_mode': 'eip_charge_mode',
         'bandwidth_size': 'bandwidth_size',
+        'order_id': 'order_id',
         'enterprise_project_id': 'enterprise_project_id',
         'count': 'count'
     }
 
-    def __init__(self, desktop_ids=None, eip_type=None, eip_charge_mode=None, bandwidth_size=None, enterprise_project_id=None, count=None):
+    def __init__(self, desktop_ids=None, inst_info_ids=None, eip_type=None, eip_charge_mode=None, bandwidth_size=None, order_id=None, enterprise_project_id=None, count=None):
         """ApplyDesktopsInternetReq
 
         The model defined in huaweicloud sdk
 
         :param desktop_ids: 需要开通上网功能的桌面id列表。
         :type desktop_ids: list[str]
+        :param inst_info_ids: 需要开通上网功能的桌面instInfoId列表。供包周期回调使用
+        :type inst_info_ids: list[str]
         :param eip_type: 支持的类型请参考EIP服务支持的类型。可通过调用如下链接的接口查询，https://support.huaweicloud.com/api-eip/ShowPublicIpType.html。
         :type eip_type: str
         :param eip_charge_mode: eip带宽计费模式 - TRAFFIC：按流量计费。 - BANDWIDTH：按带宽计费。
         :type eip_charge_mode: str
         :param bandwidth_size: 带宽大小，单位Mbit/s。默认1Mbit/s~2000Mbit/s（具体范围以各区域配置为准，请参见控制台对应页面显示）。
         :type bandwidth_size: int
+        :param order_id: 包周期订购ID，CBC订购回调时使用。
+        :type order_id: str
         :param enterprise_project_id: 企业项目ID，默认\&quot;0\&quot;
         :type enterprise_project_id: str
         :param count: 需要购买EIP的数量，当desktop_ids为空时需要填，兼容单独购买EIP场景。
@@ -56,18 +64,24 @@ class ApplyDesktopsInternetReq:
         
 
         self._desktop_ids = None
+        self._inst_info_ids = None
         self._eip_type = None
         self._eip_charge_mode = None
         self._bandwidth_size = None
+        self._order_id = None
         self._enterprise_project_id = None
         self._count = None
         self.discriminator = None
 
         if desktop_ids is not None:
             self.desktop_ids = desktop_ids
+        if inst_info_ids is not None:
+            self.inst_info_ids = inst_info_ids
         self.eip_type = eip_type
         self.eip_charge_mode = eip_charge_mode
         self.bandwidth_size = bandwidth_size
+        if order_id is not None:
+            self.order_id = order_id
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if count is not None:
@@ -94,6 +108,28 @@ class ApplyDesktopsInternetReq:
         :type desktop_ids: list[str]
         """
         self._desktop_ids = desktop_ids
+
+    @property
+    def inst_info_ids(self):
+        """Gets the inst_info_ids of this ApplyDesktopsInternetReq.
+
+        需要开通上网功能的桌面instInfoId列表。供包周期回调使用
+
+        :return: The inst_info_ids of this ApplyDesktopsInternetReq.
+        :rtype: list[str]
+        """
+        return self._inst_info_ids
+
+    @inst_info_ids.setter
+    def inst_info_ids(self, inst_info_ids):
+        """Sets the inst_info_ids of this ApplyDesktopsInternetReq.
+
+        需要开通上网功能的桌面instInfoId列表。供包周期回调使用
+
+        :param inst_info_ids: The inst_info_ids of this ApplyDesktopsInternetReq.
+        :type inst_info_ids: list[str]
+        """
+        self._inst_info_ids = inst_info_ids
 
     @property
     def eip_type(self):
@@ -160,6 +196,28 @@ class ApplyDesktopsInternetReq:
         :type bandwidth_size: int
         """
         self._bandwidth_size = bandwidth_size
+
+    @property
+    def order_id(self):
+        """Gets the order_id of this ApplyDesktopsInternetReq.
+
+        包周期订购ID，CBC订购回调时使用。
+
+        :return: The order_id of this ApplyDesktopsInternetReq.
+        :rtype: str
+        """
+        return self._order_id
+
+    @order_id.setter
+    def order_id(self, order_id):
+        """Sets the order_id of this ApplyDesktopsInternetReq.
+
+        包周期订购ID，CBC订购回调时使用。
+
+        :param order_id: The order_id of this ApplyDesktopsInternetReq.
+        :type order_id: str
+        """
+        self._order_id = order_id
 
     @property
     def enterprise_project_id(self):

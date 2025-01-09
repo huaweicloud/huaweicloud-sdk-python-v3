@@ -40,7 +40,9 @@ class SmsSignatureResp:
         'urge_desc': 'str',
         'app_key': 'str',
         'source_title_content': 'str',
-        'signature_usage': 'str'
+        'signature_usage': 'str',
+        'qualification_id': 'str',
+        'qualification_name': 'str'
     }
 
     attribute_map = {
@@ -67,10 +69,12 @@ class SmsSignatureResp:
         'urge_desc': 'urge_desc',
         'app_key': 'app_key',
         'source_title_content': 'source_title_content',
-        'signature_usage': 'signature_usage'
+        'signature_usage': 'signature_usage',
+        'qualification_id': 'qualification_id',
+        'qualification_name': 'qualification_name'
     }
 
-    def __init__(self, id=None, create_time=None, update_time=None, customer_id=None, tenant=None, signature_name=None, signature_id=None, signature_type=None, app_name=None, apply_desc=None, channel_num=None, review_desc=None, file_id=None, status=None, site=None, signature_source=None, is_involved_third=None, power_attorney_file_id=None, urge_status=None, urge_time=None, urge_desc=None, app_key=None, source_title_content=None, signature_usage=None):
+    def __init__(self, id=None, create_time=None, update_time=None, customer_id=None, tenant=None, signature_name=None, signature_id=None, signature_type=None, app_name=None, apply_desc=None, channel_num=None, review_desc=None, file_id=None, status=None, site=None, signature_source=None, is_involved_third=None, power_attorney_file_id=None, urge_status=None, urge_time=None, urge_desc=None, app_key=None, source_title_content=None, signature_usage=None, qualification_id=None, qualification_name=None):
         """SmsSignatureResp
 
         The model defined in huaweicloud sdk
@@ -123,6 +127,10 @@ class SmsSignatureResp:
         :type source_title_content: str
         :param signature_usage: 签名用途
         :type signature_usage: str
+        :param qualification_id: 资质ID
+        :type qualification_id: str
+        :param qualification_name: 资质名
+        :type qualification_name: str
         """
         
         
@@ -151,6 +159,8 @@ class SmsSignatureResp:
         self._app_key = None
         self._source_title_content = None
         self._signature_usage = None
+        self._qualification_id = None
+        self._qualification_name = None
         self.discriminator = None
 
         if id is not None:
@@ -201,6 +211,10 @@ class SmsSignatureResp:
             self.source_title_content = source_title_content
         if signature_usage is not None:
             self.signature_usage = signature_usage
+        if qualification_id is not None:
+            self.qualification_id = qualification_id
+        if qualification_name is not None:
+            self.qualification_name = qualification_name
 
     @property
     def id(self):
@@ -725,6 +739,50 @@ class SmsSignatureResp:
         :type signature_usage: str
         """
         self._signature_usage = signature_usage
+
+    @property
+    def qualification_id(self):
+        """Gets the qualification_id of this SmsSignatureResp.
+
+        资质ID
+
+        :return: The qualification_id of this SmsSignatureResp.
+        :rtype: str
+        """
+        return self._qualification_id
+
+    @qualification_id.setter
+    def qualification_id(self, qualification_id):
+        """Sets the qualification_id of this SmsSignatureResp.
+
+        资质ID
+
+        :param qualification_id: The qualification_id of this SmsSignatureResp.
+        :type qualification_id: str
+        """
+        self._qualification_id = qualification_id
+
+    @property
+    def qualification_name(self):
+        """Gets the qualification_name of this SmsSignatureResp.
+
+        资质名
+
+        :return: The qualification_name of this SmsSignatureResp.
+        :rtype: str
+        """
+        return self._qualification_name
+
+    @qualification_name.setter
+    def qualification_name(self, qualification_name):
+        """Sets the qualification_name of this SmsSignatureResp.
+
+        资质名
+
+        :param qualification_name: The qualification_name of this SmsSignatureResp.
+        :type qualification_name: str
+        """
+        self._qualification_name = qualification_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

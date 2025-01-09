@@ -18,33 +18,43 @@ class ListProductsRequest:
 
     openapi_types = {
         'product_id': 'str',
+        'flavor_id': 'str',
         'availability_zone': 'str',
         'os_type': 'str',
         'charge_mode': 'str',
         'architecture': 'str',
+        'deh_product_id': 'str',
+        'is_deh': 'bool',
         'package_type': 'str',
+        'products_range': 'str',
         'limit': 'int',
         'offset': 'int'
     }
 
     attribute_map = {
         'product_id': 'product_id',
+        'flavor_id': 'flavor_id',
         'availability_zone': 'availability_zone',
         'os_type': 'os_type',
         'charge_mode': 'charge_mode',
         'architecture': 'architecture',
+        'deh_product_id': 'deh_product_id',
+        'is_deh': 'is_deh',
         'package_type': 'package_type',
+        'products_range': 'products_range',
         'limit': 'limit',
         'offset': 'offset'
     }
 
-    def __init__(self, product_id=None, availability_zone=None, os_type=None, charge_mode=None, architecture=None, package_type=None, limit=None, offset=None):
+    def __init__(self, product_id=None, flavor_id=None, availability_zone=None, os_type=None, charge_mode=None, architecture=None, deh_product_id=None, is_deh=None, package_type=None, products_range=None, limit=None, offset=None):
         """ListProductsRequest
 
         The model defined in huaweicloud sdk
 
         :param product_id: 产品ID。
         :type product_id: str
+        :param flavor_id: 产品flavor_id。
+        :type flavor_id: str
         :param availability_zone: 可用分区。
         :type availability_zone: str
         :param os_type: 产品套餐的操作系统类型，当前支持：Windows、Linux。
@@ -53,8 +63,14 @@ class ListProductsRequest:
         :type charge_mode: str
         :param architecture: 架构类型，当前支持：arm、x86。
         :type architecture: str
+        :param deh_product_id: wdh套餐id。
+        :type deh_product_id: str
+        :param is_deh: 是否为wdh产品。
+        :type is_deh: bool
         :param package_type: 套餐系列。
         :type package_type: str
+        :param products_range: 查询套餐的范围(all：查询所有套餐，包括培训版；若为null则不包含培训版套餐）
+        :type products_range: str
         :param limit: 每页数量，范围0-100，默认100。
         :type limit: int
         :param offset: 偏移量，默认0。
@@ -64,17 +80,23 @@ class ListProductsRequest:
         
 
         self._product_id = None
+        self._flavor_id = None
         self._availability_zone = None
         self._os_type = None
         self._charge_mode = None
         self._architecture = None
+        self._deh_product_id = None
+        self._is_deh = None
         self._package_type = None
+        self._products_range = None
         self._limit = None
         self._offset = None
         self.discriminator = None
 
         if product_id is not None:
             self.product_id = product_id
+        if flavor_id is not None:
+            self.flavor_id = flavor_id
         if availability_zone is not None:
             self.availability_zone = availability_zone
         if os_type is not None:
@@ -83,8 +105,14 @@ class ListProductsRequest:
             self.charge_mode = charge_mode
         if architecture is not None:
             self.architecture = architecture
+        if deh_product_id is not None:
+            self.deh_product_id = deh_product_id
+        if is_deh is not None:
+            self.is_deh = is_deh
         if package_type is not None:
             self.package_type = package_type
+        if products_range is not None:
+            self.products_range = products_range
         if limit is not None:
             self.limit = limit
         if offset is not None:
@@ -111,6 +139,28 @@ class ListProductsRequest:
         :type product_id: str
         """
         self._product_id = product_id
+
+    @property
+    def flavor_id(self):
+        """Gets the flavor_id of this ListProductsRequest.
+
+        产品flavor_id。
+
+        :return: The flavor_id of this ListProductsRequest.
+        :rtype: str
+        """
+        return self._flavor_id
+
+    @flavor_id.setter
+    def flavor_id(self, flavor_id):
+        """Sets the flavor_id of this ListProductsRequest.
+
+        产品flavor_id。
+
+        :param flavor_id: The flavor_id of this ListProductsRequest.
+        :type flavor_id: str
+        """
+        self._flavor_id = flavor_id
 
     @property
     def availability_zone(self):
@@ -201,6 +251,50 @@ class ListProductsRequest:
         self._architecture = architecture
 
     @property
+    def deh_product_id(self):
+        """Gets the deh_product_id of this ListProductsRequest.
+
+        wdh套餐id。
+
+        :return: The deh_product_id of this ListProductsRequest.
+        :rtype: str
+        """
+        return self._deh_product_id
+
+    @deh_product_id.setter
+    def deh_product_id(self, deh_product_id):
+        """Sets the deh_product_id of this ListProductsRequest.
+
+        wdh套餐id。
+
+        :param deh_product_id: The deh_product_id of this ListProductsRequest.
+        :type deh_product_id: str
+        """
+        self._deh_product_id = deh_product_id
+
+    @property
+    def is_deh(self):
+        """Gets the is_deh of this ListProductsRequest.
+
+        是否为wdh产品。
+
+        :return: The is_deh of this ListProductsRequest.
+        :rtype: bool
+        """
+        return self._is_deh
+
+    @is_deh.setter
+    def is_deh(self, is_deh):
+        """Sets the is_deh of this ListProductsRequest.
+
+        是否为wdh产品。
+
+        :param is_deh: The is_deh of this ListProductsRequest.
+        :type is_deh: bool
+        """
+        self._is_deh = is_deh
+
+    @property
     def package_type(self):
         """Gets the package_type of this ListProductsRequest.
 
@@ -221,6 +315,28 @@ class ListProductsRequest:
         :type package_type: str
         """
         self._package_type = package_type
+
+    @property
+    def products_range(self):
+        """Gets the products_range of this ListProductsRequest.
+
+        查询套餐的范围(all：查询所有套餐，包括培训版；若为null则不包含培训版套餐）
+
+        :return: The products_range of this ListProductsRequest.
+        :rtype: str
+        """
+        return self._products_range
+
+    @products_range.setter
+    def products_range(self, products_range):
+        """Sets the products_range of this ListProductsRequest.
+
+        查询套餐的范围(all：查询所有套餐，包括培训版；若为null则不包含培训版套餐）
+
+        :param products_range: The products_range of this ListProductsRequest.
+        :type products_range: str
+        """
+        self._products_range = products_range
 
     @property
     def limit(self):

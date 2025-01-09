@@ -31,9 +31,9 @@ class TmsTag:
 
         The model defined in huaweicloud sdk
 
-        :param key: 键。最大长度128个unicode字符。
+        :param key: 键。最大长度128个unicode字符。 1. 可用 UTF-8 格式表示的字母(包含中文、西班牙语、葡语等)、数字和空格，以及以下字符： _ . : &#x3D; + - @ 2. 两头不能有空白字符
         :type key: str
-        :param value: 值。每个值最大长度255个unicode字符。
+        :param value: 值。每个值最大长度255个unicode字符。 1. 可用 UTF-8 格式表示的字母(包含中文、西班牙语、葡语等)、数字和空格，以及以下字符： _ . : &#x3D; + - @
         :type value: str
         """
         
@@ -51,7 +51,7 @@ class TmsTag:
     def key(self):
         """Gets the key of this TmsTag.
 
-        键。最大长度128个unicode字符。
+        键。最大长度128个unicode字符。 1. 可用 UTF-8 格式表示的字母(包含中文、西班牙语、葡语等)、数字和空格，以及以下字符： _ . : = + - @ 2. 两头不能有空白字符
 
         :return: The key of this TmsTag.
         :rtype: str
@@ -62,7 +62,7 @@ class TmsTag:
     def key(self, key):
         """Sets the key of this TmsTag.
 
-        键。最大长度128个unicode字符。
+        键。最大长度128个unicode字符。 1. 可用 UTF-8 格式表示的字母(包含中文、西班牙语、葡语等)、数字和空格，以及以下字符： _ . : = + - @ 2. 两头不能有空白字符
 
         :param key: The key of this TmsTag.
         :type key: str
@@ -73,7 +73,7 @@ class TmsTag:
     def value(self):
         """Gets the value of this TmsTag.
 
-        值。每个值最大长度255个unicode字符。
+        值。每个值最大长度255个unicode字符。 1. 可用 UTF-8 格式表示的字母(包含中文、西班牙语、葡语等)、数字和空格，以及以下字符： _ . : = + - @
 
         :return: The value of this TmsTag.
         :rtype: str
@@ -84,7 +84,7 @@ class TmsTag:
     def value(self, value):
         """Sets the value of this TmsTag.
 
-        值。每个值最大长度255个unicode字符。
+        值。每个值最大长度255个unicode字符。 1. 可用 UTF-8 格式表示的字母(包含中文、西班牙语、葡语等)、数字和空格，以及以下字符： _ . : = + - @
 
         :param value: The value of this TmsTag.
         :type value: str

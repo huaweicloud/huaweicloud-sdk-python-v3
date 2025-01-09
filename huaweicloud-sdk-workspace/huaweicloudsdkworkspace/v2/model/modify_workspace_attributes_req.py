@@ -17,50 +17,78 @@ class ModifyWorkspaceAttributesReq:
     sensitive_list = []
 
     openapi_types = {
+        'operate_type': 'str',
+        'auth_type': 'str',
         'ad_info': 'AdDomainInfo',
+        'third_gateway_info': 'ThirdGatewayConfigInfo',
         'ad_domains': 'AdDomain',
         'access_mode': 'str',
         'dedicated_subnets': 'str',
+        'adn_conflict_network': 'str',
         'subnet_ids': 'list[str]',
+        'vpc_config_infos': 'list[VpcConfigInfo]',
         'internet_access_port': 'str',
         'enterprise_id': 'str',
         'is_send_email': 'bool',
         'dc_vnc_ip': 'str',
         'authorized_collect_log': 'bool',
         'authorized_hda_upgrade': 'bool',
-        'apply_dedicated_standby_network_param': 'ApplyDedicatedStandbyNetworkParam'
+        'apply_shared_vpc_dedicated_param': 'ApplySharedVpcDedicatedParam',
+        'apply_dedicated_standby_network_param': 'ApplyDedicatedStandbyNetworkParam',
+        'is_authorized_install_agent': 'bool',
+        'enable_user_create_snapshot': 'bool',
+        'is_support_ipv6': 'bool'
     }
 
     attribute_map = {
+        'operate_type': 'operate_type',
+        'auth_type': 'auth_type',
         'ad_info': 'ad_info',
+        'third_gateway_info': 'third_gateway_info',
         'ad_domains': 'ad_domains',
         'access_mode': 'access_mode',
         'dedicated_subnets': 'dedicated_subnets',
+        'adn_conflict_network': 'adn_conflict_network',
         'subnet_ids': 'subnet_ids',
+        'vpc_config_infos': 'vpc_config_infos',
         'internet_access_port': 'internet_access_port',
         'enterprise_id': 'enterprise_id',
         'is_send_email': 'is_send_email',
         'dc_vnc_ip': 'dc_vnc_ip',
         'authorized_collect_log': 'authorized_collect_log',
         'authorized_hda_upgrade': 'authorized_hda_upgrade',
-        'apply_dedicated_standby_network_param': 'apply_dedicated_standby_network_param'
+        'apply_shared_vpc_dedicated_param': 'apply_shared_vpc_dedicated_param',
+        'apply_dedicated_standby_network_param': 'apply_dedicated_standby_network_param',
+        'is_authorized_install_agent': 'is_authorized_install_agent',
+        'enable_user_create_snapshot': 'enable_user_create_snapshot',
+        'is_support_ipv6': 'is_support_ipv6'
     }
 
-    def __init__(self, ad_info=None, ad_domains=None, access_mode=None, dedicated_subnets=None, subnet_ids=None, internet_access_port=None, enterprise_id=None, is_send_email=None, dc_vnc_ip=None, authorized_collect_log=None, authorized_hda_upgrade=None, apply_dedicated_standby_network_param=None):
+    def __init__(self, operate_type=None, auth_type=None, ad_info=None, third_gateway_info=None, ad_domains=None, access_mode=None, dedicated_subnets=None, adn_conflict_network=None, subnet_ids=None, vpc_config_infos=None, internet_access_port=None, enterprise_id=None, is_send_email=None, dc_vnc_ip=None, authorized_collect_log=None, authorized_hda_upgrade=None, apply_shared_vpc_dedicated_param=None, apply_dedicated_standby_network_param=None, is_authorized_install_agent=None, enable_user_create_snapshot=None, is_support_ipv6=None):
         """ModifyWorkspaceAttributesReq
 
         The model defined in huaweicloud sdk
 
+        :param operate_type: 操作类型，做如下修改操作需要指定该参数。 - applyDedicatedStandbyNetwork: 开通专线备用线路 - cancelDedicatedStandbyNetwork: 关闭专线备用线路
+        :type operate_type: str
+        :param auth_type: 主认证方式。 - KERBEROS：KERBEROS。 - KERBEROS_THIRD_SSO：第三方登录认证。
+        :type auth_type: str
         :param ad_info: 
         :type ad_info: :class:`huaweicloudsdkworkspace.v2.AdDomainInfo`
+        :param third_gateway_info: 
+        :type third_gateway_info: :class:`huaweicloudsdkworkspace.v2.ThirdGatewayConfigInfo`
         :param ad_domains: 
         :type ad_domains: :class:`huaweicloudsdkworkspace.v2.AdDomain`
         :param access_mode: 接入模式。 - INTERNET：互联网接入。 - DEDICATED：专线接入。 - BOTH：代表两种接入方式都支持。
         :type access_mode: str
         :param dedicated_subnets: 专线接入网段列表，多个网段信息用分号隔开，列表长度不超过5。
         :type dedicated_subnets: str
+        :param adn_conflict_network: ADN上网冲突网段列表，多个网段信息用分号隔开，列表长度不超过50。
+        :type adn_conflict_network: str
         :param subnet_ids: 子网的网络ID列表。
         :type subnet_ids: list[str]
+        :param vpc_config_infos: VPC配置信息列表。
+        :type vpc_config_infos: list[:class:`huaweicloudsdkworkspace.v2.VpcConfigInfo`]
         :param internet_access_port: 互联网接入端口。
         :type internet_access_port: str
         :param enterprise_id: 企业ID。
@@ -73,36 +101,63 @@ class ModifyWorkspaceAttributesReq:
         :type authorized_collect_log: bool
         :param authorized_hda_upgrade: 是否授权hda升级。
         :type authorized_hda_upgrade: bool
+        :param apply_shared_vpc_dedicated_param: 
+        :type apply_shared_vpc_dedicated_param: :class:`huaweicloudsdkworkspace.v2.ApplySharedVpcDedicatedParam`
         :param apply_dedicated_standby_network_param: 
         :type apply_dedicated_standby_network_param: :class:`huaweicloudsdkworkspace.v2.ApplyDedicatedStandbyNetworkParam`
+        :param is_authorized_install_agent: 是否授权桌面自动安装agent插件。
+        :type is_authorized_install_agent: bool
+        :param enable_user_create_snapshot: 是否授权最终租户创建快照。
+        :type enable_user_create_snapshot: bool
+        :param is_support_ipv6: 是否开启ipv6。
+        :type is_support_ipv6: bool
         """
         
         
 
+        self._operate_type = None
+        self._auth_type = None
         self._ad_info = None
+        self._third_gateway_info = None
         self._ad_domains = None
         self._access_mode = None
         self._dedicated_subnets = None
+        self._adn_conflict_network = None
         self._subnet_ids = None
+        self._vpc_config_infos = None
         self._internet_access_port = None
         self._enterprise_id = None
         self._is_send_email = None
         self._dc_vnc_ip = None
         self._authorized_collect_log = None
         self._authorized_hda_upgrade = None
+        self._apply_shared_vpc_dedicated_param = None
         self._apply_dedicated_standby_network_param = None
+        self._is_authorized_install_agent = None
+        self._enable_user_create_snapshot = None
+        self._is_support_ipv6 = None
         self.discriminator = None
 
+        if operate_type is not None:
+            self.operate_type = operate_type
+        if auth_type is not None:
+            self.auth_type = auth_type
         if ad_info is not None:
             self.ad_info = ad_info
+        if third_gateway_info is not None:
+            self.third_gateway_info = third_gateway_info
         if ad_domains is not None:
             self.ad_domains = ad_domains
         if access_mode is not None:
             self.access_mode = access_mode
         if dedicated_subnets is not None:
             self.dedicated_subnets = dedicated_subnets
+        if adn_conflict_network is not None:
+            self.adn_conflict_network = adn_conflict_network
         if subnet_ids is not None:
             self.subnet_ids = subnet_ids
+        if vpc_config_infos is not None:
+            self.vpc_config_infos = vpc_config_infos
         if internet_access_port is not None:
             self.internet_access_port = internet_access_port
         if enterprise_id is not None:
@@ -115,8 +170,60 @@ class ModifyWorkspaceAttributesReq:
             self.authorized_collect_log = authorized_collect_log
         if authorized_hda_upgrade is not None:
             self.authorized_hda_upgrade = authorized_hda_upgrade
+        if apply_shared_vpc_dedicated_param is not None:
+            self.apply_shared_vpc_dedicated_param = apply_shared_vpc_dedicated_param
         if apply_dedicated_standby_network_param is not None:
             self.apply_dedicated_standby_network_param = apply_dedicated_standby_network_param
+        if is_authorized_install_agent is not None:
+            self.is_authorized_install_agent = is_authorized_install_agent
+        if enable_user_create_snapshot is not None:
+            self.enable_user_create_snapshot = enable_user_create_snapshot
+        if is_support_ipv6 is not None:
+            self.is_support_ipv6 = is_support_ipv6
+
+    @property
+    def operate_type(self):
+        """Gets the operate_type of this ModifyWorkspaceAttributesReq.
+
+        操作类型，做如下修改操作需要指定该参数。 - applyDedicatedStandbyNetwork: 开通专线备用线路 - cancelDedicatedStandbyNetwork: 关闭专线备用线路
+
+        :return: The operate_type of this ModifyWorkspaceAttributesReq.
+        :rtype: str
+        """
+        return self._operate_type
+
+    @operate_type.setter
+    def operate_type(self, operate_type):
+        """Sets the operate_type of this ModifyWorkspaceAttributesReq.
+
+        操作类型，做如下修改操作需要指定该参数。 - applyDedicatedStandbyNetwork: 开通专线备用线路 - cancelDedicatedStandbyNetwork: 关闭专线备用线路
+
+        :param operate_type: The operate_type of this ModifyWorkspaceAttributesReq.
+        :type operate_type: str
+        """
+        self._operate_type = operate_type
+
+    @property
+    def auth_type(self):
+        """Gets the auth_type of this ModifyWorkspaceAttributesReq.
+
+        主认证方式。 - KERBEROS：KERBEROS。 - KERBEROS_THIRD_SSO：第三方登录认证。
+
+        :return: The auth_type of this ModifyWorkspaceAttributesReq.
+        :rtype: str
+        """
+        return self._auth_type
+
+    @auth_type.setter
+    def auth_type(self, auth_type):
+        """Sets the auth_type of this ModifyWorkspaceAttributesReq.
+
+        主认证方式。 - KERBEROS：KERBEROS。 - KERBEROS_THIRD_SSO：第三方登录认证。
+
+        :param auth_type: The auth_type of this ModifyWorkspaceAttributesReq.
+        :type auth_type: str
+        """
+        self._auth_type = auth_type
 
     @property
     def ad_info(self):
@@ -135,6 +242,24 @@ class ModifyWorkspaceAttributesReq:
         :type ad_info: :class:`huaweicloudsdkworkspace.v2.AdDomainInfo`
         """
         self._ad_info = ad_info
+
+    @property
+    def third_gateway_info(self):
+        """Gets the third_gateway_info of this ModifyWorkspaceAttributesReq.
+
+        :return: The third_gateway_info of this ModifyWorkspaceAttributesReq.
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ThirdGatewayConfigInfo`
+        """
+        return self._third_gateway_info
+
+    @third_gateway_info.setter
+    def third_gateway_info(self, third_gateway_info):
+        """Sets the third_gateway_info of this ModifyWorkspaceAttributesReq.
+
+        :param third_gateway_info: The third_gateway_info of this ModifyWorkspaceAttributesReq.
+        :type third_gateway_info: :class:`huaweicloudsdkworkspace.v2.ThirdGatewayConfigInfo`
+        """
+        self._third_gateway_info = third_gateway_info
 
     @property
     def ad_domains(self):
@@ -199,6 +324,28 @@ class ModifyWorkspaceAttributesReq:
         self._dedicated_subnets = dedicated_subnets
 
     @property
+    def adn_conflict_network(self):
+        """Gets the adn_conflict_network of this ModifyWorkspaceAttributesReq.
+
+        ADN上网冲突网段列表，多个网段信息用分号隔开，列表长度不超过50。
+
+        :return: The adn_conflict_network of this ModifyWorkspaceAttributesReq.
+        :rtype: str
+        """
+        return self._adn_conflict_network
+
+    @adn_conflict_network.setter
+    def adn_conflict_network(self, adn_conflict_network):
+        """Sets the adn_conflict_network of this ModifyWorkspaceAttributesReq.
+
+        ADN上网冲突网段列表，多个网段信息用分号隔开，列表长度不超过50。
+
+        :param adn_conflict_network: The adn_conflict_network of this ModifyWorkspaceAttributesReq.
+        :type adn_conflict_network: str
+        """
+        self._adn_conflict_network = adn_conflict_network
+
+    @property
     def subnet_ids(self):
         """Gets the subnet_ids of this ModifyWorkspaceAttributesReq.
 
@@ -219,6 +366,28 @@ class ModifyWorkspaceAttributesReq:
         :type subnet_ids: list[str]
         """
         self._subnet_ids = subnet_ids
+
+    @property
+    def vpc_config_infos(self):
+        """Gets the vpc_config_infos of this ModifyWorkspaceAttributesReq.
+
+        VPC配置信息列表。
+
+        :return: The vpc_config_infos of this ModifyWorkspaceAttributesReq.
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.VpcConfigInfo`]
+        """
+        return self._vpc_config_infos
+
+    @vpc_config_infos.setter
+    def vpc_config_infos(self, vpc_config_infos):
+        """Sets the vpc_config_infos of this ModifyWorkspaceAttributesReq.
+
+        VPC配置信息列表。
+
+        :param vpc_config_infos: The vpc_config_infos of this ModifyWorkspaceAttributesReq.
+        :type vpc_config_infos: list[:class:`huaweicloudsdkworkspace.v2.VpcConfigInfo`]
+        """
+        self._vpc_config_infos = vpc_config_infos
 
     @property
     def internet_access_port(self):
@@ -353,6 +522,24 @@ class ModifyWorkspaceAttributesReq:
         self._authorized_hda_upgrade = authorized_hda_upgrade
 
     @property
+    def apply_shared_vpc_dedicated_param(self):
+        """Gets the apply_shared_vpc_dedicated_param of this ModifyWorkspaceAttributesReq.
+
+        :return: The apply_shared_vpc_dedicated_param of this ModifyWorkspaceAttributesReq.
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ApplySharedVpcDedicatedParam`
+        """
+        return self._apply_shared_vpc_dedicated_param
+
+    @apply_shared_vpc_dedicated_param.setter
+    def apply_shared_vpc_dedicated_param(self, apply_shared_vpc_dedicated_param):
+        """Sets the apply_shared_vpc_dedicated_param of this ModifyWorkspaceAttributesReq.
+
+        :param apply_shared_vpc_dedicated_param: The apply_shared_vpc_dedicated_param of this ModifyWorkspaceAttributesReq.
+        :type apply_shared_vpc_dedicated_param: :class:`huaweicloudsdkworkspace.v2.ApplySharedVpcDedicatedParam`
+        """
+        self._apply_shared_vpc_dedicated_param = apply_shared_vpc_dedicated_param
+
+    @property
     def apply_dedicated_standby_network_param(self):
         """Gets the apply_dedicated_standby_network_param of this ModifyWorkspaceAttributesReq.
 
@@ -369,6 +556,72 @@ class ModifyWorkspaceAttributesReq:
         :type apply_dedicated_standby_network_param: :class:`huaweicloudsdkworkspace.v2.ApplyDedicatedStandbyNetworkParam`
         """
         self._apply_dedicated_standby_network_param = apply_dedicated_standby_network_param
+
+    @property
+    def is_authorized_install_agent(self):
+        """Gets the is_authorized_install_agent of this ModifyWorkspaceAttributesReq.
+
+        是否授权桌面自动安装agent插件。
+
+        :return: The is_authorized_install_agent of this ModifyWorkspaceAttributesReq.
+        :rtype: bool
+        """
+        return self._is_authorized_install_agent
+
+    @is_authorized_install_agent.setter
+    def is_authorized_install_agent(self, is_authorized_install_agent):
+        """Sets the is_authorized_install_agent of this ModifyWorkspaceAttributesReq.
+
+        是否授权桌面自动安装agent插件。
+
+        :param is_authorized_install_agent: The is_authorized_install_agent of this ModifyWorkspaceAttributesReq.
+        :type is_authorized_install_agent: bool
+        """
+        self._is_authorized_install_agent = is_authorized_install_agent
+
+    @property
+    def enable_user_create_snapshot(self):
+        """Gets the enable_user_create_snapshot of this ModifyWorkspaceAttributesReq.
+
+        是否授权最终租户创建快照。
+
+        :return: The enable_user_create_snapshot of this ModifyWorkspaceAttributesReq.
+        :rtype: bool
+        """
+        return self._enable_user_create_snapshot
+
+    @enable_user_create_snapshot.setter
+    def enable_user_create_snapshot(self, enable_user_create_snapshot):
+        """Sets the enable_user_create_snapshot of this ModifyWorkspaceAttributesReq.
+
+        是否授权最终租户创建快照。
+
+        :param enable_user_create_snapshot: The enable_user_create_snapshot of this ModifyWorkspaceAttributesReq.
+        :type enable_user_create_snapshot: bool
+        """
+        self._enable_user_create_snapshot = enable_user_create_snapshot
+
+    @property
+    def is_support_ipv6(self):
+        """Gets the is_support_ipv6 of this ModifyWorkspaceAttributesReq.
+
+        是否开启ipv6。
+
+        :return: The is_support_ipv6 of this ModifyWorkspaceAttributesReq.
+        :rtype: bool
+        """
+        return self._is_support_ipv6
+
+    @is_support_ipv6.setter
+    def is_support_ipv6(self, is_support_ipv6):
+        """Sets the is_support_ipv6 of this ModifyWorkspaceAttributesReq.
+
+        是否开启ipv6。
+
+        :param is_support_ipv6: The is_support_ipv6 of this ModifyWorkspaceAttributesReq.
+        :type is_support_ipv6: bool
+        """
+        self._is_support_ipv6 = is_support_ipv6
 
     def to_dict(self):
         """Returns the model properties as a dict"""

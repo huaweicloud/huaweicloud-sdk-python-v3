@@ -3515,6 +3515,73 @@ class DrsAsyncClient(Client):
 
         return http_info
 
+    def show_agency_info_async(self, request):
+        """查询委托权限详情
+
+        查询委托权限详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAgencyInfo
+        :type request: :class:`huaweicloudsdkdrs.v5.ShowAgencyInfoRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v5.ShowAgencyInfoResponse`
+        """
+        http_info = self._show_agency_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_agency_info_async_invoker(self, request):
+        http_info = self._show_agency_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_agency_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/agency/{agency_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAgencyInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'agency_name' in local_var_params:
+            path_params['agency_name'] = local_var_params['agency_name']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_column_info_result_async(self, request):
         """获取指定数据库表列信息
 
@@ -5547,6 +5614,75 @@ class DrsAsyncClient(Client):
         path_params = {}
         if 'job_id' in local_var_params:
             path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_agency_policy_async(self, request):
+        """更新委托权限策略
+
+        更新委托权限策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateAgencyPolicy
+        :type request: :class:`huaweicloudsdkdrs.v5.UpdateAgencyPolicyRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v5.UpdateAgencyPolicyResponse`
+        """
+        http_info = self._update_agency_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_agency_policy_async_invoker(self, request):
+        http_info = self._update_agency_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_agency_policy_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/{project_id}/agency/{agency_name}/policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAgencyPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'agency_name' in local_var_params:
+            path_params['agency_name'] = local_var_params['agency_name']
 
         query_params = []
 

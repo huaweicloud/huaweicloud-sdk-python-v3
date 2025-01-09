@@ -27,7 +27,8 @@ class SmsTemplateReq:
         'template_name': 'str',
         'template_type': 'str',
         'universal_template': 'int',
-        'variable_attributes': 'list[SmsTemplateVariableAttrReq]'
+        'variable_attributes': 'list[SmsTemplateVariableAttrReq]',
+        'flow_status': 'str'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class SmsTemplateReq:
         'template_name': 'template_name',
         'template_type': 'template_type',
         'universal_template': 'universal_template',
-        'variable_attributes': 'variable_attributes'
+        'variable_attributes': 'variable_attributes',
+        'flow_status': 'flow_status'
     }
 
-    def __init__(self, app_id=None, brackets=None, region=None, send_country=None, sign_id=None, template_content=None, template_desc=None, template_name=None, template_type=None, universal_template=None, variable_attributes=None):
+    def __init__(self, app_id=None, brackets=None, region=None, send_country=None, sign_id=None, template_content=None, template_desc=None, template_name=None, template_type=None, universal_template=None, variable_attributes=None, flow_status=None):
         """SmsTemplateReq
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class SmsTemplateReq:
         :type universal_template: int
         :param variable_attributes: 模板参数
         :type variable_attributes: list[:class:`huaweicloudsdkmsgsms.v2.SmsTemplateVariableAttrReq`]
+        :param flow_status: 流程状态 1. Pending: 待提交 2. Reviewing: 待审核 3. Disable：停用
+        :type flow_status: str
         """
         
         
@@ -86,6 +90,7 @@ class SmsTemplateReq:
         self._template_type = None
         self._universal_template = None
         self._variable_attributes = None
+        self._flow_status = None
         self.discriminator = None
 
         self.app_id = app_id
@@ -105,6 +110,8 @@ class SmsTemplateReq:
             self.universal_template = universal_template
         if variable_attributes is not None:
             self.variable_attributes = variable_attributes
+        if flow_status is not None:
+            self.flow_status = flow_status
 
     @property
     def app_id(self):
@@ -347,6 +354,28 @@ class SmsTemplateReq:
         :type variable_attributes: list[:class:`huaweicloudsdkmsgsms.v2.SmsTemplateVariableAttrReq`]
         """
         self._variable_attributes = variable_attributes
+
+    @property
+    def flow_status(self):
+        """Gets the flow_status of this SmsTemplateReq.
+
+        流程状态 1. Pending: 待提交 2. Reviewing: 待审核 3. Disable：停用
+
+        :return: The flow_status of this SmsTemplateReq.
+        :rtype: str
+        """
+        return self._flow_status
+
+    @flow_status.setter
+    def flow_status(self, flow_status):
+        """Sets the flow_status of this SmsTemplateReq.
+
+        流程状态 1. Pending: 待提交 2. Reviewing: 待审核 3. Disable：停用
+
+        :param flow_status: The flow_status of this SmsTemplateReq.
+        :type flow_status: str
+        """
+        self._flow_status = flow_status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

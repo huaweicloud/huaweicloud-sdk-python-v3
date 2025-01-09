@@ -35,7 +35,7 @@ class ApplyObject:
 
         :param object_id: 对象ID。
         :type object_id: str
-        :param object_type: 对象类型，可选值为： - DESKTOP：桌面。 - DESKTOP_POOL：桌面池。 - ALL_DESKTOPS: 所有桌面，仅供触发式任务使用。
+        :param object_type: 对象类型，可选值为： - DESKTOP：桌面。 - DESKTOP_POOL：桌面池。 - ALL_DESKTOPS: 所有桌面，仅供触发式任务使用。 - DESKTOP_TAG：桌面标签
         :type object_type: str
         :param object_name: 对象名称。
         :type object_name: str
@@ -81,7 +81,7 @@ class ApplyObject:
     def object_type(self):
         """Gets the object_type of this ApplyObject.
 
-        对象类型，可选值为： - DESKTOP：桌面。 - DESKTOP_POOL：桌面池。 - ALL_DESKTOPS: 所有桌面，仅供触发式任务使用。
+        对象类型，可选值为： - DESKTOP：桌面。 - DESKTOP_POOL：桌面池。 - ALL_DESKTOPS: 所有桌面，仅供触发式任务使用。 - DESKTOP_TAG：桌面标签
 
         :return: The object_type of this ApplyObject.
         :rtype: str
@@ -92,7 +92,7 @@ class ApplyObject:
     def object_type(self, object_type):
         """Sets the object_type of this ApplyObject.
 
-        对象类型，可选值为： - DESKTOP：桌面。 - DESKTOP_POOL：桌面池。 - ALL_DESKTOPS: 所有桌面，仅供触发式任务使用。
+        对象类型，可选值为： - DESKTOP：桌面。 - DESKTOP_POOL：桌面池。 - ALL_DESKTOPS: 所有桌面，仅供触发式任务使用。 - DESKTOP_TAG：桌面标签
 
         :param object_type: The object_type of this ApplyObject.
         :type object_type: str

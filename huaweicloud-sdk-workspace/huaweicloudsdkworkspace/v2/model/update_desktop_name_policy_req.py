@@ -39,7 +39,7 @@ class UpdateDesktopNamePolicyReq:
 
         The model defined in huaweicloud sdk
 
-        :param policy_name: 策略名称，由数字、字母、下划线组成，必须以字母或下划线开头，长度范围为1~30个字符。
+        :param policy_name: 策略名称，由数字、字母、中文、下划线组成，必须以字母或下划线开头，长度范围为1~30个字符。
         :type policy_name: str
         :param name_prefix: 策略前缀。
         :type name_prefix: str
@@ -80,7 +80,7 @@ class UpdateDesktopNamePolicyReq:
     def policy_name(self):
         """Gets the policy_name of this UpdateDesktopNamePolicyReq.
 
-        策略名称，由数字、字母、下划线组成，必须以字母或下划线开头，长度范围为1~30个字符。
+        策略名称，由数字、字母、中文、下划线组成，必须以字母或下划线开头，长度范围为1~30个字符。
 
         :return: The policy_name of this UpdateDesktopNamePolicyReq.
         :rtype: str
@@ -91,7 +91,7 @@ class UpdateDesktopNamePolicyReq:
     def policy_name(self, policy_name):
         """Sets the policy_name of this UpdateDesktopNamePolicyReq.
 
-        策略名称，由数字、字母、下划线组成，必须以字母或下划线开头，长度范围为1~30个字符。
+        策略名称，由数字、字母、中文、下划线组成，必须以字母或下划线开头，长度范围为1~30个字符。
 
         :param policy_name: The policy_name of this UpdateDesktopNamePolicyReq.
         :type policy_name: str

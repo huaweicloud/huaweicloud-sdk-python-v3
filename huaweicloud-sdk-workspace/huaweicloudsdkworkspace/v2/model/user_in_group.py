@@ -21,6 +21,7 @@ class UserInGroup:
         'user_name': 'str',
         'user_email': 'str',
         'user_phone': 'str',
+        'total_desktops': 'int',
         'description': 'str'
     }
 
@@ -29,10 +30,11 @@ class UserInGroup:
         'user_name': 'user_name',
         'user_email': 'user_email',
         'user_phone': 'user_phone',
+        'total_desktops': 'total_desktops',
         'description': 'description'
     }
 
-    def __init__(self, id=None, user_name=None, user_email=None, user_phone=None, description=None):
+    def __init__(self, id=None, user_name=None, user_email=None, user_phone=None, total_desktops=None, description=None):
         """UserInGroup
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class UserInGroup:
         :type user_email: str
         :param user_phone: 用户手机号。
         :type user_phone: str
+        :param total_desktops: 用户桌面数。
+        :type total_desktops: int
         :param description: 用户描述。
         :type description: str
         """
@@ -55,6 +59,7 @@ class UserInGroup:
         self._user_name = None
         self._user_email = None
         self._user_phone = None
+        self._total_desktops = None
         self._description = None
         self.discriminator = None
 
@@ -66,6 +71,8 @@ class UserInGroup:
             self.user_email = user_email
         if user_phone is not None:
             self.user_phone = user_phone
+        if total_desktops is not None:
+            self.total_desktops = total_desktops
         if description is not None:
             self.description = description
 
@@ -156,6 +163,28 @@ class UserInGroup:
         :type user_phone: str
         """
         self._user_phone = user_phone
+
+    @property
+    def total_desktops(self):
+        """Gets the total_desktops of this UserInGroup.
+
+        用户桌面数。
+
+        :return: The total_desktops of this UserInGroup.
+        :rtype: int
+        """
+        return self._total_desktops
+
+    @total_desktops.setter
+    def total_desktops(self, total_desktops):
+        """Sets the total_desktops of this UserInGroup.
+
+        用户桌面数。
+
+        :param total_desktops: The total_desktops of this UserInGroup.
+        :type total_desktops: int
+        """
+        self._total_desktops = total_desktops
 
     @property
     def description(self):

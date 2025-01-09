@@ -25,7 +25,8 @@ class SmsSignatureReq:
         'signature_name': 'str',
         'signature_source': 'int',
         'signature_type': 'str',
-        'source_title_content': 'str'
+        'source_title_content': 'str',
+        'qualification_id': 'str'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class SmsSignatureReq:
         'signature_name': 'signature_name',
         'signature_source': 'signature_source',
         'signature_type': 'signature_type',
-        'source_title_content': 'source_title_content'
+        'source_title_content': 'source_title_content',
+        'qualification_id': 'qualification_id'
     }
 
-    def __init__(self, app_id=None, apply_desc=None, file_id=None, is_involved_third=None, power_attorney_fileid=None, signature_name=None, signature_source=None, signature_type=None, source_title_content=None):
+    def __init__(self, app_id=None, apply_desc=None, file_id=None, is_involved_third=None, power_attorney_fileid=None, signature_name=None, signature_source=None, signature_type=None, source_title_content=None, qualification_id=None):
         """SmsSignatureReq
 
         The model defined in huaweicloud sdk
@@ -51,7 +53,7 @@ class SmsSignatureReq:
         :type apply_desc: str
         :param file_id: 营业执照文件ID
         :type file_id: str
-        :param is_involved_third: 是否涉及第三方权益 1. Yes: 是 2. No:
+        :param is_involved_third: 是否涉及第三方权益 1. Yes: 是 2. No: 
         :type is_involved_third: str
         :param power_attorney_fileid: 授权委托书文件ID
         :type power_attorney_fileid: str
@@ -63,6 +65,8 @@ class SmsSignatureReq:
         :type signature_type: str
         :param source_title_content: 签名来源标题内容
         :type source_title_content: str
+        :param qualification_id: 资质ID ，当前考虑存量应用的接口兼容性，代码未做强制校验，但创建签名时请务必携带资质ID，否则会导致资质审核失败
+        :type qualification_id: str
         """
         
         
@@ -76,6 +80,7 @@ class SmsSignatureReq:
         self._signature_source = None
         self._signature_type = None
         self._source_title_content = None
+        self._qualification_id = None
         self.discriminator = None
 
         self.app_id = app_id
@@ -91,6 +96,8 @@ class SmsSignatureReq:
         self.signature_type = signature_type
         if source_title_content is not None:
             self.source_title_content = source_title_content
+        if qualification_id is not None:
+            self.qualification_id = qualification_id
 
     @property
     def app_id(self):
@@ -162,7 +169,7 @@ class SmsSignatureReq:
     def is_involved_third(self):
         """Gets the is_involved_third of this SmsSignatureReq.
 
-        是否涉及第三方权益 1. Yes: 是 2. No:
+        是否涉及第三方权益 1. Yes: 是 2. No: 
 
         :return: The is_involved_third of this SmsSignatureReq.
         :rtype: str
@@ -173,7 +180,7 @@ class SmsSignatureReq:
     def is_involved_third(self, is_involved_third):
         """Sets the is_involved_third of this SmsSignatureReq.
 
-        是否涉及第三方权益 1. Yes: 是 2. No:
+        是否涉及第三方权益 1. Yes: 是 2. No: 
 
         :param is_involved_third: The is_involved_third of this SmsSignatureReq.
         :type is_involved_third: str
@@ -289,6 +296,28 @@ class SmsSignatureReq:
         :type source_title_content: str
         """
         self._source_title_content = source_title_content
+
+    @property
+    def qualification_id(self):
+        """Gets the qualification_id of this SmsSignatureReq.
+
+        资质ID ，当前考虑存量应用的接口兼容性，代码未做强制校验，但创建签名时请务必携带资质ID，否则会导致资质审核失败
+
+        :return: The qualification_id of this SmsSignatureReq.
+        :rtype: str
+        """
+        return self._qualification_id
+
+    @qualification_id.setter
+    def qualification_id(self, qualification_id):
+        """Sets the qualification_id of this SmsSignatureReq.
+
+        资质ID ，当前考虑存量应用的接口兼容性，代码未做强制校验，但创建签名时请务必携带资质ID，否则会导致资质审核失败
+
+        :param qualification_id: The qualification_id of this SmsSignatureReq.
+        :type qualification_id: str
+        """
+        self._qualification_id = qualification_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

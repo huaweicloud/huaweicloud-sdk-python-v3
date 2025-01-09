@@ -25,12 +25,14 @@ class JobDetailInfo:
         'status': 'str',
         'error_code': 'str',
         'fail_reason': 'str',
-        'message': 'str',
+        'host': 'str',
+        'project_id': 'str',
         'job_id': 'str',
-        'desktop_name': 'str',
-        'ip_address': 'str',
-        'mac_address': 'str',
-        'process': 'int'
+        'success_result': 'str',
+        'process': 'int',
+        'attach_user': 'str',
+        'entity': 'str',
+        'ip_address': 'str'
     }
 
     attribute_map = {
@@ -42,20 +44,22 @@ class JobDetailInfo:
         'status': 'status',
         'error_code': 'error_code',
         'fail_reason': 'fail_reason',
-        'message': 'message',
+        'host': 'host',
+        'project_id': 'project_id',
         'job_id': 'job_id',
-        'desktop_name': 'desktop_name',
-        'ip_address': 'ip_address',
-        'mac_address': 'mac_address',
-        'process': 'process'
+        'success_result': 'success_result',
+        'process': 'process',
+        'attach_user': 'attach_user',
+        'entity': 'entity',
+        'ip_address': 'ip_address'
     }
 
-    def __init__(self, id=None, job_type=None, entities=None, begin_time=None, end_time=None, status=None, error_code=None, fail_reason=None, message=None, job_id=None, desktop_name=None, ip_address=None, mac_address=None, process=None):
+    def __init__(self, id=None, job_type=None, entities=None, begin_time=None, end_time=None, status=None, error_code=None, fail_reason=None, host=None, project_id=None, job_id=None, success_result=None, process=None, attach_user=None, entity=None, ip_address=None):
         """JobDetailInfo
 
         The model defined in huaweicloud sdk
 
-        :param id: 任务id。
+        :param id: 子任务ID。
         :type id: str
         :param job_type: 任务类型。
         :type job_type: str
@@ -71,18 +75,22 @@ class JobDetailInfo:
         :type error_code: str
         :param fail_reason: 任务失败原因。
         :type fail_reason: str
-        :param message: 任务失败原因信息。
-        :type message: str
+        :param host: 任务执行的服务器IP。
+        :type host: str
+        :param project_id: 项目ID。
+        :type project_id: str
         :param job_id: 任务ID。
         :type job_id: str
-        :param desktop_name: 桌面名称。
-        :type desktop_name: str
-        :param ip_address: ip地址。
-        :type ip_address: str
-        :param mac_address: mac地址。
-        :type mac_address: str
+        :param success_result: 任务成功结果。
+        :type success_result: str
         :param process: 任务进度。
         :type process: int
+        :param attach_user: 关联用户。
+        :type attach_user: str
+        :param entity: 操作对象。
+        :type entity: str
+        :param ip_address: ip地址。
+        :type ip_address: str
         """
         
         
@@ -95,12 +103,14 @@ class JobDetailInfo:
         self._status = None
         self._error_code = None
         self._fail_reason = None
-        self._message = None
+        self._host = None
+        self._project_id = None
         self._job_id = None
-        self._desktop_name = None
-        self._ip_address = None
-        self._mac_address = None
+        self._success_result = None
         self._process = None
+        self._attach_user = None
+        self._entity = None
+        self._ip_address = None
         self.discriminator = None
 
         if id is not None:
@@ -119,24 +129,28 @@ class JobDetailInfo:
             self.error_code = error_code
         if fail_reason is not None:
             self.fail_reason = fail_reason
-        if message is not None:
-            self.message = message
+        if host is not None:
+            self.host = host
+        if project_id is not None:
+            self.project_id = project_id
         if job_id is not None:
             self.job_id = job_id
-        if desktop_name is not None:
-            self.desktop_name = desktop_name
-        if ip_address is not None:
-            self.ip_address = ip_address
-        if mac_address is not None:
-            self.mac_address = mac_address
+        if success_result is not None:
+            self.success_result = success_result
         if process is not None:
             self.process = process
+        if attach_user is not None:
+            self.attach_user = attach_user
+        if entity is not None:
+            self.entity = entity
+        if ip_address is not None:
+            self.ip_address = ip_address
 
     @property
     def id(self):
         """Gets the id of this JobDetailInfo.
 
-        任务id。
+        子任务ID。
 
         :return: The id of this JobDetailInfo.
         :rtype: str
@@ -147,7 +161,7 @@ class JobDetailInfo:
     def id(self, id):
         """Sets the id of this JobDetailInfo.
 
-        任务id。
+        子任务ID。
 
         :param id: The id of this JobDetailInfo.
         :type id: str
@@ -305,26 +319,48 @@ class JobDetailInfo:
         self._fail_reason = fail_reason
 
     @property
-    def message(self):
-        """Gets the message of this JobDetailInfo.
+    def host(self):
+        """Gets the host of this JobDetailInfo.
 
-        任务失败原因信息。
+        任务执行的服务器IP。
 
-        :return: The message of this JobDetailInfo.
+        :return: The host of this JobDetailInfo.
         :rtype: str
         """
-        return self._message
+        return self._host
 
-    @message.setter
-    def message(self, message):
-        """Sets the message of this JobDetailInfo.
+    @host.setter
+    def host(self, host):
+        """Sets the host of this JobDetailInfo.
 
-        任务失败原因信息。
+        任务执行的服务器IP。
 
-        :param message: The message of this JobDetailInfo.
-        :type message: str
+        :param host: The host of this JobDetailInfo.
+        :type host: str
         """
-        self._message = message
+        self._host = host
+
+    @property
+    def project_id(self):
+        """Gets the project_id of this JobDetailInfo.
+
+        项目ID。
+
+        :return: The project_id of this JobDetailInfo.
+        :rtype: str
+        """
+        return self._project_id
+
+    @project_id.setter
+    def project_id(self, project_id):
+        """Sets the project_id of this JobDetailInfo.
+
+        项目ID。
+
+        :param project_id: The project_id of this JobDetailInfo.
+        :type project_id: str
+        """
+        self._project_id = project_id
 
     @property
     def job_id(self):
@@ -349,70 +385,26 @@ class JobDetailInfo:
         self._job_id = job_id
 
     @property
-    def desktop_name(self):
-        """Gets the desktop_name of this JobDetailInfo.
+    def success_result(self):
+        """Gets the success_result of this JobDetailInfo.
 
-        桌面名称。
+        任务成功结果。
 
-        :return: The desktop_name of this JobDetailInfo.
+        :return: The success_result of this JobDetailInfo.
         :rtype: str
         """
-        return self._desktop_name
+        return self._success_result
 
-    @desktop_name.setter
-    def desktop_name(self, desktop_name):
-        """Sets the desktop_name of this JobDetailInfo.
+    @success_result.setter
+    def success_result(self, success_result):
+        """Sets the success_result of this JobDetailInfo.
 
-        桌面名称。
+        任务成功结果。
 
-        :param desktop_name: The desktop_name of this JobDetailInfo.
-        :type desktop_name: str
+        :param success_result: The success_result of this JobDetailInfo.
+        :type success_result: str
         """
-        self._desktop_name = desktop_name
-
-    @property
-    def ip_address(self):
-        """Gets the ip_address of this JobDetailInfo.
-
-        ip地址。
-
-        :return: The ip_address of this JobDetailInfo.
-        :rtype: str
-        """
-        return self._ip_address
-
-    @ip_address.setter
-    def ip_address(self, ip_address):
-        """Sets the ip_address of this JobDetailInfo.
-
-        ip地址。
-
-        :param ip_address: The ip_address of this JobDetailInfo.
-        :type ip_address: str
-        """
-        self._ip_address = ip_address
-
-    @property
-    def mac_address(self):
-        """Gets the mac_address of this JobDetailInfo.
-
-        mac地址。
-
-        :return: The mac_address of this JobDetailInfo.
-        :rtype: str
-        """
-        return self._mac_address
-
-    @mac_address.setter
-    def mac_address(self, mac_address):
-        """Sets the mac_address of this JobDetailInfo.
-
-        mac地址。
-
-        :param mac_address: The mac_address of this JobDetailInfo.
-        :type mac_address: str
-        """
-        self._mac_address = mac_address
+        self._success_result = success_result
 
     @property
     def process(self):
@@ -435,6 +427,72 @@ class JobDetailInfo:
         :type process: int
         """
         self._process = process
+
+    @property
+    def attach_user(self):
+        """Gets the attach_user of this JobDetailInfo.
+
+        关联用户。
+
+        :return: The attach_user of this JobDetailInfo.
+        :rtype: str
+        """
+        return self._attach_user
+
+    @attach_user.setter
+    def attach_user(self, attach_user):
+        """Sets the attach_user of this JobDetailInfo.
+
+        关联用户。
+
+        :param attach_user: The attach_user of this JobDetailInfo.
+        :type attach_user: str
+        """
+        self._attach_user = attach_user
+
+    @property
+    def entity(self):
+        """Gets the entity of this JobDetailInfo.
+
+        操作对象。
+
+        :return: The entity of this JobDetailInfo.
+        :rtype: str
+        """
+        return self._entity
+
+    @entity.setter
+    def entity(self, entity):
+        """Sets the entity of this JobDetailInfo.
+
+        操作对象。
+
+        :param entity: The entity of this JobDetailInfo.
+        :type entity: str
+        """
+        self._entity = entity
+
+    @property
+    def ip_address(self):
+        """Gets the ip_address of this JobDetailInfo.
+
+        ip地址。
+
+        :return: The ip_address of this JobDetailInfo.
+        :rtype: str
+        """
+        return self._ip_address
+
+    @ip_address.setter
+    def ip_address(self, ip_address):
+        """Sets the ip_address of this JobDetailInfo.
+
+        ip地址。
+
+        :param ip_address: The ip_address of this JobDetailInfo.
+        :type ip_address: str
+        """
+        self._ip_address = ip_address
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -32,6 +32,7 @@ class ListAppConnectionReq:
         'agent_version': 'str',
         'vm_ip': 'str',
         'wi_ip': 'str',
+        'public_ip': 'str',
         'tenant_id': 'str',
         'brokering_start_time': 'datetime',
         'brokering_end_time': 'datetime',
@@ -54,13 +55,14 @@ class ListAppConnectionReq:
         'agent_version': 'agent_version',
         'vm_ip': 'vm_ip',
         'wi_ip': 'wi_ip',
+        'public_ip': 'public_ip',
         'tenant_id': 'tenant_id',
         'brokering_start_time': 'brokering_start_time',
         'brokering_end_time': 'brokering_end_time',
         'virtual_ip': 'virtual_ip'
     }
 
-    def __init__(self, id=None, sid=None, machine_name=None, user_name=None, app_group_name=None, app_group_id=None, app_name=None, failed_code=None, connection_failure_reason=None, client_name=None, client_version=None, client_type=None, agent_version=None, vm_ip=None, wi_ip=None, tenant_id=None, brokering_start_time=None, brokering_end_time=None, virtual_ip=None):
+    def __init__(self, id=None, sid=None, machine_name=None, user_name=None, app_group_name=None, app_group_id=None, app_name=None, failed_code=None, connection_failure_reason=None, client_name=None, client_version=None, client_type=None, agent_version=None, vm_ip=None, wi_ip=None, public_ip=None, tenant_id=None, brokering_start_time=None, brokering_end_time=None, virtual_ip=None):
         """ListAppConnectionReq
 
         The model defined in huaweicloud sdk
@@ -95,6 +97,8 @@ class ListAppConnectionReq:
         :type vm_ip: str
         :param wi_ip: 连接IP。
         :type wi_ip: str
+        :param public_ip: 客户端出口ip。
+        :type public_ip: str
         :param tenant_id: 租户id。
         :type tenant_id: str
         :param brokering_start_time: 登录应用开始时间，格式 2022-10-31 08:07:39。
@@ -122,6 +126,7 @@ class ListAppConnectionReq:
         self._agent_version = None
         self._vm_ip = None
         self._wi_ip = None
+        self._public_ip = None
         self._tenant_id = None
         self._brokering_start_time = None
         self._brokering_end_time = None
@@ -158,6 +163,8 @@ class ListAppConnectionReq:
             self.vm_ip = vm_ip
         if wi_ip is not None:
             self.wi_ip = wi_ip
+        if public_ip is not None:
+            self.public_ip = public_ip
         if tenant_id is not None:
             self.tenant_id = tenant_id
         if brokering_start_time is not None:
@@ -496,6 +503,28 @@ class ListAppConnectionReq:
         :type wi_ip: str
         """
         self._wi_ip = wi_ip
+
+    @property
+    def public_ip(self):
+        """Gets the public_ip of this ListAppConnectionReq.
+
+        客户端出口ip。
+
+        :return: The public_ip of this ListAppConnectionReq.
+        :rtype: str
+        """
+        return self._public_ip
+
+    @public_ip.setter
+    def public_ip(self, public_ip):
+        """Sets the public_ip of this ListAppConnectionReq.
+
+        客户端出口ip。
+
+        :param public_ip: The public_ip of this ListAppConnectionReq.
+        :type public_ip: str
+        """
+        self._public_ip = public_ip
 
     @property
     def tenant_id(self):

@@ -29,7 +29,7 @@ class BatchAddDesktopsTagsReq:
 
         The model defined in huaweicloud sdk
 
-        :param desktops: 桌面（桌面携带标签列表）列表
+        :param desktops: 桌面（桌面携带标签列表）列表。批量操作时非法桌面ID会过滤不做处理。
         :type desktops: list[:class:`huaweicloudsdkworkspace.v2.DesktopTagsInfo`]
         """
         
@@ -44,7 +44,7 @@ class BatchAddDesktopsTagsReq:
     def desktops(self):
         """Gets the desktops of this BatchAddDesktopsTagsReq.
 
-        桌面（桌面携带标签列表）列表
+        桌面（桌面携带标签列表）列表。批量操作时非法桌面ID会过滤不做处理。
 
         :return: The desktops of this BatchAddDesktopsTagsReq.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.DesktopTagsInfo`]
@@ -55,7 +55,7 @@ class BatchAddDesktopsTagsReq:
     def desktops(self, desktops):
         """Sets the desktops of this BatchAddDesktopsTagsReq.
 
-        桌面（桌面携带标签列表）列表
+        桌面（桌面携带标签列表）列表。批量操作时非法桌面ID会过滤不做处理。
 
         :param desktops: The desktops of this BatchAddDesktopsTagsReq.
         :type desktops: list[:class:`huaweicloudsdkworkspace.v2.DesktopTagsInfo`]

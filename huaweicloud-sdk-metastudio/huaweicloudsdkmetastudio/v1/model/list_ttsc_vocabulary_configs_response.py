@@ -34,7 +34,7 @@ class ListTtscVocabularyConfigsResponse(SdkResponse):
 
         :param count: 总记录数。
         :type count: int
-        :param data: 词表。
+        :param data: 自定义读法。
         :type data: list[:class:`huaweicloudsdkmetastudio.v1.VocabularyConfig`]
         """
         
@@ -75,7 +75,7 @@ class ListTtscVocabularyConfigsResponse(SdkResponse):
     def data(self):
         """Gets the data of this ListTtscVocabularyConfigsResponse.
 
-        词表。
+        自定义读法。
 
         :return: The data of this ListTtscVocabularyConfigsResponse.
         :rtype: list[:class:`huaweicloudsdkmetastudio.v1.VocabularyConfig`]
@@ -86,7 +86,7 @@ class ListTtscVocabularyConfigsResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this ListTtscVocabularyConfigsResponse.
 
-        词表。
+        自定义读法。
 
         :param data: The data of this ListTtscVocabularyConfigsResponse.
         :type data: list[:class:`huaweicloudsdkmetastudio.v1.VocabularyConfig`]

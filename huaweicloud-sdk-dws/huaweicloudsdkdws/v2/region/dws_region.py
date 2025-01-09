@@ -52,6 +52,8 @@ class DwsRegion:
                         "https://dws.ru-moscow-1.myhuaweicloud.com")
     AE_AD_1 = Region("ae-ad-1",
                         "https://dws.ae-ad-1.myhuaweicloud.com")
+    MY_KUALALUMPUR_1 = Region("my-kualalumpur-1",
+                        "https://dws.my-kualalumpur-1.myhuaweicloud.com")
 
     static_fields = {
         "eu-west-101": EU_WEST_101,
@@ -77,6 +79,7 @@ class DwsRegion:
         "af-north-1": AF_NORTH_1,
         "ru-moscow-1": RU_MOSCOW_1,
         "ae-ad-1": AE_AD_1,
+        "my-kualalumpur-1": MY_KUALALUMPUR_1,
     }
 
     @classmethod

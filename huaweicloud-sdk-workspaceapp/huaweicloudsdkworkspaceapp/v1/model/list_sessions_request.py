@@ -24,6 +24,7 @@ class ListSessionsRequest:
         'query_end_time': 'str',
         'app_server_group_id': 'str',
         'vm_ip': 'str',
+        'public_ip': 'str',
         'machine_name': 'str',
         'session_state': 'str',
         'is_success': 'str'
@@ -37,12 +38,13 @@ class ListSessionsRequest:
         'query_end_time': 'query_end_time',
         'app_server_group_id': 'app_server_group_id',
         'vm_ip': 'vm_ip',
+        'public_ip': 'public_ip',
         'machine_name': 'machine_name',
         'session_state': 'session_state',
         'is_success': 'is_success'
     }
 
-    def __init__(self, limit=None, offset=None, user_name=None, query_begin_time=None, query_end_time=None, app_server_group_id=None, vm_ip=None, machine_name=None, session_state=None, is_success=None):
+    def __init__(self, limit=None, offset=None, user_name=None, query_begin_time=None, query_end_time=None, app_server_group_id=None, vm_ip=None, public_ip=None, machine_name=None, session_state=None, is_success=None):
         """ListSessionsRequest
 
         The model defined in huaweicloud sdk
@@ -61,9 +63,11 @@ class ListSessionsRequest:
         :type app_server_group_id: str
         :param vm_ip: 服务器IP。
         :type vm_ip: str
+        :param public_ip: 客户端出口IP。
+        :type public_ip: str
         :param machine_name: 应用服务器名称。
         :type machine_name: str
-        :param session_state: 应用状态： * &#x60;Active&#x60; - 会话当前处于活动状态，有用户登录并且正在使用。 * &#x60;Disconnected&#x60; - 用户已经登录但会话处于断开连接状态。 * &#x60;AppcInit&#x60; - 会话正在初始化。 * &#x60;SignedOut&#x60; - 会话已注销。 * &#x60;InitFail&#x60; - 会话初始化失败。
+        :param session_state: 应用状态，支持查询多个，中间用英文逗号分隔： * &#x60;Active&#x60; - 会话当前处于活动状态，有用户登录并且正在使用。 * &#x60;Disconnected&#x60; - 用户已经登录但会话处于断开连接状态。 * &#x60;AppcInit&#x60; - 会话正在初始化。 * &#x60;SignedOut&#x60; - 会话已注销。 * &#x60;InitFail&#x60; - 会话初始化失败。
         :type session_state: str
         :param is_success: 会话是否创建成功,默认不填则查询全部 * &#39;true&#39; - 会话创建成功 * &#39;false&#39; - 会话创建失败
         :type is_success: str
@@ -78,6 +82,7 @@ class ListSessionsRequest:
         self._query_end_time = None
         self._app_server_group_id = None
         self._vm_ip = None
+        self._public_ip = None
         self._machine_name = None
         self._session_state = None
         self._is_success = None
@@ -95,6 +100,8 @@ class ListSessionsRequest:
             self.app_server_group_id = app_server_group_id
         if vm_ip is not None:
             self.vm_ip = vm_ip
+        if public_ip is not None:
+            self.public_ip = public_ip
         if machine_name is not None:
             self.machine_name = machine_name
         if session_state is not None:
@@ -257,6 +264,28 @@ class ListSessionsRequest:
         self._vm_ip = vm_ip
 
     @property
+    def public_ip(self):
+        """Gets the public_ip of this ListSessionsRequest.
+
+        客户端出口IP。
+
+        :return: The public_ip of this ListSessionsRequest.
+        :rtype: str
+        """
+        return self._public_ip
+
+    @public_ip.setter
+    def public_ip(self, public_ip):
+        """Sets the public_ip of this ListSessionsRequest.
+
+        客户端出口IP。
+
+        :param public_ip: The public_ip of this ListSessionsRequest.
+        :type public_ip: str
+        """
+        self._public_ip = public_ip
+
+    @property
     def machine_name(self):
         """Gets the machine_name of this ListSessionsRequest.
 
@@ -282,7 +311,7 @@ class ListSessionsRequest:
     def session_state(self):
         """Gets the session_state of this ListSessionsRequest.
 
-        应用状态： * `Active` - 会话当前处于活动状态，有用户登录并且正在使用。 * `Disconnected` - 用户已经登录但会话处于断开连接状态。 * `AppcInit` - 会话正在初始化。 * `SignedOut` - 会话已注销。 * `InitFail` - 会话初始化失败。
+        应用状态，支持查询多个，中间用英文逗号分隔： * `Active` - 会话当前处于活动状态，有用户登录并且正在使用。 * `Disconnected` - 用户已经登录但会话处于断开连接状态。 * `AppcInit` - 会话正在初始化。 * `SignedOut` - 会话已注销。 * `InitFail` - 会话初始化失败。
 
         :return: The session_state of this ListSessionsRequest.
         :rtype: str
@@ -293,7 +322,7 @@ class ListSessionsRequest:
     def session_state(self, session_state):
         """Sets the session_state of this ListSessionsRequest.
 
-        应用状态： * `Active` - 会话当前处于活动状态，有用户登录并且正在使用。 * `Disconnected` - 用户已经登录但会话处于断开连接状态。 * `AppcInit` - 会话正在初始化。 * `SignedOut` - 会话已注销。 * `InitFail` - 会话初始化失败。
+        应用状态，支持查询多个，中间用英文逗号分隔： * `Active` - 会话当前处于活动状态，有用户登录并且正在使用。 * `Disconnected` - 用户已经登录但会话处于断开连接状态。 * `AppcInit` - 会话正在初始化。 * `SignedOut` - 会话已注销。 * `InitFail` - 会话初始化失败。
 
         :param session_state: The session_state of this ListSessionsRequest.
         :type session_state: str

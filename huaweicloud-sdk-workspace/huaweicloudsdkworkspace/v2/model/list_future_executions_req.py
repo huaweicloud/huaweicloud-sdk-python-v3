@@ -75,7 +75,7 @@ class ListFutureExecutionsReq:
         :type gray_desktop_ids: list[str]
         :param gray_fail_threshold: 灰度失败阈值，灰度执行失败次数达到该值时，不执行下一批任务。只支持脚本执行。
         :type gray_fail_threshold: int
-        :param life_cycle_type: 触发场景。POST_CREATE_DESKTOP_SUCCESS：创建桌面成功后，POST_REBUILD_DESKTOP_SUCCESS：重建桌面成功后，POST_REATTACH_DESKTOP_SUCCESS：触发重建的分配用户任务成功后。
+        :param life_cycle_type: 触发场景。POST_CREATE_DESKTOP_SUCCESS：创建桌面成功后，POST_REBUILD_DESKTOP_SUCCESS：重建桌面成功后，POST_REATTACH_DESKTOP_SUCCESS：触发重建的分配用户任务成功后，POST_DESKTOP_DISCONNECTED：桌面断开连接后。
         :type life_cycle_type: str
         :param time_zone: 时区。
         :type time_zone: str
@@ -371,7 +371,7 @@ class ListFutureExecutionsReq:
     def life_cycle_type(self):
         """Gets the life_cycle_type of this ListFutureExecutionsReq.
 
-        触发场景。POST_CREATE_DESKTOP_SUCCESS：创建桌面成功后，POST_REBUILD_DESKTOP_SUCCESS：重建桌面成功后，POST_REATTACH_DESKTOP_SUCCESS：触发重建的分配用户任务成功后。
+        触发场景。POST_CREATE_DESKTOP_SUCCESS：创建桌面成功后，POST_REBUILD_DESKTOP_SUCCESS：重建桌面成功后，POST_REATTACH_DESKTOP_SUCCESS：触发重建的分配用户任务成功后，POST_DESKTOP_DISCONNECTED：桌面断开连接后。
 
         :return: The life_cycle_type of this ListFutureExecutionsReq.
         :rtype: str
@@ -382,7 +382,7 @@ class ListFutureExecutionsReq:
     def life_cycle_type(self, life_cycle_type):
         """Sets the life_cycle_type of this ListFutureExecutionsReq.
 
-        触发场景。POST_CREATE_DESKTOP_SUCCESS：创建桌面成功后，POST_REBUILD_DESKTOP_SUCCESS：重建桌面成功后，POST_REATTACH_DESKTOP_SUCCESS：触发重建的分配用户任务成功后。
+        触发场景。POST_CREATE_DESKTOP_SUCCESS：创建桌面成功后，POST_REBUILD_DESKTOP_SUCCESS：重建桌面成功后，POST_REATTACH_DESKTOP_SUCCESS：触发重建的分配用户任务成功后，POST_DESKTOP_DISCONNECTED：桌面断开连接后。
 
         :param life_cycle_type: The life_cycle_type of this ListFutureExecutionsReq.
         :type life_cycle_type: str

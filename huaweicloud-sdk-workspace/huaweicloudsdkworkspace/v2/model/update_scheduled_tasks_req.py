@@ -37,7 +37,8 @@ class UpdateScheduledTasksReq:
         'extra_params': 'str',
         'apply_objects': 'list[ApplyObject]',
         'priority': 'int',
-        'is_gray': 'bool'
+        'is_gray': 'bool',
+        'wait_time': 'int'
     }
 
     attribute_map = {
@@ -61,10 +62,11 @@ class UpdateScheduledTasksReq:
         'extra_params': 'extra_params',
         'apply_objects': 'apply_objects',
         'priority': 'priority',
-        'is_gray': 'is_gray'
+        'is_gray': 'is_gray',
+        'wait_time': 'wait_time'
     }
 
-    def __init__(self, scheduled_type=None, day_interval=None, week_list=None, month_list=None, date_list=None, scheduled_date=None, scheduled_time=None, expire_time=None, gray_count=None, gray_desktop_ids=None, gray_fail_threshold=None, life_cycle_type=None, time_zone=None, task_name=None, force_execute=None, description=None, enable=None, extra_params=None, apply_objects=None, priority=None, is_gray=None):
+    def __init__(self, scheduled_type=None, day_interval=None, week_list=None, month_list=None, date_list=None, scheduled_date=None, scheduled_time=None, expire_time=None, gray_count=None, gray_desktop_ids=None, gray_fail_threshold=None, life_cycle_type=None, time_zone=None, task_name=None, force_execute=None, description=None, enable=None, extra_params=None, apply_objects=None, priority=None, is_gray=None, wait_time=None):
         """UpdateScheduledTasksReq
 
         The model defined in huaweicloud sdk
@@ -91,7 +93,7 @@ class UpdateScheduledTasksReq:
         :type gray_desktop_ids: list[str]
         :param gray_fail_threshold: 灰度失败阈值，灰度执行失败次数达到该值时，不执行下一批任务。只支持脚本执行。
         :type gray_fail_threshold: int
-        :param life_cycle_type: 触发场景。POST_CREATE_DESKTOP_SUCCESS：创建桌面成功后，POST_REBUILD_DESKTOP_SUCCESS：重建桌面成功后，POST_REATTACH_DESKTOP_SUCCESS：触发重建的分配用户任务成功后。
+        :param life_cycle_type: 触发场景。POST_CREATE_DESKTOP_SUCCESS：创建桌面成功后，POST_REBUILD_DESKTOP_SUCCESS：重建桌面成功后，POST_REATTACH_DESKTOP_SUCCESS：触发重建的分配用户任务成功后，POST_DESKTOP_DISCONNECTED：桌面断开连接后。
         :type life_cycle_type: str
         :param time_zone: 时区。
         :type time_zone: str
@@ -111,6 +113,8 @@ class UpdateScheduledTasksReq:
         :type priority: int
         :param is_gray: 任务是否灰度执行，供远程脚本使用。
         :type is_gray: bool
+        :param wait_time: 触发式任务触发后，等待时长。
+        :type wait_time: int
         """
         
         
@@ -136,6 +140,7 @@ class UpdateScheduledTasksReq:
         self._apply_objects = None
         self._priority = None
         self._is_gray = None
+        self._wait_time = None
         self.discriminator = None
 
         if scheduled_type is not None:
@@ -180,6 +185,8 @@ class UpdateScheduledTasksReq:
             self.priority = priority
         if is_gray is not None:
             self.is_gray = is_gray
+        if wait_time is not None:
+            self.wait_time = wait_time
 
     @property
     def scheduled_type(self):
@@ -427,7 +434,7 @@ class UpdateScheduledTasksReq:
     def life_cycle_type(self):
         """Gets the life_cycle_type of this UpdateScheduledTasksReq.
 
-        触发场景。POST_CREATE_DESKTOP_SUCCESS：创建桌面成功后，POST_REBUILD_DESKTOP_SUCCESS：重建桌面成功后，POST_REATTACH_DESKTOP_SUCCESS：触发重建的分配用户任务成功后。
+        触发场景。POST_CREATE_DESKTOP_SUCCESS：创建桌面成功后，POST_REBUILD_DESKTOP_SUCCESS：重建桌面成功后，POST_REATTACH_DESKTOP_SUCCESS：触发重建的分配用户任务成功后，POST_DESKTOP_DISCONNECTED：桌面断开连接后。
 
         :return: The life_cycle_type of this UpdateScheduledTasksReq.
         :rtype: str
@@ -438,7 +445,7 @@ class UpdateScheduledTasksReq:
     def life_cycle_type(self, life_cycle_type):
         """Sets the life_cycle_type of this UpdateScheduledTasksReq.
 
-        触发场景。POST_CREATE_DESKTOP_SUCCESS：创建桌面成功后，POST_REBUILD_DESKTOP_SUCCESS：重建桌面成功后，POST_REATTACH_DESKTOP_SUCCESS：触发重建的分配用户任务成功后。
+        触发场景。POST_CREATE_DESKTOP_SUCCESS：创建桌面成功后，POST_REBUILD_DESKTOP_SUCCESS：重建桌面成功后，POST_REATTACH_DESKTOP_SUCCESS：触发重建的分配用户任务成功后，POST_DESKTOP_DISCONNECTED：桌面断开连接后。
 
         :param life_cycle_type: The life_cycle_type of this UpdateScheduledTasksReq.
         :type life_cycle_type: str
@@ -642,6 +649,28 @@ class UpdateScheduledTasksReq:
         :type is_gray: bool
         """
         self._is_gray = is_gray
+
+    @property
+    def wait_time(self):
+        """Gets the wait_time of this UpdateScheduledTasksReq.
+
+        触发式任务触发后，等待时长。
+
+        :return: The wait_time of this UpdateScheduledTasksReq.
+        :rtype: int
+        """
+        return self._wait_time
+
+    @wait_time.setter
+    def wait_time(self, wait_time):
+        """Sets the wait_time of this UpdateScheduledTasksReq.
+
+        触发式任务触发后，等待时长。
+
+        :param wait_time: The wait_time of this UpdateScheduledTasksReq.
+        :type wait_time: int
+        """
+        self._wait_time = wait_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -17,6 +17,7 @@ class Record:
     sensitive_list = []
 
     openapi_types = {
+        'tenant_id': 'str',
         'sid': 'str',
         'transaction_id': 'str',
         'computer_name': 'str',
@@ -38,6 +39,7 @@ class Record:
     }
 
     attribute_map = {
+        'tenant_id': 'tenantId',
         'sid': 'sid',
         'transaction_id': 'transaction_id',
         'computer_name': 'computer_name',
@@ -58,11 +60,13 @@ class Record:
         'e2e_rtt': 'e2e_rtt'
     }
 
-    def __init__(self, sid=None, transaction_id=None, computer_name=None, user_name=None, terminal_mac=None, terminal_name=None, terminal_ip=None, client_version=None, terminal_type=None, agent_version=None, desktop_ip=None, connection_start_time=None, connection_setup_time=None, connection_end_time=None, is_reconnect=None, connection_failure_reason=None, network_rtt=None, e2e_rtt=None):
+    def __init__(self, tenant_id=None, sid=None, transaction_id=None, computer_name=None, user_name=None, terminal_mac=None, terminal_name=None, terminal_ip=None, client_version=None, terminal_type=None, agent_version=None, desktop_ip=None, connection_start_time=None, connection_setup_time=None, connection_end_time=None, is_reconnect=None, connection_failure_reason=None, network_rtt=None, e2e_rtt=None):
         """Record
 
         The model defined in huaweicloud sdk
 
+        :param tenant_id: 租户id，不对外展示
+        :type tenant_id: str
         :param sid: 桌面sid
         :type sid: str
         :param transaction_id: 事务id
@@ -103,6 +107,7 @@ class Record:
         
         
 
+        self._tenant_id = None
         self._sid = None
         self._transaction_id = None
         self._computer_name = None
@@ -123,6 +128,8 @@ class Record:
         self._e2e_rtt = None
         self.discriminator = None
 
+        if tenant_id is not None:
+            self.tenant_id = tenant_id
         if sid is not None:
             self.sid = sid
         if transaction_id is not None:
@@ -159,6 +166,28 @@ class Record:
             self.network_rtt = network_rtt
         if e2e_rtt is not None:
             self.e2e_rtt = e2e_rtt
+
+    @property
+    def tenant_id(self):
+        """Gets the tenant_id of this Record.
+
+        租户id，不对外展示
+
+        :return: The tenant_id of this Record.
+        :rtype: str
+        """
+        return self._tenant_id
+
+    @tenant_id.setter
+    def tenant_id(self, tenant_id):
+        """Sets the tenant_id of this Record.
+
+        租户id，不对外展示
+
+        :param tenant_id: The tenant_id of this Record.
+        :type tenant_id: str
+        """
+        self._tenant_id = tenant_id
 
     @property
     def sid(self):

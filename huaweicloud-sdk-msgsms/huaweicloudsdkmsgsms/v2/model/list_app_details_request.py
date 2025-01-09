@@ -61,7 +61,7 @@ class ListAppDetailsRequest:
         :type sort_dir: str
         :param sort_key: 排序字段
         :type sort_key: str
-        :param status: 应用状态   1. CREATED：待上线。应用暂未创建成功，请稍候。   2. SUSPENDED：暂停。无法发起业务请求。当客户所发短信内容触发业务违规，或客户申请退订短信业务时，运营经理会将客户短信应用暂停。   3. LAUNCHED：正常。应用添加成功，可以正常使用。
+        :param status: 应用状态   1. CREATED：待上线。应用暂未创建成功，请稍候。   2. SUSPENDED：暂停。无法发起业务请求。当客户所发短信内容触发业务违规，或客户申请退订短信业务时，运营经理会将客户短信应用暂停。   3. LAUNCHED：正常。应用添加成功，可以正常使用。   4. PROCESSING：资源待分配。请联系客户经理或通过工单系统申请配置资源。
         :type status: str
         """
         
@@ -277,7 +277,7 @@ class ListAppDetailsRequest:
     def status(self):
         """Gets the status of this ListAppDetailsRequest.
 
-        应用状态   1. CREATED：待上线。应用暂未创建成功，请稍候。   2. SUSPENDED：暂停。无法发起业务请求。当客户所发短信内容触发业务违规，或客户申请退订短信业务时，运营经理会将客户短信应用暂停。   3. LAUNCHED：正常。应用添加成功，可以正常使用。
+        应用状态   1. CREATED：待上线。应用暂未创建成功，请稍候。   2. SUSPENDED：暂停。无法发起业务请求。当客户所发短信内容触发业务违规，或客户申请退订短信业务时，运营经理会将客户短信应用暂停。   3. LAUNCHED：正常。应用添加成功，可以正常使用。   4. PROCESSING：资源待分配。请联系客户经理或通过工单系统申请配置资源。
 
         :return: The status of this ListAppDetailsRequest.
         :rtype: str
@@ -288,7 +288,7 @@ class ListAppDetailsRequest:
     def status(self, status):
         """Sets the status of this ListAppDetailsRequest.
 
-        应用状态   1. CREATED：待上线。应用暂未创建成功，请稍候。   2. SUSPENDED：暂停。无法发起业务请求。当客户所发短信内容触发业务违规，或客户申请退订短信业务时，运营经理会将客户短信应用暂停。   3. LAUNCHED：正常。应用添加成功，可以正常使用。
+        应用状态   1. CREATED：待上线。应用暂未创建成功，请稍候。   2. SUSPENDED：暂停。无法发起业务请求。当客户所发短信内容触发业务违规，或客户申请退订短信业务时，运营经理会将客户短信应用暂停。   3. LAUNCHED：正常。应用添加成功，可以正常使用。   4. PROCESSING：资源待分配。请联系客户经理或通过工单系统申请配置资源。
 
         :param status: The status of this ListAppDetailsRequest.
         :type status: str

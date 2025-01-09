@@ -17,29 +17,58 @@ class BatchRebuildDesktopsSystemDiskRequest:
     sensitive_list = []
 
     openapi_types = {
+        'service_transaction_id': 'str',
         'body': 'RebuildDesktopsReq'
     }
 
     attribute_map = {
+        'service_transaction_id': 'Service-Transaction-Id',
         'body': 'body'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, service_transaction_id=None, body=None):
         """BatchRebuildDesktopsSystemDiskRequest
 
         The model defined in huaweicloud sdk
 
+        :param service_transaction_id: CBC接口回调时，请求头里带上的业务ID
+        :type service_transaction_id: str
         :param body: Body of the BatchRebuildDesktopsSystemDiskRequest
         :type body: :class:`huaweicloudsdkworkspace.v2.RebuildDesktopsReq`
         """
         
         
 
+        self._service_transaction_id = None
         self._body = None
         self.discriminator = None
 
+        if service_transaction_id is not None:
+            self.service_transaction_id = service_transaction_id
         if body is not None:
             self.body = body
+
+    @property
+    def service_transaction_id(self):
+        """Gets the service_transaction_id of this BatchRebuildDesktopsSystemDiskRequest.
+
+        CBC接口回调时，请求头里带上的业务ID
+
+        :return: The service_transaction_id of this BatchRebuildDesktopsSystemDiskRequest.
+        :rtype: str
+        """
+        return self._service_transaction_id
+
+    @service_transaction_id.setter
+    def service_transaction_id(self, service_transaction_id):
+        """Sets the service_transaction_id of this BatchRebuildDesktopsSystemDiskRequest.
+
+        CBC接口回调时，请求头里带上的业务ID
+
+        :param service_transaction_id: The service_transaction_id of this BatchRebuildDesktopsSystemDiskRequest.
+        :type service_transaction_id: str
+        """
+        self._service_transaction_id = service_transaction_id
 
     @property
     def body(self):

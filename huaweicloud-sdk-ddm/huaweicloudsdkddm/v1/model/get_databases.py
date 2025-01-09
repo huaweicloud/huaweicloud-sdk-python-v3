@@ -20,8 +20,8 @@ class GetDatabases:
         'dbslot': 'int',
         'name': 'str',
         'status': 'str',
-        'created': 'str',
-        'updated': 'str',
+        'created': 'int',
+        'updated': 'int',
         'id': 'str',
         'id_name': 'str'
     }
@@ -48,9 +48,9 @@ class GetDatabases:
         :param status: 状态。
         :type status: str
         :param created: 创建时间。
-        :type created: str
+        :type created: int
         :param updated: 最近更新时间。
-        :type updated: str
+        :type updated: int
         :param id: 所在RDS的id。
         :type id: str
         :param id_name: 所在RDS的名称。
@@ -149,7 +149,7 @@ class GetDatabases:
         创建时间。
 
         :return: The created of this GetDatabases.
-        :rtype: str
+        :rtype: int
         """
         return self._created
 
@@ -160,7 +160,7 @@ class GetDatabases:
         创建时间。
 
         :param created: The created of this GetDatabases.
-        :type created: str
+        :type created: int
         """
         self._created = created
 
@@ -171,7 +171,7 @@ class GetDatabases:
         最近更新时间。
 
         :return: The updated of this GetDatabases.
-        :rtype: str
+        :rtype: int
         """
         return self._updated
 
@@ -182,7 +182,7 @@ class GetDatabases:
         最近更新时间。
 
         :param updated: The updated of this GetDatabases.
-        :type updated: str
+        :type updated: int
         """
         self._updated = updated
 

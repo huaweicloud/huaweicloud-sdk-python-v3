@@ -21,6 +21,7 @@ class AttachInstancesReq:
         'image_type': 'str',
         'image_id': 'str',
         'os_type': 'str',
+        'order_id': 'str',
         'enterprise_project_id': 'str',
         'desktop_name_policy_id': 'str'
     }
@@ -30,11 +31,12 @@ class AttachInstancesReq:
         'image_type': 'image_type',
         'image_id': 'image_id',
         'os_type': 'os_type',
+        'order_id': 'order_id',
         'enterprise_project_id': 'enterprise_project_id',
         'desktop_name_policy_id': 'desktop_name_policy_id'
     }
 
-    def __init__(self, desktops=None, image_type=None, image_id=None, os_type=None, enterprise_project_id=None, desktop_name_policy_id=None):
+    def __init__(self, desktops=None, image_type=None, image_id=None, os_type=None, order_id=None, enterprise_project_id=None, desktop_name_policy_id=None):
         """AttachInstancesReq
 
         The model defined in huaweicloud sdk
@@ -45,9 +47,11 @@ class AttachInstancesReq:
         :type image_type: str
         :param image_id: 模板ID，涉及变更镜像时需传（可选）
         :type image_id: str
-        :param os_type: os类型，涉及变更镜像时需传（可选）
+        :param os_type: os类型，涉及变更镜像时需传（可选，该参数已废弃）。
         :type os_type: str
-        :param enterprise_project_id: 企业项目ID，默认\&quot;0\&quot;
+        :param order_id: 包周期订购ID，CBC订购回调时使用。（可选）
+        :type order_id: str
+        :param enterprise_project_id: 企业项目ID，默认\&quot;0\&quot;,无用参数,废弃
         :type enterprise_project_id: str
         :param desktop_name_policy_id: 策略id，用于指定生成桌面名称策略，如果指定了桌面名称则优先使用指定的桌面名称。
         :type desktop_name_policy_id: str
@@ -59,17 +63,21 @@ class AttachInstancesReq:
         self._image_type = None
         self._image_id = None
         self._os_type = None
+        self._order_id = None
         self._enterprise_project_id = None
         self._desktop_name_policy_id = None
         self.discriminator = None
 
-        self.desktops = desktops
+        if desktops is not None:
+            self.desktops = desktops
         if image_type is not None:
             self.image_type = image_type
         if image_id is not None:
             self.image_id = image_id
         if os_type is not None:
             self.os_type = os_type
+        if order_id is not None:
+            self.order_id = order_id
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if desktop_name_policy_id is not None:
@@ -145,7 +153,7 @@ class AttachInstancesReq:
     def os_type(self):
         """Gets the os_type of this AttachInstancesReq.
 
-        os类型，涉及变更镜像时需传（可选）
+        os类型，涉及变更镜像时需传（可选，该参数已废弃）。
 
         :return: The os_type of this AttachInstancesReq.
         :rtype: str
@@ -156,7 +164,7 @@ class AttachInstancesReq:
     def os_type(self, os_type):
         """Sets the os_type of this AttachInstancesReq.
 
-        os类型，涉及变更镜像时需传（可选）
+        os类型，涉及变更镜像时需传（可选，该参数已废弃）。
 
         :param os_type: The os_type of this AttachInstancesReq.
         :type os_type: str
@@ -164,10 +172,32 @@ class AttachInstancesReq:
         self._os_type = os_type
 
     @property
+    def order_id(self):
+        """Gets the order_id of this AttachInstancesReq.
+
+        包周期订购ID，CBC订购回调时使用。（可选）
+
+        :return: The order_id of this AttachInstancesReq.
+        :rtype: str
+        """
+        return self._order_id
+
+    @order_id.setter
+    def order_id(self, order_id):
+        """Sets the order_id of this AttachInstancesReq.
+
+        包周期订购ID，CBC订购回调时使用。（可选）
+
+        :param order_id: The order_id of this AttachInstancesReq.
+        :type order_id: str
+        """
+        self._order_id = order_id
+
+    @property
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this AttachInstancesReq.
 
-        企业项目ID，默认\"0\"
+        企业项目ID，默认\"0\",无用参数,废弃
 
         :return: The enterprise_project_id of this AttachInstancesReq.
         :rtype: str
@@ -178,7 +208,7 @@ class AttachInstancesReq:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this AttachInstancesReq.
 
-        企业项目ID，默认\"0\"
+        企业项目ID，默认\"0\",无用参数,废弃
 
         :param enterprise_project_id: The enterprise_project_id of this AttachInstancesReq.
         :type enterprise_project_id: str

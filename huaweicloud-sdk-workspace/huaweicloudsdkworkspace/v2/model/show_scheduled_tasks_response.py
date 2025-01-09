@@ -37,7 +37,8 @@ class ShowScheduledTasksResponse(SdkResponse):
         'gray_count': 'int',
         'gray_desktop_ids': 'list[str]',
         'gray_fail_threshold': 'int',
-        'time_zone': 'str'
+        'time_zone': 'str',
+        'wait_time': 'int'
     }
 
     attribute_map = {
@@ -60,10 +61,11 @@ class ShowScheduledTasksResponse(SdkResponse):
         'gray_count': 'gray_count',
         'gray_desktop_ids': 'gray_desktop_ids',
         'gray_fail_threshold': 'gray_fail_threshold',
-        'time_zone': 'time_zone'
+        'time_zone': 'time_zone',
+        'wait_time': 'wait_time'
     }
 
-    def __init__(self, id=None, task_type=None, task_name=None, force_execute=None, scheduled_type=None, life_cycle_type=None, day_interval=None, week_list=None, month_list=None, date_list=None, scheduled_date=None, scheduled_time=None, expire_time=None, description=None, extra_params=None, apply_objects=None, gray_count=None, gray_desktop_ids=None, gray_fail_threshold=None, time_zone=None):
+    def __init__(self, id=None, task_type=None, task_name=None, force_execute=None, scheduled_type=None, life_cycle_type=None, day_interval=None, week_list=None, month_list=None, date_list=None, scheduled_date=None, scheduled_time=None, expire_time=None, description=None, extra_params=None, apply_objects=None, gray_count=None, gray_desktop_ids=None, gray_fail_threshold=None, time_zone=None, wait_time=None):
         """ShowScheduledTasksResponse
 
         The model defined in huaweicloud sdk
@@ -108,6 +110,8 @@ class ShowScheduledTasksResponse(SdkResponse):
         :type gray_fail_threshold: int
         :param time_zone: 时区。
         :type time_zone: str
+        :param wait_time: 触发式任务触发后，等待时长。
+        :type wait_time: int
         """
         
         super(ShowScheduledTasksResponse, self).__init__()
@@ -132,6 +136,7 @@ class ShowScheduledTasksResponse(SdkResponse):
         self._gray_desktop_ids = None
         self._gray_fail_threshold = None
         self._time_zone = None
+        self._wait_time = None
         self.discriminator = None
 
         if id is not None:
@@ -174,6 +179,8 @@ class ShowScheduledTasksResponse(SdkResponse):
             self.gray_fail_threshold = gray_fail_threshold
         if time_zone is not None:
             self.time_zone = time_zone
+        if wait_time is not None:
+            self.wait_time = wait_time
 
     @property
     def id(self):
@@ -614,6 +621,28 @@ class ShowScheduledTasksResponse(SdkResponse):
         :type time_zone: str
         """
         self._time_zone = time_zone
+
+    @property
+    def wait_time(self):
+        """Gets the wait_time of this ShowScheduledTasksResponse.
+
+        触发式任务触发后，等待时长。
+
+        :return: The wait_time of this ShowScheduledTasksResponse.
+        :rtype: int
+        """
+        return self._wait_time
+
+    @wait_time.setter
+    def wait_time(self, wait_time):
+        """Sets the wait_time of this ShowScheduledTasksResponse.
+
+        触发式任务触发后，等待时长。
+
+        :param wait_time: The wait_time of this ShowScheduledTasksResponse.
+        :type wait_time: int
+        """
+        self._wait_time = wait_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -22,8 +22,10 @@ class ListLoginRecordsNewRequest:
         'user_name': 'str',
         'computer_name': 'str',
         'terminal_type': 'str',
-        'limit': 'str',
-        'offset': 'str'
+        'offset': 'int',
+        'limit': 'int',
+        'min_network_rtt': 'int',
+        'max_network_rtt': 'int'
     }
 
     attribute_map = {
@@ -32,11 +34,13 @@ class ListLoginRecordsNewRequest:
         'user_name': 'user_name',
         'computer_name': 'computer_name',
         'terminal_type': 'terminal_type',
+        'offset': 'offset',
         'limit': 'limit',
-        'offset': 'offset'
+        'min_network_rtt': 'min_network_rtt',
+        'max_network_rtt': 'max_network_rtt'
     }
 
-    def __init__(self, start_time=None, end_time=None, user_name=None, computer_name=None, terminal_type=None, limit=None, offset=None):
+    def __init__(self, start_time=None, end_time=None, user_name=None, computer_name=None, terminal_type=None, offset=None, limit=None, min_network_rtt=None, max_network_rtt=None):
         """ListLoginRecordsNewRequest
 
         The model defined in huaweicloud sdk
@@ -51,10 +55,14 @@ class ListLoginRecordsNewRequest:
         :type computer_name: str
         :param terminal_type: 登录桌面的终端系统类型，当前支持：WI（云桌面客户端）。
         :type terminal_type: str
-        :param limit: 用于分页查询，取值范围0-100，默认值20。
-        :type limit: str
-        :param offset: 用于分页查询，查询的起始记录序号，从0开始。
-        :type offset: str
+        :param offset: 用于分页查询，查询的起始记录序号，从0开始
+        :type offset: int
+        :param limit: 用于分页查询，返回登录记录数量限制,取值范围0-1000。如果不指定，默认为20。
+        :type limit: int
+        :param min_network_rtt: 查询端到端时延的最小值
+        :type min_network_rtt: int
+        :param max_network_rtt: 查询端到端时延的最大值
+        :type max_network_rtt: int
         """
         
         
@@ -64,8 +72,10 @@ class ListLoginRecordsNewRequest:
         self._user_name = None
         self._computer_name = None
         self._terminal_type = None
-        self._limit = None
         self._offset = None
+        self._limit = None
+        self._min_network_rtt = None
+        self._max_network_rtt = None
         self.discriminator = None
 
         if start_time is not None:
@@ -78,10 +88,14 @@ class ListLoginRecordsNewRequest:
             self.computer_name = computer_name
         if terminal_type is not None:
             self.terminal_type = terminal_type
-        if limit is not None:
-            self.limit = limit
         if offset is not None:
             self.offset = offset
+        if limit is not None:
+            self.limit = limit
+        if min_network_rtt is not None:
+            self.min_network_rtt = min_network_rtt
+        if max_network_rtt is not None:
+            self.max_network_rtt = max_network_rtt
 
     @property
     def start_time(self):
@@ -194,35 +208,13 @@ class ListLoginRecordsNewRequest:
         self._terminal_type = terminal_type
 
     @property
-    def limit(self):
-        """Gets the limit of this ListLoginRecordsNewRequest.
-
-        用于分页查询，取值范围0-100，默认值20。
-
-        :return: The limit of this ListLoginRecordsNewRequest.
-        :rtype: str
-        """
-        return self._limit
-
-    @limit.setter
-    def limit(self, limit):
-        """Sets the limit of this ListLoginRecordsNewRequest.
-
-        用于分页查询，取值范围0-100，默认值20。
-
-        :param limit: The limit of this ListLoginRecordsNewRequest.
-        :type limit: str
-        """
-        self._limit = limit
-
-    @property
     def offset(self):
         """Gets the offset of this ListLoginRecordsNewRequest.
 
-        用于分页查询，查询的起始记录序号，从0开始。
+        用于分页查询，查询的起始记录序号，从0开始
 
         :return: The offset of this ListLoginRecordsNewRequest.
-        :rtype: str
+        :rtype: int
         """
         return self._offset
 
@@ -230,12 +222,78 @@ class ListLoginRecordsNewRequest:
     def offset(self, offset):
         """Sets the offset of this ListLoginRecordsNewRequest.
 
-        用于分页查询，查询的起始记录序号，从0开始。
+        用于分页查询，查询的起始记录序号，从0开始
 
         :param offset: The offset of this ListLoginRecordsNewRequest.
-        :type offset: str
+        :type offset: int
         """
         self._offset = offset
+
+    @property
+    def limit(self):
+        """Gets the limit of this ListLoginRecordsNewRequest.
+
+        用于分页查询，返回登录记录数量限制,取值范围0-1000。如果不指定，默认为20。
+
+        :return: The limit of this ListLoginRecordsNewRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListLoginRecordsNewRequest.
+
+        用于分页查询，返回登录记录数量限制,取值范围0-1000。如果不指定，默认为20。
+
+        :param limit: The limit of this ListLoginRecordsNewRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def min_network_rtt(self):
+        """Gets the min_network_rtt of this ListLoginRecordsNewRequest.
+
+        查询端到端时延的最小值
+
+        :return: The min_network_rtt of this ListLoginRecordsNewRequest.
+        :rtype: int
+        """
+        return self._min_network_rtt
+
+    @min_network_rtt.setter
+    def min_network_rtt(self, min_network_rtt):
+        """Sets the min_network_rtt of this ListLoginRecordsNewRequest.
+
+        查询端到端时延的最小值
+
+        :param min_network_rtt: The min_network_rtt of this ListLoginRecordsNewRequest.
+        :type min_network_rtt: int
+        """
+        self._min_network_rtt = min_network_rtt
+
+    @property
+    def max_network_rtt(self):
+        """Gets the max_network_rtt of this ListLoginRecordsNewRequest.
+
+        查询端到端时延的最大值
+
+        :return: The max_network_rtt of this ListLoginRecordsNewRequest.
+        :rtype: int
+        """
+        return self._max_network_rtt
+
+    @max_network_rtt.setter
+    def max_network_rtt(self, max_network_rtt):
+        """Sets the max_network_rtt of this ListLoginRecordsNewRequest.
+
+        查询端到端时延的最大值
+
+        :param max_network_rtt: The max_network_rtt of this ListLoginRecordsNewRequest.
+        :type max_network_rtt: int
+        """
+        self._max_network_rtt = max_network_rtt
 
     def to_dict(self):
         """Returns the model properties as a dict"""

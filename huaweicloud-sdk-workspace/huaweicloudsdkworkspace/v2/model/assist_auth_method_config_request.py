@@ -18,15 +18,19 @@ class AssistAuthMethodConfigRequest:
 
     openapi_types = {
         'auth_type': 'AuthAssistEnum',
-        'otp_config_info': 'OtpConfigInfo'
+        'otp_config_info': 'OtpConfigInfo',
+        'radius_auth_config': 'RadiusAuthConfig',
+        'radius_gateway_config': 'RadiusGatewayConfig'
     }
 
     attribute_map = {
         'auth_type': 'auth_type',
-        'otp_config_info': 'otp_config_info'
+        'otp_config_info': 'otp_config_info',
+        'radius_auth_config': 'radius_auth_config',
+        'radius_gateway_config': 'radius_gateway_config'
     }
 
-    def __init__(self, auth_type=None, otp_config_info=None):
+    def __init__(self, auth_type=None, otp_config_info=None, radius_auth_config=None, radius_gateway_config=None):
         """AssistAuthMethodConfigRequest
 
         The model defined in huaweicloud sdk
@@ -35,18 +39,28 @@ class AssistAuthMethodConfigRequest:
         :type auth_type: :class:`huaweicloudsdkworkspace.v2.AuthAssistEnum`
         :param otp_config_info: 
         :type otp_config_info: :class:`huaweicloudsdkworkspace.v2.OtpConfigInfo`
+        :param radius_auth_config: 
+        :type radius_auth_config: :class:`huaweicloudsdkworkspace.v2.RadiusAuthConfig`
+        :param radius_gateway_config: 
+        :type radius_gateway_config: :class:`huaweicloudsdkworkspace.v2.RadiusGatewayConfig`
         """
         
         
 
         self._auth_type = None
         self._otp_config_info = None
+        self._radius_auth_config = None
+        self._radius_gateway_config = None
         self.discriminator = None
 
         if auth_type is not None:
             self.auth_type = auth_type
         if otp_config_info is not None:
             self.otp_config_info = otp_config_info
+        if radius_auth_config is not None:
+            self.radius_auth_config = radius_auth_config
+        if radius_gateway_config is not None:
+            self.radius_gateway_config = radius_gateway_config
 
     @property
     def auth_type(self):
@@ -83,6 +97,42 @@ class AssistAuthMethodConfigRequest:
         :type otp_config_info: :class:`huaweicloudsdkworkspace.v2.OtpConfigInfo`
         """
         self._otp_config_info = otp_config_info
+
+    @property
+    def radius_auth_config(self):
+        """Gets the radius_auth_config of this AssistAuthMethodConfigRequest.
+
+        :return: The radius_auth_config of this AssistAuthMethodConfigRequest.
+        :rtype: :class:`huaweicloudsdkworkspace.v2.RadiusAuthConfig`
+        """
+        return self._radius_auth_config
+
+    @radius_auth_config.setter
+    def radius_auth_config(self, radius_auth_config):
+        """Sets the radius_auth_config of this AssistAuthMethodConfigRequest.
+
+        :param radius_auth_config: The radius_auth_config of this AssistAuthMethodConfigRequest.
+        :type radius_auth_config: :class:`huaweicloudsdkworkspace.v2.RadiusAuthConfig`
+        """
+        self._radius_auth_config = radius_auth_config
+
+    @property
+    def radius_gateway_config(self):
+        """Gets the radius_gateway_config of this AssistAuthMethodConfigRequest.
+
+        :return: The radius_gateway_config of this AssistAuthMethodConfigRequest.
+        :rtype: :class:`huaweicloudsdkworkspace.v2.RadiusGatewayConfig`
+        """
+        return self._radius_gateway_config
+
+    @radius_gateway_config.setter
+    def radius_gateway_config(self, radius_gateway_config):
+        """Sets the radius_gateway_config of this AssistAuthMethodConfigRequest.
+
+        :param radius_gateway_config: The radius_gateway_config of this AssistAuthMethodConfigRequest.
+        :type radius_gateway_config: :class:`huaweicloudsdkworkspace.v2.RadiusGatewayConfig`
+        """
+        self._radius_gateway_config = radius_gateway_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

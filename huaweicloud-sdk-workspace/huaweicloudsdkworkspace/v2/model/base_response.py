@@ -18,15 +18,17 @@ class BaseResponse:
 
     openapi_types = {
         'error_code': 'str',
-        'error_msg': 'str'
+        'error_msg': 'str',
+        'encoded_authorization_message': 'str'
     }
 
     attribute_map = {
         'error_code': 'error_code',
-        'error_msg': 'error_msg'
+        'error_msg': 'error_msg',
+        'encoded_authorization_message': 'encoded_authorization_message'
     }
 
-    def __init__(self, error_code=None, error_msg=None):
+    def __init__(self, error_code=None, error_msg=None, encoded_authorization_message=None):
         """BaseResponse
 
         The model defined in huaweicloud sdk
@@ -35,18 +37,23 @@ class BaseResponse:
         :type error_code: str
         :param error_msg: 错误描述。
         :type error_msg: str
+        :param encoded_authorization_message: 加密后的详细拒绝原因，用户可以自行调用STS服务的decode-authorization-message接口进行解密。
+        :type encoded_authorization_message: str
         """
         
         
 
         self._error_code = None
         self._error_msg = None
+        self._encoded_authorization_message = None
         self.discriminator = None
 
         if error_code is not None:
             self.error_code = error_code
         if error_msg is not None:
             self.error_msg = error_msg
+        if encoded_authorization_message is not None:
+            self.encoded_authorization_message = encoded_authorization_message
 
     @property
     def error_code(self):
@@ -91,6 +98,28 @@ class BaseResponse:
         :type error_msg: str
         """
         self._error_msg = error_msg
+
+    @property
+    def encoded_authorization_message(self):
+        """Gets the encoded_authorization_message of this BaseResponse.
+
+        加密后的详细拒绝原因，用户可以自行调用STS服务的decode-authorization-message接口进行解密。
+
+        :return: The encoded_authorization_message of this BaseResponse.
+        :rtype: str
+        """
+        return self._encoded_authorization_message
+
+    @encoded_authorization_message.setter
+    def encoded_authorization_message(self, encoded_authorization_message):
+        """Sets the encoded_authorization_message of this BaseResponse.
+
+        加密后的详细拒绝原因，用户可以自行调用STS服务的decode-authorization-message接口进行解密。
+
+        :param encoded_authorization_message: The encoded_authorization_message of this BaseResponse.
+        :type encoded_authorization_message: str
+        """
+        self._encoded_authorization_message = encoded_authorization_message
 
     def to_dict(self):
         """Returns the model properties as a dict"""

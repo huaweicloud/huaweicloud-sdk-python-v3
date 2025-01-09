@@ -47,7 +47,7 @@ class ListTtscVocabularyConfigsRequest:
         :type x_request_id: str
         :param x_app_user_id: 第三方用户ID。不允许输入中文。
         :type x_app_user_id: str
-        :param type: 词表类型 CHINESE_G2P：（g2p）中文拼音
+        :param type: 自定义读法类型 CHINESE_G2P：拼音
         :type type: str
         :param limit: 每页显示的条目数量。
         :type limit: int
@@ -137,7 +137,7 @@ class ListTtscVocabularyConfigsRequest:
     def type(self):
         """Gets the type of this ListTtscVocabularyConfigsRequest.
 
-        词表类型 CHINESE_G2P：（g2p）中文拼音
+        自定义读法类型 CHINESE_G2P：拼音
 
         :return: The type of this ListTtscVocabularyConfigsRequest.
         :rtype: str
@@ -148,7 +148,7 @@ class ListTtscVocabularyConfigsRequest:
     def type(self, type):
         """Sets the type of this ListTtscVocabularyConfigsRequest.
 
-        词表类型 CHINESE_G2P：（g2p）中文拼音
+        自定义读法类型 CHINESE_G2P：拼音
 
         :param type: The type of this ListTtscVocabularyConfigsRequest.
         :type type: str

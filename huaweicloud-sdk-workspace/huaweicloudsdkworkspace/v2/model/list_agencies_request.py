@@ -17,20 +17,51 @@ class ListAgenciesRequest:
     sensitive_list = []
 
     openapi_types = {
+        'scene': 'str'
     }
 
     attribute_map = {
+        'scene': 'scene'
     }
 
-    def __init__(self):
+    def __init__(self, scene=None):
         """ListAgenciesRequest
 
         The model defined in huaweicloud sdk
 
+        :param scene: 委托场景。 - WORKSPACE：云桌面。 - CLOUD_GAME：云游戏。 - SCREEN_RECORD：录屏审计。
+        :type scene: str
         """
         
         
+
+        self._scene = None
         self.discriminator = None
+
+        if scene is not None:
+            self.scene = scene
+
+    @property
+    def scene(self):
+        """Gets the scene of this ListAgenciesRequest.
+
+        委托场景。 - WORKSPACE：云桌面。 - CLOUD_GAME：云游戏。 - SCREEN_RECORD：录屏审计。
+
+        :return: The scene of this ListAgenciesRequest.
+        :rtype: str
+        """
+        return self._scene
+
+    @scene.setter
+    def scene(self, scene):
+        """Sets the scene of this ListAgenciesRequest.
+
+        委托场景。 - WORKSPACE：云桌面。 - CLOUD_GAME：云游戏。 - SCREEN_RECORD：录屏审计。
+
+        :param scene: The scene of this ListAgenciesRequest.
+        :type scene: str
+        """
+        self._scene = scene
 
     def to_dict(self):
         """Returns the model properties as a dict"""

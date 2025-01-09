@@ -47,11 +47,11 @@ class ListScheduledTasksRequest:
         :type limit: int
         :param task_name: 任务名称。
         :type task_name: str
-        :param task_type: 任务类型。START：开机，STOP：关机，REBOOT：重启，HIBERNATE：休眠，REBUILD：重建系统盘，EXECUTE_SCRIPT：执行脚本。
+        :param task_type: 任务类型。START：开机，STOP：关机，REBOOT：重启，HIBERNATE：休眠，REBUILD：重建系统盘，EXECUTE_SCRIPT：执行脚本，CREATE_SNAPSHOT：创建EVS镜像。
         :type task_type: str
         :param scheduled_type: 执行周期类型。FIXED_TIME：指定时间，DAY：按天，WEEK：按周，MONTH：按月，LIFE_CYCLE：触发式。指定LIFE_CYCLE时，才返回触发式任务。
         :type scheduled_type: str
-        :param life_cycle_type: 触发场景类型。POST_CREATE_DESKTOP_SUCCESS：创建桌面成功后，POST_REBUILD_DESKTOP_SUCCESS：重建桌面成功后，POST_REATTACH_DESKTOP_SUCCESS：触发重建的分配用户任务成功后。
+        :param life_cycle_type: 触发场景类型。POST_CREATE_DESKTOP_SUCCESS：创建桌面成功后，POST_REBUILD_DESKTOP_SUCCESS：重建桌面成功后，POST_REATTACH_DESKTOP_SUCCESS：触发重建的分配用户任务成功后，POST_DESKTOP_DISCONNECTED：桌面断开连接后。
         :type life_cycle_type: str
         :param last_status: 最近一次执行状态。SUCCESS：成功，SKIP：跳过，FAIL：失败。
         :type last_status: str
@@ -151,7 +151,7 @@ class ListScheduledTasksRequest:
     def task_type(self):
         """Gets the task_type of this ListScheduledTasksRequest.
 
-        任务类型。START：开机，STOP：关机，REBOOT：重启，HIBERNATE：休眠，REBUILD：重建系统盘，EXECUTE_SCRIPT：执行脚本。
+        任务类型。START：开机，STOP：关机，REBOOT：重启，HIBERNATE：休眠，REBUILD：重建系统盘，EXECUTE_SCRIPT：执行脚本，CREATE_SNAPSHOT：创建EVS镜像。
 
         :return: The task_type of this ListScheduledTasksRequest.
         :rtype: str
@@ -162,7 +162,7 @@ class ListScheduledTasksRequest:
     def task_type(self, task_type):
         """Sets the task_type of this ListScheduledTasksRequest.
 
-        任务类型。START：开机，STOP：关机，REBOOT：重启，HIBERNATE：休眠，REBUILD：重建系统盘，EXECUTE_SCRIPT：执行脚本。
+        任务类型。START：开机，STOP：关机，REBOOT：重启，HIBERNATE：休眠，REBUILD：重建系统盘，EXECUTE_SCRIPT：执行脚本，CREATE_SNAPSHOT：创建EVS镜像。
 
         :param task_type: The task_type of this ListScheduledTasksRequest.
         :type task_type: str
@@ -195,7 +195,7 @@ class ListScheduledTasksRequest:
     def life_cycle_type(self):
         """Gets the life_cycle_type of this ListScheduledTasksRequest.
 
-        触发场景类型。POST_CREATE_DESKTOP_SUCCESS：创建桌面成功后，POST_REBUILD_DESKTOP_SUCCESS：重建桌面成功后，POST_REATTACH_DESKTOP_SUCCESS：触发重建的分配用户任务成功后。
+        触发场景类型。POST_CREATE_DESKTOP_SUCCESS：创建桌面成功后，POST_REBUILD_DESKTOP_SUCCESS：重建桌面成功后，POST_REATTACH_DESKTOP_SUCCESS：触发重建的分配用户任务成功后，POST_DESKTOP_DISCONNECTED：桌面断开连接后。
 
         :return: The life_cycle_type of this ListScheduledTasksRequest.
         :rtype: str
@@ -206,7 +206,7 @@ class ListScheduledTasksRequest:
     def life_cycle_type(self, life_cycle_type):
         """Sets the life_cycle_type of this ListScheduledTasksRequest.
 
-        触发场景类型。POST_CREATE_DESKTOP_SUCCESS：创建桌面成功后，POST_REBUILD_DESKTOP_SUCCESS：重建桌面成功后，POST_REATTACH_DESKTOP_SUCCESS：触发重建的分配用户任务成功后。
+        触发场景类型。POST_CREATE_DESKTOP_SUCCESS：创建桌面成功后，POST_REBUILD_DESKTOP_SUCCESS：重建桌面成功后，POST_REATTACH_DESKTOP_SUCCESS：触发重建的分配用户任务成功后，POST_DESKTOP_DISCONNECTED：桌面断开连接后。
 
         :param life_cycle_type: The life_cycle_type of this ListScheduledTasksRequest.
         :type life_cycle_type: str

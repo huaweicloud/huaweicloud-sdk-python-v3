@@ -22,6 +22,7 @@ class ScheduledTasksRecordsDetails:
         'desktop_id': 'str',
         'desktop_name': 'str',
         'exec_status': 'str',
+        'exec_script_id': 'str',
         'result_code': 'str',
         'fail_reason': 'str',
         'start_time': 'str',
@@ -35,6 +36,7 @@ class ScheduledTasksRecordsDetails:
         'desktop_id': 'desktop_id',
         'desktop_name': 'desktop_name',
         'exec_status': 'exec_status',
+        'exec_script_id': 'exec_script_id',
         'result_code': 'result_code',
         'fail_reason': 'fail_reason',
         'start_time': 'start_time',
@@ -42,7 +44,7 @@ class ScheduledTasksRecordsDetails:
         'time_zone': 'time_zone'
     }
 
-    def __init__(self, id=None, record_id=None, desktop_id=None, desktop_name=None, exec_status=None, result_code=None, fail_reason=None, start_time=None, end_time=None, time_zone=None):
+    def __init__(self, id=None, record_id=None, desktop_id=None, desktop_name=None, exec_status=None, exec_script_id=None, result_code=None, fail_reason=None, start_time=None, end_time=None, time_zone=None):
         """ScheduledTasksRecordsDetails
 
         The model defined in huaweicloud sdk
@@ -57,6 +59,8 @@ class ScheduledTasksRecordsDetails:
         :type desktop_name: str
         :param exec_status: 执行状态。
         :type exec_status: str
+        :param exec_script_id: 执行脚本id。
+        :type exec_script_id: str
         :param result_code: 失败或者跳过原因的错误码。
         :type result_code: str
         :param fail_reason: 失败或者跳过原因。
@@ -76,6 +80,7 @@ class ScheduledTasksRecordsDetails:
         self._desktop_id = None
         self._desktop_name = None
         self._exec_status = None
+        self._exec_script_id = None
         self._result_code = None
         self._fail_reason = None
         self._start_time = None
@@ -93,6 +98,8 @@ class ScheduledTasksRecordsDetails:
             self.desktop_name = desktop_name
         if exec_status is not None:
             self.exec_status = exec_status
+        if exec_script_id is not None:
+            self.exec_script_id = exec_script_id
         if result_code is not None:
             self.result_code = result_code
         if fail_reason is not None:
@@ -213,6 +220,28 @@ class ScheduledTasksRecordsDetails:
         :type exec_status: str
         """
         self._exec_status = exec_status
+
+    @property
+    def exec_script_id(self):
+        """Gets the exec_script_id of this ScheduledTasksRecordsDetails.
+
+        执行脚本id。
+
+        :return: The exec_script_id of this ScheduledTasksRecordsDetails.
+        :rtype: str
+        """
+        return self._exec_script_id
+
+    @exec_script_id.setter
+    def exec_script_id(self, exec_script_id):
+        """Sets the exec_script_id of this ScheduledTasksRecordsDetails.
+
+        执行脚本id。
+
+        :param exec_script_id: The exec_script_id of this ScheduledTasksRecordsDetails.
+        :type exec_script_id: str
+        """
+        self._exec_script_id = exec_script_id
 
     @property
     def result_code(self):

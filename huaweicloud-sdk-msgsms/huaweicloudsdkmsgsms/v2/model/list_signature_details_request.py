@@ -73,7 +73,7 @@ class ListSignatureDetailsRequest:
         :type sort_dir: str
         :param sort_key: 排序字段
         :type sort_key: str
-        :param status: 状态 1. PENDING_REVIEW：待审核 2. PROCESSING：内容审核通过，签名处理中 3. REVIEW_PASSED：处理完毕 4. REVIEW_NOT_PASS：审核不通过 5. TO_BE_ACTIVATED：待激活 6. PENDING_ACTIVATE：激活审核中
+        :param status: 状态 1. PENDING_REVIEW：待签名审核 2. PROCESSING：内容审核通过，签名处理中 3. REVIEW_PASSED：处理完毕(待补充资质)，该状态仅针对存量签名补充资质有效。在该状态下，用户可发送短信，但发送短信可能会由于运营商资质管控而失败 4. REVIEW_NOT_PASS：审核不通过 5. TO_BE_ACTIVATED：待激活 6. PENDING_ACTIVATE：激活审核中 7. PENDING_QUALIFICATION_REVIEW：待资质审核，该状态下，用户不可发送短信 8. REAL_NAME_REGISTRATING：实名报备中，该状态下，用户不可发送短信 9. REVIEW_PASSED_QUALIFICATION_PROCESSING：处理完毕(资质审核中)，该状态仅针对存量签名补充资质有效。在该状态下，用户可发送短信，但发送短信可能会由于运营商资质管控而失败 10. REVIEW_PASSED_REAL_NAME_REGISTRATING：处理完毕(实名报备中)，该状态仅针对存量签名补充资质有效。在该状态下，用户可发送短信，但发送短信可能会由于运营商资质管控而失败 11. REVIEW_PASSED_REAL_NAME_REGISTRATE_FAIL：处理完毕(实名报备失败)，该状态仅针对存量签名补充资质有效。在该状态下，用户可发送短信，但发送短信可能会由于运营商资质管控而失败 12. REVIEW_PROCESSING_COMPLETED：处理完毕
         :type status: str
         """
         
@@ -364,7 +364,7 @@ class ListSignatureDetailsRequest:
     def status(self):
         """Gets the status of this ListSignatureDetailsRequest.
 
-        状态 1. PENDING_REVIEW：待审核 2. PROCESSING：内容审核通过，签名处理中 3. REVIEW_PASSED：处理完毕 4. REVIEW_NOT_PASS：审核不通过 5. TO_BE_ACTIVATED：待激活 6. PENDING_ACTIVATE：激活审核中
+        状态 1. PENDING_REVIEW：待签名审核 2. PROCESSING：内容审核通过，签名处理中 3. REVIEW_PASSED：处理完毕(待补充资质)，该状态仅针对存量签名补充资质有效。在该状态下，用户可发送短信，但发送短信可能会由于运营商资质管控而失败 4. REVIEW_NOT_PASS：审核不通过 5. TO_BE_ACTIVATED：待激活 6. PENDING_ACTIVATE：激活审核中 7. PENDING_QUALIFICATION_REVIEW：待资质审核，该状态下，用户不可发送短信 8. REAL_NAME_REGISTRATING：实名报备中，该状态下，用户不可发送短信 9. REVIEW_PASSED_QUALIFICATION_PROCESSING：处理完毕(资质审核中)，该状态仅针对存量签名补充资质有效。在该状态下，用户可发送短信，但发送短信可能会由于运营商资质管控而失败 10. REVIEW_PASSED_REAL_NAME_REGISTRATING：处理完毕(实名报备中)，该状态仅针对存量签名补充资质有效。在该状态下，用户可发送短信，但发送短信可能会由于运营商资质管控而失败 11. REVIEW_PASSED_REAL_NAME_REGISTRATE_FAIL：处理完毕(实名报备失败)，该状态仅针对存量签名补充资质有效。在该状态下，用户可发送短信，但发送短信可能会由于运营商资质管控而失败 12. REVIEW_PROCESSING_COMPLETED：处理完毕
 
         :return: The status of this ListSignatureDetailsRequest.
         :rtype: str
@@ -375,7 +375,7 @@ class ListSignatureDetailsRequest:
     def status(self, status):
         """Sets the status of this ListSignatureDetailsRequest.
 
-        状态 1. PENDING_REVIEW：待审核 2. PROCESSING：内容审核通过，签名处理中 3. REVIEW_PASSED：处理完毕 4. REVIEW_NOT_PASS：审核不通过 5. TO_BE_ACTIVATED：待激活 6. PENDING_ACTIVATE：激活审核中
+        状态 1. PENDING_REVIEW：待签名审核 2. PROCESSING：内容审核通过，签名处理中 3. REVIEW_PASSED：处理完毕(待补充资质)，该状态仅针对存量签名补充资质有效。在该状态下，用户可发送短信，但发送短信可能会由于运营商资质管控而失败 4. REVIEW_NOT_PASS：审核不通过 5. TO_BE_ACTIVATED：待激活 6. PENDING_ACTIVATE：激活审核中 7. PENDING_QUALIFICATION_REVIEW：待资质审核，该状态下，用户不可发送短信 8. REAL_NAME_REGISTRATING：实名报备中，该状态下，用户不可发送短信 9. REVIEW_PASSED_QUALIFICATION_PROCESSING：处理完毕(资质审核中)，该状态仅针对存量签名补充资质有效。在该状态下，用户可发送短信，但发送短信可能会由于运营商资质管控而失败 10. REVIEW_PASSED_REAL_NAME_REGISTRATING：处理完毕(实名报备中)，该状态仅针对存量签名补充资质有效。在该状态下，用户可发送短信，但发送短信可能会由于运营商资质管控而失败 11. REVIEW_PASSED_REAL_NAME_REGISTRATE_FAIL：处理完毕(实名报备失败)，该状态仅针对存量签名补充资质有效。在该状态下，用户可发送短信，但发送短信可能会由于运营商资质管控而失败 12. REVIEW_PROCESSING_COMPLETED：处理完毕
 
         :param status: The status of this ListSignatureDetailsRequest.
         :type status: str

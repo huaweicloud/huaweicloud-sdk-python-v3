@@ -35,7 +35,7 @@ class VoiceConfig:
 
         The model defined in huaweicloud sdk
 
-        :param voice_asset_id: **参数解释**： 音色资产ID，可以从资产库中查询。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-256位。 **默认取值**： 不涉及。
+        :param voice_asset_id: **参数解释**： 音色资产ID，可以从资产库中查询。 音色ID的查询操作，详见[查询预置音色ID](metastudio_02_0054.xml)。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-256位。 **默认取值**： 不涉及。
         :type voice_asset_id: str
         :param speed: **参数解释**： 语速。50表示0.5倍语速，100表示正常语速，200表示2倍语速。 当取值为“100”时，表示一个成年人的正常语速，约为250字/分钟。  **约束限制**： 不涉及。
         :type speed: int
@@ -65,7 +65,7 @@ class VoiceConfig:
     def voice_asset_id(self):
         """Gets the voice_asset_id of this VoiceConfig.
 
-        **参数解释**： 音色资产ID，可以从资产库中查询。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-256位。 **默认取值**： 不涉及。
+        **参数解释**： 音色资产ID，可以从资产库中查询。 音色ID的查询操作，详见[查询预置音色ID](metastudio_02_0054.xml)。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-256位。 **默认取值**： 不涉及。
 
         :return: The voice_asset_id of this VoiceConfig.
         :rtype: str
@@ -76,7 +76,7 @@ class VoiceConfig:
     def voice_asset_id(self, voice_asset_id):
         """Sets the voice_asset_id of this VoiceConfig.
 
-        **参数解释**： 音色资产ID，可以从资产库中查询。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-256位。 **默认取值**： 不涉及。
+        **参数解释**： 音色资产ID，可以从资产库中查询。 音色ID的查询操作，详见[查询预置音色ID](metastudio_02_0054.xml)。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-256位。 **默认取值**： 不涉及。
 
         :param voice_asset_id: The voice_asset_id of this VoiceConfig.
         :type voice_asset_id: str

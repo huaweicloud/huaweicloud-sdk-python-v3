@@ -37,13 +37,13 @@ class ListMetricsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param start_time: 开始时间, UTC时间, 格式为：yyyy-MM-ddTHH:mm:ssZ
+        :param start_time: 开始时间, UTC时间
         :type start_time: str
-        :param end_time: 结束时间 ,UTC时间, 格式为：yyyy-MM-ddTHH:mm:ssZ
+        :param end_time: 结束时间,UTC时间
         :type end_time: str
         :param dim: 指标维度 | 目前最大支持3个维度，必须从0开始；维度格式为dim.{i}&#x3D;key,value，key的最大长度32，value的最大长度为256。 单维度：dim.0&#x3D;instance_id,6f3c6f91-4b24-4e1b-b7d1-a94ac1cb011d 多维度：dim.0&#x3D;key,value&amp;dim.1&#x3D;key,value
         :type dim: str
-        :param metric_names: 指标名称，支持的指标名称参考[Workspace运维监控指标](https://support.huaweicloud.com/usermanual-workspace/workspace_06_1032.html)
+        :param metric_names: 指标名称列表
         :type metric_names: list[str]
         :param period: 数据周期 | DAY - 天级数据 HOUR - 小时级数据
         :type period: str
@@ -70,7 +70,7 @@ class ListMetricsRequest:
     def start_time(self):
         """Gets the start_time of this ListMetricsRequest.
 
-        开始时间, UTC时间, 格式为：yyyy-MM-ddTHH:mm:ssZ
+        开始时间, UTC时间
 
         :return: The start_time of this ListMetricsRequest.
         :rtype: str
@@ -81,7 +81,7 @@ class ListMetricsRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ListMetricsRequest.
 
-        开始时间, UTC时间, 格式为：yyyy-MM-ddTHH:mm:ssZ
+        开始时间, UTC时间
 
         :param start_time: The start_time of this ListMetricsRequest.
         :type start_time: str
@@ -92,7 +92,7 @@ class ListMetricsRequest:
     def end_time(self):
         """Gets the end_time of this ListMetricsRequest.
 
-        结束时间 ,UTC时间, 格式为：yyyy-MM-ddTHH:mm:ssZ
+        结束时间,UTC时间
 
         :return: The end_time of this ListMetricsRequest.
         :rtype: str
@@ -103,7 +103,7 @@ class ListMetricsRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ListMetricsRequest.
 
-        结束时间 ,UTC时间, 格式为：yyyy-MM-ddTHH:mm:ssZ
+        结束时间,UTC时间
 
         :param end_time: The end_time of this ListMetricsRequest.
         :type end_time: str
@@ -136,7 +136,7 @@ class ListMetricsRequest:
     def metric_names(self):
         """Gets the metric_names of this ListMetricsRequest.
 
-        指标名称，支持的指标名称参考[Workspace运维监控指标](https://support.huaweicloud.com/usermanual-workspace/workspace_06_1032.html)
+        指标名称列表
 
         :return: The metric_names of this ListMetricsRequest.
         :rtype: list[str]
@@ -147,7 +147,7 @@ class ListMetricsRequest:
     def metric_names(self, metric_names):
         """Sets the metric_names of this ListMetricsRequest.
 
-        指标名称，支持的指标名称参考[Workspace运维监控指标](https://support.huaweicloud.com/usermanual-workspace/workspace_06_1032.html)
+        指标名称列表
 
         :param metric_names: The metric_names of this ListMetricsRequest.
         :type metric_names: list[str]

@@ -37,7 +37,7 @@ class ListPoolDesktopsDetailRequest:
 
         :param pool_id: 桌面池ID。
         :type pool_id: str
-        :param inconsistent_type: 通过该类型过滤出与桌面池规格类型不一致的桌面  - PRODUCT: 查找productID与桌面池套餐ID不一致的桌面 - IMAGE: 查找imageID与桌面池镜像ID不一致的桌面
+        :param inconsistent_type: 通过该类型过滤出与桌面池规格类型不一致的桌面 - PRODUCT: 查找productID与桌面池套餐ID不一致的桌面 - IMAGE: 查找imageID与桌面池镜像ID不一致的桌面
         :type inconsistent_type: str
         :param offset: 用于分页查询，查询的起始记录序号，从0开始
         :type offset: int
@@ -87,7 +87,7 @@ class ListPoolDesktopsDetailRequest:
     def inconsistent_type(self):
         """Gets the inconsistent_type of this ListPoolDesktopsDetailRequest.
 
-        通过该类型过滤出与桌面池规格类型不一致的桌面  - PRODUCT: 查找productID与桌面池套餐ID不一致的桌面 - IMAGE: 查找imageID与桌面池镜像ID不一致的桌面
+        通过该类型过滤出与桌面池规格类型不一致的桌面 - PRODUCT: 查找productID与桌面池套餐ID不一致的桌面 - IMAGE: 查找imageID与桌面池镜像ID不一致的桌面
 
         :return: The inconsistent_type of this ListPoolDesktopsDetailRequest.
         :rtype: str
@@ -98,7 +98,7 @@ class ListPoolDesktopsDetailRequest:
     def inconsistent_type(self, inconsistent_type):
         """Sets the inconsistent_type of this ListPoolDesktopsDetailRequest.
 
-        通过该类型过滤出与桌面池规格类型不一致的桌面  - PRODUCT: 查找productID与桌面池套餐ID不一致的桌面 - IMAGE: 查找imageID与桌面池镜像ID不一致的桌面
+        通过该类型过滤出与桌面池规格类型不一致的桌面 - PRODUCT: 查找productID与桌面池套餐ID不一致的桌面 - IMAGE: 查找imageID与桌面池镜像ID不一致的桌面
 
         :param inconsistent_type: The inconsistent_type of this ListPoolDesktopsDetailRequest.
         :type inconsistent_type: str

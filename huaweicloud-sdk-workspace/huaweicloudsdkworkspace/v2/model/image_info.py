@@ -19,6 +19,7 @@ class ImageInfo:
     openapi_types = {
         'id': 'str',
         'image_type': 'str',
+        'os_platform': 'str',
         'os_type': 'str',
         'architecture': 'str',
         'os_version': 'str',
@@ -26,12 +27,14 @@ class ImageInfo:
         'name': 'str',
         'min_ram': 'int',
         'min_disk': 'int',
-        'product_code': 'str'
+        'product_code': 'str',
+        'created_at': 'str'
     }
 
     attribute_map = {
         'id': 'id',
         'image_type': 'image_type',
+        'os_platform': 'os_platform',
         'os_type': 'os_type',
         'architecture': 'architecture',
         'os_version': 'os_version',
@@ -39,10 +42,11 @@ class ImageInfo:
         'name': 'name',
         'min_ram': 'min_ram',
         'min_disk': 'min_disk',
-        'product_code': 'product_code'
+        'product_code': 'product_code',
+        'created_at': 'created_at'
     }
 
-    def __init__(self, id=None, image_type=None, os_type=None, architecture=None, os_version=None, disk_format=None, name=None, min_ram=None, min_disk=None, product_code=None):
+    def __init__(self, id=None, image_type=None, os_platform=None, os_type=None, architecture=None, os_version=None, disk_format=None, name=None, min_ram=None, min_disk=None, product_code=None, created_at=None):
         """ImageInfo
 
         The model defined in huaweicloud sdk
@@ -51,6 +55,8 @@ class ImageInfo:
         :type id: str
         :param image_type: 镜像类型，目前支持以下类型： 公共镜像：gold 私有镜像：private。
         :type image_type: str
+        :param os_platform: 镜像平台分类，取值为Windows。
+        :type os_platform: str
         :param os_type: 操作系统类型，目前取值Linux， Windows，Other。
         :type os_type: str
         :param architecture: 操作系统架构，目前取值arm，x86
@@ -67,12 +73,15 @@ class ImageInfo:
         :type min_disk: int
         :param product_code: 镜像的产品编码。
         :type product_code: str
+        :param created_at: 创建时间。格式为UTC时间。
+        :type created_at: str
         """
         
         
 
         self._id = None
         self._image_type = None
+        self._os_platform = None
         self._os_type = None
         self._architecture = None
         self._os_version = None
@@ -81,12 +90,15 @@ class ImageInfo:
         self._min_ram = None
         self._min_disk = None
         self._product_code = None
+        self._created_at = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
         if image_type is not None:
             self.image_type = image_type
+        if os_platform is not None:
+            self.os_platform = os_platform
         if os_type is not None:
             self.os_type = os_type
         if architecture is not None:
@@ -103,6 +115,8 @@ class ImageInfo:
             self.min_disk = min_disk
         if product_code is not None:
             self.product_code = product_code
+        if created_at is not None:
+            self.created_at = created_at
 
     @property
     def id(self):
@@ -147,6 +161,28 @@ class ImageInfo:
         :type image_type: str
         """
         self._image_type = image_type
+
+    @property
+    def os_platform(self):
+        """Gets the os_platform of this ImageInfo.
+
+        镜像平台分类，取值为Windows。
+
+        :return: The os_platform of this ImageInfo.
+        :rtype: str
+        """
+        return self._os_platform
+
+    @os_platform.setter
+    def os_platform(self, os_platform):
+        """Sets the os_platform of this ImageInfo.
+
+        镜像平台分类，取值为Windows。
+
+        :param os_platform: The os_platform of this ImageInfo.
+        :type os_platform: str
+        """
+        self._os_platform = os_platform
 
     @property
     def os_type(self):
@@ -323,6 +359,28 @@ class ImageInfo:
         :type product_code: str
         """
         self._product_code = product_code
+
+    @property
+    def created_at(self):
+        """Gets the created_at of this ImageInfo.
+
+        创建时间。格式为UTC时间。
+
+        :return: The created_at of this ImageInfo.
+        :rtype: str
+        """
+        return self._created_at
+
+    @created_at.setter
+    def created_at(self, created_at):
+        """Sets the created_at of this ImageInfo.
+
+        创建时间。格式为UTC时间。
+
+        :param created_at: The created_at of this ImageInfo.
+        :type created_at: str
+        """
+        self._created_at = created_at
 
     def to_dict(self):
         """Returns the model properties as a dict"""

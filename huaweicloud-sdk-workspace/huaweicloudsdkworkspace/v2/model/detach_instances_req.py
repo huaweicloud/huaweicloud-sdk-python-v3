@@ -17,35 +17,42 @@ class DetachInstancesReq:
     sensitive_list = []
 
     openapi_types = {
-        'desktop_ids': 'list[str]'
+        'desktop_ids': 'list[str]',
+        'shutoff_after_detach': 'bool'
     }
 
     attribute_map = {
-        'desktop_ids': 'desktop_ids'
+        'desktop_ids': 'desktop_ids',
+        'shutoff_after_detach': 'shutoff_after_detach'
     }
 
-    def __init__(self, desktop_ids=None):
+    def __init__(self, desktop_ids=None, shutoff_after_detach=None):
         """DetachInstancesReq
 
         The model defined in huaweicloud sdk
 
-        :param desktop_ids: 桌面id
+        :param desktop_ids: 桌面id,不能为空
         :type desktop_ids: list[str]
+        :param shutoff_after_detach: 解绑后是否关机。
+        :type shutoff_after_detach: bool
         """
         
         
 
         self._desktop_ids = None
+        self._shutoff_after_detach = None
         self.discriminator = None
 
         if desktop_ids is not None:
             self.desktop_ids = desktop_ids
+        if shutoff_after_detach is not None:
+            self.shutoff_after_detach = shutoff_after_detach
 
     @property
     def desktop_ids(self):
         """Gets the desktop_ids of this DetachInstancesReq.
 
-        桌面id
+        桌面id,不能为空
 
         :return: The desktop_ids of this DetachInstancesReq.
         :rtype: list[str]
@@ -56,12 +63,34 @@ class DetachInstancesReq:
     def desktop_ids(self, desktop_ids):
         """Sets the desktop_ids of this DetachInstancesReq.
 
-        桌面id
+        桌面id,不能为空
 
         :param desktop_ids: The desktop_ids of this DetachInstancesReq.
         :type desktop_ids: list[str]
         """
         self._desktop_ids = desktop_ids
+
+    @property
+    def shutoff_after_detach(self):
+        """Gets the shutoff_after_detach of this DetachInstancesReq.
+
+        解绑后是否关机。
+
+        :return: The shutoff_after_detach of this DetachInstancesReq.
+        :rtype: bool
+        """
+        return self._shutoff_after_detach
+
+    @shutoff_after_detach.setter
+    def shutoff_after_detach(self, shutoff_after_detach):
+        """Sets the shutoff_after_detach of this DetachInstancesReq.
+
+        解绑后是否关机。
+
+        :param shutoff_after_detach: The shutoff_after_detach of this DetachInstancesReq.
+        :type shutoff_after_detach: bool
+        """
+        self._shutoff_after_detach = shutoff_after_detach
 
     def to_dict(self):
         """Returns the model properties as a dict"""

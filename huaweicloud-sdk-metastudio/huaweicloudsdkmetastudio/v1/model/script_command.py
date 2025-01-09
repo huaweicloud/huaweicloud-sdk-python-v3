@@ -20,6 +20,7 @@ class ScriptCommand:
         'room_id': 'str',
         'job_id': 'str',
         'command_id': 'str',
+        'command_time': 'str',
         'scene_scripts': 'list[LivePlayingScriptInfo]'
     }
 
@@ -27,10 +28,11 @@ class ScriptCommand:
         'room_id': 'room_id',
         'job_id': 'job_id',
         'command_id': 'command_id',
+        'command_time': 'command_time',
         'scene_scripts': 'scene_scripts'
     }
 
-    def __init__(self, room_id=None, job_id=None, command_id=None, scene_scripts=None):
+    def __init__(self, room_id=None, job_id=None, command_id=None, command_time=None, scene_scripts=None):
         """ScriptCommand
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class ScriptCommand:
         :type job_id: str
         :param command_id: 命令ID。
         :type command_id: str
+        :param command_time: 命令时间。格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
+        :type command_time: str
         :param scene_scripts: 直播剧本列表。
         :type scene_scripts: list[:class:`huaweicloudsdkmetastudio.v1.LivePlayingScriptInfo`]
         """
@@ -50,6 +54,7 @@ class ScriptCommand:
         self._room_id = None
         self._job_id = None
         self._command_id = None
+        self._command_time = None
         self._scene_scripts = None
         self.discriminator = None
 
@@ -59,6 +64,8 @@ class ScriptCommand:
             self.job_id = job_id
         if command_id is not None:
             self.command_id = command_id
+        if command_time is not None:
+            self.command_time = command_time
         if scene_scripts is not None:
             self.scene_scripts = scene_scripts
 
@@ -127,6 +134,28 @@ class ScriptCommand:
         :type command_id: str
         """
         self._command_id = command_id
+
+    @property
+    def command_time(self):
+        """Gets the command_time of this ScriptCommand.
+
+        命令时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+
+        :return: The command_time of this ScriptCommand.
+        :rtype: str
+        """
+        return self._command_time
+
+    @command_time.setter
+    def command_time(self, command_time):
+        """Sets the command_time of this ScriptCommand.
+
+        命令时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+
+        :param command_time: The command_time of this ScriptCommand.
+        :type command_time: str
+        """
+        self._command_time = command_time
 
     @property
     def scene_scripts(self):

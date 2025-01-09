@@ -18,7 +18,7 @@ class Policy:
 
     openapi_types = {
         'version': 'str',
-        'statement': 'ObsPolicyStatement'
+        'statement': 'PolicyStatement'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class Policy:
         :param version: 版本号。
         :type version: str
         :param statement: 
-        :type statement: :class:`huaweicloudsdkworkspaceapp.v1.ObsPolicyStatement`
+        :type statement: :class:`huaweicloudsdkworkspaceapp.v1.PolicyStatement`
         """
         
         
@@ -75,7 +75,7 @@ class Policy:
         """Gets the statement of this Policy.
 
         :return: The statement of this Policy.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ObsPolicyStatement`
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PolicyStatement`
         """
         return self._statement
 
@@ -84,7 +84,7 @@ class Policy:
         """Sets the statement of this Policy.
 
         :param statement: The statement of this Policy.
-        :type statement: :class:`huaweicloudsdkworkspaceapp.v1.ObsPolicyStatement`
+        :type statement: :class:`huaweicloudsdkworkspaceapp.v1.PolicyStatement`
         """
         self._statement = statement
 

@@ -24,7 +24,9 @@ class ListImagesRequest:
         'package_type': 'str',
         'image_id': 'str',
         'limit': 'int',
-        'offset': 'int'
+        'offset': 'int',
+        'sort_field': 'str',
+        'sort_type': 'str'
     }
 
     attribute_map = {
@@ -35,10 +37,12 @@ class ListImagesRequest:
         'package_type': 'package_type',
         'image_id': 'image_id',
         'limit': 'limit',
-        'offset': 'offset'
+        'offset': 'offset',
+        'sort_field': 'sort_field',
+        'sort_type': 'sort_type'
     }
 
-    def __init__(self, os_type=None, image_type=None, platform=None, architecture=None, package_type=None, image_id=None, limit=None, offset=None):
+    def __init__(self, os_type=None, image_type=None, platform=None, architecture=None, package_type=None, image_id=None, limit=None, offset=None, sort_field=None, sort_type=None):
         """ListImagesRequest
 
         The model defined in huaweicloud sdk
@@ -59,6 +63,10 @@ class ListImagesRequest:
         :type limit: int
         :param offset: 偏移量,默认0。
         :type offset: int
+        :param sort_field: 用于排序，表示按照哪个字段排序。取值为镜像属性name、created_at字段，默认为name。
+        :type sort_field: str
+        :param sort_type: 用于排序，表示升序还是降序，取值为asc和desc。与sort_field一起组合使用，默认为升序asc。
+        :type sort_type: str
         """
         
         
@@ -71,6 +79,8 @@ class ListImagesRequest:
         self._image_id = None
         self._limit = None
         self._offset = None
+        self._sort_field = None
+        self._sort_type = None
         self.discriminator = None
 
         if os_type is not None:
@@ -89,6 +99,10 @@ class ListImagesRequest:
             self.limit = limit
         if offset is not None:
             self.offset = offset
+        if sort_field is not None:
+            self.sort_field = sort_field
+        if sort_type is not None:
+            self.sort_type = sort_type
 
     @property
     def os_type(self):
@@ -265,6 +279,50 @@ class ListImagesRequest:
         :type offset: int
         """
         self._offset = offset
+
+    @property
+    def sort_field(self):
+        """Gets the sort_field of this ListImagesRequest.
+
+        用于排序，表示按照哪个字段排序。取值为镜像属性name、created_at字段，默认为name。
+
+        :return: The sort_field of this ListImagesRequest.
+        :rtype: str
+        """
+        return self._sort_field
+
+    @sort_field.setter
+    def sort_field(self, sort_field):
+        """Sets the sort_field of this ListImagesRequest.
+
+        用于排序，表示按照哪个字段排序。取值为镜像属性name、created_at字段，默认为name。
+
+        :param sort_field: The sort_field of this ListImagesRequest.
+        :type sort_field: str
+        """
+        self._sort_field = sort_field
+
+    @property
+    def sort_type(self):
+        """Gets the sort_type of this ListImagesRequest.
+
+        用于排序，表示升序还是降序，取值为asc和desc。与sort_field一起组合使用，默认为升序asc。
+
+        :return: The sort_type of this ListImagesRequest.
+        :rtype: str
+        """
+        return self._sort_type
+
+    @sort_type.setter
+    def sort_type(self, sort_type):
+        """Sets the sort_type of this ListImagesRequest.
+
+        用于排序，表示升序还是降序，取值为asc和desc。与sort_field一起组合使用，默认为升序asc。
+
+        :param sort_type: The sort_type of this ListImagesRequest.
+        :type sort_type: str
+        """
+        self._sort_type = sort_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

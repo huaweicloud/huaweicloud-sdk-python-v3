@@ -18,15 +18,17 @@ class LivePlayingShootScriptItem:
 
     openapi_types = {
         'sequence_no': 'int',
-        'title': 'str'
+        'title': 'str',
+        'text': 'str'
     }
 
     attribute_map = {
         'sequence_no': 'sequence_no',
-        'title': 'title'
+        'title': 'title',
+        'text': 'text'
     }
 
-    def __init__(self, sequence_no=None, title=None):
+    def __init__(self, sequence_no=None, title=None, text=None):
         """LivePlayingShootScriptItem
 
         The model defined in huaweicloud sdk
@@ -35,18 +37,23 @@ class LivePlayingShootScriptItem:
         :type sequence_no: int
         :param title: 段落标题。
         :type title: str
+        :param text: 段落话术内容。
+        :type text: str
         """
         
         
 
         self._sequence_no = None
         self._title = None
+        self._text = None
         self.discriminator = None
 
         if sequence_no is not None:
             self.sequence_no = sequence_no
         if title is not None:
             self.title = title
+        if text is not None:
+            self.text = text
 
     @property
     def sequence_no(self):
@@ -91,6 +98,28 @@ class LivePlayingShootScriptItem:
         :type title: str
         """
         self._title = title
+
+    @property
+    def text(self):
+        """Gets the text of this LivePlayingShootScriptItem.
+
+        段落话术内容。
+
+        :return: The text of this LivePlayingShootScriptItem.
+        :rtype: str
+        """
+        return self._text
+
+    @text.setter
+    def text(self, text):
+        """Sets the text of this LivePlayingShootScriptItem.
+
+        段落话术内容。
+
+        :param text: The text of this LivePlayingShootScriptItem.
+        :type text: str
+        """
+        self._text = text
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -78,7 +78,8 @@ class ImageInfo:
         'image_displayname': 'str',
         'support_amd': 'str',
         'support_kvm_hi1822_hisriov': 'str',
-        'support_kvm_hi1822_hivirtionet': 'str'
+        'support_kvm_hi1822_hivirtionet': 'str',
+        'os_shutdown_timeout': 'str'
     }
 
     attribute_map = {
@@ -143,10 +144,11 @@ class ImageInfo:
         'image_displayname': '__image_displayname',
         'support_amd': '__support_amd',
         'support_kvm_hi1822_hisriov': '__support_kvm_hi1822_hisriov',
-        'support_kvm_hi1822_hivirtionet': '__support_kvm_hi1822_hivirtionet'
+        'support_kvm_hi1822_hivirtionet': '__support_kvm_hi1822_hivirtionet',
+        'os_shutdown_timeout': 'os_shutdown_timeout'
     }
 
-    def __init__(self, backup_id=None, data_origin=None, description=None, image_size=None, image_source_type=None, imagetype=None, isregistered=None, originalimagename=None, os_bit=None, os_type=None, os_version=None, platform=None, productcode=None, support_diskintensive=None, support_highperformance=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_infiniband=None, support_largememory=None, support_xen=None, support_xen_gpu_type=None, support_xen_hana=None, system_support_market=None, checksum=None, container_format=None, created_at=None, disk_format=None, enterprise_project_id=None, file=None, id=None, min_disk=None, min_ram=None, name=None, owner=None, protected=None, schema=None, _self=None, size=None, status=None, tags=None, updated_at=None, virtual_env_type=None, virtual_size=None, visibility=None, support_fc_inject=None, hw_firmware_type=None, support_arm=None, max_ram=None, system__cmkid=None, os_feature_list=None, account_code=None, hw_vif_multiqueue_enabled=None, is_offshelved=None, lazyloading=None, root_origin=None, sequence_num=None, active_at=None, support_agent_list=None, image_displayname=None, support_amd=None, support_kvm_hi1822_hisriov=None, support_kvm_hi1822_hivirtionet=None):
+    def __init__(self, backup_id=None, data_origin=None, description=None, image_size=None, image_source_type=None, imagetype=None, isregistered=None, originalimagename=None, os_bit=None, os_type=None, os_version=None, platform=None, productcode=None, support_diskintensive=None, support_highperformance=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_infiniband=None, support_largememory=None, support_xen=None, support_xen_gpu_type=None, support_xen_hana=None, system_support_market=None, checksum=None, container_format=None, created_at=None, disk_format=None, enterprise_project_id=None, file=None, id=None, min_disk=None, min_ram=None, name=None, owner=None, protected=None, schema=None, _self=None, size=None, status=None, tags=None, updated_at=None, virtual_env_type=None, virtual_size=None, visibility=None, support_fc_inject=None, hw_firmware_type=None, support_arm=None, max_ram=None, system__cmkid=None, os_feature_list=None, account_code=None, hw_vif_multiqueue_enabled=None, is_offshelved=None, lazyloading=None, root_origin=None, sequence_num=None, active_at=None, support_agent_list=None, image_displayname=None, support_amd=None, support_kvm_hi1822_hisriov=None, support_kvm_hi1822_hivirtionet=None, os_shutdown_timeout=None):
         """ImageInfo
 
         The model defined in huaweicloud sdk
@@ -275,6 +277,8 @@ class ImageInfo:
         :type support_kvm_hi1822_hisriov: str
         :param support_kvm_hi1822_hivirtionet: 如果镜像支持Virtio-net直通规格，取值为true，否则无需增加该属性。
         :type support_kvm_hi1822_hivirtionet: str
+        :param os_shutdown_timeout: 设置虚拟机的优雅关机超时时间，设置范围为60-300，默认为60（取值为整数，单位为秒）。 云服务器在优雅关机超时后会触发强制关机，避免实例长时间处于关机状态中。 当您的云服务器关机过程中由于特定软件的状态、保存等原因导致优雅关机时间过长，会触发超时强制关机。 您可以通过设置镜像该字段，使得发放的云服务器优雅关机超时时间变长。 该字段当前只影响弹性云服务器，不影响裸金属服务器。
+        :type os_shutdown_timeout: str
         """
         
         
@@ -341,6 +345,7 @@ class ImageInfo:
         self._support_amd = None
         self._support_kvm_hi1822_hisriov = None
         self._support_kvm_hi1822_hivirtionet = None
+        self._os_shutdown_timeout = None
         self.discriminator = None
 
         if backup_id is not None:
@@ -447,6 +452,8 @@ class ImageInfo:
             self.support_kvm_hi1822_hisriov = support_kvm_hi1822_hisriov
         if support_kvm_hi1822_hivirtionet is not None:
             self.support_kvm_hi1822_hivirtionet = support_kvm_hi1822_hivirtionet
+        if os_shutdown_timeout is not None:
+            self.os_shutdown_timeout = os_shutdown_timeout
 
     @property
     def backup_id(self):
@@ -1811,6 +1818,28 @@ class ImageInfo:
         :type support_kvm_hi1822_hivirtionet: str
         """
         self._support_kvm_hi1822_hivirtionet = support_kvm_hi1822_hivirtionet
+
+    @property
+    def os_shutdown_timeout(self):
+        """Gets the os_shutdown_timeout of this ImageInfo.
+
+        设置虚拟机的优雅关机超时时间，设置范围为60-300，默认为60（取值为整数，单位为秒）。 云服务器在优雅关机超时后会触发强制关机，避免实例长时间处于关机状态中。 当您的云服务器关机过程中由于特定软件的状态、保存等原因导致优雅关机时间过长，会触发超时强制关机。 您可以通过设置镜像该字段，使得发放的云服务器优雅关机超时时间变长。 该字段当前只影响弹性云服务器，不影响裸金属服务器。
+
+        :return: The os_shutdown_timeout of this ImageInfo.
+        :rtype: str
+        """
+        return self._os_shutdown_timeout
+
+    @os_shutdown_timeout.setter
+    def os_shutdown_timeout(self, os_shutdown_timeout):
+        """Sets the os_shutdown_timeout of this ImageInfo.
+
+        设置虚拟机的优雅关机超时时间，设置范围为60-300，默认为60（取值为整数，单位为秒）。 云服务器在优雅关机超时后会触发强制关机，避免实例长时间处于关机状态中。 当您的云服务器关机过程中由于特定软件的状态、保存等原因导致优雅关机时间过长，会触发超时强制关机。 您可以通过设置镜像该字段，使得发放的云服务器优雅关机超时时间变长。 该字段当前只影响弹性云服务器，不影响裸金属服务器。
+
+        :param os_shutdown_timeout: The os_shutdown_timeout of this ImageInfo.
+        :type os_shutdown_timeout: str
+        """
+        self._os_shutdown_timeout = os_shutdown_timeout
 
     def to_dict(self):
         """Returns the model properties as a dict"""

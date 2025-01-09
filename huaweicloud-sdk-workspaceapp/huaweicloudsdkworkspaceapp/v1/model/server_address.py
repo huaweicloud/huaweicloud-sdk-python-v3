@@ -18,7 +18,7 @@ class ServerAddress:
 
     openapi_types = {
         'addr': 'str',
-        'version': 'int',
+        'version': 'str',
         'os_ext_ips_ma_cmac_addr': 'str',
         'os_ext_ip_stype': 'str',
         'os_ext_ip_sport_id': 'str'
@@ -40,7 +40,7 @@ class ServerAddress:
         :param addr: IP地址信息。
         :type addr: str
         :param version: IP地址类型： &#x60;4&#x60; - IPV4 &#x60;6&#x60; - IPV6
-        :type version: int
+        :type version: str
         :param os_ext_ips_ma_cmac_addr: MAC地址。
         :type os_ext_ips_ma_cmac_addr: str
         :param os_ext_ip_stype: IP地址分配方式，字符串是大小写不敏感格式。 * &#x60;fixed&#x60; - 代表私有IP地址。 * &#x60;floating&#x60; - 代表浮动IP地址。
@@ -98,7 +98,7 @@ class ServerAddress:
         IP地址类型： `4` - IPV4 `6` - IPV6
 
         :return: The version of this ServerAddress.
-        :rtype: int
+        :rtype: str
         """
         return self._version
 
@@ -109,7 +109,7 @@ class ServerAddress:
         IP地址类型： `4` - IPV4 `6` - IPV6
 
         :param version: The version of this ServerAddress.
-        :type version: int
+        :type version: str
         """
         self._version = version
 

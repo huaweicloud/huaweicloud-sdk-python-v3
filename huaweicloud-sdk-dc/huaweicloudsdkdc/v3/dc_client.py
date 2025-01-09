@@ -1451,6 +1451,10 @@ class DcClient(Client):
         if 'ext_fields' in local_var_params:
             query_params.append(('ext_fields', local_var_params['ext_fields']))
             collection_formats['ext_fields'] = 'multi'
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
         if 'nexthop' in local_var_params:
             query_params.append(('nexthop', local_var_params['nexthop']))
             collection_formats['nexthop'] = 'multi'

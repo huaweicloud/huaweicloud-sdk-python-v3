@@ -17,20 +17,24 @@ class DeleteDesktopVolumesRequest:
     sensitive_list = []
 
     openapi_types = {
+        'service_transaction_id': 'str',
         'desktop_id': 'str',
         'body': 'DeleteVolumesReq'
     }
 
     attribute_map = {
+        'service_transaction_id': 'Service-Transaction-Id',
         'desktop_id': 'desktop_id',
         'body': 'body'
     }
 
-    def __init__(self, desktop_id=None, body=None):
+    def __init__(self, service_transaction_id=None, desktop_id=None, body=None):
         """DeleteDesktopVolumesRequest
 
         The model defined in huaweicloud sdk
 
+        :param service_transaction_id: CBC接口回调时，请求头里带上的业务ID
+        :type service_transaction_id: str
         :param desktop_id: 桌面ID。
         :type desktop_id: str
         :param body: Body of the DeleteDesktopVolumesRequest
@@ -39,13 +43,38 @@ class DeleteDesktopVolumesRequest:
         
         
 
+        self._service_transaction_id = None
         self._desktop_id = None
         self._body = None
         self.discriminator = None
 
+        if service_transaction_id is not None:
+            self.service_transaction_id = service_transaction_id
         self.desktop_id = desktop_id
         if body is not None:
             self.body = body
+
+    @property
+    def service_transaction_id(self):
+        """Gets the service_transaction_id of this DeleteDesktopVolumesRequest.
+
+        CBC接口回调时，请求头里带上的业务ID
+
+        :return: The service_transaction_id of this DeleteDesktopVolumesRequest.
+        :rtype: str
+        """
+        return self._service_transaction_id
+
+    @service_transaction_id.setter
+    def service_transaction_id(self, service_transaction_id):
+        """Sets the service_transaction_id of this DeleteDesktopVolumesRequest.
+
+        CBC接口回调时，请求头里带上的业务ID
+
+        :param service_transaction_id: The service_transaction_id of this DeleteDesktopVolumesRequest.
+        :type service_transaction_id: str
+        """
+        self._service_transaction_id = service_transaction_id
 
     @property
     def desktop_id(self):

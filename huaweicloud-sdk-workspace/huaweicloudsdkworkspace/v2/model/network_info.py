@@ -21,7 +21,7 @@ class NetworkInfo:
         'subnet_info': 'DesktopSubnet',
         'port_info': 'Port',
         'public_ip_info': 'PublicIp',
-        'security_groups': 'list[SecurityGroupInfo]'
+        'security_groups': 'list[SecurityGroup]'
     }
 
     attribute_map = {
@@ -46,7 +46,7 @@ class NetworkInfo:
         :param public_ip_info: 
         :type public_ip_info: :class:`huaweicloudsdkworkspace.v2.PublicIp`
         :param security_groups: 桌面绑定的安全组列表
-        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupInfo`]
+        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
         """
         
         
@@ -148,7 +148,7 @@ class NetworkInfo:
         桌面绑定的安全组列表
 
         :return: The security_groups of this NetworkInfo.
-        :rtype: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupInfo`]
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
         """
         return self._security_groups
 
@@ -159,7 +159,7 @@ class NetworkInfo:
         桌面绑定的安全组列表
 
         :param security_groups: The security_groups of this NetworkInfo.
-        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupInfo`]
+        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
         """
         self._security_groups = security_groups
 

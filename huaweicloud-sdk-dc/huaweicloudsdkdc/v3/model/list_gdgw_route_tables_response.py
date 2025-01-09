@@ -19,35 +19,42 @@ class ListGdgwRouteTablesResponse(SdkResponse):
 
     openapi_types = {
         'request_id': 'str',
-        'gdgw_routetable': 'list[CommonRoutetable]'
+        'gdgw_routetables': 'list[CommonRoutetable]',
+        'page_info': 'PageInfo'
     }
 
     attribute_map = {
         'request_id': 'request_id',
-        'gdgw_routetable': 'gdgw_routetable'
+        'gdgw_routetables': 'gdgw_routetables',
+        'page_info': 'page_info'
     }
 
-    def __init__(self, request_id=None, gdgw_routetable=None):
+    def __init__(self, request_id=None, gdgw_routetables=None, page_info=None):
         """ListGdgwRouteTablesResponse
 
         The model defined in huaweicloud sdk
 
         :param request_id: 请求id
         :type request_id: str
-        :param gdgw_routetable: 全域接入网关路由表
-        :type gdgw_routetable: list[:class:`huaweicloudsdkdc.v3.CommonRoutetable`]
+        :param gdgw_routetables: 全域接入网关路由表
+        :type gdgw_routetables: list[:class:`huaweicloudsdkdc.v3.CommonRoutetable`]
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkdc.v3.PageInfo`
         """
         
         super(ListGdgwRouteTablesResponse, self).__init__()
 
         self._request_id = None
-        self._gdgw_routetable = None
+        self._gdgw_routetables = None
+        self._page_info = None
         self.discriminator = None
 
         if request_id is not None:
             self.request_id = request_id
-        if gdgw_routetable is not None:
-            self.gdgw_routetable = gdgw_routetable
+        if gdgw_routetables is not None:
+            self.gdgw_routetables = gdgw_routetables
+        if page_info is not None:
+            self.page_info = page_info
 
     @property
     def request_id(self):
@@ -72,26 +79,44 @@ class ListGdgwRouteTablesResponse(SdkResponse):
         self._request_id = request_id
 
     @property
-    def gdgw_routetable(self):
-        """Gets the gdgw_routetable of this ListGdgwRouteTablesResponse.
+    def gdgw_routetables(self):
+        """Gets the gdgw_routetables of this ListGdgwRouteTablesResponse.
 
         全域接入网关路由表
 
-        :return: The gdgw_routetable of this ListGdgwRouteTablesResponse.
+        :return: The gdgw_routetables of this ListGdgwRouteTablesResponse.
         :rtype: list[:class:`huaweicloudsdkdc.v3.CommonRoutetable`]
         """
-        return self._gdgw_routetable
+        return self._gdgw_routetables
 
-    @gdgw_routetable.setter
-    def gdgw_routetable(self, gdgw_routetable):
-        """Sets the gdgw_routetable of this ListGdgwRouteTablesResponse.
+    @gdgw_routetables.setter
+    def gdgw_routetables(self, gdgw_routetables):
+        """Sets the gdgw_routetables of this ListGdgwRouteTablesResponse.
 
         全域接入网关路由表
 
-        :param gdgw_routetable: The gdgw_routetable of this ListGdgwRouteTablesResponse.
-        :type gdgw_routetable: list[:class:`huaweicloudsdkdc.v3.CommonRoutetable`]
+        :param gdgw_routetables: The gdgw_routetables of this ListGdgwRouteTablesResponse.
+        :type gdgw_routetables: list[:class:`huaweicloudsdkdc.v3.CommonRoutetable`]
         """
-        self._gdgw_routetable = gdgw_routetable
+        self._gdgw_routetables = gdgw_routetables
+
+    @property
+    def page_info(self):
+        """Gets the page_info of this ListGdgwRouteTablesResponse.
+
+        :return: The page_info of this ListGdgwRouteTablesResponse.
+        :rtype: :class:`huaweicloudsdkdc.v3.PageInfo`
+        """
+        return self._page_info
+
+    @page_info.setter
+    def page_info(self, page_info):
+        """Sets the page_info of this ListGdgwRouteTablesResponse.
+
+        :param page_info: The page_info of this ListGdgwRouteTablesResponse.
+        :type page_info: :class:`huaweicloudsdkdc.v3.PageInfo`
+        """
+        self._page_info = page_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

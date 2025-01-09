@@ -19,6 +19,8 @@ class ListGdgwRouteTablesRequest:
     openapi_types = {
         'fields': 'list[str]',
         'ext_fields': 'list[str]',
+        'limit': 'int',
+        'marker': 'str',
         'gdgw_id': 'str',
         'nexthop': 'list[str]',
         'destination': 'list[str]',
@@ -28,13 +30,15 @@ class ListGdgwRouteTablesRequest:
     attribute_map = {
         'fields': 'fields',
         'ext_fields': 'ext_fields',
+        'limit': 'limit',
+        'marker': 'marker',
         'gdgw_id': 'gdgw_id',
         'nexthop': 'nexthop',
         'destination': 'destination',
         'address_family': 'address_family'
     }
 
-    def __init__(self, fields=None, ext_fields=None, gdgw_id=None, nexthop=None, destination=None, address_family=None):
+    def __init__(self, fields=None, ext_fields=None, limit=None, marker=None, gdgw_id=None, nexthop=None, destination=None, address_family=None):
         """ListGdgwRouteTablesRequest
 
         The model defined in huaweicloud sdk
@@ -43,6 +47,10 @@ class ListGdgwRouteTablesRequest:
         :type fields: list[str]
         :param ext_fields: show response ext-fields
         :type ext_fields: list[str]
+        :param limit: 每页返回的个数。 取值范围：1~2000。
+        :type limit: int
+        :param marker: 上一页最后一条资源记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
+        :type marker: str
         :param gdgw_id: 全域接入网关ID
         :type gdgw_id: str
         :param nexthop: 下一条ID
@@ -57,6 +65,8 @@ class ListGdgwRouteTablesRequest:
 
         self._fields = None
         self._ext_fields = None
+        self._limit = None
+        self._marker = None
         self._gdgw_id = None
         self._nexthop = None
         self._destination = None
@@ -67,6 +77,10 @@ class ListGdgwRouteTablesRequest:
             self.fields = fields
         if ext_fields is not None:
             self.ext_fields = ext_fields
+        if limit is not None:
+            self.limit = limit
+        if marker is not None:
+            self.marker = marker
         self.gdgw_id = gdgw_id
         if nexthop is not None:
             self.nexthop = nexthop
@@ -118,6 +132,50 @@ class ListGdgwRouteTablesRequest:
         :type ext_fields: list[str]
         """
         self._ext_fields = ext_fields
+
+    @property
+    def limit(self):
+        """Gets the limit of this ListGdgwRouteTablesRequest.
+
+        每页返回的个数。 取值范围：1~2000。
+
+        :return: The limit of this ListGdgwRouteTablesRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListGdgwRouteTablesRequest.
+
+        每页返回的个数。 取值范围：1~2000。
+
+        :param limit: The limit of this ListGdgwRouteTablesRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def marker(self):
+        """Gets the marker of this ListGdgwRouteTablesRequest.
+
+        上一页最后一条资源记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
+
+        :return: The marker of this ListGdgwRouteTablesRequest.
+        :rtype: str
+        """
+        return self._marker
+
+    @marker.setter
+    def marker(self, marker):
+        """Sets the marker of this ListGdgwRouteTablesRequest.
+
+        上一页最后一条资源记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
+
+        :param marker: The marker of this ListGdgwRouteTablesRequest.
+        :type marker: str
+        """
+        self._marker = marker
 
     @property
     def gdgw_id(self):

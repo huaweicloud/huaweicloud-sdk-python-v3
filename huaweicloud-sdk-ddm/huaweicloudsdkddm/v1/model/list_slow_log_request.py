@@ -39,7 +39,7 @@ class ListSlowLogRequest:
 
         :param instance_id: DDM实例ID。
         :type instance_id: str
-        :param cur_page: 分页参数：起始值 [大于等于0] 。
+        :param cur_page: 分页参数：起始值 [大于等于1] 。
         :type cur_page: str
         :param per_page: 分页参数：每页多少条。
         :type per_page: str
@@ -90,7 +90,7 @@ class ListSlowLogRequest:
     def cur_page(self):
         """Gets the cur_page of this ListSlowLogRequest.
 
-        分页参数：起始值 [大于等于0] 。
+        分页参数：起始值 [大于等于1] 。
 
         :return: The cur_page of this ListSlowLogRequest.
         :rtype: str
@@ -101,7 +101,7 @@ class ListSlowLogRequest:
     def cur_page(self, cur_page):
         """Sets the cur_page of this ListSlowLogRequest.
 
-        分页参数：起始值 [大于等于0] 。
+        分页参数：起始值 [大于等于1] 。
 
         :param cur_page: The cur_page of this ListSlowLogRequest.
         :type cur_page: str

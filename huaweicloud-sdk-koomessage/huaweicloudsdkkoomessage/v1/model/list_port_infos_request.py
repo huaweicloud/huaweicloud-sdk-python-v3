@@ -25,7 +25,8 @@ class ListPortInfosRequest:
         'limit': 'int',
         'start_time': 'datetime',
         'end_time': 'datetime',
-        'pub_name': 'str'
+        'pub_name': 'str',
+        'is_bind': 'int'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class ListPortInfosRequest:
         'limit': 'limit',
         'start_time': 'start_time',
         'end_time': 'end_time',
-        'pub_name': 'pub_name'
+        'pub_name': 'pub_name',
+        'is_bind': 'is_bind'
     }
 
-    def __init__(self, type=None, port=None, port_type=None, sign_search=None, offset=None, limit=None, start_time=None, end_time=None, pub_name=None):
+    def __init__(self, type=None, port=None, port_type=None, sign_search=None, offset=None, limit=None, start_time=None, end_time=None, pub_name=None, is_bind=None):
         """ListPortInfosRequest
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class ListPortInfosRequest:
         :type end_time: datetime
         :param pub_name: 服务号名称。  &gt; - type&#x3D;1时，此字段作为过滤条件 &gt; - type&#x3D;0时，不作为过滤条件 
         :type pub_name: str
+        :param is_bind: 绑定状态。 - 0：未绑定 - 1：已绑定  &gt; - type&#x3D;0时，此字段作为过滤条件 &gt; - type&#x3D;1时，不作为过滤条件 
+        :type is_bind: int
         """
         
         
@@ -76,6 +80,7 @@ class ListPortInfosRequest:
         self._start_time = None
         self._end_time = None
         self._pub_name = None
+        self._is_bind = None
         self.discriminator = None
 
         if type is not None:
@@ -96,6 +101,8 @@ class ListPortInfosRequest:
             self.end_time = end_time
         if pub_name is not None:
             self.pub_name = pub_name
+        if is_bind is not None:
+            self.is_bind = is_bind
 
     @property
     def type(self):
@@ -294,6 +301,28 @@ class ListPortInfosRequest:
         :type pub_name: str
         """
         self._pub_name = pub_name
+
+    @property
+    def is_bind(self):
+        """Gets the is_bind of this ListPortInfosRequest.
+
+        绑定状态。 - 0：未绑定 - 1：已绑定  > - type=0时，此字段作为过滤条件 > - type=1时，不作为过滤条件 
+
+        :return: The is_bind of this ListPortInfosRequest.
+        :rtype: int
+        """
+        return self._is_bind
+
+    @is_bind.setter
+    def is_bind(self, is_bind):
+        """Sets the is_bind of this ListPortInfosRequest.
+
+        绑定状态。 - 0：未绑定 - 1：已绑定  > - type=0时，此字段作为过滤条件 > - type=1时，不作为过滤条件 
+
+        :param is_bind: The is_bind of this ListPortInfosRequest.
+        :type is_bind: int
+        """
+        self._is_bind = is_bind
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -17,22 +17,26 @@ class ApplyDedicatedStandbyNetworkParam:
     sensitive_list = []
 
     openapi_types = {
+        'site_id': 'str',
         'address': 'str',
         'port': 'int',
         'availability_zone': 'list[str]'
     }
 
     attribute_map = {
+        'site_id': 'site_id',
         'address': 'address',
         'port': 'port',
         'availability_zone': 'availability_zone'
     }
 
-    def __init__(self, address=None, port=None, availability_zone=None):
+    def __init__(self, site_id=None, address=None, port=None, availability_zone=None):
         """ApplyDedicatedStandbyNetworkParam
 
         The model defined in huaweicloud sdk
 
+        :param site_id: 租户的站点id
+        :type site_id: str
         :param address: 租户指定的专线备用地址
         :type address: str
         :param port: 租户指定的专线备用地址端口
@@ -43,17 +47,42 @@ class ApplyDedicatedStandbyNetworkParam:
         
         
 
+        self._site_id = None
         self._address = None
         self._port = None
         self._availability_zone = None
         self.discriminator = None
 
+        if site_id is not None:
+            self.site_id = site_id
         if address is not None:
             self.address = address
         if port is not None:
             self.port = port
         if availability_zone is not None:
             self.availability_zone = availability_zone
+
+    @property
+    def site_id(self):
+        """Gets the site_id of this ApplyDedicatedStandbyNetworkParam.
+
+        租户的站点id
+
+        :return: The site_id of this ApplyDedicatedStandbyNetworkParam.
+        :rtype: str
+        """
+        return self._site_id
+
+    @site_id.setter
+    def site_id(self, site_id):
+        """Sets the site_id of this ApplyDedicatedStandbyNetworkParam.
+
+        租户的站点id
+
+        :param site_id: The site_id of this ApplyDedicatedStandbyNetworkParam.
+        :type site_id: str
+        """
+        self._site_id = site_id
 
     @property
     def address(self):

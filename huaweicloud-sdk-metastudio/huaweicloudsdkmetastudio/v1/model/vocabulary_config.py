@@ -39,9 +39,9 @@ class VocabularyConfig:
 
         :param id: id
         :type id: str
-        :param key: 映射键
+        :param key: 原始词
         :type key: str
-        :param value: 映射值
+        :param value: 设置的自定义读法
         :type value: str
         :param create_time: 创建时间。
         :type create_time: str
@@ -95,7 +95,7 @@ class VocabularyConfig:
     def key(self):
         """Gets the key of this VocabularyConfig.
 
-        映射键
+        原始词
 
         :return: The key of this VocabularyConfig.
         :rtype: str
@@ -106,7 +106,7 @@ class VocabularyConfig:
     def key(self, key):
         """Sets the key of this VocabularyConfig.
 
-        映射键
+        原始词
 
         :param key: The key of this VocabularyConfig.
         :type key: str
@@ -117,7 +117,7 @@ class VocabularyConfig:
     def value(self):
         """Gets the value of this VocabularyConfig.
 
-        映射值
+        设置的自定义读法
 
         :return: The value of this VocabularyConfig.
         :rtype: str
@@ -128,7 +128,7 @@ class VocabularyConfig:
     def value(self, value):
         """Sets the value of this VocabularyConfig.
 
-        映射值
+        设置的自定义读法
 
         :param value: The value of this VocabularyConfig.
         :type value: str

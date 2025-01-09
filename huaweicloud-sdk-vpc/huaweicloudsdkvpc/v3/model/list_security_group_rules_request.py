@@ -26,7 +26,11 @@ class ListSecurityGroupRulesRequest:
         'remote_group_id': 'list[str]',
         'direction': 'str',
         'action': 'str',
-        'remote_ip_prefix': 'str'
+        'remote_ip_prefix': 'str',
+        'priority': 'list[int]',
+        'ethertype': 'list[str]',
+        'remote_address_group_id': 'list[str]',
+        'enabled': 'bool'
     }
 
     attribute_map = {
@@ -39,10 +43,14 @@ class ListSecurityGroupRulesRequest:
         'remote_group_id': 'remote_group_id',
         'direction': 'direction',
         'action': 'action',
-        'remote_ip_prefix': 'remote_ip_prefix'
+        'remote_ip_prefix': 'remote_ip_prefix',
+        'priority': 'priority',
+        'ethertype': 'ethertype',
+        'remote_address_group_id': 'remote_address_group_id',
+        'enabled': 'enabled'
     }
 
-    def __init__(self, limit=None, marker=None, id=None, security_group_id=None, protocol=None, description=None, remote_group_id=None, direction=None, action=None, remote_ip_prefix=None):
+    def __init__(self, limit=None, marker=None, id=None, security_group_id=None, protocol=None, description=None, remote_group_id=None, direction=None, action=None, remote_ip_prefix=None, priority=None, ethertype=None, remote_address_group_id=None, enabled=None):
         """ListSecurityGroupRulesRequest
 
         The model defined in huaweicloud sdk
@@ -63,10 +71,18 @@ class ListSecurityGroupRulesRequest:
         :type remote_group_id: list[str]
         :param direction: 功能说明：安全组规则方向
         :type direction: str
-        :param action: 功能说明：安全组规则生效策略
+        :param action: 功能说明：安全组规则生效策略。 取值范围：allow表示允许，deny表示拒绝。
         :type action: str
         :param remote_ip_prefix: 功能说明：远端IP地址 取值范围：cidr格式
         :type remote_ip_prefix: str
+        :param priority: 功能说明：优先级，支持多条过滤。
+        :type priority: list[int]
+        :param ethertype: 功能说明：IP协议类型，支持多条过滤。 取值范围：IPv4,IPv6,ipv4,ipv6
+        :type ethertype: list[str]
+        :param remote_address_group_id: 功能说明：远端IP地址组ID，支持多ID过滤。
+        :type remote_address_group_id: list[str]
+        :param enabled: 功能说明：是否启用安全组规则，不支持多值过滤。 取值范围：true, false。
+        :type enabled: bool
         """
         
         
@@ -81,6 +97,10 @@ class ListSecurityGroupRulesRequest:
         self._direction = None
         self._action = None
         self._remote_ip_prefix = None
+        self._priority = None
+        self._ethertype = None
+        self._remote_address_group_id = None
+        self._enabled = None
         self.discriminator = None
 
         if limit is not None:
@@ -103,6 +123,14 @@ class ListSecurityGroupRulesRequest:
             self.action = action
         if remote_ip_prefix is not None:
             self.remote_ip_prefix = remote_ip_prefix
+        if priority is not None:
+            self.priority = priority
+        if ethertype is not None:
+            self.ethertype = ethertype
+        if remote_address_group_id is not None:
+            self.remote_address_group_id = remote_address_group_id
+        if enabled is not None:
+            self.enabled = enabled
 
     @property
     def limit(self):
@@ -284,7 +312,7 @@ class ListSecurityGroupRulesRequest:
     def action(self):
         """Gets the action of this ListSecurityGroupRulesRequest.
 
-        功能说明：安全组规则生效策略
+        功能说明：安全组规则生效策略。 取值范围：allow表示允许，deny表示拒绝。
 
         :return: The action of this ListSecurityGroupRulesRequest.
         :rtype: str
@@ -295,7 +323,7 @@ class ListSecurityGroupRulesRequest:
     def action(self, action):
         """Sets the action of this ListSecurityGroupRulesRequest.
 
-        功能说明：安全组规则生效策略
+        功能说明：安全组规则生效策略。 取值范围：allow表示允许，deny表示拒绝。
 
         :param action: The action of this ListSecurityGroupRulesRequest.
         :type action: str
@@ -323,6 +351,94 @@ class ListSecurityGroupRulesRequest:
         :type remote_ip_prefix: str
         """
         self._remote_ip_prefix = remote_ip_prefix
+
+    @property
+    def priority(self):
+        """Gets the priority of this ListSecurityGroupRulesRequest.
+
+        功能说明：优先级，支持多条过滤。
+
+        :return: The priority of this ListSecurityGroupRulesRequest.
+        :rtype: list[int]
+        """
+        return self._priority
+
+    @priority.setter
+    def priority(self, priority):
+        """Sets the priority of this ListSecurityGroupRulesRequest.
+
+        功能说明：优先级，支持多条过滤。
+
+        :param priority: The priority of this ListSecurityGroupRulesRequest.
+        :type priority: list[int]
+        """
+        self._priority = priority
+
+    @property
+    def ethertype(self):
+        """Gets the ethertype of this ListSecurityGroupRulesRequest.
+
+        功能说明：IP协议类型，支持多条过滤。 取值范围：IPv4,IPv6,ipv4,ipv6
+
+        :return: The ethertype of this ListSecurityGroupRulesRequest.
+        :rtype: list[str]
+        """
+        return self._ethertype
+
+    @ethertype.setter
+    def ethertype(self, ethertype):
+        """Sets the ethertype of this ListSecurityGroupRulesRequest.
+
+        功能说明：IP协议类型，支持多条过滤。 取值范围：IPv4,IPv6,ipv4,ipv6
+
+        :param ethertype: The ethertype of this ListSecurityGroupRulesRequest.
+        :type ethertype: list[str]
+        """
+        self._ethertype = ethertype
+
+    @property
+    def remote_address_group_id(self):
+        """Gets the remote_address_group_id of this ListSecurityGroupRulesRequest.
+
+        功能说明：远端IP地址组ID，支持多ID过滤。
+
+        :return: The remote_address_group_id of this ListSecurityGroupRulesRequest.
+        :rtype: list[str]
+        """
+        return self._remote_address_group_id
+
+    @remote_address_group_id.setter
+    def remote_address_group_id(self, remote_address_group_id):
+        """Sets the remote_address_group_id of this ListSecurityGroupRulesRequest.
+
+        功能说明：远端IP地址组ID，支持多ID过滤。
+
+        :param remote_address_group_id: The remote_address_group_id of this ListSecurityGroupRulesRequest.
+        :type remote_address_group_id: list[str]
+        """
+        self._remote_address_group_id = remote_address_group_id
+
+    @property
+    def enabled(self):
+        """Gets the enabled of this ListSecurityGroupRulesRequest.
+
+        功能说明：是否启用安全组规则，不支持多值过滤。 取值范围：true, false。
+
+        :return: The enabled of this ListSecurityGroupRulesRequest.
+        :rtype: bool
+        """
+        return self._enabled
+
+    @enabled.setter
+    def enabled(self, enabled):
+        """Sets the enabled of this ListSecurityGroupRulesRequest.
+
+        功能说明：是否启用安全组规则，不支持多值过滤。 取值范围：true, false。
+
+        :param enabled: The enabled of this ListSecurityGroupRulesRequest.
+        :type enabled: bool
+        """
+        self._enabled = enabled
 
     def to_dict(self):
         """Returns the model properties as a dict"""

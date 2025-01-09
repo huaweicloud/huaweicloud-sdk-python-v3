@@ -17,7 +17,7 @@ class CreateAgenciesRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'object'
+        'body': 'CreateAgenciesReq'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class CreateAgenciesRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the CreateAgenciesRequest
-        :type body: object
+        :type body: :class:`huaweicloudsdkworkspace.v2.CreateAgenciesReq`
         """
         
         
@@ -46,7 +46,7 @@ class CreateAgenciesRequest:
         """Gets the body of this CreateAgenciesRequest.
 
         :return: The body of this CreateAgenciesRequest.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkworkspace.v2.CreateAgenciesReq`
         """
         return self._body
 
@@ -55,7 +55,7 @@ class CreateAgenciesRequest:
         """Sets the body of this CreateAgenciesRequest.
 
         :param body: The body of this CreateAgenciesRequest.
-        :type body: object
+        :type body: :class:`huaweicloudsdkworkspace.v2.CreateAgenciesReq`
         """
         self._body = body
 

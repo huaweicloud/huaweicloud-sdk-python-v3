@@ -19,15 +19,17 @@ class ListDesktopsResponse(SdkResponse):
 
     openapi_types = {
         'total_count': 'int',
-        'desktops': 'list[SimpleDesktopInfo]'
+        'desktops': 'list[SimpleDesktopInfo]',
+        'desktop_infos': 'list[SimpleDesktopInfoDetail]'
     }
 
     attribute_map = {
         'total_count': 'total_count',
-        'desktops': 'desktops'
+        'desktops': 'desktops',
+        'desktop_infos': 'desktop_infos'
     }
 
-    def __init__(self, total_count=None, desktops=None):
+    def __init__(self, total_count=None, desktops=None, desktop_infos=None):
         """ListDesktopsResponse
 
         The model defined in huaweicloud sdk
@@ -36,18 +38,23 @@ class ListDesktopsResponse(SdkResponse):
         :type total_count: int
         :param desktops: 桌面信息。
         :type desktops: list[:class:`huaweicloudsdkworkspace.v2.SimpleDesktopInfo`]
+        :param desktop_infos: Workspace桌面列表。
+        :type desktop_infos: list[:class:`huaweicloudsdkworkspace.v2.SimpleDesktopInfoDetail`]
         """
         
         super(ListDesktopsResponse, self).__init__()
 
         self._total_count = None
         self._desktops = None
+        self._desktop_infos = None
         self.discriminator = None
 
         if total_count is not None:
             self.total_count = total_count
         if desktops is not None:
             self.desktops = desktops
+        if desktop_infos is not None:
+            self.desktop_infos = desktop_infos
 
     @property
     def total_count(self):
@@ -92,6 +99,28 @@ class ListDesktopsResponse(SdkResponse):
         :type desktops: list[:class:`huaweicloudsdkworkspace.v2.SimpleDesktopInfo`]
         """
         self._desktops = desktops
+
+    @property
+    def desktop_infos(self):
+        """Gets the desktop_infos of this ListDesktopsResponse.
+
+        Workspace桌面列表。
+
+        :return: The desktop_infos of this ListDesktopsResponse.
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.SimpleDesktopInfoDetail`]
+        """
+        return self._desktop_infos
+
+    @desktop_infos.setter
+    def desktop_infos(self, desktop_infos):
+        """Sets the desktop_infos of this ListDesktopsResponse.
+
+        Workspace桌面列表。
+
+        :param desktop_infos: The desktop_infos of this ListDesktopsResponse.
+        :type desktop_infos: list[:class:`huaweicloudsdkworkspace.v2.SimpleDesktopInfoDetail`]
+        """
+        self._desktop_infos = desktop_infos
 
     def to_dict(self):
         """Returns the model properties as a dict"""

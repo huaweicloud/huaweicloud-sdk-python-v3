@@ -41,7 +41,7 @@ class ListScheduledTasksRecordsDetailsRequest:
         :type record_id: str
         :param offset: 用于分页查询，查询的起始记录序号，从0开始。
         :type offset: int
-        :param limit: 用于分页查询，每页返回的个数，取值范围0~50。
+        :param limit: 用于分页查询，每页返回的个数，取值范围0~100。
         :type limit: int
         """
         
@@ -128,7 +128,7 @@ class ListScheduledTasksRecordsDetailsRequest:
     def limit(self):
         """Gets the limit of this ListScheduledTasksRecordsDetailsRequest.
 
-        用于分页查询，每页返回的个数，取值范围0~50。
+        用于分页查询，每页返回的个数，取值范围0~100。
 
         :return: The limit of this ListScheduledTasksRecordsDetailsRequest.
         :rtype: int
@@ -139,7 +139,7 @@ class ListScheduledTasksRecordsDetailsRequest:
     def limit(self, limit):
         """Sets the limit of this ListScheduledTasksRecordsDetailsRequest.
 
-        用于分页查询，每页返回的个数，取值范围0~50。
+        用于分页查询，每页返回的个数，取值范围0~100。
 
         :param limit: The limit of this ListScheduledTasksRecordsDetailsRequest.
         :type limit: int

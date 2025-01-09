@@ -27,7 +27,8 @@ class UserGroupInfo:
         'platform_type': 'str',
         'group_dn': 'str',
         'domain': 'str',
-        'sid': 'str'
+        'sid': 'str',
+        'total_desktops': 'int'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class UserGroupInfo:
         'platform_type': 'platform_type',
         'group_dn': 'group_dn',
         'domain': 'domain',
-        'sid': 'sid'
+        'sid': 'sid',
+        'total_desktops': 'total_desktops'
     }
 
-    def __init__(self, name=None, id=None, create_time=None, description=None, user_quantity=None, parent=None, realm_id=None, platform_type=None, group_dn=None, domain=None, sid=None):
+    def __init__(self, name=None, id=None, create_time=None, description=None, user_quantity=None, parent=None, realm_id=None, platform_type=None, group_dn=None, domain=None, sid=None, total_desktops=None):
         """UserGroupInfo
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class UserGroupInfo:
         :type domain: str
         :param sid: 用户组sid。
         :type sid: str
+        :param total_desktops: 用户列表中用户数。
+        :type total_desktops: int
         """
         
         
@@ -86,6 +90,7 @@ class UserGroupInfo:
         self._group_dn = None
         self._domain = None
         self._sid = None
+        self._total_desktops = None
         self.discriminator = None
 
         if name is not None:
@@ -110,6 +115,8 @@ class UserGroupInfo:
             self.domain = domain
         if sid is not None:
             self.sid = sid
+        if total_desktops is not None:
+            self.total_desktops = total_desktops
 
     @property
     def name(self):
@@ -348,6 +355,28 @@ class UserGroupInfo:
         :type sid: str
         """
         self._sid = sid
+
+    @property
+    def total_desktops(self):
+        """Gets the total_desktops of this UserGroupInfo.
+
+        用户列表中用户数。
+
+        :return: The total_desktops of this UserGroupInfo.
+        :rtype: int
+        """
+        return self._total_desktops
+
+    @total_desktops.setter
+    def total_desktops(self, total_desktops):
+        """Sets the total_desktops of this UserGroupInfo.
+
+        用户列表中用户数。
+
+        :param total_desktops: The total_desktops of this UserGroupInfo.
+        :type total_desktops: int
+        """
+        self._total_desktops = total_desktops
 
     def to_dict(self):
         """Returns the model properties as a dict"""

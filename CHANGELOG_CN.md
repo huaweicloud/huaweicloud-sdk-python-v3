@@ -1,3 +1,989 @@
+# 3.1.131 2025-01-09
+
+### HuaweiCloud SDK CSS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowVpcepConnection**
+    - 响应参数变更
+      - `+ connections.vpcepIp`
+      - `+ connections.vpcepIpv6Address`
+      - `+ connections.vpcepDnsName`
+
+### HuaweiCloud SDK DC
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListGdgwRouteTables**
+    - 请求参数变更
+      - `+ limit`
+      - `+ marker`
+    - 响应参数变更
+      - `+ page_info`
+      - `+ gdgw_routetables`
+      - `- gdgw_routetable`
+
+### HuaweiCloud SDK DDM
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `DeleteDdmInstance`
+    - `SwitchSsl`
+    - `ListDdmConfigurations`
+    - `CreateDdmDatabase`
+    - `ShowDdmJobResult`
+    - `ShowConfiguration`
+    - `ListSlowLogs`
+    - `ShowRiskInfo`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowDatabase**
+    - 响应参数变更
+      - `* database.created: string -> int64`
+      - `* database.updated: string -> int64`
+      - `* database.databases.created: string -> int64`
+      - `* database.databases.updated: string -> int64`
+  - **CreateGroup**
+    - 响应参数变更
+      - `+ group_id`
+      - `- instance_id`
+
+### HuaweiCloud SDK DRS
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 支持接口`ShowAgencyInfo`、`UpdateAgencyPolicy`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK IMS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListImages**
+    - 响应参数变更
+      - `+ images.os_shutdown_timeout`
+  - **UpdateImage**
+    - 响应参数变更
+      - `+ os_shutdown_timeout`
+
+### HuaweiCloud SDK KooMessage
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListPortInfos**
+    - 请求参数变更
+      - `+ is_bind`
+
+### HuaweiCloud SDK Meeting
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`SearchCorpDigitalInfoList`、`SearchPrivateCorpDigitalInfo`
+
+### HuaweiCloud SDK MetaStudio
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`BatchDeletePacifyWords`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListSmartLiveScriptCommands**
+    - 响应参数变更
+      - `+ scripts_commands.command_time`
+      - `+ scripts_commands.scene_scripts.shoot_scripts.text`
+  - **ListSmartLiveRooms**
+    - 响应参数变更
+      - `+ smart_live_rooms.confirm_state`
+  - **ListSmartLiveRuleCommands**
+    - 响应参数变更
+      - `+ rule_commands.command_time`
+
+### HuaweiCloud SDK MSGSMS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateSignature**
+    - 请求参数变更
+      - `+ qualification_id`
+  - **ShowSignature**
+    - 响应参数变更
+      - `+ qualification_id`
+      - `+ qualification_name`
+  - **UpdateTemplate**
+    - 请求参数变更
+      - `+ flow_status`
+  - **CreateSignature**
+    - 请求参数变更
+      - `+ qualification_id`
+  - **ListSignatureDetails**
+    - 响应参数变更
+      - `+ qualification_id`
+      - `+ qualification_name`
+      - `+ results.qualification_id`
+      - `+ results.qualification_name`
+  - **CreateTemplate**
+    - 请求参数变更
+      - `+ flow_status`
+
+### HuaweiCloud SDK SCM
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `CancelCertificateRequest`
+    - `ListCsr`
+    - `CreateCsr`
+    - `ShowCsr`
+    - `UpdateCsr`
+    - `DeleteCsr`
+    - `UploadCsr`
+    - `ShowCsrPrivateKey`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK VPC
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListSecurityGroupRules**
+    - 请求参数变更
+      - `+ priority`
+      - `+ ethertype`
+      - `+ remote_address_group_id`
+      - `+ enabled`
+    - 响应参数变更
+      - `+ security_group_rules.enabled`
+  - **CreateSecurityGroupRule**
+    - 请求参数变更
+      - `+ security_group_rule.enabled`
+    - 响应参数变更
+      - `+ security_group_rule.enabled`
+  - **ShowSecurityGroupRule**
+    - 响应参数变更
+      - `+ security_group_rule.enabled`
+  - **BatchCreateSecurityGroupRules**
+    - 请求参数变更
+      - `+ security_group_rules.enabled`
+    - 响应参数变更
+      - `+ security_group_rules.enabled`
+  - **CreateSecurityGroup**
+    - 响应参数变更
+      - `+ security_group.security_group_rules.enabled`
+  - **ShowSecurityGroup**
+    - 响应参数变更
+      - `+ security_group.security_group_rules.enabled`
+  - **UpdateSecurityGroup**
+    - 响应参数变更
+      - `+ security_group.security_group_rules.enabled`
+
+### HuaweiCloud SDK WAF
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListStatistics**
+    - 响应参数变更
+      - `* num: int32 -> int64`
+
+### HuaweiCloud SDK Workspace
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持以下接口：
+    - `CreateBucketCredential`
+    - `CreateAndAuthorizeBucket`
+    - `ListApps`
+    - `UploadApp`
+    - `DeleteApp`
+    - `UpdateUploadedApp`
+    - `InstallApp`
+    - `ListAppAuthorizations`
+    - `UpdateAppAuthorizations`
+    - `BatchDeleteApps`
+    - `BatchDisableApps`
+    - `BatchEnableApps`
+    - `BatchUpdateAppAuthorizations`
+    - `BatchInstallApps`
+    - `ListAppCatalogs`
+    - `ListJobs`
+    - `BatchDeleteJobs`
+    - `RetryJobs`
+    - `ListAppRule`
+    - `CreateAppRule`
+    - `DeleteAppRule`
+    - `UpdateAppRule`
+    - `BatchDeleteAppRules`
+    - `EnableRuleRestriction`
+    - `DisableRuleRestriction`
+    - `ListRestrictedRule`
+    - `AddRestrictedRule`
+    - `DeleteRestrictedRule`
+    - `ListTenantProfiles`
+    - `UpdateTenantProfile`
+    - `ListScripts`
+    - `CreateScript`
+    - `ShowScriptDetail`
+    - `UpdateScript`
+    - `DeleteScript`
+    - `ExecuteScriptOrCommand`
+    - `ShowScriptRecordDetail`
+    - `ListScriptRecords`
+    - `ListScriptTasks`
+    - `RetryScriptExecution`
+    - `StopScriptExecution`
+    - `ShowAvailableIp`
+    - `ShowDesktopPoolsScriptExecTasks`
+    - `ExecuteDesktopPoolScript`
+    - `SendDesktopPoolNotifications`
+    - `ListInstancesStatus`
+    - `ListDesktopActions`
+    - `ShowDesktopMonitorData`
+    - `ShowRemoteConsoleAddress`
+    - `UpdateDesktopSids`
+    - `RegisterDomain`
+    - `ChangeDesktopToImage`
+    - `BatchDetachInstances`
+    - `ShowDesktopNetworks`
+    - `BatchChangeDesktopNetwork`
+    - `ListDesktopDetachInfo`
+    - `ShowSysprepInfo`
+    - `SetMaintenanceMode`
+    - `BatchAssociateInstances`
+    - `BatchAttachInstances`
+    - `UpdateDesktopUsername`
+    - `SendNotifications`
+    - `ListAgentsInstallCondition`
+    - `BatchInstallAgent`
+    - `ListMarketImages`
+    - `ListInternet`
+    - `ApplyInternet`
+    - `ShowUsingSubnets`
+    - `ListPorts`
+    - `ListNatGateways`
+    - `ListSubnetBandwidths`
+    - `ApplySubnetBandwidth`
+    - `UpdateSubnetBandwidth`
+    - `DeleteSubnetBandwidth`
+    - `ShowSubnetBandwidthControlList`
+    - `UpdateSubnetBandwidthControlList`
+    - `CreateOrder`
+    - `CreateChangeOrder`
+    - `CreateDesktopBatchOrder`
+    - `EstimateChangeImages`
+    - `CreateDesktopPoolChangeOrder`
+    - `EstimateDesktopPoolAddVolume`
+    - `EstimateDesktopPoolChangeImage`
+    - `EstimateDesktopPoolExtendVolume`
+    - `EstimateDesktopPoolResize`
+    - `EstimateAddResources`
+    - `CreateSubnetBandwidthChangeOrder`
+    - `CreateDesktopOrder`
+    - `AddDesktopSubResources`
+    - `DeleteDesktopSubResources`
+    - `BatchCreateDesktopSnapshot`
+    - `BatchDeleteDesktopSnapshot`
+    - `BatchRestoreDesktopSnapshot`
+    - `ListDesktopSnapshot`
+    - `ListDesktopsStatistics`
+    - `ListRunState`
+    - `ListLoginState`
+    - `AddDesktopVolumes`
+    - `ExpandDesktopVolume`
+    - `ListTimeZones`
+    - `ListHistoryOnlineInfo`
+    - `BatchDeleteSubJobs`
+    - `ListOuDetails`
+    - `AddOu`
+    - `UpdateOuInfo`
+    - `DeleteOu`
+    - `ListAdOus`
+    - `ListAdOuUsers`
+    - `ListPolicyGroup`
+    - `CreatePolicyGroup`
+    - `ListPolicyDetailInfoById`
+    - `UpdatePolicyGroup`
+    - `DeletePolicyGroup`
+    - `ListPoliciesOfPolicyGroup`
+    - `UpdatePoliciesOfPolicyGroup`
+    - `ListTargetOfPolicyGroup`
+    - `BatchUpdateTargetOfPolicyGroup`
+    - `ListPolicyGroupInfo`
+    - `ListOriginalPolicyInfo`
+    - `UpdateAccessPolicy`
+    - `ListHourPackagesType`
+    - `ListSharerProducts`
+    - `ListAzs`
+    - `ShowAzDetails`
+    - `ListScreenRecords`
+    - `ShowScreenRecord`
+    - `BatchDeleteScreenRecords`
+    - `ListDownloadAddress`
+    - `ListDesktopOperations`
+    - `SendEmail`
+    - `ListVolumeProductInfo`
+    - `ListAccessAddressBackupConfig`
+    - `UpdateAccessAddressBackupConfig`
+    - `ShowAuthConfig`
+    - `UpdateAuthMethodConfig`
+    - `RunActionsOnWorkspaceJob`
+    - `ShowQuotaDetails`
+    - `ListSiteConfigs`
+    - `AddSite`
+    - `DeleteSite`
+    - `UpdateAccessMode`
+    - `UpdateSubnetIds`
+    - `ListWksEdgeSites`
+    - `ListTenantConfigs`
+    - `UpdateTenantConfig`
+    - `ShowShareSpaceConfig`
+    - `UpdateShareSpaceConfig`
+    - `ListNatMappingConfigs`
+    - `UpdateNatMappingConfigs`
+    - `UpdateEnterpriseId`
+    - `ListAlarms`
+    - `ListAlarmStatistics`
+    - `ShowGrowthRate`
+    - `ListAppUserAccessData`
+    - `ShowUserAccessStages`
+    - `ListUserEvents`
+    - `UpdateDesktop`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **BatchLogoffDesktops**
+    - 请求参数变更
+      - `+ Service-Transaction-Id`
+  - **BatchRunDesktops**
+    - 请求参数变更
+      - `+ host_id`
+      - `+ project_id`
+    - 响应参数变更
+      - `+ error_msg`
+      - `+ error_code`
+  - **BatchRebuildDesktopsSystemDisk**
+    - 请求参数变更
+      - `+ Service-Transaction-Id`
+    - 响应参数变更
+      - `+ get_job_endpoint`
+      - `+ encoded_authorization_message`
+      - `+ min_provision_time`
+      - `+ periodic_query_time`
+      - `+ max_provision_time`
+  - **ListTerminalsBindingDesktopsConfig**
+    - 响应参数变更
+      - `+ tc_auto_bind_switch`
+      - `+ tc_auto_bind_max`
+  - **UpdateTerminalsBindingDesktopsConfig**
+    - 请求参数变更
+      - `+ tc_auto_bind_switch`
+      - `+ tc_auto_bind_max`
+  - **DeleteDesktopVolumes**
+    - 请求参数变更
+      - `+ Service-Transaction-Id`
+  - **ListHistoryOnlineInfoNew**
+    - 请求参数变更
+      - `+ client_hour`
+  - **ExpandDesktopPool**
+    - 响应参数变更
+      - `+ maxProvisionTime`
+      - `+ getJobEndpoint`
+      - `+ periodicQueryTime`
+      - `+ cbcJobId`
+      - `+ minProvisionTime`
+  - **ResizeDesktop**
+    - 请求参数变更
+      - `+ Service-Transaction-Id`
+      - `+ flavor_id`
+      - `+ dedicated_host_id`
+      - `+ order_id`
+      - `+ extend_param`
+    - 响应参数变更
+      - `+ error_msg`
+      - `+ maxProvisionTime`
+      - `+ getJobEndpoint`
+      - `+ periodicQueryTime`
+      - `+ error_policy`
+      - `+ cbcJobId`
+      - `+ error_code`
+      - `+ minProvisionTime`
+  - **DetachInstances**
+    - 请求参数变更
+      - `+ shutoff_after_detach`
+  - **ListProjectTags**
+    - 请求参数变更
+      - `+ offset`
+      - `+ limit`
+      - `+ key`
+    - 响应参数变更
+      - `+ totalCount`
+  - **ApplyDesktopsInternet**
+    - 请求参数变更
+      - `+ Service-Transaction-Id`
+      - `+ inst_info_ids`
+      - `+ order_id`
+    - 响应参数变更
+      - `+ maxProvisionTime`
+      - `+ getJobEndpoint`
+      - `+ periodicQueryTime`
+      - `+ minProvisionTime`
+  - **ListScheduledTasks**
+    - 响应参数变更
+      - `+ scheduled_tasks.wait_time`
+  - **CreateScheduledTasks**
+    - 请求参数变更
+      - `+ wait_time`
+      - `+ task_type: enum value [CREATE_SNAPSHOT]`
+      - `+ apply_objects.object_type: enum value [DESKTOP_TAG]`
+  - **ShowScheduledTasks**
+    - 响应参数变更
+      - `+ wait_time`
+      - `+ apply_objects.object_type: enum value [DESKTOP_TAG]`
+  - **UpdateScheduledTasks**
+    - 请求参数变更
+      - `+ wait_time`
+      - `+ apply_objects.object_type: enum value [DESKTOP_TAG]`
+  - **ListScheduledTasksRecords**
+    - 请求参数变更
+      - `+ offset`
+      - `+ limit`
+    - 响应参数变更
+      - `+ tasks_records.execute_object_type`
+  - **ListScheduledTasksRecordsDetails**
+    - 响应参数变更
+      - `+ tasks_records_details.exec_script_id`
+  - **ExpandVolumes**
+    - 请求参数变更
+      - `+ Service-Transaction-Id`
+      - `+ desktop_type`
+      - `+ desktop_volumes_expansion.order_id`
+    - 响应参数变更
+      - `+ maxProvisionTime`
+      - `+ getJobEndpoint`
+      - `+ periodicQueryTime`
+      - `+ minProvisionTime`
+  - **ListLoginRecordsNew**
+    - 请求参数变更
+      - `+ min_network_rtt`
+      - `+ max_network_rtt`
+      - `* limit: string -> int32`
+      - `* offset: string -> int32`
+    - 响应参数变更
+      - `+ records.tenantId`
+  - **CreateUserGroup**
+    - 响应参数变更
+      - `+ encoded_authorization_message`
+  - **ListUserGroups**
+    - 响应参数变更
+      - `+ user_groups.total_desktops`
+  - **ListUsersOfGroup**
+    - 响应参数变更
+      - `+ users.total_desktops`
+  - **ListImages**
+    - 请求参数变更
+      - `+ sort_field`
+      - `+ sort_type`
+    - 响应参数变更
+      - `+ images.os_platform`
+      - `+ images.created_at`
+  - **ListAccessPolicies**
+    - 请求参数变更
+      - `+ access_control_type`
+    - 响应参数变更
+      - `+ policies.access_control_type`
+      - `+ policies.ip_list`
+      - `+ policies.ip_total_count`
+  - **CreateAccessPolicy**
+    - 请求参数变更
+      - `+ policy.access_control_type`
+      - `+ policy.ip_list`
+  - **ListProducts**
+    - 请求参数变更
+      - `+ flavor_id`
+      - `+ deh_product_id`
+      - `+ is_deh`
+      - `+ products_range`
+    - 响应参数变更
+      - `+ products.product_desc`
+      - `+ products.package_type`
+      - `+ products.series_type`
+      - `+ products.name`
+      - `+ products.share_space_size`
+      - `* products: list<ProductInfo> -> list<Product>`
+  - **ListUsers**
+    - 请求参数变更
+      - `+ user_email`
+      - `+ share_space_subscription`
+      - `+ share_space_desktops`
+      - `+ is_query_total_desktops`
+    - 响应参数变更
+      - `+ users.sid`
+      - `+ users.share_space_subscription`
+      - `+ users.share_space_desktops`
+      - `+ users.group_names`
+  - **UpdateUserInfo**
+    - 请求参数变更
+      - `+ group_ids`
+      - `+ alias_name`
+  - **ListUserDetail**
+    - 响应参数变更
+      - `+ user_detail.enable_change_password`
+      - `+ user_detail.share_space_subscription`
+      - `+ user_detail.share_space_desktops`
+      - `- user_detail.enabled_change_password`
+  - **ResizeDesktopPool**
+    - 响应参数变更
+      - `+ maxProvisionTime`
+      - `+ getJobEndpoint`
+      - `+ periodicQueryTime`
+      - `+ cbcJobId`
+      - `+ minProvisionTime`
+  - **CreateAgencies**
+    - 请求参数变更
+      - `+ scene`
+      - `* body: object -> object<CreateAgenciesReq>`
+  - **ListAgencies**
+    - 请求参数变更
+      - `+ scene`
+  - **CreateDesktop**
+    - 请求参数变更
+      - `+ Service-Transaction-Id`
+      - `+ flavor_id`
+      - `+ share_resource_sku`
+      - `+ desktop_ips`
+      - `+ enterprise_id`
+      - `+ order_id`
+      - `+ ou_name`
+      - `+ vpc_id`
+      - `+ subnet_ids`
+      - `+ scheduler_hints`
+      - `+ desktop_isv`
+      - `+ access_mode`
+      - `+ apply_shared_vpc_dedicated_param`
+      - `+ dedicated_subnets`
+      - `+ adn`
+      - `+ exclusive_host_id`
+      - `+ hour_package_product_id`
+      - `+ hour_package_offering_id`
+      - `+ root_resource_ids`
+      - `+ inst_info_ids`
+      - `+ root_volume.cluster_id`
+      - `+ nics.ip_address`
+      - `+ desktops.os_host_name`
+      - `+ desktops.nics`
+      - `+ desktops.ou_name`
+    - 响应参数变更
+      - `+ maxProvisionTime`
+      - `+ getJobEndpoint`
+      - `+ periodicQueryTime`
+      - `+ cbcJobId`
+      - `+ minProvisionTime`
+  - **ListDesktops**
+    - 请求参数变更
+      - `+ sids`
+      - `+ site_id`
+      - `+ is_share_desktop`
+      - `+ status`
+      - `+ desktop_id`
+      - `+ tag`
+      - `* user_name: string -> list<string>`
+    - 响应参数变更
+      - `+ desktop_infos`
+      - `+ desktops.os_host_name`
+      - `+ desktops.share_resource_sku`
+      - `+ desktops.desktop_type`
+      - `+ desktops.status`
+      - `+ desktops.task_status`
+  - **AttachInstances**
+    - 请求参数变更
+      - `+ Service-Transaction-Id`
+      - `+ order_id`
+    - 响应参数变更
+      - `+ get_job_endpoint`
+      - `+ min_provision_time`
+      - `+ periodic_query_time`
+      - `+ max_provision_time`
+  - **ShowDesktopNetwork**
+    - 响应参数变更
+      - `+ network_infos.security_groups.name`
+      - `* network_infos.security_groups: list<SecurityGroupInfo> -> list<SecurityGroup>`
+  - **AddVolumes**
+    - 请求参数变更
+      - `+ Service-Transaction-Id`
+      - `+ desktop_type`
+      - `+ desktop_volumes.order_id`
+      - `+ desktop_volumes.volumes.cluster_id`
+  - **ListItaSubJobs**
+    - 响应参数变更
+      - `+ jobs.host`
+      - `+ jobs.project_id`
+      - `+ jobs.success_result`
+      - `+ jobs.attach_user`
+      - `+ jobs.entity`
+      - `- jobs.message`
+      - `- jobs.desktop_name`
+      - `- jobs.mac_address`
+      - `+ jobs.entities.desktop_name`
+      - `+ jobs.entities.ip_address`
+  - **ShowJob**
+    - 响应参数变更
+      - `+ sub_jobs.host`
+      - `+ sub_jobs.project_id`
+      - `+ sub_jobs.success_result`
+      - `+ sub_jobs.attach_user`
+      - `+ sub_jobs.entity`
+      - `- sub_jobs.message`
+      - `- sub_jobs.desktop_name`
+      - `- sub_jobs.mac_address`
+      - `+ sub_jobs.entities.desktop_name`
+      - `+ sub_jobs.entities.ip_address`
+  - **ShowAssistAuthConfig**
+    - 响应参数变更
+      - `+ radius_config_info`
+      - `+ radius_gateway_config_info`
+  - **UpdateAssistAuthMethodConfig**
+    - 请求参数变更
+      - `+ radius_auth_config`
+      - `+ radius_gateway_config`
+  - **ShowQuotas**
+    - 请求参数变更
+      - `+ type`
+  - **ListWorkspaces**
+    - 响应参数变更
+      - `+ is_authorized_install_agent`
+      - `+ enable_user_create_snapshot`
+      - `+ assist_auth_config_info`
+      - `+ site_configs`
+      - `+ is_multi_vpc`
+      - `+ is_config_nat_mapping`
+      - `+ auth_type`
+      - `+ is_support_ipv6`
+      - `+ adn_conflict_network`
+      - `+ internet_access_address_ipv6`
+      - `+ enterprise_project_id`
+      - `+ dedicated_access_address_ipv6`
+      - `+ project_resource_type`
+      - `+ vpc_config_infos`
+      - `+ third_gateway_info`
+      - `+ dc_vnc_vpcep_id`
+      - `+ status: enum value [RECYCLING,RECYCLED,RECYCLE_FAILED]`
+  - **UpdateWorkspace**
+    - 请求参数变更
+      - `+ operate_type`
+      - `+ auth_type`
+      - `+ third_gateway_info`
+      - `+ adn_conflict_network`
+      - `+ vpc_config_infos`
+      - `+ apply_shared_vpc_dedicated_param`
+      - `+ is_authorized_install_agent`
+      - `+ enable_user_create_snapshot`
+      - `+ is_support_ipv6`
+      - `+ apply_dedicated_standby_network_param.site_id`
+  - **ApplyWorkspace**
+    - 请求参数变更
+      - `+ auth_type`
+      - `+ third_gateway_info`
+      - `+ apply_shared_vpc_dedicated_param`
+      - `+ availability_zone`
+      - `+ publicip_type`
+      - `+ assist_auth_config`
+      - `+ site_configs`
+      - `+ enterprise_project_id`
+  - **ListMetricsTrend**
+    - 请求参数变更
+      - `+ period: enum value [MIN,5MIN]`
+  - **CreateDesktopPool**
+    - 响应参数变更
+      - `+ maxProvisionTime`
+      - `+ getJobEndpoint`
+      - `+ periodicQueryTime`
+      - `+ cbcJobId`
+      - `+ minProvisionTime`
+  - **ShowDesktopDetail**
+    - 响应参数变更
+      - `+ desktop.os_host_name`
+      - `+ desktop.ipv4`
+      - `+ desktop.ipv6`
+      - `+ desktop.resource_type`
+      - `+ desktop.in_maintenance_mode`
+      - `+ desktop.share_resource_sku`
+      - `+ desktop.join_domain`
+      - `+ desktop.deh_id`
+      - `+ desktop.platform_kind`
+      - `+ desktop.is_support_internet`
+      - `+ desktop.internet_mode_list`
+      - `+ desktop.need_apply_adn`
+      - `+ desktop.desktop_isv`
+      - `+ desktop.creation_type`
+      - `+ desktop.root_resource_id`
+      - `+ desktop.hour_package_info`
+      - `+ desktop.root_volume.encrypt_flag`
+      - `+ desktop.root_volume.kms_key`
+      - `+ desktop.root_volume.key_alias`
+      - `+ desktop.root_volume.kms_grant_id`
+      - `+ desktop.root_volume.cluster_id`
+      - `+ desktop.root_volume.resource_spec_code`
+      - `+ desktop.product.architecture`
+      - `+ desktop.product.cpu_desc`
+      - `+ desktop.product.is_gpu`
+      - `+ desktop.product.package_type`
+      - `+ desktop.product.system_disk_type`
+      - `+ desktop.product.system_disk_size`
+      - `+ desktop.product.gpu_desc`
+      - `+ desktop.product.contain_data_disk`
+      - `+ desktop.product.resource_type`
+      - `+ desktop.product.cloud_service_type`
+      - `+ desktop.product.volume_product_type`
+      - `+ desktop.product.status`
+      - `+ desktop.product.sub_product_list`
+  - **ListDesktopsDetail**
+    - 请求参数变更
+      - `+ sids`
+      - `+ login_status`
+      - `+ fuzzy_query`
+      - `+ is_share_desktop`
+      - `+ is_support_internet`
+      - `+ availability_zone`
+    - 响应参数变更
+      - `+ desktops.os_host_name`
+      - `+ desktops.ipv4`
+      - `+ desktops.ipv6`
+      - `+ desktops.resource_type`
+      - `+ desktops.in_maintenance_mode`
+      - `+ desktops.share_resource_sku`
+      - `+ desktops.join_domain`
+      - `+ desktops.deh_id`
+      - `+ desktops.platform_kind`
+      - `+ desktops.is_support_internet`
+      - `+ desktops.internet_mode_list`
+      - `+ desktops.need_apply_adn`
+      - `+ desktops.desktop_isv`
+      - `+ desktops.creation_type`
+      - `+ desktops.root_resource_id`
+      - `+ desktops.hour_package_info`
+      - `+ desktops.root_volume.encrypt_flag`
+      - `+ desktops.root_volume.kms_key`
+      - `+ desktops.root_volume.key_alias`
+      - `+ desktops.root_volume.kms_grant_id`
+      - `+ desktops.root_volume.cluster_id`
+      - `+ desktops.root_volume.resource_spec_code`
+      - `+ desktops.product.architecture`
+      - `+ desktops.product.cpu_desc`
+      - `+ desktops.product.is_gpu`
+      - `+ desktops.product.package_type`
+      - `+ desktops.product.system_disk_type`
+      - `+ desktops.product.system_disk_size`
+      - `+ desktops.product.gpu_desc`
+      - `+ desktops.product.contain_data_disk`
+      - `+ desktops.product.resource_type`
+      - `+ desktops.product.cloud_service_type`
+      - `+ desktops.product.volume_product_type`
+      - `+ desktops.product.status`
+      - `+ desktops.product.sub_product_list`
+  - **ListPoolDesktopsDetail**
+    - 响应参数变更
+      - `+ pool_desktops.os_host_name`
+      - `+ pool_desktops.ipv4`
+      - `+ pool_desktops.ipv6`
+      - `+ pool_desktops.resource_type`
+      - `+ pool_desktops.in_maintenance_mode`
+      - `+ pool_desktops.share_resource_sku`
+      - `+ pool_desktops.join_domain`
+      - `+ pool_desktops.deh_id`
+      - `+ pool_desktops.platform_kind`
+      - `+ pool_desktops.is_support_internet`
+      - `+ pool_desktops.internet_mode_list`
+      - `+ pool_desktops.need_apply_adn`
+      - `+ pool_desktops.desktop_isv`
+      - `+ pool_desktops.creation_type`
+      - `+ pool_desktops.root_resource_id`
+      - `+ pool_desktops.hour_package_info`
+      - `+ pool_desktops.root_volume.encrypt_flag`
+      - `+ pool_desktops.root_volume.kms_key`
+      - `+ pool_desktops.root_volume.key_alias`
+      - `+ pool_desktops.root_volume.kms_grant_id`
+      - `+ pool_desktops.root_volume.cluster_id`
+      - `+ pool_desktops.root_volume.resource_spec_code`
+      - `+ pool_desktops.product.architecture`
+      - `+ pool_desktops.product.cpu_desc`
+      - `+ pool_desktops.product.is_gpu`
+      - `+ pool_desktops.product.package_type`
+      - `+ pool_desktops.product.system_disk_type`
+      - `+ pool_desktops.product.system_disk_size`
+      - `+ pool_desktops.product.gpu_desc`
+      - `+ pool_desktops.product.contain_data_disk`
+      - `+ pool_desktops.product.resource_type`
+      - `+ pool_desktops.product.cloud_service_type`
+      - `+ pool_desktops.product.volume_product_type`
+      - `+ pool_desktops.product.status`
+      - `+ pool_desktops.product.sub_product_list`
+
+### HuaweiCloud SDK WorkspaceApp
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `DisassociateAppGroup`
+    - `BatchEnableApp`
+    - `BatchDisableApp`
+    - `CreateBucketOrAcl`
+    - `ListAuthorizationMailRecord`
+    - `SendAuthorizationMail`
+    - `SendAuthorizedMail`
+    - `ShowScalingPolicy`
+    - `CreateOrUpdateScalingPolicy`
+    - `DeleteScalingPolicy`
+    - `CountSubJobs`
+    - `ListSubJobs`
+    - `BatchDeleteAppSubJobs`
+    - `BatchReinstallServer`
+    - `BatchChangeServerImage`
+    - `BatchChangeServerMaintainMode`
+    - `BatchUpgradeHdaVersion`
+    - `ListServerHdaDetails`
+    - `ShowAccessAgentLatestVersion`
+    - `ListServerHdaUpgradeRecords`
+    - `ShowServerMetricData`
+    - `ListAccessAgentLatestVersion`
+    - `ShowServerGroupTag`
+    - `ListServerGroupTag`
+    - `CreateServerGroupTags`
+    - `DeleteServerGroupTags`
+    - `BatchCreateServerGroupTags`
+    - `BatchDeleteServerGroupTags`
+    - `ListTenantServerGroups`
+    - `ShowServerGroupRestrict`
+    - `ShowServerGroupState`
+    - `ListScheduleTasks`
+    - `CreateScheduleTask`
+    - `ShowScheduleTask`
+    - `DeleteScheduleTask`
+    - `UpdateScheduleTask`
+    - `BatchDeleteScheduleTask`
+    - `ListTaskExecuteHistory`
+    - `ListTaskExecuteDetail`
+    - `ListFutureExecutions`
+    - `CreateOrder`
+    - `ListAz`
+    - `ListCorpConfigInfo`
+    - `ListTenantProfile`
+    - `InitializeTenant`
+    - `ListImageJobs`
+    - `ListImageSubJobs`
+    - `BatchDeleteImageSubJobs`
+    - `ListSfs3Storage`
+    - `BatchDeletePersistentStorage`
+    - `ListPolicyGroupDetailInfo`
+    - `ListPolicyOfPolicyGroup`
+    - `ShowServer`
+    - `DeleteServer`
+    - `ShowImageServer`
+    - `ShowAppGroupDetail`
+    - `DeleteAppGroup`
+    - `ShowAppDetail`
+    - `DeleteAppIcon`
+    - `DeleteWarehouseApp`
+    - `ShowServerGroup`
+    - `ShowSessionTypes`
+    - `ShowPolicyGroup`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListAppConnection**
+    - 请求参数变更
+      - `+ public_ip`
+    - 响应参数变更
+      - `+ items.public_ip`
+      - `+ items.transaction_id`
+      - `+ items.end_time`
+      - `+ items.aps_instance_id`
+      - `+ items.aps_instance_name`
+      - `+ items.aps_host_id`
+      - `+ items.primary_server_group_id`
+      - `+ items.secondary_server_group_id`
+  - **ListUserConnection**
+    - 请求参数变更
+      - `+ public_ip`
+    - 响应参数变更
+      - `+ items.public_ip`
+  - **ListSessionByUserName**
+    - 响应参数变更
+      - `+ session_info_list.public_ip`
+  - **ListSessions**
+    - 请求参数变更
+      - `+ public_ip`
+    - 响应参数变更
+      - `+ items.public_ip`
+      - `+ items.primary_server_group_id`
+      - `+ items.secondary_server_group_id`
+  - **AuthorizeObs**
+    - 响应参数变更
+      - `+ roam_actions`
+      - `+ actions`
+      - `+ policy_statement_id`
+      - `+ policy.statement.policy_statement_id`
+      - `+ policy.statement.actions`
+      - `+ policy.statement.roam_actions`
+      - `- policy.statement.effect`
+      - `- policy.statement.action`
+      - `- policy.statement.resource`
+  - **ListServers**
+    - 请求参数变更
+      - `+ machine_name`
+      - `+ ip_addr`
+
 # 3.1.130 2025-01-02
 
 ### HuaweiCloud SDK CES

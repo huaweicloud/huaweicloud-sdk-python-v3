@@ -36,6 +36,7 @@ class AppSession:
         'client_mac': 'str',
         'client_name': 'str',
         'client_ip': 'str',
+        'public_ip': 'str',
         'client_version': 'str',
         'client_type': 'str',
         'agent_version': 'str',
@@ -66,6 +67,7 @@ class AppSession:
         'client_mac': 'client_mac',
         'client_name': 'client_name',
         'client_ip': 'client_ip',
+        'public_ip': 'public_ip',
         'client_version': 'client_version',
         'client_type': 'client_type',
         'agent_version': 'agent_version',
@@ -76,7 +78,7 @@ class AppSession:
         'tenant_id': 'tenant_id'
     }
 
-    def __init__(self, id=None, session_stamp=None, os_session_id=None, protocol_type=None, login_user=None, session_type=None, app_group_id=None, app_server_group_id=None, pre_conn_time=None, start_time=None, end_time=None, status_continue_time=None, machine_sid=None, machine_name=None, session_state=None, app_name=None, client_mac=None, client_name=None, client_ip=None, client_version=None, client_type=None, agent_version=None, vm_ip=None, failed_reason=None, failed_code=None, last_update_status_time=None, tenant_id=None):
+    def __init__(self, id=None, session_stamp=None, os_session_id=None, protocol_type=None, login_user=None, session_type=None, app_group_id=None, app_server_group_id=None, pre_conn_time=None, start_time=None, end_time=None, status_continue_time=None, machine_sid=None, machine_name=None, session_state=None, app_name=None, client_mac=None, client_name=None, client_ip=None, public_ip=None, client_version=None, client_type=None, agent_version=None, vm_ip=None, failed_reason=None, failed_code=None, last_update_status_time=None, tenant_id=None):
         """AppSession
 
         The model defined in huaweicloud sdk
@@ -119,6 +121,8 @@ class AppSession:
         :type client_name: str
         :param client_ip: 客户端IP。
         :type client_ip: str
+        :param public_ip: 客户端出口ip。
+        :type public_ip: str
         :param client_version: 客户端版本。
         :type client_version: str
         :param client_type: 客户端类型。
@@ -158,6 +162,7 @@ class AppSession:
         self._client_mac = None
         self._client_name = None
         self._client_ip = None
+        self._public_ip = None
         self._client_version = None
         self._client_type = None
         self._agent_version = None
@@ -206,6 +211,8 @@ class AppSession:
             self.client_name = client_name
         if client_ip is not None:
             self.client_ip = client_ip
+        if public_ip is not None:
+            self.public_ip = public_ip
         if client_version is not None:
             self.client_version = client_version
         if client_type is not None:
@@ -640,6 +647,28 @@ class AppSession:
         :type client_ip: str
         """
         self._client_ip = client_ip
+
+    @property
+    def public_ip(self):
+        """Gets the public_ip of this AppSession.
+
+        客户端出口ip。
+
+        :return: The public_ip of this AppSession.
+        :rtype: str
+        """
+        return self._public_ip
+
+    @public_ip.setter
+    def public_ip(self, public_ip):
+        """Sets the public_ip of this AppSession.
+
+        客户端出口ip。
+
+        :param public_ip: The public_ip of this AppSession.
+        :type public_ip: str
+        """
+        self._public_ip = public_ip
 
     @property
     def client_version(self):

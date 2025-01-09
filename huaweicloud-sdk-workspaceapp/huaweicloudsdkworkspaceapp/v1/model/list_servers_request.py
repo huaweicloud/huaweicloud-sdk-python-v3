@@ -21,6 +21,8 @@ class ListServersRequest:
         'limit': 'int',
         'server_group_id': 'str',
         'server_name': 'str',
+        'machine_name': 'str',
+        'ip_addr': 'str',
         'server_id': 'str',
         'maintain_status': 'str',
         'scaling_auto_create': 'str'
@@ -31,12 +33,14 @@ class ListServersRequest:
         'limit': 'limit',
         'server_group_id': 'server_group_id',
         'server_name': 'server_name',
+        'machine_name': 'machine_name',
+        'ip_addr': 'ip_addr',
         'server_id': 'server_id',
         'maintain_status': 'maintain_status',
         'scaling_auto_create': 'scaling_auto_create'
     }
 
-    def __init__(self, offset=None, limit=None, server_group_id=None, server_name=None, server_id=None, maintain_status=None, scaling_auto_create=None):
+    def __init__(self, offset=None, limit=None, server_group_id=None, server_name=None, machine_name=None, ip_addr=None, server_id=None, maintain_status=None, scaling_auto_create=None):
         """ListServersRequest
 
         The model defined in huaweicloud sdk
@@ -49,6 +53,10 @@ class ListServersRequest:
         :type server_group_id: str
         :param server_name: 服务器名称，支持部分匹配。
         :type server_name: str
+        :param machine_name: 机器名称，支持部分匹配。
+        :type machine_name: str
+        :param ip_addr: ip地址，支持部分匹配。
+        :type ip_addr: str
         :param server_id: 服务器唯一标识。
         :type server_id: str
         :param maintain_status: 服务器维护状态： - true : 维护态的实例。 - false: 非维护态的实例。
@@ -63,6 +71,8 @@ class ListServersRequest:
         self._limit = None
         self._server_group_id = None
         self._server_name = None
+        self._machine_name = None
+        self._ip_addr = None
         self._server_id = None
         self._maintain_status = None
         self._scaling_auto_create = None
@@ -76,6 +86,10 @@ class ListServersRequest:
             self.server_group_id = server_group_id
         if server_name is not None:
             self.server_name = server_name
+        if machine_name is not None:
+            self.machine_name = machine_name
+        if ip_addr is not None:
+            self.ip_addr = ip_addr
         if server_id is not None:
             self.server_id = server_id
         if maintain_status is not None:
@@ -170,6 +184,50 @@ class ListServersRequest:
         :type server_name: str
         """
         self._server_name = server_name
+
+    @property
+    def machine_name(self):
+        """Gets the machine_name of this ListServersRequest.
+
+        机器名称，支持部分匹配。
+
+        :return: The machine_name of this ListServersRequest.
+        :rtype: str
+        """
+        return self._machine_name
+
+    @machine_name.setter
+    def machine_name(self, machine_name):
+        """Sets the machine_name of this ListServersRequest.
+
+        机器名称，支持部分匹配。
+
+        :param machine_name: The machine_name of this ListServersRequest.
+        :type machine_name: str
+        """
+        self._machine_name = machine_name
+
+    @property
+    def ip_addr(self):
+        """Gets the ip_addr of this ListServersRequest.
+
+        ip地址，支持部分匹配。
+
+        :return: The ip_addr of this ListServersRequest.
+        :rtype: str
+        """
+        return self._ip_addr
+
+    @ip_addr.setter
+    def ip_addr(self, ip_addr):
+        """Sets the ip_addr of this ListServersRequest.
+
+        ip地址，支持部分匹配。
+
+        :param ip_addr: The ip_addr of this ListServersRequest.
+        :type ip_addr: str
+        """
+        self._ip_addr = ip_addr
 
     @property
     def server_id(self):
