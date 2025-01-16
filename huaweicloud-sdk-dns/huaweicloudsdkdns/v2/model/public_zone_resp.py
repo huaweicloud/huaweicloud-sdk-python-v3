@@ -67,7 +67,7 @@ class PublicZoneResp:
         :type name: str
         :param description: 对zone的描述信息。
         :type description: str
-        :param email: 管理该zone的管理员邮箱。
+        :param email: 管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
         :type email: str
         :param zone_type: zone类型，公网（public）。
         :type zone_type: str
@@ -223,7 +223,7 @@ class PublicZoneResp:
     def email(self):
         """Gets the email of this PublicZoneResp.
 
-        管理该zone的管理员邮箱。
+        管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
 
         :return: The email of this PublicZoneResp.
         :rtype: str
@@ -234,7 +234,7 @@ class PublicZoneResp:
     def email(self, email):
         """Sets the email of this PublicZoneResp.
 
-        管理该zone的管理员邮箱。
+        管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
 
         :param email: The email of this PublicZoneResp.
         :type email: str

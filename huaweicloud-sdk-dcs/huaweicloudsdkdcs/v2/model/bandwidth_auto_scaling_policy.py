@@ -65,8 +65,7 @@ class BandwidthAutoScalingPolicy:
 
         self.window_size = window_size
         self.bandwidth_usage_upper_threshold = bandwidth_usage_upper_threshold
-        if scale_out_cooldown is not None:
-            self.scale_out_cooldown = scale_out_cooldown
+        self.scale_out_cooldown = scale_out_cooldown
         if scale_in_enabled is not None:
             self.scale_in_enabled = scale_in_enabled
         if bandwidth_usage_lower_threshold is not None:

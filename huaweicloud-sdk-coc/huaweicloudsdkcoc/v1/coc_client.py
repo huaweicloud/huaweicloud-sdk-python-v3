@@ -623,6 +623,79 @@ class CocClient(Client):
 
         return http_info
 
+    def list_prr_template(self, request):
+        """查询PRR模板列表
+
+        查询PRR模板列表
+        
+        limit最大为100
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListPrrTemplate
+        :type request: :class:`huaweicloudsdkcoc.v1.ListPrrTemplateRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.ListPrrTemplateResponse`
+        """
+        http_info = self._list_prr_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_prr_template_invoker(self, request):
+        http_info = self._list_prr_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_prr_template_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/prr-template",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPrrTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'application_type' in local_var_params:
+            query_params.append(('application_type', local_var_params['application_type']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def get_script_job_batch(self, request):
         """展示批次详情
 

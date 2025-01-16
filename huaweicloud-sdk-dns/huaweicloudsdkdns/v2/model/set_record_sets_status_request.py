@@ -18,7 +18,7 @@ class SetRecordSetsStatusRequest:
 
     openapi_types = {
         'recordset_id': 'str',
-        'body': 'SetRecordSetsStatusReq'
+        'body': 'SetRecordSetsStatusRequestBody'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class SetRecordSetsStatusRequest:
         :param recordset_id: 待设置Record Set的ID信息。
         :type recordset_id: str
         :param body: Body of the SetRecordSetsStatusRequest
-        :type body: :class:`huaweicloudsdkdns.v2.SetRecordSetsStatusReq`
+        :type body: :class:`huaweicloudsdkdns.v2.SetRecordSetsStatusRequestBody`
         """
         
         
@@ -74,7 +74,7 @@ class SetRecordSetsStatusRequest:
         """Gets the body of this SetRecordSetsStatusRequest.
 
         :return: The body of this SetRecordSetsStatusRequest.
-        :rtype: :class:`huaweicloudsdkdns.v2.SetRecordSetsStatusReq`
+        :rtype: :class:`huaweicloudsdkdns.v2.SetRecordSetsStatusRequestBody`
         """
         return self._body
 
@@ -83,7 +83,7 @@ class SetRecordSetsStatusRequest:
         """Sets the body of this SetRecordSetsStatusRequest.
 
         :param body: The body of this SetRecordSetsStatusRequest.
-        :type body: :class:`huaweicloudsdkdns.v2.SetRecordSetsStatusReq`
+        :type body: :class:`huaweicloudsdkdns.v2.SetRecordSetsStatusRequestBody`
         """
         self._body = body
 

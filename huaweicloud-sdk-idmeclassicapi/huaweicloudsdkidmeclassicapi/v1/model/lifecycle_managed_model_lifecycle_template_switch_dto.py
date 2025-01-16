@@ -19,16 +19,18 @@ class LifecycleManagedModelLifecycleTemplateSwitchDTO:
     openapi_types = {
         'id': 'str',
         'lifecycle_template': 'ObjectReferenceParamDTO',
-        'lifecycle_state': 'ObjectReferenceParamDTO'
+        'lifecycle_state': 'ObjectReferenceParamDTO',
+        'modifier': 'str'
     }
 
     attribute_map = {
         'id': 'id',
         'lifecycle_template': 'lifecycleTemplate',
-        'lifecycle_state': 'lifecycleState'
+        'lifecycle_state': 'lifecycleState',
+        'modifier': 'modifier'
     }
 
-    def __init__(self, id=None, lifecycle_template=None, lifecycle_state=None):
+    def __init__(self, id=None, lifecycle_template=None, lifecycle_state=None, modifier=None):
         """LifecycleManagedModelLifecycleTemplateSwitchDTO
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class LifecycleManagedModelLifecycleTemplateSwitchDTO:
         :type lifecycle_template: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
         :param lifecycle_state: 
         :type lifecycle_state: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
+        :param modifier: **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        :type modifier: str
         """
         
         
@@ -46,11 +50,14 @@ class LifecycleManagedModelLifecycleTemplateSwitchDTO:
         self._id = None
         self._lifecycle_template = None
         self._lifecycle_state = None
+        self._modifier = None
         self.discriminator = None
 
         self.id = id
         self.lifecycle_template = lifecycle_template
         self.lifecycle_state = lifecycle_state
+        if modifier is not None:
+            self.modifier = modifier
 
     @property
     def id(self):
@@ -109,6 +116,28 @@ class LifecycleManagedModelLifecycleTemplateSwitchDTO:
         :type lifecycle_state: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
         """
         self._lifecycle_state = lifecycle_state
+
+    @property
+    def modifier(self):
+        """Gets the modifier of this LifecycleManagedModelLifecycleTemplateSwitchDTO.
+
+        **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+
+        :return: The modifier of this LifecycleManagedModelLifecycleTemplateSwitchDTO.
+        :rtype: str
+        """
+        return self._modifier
+
+    @modifier.setter
+    def modifier(self, modifier):
+        """Sets the modifier of this LifecycleManagedModelLifecycleTemplateSwitchDTO.
+
+        **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+
+        :param modifier: The modifier of this LifecycleManagedModelLifecycleTemplateSwitchDTO.
+        :type modifier: str
+        """
+        self._modifier = modifier
 
     def to_dict(self):
         """Returns the model properties as a dict"""

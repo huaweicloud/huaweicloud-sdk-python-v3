@@ -27,7 +27,9 @@ class CreateCsrResponse(SdkResponse):
         'company_country': 'str',
         'company_province': 'str',
         'company_city': 'str',
-        'company_name': 'str'
+        'company_name': 'str',
+        'create_time': 'int',
+        'update_time': 'int'
     }
 
     attribute_map = {
@@ -40,10 +42,12 @@ class CreateCsrResponse(SdkResponse):
         'company_country': 'company_country',
         'company_province': 'company_province',
         'company_city': 'company_city',
-        'company_name': 'company_name'
+        'company_name': 'company_name',
+        'create_time': 'create_time',
+        'update_time': 'update_time'
     }
 
-    def __init__(self, id=None, name=None, domain_name=None, sans=None, private_key_algo=None, usage=None, company_country=None, company_province=None, company_city=None, company_name=None):
+    def __init__(self, id=None, name=None, domain_name=None, sans=None, private_key_algo=None, usage=None, company_country=None, company_province=None, company_city=None, company_name=None, create_time=None, update_time=None):
         """CreateCsrResponse
 
         The model defined in huaweicloud sdk
@@ -68,6 +72,10 @@ class CreateCsrResponse(SdkResponse):
         :type company_city: str
         :param company_name: 公司名称，当“usage”取值为“ENTERPRISE”时，本参数必填。
         :type company_name: str
+        :param create_time: CSR创建时间。
+        :type create_time: int
+        :param update_time: CSR更新时间。
+        :type update_time: int
         """
         
         super(CreateCsrResponse, self).__init__()
@@ -82,6 +90,8 @@ class CreateCsrResponse(SdkResponse):
         self._company_province = None
         self._company_city = None
         self._company_name = None
+        self._create_time = None
+        self._update_time = None
         self.discriminator = None
 
         if id is not None:
@@ -104,6 +114,10 @@ class CreateCsrResponse(SdkResponse):
             self.company_city = company_city
         if company_name is not None:
             self.company_name = company_name
+        if create_time is not None:
+            self.create_time = create_time
+        if update_time is not None:
+            self.update_time = update_time
 
     @property
     def id(self):
@@ -324,6 +338,50 @@ class CreateCsrResponse(SdkResponse):
         :type company_name: str
         """
         self._company_name = company_name
+
+    @property
+    def create_time(self):
+        """Gets the create_time of this CreateCsrResponse.
+
+        CSR创建时间。
+
+        :return: The create_time of this CreateCsrResponse.
+        :rtype: int
+        """
+        return self._create_time
+
+    @create_time.setter
+    def create_time(self, create_time):
+        """Sets the create_time of this CreateCsrResponse.
+
+        CSR创建时间。
+
+        :param create_time: The create_time of this CreateCsrResponse.
+        :type create_time: int
+        """
+        self._create_time = create_time
+
+    @property
+    def update_time(self):
+        """Gets the update_time of this CreateCsrResponse.
+
+        CSR更新时间。
+
+        :return: The update_time of this CreateCsrResponse.
+        :rtype: int
+        """
+        return self._update_time
+
+    @update_time.setter
+    def update_time(self, update_time):
+        """Sets the update_time of this CreateCsrResponse.
+
+        CSR更新时间。
+
+        :param update_time: The update_time of this CreateCsrResponse.
+        :type update_time: int
+        """
+        self._update_time = update_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

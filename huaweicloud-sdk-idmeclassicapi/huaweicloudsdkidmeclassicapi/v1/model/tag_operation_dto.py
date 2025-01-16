@@ -18,15 +18,17 @@ class TagOperationDTO:
 
     openapi_types = {
         'object_id': 'str',
-        'tag_id': 'str'
+        'tag_id': 'str',
+        'modifier': 'str'
     }
 
     attribute_map = {
         'object_id': 'objectId',
-        'tag_id': 'tagId'
+        'tag_id': 'tagId',
+        'modifier': 'modifier'
     }
 
-    def __init__(self, object_id=None, tag_id=None):
+    def __init__(self, object_id=None, tag_id=None, modifier=None):
         """TagOperationDTO
 
         The model defined in huaweicloud sdk
@@ -35,16 +37,21 @@ class TagOperationDTO:
         :type object_id: str
         :param tag_id: **参数解释：**  标签ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
         :type tag_id: str
+        :param modifier: **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :type modifier: str
         """
         
         
 
         self._object_id = None
         self._tag_id = None
+        self._modifier = None
         self.discriminator = None
 
         self.object_id = object_id
         self.tag_id = tag_id
+        if modifier is not None:
+            self.modifier = modifier
 
     @property
     def object_id(self):
@@ -89,6 +96,28 @@ class TagOperationDTO:
         :type tag_id: str
         """
         self._tag_id = tag_id
+
+    @property
+    def modifier(self):
+        """Gets the modifier of this TagOperationDTO.
+
+        **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+
+        :return: The modifier of this TagOperationDTO.
+        :rtype: str
+        """
+        return self._modifier
+
+    @modifier.setter
+    def modifier(self, modifier):
+        """Sets the modifier of this TagOperationDTO.
+
+        **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+
+        :param modifier: The modifier of this TagOperationDTO.
+        :type modifier: str
+        """
+        self._modifier = modifier
 
     def to_dict(self):
         """Returns the model properties as a dict"""

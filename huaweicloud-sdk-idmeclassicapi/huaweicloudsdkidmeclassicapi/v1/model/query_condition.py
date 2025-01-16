@@ -59,7 +59,7 @@ class QueryCondition:
         :type join_table_alias: str
         :param joiner: **参数解释：**  连接符。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type joiner: str
-        :param operator: **参数解释：**  操作符。  **约束限制：**  不涉及。  **取值范围：**  - &#x3D;：等于查询。 - like：模糊查询。 - customLike：支持输入*或%的模糊查询。 - in：包含查询。 - &lt;：小于查询。 - \\&gt;：大于查询。 - \\&gt;&#x3D;：大于等于查询。 - &lt;&#x3D;：小于等于查询。 - &lt;&gt;：不等于查询。  **默认取值：**  不涉及。 
+        :param operator: **参数解释：**  操作符。  **约束限制：**  不涉及。  **取值范围：**  - &#x3D;：等于查询。 - &lt;：小于查询。 - \\&gt;：大于查询。 - \\&gt;&#x3D;：大于等于查询。 - &lt;&#x3D;：小于等于查询。 - &lt;&gt;：不等于查询。 - startWith：头匹配查询。 - endWith：尾匹配查询。 - like：模糊查询。 - customLike：支持输入*或%的模糊查询。 - in：包含查询。 - not in：排除查询。 - ISNULL：值为空查询。 - NOTNULL：值不为空查询。  **默认取值：**  不涉及。 
         :type operator: str
         :param pre_condition: 
         :type pre_condition: :class:`huaweicloudsdkidmeclassicapi.v1.QueryCondition`
@@ -255,7 +255,7 @@ class QueryCondition:
     def operator(self):
         """Gets the operator of this QueryCondition.
 
-        **参数解释：**  操作符。  **约束限制：**  不涉及。  **取值范围：**  - =：等于查询。 - like：模糊查询。 - customLike：支持输入*或%的模糊查询。 - in：包含查询。 - <：小于查询。 - \\>：大于查询。 - \\>=：大于等于查询。 - <=：小于等于查询。 - <>：不等于查询。  **默认取值：**  不涉及。 
+        **参数解释：**  操作符。  **约束限制：**  不涉及。  **取值范围：**  - =：等于查询。 - <：小于查询。 - \\>：大于查询。 - \\>=：大于等于查询。 - <=：小于等于查询。 - <>：不等于查询。 - startWith：头匹配查询。 - endWith：尾匹配查询。 - like：模糊查询。 - customLike：支持输入*或%的模糊查询。 - in：包含查询。 - not in：排除查询。 - ISNULL：值为空查询。 - NOTNULL：值不为空查询。  **默认取值：**  不涉及。 
 
         :return: The operator of this QueryCondition.
         :rtype: str
@@ -266,7 +266,7 @@ class QueryCondition:
     def operator(self, operator):
         """Sets the operator of this QueryCondition.
 
-        **参数解释：**  操作符。  **约束限制：**  不涉及。  **取值范围：**  - =：等于查询。 - like：模糊查询。 - customLike：支持输入*或%的模糊查询。 - in：包含查询。 - <：小于查询。 - \\>：大于查询。 - \\>=：大于等于查询。 - <=：小于等于查询。 - <>：不等于查询。  **默认取值：**  不涉及。 
+        **参数解释：**  操作符。  **约束限制：**  不涉及。  **取值范围：**  - =：等于查询。 - <：小于查询。 - \\>：大于查询。 - \\>=：大于等于查询。 - <=：小于等于查询。 - <>：不等于查询。 - startWith：头匹配查询。 - endWith：尾匹配查询。 - like：模糊查询。 - customLike：支持输入*或%的模糊查询。 - in：包含查询。 - not in：排除查询。 - ISNULL：值为空查询。 - NOTNULL：值不为空查询。  **默认取值：**  不涉及。 
 
         :param operator: The operator of this QueryCondition.
         :type operator: str

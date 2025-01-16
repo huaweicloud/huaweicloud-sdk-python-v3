@@ -38,7 +38,7 @@ class ListPtrRecordsResponse(SdkResponse):
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`
-        :param floatingips: 弹性IP的PTR记录ID列表信息。
+        :param floatingips: 弹性公网IP的PTR记录ID列表信息。
         :type floatingips: list[:class:`huaweicloudsdkdns.v2.ListPtrRecordsFloatingResp`]
         """
         
@@ -96,7 +96,7 @@ class ListPtrRecordsResponse(SdkResponse):
     def floatingips(self):
         """Gets the floatingips of this ListPtrRecordsResponse.
 
-        弹性IP的PTR记录ID列表信息。
+        弹性公网IP的PTR记录ID列表信息。
 
         :return: The floatingips of this ListPtrRecordsResponse.
         :rtype: list[:class:`huaweicloudsdkdns.v2.ListPtrRecordsFloatingResp`]
@@ -107,7 +107,7 @@ class ListPtrRecordsResponse(SdkResponse):
     def floatingips(self, floatingips):
         """Sets the floatingips of this ListPtrRecordsResponse.
 
-        弹性IP的PTR记录ID列表信息。
+        弹性公网IP的PTR记录ID列表信息。
 
         :param floatingips: The floatingips of this ListPtrRecordsResponse.
         :type floatingips: list[:class:`huaweicloudsdkdns.v2.ListPtrRecordsFloatingResp`]

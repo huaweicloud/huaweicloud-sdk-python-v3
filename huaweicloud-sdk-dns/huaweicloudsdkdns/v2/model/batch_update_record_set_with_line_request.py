@@ -18,7 +18,7 @@ class BatchUpdateRecordSetWithLineRequest:
 
     openapi_types = {
         'zone_id': 'str',
-        'body': 'BatchUpdateRecordSetWithLineReq'
+        'body': 'BatchUpdateRecordSetWithLineRequestBody'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class BatchUpdateRecordSetWithLineRequest:
         :param zone_id: 所属zone的ID。
         :type zone_id: str
         :param body: Body of the BatchUpdateRecordSetWithLineRequest
-        :type body: :class:`huaweicloudsdkdns.v2.BatchUpdateRecordSetWithLineReq`
+        :type body: :class:`huaweicloudsdkdns.v2.BatchUpdateRecordSetWithLineRequestBody`
         """
         
         
@@ -74,7 +74,7 @@ class BatchUpdateRecordSetWithLineRequest:
         """Gets the body of this BatchUpdateRecordSetWithLineRequest.
 
         :return: The body of this BatchUpdateRecordSetWithLineRequest.
-        :rtype: :class:`huaweicloudsdkdns.v2.BatchUpdateRecordSetWithLineReq`
+        :rtype: :class:`huaweicloudsdkdns.v2.BatchUpdateRecordSetWithLineRequestBody`
         """
         return self._body
 
@@ -83,7 +83,7 @@ class BatchUpdateRecordSetWithLineRequest:
         """Sets the body of this BatchUpdateRecordSetWithLineRequest.
 
         :param body: The body of this BatchUpdateRecordSetWithLineRequest.
-        :type body: :class:`huaweicloudsdkdns.v2.BatchUpdateRecordSetWithLineReq`
+        :type body: :class:`huaweicloudsdkdns.v2.BatchUpdateRecordSetWithLineRequestBody`
         """
         self._body = body
 

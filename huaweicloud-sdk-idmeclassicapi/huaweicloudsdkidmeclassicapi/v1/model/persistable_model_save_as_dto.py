@@ -71,7 +71,7 @@ class PersistableModelSaveAsDTO:
         :type source_entity_number: str
         :param source_instance_id: **参数解释：**  源实例的唯一标识（单实例为ID，版本实例为versionId）。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type source_instance_id: str
-        :param need_set_null_attrs: **参数解释：**  置空字段数组。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param need_set_null_attrs: **参数解释：**  将自定义属性（包括基本属性、扩展属性和分类属性）设置为空值，其长度不能超过1000个字符。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type need_set_null_attrs: list[str]
         :param entity_to_save: **参数解释：**  要保存的属性。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type entity_to_save: object
@@ -322,7 +322,7 @@ class PersistableModelSaveAsDTO:
     def need_set_null_attrs(self):
         """Gets the need_set_null_attrs of this PersistableModelSaveAsDTO.
 
-        **参数解释：**  置空字段数组。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  将自定义属性（包括基本属性、扩展属性和分类属性）设置为空值，其长度不能超过1000个字符。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The need_set_null_attrs of this PersistableModelSaveAsDTO.
         :rtype: list[str]
@@ -333,7 +333,7 @@ class PersistableModelSaveAsDTO:
     def need_set_null_attrs(self, need_set_null_attrs):
         """Sets the need_set_null_attrs of this PersistableModelSaveAsDTO.
 
-        **参数解释：**  置空字段数组。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  将自定义属性（包括基本属性、扩展属性和分类属性）设置为空值，其长度不能超过1000个字符。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param need_set_null_attrs: The need_set_null_attrs of this PersistableModelSaveAsDTO.
         :type need_set_null_attrs: list[str]

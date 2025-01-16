@@ -48,7 +48,7 @@ class ListMessageTemplateDetailsResponse(SdkResponse):
         :type message_template_id: str
         :param message_template_name: 模板名称。
         :type message_template_name: str
-        :param protocol: 模板支持的协议类型。  目前支持的协议包括：  “default”：默认协议。  “email”：邮件传输协议。  “sms”：短信传输协议。  “functionstage”：FunctionGraph（函数）传输协议。  “dms”：DMS传输协议。  “http”、“https”：HTTP/HTTPS传输协议。
+        :param protocol: 模板支持的协议类型。  目前支持的协议包括：  “default”：默认协议。  “email”：邮件传输协议。  “sms”：短信传输协议。  “functionstage”：FunctionGraph（函数）传输协议。  “http”、“https”：HTTP/HTTPS传输协议。
         :type protocol: str
         :param tag_names: 模板tag列表。  是消息模板“{}”内的字段，在具体使用消息模板时，可根据实际情况替为该字段赋值。
         :type tag_names: list[str]
@@ -139,7 +139,7 @@ class ListMessageTemplateDetailsResponse(SdkResponse):
     def protocol(self):
         """Gets the protocol of this ListMessageTemplateDetailsResponse.
 
-        模板支持的协议类型。  目前支持的协议包括：  “default”：默认协议。  “email”：邮件传输协议。  “sms”：短信传输协议。  “functionstage”：FunctionGraph（函数）传输协议。  “dms”：DMS传输协议。  “http”、“https”：HTTP/HTTPS传输协议。
+        模板支持的协议类型。  目前支持的协议包括：  “default”：默认协议。  “email”：邮件传输协议。  “sms”：短信传输协议。  “functionstage”：FunctionGraph（函数）传输协议。  “http”、“https”：HTTP/HTTPS传输协议。
 
         :return: The protocol of this ListMessageTemplateDetailsResponse.
         :rtype: str
@@ -150,7 +150,7 @@ class ListMessageTemplateDetailsResponse(SdkResponse):
     def protocol(self, protocol):
         """Sets the protocol of this ListMessageTemplateDetailsResponse.
 
-        模板支持的协议类型。  目前支持的协议包括：  “default”：默认协议。  “email”：邮件传输协议。  “sms”：短信传输协议。  “functionstage”：FunctionGraph（函数）传输协议。  “dms”：DMS传输协议。  “http”、“https”：HTTP/HTTPS传输协议。
+        模板支持的协议类型。  目前支持的协议包括：  “default”：默认协议。  “email”：邮件传输协议。  “sms”：短信传输协议。  “functionstage”：FunctionGraph（函数）传输协议。  “http”、“https”：HTTP/HTTPS传输协议。
 
         :param protocol: The protocol of this ListMessageTemplateDetailsResponse.
         :type protocol: str

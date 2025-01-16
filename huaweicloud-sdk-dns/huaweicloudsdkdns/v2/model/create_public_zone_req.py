@@ -45,9 +45,9 @@ class CreatePublicZoneReq:
         :type name: str
         :param description: 描述
         :type description: str
-        :param zone_type: Zone类型,取值public。
+        :param zone_type: 域名类型。取值：public。
         :type zone_type: str
-        :param email: 管理该zone的管理员邮箱
+        :param email: 管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
         :type email: str
         :param ttl: 用于填写默认生成的SOA记录中有效缓存时间，以秒为单位.
         :type ttl: int
@@ -130,7 +130,7 @@ class CreatePublicZoneReq:
     def zone_type(self):
         """Gets the zone_type of this CreatePublicZoneReq.
 
-        Zone类型,取值public。
+        域名类型。取值：public。
 
         :return: The zone_type of this CreatePublicZoneReq.
         :rtype: str
@@ -141,7 +141,7 @@ class CreatePublicZoneReq:
     def zone_type(self, zone_type):
         """Sets the zone_type of this CreatePublicZoneReq.
 
-        Zone类型,取值public。
+        域名类型。取值：public。
 
         :param zone_type: The zone_type of this CreatePublicZoneReq.
         :type zone_type: str
@@ -152,7 +152,7 @@ class CreatePublicZoneReq:
     def email(self):
         """Gets the email of this CreatePublicZoneReq.
 
-        管理该zone的管理员邮箱
+        管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
 
         :return: The email of this CreatePublicZoneReq.
         :rtype: str
@@ -163,7 +163,7 @@ class CreatePublicZoneReq:
     def email(self, email):
         """Sets the email of this CreatePublicZoneReq.
 
-        管理该zone的管理员邮箱
+        管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
 
         :param email: The email of this CreatePublicZoneReq.
         :type email: str

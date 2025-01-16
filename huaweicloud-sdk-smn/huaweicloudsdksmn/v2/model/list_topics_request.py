@@ -45,7 +45,7 @@ class ListTopicsRequest:
         :type offset: int
         :param limit:  查询的数量限制。  取值范围：1~100，取值一般为10，20，50。功能说明：每页返回的资源个数。默认值为100。
         :type limit: int
-        :param enterprise_project_id: 企业项目id，默认企业项目id为0。
+        :param enterprise_project_id: 企业项目id。
         :type enterprise_project_id: str
         :param name: 检索的主题名称，完全匹配。
         :type name: str
@@ -131,7 +131,7 @@ class ListTopicsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListTopicsRequest.
 
-        企业项目id，默认企业项目id为0。
+        企业项目id。
 
         :return: The enterprise_project_id of this ListTopicsRequest.
         :rtype: str
@@ -142,7 +142,7 @@ class ListTopicsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListTopicsRequest.
 
-        企业项目id，默认企业项目id为0。
+        企业项目id。
 
         :param enterprise_project_id: The enterprise_project_id of this ListTopicsRequest.
         :type enterprise_project_id: str

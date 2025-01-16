@@ -17,6 +17,7 @@ class VehicleLicenseResult:
     sensitive_list = []
 
     openapi_types = {
+        'type': 'str',
         'number': 'str',
         'vehicle_type': 'str',
         'name': 'str',
@@ -40,11 +41,15 @@ class VehicleLicenseResult:
         'code_number': 'str',
         'text_location': 'object',
         'energy_type': 'str',
+        'color': 'str',
+        'mandatory_scrapping_date': 'str',
+        'status': 'list[str]',
         'front': 'VehicleLicenseFront',
         'back': 'VehicleLicenseback'
     }
 
     attribute_map = {
+        'type': 'type',
         'number': 'number',
         'vehicle_type': 'vehicle_type',
         'name': 'name',
@@ -68,15 +73,20 @@ class VehicleLicenseResult:
         'code_number': 'code_number',
         'text_location': 'text_location',
         'energy_type': 'energy_type',
+        'color': 'color',
+        'mandatory_scrapping_date': 'mandatory_scrapping_date',
+        'status': 'status',
         'front': 'front',
         'back': 'back'
     }
 
-    def __init__(self, number=None, vehicle_type=None, name=None, address=None, use_character=None, model=None, engine_no=None, vin=None, register_date=None, issue_date=None, issuing_authority=None, file_no=None, approved_passengers=None, gross_mass=None, unladen_mass=None, approved_load=None, dimension=None, traction_mass=None, remarks=None, inspection_record=None, code_number=None, text_location=None, energy_type=None, front=None, back=None):
+    def __init__(self, type=None, number=None, vehicle_type=None, name=None, address=None, use_character=None, model=None, engine_no=None, vin=None, register_date=None, issue_date=None, issuing_authority=None, file_no=None, approved_passengers=None, gross_mass=None, unladen_mass=None, approved_load=None, dimension=None, traction_mass=None, remarks=None, inspection_record=None, code_number=None, text_location=None, energy_type=None, color=None, mandatory_scrapping_date=None, status=None, front=None, back=None):
         """VehicleLicenseResult
 
         The model defined in huaweicloud sdk
 
+        :param type: 行驶证类型：  - normal: 纸质行驶证  - electronic: 电子行驶证 
+        :type type: str
         :param number: 号牌号码。 
         :type number: str
         :param vehicle_type: 车辆类型。 
@@ -123,6 +133,12 @@ class VehicleLicenseResult:
         :type text_location: object
         :param energy_type: 能源类型。 
         :type energy_type: str
+        :param color: 车身颜色。 
+        :type color: str
+        :param mandatory_scrapping_date: 强制报废日期。 
+        :type mandatory_scrapping_date: str
+        :param status: 状态。 
+        :type status: list[str]
         :param front: 
         :type front: :class:`huaweicloudsdkocr.v1.VehicleLicenseFront`
         :param back: 
@@ -131,6 +147,7 @@ class VehicleLicenseResult:
         
         
 
+        self._type = None
         self._number = None
         self._vehicle_type = None
         self._name = None
@@ -154,10 +171,15 @@ class VehicleLicenseResult:
         self._code_number = None
         self._text_location = None
         self._energy_type = None
+        self._color = None
+        self._mandatory_scrapping_date = None
+        self._status = None
         self._front = None
         self._back = None
         self.discriminator = None
 
+        if type is not None:
+            self.type = type
         if number is not None:
             self.number = number
         if vehicle_type is not None:
@@ -204,10 +226,38 @@ class VehicleLicenseResult:
             self.text_location = text_location
         if energy_type is not None:
             self.energy_type = energy_type
+        if color is not None:
+            self.color = color
+        if mandatory_scrapping_date is not None:
+            self.mandatory_scrapping_date = mandatory_scrapping_date
+        if status is not None:
+            self.status = status
         if front is not None:
             self.front = front
         if back is not None:
             self.back = back
+
+    @property
+    def type(self):
+        """Gets the type of this VehicleLicenseResult.
+
+        行驶证类型：  - normal: 纸质行驶证  - electronic: 电子行驶证 
+
+        :return: The type of this VehicleLicenseResult.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this VehicleLicenseResult.
+
+        行驶证类型：  - normal: 纸质行驶证  - electronic: 电子行驶证 
+
+        :param type: The type of this VehicleLicenseResult.
+        :type type: str
+        """
+        self._type = type
 
     @property
     def number(self):
@@ -714,6 +764,72 @@ class VehicleLicenseResult:
         :type energy_type: str
         """
         self._energy_type = energy_type
+
+    @property
+    def color(self):
+        """Gets the color of this VehicleLicenseResult.
+
+        车身颜色。 
+
+        :return: The color of this VehicleLicenseResult.
+        :rtype: str
+        """
+        return self._color
+
+    @color.setter
+    def color(self, color):
+        """Sets the color of this VehicleLicenseResult.
+
+        车身颜色。 
+
+        :param color: The color of this VehicleLicenseResult.
+        :type color: str
+        """
+        self._color = color
+
+    @property
+    def mandatory_scrapping_date(self):
+        """Gets the mandatory_scrapping_date of this VehicleLicenseResult.
+
+        强制报废日期。 
+
+        :return: The mandatory_scrapping_date of this VehicleLicenseResult.
+        :rtype: str
+        """
+        return self._mandatory_scrapping_date
+
+    @mandatory_scrapping_date.setter
+    def mandatory_scrapping_date(self, mandatory_scrapping_date):
+        """Sets the mandatory_scrapping_date of this VehicleLicenseResult.
+
+        强制报废日期。 
+
+        :param mandatory_scrapping_date: The mandatory_scrapping_date of this VehicleLicenseResult.
+        :type mandatory_scrapping_date: str
+        """
+        self._mandatory_scrapping_date = mandatory_scrapping_date
+
+    @property
+    def status(self):
+        """Gets the status of this VehicleLicenseResult.
+
+        状态。 
+
+        :return: The status of this VehicleLicenseResult.
+        :rtype: list[str]
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this VehicleLicenseResult.
+
+        状态。 
+
+        :param status: The status of this VehicleLicenseResult.
+        :type status: list[str]
+        """
+        self._status = status
 
     @property
     def front(self):

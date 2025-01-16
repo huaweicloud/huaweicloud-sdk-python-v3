@@ -26,7 +26,9 @@ class BandwidthInfo:
         'expand_effect_time': 'int',
         'expand_interval_time': 'int',
         'max_expand_count': 'int',
-        'task_running': 'bool'
+        'task_running': 'bool',
+        'assured_bandwidth': 'int',
+        'max_bandwidth_for_node': 'int'
     }
 
     attribute_map = {
@@ -39,10 +41,12 @@ class BandwidthInfo:
         'expand_effect_time': 'expand_effect_time',
         'expand_interval_time': 'expand_interval_time',
         'max_expand_count': 'max_expand_count',
-        'task_running': 'task_running'
+        'task_running': 'task_running',
+        'assured_bandwidth': 'assured_bandwidth',
+        'max_bandwidth_for_node': 'max_bandwidth_for_node'
     }
 
-    def __init__(self, begin_time=None, end_time=None, current_time=None, bandwidth=None, next_expand_time=None, expand_count=None, expand_effect_time=None, expand_interval_time=None, max_expand_count=None, task_running=None):
+    def __init__(self, begin_time=None, end_time=None, current_time=None, bandwidth=None, next_expand_time=None, expand_count=None, expand_effect_time=None, expand_interval_time=None, max_expand_count=None, task_running=None, assured_bandwidth=None, max_bandwidth_for_node=None):
         """BandwidthInfo
 
         The model defined in huaweicloud sdk
@@ -67,6 +71,10 @@ class BandwidthInfo:
         :type max_expand_count: int
         :param task_running: 任务是否运行
         :type task_running: bool
+        :param assured_bandwidth: **参数解释**： 实例基准带宽。 **取值范围**： 不涉及。 
+        :type assured_bandwidth: int
+        :param max_bandwidth_for_node: **参数解释**： 节点最大带宽。 **取值范围**： 不涉及。 
+        :type max_bandwidth_for_node: int
         """
         
         
@@ -81,6 +89,8 @@ class BandwidthInfo:
         self._expand_interval_time = None
         self._max_expand_count = None
         self._task_running = None
+        self._assured_bandwidth = None
+        self._max_bandwidth_for_node = None
         self.discriminator = None
 
         if begin_time is not None:
@@ -103,6 +113,10 @@ class BandwidthInfo:
             self.max_expand_count = max_expand_count
         if task_running is not None:
             self.task_running = task_running
+        if assured_bandwidth is not None:
+            self.assured_bandwidth = assured_bandwidth
+        if max_bandwidth_for_node is not None:
+            self.max_bandwidth_for_node = max_bandwidth_for_node
 
     @property
     def begin_time(self):
@@ -323,6 +337,50 @@ class BandwidthInfo:
         :type task_running: bool
         """
         self._task_running = task_running
+
+    @property
+    def assured_bandwidth(self):
+        """Gets the assured_bandwidth of this BandwidthInfo.
+
+        **参数解释**： 实例基准带宽。 **取值范围**： 不涉及。 
+
+        :return: The assured_bandwidth of this BandwidthInfo.
+        :rtype: int
+        """
+        return self._assured_bandwidth
+
+    @assured_bandwidth.setter
+    def assured_bandwidth(self, assured_bandwidth):
+        """Sets the assured_bandwidth of this BandwidthInfo.
+
+        **参数解释**： 实例基准带宽。 **取值范围**： 不涉及。 
+
+        :param assured_bandwidth: The assured_bandwidth of this BandwidthInfo.
+        :type assured_bandwidth: int
+        """
+        self._assured_bandwidth = assured_bandwidth
+
+    @property
+    def max_bandwidth_for_node(self):
+        """Gets the max_bandwidth_for_node of this BandwidthInfo.
+
+        **参数解释**： 节点最大带宽。 **取值范围**： 不涉及。 
+
+        :return: The max_bandwidth_for_node of this BandwidthInfo.
+        :rtype: int
+        """
+        return self._max_bandwidth_for_node
+
+    @max_bandwidth_for_node.setter
+    def max_bandwidth_for_node(self, max_bandwidth_for_node):
+        """Sets the max_bandwidth_for_node of this BandwidthInfo.
+
+        **参数解释**： 节点最大带宽。 **取值范围**： 不涉及。 
+
+        :param max_bandwidth_for_node: The max_bandwidth_for_node of this BandwidthInfo.
+        :type max_bandwidth_for_node: int
+        """
+        self._max_bandwidth_for_node = max_bandwidth_for_node
 
     def to_dict(self):
         """Returns the model properties as a dict"""

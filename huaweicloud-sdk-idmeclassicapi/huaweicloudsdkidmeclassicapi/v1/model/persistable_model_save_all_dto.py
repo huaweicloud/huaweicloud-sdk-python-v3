@@ -55,7 +55,7 @@ class PersistableModelSaveAllDTO:
         :type last_update_time: str
         :param modifier: **参数解释：**  更新者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type modifier: str
-        :param need_set_null_attrs: **参数解释：**  设置NULL值的属性名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param need_set_null_attrs: **参数解释：**  将自定义属性（包括基本属性、扩展属性和分类属性）设置为空值，其长度不能超过1000个字符。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type need_set_null_attrs: list[str]
         :param rdm_extension_type: **参数解释：**  扩展类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type rdm_extension_type: str
@@ -211,7 +211,7 @@ class PersistableModelSaveAllDTO:
     def need_set_null_attrs(self):
         """Gets the need_set_null_attrs of this PersistableModelSaveAllDTO.
 
-        **参数解释：**  设置NULL值的属性名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  将自定义属性（包括基本属性、扩展属性和分类属性）设置为空值，其长度不能超过1000个字符。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The need_set_null_attrs of this PersistableModelSaveAllDTO.
         :rtype: list[str]
@@ -222,7 +222,7 @@ class PersistableModelSaveAllDTO:
     def need_set_null_attrs(self, need_set_null_attrs):
         """Sets the need_set_null_attrs of this PersistableModelSaveAllDTO.
 
-        **参数解释：**  设置NULL值的属性名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  将自定义属性（包括基本属性、扩展属性和分类属性）设置为空值，其长度不能超过1000个字符。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param need_set_null_attrs: The need_set_null_attrs of this PersistableModelSaveAllDTO.
         :type need_set_null_attrs: list[str]

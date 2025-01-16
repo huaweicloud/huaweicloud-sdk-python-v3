@@ -19,16 +19,18 @@ class VersionModelVersionUpdateDTO:
     openapi_types = {
         'id': 'str',
         'iteration': 'int',
-        'version': 'str'
+        'version': 'str',
+        'modifier': 'str'
     }
 
     attribute_map = {
         'id': 'id',
         'iteration': 'iteration',
-        'version': 'version'
+        'version': 'version',
+        'modifier': 'modifier'
     }
 
-    def __init__(self, id=None, iteration=None, version=None):
+    def __init__(self, id=None, iteration=None, version=None, modifier=None):
         """VersionModelVersionUpdateDTO
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class VersionModelVersionUpdateDTO:
         :type iteration: int
         :param version: **参数解释：**  版本号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type version: str
+        :param modifier: **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :type modifier: str
         """
         
         
@@ -46,12 +50,15 @@ class VersionModelVersionUpdateDTO:
         self._id = None
         self._iteration = None
         self._version = None
+        self._modifier = None
         self.discriminator = None
 
         self.id = id
         if iteration is not None:
             self.iteration = iteration
         self.version = version
+        if modifier is not None:
+            self.modifier = modifier
 
     @property
     def id(self):
@@ -118,6 +125,28 @@ class VersionModelVersionUpdateDTO:
         :type version: str
         """
         self._version = version
+
+    @property
+    def modifier(self):
+        """Gets the modifier of this VersionModelVersionUpdateDTO.
+
+        **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+
+        :return: The modifier of this VersionModelVersionUpdateDTO.
+        :rtype: str
+        """
+        return self._modifier
+
+    @modifier.setter
+    def modifier(self, modifier):
+        """Sets the modifier of this VersionModelVersionUpdateDTO.
+
+        **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+
+        :param modifier: The modifier of this VersionModelVersionUpdateDTO.
+        :type modifier: str
+        """
+        self._modifier = modifier
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -21,7 +21,8 @@ class DbParameter:
         'data_type': 'str',
         'default_value': 'str',
         'value_range': 'str',
-        'description': 'str'
+        'description': 'str',
+        'is_modifiable': 'str'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class DbParameter:
         'data_type': 'data_type',
         'default_value': 'default_value',
         'value_range': 'value_range',
-        'description': 'description'
+        'description': 'description',
+        'is_modifiable': 'is_modifiable'
     }
 
-    def __init__(self, param_name=None, data_type=None, default_value=None, value_range=None, description=None):
+    def __init__(self, param_name=None, data_type=None, default_value=None, value_range=None, description=None, is_modifiable=None):
         """DbParameter
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class DbParameter:
         :type value_range: str
         :param description: 参数描述。
         :type description: str
+        :param is_modifiable: **参数解释**：  新增子任务的场景，用于区分库参数是否支持修改。  **取值范围**：  不涉及。
+        :type is_modifiable: str
         """
         
         
@@ -56,6 +60,7 @@ class DbParameter:
         self._default_value = None
         self._value_range = None
         self._description = None
+        self._is_modifiable = None
         self.discriminator = None
 
         if param_name is not None:
@@ -68,6 +73,8 @@ class DbParameter:
             self.value_range = value_range
         if description is not None:
             self.description = description
+        if is_modifiable is not None:
+            self.is_modifiable = is_modifiable
 
     @property
     def param_name(self):
@@ -178,6 +185,28 @@ class DbParameter:
         :type description: str
         """
         self._description = description
+
+    @property
+    def is_modifiable(self):
+        """Gets the is_modifiable of this DbParameter.
+
+        **参数解释**：  新增子任务的场景，用于区分库参数是否支持修改。  **取值范围**：  不涉及。
+
+        :return: The is_modifiable of this DbParameter.
+        :rtype: str
+        """
+        return self._is_modifiable
+
+    @is_modifiable.setter
+    def is_modifiable(self, is_modifiable):
+        """Sets the is_modifiable of this DbParameter.
+
+        **参数解释**：  新增子任务的场景，用于区分库参数是否支持修改。  **取值范围**：  不涉及。
+
+        :param is_modifiable: The is_modifiable of this DbParameter.
+        :type is_modifiable: str
+        """
+        self._is_modifiable = is_modifiable
 
     def to_dict(self):
         """Returns the model properties as a dict"""

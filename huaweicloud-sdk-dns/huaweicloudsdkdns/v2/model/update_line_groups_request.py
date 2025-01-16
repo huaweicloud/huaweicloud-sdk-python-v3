@@ -18,7 +18,7 @@ class UpdateLineGroupsRequest:
 
     openapi_types = {
         'linegroup_id': 'str',
-        'body': 'UpdateLineGroupsBody'
+        'body': 'UpdateLineGroupsRequestBody'
     }
 
     attribute_map = {
@@ -31,10 +31,10 @@ class UpdateLineGroupsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param linegroup_id: 待更新的线路分组ID。
+        :param linegroup_id: 线路分组ID
         :type linegroup_id: str
         :param body: Body of the UpdateLineGroupsRequest
-        :type body: :class:`huaweicloudsdkdns.v2.UpdateLineGroupsBody`
+        :type body: :class:`huaweicloudsdkdns.v2.UpdateLineGroupsRequestBody`
         """
         
         
@@ -51,7 +51,7 @@ class UpdateLineGroupsRequest:
     def linegroup_id(self):
         """Gets the linegroup_id of this UpdateLineGroupsRequest.
 
-        待更新的线路分组ID。
+        线路分组ID
 
         :return: The linegroup_id of this UpdateLineGroupsRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class UpdateLineGroupsRequest:
     def linegroup_id(self, linegroup_id):
         """Sets the linegroup_id of this UpdateLineGroupsRequest.
 
-        待更新的线路分组ID。
+        线路分组ID
 
         :param linegroup_id: The linegroup_id of this UpdateLineGroupsRequest.
         :type linegroup_id: str
@@ -74,7 +74,7 @@ class UpdateLineGroupsRequest:
         """Gets the body of this UpdateLineGroupsRequest.
 
         :return: The body of this UpdateLineGroupsRequest.
-        :rtype: :class:`huaweicloudsdkdns.v2.UpdateLineGroupsBody`
+        :rtype: :class:`huaweicloudsdkdns.v2.UpdateLineGroupsRequestBody`
         """
         return self._body
 
@@ -83,7 +83,7 @@ class UpdateLineGroupsRequest:
         """Sets the body of this UpdateLineGroupsRequest.
 
         :param body: The body of this UpdateLineGroupsRequest.
-        :type body: :class:`huaweicloudsdkdns.v2.UpdateLineGroupsBody`
+        :type body: :class:`huaweicloudsdkdns.v2.UpdateLineGroupsRequestBody`
         """
         self._body = body
 

@@ -29,7 +29,7 @@ class DeleteCustomLineRequest:
 
         The model defined in huaweicloud sdk
 
-        :param line_id: 解析线路ID。
+        :param line_id: 自定义线路id
         :type line_id: str
         """
         
@@ -44,7 +44,7 @@ class DeleteCustomLineRequest:
     def line_id(self):
         """Gets the line_id of this DeleteCustomLineRequest.
 
-        解析线路ID。
+        自定义线路id
 
         :return: The line_id of this DeleteCustomLineRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class DeleteCustomLineRequest:
     def line_id(self, line_id):
         """Sets the line_id of this DeleteCustomLineRequest.
 
-        解析线路ID。
+        自定义线路id
 
         :param line_id: The line_id of this DeleteCustomLineRequest.
         :type line_id: str

@@ -35,7 +35,8 @@ class CompositeHostResponse:
         'description': 'str',
         'exclusive_ip': 'bool',
         'region': 'str',
-        'server': 'list[WafServer]'
+        'server': 'list[WafServer]',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -57,10 +58,11 @@ class CompositeHostResponse:
         'description': 'description',
         'exclusive_ip': 'exclusive_ip',
         'region': 'region',
-        'server': 'server'
+        'server': 'server',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, id=None, hostid=None, hostname=None, policyid=None, access_code=None, protect_status=None, access_status=None, proxy=None, timestamp=None, paid_type=None, flag=None, waf_type=None, web_tag=None, access_progress=None, premium_waf_instances=None, description=None, exclusive_ip=None, region=None, server=None):
+    def __init__(self, id=None, hostid=None, hostname=None, policyid=None, access_code=None, protect_status=None, access_status=None, proxy=None, timestamp=None, paid_type=None, flag=None, waf_type=None, web_tag=None, access_progress=None, premium_waf_instances=None, description=None, exclusive_ip=None, region=None, server=None, enterprise_project_id=None):
         """CompositeHostResponse
 
         The model defined in huaweicloud sdk
@@ -103,6 +105,8 @@ class CompositeHostResponse:
         :type region: str
         :param server: 防护域名的源站服务器配置信息，只有独享模式域名才返回vpc_id
         :type server: list[:class:`huaweicloudsdkwaf.v1.WafServer`]
+        :param enterprise_project_id: 企业项目id
+        :type enterprise_project_id: str
         """
         
         
@@ -126,6 +130,7 @@ class CompositeHostResponse:
         self._exclusive_ip = None
         self._region = None
         self._server = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         if id is not None:
@@ -166,6 +171,8 @@ class CompositeHostResponse:
             self.region = region
         if server is not None:
             self.server = server
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def id(self):
@@ -580,6 +587,28 @@ class CompositeHostResponse:
         :type server: list[:class:`huaweicloudsdkwaf.v1.WafServer`]
         """
         self._server = server
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this CompositeHostResponse.
+
+        企业项目id
+
+        :return: The enterprise_project_id of this CompositeHostResponse.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this CompositeHostResponse.
+
+        企业项目id
+
+        :param enterprise_project_id: The enterprise_project_id of this CompositeHostResponse.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

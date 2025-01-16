@@ -51,7 +51,7 @@ class CreatePrivateZoneReq:
         :type description: str
         :param zone_type: 域名类型。取值：private。
         :type zone_type: str
-        :param email: 管理该zone的管理员邮箱。
+        :param email: 管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
         :type email: str
         :param ttl: 用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。
         :type ttl: int
@@ -164,7 +164,7 @@ class CreatePrivateZoneReq:
     def email(self):
         """Gets the email of this CreatePrivateZoneReq.
 
-        管理该zone的管理员邮箱。
+        管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
 
         :return: The email of this CreatePrivateZoneReq.
         :rtype: str
@@ -175,7 +175,7 @@ class CreatePrivateZoneReq:
     def email(self, email):
         """Sets the email of this CreatePrivateZoneReq.
 
-        管理该zone的管理员邮箱。
+        管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
 
         :param email: The email of this CreatePrivateZoneReq.
         :type email: str

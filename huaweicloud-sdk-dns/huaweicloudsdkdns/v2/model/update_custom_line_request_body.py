@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class CreateCustomLines:
+class UpdateCustomLineRequestBody:
 
     """
     Attributes:
@@ -29,15 +29,15 @@ class CreateCustomLines:
     }
 
     def __init__(self, name=None, ip_segments=None, description=None):
-        """CreateCustomLines
+        """UpdateCustomLineRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param name: 解析线路名称。  长度限制为1-80个字符，只允许包含中文、字母、数字、&#39;-&#39;、&#39;_&#39;、&#39;.&#39;字符。  租户内，解析线路名称是唯一的。
+        :param name: 解析线路名称。
         :type name: str
-        :param ip_segments: IP地址段。  以“-”分隔，小IP地址在前，大IP地址在后。IP段之间不能有交叉。当只有一个IP时，填写IP1-IP1。 目前只支持IPV4。  最多支持50个。
+        :param ip_segments: P地址段。  以“-”分隔，小IP地址在前，大IP地址在后。IP段之间不能有交叉。当只有一个IP时，填写IP1-IP1。 目前只支持IPV4。
         :type ip_segments: list[str]
-        :param description: 自定义线路的描述信息。长度不超过255个字符。  默认值为空。
+        :param description: 自定义线路的描述信息。长度不超过255个字符。
         :type description: str
         """
         
@@ -48,73 +48,75 @@ class CreateCustomLines:
         self._description = None
         self.discriminator = None
 
-        self.name = name
-        self.ip_segments = ip_segments
+        if name is not None:
+            self.name = name
+        if ip_segments is not None:
+            self.ip_segments = ip_segments
         if description is not None:
             self.description = description
 
     @property
     def name(self):
-        """Gets the name of this CreateCustomLines.
+        """Gets the name of this UpdateCustomLineRequestBody.
 
-        解析线路名称。  长度限制为1-80个字符，只允许包含中文、字母、数字、'-'、'_'、'.'字符。  租户内，解析线路名称是唯一的。
+        解析线路名称。
 
-        :return: The name of this CreateCustomLines.
+        :return: The name of this UpdateCustomLineRequestBody.
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateCustomLines.
+        """Sets the name of this UpdateCustomLineRequestBody.
 
-        解析线路名称。  长度限制为1-80个字符，只允许包含中文、字母、数字、'-'、'_'、'.'字符。  租户内，解析线路名称是唯一的。
+        解析线路名称。
 
-        :param name: The name of this CreateCustomLines.
+        :param name: The name of this UpdateCustomLineRequestBody.
         :type name: str
         """
         self._name = name
 
     @property
     def ip_segments(self):
-        """Gets the ip_segments of this CreateCustomLines.
+        """Gets the ip_segments of this UpdateCustomLineRequestBody.
 
-        IP地址段。  以“-”分隔，小IP地址在前，大IP地址在后。IP段之间不能有交叉。当只有一个IP时，填写IP1-IP1。 目前只支持IPV4。  最多支持50个。
+        P地址段。  以“-”分隔，小IP地址在前，大IP地址在后。IP段之间不能有交叉。当只有一个IP时，填写IP1-IP1。 目前只支持IPV4。
 
-        :return: The ip_segments of this CreateCustomLines.
+        :return: The ip_segments of this UpdateCustomLineRequestBody.
         :rtype: list[str]
         """
         return self._ip_segments
 
     @ip_segments.setter
     def ip_segments(self, ip_segments):
-        """Sets the ip_segments of this CreateCustomLines.
+        """Sets the ip_segments of this UpdateCustomLineRequestBody.
 
-        IP地址段。  以“-”分隔，小IP地址在前，大IP地址在后。IP段之间不能有交叉。当只有一个IP时，填写IP1-IP1。 目前只支持IPV4。  最多支持50个。
+        P地址段。  以“-”分隔，小IP地址在前，大IP地址在后。IP段之间不能有交叉。当只有一个IP时，填写IP1-IP1。 目前只支持IPV4。
 
-        :param ip_segments: The ip_segments of this CreateCustomLines.
+        :param ip_segments: The ip_segments of this UpdateCustomLineRequestBody.
         :type ip_segments: list[str]
         """
         self._ip_segments = ip_segments
 
     @property
     def description(self):
-        """Gets the description of this CreateCustomLines.
+        """Gets the description of this UpdateCustomLineRequestBody.
 
-        自定义线路的描述信息。长度不超过255个字符。  默认值为空。
+        自定义线路的描述信息。长度不超过255个字符。
 
-        :return: The description of this CreateCustomLines.
+        :return: The description of this UpdateCustomLineRequestBody.
         :rtype: str
         """
         return self._description
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateCustomLines.
+        """Sets the description of this UpdateCustomLineRequestBody.
 
-        自定义线路的描述信息。长度不超过255个字符。  默认值为空。
+        自定义线路的描述信息。长度不超过255个字符。
 
-        :param description: The description of this CreateCustomLines.
+        :param description: The description of this UpdateCustomLineRequestBody.
         :type description: str
         """
         self._description = description
@@ -161,7 +163,7 @@ class CreateCustomLines:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CreateCustomLines):
+        if not isinstance(other, UpdateCustomLineRequestBody):
             return False
 
         return self.__dict__ == other.__dict__

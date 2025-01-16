@@ -47,9 +47,9 @@ class Statement:
         :type sid: str
         :param effect: Statement语句的效果。“Allow”或者“Deny”。
         :type effect: str
-        :param principal: Statement语句作用的对象。 目前支持“CSP”和“Service”两类对象。  “CSP”对象指的是其他用户，可以作用于多个用户。  “Service”对象指的是云服务，可以作用于多个云服务。  Principal元素和NotPrincipal元素两者任选其一。选定后， “CSP”对象填写内容的格式为urn:csp:iam::domainId:root或“\\*”，其中domainId为其他用户的“帐号ID”，“\\*”指作用于所有人。  “Service”对象填写内容的格式为小写的云服务名称缩写。
+        :param principal: Statement语句作用的对象。 目前支持“CSP”、“OrgPath”和“Service”三类对象。  “CSP”对象指的是其他用户，可以作用于多个用户。  “OrgPath”对象指的是用户组织路径，可以作用于多个组织路径。  “Service”对象指的是云服务，可以作用于多个云服务。  Principal元素和NotPrincipal元素两者任选其一。选定后， “CSP”对象填写内容的格式为urn:csp:iam::domainId:root或“\\*”，其中domainId为其他用户的“账号ID”，“\\*”指作用于所有人。  “OrgPath”对象填写内容的格式为{orgId}/{rootOuId}/{OuId}。  “Service”对象填写内容的格式为小写的云服务名称缩写。
         :type principal: str
-        :param not_principal: NotPrincipal：Statement语句排除作用的对象。  目前支持“CSP”和“Service”两类对象。  “CSP”对象指的是其他用户，可以作用于多个用户。  “Service”对象指的是云服务，可以作用于多个云服务。  Principal元素和NotPrincipal元素两者任选其一。选定后， “CSP”对象填写内容的格式为urn:csp:iam::domainId:root或“\\*”，其中domainId为其他用户的“帐号ID”，“\\*”指作用于所有人。  “Service”对象填写内容的格式为小写的云服务名称缩写。
+        :param not_principal: NotPrincipal：Statement语句排除作用的对象。  目前支持“CSP”、“OrgPath”和“Service”三类对象。  “CSP”对象指的是其他用户，可以作用于多个用户。  “OrgPath”对象指的是用户组织路径，可以作用于多个组织路径。  “Service”对象指的是云服务，可以作用于多个云服务。  Principal元素和NotPrincipal元素两者任选其一。选定后， “CSP”对象填写内容的格式为urn:csp:iam::domainId:root或“\\*”，其中domainId为其他用户的“账号ID”，“\\*”指作用于所有人。  “OrgPath”对象填写内容的格式为{orgId}/{rootOuId}/{OuId}。  “Service”对象填写内容的格式为小写的云服务名称缩写。
         :type not_principal: str
         :param action: Statement语句作用的操作。  允许使用通配符来表示一类操作，例如：SMN:Update*、SMN:Delete*。如果只填写“*”，表示Statement语句作用的操作为该资源支持的所有操作。  Action元素和NotAction元素两者任选其一。  目前支持的操作有：  SMN:UpdateTopic SMN:DeleteTopic SMN:QueryTopicDetail SMN:ListTopicAttributes SMN:UpdateTopicAttribute SMN:DeleteTopicAttributes SMN:DeleteTopicAttributeByName SMN:ListSubscriptionsByTopic SMN:Subscribe SMN:Unsubscribe SMN:Publish
         :type action: str
@@ -136,7 +136,7 @@ class Statement:
     def principal(self):
         """Gets the principal of this Statement.
 
-        Statement语句作用的对象。 目前支持“CSP”和“Service”两类对象。  “CSP”对象指的是其他用户，可以作用于多个用户。  “Service”对象指的是云服务，可以作用于多个云服务。  Principal元素和NotPrincipal元素两者任选其一。选定后， “CSP”对象填写内容的格式为urn:csp:iam::domainId:root或“\\*”，其中domainId为其他用户的“帐号ID”，“\\*”指作用于所有人。  “Service”对象填写内容的格式为小写的云服务名称缩写。
+        Statement语句作用的对象。 目前支持“CSP”、“OrgPath”和“Service”三类对象。  “CSP”对象指的是其他用户，可以作用于多个用户。  “OrgPath”对象指的是用户组织路径，可以作用于多个组织路径。  “Service”对象指的是云服务，可以作用于多个云服务。  Principal元素和NotPrincipal元素两者任选其一。选定后， “CSP”对象填写内容的格式为urn:csp:iam::domainId:root或“\\*”，其中domainId为其他用户的“账号ID”，“\\*”指作用于所有人。  “OrgPath”对象填写内容的格式为{orgId}/{rootOuId}/{OuId}。  “Service”对象填写内容的格式为小写的云服务名称缩写。
 
         :return: The principal of this Statement.
         :rtype: str
@@ -147,7 +147,7 @@ class Statement:
     def principal(self, principal):
         """Sets the principal of this Statement.
 
-        Statement语句作用的对象。 目前支持“CSP”和“Service”两类对象。  “CSP”对象指的是其他用户，可以作用于多个用户。  “Service”对象指的是云服务，可以作用于多个云服务。  Principal元素和NotPrincipal元素两者任选其一。选定后， “CSP”对象填写内容的格式为urn:csp:iam::domainId:root或“\\*”，其中domainId为其他用户的“帐号ID”，“\\*”指作用于所有人。  “Service”对象填写内容的格式为小写的云服务名称缩写。
+        Statement语句作用的对象。 目前支持“CSP”、“OrgPath”和“Service”三类对象。  “CSP”对象指的是其他用户，可以作用于多个用户。  “OrgPath”对象指的是用户组织路径，可以作用于多个组织路径。  “Service”对象指的是云服务，可以作用于多个云服务。  Principal元素和NotPrincipal元素两者任选其一。选定后， “CSP”对象填写内容的格式为urn:csp:iam::domainId:root或“\\*”，其中domainId为其他用户的“账号ID”，“\\*”指作用于所有人。  “OrgPath”对象填写内容的格式为{orgId}/{rootOuId}/{OuId}。  “Service”对象填写内容的格式为小写的云服务名称缩写。
 
         :param principal: The principal of this Statement.
         :type principal: str
@@ -158,7 +158,7 @@ class Statement:
     def not_principal(self):
         """Gets the not_principal of this Statement.
 
-        NotPrincipal：Statement语句排除作用的对象。  目前支持“CSP”和“Service”两类对象。  “CSP”对象指的是其他用户，可以作用于多个用户。  “Service”对象指的是云服务，可以作用于多个云服务。  Principal元素和NotPrincipal元素两者任选其一。选定后， “CSP”对象填写内容的格式为urn:csp:iam::domainId:root或“\\*”，其中domainId为其他用户的“帐号ID”，“\\*”指作用于所有人。  “Service”对象填写内容的格式为小写的云服务名称缩写。
+        NotPrincipal：Statement语句排除作用的对象。  目前支持“CSP”、“OrgPath”和“Service”三类对象。  “CSP”对象指的是其他用户，可以作用于多个用户。  “OrgPath”对象指的是用户组织路径，可以作用于多个组织路径。  “Service”对象指的是云服务，可以作用于多个云服务。  Principal元素和NotPrincipal元素两者任选其一。选定后， “CSP”对象填写内容的格式为urn:csp:iam::domainId:root或“\\*”，其中domainId为其他用户的“账号ID”，“\\*”指作用于所有人。  “OrgPath”对象填写内容的格式为{orgId}/{rootOuId}/{OuId}。  “Service”对象填写内容的格式为小写的云服务名称缩写。
 
         :return: The not_principal of this Statement.
         :rtype: str
@@ -169,7 +169,7 @@ class Statement:
     def not_principal(self, not_principal):
         """Sets the not_principal of this Statement.
 
-        NotPrincipal：Statement语句排除作用的对象。  目前支持“CSP”和“Service”两类对象。  “CSP”对象指的是其他用户，可以作用于多个用户。  “Service”对象指的是云服务，可以作用于多个云服务。  Principal元素和NotPrincipal元素两者任选其一。选定后， “CSP”对象填写内容的格式为urn:csp:iam::domainId:root或“\\*”，其中domainId为其他用户的“帐号ID”，“\\*”指作用于所有人。  “Service”对象填写内容的格式为小写的云服务名称缩写。
+        NotPrincipal：Statement语句排除作用的对象。  目前支持“CSP”、“OrgPath”和“Service”三类对象。  “CSP”对象指的是其他用户，可以作用于多个用户。  “OrgPath”对象指的是用户组织路径，可以作用于多个组织路径。  “Service”对象指的是云服务，可以作用于多个云服务。  Principal元素和NotPrincipal元素两者任选其一。选定后， “CSP”对象填写内容的格式为urn:csp:iam::domainId:root或“\\*”，其中domainId为其他用户的“账号ID”，“\\*”指作用于所有人。  “OrgPath”对象填写内容的格式为{orgId}/{rootOuId}/{OuId}。  “Service”对象填写内容的格式为小写的云服务名称缩写。
 
         :param not_principal: The not_principal of this Statement.
         :type not_principal: str

@@ -21,7 +21,9 @@ class ListCustomLineRequest:
         'name': 'str',
         'limit': 'int',
         'offset': 'int',
-        'show_detail': 'bool'
+        'show_detail': 'bool',
+        'status': 'str',
+        'ip': 'str'
     }
 
     attribute_map = {
@@ -29,10 +31,12 @@ class ListCustomLineRequest:
         'name': 'name',
         'limit': 'limit',
         'offset': 'offset',
-        'show_detail': 'show_detail'
+        'show_detail': 'show_detail',
+        'status': 'status',
+        'ip': 'ip'
     }
 
-    def __init__(self, line_id=None, name=None, limit=None, offset=None, show_detail=None):
+    def __init__(self, line_id=None, name=None, limit=None, offset=None, show_detail=None, status=None, ip=None):
         """ListCustomLineRequest
 
         The model defined in huaweicloud sdk
@@ -41,12 +45,16 @@ class ListCustomLineRequest:
         :type line_id: str
         :param name: 解析线路名称。
         :type name: str
-        :param limit: 每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
+        :param limit: 每页返回的资源个数。 当查询详细信息时：取值范围：0~100取值一般为10，20，50默认为100。 当查询概要信息时：取值范围：0~3000默认为3000。
         :type limit: int
         :param offset: 分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
         :type offset: int
         :param show_detail: 是否查询详细信息。  取值范围：  true：是，查询详细信息。 false：否，不查询详细信息。 默认为true。
         :type show_detail: bool
+        :param status: 资源状态。
+        :type status: str
+        :param ip: IP地址范围。
+        :type ip: str
         """
         
         
@@ -56,6 +64,8 @@ class ListCustomLineRequest:
         self._limit = None
         self._offset = None
         self._show_detail = None
+        self._status = None
+        self._ip = None
         self.discriminator = None
 
         if line_id is not None:
@@ -68,6 +78,10 @@ class ListCustomLineRequest:
             self.offset = offset
         if show_detail is not None:
             self.show_detail = show_detail
+        if status is not None:
+            self.status = status
+        if ip is not None:
+            self.ip = ip
 
     @property
     def line_id(self):
@@ -117,7 +131,7 @@ class ListCustomLineRequest:
     def limit(self):
         """Gets the limit of this ListCustomLineRequest.
 
-        每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
+        每页返回的资源个数。 当查询详细信息时：取值范围：0~100取值一般为10，20，50默认为100。 当查询概要信息时：取值范围：0~3000默认为3000。
 
         :return: The limit of this ListCustomLineRequest.
         :rtype: int
@@ -128,7 +142,7 @@ class ListCustomLineRequest:
     def limit(self, limit):
         """Sets the limit of this ListCustomLineRequest.
 
-        每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
+        每页返回的资源个数。 当查询详细信息时：取值范围：0~100取值一般为10，20，50默认为100。 当查询概要信息时：取值范围：0~3000默认为3000。
 
         :param limit: The limit of this ListCustomLineRequest.
         :type limit: int
@@ -178,6 +192,50 @@ class ListCustomLineRequest:
         :type show_detail: bool
         """
         self._show_detail = show_detail
+
+    @property
+    def status(self):
+        """Gets the status of this ListCustomLineRequest.
+
+        资源状态。
+
+        :return: The status of this ListCustomLineRequest.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this ListCustomLineRequest.
+
+        资源状态。
+
+        :param status: The status of this ListCustomLineRequest.
+        :type status: str
+        """
+        self._status = status
+
+    @property
+    def ip(self):
+        """Gets the ip of this ListCustomLineRequest.
+
+        IP地址范围。
+
+        :return: The ip of this ListCustomLineRequest.
+        :rtype: str
+        """
+        return self._ip
+
+    @ip.setter
+    def ip(self, ip):
+        """Sets the ip of this ListCustomLineRequest.
+
+        IP地址范围。
+
+        :param ip: The ip of this ListCustomLineRequest.
+        :type ip: str
+        """
+        self._ip = ip
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -18,15 +18,17 @@ class ListStarRocksDbParametersRequest:
 
     openapi_types = {
         'instance_id': 'str',
-        'x_language': 'str'
+        'x_language': 'str',
+        'add_task_scenario': 'str'
     }
 
     attribute_map = {
         'instance_id': 'instance_id',
-        'x_language': 'X-Language'
+        'x_language': 'X-Language',
+        'add_task_scenario': 'add_task_scenario'
     }
 
-    def __init__(self, instance_id=None, x_language=None):
+    def __init__(self, instance_id=None, x_language=None, add_task_scenario=None):
         """ListStarRocksDbParametersRequest
 
         The model defined in huaweicloud sdk
@@ -35,16 +37,21 @@ class ListStarRocksDbParametersRequest:
         :type instance_id: str
         :param x_language: 请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
         :type x_language: str
+        :param add_task_scenario: **参数解释**：  新增子任务的场景，用于区分库参数是否支持修改。  **约束限制**：  非必填。  **取值范围**：  不涉及。  **默认值**：  不涉及。
+        :type add_task_scenario: str
         """
         
         
 
         self._instance_id = None
         self._x_language = None
+        self._add_task_scenario = None
         self.discriminator = None
 
         self.instance_id = instance_id
         self.x_language = x_language
+        if add_task_scenario is not None:
+            self.add_task_scenario = add_task_scenario
 
     @property
     def instance_id(self):
@@ -89,6 +96,28 @@ class ListStarRocksDbParametersRequest:
         :type x_language: str
         """
         self._x_language = x_language
+
+    @property
+    def add_task_scenario(self):
+        """Gets the add_task_scenario of this ListStarRocksDbParametersRequest.
+
+        **参数解释**：  新增子任务的场景，用于区分库参数是否支持修改。  **约束限制**：  非必填。  **取值范围**：  不涉及。  **默认值**：  不涉及。
+
+        :return: The add_task_scenario of this ListStarRocksDbParametersRequest.
+        :rtype: str
+        """
+        return self._add_task_scenario
+
+    @add_task_scenario.setter
+    def add_task_scenario(self, add_task_scenario):
+        """Sets the add_task_scenario of this ListStarRocksDbParametersRequest.
+
+        **参数解释**：  新增子任务的场景，用于区分库参数是否支持修改。  **约束限制**：  非必填。  **取值范围**：  不涉及。  **默认值**：  不涉及。
+
+        :param add_task_scenario: The add_task_scenario of this ListStarRocksDbParametersRequest.
+        :type add_task_scenario: str
+        """
+        self._add_task_scenario = add_task_scenario
 
     def to_dict(self):
         """Returns the model properties as a dict"""

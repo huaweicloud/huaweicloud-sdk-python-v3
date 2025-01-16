@@ -71,7 +71,7 @@ class PrivateZoneResp:
         :type name: str
         :param description: 对zone的描述信息。
         :type description: str
-        :param email: 管理该zone的管理员邮箱。
+        :param email: 管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
         :type email: str
         :param zone_type: zone类型，内网（private）。
         :type zone_type: str
@@ -237,7 +237,7 @@ class PrivateZoneResp:
     def email(self):
         """Gets the email of this PrivateZoneResp.
 
-        管理该zone的管理员邮箱。
+        管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
 
         :return: The email of this PrivateZoneResp.
         :rtype: str
@@ -248,7 +248,7 @@ class PrivateZoneResp:
     def email(self, email):
         """Sets the email of this PrivateZoneResp.
 
-        管理该zone的管理员邮箱。
+        管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
 
         :param email: The email of this PrivateZoneResp.
         :type email: str

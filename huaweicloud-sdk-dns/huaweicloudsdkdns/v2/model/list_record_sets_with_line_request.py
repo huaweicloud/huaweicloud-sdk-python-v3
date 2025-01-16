@@ -21,6 +21,7 @@ class ListRecordSetsWithLineRequest:
         'marker': 'str',
         'limit': 'int',
         'offset': 'int',
+        'zone_id': 'str',
         'line_id': 'str',
         'tags': 'str',
         'status': 'str',
@@ -39,6 +40,7 @@ class ListRecordSetsWithLineRequest:
         'marker': 'marker',
         'limit': 'limit',
         'offset': 'offset',
+        'zone_id': 'zone_id',
         'line_id': 'line_id',
         'tags': 'tags',
         'status': 'status',
@@ -52,7 +54,7 @@ class ListRecordSetsWithLineRequest:
         'search_mode': 'search_mode'
     }
 
-    def __init__(self, zone_type=None, marker=None, limit=None, offset=None, line_id=None, tags=None, status=None, type=None, name=None, id=None, records=None, sort_key=None, sort_dir=None, health_check_id=None, search_mode=None):
+    def __init__(self, zone_type=None, marker=None, limit=None, offset=None, zone_id=None, line_id=None, tags=None, status=None, type=None, name=None, id=None, records=None, sort_key=None, sort_dir=None, health_check_id=None, search_mode=None):
         """ListRecordSetsWithLineRequest
 
         The model defined in huaweicloud sdk
@@ -65,6 +67,8 @@ class ListRecordSetsWithLineRequest:
         :type limit: int
         :param offset: 分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
         :type offset: int
+        :param zone_id: zone的ID。
+        :type zone_id: str
         :param line_id: 解析线路ID。
         :type line_id: str
         :param tags: 资源标签。  取值格式：key1,value1|key2,value2  多个标签之间用\&quot;|\&quot;分开，每个标签的键值用英文逗号\&quot;,\&quot;相隔。
@@ -75,11 +79,11 @@ class ListRecordSetsWithLineRequest:
         :type type: str
         :param name: 待查询的Record Set的域名中包含此name。  搜索模式默认为模糊搜索。  默认值为空。
         :type name: str
-        :param id: 待查询的Record Set的id包含此id。  搜索模式默认为模糊搜索。  默认值为空。
+        :param id: 待查询的Record Set的id包含此id。
         :type id: str
         :param records: 待查询的Record Set的值中包含此records。  搜索模式默认为模糊搜索。  默认值为空。
         :type records: str
-        :param sort_key: 查询结果中Record Set列表的排序字段。  取值范围：  name：域名 type：记录集类型 默认值为空，表示不排序。
+        :param sort_key: 查询结果中Record Set列表的排序字段。  取值范围：  name：记录集名称 type：记录集类型 默认值为空，表示不排序。
         :type sort_key: str
         :param sort_dir: 查询结果中Record Set列表的排序方式。  取值范围：  desc：降序排序 asc：升序排序 默认值为空，表示不排序。
         :type sort_dir: str
@@ -95,6 +99,7 @@ class ListRecordSetsWithLineRequest:
         self._marker = None
         self._limit = None
         self._offset = None
+        self._zone_id = None
         self._line_id = None
         self._tags = None
         self._status = None
@@ -116,6 +121,8 @@ class ListRecordSetsWithLineRequest:
             self.limit = limit
         if offset is not None:
             self.offset = offset
+        if zone_id is not None:
+            self.zone_id = zone_id
         if line_id is not None:
             self.line_id = line_id
         if tags is not None:
@@ -226,6 +233,28 @@ class ListRecordSetsWithLineRequest:
         :type offset: int
         """
         self._offset = offset
+
+    @property
+    def zone_id(self):
+        """Gets the zone_id of this ListRecordSetsWithLineRequest.
+
+        zone的ID。
+
+        :return: The zone_id of this ListRecordSetsWithLineRequest.
+        :rtype: str
+        """
+        return self._zone_id
+
+    @zone_id.setter
+    def zone_id(self, zone_id):
+        """Sets the zone_id of this ListRecordSetsWithLineRequest.
+
+        zone的ID。
+
+        :param zone_id: The zone_id of this ListRecordSetsWithLineRequest.
+        :type zone_id: str
+        """
+        self._zone_id = zone_id
 
     @property
     def line_id(self):
@@ -341,7 +370,7 @@ class ListRecordSetsWithLineRequest:
     def id(self):
         """Gets the id of this ListRecordSetsWithLineRequest.
 
-        待查询的Record Set的id包含此id。  搜索模式默认为模糊搜索。  默认值为空。
+        待查询的Record Set的id包含此id。
 
         :return: The id of this ListRecordSetsWithLineRequest.
         :rtype: str
@@ -352,7 +381,7 @@ class ListRecordSetsWithLineRequest:
     def id(self, id):
         """Sets the id of this ListRecordSetsWithLineRequest.
 
-        待查询的Record Set的id包含此id。  搜索模式默认为模糊搜索。  默认值为空。
+        待查询的Record Set的id包含此id。
 
         :param id: The id of this ListRecordSetsWithLineRequest.
         :type id: str
@@ -385,7 +414,7 @@ class ListRecordSetsWithLineRequest:
     def sort_key(self):
         """Gets the sort_key of this ListRecordSetsWithLineRequest.
 
-        查询结果中Record Set列表的排序字段。  取值范围：  name：域名 type：记录集类型 默认值为空，表示不排序。
+        查询结果中Record Set列表的排序字段。  取值范围：  name：记录集名称 type：记录集类型 默认值为空，表示不排序。
 
         :return: The sort_key of this ListRecordSetsWithLineRequest.
         :rtype: str
@@ -396,7 +425,7 @@ class ListRecordSetsWithLineRequest:
     def sort_key(self, sort_key):
         """Sets the sort_key of this ListRecordSetsWithLineRequest.
 
-        查询结果中Record Set列表的排序字段。  取值范围：  name：域名 type：记录集类型 默认值为空，表示不排序。
+        查询结果中Record Set列表的排序字段。  取值范围：  name：记录集名称 type：记录集类型 默认值为空，表示不排序。
 
         :param sort_key: The sort_key of this ListRecordSetsWithLineRequest.
         :type sort_key: str

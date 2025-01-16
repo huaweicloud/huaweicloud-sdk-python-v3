@@ -17,7 +17,7 @@ class CreateCustomLineRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'CreateCustomLines'
+        'body': 'CreateCustomLineRequestBody'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class CreateCustomLineRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the CreateCustomLineRequest
-        :type body: :class:`huaweicloudsdkdns.v2.CreateCustomLines`
+        :type body: :class:`huaweicloudsdkdns.v2.CreateCustomLineRequestBody`
         """
         
         
@@ -46,7 +46,7 @@ class CreateCustomLineRequest:
         """Gets the body of this CreateCustomLineRequest.
 
         :return: The body of this CreateCustomLineRequest.
-        :rtype: :class:`huaweicloudsdkdns.v2.CreateCustomLines`
+        :rtype: :class:`huaweicloudsdkdns.v2.CreateCustomLineRequestBody`
         """
         return self._body
 
@@ -55,7 +55,7 @@ class CreateCustomLineRequest:
         """Sets the body of this CreateCustomLineRequest.
 
         :param body: The body of this CreateCustomLineRequest.
-        :type body: :class:`huaweicloudsdkdns.v2.CreateCustomLines`
+        :type body: :class:`huaweicloudsdkdns.v2.CreateCustomLineRequestBody`
         """
         self._body = body
 

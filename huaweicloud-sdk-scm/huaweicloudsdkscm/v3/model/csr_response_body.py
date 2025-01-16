@@ -19,6 +19,7 @@ class CSRResponseBody:
     openapi_types = {
         'id': 'str',
         'name': 'str',
+        'csr': 'str',
         'domain_name': 'str',
         'sans': 'str',
         'private_key_algo': 'str',
@@ -27,13 +28,14 @@ class CSRResponseBody:
         'company_province': 'str',
         'company_city': 'str',
         'company_name': 'str',
-        'create_time': 'float',
-        'update_time': 'float'
+        'create_time': 'int',
+        'update_time': 'int'
     }
 
     attribute_map = {
         'id': 'id',
         'name': 'name',
+        'csr': 'csr',
         'domain_name': 'domain_name',
         'sans': 'sans',
         'private_key_algo': 'private_key_algo',
@@ -46,7 +48,7 @@ class CSRResponseBody:
         'update_time': 'update_time'
     }
 
-    def __init__(self, id=None, name=None, domain_name=None, sans=None, private_key_algo=None, usage=None, company_country=None, company_province=None, company_city=None, company_name=None, create_time=None, update_time=None):
+    def __init__(self, id=None, name=None, csr=None, domain_name=None, sans=None, private_key_algo=None, usage=None, company_country=None, company_province=None, company_city=None, company_name=None, create_time=None, update_time=None):
         """CSRResponseBody
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class CSRResponseBody:
         :type id: str
         :param name: CSR名称。
         :type name: str
+        :param csr: CSR内容。
+        :type csr: str
         :param domain_name: CSR绑定的域名。
         :type domain_name: str
         :param sans: CSR绑定的附加域名。
@@ -72,15 +76,16 @@ class CSRResponseBody:
         :param company_name: 公司名称。
         :type company_name: str
         :param create_time: CSR创建时间。
-        :type create_time: float
+        :type create_time: int
         :param update_time: CSR更新时间。
-        :type update_time: float
+        :type update_time: int
         """
         
         
 
         self._id = None
         self._name = None
+        self._csr = None
         self._domain_name = None
         self._sans = None
         self._private_key_algo = None
@@ -95,6 +100,7 @@ class CSRResponseBody:
 
         self.id = id
         self.name = name
+        self.csr = csr
         self.domain_name = domain_name
         self.sans = sans
         self.private_key_algo = private_key_algo
@@ -149,6 +155,28 @@ class CSRResponseBody:
         :type name: str
         """
         self._name = name
+
+    @property
+    def csr(self):
+        """Gets the csr of this CSRResponseBody.
+
+        CSR内容。
+
+        :return: The csr of this CSRResponseBody.
+        :rtype: str
+        """
+        return self._csr
+
+    @csr.setter
+    def csr(self, csr):
+        """Sets the csr of this CSRResponseBody.
+
+        CSR内容。
+
+        :param csr: The csr of this CSRResponseBody.
+        :type csr: str
+        """
+        self._csr = csr
 
     @property
     def domain_name(self):
@@ -333,7 +361,7 @@ class CSRResponseBody:
         CSR创建时间。
 
         :return: The create_time of this CSRResponseBody.
-        :rtype: float
+        :rtype: int
         """
         return self._create_time
 
@@ -344,7 +372,7 @@ class CSRResponseBody:
         CSR创建时间。
 
         :param create_time: The create_time of this CSRResponseBody.
-        :type create_time: float
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -355,7 +383,7 @@ class CSRResponseBody:
         CSR更新时间。
 
         :return: The update_time of this CSRResponseBody.
-        :rtype: float
+        :rtype: int
         """
         return self._update_time
 
@@ -366,7 +394,7 @@ class CSRResponseBody:
         CSR更新时间。
 
         :param update_time: The update_time of this CSRResponseBody.
-        :type update_time: float
+        :type update_time: int
         """
         self._update_time = update_time
 

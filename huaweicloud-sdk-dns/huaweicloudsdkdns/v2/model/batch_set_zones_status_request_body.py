@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class SetRecordSetsStatusReq:
+class BatchSetZonesStatusRequestBody:
 
     """
     Attributes:
@@ -17,50 +17,78 @@ class SetRecordSetsStatusReq:
     sensitive_list = []
 
     openapi_types = {
-        'status': 'str'
+        'status': 'str',
+        'zone_ids': 'list[str]'
     }
 
     attribute_map = {
-        'status': 'status'
+        'status': 'status',
+        'zone_ids': 'zone_ids'
     }
 
-    def __init__(self, status=None):
-        """SetRecordSetsStatusReq
+    def __init__(self, status=None, zone_ids=None):
+        """BatchSetZonesStatusRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param status: 解析记录状态。  取值范围：  ENABLE：启用解析 DISABLE：暂停解析。
+        :param status: 待设置Zone状态，当前仅支持DISABLE或ENABLE。
         :type status: str
+        :param zone_ids: 待设置Zone ID列表。 最多支持50个。
+        :type zone_ids: list[str]
         """
         
         
 
         self._status = None
+        self._zone_ids = None
         self.discriminator = None
 
         self.status = status
+        self.zone_ids = zone_ids
 
     @property
     def status(self):
-        """Gets the status of this SetRecordSetsStatusReq.
+        """Gets the status of this BatchSetZonesStatusRequestBody.
 
-        解析记录状态。  取值范围：  ENABLE：启用解析 DISABLE：暂停解析。
+        待设置Zone状态，当前仅支持DISABLE或ENABLE。
 
-        :return: The status of this SetRecordSetsStatusReq.
+        :return: The status of this BatchSetZonesStatusRequestBody.
         :rtype: str
         """
         return self._status
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SetRecordSetsStatusReq.
+        """Sets the status of this BatchSetZonesStatusRequestBody.
 
-        解析记录状态。  取值范围：  ENABLE：启用解析 DISABLE：暂停解析。
+        待设置Zone状态，当前仅支持DISABLE或ENABLE。
 
-        :param status: The status of this SetRecordSetsStatusReq.
+        :param status: The status of this BatchSetZonesStatusRequestBody.
         :type status: str
         """
         self._status = status
+
+    @property
+    def zone_ids(self):
+        """Gets the zone_ids of this BatchSetZonesStatusRequestBody.
+
+        待设置Zone ID列表。 最多支持50个。
+
+        :return: The zone_ids of this BatchSetZonesStatusRequestBody.
+        :rtype: list[str]
+        """
+        return self._zone_ids
+
+    @zone_ids.setter
+    def zone_ids(self, zone_ids):
+        """Sets the zone_ids of this BatchSetZonesStatusRequestBody.
+
+        待设置Zone ID列表。 最多支持50个。
+
+        :param zone_ids: The zone_ids of this BatchSetZonesStatusRequestBody.
+        :type zone_ids: list[str]
+        """
+        self._zone_ids = zone_ids
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -104,7 +132,7 @@ class SetRecordSetsStatusReq:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, SetRecordSetsStatusReq):
+        if not isinstance(other, BatchSetZonesStatusRequestBody):
             return False
 
         return self.__dict__ == other.__dict__

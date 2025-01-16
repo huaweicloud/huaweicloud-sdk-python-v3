@@ -24,7 +24,8 @@ class ListInstanceRequestBody:
         'offset': 'str',
         'limit': 'str',
         'action': 'str',
-        'matches': 'list[TagMatch]'
+        'matches': 'list[TagMatch]',
+        'without_any_tag': 'bool'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class ListInstanceRequestBody:
         'offset': 'offset',
         'limit': 'limit',
         'action': 'action',
-        'matches': 'matches'
+        'matches': 'matches',
+        'without_any_tag': 'without_any_tag'
     }
 
-    def __init__(self, tags=None, tags_any=None, not_tags=None, not_tags_any=None, offset=None, limit=None, action=None, matches=None):
+    def __init__(self, tags=None, tags_any=None, not_tags=None, not_tags_any=None, offset=None, limit=None, action=None, matches=None, without_any_tag=None):
         """ListInstanceRequestBody
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class ListInstanceRequestBody:
         :type action: str
         :param matches: 搜索字段。  key为要匹配的字段，当前只支持resource_name。  value为匹配的值，当前为精确匹配。
         :type matches: list[:class:`huaweicloudsdksmn.v2.TagMatch`]
+        :param without_any_tag: 不包含任意一个标签。该字段为true时查询所有不带标签的资源，此时忽略“tags”、“tags_any”、“not_tags”、“not_tags_any”字段。
+        :type without_any_tag: bool
         """
         
         
@@ -71,6 +75,7 @@ class ListInstanceRequestBody:
         self._limit = None
         self._action = None
         self._matches = None
+        self._without_any_tag = None
         self.discriminator = None
 
         if tags is not None:
@@ -88,6 +93,8 @@ class ListInstanceRequestBody:
         self.action = action
         if matches is not None:
             self.matches = matches
+        if without_any_tag is not None:
+            self.without_any_tag = without_any_tag
 
     @property
     def tags(self):
@@ -264,6 +271,28 @@ class ListInstanceRequestBody:
         :type matches: list[:class:`huaweicloudsdksmn.v2.TagMatch`]
         """
         self._matches = matches
+
+    @property
+    def without_any_tag(self):
+        """Gets the without_any_tag of this ListInstanceRequestBody.
+
+        不包含任意一个标签。该字段为true时查询所有不带标签的资源，此时忽略“tags”、“tags_any”、“not_tags”、“not_tags_any”字段。
+
+        :return: The without_any_tag of this ListInstanceRequestBody.
+        :rtype: bool
+        """
+        return self._without_any_tag
+
+    @without_any_tag.setter
+    def without_any_tag(self, without_any_tag):
+        """Sets the without_any_tag of this ListInstanceRequestBody.
+
+        不包含任意一个标签。该字段为true时查询所有不带标签的资源，此时忽略“tags”、“tags_any”、“not_tags”、“not_tags_any”字段。
+
+        :param without_any_tag: The without_any_tag of this ListInstanceRequestBody.
+        :type without_any_tag: bool
+        """
+        self._without_any_tag = without_any_tag
 
     def to_dict(self):
         """Returns the model properties as a dict"""

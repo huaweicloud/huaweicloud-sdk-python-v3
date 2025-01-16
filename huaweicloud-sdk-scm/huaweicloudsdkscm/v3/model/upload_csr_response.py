@@ -20,7 +20,7 @@ class UploadCsrResponse(SdkResponse):
     openapi_types = {
         'id': 'str',
         'name': 'str',
-        'create_time': 'float'
+        'create_time': 'int'
     }
 
     attribute_map = {
@@ -39,7 +39,7 @@ class UploadCsrResponse(SdkResponse):
         :param name: 自定义CSR名称。
         :type name: str
         :param create_time: CSR创建时间。
-        :type create_time: float
+        :type create_time: int
         """
         
         super(UploadCsrResponse, self).__init__()
@@ -107,7 +107,7 @@ class UploadCsrResponse(SdkResponse):
         CSR创建时间。
 
         :return: The create_time of this UploadCsrResponse.
-        :rtype: float
+        :rtype: int
         """
         return self._create_time
 
@@ -118,7 +118,7 @@ class UploadCsrResponse(SdkResponse):
         CSR创建时间。
 
         :param create_time: The create_time of this UploadCsrResponse.
-        :type create_time: float
+        :type create_time: int
         """
         self._create_time = create_time
 

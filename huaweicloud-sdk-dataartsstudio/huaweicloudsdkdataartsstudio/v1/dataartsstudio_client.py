@@ -17283,6 +17283,87 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def show_data_preview(self, request):
+        """表数据预览
+
+        表数据预览
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowDataPreview
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowDataPreviewRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowDataPreviewResponse`
+        """
+        http_info = self._show_data_preview_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_data_preview_invoker(self, request):
+        http_info = self._show_data_preview_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_data_preview_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/asset/entities/guid/{guid}/preview",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDataPreviewResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'guid' in local_var_params:
+            path_params['guid'] = local_var_params['guid']
+
+        query_params = []
+        if 'data_connection_id' in local_var_params:
+            query_params.append(('data_connection_id', local_var_params['data_connection_id']))
+        if 'data_type' in local_var_params:
+            query_params.append(('data_type', local_var_params['data_type']))
+        if 'database' in local_var_params:
+            query_params.append(('database', local_var_params['database']))
+        if 'schema' in local_var_params:
+            query_params.append(('schema', local_var_params['schema']))
+        if 'table' in local_var_params:
+            query_params.append(('table', local_var_params['table']))
+        if 'datasource_workspace_id' in local_var_params:
+            query_params.append(('datasource_workspace_id', local_var_params['datasource_workspace_id']))
+        if 'partitions_condition' in local_var_params:
+            query_params.append(('partitions_condition', local_var_params['partitions_condition']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_data_profile(self, request):
         """资产信息
 

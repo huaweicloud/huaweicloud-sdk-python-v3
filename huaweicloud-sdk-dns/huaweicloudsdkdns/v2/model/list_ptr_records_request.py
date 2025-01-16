@@ -45,7 +45,7 @@ class ListPtrRecordsRequest:
         :type limit: int
         :param offset: 分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
         :type offset: int
-        :param enterprise_project_id: 反向解析关联的企业项目ID，长度不超过36个字符。  默认值为0。
+        :param enterprise_project_id: 反向解析关联的企业项目ID，长度不超过36个字符。
         :type enterprise_project_id: str
         :param tags: 资源标签。  取值格式：key1,value1|key2,value2  多个标签之间用\&quot;|\&quot;分开，每个标签的键值用英文逗号\&quot;,\&quot;相隔。
         :type tags: str
@@ -146,7 +146,7 @@ class ListPtrRecordsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListPtrRecordsRequest.
 
-        反向解析关联的企业项目ID，长度不超过36个字符。  默认值为0。
+        反向解析关联的企业项目ID，长度不超过36个字符。
 
         :return: The enterprise_project_id of this ListPtrRecordsRequest.
         :rtype: str
@@ -157,7 +157,7 @@ class ListPtrRecordsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListPtrRecordsRequest.
 
-        反向解析关联的企业项目ID，长度不超过36个字符。  默认值为0。
+        反向解析关联的企业项目ID，长度不超过36个字符。
 
         :param enterprise_project_id: The enterprise_project_id of this ListPtrRecordsRequest.
         :type enterprise_project_id: str

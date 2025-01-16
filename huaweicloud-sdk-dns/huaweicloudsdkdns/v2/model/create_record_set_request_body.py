@@ -47,7 +47,7 @@ class CreateRecordSetRequestBody:
         :type description: str
         :param type: Record Set的类型。  公网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。  内网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、SRV。
         :type type: str
-        :param status: 资源状态。
+        :param status: 解析记录的状态。 取值范围： ENABLE：启用 DISABLE：暂停 默认值为ENABLE。
         :type status: str
         :param ttl: 解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。 如果您的服务地址经常更换，建议TTL值设置相对小些，反之，建议设置相对大些。
         :type ttl: int
@@ -150,7 +150,7 @@ class CreateRecordSetRequestBody:
     def status(self):
         """Gets the status of this CreateRecordSetRequestBody.
 
-        资源状态。
+        解析记录的状态。 取值范围： ENABLE：启用 DISABLE：暂停 默认值为ENABLE。
 
         :return: The status of this CreateRecordSetRequestBody.
         :rtype: str
@@ -161,7 +161,7 @@ class CreateRecordSetRequestBody:
     def status(self, status):
         """Sets the status of this CreateRecordSetRequestBody.
 
-        资源状态。
+        解析记录的状态。 取值范围： ENABLE：启用 DISABLE：暂停 默认值为ENABLE。
 
         :param status: The status of this CreateRecordSetRequestBody.
         :type status: str

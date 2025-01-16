@@ -53,7 +53,7 @@ class CreateRecordSetWithLineRequestBody:
         :type description: str
         :param type: Record Set的类型。
         :type type: str
-        :param status: 解析记录的状态。默认值为ENABLE。
+        :param status: 解析记录的状态。 取值范围： ENABLE：启用 DISABLE：暂停 默认值为ENABLE。
         :type status: str
         :param ttl: 解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
         :type ttl: int
@@ -172,7 +172,7 @@ class CreateRecordSetWithLineRequestBody:
     def status(self):
         """Gets the status of this CreateRecordSetWithLineRequestBody.
 
-        解析记录的状态。默认值为ENABLE。
+        解析记录的状态。 取值范围： ENABLE：启用 DISABLE：暂停 默认值为ENABLE。
 
         :return: The status of this CreateRecordSetWithLineRequestBody.
         :rtype: str
@@ -183,7 +183,7 @@ class CreateRecordSetWithLineRequestBody:
     def status(self, status):
         """Sets the status of this CreateRecordSetWithLineRequestBody.
 
-        解析记录的状态。默认值为ENABLE。
+        解析记录的状态。 取值范围： ENABLE：启用 DISABLE：暂停 默认值为ENABLE。
 
         :param status: The status of this CreateRecordSetWithLineRequestBody.
         :type status: str

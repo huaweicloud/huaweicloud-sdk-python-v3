@@ -43,7 +43,7 @@ class ListSubscriptionsRequest:
         :type offset: int
         :param limit:  查询数量限制。  取值范围：1~100，取值一般为10，20，50。功能说明：每页返回的资源个数。默认值为100。
         :type limit: int
-        :param protocol: 协议名称， 枚举值：http、https、sms、email、functionstage、dms、application。
+        :param protocol: 协议名称， 枚举值：http、https、sms、email、functionstage。
         :type protocol: str
         :param status: 状态。 0：未确认 1：已确认 2：不需要确认 3：已取消确认 4：已经删除。
         :type status: int
@@ -124,7 +124,7 @@ class ListSubscriptionsRequest:
     def protocol(self):
         """Gets the protocol of this ListSubscriptionsRequest.
 
-        协议名称， 枚举值：http、https、sms、email、functionstage、dms、application。
+        协议名称， 枚举值：http、https、sms、email、functionstage。
 
         :return: The protocol of this ListSubscriptionsRequest.
         :rtype: str
@@ -135,7 +135,7 @@ class ListSubscriptionsRequest:
     def protocol(self, protocol):
         """Sets the protocol of this ListSubscriptionsRequest.
 
-        协议名称， 枚举值：http、https、sms、email、functionstage、dms、application。
+        协议名称， 枚举值：http、https、sms、email、functionstage。
 
         :param protocol: The protocol of this ListSubscriptionsRequest.
         :type protocol: str

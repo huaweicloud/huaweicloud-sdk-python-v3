@@ -23,11 +23,11 @@ class HostClusterInfo:
         'project_id': 'str',
         'os': 'str',
         'slave_cluster_id': 'str',
-        'created_by': 'UserInfo',
         'description': 'str',
         'permission': 'PermissionClusterDetail',
         'nick_name': 'str',
-        'env_count': 'int'
+        'env_count': 'int',
+        'is_proxy_mode': 'int'
     }
 
     attribute_map = {
@@ -37,14 +37,14 @@ class HostClusterInfo:
         'project_id': 'project_id',
         'os': 'os',
         'slave_cluster_id': 'slave_cluster_id',
-        'created_by': 'created_by',
         'description': 'description',
         'permission': 'permission',
         'nick_name': 'nick_name',
-        'env_count': 'env_count'
+        'env_count': 'env_count',
+        'is_proxy_mode': 'is_proxy_mode'
     }
 
-    def __init__(self, id=None, host_count=None, name=None, project_id=None, os=None, slave_cluster_id=None, created_by=None, description=None, permission=None, nick_name=None, env_count=None):
+    def __init__(self, id=None, host_count=None, name=None, project_id=None, os=None, slave_cluster_id=None, description=None, permission=None, nick_name=None, env_count=None, is_proxy_mode=None):
         """HostClusterInfo
 
         The model defined in huaweicloud sdk
@@ -61,8 +61,6 @@ class HostClusterInfo:
         :type os: str
         :param slave_cluster_id: slave集群id，默认为null时使用默认slave集群，用户自定义slave时为slave集群id
         :type slave_cluster_id: str
-        :param created_by: 
-        :type created_by: :class:`huaweicloudsdkcodeartsdeploy.v2.UserInfo`
         :param description: 描述
         :type description: str
         :param permission: 
@@ -71,6 +69,8 @@ class HostClusterInfo:
         :type nick_name: str
         :param env_count: 环境数量
         :type env_count: int
+        :param is_proxy_mode: 主机集群是否为代理机接入模式， 1：是 0：否
+        :type is_proxy_mode: int
         """
         
         
@@ -81,11 +81,11 @@ class HostClusterInfo:
         self._project_id = None
         self._os = None
         self._slave_cluster_id = None
-        self._created_by = None
         self._description = None
         self._permission = None
         self._nick_name = None
         self._env_count = None
+        self._is_proxy_mode = None
         self.discriminator = None
 
         if id is not None:
@@ -100,8 +100,6 @@ class HostClusterInfo:
             self.os = os
         if slave_cluster_id is not None:
             self.slave_cluster_id = slave_cluster_id
-        if created_by is not None:
-            self.created_by = created_by
         if description is not None:
             self.description = description
         if permission is not None:
@@ -110,6 +108,8 @@ class HostClusterInfo:
             self.nick_name = nick_name
         if env_count is not None:
             self.env_count = env_count
+        if is_proxy_mode is not None:
+            self.is_proxy_mode = is_proxy_mode
 
     @property
     def id(self):
@@ -244,24 +244,6 @@ class HostClusterInfo:
         self._slave_cluster_id = slave_cluster_id
 
     @property
-    def created_by(self):
-        """Gets the created_by of this HostClusterInfo.
-
-        :return: The created_by of this HostClusterInfo.
-        :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.UserInfo`
-        """
-        return self._created_by
-
-    @created_by.setter
-    def created_by(self, created_by):
-        """Sets the created_by of this HostClusterInfo.
-
-        :param created_by: The created_by of this HostClusterInfo.
-        :type created_by: :class:`huaweicloudsdkcodeartsdeploy.v2.UserInfo`
-        """
-        self._created_by = created_by
-
-    @property
     def description(self):
         """Gets the description of this HostClusterInfo.
 
@@ -344,6 +326,28 @@ class HostClusterInfo:
         :type env_count: int
         """
         self._env_count = env_count
+
+    @property
+    def is_proxy_mode(self):
+        """Gets the is_proxy_mode of this HostClusterInfo.
+
+        主机集群是否为代理机接入模式， 1：是 0：否
+
+        :return: The is_proxy_mode of this HostClusterInfo.
+        :rtype: int
+        """
+        return self._is_proxy_mode
+
+    @is_proxy_mode.setter
+    def is_proxy_mode(self, is_proxy_mode):
+        """Sets the is_proxy_mode of this HostClusterInfo.
+
+        主机集群是否为代理机接入模式， 1：是 0：否
+
+        :param is_proxy_mode: The is_proxy_mode of this HostClusterInfo.
+        :type is_proxy_mode: int
+        """
+        self._is_proxy_mode = is_proxy_mode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class BatchUpdateRecordSetWithLineReq:
+class BatchSetRecordSetsStatusRequestBody:
 
     """
     Attributes:
@@ -17,50 +17,78 @@ class BatchUpdateRecordSetWithLineReq:
     sensitive_list = []
 
     openapi_types = {
-        'recordsets': 'list[BatchUpdateRecordSet]'
+        'status': 'str',
+        'recordset_ids': 'list[str]'
     }
 
     attribute_map = {
-        'recordsets': 'recordsets'
+        'status': 'status',
+        'recordset_ids': 'recordset_ids'
     }
 
-    def __init__(self, recordsets=None):
-        """BatchUpdateRecordSetWithLineReq
+    def __init__(self, status=None, recordset_ids=None):
+        """BatchSetRecordSetsStatusRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param recordsets: RecordSet 列表。
-        :type recordsets: list[:class:`huaweicloudsdkdns.v2.BatchUpdateRecordSet`]
+        :param status: 待设置Record Set状态，当前仅支持DISABLE或ENABLE。
+        :type status: str
+        :param recordset_ids: 待设置Record Set ID列表。 最多支持50个。
+        :type recordset_ids: list[str]
         """
         
         
 
-        self._recordsets = None
+        self._status = None
+        self._recordset_ids = None
         self.discriminator = None
 
-        self.recordsets = recordsets
+        self.status = status
+        self.recordset_ids = recordset_ids
 
     @property
-    def recordsets(self):
-        """Gets the recordsets of this BatchUpdateRecordSetWithLineReq.
+    def status(self):
+        """Gets the status of this BatchSetRecordSetsStatusRequestBody.
 
-        RecordSet 列表。
+        待设置Record Set状态，当前仅支持DISABLE或ENABLE。
 
-        :return: The recordsets of this BatchUpdateRecordSetWithLineReq.
-        :rtype: list[:class:`huaweicloudsdkdns.v2.BatchUpdateRecordSet`]
+        :return: The status of this BatchSetRecordSetsStatusRequestBody.
+        :rtype: str
         """
-        return self._recordsets
+        return self._status
 
-    @recordsets.setter
-    def recordsets(self, recordsets):
-        """Sets the recordsets of this BatchUpdateRecordSetWithLineReq.
+    @status.setter
+    def status(self, status):
+        """Sets the status of this BatchSetRecordSetsStatusRequestBody.
 
-        RecordSet 列表。
+        待设置Record Set状态，当前仅支持DISABLE或ENABLE。
 
-        :param recordsets: The recordsets of this BatchUpdateRecordSetWithLineReq.
-        :type recordsets: list[:class:`huaweicloudsdkdns.v2.BatchUpdateRecordSet`]
+        :param status: The status of this BatchSetRecordSetsStatusRequestBody.
+        :type status: str
         """
-        self._recordsets = recordsets
+        self._status = status
+
+    @property
+    def recordset_ids(self):
+        """Gets the recordset_ids of this BatchSetRecordSetsStatusRequestBody.
+
+        待设置Record Set ID列表。 最多支持50个。
+
+        :return: The recordset_ids of this BatchSetRecordSetsStatusRequestBody.
+        :rtype: list[str]
+        """
+        return self._recordset_ids
+
+    @recordset_ids.setter
+    def recordset_ids(self, recordset_ids):
+        """Sets the recordset_ids of this BatchSetRecordSetsStatusRequestBody.
+
+        待设置Record Set ID列表。 最多支持50个。
+
+        :param recordset_ids: The recordset_ids of this BatchSetRecordSetsStatusRequestBody.
+        :type recordset_ids: list[str]
+        """
+        self._recordset_ids = recordset_ids
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -104,7 +132,7 @@ class BatchUpdateRecordSetWithLineReq:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, BatchUpdateRecordSetWithLineReq):
+        if not isinstance(other, BatchSetRecordSetsStatusRequestBody):
             return False
 
         return self.__dict__ == other.__dict__

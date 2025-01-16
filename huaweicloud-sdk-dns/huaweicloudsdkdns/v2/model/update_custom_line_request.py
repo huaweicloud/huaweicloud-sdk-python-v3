@@ -18,7 +18,7 @@ class UpdateCustomLineRequest:
 
     openapi_types = {
         'line_id': 'str',
-        'body': 'UpdateCustomsLineReq'
+        'body': 'UpdateCustomLineRequestBody'
     }
 
     attribute_map = {
@@ -31,10 +31,10 @@ class UpdateCustomLineRequest:
 
         The model defined in huaweicloud sdk
 
-        :param line_id: 解析线路ID。
+        :param line_id: 自定义线路id
         :type line_id: str
         :param body: Body of the UpdateCustomLineRequest
-        :type body: :class:`huaweicloudsdkdns.v2.UpdateCustomsLineReq`
+        :type body: :class:`huaweicloudsdkdns.v2.UpdateCustomLineRequestBody`
         """
         
         
@@ -51,7 +51,7 @@ class UpdateCustomLineRequest:
     def line_id(self):
         """Gets the line_id of this UpdateCustomLineRequest.
 
-        解析线路ID。
+        自定义线路id
 
         :return: The line_id of this UpdateCustomLineRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class UpdateCustomLineRequest:
     def line_id(self, line_id):
         """Sets the line_id of this UpdateCustomLineRequest.
 
-        解析线路ID。
+        自定义线路id
 
         :param line_id: The line_id of this UpdateCustomLineRequest.
         :type line_id: str
@@ -74,7 +74,7 @@ class UpdateCustomLineRequest:
         """Gets the body of this UpdateCustomLineRequest.
 
         :return: The body of this UpdateCustomLineRequest.
-        :rtype: :class:`huaweicloudsdkdns.v2.UpdateCustomsLineReq`
+        :rtype: :class:`huaweicloudsdkdns.v2.UpdateCustomLineRequestBody`
         """
         return self._body
 
@@ -83,7 +83,7 @@ class UpdateCustomLineRequest:
         """Sets the body of this UpdateCustomLineRequest.
 
         :param body: The body of this UpdateCustomLineRequest.
-        :type body: :class:`huaweicloudsdkdns.v2.UpdateCustomsLineReq`
+        :type body: :class:`huaweicloudsdkdns.v2.UpdateCustomLineRequestBody`
         """
         self._body = body
 

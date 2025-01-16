@@ -44,7 +44,8 @@ class ListTopicAttributesRequest:
         self.discriminator = None
 
         self.topic_urn = topic_urn
-        self.name = name
+        if name is not None:
+            self.name = name
 
     @property
     def topic_urn(self):

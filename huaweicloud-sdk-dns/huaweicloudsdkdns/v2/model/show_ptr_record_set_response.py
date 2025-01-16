@@ -54,7 +54,7 @@ class ShowPtrRecordSetResponse(SdkResponse):
         :type description: str
         :param ttl: PTR记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
         :type ttl: int
-        :param address: 弹性IP的IP地址。
+        :param address: 弹性公网IP的IP地址。
         :type address: str
         :param status: 资源状态。
         :type status: str
@@ -190,7 +190,7 @@ class ShowPtrRecordSetResponse(SdkResponse):
     def address(self):
         """Gets the address of this ShowPtrRecordSetResponse.
 
-        弹性IP的IP地址。
+        弹性公网IP的IP地址。
 
         :return: The address of this ShowPtrRecordSetResponse.
         :rtype: str
@@ -201,7 +201,7 @@ class ShowPtrRecordSetResponse(SdkResponse):
     def address(self, address):
         """Sets the address of this ShowPtrRecordSetResponse.
 
-        弹性IP的IP地址。
+        弹性公网IP的IP地址。
 
         :param address: The address of this ShowPtrRecordSetResponse.
         :type address: str

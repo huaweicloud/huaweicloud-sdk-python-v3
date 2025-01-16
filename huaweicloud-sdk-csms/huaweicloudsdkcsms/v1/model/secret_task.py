@@ -21,9 +21,9 @@ class SecretTask:
         'secret_name': 'str',
         'rotation_func_urn': 'str',
         'task_status': 'str',
-        'attempt_nums': 'int',
         'operate_type': 'str',
         'task_time': 'int',
+        'attempt_nums': 'int',
         'task_error_code': 'str',
         'task_error_msg': 'str'
     }
@@ -33,14 +33,14 @@ class SecretTask:
         'secret_name': 'secret_name',
         'rotation_func_urn': 'rotation_func_urn',
         'task_status': 'task_status',
-        'attempt_nums': 'attempt_nums',
         'operate_type': 'operate_type',
         'task_time': 'task_time',
+        'attempt_nums': 'attempt_nums',
         'task_error_code': 'task_error_code',
         'task_error_msg': 'task_error_msg'
     }
 
-    def __init__(self, task_id=None, secret_name=None, rotation_func_urn=None, task_status=None, attempt_nums=None, operate_type=None, task_time=None, task_error_code=None, task_error_msg=None):
+    def __init__(self, task_id=None, secret_name=None, rotation_func_urn=None, task_status=None, operate_type=None, task_time=None, attempt_nums=None, task_error_code=None, task_error_msg=None):
         """SecretTask
 
         The model defined in huaweicloud sdk
@@ -53,12 +53,12 @@ class SecretTask:
         :type rotation_func_urn: str
         :param task_status: 任务状态。
         :type task_status: str
-        :param attempt_nums: 任务尝试次数。
-        :type attempt_nums: int
         :param operate_type: 轮转类型。
         :type operate_type: str
         :param task_time: 任务创建时间。
         :type task_time: int
+        :param attempt_nums: 轮转尝试次数。
+        :type attempt_nums: int
         :param task_error_code: 任务错误码。
         :type task_error_code: str
         :param task_error_msg: 任务错误信息。
@@ -71,9 +71,9 @@ class SecretTask:
         self._secret_name = None
         self._rotation_func_urn = None
         self._task_status = None
-        self._attempt_nums = None
         self._operate_type = None
         self._task_time = None
+        self._attempt_nums = None
         self._task_error_code = None
         self._task_error_msg = None
         self.discriminator = None
@@ -86,12 +86,12 @@ class SecretTask:
             self.rotation_func_urn = rotation_func_urn
         if task_status is not None:
             self.task_status = task_status
-        if attempt_nums is not None:
-            self.attempt_nums = attempt_nums
         if operate_type is not None:
             self.operate_type = operate_type
         if task_time is not None:
             self.task_time = task_time
+        if attempt_nums is not None:
+            self.attempt_nums = attempt_nums
         if task_error_code is not None:
             self.task_error_code = task_error_code
         if task_error_msg is not None:
@@ -186,28 +186,6 @@ class SecretTask:
         self._task_status = task_status
 
     @property
-    def attempt_nums(self):
-        """Gets the attempt_nums of this SecretTask.
-
-        任务尝试次数。
-
-        :return: The attempt_nums of this SecretTask.
-        :rtype: int
-        """
-        return self._attempt_nums
-
-    @attempt_nums.setter
-    def attempt_nums(self, attempt_nums):
-        """Sets the attempt_nums of this SecretTask.
-
-        任务尝试次数。
-
-        :param attempt_nums: The attempt_nums of this SecretTask.
-        :type attempt_nums: int
-        """
-        self._attempt_nums = attempt_nums
-
-    @property
     def operate_type(self):
         """Gets the operate_type of this SecretTask.
 
@@ -250,6 +228,28 @@ class SecretTask:
         :type task_time: int
         """
         self._task_time = task_time
+
+    @property
+    def attempt_nums(self):
+        """Gets the attempt_nums of this SecretTask.
+
+        轮转尝试次数。
+
+        :return: The attempt_nums of this SecretTask.
+        :rtype: int
+        """
+        return self._attempt_nums
+
+    @attempt_nums.setter
+    def attempt_nums(self, attempt_nums):
+        """Sets the attempt_nums of this SecretTask.
+
+        轮转尝试次数。
+
+        :param attempt_nums: The attempt_nums of this SecretTask.
+        :type attempt_nums: int
+        """
+        self._attempt_nums = attempt_nums
 
     @property
     def task_error_code(self):

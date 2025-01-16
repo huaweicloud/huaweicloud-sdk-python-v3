@@ -33,7 +33,8 @@ class CloudWafHostItem:
         'exclusive_ip': 'bool',
         'paid_type': 'str',
         'web_tag': 'str',
-        'flag': 'Flag'
+        'flag': 'Flag',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -53,10 +54,11 @@ class CloudWafHostItem:
         'exclusive_ip': 'exclusive_ip',
         'paid_type': 'paid_type',
         'web_tag': 'web_tag',
-        'flag': 'flag'
+        'flag': 'flag',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, id=None, hostid=None, region=None, description=None, server=None, type=None, proxy=None, hostname=None, access_code=None, policyid=None, timestamp=None, protect_status=None, access_status=None, exclusive_ip=None, paid_type=None, web_tag=None, flag=None):
+    def __init__(self, id=None, hostid=None, region=None, description=None, server=None, type=None, proxy=None, hostname=None, access_code=None, policyid=None, timestamp=None, protect_status=None, access_status=None, exclusive_ip=None, paid_type=None, web_tag=None, flag=None, enterprise_project_id=None):
         """CloudWafHostItem
 
         The model defined in huaweicloud sdk
@@ -95,6 +97,8 @@ class CloudWafHostItem:
         :type web_tag: str
         :param flag: 
         :type flag: :class:`huaweicloudsdkwaf.v1.Flag`
+        :param enterprise_project_id: 企业项目id
+        :type enterprise_project_id: str
         """
         
         
@@ -116,6 +120,7 @@ class CloudWafHostItem:
         self._paid_type = None
         self._web_tag = None
         self._flag = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         if id is not None:
@@ -152,6 +157,8 @@ class CloudWafHostItem:
             self.web_tag = web_tag
         if flag is not None:
             self.flag = flag
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def id(self):
@@ -522,6 +529,28 @@ class CloudWafHostItem:
         :type flag: :class:`huaweicloudsdkwaf.v1.Flag`
         """
         self._flag = flag
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this CloudWafHostItem.
+
+        企业项目id
+
+        :return: The enterprise_project_id of this CloudWafHostItem.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this CloudWafHostItem.
+
+        企业项目id
+
+        :param enterprise_project_id: The enterprise_project_id of this CloudWafHostItem.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

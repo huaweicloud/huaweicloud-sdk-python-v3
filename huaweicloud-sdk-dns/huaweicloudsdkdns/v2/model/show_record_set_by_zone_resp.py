@@ -25,8 +25,8 @@ class ShowRecordSetByZoneResp:
         'type': 'str',
         'ttl': 'int',
         'records': 'list[str]',
-        'create_at': 'str',
-        'update_at': 'str',
+        'created_at': 'str',
+        'updated_at': 'str',
         'status': 'str',
         'default': 'bool',
         'project_id': 'str',
@@ -46,8 +46,8 @@ class ShowRecordSetByZoneResp:
         'type': 'type',
         'ttl': 'ttl',
         'records': 'records',
-        'create_at': 'create_at',
-        'update_at': 'update_at',
+        'created_at': 'created_at',
+        'updated_at': 'updated_at',
         'status': 'status',
         'default': 'default',
         'project_id': 'project_id',
@@ -58,7 +58,7 @@ class ShowRecordSetByZoneResp:
         'alias_target': 'alias_target'
     }
 
-    def __init__(self, id=None, name=None, description=None, zone_id=None, zone_name=None, type=None, ttl=None, records=None, create_at=None, update_at=None, status=None, default=None, project_id=None, links=None, line=None, weight=None, health_check_id=None, alias_target=None):
+    def __init__(self, id=None, name=None, description=None, zone_id=None, zone_name=None, type=None, ttl=None, records=None, created_at=None, updated_at=None, status=None, default=None, project_id=None, links=None, line=None, weight=None, health_check_id=None, alias_target=None):
         """ShowRecordSetByZoneResp
 
         The model defined in huaweicloud sdk
@@ -79,10 +79,10 @@ class ShowRecordSetByZoneResp:
         :type ttl: int
         :param records: 域名解析后的值。
         :type records: list[str]
-        :param create_at: 创建时间。
-        :type create_at: str
-        :param update_at: 更新时间。
-        :type update_at: str
+        :param created_at: 创建时间。
+        :type created_at: str
+        :param updated_at: 更新时间。
+        :type updated_at: str
         :param status: 资源状态。
         :type status: str
         :param default: 标识是否由系统默认生成，系统默认生成的Record Set不能删除。
@@ -111,8 +111,8 @@ class ShowRecordSetByZoneResp:
         self._type = None
         self._ttl = None
         self._records = None
-        self._create_at = None
-        self._update_at = None
+        self._created_at = None
+        self._updated_at = None
         self._status = None
         self._default = None
         self._project_id = None
@@ -139,10 +139,10 @@ class ShowRecordSetByZoneResp:
             self.ttl = ttl
         if records is not None:
             self.records = records
-        if create_at is not None:
-            self.create_at = create_at
-        if update_at is not None:
-            self.update_at = update_at
+        if created_at is not None:
+            self.created_at = created_at
+        if updated_at is not None:
+            self.updated_at = updated_at
         if status is not None:
             self.status = status
         if default is not None:
@@ -337,48 +337,48 @@ class ShowRecordSetByZoneResp:
         self._records = records
 
     @property
-    def create_at(self):
-        """Gets the create_at of this ShowRecordSetByZoneResp.
+    def created_at(self):
+        """Gets the created_at of this ShowRecordSetByZoneResp.
 
         创建时间。
 
-        :return: The create_at of this ShowRecordSetByZoneResp.
+        :return: The created_at of this ShowRecordSetByZoneResp.
         :rtype: str
         """
-        return self._create_at
+        return self._created_at
 
-    @create_at.setter
-    def create_at(self, create_at):
-        """Sets the create_at of this ShowRecordSetByZoneResp.
+    @created_at.setter
+    def created_at(self, created_at):
+        """Sets the created_at of this ShowRecordSetByZoneResp.
 
         创建时间。
 
-        :param create_at: The create_at of this ShowRecordSetByZoneResp.
-        :type create_at: str
+        :param created_at: The created_at of this ShowRecordSetByZoneResp.
+        :type created_at: str
         """
-        self._create_at = create_at
+        self._created_at = created_at
 
     @property
-    def update_at(self):
-        """Gets the update_at of this ShowRecordSetByZoneResp.
+    def updated_at(self):
+        """Gets the updated_at of this ShowRecordSetByZoneResp.
 
         更新时间。
 
-        :return: The update_at of this ShowRecordSetByZoneResp.
+        :return: The updated_at of this ShowRecordSetByZoneResp.
         :rtype: str
         """
-        return self._update_at
+        return self._updated_at
 
-    @update_at.setter
-    def update_at(self, update_at):
-        """Sets the update_at of this ShowRecordSetByZoneResp.
+    @updated_at.setter
+    def updated_at(self, updated_at):
+        """Sets the updated_at of this ShowRecordSetByZoneResp.
 
         更新时间。
 
-        :param update_at: The update_at of this ShowRecordSetByZoneResp.
-        :type update_at: str
+        :param updated_at: The updated_at of this ShowRecordSetByZoneResp.
+        :type updated_at: str
         """
-        self._update_at = update_at
+        self._updated_at = updated_at
 
     @property
     def status(self):

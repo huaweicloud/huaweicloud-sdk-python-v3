@@ -23,8 +23,11 @@ class ListPublicZonesRequest:
         'offset': 'int',
         'tags': 'str',
         'name': 'str',
+        'id': 'str',
         'status': 'str',
         'search_mode': 'str',
+        'sort_key': 'str',
+        'sort_dir': 'str',
         'enterprise_project_id': 'str'
     }
 
@@ -35,17 +38,20 @@ class ListPublicZonesRequest:
         'offset': 'offset',
         'tags': 'tags',
         'name': 'name',
+        'id': 'id',
         'status': 'status',
         'search_mode': 'search_mode',
+        'sort_key': 'sort_key',
+        'sort_dir': 'sort_dir',
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, type=None, limit=None, marker=None, offset=None, tags=None, name=None, status=None, search_mode=None, enterprise_project_id=None):
+    def __init__(self, type=None, limit=None, marker=None, offset=None, tags=None, name=None, id=None, status=None, search_mode=None, sort_key=None, sort_dir=None, enterprise_project_id=None):
         """ListPublicZonesRequest
 
         The model defined in huaweicloud sdk
 
-        :param type: 待查询的zone的类型。  取值范围：public  搜索模式默认为模糊搜索。  默认值为空。
+        :param type: 待查询的zone的类型。  取值范围：public 默认值为空。
         :type type: str
         :param limit: 每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
         :type limit: int
@@ -55,13 +61,19 @@ class ListPublicZonesRequest:
         :type offset: int
         :param tags: 资源标签。  取值格式：key1,value1|key2,value2  多个标签之间用\&quot;|\&quot;分开，每个标签的键值用英文逗号\&quot;,\&quot;相隔。  多个标签之间为“与”的关系。  关于资源标签，请参见添加资源标签。  搜索模式为精确搜索。如果资源标签值value是以&amp;ast;开头时，则按照&amp;ast;后面的值全模糊匹配。  默认值为空。
         :type tags: str
-        :param name: zone名称。  搜索模式默认为模糊搜索。
+        :param name: Zone名称。  搜索模式默认为模糊搜索。
         :type name: str
+        :param id: Zone ID。
+        :type id: str
         :param status: 资源状态。
         :type status: str
         :param search_mode: 查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索
         :type search_mode: str
-        :param enterprise_project_id: 域名关联的企业项目ID，长度不超过36个字符。  默认值为0。
+        :param sort_key: 查询结果中zone列表的排序字段。  取值范围为：  name：域名 created_at：创建时间 updated_at：更新时间 默认值为空，表示不排序。
+        :type sort_key: str
+        :param sort_dir: 查询结果中zone列表的排序方式。  取值范围：  desc：降序排序 asc：升序排序 默认值为空，表示不排序。
+        :type sort_dir: str
+        :param enterprise_project_id: 域名关联的企业项目ID，长度不超过36个字符。
         :type enterprise_project_id: str
         """
         
@@ -73,8 +85,11 @@ class ListPublicZonesRequest:
         self._offset = None
         self._tags = None
         self._name = None
+        self._id = None
         self._status = None
         self._search_mode = None
+        self._sort_key = None
+        self._sort_dir = None
         self._enterprise_project_id = None
         self.discriminator = None
 
@@ -90,10 +105,16 @@ class ListPublicZonesRequest:
             self.tags = tags
         if name is not None:
             self.name = name
+        if id is not None:
+            self.id = id
         if status is not None:
             self.status = status
         if search_mode is not None:
             self.search_mode = search_mode
+        if sort_key is not None:
+            self.sort_key = sort_key
+        if sort_dir is not None:
+            self.sort_dir = sort_dir
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
 
@@ -101,7 +122,7 @@ class ListPublicZonesRequest:
     def type(self):
         """Gets the type of this ListPublicZonesRequest.
 
-        待查询的zone的类型。  取值范围：public  搜索模式默认为模糊搜索。  默认值为空。
+        待查询的zone的类型。  取值范围：public 默认值为空。
 
         :return: The type of this ListPublicZonesRequest.
         :rtype: str
@@ -112,7 +133,7 @@ class ListPublicZonesRequest:
     def type(self, type):
         """Sets the type of this ListPublicZonesRequest.
 
-        待查询的zone的类型。  取值范围：public  搜索模式默认为模糊搜索。  默认值为空。
+        待查询的zone的类型。  取值范围：public 默认值为空。
 
         :param type: The type of this ListPublicZonesRequest.
         :type type: str
@@ -211,7 +232,7 @@ class ListPublicZonesRequest:
     def name(self):
         """Gets the name of this ListPublicZonesRequest.
 
-        zone名称。  搜索模式默认为模糊搜索。
+        Zone名称。  搜索模式默认为模糊搜索。
 
         :return: The name of this ListPublicZonesRequest.
         :rtype: str
@@ -222,12 +243,34 @@ class ListPublicZonesRequest:
     def name(self, name):
         """Sets the name of this ListPublicZonesRequest.
 
-        zone名称。  搜索模式默认为模糊搜索。
+        Zone名称。  搜索模式默认为模糊搜索。
 
         :param name: The name of this ListPublicZonesRequest.
         :type name: str
         """
         self._name = name
+
+    @property
+    def id(self):
+        """Gets the id of this ListPublicZonesRequest.
+
+        Zone ID。
+
+        :return: The id of this ListPublicZonesRequest.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this ListPublicZonesRequest.
+
+        Zone ID。
+
+        :param id: The id of this ListPublicZonesRequest.
+        :type id: str
+        """
+        self._id = id
 
     @property
     def status(self):
@@ -274,10 +317,54 @@ class ListPublicZonesRequest:
         self._search_mode = search_mode
 
     @property
+    def sort_key(self):
+        """Gets the sort_key of this ListPublicZonesRequest.
+
+        查询结果中zone列表的排序字段。  取值范围为：  name：域名 created_at：创建时间 updated_at：更新时间 默认值为空，表示不排序。
+
+        :return: The sort_key of this ListPublicZonesRequest.
+        :rtype: str
+        """
+        return self._sort_key
+
+    @sort_key.setter
+    def sort_key(self, sort_key):
+        """Sets the sort_key of this ListPublicZonesRequest.
+
+        查询结果中zone列表的排序字段。  取值范围为：  name：域名 created_at：创建时间 updated_at：更新时间 默认值为空，表示不排序。
+
+        :param sort_key: The sort_key of this ListPublicZonesRequest.
+        :type sort_key: str
+        """
+        self._sort_key = sort_key
+
+    @property
+    def sort_dir(self):
+        """Gets the sort_dir of this ListPublicZonesRequest.
+
+        查询结果中zone列表的排序方式。  取值范围：  desc：降序排序 asc：升序排序 默认值为空，表示不排序。
+
+        :return: The sort_dir of this ListPublicZonesRequest.
+        :rtype: str
+        """
+        return self._sort_dir
+
+    @sort_dir.setter
+    def sort_dir(self, sort_dir):
+        """Sets the sort_dir of this ListPublicZonesRequest.
+
+        查询结果中zone列表的排序方式。  取值范围：  desc：降序排序 asc：升序排序 默认值为空，表示不排序。
+
+        :param sort_dir: The sort_dir of this ListPublicZonesRequest.
+        :type sort_dir: str
+        """
+        self._sort_dir = sort_dir
+
+    @property
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListPublicZonesRequest.
 
-        域名关联的企业项目ID，长度不超过36个字符。  默认值为0。
+        域名关联的企业项目ID，长度不超过36个字符。
 
         :return: The enterprise_project_id of this ListPublicZonesRequest.
         :rtype: str
@@ -288,7 +375,7 @@ class ListPublicZonesRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListPublicZonesRequest.
 
-        域名关联的企业项目ID，长度不超过36个字符。  默认值为0。
+        域名关联的企业项目ID，长度不超过36个字符。
 
         :param enterprise_project_id: The enterprise_project_id of this ListPublicZonesRequest.
         :type enterprise_project_id: str

@@ -21,7 +21,8 @@ class PermissionClusterDetail:
         'can_edit': 'bool',
         'can_delete': 'bool',
         'can_add_host': 'bool',
-        'can_manage': 'bool'
+        'can_manage': 'bool',
+        'can_copy': 'bool'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class PermissionClusterDetail:
         'can_edit': 'can_edit',
         'can_delete': 'can_delete',
         'can_add_host': 'can_add_host',
-        'can_manage': 'can_manage'
+        'can_manage': 'can_manage',
+        'can_copy': 'can_copy'
     }
 
-    def __init__(self, can_view=None, can_edit=None, can_delete=None, can_add_host=None, can_manage=None):
+    def __init__(self, can_view=None, can_edit=None, can_delete=None, can_add_host=None, can_manage=None, can_copy=None):
         """PermissionClusterDetail
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class PermissionClusterDetail:
         :type can_add_host: bool
         :param can_manage: 是否有编辑主机集群权限矩阵的权限
         :type can_manage: bool
+        :param can_copy: 是否有复制主机权限
+        :type can_copy: bool
         """
         
         
@@ -56,6 +60,7 @@ class PermissionClusterDetail:
         self._can_delete = None
         self._can_add_host = None
         self._can_manage = None
+        self._can_copy = None
         self.discriminator = None
 
         if can_view is not None:
@@ -68,6 +73,8 @@ class PermissionClusterDetail:
             self.can_add_host = can_add_host
         if can_manage is not None:
             self.can_manage = can_manage
+        if can_copy is not None:
+            self.can_copy = can_copy
 
     @property
     def can_view(self):
@@ -178,6 +185,28 @@ class PermissionClusterDetail:
         :type can_manage: bool
         """
         self._can_manage = can_manage
+
+    @property
+    def can_copy(self):
+        """Gets the can_copy of this PermissionClusterDetail.
+
+        是否有复制主机权限
+
+        :return: The can_copy of this PermissionClusterDetail.
+        :rtype: bool
+        """
+        return self._can_copy
+
+    @can_copy.setter
+    def can_copy(self, can_copy):
+        """Sets the can_copy of this PermissionClusterDetail.
+
+        是否有复制主机权限
+
+        :param can_copy: The can_copy of this PermissionClusterDetail.
+        :type can_copy: bool
+        """
+        self._can_copy = can_copy
 
     def to_dict(self):
         """Returns the model properties as a dict"""

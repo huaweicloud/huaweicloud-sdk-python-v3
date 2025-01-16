@@ -32,6 +32,274 @@ class DnsAsyncClient(Client):
 
         return client_builder
 
+    def batch_delete_record_sets_async(self, request):
+        """批量删除Record Set
+
+        批量删除Record Set。
+        响应结果中只包含本次实际删除的Record Set。
+        支持批量删除公网域名和内网域名的记录集。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteRecordSets
+        :type request: :class:`huaweicloudsdkdns.v2.BatchDeleteRecordSetsRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.BatchDeleteRecordSetsResponse`
+        """
+        http_info = self._batch_delete_record_sets_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_record_sets_async_invoker(self, request):
+        http_info = self._batch_delete_record_sets_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_record_sets_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2.1/recordsets",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteRecordSetsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_zones_async(self, request):
+        """批量删除Zone
+
+        批量删除Zone。
+        本接口为原子操作，所有记录应全部删除成功或全部失败。
+        仅支持公网Zone、内网Zone。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteZones
+        :type request: :class:`huaweicloudsdkdns.v2.BatchDeleteZonesRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.BatchDeleteZonesResponse`
+        """
+        http_info = self._batch_delete_zones_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_zones_async_invoker(self, request):
+        http_info = self._batch_delete_zones_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_zones_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2.1/zones",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteZonesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_set_record_sets_status_async(self, request):
+        """批量设置Record Set状态
+
+        批量设置Record Set状态。
+        响应结果中只包含本次实际更新的Record Set。
+        支持公网域名和内网域名的记录集。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchSetRecordSetsStatus
+        :type request: :class:`huaweicloudsdkdns.v2.BatchSetRecordSetsStatusRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.BatchSetRecordSetsStatusResponse`
+        """
+        http_info = self._batch_set_record_sets_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_set_record_sets_status_async_invoker(self, request):
+        http_info = self._batch_set_record_sets_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_set_record_sets_status_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2.1/recordsets/statuses",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchSetRecordSetsStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_set_zones_status_async(self, request):
+        """批量设置Zone状态
+
+        批量设置Zone状态。
+        响应结果中只包含本次实际更新的Zone。
+        仅支持公网Zone、内网Zone。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchSetZonesStatus
+        :type request: :class:`huaweicloudsdkdns.v2.BatchSetZonesStatusRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.BatchSetZonesStatusResponse`
+        """
+        http_info = self._batch_set_zones_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_set_zones_status_async_invoker(self, request):
+        http_info = self._batch_set_zones_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_set_zones_status_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2.1/zones/statuses",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchSetZonesStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_custom_line_async(self, request):
         """创建单个自定义线路
 
@@ -401,6 +669,10 @@ class DnsAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'show_detail' in local_var_params:
             query_params.append(('show_detail', local_var_params['show_detail']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'ip' in local_var_params:
+            query_params.append(('ip', local_var_params['ip']))
 
         header_params = {}
 
@@ -896,9 +1168,9 @@ class DnsAsyncClient(Client):
         return http_info
 
     def create_eip_record_set_async(self, request):
-        """设置弹性IP的PTR记录
+        """设置弹性公网IP的PTR记录
 
-        设置弹性IP的PTR记录
+        设置弹性公网IP的PTR记录
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -965,9 +1237,9 @@ class DnsAsyncClient(Client):
         return http_info
 
     def list_ptr_records_async(self, request):
-        """查询租户弹性IP的PTR记录列表
+        """查询租户弹性公网IP的PTR记录列表
 
-        查询租户弹性IP的PTR记录列表
+        查询租户弹性公网IP的PTR记录列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1040,9 +1312,9 @@ class DnsAsyncClient(Client):
         return http_info
 
     def restore_ptr_record_async(self, request):
-        """将弹性IP的PTR记录恢复为默认值
+        """将弹性公网IP的PTR记录恢复为默认值
 
-        将弹性IP的PTR记录恢复为默认值
+        将弹性公网IP的PTR记录恢复为默认值
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1109,9 +1381,9 @@ class DnsAsyncClient(Client):
         return http_info
 
     def show_ptr_record_set_async(self, request):
-        """查询单个弹性IP的PTR记录
+        """查询单个弹性公网IP的PTR记录
 
-        查询单个弹性IP的PTR记录
+        查询单个弹性公网IP的PTR记录
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1176,9 +1448,9 @@ class DnsAsyncClient(Client):
         return http_info
 
     def update_ptr_record_async(self, request):
-        """修改弹性IP的PTR记录
+        """修改弹性公网IP的PTR记录
 
-        修改弹性IP的PTR记录
+        修改弹性公网IP的PTR记录
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1935,6 +2207,8 @@ class DnsAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+        if 'zone_id' in local_var_params:
+            query_params.append(('zone_id', local_var_params['zone_id']))
         if 'line_id' in local_var_params:
             query_params.append(('line_id', local_var_params['line_id']))
         if 'tags' in local_var_params:
@@ -3260,12 +3534,20 @@ class DnsAsyncClient(Client):
             query_params.append(('tags', local_var_params['tags']))
         if 'name' in local_var_params:
             query_params.append(('name', local_var_params['name']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
         if 'status' in local_var_params:
             query_params.append(('status', local_var_params['status']))
         if 'search_mode' in local_var_params:
             query_params.append(('search_mode', local_var_params['search_mode']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'router_id' in local_var_params:
+            query_params.append(('router_id', local_var_params['router_id']))
 
         header_params = {}
 
@@ -3341,10 +3623,16 @@ class DnsAsyncClient(Client):
             query_params.append(('tags', local_var_params['tags']))
         if 'name' in local_var_params:
             query_params.append(('name', local_var_params['name']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
         if 'status' in local_var_params:
             query_params.append(('status', local_var_params['status']))
         if 'search_mode' in local_var_params:
             query_params.append(('search_mode', local_var_params['search_mode']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 

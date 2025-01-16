@@ -11921,6 +11921,75 @@ class GaussDBClient(Client):
 
         return http_info
 
+    def list_star_rocks_data_replication_config_by_data_base(self, request):
+        """按目标库查询StarRocks数据同步配置信息
+
+        按目标库查询StarRocks数据同步配置信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListStarRocksDataReplicationConfigByDataBase
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ListStarRocksDataReplicationConfigByDataBaseRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ListStarRocksDataReplicationConfigByDataBaseResponse`
+        """
+        http_info = self._list_star_rocks_data_replication_config_by_data_base_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_star_rocks_data_replication_config_by_data_base_invoker(self, request):
+        http_info = self._list_star_rocks_data_replication_config_by_data_base_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_star_rocks_data_replication_config_by_data_base_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/starrocks/databases/replication/configuration/{database}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListStarRocksDataReplicationConfigByDataBaseResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'database' in local_var_params:
+            path_params['database'] = local_var_params['database']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_star_rocks_data_replications(self, request):
         """查询StarRocks数据同步状态信息
 
@@ -12030,6 +12099,8 @@ class GaussDBClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
+        if 'add_task_scenario' in local_var_params:
+            query_params.append(('add_task_scenario', local_var_params['add_task_scenario']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -12114,6 +12185,75 @@ class GaussDBClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def modify_data_sync(self, request):
+        """修改StarRocks数据同步配置
+
+        修改StarRocks数据同步配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ModifyDataSync
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ModifyDataSyncRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ModifyDataSyncResponse`
+        """
+        http_info = self._modify_data_sync_http_info(request)
+        return self._call_api(**http_info)
+
+    def modify_data_sync_invoker(self, request):
+        http_info = self._modify_data_sync_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _modify_data_sync_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/starrocks/databases/replication",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyDataSyncResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -13681,6 +13821,75 @@ class GaussDBClient(Client):
             "resource_path": "/v3/{project_id}/instances/{instance_id}/starrocks/configurations",
             "request_type": request.__class__.__name__,
             "response_type": "UpdateStarrocksParamsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def upgrade_sr_kernel_version(self, request):
+        """StarRocks内核版本升级
+
+        StarRocks内核版本升级。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpgradeSrKernelVersion
+        :type request: :class:`huaweicloudsdkgaussdb.v3.UpgradeSrKernelVersionRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.UpgradeSrKernelVersionResponse`
+        """
+        http_info = self._upgrade_sr_kernel_version_http_info(request)
+        return self._call_api(**http_info)
+
+    def upgrade_sr_kernel_version_invoker(self, request):
+        http_info = self._upgrade_sr_kernel_version_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _upgrade_sr_kernel_version_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/starrocks/db-upgrade",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpgradeSrKernelVersionResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

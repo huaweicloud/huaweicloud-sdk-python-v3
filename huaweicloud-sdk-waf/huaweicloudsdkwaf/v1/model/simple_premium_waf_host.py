@@ -27,7 +27,8 @@ class SimplePremiumWafHost:
         'protect_status': 'int',
         'access_status': 'int',
         'web_tag': 'str',
-        'hostid': 'str'
+        'hostid': 'str',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class SimplePremiumWafHost:
         'protect_status': 'protect_status',
         'access_status': 'access_status',
         'web_tag': 'web_tag',
-        'hostid': 'hostid'
+        'hostid': 'hostid',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, id=None, hostname=None, extend=None, region=None, flag=None, description=None, policyid=None, protect_status=None, access_status=None, web_tag=None, hostid=None):
+    def __init__(self, id=None, hostname=None, extend=None, region=None, flag=None, description=None, policyid=None, protect_status=None, access_status=None, web_tag=None, hostid=None, enterprise_project_id=None):
         """SimplePremiumWafHost
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class SimplePremiumWafHost:
         :type web_tag: str
         :param hostid: 域名id，和id的值是一样的，属于冗余字段
         :type hostid: str
+        :param enterprise_project_id: 企业项目id
+        :type enterprise_project_id: str
         """
         
         
@@ -86,6 +90,7 @@ class SimplePremiumWafHost:
         self._access_status = None
         self._web_tag = None
         self._hostid = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         if id is not None:
@@ -110,6 +115,8 @@ class SimplePremiumWafHost:
             self.web_tag = web_tag
         if hostid is not None:
             self.hostid = hostid
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def id(self):
@@ -348,6 +355,28 @@ class SimplePremiumWafHost:
         :type hostid: str
         """
         self._hostid = hostid
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this SimplePremiumWafHost.
+
+        企业项目id
+
+        :return: The enterprise_project_id of this SimplePremiumWafHost.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this SimplePremiumWafHost.
+
+        企业项目id
+
+        :param enterprise_project_id: The enterprise_project_id of this SimplePremiumWafHost.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

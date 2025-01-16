@@ -20,16 +20,18 @@ class ListGdgwRouteTablesResponse(SdkResponse):
     openapi_types = {
         'request_id': 'str',
         'gdgw_routetables': 'list[CommonRoutetable]',
+        'total_count': 'int',
         'page_info': 'PageInfo'
     }
 
     attribute_map = {
         'request_id': 'request_id',
         'gdgw_routetables': 'gdgw_routetables',
+        'total_count': 'total_count',
         'page_info': 'page_info'
     }
 
-    def __init__(self, request_id=None, gdgw_routetables=None, page_info=None):
+    def __init__(self, request_id=None, gdgw_routetables=None, total_count=None, page_info=None):
         """ListGdgwRouteTablesResponse
 
         The model defined in huaweicloud sdk
@@ -38,6 +40,8 @@ class ListGdgwRouteTablesResponse(SdkResponse):
         :type request_id: str
         :param gdgw_routetables: 全域接入网关路由表
         :type gdgw_routetables: list[:class:`huaweicloudsdkdc.v3.CommonRoutetable`]
+        :param total_count: 总记录数。
+        :type total_count: int
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkdc.v3.PageInfo`
         """
@@ -46,6 +50,7 @@ class ListGdgwRouteTablesResponse(SdkResponse):
 
         self._request_id = None
         self._gdgw_routetables = None
+        self._total_count = None
         self._page_info = None
         self.discriminator = None
 
@@ -53,6 +58,8 @@ class ListGdgwRouteTablesResponse(SdkResponse):
             self.request_id = request_id
         if gdgw_routetables is not None:
             self.gdgw_routetables = gdgw_routetables
+        if total_count is not None:
+            self.total_count = total_count
         if page_info is not None:
             self.page_info = page_info
 
@@ -99,6 +106,28 @@ class ListGdgwRouteTablesResponse(SdkResponse):
         :type gdgw_routetables: list[:class:`huaweicloudsdkdc.v3.CommonRoutetable`]
         """
         self._gdgw_routetables = gdgw_routetables
+
+    @property
+    def total_count(self):
+        """Gets the total_count of this ListGdgwRouteTablesResponse.
+
+        总记录数。
+
+        :return: The total_count of this ListGdgwRouteTablesResponse.
+        :rtype: int
+        """
+        return self._total_count
+
+    @total_count.setter
+    def total_count(self, total_count):
+        """Sets the total_count of this ListGdgwRouteTablesResponse.
+
+        总记录数。
+
+        :param total_count: The total_count of this ListGdgwRouteTablesResponse.
+        :type total_count: int
+        """
+        self._total_count = total_count
 
     @property
     def page_info(self):

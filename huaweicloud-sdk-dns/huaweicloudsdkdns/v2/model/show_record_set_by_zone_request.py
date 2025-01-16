@@ -71,9 +71,9 @@ class ShowRecordSetByZoneRequest:
         :type type: str
         :param name: 待查询的Record Set的域名中包含此name。  搜索模式默认为模糊搜索。  默认值为空。
         :type name: str
-        :param id: 待查询的Record Set的id包含此id。  搜索模式默认为模糊搜索。  默认值为空。
+        :param id: 待查询的Record Set的id包含此id。
         :type id: str
-        :param sort_key: 查询结果中Record Set列表的排序字段。  取值范围：  name：域名 type：记录集类型 默认值为空，表示不排序。
+        :param sort_key: 查询结果中Record Set列表的排序字段。  取值范围：  name：记录集名称 type：记录集类型 默认值为空，表示不排序。
         :type sort_key: str
         :param sort_dir: 查询结果中Record Set列表的排序方式。  取值范围：  desc：降序排序 asc：升序排序 默认值为空，表示不排序。
         :type sort_dir: str
@@ -326,7 +326,7 @@ class ShowRecordSetByZoneRequest:
     def id(self):
         """Gets the id of this ShowRecordSetByZoneRequest.
 
-        待查询的Record Set的id包含此id。  搜索模式默认为模糊搜索。  默认值为空。
+        待查询的Record Set的id包含此id。
 
         :return: The id of this ShowRecordSetByZoneRequest.
         :rtype: str
@@ -337,7 +337,7 @@ class ShowRecordSetByZoneRequest:
     def id(self, id):
         """Sets the id of this ShowRecordSetByZoneRequest.
 
-        待查询的Record Set的id包含此id。  搜索模式默认为模糊搜索。  默认值为空。
+        待查询的Record Set的id包含此id。
 
         :param id: The id of this ShowRecordSetByZoneRequest.
         :type id: str
@@ -348,7 +348,7 @@ class ShowRecordSetByZoneRequest:
     def sort_key(self):
         """Gets the sort_key of this ShowRecordSetByZoneRequest.
 
-        查询结果中Record Set列表的排序字段。  取值范围：  name：域名 type：记录集类型 默认值为空，表示不排序。
+        查询结果中Record Set列表的排序字段。  取值范围：  name：记录集名称 type：记录集类型 默认值为空，表示不排序。
 
         :return: The sort_key of this ShowRecordSetByZoneRequest.
         :rtype: str
@@ -359,7 +359,7 @@ class ShowRecordSetByZoneRequest:
     def sort_key(self, sort_key):
         """Sets the sort_key of this ShowRecordSetByZoneRequest.
 
-        查询结果中Record Set列表的排序字段。  取值范围：  name：域名 type：记录集类型 默认值为空，表示不排序。
+        查询结果中Record Set列表的排序字段。  取值范围：  name：记录集名称 type：记录集类型 默认值为空，表示不排序。
 
         :param sort_key: The sort_key of this ShowRecordSetByZoneRequest.
         :type sort_key: str

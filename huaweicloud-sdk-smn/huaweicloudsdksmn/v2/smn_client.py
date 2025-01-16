@@ -631,6 +631,73 @@ class SmnClient(Client):
 
         return http_info
 
+    def create_notify_policy(self, request):
+        """创建通知策略
+
+        创建通知策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateNotifyPolicy
+        :type request: :class:`huaweicloudsdksmn.v2.CreateNotifyPolicyRequest`
+        :rtype: :class:`huaweicloudsdksmn.v2.CreateNotifyPolicyResponse`
+        """
+        http_info = self._create_notify_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_notify_policy_invoker(self, request):
+        http_info = self._create_notify_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_notify_policy_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/notifications/topics/{topic_urn}/notify-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateNotifyPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'topic_urn' in local_var_params:
+            path_params['topic_urn'] = local_var_params['topic_urn']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_resource_tag(self, request):
         """添加资源标签
 
@@ -869,6 +936,73 @@ class SmnClient(Client):
         path_params = {}
         if 'message_template_id' in local_var_params:
             path_params['message_template_id'] = local_var_params['message_template_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_notify_policy(self, request):
+        """删除通知策略
+
+        删除通知策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteNotifyPolicy
+        :type request: :class:`huaweicloudsdksmn.v2.DeleteNotifyPolicyRequest`
+        :rtype: :class:`huaweicloudsdksmn.v2.DeleteNotifyPolicyResponse`
+        """
+        http_info = self._delete_notify_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_notify_policy_invoker(self, request):
+        http_info = self._delete_notify_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_notify_policy_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/notifications/topics/{topic_urn}/notify-policy/{notify_policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteNotifyPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'topic_urn' in local_var_params:
+            path_params['topic_urn'] = local_var_params['topic_urn']
+        if 'notify_policy_id' in local_var_params:
+            path_params['notify_policy_id'] = local_var_params['notify_policy_id']
 
         query_params = []
 
@@ -2115,7 +2249,8 @@ class SmnClient(Client):
     def publish_message(self, request):
         """消息发布
 
-        将消息发送给Topic的所有订阅端点。当返回消息ID时，该消息已被保存并开始尝试将其推送给Topic的订阅者。三种消息发送方式
+        将消息发送给Topic的所有订阅端点。当返回消息ID时，该消息已被保存并开始尝试将其推送给Topic的订阅者。为确保您的消息能够成功推送到各个订阅者，请确保您的消息内容符合当地法律法规要求。
+        三种消息发送方式
         
         message
         
@@ -2255,6 +2390,71 @@ class SmnClient(Client):
 
         return http_info
 
+    def show_notify_policy(self, request):
+        """查询通知策略
+
+        查询通知策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowNotifyPolicy
+        :type request: :class:`huaweicloudsdksmn.v2.ShowNotifyPolicyRequest`
+        :rtype: :class:`huaweicloudsdksmn.v2.ShowNotifyPolicyResponse`
+        """
+        http_info = self._show_notify_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_notify_policy_invoker(self, request):
+        http_info = self._show_notify_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_notify_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/notifications/topics/{topic_urn}/notify-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowNotifyPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'topic_urn' in local_var_params:
+            path_params['topic_urn'] = local_var_params['topic_urn']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_logtank(self, request):
         """更新云日志
 
@@ -2360,6 +2560,75 @@ class SmnClient(Client):
         path_params = {}
         if 'message_template_id' in local_var_params:
             path_params['message_template_id'] = local_var_params['message_template_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_notify_policy(self, request):
+        """修改通知策略
+
+        修改通知策略，该接口仅支持全量修改，不支持部分修改。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateNotifyPolicy
+        :type request: :class:`huaweicloudsdksmn.v2.UpdateNotifyPolicyRequest`
+        :rtype: :class:`huaweicloudsdksmn.v2.UpdateNotifyPolicyResponse`
+        """
+        http_info = self._update_notify_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_notify_policy_invoker(self, request):
+        http_info = self._update_notify_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_notify_policy_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/notifications/topics/{topic_urn}/notify-policy/{notify_policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateNotifyPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'topic_urn' in local_var_params:
+            path_params['topic_urn'] = local_var_params['topic_urn']
+        if 'notify_policy_id' in local_var_params:
+            path_params['notify_policy_id'] = local_var_params['notify_policy_id']
 
         query_params = []
 

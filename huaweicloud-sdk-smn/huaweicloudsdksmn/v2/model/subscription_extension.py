@@ -20,29 +20,45 @@ class SubscriptionExtension:
         'client_id': 'str',
         'client_secret': 'str',
         'keyword': 'str',
-        'sign_secret': 'str'
+        'sign_secret': 'str',
+        'header': 'dict(str, str)',
+        'app_key': 'str',
+        'app_secret': 'str',
+        'robot_code': 'str'
     }
 
     attribute_map = {
         'client_id': 'client_id',
         'client_secret': 'client_secret',
         'keyword': 'keyword',
-        'sign_secret': 'sign_secret'
+        'sign_secret': 'sign_secret',
+        'header': 'header',
+        'app_key': 'app_key',
+        'app_secret': 'app_secret',
+        'robot_code': 'robot_code'
     }
 
-    def __init__(self, client_id=None, client_secret=None, keyword=None, sign_secret=None):
+    def __init__(self, client_id=None, client_secret=None, keyword=None, sign_secret=None, header=None, app_key=None, app_secret=None, robot_code=None):
         """SubscriptionExtension
 
         The model defined in huaweicloud sdk
 
-        :param client_id: 该字段为welink订阅下的租户ID字段，由租户从welink方获取。当protocol值为welink时，该字段为必填字段。
+        :param client_id: 这是应用ID字段。当protocol值为welink时，该字段为必填字段，从welink方获取。
         :type client_id: str
-        :param client_secret: 该字段为welink订阅下的租户获取的client secret字段，由租户从welink方获取。当protocol值为welink时，该字段为必填字段。
+        :param client_secret: 该字段为应用secret字段。当protocol值为welink时，该字段为必填字段，从welink方获取。
         :type client_secret: str
-        :param keyword: 该字段为关键字字段。当protocol协议为feishu时，这里的keyword字段和sign_secret字段二者必选其一。当用户在飞书或钉钉机器人端添加关键字校验的安全策略时，这里的关键字必须是飞书或钉钉端所填写的关键字之一。
+        :param keyword: 该字段为关键字字段。当protocol值为feishu时，这里的keyword字段和sign_secret字段二者必选其一。当用户在飞书或钉钉自定义机器人端添加关键字校验的安全策略时，这里的关键字必须是飞书或钉钉自定义机器人中所填写的关键字之一。
         :type keyword: str
-        :param sign_secret: 这是加签密钥字段。当protocol协议为feishu或dingding时，这个字段和keyword字段二者必选且只能选其一，密钥配置必须与客户在飞书或钉钉客户端的密钥配置完全一致。例如，如果在飞书端配置了密钥并且没有配置关键字，则在此处填入从飞书获取的密钥字段，如果在飞书端没有配置密钥并且配置了关键字，则不填写该字段。
+        :param sign_secret: 这是加签密钥字段。当protocol协议为feishu时，这个字段和keyword字段二者必选且只能选其一。密钥配置必须与客户在飞书或钉钉自定义机器人的密钥配置完全一致。例如，如果在飞书端配置了密钥并且没有配置关键字，则在此处填入从飞书获取的密钥字段，如果在飞书端没有配置密钥并且配置了关键字，则不填写该字段。
         :type sign_secret: str
+        :param header: 该字段为http header字段，用户可以在字段限制范围内自定义http header，header字段内容以KV对形式存在。当使用主题发送时，已确认的订阅发送消息会携带用户自定义的http header。 header应满足如下要求： key值限定为：包含英文字母([A-Za-z])、数字([0-9])、中划线(-)hyphens，中划线不得作为结尾，不得连续出现。 K/V不得超过10个 key需要以\&quot;x-\&quot;开头，不能以\&quot;x-smn\&quot;开头，正确示例：x-abc-cba, x-abc 所有K/V长度总和不得超过1024个字符 key不区分大小写 key值不可重复 value值限定为ASCII码，不支持中文或其他Unicode，支持空格
+        :type header: dict(str, str)
+        :param app_key: 个人钉钉appKey字段，字符长度限制64个，仅支持字母、数字、中划线(-)、下划线(_)。当订阅协议为dingTalkBot时，该字段必选。
+        :type app_key: str
+        :param app_secret: 个人钉钉appSecret字段，字符长度限制128个，仅支持字母、数字、中划线(-)、下划线(_)。当订阅协议为dingTalkBot时，该字段必选。
+        :type app_secret: str
+        :param robot_code: 个人钉钉robotCode字段，名称：机器人编码，字符长度限制64个，仅支持字母、数字、中划线(-)、下划线(_)，一般与appKey一致。当订阅协议为dingTalkBot时，该字段必选。
+        :type robot_code: str
         """
         
         
@@ -51,6 +67,10 @@ class SubscriptionExtension:
         self._client_secret = None
         self._keyword = None
         self._sign_secret = None
+        self._header = None
+        self._app_key = None
+        self._app_secret = None
+        self._robot_code = None
         self.discriminator = None
 
         if client_id is not None:
@@ -61,12 +81,20 @@ class SubscriptionExtension:
             self.keyword = keyword
         if sign_secret is not None:
             self.sign_secret = sign_secret
+        if header is not None:
+            self.header = header
+        if app_key is not None:
+            self.app_key = app_key
+        if app_secret is not None:
+            self.app_secret = app_secret
+        if robot_code is not None:
+            self.robot_code = robot_code
 
     @property
     def client_id(self):
         """Gets the client_id of this SubscriptionExtension.
 
-        该字段为welink订阅下的租户ID字段，由租户从welink方获取。当protocol值为welink时，该字段为必填字段。
+        这是应用ID字段。当protocol值为welink时，该字段为必填字段，从welink方获取。
 
         :return: The client_id of this SubscriptionExtension.
         :rtype: str
@@ -77,7 +105,7 @@ class SubscriptionExtension:
     def client_id(self, client_id):
         """Sets the client_id of this SubscriptionExtension.
 
-        该字段为welink订阅下的租户ID字段，由租户从welink方获取。当protocol值为welink时，该字段为必填字段。
+        这是应用ID字段。当protocol值为welink时，该字段为必填字段，从welink方获取。
 
         :param client_id: The client_id of this SubscriptionExtension.
         :type client_id: str
@@ -88,7 +116,7 @@ class SubscriptionExtension:
     def client_secret(self):
         """Gets the client_secret of this SubscriptionExtension.
 
-        该字段为welink订阅下的租户获取的client secret字段，由租户从welink方获取。当protocol值为welink时，该字段为必填字段。
+        该字段为应用secret字段。当protocol值为welink时，该字段为必填字段，从welink方获取。
 
         :return: The client_secret of this SubscriptionExtension.
         :rtype: str
@@ -99,7 +127,7 @@ class SubscriptionExtension:
     def client_secret(self, client_secret):
         """Sets the client_secret of this SubscriptionExtension.
 
-        该字段为welink订阅下的租户获取的client secret字段，由租户从welink方获取。当protocol值为welink时，该字段为必填字段。
+        该字段为应用secret字段。当protocol值为welink时，该字段为必填字段，从welink方获取。
 
         :param client_secret: The client_secret of this SubscriptionExtension.
         :type client_secret: str
@@ -110,7 +138,7 @@ class SubscriptionExtension:
     def keyword(self):
         """Gets the keyword of this SubscriptionExtension.
 
-        该字段为关键字字段。当protocol协议为feishu时，这里的keyword字段和sign_secret字段二者必选其一。当用户在飞书或钉钉机器人端添加关键字校验的安全策略时，这里的关键字必须是飞书或钉钉端所填写的关键字之一。
+        该字段为关键字字段。当protocol值为feishu时，这里的keyword字段和sign_secret字段二者必选其一。当用户在飞书或钉钉自定义机器人端添加关键字校验的安全策略时，这里的关键字必须是飞书或钉钉自定义机器人中所填写的关键字之一。
 
         :return: The keyword of this SubscriptionExtension.
         :rtype: str
@@ -121,7 +149,7 @@ class SubscriptionExtension:
     def keyword(self, keyword):
         """Sets the keyword of this SubscriptionExtension.
 
-        该字段为关键字字段。当protocol协议为feishu时，这里的keyword字段和sign_secret字段二者必选其一。当用户在飞书或钉钉机器人端添加关键字校验的安全策略时，这里的关键字必须是飞书或钉钉端所填写的关键字之一。
+        该字段为关键字字段。当protocol值为feishu时，这里的keyword字段和sign_secret字段二者必选其一。当用户在飞书或钉钉自定义机器人端添加关键字校验的安全策略时，这里的关键字必须是飞书或钉钉自定义机器人中所填写的关键字之一。
 
         :param keyword: The keyword of this SubscriptionExtension.
         :type keyword: str
@@ -132,7 +160,7 @@ class SubscriptionExtension:
     def sign_secret(self):
         """Gets the sign_secret of this SubscriptionExtension.
 
-        这是加签密钥字段。当protocol协议为feishu或dingding时，这个字段和keyword字段二者必选且只能选其一，密钥配置必须与客户在飞书或钉钉客户端的密钥配置完全一致。例如，如果在飞书端配置了密钥并且没有配置关键字，则在此处填入从飞书获取的密钥字段，如果在飞书端没有配置密钥并且配置了关键字，则不填写该字段。
+        这是加签密钥字段。当protocol协议为feishu时，这个字段和keyword字段二者必选且只能选其一。密钥配置必须与客户在飞书或钉钉自定义机器人的密钥配置完全一致。例如，如果在飞书端配置了密钥并且没有配置关键字，则在此处填入从飞书获取的密钥字段，如果在飞书端没有配置密钥并且配置了关键字，则不填写该字段。
 
         :return: The sign_secret of this SubscriptionExtension.
         :rtype: str
@@ -143,12 +171,100 @@ class SubscriptionExtension:
     def sign_secret(self, sign_secret):
         """Sets the sign_secret of this SubscriptionExtension.
 
-        这是加签密钥字段。当protocol协议为feishu或dingding时，这个字段和keyword字段二者必选且只能选其一，密钥配置必须与客户在飞书或钉钉客户端的密钥配置完全一致。例如，如果在飞书端配置了密钥并且没有配置关键字，则在此处填入从飞书获取的密钥字段，如果在飞书端没有配置密钥并且配置了关键字，则不填写该字段。
+        这是加签密钥字段。当protocol协议为feishu时，这个字段和keyword字段二者必选且只能选其一。密钥配置必须与客户在飞书或钉钉自定义机器人的密钥配置完全一致。例如，如果在飞书端配置了密钥并且没有配置关键字，则在此处填入从飞书获取的密钥字段，如果在飞书端没有配置密钥并且配置了关键字，则不填写该字段。
 
         :param sign_secret: The sign_secret of this SubscriptionExtension.
         :type sign_secret: str
         """
         self._sign_secret = sign_secret
+
+    @property
+    def header(self):
+        """Gets the header of this SubscriptionExtension.
+
+        该字段为http header字段，用户可以在字段限制范围内自定义http header，header字段内容以KV对形式存在。当使用主题发送时，已确认的订阅发送消息会携带用户自定义的http header。 header应满足如下要求： key值限定为：包含英文字母([A-Za-z])、数字([0-9])、中划线(-)hyphens，中划线不得作为结尾，不得连续出现。 K/V不得超过10个 key需要以\"x-\"开头，不能以\"x-smn\"开头，正确示例：x-abc-cba, x-abc 所有K/V长度总和不得超过1024个字符 key不区分大小写 key值不可重复 value值限定为ASCII码，不支持中文或其他Unicode，支持空格
+
+        :return: The header of this SubscriptionExtension.
+        :rtype: dict(str, str)
+        """
+        return self._header
+
+    @header.setter
+    def header(self, header):
+        """Sets the header of this SubscriptionExtension.
+
+        该字段为http header字段，用户可以在字段限制范围内自定义http header，header字段内容以KV对形式存在。当使用主题发送时，已确认的订阅发送消息会携带用户自定义的http header。 header应满足如下要求： key值限定为：包含英文字母([A-Za-z])、数字([0-9])、中划线(-)hyphens，中划线不得作为结尾，不得连续出现。 K/V不得超过10个 key需要以\"x-\"开头，不能以\"x-smn\"开头，正确示例：x-abc-cba, x-abc 所有K/V长度总和不得超过1024个字符 key不区分大小写 key值不可重复 value值限定为ASCII码，不支持中文或其他Unicode，支持空格
+
+        :param header: The header of this SubscriptionExtension.
+        :type header: dict(str, str)
+        """
+        self._header = header
+
+    @property
+    def app_key(self):
+        """Gets the app_key of this SubscriptionExtension.
+
+        个人钉钉appKey字段，字符长度限制64个，仅支持字母、数字、中划线(-)、下划线(_)。当订阅协议为dingTalkBot时，该字段必选。
+
+        :return: The app_key of this SubscriptionExtension.
+        :rtype: str
+        """
+        return self._app_key
+
+    @app_key.setter
+    def app_key(self, app_key):
+        """Sets the app_key of this SubscriptionExtension.
+
+        个人钉钉appKey字段，字符长度限制64个，仅支持字母、数字、中划线(-)、下划线(_)。当订阅协议为dingTalkBot时，该字段必选。
+
+        :param app_key: The app_key of this SubscriptionExtension.
+        :type app_key: str
+        """
+        self._app_key = app_key
+
+    @property
+    def app_secret(self):
+        """Gets the app_secret of this SubscriptionExtension.
+
+        个人钉钉appSecret字段，字符长度限制128个，仅支持字母、数字、中划线(-)、下划线(_)。当订阅协议为dingTalkBot时，该字段必选。
+
+        :return: The app_secret of this SubscriptionExtension.
+        :rtype: str
+        """
+        return self._app_secret
+
+    @app_secret.setter
+    def app_secret(self, app_secret):
+        """Sets the app_secret of this SubscriptionExtension.
+
+        个人钉钉appSecret字段，字符长度限制128个，仅支持字母、数字、中划线(-)、下划线(_)。当订阅协议为dingTalkBot时，该字段必选。
+
+        :param app_secret: The app_secret of this SubscriptionExtension.
+        :type app_secret: str
+        """
+        self._app_secret = app_secret
+
+    @property
+    def robot_code(self):
+        """Gets the robot_code of this SubscriptionExtension.
+
+        个人钉钉robotCode字段，名称：机器人编码，字符长度限制64个，仅支持字母、数字、中划线(-)、下划线(_)，一般与appKey一致。当订阅协议为dingTalkBot时，该字段必选。
+
+        :return: The robot_code of this SubscriptionExtension.
+        :rtype: str
+        """
+        return self._robot_code
+
+    @robot_code.setter
+    def robot_code(self, robot_code):
+        """Sets the robot_code of this SubscriptionExtension.
+
+        个人钉钉robotCode字段，名称：机器人编码，字符长度限制64个，仅支持字母、数字、中划线(-)、下划线(_)，一般与appKey一致。当订阅协议为dingTalkBot时，该字段必选。
+
+        :param robot_code: The robot_code of this SubscriptionExtension.
+        :type robot_code: str
+        """
+        self._robot_code = robot_code
 
     def to_dict(self):
         """Returns the model properties as a dict"""
