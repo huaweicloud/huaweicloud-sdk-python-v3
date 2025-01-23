@@ -21,7 +21,8 @@ class RedirectPoolsExtendConfig:
         'rewrite_url_config': 'RewriteUrlConfig',
         'insert_headers_config': 'InsertHeadersConfig',
         'remove_headers_config': 'RemoveHeadersConfig',
-        'traffic_limit_config': 'TrafficLimitConfig'
+        'traffic_limit_config': 'TrafficLimitConfig',
+        'cors_config': 'CorsConfig'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class RedirectPoolsExtendConfig:
         'rewrite_url_config': 'rewrite_url_config',
         'insert_headers_config': 'insert_headers_config',
         'remove_headers_config': 'remove_headers_config',
-        'traffic_limit_config': 'traffic_limit_config'
+        'traffic_limit_config': 'traffic_limit_config',
+        'cors_config': 'cors_config'
     }
 
-    def __init__(self, rewrite_url_enable=None, rewrite_url_config=None, insert_headers_config=None, remove_headers_config=None, traffic_limit_config=None):
+    def __init__(self, rewrite_url_enable=None, rewrite_url_config=None, insert_headers_config=None, remove_headers_config=None, traffic_limit_config=None, cors_config=None):
         """RedirectPoolsExtendConfig
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class RedirectPoolsExtendConfig:
         :type remove_headers_config: :class:`huaweicloudsdkelb.v3.RemoveHeadersConfig`
         :param traffic_limit_config: 
         :type traffic_limit_config: :class:`huaweicloudsdkelb.v3.TrafficLimitConfig`
+        :param cors_config: 
+        :type cors_config: :class:`huaweicloudsdkelb.v3.CorsConfig`
         """
         
         
@@ -56,6 +60,7 @@ class RedirectPoolsExtendConfig:
         self._insert_headers_config = None
         self._remove_headers_config = None
         self._traffic_limit_config = None
+        self._cors_config = None
         self.discriminator = None
 
         if rewrite_url_enable is not None:
@@ -68,6 +73,8 @@ class RedirectPoolsExtendConfig:
             self.remove_headers_config = remove_headers_config
         if traffic_limit_config is not None:
             self.traffic_limit_config = traffic_limit_config
+        if cors_config is not None:
+            self.cors_config = cors_config
 
     @property
     def rewrite_url_enable(self):
@@ -162,6 +169,24 @@ class RedirectPoolsExtendConfig:
         :type traffic_limit_config: :class:`huaweicloudsdkelb.v3.TrafficLimitConfig`
         """
         self._traffic_limit_config = traffic_limit_config
+
+    @property
+    def cors_config(self):
+        """Gets the cors_config of this RedirectPoolsExtendConfig.
+
+        :return: The cors_config of this RedirectPoolsExtendConfig.
+        :rtype: :class:`huaweicloudsdkelb.v3.CorsConfig`
+        """
+        return self._cors_config
+
+    @cors_config.setter
+    def cors_config(self, cors_config):
+        """Sets the cors_config of this RedirectPoolsExtendConfig.
+
+        :param cors_config: The cors_config of this RedirectPoolsExtendConfig.
+        :type cors_config: :class:`huaweicloudsdkelb.v3.CorsConfig`
+        """
+        self._cors_config = cors_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

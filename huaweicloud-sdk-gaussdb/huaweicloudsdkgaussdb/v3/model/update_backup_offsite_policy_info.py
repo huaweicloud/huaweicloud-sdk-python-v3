@@ -41,7 +41,7 @@ class UpdateBackupOffsitePolicyInfo:
         :type open_auto_backup: bool
         :param open_incremental_backup: 是否开启跨区域增量备份。 - true：开启跨区域增量备份，当open_auto_backup开启时才可以开启。 - false：关闭跨区域增量备份。
         :type open_incremental_backup: bool
-        :param destination_project_id: 设置跨区域备份策略的目标project ID。    租户在某一Region下的project ID。                              获取方法请参见[获取项目ID](https://support.huaweicloud.com/api-gaussdbformysql/gaussdbformysql_10_0004.html)。
+        :param destination_project_id: 设置跨区域备份策略的目标project ID。    租户在某一Region下的project ID。                              获取方法请参见[获取项目ID](https://support.huaweicloud.com/api-taurusdb/taurusdb_10_0004.html)。
         :type destination_project_id: str
         :param destination_region: 设置跨区域备份策略的目标区域。
         :type destination_region: str
@@ -112,7 +112,7 @@ class UpdateBackupOffsitePolicyInfo:
     def destination_project_id(self):
         """Gets the destination_project_id of this UpdateBackupOffsitePolicyInfo.
 
-        设置跨区域备份策略的目标project ID。    租户在某一Region下的project ID。                              获取方法请参见[获取项目ID](https://support.huaweicloud.com/api-gaussdbformysql/gaussdbformysql_10_0004.html)。
+        设置跨区域备份策略的目标project ID。    租户在某一Region下的project ID。                              获取方法请参见[获取项目ID](https://support.huaweicloud.com/api-taurusdb/taurusdb_10_0004.html)。
 
         :return: The destination_project_id of this UpdateBackupOffsitePolicyInfo.
         :rtype: str
@@ -123,7 +123,7 @@ class UpdateBackupOffsitePolicyInfo:
     def destination_project_id(self, destination_project_id):
         """Sets the destination_project_id of this UpdateBackupOffsitePolicyInfo.
 
-        设置跨区域备份策略的目标project ID。    租户在某一Region下的project ID。                              获取方法请参见[获取项目ID](https://support.huaweicloud.com/api-gaussdbformysql/gaussdbformysql_10_0004.html)。
+        设置跨区域备份策略的目标project ID。    租户在某一Region下的project ID。                              获取方法请参见[获取项目ID](https://support.huaweicloud.com/api-taurusdb/taurusdb_10_0004.html)。
 
         :param destination_project_id: The destination_project_id of this UpdateBackupOffsitePolicyInfo.
         :type destination_project_id: str

@@ -65,7 +65,7 @@ class ResourceCheckResource:
         :type be_flavor_ref: str
         :param availability_zone: 可用区码。选填，校验可用区码是否正确。
         :type availability_zone: str
-        :param subnet_id: HTAP实例子网即GaussDBForMySQL实例子网。 获取方法请参见[获取子网ID](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)。
+        :param subnet_id: HTAP实例子网即TaurusDB实例子网。 获取方法请参见[获取子网ID](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)。
         :type subnet_id: str
         """
         
@@ -297,7 +297,7 @@ class ResourceCheckResource:
     def subnet_id(self):
         """Gets the subnet_id of this ResourceCheckResource.
 
-        HTAP实例子网即GaussDBForMySQL实例子网。 获取方法请参见[获取子网ID](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)。
+        HTAP实例子网即TaurusDB实例子网。 获取方法请参见[获取子网ID](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)。
 
         :return: The subnet_id of this ResourceCheckResource.
         :rtype: str
@@ -308,7 +308,7 @@ class ResourceCheckResource:
     def subnet_id(self, subnet_id):
         """Sets the subnet_id of this ResourceCheckResource.
 
-        HTAP实例子网即GaussDBForMySQL实例子网。 获取方法请参见[获取子网ID](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)。
+        HTAP实例子网即TaurusDB实例子网。 获取方法请参见[获取子网ID](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)。
 
         :param subnet_id: The subnet_id of this ResourceCheckResource.
         :type subnet_id: str

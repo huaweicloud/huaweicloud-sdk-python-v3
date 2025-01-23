@@ -30,7 +30,8 @@ class UpdatePoolOption:
         'protection_reason': 'str',
         'any_port_enable': 'bool',
         'connection_drain': 'ConnectionDrain',
-        'pool_health': 'PoolHealth'
+        'pool_health': 'PoolHealth',
+        'quic_cid_hash_strategy': 'QuicCidHashStrategy'
     }
 
     attribute_map = {
@@ -47,10 +48,11 @@ class UpdatePoolOption:
         'protection_reason': 'protection_reason',
         'any_port_enable': 'any_port_enable',
         'connection_drain': 'connection_drain',
-        'pool_health': 'pool_health'
+        'pool_health': 'pool_health',
+        'quic_cid_hash_strategy': 'quic_cid_hash_strategy'
     }
 
-    def __init__(self, admin_state_up=None, description=None, lb_algorithm=None, name=None, session_persistence=None, slow_start=None, member_deletion_protection_enable=None, vpc_id=None, type=None, protection_status=None, protection_reason=None, any_port_enable=None, connection_drain=None, pool_health=None):
+    def __init__(self, admin_state_up=None, description=None, lb_algorithm=None, name=None, session_persistence=None, slow_start=None, member_deletion_protection_enable=None, vpc_id=None, type=None, protection_status=None, protection_reason=None, any_port_enable=None, connection_drain=None, pool_health=None, quic_cid_hash_strategy=None):
         """UpdatePoolOption
 
         The model defined in huaweicloud sdk
@@ -75,7 +77,7 @@ class UpdatePoolOption:
         :type type: str
         :param protection_status: 修改保护状态, 取值： - nonProtection: 不保护 - consoleProtection: 控制台修改保护
         :type protection_status: str
-        :param protection_reason: 设置保护的原因 &gt;仅当protection_status为consoleProtection时有效。
+        :param protection_reason: 参数解释：设置保护的原因。作为protection_status的转态设置的原因。  约束限制：仅当protection_status为consoleProtection时有效。  取值范围：除&#39;&lt;&#39;和&#39;&gt;&#39;外通用Unicode字符集字符，最大255个字符。
         :type protection_reason: str
         :param any_port_enable: 后端是否开启端口透传。开启后，后端服务器端口与前端监听器端口保持一致。关闭后，请求会转发给后端服务器protocol_port字段指定端口。取值：false不开启，true开启。  使用说明： - 仅QUIC,TCP,UDP的pool支持。
         :type any_port_enable: bool
@@ -83,6 +85,8 @@ class UpdatePoolOption:
         :type connection_drain: :class:`huaweicloudsdkelb.v3.ConnectionDrain`
         :param pool_health: 
         :type pool_health: :class:`huaweicloudsdkelb.v3.PoolHealth`
+        :param quic_cid_hash_strategy: 
+        :type quic_cid_hash_strategy: :class:`huaweicloudsdkelb.v3.QuicCidHashStrategy`
         """
         
         
@@ -101,6 +105,7 @@ class UpdatePoolOption:
         self._any_port_enable = None
         self._connection_drain = None
         self._pool_health = None
+        self._quic_cid_hash_strategy = None
         self.discriminator = None
 
         if admin_state_up is not None:
@@ -131,6 +136,8 @@ class UpdatePoolOption:
             self.connection_drain = connection_drain
         if pool_health is not None:
             self.pool_health = pool_health
+        if quic_cid_hash_strategy is not None:
+            self.quic_cid_hash_strategy = quic_cid_hash_strategy
 
     @property
     def admin_state_up(self):
@@ -348,7 +355,7 @@ class UpdatePoolOption:
     def protection_reason(self):
         """Gets the protection_reason of this UpdatePoolOption.
 
-        设置保护的原因 >仅当protection_status为consoleProtection时有效。
+        参数解释：设置保护的原因。作为protection_status的转态设置的原因。  约束限制：仅当protection_status为consoleProtection时有效。  取值范围：除'<'和'>'外通用Unicode字符集字符，最大255个字符。
 
         :return: The protection_reason of this UpdatePoolOption.
         :rtype: str
@@ -359,7 +366,7 @@ class UpdatePoolOption:
     def protection_reason(self, protection_reason):
         """Sets the protection_reason of this UpdatePoolOption.
 
-        设置保护的原因 >仅当protection_status为consoleProtection时有效。
+        参数解释：设置保护的原因。作为protection_status的转态设置的原因。  约束限制：仅当protection_status为consoleProtection时有效。  取值范围：除'<'和'>'外通用Unicode字符集字符，最大255个字符。
 
         :param protection_reason: The protection_reason of this UpdatePoolOption.
         :type protection_reason: str
@@ -423,6 +430,24 @@ class UpdatePoolOption:
         :type pool_health: :class:`huaweicloudsdkelb.v3.PoolHealth`
         """
         self._pool_health = pool_health
+
+    @property
+    def quic_cid_hash_strategy(self):
+        """Gets the quic_cid_hash_strategy of this UpdatePoolOption.
+
+        :return: The quic_cid_hash_strategy of this UpdatePoolOption.
+        :rtype: :class:`huaweicloudsdkelb.v3.QuicCidHashStrategy`
+        """
+        return self._quic_cid_hash_strategy
+
+    @quic_cid_hash_strategy.setter
+    def quic_cid_hash_strategy(self, quic_cid_hash_strategy):
+        """Sets the quic_cid_hash_strategy of this UpdatePoolOption.
+
+        :param quic_cid_hash_strategy: The quic_cid_hash_strategy of this UpdatePoolOption.
+        :type quic_cid_hash_strategy: :class:`huaweicloudsdkelb.v3.QuicCidHashStrategy`
+        """
+        self._quic_cid_hash_strategy = quic_cid_hash_strategy
 
     def to_dict(self):
         """Returns the model properties as a dict"""

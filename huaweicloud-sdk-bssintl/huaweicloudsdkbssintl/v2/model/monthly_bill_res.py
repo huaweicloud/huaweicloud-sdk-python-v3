@@ -63,7 +63,8 @@ class MonthlyBillRes:
         'payer_account_id': 'str',
         'effective_time': 'str',
         'expire_time': 'str',
-        'consume_time': 'str'
+        'consume_time': 'str',
+        'be_id': 'str'
     }
 
     attribute_map = {
@@ -113,10 +114,11 @@ class MonthlyBillRes:
         'payer_account_id': 'payer_account_id',
         'effective_time': 'effective_time',
         'expire_time': 'expire_time',
-        'consume_time': 'consume_time'
+        'consume_time': 'consume_time',
+        'be_id': 'be_id'
     }
 
-    def __init__(self, cycle=None, bill_date=None, bill_type=None, customer_id=None, region=None, region_name=None, cloud_service_type=None, resource_type_code=None, cloud_service_type_name=None, resource_type_name=None, res_instance_id=None, resource_name=None, resource_tag=None, sku_code=None, enterprise_project_id=None, enterprise_project_name=None, charge_mode=None, consume_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, official_amount=None, discount_amount=None, measure_id=None, period_type=None, root_resource_id=None, parent_resource_id=None, trade_id=None, id=None, product_spec_desc=None, sub_service_type_code=None, sub_service_type_name=None, sub_resource_type_code=None, sub_resource_type_name=None, sub_resource_id=None, sub_resource_name=None, pre_order_id=None, az_code_infos=None, payer_account_id=None, effective_time=None, expire_time=None, consume_time=None):
+    def __init__(self, cycle=None, bill_date=None, bill_type=None, customer_id=None, region=None, region_name=None, cloud_service_type=None, resource_type_code=None, cloud_service_type_name=None, resource_type_name=None, res_instance_id=None, resource_name=None, resource_tag=None, sku_code=None, enterprise_project_id=None, enterprise_project_name=None, charge_mode=None, consume_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, official_amount=None, discount_amount=None, measure_id=None, period_type=None, root_resource_id=None, parent_resource_id=None, trade_id=None, id=None, product_spec_desc=None, sub_service_type_code=None, sub_service_type_name=None, sub_resource_type_code=None, sub_resource_type_name=None, sub_resource_id=None, sub_resource_name=None, pre_order_id=None, az_code_infos=None, payer_account_id=None, effective_time=None, expire_time=None, consume_time=None, be_id=None):
         """MonthlyBillRes
 
         The model defined in huaweicloud sdk
@@ -215,6 +217,8 @@ class MonthlyBillRes:
         :type expire_time: str
         :param consume_time: |参数名称：消费时间| |参数约束及描述：消费时间，UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ。包周期、预留实例预付为交易时间，按需、预留实例按时计费为话单生失效时间。 说明：当statistic_type&#x3D;3时有效。|
         :type consume_time: str
+        :param be_id: |参数名称：华为云运营实体ID。| |参数约束及描述：华为云运营实体ID。|
+        :type be_id: str
         """
         
         
@@ -266,6 +270,7 @@ class MonthlyBillRes:
         self._effective_time = None
         self._expire_time = None
         self._consume_time = None
+        self._be_id = None
         self.discriminator = None
 
         if cycle is not None:
@@ -362,6 +367,8 @@ class MonthlyBillRes:
             self.expire_time = expire_time
         if consume_time is not None:
             self.consume_time = consume_time
+        if be_id is not None:
+            self.be_id = be_id
 
     @property
     def cycle(self):
@@ -1396,6 +1403,28 @@ class MonthlyBillRes:
         :type consume_time: str
         """
         self._consume_time = consume_time
+
+    @property
+    def be_id(self):
+        """Gets the be_id of this MonthlyBillRes.
+
+        |参数名称：华为云运营实体ID。| |参数约束及描述：华为云运营实体ID。|
+
+        :return: The be_id of this MonthlyBillRes.
+        :rtype: str
+        """
+        return self._be_id
+
+    @be_id.setter
+    def be_id(self, be_id):
+        """Sets the be_id of this MonthlyBillRes.
+
+        |参数名称：华为云运营实体ID。| |参数约束及描述：华为云运营实体ID。|
+
+        :param be_id: The be_id of this MonthlyBillRes.
+        :type be_id: str
+        """
+        self._be_id = be_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

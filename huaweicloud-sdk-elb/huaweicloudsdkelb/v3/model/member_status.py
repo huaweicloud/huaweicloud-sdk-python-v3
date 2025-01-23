@@ -18,15 +18,17 @@ class MemberStatus:
 
     openapi_types = {
         'listener_id': 'str',
-        'operating_status': 'str'
+        'operating_status': 'str',
+        'reason': 'MemberHealthCheckFailedReason'
     }
 
     attribute_map = {
         'listener_id': 'listener_id',
-        'operating_status': 'operating_status'
+        'operating_status': 'operating_status',
+        'reason': 'reason'
     }
 
-    def __init__(self, listener_id=None, operating_status=None):
+    def __init__(self, listener_id=None, operating_status=None, reason=None):
         """MemberStatus
 
         The model defined in huaweicloud sdk
@@ -35,16 +37,21 @@ class MemberStatus:
         :type listener_id: str
         :param operating_status: 参数解释：后端服务器的健康状态。  取值范围： - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。
         :type operating_status: str
+        :param reason: 
+        :type reason: :class:`huaweicloudsdkelb.v3.MemberHealthCheckFailedReason`
         """
         
         
 
         self._listener_id = None
         self._operating_status = None
+        self._reason = None
         self.discriminator = None
 
         self.listener_id = listener_id
         self.operating_status = operating_status
+        if reason is not None:
+            self.reason = reason
 
     @property
     def listener_id(self):
@@ -89,6 +96,24 @@ class MemberStatus:
         :type operating_status: str
         """
         self._operating_status = operating_status
+
+    @property
+    def reason(self):
+        """Gets the reason of this MemberStatus.
+
+        :return: The reason of this MemberStatus.
+        :rtype: :class:`huaweicloudsdkelb.v3.MemberHealthCheckFailedReason`
+        """
+        return self._reason
+
+    @reason.setter
+    def reason(self, reason):
+        """Sets the reason of this MemberStatus.
+
+        :param reason: The reason of this MemberStatus.
+        :type reason: :class:`huaweicloudsdkelb.v3.MemberHealthCheckFailedReason`
+        """
+        self._reason = reason
 
     def to_dict(self):
         """Returns the model properties as a dict"""

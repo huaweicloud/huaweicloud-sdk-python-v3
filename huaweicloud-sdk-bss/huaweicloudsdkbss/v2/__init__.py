@@ -297,6 +297,8 @@ from huaweicloudsdkbss.v2.model.stat_usage_summary_info import StatUsageSummaryI
 from huaweicloudsdkbss.v2.model.sub_customer_info_v2 import SubCustomerInfoV2
 from huaweicloudsdkbss.v2.model.sub_customer_info_v3 import SubCustomerInfoV3
 from huaweicloudsdkbss.v2.model.sub_customer_monthly_bill_detail import SubCustomerMonthlyBillDetail
+from huaweicloudsdkbss.v2.model.sub_customer_order_v2 import SubCustomerOrderV2
+from huaweicloudsdkbss.v2.model.sub_customer_order_v3 import SubCustomerOrderV3
 from huaweicloudsdkbss.v2.model.tag_pair import TagPair
 from huaweicloudsdkbss.v2.model.template_args import TemplateArgs
 from huaweicloudsdkbss.v2.model.time_condition import TimeCondition

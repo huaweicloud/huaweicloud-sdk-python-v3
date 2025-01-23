@@ -41,7 +41,9 @@ class ListPoolsRequest:
         'connection_drain': 'bool',
         'pool_health': 'str',
         'any_port_enable': 'bool',
-        'public_border_group': 'str'
+        'public_border_group': 'str',
+        'quic_cid_len': 'int',
+        'quic_cid_offset': 'int'
     }
 
     attribute_map = {
@@ -69,10 +71,12 @@ class ListPoolsRequest:
         'connection_drain': 'connection_drain',
         'pool_health': 'pool_health',
         'any_port_enable': 'any_port_enable',
-        'public_border_group': 'public_border_group'
+        'public_border_group': 'public_border_group',
+        'quic_cid_len': 'quic_cid_len',
+        'quic_cid_offset': 'quic_cid_offset'
     }
 
-    def __init__(self, marker=None, limit=None, page_reverse=None, description=None, admin_state_up=None, healthmonitor_id=None, id=None, name=None, loadbalancer_id=None, protocol=None, lb_algorithm=None, enterprise_project_id=None, ip_version=None, member_address=None, member_device_id=None, member_deletion_protection_enable=None, listener_id=None, member_instance_id=None, vpc_id=None, type=None, protection_status=None, connection_drain=None, pool_health=None, any_port_enable=None, public_border_group=None):
+    def __init__(self, marker=None, limit=None, page_reverse=None, description=None, admin_state_up=None, healthmonitor_id=None, id=None, name=None, loadbalancer_id=None, protocol=None, lb_algorithm=None, enterprise_project_id=None, ip_version=None, member_address=None, member_device_id=None, member_deletion_protection_enable=None, listener_id=None, member_instance_id=None, vpc_id=None, type=None, protection_status=None, connection_drain=None, pool_health=None, any_port_enable=None, public_border_group=None, quic_cid_len=None, quic_cid_offset=None):
         """ListPoolsRequest
 
         The model defined in huaweicloud sdk
@@ -99,7 +103,7 @@ class ListPoolsRequest:
         :type protocol: list[str]
         :param lb_algorithm: 后端服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。 [- 2_TUPLE_HASH：二元组hash算法，仅IP类型的pool支持。 - 3_TUPLE_HASH：三元组hash算法，仅IP类型的pool支持。 - 5_TUPLE_HASH：五元组hash算法，仅IP类型的pool支持。 - IP型pool不指定该字段时，默认设置为5_TUPLE_HASH。](tag:hws_eu)  支持多值查询，查询条件格式：*lb_algorithm&#x3D;xxx&amp;lb_algorithm&#x3D;xxx*。  [不支持QUIC_CID。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt,dt_test)
         :type lb_algorithm: list[str]
-        :param enterprise_project_id: 企业项目ID。不传时查询default企业项目\&quot;0\&quot;下的资源，鉴权按照default企业项目鉴权； 如果传值，则传已存在的企业项目ID或all_granted_eps（表示查询所有企业项目）进行查询。  支持多值查询，查询条件格式：*enterprise_project_id&#x3D;xxx&amp;enterprise_project_id&#x3D;xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        :param enterprise_project_id: 参数解释：所属的企业项目ID。 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:pools:list权限。 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  支持多值查询，查询条件格式： *enterprise_project_id&#x3D;xxx&amp;enterprise_project_id&#x3D;xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
         :type enterprise_project_id: list[str]
         :param ip_version: 后端服务器组支持的IP版本。  支持多值查询，查询条件格式：*ip_version&#x3D;xxx&amp;ip_version&#x3D;xxx*。
         :type ip_version: list[str]
@@ -125,8 +129,12 @@ class ListPoolsRequest:
         :type pool_health: str
         :param any_port_enable: 后端是否开启端口透传。开启后，后端服务器端口与前端监听器端口保持一致。取值：false不开启，true开启。
         :type any_port_enable: bool
-        :param public_border_group: 可用区组
+        :param public_border_group: 网络公共边界组
         :type public_border_group: str
+        :param quic_cid_len: 查询相同QUIC CID策略配置的后端服务器组，仅用于查询条件，不作为响应参数字段。 支持多值查询，查询条件格式：*quic_cid_len&#x3D;3&amp;quic_cid_len&#x3D;5*
+        :type quic_cid_len: int
+        :param quic_cid_offset: 查询相同QUIC CID策略配置的后端服务器组，仅用于查询条件，不作为响应参数字段。 支持多值查询，查询条件格式：*quic_cid_offset&#x3D;1&amp;quic_cid_offset&#x3D;3*
+        :type quic_cid_offset: int
         """
         
         
@@ -156,6 +164,8 @@ class ListPoolsRequest:
         self._pool_health = None
         self._any_port_enable = None
         self._public_border_group = None
+        self._quic_cid_len = None
+        self._quic_cid_offset = None
         self.discriminator = None
 
         if marker is not None:
@@ -208,6 +218,10 @@ class ListPoolsRequest:
             self.any_port_enable = any_port_enable
         if public_border_group is not None:
             self.public_border_group = public_border_group
+        if quic_cid_len is not None:
+            self.quic_cid_len = quic_cid_len
+        if quic_cid_offset is not None:
+            self.quic_cid_offset = quic_cid_offset
 
     @property
     def marker(self):
@@ -455,7 +469,7 @@ class ListPoolsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListPoolsRequest.
 
-        企业项目ID。不传时查询default企业项目\"0\"下的资源，鉴权按照default企业项目鉴权； 如果传值，则传已存在的企业项目ID或all_granted_eps（表示查询所有企业项目）进行查询。  支持多值查询，查询条件格式：*enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        参数解释：所属的企业项目ID。 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:pools:list权限。 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  支持多值查询，查询条件格式： *enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
 
         :return: The enterprise_project_id of this ListPoolsRequest.
         :rtype: list[str]
@@ -466,7 +480,7 @@ class ListPoolsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListPoolsRequest.
 
-        企业项目ID。不传时查询default企业项目\"0\"下的资源，鉴权按照default企业项目鉴权； 如果传值，则传已存在的企业项目ID或all_granted_eps（表示查询所有企业项目）进行查询。  支持多值查询，查询条件格式：*enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        参数解释：所属的企业项目ID。 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:pools:list权限。 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  支持多值查询，查询条件格式： *enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
 
         :param enterprise_project_id: The enterprise_project_id of this ListPoolsRequest.
         :type enterprise_project_id: list[str]
@@ -741,7 +755,7 @@ class ListPoolsRequest:
     def public_border_group(self):
         """Gets the public_border_group of this ListPoolsRequest.
 
-        可用区组
+        网络公共边界组
 
         :return: The public_border_group of this ListPoolsRequest.
         :rtype: str
@@ -752,12 +766,56 @@ class ListPoolsRequest:
     def public_border_group(self, public_border_group):
         """Sets the public_border_group of this ListPoolsRequest.
 
-        可用区组
+        网络公共边界组
 
         :param public_border_group: The public_border_group of this ListPoolsRequest.
         :type public_border_group: str
         """
         self._public_border_group = public_border_group
+
+    @property
+    def quic_cid_len(self):
+        """Gets the quic_cid_len of this ListPoolsRequest.
+
+        查询相同QUIC CID策略配置的后端服务器组，仅用于查询条件，不作为响应参数字段。 支持多值查询，查询条件格式：*quic_cid_len=3&quic_cid_len=5*
+
+        :return: The quic_cid_len of this ListPoolsRequest.
+        :rtype: int
+        """
+        return self._quic_cid_len
+
+    @quic_cid_len.setter
+    def quic_cid_len(self, quic_cid_len):
+        """Sets the quic_cid_len of this ListPoolsRequest.
+
+        查询相同QUIC CID策略配置的后端服务器组，仅用于查询条件，不作为响应参数字段。 支持多值查询，查询条件格式：*quic_cid_len=3&quic_cid_len=5*
+
+        :param quic_cid_len: The quic_cid_len of this ListPoolsRequest.
+        :type quic_cid_len: int
+        """
+        self._quic_cid_len = quic_cid_len
+
+    @property
+    def quic_cid_offset(self):
+        """Gets the quic_cid_offset of this ListPoolsRequest.
+
+        查询相同QUIC CID策略配置的后端服务器组，仅用于查询条件，不作为响应参数字段。 支持多值查询，查询条件格式：*quic_cid_offset=1&quic_cid_offset=3*
+
+        :return: The quic_cid_offset of this ListPoolsRequest.
+        :rtype: int
+        """
+        return self._quic_cid_offset
+
+    @quic_cid_offset.setter
+    def quic_cid_offset(self, quic_cid_offset):
+        """Sets the quic_cid_offset of this ListPoolsRequest.
+
+        查询相同QUIC CID策略配置的后端服务器组，仅用于查询条件，不作为响应参数字段。 支持多值查询，查询条件格式：*quic_cid_offset=1&quic_cid_offset=3*
+
+        :param quic_cid_offset: The quic_cid_offset of this ListPoolsRequest.
+        :type quic_cid_offset: int
+        """
+        self._quic_cid_offset = quic_cid_offset
 
     def to_dict(self):
         """Returns the model properties as a dict"""

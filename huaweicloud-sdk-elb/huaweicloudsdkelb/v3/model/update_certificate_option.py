@@ -23,7 +23,8 @@ class UpdateCertificateOption:
         'private_key': 'str',
         'domain': 'str',
         'enc_certificate': 'str',
-        'enc_private_key': 'str'
+        'enc_private_key': 'str',
+        'scm_certificate_id': 'str'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class UpdateCertificateOption:
         'private_key': 'private_key',
         'domain': 'domain',
         'enc_certificate': 'enc_certificate',
-        'enc_private_key': 'enc_private_key'
+        'enc_private_key': 'enc_private_key',
+        'scm_certificate_id': 'scm_certificate_id'
     }
 
-    def __init__(self, certificate=None, description=None, name=None, private_key=None, domain=None, enc_certificate=None, enc_private_key=None):
+    def __init__(self, certificate=None, description=None, name=None, private_key=None, domain=None, enc_certificate=None, enc_private_key=None, scm_certificate_id=None):
         """UpdateCertificateOption
 
         The model defined in huaweicloud sdk
@@ -49,12 +51,14 @@ class UpdateCertificateOption:
         :type name: str
         :param private_key: 服务器证书的私钥。PEM编码格式。 当type为client时，该参数被忽略，不影响证书的创建和使用。若传入不符合格式值，则会报错。 当type为server时，该字段必须符合格式要求，且私钥必须是有效的。 最大长度8192字符。
         :type private_key: str
-        :param domain: 服务器证书所签域名。该字段仅type为server时有效。  总长度为0-10000，由若干普通域名或泛域名组成，域名之间以\&quot;,\&quot;分割，不超过100个域名。  普通域名：由若干字符串组成，字符串间以\&quot;.\&quot;分割，单个字符串长度不超过63个字符， 只能包含英文字母、数字或\&quot;-\&quot;，且必须以字母或数字开头和结尾。例：www.test.com；  泛域名：在普通域名的基础上仅允许首字母为\&quot;\\*\&quot;。例：\\*.test.com
+        :param domain: 服务器证书所签域名。该字段仅type为server时有效。  总长度为0-10000，由若干普通域名或泛域名组成，域名之间以\&quot;,\&quot;分隔，不超过100个域名。  普通域名：由若干字符串组成，字符串间以\&quot;.\&quot;分隔，单个字符串长度不超过63个字符， 只能包含英文字母、数字或\&quot;-\&quot;，且必须以字母或数字开头和结尾。例：www.test.com；  泛域名：在普通域名的基础上仅允许首字母为\&quot;\\*\&quot;。例：\\*.test.com
         :type domain: str
         :param enc_certificate: HTTPS协议使用的SM加密证书内容。支持证书链，最大11层(含证书和证书链)。  取值：PEM编码格式。最大长度65536字符。  使用说明：仅type为server_sm时有效。
         :type enc_certificate: str
         :param enc_private_key: HTTPS协议使用的SM加密证书内容。  取值：PEM编码格式。最大长度8192字符。  使用说明：仅type为server_sm时有效。
         :type enc_private_key: str
+        :param scm_certificate_id: scm证书id
+        :type scm_certificate_id: str
         """
         
         
@@ -66,6 +70,7 @@ class UpdateCertificateOption:
         self._domain = None
         self._enc_certificate = None
         self._enc_private_key = None
+        self._scm_certificate_id = None
         self.discriminator = None
 
         if certificate is not None:
@@ -82,6 +87,8 @@ class UpdateCertificateOption:
             self.enc_certificate = enc_certificate
         if enc_private_key is not None:
             self.enc_private_key = enc_private_key
+        if scm_certificate_id is not None:
+            self.scm_certificate_id = scm_certificate_id
 
     @property
     def certificate(self):
@@ -175,7 +182,7 @@ class UpdateCertificateOption:
     def domain(self):
         """Gets the domain of this UpdateCertificateOption.
 
-        服务器证书所签域名。该字段仅type为server时有效。  总长度为0-10000，由若干普通域名或泛域名组成，域名之间以\",\"分割，不超过100个域名。  普通域名：由若干字符串组成，字符串间以\".\"分割，单个字符串长度不超过63个字符， 只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。例：www.test.com；  泛域名：在普通域名的基础上仅允许首字母为\"\\*\"。例：\\*.test.com
+        服务器证书所签域名。该字段仅type为server时有效。  总长度为0-10000，由若干普通域名或泛域名组成，域名之间以\",\"分隔，不超过100个域名。  普通域名：由若干字符串组成，字符串间以\".\"分隔，单个字符串长度不超过63个字符， 只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。例：www.test.com；  泛域名：在普通域名的基础上仅允许首字母为\"\\*\"。例：\\*.test.com
 
         :return: The domain of this UpdateCertificateOption.
         :rtype: str
@@ -186,7 +193,7 @@ class UpdateCertificateOption:
     def domain(self, domain):
         """Sets the domain of this UpdateCertificateOption.
 
-        服务器证书所签域名。该字段仅type为server时有效。  总长度为0-10000，由若干普通域名或泛域名组成，域名之间以\",\"分割，不超过100个域名。  普通域名：由若干字符串组成，字符串间以\".\"分割，单个字符串长度不超过63个字符， 只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。例：www.test.com；  泛域名：在普通域名的基础上仅允许首字母为\"\\*\"。例：\\*.test.com
+        服务器证书所签域名。该字段仅type为server时有效。  总长度为0-10000，由若干普通域名或泛域名组成，域名之间以\",\"分隔，不超过100个域名。  普通域名：由若干字符串组成，字符串间以\".\"分隔，单个字符串长度不超过63个字符， 只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。例：www.test.com；  泛域名：在普通域名的基础上仅允许首字母为\"\\*\"。例：\\*.test.com
 
         :param domain: The domain of this UpdateCertificateOption.
         :type domain: str
@@ -236,6 +243,28 @@ class UpdateCertificateOption:
         :type enc_private_key: str
         """
         self._enc_private_key = enc_private_key
+
+    @property
+    def scm_certificate_id(self):
+        """Gets the scm_certificate_id of this UpdateCertificateOption.
+
+        scm证书id
+
+        :return: The scm_certificate_id of this UpdateCertificateOption.
+        :rtype: str
+        """
+        return self._scm_certificate_id
+
+    @scm_certificate_id.setter
+    def scm_certificate_id(self, scm_certificate_id):
+        """Sets the scm_certificate_id of this UpdateCertificateOption.
+
+        scm证书id
+
+        :param scm_certificate_id: The scm_certificate_id of this UpdateCertificateOption.
+        :type scm_certificate_id: str
+        """
+        self._scm_certificate_id = scm_certificate_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

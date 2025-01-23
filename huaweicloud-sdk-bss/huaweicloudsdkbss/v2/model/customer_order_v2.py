@@ -32,7 +32,8 @@ class CustomerOrderV2:
         'currency': 'str',
         'contract_id': 'str',
         'amount_info': 'AmountInfomationV2',
-        'enterprise_projects': 'list[EnterpriseProject]'
+        'enterprise_projects': 'list[EnterpriseProject]',
+        'sub_order_infos': 'list[SubCustomerOrderV2]'
     }
 
     attribute_map = {
@@ -51,10 +52,11 @@ class CustomerOrderV2:
         'currency': 'currency',
         'contract_id': 'contract_id',
         'amount_info': 'amount_info',
-        'enterprise_projects': 'enterprise_projects'
+        'enterprise_projects': 'enterprise_projects',
+        'sub_order_infos': 'sub_order_infos'
     }
 
-    def __init__(self, order_id=None, customer_id=None, service_type_code=None, service_type_name=None, source_type=None, status=None, order_type=None, amount_after_discount=None, official_amount=None, measure_id=None, create_time=None, payment_time=None, currency=None, contract_id=None, amount_info=None, enterprise_projects=None):
+    def __init__(self, order_id=None, customer_id=None, service_type_code=None, service_type_name=None, source_type=None, status=None, order_type=None, amount_after_discount=None, official_amount=None, measure_id=None, create_time=None, payment_time=None, currency=None, contract_id=None, amount_info=None, enterprise_projects=None, sub_order_infos=None):
         """CustomerOrderV2
 
         The model defined in huaweicloud sdk
@@ -89,8 +91,10 @@ class CustomerOrderV2:
         :type contract_id: str
         :param amount_info: 
         :type amount_info: :class:`huaweicloudsdkbss.v2.AmountInfomationV2`
-        :param enterprise_projects: |参数名称：客户订单企业项目信息。| |参数约束及描述： 客户订单企业项目信息。具体请参见表 EnterpriseProject。|
+        :param enterprise_projects: 客户订单企业项目信息。具体请参见表 EnterpriseProject。
         :type enterprise_projects: list[:class:`huaweicloudsdkbss.v2.EnterpriseProject`]
+        :param sub_order_infos: 客户订单下属的订单详情信息。具体请参见表 SubCustomerOrderV2 说明：当查询订单为组合交易订单时，订单信息会返回下属的订单信息，当查询为普通订单时，此字段返回为空
+        :type sub_order_infos: list[:class:`huaweicloudsdkbss.v2.SubCustomerOrderV2`]
         """
         
         
@@ -111,6 +115,7 @@ class CustomerOrderV2:
         self._contract_id = None
         self._amount_info = None
         self._enterprise_projects = None
+        self._sub_order_infos = None
         self.discriminator = None
 
         if order_id is not None:
@@ -145,6 +150,8 @@ class CustomerOrderV2:
             self.amount_info = amount_info
         if enterprise_projects is not None:
             self.enterprise_projects = enterprise_projects
+        if sub_order_infos is not None:
+            self.sub_order_infos = sub_order_infos
 
     @property
     def order_id(self):
@@ -476,7 +483,7 @@ class CustomerOrderV2:
     def enterprise_projects(self):
         """Gets the enterprise_projects of this CustomerOrderV2.
 
-        |参数名称：客户订单企业项目信息。| |参数约束及描述： 客户订单企业项目信息。具体请参见表 EnterpriseProject。|
+        客户订单企业项目信息。具体请参见表 EnterpriseProject。
 
         :return: The enterprise_projects of this CustomerOrderV2.
         :rtype: list[:class:`huaweicloudsdkbss.v2.EnterpriseProject`]
@@ -487,12 +494,34 @@ class CustomerOrderV2:
     def enterprise_projects(self, enterprise_projects):
         """Sets the enterprise_projects of this CustomerOrderV2.
 
-        |参数名称：客户订单企业项目信息。| |参数约束及描述： 客户订单企业项目信息。具体请参见表 EnterpriseProject。|
+        客户订单企业项目信息。具体请参见表 EnterpriseProject。
 
         :param enterprise_projects: The enterprise_projects of this CustomerOrderV2.
         :type enterprise_projects: list[:class:`huaweicloudsdkbss.v2.EnterpriseProject`]
         """
         self._enterprise_projects = enterprise_projects
+
+    @property
+    def sub_order_infos(self):
+        """Gets the sub_order_infos of this CustomerOrderV2.
+
+        客户订单下属的订单详情信息。具体请参见表 SubCustomerOrderV2 说明：当查询订单为组合交易订单时，订单信息会返回下属的订单信息，当查询为普通订单时，此字段返回为空
+
+        :return: The sub_order_infos of this CustomerOrderV2.
+        :rtype: list[:class:`huaweicloudsdkbss.v2.SubCustomerOrderV2`]
+        """
+        return self._sub_order_infos
+
+    @sub_order_infos.setter
+    def sub_order_infos(self, sub_order_infos):
+        """Sets the sub_order_infos of this CustomerOrderV2.
+
+        客户订单下属的订单详情信息。具体请参见表 SubCustomerOrderV2 说明：当查询订单为组合交易订单时，订单信息会返回下属的订单信息，当查询为普通订单时，此字段返回为空
+
+        :param sub_order_infos: The sub_order_infos of this CustomerOrderV2.
+        :type sub_order_infos: list[:class:`huaweicloudsdkbss.v2.SubCustomerOrderV2`]
+        """
+        self._sub_order_infos = sub_order_infos
 
     def to_dict(self):
         """Returns the model properties as a dict"""

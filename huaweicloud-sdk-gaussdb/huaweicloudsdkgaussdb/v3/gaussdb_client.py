@@ -35,7 +35,7 @@ class GaussDBClient(Client):
     def add_database_permission(self, request):
         """授予数据库用户数据库权限
 
-        授予云数据库 GaussDB(for MySQL)实例数据库用户数据库权限。
+        授予云数据库 TaurusDB实例数据库用户数据库权限。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -859,7 +859,7 @@ class GaussDBClient(Client):
     def create_gauss_my_sql_database(self, request):
         """创建数据库
 
-        创建云数据库 GaussDB(for MySQL)实例数据库。
+        创建云数据库 TaurusDB实例数据库。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -928,7 +928,7 @@ class GaussDBClient(Client):
     def create_gauss_my_sql_database_user(self, request):
         """创建数据库用户
 
-        创建云数据库GaussDB(for MySQL)实例数据库用户。
+        创建云数据库TaurusDB实例数据库用户。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -997,7 +997,7 @@ class GaussDBClient(Client):
     def create_gauss_my_sql_instance(self, request):
         """创建数据库实例
 
-        创建云数据库GaussDB(for MySQL)实例。
+        创建云数据库TaurusDB实例。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1407,7 +1407,7 @@ class GaussDBClient(Client):
     def delete_database_permission(self, request):
         """删除数据库用户的数据库权限
 
-        删除云数据库 GaussDB(for MySQL)实例数据库用户的数据库权限。
+        删除云数据库 TaurusDB实例数据库用户的数据库权限。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1610,7 +1610,7 @@ class GaussDBClient(Client):
     def delete_gauss_my_sql_database(self, request):
         """删除数据库
 
-        删除云数据库 GaussDB(for MySQL)实例数据库。
+        删除云数据库 TaurusDB实例数据库。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1679,7 +1679,7 @@ class GaussDBClient(Client):
     def delete_gauss_my_sql_database_user(self, request):
         """删除数据库用户
 
-        删除云数据库 GaussDB(for MySQL)实例数据库用户。
+        删除云数据库 TaurusDB实例数据库用户。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2853,7 +2853,7 @@ class GaussDBClient(Client):
     def list_gauss_my_sql_database(self, request):
         """查询数据库列表
 
-        查询 GaussDB(for MySQL)实例数据库。
+        查询 TaurusDB实例数据库。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2928,7 +2928,7 @@ class GaussDBClient(Client):
     def list_gauss_my_sql_database_charsets(self, request):
         """查询数据库可用字符集
 
-        查询云数据库 GaussDB(for MySQL)实例数据库可用字符集。
+        查询云数据库 TaurusDB实例数据库可用字符集。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2995,7 +2995,7 @@ class GaussDBClient(Client):
     def list_gauss_my_sql_database_user(self, request):
         """查询数据库用户
 
-        查询云数据库 GaussDB(for MySQL)实例数据库用户。
+        查询云数据库 TaurusDB实例数据库用户。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4512,7 +4512,7 @@ class GaussDBClient(Client):
     def reset_gauss_my_sql_database_password(self, request):
         """修改数据库用户密码
 
-        修改云数据库 GaussDB(for MySQL)实例数据库用户密码。
+        修改云数据库 TaurusDB实例数据库用户密码。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6038,7 +6038,7 @@ class GaussDBClient(Client):
     def show_gauss_my_sql_job_info(self, request):
         """获取指定ID的任务信息
 
-        获取GaussDB(for MySQL)任务中心指定ID的任务信息。
+        获取TaurusDB任务中心指定ID的任务信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -8048,7 +8048,7 @@ class GaussDBClient(Client):
     def update_gauss_my_sql_database_comment(self, request):
         """修改数据库备注
 
-        修改云数据库 GaussDB(for MySQL)实例数据库备注。
+        修改云数据库 TaurusDB实例数据库备注。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -8117,7 +8117,7 @@ class GaussDBClient(Client):
     def update_gauss_my_sql_database_user_comment(self, request):
         """修改数据库用户备注
 
-        修改云数据库 GaussDB(for MySQL)实例数据库用户备注。
+        修改云数据库 TaurusDB实例数据库用户备注。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

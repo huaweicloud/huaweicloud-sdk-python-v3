@@ -68,7 +68,8 @@ class CreateMasterSlaveMemberOption:
             self.admin_state_up = admin_state_up
         if name is not None:
             self.name = name
-        self.protocol_port = protocol_port
+        if protocol_port is not None:
+            self.protocol_port = protocol_port
         if subnet_cidr_id is not None:
             self.subnet_cidr_id = subnet_cidr_id
         self.role = role

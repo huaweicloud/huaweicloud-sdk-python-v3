@@ -73,7 +73,7 @@ class PeriodProductInfo:
         :type period_num: int
         :param subscription_num: 订购包年/包月产品的数量。
         :type subscription_num: int
-        :param fee_installment_mode: 费用分期模式。 HALF_PAY：半付ZERO_PAY：零付NA：不支持费用分期模式  说明： 此参数不携带或携带值为空串或携带值为null时，默认值为“NA”。暂只支持IES产品。
+        :param fee_installment_mode: 费用分期模式。 HALF_PAY：半付ZERO_PAY：零付NA：不支持费用分期模式  说明： 此参数不携带或携带值为空串或携带值为null时，默认值为“NA”。暂只支持CloudPond产品。
         :type fee_installment_mode: str
         """
         
@@ -356,7 +356,7 @@ class PeriodProductInfo:
     def fee_installment_mode(self):
         """Gets the fee_installment_mode of this PeriodProductInfo.
 
-        费用分期模式。 HALF_PAY：半付ZERO_PAY：零付NA：不支持费用分期模式  说明： 此参数不携带或携带值为空串或携带值为null时，默认值为“NA”。暂只支持IES产品。
+        费用分期模式。 HALF_PAY：半付ZERO_PAY：零付NA：不支持费用分期模式  说明： 此参数不携带或携带值为空串或携带值为null时，默认值为“NA”。暂只支持CloudPond产品。
 
         :return: The fee_installment_mode of this PeriodProductInfo.
         :rtype: str
@@ -367,7 +367,7 @@ class PeriodProductInfo:
     def fee_installment_mode(self, fee_installment_mode):
         """Sets the fee_installment_mode of this PeriodProductInfo.
 
-        费用分期模式。 HALF_PAY：半付ZERO_PAY：零付NA：不支持费用分期模式  说明： 此参数不携带或携带值为空串或携带值为null时，默认值为“NA”。暂只支持IES产品。
+        费用分期模式。 HALF_PAY：半付ZERO_PAY：零付NA：不支持费用分期模式  说明： 此参数不携带或携带值为空串或携带值为null时，默认值为“NA”。暂只支持CloudPond产品。
 
         :param fee_installment_mode: The fee_installment_mode of this PeriodProductInfo.
         :type fee_installment_mode: str

@@ -41,9 +41,9 @@ class AvailabilityZone:
         :type code: str
         :param state: 参数解释：可用区状态。  取值范围：ACTIVE。
         :type state: str
-        :param protocol: [参数解释：未售罄的LB规格类别。  取值范围：L4 表示网络型LB未售罄；L7 表示应用型LB未售罄。](tag:hws,hk,hws_eu,otc,tlf,sbc,g42,hk_g42,dt_test,mix,hk_sbc,hws_ocb,dt) [参数解释：LB规格类别。  取值范围：L4 表示网络型LB；L7 表示应用型LB。](tag:ctc,cmcc,ocb,tm,fcs,fcs_dt,hcso,hcso_dt,hk_vdf)
+        :param protocol: [参数解释：未售罄的LB规格类别。  取值范围：L4 表示网络型LB未售罄；L7 表示应用型LB未售罄。](tag:hws,hws_hk,hws_eu,otc,tlf,ct,sbc,g42,hk_g42,dt_test,mix,hk_sbc,hws_ocb,dt) [参数解释：LB规格类别。  取值范围：L4 表示网络型LB；L7 表示应用型LB。](tag:ctc,cmcc,ocb,tm,srg,fcs,fcs_dt,hcso,hcso_dt,hk_vdf)
         :type protocol: list[str]
-        :param public_border_group: 参数解释：可用区组，如：center
+        :param public_border_group: 参数解释：网络公共边界组，如：center
         :type public_border_group: str
         :param category: 参数解释：范围编码。  取值范围：0表示center，21表示homezone。
         :type category: int
@@ -112,7 +112,7 @@ class AvailabilityZone:
     def protocol(self):
         """Gets the protocol of this AvailabilityZone.
 
-        [参数解释：未售罄的LB规格类别。  取值范围：L4 表示网络型LB未售罄；L7 表示应用型LB未售罄。](tag:hws,hk,hws_eu,otc,tlf,sbc,g42,hk_g42,dt_test,mix,hk_sbc,hws_ocb,dt) [参数解释：LB规格类别。  取值范围：L4 表示网络型LB；L7 表示应用型LB。](tag:ctc,cmcc,ocb,tm,fcs,fcs_dt,hcso,hcso_dt,hk_vdf)
+        [参数解释：未售罄的LB规格类别。  取值范围：L4 表示网络型LB未售罄；L7 表示应用型LB未售罄。](tag:hws,hws_hk,hws_eu,otc,tlf,ct,sbc,g42,hk_g42,dt_test,mix,hk_sbc,hws_ocb,dt) [参数解释：LB规格类别。  取值范围：L4 表示网络型LB；L7 表示应用型LB。](tag:ctc,cmcc,ocb,tm,srg,fcs,fcs_dt,hcso,hcso_dt,hk_vdf)
 
         :return: The protocol of this AvailabilityZone.
         :rtype: list[str]
@@ -123,7 +123,7 @@ class AvailabilityZone:
     def protocol(self, protocol):
         """Sets the protocol of this AvailabilityZone.
 
-        [参数解释：未售罄的LB规格类别。  取值范围：L4 表示网络型LB未售罄；L7 表示应用型LB未售罄。](tag:hws,hk,hws_eu,otc,tlf,sbc,g42,hk_g42,dt_test,mix,hk_sbc,hws_ocb,dt) [参数解释：LB规格类别。  取值范围：L4 表示网络型LB；L7 表示应用型LB。](tag:ctc,cmcc,ocb,tm,fcs,fcs_dt,hcso,hcso_dt,hk_vdf)
+        [参数解释：未售罄的LB规格类别。  取值范围：L4 表示网络型LB未售罄；L7 表示应用型LB未售罄。](tag:hws,hws_hk,hws_eu,otc,tlf,ct,sbc,g42,hk_g42,dt_test,mix,hk_sbc,hws_ocb,dt) [参数解释：LB规格类别。  取值范围：L4 表示网络型LB；L7 表示应用型LB。](tag:ctc,cmcc,ocb,tm,srg,fcs,fcs_dt,hcso,hcso_dt,hk_vdf)
 
         :param protocol: The protocol of this AvailabilityZone.
         :type protocol: list[str]
@@ -134,7 +134,7 @@ class AvailabilityZone:
     def public_border_group(self):
         """Gets the public_border_group of this AvailabilityZone.
 
-        参数解释：可用区组，如：center
+        参数解释：网络公共边界组，如：center
 
         :return: The public_border_group of this AvailabilityZone.
         :rtype: str
@@ -145,7 +145,7 @@ class AvailabilityZone:
     def public_border_group(self, public_border_group):
         """Sets the public_border_group of this AvailabilityZone.
 
-        参数解释：可用区组，如：center
+        参数解释：网络公共边界组，如：center
 
         :param public_border_group: The public_border_group of this AvailabilityZone.
         :type public_border_group: str

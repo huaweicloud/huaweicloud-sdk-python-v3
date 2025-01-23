@@ -43,7 +43,7 @@ class ShowRestoreTablesRequest:
         :type x_language: str
         :param instance_id: 实例ID，严格匹配UUID规则。
         :type instance_id: str
-        :param restore_time: 备份时间点，时间戳格式。  通过[查询可恢复时间段](https://support.huaweicloud.com/api-gaussdbformysql/ShowBackupRestoreTime.html)获取。
+        :param restore_time: 备份时间点，时间戳格式。  通过[查询可恢复时间段](https://support.huaweicloud.com/api-taurusdb/ShowBackupRestoreTime.html)获取。
         :type restore_time: str
         :param last_table_info: 是否是最新库表。 - true：是最新库表。 - false：是恢复时间点库表。
         :type last_table_info: str
@@ -121,7 +121,7 @@ class ShowRestoreTablesRequest:
     def restore_time(self):
         """Gets the restore_time of this ShowRestoreTablesRequest.
 
-        备份时间点，时间戳格式。  通过[查询可恢复时间段](https://support.huaweicloud.com/api-gaussdbformysql/ShowBackupRestoreTime.html)获取。
+        备份时间点，时间戳格式。  通过[查询可恢复时间段](https://support.huaweicloud.com/api-taurusdb/ShowBackupRestoreTime.html)获取。
 
         :return: The restore_time of this ShowRestoreTablesRequest.
         :rtype: str
@@ -132,7 +132,7 @@ class ShowRestoreTablesRequest:
     def restore_time(self, restore_time):
         """Sets the restore_time of this ShowRestoreTablesRequest.
 
-        备份时间点，时间戳格式。  通过[查询可恢复时间段](https://support.huaweicloud.com/api-gaussdbformysql/ShowBackupRestoreTime.html)获取。
+        备份时间点，时间戳格式。  通过[查询可恢复时间段](https://support.huaweicloud.com/api-taurusdb/ShowBackupRestoreTime.html)获取。
 
         :param restore_time: The restore_time of this ShowRestoreTablesRequest.
         :type restore_time: str

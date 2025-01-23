@@ -33,7 +33,7 @@ class ListClickHouseInstanceRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: GaussDB(for MySQL)实例ID，严格匹配UUID规则。
+        :param instance_id: TaurusDB实例ID，严格匹配UUID规则。
         :type instance_id: str
         :param clickhouse_instance_id: ClickHouse实例ID，严格匹配UUID规则。
         :type clickhouse_instance_id: str
@@ -57,7 +57,7 @@ class ListClickHouseInstanceRequest:
     def instance_id(self):
         """Gets the instance_id of this ListClickHouseInstanceRequest.
 
-        GaussDB(for MySQL)实例ID，严格匹配UUID规则。
+        TaurusDB实例ID，严格匹配UUID规则。
 
         :return: The instance_id of this ListClickHouseInstanceRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class ListClickHouseInstanceRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListClickHouseInstanceRequest.
 
-        GaussDB(for MySQL)实例ID，严格匹配UUID规则。
+        TaurusDB实例ID，严格匹配UUID规则。
 
         :param instance_id: The instance_id of this ListClickHouseInstanceRequest.
         :type instance_id: str

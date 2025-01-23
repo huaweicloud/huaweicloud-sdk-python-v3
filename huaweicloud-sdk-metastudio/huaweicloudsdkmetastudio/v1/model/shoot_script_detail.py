@@ -20,8 +20,10 @@ class ShootScriptDetail:
         'script_type': 'str',
         'text_config': 'TextConfig',
         'audio_drive_action_config': 'list[AudioDriveActionConfig]',
+        'audio_drive_file_external_url': 'str',
         'background_config': 'list[BackgroundConfigInfo]',
         'layer_config': 'list[LayerConfig]',
+        'audio_config': 'AudioInfo',
         'thumbnail_url': 'str'
     }
 
@@ -29,12 +31,14 @@ class ShootScriptDetail:
         'script_type': 'script_type',
         'text_config': 'text_config',
         'audio_drive_action_config': 'audio_drive_action_config',
+        'audio_drive_file_external_url': 'audio_drive_file_external_url',
         'background_config': 'background_config',
         'layer_config': 'layer_config',
+        'audio_config': 'audio_config',
         'thumbnail_url': 'thumbnail_url'
     }
 
-    def __init__(self, script_type=None, text_config=None, audio_drive_action_config=None, background_config=None, layer_config=None, thumbnail_url=None):
+    def __init__(self, script_type=None, text_config=None, audio_drive_action_config=None, audio_drive_file_external_url=None, background_config=None, layer_config=None, audio_config=None, thumbnail_url=None):
         """ShootScriptDetail
 
         The model defined in huaweicloud sdk
@@ -45,10 +49,14 @@ class ShootScriptDetail:
         :type text_config: :class:`huaweicloudsdkmetastudio.v1.TextConfig`
         :param audio_drive_action_config: 语音驱动时的动作配置。
         :type audio_drive_action_config: list[:class:`huaweicloudsdkmetastudio.v1.AudioDriveActionConfig`]
+        :param audio_drive_file_external_url: 语音驱动音频文件外部下载URL。  &gt; * 需要先申请开通白名单后，才允许通过外部URL的音频文件来驱动分身数字人视频。
+        :type audio_drive_file_external_url: str
         :param background_config: 背景配置。
         :type background_config: list[:class:`huaweicloudsdkmetastudio.v1.BackgroundConfigInfo`]
         :param layer_config: 图层配置。
         :type layer_config: list[:class:`huaweicloudsdkmetastudio.v1.LayerConfig`]
+        :param audio_config: 
+        :type audio_config: :class:`huaweicloudsdkmetastudio.v1.AudioInfo`
         :param thumbnail_url: **参数解释**： 剧本场景缩略图url。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-2048位。 **默认取值**： 不涉及。
         :type thumbnail_url: str
         """
@@ -58,8 +66,10 @@ class ShootScriptDetail:
         self._script_type = None
         self._text_config = None
         self._audio_drive_action_config = None
+        self._audio_drive_file_external_url = None
         self._background_config = None
         self._layer_config = None
+        self._audio_config = None
         self._thumbnail_url = None
         self.discriminator = None
 
@@ -69,10 +79,14 @@ class ShootScriptDetail:
             self.text_config = text_config
         if audio_drive_action_config is not None:
             self.audio_drive_action_config = audio_drive_action_config
+        if audio_drive_file_external_url is not None:
+            self.audio_drive_file_external_url = audio_drive_file_external_url
         if background_config is not None:
             self.background_config = background_config
         if layer_config is not None:
             self.layer_config = layer_config
+        if audio_config is not None:
+            self.audio_config = audio_config
         if thumbnail_url is not None:
             self.thumbnail_url = thumbnail_url
 
@@ -139,6 +153,28 @@ class ShootScriptDetail:
         self._audio_drive_action_config = audio_drive_action_config
 
     @property
+    def audio_drive_file_external_url(self):
+        """Gets the audio_drive_file_external_url of this ShootScriptDetail.
+
+        语音驱动音频文件外部下载URL。  > * 需要先申请开通白名单后，才允许通过外部URL的音频文件来驱动分身数字人视频。
+
+        :return: The audio_drive_file_external_url of this ShootScriptDetail.
+        :rtype: str
+        """
+        return self._audio_drive_file_external_url
+
+    @audio_drive_file_external_url.setter
+    def audio_drive_file_external_url(self, audio_drive_file_external_url):
+        """Sets the audio_drive_file_external_url of this ShootScriptDetail.
+
+        语音驱动音频文件外部下载URL。  > * 需要先申请开通白名单后，才允许通过外部URL的音频文件来驱动分身数字人视频。
+
+        :param audio_drive_file_external_url: The audio_drive_file_external_url of this ShootScriptDetail.
+        :type audio_drive_file_external_url: str
+        """
+        self._audio_drive_file_external_url = audio_drive_file_external_url
+
+    @property
     def background_config(self):
         """Gets the background_config of this ShootScriptDetail.
 
@@ -181,6 +217,24 @@ class ShootScriptDetail:
         :type layer_config: list[:class:`huaweicloudsdkmetastudio.v1.LayerConfig`]
         """
         self._layer_config = layer_config
+
+    @property
+    def audio_config(self):
+        """Gets the audio_config of this ShootScriptDetail.
+
+        :return: The audio_config of this ShootScriptDetail.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.AudioInfo`
+        """
+        return self._audio_config
+
+    @audio_config.setter
+    def audio_config(self, audio_config):
+        """Sets the audio_config of this ShootScriptDetail.
+
+        :param audio_config: The audio_config of this ShootScriptDetail.
+        :type audio_config: :class:`huaweicloudsdkmetastudio.v1.AudioInfo`
+        """
+        self._audio_config = audio_config
 
     @property
     def thumbnail_url(self):

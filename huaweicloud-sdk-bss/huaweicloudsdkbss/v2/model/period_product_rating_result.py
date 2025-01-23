@@ -59,13 +59,13 @@ class PeriodProductRatingResult:
         :type discount_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param measure_id: 价格度量单位标识。 1：元
         :type measure_id: int
-        :param installment_official_website_amount: 分期金额的官网价。  说明： 暂只支持IES产品。
+        :param installment_official_website_amount: 分期金额的官网价。  说明： 暂只支持CloudPond产品。
         :type installment_official_website_amount: str
-        :param installment_official_discount_amount: 分期金额的折扣价。  说明： 暂只支持IES产品。
+        :param installment_official_discount_amount: 分期金额的折扣价。  说明： 暂只支持CloudPond产品。
         :type installment_official_discount_amount: str
-        :param installment_amount: 分期金额的成交价。  说明： 分期金额的成交价&#x3D;分期金额的官网价-分期金额的折扣价。暂只支持IES产品。
+        :param installment_amount: 分期金额的成交价。  说明： 分期金额的成交价&#x3D;分期金额的官网价-分期金额的折扣价。暂只支持CloudPond产品。
         :type installment_amount: str
-        :param installment_period_type: 分期付款的周期类型。 2：月  说明： 暂只支持IES产品。
+        :param installment_period_type: 分期付款的周期类型。 2：月 3：年 说明： 暂只支持CloudPond产品。
         :type installment_period_type: int
         """
         
@@ -240,7 +240,7 @@ class PeriodProductRatingResult:
     def installment_official_website_amount(self):
         """Gets the installment_official_website_amount of this PeriodProductRatingResult.
 
-        分期金额的官网价。  说明： 暂只支持IES产品。
+        分期金额的官网价。  说明： 暂只支持CloudPond产品。
 
         :return: The installment_official_website_amount of this PeriodProductRatingResult.
         :rtype: str
@@ -251,7 +251,7 @@ class PeriodProductRatingResult:
     def installment_official_website_amount(self, installment_official_website_amount):
         """Sets the installment_official_website_amount of this PeriodProductRatingResult.
 
-        分期金额的官网价。  说明： 暂只支持IES产品。
+        分期金额的官网价。  说明： 暂只支持CloudPond产品。
 
         :param installment_official_website_amount: The installment_official_website_amount of this PeriodProductRatingResult.
         :type installment_official_website_amount: str
@@ -262,7 +262,7 @@ class PeriodProductRatingResult:
     def installment_official_discount_amount(self):
         """Gets the installment_official_discount_amount of this PeriodProductRatingResult.
 
-        分期金额的折扣价。  说明： 暂只支持IES产品。
+        分期金额的折扣价。  说明： 暂只支持CloudPond产品。
 
         :return: The installment_official_discount_amount of this PeriodProductRatingResult.
         :rtype: str
@@ -273,7 +273,7 @@ class PeriodProductRatingResult:
     def installment_official_discount_amount(self, installment_official_discount_amount):
         """Sets the installment_official_discount_amount of this PeriodProductRatingResult.
 
-        分期金额的折扣价。  说明： 暂只支持IES产品。
+        分期金额的折扣价。  说明： 暂只支持CloudPond产品。
 
         :param installment_official_discount_amount: The installment_official_discount_amount of this PeriodProductRatingResult.
         :type installment_official_discount_amount: str
@@ -284,7 +284,7 @@ class PeriodProductRatingResult:
     def installment_amount(self):
         """Gets the installment_amount of this PeriodProductRatingResult.
 
-        分期金额的成交价。  说明： 分期金额的成交价=分期金额的官网价-分期金额的折扣价。暂只支持IES产品。
+        分期金额的成交价。  说明： 分期金额的成交价=分期金额的官网价-分期金额的折扣价。暂只支持CloudPond产品。
 
         :return: The installment_amount of this PeriodProductRatingResult.
         :rtype: str
@@ -295,7 +295,7 @@ class PeriodProductRatingResult:
     def installment_amount(self, installment_amount):
         """Sets the installment_amount of this PeriodProductRatingResult.
 
-        分期金额的成交价。  说明： 分期金额的成交价=分期金额的官网价-分期金额的折扣价。暂只支持IES产品。
+        分期金额的成交价。  说明： 分期金额的成交价=分期金额的官网价-分期金额的折扣价。暂只支持CloudPond产品。
 
         :param installment_amount: The installment_amount of this PeriodProductRatingResult.
         :type installment_amount: str
@@ -306,7 +306,7 @@ class PeriodProductRatingResult:
     def installment_period_type(self):
         """Gets the installment_period_type of this PeriodProductRatingResult.
 
-        分期付款的周期类型。 2：月  说明： 暂只支持IES产品。
+        分期付款的周期类型。 2：月 3：年 说明： 暂只支持CloudPond产品。
 
         :return: The installment_period_type of this PeriodProductRatingResult.
         :rtype: int
@@ -317,7 +317,7 @@ class PeriodProductRatingResult:
     def installment_period_type(self, installment_period_type):
         """Sets the installment_period_type of this PeriodProductRatingResult.
 
-        分期付款的周期类型。 2：月  说明： 暂只支持IES产品。
+        分期付款的周期类型。 2：月 3：年 说明： 暂只支持CloudPond产品。
 
         :param installment_period_type: The installment_period_type of this PeriodProductRatingResult.
         :type installment_period_type: int

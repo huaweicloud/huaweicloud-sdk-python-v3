@@ -28,7 +28,8 @@ class VideoConfig:
         'dx': 'int',
         'dy': 'int',
         'is_enable_super_resolution': 'bool',
-        'is_end_at_first_frame': 'bool'
+        'is_end_at_first_frame': 'bool',
+        'output_external_url': 'str'
     }
 
     attribute_map = {
@@ -43,10 +44,11 @@ class VideoConfig:
         'dx': 'dx',
         'dy': 'dy',
         'is_enable_super_resolution': 'is_enable_super_resolution',
-        'is_end_at_first_frame': 'is_end_at_first_frame'
+        'is_end_at_first_frame': 'is_end_at_first_frame',
+        'output_external_url': 'output_external_url'
     }
 
-    def __init__(self, clip_mode=None, codec=None, bitrate=None, width=None, height=None, frame_rate=None, is_subtitle_enable=None, subtitle_config=None, dx=None, dy=None, is_enable_super_resolution=None, is_end_at_first_frame=None):
+    def __init__(self, clip_mode=None, codec=None, bitrate=None, width=None, height=None, frame_rate=None, is_subtitle_enable=None, subtitle_config=None, dx=None, dy=None, is_enable_super_resolution=None, is_end_at_first_frame=None, output_external_url=None):
         """VideoConfig
 
         The model defined in huaweicloud sdk
@@ -75,6 +77,8 @@ class VideoConfig:
         :type is_enable_super_resolution: bool
         :param is_end_at_first_frame: **参数解释**： 视频结束帧是否跟起始帧相同。需要多个数字人视频无缝拼接时设置成true。 **约束限制**： 仅分身数字人视频制作支持，当视频制作时插入动作标签后此设置将失效。 **取值范围** * true: 开启 * false: 不开启
         :type is_end_at_first_frame: bool
+        :param output_external_url: 视频文件上传的外部URL。  &gt; * 需要先申请开通白名单后，才允许将视频上传到外部URL。
+        :type output_external_url: str
         """
         
         
@@ -91,6 +95,7 @@ class VideoConfig:
         self._dy = None
         self._is_enable_super_resolution = None
         self._is_end_at_first_frame = None
+        self._output_external_url = None
         self.discriminator = None
 
         if clip_mode is not None:
@@ -113,6 +118,8 @@ class VideoConfig:
             self.is_enable_super_resolution = is_enable_super_resolution
         if is_end_at_first_frame is not None:
             self.is_end_at_first_frame = is_end_at_first_frame
+        if output_external_url is not None:
+            self.output_external_url = output_external_url
 
     @property
     def clip_mode(self):
@@ -373,6 +380,28 @@ class VideoConfig:
         :type is_end_at_first_frame: bool
         """
         self._is_end_at_first_frame = is_end_at_first_frame
+
+    @property
+    def output_external_url(self):
+        """Gets the output_external_url of this VideoConfig.
+
+        视频文件上传的外部URL。  > * 需要先申请开通白名单后，才允许将视频上传到外部URL。
+
+        :return: The output_external_url of this VideoConfig.
+        :rtype: str
+        """
+        return self._output_external_url
+
+    @output_external_url.setter
+    def output_external_url(self, output_external_url):
+        """Sets the output_external_url of this VideoConfig.
+
+        视频文件上传的外部URL。  > * 需要先申请开通白名单后，才允许将视频上传到外部URL。
+
+        :param output_external_url: The output_external_url of this VideoConfig.
+        :type output_external_url: str
+        """
+        self._output_external_url = output_external_url
 
     def to_dict(self):
         """Returns the model properties as a dict"""

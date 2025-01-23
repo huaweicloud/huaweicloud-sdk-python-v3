@@ -33,7 +33,7 @@ class CreateClickHouseInstanceRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: GaussDB(for MySQL)实例ID，严格匹配UUID规则。
+        :param instance_id: TaurusDB实例ID，严格匹配UUID规则。
         :type instance_id: str
         :param x_language: 请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
         :type x_language: str
@@ -58,7 +58,7 @@ class CreateClickHouseInstanceRequest:
     def instance_id(self):
         """Gets the instance_id of this CreateClickHouseInstanceRequest.
 
-        GaussDB(for MySQL)实例ID，严格匹配UUID规则。
+        TaurusDB实例ID，严格匹配UUID规则。
 
         :return: The instance_id of this CreateClickHouseInstanceRequest.
         :rtype: str
@@ -69,7 +69,7 @@ class CreateClickHouseInstanceRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this CreateClickHouseInstanceRequest.
 
-        GaussDB(for MySQL)实例ID，严格匹配UUID规则。
+        TaurusDB实例ID，严格匹配UUID规则。
 
         :param instance_id: The instance_id of this CreateClickHouseInstanceRequest.
         :type instance_id: str

@@ -21,7 +21,8 @@ class ExportTopRiskInstancesRequest:
         'end_at': 'int',
         'datastore_type': 'str',
         'num': 'int',
-        'x_language': 'str'
+        'x_language': 'str',
+        'metric_code': 'str'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class ExportTopRiskInstancesRequest:
         'end_at': 'end_at',
         'datastore_type': 'datastore_type',
         'num': 'num',
-        'x_language': 'X-Language'
+        'x_language': 'X-Language',
+        'metric_code': 'metric_code'
     }
 
-    def __init__(self, start_at=None, end_at=None, datastore_type=None, num=None, x_language=None):
+    def __init__(self, start_at=None, end_at=None, datastore_type=None, num=None, x_language=None, metric_code=None):
         """ExportTopRiskInstancesRequest
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class ExportTopRiskInstancesRequest:
         :type num: int
         :param x_language: 请求语言类型。
         :type x_language: str
+        :param metric_code: 指标码
+        :type metric_code: str
         """
         
         
@@ -56,6 +60,7 @@ class ExportTopRiskInstancesRequest:
         self._datastore_type = None
         self._num = None
         self._x_language = None
+        self._metric_code = None
         self.discriminator = None
 
         self.start_at = start_at
@@ -65,6 +70,8 @@ class ExportTopRiskInstancesRequest:
             self.num = num
         if x_language is not None:
             self.x_language = x_language
+        if metric_code is not None:
+            self.metric_code = metric_code
 
     @property
     def start_at(self):
@@ -175,6 +182,28 @@ class ExportTopRiskInstancesRequest:
         :type x_language: str
         """
         self._x_language = x_language
+
+    @property
+    def metric_code(self):
+        """Gets the metric_code of this ExportTopRiskInstancesRequest.
+
+        指标码
+
+        :return: The metric_code of this ExportTopRiskInstancesRequest.
+        :rtype: str
+        """
+        return self._metric_code
+
+    @metric_code.setter
+    def metric_code(self, metric_code):
+        """Sets the metric_code of this ExportTopRiskInstancesRequest.
+
+        指标码
+
+        :param metric_code: The metric_code of this ExportTopRiskInstancesRequest.
+        :type metric_code: str
+        """
+        self._metric_code = metric_code
 
     def to_dict(self):
         """Returns the model properties as a dict"""

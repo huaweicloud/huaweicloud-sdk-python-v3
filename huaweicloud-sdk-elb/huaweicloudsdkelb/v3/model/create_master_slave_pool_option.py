@@ -31,7 +31,8 @@ class CreateMasterSlavePoolOption:
         'members': 'list[CreateMasterSlaveMemberOption]',
         'healthmonitor': 'CreateMasterSlaveHealthMonitorOption',
         'any_port_enable': 'bool',
-        'connection_drain': 'ConnectionDrain'
+        'connection_drain': 'ConnectionDrain',
+        'quic_cid_hash_strategy': 'QuicCidHashStrategy'
     }
 
     attribute_map = {
@@ -49,10 +50,11 @@ class CreateMasterSlavePoolOption:
         'members': 'members',
         'healthmonitor': 'healthmonitor',
         'any_port_enable': 'any_port_enable',
-        'connection_drain': 'connection_drain'
+        'connection_drain': 'connection_drain',
+        'quic_cid_hash_strategy': 'quic_cid_hash_strategy'
     }
 
-    def __init__(self, description=None, lb_algorithm=None, loadbalancer_id=None, listener_id=None, name=None, project_id=None, protocol=None, session_persistence=None, vpc_id=None, type=None, ip_version=None, members=None, healthmonitor=None, any_port_enable=None, connection_drain=None):
+    def __init__(self, description=None, lb_algorithm=None, loadbalancer_id=None, listener_id=None, name=None, project_id=None, protocol=None, session_persistence=None, vpc_id=None, type=None, ip_version=None, members=None, healthmonitor=None, any_port_enable=None, connection_drain=None, quic_cid_hash_strategy=None):
         """CreateMasterSlavePoolOption
 
         The model defined in huaweicloud sdk
@@ -77,7 +79,7 @@ class CreateMasterSlavePoolOption:
         :type vpc_id: str
         :param type: 后端服务器组的类型。  取值： - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。 - ip：只能添加跨VPC后端，type指定为该类型时，vpc_id不允许指定。
         :type type: str
-        :param ip_version: 后端服务器组支持的IP版本。  [取值： - 共享型：固定为v4； -  独享型：取值dualstack、v4、v6。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。  当协议为HTTP时，ip_version为v4。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs)  [取值：dualstack、v4、v6。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。 当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt,dt_test)
+        :param ip_version: 后端服务器组支持的IP版本。  [取值： - 共享型：固定为v4； -  独享型：取值dualstack、v4、v6。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。  当协议为HTTP时，ip_version为v4。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,srg,fcs)  [取值：dualstack、v4、v6。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。 当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt,dt_test)
         :type ip_version: str
         :param members: 主备主机组的后端服务器。 只能添加2个后端服务器，必须有一个为主，一个为备。
         :type members: list[:class:`huaweicloudsdkelb.v3.CreateMasterSlaveMemberOption`]
@@ -87,6 +89,8 @@ class CreateMasterSlavePoolOption:
         :type any_port_enable: bool
         :param connection_drain: 
         :type connection_drain: :class:`huaweicloudsdkelb.v3.ConnectionDrain`
+        :param quic_cid_hash_strategy: 
+        :type quic_cid_hash_strategy: :class:`huaweicloudsdkelb.v3.QuicCidHashStrategy`
         """
         
         
@@ -106,6 +110,7 @@ class CreateMasterSlavePoolOption:
         self._healthmonitor = None
         self._any_port_enable = None
         self._connection_drain = None
+        self._quic_cid_hash_strategy = None
         self.discriminator = None
 
         if description is not None:
@@ -133,6 +138,8 @@ class CreateMasterSlavePoolOption:
             self.any_port_enable = any_port_enable
         if connection_drain is not None:
             self.connection_drain = connection_drain
+        if quic_cid_hash_strategy is not None:
+            self.quic_cid_hash_strategy = quic_cid_hash_strategy
 
     @property
     def description(self):
@@ -354,7 +361,7 @@ class CreateMasterSlavePoolOption:
     def ip_version(self):
         """Gets the ip_version of this CreateMasterSlavePoolOption.
 
-        后端服务器组支持的IP版本。  [取值： - 共享型：固定为v4； -  独享型：取值dualstack、v4、v6。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。  当协议为HTTP时，ip_version为v4。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs)  [取值：dualstack、v4、v6。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。 当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt,dt_test)
+        后端服务器组支持的IP版本。  [取值： - 共享型：固定为v4； -  独享型：取值dualstack、v4、v6。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。  当协议为HTTP时，ip_version为v4。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,srg,fcs)  [取值：dualstack、v4、v6。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。 当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt,dt_test)
 
         :return: The ip_version of this CreateMasterSlavePoolOption.
         :rtype: str
@@ -365,7 +372,7 @@ class CreateMasterSlavePoolOption:
     def ip_version(self, ip_version):
         """Sets the ip_version of this CreateMasterSlavePoolOption.
 
-        后端服务器组支持的IP版本。  [取值： - 共享型：固定为v4； -  独享型：取值dualstack、v4、v6。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。  当协议为HTTP时，ip_version为v4。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs)  [取值：dualstack、v4、v6。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。 当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt,dt_test)
+        后端服务器组支持的IP版本。  [取值： - 共享型：固定为v4； -  独享型：取值dualstack、v4、v6。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。  当协议为HTTP时，ip_version为v4。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,srg,fcs)  [取值：dualstack、v4、v6。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。 当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt,dt_test)
 
         :param ip_version: The ip_version of this CreateMasterSlavePoolOption.
         :type ip_version: str
@@ -451,6 +458,24 @@ class CreateMasterSlavePoolOption:
         :type connection_drain: :class:`huaweicloudsdkelb.v3.ConnectionDrain`
         """
         self._connection_drain = connection_drain
+
+    @property
+    def quic_cid_hash_strategy(self):
+        """Gets the quic_cid_hash_strategy of this CreateMasterSlavePoolOption.
+
+        :return: The quic_cid_hash_strategy of this CreateMasterSlavePoolOption.
+        :rtype: :class:`huaweicloudsdkelb.v3.QuicCidHashStrategy`
+        """
+        return self._quic_cid_hash_strategy
+
+    @quic_cid_hash_strategy.setter
+    def quic_cid_hash_strategy(self, quic_cid_hash_strategy):
+        """Sets the quic_cid_hash_strategy of this CreateMasterSlavePoolOption.
+
+        :param quic_cid_hash_strategy: The quic_cid_hash_strategy of this CreateMasterSlavePoolOption.
+        :type quic_cid_hash_strategy: :class:`huaweicloudsdkelb.v3.QuicCidHashStrategy`
+        """
+        self._quic_cid_hash_strategy = quic_cid_hash_strategy
 
     def to_dict(self):
         """Returns the model properties as a dict"""

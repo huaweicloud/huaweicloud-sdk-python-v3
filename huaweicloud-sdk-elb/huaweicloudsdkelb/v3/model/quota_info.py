@@ -35,7 +35,7 @@ class QuotaInfo:
 
         The model defined in huaweicloud sdk
 
-        :param quota_key: 资源类型。  取值：loadbalancer、listener、ipgroup、pool、member、healthmonitor、l7policy、certificate、security_policy、listeners_per_loadbalancer、listeners_per_pool、members_per_pool、condition_per_policy、ipgroup_bindings、ipgroup_max_length。
+        :param quota_key: 资源类型。  取值：loadbalancer、listener、ipgroup、pool、member、healthmonitor、l7policy、certificate、security_policy、listeners_per_loadbalancer、listeners_per_pool、members_per_pool、condition_per_policy、ipgroup_bindings、ipgroup_max_length、ipgroups_per_listener、pools_per_l7policy、l7policies_per_listener。
         :type quota_key: str
         :param quota_limit: 总配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
         :type quota_limit: int
@@ -62,7 +62,7 @@ class QuotaInfo:
     def quota_key(self):
         """Gets the quota_key of this QuotaInfo.
 
-        资源类型。  取值：loadbalancer、listener、ipgroup、pool、member、healthmonitor、l7policy、certificate、security_policy、listeners_per_loadbalancer、listeners_per_pool、members_per_pool、condition_per_policy、ipgroup_bindings、ipgroup_max_length。
+        资源类型。  取值：loadbalancer、listener、ipgroup、pool、member、healthmonitor、l7policy、certificate、security_policy、listeners_per_loadbalancer、listeners_per_pool、members_per_pool、condition_per_policy、ipgroup_bindings、ipgroup_max_length、ipgroups_per_listener、pools_per_l7policy、l7policies_per_listener。
 
         :return: The quota_key of this QuotaInfo.
         :rtype: str
@@ -73,7 +73,7 @@ class QuotaInfo:
     def quota_key(self, quota_key):
         """Sets the quota_key of this QuotaInfo.
 
-        资源类型。  取值：loadbalancer、listener、ipgroup、pool、member、healthmonitor、l7policy、certificate、security_policy、listeners_per_loadbalancer、listeners_per_pool、members_per_pool、condition_per_policy、ipgroup_bindings、ipgroup_max_length。
+        资源类型。  取值：loadbalancer、listener、ipgroup、pool、member、healthmonitor、l7policy、certificate、security_policy、listeners_per_loadbalancer、listeners_per_pool、members_per_pool、condition_per_policy、ipgroup_bindings、ipgroup_max_length、ipgroups_per_listener、pools_per_l7policy、l7policies_per_listener。
 
         :param quota_key: The quota_key of this QuotaInfo.
         :type quota_key: str

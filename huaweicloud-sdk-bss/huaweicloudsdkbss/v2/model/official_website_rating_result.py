@@ -39,9 +39,9 @@ class OfficialWebsiteRatingResult:
 
         :param official_website_amount: 包年/包月产品的官网价。
         :type official_website_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
-        :param installment_official_website_amount: 分期金额的官网价。  说明： 暂只支持IES产品。
+        :param installment_official_website_amount: 分期金额的官网价。  说明： 暂只支持CloudPond产品。
         :type installment_official_website_amount: str
-        :param installment_period_type: 分期付款的周期类型。 2：月  说明： 暂只支持IES产品。
+        :param installment_period_type: 分期付款的周期类型。 2：月 3：年  说明： 暂只支持CloudPond产品。
         :type installment_period_type: int
         :param measure_id: 价格度量单位标识。 1：元
         :type measure_id: int
@@ -95,7 +95,7 @@ class OfficialWebsiteRatingResult:
     def installment_official_website_amount(self):
         """Gets the installment_official_website_amount of this OfficialWebsiteRatingResult.
 
-        分期金额的官网价。  说明： 暂只支持IES产品。
+        分期金额的官网价。  说明： 暂只支持CloudPond产品。
 
         :return: The installment_official_website_amount of this OfficialWebsiteRatingResult.
         :rtype: str
@@ -106,7 +106,7 @@ class OfficialWebsiteRatingResult:
     def installment_official_website_amount(self, installment_official_website_amount):
         """Sets the installment_official_website_amount of this OfficialWebsiteRatingResult.
 
-        分期金额的官网价。  说明： 暂只支持IES产品。
+        分期金额的官网价。  说明： 暂只支持CloudPond产品。
 
         :param installment_official_website_amount: The installment_official_website_amount of this OfficialWebsiteRatingResult.
         :type installment_official_website_amount: str
@@ -117,7 +117,7 @@ class OfficialWebsiteRatingResult:
     def installment_period_type(self):
         """Gets the installment_period_type of this OfficialWebsiteRatingResult.
 
-        分期付款的周期类型。 2：月  说明： 暂只支持IES产品。
+        分期付款的周期类型。 2：月 3：年  说明： 暂只支持CloudPond产品。
 
         :return: The installment_period_type of this OfficialWebsiteRatingResult.
         :rtype: int
@@ -128,7 +128,7 @@ class OfficialWebsiteRatingResult:
     def installment_period_type(self, installment_period_type):
         """Sets the installment_period_type of this OfficialWebsiteRatingResult.
 
-        分期付款的周期类型。 2：月  说明： 暂只支持IES产品。
+        分期付款的周期类型。 2：月 3：年  说明： 暂只支持CloudPond产品。
 
         :param installment_period_type: The installment_period_type of this OfficialWebsiteRatingResult.
         :type installment_period_type: int

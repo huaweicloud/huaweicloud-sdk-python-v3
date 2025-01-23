@@ -23,7 +23,9 @@ class SlowlogItem:
         'duration': 'str',
         'shard_name': 'str',
         'database_id': 'int',
-        'username': 'str'
+        'username': 'str',
+        'node_role': 'str',
+        'client_ip': 'str'
     }
 
     attribute_map = {
@@ -33,10 +35,12 @@ class SlowlogItem:
         'duration': 'duration',
         'shard_name': 'shard_name',
         'database_id': 'database_id',
-        'username': 'username'
+        'username': 'username',
+        'node_role': 'node_role',
+        'client_ip': 'client_ip'
     }
 
-    def __init__(self, id=None, command=None, start_time=None, duration=None, shard_name=None, database_id=None, username=None):
+    def __init__(self, id=None, command=None, start_time=None, duration=None, shard_name=None, database_id=None, username=None, node_role=None, client_ip=None):
         """SlowlogItem
 
         The model defined in huaweicloud sdk
@@ -55,6 +59,10 @@ class SlowlogItem:
         :type database_id: int
         :param username: 操作慢日志的账号名称，当前只对指定客户开放
         :type username: str
+        :param node_role: **参数解释**： 节点类型。 **取值范围**： 不涉及。 
+        :type node_role: str
+        :param client_ip: **参数解释**： 客户端IP地址。 **取值范围**： 不涉及。 
+        :type client_ip: str
         """
         
         
@@ -66,6 +74,8 @@ class SlowlogItem:
         self._shard_name = None
         self._database_id = None
         self._username = None
+        self._node_role = None
+        self._client_ip = None
         self.discriminator = None
 
         if id is not None:
@@ -82,6 +92,10 @@ class SlowlogItem:
             self.database_id = database_id
         if username is not None:
             self.username = username
+        if node_role is not None:
+            self.node_role = node_role
+        if client_ip is not None:
+            self.client_ip = client_ip
 
     @property
     def id(self):
@@ -236,6 +250,50 @@ class SlowlogItem:
         :type username: str
         """
         self._username = username
+
+    @property
+    def node_role(self):
+        """Gets the node_role of this SlowlogItem.
+
+        **参数解释**： 节点类型。 **取值范围**： 不涉及。 
+
+        :return: The node_role of this SlowlogItem.
+        :rtype: str
+        """
+        return self._node_role
+
+    @node_role.setter
+    def node_role(self, node_role):
+        """Sets the node_role of this SlowlogItem.
+
+        **参数解释**： 节点类型。 **取值范围**： 不涉及。 
+
+        :param node_role: The node_role of this SlowlogItem.
+        :type node_role: str
+        """
+        self._node_role = node_role
+
+    @property
+    def client_ip(self):
+        """Gets the client_ip of this SlowlogItem.
+
+        **参数解释**： 客户端IP地址。 **取值范围**： 不涉及。 
+
+        :return: The client_ip of this SlowlogItem.
+        :rtype: str
+        """
+        return self._client_ip
+
+    @client_ip.setter
+    def client_ip(self, client_ip):
+        """Sets the client_ip of this SlowlogItem.
+
+        **参数解释**： 客户端IP地址。 **取值范围**： 不涉及。 
+
+        :param client_ip: The client_ip of this SlowlogItem.
+        :type client_ip: str
+        """
+        self._client_ip = client_ip
 
     def to_dict(self):
         """Returns the model properties as a dict"""

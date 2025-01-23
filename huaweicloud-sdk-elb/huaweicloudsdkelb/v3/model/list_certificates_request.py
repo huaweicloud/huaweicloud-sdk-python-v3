@@ -26,6 +26,7 @@ class ListCertificatesRequest:
         'admin_state_up': 'bool',
         'domain': 'list[str]',
         'type': 'list[str]',
+        'scm_certificate_id': 'list[str]',
         'common_name': 'list[str]',
         'fingerprint': 'list[str]'
     }
@@ -40,11 +41,12 @@ class ListCertificatesRequest:
         'admin_state_up': 'admin_state_up',
         'domain': 'domain',
         'type': 'type',
+        'scm_certificate_id': 'scm_certificate_id',
         'common_name': 'common_name',
         'fingerprint': 'fingerprint'
     }
 
-    def __init__(self, marker=None, limit=None, page_reverse=None, id=None, name=None, description=None, admin_state_up=None, domain=None, type=None, common_name=None, fingerprint=None):
+    def __init__(self, marker=None, limit=None, page_reverse=None, id=None, name=None, description=None, admin_state_up=None, domain=None, type=None, scm_certificate_id=None, common_name=None, fingerprint=None):
         """ListCertificatesRequest
 
         The model defined in huaweicloud sdk
@@ -67,6 +69,8 @@ class ListCertificatesRequest:
         :type domain: list[str]
         :param type: 证书的类型。分为服务器证书(server)和CA证书(client)。  支持多值查询，查询条件格式：type&#x3D;xxx&amp;type&#x3D;xxx。
         :type type: list[str]
+        :param scm_certificate_id: SCM证书ID。  支持多值查询，查询条件格式：scm_certificate_id&#x3D;xxx&amp;scm_certificate_id&#x3D;xxx。
+        :type scm_certificate_id: list[str]
         :param common_name: 证书的主域名。  支持多值查询，查询条件格式：common_name&#x3D;xxx&amp;common_name&#x3D;xxx。
         :type common_name: list[str]
         :param fingerprint: 证书的指纹。  支持多值查询，查询条件格式：fingerprint&#x3D;xxx&amp;fingerprint&#x3D;xxx。
@@ -84,6 +88,7 @@ class ListCertificatesRequest:
         self._admin_state_up = None
         self._domain = None
         self._type = None
+        self._scm_certificate_id = None
         self._common_name = None
         self._fingerprint = None
         self.discriminator = None
@@ -106,6 +111,8 @@ class ListCertificatesRequest:
             self.domain = domain
         if type is not None:
             self.type = type
+        if scm_certificate_id is not None:
+            self.scm_certificate_id = scm_certificate_id
         if common_name is not None:
             self.common_name = common_name
         if fingerprint is not None:
@@ -308,6 +315,28 @@ class ListCertificatesRequest:
         :type type: list[str]
         """
         self._type = type
+
+    @property
+    def scm_certificate_id(self):
+        """Gets the scm_certificate_id of this ListCertificatesRequest.
+
+        SCM证书ID。  支持多值查询，查询条件格式：scm_certificate_id=xxx&scm_certificate_id=xxx。
+
+        :return: The scm_certificate_id of this ListCertificatesRequest.
+        :rtype: list[str]
+        """
+        return self._scm_certificate_id
+
+    @scm_certificate_id.setter
+    def scm_certificate_id(self, scm_certificate_id):
+        """Sets the scm_certificate_id of this ListCertificatesRequest.
+
+        SCM证书ID。  支持多值查询，查询条件格式：scm_certificate_id=xxx&scm_certificate_id=xxx。
+
+        :param scm_certificate_id: The scm_certificate_id of this ListCertificatesRequest.
+        :type scm_certificate_id: list[str]
+        """
+        self._scm_certificate_id = scm_certificate_id
 
     @property
     def common_name(self):

@@ -42,7 +42,8 @@ class Pool:
         'connection_drain': 'ConnectionDrain',
         'enterprise_project_id': 'str',
         'pool_health': 'PoolHealth',
-        'public_border_group': 'str'
+        'public_border_group': 'str',
+        'quic_cid_hash_strategy': 'QuicCidHashStrategy'
     }
 
     attribute_map = {
@@ -71,10 +72,11 @@ class Pool:
         'connection_drain': 'connection_drain',
         'enterprise_project_id': 'enterprise_project_id',
         'pool_health': 'pool_health',
-        'public_border_group': 'public_border_group'
+        'public_border_group': 'public_border_group',
+        'quic_cid_hash_strategy': 'quic_cid_hash_strategy'
     }
 
-    def __init__(self, admin_state_up=None, description=None, healthmonitor_id=None, id=None, lb_algorithm=None, listeners=None, loadbalancers=None, members=None, name=None, project_id=None, protocol=None, session_persistence=None, ip_version=None, slow_start=None, member_deletion_protection_enable=None, created_at=None, updated_at=None, vpc_id=None, type=None, protection_status=None, protection_reason=None, any_port_enable=None, connection_drain=None, enterprise_project_id=None, pool_health=None, public_border_group=None):
+    def __init__(self, admin_state_up=None, description=None, healthmonitor_id=None, id=None, lb_algorithm=None, listeners=None, loadbalancers=None, members=None, name=None, project_id=None, protocol=None, session_persistence=None, ip_version=None, slow_start=None, member_deletion_protection_enable=None, created_at=None, updated_at=None, vpc_id=None, type=None, protection_status=None, protection_reason=None, any_port_enable=None, connection_drain=None, enterprise_project_id=None, pool_health=None, public_border_group=None, quic_cid_hash_strategy=None):
         """Pool
 
         The model defined in huaweicloud sdk
@@ -103,15 +105,15 @@ class Pool:
         :type protocol: str
         :param session_persistence: 
         :type session_persistence: :class:`huaweicloudsdkelb.v3.SessionPersistence`
-        :param ip_version: 参数解释：后端服务器组支持的IP版本。  [取值范围： - 共享型：固定为v4； -  独享型：取值dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,fcs)  [取值范围：dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt,dt_test)
+        :param ip_version: 参数解释：后端服务器组支持的IP版本。  [取值范围： - 共享型：固定为v4； - 独享型：取值dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs)  [取值范围：dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt,dt_test)
         :type ip_version: str
         :param slow_start: 
         :type slow_start: :class:`huaweicloudsdkelb.v3.SlowStart`
         :param member_deletion_protection_enable: 参数解释：是否开启误删保护。  取值范围：false不开启，true开启。  &gt; 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt,dt_test)
         :type member_deletion_protection_enable: bool
-        :param created_at: 参数解释：创建时间。  取值范围：格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,fcs,dt,hk_tm)
+        :param created_at: 参数解释：创建时间。  取值范围：格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
         :type created_at: str
-        :param updated_at: 参数解释：更新时间。  取值范围：格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,fcs,dt,hk_tm)
+        :param updated_at: 参数解释：更新时间。  取值范围：格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
         :type updated_at: str
         :param vpc_id: 参数解释：后端服务器组关联的虚拟私有云的ID。
         :type vpc_id: str
@@ -119,7 +121,7 @@ class Pool:
         :type type: str
         :param protection_status: 参数解释：修改保护状态,。  取值范围： - nonProtection: 不保护。 - consoleProtection: 控制台修改保护。  默认取值：nonProtection
         :type protection_status: str
-        :param protection_reason: 参数解释：设置保护的原因。  参数限制：仅当protection_status为consoleProtection时有效。
+        :param protection_reason: 参数解释：设置保护的原因。作为protection_status的转态设置的原因。  约束限制：仅当protection_status为consoleProtection时有效。  取值范围：除&#39;&lt;&#39;和&#39;&gt;&#39;外通用Unicode字符集字符，最大255个字符。
         :type protection_reason: str
         :param any_port_enable: 参数解释：后端是否开启端口透传。开启后，后端服务器端口与前端监听器端口保持一致。关闭后，请求会转发给后端服务器protocol_port字段指定端口。取值：false不开启，true开启。  约束限制： - 仅QUIC,TCP,UDP的pool支持。
         :type any_port_enable: bool
@@ -129,8 +131,10 @@ class Pool:
         :type enterprise_project_id: str
         :param pool_health: 
         :type pool_health: :class:`huaweicloudsdkelb.v3.PoolHealth`
-        :param public_border_group: 参数解释：可用区组，如：center
+        :param public_border_group: 参数解释：网络公共边界组，如：center
         :type public_border_group: str
+        :param quic_cid_hash_strategy: 
+        :type quic_cid_hash_strategy: :class:`huaweicloudsdkelb.v3.QuicCidHashStrategy`
         """
         
         
@@ -161,6 +165,7 @@ class Pool:
         self._enterprise_project_id = None
         self._pool_health = None
         self._public_border_group = None
+        self._quic_cid_hash_strategy = None
         self.discriminator = None
 
         self.admin_state_up = admin_state_up
@@ -198,6 +203,8 @@ class Pool:
             self.pool_health = pool_health
         if public_border_group is not None:
             self.public_border_group = public_border_group
+        if quic_cid_hash_strategy is not None:
+            self.quic_cid_hash_strategy = quic_cid_hash_strategy
 
     @property
     def admin_state_up(self):
@@ -463,7 +470,7 @@ class Pool:
     def ip_version(self):
         """Gets the ip_version of this Pool.
 
-        参数解释：后端服务器组支持的IP版本。  [取值范围： - 共享型：固定为v4； -  独享型：取值dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,fcs)  [取值范围：dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt,dt_test)
+        参数解释：后端服务器组支持的IP版本。  [取值范围： - 共享型：固定为v4； - 独享型：取值dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs)  [取值范围：dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt,dt_test)
 
         :return: The ip_version of this Pool.
         :rtype: str
@@ -474,7 +481,7 @@ class Pool:
     def ip_version(self, ip_version):
         """Sets the ip_version of this Pool.
 
-        参数解释：后端服务器组支持的IP版本。  [取值范围： - 共享型：固定为v4； -  独享型：取值dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,fcs)  [取值范围：dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt,dt_test)
+        参数解释：后端服务器组支持的IP版本。  [取值范围： - 共享型：固定为v4； - 独享型：取值dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs)  [取值范围：dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt,dt_test)
 
         :param ip_version: The ip_version of this Pool.
         :type ip_version: str
@@ -525,7 +532,7 @@ class Pool:
     def created_at(self):
         """Gets the created_at of this Pool.
 
-        参数解释：创建时间。  取值范围：格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,fcs,dt,hk_tm)
+        参数解释：创建时间。  取值范围：格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
 
         :return: The created_at of this Pool.
         :rtype: str
@@ -536,7 +543,7 @@ class Pool:
     def created_at(self, created_at):
         """Sets the created_at of this Pool.
 
-        参数解释：创建时间。  取值范围：格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,fcs,dt,hk_tm)
+        参数解释：创建时间。  取值范围：格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
 
         :param created_at: The created_at of this Pool.
         :type created_at: str
@@ -547,7 +554,7 @@ class Pool:
     def updated_at(self):
         """Gets the updated_at of this Pool.
 
-        参数解释：更新时间。  取值范围：格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,fcs,dt,hk_tm)
+        参数解释：更新时间。  取值范围：格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
 
         :return: The updated_at of this Pool.
         :rtype: str
@@ -558,7 +565,7 @@ class Pool:
     def updated_at(self, updated_at):
         """Sets the updated_at of this Pool.
 
-        参数解释：更新时间。  取值范围：格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,fcs,dt,hk_tm)
+        参数解释：更新时间。  取值范围：格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
 
         :param updated_at: The updated_at of this Pool.
         :type updated_at: str
@@ -635,7 +642,7 @@ class Pool:
     def protection_reason(self):
         """Gets the protection_reason of this Pool.
 
-        参数解释：设置保护的原因。  参数限制：仅当protection_status为consoleProtection时有效。
+        参数解释：设置保护的原因。作为protection_status的转态设置的原因。  约束限制：仅当protection_status为consoleProtection时有效。  取值范围：除'<'和'>'外通用Unicode字符集字符，最大255个字符。
 
         :return: The protection_reason of this Pool.
         :rtype: str
@@ -646,7 +653,7 @@ class Pool:
     def protection_reason(self, protection_reason):
         """Sets the protection_reason of this Pool.
 
-        参数解释：设置保护的原因。  参数限制：仅当protection_status为consoleProtection时有效。
+        参数解释：设置保护的原因。作为protection_status的转态设置的原因。  约束限制：仅当protection_status为consoleProtection时有效。  取值范围：除'<'和'>'外通用Unicode字符集字符，最大255个字符。
 
         :param protection_reason: The protection_reason of this Pool.
         :type protection_reason: str
@@ -737,7 +744,7 @@ class Pool:
     def public_border_group(self):
         """Gets the public_border_group of this Pool.
 
-        参数解释：可用区组，如：center
+        参数解释：网络公共边界组，如：center
 
         :return: The public_border_group of this Pool.
         :rtype: str
@@ -748,12 +755,30 @@ class Pool:
     def public_border_group(self, public_border_group):
         """Sets the public_border_group of this Pool.
 
-        参数解释：可用区组，如：center
+        参数解释：网络公共边界组，如：center
 
         :param public_border_group: The public_border_group of this Pool.
         :type public_border_group: str
         """
         self._public_border_group = public_border_group
+
+    @property
+    def quic_cid_hash_strategy(self):
+        """Gets the quic_cid_hash_strategy of this Pool.
+
+        :return: The quic_cid_hash_strategy of this Pool.
+        :rtype: :class:`huaweicloudsdkelb.v3.QuicCidHashStrategy`
+        """
+        return self._quic_cid_hash_strategy
+
+    @quic_cid_hash_strategy.setter
+    def quic_cid_hash_strategy(self, quic_cid_hash_strategy):
+        """Sets the quic_cid_hash_strategy of this Pool.
+
+        :param quic_cid_hash_strategy: The quic_cid_hash_strategy of this Pool.
+        :type quic_cid_hash_strategy: :class:`huaweicloudsdkelb.v3.QuicCidHashStrategy`
+        """
+        self._quic_cid_hash_strategy = quic_cid_hash_strategy
 
     def to_dict(self):
         """Returns the model properties as a dict"""

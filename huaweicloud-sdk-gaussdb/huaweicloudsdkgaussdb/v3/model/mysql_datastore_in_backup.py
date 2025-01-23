@@ -33,7 +33,7 @@ class MysqlDatastoreInBackup:
 
         :param type: 数据库引擎，现在只支持gaussdb-mysql。
         :type type: str
-        :param version: 数据库版本。  数据库支持的版本信息，获取方法请参见[查询数据库引擎的版本](https://support.huaweicloud.com/api-gaussdbformysql/ShowGaussMySqlEngineVersion.html)返回的name字段。
+        :param version: 数据库版本。  数据库支持的版本信息，获取方法请参见[查询数据库引擎的版本](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlEngineVersion.html)返回的name字段。
         :type version: str
         """
         
@@ -72,7 +72,7 @@ class MysqlDatastoreInBackup:
     def version(self):
         """Gets the version of this MysqlDatastoreInBackup.
 
-        数据库版本。  数据库支持的版本信息，获取方法请参见[查询数据库引擎的版本](https://support.huaweicloud.com/api-gaussdbformysql/ShowGaussMySqlEngineVersion.html)返回的name字段。
+        数据库版本。  数据库支持的版本信息，获取方法请参见[查询数据库引擎的版本](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlEngineVersion.html)返回的name字段。
 
         :return: The version of this MysqlDatastoreInBackup.
         :rtype: str
@@ -83,7 +83,7 @@ class MysqlDatastoreInBackup:
     def version(self, version):
         """Sets the version of this MysqlDatastoreInBackup.
 
-        数据库版本。  数据库支持的版本信息，获取方法请参见[查询数据库引擎的版本](https://support.huaweicloud.com/api-gaussdbformysql/ShowGaussMySqlEngineVersion.html)返回的name字段。
+        数据库版本。  数据库支持的版本信息，获取方法请参见[查询数据库引擎的版本](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlEngineVersion.html)返回的name字段。
 
         :param version: The version of this MysqlDatastoreInBackup.
         :type version: str

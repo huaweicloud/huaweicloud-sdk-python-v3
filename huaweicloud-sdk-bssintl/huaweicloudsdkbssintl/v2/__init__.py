@@ -182,6 +182,8 @@ from huaweicloudsdkbssintl.v2.model.show_refund_order_details_request import Sho
 from huaweicloudsdkbssintl.v2.model.show_refund_order_details_response import ShowRefundOrderDetailsResponse
 from huaweicloudsdkbssintl.v2.model.show_sub_customer_budget_request import ShowSubCustomerBudgetRequest
 from huaweicloudsdkbssintl.v2.model.show_sub_customer_budget_response import ShowSubCustomerBudgetResponse
+from huaweicloudsdkbssintl.v2.model.sub_customer_order_v2 import SubCustomerOrderV2
+from huaweicloudsdkbssintl.v2.model.sub_customer_order_v3 import SubCustomerOrderV3
 from huaweicloudsdkbssintl.v2.model.tax_info import TaxInfo
 from huaweicloudsdkbssintl.v2.model.time_condition import TimeCondition
 from huaweicloudsdkbssintl.v2.model.unfreeze_sub_customers_req import UnfreezeSubCustomersReq

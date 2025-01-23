@@ -46,9 +46,9 @@ class ListStarRocksDataReplicationConfigResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param source_instance_id: GaussDB(for MySQL)实例ID。
+        :param source_instance_id: TaurusDB实例ID。
         :type source_instance_id: str
-        :param source_node_id: GaussDB(for MySQL)节点ID。
+        :param source_node_id: TaurusDB节点ID。
         :type source_node_id: str
         :param database_info: 
         :type database_info: :class:`huaweicloudsdkgaussdb.v3.DataBaseInfo`
@@ -102,7 +102,7 @@ class ListStarRocksDataReplicationConfigResponse(SdkResponse):
     def source_instance_id(self):
         """Gets the source_instance_id of this ListStarRocksDataReplicationConfigResponse.
 
-        GaussDB(for MySQL)实例ID。
+        TaurusDB实例ID。
 
         :return: The source_instance_id of this ListStarRocksDataReplicationConfigResponse.
         :rtype: str
@@ -113,7 +113,7 @@ class ListStarRocksDataReplicationConfigResponse(SdkResponse):
     def source_instance_id(self, source_instance_id):
         """Sets the source_instance_id of this ListStarRocksDataReplicationConfigResponse.
 
-        GaussDB(for MySQL)实例ID。
+        TaurusDB实例ID。
 
         :param source_instance_id: The source_instance_id of this ListStarRocksDataReplicationConfigResponse.
         :type source_instance_id: str
@@ -124,7 +124,7 @@ class ListStarRocksDataReplicationConfigResponse(SdkResponse):
     def source_node_id(self):
         """Gets the source_node_id of this ListStarRocksDataReplicationConfigResponse.
 
-        GaussDB(for MySQL)节点ID。
+        TaurusDB节点ID。
 
         :return: The source_node_id of this ListStarRocksDataReplicationConfigResponse.
         :rtype: str
@@ -135,7 +135,7 @@ class ListStarRocksDataReplicationConfigResponse(SdkResponse):
     def source_node_id(self, source_node_id):
         """Sets the source_node_id of this ListStarRocksDataReplicationConfigResponse.
 
-        GaussDB(for MySQL)节点ID。
+        TaurusDB节点ID。
 
         :param source_node_id: The source_node_id of this ListStarRocksDataReplicationConfigResponse.
         :type source_node_id: str

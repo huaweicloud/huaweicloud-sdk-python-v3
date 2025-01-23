@@ -1,3 +1,449 @@
+# 3.1.133 2025-01-23
+
+### HuaweiCloud SDK BSS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListCustomerselfResourceRecords**
+    - 响应参数变更
+      - `+ fee_records.relative_order_id`
+  - **ListSubCustomers**
+    - 响应参数变更
+      - `+ customer_infos.email`
+  - **ListCustomerselfResourceRecordDetails**
+    - 响应参数变更
+      - `+ monthly_records.be_id`
+  - **ListCustomerOrders**
+    - 响应参数变更
+      - `+ order_infos.sub_order_infos`
+  - **ShowCustomerOrderDetails**
+    - 响应参数变更
+      - `+ order_line_items.order_id`
+      - `+ order_info.sub_order_infos`
+
+### HuaweiCloud SDK BSSINTL
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListCustomerselfResourceRecords**
+    - 响应参数变更
+      - `+ fee_records.relative_order_id`
+  - **ListSubCustomers**
+    - 响应参数变更
+      - `+ customer_infos.email`
+  - **ListCustomerselfResourceRecordDetails**
+    - 响应参数变更
+      - `+ monthly_records.be_id`
+  - **ListCustomerOrders**
+    - 响应参数变更
+      - `+ order_infos.sub_order_infos`
+  - **ShowCustomerOrderDetails**
+    - 响应参数变更
+      - `+ order_line_items.order_id`
+      - `+ order_info.sub_order_infos`
+
+### HuaweiCloud SDK COC
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`ListPrrTemplate`
+
+### HuaweiCloud SDK DAS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `ListInstanceDistribution`
+    - `ListTopSlowLog`
+    - `ListInstanceTopSlowLog`
+    - `ShowMetricNamesSupport`
+    - `ListInstanceNodesInfo`
+    - `ListInstanceMultiNodesSingleMetric`
+    - `ListRiskItems`
+    - `ListRiskTrend`
+    - `SetThresholdForMetric`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ExportTopRiskInstances**
+    - 请求参数变更
+      - `+ metric_code`
+
+### HuaweiCloud SDK DCS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ResetPassword**
+    - 响应参数变更
+      - `+ code`
+      - `+ message`
+      - `+ ext_message`
+  - **ListSlowlog**
+    - 响应参数变更
+      - `+ slowlogs.node_role`
+      - `+ slowlogs.client_ip`
+
+### HuaweiCloud SDK DDM
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowInstance**
+    - 响应参数变更
+      - `+ flavor_ref`
+      - `+ enable_ssl`
+  - **ShowInstanceParam**
+    - 响应参数变更
+      - `+ name`
+      - `+ description`
+      - `+ id`
+
+### HuaweiCloud SDK ELB
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `UpgradeLoadbalancer`
+    - `BatchCreateLoadBalancers`
+    - `DeleteLoadBalancerCascade`
+    - `ShowIpGroupRelatedListeners`
+    - `DeletePoolCascade`
+    - `CloneLoadbalancer`
+    - `ListJobs`
+    - `ShowJob`
+    - `ListFeatureConfigs`
+    - `ListLoadbalancerFeature`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowQuota**
+    - 响应参数变更
+      - `+ quota.ipgroups_per_listener`
+      - `+ quota.pools_per_l7policy`
+      - `+ quota.l7policies_per_listener`
+  - **ListAvailabilityZones**
+    - 请求参数变更
+      - `+ loadbalancer_id`
+  - **CountPreoccupyIpNum**
+    - 请求参数变更
+      - `+ scene`
+      - `+ nat64_enable`
+  - **ListCertificates**
+    - 请求参数变更
+      - `+ scm_certificate_id`
+    - 响应参数变更
+      - `+ certificates.scm_certificate_id`
+  - **CreateCertificate**
+    - 请求参数变更
+      - `+ certificate.scm_certificate_id`
+    - 响应参数变更
+      - `+ certificate.scm_certificate_id`
+  - **ShowCertificate**
+    - 响应参数变更
+      - `+ certificate.scm_certificate_id`
+  - **UpdateCertificate**
+    - 响应参数变更
+      - `+ certificate.scm_certificate_id`
+  - **ListFlavors**
+    - 请求参数变更
+      - `+ loadbalancer_type`
+      - `+ public_border_group`
+      - `+ category`
+      - `+ list_all`
+      - `+ flavor_sold_out`
+  - **ShowLoadBalancer**
+    - 响应参数变更
+      - `+ loadbalancer.service_lb_mode`
+      - `+ loadbalancer.instance_type`
+      - `+ loadbalancer.instance_id`
+      - `+ loadbalancer.proxy_protocol_extensions`
+  - **UpdateLoadBalancer**
+    - 请求参数变更
+      - `+ loadbalancer.proxy_protocol_extensions`
+      - `+ loadbalancer.vip_port_id`
+      - `+ loadbalancer.ipv6_vip_port_id`
+    - 响应参数变更
+      - `+ loadbalancer.service_lb_mode`
+      - `+ loadbalancer.instance_type`
+      - `+ loadbalancer.instance_id`
+      - `+ loadbalancer.proxy_protocol_extensions`
+  - **BatchAddAvailableZones**
+    - 响应参数变更
+      - `+ loadbalancer.service_lb_mode`
+      - `+ loadbalancer.instance_type`
+      - `+ loadbalancer.instance_id`
+      - `+ loadbalancer.proxy_protocol_extensions`
+  - **BatchRemoveAvailableZones**
+    - 响应参数变更
+      - `+ loadbalancer.service_lb_mode`
+      - `+ loadbalancer.instance_type`
+      - `+ loadbalancer.instance_id`
+      - `+ loadbalancer.proxy_protocol_extensions`
+  - **ListListeners**
+    - 请求参数变更
+      - `+ ssl_early_data_enable`
+      - `+ nat64_enable`
+    - 响应参数变更
+      - `+ listeners.enterprise_project_id`
+      - `+ listeners.cps`
+      - `+ listeners.connection`
+      - `+ listeners.nat64_enable`
+  - **CreateListener**
+    - 请求参数变更
+      - `+ listener.cps`
+      - `+ listener.connection`
+      - `+ listener.nat64_enable`
+    - 响应参数变更
+      - `+ listener.enterprise_project_id`
+      - `+ listener.cps`
+      - `+ listener.connection`
+      - `+ listener.nat64_enable`
+  - **ShowListener**
+    - 响应参数变更
+      - `+ listener.enterprise_project_id`
+      - `+ listener.cps`
+      - `+ listener.connection`
+      - `+ listener.nat64_enable`
+  - **UpdateListener**
+    - 请求参数变更
+      - `+ listener.cps`
+      - `+ listener.connection`
+      - `+ listener.nat64_enable`
+    - 响应参数变更
+      - `+ listener.enterprise_project_id`
+      - `+ listener.cps`
+      - `+ listener.connection`
+      - `+ listener.nat64_enable`
+  - **ListPools**
+    - 请求参数变更
+      - `+ quic_cid_len`
+      - `+ quic_cid_offset`
+    - 响应参数变更
+      - `+ pools.quic_cid_hash_strategy`
+  - **CreatePool**
+    - 请求参数变更
+      - `+ pool.quic_cid_hash_strategy`
+      - `- pool.target_rebalance`
+    - 响应参数变更
+      - `+ pool.quic_cid_hash_strategy`
+  - **ShowPool**
+    - 响应参数变更
+      - `+ pool.quic_cid_hash_strategy`
+  - **UpdatePool**
+    - 请求参数变更
+      - `+ pool.quic_cid_hash_strategy`
+    - 响应参数变更
+      - `+ pool.quic_cid_hash_strategy`
+  - **ListMembers**
+    - 响应参数变更
+      - `+ members.reason`
+      - `+ members.status.reason`
+  - **CreateMember**
+    - 响应参数变更
+      - `+ member.reason`
+      - `+ member.status.reason`
+  - **ShowMember**
+    - 响应参数变更
+      - `+ member.reason`
+      - `+ member.status.reason`
+  - **UpdateMember**
+    - 响应参数变更
+      - `+ member.reason`
+      - `+ member.status.reason`
+  - **ListAllMembers**
+    - 响应参数变更
+      - `+ members.reason`
+      - `+ members.status.reason`
+  - **BatchCreateMembers**
+    - 响应参数变更
+      - `+ members.reason`
+      - `+ members.status.reason`
+  - **BatchUpdateMembers**
+    - 响应参数变更
+      - `+ members.reason`
+      - `+ members.status.reason`
+  - **ListLoadBalancers**
+    - 响应参数变更
+      - `+ loadbalancers.service_lb_mode`
+      - `+ loadbalancers.instance_type`
+      - `+ loadbalancers.instance_id`
+      - `+ loadbalancers.proxy_protocol_extensions`
+  - **CreateLoadBalancer**
+    - 请求参数变更
+      - `+ loadbalancer.service_lb_mode`
+      - `+ loadbalancer.instance_type`
+      - `+ loadbalancer.instance_id`
+      - `+ loadbalancer.proxy_protocol_extensions`
+    - 响应参数变更
+      - `+ loadbalancer.service_lb_mode`
+      - `+ loadbalancer.instance_type`
+      - `+ loadbalancer.instance_id`
+      - `+ loadbalancer.proxy_protocol_extensions`
+  - **ListMasterSlavePools**
+    - 响应参数变更
+      - `+ pools.quic_cid_hash_strategy`
+      - `+ pools.members.reason`
+  - **CreateMasterSlavePool**
+    - 请求参数变更
+      - `+ pool.quic_cid_hash_strategy`
+    - 响应参数变更
+      - `+ pool.quic_cid_hash_strategy`
+      - `+ pool.members.reason`
+  - **ShowMasterSlavePool**
+    - 响应参数变更
+      - `+ pool.quic_cid_hash_strategy`
+      - `+ pool.members.reason`
+  - **ListL7Policies**
+    - 响应参数变更
+      - `+ l7policies.enterprise_project_id`
+      - `+ l7policies.redirect_pools_extend_config.cors_config`
+  - **CreateL7Policy**
+    - 请求参数变更
+      - `+ l7policy.redirect_pools_extend_config.cors_config`
+    - 响应参数变更
+      - `+ l7policy.enterprise_project_id`
+      - `+ l7policy.redirect_pools_extend_config.cors_config`
+  - **ShowL7Policy**
+    - 响应参数变更
+      - `+ l7policy.enterprise_project_id`
+      - `+ l7policy.redirect_pools_extend_config.cors_config`
+  - **UpdateL7Policy**
+    - 请求参数变更
+      - `+ l7policy.redirect_pools_extend_config.cors_config`
+    - 响应参数变更
+      - `+ l7policy.enterprise_project_id`
+      - `+ l7policy.redirect_pools_extend_config.cors_config`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateFunction**
+    - 请求参数变更
+      - `+ lts_custom_tag`
+    - 响应参数变更
+      - `+ lts_custom_tag`
+  - **ShowFunctionConfig**
+    - 响应参数变更
+      - `+ peering_cidr`
+      - `+ lts_custom_tag`
+  - **UpdateFunctionConfig**
+    - 请求参数变更
+      - `+ peering_cidr`
+      - `+ lts_custom_tag`
+    - 响应参数变更
+      - `+ peering_cidr`
+      - `+ lts_custom_tag`
+
+### HuaweiCloud SDK MetaStudio
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateTtsAudition**
+    - 请求参数变更
+      - `+ channels`
+  - **CreateAsyncTtsJob**
+    - 请求参数变更
+      - `+ channels`
+      - `+ output_external_url`
+      - `+ srt_output_external_url`
+      - `+ action_output_external_url`
+  - **CreateSmartChatRoom**
+    - 请求参数变更
+      - `+ video_config.output_external_url`
+  - **ShowSmartChatRoom**
+    - 响应参数变更
+      - `+ video_config.output_external_url`
+  - **UpdateSmartChatRoom**
+    - 请求参数变更
+      - `+ video_config.output_external_url`
+    - 响应参数变更
+      - `+ video_config.output_external_url`
+  - **StartSmartLive**
+    - 请求参数变更
+      - `+ video_config.output_external_url`
+  - **Create2DDigitalHumanVideo**
+    - 请求参数变更
+      - `+ video_config.output_external_url`
+      - `+ shoot_scripts.shoot_script.audio_drive_file_external_url`
+      - `+ shoot_scripts.shoot_script.audio_config`
+  - **Show2DDigitalHumanVideo**
+    - 响应参数变更
+      - `+ video_config.output_external_url`
+      - `+ shoot_scripts.shoot_script.audio_drive_file_external_url`
+      - `+ shoot_scripts.shoot_script.audio_config`
+  - **CreatePhotoDigitalHumanVideo**
+    - 请求参数变更
+      - `+ shoot_scripts.shoot_script.audio_drive_file_external_url`
+      - `+ shoot_scripts.shoot_script.audio_config`
+  - **ShowPhotoDigitalHumanVideo**
+    - 响应参数变更
+      - `+ shoot_scripts.shoot_script.audio_drive_file_external_url`
+      - `+ shoot_scripts.shoot_script.audio_config`
+  - **CreateSmartLiveRoom**
+    - 请求参数变更
+      - `+ video_config.output_external_url`
+  - **ShowSmartLiveRoom**
+    - 响应参数变更
+      - `+ video_config.output_external_url`
+  - **UpdateSmartLiveRoom**
+    - 请求参数变更
+      - `+ video_config.output_external_url`
+    - 响应参数变更
+      - `+ video_config.output_external_url`
+  - **CreateVideoScripts**
+    - 请求参数变更
+      - `+ video_config.output_external_url`
+      - `+ shoot_scripts.shoot_script.audio_drive_file_external_url`
+      - `+ shoot_scripts.shoot_script.audio_config`
+  - **ShowVideoScript**
+    - 响应参数变更
+      - `+ video_config.output_external_url`
+      - `+ shoot_scripts.audio_config`
+      - `+ shoot_scripts.shoot_script.audio_drive_file_external_url`
+      - `+ shoot_scripts.shoot_script.audio_config`
+  - **UpdateVideoScript**
+    - 请求参数变更
+      - `+ video_config.output_external_url`
+      - `+ shoot_scripts.shoot_script.audio_drive_file_external_url`
+      - `+ shoot_scripts.shoot_script.audio_config`
+
 # 3.1.132 2025-01-16
 
 ### HuaweiCloud SDK COC

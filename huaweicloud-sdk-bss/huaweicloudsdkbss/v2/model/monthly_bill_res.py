@@ -63,7 +63,8 @@ class MonthlyBillRes:
         'payer_account_id': 'str',
         'effective_time': 'str',
         'expire_time': 'str',
-        'consume_time': 'str'
+        'consume_time': 'str',
+        'be_id': 'str'
     }
 
     attribute_map = {
@@ -113,10 +114,11 @@ class MonthlyBillRes:
         'payer_account_id': 'payer_account_id',
         'effective_time': 'effective_time',
         'expire_time': 'expire_time',
-        'consume_time': 'consume_time'
+        'consume_time': 'consume_time',
+        'be_id': 'be_id'
     }
 
-    def __init__(self, cycle=None, bill_date=None, bill_type=None, customer_id=None, region=None, region_name=None, cloud_service_type=None, resource_type_code=None, cloud_service_type_name=None, resource_type_name=None, res_instance_id=None, resource_name=None, resource_tag=None, sku_code=None, enterprise_project_id=None, enterprise_project_name=None, charge_mode=None, consume_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, official_amount=None, discount_amount=None, measure_id=None, period_type=None, root_resource_id=None, parent_resource_id=None, trade_id=None, id=None, product_spec_desc=None, sub_service_type_code=None, sub_service_type_name=None, sub_resource_type_code=None, sub_resource_type_name=None, sub_resource_id=None, sub_resource_name=None, pre_order_id=None, az_code_infos=None, payer_account_id=None, effective_time=None, expire_time=None, consume_time=None):
+    def __init__(self, cycle=None, bill_date=None, bill_type=None, customer_id=None, region=None, region_name=None, cloud_service_type=None, resource_type_code=None, cloud_service_type_name=None, resource_type_name=None, res_instance_id=None, resource_name=None, resource_tag=None, sku_code=None, enterprise_project_id=None, enterprise_project_name=None, charge_mode=None, consume_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, official_amount=None, discount_amount=None, measure_id=None, period_type=None, root_resource_id=None, parent_resource_id=None, trade_id=None, id=None, product_spec_desc=None, sub_service_type_code=None, sub_service_type_name=None, sub_resource_type_code=None, sub_resource_type_name=None, sub_resource_id=None, sub_resource_name=None, pre_order_id=None, az_code_infos=None, payer_account_id=None, effective_time=None, expire_time=None, consume_time=None, be_id=None):
         """MonthlyBillRes
 
         The model defined in huaweicloud sdk
@@ -125,7 +127,7 @@ class MonthlyBillRes:
         :type cycle: str
         :param bill_date: 消费日期，东八区时间，格式为YYYY-MM-DD。  说明： 当statistic_type&#x3D;2时该字段才有值，否则返回null。
         :type bill_date: str
-        :param bill_type: 账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更23：消费-节省计划抵扣24：退款-包年/包月转按需
+        :param bill_type: 账单类型。1：消费-新购 2：消费-续订 3：消费-变更 4：退款-退订 5：消费-使用 8：消费-自动续订 9：调账-补偿 14：消费-服务支持计划月末扣费 16：调账-扣费 18：消费-按月付费 20：退款-变更 23：消费-节省计划抵扣 24：退款-包年/包月转按需 103：消费-按年付费
         :type bill_type: int
         :param customer_id: 消费的客户账号ID。 如果是普通客户或者企业子客户查询消费记录，只能查询到客户自己的消费记录，且此处显示的是客户自己的客户ID。如果是企业主查询消费记录，可以查询到企业主以及企业子客户的消费记录，此处为消费的实际客户ID。如果是企业主自己的消费记录，则为企业主ID；如果是某个企业子客户的消费记录，则此处为企业子账号ID。
         :type customer_id: str
@@ -215,6 +217,8 @@ class MonthlyBillRes:
         :type expire_time: str
         :param consume_time: |参数名称：消费时间| |参数约束及描述：消费时间，UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ。包周期、预留实例预付为交易时间，按需、预留实例按时计费为话单生失效时间。 说明：当statistic_type&#x3D;3时有效。|
         :type consume_time: str
+        :param be_id: |参数名称：华为云运营实体ID。| |参数约束及描述：华为云运营实体ID。|
+        :type be_id: str
         """
         
         
@@ -266,6 +270,7 @@ class MonthlyBillRes:
         self._effective_time = None
         self._expire_time = None
         self._consume_time = None
+        self._be_id = None
         self.discriminator = None
 
         if cycle is not None:
@@ -362,6 +367,8 @@ class MonthlyBillRes:
             self.expire_time = expire_time
         if consume_time is not None:
             self.consume_time = consume_time
+        if be_id is not None:
+            self.be_id = be_id
 
     @property
     def cycle(self):
@@ -411,7 +418,7 @@ class MonthlyBillRes:
     def bill_type(self):
         """Gets the bill_type of this MonthlyBillRes.
 
-        账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更23：消费-节省计划抵扣24：退款-包年/包月转按需
+        账单类型。1：消费-新购 2：消费-续订 3：消费-变更 4：退款-退订 5：消费-使用 8：消费-自动续订 9：调账-补偿 14：消费-服务支持计划月末扣费 16：调账-扣费 18：消费-按月付费 20：退款-变更 23：消费-节省计划抵扣 24：退款-包年/包月转按需 103：消费-按年付费
 
         :return: The bill_type of this MonthlyBillRes.
         :rtype: int
@@ -422,7 +429,7 @@ class MonthlyBillRes:
     def bill_type(self, bill_type):
         """Sets the bill_type of this MonthlyBillRes.
 
-        账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更23：消费-节省计划抵扣24：退款-包年/包月转按需
+        账单类型。1：消费-新购 2：消费-续订 3：消费-变更 4：退款-退订 5：消费-使用 8：消费-自动续订 9：调账-补偿 14：消费-服务支持计划月末扣费 16：调账-扣费 18：消费-按月付费 20：退款-变更 23：消费-节省计划抵扣 24：退款-包年/包月转按需 103：消费-按年付费
 
         :param bill_type: The bill_type of this MonthlyBillRes.
         :type bill_type: int
@@ -1396,6 +1403,28 @@ class MonthlyBillRes:
         :type consume_time: str
         """
         self._consume_time = consume_time
+
+    @property
+    def be_id(self):
+        """Gets the be_id of this MonthlyBillRes.
+
+        |参数名称：华为云运营实体ID。| |参数约束及描述：华为云运营实体ID。|
+
+        :return: The be_id of this MonthlyBillRes.
+        :rtype: str
+        """
+        return self._be_id
+
+    @be_id.setter
+    def be_id(self, be_id):
+        """Sets the be_id of this MonthlyBillRes.
+
+        |参数名称：华为云运营实体ID。| |参数约束及描述：华为云运营实体ID。|
+
+        :param be_id: The be_id of this MonthlyBillRes.
+        :type be_id: str
+        """
+        self._be_id = be_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

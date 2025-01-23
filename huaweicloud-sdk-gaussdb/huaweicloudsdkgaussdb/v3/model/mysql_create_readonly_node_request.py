@@ -37,7 +37,7 @@ class MysqlCreateReadonlyNodeRequest:
         :type priorities: list[int]
         :param is_auto_pay: 创建包周期时可指定，表示是否自动从客户的账户中支付，此字段不影响自动续订的支付方式。  - true，为自动支付，默认该方式。 - false，为手动支付。
         :type is_auto_pay: str
-        :param availability_zones: 可用区。可指定可用区创建只读节点，不传该参数时默认为自动选择可用区。  调用[查询数据库规格](https://support.huaweicloud.com/api-gaussdbformysql/ShowGaussMySqlFlavors.html)获取，其中az_status中的key为availability_zone。  注：指定可用区创建只读节点，可能由于资源不足创建失败。
+        :param availability_zones: 可用区。可指定可用区创建只读节点，不传该参数时默认为自动选择可用区。  调用[查询数据库规格](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlFlavors.html)获取，其中az_status中的key为availability_zone。  注：指定可用区创建只读节点，可能由于资源不足创建失败。
         :type availability_zones: list[str]
         """
         
@@ -102,7 +102,7 @@ class MysqlCreateReadonlyNodeRequest:
     def availability_zones(self):
         """Gets the availability_zones of this MysqlCreateReadonlyNodeRequest.
 
-        可用区。可指定可用区创建只读节点，不传该参数时默认为自动选择可用区。  调用[查询数据库规格](https://support.huaweicloud.com/api-gaussdbformysql/ShowGaussMySqlFlavors.html)获取，其中az_status中的key为availability_zone。  注：指定可用区创建只读节点，可能由于资源不足创建失败。
+        可用区。可指定可用区创建只读节点，不传该参数时默认为自动选择可用区。  调用[查询数据库规格](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlFlavors.html)获取，其中az_status中的key为availability_zone。  注：指定可用区创建只读节点，可能由于资源不足创建失败。
 
         :return: The availability_zones of this MysqlCreateReadonlyNodeRequest.
         :rtype: list[str]
@@ -113,7 +113,7 @@ class MysqlCreateReadonlyNodeRequest:
     def availability_zones(self, availability_zones):
         """Sets the availability_zones of this MysqlCreateReadonlyNodeRequest.
 
-        可用区。可指定可用区创建只读节点，不传该参数时默认为自动选择可用区。  调用[查询数据库规格](https://support.huaweicloud.com/api-gaussdbformysql/ShowGaussMySqlFlavors.html)获取，其中az_status中的key为availability_zone。  注：指定可用区创建只读节点，可能由于资源不足创建失败。
+        可用区。可指定可用区创建只读节点，不传该参数时默认为自动选择可用区。  调用[查询数据库规格](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlFlavors.html)获取，其中az_status中的key为availability_zone。  注：指定可用区创建只读节点，可能由于资源不足创建失败。
 
         :param availability_zones: The availability_zones of this MysqlCreateReadonlyNodeRequest.
         :type availability_zones: list[str]

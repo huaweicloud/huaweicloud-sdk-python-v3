@@ -41,11 +41,11 @@ class DbConfigCheckRequestV3:
 
         The model defined in huaweicloud sdk
 
-        :param source_instance_id: GaussDB(for MySQL)实例ID。
+        :param source_instance_id: TaurusDB实例ID。
         :type source_instance_id: str
-        :param source_node_id: GaussDB(for MySQL)只读节点ID。如为空，则取GaussDB(for MySQL)主节点ID
+        :param source_node_id: TaurusDB只读节点ID。如为空，则取TaurusDB主节点ID
         :type source_node_id: str
-        :param source_database_name: GaussDB(for MySQL)数据库名。
+        :param source_database_name: TaurusDB数据库名。
         :type source_database_name: str
         :param target_database_name: 目标数据库名。字符长度限制3~128位，仅支持英文大小写字母、数字以及下划线_。
         :type target_database_name: str
@@ -87,7 +87,7 @@ class DbConfigCheckRequestV3:
     def source_instance_id(self):
         """Gets the source_instance_id of this DbConfigCheckRequestV3.
 
-        GaussDB(for MySQL)实例ID。
+        TaurusDB实例ID。
 
         :return: The source_instance_id of this DbConfigCheckRequestV3.
         :rtype: str
@@ -98,7 +98,7 @@ class DbConfigCheckRequestV3:
     def source_instance_id(self, source_instance_id):
         """Sets the source_instance_id of this DbConfigCheckRequestV3.
 
-        GaussDB(for MySQL)实例ID。
+        TaurusDB实例ID。
 
         :param source_instance_id: The source_instance_id of this DbConfigCheckRequestV3.
         :type source_instance_id: str
@@ -109,7 +109,7 @@ class DbConfigCheckRequestV3:
     def source_node_id(self):
         """Gets the source_node_id of this DbConfigCheckRequestV3.
 
-        GaussDB(for MySQL)只读节点ID。如为空，则取GaussDB(for MySQL)主节点ID
+        TaurusDB只读节点ID。如为空，则取TaurusDB主节点ID
 
         :return: The source_node_id of this DbConfigCheckRequestV3.
         :rtype: str
@@ -120,7 +120,7 @@ class DbConfigCheckRequestV3:
     def source_node_id(self, source_node_id):
         """Sets the source_node_id of this DbConfigCheckRequestV3.
 
-        GaussDB(for MySQL)只读节点ID。如为空，则取GaussDB(for MySQL)主节点ID
+        TaurusDB只读节点ID。如为空，则取TaurusDB主节点ID
 
         :param source_node_id: The source_node_id of this DbConfigCheckRequestV3.
         :type source_node_id: str
@@ -131,7 +131,7 @@ class DbConfigCheckRequestV3:
     def source_database_name(self):
         """Gets the source_database_name of this DbConfigCheckRequestV3.
 
-        GaussDB(for MySQL)数据库名。
+        TaurusDB数据库名。
 
         :return: The source_database_name of this DbConfigCheckRequestV3.
         :rtype: str
@@ -142,7 +142,7 @@ class DbConfigCheckRequestV3:
     def source_database_name(self, source_database_name):
         """Sets the source_database_name of this DbConfigCheckRequestV3.
 
-        GaussDB(for MySQL)数据库名。
+        TaurusDB数据库名。
 
         :param source_database_name: The source_database_name of this DbConfigCheckRequestV3.
         :type source_database_name: str

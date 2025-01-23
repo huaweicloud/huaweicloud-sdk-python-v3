@@ -73,7 +73,8 @@ class ResFeeRecordV2:
         'sub_resource_type_name': 'str',
         'sub_resource_id': 'str',
         'sub_resource_name': 'str',
-        'consume_time': 'str'
+        'consume_time': 'str',
+        'relative_order_id': 'str'
     }
 
     attribute_map = {
@@ -133,17 +134,18 @@ class ResFeeRecordV2:
         'sub_resource_type_name': 'sub_resource_type_name',
         'sub_resource_id': 'sub_resource_id',
         'sub_resource_name': 'sub_resource_name',
-        'consume_time': 'consume_time'
+        'consume_time': 'consume_time',
+        'relative_order_id': 'relative_order_id'
     }
 
-    def __init__(self, bill_date=None, bill_type=None, customer_id=None, region=None, region_name=None, cloud_service_type=None, resource_type=None, cloud_service_type_name=None, resource_type_name=None, effective_time=None, expire_time=None, resource_id=None, resource_name=None, resource_tag=None, product_id=None, product_name=None, product_spec_desc=None, sku_code=None, spec_size=None, spec_size_measure_id=None, trade_id=None, id=None, trade_time=None, enterprise_project_id=None, enterprise_project_name=None, charge_mode=None, order_id=None, period_type=None, usage_type=None, usage=None, usage_measure_id=None, free_resource_usage=None, free_resource_measure_id=None, ri_usage=None, ri_usage_measure_id=None, unit_price=None, unit=None, official_amount=None, discount_amount=None, amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, measure_id=None, formula=None, sub_service_type_code=None, sub_service_type_name=None, sub_resource_type_code=None, sub_resource_type_name=None, sub_resource_id=None, sub_resource_name=None, consume_time=None):
+    def __init__(self, bill_date=None, bill_type=None, customer_id=None, region=None, region_name=None, cloud_service_type=None, resource_type=None, cloud_service_type_name=None, resource_type_name=None, effective_time=None, expire_time=None, resource_id=None, resource_name=None, resource_tag=None, product_id=None, product_name=None, product_spec_desc=None, sku_code=None, spec_size=None, spec_size_measure_id=None, trade_id=None, id=None, trade_time=None, enterprise_project_id=None, enterprise_project_name=None, charge_mode=None, order_id=None, period_type=None, usage_type=None, usage=None, usage_measure_id=None, free_resource_usage=None, free_resource_measure_id=None, ri_usage=None, ri_usage_measure_id=None, unit_price=None, unit=None, official_amount=None, discount_amount=None, amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, measure_id=None, formula=None, sub_service_type_code=None, sub_service_type_name=None, sub_resource_type_code=None, sub_resource_type_name=None, sub_resource_id=None, sub_resource_name=None, consume_time=None, relative_order_id=None):
         """ResFeeRecordV2
 
         The model defined in huaweicloud sdk
 
         :param bill_date: 资源消费记录的日期。 格式：YYYY-MM-DD。按照东八区时间截取。
         :type bill_date: str
-        :param bill_type: 账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更23：消费-节省计划抵扣24：退款-包年/包月转按需
+        :param bill_type: 账单类型。1：消费-新购 2：消费-续订 3：消费-变更 4：退款-退订 5：消费-使用 8：消费-自动续订 9：调账-补偿 14：消费-服务支持计划月末扣费 16：调账-扣费 18：消费-按月付费 20：退款-变更 23：消费-节省计划抵扣 24：退款-包年/包月转按需 103：消费-按年付费
         :type bill_type: int
         :param customer_id: 消费的客户账号ID。 如果是普通客户或者企业子查询消费记录，只能查询到自身的消费记录，则这个地方显示的是自身的客户ID如果是企业主查询消费记录，可以查询到自身以及企业子的消费记录，这个地方是消费的实际客户ID，如果是企业主自身消费，为企业主ID，如果这条消费记录是某个企业子客户的消费，这个地方的ID是企业子账号ID。
         :type customer_id: str
@@ -255,6 +257,8 @@ class ResFeeRecordV2:
         :type sub_resource_name: str
         :param consume_time: |参数名称：消费时间| |参数约束及描述：消费时间，UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ。包周期、预留实例预付为交易时间，按需、预留实例按时计费为话单生失效时间。 说明：当statistic_type&#x3D;3时有效。|
         :type consume_time: str
+        :param relative_order_id: |参数名称：客户订单关联的订单ID| |参数约束及描述：客户订单关联的订单ID，包年/包月资源的使用记录该字段才有值，按需资源则为空。当order_id为组合交易订单时，该字段才有值，当查询为普通订单时，此字段返回为空。|
+        :type relative_order_id: str
         """
         
         
@@ -316,6 +320,7 @@ class ResFeeRecordV2:
         self._sub_resource_id = None
         self._sub_resource_name = None
         self._consume_time = None
+        self._relative_order_id = None
         self.discriminator = None
 
         if bill_date is not None:
@@ -432,6 +437,8 @@ class ResFeeRecordV2:
             self.sub_resource_name = sub_resource_name
         if consume_time is not None:
             self.consume_time = consume_time
+        if relative_order_id is not None:
+            self.relative_order_id = relative_order_id
 
     @property
     def bill_date(self):
@@ -459,7 +466,7 @@ class ResFeeRecordV2:
     def bill_type(self):
         """Gets the bill_type of this ResFeeRecordV2.
 
-        账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更23：消费-节省计划抵扣24：退款-包年/包月转按需
+        账单类型。1：消费-新购 2：消费-续订 3：消费-变更 4：退款-退订 5：消费-使用 8：消费-自动续订 9：调账-补偿 14：消费-服务支持计划月末扣费 16：调账-扣费 18：消费-按月付费 20：退款-变更 23：消费-节省计划抵扣 24：退款-包年/包月转按需 103：消费-按年付费
 
         :return: The bill_type of this ResFeeRecordV2.
         :rtype: int
@@ -470,7 +477,7 @@ class ResFeeRecordV2:
     def bill_type(self, bill_type):
         """Sets the bill_type of this ResFeeRecordV2.
 
-        账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更23：消费-节省计划抵扣24：退款-包年/包月转按需
+        账单类型。1：消费-新购 2：消费-续订 3：消费-变更 4：退款-退订 5：消费-使用 8：消费-自动续订 9：调账-补偿 14：消费-服务支持计划月末扣费 16：调账-扣费 18：消费-按月付费 20：退款-变更 23：消费-节省计划抵扣 24：退款-包年/包月转按需 103：消费-按年付费
 
         :param bill_type: The bill_type of this ResFeeRecordV2.
         :type bill_type: int
@@ -1686,6 +1693,28 @@ class ResFeeRecordV2:
         :type consume_time: str
         """
         self._consume_time = consume_time
+
+    @property
+    def relative_order_id(self):
+        """Gets the relative_order_id of this ResFeeRecordV2.
+
+        |参数名称：客户订单关联的订单ID| |参数约束及描述：客户订单关联的订单ID，包年/包月资源的使用记录该字段才有值，按需资源则为空。当order_id为组合交易订单时，该字段才有值，当查询为普通订单时，此字段返回为空。|
+
+        :return: The relative_order_id of this ResFeeRecordV2.
+        :rtype: str
+        """
+        return self._relative_order_id
+
+    @relative_order_id.setter
+    def relative_order_id(self, relative_order_id):
+        """Sets the relative_order_id of this ResFeeRecordV2.
+
+        |参数名称：客户订单关联的订单ID| |参数约束及描述：客户订单关联的订单ID，包年/包月资源的使用记录该字段才有值，按需资源则为空。当order_id为组合交易订单时，该字段才有值，当查询为普通订单时，此字段返回为空。|
+
+        :param relative_order_id: The relative_order_id of this ResFeeRecordV2.
+        :type relative_order_id: str
+        """
+        self._relative_order_id = relative_order_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

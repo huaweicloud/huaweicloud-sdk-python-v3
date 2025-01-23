@@ -101,6 +101,75 @@ class IDMEClassicAPIAsyncClient(Client):
 
         return http_info
 
+    def add_to_category_async(self, request):
+        """添加数据分类
+
+        将数据分类对象数据实例添加至数据分类数据实例中。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AddToCategory
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.AddToCategoryRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.AddToCategoryResponse`
+        """
+        http_info = self._add_to_category_http_info(request)
+        return self._call_api(**http_info)
+
+    def add_to_category_async_invoker(self, request):
+        http_info = self._add_to_category_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_to_category_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/addToCategory",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddToCategoryResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_add_child_node_async(self, request):
         """批量添加实例的子节点
 
@@ -515,6 +584,75 @@ class IDMEClassicAPIAsyncClient(Client):
 
         return http_info
 
+    def batch_create_share_docs_async(self, request):
+        """批量创建分享结构化文档
+
+        批量创建分享结构化文档。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchCreateShareDocs
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.BatchCreateShareDocsRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.BatchCreateShareDocsResponse`
+        """
+        http_info = self._batch_create_share_docs_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_create_share_docs_async_invoker(self, request):
+        http_info = self._batch_create_share_docs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_create_share_docs_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/structured-doc/share-doc/batch",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateShareDocsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_create_using_post_async(self, request):
         """批量创建实例
 
@@ -722,6 +860,75 @@ class IDMEClassicAPIAsyncClient(Client):
 
         return http_info
 
+    def batch_delete_latest_version_async(self, request):
+        """批量删除版本对象下最新分支的最新版本实例数据
+
+        根据主对象ID，批量删除版本对象下最新分支的最新版本实例数据。请您谨慎使用删除操作，删除后该数据将无法恢复。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteLatestVersion
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.BatchDeleteLatestVersionRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.BatchDeleteLatestVersionResponse`
+        """
+        http_info = self._batch_delete_latest_version_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_latest_version_async_invoker(self, request):
+        http_info = self._batch_delete_latest_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_latest_version_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/batch-delete-latest-version",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteLatestVersionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_delete_logical_branch_async(self, request):
         """批量软删除最新大版本下的所有小版本
 
@@ -760,6 +967,75 @@ class IDMEClassicAPIAsyncClient(Client):
             path_params['identifier'] = local_var_params['identifier']
         if 'model_name' in local_var_params:
             path_params['modelName'] = local_var_params['model_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_logical_latest_version_async(self, request):
+        """批量软删除版本对象下最新分支的最新版本实例数据
+
+        根据主对象ID，批量软删除版本对象下最新分支的最新版本实例数据。通过此接口进行删除操作时，系统会将当前删除的实例数据转存至XDM应用的XDMLogicDeleteData内置模型中。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteLogicalLatestVersion
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.BatchDeleteLogicalLatestVersionRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.BatchDeleteLogicalLatestVersionResponse`
+        """
+        http_info = self._batch_delete_logical_latest_version_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_logical_latest_version_async_invoker(self, request):
+        http_info = self._batch_delete_logical_latest_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_logical_latest_version_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/batch-logical-delete-latest-version",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteLogicalLatestVersionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
 
         query_params = []
 
@@ -831,6 +1107,144 @@ class IDMEClassicAPIAsyncClient(Client):
             path_params['identifier'] = local_var_params['identifier']
         if 'model_name' in local_var_params:
             path_params['modelName'] = local_var_params['model_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_share_docs_async(self, request):
+        """批量删除结构化文档分享权限
+
+        批量删除结构化文档分享权限。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteShareDocs
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.BatchDeleteShareDocsRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.BatchDeleteShareDocsResponse`
+        """
+        http_info = self._batch_delete_share_docs_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_share_docs_async_invoker(self, request):
+        http_info = self._batch_delete_share_docs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_share_docs_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/structured-doc/share-doc/batch",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteShareDocsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_structured_document_async(self, request):
+        """批量删除结构化文档
+
+        批量删除结构化文档。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteStructuredDocument
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.BatchDeleteStructuredDocumentRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.BatchDeleteStructuredDocumentResponse`
+        """
+        http_info = self._batch_delete_structured_document_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_structured_document_async_invoker(self, request):
+        http_info = self._batch_delete_structured_document_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_structured_document_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/structured-doc/documents/batch",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteStructuredDocumentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
 
         query_params = []
 
@@ -1316,6 +1730,75 @@ class IDMEClassicAPIAsyncClient(Client):
             path_params['identifier'] = local_var_params['identifier']
         if 'model_name' in local_var_params:
             path_params['modelName'] = local_var_params['model_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_update_document_async(self, request):
+        """批量更新结构化文档
+
+        批量更新结构化文档。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchUpdateDocument
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.BatchUpdateDocumentRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.BatchUpdateDocumentResponse`
+        """
+        http_info = self._batch_update_document_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_update_document_async_invoker(self, request):
+        http_info = self._batch_update_document_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_update_document_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/structured-doc/documents/batch/update",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchUpdateDocumentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
 
         query_params = []
 
@@ -2075,6 +2558,75 @@ class IDMEClassicAPIAsyncClient(Client):
             path_params['identifier'] = local_var_params['identifier']
         if 'model_name' in local_var_params:
             path_params['modelName'] = local_var_params['model_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_document_async(self, request):
+        """创建结构化文档
+
+        创建结构化文档。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateDocument
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.CreateDocumentRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.CreateDocumentResponse`
+        """
+        http_info = self._create_document_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_document_async_invoker(self, request):
+        http_info = self._create_document_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_document_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/structured-doc/documents",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDocumentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
 
         query_params = []
 
@@ -3629,6 +4181,75 @@ class IDMEClassicAPIAsyncClient(Client):
 
         return http_info
 
+    def list_query_documents_async(self, request):
+        """查询结构化文档
+
+        查询结构化文档。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListQueryDocuments
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.ListQueryDocumentsRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.ListQueryDocumentsResponse`
+        """
+        http_info = self._list_query_documents_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_query_documents_async_invoker(self, request):
+        http_info = self._list_query_documents_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_query_documents_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/structured-doc/documents/query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListQueryDocumentsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_query_related_objects_async(self, request):
         """查询关系实体关联模型的信息
 
@@ -3775,6 +4396,75 @@ class IDMEClassicAPIAsyncClient(Client):
             query_params.append(('totalPages', local_var_params['total_pages']))
         if 'total_rows' in local_var_params:
             query_params.append(('totalRows', local_var_params['total_rows']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_query_share_docs_async(self, request):
+        """查询结构化文档分享授权列表
+
+        查询结构化文档分享授权列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListQueryShareDocs
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.ListQueryShareDocsRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.ListQueryShareDocsResponse`
+        """
+        http_info = self._list_query_share_docs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_query_share_docs_async_invoker(self, request):
+        http_info = self._list_query_share_docs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_query_share_docs_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/structured-doc/share-doc",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListQueryShareDocsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+
+        query_params = []
 
         header_params = {}
 
@@ -4192,6 +4882,75 @@ class IDMEClassicAPIAsyncClient(Client):
             path_params['identifier'] = local_var_params['identifier']
         if 'model_name' in local_var_params:
             path_params['modelName'] = local_var_params['model_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def remove_from_category_async(self, request):
+        """移除数据分类
+
+        将数据分类数据实例从数据分类对象数据实例中移除。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RemoveFromCategory
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.RemoveFromCategoryRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.RemoveFromCategoryResponse`
+        """
+        http_info = self._remove_from_category_http_info(request)
+        return self._call_api(**http_info)
+
+    def remove_from_category_async_invoker(self, request):
+        http_info = self._remove_from_category_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _remove_from_category_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/removeFromCategory",
+            "request_type": request.__class__.__name__,
+            "response_type": "RemoveFromCategoryResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
 
         query_params = []
 
@@ -4755,6 +5514,75 @@ class IDMEClassicAPIAsyncClient(Client):
             "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/getRoot",
             "request_type": request.__class__.__name__,
             "response_type": "ShowGetRootResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_get_tokens_async(self, request):
+        """获取Token信息
+
+        该接口可以用于通过文档ID和认证类型的方式进行认证来获取结构化文档的Token。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowGetTokens
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.ShowGetTokensRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.ShowGetTokensResponse`
+        """
+        http_info = self._show_get_tokens_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_get_tokens_async_invoker(self, request):
+        http_info = self._show_get_tokens_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_get_tokens_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/structured-doc/tokens",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowGetTokensResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -5531,6 +6359,75 @@ class IDMEClassicAPIAsyncClient(Client):
             path_params['identifier'] = local_var_params['identifier']
         if 'model_name' in local_var_params:
             path_params['modelName'] = local_var_params['model_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_document_async(self, request):
+        """更新文档标题
+
+        更新文档标题。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateDocument
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.UpdateDocumentRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.UpdateDocumentResponse`
+        """
+        http_info = self._update_document_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_document_async_invoker(self, request):
+        http_info = self._update_document_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_document_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/structured-doc/documents",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDocumentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
 
         query_params = []
 

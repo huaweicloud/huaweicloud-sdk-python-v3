@@ -47,7 +47,8 @@ class CreateFunctionRequestBody:
         'log_config': 'FuncLogConfig',
         'network_controller': 'NetworkControlConfig',
         'is_stateful_function': 'bool',
-        'enable_dynamic_memory': 'bool'
+        'enable_dynamic_memory': 'bool',
+        'lts_custom_tag': 'dict(str, str)'
     }
 
     attribute_map = {
@@ -81,10 +82,11 @@ class CreateFunctionRequestBody:
         'log_config': 'log_config',
         'network_controller': 'network_controller',
         'is_stateful_function': 'is_stateful_function',
-        'enable_dynamic_memory': 'enable_dynamic_memory'
+        'enable_dynamic_memory': 'enable_dynamic_memory',
+        'lts_custom_tag': 'lts_custom_tag'
     }
 
-    def __init__(self, func_name=None, package=None, runtime=None, timeout=None, handler=None, depend_version_list=None, func_vpc=None, memory_size=None, gpu_memory=None, gpu_type=None, code_type=None, code_url=None, code_filename=None, custom_image=None, user_data=None, encrypted_user_data=None, xrole=None, app_xrole=None, description=None, func_code=None, mount_config=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, enterprise_project_id=None, type=None, log_config=None, network_controller=None, is_stateful_function=None, enable_dynamic_memory=None):
+    def __init__(self, func_name=None, package=None, runtime=None, timeout=None, handler=None, depend_version_list=None, func_vpc=None, memory_size=None, gpu_memory=None, gpu_type=None, code_type=None, code_url=None, code_filename=None, custom_image=None, user_data=None, encrypted_user_data=None, xrole=None, app_xrole=None, description=None, func_code=None, mount_config=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, enterprise_project_id=None, type=None, log_config=None, network_controller=None, is_stateful_function=None, enable_dynamic_memory=None, lts_custom_tag=None):
         """CreateFunctionRequestBody
 
         The model defined in huaweicloud sdk
@@ -151,6 +153,8 @@ class CreateFunctionRequestBody:
         :type is_stateful_function: bool
         :param enable_dynamic_memory: 是否启动动态内存配置
         :type enable_dynamic_memory: bool
+        :param lts_custom_tag: 自定义日志标签。函数执行时，可以按照自定义标签配置上报标签到云日志服务(LTS)，用户可以通过标签对日志进行过滤筛选。
+        :type lts_custom_tag: dict(str, str)
         """
         
         
@@ -186,6 +190,7 @@ class CreateFunctionRequestBody:
         self._network_controller = None
         self._is_stateful_function = None
         self._enable_dynamic_memory = None
+        self._lts_custom_tag = None
         self.discriminator = None
 
         self.func_name = func_name
@@ -244,6 +249,8 @@ class CreateFunctionRequestBody:
             self.is_stateful_function = is_stateful_function
         if enable_dynamic_memory is not None:
             self.enable_dynamic_memory = enable_dynamic_memory
+        if lts_custom_tag is not None:
+            self.lts_custom_tag = lts_custom_tag
 
     @property
     def func_name(self):
@@ -902,6 +909,28 @@ class CreateFunctionRequestBody:
         :type enable_dynamic_memory: bool
         """
         self._enable_dynamic_memory = enable_dynamic_memory
+
+    @property
+    def lts_custom_tag(self):
+        """Gets the lts_custom_tag of this CreateFunctionRequestBody.
+
+        自定义日志标签。函数执行时，可以按照自定义标签配置上报标签到云日志服务(LTS)，用户可以通过标签对日志进行过滤筛选。
+
+        :return: The lts_custom_tag of this CreateFunctionRequestBody.
+        :rtype: dict(str, str)
+        """
+        return self._lts_custom_tag
+
+    @lts_custom_tag.setter
+    def lts_custom_tag(self, lts_custom_tag):
+        """Sets the lts_custom_tag of this CreateFunctionRequestBody.
+
+        自定义日志标签。函数执行时，可以按照自定义标签配置上报标签到云日志服务(LTS)，用户可以通过标签对日志进行过滤筛选。
+
+        :param lts_custom_tag: The lts_custom_tag of this CreateFunctionRequestBody.
+        :type lts_custom_tag: dict(str, str)
+        """
+        self._lts_custom_tag = lts_custom_tag
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -17,35 +17,42 @@ class ListAvailabilityZonesRequest:
     sensitive_list = []
 
     openapi_types = {
-        'public_border_group': 'str'
+        'public_border_group': 'str',
+        'loadbalancer_id': 'str'
     }
 
     attribute_map = {
-        'public_border_group': 'public_border_group'
+        'public_border_group': 'public_border_group',
+        'loadbalancer_id': 'loadbalancer_id'
     }
 
-    def __init__(self, public_border_group=None):
+    def __init__(self, public_border_group=None, loadbalancer_id=None):
         """ListAvailabilityZonesRequest
 
         The model defined in huaweicloud sdk
 
-        :param public_border_group: 参数解释：可用区组。
+        :param public_border_group: 参数解释：网络公共边界组。
         :type public_border_group: str
+        :param loadbalancer_id: 参数解释：负载均衡器ID。
+        :type loadbalancer_id: str
         """
         
         
 
         self._public_border_group = None
+        self._loadbalancer_id = None
         self.discriminator = None
 
         if public_border_group is not None:
             self.public_border_group = public_border_group
+        if loadbalancer_id is not None:
+            self.loadbalancer_id = loadbalancer_id
 
     @property
     def public_border_group(self):
         """Gets the public_border_group of this ListAvailabilityZonesRequest.
 
-        参数解释：可用区组。
+        参数解释：网络公共边界组。
 
         :return: The public_border_group of this ListAvailabilityZonesRequest.
         :rtype: str
@@ -56,12 +63,34 @@ class ListAvailabilityZonesRequest:
     def public_border_group(self, public_border_group):
         """Sets the public_border_group of this ListAvailabilityZonesRequest.
 
-        参数解释：可用区组。
+        参数解释：网络公共边界组。
 
         :param public_border_group: The public_border_group of this ListAvailabilityZonesRequest.
         :type public_border_group: str
         """
         self._public_border_group = public_border_group
+
+    @property
+    def loadbalancer_id(self):
+        """Gets the loadbalancer_id of this ListAvailabilityZonesRequest.
+
+        参数解释：负载均衡器ID。
+
+        :return: The loadbalancer_id of this ListAvailabilityZonesRequest.
+        :rtype: str
+        """
+        return self._loadbalancer_id
+
+    @loadbalancer_id.setter
+    def loadbalancer_id(self, loadbalancer_id):
+        """Sets the loadbalancer_id of this ListAvailabilityZonesRequest.
+
+        参数解释：负载均衡器ID。
+
+        :param loadbalancer_id: The loadbalancer_id of this ListAvailabilityZonesRequest.
+        :type loadbalancer_id: str
+        """
+        self._loadbalancer_id = loadbalancer_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

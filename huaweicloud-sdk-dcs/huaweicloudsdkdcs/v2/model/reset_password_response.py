@@ -20,16 +20,22 @@ class ResetPasswordResponse(SdkResponse):
     openapi_types = {
         'retry_times_left': 'str',
         'lock_time': 'str',
-        'lock_time_left': 'str'
+        'lock_time_left': 'str',
+        'code': 'str',
+        'message': 'str',
+        'ext_message': 'str'
     }
 
     attribute_map = {
         'retry_times_left': 'retry_times_left',
         'lock_time': 'lock_time',
-        'lock_time_left': 'lock_time_left'
+        'lock_time_left': 'lock_time_left',
+        'code': 'code',
+        'message': 'message',
+        'ext_message': 'ext_message'
     }
 
-    def __init__(self, retry_times_left=None, lock_time=None, lock_time_left=None):
+    def __init__(self, retry_times_left=None, lock_time=None, lock_time_left=None, code=None, message=None, ext_message=None):
         """ResetPasswordResponse
 
         The model defined in huaweicloud sdk
@@ -40,6 +46,12 @@ class ResetPasswordResponse(SdkResponse):
         :type lock_time: str
         :param lock_time_left: 锁定剩余时间
         :type lock_time_left: str
+        :param code: **参数解释**： 重置密码结果编号。 **取值范围**： - 1：重置密码成功。 - 3：实例被锁定。 
+        :type code: str
+        :param message: **参数解释**： 重置密码结果信息。 **取值范围**： - success - instance is locked 
+        :type message: str
+        :param ext_message: **参数解释**： 重置密码错误信息，若重置密码成功，则为null。 **取值范围**： 不涉及。 
+        :type ext_message: str
         """
         
         super(ResetPasswordResponse, self).__init__()
@@ -47,6 +59,9 @@ class ResetPasswordResponse(SdkResponse):
         self._retry_times_left = None
         self._lock_time = None
         self._lock_time_left = None
+        self._code = None
+        self._message = None
+        self._ext_message = None
         self.discriminator = None
 
         if retry_times_left is not None:
@@ -55,6 +70,12 @@ class ResetPasswordResponse(SdkResponse):
             self.lock_time = lock_time
         if lock_time_left is not None:
             self.lock_time_left = lock_time_left
+        if code is not None:
+            self.code = code
+        if message is not None:
+            self.message = message
+        if ext_message is not None:
+            self.ext_message = ext_message
 
     @property
     def retry_times_left(self):
@@ -121,6 +142,72 @@ class ResetPasswordResponse(SdkResponse):
         :type lock_time_left: str
         """
         self._lock_time_left = lock_time_left
+
+    @property
+    def code(self):
+        """Gets the code of this ResetPasswordResponse.
+
+        **参数解释**： 重置密码结果编号。 **取值范围**： - 1：重置密码成功。 - 3：实例被锁定。 
+
+        :return: The code of this ResetPasswordResponse.
+        :rtype: str
+        """
+        return self._code
+
+    @code.setter
+    def code(self, code):
+        """Sets the code of this ResetPasswordResponse.
+
+        **参数解释**： 重置密码结果编号。 **取值范围**： - 1：重置密码成功。 - 3：实例被锁定。 
+
+        :param code: The code of this ResetPasswordResponse.
+        :type code: str
+        """
+        self._code = code
+
+    @property
+    def message(self):
+        """Gets the message of this ResetPasswordResponse.
+
+        **参数解释**： 重置密码结果信息。 **取值范围**： - success - instance is locked 
+
+        :return: The message of this ResetPasswordResponse.
+        :rtype: str
+        """
+        return self._message
+
+    @message.setter
+    def message(self, message):
+        """Sets the message of this ResetPasswordResponse.
+
+        **参数解释**： 重置密码结果信息。 **取值范围**： - success - instance is locked 
+
+        :param message: The message of this ResetPasswordResponse.
+        :type message: str
+        """
+        self._message = message
+
+    @property
+    def ext_message(self):
+        """Gets the ext_message of this ResetPasswordResponse.
+
+        **参数解释**： 重置密码错误信息，若重置密码成功，则为null。 **取值范围**： 不涉及。 
+
+        :return: The ext_message of this ResetPasswordResponse.
+        :rtype: str
+        """
+        return self._ext_message
+
+    @ext_message.setter
+    def ext_message(self, ext_message):
+        """Sets the ext_message of this ResetPasswordResponse.
+
+        **参数解释**： 重置密码错误信息，若重置密码成功，则为null。 **取值范围**： 不涉及。 
+
+        :param ext_message: The ext_message of this ResetPasswordResponse.
+        :type ext_message: str
+        """
+        self._ext_message = ext_message
 
     def to_dict(self):
         """Returns the model properties as a dict"""

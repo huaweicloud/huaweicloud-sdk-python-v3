@@ -27,6 +27,7 @@ class MasterSlaveMember:
         'device_owner': 'str',
         'device_id': 'str',
         'operating_status': 'str',
+        'reason': 'MemberHealthCheckFailedReason',
         'member_type': 'str',
         'instance_id': 'str',
         'role': 'str',
@@ -44,13 +45,14 @@ class MasterSlaveMember:
         'device_owner': 'device_owner',
         'device_id': 'device_id',
         'operating_status': 'operating_status',
+        'reason': 'reason',
         'member_type': 'member_type',
         'instance_id': 'instance_id',
         'role': 'role',
         'status': 'status'
     }
 
-    def __init__(self, id=None, name=None, admin_state_up=None, subnet_cidr_id=None, protocol_port=None, address=None, ip_version=None, device_owner=None, device_id=None, operating_status=None, member_type=None, instance_id=None, role=None, status=None):
+    def __init__(self, id=None, name=None, admin_state_up=None, subnet_cidr_id=None, protocol_port=None, address=None, ip_version=None, device_owner=None, device_id=None, operating_status=None, reason=None, member_type=None, instance_id=None, role=None, status=None):
         """MasterSlaveMember
 
         The model defined in huaweicloud sdk
@@ -75,6 +77,8 @@ class MasterSlaveMember:
         :type device_id: str
         :param operating_status: 后端服务器的健康状态。  取值： - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。
         :type operating_status: str
+        :param reason: 
+        :type reason: :class:`huaweicloudsdkelb.v3.MemberHealthCheckFailedReason`
         :param member_type: 后端服务器的类型。  取值： - ip：跨VPC的member。 - instance：关联到ECS的member。
         :type member_type: str
         :param instance_id: member关联的实例ID。空表示member关联的实例为非真实设备 （如：跨VPC场景）
@@ -97,6 +101,7 @@ class MasterSlaveMember:
         self._device_owner = None
         self._device_id = None
         self._operating_status = None
+        self._reason = None
         self._member_type = None
         self._instance_id = None
         self._role = None
@@ -113,6 +118,8 @@ class MasterSlaveMember:
         self.device_owner = device_owner
         self.device_id = device_id
         self.operating_status = operating_status
+        if reason is not None:
+            self.reason = reason
         self.member_type = member_type
         self.instance_id = instance_id
         self.role = role
@@ -337,6 +344,24 @@ class MasterSlaveMember:
         :type operating_status: str
         """
         self._operating_status = operating_status
+
+    @property
+    def reason(self):
+        """Gets the reason of this MasterSlaveMember.
+
+        :return: The reason of this MasterSlaveMember.
+        :rtype: :class:`huaweicloudsdkelb.v3.MemberHealthCheckFailedReason`
+        """
+        return self._reason
+
+    @reason.setter
+    def reason(self, reason):
+        """Sets the reason of this MasterSlaveMember.
+
+        :param reason: The reason of this MasterSlaveMember.
+        :type reason: :class:`huaweicloudsdkelb.v3.MemberHealthCheckFailedReason`
+        """
+        self._reason = reason
 
     @property
     def member_type(self):

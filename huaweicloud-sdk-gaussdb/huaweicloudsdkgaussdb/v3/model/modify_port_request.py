@@ -29,7 +29,7 @@ class ModifyPortRequest:
 
         The model defined in huaweicloud sdk
 
-        :param port: 端口号。  GaussDB(for MySQL)端口号范围：大于等于1024，小于等于65535，不包含端口5342-5345、12017、20000、20201、20202、33062。 
+        :param port: 端口号。  TaurusDB端口号范围：大于等于1024，小于等于65535，不包含端口5342-5345、12017、20000、20201、20202、33062。 
         :type port: int
         """
         
@@ -44,7 +44,7 @@ class ModifyPortRequest:
     def port(self):
         """Gets the port of this ModifyPortRequest.
 
-        端口号。  GaussDB(for MySQL)端口号范围：大于等于1024，小于等于65535，不包含端口5342-5345、12017、20000、20201、20202、33062。 
+        端口号。  TaurusDB端口号范围：大于等于1024，小于等于65535，不包含端口5342-5345、12017、20000、20201、20202、33062。 
 
         :return: The port of this ModifyPortRequest.
         :rtype: int
@@ -55,7 +55,7 @@ class ModifyPortRequest:
     def port(self, port):
         """Sets the port of this ModifyPortRequest.
 
-        端口号。  GaussDB(for MySQL)端口号范围：大于等于1024，小于等于65535，不包含端口5342-5345、12017、20000、20201、20202、33062。 
+        端口号。  TaurusDB端口号范围：大于等于1024，小于等于65535，不包含端口5342-5345、12017、20000、20201、20202、33062。 
 
         :param port: The port of this ModifyPortRequest.
         :type port: int

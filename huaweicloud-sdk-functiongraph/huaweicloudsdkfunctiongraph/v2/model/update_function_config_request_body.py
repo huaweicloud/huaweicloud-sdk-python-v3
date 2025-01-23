@@ -30,6 +30,7 @@ class UpdateFunctionConfigRequestBody:
         'app_xrole': 'str',
         'description': 'str',
         'func_vpc': 'FuncVpc',
+        'peering_cidr': 'str',
         'mount_config': 'MountConfig',
         'strategy_config': 'StrategyConfig',
         'custom_image': 'CustomImage',
@@ -49,7 +50,8 @@ class UpdateFunctionConfigRequestBody:
         'restore_hook_handler': 'str',
         'restore_hook_timeout': 'int',
         'heartbeat_handler': 'str',
-        'enable_class_isolation': 'bool'
+        'enable_class_isolation': 'bool',
+        'lts_custom_tag': 'dict(str, str)'
     }
 
     attribute_map = {
@@ -66,6 +68,7 @@ class UpdateFunctionConfigRequestBody:
         'app_xrole': 'app_xrole',
         'description': 'description',
         'func_vpc': 'func_vpc',
+        'peering_cidr': 'peering_cidr',
         'mount_config': 'mount_config',
         'strategy_config': 'strategy_config',
         'custom_image': 'custom_image',
@@ -85,10 +88,11 @@ class UpdateFunctionConfigRequestBody:
         'restore_hook_handler': 'restore_hook_handler',
         'restore_hook_timeout': 'restore_hook_timeout',
         'heartbeat_handler': 'heartbeat_handler',
-        'enable_class_isolation': 'enable_class_isolation'
+        'enable_class_isolation': 'enable_class_isolation',
+        'lts_custom_tag': 'lts_custom_tag'
     }
 
-    def __init__(self, func_name=None, runtime=None, timeout=None, handler=None, memory_size=None, gpu_memory=None, gpu_type=None, user_data=None, encrypted_user_data=None, xrole=None, app_xrole=None, description=None, func_vpc=None, mount_config=None, strategy_config=None, custom_image=None, extend_config=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, ephemeral_storage=None, enterprise_project_id=None, log_config=None, network_controller=None, is_stateful_function=None, enable_dynamic_memory=None, enable_auth_in_header=None, domain_names=None, restore_hook_handler=None, restore_hook_timeout=None, heartbeat_handler=None, enable_class_isolation=None):
+    def __init__(self, func_name=None, runtime=None, timeout=None, handler=None, memory_size=None, gpu_memory=None, gpu_type=None, user_data=None, encrypted_user_data=None, xrole=None, app_xrole=None, description=None, func_vpc=None, peering_cidr=None, mount_config=None, strategy_config=None, custom_image=None, extend_config=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, ephemeral_storage=None, enterprise_project_id=None, log_config=None, network_controller=None, is_stateful_function=None, enable_dynamic_memory=None, enable_auth_in_header=None, domain_names=None, restore_hook_handler=None, restore_hook_timeout=None, heartbeat_handler=None, enable_class_isolation=None, lts_custom_tag=None):
         """UpdateFunctionConfigRequestBody
 
         The model defined in huaweicloud sdk
@@ -119,6 +123,8 @@ class UpdateFunctionConfigRequestBody:
         :type description: str
         :param func_vpc: 
         :type func_vpc: :class:`huaweicloudsdkfunctiongraph.v2.FuncVpc`
+        :param peering_cidr: VPC对等连接网段。您可以声明代码中使用到的VPC网段，用以检测是否与服务使用VPC网段冲突。网段间使用分号分隔且不能超过5个。
+        :type peering_cidr: str
         :param mount_config: 
         :type mount_config: :class:`huaweicloudsdkfunctiongraph.v2.MountConfig`
         :param strategy_config: 
@@ -159,6 +165,8 @@ class UpdateFunctionConfigRequestBody:
         :type heartbeat_handler: str
         :param enable_class_isolation: 类隔离开关，只支持JAVA运行时配置。开启类隔离后可以支持Kafka转储并提升类加载效率，但也可能会导致某些兼容性问题，请谨慎开启。
         :type enable_class_isolation: bool
+        :param lts_custom_tag: 自定义日志标签。函数执行时，可以按照自定义标签配置上报标签到云日志服务(LTS)，用户可以通过标签对日志进行过滤筛选。
+        :type lts_custom_tag: dict(str, str)
         """
         
         
@@ -176,6 +184,7 @@ class UpdateFunctionConfigRequestBody:
         self._app_xrole = None
         self._description = None
         self._func_vpc = None
+        self._peering_cidr = None
         self._mount_config = None
         self._strategy_config = None
         self._custom_image = None
@@ -196,6 +205,7 @@ class UpdateFunctionConfigRequestBody:
         self._restore_hook_timeout = None
         self._heartbeat_handler = None
         self._enable_class_isolation = None
+        self._lts_custom_tag = None
         self.discriminator = None
 
         self.func_name = func_name
@@ -219,6 +229,8 @@ class UpdateFunctionConfigRequestBody:
             self.description = description
         if func_vpc is not None:
             self.func_vpc = func_vpc
+        if peering_cidr is not None:
+            self.peering_cidr = peering_cidr
         if mount_config is not None:
             self.mount_config = mount_config
         if strategy_config is not None:
@@ -259,6 +271,8 @@ class UpdateFunctionConfigRequestBody:
             self.heartbeat_handler = heartbeat_handler
         if enable_class_isolation is not None:
             self.enable_class_isolation = enable_class_isolation
+        if lts_custom_tag is not None:
+            self.lts_custom_tag = lts_custom_tag
 
     @property
     def func_name(self):
@@ -541,6 +555,28 @@ class UpdateFunctionConfigRequestBody:
         :type func_vpc: :class:`huaweicloudsdkfunctiongraph.v2.FuncVpc`
         """
         self._func_vpc = func_vpc
+
+    @property
+    def peering_cidr(self):
+        """Gets the peering_cidr of this UpdateFunctionConfigRequestBody.
+
+        VPC对等连接网段。您可以声明代码中使用到的VPC网段，用以检测是否与服务使用VPC网段冲突。网段间使用分号分隔且不能超过5个。
+
+        :return: The peering_cidr of this UpdateFunctionConfigRequestBody.
+        :rtype: str
+        """
+        return self._peering_cidr
+
+    @peering_cidr.setter
+    def peering_cidr(self, peering_cidr):
+        """Sets the peering_cidr of this UpdateFunctionConfigRequestBody.
+
+        VPC对等连接网段。您可以声明代码中使用到的VPC网段，用以检测是否与服务使用VPC网段冲突。网段间使用分号分隔且不能超过5个。
+
+        :param peering_cidr: The peering_cidr of this UpdateFunctionConfigRequestBody.
+        :type peering_cidr: str
+        """
+        self._peering_cidr = peering_cidr
 
     @property
     def mount_config(self):
@@ -961,6 +997,28 @@ class UpdateFunctionConfigRequestBody:
         :type enable_class_isolation: bool
         """
         self._enable_class_isolation = enable_class_isolation
+
+    @property
+    def lts_custom_tag(self):
+        """Gets the lts_custom_tag of this UpdateFunctionConfigRequestBody.
+
+        自定义日志标签。函数执行时，可以按照自定义标签配置上报标签到云日志服务(LTS)，用户可以通过标签对日志进行过滤筛选。
+
+        :return: The lts_custom_tag of this UpdateFunctionConfigRequestBody.
+        :rtype: dict(str, str)
+        """
+        return self._lts_custom_tag
+
+    @lts_custom_tag.setter
+    def lts_custom_tag(self, lts_custom_tag):
+        """Sets the lts_custom_tag of this UpdateFunctionConfigRequestBody.
+
+        自定义日志标签。函数执行时，可以按照自定义标签配置上报标签到云日志服务(LTS)，用户可以通过标签对日志进行过滤筛选。
+
+        :param lts_custom_tag: The lts_custom_tag of this UpdateFunctionConfigRequestBody.
+        :type lts_custom_tag: dict(str, str)
+        """
+        self._lts_custom_tag = lts_custom_tag
 
     def to_dict(self):
         """Returns the model properties as a dict"""

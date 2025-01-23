@@ -65,7 +65,7 @@ class CreateChInstanceRequestBody:
         :type volume: :class:`huaweicloudsdkgaussdb.v3.CreateChInstanceRequestBodyVolume`
         :param az_code: 可用区码。  当ha中mode为Ha时，需要填写多个可用区，用\&quot;,\&quot; 分隔。例如：cn-southwest-244b,cn-southwest-244a
         :type az_code: str
-        :param time_zone: 时区。默认为所属GaussDB(for MySQL)实例时区。
+        :param time_zone: 时区。默认为所属TaurusDB实例时区。
         :type time_zone: str
         :param tags_info: 
         :type tags_info: :class:`huaweicloudsdkgaussdb.v3.CreateChInstanceRequestBodyTagsInfo`
@@ -270,7 +270,7 @@ class CreateChInstanceRequestBody:
     def time_zone(self):
         """Gets the time_zone of this CreateChInstanceRequestBody.
 
-        时区。默认为所属GaussDB(for MySQL)实例时区。
+        时区。默认为所属TaurusDB实例时区。
 
         :return: The time_zone of this CreateChInstanceRequestBody.
         :rtype: str
@@ -281,7 +281,7 @@ class CreateChInstanceRequestBody:
     def time_zone(self, time_zone):
         """Sets the time_zone of this CreateChInstanceRequestBody.
 
-        时区。默认为所属GaussDB(for MySQL)实例时区。
+        时区。默认为所属TaurusDB实例时区。
 
         :param time_zone: The time_zone of this CreateChInstanceRequestBody.
         :type time_zone: str

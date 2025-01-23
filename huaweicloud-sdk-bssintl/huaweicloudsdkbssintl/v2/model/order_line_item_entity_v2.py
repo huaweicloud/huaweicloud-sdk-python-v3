@@ -34,7 +34,8 @@ class OrderLineItemEntityV2:
         'category_code': 'str',
         'product_owner_service': 'str',
         'commercial_resource': 'str',
-        'base_product_info': 'ProductObject'
+        'base_product_info': 'ProductObject',
+        'order_id': 'str'
     }
 
     attribute_map = {
@@ -55,10 +56,11 @@ class OrderLineItemEntityV2:
         'category_code': 'category_code',
         'product_owner_service': 'product_owner_service',
         'commercial_resource': 'commercial_resource',
-        'base_product_info': 'base_product_info'
+        'base_product_info': 'base_product_info',
+        'order_id': 'order_id'
     }
 
-    def __init__(self, order_line_item_id=None, service_type_code=None, service_type_name=None, product_id=None, product_spec_desc=None, period_type=None, period_num=None, effective_time=None, expire_time=None, subscription_num=None, amount_after_discount=None, official_amount=None, amount_info=None, currency=None, category_code=None, product_owner_service=None, commercial_resource=None, base_product_info=None):
+    def __init__(self, order_line_item_id=None, service_type_code=None, service_type_name=None, product_id=None, product_spec_desc=None, period_type=None, period_num=None, effective_time=None, expire_time=None, subscription_num=None, amount_after_discount=None, official_amount=None, amount_info=None, currency=None, category_code=None, product_owner_service=None, commercial_resource=None, base_product_info=None, order_id=None):
         """OrderLineItemEntityV2
 
         The model defined in huaweicloud sdk
@@ -99,6 +101,8 @@ class OrderLineItemEntityV2:
         :type commercial_resource: str
         :param base_product_info: 
         :type base_product_info: :class:`huaweicloudsdkbssintl.v2.ProductObject`
+        :param order_id: 订单ID。
+        :type order_id: str
         """
         
         
@@ -121,6 +125,7 @@ class OrderLineItemEntityV2:
         self._product_owner_service = None
         self._commercial_resource = None
         self._base_product_info = None
+        self._order_id = None
         self.discriminator = None
 
         if order_line_item_id is not None:
@@ -159,6 +164,8 @@ class OrderLineItemEntityV2:
             self.commercial_resource = commercial_resource
         if base_product_info is not None:
             self.base_product_info = base_product_info
+        if order_id is not None:
+            self.order_id = order_id
 
     @property
     def order_line_item_id(self):
@@ -547,6 +554,28 @@ class OrderLineItemEntityV2:
         :type base_product_info: :class:`huaweicloudsdkbssintl.v2.ProductObject`
         """
         self._base_product_info = base_product_info
+
+    @property
+    def order_id(self):
+        """Gets the order_id of this OrderLineItemEntityV2.
+
+        订单ID。
+
+        :return: The order_id of this OrderLineItemEntityV2.
+        :rtype: str
+        """
+        return self._order_id
+
+    @order_id.setter
+    def order_id(self, order_id):
+        """Sets the order_id of this OrderLineItemEntityV2.
+
+        订单ID。
+
+        :param order_id: The order_id of this OrderLineItemEntityV2.
+        :type order_id: str
+        """
+        self._order_id = order_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -63,7 +63,7 @@ class ListPartnerCouponsRecordRequest:
         :type operation_time_begin: str
         :param operation_time_end: 操作时间（结束）。UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出操作时间小于这个时间的记录。此参数不携带或携带值为空时，不作为筛选条件；不支持携带值为空串和携带值为null。
         :type operation_time_end: str
-        :param result: 操作结果。0：成功-1：失败（非0的记录）此参数不携带或携带值为空串或携带值为空或携带值为null时，不作为筛选条件。
+        :param result: 操作结果。0：成功-1：失败（非0的记录）此参数不携带或携带值为非枚举值时，不作为筛选条件。
         :type result: str
         :param offset: 偏移量，从0开始。默认值为0。此参数不携带或携带值为空或携带值为null时，取默认值0；不支持携带值为空串。说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
         :type offset: int
@@ -269,7 +269,7 @@ class ListPartnerCouponsRecordRequest:
     def result(self):
         """Gets the result of this ListPartnerCouponsRecordRequest.
 
-        操作结果。0：成功-1：失败（非0的记录）此参数不携带或携带值为空串或携带值为空或携带值为null时，不作为筛选条件。
+        操作结果。0：成功-1：失败（非0的记录）此参数不携带或携带值为非枚举值时，不作为筛选条件。
 
         :return: The result of this ListPartnerCouponsRecordRequest.
         :rtype: str
@@ -280,7 +280,7 @@ class ListPartnerCouponsRecordRequest:
     def result(self, result):
         """Sets the result of this ListPartnerCouponsRecordRequest.
 
-        操作结果。0：成功-1：失败（非0的记录）此参数不携带或携带值为空串或携带值为空或携带值为null时，不作为筛选条件。
+        操作结果。0：成功-1：失败（非0的记录）此参数不携带或携带值为非枚举值时，不作为筛选条件。
 
         :param result: The result of this ListPartnerCouponsRecordRequest.
         :type result: str

@@ -33,7 +33,7 @@ class ListStarrocksInstanceInfoRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: GaussDBforMySQL实例ID，严格匹配UUID规则。
+        :param instance_id: TaurusDB实例ID，严格匹配UUID规则。
         :type instance_id: str
         :param starrocks_instance_id: StarRocks实例ID，严格匹配UUID规则。
         :type starrocks_instance_id: str
@@ -57,7 +57,7 @@ class ListStarrocksInstanceInfoRequest:
     def instance_id(self):
         """Gets the instance_id of this ListStarrocksInstanceInfoRequest.
 
-        GaussDBforMySQL实例ID，严格匹配UUID规则。
+        TaurusDB实例ID，严格匹配UUID规则。
 
         :return: The instance_id of this ListStarrocksInstanceInfoRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class ListStarrocksInstanceInfoRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListStarrocksInstanceInfoRequest.
 
-        GaussDBforMySQL实例ID，严格匹配UUID规则。
+        TaurusDB实例ID，严格匹配UUID规则。
 
         :param instance_id: The instance_id of this ListStarrocksInstanceInfoRequest.
         :type instance_id: str

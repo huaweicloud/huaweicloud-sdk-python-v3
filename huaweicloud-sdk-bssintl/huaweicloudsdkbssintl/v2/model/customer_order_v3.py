@@ -33,7 +33,8 @@ class CustomerOrderV3:
         'contract_id': 'str',
         'amount_info': 'AmountInfomationV2',
         'user_name': 'str',
-        'pending_payment_end_time': 'str'
+        'pending_payment_end_time': 'str',
+        'sub_order_infos': 'list[SubCustomerOrderV3]'
     }
 
     attribute_map = {
@@ -53,10 +54,11 @@ class CustomerOrderV3:
         'contract_id': 'contract_id',
         'amount_info': 'amount_info',
         'user_name': 'user_name',
-        'pending_payment_end_time': 'pending_payment_end_time'
+        'pending_payment_end_time': 'pending_payment_end_time',
+        'sub_order_infos': 'sub_order_infos'
     }
 
-    def __init__(self, order_id=None, customer_id=None, service_type_code=None, service_type_name=None, source_type=None, status=None, order_type=None, amount_after_discount=None, official_amount=None, measure_id=None, create_time=None, payment_time=None, currency=None, contract_id=None, amount_info=None, user_name=None, pending_payment_end_time=None):
+    def __init__(self, order_id=None, customer_id=None, service_type_code=None, service_type_name=None, source_type=None, status=None, order_type=None, amount_after_discount=None, official_amount=None, measure_id=None, create_time=None, payment_time=None, currency=None, contract_id=None, amount_info=None, user_name=None, pending_payment_end_time=None, sub_order_infos=None):
         """CustomerOrderV3
 
         The model defined in huaweicloud sdk
@@ -95,6 +97,8 @@ class CustomerOrderV3:
         :type user_name: str
         :param pending_payment_end_time: 订单待付款截止时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。
         :type pending_payment_end_time: str
+        :param sub_order_infos: 客户订单下属的订单详情信息。具体请参见表 SubCustomerOrderV3 说明：当查询订单为组合交易订单时，订单信息会返回下属的订单信息，当查询为普通订单时，此字段返回为空
+        :type sub_order_infos: list[:class:`huaweicloudsdkbssintl.v2.SubCustomerOrderV3`]
         """
         
         
@@ -116,6 +120,7 @@ class CustomerOrderV3:
         self._amount_info = None
         self._user_name = None
         self._pending_payment_end_time = None
+        self._sub_order_infos = None
         self.discriminator = None
 
         if order_id is not None:
@@ -152,6 +157,8 @@ class CustomerOrderV3:
             self.user_name = user_name
         if pending_payment_end_time is not None:
             self.pending_payment_end_time = pending_payment_end_time
+        if sub_order_infos is not None:
+            self.sub_order_infos = sub_order_infos
 
     @property
     def order_id(self):
@@ -522,6 +529,28 @@ class CustomerOrderV3:
         :type pending_payment_end_time: str
         """
         self._pending_payment_end_time = pending_payment_end_time
+
+    @property
+    def sub_order_infos(self):
+        """Gets the sub_order_infos of this CustomerOrderV3.
+
+        客户订单下属的订单详情信息。具体请参见表 SubCustomerOrderV3 说明：当查询订单为组合交易订单时，订单信息会返回下属的订单信息，当查询为普通订单时，此字段返回为空
+
+        :return: The sub_order_infos of this CustomerOrderV3.
+        :rtype: list[:class:`huaweicloudsdkbssintl.v2.SubCustomerOrderV3`]
+        """
+        return self._sub_order_infos
+
+    @sub_order_infos.setter
+    def sub_order_infos(self, sub_order_infos):
+        """Sets the sub_order_infos of this CustomerOrderV3.
+
+        客户订单下属的订单详情信息。具体请参见表 SubCustomerOrderV3 说明：当查询订单为组合交易订单时，订单信息会返回下属的订单信息，当查询为普通订单时，此字段返回为空
+
+        :param sub_order_infos: The sub_order_infos of this CustomerOrderV3.
+        :type sub_order_infos: list[:class:`huaweicloudsdkbssintl.v2.SubCustomerOrderV3`]
+        """
+        self._sub_order_infos = sub_order_infos
 
     def to_dict(self):
         """Returns the model properties as a dict"""

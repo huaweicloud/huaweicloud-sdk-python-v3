@@ -38,9 +38,9 @@ class CheckDataBaseConfigResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param source_database_name: GaussDB(for MySQL)数据库名称。
+        :param source_database_name: TaurusDB数据库名称。
         :type source_database_name: str
-        :param source_db_config_check_results: GaussDB(for MySQL)数据库配置检查结果。
+        :param source_db_config_check_results: TaurusDB数据库配置检查结果。
         :type source_db_config_check_results: list[:class:`huaweicloudsdkgaussdb.v3.DbConfigCheckResult`]
         :param target_database_name: 目标数据库名称。
         :type target_database_name: str
@@ -74,7 +74,7 @@ class CheckDataBaseConfigResponse(SdkResponse):
     def source_database_name(self):
         """Gets the source_database_name of this CheckDataBaseConfigResponse.
 
-        GaussDB(for MySQL)数据库名称。
+        TaurusDB数据库名称。
 
         :return: The source_database_name of this CheckDataBaseConfigResponse.
         :rtype: str
@@ -85,7 +85,7 @@ class CheckDataBaseConfigResponse(SdkResponse):
     def source_database_name(self, source_database_name):
         """Sets the source_database_name of this CheckDataBaseConfigResponse.
 
-        GaussDB(for MySQL)数据库名称。
+        TaurusDB数据库名称。
 
         :param source_database_name: The source_database_name of this CheckDataBaseConfigResponse.
         :type source_database_name: str
@@ -96,7 +96,7 @@ class CheckDataBaseConfigResponse(SdkResponse):
     def source_db_config_check_results(self):
         """Gets the source_db_config_check_results of this CheckDataBaseConfigResponse.
 
-        GaussDB(for MySQL)数据库配置检查结果。
+        TaurusDB数据库配置检查结果。
 
         :return: The source_db_config_check_results of this CheckDataBaseConfigResponse.
         :rtype: list[:class:`huaweicloudsdkgaussdb.v3.DbConfigCheckResult`]
@@ -107,7 +107,7 @@ class CheckDataBaseConfigResponse(SdkResponse):
     def source_db_config_check_results(self, source_db_config_check_results):
         """Sets the source_db_config_check_results of this CheckDataBaseConfigResponse.
 
-        GaussDB(for MySQL)数据库配置检查结果。
+        TaurusDB数据库配置检查结果。
 
         :param source_db_config_check_results: The source_db_config_check_results of this CheckDataBaseConfigResponse.
         :type source_db_config_check_results: list[:class:`huaweicloudsdkgaussdb.v3.DbConfigCheckResult`]

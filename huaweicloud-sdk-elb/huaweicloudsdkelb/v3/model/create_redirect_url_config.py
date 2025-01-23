@@ -49,7 +49,7 @@ class CreateRedirectUrlConfig:
         :type host: str
         :param port: 参数解释：重定向到的端口。  默认取值：${port}，表示继承原值（即与被转发请求保持一致）。
         :type port: str
-        :param path: 参数解释：重定向的路径。 取值范围：只能包含英文字母、数字、_~&#39;;@^-%#&amp;$.\\*+?,&#x3D;!:|\\/()\\[\\]{}，且必须以\&quot;/\&quot;开头。其中$1，$2会匹配请求url通配符星号（\\*）  默认取值：${path}，表示继承原值（即与被转发请求保持一致）。
+        :param path: 参数解释：重定向的路径。  取值范围：只能包含英文字母、数字、_~&#39;;@^-%#&amp;$.\\*+?,&#x3D;!:|\\/()\\[\\]{}，且必须以\&quot;/\&quot;开头。其中$1，$2会匹配请求url通配符星号（\\*）  默认取值：${path}，表示继承原值（即与被转发请求保持一致）。
         :type path: str
         :param query: 参数解释：重定向的查询字符串。举例如下：  将query设置为：${query}&amp;name&#x3D;my_name，则在转发符合条件的URL （如https://www.example.com:8080/elb?type&#x3D;loadbalancer）时，将会重定向到 https://www.example.com:8080/elb?type&#x3D;loadbalancer&amp;name&#x3D;my_name。在例子中${query}表示type&#x3D;loadbalancer。  取值范围：只能包含英文字母、数字和特殊字符：!$&amp;&#39;()\\*+,-./:;&#x3D;?@^_&#x60;。字母区分大小写。其中$1，$2会匹配请求url通配符星号（\\*）  默认取值：${query}表示继承原值（即与被转发请求保持一致）
         :type query: str
@@ -159,7 +159,7 @@ class CreateRedirectUrlConfig:
     def path(self):
         """Gets the path of this CreateRedirectUrlConfig.
 
-        参数解释：重定向的路径。 取值范围：只能包含英文字母、数字、_~';@^-%#&$.\\*+?,=!:|\\/()\\[\\]{}，且必须以\"/\"开头。其中$1，$2会匹配请求url通配符星号（\\*）  默认取值：${path}，表示继承原值（即与被转发请求保持一致）。
+        参数解释：重定向的路径。  取值范围：只能包含英文字母、数字、_~';@^-%#&$.\\*+?,=!:|\\/()\\[\\]{}，且必须以\"/\"开头。其中$1，$2会匹配请求url通配符星号（\\*）  默认取值：${path}，表示继承原值（即与被转发请求保持一致）。
 
         :return: The path of this CreateRedirectUrlConfig.
         :rtype: str
@@ -170,7 +170,7 @@ class CreateRedirectUrlConfig:
     def path(self, path):
         """Sets the path of this CreateRedirectUrlConfig.
 
-        参数解释：重定向的路径。 取值范围：只能包含英文字母、数字、_~';@^-%#&$.\\*+?,=!:|\\/()\\[\\]{}，且必须以\"/\"开头。其中$1，$2会匹配请求url通配符星号（\\*）  默认取值：${path}，表示继承原值（即与被转发请求保持一致）。
+        参数解释：重定向的路径。  取值范围：只能包含英文字母、数字、_~';@^-%#&$.\\*+?,=!:|\\/()\\[\\]{}，且必须以\"/\"开头。其中$1，$2会匹配请求url通配符星号（\\*）  默认取值：${path}，表示继承原值（即与被转发请求保持一致）。
 
         :param path: The path of this CreateRedirectUrlConfig.
         :type path: str

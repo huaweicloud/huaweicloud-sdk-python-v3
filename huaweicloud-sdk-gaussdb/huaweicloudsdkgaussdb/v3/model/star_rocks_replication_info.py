@@ -43,7 +43,7 @@ class StarRocksReplicationInfo:
 
         The model defined in huaweicloud sdk
 
-        :param source_database: GaussDB(for MySQL)数据库。
+        :param source_database: TaurusDB数据库。
         :type source_database: str
         :param target_database: 目标数据库。
         :type target_database: str
@@ -94,7 +94,7 @@ class StarRocksReplicationInfo:
     def source_database(self):
         """Gets the source_database of this StarRocksReplicationInfo.
 
-        GaussDB(for MySQL)数据库。
+        TaurusDB数据库。
 
         :return: The source_database of this StarRocksReplicationInfo.
         :rtype: str
@@ -105,7 +105,7 @@ class StarRocksReplicationInfo:
     def source_database(self, source_database):
         """Sets the source_database of this StarRocksReplicationInfo.
 
-        GaussDB(for MySQL)数据库。
+        TaurusDB数据库。
 
         :param source_database: The source_database of this StarRocksReplicationInfo.
         :type source_database: str

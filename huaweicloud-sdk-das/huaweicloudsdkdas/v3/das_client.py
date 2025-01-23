@@ -1425,6 +1425,8 @@ class DasClient(Client):
             query_params.append(('datastore_type', local_var_params['datastore_type']))
         if 'num' in local_var_params:
             query_params.append(('num', local_var_params['num']))
+        if 'metric_code' in local_var_params:
+            query_params.append(('metric_code', local_var_params['metric_code']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -1904,6 +1906,282 @@ class DasClient(Client):
 
         return http_info
 
+    def list_instance_distribution(self, request):
+        """查询实例分布情况
+
+        查询实例分布情况
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListInstanceDistribution
+        :type request: :class:`huaweicloudsdkdas.v3.ListInstanceDistributionRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ListInstanceDistributionResponse`
+        """
+        http_info = self._list_instance_distribution_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_instance_distribution_invoker(self, request):
+        http_info = self._list_instance_distribution_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_instance_distribution_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/distribution",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstanceDistributionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'datastore_type' in local_var_params:
+            query_params.append(('datastore_type', local_var_params['datastore_type']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_instance_multi_nodes_single_metric(self, request):
+        """获取多节点单指标数据
+
+        获取多节点单指标数据
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListInstanceMultiNodesSingleMetric
+        :type request: :class:`huaweicloudsdkdas.v3.ListInstanceMultiNodesSingleMetricRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ListInstanceMultiNodesSingleMetricResponse`
+        """
+        http_info = self._list_instance_multi_nodes_single_metric_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_instance_multi_nodes_single_metric_invoker(self, request):
+        http_info = self._list_instance_multi_nodes_single_metric_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_instance_multi_nodes_single_metric_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/multi-nodes/single-metric",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstanceMultiNodesSingleMetricResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_instance_nodes_info(self, request):
+        """获取单个实例节点信息
+
+        获取单个实例节点信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListInstanceNodesInfo
+        :type request: :class:`huaweicloudsdkdas.v3.ListInstanceNodesInfoRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ListInstanceNodesInfoResponse`
+        """
+        http_info = self._list_instance_nodes_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_instance_nodes_info_invoker(self, request):
+        http_info = self._list_instance_nodes_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_instance_nodes_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instance/nodes-info",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstanceNodesInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+        if 'datastore_type' in local_var_params:
+            query_params.append(('datastore_type', local_var_params['datastore_type']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_instance_top_slow_log(self, request):
+        """查询实例的TOP慢SQL列表
+
+        查询实例的TOP慢SQL列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListInstanceTopSlowLog
+        :type request: :class:`huaweicloudsdkdas.v3.ListInstanceTopSlowLogRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ListInstanceTopSlowLogResponse`
+        """
+        http_info = self._list_instance_top_slow_log_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_instance_top_slow_log_invoker(self, request):
+        http_info = self._list_instance_top_slow_log_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_instance_top_slow_log_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/top-slow-log",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstanceTopSlowLogResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'num' in local_var_params:
+            query_params.append(('num', local_var_params['num']))
+        if 'start_at' in local_var_params:
+            query_params.append(('start_at', local_var_params['start_at']))
+        if 'end_at' in local_var_params:
+            query_params.append(('end_at', local_var_params['end_at']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_metadata_locks(self, request):
         """查询元数据锁列表
 
@@ -2060,6 +2338,146 @@ class DasClient(Client):
 
         return http_info
 
+    def list_risk_items(self, request):
+        """查询资源风险实例风险项
+
+        查询资源风险实例风险项
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListRiskItems
+        :type request: :class:`huaweicloudsdkdas.v3.ListRiskItemsRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ListRiskItemsResponse`
+        """
+        http_info = self._list_risk_items_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_risk_items_invoker(self, request):
+        http_info = self._list_risk_items_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_risk_items_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/get-risk-items",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRiskItemsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'datastore_type' in local_var_params:
+            query_params.append(('datastore_type', local_var_params['datastore_type']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_risk_trend(self, request):
+        """查询资源风险实例风险趋势
+
+        查询资源风险实例风险趋势
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListRiskTrend
+        :type request: :class:`huaweicloudsdkdas.v3.ListRiskTrendRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ListRiskTrendResponse`
+        """
+        http_info = self._list_risk_trend_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_risk_trend_invoker(self, request):
+        http_info = self._list_risk_trend_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_risk_trend_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/risk-trend",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRiskTrendResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'datastore_type' in local_var_params:
+            query_params.append(('datastore_type', local_var_params['datastore_type']))
+        if 'start_at' in local_var_params:
+            query_params.append(('start_at', local_var_params['start_at']))
+        if 'end_at' in local_var_params:
+            query_params.append(('end_at', local_var_params['end_at']))
+        if 'metric_code' in local_var_params:
+            query_params.append(('metric_code', local_var_params['metric_code']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_space_analysis(self, request):
         """获取空间分析数据列表
 
@@ -2185,6 +2603,77 @@ class DasClient(Client):
             query_params.append(('datastore_type', local_var_params['datastore_type']))
         if 'database_name' in local_var_params:
             query_params.append(('database_name', local_var_params['database_name']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_top_slow_log(self, request):
+        """查询TOP慢SQL列表
+
+        查询TOP慢SQL列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListTopSlowLog
+        :type request: :class:`huaweicloudsdkdas.v3.ListTopSlowLogRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ListTopSlowLogResponse`
+        """
+        http_info = self._list_top_slow_log_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_top_slow_log_invoker(self, request):
+        http_info = self._list_top_slow_log_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_top_slow_log_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/top-slow-log",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTopSlowLogResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'num' in local_var_params:
+            query_params.append(('num', local_var_params['num']))
+        if 'start_at' in local_var_params:
+            query_params.append(('start_at', local_var_params['start_at']))
+        if 'end_at' in local_var_params:
+            query_params.append(('end_at', local_var_params['end_at']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -2439,6 +2928,73 @@ class DasClient(Client):
 
         return http_info
 
+    def set_threshold_for_metric(self, request):
+        """设置指标阈值
+
+        设置指标阈值
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SetThresholdForMetric
+        :type request: :class:`huaweicloudsdkdas.v3.SetThresholdForMetricRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.SetThresholdForMetricResponse`
+        """
+        http_info = self._set_threshold_for_metric_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_threshold_for_metric_invoker(self, request):
+        http_info = self._set_threshold_for_metric_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _set_threshold_for_metric_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/set-metric-threshold",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetThresholdForMetricResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_db_user(self, request):
         """查询数据库用户信息
 
@@ -2549,6 +3105,71 @@ class DasClient(Client):
         query_params = []
         if 'task_id' in local_var_params:
             query_params.append(('task_id', local_var_params['task_id']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_metric_names_support(self, request):
+        """多节点单指标支持指标信息
+
+        多节点单指标支持指标信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowMetricNamesSupport
+        :type request: :class:`huaweicloudsdkdas.v3.ShowMetricNamesSupportRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ShowMetricNamesSupportResponse`
+        """
+        http_info = self._show_metric_names_support_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_metric_names_support_invoker(self, request):
+        http_info = self._show_metric_names_support_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_metric_names_support_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/metric-names/support",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMetricNamesSupportResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
 
         header_params = {}
         if 'x_language' in local_var_params:

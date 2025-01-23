@@ -1,3 +1,449 @@
+# 3.1.133 2025-01-23
+
+### HuaweiCloud SDK BSS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListCustomerselfResourceRecords**
+    - changes of response param
+      - `+ fee_records.relative_order_id`
+  - **ListSubCustomers**
+    - changes of response param
+      - `+ customer_infos.email`
+  - **ListCustomerselfResourceRecordDetails**
+    - changes of response param
+      - `+ monthly_records.be_id`
+  - **ListCustomerOrders**
+    - changes of response param
+      - `+ order_infos.sub_order_infos`
+  - **ShowCustomerOrderDetails**
+    - changes of response param
+      - `+ order_line_items.order_id`
+      - `+ order_info.sub_order_infos`
+
+### HuaweiCloud SDK BSSINTL
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListCustomerselfResourceRecords**
+    - changes of response param
+      - `+ fee_records.relative_order_id`
+  - **ListSubCustomers**
+    - changes of response param
+      - `+ customer_infos.email`
+  - **ListCustomerselfResourceRecordDetails**
+    - changes of response param
+      - `+ monthly_records.be_id`
+  - **ListCustomerOrders**
+    - changes of response param
+      - `+ order_infos.sub_order_infos`
+  - **ShowCustomerOrderDetails**
+    - changes of response param
+      - `+ order_line_items.order_id`
+      - `+ order_info.sub_order_infos`
+
+### HuaweiCloud SDK COC
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the API `ListPrrTemplate`
+
+### HuaweiCloud SDK DAS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `ListInstanceDistribution`
+    - `ListTopSlowLog`
+    - `ListInstanceTopSlowLog`
+    - `ShowMetricNamesSupport`
+    - `ListInstanceNodesInfo`
+    - `ListInstanceMultiNodesSingleMetric`
+    - `ListRiskItems`
+    - `ListRiskTrend`
+    - `SetThresholdForMetric`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ExportTopRiskInstances**
+    - changes of request param
+      - `+ metric_code`
+
+### HuaweiCloud SDK DCS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ResetPassword**
+    - changes of response param
+      - `+ code`
+      - `+ message`
+      - `+ ext_message`
+  - **ListSlowlog**
+    - changes of response param
+      - `+ slowlogs.node_role`
+      - `+ slowlogs.client_ip`
+
+### HuaweiCloud SDK DDM
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowInstance**
+    - changes of response param
+      - `+ flavor_ref`
+      - `+ enable_ssl`
+  - **ShowInstanceParam**
+    - changes of response param
+      - `+ name`
+      - `+ description`
+      - `+ id`
+
+### HuaweiCloud SDK ELB
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `UpgradeLoadbalancer`
+    - `BatchCreateLoadBalancers`
+    - `DeleteLoadBalancerCascade`
+    - `ShowIpGroupRelatedListeners`
+    - `DeletePoolCascade`
+    - `CloneLoadbalancer`
+    - `ListJobs`
+    - `ShowJob`
+    - `ListFeatureConfigs`
+    - `ListLoadbalancerFeature`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowQuota**
+    - changes of response param
+      - `+ quota.ipgroups_per_listener`
+      - `+ quota.pools_per_l7policy`
+      - `+ quota.l7policies_per_listener`
+  - **ListAvailabilityZones**
+    - changes of request param
+      - `+ loadbalancer_id`
+  - **CountPreoccupyIpNum**
+    - changes of request param
+      - `+ scene`
+      - `+ nat64_enable`
+  - **ListCertificates**
+    - changes of request param
+      - `+ scm_certificate_id`
+    - changes of response param
+      - `+ certificates.scm_certificate_id`
+  - **CreateCertificate**
+    - changes of request param
+      - `+ certificate.scm_certificate_id`
+    - changes of response param
+      - `+ certificate.scm_certificate_id`
+  - **ShowCertificate**
+    - changes of response param
+      - `+ certificate.scm_certificate_id`
+  - **UpdateCertificate**
+    - changes of response param
+      - `+ certificate.scm_certificate_id`
+  - **ListFlavors**
+    - changes of request param
+      - `+ loadbalancer_type`
+      - `+ public_border_group`
+      - `+ category`
+      - `+ list_all`
+      - `+ flavor_sold_out`
+  - **ShowLoadBalancer**
+    - changes of response param
+      - `+ loadbalancer.service_lb_mode`
+      - `+ loadbalancer.instance_type`
+      - `+ loadbalancer.instance_id`
+      - `+ loadbalancer.proxy_protocol_extensions`
+  - **UpdateLoadBalancer**
+    - changes of request param
+      - `+ loadbalancer.proxy_protocol_extensions`
+      - `+ loadbalancer.vip_port_id`
+      - `+ loadbalancer.ipv6_vip_port_id`
+    - changes of response param
+      - `+ loadbalancer.service_lb_mode`
+      - `+ loadbalancer.instance_type`
+      - `+ loadbalancer.instance_id`
+      - `+ loadbalancer.proxy_protocol_extensions`
+  - **BatchAddAvailableZones**
+    - changes of response param
+      - `+ loadbalancer.service_lb_mode`
+      - `+ loadbalancer.instance_type`
+      - `+ loadbalancer.instance_id`
+      - `+ loadbalancer.proxy_protocol_extensions`
+  - **BatchRemoveAvailableZones**
+    - changes of response param
+      - `+ loadbalancer.service_lb_mode`
+      - `+ loadbalancer.instance_type`
+      - `+ loadbalancer.instance_id`
+      - `+ loadbalancer.proxy_protocol_extensions`
+  - **ListListeners**
+    - changes of request param
+      - `+ ssl_early_data_enable`
+      - `+ nat64_enable`
+    - changes of response param
+      - `+ listeners.enterprise_project_id`
+      - `+ listeners.cps`
+      - `+ listeners.connection`
+      - `+ listeners.nat64_enable`
+  - **CreateListener**
+    - changes of request param
+      - `+ listener.cps`
+      - `+ listener.connection`
+      - `+ listener.nat64_enable`
+    - changes of response param
+      - `+ listener.enterprise_project_id`
+      - `+ listener.cps`
+      - `+ listener.connection`
+      - `+ listener.nat64_enable`
+  - **ShowListener**
+    - changes of response param
+      - `+ listener.enterprise_project_id`
+      - `+ listener.cps`
+      - `+ listener.connection`
+      - `+ listener.nat64_enable`
+  - **UpdateListener**
+    - changes of request param
+      - `+ listener.cps`
+      - `+ listener.connection`
+      - `+ listener.nat64_enable`
+    - changes of response param
+      - `+ listener.enterprise_project_id`
+      - `+ listener.cps`
+      - `+ listener.connection`
+      - `+ listener.nat64_enable`
+  - **ListPools**
+    - changes of request param
+      - `+ quic_cid_len`
+      - `+ quic_cid_offset`
+    - changes of response param
+      - `+ pools.quic_cid_hash_strategy`
+  - **CreatePool**
+    - changes of request param
+      - `+ pool.quic_cid_hash_strategy`
+      - `- pool.target_rebalance`
+    - changes of response param
+      - `+ pool.quic_cid_hash_strategy`
+  - **ShowPool**
+    - changes of response param
+      - `+ pool.quic_cid_hash_strategy`
+  - **UpdatePool**
+    - changes of request param
+      - `+ pool.quic_cid_hash_strategy`
+    - changes of response param
+      - `+ pool.quic_cid_hash_strategy`
+  - **ListMembers**
+    - changes of response param
+      - `+ members.reason`
+      - `+ members.status.reason`
+  - **CreateMember**
+    - changes of response param
+      - `+ member.reason`
+      - `+ member.status.reason`
+  - **ShowMember**
+    - changes of response param
+      - `+ member.reason`
+      - `+ member.status.reason`
+  - **UpdateMember**
+    - changes of response param
+      - `+ member.reason`
+      - `+ member.status.reason`
+  - **ListAllMembers**
+    - changes of response param
+      - `+ members.reason`
+      - `+ members.status.reason`
+  - **BatchCreateMembers**
+    - changes of response param
+      - `+ members.reason`
+      - `+ members.status.reason`
+  - **BatchUpdateMembers**
+    - changes of response param
+      - `+ members.reason`
+      - `+ members.status.reason`
+  - **ListLoadBalancers**
+    - changes of response param
+      - `+ loadbalancers.service_lb_mode`
+      - `+ loadbalancers.instance_type`
+      - `+ loadbalancers.instance_id`
+      - `+ loadbalancers.proxy_protocol_extensions`
+  - **CreateLoadBalancer**
+    - changes of request param
+      - `+ loadbalancer.service_lb_mode`
+      - `+ loadbalancer.instance_type`
+      - `+ loadbalancer.instance_id`
+      - `+ loadbalancer.proxy_protocol_extensions`
+    - changes of response param
+      - `+ loadbalancer.service_lb_mode`
+      - `+ loadbalancer.instance_type`
+      - `+ loadbalancer.instance_id`
+      - `+ loadbalancer.proxy_protocol_extensions`
+  - **ListMasterSlavePools**
+    - changes of response param
+      - `+ pools.quic_cid_hash_strategy`
+      - `+ pools.members.reason`
+  - **CreateMasterSlavePool**
+    - changes of request param
+      - `+ pool.quic_cid_hash_strategy`
+    - changes of response param
+      - `+ pool.quic_cid_hash_strategy`
+      - `+ pool.members.reason`
+  - **ShowMasterSlavePool**
+    - changes of response param
+      - `+ pool.quic_cid_hash_strategy`
+      - `+ pool.members.reason`
+  - **ListL7Policies**
+    - changes of response param
+      - `+ l7policies.enterprise_project_id`
+      - `+ l7policies.redirect_pools_extend_config.cors_config`
+  - **CreateL7Policy**
+    - changes of request param
+      - `+ l7policy.redirect_pools_extend_config.cors_config`
+    - changes of response param
+      - `+ l7policy.enterprise_project_id`
+      - `+ l7policy.redirect_pools_extend_config.cors_config`
+  - **ShowL7Policy**
+    - changes of response param
+      - `+ l7policy.enterprise_project_id`
+      - `+ l7policy.redirect_pools_extend_config.cors_config`
+  - **UpdateL7Policy**
+    - changes of request param
+      - `+ l7policy.redirect_pools_extend_config.cors_config`
+    - changes of response param
+      - `+ l7policy.enterprise_project_id`
+      - `+ l7policy.redirect_pools_extend_config.cors_config`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateFunction**
+    - changes of request param
+      - `+ lts_custom_tag`
+    - changes of response param
+      - `+ lts_custom_tag`
+  - **ShowFunctionConfig**
+    - changes of response param
+      - `+ peering_cidr`
+      - `+ lts_custom_tag`
+  - **UpdateFunctionConfig**
+    - changes of request param
+      - `+ peering_cidr`
+      - `+ lts_custom_tag`
+    - changes of response param
+      - `+ peering_cidr`
+      - `+ lts_custom_tag`
+
+### HuaweiCloud SDK MetaStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateTtsAudition**
+    - changes of request param
+      - `+ channels`
+  - **CreateAsyncTtsJob**
+    - changes of request param
+      - `+ channels`
+      - `+ output_external_url`
+      - `+ srt_output_external_url`
+      - `+ action_output_external_url`
+  - **CreateSmartChatRoom**
+    - changes of request param
+      - `+ video_config.output_external_url`
+  - **ShowSmartChatRoom**
+    - changes of response param
+      - `+ video_config.output_external_url`
+  - **UpdateSmartChatRoom**
+    - changes of request param
+      - `+ video_config.output_external_url`
+    - changes of response param
+      - `+ video_config.output_external_url`
+  - **StartSmartLive**
+    - changes of request param
+      - `+ video_config.output_external_url`
+  - **Create2DDigitalHumanVideo**
+    - changes of request param
+      - `+ video_config.output_external_url`
+      - `+ shoot_scripts.shoot_script.audio_drive_file_external_url`
+      - `+ shoot_scripts.shoot_script.audio_config`
+  - **Show2DDigitalHumanVideo**
+    - changes of response param
+      - `+ video_config.output_external_url`
+      - `+ shoot_scripts.shoot_script.audio_drive_file_external_url`
+      - `+ shoot_scripts.shoot_script.audio_config`
+  - **CreatePhotoDigitalHumanVideo**
+    - changes of request param
+      - `+ shoot_scripts.shoot_script.audio_drive_file_external_url`
+      - `+ shoot_scripts.shoot_script.audio_config`
+  - **ShowPhotoDigitalHumanVideo**
+    - changes of response param
+      - `+ shoot_scripts.shoot_script.audio_drive_file_external_url`
+      - `+ shoot_scripts.shoot_script.audio_config`
+  - **CreateSmartLiveRoom**
+    - changes of request param
+      - `+ video_config.output_external_url`
+  - **ShowSmartLiveRoom**
+    - changes of response param
+      - `+ video_config.output_external_url`
+  - **UpdateSmartLiveRoom**
+    - changes of request param
+      - `+ video_config.output_external_url`
+    - changes of response param
+      - `+ video_config.output_external_url`
+  - **CreateVideoScripts**
+    - changes of request param
+      - `+ video_config.output_external_url`
+      - `+ shoot_scripts.shoot_script.audio_drive_file_external_url`
+      - `+ shoot_scripts.shoot_script.audio_config`
+  - **ShowVideoScript**
+    - changes of response param
+      - `+ video_config.output_external_url`
+      - `+ shoot_scripts.audio_config`
+      - `+ shoot_scripts.shoot_script.audio_drive_file_external_url`
+      - `+ shoot_scripts.shoot_script.audio_config`
+  - **UpdateVideoScript**
+    - changes of request param
+      - `+ video_config.output_external_url`
+      - `+ shoot_scripts.shoot_script.audio_drive_file_external_url`
+      - `+ shoot_scripts.shoot_script.audio_config`
+
 # 3.1.132 2025-01-16
 
 ### HuaweiCloud SDK COC

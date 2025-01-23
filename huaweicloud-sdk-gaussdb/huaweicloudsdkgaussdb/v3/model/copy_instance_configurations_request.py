@@ -39,7 +39,7 @@ class CopyInstanceConfigurationsRequest:
         :type x_language: str
         :param instance_id: 实例ID，严格匹配UUID规则。
         :type instance_id: str
-        :param configuration_id: 参数组ID。  通过调用[查询实例详情信息](https://support.huaweicloud.com/api-gaussdbformysql/ShowGaussMySqlInstanceInfo.html)接口获取。  请求响应成功后在响应消息体中包含的“configuration_id”的值即为configuration_id值。
+        :param configuration_id: 参数组ID。  通过调用[查询实例详情信息](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlInstanceInfo.html)接口获取。  请求响应成功后在响应消息体中包含的“configuration_id”的值即为configuration_id值。
         :type configuration_id: str
         :param body: Body of the CopyInstanceConfigurationsRequest
         :type body: :class:`huaweicloudsdkgaussdb.v3.CopyInstanceConfigurationsRequestBody`
@@ -108,7 +108,7 @@ class CopyInstanceConfigurationsRequest:
     def configuration_id(self):
         """Gets the configuration_id of this CopyInstanceConfigurationsRequest.
 
-        参数组ID。  通过调用[查询实例详情信息](https://support.huaweicloud.com/api-gaussdbformysql/ShowGaussMySqlInstanceInfo.html)接口获取。  请求响应成功后在响应消息体中包含的“configuration_id”的值即为configuration_id值。
+        参数组ID。  通过调用[查询实例详情信息](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlInstanceInfo.html)接口获取。  请求响应成功后在响应消息体中包含的“configuration_id”的值即为configuration_id值。
 
         :return: The configuration_id of this CopyInstanceConfigurationsRequest.
         :rtype: str
@@ -119,7 +119,7 @@ class CopyInstanceConfigurationsRequest:
     def configuration_id(self, configuration_id):
         """Sets the configuration_id of this CopyInstanceConfigurationsRequest.
 
-        参数组ID。  通过调用[查询实例详情信息](https://support.huaweicloud.com/api-gaussdbformysql/ShowGaussMySqlInstanceInfo.html)接口获取。  请求响应成功后在响应消息体中包含的“configuration_id”的值即为configuration_id值。
+        参数组ID。  通过调用[查询实例详情信息](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlInstanceInfo.html)接口获取。  请求响应成功后在响应消息体中包含的“configuration_id”的值即为configuration_id值。
 
         :param configuration_id: The configuration_id of this CopyInstanceConfigurationsRequest.
         :type configuration_id: str

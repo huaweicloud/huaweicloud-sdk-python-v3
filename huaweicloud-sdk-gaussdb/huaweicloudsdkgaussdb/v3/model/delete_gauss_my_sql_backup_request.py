@@ -33,7 +33,7 @@ class DeleteGaussMySqlBackupRequest:
 
         :param x_language: 语言。
         :type x_language: str
-        :param backup_id: 备份文件ID。  获取方法参见[查询备份列表](https://support.huaweicloud.com/api-gaussdbformysql/ShowGaussMySqlBackupList.html)。
+        :param backup_id: 备份文件ID。  获取方法参见[查询备份列表](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlBackupList.html)。
         :type backup_id: str
         """
         
@@ -73,7 +73,7 @@ class DeleteGaussMySqlBackupRequest:
     def backup_id(self):
         """Gets the backup_id of this DeleteGaussMySqlBackupRequest.
 
-        备份文件ID。  获取方法参见[查询备份列表](https://support.huaweicloud.com/api-gaussdbformysql/ShowGaussMySqlBackupList.html)。
+        备份文件ID。  获取方法参见[查询备份列表](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlBackupList.html)。
 
         :return: The backup_id of this DeleteGaussMySqlBackupRequest.
         :rtype: str
@@ -84,7 +84,7 @@ class DeleteGaussMySqlBackupRequest:
     def backup_id(self, backup_id):
         """Sets the backup_id of this DeleteGaussMySqlBackupRequest.
 
-        备份文件ID。  获取方法参见[查询备份列表](https://support.huaweicloud.com/api-gaussdbformysql/ShowGaussMySqlBackupList.html)。
+        备份文件ID。  获取方法参见[查询备份列表](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlBackupList.html)。
 
         :param backup_id: The backup_id of this DeleteGaussMySqlBackupRequest.
         :type backup_id: str

@@ -87,7 +87,7 @@ class MysqlInstanceListInfoUnifyStatus:
         :type status: str
         :param private_ips: 实例写内网IP地址列表。弹性云服务器创建成功后该值存在，其他情况下为空字列表。
         :type private_ips: list[str]
-        :param proxy_ips: 实例读写分离IP地址列表。GaussDB(for MySQL)实例开启代理成功后该值存在，其他情况下为空列表。
+        :param proxy_ips: 实例读写分离IP地址列表。TaurusDB实例开启代理成功后该值存在，其他情况下为空列表。
         :type proxy_ips: list[str]
         :param readonly_private_ips: 实例读内网IP地址列表。弹性云服务器创建成功后该值存在，其他情况下为空列表。
         :type readonly_private_ips: list[str]
@@ -306,7 +306,7 @@ class MysqlInstanceListInfoUnifyStatus:
     def proxy_ips(self):
         """Gets the proxy_ips of this MysqlInstanceListInfoUnifyStatus.
 
-        实例读写分离IP地址列表。GaussDB(for MySQL)实例开启代理成功后该值存在，其他情况下为空列表。
+        实例读写分离IP地址列表。TaurusDB实例开启代理成功后该值存在，其他情况下为空列表。
 
         :return: The proxy_ips of this MysqlInstanceListInfoUnifyStatus.
         :rtype: list[str]
@@ -317,7 +317,7 @@ class MysqlInstanceListInfoUnifyStatus:
     def proxy_ips(self, proxy_ips):
         """Sets the proxy_ips of this MysqlInstanceListInfoUnifyStatus.
 
-        实例读写分离IP地址列表。GaussDB(for MySQL)实例开启代理成功后该值存在，其他情况下为空列表。
+        实例读写分离IP地址列表。TaurusDB实例开启代理成功后该值存在，其他情况下为空列表。
 
         :param proxy_ips: The proxy_ips of this MysqlInstanceListInfoUnifyStatus.
         :type proxy_ips: list[str]

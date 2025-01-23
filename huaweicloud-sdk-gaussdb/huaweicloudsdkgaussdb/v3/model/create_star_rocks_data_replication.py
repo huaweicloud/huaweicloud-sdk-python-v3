@@ -37,9 +37,9 @@ class CreateStarRocksDataReplication:
 
         The model defined in huaweicloud sdk
 
-        :param source_instance_id: GaussDB(for MySQL)实例ID。
+        :param source_instance_id: TaurusDB实例ID。
         :type source_instance_id: str
-        :param source_node_id: GaussDB(for MySQL)只读节点ID。如为空，则取GaussDB(for MySQL)主节点ID
+        :param source_node_id: TaurusDB只读节点ID。如为空，则取TaurusDB主节点ID
         :type source_node_id: str
         :param source_database: 源数据库。
         :type source_database: str
@@ -69,7 +69,7 @@ class CreateStarRocksDataReplication:
     def source_instance_id(self):
         """Gets the source_instance_id of this CreateStarRocksDataReplication.
 
-        GaussDB(for MySQL)实例ID。
+        TaurusDB实例ID。
 
         :return: The source_instance_id of this CreateStarRocksDataReplication.
         :rtype: str
@@ -80,7 +80,7 @@ class CreateStarRocksDataReplication:
     def source_instance_id(self, source_instance_id):
         """Sets the source_instance_id of this CreateStarRocksDataReplication.
 
-        GaussDB(for MySQL)实例ID。
+        TaurusDB实例ID。
 
         :param source_instance_id: The source_instance_id of this CreateStarRocksDataReplication.
         :type source_instance_id: str
@@ -91,7 +91,7 @@ class CreateStarRocksDataReplication:
     def source_node_id(self):
         """Gets the source_node_id of this CreateStarRocksDataReplication.
 
-        GaussDB(for MySQL)只读节点ID。如为空，则取GaussDB(for MySQL)主节点ID
+        TaurusDB只读节点ID。如为空，则取TaurusDB主节点ID
 
         :return: The source_node_id of this CreateStarRocksDataReplication.
         :rtype: str
@@ -102,7 +102,7 @@ class CreateStarRocksDataReplication:
     def source_node_id(self, source_node_id):
         """Sets the source_node_id of this CreateStarRocksDataReplication.
 
-        GaussDB(for MySQL)只读节点ID。如为空，则取GaussDB(for MySQL)主节点ID
+        TaurusDB只读节点ID。如为空，则取TaurusDB主节点ID
 
         :param source_node_id: The source_node_id of this CreateStarRocksDataReplication.
         :type source_node_id: str

@@ -24,7 +24,8 @@ class CreateTtsAuditionRequestBody:
         'pitch': 'int',
         'volume': 'int',
         'business_type': 'str',
-        'style': 'str'
+        'style': 'str',
+        'channels': 'int'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class CreateTtsAuditionRequestBody:
         'pitch': 'pitch',
         'volume': 'volume',
         'business_type': 'business_type',
-        'style': 'style'
+        'style': 'style',
+        'channels': 'channels'
     }
 
-    def __init__(self, text=None, tts_text=None, emotion=None, speed=None, pitch=None, volume=None, business_type=None, style=None):
+    def __init__(self, text=None, tts_text=None, emotion=None, speed=None, pitch=None, volume=None, business_type=None, style=None, channels=None):
         """CreateTtsAuditionRequestBody
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class CreateTtsAuditionRequestBody:
         :type business_type: str
         :param style: 风格情感
         :type style: str
+        :param channels: 声道。（单声道|双声道） 默认值1，最小值1，最大值2。
+        :type channels: int
         """
         
         
@@ -71,6 +75,7 @@ class CreateTtsAuditionRequestBody:
         self._volume = None
         self._business_type = None
         self._style = None
+        self._channels = None
         self.discriminator = None
 
         self.text = text
@@ -87,6 +92,8 @@ class CreateTtsAuditionRequestBody:
             self.business_type = business_type
         if style is not None:
             self.style = style
+        if channels is not None:
+            self.channels = channels
 
     @property
     def text(self):
@@ -263,6 +270,28 @@ class CreateTtsAuditionRequestBody:
         :type style: str
         """
         self._style = style
+
+    @property
+    def channels(self):
+        """Gets the channels of this CreateTtsAuditionRequestBody.
+
+        声道。（单声道|双声道） 默认值1，最小值1，最大值2。
+
+        :return: The channels of this CreateTtsAuditionRequestBody.
+        :rtype: int
+        """
+        return self._channels
+
+    @channels.setter
+    def channels(self, channels):
+        """Sets the channels of this CreateTtsAuditionRequestBody.
+
+        声道。（单声道|双声道） 默认值1，最小值1，最大值2。
+
+        :param channels: The channels of this CreateTtsAuditionRequestBody.
+        :type channels: int
+        """
+        self._channels = channels
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -31,7 +31,8 @@ class CustomerInformation:
         'account_managers': 'list[AccountManager]',
         'xaccount_id': 'str',
         'xaccount_type': 'str',
-        'customer_level': 'str'
+        'customer_level': 'str',
+        'email': 'str'
     }
 
     attribute_map = {
@@ -49,10 +50,11 @@ class CustomerInformation:
         'account_managers': 'account_managers',
         'xaccount_id': 'xaccount_id',
         'xaccount_type': 'xaccount_type',
-        'customer_level': 'customer_level'
+        'customer_level': 'customer_level',
+        'email': 'email'
     }
 
-    def __init__(self, customer=None, account_name=None, customer_id=None, associated_on=None, association_type=None, label=None, telephone=None, verified_status=None, country_code=None, customer_type=None, is_frozen=None, account_managers=None, xaccount_id=None, xaccount_type=None, customer_level=None):
+    def __init__(self, customer=None, account_name=None, customer_id=None, associated_on=None, association_type=None, label=None, telephone=None, verified_status=None, country_code=None, customer_type=None, is_frozen=None, account_managers=None, xaccount_id=None, xaccount_type=None, customer_level=None, email=None):
         """CustomerInformation
 
         The model defined in huaweicloud sdk
@@ -87,6 +89,8 @@ class CustomerInformation:
         :type xaccount_type: str
         :param customer_level: 客户等级。具体等级体系和权益请参见客户等级体系。 V0V1V2V3V4V5
         :type customer_level: str
+        :param email: |参数名称：客户邮箱| |参数的约束及描述：该参数为字符串 范围限制:0-256。|
+        :type email: str
         """
         
         
@@ -106,6 +110,7 @@ class CustomerInformation:
         self._xaccount_id = None
         self._xaccount_type = None
         self._customer_level = None
+        self._email = None
         self.discriminator = None
 
         if customer is not None:
@@ -136,6 +141,8 @@ class CustomerInformation:
             self.xaccount_type = xaccount_type
         if customer_level is not None:
             self.customer_level = customer_level
+        if email is not None:
+            self.email = email
 
     @property
     def customer(self):
@@ -466,6 +473,28 @@ class CustomerInformation:
         :type customer_level: str
         """
         self._customer_level = customer_level
+
+    @property
+    def email(self):
+        """Gets the email of this CustomerInformation.
+
+        |参数名称：客户邮箱| |参数的约束及描述：该参数为字符串 范围限制:0-256。|
+
+        :return: The email of this CustomerInformation.
+        :rtype: str
+        """
+        return self._email
+
+    @email.setter
+    def email(self, email):
+        """Sets the email of this CustomerInformation.
+
+        |参数名称：客户邮箱| |参数的约束及描述：该参数为字符串 范围限制:0-256。|
+
+        :param email: The email of this CustomerInformation.
+        :type email: str
+        """
+        self._email = email
 
     def to_dict(self):
         """Returns the model properties as a dict"""

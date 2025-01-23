@@ -33,7 +33,7 @@ class ActionsList:
 
         :param confidence: 置信度，取值范围0～1。
         :type confidence: float
-        :param action: 动作编号，取值范围：[1,2,3,4]，其中： • 1：左摇头 • 2：右摇头 • 3：点头 • 4：嘴部动作
+        :param action: 动作编号，取值范围：[1,2,3,4,5]，其中： • 1：左摇头 • 2：右摇头 • 3：点头 • 4：嘴部动作 • 5：眨眼
         :type action: int
         """
         
@@ -73,7 +73,7 @@ class ActionsList:
     def action(self):
         """Gets the action of this ActionsList.
 
-        动作编号，取值范围：[1,2,3,4]，其中： • 1：左摇头 • 2：右摇头 • 3：点头 • 4：嘴部动作
+        动作编号，取值范围：[1,2,3,4,5]，其中： • 1：左摇头 • 2：右摇头 • 3：点头 • 4：嘴部动作 • 5：眨眼
 
         :return: The action of this ActionsList.
         :rtype: int
@@ -84,7 +84,7 @@ class ActionsList:
     def action(self, action):
         """Sets the action of this ActionsList.
 
-        动作编号，取值范围：[1,2,3,4]，其中： • 1：左摇头 • 2：右摇头 • 3：点头 • 4：嘴部动作
+        动作编号，取值范围：[1,2,3,4,5]，其中： • 1：左摇头 • 2：右摇头 • 3：点头 • 4：嘴部动作 • 5：眨眼
 
         :param action: The action of this ActionsList.
         :type action: int

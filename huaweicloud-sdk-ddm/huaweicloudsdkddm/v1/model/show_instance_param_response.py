@@ -18,6 +18,9 @@ class ShowInstanceParamResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'id': 'str',
+        'name': 'str',
+        'description': 'str',
         'updated': 'str',
         'configuration_parameter': 'list[ConfigurationParameterList]',
         'offset': 'int',
@@ -26,6 +29,9 @@ class ShowInstanceParamResponse(SdkResponse):
     }
 
     attribute_map = {
+        'id': 'id',
+        'name': 'name',
+        'description': 'description',
         'updated': 'updated',
         'configuration_parameter': 'configuration_parameter',
         'offset': 'offset',
@@ -33,11 +39,17 @@ class ShowInstanceParamResponse(SdkResponse):
         'total': 'total'
     }
 
-    def __init__(self, updated=None, configuration_parameter=None, offset=None, limit=None, total=None):
+    def __init__(self, id=None, name=None, description=None, updated=None, configuration_parameter=None, offset=None, limit=None, total=None):
         """ShowInstanceParamResponse
 
         The model defined in huaweicloud sdk
 
+        :param id: 参数组id。
+        :type id: str
+        :param name: 参数组名称。
+        :type name: str
+        :param description: 参数组描述。
+        :type description: str
         :param updated: DDM参数最后更新时间。
         :type updated: str
         :param configuration_parameter: DDM实例参数信息列表的集合。
@@ -52,6 +64,9 @@ class ShowInstanceParamResponse(SdkResponse):
         
         super(ShowInstanceParamResponse, self).__init__()
 
+        self._id = None
+        self._name = None
+        self._description = None
         self._updated = None
         self._configuration_parameter = None
         self._offset = None
@@ -59,6 +74,12 @@ class ShowInstanceParamResponse(SdkResponse):
         self._total = None
         self.discriminator = None
 
+        if id is not None:
+            self.id = id
+        if name is not None:
+            self.name = name
+        if description is not None:
+            self.description = description
         if updated is not None:
             self.updated = updated
         if configuration_parameter is not None:
@@ -69,6 +90,72 @@ class ShowInstanceParamResponse(SdkResponse):
             self.limit = limit
         if total is not None:
             self.total = total
+
+    @property
+    def id(self):
+        """Gets the id of this ShowInstanceParamResponse.
+
+        参数组id。
+
+        :return: The id of this ShowInstanceParamResponse.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this ShowInstanceParamResponse.
+
+        参数组id。
+
+        :param id: The id of this ShowInstanceParamResponse.
+        :type id: str
+        """
+        self._id = id
+
+    @property
+    def name(self):
+        """Gets the name of this ShowInstanceParamResponse.
+
+        参数组名称。
+
+        :return: The name of this ShowInstanceParamResponse.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this ShowInstanceParamResponse.
+
+        参数组名称。
+
+        :param name: The name of this ShowInstanceParamResponse.
+        :type name: str
+        """
+        self._name = name
+
+    @property
+    def description(self):
+        """Gets the description of this ShowInstanceParamResponse.
+
+        参数组描述。
+
+        :return: The description of this ShowInstanceParamResponse.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this ShowInstanceParamResponse.
+
+        参数组描述。
+
+        :param description: The description of this ShowInstanceParamResponse.
+        :type description: str
+        """
+        self._description = description
 
     @property
     def updated(self):

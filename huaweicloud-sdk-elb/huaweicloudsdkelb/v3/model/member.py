@@ -28,6 +28,7 @@ class Member:
         'ip_version': 'str',
         'operating_status': 'str',
         'status': 'list[MemberStatus]',
+        'reason': 'MemberHealthCheckFailedReason',
         'created_at': 'str',
         'updated_at': 'str',
         'member_type': 'str',
@@ -46,13 +47,14 @@ class Member:
         'ip_version': 'ip_version',
         'operating_status': 'operating_status',
         'status': 'status',
+        'reason': 'reason',
         'created_at': 'created_at',
         'updated_at': 'updated_at',
         'member_type': 'member_type',
         'instance_id': 'instance_id'
     }
 
-    def __init__(self, id=None, name=None, project_id=None, admin_state_up=None, subnet_cidr_id=None, protocol_port=None, weight=None, address=None, ip_version=None, operating_status=None, status=None, created_at=None, updated_at=None, member_type=None, instance_id=None):
+    def __init__(self, id=None, name=None, project_id=None, admin_state_up=None, subnet_cidr_id=None, protocol_port=None, weight=None, address=None, ip_version=None, operating_status=None, status=None, reason=None, created_at=None, updated_at=None, member_type=None, instance_id=None):
         """Member
 
         The model defined in huaweicloud sdk
@@ -79,9 +81,11 @@ class Member:
         :type operating_status: str
         :param status: 参数解释：后端服务器监听器粒度的的健康状态。  约束限制： - 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_stauts为准。 - 若绑定的监听器不在该字段中，则以外层的operating_status为准。
         :type status: list[:class:`huaweicloudsdkelb.v3.MemberStatus`]
-        :param created_at: 参数解释：创建时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,fcs,dt,hk_tm)
+        :param reason: 
+        :type reason: :class:`huaweicloudsdkelb.v3.MemberHealthCheckFailedReason`
+        :param created_at: 参数解释：创建时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
         :type created_at: str
-        :param updated_at: 参数解释：更新时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,fcs,dt,hk_tm)
+        :param updated_at: 参数解释：更新时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
         :type updated_at: str
         :param member_type: 参数解释：后端服务器的类型。  取值范围： - ip：跨VPC的member。 - instance：关联到ECS的member。
         :type member_type: str
@@ -102,6 +106,7 @@ class Member:
         self._ip_version = None
         self._operating_status = None
         self._status = None
+        self._reason = None
         self._created_at = None
         self._updated_at = None
         self._member_type = None
@@ -120,6 +125,8 @@ class Member:
         self.ip_version = ip_version
         self.operating_status = operating_status
         self.status = status
+        if reason is not None:
+            self.reason = reason
         if created_at is not None:
             self.created_at = created_at
         if updated_at is not None:
@@ -372,10 +379,28 @@ class Member:
         self._status = status
 
     @property
+    def reason(self):
+        """Gets the reason of this Member.
+
+        :return: The reason of this Member.
+        :rtype: :class:`huaweicloudsdkelb.v3.MemberHealthCheckFailedReason`
+        """
+        return self._reason
+
+    @reason.setter
+    def reason(self, reason):
+        """Sets the reason of this Member.
+
+        :param reason: The reason of this Member.
+        :type reason: :class:`huaweicloudsdkelb.v3.MemberHealthCheckFailedReason`
+        """
+        self._reason = reason
+
+    @property
     def created_at(self):
         """Gets the created_at of this Member.
 
-        参数解释：创建时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,fcs,dt,hk_tm)
+        参数解释：创建时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
 
         :return: The created_at of this Member.
         :rtype: str
@@ -386,7 +411,7 @@ class Member:
     def created_at(self, created_at):
         """Sets the created_at of this Member.
 
-        参数解释：创建时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,fcs,dt,hk_tm)
+        参数解释：创建时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
 
         :param created_at: The created_at of this Member.
         :type created_at: str
@@ -397,7 +422,7 @@ class Member:
     def updated_at(self):
         """Gets the updated_at of this Member.
 
-        参数解释：更新时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,fcs,dt,hk_tm)
+        参数解释：更新时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
 
         :return: The updated_at of this Member.
         :rtype: str
@@ -408,7 +433,7 @@ class Member:
     def updated_at(self, updated_at):
         """Sets the updated_at of this Member.
 
-        参数解释：更新时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,fcs,dt,hk_tm)
+        参数解释：更新时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
 
         :param updated_at: The updated_at of this Member.
         :type updated_at: str

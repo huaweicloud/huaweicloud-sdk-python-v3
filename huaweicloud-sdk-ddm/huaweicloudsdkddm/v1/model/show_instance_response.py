@@ -39,7 +39,9 @@ class ShowInstanceResponse(SdkResponse):
         'enterprise_project_id': 'str',
         'engine_version': 'str',
         'nodes': 'list[GetDetailfNodesInfo]',
-        'admin_user_name': 'str'
+        'admin_user_name': 'str',
+        'enable_ssl': 'bool',
+        'flavor_ref': 'str'
     }
 
     attribute_map = {
@@ -64,10 +66,12 @@ class ShowInstanceResponse(SdkResponse):
         'enterprise_project_id': 'enterprise_project_id',
         'engine_version': 'engine_version',
         'nodes': 'nodes',
-        'admin_user_name': 'admin_user_name'
+        'admin_user_name': 'admin_user_name',
+        'enable_ssl': 'enable_ssl',
+        'flavor_ref': 'flavor_ref'
     }
 
-    def __init__(self, id=None, status=None, name=None, created=None, updated=None, available_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, node_count=None, access_ip=None, access_port=None, node_status=None, core_count=None, ram_capacity=None, error_msg=None, project_id=None, order_id=None, enterprise_project_id=None, engine_version=None, nodes=None, admin_user_name=None):
+    def __init__(self, id=None, status=None, name=None, created=None, updated=None, available_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, node_count=None, access_ip=None, access_port=None, node_status=None, core_count=None, ram_capacity=None, error_msg=None, project_id=None, order_id=None, enterprise_project_id=None, engine_version=None, nodes=None, admin_user_name=None, enable_ssl=None, flavor_ref=None):
         """ShowInstanceResponse
 
         The model defined in huaweicloud sdk
@@ -116,6 +120,10 @@ class ShowInstanceResponse(SdkResponse):
         :type nodes: list[:class:`huaweicloudsdkddm.v1.GetDetailfNodesInfo`]
         :param admin_user_name: 管理员账号用户名。 - 长度为1-32个字符。 - 必须以字母开头。 - 可以包含字母，数字、下划线，不能包含其它特殊字符。
         :type admin_user_name: str
+        :param enable_ssl: 是否开启SSL。
+        :type enable_ssl: bool
+        :param flavor_ref: 规格码。
+        :type flavor_ref: str
         """
         
         super(ShowInstanceResponse, self).__init__()
@@ -142,6 +150,8 @@ class ShowInstanceResponse(SdkResponse):
         self._engine_version = None
         self._nodes = None
         self._admin_user_name = None
+        self._enable_ssl = None
+        self._flavor_ref = None
         self.discriminator = None
 
         if id is not None:
@@ -188,6 +198,10 @@ class ShowInstanceResponse(SdkResponse):
             self.nodes = nodes
         if admin_user_name is not None:
             self.admin_user_name = admin_user_name
+        if enable_ssl is not None:
+            self.enable_ssl = enable_ssl
+        if flavor_ref is not None:
+            self.flavor_ref = flavor_ref
 
     @property
     def id(self):
@@ -672,6 +686,50 @@ class ShowInstanceResponse(SdkResponse):
         :type admin_user_name: str
         """
         self._admin_user_name = admin_user_name
+
+    @property
+    def enable_ssl(self):
+        """Gets the enable_ssl of this ShowInstanceResponse.
+
+        是否开启SSL。
+
+        :return: The enable_ssl of this ShowInstanceResponse.
+        :rtype: bool
+        """
+        return self._enable_ssl
+
+    @enable_ssl.setter
+    def enable_ssl(self, enable_ssl):
+        """Sets the enable_ssl of this ShowInstanceResponse.
+
+        是否开启SSL。
+
+        :param enable_ssl: The enable_ssl of this ShowInstanceResponse.
+        :type enable_ssl: bool
+        """
+        self._enable_ssl = enable_ssl
+
+    @property
+    def flavor_ref(self):
+        """Gets the flavor_ref of this ShowInstanceResponse.
+
+        规格码。
+
+        :return: The flavor_ref of this ShowInstanceResponse.
+        :rtype: str
+        """
+        return self._flavor_ref
+
+    @flavor_ref.setter
+    def flavor_ref(self, flavor_ref):
+        """Sets the flavor_ref of this ShowInstanceResponse.
+
+        规格码。
+
+        :param flavor_ref: The flavor_ref of this ShowInstanceResponse.
+        :type flavor_ref: str
+        """
+        self._flavor_ref = flavor_ref
 
     def to_dict(self):
         """Returns the model properties as a dict"""

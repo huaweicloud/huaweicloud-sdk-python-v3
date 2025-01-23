@@ -35,7 +35,7 @@ class CreateChDatabaseReplicationRequestBody:
 
         :param source_instance_id: 源实例ID。
         :type source_instance_id: str
-        :param source_node_id: 源节点ID。GaussDB(for MySQL)只读节点ID。如为空，则取GaussDB(for MySQL)主节点ID。
+        :param source_node_id: 源节点ID。TaurusDB只读节点ID。如为空，则取TaurusDB主节点ID。
         :type source_node_id: str
         :param source_database: 源数据库。
         :type source_database: str
@@ -79,7 +79,7 @@ class CreateChDatabaseReplicationRequestBody:
     def source_node_id(self):
         """Gets the source_node_id of this CreateChDatabaseReplicationRequestBody.
 
-        源节点ID。GaussDB(for MySQL)只读节点ID。如为空，则取GaussDB(for MySQL)主节点ID。
+        源节点ID。TaurusDB只读节点ID。如为空，则取TaurusDB主节点ID。
 
         :return: The source_node_id of this CreateChDatabaseReplicationRequestBody.
         :rtype: str
@@ -90,7 +90,7 @@ class CreateChDatabaseReplicationRequestBody:
     def source_node_id(self, source_node_id):
         """Sets the source_node_id of this CreateChDatabaseReplicationRequestBody.
 
-        源节点ID。GaussDB(for MySQL)只读节点ID。如为空，则取GaussDB(for MySQL)主节点ID。
+        源节点ID。TaurusDB只读节点ID。如为空，则取TaurusDB主节点ID。
 
         :param source_node_id: The source_node_id of this CreateChDatabaseReplicationRequestBody.
         :type source_node_id: str

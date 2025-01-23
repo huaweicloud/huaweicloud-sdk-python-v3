@@ -37,7 +37,7 @@ class ListModifyHistoryRequest:
 
         :param x_language: 请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
         :type x_language: str
-        :param configuration_id: 参数组ID。  通过调用[查询实例详情信息](https://support.huaweicloud.com/api-gaussdbformysql/ShowGaussMySqlInstanceInfo.html)接口获取。  请求响应成功后在响应消息体中包含的“configuration_id”的值即为configuration_id值。
+        :param configuration_id: 参数组ID。  通过调用[查询实例详情信息](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlInstanceInfo.html)接口获取。  请求响应成功后在响应消息体中包含的“configuration_id”的值即为configuration_id值。
         :type configuration_id: str
         :param offset: 索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
         :type offset: int
@@ -87,7 +87,7 @@ class ListModifyHistoryRequest:
     def configuration_id(self):
         """Gets the configuration_id of this ListModifyHistoryRequest.
 
-        参数组ID。  通过调用[查询实例详情信息](https://support.huaweicloud.com/api-gaussdbformysql/ShowGaussMySqlInstanceInfo.html)接口获取。  请求响应成功后在响应消息体中包含的“configuration_id”的值即为configuration_id值。
+        参数组ID。  通过调用[查询实例详情信息](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlInstanceInfo.html)接口获取。  请求响应成功后在响应消息体中包含的“configuration_id”的值即为configuration_id值。
 
         :return: The configuration_id of this ListModifyHistoryRequest.
         :rtype: str
@@ -98,7 +98,7 @@ class ListModifyHistoryRequest:
     def configuration_id(self, configuration_id):
         """Sets the configuration_id of this ListModifyHistoryRequest.
 
-        参数组ID。  通过调用[查询实例详情信息](https://support.huaweicloud.com/api-gaussdbformysql/ShowGaussMySqlInstanceInfo.html)接口获取。  请求响应成功后在响应消息体中包含的“configuration_id”的值即为configuration_id值。
+        参数组ID。  通过调用[查询实例详情信息](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlInstanceInfo.html)接口获取。  请求响应成功后在响应消息体中包含的“configuration_id”的值即为configuration_id值。
 
         :param configuration_id: The configuration_id of this ListModifyHistoryRequest.
         :type configuration_id: str

@@ -32,7 +32,10 @@ class Quota:
         'ipgroup_bindings': 'int',
         'ipgroup_max_length': 'int',
         'security_policy': 'int',
-        'listeners_per_loadbalancer': 'int'
+        'listeners_per_loadbalancer': 'int',
+        'ipgroups_per_listener': 'int',
+        'pools_per_l7policy': 'int',
+        'l7policies_per_listener': 'int'
     }
 
     attribute_map = {
@@ -51,10 +54,13 @@ class Quota:
         'ipgroup_bindings': 'ipgroup_bindings',
         'ipgroup_max_length': 'ipgroup_max_length',
         'security_policy': 'security_policy',
-        'listeners_per_loadbalancer': 'listeners_per_loadbalancer'
+        'listeners_per_loadbalancer': 'listeners_per_loadbalancer',
+        'ipgroups_per_listener': 'ipgroups_per_listener',
+        'pools_per_l7policy': 'pools_per_l7policy',
+        'l7policies_per_listener': 'l7policies_per_listener'
     }
 
-    def __init__(self, project_id=None, loadbalancer=None, certificate=None, listener=None, l7policy=None, condition_per_policy=None, pool=None, healthmonitor=None, member=None, members_per_pool=None, listeners_per_pool=None, ipgroup=None, ipgroup_bindings=None, ipgroup_max_length=None, security_policy=None, listeners_per_loadbalancer=None):
+    def __init__(self, project_id=None, loadbalancer=None, certificate=None, listener=None, l7policy=None, condition_per_policy=None, pool=None, healthmonitor=None, member=None, members_per_pool=None, listeners_per_pool=None, ipgroup=None, ipgroup_bindings=None, ipgroup_max_length=None, security_policy=None, listeners_per_loadbalancer=None, ipgroups_per_listener=None, pools_per_l7policy=None, l7policies_per_listener=None):
         """Quota
 
         The model defined in huaweicloud sdk
@@ -91,6 +97,12 @@ class Quota:
         :type security_policy: int
         :param listeners_per_loadbalancer: 单个LB实例下的监听器配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  &gt; 当前单个LB下监听器配额实际未限制，但建议不要超过默认配额。
         :type listeners_per_loadbalancer: int
+        :param ipgroups_per_listener: 单个监听器下的IP地址组配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        :type ipgroups_per_listener: int
+        :param pools_per_l7policy: 单个转发策略下的后端服务器组配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        :type pools_per_l7policy: int
+        :param l7policies_per_listener: 单个监听器下的转发策略配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        :type l7policies_per_listener: int
         """
         
         
@@ -111,6 +123,9 @@ class Quota:
         self._ipgroup_max_length = None
         self._security_policy = None
         self._listeners_per_loadbalancer = None
+        self._ipgroups_per_listener = None
+        self._pools_per_l7policy = None
+        self._l7policies_per_listener = None
         self.discriminator = None
 
         self.project_id = project_id
@@ -129,6 +144,9 @@ class Quota:
         self.ipgroup_max_length = ipgroup_max_length
         self.security_policy = security_policy
         self.listeners_per_loadbalancer = listeners_per_loadbalancer
+        self.ipgroups_per_listener = ipgroups_per_listener
+        self.pools_per_l7policy = pools_per_l7policy
+        self.l7policies_per_listener = l7policies_per_listener
 
     @property
     def project_id(self):
@@ -481,6 +499,72 @@ class Quota:
         :type listeners_per_loadbalancer: int
         """
         self._listeners_per_loadbalancer = listeners_per_loadbalancer
+
+    @property
+    def ipgroups_per_listener(self):
+        """Gets the ipgroups_per_listener of this Quota.
+
+        单个监听器下的IP地址组配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+
+        :return: The ipgroups_per_listener of this Quota.
+        :rtype: int
+        """
+        return self._ipgroups_per_listener
+
+    @ipgroups_per_listener.setter
+    def ipgroups_per_listener(self, ipgroups_per_listener):
+        """Sets the ipgroups_per_listener of this Quota.
+
+        单个监听器下的IP地址组配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+
+        :param ipgroups_per_listener: The ipgroups_per_listener of this Quota.
+        :type ipgroups_per_listener: int
+        """
+        self._ipgroups_per_listener = ipgroups_per_listener
+
+    @property
+    def pools_per_l7policy(self):
+        """Gets the pools_per_l7policy of this Quota.
+
+        单个转发策略下的后端服务器组配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+
+        :return: The pools_per_l7policy of this Quota.
+        :rtype: int
+        """
+        return self._pools_per_l7policy
+
+    @pools_per_l7policy.setter
+    def pools_per_l7policy(self, pools_per_l7policy):
+        """Sets the pools_per_l7policy of this Quota.
+
+        单个转发策略下的后端服务器组配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+
+        :param pools_per_l7policy: The pools_per_l7policy of this Quota.
+        :type pools_per_l7policy: int
+        """
+        self._pools_per_l7policy = pools_per_l7policy
+
+    @property
+    def l7policies_per_listener(self):
+        """Gets the l7policies_per_listener of this Quota.
+
+        单个监听器下的转发策略配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+
+        :return: The l7policies_per_listener of this Quota.
+        :rtype: int
+        """
+        return self._l7policies_per_listener
+
+    @l7policies_per_listener.setter
+    def l7policies_per_listener(self, l7policies_per_listener):
+        """Sets the l7policies_per_listener of this Quota.
+
+        单个监听器下的转发策略配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+
+        :param l7policies_per_listener: The l7policies_per_listener of this Quota.
+        :type l7policies_per_listener: int
+        """
+        self._l7policies_per_listener = l7policies_per_listener
 
     def to_dict(self):
         """Returns the model properties as a dict"""

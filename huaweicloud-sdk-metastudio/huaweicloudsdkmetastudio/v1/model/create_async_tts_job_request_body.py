@@ -30,7 +30,11 @@ class CreateAsyncTtsJobRequestBody:
         'callback_config': 'TtsCallBackConfig',
         'gen_srt': 'bool',
         'srt_len': 'int',
-        'srt_line_limit': 'int'
+        'srt_line_limit': 'int',
+        'channels': 'int',
+        'output_external_url': 'str',
+        'srt_output_external_url': 'str',
+        'action_output_external_url': 'str'
     }
 
     attribute_map = {
@@ -47,10 +51,14 @@ class CreateAsyncTtsJobRequestBody:
         'callback_config': 'callback_config',
         'gen_srt': 'gen_srt',
         'srt_len': 'srt_len',
-        'srt_line_limit': 'srt_line_limit'
+        'srt_line_limit': 'srt_line_limit',
+        'channels': 'channels',
+        'output_external_url': 'output_external_url',
+        'srt_output_external_url': 'srt_output_external_url',
+        'action_output_external_url': 'action_output_external_url'
     }
 
-    def __init__(self, text=None, tts_text=None, voice_asset_id=None, speed=None, pitch=None, volume=None, audio_format=None, need_timestamp=None, silence_flag=None, silence_time_ms=None, callback_config=None, gen_srt=None, srt_len=None, srt_line_limit=None):
+    def __init__(self, text=None, tts_text=None, voice_asset_id=None, speed=None, pitch=None, volume=None, audio_format=None, need_timestamp=None, silence_flag=None, silence_time_ms=None, callback_config=None, gen_srt=None, srt_len=None, srt_line_limit=None, channels=None, output_external_url=None, srt_output_external_url=None, action_output_external_url=None):
         """CreateAsyncTtsJobRequestBody
 
         The model defined in huaweicloud sdk
@@ -83,6 +91,14 @@ class CreateAsyncTtsJobRequestBody:
         :type srt_len: int
         :param srt_line_limit: 字幕行数限制，默认为1
         :type srt_line_limit: int
+        :param channels: 声道。（单声道|双声道） 默认值1，最小值1，最大值2。
+        :type channels: int
+        :param output_external_url: 音频文件上传的外部URL &gt; * 需要先申请开通白名单， 才允许将音频等文件上传到外部URL。
+        :type output_external_url: str
+        :param srt_output_external_url: 字幕文件上传的外部URL &gt; * 需要先申请开通白名单， 才允许将字幕等文件上传到外部URL。
+        :type srt_output_external_url: str
+        :param action_output_external_url: 动作信息文件上传的外部URL &gt; * 需要先申请开通白名单， 才允许将时间戳等文件上传到外部URL。
+        :type action_output_external_url: str
         """
         
         
@@ -101,6 +117,10 @@ class CreateAsyncTtsJobRequestBody:
         self._gen_srt = None
         self._srt_len = None
         self._srt_line_limit = None
+        self._channels = None
+        self._output_external_url = None
+        self._srt_output_external_url = None
+        self._action_output_external_url = None
         self.discriminator = None
 
         self.text = text
@@ -129,6 +149,14 @@ class CreateAsyncTtsJobRequestBody:
             self.srt_len = srt_len
         if srt_line_limit is not None:
             self.srt_line_limit = srt_line_limit
+        if channels is not None:
+            self.channels = channels
+        if output_external_url is not None:
+            self.output_external_url = output_external_url
+        if srt_output_external_url is not None:
+            self.srt_output_external_url = srt_output_external_url
+        if action_output_external_url is not None:
+            self.action_output_external_url = action_output_external_url
 
     @property
     def text(self):
@@ -433,6 +461,94 @@ class CreateAsyncTtsJobRequestBody:
         :type srt_line_limit: int
         """
         self._srt_line_limit = srt_line_limit
+
+    @property
+    def channels(self):
+        """Gets the channels of this CreateAsyncTtsJobRequestBody.
+
+        声道。（单声道|双声道） 默认值1，最小值1，最大值2。
+
+        :return: The channels of this CreateAsyncTtsJobRequestBody.
+        :rtype: int
+        """
+        return self._channels
+
+    @channels.setter
+    def channels(self, channels):
+        """Sets the channels of this CreateAsyncTtsJobRequestBody.
+
+        声道。（单声道|双声道） 默认值1，最小值1，最大值2。
+
+        :param channels: The channels of this CreateAsyncTtsJobRequestBody.
+        :type channels: int
+        """
+        self._channels = channels
+
+    @property
+    def output_external_url(self):
+        """Gets the output_external_url of this CreateAsyncTtsJobRequestBody.
+
+        音频文件上传的外部URL > * 需要先申请开通白名单， 才允许将音频等文件上传到外部URL。
+
+        :return: The output_external_url of this CreateAsyncTtsJobRequestBody.
+        :rtype: str
+        """
+        return self._output_external_url
+
+    @output_external_url.setter
+    def output_external_url(self, output_external_url):
+        """Sets the output_external_url of this CreateAsyncTtsJobRequestBody.
+
+        音频文件上传的外部URL > * 需要先申请开通白名单， 才允许将音频等文件上传到外部URL。
+
+        :param output_external_url: The output_external_url of this CreateAsyncTtsJobRequestBody.
+        :type output_external_url: str
+        """
+        self._output_external_url = output_external_url
+
+    @property
+    def srt_output_external_url(self):
+        """Gets the srt_output_external_url of this CreateAsyncTtsJobRequestBody.
+
+        字幕文件上传的外部URL > * 需要先申请开通白名单， 才允许将字幕等文件上传到外部URL。
+
+        :return: The srt_output_external_url of this CreateAsyncTtsJobRequestBody.
+        :rtype: str
+        """
+        return self._srt_output_external_url
+
+    @srt_output_external_url.setter
+    def srt_output_external_url(self, srt_output_external_url):
+        """Sets the srt_output_external_url of this CreateAsyncTtsJobRequestBody.
+
+        字幕文件上传的外部URL > * 需要先申请开通白名单， 才允许将字幕等文件上传到外部URL。
+
+        :param srt_output_external_url: The srt_output_external_url of this CreateAsyncTtsJobRequestBody.
+        :type srt_output_external_url: str
+        """
+        self._srt_output_external_url = srt_output_external_url
+
+    @property
+    def action_output_external_url(self):
+        """Gets the action_output_external_url of this CreateAsyncTtsJobRequestBody.
+
+        动作信息文件上传的外部URL > * 需要先申请开通白名单， 才允许将时间戳等文件上传到外部URL。
+
+        :return: The action_output_external_url of this CreateAsyncTtsJobRequestBody.
+        :rtype: str
+        """
+        return self._action_output_external_url
+
+    @action_output_external_url.setter
+    def action_output_external_url(self, action_output_external_url):
+        """Sets the action_output_external_url of this CreateAsyncTtsJobRequestBody.
+
+        动作信息文件上传的外部URL > * 需要先申请开通白名单， 才允许将时间戳等文件上传到外部URL。
+
+        :param action_output_external_url: The action_output_external_url of this CreateAsyncTtsJobRequestBody.
+        :type action_output_external_url: str
+        """
+        self._action_output_external_url = action_output_external_url
 
     def to_dict(self):
         """Returns the model properties as a dict"""

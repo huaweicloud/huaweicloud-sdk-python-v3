@@ -38,8 +38,7 @@ class BatchCreatePortTagsRequestBody:
         self._tags = None
         self.discriminator = None
 
-        if tags is not None:
-            self.tags = tags
+        self.tags = tags
 
     @property
     def tags(self):

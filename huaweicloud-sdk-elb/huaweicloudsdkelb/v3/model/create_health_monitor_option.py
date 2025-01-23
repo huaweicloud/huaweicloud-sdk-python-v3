@@ -69,7 +69,7 @@ class CreateHealthMonitorOption:
         :type max_retries: int
         :param max_retries_down: 健康检查连续失败多少次后，将后端服务器的健康检查状态由ONLINE判定为OFFLINE。取值范围：1-10，默认3。
         :type max_retries_down: int
-        :param monitor_port: 健康检查端口号。取值：1-65535，默认为空，表示使用后端服务器端口号。  [当pool协议为IP时，monitor_port必须指定为非0值。](tag:hws_eu)  &gt;当绑定的pool开启了端口透传功能时，该字段为必填。
+        :param monitor_port: 参数解释：健康检查端口号。 约束限制： - 当绑定的pool开启了端口透传功能时，该字段为必填。 [- 当pool协议为IP时，monitor_port必须指定为非0值。](tag:hws_eu) 取值范围：1-65535和null，传null表示使用后端服务器端口号。 默认取值：null
         :type monitor_port: int
         :param name: 健康检查名称。
         :type name: str
@@ -285,7 +285,7 @@ class CreateHealthMonitorOption:
     def monitor_port(self):
         """Gets the monitor_port of this CreateHealthMonitorOption.
 
-        健康检查端口号。取值：1-65535，默认为空，表示使用后端服务器端口号。  [当pool协议为IP时，monitor_port必须指定为非0值。](tag:hws_eu)  >当绑定的pool开启了端口透传功能时，该字段为必填。
+        参数解释：健康检查端口号。 约束限制： - 当绑定的pool开启了端口透传功能时，该字段为必填。 [- 当pool协议为IP时，monitor_port必须指定为非0值。](tag:hws_eu) 取值范围：1-65535和null，传null表示使用后端服务器端口号。 默认取值：null
 
         :return: The monitor_port of this CreateHealthMonitorOption.
         :rtype: int
@@ -296,7 +296,7 @@ class CreateHealthMonitorOption:
     def monitor_port(self, monitor_port):
         """Sets the monitor_port of this CreateHealthMonitorOption.
 
-        健康检查端口号。取值：1-65535，默认为空，表示使用后端服务器端口号。  [当pool协议为IP时，monitor_port必须指定为非0值。](tag:hws_eu)  >当绑定的pool开启了端口透传功能时，该字段为必填。
+        参数解释：健康检查端口号。 约束限制： - 当绑定的pool开启了端口透传功能时，该字段为必填。 [- 当pool协议为IP时，monitor_port必须指定为非0值。](tag:hws_eu) 取值范围：1-65535和null，传null表示使用后端服务器端口号。 默认取值：null
 
         :param monitor_port: The monitor_port of this CreateHealthMonitorOption.
         :type monitor_port: int

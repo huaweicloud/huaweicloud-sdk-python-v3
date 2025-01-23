@@ -36,7 +36,7 @@ class CheckTableConfigResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param source_database_name: GaussDB(for MySQL)数据库名。
+        :param source_database_name: TaurusDB数据库名。
         :type source_database_name: str
         :param target_database_name: 目标数据库名。
         :type target_database_name: str
@@ -67,7 +67,7 @@ class CheckTableConfigResponse(SdkResponse):
     def source_database_name(self):
         """Gets the source_database_name of this CheckTableConfigResponse.
 
-        GaussDB(for MySQL)数据库名。
+        TaurusDB数据库名。
 
         :return: The source_database_name of this CheckTableConfigResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class CheckTableConfigResponse(SdkResponse):
     def source_database_name(self, source_database_name):
         """Sets the source_database_name of this CheckTableConfigResponse.
 
-        GaussDB(for MySQL)数据库名。
+        TaurusDB数据库名。
 
         :param source_database_name: The source_database_name of this CheckTableConfigResponse.
         :type source_database_name: str

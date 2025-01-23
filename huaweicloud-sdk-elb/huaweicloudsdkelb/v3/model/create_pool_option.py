@@ -36,7 +36,8 @@ class CreatePoolOption:
         'any_port_enable': 'bool',
         'connection_drain': 'ConnectionDrain',
         'pool_health': 'PoolHealth',
-        'public_border_group': 'str'
+        'public_border_group': 'str',
+        'quic_cid_hash_strategy': 'QuicCidHashStrategy'
     }
 
     attribute_map = {
@@ -59,10 +60,11 @@ class CreatePoolOption:
         'any_port_enable': 'any_port_enable',
         'connection_drain': 'connection_drain',
         'pool_health': 'pool_health',
-        'public_border_group': 'public_border_group'
+        'public_border_group': 'public_border_group',
+        'quic_cid_hash_strategy': 'quic_cid_hash_strategy'
     }
 
-    def __init__(self, admin_state_up=None, description=None, lb_algorithm=None, listener_id=None, loadbalancer_id=None, name=None, project_id=None, protocol=None, session_persistence=None, slow_start=None, member_deletion_protection_enable=None, vpc_id=None, type=None, ip_version=None, protection_status=None, protection_reason=None, any_port_enable=None, connection_drain=None, pool_health=None, public_border_group=None):
+    def __init__(self, admin_state_up=None, description=None, lb_algorithm=None, listener_id=None, loadbalancer_id=None, name=None, project_id=None, protocol=None, session_persistence=None, slow_start=None, member_deletion_protection_enable=None, vpc_id=None, type=None, ip_version=None, protection_status=None, protection_reason=None, any_port_enable=None, connection_drain=None, pool_health=None, public_border_group=None, quic_cid_hash_strategy=None):
         """CreatePoolOption
 
         The model defined in huaweicloud sdk
@@ -73,9 +75,9 @@ class CreatePoolOption:
         :type description: str
         :param lb_algorithm: 参数解释：后端服务器组的负载均衡算法。  约束限制： - 当该字段的取值为SOURCE_IP或QUIC_CID时，后端服务器组绑定的后端服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。  取值范围： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。 [- 2_TUPLE_HASH：二元组hash算法，仅IP类型的pool支持。 - 3_TUPLE_HASH：三元组hash算法，仅IP类型的pool支持。 - 5_TUPLE_HASH：五元组hash算法，仅IP类型的pool支持。 - IP型pool不指定该字段时，默认设置为5_TUPLE_HASH。](tag:hws_eu)  [不支持QUIC_CID。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt,dt_test)
         :type lb_algorithm: str
-        :param listener_id: 参数解释：后端服务器组关联的监听器的ID。  约束限制： - listener_id，loadbalancer_id，type至少指定一个。 [- 独享型实例的后端服务器组loadbalancer_id和listener_id可以都不指定，但共享型实例至少指定一个。。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,fcs,dt,hk_tm)
+        :param listener_id: 参数解释：后端服务器组关联的监听器的ID。  约束限制： - listener_id，loadbalancer_id，type至少指定一个。 [- 独享型实例的后端服务器组loadbalancer_id和listener_id可以都不指定，但共享型实例至少指定一个。。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
         :type listener_id: str
-        :param loadbalancer_id: 参数解释：后端服务器组关联的负载均衡器ID。  约束限制： - listener_id，loadbalancer_id，type至少指定一个。 [- 独享型实例的后端服务器组loadbalancer_id和listener_id可以都不指定，但共享型实例至少指定一个。。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,fcs,dt,hk_tm)
+        :param loadbalancer_id: 参数解释：后端服务器组关联的负载均衡器ID。  约束限制： - listener_id，loadbalancer_id，type至少指定一个。 [- 独享型实例的后端服务器组loadbalancer_id和listener_id可以都不指定，但共享型实例至少指定一个。。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
         :type loadbalancer_id: str
         :param name: 参数解释：后端服务器组的名称。
         :type name: str
@@ -91,13 +93,13 @@ class CreatePoolOption:
         :type member_deletion_protection_enable: bool
         :param vpc_id: 参数解释：后端服务器组关联的虚拟私有云的ID。  约束限制： - 只能挂载到该虚拟私有云下。 - 只能添加该虚拟私有云下的后端服务器或跨VPC的后端服务器。 - type必须指定为instance。 [- pool的protocol为IP时，必须指定vpc_id，且与LB的vpc_id相同。](tag:hws_eu) - 若未指定vpc_id，则后续添加后端服务器时，vpc_id由后端服务器所在的虚拟私有云确定。
         :type vpc_id: str
-        :param type: 参数解释：后端服务器组的类型。  约束限制： - 不传表示允许任意类型的后端，并返回type为空字符串。 - listener_id，loadbalancer_id，type至少指定一个。 [- 独享型实例的后端服务器组loadbalancer_id和listener_id可以都不指定，但共享型实例至少指定一个。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,fcs,dt,hk_tm)  取值范围： - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。 - ip：只能添加跨VPC后端，type指定为该类型时，vpc_id不允许指定。[pool的protocol为IP时，type不允许设置为ip。](tag:hws_eu)]
+        :param type: 参数解释：后端服务器组的类型。  约束限制： - 不传表示允许任意类型的后端，并返回type为空字符串。 - listener_id，loadbalancer_id，type至少指定一个。 [- 独享型实例的后端服务器组loadbalancer_id和listener_id可以都不指定，但共享型实例至少指定一个。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)  取值范围： - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。 - ip：只能添加跨VPC后端，type指定为该类型时，vpc_id不允许指定。[pool的protocol为IP时，type不允许设置为ip。](tag:hws_eu)]
         :type type: str
-        :param ip_version: 参数解释：后端服务器组支持的IP版本。  [取值范围： - 共享型：固定为v4； - 独享型：取值dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,fcs)  [取值范围：dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt,dt_test)
+        :param ip_version: 参数解释：后端服务器组支持的IP版本。  [取值范围： - 共享型：固定为v4； - 独享型：取值dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs)  [取值范围：dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt,dt_test)
         :type ip_version: str
         :param protection_status: 参数解释：修改保护状态。  取值范围： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
         :type protection_status: str
-        :param protection_reason: 参数解释：设置保护的原因  约束限制：仅当protection_status为consoleProtection时有效。
+        :param protection_reason: 参数解释：设置保护的原因。作为protection_status的转态设置的原因。  约束限制：仅当protection_status为consoleProtection时有效。  取值范围：除&#39;&lt;&#39;和&#39;&gt;&#39;外通用Unicode字符集字符，最大255个字符。
         :type protection_reason: str
         :param any_port_enable: 参数解释：后端是否开启端口透传。开启后，后端服务器端口与前端监听器端口保持一致。关闭后，请求会转发给后端服务器protocol_port字段指定端口。  约束限制： - 仅QUIC,TCP,UDP的pool支持。  取值范围：false不开启，true开启。
         :type any_port_enable: bool
@@ -105,8 +107,10 @@ class CreatePoolOption:
         :type connection_drain: :class:`huaweicloudsdkelb.v3.ConnectionDrain`
         :param pool_health: 
         :type pool_health: :class:`huaweicloudsdkelb.v3.PoolHealth`
-        :param public_border_group: 参数解释：可用区组，如：center
+        :param public_border_group: 参数解释：网络公共边界组，如：center
         :type public_border_group: str
+        :param quic_cid_hash_strategy: 
+        :type quic_cid_hash_strategy: :class:`huaweicloudsdkelb.v3.QuicCidHashStrategy`
         """
         
         
@@ -131,6 +135,7 @@ class CreatePoolOption:
         self._connection_drain = None
         self._pool_health = None
         self._public_border_group = None
+        self._quic_cid_hash_strategy = None
         self.discriminator = None
 
         if admin_state_up is not None:
@@ -171,6 +176,8 @@ class CreatePoolOption:
             self.pool_health = pool_health
         if public_border_group is not None:
             self.public_border_group = public_border_group
+        if quic_cid_hash_strategy is not None:
+            self.quic_cid_hash_strategy = quic_cid_hash_strategy
 
     @property
     def admin_state_up(self):
@@ -242,7 +249,7 @@ class CreatePoolOption:
     def listener_id(self):
         """Gets the listener_id of this CreatePoolOption.
 
-        参数解释：后端服务器组关联的监听器的ID。  约束限制： - listener_id，loadbalancer_id，type至少指定一个。 [- 独享型实例的后端服务器组loadbalancer_id和listener_id可以都不指定，但共享型实例至少指定一个。。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,fcs,dt,hk_tm)
+        参数解释：后端服务器组关联的监听器的ID。  约束限制： - listener_id，loadbalancer_id，type至少指定一个。 [- 独享型实例的后端服务器组loadbalancer_id和listener_id可以都不指定，但共享型实例至少指定一个。。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
 
         :return: The listener_id of this CreatePoolOption.
         :rtype: str
@@ -253,7 +260,7 @@ class CreatePoolOption:
     def listener_id(self, listener_id):
         """Sets the listener_id of this CreatePoolOption.
 
-        参数解释：后端服务器组关联的监听器的ID。  约束限制： - listener_id，loadbalancer_id，type至少指定一个。 [- 独享型实例的后端服务器组loadbalancer_id和listener_id可以都不指定，但共享型实例至少指定一个。。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,fcs,dt,hk_tm)
+        参数解释：后端服务器组关联的监听器的ID。  约束限制： - listener_id，loadbalancer_id，type至少指定一个。 [- 独享型实例的后端服务器组loadbalancer_id和listener_id可以都不指定，但共享型实例至少指定一个。。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
 
         :param listener_id: The listener_id of this CreatePoolOption.
         :type listener_id: str
@@ -264,7 +271,7 @@ class CreatePoolOption:
     def loadbalancer_id(self):
         """Gets the loadbalancer_id of this CreatePoolOption.
 
-        参数解释：后端服务器组关联的负载均衡器ID。  约束限制： - listener_id，loadbalancer_id，type至少指定一个。 [- 独享型实例的后端服务器组loadbalancer_id和listener_id可以都不指定，但共享型实例至少指定一个。。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,fcs,dt,hk_tm)
+        参数解释：后端服务器组关联的负载均衡器ID。  约束限制： - listener_id，loadbalancer_id，type至少指定一个。 [- 独享型实例的后端服务器组loadbalancer_id和listener_id可以都不指定，但共享型实例至少指定一个。。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
 
         :return: The loadbalancer_id of this CreatePoolOption.
         :rtype: str
@@ -275,7 +282,7 @@ class CreatePoolOption:
     def loadbalancer_id(self, loadbalancer_id):
         """Sets the loadbalancer_id of this CreatePoolOption.
 
-        参数解释：后端服务器组关联的负载均衡器ID。  约束限制： - listener_id，loadbalancer_id，type至少指定一个。 [- 独享型实例的后端服务器组loadbalancer_id和listener_id可以都不指定，但共享型实例至少指定一个。。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,fcs,dt,hk_tm)
+        参数解释：后端服务器组关联的负载均衡器ID。  约束限制： - listener_id，loadbalancer_id，type至少指定一个。 [- 独享型实例的后端服务器组loadbalancer_id和listener_id可以都不指定，但共享型实例至少指定一个。。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
 
         :param loadbalancer_id: The loadbalancer_id of this CreatePoolOption.
         :type loadbalancer_id: str
@@ -432,7 +439,7 @@ class CreatePoolOption:
     def type(self):
         """Gets the type of this CreatePoolOption.
 
-        参数解释：后端服务器组的类型。  约束限制： - 不传表示允许任意类型的后端，并返回type为空字符串。 - listener_id，loadbalancer_id，type至少指定一个。 [- 独享型实例的后端服务器组loadbalancer_id和listener_id可以都不指定，但共享型实例至少指定一个。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,fcs,dt,hk_tm)  取值范围： - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。 - ip：只能添加跨VPC后端，type指定为该类型时，vpc_id不允许指定。[pool的protocol为IP时，type不允许设置为ip。](tag:hws_eu)]
+        参数解释：后端服务器组的类型。  约束限制： - 不传表示允许任意类型的后端，并返回type为空字符串。 - listener_id，loadbalancer_id，type至少指定一个。 [- 独享型实例的后端服务器组loadbalancer_id和listener_id可以都不指定，但共享型实例至少指定一个。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)  取值范围： - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。 - ip：只能添加跨VPC后端，type指定为该类型时，vpc_id不允许指定。[pool的protocol为IP时，type不允许设置为ip。](tag:hws_eu)]
 
         :return: The type of this CreatePoolOption.
         :rtype: str
@@ -443,7 +450,7 @@ class CreatePoolOption:
     def type(self, type):
         """Sets the type of this CreatePoolOption.
 
-        参数解释：后端服务器组的类型。  约束限制： - 不传表示允许任意类型的后端，并返回type为空字符串。 - listener_id，loadbalancer_id，type至少指定一个。 [- 独享型实例的后端服务器组loadbalancer_id和listener_id可以都不指定，但共享型实例至少指定一个。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,fcs,dt,hk_tm)  取值范围： - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。 - ip：只能添加跨VPC后端，type指定为该类型时，vpc_id不允许指定。[pool的protocol为IP时，type不允许设置为ip。](tag:hws_eu)]
+        参数解释：后端服务器组的类型。  约束限制： - 不传表示允许任意类型的后端，并返回type为空字符串。 - listener_id，loadbalancer_id，type至少指定一个。 [- 独享型实例的后端服务器组loadbalancer_id和listener_id可以都不指定，但共享型实例至少指定一个。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)  取值范围： - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。 - ip：只能添加跨VPC后端，type指定为该类型时，vpc_id不允许指定。[pool的protocol为IP时，type不允许设置为ip。](tag:hws_eu)]
 
         :param type: The type of this CreatePoolOption.
         :type type: str
@@ -454,7 +461,7 @@ class CreatePoolOption:
     def ip_version(self):
         """Gets the ip_version of this CreatePoolOption.
 
-        参数解释：后端服务器组支持的IP版本。  [取值范围： - 共享型：固定为v4； - 独享型：取值dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,fcs)  [取值范围：dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt,dt_test)
+        参数解释：后端服务器组支持的IP版本。  [取值范围： - 共享型：固定为v4； - 独享型：取值dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs)  [取值范围：dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt,dt_test)
 
         :return: The ip_version of this CreatePoolOption.
         :rtype: str
@@ -465,7 +472,7 @@ class CreatePoolOption:
     def ip_version(self, ip_version):
         """Sets the ip_version of this CreatePoolOption.
 
-        参数解释：后端服务器组支持的IP版本。  [取值范围： - 共享型：固定为v4； - 独享型：取值dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,fcs)  [取值范围：dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt,dt_test)
+        参数解释：后端服务器组支持的IP版本。  [取值范围： - 共享型：固定为v4； - 独享型：取值dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs)  [取值范围：dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt,dt_test)
 
         :param ip_version: The ip_version of this CreatePoolOption.
         :type ip_version: str
@@ -498,7 +505,7 @@ class CreatePoolOption:
     def protection_reason(self):
         """Gets the protection_reason of this CreatePoolOption.
 
-        参数解释：设置保护的原因  约束限制：仅当protection_status为consoleProtection时有效。
+        参数解释：设置保护的原因。作为protection_status的转态设置的原因。  约束限制：仅当protection_status为consoleProtection时有效。  取值范围：除'<'和'>'外通用Unicode字符集字符，最大255个字符。
 
         :return: The protection_reason of this CreatePoolOption.
         :rtype: str
@@ -509,7 +516,7 @@ class CreatePoolOption:
     def protection_reason(self, protection_reason):
         """Sets the protection_reason of this CreatePoolOption.
 
-        参数解释：设置保护的原因  约束限制：仅当protection_status为consoleProtection时有效。
+        参数解释：设置保护的原因。作为protection_status的转态设置的原因。  约束限制：仅当protection_status为consoleProtection时有效。  取值范围：除'<'和'>'外通用Unicode字符集字符，最大255个字符。
 
         :param protection_reason: The protection_reason of this CreatePoolOption.
         :type protection_reason: str
@@ -578,7 +585,7 @@ class CreatePoolOption:
     def public_border_group(self):
         """Gets the public_border_group of this CreatePoolOption.
 
-        参数解释：可用区组，如：center
+        参数解释：网络公共边界组，如：center
 
         :return: The public_border_group of this CreatePoolOption.
         :rtype: str
@@ -589,12 +596,30 @@ class CreatePoolOption:
     def public_border_group(self, public_border_group):
         """Sets the public_border_group of this CreatePoolOption.
 
-        参数解释：可用区组，如：center
+        参数解释：网络公共边界组，如：center
 
         :param public_border_group: The public_border_group of this CreatePoolOption.
         :type public_border_group: str
         """
         self._public_border_group = public_border_group
+
+    @property
+    def quic_cid_hash_strategy(self):
+        """Gets the quic_cid_hash_strategy of this CreatePoolOption.
+
+        :return: The quic_cid_hash_strategy of this CreatePoolOption.
+        :rtype: :class:`huaweicloudsdkelb.v3.QuicCidHashStrategy`
+        """
+        return self._quic_cid_hash_strategy
+
+    @quic_cid_hash_strategy.setter
+    def quic_cid_hash_strategy(self, quic_cid_hash_strategy):
+        """Sets the quic_cid_hash_strategy of this CreatePoolOption.
+
+        :param quic_cid_hash_strategy: The quic_cid_hash_strategy of this CreatePoolOption.
+        :type quic_cid_hash_strategy: :class:`huaweicloudsdkelb.v3.QuicCidHashStrategy`
+        """
+        self._quic_cid_hash_strategy = quic_cid_hash_strategy
 
     def to_dict(self):
         """Returns the model properties as a dict"""

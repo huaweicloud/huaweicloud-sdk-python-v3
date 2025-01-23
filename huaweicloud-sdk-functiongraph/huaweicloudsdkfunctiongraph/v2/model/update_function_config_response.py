@@ -47,6 +47,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
         'last_modified': 'datetime',
         'ephemeral_storage': 'int',
         'func_vpc': 'FuncVpc',
+        'peering_cidr': 'str',
         'mount_config': 'MountConfig',
         'strategy_config': 'StrategyConfig',
         'dependencies': 'list[Dependency]',
@@ -65,7 +66,8 @@ class UpdateFunctionConfigResponse(SdkResponse):
         'domain_names': 'str',
         'enable_auth_in_header': 'bool',
         'custom_image': 'CustomImage',
-        'is_return_stream': 'bool'
+        'is_return_stream': 'bool',
+        'lts_custom_tag': 'dict(str, str)'
     }
 
     attribute_map = {
@@ -98,6 +100,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
         'last_modified': 'last_modified',
         'ephemeral_storage': 'ephemeral_storage',
         'func_vpc': 'func_vpc',
+        'peering_cidr': 'peering_cidr',
         'mount_config': 'mount_config',
         'strategy_config': 'strategy_config',
         'dependencies': 'dependencies',
@@ -116,10 +119,11 @@ class UpdateFunctionConfigResponse(SdkResponse):
         'domain_names': 'domain_names',
         'enable_auth_in_header': 'enable_auth_in_header',
         'custom_image': 'custom_image',
-        'is_return_stream': 'is_return_stream'
+        'is_return_stream': 'is_return_stream',
+        'lts_custom_tag': 'lts_custom_tag'
     }
 
-    def __init__(self, func_id=None, resource_id=None, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, gpu_memory=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, ephemeral_storage=None, func_vpc=None, mount_config=None, strategy_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None, enable_cloud_debug=None, enable_dynamic_memory=None, is_stateful_function=None, domain_names=None, enable_auth_in_header=None, custom_image=None, is_return_stream=None):
+    def __init__(self, func_id=None, resource_id=None, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, gpu_memory=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, ephemeral_storage=None, func_vpc=None, peering_cidr=None, mount_config=None, strategy_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None, enable_cloud_debug=None, enable_dynamic_memory=None, is_stateful_function=None, domain_names=None, enable_auth_in_header=None, custom_image=None, is_return_stream=None, lts_custom_tag=None):
         """UpdateFunctionConfigResponse
 
         The model defined in huaweicloud sdk
@@ -182,6 +186,8 @@ class UpdateFunctionConfigResponse(SdkResponse):
         :type ephemeral_storage: int
         :param func_vpc: 
         :type func_vpc: :class:`huaweicloudsdkfunctiongraph.v2.FuncVpc`
+        :param peering_cidr: VPC对等连接网段。您可以声明代码中使用到的VPC网段，用以检测是否与服务使用VPC网段冲突。网段间使用分号分隔且不能超过5个。
+        :type peering_cidr: str
         :param mount_config: 
         :type mount_config: :class:`huaweicloudsdkfunctiongraph.v2.MountConfig`
         :param strategy_config: 
@@ -220,6 +226,8 @@ class UpdateFunctionConfigResponse(SdkResponse):
         :type custom_image: :class:`huaweicloudsdkfunctiongraph.v2.CustomImage`
         :param is_return_stream: 是否返回流式数据（已废弃）
         :type is_return_stream: bool
+        :param lts_custom_tag: 自定义日志标签。函数执行时，可以按照自定义标签配置上报标签到云日志服务(LTS)，用户可以通过标签对日志进行过滤筛选。
+        :type lts_custom_tag: dict(str, str)
         """
         
         super(UpdateFunctionConfigResponse, self).__init__()
@@ -253,6 +261,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
         self._last_modified = None
         self._ephemeral_storage = None
         self._func_vpc = None
+        self._peering_cidr = None
         self._mount_config = None
         self._strategy_config = None
         self._dependencies = None
@@ -272,6 +281,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
         self._enable_auth_in_header = None
         self._custom_image = None
         self._is_return_stream = None
+        self._lts_custom_tag = None
         self.discriminator = None
 
         if func_id is not None:
@@ -332,6 +342,8 @@ class UpdateFunctionConfigResponse(SdkResponse):
             self.ephemeral_storage = ephemeral_storage
         if func_vpc is not None:
             self.func_vpc = func_vpc
+        if peering_cidr is not None:
+            self.peering_cidr = peering_cidr
         if mount_config is not None:
             self.mount_config = mount_config
         if strategy_config is not None:
@@ -370,6 +382,8 @@ class UpdateFunctionConfigResponse(SdkResponse):
             self.custom_image = custom_image
         if is_return_stream is not None:
             self.is_return_stream = is_return_stream
+        if lts_custom_tag is not None:
+            self.lts_custom_tag = lts_custom_tag
 
     @property
     def func_id(self):
@@ -1006,6 +1020,28 @@ class UpdateFunctionConfigResponse(SdkResponse):
         self._func_vpc = func_vpc
 
     @property
+    def peering_cidr(self):
+        """Gets the peering_cidr of this UpdateFunctionConfigResponse.
+
+        VPC对等连接网段。您可以声明代码中使用到的VPC网段，用以检测是否与服务使用VPC网段冲突。网段间使用分号分隔且不能超过5个。
+
+        :return: The peering_cidr of this UpdateFunctionConfigResponse.
+        :rtype: str
+        """
+        return self._peering_cidr
+
+    @peering_cidr.setter
+    def peering_cidr(self, peering_cidr):
+        """Sets the peering_cidr of this UpdateFunctionConfigResponse.
+
+        VPC对等连接网段。您可以声明代码中使用到的VPC网段，用以检测是否与服务使用VPC网段冲突。网段间使用分号分隔且不能超过5个。
+
+        :param peering_cidr: The peering_cidr of this UpdateFunctionConfigResponse.
+        :type peering_cidr: str
+        """
+        self._peering_cidr = peering_cidr
+
+    @property
     def mount_config(self):
         """Gets the mount_config of this UpdateFunctionConfigResponse.
 
@@ -1410,6 +1446,28 @@ class UpdateFunctionConfigResponse(SdkResponse):
         :type is_return_stream: bool
         """
         self._is_return_stream = is_return_stream
+
+    @property
+    def lts_custom_tag(self):
+        """Gets the lts_custom_tag of this UpdateFunctionConfigResponse.
+
+        自定义日志标签。函数执行时，可以按照自定义标签配置上报标签到云日志服务(LTS)，用户可以通过标签对日志进行过滤筛选。
+
+        :return: The lts_custom_tag of this UpdateFunctionConfigResponse.
+        :rtype: dict(str, str)
+        """
+        return self._lts_custom_tag
+
+    @lts_custom_tag.setter
+    def lts_custom_tag(self, lts_custom_tag):
+        """Sets the lts_custom_tag of this UpdateFunctionConfigResponse.
+
+        自定义日志标签。函数执行时，可以按照自定义标签配置上报标签到云日志服务(LTS)，用户可以通过标签对日志进行过滤筛选。
+
+        :param lts_custom_tag: The lts_custom_tag of this UpdateFunctionConfigResponse.
+        :type lts_custom_tag: dict(str, str)
+        """
+        self._lts_custom_tag = lts_custom_tag
 
     def to_dict(self):
         """Returns the model properties as a dict"""

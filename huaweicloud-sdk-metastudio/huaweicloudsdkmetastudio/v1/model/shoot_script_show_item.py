@@ -20,6 +20,7 @@ class ShootScriptShowItem:
         'sequence_no': 'int',
         'shoot_script': 'ShootScriptDetail',
         'subtitle_file_info': 'SubtitleFiles',
+        'audio_config': 'AudioInfo',
         'preview_info': 'PreviewInfo'
     }
 
@@ -27,10 +28,11 @@ class ShootScriptShowItem:
         'sequence_no': 'sequence_no',
         'shoot_script': 'shoot_script',
         'subtitle_file_info': 'subtitle_file_info',
+        'audio_config': 'audio_config',
         'preview_info': 'preview_info'
     }
 
-    def __init__(self, sequence_no=None, shoot_script=None, subtitle_file_info=None, preview_info=None):
+    def __init__(self, sequence_no=None, shoot_script=None, subtitle_file_info=None, audio_config=None, preview_info=None):
         """ShootScriptShowItem
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class ShootScriptShowItem:
         :type shoot_script: :class:`huaweicloudsdkmetastudio.v1.ShootScriptDetail`
         :param subtitle_file_info: 
         :type subtitle_file_info: :class:`huaweicloudsdkmetastudio.v1.SubtitleFiles`
+        :param audio_config: 
+        :type audio_config: :class:`huaweicloudsdkmetastudio.v1.AudioInfo`
         :param preview_info: 
         :type preview_info: :class:`huaweicloudsdkmetastudio.v1.PreviewInfo`
         """
@@ -50,6 +54,7 @@ class ShootScriptShowItem:
         self._sequence_no = None
         self._shoot_script = None
         self._subtitle_file_info = None
+        self._audio_config = None
         self._preview_info = None
         self.discriminator = None
 
@@ -59,6 +64,8 @@ class ShootScriptShowItem:
             self.shoot_script = shoot_script
         if subtitle_file_info is not None:
             self.subtitle_file_info = subtitle_file_info
+        if audio_config is not None:
+            self.audio_config = audio_config
         if preview_info is not None:
             self.preview_info = preview_info
 
@@ -119,6 +126,24 @@ class ShootScriptShowItem:
         :type subtitle_file_info: :class:`huaweicloudsdkmetastudio.v1.SubtitleFiles`
         """
         self._subtitle_file_info = subtitle_file_info
+
+    @property
+    def audio_config(self):
+        """Gets the audio_config of this ShootScriptShowItem.
+
+        :return: The audio_config of this ShootScriptShowItem.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.AudioInfo`
+        """
+        return self._audio_config
+
+    @audio_config.setter
+    def audio_config(self, audio_config):
+        """Sets the audio_config of this ShootScriptShowItem.
+
+        :param audio_config: The audio_config of this ShootScriptShowItem.
+        :type audio_config: :class:`huaweicloudsdkmetastudio.v1.AudioInfo`
+        """
+        self._audio_config = audio_config
 
     @property
     def preview_info(self):
