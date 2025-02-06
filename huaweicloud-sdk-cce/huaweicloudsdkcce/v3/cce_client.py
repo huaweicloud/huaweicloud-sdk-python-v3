@@ -3993,16 +3993,16 @@ class CceClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'cluster_id' in local_var_params:
-            path_params['cluster_id'] = local_var_params['cluster_id']
-        if 'cluster_type' in local_var_params:
-            path_params['cluster_type'] = local_var_params['cluster_type']
-        if 'cluster_version' in local_var_params:
-            path_params['cluster_version'] = local_var_params['cluster_version']
-        if 'network_mode' in local_var_params:
-            path_params['network_mode'] = local_var_params['network_mode']
 
         query_params = []
+        if 'cluster_id' in local_var_params:
+            query_params.append(('cluster_id', local_var_params['cluster_id']))
+        if 'cluster_type' in local_var_params:
+            query_params.append(('cluster_type', local_var_params['cluster_type']))
+        if 'cluster_version' in local_var_params:
+            query_params.append(('cluster_version', local_var_params['cluster_version']))
+        if 'network_mode' in local_var_params:
+            query_params.append(('network_mode', local_var_params['network_mode']))
 
         header_params = {}
 

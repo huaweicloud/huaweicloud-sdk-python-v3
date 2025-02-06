@@ -17,85 +17,80 @@ class TaskListItemVo:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'str',
+        'task_id': 'str',
         'status': 'str',
-        'start_time': 'datetime',
-        'end_time': 'datetime',
-        'create_time': 'datetime'
+        'start_time': 'str',
+        'end_time': 'str',
+        'create_time': 'str'
     }
 
     attribute_map = {
-        'id': 'id',
+        'task_id': 'task_id',
         'status': 'status',
         'start_time': 'start_time',
         'end_time': 'end_time',
         'create_time': 'create_time'
     }
 
-    def __init__(self, id=None, status=None, start_time=None, end_time=None, create_time=None):
+    def __init__(self, task_id=None, status=None, start_time=None, end_time=None, create_time=None):
         """TaskListItemVo
 
         The model defined in huaweicloud sdk
 
-        :param id: 任务编号
-        :type id: str
-        :param status: 状态
+        :param task_id: 任务ID
+        :type task_id: str
+        :param status: 任务状态
         :type status: str
-        :param start_time: 开始时间（UTC）
-        :type start_time: datetime
-        :param end_time: 结束时间（UTC）
-        :type end_time: datetime
-        :param create_time: 创建时间（UTC）
-        :type create_time: datetime
+        :param start_time: 开始时间
+        :type start_time: str
+        :param end_time: 结束时间
+        :type end_time: str
+        :param create_time: 创建时间
+        :type create_time: str
         """
         
         
 
-        self._id = None
+        self._task_id = None
         self._status = None
         self._start_time = None
         self._end_time = None
         self._create_time = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
-        if status is not None:
-            self.status = status
-        if start_time is not None:
-            self.start_time = start_time
-        if end_time is not None:
-            self.end_time = end_time
-        if create_time is not None:
-            self.create_time = create_time
+        self.task_id = task_id
+        self.status = status
+        self.start_time = start_time
+        self.end_time = end_time
+        self.create_time = create_time
 
     @property
-    def id(self):
-        """Gets the id of this TaskListItemVo.
+    def task_id(self):
+        """Gets the task_id of this TaskListItemVo.
 
-        任务编号
+        任务ID
 
-        :return: The id of this TaskListItemVo.
+        :return: The task_id of this TaskListItemVo.
         :rtype: str
         """
-        return self._id
+        return self._task_id
 
-    @id.setter
-    def id(self, id):
-        """Sets the id of this TaskListItemVo.
+    @task_id.setter
+    def task_id(self, task_id):
+        """Sets the task_id of this TaskListItemVo.
 
-        任务编号
+        任务ID
 
-        :param id: The id of this TaskListItemVo.
-        :type id: str
+        :param task_id: The task_id of this TaskListItemVo.
+        :type task_id: str
         """
-        self._id = id
+        self._task_id = task_id
 
     @property
     def status(self):
         """Gets the status of this TaskListItemVo.
 
-        状态
+        任务状态
 
         :return: The status of this TaskListItemVo.
         :rtype: str
@@ -106,7 +101,7 @@ class TaskListItemVo:
     def status(self, status):
         """Sets the status of this TaskListItemVo.
 
-        状态
+        任务状态
 
         :param status: The status of this TaskListItemVo.
         :type status: str
@@ -117,10 +112,10 @@ class TaskListItemVo:
     def start_time(self):
         """Gets the start_time of this TaskListItemVo.
 
-        开始时间（UTC）
+        开始时间
 
         :return: The start_time of this TaskListItemVo.
-        :rtype: datetime
+        :rtype: str
         """
         return self._start_time
 
@@ -128,10 +123,10 @@ class TaskListItemVo:
     def start_time(self, start_time):
         """Sets the start_time of this TaskListItemVo.
 
-        开始时间（UTC）
+        开始时间
 
         :param start_time: The start_time of this TaskListItemVo.
-        :type start_time: datetime
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -139,10 +134,10 @@ class TaskListItemVo:
     def end_time(self):
         """Gets the end_time of this TaskListItemVo.
 
-        结束时间（UTC）
+        结束时间
 
         :return: The end_time of this TaskListItemVo.
-        :rtype: datetime
+        :rtype: str
         """
         return self._end_time
 
@@ -150,10 +145,10 @@ class TaskListItemVo:
     def end_time(self, end_time):
         """Sets the end_time of this TaskListItemVo.
 
-        结束时间（UTC）
+        结束时间
 
         :param end_time: The end_time of this TaskListItemVo.
-        :type end_time: datetime
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -161,10 +156,10 @@ class TaskListItemVo:
     def create_time(self):
         """Gets the create_time of this TaskListItemVo.
 
-        创建时间（UTC）
+        创建时间
 
         :return: The create_time of this TaskListItemVo.
-        :rtype: datetime
+        :rtype: str
         """
         return self._create_time
 
@@ -172,10 +167,10 @@ class TaskListItemVo:
     def create_time(self, create_time):
         """Sets the create_time of this TaskListItemVo.
 
-        创建时间（UTC）
+        创建时间
 
         :param create_time: The create_time of this TaskListItemVo.
-        :type create_time: datetime
+        :type create_time: str
         """
         self._create_time = create_time
 

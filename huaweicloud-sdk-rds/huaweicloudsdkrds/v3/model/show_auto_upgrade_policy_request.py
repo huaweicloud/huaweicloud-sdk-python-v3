@@ -2,11 +2,10 @@
 
 import six
 
-from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class CreateTaskResponse(SdkResponse):
+class ShowAutoUpgradePolicyRequest:
 
     """
     Attributes:
@@ -18,51 +17,79 @@ class CreateTaskResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'task_id': 'str'
+        'instance_id': 'str',
+        'x_language': 'str'
     }
 
     attribute_map = {
-        'task_id': 'task_id'
+        'instance_id': 'instance_id',
+        'x_language': 'X-Language'
     }
 
-    def __init__(self, task_id=None):
-        """CreateTaskResponse
+    def __init__(self, instance_id=None, x_language=None):
+        """ShowAutoUpgradePolicyRequest
 
         The model defined in huaweicloud sdk
 
-        :param task_id: 任务编号
-        :type task_id: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param x_language: 语言。默认en-us。
+        :type x_language: str
         """
         
-        super(CreateTaskResponse, self).__init__()
+        
 
-        self._task_id = None
+        self._instance_id = None
+        self._x_language = None
         self.discriminator = None
 
-        if task_id is not None:
-            self.task_id = task_id
+        self.instance_id = instance_id
+        if x_language is not None:
+            self.x_language = x_language
 
     @property
-    def task_id(self):
-        """Gets the task_id of this CreateTaskResponse.
+    def instance_id(self):
+        """Gets the instance_id of this ShowAutoUpgradePolicyRequest.
 
-        任务编号
+        实例ID。
 
-        :return: The task_id of this CreateTaskResponse.
+        :return: The instance_id of this ShowAutoUpgradePolicyRequest.
         :rtype: str
         """
-        return self._task_id
+        return self._instance_id
 
-    @task_id.setter
-    def task_id(self, task_id):
-        """Sets the task_id of this CreateTaskResponse.
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        """Sets the instance_id of this ShowAutoUpgradePolicyRequest.
 
-        任务编号
+        实例ID。
 
-        :param task_id: The task_id of this CreateTaskResponse.
-        :type task_id: str
+        :param instance_id: The instance_id of this ShowAutoUpgradePolicyRequest.
+        :type instance_id: str
         """
-        self._task_id = task_id
+        self._instance_id = instance_id
+
+    @property
+    def x_language(self):
+        """Gets the x_language of this ShowAutoUpgradePolicyRequest.
+
+        语言。默认en-us。
+
+        :return: The x_language of this ShowAutoUpgradePolicyRequest.
+        :rtype: str
+        """
+        return self._x_language
+
+    @x_language.setter
+    def x_language(self, x_language):
+        """Sets the x_language of this ShowAutoUpgradePolicyRequest.
+
+        语言。默认en-us。
+
+        :param x_language: The x_language of this ShowAutoUpgradePolicyRequest.
+        :type x_language: str
+        """
+        self._x_language = x_language
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -106,7 +133,7 @@ class CreateTaskResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CreateTaskResponse):
+        if not isinstance(other, ShowAutoUpgradePolicyRequest):
             return False
 
         return self.__dict__ == other.__dict__

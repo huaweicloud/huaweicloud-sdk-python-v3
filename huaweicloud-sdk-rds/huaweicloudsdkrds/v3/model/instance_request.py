@@ -44,7 +44,8 @@ class InstanceRequest:
         'unchangeable_param': 'UnchangeableParam',
         'dry_run': 'bool',
         'count': 'int',
-        'serverless_info': 'ServerlessInfo'
+        'serverless_info': 'ServerlessInfo',
+        'is_auto_upgrade': 'bool'
     }
 
     attribute_map = {
@@ -75,10 +76,11 @@ class InstanceRequest:
         'unchangeable_param': 'unchangeable_param',
         'dry_run': 'dry_run',
         'count': 'count',
-        'serverless_info': 'serverless_info'
+        'serverless_info': 'serverless_info',
+        'is_auto_upgrade': 'is_auto_upgrade'
     }
 
-    def __init__(self, name=None, datastore=None, ha=None, configuration_id=None, port=None, password=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, volume=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, data_vip=None, security_group_id=None, charge_info=None, time_zone=None, dsspool_id=None, replica_of_id=None, restore_point=None, collation=None, tags=None, unchangeable_param=None, dry_run=None, count=None, serverless_info=None):
+    def __init__(self, name=None, datastore=None, ha=None, configuration_id=None, port=None, password=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, volume=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, data_vip=None, security_group_id=None, charge_info=None, time_zone=None, dsspool_id=None, replica_of_id=None, restore_point=None, collation=None, tags=None, unchangeable_param=None, dry_run=None, count=None, serverless_info=None, is_auto_upgrade=None):
         """InstanceRequest
 
         The model defined in huaweicloud sdk
@@ -139,6 +141,8 @@ class InstanceRequest:
         :type count: int
         :param serverless_info: 
         :type serverless_info: :class:`huaweicloudsdkrds.v3.ServerlessInfo`
+        :param is_auto_upgrade: 是否开启自动小版本升级，默认为false，仅支持PostgreSQL。 - true：开启自动小版本升级。 - false：不开启自动小版本升级。
+        :type is_auto_upgrade: bool
         """
         
         
@@ -171,6 +175,7 @@ class InstanceRequest:
         self._dry_run = None
         self._count = None
         self._serverless_info = None
+        self._is_auto_upgrade = None
         self.discriminator = None
 
         self.name = name
@@ -220,6 +225,8 @@ class InstanceRequest:
             self.count = count
         if serverless_info is not None:
             self.serverless_info = serverless_info
+        if is_auto_upgrade is not None:
+            self.is_auto_upgrade = is_auto_upgrade
 
     @property
     def name(self):
@@ -804,6 +811,28 @@ class InstanceRequest:
         :type serverless_info: :class:`huaweicloudsdkrds.v3.ServerlessInfo`
         """
         self._serverless_info = serverless_info
+
+    @property
+    def is_auto_upgrade(self):
+        """Gets the is_auto_upgrade of this InstanceRequest.
+
+        是否开启自动小版本升级，默认为false，仅支持PostgreSQL。 - true：开启自动小版本升级。 - false：不开启自动小版本升级。
+
+        :return: The is_auto_upgrade of this InstanceRequest.
+        :rtype: bool
+        """
+        return self._is_auto_upgrade
+
+    @is_auto_upgrade.setter
+    def is_auto_upgrade(self, is_auto_upgrade):
+        """Sets the is_auto_upgrade of this InstanceRequest.
+
+        是否开启自动小版本升级，默认为false，仅支持PostgreSQL。 - true：开启自动小版本升级。 - false：不开启自动小版本升级。
+
+        :param is_auto_upgrade: The is_auto_upgrade of this InstanceRequest.
+        :type is_auto_upgrade: bool
+        """
+        self._is_auto_upgrade = is_auto_upgrade
 
     def to_dict(self):
         """Returns the model properties as a dict"""

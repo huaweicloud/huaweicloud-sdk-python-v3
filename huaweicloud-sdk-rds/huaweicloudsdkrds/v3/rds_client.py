@@ -2756,7 +2756,7 @@ class RdsClient(Client):
         return http_info
 
     def list_dr_relations(self, request):
-        """list_dr_relations
+        """批量查询容灾实例信息
 
         批量查询容灾实例信息
         
@@ -6648,6 +6648,75 @@ class RdsClient(Client):
 
         return http_info
 
+    def set_auto_upgrade_policy(self, request):
+        """设置实例内核小版本自动升级策略
+
+        设置实例内核小版本自动升级策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SetAutoUpgradePolicy
+        :type request: :class:`huaweicloudsdkrds.v3.SetAutoUpgradePolicyRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.SetAutoUpgradePolicyResponse`
+        """
+        http_info = self._set_auto_upgrade_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_auto_upgrade_policy_invoker(self, request):
+        http_info = self._set_auto_upgrade_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _set_auto_upgrade_policy_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/db-auto-upgrade",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetAutoUpgradePolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def set_backup_policy(self, request):
         """设置自动备份策略
 
@@ -7405,6 +7474,73 @@ class RdsClient(Client):
 
         return http_info
 
+    def show_auto_upgrade_policy(self, request):
+        """查询实例内核小版本自动升级策略
+
+        查询实例内核小版本自动升级策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAutoUpgradePolicy
+        :type request: :class:`huaweicloudsdkrds.v3.ShowAutoUpgradePolicyRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ShowAutoUpgradePolicyResponse`
+        """
+        http_info = self._show_auto_upgrade_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_auto_upgrade_policy_invoker(self, request):
+        http_info = self._show_auto_upgrade_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_auto_upgrade_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/db-auto-upgrade",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAutoUpgradePolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_available_version(self, request):
         """show_available_version
 
@@ -7711,6 +7847,75 @@ class RdsClient(Client):
             path_params['config_id'] = local_var_params['config_id']
 
         query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_database_level_database(self, request):
+        """查询库级备份包含的库
+
+        查询库级备份包含的库
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowDatabaseLevelDatabase
+        :type request: :class:`huaweicloudsdkrds.v3.ShowDatabaseLevelDatabaseRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ShowDatabaseLevelDatabaseResponse`
+        """
+        http_info = self._show_database_level_database_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_database_level_database_invoker(self, request):
+        http_info = self._show_database_level_database_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_database_level_database_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/database/db-table-name",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDatabaseLevelDatabaseResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'backup_id' in local_var_params:
+            query_params.append(('backup_id', local_var_params['backup_id']))
 
         header_params = {}
         if 'x_language' in local_var_params:

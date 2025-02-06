@@ -53,7 +53,8 @@ class ShowClusterSupportConfigurationRequest:
         self._network_mode = None
         self.discriminator = None
 
-        self.cluster_id = cluster_id
+        if cluster_id is not None:
+            self.cluster_id = cluster_id
         self.cluster_type = cluster_type
         self.cluster_version = cluster_version
         self.network_mode = network_mode

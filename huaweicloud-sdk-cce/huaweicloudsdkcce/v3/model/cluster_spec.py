@@ -42,6 +42,7 @@ class ClusterSpec:
         'enable_dist_mgt': 'bool',
         'deletion_protection': 'bool',
         'configurations_override': 'list[PackageConfiguration]',
+        'cluster_ops': 'ClusterOps',
         'encryption_config': 'EncryptionConfig'
     }
 
@@ -71,10 +72,11 @@ class ClusterSpec:
         'enable_dist_mgt': 'enableDistMgt',
         'deletion_protection': 'deletionProtection',
         'configurations_override': 'configurationsOverride',
+        'cluster_ops': 'clusterOps',
         'encryption_config': 'encryptionConfig'
     }
 
-    def __init__(self, category=None, type=None, flavor=None, version=None, platform_version=None, description=None, custom_san=None, ipv6enable=None, host_network=None, container_network=None, eni_network=None, service_network=None, authentication=None, billing_mode=None, masters=None, kubernetes_svc_ip_range=None, cluster_tags=None, kube_proxy_mode=None, az=None, extend_param=None, support_istio=None, enable_master_volume_encryption=None, enable_dist_mgt=None, deletion_protection=None, configurations_override=None, encryption_config=None):
+    def __init__(self, category=None, type=None, flavor=None, version=None, platform_version=None, description=None, custom_san=None, ipv6enable=None, host_network=None, container_network=None, eni_network=None, service_network=None, authentication=None, billing_mode=None, masters=None, kubernetes_svc_ip_range=None, cluster_tags=None, kube_proxy_mode=None, az=None, extend_param=None, support_istio=None, enable_master_volume_encryption=None, enable_dist_mgt=None, deletion_protection=None, configurations_override=None, cluster_ops=None, encryption_config=None):
         """ClusterSpec
 
         The model defined in huaweicloud sdk
@@ -129,6 +131,8 @@ class ClusterSpec:
         :type deletion_protection: bool
         :param configurations_override: 覆盖集群默认组件配置  若指定了不支持的组件或组件不支持的参数，该配置项将被忽略。  当前支持的可配置组件及其参数详见 [[配置管理](https://support.huaweicloud.com/usermanual-cce/cce_10_0213.html)](tag:hws) [[配置管理](https://support.huaweicloud.com/intl/zh-cn/usermanual-cce/cce_10_0213.html)](tag:hws_hk) 
         :type configurations_override: list[:class:`huaweicloudsdkcce.v3.PackageConfiguration`]
+        :param cluster_ops: 
+        :type cluster_ops: :class:`huaweicloudsdkcce.v3.ClusterOps`
         :param encryption_config: 
         :type encryption_config: :class:`huaweicloudsdkcce.v3.EncryptionConfig`
         """
@@ -160,6 +164,7 @@ class ClusterSpec:
         self._enable_dist_mgt = None
         self._deletion_protection = None
         self._configurations_override = None
+        self._cluster_ops = None
         self._encryption_config = None
         self.discriminator = None
 
@@ -210,6 +215,8 @@ class ClusterSpec:
             self.deletion_protection = deletion_protection
         if configurations_override is not None:
             self.configurations_override = configurations_override
+        if cluster_ops is not None:
+            self.cluster_ops = cluster_ops
         if encryption_config is not None:
             self.encryption_config = encryption_config
 
@@ -738,6 +745,24 @@ class ClusterSpec:
         :type configurations_override: list[:class:`huaweicloudsdkcce.v3.PackageConfiguration`]
         """
         self._configurations_override = configurations_override
+
+    @property
+    def cluster_ops(self):
+        """Gets the cluster_ops of this ClusterSpec.
+
+        :return: The cluster_ops of this ClusterSpec.
+        :rtype: :class:`huaweicloudsdkcce.v3.ClusterOps`
+        """
+        return self._cluster_ops
+
+    @cluster_ops.setter
+    def cluster_ops(self, cluster_ops):
+        """Sets the cluster_ops of this ClusterSpec.
+
+        :param cluster_ops: The cluster_ops of this ClusterSpec.
+        :type cluster_ops: :class:`huaweicloudsdkcce.v3.ClusterOps`
+        """
+        self._cluster_ops = cluster_ops
 
     @property
     def encryption_config(self):

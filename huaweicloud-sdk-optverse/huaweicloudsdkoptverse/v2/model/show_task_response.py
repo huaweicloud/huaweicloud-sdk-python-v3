@@ -19,90 +19,83 @@ class ShowTaskResponse(SdkResponse):
 
     openapi_types = {
         'task_id': 'str',
-        'status': 'str',
         'input_json': 'object',
-        'input_url': 'str',
+        'status': 'str',
+        'progress': 'object',
+        'output_json': 'object',
         'start_time': 'datetime',
         'end_time': 'datetime',
-        'create_time': 'datetime',
-        'output_json': 'object',
-        'output_url': 'str'
+        'create_time': 'datetime'
     }
 
     attribute_map = {
         'task_id': 'task_id',
-        'status': 'status',
         'input_json': 'input_json',
-        'input_url': 'input_url',
+        'status': 'status',
+        'progress': 'progress',
+        'output_json': 'output_json',
         'start_time': 'start_time',
         'end_time': 'end_time',
-        'create_time': 'create_time',
-        'output_json': 'output_json',
-        'output_url': 'output_url'
+        'create_time': 'create_time'
     }
 
-    def __init__(self, task_id=None, status=None, input_json=None, input_url=None, start_time=None, end_time=None, create_time=None, output_json=None, output_url=None):
+    def __init__(self, task_id=None, input_json=None, status=None, progress=None, output_json=None, start_time=None, end_time=None, create_time=None):
         """ShowTaskResponse
 
         The model defined in huaweicloud sdk
 
-        :param task_id: 任务编号
+        :param task_id: 任务ID
         :type task_id: str
-        :param status: 任务运行状态，暂考虑取值仅为 Running/Failed/Successed
-        :type status: str
-        :param input_json: 如果提交任务使用了input_enable参数，并且创建任务使用的是json格式非文件方式，该值为输入的字符串; 对应数据结构参见创建任务时的结构体
+        :param input_json: 用户输入
         :type input_json: object
-        :param input_url: 如果提交任务使用了input_enable参数，并且创建任务使用的是文件方式，该值为OBS对应的文件绝对路径
-        :type input_url: str
-        :param start_time: 开始时间（UTC）
-        :type start_time: datetime
-        :param end_time: 结束时间（UTC）
-        :type end_time: datetime
-        :param create_time: 创建时间（UTC）
-        :type create_time: datetime
-        :param output_json: 任务处理结果，json格式；每个子服务该对象结构不同，框架层不解析具体key，运行态直接拷贝算法服务返回信息、
+        :param status: 状态
+        :type status: str
+        :param progress: 任务进度
+        :type progress: object
+        :param output_json: 输出
         :type output_json: object
-        :param output_url: 任务结果文件对应的绝对地址，具体值由租户OBS对应的待存储路径前缀和文件名组成，文件名服务端固定用task_id命名
-        :type output_url: str
+        :param start_time: 开始时间
+        :type start_time: datetime
+        :param end_time: 结束时间
+        :type end_time: datetime
+        :param create_time: 创建时间
+        :type create_time: datetime
         """
         
         super(ShowTaskResponse, self).__init__()
 
         self._task_id = None
-        self._status = None
         self._input_json = None
-        self._input_url = None
+        self._status = None
+        self._progress = None
+        self._output_json = None
         self._start_time = None
         self._end_time = None
         self._create_time = None
-        self._output_json = None
-        self._output_url = None
         self.discriminator = None
 
         if task_id is not None:
             self.task_id = task_id
-        if status is not None:
-            self.status = status
         if input_json is not None:
             self.input_json = input_json
-        if input_url is not None:
-            self.input_url = input_url
+        if status is not None:
+            self.status = status
+        if progress is not None:
+            self.progress = progress
+        if output_json is not None:
+            self.output_json = output_json
         if start_time is not None:
             self.start_time = start_time
         if end_time is not None:
             self.end_time = end_time
         if create_time is not None:
             self.create_time = create_time
-        if output_json is not None:
-            self.output_json = output_json
-        if output_url is not None:
-            self.output_url = output_url
 
     @property
     def task_id(self):
         """Gets the task_id of this ShowTaskResponse.
 
-        任务编号
+        任务ID
 
         :return: The task_id of this ShowTaskResponse.
         :rtype: str
@@ -113,7 +106,7 @@ class ShowTaskResponse(SdkResponse):
     def task_id(self, task_id):
         """Sets the task_id of this ShowTaskResponse.
 
-        任务编号
+        任务ID
 
         :param task_id: The task_id of this ShowTaskResponse.
         :type task_id: str
@@ -121,32 +114,10 @@ class ShowTaskResponse(SdkResponse):
         self._task_id = task_id
 
     @property
-    def status(self):
-        """Gets the status of this ShowTaskResponse.
-
-        任务运行状态，暂考虑取值仅为 Running/Failed/Successed
-
-        :return: The status of this ShowTaskResponse.
-        :rtype: str
-        """
-        return self._status
-
-    @status.setter
-    def status(self, status):
-        """Sets the status of this ShowTaskResponse.
-
-        任务运行状态，暂考虑取值仅为 Running/Failed/Successed
-
-        :param status: The status of this ShowTaskResponse.
-        :type status: str
-        """
-        self._status = status
-
-    @property
     def input_json(self):
         """Gets the input_json of this ShowTaskResponse.
 
-        如果提交任务使用了input_enable参数，并且创建任务使用的是json格式非文件方式，该值为输入的字符串; 对应数据结构参见创建任务时的结构体
+        用户输入
 
         :return: The input_json of this ShowTaskResponse.
         :rtype: object
@@ -157,7 +128,7 @@ class ShowTaskResponse(SdkResponse):
     def input_json(self, input_json):
         """Sets the input_json of this ShowTaskResponse.
 
-        如果提交任务使用了input_enable参数，并且创建任务使用的是json格式非文件方式，该值为输入的字符串; 对应数据结构参见创建任务时的结构体
+        用户输入
 
         :param input_json: The input_json of this ShowTaskResponse.
         :type input_json: object
@@ -165,98 +136,54 @@ class ShowTaskResponse(SdkResponse):
         self._input_json = input_json
 
     @property
-    def input_url(self):
-        """Gets the input_url of this ShowTaskResponse.
+    def status(self):
+        """Gets the status of this ShowTaskResponse.
 
-        如果提交任务使用了input_enable参数，并且创建任务使用的是文件方式，该值为OBS对应的文件绝对路径
+        状态
 
-        :return: The input_url of this ShowTaskResponse.
+        :return: The status of this ShowTaskResponse.
         :rtype: str
         """
-        return self._input_url
+        return self._status
 
-    @input_url.setter
-    def input_url(self, input_url):
-        """Sets the input_url of this ShowTaskResponse.
+    @status.setter
+    def status(self, status):
+        """Sets the status of this ShowTaskResponse.
 
-        如果提交任务使用了input_enable参数，并且创建任务使用的是文件方式，该值为OBS对应的文件绝对路径
+        状态
 
-        :param input_url: The input_url of this ShowTaskResponse.
-        :type input_url: str
+        :param status: The status of this ShowTaskResponse.
+        :type status: str
         """
-        self._input_url = input_url
+        self._status = status
 
     @property
-    def start_time(self):
-        """Gets the start_time of this ShowTaskResponse.
+    def progress(self):
+        """Gets the progress of this ShowTaskResponse.
 
-        开始时间（UTC）
+        任务进度
 
-        :return: The start_time of this ShowTaskResponse.
-        :rtype: datetime
+        :return: The progress of this ShowTaskResponse.
+        :rtype: object
         """
-        return self._start_time
+        return self._progress
 
-    @start_time.setter
-    def start_time(self, start_time):
-        """Sets the start_time of this ShowTaskResponse.
+    @progress.setter
+    def progress(self, progress):
+        """Sets the progress of this ShowTaskResponse.
 
-        开始时间（UTC）
+        任务进度
 
-        :param start_time: The start_time of this ShowTaskResponse.
-        :type start_time: datetime
+        :param progress: The progress of this ShowTaskResponse.
+        :type progress: object
         """
-        self._start_time = start_time
-
-    @property
-    def end_time(self):
-        """Gets the end_time of this ShowTaskResponse.
-
-        结束时间（UTC）
-
-        :return: The end_time of this ShowTaskResponse.
-        :rtype: datetime
-        """
-        return self._end_time
-
-    @end_time.setter
-    def end_time(self, end_time):
-        """Sets the end_time of this ShowTaskResponse.
-
-        结束时间（UTC）
-
-        :param end_time: The end_time of this ShowTaskResponse.
-        :type end_time: datetime
-        """
-        self._end_time = end_time
-
-    @property
-    def create_time(self):
-        """Gets the create_time of this ShowTaskResponse.
-
-        创建时间（UTC）
-
-        :return: The create_time of this ShowTaskResponse.
-        :rtype: datetime
-        """
-        return self._create_time
-
-    @create_time.setter
-    def create_time(self, create_time):
-        """Sets the create_time of this ShowTaskResponse.
-
-        创建时间（UTC）
-
-        :param create_time: The create_time of this ShowTaskResponse.
-        :type create_time: datetime
-        """
-        self._create_time = create_time
+        self._progress = progress
 
     @property
     def output_json(self):
         """Gets the output_json of this ShowTaskResponse.
 
-        任务处理结果，json格式；每个子服务该对象结构不同，框架层不解析具体key，运行态直接拷贝算法服务返回信息、
+        输出
 
         :return: The output_json of this ShowTaskResponse.
         :rtype: object
@@ -267,7 +194,7 @@ class ShowTaskResponse(SdkResponse):
     def output_json(self, output_json):
         """Sets the output_json of this ShowTaskResponse.
 
-        任务处理结果，json格式；每个子服务该对象结构不同，框架层不解析具体key，运行态直接拷贝算法服务返回信息、
+        输出
 
         :param output_json: The output_json of this ShowTaskResponse.
         :type output_json: object
@@ -275,26 +202,70 @@ class ShowTaskResponse(SdkResponse):
         self._output_json = output_json
 
     @property
-    def output_url(self):
-        """Gets the output_url of this ShowTaskResponse.
+    def start_time(self):
+        """Gets the start_time of this ShowTaskResponse.
 
-        任务结果文件对应的绝对地址，具体值由租户OBS对应的待存储路径前缀和文件名组成，文件名服务端固定用task_id命名
+        开始时间
 
-        :return: The output_url of this ShowTaskResponse.
-        :rtype: str
+        :return: The start_time of this ShowTaskResponse.
+        :rtype: datetime
         """
-        return self._output_url
+        return self._start_time
 
-    @output_url.setter
-    def output_url(self, output_url):
-        """Sets the output_url of this ShowTaskResponse.
+    @start_time.setter
+    def start_time(self, start_time):
+        """Sets the start_time of this ShowTaskResponse.
 
-        任务结果文件对应的绝对地址，具体值由租户OBS对应的待存储路径前缀和文件名组成，文件名服务端固定用task_id命名
+        开始时间
 
-        :param output_url: The output_url of this ShowTaskResponse.
-        :type output_url: str
+        :param start_time: The start_time of this ShowTaskResponse.
+        :type start_time: datetime
         """
-        self._output_url = output_url
+        self._start_time = start_time
+
+    @property
+    def end_time(self):
+        """Gets the end_time of this ShowTaskResponse.
+
+        结束时间
+
+        :return: The end_time of this ShowTaskResponse.
+        :rtype: datetime
+        """
+        return self._end_time
+
+    @end_time.setter
+    def end_time(self, end_time):
+        """Sets the end_time of this ShowTaskResponse.
+
+        结束时间
+
+        :param end_time: The end_time of this ShowTaskResponse.
+        :type end_time: datetime
+        """
+        self._end_time = end_time
+
+    @property
+    def create_time(self):
+        """Gets the create_time of this ShowTaskResponse.
+
+        创建时间
+
+        :return: The create_time of this ShowTaskResponse.
+        :rtype: datetime
+        """
+        return self._create_time
+
+    @create_time.setter
+    def create_time(self, create_time):
+        """Sets the create_time of this ShowTaskResponse.
+
+        创建时间
+
+        :param create_time: The create_time of this ShowTaskResponse.
+        :type create_time: datetime
+        """
+        self._create_time = create_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -22,6 +22,7 @@ from huaweicloudsdkcce.v3.model.addon_instance_status import AddonInstanceStatus
 from huaweicloudsdkcce.v3.model.addon_metadata import AddonMetadata
 from huaweicloudsdkcce.v3.model.addon_risks import AddonRisks
 from huaweicloudsdkcce.v3.model.addon_template import AddonTemplate
+from huaweicloudsdkcce.v3.model.alarm_info import AlarmInfo
 from huaweicloudsdkcce.v3.model.authenticating_proxy import AuthenticatingProxy
 from huaweicloudsdkcce.v3.model.authentication import Authentication
 from huaweicloudsdkcce.v3.model.autopilot_authentication import AutopilotAuthentication
@@ -78,6 +79,7 @@ from huaweicloudsdkcce.v3.model.cluster_metadata import ClusterMetadata
 from huaweicloudsdkcce.v3.model.cluster_metadata_for_update import ClusterMetadataForUpdate
 from huaweicloudsdkcce.v3.model.cluster_node_information import ClusterNodeInformation
 from huaweicloudsdkcce.v3.model.cluster_node_information_metadata import ClusterNodeInformationMetadata
+from huaweicloudsdkcce.v3.model.cluster_ops import ClusterOps
 from huaweicloudsdkcce.v3.model.cluster_spec import ClusterSpec
 from huaweicloudsdkcce.v3.model.cluster_status import ClusterStatus
 from huaweicloudsdkcce.v3.model.cluster_upgrade_action import ClusterUpgradeAction

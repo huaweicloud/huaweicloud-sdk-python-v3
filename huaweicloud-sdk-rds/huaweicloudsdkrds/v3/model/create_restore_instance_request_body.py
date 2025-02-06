@@ -41,7 +41,8 @@ class CreateRestoreInstanceRequestBody:
         'collation': 'str',
         'tags': 'list[TagWithKeyValue]',
         'serverless_info': 'ServerlessInfo',
-        'dry_run': 'bool'
+        'dry_run': 'bool',
+        'is_auto_upgrade': 'bool'
     }
 
     attribute_map = {
@@ -69,10 +70,11 @@ class CreateRestoreInstanceRequestBody:
         'collation': 'collation',
         'tags': 'tags',
         'serverless_info': 'serverless_info',
-        'dry_run': 'dry_run'
+        'dry_run': 'dry_run',
+        'is_auto_upgrade': 'is_auto_upgrade'
     }
 
-    def __init__(self, name=None, datastore=None, ha=None, configuration_id=None, port=None, password=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, volume=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, data_vip=None, security_group_id=None, charge_info=None, time_zone=None, dsspool_id=None, restore_point=None, collation=None, tags=None, serverless_info=None, dry_run=None):
+    def __init__(self, name=None, datastore=None, ha=None, configuration_id=None, port=None, password=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, volume=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, data_vip=None, security_group_id=None, charge_info=None, time_zone=None, dsspool_id=None, restore_point=None, collation=None, tags=None, serverless_info=None, dry_run=None, is_auto_upgrade=None):
         """CreateRestoreInstanceRequestBody
 
         The model defined in huaweicloud sdk
@@ -127,6 +129,8 @@ class CreateRestoreInstanceRequestBody:
         :type serverless_info: :class:`huaweicloudsdkrds.v3.ServerlessInfo`
         :param dry_run: 是否只预检此次请求，仅支持MySQL。 - true：发送参数检查请求，不会创建实例。   - 检查通过：返回202状态码。   - 检查不通过：返回对应错误码，详情请参考错误码。 - false：发送正常请求，通过检查后，并且执行创建实例的请求。
         :type dry_run: bool
+        :param is_auto_upgrade: 是否开启自动小版本升级，默认为false，仅支持PostgreSQL。 - true：开启自动小版本升级。 - false：不开启自动小版本升级。
+        :type is_auto_upgrade: bool
         """
         
         
@@ -156,6 +160,7 @@ class CreateRestoreInstanceRequestBody:
         self._tags = None
         self._serverless_info = None
         self._dry_run = None
+        self._is_auto_upgrade = None
         self.discriminator = None
 
         self.name = name
@@ -204,6 +209,8 @@ class CreateRestoreInstanceRequestBody:
             self.serverless_info = serverless_info
         if dry_run is not None:
             self.dry_run = dry_run
+        if is_auto_upgrade is not None:
+            self.is_auto_upgrade = is_auto_upgrade
 
     @property
     def name(self):
@@ -726,6 +733,28 @@ class CreateRestoreInstanceRequestBody:
         :type dry_run: bool
         """
         self._dry_run = dry_run
+
+    @property
+    def is_auto_upgrade(self):
+        """Gets the is_auto_upgrade of this CreateRestoreInstanceRequestBody.
+
+        是否开启自动小版本升级，默认为false，仅支持PostgreSQL。 - true：开启自动小版本升级。 - false：不开启自动小版本升级。
+
+        :return: The is_auto_upgrade of this CreateRestoreInstanceRequestBody.
+        :rtype: bool
+        """
+        return self._is_auto_upgrade
+
+    @is_auto_upgrade.setter
+    def is_auto_upgrade(self, is_auto_upgrade):
+        """Sets the is_auto_upgrade of this CreateRestoreInstanceRequestBody.
+
+        是否开启自动小版本升级，默认为false，仅支持PostgreSQL。 - true：开启自动小版本升级。 - false：不开启自动小版本升级。
+
+        :param is_auto_upgrade: The is_auto_upgrade of this CreateRestoreInstanceRequestBody.
+        :type is_auto_upgrade: bool
+        """
+        self._is_auto_upgrade = is_auto_upgrade
 
     def to_dict(self):
         """Returns the model properties as a dict"""

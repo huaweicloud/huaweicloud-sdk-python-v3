@@ -17,97 +17,41 @@ class CreateTaskRequest:
     sensitive_list = []
 
     openapi_types = {
-        'x_apig_app_code': 'str',
-        'service_group': 'str',
         'service_type': 'str',
         'body': 'TaskDto'
     }
 
     attribute_map = {
-        'x_apig_app_code': 'X-Apig-AppCode',
-        'service_group': 'service_group',
         'service_type': 'service_type',
         'body': 'body'
     }
 
-    def __init__(self, x_apig_app_code=None, service_group=None, service_type=None, body=None):
+    def __init__(self, service_type=None, body=None):
         """CreateTaskRequest
 
         The model defined in huaweicloud sdk
 
-        :param x_apig_app_code: 用户凭证
-        :type x_apig_app_code: str
-        :param service_group: 服务类别，针对不同服务类场景，为用户提前填充对应值，用户侧不需单独赋值；当前仅支持 二维切割 2dcut ，便于后续扩展
-        :type service_group: str
-        :param service_type: 子服务类型，针对不同服务，为用户提前填充对应值，用户侧不需单独赋值；服装切割固定为 irregular-textile，雕刻机切割固定为 engraving-machine-cutting， 板材切割固定为 regular-plate
+        :param service_type: 服务类型，针对不同服务，为用户提前填充对应值，用户侧不需单独赋值；二维切割-方形件固定为 regular-plate，二维切割-异形件固定为 irregular-textile， 数学规划求解器固定为 optverse-mpsolver
         :type service_type: str
         :param body: Body of the CreateTaskRequest
-        :type body: :class:`huaweicloudsdkoptverse.v1.TaskDto`
+        :type body: :class:`huaweicloudsdkoptverse.v2.TaskDto`
         """
         
         
 
-        self._x_apig_app_code = None
-        self._service_group = None
         self._service_type = None
         self._body = None
         self.discriminator = None
 
-        self.x_apig_app_code = x_apig_app_code
-        self.service_group = service_group
         self.service_type = service_type
         if body is not None:
             self.body = body
 
     @property
-    def x_apig_app_code(self):
-        """Gets the x_apig_app_code of this CreateTaskRequest.
-
-        用户凭证
-
-        :return: The x_apig_app_code of this CreateTaskRequest.
-        :rtype: str
-        """
-        return self._x_apig_app_code
-
-    @x_apig_app_code.setter
-    def x_apig_app_code(self, x_apig_app_code):
-        """Sets the x_apig_app_code of this CreateTaskRequest.
-
-        用户凭证
-
-        :param x_apig_app_code: The x_apig_app_code of this CreateTaskRequest.
-        :type x_apig_app_code: str
-        """
-        self._x_apig_app_code = x_apig_app_code
-
-    @property
-    def service_group(self):
-        """Gets the service_group of this CreateTaskRequest.
-
-        服务类别，针对不同服务类场景，为用户提前填充对应值，用户侧不需单独赋值；当前仅支持 二维切割 2dcut ，便于后续扩展
-
-        :return: The service_group of this CreateTaskRequest.
-        :rtype: str
-        """
-        return self._service_group
-
-    @service_group.setter
-    def service_group(self, service_group):
-        """Sets the service_group of this CreateTaskRequest.
-
-        服务类别，针对不同服务类场景，为用户提前填充对应值，用户侧不需单独赋值；当前仅支持 二维切割 2dcut ，便于后续扩展
-
-        :param service_group: The service_group of this CreateTaskRequest.
-        :type service_group: str
-        """
-        self._service_group = service_group
-
-    @property
     def service_type(self):
         """Gets the service_type of this CreateTaskRequest.
 
-        子服务类型，针对不同服务，为用户提前填充对应值，用户侧不需单独赋值；服装切割固定为 irregular-textile，雕刻机切割固定为 engraving-machine-cutting， 板材切割固定为 regular-plate
+        服务类型，针对不同服务，为用户提前填充对应值，用户侧不需单独赋值；二维切割-方形件固定为 regular-plate，二维切割-异形件固定为 irregular-textile， 数学规划求解器固定为 optverse-mpsolver
 
         :return: The service_type of this CreateTaskRequest.
         :rtype: str
@@ -118,7 +62,7 @@ class CreateTaskRequest:
     def service_type(self, service_type):
         """Sets the service_type of this CreateTaskRequest.
 
-        子服务类型，针对不同服务，为用户提前填充对应值，用户侧不需单独赋值；服装切割固定为 irregular-textile，雕刻机切割固定为 engraving-machine-cutting， 板材切割固定为 regular-plate
+        服务类型，针对不同服务，为用户提前填充对应值，用户侧不需单独赋值；二维切割-方形件固定为 regular-plate，二维切割-异形件固定为 irregular-textile， 数学规划求解器固定为 optverse-mpsolver
 
         :param service_type: The service_type of this CreateTaskRequest.
         :type service_type: str
@@ -130,7 +74,7 @@ class CreateTaskRequest:
         """Gets the body of this CreateTaskRequest.
 
         :return: The body of this CreateTaskRequest.
-        :rtype: :class:`huaweicloudsdkoptverse.v1.TaskDto`
+        :rtype: :class:`huaweicloudsdkoptverse.v2.TaskDto`
         """
         return self._body
 
@@ -139,7 +83,7 @@ class CreateTaskRequest:
         """Sets the body of this CreateTaskRequest.
 
         :param body: The body of this CreateTaskRequest.
-        :type body: :class:`huaweicloudsdkoptverse.v1.TaskDto`
+        :type body: :class:`huaweicloudsdkoptverse.v2.TaskDto`
         """
         self._body = body
 

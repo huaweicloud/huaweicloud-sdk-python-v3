@@ -1,3 +1,58 @@
+# 3.1.134 2025-02-06
+
+### HuaweiCloud SDK CCE
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowClusterSupportConfiguration**
+    - changes of request param
+      - `+ cluster_id`
+      - `+ cluster_type`
+      - `+ cluster_version`
+      - `+ network_mode`
+      - `- cluster_id`
+      - `- cluster_type`
+      - `- cluster_version`
+      - `- network_mode`
+  - **ShowCluster**
+    - changes of response param
+      - `+ spec.clusterOps`
+  - **UpdateCluster**
+    - changes of response param
+      - `+ spec.clusterOps`
+  - **DeleteCluster**
+    - changes of response param
+      - `+ spec.clusterOps`
+  - **CreateCluster**
+    - changes of request param
+      - `+ spec.clusterOps`
+    - changes of response param
+      - `+ spec.clusterOps`
+  - **ListClusters**
+    - changes of response param
+      - `+ items.spec.clusterOps`
+
+### HuaweiCloud SDK RDS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the APIs `ShowDatabaseLevelDatabase`, `ShowAutoUpgradePolicy`, `SetAutoUpgradePolicy`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateInstance**
+    - changes of request param
+      - `+ is_auto_upgrade`
+  - **CreateRestoreInstance**
+    - changes of request param
+      - `+ is_auto_upgrade`
+
 # 3.1.133 2025-01-23
 
 ### HuaweiCloud SDK BSS

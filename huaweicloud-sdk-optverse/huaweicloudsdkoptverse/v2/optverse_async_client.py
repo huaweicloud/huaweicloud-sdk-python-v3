@@ -17,7 +17,7 @@ except ImportError as e:
 class OptVerseAsyncClient(Client):
     def __init__(self):
         super(OptVerseAsyncClient, self).__init__()
-        self.model_package = importlib.import_module("huaweicloudsdkoptverse.v1.model")
+        self.model_package = importlib.import_module("huaweicloudsdkoptverse.v2.model")
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -41,8 +41,8 @@ class OptVerseAsyncClient(Client):
 
 
         :param request: Request instance for CreateTask
-        :type request: :class:`huaweicloudsdkoptverse.v1.CreateTaskRequest`
-        :rtype: :class:`huaweicloudsdkoptverse.v1.CreateTaskResponse`
+        :type request: :class:`huaweicloudsdkoptverse.v2.CreateTaskRequest`
+        :rtype: :class:`huaweicloudsdkoptverse.v2.CreateTaskResponse`
         """
         http_info = self._create_task_http_info(request)
         return self._call_api(**http_info)
@@ -54,7 +54,7 @@ class OptVerseAsyncClient(Client):
     def _create_task_http_info(self, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/v1/{project_id}/optverse/{service_group}/{service_type}/tasks",
+            "resource_path": "/v2/{project_id}/optverse/{service_type}/tasks",
             "request_type": request.__class__.__name__,
             "response_type": "CreateTaskResponse"
             }
@@ -66,16 +66,12 @@ class OptVerseAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'service_group' in local_var_params:
-            path_params['service_group'] = local_var_params['service_group']
         if 'service_type' in local_var_params:
             path_params['service_type'] = local_var_params['service_type']
 
         query_params = []
 
         header_params = {}
-        if 'x_apig_app_code' in local_var_params:
-            header_params['X-Apig-AppCode'] = local_var_params['x_apig_app_code']
 
         form_params = {}
 
@@ -88,7 +84,7 @@ class OptVerseAsyncClient(Client):
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=utf-8'])
+            ['application/json'])
 
         auth_settings = []
 
@@ -112,8 +108,8 @@ class OptVerseAsyncClient(Client):
 
 
         :param request: Request instance for DeleteTask
-        :type request: :class:`huaweicloudsdkoptverse.v1.DeleteTaskRequest`
-        :rtype: :class:`huaweicloudsdkoptverse.v1.DeleteTaskResponse`
+        :type request: :class:`huaweicloudsdkoptverse.v2.DeleteTaskRequest`
+        :rtype: :class:`huaweicloudsdkoptverse.v2.DeleteTaskResponse`
         """
         http_info = self._delete_task_http_info(request)
         return self._call_api(**http_info)
@@ -125,7 +121,7 @@ class OptVerseAsyncClient(Client):
     def _delete_task_http_info(self, request):
         http_info = {
             "method": "DELETE",
-            "resource_path": "/v1/{project_id}/optverse/{service_group}/{service_type}/tasks/{task_id}",
+            "resource_path": "/v2/{project_id}/optverse/{service_type}/tasks/{task_id}",
             "request_type": request.__class__.__name__,
             "response_type": "DeleteTaskResponse"
             }
@@ -137,8 +133,6 @@ class OptVerseAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'service_group' in local_var_params:
-            path_params['service_group'] = local_var_params['service_group']
         if 'service_type' in local_var_params:
             path_params['service_type'] = local_var_params['service_type']
         if 'task_id' in local_var_params:
@@ -147,8 +141,6 @@ class OptVerseAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_apig_app_code' in local_var_params:
-            header_params['X-Apig-AppCode'] = local_var_params['x_apig_app_code']
 
         form_params = {}
 
@@ -183,8 +175,8 @@ class OptVerseAsyncClient(Client):
 
 
         :param request: Request instance for ListTask
-        :type request: :class:`huaweicloudsdkoptverse.v1.ListTaskRequest`
-        :rtype: :class:`huaweicloudsdkoptverse.v1.ListTaskResponse`
+        :type request: :class:`huaweicloudsdkoptverse.v2.ListTaskRequest`
+        :rtype: :class:`huaweicloudsdkoptverse.v2.ListTaskResponse`
         """
         http_info = self._list_task_http_info(request)
         return self._call_api(**http_info)
@@ -196,7 +188,7 @@ class OptVerseAsyncClient(Client):
     def _list_task_http_info(self, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v1/{project_id}/optverse/{service_group}/{service_type}/tasks",
+            "resource_path": "/v2/{project_id}/optverse/{service_type}/tasks",
             "request_type": request.__class__.__name__,
             "response_type": "ListTaskResponse"
             }
@@ -208,8 +200,6 @@ class OptVerseAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'service_group' in local_var_params:
-            path_params['service_group'] = local_var_params['service_group']
         if 'service_type' in local_var_params:
             path_params['service_type'] = local_var_params['service_type']
 
@@ -220,8 +210,6 @@ class OptVerseAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
-        if 'x_apig_app_code' in local_var_params:
-            header_params['X-Apig-AppCode'] = local_var_params['x_apig_app_code']
 
         form_params = {}
 
@@ -256,8 +244,8 @@ class OptVerseAsyncClient(Client):
 
 
         :param request: Request instance for ShowTask
-        :type request: :class:`huaweicloudsdkoptverse.v1.ShowTaskRequest`
-        :rtype: :class:`huaweicloudsdkoptverse.v1.ShowTaskResponse`
+        :type request: :class:`huaweicloudsdkoptverse.v2.ShowTaskRequest`
+        :rtype: :class:`huaweicloudsdkoptverse.v2.ShowTaskResponse`
         """
         http_info = self._show_task_http_info(request)
         return self._call_api(**http_info)
@@ -269,7 +257,7 @@ class OptVerseAsyncClient(Client):
     def _show_task_http_info(self, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v1/{project_id}/optverse/{service_group}/{service_type}/tasks/{task_id}",
+            "resource_path": "/v2/{project_id}/optverse/{service_type}/tasks/{task_id}",
             "request_type": request.__class__.__name__,
             "response_type": "ShowTaskResponse"
             }
@@ -281,8 +269,6 @@ class OptVerseAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'service_group' in local_var_params:
-            path_params['service_group'] = local_var_params['service_group']
         if 'service_type' in local_var_params:
             path_params['service_type'] = local_var_params['service_type']
         if 'task_id' in local_var_params:
@@ -293,8 +279,6 @@ class OptVerseAsyncClient(Client):
             query_params.append(('input_enable', local_var_params['input_enable']))
 
         header_params = {}
-        if 'x_apig_app_code' in local_var_params:
-            header_params['X-Apig-AppCode'] = local_var_params['x_apig_app_code']
 
         form_params = {}
 

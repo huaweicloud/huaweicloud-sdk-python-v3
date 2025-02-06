@@ -2,11 +2,10 @@
 
 import six
 
-from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ListTaskResponse(SdkResponse):
+class CustomerModifyAutoUpgradePolicyReq:
 
     """
     Attributes:
@@ -18,80 +17,50 @@ class ListTaskResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'count': 'int',
-        'tasks': 'list[TaskListItemVo]'
+        'switch_option': 'bool'
     }
 
     attribute_map = {
-        'count': 'count',
-        'tasks': 'tasks'
+        'switch_option': 'switch_option'
     }
 
-    def __init__(self, count=None, tasks=None):
-        """ListTaskResponse
+    def __init__(self, switch_option=None):
+        """CustomerModifyAutoUpgradePolicyReq
 
         The model defined in huaweicloud sdk
 
-        :param count: 数量
-        :type count: int
-        :param tasks: 任务列表项视图
-        :type tasks: list[:class:`huaweicloudsdkoptverse.v1.TaskListItemVo`]
+        :param switch_option: 自动小版本升级开关选项 true：打开自动小版本升级 false：关闭自动小版本升级
+        :type switch_option: bool
         """
         
-        super(ListTaskResponse, self).__init__()
+        
 
-        self._count = None
-        self._tasks = None
+        self._switch_option = None
         self.discriminator = None
 
-        if count is not None:
-            self.count = count
-        if tasks is not None:
-            self.tasks = tasks
+        self.switch_option = switch_option
 
     @property
-    def count(self):
-        """Gets the count of this ListTaskResponse.
+    def switch_option(self):
+        """Gets the switch_option of this CustomerModifyAutoUpgradePolicyReq.
 
-        数量
+        自动小版本升级开关选项 true：打开自动小版本升级 false：关闭自动小版本升级
 
-        :return: The count of this ListTaskResponse.
-        :rtype: int
+        :return: The switch_option of this CustomerModifyAutoUpgradePolicyReq.
+        :rtype: bool
         """
-        return self._count
+        return self._switch_option
 
-    @count.setter
-    def count(self, count):
-        """Sets the count of this ListTaskResponse.
+    @switch_option.setter
+    def switch_option(self, switch_option):
+        """Sets the switch_option of this CustomerModifyAutoUpgradePolicyReq.
 
-        数量
+        自动小版本升级开关选项 true：打开自动小版本升级 false：关闭自动小版本升级
 
-        :param count: The count of this ListTaskResponse.
-        :type count: int
+        :param switch_option: The switch_option of this CustomerModifyAutoUpgradePolicyReq.
+        :type switch_option: bool
         """
-        self._count = count
-
-    @property
-    def tasks(self):
-        """Gets the tasks of this ListTaskResponse.
-
-        任务列表项视图
-
-        :return: The tasks of this ListTaskResponse.
-        :rtype: list[:class:`huaweicloudsdkoptverse.v1.TaskListItemVo`]
-        """
-        return self._tasks
-
-    @tasks.setter
-    def tasks(self, tasks):
-        """Sets the tasks of this ListTaskResponse.
-
-        任务列表项视图
-
-        :param tasks: The tasks of this ListTaskResponse.
-        :type tasks: list[:class:`huaweicloudsdkoptverse.v1.TaskListItemVo`]
-        """
-        self._tasks = tasks
+        self._switch_option = switch_option
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -135,7 +104,7 @@ class ListTaskResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ListTaskResponse):
+        if not isinstance(other, CustomerModifyAutoUpgradePolicyReq):
             return False
 
         return self.__dict__ == other.__dict__
