@@ -25,7 +25,11 @@ class ShowInstanceResp:
         'specification': 'str',
         'storage_space': 'int',
         'used_storage_space': 'int',
+        'dns_enable': 'bool',
         'connect_address': 'str',
+        'connect_domain_name': 'str',
+        'public_connect_address': 'str',
+        'public_connect_domain_name': 'str',
         'port': 'int',
         'status': 'str',
         'description': 'str',
@@ -44,6 +48,9 @@ class ShowInstanceResp:
         'publicip_address': 'str',
         'publicip_id': 'str',
         'management_connect_address': 'str',
+        'management_connect_domain_name': 'str',
+        'public_management_connect_address': 'str',
+        'public_management_connect_domain_name': 'str',
         'ssl_enable': 'bool',
         'enterprise_project_id': 'str',
         'is_logical_volume': 'bool',
@@ -54,6 +61,7 @@ class ShowInstanceResp:
         'security_group_name': 'str',
         'subnet_id': 'str',
         'available_zones': 'list[str]',
+        'available_zone_names': 'list[str]',
         'total_storage_space': 'int',
         'storage_resource_id': 'str',
         'storage_spec_code': 'str',
@@ -71,7 +79,11 @@ class ShowInstanceResp:
         'specification': 'specification',
         'storage_space': 'storage_space',
         'used_storage_space': 'used_storage_space',
+        'dns_enable': 'dns_enable',
         'connect_address': 'connect_address',
+        'connect_domain_name': 'connect_domain_name',
+        'public_connect_address': 'public_connect_address',
+        'public_connect_domain_name': 'public_connect_domain_name',
         'port': 'port',
         'status': 'status',
         'description': 'description',
@@ -90,6 +102,9 @@ class ShowInstanceResp:
         'publicip_address': 'publicip_address',
         'publicip_id': 'publicip_id',
         'management_connect_address': 'management_connect_address',
+        'management_connect_domain_name': 'management_connect_domain_name',
+        'public_management_connect_address': 'public_management_connect_address',
+        'public_management_connect_domain_name': 'public_management_connect_domain_name',
         'ssl_enable': 'ssl_enable',
         'enterprise_project_id': 'enterprise_project_id',
         'is_logical_volume': 'is_logical_volume',
@@ -100,6 +115,7 @@ class ShowInstanceResp:
         'security_group_name': 'security_group_name',
         'subnet_id': 'subnet_id',
         'available_zones': 'available_zones',
+        'available_zone_names': 'available_zone_names',
         'total_storage_space': 'total_storage_space',
         'storage_resource_id': 'storage_resource_id',
         'storage_spec_code': 'storage_spec_code',
@@ -108,7 +124,7 @@ class ShowInstanceResp:
         'tags': 'tags'
     }
 
-    def __init__(self, access_user=None, broker_num=None, name=None, engine=None, engine_version=None, specification=None, storage_space=None, used_storage_space=None, connect_address=None, port=None, status=None, description=None, instance_id=None, resource_spec_code=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, user_id=None, user_name=None, order_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, publicip_address=None, publicip_id=None, management_connect_address=None, ssl_enable=None, enterprise_project_id=None, is_logical_volume=None, extend_times=None, type=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, available_zones=None, total_storage_space=None, storage_resource_id=None, storage_spec_code=None, ipv6_enable=None, ipv6_connect_addresses=None, tags=None):
+    def __init__(self, access_user=None, broker_num=None, name=None, engine=None, engine_version=None, specification=None, storage_space=None, used_storage_space=None, dns_enable=None, connect_address=None, connect_domain_name=None, public_connect_address=None, public_connect_domain_name=None, port=None, status=None, description=None, instance_id=None, resource_spec_code=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, user_id=None, user_name=None, order_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, publicip_address=None, publicip_id=None, management_connect_address=None, management_connect_domain_name=None, public_management_connect_address=None, public_management_connect_domain_name=None, ssl_enable=None, enterprise_project_id=None, is_logical_volume=None, extend_times=None, type=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, available_zones=None, available_zone_names=None, total_storage_space=None, storage_resource_id=None, storage_spec_code=None, ipv6_enable=None, ipv6_connect_addresses=None, tags=None):
         """ShowInstanceResp
 
         The model defined in huaweicloud sdk
@@ -129,8 +145,16 @@ class ShowInstanceResp:
         :type storage_space: int
         :param used_storage_space: 已使用的消息存储空间，单位：GB。
         :type used_storage_space: int
-        :param connect_address: 实例连接IP地址。
+        :param dns_enable: 实例是否开启域名访问功能。 - true：开启 - false：未开启
+        :type dns_enable: bool
+        :param connect_address: 实例内网连接IP地址。
         :type connect_address: str
+        :param connect_domain_name: 实例内网连接域名。
+        :type connect_domain_name: str
+        :param public_connect_address: 实例公网连接IP地址。
+        :type public_connect_address: str
+        :param public_connect_domain_name: 实例公网连接域名。
+        :type public_connect_domain_name: str
         :param port: 实例连接端口。
         :type port: int
         :param status: 实例的状态。
@@ -139,7 +163,7 @@ class ShowInstanceResp:
         :type description: str
         :param instance_id: 实例ID。
         :type instance_id: str
-        :param resource_spec_code: 资源规格标识。   [- dms.instance.rabbitmq.single.c3.2u4g：RabbitMQ单机，vm规格2u4g   - dms.instance.rabbitmq.single.c3.4u8g：RabbitMQ单机，vm规格4u8g   - dms.instance.rabbitmq.single.c3.8u16g：RabbitMQ单机，vm规格8u16g   - dms.instance.rabbitmq.single.c3.16u32g：RabbitMQ单机，vm规格16u32g   - dms.instance.rabbitmq.cluster.c3.4u8g.3：RabbitMQ集群，vm规格4u8g，3个节点   - dms.instance.rabbitmq.cluster.c3.4u8g.5：RabbitMQ集群，vm规格4u8g，5个节点   - dms.instance.rabbitmq.cluster.c3.4u8g.7：RabbitMQ集群，vm规格4u8g，7个节点   - dms.instance.rabbitmq.cluster.c3.8u16g.3：RabbitMQ集群，vm规格8u16g，3个节点   - dms.instance.rabbitmq.cluster.c3.8u16g.5：RabbitMQ集群，vm规格8u16g，5个节点   - dms.instance.rabbitmq.cluster.c3.8u16g.7：RabbitMQ集群，vm规格8u16g，7个节点   - dms.instance.rabbitmq.cluster.c3.16u32g.3：RabbitMQ集群，vm规格16u32g，3个节点   - dms.instance.rabbitmq.cluster.c3.16u32g.5：RabbitMQ集群，vm规格16u32g，5个节点   - dms.instance.rabbitmq.cluster.c3.16u32g.7：RabbitMQ集群，vm规格16u32g，7个节点](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm)
+        :param resource_spec_code: 资源规格标识。   [- dms.instance.rabbitmq.single.c3.2u4g：RabbitMQ单机，vm规格2u4g   - dms.instance.rabbitmq.single.c3.4u8g：RabbitMQ单机，vm规格4u8g   - dms.instance.rabbitmq.single.c3.8u16g：RabbitMQ单机，vm规格8u16g   - dms.instance.rabbitmq.single.c3.16u32g：RabbitMQ单机，vm规格16u32g   - dms.instance.rabbitmq.cluster.c3.4u8g.3：RabbitMQ集群，vm规格4u8g，3个节点   - dms.instance.rabbitmq.cluster.c3.4u8g.5：RabbitMQ集群，vm规格4u8g，5个节点   - dms.instance.rabbitmq.cluster.c3.4u8g.7：RabbitMQ集群，vm规格4u8g，7个节点   - dms.instance.rabbitmq.cluster.c3.8u16g.3：RabbitMQ集群，vm规格8u16g，3个节点   - dms.instance.rabbitmq.cluster.c3.8u16g.5：RabbitMQ集群，vm规格8u16g，5个节点   - dms.instance.rabbitmq.cluster.c3.8u16g.7：RabbitMQ集群，vm规格8u16g，7个节点   - dms.instance.rabbitmq.cluster.c3.16u32g.3：RabbitMQ集群，vm规格16u32g，3个节点   - dms.instance.rabbitmq.cluster.c3.16u32g.5：RabbitMQ集群，vm规格16u32g，5个节点   - dms.instance.rabbitmq.cluster.c3.16u32g.7：RabbitMQ集群，vm规格16u32g，7个节点](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,sbc)
         :type resource_spec_code: str
         :param charging_mode: 付费模式，1表示按需计费，0表示包年/包月计费。
         :type charging_mode: int
@@ -167,6 +191,12 @@ class ShowInstanceResp:
         :type publicip_id: str
         :param management_connect_address: RabbitMQ实例的管理地址。
         :type management_connect_address: str
+        :param management_connect_domain_name: RabbitMQ实例的管理域名。
+        :type management_connect_domain_name: str
+        :param public_management_connect_address: RabbitMQ实例的公网管理地址。
+        :type public_management_connect_address: str
+        :param public_management_connect_domain_name: RabbitMQ实例的公网管理域名。
+        :type public_management_connect_domain_name: str
         :param ssl_enable: 是否开启安全认证。   - true：开启   - false：未开启
         :type ssl_enable: bool
         :param enterprise_project_id: 企业项目ID。
@@ -187,6 +217,8 @@ class ShowInstanceResp:
         :type subnet_id: str
         :param available_zones: 实例节点所在的可用区，返回“可用区ID”。
         :type available_zones: list[str]
+        :param available_zone_names: 实例节点所在的可用区，返回“可用区名称”。
+        :type available_zone_names: list[str]
         :param total_storage_space: 总共消息存储空间，单位：GB。
         :type total_storage_space: int
         :param storage_resource_id: 存储资源ID。
@@ -211,7 +243,11 @@ class ShowInstanceResp:
         self._specification = None
         self._storage_space = None
         self._used_storage_space = None
+        self._dns_enable = None
         self._connect_address = None
+        self._connect_domain_name = None
+        self._public_connect_address = None
+        self._public_connect_domain_name = None
         self._port = None
         self._status = None
         self._description = None
@@ -230,6 +266,9 @@ class ShowInstanceResp:
         self._publicip_address = None
         self._publicip_id = None
         self._management_connect_address = None
+        self._management_connect_domain_name = None
+        self._public_management_connect_address = None
+        self._public_management_connect_domain_name = None
         self._ssl_enable = None
         self._enterprise_project_id = None
         self._is_logical_volume = None
@@ -240,6 +279,7 @@ class ShowInstanceResp:
         self._security_group_name = None
         self._subnet_id = None
         self._available_zones = None
+        self._available_zone_names = None
         self._total_storage_space = None
         self._storage_resource_id = None
         self._storage_spec_code = None
@@ -264,8 +304,16 @@ class ShowInstanceResp:
             self.storage_space = storage_space
         if used_storage_space is not None:
             self.used_storage_space = used_storage_space
+        if dns_enable is not None:
+            self.dns_enable = dns_enable
         if connect_address is not None:
             self.connect_address = connect_address
+        if connect_domain_name is not None:
+            self.connect_domain_name = connect_domain_name
+        if public_connect_address is not None:
+            self.public_connect_address = public_connect_address
+        if public_connect_domain_name is not None:
+            self.public_connect_domain_name = public_connect_domain_name
         if port is not None:
             self.port = port
         if status is not None:
@@ -302,6 +350,12 @@ class ShowInstanceResp:
             self.publicip_id = publicip_id
         if management_connect_address is not None:
             self.management_connect_address = management_connect_address
+        if management_connect_domain_name is not None:
+            self.management_connect_domain_name = management_connect_domain_name
+        if public_management_connect_address is not None:
+            self.public_management_connect_address = public_management_connect_address
+        if public_management_connect_domain_name is not None:
+            self.public_management_connect_domain_name = public_management_connect_domain_name
         if ssl_enable is not None:
             self.ssl_enable = ssl_enable
         if enterprise_project_id is not None:
@@ -322,6 +376,8 @@ class ShowInstanceResp:
             self.subnet_id = subnet_id
         if available_zones is not None:
             self.available_zones = available_zones
+        if available_zone_names is not None:
+            self.available_zone_names = available_zone_names
         if total_storage_space is not None:
             self.total_storage_space = total_storage_space
         if storage_resource_id is not None:
@@ -512,10 +568,32 @@ class ShowInstanceResp:
         self._used_storage_space = used_storage_space
 
     @property
+    def dns_enable(self):
+        """Gets the dns_enable of this ShowInstanceResp.
+
+        实例是否开启域名访问功能。 - true：开启 - false：未开启
+
+        :return: The dns_enable of this ShowInstanceResp.
+        :rtype: bool
+        """
+        return self._dns_enable
+
+    @dns_enable.setter
+    def dns_enable(self, dns_enable):
+        """Sets the dns_enable of this ShowInstanceResp.
+
+        实例是否开启域名访问功能。 - true：开启 - false：未开启
+
+        :param dns_enable: The dns_enable of this ShowInstanceResp.
+        :type dns_enable: bool
+        """
+        self._dns_enable = dns_enable
+
+    @property
     def connect_address(self):
         """Gets the connect_address of this ShowInstanceResp.
 
-        实例连接IP地址。
+        实例内网连接IP地址。
 
         :return: The connect_address of this ShowInstanceResp.
         :rtype: str
@@ -526,12 +604,78 @@ class ShowInstanceResp:
     def connect_address(self, connect_address):
         """Sets the connect_address of this ShowInstanceResp.
 
-        实例连接IP地址。
+        实例内网连接IP地址。
 
         :param connect_address: The connect_address of this ShowInstanceResp.
         :type connect_address: str
         """
         self._connect_address = connect_address
+
+    @property
+    def connect_domain_name(self):
+        """Gets the connect_domain_name of this ShowInstanceResp.
+
+        实例内网连接域名。
+
+        :return: The connect_domain_name of this ShowInstanceResp.
+        :rtype: str
+        """
+        return self._connect_domain_name
+
+    @connect_domain_name.setter
+    def connect_domain_name(self, connect_domain_name):
+        """Sets the connect_domain_name of this ShowInstanceResp.
+
+        实例内网连接域名。
+
+        :param connect_domain_name: The connect_domain_name of this ShowInstanceResp.
+        :type connect_domain_name: str
+        """
+        self._connect_domain_name = connect_domain_name
+
+    @property
+    def public_connect_address(self):
+        """Gets the public_connect_address of this ShowInstanceResp.
+
+        实例公网连接IP地址。
+
+        :return: The public_connect_address of this ShowInstanceResp.
+        :rtype: str
+        """
+        return self._public_connect_address
+
+    @public_connect_address.setter
+    def public_connect_address(self, public_connect_address):
+        """Sets the public_connect_address of this ShowInstanceResp.
+
+        实例公网连接IP地址。
+
+        :param public_connect_address: The public_connect_address of this ShowInstanceResp.
+        :type public_connect_address: str
+        """
+        self._public_connect_address = public_connect_address
+
+    @property
+    def public_connect_domain_name(self):
+        """Gets the public_connect_domain_name of this ShowInstanceResp.
+
+        实例公网连接域名。
+
+        :return: The public_connect_domain_name of this ShowInstanceResp.
+        :rtype: str
+        """
+        return self._public_connect_domain_name
+
+    @public_connect_domain_name.setter
+    def public_connect_domain_name(self, public_connect_domain_name):
+        """Sets the public_connect_domain_name of this ShowInstanceResp.
+
+        实例公网连接域名。
+
+        :param public_connect_domain_name: The public_connect_domain_name of this ShowInstanceResp.
+        :type public_connect_domain_name: str
+        """
+        self._public_connect_domain_name = public_connect_domain_name
 
     @property
     def port(self):
@@ -625,7 +769,7 @@ class ShowInstanceResp:
     def resource_spec_code(self):
         """Gets the resource_spec_code of this ShowInstanceResp.
 
-        资源规格标识。   [- dms.instance.rabbitmq.single.c3.2u4g：RabbitMQ单机，vm规格2u4g   - dms.instance.rabbitmq.single.c3.4u8g：RabbitMQ单机，vm规格4u8g   - dms.instance.rabbitmq.single.c3.8u16g：RabbitMQ单机，vm规格8u16g   - dms.instance.rabbitmq.single.c3.16u32g：RabbitMQ单机，vm规格16u32g   - dms.instance.rabbitmq.cluster.c3.4u8g.3：RabbitMQ集群，vm规格4u8g，3个节点   - dms.instance.rabbitmq.cluster.c3.4u8g.5：RabbitMQ集群，vm规格4u8g，5个节点   - dms.instance.rabbitmq.cluster.c3.4u8g.7：RabbitMQ集群，vm规格4u8g，7个节点   - dms.instance.rabbitmq.cluster.c3.8u16g.3：RabbitMQ集群，vm规格8u16g，3个节点   - dms.instance.rabbitmq.cluster.c3.8u16g.5：RabbitMQ集群，vm规格8u16g，5个节点   - dms.instance.rabbitmq.cluster.c3.8u16g.7：RabbitMQ集群，vm规格8u16g，7个节点   - dms.instance.rabbitmq.cluster.c3.16u32g.3：RabbitMQ集群，vm规格16u32g，3个节点   - dms.instance.rabbitmq.cluster.c3.16u32g.5：RabbitMQ集群，vm规格16u32g，5个节点   - dms.instance.rabbitmq.cluster.c3.16u32g.7：RabbitMQ集群，vm规格16u32g，7个节点](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm)
+        资源规格标识。   [- dms.instance.rabbitmq.single.c3.2u4g：RabbitMQ单机，vm规格2u4g   - dms.instance.rabbitmq.single.c3.4u8g：RabbitMQ单机，vm规格4u8g   - dms.instance.rabbitmq.single.c3.8u16g：RabbitMQ单机，vm规格8u16g   - dms.instance.rabbitmq.single.c3.16u32g：RabbitMQ单机，vm规格16u32g   - dms.instance.rabbitmq.cluster.c3.4u8g.3：RabbitMQ集群，vm规格4u8g，3个节点   - dms.instance.rabbitmq.cluster.c3.4u8g.5：RabbitMQ集群，vm规格4u8g，5个节点   - dms.instance.rabbitmq.cluster.c3.4u8g.7：RabbitMQ集群，vm规格4u8g，7个节点   - dms.instance.rabbitmq.cluster.c3.8u16g.3：RabbitMQ集群，vm规格8u16g，3个节点   - dms.instance.rabbitmq.cluster.c3.8u16g.5：RabbitMQ集群，vm规格8u16g，5个节点   - dms.instance.rabbitmq.cluster.c3.8u16g.7：RabbitMQ集群，vm规格8u16g，7个节点   - dms.instance.rabbitmq.cluster.c3.16u32g.3：RabbitMQ集群，vm规格16u32g，3个节点   - dms.instance.rabbitmq.cluster.c3.16u32g.5：RabbitMQ集群，vm规格16u32g，5个节点   - dms.instance.rabbitmq.cluster.c3.16u32g.7：RabbitMQ集群，vm规格16u32g，7个节点](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,sbc)
 
         :return: The resource_spec_code of this ShowInstanceResp.
         :rtype: str
@@ -636,7 +780,7 @@ class ShowInstanceResp:
     def resource_spec_code(self, resource_spec_code):
         """Sets the resource_spec_code of this ShowInstanceResp.
 
-        资源规格标识。   [- dms.instance.rabbitmq.single.c3.2u4g：RabbitMQ单机，vm规格2u4g   - dms.instance.rabbitmq.single.c3.4u8g：RabbitMQ单机，vm规格4u8g   - dms.instance.rabbitmq.single.c3.8u16g：RabbitMQ单机，vm规格8u16g   - dms.instance.rabbitmq.single.c3.16u32g：RabbitMQ单机，vm规格16u32g   - dms.instance.rabbitmq.cluster.c3.4u8g.3：RabbitMQ集群，vm规格4u8g，3个节点   - dms.instance.rabbitmq.cluster.c3.4u8g.5：RabbitMQ集群，vm规格4u8g，5个节点   - dms.instance.rabbitmq.cluster.c3.4u8g.7：RabbitMQ集群，vm规格4u8g，7个节点   - dms.instance.rabbitmq.cluster.c3.8u16g.3：RabbitMQ集群，vm规格8u16g，3个节点   - dms.instance.rabbitmq.cluster.c3.8u16g.5：RabbitMQ集群，vm规格8u16g，5个节点   - dms.instance.rabbitmq.cluster.c3.8u16g.7：RabbitMQ集群，vm规格8u16g，7个节点   - dms.instance.rabbitmq.cluster.c3.16u32g.3：RabbitMQ集群，vm规格16u32g，3个节点   - dms.instance.rabbitmq.cluster.c3.16u32g.5：RabbitMQ集群，vm规格16u32g，5个节点   - dms.instance.rabbitmq.cluster.c3.16u32g.7：RabbitMQ集群，vm规格16u32g，7个节点](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm)
+        资源规格标识。   [- dms.instance.rabbitmq.single.c3.2u4g：RabbitMQ单机，vm规格2u4g   - dms.instance.rabbitmq.single.c3.4u8g：RabbitMQ单机，vm规格4u8g   - dms.instance.rabbitmq.single.c3.8u16g：RabbitMQ单机，vm规格8u16g   - dms.instance.rabbitmq.single.c3.16u32g：RabbitMQ单机，vm规格16u32g   - dms.instance.rabbitmq.cluster.c3.4u8g.3：RabbitMQ集群，vm规格4u8g，3个节点   - dms.instance.rabbitmq.cluster.c3.4u8g.5：RabbitMQ集群，vm规格4u8g，5个节点   - dms.instance.rabbitmq.cluster.c3.4u8g.7：RabbitMQ集群，vm规格4u8g，7个节点   - dms.instance.rabbitmq.cluster.c3.8u16g.3：RabbitMQ集群，vm规格8u16g，3个节点   - dms.instance.rabbitmq.cluster.c3.8u16g.5：RabbitMQ集群，vm规格8u16g，5个节点   - dms.instance.rabbitmq.cluster.c3.8u16g.7：RabbitMQ集群，vm规格8u16g，7个节点   - dms.instance.rabbitmq.cluster.c3.16u32g.3：RabbitMQ集群，vm规格16u32g，3个节点   - dms.instance.rabbitmq.cluster.c3.16u32g.5：RabbitMQ集群，vm规格16u32g，5个节点   - dms.instance.rabbitmq.cluster.c3.16u32g.7：RabbitMQ集群，vm规格16u32g，7个节点](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,sbc)
 
         :param resource_spec_code: The resource_spec_code of this ShowInstanceResp.
         :type resource_spec_code: str
@@ -930,6 +1074,72 @@ class ShowInstanceResp:
         self._management_connect_address = management_connect_address
 
     @property
+    def management_connect_domain_name(self):
+        """Gets the management_connect_domain_name of this ShowInstanceResp.
+
+        RabbitMQ实例的管理域名。
+
+        :return: The management_connect_domain_name of this ShowInstanceResp.
+        :rtype: str
+        """
+        return self._management_connect_domain_name
+
+    @management_connect_domain_name.setter
+    def management_connect_domain_name(self, management_connect_domain_name):
+        """Sets the management_connect_domain_name of this ShowInstanceResp.
+
+        RabbitMQ实例的管理域名。
+
+        :param management_connect_domain_name: The management_connect_domain_name of this ShowInstanceResp.
+        :type management_connect_domain_name: str
+        """
+        self._management_connect_domain_name = management_connect_domain_name
+
+    @property
+    def public_management_connect_address(self):
+        """Gets the public_management_connect_address of this ShowInstanceResp.
+
+        RabbitMQ实例的公网管理地址。
+
+        :return: The public_management_connect_address of this ShowInstanceResp.
+        :rtype: str
+        """
+        return self._public_management_connect_address
+
+    @public_management_connect_address.setter
+    def public_management_connect_address(self, public_management_connect_address):
+        """Sets the public_management_connect_address of this ShowInstanceResp.
+
+        RabbitMQ实例的公网管理地址。
+
+        :param public_management_connect_address: The public_management_connect_address of this ShowInstanceResp.
+        :type public_management_connect_address: str
+        """
+        self._public_management_connect_address = public_management_connect_address
+
+    @property
+    def public_management_connect_domain_name(self):
+        """Gets the public_management_connect_domain_name of this ShowInstanceResp.
+
+        RabbitMQ实例的公网管理域名。
+
+        :return: The public_management_connect_domain_name of this ShowInstanceResp.
+        :rtype: str
+        """
+        return self._public_management_connect_domain_name
+
+    @public_management_connect_domain_name.setter
+    def public_management_connect_domain_name(self, public_management_connect_domain_name):
+        """Sets the public_management_connect_domain_name of this ShowInstanceResp.
+
+        RabbitMQ实例的公网管理域名。
+
+        :param public_management_connect_domain_name: The public_management_connect_domain_name of this ShowInstanceResp.
+        :type public_management_connect_domain_name: str
+        """
+        self._public_management_connect_domain_name = public_management_connect_domain_name
+
+    @property
     def ssl_enable(self):
         """Gets the ssl_enable of this ShowInstanceResp.
 
@@ -1148,6 +1358,28 @@ class ShowInstanceResp:
         :type available_zones: list[str]
         """
         self._available_zones = available_zones
+
+    @property
+    def available_zone_names(self):
+        """Gets the available_zone_names of this ShowInstanceResp.
+
+        实例节点所在的可用区，返回“可用区名称”。
+
+        :return: The available_zone_names of this ShowInstanceResp.
+        :rtype: list[str]
+        """
+        return self._available_zone_names
+
+    @available_zone_names.setter
+    def available_zone_names(self, available_zone_names):
+        """Sets the available_zone_names of this ShowInstanceResp.
+
+        实例节点所在的可用区，返回“可用区名称”。
+
+        :param available_zone_names: The available_zone_names of this ShowInstanceResp.
+        :type available_zone_names: list[str]
+        """
+        self._available_zone_names = available_zone_names
 
     @property
     def total_storage_space(self):

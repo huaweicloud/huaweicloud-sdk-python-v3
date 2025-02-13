@@ -57,7 +57,7 @@ class StructuredDocInfo:
         :type document_id: str
         :param title: **参数解释**：  文档标题。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
         :type title: str
-        :param type: **参数解释**：  文档类型。  **约束限制**：  不涉及。  **取值范围**：  - directory: 目录 - pageDocument: Page文档 - boardDocument: Board文档 - mindDocument: Mind文档 - drawDocument: Draw文档  **默认取值**：  不涉及。
+        :param type: **参数解释**：  文档类型。  **约束限制**：  不涉及。  **取值范围**：  - directory：目录。 - pageDocument：Page文档。 - boardDocument：Board文档。 - mindDocument：Mind文档。 - drawDocument：Draw文档。  **默认取值**：  不涉及。
         :type type: str
         :param template_id: **参数解释**：  模板ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
         :type template_id: str
@@ -71,7 +71,7 @@ class StructuredDocInfo:
         :type instance_id: str
         :param model_name: **参数解释**：  模型名称。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
         :type model_name: str
-        :param create_user_id: **参数解释**：  创建者id。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        :param create_user_id: **参数解释**：  创建者ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
         :type create_user_id: str
         :param modifier: **参数解释**：  修改人。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
         :type modifier: str
@@ -188,7 +188,7 @@ class StructuredDocInfo:
     def type(self):
         """Gets the type of this StructuredDocInfo.
 
-        **参数解释**：  文档类型。  **约束限制**：  不涉及。  **取值范围**：  - directory: 目录 - pageDocument: Page文档 - boardDocument: Board文档 - mindDocument: Mind文档 - drawDocument: Draw文档  **默认取值**：  不涉及。
+        **参数解释**：  文档类型。  **约束限制**：  不涉及。  **取值范围**：  - directory：目录。 - pageDocument：Page文档。 - boardDocument：Board文档。 - mindDocument：Mind文档。 - drawDocument：Draw文档。  **默认取值**：  不涉及。
 
         :return: The type of this StructuredDocInfo.
         :rtype: str
@@ -199,7 +199,7 @@ class StructuredDocInfo:
     def type(self, type):
         """Sets the type of this StructuredDocInfo.
 
-        **参数解释**：  文档类型。  **约束限制**：  不涉及。  **取值范围**：  - directory: 目录 - pageDocument: Page文档 - boardDocument: Board文档 - mindDocument: Mind文档 - drawDocument: Draw文档  **默认取值**：  不涉及。
+        **参数解释**：  文档类型。  **约束限制**：  不涉及。  **取值范围**：  - directory：目录。 - pageDocument：Page文档。 - boardDocument：Board文档。 - mindDocument：Mind文档。 - drawDocument：Draw文档。  **默认取值**：  不涉及。
 
         :param type: The type of this StructuredDocInfo.
         :type type: str
@@ -342,7 +342,7 @@ class StructuredDocInfo:
     def create_user_id(self):
         """Gets the create_user_id of this StructuredDocInfo.
 
-        **参数解释**：  创建者id。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释**：  创建者ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
         :return: The create_user_id of this StructuredDocInfo.
         :rtype: str
@@ -353,7 +353,7 @@ class StructuredDocInfo:
     def create_user_id(self, create_user_id):
         """Sets the create_user_id of this StructuredDocInfo.
 
-        **参数解释**：  创建者id。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释**：  创建者ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
         :param create_user_id: The create_user_id of this StructuredDocInfo.
         :type create_user_id: str

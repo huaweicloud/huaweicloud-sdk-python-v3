@@ -33,7 +33,7 @@ class RDMParamVOListShareDocsParamDto:
 
         :param application_id: **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。
         :type application_id: str
-        :param params: 
+        :param params: **参数解释：**  请求参数对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type params: list[:class:`huaweicloudsdkidmeclassicapi.v1.ShareDocsParamDto`]
         """
         
@@ -73,6 +73,8 @@ class RDMParamVOListShareDocsParamDto:
     def params(self):
         """Gets the params of this RDMParamVOListShareDocsParamDto.
 
+        **参数解释：**  请求参数对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+
         :return: The params of this RDMParamVOListShareDocsParamDto.
         :rtype: list[:class:`huaweicloudsdkidmeclassicapi.v1.ShareDocsParamDto`]
         """
@@ -81,6 +83,8 @@ class RDMParamVOListShareDocsParamDto:
     @params.setter
     def params(self, params):
         """Sets the params of this RDMParamVOListShareDocsParamDto.
+
+        **参数解释：**  请求参数对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param params: The params of this RDMParamVOListShareDocsParamDto.
         :type params: list[:class:`huaweicloudsdkidmeclassicapi.v1.ShareDocsParamDto`]

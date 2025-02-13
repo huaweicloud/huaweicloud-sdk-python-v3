@@ -37,7 +37,7 @@ class BatchDeleteDocRequestDto:
         :type ids: list[str]
         :param model_name: **参数解释**：  模型名称。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
         :type model_name: str
-        :param is_check: **参数解释**：  是否检查文档删除权限。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        :param is_check: **参数解释**：  是否检查文档删除权限。  **约束限制**：  不涉及。  **取值范围**：  - true：检查。 - false：不检查。  **默认取值**：  true。
         :type is_check: bool
         """
         
@@ -103,7 +103,7 @@ class BatchDeleteDocRequestDto:
     def is_check(self):
         """Gets the is_check of this BatchDeleteDocRequestDto.
 
-        **参数解释**：  是否检查文档删除权限。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释**：  是否检查文档删除权限。  **约束限制**：  不涉及。  **取值范围**：  - true：检查。 - false：不检查。  **默认取值**：  true。
 
         :return: The is_check of this BatchDeleteDocRequestDto.
         :rtype: bool
@@ -114,7 +114,7 @@ class BatchDeleteDocRequestDto:
     def is_check(self, is_check):
         """Sets the is_check of this BatchDeleteDocRequestDto.
 
-        **参数解释**：  是否检查文档删除权限。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释**：  是否检查文档删除权限。  **约束限制**：  不涉及。  **取值范围**：  - true：检查。 - false：不检查。  **默认取值**：  true。
 
         :param is_check: The is_check of this BatchDeleteDocRequestDto.
         :type is_check: bool

@@ -3,7 +3,6 @@
 from __future__ import absolute_import
 
 # import models into model package
-from huaweicloudsdksmn.v2.model.access_policy import AccessPolicy
 from huaweicloudsdksmn.v2.model.add_subscription_from_subscription_user_request import AddSubscriptionFromSubscriptionUserRequest
 from huaweicloudsdksmn.v2.model.add_subscription_from_subscription_user_request_body import AddSubscriptionFromSubscriptionUserRequestBody
 from huaweicloudsdksmn.v2.model.add_subscription_from_subscription_user_response import AddSubscriptionFromSubscriptionUserResponse
@@ -132,7 +131,6 @@ from huaweicloudsdksmn.v2.model.show_http_detect_result_request import ShowHttpD
 from huaweicloudsdksmn.v2.model.show_http_detect_result_response import ShowHttpDetectResultResponse
 from huaweicloudsdksmn.v2.model.show_notify_policy_request import ShowNotifyPolicyRequest
 from huaweicloudsdksmn.v2.model.show_notify_policy_response import ShowNotifyPolicyResponse
-from huaweicloudsdksmn.v2.model.statement import Statement
 from huaweicloudsdksmn.v2.model.subscription_extension import SubscriptionExtension
 from huaweicloudsdksmn.v2.model.subscriptions_filter_policy import SubscriptionsFilterPolicy
 from huaweicloudsdksmn.v2.model.tag_match import TagMatch

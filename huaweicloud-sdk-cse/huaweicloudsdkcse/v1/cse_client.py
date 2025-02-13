@@ -2258,11 +2258,11 @@ class CseClient(Client):
 
         query_params = []
         if 'custom_namespace_id' in local_var_params:
-            query_params.append(('custom_namespace_id', local_var_params['custom_namespace_id']))
+            query_params.append(('customNamespaceId', local_var_params['custom_namespace_id']))
         if 'namespace_name' in local_var_params:
-            query_params.append(('namespace_name', local_var_params['namespace_name']))
+            query_params.append(('namespaceName', local_var_params['namespace_name']))
         if 'namespace_desc' in local_var_params:
-            query_params.append(('namespace_desc', local_var_params['namespace_desc']))
+            query_params.append(('namespaceDesc', local_var_params['namespace_desc']))
 
         header_params = {}
         if 'x_engine_id' in local_var_params:
@@ -2331,7 +2331,7 @@ class CseClient(Client):
 
         query_params = []
         if 'namespace_id' in local_var_params:
-            query_params.append(('namespace_id', local_var_params['namespace_id']))
+            query_params.append(('namespaceId', local_var_params['namespace_id']))
 
         header_params = {}
         if 'x_engine_id' in local_var_params:
@@ -2473,9 +2473,9 @@ class CseClient(Client):
         if 'namespace' in local_var_params:
             query_params.append(('namespace', local_var_params['namespace']))
         if 'namespace_show_name' in local_var_params:
-            query_params.append(('namespace_show_name', local_var_params['namespace_show_name']))
+            query_params.append(('namespaceShowName', local_var_params['namespace_show_name']))
         if 'namespace_desc' in local_var_params:
-            query_params.append(('namespace_desc', local_var_params['namespace_desc']))
+            query_params.append(('namespaceDesc', local_var_params['namespace_desc']))
 
         header_params = {}
         if 'x_engine_id' in local_var_params:

@@ -4,6 +4,7 @@ from __future__ import absolute_import
 
 # import models into model package
 from huaweicloudsdklive.v1.model.app_quality_info import AppQualityInfo
+from huaweicloudsdklive.v1.model.audio_selector_hls_selection import AudioSelectorHlsSelection
 from huaweicloudsdklive.v1.model.audio_selector_lang_selection import AudioSelectorLangSelection
 from huaweicloudsdklive.v1.model.audio_selector_pid_selection import AudioSelectorPidSelection
 from huaweicloudsdklive.v1.model.audio_selector_settings import AudioSelectorSettings

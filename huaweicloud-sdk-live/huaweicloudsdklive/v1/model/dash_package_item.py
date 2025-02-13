@@ -25,7 +25,10 @@ class DashPackageItem:
         'ads': 'object',
         'ext_args': 'object',
         'request_args': 'PackageRequestArgs',
-        'ad_marker': 'str'
+        'ad_marker': 'str',
+        'suggested_presentation_delay': 'int',
+        'minimum_update_period': 'int',
+        'min_buffer_time': 'int'
     }
 
     attribute_map = {
@@ -37,10 +40,13 @@ class DashPackageItem:
         'ads': 'ads',
         'ext_args': 'ext_args',
         'request_args': 'request_args',
-        'ad_marker': 'ad_marker'
+        'ad_marker': 'ad_marker',
+        'suggested_presentation_delay': 'suggested_presentation_delay',
+        'minimum_update_period': 'minimum_update_period',
+        'min_buffer_time': 'min_buffer_time'
     }
 
-    def __init__(self, url=None, stream_selection=None, segment_duration_seconds=None, playlist_window_seconds=None, encryption=None, ads=None, ext_args=None, request_args=None, ad_marker=None):
+    def __init__(self, url=None, stream_selection=None, segment_duration_seconds=None, playlist_window_seconds=None, encryption=None, ads=None, ext_args=None, request_args=None, ad_marker=None, suggested_presentation_delay=None, minimum_update_period=None, min_buffer_time=None):
         """DashPackageItem
 
         The model defined in huaweicloud sdk
@@ -61,8 +67,14 @@ class DashPackageItem:
         :type ext_args: object
         :param request_args: 
         :type request_args: :class:`huaweicloudsdklive.v1.PackageRequestArgs`
-        :param ad_marker: 广告标识。  DASH取值：\&quot;xml+bin\&quot;。 
+        :param ad_marker: 广告标识。DASH取值：\&quot;xml+bin\&quot;
         :type ad_marker: str
+        :param suggested_presentation_delay: 建议播放延迟。单位：秒。取值范围：[1 - 120]
+        :type suggested_presentation_delay: int
+        :param minimum_update_period: 索引最短更新周期。单位：秒。取值范围：[1 - 120]
+        :type minimum_update_period: int
+        :param min_buffer_time: 最小缓冲时间。单位：秒。取值范围：[1 - 120]
+        :type min_buffer_time: int
         """
         
         
@@ -76,6 +88,9 @@ class DashPackageItem:
         self._ext_args = None
         self._request_args = None
         self._ad_marker = None
+        self._suggested_presentation_delay = None
+        self._minimum_update_period = None
+        self._min_buffer_time = None
         self.discriminator = None
 
         self.url = url
@@ -94,6 +109,12 @@ class DashPackageItem:
             self.request_args = request_args
         if ad_marker is not None:
             self.ad_marker = ad_marker
+        if suggested_presentation_delay is not None:
+            self.suggested_presentation_delay = suggested_presentation_delay
+        if minimum_update_period is not None:
+            self.minimum_update_period = minimum_update_period
+        if min_buffer_time is not None:
+            self.min_buffer_time = min_buffer_time
 
     @property
     def url(self):
@@ -267,7 +288,7 @@ class DashPackageItem:
     def ad_marker(self):
         """Gets the ad_marker of this DashPackageItem.
 
-        广告标识。  DASH取值：\"xml+bin\"。 
+        广告标识。DASH取值：\"xml+bin\"
 
         :return: The ad_marker of this DashPackageItem.
         :rtype: str
@@ -278,12 +299,78 @@ class DashPackageItem:
     def ad_marker(self, ad_marker):
         """Sets the ad_marker of this DashPackageItem.
 
-        广告标识。  DASH取值：\"xml+bin\"。 
+        广告标识。DASH取值：\"xml+bin\"
 
         :param ad_marker: The ad_marker of this DashPackageItem.
         :type ad_marker: str
         """
         self._ad_marker = ad_marker
+
+    @property
+    def suggested_presentation_delay(self):
+        """Gets the suggested_presentation_delay of this DashPackageItem.
+
+        建议播放延迟。单位：秒。取值范围：[1 - 120]
+
+        :return: The suggested_presentation_delay of this DashPackageItem.
+        :rtype: int
+        """
+        return self._suggested_presentation_delay
+
+    @suggested_presentation_delay.setter
+    def suggested_presentation_delay(self, suggested_presentation_delay):
+        """Sets the suggested_presentation_delay of this DashPackageItem.
+
+        建议播放延迟。单位：秒。取值范围：[1 - 120]
+
+        :param suggested_presentation_delay: The suggested_presentation_delay of this DashPackageItem.
+        :type suggested_presentation_delay: int
+        """
+        self._suggested_presentation_delay = suggested_presentation_delay
+
+    @property
+    def minimum_update_period(self):
+        """Gets the minimum_update_period of this DashPackageItem.
+
+        索引最短更新周期。单位：秒。取值范围：[1 - 120]
+
+        :return: The minimum_update_period of this DashPackageItem.
+        :rtype: int
+        """
+        return self._minimum_update_period
+
+    @minimum_update_period.setter
+    def minimum_update_period(self, minimum_update_period):
+        """Sets the minimum_update_period of this DashPackageItem.
+
+        索引最短更新周期。单位：秒。取值范围：[1 - 120]
+
+        :param minimum_update_period: The minimum_update_period of this DashPackageItem.
+        :type minimum_update_period: int
+        """
+        self._minimum_update_period = minimum_update_period
+
+    @property
+    def min_buffer_time(self):
+        """Gets the min_buffer_time of this DashPackageItem.
+
+        最小缓冲时间。单位：秒。取值范围：[1 - 120]
+
+        :return: The min_buffer_time of this DashPackageItem.
+        :rtype: int
+        """
+        return self._min_buffer_time
+
+    @min_buffer_time.setter
+    def min_buffer_time(self, min_buffer_time):
+        """Sets the min_buffer_time of this DashPackageItem.
+
+        最小缓冲时间。单位：秒。取值范围：[1 - 120]
+
+        :param min_buffer_time: The min_buffer_time of this DashPackageItem.
+        :type min_buffer_time: int
+        """
+        self._min_buffer_time = min_buffer_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

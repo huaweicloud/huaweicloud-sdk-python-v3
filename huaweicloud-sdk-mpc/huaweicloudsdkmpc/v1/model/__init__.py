@@ -3,6 +3,7 @@
 from __future__ import absolute_import
 
 # import models into model package
+from huaweicloudsdkmpc.v1.model.additional_manifests import AdditionalManifests
 from huaweicloudsdkmpc.v1.model.agencies_task_req import AgenciesTaskReq
 from huaweicloudsdkmpc.v1.model.animated_graphics_output_param import AnimatedGraphicsOutputParam
 from huaweicloudsdkmpc.v1.model.animated_graphics_task import AnimatedGraphicsTask

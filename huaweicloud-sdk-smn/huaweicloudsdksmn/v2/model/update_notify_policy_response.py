@@ -18,47 +18,51 @@ class UpdateNotifyPolicyResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'str'
+        'request_id': 'str'
     }
 
     attribute_map = {
-        'body': 'body'
+        'request_id': 'request_id'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, request_id=None):
         """UpdateNotifyPolicyResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: str
+        :param request_id: 请求的唯一标识ID
+        :type request_id: str
         """
         
         super(UpdateNotifyPolicyResponse, self).__init__()
 
-        self._body = None
+        self._request_id = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if request_id is not None:
+            self.request_id = request_id
 
     @property
-    def body(self):
-        """Gets the body of this UpdateNotifyPolicyResponse.
+    def request_id(self):
+        """Gets the request_id of this UpdateNotifyPolicyResponse.
 
-        :return: The body of this UpdateNotifyPolicyResponse.
+        请求的唯一标识ID
+
+        :return: The request_id of this UpdateNotifyPolicyResponse.
         :rtype: str
         """
-        return self._body
+        return self._request_id
 
-    @body.setter
-    def body(self, body):
-        """Sets the body of this UpdateNotifyPolicyResponse.
+    @request_id.setter
+    def request_id(self, request_id):
+        """Sets the request_id of this UpdateNotifyPolicyResponse.
 
-        :param body: The body of this UpdateNotifyPolicyResponse.
-        :type body: str
+        请求的唯一标识ID
+
+        :param request_id: The request_id of this UpdateNotifyPolicyResponse.
+        :type request_id: str
         """
-        self._body = body
+        self._request_id = request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

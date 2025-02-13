@@ -21,6 +21,7 @@ class CreateTranscodingReq:
         'output': 'ObsObjInfo',
         'trans_template_id': 'list[int]',
         'av_parameters': 'list[AvParameters]',
+        'additional_manifests': 'list[AdditionalManifests]',
         'output_filenames': 'list[str]',
         'user_data': 'str',
         'watermarks': 'list[WatermarkRequest]',
@@ -40,6 +41,7 @@ class CreateTranscodingReq:
         'output': 'output',
         'trans_template_id': 'trans_template_id',
         'av_parameters': 'av_parameters',
+        'additional_manifests': 'additional_manifests',
         'output_filenames': 'output_filenames',
         'user_data': 'user_data',
         'watermarks': 'watermarks',
@@ -54,7 +56,7 @@ class CreateTranscodingReq:
         'audio_process': 'audio_process'
     }
 
-    def __init__(self, input=None, output=None, trans_template_id=None, av_parameters=None, output_filenames=None, user_data=None, watermarks=None, thumbnail=None, priority=None, subtitle=None, encryption=None, crop=None, audio_track=None, multi_audio=None, video_process=None, audio_process=None):
+    def __init__(self, input=None, output=None, trans_template_id=None, av_parameters=None, additional_manifests=None, output_filenames=None, user_data=None, watermarks=None, thumbnail=None, priority=None, subtitle=None, encryption=None, crop=None, audio_track=None, multi_audio=None, video_process=None, audio_process=None):
         """CreateTranscodingReq
 
         The model defined in huaweicloud sdk
@@ -67,6 +69,8 @@ class CreateTranscodingReq:
         :type trans_template_id: list[int]
         :param av_parameters: 转码参数。  若同时设置“trans_template_id”和此参数，则优先使用此参数进行转码，不带trans_template_id时，该参数必选。 
         :type av_parameters: list[:class:`huaweicloudsdkmpc.v1.AvParameters`]
+        :param additional_manifests: 主索引定制参数。 
+        :type additional_manifests: list[:class:`huaweicloudsdkmpc.v1.AdditionalManifests`]
         :param output_filenames: 输出文件名称，每一路转码输出对应一个名称，需要与转码模板ID数组的顺序对应。  - 若设置该参数，表示输出文件按该参数命名。 - 若不设置该参数，表示输出文件按默认方式命名。 
         :type output_filenames: list[str]
         :param user_data: 用户自定义数据，该字段可在查询接口或消息通知中按原内容透传给用户。 
@@ -99,6 +103,7 @@ class CreateTranscodingReq:
         self._output = None
         self._trans_template_id = None
         self._av_parameters = None
+        self._additional_manifests = None
         self._output_filenames = None
         self._user_data = None
         self._watermarks = None
@@ -120,6 +125,8 @@ class CreateTranscodingReq:
             self.trans_template_id = trans_template_id
         if av_parameters is not None:
             self.av_parameters = av_parameters
+        if additional_manifests is not None:
+            self.additional_manifests = additional_manifests
         if output_filenames is not None:
             self.output_filenames = output_filenames
         if user_data is not None:
@@ -224,6 +231,28 @@ class CreateTranscodingReq:
         :type av_parameters: list[:class:`huaweicloudsdkmpc.v1.AvParameters`]
         """
         self._av_parameters = av_parameters
+
+    @property
+    def additional_manifests(self):
+        """Gets the additional_manifests of this CreateTranscodingReq.
+
+        主索引定制参数。 
+
+        :return: The additional_manifests of this CreateTranscodingReq.
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.AdditionalManifests`]
+        """
+        return self._additional_manifests
+
+    @additional_manifests.setter
+    def additional_manifests(self, additional_manifests):
+        """Sets the additional_manifests of this CreateTranscodingReq.
+
+        主索引定制参数。 
+
+        :param additional_manifests: The additional_manifests of this CreateTranscodingReq.
+        :type additional_manifests: list[:class:`huaweicloudsdkmpc.v1.AdditionalManifests`]
+        """
+        self._additional_manifests = additional_manifests
 
     @property
     def output_filenames(self):

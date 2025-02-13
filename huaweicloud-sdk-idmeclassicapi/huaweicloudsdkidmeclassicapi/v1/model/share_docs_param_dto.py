@@ -41,17 +41,17 @@ class ShareDocsParamDto:
 
         The model defined in huaweicloud sdk
 
-        :param structured_doc_id: **参数解释**：  结构化文档Id。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        :param structured_doc_id: **参数解释**：  结构化文档ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
         :type structured_doc_id: str
-        :param shared_user_id: **参数解释**：  被分享用户UserId。  **约束限制**：  不涉及。  **取值范围**：  - all: 所有人。  **默认取值**：  不涉及。
+        :param shared_user_id: **参数解释**：  被分享用户UserId。  **约束限制**：  不涉及。  **取值范围**：  all：表示所有人。  **默认取值**：  不涉及。
         :type shared_user_id: str
-        :param shared_user_name: **参数解释**：  被分享用户名。  **约束限制**：  不涉及。  **取值范围**：  - all: 所有人。  **默认取值**：  不涉及。
+        :param shared_user_name: **参数解释**：  被分享用户名。  **约束限制**：  不涉及。  **取值范围**：  all：表示所有人。  **默认取值**：  不涉及。
         :type shared_user_name: str
         :param share_user_id: **参数解释**：  分享用户UserId。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
         :type share_user_id: str
         :param share_user_name: **参数解释**：  分享用户名。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
         :type share_user_name: str
-        :param auth_type: **参数解释**：  认证类型。  **约束限制**：  不涉及。  **取值范围**：  - read: 只读 - write: 读写  **默认取值**：  不涉及。
+        :param auth_type: **参数解释**：  认证类型。  **约束限制**：  不涉及。  **取值范围**：  - read：只读。 - write：读写。  **默认取值**：  不涉及。
         :type auth_type: str
         :param modifier: **参数解释**：  修改人。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
         :type modifier: str
@@ -87,7 +87,7 @@ class ShareDocsParamDto:
     def structured_doc_id(self):
         """Gets the structured_doc_id of this ShareDocsParamDto.
 
-        **参数解释**：  结构化文档Id。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释**：  结构化文档ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
         :return: The structured_doc_id of this ShareDocsParamDto.
         :rtype: str
@@ -98,7 +98,7 @@ class ShareDocsParamDto:
     def structured_doc_id(self, structured_doc_id):
         """Sets the structured_doc_id of this ShareDocsParamDto.
 
-        **参数解释**：  结构化文档Id。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释**：  结构化文档ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
         :param structured_doc_id: The structured_doc_id of this ShareDocsParamDto.
         :type structured_doc_id: str
@@ -109,7 +109,7 @@ class ShareDocsParamDto:
     def shared_user_id(self):
         """Gets the shared_user_id of this ShareDocsParamDto.
 
-        **参数解释**：  被分享用户UserId。  **约束限制**：  不涉及。  **取值范围**：  - all: 所有人。  **默认取值**：  不涉及。
+        **参数解释**：  被分享用户UserId。  **约束限制**：  不涉及。  **取值范围**：  all：表示所有人。  **默认取值**：  不涉及。
 
         :return: The shared_user_id of this ShareDocsParamDto.
         :rtype: str
@@ -120,7 +120,7 @@ class ShareDocsParamDto:
     def shared_user_id(self, shared_user_id):
         """Sets the shared_user_id of this ShareDocsParamDto.
 
-        **参数解释**：  被分享用户UserId。  **约束限制**：  不涉及。  **取值范围**：  - all: 所有人。  **默认取值**：  不涉及。
+        **参数解释**：  被分享用户UserId。  **约束限制**：  不涉及。  **取值范围**：  all：表示所有人。  **默认取值**：  不涉及。
 
         :param shared_user_id: The shared_user_id of this ShareDocsParamDto.
         :type shared_user_id: str
@@ -131,7 +131,7 @@ class ShareDocsParamDto:
     def shared_user_name(self):
         """Gets the shared_user_name of this ShareDocsParamDto.
 
-        **参数解释**：  被分享用户名。  **约束限制**：  不涉及。  **取值范围**：  - all: 所有人。  **默认取值**：  不涉及。
+        **参数解释**：  被分享用户名。  **约束限制**：  不涉及。  **取值范围**：  all：表示所有人。  **默认取值**：  不涉及。
 
         :return: The shared_user_name of this ShareDocsParamDto.
         :rtype: str
@@ -142,7 +142,7 @@ class ShareDocsParamDto:
     def shared_user_name(self, shared_user_name):
         """Sets the shared_user_name of this ShareDocsParamDto.
 
-        **参数解释**：  被分享用户名。  **约束限制**：  不涉及。  **取值范围**：  - all: 所有人。  **默认取值**：  不涉及。
+        **参数解释**：  被分享用户名。  **约束限制**：  不涉及。  **取值范围**：  all：表示所有人。  **默认取值**：  不涉及。
 
         :param shared_user_name: The shared_user_name of this ShareDocsParamDto.
         :type shared_user_name: str
@@ -197,7 +197,7 @@ class ShareDocsParamDto:
     def auth_type(self):
         """Gets the auth_type of this ShareDocsParamDto.
 
-        **参数解释**：  认证类型。  **约束限制**：  不涉及。  **取值范围**：  - read: 只读 - write: 读写  **默认取值**：  不涉及。
+        **参数解释**：  认证类型。  **约束限制**：  不涉及。  **取值范围**：  - read：只读。 - write：读写。  **默认取值**：  不涉及。
 
         :return: The auth_type of this ShareDocsParamDto.
         :rtype: str
@@ -208,7 +208,7 @@ class ShareDocsParamDto:
     def auth_type(self, auth_type):
         """Sets the auth_type of this ShareDocsParamDto.
 
-        **参数解释**：  认证类型。  **约束限制**：  不涉及。  **取值范围**：  - read: 只读 - write: 读写  **默认取值**：  不涉及。
+        **参数解释**：  认证类型。  **约束限制**：  不涉及。  **取值范围**：  - read：只读。 - write：读写。  **默认取值**：  不涉及。
 
         :param auth_type: The auth_type of this ShareDocsParamDto.
         :type auth_type: str

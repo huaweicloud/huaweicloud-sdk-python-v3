@@ -19,16 +19,18 @@ class VideoObj:
     openapi_types = {
         'width': 'int',
         'height': 'int',
-        'bitrate': 'int'
+        'bitrate': 'int',
+        'stream_name': 'str'
     }
 
     attribute_map = {
         'width': 'width',
         'height': 'height',
-        'bitrate': 'bitrate'
+        'bitrate': 'bitrate',
+        'stream_name': 'stream_name'
     }
 
-    def __init__(self, width=None, height=None, bitrate=None):
+    def __init__(self, width=None, height=None, bitrate=None, stream_name=None):
         """VideoObj
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class VideoObj:
         :type height: int
         :param bitrate: 输出平均码率。  取值范围：0或[40,30000]之间的整数。  单位：kbit/s  若设置为0，则输出平均码率为自适应值。 
         :type bitrate: int
+        :param stream_name: 流名称 
+        :type stream_name: str
         """
         
         
@@ -46,11 +50,14 @@ class VideoObj:
         self._width = None
         self._height = None
         self._bitrate = None
+        self._stream_name = None
         self.discriminator = None
 
         self.width = width
         self.height = height
         self.bitrate = bitrate
+        if stream_name is not None:
+            self.stream_name = stream_name
 
     @property
     def width(self):
@@ -117,6 +124,28 @@ class VideoObj:
         :type bitrate: int
         """
         self._bitrate = bitrate
+
+    @property
+    def stream_name(self):
+        """Gets the stream_name of this VideoObj.
+
+        流名称 
+
+        :return: The stream_name of this VideoObj.
+        :rtype: str
+        """
+        return self._stream_name
+
+    @stream_name.setter
+    def stream_name(self, stream_name):
+        """Sets the stream_name of this VideoObj.
+
+        流名称 
+
+        :param stream_name: The stream_name of this VideoObj.
+        :type stream_name: str
+        """
+        self._stream_name = stream_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

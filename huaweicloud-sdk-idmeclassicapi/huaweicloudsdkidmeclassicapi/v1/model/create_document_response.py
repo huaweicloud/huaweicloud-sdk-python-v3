@@ -36,7 +36,7 @@ class CreateDocumentResponse(SdkResponse):
 
         :param result: **参数解释：**  请求结果。  **取值范围：**  - SUCCESS：请求成功。 - FAIL：请求失败。  **默认取值：**  不涉及。 
         :type result: str
-        :param data: 
+        :param data: **参数解释：**  请求数据。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type data: list[:class:`huaweicloudsdkidmeclassicapi.v1.StructuredDocView`]
         :param errors: **参数解释：**  异常信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type errors: list[str]
@@ -82,6 +82,8 @@ class CreateDocumentResponse(SdkResponse):
     def data(self):
         """Gets the data of this CreateDocumentResponse.
 
+        **参数解释：**  请求数据。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+
         :return: The data of this CreateDocumentResponse.
         :rtype: list[:class:`huaweicloudsdkidmeclassicapi.v1.StructuredDocView`]
         """
@@ -90,6 +92,8 @@ class CreateDocumentResponse(SdkResponse):
     @data.setter
     def data(self, data):
         """Sets the data of this CreateDocumentResponse.
+
+        **参数解释：**  请求数据。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param data: The data of this CreateDocumentResponse.
         :type data: list[:class:`huaweicloudsdkidmeclassicapi.v1.StructuredDocView`]

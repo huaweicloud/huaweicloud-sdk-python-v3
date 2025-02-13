@@ -171,5 +171,19 @@ def test_sm2_sm3_signer2(credentials, sdk_request_post):
     assert signed_request.header_params.get("Authorization").startswith("SDK-SM2-SM3")
 
 
+def test_process_canonical_query_string():
+    query_params = [
+        ("limit", 1),
+        ("enable", True),
+        ("test", "一 (&=?!#%.*)"),
+        ("path", "/tmp/123"),
+        ("multi", [1, 2, 3])
+    ]
+    request = SdkRequest(query_params=query_params)
+    string = Signer.process_canonical_query_string(request)
+    assert ("enable=true&limit=1&multi=1&multi=2&multi=3"
+            "&path=%2Ftmp%2F123&test=%E4%B8%80%20%28%26%3D%3F%21%23%25.%2A%29") == string
+
+
 if __name__ == "__main__":
     pytest.main()

@@ -21,6 +21,7 @@ class SourceInfo:
         'duration_ms': 'int',
         'format': 'str',
         'size': 'int',
+        'manifest_name': 'str',
         'video_info': 'VideoInfo',
         'audio_info': 'list[AudioInfo]'
     }
@@ -30,11 +31,12 @@ class SourceInfo:
         'duration_ms': 'duration_ms',
         'format': 'format',
         'size': 'size',
+        'manifest_name': 'manifest_name',
         'video_info': 'video_info',
         'audio_info': 'audio_info'
     }
 
-    def __init__(self, duration=None, duration_ms=None, format=None, size=None, video_info=None, audio_info=None):
+    def __init__(self, duration=None, duration_ms=None, format=None, size=None, manifest_name=None, video_info=None, audio_info=None):
         """SourceInfo
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class SourceInfo:
         :type format: str
         :param size: 片源大小
         :type size: int
+        :param manifest_name: 独立mpd索引文件名 
+        :type manifest_name: str
         :param video_info: 
         :type video_info: :class:`huaweicloudsdkmpc.v1.VideoInfo`
         :param audio_info: 音频信息
@@ -59,6 +63,7 @@ class SourceInfo:
         self._duration_ms = None
         self._format = None
         self._size = None
+        self._manifest_name = None
         self._video_info = None
         self._audio_info = None
         self.discriminator = None
@@ -71,6 +76,8 @@ class SourceInfo:
             self.format = format
         if size is not None:
             self.size = size
+        if manifest_name is not None:
+            self.manifest_name = manifest_name
         if video_info is not None:
             self.video_info = video_info
         if audio_info is not None:
@@ -163,6 +170,28 @@ class SourceInfo:
         :type size: int
         """
         self._size = size
+
+    @property
+    def manifest_name(self):
+        """Gets the manifest_name of this SourceInfo.
+
+        独立mpd索引文件名 
+
+        :return: The manifest_name of this SourceInfo.
+        :rtype: str
+        """
+        return self._manifest_name
+
+    @manifest_name.setter
+    def manifest_name(self, manifest_name):
+        """Sets the manifest_name of this SourceInfo.
+
+        独立mpd索引文件名 
+
+        :param manifest_name: The manifest_name of this SourceInfo.
+        :type manifest_name: str
+        """
+        self._manifest_name = manifest_name
 
     @property
     def video_info(self):

@@ -53,7 +53,7 @@ class ListEnginePropertiesEntity:
 
         :param step_length: 节点增长步长。
         :type step_length: str
-        :param max_queue_per_broker: 每个Broker的最大对列。
+        :param max_queue_per_broker: 每个Broker的最大队列。
         :type max_queue_per_broker: str
         :param max_connection_per_broker: 每个Broker的最大连接数。
         :type max_connection_per_broker: str
@@ -144,7 +144,7 @@ class ListEnginePropertiesEntity:
     def max_queue_per_broker(self):
         """Gets the max_queue_per_broker of this ListEnginePropertiesEntity.
 
-        每个Broker的最大对列。
+        每个Broker的最大队列。
 
         :return: The max_queue_per_broker of this ListEnginePropertiesEntity.
         :rtype: str
@@ -155,7 +155,7 @@ class ListEnginePropertiesEntity:
     def max_queue_per_broker(self, max_queue_per_broker):
         """Sets the max_queue_per_broker of this ListEnginePropertiesEntity.
 
-        每个Broker的最大对列。
+        每个Broker的最大队列。
 
         :param max_queue_per_broker: The max_queue_per_broker of this ListEnginePropertiesEntity.
         :type max_queue_per_broker: str

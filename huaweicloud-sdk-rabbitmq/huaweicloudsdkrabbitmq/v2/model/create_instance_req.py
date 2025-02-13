@@ -21,6 +21,7 @@ class CreateInstanceReq:
         'description': 'str',
         'engine': 'str',
         'engine_version': 'str',
+        'enable_acl': 'bool',
         'storage_space': 'int',
         'access_user': 'str',
         'password': 'str',
@@ -46,6 +47,7 @@ class CreateInstanceReq:
         'description': 'description',
         'engine': 'engine',
         'engine_version': 'engine_version',
+        'enable_acl': 'enable_acl',
         'storage_space': 'storage_space',
         'access_user': 'access_user',
         'password': 'password',
@@ -66,7 +68,7 @@ class CreateInstanceReq:
         'bss_param': 'bss_param'
     }
 
-    def __init__(self, name=None, description=None, engine=None, engine_version=None, storage_space=None, access_user=None, password=None, vpc_id=None, security_group_id=None, subnet_id=None, available_zones=None, product_id=None, broker_num=None, maintain_begin=None, maintain_end=None, enable_publicip=None, publicip_id=None, ssl_enable=None, storage_spec_code=None, enterprise_project_id=None, tags=None, bss_param=None):
+    def __init__(self, name=None, description=None, engine=None, engine_version=None, enable_acl=None, storage_space=None, access_user=None, password=None, vpc_id=None, security_group_id=None, subnet_id=None, available_zones=None, product_id=None, broker_num=None, maintain_begin=None, maintain_end=None, enable_publicip=None, publicip_id=None, ssl_enable=None, storage_spec_code=None, enterprise_project_id=None, tags=None, bss_param=None):
         """CreateInstanceReq
 
         The model defined in huaweicloud sdk
@@ -79,7 +81,9 @@ class CreateInstanceReq:
         :type engine: str
         :param engine_version: 消息引擎的版本。   - RabbitMQ版本有：3.8.35[、AMQP-0-9-1](tag:hws,hws_hk)[和3.7.17](tag:tm,hk_tm,hk_sbc,sbc)。 
         :type engine_version: str
-        :param storage_space: 消息存储空间，单位GB。   [- 单机RabbitMQ实例的存储空间的取值范围100GB~90000GB。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm)    [- 单机RabbitMQ实例的存储空间的取值范围100GB~30000GB。](tag:hcs)    [- 集群RabbitMQ实例的存储空间的取值范围为100GB*节点数~90000GB、200GB*节点数~90000GB、300GB*节点数~90000GB。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm)    [- 集群RabbitMQ实例的存储空间的取值范围为100GB乘以代理数~30000GB乘以代理数。](tag:hcs) 
+        :param enable_acl: ACL访问控制（仅AMQP版本支持此参数）
+        :type enable_acl: bool
+        :param storage_space: 消息存储空间，单位GB。   [- 单机RabbitMQ实例的存储空间的取值范围100GB~90000GB。](tag:hws,hws_eu,hws_hk,ctc,g42,hk_g42,tm,hk_tm,sbc)    [- 单机RabbitMQ实例的存储空间的取值范围100GB~30000GB。](tag:hcs)    [- 集群RabbitMQ实例的存储空间的取值范围为100GB*节点数~90000GB、200GB*节点数~90000GB、300GB*节点数~90000GB。](tag:hws,hws_eu,hws_hk,ctc,g42,hk_g42,tm,hk_tm,sbc)    [- 集群RabbitMQ实例的存储空间的取值范围为100GB乘以代理数~30000GB乘以代理数。](tag:hcs) 
         :type storage_space: int
         :param access_user: 认证用户名，只能由英文字母开头且由英文字母、数字、中划线、下划线组成，长度为4~64的字符。
         :type access_user: str
@@ -93,7 +97,7 @@ class CreateInstanceReq:
         :type subnet_id: str
         :param available_zones: 创建节点到指定且有资源的可用区ID。请参考[查询可用区信息](ListAvailableZones.xml)获取可用区ID。  该参数不能为空数组或者数组的值为空。
         :type available_zones: list[str]
-        :param product_id: 产品标识。  [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ctc,cmcc,hws_eu,g42,hk_g42,tm,hk_tm,ocb,hws_ocb) [产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:hk_sbc,sbc) [产品ID可以从“其他接口 &gt; 查询产品规格列表”获取。](tag:hcs)  如果产品ID为集群类型（即对应的type为cluster），broker_num字段为必选。
+        :param product_id: 产品标识。  [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ctc,hws_eu,g42,hk_g42,tm,hk_tm,sbc,hcs) [产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:cmcc)  如果产品ID为集群类型（即对应的type为cluster），broker_num字段为必选。
         :type product_id: str
         :param broker_num: 代理个数。  当产品为单机类型，代理个数只能为1；当产品为集群类型，可选3、5、7个代理个数。  产品类型为single时:   - 1  产品类型为cluster时:   - 3   - 5   - 7
         :type broker_num: int
@@ -123,6 +127,7 @@ class CreateInstanceReq:
         self._description = None
         self._engine = None
         self._engine_version = None
+        self._enable_acl = None
         self._storage_space = None
         self._access_user = None
         self._password = None
@@ -148,6 +153,8 @@ class CreateInstanceReq:
             self.description = description
         self.engine = engine
         self.engine_version = engine_version
+        if enable_acl is not None:
+            self.enable_acl = enable_acl
         self.storage_space = storage_space
         if access_user is not None:
             self.access_user = access_user
@@ -267,10 +274,32 @@ class CreateInstanceReq:
         self._engine_version = engine_version
 
     @property
+    def enable_acl(self):
+        """Gets the enable_acl of this CreateInstanceReq.
+
+        ACL访问控制（仅AMQP版本支持此参数）
+
+        :return: The enable_acl of this CreateInstanceReq.
+        :rtype: bool
+        """
+        return self._enable_acl
+
+    @enable_acl.setter
+    def enable_acl(self, enable_acl):
+        """Sets the enable_acl of this CreateInstanceReq.
+
+        ACL访问控制（仅AMQP版本支持此参数）
+
+        :param enable_acl: The enable_acl of this CreateInstanceReq.
+        :type enable_acl: bool
+        """
+        self._enable_acl = enable_acl
+
+    @property
     def storage_space(self):
         """Gets the storage_space of this CreateInstanceReq.
 
-        消息存储空间，单位GB。   [- 单机RabbitMQ实例的存储空间的取值范围100GB~90000GB。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm)    [- 单机RabbitMQ实例的存储空间的取值范围100GB~30000GB。](tag:hcs)    [- 集群RabbitMQ实例的存储空间的取值范围为100GB*节点数~90000GB、200GB*节点数~90000GB、300GB*节点数~90000GB。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm)    [- 集群RabbitMQ实例的存储空间的取值范围为100GB乘以代理数~30000GB乘以代理数。](tag:hcs) 
+        消息存储空间，单位GB。   [- 单机RabbitMQ实例的存储空间的取值范围100GB~90000GB。](tag:hws,hws_eu,hws_hk,ctc,g42,hk_g42,tm,hk_tm,sbc)    [- 单机RabbitMQ实例的存储空间的取值范围100GB~30000GB。](tag:hcs)    [- 集群RabbitMQ实例的存储空间的取值范围为100GB*节点数~90000GB、200GB*节点数~90000GB、300GB*节点数~90000GB。](tag:hws,hws_eu,hws_hk,ctc,g42,hk_g42,tm,hk_tm,sbc)    [- 集群RabbitMQ实例的存储空间的取值范围为100GB乘以代理数~30000GB乘以代理数。](tag:hcs) 
 
         :return: The storage_space of this CreateInstanceReq.
         :rtype: int
@@ -281,7 +310,7 @@ class CreateInstanceReq:
     def storage_space(self, storage_space):
         """Sets the storage_space of this CreateInstanceReq.
 
-        消息存储空间，单位GB。   [- 单机RabbitMQ实例的存储空间的取值范围100GB~90000GB。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm)    [- 单机RabbitMQ实例的存储空间的取值范围100GB~30000GB。](tag:hcs)    [- 集群RabbitMQ实例的存储空间的取值范围为100GB*节点数~90000GB、200GB*节点数~90000GB、300GB*节点数~90000GB。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm)    [- 集群RabbitMQ实例的存储空间的取值范围为100GB乘以代理数~30000GB乘以代理数。](tag:hcs) 
+        消息存储空间，单位GB。   [- 单机RabbitMQ实例的存储空间的取值范围100GB~90000GB。](tag:hws,hws_eu,hws_hk,ctc,g42,hk_g42,tm,hk_tm,sbc)    [- 单机RabbitMQ实例的存储空间的取值范围100GB~30000GB。](tag:hcs)    [- 集群RabbitMQ实例的存储空间的取值范围为100GB*节点数~90000GB、200GB*节点数~90000GB、300GB*节点数~90000GB。](tag:hws,hws_eu,hws_hk,ctc,g42,hk_g42,tm,hk_tm,sbc)    [- 集群RabbitMQ实例的存储空间的取值范围为100GB乘以代理数~30000GB乘以代理数。](tag:hcs) 
 
         :param storage_space: The storage_space of this CreateInstanceReq.
         :type storage_space: int
@@ -424,7 +453,7 @@ class CreateInstanceReq:
     def product_id(self):
         """Gets the product_id of this CreateInstanceReq.
 
-        产品标识。  [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ctc,cmcc,hws_eu,g42,hk_g42,tm,hk_tm,ocb,hws_ocb) [产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:hk_sbc,sbc) [产品ID可以从“其他接口 > 查询产品规格列表”获取。](tag:hcs)  如果产品ID为集群类型（即对应的type为cluster），broker_num字段为必选。
+        产品标识。  [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ctc,hws_eu,g42,hk_g42,tm,hk_tm,sbc,hcs) [产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:cmcc)  如果产品ID为集群类型（即对应的type为cluster），broker_num字段为必选。
 
         :return: The product_id of this CreateInstanceReq.
         :rtype: str
@@ -435,7 +464,7 @@ class CreateInstanceReq:
     def product_id(self, product_id):
         """Sets the product_id of this CreateInstanceReq.
 
-        产品标识。  [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ctc,cmcc,hws_eu,g42,hk_g42,tm,hk_tm,ocb,hws_ocb) [产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:hk_sbc,sbc) [产品ID可以从“其他接口 > 查询产品规格列表”获取。](tag:hcs)  如果产品ID为集群类型（即对应的type为cluster），broker_num字段为必选。
+        产品标识。  [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ctc,hws_eu,g42,hk_g42,tm,hk_tm,sbc,hcs) [产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:cmcc)  如果产品ID为集群类型（即对应的type为cluster），broker_num字段为必选。
 
         :param product_id: The product_id of this CreateInstanceReq.
         :type product_id: str

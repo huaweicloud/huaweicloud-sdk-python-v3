@@ -33,7 +33,7 @@ class CreateMultiViewRequest:
 
         The model defined in huaweicloud sdk
 
-        :param mv_model_name: **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、\&quot;_\&quot;，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
+        :param mv_model_name: **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、“_”，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
         :type mv_model_name: str
         :param identifier: 应用ID。
         :type identifier: str
@@ -57,7 +57,7 @@ class CreateMultiViewRequest:
     def mv_model_name(self):
         """Gets the mv_model_name of this CreateMultiViewRequest.
 
-        **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、\"_\"，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
+        **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、“_”，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
 
         :return: The mv_model_name of this CreateMultiViewRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class CreateMultiViewRequest:
     def mv_model_name(self, mv_model_name):
         """Sets the mv_model_name of this CreateMultiViewRequest.
 
-        **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、\"_\"，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
+        **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、“_”，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
 
         :param mv_model_name: The mv_model_name of this CreateMultiViewRequest.
         :type mv_model_name: str

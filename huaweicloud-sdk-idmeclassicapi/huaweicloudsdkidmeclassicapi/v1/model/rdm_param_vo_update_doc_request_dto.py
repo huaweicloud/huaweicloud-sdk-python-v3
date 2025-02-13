@@ -31,7 +31,7 @@ class RDMParamVOUpdateDocRequestDto:
 
         The model defined in huaweicloud sdk
 
-        :param application_id: 
+        :param application_id: **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。
         :type application_id: str
         :param params: 
         :type params: :class:`huaweicloudsdkidmeclassicapi.v1.UpdateDocRequestDto`
@@ -51,6 +51,8 @@ class RDMParamVOUpdateDocRequestDto:
     def application_id(self):
         """Gets the application_id of this RDMParamVOUpdateDocRequestDto.
 
+        **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。
+
         :return: The application_id of this RDMParamVOUpdateDocRequestDto.
         :rtype: str
         """
@@ -59,6 +61,8 @@ class RDMParamVOUpdateDocRequestDto:
     @application_id.setter
     def application_id(self, application_id):
         """Sets the application_id of this RDMParamVOUpdateDocRequestDto.
+
+        **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。
 
         :param application_id: The application_id of this RDMParamVOUpdateDocRequestDto.
         :type application_id: str

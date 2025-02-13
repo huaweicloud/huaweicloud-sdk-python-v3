@@ -20,6 +20,7 @@ class MediaDetail:
         'features': 'list[str]',
         'origin_para': 'OriginPara',
         'output_video_paras': 'list[OutputVideoPara]',
+        'replace_sub_index': 'list[str]',
         'output_thumbnail_para': 'OutputThumbnailPara',
         'output_watermark_paras': 'OutputWatermarkPara'
     }
@@ -28,11 +29,12 @@ class MediaDetail:
         'features': 'features',
         'origin_para': 'origin_para',
         'output_video_paras': 'output_video_paras',
+        'replace_sub_index': 'replace_sub_index',
         'output_thumbnail_para': 'output_thumbnail_para',
         'output_watermark_paras': 'output_watermark_paras'
     }
 
-    def __init__(self, features=None, origin_para=None, output_video_paras=None, output_thumbnail_para=None, output_watermark_paras=None):
+    def __init__(self, features=None, origin_para=None, output_video_paras=None, replace_sub_index=None, output_thumbnail_para=None, output_watermark_paras=None):
         """MediaDetail
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class MediaDetail:
         :type origin_para: :class:`huaweicloudsdkmpc.v1.OriginPara`
         :param output_video_paras: 多路输出片源信息
         :type output_video_paras: list[:class:`huaweicloudsdkmpc.v1.OutputVideoPara`]
+        :param replace_sub_index: 被替换的子索引文件 
+        :type replace_sub_index: list[str]
         :param output_thumbnail_para: 
         :type output_thumbnail_para: :class:`huaweicloudsdkmpc.v1.OutputThumbnailPara`
         :param output_watermark_paras: 
@@ -54,6 +58,7 @@ class MediaDetail:
         self._features = None
         self._origin_para = None
         self._output_video_paras = None
+        self._replace_sub_index = None
         self._output_thumbnail_para = None
         self._output_watermark_paras = None
         self.discriminator = None
@@ -64,6 +69,8 @@ class MediaDetail:
             self.origin_para = origin_para
         if output_video_paras is not None:
             self.output_video_paras = output_video_paras
+        if replace_sub_index is not None:
+            self.replace_sub_index = replace_sub_index
         if output_thumbnail_para is not None:
             self.output_thumbnail_para = output_thumbnail_para
         if output_watermark_paras is not None:
@@ -130,6 +137,28 @@ class MediaDetail:
         :type output_video_paras: list[:class:`huaweicloudsdkmpc.v1.OutputVideoPara`]
         """
         self._output_video_paras = output_video_paras
+
+    @property
+    def replace_sub_index(self):
+        """Gets the replace_sub_index of this MediaDetail.
+
+        被替换的子索引文件 
+
+        :return: The replace_sub_index of this MediaDetail.
+        :rtype: list[str]
+        """
+        return self._replace_sub_index
+
+    @replace_sub_index.setter
+    def replace_sub_index(self, replace_sub_index):
+        """Sets the replace_sub_index of this MediaDetail.
+
+        被替换的子索引文件 
+
+        :param replace_sub_index: The replace_sub_index of this MediaDetail.
+        :type replace_sub_index: list[str]
+        """
+        self._replace_sub_index = replace_sub_index
 
     @property
     def output_thumbnail_para(self):

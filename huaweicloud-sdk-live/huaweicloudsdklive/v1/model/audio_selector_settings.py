@@ -18,15 +18,17 @@ class AudioSelectorSettings:
 
     openapi_types = {
         'audio_language_selection': 'AudioSelectorLangSelection',
-        'audio_pid_selection': 'AudioSelectorPidSelection'
+        'audio_pid_selection': 'AudioSelectorPidSelection',
+        'audio_hls_selection': 'AudioSelectorHlsSelection'
     }
 
     attribute_map = {
         'audio_language_selection': 'audio_language_selection',
-        'audio_pid_selection': 'audio_pid_selection'
+        'audio_pid_selection': 'audio_pid_selection',
+        'audio_hls_selection': 'audio_hls_selection'
     }
 
-    def __init__(self, audio_language_selection=None, audio_pid_selection=None):
+    def __init__(self, audio_language_selection=None, audio_pid_selection=None, audio_hls_selection=None):
         """AudioSelectorSettings
 
         The model defined in huaweicloud sdk
@@ -35,18 +37,23 @@ class AudioSelectorSettings:
         :type audio_language_selection: :class:`huaweicloudsdklive.v1.AudioSelectorLangSelection`
         :param audio_pid_selection: 
         :type audio_pid_selection: :class:`huaweicloudsdklive.v1.AudioSelectorPidSelection`
+        :param audio_hls_selection: 
+        :type audio_hls_selection: :class:`huaweicloudsdklive.v1.AudioSelectorHlsSelection`
         """
         
         
 
         self._audio_language_selection = None
         self._audio_pid_selection = None
+        self._audio_hls_selection = None
         self.discriminator = None
 
         if audio_language_selection is not None:
             self.audio_language_selection = audio_language_selection
         if audio_pid_selection is not None:
             self.audio_pid_selection = audio_pid_selection
+        if audio_hls_selection is not None:
+            self.audio_hls_selection = audio_hls_selection
 
     @property
     def audio_language_selection(self):
@@ -83,6 +90,24 @@ class AudioSelectorSettings:
         :type audio_pid_selection: :class:`huaweicloudsdklive.v1.AudioSelectorPidSelection`
         """
         self._audio_pid_selection = audio_pid_selection
+
+    @property
+    def audio_hls_selection(self):
+        """Gets the audio_hls_selection of this AudioSelectorSettings.
+
+        :return: The audio_hls_selection of this AudioSelectorSettings.
+        :rtype: :class:`huaweicloudsdklive.v1.AudioSelectorHlsSelection`
+        """
+        return self._audio_hls_selection
+
+    @audio_hls_selection.setter
+    def audio_hls_selection(self, audio_hls_selection):
+        """Sets the audio_hls_selection of this AudioSelectorSettings.
+
+        :param audio_hls_selection: The audio_hls_selection of this AudioSelectorSettings.
+        :type audio_hls_selection: :class:`huaweicloudsdklive.v1.AudioSelectorHlsSelection`
+        """
+        self._audio_hls_selection = audio_hls_selection
 
     def to_dict(self):
         """Returns the model properties as a dict"""

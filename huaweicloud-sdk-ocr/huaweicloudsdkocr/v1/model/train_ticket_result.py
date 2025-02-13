@@ -119,13 +119,13 @@ class TrainTicketResult:
         :type departure_time: str
         :param seat_number: 座位号。 
         :type seat_number: str
-        :param ticket_price: 票价。 
+        :param ticket_price: 票价，当为退票凭证时，表示退票费。 
         :type ticket_price: str
         :param sale_method: 售票方式。 
         :type sale_method: str
         :param seat_category: 座位类别。 
         :type seat_category: str
-        :param ticket_changing: 是否改签票, \&quot;Yes\&quot;表示改签票，\&quot;No\&quot;表示非改签票。 
+        :param ticket_changing: 标识信息，包含始发改签、退票、差额退票等。 
         :type ticket_changing: str
         :param id_number: 车票持有人的身份证号。 
         :type id_number: str
@@ -135,7 +135,7 @@ class TrainTicketResult:
         :type log_id: str
         :param sale_location: 车票售票地点。 
         :type sale_location: str
-        :param invoice_style: 类型。包含以下几种类型： - paper：纸质火车票 - electronic：电子发票 - refund_old：旧版退票凭证 - refund_new：新版退票凭证 
+        :param invoice_style: 类型。包含以下几种类型： - paper：纸质火车票 - electronic：铁路电子客票 - refund_old：退票费报销凭证 - refund_new：纸质火车票退票凭证  - refund_electronic：铁路电子客票退票凭证 
         :type invoice_style: str
         :param issue_date: 开票时间 
         :type issue_date: str
@@ -173,7 +173,7 @@ class TrainTicketResult:
         :type amount_in_words: str
         :param confidence: 相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。
         :type confidence: object
-        :param text_location: 对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
+        :param text_location: 对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。  &gt; 说明：输入数据格式是OFD时，返回的字段坐标为空列表。 
         :type text_location: object
         """
         
@@ -495,7 +495,7 @@ class TrainTicketResult:
     def ticket_price(self):
         """Gets the ticket_price of this TrainTicketResult.
 
-        票价。 
+        票价，当为退票凭证时，表示退票费。 
 
         :return: The ticket_price of this TrainTicketResult.
         :rtype: str
@@ -506,7 +506,7 @@ class TrainTicketResult:
     def ticket_price(self, ticket_price):
         """Sets the ticket_price of this TrainTicketResult.
 
-        票价。 
+        票价，当为退票凭证时，表示退票费。 
 
         :param ticket_price: The ticket_price of this TrainTicketResult.
         :type ticket_price: str
@@ -561,7 +561,7 @@ class TrainTicketResult:
     def ticket_changing(self):
         """Gets the ticket_changing of this TrainTicketResult.
 
-        是否改签票, \"Yes\"表示改签票，\"No\"表示非改签票。 
+        标识信息，包含始发改签、退票、差额退票等。 
 
         :return: The ticket_changing of this TrainTicketResult.
         :rtype: str
@@ -572,7 +572,7 @@ class TrainTicketResult:
     def ticket_changing(self, ticket_changing):
         """Sets the ticket_changing of this TrainTicketResult.
 
-        是否改签票, \"Yes\"表示改签票，\"No\"表示非改签票。 
+        标识信息，包含始发改签、退票、差额退票等。 
 
         :param ticket_changing: The ticket_changing of this TrainTicketResult.
         :type ticket_changing: str
@@ -671,7 +671,7 @@ class TrainTicketResult:
     def invoice_style(self):
         """Gets the invoice_style of this TrainTicketResult.
 
-        类型。包含以下几种类型： - paper：纸质火车票 - electronic：电子发票 - refund_old：旧版退票凭证 - refund_new：新版退票凭证 
+        类型。包含以下几种类型： - paper：纸质火车票 - electronic：铁路电子客票 - refund_old：退票费报销凭证 - refund_new：纸质火车票退票凭证  - refund_electronic：铁路电子客票退票凭证 
 
         :return: The invoice_style of this TrainTicketResult.
         :rtype: str
@@ -682,7 +682,7 @@ class TrainTicketResult:
     def invoice_style(self, invoice_style):
         """Sets the invoice_style of this TrainTicketResult.
 
-        类型。包含以下几种类型： - paper：纸质火车票 - electronic：电子发票 - refund_old：旧版退票凭证 - refund_new：新版退票凭证 
+        类型。包含以下几种类型： - paper：纸质火车票 - electronic：铁路电子客票 - refund_old：退票费报销凭证 - refund_new：纸质火车票退票凭证  - refund_electronic：铁路电子客票退票凭证 
 
         :param invoice_style: The invoice_style of this TrainTicketResult.
         :type invoice_style: str
@@ -1089,7 +1089,7 @@ class TrainTicketResult:
     def text_location(self):
         """Gets the text_location of this TrainTicketResult.
 
-        对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
+        对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。  > 说明：输入数据格式是OFD时，返回的字段坐标为空列表。 
 
         :return: The text_location of this TrainTicketResult.
         :rtype: object
@@ -1100,7 +1100,7 @@ class TrainTicketResult:
     def text_location(self, text_location):
         """Sets the text_location of this TrainTicketResult.
 
-        对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
+        对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。  > 说明：输入数据格式是OFD时，返回的字段坐标为空列表。 
 
         :param text_location: The text_location of this TrainTicketResult.
         :type text_location: object

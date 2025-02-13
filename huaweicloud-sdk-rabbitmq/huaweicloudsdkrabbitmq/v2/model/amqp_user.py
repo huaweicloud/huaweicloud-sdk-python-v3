@@ -37,7 +37,7 @@ class AMQPUser:
         :type access_key: str
         :param secret_key: 密钥。 8-32个字符。 至少包含以下字符中的3种：   - 大写字母   - 小写字母   - 数字   - 特殊字符&#x60;~!@#$%^&amp;*()-_&#x3D;+\\\\|[{}];:\\&#39;\\\&quot;,&lt;.&gt;/?。 不能与名称或倒序的名称相同。
         :type secret_key: str
-        :param vhosts: 需要配置权限的 Vhost，一个用户可以配置多个Vhost下的资源权限。
+        :param vhosts: 需要配置权限的Vhost，一个用户可以配置多个Vhost下的资源权限。
         :type vhosts: list[:class:`huaweicloudsdkrabbitmq.v2.AMQPUserPerm`]
         """
         
@@ -103,7 +103,7 @@ class AMQPUser:
     def vhosts(self):
         """Gets the vhosts of this AMQPUser.
 
-        需要配置权限的 Vhost，一个用户可以配置多个Vhost下的资源权限。
+        需要配置权限的Vhost，一个用户可以配置多个Vhost下的资源权限。
 
         :return: The vhosts of this AMQPUser.
         :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.AMQPUserPerm`]
@@ -114,7 +114,7 @@ class AMQPUser:
     def vhosts(self, vhosts):
         """Sets the vhosts of this AMQPUser.
 
-        需要配置权限的 Vhost，一个用户可以配置多个Vhost下的资源权限。
+        需要配置权限的Vhost，一个用户可以配置多个Vhost下的资源权限。
 
         :param vhosts: The vhosts of this AMQPUser.
         :type vhosts: list[:class:`huaweicloudsdkrabbitmq.v2.AMQPUserPerm`]

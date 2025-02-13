@@ -17,7 +17,7 @@ class TopicAttribute:
     sensitive_list = []
 
     openapi_types = {
-        'access_policy': 'AccessPolicy',
+        'access_policy': 'str',
         'introduction': 'str'
     }
 
@@ -31,8 +31,8 @@ class TopicAttribute:
 
         The model defined in huaweicloud sdk
 
-        :param access_policy: 
-        :type access_policy: :class:`huaweicloudsdksmn.v2.AccessPolicy`
+        :param access_policy: topic的访问策略
+        :type access_policy: str
         :param introduction: topic的简介
         :type introduction: str
         """
@@ -52,8 +52,10 @@ class TopicAttribute:
     def access_policy(self):
         """Gets the access_policy of this TopicAttribute.
 
+        topic的访问策略
+
         :return: The access_policy of this TopicAttribute.
-        :rtype: :class:`huaweicloudsdksmn.v2.AccessPolicy`
+        :rtype: str
         """
         return self._access_policy
 
@@ -61,8 +63,10 @@ class TopicAttribute:
     def access_policy(self, access_policy):
         """Sets the access_policy of this TopicAttribute.
 
+        topic的访问策略
+
         :param access_policy: The access_policy of this TopicAttribute.
-        :type access_policy: :class:`huaweicloudsdksmn.v2.AccessPolicy`
+        :type access_policy: str
         """
         self._access_policy = access_policy
 

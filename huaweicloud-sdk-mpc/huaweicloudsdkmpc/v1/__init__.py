@@ -5,6 +5,7 @@ from __future__ import absolute_import
 from huaweicloudsdkmpc.v1.mpc_client import MpcClient
 from huaweicloudsdkmpc.v1.mpc_async_client import MpcAsyncClient
 
+from huaweicloudsdkmpc.v1.model.additional_manifests import AdditionalManifests
 from huaweicloudsdkmpc.v1.model.agencies_task_req import AgenciesTaskReq
 from huaweicloudsdkmpc.v1.model.animated_graphics_output_param import AnimatedGraphicsOutputParam
 from huaweicloudsdkmpc.v1.model.animated_graphics_task import AnimatedGraphicsTask

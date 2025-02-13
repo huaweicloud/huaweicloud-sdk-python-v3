@@ -52,7 +52,8 @@ class ConfigsGetBody:
         'sni': 'Sni',
         'request_url_rewrite': 'list[RequestUrlRewrite]',
         'browser_cache_rules': 'list[BrowserCacheRules]',
-        'access_area_filter': 'list[AccessAreaFilter]'
+        'access_area_filter': 'list[AccessAreaFilter]',
+        'client_cert': 'ClientCert'
     }
 
     attribute_map = {
@@ -91,10 +92,11 @@ class ConfigsGetBody:
         'sni': 'sni',
         'request_url_rewrite': 'request_url_rewrite',
         'browser_cache_rules': 'browser_cache_rules',
-        'access_area_filter': 'access_area_filter'
+        'access_area_filter': 'access_area_filter',
+        'client_cert': 'client_cert'
     }
 
-    def __init__(self, business_type=None, service_area=None, remark=None, origin_request_header=None, http_response_header=None, url_auth=None, https=None, sources=None, origin_protocol=None, origin_follow302_status=None, cache_rules=None, ip_filter=None, referer=None, force_redirect=None, compress=None, cache_url_parameter_filter=None, ipv6_accelerate=None, error_code_cache=None, origin_range_status=None, user_agent_filter=None, origin_request_url_rewrite=None, flexible_origin=None, slice_etag_status=None, origin_receive_timeout=None, remote_auth=None, websocket=None, video_seek=None, request_limit_rules=None, ip_frequency_limit=None, hsts=None, quic=None, error_code_redirect_rules=None, sni=None, request_url_rewrite=None, browser_cache_rules=None, access_area_filter=None):
+    def __init__(self, business_type=None, service_area=None, remark=None, origin_request_header=None, http_response_header=None, url_auth=None, https=None, sources=None, origin_protocol=None, origin_follow302_status=None, cache_rules=None, ip_filter=None, referer=None, force_redirect=None, compress=None, cache_url_parameter_filter=None, ipv6_accelerate=None, error_code_cache=None, origin_range_status=None, user_agent_filter=None, origin_request_url_rewrite=None, flexible_origin=None, slice_etag_status=None, origin_receive_timeout=None, remote_auth=None, websocket=None, video_seek=None, request_limit_rules=None, ip_frequency_limit=None, hsts=None, quic=None, error_code_redirect_rules=None, sni=None, request_url_rewrite=None, browser_cache_rules=None, access_area_filter=None, client_cert=None):
         """ConfigsGetBody
 
         The model defined in huaweicloud sdk
@@ -171,6 +173,8 @@ class ConfigsGetBody:
         :type browser_cache_rules: list[:class:`huaweicloudsdkcdn.v2.BrowserCacheRules`]
         :param access_area_filter: 
         :type access_area_filter: list[:class:`huaweicloudsdkcdn.v2.AccessAreaFilter`]
+        :param client_cert: 
+        :type client_cert: :class:`huaweicloudsdkcdn.v2.ClientCert`
         """
         
         
@@ -211,6 +215,7 @@ class ConfigsGetBody:
         self._request_url_rewrite = None
         self._browser_cache_rules = None
         self._access_area_filter = None
+        self._client_cert = None
         self.discriminator = None
 
         if business_type is not None:
@@ -285,6 +290,8 @@ class ConfigsGetBody:
             self.browser_cache_rules = browser_cache_rules
         if access_area_filter is not None:
             self.access_area_filter = access_area_filter
+        if client_cert is not None:
+            self.client_cert = client_cert
 
     @property
     def business_type(self):
@@ -1013,6 +1020,24 @@ class ConfigsGetBody:
         :type access_area_filter: list[:class:`huaweicloudsdkcdn.v2.AccessAreaFilter`]
         """
         self._access_area_filter = access_area_filter
+
+    @property
+    def client_cert(self):
+        """Gets the client_cert of this ConfigsGetBody.
+
+        :return: The client_cert of this ConfigsGetBody.
+        :rtype: :class:`huaweicloudsdkcdn.v2.ClientCert`
+        """
+        return self._client_cert
+
+    @client_cert.setter
+    def client_cert(self, client_cert):
+        """Sets the client_cert of this ConfigsGetBody.
+
+        :param client_cert: The client_cert of this ConfigsGetBody.
+        :type client_cert: :class:`huaweicloudsdkcdn.v2.ClientCert`
+        """
+        self._client_cert = client_cert
 
     def to_dict(self):
         """Returns the model properties as a dict"""

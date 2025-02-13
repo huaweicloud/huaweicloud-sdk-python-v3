@@ -83,13 +83,13 @@ class StructuredDocShareViewDTO:
         :type structured_doc: :class:`huaweicloudsdkidmeclassicapi.v1.StructuredDocView`
         :param share_user_name: **参数解释**：  分享用户名。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
         :type share_user_name: str
-        :param shared_user_name: **参数解释**：  被分享用户名。  **约束限制**：  不涉及。  **取值范围**：  - all: 所有人。  **默认取值**：  不涉及。
+        :param shared_user_name: **参数解释**：  被分享用户名。  **约束限制**：  不涉及。  **取值范围**：  all：表示所有人。  **默认取值**：  不涉及。
         :type shared_user_name: str
-        :param shared_user_id: **参数解释**：  被分享用户UserId。  **约束限制**：  不涉及。  **取值范围**：  - all: 所有人。  **默认取值**：  不涉及。
+        :param shared_user_id: **参数解释**：  被分享用户UserId。  **约束限制**：  不涉及。  **取值范围**：  all：表示所有人。  **默认取值**：  不涉及。
         :type shared_user_id: str
-        :param auth_type: **参数解释**：  认证类型。  **约束限制**：  不涉及。  **取值范围**：  - read: 只读 - write: 读写  **默认取值**：  不涉及。
+        :param auth_type: **参数解释**：  认证类型。  **约束限制**：  不涉及。  **取值范围**：  - read：只读。 - write：读写。  **默认取值**：  不涉及。
         :type auth_type: str
-        :param share_user_id: **参数解释**：  被分享用户UserId。  **约束限制**：  不涉及。  **取值范围**：  - all: 所有人。  **默认取值**：  不涉及。
+        :param share_user_id: **参数解释**：  被分享用户UserId。  **约束限制**：  不涉及。  **取值范围**：  all：表示所有人。  **默认取值**：  不涉及。
         :type share_user_id: str
         """
         
@@ -406,7 +406,7 @@ class StructuredDocShareViewDTO:
     def shared_user_name(self):
         """Gets the shared_user_name of this StructuredDocShareViewDTO.
 
-        **参数解释**：  被分享用户名。  **约束限制**：  不涉及。  **取值范围**：  - all: 所有人。  **默认取值**：  不涉及。
+        **参数解释**：  被分享用户名。  **约束限制**：  不涉及。  **取值范围**：  all：表示所有人。  **默认取值**：  不涉及。
 
         :return: The shared_user_name of this StructuredDocShareViewDTO.
         :rtype: str
@@ -417,7 +417,7 @@ class StructuredDocShareViewDTO:
     def shared_user_name(self, shared_user_name):
         """Sets the shared_user_name of this StructuredDocShareViewDTO.
 
-        **参数解释**：  被分享用户名。  **约束限制**：  不涉及。  **取值范围**：  - all: 所有人。  **默认取值**：  不涉及。
+        **参数解释**：  被分享用户名。  **约束限制**：  不涉及。  **取值范围**：  all：表示所有人。  **默认取值**：  不涉及。
 
         :param shared_user_name: The shared_user_name of this StructuredDocShareViewDTO.
         :type shared_user_name: str
@@ -428,7 +428,7 @@ class StructuredDocShareViewDTO:
     def shared_user_id(self):
         """Gets the shared_user_id of this StructuredDocShareViewDTO.
 
-        **参数解释**：  被分享用户UserId。  **约束限制**：  不涉及。  **取值范围**：  - all: 所有人。  **默认取值**：  不涉及。
+        **参数解释**：  被分享用户UserId。  **约束限制**：  不涉及。  **取值范围**：  all：表示所有人。  **默认取值**：  不涉及。
 
         :return: The shared_user_id of this StructuredDocShareViewDTO.
         :rtype: str
@@ -439,7 +439,7 @@ class StructuredDocShareViewDTO:
     def shared_user_id(self, shared_user_id):
         """Sets the shared_user_id of this StructuredDocShareViewDTO.
 
-        **参数解释**：  被分享用户UserId。  **约束限制**：  不涉及。  **取值范围**：  - all: 所有人。  **默认取值**：  不涉及。
+        **参数解释**：  被分享用户UserId。  **约束限制**：  不涉及。  **取值范围**：  all：表示所有人。  **默认取值**：  不涉及。
 
         :param shared_user_id: The shared_user_id of this StructuredDocShareViewDTO.
         :type shared_user_id: str
@@ -450,7 +450,7 @@ class StructuredDocShareViewDTO:
     def auth_type(self):
         """Gets the auth_type of this StructuredDocShareViewDTO.
 
-        **参数解释**：  认证类型。  **约束限制**：  不涉及。  **取值范围**：  - read: 只读 - write: 读写  **默认取值**：  不涉及。
+        **参数解释**：  认证类型。  **约束限制**：  不涉及。  **取值范围**：  - read：只读。 - write：读写。  **默认取值**：  不涉及。
 
         :return: The auth_type of this StructuredDocShareViewDTO.
         :rtype: str
@@ -461,7 +461,7 @@ class StructuredDocShareViewDTO:
     def auth_type(self, auth_type):
         """Sets the auth_type of this StructuredDocShareViewDTO.
 
-        **参数解释**：  认证类型。  **约束限制**：  不涉及。  **取值范围**：  - read: 只读 - write: 读写  **默认取值**：  不涉及。
+        **参数解释**：  认证类型。  **约束限制**：  不涉及。  **取值范围**：  - read：只读。 - write：读写。  **默认取值**：  不涉及。
 
         :param auth_type: The auth_type of this StructuredDocShareViewDTO.
         :type auth_type: str
@@ -472,7 +472,7 @@ class StructuredDocShareViewDTO:
     def share_user_id(self):
         """Gets the share_user_id of this StructuredDocShareViewDTO.
 
-        **参数解释**：  被分享用户UserId。  **约束限制**：  不涉及。  **取值范围**：  - all: 所有人。  **默认取值**：  不涉及。
+        **参数解释**：  被分享用户UserId。  **约束限制**：  不涉及。  **取值范围**：  all：表示所有人。  **默认取值**：  不涉及。
 
         :return: The share_user_id of this StructuredDocShareViewDTO.
         :rtype: str
@@ -483,7 +483,7 @@ class StructuredDocShareViewDTO:
     def share_user_id(self, share_user_id):
         """Sets the share_user_id of this StructuredDocShareViewDTO.
 
-        **参数解释**：  被分享用户UserId。  **约束限制**：  不涉及。  **取值范围**：  - all: 所有人。  **默认取值**：  不涉及。
+        **参数解释**：  被分享用户UserId。  **约束限制**：  不涉及。  **取值范围**：  all：表示所有人。  **默认取值**：  不涉及。
 
         :param share_user_id: The share_user_id of this StructuredDocShareViewDTO.
         :type share_user_id: str

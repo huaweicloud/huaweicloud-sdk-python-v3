@@ -1,3 +1,206 @@
+# 3.1.135 2025-02-13
+
+### HuaweiCloud SDK CAE
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateVolume**
+    - changes of request param
+      - `+ spec.resource_type: enum value [sfs,obs]`
+
+### HuaweiCloud SDK CDN
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowDomainFullConfig**
+    - changes of response param
+      - `+ configs.client_cert`
+  - **UpdateDomainFullConfig**
+    - changes of request param
+      - `+ configs.client_cert`
+
+### HuaweiCloud SDK CSE
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateNacosNamespaces**
+    - changes of request param
+      - `+ namespaceShowName`
+      - `+ namespaceDesc`
+      - `- namespace_show_name`
+      - `- namespace_desc`
+  - **CreateNacosNamespaces**
+    - changes of request param
+      - `+ customNamespaceId`
+      - `+ namespaceName`
+      - `+ namespaceDesc`
+      - `- custom_namespace_id`
+      - `- namespace_name`
+      - `- namespace_desc`
+  - **DeleteNacosNamespaces**
+    - changes of request param
+      - `+ namespaceId`
+      - `- namespace_id`
+
+### HuaweiCloud SDK Live
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ModifyOttChannelInfoInput**
+    - changes of request param
+      - `+ input.audio_selectors.selector_settings.audio_hls_selection`
+  - **ModifyOttChannelInfoEndPoints**
+    - changes of request param
+      - `+ endpoints.dash_package.suggested_presentation_delay`
+      - `+ endpoints.dash_package.minimum_update_period`
+      - `+ endpoints.dash_package.min_buffer_time`
+  - **CreateOttChannelInfo**
+    - changes of request param
+      - `+ input.audio_selectors.selector_settings.audio_hls_selection`
+      - `+ endpoints.dash_package.suggested_presentation_delay`
+      - `+ endpoints.dash_package.minimum_update_period`
+      - `+ endpoints.dash_package.min_buffer_time`
+  - **ListOttChannelInfo**
+    - changes of response param
+      - `+ channels.input.audio_selectors.selector_settings.audio_hls_selection`
+      - `+ channels.endpoints.dash_package.suggested_presentation_delay`
+      - `+ channels.endpoints.dash_package.minimum_update_period`
+      - `+ channels.endpoints.dash_package.min_buffer_time`
+
+### HuaweiCloud SDK MPC
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateTemplateGroup**
+    - changes of request param
+      - `+ videos.stream_name`
+  - **ListTemplateGroup**
+    - changes of response param
+      - `+ template_group_list.videos.stream_name`
+  - **CreateTemplateGroup**
+    - changes of request param
+      - `+ videos.stream_name`
+    - changes of response param
+      - `+ template_group.videos.stream_name`
+  - **UpdateTransTemplate**
+    - changes of request param
+      - `+ video.stream_name`
+  - **CreateTransTemplate**
+    - changes of request param
+      - `+ video.stream_name`
+  - **ListTemplate**
+    - changes of response param
+      - `+ template_array.template.video.stream_name`
+  - **CreateTranscodingTask**
+    - changes of request param
+      - `+ additional_manifests`
+      - `+ av_parameters.video.stream_name`
+  - **ListTranscodingTask**
+    - changes of response param
+      - `+ task_array.additional_manifests`
+      - `+ task_array.av_parameters.video.stream_name`
+      - `+ task_array.transcode_detail.replace_sub_index`
+      - `+ task_array.transcode_detail.input_file.manifest_name`
+  - **ListTranscodeDetail**
+    - changes of response param
+      - `+ task_array.media_detail.replace_sub_index`
+      - `+ task_array.media_detail.output_video_paras.manifest_name`
+  - **CreateEditingJob**
+    - changes of request param
+      - `+ concats.av_parameters.video.stream_name`
+  - **ListEditingJob**
+    - changes of response param
+      - `+ jobs.output_file_info.meta_data.manifest_name`
+      - `+ jobs.edit_task_req.concats.av_parameters.video.stream_name`
+
+### HuaweiCloud SDK RabbitMQ
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the APIs `EnableDns`, `ShowQuotas`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreatePostPaidInstanceByEngine**
+    - changes of request param
+      - `+ enable_acl`
+  - **ShowInstance**
+    - changes of response param
+      - `+ public_connect_address`
+      - `+ available_zone_names`
+      - `+ public_connect_domain_name`
+      - `+ dns_enable`
+      - `+ management_connect_domain_name`
+      - `+ public_management_connect_domain_name`
+      - `+ public_management_connect_address`
+      - `+ connect_domain_name`
+  - **CreatePostPaidInstance**
+    - changes of request param
+      - `+ enable_acl`
+  - **ListInstancesDetails**
+    - changes of response param
+      - `+ public_connect_address`
+      - `+ available_zone_names`
+      - `+ public_connect_domain_name`
+      - `+ dns_enable`
+      - `+ management_connect_domain_name`
+      - `+ public_management_connect_domain_name`
+      - `+ public_management_connect_address`
+      - `+ connect_domain_name`
+      - `+ instances.dns_enable`
+      - `+ instances.connect_domain_name`
+      - `+ instances.public_connect_address`
+      - `+ instances.public_connect_domain_name`
+      - `+ instances.management_connect_domain_name`
+      - `+ instances.public_management_connect_address`
+      - `+ instances.public_management_connect_domain_name`
+      - `+ instances.available_zone_names`
+
+### HuaweiCloud SDK SMN
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListTopicAttributes**
+    - changes of response param
+      - `* attributes.access_policy: object<AccessPolicy> -> string`
+  - **DeleteNotifyPolicy**
+    - changes of response param
+      - `+ request_id`
+  - **UpdateNotifyPolicy**
+    - changes of response param
+      - `+ request_id`
+
 # 3.1.134 2025-02-06
 
 ### HuaweiCloud SDK CCE

@@ -34,7 +34,8 @@ class QueryTranscodingsTaskResponse:
         'thumbnail_output': 'ObsObjInfo',
         'thumbnail_outputname': 'str',
         'pic_info': 'list[PicInfo]',
-        'av_parameters': 'list[AvParameters]'
+        'av_parameters': 'list[AvParameters]',
+        'additional_manifests': 'list[AdditionalManifests]'
     }
 
     attribute_map = {
@@ -55,10 +56,11 @@ class QueryTranscodingsTaskResponse:
         'thumbnail_output': 'thumbnail_output',
         'thumbnail_outputname': 'thumbnail_outputname',
         'pic_info': 'pic_info',
-        'av_parameters': 'av_parameters'
+        'av_parameters': 'av_parameters',
+        'additional_manifests': 'additional_manifests'
     }
 
-    def __init__(self, task_id=None, status=None, progress=None, create_time=None, end_time=None, trans_template_id=None, input=None, output=None, output_file_name=None, user_data=None, error_code=None, description=None, tips=None, transcode_detail=None, thumbnail_output=None, thumbnail_outputname=None, pic_info=None, av_parameters=None):
+    def __init__(self, task_id=None, status=None, progress=None, create_time=None, end_time=None, trans_template_id=None, input=None, output=None, output_file_name=None, user_data=None, error_code=None, description=None, tips=None, transcode_detail=None, thumbnail_output=None, thumbnail_outputname=None, pic_info=None, av_parameters=None, additional_manifests=None):
         """QueryTranscodingsTaskResponse
 
         The model defined in huaweicloud sdk
@@ -99,6 +101,8 @@ class QueryTranscodingsTaskResponse:
         :type pic_info: list[:class:`huaweicloudsdkmpc.v1.PicInfo`]
         :param av_parameters: 转码参数。  若同时设置“trans_template_id”和此参数，则优先使用此参数进行转码。 
         :type av_parameters: list[:class:`huaweicloudsdkmpc.v1.AvParameters`]
+        :param additional_manifests: 主索引定制参数。 
+        :type additional_manifests: list[:class:`huaweicloudsdkmpc.v1.AdditionalManifests`]
         """
         
         
@@ -121,6 +125,7 @@ class QueryTranscodingsTaskResponse:
         self._thumbnail_outputname = None
         self._pic_info = None
         self._av_parameters = None
+        self._additional_manifests = None
         self.discriminator = None
 
         if task_id is not None:
@@ -159,6 +164,8 @@ class QueryTranscodingsTaskResponse:
             self.pic_info = pic_info
         if av_parameters is not None:
             self.av_parameters = av_parameters
+        if additional_manifests is not None:
+            self.additional_manifests = additional_manifests
 
     @property
     def task_id(self):
@@ -539,6 +546,28 @@ class QueryTranscodingsTaskResponse:
         :type av_parameters: list[:class:`huaweicloudsdkmpc.v1.AvParameters`]
         """
         self._av_parameters = av_parameters
+
+    @property
+    def additional_manifests(self):
+        """Gets the additional_manifests of this QueryTranscodingsTaskResponse.
+
+        主索引定制参数。 
+
+        :return: The additional_manifests of this QueryTranscodingsTaskResponse.
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.AdditionalManifests`]
+        """
+        return self._additional_manifests
+
+    @additional_manifests.setter
+    def additional_manifests(self, additional_manifests):
+        """Sets the additional_manifests of this QueryTranscodingsTaskResponse.
+
+        主索引定制参数。 
+
+        :param additional_manifests: The additional_manifests of this QueryTranscodingsTaskResponse.
+        :type additional_manifests: list[:class:`huaweicloudsdkmpc.v1.AdditionalManifests`]
+        """
+        self._additional_manifests = additional_manifests
 
     def to_dict(self):
         """Returns the model properties as a dict"""

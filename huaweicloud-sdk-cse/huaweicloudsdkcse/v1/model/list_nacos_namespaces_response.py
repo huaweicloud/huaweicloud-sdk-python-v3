@@ -18,20 +18,47 @@ class ListNacosNamespacesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'body': 'str'
     }
 
     attribute_map = {
+        'body': 'body'
     }
 
-    def __init__(self):
+    def __init__(self, body=None):
         """ListNacosNamespacesResponse
 
         The model defined in huaweicloud sdk
 
+        :param body: 
+        :type body: str
         """
         
         super(ListNacosNamespacesResponse, self).__init__()
+
+        self._body = None
         self.discriminator = None
+
+        if body is not None:
+            self.body = body
+
+    @property
+    def body(self):
+        """Gets the body of this ListNacosNamespacesResponse.
+
+        :return: The body of this ListNacosNamespacesResponse.
+        :rtype: str
+        """
+        return self._body
+
+    @body.setter
+    def body(self, body):
+        """Sets the body of this ListNacosNamespacesResponse.
+
+        :param body: The body of this ListNacosNamespacesResponse.
+        :type body: str
+        """
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

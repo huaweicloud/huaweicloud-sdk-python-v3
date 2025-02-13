@@ -23,6 +23,7 @@ class OutputVideoPara:
         'video': 'VideoInfo',
         'audio': 'AudioInfo',
         'file_name': 'str',
+        'manifest_name': 'str',
         'conver_duration': 'float',
         'error': 'XCodeError'
     }
@@ -34,11 +35,12 @@ class OutputVideoPara:
         'video': 'video',
         'audio': 'audio',
         'file_name': 'file_name',
+        'manifest_name': 'manifest_name',
         'conver_duration': 'conver_duration',
         'error': 'error'
     }
 
-    def __init__(self, template_id=None, size=None, pack=None, video=None, audio=None, file_name=None, conver_duration=None, error=None):
+    def __init__(self, template_id=None, size=None, pack=None, video=None, audio=None, file_name=None, manifest_name=None, conver_duration=None, error=None):
         """OutputVideoPara
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class OutputVideoPara:
         :type audio: :class:`huaweicloudsdkmpc.v1.AudioInfo`
         :param file_name: 输出片源文件名 
         :type file_name: str
+        :param manifest_name: 独立mpd索引文件名 
+        :type manifest_name: str
         :param conver_duration: 折算后视频时长 
         :type conver_duration: float
         :param error: 
@@ -69,6 +73,7 @@ class OutputVideoPara:
         self._video = None
         self._audio = None
         self._file_name = None
+        self._manifest_name = None
         self._conver_duration = None
         self._error = None
         self.discriminator = None
@@ -85,6 +90,8 @@ class OutputVideoPara:
             self.audio = audio
         if file_name is not None:
             self.file_name = file_name
+        if manifest_name is not None:
+            self.manifest_name = manifest_name
         if conver_duration is not None:
             self.conver_duration = conver_duration
         if error is not None:
@@ -213,6 +220,28 @@ class OutputVideoPara:
         :type file_name: str
         """
         self._file_name = file_name
+
+    @property
+    def manifest_name(self):
+        """Gets the manifest_name of this OutputVideoPara.
+
+        独立mpd索引文件名 
+
+        :return: The manifest_name of this OutputVideoPara.
+        :rtype: str
+        """
+        return self._manifest_name
+
+    @manifest_name.setter
+    def manifest_name(self, manifest_name):
+        """Sets the manifest_name of this OutputVideoPara.
+
+        独立mpd索引文件名 
+
+        :param manifest_name: The manifest_name of this OutputVideoPara.
+        :type manifest_name: str
+        """
+        self._manifest_name = manifest_name
 
     @property
     def conver_duration(self):

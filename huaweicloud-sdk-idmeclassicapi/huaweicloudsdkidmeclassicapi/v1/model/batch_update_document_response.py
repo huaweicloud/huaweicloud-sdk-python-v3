@@ -36,7 +36,7 @@ class BatchUpdateDocumentResponse(SdkResponse):
 
         :param result: **参数解释：**  请求结果。  **取值范围：**  - SUCCESS：请求成功。 - FAIL：请求失败。  **默认取值：**  不涉及。 
         :type result: str
-        :param data: 
+        :param data: **参数解释：**  请求数据。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type data: list[int]
         :param errors: **参数解释：**  异常信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type errors: list[str]
@@ -82,6 +82,8 @@ class BatchUpdateDocumentResponse(SdkResponse):
     def data(self):
         """Gets the data of this BatchUpdateDocumentResponse.
 
+        **参数解释：**  请求数据。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+
         :return: The data of this BatchUpdateDocumentResponse.
         :rtype: list[int]
         """
@@ -90,6 +92,8 @@ class BatchUpdateDocumentResponse(SdkResponse):
     @data.setter
     def data(self, data):
         """Sets the data of this BatchUpdateDocumentResponse.
+
+        **参数解释：**  请求数据。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param data: The data of this BatchUpdateDocumentResponse.
         :type data: list[int]

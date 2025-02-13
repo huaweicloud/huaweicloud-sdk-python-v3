@@ -30,7 +30,8 @@ class VideoParameters:
         'frame_rate': 'int',
         'width': 'int',
         'height': 'int',
-        'black_cut': 'int'
+        'black_cut': 'int',
+        'stream_name': 'str'
     }
 
     attribute_map = {
@@ -47,10 +48,11 @@ class VideoParameters:
         'frame_rate': 'frame_rate',
         'width': 'width',
         'height': 'height',
-        'black_cut': 'black_cut'
+        'black_cut': 'black_cut',
+        'stream_name': 'stream_name'
     }
 
-    def __init__(self, output_policy=None, codec=None, crf=None, max_bitrate=None, bitrate=None, profile=None, level=None, preset=None, max_iframes_interval=None, bframes_count=None, frame_rate=None, width=None, height=None, black_cut=None):
+    def __init__(self, output_policy=None, codec=None, crf=None, max_bitrate=None, bitrate=None, profile=None, level=None, preset=None, max_iframes_interval=None, bframes_count=None, frame_rate=None, width=None, height=None, black_cut=None, stream_name=None):
         """VideoParameters
 
         The model defined in huaweicloud sdk
@@ -83,6 +85,8 @@ class VideoParameters:
         :type height: int
         :param black_cut: 黑边剪裁类型  - 0：不开启黑边剪裁 - 1：开启黑边剪裁，低复杂度算法，针对长视频（&gt;5分钟） - 2：开启黑边剪裁，高复杂度算法，针对短视频（&lt;&#x3D;5分钟） 
         :type black_cut: int
+        :param stream_name: 流名称 
+        :type stream_name: str
         """
         
         
@@ -101,6 +105,7 @@ class VideoParameters:
         self._width = None
         self._height = None
         self._black_cut = None
+        self._stream_name = None
         self.discriminator = None
 
         if output_policy is not None:
@@ -131,6 +136,8 @@ class VideoParameters:
             self.height = height
         if black_cut is not None:
             self.black_cut = black_cut
+        if stream_name is not None:
+            self.stream_name = stream_name
 
     @property
     def output_policy(self):
@@ -439,6 +446,28 @@ class VideoParameters:
         :type black_cut: int
         """
         self._black_cut = black_cut
+
+    @property
+    def stream_name(self):
+        """Gets the stream_name of this VideoParameters.
+
+        流名称 
+
+        :return: The stream_name of this VideoParameters.
+        :rtype: str
+        """
+        return self._stream_name
+
+    @stream_name.setter
+    def stream_name(self, stream_name):
+        """Sets the stream_name of this VideoParameters.
+
+        流名称 
+
+        :param stream_name: The stream_name of this VideoParameters.
+        :type stream_name: str
+        """
+        self._stream_name = stream_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -27,9 +27,9 @@ class CreateNacosNamespacesRequest:
     attribute_map = {
         'x_engine_id': 'x-engine-id',
         'x_enterprise_project_id': 'X-Enterprise-Project-ID',
-        'custom_namespace_id': 'custom_namespace_id',
-        'namespace_name': 'namespace_name',
-        'namespace_desc': 'namespace_desc'
+        'custom_namespace_id': 'customNamespaceId',
+        'namespace_name': 'namespaceName',
+        'namespace_desc': 'namespaceDesc'
     }
 
     def __init__(self, x_engine_id=None, x_enterprise_project_id=None, custom_namespace_id=None, namespace_name=None, namespace_desc=None):

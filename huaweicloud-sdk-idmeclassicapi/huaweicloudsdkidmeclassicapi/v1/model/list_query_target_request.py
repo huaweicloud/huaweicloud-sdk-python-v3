@@ -71,7 +71,7 @@ class ListQueryTargetRequest:
         :type cur_page_path: int
         :param identifier: **参数解释：**  应用唯一标识。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
         :type identifier: str
-        :param model_name: **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、\&quot;_\&quot;，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
+        :param model_name: **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、“_”，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
         :type model_name: str
         :param body: Body of the ListQueryTargetRequest
         :type body: :class:`huaweicloudsdkidmeclassicapi.v1.RDMParamVOGenericLinkTypeDTO`
@@ -338,7 +338,7 @@ class ListQueryTargetRequest:
     def model_name(self):
         """Gets the model_name of this ListQueryTargetRequest.
 
-        **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、\"_\"，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
+        **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、“_”，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
 
         :return: The model_name of this ListQueryTargetRequest.
         :rtype: str
@@ -349,7 +349,7 @@ class ListQueryTargetRequest:
     def model_name(self, model_name):
         """Sets the model_name of this ListQueryTargetRequest.
 
-        **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、\"_\"，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
+        **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、“_”，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
 
         :param model_name: The model_name of this ListQueryTargetRequest.
         :type model_name: str

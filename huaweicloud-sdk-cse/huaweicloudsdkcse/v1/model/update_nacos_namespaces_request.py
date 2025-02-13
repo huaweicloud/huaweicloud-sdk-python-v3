@@ -28,8 +28,8 @@ class UpdateNacosNamespacesRequest:
         'x_engine_id': 'x-engine-id',
         'x_enterprise_project_id': 'X-Enterprise-Project-ID',
         'namespace': 'namespace',
-        'namespace_show_name': 'namespace_show_name',
-        'namespace_desc': 'namespace_desc'
+        'namespace_show_name': 'namespaceShowName',
+        'namespace_desc': 'namespaceDesc'
     }
 
     def __init__(self, x_engine_id=None, x_enterprise_project_id=None, namespace=None, namespace_show_name=None, namespace_desc=None):

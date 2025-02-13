@@ -234,7 +234,7 @@ class RabbitMQClient(Client):
     def create_post_paid_instance_by_engine(self, request):
         """创建实例
 
-        创建实例[，该接口支持创建按需[和包周期](tag:hws,hws_eu,hws_hk,ctc,cmcc)计费方式的实例](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,cmcc)。
+        创建实例[，该接口支持创建按需[和包周期](tag:hws,hws_eu,hws_hk,ctc,cmcc)计费方式的实例](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,cmcc,sbc)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -535,6 +535,71 @@ class RabbitMQClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
         if 'user_name' in local_var_params:
             path_params['user_name'] = local_var_params['user_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def enable_dns(self, request):
+        """开启RabbitMQ实例域名访问能力
+
+        开启RabbitMQ实例域名访问功能后，客户端可以通过域名连接RabbitMQ实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for EnableDns
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.EnableDnsRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.EnableDnsResponse`
+        """
+        http_info = self._enable_dns_http_info(request)
+        return self._call_api(**http_info)
+
+    def enable_dns_invoker(self, request):
+        http_info = self._enable_dns_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _enable_dns_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/rabbitmq/instances/{instance_id}/dns",
+            "request_type": request.__class__.__name__,
+            "response_type": "EnableDnsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
 
@@ -1616,6 +1681,69 @@ class RabbitMQClient(Client):
             "resource_path": "/v2/instances/maintain-windows",
             "request_type": request.__class__.__name__,
             "response_type": "ShowMaintainWindowsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_quotas(self, request):
+        """查看租户配额
+
+        查询租户最大可以创建的实例个数和已创建的实例个数，以及每个实例最大可以创建标签的个数。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowQuotas
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowQuotasRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.ShowQuotasResponse`
+        """
+        http_info = self._show_quotas_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_quotas_invoker(self, request):
+        http_info = self._show_quotas_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_quotas_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowQuotasResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

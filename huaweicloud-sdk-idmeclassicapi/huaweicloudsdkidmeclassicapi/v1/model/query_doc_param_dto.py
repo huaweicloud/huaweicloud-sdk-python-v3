@@ -33,7 +33,7 @@ class QueryDocParamDto:
 
         :param instance_id: **参数解释**：  实例ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
         :type instance_id: str
-        :param type: **参数解释**：  文档类型。  **约束限制**：  不涉及。  **取值范围**：  - directory: 目录 - pageDocument: Page文档 - boardDocument: Board文档 - mindDocument: Mind文档 - drawDocument: Draw文档  **默认取值**：  不涉及。
+        :param type: **参数解释**：  文档类型。  **约束限制**：  不涉及。  **取值范围**：  - directory：目录。 - pageDocument：Page文档。 - boardDocument：Board文档。 - mindDocument：Mind文档。 - drawDocument：Draw文档。  **默认取值**：  不涉及。
         :type type: str
         """
         
@@ -74,7 +74,7 @@ class QueryDocParamDto:
     def type(self):
         """Gets the type of this QueryDocParamDto.
 
-        **参数解释**：  文档类型。  **约束限制**：  不涉及。  **取值范围**：  - directory: 目录 - pageDocument: Page文档 - boardDocument: Board文档 - mindDocument: Mind文档 - drawDocument: Draw文档  **默认取值**：  不涉及。
+        **参数解释**：  文档类型。  **约束限制**：  不涉及。  **取值范围**：  - directory：目录。 - pageDocument：Page文档。 - boardDocument：Board文档。 - mindDocument：Mind文档。 - drawDocument：Draw文档。  **默认取值**：  不涉及。
 
         :return: The type of this QueryDocParamDto.
         :rtype: str
@@ -85,7 +85,7 @@ class QueryDocParamDto:
     def type(self, type):
         """Sets the type of this QueryDocParamDto.
 
-        **参数解释**：  文档类型。  **约束限制**：  不涉及。  **取值范围**：  - directory: 目录 - pageDocument: Page文档 - boardDocument: Board文档 - mindDocument: Mind文档 - drawDocument: Draw文档  **默认取值**：  不涉及。
+        **参数解释**：  文档类型。  **约束限制**：  不涉及。  **取值范围**：  - directory：目录。 - pageDocument：Page文档。 - boardDocument：Board文档。 - mindDocument：Mind文档。 - drawDocument：Draw文档。  **默认取值**：  不涉及。
 
         :param type: The type of this QueryDocParamDto.
         :type type: str

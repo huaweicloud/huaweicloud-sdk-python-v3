@@ -18,15 +18,17 @@ class TranscodeDetail:
 
     openapi_types = {
         'multitask_info': 'list[MultiTaskInfo]',
-        'input_file': 'SourceInfo'
+        'input_file': 'SourceInfo',
+        'replace_sub_index': 'list[str]'
     }
 
     attribute_map = {
         'multitask_info': 'multitask_info',
-        'input_file': 'input_file'
+        'input_file': 'input_file',
+        'replace_sub_index': 'replace_sub_index'
     }
 
-    def __init__(self, multitask_info=None, input_file=None):
+    def __init__(self, multitask_info=None, input_file=None, replace_sub_index=None):
         """TranscodeDetail
 
         The model defined in huaweicloud sdk
@@ -35,18 +37,23 @@ class TranscodeDetail:
         :type multitask_info: list[:class:`huaweicloudsdkmpc.v1.MultiTaskInfo`]
         :param input_file: 
         :type input_file: :class:`huaweicloudsdkmpc.v1.SourceInfo`
+        :param replace_sub_index: 被替换的子索引文件 
+        :type replace_sub_index: list[str]
         """
         
         
 
         self._multitask_info = None
         self._input_file = None
+        self._replace_sub_index = None
         self.discriminator = None
 
         if multitask_info is not None:
             self.multitask_info = multitask_info
         if input_file is not None:
             self.input_file = input_file
+        if replace_sub_index is not None:
+            self.replace_sub_index = replace_sub_index
 
     @property
     def multitask_info(self):
@@ -87,6 +94,28 @@ class TranscodeDetail:
         :type input_file: :class:`huaweicloudsdkmpc.v1.SourceInfo`
         """
         self._input_file = input_file
+
+    @property
+    def replace_sub_index(self):
+        """Gets the replace_sub_index of this TranscodeDetail.
+
+        被替换的子索引文件 
+
+        :return: The replace_sub_index of this TranscodeDetail.
+        :rtype: list[str]
+        """
+        return self._replace_sub_index
+
+    @replace_sub_index.setter
+    def replace_sub_index(self, replace_sub_index):
+        """Sets the replace_sub_index of this TranscodeDetail.
+
+        被替换的子索引文件 
+
+        :param replace_sub_index: The replace_sub_index of this TranscodeDetail.
+        :type replace_sub_index: list[str]
+        """
+        self._replace_sub_index = replace_sub_index
 
     def to_dict(self):
         """Returns the model properties as a dict"""

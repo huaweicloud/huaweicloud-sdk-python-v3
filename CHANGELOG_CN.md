@@ -1,3 +1,206 @@
+# 3.1.135 2025-02-13
+
+### HuaweiCloud SDK CAE
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateVolume**
+    - 请求参数变更
+      - `+ spec.resource_type: enum value [sfs,obs]`
+
+### HuaweiCloud SDK CDN
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowDomainFullConfig**
+    - 响应参数变更
+      - `+ configs.client_cert`
+  - **UpdateDomainFullConfig**
+    - 请求参数变更
+      - `+ configs.client_cert`
+
+### HuaweiCloud SDK CSE
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateNacosNamespaces**
+    - 请求参数变更
+      - `+ namespaceShowName`
+      - `+ namespaceDesc`
+      - `- namespace_show_name`
+      - `- namespace_desc`
+  - **CreateNacosNamespaces**
+    - 请求参数变更
+      - `+ customNamespaceId`
+      - `+ namespaceName`
+      - `+ namespaceDesc`
+      - `- custom_namespace_id`
+      - `- namespace_name`
+      - `- namespace_desc`
+  - **DeleteNacosNamespaces**
+    - 请求参数变更
+      - `+ namespaceId`
+      - `- namespace_id`
+
+### HuaweiCloud SDK Live
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ModifyOttChannelInfoInput**
+    - 请求参数变更
+      - `+ input.audio_selectors.selector_settings.audio_hls_selection`
+  - **ModifyOttChannelInfoEndPoints**
+    - 请求参数变更
+      - `+ endpoints.dash_package.suggested_presentation_delay`
+      - `+ endpoints.dash_package.minimum_update_period`
+      - `+ endpoints.dash_package.min_buffer_time`
+  - **CreateOttChannelInfo**
+    - 请求参数变更
+      - `+ input.audio_selectors.selector_settings.audio_hls_selection`
+      - `+ endpoints.dash_package.suggested_presentation_delay`
+      - `+ endpoints.dash_package.minimum_update_period`
+      - `+ endpoints.dash_package.min_buffer_time`
+  - **ListOttChannelInfo**
+    - 响应参数变更
+      - `+ channels.input.audio_selectors.selector_settings.audio_hls_selection`
+      - `+ channels.endpoints.dash_package.suggested_presentation_delay`
+      - `+ channels.endpoints.dash_package.minimum_update_period`
+      - `+ channels.endpoints.dash_package.min_buffer_time`
+
+### HuaweiCloud SDK MPC
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateTemplateGroup**
+    - 请求参数变更
+      - `+ videos.stream_name`
+  - **ListTemplateGroup**
+    - 响应参数变更
+      - `+ template_group_list.videos.stream_name`
+  - **CreateTemplateGroup**
+    - 请求参数变更
+      - `+ videos.stream_name`
+    - 响应参数变更
+      - `+ template_group.videos.stream_name`
+  - **UpdateTransTemplate**
+    - 请求参数变更
+      - `+ video.stream_name`
+  - **CreateTransTemplate**
+    - 请求参数变更
+      - `+ video.stream_name`
+  - **ListTemplate**
+    - 响应参数变更
+      - `+ template_array.template.video.stream_name`
+  - **CreateTranscodingTask**
+    - 请求参数变更
+      - `+ additional_manifests`
+      - `+ av_parameters.video.stream_name`
+  - **ListTranscodingTask**
+    - 响应参数变更
+      - `+ task_array.additional_manifests`
+      - `+ task_array.av_parameters.video.stream_name`
+      - `+ task_array.transcode_detail.replace_sub_index`
+      - `+ task_array.transcode_detail.input_file.manifest_name`
+  - **ListTranscodeDetail**
+    - 响应参数变更
+      - `+ task_array.media_detail.replace_sub_index`
+      - `+ task_array.media_detail.output_video_paras.manifest_name`
+  - **CreateEditingJob**
+    - 请求参数变更
+      - `+ concats.av_parameters.video.stream_name`
+  - **ListEditingJob**
+    - 响应参数变更
+      - `+ jobs.output_file_info.meta_data.manifest_name`
+      - `+ jobs.edit_task_req.concats.av_parameters.video.stream_name`
+
+### HuaweiCloud SDK RabbitMQ
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`EnableDns`、`ShowQuotas`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreatePostPaidInstanceByEngine**
+    - 请求参数变更
+      - `+ enable_acl`
+  - **ShowInstance**
+    - 响应参数变更
+      - `+ public_connect_address`
+      - `+ available_zone_names`
+      - `+ public_connect_domain_name`
+      - `+ dns_enable`
+      - `+ management_connect_domain_name`
+      - `+ public_management_connect_domain_name`
+      - `+ public_management_connect_address`
+      - `+ connect_domain_name`
+  - **CreatePostPaidInstance**
+    - 请求参数变更
+      - `+ enable_acl`
+  - **ListInstancesDetails**
+    - 响应参数变更
+      - `+ public_connect_address`
+      - `+ available_zone_names`
+      - `+ public_connect_domain_name`
+      - `+ dns_enable`
+      - `+ management_connect_domain_name`
+      - `+ public_management_connect_domain_name`
+      - `+ public_management_connect_address`
+      - `+ connect_domain_name`
+      - `+ instances.dns_enable`
+      - `+ instances.connect_domain_name`
+      - `+ instances.public_connect_address`
+      - `+ instances.public_connect_domain_name`
+      - `+ instances.management_connect_domain_name`
+      - `+ instances.public_management_connect_address`
+      - `+ instances.public_management_connect_domain_name`
+      - `+ instances.available_zone_names`
+
+### HuaweiCloud SDK SMN
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListTopicAttributes**
+    - 响应参数变更
+      - `* attributes.access_policy: object<AccessPolicy> -> string`
+  - **DeleteNotifyPolicy**
+    - 响应参数变更
+      - `+ request_id`
+  - **UpdateNotifyPolicy**
+    - 响应参数变更
+      - `+ request_id`
+
 # 3.1.134 2025-02-06
 
 ### HuaweiCloud SDK CCE

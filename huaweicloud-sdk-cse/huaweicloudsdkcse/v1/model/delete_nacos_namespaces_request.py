@@ -25,7 +25,7 @@ class DeleteNacosNamespacesRequest:
     attribute_map = {
         'x_engine_id': 'x-engine-id',
         'x_enterprise_project_id': 'X-Enterprise-Project-ID',
-        'namespace_id': 'namespace_id'
+        'namespace_id': 'namespaceId'
     }
 
     def __init__(self, x_engine_id=None, x_enterprise_project_id=None, namespace_id=None):
