@@ -34,6 +34,7 @@ from logging.handlers import RotatingFileHandler
 
 import simplejson as json
 import six
+import bson
 from requests_toolbelt import MultipartEncoder
 from six.moves.urllib.parse import quote, urlparse
 
@@ -48,6 +49,7 @@ from huaweicloudsdkcore.http.http_config import HttpConfig
 from huaweicloudsdkcore.http.http_handler import HttpHandler
 from huaweicloudsdkcore.http.primitive_types import NATIVE_TYPES_MAPPING
 from huaweicloudsdkcore.http.primitive_types import PRIMITIVE_TYPES
+from huaweicloudsdkcore.http.bson_types import BSON_TYPES_MAPPING
 from huaweicloudsdkcore.sdk_request import SdkRequest
 from huaweicloudsdkcore.sdk_response import FutureSdkResponse, SdkResponse
 from huaweicloudsdkcore.sdk_stream_response import SdkStreamResponse
@@ -213,6 +215,7 @@ class Client(object):
     _APPLICATION_XML = "application/xml"
     _APPLICATION_OCTET_STREAM = "application/octet-stream"
     _APPLICATION_X_WWW_FORM_URLENCODED = "application/x-www-form-urlencoded"
+    _APPLICATION_BSON = "application/bson"
     _MULTIPART_FORM_DATA = "multipart/form-data"
     _XML_NAME = "xml_name"
     _AUTHORIZATION = "Authorization"
@@ -364,6 +367,13 @@ class Client(object):
         return XmlTransfer().to_string(_dict)
 
     @classmethod
+    def _parse_bson_body(cls, body):
+        if body is None:
+            return None
+        body_dict = http_utils.sanitize_for_serialization(body)
+        return bson.encode(body_dict)
+
+    @classmethod
     def _parse_body(cls, body, post_params=None):
         # type: (str|list|dict|Iterable|None, dict) -> dict|str|Iterable|None
         if post_params:
@@ -503,6 +513,8 @@ class Client(object):
             body = self._parse_form_urlencoded_body(request_body)
         elif content_type == self._APPLICATION_XML:
             body = self._parse_xml_body(request_body)
+        elif content_type == self._APPLICATION_BSON:
+            body = self._parse_bson_body(request_body)
         elif content_type == self._APPLICATION_OCTET_STREAM:
             content_length = header_params.get("content-length")
             body = self._parse_stream_body(request_body, progress_callback, content_length)
@@ -572,6 +584,9 @@ class Client(object):
         try:
             if hasattr(response, self._HEADERS) and response.headers.get(self._CONTENT_TYPE) == self._APPLICATION_XML:
                 data = XmlTransfer().to_dict(response.content, ignore_root=True)
+            elif hasattr(response, self._HEADERS) \
+                    and response.headers.get(self._CONTENT_TYPE) == self._APPLICATION_BSON:
+                data = bson.decode(response.content)
             else:
                 data = json.loads(six.ensure_str(response.text), parse_float=decimal.Decimal)
         except ValueError:
@@ -594,7 +609,8 @@ class Client(object):
                 sub_kls = re.match(r'dict\(([^,]*), (.*)\)', klass).group(2)
                 return {k: self._deserialize(v, sub_kls)
                         for k, v in six.iteritems(data)}
-
+            if klass in BSON_TYPES_MAPPING:
+                return data
             if klass in NATIVE_TYPES_MAPPING:
                 klass = NATIVE_TYPES_MAPPING[klass]
             elif klass == FormFile.TYPE:

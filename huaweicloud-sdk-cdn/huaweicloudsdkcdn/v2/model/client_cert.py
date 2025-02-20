@@ -17,24 +17,24 @@ class ClientCert:
     sensitive_list = []
 
     openapi_types = {
-        'validation': 'int',
+        'status': 'str',
         'trusted_cert': 'str',
         'hosts': 'str'
     }
 
     attribute_map = {
-        'validation': 'validation',
+        'status': 'status',
         'trusted_cert': 'trusted_cert',
         'hosts': 'hosts'
     }
 
-    def __init__(self, validation=None, trusted_cert=None, hosts=None):
+    def __init__(self, status=None, trusted_cert=None, hosts=None):
         """ClientCert
 
         The model defined in huaweicloud sdk
 
-        :param validation: 客户端证书配置开关，1：打开；0：关闭。
-        :type validation: int
+        :param status: 客户端证书配置开关，on：打开；off：关闭。
+        :type status: str
         :param trusted_cert: 客户端CA证书的内容，仅支持PEM格式。
         :type trusted_cert: str
         :param hosts: 客户端CA证书指定的域名。   &gt; 1. 如果不配置域名，则CDN会放行所有持有该CA证书的客户端请求。   &gt; 2. 最多可配置100个域名，多个域名用“,”或“|”分隔。
@@ -43,37 +43,37 @@ class ClientCert:
         
         
 
-        self._validation = None
+        self._status = None
         self._trusted_cert = None
         self._hosts = None
         self.discriminator = None
 
-        self.validation = validation
+        self.status = status
         self.trusted_cert = trusted_cert
         if hosts is not None:
             self.hosts = hosts
 
     @property
-    def validation(self):
-        """Gets the validation of this ClientCert.
+    def status(self):
+        """Gets the status of this ClientCert.
 
-        客户端证书配置开关，1：打开；0：关闭。
+        客户端证书配置开关，on：打开；off：关闭。
 
-        :return: The validation of this ClientCert.
-        :rtype: int
+        :return: The status of this ClientCert.
+        :rtype: str
         """
-        return self._validation
+        return self._status
 
-    @validation.setter
-    def validation(self, validation):
-        """Sets the validation of this ClientCert.
+    @status.setter
+    def status(self, status):
+        """Sets the status of this ClientCert.
 
-        客户端证书配置开关，1：打开；0：关闭。
+        客户端证书配置开关，on：打开；off：关闭。
 
-        :param validation: The validation of this ClientCert.
-        :type validation: int
+        :param status: The status of this ClientCert.
+        :type status: str
         """
-        self._validation = validation
+        self._status = status
 
     @property
     def trusted_cert(self):

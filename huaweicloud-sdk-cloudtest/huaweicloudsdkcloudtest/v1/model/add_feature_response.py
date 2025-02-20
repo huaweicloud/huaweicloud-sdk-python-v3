@@ -2,10 +2,11 @@
 
 import six
 
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ApiResultTestCaseVo:
+class AddFeatureResponse(SdkResponse):
 
     """
     Attributes:
@@ -18,7 +19,7 @@ class ApiResultTestCaseVo:
 
     openapi_types = {
         'status': 'str',
-        'result': 'ResultValueTestCaseVo',
+        'result': 'ResultValueTestItemVo',
         'error': 'ApiError',
         'request_id': 'str',
         'server_address': 'str'
@@ -33,14 +34,14 @@ class ApiResultTestCaseVo:
     }
 
     def __init__(self, status=None, result=None, error=None, request_id=None, server_address=None):
-        """ApiResultTestCaseVo
+        """AddFeatureResponse
 
         The model defined in huaweicloud sdk
 
         :param status: 对外时：success|error; 对内时：ok|failed
         :type status: str
         :param result: 
-        :type result: :class:`huaweicloudsdkcloudtest.v1.ResultValueTestCaseVo`
+        :type result: :class:`huaweicloudsdkcloudtest.v1.ResultValueTestItemVo`
         :param error: 
         :type error: :class:`huaweicloudsdkcloudtest.v1.ApiError`
         :param request_id: 由接口调用方传入，建议使用UUID保证请求的唯一性。
@@ -49,7 +50,7 @@ class ApiResultTestCaseVo:
         :type server_address: str
         """
         
-        
+        super(AddFeatureResponse, self).__init__()
 
         self._status = None
         self._result = None
@@ -71,102 +72,102 @@ class ApiResultTestCaseVo:
 
     @property
     def status(self):
-        """Gets the status of this ApiResultTestCaseVo.
+        """Gets the status of this AddFeatureResponse.
 
         对外时：success|error; 对内时：ok|failed
 
-        :return: The status of this ApiResultTestCaseVo.
+        :return: The status of this AddFeatureResponse.
         :rtype: str
         """
         return self._status
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ApiResultTestCaseVo.
+        """Sets the status of this AddFeatureResponse.
 
         对外时：success|error; 对内时：ok|failed
 
-        :param status: The status of this ApiResultTestCaseVo.
+        :param status: The status of this AddFeatureResponse.
         :type status: str
         """
         self._status = status
 
     @property
     def result(self):
-        """Gets the result of this ApiResultTestCaseVo.
+        """Gets the result of this AddFeatureResponse.
 
-        :return: The result of this ApiResultTestCaseVo.
-        :rtype: :class:`huaweicloudsdkcloudtest.v1.ResultValueTestCaseVo`
+        :return: The result of this AddFeatureResponse.
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ResultValueTestItemVo`
         """
         return self._result
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ApiResultTestCaseVo.
+        """Sets the result of this AddFeatureResponse.
 
-        :param result: The result of this ApiResultTestCaseVo.
-        :type result: :class:`huaweicloudsdkcloudtest.v1.ResultValueTestCaseVo`
+        :param result: The result of this AddFeatureResponse.
+        :type result: :class:`huaweicloudsdkcloudtest.v1.ResultValueTestItemVo`
         """
         self._result = result
 
     @property
     def error(self):
-        """Gets the error of this ApiResultTestCaseVo.
+        """Gets the error of this AddFeatureResponse.
 
-        :return: The error of this ApiResultTestCaseVo.
+        :return: The error of this AddFeatureResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ApiError`
         """
         return self._error
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ApiResultTestCaseVo.
+        """Sets the error of this AddFeatureResponse.
 
-        :param error: The error of this ApiResultTestCaseVo.
+        :param error: The error of this AddFeatureResponse.
         :type error: :class:`huaweicloudsdkcloudtest.v1.ApiError`
         """
         self._error = error
 
     @property
     def request_id(self):
-        """Gets the request_id of this ApiResultTestCaseVo.
+        """Gets the request_id of this AddFeatureResponse.
 
         由接口调用方传入，建议使用UUID保证请求的唯一性。
 
-        :return: The request_id of this ApiResultTestCaseVo.
+        :return: The request_id of this AddFeatureResponse.
         :rtype: str
         """
         return self._request_id
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ApiResultTestCaseVo.
+        """Sets the request_id of this AddFeatureResponse.
 
         由接口调用方传入，建议使用UUID保证请求的唯一性。
 
-        :param request_id: The request_id of this ApiResultTestCaseVo.
+        :param request_id: The request_id of this AddFeatureResponse.
         :type request_id: str
         """
         self._request_id = request_id
 
     @property
     def server_address(self):
-        """Gets the server_address of this ApiResultTestCaseVo.
+        """Gets the server_address of this AddFeatureResponse.
 
         对内接口才有此属性
 
-        :return: The server_address of this ApiResultTestCaseVo.
+        :return: The server_address of this AddFeatureResponse.
         :rtype: str
         """
         return self._server_address
 
     @server_address.setter
     def server_address(self, server_address):
-        """Sets the server_address of this ApiResultTestCaseVo.
+        """Sets the server_address of this AddFeatureResponse.
 
         对内接口才有此属性
 
-        :param server_address: The server_address of this ApiResultTestCaseVo.
+        :param server_address: The server_address of this AddFeatureResponse.
         :type server_address: str
         """
         self._server_address = server_address
@@ -213,7 +214,7 @@ class ApiResultTestCaseVo:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ApiResultTestCaseVo):
+        if not isinstance(other, AddFeatureResponse):
             return False
 
         return self.__dict__ == other.__dict__

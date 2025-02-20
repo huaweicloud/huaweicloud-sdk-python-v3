@@ -19,8 +19,12 @@
 """
 import pytest
 
+import bson
 from huaweicloudsdkcore.client import Client
 from tests.model.vpc import Vpc
+from tests.model.kvs import GetKvRequest
+from tests.model.kvs import BsonBody
+from bson import MaxKey, MinKey, Regex, ObjectId, Code
 
 
 class CustomIter:
@@ -59,6 +63,47 @@ def test_parse_body():
                                  '"routes": "routes", "status": "status"}]')
     assert parse_body({"vpc": vpc}) == ('{"vpc": {"id": "id", "name": "name", "cidr": "cidr", "description": '
                                         '"description", "routes": "routes", "status": "status"}}')
+
+
+def test_parse_kvs_body():
+    client = Client()
+    parse_bson_body = getattr(client, "_parse_bson_body")
+    bson_dict = {
+        "table_name": "test-table",
+        "primary_key": {
+            "name": "tom",
+            "age": 10
+        }
+    }
+    kvs = GetKvRequest(table_name="test-table", primary_key={"name": "tom", "age": 10})
+    assert parse_bson_body(kvs) == bson.encode(bson_dict)
+
+
+def test_parse_bson_type():
+    client = Client()
+    parse_bson_body = getattr(client, "_parse_bson_body")
+    assert parse_bson_body(None) is None
+    assert parse_bson_body({}) == bson.encode({})
+    dict_data = {
+        "user": "jack",
+        "age": 10
+    }
+    binary_data = b'\x00\x01\x02\x03\x04'
+    regex_pattern = "^[A-Za-z0-9]*$"
+    js_code = "function add(x, y) { return x + y; }"
+    object_id = ObjectId("67adbe37399015c5d4661a5b")
+    bson_dict = {
+        "doc_field": dict_data,
+        "binary_field": binary_data,
+        "min_key_field": MinKey(),
+        "max_key_field": MaxKey(),
+        "regex_field": Regex(regex_pattern),
+        "object_id_field": object_id,
+        "js_code_field": Code(js_code)
+    }
+    body = BsonBody(doc_field=dict_data, binary_field=binary_data, min_key_field=MinKey(), max_key_field=MaxKey(),
+                    object_id_field=object_id, regex_field=Regex(regex_pattern), js_code_field=Code(js_code))
+    assert parse_bson_body(body) == bson.encode(bson_dict)
 
 
 if __name__ == "__main__":

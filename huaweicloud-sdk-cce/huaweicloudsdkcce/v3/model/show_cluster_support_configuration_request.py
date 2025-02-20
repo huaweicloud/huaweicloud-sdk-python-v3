@@ -55,9 +55,12 @@ class ShowClusterSupportConfigurationRequest:
 
         if cluster_id is not None:
             self.cluster_id = cluster_id
-        self.cluster_type = cluster_type
-        self.cluster_version = cluster_version
-        self.network_mode = network_mode
+        if cluster_type is not None:
+            self.cluster_type = cluster_type
+        if cluster_version is not None:
+            self.cluster_version = cluster_version
+        if network_mode is not None:
+            self.network_mode = network_mode
 
     @property
     def cluster_id(self):

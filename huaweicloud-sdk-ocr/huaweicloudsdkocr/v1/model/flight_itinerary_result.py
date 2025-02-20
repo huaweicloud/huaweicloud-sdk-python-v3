@@ -41,6 +41,7 @@ class FlightItineraryResult:
         'number': 'str',
         'international_flag': 'str',
         'issue_status': 'str',
+        'gp_number': 'str',
         'itinerary_list': 'list[ItineraryList]',
         'confidence': 'object'
     }
@@ -70,11 +71,12 @@ class FlightItineraryResult:
         'number': 'number',
         'international_flag': 'international_flag',
         'issue_status': 'issue_status',
+        'gp_number': 'gp_number',
         'itinerary_list': 'itinerary_list',
         'confidence': 'confidence'
     }
 
-    def __init__(self, serial_number=None, passenger_name=None, id_number=None, endorsements_restrictions=None, order_number=None, fare=None, caac_development_fund=None, fuel_surcharge=None, other_taxes=None, total=None, e_ticket_number=None, check_code=None, reference_information=None, insurance=None, agent_code=None, issue_organization=None, issue_date=None, tax=None, tax_rate=None, buyer_name=None, buyer_id=None, number=None, international_flag=None, issue_status=None, itinerary_list=None, confidence=None):
+    def __init__(self, serial_number=None, passenger_name=None, id_number=None, endorsements_restrictions=None, order_number=None, fare=None, caac_development_fund=None, fuel_surcharge=None, other_taxes=None, total=None, e_ticket_number=None, check_code=None, reference_information=None, insurance=None, agent_code=None, issue_organization=None, issue_date=None, tax=None, tax_rate=None, buyer_name=None, buyer_id=None, number=None, international_flag=None, issue_status=None, gp_number=None, itinerary_list=None, confidence=None):
         """FlightItineraryResult
 
         The model defined in huaweicloud sdk
@@ -127,6 +129,8 @@ class FlightItineraryResult:
         :type international_flag: str
         :param issue_status: 开具状态 
         :type issue_status: str
+        :param gp_number: gp单号。 
+        :type gp_number: str
         :param itinerary_list: 机票行程列表。 
         :type itinerary_list: list[:class:`huaweicloudsdkocr.v1.ItineraryList`]
         :param confidence: 相关字段的置信度信息，取值范围0~1。  置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。  &gt; 说明：  - （1）置信度中的相关字段均与返回值中的相关字段一一对应；  - （2）置信度中的itinerary_list的顺序与返回值中的itinerary_list的顺序是一致的。 
@@ -159,6 +163,7 @@ class FlightItineraryResult:
         self._number = None
         self._international_flag = None
         self._issue_status = None
+        self._gp_number = None
         self._itinerary_list = None
         self._confidence = None
         self.discriminator = None
@@ -211,6 +216,8 @@ class FlightItineraryResult:
             self.international_flag = international_flag
         if issue_status is not None:
             self.issue_status = issue_status
+        if gp_number is not None:
+            self.gp_number = gp_number
         if itinerary_list is not None:
             self.itinerary_list = itinerary_list
         if confidence is not None:
@@ -743,6 +750,28 @@ class FlightItineraryResult:
         :type issue_status: str
         """
         self._issue_status = issue_status
+
+    @property
+    def gp_number(self):
+        """Gets the gp_number of this FlightItineraryResult.
+
+        gp单号。 
+
+        :return: The gp_number of this FlightItineraryResult.
+        :rtype: str
+        """
+        return self._gp_number
+
+    @gp_number.setter
+    def gp_number(self, gp_number):
+        """Sets the gp_number of this FlightItineraryResult.
+
+        gp单号。 
+
+        :param gp_number: The gp_number of this FlightItineraryResult.
+        :type gp_number: str
+        """
+        self._gp_number = gp_number
 
     @property
     def itinerary_list(self):

@@ -5371,6 +5371,77 @@ class DrsAsyncClient(Client):
 
         return http_info
 
+    def show_timeline_async(self, request):
+        """展示时间轴
+
+        指定不同的任务ID可以展示当前任务创建时间、启动时间、重试、重置等操作的时间轴信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowTimeline
+        :type request: :class:`huaweicloudsdkdrs.v5.ShowTimelineRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v5.ShowTimelineResponse`
+        """
+        http_info = self._show_timeline_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_timeline_async_invoker(self, request):
+        http_info = self._show_timeline_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_timeline_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}/timelines",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTimelineResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_update_object_saving_status_async(self, request):
         """获取对象保存进度
 

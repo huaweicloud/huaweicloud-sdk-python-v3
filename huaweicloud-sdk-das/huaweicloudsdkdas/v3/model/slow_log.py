@@ -18,6 +18,7 @@ class SlowLog:
 
     openapi_types = {
         'sql': 'str',
+        'sql_template_id': 'str',
         'database': 'str',
         'client': 'str',
         'user': 'str',
@@ -30,6 +31,7 @@ class SlowLog:
 
     attribute_map = {
         'sql': 'sql',
+        'sql_template_id': 'sql_template_id',
         'database': 'database',
         'client': 'client',
         'user': 'user',
@@ -40,13 +42,15 @@ class SlowLog:
         'rows_sent': 'rows_sent'
     }
 
-    def __init__(self, sql=None, database=None, client=None, user=None, execute_at=None, query_time=None, lock_time=None, rows_examined=None, rows_sent=None):
+    def __init__(self, sql=None, sql_template_id=None, database=None, client=None, user=None, execute_at=None, query_time=None, lock_time=None, rows_examined=None, rows_sent=None):
         """SlowLog
 
         The model defined in huaweicloud sdk
 
         :param sql: SQL语句。
         :type sql: str
+        :param sql_template_id: SQL模板ID。
+        :type sql_template_id: str
         :param database: 数据库名。
         :type database: str
         :param client: 客户端。
@@ -68,6 +72,7 @@ class SlowLog:
         
 
         self._sql = None
+        self._sql_template_id = None
         self._database = None
         self._client = None
         self._user = None
@@ -79,6 +84,7 @@ class SlowLog:
         self.discriminator = None
 
         self.sql = sql
+        self.sql_template_id = sql_template_id
         self.database = database
         self.client = client
         self.user = user
@@ -109,6 +115,28 @@ class SlowLog:
         :type sql: str
         """
         self._sql = sql
+
+    @property
+    def sql_template_id(self):
+        """Gets the sql_template_id of this SlowLog.
+
+        SQL模板ID。
+
+        :return: The sql_template_id of this SlowLog.
+        :rtype: str
+        """
+        return self._sql_template_id
+
+    @sql_template_id.setter
+    def sql_template_id(self, sql_template_id):
+        """Sets the sql_template_id of this SlowLog.
+
+        SQL模板ID。
+
+        :param sql_template_id: The sql_template_id of this SlowLog.
+        :type sql_template_id: str
+        """
+        self._sql_template_id = sql_template_id
 
     @property
     def database(self):

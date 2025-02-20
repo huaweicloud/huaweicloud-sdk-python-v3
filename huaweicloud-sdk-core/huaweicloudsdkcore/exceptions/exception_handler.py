@@ -23,6 +23,7 @@
 import json
 from abc import abstractmethod
 
+import bson
 import six
 from urllib3.exceptions import SSLError, NewConnectionError
 from requests import Request, Response
@@ -44,6 +45,8 @@ class DefaultExceptionHandler(ExceptionHandler):
     _MESSAGE = "message"
     _ERROR_CODE = "error_code"
     _ERROR_MSG = "error_msg"
+    _ERROR_CODE_CAMEL = "errorCode"
+    _ERROR_MSG_CAMEL = "errorMsg"
     _ENCODED_AUTHORIZATION_MESSAGE = "encoded_authorization_message"
 
     def handle_exception(self, request, response):
@@ -81,7 +84,10 @@ class DefaultExceptionHandler(ExceptionHandler):
             sdk_error.error_code = sdk_error_dict.get(cls._ERROR_CODE)
             sdk_error.error_msg = sdk_error_dict.get(cls._ERROR_MSG)
             return
-
+        if cls._ERROR_CODE_CAMEL in sdk_error_dict and cls._ERROR_MSG_CAMEL in sdk_error_dict:
+            sdk_error.error_code = sdk_error_dict.get(cls._ERROR_CODE_CAMEL)
+            sdk_error.error_msg = sdk_error_dict.get(cls._ERROR_MSG_CAMEL)
+            return
         if cls._CODE in sdk_error_dict and cls._MESSAGE in sdk_error_dict:
             sdk_error.error_code = sdk_error_dict.get(cls._CODE)
             sdk_error.error_msg = sdk_error_dict.get(cls._MESSAGE)

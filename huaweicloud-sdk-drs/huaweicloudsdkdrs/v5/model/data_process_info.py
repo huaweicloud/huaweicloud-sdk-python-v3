@@ -26,7 +26,8 @@ class DataProcessInfo:
         'db_or_table_rename_rule': 'DbOrTableRenameRule',
         'db_object': 'DbObject',
         'is_synchronized': 'bool',
-        'source': 'str'
+        'source': 'str',
+        'process_rule_level': 'str'
     }
 
     attribute_map = {
@@ -39,15 +40,16 @@ class DataProcessInfo:
         'db_or_table_rename_rule': 'db_or_table_rename_rule',
         'db_object': 'db_object',
         'is_synchronized': 'is_synchronized',
-        'source': 'source'
+        'source': 'source',
+        'process_rule_level': 'process_rule_level'
     }
 
-    def __init__(self, filter_conditions=None, is_batch_process=None, add_columns=None, ddl_operation=None, dml_operation=None, db_object_column_info=None, db_or_table_rename_rule=None, db_object=None, is_synchronized=None, source=None):
+    def __init__(self, filter_conditions=None, is_batch_process=None, add_columns=None, ddl_operation=None, dml_operation=None, db_object_column_info=None, db_or_table_rename_rule=None, db_object=None, is_synchronized=None, source=None, process_rule_level=None):
         """DataProcessInfo
 
         The model defined in huaweicloud sdk
 
-        :param filter_conditions: 指定任务数据加工规则请求体
+        :param filter_conditions: 指定任务数据加工规则请求体,  当进行数据过滤规则校验，必填 当数据过滤规则校验通过，需要更新数据过滤规则时，必填
         :type filter_conditions: list[:class:`huaweicloudsdkdrs.v5.DataFilteringCondition`]
         :param is_batch_process: 库级、批量表级处理为true，单表操作为false
         :type is_batch_process: bool
@@ -67,6 +69,8 @@ class DataProcessInfo:
         :type is_synchronized: bool
         :param source: 对比的来源 - job 表示数据同步时的过滤 - compare 表示数据对比的过滤
         :type source: str
+        :param process_rule_level: 数据加工规则作用级别 - table 表示数据同步时的过滤 - combinations 表示组合集，对多个表的操作  当进行数据过滤规则校验，必填 当需要更新数据加工规则（数据过滤、列加工等）时，必填
+        :type process_rule_level: str
         """
         
         
@@ -81,6 +85,7 @@ class DataProcessInfo:
         self._db_object = None
         self._is_synchronized = None
         self._source = None
+        self._process_rule_level = None
         self.discriminator = None
 
         if filter_conditions is not None:
@@ -103,12 +108,14 @@ class DataProcessInfo:
             self.is_synchronized = is_synchronized
         if source is not None:
             self.source = source
+        if process_rule_level is not None:
+            self.process_rule_level = process_rule_level
 
     @property
     def filter_conditions(self):
         """Gets the filter_conditions of this DataProcessInfo.
 
-        指定任务数据加工规则请求体
+        指定任务数据加工规则请求体,  当进行数据过滤规则校验，必填 当数据过滤规则校验通过，需要更新数据过滤规则时，必填
 
         :return: The filter_conditions of this DataProcessInfo.
         :rtype: list[:class:`huaweicloudsdkdrs.v5.DataFilteringCondition`]
@@ -119,7 +126,7 @@ class DataProcessInfo:
     def filter_conditions(self, filter_conditions):
         """Sets the filter_conditions of this DataProcessInfo.
 
-        指定任务数据加工规则请求体
+        指定任务数据加工规则请求体,  当进行数据过滤规则校验，必填 当数据过滤规则校验通过，需要更新数据过滤规则时，必填
 
         :param filter_conditions: The filter_conditions of this DataProcessInfo.
         :type filter_conditions: list[:class:`huaweicloudsdkdrs.v5.DataFilteringCondition`]
@@ -311,6 +318,28 @@ class DataProcessInfo:
         :type source: str
         """
         self._source = source
+
+    @property
+    def process_rule_level(self):
+        """Gets the process_rule_level of this DataProcessInfo.
+
+        数据加工规则作用级别 - table 表示数据同步时的过滤 - combinations 表示组合集，对多个表的操作  当进行数据过滤规则校验，必填 当需要更新数据加工规则（数据过滤、列加工等）时，必填
+
+        :return: The process_rule_level of this DataProcessInfo.
+        :rtype: str
+        """
+        return self._process_rule_level
+
+    @process_rule_level.setter
+    def process_rule_level(self, process_rule_level):
+        """Sets the process_rule_level of this DataProcessInfo.
+
+        数据加工规则作用级别 - table 表示数据同步时的过滤 - combinations 表示组合集，对多个表的操作  当进行数据过滤规则校验，必填 当需要更新数据加工规则（数据过滤、列加工等）时，必填
+
+        :param process_rule_level: The process_rule_level of this DataProcessInfo.
+        :type process_rule_level: str
+        """
+        self._process_rule_level = process_rule_level
 
     def to_dict(self):
         """Returns the model properties as a dict"""

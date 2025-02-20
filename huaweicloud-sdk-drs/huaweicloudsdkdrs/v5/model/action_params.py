@@ -27,7 +27,8 @@ class ActionParams:
         'is_only_init_task': 'bool',
         'force_delete': 'bool',
         'public_ip_config': 'PublicIpConfig',
-        'replay_config': 'ReplayConfigInfo'
+        'replay_config': 'ReplayConfigInfo',
+        'repair_info': 'ActionParamsRepairInfo'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class ActionParams:
         'is_only_init_task': 'is_only_init_task',
         'force_delete': 'force_delete',
         'public_ip_config': 'public_ip_config',
-        'replay_config': 'replay_config'
+        'replay_config': 'replay_config',
+        'repair_info': 'repair_info'
     }
 
-    def __init__(self, endpoints=None, precheck_mode=None, skip_precheck_info=None, pause_mode=None, start_time=None, compare_task_param=None, is_sync_re_edit=None, is_only_init_task=None, force_delete=None, public_ip_config=None, replay_config=None):
+    def __init__(self, endpoints=None, precheck_mode=None, skip_precheck_info=None, pause_mode=None, start_time=None, compare_task_param=None, is_sync_re_edit=None, is_only_init_task=None, force_delete=None, public_ip_config=None, replay_config=None, repair_info=None):
         """ActionParams
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class ActionParams:
         :type public_ip_config: :class:`huaweicloudsdkdrs.v5.PublicIpConfig`
         :param replay_config: 
         :type replay_config: :class:`huaweicloudsdkdrs.v5.ReplayConfigInfo`
+        :param repair_info: 
+        :type repair_info: :class:`huaweicloudsdkdrs.v5.ActionParamsRepairInfo`
         """
         
         
@@ -86,6 +90,7 @@ class ActionParams:
         self._force_delete = None
         self._public_ip_config = None
         self._replay_config = None
+        self._repair_info = None
         self.discriminator = None
 
         if endpoints is not None:
@@ -110,6 +115,8 @@ class ActionParams:
             self.public_ip_config = public_ip_config
         if replay_config is not None:
             self.replay_config = replay_config
+        if repair_info is not None:
+            self.repair_info = repair_info
 
     @property
     def endpoints(self):
@@ -336,6 +343,24 @@ class ActionParams:
         :type replay_config: :class:`huaweicloudsdkdrs.v5.ReplayConfigInfo`
         """
         self._replay_config = replay_config
+
+    @property
+    def repair_info(self):
+        """Gets the repair_info of this ActionParams.
+
+        :return: The repair_info of this ActionParams.
+        :rtype: :class:`huaweicloudsdkdrs.v5.ActionParamsRepairInfo`
+        """
+        return self._repair_info
+
+    @repair_info.setter
+    def repair_info(self, repair_info):
+        """Sets the repair_info of this ActionParams.
+
+        :param repair_info: The repair_info of this ActionParams.
+        :type repair_info: :class:`huaweicloudsdkdrs.v5.ActionParamsRepairInfo`
+        """
+        self._repair_info = repair_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

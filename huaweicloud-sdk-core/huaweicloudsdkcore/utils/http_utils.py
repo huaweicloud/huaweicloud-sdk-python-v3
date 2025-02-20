@@ -27,6 +27,7 @@ import six
 
 from huaweicloudsdkcore.http.formdata import FormFile
 from huaweicloudsdkcore.http.primitive_types import PRIMITIVE_TYPES
+from huaweicloudsdkcore.http.bson_types import BSON_TYPES
 
 
 def sanitize_for_serialization(obj):
@@ -53,6 +54,9 @@ def sanitize_for_serialization(obj):
 
     elif isinstance(obj, dict):
         obj_dict = obj
+
+    elif isinstance(obj, BSON_TYPES):
+        return obj
 
     else:
         obj_dict = {obj.attribute_map[attr]: getattr(obj, attr) for attr, _ in six.iteritems(obj.openapi_types)

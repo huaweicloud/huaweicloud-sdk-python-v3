@@ -7,3 +7,4 @@ certifi>=2022.12.7; python_version>'2.7'
 futures>=3.3.0; python_version=='2.7'
 configparser>=4.0.2; python_version=='2.7'
 typing_extensions
+pymongo

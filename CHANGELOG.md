@@ -1,3 +1,382 @@
+# 3.1.136 2025-02-20
+
+### HuaweiCloud SDK CCE
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowClusterSupportConfiguration**
+    - changes of request param
+      - `* cluster_type: required -> optional`
+      - `* cluster_version: required -> optional`
+      - `* network_mode: required -> optional`
+
+### HuaweiCloud SDK CDN
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowDomainFullConfig**
+    - changes of response param
+      - `+ configs.client_cert.status`
+      - `- configs.client_cert.validation`
+  - **UpdateDomainFullConfig**
+    - changes of request param
+      - `+ configs.client_cert.status`
+      - `- configs.client_cert.validation`
+
+### HuaweiCloud SDK Cloudtest
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the APIs `AddFeature`, `UploadStepImg`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateVersionTestCase**
+    - changes of request param
+      - `- result`
+      - `- server_address`
+      - `- error`
+      - `- request_id`
+      - `- status`
+      - `+ steps`
+      - `+ attachments`
+      - `+ author`
+      - `+ name`
+      - `+ rank`
+      - `+ owner`
+      - `+ preparation`
+      - `+ remark`
+      - `+ stage`
+      - `+ activity`
+      - `+ keywords`
+      - `+ market`
+      - `+ designer`
+      - `+ tags`
+      - `+ region`
+      - `+ relate_type`
+      - `+ service_type`
+      - `+ only_change_script`
+      - `+ add_to_iterator`
+      - `+ need_update_relation`
+      - `+ creation_version_uri`
+      - `+ number`
+      - `+ case_type`
+      - `+ platform_type`
+      - `+ test_type`
+      - `+ design_note`
+      - `+ test_step`
+      - `+ expect_output`
+      - `+ env_type`
+      - `+ exe_platform`
+      - `+ testcase_project`
+      - `+ svn_script_path`
+      - `+ map_restrict`
+      - `+ network_script_name`
+      - `+ auto_type`
+      - `+ to_be_auto_exec`
+      - `+ last_result`
+      - `+ last_result_uri`
+      - `+ feature_uri`
+      - `+ interface_name`
+      - `+ snp_no`
+      - `+ dr_relation_id`
+      - `+ test_base_num`
+      - `+ automatically_executed`
+      - `+ first_execute_time`
+      - `+ detect_type`
+      - `+ execute_param`
+      - `+ test_feature`
+      - `+ is_contract_testcase`
+      - `+ time_cost`
+      - `+ custom_field_1`
+      - `+ custom_field_2`
+      - `+ custom_field_3`
+      - `+ custom_field_4`
+      - `+ custom_field_5`
+      - `+ custom_field_6`
+      - `+ custom_field_7`
+      - `+ custom_field_8`
+      - `+ custom_field_9`
+      - `+ custom_field_10`
+      - `+ custom_field_11`
+      - `+ custom_field_12`
+      - `+ custom_field_13`
+      - `+ custom_field_14`
+      - `+ custom_field_15`
+      - `+ custom_field_16`
+      - `+ custom_field_17`
+      - `+ custom_field_18`
+      - `+ custom_field_19`
+      - `+ custom_field_20`
+      - `+ custom_field_21`
+      - `+ custom_field_22`
+      - `+ custom_field_23`
+      - `+ custom_field_24`
+      - `+ custom_field_25`
+      - `+ be_auto_type_time`
+      - `+ compare_number`
+      - `+ scene_flag`
+      - `+ base_flag`
+      - `+ para_validator`
+      - `+ knet_node_id`
+      - `+ last_exe_author`
+      - `+ cloud_carrier`
+      - `+ market_place`
+      - `+ test_mind_id`
+      - `+ test_mind_url`
+      - `+ commit_url`
+      - `+ test_pattern_number`
+      - `+ test_factor_number`
+      - `+ status_code`
+      - `+ result_code`
+      - `+ release_id`
+      - `+ label_id`
+      - `+ label_names`
+      - `+ module_id`
+      - `+ execute_latest_time`
+      - `+ execute_duration`
+      - `+ is_keyword`
+      - `+ release_dev`
+      - `+ new_created`
+      - `+ execute_parameter`
+      - `+ project_uuid`
+      - `+ version_uri`
+    - changes of response param
+      - `+ result`
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `+ status`
+      - `- type`
+      - `- preparation`
+      - `- number`
+      - `- custom_field_1`
+      - `- custom_field_2`
+      - `- rank`
+      - `- execute_duration`
+      - `- parent_path`
+      - `- test_factor_number`
+      - `- last_modified`
+      - `- project_uuid`
+      - `- feature_name`
+      - `- custom_field_5`
+      - `- custom_field_6`
+      - `- custom_field_3`
+      - `- creation_date`
+      - `- custom_field_4`
+      - `- custom_field_9`
+      - `- feature_uri`
+      - `- custom_field_7`
+      - `- tags`
+      - `- last_modifier`
+      - `- last_change_time`
+      - `- labels`
+      - `- custom_field_8`
+      - `- issue_name`
+      - `- last_result`
+      - `- is_keyword`
+      - `- parent_uri`
+      - `- result_code`
+      - `- para_validator`
+      - `- cloud_carrier`
+      - `- activity`
+      - `- test_pattern_number`
+      - `- iterator_case_uri`
+      - `- execute_parameter`
+      - `- is_contract_testcase`
+      - `- last_result_uri`
+      - `- svn_script_path`
+      - `- be_auto_type_time`
+      - `- expect_output`
+      - `- release_dev`
+      - `- test_base_num`
+      - `- origin_uri`
+      - `- exe_platform`
+      - `- testcase_uri`
+      - `- uri`
+      - `- test_type`
+      - `- execute_param`
+      - `- stage`
+      - `- market_place`
+      - `- label_id`
+      - `- test_mind_url`
+      - `- keywords`
+      - `- creation_version_name`
+      - `- custom_field_14`
+      - `- execute_times`
+      - `- custom_field_15`
+      - `- version_uri`
+      - `- custom_field_12`
+      - `- knet_node_id`
+      - `- custom_field_13`
+      - `- platform_type`
+      - `- custom_field_10`
+      - `- custom_field_11`
+      - `- creation_date_timestamp`
+      - `- custom_field_18`
+      - `- custom_field_19`
+      - `- custom_field_16`
+      - `- custom_field_17`
+      - `- test_feature`
+      - `- owner_name`
+      - `- new_created`
+      - `- author`
+      - `- base_flag`
+      - `- market`
+      - `- custom_field_25`
+      - `- custom_field_23`
+      - `- module_id`
+      - `- custom_field_24`
+      - `- snp_no`
+      - `- dr_relation_id`
+      - `- custom_field_21`
+      - `- custom_field_22`
+      - `- first_execute_time`
+      - `- custom_field_20`
+      - `- name`
+      - `- module_name`
+      - `- region`
+      - `- testcase_project`
+      - `- automatically_executed`
+      - `- author_name`
+      - `- test_mind_id`
+      - `- release_id`
+      - `- detect_type`
+      - `- scene_flag`
+      - `- status_code`
+      - `- last_modified_timestamp`
+      - `- interface_name`
+      - `- remark`
+      - `- service_type_name`
+      - `- auto_type`
+      - `- compare_number`
+      - `- test_type_name`
+      - `- commit_url`
+      - `- creation_version_uri`
+      - `- to_be_auto_exec`
+      - `- time_cost`
+      - `- network_script_name`
+      - `- env_type`
+      - `- module_path`
+      - `- execute_latest_time`
+      - `- feature_path`
+      - `- owner`
+      - `- case_type`
+      - `- designer`
+      - `- test_step`
+      - `- service_type`
+      - `- last_exe_author`
+      - `- comment`
+      - `- design_note`
+      - `- map_restrict`
+      - `- module_path_name`
+      - `- script_link`
+
+### HuaweiCloud SDK COC
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the APIs `ListMultiCloudResources`, `CountMultiResources`, `BatchCreateApplicationView`, `ListApplicationModel`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CSMS
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the APIs `BatchImportSecrets`, `ShowUserDetail`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DAS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the APIs `ExportFullSqlDetails`, `ListFullSqlTasks`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListInstanceTopSlowLog**
+    - changes of response param
+      - `* top_avg_query_time_slow_logs.times: int32 -> int64`
+  - **ExportSlowQueryLogs**
+    - changes of response param
+      - `+ slow_logs.sql_template_id`
+
+### HuaweiCloud SDK DRS
+
+- _API Version_
+  - V5
+- _Features_
+  - Support the API `ShowTimeline`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowDataProgress**
+    - changes of response param
+      - `+ data_process_info.process_rule_level`
+  - **UpdateDataProgress**
+    - changes of request param
+      - `+ data_process_info.process_rule_level`
+  - **CheckDataFilter**
+    - changes of request param
+      - `+ data_process_info.process_rule_level`
+  - **ListAsyncJobDetail**
+    - changes of response param
+      - `+ jobs.diagnoses`
+      - `+ jobs.repair_progress_info`
+      - `+ jobs.repair_detail_info`
+      - `+ jobs.repair_export_status`
+  - **ShowJobDetail**
+    - changes of request param
+      - `+ type: enum value [diagnosis,diagnosis_history,repair_progress,repair_detail,repair_export_status]`
+    - changes of response param
+      - `+ job.diagnoses`
+      - `+ job.repair_progress_info`
+      - `+ job.repair_detail_info`
+      - `+ job.repair_export_status`
+  - **ExecuteJobAction**
+    - changes of request param
+      - `+ job.action_name: enum value [diagnosis：一键诊断。,start_repair：开始数据修复。,stop_repair：停止数据修复。]`
+      - `+ job.action_params.repair_info`
+      - `+ job.action_params.compare_task_param.data_process_info.process_rule_level`
+  - **BatchExecuteJobActions**
+    - changes of request param
+      - `+ jobs.action_name: enum value [diagnosis：一键诊断。,start_repair：开始数据修复。,stop_repair：停止数据修复。]`
+      - `+ jobs.action_params.repair_info`
+      - `+ jobs.action_params.compare_task_param.data_process_info.process_rule_level`
+
+### HuaweiCloud SDK OCR
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **RecognizeFlightItinerary**
+    - changes of response param
+      - `+ result.gp_number`
+
 # 3.1.135 2025-02-13
 
 ### HuaweiCloud SDK CAE

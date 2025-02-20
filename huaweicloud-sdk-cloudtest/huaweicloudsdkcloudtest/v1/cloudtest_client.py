@@ -8980,6 +8980,75 @@ class CloudtestClient(Client):
 
         return http_info
 
+    def upload_step_img(self, request):
+        """上传测试步骤图片
+
+        对外API
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UploadStepImg
+        :type request: :class:`huaweicloudsdkcloudtest.v1.UploadStepImgRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.UploadStepImgResponse`
+        """
+        http_info = self._upload_step_img_http_info(request)
+        return self._call_api(**http_info)
+
+    def upload_step_img_invoker(self, request):
+        http_info = self._upload_step_img_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _upload_step_img_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/{project_id}/images/upload",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadStepImgResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+        if 'file' in local_var_params:
+            form_params['file'] = local_var_params['file']
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_delete_facotr_by_ids(self, request):
         """批量删除因子
 
@@ -10447,6 +10516,71 @@ class CloudtestClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def add_feature(self, request):
+        """添加目录信息
+
+        添加目录信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AddFeature
+        :type request: :class:`huaweicloudsdkcloudtest.v1.AddFeatureRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.AddFeatureResponse`
+        """
+        http_info = self._add_feature_http_info(request)
+        return self._call_api(**http_info)
+
+    def add_feature_invoker(self, request):
+        http_info = self._add_feature_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_feature_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/features",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddFeatureResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

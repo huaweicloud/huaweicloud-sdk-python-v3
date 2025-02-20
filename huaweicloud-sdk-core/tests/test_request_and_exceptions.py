@@ -20,13 +20,15 @@
 import importlib
 
 import pytest
+import bson
+from bson import MinKey, MaxKey, Regex, Code, ObjectId
 from requests import Response, Request
-
 from huaweicloudsdkcore.auth.credentials import BasicCredentials
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.exceptions.exceptions import ClientRequestException, ServerResponseException
 from huaweicloudsdkcore.http.http_config import HttpConfig
 from tests.model.vpc import ListVpcsResponse
+from tests.model.kvs import GetKvResponse, BsonBody
 
 
 @pytest.fixture()
@@ -203,6 +205,73 @@ def test_response_deserialization(client, list_vpc_response):
     assert isinstance(response, ListVpcsResponse)
     assert len(response.vpcs) == 2
     assert response.vpcs[0].id == "0378f905-2ae8-4c75-a9fe-575ec11fddc9"
+
+
+@pytest.fixture()
+def get_kv_response():
+    get_kv_response = Response()
+    get_kv_response.status_code = 200
+    mock_response = {
+        "table_name": "test-table",
+        "kv_doc": {
+            "name": "jack",
+            "age": 10
+        }
+    }
+
+    get_kv_response._content = bson.encode(mock_response)
+    get_kv_response.headers = {"X-Request-Id": "kvs-bson-request", "Content-Type": "application/bson"}
+    get_kv_response.request = Request()
+    get_kv_response.request.method = "POST"
+    get_kv_response.request.url = ""
+
+    yield get_kv_response
+
+
+def test_response_deserialization_for_kvs(client, get_kv_response):
+    client.model_package = importlib.import_module("tests.model.kvs")
+    response = client.sync_response_handler(get_kv_response, "GetKvResponse", None, None)
+
+    assert isinstance(response, GetKvResponse)
+    assert len(response.kv_doc) == 2
+    assert response.kv_doc["name"] == "jack"
+    assert response.kv_doc["age"] == 10
+
+
+@pytest.fixture()
+def bson_type_response():
+    bson_type_response = Response()
+    bson_type_response.status_code = 200
+    mock_response = {
+        "doc_field": {"user": "jack", "age": 10},
+        "binary_field": b'\x00\x01\x02\x03\x04',
+        "min_key_field": MinKey(),
+        "max_key_field": MaxKey(),
+        "regex_field": Regex("^[A-Za-z0-9]*$"),
+        "object_id_field": ObjectId("67adbe37399015c5d4661a5b"),
+        "js_code_field": Code("function add(x, y) { return x + y; }")
+    }
+    bson_type_response._content = bson.encode(mock_response)
+    bson_type_response.headers = {"X-Request-Id": "kvs-bson-request", "Content-Type": "application/bson"}
+    bson_type_response.request = Request()
+    bson_type_response.request.method = "POST"
+    bson_type_response.request.url = ""
+
+    yield bson_type_response
+
+
+def test_response_deserialization_for_bson(client, bson_type_response):
+    client.model_package = importlib.import_module("tests.model.kvs")
+    response = client.sync_response_handler(bson_type_response, "BsonBody", None, None)
+    print()
+    assert isinstance(response, BsonBody)
+    assert len(response.doc_field) == 2
+    assert response.binary_field == b'\x00\x01\x02\x03\x04'
+    assert response.min_key_field == MinKey()
+    assert response.max_key_field == MaxKey()
+    assert response.regex_field == Regex("^[A-Za-z0-9]*$")
+    assert response.object_id_field == ObjectId("67adbe37399015c5d4661a5b")
+    assert response.js_code_field == Code("function add(x, y) { return x + y; }")
 
 
 if __name__ == "__main__":

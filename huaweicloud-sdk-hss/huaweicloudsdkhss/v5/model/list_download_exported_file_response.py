@@ -2,11 +2,11 @@
 
 import six
 
-from huaweicloudsdkcore.sdk_response import SdkResponse
+from huaweicloudsdkcore.sdk_stream_response import SdkStreamResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ListDownloadExportedFileResponse(SdkResponse):
+class ListDownloadExportedFileResponse(SdkStreamResponse):
 
     """
     Attributes:
@@ -18,47 +18,20 @@ class ListDownloadExportedFileResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'str'
     }
 
     attribute_map = {
-        'body': 'body'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, response):
         """ListDownloadExportedFileResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: str
         """
         
-        super(ListDownloadExportedFileResponse, self).__init__()
-
-        self._body = None
+        super(ListDownloadExportedFileResponse, self).__init__(response)
         self.discriminator = None
-
-        if body is not None:
-            self.body = body
-
-    @property
-    def body(self):
-        """Gets the body of this ListDownloadExportedFileResponse.
-
-        :return: The body of this ListDownloadExportedFileResponse.
-        :rtype: str
-        """
-        return self._body
-
-    @body.setter
-    def body(self, body):
-        """Sets the body of this ListDownloadExportedFileResponse.
-
-        :param body: The body of this ListDownloadExportedFileResponse.
-        :type body: str
-        """
-        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

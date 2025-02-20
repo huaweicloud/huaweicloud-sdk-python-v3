@@ -44,6 +44,8 @@ class CseRegion:
                         "https://cse.tr-west-1.myhuaweicloud.com")
     AP_SOUTHEAST_4 = Region("ap-southeast-4",
                         "https://cse.ap-southeast-4.myhuaweicloud.com")
+    RU_MOSCOW_1 = Region("ru-moscow-1",
+                        "https://cse.ru-moscow-1.myhuaweicloud.com")
 
     static_fields = {
         "af-south-1": AF_SOUTH_1,
@@ -65,6 +67,7 @@ class CseRegion:
         "me-east-1": ME_EAST_1,
         "tr-west-1": TR_WEST_1,
         "ap-southeast-4": AP_SOUTHEAST_4,
+        "ru-moscow-1": RU_MOSCOW_1,
     }
 
     @classmethod

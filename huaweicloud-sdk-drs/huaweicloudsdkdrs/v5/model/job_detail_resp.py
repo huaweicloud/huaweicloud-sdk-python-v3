@@ -47,7 +47,11 @@ class JobDetailResp:
         'public_ip_list': 'list[PublicIpConfig]',
         'bind_public_ip_state': 'str',
         'children': 'list[FailedToBindEipChildInfo]',
-        'is_writable': 'str'
+        'is_writable': 'str',
+        'diagnoses': 'list[QueryDiagnosisResult]',
+        'repair_progress_info': 'JobDetailRespRepairProgressInfo',
+        'repair_detail_info': 'QueryRepairDetailResp',
+        'repair_export_status': 'str'
     }
 
     attribute_map = {
@@ -81,10 +85,14 @@ class JobDetailResp:
         'public_ip_list': 'public_ip_list',
         'bind_public_ip_state': 'bind_public_ip_state',
         'children': 'children',
-        'is_writable': 'is_writable'
+        'is_writable': 'is_writable',
+        'diagnoses': 'diagnoses',
+        'repair_progress_info': 'repair_progress_info',
+        'repair_detail_info': 'repair_detail_info',
+        'repair_export_status': 'repair_export_status'
     }
 
-    def __init__(self, id=None, status=None, create_time=None, total_count=None, master_job_id=None, base_info=None, source_endpoint=None, target_endpoint=None, alarm_notify=None, speed_limit=None, user_migration=None, policy_config=None, db_param=None, tuning_params=None, period_order=None, node_info=None, logs=None, network_results=None, precheck_result=None, progress_info=None, migration_object_progress_info=None, metrics=None, compare_result=None, support_import_file_resp=None, instance_features=None, task_version=None, connection_management=None, public_ip_list=None, bind_public_ip_state=None, children=None, is_writable=None):
+    def __init__(self, id=None, status=None, create_time=None, total_count=None, master_job_id=None, base_info=None, source_endpoint=None, target_endpoint=None, alarm_notify=None, speed_limit=None, user_migration=None, policy_config=None, db_param=None, tuning_params=None, period_order=None, node_info=None, logs=None, network_results=None, precheck_result=None, progress_info=None, migration_object_progress_info=None, metrics=None, compare_result=None, support_import_file_resp=None, instance_features=None, task_version=None, connection_management=None, public_ip_list=None, bind_public_ip_state=None, children=None, is_writable=None, diagnoses=None, repair_progress_info=None, repair_detail_info=None, repair_export_status=None):
         """JobDetailResp
 
         The model defined in huaweicloud sdk
@@ -151,6 +159,14 @@ class JobDetailResp:
         :type children: list[:class:`huaweicloudsdkdrs.v5.FailedToBindEipChildInfo`]
         :param is_writable: 解除目标库只读操作后，目标库解除只读是否成功。 - pending：目标库解除操作进行中。 - success：目标库解除只读操作成功。
         :type is_writable: str
+        :param diagnoses: 一键诊断结果。
+        :type diagnoses: list[:class:`huaweicloudsdkdrs.v5.QueryDiagnosisResult`]
+        :param repair_progress_info: 
+        :type repair_progress_info: :class:`huaweicloudsdkdrs.v5.JobDetailRespRepairProgressInfo`
+        :param repair_detail_info: 
+        :type repair_detail_info: :class:`huaweicloudsdkdrs.v5.QueryRepairDetailResp`
+        :param repair_export_status: 修复SQL导出状态。
+        :type repair_export_status: str
         """
         
         
@@ -186,6 +202,10 @@ class JobDetailResp:
         self._bind_public_ip_state = None
         self._children = None
         self._is_writable = None
+        self._diagnoses = None
+        self._repair_progress_info = None
+        self._repair_detail_info = None
+        self._repair_export_status = None
         self.discriminator = None
 
         if id is not None:
@@ -250,6 +270,14 @@ class JobDetailResp:
             self.children = children
         if is_writable is not None:
             self.is_writable = is_writable
+        if diagnoses is not None:
+            self.diagnoses = diagnoses
+        if repair_progress_info is not None:
+            self.repair_progress_info = repair_progress_info
+        if repair_detail_info is not None:
+            self.repair_detail_info = repair_detail_info
+        if repair_export_status is not None:
+            self.repair_export_status = repair_export_status
 
     @property
     def id(self):
@@ -872,6 +900,86 @@ class JobDetailResp:
         :type is_writable: str
         """
         self._is_writable = is_writable
+
+    @property
+    def diagnoses(self):
+        """Gets the diagnoses of this JobDetailResp.
+
+        一键诊断结果。
+
+        :return: The diagnoses of this JobDetailResp.
+        :rtype: list[:class:`huaweicloudsdkdrs.v5.QueryDiagnosisResult`]
+        """
+        return self._diagnoses
+
+    @diagnoses.setter
+    def diagnoses(self, diagnoses):
+        """Sets the diagnoses of this JobDetailResp.
+
+        一键诊断结果。
+
+        :param diagnoses: The diagnoses of this JobDetailResp.
+        :type diagnoses: list[:class:`huaweicloudsdkdrs.v5.QueryDiagnosisResult`]
+        """
+        self._diagnoses = diagnoses
+
+    @property
+    def repair_progress_info(self):
+        """Gets the repair_progress_info of this JobDetailResp.
+
+        :return: The repair_progress_info of this JobDetailResp.
+        :rtype: :class:`huaweicloudsdkdrs.v5.JobDetailRespRepairProgressInfo`
+        """
+        return self._repair_progress_info
+
+    @repair_progress_info.setter
+    def repair_progress_info(self, repair_progress_info):
+        """Sets the repair_progress_info of this JobDetailResp.
+
+        :param repair_progress_info: The repair_progress_info of this JobDetailResp.
+        :type repair_progress_info: :class:`huaweicloudsdkdrs.v5.JobDetailRespRepairProgressInfo`
+        """
+        self._repair_progress_info = repair_progress_info
+
+    @property
+    def repair_detail_info(self):
+        """Gets the repair_detail_info of this JobDetailResp.
+
+        :return: The repair_detail_info of this JobDetailResp.
+        :rtype: :class:`huaweicloudsdkdrs.v5.QueryRepairDetailResp`
+        """
+        return self._repair_detail_info
+
+    @repair_detail_info.setter
+    def repair_detail_info(self, repair_detail_info):
+        """Sets the repair_detail_info of this JobDetailResp.
+
+        :param repair_detail_info: The repair_detail_info of this JobDetailResp.
+        :type repair_detail_info: :class:`huaweicloudsdkdrs.v5.QueryRepairDetailResp`
+        """
+        self._repair_detail_info = repair_detail_info
+
+    @property
+    def repair_export_status(self):
+        """Gets the repair_export_status of this JobDetailResp.
+
+        修复SQL导出状态。
+
+        :return: The repair_export_status of this JobDetailResp.
+        :rtype: str
+        """
+        return self._repair_export_status
+
+    @repair_export_status.setter
+    def repair_export_status(self, repair_export_status):
+        """Sets the repair_export_status of this JobDetailResp.
+
+        修复SQL导出状态。
+
+        :param repair_export_status: The repair_export_status of this JobDetailResp.
+        :type repair_export_status: str
+        """
+        self._repair_export_status = repair_export_status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

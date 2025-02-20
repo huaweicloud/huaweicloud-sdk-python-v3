@@ -5,6 +5,8 @@ from __future__ import absolute_import
 # import models into model package
 from huaweicloudsdkdrs.v5.model.action_base_resp import ActionBaseResp
 from huaweicloudsdkdrs.v5.model.action_params import ActionParams
+from huaweicloudsdkdrs.v5.model.action_params_repair_info import ActionParamsRepairInfo
+from huaweicloudsdkdrs.v5.model.action_params_repair_info_objects import ActionParamsRepairInfoObjects
 from huaweicloudsdkdrs.v5.model.action_req import ActionReq
 from huaweicloudsdkdrs.v5.model.add_column_info import AddColumnInfo
 from huaweicloudsdkdrs.v5.model.agency_role import AgencyRole
@@ -147,6 +149,8 @@ from huaweicloudsdkdrs.v5.model.job_action_req import JobActionReq
 from huaweicloudsdkdrs.v5.model.job_actions import JobActions
 from huaweicloudsdkdrs.v5.model.job_base_info import JobBaseInfo
 from huaweicloudsdkdrs.v5.model.job_detail_resp import JobDetailResp
+from huaweicloudsdkdrs.v5.model.job_detail_resp_repair_progress_info import JobDetailRespRepairProgressInfo
+from huaweicloudsdkdrs.v5.model.job_detail_resp_repair_progress_info_repair_progress_details import JobDetailRespRepairProgressInfoRepairProgressDetails
 from huaweicloudsdkdrs.v5.model.job_endpoint_info import JobEndpointInfo
 from huaweicloudsdkdrs.v5.model.job_link_resp import JobLinkResp
 from huaweicloudsdkdrs.v5.model.job_list_resp import JobListResp
@@ -217,11 +221,18 @@ from huaweicloudsdkdrs.v5.model.public_ip_config import PublicIpConfig
 from huaweicloudsdkdrs.v5.model.query_column_info import QueryColumnInfo
 from huaweicloudsdkdrs.v5.model.query_column_req import QueryColumnReq
 from huaweicloudsdkdrs.v5.model.query_db_position_req import QueryDbPositionReq
+from huaweicloudsdkdrs.v5.model.query_diagnosis_result import QueryDiagnosisResult
+from huaweicloudsdkdrs.v5.model.query_diagnosis_result_diagnosis_results import QueryDiagnosisResultDiagnosisResults
+from huaweicloudsdkdrs.v5.model.query_diagnosis_result_item import QueryDiagnosisResultItem
+from huaweicloudsdkdrs.v5.model.query_diagnosis_result_result_list import QueryDiagnosisResultResultList
+from huaweicloudsdkdrs.v5.model.query_diagnosis_result_suggestion_list import QueryDiagnosisResultSuggestionList
 from huaweicloudsdkdrs.v5.model.query_instance_by_tag_req import QueryInstanceByTagReq
 from huaweicloudsdkdrs.v5.model.query_metric_result import QueryMetricResult
 from huaweicloudsdkdrs.v5.model.query_migration_object_progress_info import QueryMigrationObjectProgressInfo
 from huaweicloudsdkdrs.v5.model.query_network_result import QueryNetworkResult
 from huaweicloudsdkdrs.v5.model.query_pre_check_result import QueryPreCheckResult
+from huaweicloudsdkdrs.v5.model.query_repair_detail_resp import QueryRepairDetailResp
+from huaweicloudsdkdrs.v5.model.query_repair_detail_resp_repair_details import QueryRepairDetailRespRepairDetails
 from huaweicloudsdkdrs.v5.model.query_select_object_info_req import QuerySelectObjectInfoReq
 from huaweicloudsdkdrs.v5.model.query_user_selected_object_info_req import QueryUserSelectedObjectInfoReq
 from huaweicloudsdkdrs.v5.model.replay_config_info import ReplayConfigInfo
@@ -291,6 +302,8 @@ from huaweicloudsdkdrs.v5.model.show_replication_job_request import ShowReplicat
 from huaweicloudsdkdrs.v5.model.show_replication_job_response import ShowReplicationJobResponse
 from huaweicloudsdkdrs.v5.model.show_support_object_type_request import ShowSupportObjectTypeRequest
 from huaweicloudsdkdrs.v5.model.show_support_object_type_response import ShowSupportObjectTypeResponse
+from huaweicloudsdkdrs.v5.model.show_timeline_request import ShowTimelineRequest
+from huaweicloudsdkdrs.v5.model.show_timeline_response import ShowTimelineResponse
 from huaweicloudsdkdrs.v5.model.show_update_object_saving_status_request import ShowUpdateObjectSavingStatusRequest
 from huaweicloudsdkdrs.v5.model.show_update_object_saving_status_response import ShowUpdateObjectSavingStatusResponse
 from huaweicloudsdkdrs.v5.model.single_create_job_req import SingleCreateJobReq
@@ -312,6 +325,7 @@ from huaweicloudsdkdrs.v5.model.tag import Tag
 from huaweicloudsdkdrs.v5.model.tag_match import TagMatch
 from huaweicloudsdkdrs.v5.model.target_root_db import TargetRootDb
 from huaweicloudsdkdrs.v5.model.task_log_info import TaskLogInfo
+from huaweicloudsdkdrs.v5.model.timeline_info import TimelineInfo
 from huaweicloudsdkdrs.v5.model.to_period_req import ToPeriodReq
 from huaweicloudsdkdrs.v5.model.tuning_param_info import TuningParamInfo
 from huaweicloudsdkdrs.v5.model.tuning_parameter import TuningParameter

@@ -33,7 +33,7 @@ class ExportCompareResultReq:
 
         The model defined in huaweicloud sdk
 
-        :param compare_type: 对比任务类型： - contents： 内容对比。 - lines：行数对比。 - random：抽样对比。 - objects_comparison：对象对比。
+        :param compare_type: 对比任务类型： - contents： 内容对比。 - lines：行数对比。 - random：抽样对比。 - objects_comparison：对象对比。 - repair_data：数据修复。
         :type compare_type: str
         :param compare_job_id: 对比任务的ID，内容对比、抽样对比、行数对比场景必填。
         :type compare_job_id: str
@@ -58,7 +58,7 @@ class ExportCompareResultReq:
     def compare_type(self):
         """Gets the compare_type of this ExportCompareResultReq.
 
-        对比任务类型： - contents： 内容对比。 - lines：行数对比。 - random：抽样对比。 - objects_comparison：对象对比。
+        对比任务类型： - contents： 内容对比。 - lines：行数对比。 - random：抽样对比。 - objects_comparison：对象对比。 - repair_data：数据修复。
 
         :return: The compare_type of this ExportCompareResultReq.
         :rtype: str
@@ -69,7 +69,7 @@ class ExportCompareResultReq:
     def compare_type(self, compare_type):
         """Sets the compare_type of this ExportCompareResultReq.
 
-        对比任务类型： - contents： 内容对比。 - lines：行数对比。 - random：抽样对比。 - objects_comparison：对象对比。
+        对比任务类型： - contents： 内容对比。 - lines：行数对比。 - random：抽样对比。 - objects_comparison：对象对比。 - repair_data：数据修复。
 
         :param compare_type: The compare_type of this ExportCompareResultReq.
         :type compare_type: str

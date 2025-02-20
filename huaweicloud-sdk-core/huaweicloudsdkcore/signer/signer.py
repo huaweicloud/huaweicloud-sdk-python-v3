@@ -84,7 +84,8 @@ class Signer(object):
     def _process_content_header(cls, request):
         # type: (SdkRequest) -> None
         content_type = request.header_params.get("Content-Type")
-        if content_type and not content_type.startswith("application/json"):
+        if content_type and not content_type.startswith("application/json") \
+                and not content_type.startswith("application/bson"):
             request.header_params[cls._HEADER_CONTENT] = "UNSIGNED-PAYLOAD"
 
     @classmethod

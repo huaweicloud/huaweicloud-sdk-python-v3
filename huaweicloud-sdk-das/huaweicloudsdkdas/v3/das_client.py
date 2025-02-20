@@ -1000,6 +1000,128 @@ class DasClient(Client):
 
         return http_info
 
+    def export_full_sql_details(self, request):
+        """导出全量SQL明细
+
+        全量SQL开关打开后，创建SQL洞察任务，支持按节点、用户名、数据库、操作类型等导出全量SQL明细数据。该功能仅支持付费实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExportFullSqlDetails
+        :type request: :class:`huaweicloudsdkdas.v3.ExportFullSqlDetailsRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ExportFullSqlDetailsResponse`
+        """
+        http_info = self._export_full_sql_details_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_full_sql_details_invoker(self, request):
+        http_info = self._export_full_sql_details_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_full_sql_details_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/full-sql-search",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportFullSqlDetailsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'start_at' in local_var_params:
+            query_params.append(('start_at', local_var_params['start_at']))
+        if 'end_at' in local_var_params:
+            query_params.append(('end_at', local_var_params['end_at']))
+        if 'task_ids' in local_var_params:
+            query_params.append(('task_ids', local_var_params['task_ids']))
+            collection_formats['task_ids'] = 'csv'
+        if 'node_id' in local_var_params:
+            query_params.append(('node_id', local_var_params['node_id']))
+        if 'keyword' in local_var_params:
+            query_params.append(('keyword', local_var_params['keyword']))
+        if 'fuzzy' in local_var_params:
+            query_params.append(('fuzzy', local_var_params['fuzzy']))
+        if 'user_list' in local_var_params:
+            query_params.append(('user_list', local_var_params['user_list']))
+        if 'db_list' in local_var_params:
+            query_params.append(('db_list', local_var_params['db_list']))
+        if 'operation_list' in local_var_params:
+            query_params.append(('operation_list', local_var_params['operation_list']))
+        if 'client_ip_list' in local_var_params:
+            query_params.append(('client_ip_list', local_var_params['client_ip_list']))
+        if 'thread_id_list' in local_var_params:
+            query_params.append(('thread_id_list', local_var_params['thread_id_list']))
+        if 'trx_id_list' in local_var_params:
+            query_params.append(('trx_id_list', local_var_params['trx_id_list']))
+        if 'session_id_list' in local_var_params:
+            query_params.append(('session_id_list', local_var_params['session_id_list']))
+        if 'status_list' in local_var_params:
+            query_params.append(('status_list', local_var_params['status_list']))
+        if 'sql_template_ids' in local_var_params:
+            query_params.append(('sql_template_ids', local_var_params['sql_template_ids']))
+        if 'cost_min' in local_var_params:
+            query_params.append(('cost_min', local_var_params['cost_min']))
+        if 'cost_max' in local_var_params:
+            query_params.append(('cost_max', local_var_params['cost_max']))
+        if 'scan_min' in local_var_params:
+            query_params.append(('scan_min', local_var_params['scan_min']))
+        if 'scan_max' in local_var_params:
+            query_params.append(('scan_max', local_var_params['scan_max']))
+        if 'affect_min' in local_var_params:
+            query_params.append(('affect_min', local_var_params['affect_min']))
+        if 'affect_max' in local_var_params:
+            query_params.append(('affect_max', local_var_params['affect_max']))
+        if 'return_min' in local_var_params:
+            query_params.append(('return_min', local_var_params['return_min']))
+        if 'return_max' in local_var_params:
+            query_params.append(('return_max', local_var_params['return_max']))
+        if 'sort_field' in local_var_params:
+            query_params.append(('sort_field', local_var_params['sort_field']))
+        if 'asc' in local_var_params:
+            query_params.append(('asc', local_var_params['asc']))
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def export_slow_query_logs(self, request):
         """导出慢SQL数据
 
@@ -1732,6 +1854,105 @@ class DasClient(Client):
             query_params.append(('db_user_id', local_var_params['db_user_id']))
         if 'db_username' in local_var_params:
             query_params.append(('db_username', local_var_params['db_username']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_full_sql_tasks(self, request):
+        """查询SQL洞察任务列表
+
+        全量SQL开关打开后，查询SQL洞察任务列表。该功能仅支持付费实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListFullSqlTasks
+        :type request: :class:`huaweicloudsdkdas.v3.ListFullSqlTasksRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ListFullSqlTasksResponse`
+        """
+        http_info = self._list_full_sql_tasks_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_full_sql_tasks_invoker(self, request):
+        http_info = self._list_full_sql_tasks_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_full_sql_tasks_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/full-sql-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFullSqlTasksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'range_left' in local_var_params:
+            query_params.append(('range_left', local_var_params['range_left']))
+        if 'range_right' in local_var_params:
+            query_params.append(('range_right', local_var_params['range_right']))
+        if 'create_at_left' in local_var_params:
+            query_params.append(('create_at_left', local_var_params['create_at_left']))
+        if 'create_at_right' in local_var_params:
+            query_params.append(('create_at_right', local_var_params['create_at_right']))
+        if 'user' in local_var_params:
+            query_params.append(('user', local_var_params['user']))
+        if 'keyword' in local_var_params:
+            query_params.append(('keyword', local_var_params['keyword']))
+        if 'db_name' in local_var_params:
+            query_params.append(('db_name', local_var_params['db_name']))
+        if 'operation' in local_var_params:
+            query_params.append(('operation', local_var_params['operation']))
+        if 'thread_id' in local_var_params:
+            query_params.append(('thread_id', local_var_params['thread_id']))
+        if 'trx_id' in local_var_params:
+            query_params.append(('trx_id', local_var_params['trx_id']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'sql_template_id' in local_var_params:
+            query_params.append(('sql_template_id', local_var_params['sql_template_id']))
+        if 'sort_field' in local_var_params:
+            query_params.append(('sort_field', local_var_params['sort_field']))
+        if 'asc' in local_var_params:
+            query_params.append(('asc', local_var_params['asc']))
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
         if 'x_language' in local_var_params:

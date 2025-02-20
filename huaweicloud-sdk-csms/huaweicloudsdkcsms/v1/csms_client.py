@@ -99,6 +99,71 @@ class CsmsClient(Client):
 
         return http_info
 
+    def batch_import_secrets(self, request):
+        """批量导入凭据
+
+        批量导入凭据。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchImportSecrets
+        :type request: :class:`huaweicloudsdkcsms.v1.BatchImportSecretsRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.BatchImportSecretsResponse`
+        """
+        http_info = self._batch_import_secrets_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_import_secrets_invoker(self, request):
+        http_info = self._batch_import_secrets_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_import_secrets_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/secrets/batch-import",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchImportSecretsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_agency(self, request):
         """创建服务委托
 
@@ -2197,6 +2262,71 @@ class CsmsClient(Client):
             path_params['secret_name'] = local_var_params['secret_name']
         if 'version_id' in local_var_params:
             path_params['version_id'] = local_var_params['version_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_user_detail(self, request):
+        """获取用户详情
+
+        根据用户id查询用户详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowUserDetail
+        :type request: :class:`huaweicloudsdkcsms.v1.ShowUserDetailRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.ShowUserDetailResponse`
+        """
+        http_info = self._show_user_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_user_detail_invoker(self, request):
+        http_info = self._show_user_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_user_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/csms/users/{user_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowUserDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'user_id' in local_var_params:
+            path_params['user_id'] = local_var_params['user_id']
 
         query_params = []
 

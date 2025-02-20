@@ -19,7 +19,7 @@ class ListInstanceTopSlowLogResponse(SdkResponse):
 
     openapi_types = {
         'top_execute_slow_logs': 'list[TopInstanceSlowLogTopExecuteSlowLogs]',
-        'top_avg_query_time_slow_logs': 'list[TopInstanceSlowLogTopAvgQueryTimeSlowLogs]',
+        'top_avg_query_time_slow_logs': 'list[TopInstanceSlowLogTopExecuteSlowLogs]',
         'top_max_query_time_slow_logs': 'list[TopInstanceSlowLogTopExecuteSlowLogs]',
         'rows_examined_exceeding': 'list[TopInstanceSlowLogRowsExaminedExceeding]'
     }
@@ -39,7 +39,7 @@ class ListInstanceTopSlowLogResponse(SdkResponse):
         :param top_execute_slow_logs: 执行次数列表
         :type top_execute_slow_logs: list[:class:`huaweicloudsdkdas.v3.TopInstanceSlowLogTopExecuteSlowLogs`]
         :param top_avg_query_time_slow_logs: 平均执行时间列表
-        :type top_avg_query_time_slow_logs: list[:class:`huaweicloudsdkdas.v3.TopInstanceSlowLogTopAvgQueryTimeSlowLogs`]
+        :type top_avg_query_time_slow_logs: list[:class:`huaweicloudsdkdas.v3.TopInstanceSlowLogTopExecuteSlowLogs`]
         :param top_max_query_time_slow_logs: 最大执行时间列表
         :type top_max_query_time_slow_logs: list[:class:`huaweicloudsdkdas.v3.TopInstanceSlowLogTopExecuteSlowLogs`]
         :param rows_examined_exceeding: 扫描返回比列表
@@ -92,7 +92,7 @@ class ListInstanceTopSlowLogResponse(SdkResponse):
         平均执行时间列表
 
         :return: The top_avg_query_time_slow_logs of this ListInstanceTopSlowLogResponse.
-        :rtype: list[:class:`huaweicloudsdkdas.v3.TopInstanceSlowLogTopAvgQueryTimeSlowLogs`]
+        :rtype: list[:class:`huaweicloudsdkdas.v3.TopInstanceSlowLogTopExecuteSlowLogs`]
         """
         return self._top_avg_query_time_slow_logs
 
@@ -103,7 +103,7 @@ class ListInstanceTopSlowLogResponse(SdkResponse):
         平均执行时间列表
 
         :param top_avg_query_time_slow_logs: The top_avg_query_time_slow_logs of this ListInstanceTopSlowLogResponse.
-        :type top_avg_query_time_slow_logs: list[:class:`huaweicloudsdkdas.v3.TopInstanceSlowLogTopAvgQueryTimeSlowLogs`]
+        :type top_avg_query_time_slow_logs: list[:class:`huaweicloudsdkdas.v3.TopInstanceSlowLogTopExecuteSlowLogs`]
         """
         self._top_avg_query_time_slow_logs = top_avg_query_time_slow_logs
 
